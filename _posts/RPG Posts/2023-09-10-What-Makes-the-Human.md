@@ -1663,7 +1663,7 @@ Kvothe's proficiency in life sciences not only adds depth to his character but a
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Physical Sciences.webp"><img src="https://tedt.org/img/skills/vertical/Physical Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Physical Sciences.webp"><img alt="Physical Sciences allows a character to analyze natural phenomena, identify materials, and recall principles of geology, chemistry, and physics to solve problems or uncover hidden truths." src="https://tedt.org/img/skills/vertical/Physical Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Physical science has taught us to associate Deity with the normal rather than with the abnormal. - William Edward Hartpole Lecky</figcaption>
 </figure>
 </div>
@@ -1747,7 +1747,7 @@ Kaladin Stormblessed's expertise in Physical Sciences/Survival adds a multifacet
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Traditions.webp"><img src="https://tedt.org/img/skills/vertical/Traditions.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Traditions.webp"><img alt="Traditions grants a character the knowledge to preserve ancestral customs, interpret sacred rituals, and draw upon inherited wisdom to guide decisions and inspire their community." src="https://tedt.org/img/skills/vertical/Traditions.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Tradition means giving votes to the most obscure of all classes, our ancestors. It is the democracy of the dead. Tradition refuses to submit to the small and arrogant oligarchy of those who merely happen to be walking about. --G.K Chesterton, Orthodoxy </figcaption>
 </figure>
 </div>
@@ -1828,7 +1828,7 @@ Daenerys's ability to understand and adapt to different traditions is a cornerst
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Perception.webp"><img src="https://tedt.org/img/skills/vertical/Perception.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Perception.webp"><img alt="Perception enables a character to detect hidden details, sense danger, and notice subtle changes in their surroundings that others might overlook." src="https://tedt.org/img/skills/vertical/Perception.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">The world is full of magic things, patiently waiting for our senses to grow sharper. -- W.B. Yeats </figcaption>
 </figure>
 </div>
@@ -1910,7 +1910,7 @@ Sherlock Holmes's extraordinary Perception is not just a skill but an art form, 
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Formal Sciences.webp"><img src="https://tedt.org/img/skills/vertical/Formal Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Formal Sciences.webp"><img alt="Formal Sciences allows a character to apply logic, mathematics, and abstract reasoning to solve complex problems, predict outcomes, and construct rigorous systems of thought." src="https://tedt.org/img/skills/vertical/Formal Sciences.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Mathematics in its widest signification is the development of all types of formal, necessary, deductive reasoning. -- Alfred North Whitehead </figcaption>
 </figure>
 </div>
@@ -1997,7 +1997,7 @@ Hari Seldon's mastery of Formal Science makes him a pivotal figure in his world,
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Engineering.webp"><img src="https://tedt.org/img/skills/vertical/Engineering.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Engineering.webp"><img alt="Engineering enables a character to design, construct, and repair machines, structures, and tools, applying practical knowledge of mechanics and innovation to solve technical challenges." src="https://tedt.org/img/skills/vertical/Engineering.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Science is about knowing; engineering is about doing. - Henry Petroski</figcaption>
 </figure>
 </div>
@@ -2078,7 +2078,7 @@ Kaylee's engineering expertise goes beyond mere technical skills; her ability to
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Insight.webp"><img src="https://tedt.org/img/skills/vertical/Insight.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Insight.webp"><img alt="Insight allows a character to read intentions, discern hidden motives, and recognize truth or deception through intuition and observation." src="https://tedt.org/img/skills/vertical/Insight.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Insight perceives, intelligence understands, intellect comprehends, wisdom knows. -- Matshona Dhliwayo</figcaption>
 </figure>
 </div>
@@ -2158,7 +2158,7 @@ Paul Atreides' mastery of insight is not just a passive skill but an active tool
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Investigation.webp"><img src="https://tedt.org/img/skills/vertical/Investigation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Investigation.webp"><img alt="Investigation allows a character to gather clues, analyze evidence, and piece together hidden connections to uncover the truth behind mysteries." src="https://tedt.org/img/skills/vertical/Investigation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">You know my methods. Apply them. -- Sherlock Holms in Sir Arthur Conan Doyle's The Sign of Four</figcaption>
 </figure>
 </div>
@@ -2270,7 +2270,7 @@ As a Skepticism practitioner, your spells are fueled by intellectual curiosity, 
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Ethereal.webp"><img src="https://tedt.org/img/skills/vertical/Ethereal.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Ethereal.webp"><img alt="Ethereal allows a character to channel otherworldly forces, slip between planes, and wield energies that transcend the material realm." src="https://tedt.org/img/skills/vertical/Ethereal.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">They have no gods. They work magic, and think they are gods themselves. But they are not. And when they die, they (...) become dust and bone, and their ghosts whine on the wind a little while till the wind blows them away. They do not have immortal souls. -- Ursula K. Le Guin, The Tombs of Atuan</figcaption>
 </figure>
 </div>
@@ -2331,7 +2331,7 @@ Please note that the difficulty ratings provided in the table are relative and c
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Gnosis.webp"><img src="https://tedt.org/img/skills/vertical/Gnosis.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Gnosis.webp"><img alt="Gnosis allows a character to access hidden wisdom, commune with higher truths, and harness mystical knowledge that transcends ordinary understanding." src="https://tedt.org/img/skills/vertical/Gnosis.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Faith is for sissies who daren't go and look for themselves. That’s my basic position. Magic is based upon gnosis. Direct knowledge.  -- Alan Moore</figcaption>
 </figure>
 </div>
@@ -2394,7 +2394,7 @@ Here's a table describing tasks someone from the Gnostic magical practice might 
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Chaos.webp"><img src="https://tedt.org/img/skills/vertical/Chaos.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Chaos.webp"><img alt="Chaos enables a character to harness unpredictability, thrive in disorder, and bend shifting circumstances to their advantage." src="https://tedt.org/img/skills/vertical/Chaos.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Magick is a doorway through which we step into mystery, wildness, and immanence. -- Phil Hine</figcaption>
 </figure>
 </div>
@@ -2490,7 +2490,7 @@ These spells draw upon your unwavering faith and connection to higher forces, gr
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Theurgy.webp"><img src="https://tedt.org/img/skills/vertical/Theurgy.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Theurgy.webp"><img alt="Theurgy grants a character the ability to invoke divine power through ritual, channel sacred forces, and call upon the authority of the gods to shape the world." src="https://tedt.org/img/skills/vertical/Theurgy.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">A prophet is not without honor except in his own country, among his own relatives, and in his own house. -- Yeshua bar Joseph</figcaption>
 </figure>
 </div>
@@ -2552,7 +2552,7 @@ These unique Theurgy spells showcase the character's special connection to the d
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Adept.webp"><img src="https://tedt.org/img/skills/vertical/Adept.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Adept.webp"><img alt="Adept represents a character’s mastery of advanced techniques, allowing them to push beyond ordinary limits and wield their chosen discipline with precision and power." src="https://tedt.org/img/skills/vertical/Adept.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Whatever the mind can conceive and believe, the mind can achieve.  -- Napoleon Hill </figcaption>
 </figure>
 </div>
@@ -2612,7 +2612,7 @@ As a Physical Adept, you are the embodiment of physical mastery and mystical ins
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Order.webp"><img src="https://tedt.org/img/skills/vertical/Order.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Order.webp"><img alt="Order empowers a character to impose structure, enforce discipline, and weave harmony from chaos through deliberate action and control." src="https://tedt.org/img/skills/vertical/Order.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">For magic and applied science alike the problem is how to subdue reality to the wishes of men: the solution is a technique; and both, in the practice of this technique, are ready to do things hitherto regarded as disgusting and impious.  CS Lewis - The Abolitionn of Man </figcaption>
 </figure>
 </div>
@@ -2701,7 +2701,7 @@ These spells draw upon the mysteries of the universe, tapping into psychic abili
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Metaphysics.webp"><img src="https://tedt.org/img/skills/vertical/Metaphysics.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Metaphysics.webp"><img alt="Metaphysics enables a character to contemplate existence, perceive the unseen structures of reality, and draw power from the principles that underlie all being." src="https://tedt.org/img/skills/vertical/Metaphysics.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Metaphysics involves intuitive knowledge of unprovable starting-points concepts and truth and demonstrative knowledge of what follows from the.  -- Aristotle</figcaption>
 </figure>
 </div>
@@ -2764,7 +2764,7 @@ Here's the table describing tasks someone from the Metaphysical magical practice
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Animism.webp"><img src="https://tedt.org/img/skills/vertical/Animism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Animism.webp"><img alt="Animism allows a character to commune with the spirits of animals, plants, and objects, drawing strength and guidance from the living essence of the world." src="https://tedt.org/img/skills/vertical/Animism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">We belong to the community of life on this planet -- it doesn't belong to us. We got confused about that, now it's time to set the record straight. -- Daniel Quinn in Providence</figcaption>
 </figure>
 </div>
@@ -2826,7 +2826,7 @@ Here's a table describing a task someone from Animism would attempt to do for ea
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Shamanism.webp"><img src="https://tedt.org/img/skills/vertical/Shamanism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Shamanism.webp"><img alt="Shamanism grants a character the ability to commune with spirits, traverse between worlds, and channel primal forces through ritual and vision." src="https://tedt.org/img/skills/vertical/Shamanism.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">You don't find light by avoiding the darkness. -- S. Kelley Harrell, M. Div. </figcaption>
 </figure>
 </div>
@@ -2900,7 +2900,7 @@ understand the world around them
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Style.webp"><img src="https://tedt.org/img/skills/vertical/Style.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Style.webp"><img alt="Style allows a character to express individuality, command attention, and influence perception through appearance, creativity, and flair." src="https://tedt.org/img/skills/vertical/Style.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Style is knowing who you are, what you want to say, and not giving a damn. -- Orsen Welles </figcaption>
 </figure>
 </div>
@@ -2987,7 +2987,7 @@ Lord Henry's mastery of Style makes him one of the most memorable and influentia
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Performance.webp"><img src="https://tedt.org/img/skills/vertical/Performance.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Performance.webp"><img alt="Performance allows a character to captivate audiences, inspire emotion, and convey meaning through music, storytelling, acting, or other expressive arts" src="https://tedt.org/img/skills/vertical/Performance.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">The stage is not merely the meeting place of all the arts, but is also the return of art to life. -- Oscar Wilde </figcaption>
 </figure>
 </div>
@@ -3072,7 +3072,7 @@ Kvothe's mastery of Performance serves multiple functions throughout his journey
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Etiquette.webp"><img src="https://tedt.org/img/skills/vertical/Etiquette.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Etiquette.webp"><img alt ="Etiquette allows a character to navigate social customs, show proper respect, and gain favor by observing the rules of politeness and tradition." src="https://tedt.org/img/skills/vertical/Etiquette.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">I was raised right — I talk about people behind their backs. It's called manners.  -- Kathy Griffin</figcaption>
 </figure>
 </div>
@@ -3163,7 +3163,7 @@ their own actions to create the outcomes they want.
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Deception.webp"><img src="https://tedt.org/img/skills/vertical/Deception.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Deception.webp"><img alt="Deception allows a character to mislead others, conceal the truth, and craft convincing lies or disguises to achieve their aims." src="https://tedt.org/img/skills/vertical/Deception.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Man is not what he thinks he is, he is what he hides. --André Malraux  </figcaption>
 </figure>
 </div>
@@ -3249,7 +3249,7 @@ Littlefinger's mastery of Deception makes him a formidable adversary. His abilit
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Persuasion.webp"><img src="https://tedt.org/img/skills/vertical/Persuasion.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Persuasion.webp"><img alt="Persuasion enables a character to sway opinions, inspire trust, and guide others to agreement through reason, charm, or rhetoric." src="https://tedt.org/img/skills/vertical/Persuasion.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Don't raise your voice, improve your argument. -- Desmond Tutu </figcaption>
 </figure>
 </div>
@@ -3335,7 +3335,7 @@ Atticus Finch's mastery of Persuasion is not just a tool for his profession; it'
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Intimidation.webp"><img src="https://tedt.org/img/skills/vertical/Intimidation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Intimidation.webp"><img alt="Intimidation allows a character to exert fear, pressure, or dominance to coerce compliance, silence opposition, or gain the upper hand in tense situations." src="https://tedt.org/img/skills/vertical/Intimidation.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">If you want to control someone, all you have to do is to make them feel afraid.  -- Paulo Coelho</figcaption>
 </figure>
 </div>
@@ -3427,7 +3427,7 @@ Certainly! Here's a table with examples for each of the Intimidation archetypes:
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Bureaucracy.webp"><img src="https://tedt.org/img/skills/vertical/Bureaucracy.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Bureaucracy.webp"><img alt="Bureaucracy allows a character to navigate institutions, interpret regulations, and leverage systems of authority to delay, expedite, or manipulate official outcomes." src="https://tedt.org/img/skills/vertical/Bureaucracy.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Bureaucracies, I've suggested, are not themselves forms of stupidity so much as they are ways of organizing stupidity--of managing relationships that are already characterized by extremely unequal structures of imagination... --  David Graeber</figcaption>
 </figure>
 </div>
@@ -3514,7 +3514,7 @@ C.J. Cregg's mastery of Bureaucracy is a cornerstone of her effectiveness as a P
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Animal Handling.webp"><img src="https://tedt.org/img/skills/vertical/Animal Handling.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Animal Handling.webp"><img alt="Animal Handling allows a character to train, calm, and command beasts, forging bonds of trust and guiding them in work, travel, or battle." src="https://tedt.org/img/skills/vertical/Animal Handling.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">How you treat animals will tell me what kind of person you are. -— Karen Becker </figcaption>
 </figure>
 </div>
@@ -3598,7 +3598,7 @@ John Manly's mastery of Animal Handling is not just a professional requirement b
 
 <div class="col-md-4 mt-3 col-lg-6 float-end">
 <figure class="figure">
-<a href="https://tedt.org/img/skills/vertical/Leadership.webp"><img src="https://tedt.org/img/skills/vertical/Leadership.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
+<a href="https://tedt.org/img/skills/vertical/Leadership.webp"><img alt="Leadership allows a character to inspire allies, coordinate groups, and instill confidence to guide others toward a common goal." src="https://tedt.org/img/skills/vertical/Leadership.webp" class="img-fluid img-thumbnail figure-img float-end"></a>
 <figcaption class="figure-caption">Our chief want is someone who will inspire us to be what we know we could be. –- Ralph Waldo Emerson</figcaption>
 </figure>
 </div>
