@@ -1,37 +1,37 @@
 # HTML Proofer Logs
-Last update: 2025-09-06T23:22:16Z
+Last update: 2025-09-08T13:44:08Z
 \n## Latest Summary (tail 50 lines)\n
-                                                                                                                                                                                                                                                                                                       ^ (line 903)
-  *  987:364: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                           ^ (line 987)
-  *  987:371: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                                  ^ (line 987)
-  *  987:378: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                                         ^ (line 987)
-  *  987:390: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                                                     ^ (line 987)
-  *  987:397: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                                                            ^ (line 987)
-  *  998:345: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                        ^ (line 998)
-  *  998:352: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                               ^ (line 998)
-  *  998:359: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                                      ^ (line 998)
-  *  998:371: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                                                  ^ (line 998)
-  *  998:378: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                                                         ^ (line 998)
+        </div>
+        ^ (line 4832)
+- ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
+  *  External link http://www.dscout.com/ara# failed: 404 No error
+- ./_site/the-google-browseros/index.html
+  *  External link https://tschopp.net/@Ted/111179921177417786 failed: 404 No error
+- ./_site/thoughts-on-corporate-collaboration-tools/index.html
+  *  External link http://smallblue.research.ibm.com/projects/snvalue/ failed: got a time out (response code 0)
+- ./_site/too-many-feeds/index.html
+  *  External link http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/ failed: 404 No error
+- ./_site/tools/prompt-library/index.html
+  *  589:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
+<body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
+^ (line 589)
+  *  internal image ../img/categories/prompt_library.webp does not exist (line 1013)
+- ./_site/tools/todo_hex.html
+  *  17:97: ERROR: End tag 'br' isn't allowed here. Currently open tags: html, body, main, section.
+                <canvas id="layout-test-orientation-pointy" width="1000" height="1000"></canvas></br>
+                                                                                                ^ (line 17)
+  *  internal script js/hex-implementation.js does not exist (line 24)
+  *  internal script js/hex.js does not exist (line 23)
+  *  internally linking to icon.webp, which does not exist (line 10)
+     <link rel="apple-touch-icon" href="icon.webp">
+- ./_site/universal-content-creator-demo/index.html
+  *  1542:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1542)
+  *  5280:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 5280)
+- ./_site/what-should-google-buy/index.html
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -44,14 +44,15 @@ Last update: 2025-09-06T23:22:16Z
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
-  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
+  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 1030)
+  *  linking to internal hash # that does not exist (line 1027)
      <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="#">Table of Contents 📖</a>
 
-HTML-Proofer found 35197 failures!
+HTML-Proofer found 238 failures!
 \n## Available Historical Logs\n
+- 2025-09-08T13-40-50-HTML Logging.txt
 - 2025-09-06T23-19-01-HTML Logging.txt
 - 2025-09-06T23-06-54-HTML Logging.txt
 - 2025-09-06T20-25-18-HTML Logging.txt

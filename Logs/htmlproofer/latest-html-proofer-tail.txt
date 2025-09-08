@@ -1,184 +1,184 @@
-                                                                                                                                                                                                                                                                                                                                 ^ (line 653)
-  *  784:255: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#corporate-intranet-redesign" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Corporate Intranet Redesign</a></li>
-                                                                                                                                                                                                                                                              ^ (line 784)
-  *  784:262: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#corporate-intranet-redesign" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Corporate Intranet Redesign</a></li>
-                                                                                                                                                                                                                                                                     ^ (line 784)
-  *  784:269: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#corporate-intranet-redesign" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Corporate Intranet Redesign</a></li>
-                                                                                                                                                                                                                                                                            ^ (line 784)
-  *  784:281: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#corporate-intranet-redesign" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Corporate Intranet Redesign</a></li>
-                                                                                                                                                                                                                                                                                        ^ (line 784)
-  *  784:288: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#corporate-intranet-redesign" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Corporate Intranet Redesign</a></li>
-                                                                                                                                                                                                                                                                                               ^ (line 784)
-  *  797:265: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-com-redesign-corporate-website" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison.com Redesign - Corporate Website</a></li>
-                                                                                                                                                                                                                                                                        ^ (line 797)
-  *  797:272: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-com-redesign-corporate-website" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison.com Redesign - Corporate Website</a></li>
-                                                                                                                                                                                                                                                                               ^ (line 797)
-  *  797:279: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-com-redesign-corporate-website" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison.com Redesign - Corporate Website</a></li>
-                                                                                                                                                                                                                                                                                      ^ (line 797)
-  *  797:291: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-com-redesign-corporate-website" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison.com Redesign - Corporate Website</a></li>
-                                                                                                                                                                                                                                                                                                  ^ (line 797)
-  *  797:298: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-com-redesign-corporate-website" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison.com Redesign - Corporate Website</a></li>
-                                                                                                                                                                                                                                                                                                         ^ (line 797)
-  *  810:257: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#myedison-com-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - MyEdison.com - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                ^ (line 810)
-  *  810:264: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#myedison-com-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - MyEdison.com - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                       ^ (line 810)
-  *  810:271: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#myedison-com-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - MyEdison.com - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                              ^ (line 810)
-  *  810:283: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#myedison-com-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - MyEdison.com - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                                          ^ (line 810)
-  *  810:290: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#myedison-com-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - MyEdison.com - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                                                 ^ (line 810)
-  *  823:272: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-international-portal-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison International Portal - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                               ^ (line 823)
-  *  823:279: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-international-portal-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison International Portal - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                                      ^ (line 823)
-  *  823:286: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-international-portal-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison International Portal - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                                             ^ (line 823)
-  *  823:298: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-international-portal-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison International Portal - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                                                         ^ (line 823)
-  *  823:305: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-international-portal-corporate-portal" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison International Portal - Corporate Portal</a></li>
-                                                                                                                                                                                                                                                                                                                ^ (line 823)
-  *  836:247: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-smartconnect" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison SmartConnect</a></li>
-                                                                                                                                                                                                                                                      ^ (line 836)
-  *  836:254: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-smartconnect" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison SmartConnect</a></li>
-                                                                                                                                                                                                                                                             ^ (line 836)
-  *  836:261: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-smartconnect" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison SmartConnect</a></li>
-                                                                                                                                                                                                                                                                    ^ (line 836)
-  *  836:273: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-smartconnect" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison SmartConnect</a></li>
-                                                                                                                                                                                                                                                                                ^ (line 836)
-  *  836:280: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#edison-smartconnect" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-SCE.webp" alt="Company Logo for SCE" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Edison SmartConnect</a></li>
-                                                                                                                                                                                                                                                                                       ^ (line 836)
-  *  851:258: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#the-password-challenge" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - The Password Challenge</a></li>
-                                                                                                                                                                                                                                                                 ^ (line 851)
-  *  851:265: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#the-password-challenge" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - The Password Challenge</a></li>
-                                                                                                                                                                                                                                                                        ^ (line 851)
-  *  851:272: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#the-password-challenge" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - The Password Challenge</a></li>
-                                                                                                                                                                                                                                                                               ^ (line 851)
-  *  851:284: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#the-password-challenge" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - The Password Challenge</a></li>
-                                                                                                                                                                                                                                                                                           ^ (line 851)
-  *  851:291: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#the-password-challenge" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - The Password Challenge</a></li>
-                                                                                                                                                                                                                                                                                                  ^ (line 851)
-  *  864:262: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#procedural-text-generation" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Procedural Text Generation</a></li>
-                                                                                                                                                                                                                                                                     ^ (line 864)
-  *  864:269: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#procedural-text-generation" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Procedural Text Generation</a></li>
-                                                                                                                                                                                                                                                                            ^ (line 864)
-  *  864:276: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#procedural-text-generation" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Procedural Text Generation</a></li>
-                                                                                                                                                                                                                                                                                   ^ (line 864)
-  *  864:288: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#procedural-text-generation" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Procedural Text Generation</a></li>
-                                                                                                                                                                                                                                                                                               ^ (line 864)
-  *  864:295: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#procedural-text-generation" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Procedural Text Generation</a></li>
-                                                                                                                                                                                                                                                                                                      ^ (line 864)
-  *  877:262: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#random-star-constellations" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Random Star Constellations</a></li>
-                                                                                                                                                                                                                                                                     ^ (line 877)
-  *  877:269: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#random-star-constellations" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Random Star Constellations</a></li>
-                                                                                                                                                                                                                                                                            ^ (line 877)
-  *  877:276: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#random-star-constellations" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Random Star Constellations</a></li>
-                                                                                                                                                                                                                                                                                   ^ (line 877)
-  *  877:288: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#random-star-constellations" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Random Star Constellations</a></li>
-                                                                                                                                                                                                                                                                                               ^ (line 877)
-  *  877:295: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#random-star-constellations" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Random Star Constellations</a></li>
-                                                                                                                                                                                                                                                                                                      ^ (line 877)
-  *  890:273: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-random-board-game-night" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Random Board Game Night</a></li>
-                                                                                                                                                                                                                                                                                ^ (line 890)
-  *  890:280: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-random-board-game-night" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Random Board Game Night</a></li>
-                                                                                                                                                                                                                                                                                       ^ (line 890)
-  *  890:287: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-random-board-game-night" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Random Board Game Night</a></li>
-                                                                                                                                                                                                                                                                                              ^ (line 890)
-  *  890:299: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-random-board-game-night" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Random Board Game Night</a></li>
-                                                                                                                                                                                                                                                                                                          ^ (line 890)
-  *  890:306: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-random-board-game-night" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Random Board Game Night</a></li>
-                                                                                                                                                                                                                                                                                                                 ^ (line 890)
-  *  903:263: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-map-generator" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Map Generator</a></li>
-                                                                                                                                                                                                                                                                      ^ (line 903)
-  *  903:270: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-map-generator" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Map Generator</a></li>
-                                                                                                                                                                                                                                                                             ^ (line 903)
-  *  903:277: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-map-generator" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Map Generator</a></li>
-                                                                                                                                                                                                                                                                                    ^ (line 903)
-  *  903:289: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-map-generator" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Map Generator</a></li>
-                                                                                                                                                                                                                                                                                                ^ (line 903)
-  *  903:296: ERROR: Tag contains multiple attributes with the same name.
-                              <li><a class="dropdown-item" href="https://tedt.org/#mastodon-bots-map-generator" style="font-size: 20px; text-decoration-thickness: 1px;"><img src="/img/home/logo-Tschopp.webp" alt="Company Logo for Tschopp" style="height: 1.5em;" alt="" alt="" alt="Image" alt="" alt=""> - Mastodon Bots - Map Generator</a></li>
-                                                                                                                                                                                                                                                                                                       ^ (line 903)
-  *  987:364: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                           ^ (line 987)
-  *  987:371: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                                  ^ (line 987)
-  *  987:378: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                                         ^ (line 987)
-  *  987:390: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                                                     ^ (line 987)
-  *  987:397: ERROR: Tag contains multiple attributes with the same name.
-                            <img class="card-img-top w-100 d-block" src="https://tedt.org/img/No-Image-Provided.png" alt="A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto. The brushwork has rich textures, earthy palette with luminous highlights" alt="" alt="" alt="Image" alt="" alt=""> <!-- hero image intentionally eager -->
-                                                                                                                                                                                                                                                                                                                                                                                                            ^ (line 987)
-  *  998:345: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                        ^ (line 998)
-  *  998:352: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                               ^ (line 998)
-  *  998:359: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                                      ^ (line 998)
-  *  998:371: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                                                  ^ (line 998)
-  *  998:378: ERROR: Tag contains multiple attributes with the same name.
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="https://tedt.org"><img src="https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="Ted Tschopp avatar" alt="" alt="" alt="Image" alt="" alt="">Ted Tschopp</a></span>
-                                                                                                                                                                                                                                                                                                                                                                                         ^ (line 998)
+     <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
+- ./_site/category/religion/index.html
+  *  internally linking to /category/prompts/, which does not exist (line 2246)
+     <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
+- ./_site/category/reprint/index.html
+  *  internally linking to /category/prompts/, which does not exist (line 1745)
+     <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
+- ./_site/category/role-playing-games/index.html
+  *  internally linking to /category/prompts/, which does not exist (line 3078)
+     <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
+- ./_site/category/science/index.html
+  *  internally linking to /category/prompts/, which does not exist (line 2222)
+     <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
+- ./_site/category/shadowrun/index.html
+  *  internally linking to /category/prompts/, which does not exist (line 1639)
+     <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
+- ./_site/computerized-story-telling/index.html
+  *  External link https://tedt.org/files/MEXICA_DPhil_RPyP.pdf failed: 404 No error
+  *  External link https://tedt.org/files/Three_computer-based_models_of_storytelling_BRUTUS.pdf failed: 404 No error
+- ./_site/docs/summaries/wired-2001-fotr/index.html
+  *  External link https://tedt.org/img/categories/internet-history.webp failed: 404 No error
+  *  External link https://tedt.org/img/categories/tolkien.webp failed: 404 No error
+- ./_site/film-snob/index.html
+  *  External link http://disney.go.com/disneypictures/pirates/atworldsend/ failed: 403 No error
+  *  External link http://www.foxsearchlight.com/daywatch/ failed: 403 No error
+  *  External link http://www.sonypictures.com/homevideo/paprika/index.html failed: 404 No error
+- ./_site/html5-javascript-version-of-of-windows/index.html
+  *  External link http://www.gildertech.com/bios.html failed: 404 No error
+  *  External link http://www.irvingwb.com/about.html failed: 403 No error
+- ./_site/index.html
+  *  5265:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
+  <style>
+  ^ (line 5265)
+  *  External link http://www.dohring.com failed: got a time out (response code 0)
+  *  External link https://The-Password-Challange.tedt.org/ failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Couldn't resolve host name
+  *  internally linking to /category/prompts/, which does not exist (line 2969)
+     <a href="/category/prompts/" class="Prompts category-title text-decoration-none" style="vertical-align: middle;">Prompts</a>
+- ./_site/ipfs/index.html
+  *  image  does not have an alt attribute (line 69)
+  *  image has no src or srcset attribute (line 69)
+- ./_site/mastodon-backfill-summary/index.html
+  *  External link https://tedt.org/webpage_thumbnail.webp failed: 404 No error
+- ./_site/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/index.html
+  *  External link http://www.microsoft.com/presspass/press/2006/jun06/06-20MSCreativeCommonsPR.mspx failed: 403 No error
+- ./_site/myedison-com-corporate-portal/index.html
+  *  External link https://tedt.org/category/home/ failed: 404 No error
+- ./_site/playing-it-cool-playing-it-fast/index.html
+  *  External link http://MUSIC/iTunes/ failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Couldn't resolve host name
+  *  External link http://www.potionfactory.com/tangerine/ failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Couldn't resolve host name
+  *  internally linking to /iTunes/, which does not exist (line 1035)
+     <a href="/iTunes/">file://localhost/E:/iTunes/</a>
+- ./_site/prompts/Create-a-Unforgettable-Opening-to-a-TTRPG/index.html
+  *  1527:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1527)
+  *  2053:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2053)
+- ./_site/prompts/ai-simulation-creator-roleplay-prompt/index.html
+  *  1526:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1526)
+  *  1750:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1750)
+- ./_site/prompts/ai-simulation-creator/index.html
+  *  1526:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1526)
+  *  1748:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1748)
+- ./_site/prompts/ai-teaching-assistant-prompt-creator/index.html
+  *  1526:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1526)
+  *  1770:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1770)
+- ./_site/prompts/ai-tutoring-prompt-designer/index.html
+  *  1531:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1531)
+  *  1781:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1781)
+- ./_site/prompts/artistic-Analysis/index.html
+  *  1526:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1526)
+  *  1886:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1886)
+- ./_site/prompts/business-case-and-requirements-assistant/index.html
+  *  1528:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1528)
+  *  2694:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2694)
+- ./_site/prompts/index.html
+  *  589:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
+<body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
+^ (line 589)
+- ./_site/prompts/marketing-copy-evaluation-template/index.html
+  *  1526:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1526)
+  *  1836:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1836)
+- ./_site/prompts/midjourney-v6.1-prompt-template/index.html
+  *  1527:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1527)
+  *  1945:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1945)
+- ./_site/prompts/midjourney-v7-prompt-template/index.html
+  *  1526:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1526)
+  *  1810:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1810)
+- ./_site/prompts/social-media-repurposing-template/index.html
+  *  1526:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1526)
+  *  2010:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2010)
+- ./_site/reprint-whats-actually-inside-a-100-billion-AI-data-center/index.html
+  *  External link https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D failed: 403 No error
+- ./_site/sex-gardening-a/index.html
+  *  External link https://tedt.org/https://tedt.org/img/2007-01/Seedling-in-the-ashes.png failed: 404 No error
+- ./_site/simple-blog-generator/index.html
+  *  1516:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1516)
+  *  4832:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4832)
+- ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
+  *  External link http://www.dscout.com/ara# failed: 404 No error
+- ./_site/the-google-browseros/index.html
+  *  External link https://tschopp.net/@Ted/111179921177417786 failed: 404 No error
+- ./_site/thoughts-on-corporate-collaboration-tools/index.html
+  *  External link http://smallblue.research.ibm.com/projects/snvalue/ failed: got a time out (response code 0)
+- ./_site/too-many-feeds/index.html
+  *  External link http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/ failed: 404 No error
+- ./_site/tools/prompt-library/index.html
+  *  589:1: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
+<body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
+^ (line 589)
+  *  internal image ../img/categories/prompt_library.webp does not exist (line 1013)
+- ./_site/tools/todo_hex.html
+  *  17:97: ERROR: End tag 'br' isn't allowed here. Currently open tags: html, body, main, section.
+                <canvas id="layout-test-orientation-pointy" width="1000" height="1000"></canvas></br>
+                                                                                                ^ (line 17)
+  *  internal script js/hex-implementation.js does not exist (line 24)
+  *  internal script js/hex.js does not exist (line 23)
+  *  internally linking to icon.webp, which does not exist (line 10)
+     <link rel="apple-touch-icon" href="icon.webp">
+- ./_site/universal-content-creator-demo/index.html
+  *  1542:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1542)
+  *  5280:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 5280)
+- ./_site/what-should-google-buy/index.html
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
@@ -191,10 +191,10 @@
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
-  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
+  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
-  *  linking to internal hash # that does not exist (line 1030)
+  *  linking to internal hash # that does not exist (line 1027)
      <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="#">Table of Contents 📖</a>
 
-HTML-Proofer found 35197 failures!
+HTML-Proofer found 238 failures!
