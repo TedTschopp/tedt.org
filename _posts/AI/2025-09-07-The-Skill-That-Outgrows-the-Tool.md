@@ -81,6 +81,7 @@ image_height: 816
 
 mastodon-post-id:
 
+mastodon-post-id: 115167263623021653
 ---
 I want to start with a blunt, kind truth: learning new automation tools as your defining career skill in 2026 is a risky bet. I say that as the architect at SCE who is accountable for Software, Artificial Intelligence, and Automation. I have a clear vantage point on how these technologies actually work today — and where they’re headed.
 
