@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "The Skill That Outgrows the Tool"
+title: "The Skill that Outgrows the Tool"
 subtitle: "Why tool mastery won’t future-proof your career — enterprise thinking will."
 quote: "The future superstars won’t be those fluent in the best AI tool, but those who know their business and can solve its broken places."
 excerpt: "Automation skills have an expiration date. In 2026 and beyond, the highest-leverage skill won’t be memorizing tools — it will be translating business problems into AI-powered solutions and seeing the flow of value systemically."
