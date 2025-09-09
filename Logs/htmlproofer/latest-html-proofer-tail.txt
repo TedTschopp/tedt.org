@@ -25,7 +25,7 @@
   *  External link http://www.sonypictures.com/homevideo/paprika/index.html failed: 404 No error
 - ./_site/html5-javascript-version-of-of-windows/index.html
   *  External link http://www.gildertech.com/bios.html failed: 404 No error
-  *  External link http://www.irvingwb.com/about.html failed: 301 Couldn't resolve host name
+  *  External link http://www.irvingwb.com/about.html failed: 404 No error
 - ./_site/index.html
   *  5265:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
   <style>
@@ -197,4 +197,4 @@
   *  linking to internal hash # that does not exist (line 1027)
      <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="#">Table of Contents 📖</a>
 
-HTML-Proofer found 239 failures!
+HTML-Proofer found 238 failures!
