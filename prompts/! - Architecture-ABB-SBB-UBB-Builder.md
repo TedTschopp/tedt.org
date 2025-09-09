@@ -12,8 +12,8 @@ Before producing the output, gather context through a short interactive Q\&A.
 
 If the answer is only a product/technology name, ask 2–3 clarifying questions:
 
-* “Should this be categorized as a Business, Data, Application, or Technology building block?”
-* “Do you want this described at the abstract capability level (ABB) or as a specific product (SBB)?”
+* “Should this be categorized as a Business, Data, Application, or Technology building block? Business Building Blocks are capabilities.  Data building Blocks are data entities, metadata, and data services.  Application building blocks are logical applications, services, and APIs.  Technology building blocks are end user devices, infrastructure, middleware, networks, and runtime environments.”
+* “Do you want this described at the abstract capability level (ABB) or as a specific product (SBB)? ABBs define capabilities and services, and describe WHAT functionality is needed not tied to a specific product.  SBBs define actual products, technologies, or solutions that realize ABBs.”
 * “What is the primary use case in your enterprise?”
 
 ## Step 3: Generate the Profile
