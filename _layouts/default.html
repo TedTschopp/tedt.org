@@ -3,8 +3,6 @@
   <head>
     <meta charset="utf-8">
 
-  <!-- LAYOUT TOKEN XYZ 20250814-1 -->
-
     {% include utility/calculate-variables.html %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -26,56 +24,51 @@
     <!-- START OF CSS INCLUDE -->
     {% include assets/all-css-includes.html %}
     <!-- END OF CSS INCLUDE -->
-  <!-- WCAG contrast utility styles -->
-  <link rel="stylesheet" href="/css/WCAG.css">
-    <style>
-      /* Dynamic category title colors */
-      [data-bs-theme="light"] .cat-dynamic-title,
-      [data-bs-theme="light"] .cat-dynamic-title a,
-      [data-bs-theme="light"] .cat-dynamic-title a:visited {
-        color: var(--cat-title-color-light, var(--cat-title-color-dark, inherit));
-      }
-      [data-bs-theme="dark"] .cat-dynamic-title,
-      [data-bs-theme="dark"] .cat-dynamic-title a,
-      [data-bs-theme="dark"] .cat-dynamic-title a:visited {
-        color: var(--cat-title-color-dark, var(--cat-title-color-light, inherit));
-      }
-      [data-bs-theme="light"] .cat-dynamic-title a:hover { color: var(--cat-title-hover-color-light, var(--cat-title-color-light, inherit)); }
-      [data-bs-theme="dark"] .cat-dynamic-title a:hover { color: var(--cat-title-hover-color-dark, var(--cat-title-color-dark, inherit)); }
 
-  /* Homepage post bullets: semantic list with centered custom dot */
-  .post-bullets { list-style: none; margin: 0; padding: 0; }
-  .post-bullets .post-bullet-item { display: flex; align-items: center; gap: .6rem; margin: .5rem 0 .5rem 0; font-size: smaller;}
-  .post-bullets .post-bullet-item:last-child { margin-bottom: 0; }
-  .post-bullet-dot { width: .45rem; height: .45rem; border-radius: 50%; background: currentColor; flex: 0 0 .45rem; }
-  [data-bs-theme="dark"] .post-bullet-dot { opacity: .85; }
-  .post-bullet-text { line-height: 1.25; }
-    </style>
+    <!-- WCAG contrast utility styles -->
+    <link rel="stylesheet" href="/css/WCAG.css">
+      <style>
+        /* Dynamic category title colors */
+        [data-bs-theme="light"] .cat-dynamic-title,
+        [data-bs-theme="light"] .cat-dynamic-title a,
+        [data-bs-theme="light"] .cat-dynamic-title a:visited {
+          color: var(--cat-title-color-light, var(--cat-title-color-dark, inherit));
+        }
+        [data-bs-theme="dark"] .cat-dynamic-title,
+        [data-bs-theme="dark"] .cat-dynamic-title a,
+        [data-bs-theme="dark"] .cat-dynamic-title a:visited {
+          color: var(--cat-title-color-dark, var(--cat-title-color-light, inherit));
+        }
+        [data-bs-theme="light"] .cat-dynamic-title a:hover { color: var(--cat-title-hover-color-light, var(--cat-title-color-light, inherit)); }
+        [data-bs-theme="dark"] .cat-dynamic-title a:hover { color: var(--cat-title-hover-color-dark, var(--cat-title-color-dark, inherit)); }
 
-    <!-- Scripts that need to be at the end of the header -->
-    {% include assets/scripts.html %}
-    <script>
-      // Early theme initialization (moved to head for minimal FOUC) (Item C)
-      (function(){
-        try {
-          const cookie = document.cookie.match(/(?:^|; )site_theme=([^;]+)/);
-          let pref = cookie ? decodeURIComponent(cookie[1]) : 'auto';
-          if(!['light','dark','auto'].includes(pref)) pref = 'auto';
-          const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-          const mode = pref === 'auto' ? (systemDark ? 'dark':'light') : pref;
-          document.documentElement.setAttribute('data-bs-theme', mode);
-        } catch(e){}
-      })();
-    </script>
+        /* Homepage post bullets: semantic list with centered custom dot */
+        .post-bullets { list-style: none; margin: 0; padding: 0; }
+        .post-bullets .post-bullet-item { display: flex; align-items: center; gap: .6rem; margin: .5rem 0 .5rem 0; font-size: smaller;}
+        .post-bullets .post-bullet-item:last-child { margin-bottom: 0; }
+        .post-bullet-dot { width: .45rem; height: .45rem; border-radius: 50%; background: currentColor; flex: 0 0 .45rem; }
+        [data-bs-theme="dark"] .post-bullet-dot { opacity: .85; }
+        .post-bullet-text { line-height: 1.25; }
+      </style>
+
+      <!-- Scripts that need to be at the end of the header -->
+      {% include assets/scripts.html %}
+      <script>
+        // Early theme initialization (moved to head for minimal FOUC) (Item C)
+        (function(){
+          try {
+            const cookie = document.cookie.match(/(?:^|; )site_theme=([^;]+)/);
+            let pref = cookie ? decodeURIComponent(cookie[1]) : 'auto';
+            if(!['light','dark','auto'].includes(pref)) pref = 'auto';
+            const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const mode = pref === 'auto' ? (systemDark ? 'dark':'light') : pref;
+            document.documentElement.setAttribute('data-bs-theme', mode);
+          } catch(e){}
+        })();
+      </script>
   <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
-  <!-- SENTINEL: default layout active (injected for debugging) -->
-  <!-- BODY TOKEN ABC 20250814 -->
 
-    <!-- Navbar -->
     {% include layout/top-nav-bar.html %}
-
-    <!-- Page Content -->
-    <!-- Masthead -->
 
     {% include homepage/hero-random.html %}
 
@@ -194,7 +187,7 @@
                 </div>
               </div>
             </div>
-            <!-- SENTINEL-A AFTER BLOG CARD -->
+
             <div class="col">
               <div class="card h-100">
                 <div class="ratio ratio-3x1">
@@ -561,5 +554,7 @@
     </script>
 
   </body>
+
   {% include utility/theme-debug.html %}
+  
 </html>
