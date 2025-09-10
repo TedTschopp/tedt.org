@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-09-10T20:11:24Z
+Last update: 2025-09-10T20:20:24Z
 \n## Latest Summary (tail 50 lines)\n
         ^ (line 4832)
 - ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
@@ -50,16 +50,17 @@ Last update: 2025-09-10T20:11:24Z
   *  linking to internal hash # that does not exist (line 1027)
      <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="#">Table of Contents 📖</a>
 
-HTML-Proofer found 238 failures!
+HTML-Proofer found 240 failures!
 \n## Available Historical Logs\n
-- 2025-09-10T20-08-14-HTML Logging.txt
-- 2025-09-08T13-40-50-HTML Logging.txt
-- 2025-09-08T20-58-32-HTML Logging.txt
+- 2025-09-10T20-16-52-HTML Logging.txt
 - 2025-09-09T15-54-20-HTML Logging.txt
 - 2025-09-09T16-02-36-HTML Logging.txt
 - 2025-09-09T21-07-52-HTML Logging.txt
 - 2025-09-10T16-56-35-HTML Logging.txt
 - 2025-09-10T17-14-30-HTML Logging.txt
+- 2025-09-10T20-08-14-HTML Logging.txt
+- 2025-09-08T13-40-50-HTML Logging.txt
+- 2025-09-08T20-58-32-HTML Logging.txt
 - 2025-09-06T23-19-01-HTML Logging.txt
 - 2025-09-06T23-06-54-HTML Logging.txt
 - 2025-09-06T20-25-18-HTML Logging.txt
