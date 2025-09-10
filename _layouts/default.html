@@ -45,7 +45,7 @@
 
   /* Homepage post bullets: semantic list with centered custom dot */
   .post-bullets { list-style: none; margin: 0; padding: 0; }
-  .post-bullets .post-bullet-item { display: flex; align-items: center; gap: .6rem; margin: 0 0 .35rem 0; }
+  .post-bullets .post-bullet-item { display: flex; align-items: center; gap: .6rem; margin: .35rem 0 .35rem 0; }
   .post-bullets .post-bullet-item:last-child { margin-bottom: 0; }
   .post-bullet-dot { width: .55rem; height: .55rem; border-radius: 50%; background: currentColor; flex: 0 0 .55rem; }
   [data-bs-theme="dark"] .post-bullet-dot { opacity: .85; }
@@ -367,7 +367,7 @@
                             </h4>
                             <p class="card-text">{{ post.description}}</p>
                             {% if post.bullets and post.bullets.size > 0 %}
-                              <div class="post-bullets" role="list">{%- for bullet in post.bullets -%}<div class="post-bullet-item" role="listitem"><span class="post-bullet-dot" aria-hidden="true"></span><span class="post-bullet-text">{{ bullet }}</span></div>{%- endfor -%}</div>
+                              <div class="post-bullets" role="list">{%- for bullet in post.bullets -%}{%- assign __b = bullet | markdownify | replace_first: '<p>', '' | replace: '</p>', '' | strip -%}<div class="post-bullet-item" role="listitem"><span class="post-bullet-dot" aria-hidden="true"></span><span class="post-bullet-text">{{ __b | strip }}</span></div>{%- endfor -%}</div>
                             {% endif %}
                           </div>
                         </div>
@@ -383,7 +383,7 @@
                             </h4>
                             <p class="card-text">{{ post.description}}</p>
                             {% if post.bullets and post.bullets.size > 0 %}
-                              <div class="post-bullets" role="list">{%- for bullet in post.bullets -%}<div class="post-bullet-item" role="listitem"><span class="post-bullet-dot" aria-hidden="true"></span><span class="post-bullet-text">{{ bullet }}</span></div>{%- endfor -%}</div>
+                              <div class="post-bullets" role="list">{%- for bullet in post.bullets -%}{%- assign __b = bullet | markdownify | replace_first: '<p>', '' | replace: '</p>', '' | strip -%}<div class="post-bullet-item" role="listitem"><span class="post-bullet-dot" aria-hidden="true"></span><span class="post-bullet-text">{{ __b | strip }}</span></div>{%- endfor -%}</div>
                             {% endif %}
                           </div>
                         </div>
