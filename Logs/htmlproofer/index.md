@@ -1,8 +1,6 @@
 # HTML Proofer Logs
-Last update: 2025-09-10T20:35:28Z
+Last update: 2025-09-10T20:57:18Z
 \n## Latest Summary (tail 50 lines)\n
-  *  4832:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
-        </div>
         ^ (line 4832)
 - ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
   *  External link http://www.dscout.com/ara# failed: 404 No error
@@ -45,14 +43,16 @@ Last update: 2025-09-10T20:35:28Z
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
+  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
+  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  linking to internal hash # that does not exist (line 1027)
      <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="#">Table of Contents 📖</a>
 
-HTML-Proofer found 236 failures!
+HTML-Proofer found 242 failures!
 \n## Available Historical Logs\n
-- 2025-09-10T20-32-09-HTML Logging.txt
+- 2025-09-10T20-53-59-HTML Logging.txt
 - 2025-09-08T13-40-50-HTML Logging.txt
 - 2025-09-08T20-58-32-HTML Logging.txt
 - 2025-09-09T15-54-20-HTML Logging.txt
@@ -62,6 +62,7 @@ HTML-Proofer found 236 failures!
 - 2025-09-10T17-14-30-HTML Logging.txt
 - 2025-09-10T20-08-14-HTML Logging.txt
 - 2025-09-10T20-16-52-HTML Logging.txt
+- 2025-09-10T20-32-09-HTML Logging.txt
 - 2025-09-06T23-19-01-HTML Logging.txt
 - 2025-09-06T23-06-54-HTML Logging.txt
 - 2025-09-06T20-25-18-HTML Logging.txt
