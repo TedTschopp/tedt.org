@@ -1,4 +1,4 @@
-HTML Proofer run at 2025-09-09 21:07:52+00:00
+HTML Proofer run at 2025-09-09 16:02:36+00:00
 Running ["ScriptCheck", "LinkCheck", "ImageCheck", "HtmlCheck"] on ["./_site"] on *.html... 
 
 
@@ -235,6 +235,7 @@ Ran on 1160 files!
 - ./_site/The-Chriemhild-Trench/index.html
   *  External link https://tedt.org/https://tedt.org/img/2024-01/Aeon%20-%20Memory%20of%20Myths.webp failed: 404 No error
 - ./_site/The-Human-Edge/index.html
+  *  External link https://apnews.com/article/artificial-intelligence-ai-nurses-hospitals-health-care-3e41c0a2768a3b4c5e002270cc2abe23 failed: 403 No error
   *  External link https://www.news.com.au/finance/business/manufacturing/chinese-companys-dark-factory-will-no-human-workers-soon-be-the-norm/news-story/9468c5bc380108deba4e55a95d6c28d4 failed: 403 No error
 - ./_site/The-Mentor-In-The-Machine/index.html
   *  External link https://tschopp.net/@Ted/115022112505356872 failed: 404 No error
@@ -374,7 +375,7 @@ Ran on 1160 files!
   *  External link http://www.sonypictures.com/homevideo/paprika/index.html failed: 404 No error
 - ./_site/html5-javascript-version-of-of-windows/index.html
   *  External link http://www.gildertech.com/bios.html failed: 404 No error
-  *  External link http://www.irvingwb.com/about.html failed: 404 No error
+  *  External link http://www.irvingwb.com/about.html failed: 301 Couldn't resolve host name
 - ./_site/index.html
   *  5265:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
   <style>
@@ -546,4 +547,4 @@ Ran on 1160 files!
   *  linking to internal hash # that does not exist (line 1027)
      <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="#">Table of Contents 📖</a>
 
-HTML-Proofer found 238 failures!
+HTML-Proofer found 239 failures!

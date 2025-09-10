@@ -1,4 +1,3 @@
-     <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
 - ./_site/category/religion/index.html
   *  internally linking to /category/prompts/, which does not exist (line 2246)
      <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
@@ -26,7 +25,7 @@
   *  External link http://www.sonypictures.com/homevideo/paprika/index.html failed: 404 No error
 - ./_site/html5-javascript-version-of-of-windows/index.html
   *  External link http://www.gildertech.com/bios.html failed: 404 No error
-  *  External link http://www.irvingwb.com/about.html failed: 403 No error
+  *  External link http://www.irvingwb.com/about.html failed: 404 No error
 - ./_site/index.html
   *  5265:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
   <style>
@@ -192,6 +191,7 @@
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
   *  External link https://www.instagram.com/TedTschopp failed: 429 No error
+  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  linking to internal hash # that does not exist (line 1027)
