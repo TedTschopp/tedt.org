@@ -1,3 +1,5 @@
+  *  internally linking to /category/prompts/, which does not exist (line 4252)
+     <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
 - ./_site/category/religion/index.html
   *  internally linking to /category/prompts/, which does not exist (line 2246)
      <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
@@ -27,15 +29,15 @@
   *  External link http://www.gildertech.com/bios.html failed: 404 No error
   *  External link http://www.irvingwb.com/about.html failed: 404 No error
 - ./_site/index.html
-  *  5305:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
+  *  5299:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
   <style>
-  ^ (line 5305)
+  ^ (line 5299)
   *  External link http://www.dohring.com failed: got a time out (response code 0)
   *  External link https://The-Password-Challange.tedt.org/ failed: response code 0 means something's wrong.
              It's possible libcurl couldn't connect to the server or perhaps the request timed out.
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
-  *  internally linking to /category/prompts/, which does not exist (line 2977)
+  *  internally linking to /category/prompts/, which does not exist (line 2970)
      <a href="/category/prompts/" class="Prompts category-title text-decoration-none" style="vertical-align: middle;">Prompts</a>
 - ./_site/ipfs/index.html
   *  image  does not have an alt attribute (line 69)
@@ -190,11 +192,9 @@
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
   *  External link https://vimeo.com/TedTschopp failed: 404 No error
-  *  External link https://www.instagram.com/TedTschopp failed: 429 No error
-  *  External link https://www.instagram.com/tedtschopp/ failed: 429 No error
   *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
   *  External link https://www.reddit.com/user/tedtschopp/ failed: 403 No error
   *  linking to internal hash # that does not exist (line 1027)
      <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="#">Table of Contents 📖</a>
 
-HTML-Proofer found 240 failures!
+HTML-Proofer found 236 failures!
