@@ -19,7 +19,6 @@ author:
 bullets:
 - A work in progress to help build an automated story telling computer
 - Over 100 tables of various objects and qualities.
-- To Do- Look into Mustache engine
 description: "An application that generates text using procedural methods. \n"
 seo-description: An application that generates text using procedural methods.
 categories:
@@ -54,7 +53,6 @@ image_height: 1000
 
 * A work in progress to help build an automated story telling computer
 * Over 100 tables of various objects and qualities.
-* To Do: Look into Mustache engine
 
 **Technology Used:** JavaScript and HTML
 
