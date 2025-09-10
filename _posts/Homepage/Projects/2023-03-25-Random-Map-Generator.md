@@ -52,8 +52,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: 17
-image_width: 1024
-image_height: 1024
+image_width: 1456  
+image_height: 816
 ---
 **Overview:** An application of the Procedural Text Generation system to created a 1 dimensional RPG Map every day.
 
