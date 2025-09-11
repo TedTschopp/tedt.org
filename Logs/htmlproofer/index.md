@@ -1,8 +1,6 @@
 # HTML Proofer Logs
-Last update: 2025-09-10T20:57:18Z
+Last update: 2025-09-11T13:25:47Z
 \n## Latest Summary (tail 50 lines)\n
-        ^ (line 4832)
-- ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
   *  External link http://www.dscout.com/ara# failed: 404 No error
 - ./_site/the-google-browseros/index.html
   *  External link https://tschopp.net/@Ted/111179921177417786 failed: 404 No error
@@ -27,15 +25,17 @@ Last update: 2025-09-10T20:57:18Z
   *  1542:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1542)
-  *  5280:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  5286:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 5280)
+        ^ (line 5286)
 - ./_site/what-should-google-buy/index.html
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
   *  External link https://indieauth.com/auth failed: 400 No error
-  *  External link https://indieweb.org/User:Www.tedt.org/ failed: 404 No error
+  *  External link https://indieweb.org/User:Www.tedt.org failed: 500 No error
+  *  External link https://indieweb.org/User:Www.tedt.org/ failed: 500 No error
+  *  External link https://indieweb.org/responses failed: 500 No error
   *  External link https://kit.fontawesome.com/dcb78fdf66.js failed: 403 No error
   *  External link https://ko-fi.com/tedtschopp failed: 403 No error
   *  External link https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816 failed: response code 0 means something's wrong.
@@ -52,6 +52,7 @@ Last update: 2025-09-10T20:57:18Z
 
 HTML-Proofer found 242 failures!
 \n## Available Historical Logs\n
+- 2025-09-11T13-22-35-HTML Logging.txt
 - 2025-09-10T20-53-59-HTML Logging.txt
 - 2025-09-08T13-40-50-HTML Logging.txt
 - 2025-09-08T20-58-32-HTML Logging.txt
