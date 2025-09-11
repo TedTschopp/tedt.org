@@ -61,7 +61,7 @@ location:
         latitude: 34.1470
         longitude: -117.9709
 
-image: 
+image: "img/2025-09/AI-Model-Chatbot-Workflow-Agent.webp"
 image-alt: "Diagram showing differences between model, chatbot, workflow, and agent"
 image-artist: "Ted Tschopp"
 image-artist-URL: https://tedt.org
