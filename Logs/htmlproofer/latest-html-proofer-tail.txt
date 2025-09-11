@@ -1,5 +1,3 @@
-- ./_site/category/religion/index.html
-  *  internally linking to /category/prompts/, which does not exist (line 2246)
      <a href="/category/prompts/" class="Prompts category-badge text-decoration-none w-100" style="vertical-align: middle;">Prompts - 14</a>
 - ./_site/category/reprint/index.html
   *  internally linking to /category/prompts/, which does not exist (line 1745)
@@ -27,15 +25,15 @@
   *  External link http://www.gildertech.com/bios.html failed: 404 No error
   *  External link http://www.irvingwb.com/about.html failed: 404 No error
 - ./_site/index.html
-  *  5299:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
+  *  5296:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
   <style>
-  ^ (line 5299)
+  ^ (line 5296)
   *  External link http://www.dohring.com failed: got a time out (response code 0)
   *  External link https://The-Password-Challange.tedt.org/ failed: response code 0 means something's wrong.
              It's possible libcurl couldn't connect to the server or perhaps the request timed out.
              Sometimes, making too many requests at once also breaks things.
              Either way, the return message (if any) from the server is: Couldn't resolve host name
-  *  internally linking to /category/prompts/, which does not exist (line 2970)
+  *  internally linking to /category/prompts/, which does not exist (line 2967)
      <a href="/category/prompts/" class="Prompts category-title text-decoration-none" style="vertical-align: middle;">Prompts</a>
 - ./_site/ipfs/index.html
   *  image  does not have an alt attribute (line 69)
@@ -146,9 +144,9 @@
   *  1516:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1516)
-  *  4832:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  4838:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 4832)
+        ^ (line 4838)
 - ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
   *  External link http://www.dscout.com/ara# failed: 404 No error
 - ./_site/the-google-browseros/index.html
@@ -174,15 +172,17 @@
   *  1542:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
 </p>
 ^ (line 1542)
-  *  5280:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+  *  5286:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
         </div>
-        ^ (line 5280)
+        ^ (line 5286)
 - ./_site/what-should-google-buy/index.html
   *  External link http://reddit.com/u/TedTschopp failed: 403 No error
   *  External link https://buymeacoffee.com/TedT failed: 403 No error
   *  External link https://foursquare.com/tedtschopp failed: 404 No error
   *  External link https://indieauth.com/auth failed: 400 No error
-  *  External link https://indieweb.org/User:Www.tedt.org/ failed: 404 No error
+  *  External link https://indieweb.org/User:Www.tedt.org failed: 500 No error
+  *  External link https://indieweb.org/User:Www.tedt.org/ failed: 500 No error
+  *  External link https://indieweb.org/responses failed: 500 No error
   *  External link https://kit.fontawesome.com/dcb78fdf66.js failed: 403 No error
   *  External link https://ko-fi.com/tedtschopp failed: 403 No error
   *  External link https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816 failed: response code 0 means something's wrong.
