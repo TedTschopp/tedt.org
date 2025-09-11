@@ -77,6 +77,8 @@ image_height:
 
 mastodon-post-id:
 
+math: true
+
 ---
 
 ## Model vs. Chatbot vs. Workflow vs. Agent

@@ -24,6 +24,9 @@
     <!-- START OF CSS INCLUDE -->
     {% include assets/all-css-includes.html %}
     <!-- END OF CSS INCLUDE -->
+    {% if page.math or page.mathjax %}
+      {% include assets/mathjax.html %}
+    {% endif %}
 
     <!-- WCAG contrast utility styles -->
     <link rel="stylesheet" href="/css/WCAG.css">

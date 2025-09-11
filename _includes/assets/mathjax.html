@@ -1,0 +1,17 @@
+<!-- MathJax configuration (loaded only when page.math or page.mathjax is truthy) -->
+<script>
+window.MathJax = {
+  tex: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$'], ['\\[','\\]']],
+    processEscapes: true,
+    processEnvironments: true,
+    tags: 'ams'
+  },
+  options: {
+    skipHtmlTags: ['script','noscript','style','textarea','pre','code'],
+  },
+  svg: { fontCache: 'global' }
+};
+</script>
+<script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.min.js" integrity="sha384-+k1I9uZH1Jg0uN6S3+pdRHWgOyBW0D3iDs0JQqV1E1CpguO+zO2wzNhw1YV6G1An" crossorigin="anonymous"></script>

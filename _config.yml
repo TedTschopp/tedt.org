@@ -6,7 +6,14 @@ include:
 exclude:
 - "**/*.bak"
 
-# markdown: kramdown
+# Enable explicit kramdown + MathJax processing
+markdown: kramdown
+kramdown:
+  input: GFM
+  math_engine: mathjax
+  syntax_highlighter: rouge
+  hard_wrap: false
+  parse_block_html: true
 plugins:
 - jekyll-redirect-from
 
