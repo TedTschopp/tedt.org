@@ -79,6 +79,7 @@ mastodon-post-id:
 math: true
 
 mastodon-post-id: 115186286978010327
+mermaid: true
 ---
 
 ## Model vs. Chatbot vs. Workflow vs. Agent

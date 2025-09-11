@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="dark" class="layout-post-debug">
   <head>
     <meta charset="utf-8">
 
@@ -26,14 +26,13 @@
     <link rel="stylesheet" href="/css/WCAG.css">
 
     <!-- Scripts that need to be at the end of the header -->
-    {% include assets/scripts.html %}
-    {% include seo/article-jsonld.html %}
-        {% if page.math or page.mathjax %}
-            {% include assets/mathjax.html %}
-        {% endif %}
-        {% if page.mermaid %}
-            {% include assets/mermaid.html %}
-        {% endif %}
+        {% include assets/scripts.html %}
+        {% include seo/article-jsonld.html %}
+        <!-- DEBUG(math/mermaid): math='{{ page.math }}' mathjax='{{ page.mathjax }}' mermaid='{{ page.mermaid }}' -->
+        <!-- PAGE_KEYS: {{ page | jsonify }} -->
+        {% comment %} Force includes during debugging {% endcomment %}
+        {% include assets/mathjax.html %}
+        {% include assets/mermaid.html %}
   </head>
     <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
         <a href="#main_content" class="visually-hidden-focusable position-absolute top-0 start-0 m-2 px-3 py-2 bg-dark text-white rounded" style="z-index:1000;">Skip to content</a>
