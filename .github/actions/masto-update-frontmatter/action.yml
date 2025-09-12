@@ -1,0 +1,29 @@
+name: 'Mastodon Update Frontmatter'
+description: 'Resolve canonical path and update mastodon-post-id in markdown front matter'
+inputs:
+  toot-url:
+    description: 'The Mastodon toot URL to resolve and record'
+    required: true
+  write:
+    description: 'If true allow write operations'
+    required: false
+    default: 'true'
+outputs: {}
+runs:
+  using: 'composite'
+  steps:
+    - name: Resolve canonical path
+      id: resolve
+      shell: bash
+      env:
+        TOOT_URL: ${{ inputs.toot-url }}
+      run: |
+        python3 _code/resolve_canonical_path.py > /dev/null || true
+    - name: Update front matter
+      if: inputs.write == 'true'
+      shell: bash
+      env:
+        TOOT_URL: ${{ inputs.toot-url }}
+        ITEM_URL: ''
+      run: |
+        python3 _code/update_masto_frontmatter.py || true

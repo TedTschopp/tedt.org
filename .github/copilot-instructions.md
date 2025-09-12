@@ -64,12 +64,13 @@
 
 ## Testing & Environment
 
+* Put all test code in the `/tests/` folder.
 * **Always restart the server** after making code changes so changes can be tested.
 * **Kill any lingering or conflicting test servers** before starting a new one.
-* Validate all **HTML, CSS, and JS** locally before pushing.
+* Validate all **Python, Ruby, HTML, CSS, and JS** locally before pushing.
 * Never overwrite the `.env` file without first asking and confirming.
-* Put all test code in the `/tests/` folder.
-* Mock data is only for **testing**—never for development or production.
+* Create **mock data** and place it in a `/data/mock/` folder.
+* Use **mock data** for testing purposes only.g
 * Never add **stubbed or fake data** to code that runs in dev or prod.
 
 ### Extended Testing Strategy

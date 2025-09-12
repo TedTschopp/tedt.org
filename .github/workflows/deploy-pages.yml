@@ -1,0 +1,50 @@
+# Deploy built Jekyll site to GitHub Pages (after build)
+name: Deploy to GitHub Pages
+
+on:
+  workflow_run:
+    workflows: ["CI Build & Validate"]
+    types:
+      - completed
+  workflow_dispatch:
+  # Manual rerun or for hotfix redeploy
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-deploy
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    if: >-
+      ${{ github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Ruby & Bundler
+        uses: ./.github/actions/setup-ruby-bundle
+        with:
+          ruby-version: '3.2'
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Build site
+        run: bundle exec jekyll build --source ./ --destination ./_site
+      - name: Sanity check output
+        run: |
+          if [ ! -d "_site" ] || [ -z "$(ls -A _site)" ]; then
+            echo "Build output directory is empty!"; exit 1; fi
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}

@@ -1,0 +1,39 @@
+name: 'Mastodon Cache Prep'
+description: 'Normalize cache and optionally sync mastodon-post-id front matter (preview/live)'
+inputs:
+  write:
+    description: 'If true, perform live write operations'
+    required: false
+    default: 'false'
+  gha-outputs:
+    description: 'Emit GitHub Actions outputs'
+    required: false
+    default: 'true'
+  token-present:
+    description: 'Whether a Mastodon token is provided to calling job (informational)'
+    required: false
+    default: 'true'
+outputs:
+  sync_candidates:
+    description: 'Number of sync candidates found'
+    value: ${{ steps.sync-preview.outputs.sync_candidates }}
+  sync_updated:
+    description: 'Number of sync updates applied (live)'
+    value: ${{ steps.sync-live.outputs.sync_updated || '0' }}
+runs:
+  using: 'composite'
+  steps:
+    - name: Normalize Mastodon cache
+      shell: bash
+      run: python3 _code/normalize_masto_cache.py || true
+    - name: Sync IDs preview
+      id: sync-preview
+      shell: bash
+      run: |
+        python3 _code/sync_masto_ids_from_cache.py --gha || true
+    - name: Sync IDs live (write)
+      if: inputs.write == 'true'
+      id: sync-live
+      shell: bash
+      run: |
+        python3 _code/sync_masto_ids_from_cache.py --write --gha || true

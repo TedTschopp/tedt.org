@@ -1,6 +1,10 @@
 # TedT.org
 
-[![CI Validation](https://github.com/TedTschopp/tedt.org/actions/workflows/ci-validation.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/ci-validation.yml)
+[![Site CI](https://github.com/TedTschopp/tedt.org/actions/workflows/site-ci.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/site-ci.yml)
+[![Deploy](https://github.com/TedTschopp/tedt.org/actions/workflows/deploy-pages.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/deploy-pages.yml)
+[![Mastodon Backfill](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-backfill.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-backfill.yml)
+[![Mastodon Feed Publish](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed-publish.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed-publish.yml)
+[![Mastodon Dedupe](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-dedupe.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-dedupe.yml)
 
 Welcome to the repository for my personal homepage, [TedT.org](https://tedt.org). This site is a collection of my projects, writings, and interests, built using Jekyll and various open-source tools.
 
@@ -208,7 +212,7 @@ To run the site locally:
 
 ## Quality Gates
 
-Automated validations run on every push via the CI Validation workflow (badge above):
+Automated validations run on every push via the Site CI workflow (badge above):
 
 - Build & date normalization
 - Legacy key guard (blocks reintroduction of removed config keys)
@@ -219,6 +223,28 @@ Automated validations run on every push via the CI Validation workflow (badge ab
 - HTML Proofer (links, images, basic HTML correctness)
 
 Run locally with: `make qa`
+
+## GitHub Workflows Overview
+
+Current active workflows (legacy files removed / stubbed):
+
+| Workflow | File | Triggers | Purpose |
+|----------|------|----------|---------|
+| Site CI | `site-ci.yml` | push, PR, weekly schedule | Build, security audit, HTML Proofer, feed & sitemap checks |
+| Deploy to GitHub Pages | `deploy-pages.yml` | workflow_run (Site CI success), manual | Deterministic deploy only after green CI |
+| Mastodon Backfill | `mastodon-backfill.yml` | schedule (q2h), manual | Batch or manual backfill of missing toot IDs |
+| Mastodon Feed Publish | `mastodon-feed-publish.yml` | push (main), 6h schedule, manual | Post newest site entry to Mastodon |
+| Mastodon Dedupe | `mastodon-dedupe.yml` | daily schedule, manual | Scan & (optionally) delete duplicate toots |
+
+Composite actions (DRY helpers) under `.github/actions/`:
+
+| Action | Directory | Description |
+|--------|-----------|-------------|
+| setup-ruby-bundle | `.github/actions/setup-ruby-bundle/` | Standard Ruby + bundler + caching |
+| masto-cache-prep | `.github/actions/masto-cache-prep/` | Normalize mastodon cache & sync front matter preview/live |
+| masto-update-frontmatter | `.github/actions/masto-update-frontmatter/` | Resolve canonical path & update toot ID in markdown |
+
+Deprecated legacy workflow files were retained only as inert stubs (no triggers) to avoid accidental reactivation; they can be fully removed in a future cleanup once all badges / references are confirmed updated.
 
 ## Homepage Hero System & Caching
 
@@ -238,10 +264,12 @@ The homepage hero (image/video) is selected randomly on each load using a data-d
    - `img/categories/home-hero-images/<base>.webp`
    - `img/categories/home-hero-images/<base>.mp4` (optional if no motion variant)
 2. Add an entry to `_data/homepage_heroes.yml`:
-   ```yaml
-   - base: hero-new-example
-     alt: "Short descriptive alt text for screen readers"
-   ```
+
+    ```yaml
+    - base: hero-new-example
+       alt: "Short descriptive alt text for screen readers"
+    ```
+
 3. Build the site. The service worker precache list is generated automatically from the YAML; no manual edit needed.
 4. Deploy. Clients will receive the updated `sw.js` (its version hash changes when the list changes) and precache the new media.
 

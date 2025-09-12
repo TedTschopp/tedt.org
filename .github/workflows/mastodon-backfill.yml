@@ -1,0 +1,148 @@
+name: Mastodon Backfill (Scheduled & Manual)
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'   # every 2 hours
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'auto (batch-based) or manual'
+        default: 'auto'
+        required: true
+      since:
+        description: 'Only process posts dated on/after (YYYY-MM-DD) [manual mode]'
+        required: false
+      limit:
+        description: 'Max number of posts to backfill (manual)'
+        required: false
+      batch_limit:
+        description: 'Batch size per auto run (auto mode)'
+        required: false
+      delay:
+        description: 'Seconds delay between posts (5-10)'
+        default: '8'
+        required: true
+      dry_run:
+        description: "Set to 'false' for live posting"
+        default: 'true'
+        required: true
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Derive parameters
+        id: params
+        run: |
+          MODE=${{ github.event.inputs.mode || 'auto' }}
+          DELAY=${{ github.event.inputs.delay || '8' }}
+          if [ "$DELAY" -lt 5 ]; then DELAY=5; fi
+          if [ "$DELAY" -gt 10 ]; then DELAY=10; fi
+          if [ "$MODE" = "auto" ]; then
+            # Auto mode uses batch size; default 5
+            BATCH=${{ github.event.inputs.batch_limit || '' }}
+            if [ -z "$BATCH" ]; then BATCH=5; fi
+            echo "mode=auto" >> $GITHUB_OUTPUT
+            echo "batch=$BATCH" >> $GITHUB_OUTPUT
+          else
+            echo "mode=manual" >> $GITHUB_OUTPUT
+            echo "since=${{ github.event.inputs.since }}" >> $GITHUB_OUTPUT
+            echo "limit=${{ github.event.inputs.limit }}" >> $GITHUB_OUTPUT
+          fi
+          echo "delay=$DELAY" >> $GITHUB_OUTPUT
+          echo "dry_run=${{ github.event.inputs.dry_run || 'true' }}" >> $GITHUB_OUTPUT
+
+      - name: Pre-run audit JSON
+        run: |
+          python3 _code/audit_masto_frontmatter.py --json > audit-before.json || true
+          cat audit-before.json || true
+
+      - name: Normalize Mastodon cache (pre)
+        run: echo "(Deprecated direct normalization step kept for log context)"
+
+      - name: Cache Prep (preview + optional live)
+        id: cache_prep
+        uses: ./.github/actions/masto-cache-prep
+        with:
+          write: ${{ steps.params.outputs.dry_run == 'false' && 'true' || 'false' }}
+
+      - name: Parse missing count
+        id: audit
+        run: |
+          MISSING=$(python3 -c "import json,sys;print(json.load(open('audit-before.json')).get('missing_count',0))" || echo 0)
+          echo "missing=$MISSING" >> $GITHUB_OUTPUT
+          echo "Remaining posts without mastodon-post-id: $MISSING"
+
+      - name: Auto mode batch backfill
+        if: steps.params.outputs.mode == 'auto' && steps.audit.outputs.missing != '0'
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        run: |
+          WRITE_FLAG=""
+            if [ "${{ steps.params.outputs.dry_run }}" = "false" ]; then WRITE_FLAG="--write"; fi
+          echo "Processing up to ${{ steps.params.outputs.batch }} posts (delay=${{ steps.params.outputs.delay }}s, dry_run=${{ steps.params.outputs.dry_run }})"
+          python3 _code/backfill_masto_posts.py --limit ${{ steps.params.outputs.batch }} $WRITE_FLAG --rate ${{ steps.params.outputs.delay }}
+
+      - name: Manual mode run
+        if: steps.params.outputs.mode == 'manual'
+        env:
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+        run: |
+          ARGS=""
+          [ -n "${{ steps.params.outputs.since }}" ] && ARGS="$ARGS --since ${{ steps.params.outputs.since }}"
+          [ -n "${{ steps.params.outputs.limit }}" ] && ARGS="$ARGS --limit ${{ steps.params.outputs.limit }}"
+          DELAY=${{ steps.params.outputs.delay }}
+          if [ "$DELAY" -lt 5 ]; then DELAY=5; fi
+          if [ "$DELAY" -gt 10 ]; then DELAY=10; fi
+          if [ "${{ steps.params.outputs.dry_run }}" = "false" ]; then WRITE_FLAG="--write"; else WRITE_FLAG=""; fi
+          echo "Executing: python3 _code/backfill_masto_posts.py $ARGS $WRITE_FLAG --rate $DELAY"
+          python3 _code/backfill_masto_posts.py $ARGS $WRITE_FLAG --rate $DELAY
+
+      - name: Post-run audit JSON
+        if: steps.audit.outputs.missing != '0'
+        run: |
+          python3 _code/audit_masto_frontmatter.py --json > audit-after.json || true
+          cat audit-after.json || true
+
+      - name: Normalize Mastodon cache (post)
+        if: steps.audit.outputs.missing != '0'
+        run: python3 _code/normalize_masto_cache.py || true
+
+      - name: Sync mastodon-post-id from cache (post, live only)
+        if: steps.audit.outputs.missing != '0' && steps.params.outputs.dry_run == 'false'
+        run: python3 _code/sync_masto_ids_from_cache.py --write || true
+
+      - name: Append batch history (auto live only)
+        if: steps.params.outputs.mode == 'auto' && steps.params.outputs.dry_run == 'false' && steps.audit.outputs.missing != '0'
+        run: |
+          mkdir -p Logs
+          python3 _code/audit_masto_frontmatter.py --csv Logs/mastodon-missing-after-batch.csv || true
+
+      - name: Commit changes (live only)
+        if: steps.params.outputs.dry_run == 'false'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: mastodon backfill update"
+          file_pattern: cache/*.json _posts/**/*.md Logs/*.csv Logs/*.md _data/masto_backfill_history.json
+
+      - name: Summary
+        run: |
+          echo "### Mastodon Backfill Run" >> $GITHUB_STEP_SUMMARY
+          echo "Mode: ${{ steps.params.outputs.mode }}" >> $GITHUB_STEP_SUMMARY
+          echo "Dry run: ${{ steps.params.outputs.dry_run }}" >> $GITHUB_STEP_SUMMARY
+          echo "Delay: ${{ steps.params.outputs.delay }}s" >> $GITHUB_STEP_SUMMARY
+          if [ '${{ steps.params.outputs.mode }}' = 'auto' ]; then
+            echo "Batch size: ${{ steps.params.outputs.batch }}" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Since: ${{ steps.params.outputs.since }}" >> $GITHUB_STEP_SUMMARY
+            echo "Limit: ${{ steps.params.outputs.limit }}" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "Sync candidates (preview): ${{ steps.cache_prep.outputs.sync_candidates || '0' }}" >> $GITHUB_STEP_SUMMARY
+          echo "Sync updated (live): ${{ steps.cache_prep.outputs.sync_updated || '0' }}" >> $GITHUB_STEP_SUMMARY
+          if [ -f audit-before.json ]; then echo "#### Before" >> $GITHUB_STEP_SUMMARY; cat audit-before.json >> $GITHUB_STEP_SUMMARY; fi
+          if [ -f audit-after.json ]; then echo "#### After" >> $GITHUB_STEP_SUMMARY; cat audit-after.json >> $GITHUB_STEP_SUMMARY; fi
