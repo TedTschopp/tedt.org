@@ -23,17 +23,17 @@ outputs:
 runs:
   using: 'composite'
   steps:
-    - name: Normalize Mastodon cache
-      shell: bash
-      run: python3 _code/normalize_masto_cache.py || true
-    - name: Sync IDs preview
-      id: sync-preview
-      shell: bash
-      run: |
-        python3 _code/sync_masto_ids_from_cache.py --gha || true
-    - name: Sync IDs live (write)
-      if: inputs.write == 'true'
-      id: sync-live
-      shell: bash
-      run: |
-        python3 _code/sync_masto_ids_from_cache.py --write --gha || true
+  - name: Normalize Mastodon cache
+    shell: bash
+    run: python3 _code/normalize_masto_cache.py || true
+  - name: Sync IDs preview
+    id: sync-preview
+    shell: bash
+    run: |
+      python3 _code/sync_masto_ids_from_cache.py --gha || true
+  - name: Sync IDs live (write)
+    if: inputs.write == 'true'
+    id: sync-live
+    shell: bash
+    run: |
+      python3 _code/sync_masto_ids_from_cache.py --write --gha || true

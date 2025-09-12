@@ -11,25 +11,25 @@ inputs:
 runs:
   using: 'composite'
   steps:
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ inputs.ruby-version }}
-        bundler-cache: false
-    - name: Cache vendor/bundle
-      uses: actions/cache@v4
-      with:
-        path: vendor/bundle
-        key: gems-${{ runner.os }}-${{ hashFiles(format('{0}/{1}', inputs.working-directory, '**/Gemfile.lock')) }}
-        restore-keys: |
-          gems-${{ runner.os }}-
-    - name: Add Linux platform to lockfile
-      shell: bash
-      working-directory: ${{ inputs.working-directory }}
-      run: |
-        bundle lock --add-platform x86_64-linux || true
-        bundle lock --add-platform ruby || true
-    - name: Install Gems
-      shell: bash
-      working-directory: ${{ inputs.working-directory }}
-      run: bundle install --jobs 4 --path vendor/bundle
+  - name: Setup Ruby
+    uses: ruby/setup-ruby@v1
+    with:
+      ruby-version: ${{ inputs.ruby-version }}
+      bundler-cache: false
+  - name: Cache vendor/bundle
+    uses: actions/cache@v4
+    with:
+      path: vendor/bundle
+      key: gems-${{ runner.os }}-${{ hashFiles(format('{0}/{1}', inputs.working-directory, '**/Gemfile.lock')) }}
+      restore-keys: |
+        gems-${{ runner.os }}-
+  - name: Add Linux platform to lockfile
+    shell: bash
+    working-directory: ${{ inputs.working-directory }}
+    run: |
+      bundle lock --add-platform x86_64-linux || true
+      bundle lock --add-platform ruby || true
+  - name: Install Gems
+    shell: bash
+    working-directory: ${{ inputs.working-directory }}
+    run: bundle install --jobs 4 --path vendor/bundle
