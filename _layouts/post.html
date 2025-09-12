@@ -116,15 +116,19 @@
                                         {% endif %}
                                     </div>
                                     <div class="small image-credits">
-                                        {% if image-credits-URL contains "http" %}
-                                            <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>:&nbsp;an image by
+                                        {%- comment -%}
+                                          NOTE: Fixed invalid Liquid references (image-credits-URL / image-credits-artist-URL) which caused build failure.
+                                          Variables were assigned earlier using underscores (image_credits_URL, image_credits_artist_URL).
+                                        {%- endcomment -%}
+                                        {% if image_credits_URL and image_credits_URL contains "http" %}
+                                            <cite><a target="_new" href="{{ image_credits_URL }}">{{ image_credits_title }}</a></cite>:&nbsp;an image by
                                         {% else %}
-                                            <cite>{{image_credits_title}}</cite>:&nbsp;an image by
+                                            <cite>{{ image_credits_title }}</cite>:&nbsp;an image by
                                         {% endif %}
-                                        {% if image-credits-artist-URL contains "http" %}
-                                            <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_new" class="url fn n" href="{{image_credits_artist_URL}}">{{image_credits}}</a></address></span>
+                                        {% if image_credits_artist_URL and image_credits_artist_URL contains "http" %}
+                                            <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_new" class="url fn n" href="{{ image_credits_artist_URL }}">{{ image_credits }}</a></address></span>
                                         {% else %}
-                                            {{image_credits}}
+                                            {{ image_credits }}
                                         {% endif %}
                                     </div>
                                 </div>

@@ -1,7 +1,6 @@
 Configuration file: /Users/tedtschopp/Developer/tedt.org/_config.yml
+[guard] legacy deletion disabled; placeholder html_postprocess.rb kept
             Source: /Users/tedtschopp/Developer/tedt.org
        Destination: /Users/tedtschopp/Developer/tedt.org/_site
  Incremental build: disabled. Enable with --incremental
       Generating... 
-                    done in 15.482 seconds.
- Auto-regeneration: disabled. Use --watch to enable.
