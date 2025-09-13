@@ -3,10 +3,12 @@ title: "Three‑Layer Clock Cards (Printable + Web Component)"
 date: 2025-09-13
 tags: ["TTRPG", "GM Tools", "Clocks", "Printable", "BitD-style"]
 summary: "Web-rendered, printable clock cards for a three‑layer, multi‑tempo TTRPG engine—Scene, Episode, and Meta (Factions, Campaign, Seasonal)."
-
+permalink: /RPG/the-marchin-engine/
 redirect_from:
-- /RPG/The-Marchin-Engine.html
-- /RPG/The-Marchin-Engine
+  - /RPG/The-Märchin-Engine.html
+  - /RPG/The-Märchin-Engine
+  - /RPG/The-Marchin-Engine.html
+  - /RPG/The-Marchin-Engine
 
 ---
 
