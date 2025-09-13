@@ -1,10 +1,10 @@
 ### CI Lite Overrides
 # Exclude bulky experimental data & embedded virtual environment to prevent early memory termination.
 exclude:
-  - _data/Swiss-Folklore-Work-in-Progress/**
-  - _data/Swiss-Folklore-Work-in-Progress
-  - _data/Checkins/**
-  - _data/Checkins
+- _data/Swiss-Folklore-Work-in-Progress/**
+- _data/Swiss-Folklore-Work-in-Progress
+- _data/Checkins/**
+- _data/Checkins
 
 # (Optional) add other heavy paths if needed later.
 
