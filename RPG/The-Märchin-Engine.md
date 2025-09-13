@@ -5,16 +5,285 @@ tags: ["TTRPG", "GM Tools", "Clocks", "Plot Design"]
 summary: "A complete three‑layer plot library with scene clocks, thresholds, episode arcs, meta hooks, seeds for 7 genres, and scores."
 ---
 
-This is a **complete, interactive library** of clock‑driven plots tuned for a **three‑layer engine**:
 
-- **Layer 1 — Scene (30 minutes)**: interlocked clocks for the immediate tension.  
-- **Layer 2 — Episode (8–10)**: tonight’s throughline mission clock.  
-- **Layer 3 — Meta (8–16)**: multiple always‑on clocks (Factions, Campaign Goal, Seasonal Throughline).
+# The Märchin Engine — GM Guide to the Web Plot Library
 
-Use the **filters** to jump to a plot or highlight a genre’s seeds. All clocks, thresholds, episode arcs, meta hooks, and scores are included.
+*How to run three‑layer clocks at your table with adaptation rules for D\&D, Traveller, GURPS, and BRP*
 
-> Want printables? See:  
-> **Clock Cards** and **GM Procedure One‑Pager** (link to your existing posts).
+---
+
+## 0) What this webpage is (and why it’s useful)
+
+The page at **The Märchin Engine** is an **interactive library** of clock‑driven plots built for a **three‑layer structure**. It lets you:
+
+* **Browse plots** that each include: the **Scene** clocks you’ll use at the table, the **Episode** beats for tonight, and the **Meta** hooks that move factions/season/campaign forward.
+* **Search** by keyword and **highlight seeds by genre** (Vaesen, Gamma World, High Fantasy, Cyberpunk, Space Opera, Superhero, Modern Investigation).
+* Jump from a **table of contents** to any plot; each plot page shows **scene clocks**, **25/50/75% thresholds**, **episode arc beats**, **meta‑link rules**, and **genre seeds**. ([Ted Tschopp's Homepage][1])
+
+> If you want printables, the page links to **Clock Cards** and a **GM Procedure One‑Pager**. ([Ted Tschopp's Homepage][1])
+
+---
+
+## 1) Glossary (all terms you’ll see on the page)
+
+**Clock** — A segmented progress track you fill (**tick**) or reduce (**erase**). Common sizes: **4 / 6 / 8 / 10 / 12** segments.
+
+**Tick / Erase** — Add or remove filled segments on a clock.
+
+**Layer** — The engine runs in **three tempos** at once:
+
+* **Scene Layer (≈30 minutes):** Interlocked clocks for the immediate situation (e.g., *Objective 8*, *Alarm 6*, *Hazard 6*, *Exit 4*).
+* **Episode Layer (8–10):** Tonight’s mission throughline (e.g., *The Job*, *Name the Truth*).
+* **Meta Layer (8–16):** Always‑on background clocks: **Faction clocks** (one per major faction), a **Campaign Goal** clock (the party’s long arc), and a **Seasonal Throughline** (festival/ritual/weather calendar). ([Ted Tschopp's Homepage][1])
+
+**Threshold (25% / 50% / 75%)** — Predetermined beats on a clock that **change the situation** (new guard route, ritual unlock, last‑stand choice).
+
+**Threshold Tap** — When a **Scene** clock crosses **25/50/75%**, you **tick the Episode clock**; at 50% or 75% you may also tick a relevant **Meta** clock (a faction notices, the season stirs).
+
+**Outcome Tap** — At the **end of a scene**, success/failure/mixed results **tick a Meta clock** (e.g., success → **Campaign/Ally +1**, failure → **Opposition/Season +1**).
+
+**Echo Action** — A **player‑initiated conversion**: spend table currency (Intel, Favor, Lore, Rep, Salvage, Faith, Clout—use what fits your game) to **tick or erase** a chosen Meta clock by 1.
+
+**Time Drift** — At the **end of each 30‑minute scene**, tick **Seasonal +1** and **one reactive Faction +1** (pause this during a climax).
+
+**Finisher** — A finale move unlocked near **75%** (e.g., *Showdown*, *Seal the Breach*, *Stabilize*).
+
+**Pushback** — A listed way for players to **erase** enemy/faction progress (e.g., “cleanup job erases 2 Heat”).
+
+**Seeds** — Short, setting‑flavored prompts for Vaesen, Gamma World, High Fantasy, Cyberpunk, Space Opera, Superhero, Modern Investigation.
+
+---
+
+## 2) How to navigate the page (quick UI tour)
+
+1. **Search box** — Type any keyword: plot name, clock, threshold effect, or seed text; the list narrows live. ([Ted Tschopp's Homepage][1])
+2. **“Highlight seeds for” menu** — Choose a genre to highlight those seeds in each plot (helps re‑skin fast). ([Ted Tschopp's Homepage][1])
+3. **TOC tiles** — Click a plot to jump to its section (each tile shows its overall score).
+4. Inside a plot:
+
+   * **Scene Layer — Clocks**: Names, segment counts, and concise descriptions.
+   * **Thresholds**: 25/50/75% effects—copy these onto your paper/virtual cards.
+   * **Episode Arc (8–10)**: Tonight’s beats in order.
+   * **Meta Hooks**: Exactly **when** and **which** meta clocks tick, plus **Echo** and **Pushback** hooks.
+   * **Genre Seeds**: Ready reskins.
+
+> To print physical aids, follow the page’s links to **Clock Cards** and **GM Procedure One‑Pager**. ([Ted Tschopp's Homepage][1])
+
+---
+
+## 3) Session prep in 12 minutes (for any ruleset)
+
+**A) Pick tonight’s Episode**
+
+* From the page, choose a plot that fits your goal (e.g., **Heist**, **Investigation**, **Ritual**). Note the **Episode Arc (8–10)** beats.
+
+**B) Choose 3–4 Scene clocks** for the **first scene**
+
+* Typical set: **Objective 8**, **Alarm 6**, **Hazard 6**, **Exit 4** (swap to fit the plot).
+* Write **25/50/75% thresholds** as shown on the page (modify to taste).
+
+**C) Select Meta clocks** to keep visible this session
+
+* **Campaign Goal (12–16)**, **Seasonal (8 or 12)**, and **2–3 Faction clocks** (Influence/Project/Legitimacy).
+* Jot **what ticks them** (from each plot’s **Meta Hooks**).
+
+**D) Currency**
+
+* Decide which currencies exist in your setting (e.g., *Intel*, *Favors*, *Lore*). Tell players they can **Echo** to move Meta.
+
+**E) Safety & difficulty**
+
+* Decide your **tick sizes** (see §5), and set **difficulty bands** for your system (DCs, Target Numbers, etc.).
+
+---
+
+## 4) Running play at the table — the loop
+
+### During a scene (≈30 minutes)
+
+1. **Frame it**: Stakes and which **Scene clocks** are in play.
+2. **Play to the first threshold**: Ask “What do you do?”; call for rolls; on results **tick/erase** the relevant clock(s).
+3. **Announce threshold effects** at **25/50/75%** (new guard route, public move, finale unlock).
+4. **Offer Echo**: Once per scene, remind players they can **spend currency** to tick/erase a **Meta**.
+5. **Close the scene**: Resolve the immediate objective or escalate naturally.
+
+### Between scenes
+
+* Apply **Outcome Taps** (success/failure/mixed → Meta ticks).
+* Apply **Time Drift**: **Seasonal +1**, and **one reactive Faction +1**.
+* If the **Episode Arc** is ≈ **75%**, **pause Time Drift** and run the **Finisher** in the next scene.
+
+### End of session
+
+* If any **Meta** clock fills, **end with a stinger** and log “**permission to schedule**” a finale built around that meta (don’t auto‑run it).
+* Award currency; reveal how factions reacted in downtime.
+
+---
+
+## 5) Tick sizing and difficulty (system‑agnostic core)
+
+Use these **tick magnitudes** as defaults:
+
+* **+2 ticks**: big swing, critical success, brilliant plan, or heavy resource spend.
+* **+1 tick**: clear success; time passes under pressure.
+* **0 / +1 trade**: success **with a cost** (progress **and** a small enemy/hazard tick).
+* **Enemy +1**: clear failure; time lost; you’re noisy.
+* **Enemy +2**: fumble, botch, or a hard consequence lands.
+* **Erase 1**: clever mitigation, perfect cover, or “clean up the scene” action.
+
+> Apply ticks to **the clock that makes the most sense** (Objective, Alarm, Hazard, etc.). Keep **Episode**/**Meta** taps as described in the plot’s Meta Hooks.
+
+---
+
+## 6) System adapters (D\&D, Traveller, GURPS, BRP)
+
+Use your native resolution mechanics; **map the result quality to ticks**. The tables below keep pacing consistent.
+
+### 6.1 D\&D / d20 (5e or similar)
+
+Use normal **ability checks / tool checks / attack rolls** vs. a **DC**.
+Suggested **DC bands** (tune per tier): 10 easy • 13–15 standard • 16–18 hard • 20+ extreme.
+
+| d20 outcome                                    | Tick guidance                                                          |
+| ---------------------------------------------- | ---------------------------------------------------------------------- |
+| **Natural 20** or beat DC by **10+**           | **+2** to the target clock **or** **erase 1** on a threat (GM’s call). |
+| **Success** (meet/exceed DC)                   | **+1** to the target clock.                                            |
+| **Success at a cost** (use 5e’s optional rule) | **+1** to target **and** **enemy/hazard +1**.                          |
+| **Fail by ≤5**                                 | **Enemy/hazard +1**.                                                   |
+| **Fail by ≥6** or **natural 1**                | **Enemy/hazard +2** (and possibly trigger a threshold effect early).   |
+
+**Advantage/Disadvantage**: On **Advantage**, you may **upgrade** one step (e.g., success→+1 *plus* erase 1 on Alarm **or** push a small clock). On **Disadvantage**, **downgrade** one step (success→success‑with‑cost).
+
+---
+
+### 6.2 Traveller (2d6 + skill + DM; “Effect” = total − 8)
+
+| Traveller Effect | Tick guidance                                                                     |
+| ---------------- | --------------------------------------------------------------------------------- |
+| **+6 or more**   | **+2** to target or **erase 1** on opposition; narrate a decisive technical edge. |
+| **+3 to +5**     | **+1** to target.                                                                 |
+| **+1 to +2**     | **+1** to target **and** minor **enemy/hazard +1** (you rushed, left traces).     |
+| **0 to −2**      | **Enemy/hazard +1** (you stall or attract notice).                                |
+| **−3 or worse**  | **Enemy/hazard +2** (bad jam, loud signature, collateral).                        |
+
+**Boon/Bane**: Upgrade/downgrade one row. **Effect** can also **erase 1** on a related threat when it’s +6 or higher.
+
+---
+
+### 6.3 GURPS (3d6 roll under Skill; Margin of Success/Failure)
+
+| GURPS result                         | Tick guidance                                                            |
+| ------------------------------------ | ------------------------------------------------------------------------ |
+| **Critical success** or **MoS ≥ 10** | **+2** to target or **erase 1** on threat.                               |
+| **MoS 5–9**                          | **+1** to target.                                                        |
+| **MoS 1–4**                          | **+1** to target **and** minor **enemy/hazard +1** (time or noise cost). |
+| **MoF 1–4**                          | **Enemy/hazard +1**.                                                     |
+| **MoF ≥ 5** or **critical failure**  | **Enemy/hazard +2**.                                                     |
+
+**Task difficulty modifiers** apply as normal. Use **Time Use** rules to justify **Time Drift** between scenes.
+
+---
+
+### 6.4 BRP / d100 (Regular/Hard/Extreme/Critical; Fumbles)
+
+| BRP degree                                               | Tick guidance                                       |
+| -------------------------------------------------------- | --------------------------------------------------- |
+| **Critical or Extreme** (≤ skill/5; edition‑specific)    | **+2** to target or **erase 1** on threat.          |
+| **Hard** (≤ skill/2)                                     | **+1** to target.                                   |
+| **Regular** (≤ skill)                                    | **+1** to target **and** minor **enemy/hazard +1**. |
+| **Failure**                                              | **Enemy/hazard +1**.                                |
+| **Fumble** (per edition, e.g., 00 or 96–00 at low skill) | **Enemy/hazard +2**.                                |
+
+**Opposed tests**: Compare degrees; the winner applies their tick row; a tie → **success at a cost** for the acting side.
+
+---
+
+## 7) End‑to‑end example (10 minutes to read, 90 minutes to run)
+
+**Plot**: *Heist / Infiltration* → Episode: “The Job”
+**Scene clocks**: *Objective 8*, *Alarm 6*, *Hazard 6*, *Exit 4*
+**Meta active**: *Campaign Goal 12*, *Seasonal 8*, *Emerald Court Influence 10*, *City Watch Legitimacy 8*
+
+**Scene 1 (Casing, 30 min)**
+
+* Players gather intel (D\&D Investigation vs DC 15): success → **Objective +1**.
+* **25% Alarm** threshold triggers: new patrol path (add a complication).
+* Player spends **Intel (Echo)** to **erase 1** on City Watch Legitimacy (they plant a story).
+* **End scene**: Outcome = **success** (they have a plan) → **Campaign Goal +1**. **Time Drift**: **Seasonal +1**, **Emerald Court +1**.
+
+**Scene 2 (Breach, 30 min)**
+
+* A failure on stealth (Traveller Effect −3) → **Alarm +2**; triggers **50% Alarm** (lockdown of a wing).
+* Great tool use (GURPS critical) to bypass a ward → **Objective +2** and **erase 1** on Hazard.
+* **End scene**: mixed (they got in but left traces) → **Campaign +1** **and** **Opposition +1**. Drift: **Seasonal +1**, reactive **City Watch +1**.
+
+**Scene 3 (Extraction, 30 min; Episode ≈75%)**
+
+* **Pause Time Drift** for the climax.
+* Finisher unlocked (from thresholds): **Exit Window 4** races to close.
+* BRP Hard success on the carry → **Objective +1**; Exit hits 3/4; a last push (D\&D success at cost) **Objective +1** and **Alarm +1**.
+* **End episode**: **Success** → **Ally Faction +1** and a **stinger**: Emerald Court announces a gala next week (permission to schedule a finale).
+
+---
+
+## 8) Using the Meta layer well (factions, campaign, seasons)
+
+* Keep **2–3 Faction clocks** visible (even if their thresholds are veiled) so players **feel** the world moving.
+* Use **Outcome Taps** to ensure **every scene** advances *something*. Success should grow **Campaign/Allies**; failure should fuel **Opposition/Season**.
+* Offer **Echo Actions** every scene so players can **steer the campaign tempo** (spend Intel to accelerate your *Campaign Goal*, or burn Favor to **erase** Doom).
+* Treat **Seasonal Throughline** as your *metronome*: it **ticks at scene end**, surfaces omens, and unlocks a **seasonal set‑piece** around 50%. (Pause drift during climaxes.)
+
+---
+
+## 9) Printing aids from the page
+
+* Click the links on the page to get the **Clock Cards** (4 per letter page) and the **GM Procedure One‑Pager**. Use pencil so you can reuse cards. ([Ted Tschopp's Homepage][1])
+* Keep the **Episode Arc card** in the middle of your table; rotate **Scene** cards in/out every 30 minutes; park **Meta** cards at the top edge so everyone sees the slow drum.
+
+---
+
+## 10) Troubleshooting (common issues → quick fixes)
+
+* **“Alarms always spike too fast.”**
+  Lower Alarm to **4 segments** but **soften** its thresholds; or make **critical stealth** erase 1 Alarm.
+
+* **“Players don’t touch Echo Actions.”**
+  Hand out **visible currency tokens**. Prompt once per scene: “Anyone want to spend Intel/Favor?”
+
+* **“Meta clocks race past the Episode.”**
+  Use the **Climax Pause**: **no Time Drift** during the final scene; limit outcome taps to **one** Meta on the finale.
+
+* **“Too many clocks on the table.”**
+  Cap to **3–4 Scene** clocks at a time; keep **Meta** at **Campaign + Seasonal + two Factions**.
+
+* **“D\&D doesn’t do success‑with‑cost.”**
+  Use **DMG’s optional rule** (or simply narrate a minor cost: time, noise, position).
+
+---
+
+## 11) Quick reference (laminate this)
+
+**Scene (≈30m)**
+
+* Put down 3–4 clocks with written **25/50/75** thresholds.
+* Roll → **Tick/Erase** the right clock(s); call the threshold effects.
+* Offer **Echo**; **end scene** → Outcome Tap → **Time Drift** (Seasonal +1; one Faction +1).
+
+**Episode (8–10)**
+
+* 25%: the plan becomes clear • 50%: momentum • 75%: **Finisher unlocked** • Full: **credits** (then stinger).
+
+**Meta (8–16)**
+
+* Keep **Campaign Goal**, **Seasonal**, and **2–3 Factions** visible.
+* Use **Pushback** missions to **erase** faction progress; use **Echo** to steer Hope/Doom.
+
+---
+
+### You’re ready
+
+Open **The Märchin Engine** page, pick a plot, copy the clocks/thresholds/meta hooks, and run your first 30‑minute scene. The page’s **search** and **genre highlight** make it effortless to re‑skin for any of your games; the **printable cards** and **one‑pager** keep everyone on the same beat. ([Ted Tschopp's Homepage][1])
+
 
 ---
 
