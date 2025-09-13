@@ -1,4 +1,0 @@
-name: Deprecated (Replaced by mastodon-backfill.yml)
-on:
-	workflow_call:
-jobs: {}

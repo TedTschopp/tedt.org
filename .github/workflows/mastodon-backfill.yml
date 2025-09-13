@@ -1,4 +1,4 @@
-name: Mastodon Backfill (Scheduled & Manual)
+name: "[SCHEDULED] Mastodon Backfill (Scheduled & Manual)"
 
 on:
   schedule:

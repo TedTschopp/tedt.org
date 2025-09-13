@@ -1,4 +1,4 @@
-name: CI Build & Validate
+name: "[SCHEDULED] CI Build & Validate"
 
 on:
   push:
@@ -43,7 +43,26 @@ jobs:
       - name: Backup post file check
         run: ruby tests/check_no_backup_posts.rb
       - name: Build Jekyll
-        run: bundle exec jekyll build --quiet
+        env:
+          CI_MEM_PROFILE: '1'
+        run: |
+          set -o pipefail
+          echo '--- Memory snapshot (before build) ---'
+          (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) | sed 's/^/MEM: /'
+          echo 'Starting Jekyll build (trace + profile)'
+          # Capture detailed timing & memory stats; exit code preserved
+          /usr/bin/time -v bundle exec jekyll build --trace --profile --quiet 2>&1 | tee build-profile.log
+          BUILD_EXIT=${PIPESTATUS[0]}
+          echo '--- Memory snapshot (after build) ---'
+          (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) | sed 's/^/MEM: /'
+          echo "Jekyll build exit code: $BUILD_EXIT"
+          exit $BUILD_EXIT
+      - name: Upload Jekyll build profile
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-build-profile
+          path: build-profile.log
       - name: Legacy key check
         run: ruby tests/check_no_legacy_siteurl.rb
       - name: Normalize Dates (microsecond timestamps)

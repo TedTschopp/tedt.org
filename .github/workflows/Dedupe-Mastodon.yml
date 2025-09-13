@@ -1,4 +1,4 @@
-name: Daily Mastodon Dedupe
+name: "[SCHEDULED] Daily Mastodon Dedupe (legacy)"
 
 # Runs daily at 10:00 UTC (~3:00 AM Pacific during DST; ~2:00 AM standard time)
 on:

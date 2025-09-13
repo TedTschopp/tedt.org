@@ -1,4 +1,4 @@
-name: Mastodon Feed Publish
+name: "[SCHEDULED] Mastodon Feed Publish"
 
 permissions:
   contents: write

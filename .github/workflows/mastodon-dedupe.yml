@@ -1,4 +1,4 @@
-name: Daily Mastodon Dedupe
+name: "[SCHEDULED] Daily Mastodon Dedupe"
 
 on:
   schedule:

@@ -1,9 +1,9 @@
 # Deploy built Jekyll site to GitHub Pages (after build)
-name: Deploy to GitHub Pages
+name: "[DEPLOY] Deploy to GitHub Pages"
 
 on:
   workflow_run:
-    workflows: ["CI Build & Validate"]
+    workflows: ["[SCHEDULED] CI Build & Validate"]
     types:
       - completed
   workflow_dispatch:
