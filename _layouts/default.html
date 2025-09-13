@@ -212,7 +212,12 @@
                   <p class="card-text three-line-clamp">A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.</p>
                 </div>
                 <div class="card-footer p-0 py-0 h-100">
-                  {% assign folklore_posts = site.categories['Folklore'] | sort: 'date' | reverse %}
+                  {%- assign _folklore_raw = site.categories['Folklore'] -%}
+                  {%- if _folklore_raw -%}
+                    {%- assign folklore_posts = _folklore_raw | sort: 'date' | reverse -%}
+                  {%- else -%}
+                    {%- assign folklore_posts = empty -%}
+                  {%- endif -%}
                   {% assign _count = 0 %}
                   {% for post in folklore_posts %}
                     {% assign _count = _count | plus: 1 %}
@@ -310,7 +315,12 @@
         <div class="container h-100 position-relative" style="top: -75px;">
           <div class="row gy-5 gy-lg-0 row-cols-1">
             <div class="col">
-              {% assign sorted_homepage = site.categories['Home'] | sort: 'order' %}
+              {%- assign _home_raw = site.categories['Home'] -%}
+              {%- if _home_raw -%}
+                {%- assign sorted_homepage = _home_raw | sort: 'order' -%}
+              {%- else -%}
+                {%- assign sorted_homepage = empty -%}
+              {%- endif -%}
               {% assign count = 0 %}
               {% assign previous_tag = '' %}
               {% for post in sorted_homepage %}

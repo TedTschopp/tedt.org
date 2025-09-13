@@ -5,6 +5,8 @@ include:
 # Exclude editor backup copies of posts (e.g., *.md.bak) so they don't generate duplicate URLs
 exclude:
 - "**/*.bak"
+# Exclude embedded Python virtual env inside data (never needed for site build)
+- _data/Swiss-Folklore-Work-in-Progress/myenv/**
 
 # Enable explicit kramdown + MathJax processing
 markdown: kramdown
