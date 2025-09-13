@@ -15,7 +15,16 @@
                       Career
                     </a>
                     <ul class="dropdown-menu-end dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                      {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
+                      {%- comment -%}
+                        Guarded retrieval of 'Home' category posts. In CI the recent-posts plugin may filter out all posts for this category, leaving nil.
+                        We coerce to an empty array to avoid Liquid's 'Cannot sort a null object' error.
+                      {%- endcomment -%}
+                      {% assign homepage_cat = site.categories['Home'] %}
+                      {% if homepage_cat %}
+                        {% assign sorted_homepage = homepage_cat | sort: 'order' %}
+                      {% else %}
+                        {% assign sorted_homepage = empty %}
+                      {% endif %}
                       {% assign last_company = "" %}
                       {% assign new_company = false %}
 
@@ -57,7 +66,7 @@
                       Projects
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
-                      {% assign sorted_homepage = site.categories.['Home'] | sort: 'order' %}
+                      {% comment %} Duplicate guarded retrieval for Projects dropdown (whitespace minimized) {% endcomment %}{% assign homepage_cat = site.categories['Home'] %}{% if homepage_cat %}{% assign sorted_homepage = homepage_cat | sort: 'order' %}{% else %}{% assign sorted_homepage = empty %}{% endif %}
                       {% assign last_company = "" %}
                       {% assign new_company = false %}
                       {% assign first_entry = true %}
