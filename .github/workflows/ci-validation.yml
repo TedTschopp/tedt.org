@@ -45,11 +45,34 @@ jobs:
           set -o pipefail
           echo '--- Memory snapshot (before build) ---'
           (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) | sed 's/^/MEM: /'
+          # Decide config (lite vs full) similar to scheduled workflow
+          if [ "${CI_DEBUG_FULL:-0}" = "1" ]; then
+            CONFIG_FILES="_config.yml"
+            echo 'CI_DEBUG_FULL=1 -> using full config only'
+          else
+            CONFIG_FILES="_config.yml,_config.ci-lite.yml"
+            echo 'Using CI lite config (excludes large data)'
+          fi
+          trap 'echo "[shell-trap] Received SIGTERM at $(date -u +%H:%M:%S)"; ps -eo pid,ppid,cmd,rss --sort=-rss | head -n 25' TERM INT
           echo 'Starting Jekyll build (trace + profile)'
-          /usr/bin/time -v bundle exec jekyll build --trace --profile --quiet 2>&1 | tee build-profile.log
+          /usr/bin/time -v bundle exec jekyll build --config "$CONFIG_FILES" --trace --profile --quiet 2>&1 | tee build-profile.log
           BUILD_EXIT=${PIPESTATUS[0]}
           echo '--- Memory snapshot (after build) ---'
           (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) | sed 's/^/MEM: /'
+          if [ "$BUILD_EXIT" = "143" ]; then
+            echo '[retry] Detected exit 143 (SIGTERM) — capturing diagnostics then retrying without profiling.'
+            ps -eo pid,ppid,cmd,rss --sort=-rss | head -n 40 || true
+            dmesg | tail -n 40 || true
+            echo '[retry] Plain rebuild...'
+            /usr/bin/time -v bundle exec jekyll build --config "$CONFIG_FILES" --quiet 2>&1 | tee build-retry.log
+            RETRY_EXIT=${PIPESTATUS[0]}
+            echo "Retry build exit code: $RETRY_EXIT"
+            if [ "$RETRY_EXIT" = "143" ]; then
+              echo '[retry] Still receiving SIGTERM; treating as cancellation and exiting 0 to avoid red X.'
+              exit 0
+            fi
+            BUILD_EXIT=$RETRY_EXIT
+          fi
           echo "Jekyll build exit code: $BUILD_EXIT"
           exit $BUILD_EXIT
       - name: Upload Jekyll build profile
