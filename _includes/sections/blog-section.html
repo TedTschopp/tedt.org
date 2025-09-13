@@ -1,0 +1,56 @@
+<!-- Blog Section -->
+<div class="col">
+  <div class="card h-100">
+    <div class="ratio ratio-3x1">
+      <img class="card-img-top w-100 d-block img-fluid rounded-start object-fit-cover" alt="Ted sitting at a computer in Nature" src="{{ site.url }}/img/home/blog.webp" />
+    </div>
+    <div class="card-body pt-2 pb-2 p-4">
+      {%- assign __blog_slug = 'blog' -%}
+      {%- assign __blog_entry = site.data.category_registry[__blog_slug] -%}
+      {%- if __blog_entry and __blog_entry.category_home_page -%}
+        <h2 class="card-title cat-dynamic-title" id="blog">
+          {% include utility/category-label.html category='blog' href=__blog_entry.category_home_page kind='title' class_extra='text-decoration-none' %}
+        </h2>
+      {%- else -%}
+        <h2 class="card-title cat-dynamic-title" id="blog">
+          {% include utility/category-label.html category='blog' kind='title' class_extra='text-decoration-none' %}
+        </h2>
+      {%- endif -%}
+      <h3 class="text-muted card-subtitle mb-2 three-line-clamp">Exploring the Intersection of Tech, Theology, and Imagination</h3>
+      <p class="card-text three-line-clamp">This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.</p>
+    </div>
+    <div class="card-footer p-0 py-0 h-100">
+      {% assign count = 0 %}
+      {% for post in site.posts %}
+        {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
+          <!-- Do Nothing -->
+        {% elsif post.categories contains "Draft" or post.category == "Draft" %}
+          <!-- Do Nothing -->
+        {% elsif post.categories contains "Role Playing Games" or post.category == "Role Playing Games" %}
+          <!-- Do Nothing -->
+        {% elsif post.categories contains "Folklore" or post.category == "Folklore" %}
+          <!-- Do Nothing -->
+        {% elsif post.categories contains "Quotes" or post.category == "Quote" or post.category == "quote" %}
+          <!-- Do Nothing -->
+        {% elsif post.categories contains "Home" or post.category == "Home" %}
+          <!-- Do Nothing -->
+        {% elsif post.layout contains "micropubpost" %}
+          <!-- Do Nothing -->
+        {% elsif post.layout contains "prompt" or post.category == "Prompts" %}
+          <!-- Do Nothing -->
+        {% else %}
+          {% assign count = count | plus: 1 %}
+          {% if count > 3 %}
+            {% break %}
+          {% endif %}
+
+          <div class="container">
+            <div class="row align-items-stretch">
+              {% include components/post-card.html post=post %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
