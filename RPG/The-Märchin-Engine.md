@@ -8,9 +8,45 @@ summary: "A complete three‑layer plot library with scene clocks, thresholds, e
 
 # The Märchin Engine — GM Guide to the Web Plot Library
 
-*How to run three‑layer clocks at your table with adaptation rules for D\&D, Traveller, GURPS, and BRP*
+1. [The Märchin Engine — GM Guide to the Web Plot Library](#the-märchin-engine--gm-guide-to-the-web-plot-library)
+   1. [0) What this webpage is (and why it’s useful)](#0-what-this-webpage-is-and-why-its-useful)
+   2. [1) Glossary (all terms you’ll see on the page)](#1-glossary-all-terms-youll-see-on-the-page)
+   3. [2) How to navigate the page (quick UI tour)](#2-how-to-navigate-the-page-quick-ui-tour)
+   4. [3) Session prep in 12 minutes (for any ruleset)](#3-session-prep-in-12-minutes-for-any-ruleset)
+   5. [4) Running play at the table — the loop](#4-running-play-at-the-table--the-loop)
+      1. [During a scene (≈30 minutes)](#during-a-scene-30-minutes)
+      2. [Between scenes](#between-scenes)
+      3. [End of session](#end-of-session)
+   6. [5) Tick sizing and difficulty (system‑agnostic core)](#5-tick-sizing-and-difficulty-systemagnostic-core)
+   7. [6) System adapters (D\&D, Traveller, GURPS, BRP)](#6-system-adapters-dd-traveller-gurps-brp)
+      1. [6.1 D\&D / d20 (5e or similar)](#61-dd--d20-5e-or-similar)
+      2. [6.2 Traveller (2d6 + skill + DM; “Effect” = total − 8)](#62-traveller-2d6--skill--dm-effect--total--8)
+      3. [6.3 GURPS (3d6 roll under Skill; Margin of Success/Failure)](#63-gurps-3d6-roll-under-skill-margin-of-successfailure)
+      4. [6.4 BRP / d100 (Regular/Hard/Extreme/Critical; Fumbles)](#64-brp--d100-regularhardextremecritical-fumbles)
+   8. [7) End‑to‑end example (10 minutes to read, 90 minutes to run)](#7-endtoend-example-10-minutes-to-read-90-minutes-to-run)
+   9. [8) Using the Meta layer well (factions, campaign, seasons)](#8-using-the-meta-layer-well-factions-campaign-seasons)
+   10. [9) Printing aids from the page](#9-printing-aids-from-the-page)
+   11. [10) Troubleshooting (common issues → quick fixes)](#10-troubleshooting-common-issues--quick-fixes)
+   12. [11) Quick reference (laminate this)](#11-quick-reference-laminate-this)
+2. [Example or Play **The Gala Heist** — Three Layers in Action](#example-or-play-the-gala-heist--three-layers-in-action)
+   1. [Cast \& Setup](#cast--setup)
+   2. [The Three Layers we’ll run](#the-three-layers-well-run)
+      1. [Layer 3 — **Meta** (always on)](#layer-3--meta-always-on)
+      2. [Layer 2 — **Episode Arc (8): “Steal the Starling”**](#layer-2--episode-arc-8-steal-the-starling)
+      3. [Layer 1 — **Scene 1 Clocks** (first 30 minutes)](#layer-1--scene-1-clocks-first-30-minutes)
+   3. [Actual Example](#actual-example)
+      1. [Scene 1 — Red Carpets \& Warded Glass (Casing)](#scene-1--red-carpets--warded-glass-casing)
+      2. [Scene 2 — Breach Under a Toast](#scene-2--breach-under-a-toast)
+      3. [Scene 3 — Extraction (Climax)](#scene-3--extraction-climax)
+   4. [Post‑Game Board (how the layers moved)](#postgame-board-how-the-layers-moved)
+   5. [“Make It Look Easy” — How to run this tonight](#make-it-look-easy--how-to-run-this-tonight)
+   6. [Quick Reskins (same scene beats, new skin)](#quick-reskins-same-scene-beats-new-skin)
+   7. [What made this session **sing** (for your table, too)](#what-made-this-session-sing-for-your-table-too)
+      1. [Want the table kit?](#want-the-table-kit)
 
----
+
+
+*How to run three‑layer clocks at your table with adaptation rules for D\&D, Traveller, GURPS, and BRP*
 
 ## 0) What this webpage is (and why it’s useful)
 
@@ -19,10 +55,6 @@ The page at **The Märchin Engine** is an **interactive library** of clock‑dri
 * **Browse plots** that each include: the **Scene** clocks you’ll use at the table, the **Episode** beats for tonight, and the **Meta** hooks that move factions/season/campaign forward.
 * **Search** by keyword and **highlight seeds by genre** (Vaesen, Gamma World, High Fantasy, Cyberpunk, Space Opera, Superhero, Modern Investigation).
 * Jump from a **table of contents** to any plot; each plot page shows **scene clocks**, **25/50/75% thresholds**, **episode arc beats**, **meta‑link rules**, and **genre seeds**. ([Ted Tschopp's Homepage][1])
-
-> If you want printables, the page links to **Clock Cards** and a **GM Procedure One‑Pager**. ([Ted Tschopp's Homepage][1])
-
----
 
 ## 1) Glossary (all terms you’ll see on the page)
 
@@ -52,8 +84,6 @@ The page at **The Märchin Engine** is an **interactive library** of clock‑dri
 
 **Seeds** — Short, setting‑flavored prompts for Vaesen, Gamma World, High Fantasy, Cyberpunk, Space Opera, Superhero, Modern Investigation.
 
----
-
 ## 2) How to navigate the page (quick UI tour)
 
 1. **Search box** — Type any keyword: plot name, clock, threshold effect, or seed text; the list narrows live. ([Ted Tschopp's Homepage][1])
@@ -68,8 +98,6 @@ The page at **The Märchin Engine** is an **interactive library** of clock‑dri
    * **Genre Seeds**: Ready reskins.
 
 > To print physical aids, follow the page’s links to **Clock Cards** and **GM Procedure One‑Pager**. ([Ted Tschopp's Homepage][1])
-
----
 
 ## 3) Session prep in 12 minutes (for any ruleset)
 
@@ -95,8 +123,6 @@ The page at **The Märchin Engine** is an **interactive library** of clock‑dri
 
 * Decide your **tick sizes** (see §5), and set **difficulty bands** for your system (DCs, Target Numbers, etc.).
 
----
-
 ## 4) Running play at the table — the loop
 
 ### During a scene (≈30 minutes)
@@ -118,8 +144,6 @@ The page at **The Märchin Engine** is an **interactive library** of clock‑dri
 * If any **Meta** clock fills, **end with a stinger** and log “**permission to schedule**” a finale built around that meta (don’t auto‑run it).
 * Award currency; reveal how factions reacted in downtime.
 
----
-
 ## 5) Tick sizing and difficulty (system‑agnostic core)
 
 Use these **tick magnitudes** as defaults:
@@ -132,8 +156,6 @@ Use these **tick magnitudes** as defaults:
 * **Erase 1**: clever mitigation, perfect cover, or “clean up the scene” action.
 
 > Apply ticks to **the clock that makes the most sense** (Objective, Alarm, Hazard, etc.). Keep **Episode**/**Meta** taps as described in the plot’s Meta Hooks.
-
----
 
 ## 6) System adapters (D\&D, Traveller, GURPS, BRP)
 
@@ -154,8 +176,6 @@ Suggested **DC bands** (tune per tier): 10 easy • 13–15 standard • 16–18
 
 **Advantage/Disadvantage**: On **Advantage**, you may **upgrade** one step (e.g., success→+1 *plus* erase 1 on Alarm **or** push a small clock). On **Disadvantage**, **downgrade** one step (success→success‑with‑cost).
 
----
-
 ### 6.2 Traveller (2d6 + skill + DM; “Effect” = total − 8)
 
 | Traveller Effect | Tick guidance                                                                     |
@@ -167,8 +187,6 @@ Suggested **DC bands** (tune per tier): 10 easy • 13–15 standard • 16–18
 | **−3 or worse**  | **Enemy/hazard +2** (bad jam, loud signature, collateral).                        |
 
 **Boon/Bane**: Upgrade/downgrade one row. **Effect** can also **erase 1** on a related threat when it’s +6 or higher.
-
----
 
 ### 6.3 GURPS (3d6 roll under Skill; Margin of Success/Failure)
 
@@ -182,8 +200,6 @@ Suggested **DC bands** (tune per tier): 10 easy • 13–15 standard • 16–18
 
 **Task difficulty modifiers** apply as normal. Use **Time Use** rules to justify **Time Drift** between scenes.
 
----
-
 ### 6.4 BRP / d100 (Regular/Hard/Extreme/Critical; Fumbles)
 
 | BRP degree                                               | Tick guidance                                       |
@@ -195,8 +211,6 @@ Suggested **DC bands** (tune per tier): 10 easy • 13–15 standard • 16–18
 | **Fumble** (per edition, e.g., 00 or 96–00 at low skill) | **Enemy/hazard +2**.                                |
 
 **Opposed tests**: Compare degrees; the winner applies their tick row; a tie → **success at a cost** for the acting side.
-
----
 
 ## 7) End‑to‑end example (10 minutes to read, 90 minutes to run)
 
@@ -224,8 +238,6 @@ Suggested **DC bands** (tune per tier): 10 easy • 13–15 standard • 16–18
 * BRP Hard success on the carry → **Objective +1**; Exit hits 3/4; a last push (D\&D success at cost) **Objective +1** and **Alarm +1**.
 * **End episode**: **Success** → **Ally Faction +1** and a **stinger**: Emerald Court announces a gala next week (permission to schedule a finale).
 
----
-
 ## 8) Using the Meta layer well (factions, campaign, seasons)
 
 * Keep **2–3 Faction clocks** visible (even if their thresholds are veiled) so players **feel** the world moving.
@@ -233,14 +245,10 @@ Suggested **DC bands** (tune per tier): 10 easy • 13–15 standard • 16–18
 * Offer **Echo Actions** every scene so players can **steer the campaign tempo** (spend Intel to accelerate your *Campaign Goal*, or burn Favor to **erase** Doom).
 * Treat **Seasonal Throughline** as your *metronome*: it **ticks at scene end**, surfaces omens, and unlocks a **seasonal set‑piece** around 50%. (Pause drift during climaxes.)
 
----
-
 ## 9) Printing aids from the page
 
 * Click the links on the page to get the **Clock Cards** (4 per letter page) and the **GM Procedure One‑Pager**. Use pencil so you can reuse cards. ([Ted Tschopp's Homepage][1])
 * Keep the **Episode Arc card** in the middle of your table; rotate **Scene** cards in/out every 30 minutes; park **Meta** cards at the top edge so everyone sees the slow drum.
-
----
 
 ## 10) Troubleshooting (common issues → quick fixes)
 
@@ -259,8 +267,6 @@ Suggested **DC bands** (tune per tier): 10 easy • 13–15 standard • 16–18
 * **“D\&D doesn’t do success‑with‑cost.”**
   Use **DMG’s optional rule** (or simply narrate a minor cost: time, noise, position).
 
----
-
 ## 11) Quick reference (laminate this)
 
 **Scene (≈30m)**
@@ -278,11 +284,250 @@ Suggested **DC bands** (tune per tier): 10 easy • 13–15 standard • 16–18
 * Keep **Campaign Goal**, **Seasonal**, and **2–3 Factions** visible.
 * Use **Pushback** missions to **erase** faction progress; use **Echo** to steer Hope/Doom.
 
+# Example or Play **The Gala Heist** — Three Layers in Action
+
+*An example session you can emulate at your own table (D\&D / Traveller / GURPS / BRP friendly)*
+
+> **What you’ll see:** a full table read with **GM + players**, three **layers** running at once (Scene → Episode → Meta), clocks **ticking on‑screen**, and choices that feel like TV. I’ll use clean, high‑energy table language in the style of top Actual Play GMs—clear stakes, fast rulings, and celebratory beats.
+
+## Cast & Setup
+
+**Players & PCs**
+
+* **Sam** as **Rook**, an unflappable infiltrator (stealth, sleight, parkour)
+* **Jules** as **Vera**, the face (forged invites, pressure reads, improv lies)
+* **Mason** as **Patch**, the tech (sensors, locks, “it’s already hacked” energy)
+* **Priya** as **Ash**, the scout (roof access, spotters, contingency planning)
+
+**System‑agnostic resolution**
+When I call for a roll, I’ll say the **result quality** we care about at the table:
+
+* **Strong Success** (treat like crit / Effect +3 / MoS 5+ / Hard+ / Extreme)
+* **Success**
+* **Success with Cost** (you progress, *and* a threat ticks)
+* **Fail** (threat ticks)
+* **Hard Fail** (threat ticks big)
+
+> Use your system’s native mechanics to hit those bands—see the quick mapping in the GM guide. The point here is the **tick** (filling a segment) or **erase** (clearing a segment) on a **clock**.
+
+## The Three Layers we’ll run
+
+### Layer 3 — **Meta** (always on)
+
+* **Campaign Goal (12): “Break the Syndicate’s Grip”** → **3/12**
+* **Faction A — Syndicate Influence (10)** → **4/10**
+* **Faction B — City Watch Legitimacy (8)** → **3/8**
+* **Seasonal Throughline (8): “Festival Week”** → **2/8**
+  *(Each end‑of‑scene, **Seasonal +1** and one **reactive Faction +1**; pause this during a climax.)*
+
+### Layer 2 — **Episode Arc (8): “Steal the Starling”**
+
+*(The Starling is a world‑famous micro‑sculpture; you’ve all seen the movie.)*
+**0/8** → **Beats:** Casing → Breach → Extraction → Handoff
+
+### Layer 1 — **Scene 1 Clocks** (first 30 minutes)
+
+* **Objective (8):** *Case the museum floor and ID the swap point* → **0/8**
+* **Alarm (6):** *Suspicion, patrols, warded glass* → **0/6**
+* **Hazard (6):** *Crowd density, laser grid calibration* → **0/6**
+* **Exit Window (4):** *The cleanest egress route closes at full* → **0/4**
+
+> **Thresholds:** at **25/50/75%** on any scene clock, something **changes**. Also, each threshold **taps** the **Episode Arc +1**; at **50/75%** on certain threats, the **Meta** may tick, too.
+
+## Actual Example
+
+### Scene 1 — Red Carpets & Warded Glass (Casing)
+
+**GM** *(brisk, warm)*:
+Floodlights rake the museum facade. Inside, a string quartet bows something expensive. The **Starling** spins in a glass plinth under a sleepwalking web of red lasers. Waiters orbit. Security wears smiles and shoelace earpieces. **What do you do?**
+
+**Vera (Jules)**: I glide in on the gala guest list I forged last downtime. Target a curator for small talk—fishing for schedule and guard cadence.
+
+> **Roll** → **Success**.
+> **Tick**: **Objective +1** → **1/8** *(Episode +1 → 1/8)*
+> **Note**: The curator mentions, “After the speech, they **recalibrate the grid**.”
+
+**GM (to table)**: That’s a **clue** which arms you against the **Hazard** later.
+
+**Patch (Mason)**: While Vera distracts, I peel off to the service corridor. I want the **laser grid diagnostic**—network sniff, no alarms.
+
+> **Roll** → **Success with Cost**.
+> **Tick**: **Objective +1** → **2/8** *(Episode +1 → 2/8)*
+> **Cost**: **Alarm +1** → **1/6** *(a camera blinks awake)*
+
+**Rook (Sam)**: I ghost behind a moving waiter, slip through a staff door, and test the **maintenance catwalk** above the exhibit—looking for a drop point.
+
+> **Roll** → **Strong Success**.
+> **Tick**: **Objective +2** → **4/8** *(Episode +1 → 3/8)*
+> **Erase**: **Alarm −1** → **0/6** *(you kill the blinking camera with a felt sticker)*
+
+**Ash (Priya)**: I post on the roof with binoculars, counting patrols and **marking the safest exit window**—preferably a **service elevator** that opens onto an alley.
+
+> **Roll** → **Success**.
+> **Tick**: **Exit Window +1** → **1/4** *(Episode +1 → 4/8)*
+> **GM Threshold (Exit 25%)**: The **Service Elevator** is perfect *now*, but… the **caterer’s truck** will block it **after the speech**.
+
+**GM**: You’ve got the layout. The speech is in fifteen. **End of Scene 1.**
+**Outcome Tap (success)** → **Campaign Goal +1** (**4/12**)
+**Time Drift** → **Seasonal +1** (**3/8**) & **Syndicate Influence +1** (**5/10**) *(they notice you casing)*
+
+**Echo Action (player‑driven conversion)**
+**Vera**: I’ll **spend 1 Favor** to smooth over our camera blip—call in a journalist I know to pull a friendly **Watch** supervisor away.
+**GM**: Love it. **Erase City Watch Legitimacy −1** *(your vibe lowers public pressure)* → **2/8** *(pushback on the wrong faction would be weird; you opted to ease heat)*
+
+### Scene 2 — Breach Under a Toast
+
+> **Reframe Layer 1 Clocks** for the breach:
+>
+> * **Objective (8):** *Swap the Starling* → **4/8** (from last scene)
+> * **Alarm (6)** → **0/6**
+> * **Hazard (6)** → **0/6**
+> * **Exit Window (4)** → **1/4**
+
+**GM**: The director taps the mic. As crystal chimes, the **laser grid shifts**—higher intensity, faster sweep. The crowd tightens around the plinth. **What do you do?**
+
+**Patch**: Exploit the recalibration window I learned. I **mirror‑spike** the grid to open a 3‑second **blind arc**.
+
+> **Roll** → **Success**.
+> **Tick**: **Objective +1** → **5/8** *(Episode +1 → 5/8)*
+
+**Rook** *(quiet grin)*: Three seconds is a lifetime. I drop from the catwalk, **swap** the Starling with our **weight‑matched duplicate**, and vanish behind a curtain.
+
+> **Roll** → **Success with Cost**.
+> **Tick**: **Objective +1** → **6/8** *(Episode +1 → 6/8)*
+> **Cost**: **Alarm +1** → **1/6** *(a server *almost* sees you; champagne splashes)*
+
+**GM Threshold (Objective 75%)**: Hitting **6/8** **unlocks the Finisher**: **“Ghost Walk”**—if you can keep Alarm ≤ 3 and Exit < full, the swap holds without a manual glass reset.
+
+**Ash**: I cut power to **one** of the lobby spotlights to steer a guard’s gaze the wrong way.
+
+> **Roll** → **Success**.
+> **Tick**: **Alarm −1** → **0/6** *(clean)*
+
+**Vera** *(performer voice)*: I clink my glass, launch into a heartfelt impromptu **donor mini‑toast** that ends right as the music swells, drawing every eye.
+
+> **Roll** → **Strong Success**.
+> **Tick**: **Alarm −1** (floor stays cool) → stays **0/6**
+> **Tick**: **Objective +1** (cover is perfect) → **7/8** *(Episode +1 → 7/8)*
+
+**GM** *(smiling)*: You are **one tick** from the **swap** being locked. The music ends; the **service elevator** hums—**Exit Window 2/4** as staff move trays.
+
+> **End of Scene 2**
+> **Outcome Tap (mixed)** → **Campaign Goal +1** (**5/12**) **and** **Syndicate Influence +1** (**6/10**) *(rumors: “someone’s pulling a move at the gala”)*
+> **Time Drift** **pauses next scene** if we hit a **climax**. We’re at **Episode 7/8**—climax **next**.
+
+**Echo Action**
+**Patch**: Spend **1 Intel** from earlier casing to **erase 1** on **Syndicate Influence**—we seed a tip blaming a rival.
+**GM**: Perfect. **Syndicate Influence 5/10** *(pushback lands; they glare at each other, not you)*
+
+### Scene 3 — Extraction (Climax)
+
+> **Climax Rule**: We’re at **Episode 7/8**; **pause Time Drift**. Only **Outcome Taps** affect Meta.
+
+**Layer 1 Clocks now:**
+
+* **Objective (8)** → **7/8** (*secure the swap*)
+* **Alarm (6)** → **0/6**
+* **Hazard (6)** → **0/6** *(but watch the recalibration tail*)
+* **Exit Window (4)** → **2/4**
+
+**GM**: The director unveils the Starling to polite awe. The **grid purrs**—a final micro‑sweep threatens to notice the mass difference *unless* you walk out right **now**.
+
+**Ash**: I radio, **“All green. Move.”**
+
+**Rook**: I drift with a cluster of guests, carrying a covered tray with the **real Starling** cushioned inside. Timing the sweep, I **Ghost Walk** toward the service elevator.
+
+> **Roll** → **Success**.
+> **Tick**: **Objective +1** → **8/8** **(FULL)**
+> **Episode Arc +1** → **8/8 (FULL)**
+> **Finisher resolves**: The swap **holds**; no glass reset needed.
+
+**GM** *(snapping fingers, playful)*: The elevator doors start to close… a guard’s hand **reaches**. “Hey! You can’t—”
+
+**Vera** *(without missing a beat)*: “Oh, perfect timing—**kitchen needs you** on the spill by the director’s shoes.” I flash the most **earnest** smile.
+
+> **Roll** → **Success with Cost**.
+> **Alarm +1** → **1/6** *(the guard hesitates but buys it)*
+> **Exit Window +1** → **3/4** *(doors nearly shut; any stall closes the clean route)*
+
+**Patch**: I jam the **elevator panel** for a fraction longer—keeps it open for Rook, then **auto‑sends** to service level.
+
+> **Roll** → **Strong Success**.
+> **Erase**: **Exit Window −1** → **2/4** *(you reopen the breathing room)*
+
+**GM**: The car descends. Basement corridor, rubber mats, humming compressors. Loading dock door rolls up to the alley—that’s the **handoff**.
+
+**Ash**: Roof to alley zipline. I’m already there to receive the **package** into the **flower van**.
+
+> **Roll** → **Success**.
+> **Episode resolved**; we cut on the van fading into festival traffic.
+
+**End of Scene 3 (Climax) — End of Session**
+
+* **Outcome Tap (success)** → **Campaign Goal +1** (**6/12**)
+* **Stinger**: An invite arrives *tomorrow*—Syndicate gala, “prove your innocence.” **Permission to schedule** a faction‑heavy follow‑up.
+* **Rewards**: You earn **2 Intel** and **1 Favor** (currency for future **Echo Actions**).
+
+## Post‑Game Board (how the layers moved)
+
+**Scene layer** created moment‑to‑moment pressure and changed the room at 25/50/75%.
+**Episode layer** gave the night a satisfying arc with a **Finisher**.
+**Meta layer** made your actions matter across sessions.
+
+**Final clocks:**
+
+* **Campaign Goal 6/12** (you’re halfway to breaking their grip)
+* **Syndicate Influence 5/10** (you pushed back via Echo; expect retaliation)
+* **City Watch Legitimacy 2/8** (Vera’s media favor cooled heat tonight)
+* **Seasonal 3/8** (Festival Week is gathering speed—expect a set‑piece at \~4/8 or 5/8)
+
+**GM Aside (what I did behind the screen)**
+
+* I called out **thresholds** to telegraph danger and opportunity.
+* Every scene **advanced something**—even when you succeeded, a faction or the season reacted.
+* I offered a **once‑per‑scene Echo** so you could steer the meta.
+* At **Episode 75%**, I paused **Time Drift** so the **climax** got all the oxygen.
+* I made sure the finale had a **cheer point** (doors closing, last‑second save) and a **stinger** to propel the campaign.
+
+## “Make It Look Easy” — How to run this tonight
+
+1. **Pick the Episode** (e.g., *Heist — The Job*). Put out an **Episode Arc (8–10)** card.
+2. **Start Scene 1** with **Objective 8**, **Alarm 6**, **Hazard 6**, **Exit 4**. Write 25/50/75% effects.
+3. **Name the Meta**: Campaign (12–16), Season (8 or 12), two Factions (8–12). Put their cards at the top edge.
+4. **Say the loop out loud**: “Cross a threshold → **Episode +1**. End a scene → **Meta ticks**. Spend currency → **Echo**.”
+5. **Celebrate wins** (Strong Success = +2 ticks or erase on threats). **Price progress** (Success with Cost = +1 and an enemy tick).
+6. At **Episode 75%**: **pause Time Drift**, unlock a **Finisher**, and **go cinematic**.
+7. **End with a stinger** if any Meta filled or crossed a big threshold.
+
+## Quick Reskins (same scene beats, new skin)
+
+* **Fantasy**: Royal masquerade, swapping a dragon‑bone cameo blessed by the High Priest. *Hazard*: sanctified wards. *Faction*: Night Market vs. Inquisition.
+* **Cyberpunk**: Corporate unveiling; swap an AI seed crystal. *Hazard*: ICE‑nailed smartglass. *Faction*: Rival megacorps; *Seasonal*: citywide blackout drill.
+* **Space Opera**: Orbital museum gala; swap a quantum reliquary. *Hazard*: grav‑mesh oscillation. *Faction*: Sector Authority; *Seasonal*: migration festival.
+* **Superhero**: Charity gala; disable a mind‑control broadcast node. *Hazard*: meta‑detectors. *Faction*: Vigilante Trust vs. City Hall PR.
+* **Modern Investigation**: Sting operation; plant a lawful sniffer to catch insider trades. *Hazard*: RF‑shielded server room. *Faction*: DA’s Office vs. Private Security.
+
 ---
 
-### You’re ready
+## What made this session **sing** (for your table, too)
 
-Open **The Märchin Engine** page, pick a plot, copy the clocks/thresholds/meta hooks, and run your first 30‑minute scene. The page’s **search** and **genre highlight** make it effortless to re‑skin for any of your games; the **printable cards** and **one‑pager** keep everyone on the same beat. ([Ted Tschopp's Homepage][1])
+* **Clear, tempting choices** (steal now or wait for the speech?)
+* **Visible pressure** (Exit Window climbing, Alarm creeping)
+* **Table agency** (Echo spends moved Factions/campaign)
+* **A real finale** (Finisher unlocked, breath‑holding exit)
+* **A lasting world change** (Meta clocks shifted; a new gala invites a showdown)
+
+> You can drop this exact scaffolding into D\&D, Traveller, GURPS, or BRP without rewriting core rules. The **clocks** carry the drama; your system supplies the **texture**.
+
+---
+
+### Want the table kit?
+
+Use the **Clock Cards** and the **GM One‑Pager** you’ve already got. Put **Episode** in the middle, **Scene** clocks near player hands, **Meta** at the top edge. Tell your players, “If you make noise, the **Alarm** ticks. If you’re brilliant, **erase** something. Spend **Intel/Favor/Lore** to steer the big story.”
+
+Now go steal the Starling.
+
+
 
 
 ---
