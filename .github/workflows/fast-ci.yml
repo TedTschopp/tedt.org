@@ -31,6 +31,12 @@ jobs:
         run: |
           bundle install --jobs 4 --path vendor/bundle
 
+      - name: Security Audit (Dependabot only)
+        if: github.actor == 'dependabot[bot]'
+        run: |
+          bundle exec bundler-audit update
+          bundle exec bundler-audit check || (echo 'Vulnerable gems found'; exit 1)
+
       - name: Fast Jekyll Build (incremental disabled for determinism)
         run: |
           bundle exec jekyll build --quiet || (echo 'Jekyll build failed'; exit 1)

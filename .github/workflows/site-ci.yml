@@ -2,7 +2,6 @@ name: "[SCHEDULED] CI Build & Validate"
 
 on:
   push:
-  pull_request:
   # Weekly scheduled run (Monday 05:00 UTC) to refresh security audit & logs
   schedule:
     - cron: '0 5 * * 1'
