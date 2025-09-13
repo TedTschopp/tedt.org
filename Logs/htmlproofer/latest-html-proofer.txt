@@ -1,4 +1,4 @@
-HTML Proofer run at 2025-09-13 21:44:38+00:00
+HTML Proofer run at 2025-09-13 22:14:27+00:00
 Running ["ScriptCheck", "LinkCheck", "ImageCheck", "HtmlCheck"] on ["./_site"] on *.html... 
 
 

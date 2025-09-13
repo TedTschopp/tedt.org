@@ -1,5 +1,5 @@
 # HTML Proofer Logs
-Last update: 2025-09-13T21:44:44Z
+Last update: 2025-09-13T22:14:33Z
 \n## Latest Summary (tail 50 lines)\n
 htmlproofer 3.19.4 | Error:  invalid attribute name `\n'
 /home/runner/work/tedt.org/tedt.org/vendor/bundle/ruby/3.2.0/gems/html-proofer-3.19.4/lib/html-proofer/element.rb:19:in `attr_reader': invalid attribute name `\n' (NameError)
@@ -52,7 +52,13 @@ htmlproofer 3.19.4 | Error:  invalid attribute name `\n'
 	from /opt/hostedtoolcache/Ruby/3.2.9/x64/bin/bundle:25:in `load'
 	from /opt/hostedtoolcache/Ruby/3.2.9/x64/bin/bundle:25:in `<main>'
 \n## Available Historical Logs\n
-- 2025-09-13T21-44-38-HTML Logging.txt
+- 2025-09-13T22-14-27-HTML Logging.txt
+- 2025-09-08T13-40-50-HTML Logging.txt
+- 2025-09-08T20-58-32-HTML Logging.txt
+- 2025-09-09T15-54-20-HTML Logging.txt
+- 2025-09-09T16-02-36-HTML Logging.txt
+- 2025-09-09T21-07-52-HTML Logging.txt
+- 2025-09-10T16-56-35-HTML Logging.txt
 - 2025-09-10T17-14-30-HTML Logging.txt
 - 2025-09-10T20-08-14-HTML Logging.txt
 - 2025-09-10T20-16-52-HTML Logging.txt
@@ -62,12 +68,7 @@ htmlproofer 3.19.4 | Error:  invalid attribute name `\n'
 - 2025-09-11T15-35-04-HTML Logging.txt
 - 2025-09-13T20-56-59-HTML Logging.txt
 - 2025-09-13T21-07-47-HTML Logging.txt
-- 2025-09-08T13-40-50-HTML Logging.txt
-- 2025-09-08T20-58-32-HTML Logging.txt
-- 2025-09-09T15-54-20-HTML Logging.txt
-- 2025-09-09T16-02-36-HTML Logging.txt
-- 2025-09-09T21-07-52-HTML Logging.txt
-- 2025-09-10T16-56-35-HTML Logging.txt
+- 2025-09-13T21-44-38-HTML Logging.txt
 - 2025-09-06T23-19-01-HTML Logging.txt
 - 2025-09-06T23-06-54-HTML Logging.txt
 - 2025-09-06T20-25-18-HTML Logging.txt
