@@ -54,7 +54,7 @@
       {%- assign cat_items = cat_items | push: composite -%}
     {%- endif -%}
   {%- endfor -%}
-  {%- assign cat_items = cat_items | sort_natural -%}
+  {%- assign cat_items = cat_items | safe_sort | sort_natural -%}
   {%- assign total = cat_items.size -%}
   {%- if total == 0 -%}<div class="p-3 text-muted small">No categories with posts yet.</div>{%- endif -%}
   {%- assign index = 0 -%}
@@ -87,7 +87,7 @@
                 </div>
                 <div class="card-footer p-0">
                   {%- assign displayed = 0 -%}
-                  {%- assign posts_sorted = site.posts | sort: 'date' | reverse -%}
+                  {%- assign posts_sorted = site.posts | safe_sort: 'date' | reverse -%}
                   {%- for post in posts_sorted -%}
                     {%- if displayed >= 3 -%}{%- break -%}{%- endif -%}
                     {%- assign post_match = false -%}

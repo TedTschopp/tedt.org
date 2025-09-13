@@ -166,7 +166,7 @@
           previously upset HTMLProofer list validation.
         {%- endcomment -%}
         {%- assign __cat_posts = site.posts | where_exp: "p","p.categories contains category" -%}
-        {%- assign __cat_posts = __cat_posts | sort: 'date' | reverse -%}
+  {%- assign __cat_posts = __cat_posts | safe_sort: 'date' | reverse -%}
         <div class="recent-quotes" role="list" aria-label="Recent quotes">
           {%- assign __shown = 0 -%}
           {%- for p in __cat_posts -%}

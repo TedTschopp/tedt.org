@@ -21,7 +21,7 @@
                       {%- endcomment -%}
                       {% assign homepage_cat = site.categories['Home'] %}
                       {% if homepage_cat %}
-                        {% assign sorted_homepage = homepage_cat | sort: 'order' %}
+                        {% assign sorted_homepage = homepage_cat | safe_sort: 'order' %}
                       {% else %}
                         {% assign sorted_homepage = empty %}
                       {% endif %}
@@ -66,7 +66,7 @@
                       Projects
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="navbarDarkDropdownMenuLink">
-                      {% comment %} Duplicate guarded retrieval for Projects dropdown (whitespace minimized) {% endcomment %}{% assign homepage_cat = site.categories['Home'] %}{% if homepage_cat %}{% assign sorted_homepage = homepage_cat | sort: 'order' %}{% else %}{% assign sorted_homepage = empty %}{% endif %}
+                      {% comment %} Duplicate guarded retrieval for Projects dropdown (whitespace minimized) {% endcomment %}{% assign homepage_cat = site.categories['Home'] %}{% if homepage_cat %}{% assign sorted_homepage = homepage_cat | safe_sort: 'order' %}{% else %}{% assign sorted_homepage = empty %}{% endif %}
                       {% assign last_company = "" %}
                       {% assign new_company = false %}
                       {% assign first_entry = true %}

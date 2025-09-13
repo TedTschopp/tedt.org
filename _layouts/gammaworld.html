@@ -282,7 +282,7 @@
                          {% assign grouped_sources = bestiary_posts | group_by: "source" %}
                          {% for group in grouped_sources %}
                          <h3 class="text-dark">{{ group.name | default: 'Unknown Source' }}</h3>
-                         {%- assign sorted_items = group.items | sort: 'title' -%}
+                         {%- assign sorted_items = group.items | safe_sort: 'title' -%}
                          <div class="text-dark w-100 mb-2 mt-1 gw-bestiary-columns" role="list">{%- for Bestiary in sorted_items -%}<div class="gw-bestiary-item" role="listitem">{%- if Bestiary.title != page.title -%}<a href="{{ Bestiary.url | relative_url }}" class="text-primary">{{ Bestiary.title }}</a>{%- else -%}<strong aria-current="page">{{ Bestiary.title }}</strong>{%- endif -%}</div>{%- endfor -%}</div>
                          {% endfor %}
                     </section>

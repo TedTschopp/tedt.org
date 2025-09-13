@@ -384,7 +384,7 @@
                     </div>
 
                     <div class="d-flex">
-                        {% assign sorted_series = page.series | sort: 'step' %}
+                        {% assign sorted_series = page.series | safe_sort: 'step' %}
                         <div class="list-group list-group-numbered flex-grow-1 me-4" role="list">{%- for series_item in sorted_series -%}
                                 {% comment %}Find the referenced prompt file{% endcomment %}
                                 {% assign series_prompt = null %}

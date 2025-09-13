@@ -22,7 +22,7 @@ sitemap:
     {% endfor %}
 {% endfor %}
 
-{% assign unique_categories = all_categories | uniq | sort %}
+{% assign unique_categories = all_categories | uniq | safe_sort %}
 <ul>
     {% for category in unique_categories %}
         {% if category != "" %}

@@ -214,7 +214,7 @@
                 <div class="card-footer p-0 py-0 h-100">
                   {%- assign _folklore_raw = site.categories['Folklore'] -%}
                   {%- if _folklore_raw -%}
-                    {%- assign folklore_posts = _folklore_raw | sort: 'date' | reverse -%}
+                    {%- assign folklore_posts = _folklore_raw | safe_sort: 'date' | reverse -%}
                   {%- else -%}
                     {%- assign folklore_posts = empty -%}
                   {%- endif -%}
@@ -317,7 +317,7 @@
             <div class="col">
               {%- assign _home_raw = site.categories['Home'] -%}
               {%- if _home_raw -%}
-                {%- assign sorted_homepage = _home_raw | sort: 'order' -%}
+                {%- assign sorted_homepage = _home_raw | safe_sort: 'order' -%}
               {%- else -%}
                 {%- assign sorted_homepage = empty -%}
               {%- endif -%}

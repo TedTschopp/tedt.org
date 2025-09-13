@@ -275,7 +275,7 @@
                           {% assign cat_entry = slug | append: '||' | append: label %}
                           {% assign cat_items = cat_items | push: cat_entry %}
                         {% endfor %}
-                        {% assign cat_items = cat_items | sort_natural %}
+                        {% assign cat_items = cat_items | safe_sort | sort_natural %}
                         <ul class="list-unstyled" aria-label="All site categories">{% for item in cat_items %}{% assign parts = item | split: '||' %}{% assign slug = parts[0] %}{% assign label = parts[1] %}{% assign reg_entry = site.data.category_registry[slug] %}{% assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] %}{% if posts_arr == nil or posts_arr == empty %}{% if reg_entry.raw_names %}{% for variant in reg_entry.raw_names %}{% if site.categories[variant] and site.categories[variant] != empty %}{% assign posts_arr = site.categories[variant] %}{% break %}{% endif %}{% endfor %}{% endif %}{% endif %}{% assign count = posts_arr.size | default: 0 %}{% capture badge_text %}{{ label }} - {{ count }}{% endcapture %}{% if reg_entry.category_home_page %}{% assign _href = reg_entry.category_home_page %}{% else %}{% assign _href = '/category/' | append: slug | append: '/' %}{% endif %}<li class="mb-1">{% include utility/category-label.html category=slug href=_href kind='badge' legacy_class=false class_extra='text-decoration-none w-100' wrapper_class_extra='no-underline full-width-badge' text_override=badge_text %}</li>{% endfor %}</ul>
 
                       </div>
