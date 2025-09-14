@@ -3,6 +3,35 @@
 <script>
   document.addEventListener('DOMContentLoaded', function(){
     if (!window.mermaid) return;
+    // Initialize mermaid (theme adapts to current data-bs-theme)
     mermaid.initialize({ startOnLoad: true, securityLevel: 'strict', theme: (document.documentElement.getAttribute('data-bs-theme')==='dark'?'dark':'default') });
+
+    // Post-process fenced code blocks (```mermaid) that markdown rendered as <pre><code class="language-mermaid">...
+    // Convert them into <div class="mermaid"> so mermaid can render them.
+    const fenceSelector = 'pre > code.language-mermaid, pre > code.mermaid';
+    const codeBlocks = document.querySelectorAll(fenceSelector);
+    if (codeBlocks.length) {
+      codeBlocks.forEach(code => {
+        // Skip if already inside a div.mermaid (defensive)
+        if (code.parentElement && code.parentElement.classList.contains('mermaid')) return;
+        const pre = code.parentElement; // <pre>
+        if (!pre) return;
+        const containerParent = pre.parentElement || pre; // allow replacement even if structure unusual
+        const div = document.createElement('div');
+        div.className = 'mermaid';
+        // Use textContent (not innerHTML) to avoid HTML entity decoding issues
+        div.textContent = code.textContent.trim();
+        containerParent.replaceChild(div, pre);
+      });
+      // Render any newly created mermaid blocks
+      try {
+        // mermaid.run is available in v10+; fall back gracefully if not
+        if (typeof mermaid.run === 'function') {
+          mermaid.run({ querySelector: '.mermaid' });
+        }
+      } catch(e) {
+        console.warn('Mermaid rendering error:', e);
+      }
+    }
   });
 </script>
