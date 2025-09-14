@@ -30,7 +30,7 @@ end
 
 # Add any other plugins you need explicitly here
 group :development do
-	gem 'html-proofer', '~> 3.19'
+	gem 'html-proofer', '~> 5.0'
 	# Security auditing for Ruby gems (checks against Ruby Advisory DB)
 	gem 'bundler-audit', '~> 0.9'
 end
