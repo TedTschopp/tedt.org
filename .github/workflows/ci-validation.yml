@@ -35,6 +35,11 @@ jobs:
           ruby -v
           bundler -v
           bundle lock --add-platform x86_64-linux || true
+      - name: Install Gems
+        run: |
+          set -e
+          bundle install --path vendor/bundle --quiet
+          bundle list | head -n 20 || true
       - name: Build Jekyll
         env:
           CI_MEM_PROFILE: '1'
