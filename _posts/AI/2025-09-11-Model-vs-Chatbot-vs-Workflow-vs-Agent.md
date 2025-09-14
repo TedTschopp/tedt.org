@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Model vs. Chatbot vs. Workflow vs. Agent"
+title: "Model vs. Chatbot vs. Workflow vs. Agent: Draft"
 subtitle: "Clarifying the distinctions between core AI concepts in formal and plain language"
 quote: "A chatbot only emits text, a workflow follows a script, but an agent perceives, decides, and acts with autonomy."
 excerpt: "This post breaks down the differences between models, chatbots, workflows, and agents, using both formal computer science definitions and plain-English explanations."
@@ -122,6 +122,8 @@ graph TD
     C -->|"Text-only interface"| CNote[Outputs: text replies<br/>Adds history, memory, RAG, safety]
     W -->|"Structured control"| WNote[Outputs: predefined steps<br/>Explicit control/data flow<br/>BPMN, DAGs]
     A -->|"Autonomous loop"| ANote[Outputs: actions via tools<br/>Perceive → Decide → Act → Learn<br/>Goal-directed autonomy]
+
+    %% legend:auto
 ```
 
 ## Variables by Concept

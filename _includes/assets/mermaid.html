@@ -1,4 +1,18 @@
-<!-- Mermaid.js loader: lazy-loads only if diagrams are present (code fences or data-mermaid attributes) -->
+<!-- Mermaid.js loader: lazy-loads only if diagrams are present (code fences or data-mermaid attributes)
+  Features:
+    • Lazy script injection only when needed
+    • Light/Dark theme adaptation via data-bs-theme
+    • Custom palette injected through buildMermaidConfig (WCAG-conscious)
+    • Source <details> panel with copy button
+    • Normalizes <br> tags inside code blocks/attributes to newline for Mermaid labels
+    • Provides semantic CSS classes you can reference in diagrams:
+      classDef core  fill:#eef2ff,stroke:#6366f1,stroke-width:2px,color:#312e81;
+      classDef chat  fill:#f0f9ff,stroke:#0ea5e9,stroke-width:2px,color:#075985;
+      classDef flow  fill:#fff7ed,stroke:#fb923c,stroke-width:2px,color:#7c2d12;
+      classDef agent fill:#f0fdf4,stroke:#22c55e,stroke-width:2px,color:#14532d;
+      classDef note  fill:#ffffff,stroke:#94a3b8,stroke-dasharray:3 3,color:#334155;
+    • To enable in a post front matter: mermaid: true
+-->
 <script>
   (function(){
     const MERMAID_CDN = 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
@@ -40,10 +54,76 @@
       return (document.documentElement.getAttribute('data-bs-theme')==='dark' ? 'dark' : 'default');
     }
 
+    function buildMermaidConfig(){
+      const isDark = currentTheme()==='dark';
+      // Base palette chosen for WCAG-ish contrast against typical bg
+      const palette = isDark ? {
+        primary: '#818cf8', // brighter node fill for contrast
+        primaryLight: '#6366f1',
+        primaryText: '#0f172a',
+        secondary: '#38bdf8',
+        secondaryLight: '#0ea5e9',
+        secondaryText: '#082f49',
+        accent: '#4ade80',
+        accentLight: '#22c55e',
+        accentText: '#052e16',
+        warn: '#fb923c',
+        warnLight: '#f97316',
+        warnText: '#431407',
+        noteBg: '#1e293b',
+        noteBorder: '#64748b',
+        tool: '#c084fc',
+        toolBorder: '#a855f7',
+        memory: '#f9a8d4',
+        memoryBorder: '#f472b6',
+        planner: '#bef264',
+        plannerBorder: '#84cc16'
+      } : {
+        primary: '#4f46e5',
+        primaryLight: '#6366f1',
+        primaryText: '#ffffff',
+        secondary: '#0284c7',
+        secondaryLight: '#0ea5e9',
+        secondaryText: '#ffffff',
+        accent: '#16a34a',
+        accentLight: '#22c55e',
+        accentText: '#ffffff',
+        warn: '#f97316',
+        warnLight: '#fb923c',
+        warnText: '#ffffff',
+        noteBg: '#ffffff',
+        noteBorder: '#94a3b8',
+        tool: '#9333ea',
+        toolBorder: '#7e22ce',
+        memory: '#db2777',
+        memoryBorder: '#be185d',
+        planner: '#65a30d',
+        plannerBorder: '#4d7c0f'
+      };
+      return {
+        startOnLoad: false,
+        securityLevel: 'strict',
+        theme: currentTheme(),
+        themeVariables: {
+          primaryColor: palette.primaryLight,
+          primaryTextColor: palette.primaryText,
+            primaryBorderColor: palette.primary,
+          lineColor: palette.secondary,
+          secondaryColor: palette.secondaryLight,
+          tertiaryColor: palette.accentLight,
+          tertiaryTextColor: palette.accentText,
+          noteBkgColor: palette.noteBg,
+          noteTextColor: isDark ? '#e2e8f0' : '#334155',
+          noteBorderColor: palette.noteBorder,
+          fontFamily: 'system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif',
+          edgeLabelBackground: 'transparent'
+        }
+      };
+    }
+
     function initMermaid(){
       if (!window.mermaid) return;
-      // Re-initialize with the current theme; mermaid v10 merges settings
-      mermaid.initialize({ startOnLoad: false, securityLevel: 'strict', theme: currentTheme() });
+      mermaid.initialize(buildMermaidConfig());
     }
 
     function convertRawCodeBlocks(){
@@ -52,7 +132,9 @@
         if (code.parentElement && code.parentElement.classList.contains('mermaid')) return; // already processed
         const pre = code.parentElement;
         if (!pre) return;
-        const src = code.textContent; // keep original exactly (trim only for rendering container)
+        let src = code.textContent; // original user code
+        // Normalize common HTML line break tags to literal newlines for mermaid label rendering
+        src = src.replace(/<br\s*\/?>(\r?\n)?/gi, '\n');
         const div = document.createElement('div');
         div.className = 'mermaid';
         div.textContent = src.trim();
@@ -71,10 +153,11 @@
         if (!code) return;
         // Allow using the element itself as container
         el.classList.add('mermaid');
+        let processed = code.replace(/<br\s*\/?>(\r?\n)?/gi, '\n');
         if (!el.textContent.trim()) {
-          el.textContent = code.trim();
+          el.textContent = processed.trim();
         }
-        el.setAttribute('data-mermaid-source', code);
+        el.setAttribute('data-mermaid-source', processed);
       });
     }
 
@@ -146,6 +229,7 @@
               el.classList.add('rendered');
             });
             ensureSourcePanels();
+            ensureLegends();
           }).catch(e=>{
             console.warn('Mermaid run() failed:', e);
           });
@@ -160,6 +244,65 @@
       convertAttrBlocks();
       initMermaid();
       renderAll();
+    }
+
+    // Auto legend support: if source contains '%% legend:auto', we parse classDef and class usages
+    function ensureLegends(){
+      document.querySelectorAll('.mermaid.rendered').forEach(diagram => {
+        if (diagram.nextElementSibling && diagram.nextElementSibling.classList && diagram.nextElementSibling.classList.contains('mermaid-legend')) return;
+        const src = diagram.getAttribute('data-mermaid-source') || '';
+        if (!/%%\s*legend:auto/i.test(src)) return;
+        // Collect classDefs lines
+        const classDefRegex = /classDef\s+(\w+)\s+([^;]+);?/g;
+        const defs = {}; let m;
+        while ((m = classDefRegex.exec(src)) !== null){
+          defs[m[1]] = m[2].trim();
+        }
+        if (Object.keys(defs).length === 0) return;
+        // Create legend container
+        const wrapper = document.createElement('div');
+        wrapper.className = 'mermaid-legend mt-2 mb-3';
+        const title = document.createElement('div');
+        title.className = 'mermaid-legend-title fw-semibold small';
+        title.textContent = 'Legend';
+        wrapper.appendChild(title);
+        const list = document.createElement('ul');
+        list.className = 'mermaid-legend-list list-unstyled small';
+        Object.entries(defs).forEach(([name, def]) => {
+          const li = document.createElement('li');
+          li.className = 'mermaid-legend-item d-flex align-items-start gap-2';
+          // Swatch
+            const sw = document.createElement('span');
+            sw.className = 'mermaid-legend-swatch';
+            sw.setAttribute('data-class', name);
+            li.appendChild(sw);
+          const text = document.createElement('span');
+          text.innerHTML = `<code>${name}</code>`;
+          li.appendChild(text);
+          list.appendChild(li);
+        });
+        wrapper.appendChild(list);
+        diagram.parentNode.insertBefore(wrapper, diagram.nextSibling);
+        // Style swatches after SVG is present by sampling fill/stroke from first node of that class if possible
+        try {
+          const svg = diagram.querySelector('svg');
+          if (svg) {
+            wrapper.querySelectorAll('.mermaid-legend-swatch').forEach(sw => {
+              const cls = sw.getAttribute('data-class');
+              const node = svg.querySelector(`.node.${cls} rect, .node.${cls} path`);
+              const fill = node ? window.getComputedStyle(node).fill : '#ccc';
+              const stroke = node ? window.getComputedStyle(node).stroke : '#666';
+              sw.style.display = 'inline-block';
+              sw.style.width = '1.1em';
+              sw.style.height = '1.1em';
+              sw.style.borderRadius = '0.2em';
+              sw.style.border = `1px solid ${stroke || '#666'}`;
+              sw.style.background = fill || '#ccc';
+              sw.style.marginTop = '0.15em';
+            });
+          }
+        } catch(e) { /* swallow */ }
+      });
     }
 
     // Re-render when theme changes (observe attribute mutations on <html>)
@@ -322,4 +465,58 @@
   @media (max-width: 600px){
     .mermaid-source-pre code { font-size: 0.7rem; }
   }
+
+  /* Semantic node color utility classes (applied via classDef in diagrams) */
+  /* These intentionally mirror the palette in buildMermaidConfig for consistency */
+  :root[data-bs-theme='light'] .mermaid svg .node.core rect,
+  :root[data-bs-theme='light'] .mermaid svg .node.core path { fill: #eef2ff; stroke: #6366f1; }
+  :root[data-bs-theme='dark']  .mermaid svg .node.core rect,
+  :root[data-bs-theme='dark']  .mermaid svg .node.core path { fill: #312e81; stroke: #818cf8; }
+
+  :root[data-bs-theme='light'] .mermaid svg .node.chat rect,
+  :root[data-bs-theme='light'] .mermaid svg .node.chat path { fill: #f0f9ff; stroke: #0ea5e9; }
+  :root[data-bs-theme='dark']  .mermaid svg .node.chat rect,
+  :root[data-bs-theme='dark']  .mermaid svg .node.chat path { fill: #0c4a6e; stroke: #38bdf8; }
+
+  :root[data-bs-theme='light'] .mermaid svg .node.flow rect,
+  :root[data-bs-theme='light'] .mermaid svg .node.flow path { fill: #fff7ed; stroke: #fb923c; }
+  :root[data-bs-theme='dark']  .mermaid svg .node.flow rect,
+  :root[data-bs-theme='dark']  .mermaid svg .node.flow path { fill: #7c2d12; stroke: #fdba74; }
+
+  :root[data-bs-theme='light'] .mermaid svg .node.agent rect,
+  :root[data-bs-theme='light'] .mermaid svg .node.agent path { fill: #f0fdf4; stroke: #22c55e; }
+  :root[data-bs-theme='dark']  .mermaid svg .node.agent rect,
+  :root[data-bs-theme='dark']  .mermaid svg .node.agent path { fill: #14532d; stroke: #4ade80; }
+
+  :root[data-bs-theme='light'] .mermaid svg .node.note rect,
+  :root[data-bs-theme='light'] .mermaid svg .node.note path { fill: #ffffff; stroke-dasharray: 3 3; stroke: #94a3b8; }
+  :root[data-bs-theme='dark']  .mermaid svg .node.note rect,
+  :root[data-bs-theme='dark']  .mermaid svg .node.note path { fill: #1e293b; stroke-dasharray: 3 3; stroke: #64748b; }
+
+  /* New semantic domain classes */
+  :root[data-bs-theme='light'] .mermaid svg .node.tool rect,
+  :root[data-bs-theme='light'] .mermaid svg .node.tool path { fill: #9333ea; stroke: #7e22ce; }
+  :root[data-bs-theme='dark']  .mermaid svg .node.tool rect,
+  :root[data-bs-theme='dark']  .mermaid svg .node.tool path { fill: #c084fc; stroke: #a855f7; }
+
+  :root[data-bs-theme='light'] .mermaid svg .node.memory rect,
+  :root[data-bs-theme='light'] .mermaid svg .node.memory path { fill: #db2777; stroke: #be185d; }
+  :root[data-bs-theme='dark']  .mermaid svg .node.memory rect,
+  :root[data-bs-theme='dark']  .mermaid svg .node.memory path { fill: #f9a8d4; stroke: #f472b6; }
+
+  :root[data-bs-theme='light'] .mermaid svg .node.planner rect,
+  :root[data-bs-theme='light'] .mermaid svg .node.planner path { fill: #65a30d; stroke: #4d7c0f; }
+  :root[data-bs-theme='dark']  .mermaid svg .node.planner rect,
+  :root[data-bs-theme='dark']  .mermaid svg .node.planner path { fill: #bef264; stroke: #84cc16; }
+
+  /* Improve edge contrast */
+  :root[data-bs-theme='dark'] .mermaid .edgePath .path { stroke-width: 2px; }
+  :root[data-bs-theme='light'] .mermaid .edgePath .path { stroke-width: 2px; }
+
+  /* Accessible focus outline if diagram nodes become tabbable in future */
+  .mermaid [tabindex]:focus { outline: 2px solid var(--bs-primary, #0d6efd); outline-offset: 2px; }
+  /* Legend styles */
+  .mermaid-legend-title { text-transform: uppercase; letter-spacing: .05em; opacity: .85; }
+  .mermaid-legend-list { margin: .25rem 0 0; display: grid; grid-template-columns: repeat(auto-fit,minmax(140px,1fr)); gap: .35rem .75rem; }
+  .mermaid-legend-item code { font-size: .65rem; }
 </style>

@@ -273,6 +273,61 @@ Notes:
 
 See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural implications of these flags.
 
+### Mermaid Diagrams Usage
+
+Enable per page with front matter:
+
+```yaml
+---
+title: "Example with Diagram"
+mermaid: true
+---
+```
+
+Then add a fenced code block:
+
+```mermaid
+graph TD
+   M[Model] --> C[Chatbot]
+   M --> W[Workflow]
+   M --> A[Agent]
+   classDef core  fill:#eef2ff,stroke:#6366f1,stroke-width:2px,color:#312e81;
+   classDef chat  fill:#f0f9ff,stroke:#0ea5e9,stroke-width:2px,color:#075985;
+   classDef flow  fill:#fff7ed,stroke:#fb923c,stroke-width:2px,color:#7c2d12;
+   classDef agent fill:#f0fdf4,stroke:#22c55e,stroke-width:2px,color:#14532d;
+   classDef note  fill:#ffffff,stroke:#94a3b8,stroke-dasharray:3 3,color:#334155;
+   class M core; class C chat; class W flow; class A agent;
+```
+
+Notes:
+
+- Light/dark palette adapts automatically using `data-bs-theme` attribute.
+- `<br>` tags inside diagram code are normalized to `\n`; prefer `\n` for line breaks in labels.
+- Raw source is viewable/copyable via the collapsible panel under each rendered diagram.
+- Add semantic classes via `class` or `classDef` for consistent look across diagrams.
+- Security level is `strict`; external includes or inline HTML inside Mermaid are disallowed.
+
+Advanced:
+
+- Additional semantic classes provided: `tool`, `memory`, `planner`.
+- Auto-legend: add a comment line `%% legend:auto` anywhere in your diagram source. A legend block listing all `classDef` names with color swatches will be appended below the rendered diagram.
+- Example with legend:
+
+```mermaid
+%% legend:auto
+graph TD
+   A[Agent Loop]:::agent --> M[(Vector Memory)]:::memory
+   A --> T{{Tool Call}}:::tool
+   A --> P[Planner]:::planner
+   classDef agent fill:#f0fdf4,stroke:#22c55e,stroke-width:2px,color:#14532d;
+   classDef memory fill:#f9a8d4,stroke:#f472b6,stroke-width:2px,color:#4a044e;
+   classDef tool fill:#c084fc,stroke:#a855f7,stroke-width:2px,color:#3b0764;
+   classDef planner fill:#bef264,stroke:#84cc16,stroke-width:2px,color:#1a2e05;
+   class A agent; class M memory; class T tool; class P planner;
+```
+
+For advanced configuration, modify `_includes/assets/mermaid.html` (function `buildMermaidConfig`).
+
 ## Homepage Hero System & Caching
 
 The homepage hero (image/video) is selected randomly on each load using a data-driven include.
