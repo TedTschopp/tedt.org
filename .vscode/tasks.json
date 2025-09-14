@@ -14,7 +14,7 @@
 		{
 			"label": "Jekyll clean prod build (tee log)",
 			"type": "shell",
-			"command": "set -e\nmkdir -p Logs Logs/htmlproofer\nrm -rf _site\nbundle check || bundle install --path vendor/bundle\nJEKYLL_ENV=production bundle exec jekyll build --trace | tee Logs/build-latest.txt",
+			"command": "set -e\nmkdir -p Logs Logs/htmlproofer\nrm -rf _site\nif ! bundle check > /dev/null 2>&1; then bundle config set --local path 'vendor/bundle'; bundle install --jobs 4; fi\nJEKYLL_ENV=production bundle exec jekyll build --trace | tee Logs/build-latest.txt",
 			"isBackground": false,
 			"group": "build"
 		}

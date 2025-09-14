@@ -34,7 +34,8 @@ jobs:
           bundle lock --add-platform ruby || true
       - name: Install gems
         run: |
-          bundle install --jobs 4 --path vendor/bundle
+          bundle config set --local path 'vendor/bundle'
+          bundle install --jobs 4
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production

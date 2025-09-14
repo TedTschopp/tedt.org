@@ -32,4 +32,6 @@ runs:
   - name: Install Gems
     shell: bash
     working-directory: ${{ inputs.working-directory }}
-    run: bundle install --jobs 4 --path vendor/bundle
+    run: |
+      bundle config set --local path 'vendor/bundle'
+      bundle install --jobs 4
