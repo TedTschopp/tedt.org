@@ -127,7 +127,10 @@
                                             <cite>{{ image_credits_title }}</cite>:&nbsp;an image by
                                         {% endif %}
                                         {% if image_credits_artist_URL and image_credits_artist_URL contains "http" %}
-                                            <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_new" class="url fn n" href="{{ image_credits_artist_URL }}">{{ image_credits }}</a></address></span>
+                                            {%- assign __img_credit_href = image_credits_artist_URL | strip -%}
+                                            {%- if __img_credit_href != '' -%}
+                                            <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_blank" class="url fn n" href="{{ __img_credit_href | escape }}">{{ image_credits | escape }}</a></address></span>
+                                            {%- endif -%}
                                         {% else %}
                                             {{ image_credits }}
                                         {% endif %}

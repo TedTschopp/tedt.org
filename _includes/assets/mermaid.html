@@ -84,17 +84,28 @@
      */
     function ensureSourcePanels(){
       document.querySelectorAll('.mermaid.rendered, .mermaid:not(.mermaid-loading)').forEach(diagram => {
-        // Skip if panel already exists (we attach after the diagram container)
-        if (diagram.nextElementSibling && diagram.nextElementSibling.classList && diagram.nextElementSibling.classList.contains('mermaid-source-panel')) return;
+        // If already wrapped in composite skip
+        if (diagram.parentElement && diagram.parentElement.classList.contains('mermaid-composite')) return;
+
         const src = diagram.getAttribute('data-mermaid-source') || diagram.textContent || '';
         if (!src.trim()) return;
+
+        // Build composite wrapper
+        const composite = document.createElement('div');
+        composite.className = 'mermaid-composite';
+
+        // Insert composite before diagram, then move diagram inside
+        diagram.parentNode.insertBefore(composite, diagram);
+        composite.appendChild(diagram);
+
+        // Source panel (details)
         const details = document.createElement('details');
         details.className = 'mermaid-source-panel';
         details.setAttribute('data-collapsed', 'true');
-        // collapsed by default (native <details> starts closed)
         const summary = document.createElement('summary');
         summary.textContent = 'Mermaid Source';
         details.appendChild(summary);
+
         const wrapper = document.createElement('div');
         wrapper.className = 'mermaid-source-wrapper';
         const actions = document.createElement('div');
@@ -110,11 +121,11 @@
         pre.className = 'mermaid-source-pre';
         const codeEl = document.createElement('code');
         codeEl.className = 'language-mermaid';
-        codeEl.textContent = src.replace(/\s+$/,''); // trim right but not left indentation
+        codeEl.textContent = src.replace(/\s+$/,'');
         pre.appendChild(codeEl);
         wrapper.appendChild(pre);
         details.appendChild(wrapper);
-        diagram.after(details);
+        composite.appendChild(details);
       });
     }
 
@@ -236,6 +247,31 @@
     background: var(--bs-tertiary-bg, rgba(0,0,0,0.02));
     font-size: 0.85rem;
   }
+  /* Composite wrapper groups diagram + source; provides unified border */
+  .mermaid-composite {
+    --mermaid-border-color: var(--bs-border-color-translucent, rgba(128,128,128,0.25));
+    --mermaid-bg: var(--bs-body-bg, #fff);
+    border: 1px solid var(--mermaid-border-color);
+    border-radius: 0.55rem;
+    background: var(--mermaid-bg);
+    padding: 0.75rem 0.75rem 0.35rem;
+    margin: 0 0 1.4rem 0;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  }
+  .mermaid-composite .mermaid { margin: 0 0 0.25rem; }
+  .mermaid-composite .mermaid svg { max-width: 100%; height: auto; }
+  /* Remove outer panel border inside composite; rely on composite border */
+  .mermaid-composite .mermaid-source-panel {
+    margin: 0.25rem 0 0 0;
+    border: none;
+    border-top: 1px solid var(--mermaid-border-color);
+    border-radius: 0;
+    background: transparent;
+  }
+  .mermaid-composite .mermaid-source-panel > summary { padding-left: 0; }
+  .mermaid-composite .mermaid-source-wrapper { padding-left: 0; padding-right: 0; }
+  .mermaid-composite .mermaid-source-pre { background: var(--bs-tertiary-bg, rgba(0,0,0,0.02)); }
+  .mermaid-composite details[open] > summary { background: transparent; }
   .mermaid-source-panel > summary {
     cursor: pointer;
     list-style: none;
