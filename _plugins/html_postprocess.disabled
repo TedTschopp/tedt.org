@@ -1,8 +1,0 @@
-# html_postprocess plugin removed
-# This file intentionally left as documentation only. The original html_postprocess.rb
-# If a file named html_postprocess.rb reappears in this directory, investigate automation
-# (scaffold generation, template sync, or merge) that is restoring it. No post_render
-# mutations are desired now; keep output deterministic.
-# has been deleted to prevent any post_render HTML mutation (duplicate img alt attributes, etc.).
-# If reintroducing functionality, prefer explicit Liquid template logic or site build-time
-# data preparation instead of regex-based post-render rewrites.

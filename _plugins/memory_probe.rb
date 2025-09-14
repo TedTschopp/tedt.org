@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
-# Lightweight memory probe to identify where RAM spikes during Jekyll build.
-# Logs RSS (KB) after key phases. Disable by deleting this file once diagnosis is done.
+# Memory probe (now gated). Enable by setting MEM_PROBE=1.
+return unless ENV['MEM_PROBE'] == '1'
 
 def mem_probe(label)
   rss = `ps -o rss= -p #{Process.pid}`.to_i # in KB
@@ -14,19 +14,16 @@ mem_probe 'process_start'
 RENDER_SAMPLE_INTERVAL = (ENV['MEM_RENDER_INTERVAL'] || '50').to_i
 $render_count = 0
 
-# Log before each document render (sampling)
 Jekyll::Hooks.register :documents, :pre_render do |doc|
   $render_count += 1
   if ($render_count % RENDER_SAMPLE_INTERVAL).zero?
-    label = "doc_pre_render count=#{$render_count} path=#{doc.relative_path}"
-    mem_probe label
+    mem_probe "doc_pre_render count=#{$render_count} path=#{doc.relative_path}"
   end
 end
 
 Jekyll::Hooks.register :documents, :post_render do |doc|
   if ($render_count % RENDER_SAMPLE_INTERVAL).zero?
-    label = "doc_post_render count=#{$render_count} path=#{doc.relative_path}"
-    mem_probe label
+    mem_probe "doc_post_render count=#{$render_count} path=#{doc.relative_path}"
   end
 end
 
@@ -41,7 +38,7 @@ Jekyll::Hooks.register :site, :post_read do |site|
   mem_probe 'post_read'
 end
 
-Jekyll::Hooks.register :site, :pre_render do |site, payload|
+Jekyll::Hooks.register :site, :pre_render do |_site, _payload|
   mem_probe 'pre_render'
 end
 
