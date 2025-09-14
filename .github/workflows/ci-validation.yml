@@ -78,7 +78,7 @@ jobs:
           }
           run_build > >(tee build-profile.log) 2>&1 &
           JEKYLL_PID=$!
-          trap 'echo "[shell-trap] Received SIGTERM at $(date -u +%H:%M:%S)"; CANCELLED=1; ps -eo pid,ppid,cmd,rss --sort=-rss | head -n 25; [ -n "$JEKYLL_PID" ] && kill -TERM $JEKYLL_PID 2>/dev/null || true; finish_heartbeat' TERM INT
+          trap 'echo "[shell-trap] Received SIGTERM at $(date -u +%H:%M:%S)"; CANCELLED=1; ps -eo pid,ppid,cmd,rss --sort=-rss | head -n 25; [ -n "$JEKYLL_PID" ] && kill -TERM $JEKYLL_PID 2>/dev/null || true; finish_heartbeat; echo "[cancel] graceful early exit"; exit 0' TERM INT
           wait $JEKYLL_PID
           BUILD_EXIT=$?
           echo '--- Memory snapshot (after build) ---'
