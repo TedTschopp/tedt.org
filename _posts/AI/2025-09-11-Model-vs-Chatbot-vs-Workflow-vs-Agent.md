@@ -84,24 +84,13 @@ no_toc: true
 
 ## Model vs. Chatbot vs. Workflow vs. Agent
 
-...existing code...
-
-## Model vs. Chatbot vs. Workflow vs. Agent
-
 | Concept      | Plain English Definition                                                                                                                                                                                                                                         |
 | ------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Model**    | The raw **LLM engine**: given a prompt (string of tokens), it returns a probability distribution over the next token and generates text by sampling/decoding. Examples: GPT-4, Claude, Mistral.                                                                  |
-| **Chatbot**  | A **conversation interface** around a model: it handles history, system instructions, optional memory, retrieval, and safety checks — but **its only action is emitting text**.                                                                                  |
-| **Workflow** | A **pre-defined process model**: a sequence/graph of tasks with explicit branching and conditions. Execution follows the script exactly (like BPMN diagrams, Airflow DAGs, or BPEL orchestrations). Predictable and testable.                                    |
-| **Agent**    | A **goal-directed autonomous system**: it perceives environment inputs, chooses and executes actions (via tools), maintains state, and adapts based on feedback. Unlike a chatbot, it has actuators beyond text and can operate under uncertainty with autonomy. |
+| **Model** = the **engine** (statistical text predictor).   | The raw **LLM engine**: given a prompt (string of tokens), it returns a probability distribution over the next token and generates text by sampling/decoding. Examples: GPT-4, Claude, Mistral.                                                                  |
+| **Chatbot**  = the **interface** around a model (dialogue handling, memory, RAG, safety).| A **conversation interface** around a model: it handles history, system instructions, optional memory, retrieval, and safety checks — but **its only action is emitting text**.                                                                                  |
+| **Workflow** = the **scripted process** (pre-drawn map of tasks, deterministic once defined).| A **pre-defined process model**: a sequence/graph of tasks with explicit branching and conditions. Execution follows the script exactly (like BPMN diagrams, Airflow DAGs, or BPEL orchestrations). Predictable and testable.                                    |
+| **Agent**  = the **autonomous actor** (perceives, decides, acts, learns in a loop toward goals).  | A **goal-directed autonomous system**: it perceives environment inputs, chooses and executes actions (via tools), maintains state, and adapts based on feedback. Unlike a chatbot, it has actuators beyond text and can operate under uncertainty with autonomy. |
 {: .well .table .table-striped}
-
-## Quick mental picture
-
-* **Model** = the **engine** (statistical text predictor).
-* **Chatbot** = the **interface** around a model (dialogue handling, memory, RAG, safety).
-* **Workflow** = the **scripted process** (pre-drawn map of tasks, deterministic once defined).
-* **Agent** = the **autonomous actor** (perceives, decides, acts, learns in a loop toward goals).
 
 ## Diagram
 
