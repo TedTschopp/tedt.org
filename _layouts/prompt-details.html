@@ -388,7 +388,9 @@
                         <div class="list-group list-group-numbered flex-grow-1 me-4" role="list">{%- for series_item in sorted_series -%}
                                 {% comment %}Find the referenced prompt file{% endcomment %}
                                 {% assign series_prompt = null %}
-                                {% for post in site.posts %}
+                                {%- assign __diag_posts = site.posts | slice: 0, 80 -%}
+                                {% comment %} TEMP DIAG limiting posts scanned to first 80 {% endcomment %}
+                                {% for post in __diag_posts %}
                                     {% assign post_filename = post.path | split: '/' | last %}
                                     {% if post_filename == series_item.prompt_file %}
                                         {% assign series_prompt = post %}
@@ -458,7 +460,9 @@
                 {% endif %}
                 
                 <!-- Check site.posts for prompts -->
-                {% for post in site.posts %}
+                {%- assign __diag_posts2 = site.posts | slice: 0, 80 -%}
+                {% comment %} TEMP DIAG limiting posts scanned to first 80 {% endcomment %}
+                {% for post in __diag_posts2 %}
                     {% assign total_checked = total_checked | plus: 1 %}
                     {% if post.layout == 'prompt-details' and post.url != page.url %}
                         {% assign post_tags = post.tags | default: empty %}

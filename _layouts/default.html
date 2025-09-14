@@ -101,7 +101,9 @@
                 </div>
                 <div class="card-footer p-0 py-0 h-100">
                   {% assign count = 0 %}
-                  {% for post in site.posts %}
+                  {%- assign __diag_posts = site.posts | slice: 0, 50 -%}
+                  {%- comment -%} TEMP DIAG: limit posts loop to first 50 to avoid OOM {%- endcomment -%}
+                  {% for post in __diag_posts %}
                     {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
                       <!-- Do Nothing -->
                     {% elsif post.categories contains "Draft" or post.category == "Draft" %}

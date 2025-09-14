@@ -7,7 +7,9 @@
             <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
             <ul>
                 {% assign count = 0 %}
-                {% for this-post in site.posts %}
+                {%- assign __diag_social_posts = site.posts | slice: 0, 40 -%}
+                {% comment %} TEMP DIAG limit social posts {% endcomment %}
+                {% for this-post in __diag_social_posts %}
                     {% if this-post.layout contains "micropubpost" %}
                         {% assign post-title = "" %}
                         {% assign post-url = "" %}

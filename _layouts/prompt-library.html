@@ -142,7 +142,8 @@ redirect_from:
                 <button class="btn btn-outline-secondary btn-toggle flex-fill" style="min-width: 140px;" 
                         aria-pressed="true" data-filter="all">All Categories</button>
                 
-                {% assign prompt_posts = site.posts | where: "categories", "Prompts" %}
+                {% comment %} TEMP DIAG limit prompt posts subset {% endcomment %}
+                {% assign prompt_posts = site.posts | where: "categories", "Prompts" | slice: 0, 120 %}
                 {% assign all_tags = "" | split: "," %}
                 {% for post in prompt_posts %}
                     {% for tag in post.tags %}
@@ -176,7 +177,8 @@ redirect_from:
         <section aria-label="Prompt List">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <!-- Dynamic Jekyll Prompt Cards -->
-                {% assign prompt_posts = site.posts | where: "categories", "Prompts" %}
+                {% comment %} TEMP DIAG limit prompt posts subset {% endcomment %}
+                {% assign prompt_posts = site.posts | where: "categories", "Prompts" | slice: 0, 120 %}
                 {% for post in prompt_posts %}
                 <div class="col" data-tags="{{ post.tags | join: ',' | downcase | slugify }}" 
                      data-date="{{ post.date | date: '%Y%m%d' }}" 

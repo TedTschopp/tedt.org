@@ -1,5 +1,7 @@
 <div class="bullets">
-	{% for post in site.posts %}
+	{%- assign __diag_theme_posts = site.posts | slice: 0, 60 -%}
+	{% comment %} TEMP DIAG limit theme posts {% endcomment %}
+	{% for post in __diag_theme_posts %}
 	<div class="bullet three-col-bullet">
 		<div class="bullet-icon">
 			<a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.image.teaser }}" alt=""></a>

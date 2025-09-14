@@ -31,7 +31,9 @@
     {%- if slug == '' -%}{%- continue -%}{%- endif -%}
     {%- if entry.hide_from_carousel == true or entry.hide_from_carousel == 'true' -%}{%- continue -%}{%- endif -%}
     {%- assign has_posts = false -%}
-    {%- for p in site.posts -%}
+  {%- assign __diag_car_posts = site.posts | slice: 0, 60 -%}
+  {%- comment -%} TEMP DIAG limited posts for carousel {%- endcomment -%}
+  {%- for p in __diag_car_posts -%}
       {%- if p.categories -%}
         {%- assign matched = false -%}
         {%- if p.categories contains entry.title -%}{%- assign matched = true -%}{%- endif -%}
@@ -87,7 +89,7 @@
                 </div>
                 <div class="card-footer p-0">
                   {%- assign displayed = 0 -%}
-                  {%- assign posts_sorted = site.posts | safe_sort: 'date' | reverse -%}
+                  {%- assign posts_sorted = site.posts | safe_sort: 'date' | reverse | slice: 0, 60 -%}
                   {%- for post in posts_sorted -%}
                     {%- if displayed >= 3 -%}{%- break -%}{%- endif -%}
                     {%- assign post_match = false -%}
