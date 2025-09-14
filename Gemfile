@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3.2'
 gem 'jekyll-redirect-from'
+gem 'ffi', '~> 1.17.1'
 
 # ---------------------------------------------------------------------------
 # Security: enforce minimum patched versions for transitive dependencies
