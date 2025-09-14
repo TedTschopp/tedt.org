@@ -11,12 +11,13 @@ permissions:
   id-token: write
 
 concurrency:
-  group: deploy-pages
-  cancel-in-progress: true
+  group: deploy-pages-${{ github.ref }}
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -38,12 +39,25 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: |
+          (
+            while true; do
+              echo "[heartbeat] still building at $(date -u +%H:%M:%S)";
+              sleep 30;
+            done
+          ) &
+          HB_PID=$!
+          trap 'echo "[heartbeat] stopping (exit code $?)"; kill $HB_PID || true' EXIT INT TERM
           echo "[debug] Starting Jekyll build at $(date -u +%H:%M:%S)"
           time bundle exec jekyll build --trace --profile || {
             echo "[debug] Jekyll build exited with code $? at $(date -u +%H:%M:%S)";
             exit 1;
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
+      - name: Post-build artifact size summary
+        if: success()
+        run: |
+          du -sh _site || true
+          find _site -maxdepth 2 -type d -print | head -n 40
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
