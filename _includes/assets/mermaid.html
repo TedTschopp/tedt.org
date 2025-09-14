@@ -52,9 +52,12 @@
         if (code.parentElement && code.parentElement.classList.contains('mermaid')) return; // already processed
         const pre = code.parentElement;
         if (!pre) return;
+        const src = code.textContent; // keep original exactly (trim only for rendering container)
         const div = document.createElement('div');
         div.className = 'mermaid';
-        div.textContent = code.textContent.trim();
+        div.textContent = src.trim();
+        // store original untrimmed in data attribute to reproduce user formatting in panel
+        div.setAttribute('data-mermaid-source', src);
         pre.replaceWith(div);
       });
     }
@@ -71,6 +74,47 @@
         if (!el.textContent.trim()) {
           el.textContent = code.trim();
         }
+        el.setAttribute('data-mermaid-source', code);
+      });
+    }
+
+    /**
+     * After diagrams rendered, attach a <details> element containing the raw source + copy button.
+     * Idempotent: will not duplicate panels if already present.
+     */
+    function ensureSourcePanels(){
+      document.querySelectorAll('.mermaid.rendered, .mermaid:not(.mermaid-loading)').forEach(diagram => {
+        // Skip if panel already exists (we attach after the diagram container)
+        if (diagram.nextElementSibling && diagram.nextElementSibling.classList && diagram.nextElementSibling.classList.contains('mermaid-source-panel')) return;
+        const src = diagram.getAttribute('data-mermaid-source') || diagram.textContent || '';
+        if (!src.trim()) return;
+        const details = document.createElement('details');
+        details.className = 'mermaid-source-panel';
+        details.setAttribute('data-collapsed', 'true');
+        // collapsed by default (native <details> starts closed)
+        const summary = document.createElement('summary');
+        summary.textContent = 'Mermaid Source';
+        details.appendChild(summary);
+        const wrapper = document.createElement('div');
+        wrapper.className = 'mermaid-source-wrapper';
+        const actions = document.createElement('div');
+        actions.className = 'mermaid-source-actions';
+        const copyBtn = document.createElement('button');
+        copyBtn.type = 'button';
+        copyBtn.className = 'mermaid-copy-btn';
+        copyBtn.setAttribute('aria-label', 'Copy mermaid source');
+        copyBtn.textContent = 'Copy';
+        actions.appendChild(copyBtn);
+        wrapper.appendChild(actions);
+        const pre = document.createElement('pre');
+        pre.className = 'mermaid-source-pre';
+        const codeEl = document.createElement('code');
+        codeEl.className = 'language-mermaid';
+        codeEl.textContent = src.replace(/\s+$/,''); // trim right but not left indentation
+        pre.appendChild(codeEl);
+        wrapper.appendChild(pre);
+        details.appendChild(wrapper);
+        diagram.after(details);
       });
     }
 
@@ -90,6 +134,7 @@
               el.classList.remove('mermaid-loading');
               el.classList.add('rendered');
             });
+            ensureSourcePanels();
           }).catch(e=>{
             console.warn('Mermaid run() failed:', e);
           });
@@ -119,8 +164,6 @@
           initMermaid();
           // Clear existing rendered state so re-run occurs cleanly
           document.querySelectorAll('.mermaid.rendered').forEach(el => {
-            // Keep original source if we can recover it from a data attribute
-            // (If needed we could store original text before first render.)
             el.classList.remove('rendered');
           });
           renderAll();
@@ -134,6 +177,25 @@
       ensureScript(function(){
         fullRender();
         installThemeObserver();
+        // Global copy handler (event delegation)
+        document.addEventListener('click', function(e){
+          const btn = e.target.closest('.mermaid-copy-btn');
+            if (!btn) return;
+            const details = btn.closest('.mermaid-source-panel');
+            if (!details) return;
+            const code = details.querySelector('code');
+            if (!code) return;
+            const text = code.textContent;
+            navigator.clipboard.writeText(text).then(()=>{
+              const original = btn.textContent;
+              btn.textContent = 'Copied!';
+              btn.disabled = true;
+              setTimeout(()=>{ btn.textContent = original; btn.disabled = false; }, 1600);
+            }).catch(()=>{
+              btn.textContent = 'Failed';
+              setTimeout(()=>{ btn.textContent = 'Copy'; }, 1600);
+            });
+        });
       });
     });
   })();
@@ -164,5 +226,64 @@
   @keyframes mermaidShimmer {
     0% { background-position: 0% 0; }
     100% { background-position: -200% 0; }
+  }
+
+  /* Source panel styles */
+  .mermaid-source-panel {
+    margin: 0.35rem 0 1.25rem 0;
+    border: 1px solid var(--bs-border-color-translucent, rgba(128,128,128,0.25));
+    border-radius: 0.4rem;
+    background: var(--bs-tertiary-bg, rgba(0,0,0,0.02));
+    font-size: 0.85rem;
+  }
+  .mermaid-source-panel > summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 0.4rem 0.75rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: .35rem;
+  }
+  .mermaid-source-panel > summary::-webkit-details-marker { display: none; }
+  .mermaid-source-panel[open] > summary { border-bottom: 1px solid var(--bs-border-color-translucent, rgba(128,128,128,0.25)); }
+  .mermaid-source-wrapper {
+    padding: 0.4rem 0.6rem 0.75rem;
+    position: relative;
+  }
+  .mermaid-source-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    margin-bottom: .25rem;
+  }
+  .mermaid-copy-btn {
+    font: inherit;
+    font-size: 0.7rem;
+    padding: 0.25rem .6rem;
+    background: var(--bs-secondary-bg, #e0e0e0);
+    border: 1px solid var(--bs-border-color, rgba(0,0,0,.15));
+    color: var(--bs-body-color, #222);
+    border-radius: .35rem;
+    cursor: pointer;
+    line-height: 1.2;
+    transition: background .15s ease, color .15s ease;
+  }
+  .mermaid-copy-btn:hover:not(:disabled) {
+    background: var(--bs-primary, #0d6efd);
+    color: #fff;
+  }
+  .mermaid-copy-btn:disabled { opacity: .6; cursor: default; }
+  .mermaid-source-pre {
+    margin: 0;
+    padding: .6rem .75rem;
+    background: var(--bs-body-bg, #fff);
+    border: 1px solid var(--bs-border-color-translucent, rgba(128,128,128,0.2));
+    border-radius: .35rem;
+    overflow-x: auto;
+  }
+  .mermaid-source-pre code { font-size: 0.75rem; tab-size: 2; }
+  @media (max-width: 600px){
+    .mermaid-source-pre code { font-size: 0.7rem; }
   }
 </style>
