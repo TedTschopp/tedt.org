@@ -28,8 +28,7 @@
     <!-- Scripts that need to be at the end of the header -->
         {% include assets/scripts.html %}
         {% include seo/article-jsonld.html %}
-        <!-- DEBUG(math/mermaid): math='{{ page.math }}' mathjax='{{ page.mathjax }}' mermaid='{{ page.mermaid }}' -->
-        <!-- PAGE_KEYS: {{ page | jsonify }} -->
+    <!-- DEBUG(math/mermaid) removed verbose page|jsonify for memory reasons -->
         {% comment %} Force includes during debugging {% endcomment %}
         {% include assets/mathjax.html %}
         {% include assets/mermaid.html %}
@@ -167,17 +166,10 @@
                                 </div>
                             </div>                   
                             {%- comment -%}
-                                Add loading="lazy" to all images inside post content except the first one.
-                                Strategy: temporarily replace the first image tag with a unique placeholder, add lazy to remaining image tags, then restore the first.
+                                Apply lazy loading to all images except the first without duplicating the
+                                entire content multiple times (handled by custom filter).
                             {%- endcomment -%}
-                            {% capture processed_content %}
-                                {%- assign placeholder = 'UNIQUE-IMG-PLACEHOLDER-XYZ' -%}
-                                {%- assign step1 = content | replace_first: '<img', placeholder -%}
-                                {%- assign step2 = step1 | replace: '<img', '<img loading="lazy"' -%}
-                                {%- assign final = step2 | replace: placeholder, '<img' -%}
-                                {{ final }}
-                            {% endcapture %}
-                            <div class="e-content" id="main_content">{{ processed_content }}</div><!-- main post content including hex include -->
+                            <div class="e-content" id="main_content">{{ content | lazy_images_except_first }}</div><!-- main post content including hex include -->
                         </div>
 
                     </div>

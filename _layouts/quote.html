@@ -165,8 +165,14 @@
           Whitespace is trimmed using Liquid hyphen syntax (e.g., {%- tag -%}) to avoid stray text nodes that
           previously upset HTMLProofer list validation.
         {%- endcomment -%}
-        {%- assign __cat_posts = site.posts | where_exp: "p","p.categories contains category" -%}
-  {%- assign __cat_posts = __cat_posts | safe_sort: 'date' | reverse -%}
+        {%- comment -%}
+          Optimized: use precomputed site.recent_by_category (already newest-first & truncated)
+          Fallback: site.categories[category] (Jekyll built-in) then sort locally.
+        {%- endcomment -%}
+        {%- assign __cat_posts = site.recent_by_category[category] -%}
+        {%- if __cat_posts == nil or __cat_posts == empty -%}
+          {%- assign __cat_posts = site.categories[category] | sort: 'date' | reverse -%}
+        {%- endif -%}
         <div class="recent-quotes" role="list" aria-label="Recent quotes">
           {%- assign __shown = 0 -%}
           {%- for p in __cat_posts -%}
