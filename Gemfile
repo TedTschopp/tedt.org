@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3.2'
 gem 'jekyll-redirect-from'
-gem 'ffi', '~> 1.17.1'
+gem 'ffi', '= 1.17.1' # Pin due to 1.17.2 being unavailable/yanked on CI runners (will revisit when 1.17.3+ stable)
 
 # ---------------------------------------------------------------------------
 # Security: enforce minimum patched versions for transitive dependencies
