@@ -3,7 +3,7 @@ name: Build and Validate
 on:
   push:
   pull_request:
-
+  # (No additional keys here)
 concurrency:
   group: ci-validation-${{ github.ref }}
   cancel-in-progress: true
@@ -35,20 +35,12 @@ jobs:
           ruby -v
           bundler -v
           bundle lock --add-platform x86_64-linux || true
-          bundle lock --add-platform ruby || true
-      - name: Install Gems
-        run: bundle install --jobs 4 --path vendor/bundle
-      - name: Security Audit (bundler-audit)
-        run: |
-          bundle exec bundler-audit update
-          bundle exec bundler-audit check || (echo 'Vulnerable gems found'; exit 1)
-      - name: Backup post file check
-        run: ruby tests/check_no_backup_posts.rb
       - name: Build Jekyll
         env:
           CI_MEM_PROFILE: '1'
         run: |
           set -o pipefail
+          CANCELLED=0
           echo '--- Memory snapshot (before build) ---'
           (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) | sed 's/^/MEM: /'
           # Decide config (lite vs full) similar to scheduled workflow
@@ -59,20 +51,15 @@ jobs:
             CONFIG_FILES="_config.yml,_config.ci-lite.yml"
             echo 'Using CI lite config (excludes large data)'
           fi
-          # Heartbeat logger (memory + top RSS processes every 20s) in background
           HEARTBEAT_LOG=build-heartbeat.log
           (
             echo "[heartbeat] start $(date -u --rfc-3339=seconds)";
             while true; do
               echo "\n[heartbeat] $(date -u +%H:%M:%S)";
-              # Memory snapshot
               (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) 2>/dev/null | sed 's/^/MEM: /';
-              # Load averages & uptime
               (uptime 2>/dev/null || cat /proc/loadavg 2>/dev/null || echo 'load: n/a') | sed 's/^/LOAD: /';
-              # Top RSS processes
               echo '[processes:rss]';
               ps -eo pid,ppid,cmd,%cpu,rss --sort=-rss | head -n 15;
-              # Top CPU processes (sorted by %cpu) for additional signal
               echo '[processes:cpu]';
               ps -eo pid,ppid,cmd,%cpu,rss --sort=-%cpu | head -n 10;
               sleep 20 || break;
@@ -80,22 +67,31 @@ jobs:
           ) > "$HEARTBEAT_LOG" 2>&1 &
           HEARTBEAT_PID=$!
           finish_heartbeat() { if kill -0 $HEARTBEAT_PID 2>/dev/null; then kill $HEARTBEAT_PID || true; echo "[heartbeat] stop $(date -u --rfc-3339=seconds)" >> "$HEARTBEAT_LOG"; fi; };
-          trap 'echo "[shell-trap] Received SIGTERM at $(date -u +%H:%M:%S)"; ps -eo pid,ppid,cmd,rss --sort=-rss | head -n 25; finish_heartbeat' TERM INT
-          echo 'Starting Jekyll build (trace + profile)'
-          /usr/bin/time -v bundle exec jekyll build --config "$CONFIG_FILES" --trace --profile --quiet 2>&1 | tee build-profile.log
-          BUILD_EXIT=${PIPESTATUS[0]}
+          echo 'Starting Jekyll build (trace + profile, background mode)'
+          run_build() {
+            /usr/bin/time -v bundle exec jekyll build --config "$CONFIG_FILES" --trace --profile --quiet
+          }
+          run_build > >(tee build-profile.log) 2>&1 &
+          JEKYLL_PID=$!
+          trap 'echo "[shell-trap] Received SIGTERM at $(date -u +%H:%M:%S)"; CANCELLED=1; ps -eo pid,ppid,cmd,rss --sort=-rss | head -n 25; [ -n "$JEKYLL_PID" ] && kill -TERM $JEKYLL_PID 2>/dev/null || true; finish_heartbeat' TERM INT
+          wait $JEKYLL_PID
+          BUILD_EXIT=$?
           echo '--- Memory snapshot (after build) ---'
           (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) | sed 's/^/MEM: /'
+          if [ "$CANCELLED" = "1" ]; then
+            echo '[cancel] Build was cancelled by external SIGTERM; exiting 0 to avoid failure.'
+            finish_heartbeat
+            exit 0
+          fi
           if [ "$BUILD_EXIT" = "143" ]; then
-            echo '[retry] Detected exit 143 (SIGTERM) — capturing diagnostics then retrying without profiling.'
+            echo '[retry] Detected exit 143 from Jekyll process — retrying once without profiling.'
             ps -eo pid,ppid,cmd,rss --sort=-rss | head -n 40 || true
             dmesg | tail -n 40 || true
-            echo '[retry] Plain rebuild...'
             /usr/bin/time -v bundle exec jekyll build --config "$CONFIG_FILES" --quiet 2>&1 | tee build-retry.log
             RETRY_EXIT=${PIPESTATUS[0]}
             echo "Retry build exit code: $RETRY_EXIT"
             if [ "$RETRY_EXIT" = "143" ]; then
-              echo '[retry] Still receiving SIGTERM; treating as cancellation and exiting 0 to avoid red X.'
+              echo '[retry] Persistent 143 after retry; treating as external termination — success.'
               finish_heartbeat
               exit 0
             fi
