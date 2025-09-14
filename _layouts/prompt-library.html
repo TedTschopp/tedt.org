@@ -7,13 +7,12 @@ redirect_from:
 <!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
     <title>Prompt Library – Curated AI Prompts Collection</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% include utility/calculate-variables.html %}
 
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
 
@@ -99,10 +98,7 @@ redirect_from:
         }
     </style>
 </head>
-<body>
-
-<body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown"
-    data-bs-offset="70">
+<body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
 
     <!-- Navbar -->
     {% include layout/top-nav-bar.html %}
@@ -142,8 +138,7 @@ redirect_from:
                 <button class="btn btn-outline-secondary btn-toggle flex-fill" style="min-width: 140px;" 
                         aria-pressed="true" data-filter="all">All Categories</button>
                 
-                {% comment %} TEMP DIAG limit prompt posts subset {% endcomment %}
-                {% assign prompt_posts = site.posts | where: "categories", "Prompts" | slice: 0, 120 %}
+                {% assign prompt_posts = site.posts | where: "categories", "Prompts" | slice: 0, 240 %}
                 {% assign all_tags = "" | split: "," %}
                 {% for post in prompt_posts %}
                     {% for tag in post.tags %}
@@ -177,8 +172,7 @@ redirect_from:
         <section aria-label="Prompt List">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <!-- Dynamic Jekyll Prompt Cards -->
-                {% comment %} TEMP DIAG limit prompt posts subset {% endcomment %}
-                {% assign prompt_posts = site.posts | where: "categories", "Prompts" | slice: 0, 120 %}
+                {% assign prompt_posts = site.posts | where: "categories", "Prompts" | slice: 0, 240 %}
                 {% for post in prompt_posts %}
                 <div class="col" data-tags="{{ post.tags | join: ',' | downcase | slugify }}" 
                      data-date="{{ post.date | date: '%Y%m%d' }}" 

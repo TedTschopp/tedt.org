@@ -1,0 +1,50 @@
+Configuration file: /Users/tedtschopp/Developer/tedt.org/_config.yml
+ [mem] process_start rss=58512KB 
+ [mem] after_init rss=58528KB 
+            Source: /Users/tedtschopp/Developer/tedt.org
+       Destination: /Users/tedtschopp/Developer/tedt.org/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+ [mem] post_read docs=921 posts=921 collections=2 
+ [mem] post_read rss=102144KB 
+ [mem] pre_render rss=103632KB 
+ [mem] doc_pre_render count=50 path=_posts/Policy/1993-01-01-Copyright-Policy.md rss=113840KB 
+ [mem] doc_post_render count=50 path=_posts/Policy/1993-01-01-Copyright-Policy.md rss=114048KB 
+ [mem] doc_pre_render count=100 path=_posts/Blog Posts/2008-09-01-thoughts-on-nar.md rss=127088KB 
+ [mem] doc_post_render count=100 path=_posts/Blog Posts/2008-09-01-thoughts-on-nar.md rss=127296KB 
+ [mem] doc_pre_render count=150 path=_posts/Gamma World/2023-04-07-Abomination.md rss=142384KB 
+ [mem] doc_post_render count=150 path=_posts/Gamma World/2023-04-07-Abomination.md rss=142832KB 
+ [mem] doc_pre_render count=200 path=_posts/Gamma World/2023-04-07-Black-Snake-Inslith.md rss=156288KB 
+ [mem] doc_post_render count=200 path=_posts/Gamma World/2023-04-07-Black-Snake-Inslith.md rss=156544KB 
+ [mem] doc_pre_render count=250 path=_posts/Gamma World/2023-04-07-Climbing-Crescent-Deer-Albilope.md rss=168496KB 
+ [mem] doc_post_render count=250 path=_posts/Gamma World/2023-04-07-Climbing-Crescent-Deer-Albilope.md rss=168736KB 
+ [mem] doc_pre_render count=300 path=_posts/Gamma World/2023-04-07-Digger-Folk-Badder.md rss=180304KB 
+ [mem] doc_post_render count=300 path=_posts/Gamma World/2023-04-07-Digger-Folk-Badder.md rss=180528KB 
+ [mem] doc_pre_render count=350 path=_posts/Gamma World/2023-04-07-Flying-Eyes-Obb.md rss=192016KB 
+ [mem] doc_post_render count=350 path=_posts/Gamma World/2023-04-07-Flying-Eyes-Obb.md rss=192240KB 
+ [mem] doc_pre_render count=400 path=_posts/Gamma World/2023-04-07-Glow-Mite.md rss=204032KB 
+ [mem] doc_post_render count=400 path=_posts/Gamma World/2023-04-07-Glow-Mite.md rss=204336KB 
+ [mem] doc_pre_render count=450 path=_posts/Gamma World/2023-04-07-Humbug.md rss=215744KB 
+ [mem] doc_post_render count=450 path=_posts/Gamma World/2023-04-07-Humbug.md rss=216000KB 
+ [mem] doc_pre_render count=500 path=_posts/Gamma World/2023-04-07-Living-Ice-Mold-Hyrixon.md rss=227904KB 
+ [mem] doc_post_render count=500 path=_posts/Gamma World/2023-04-07-Living-Ice-Mold-Hyrixon.md rss=228128KB 
+ [mem] doc_pre_render count=550 path=_posts/Gamma World/2023-04-07-Mongo-M-NG0.md rss=240080KB 
+ [mem] doc_post_render count=550 path=_posts/Gamma World/2023-04-07-Mongo-M-NG0.md rss=240304KB 
+ [mem] doc_pre_render count=600 path=_posts/Gamma World/2023-04-07-Powdery-Snow-Rat-Harod.md rss=251744KB 
+ [mem] doc_post_render count=600 path=_posts/Gamma World/2023-04-07-Powdery-Snow-Rat-Harod.md rss=252048KB 
+ [mem] doc_pre_render count=650 path=_posts/Gamma World/2023-04-07-Sea-Cow-Water-Bear.md rss=263392KB 
+ [mem] doc_post_render count=650 path=_posts/Gamma World/2023-04-07-Sea-Cow-Water-Bear.md rss=263616KB 
+ [mem] doc_pre_render count=700 path=_posts/Gamma World/2023-04-07-Snag.md rss=275584KB 
+ [mem] doc_post_render count=700 path=_posts/Gamma World/2023-04-07-Snag.md rss=275824KB 
+ [mem] doc_pre_render count=750 path=_posts/Gamma World/2023-04-07-Teacher-Bot-Automaton.md rss=287504KB 
+ [mem] doc_post_render count=750 path=_posts/Gamma World/2023-04-07-Teacher-Bot-Automaton.md rss=287728KB 
+ [mem] doc_pre_render count=800 path=_posts/Gamma World/2023-04-07-Two-Horn-Boarz.md rss=299136KB 
+ [mem] doc_post_render count=800 path=_posts/Gamma World/2023-04-07-Two-Horn-Boarz.md rss=299360KB 
+ [mem] doc_pre_render count=850 path=_posts/Swiss Folklore/2023-08-20-From-the-Swabian-War-Benedikt-Fontana.md rss=463360KB 
+ [mem] doc_post_render count=850 path=_posts/Swiss Folklore/2023-08-20-From-the-Swabian-War-Benedikt-Fontana.md rss=463376KB 
+ [mem] doc_pre_render count=900 path=_posts/Prompts/2025-05-02-AI-Simulation-Creator.md rss=478944KB 
+ [mem] doc_post_render count=900 path=_posts/Prompts/2025-05-02-AI-Simulation-Creator.md rss=479216KB 
+ [mem] post_render rss=496752KB 
+ [mem] post_write rss=501152KB 
+                    done in 12.855 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

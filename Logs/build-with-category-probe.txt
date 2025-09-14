@@ -1,0 +1,52 @@
+Configuration file: /Users/tedtschopp/Developer/tedt.org/_config.yml
+ [mem] process_start rss=58000KB delta=+0KB 
+ [mem] after_init rss=58096KB delta=+96KB 
+            Source: /Users/tedtschopp/Developer/tedt.org
+       Destination: /Users/tedtschopp/Developer/tedt.org/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+ [mem] post_read docs=921 posts=921 collections=2 
+ [mem] post_read rss=102384KB delta=+44288KB 
+[recent_by_category] start rss=104192KB limit=50 posts=921
+[recent_by_category] done rss=104240KB categories=32 total_refs=486 largest_list=50
+ [mem] pre_render rss=104240KB delta=+1856KB 
+ [mem] doc_pre_render count=50 path=_posts/Policy/1993-01-01-Copyright-Policy.md rss=113344KB delta=+9104KB 
+ [mem] doc_post_render count=50 path=_posts/Policy/1993-01-01-Copyright-Policy.md rss=113488KB delta=+144KB 
+ [mem] doc_pre_render count=100 path=_posts/Blog Posts/2008-09-01-thoughts-on-nar.md rss=126672KB delta=+13184KB 
+ [mem] doc_post_render count=100 path=_posts/Blog Posts/2008-09-01-thoughts-on-nar.md rss=126880KB delta=+208KB 
+ [mem] doc_pre_render count=150 path=_posts/Gamma World/2023-04-07-Abomination.md rss=139792KB delta=+12912KB 
+ [mem] doc_post_render count=150 path=_posts/Gamma World/2023-04-07-Abomination.md rss=140096KB delta=+304KB 
+ [mem] doc_pre_render count=200 path=_posts/Gamma World/2023-04-07-Black-Snake-Inslith.md rss=154144KB delta=+14048KB 
+ [mem] doc_post_render count=200 path=_posts/Gamma World/2023-04-07-Black-Snake-Inslith.md rss=154384KB delta=+240KB 
+ [mem] doc_pre_render count=250 path=_posts/Gamma World/2023-04-07-Climbing-Crescent-Deer-Albilope.md rss=166176KB delta=+11792KB 
+ [mem] doc_post_render count=250 path=_posts/Gamma World/2023-04-07-Climbing-Crescent-Deer-Albilope.md rss=166400KB delta=+224KB 
+ [mem] doc_pre_render count=300 path=_posts/Gamma World/2023-04-07-Digger-Folk-Badder.md rss=178256KB delta=+11856KB 
+ [mem] doc_post_render count=300 path=_posts/Gamma World/2023-04-07-Digger-Folk-Badder.md rss=178480KB delta=+224KB 
+ [mem] doc_pre_render count=350 path=_posts/Gamma World/2023-04-07-Flying-Eyes-Obb.md rss=189984KB delta=+11504KB 
+ [mem] doc_post_render count=350 path=_posts/Gamma World/2023-04-07-Flying-Eyes-Obb.md rss=190224KB delta=+240KB 
+ [mem] doc_pre_render count=400 path=_posts/Gamma World/2023-04-07-Glow-Mite.md rss=202224KB delta=+12000KB 
+ [mem] doc_post_render count=400 path=_posts/Gamma World/2023-04-07-Glow-Mite.md rss=202464KB delta=+240KB 
+ [mem] doc_pre_render count=450 path=_posts/Gamma World/2023-04-07-Humbug.md rss=213824KB delta=+11360KB 
+ [mem] doc_post_render count=450 path=_posts/Gamma World/2023-04-07-Humbug.md rss=214048KB delta=+224KB 
+ [mem] doc_pre_render count=500 path=_posts/Gamma World/2023-04-07-Living-Ice-Mold-Hyrixon.md rss=225680KB delta=+11632KB 
+ [mem] doc_post_render count=500 path=_posts/Gamma World/2023-04-07-Living-Ice-Mold-Hyrixon.md rss=225936KB delta=+256KB 
+ [mem] doc_pre_render count=550 path=_posts/Gamma World/2023-04-07-Mongo-M-NG0.md rss=238000KB delta=+12064KB 
+ [mem] doc_post_render count=550 path=_posts/Gamma World/2023-04-07-Mongo-M-NG0.md rss=238256KB delta=+256KB 
+ [mem] doc_pre_render count=600 path=_posts/Gamma World/2023-04-07-Powdery-Snow-Rat-Harod.md rss=249536KB delta=+11280KB 
+ [mem] doc_post_render count=600 path=_posts/Gamma World/2023-04-07-Powdery-Snow-Rat-Harod.md rss=249760KB delta=+224KB 
+ [mem] doc_pre_render count=650 path=_posts/Gamma World/2023-04-07-Sea-Cow-Water-Bear.md rss=261568KB delta=+11808KB 
+ [mem] doc_post_render count=650 path=_posts/Gamma World/2023-04-07-Sea-Cow-Water-Bear.md rss=261792KB delta=+224KB 
+ [mem] doc_pre_render count=700 path=_posts/Gamma World/2023-04-07-Snag.md rss=273584KB delta=+11792KB 
+ [mem] doc_post_render count=700 path=_posts/Gamma World/2023-04-07-Snag.md rss=273824KB delta=+240KB 
+ [mem] doc_pre_render count=750 path=_posts/Gamma World/2023-04-07-Teacher-Bot-Automaton.md rss=285424KB delta=+11600KB 
+ [mem] doc_post_render count=750 path=_posts/Gamma World/2023-04-07-Teacher-Bot-Automaton.md rss=285648KB delta=+224KB 
+ [mem] doc_pre_render count=800 path=_posts/Gamma World/2023-04-07-Two-Horn-Boarz.md rss=297072KB delta=+11424KB 
+ [mem] doc_post_render count=800 path=_posts/Gamma World/2023-04-07-Two-Horn-Boarz.md rss=297296KB delta=+224KB 
+ [mem] doc_pre_render count=850 path=_posts/Swiss Folklore/2023-08-20-From-the-Swabian-War-Benedikt-Fontana.md.skip rss=327888KB delta=+30592KB 
+ [mem] doc_post_render count=850 path=_posts/Swiss Folklore/2023-08-20-From-the-Swabian-War-Benedikt-Fontana.md.skip rss=327952KB delta=+64KB 
+ [mem] doc_pre_render count=900 path=_posts/Prompts/2025-05-02-AI-Simulation-Creator.md rss=331776KB delta=+3824KB 
+ [mem] doc_post_render count=900 path=_posts/Prompts/2025-05-02-AI-Simulation-Creator.md rss=331888KB delta=+112KB 
+ [mem] post_render rss=364080KB delta=+32192KB 
+ [mem] post_write rss=369888KB delta=+5808KB 
+                    done in 11.884 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

@@ -1,2 +1,5 @@
 # Ignore editor/backup shadow copies that were being treated as posts
 **/*.bak
+
+# Also ignore large developmental data directory (defense-in-depth vs accidental inclusion)
+_data-to-be-developed/**

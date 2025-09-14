@@ -2,9 +2,13 @@
 # Memory probe (now gated). Enable by setting MEM_PROBE=1.
 return unless ENV['MEM_PROBE'] == '1'
 
+PREV_RSS = { value: nil }
+
 def mem_probe(label)
   rss = `ps -o rss= -p #{Process.pid}`.to_i # in KB
-  warn %[ [mem] #{label} rss=#{rss}KB ]
+  delta = PREV_RSS[:value].nil? ? 0 : (rss - PREV_RSS[:value])
+  PREV_RSS[:value] = rss
+  warn %[ [mem] #{label} rss=#{rss}KB delta=#{delta >= 0 ? '+' : ''}#{delta}KB ]
 rescue => e
   warn "[mem] probe error at #{label}: #{e.class}: #{e.message}"
 end

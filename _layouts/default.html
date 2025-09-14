@@ -101,9 +101,12 @@
                 </div>
                 <div class="card-footer p-0 py-0 h-100">
                   {% assign count = 0 %}
-                  {%- assign __diag_posts = site.posts | slice: 0, 50 -%}
-                  {%- comment -%} TEMP DIAG: limit posts loop to first 50 to avoid OOM {%- endcomment -%}
-                  {% for post in __diag_posts %}
+                  {%- comment -%}
+                    Use precomputed recent_by_category cache instead of iterating site.posts.
+                    Fallback: slice newest posts if cache missing.
+                  {%- endcomment -%}
+                  {% assign _blog_candidates = site.config.recent_by_category.blog | default: site.posts | safe_sort: 'date' | reverse | slice: 0, 80 %}
+                  {% for post in _blog_candidates %}
                     {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
                       <!-- Do Nothing -->
                     {% elsif post.categories contains "Draft" or post.category == "Draft" %}

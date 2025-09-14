@@ -1,10 +1,12 @@
 <div class="bullets">
-	{%- assign __diag_theme_posts = site.posts | slice: 0, 60 -%}
-	{% comment %} TEMP DIAG limit theme posts {% endcomment %}
-	{% for post in __diag_theme_posts %}
+	{%- comment -%} Iterate recent posts (bounded) for theme list. {%- endcomment -%}
+	{%- assign _theme_recent = site.posts | safe_sort: 'date' | reverse | slice: 0, 60 -%}
+	{% for post in _theme_recent %}
 	<div class="bullet three-col-bullet">
 		<div class="bullet-icon">
-			<a href="{{ site.url }}{{ post.url }}"><img src="{{ site.url }}/images/{{ post.image.teaser }}" alt=""></a>
+			<a href="{{ site.url }}{{ post.url }}" aria-label="{{ post.title | escape }}">
+				<img src="{{ site.url }}/images/{{ post.image.teaser }}" alt="{{ post.title | escape }}" loading="lazy">
+			</a>
 		</div><!-- /.bullet-icon -->
 		<div class="bullet-content">
 			<h2><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h2>

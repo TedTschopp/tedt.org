@@ -1,0 +1,112 @@
+Configuration file: /Users/tedtschopp/Developer/tedt.org/_config.yml
+ [mem] process_start rss=57792KB delta=+0KB 
+ [mem] after_init rss=57952KB delta=+160KB 
+            Source: /Users/tedtschopp/Developer/tedt.org
+       Destination: /Users/tedtschopp/Developer/tedt.org/_site
+ Incremental build: disabled. Enable with --incremental
+      Generating... 
+ [mem] post_read docs=921 posts=921 collections=2 
+ [mem] post_read rss=101920KB delta=+43968KB 
+ [mem] pre_render rss=103424KB delta=+1504KB 
+ [mem] doc_pre_render count=50 path=_posts/Policy/1993-01-01-Copyright-Policy.md rss=113136KB delta=+9712KB 
+ [mem] doc_post_render count=50 path=_posts/Policy/1993-01-01-Copyright-Policy.md rss=113280KB delta=+144KB 
+ [mem] doc_pre_render count=100 path=_posts/Blog Posts/2008-09-01-thoughts-on-nar.md rss=125312KB delta=+12032KB 
+ [mem] doc_post_render count=100 path=_posts/Blog Posts/2008-09-01-thoughts-on-nar.md rss=125536KB delta=+224KB 
+ [mem] doc_pre_render count=150 path=_posts/Gamma World/2023-04-07-Abomination.md rss=138704KB delta=+13168KB 
+ [mem] doc_post_render count=150 path=_posts/Gamma World/2023-04-07-Abomination.md rss=139632KB delta=+928KB 
+ [mem] doc_pre_render count=200 path=_posts/Gamma World/2023-04-07-Black-Snake-Inslith.md rss=153152KB delta=+13520KB 
+ [mem] doc_post_render count=200 path=_posts/Gamma World/2023-04-07-Black-Snake-Inslith.md rss=153408KB delta=+256KB 
+ [mem] doc_pre_render count=250 path=_posts/Gamma World/2023-04-07-Climbing-Crescent-Deer-Albilope.md rss=165232KB delta=+11824KB 
+ [mem] doc_post_render count=250 path=_posts/Gamma World/2023-04-07-Climbing-Crescent-Deer-Albilope.md rss=165456KB delta=+224KB 
+ [mem] doc_pre_render count=300 path=_posts/Gamma World/2023-04-07-Digger-Folk-Badder.md rss=177136KB delta=+11680KB 
+ [mem] doc_post_render count=300 path=_posts/Gamma World/2023-04-07-Digger-Folk-Badder.md rss=177360KB delta=+224KB 
+ [mem] doc_pre_render count=350 path=_posts/Gamma World/2023-04-07-Flying-Eyes-Obb.md rss=188848KB delta=+11488KB 
+ [mem] doc_post_render count=350 path=_posts/Gamma World/2023-04-07-Flying-Eyes-Obb.md rss=189072KB delta=+224KB 
+ [mem] doc_pre_render count=400 path=_posts/Gamma World/2023-04-07-Glow-Mite.md rss=201264KB delta=+12192KB 
+ [mem] doc_post_render count=400 path=_posts/Gamma World/2023-04-07-Glow-Mite.md rss=201504KB delta=+240KB 
+ [mem] doc_pre_render count=450 path=_posts/Gamma World/2023-04-07-Humbug.md rss=213088KB delta=+11584KB 
+ [mem] doc_post_render count=450 path=_posts/Gamma World/2023-04-07-Humbug.md rss=213312KB delta=+224KB 
+ [mem] doc_pre_render count=500 path=_posts/Gamma World/2023-04-07-Living-Ice-Mold-Hyrixon.md rss=224880KB delta=+11568KB 
+ [mem] doc_post_render count=500 path=_posts/Gamma World/2023-04-07-Living-Ice-Mold-Hyrixon.md rss=225120KB delta=+240KB 
+ [mem] doc_pre_render count=550 path=_posts/Gamma World/2023-04-07-Mongo-M-NG0.md rss=237104KB delta=+11984KB 
+ [mem] doc_post_render count=550 path=_posts/Gamma World/2023-04-07-Mongo-M-NG0.md rss=237328KB delta=+224KB 
+ [mem] doc_pre_render count=600 path=_posts/Gamma World/2023-04-07-Powdery-Snow-Rat-Harod.md rss=248864KB delta=+11536KB 
+ [mem] doc_post_render count=600 path=_posts/Gamma World/2023-04-07-Powdery-Snow-Rat-Harod.md rss=249104KB delta=+240KB 
+ [mem] doc_pre_render count=650 path=_posts/Gamma World/2023-04-07-Sea-Cow-Water-Bear.md rss=260704KB delta=+11600KB 
+ [mem] doc_post_render count=650 path=_posts/Gamma World/2023-04-07-Sea-Cow-Water-Bear.md rss=260928KB delta=+224KB 
+ [mem] doc_pre_render count=700 path=_posts/Gamma World/2023-04-07-Snag.md rss=272752KB delta=+11824KB 
+ [mem] doc_post_render count=700 path=_posts/Gamma World/2023-04-07-Snag.md rss=273040KB delta=+288KB 
+ [mem] doc_pre_render count=750 path=_posts/Gamma World/2023-04-07-Teacher-Bot-Automaton.md rss=284688KB delta=+11648KB 
+ [mem] doc_post_render count=750 path=_posts/Gamma World/2023-04-07-Teacher-Bot-Automaton.md rss=284912KB delta=+224KB 
+ [mem] doc_pre_render count=800 path=_posts/Gamma World/2023-04-07-Two-Horn-Boarz.md rss=296320KB delta=+11408KB 
+ [mem] doc_post_render count=800 path=_posts/Gamma World/2023-04-07-Two-Horn-Boarz.md rss=296544KB delta=+224KB 
+[render_probe] pre_render idx=830 path=_posts/Gamma World/2023-04-07-Whirligig-Belo.md rss=303504KB strings=240314 arrays=76234 hashes=8579
+[render_probe] post_render idx=830 path=_posts/Gamma World/2023-04-07-Whirligig-Belo.md rss=303744KB strings=223597 arrays=28237 hashes=7756
+[render_probe] pre_render idx=831 path=_posts/Gamma World/2023-04-07-Wolf-Folk-Howler.md rss=303744KB strings=223614 arrays=28248 hashes=7760
+[render_probe] post_render idx=831 path=_posts/Gamma World/2023-04-07-Wolf-Folk-Howler.md rss=303968KB strings=227612 arrays=39678 hashes=7978
+[render_probe] pre_render idx=832 path=_posts/Gamma World/2023-04-07-Worker-Android.md rss=303968KB strings=227629 arrays=39689 hashes=7982
+[render_probe] post_render idx=832 path=_posts/Gamma World/2023-04-07-Worker-Android.md rss=304192KB strings=231539 arrays=51016 hashes=8199
+[render_probe] pre_render idx=833 path=_posts/Gamma World/2023-04-07-Wraith.md rss=304192KB strings=231556 arrays=51027 hashes=8203
+[render_probe] post_render idx=833 path=_posts/Gamma World/2023-04-07-Wraith.md rss=304416KB strings=235484 arrays=62473 hashes=8425
+[render_probe] pre_render idx=834 path=_posts/Gamma World/2023-04-07-X-Unit-Sleigh.md rss=304416KB strings=235501 arrays=62484 hashes=8429
+[render_probe] post_render idx=834 path=_posts/Gamma World/2023-04-07-X-Unit-Sleigh.md rss=304640KB strings=239430 arrays=73888 hashes=8647
+[render_probe] pre_render idx=835 path=_posts/Gamma World/2023-04-07-X.M.A.S.md rss=304640KB strings=239447 arrays=73899 hashes=8651
+[render_probe] post_render idx=835 path=_posts/Gamma World/2023-04-07-X.M.A.S.md rss=304864KB strings=222718 arrays=26329 hashes=7815
+[render_probe] pre_render idx=836 path=_posts/Gamma World/2023-04-07-Xxen.md rss=304864KB strings=222735 arrays=26340 hashes=7819
+[render_probe] post_render idx=836 path=_posts/Gamma World/2023-04-07-Xxen.md rss=305088KB strings=226730 arrays=37786 hashes=8041
+[render_probe] pre_render idx=837 path=_posts/Gamma World/2023-04-07-Yaager.md rss=305088KB strings=226747 arrays=37797 hashes=8045
+[render_probe] post_render idx=837 path=_posts/Gamma World/2023-04-07-Yaager.md rss=305312KB strings=230675 arrays=49249 hashes=8267
+[render_probe] pre_render idx=838 path=_posts/Gamma World/2023-04-07-Yellow-Belly.md rss=305312KB strings=230692 arrays=49260 hashes=8271
+[render_probe] post_render idx=838 path=_posts/Gamma World/2023-04-07-Yellow-Belly.md rss=305536KB strings=234624 arrays=60706 hashes=8493
+[render_probe] pre_render idx=839 path=_posts/Gamma World/2023-04-07-Yellow-Living-Mold-Cyn-Ixon.md rss=305536KB strings=234641 arrays=60717 hashes=8497
+[render_probe] post_render idx=839 path=_posts/Gamma World/2023-04-07-Yellow-Living-Mold-Cyn-Ixon.md rss=305792KB strings=238581 arrays=72166 hashes=8715
+[render_probe] pre_render idx=840 path=_posts/Gamma World/2023-04-07-Yellow-Tanglers-Win-Seen-or-Yellow-Winislean.md rss=305792KB strings=238598 arrays=72177 hashes=8719
+[render_probe] post_render idx=840 path=_posts/Gamma World/2023-04-07-Yellow-Tanglers-Win-Seen-or-Yellow-Winislean.md rss=306064KB strings=221996 arrays=24471 hashes=7849
+[render_probe] pre_render idx=841 path=_posts/Gamma World/2023-04-07-Yukon.md rss=306064KB strings=222013 arrays=24482 hashes=7853
+[render_probe] post_render idx=841 path=_posts/Gamma World/2023-04-07-Yukon.md rss=306304KB strings=226008 arrays=35928 hashes=8075
+[render_probe] pre_render idx=842 path=_posts/Gamma World/2023-04-07-Zap-Lizards-Gliders.md rss=306304KB strings=226025 arrays=35939 hashes=8079
+[render_probe] post_render idx=842 path=_posts/Gamma World/2023-04-07-Zap-Lizards-Gliders.md rss=306560KB strings=229956 arrays=47363 hashes=8297
+[render_probe] pre_render idx=843 path=_posts/Gamma World/2023-04-07-Zap-Mice-Rodqas.md rss=306560KB strings=229973 arrays=47374 hashes=8301
+[render_probe] post_render idx=843 path=_posts/Gamma World/2023-04-07-Zap-Mice-Rodqas.md rss=306784KB strings=233893 arrays=58798 hashes=8519
+[render_probe] pre_render idx=844 path=_posts/Gamma World/2023-04-07-Zappers-Blaster-Blossom.md rss=306784KB strings=233910 arrays=58809 hashes=8523
+[render_probe] post_render idx=844 path=_posts/Gamma World/2023-04-07-Zappers-Blaster-Blossom.md rss=307008KB strings=238004 arrays=70209 hashes=8746
+[render_probe] pre_render idx=845 path=_posts/Gamma World/2023-04-07-Zayshin.md rss=307008KB strings=238021 arrays=70220 hashes=8750
+[render_probe] post_render idx=845 path=_posts/Gamma World/2023-04-07-Zayshin.md rss=307312KB strings=241855 arrays=81638 hashes=8969
+[render_probe] pre_render idx=846 path=_posts/Gamma World/2023-04-07-Zombie-Canopus-Plague-Victim.md rss=307312KB strings=241872 arrays=81649 hashes=8973
+[render_probe] post_render idx=846 path=_posts/Gamma World/2023-04-07-Zombie-Canopus-Plague-Victim.md rss=307536KB strings=225388 arrays=34613 hashes=8047
+[render_probe] pre_render idx=847 path=_posts/Blog Posts/2023-05-16-AI-User-Interfaces-and-Experiences-in-2023.md rss=307536KB strings=225406 arrays=34626 hashes=8051
+[render_probe] post_render idx=847 path=_posts/Blog Posts/2023-05-16-AI-User-Interfaces-and-Experiences-in-2023.md rss=307760KB strings=227743 arrays=46016 hashes=8213
+[render_probe] pre_render idx=848 path=_posts/RPG Posts/2023-07-22-The-Right-Set-of-Skills.md rss=307760KB strings=227761 arrays=46029 hashes=8217
+[render_probe] post_render idx=848 path=_posts/RPG Posts/2023-07-22-The-Right-Set-of-Skills.md rss=315760KB strings=233340 arrays=59380 hashes=8493
+[render_probe] pre_render idx=849 path=_posts/RPG Posts/2023-09-10-What-Makes-the-Human.md rss=315760KB strings=233358 arrays=59393 hashes=8497
+[render_probe] post_render idx=849 path=_posts/RPG Posts/2023-09-10-What-Makes-the-Human.md rss=328256KB strings=224689 arrays=35104 hashes=8074
+ [mem] doc_pre_render count=850 path=_posts/Swiss Folklore/2023-08-20-From-the-Swabian-War-Benedikt-Fontana.md.skip rss=328256KB delta=+31712KB 
+[render_probe] pre_render idx=850 path=_posts/Swiss Folklore/2023-08-20-From-the-Swabian-War-Benedikt-Fontana.md.skip rss=328256KB strings=224718 arrays=35116 hashes=8081
+ [mem] doc_post_render count=850 path=_posts/Swiss Folklore/2023-08-20-From-the-Swabian-War-Benedikt-Fontana.md.skip rss=328272KB delta=+16KB 
+[render_probe] post_render idx=850 path=_posts/Swiss Folklore/2023-08-20-From-the-Swabian-War-Benedikt-Fontana.md.skip rss=328272KB strings=226474 arrays=44365 hashes=8235
+[render_probe] pre_render idx=851 path=_posts/Swiss Folklore/2023-08-20-The-Little-Shepherd-of-Mellikon.md rss=328272KB strings=226491 arrays=44376 hashes=8239
+[render_probe] post_render idx=851 path=_posts/Swiss Folklore/2023-08-20-The-Little-Shepherd-of-Mellikon.md rss=328304KB strings=228324 arrays=53662 hashes=8395
+[render_probe] pre_render idx=852 path=_posts/Swiss Folklore/2023-08-20-The-Army-in-Schrattenberg.md rss=328304KB strings=228341 arrays=53673 hashes=8399
+[render_probe] post_render idx=852 path=_posts/Swiss Folklore/2023-08-20-The-Army-in-Schrattenberg.md rss=328496KB strings=230037 arrays=62917 hashes=8549
+[render_probe] pre_render idx=853 path=_posts/RPG Posts/2023-08-27-Gamma-World-Terrain.md rss=328496KB strings=230055 arrays=62930 hashes=8553
+[render_probe] post_render idx=853 path=_posts/RPG Posts/2023-08-27-Gamma-World-Terrain.md rss=328896KB strings=232344 arrays=74262 hashes=8718
+[render_probe] pre_render idx=854 path=_posts/Blog Posts/2023-09-17-Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations.md rss=328896KB strings=232362 arrays=74275 hashes=8722
+[render_probe] post_render idx=854 path=_posts/Blog Posts/2023-09-17-Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations.md rss=329168KB strings=221096 arrays=22255 hashes=6622
+[render_probe] pre_render idx=855 path=_posts/Swiss Folklore/2023-09-23-The-Weatherman-in-Pörtlialp.md rss=329168KB strings=221113 arrays=22266 hashes=6626
+[render_probe] post_render idx=855 path=_posts/Swiss Folklore/2023-09-23-The-Weatherman-in-Pörtlialp.md rss=329168KB strings=223056 arrays=31544 hashes=6782
+[render_probe] pre_render idx=856 path=_posts/Swiss Folklore/2023-09-23-The-Betten-Dog.md rss=329168KB strings=223073 arrays=31555 hashes=6786
+[render_probe] post_render idx=856 path=_posts/Swiss Folklore/2023-09-23-The-Betten-Dog.md rss=329376KB strings=224762 arrays=40791 hashes=6936
+[render_probe] pre_render idx=857 path=_posts/RPG Posts/2023-09-30-What-is-the-Märchen-Engine.md rss=329376KB strings=224780 arrays=40804 hashes=6940
+[render_probe] post_render idx=857 path=_posts/RPG Posts/2023-09-30-What-is-the-Märchen-Engine.md rss=329424KB strings=226791 arrays=52105 hashes=7094
+[render_probe] pre_render idx=858 path=_posts/Blog Posts/2023-10-12-Art-of-Innovation.md rss=329424KB strings=226809 arrays=52118 hashes=7098
+[render_probe] post_render idx=858 path=_posts/Blog Posts/2023-10-12-Art-of-Innovation.md rss=329424KB strings=228818 arrays=63396 hashes=7251
+[render_probe] pre_render idx=859 path=_posts/RPG Posts/2023-10-17-You-Have-My-Sword-and-My-Bow-and-My-Axe.md rss=329424KB strings=228836 arrays=63409 hashes=7255
+[render_probe] post_render idx=859 path=_posts/RPG Posts/2023-10-17-You-Have-My-Sword-and-My-Bow-and-My-Axe.md rss=329424KB strings=231042 arrays=74776 hashes=7415
+[render_probe] pre_render idx=860 path=_posts/RPG Posts/2023-10-27-Toot-RPG-Design.md rss=329424KB strings=231060 arrays=74789 hashes=7419
+[render_probe] post_render idx=860 path=_posts/RPG Posts/2023-10-27-Toot-RPG-Design.md rss=329424KB strings=233046 arrays=86068 hashes=7570
+ [mem] doc_pre_render count=900 path=_posts/Prompts/2025-05-02-AI-Simulation-Creator.md rss=334304KB delta=+6032KB 
+ [mem] doc_post_render count=900 path=_posts/Prompts/2025-05-02-AI-Simulation-Creator.md rss=334384KB delta=+80KB 
+ [mem] post_render rss=363312KB delta=+28928KB 
+ [mem] post_write rss=369648KB delta=+6336KB 
+                    done in 12.568 seconds.
+ Auto-regeneration: disabled. Use --watch to enable.

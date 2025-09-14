@@ -31,9 +31,11 @@
     {%- if slug == '' -%}{%- continue -%}{%- endif -%}
     {%- if entry.hide_from_carousel == true or entry.hide_from_carousel == 'true' -%}{%- continue -%}{%- endif -%}
     {%- assign has_posts = false -%}
-  {%- assign __diag_car_posts = site.posts | slice: 0, 60 -%}
-  {%- comment -%} TEMP DIAG limited posts for carousel {%- endcomment -%}
-  {%- for p in __diag_car_posts -%}
+  {%- comment -%} Determine if category has at least one post via cached recent_by_category; fallback to scanning recent global posts. {%- endcomment -%}
+  {%- assign _fallback_recent = site.posts | safe_sort: 'date' | reverse | slice: 0, 120 -%}
+  {%- assign _cached_recent = site.config.recent_by_category[slug] | default: site.config.recent_by_category[entry.title] -%}
+  {%- assign _scan_set = _cached_recent | default: _fallback_recent -%}
+  {%- for p in _scan_set -%}
       {%- if p.categories -%}
         {%- assign matched = false -%}
         {%- if p.categories contains entry.title -%}{%- assign matched = true -%}{%- endif -%}
@@ -89,8 +91,12 @@
                 </div>
                 <div class="card-footer p-0">
                   {%- assign displayed = 0 -%}
-                  {%- assign posts_sorted = site.posts | safe_sort: 'date' | reverse | slice: 0, 60 -%}
-                  {%- for post in posts_sorted -%}
+                  {%- comment -%} Prefer cached recent posts per category to avoid wide scans. {%- endcomment -%}
+                  {%- assign _recent_cat_posts = site.config.recent_by_category[slug] | default: site.config.recent_by_category[entry.title] -%}
+                  {%- if _recent_cat_posts == nil -%}
+                    {%- assign _recent_cat_posts = site.posts | safe_sort: 'date' | reverse | slice: 0, 60 -%}
+                  {%- endif -%}
+                  {%- for post in _recent_cat_posts -%}
                     {%- if displayed >= 3 -%}{%- break -%}{%- endif -%}
                     {%- assign post_match = false -%}
                     {%- if post.categories -%}

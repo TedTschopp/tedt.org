@@ -19,6 +19,11 @@ module Jekyll
       limit = resolve_limit(site)
       map = Hash.new { |h, k| h[k] = [] }
 
+      if ENV['CATEGORY_INDEX_PROBE'] == '1'
+        rss = `ps -o rss= -p #{Process.pid}`.to_i
+        warn "[recent_by_category] start rss=#{rss}KB limit=#{limit} posts=#{site.posts.docs.size}"
+      end
+
       # Collect posts per category
       site.posts.docs.each do |doc|
         Array(doc.data['categories']).each do |cat|
@@ -33,6 +38,14 @@ module Jekyll
       end
 
       site.config['recent_by_category'] = map
+
+      if ENV['CATEGORY_INDEX_PROBE'] == '1'
+        rss = `ps -o rss= -p #{Process.pid}`.to_i
+        cat_count = map.keys.size
+        largest = map.values.map(&:size).max || 0
+        total_refs = map.values.reduce(0) { |s,a| s + a.size }
+        warn "[recent_by_category] done rss=#{rss}KB categories=#{cat_count} total_refs=#{total_refs} largest_list=#{largest}"
+      end
     rescue => e
       warn "[recent_by_category] generator error: #{e.class}: #{e.message}"
     end

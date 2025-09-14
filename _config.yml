@@ -7,6 +7,8 @@ exclude:
 - "**/*.bak"
 # Exclude embedded Python virtual env inside data (never needed for site build)
 - _data/Swiss-Folklore-Work-in-Progress/myenv/**
+# Exclude large in-progress data (kept for future development; do not load or process)
+- _data-to-be-developed/**
 
 # Enable explicit kramdown + MathJax processing
 markdown: kramdown

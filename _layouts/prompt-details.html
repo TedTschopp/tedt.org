@@ -2,7 +2,7 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prompt: {{page.title}}</title>
 
@@ -388,9 +388,9 @@
                         <div class="list-group list-group-numbered flex-grow-1 me-4" role="list">{%- for series_item in sorted_series -%}
                                 {% comment %}Find the referenced prompt file{% endcomment %}
                                 {% assign series_prompt = null %}
-                                {%- assign __diag_posts = site.posts | slice: 0, 80 -%}
-                                {% comment %} TEMP DIAG limiting posts scanned to first 80 {% endcomment %}
-                                {% for post in __diag_posts %}
+                                {%- comment -%} Lookup series prompt by filename; scan limited recent set (cache placeholder). {%- endcomment -%}
+                                {%- assign _series_scan = site.posts | safe_sort: 'date' | reverse | slice: 0, 300 -%}
+                                {% for post in _series_scan %}
                                     {% assign post_filename = post.path | split: '/' | last %}
                                     {% if post_filename == series_item.prompt_file %}
                                         {% assign series_prompt = post %}
@@ -460,9 +460,9 @@
                 {% endif %}
                 
                 <!-- Check site.posts for prompts -->
-                {%- assign __diag_posts2 = site.posts | slice: 0, 80 -%}
-                {% comment %} TEMP DIAG limiting posts scanned to first 80 {% endcomment %}
-                {% for post in __diag_posts2 %}
+                {%- comment -%} Related prompts scan (still bounded) - consider tag index later. {%- endcomment -%}
+                {%- assign _related_scan = site.posts | safe_sort: 'date' | reverse | slice: 0, 400 -%}
+                {% for post in _related_scan %}
                     {% assign total_checked = total_checked | plus: 1 %}
                     {% if post.layout == 'prompt-details' and post.url != page.url %}
                         {% assign post_tags = post.tags | default: empty %}
