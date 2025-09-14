@@ -12,20 +12,20 @@ end
 mem_probe 'process_start'
 
 RENDER_SAMPLE_INTERVAL = (ENV['MEM_RENDER_INTERVAL'] || '50').to_i
-@@render_count = 0
+$render_count = 0
 
 # Log before each document render (sampling)
 Jekyll::Hooks.register :documents, :pre_render do |doc|
-  @@render_count += 1
-  if (@@render_count % RENDER_SAMPLE_INTERVAL).zero?
-    label = "doc_pre_render count=#{@@render_count} path=#{doc.relative_path}"
+  $render_count += 1
+  if ($render_count % RENDER_SAMPLE_INTERVAL).zero?
+    label = "doc_pre_render count=#{$render_count} path=#{doc.relative_path}"
     mem_probe label
   end
 end
 
 Jekyll::Hooks.register :documents, :post_render do |doc|
-  if (@@render_count % RENDER_SAMPLE_INTERVAL).zero?
-    label = "doc_post_render count=#{@@render_count} path=#{doc.relative_path}"
+  if ($render_count % RENDER_SAMPLE_INTERVAL).zero?
+    label = "doc_post_render count=#{$render_count} path=#{doc.relative_path}"
     mem_probe label
   end
 end
