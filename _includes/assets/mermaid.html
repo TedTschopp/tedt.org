@@ -132,13 +132,15 @@
         if (code.parentElement && code.parentElement.classList.contains('mermaid')) return; // already processed
         const pre = code.parentElement;
         if (!pre) return;
-        let src = code.textContent; // original user code
-        // Normalize common HTML line break tags to literal newlines for mermaid label rendering
-        src = src.replace(/<br\s*\/?>(\r?\n)?/gi, '\n');
+        const original = code.textContent; // keep exactly for source display
+        // Normalized for rendering
+        let src = original.replace(/<br\s*\/?>(\r?\n)?/gi, '\n');
+        src = maybeAugmentSemanticClasses(src);
         const div = document.createElement('div');
         div.className = 'mermaid';
         div.textContent = src.trim();
-        // store original untrimmed in data attribute to reproduce user formatting in panel
+        // store BOTH versions
+        div.setAttribute('data-mermaid-source-original', original);
         div.setAttribute('data-mermaid-source', src);
         pre.replaceWith(div);
       });
@@ -153,12 +155,57 @@
         if (!code) return;
         // Allow using the element itself as container
         el.classList.add('mermaid');
+        const original = code;
         let processed = code.replace(/<br\s*\/?>(\r?\n)?/gi, '\n');
+        processed = maybeAugmentSemanticClasses(processed);
         if (!el.textContent.trim()) {
           el.textContent = processed.trim();
         }
+        el.setAttribute('data-mermaid-source-original', original);
         el.setAttribute('data-mermaid-source', processed);
       });
+    }
+
+    const SEMANTIC_CLASS_DEFS = {
+      core:   'fill:#eef2ff,stroke:#6366f1,stroke-width:2px,color:#312e81',
+      chat:   'fill:#f0f9ff,stroke:#0ea5e9,stroke-width:2px,color:#075985',
+      flow:   'fill:#fff7ed,stroke:#fb923c,stroke-width:2px,color:#7c2d12',
+      agent:  'fill:#f0fdf4,stroke:#22c55e,stroke-width:2px,color:#14532d',
+      note:   'fill:#ffffff,stroke:#94a3b8,stroke-dasharray:3 3,color:#334155',
+      tool:   'fill:#9333ea,stroke:#7e22ce,stroke-width:2px,color:#3b0764',
+      memory: 'fill:#db2777,stroke:#be185d,stroke-width:2px,color:#4a044e',
+      planner:'fill:#65a30d,stroke:#4d7c0f,stroke-width:2px,color:#1a2e05'
+    };
+
+    function maybeAugmentSemanticClasses(src){
+      try {
+        if (!/graph\s/i.test(src)) return src; // only process graph diagrams
+        const hasAnyClassDef = /classDef\s+\w+/i.test(src);
+        const needed = new Set();
+        // Detect simple node declarations like X[Label]
+        const nodeRegex = /(\b[A-Za-z0-9_]+)\[[^\]]*?(Model|Chatbot|Workflow|Agent|Tool|Memory|Planner)\b[^\]]*?\]/g;
+        let m;
+        while ((m = nodeRegex.exec(src)) !== null){
+          const label = m[2].toLowerCase();
+          if (label === 'model') needed.add('core');
+          else if (label === 'chatbot') needed.add('chat');
+          else if (label === 'workflow') needed.add('flow');
+          else if (label === 'agent') needed.add('agent');
+          else if (label === 'tool') needed.add('tool');
+          else if (label === 'memory') needed.add('memory');
+          else if (label === 'planner') needed.add('planner');
+        }
+        if (needed.size === 0) return src;
+        let additions = '';
+        if (!hasAnyClassDef){
+          needed.forEach(cls => { additions += `\nclassDef ${cls} ${SEMANTIC_CLASS_DEFS[cls]};`; });
+        } else {
+          // Only add missing classDefs
+          needed.forEach(cls => { if (!new RegExp(`classDef\\s+${cls}\\b`).test(src)) additions += `\nclassDef ${cls} ${SEMANTIC_CLASS_DEFS[cls]};`; });
+        }
+        if (!additions) return src;
+        return src + additions + '\n';
+      } catch(e){ return src; }
     }
 
     /**
@@ -170,7 +217,9 @@
         // If already wrapped in composite skip
         if (diagram.parentElement && diagram.parentElement.classList.contains('mermaid-composite')) return;
 
-        const src = diagram.getAttribute('data-mermaid-source') || diagram.textContent || '';
+  const original = diagram.getAttribute('data-mermaid-source-original');
+  const normalized = diagram.getAttribute('data-mermaid-source');
+  const src = (original && original.trim()) ? original : (normalized || diagram.textContent || '');
         if (!src.trim()) return;
 
         // Build composite wrapper

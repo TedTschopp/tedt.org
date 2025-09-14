@@ -123,7 +123,6 @@ graph TD
     W -->|"Structured control"| WNote[Outputs: predefined steps<br/>Explicit control/data flow<br/>BPMN, DAGs]
     A -->|"Autonomous loop"| ANote[Outputs: actions via tools<br/>Perceive → Decide → Act → Learn<br/>Goal-directed autonomy]
 
-    %% legend:auto
 ```
 
 ## Variables by Concept

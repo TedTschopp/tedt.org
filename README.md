@@ -37,8 +37,18 @@ This site includes:
       1. [Local Development](#local-development)
       2. [Testing](#testing)
    8. [Quality Gates](#quality-gates)
-   9. [License](#license)
-   10. [Contact](#contact)
+   9. [GitHub Workflows Overview](#github-workflows-overview)
+   10. [Front Matter Feature Flags](#front-matter-feature-flags)
+       1. [Mermaid Diagrams Usage](#mermaid-diagrams-usage)
+   11. [Homepage Hero System \& Caching](#homepage-hero-system--caching)
+       1. [How It Works](#how-it-works)
+       2. [Adding / Updating a Hero](#adding--updating-a-hero)
+       3. [Removing a Hero](#removing-a-hero)
+       4. [Service Worker Details](#service-worker-details)
+       5. [Troubleshooting](#troubleshooting)
+       6. [Potential Future Enhancements](#potential-future-enhancements)
+   12. [License](#license)
+   13. [Contact](#contact)
 
 ## Repository Structure
 
