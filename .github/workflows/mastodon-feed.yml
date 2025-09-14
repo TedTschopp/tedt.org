@@ -1,0 +1,49 @@
+name: Feed to Mastodon
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  post-feed:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Decide if we should post
+        id: guard
+        run: |
+          python3 _code/should_post_latest.py > guard.json || true
+          echo "Guard output:" && cat guard.json || true
+          SHOULD=$(python3 -c "import json;print(json.load(open('guard.json')).get('should_post','false'))" || echo false)
+          echo "should_post=$SHOULD" >> $GITHUB_OUTPUT
+      - name: Post new items
+        if: steps.guard.outputs.should_post == 'true'
+        uses: nhoizey/github-action-feed-to-mastodon@v2
+        with:
+          feedUrl: "https://tedt.org/feed-mastodon.json"
+          mastodonInstance: "https://tschopp.net"
+          mastodonToken: ${{ secrets.MASTODON_TOKEN }}
+          ignoreFirstRun: false
+          itemChoiceStrategy: newest
+          globalDelayToots: 60
+          delayTootsSameItem: 2880
+      - name: Skip note
+        if: steps.guard.outputs.should_post != 'true'
+        run: |
+          echo "Skipping: latest item already posted"
+      - name: Commit mastodon cache/front matter (if changed)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update Mastodon cache/front matter"
+          file_pattern: cache/*.json _posts/**/*.md

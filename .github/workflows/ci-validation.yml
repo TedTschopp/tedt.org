@@ -44,17 +44,27 @@ jobs:
         env:
           CI_MEM_PROFILE: '1'
         run: |
+          # Allow us to manage exit behavior explicitly even if runner invokes bash -e
+          set +e
           set -o pipefail
           CANCELLED=0
           echo '--- Memory snapshot (before build) ---'
           (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) | sed 's/^/MEM: /'
-          # Decide config (lite vs full) similar to scheduled workflow
+          # Config selection
           if [ "${CI_DEBUG_FULL:-0}" = "1" ]; then
             CONFIG_FILES="_config.yml"
-            echo 'CI_DEBUG_FULL=1 -> using full config only'
+            echo 'CI_DEBUG_FULL=1 -> full config'
           else
             CONFIG_FILES="_config.yml,_config.ci-lite.yml"
             echo 'Using CI lite config (excludes large data)'
+          fi
+          # Optional profiling toggle
+          if [ "${CI_DEBUG_PROFILE:-0}" = "1" ]; then
+            PROFILE_FLAGS="--trace --profile"
+            echo 'Profiling enabled (CI_DEBUG_PROFILE=1)'
+          else
+            PROFILE_FLAGS=""
+            echo 'Profiling disabled; set CI_DEBUG_PROFILE=1 to enable'
           fi
           HEARTBEAT_LOG=build-heartbeat.log
           (
@@ -63,28 +73,35 @@ jobs:
               echo "\n[heartbeat] $(date -u +%H:%M:%S)";
               (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) 2>/dev/null | sed 's/^/MEM: /';
               (uptime 2>/dev/null || cat /proc/loadavg 2>/dev/null || echo 'load: n/a') | sed 's/^/LOAD: /';
-              echo '[processes:rss]';
-              ps -eo pid,ppid,cmd,%cpu,rss --sort=-rss | head -n 15;
-              echo '[processes:cpu]';
-              ps -eo pid,ppid,cmd,%cpu,rss --sort=-%cpu | head -n 10;
+              echo '[processes:rss]'; ps -eo pid,ppid,cmd,%cpu,rss --sort=-rss | head -n 15;
+              echo '[processes:cpu]'; ps -eo pid,ppid,cmd,%cpu,rss --sort=-%cpu | head -n 10;
               sleep 20 || break;
             done
           ) > "$HEARTBEAT_LOG" 2>&1 &
           HEARTBEAT_PID=$!
-          finish_heartbeat() { if kill -0 $HEARTBEAT_PID 2>/dev/null; then kill $HEARTBEAT_PID || true; echo "[heartbeat] stop $(date -u --rfc-3339=seconds)" >> "$HEARTBEAT_LOG"; fi; };
-          echo 'Starting Jekyll build (trace + profile, background mode)'
-          run_build() {
-            /usr/bin/time -v bundle exec jekyll build --config "$CONFIG_FILES" --trace --profile --quiet
-          }
+            finish_heartbeat() { if kill -0 $HEARTBEAT_PID 2>/dev/null; then kill $HEARTBEAT_PID || true; echo "[heartbeat] stop $(date -u --rfc-3339=seconds)" >> "$HEARTBEAT_LOG"; fi; };
+          echo "Starting Jekyll build: configs=$CONFIG_FILES flags='$PROFILE_FLAGS'"
+          run_build() { /usr/bin/time -v bundle exec jekyll build --config "$CONFIG_FILES" $PROFILE_FLAGS --quiet; }
           run_build > >(tee build-profile.log) 2>&1 &
           JEKYLL_PID=$!
-          trap 'echo "[shell-trap] Received SIGTERM at $(date -u +%H:%M:%S)"; CANCELLED=1; ps -eo pid,ppid,cmd,rss --sort=-rss | head -n 25; [ -n "$JEKYLL_PID" ] && kill -TERM $JEKYLL_PID 2>/dev/null || true; finish_heartbeat; echo "[cancel] graceful early exit"; exit 0' TERM INT
+          trap_handler() {
+            echo "[shell-trap] Received SIGTERM at $(date -u +%H:%M:%S)";
+            CANCELLED=1
+            ps -eo pid,ppid,cmd,rss --sort=-rss | head -n 25 || true
+            [ -n "$JEKYLL_PID" ] && kill -TERM "$JEKYLL_PID" 2>/dev/null || true
+            finish_heartbeat
+            echo "[cancel] graceful early exit"
+            trap - TERM INT
+            exit 0
+          }
+          trap trap_handler TERM INT
           wait $JEKYLL_PID
           BUILD_EXIT=$?
+          set -e
           echo '--- Memory snapshot (after build) ---'
           (free -m 2>/dev/null || (grep -E 'Mem(Total|Free|Available):' /proc/meminfo || true)) | sed 's/^/MEM: /'
           if [ "$CANCELLED" = "1" ]; then
-            echo '[cancel] Build was cancelled by external SIGTERM; exiting 0 to avoid failure.'
+            echo '[cancel] Build was cancelled by external SIGTERM; exiting 0.'
             finish_heartbeat
             exit 0
           fi
