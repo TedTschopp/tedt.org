@@ -74,12 +74,12 @@ image-title: "Model vs. Chatbot vs. Workflow vs. Agent"
 image_width:
 image_height:
 
-mastodon-post-id:
+mastodon-post-id: 115186286978010327
 
 math: true
-
-mastodon-post-id: 115186286978010327
 mermaid: true
+no_toc: true
+
 ---
 
 ## Model vs. Chatbot vs. Workflow vs. Agent

@@ -246,6 +246,33 @@ Composite actions (DRY helpers) under `.github/actions/`:
 
 Deprecated legacy workflow files were retained only as inert stubs (no triggers) to avoid accidental reactivation; they can be fully removed in a future cleanup once all badges / references are confirmed updated.
 
+## Front Matter Feature Flags
+
+Certain presentation and asset behaviors can be controlled per-post via boolean front matter flags. These are opt-in / opt-out controls intended to keep pages minimal and purposeful.
+
+| Flag | Type | Default | Effect | When to Use |
+|------|------|---------|--------|-------------|
+| `no_toc` | boolean | `false` | Suppresses the right-hand Table of Contents card (`#table-of-contents-card`). | Very short posts (≤1 heading) or visual essays where TOC adds noise. |
+| `mermaid` | boolean | `false` | Loads Mermaid diagram support and renders fenced code blocks beginning with ` ```mermaid ` or elements carrying a `data-mermaid` attribute. | Posts containing sequence, flow, graph, or state diagrams. |
+
+Example:
+
+```yaml
+---
+title: "Lightweight Post"
+no_toc: true      # Hide the TOC card
+mermaid: true     # Enable mermaid diagram rendering
+---
+```
+
+Notes:
+
+- `mermaid` must be explicitly set to render diagrams; otherwise the loader include is skipped (performance win on diagram-free pages).
+- `no_toc` accepts YAML boolean (`true`) or string `'true'`; layout logic treats either as enabled.
+- Future flags (candidate): `charts`, `diagram-libs`, `math` (currently always included) may adopt the same pattern.
+
+See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural implications of these flags.
+
 ## Homepage Hero System & Caching
 
 The homepage hero (image/video) is selected randomly on each load using a data-driven include.
