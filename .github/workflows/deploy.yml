@@ -38,7 +38,12 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: |
-          bundle exec jekyll build --trace
+          echo "[debug] Starting Jekyll build at $(date -u +%H:%M:%S)"
+          time bundle exec jekyll build --trace --profile || {
+            echo "[debug] Jekyll build exited with code $? at $(date -u +%H:%M:%S)";
+            exit 1;
+          }
+          echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
