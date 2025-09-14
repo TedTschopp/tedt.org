@@ -1,37 +1,168 @@
-<!-- Mermaid.js (loaded only when page.mermaid flag set or code fences detected via manual flag) -->
-<script defer src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+<!-- Mermaid.js loader: lazy-loads only if diagrams are present (code fences or data-mermaid attributes) -->
 <script>
-  document.addEventListener('DOMContentLoaded', function(){
-    if (!window.mermaid) return;
-    // Initialize mermaid (theme adapts to current data-bs-theme)
-    mermaid.initialize({ startOnLoad: true, securityLevel: 'strict', theme: (document.documentElement.getAttribute('data-bs-theme')==='dark'?'dark':'default') });
+  (function(){
+    const MERMAID_CDN = 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js';
 
-    // Post-process fenced code blocks (```mermaid) that markdown rendered as <pre><code class="language-mermaid">...
-    // Convert them into <div class="mermaid"> so mermaid can render them.
+    // Selectors that indicate a diagram exists on the page
     const fenceSelector = 'pre > code.language-mermaid, pre > code.mermaid';
-    const codeBlocks = document.querySelectorAll(fenceSelector);
-    if (codeBlocks.length) {
-      codeBlocks.forEach(code => {
-        // Skip if already inside a div.mermaid (defensive)
-        if (code.parentElement && code.parentElement.classList.contains('mermaid')) return;
-        const pre = code.parentElement; // <pre>
+    const attrSelector = '[data-mermaid]';
+
+    function findRawBlocks(){
+      return Array.from(document.querySelectorAll(fenceSelector));
+    }
+
+    function findAttrBlocks(){
+      return Array.from(document.querySelectorAll(attrSelector));
+    }
+
+    function haveAnyDiagrams(){
+      return findRawBlocks().length > 0 || findAttrBlocks().length > 0;
+    }
+
+    function ensureScript(cb){
+      if (window.mermaid) { cb(); return; }
+      // Prevent duplicate loads
+      if (document.querySelector('script[data-mermaid-loader]')) {
+        // Poll until available
+        const poll = setInterval(()=>{ if (window.mermaid){ clearInterval(poll); cb(); } }, 50);
+        return;
+      }
+      const s = document.createElement('script');
+      s.src = MERMAID_CDN;
+      s.defer = true;
+      s.setAttribute('data-mermaid-loader','');
+      s.onload = cb;
+      s.onerror = ()=>console.warn('Mermaid script failed to load:', MERMAID_CDN);
+      document.head.appendChild(s);
+    }
+
+    function currentTheme(){
+      return (document.documentElement.getAttribute('data-bs-theme')==='dark' ? 'dark' : 'default');
+    }
+
+    function initMermaid(){
+      if (!window.mermaid) return;
+      // Re-initialize with the current theme; mermaid v10 merges settings
+      mermaid.initialize({ startOnLoad: false, securityLevel: 'strict', theme: currentTheme() });
+    }
+
+    function convertRawCodeBlocks(){
+      const raw = findRawBlocks();
+      raw.forEach(code => {
+        if (code.parentElement && code.parentElement.classList.contains('mermaid')) return; // already processed
+        const pre = code.parentElement;
         if (!pre) return;
-        const containerParent = pre.parentElement || pre; // allow replacement even if structure unusual
         const div = document.createElement('div');
         div.className = 'mermaid';
-        // Use textContent (not innerHTML) to avoid HTML entity decoding issues
         div.textContent = code.textContent.trim();
-        containerParent.replaceChild(div, pre);
+        pre.replaceWith(div);
       });
-      // Render any newly created mermaid blocks
+    }
+
+    function convertAttrBlocks(){
+      const attrBlocks = findAttrBlocks();
+      attrBlocks.forEach(el => {
+        // If element already a mermaid container skip
+        if (el.classList.contains('mermaid')) return;
+        const code = el.getAttribute('data-mermaid');
+        if (!code) return;
+        // Allow using the element itself as container
+        el.classList.add('mermaid');
+        if (!el.textContent.trim()) {
+          el.textContent = code.trim();
+        }
+      });
+    }
+
+    function renderAll(){
+      if (!window.mermaid) return;
       try {
-        // mermaid.run is available in v10+; fall back gracefully if not
+        // Add loading class to unrendered diagrams
+        document.querySelectorAll('.mermaid').forEach(el => {
+          if (!el.classList.contains('rendered')) {
+            el.classList.add('mermaid-loading');
+          }
+        });
         if (typeof mermaid.run === 'function') {
-          mermaid.run({ querySelector: '.mermaid' });
+          mermaid.run({ querySelector: '.mermaid' }).then(()=>{
+            // Remove loading class once SVG injected
+            document.querySelectorAll('.mermaid').forEach(el => {
+              el.classList.remove('mermaid-loading');
+              el.classList.add('rendered');
+            });
+          }).catch(e=>{
+            console.warn('Mermaid run() failed:', e);
+          });
         }
       } catch(e) {
         console.warn('Mermaid rendering error:', e);
       }
     }
-  });
+
+    function fullRender(){
+      convertRawCodeBlocks();
+      convertAttrBlocks();
+      initMermaid();
+      renderAll();
+    }
+
+    // Re-render when theme changes (observe attribute mutations on <html>)
+    function installThemeObserver(){
+      const htmlEl = document.documentElement;
+      let debounceTimer = null;
+      const DEBOUNCE_MS = 120; // adjust if needed
+      const obs = new MutationObserver(muts => {
+        const themeChanged = muts.some(m => m.type==='attributes' && m.attributeName==='data-bs-theme');
+        if (!themeChanged) return;
+        if (debounceTimer) clearTimeout(debounceTimer);
+        debounceTimer = setTimeout(()=>{
+          initMermaid();
+          // Clear existing rendered state so re-run occurs cleanly
+          document.querySelectorAll('.mermaid.rendered').forEach(el => {
+            // Keep original source if we can recover it from a data attribute
+            // (If needed we could store original text before first render.)
+            el.classList.remove('rendered');
+          });
+          renderAll();
+        }, DEBOUNCE_MS);
+      });
+      obs.observe(htmlEl, { attributes:true, attributeFilter:['data-bs-theme'] });
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      if (!haveAnyDiagrams()) return; // nothing to do
+      ensureScript(function(){
+        fullRender();
+        installThemeObserver();
+      });
+    });
+  })();
 </script>
+<style>
+  /* Lightweight skeleton / placeholder for mermaid while rendering */
+  .mermaid.mermaid-loading {
+    position: relative;
+    min-height: 3.5rem; /* ensures some space before SVG inject */
+    color: transparent; /* hide raw text while loading */
+  }
+  .mermaid.mermaid-loading::after {
+    content: 'Rendering diagram…';
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.85rem;
+    letter-spacing: .05em;
+    color: var(--bs-secondary-color, #666);
+    background: linear-gradient(90deg, rgba(255,255,255,0.04), rgba(255,255,255,0.08), rgba(255,255,255,0.04));
+    background-size: 200% 100%;
+    animation: mermaidShimmer 1.2s linear infinite;
+    border: 1px solid rgba(128,128,128,0.15);
+    border-radius: 0.35rem;
+  }
+  @keyframes mermaidShimmer {
+    0% { background-position: 0% 0; }
+    100% { background-position: -200% 0; }
+  }
+</style>
