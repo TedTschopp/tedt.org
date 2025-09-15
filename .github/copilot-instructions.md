@@ -1,139 +1,187 @@
-# Coding Best Practices
+## TedT.org – AI Agent Working Instructions
 
-## General Coding Principles
+Purpose: Enable AI coding agents to make fast, correct, minimal, high‑signal changes to this Jekyll site.
 
-### Code Iteration & Simplicity
+### 1. Core Architecture
+Static site powered by Jekyll 4.3.x. Primary levers:
+* `_layouts/` define page skeletons (e.g. `default.html`, `post.html`).
+* `_includes/` is heavily modularized into subfolders (analytics, assets, layout, utility, homepage, etc.). Always place new partials in the correct subdirectory using kebab‑case.
+* `_data/` supplies structured metadata (notably `category_registry.yml` and `homepage_heroes.yml`). These drive dynamic category labeling, color palettes, carousel population, and hero media selection.
+* `_config.yml` contains extended author/social metadata and optional caches like `recent_by_category` used to accelerate homepage/category rendering.
+* Custom scripts in `_code/` (Python + one Ruby) perform Mastodon backfill, feed generation, YAML normalization, category audits. Do not duplicate logic—extend or parameterize an existing script first.
 
-* **Prefer simple, maintainable solutions** in all code decisions.
-* Always look for **existing code** to iterate on before creating something new.
-* Avoid making **major changes to established patterns or architecture**, unless explicitly instructed.
-* When fixing a bug, **exhaust options in the current implementation** before introducing new patterns or technologies. If new patterns are used, **remove the old implementation** to prevent duplication.
-* Write code that works consistently across **development, test, and production environments**.
-* Be intentional—only make changes that are **requested or clearly relevant**.
-* Focus on **areas of code related to the task**. Do not touch unrelated functionality.
+### 2. Homepage Dynamics
+The homepage (`_layouts/default.html` + includes) assembles:
+* Blog & Folklore cards: filtered to exclude specific categories/layouts (Bestiary, Draft, RPG variants, Quotes, Home, Prompts, micropub posts). When modifying these filters, document rationale in an inline Liquid comment.
+* Category carousel: `_includes/homepage/carousel.html` builds a sorted list from `category_registry.yml`, using cached recent posts then (if needed) a broader scan across `site.posts` to surface up to 3 real posts per category. Never introduce synthetic placeholder content.
+* Hero system: `_includes/homepage/hero-random.html` + `_data/homepage_heroes.yml` + `sw.js` for caching. When adding a hero, only modify the YAML and place matching `.webp`/`.mp4` assets; JavaScript auto‑selects.
 
-### Cleanliness & Maintainability
+### 3. Category & Theming Model
+`_data/category_registry.yml` entries supply: slug → label, aliases (`raw_names`), emoji, palette (gradient + title color overrides), image, visibility flags, and optional `category_home_page`. Always use existing keys; don’t invent new ones without adding documentation at the top of that file. If adjusting visual tokens (e.g., `palette.titleColorLight`), ensure both light and dark variants have fallbacks.
 
-* Keep the codebase **organized and easy to navigate**.
-* As a general rule, **refactor files that grow beyond 200–300 lines**, unless there’s a clear and valid reason not to.
-* Avoid **code duplication**—check for similar logic before writing new functions.
-* Avoid committing **one-off scripts** to the main codebase. If necessary, place them in a `scripts/one-off/` folder or document them externally.
-* Use **clear and intentional comments** to explain *why* something is done—not just what it does. Prefer self-explanatory code when possible.
-* Use **consistent indentation, spacing, and formatting** throughout the codebase.
-* Write **thorough tests** for all major functionality.
-* Periodically audit the codebase for **unused files**, **dead code**, and **outdated content**.
+### 4. Content & Front Matter Patterns
+Permalink style: `/:title/`. Posts use rich front matter (images, credits, bullets, feature flags like `no_toc`, `mermaid`). Maintain consistent naming (`image-alt`, `image-credits-artist`, etc.). If you add a new flag, update README front‑matter section and (if globally referenced) add guarded logic (`{% if page.flag %}`) near the relevant include. Avoid bloating layouts with per‑page special cases—prefer small includes.
 
-## Semantic HTML
+### 5. Performance & Build Workflow
+Local build: `bundle exec jekyll serve` (or the provided VS Code task). CI uses GitHub Actions (`site-ci.yml`) running: build, feed integrity, Mastodon audits, HTML Proofer, security scans. Keep Gemfile minimal; only add gems when absolutely required. Ruby conditional logic in `Gemfile` enforces secure transitive versions on newer Rubies—preserve it.
 
-* Use semantic HTML elements like `<article>`, `<nav>`, `<section>`, `<figure>`, `<header>`, `<footer>`, and `<main>`.
-* Avoid generic `<div>` and `<span>` tags when more meaningful options exist.
-* Proper structure improves **accessibility, SEO, and maintainability**.
+### 6. Link & HTML Integrity
+HTML Proofer runs locally via the build task (see failing external links in task output). When editing templates, prefer `post.url | absolute_url` for links and ensure internal anchors exist before referencing them. Don’t suppress proofer failures with blanket ignores; fix root causes or add narrowly scoped exceptions with comments.
 
-## File & Folder Structure
+### 7. Script Conventions (`_code/`)
+Scripts are single‑purpose utilities: auditing categories, syncing Mastodon IDs, deduping statuses, generating RSS. Before writing a new script:
+* Search for an existing one with similar output.
+* If extending, keep original CLI arguments/backwards compatibility unless intentionally versioning.
+* Add usage comments at top (shebang + docstring). Do not hardcode absolute local paths; assume repo root execution.
 
-* Follow a **consistent and logical folder structure**.
-* Keep **HTML, CSS, and JavaScript** in separate files.
-* Place all documentation in a `docs/` folder.
-* Use **descriptive and meaningful names** for files and folders.
-* Naming conventions:
+### 8. Styling & Assets
+SCSS lives under `_sass/`; aggregated includes are managed via `_includes/assets/all-css-includes.html`. New global styles belong in SCSS partials, not inline `<style>` blocks (except tiny, data‑driven helper styles like carousel control tweaks). Reuse utility classes when expanding components.
 
-  * `kebab-case` for files and folders
-  * `camelCase` for JavaScript variables and functions
-  * `PascalCase` for CSS class names
+### 9. Safe Change Principles
+* Touch only related files; avoid cascading refactors.
+* Preserve existing Liquid control flow; when altering loops add a Liquid comment explaining the constraint (e.g., reason for exclusion filters).
+* Never introduce placeholders or dummy content into rendered HTML.
+* If a change might widen query scope (e.g., scanning all `site.posts`), confirm it short‑circuits after meeting display limits.
 
-## Architecture & Design Patterns
+### 10. Accessibility & Semantics
+Images require meaningful `alt` (fallback to title if absent). Carousels must retain ARIA labels already present. Do not remove visually hidden instructional text. When adding interactive controls, mirror existing accessibility patterns.
 
-* Use **modular design**—break down complex components into smaller, reusable parts.
-* Follow the **Single Responsibility Principle**—each module or component should have one clear purpose.
-* Document all architectural decisions and design patterns used in the project using the ADR format in the `/docs/adr/` directory.
-* If you need to do any planning please place it in the `/docs/planning/` directory.
+### 11. Adding Categories or Heroes
+Category: add an entry to `category_registry.yml` (slug: { title, raw_names, palette, image, description, ... }). Ensure unique slug, define both subtitle & description if shown on carousel.
+Hero: add to YAML + assets; no template change needed.
 
-## Jekyll Best Practices
+### 12. Common Pitfalls to Avoid
+* Breaking front matter with unescaped quotes → site renders raw (no layout).
+* Adding broad `slice` limits that hide older but valid content.
+* Introducing inline JS where a reusable include exists.
+* Forgetting to use `| strip_html` before truncation (causes layout glitches).
 
-* Use:
+### 13. Commit & PR Guidance
+Atomic commits, clear imperative messages ("Fix blog loop exclusion for Folklore overlap"). If modifying build or category registry, mention potential impact on homepage density.
 
-  * `_includes/` for reusable components
-  * `_layouts/` for page templates
-  * `_data/` for shared structured data
-  
-* Maintain site-wide settings in `_config.yml`.
-* Use **Liquid templating** for dynamic content.
-* Avoid duplication using **Jekyll includes and layouts**.
-* Leverage Jekyll plugins for **pagination**, **SEO**, and **sitemaps**.
-* Define metadata and configuration using **front matter** at the top of each file.
+### 14. When Unsure
+Prefer inspecting similar existing include. If introducing a new pattern, isolate it in `_includes/utility/` or a new logically named subfolder and document at top of file.
 
-## Testing & Environment
+Stay minimal, data‑driven, and reversible.
 
-* Use TDD (Test-Driven Development) of Red-Green-Refactor where possible.
-* Write tests for all new features and bug fixes.
-* Do a full regression test before merging significant changes.
-* Put all test code in the `/tests/` folder. 
-* **Always restart the server** after making code changes so changes can be tested.
-* **Kill any lingering or conflicting test servers** before starting a new one.
-* Validate all **Python, Ruby, HTML, CSS, and JS** locally before pushing.
-* Never overwrite the `.env` file without first asking and confirming.
-* Create **mock data** and place it in a `/data/mock/` folder.
-* Use **mock data** for testing purposes only.
-* Never add **stubbed or fake data** to code that runs in dev or prod.
-* Write **unit tests**, **integration tests**, and (where needed) **end-to-end tests**.
-* Use a **testing pyramid** approach: favor more unit tests than other types.
-* Use browser tools and Lighthouse for **accessibility and performance testing**.
-* Test across multiple browsers (Chrome, Firefox at a minimum).
+### 15. Test & TDD Workflow (Red / Green / Refactor Adapted)
+The site has limited traditional unit tests; we approximate TDD using content fixtures + build gates:
+1. Red: Introduce (or modify) a minimal post / include to express the desired behavior (e.g., a post requiring `mermaid`, a category edge case) and run `bundle exec jekyll build` (or the provided task) expecting failure (missing asset, layout issue, HTML Proofer error, etc.).
+2. Green: Implement the minimal template/include/plugin change to satisfy the scenario. Re‑run build + (optionally) `SKIP_EXTERNAL=1` HTML Proofer to validate internal structure.
+3. Refactor: Simplify Liquid, extract repeated blocks into `_includes/utility/`, ensure comments explain non-obvious loops, and remove any exploratory debug output.
+4. Regression Safety: For complex behaviors (carousel counts, feature flags), keep a dedicated “test” post in `_work-in-progress/` or under a clearly named draft path so future modifications can be validated quickly.
+5. Memory / Performance Checks: When altering wide loops or adding new scans over `site.posts`, optionally run with `MEM_PROBE=1` to ensure no unexpected memory spikes (see ADR 0008).
 
-## Dependency Management
+Principles:
+* One behavioral delta per patch.
+* Prefer data-driven adjustments over new conditionals in layouts.
+* Keep refactors separate from feature commits unless trivial.
 
-* Before adding a dependency, check:
+### 16. Architecture Decision Digest (Accepted ADRs)
+Concise reference of currently Accepted ADRs (see `/docs/adr/` for full text):
+* 0001 Prompt Details UX & Accessibility: Mobile-first, clearer form states, dynamic related prompt sections, accessibility improvements.
+* 0002 Dynamic Prompt Series Architecture: Front matter–driven series navigation; prompts can belong to multiple ordered workflows.
+* 0003 Random Carousel Start Position: Client-side JS randomizes active category slide for equitable exposure.
+* 0006 Registry-Driven Category Carousel & Accessibility: Two-pass deterministic build from `category_registry.yml`, improved ARIA semantics, duplicate control reduction.
+* 0007 Category Theming Unification: Single registry + `.category-theme` wrapper with JS-driven custom properties to eliminate palette duplication.
+* 0008 Memory Probe & Recent Content Caching: Env-gated memory logging + precomputed per-category recent cache to cut redundant loops.
+* 0009 Temporary ffi Downgrade Pin: Stability pin to `ffi 1.16.3` until Ruby baseline uplift allows ecosystem upgrades.
+* 0010 `no_toc` Flag: Opt-out of TOC card for concise posts.
+* 0011 `mermaid` Flag: Opt-in conditional diagram support + collapsible source panels amendment.
 
-  * Is this already solved in the project?
-  * Is the library **well-maintained and lightweight**?
-  * Will it create **conflicts** or add unnecessary complexity?
-  
-* Document why any new package is introduced and how it's used.
-* Use tools like `npm audit` or `dependabot` to track vulnerabilities.
-* Avoid pinning dependency versions unless required for stability.
+Proposed (for awareness, not yet binding): 0004 Prompt Library Integration, 0005 Multi-Scale Hex Overlay Visualization. Treat these as directional; avoid implementation drift until status is Accepted.
 
-## Security Best Practices
+### 17. `recent_by_category` Cache Maintenance
+Purpose: Speed homepage & carousel rendering by avoiding repeated global scans when selecting recent posts per category.
+Location: Stored in `_config.yml` (or generated plugin structure) as a hash keyed by category slug.
+Refresh Situations:
+* Adding many posts that should immediately appear on the homepage but are absent due to stale cache.
+* Changing category slug / alias logic in `category_registry.yml`.
+* Modifying selection heuristics (e.g., filtering out new layouts or categories).
+Refresh Method:
+1. Remove or comment the existing `recent_by_category` block in `_config.yml` (or run a dedicated script if present).
+2. Run a full clean build: `rm -rf _site && bundle exec jekyll build` (or CI task). A plugin or script (see ADR 0008) repopulates cached data if implemented; otherwise consider adding a helper script under `_code/` to regenerate deterministically.
+3. Commit regenerated cache only if deterministic and stable; otherwise leave empty to force runtime computation (trade-off: slower builds vs. clarity).
+Verification: Ensure homepage blog & carousel display expected new posts (no placeholders, at least up to 3 genuine items per category when available).
 
-* Never commit **secrets, API keys, or credentials** to the repository.
-* Use `.env` files and environment-specific configurations to isolate sensitive data.
-* Validate and sanitize all **user-generated content** and input.
-* Avoid **inline JavaScript** in HTML or template files.
-* Prefer built-in security features and native HTML elements before relying on ARIA.
+### 18. CI Failure Triage Order
+When CI fails, debug in the following priority sequence:
+1. YAML / Front Matter Parse Errors: Look for unescaped quotes, inconsistent indentation, or leading tabs causing raw page output.
+2. Build / Jekyll Exceptions: Template errors, missing includes, bad Liquid filters.
+3. Plugin Failures: Memory probe, caching, or custom index plugins raising exceptions.
+4. Feed Generation / Mastodon Sync Scripts: Breakage in `_code/` utilities affecting JSON/RSS correctness.
+5. HTML Proofer Internal Links: Broken anchors, 404s on local pages—fix root HTML or link path.
+6. External Link Errors / Timeouts: Retry locally; if persistent, consider narrowly scoped ignore with comment stating reason & review date.
+7. Performance Warnings (Optional): Investigate memory probe anomalies or excessive build time deltas.
 
-##  Collaboration & Communication
+Always address earlier layers before masking later issues; avoids piling ignores over fundamental template problems.
 
-### Git and Version Control
+### 19. YAML & Front Matter Pitfalls
+Common Failure Modes:
+* Unescaped quotes in titles/descriptions: `title: "The "Best" Idea"` (bad) vs `title: 'The "Best" Idea'` (good) or multiline folded style.
+* Trailing spaces after `---` fences in rare cases leading to parse quirks (avoid).
+* Mixing tabs and spaces—use spaces consistently.
+* Boolean strings vs. booleans: Accept both for flags (`no_toc: 'true'` or `no_toc: true`) but prefer actual booleans for clarity.
+* Arrays without brackets when containing colon or commas inside values—quote those values.
+Recommended Patterns:
+```yaml
+title: >-
+	Guardrails and Gigawatts: Building the AI–Energy
+	Flywheel at the Grid Edge
+description: "Short single-line; escape embedded quotes with \" like this."
+tags:
+	- AI
+	- Energy
+image-alt: "Human hands reaching toward innovation"
+no_toc: true
+mermaid: false
+```
+Use folded (`>-`) for multi-line but single-paragraph strings; use literal (`|`) when line breaks must be preserved (e.g., code snippets in examples).
 
-* Use **atomic commits**—each commit should represent a single logical change.
-* Write **clear commit messages** that describe the purpose and context of the change.
-* Use **feature branches** and submit **pull requests (PRs)** for all non-trivial changes.
-* Avoid pushing directly to `main` or `production` branches.
+### 20. Front Matter Glossary (Key Fields)
+Reference (not exhaustive—extend if adding new flags):
+* `layout` (string): Which layout to apply (`post`, `page`, `prompt-details`, etc.).
+* `title` (string): Display title used in listings, `<title>` tag fallback.
+* `description` (string): Short summary used in meta tags; do not exceed ~160 chars.
+* `excerpt` (string/auto): Auto-generated if absent; prefer explicit concise summary when SEO sensitive.
+* `date` (ISO8601): Post date; if omitted Jekyll infers from filename.
+* `categories` (array): Category labels matched against registry slug/title/aliases.
+* `tags` (array): Free-form tagging, used for future filtering (Prompt Library ADR 0004).
+* `image` (path): Hero/preview image path relative to site root.
+* `image-alt` (string): Accessible alt text; required if `image` present.
+* `image-credits-artist` / `image-credits-artist-URL` (string): Attribution metadata.
+* `image-credits-source` / `image-credits-source-URL` (string): Original source attribution if distinct from artist.
+* `bullets` (array): Short list used in some article intros / summaries.
+* `no_toc` (boolean): Suppress TOC card (ADR 0010).
+* `mermaid` (boolean): Enable Mermaid diagrams & source panels (ADR 0011).
+* `series` / `series_step` (string/int): Multi-step prompt/workflow navigation (ADR 0002).
+* `canonical` (url): Canonical URL override for SEO consolidation.
+* `redirect_from` (array/string): Legacy paths to redirect (ensure plugin / meta logic supports it before use).
+* `permalink` (string): Override generated permalink; keep consistent with pattern if used.
+* `draft` (boolean): If using drafts feature (ensure not committed live unless intended).
+Validation: When adding new keys, document in README + here; guard usage with Liquid conditionals.
 
-### Code Review Etiquette
+### 21. Performance & Memory Instrumentation Quick Reference
+Enable memory probe to observe build RSS deltas:
+`MEM_PROBE=1 bundle exec jekyll build`
+Optional periodic GC experimentation:
+`FORCE_PERIODIC_GC=1 bundle exec jekyll build`
+Interpretation Tips:
+* Look for sudden large delta near new template logic—may indicate wide scan inside nested loops.
+* Prefer precomputing indexes (following ADR 0008) over repeated `where` + `sort` pipelines.
 
-* Approach reviews as **collaborative and respectful conversations**.
-* Give **specific, actionable feedback**; avoid vague comments.
-* When receiving a review, **respond to all comments** and seek consensus if there’s disagreement.
-* Prioritize the **long-term clarity and health** of the codebase over short-term fixes.
+### 22. Contribution Review Checklist (Pre-PR)
+Use this quick pass before opening a PR:
+1. Front matter valid (build passes locally; no raw page output).
+2. No placeholder/dummy content introduced.
+3. Loops have inline Liquid comments if exclusion logic non-trivial.
+4. Accessibility: meaningful alt text, ARIA attributes preserved.
+5. Performance: Avoided unnecessary global scans; considered cache usage.
+6. ADR Alignment: Changes don't contradict Accepted ADRs (or new ADR drafted if direction shifts).
+7. README / Instructions updated for new flags or processes.
+8. Build & HTML Proofer (internal links) green locally (`SKIP_EXTERNAL=1`).
+9. Commit messages: imperative, scoped, no unrelated refactors bundled.
+10. Security / Dependencies: No new gems unless justified; pinned versions respected.
 
-## Observability & Monitoring
+If any item fails, iterate before submitting to keep review cycles short and focused.
 
-* Add **console logs or structured debugging messages** during complex operations (but clean them up before shipping).
-* Use **Lighthouse**, browser dev tools, or third-party tools to evaluate **load time, performance, and SEO**.
-* Consider integrating tools for **automated accessibility and performance checks** into CI/CD.
-
-## Deployment & Automation
-
-* Use GitHub Actions or similar tools to **automate deployments** and avoid manual errors.
-* Create a **deployment checklist**, including:
-
-  * Verifying `.env` and environment variables
-  * Clearing caches (where needed)
-  * Triggering content rebuilds
-* Automate tests and validations as part of the **CI/CD pipeline**.
-
-## Long-Term Maintainability
-
-* Use **Architecture Decision Records (ADRs)** in a `/decisions` folder to document key technical choices.
-* Maintain a clear and friendly `CONTRIBUTING.md` to help new team members get up to speed.
-* Keep an eye on **technical debt** and proactively schedule time to address it.
