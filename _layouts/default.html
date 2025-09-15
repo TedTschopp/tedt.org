@@ -105,7 +105,8 @@
                     Use precomputed recent_by_category cache instead of iterating site.posts.
                     Fallback: slice newest posts if cache missing.
                   {%- endcomment -%}
-                  {% assign _blog_candidates = site.config.recent_by_category.blog | default: site.posts | safe_sort: 'date' | reverse | slice: 0, 80 %}
+                  {% assign _blog_candidates = site.config.recent_by_category.blog | default: site.posts | safe_sort: 'date' | reverse %}
+                  {% assign __shown_urls = '' | split: '' %}
                   {% for post in _blog_candidates %}
                     {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
                       <!-- Do Nothing -->
@@ -192,6 +193,97 @@
                       </div>
                     {% endif %}
                   {% endfor %}
+                  {%- comment -%} If fewer than 3 posts were gathered from cached list, perform a broader scan across all posts to try to fill remaining slots. {%- endcomment -%}
+                  {% if count < 3 %}
+                    {% assign _all_candidates = site.posts | safe_sort: 'date' | reverse %}
+                    {% for post in _all_candidates %}
+                      {% if count >= 3 %}{% break %}{% endif %}
+                      {%- assign __skip = false -%}
+                      {%- if __shown_urls contains post.url -%}{%- assign __skip = true -%}{%- endif -%}
+                      {% if __skip %}{% continue %}{% endif %}
+                      {% if post.categories contains "Bestiary" or post.category == "Bestiary" %}
+                        {% assign __skip = true %}
+                      {% elsif post.categories contains "Draft" or post.category == "Draft" %}
+                        {% assign __skip = true %}
+                      {% elsif post.categories contains "Role Playing Games" or post.category == "Role Playing Games" %}
+                        {% assign __skip = true %}
+                      {% elsif post.categories contains "Folklore" or post.category == "Folklore" %}
+                        {% assign __skip = true %}
+                      {% elsif post.categories contains "Quotes" or post.category == "Quote" or post.category == "quote" %}
+                        {% assign __skip = true %}
+                      {% elsif post.categories contains "Home" or post.category == "Home" %}
+                        {% assign __skip = true %}
+                      {% elsif post.layout contains "micropubpost" %}
+                        {% assign __skip = true %}
+                      {% elsif post.layout contains "prompt" or post.category == "Prompts" %}
+                        {% assign __skip = true %}
+                      {% endif %}
+                      {% if __skip %}{% continue %}{% endif %}
+                      {% assign count = count | plus: 1 %}
+                      {% assign __shown_urls = __shown_urls | push: post.url %}
+                      <div class="container">
+                        <div class="row align-items-stretch">
+                          {% if post.image %}
+                            {% assign image_alt = post.image-alt | default: post.image-description | default: post.title %}
+                            {% assign image_credits_title = post.image-credits-title | default: post.image-title | default: "Unknown" %}
+                            {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
+                            {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
+                            {% assign image_URL = post.image %}
+                            <div class="card rounded-0 px-0">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <img src="{{ image_URL }}" alt="{{ image_alt }} by {{ image_credits }}" class="img-fluid rounded-start" style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title three-line-clamp">
+                                      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                    </h5>
+                                    <p class="card-text text-truncate-3">
+                                      {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
+                                      {%- if __summary == nil or __summary == '' -%}
+                                        {%- assign __summary = post.content | strip_html | truncate: 180 -%}
+                                      {%- endif -%}
+                                      {{ __summary | strip_html }}
+                                    </p>
+                                    <p class="card-text">
+                                      Posted on <small class="text-muted text-body-secondary">
+                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+                                      </small>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          {% else %}
+                            <div class="card rounded-0 px-0">
+                              <div class="row g-0">
+                                <div class="col-md-12">
+                                  <div class="card-body">
+                                    <h5 class="card-title three-line-clamp">
+                                      <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                    </h5>
+                                    <p class="card-text text-truncate-3">
+                                      {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
+                                      {%- if __summary == nil or __summary == '' -%}
+                                        {%- assign __summary = post.content | strip_html | truncate: 180 -%}
+                                      {%- endif -%}
+                                      {{ __summary | strip_html }}
+                                    </p>
+                                    <p class="card-text">
+                                      Posted on <small class="text-muted text-body-secondary">
+                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
+                                      </small>
+                                    </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          {% endif %}
+                        </div>
+                      </div>
+                    {% endfor %}
+                  {% endif %}
                 </div>
               </div>
             </div>

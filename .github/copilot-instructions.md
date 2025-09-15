@@ -64,17 +64,17 @@
 
 ## Testing & Environment
 
-* Put all test code in the `/tests/` folder.
+* Use TDD (Test-Driven Development) of Red-Green-Refactor where possible.
+* Write tests for all new features and bug fixes.
+* Do a full regression test before merging significant changes.
+* Put all test code in the `/tests/` folder. 
 * **Always restart the server** after making code changes so changes can be tested.
 * **Kill any lingering or conflicting test servers** before starting a new one.
 * Validate all **Python, Ruby, HTML, CSS, and JS** locally before pushing.
 * Never overwrite the `.env` file without first asking and confirming.
 * Create **mock data** and place it in a `/data/mock/` folder.
-* Use **mock data** for testing purposes only.g
+* Use **mock data** for testing purposes only.
 * Never add **stubbed or fake data** to code that runs in dev or prod.
-
-### Extended Testing Strategy
-
 * Write **unit tests**, **integration tests**, and (where needed) **end-to-end tests**.
 * Use a **testing pyramid** approach: favor more unit tests than other types.
 * Use browser tools and Lighthouse for **accessibility and performance testing**.

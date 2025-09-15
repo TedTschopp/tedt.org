@@ -96,6 +96,7 @@
                   {%- if _recent_cat_posts == nil -%}
                     {%- assign _recent_cat_posts = site.posts | safe_sort: 'date' | reverse | slice: 0, 60 -%}
                   {%- endif -%}
+                  {%- assign __shown_urls = '' | split: '' -%}
                   {%- for post in _recent_cat_posts -%}
                     {%- if displayed >= 3 -%}{%- break -%}{%- endif -%}
                     {%- assign post_match = false -%}
@@ -114,6 +115,7 @@
                     {%- endif -%}
                     {%- unless post_match -%}{%- continue -%}{%- endunless -%}
                     {%- assign displayed = displayed | plus: 1 -%}
+                    {%- assign __shown_urls = __shown_urls | push: post.url -%}
                     <div class="container">
                       <div class="row align-items-stretch">
                         {%- if post.image and post.image != '' -%}
@@ -149,6 +151,65 @@
                       </div>
                     </div>
                   {%- endfor -%}
+                  {%- if displayed < 3 -%}
+                    {%- comment -%} Broader scan across all posts to find up to 3 matches if cache slice insufficient. {%- endcomment -%}
+                    {%- assign _all_posts_scan = site.posts | safe_sort: 'date' | reverse -%}
+                    {%- for post in _all_posts_scan -%}
+                      {%- if displayed >= 3 -%}{%- break -%}{%- endif -%}
+                      {%- if __shown_urls contains post.url -%}{%- continue -%}{%- endif -%}
+                      {%- assign post_match = false -%}
+                      {%- if post.categories -%}
+                        {%- if post.categories contains entry.title -%}{%- assign post_match = true -%}{%- endif -%}
+                        {%- if post_match == false and post.categories contains slug -%}{%- assign post_match = true -%}{%- endif -%}
+                        {%- if post_match == false and entry.raw_names -%}
+                          {%- if entry.raw_names.first -%}
+                            {%- for rn in entry.raw_names -%}
+                              {%- if post.categories contains rn -%}{%- assign post_match = true -%}{%- break -%}{%- endif -%}
+                            {%- endfor -%}
+                          {%- else -%}
+                            {%- if post.categories contains entry.raw_names -%}{%- assign post_match = true -%}{%- endif -%}
+                          {%- endif -%}
+                        {%- endif -%}
+                      {%- endif -%}
+                      {%- unless post_match -%}{%- continue -%}{%- endunless -%}
+                      {%- assign displayed = displayed | plus: 1 -%}
+                      {%- assign __shown_urls = __shown_urls | push: post.url -%}
+                      <div class="container">
+                        <div class="row align-items-stretch">
+                          {%- if post.image and post.image != '' -%}
+                            {%- assign image_alt = post.image-alt | default: post.image-description | default: post.title -%}
+                            {%- assign image_credits = post.image-credits-artist | default: post.image-artist | default: 'Unknown' -%}
+                            <div class="card rounded-0 px-0">
+                              <div class="row g-0">
+                                <div class="col-md-4">
+                                  <img src="{{ post.image }}" alt="{{ image_alt }} by {{ image_credits }}" class="img-fluid rounded-start" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+                                </div>
+                                <div class="col-md-8">
+                                  <div class="card-body">
+                                    <h5 class="card-title three-line-clamp"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h5>
+                                    <p class="card-text text-truncate-3">{{ post.teaser | default: post.description | default: post.excerpt | strip_html }}</p>
+                                    <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%B %d, %Y' }}</time></small></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          {%- else -%}
+                            <div class="card rounded-0 px-0">
+                              <div class="row g-0">
+                                <div class="col-md-12">
+                                  <div class="card-body">
+                                    <h5 class="card-title three-line-clamp"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></h5>
+                                    <p class="card-text text-truncate-3">{{ post.teaser | default: post.description | default: post.excerpt | strip_html }}</p>
+                                    <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: '%B %d, %Y' }}</time></small></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          {%- endif -%}
+                        </div>
+                      </div>
+                    {%- endfor -%}
+                  {%- endif -%}
                 </div>
               </div>
             </div>
