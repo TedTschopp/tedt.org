@@ -7,7 +7,7 @@ subtitle: "The AI–Energy Flywheel at the Grid Edge"
 quote: "Over time, the cost of providing AI services converges to the cost of electricity."
 excerpt: "Six signals from Sam Altman’s interview with Vinod Khosla frame how utilities can pair AI agents with clean, reliable power. The piece outlines guardrails, workforce roles, and moats to build an AI–energy flywheel."
 source: "Original Content with citations"
-source-url: "[https://www.youtube.com/watch?v=6NwK-uq16U8](https://www.youtube.com/watch?v=6NwK-uq16U8)"
+source-url: "https://www.youtube.com/watch?v=6NwK-uq16U8"
 call-to-action: "Discuss on Mastodon"
 
 date: 2025-09-14 19:28:20 -0700
@@ -23,7 +23,7 @@ bullets:
   - "Compute and energy costs converge, making a region’s price, carbon profile, and reliability decisive competitive levers for AI industry growth."
   - "Aim clusters at a few hard problems—wildfire ignition/consequence, feeder orchestration, undergrounding/hardening, and faster planning—rather than scattered pilots."
   - "Durable moats: unique operational data, real‑time grid integration, speed of adaptation, and community trust rooted in transparent practice."
-  - "Guardrails and HITL: scoped agents, full logging, kill‑switches, NERC/CIP rigor; new roles—"Agent Wrangler," Safety & Compliance, AI Reliability, Data Steward, Model Risk."
+  - "Guardrails and HITL: scoped agents, full logging, kill‑switches, NERC/CIP rigor; new roles—\"Agent Wrangler,\" Safety & Compliance, AI Reliability, Data Steward, Model Risk."
 
 description: "A utility‑focused synthesis of six signals from Sam Altman’s conversation with Vinod Khosla. It argues for agent‑driven workflows, the convergence of compute and electricity costs, and the moats that endure—unique data, real‑time integration, and culture. The piece emphasizes guardrails, governance, and new workforce roles to build an AI–energy flywheel at the grid edge."
 seo-description: "Signals from Sam Altman’s talk with Vinod Khosla guide utilities on AI at the grid edge—agents, compute‑energy convergence, durable moats, guardrails, and new workforce roles."
