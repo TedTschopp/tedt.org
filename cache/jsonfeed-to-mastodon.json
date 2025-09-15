@@ -2107,7 +2107,10 @@
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115208362896305967"
+    ],
+    "lastTootTimestamp": 1757940107787
   },
   "https://tedt.org/Prompting-Guide-for-ChatGPT-5/": {
     "id": "/Prompting-Guide-for-ChatGPT-5/",
@@ -2378,5 +2381,41 @@
       "url": "https://tedt.org/"
     },
     "toots": []
+  },
+  "https://tedt.org/Guardrails-and-Gigawatts/": {
+    "id": "/Guardrails-and-Gigawatts/",
+    "title": "Guardrails & Gigawatts",
+    "summary": "Six signals from Sam Altman’s interview with Vinod Khosla frame how utilities can pair AI agents with clean, reliable power. The piece outlines guardrails, workforce roles, and moats to build an AI–energy flywheel.",
+    "content_text": "Six signals from Sam Altman’s interview with Vinod Khosla frame how utilities can pair AI agents with clean, reliable power. The piece outlines guardrails, workforce roles, and moats to build an AI–energy flywheel. https://tedt.org/Guardrails-and-Gigawatts/",
+    "url": "https://tedt.org/Guardrails-and-Gigawatts/",
+    "image": "https://tedt.org/img/2025-09/Guardrails-and-Gigawatts.webp",
+    "tags": [
+      "ai agents",
+      "virtual coworkers",
+      "grid edge",
+      "utilities",
+      "compute",
+      "electricity",
+      "moats",
+      "guardrails",
+      "human-in-the-loop",
+      "nerc cip",
+      "psps",
+      "wildfire mitigation",
+      "der orchestration",
+      "data products",
+      "observability"
+    ],
+    "date_published": "2025-09-14T19:28:20-07:00",
+    "date_modified": "2025-09-14T19:28:20-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115206911225059037"
+    ],
+    "lastTootTimestamp": 1757917957014
   }
 }
