@@ -2207,7 +2207,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115209728784091578"
+    ],
+    "lastTootTimestamp": 1757960949554
   },
   "https://tedt.org/The-Mentor-In-The-Machine/": {
     "id": "/The-Mentor-In-The-Machine/",
