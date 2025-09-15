@@ -88,7 +88,7 @@ mastodon-post-id:
 
 ## Altman’s Core Signals
 
-This week Sam Altman had an extensive interview with Vinod Khosla, the Co-Founder of Sun and the Founder of the Venture Capital Firm, Khosla Ventures.  
+This week [Sam Altman had an extensive interview with Vinod Khosla, the Co-Founder of Sun and the Founder of the Venture Capital Firm, Khosla Ventures](https://www.youtube.com/watch?v=6NwK-uq16U8).  
 
 The first signal is pragmatic and present: **virtual co‑workers are here**. We used some of the last wave of technology to deploy close to 300 virtual employees.  In the last year we have given 234 of our IT engineers peered programmers, who can help them develop software fast, and more effectively.  The teams that have these tools are still coming up to speed, but the trajectory is there.  This means that the near‑term enterprise step‑change comes from agents and AI software engineers that execute tasks end‑to‑end. The teams that learn to reorganize their processes around agents, to feed them clean data, to review their outputs with discipline, will **outperform** their peers. The lesson for us: define the jobs that bog us down—code scaffolding, document prep, triage and routing, inspection prep—and let Grid Agents draft the first pass. We keep the last mile human, but we stop starting from zero.
 
