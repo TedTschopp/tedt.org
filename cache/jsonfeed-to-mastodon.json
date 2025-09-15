@@ -2107,7 +2107,10 @@
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115208362896305967"
+    ],
+    "lastTootTimestamp": 1757940107787
   },
   "https://tedt.org/Prompting-Guide-for-ChatGPT-5/": {
     "id": "/Prompting-Guide-for-ChatGPT-5/",
