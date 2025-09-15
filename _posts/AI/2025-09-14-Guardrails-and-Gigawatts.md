@@ -2,7 +2,7 @@
 
 layout: post
 
-title: "Guardrails & Gigawatts: "
+title: "Guardrails & Gigawatts"
 subtitle: "The AI–Energy Flywheel at the Grid Edge"
 quote: "Over time, the cost of providing AI services converges to the cost of electricity."
 excerpt: "Six signals from Sam Altman’s interview with Vinod Khosla frame how utilities can pair AI agents with clean, reliable power. The piece outlines guardrails, workforce roles, and moats to build an AI–energy flywheel."
