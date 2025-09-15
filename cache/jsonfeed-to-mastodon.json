@@ -2142,7 +2142,10 @@
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115209084796098565"
+    ],
+    "lastTootTimestamp": 1757951123068
   },
   "https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/": {
     "id": "/From-Industrial-Age-Utility-to-AI-Centric-Utility/",
