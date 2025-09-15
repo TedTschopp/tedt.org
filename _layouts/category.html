@@ -195,12 +195,7 @@
                                                                   <p class="card-text 3">
                                                                     {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
                                                                   </p>
-                                                                  <p class="card-text">
-                                                                    Posted on <small class="text-muted text-body-secondary">
-                                                                      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d,
-                                                                        %Y" }}</time>
-                                                                    </small>
-                                                                  </p>
+                                                                  <!-- <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p> -->
                                                                 </div>
                                                               </div>
                                                             </div>
@@ -216,12 +211,7 @@
                                                                   <p class="card-text truncate-3">
                                                                     {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
                                                                   </p>
-                                                                  <p class="card-text">
-                                                                    Posted on <small class="text-muted text-body-secondary">
-                                                                      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d,
-                                                                        %Y" }}</time>
-                                                                    </small>
-                                                                  </p>
+                                                                  <!-- <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p> -->
                                                                 </div>
                                                               </div>
                                                             </div>

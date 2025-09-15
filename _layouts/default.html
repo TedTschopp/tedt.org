@@ -148,17 +148,14 @@
                                     <h5 class="card-title three-line-clamp">
                                       <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                     </h5>
-                                    <p class="card-text text-truncate-3">
+                                    <p class="card-text text-truncate-5">
                                       {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
                                       {%- if __summary == nil or __summary == '' -%}
                                         {%- assign __summary = post.content | strip_html | truncate: 180 -%}
                                       {%- endif -%}
                                       {{ __summary | strip_html }}
                                     </p>
-                                    <p class="card-text">
-                                      Posted on <small class="text-muted text-body-secondary">
-                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                      </small>
+                                    <!-- <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p> -->
                                     </p>
                                   </div>
                                 </div>
@@ -172,18 +169,14 @@
                                     <h5 class="card-title three-line-clamp">
                                       <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                     </h5>
-                                    <p class="card-text text-truncate-3">
+                                    <p class="card-text text-truncate-5">
                                       {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
                                       {%- if __summary == nil or __summary == '' -%}
                                         {%- assign __summary = post.content | strip_html | truncate: 180 -%}
                                       {%- endif -%}
                                       {{ __summary | strip_html }}
                                     </p>
-                                    <p class="card-text">
-                                      Posted on <small class="text-muted text-body-secondary">
-                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                      </small>
-                                    </p>
+                                    <!-- <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p> -->
                                   </div>
                                 </div>
                               </div>
@@ -239,18 +232,14 @@
                                     <h5 class="card-title three-line-clamp">
                                       <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                     </h5>
-                                    <p class="card-text text-truncate-3">
+                                    <p class="card-text text-truncate-5">
                                       {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
                                       {%- if __summary == nil or __summary == '' -%}
                                         {%- assign __summary = post.content | strip_html | truncate: 180 -%}
                                       {%- endif -%}
                                       {{ __summary | strip_html }}
                                     </p>
-                                    <p class="card-text">
-                                      Posted on <small class="text-muted text-body-secondary">
-                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                      </small>
-                                    </p>
+                                    <!-- <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p> -->
                                   </div>
                                 </div>
                               </div>
@@ -263,18 +252,14 @@
                                     <h5 class="card-title three-line-clamp">
                                       <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                     </h5>
-                                    <p class="card-text text-truncate-3">
+                                    <p class="card-text text-truncate-5">
                                       {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
                                       {%- if __summary == nil or __summary == '' -%}
                                         {%- assign __summary = post.content | strip_html | truncate: 180 -%}
                                       {%- endif -%}
                                       {{ __summary | strip_html }}
                                     </p>
-                                    <p class="card-text">
-                                      Posted on <small class="text-muted text-body-secondary">
-                                        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                      </small>
-                                    </p>
+                                    <!-- <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p> -->
                                   </div>
                                 </div>
                               </div>
@@ -340,18 +325,14 @@
                                   <h5 class="card-title three-line-clamp">
                                     <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                   </h5>
-                                  <p class="card-text text-truncate-3">
+                                  <p class="card-text text-truncate-5">
                                     {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
                                     {%- if __summary == nil or __summary == '' -%}
                                       {%- assign __summary = post.content | strip_html | truncate: 180 -%}
                                     {%- endif -%}
                                     {{ __summary | strip_html }}
                                   </p>
-                                  <p class="card-text">
-                                    Posted on <small class="text-muted text-body-secondary">
-                                      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                    </small>
-                                  </p>
+                                    <!-- <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p> -->
                                 </div>
                               </div>
                             </div>
@@ -364,18 +345,14 @@
                                   <h5 class="card-title three-line-clamp">
                                     <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                                   </h5>
-                                  <p class="card-text text-truncate-3">
+                                  <p class="card-text text-truncate-5">
                                     {%- assign __summary = post.teaser | default: post.description | default: post.excerpt -%}
                                     {%- if __summary == nil or __summary == '' -%}
                                       {%- assign __summary = post.content | strip_html | truncate: 180 -%}
                                     {%- endif -%}
                                     {{ __summary | strip_html }}
                                   </p>
-                                  <p class="card-text">
-                                    Posted on <small class="text-muted text-body-secondary">
-                                      <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time>
-                                    </small>
-                                  </p>
+                                    <!-- <p class="card-text">Posted on <small class="text-muted text-body-secondary"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></small></p> -->
                                 </div>
                               </div>
                             </div>
