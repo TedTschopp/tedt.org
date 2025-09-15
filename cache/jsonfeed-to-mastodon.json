@@ -2178,7 +2178,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115209443447343493"
+    ],
+    "lastTootTimestamp": 1757956595640
   },
   "https://tedt.org/prompts/business-case-and-requirements-assistant/": {
     "id": "/prompts/business-case-and-requirements-assistant/",
