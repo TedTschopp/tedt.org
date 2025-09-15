@@ -50,63 +50,63 @@
                <aside class="d-none d-lg-block col-lg-1" id="papermargin_left" aria-hidden="true"></aside>
                <section class="col-12 col-lg-10" id="paper_printarea">
                     {% if page.title != "" %}
-                                                  {% assign __primary_category = page.categories | first %}
-                                                  {% if __primary_category %}
-                                                       {% capture __slug %}{% include utility/map-category-to-registry.html key=__primary_category %}{% endcapture %}
-                                                       {% assign __slug = __slug | strip %}
-                                                       {% if __slug == '' %}{% assign __slug = __primary_category | slugify %}{% endif %}
-                                                       {% assign __entry = site.data.category_registry[__slug] %}
-                                                  {% endif %}
-                                                  {% if __entry %}
-                                                       {% include utility/category-palette-apply.html entry=__entry title=page.title title_tag='h1' title_class='MCC post-title' wrapper_class='gammaworld-hero' %}
-                                                  {% else %}
-                                                       <h1 class="MCC">{{ page.title }}</h1>
-                                                  {% endif %}
+                         {% assign __primary_category = page.categories | first %}
+                         {% if __primary_category %}
+                              {% capture __slug %}{% include utility/map-category-to-registry.html key=__primary_category %}{% endcapture %}
+                              {% assign __slug = __slug | strip %}
+                              {% if __slug == '' %}{% assign __slug = __primary_category | slugify %}{% endif %}
+                              {% assign __entry = site.data.category_registry[__slug] %}
+                         {% endif %}
+                         {% if __entry %}
+                              {% include utility/category-palette-apply.html entry=__entry title=page.title title_tag='h1' title_class='MCC post-title' wrapper_class='gammaworld-hero' %}
+                         {% else %}
+                              <h1 class="MCC">{{ page.title }}</h1>
+                         {% endif %}
                     {% endif %}
 
-                                   {%- comment -%}
-                                   Image path logic:
-                                   Keep creature_image as a site-relative path (leading slash) so we can safely
-                                   prepend site.url only where absolute URLs are required. Avoid double-prefix bugs.
-                                   {%- endcomment -%}
-                                   {%- comment -%}
-                                   Resolve creature image with existence check.
-                                   Strategy:
-                                   1. If front matter supplies page.image AND it exists in site.static_files, use it.
-                                   2. Else build candidate names from page.creature_name_index with normalization attempts:
-                                      original, downcased with spaces->-, apostrophes removed, slugified.
-                                   3. First candidate whose PNG exists under /RPG/MCC-GW/images/Monster-Manual/ is selected.
-                                   4. If none exist, creature_image becomes empty (no <img> tag rendered) to avoid 404s.
-                                   NOTE: site.static_files paths are site-root relative and begin with a single leading slash.
-                                   {%- endcomment -%}
-                                   {%- assign creature_image = '' -%}
-                                   {%- assign supplied_image = page.image | strip -%}
-                                   {%- if supplied_image != '' -%}
-                                        {%- assign supplied_match = site.static_files | where: 'path', supplied_image | first -%}
-                                        {%- if supplied_match -%}
-                                             {%- assign creature_image = supplied_image -%}
-                                        {%- endif -%}
-                                   {%- endif -%}
-                                   {%- if creature_image == '' -%}
-                                        {%- assign base_raw = page.creature_name_index | strip -%}
-                                        {%- assign cand_original = base_raw -%}
-                                        {%- assign cand_downcase = base_raw | downcase | replace: ' ', '-' | replace: "'", '' | replace: '’', '' -%}
-                                        {%- assign cand_slug = base_raw | slugify -%}
-                                        {%- assign candidate_string = cand_original | append: '||' | append: cand_downcase | append: '||' | append: cand_slug -%}
-                                        {%- assign candidate_list = candidate_string | split: '||' | uniq -%}
-                                        {%- assign found_image = '' -%}
-                                        {%- for nm in candidate_list -%}
-                                             {%- assign attempt_path = '/RPG/MCC-GW/images/Monster-Manual/' | append: nm | append: '.png' -%}
-                                             {%- assign attempt_match = site.static_files | where: 'path', attempt_path | first -%}
-                                             {%- if attempt_match -%}
-                                                  {%- assign found_image = attempt_path -%}
-                                                  {%- break -%}
-                                             {%- endif -%}
-                                        {%- endfor -%}
-                                        {%- if found_image != '' -%}
-                                             {%- assign creature_image = found_image -%}
-                                        {%- endif -%}
-                                   {%- endif -%}
+                    {%- comment -%}
+                    Image path logic:
+                    Keep creature_image as a site-relative path (leading slash) so we can safely
+                    prepend site.url only where absolute URLs are required. Avoid double-prefix bugs.
+                    {%- endcomment -%}
+                    {%- comment -%}
+                    Resolve creature image with existence check.
+                    Strategy:
+                    1. If front matter supplies page.image AND it exists in site.static_files, use it.
+                    2. Else build candidate names from page.creature_name_index with normalization attempts:
+                         original, downcased with spaces->-, apostrophes removed, slugified.
+                    3. First candidate whose PNG exists under /RPG/MCC-GW/images/Monster-Manual/ is selected.
+                    4. If none exist, creature_image becomes empty (no <img> tag rendered) to avoid 404s.
+                    NOTE: site.static_files paths are site-root relative and begin with a single leading slash.
+                    {%- endcomment -%}
+                    {%- assign creature_image = '' -%}
+                    {%- assign supplied_image = page.image | strip -%}
+                    {%- if supplied_image != '' -%}
+                         {%- assign supplied_match = site.static_files | where: 'path', supplied_image | first -%}
+                         {%- if supplied_match -%}
+                              {%- assign creature_image = supplied_image -%}
+                         {%- endif -%}
+                    {%- endif -%}
+                    {%- if creature_image == '' -%}
+                         {%- assign base_raw = page.creature_name_index | strip -%}
+                         {%- assign cand_original = base_raw -%}
+                         {%- assign cand_downcase = base_raw | downcase | replace: ' ', '-' | replace: "'", '' | replace: '’', '' -%}
+                         {%- assign cand_slug = base_raw | slugify -%}
+                         {%- assign candidate_string = cand_original | append: '||' | append: cand_downcase | append: '||' | append: cand_slug -%}
+                         {%- assign candidate_list = candidate_string | split: '||' | uniq -%}
+                         {%- assign found_image = '' -%}
+                         {%- for nm in candidate_list -%}
+                              {%- assign attempt_path = '/RPG/MCC-GW/images/Monster-Manual/' | append: nm | append: '.png' -%}
+                              {%- assign attempt_match = site.static_files | where: 'path', attempt_path | first -%}
+                              {%- if attempt_match -%}
+                                   {%- assign found_image = attempt_path -%}
+                                   {%- break -%}
+                              {%- endif -%}
+                         {%- endfor -%}
+                         {%- if found_image != '' -%}
+                              {%- assign creature_image = found_image -%}
+                         {%- endif -%}
+                    {%- endif -%}
 
                     <!-- Creature Image and Overview -->
                     <!-- creature_image: {{ creature_image }} -->
@@ -279,7 +279,12 @@
                     {% if bestiary_posts and bestiary_posts != empty %}
                     <section aria-label="Additional Creatures">
                          <h2 class="MCC">Additional Creatures</h2>
-                         {% assign grouped_sources = bestiary_posts | group_by: "source" %}
+                         {%- comment -%}
+                         Group posts by their 'source' front matter, then alphabetize by the group name so
+                         the listing order is deterministic. Blank / nil source values (becoming an empty
+                         string) will naturally sort first; we leave that behavior to surface missing data.
+                         {%- endcomment -%}
+                         {% assign grouped_sources = bestiary_posts | group_by: "source" | sort: 'name' %}
                          {% for group in grouped_sources %}
                          <h3 class="text-dark">{{ group.name | default: 'Unknown Source' }}</h3>
                          {%- assign sorted_items = group.items | safe_sort: 'title' -%}
@@ -355,11 +360,32 @@
                }
                try {
                     /* global Jscii */
+                    // When ASCII rendering succeeds we hide the original image (visual layer only)
+                    // to avoid showing both at the same time. Accessibility notes:
+                    // 1. We transfer the descriptive alt text to the ASCII <pre> via aria-label.
+                    // 2. We keep the original <img> in the DOM but mark it aria-hidden so screen readers
+                    //    do not announce duplicate content.
+                    // 3. We only hide after we have non-empty ASCII output to avoid a blank state.
+                    let jsciiRendered = false;
                     new Jscii({
                          width: 150,
                          color: true,
                          el: imgEl,
-                         fn: function (str) { asciiEl.innerHTML = str; }
+                         fn: function (str) {
+                              // Use textContent to avoid any HTML interpretation.
+                              asciiEl.textContent = str;
+                              if (!jsciiRendered && str && str.trim().length > 0) {
+                                   jsciiRendered = true;
+                                   // Reveal ASCII for assistive tech
+                                   asciiEl.removeAttribute('aria-hidden');
+                                   asciiEl.setAttribute('role', 'img');
+                                   asciiEl.setAttribute('aria-label', imgEl.alt || 'ASCII rendering');
+                                   asciiEl.classList.add('jscii-active');
+                                   // Visually hide original image while keeping it in DOM.
+                                   imgEl.classList.add('d-none');
+                                   imgEl.setAttribute('aria-hidden', 'true');
+                              }
+                         }
                     });
                } catch (e) {
                     // Fail silently if Jscii not available
