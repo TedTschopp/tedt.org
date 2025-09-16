@@ -2293,7 +2293,10 @@
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115214024910609698"
+    ],
+    "lastTootTimestamp": 1758026503249
   },
   "https://tedt.org/Building-a-Lego-Cat/": {
     "id": "/Building-a-Lego-Cat/",
