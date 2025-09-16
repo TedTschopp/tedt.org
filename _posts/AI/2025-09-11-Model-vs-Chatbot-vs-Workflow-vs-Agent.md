@@ -93,38 +93,52 @@ no_toc: true
 ## Diagrams
 
 ```mermaid
+%%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
+
 graph TD
 
-    subgraph Core
-        M[Model]
+    subgraph "Core"
+        M["Model - (base engine that converts inputs to outputs)"]
     end
 
-    M --> C[Chatbot]
-    M --> W[Workflow]
-    M --> A[Agent]
+    M --> T["Tool or Skill - (callable function or API, e.g., via MCP)"]
+    M --> C["Chatbot - (conversation wrapper with memory and guardrails)"]
+    M --> W["Workflow - (recipe of steps that orchestrates AI and non-AI tasks)"]
+    M --> A["Agent - (goal-directed loop that observes, decides, acts, and uses tools)"]
 
-    C:::chat
-    W:::flow
-    A:::agent
+    C --> CP["Copilot - (chatbot inside one application with in-app context and actions)"]
+    A --> AS["Autonomous System - (persistent agent with monitoring, budgets, and overrides)"]
 
+    %% Styling
+    classDef core fill:#fefce8,stroke:#ca8a04,stroke-width:2px,color:#713f12;
+    classDef tool fill:#ecfdf5,stroke:#10b981,stroke-width:2px,color:#064e3b;
     classDef chat fill:#f6f9ff,stroke:#3b82f6,stroke-width:2px,color:#1e3a8a;
     classDef flow fill:#fff7ed,stroke:#f97316,stroke-width:2px,color:#7c2d12;
     classDef agent fill:#f0fdf4,stroke:#22c55e,stroke-width:2px,color:#14532d;
+    classDef copilot fill:#eef2ff,stroke:#6366f1,stroke-width:2px,color:#312e81;
+    classDef system fill:#fdf2f8,stroke:#db2777,stroke-width:2px,color:#831843;
 
-    %% Notes
     M:::core
+    T:::tool
+    C:::chat
+    CP:::copilot
+    W:::flow
+    A:::agent
+    AS:::system
 
-
-
-    %% Labels
-    C -->|"Text-only interface"| CNote[Outputs: text replies<br/>Adds history, memory, RAG, safety]
-    W -->|"Structured control"| WNote[Outputs: predefined steps<br/>Explicit control/data flow<br/>BPMN, DAGs]
-    A -->|"Autonomous loop"| ANote[Outputs: actions via tools<br/>Perceive → Decide → Act → Learn<br/>Goal-directed autonomy]
-
+    %% Notes / Labels
+    T -->|"Extends reach of model"| TNote["Outputs: function calls<br/>Adds APIs, calculators, databases"]
+    C -->|"Text-only interface"| CNote["Outputs: replies<br/>Adds history, memory, RAG, safety"]
+    CP -->|"Embedded interface"| CPNote["Outputs: in-app suggestions<br/>Tied to app data and permissions"]
+    W -->|"Structured control"| WNote["Outputs: predefined steps<br/>Explicit control/data flow<br/>Like BPMN or DAGs"]
+    A -->|"Autonomous loop"| ANote["Outputs: tool actions<br/>Perceive → Decide → Act → Learn<br/>Goal-directed autonomy"]
+    AS -->|"Persistent system"| ASNote["Outputs: continuous actions<br/>Handles multiple goals<br/>Monitoring and fail-safes"]
 ```
 
 
 ```mermaid
+%%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
+
 graph TD
     %% ===== Runtime Path =====
     UI["User Input - (text or embeddings)"] --> TOK["Tokenizer - (uses Vocabulary)"]
@@ -156,6 +170,8 @@ graph TD
 
 
 ```mermaid
+%%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
+
 graph LR
     A["Caller - (Agent, Workflow, or Chatbot)"] --> C["MCP Client"]
     C <-- contracts --> S["Tool Registry - (schemas, prompts)"]
@@ -169,6 +185,8 @@ graph LR
 ```
 
 ```mermaid
+%%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
+
 graph TD
     U["User Interface - (text or voice)"] --> ORCH["Chat Orchestrator"]
     ORCH -->|prompt| LM["AI Model"]
@@ -182,6 +200,8 @@ graph TD
 ```
 
 ```mermaid
+%%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
+
 graph TD
     subgraph "Host Application"
       UI["In-App UI - (panel or inline suggestions)"]
@@ -201,6 +221,8 @@ graph TD
 ```
 
 ```mermaid
+%%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
+
 graph TD
     TRG["Trigger - (event, schedule, webhook)"] --> ENG["Workflow Engine"]
     ENG --> N1["Task A - (non-AI step)"]
@@ -215,6 +237,8 @@ graph TD
 ```
 
 ```mermaid
+%%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
+
 graph LR
     G["Goal or Task"] --> PL["Planner"]
     SENS["Observations - (environment, documents, APIs)"] --> ST["Working Memory and State"]
@@ -230,6 +254,8 @@ graph LR
 ```
 
 ```mermaid
+%%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
+
 graph TD
     subgraph "Control Plane"
       SCH["Scheduler and Event Loop"]
@@ -259,6 +285,75 @@ graph TD
     MGR -. budgets and quotas .-> EXE
 ```
 
+```mermaid
+%%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
+
+graph TD
+
+  %% ===== LAYERED STACK =====
+  M["Model - (base engine that converts inputs to outputs)"]
+
+  T["Tool or Skill - (callable function or API, e.g., via MCP)"]
+
+  C["Chatbot - (conversation wrapper with memory and guardrails)"]
+
+  CP["Copilot - (chatbot inside one application with in-app context and actions)"]
+
+  W["Workflow - (recipe of steps that orchestrates AI and non-AI tasks)"]
+
+  A["Agent - (goal-directed loop that observes, decides, acts, and uses tools)"]
+
+  AS["Autonomous System - (persistent agent with monitoring, budgets, and overrides)"]
+
+  %% ===== SUPPORTING CAPABILITIES (SHARED) =====
+  R["Knowledge Retrieval - (RAG or search index)"]
+  MEM["Memory - (short-term and long-term context)"]
+  G["Guardrails - (policy, safety, permissions, audit)"]
+  MON["Monitoring - (health, metrics, SLAs)"]
+  RES["Resources - (compute, cost, time budgets)"]
+
+  %% ===== STACK RELATIONSHIPS =====
+  M --> C
+  C --> CP
+  C --> W
+  M --> W
+  M --> A
+  W --> A
+  A --> AS
+
+  %% Tools plug into Chatbot / Workflow / Agent
+  T --> C
+  T --> W
+  T --> A
+  T --> AS
+
+  %% Shared capabilities used by multiple layers
+  R --> C
+  R --> CP
+  R --> W
+  R --> A
+  R --> AS
+
+  MEM --> C
+  MEM --> CP
+  MEM --> A
+  MEM --> AS
+
+  G -.-> C
+  G -.-> CP
+  G -.-> W
+  G -.-> A
+  G -.-> AS
+
+  MON -.-> AS
+  RES -.-> AS
+
+  %% ===== VISUAL LAYERING HINTS (no semantic meaning) =====
+  M --- T
+  C --- CP
+  W --- A
+  A --- AS
+```
 
 
 
