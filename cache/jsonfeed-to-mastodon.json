@@ -2353,7 +2353,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115216623885567220"
+    ],
+    "lastTootTimestamp": 1758066160470
   },
   "https://tedt.org/prompts/midjourney-v7-prompt-template/": {
     "id": "/prompts/midjourney-v7-prompt-template/",
