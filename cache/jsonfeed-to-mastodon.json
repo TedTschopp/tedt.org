@@ -2236,7 +2236,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115211369770059746"
+    ],
+    "lastTootTimestamp": 1757985989020
   },
   "https://tedt.org/OpenAIs-GPT-OSS-Explained/": {
     "id": "/OpenAIs-GPT-OSS-Explained/",
