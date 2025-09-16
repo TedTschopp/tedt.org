@@ -286,6 +286,10 @@ graph TD
 ```
 
 ```mermaid
+---
+title: AI Application Stack
+---
+
 %%{ init: { "flowchart": { "defaultRenderer": "elk" } } }%%
 
 graph TD
