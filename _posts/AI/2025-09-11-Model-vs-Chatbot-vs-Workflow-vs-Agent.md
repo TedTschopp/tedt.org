@@ -90,7 +90,7 @@ no_toc: true
 | **Agent** = the **autonomous actor** (perceives, decides, acts, learns in a loop toward goals).    | **Agent in environment**:  Environment: $$\mathcal{E} = (S_a, A_a, O_a, T_a, Z_a, R_a)$$ Agent: $$\mathcal{A} = (M_a, \mu_a, \Theta_a, \pi_{\theta_a}, \Lambda_a, \iota_a, \mathcal{G}_a)$$  **Variables:**<br>$S_a$: environment states.<br>$A_a$: actions (tool invocations).<br>$O_a$: observations.<br>$T_a: S_a \times A_a \to \Delta(S_a)$: transition kernel.<br>$Z_a: S_a \times A_a \to \Delta(O_a)$: observation kernel.<br>$R_a: S_a \times A_a \times S_a \to \mathbb{R}$: reward/utility.<br>$M_a$: internal state/memory.<br>$\mu_a$: memory update.<br>$\Theta_a$: parameter space.<br>$\pi_{\theta_a}: G_a \times H_a \times M_a \to \Delta(A_a)$: policy.<br>$\Lambda_a$: learning/adaptation rule.<br>$\iota_a$: initialization function.<br>$\mathcal{G}_a = (\mathsf{Perm}, \mathsf{Cons}, \mathsf{Audit})$: governance (permissions, constraints, audit). | A **goal-directed autonomous system**: it perceives environment inputs, chooses and executes actions (via tools), maintains state, and adapts based on feedback. Unlike a chatbot, it has actuators beyond text and can operate under uncertainty with autonomy. |
 {: .well .table .table-striped}
 
-## Diagram
+## Diagrams
 
 ```mermaid
 graph TD
@@ -122,6 +122,148 @@ graph TD
     A -->|"Autonomous loop"| ANote[Outputs: actions via tools<br/>Perceive → Decide → Act → Learn<br/>Goal-directed autonomy]
 
 ```
+
+
+```mermaid
+graph TD
+    %% ===== Runtime Path =====
+    UI["User Input - (text or embeddings)"] --> TOK["Tokenizer - (uses Vocabulary)"]
+    VOC["Vocabulary"] --> UI
+    VOC --> TD
+    TOK --> CORE["AI Model - (think of a model like the engine in a car: it doesn't decide where to go, it just converts inputs into outputs)"]
+    W["Weights - (the learned stuff)"] -. read by .-> CORE
+    INF["Infrastructure to Train - (GPUs, memory, servers)"] 
+    INFR["Infrastructure to Run - (GPUs, memory, servers)"]
+    INFR -. host .-> CORE
+    INFR -. host .-> TOK
+    CORE --> DEC["Decoding - (how you go from math to text)"]
+    DEC --> OUT["Output Text - (generated words or tokens)"]
+
+    %% ===== Training Path =====
+    subgraph "Training Pipeline"
+      TD["Training Data - (what it learned from)"] --> TRAIN["Training - (optimizer updates weights)"]
+      TRAIN --> W
+      INF -. train .-> TRAIN
+    end
+
+    subgraph "Model Enviroment"
+        TOK
+         INFR
+         CORE
+         DEC
+    end
+```
+
+
+```mermaid
+graph LR
+    A["Caller - (Agent, Workflow, or Chatbot)"] --> C["MCP Client"]
+    C <-- contracts --> S["Tool Registry - (schemas, prompts)"]
+    C <-- transport --> TS["MCP Tool Server - (HTTP or WebSocket)"]
+    TS --> F1["Function or API 1"]
+    TS --> F2["Function or API 2"]
+    TS --> FN["Function or API N"]
+    P["Permissions and Policy - (rate limits, access)"] -. enforce .-> TS
+    L["Logging and Audit"] -. tap .-> TS
+    A <-- results or errors --> C
+```
+
+```mermaid
+graph TD
+    U["User Interface - (text or voice)"] --> ORCH["Chat Orchestrator"]
+    ORCH -->|prompt| LM["AI Model"]
+    H["Conversation History - (short-term memory)"] --> ORCH
+    M["Memory and Profiles - (long-term context)"] --> ORCH
+    R["Knowledge Retrieval - (RAG or search index)"] --> ORCH
+    G["Guardrails and Moderation"] -. pre & post .-> ORCH
+    ORCH -->|optional tool calls| TOOLS["Tools and Skills"]
+    LM --> ORCH --> U
+    L["Telemetry and Logs"] -. tap .-> ORCH
+```
+
+```mermaid
+graph TD
+    subgraph "Host Application"
+      UI["In-App UI - (panel or inline suggestions)"]
+      CXT["Context Providers - (cursor, document, selection, repo)"]
+      APPAPI["App APIs and Data"]
+      ID["Identity and Permissions"]
+    end
+
+    UI --> ORCH["Copilot Orchestrator"]
+    CXT --> ORCH
+    ID --> ORCH
+    ORCH -->|prompt plus context| LM["AI Model"]
+    ORCH -->|app-scoped actions| APPAPI
+    ORCH -->|tools| TOOLS["Tools and Skills"]
+    G["Policy and Guardrails"] -. pre or post .-> ORCH
+    LM --> ORCH --> UI
+```
+
+```mermaid
+graph TD
+    TRG["Trigger - (event, schedule, webhook)"] --> ENG["Workflow Engine"]
+    ENG --> N1["Task A - (non-AI step)"]
+    ENG --> N2["Task B - (AI step with prompt and model)"]
+    ENG --> N3["Task C - (human review or approval)"]
+    N2 --> TOOLS["Tools and External APIs"]
+    DS["Workflow Data and Variables"] <-- read or write --> ENG
+    BR["Branching and Conditions"] -. control .-> ENG
+    ERR["Retry and Recovery - (compensation, DLQ)"] -. failures .-> ENG
+    OBS["Observability - (logs, metrics, traces)"] -. tap .-> ENG
+    ENG --> OUT["Outputs - (artifacts, notifications, updates)"]
+```
+
+```mermaid
+graph LR
+    G["Goal or Task"] --> PL["Planner"]
+    SENS["Observations - (environment, documents, APIs)"] --> ST["Working Memory and State"]
+    ST --> PL
+    PL --> DEC["Decision Policy"]
+    DEC --> ACT["Action Executor"]
+    ACT --> TOOLS["Tools and External APIs"]
+    ACT --> ENV["Operational Environment"]
+    ENV --> SENS
+    EVAL["Evaluator and Feedback - (rewards, scores)"] --> ST
+    ACT --> EVAL
+    POL["Safety, Permissions, and Audit"] -. gate .-> ACT
+```
+
+```mermaid
+graph TD
+    subgraph "Control Plane"
+      SCH["Scheduler and Event Loop"]
+      MGR["Resource Manager - (time, compute, cost)"]
+      MON["Monitoring and SLAs - (health checks)"]
+      GOV["Governance - (policy, approvals, guardrails)"]
+    end
+
+    subgraph "Cognitive Loop"
+      LG["Long-Term Memory - (vector store or database)"]
+      WM["Working Memory and State"]
+      PLN["Planner and Decomposer"]
+      DEC["Decision Policy"]
+      EXE["Executor"]
+      CRT["Critic and Evaluator"]
+    end
+
+    TRG["Triggers - (business events, cron, webhooks)"] --> SCH
+    SCH --> PLN
+    ENV["Domain Environment and App APIs"] --> WM
+    LG <--> WM
+    PLN --> DEC --> EXE --> TOOLS["Tools and External APIs"]
+    EXE --> ENV
+    CRT --> WM
+    MON -. tap .-> EXE
+    GOV -. gate .-> EXE
+    MGR -. budgets and quotas .-> EXE
+```
+
+
+
+
+
+
 
 ## Variables by Concept
 
