@@ -2324,7 +2324,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115215226646873208"
+    ],
+    "lastTootTimestamp": 1758044840292
   },
   "https://tedt.org/Academic-Critique-Content/": {
     "id": "/Academic-Critique-Content/",
