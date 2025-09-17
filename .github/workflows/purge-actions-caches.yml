@@ -1,0 +1,102 @@
+name: Purge Actions Caches
+
+on:
+  workflow_dispatch:
+    inputs:
+      days:
+        description: Delete caches older than this many days
+        required: false
+        default: "7"
+      dry_run:
+        description: List what would be deleted without deleting
+        required: false
+        default: "true"
+  schedule:
+    # Every Sunday at 06:00 UTC
+    - cron: '0 6 * * 0'
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Purge caches older than threshold
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            // Read inputs (from workflow_dispatch) or use defaults when scheduled
+            const inputs = (context.payload && context.payload.inputs) || {};
+            const daysInput = inputs.days || '7';
+            const dryRunInput = inputs.dry_run || 'true';
+            const days = Number.parseInt(daysInput, 10) || 7;
+            const dryRun = String(dryRunInput).toLowerCase() === 'true';
+
+            const cutoffMs = Date.now() - days * 24 * 60 * 60 * 1000;
+            const cutoff = new Date(cutoffMs);
+            core.info(`Repo: ${owner}/${repo}`);
+            core.info(`Cutoff (older than): ${cutoff.toISOString()}`);
+            core.info(`Dry run: ${dryRun}`);
+
+            // Paginate through all caches
+            const pages = await github.paginate(
+              github.request,
+              'GET /repos/{owner}/{repo}/actions/caches',
+              { owner, repo, per_page: 100 }
+            );
+
+            const allCaches = Array.isArray(pages) ? pages : (pages.actions_caches || []);
+            core.info(`Total caches found: ${allCaches.length}`);
+
+            const toDelete = [];
+            for (const c of allCaches) {
+              // Prefer last_accessed_at; fall back to created_at
+              const stamp = c.last_accessed_at || c.created_at;
+              if (!stamp) continue;
+              const when = new Date(stamp);
+              if (when.getTime() < cutoffMs) {
+                toDelete.push(c);
+              }
+            }
+
+            core.info(`Caches older than ${days} day(s): ${toDelete.length}`);
+            for (const c of toDelete) {
+              core.info(`- id=${c.id} key=${c.key} ref=${c.ref} size=${c.size_in_bytes} last_accessed=${c.last_accessed_at} created=${c.created_at}`);
+            }
+
+            if (dryRun) {
+              core.notice('Dry run enabled. No caches were deleted.');
+              core.setOutput('deleted', 0);
+              return;
+            }
+
+            let deleted = 0;
+            let failed = 0;
+            for (const c of toDelete) {
+              try {
+                await github.request('DELETE /repos/{owner}/{repo}/actions/caches/{cache_id}', {
+                  owner, repo, cache_id: c.id
+                });
+                deleted++;
+                core.info(`Deleted cache id=${c.id} key=${c.key}`);
+              } catch (err) {
+                failed++;
+                core.warning(`Failed to delete id=${c.id} key=${c.key}: ${err.message}`);
+              }
+            }
+
+            core.notice(`Deleted ${deleted} cache(s). Failed: ${failed}.`);
+            await core.summary
+              .addHeading('Actions Cache Purge')
+              .addRaw(`Repository: ${owner}/${repo}\n`)
+              .addRaw(`Cutoff: ${cutoff.toISOString()}\n`)
+              .addRaw(`Total caches scanned: ${allCaches.length}\n`)
+              .addRaw(`Deleted: ${deleted}\n`)
+              .addRaw(`Failed: ${failed}\n`)
+              .write();
