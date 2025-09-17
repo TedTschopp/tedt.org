@@ -2376,7 +2376,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115217032396610587"
+    ],
+    "lastTootTimestamp": 1758072393824
   },
   "https://tedt.org/Rooted-In-Resilience/": {
     "id": "/Rooted-In-Resilience/",
