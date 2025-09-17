@@ -376,11 +376,11 @@
                          color: true,
                          el: imgEl,
                          fn: function (str) {
-                                    // Jscii returns HTML (e.g., <span style="color:#...">) when color:true.
-                                    // We intentionally assign via innerHTML so colorized ASCII renders.
-                                    // The library output is constrained to span/br tags for coloration; if
-                                    // future sanitization is needed, whitelist only span/br before assigning.
-                                    asciiEl.innerHTML = str;
+                              // Jscii returns HTML (e.g., <span style="color:#...">) when color:true.
+                              // We intentionally assign via innerHTML so colorized ASCII renders.
+                              // The library output is constrained to span/br tags for coloration; if
+                              // future sanitization is needed, whitelist only span/br before assigning.
+                              asciiEl.innerHTML = str;
                               if (!jsciiRendered && str && str.trim().length > 0) {
                                    jsciiRendered = true;
                                    // Reveal ASCII for assistive tech
