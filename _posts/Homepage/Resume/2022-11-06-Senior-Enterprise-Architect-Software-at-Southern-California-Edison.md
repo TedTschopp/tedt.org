@@ -6,10 +6,7 @@ title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/in
 subtitle: null
 subtitle-url: null
 quote: null
-excerpt: I am the Enterprise Technology Architect responsible for SCE's IT Product
-  engineering and development strategies. I build and maintain SCE's strategy, technology
-  roadmap, and platform management direction for over 100 AI models and 500 software
-  products, leveraging multiple architectural models.
+excerpt: "I am the Enterprise Architect for AI & Software.  I provide strategic architecture leadership for SCE’s AI and software portfolios, shaping strategy, roadmaps, and frameworks for 500+ enterprise products. Align innovation with business outcomes, resilience, and regulatory expectations."
 source: null
 source-url: null
 call-to-action: null
@@ -22,28 +19,13 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- Developed a comprehensive AI strategy that guided a cross-functional team in successfully
-  integrating machine learning algorithms to advance business objectives.
-- Formulated and executed an enterprise-level AR/VR strategic plan, focusing on the
-  design and deployment of immersive experiences to enhance employee training and
-  customer engagement.
-- Crafted a desktop automation strategy that streamlined repetitive tasks across multiple
-  departments, aiming for increased productivity and reduced manual errors.
-- Initiated the integration of AIOps into the company's IT operations through a strategic
-  approach, leveraging machine learning and analytics to automate and optimize routine
-  operational tasks.
-- Spearheaded the strategic redesign and relaunch of a customer-facing website that
-  saw the decommissioning of over 1,000 servers and 50 applications, and executives
-  a seamless transition to the cloud, all while integrating best practices in user
-  experience and analytics that led to the increase of engagement and conversions.
-description: I am the Enterprise Technology Architect responsible for SCE's IT Product
-  engineering and development strategies. I build and maintain SCE's strategy, technology
-  roadmap, and platform management direction for over 500 products, leveraging multiple
-  architectural models.
-seo-description: I am the Enterprise Technology Architect responsible for SCE's IT
-  Product engineering and development strategies. I build and maintain SCE's strategy,
-  technology roadmap, and platform management direction for over 500 products, leveraging
-  multiple architectural models.
+- "AI Strategic Leadership: Built and executed an enterprise AI strategy, enabling cross-functional adoption and measurable business outcomes."
+- "AI Governance & Standards: Partnered with Legal, Information Governance, the AI CoE, and industry groups to establish AI governance frameworks and coding standards, embedding compliance, trust, and accountability across initiatives."
+- "Enterprise Automation: Designed a desktop automation framework that deployed 300+ virtual employees, reducing manual workloads, slashing error rates, and unlocking enterprise-wide productivity and engagement gains."
+- "AI-Driven IT Ops: Pioneered the shift from reactive IT operations to LLM-enabled AIOps. Automated telemetry analysis, incident correlation, and response, accelerating resolution times, reducing overhead, and setting a new standard of service resilience."
+- "Business-Led Development: Architect and process owner for SCE’s first sanctioned business-partner development program since 1997, enabling 100+ developers to build and manage over 1,000 applications. This program democratized software creation, expanded innovation capacity, and established guardrails that balanced agility with enterprise compliance."
+description: "I am the Enterprise Architect for AI & Software.  I provide strategic architecture leadership for SCE’s AI and software portfolios, shaping strategy, roadmaps, and frameworks for 500+ enterprise products. Align innovation with business outcomes, resilience, and regulatory expectations."
+seo-description: "I am the Enterprise Architect for AI & Software.  I provide strategic architecture leadership for SCE’s AI and software portfolios, shaping strategy, roadmaps, and frameworks for 500+ enterprise products. Align innovation with business outcomes, resilience, and regulatory expectations."
 categories: Home
 tags: Resume
 keywords: null
@@ -66,10 +48,10 @@ order: 2
 image_width: 1500
 image_height: 1000
 ---
-I am the Enterprise Technology Architect responsible for SCE's IT Product engineering and development strategies. I build and maintain SCE's strategy, technology roadmap, and platform management direction for over 500 products, leveraging multiple architectural models.
+I am the Enterprise Architect for AI & Software.  I provide strategic architecture leadership for SCE’s AI and software portfolios, shaping strategy, roadmaps, and frameworks for 500+ enterprise products. Align innovation with business outcomes, resilience, and regulatory expectations.
 
-- Developed a comprehensive AI strategy that guided a cross-functional team in successfully integrating machine learning algorithms to advance business objectives.
-- Formulated and executed an enterprise-level AR/VR strategic plan, focusing on the design and deployment of immersive experiences to enhance employee training and customer engagement.
-- Crafted a desktop automation strategy that streamlined repetitive tasks across multiple departments, aiming for increased productivity and reduced manual errors.
-- Initiated the integration of AIOps into the company's IT operations through a strategic approach, leveraging machine learning and analytics to automate and optimize routine operational tasks.
-- Spearheaded the strategic redesign and relaunch of a customer-facing website that saw the decommissioning of over 1,000 servers and 50 applications, and executives a seamless transition to the cloud, all while integrating best practices in user experience and analytics that led to the increase of engagement and conversions.
+- AI Strategic Leadership: Built and executed an enterprise AI strategy, enabling cross-functional adoption and measurable business outcomes.
+- AI Governance & Standards: Partnered with Legal, Information Governance, the AI CoE, and industry groups to establish AI governance frameworks and coding standards, embedding compliance, trust, and accountability across initiatives.
+- Enterprise Automation: Designed a desktop automation framework that deployed 300+ virtual employees, reducing manual workloads, slashing error rates, and unlocking enterprise-wide productivity and engagement gains.
+- AI-Driven IT Ops: Pioneered the shift from reactive IT operations to LLM-enabled AIOps. Automated telemetry analysis, incident correlation, and response, accelerating resolution times, reducing overhead, and setting a new standard of service resilience.
+- Business-Led Development: Architect and process owner for SCE’s first sanctioned business-partner development program since 1997, enabling 100+ developers to build and manage over 1,000 applications. This program democratized software creation, expanded innovation capacity, and established guardrails that balanced agility with enterprise compliance.
