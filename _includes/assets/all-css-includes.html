@@ -85,8 +85,10 @@
             line-clamp: 5;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-height: 7.5em; /* Adjust this value based on your line height */
-            line-height: 1.5em; /* Adjust this value based on your line height */
+            /* Fixed height: always exactly 5 lines to keep card heights consistent */
+            line-height: 1.5em; /* line height basis */
+            height: 7.5em;      /* 1.5em * 5 */
+            min-height: 7.5em;  /* enforce minimum to avoid shrinking if shorter */
         }
         .text-truncate-4 {
             display: -webkit-box;
@@ -95,8 +97,10 @@
             line-clamp: 4;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-height: 6em; /* Adjust this value based on your line height */
-            line-height: 1.5em; /* Adjust this value based on your line height */
+            /* Fixed height: always exactly 4 lines */
+            line-height: 1.5em;
+            height: 6em;       /* 1.5em * 4 */
+            min-height: 6em;
         }
         .text-truncate-3 {
             display: -webkit-box;
@@ -105,8 +109,10 @@
             line-clamp: 3;  
             overflow: hidden;
             text-overflow: ellipsis;
-            max-height: 4.5em; /* Adjust this value based on your line height */
-            line-height: 1.5em; /* Adjust this value based on your line height */
+            /* Fixed height: always exactly 3 lines */
+            line-height: 1.5em;
+            height: 4.5em;    /* 1.5em * 3 */
+            min-height: 4.5em;
         }
         .text-truncate-2 {
             display: -webkit-box;
@@ -115,8 +121,10 @@
             line-clamp: 2;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-height: 3em; /* Adjust this value based on your line height */
-            line-height: 1.5em; /* Adjust this value based on your line height */
+            /* Fixed height: always exactly 2 lines */
+            line-height: 1.5em;
+            height: 3em;      /* 1.5em * 2 */
+            min-height: 3em;
         }
         .text-truncate-1 {
             display: -webkit-box;
@@ -125,8 +133,10 @@
             line-clamp: 1;
             overflow: hidden;
             text-overflow: ellipsis;
-            max-height: 1.5em; /* Adjust this value based on your line height */
-            line-height: 1.5em; /* Adjust this value based on your line height */
+            /* Fixed height: always exactly 1 line */
+            line-height: 1.5em;
+            height: 1.5em;    /* 1.5em * 1 */
+            min-height: 1.5em;
         }
 
         @media (prefers-color-scheme: light) {
