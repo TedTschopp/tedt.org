@@ -299,7 +299,7 @@ redirect_from:
     {% include assets/js-bottom-of-body.html %}
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    {%- comment -%} Duplicate bootstrap bundle removed (already loaded via assets/js-bottom-of-body.html) {%- endcomment -%}
     <script>
         // Pagination and filtering state
         let currentPage = 1;
