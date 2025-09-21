@@ -44,6 +44,12 @@ nav[aria-label="Primary"] .navbar-nav > li .dropdown-menu {
 }
 nav[aria-label="Primary"] .navbar-nav > li .dropdown-menu-end { right: 0; left: auto; }
 
+// Dropdown item sizing smaller than top-level buttons
+nav[aria-label="Primary"] .dropdown-menu .dropdown-item {
+  font-size: 16px; // smaller than 20px top-level
+  line-height: 1.2;
+}
+
 // Focus styles for keyboard users
 nav[aria-label="Primary"] .navbar-nav .menu-item:focus-visible,
 nav[aria-label="Primary"] .navbar-nav .menu-item:focus {
