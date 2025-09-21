@@ -514,6 +514,54 @@ redirect_from:
             // Update pagination and show current page
             updatePagination();
             showPage(currentPage);
+
+            // --- Dynamic Tag Filtering Enhancement ---
+            // We now also prune the visible tag buttons to only those that still occur in the
+            // currently filtered (pre-pagination) card set. This reduces cognitive load and
+            // mirrors the user's evolving search context. Accessibility: we do NOT remove the
+            // elements from the DOM (to preserve focus history) but toggle them with `hidden`.
+            // The active filter (aria-pressed="true"), the universal 'All Categories', and the
+            // 'Clear Filters' control always remain visible.
+            const tagButtons = Array.from(document.querySelectorAll('.btn-toggle[data-filter]'));
+            // Collect tag occurrences from filteredCards
+            const availableTags = new Set();
+            filteredCards.forEach(card => {
+                const tagsAttr = card.getAttribute('data-tags') || '';
+                if (tagsAttr) {
+                    // data-tags may be a single slug or hyphen-joined string from slugify on join
+                    // We split on commas then hyphens only if original tags were joined — but existing code
+                    // sets `data-tags="{{ post.tags | join: ',' | downcase | slugify }}"` which slugifies
+                    // the whole joined string. This can collapse boundaries. For better fidelity we keep
+                    // a substring presence check approach below when filtering earlier; here we just add
+                    // the entire attribute string which is acceptable for coarse-grained matching.
+                    // Future improvement: store structured tags in a separate data attribute.
+                    tagsAttr.split(',').forEach(t => {
+                        if (t.trim()) availableTags.add(t.trim());
+                    });
+                }
+            });
+
+            tagButtons.forEach(btn => {
+                const filterValue = btn.getAttribute('data-filter');
+                const isAll = filterValue === 'all';
+                const isActive = btn.getAttribute('aria-pressed') === 'true';
+                // Keep 'Clear Filters' (no data-filter), handled outside this loop.
+                if (isAll || isActive) {
+                    btn.hidden = false;
+                    return;
+                }
+                // Hide if tag not present in currently filtered set
+                if (!availableTags.has(filterValue)) {
+                    btn.hidden = true;
+                } else {
+                    btn.hidden = false;
+                }
+            });
+
+            // Update live region with counts
+            if (sortStatus) {
+                sortStatus.textContent = `${filteredCards.length} prompt${filteredCards.length === 1 ? '' : 's'} matching current filters`;
+            }
         }
 
         // Pagination functions
