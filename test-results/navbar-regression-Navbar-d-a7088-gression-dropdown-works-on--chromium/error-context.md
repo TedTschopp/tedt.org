@@ -33,7 +33,7 @@
         - listitem [ref=e28]:
           - button "Toggle Back to Table of Contents links" [ref=e29] [cursor=pointer]
   - banner [ref=e30]:
-    - img "Village (hero image)" [ref=e33]
+    - img "Family together on a walk (hero image)" [ref=e33]
   - generic [ref=e37]:
     - generic [ref=e39]:
       - img "Ted sitting at a computer in Nature" [ref=e41]
@@ -98,37 +98,37 @@
       - heading "Browse blog categories" [level=2] [ref=e129]
       - paragraph [ref=e130]: Use the Previous and Next buttons or swipe to change category slides. Each slide shows a category with its latest posts.
       - list [ref=e131]:
-        - 'listitem "Slide 8 of 19: Maps" [ref=e132]':
+        - 'listitem "Slide 15 of 19: Religion" [ref=e132]':
           - generic [ref=e134]:
-            - img "Maps image" [ref=e137]
+            - img "Religion image" [ref=e137]
             - generic [ref=e138]:
-              - heading "Maps" [level=2] [ref=e139]:
-                - link "Maps" [ref=e141] [cursor=pointer]:
-                  - /url: /category/maps/
-              - heading "Guiding Your Adventures" [level=3] [ref=e142]
-              - paragraph [ref=e143]: Intricate and detailed maps for various games and adventures. Use these visual aids to enhance your campaigns and guide your journeys with precision.
+              - heading "Religion" [level=2] [ref=e139]:
+                - link "Religion" [ref=e141] [cursor=pointer]:
+                  - /url: /category/religion/
+              - heading "Faith and Belief" [level=3] [ref=e142]
+              - paragraph [ref=e143]: Discussions and explorations of various religious topics, beliefs, and practices. Delve into the spiritual aspects that shape cultures and individuals.
             - generic [ref=e144]:
               - generic [ref=e148]:
-                - img "A weathered campaign hex map with rivers, ridges, ruins, and colored exploration annotations by Ted Tschopp (concept + Midjourney assist)" [ref=e150]
+                - img "A Young Girl Solves a Math Problem by herself by Ted Tschopp" [ref=e150]
                 - generic [ref=e152]:
-                  - heading "Draft - Practical Hexcrawl Design and Procedures" [level=5] [ref=e153]:
-                    - link "Draft - Practical Hexcrawl Design and Procedures" [ref=e154] [cursor=pointer]:
-                      - /url: https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/
-                  - paragraph [ref=e155]: A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep.
+                  - heading "The Student Who Taught Herself" [level=5] [ref=e153]:
+                    - link "The Student Who Taught Herself" [ref=e154] [cursor=pointer]:
+                      - /url: https://tedt.org/The-Student-Who-Taught-Herself/
+                  - paragraph [ref=e155]: Watching my daughter learn math reminded me of a breakthrough in AI—AZR, a self-teaching model that reasons and grows without external data. This post reflects on learning, AI, and grace.
               - generic [ref=e159]:
-                - img "Medieval map of the world (Ebstorf Map) with decorative illustrations and Latin labels. by Gervase of Ebstorf" [ref=e161]
+                - img "The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of Byzantine icons. by Dan Hainsworth" [ref=e161]
                 - generic [ref=e163]:
-                  - heading "Of Maps and Monsters, the Right way to Populate a World Part II" [level=5] [ref=e164]:
-                    - link "Of Maps and Monsters, the Right way to Populate a World Part II" [ref=e165] [cursor=pointer]:
-                      - /url: https://tedt.org/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/
-                  - paragraph [ref=e166]: A continuation of the guide on RPG world-building, focusing on the complexities of monster types and their implementation in game design.
+                  - heading "Doing Religions Right in DCC" [level=5] [ref=e164]:
+                    - link "Doing Religions Right in DCC" [ref=e165] [cursor=pointer]:
+                      - /url: https://tedt.org/Doing-Religions-Right-in-DCC/
+                  - paragraph [ref=e166]: Every role playing game that I have ever run into with the exception of Dogs in the Vineyard has done religions wrong in role playing games. These are my notes on how to get DCC closer to a relgious system that works for a believer and a role player.
               - generic [ref=e170]:
-                - img "Medieval map of the world (Ebstorf Map) featuring countries, cities, various bishoprics, and text describing the world's creation, animals, and historical elements. by Gervase of Ebstorf" [ref=e172]
+                - img "Sunset on this ideology - Užhorod - Sunset near the border (Slovack Rep. Ukaine) - Ukraine, Uzgorod City by Giorgio Minguzzi" [ref=e172]
                 - generic [ref=e174]:
-                  - heading "Of Maps and Monsters, the Right way to Populate a World Part I" [level=5] [ref=e175]:
-                    - link "Of Maps and Monsters, the Right way to Populate a World Part I" [ref=e176] [cursor=pointer]:
-                      - /url: https://tedt.org/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World/
-                  - paragraph [ref=e177]: A guide for game masters and designers on creating immersive worlds in role-playing games with effective use of maps and monsters.
+                  - heading "Factions, Ideologies, and Religions in Role Playing Games" [level=5] [ref=e175]:
+                    - link "Factions, Ideologies, and Religions in Role Playing Games" [ref=e176] [cursor=pointer]:
+                      - /url: https://tedt.org/Factions-Ideologies-and-Religions-in-Role-Playing-Games/
+                  - paragraph [ref=e177]: Explore the complexities of ideologies, factions, and religions in role-playing games. Understand how to create a multi-layered world that engages players in political, economic, and religious dimensions.
       - button "Previous category" [ref=e178] [cursor=pointer]:
         - generic [ref=e180] [cursor=pointer]: Previous category
       - button "Next category" [ref=e181] [cursor=pointer]:

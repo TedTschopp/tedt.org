@@ -18,6 +18,18 @@ const careerMenu = 'ul[aria-labelledby="careerDropdownToggle"]';
 consoleErrorsFixture.describe('Navbar dropdown regression', () => {
   for (const path of pages) {
     consoleErrorsFixture(`dropdown works on ${path}`, async ({ page, consoleErrors }) => {
+      const failedRequests: { url: string; status: number | null; method: string; }[] = [];
+      page.on('requestfailed', req => {
+        failedRequests.push({ url: req.url(), status: null, method: req.method() });
+      });
+      page.on('response', async resp => {
+        try {
+          const status = resp.status();
+          if (status === 403 || status === 404) {
+            failedRequests.push({ url: resp.url(), status, method: resp.request().method() });
+          }
+        } catch { /* ignore */ }
+      });
       await page.goto(BASE + path, { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(400);
   const trigger = page.locator(careerTrigger).first();
@@ -41,6 +53,9 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
             expect(box.height).toBeGreaterThanOrEqual(43);
             expect(box.height).toBeLessThanOrEqual(45);
         }
+      }
+      if (consoleErrors.length > 0 || failedRequests.length > 0) {
+        console.log('Network/Console diagnostics for', path, { consoleErrors, failedRequests });
       }
       expect(consoleErrors, 'No console errors should occur during dropdown interaction').toHaveLength(0);
     });
