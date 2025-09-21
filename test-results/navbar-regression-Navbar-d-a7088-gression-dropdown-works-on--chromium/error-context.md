@@ -33,7 +33,7 @@
         - listitem [ref=e28]:
           - button "Toggle Back to Table of Contents links" [ref=e29] [cursor=pointer]
   - banner [ref=e30]:
-    - img "Forest (hero image)" [ref=e33]
+    - img "Village (hero image)" [ref=e33]
   - generic [ref=e37]:
     - generic [ref=e39]:
       - img "Ted sitting at a computer in Nature" [ref=e41]
@@ -98,37 +98,37 @@
       - heading "Browse blog categories" [level=2] [ref=e129]
       - paragraph [ref=e130]: Use the Previous and Next buttons or swipe to change category slides. Each slide shows a category with its latest posts.
       - list [ref=e131]:
-        - 'listitem "Slide 13 of 19: Philosophy" [ref=e132]':
+        - 'listitem "Slide 8 of 19: Maps" [ref=e132]':
           - generic [ref=e134]:
-            - img "Philosophy image" [ref=e137]
+            - img "Maps image" [ref=e137]
             - generic [ref=e138]:
-              - heading "Philosophy" [level=2] [ref=e139]:
-                - link "Philosophy" [ref=e141] [cursor=pointer]:
-                  - /url: /category/philosophy/
-              - heading "Thinking Deeply" [level=3] [ref=e142]
-              - paragraph [ref=e143]: In-depth discussions and essays on philosophical topics, encouraging deep thought and contemplation. Engage with ideas that challenge and inspire.
+              - heading "Maps" [level=2] [ref=e139]:
+                - link "Maps" [ref=e141] [cursor=pointer]:
+                  - /url: /category/maps/
+              - heading "Guiding Your Adventures" [level=3] [ref=e142]
+              - paragraph [ref=e143]: Intricate and detailed maps for various games and adventures. Use these visual aids to enhance your campaigns and guide your journeys with precision.
             - generic [ref=e144]:
               - generic [ref=e148]:
-                - img "A woman stands before endless glowing shelves in a futuristic archive, weaving through streams of golden and blue light that resemble threads of a cosmic loom. by Ted Tschopp" [ref=e150]
+                - img "A weathered campaign hex map with rivers, ridges, ruins, and colored exploration annotations by Ted Tschopp (concept + Midjourney assist)" [ref=e150]
                 - generic [ref=e152]:
-                  - heading "The Skill that Outgrows the Tool" [level=5] [ref=e153]:
-                    - link "The Skill that Outgrows the Tool" [ref=e154] [cursor=pointer]:
-                      - /url: https://tedt.org/The-Skill-That-Outgrows-the-Tool/
-                  - paragraph [ref=e155]: This article explores why relying on tool mastery is a risky career move in 2026. As AI begins to automate entire workflows, the most valuable skill will be translating business needs into AI solutions and understanding enterprise systems. Using historical analogies and the CLEAR framework, it argues that enterprise thinking, not tool memorization, will define future success.
+                  - heading "Draft - Practical Hexcrawl Design and Procedures" [level=5] [ref=e153]:
+                    - link "Draft - Practical Hexcrawl Design and Procedures" [ref=e154] [cursor=pointer]:
+                      - /url: https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/
+                  - paragraph [ref=e155]: A practical, procedural, table-driven approach to running engaging hexcrawls without getting lost in prep.
               - generic [ref=e159]:
-                - img "Deep-rooted tree weathering a storm, symbolizing enterprise resilience during AI transformation by Ted Tschopp" [ref=e161]
+                - img "Medieval map of the world (Ebstorf Map) with decorative illustrations and Latin labels. by Gervase of Ebstorf" [ref=e161]
                 - generic [ref=e163]:
-                  - heading "Rooted in Resilience" [level=5] [ref=e164]:
-                    - link "Rooted in Resilience" [ref=e165] [cursor=pointer]:
-                      - /url: https://tedt.org/Rooted-In-Resilience/
-                  - paragraph [ref=e166]: Exploring how artificial intelligence is revolutionizing enterprise SaaS and what utilities and large organizations must do to thrive in this new landscape of just-in-time software solutions.
+                  - heading "Of Maps and Monsters, the Right way to Populate a World Part II" [level=5] [ref=e164]:
+                    - link "Of Maps and Monsters, the Right way to Populate a World Part II" [ref=e165] [cursor=pointer]:
+                      - /url: https://tedt.org/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/
+                  - paragraph [ref=e166]: A continuation of the guide on RPG world-building, focusing on the complexities of monster types and their implementation in game design.
               - generic [ref=e170]:
-                - img "Child holding a smooth stone on Hawaiian beach, symbolizing what humans hold that AI cannot by Ted Tschopp" [ref=e172]
+                - img "Medieval map of the world (Ebstorf Map) featuring countries, cities, various bishoprics, and text describing the world's creation, animals, and historical elements. by Gervase of Ebstorf" [ref=e172]
                 - generic [ref=e174]:
-                  - 'heading "Beyond the Boundaries: Leading in a Post-AI Era" [level=5] [ref=e175]':
-                    - 'link "Beyond the Boundaries: Leading in a Post-AI Era" [ref=e176] [cursor=pointer]':
-                      - /url: https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/
-                  - paragraph [ref=e177]: A contemplative exploration of how AI's dissolution of traditional work boundaries between words, images, numbers, and sounds creates new opportunities for distinctly human leadership grounded in empathy, wisdom, and connection.
+                  - heading "Of Maps and Monsters, the Right way to Populate a World Part I" [level=5] [ref=e175]:
+                    - link "Of Maps and Monsters, the Right way to Populate a World Part I" [ref=e176] [cursor=pointer]:
+                      - /url: https://tedt.org/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World/
+                  - paragraph [ref=e177]: A guide for game masters and designers on creating immersive worlds in role-playing games with effective use of maps and monsters.
       - button "Previous category" [ref=e178] [cursor=pointer]:
         - generic [ref=e180] [cursor=pointer]: Previous category
       - button "Next category" [ref=e181] [cursor=pointer]:

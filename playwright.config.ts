@@ -10,8 +10,12 @@ export default defineConfig({
     trace: 'off'
   },
   reporter: [['list']],
-  globalSetup: 'tests/a11y/global-setup.ts',
-  globalTeardown: 'tests/a11y/global-teardown.ts',
+  webServer: {
+    command: 'JEKYLL_ENV=production bundle exec jekyll serve --no-watch --port 4000 --host 127.0.0.1',
+    port: 4000,
+    timeout: 120_000,
+    reuseExistingServer: !process.env.CI
+  },
   projects: [
     {
       name: 'chromium',
