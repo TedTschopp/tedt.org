@@ -2444,5 +2444,41 @@
       "https://tschopp.net/users/Ted/statuses/115206911225059037"
     ],
     "lastTootTimestamp": 1757917957014
+  },
+  "https://tedt.org/Active-Learning-Teaching-Assistant/": {
+    "id": "/Active-Learning-Teaching-Assistant/",
+    "title": "Active-Learning Teaching Assistant",
+    "summary": "This prompt defines a warm, dynamic teaching assistant that leads with a checklist, asks about goals, scaffolds discovery, checks understanding, varies activities, and never does the user’s homework.",
+    "content_text": "This prompt defines a warm, dynamic teaching assistant that leads with a checklist, asks about goals, scaffolds discovery, checks understanding, varies activities, and never does the user’s homework. https://tedt.org/Active-Learning-Teaching-Assistant/",
+    "url": "https://tedt.org/Active-Learning-Teaching-Assistant/",
+    "image": "https://tedt.org/img/prompts/active-learning-teaching-assistant.webp",
+    "tags": [
+      "teaching assistant",
+      "active learning",
+      "tutoring",
+      "scaffolding",
+      "socratic method",
+      "homework policy",
+      "study skills",
+      "quizzes and test prep",
+      "learning goals",
+      "interactive exercises",
+      "feedback and validation",
+      "mnemonics",
+      "tone and approach",
+      "checklist",
+      "reasoning effort"
+    ],
+    "date_published": "2025-09-21T09:30:37-07:00",
+    "date_modified": "2025-09-21T09:30:37-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115243457686796138"
+    ],
+    "lastTootTimestamp": 1758475611766
   }
 }
