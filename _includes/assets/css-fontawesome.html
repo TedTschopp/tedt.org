@@ -1,6 +1,20 @@
+{%- comment -%}
+Font Awesome (cdnjs) – integrity temporarily removed because the previous SRI hash
+did not match the delivered asset (browser reported a metadata/content length mismatch).
+
+Action to restore SRI (run locally):
+    curl -s https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css \
+        | openssl dgst -sha512 -binary | openssl base64 -A \
+        | sed 's/^/sha512-/'
+Then paste resulting value into an integrity="..." attribute below.
+
+If you prefer a smaller payload you can instead include only the pieces you use, e.g.:
+    css/fontawesome.min.css + css/solid.min.css + css/brands.min.css (+ css/regular.min.css if needed)
+Remember to compute and add an integrity for each if you go that route.
+{%- endcomment -%}
 <link 
     rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-    integrity="sha512-5b1YdBtP4kKIhxX3sI5Yucs5cjox96D65gis6pZeRAEIJ5zsxFrqOeE0zY4xXHzkwmo7aXstixSeK1NHfYkYQw==" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
     crossorigin="anonymous" 
     referrerpolicy="no-referrer" />
