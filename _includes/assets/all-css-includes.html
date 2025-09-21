@@ -1,8 +1,6 @@
-    <!-- Local FA fallback (kept for resilience if CDN fails) -->
-    {% comment %}{% include assets/css-fa-fallback.html %}{% endcomment}
-
-    <!-- Font Awesome CDN (reintroduced by request) -->
+    <!-- Font Awesome CDN (primary icon set). Local fallback removed per request; restore by uncommenting include below if ever needed. -->
     {% include assets/css-fontawesome.html %}
+    {%- comment -%} Legacy fallback: {% include assets/css-fa-fallback.html %} {%- endcomment -%}
 
 
     <!-- Global Bootstrap 5.3 CSS File from SCSS-->

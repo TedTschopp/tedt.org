@@ -7,7 +7,7 @@
                   {%- assign prevDateDiff = buildDate | minus: thisDate -%}
                   {%- assign prevDateDiff = prevDateDiff | divided_by: 86400 -%}
                   <!-- Date/Time -->
-                    <p><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Posted <time datetime="{{page.date}}" class="aria-hidden hidden dt-publish">{{page.date}}</time><time datetime="{{page.date}}">
+                    <p><i class="fa-regular fa-clock" aria-hidden="true"></i>&nbsp;Posted <time datetime="{{page.date}}" class="aria-hidden hidden dt-publish">{{page.date}}</time><time datetime="{{page.date}}">
                         {%- include fuzzy-date.html daysDiff=prevDateDiff label='ago' -%}&nbsp;
                         {%- capture time-output -%}{%- case hour -%}
                             {%- when '01' or '02' or '03' or '04' or '23' or '24' -%}during the night
@@ -33,7 +33,7 @@
                       {% assign thisDate = page.update | date: '%s'  %}
                       {% assign prevDateDiff = buildDate | minus: thisDate %}
                       {% assign prevDateDiff = prevDateDiff | divided_by: 86400 %}
-                      <i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Updated: <time datetime="{{page.update}}" class="aria-hidden hidden dt-update">{{page.update}}</time> <time datetime="{{page.update}}">
+                      <i class="fa-regular fa-clock" aria-hidden="true"></i>&nbsp;Updated: <time datetime="{{page.update}}" class="aria-hidden hidden dt-update">{{page.update}}</time> <time datetime="{{page.update}}">
                           {% case hour %}
                               {% when '01' or '02' or '03' or '04' or '23' or '24' %}
                                   during the night

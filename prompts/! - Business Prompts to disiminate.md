@@ -624,3 +624,30 @@ Review this output: [insert work]. Check for: (1) logical consistency, (2) missi
 # 39. The Networking Builder (Social Media Strategy)
 
 "I need to maintain professional connections without losing focus to social media. Design a Newport-inspired approach: 1) What's the minimum viable social media presence for my goals? 2) How can I batch social interactions to specific times? 3) What value can I provide to my network without constant engagement? 4) How do I build real relationships beyond digital likes and comments? Create a networking strategy that builds career capital while protecting my attention."
+
+
+1. Grow Personal Development Skills
+Prompt: [Describe your personal development goals and challenges]. Using the GROW (Goal, Reality, Options, Will) coaching model, help me create a personal development plan to achieve my goals.
+2. Write a Compelling Brand Story
+Prompt: [Insert business or personal brand description]. Help me create a powerful brand story for my brand using the Hero’s Journey framework.
+3. Optimize Pricing Strategy
+Prompt: Guide me through the process of determining an optimal pricing strategy for my [product or service] using the Value-Based Pricing approach.
+4. Prepare for a Meeting
+Prompt: I have a meeting with [audience] to discuss [topic]. Help me prepare with potential topics and relevant information.
+5. The McKinsey 7S Framework
+Prompt: Analyze [MY PRODUCT/BUSINESS] using the 7S framework. How aligned are our strategy, structure, systems, shared values, skills, style, and staff?
+6. Create a successful product launch strategy
+Prompt: [Insert a brief description of your product and target audience]. Guide me through developing a product launch strategy using the Product Launch Formula to generate interest and sales.
+7. Innovate and improve your product or service
+Prompt: Using the Jobs-to-be-Done framework, help me identify areas of improvement for my [product or service].
+
+8. Business Analysis
+Prompt: Analyze the current state of the [INDUSTRY] and describe its trends, challenges, and opportunities. Support your analysis with relevant data and statistics. Additionally, provide a comprehensive list of key players in the industry.
+9. Get advice from your business idols
+Prompt: Here’s the situation I’m currently facing: [Insert Situation]. Based on these circumstances, what would [Steve Jobs] recommend me to do?
+10. Develop an effective email marketing campaign
+Prompt: [Insert a brief description of your target audience and product or service]. Assist me in creating an email marketing campaign using the Customer Value Journey framework.
+11. The Cynefin Framework
+Prompt: Evaluate the problems [MY PRODUCT/BUSINESS] faced using the Cynefin Framework. Are they simple, complicated, complex, chaotic, or in disorder?
+12. Set better goals
+Prompt: Help me create goals for [career or personal objective] using the SMART framework.
