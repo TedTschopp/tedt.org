@@ -120,7 +120,7 @@ redirect_from:
             <div class="d-flex flex-column flex-md-row gap-2 w-100">
                 <form role="search" aria-label="Search prompts" class="flex-grow-1">
                     <div class="input-group">
-                        <span class="input-group-text" id="search-label"><i class="fas fa-search" aria-hidden="true"></i></span>
+                        <span class="input-group-text" id="search-label"><i class="fa-solid fa-search" aria-hidden="true"></i></span>
                         <input type="text" class="form-control" placeholder="Search prompts..." aria-label="Search prompts" aria-describedby="search-label">
                     </div>
                 </form>
@@ -207,7 +207,7 @@ redirect_from:
                                                         title="Filter by {{ tag }}"
                                                         data-tag="{{ tag | downcase | slugify }}"
                                                         style="cursor: pointer; border: none;">
-                                                    <i class="fas fa-tag" aria-hidden="true"></i> {{ tag }}
+                                                    <i class="fa-solid fa-tag" aria-hidden="true"></i> {{ tag }}
                                                 </button>
                                             {% endfor %}
                                         {% endif %}
@@ -220,7 +220,7 @@ redirect_from:
                                             data-prompt-url="{{ post.url | relative_url }}"
                                             data-prompt-title="{{ post.title }}"
                                             title="Download prompt as text file">
-                                        <i class="fas fa-download"></i>
+                                        <i class="fa-solid fa-download"></i>
                                     </button>
                                     
                                     <!-- Copy Button -->
@@ -229,7 +229,7 @@ redirect_from:
                                             data-prompt-url="{{ post.url | relative_url }}"
                                             data-prompt-title="{{ post.title }}"
                                             title="Copy prompt to clipboard">
-                                        <i class="fas fa-copy"></i>
+                                        <i class="fa-solid fa-copy"></i>
                                     </button>
 
                                     <!-- OpenAI ChatGPT -->
@@ -655,7 +655,7 @@ redirect_from:
                 const cardCol = this.closest('.col[data-tags]');
                 
                 // Show loading state
-                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
                 this.disabled = true;
                 
                 try {
@@ -709,12 +709,12 @@ redirect_from:
                     URL.revokeObjectURL(url);
                     
                     // Success feedback
-                    this.innerHTML = '<i class="fas fa-check"></i>';
+                    this.innerHTML = '<i class="fa-solid fa-check"></i>';
                     this.classList.remove('animate__pulse');
                     void this.offsetWidth;
                     this.classList.add('animate__pulse');
                     setTimeout(() => {
-                        this.innerHTML = '<i class="fas fa-download"></i>';
+                        this.innerHTML = '<i class="fa-solid fa-download"></i>';
                         this.classList.remove('animate__pulse');
                         this.disabled = false;
                     }, 1500);
@@ -722,9 +722,9 @@ redirect_from:
                 } catch (err) {
                     console.error('Failed to download prompt: ', err);
                     // Error feedback
-                    this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                    this.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>';
                     setTimeout(() => {
-                        this.innerHTML = '<i class="fas fa-download"></i>';
+                        this.innerHTML = '<i class="fa-solid fa-download"></i>';
                         this.disabled = false;
                     }, 1500);
                 }
@@ -737,7 +737,7 @@ redirect_from:
                 const cardCol = this.closest('.col[data-tags]');
                 
                 // Show loading state
-                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
                 this.disabled = true;
                 
                 try {

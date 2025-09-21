@@ -84,7 +84,7 @@
 
                     <hr>
                     {% include content/publish-and-update-date-time-v2.html %}
-                    <i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Catagories:
+                    <i class="fa-solid fa-table-cells-large" aria-hidden="true"></i>&nbsp;Catagories:
                     {% assign categories = page.categories %}
                     {% for category in categories %}<span class="p-category">
                         {% capture thiscategory %}{{ category | strip }}{% endcapture %}
@@ -112,7 +112,7 @@
                                         {% endif %}
                                         {% capture _quotes_title %}
                                             {% if page.source-url %}
-                                                <span class="p-name"><a href="{{page.source-url}}" target="_new">{{ page.source }}</a>&NonBreakingSpace;<a href="{{page.source-url}}" target="_new"><i class="fa fa-external-link" aria-hidden="true"></i></a></span>
+                                                <span class="p-name"><a href="{{page.source-url}}" target="_new">{{ page.source }}</a>&NonBreakingSpace;<a href="{{page.source-url}}" target="_new"><i class="fa-solid fa-up-right-from-square" aria-hidden="true"></i></a></span>
                                             {% elsif page.source %}
                                                 <span class="p-name">{{ page.source }}</span>
                                             {% else %}

@@ -434,7 +434,7 @@ links:
   URL: http://github.com
   Username: TedTschopp
   Color: '#6e5494'
-  Type: fontawsome
+  Type: fontawesome
   Icon-Class: fa-brands fa-github
   Category: 'Coding' # HuggingFace
 - Name: Hugging Face
@@ -449,7 +449,7 @@ links:
   URL: 'https://dev.to'
   Username: tedtschopp
   Icon-Class: fa-brands fa-dev
-  Type: fontawsome
+  Type: fontawesome
   Color: '#ffffff'
   Category: 'Coding'
   # STEAM
@@ -457,21 +457,21 @@ links:
   URL: https://steamcommunity.com/id
   Username: 'TedTschopp'
   Color: '#66c0f4'
-  Type: fontawsome
+  Type: fontawesome
   Icon-Class: fa-brands fa-steam
   Category: 'Gaming'
   # XBOX
 - Name: xBox
   URL: https://account.xbox.com/en-us/profile?gamertag=
   Username: TedTschopp
-  Type: fontawsome
+  Type: fontawesome
   Icon-Class: fa-brands fa-xbox
   Color: '#107C10'
   Category: 'Gaming'
 - Name: GoG
   URL: https://www.gog.com/u
   Username: TedTschopp
-  Type: fontawsome
+  Type: fontawesome
   Icon-Class: fa-solid fa-gamepad
   Color: '#86328A'
   Category: 'Gaming'
