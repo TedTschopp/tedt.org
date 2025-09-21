@@ -2,7 +2,8 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
 // Basic WCAG audit for the production URL using the prompt-details layout
-const URL = 'https://tedt.org/Active-Learning-Teaching-Assistant/';
+// Live production path conforms to /prompts/:slug/ pattern
+const URL = 'https://tedt.org/prompts/active-learning-teaching-assistant/';
 
 test.describe('Active Learning Teaching Assistant - Accessibility', () => {
   test('should have no serious or critical accessibility violations', async ({ page }) => {

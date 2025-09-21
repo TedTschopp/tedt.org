@@ -8,7 +8,8 @@ const BASE = process.env.PROD_BASE || 'http://127.0.0.1:4000';
 const pages = [
   '/',
   '/prompts/',
-  '/Active-Learning-Teaching-Assistant/',
+  // Prompt pages use /prompts/:slug/ per _config.yml defaults
+  '/prompts/active-learning-teaching-assistant/',
 ];
 
 // Selectors based on existing markup
