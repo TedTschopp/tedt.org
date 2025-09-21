@@ -7,6 +7,8 @@
             <style>
               /* Scoped to this navbar only */
               nav[aria-label="Primary"] .navbar-nav { display: flex; align-items: center; gap: 0.75rem; }
+              /* Fallback spacing for browsers or scenarios where flex gap might not apply consistently (ensures visible break between Career & Projects) */
+              nav[aria-label="Primary"] .navbar-nav > li + li { margin-left: 0.75rem; }
               nav[aria-label="Primary"] .navbar-nav > li > .nav-link.menu-item,
               nav[aria-label="Primary"] .navbar-nav > li > button.nav-link.menu-item {
                 display: flex;
