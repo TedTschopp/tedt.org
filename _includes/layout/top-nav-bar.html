@@ -6,14 +6,14 @@
             {%- endcomment -%}
             <style>
               /* Scoped to this navbar only */
+              nav[aria-label="Primary"] .navbar-nav { display: flex; align-items: center; gap: 0.75rem; }
               nav[aria-label="Primary"] .navbar-nav > li > .nav-link.menu-item,
               nav[aria-label="Primary"] .navbar-nav > li > button.nav-link.menu-item {
                 display: flex;
                 align-items: center;
                 height: 44px;
                 line-height: 1.1;
-                padding-top: 0;
-                padding-bottom: 0;
+                padding: 0 0.25rem; /* restore minimal horizontal padding to avoid text collision */
               }
               nav[aria-label="Primary"] .navbar-nav > li { display: flex; align-items: center; }
               nav[aria-label="Primary"] .navbar-brand img { vertical-align: middle; }

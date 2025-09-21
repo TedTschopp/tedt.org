@@ -1,0 +1,71 @@
+{%- comment -%}
+Local minimal Font Awesome fallback.
+Purpose: Provide essential decorative icon glyphs without external network calls.
+All icons are decorative (aria-hidden) and map to approximate Unicode symbols.
+Add additional mappings as needed; keep this lightweight.
+{%- endcomment -%}
+<style>
+  /* Base FA-esque classes */
+  .fa, .fas, .fa-solid, .fa-regular, .fa-brands { display: inline-block; font-style: normal; line-height: 1; font-variant: normal; text-rendering: auto; }
+  .fa-fw { width: 1.25em; text-align: center; }
+  .fa-lg { font-size: 1.25em; }
+  .fa-spin { animation: fa-spin 1s linear infinite; display: inline-block; }
+  @keyframes fa-spin { from { transform: rotate(0deg);} to { transform: rotate(360deg);} }
+
+  /* Icon mappings */
+  .fa-circle-half-stroke:before { content: "◐"; }
+  .fa-paragraph:before { content: "¶"; }
+  .fa-section:before { content: "§"; }
+  .fa-tag:before { content: "🏷"; }
+  .fa-download:before { content: "⬇"; }
+  .fa-copy:before { content: "📋"; }
+  .fa-sliders-h:before { content: "⚙"; }
+  .fa-times:before { content: "✖"; }
+  .fa-check:before { content: "✔"; }
+  .fa-exclamation-triangle:before { content: "⚠"; }
+  .fa-spinner:before { content: "⏳"; }
+  .fa-link:before { content: "🔗"; }
+  .fa-user:before { content: "👤"; }
+  .fa-reply:before { content: "↩"; }
+  .fa-retweet:before { content: "🔁"; }
+  .fa-heart:before { content: "♥"; }
+  .fa-bookmark:before { content: "🔖"; }
+  .fa-home:before { content: "⌂"; }
+  .fa-envelope:before { content: "✉"; }
+  .fa-mug-hot:before, .fa-mug-saucer:before { content: "☕"; }
+  .fa-bridge:before { content: "🌉"; }
+  .fa-sailboat:before { content: "⛵"; }
+  .fa-gamepad:before { content: "🎮"; }
+  .fa-window-maximize:before { content: "▢"; }
+
+  /* Brand stand-ins (letters / symbols) */
+  .fa-mastodon:before { content: "Ⓜ"; }
+  .fa-bluesky:before { content: "🅑"; }
+  .fa-threads:before { content: "𝕋"; }
+  .fa-medium-m:before { content: "ⓜ"; }
+  .fa-keybase:before { content: "🗝"; }
+  .fa-meetup:before { content: "ⓜ"; }
+  .fa-foursquare:before { content: "ⓕ"; }
+  .fa-facebook:before { content: "𝔣"; }
+  .fa-instagram:before { content: "📷"; }
+  .fa-facebook-messenger:before { content: "✉"; }
+  .fa-x-twitter:before { content: "✕"; }
+  .fa-linkedin-in:before { content: "in"; font-size: 0.85em; font-weight: 600; }
+  .fa-snapchat-ghost:before { content: "👻"; }
+  .fa-reddit-alien:before { content: "👽"; }
+  .fa-goodreads:before { content: "𝓰"; }
+  .fa-pinterest:before { content: "Ⓟ"; }
+  .fa-tumblr:before { content: "𝓉"; }
+  .fa-quora:before { content: "𝓠"; }
+  .fa-youtube:before { content: "▶"; }
+  .fa-twitch:before { content: "🅣"; }
+  .fa-vimeo-v:before { content: "🅥"; }
+  .fa-soundcloud:before { content: "☁"; }
+  .fa-github:before { content: "🐙"; }
+  .fa-dev:before { content: "DEV"; font-size: 0.6em; font-weight: 700; letter-spacing: -1px; }
+  .fa-steam:before { content: "⚙"; }
+  .fa-xbox:before { content: "Ⓧ"; }
+
+  /* Minor alignment tweaks */
+  .fa, .fas, .fa-solid, .fa-regular, .fa-brands { position: relative; top: -0.05em; }
+</style>

@@ -1,4 +1,8 @@
-  {% include assets/js-fontawesome.html %}
+    {%- comment -%}
+        Removed external Font Awesome kit (403 errors in CI & Playwright).  
+        Fallback: lightweight Unicode/CSS pseudo-element mappings added in css-fa-fallback include.
+        Rationale: Eliminate external dependency noise while preserving layout & decorative icons (all aria-hidden).
+    {%- endcomment -%}
 
     <!-- jQuery - Load early to ensure availability -->
     {% include assets/js-jquery.html %}
