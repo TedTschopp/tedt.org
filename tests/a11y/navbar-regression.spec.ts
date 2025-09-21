@@ -20,14 +20,28 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
     consoleErrorsFixture(`dropdown works on ${path}`, async ({ page, consoleErrors }) => {
       await page.goto(BASE + path, { waitUntil: 'domcontentloaded' });
       await page.waitForTimeout(400);
-      const trigger = page.locator(careerTrigger).first();
-      await expect(trigger).toHaveAttribute('aria-expanded', /false|undefined/);
-      await verifyDropdown(page, careerTrigger, careerMenu);
-      // After first click it should have aria-expanded true
-      await expect(trigger).toHaveAttribute('aria-expanded', 'true');
-      // Escape closes menu
-      await page.keyboard.press('Escape');
-      await expect(trigger).toHaveAttribute('aria-expanded', /false|undefined/);
+  const trigger = page.locator(careerTrigger).first();
+  await expect(trigger).toBeVisible();
+  // Initial state
+  await expect(trigger).toHaveAttribute('aria-expanded', /false|undefined/);
+  // Open
+  await verifyDropdown(page, careerTrigger, careerMenu);
+  await expect(trigger).toHaveAttribute('aria-expanded', 'true');
+  // Close via Escape
+  await page.keyboard.press('Escape');
+  await expect(trigger).toHaveAttribute('aria-expanded', /false|undefined/);
+      // Regression: all top-level nav items must retain uniform 44px height (accessible touch target)
+      const navItems = page.locator('nav[aria-label="Primary"] .navbar-nav > li > .nav-link.menu-item');
+      const count = await navItems.count();
+      for (let i = 0; i < count; i++) {
+        const box = await navItems.nth(i).boundingBox();
+        expect(box, `Nav item at index ${i} should have a bounding box`).not.toBeNull();
+        if (box) {
+          // Allow ±1px due to potential sub-pixel rounding / DPI scaling
+            expect(box.height).toBeGreaterThanOrEqual(43);
+            expect(box.height).toBeLessThanOrEqual(45);
+        }
+      }
       expect(consoleErrors, 'No console errors should occur during dropdown interaction').toHaveLength(0);
     });
   }

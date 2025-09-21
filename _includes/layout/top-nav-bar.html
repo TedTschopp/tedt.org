@@ -1,5 +1,27 @@
           <!-- NAVIGATION -->
           <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark" role="navigation" aria-label="Primary">
+            {%- comment -%}
+              Standardized navbar item sizing: ensure all top-level nav links & icon buttons share consistent 44px height,
+              vertical centering, and baseline alignment. This improves visual rhythm and accessible hit target size.
+            {%- endcomment -%}
+            <style>
+              /* Scoped to this navbar only */
+              nav[aria-label="Primary"] .navbar-nav > li > .nav-link.menu-item,
+              nav[aria-label="Primary"] .navbar-nav > li > button.nav-link.menu-item {
+                display: flex;
+                align-items: center;
+                height: 44px;
+                line-height: 1.1;
+                padding-top: 0;
+                padding-bottom: 0;
+              }
+              nav[aria-label="Primary"] .navbar-nav > li { display: flex; align-items: center; }
+              nav[aria-label="Primary"] .navbar-brand img { vertical-align: middle; }
+              /* Ensure text-based links have consistent font sizing */
+              nav[aria-label="Primary"] .nav-link.menu-item { font-size: 20px; }
+              /* Icon-only buttons already fixed size; ensure no layout shift */
+              nav[aria-label="Primary"] button.nav-link.menu-item { width: 44px; justify-content: center; }
+            </style>
             <div class="container-fluid">
               <a class="navbar-brand u-url" rel="me" href="{{ site.url }}"><img src="{{ site.url }}/img/home/logo-Tschopp.svg" height="64" width="64" alt="Ted Tschopp home"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -8,17 +30,17 @@
               <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a href="{{ site.url }}/profile/" class="nav-link mx-2 menu-item" style="font-size: 20px; text-decoration-thickness: 1px;">Profile</a>
+                    <a href="{{ site.url }}/profile/" class="nav-link mx-2 menu-item" style="text-decoration-thickness: 1px;">Profile</a>
                   </li>
-                  <li class="nav-item dropdown-center">
+                  <li class="nav-item dropdown dropdown-center">
                     {%- comment -%}
                       Accessibility: Use a real <button> element for dropdown toggle (anchors previously failed axe label semantics and aria-expanded updates intermittently).
                       Unique IDs per dropdown to avoid duplicate aria-labelledby relationships (previously both used navbarDarkDropdownMenuLink).
                     {%- endcomment -%}
-                    <button class="nav-link mx-2 menu-item dropdown-toggle btn btn-link p-0 border-0" id="careerDropdownToggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px; text-decoration-thickness: 1px;">
+                    <button type="button" class="nav-link mx-2 menu-item dropdown-toggle btn btn-link p-0 border-0" id="careerDropdownToggle" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration-thickness: 1px;">
                       Career
                     </button>
-                    <ul class="dropdown-menu-end dropdown-menu dropdown-menu-dark" aria-labelledby="careerDropdownToggle">{%- comment -%} List items generated dynamically below; whitespace trimmed to avoid text nodes {%- endcomment -%}
+                    <ul class="dropdown-menu-end dropdown-menu dropdown-menu-dark" aria-labelledby="careerDropdownToggle">
                       {%- comment -%}
                         Guarded retrieval of 'Home' category posts. In CI the recent-posts plugin may filter out all posts for this category, leaving nil.
                         We coerce to an empty array to avoid Liquid's 'Cannot sort a null object' error.
@@ -66,10 +88,10 @@
                     </ul>
                   </li>
                   <li class="nav-item dropdown">
-                    <button class="nav-link mx-2 menu-item dropdown-toggle btn btn-link p-0 border-0" id="projectsDropdownToggle" data-bs-toggle="dropdown" aria-expanded="false" style="font-size: 20px; text-decoration-thickness: 1px;">
+                    <button class="nav-link mx-2 menu-item dropdown-toggle btn btn-link p-0 border-0" id="projectsDropdownToggle" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration-thickness: 1px;">
                       Projects
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="projectsDropdownToggle">{%- comment -%} List items generated dynamically below; whitespace trimmed to avoid text nodes {%- endcomment -%}
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="projectsDropdownToggle">
                       {% comment %} Duplicate guarded retrieval for Projects dropdown (whitespace minimized) {% endcomment %}{% assign homepage_cat = site.categories['Home'] %}{% if homepage_cat %}{% assign sorted_homepage = homepage_cat | safe_sort: 'order' %}{% else %}{% assign sorted_homepage = empty %}{% endif %}
                       {% assign last_company = "" %}
                       {% assign new_company = false %}
@@ -106,7 +128,7 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                      <a href="{{ site.url }}/prompts/" class="nav-link mx-2 menu-item" style="font-size: 20px; text-decoration-thickness: 1px;">Prompts</a>
+                      <a href="{{ site.url }}/prompts/" class="nav-link mx-2 menu-item" style="text-decoration-thickness: 1px;">Prompts</a>
                   </li>
                   <li class="nav-item">
                       <a href="{{ site.url }}/RPG/MCC-GW/" class="nav-link mx-2 menu-item nav-active no-category-underline" style="text-decoration: none;">

@@ -33,569 +33,569 @@
         - listitem [ref=e28]:
           - button "Toggle Back to Table of Contents links" [ref=e29] [cursor=pointer]
   - banner [ref=e30]:
-    - img "Forest trail with sunlight filtering through trees (hero image)" [ref=e33]
-  - generic [ref=e38]:
-    - generic [ref=e40]:
-      - img "Ted sitting at a computer in Nature" [ref=e42]
-      - generic [ref=e43]:
-        - heading "Blog" [level=2] [ref=e44]:
-          - generic [ref=e46]: Blog
-        - heading "Exploring the Intersection of Tech, Theology, and Imagination" [level=3] [ref=e47]
-        - paragraph [ref=e48]: This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.
-      - generic [ref=e49]:
-        - generic [ref=e53]:
-          - img "AI–energy flywheel concept at the grid edge by Ted Tschopp" [ref=e55]
-          - generic [ref=e57]:
-            - heading "Guardrails & Gigawatts" [level=5] [ref=e58]:
-              - link "Guardrails & Gigawatts" [ref=e59] [cursor=pointer]:
+    - img "Forest (hero image)" [ref=e33]
+  - generic [ref=e37]:
+    - generic [ref=e39]:
+      - img "Ted sitting at a computer in Nature" [ref=e41]
+      - generic [ref=e42]:
+        - heading "Blog" [level=2] [ref=e43]:
+          - generic [ref=e45]: Blog
+        - heading "Exploring the Intersection of Tech, Theology, and Imagination" [level=3] [ref=e46]
+        - paragraph [ref=e47]: This blog is my journey exploring technology, theology, and creativity, where I talk about religion in the digital age, trends in UI/UX, collaboration tools, and storytelling.
+      - generic [ref=e48]:
+        - generic [ref=e52]:
+          - img "AI–energy flywheel concept at the grid edge by Ted Tschopp" [ref=e54]
+          - generic [ref=e56]:
+            - heading "Guardrails & Gigawatts" [level=5] [ref=e57]:
+              - link "Guardrails & Gigawatts" [ref=e58] [cursor=pointer]:
                 - /url: https://tedt.org/Guardrails-and-Gigawatts/
-            - paragraph [ref=e60]: A utility‑focused synthesis of six signals from Sam Altman’s conversation with Vinod Khosla. It argues for agent‑driven workflows, the convergence of compute and electricity costs, and the moats that endure—unique data, real‑time integration, and culture. The piece emphasizes guardrails, governance, and new workforce roles to build an AI–energy flywheel at the grid edge.
-        - generic [ref=e64]:
-          - img "Diagram showing differences between model, chatbot, workflow, and agent by Ted Tschopp" [ref=e66]
-          - generic [ref=e68]:
-            - 'heading "Model vs. Chatbot vs. Workflow vs. Agent: Draft" [level=5] [ref=e69]':
-              - 'link "Model vs. Chatbot vs. Workflow vs. Agent: Draft" [ref=e70] [cursor=pointer]':
+            - paragraph [ref=e59]: A utility‑focused synthesis of six signals from Sam Altman’s conversation with Vinod Khosla. It argues for agent‑driven workflows, the convergence of compute and electricity costs, and the moats that endure—unique data, real‑time integration, and culture. The piece emphasizes guardrails, governance, and new workforce roles to build an AI–energy flywheel at the grid edge.
+        - generic [ref=e63]:
+          - img "Diagram showing differences between model, chatbot, workflow, and agent by Ted Tschopp" [ref=e65]
+          - generic [ref=e67]:
+            - 'heading "Model vs. Chatbot vs. Workflow vs. Agent: Draft" [level=5] [ref=e68]':
+              - 'link "Model vs. Chatbot vs. Workflow vs. Agent: Draft" [ref=e69] [cursor=pointer]':
                 - /url: https://tedt.org/Model-vs-Chatbot-vs-Workflow-vs-Agent/
-            - paragraph [ref=e71]: A deep dive into the distinctions between AI models, chatbots, workflows, and agents. This post blends formal definitions with clear explanations, offering both a technical and intuitive understanding of these foundational terms.
-        - generic [ref=e75]:
-          - img "A woman stands before endless glowing shelves in a futuristic archive, weaving through streams of golden and blue light that resemble threads of a cosmic loom. by Ted Tschopp" [ref=e77]
-          - generic [ref=e79]:
-            - heading "The Skill that Outgrows the Tool" [level=5] [ref=e80]:
-              - link "The Skill that Outgrows the Tool" [ref=e81] [cursor=pointer]:
+            - paragraph [ref=e70]: A deep dive into the distinctions between AI models, chatbots, workflows, and agents. This post blends formal definitions with clear explanations, offering both a technical and intuitive understanding of these foundational terms.
+        - generic [ref=e74]:
+          - img "A woman stands before endless glowing shelves in a futuristic archive, weaving through streams of golden and blue light that resemble threads of a cosmic loom. by Ted Tschopp" [ref=e76]
+          - generic [ref=e78]:
+            - heading "The Skill that Outgrows the Tool" [level=5] [ref=e79]:
+              - link "The Skill that Outgrows the Tool" [ref=e80] [cursor=pointer]:
                 - /url: https://tedt.org/The-Skill-That-Outgrows-the-Tool/
-            - paragraph [ref=e82]: This article explores why relying on tool mastery is a risky career move in 2026. As AI begins to automate entire workflows, the most valuable skill will be translating business needs into AI solutions and understanding enterprise systems. Using historical analogies and the CLEAR framework, it argues that enterprise thinking, not tool memorization, will define future success.
-    - generic [ref=e84]:
-      - img "Swiss Children Playing with a Doll" [ref=e86]
-      - generic [ref=e87]:
-        - heading "Swiss Folklore" [level=2] [ref=e88]:
-          - link "Swiss Folklore" [ref=e90] [cursor=pointer]:
+            - paragraph [ref=e81]: This article explores why relying on tool mastery is a risky career move in 2026. As AI begins to automate entire workflows, the most valuable skill will be translating business needs into AI solutions and understanding enterprise systems. Using historical analogies and the CLEAR framework, it argues that enterprise thinking, not tool memorization, will define future success.
+    - generic [ref=e83]:
+      - img "Swiss Children Playing with a Doll" [ref=e85]
+      - generic [ref=e86]:
+        - heading "Swiss Folklore" [level=2] [ref=e87]:
+          - link "Swiss Folklore" [ref=e89] [cursor=pointer]:
             - /url: /category/folklore/
-        - 'heading "Whispers from the Alps: Navigating Swiss Folk Tales" [level=3] [ref=e91]'
-        - paragraph [ref=e92]: A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.
-      - generic [ref=e93]:
-        - generic [ref=e97]:
-          - img "An image of Türlersee-Lake taken by someone from shore. by Leandros at German Wikipedia" [ref=e99]
-          - generic [ref=e101]:
-            - heading "The Chriemhild Trench" [level=5] [ref=e102]:
-              - link "The Chriemhild Trench" [ref=e103] [cursor=pointer]:
+        - 'heading "Whispers from the Alps: Navigating Swiss Folk Tales" [level=3] [ref=e90]'
+        - paragraph [ref=e91]: A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate.
+      - generic [ref=e92]:
+        - generic [ref=e96]:
+          - img "An image of Türlersee-Lake taken by someone from shore. by Leandros at German Wikipedia" [ref=e98]
+          - generic [ref=e100]:
+            - heading "The Chriemhild Trench" [level=5] [ref=e101]:
+              - link "The Chriemhild Trench" [ref=e102] [cursor=pointer]:
                 - /url: https://tedt.org/The-Chriemhild-Trench/
-            - paragraph [ref=e104]: The Chriemhild Trench is a Swiss legend about dark magic, envy, and a miraculous twist of fate by the Türlersee.
-        - generic [ref=e108]:
-          - img "A haunting snowy scene at Brunnegg Castle in Switzerland, during the harsh winter, a menacing ghostly figure of the bailiff riding on a black horse. A castle looms in the background, partially obscured by a fierce, swirling snowstorm. The landscape is eerily lit by a full moon, casting long sinister shadows. The bailiff should appear as a figure from Swiss folklore, wearing traditional, historical attire, and his face should be shrouded in mystery, a sense of foreboding and the supernatural, highlighting the legend's themes of a cursed hunt and a tragic tale. by Ted Tschopp" [ref=e110]
-          - generic [ref=e112]:
-            - 'heading "The Bailiff of Brunnegg: A Swiss Legend" [level=5] [ref=e113]':
-              - 'link "The Bailiff of Brunnegg: A Swiss Legend" [ref=e114] [cursor=pointer]':
+            - paragraph [ref=e103]: The Chriemhild Trench is a Swiss legend about dark magic, envy, and a miraculous twist of fate by the Türlersee.
+        - generic [ref=e107]:
+          - img "A haunting snowy scene at Brunnegg Castle in Switzerland, during the harsh winter, a menacing ghostly figure of the bailiff riding on a black horse. A castle looms in the background, partially obscured by a fierce, swirling snowstorm. The landscape is eerily lit by a full moon, casting long sinister shadows. The bailiff should appear as a figure from Swiss folklore, wearing traditional, historical attire, and his face should be shrouded in mystery, a sense of foreboding and the supernatural, highlighting the legend's themes of a cursed hunt and a tragic tale. by Ted Tschopp" [ref=e109]
+          - generic [ref=e111]:
+            - 'heading "The Bailiff of Brunnegg: A Swiss Legend" [level=5] [ref=e112]':
+              - 'link "The Bailiff of Brunnegg: A Swiss Legend" [ref=e113] [cursor=pointer]':
                 - /url: https://tedt.org/Swiss-Folklore/The-Bailiff-of-Brunnegg.html
-            - paragraph [ref=e115]: An in-depth look at the legend of the Bailiff of Brunnegg, a tale of mystery and horror from the Swiss region of Aargau.
-        - generic [ref=e119]:
-          - img "The Schächental Valley by Ted Tschopp" [ref=e121]
-          - generic [ref=e123]:
-            - heading "The Well in the Schächental Valley" [level=5] [ref=e124]:
-              - link "The Well in the Schächental Valley" [ref=e125] [cursor=pointer]:
+            - paragraph [ref=e114]: An in-depth look at the legend of the Bailiff of Brunnegg, a tale of mystery and horror from the Swiss region of Aargau.
+        - generic [ref=e118]:
+          - img "The Schächental Valley by Ted Tschopp" [ref=e120]
+          - generic [ref=e122]:
+            - heading "The Well in the Schächental Valley" [level=5] [ref=e123]:
+              - link "The Well in the Schächental Valley" [ref=e124] [cursor=pointer]:
                 - /url: https://tedt.org/Swiss-Folklore/The-Well-at-Schwanden.html
-            - paragraph [ref=e126]: A Swiss folktale depicting the mysterious creation of an ever-flowing well in the Schächental valley.
-    - region "Browse blog categories" [ref=e129]:
-      - heading "Browse blog categories" [level=2] [ref=e130]
-      - paragraph [ref=e131]: Use the Previous and Next buttons or swipe to change category slides. Each slide shows a category with its latest posts.
-      - list [ref=e132]:
-        - 'listitem "Slide 14 of 19: Prompt Library" [ref=e133]':
-          - generic [ref=e135]:
-            - img "Prompt Library image" [ref=e138]
-            - generic [ref=e139]:
-              - heading "Prompts" [level=2] [ref=e140]:
-                - link "Prompts" [ref=e142] [cursor=pointer]:
-                  - /url: /category/prompts/
-              - heading "Inspiration Starters" [level=3] [ref=e143]
-              - paragraph [ref=e144]: Prompt ideas and seeds to kickstart writing, world-building, or creative exploration.
-            - generic [ref=e145]:
-              - generic [ref=e149]:
-                - img "A surreal digital illustration of a vast library with towering bookshelves, where glowing streams of vibrant blue, purple, and orange light flow like rivers across the floor. A person in a suit stands at a wooden desk, studying papers under the warm glow of monitors and radiant energy spilling from the shelves. by Ted Tschopp" [ref=e151]
-                - generic [ref=e153]:
-                  - heading "Active-Learning Teaching Assistant" [level=5] [ref=e154]:
-                    - link "Active-Learning Teaching Assistant" [ref=e155] [cursor=pointer]:
-                      - /url: https://tedt.org/prompts/active-learning-teaching-assistant/
-                  - paragraph [ref=e156]: A practical, compact prompt that defines a warm, discovery-focused teaching assistant. It begins every session with a checklist, learns the student’s goals, guides with questions, alternates activities, checks understanding, and refuses to do homework while providing collaborative scaffolding and validation.
-              - generic [ref=e160]:
-                - img "Abstract blueprint with sticky notes, checklists, and flow arrows representing backlog refinement. by Ted Tschopp" [ref=e162]
-                - generic [ref=e164]:
-                  - heading "Business Case and Requirements Assistant" [level=5] [ref=e165]:
-                    - link "Business Case and Requirements Assistant" [ref=e166] [cursor=pointer]:
-                      - /url: https://tedt.org/prompts/business-case-and-requirements-assistant/
-                  - paragraph [ref=e167]: A rigorous, step-by-step Agile coaching prompt that transforms vague goals into clear user stories, requirements, and SMART acceptance criteria—complete with verification and validation approaches.
-              - generic [ref=e171]:
-                - img "A scholarly desk with papers, books, and evaluation forms representing academic critique and analysis by Unknown" [ref=e173]
-                - generic [ref=e175]:
-                  - heading "Academic Content Critique Template" [level=5] [ref=e176]:
-                    - link "Academic Content Critique Template" [ref=e177] [cursor=pointer]:
-                      - /url: https://tedt.org/prompts/academic-critique-content/
-                  - paragraph [ref=e178]: A structured prompt template for critiquing academic papers, articles, and research content with detailed analysis framework, grading rubric, and professional standards.
-      - button "Previous category" [ref=e179] [cursor=pointer]:
-        - generic [ref=e181] [cursor=pointer]: Previous category
-      - button "Next category" [ref=e182] [cursor=pointer]:
-        - generic [ref=e184] [cursor=pointer]: Next category
-  - generic [ref=e189]:
-    - heading "Career" [level=2] [ref=e190]
-    - paragraph [ref=e191]: As a Senior Enterprise Architect at Southern California Edison, I leverage over a decade of experience in guiding major stakeholders through complex tech landscapes, with past entrepreneurial successes including founding a prominent J.R.R. Tolkien community website and features in Wired Magazine, driven by a passion for pioneering futuristic technologies.
-  - generic [ref=e196]:
-    - generic [ref=e198]:
-      - generic [ref=e200]:
-        - heading "Senior Enterprise Architect, Artificial Intelligence & Software at Southern California Edison, Rosemead, CA from January 2020 to Present" [level=4] [ref=e201]:
-          - link "Senior Enterprise Architect, Artificial Intelligence & Software at Southern California Edison, Rosemead, CA from January 2020 to Present" [ref=e202] [cursor=pointer]:
+            - paragraph [ref=e125]: A Swiss folktale depicting the mysterious creation of an ever-flowing well in the Schächental valley.
+    - region "Browse blog categories" [ref=e128]:
+      - heading "Browse blog categories" [level=2] [ref=e129]
+      - paragraph [ref=e130]: Use the Previous and Next buttons or swipe to change category slides. Each slide shows a category with its latest posts.
+      - list [ref=e131]:
+        - 'listitem "Slide 13 of 19: Philosophy" [ref=e132]':
+          - generic [ref=e134]:
+            - img "Philosophy image" [ref=e137]
+            - generic [ref=e138]:
+              - heading "Philosophy" [level=2] [ref=e139]:
+                - link "Philosophy" [ref=e141] [cursor=pointer]:
+                  - /url: /category/philosophy/
+              - heading "Thinking Deeply" [level=3] [ref=e142]
+              - paragraph [ref=e143]: In-depth discussions and essays on philosophical topics, encouraging deep thought and contemplation. Engage with ideas that challenge and inspire.
+            - generic [ref=e144]:
+              - generic [ref=e148]:
+                - img "A woman stands before endless glowing shelves in a futuristic archive, weaving through streams of golden and blue light that resemble threads of a cosmic loom. by Ted Tschopp" [ref=e150]
+                - generic [ref=e152]:
+                  - heading "The Skill that Outgrows the Tool" [level=5] [ref=e153]:
+                    - link "The Skill that Outgrows the Tool" [ref=e154] [cursor=pointer]:
+                      - /url: https://tedt.org/The-Skill-That-Outgrows-the-Tool/
+                  - paragraph [ref=e155]: This article explores why relying on tool mastery is a risky career move in 2026. As AI begins to automate entire workflows, the most valuable skill will be translating business needs into AI solutions and understanding enterprise systems. Using historical analogies and the CLEAR framework, it argues that enterprise thinking, not tool memorization, will define future success.
+              - generic [ref=e159]:
+                - img "Deep-rooted tree weathering a storm, symbolizing enterprise resilience during AI transformation by Ted Tschopp" [ref=e161]
+                - generic [ref=e163]:
+                  - heading "Rooted in Resilience" [level=5] [ref=e164]:
+                    - link "Rooted in Resilience" [ref=e165] [cursor=pointer]:
+                      - /url: https://tedt.org/Rooted-In-Resilience/
+                  - paragraph [ref=e166]: Exploring how artificial intelligence is revolutionizing enterprise SaaS and what utilities and large organizations must do to thrive in this new landscape of just-in-time software solutions.
+              - generic [ref=e170]:
+                - img "Child holding a smooth stone on Hawaiian beach, symbolizing what humans hold that AI cannot by Ted Tschopp" [ref=e172]
+                - generic [ref=e174]:
+                  - 'heading "Beyond the Boundaries: Leading in a Post-AI Era" [level=5] [ref=e175]':
+                    - 'link "Beyond the Boundaries: Leading in a Post-AI Era" [ref=e176] [cursor=pointer]':
+                      - /url: https://tedt.org/Beyond-the-Boundries-Leading-in-a-Post-AI-Era/
+                  - paragraph [ref=e177]: A contemplative exploration of how AI's dissolution of traditional work boundaries between words, images, numbers, and sounds creates new opportunities for distinctly human leadership grounded in empathy, wisdom, and connection.
+      - button "Previous category" [ref=e178] [cursor=pointer]:
+        - generic [ref=e180] [cursor=pointer]: Previous category
+      - button "Next category" [ref=e181] [cursor=pointer]:
+        - generic [ref=e183] [cursor=pointer]: Next category
+  - generic [ref=e188]:
+    - heading "Career" [level=2] [ref=e189]
+    - paragraph [ref=e190]: As a Senior Enterprise Architect at Southern California Edison, I leverage over a decade of experience in guiding major stakeholders through complex tech landscapes, with past entrepreneurial successes including founding a prominent J.R.R. Tolkien community website and features in Wired Magazine, driven by a passion for pioneering futuristic technologies.
+  - generic [ref=e195]:
+    - generic [ref=e197]:
+      - generic [ref=e199]:
+        - heading "Senior Enterprise Architect, Artificial Intelligence & Software at Southern California Edison, Rosemead, CA from January 2020 to Present" [level=4] [ref=e200]:
+          - link "Senior Enterprise Architect, Artificial Intelligence & Software at Southern California Edison, Rosemead, CA from January 2020 to Present" [ref=e201] [cursor=pointer]:
             - /url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
-        - paragraph [ref=e203]: I am the Enterprise Architect for AI & Software. I provide strategic architecture leadership for SCE’s AI and software portfolios, shaping strategy, roadmaps, and frameworks for 500+ enterprise products. Align innovation with business outcomes, resilience, and regulatory expectations.
-        - list [ref=e204]:
-          - listitem [ref=e205]:
-            - generic [ref=e207]: "AI Strategic Leadership: Built and executed an enterprise AI strategy, enabling cross-functional adoption and measurable business outcomes."
-          - listitem [ref=e208]:
-            - generic [ref=e210]: "AI Governance & Standards: Partnered with Legal, Information Governance, the AI CoE, and industry groups to establish AI governance frameworks and coding standards, embedding compliance, trust, and accountability across initiatives."
-          - listitem [ref=e211]:
-            - generic [ref=e213]: "Enterprise Automation: Designed a desktop automation framework that deployed 300+ virtual employees, reducing manual workloads, slashing error rates, and unlocking enterprise-wide productivity and engagement gains."
-          - listitem [ref=e214]:
-            - generic [ref=e216]: "AI-Driven IT Ops: Pioneered the shift from reactive IT operations to LLM-enabled AIOps. Automated telemetry analysis, incident correlation, and response, accelerating resolution times, reducing overhead, and setting a new standard of service resilience."
-          - listitem [ref=e217]:
-            - generic [ref=e219]: "Business-Led Development: Architect and process owner for SCE’s first sanctioned business-partner development program since 1997, enabling 100+ developers to build and manage over 1,000 applications. This program democratized software creation, expanded innovation capacity, and established guardrails that balanced agility with enterprise compliance."
-      - img "by" [ref=e221]
-    - generic [ref=e223]:
-      - img "by" [ref=e225]
-      - generic [ref=e227]:
-        - heading "Process Manager for Engineering and Build Process at Southern California Edison, Rosemead, CA from January 2020 to Present" [level=4] [ref=e228]:
-          - link "Process Manager for Engineering and Build Process at Southern California Edison, Rosemead, CA from January 2020 to Present" [ref=e229] [cursor=pointer]:
+        - paragraph [ref=e202]: I am the Enterprise Architect for AI & Software. I provide strategic architecture leadership for SCE’s AI and software portfolios, shaping strategy, roadmaps, and frameworks for 500+ enterprise products. Align innovation with business outcomes, resilience, and regulatory expectations.
+        - list [ref=e203]:
+          - listitem [ref=e204]:
+            - generic [ref=e206]: "AI Strategic Leadership: Built and executed an enterprise AI strategy, enabling cross-functional adoption and measurable business outcomes."
+          - listitem [ref=e207]:
+            - generic [ref=e209]: "AI Governance & Standards: Partnered with Legal, Information Governance, the AI CoE, and industry groups to establish AI governance frameworks and coding standards, embedding compliance, trust, and accountability across initiatives."
+          - listitem [ref=e210]:
+            - generic [ref=e212]: "Enterprise Automation: Designed a desktop automation framework that deployed 300+ virtual employees, reducing manual workloads, slashing error rates, and unlocking enterprise-wide productivity and engagement gains."
+          - listitem [ref=e213]:
+            - generic [ref=e215]: "AI-Driven IT Ops: Pioneered the shift from reactive IT operations to LLM-enabled AIOps. Automated telemetry analysis, incident correlation, and response, accelerating resolution times, reducing overhead, and setting a new standard of service resilience."
+          - listitem [ref=e216]:
+            - generic [ref=e218]: "Business-Led Development: Architect and process owner for SCE’s first sanctioned business-partner development program since 1997, enabling 100+ developers to build and manage over 1,000 applications. This program democratized software creation, expanded innovation capacity, and established guardrails that balanced agility with enterprise compliance."
+      - img "by" [ref=e220]
+    - generic [ref=e222]:
+      - img "by" [ref=e224]
+      - generic [ref=e226]:
+        - heading "Process Manager for Engineering and Build Process at Southern California Edison, Rosemead, CA from January 2020 to Present" [level=4] [ref=e227]:
+          - link "Process Manager for Engineering and Build Process at Southern California Edison, Rosemead, CA from January 2020 to Present" [ref=e228] [cursor=pointer]:
             - /url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
-        - paragraph [ref=e230]: I oversee the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focus on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
-        - list [ref=e231]:
-          - listitem [ref=e232]:
-            - generic [ref=e234]: Strategically extended the use of source control mechanisms from compliance-focused products to encompass all company offerings, enhancing code consistency and facilitating more efficient development cycles across the enterprise.
-          - listitem [ref=e235]:
-            - generic [ref=e237]: Formulated and led the implementation of a DevOps strategy, unifying software development and IT operations to enhance collaboration and accelerate time-to-market for new product features.
-          - listitem [ref=e238]:
-            - generic [ref=e240]: Championed a cultural shift within the organization by introducing and promoting Agile methodologies, fostering a more collaborative and adaptive work environment to better respond to business needs.
-          - listitem [ref=e241]:
-            - generic [ref=e243]: Attained Lean Six Sigma certification and leveraged it to conduct quarterly Kaizens, strategically refining the build and engineering processes to eliminate waste and enhance value to the business.
-          - listitem [ref=e244]:
-            - generic [ref=e246]: Established and enforced coding standards and secure coding practices across the development teams, elevating code quality and reducing vulnerabilities to fortify the company’s software products.
-    - generic [ref=e248]:
-      - generic [ref=e250]:
-        - heading "Senior Solution Architect for SCE.com at Southern California Edison, Rosemead, CA from January 2010 to January 2020" [level=4] [ref=e251]:
-          - link "Senior Solution Architect for SCE.com at Southern California Edison, Rosemead, CA from January 2010 to January 2020" [ref=e252] [cursor=pointer]:
+        - paragraph [ref=e229]: I oversee the end-to-end management and governance of Solutions Engineering and Build processes, serving as a key advisor for process improvement and best practices. I focus on optimizing performance metrics, maintaining detailed process documentation, and implementing quality standards to achieve a more efficient and effective operation. I actively engaged with stakeholders and resolved process issues, while facilitating smooth communication for any changes in the Solutions Engineering and Build processes.
+        - list [ref=e230]:
+          - listitem [ref=e231]:
+            - generic [ref=e233]: Strategically extended the use of source control mechanisms from compliance-focused products to encompass all company offerings, enhancing code consistency and facilitating more efficient development cycles across the enterprise.
+          - listitem [ref=e234]:
+            - generic [ref=e236]: Formulated and led the implementation of a DevOps strategy, unifying software development and IT operations to enhance collaboration and accelerate time-to-market for new product features.
+          - listitem [ref=e237]:
+            - generic [ref=e239]: Championed a cultural shift within the organization by introducing and promoting Agile methodologies, fostering a more collaborative and adaptive work environment to better respond to business needs.
+          - listitem [ref=e240]:
+            - generic [ref=e242]: Attained Lean Six Sigma certification and leveraged it to conduct quarterly Kaizens, strategically refining the build and engineering processes to eliminate waste and enhance value to the business.
+          - listitem [ref=e243]:
+            - generic [ref=e245]: Established and enforced coding standards and secure coding practices across the development teams, elevating code quality and reducing vulnerabilities to fortify the company’s software products.
+    - generic [ref=e247]:
+      - generic [ref=e249]:
+        - heading "Senior Solution Architect for SCE.com at Southern California Edison, Rosemead, CA from January 2010 to January 2020" [level=4] [ref=e250]:
+          - link "Senior Solution Architect for SCE.com at Southern California Edison, Rosemead, CA from January 2010 to January 2020" [ref=e251] [cursor=pointer]:
             - /url: https://www.sce.com/
-        - paragraph [ref=e253]: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
-        - list [ref=e254]:
-          - listitem [ref=e255]:
-            - generic [ref=e257]: Reduced third-party vendor costs by 50% to deliver SCE’s first mobile app for iPhone and Android.
-          - listitem [ref=e258]:
-            - generic [ref=e260]: Cut costs of the SCE.com rebranding project from $13MM to under $1MM by implementing agile methodologies.
-          - listitem [ref=e261]:
-            - generic [ref=e263]: Represented SCE’s digital and web interests in the UNITE group and IBM Digital Experience Customer Advisory Council.
-          - listitem [ref=e264]:
-            - generic [ref=e266]: Increased user satisfaction ratings by 20 index points through a mobile-first strategy.
-          - listitem [ref=e267]:
-            - generic [ref=e269]: Supported business case development for a $70MM capital program.
-          - listitem [ref=e270]:
-            - generic [ref=e272]: Supported business case development for a $25MM capital program.
-          - listitem [ref=e273]:
-            - generic [ref=e275]: Drove a 40% increase in self-service transaction growth.
-          - listitem [ref=e276]:
-            - generic [ref=e278]: Boosted mobile page views by 1000%, reaching 40% of total site traffic.
-          - listitem [ref=e279]:
-            - generic [ref=e281]: Improved turn-on/off service transactions by 75% while reducing manual order processing by 70%.
-          - listitem [ref=e282]:
-            - generic [ref=e284]: Led the development of user privacy, security, and identity management upgrades.
-      - img "by" [ref=e286]
-    - generic [ref=e288]:
-      - img "by" [ref=e290]
-      - generic [ref=e292]:
-        - heading "Practice Lead - SAP Portal / Web at Southern California Edison, Irwindale, CA from September 2004 to January 2010" [level=4] [ref=e293]:
-          - link "Practice Lead - SAP Portal / Web at Southern California Edison, Irwindale, CA from September 2004 to January 2010" [ref=e294] [cursor=pointer]:
+        - paragraph [ref=e252]: I served as the technical team lead and the single-point of contact for technical accountability on SCE's eCommerce channel, overseeing the project from concept through completion.
+        - list [ref=e253]:
+          - listitem [ref=e254]:
+            - generic [ref=e256]: Reduced third-party vendor costs by 50% to deliver SCE’s first mobile app for iPhone and Android.
+          - listitem [ref=e257]:
+            - generic [ref=e259]: Cut costs of the SCE.com rebranding project from $13MM to under $1MM by implementing agile methodologies.
+          - listitem [ref=e260]:
+            - generic [ref=e262]: Represented SCE’s digital and web interests in the UNITE group and IBM Digital Experience Customer Advisory Council.
+          - listitem [ref=e263]:
+            - generic [ref=e265]: Increased user satisfaction ratings by 20 index points through a mobile-first strategy.
+          - listitem [ref=e266]:
+            - generic [ref=e268]: Supported business case development for a $70MM capital program.
+          - listitem [ref=e269]:
+            - generic [ref=e271]: Supported business case development for a $25MM capital program.
+          - listitem [ref=e272]:
+            - generic [ref=e274]: Drove a 40% increase in self-service transaction growth.
+          - listitem [ref=e275]:
+            - generic [ref=e277]: Boosted mobile page views by 1000%, reaching 40% of total site traffic.
+          - listitem [ref=e278]:
+            - generic [ref=e280]: Improved turn-on/off service transactions by 75% while reducing manual order processing by 70%.
+          - listitem [ref=e281]:
+            - generic [ref=e283]: Led the development of user privacy, security, and identity management upgrades.
+      - img "by" [ref=e285]
+    - generic [ref=e287]:
+      - img "by" [ref=e289]
+      - generic [ref=e291]:
+        - heading "Practice Lead - SAP Portal / Web at Southern California Edison, Irwindale, CA from September 2004 to January 2010" [level=4] [ref=e292]:
+          - link "Practice Lead - SAP Portal / Web at Southern California Edison, Irwindale, CA from September 2004 to January 2010" [ref=e293] [cursor=pointer]:
             - /url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
-        - paragraph [ref=e295]: Served as a Senior Leader overseeing both SAP Portal and Web Development Teams at SCE, with a combined responsibility for more than 40 professionals in specialized domains.
-        - list [ref=e296]:
-          - listitem [ref=e297]:
-            - generic [ref=e299]: Led a dedicated team of over 10 SAP Portal Developers, focusing on the development and maintenance of SCE’s SAP Portal with specialized expertise in SAP HCM and EAM.
-          - listitem [ref=e300]:
-            - generic [ref=e302]: Acted as the Practice Lead for a community of over 30 web developers, responsible for the development and ongoing maintenance of SCE’s enterprise-level websites.
-          - listitem [ref=e303]:
-            - generic [ref=e305]: Orchestrated the decommissioning of 150 legacy business applications, enhancing operational efficiency and resource optimization.
-          - listitem [ref=e306]:
-            - generic [ref=e308]: Engineered a data center routing solution at the Edison International (EIX) level, collaborating with stakeholders from Edison International companies and SCE.
-          - listitem [ref=e309]:
-            - generic [ref=e311]: Spearheaded the rebranding of the corporate intranet and Edison.com website, aligning both with organizational changes and earning accolades from the Web Marketing Association and The American Business Awards.
-          - listitem [ref=e312]:
-            - generic [ref=e314]: Presented on behalf of SCE at the NetWeaver Portal/BI Conference, sharing valuable insights into SCE’s SOA integration practices.
-          - listitem [ref=e315]:
-            - generic [ref=e317]: Acted as an annual judge for the Cal Poly CIS ITC web design competition, representing SCE and contributing to the broader web development community.
-    - generic [ref=e319]:
-      - generic [ref=e321]:
-        - heading "Founder and CTO of The One Ring - Tolkien Online, Pasadena, CA from April 1999 to September 2004" [level=4] [ref=e322]:
-          - link "Founder and CTO of The One Ring - Tolkien Online, Pasadena, CA from April 1999 to September 2004" [ref=e323] [cursor=pointer]:
+        - paragraph [ref=e294]: Served as a Senior Leader overseeing both SAP Portal and Web Development Teams at SCE, with a combined responsibility for more than 40 professionals in specialized domains.
+        - list [ref=e295]:
+          - listitem [ref=e296]:
+            - generic [ref=e298]: Led a dedicated team of over 10 SAP Portal Developers, focusing on the development and maintenance of SCE’s SAP Portal with specialized expertise in SAP HCM and EAM.
+          - listitem [ref=e299]:
+            - generic [ref=e301]: Acted as the Practice Lead for a community of over 30 web developers, responsible for the development and ongoing maintenance of SCE’s enterprise-level websites.
+          - listitem [ref=e302]:
+            - generic [ref=e304]: Orchestrated the decommissioning of 150 legacy business applications, enhancing operational efficiency and resource optimization.
+          - listitem [ref=e305]:
+            - generic [ref=e307]: Engineered a data center routing solution at the Edison International (EIX) level, collaborating with stakeholders from Edison International companies and SCE.
+          - listitem [ref=e308]:
+            - generic [ref=e310]: Spearheaded the rebranding of the corporate intranet and Edison.com website, aligning both with organizational changes and earning accolades from the Web Marketing Association and The American Business Awards.
+          - listitem [ref=e311]:
+            - generic [ref=e313]: Presented on behalf of SCE at the NetWeaver Portal/BI Conference, sharing valuable insights into SCE’s SOA integration practices.
+          - listitem [ref=e314]:
+            - generic [ref=e316]: Acted as an annual judge for the Cal Poly CIS ITC web design competition, representing SCE and contributing to the broader web development community.
+    - generic [ref=e318]:
+      - generic [ref=e320]:
+        - heading "Founder and CTO of The One Ring - Tolkien Online, Pasadena, CA from April 1999 to September 2004" [level=4] [ref=e321]:
+          - link "Founder and CTO of The One Ring - Tolkien Online, Pasadena, CA from April 1999 to September 2004" [ref=e322] [cursor=pointer]:
             - /url: http://www.theonering.com/
-        - paragraph [ref=e324]: I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape.
-        - list [ref=e325]:
-          - listitem [ref=e326]:
-            - generic [ref=e328]: Garnered prestigious media coverage from outlets like Los Angeles Times, CNN, and The Guardian UK, establishing the website as an authoritative source in the field.
-          - listitem [ref=e329]:
-            - generic [ref=e331]: Featured in an extensive interview in the September 2001 issue of Wired Magazine, amplifying the site’s reputation and reach.
-          - listitem [ref=e332]:
-            - generic [ref=e334]: Achieved a top 10,000 ranking on Alexa, underlining the website’s popularity and impact in its niche.
-      - img "by" [ref=e336]
-    - generic [ref=e338]:
-      - img "by" [ref=e340]
-      - generic [ref=e342]:
-        - heading "Director of Technical Services at The Dohring Company, Glendale, CA from February 1994 to May 1999" [level=4] [ref=e343]:
-          - link "Director of Technical Services at The Dohring Company, Glendale, CA from February 1994 to May 1999" [ref=e344] [cursor=pointer]:
+        - paragraph [ref=e323]: I founded and spearheaded the operations for a leading website dedicated to J.R.R. Tolkien and the Lord of the Rings. During my time there, the site gained notable recognition in the media landscape.
+        - list [ref=e324]:
+          - listitem [ref=e325]:
+            - generic [ref=e327]: Garnered prestigious media coverage from outlets like Los Angeles Times, CNN, and The Guardian UK, establishing the website as an authoritative source in the field.
+          - listitem [ref=e328]:
+            - generic [ref=e330]: Featured in an extensive interview in the September 2001 issue of Wired Magazine, amplifying the site’s reputation and reach.
+          - listitem [ref=e331]:
+            - generic [ref=e333]: Achieved a top 10,000 ranking on Alexa, underlining the website’s popularity and impact in its niche.
+      - img "by" [ref=e335]
+    - generic [ref=e337]:
+      - img "by" [ref=e339]
+      - generic [ref=e341]:
+        - heading "Director of Technical Services at The Dohring Company, Glendale, CA from February 1994 to May 1999" [level=4] [ref=e342]:
+          - link "Director of Technical Services at The Dohring Company, Glendale, CA from February 1994 to May 1999" [ref=e343] [cursor=pointer]:
             - /url: http://www.dohring.com
-        - paragraph [ref=e345]: Direct a multifaceted team overseeing market research, surveys, and call center operations targeting both customer and competitor landscapes. Act as a liaison between Quality and Sales divisions to enhance product reliability and accuracy. Conduct in-depth financial and demand forecasts, presenting key insights to executive leadership on a weekly basis. Champion continuous enhancements in reporting, survey administration, and call center efficiency, while also realizing cost savings. Articulate a forward-thinking vision for the technical services department and innovate new product offerings. Partner with the Director of Quality to prioritize customer satisfaction and product excellence. Engage daily with the founder and CEO while reporting to senior-level management.
-        - list [ref=e346]:
-          - listitem [ref=e347]:
-            - generic [ref=e349]: Spearheaded the seamless transition from Microsoft Word for DOS 5.1 to Windows 95 and Microsoft Office 95, modernizing the company’s software infrastructure.
-          - listitem [ref=e350]:
-            - generic [ref=e352]: Innovated a novel product/market research report by synthesizing geospatial data and survey findings, utilizing Microsoft Word and MapInfo.
-          - listitem [ref=e353]:
-            - generic [ref=e355]: Elevated team productivity by 24% without increasing headcount through strategic process refinements, targeted training, and the utilization of advanced software tools.
-    - generic [ref=e360]:
-      - heading "Projects" [level=2] [ref=e361]
-      - paragraph [ref=e362]: From the comprehensive redesign of Southern California Edison's intranet and corporate websites to leading the innovative Edison SmartConnect project and creating unique digital applications like procedurally generated star constellations, I blend my expertise in web technologies and solution engineering to deliver projects that reshape our digital landscape.
-    - generic [ref=e364]:
-      - generic [ref=e366]:
-        - heading "Corporate Intranet Redesign" [level=4] [ref=e367]
-        - paragraph [ref=e368]: Project summary for the Corporate Intranet Redesign, detailing the update to the old design with new branding, introduction of various templates, menuing systems, and the implementation of AJAX and RSS, emphasizing improvements in the employee directory and paging system.
-        - list [ref=e369]:
-          - listitem [ref=e370]:
-            - generic [ref=e372]:
+        - paragraph [ref=e344]: Direct a multifaceted team overseeing market research, surveys, and call center operations targeting both customer and competitor landscapes. Act as a liaison between Quality and Sales divisions to enhance product reliability and accuracy. Conduct in-depth financial and demand forecasts, presenting key insights to executive leadership on a weekly basis. Champion continuous enhancements in reporting, survey administration, and call center efficiency, while also realizing cost savings. Articulate a forward-thinking vision for the technical services department and innovate new product offerings. Partner with the Director of Quality to prioritize customer satisfaction and product excellence. Engage daily with the founder and CEO while reporting to senior-level management.
+        - list [ref=e345]:
+          - listitem [ref=e346]:
+            - generic [ref=e348]: Spearheaded the seamless transition from Microsoft Word for DOS 5.1 to Windows 95 and Microsoft Office 95, modernizing the company’s software infrastructure.
+          - listitem [ref=e349]:
+            - generic [ref=e351]: Innovated a novel product/market research report by synthesizing geospatial data and survey findings, utilizing Microsoft Word and MapInfo.
+          - listitem [ref=e352]:
+            - generic [ref=e354]: Elevated team productivity by 24% without increasing headcount through strategic process refinements, targeted training, and the utilization of advanced software tools.
+    - generic [ref=e359]:
+      - heading "Projects" [level=2] [ref=e360]
+      - paragraph [ref=e361]: From the comprehensive redesign of Southern California Edison's intranet and corporate websites to leading the innovative Edison SmartConnect project and creating unique digital applications like procedurally generated star constellations, I blend my expertise in web technologies and solution engineering to deliver projects that reshape our digital landscape.
+    - generic [ref=e363]:
+      - generic [ref=e365]:
+        - heading "Corporate Intranet Redesign" [level=4] [ref=e366]
+        - paragraph [ref=e367]: Project summary for the Corporate Intranet Redesign, detailing the update to the old design with new branding, introduction of various templates, menuing systems, and the implementation of AJAX and RSS, emphasizing improvements in the employee directory and paging system.
+        - list [ref=e368]:
+          - listitem [ref=e369]:
+            - generic [ref=e371]:
               - text: Developed a refreshed home page and seven unique templates incorporating the new
-              - emphasis [ref=e373]: Building the Future
+              - emphasis [ref=e372]: Building the Future
               - text: branding while bridging the gap between the existing ERP Portal solution and previous company branding.
-          - listitem [ref=e374]:
-            - generic [ref=e376]: Integrated various technologies including HTML, XML, RSS, AJAX, and Perl, utilizing a Netscape Web Server and a Sybase database to enhance user interaction and accessibility.
-          - listitem [ref=e377]:
-            - generic [ref=e379]: Acted as Solution Engineer, Database Administrator (DBA), and Developer to implement an AJAX RSS reader, content wells for “portlets”, and overhaul the employee directory and paging system—two of the most frequently used applications within the company.
-      - img "by" [ref=e381]
-    - generic [ref=e383]:
-      - img "by" [ref=e385]
-      - generic [ref=e387]:
-        - heading "Edison.com Redesign - Corporate Website" [level=4] [ref=e388]
-        - paragraph [ref=e389]: Details of the Edison.com redesign project, highlighting the collaboration with Corporate Communications and Investor Relations, the goal to update branding, and the technical backend improvements.
-        - list [ref=e390]:
-          - listitem [ref=e391]:
-            - generic [ref=e393]: Led a collaborative project with Corporate Communications, Investor Relations, and an external design firm to revamp Edison International’s website, aiming for an “award-winning” design that honors the company’s century-long history as a California utility service provider.
-          - listitem [ref=e394]:
-            - generic [ref=e396]: Overhauled the website’s content structure and backend CMS to enhance the templating system, ensuring functionality across five distinct servers with unique domain names and assets.
-          - listitem [ref=e397]:
-            - generic [ref=e399]: Fulfilled multiple roles as the Architect, Solution Engineer, DBA, and Developer, utilizing technologies such as ASP, MSSQL, Microsoft Site Server, Windows 2003, HTML, RSS, Flash, XML, and JavaScript, contributing to the project’s recognition with 3 awards.
-    - generic [ref=e401]:
-      - generic [ref=e403]:
-        - heading "MyEdison.com - Corporate Portal" [level=4] [ref=e404]
-        - paragraph [ref=e405]: An overview of the MyEdison.com corporate portal project, detailing the integration of internally facing websites, use of technology, and the developer's role.
-        - list [ref=e406]:
-          - listitem [ref=e407]:
-            - generic [ref=e409]: Spearheaded the integration of internal web platforms into a unified corporate portal, focusing on seamless linkage with the corporate directory and the integration of Factiva for enhanced news and reporting capabilities.
-          - listitem [ref=e410]:
-            - generic [ref=e412]: Adapted to corporate shifts following the acquisition of Plumtree by BEA Software and impending ERP decisions, ensuring the project’s alignment with organizational strategy and technology standards.
-          - listitem [ref=e413]:
-            - generic [ref=e415]: Took on the roles of Solution Engineer and Developer, working with technologies such as Plumtree, C#, B.NET, and J2EE, successfully engaging 500 users at the project’s peak.
-      - img "by" [ref=e417]
-    - generic [ref=e419]:
-      - img "by" [ref=e421]
-      - generic [ref=e423]:
-        - heading "Edison International Portal - Corporate Portal" [level=4] [ref=e424]
-        - paragraph [ref=e425]: A project overview of the corporate portal developed by Ted Tschopp using SAP Portal, Java, XHTMLB, and HTMLB.
-        - list [ref=e426]:
-          - listitem [ref=e427]:
-            - generic [ref=e429]: Initiated a comprehensive project to create a corporate portal that consolidates all existing internal websites and previous portal initiatives, with a critical requirement for SAP integration, leading to the selection of the SAP Portal as the foundational technology.
-          - listitem [ref=e430]:
-            - generic [ref=e432]: Employed a range of technologies, including SAP Portal, Java, XHTMLB, and HTMLB, to build a cohesive and efficient portal system that aligns with the company’s operational needs.
-          - listitem [ref=e433]:
-            - generic [ref=e435]: Fulfilled the roles of Architect, Solution Engineer, and Developer, ensuring that the project met its main business objective of integrating seamlessly with SAP systems.
-    - generic [ref=e437]:
-      - generic [ref=e439]:
-        - heading "Edison SmartConnect" [level=4] [ref=e440]
-        - paragraph [ref=e441]: Key team member in SCE's Edison SmartConnect Project, overseeing installation of 5M smart meters, enhancing grid efficiency, and reducing energy demand. Significantly contributed to environmental conservation and improved customer energy management.
-        - list [ref=e442]:
-          - listitem [ref=e443]:
-            - generic [ref=e445]: Led the web portal architectural design for SCE’s $1.6 billion Edison SmartConnect Project, integrating advanced smart meter technology across a 50,000-square-mile area, targeting over 5 million residential and small-business customers enabling real-time electricity tracking and two-way communication, contributing to a 1,000 MW reduction in grid demand and a 365,000 metric ton decrease in greenhouse gas emissions.
-          - listitem [ref=e446]:
-            - generic [ref=e448]: Directed the integration of web technologies like HTML, Flash, XML, and JavaScript to streamline customer interactions and digital accessibility in the SmartConnect project, aligning with SCE’s vision of a smart, customer-friendly energy grid.
-          - listitem [ref=e449]:
-            - generic [ref=e451]: Pioneered customer experience improvements in energy management, facilitating seamless service transfers and preparing for future integration with smart home and business technologies.
-      - img "by" [ref=e453]
-    - generic [ref=e455]:
-      - img "Password List by Ted Tschopp" [ref=e457]
-      - generic [ref=e459]:
-        - heading "The Password Challenge" [level=4] [ref=e460]:
-          - link "The Password Challenge" [ref=e461] [cursor=pointer]:
+          - listitem [ref=e373]:
+            - generic [ref=e375]: Integrated various technologies including HTML, XML, RSS, AJAX, and Perl, utilizing a Netscape Web Server and a Sybase database to enhance user interaction and accessibility.
+          - listitem [ref=e376]:
+            - generic [ref=e378]: Acted as Solution Engineer, Database Administrator (DBA), and Developer to implement an AJAX RSS reader, content wells for “portlets”, and overhaul the employee directory and paging system—two of the most frequently used applications within the company.
+      - img "by" [ref=e380]
+    - generic [ref=e382]:
+      - img "by" [ref=e384]
+      - generic [ref=e386]:
+        - heading "Edison.com Redesign - Corporate Website" [level=4] [ref=e387]
+        - paragraph [ref=e388]: Details of the Edison.com redesign project, highlighting the collaboration with Corporate Communications and Investor Relations, the goal to update branding, and the technical backend improvements.
+        - list [ref=e389]:
+          - listitem [ref=e390]:
+            - generic [ref=e392]: Led a collaborative project with Corporate Communications, Investor Relations, and an external design firm to revamp Edison International’s website, aiming for an “award-winning” design that honors the company’s century-long history as a California utility service provider.
+          - listitem [ref=e393]:
+            - generic [ref=e395]: Overhauled the website’s content structure and backend CMS to enhance the templating system, ensuring functionality across five distinct servers with unique domain names and assets.
+          - listitem [ref=e396]:
+            - generic [ref=e398]: Fulfilled multiple roles as the Architect, Solution Engineer, DBA, and Developer, utilizing technologies such as ASP, MSSQL, Microsoft Site Server, Windows 2003, HTML, RSS, Flash, XML, and JavaScript, contributing to the project’s recognition with 3 awards.
+    - generic [ref=e400]:
+      - generic [ref=e402]:
+        - heading "MyEdison.com - Corporate Portal" [level=4] [ref=e403]
+        - paragraph [ref=e404]: An overview of the MyEdison.com corporate portal project, detailing the integration of internally facing websites, use of technology, and the developer's role.
+        - list [ref=e405]:
+          - listitem [ref=e406]:
+            - generic [ref=e408]: Spearheaded the integration of internal web platforms into a unified corporate portal, focusing on seamless linkage with the corporate directory and the integration of Factiva for enhanced news and reporting capabilities.
+          - listitem [ref=e409]:
+            - generic [ref=e411]: Adapted to corporate shifts following the acquisition of Plumtree by BEA Software and impending ERP decisions, ensuring the project’s alignment with organizational strategy and technology standards.
+          - listitem [ref=e412]:
+            - generic [ref=e414]: Took on the roles of Solution Engineer and Developer, working with technologies such as Plumtree, C#, B.NET, and J2EE, successfully engaging 500 users at the project’s peak.
+      - img "by" [ref=e416]
+    - generic [ref=e418]:
+      - img "by" [ref=e420]
+      - generic [ref=e422]:
+        - heading "Edison International Portal - Corporate Portal" [level=4] [ref=e423]
+        - paragraph [ref=e424]: A project overview of the corporate portal developed by Ted Tschopp using SAP Portal, Java, XHTMLB, and HTMLB.
+        - list [ref=e425]:
+          - listitem [ref=e426]:
+            - generic [ref=e428]: Initiated a comprehensive project to create a corporate portal that consolidates all existing internal websites and previous portal initiatives, with a critical requirement for SAP integration, leading to the selection of the SAP Portal as the foundational technology.
+          - listitem [ref=e429]:
+            - generic [ref=e431]: Employed a range of technologies, including SAP Portal, Java, XHTMLB, and HTMLB, to build a cohesive and efficient portal system that aligns with the company’s operational needs.
+          - listitem [ref=e432]:
+            - generic [ref=e434]: Fulfilled the roles of Architect, Solution Engineer, and Developer, ensuring that the project met its main business objective of integrating seamlessly with SAP systems.
+    - generic [ref=e436]:
+      - generic [ref=e438]:
+        - heading "Edison SmartConnect" [level=4] [ref=e439]
+        - paragraph [ref=e440]: Key team member in SCE's Edison SmartConnect Project, overseeing installation of 5M smart meters, enhancing grid efficiency, and reducing energy demand. Significantly contributed to environmental conservation and improved customer energy management.
+        - list [ref=e441]:
+          - listitem [ref=e442]:
+            - generic [ref=e444]: Led the web portal architectural design for SCE’s $1.6 billion Edison SmartConnect Project, integrating advanced smart meter technology across a 50,000-square-mile area, targeting over 5 million residential and small-business customers enabling real-time electricity tracking and two-way communication, contributing to a 1,000 MW reduction in grid demand and a 365,000 metric ton decrease in greenhouse gas emissions.
+          - listitem [ref=e445]:
+            - generic [ref=e447]: Directed the integration of web technologies like HTML, Flash, XML, and JavaScript to streamline customer interactions and digital accessibility in the SmartConnect project, aligning with SCE’s vision of a smart, customer-friendly energy grid.
+          - listitem [ref=e448]:
+            - generic [ref=e450]: Pioneered customer experience improvements in energy management, facilitating seamless service transfers and preparing for future integration with smart home and business technologies.
+      - img "by" [ref=e452]
+    - generic [ref=e454]:
+      - img "Password List by Ted Tschopp" [ref=e456]
+      - generic [ref=e458]:
+        - heading "The Password Challenge" [level=4] [ref=e459]:
+          - link "The Password Challenge" [ref=e460] [cursor=pointer]:
             - /url: https://The-Password-Challange.tedt.org
-        - paragraph [ref=e462]: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
-        - list [ref=e463]:
-          - listitem [ref=e464]:
-            - generic [ref=e466]: Includes a dictionary of the most common passwords
-          - listitem [ref=e467]:
-            - generic [ref=e469]: Includes a dictionary of the most common English words
-          - listitem [ref=e470]:
-            - generic [ref=e472]: Includes a dictionary of the most common passwords that have been hacked already
-    - generic [ref=e474]:
-      - generic [ref=e476]:
-        - heading "Procedural Text Generation" [level=4] [ref=e477]:
-          - link "Procedural Text Generation" [ref=e478] [cursor=pointer]:
+        - paragraph [ref=e461]: Check the strength of your password based on mathematical models that take into account the latest hacking techniques!
+        - list [ref=e462]:
+          - listitem [ref=e463]:
+            - generic [ref=e465]: Includes a dictionary of the most common passwords
+          - listitem [ref=e466]:
+            - generic [ref=e468]: Includes a dictionary of the most common English words
+          - listitem [ref=e469]:
+            - generic [ref=e471]: Includes a dictionary of the most common passwords that have been hacked already
+    - generic [ref=e473]:
+      - generic [ref=e475]:
+        - heading "Procedural Text Generation" [level=4] [ref=e476]:
+          - link "Procedural Text Generation" [ref=e477] [cursor=pointer]:
             - /url: https://randomtables.tedt.org
-        - paragraph [ref=e479]: An application that generates text using procedural methods.
-        - list [ref=e480]:
-          - listitem [ref=e481]:
-            - generic [ref=e483]: A work in progress to help build an automated story telling computer
-          - listitem [ref=e484]:
-            - generic [ref=e486]: Over 100 tables of various objects and qualities.
-      - img "Text Generation Code by Ted Tschopp" [ref=e488]
-    - generic [ref=e490]:
-      - img "by" [ref=e492]
-      - generic [ref=e494]:
-        - heading "Random Star Constellations" [level=4] [ref=e495]:
-          - link "Random Star Constellations" [ref=e496] [cursor=pointer]:
+        - paragraph [ref=e478]: An application that generates text using procedural methods.
+        - list [ref=e479]:
+          - listitem [ref=e480]:
+            - generic [ref=e482]: A work in progress to help build an automated story telling computer
+          - listitem [ref=e483]:
+            - generic [ref=e485]: Over 100 tables of various objects and qualities.
+      - img "Text Generation Code by Ted Tschopp" [ref=e487]
+    - generic [ref=e489]:
+      - img "by" [ref=e491]
+      - generic [ref=e493]:
+        - heading "Random Star Constellations" [level=4] [ref=e494]:
+          - link "Random Star Constellations" [ref=e495] [cursor=pointer]:
             - /url: https://random-constellations.tedt.org
-        - paragraph [ref=e497]: An application I threw together to output a bunch of Procedurally generated star constellations.
-        - list [ref=e498]:
-          - listitem [ref=e499]:
-            - generic [ref=e501]: Developed an application designed to procedurally generate and output a series of star constellations, showcasing the ability to quickly create engaging digital content.
-          - listitem [ref=e502]:
-            - generic [ref=e504]: Utilized a combination of Twitter and Mastodon bots, along with JavaScript and HTML, to automate and disseminate the generated constellations across social platforms.
-          - listitem [ref=e505]:
-            - generic [ref=e507]: Operated as a Full Stack developer, managing both the front-end and back-end development processes to bring the creative concept to fruition.
-    - generic [ref=e509]:
-      - generic [ref=e511]:
-        - heading "Mastodon Bots - Random Board Game Night" [level=4] [ref=e512]:
-          - link "Mastodon Bots - Random Board Game Night" [ref=e513] [cursor=pointer]:
+        - paragraph [ref=e496]: An application I threw together to output a bunch of Procedurally generated star constellations.
+        - list [ref=e497]:
+          - listitem [ref=e498]:
+            - generic [ref=e500]: Developed an application designed to procedurally generate and output a series of star constellations, showcasing the ability to quickly create engaging digital content.
+          - listitem [ref=e501]:
+            - generic [ref=e503]: Utilized a combination of Twitter and Mastodon bots, along with JavaScript and HTML, to automate and disseminate the generated constellations across social platforms.
+          - listitem [ref=e504]:
+            - generic [ref=e506]: Operated as a Full Stack developer, managing both the front-end and back-end development processes to bring the creative concept to fruition.
+    - generic [ref=e508]:
+      - generic [ref=e510]:
+        - heading "Mastodon Bots - Random Board Game Night" [level=4] [ref=e511]:
+          - link "Mastodon Bots - Random Board Game Night" [ref=e512] [cursor=pointer]:
             - /url: https://tschopp.net/@bots
-        - paragraph [ref=e514]: An application of the Procedural Text Generation system to create a new game for you to play every hour.
-        - list [ref=e515]:
-          - listitem [ref=e516]:
-            - generic [ref=e518]: Need ideas for your board game night. Look no further. We have you covered!
-          - listitem [ref=e519]:
-            - generic [ref=e521]: Uses tables from the Procedural Text Generation system I am using for computerized fiction
-      - img "Board Game Night by Ted Tschopp" [ref=e523]
-    - generic [ref=e525]:
-      - img "RPG Map by Ted Tschopp" [ref=e527]
-      - generic [ref=e529]:
-        - heading "Mastodon Bots - Map Generator" [level=4] [ref=e530]:
-          - link "Mastodon Bots - Map Generator" [ref=e531] [cursor=pointer]:
+        - paragraph [ref=e513]: An application of the Procedural Text Generation system to create a new game for you to play every hour.
+        - list [ref=e514]:
+          - listitem [ref=e515]:
+            - generic [ref=e517]: Need ideas for your board game night. Look no further. We have you covered!
+          - listitem [ref=e518]:
+            - generic [ref=e520]: Uses tables from the Procedural Text Generation system I am using for computerized fiction
+      - img "Board Game Night by Ted Tschopp" [ref=e522]
+    - generic [ref=e524]:
+      - img "RPG Map by Ted Tschopp" [ref=e526]
+      - generic [ref=e528]:
+        - heading "Mastodon Bots - Map Generator" [level=4] [ref=e529]:
+          - link "Mastodon Bots - Map Generator" [ref=e530] [cursor=pointer]:
             - /url: https://tschopp.net/@mapbot
-        - paragraph [ref=e532]: This bot Uses Gary Gygax's DMG Appendix B Random Wilderness Terrain to create a simple TTRPG map that moves from one place to another passing through various biomes.
-        - list [ref=e533]:
-          - listitem [ref=e534]:
-            - generic [ref=e536]: Watch Adventures take place via a series of Map Emoji’s
-          - listitem [ref=e537]:
-            - generic [ref=e539]: I converted Gary Gygax’s DMG Appendix B Random Wilderness Terrain to use the Procedural Text Generation system I am using for computerized fiction
-  - contentinfo [ref=e540]:
-    - generic [ref=e541]:
-      - generic [ref=e543]:
-        - img "Photo of Ted Tschopp" [ref=e546]
-        - link "Ted Tschopp" [ref=e549] [cursor=pointer]:
+        - paragraph [ref=e531]: This bot Uses Gary Gygax's DMG Appendix B Random Wilderness Terrain to create a simple TTRPG map that moves from one place to another passing through various biomes.
+        - list [ref=e532]:
+          - listitem [ref=e533]:
+            - generic [ref=e535]: Watch Adventures take place via a series of Map Emoji’s
+          - listitem [ref=e536]:
+            - generic [ref=e538]: I converted Gary Gygax’s DMG Appendix B Random Wilderness Terrain to use the Procedural Text Generation system I am using for computerized fiction
+  - contentinfo [ref=e539]:
+    - generic [ref=e540]:
+      - generic [ref=e542]:
+        - img "Photo of Ted Tschopp" [ref=e545]
+        - link "Ted Tschopp" [ref=e548] [cursor=pointer]:
           - /url: https://tedt.org
-          - paragraph [ref=e550] [cursor=pointer]:
-            - generic [ref=e551] [cursor=pointer]:
-              - generic [ref=e552] [cursor=pointer]: Ted
-              - generic [ref=e553] [cursor=pointer]: Tschopp
-        - paragraph [ref=e556]: Senior Enterprise Architect
-        - paragraph [ref=e559]:
-          - generic [ref=e560]: Los Angeles
+          - paragraph [ref=e549] [cursor=pointer]:
+            - generic [ref=e550] [cursor=pointer]:
+              - generic [ref=e551] [cursor=pointer]: Ted
+              - generic [ref=e552] [cursor=pointer]: Tschopp
+        - paragraph [ref=e555]: Senior Enterprise Architect
+        - paragraph [ref=e558]:
+          - generic [ref=e559]: Los Angeles
           - text: ","
-          - generic [ref=e561]: California
+          - generic [ref=e560]: California
           - text: ","
-          - generic [ref=e562]: USA
-      - generic [ref=e563]:
-        - list [ref=e565]:
-          - listitem [ref=e566]: I am the enterprise architect at Southern California Edison (SCE), serving over 20 million people across 430 cities and 50,000 square miles. In my role, I offer strategic guidance on all software and products developed in IT to executives, senior leadership, and business stakeholders, drawing on my 25 years of experience at SCE.
-          - listitem [ref=e567]: Before joining Edison, I owned a business featured in Wired Magazine. I founded the largest J.R.R. Tolkien community website. Earlier, I worked in market research for the automotive industry.
-          - listitem [ref=e568]: I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
-          - listitem [ref=e569]:
-            - generic [ref=e570]: T
-        - generic [ref=e572]:
-          - generic [ref=e573]:
-            - paragraph [ref=e574]: About Me
-            - list [ref=e575]:
-              - listitem [ref=e576]:
-                - link "Website" [ref=e577] [cursor=pointer]:
+          - generic [ref=e561]: USA
+      - generic [ref=e562]:
+        - list [ref=e564]:
+          - listitem [ref=e565]: I am the enterprise architect at Southern California Edison (SCE), serving over 20 million people across 430 cities and 50,000 square miles. In my role, I offer strategic guidance on all software and products developed in IT to executives, senior leadership, and business stakeholders, drawing on my 25 years of experience at SCE.
+          - listitem [ref=e566]: Before joining Edison, I owned a business featured in Wired Magazine. I founded the largest J.R.R. Tolkien community website. Earlier, I worked in market research for the automotive industry.
+          - listitem [ref=e567]: I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
+          - listitem [ref=e568]:
+            - generic [ref=e569]: T
+        - generic [ref=e571]:
+          - generic [ref=e572]:
+            - paragraph [ref=e573]: About Me
+            - list [ref=e574]:
+              - listitem [ref=e575]:
+                - link "Website" [ref=e576] [cursor=pointer]:
                   - /url: https://www.tedt.org
                   - text: Website
-              - listitem [ref=e578]:
-                - link "Medium" [ref=e579] [cursor=pointer]:
+              - listitem [ref=e577]:
+                - link "Medium" [ref=e578] [cursor=pointer]:
                   - /url: https://medium.com/@TedTschopp
                   - text: Medium
-              - listitem [ref=e580]:
-                - link "Indieweb" [ref=e581] [cursor=pointer]:
+              - listitem [ref=e579]:
+                - link "Indieweb" [ref=e580] [cursor=pointer]:
                   - /url: https://indieweb.org/User:Www.tedt.org
                   - text: Indie
                   - text: web
-              - listitem [ref=e582]:
-                - link "Keybase" [ref=e583] [cursor=pointer]:
+              - listitem [ref=e581]:
+                - link "Keybase" [ref=e582] [cursor=pointer]:
                   - /url: https://keybase.io/tedtschopp
                   - text: Key
                   - text: base
-              - listitem [ref=e584]:
-                - link "Email" [ref=e585] [cursor=pointer]:
+              - listitem [ref=e583]:
+                - link "Email" [ref=e584] [cursor=pointer]:
                   - /url: mailto:ted@tedt.org
                   - text: Email
-              - listitem [ref=e586]:
-                - link "Meetup" [ref=e587] [cursor=pointer]:
+              - listitem [ref=e585]:
+                - link "Meetup" [ref=e586] [cursor=pointer]:
                   - /url: https://www.meetup.com/members//45846/
                   - text: Meetup
-              - listitem [ref=e588]:
-                - link "Foursquare" [ref=e589] [cursor=pointer]:
+              - listitem [ref=e587]:
+                - link "Foursquare" [ref=e588] [cursor=pointer]:
                   - /url: https://foursquare.com/tedtschopp
                   - text: Foursquare
-          - generic [ref=e590]:
-            - paragraph [ref=e591]: Support Me
-            - list [ref=e592]:
-              - listitem [ref=e593]:
-                - link "BuyMeACoffee" [ref=e594] [cursor=pointer]:
+          - generic [ref=e589]:
+            - paragraph [ref=e590]: Support Me
+            - list [ref=e591]:
+              - listitem [ref=e592]:
+                - link "BuyMeACoffee" [ref=e593] [cursor=pointer]:
                   - /url: https://buymeacoffee.com/TedT
                   - text: Buy
                   - text: Me
                   - text: A
                   - text: Coffee
-              - listitem [ref=e595]:
-                - link "Ko-Fi" [ref=e596] [cursor=pointer]:
+              - listitem [ref=e594]:
+                - link "Ko-Fi" [ref=e595] [cursor=pointer]:
                   - /url: https://ko-fi.com/tedtschopp
                   - text: Ko-
                   - text: Fi
-          - generic [ref=e597]:
-            - paragraph [ref=e598]: Social Media
-            - list [ref=e599]:
-              - listitem [ref=e600]:
-                - link "web.brid.gy" [ref=e601] [cursor=pointer]:
+          - generic [ref=e596]:
+            - paragraph [ref=e597]: Social Media
+            - list [ref=e598]:
+              - listitem [ref=e599]:
+                - link "web.brid.gy" [ref=e600] [cursor=pointer]:
                   - /url: https://web.brid.gy/r/https://tedt.org/
                   - text: web.
                   - text: brid.
                   - text: gy
-              - listitem [ref=e602]:
-                - link "Mastodon" [ref=e603] [cursor=pointer]:
+              - listitem [ref=e601]:
+                - link "Mastodon" [ref=e602] [cursor=pointer]:
                   - /url: https://twit.social/@TedT
                   - text: Mastodon
-              - listitem [ref=e604]:
-                - link "BlueSky" [ref=e605] [cursor=pointer]:
+              - listitem [ref=e603]:
+                - link "BlueSky" [ref=e604] [cursor=pointer]:
                   - /url: https://bsky.app/profile/tedt.org
                   - text: Blue
                   - text: Sky
-              - listitem [ref=e606]:
-                - link "Threads" [ref=e607] [cursor=pointer]:
+              - listitem [ref=e605]:
+                - link "Threads" [ref=e606] [cursor=pointer]:
                   - /url: https://threads.net/@TedTschopp
                   - text: Threads
-              - listitem [ref=e608]:
-                - link "Facebook" [ref=e609] [cursor=pointer]:
+              - listitem [ref=e607]:
+                - link "Facebook" [ref=e608] [cursor=pointer]:
                   - /url: https://www.facebook.com/ted.tschopp
                   - text: Face
                   - text: book
-              - listitem [ref=e610]:
-                - link "Instagram" [ref=e611] [cursor=pointer]:
+              - listitem [ref=e609]:
+                - link "Instagram" [ref=e610] [cursor=pointer]:
                   - /url: https://www.instagram.com/TedTschopp
                   - text: Insta
                   - text: gram
-              - listitem [ref=e612]:
-                - link "Messenger" [ref=e613] [cursor=pointer]:
+              - listitem [ref=e611]:
+                - link "Messenger" [ref=e612] [cursor=pointer]:
                   - /url: https://m.me/TedTschopp
                   - text: Messenger
-              - listitem [ref=e614]:
-                - link "Twitter" [ref=e615] [cursor=pointer]:
+              - listitem [ref=e613]:
+                - link "Twitter" [ref=e614] [cursor=pointer]:
                   - /url: https://twitter.com/TedTschopp
                   - text: Twitter
-              - listitem [ref=e616]:
-                - link "LinkedIn" [ref=e617] [cursor=pointer]:
+              - listitem [ref=e615]:
+                - link "LinkedIn" [ref=e616] [cursor=pointer]:
                   - /url: https://www.linkedin.com/in/tedtschopp
                   - text: Linked
                   - text: In
-              - listitem [ref=e618]:
-                - link "Snapchat" [ref=e619] [cursor=pointer]:
+              - listitem [ref=e617]:
+                - link "Snapchat" [ref=e618] [cursor=pointer]:
                   - /url: https://www.snapchat.com/add/TedTschopp
                   - text: Snap
                   - text: chat
-              - listitem [ref=e620]:
-                - link "Reddit" [ref=e621] [cursor=pointer]:
+              - listitem [ref=e619]:
+                - link "Reddit" [ref=e620] [cursor=pointer]:
                   - /url: http://reddit.com/u/TedTschopp
                   - text: Reddit
-          - generic [ref=e622]:
-            - paragraph [ref=e623]: Creative
-            - list [ref=e624]:
-              - listitem [ref=e625]:
-                - link "Goodreads" [ref=e626] [cursor=pointer]:
+          - generic [ref=e621]:
+            - paragraph [ref=e622]: Creative
+            - list [ref=e623]:
+              - listitem [ref=e624]:
+                - link "Goodreads" [ref=e625] [cursor=pointer]:
                   - /url: https://www.goodreads.com/user/show/856383-ted-tschopp
                   - text: Good
                   - text: reads
-              - listitem [ref=e627]:
-                - link "Pinterest" [ref=e628] [cursor=pointer]:
+              - listitem [ref=e626]:
+                - link "Pinterest" [ref=e627] [cursor=pointer]:
                   - /url: https://pinterest.com/tedtschopp
                   - text: Pin
                   - text: terest
-              - listitem [ref=e629]:
-                - link "Tumblr" [ref=e630] [cursor=pointer]:
+              - listitem [ref=e628]:
+                - link "Tumblr" [ref=e629] [cursor=pointer]:
                   - /url: https://www.tumblr.com/blog/tedtschopp
                   - text: Tumblr
-              - listitem [ref=e631]:
-                - link "Quora" [ref=e632] [cursor=pointer]:
+              - listitem [ref=e630]:
+                - link "Quora" [ref=e631] [cursor=pointer]:
                   - /url: https://www.quora.com/profile/Ted-Tschopp
                   - text: Quora
-              - listitem [ref=e633]:
-                - link "YouTube" [ref=e634] [cursor=pointer]:
+              - listitem [ref=e632]:
+                - link "YouTube" [ref=e633] [cursor=pointer]:
                   - /url: https://www.youtube.com/channel/UC4Q8pXroTVyXrIxg2u82pwg
                   - text: You
                   - text: Tube
-              - listitem [ref=e635]:
-                - link "Twitch" [ref=e636] [cursor=pointer]:
+              - listitem [ref=e634]:
+                - link "Twitch" [ref=e635] [cursor=pointer]:
                   - /url: https://twitch.tv/tedtschopp
                   - text: Twitch
-              - listitem [ref=e637]:
-                - link "Vimeo" [ref=e638] [cursor=pointer]:
+              - listitem [ref=e636]:
+                - link "Vimeo" [ref=e637] [cursor=pointer]:
                   - /url: https://vimeo.com/TedTschopp
                   - text: Vimeo
-              - listitem [ref=e639]:
-                - link "SoundCloud" [ref=e640] [cursor=pointer]:
+              - listitem [ref=e638]:
+                - link "SoundCloud" [ref=e639] [cursor=pointer]:
                   - /url: https://www.soundcloud.com/ted-tschopp
                   - text: Sound
                   - text: Cloud
-              - listitem [ref=e641]:
-                - link "Midjourney" [ref=e642] [cursor=pointer]:
+              - listitem [ref=e640]:
+                - link "Midjourney" [ref=e641] [cursor=pointer]:
                   - /url: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
                   - text: Mid
                   - text: journey
-          - generic [ref=e643]:
-            - paragraph [ref=e644]: Coding
-            - list [ref=e645]:
-              - listitem [ref=e646]:
-                - link "GitHub" [ref=e647] [cursor=pointer]:
+          - generic [ref=e642]:
+            - paragraph [ref=e643]: Coding
+            - list [ref=e644]:
+              - listitem [ref=e645]:
+                - link "GitHub" [ref=e646] [cursor=pointer]:
                   - /url: http://github.com/TedTschopp
                   - text: Git
                   - text: Hub
-              - listitem [ref=e648]:
-                - link "🤗" [ref=e649] [cursor=pointer]:
+              - listitem [ref=e647]:
+                - link "🤗" [ref=e648] [cursor=pointer]:
                   - /url: https://huggingface.co/TedTschopp
-                - link "Hugging Face" [ref=e650] [cursor=pointer]:
+                - link "Hugging Face" [ref=e649] [cursor=pointer]:
                   - /url: https://huggingface.co/TedTschopp
-              - listitem [ref=e651]:
-                - link "Dev.to" [ref=e652] [cursor=pointer]:
+              - listitem [ref=e650]:
+                - link "Dev.to" [ref=e651] [cursor=pointer]:
                   - /url: https://dev.to/tedtschopp
                   - text: Dev.to
-          - generic [ref=e653]:
-            - paragraph [ref=e654]: Gaming
-            - list [ref=e655]:
-              - listitem [ref=e656]:
-                - link "Steam" [ref=e657] [cursor=pointer]:
+          - generic [ref=e652]:
+            - paragraph [ref=e653]: Gaming
+            - list [ref=e654]:
+              - listitem [ref=e655]:
+                - link "Steam" [ref=e656] [cursor=pointer]:
                   - /url: https://steamcommunity.com/id/TedTschopp
                   - text: Steam
-              - listitem [ref=e658]:
-                - link "xBox" [ref=e659] [cursor=pointer]:
+              - listitem [ref=e657]:
+                - link "xBox" [ref=e658] [cursor=pointer]:
                   - /url: https://account.xbox.com/en-us/profile?gamertag=/TedTschopp
                   - text: xBox
-              - listitem [ref=e660]:
-                - link "GoG" [ref=e661] [cursor=pointer]:
+              - listitem [ref=e659]:
+                - link "GoG" [ref=e660] [cursor=pointer]:
                   - /url: https://www.gog.com/u/TedTschopp
                   - text: GoG
-      - generic [ref=e662]:
-        - list [ref=e664]:
-          - listitem [ref=e665]:
-            - link "About" [ref=e666] [cursor=pointer]:
+      - generic [ref=e661]:
+        - list [ref=e663]:
+          - listitem [ref=e664]:
+            - link "About" [ref=e665] [cursor=pointer]:
               - /url: https://tedt.org/About/
-          - listitem [ref=e667]: ⋅
-          - listitem [ref=e668]:
-            - link "Terms of Use" [ref=e669] [cursor=pointer]:
+          - listitem [ref=e666]: ⋅
+          - listitem [ref=e667]:
+            - link "Terms of Use" [ref=e668] [cursor=pointer]:
               - /url: https://tedt.org/Terms-of-Use/
-          - listitem [ref=e670]: ⋅
-          - listitem [ref=e671]:
-            - link "Privacy Policy" [ref=e672] [cursor=pointer]:
+          - listitem [ref=e669]: ⋅
+          - listitem [ref=e670]:
+            - link "Privacy Policy" [ref=e671] [cursor=pointer]:
               - /url: https://tedt.org/Privacy-Policy/
-        - paragraph [ref=e674]: Copyright © Ted Tschopp 2003 - 2025. All Rights Reserved
+        - paragraph [ref=e673]: Copyright © Ted Tschopp 2003 - 2025. All Rights Reserved
 ```
