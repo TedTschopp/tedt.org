@@ -126,13 +126,19 @@ redirect_from:
                 </form>
                 <div class="flex-shrink-0" style="min-width:200px;">
                     <label for="sort-select" class="visually-hidden">Sort prompts</label>
-                    <select class="form-select" id="sort-select" aria-label="Sort prompts" disabled>
-                        <option value="newest">Sort by Newest</option>
-                        <option value="highest">Sort by Highest Rating</option>
-                        <option value="alphabetical">Sort Alphabetically</option>
+                    {%- comment -%}
+                    Sort dropdown was previously rendered with the 'disabled' attribute, preventing user interaction.
+                    JavaScript logic below already handles 'change' events (lines later in file). Removed 'disabled'
+                    and added an explicit placeholder option for clarity & accessibility per WCAG 3.3.2 (labels/instructions).
+                    {%- endcomment -%}
+                    <select class="form-select" id="sort-select" aria-label="Sort prompts">
+                        <option value="newest">Newest first</option>
+                        <option value="highest">Highest rating</option>
+                        <option value="alphabetical">Alphabetical A→Z</option>
                     </select>
                 </div>
             </div>
+            <div class="visually-hidden" aria-live="polite" id="sort-status"></div>
             <div class="d-flex flex-wrap gap-2 mt-3" role="group" aria-label="Filter prompts by category">
                 <button class="btn btn-outline-secondary btn-toggle flex-fill" style="min-width: 140px;" 
                         aria-pressed="true" data-filter="all">All Categories</button>
@@ -441,10 +447,17 @@ redirect_from:
 
         // Sort functionality
         const sortSelect = document.getElementById('sort-select');
+        const sortStatus = document.getElementById('sort-status');
         sortSelect.addEventListener('change', function() {
             currentSort = this.value;
             currentPage = 1;
             applyFiltersAndSort();
+            if (sortStatus) {
+                let readable = 'Sorted by newest';
+                if (currentSort === 'highest') readable = 'Sorted by highest rating';
+                else if (currentSort === 'alphabetical') readable = 'Sorted alphabetically';
+                sortStatus.textContent = readable;
+            }
         });
 
         // Main function to apply filters, search, and sorting
