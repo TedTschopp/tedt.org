@@ -18,10 +18,8 @@ author:
   url: https://tedt.org/
 bullets:
 - ''
-description: A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen
-  Engine's Expert FAME Mechanics
-seo-description: A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen
-  Engine's Expert FAME Mechanics
+description: A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen  Engine's Expert FAME Mechanics
+seo-description: A TTRPG Game That Fits in a Few Toots - An Introduction to The Märchen Engine's Expert FAME Mechanics
 categories:
 - Role Playing Games
 - The Märchen Engine

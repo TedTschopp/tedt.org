@@ -38,40 +38,60 @@
       1. [Executive Version](#executive-version)
       2. [Manager Version](#manager-version)
       3. [Individual Contributor Version](#individual-contributor-version)
-7. [6. Risk-weighted scenario planning](#6-risk-weighted-scenario-planning)
-8. [7. Feature prioritization matrix](#7-feature-prioritization-matrix)
-9. [8. Learning acceleration prompt](#8-learning-acceleration-prompt)
-10. [9. Message testing framework](#9-message-testing-framework)
-11. [10. Systems thinking analyzer](#10-systems-thinking-analyzer)
-12. [11. Innovation constraint solver](#11-innovation-constraint-solver)
-13. [12. Quality assurance recursion](#12-quality-assurance-recursion)
-14. [13. Be Proactive (Circle of Influence Analyzer)](#13-be-proactive-circle-of-influence-analyzer)
-15. [14. Begin With the End in Mind (Mission Statement Builder)](#14-begin-with-the-end-in-mind-mission-statement-builder)
-16. [15. Put First Things First (Priority Matrix Master)](#15-put-first-things-first-priority-matrix-master)
-17. [16. Think Win-Win (Conflict Resolution Coach)](#16-think-win-win-conflict-resolution-coach)
-18. [17. Seek First to Understand (Empathetic Listening Guide)](#17-seek-first-to-understand-empathetic-listening-guide)
-19. [18. Synergize (Creative Collaboration Catalyst)](#18-synergize-creative-collaboration-catalyst)
-20. [19. Sharpen the Saw (Personal Renewal Planner)](#19-sharpen-the-saw-personal-renewal-planner)
-21. [20. The 80/20 Analyzer](#20-the-8020-analyzer)
-22. [21. Worst-Case Scenario Planner](#21-worst-case-scenario-planner)
-23. [22. The Minimum Effective Effort](#22-the-minimum-effective-effort)
-24. [23. The Deconstructionist (Reverse-Engineering Master)](#23-the-deconstructionist-reverse-engineering-master)
-25. [24. The Contrarian Strategist (Opposite Day Success)](#24-the-contrarian-strategist-opposite-day-success)
-26. [25. The Rapid Skill Acquisition Hack (Learn Anything in 20 Hours)](#25-the-rapid-skill-acquisition-hack-learn-anything-in-20-hours)
-27. [26. The Flow Zone Calibrator (Challenge-Skill Balance Master)](#26-the-flow-zone-calibrator-challenge-skill-balance-master)
-28. [27. The Clear Goal Architect (Purpose Clarity Generator)](#27-the-clear-goal-architect-purpose-clarity-generator)
-29. [28. The Distraction Elimination Expert (Attention Merger Specialist)](#28-the-distraction-elimination-expert-attention-merger-specialist)
-30. [29. The Immediate Feedback Designer (Performance Optimization Loop)](#29-the-immediate-feedback-designer-performance-optimization-loop)
-31. [30. The Self-Consciousness Eraser (Ego Dissolution Facilitator)](#30-the-self-consciousness-eraser-ego-dissolution-facilitator)
-32. [31. The Time Transformation Specialist (Temporal Flow Optimizer)](#31-the-time-transformation-specialist-temporal-flow-optimizer)
-33. [32. The Autotelic Experience Creator (Intrinsically Motivated Activity Designer)](#32-the-autotelic-experience-creator-intrinsically-motivated-activity-designer)
-34. [33. The Deep Work Session (Distraction-Proof Planner)](#33-the-deep-work-session-distraction-proof-planner)
-35. [34. Time Audit Master](#34-time-audit-master)
-36. [35. The Digital Minimalism Strategist](#35-the-digital-minimalism-strategist)
-37. [36. The Deep Work Ritual Designer (Consistency Builder)](#36-the-deep-work-ritual-designer-consistency-builder)
-38. [37. Mental Clarity Optimizer](#37-mental-clarity-optimizer)
-39. [38. Career Capital Builder](#38-career-capital-builder)
-40. [39. The Networking Builder (Social Media Strategy)](#39-the-networking-builder-social-media-strategy)
+7. [6. Vision Statement](#6-vision-statement)
+   1. [Role and Objective](#role-and-objective-5)
+   2. [Instructions](#instructions-4)
+      1. [Step-by-Step Guidance](#step-by-step-guidance)
+   3. [Output Requirements](#output-requirements)
+   4. [Iteration Process](#iteration-process)
+   5. [Output Format](#output-format-5)
+   6. [Additional Notes](#additional-notes-1)
+   7. [Stop Conditions](#stop-conditions-2)
+8. [7. Mission Statement Builder](#7-mission-statement-builder)
+   1. [Process Checklist](#process-checklist)
+   2. [Instructions](#instructions-5)
+   3. [Output Format](#output-format-6)
+9. [8. Personal Self Improvement Planner](#8-personal-self-improvement-planner)
+   1. [Role and Objective](#role-and-objective-6)
+   2. [Plan First](#plan-first)
+   3. [Instructions](#instructions-6)
+   4. [Output Format](#output-format-7)
+   5. [Post-action Validation](#post-action-validation)
+   6. [Verbosity](#verbosity-1)
+   7. [Stop Conditions](#stop-conditions-3)
+   8. [Post-schedule User Options](#post-schedule-user-options)
+10. [6. Risk-weighted scenario planning](#6-risk-weighted-scenario-planning)
+11. [7. Feature prioritization matrix](#7-feature-prioritization-matrix)
+12. [8. Learning acceleration prompt](#8-learning-acceleration-prompt)
+13. [9. Message testing framework](#9-message-testing-framework)
+14. [10. Systems thinking analyzer](#10-systems-thinking-analyzer)
+15. [11. Innovation constraint solver](#11-innovation-constraint-solver)
+16. [12. Quality assurance recursion](#12-quality-assurance-recursion)
+17. [13. Be Proactive (Circle of Influence Analyzer)](#13-be-proactive-circle-of-influence-analyzer)
+18. [15. Put First Things First (Priority Matrix Master)](#15-put-first-things-first-priority-matrix-master)
+19. [16. Think Win-Win (Conflict Resolution Coach)](#16-think-win-win-conflict-resolution-coach)
+20. [17. Seek First to Understand (Empathetic Listening Guide)](#17-seek-first-to-understand-empathetic-listening-guide)
+21. [18. Synergize (Creative Collaboration Catalyst)](#18-synergize-creative-collaboration-catalyst)
+22. [20. The 80/20 Analyzer](#20-the-8020-analyzer)
+23. [21. Worst-Case Scenario Planner](#21-worst-case-scenario-planner)
+24. [22. The Minimum Effective Effort](#22-the-minimum-effective-effort)
+25. [23. The Deconstructionist (Reverse-Engineering Master)](#23-the-deconstructionist-reverse-engineering-master)
+26. [24. The Contrarian Strategist (Opposite Day Success)](#24-the-contrarian-strategist-opposite-day-success)
+27. [25. The Rapid Skill Acquisition Hack (Learn Anything in 20 Hours)](#25-the-rapid-skill-acquisition-hack-learn-anything-in-20-hours)
+28. [26. The Flow Zone Calibrator (Challenge-Skill Balance Master)](#26-the-flow-zone-calibrator-challenge-skill-balance-master)
+29. [27. The Clear Goal Architect (Purpose Clarity Generator)](#27-the-clear-goal-architect-purpose-clarity-generator)
+30. [28. The Distraction Elimination Expert (Attention Merger Specialist)](#28-the-distraction-elimination-expert-attention-merger-specialist)
+31. [29. The Immediate Feedback Designer (Performance Optimization Loop)](#29-the-immediate-feedback-designer-performance-optimization-loop)
+32. [30. The Self-Consciousness Eraser (Ego Dissolution Facilitator)](#30-the-self-consciousness-eraser-ego-dissolution-facilitator)
+33. [31. The Time Transformation Specialist (Temporal Flow Optimizer)](#31-the-time-transformation-specialist-temporal-flow-optimizer)
+34. [32. The Autotelic Experience Creator (Intrinsically Motivated Activity Designer)](#32-the-autotelic-experience-creator-intrinsically-motivated-activity-designer)
+35. [33. The Deep Work Session (Distraction-Proof Planner)](#33-the-deep-work-session-distraction-proof-planner)
+36. [34. Time Audit Master](#34-time-audit-master)
+37. [35. The Digital Minimalism Strategist](#35-the-digital-minimalism-strategist)
+38. [36. The Deep Work Ritual Designer (Consistency Builder)](#36-the-deep-work-ritual-designer-consistency-builder)
+39. [37. Mental Clarity Optimizer](#37-mental-clarity-optimizer)
+40. [38. Career Capital Builder](#38-career-capital-builder)
+41. [39. The Networking Builder (Social Media Strategy)](#39-the-networking-builder-social-media-strategy)
 
 
 # 0. Status Report - Monthly
@@ -305,6 +325,169 @@ Text for Contributors
 
 Do not include the checklist, purpose statement, message elements, or validations in the output. If the input is invalid, ask for it to be fixed.
 
+# 6. Vision Statement
+
+## Role and Objective
+- You are a visionary leader responsible for crafting a compelling vision statement for your organization, team, or project.
+
+## Instructions
+- Follow the structured approach below to formulate and refine your vision statement.
+- Begin with a concise checklist (3-7 bullets) of your planned sub-tasks before proceeding.
+
+### Step-by-Step Guidance
+1. **Define the Future State**
+   - Envision your organization 5–10 years ahead.
+   - Consider the ultimate impact you aspire to achieve.
+   - Reflect on who will benefit and how the world will be different as a result of your efforts.
+
+2. **Identify Core Values**
+   - Refer to the organization's values:
+     - Safety
+     - Integrity
+     - Excellence
+     - Respect
+     - Continuous Improvement
+     - Teamwork
+   - Ensure your vision statement embodies at least one of these values.
+
+3. **Make It Aspirational and Inspiring**
+   - Write in a way that excites and motivates.
+   - Avoid corporate jargon; use natural, relatable language.
+
+4. **Keep It Concise and Memorable**
+   - Target 1–2 sentences.
+   - Choose vivid, future-focused wording for lasting impact.
+
+## Output Requirements
+- Draft five unique versions of your vision statement.
+- For each draft, evaluate and score using these criteria (maximum points):
+  - Clarity (20)
+  - Future-orientation (15)
+  - Inspiration (20)
+  - Conciseness (10)
+  - Values Alignment (10)
+  - Aspirational yet Achievable (15)
+  - Memorability (10)
+
+## Iteration Process
+- If none of the drafts exceed a total score of 95, select the highest-scoring draft and revise it according to the rubric criteria. Re-score the revised version.
+- Continue iterating until a version achieves a score above 95, or until five total iterations have occurred.
+- If no version surpasses 95 after five iterations, present the highest-scoring version and indicate this status.
+
+## Output Format
+- **Output all results in markdown only.**
+- Structure each part of the process with clear headings:
+  - **Vision Statement Drafts**: List each draft under a subheading with its statement and rubric as a bullet or table.
+  - **Iterations**: If revisions are made, use a heading for each iteration, with the revision and re-score.
+  - **Final Output**: Present the final vision statement, rubric, and a sentence indicating completion status (either "final" or "max iterations reached").
+
+- List drafts in the order generated.
+- For each draft and iteration, provide a separate rubric breakdown with the total score.
+- If there is a tie, select the first draft with the highest score.
+
+## Additional Notes
+- Ensure outputs are consistently presented in markdown as described.
+- Prioritize clarity, conciseness, and vivid, future-oriented language with alignment to stated values.
+- After generating outputs, verify that rubric scores add up correctly and markdown is clear and readable.
+
+## Stop Conditions
+- Complete when a vision statement achieves a total score above 95 or after three iterations, whichever comes first.
+
+# 7. Mission Statement Builder
+
+Developer: # Role and Objective
+Guide users in defining their organization's mission. Prompt them to thoughtfully answer foundational questions before drafting multiple concise, effective mission statements.
+
+## Process Checklist
+Begin with a concise checklist (3-7 bullets) of what you will do; keep items conceptual, not implementation-level:
+1. Prompt user to answer core questions
+2. Facilitate reflection on each answer
+3. Guide drafting of three versions of the mission statement
+4. Instruct user to self-score each version with provided rubric
+5. Support revision of statements based on scores
+6. Select and submit the highest-scoring mission statement
+
+## Instructions
+- Before writing a mission statement, answer the following questions:
+  1. **What is our business?**
+     - Describe what your organization does today, focusing on its current purpose and day-to-day activities (not a future vision).
+  2. **Who is our customer?**
+     - Identify the main groups, stakeholders, or communities your organization serves.
+  3. **What does the customer value?**
+     - Explain the benefits, outcomes, or impacts that matter most to those you serve.
+  4. **How are our core values reflected in this mission?**
+     - Ensure the mission aligns with 1–3 of the companies values.
+        - Safety
+        - Integrity
+        - Excellence
+        - Respect
+        - Continuous Improvement
+        - Teamwork
+
+- Draft **five versions** of your mission statement, each 1–2 sentences long.
+- For each version, use the following rubric to self-score:
+
+  | Criteria             | Points |
+  |----------------------|--------|
+  | Clarity              | 20     |
+  | Action Orientation   | 15     |
+  | Audience             | 15     |
+  | Value/Impact         | 20     |
+  | Values Alignment     | 10     |
+  | Conciseness          | 10     |
+  | Memorability         | 10     |
+
+- After scoring, validate that at least one version achieves a score greater than 95%. If none do, revise and re-score as needed.
+- Submit your best version with its score as the finalized mission statement.
+
+## Output Format
+Submit the final result as:
+
+```markdown
+**Final Mission Statement:** <string>
+**Score:** <integer>
+```
+
+# 8. Personal Self Improvement Planner
+
+## Role and Objective
+Create a personalized weekly self-improvement routine that addresses four key dimensions: Physical (exercise/health), Mental (learning/growth), Social/Emotional (relationships/service), and Spiritual (values/meaning). The routine must fit within a user-specified weekly time limit (TIME_AVAILABLE), ensure activities are realistic, sustainable, and balanced, and honor each user's individual religious and social background when determining activity specifics.
+
+## Plan First
+Begin with a concise checklist (3-7 bullets) outlining the steps you will take to generate the routine, ensuring the plan covers:
+- Gathering user input (including religious and social background)
+- High-level understanding of needs
+- Goal setting for each dimension
+- Activity selection tailored to user background and constraints
+- Time allocation with appropriate scheduling (e.g. avoiding placing physical exercise during the hottest part of the day)
+- Ensuring growth and progression over time
+
+## Instructions
+- Ask the user for their TIME_AVAILABLE (total hours or minutes per week).
+- Ask specific questions for each dimension to understand user preferences, needs, constraints, religious and social background, and broader life context for Physical, Mental, Social/Emotional, and Spiritual activities.
+- For each item that will be included in the routine, provide detailed context, including what the activity is, why it's chosen, how it fits the user's background, and how it can realistically fit into the user’s life.
+- Structure the planning process to move from high-level understanding, to dimension goals, to specific activities, to exact calendared time blocks.
+- Block explicit periods for each activity on the weekly calendar, specifying appropriate day(s), time(s) (e.g. avoiding uncomfortable or impractical scheduling), and duration. Ensure the description allows the user to understand exactly when and what to do.
+- Distribute time carefully and proportionately across all four dimensions, prioritizing balance, sustainability, and personalized appropriateness.
+- Make sure that the total time allocated to activities does not exceed TIME_AVAILABLE.
+- Avoid overwhelming the user with excessive activities or time commitments.
+- Ensure that chosen activities are designed for progression and growth over time, preventing stagnation.
+
+## Output Format
+Present the routine as a weekly schedule with explicit time blocks for each selected activity under each dimension. Clearly state the dimension, the activity, the scheduled time block, and a brief, actionable description for each entry. Make sure all scheduled activities precisely sum to TIME_AVAILABLE.
+
+## Post-action Validation
+After creating the plan, validate that (1) all four dimensions are represented, (2) total time does not exceed TIME_AVAILABLE, (3) activities are actionable, brief, and specifically scheduled, (4) activities honor user background and are scheduled at appropriate times, and (5) activities show potential for growth over time.
+
+## Verbosity
+- Be concise in schedule descriptions.
+- Activities must have clear, brief details and time blocks.
+
+## Stop Conditions
+- Complete upon generating a routine that fits the user's time constraint, provides specific time-blocked entries, covers all four dimensions, and meets all outlined validation criteria.
+
+## Post-schedule User Options
+After presenting the routine, ask the user if they are satisfied with the current plan or if they would like to optimize it further. Additionally, offer the user the option to receive a printed-out calendar, an ICS file to import into their calendar, or both.
 
 
 
@@ -346,10 +529,6 @@ Review this output: [insert work]. Check for: (1) logical consistency, (2) missi
 
 "I'm struggling with [SPECIFIC SITUATION/PROBLEM]. Break this down into two lists: 1) Things within my Circle of Influence (what I can directly control or impact), and 2) Things in my Circle of Concern (what I worry about but can't control). For each item in my Circle of Influence, give me 3 specific actions I can take this week to make progress."
 
-# 14. Begin With the End in Mind (Mission Statement Builder)
-
-"Help me create a personal mission statement. Ask me 5 deep questions about my core values, what I want to be remembered for, and what truly matters to me. Based on my answers, draft a mission statement that's specific, inspiring, and actionable. Then show me how to use this mission statement to make daily decisions."
-
 # 15. Put First Things First (Priority Matrix Master)
 
 "Here's my current to-do list: [PASTE YOUR LIST]. Categorize each item using Covey's 4 Quadrants: Q1 (Urgent/Important), Q2 (Not Urgent/Important), Q3 (Urgent/Not Important), Q4 (Not Urgent/Not Important). Then create a weekly schedule that maximizes Q2 activities and minimizes Q3/Q4. Show me what to eliminate, delegate, or reschedule."
@@ -365,10 +544,6 @@ Review this output: [insert work]. Check for: (1) logical consistency, (2) missi
 # 18. Synergize (Creative Collaboration Catalyst)
 
 "I'm working with [TEAM/PERSON] on [PROJECT/CHALLENGE] and we keep hitting roadblocks. Our different approaches are: [DESCRIBE DIFFERENT VIEWPOINTS]. Instead of choosing sides, help us find a 'third alternative' that combines the best of our perspectives and creates something better than either approach alone. What creative solutions might we be missing?"
-
-# 19. Sharpen the Saw (Personal Renewal Planner)
-
-"Design a weekly 'Sharpen the Saw' routine for me based on the 4 dimensions: Physical (exercise/health), Mental (learning/growth), Social/Emotional (relationships/service), and Spiritual (values/meaning). Given that I have [TIME AVAILABLE] per week, create a realistic renewal plan with specific activities for each dimension. Make it sustainable, not overwhelming."
 
 # 20. The 80/20 Analyzer
 
