@@ -1,0 +1,13 @@
+{
+  "name": "tedt-org-accessibility-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Playwright + axe-core a11y audits for tedt.org",
+  "scripts": {
+    "test:a11y": "playwright test tests/a11y --reporter=list"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.9.1",
+    "@playwright/test": "^1.48.2"
+  }
+}

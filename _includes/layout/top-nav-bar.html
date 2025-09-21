@@ -111,14 +111,21 @@
                         {% include utility/category-label.html category='gamma-world' kind='title' legacy_class=false text_override='Gamma World' wrapper_class_extra='no-underline nav-rpg-label' %}
                       </a>
                   </li>
+                  <!-- Accessibility: anchors used purely for JS toggles converted to buttons for proper semantics -->
                   <li class="nav-item">
-                    <a onclick="toggleTheme()" class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center" rel="noindex nofollow" style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Dark Mode / Light Mode" aria-label="Toggle Dark Mode / Light Mode"><i class="fa-solid fa-circle-half-stroke" style="font-size: 20px;"></i></a>
+                    <button type="button" onclick="toggleTheme()" class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Dark Mode / Light Mode" aria-label="Toggle Dark Mode / Light Mode">
+                      <i class="fa-solid fa-circle-half-stroke" style="font-size: 20px;" aria-hidden="true"></i>
+                    </button>
                   </li>
                   <li class="nav-item">
-                    <a onclick="togglePilcrow()" class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center" rel="noindex nofollow" style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Winer Links" aria-label="Toggle paragraph permalinks"><i class="fa-solid fa-paragraph" style="font-size: 20px;"></i></a>
+                    <button type="button" onclick="togglePilcrow()" class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Winer Links" aria-label="Toggle paragraph permalinks">
+                      <i class="fa-solid fa-paragraph" style="font-size: 20px;" aria-hidden="true"></i>
+                    </button>
                   </li>
                   <li class="nav-item">
-                    <a onclick="toggleBackToTableofContents()" class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center" rel="noindex nofollow" style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Back to Table of Contents" aria-label="Toggle Back to Table of Contents links"><i class="fa-solid fa-section" style="font-size: 20px;"></i></a>
+                    <button type="button" onclick="toggleBackToTableofContents()" class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Back to Table of Contents" aria-label="Toggle Back to Table of Contents links">
+                      <i class="fa-solid fa-section" style="font-size: 20px;" aria-hidden="true"></i>
+                    </button>
                   </li>
                 </ul>
               </div>

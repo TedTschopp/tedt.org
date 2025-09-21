@@ -161,6 +161,14 @@
             }
         }
 
+        /* --- Accessibility Contrast Helpers (WCAG) --- */
+        .category-title.wrapped-by-theme { text-shadow: 0 0 2px rgba(0,0,0,0.55), 0 0 4px rgba(0,0,0,0.35); }
+        [data-bs-theme="dark"] .category-title.wrapped-by-theme { mix-blend-mode: normal; }
+        .p-job-title, .p-locality, .p-region, .p-country-name { color: #b8b8b6 !important; }
+        [data-bs-theme="dark"] .p-job-title, [data-bs-theme="dark"] .p-locality, [data-bs-theme="dark"] .p-region, [data-bs-theme="dark"] .p-country-name { color: #c8c8c6 !important; }
+        .p-note li { color: #c8c8c6; }
+        [data-bs-theme="dark"] .p-note li { color: #d4d4d2; }
+
     </style>
 
     <!-- WCAG contrast utility styles -->
