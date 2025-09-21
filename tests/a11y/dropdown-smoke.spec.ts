@@ -9,11 +9,11 @@ test.describe('Navbar dropdown smoke test', () => {
     await page.goto(LOCAL_URL, { waitUntil: 'domcontentloaded' });
     // Wait a tick to ensure bootstrap JS attached
     await page.waitForTimeout(500);
-    const trigger = page.locator('a#navbarDarkDropdownMenuLink');
+  const trigger = page.locator('button#careerDropdownToggle');
     await expect(trigger).toBeVisible();
     await trigger.click();
     // After click, the menu (ul.dropdown-menu) associated should be visible
-    const menu = page.locator('ul[aria-labelledby="navbarDarkDropdownMenuLink"]');
+  const menu = page.locator('ul[aria-labelledby="careerDropdownToggle"]');
     await expect(menu).toBeVisible();
   });
 });

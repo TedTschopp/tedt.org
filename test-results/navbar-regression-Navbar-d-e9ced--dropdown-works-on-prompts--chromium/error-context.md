@@ -1,0 +1,607 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e1]:
+  - navigation "Primary" [ref=e2]:
+    - generic [ref=e3]:
+      - link "Ted Tschopp home" [ref=e4] [cursor=pointer]:
+        - /url: https://tedt.org
+        - img "Ted Tschopp home" [ref=e5] [cursor=pointer]
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Profile" [ref=e9] [cursor=pointer]:
+            - /url: https://tedt.org/profile/
+        - listitem [ref=e10]:
+          - button "Career" [active] [ref=e11] [cursor=pointer]
+        - listitem [ref=e12]:
+          - button "Projects" [ref=e13] [cursor=pointer]
+        - listitem [ref=e14]:
+          - link "Prompts" [ref=e15] [cursor=pointer]:
+            - /url: https://tedt.org/prompts/
+        - listitem [ref=e16]:
+          - link "Dungeon Crawl Classics , Mutant Crawl Classics , & Gamma World" [ref=e17] [cursor=pointer]:
+            - /url: https://tedt.org/RPG/MCC-GW/
+            - generic [ref=e19] [cursor=pointer]: Dungeon Crawl Classics
+            - text: ","
+            - generic [ref=e21] [cursor=pointer]: Mutant Crawl Classics
+            - text: ", &"
+            - generic [ref=e23] [cursor=pointer]: Gamma World
+        - listitem [ref=e24]:
+          - button "Toggle Dark Mode / Light Mode" [ref=e25] [cursor=pointer]
+        - listitem [ref=e26]:
+          - button "Toggle paragraph permalinks" [ref=e27] [cursor=pointer]
+        - listitem [ref=e28]:
+          - button "Toggle Back to Table of Contents links" [ref=e29] [cursor=pointer]
+  - banner [ref=e30]:
+    - img "Library of Lost Prompts" [ref=e34]
+  - main [ref=e35]:
+    - heading "AI Prompt Library Search and Browse" [level=2] [ref=e36]
+    - region "Filter and Sort Controls" [ref=e37]:
+      - generic [ref=e38]:
+        - search "Search prompts" [ref=e39]:
+          - textbox "Search prompts" [ref=e42]
+        - generic [ref=e43]:
+          - generic [ref=e44]: Sort prompts
+          - combobox "Sort prompts" [disabled] [ref=e45]:
+            - option "Sort by Newest" [selected]
+            - option "Sort by Highest Rating"
+            - option "Sort Alphabetically"
+      - group "Filter prompts by category" [ref=e46]:
+        - button "All Categories" [pressed] [ref=e47] [cursor=pointer]
+        - button "AI Assistants" [ref=e48] [cursor=pointer]
+        - button "AI Education" [ref=e49] [cursor=pointer]
+        - button "AI Mentor" [ref=e50] [cursor=pointer]
+        - button "Academic Writing" [ref=e51] [cursor=pointer]
+        - button "Acceptance Criteria" [ref=e52] [cursor=pointer]
+        - button "Adaptive Learning" [ref=e53] [cursor=pointer]
+        - button "Aesthetic Theory" [ref=e54] [cursor=pointer]
+        - button "Agile" [ref=e55] [cursor=pointer]
+        - button "Analysis" [ref=e56] [cursor=pointer]
+        - button "Art Analysis" [ref=e57] [cursor=pointer]
+        - button "Assessment" [ref=e58] [cursor=pointer]
+        - button "Backlog Refinement" [ref=e59] [cursor=pointer]
+        - button "Basic" [ref=e60] [cursor=pointer]
+        - button "Blogging" [ref=e61] [cursor=pointer]
+        - button "Coaching" [ref=e62] [cursor=pointer]
+        - button "Content Creation" [ref=e63] [cursor=pointer]
+        - button "Content Evaluation" [ref=e64] [cursor=pointer]
+        - button "Content Strategy" [ref=e65] [cursor=pointer]
+        - button "Copywriting" [ref=e66] [cursor=pointer]
+        - button "Critique" [ref=e67] [cursor=pointer]
+        - button "Cultural Commentary" [ref=e68] [cursor=pointer]
+        - button "Customization" [ref=e69] [cursor=pointer]
+        - button "Demo" [ref=e70] [cursor=pointer]
+        - button "Education" [ref=e71] [cursor=pointer]
+        - button "Evaluation" [ref=e72] [cursor=pointer]
+        - button "Experiential Learning" [ref=e73] [cursor=pointer]
+        - button "Image Generation" [ref=e74] [cursor=pointer]
+        - button "Instructional Design" [ref=e75] [cursor=pointer]
+        - button "Interdisciplinary" [ref=e76] [cursor=pointer]
+        - button "Literary Criticism" [ref=e77] [cursor=pointer]
+        - button "MBSE" [ref=e78] [cursor=pointer]
+        - button "Marketing" [ref=e79] [cursor=pointer]
+        - button "Midjourney" [ref=e80] [cursor=pointer]
+        - button "Peer Review" [ref=e81] [cursor=pointer]
+        - button "Product Management" [ref=e82] [cursor=pointer]
+        - button "Requirements Engineering" [ref=e83] [cursor=pointer]
+        - button "Research" [ref=e84] [cursor=pointer]
+        - button "Roleplay" [ref=e85] [cursor=pointer]
+        - button "Roleplaying" [ref=e86] [cursor=pointer]
+        - button "Scholarly Writing" [ref=e87] [cursor=pointer]
+        - button "Simple" [ref=e88] [cursor=pointer]
+        - button "Simulation" [ref=e89] [cursor=pointer]
+        - button "Skill Building" [ref=e90] [cursor=pointer]
+        - button "Social Media" [ref=e91] [cursor=pointer]
+        - button "Storytelling" [ref=e92] [cursor=pointer]
+        - button "TTRPG" [ref=e93] [cursor=pointer]
+        - button "Tutoring" [ref=e94] [cursor=pointer]
+        - button "User Stories" [ref=e95] [cursor=pointer]
+        - button "Variables" [ref=e96] [cursor=pointer]
+        - button "Verification & Validation" [ref=e97] [cursor=pointer]
+        - button "Web Strategy" [ref=e98] [cursor=pointer]
+        - button "Worldbuilding" [ref=e99] [cursor=pointer]
+        - button "Writing" [ref=e100] [cursor=pointer]
+        - button "active learning" [ref=e101] [cursor=pointer]
+        - button "checklist" [ref=e102] [cursor=pointer]
+        - button "feedback and validation" [ref=e103] [cursor=pointer]
+        - button "homework policy" [ref=e104] [cursor=pointer]
+        - button "interactive exercises" [ref=e105] [cursor=pointer]
+        - button "learning goals" [ref=e106] [cursor=pointer]
+        - button "mnemonics" [ref=e107] [cursor=pointer]
+        - button "quizzes and test prep" [ref=e108] [cursor=pointer]
+        - button "reasoning effort" [ref=e109] [cursor=pointer]
+        - button "scaffolding" [ref=e110] [cursor=pointer]
+        - button "socratic method" [ref=e111] [cursor=pointer]
+        - button "study skills" [ref=e112] [cursor=pointer]
+        - button "teaching assistant" [ref=e113] [cursor=pointer]
+        - button "tone and approach" [ref=e114] [cursor=pointer]
+        - button "tutoring" [ref=e115] [cursor=pointer]
+        - button "Clear all filters" [ref=e116] [cursor=pointer]: Clear Filters
+    - region "Prompt List" [ref=e117]:
+      - generic [ref=e118]:
+        - generic [ref=e121]:
+          - link "Active-Learning Teaching Assistant" [ref=e122] [cursor=pointer]:
+            - /url: /prompts/active-learning-teaching-assistant/
+            - heading "Active-Learning Teaching Assistant" [level=5] [ref=e123] [cursor=pointer]
+          - paragraph [ref=e124]: A practical, compact prompt that defines a warm, discovery-focused teaching assistant. It begins every session with a checklist, learns the student...
+          - generic [ref=e125]:
+            - generic [ref=e127]:
+              - button "active learning" [ref=e128] [cursor=pointer]
+              - button "checklist" [ref=e129] [cursor=pointer]
+              - button "feedback and validation" [ref=e130] [cursor=pointer]
+              - button "homework policy" [ref=e131] [cursor=pointer]
+              - button "interactive exercises" [ref=e132] [cursor=pointer]
+              - button "learning goals" [ref=e133] [cursor=pointer]
+              - button "mnemonics" [ref=e134] [cursor=pointer]
+              - button "quizzes and test prep" [ref=e135] [cursor=pointer]
+              - button "reasoning effort" [ref=e136] [cursor=pointer]
+              - button "scaffolding" [ref=e137] [cursor=pointer]
+              - button "socratic method" [ref=e138] [cursor=pointer]
+              - button "study skills" [ref=e139] [cursor=pointer]
+              - button "teaching assistant" [ref=e140] [cursor=pointer]
+              - button "tone and approach" [ref=e141] [cursor=pointer]
+              - button "tutoring" [ref=e142] [cursor=pointer]
+            - group "Prompt actions" [ref=e143]:
+              - button "Download prompt" [ref=e144] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e145] [cursor=pointer]
+        - generic [ref=e148]:
+          - link "Business Case and Requirements Assistant" [ref=e149] [cursor=pointer]:
+            - /url: /prompts/business-case-and-requirements-assistant/
+            - heading "Business Case and Requirements Assistant" [level=5] [ref=e150] [cursor=pointer]
+          - paragraph [ref=e151]: A rigorous, step-by-step Agile coaching prompt that transforms vague goals into clear user stories, requirements, and SMART acceptance criteria—com...
+          - generic [ref=e152]:
+            - generic [ref=e154]:
+              - button "Acceptance Criteria" [ref=e155] [cursor=pointer]
+              - button "Agile" [ref=e156] [cursor=pointer]
+              - button "Backlog Refinement" [ref=e157] [cursor=pointer]
+              - button "MBSE" [ref=e158] [cursor=pointer]
+              - button "Product Management" [ref=e159] [cursor=pointer]
+              - button "Requirements Engineering" [ref=e160] [cursor=pointer]
+              - button "User Stories" [ref=e161] [cursor=pointer]
+              - button "Verification & Validation" [ref=e162] [cursor=pointer]
+            - group "Prompt actions" [ref=e163]:
+              - button "Download prompt" [ref=e164] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e165] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e166] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e167] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e168] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e169] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e170] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e171] [cursor=pointer]
+        - generic [ref=e174]:
+          - link "Academic Content Critique Template" [ref=e175] [cursor=pointer]:
+            - /url: /prompts/academic-critique-content/
+            - heading "Academic Content Critique Template" [level=5] [ref=e176] [cursor=pointer]
+          - paragraph [ref=e177]: A structured prompt template for critiquing academic papers, articles, and research content with detailed analysis framework, grading rubric, and p...
+          - generic [ref=e178]:
+            - generic [ref=e180]:
+              - button "Academic Writing" [ref=e181] [cursor=pointer]
+              - button "Analysis" [ref=e182] [cursor=pointer]
+              - button "Assessment" [ref=e183] [cursor=pointer]
+              - button "Critique" [ref=e184] [cursor=pointer]
+              - button "Evaluation" [ref=e185] [cursor=pointer]
+              - button "Peer Review" [ref=e186] [cursor=pointer]
+              - button "Research" [ref=e187] [cursor=pointer]
+              - button "Scholarly Writing" [ref=e188] [cursor=pointer]
+            - group "Prompt actions" [ref=e189]:
+              - button "Download prompt" [ref=e190] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e191] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e192] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e193] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e194] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e195] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e196] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e197] [cursor=pointer]
+        - generic [ref=e200]:
+          - link "Midjourney Version 7 Prompt Generator Template" [ref=e201] [cursor=pointer]:
+            - /url: /prompts/midjourney-v7-prompt-template/
+            - heading "Midjourney Version 7 Prompt Generator Template" [level=5] [ref=e202] [cursor=pointer]
+          - paragraph [ref=e203]: A structured, weight-based system to generate high-quality prompts for Midjourney V7 image creation. Includes detailed formatting, keyword layering...
+          - generic [ref=e204]:
+            - generic [ref=e206]:
+              - button "Image Generation" [ref=e207] [cursor=pointer]
+              - button "Midjourney" [ref=e208] [cursor=pointer]
+            - group "Prompt actions" [ref=e209]:
+              - button "Download prompt" [ref=e210] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e211] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e212] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e213] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e214] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e215] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e216] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e217] [cursor=pointer]
+        - generic [ref=e220]:
+          - link "Artistic Analysis Prompt – Deep Analysis of Artistic Works" [ref=e221] [cursor=pointer]:
+            - /url: /prompts/artistic-Analysis/
+            - heading "Artistic Analysis Prompt – Deep Analysis of Artistic Works" [level=5] [ref=e222] [cursor=pointer]
+          - paragraph [ref=e223]: A layered, multidimensional prompt for AI to generate scholarly, symbolically-rich, and culturally contextual analyses of artistic works across any...
+          - generic [ref=e224]:
+            - generic [ref=e226]:
+              - button "Aesthetic Theory" [ref=e227] [cursor=pointer]
+              - button "Art Analysis" [ref=e228] [cursor=pointer]
+              - button "Cultural Commentary" [ref=e229] [cursor=pointer]
+              - button "Interdisciplinary" [ref=e230] [cursor=pointer]
+              - button "Literary Criticism" [ref=e231] [cursor=pointer]
+            - group "Prompt actions" [ref=e232]:
+              - button "Download prompt" [ref=e233] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e234] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e235] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e236] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e237] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e238] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e239] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e240] [cursor=pointer]
+        - generic [ref=e243]:
+          - link "AI Tutoring Prompt Designer – Help Others Learn What You Know" [ref=e244] [cursor=pointer]:
+            - /url: /prompts/ai-tutoring-prompt-designer/
+            - heading "AI Tutoring Prompt Designer – Help Others Learn What You Know" [level=5] [ref=e245] [cursor=pointer]
+          - paragraph [ref=e246]: A structured AI prompt template to help users design effective tutoring dialogues that assess prior knowledge, guide learners with open-ended quest...
+          - generic [ref=e247]:
+            - generic [ref=e249]:
+              - button "AI Education" [ref=e250] [cursor=pointer]
+              - button "Adaptive Learning" [ref=e251] [cursor=pointer]
+              - button "Coaching" [ref=e252] [cursor=pointer]
+              - button "Instructional Design" [ref=e253] [cursor=pointer]
+              - button "Tutoring" [ref=e254] [cursor=pointer]
+            - group "Prompt actions" [ref=e255]:
+              - button "Download prompt" [ref=e256] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e257] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e258] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e259] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e260] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e261] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e262] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e263] [cursor=pointer]
+        - generic [ref=e266]:
+          - link "AI Teaching Assistant Prompt Creator" [ref=e267] [cursor=pointer]:
+            - /url: /prompts/ai-teaching-assistant-prompt-creator/
+            - heading "AI Teaching Assistant Prompt Creator" [level=5] [ref=e268] [cursor=pointer]
+          - paragraph [ref=e269]: A structured dialogue-based prompt designed to help teachers build custom AI teaching assistants that streamline lesson planning, quiz generation, ...
+          - generic [ref=e270]:
+            - generic [ref=e272]:
+              - button "AI Assistants" [ref=e273] [cursor=pointer]
+              - button "Education" [ref=e274] [cursor=pointer]
+              - button "Instructional Design" [ref=e275] [cursor=pointer]
+            - group "Prompt actions" [ref=e276]:
+              - button "Download prompt" [ref=e277] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e278] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e279] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e280] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e281] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e282] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e283] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e284] [cursor=pointer]
+        - generic [ref=e287]:
+          - link "AI Simulation Creator Prompt – Roleplay-Based Learning Scenarios" [ref=e288] [cursor=pointer]:
+            - /url: /prompts/ai-simulation-creator-roleplay-prompt/
+            - heading "AI Simulation Creator Prompt – Roleplay-Based Learning Scenarios" [level=5] [ref=e289] [cursor=pointer]
+          - paragraph [ref=e290]: An instructional AI prompt template for generating roleplay-based simulations with an AI mentor guiding students through practical skill-building s...
+          - generic [ref=e291]:
+            - generic [ref=e293]:
+              - button "AI Mentor" [ref=e294] [cursor=pointer]
+              - button "Experiential Learning" [ref=e295] [cursor=pointer]
+              - button "Instructional Design" [ref=e296] [cursor=pointer]
+              - button "Roleplay" [ref=e297] [cursor=pointer]
+              - button "Simulation" [ref=e298] [cursor=pointer]
+            - group "Prompt actions" [ref=e299]:
+              - button "Download prompt" [ref=e300] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e301] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e302] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e303] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e304] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e305] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e306] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e307] [cursor=pointer]
+        - generic [ref=e310]:
+          - link "AI Simulation Creator – Scenario-Based Skill Practice" [ref=e311] [cursor=pointer]:
+            - /url: /prompts/ai-simulation-creator/
+            - heading "AI Simulation Creator – Scenario-Based Skill Practice" [level=5] [ref=e312] [cursor=pointer]
+          - paragraph [ref=e313]: A dynamic prompt framework for generating AI-led roleplay simulations, where learners practice applying key skills like negotiation, hiring, or pit...
+          - generic [ref=e314]:
+            - generic [ref=e316]:
+              - button "AI Mentor" [ref=e317] [cursor=pointer]
+              - button "Instructional Design" [ref=e318] [cursor=pointer]
+              - button "Roleplay" [ref=e319] [cursor=pointer]
+              - button "Simulation" [ref=e320] [cursor=pointer]
+              - button "Skill Building" [ref=e321] [cursor=pointer]
+            - group "Prompt actions" [ref=e322]:
+              - button "Download prompt" [ref=e323] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e324] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e325] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e326] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e327] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e328] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e329] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e330] [cursor=pointer]
+        - generic [ref=e333]:
+          - link "Create a Unforgettable Opening to a TTRPG" [ref=e334] [cursor=pointer]:
+            - /url: /prompts/Create-a-Unforgettable-Opening-to-a-TTRPG/
+            - heading "Create a Unforgettable Opening to a TTRPG" [level=5] [ref=e335] [cursor=pointer]
+          - paragraph [ref=e336]: An advanced prompt designed to generate richly layered, culturally resonant TTRPG session openings across artistic media—blending worldbuilding wit...
+          - generic [ref=e337]:
+            - generic [ref=e339]:
+              - button "Art Analysis" [ref=e340] [cursor=pointer]
+              - button "Roleplay" [ref=e341] [cursor=pointer]
+              - button "Roleplaying" [ref=e342] [cursor=pointer]
+              - button "Storytelling" [ref=e343] [cursor=pointer]
+              - button "TTRPG" [ref=e344] [cursor=pointer]
+              - button "Worldbuilding" [ref=e345] [cursor=pointer]
+            - group "Prompt actions" [ref=e346]:
+              - button "Download prompt" [ref=e347] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e348] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e349] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e350] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e351] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e352] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e353] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e354] [cursor=pointer]
+        - generic [ref=e357]:
+          - link "Marketing Copy Evaluation & Rewrite Template" [ref=e358] [cursor=pointer]:
+            - /url: /prompts/marketing-copy-evaluation-template/
+            - heading "Marketing Copy Evaluation & Rewrite Template" [level=5] [ref=e359] [cursor=pointer]
+          - paragraph [ref=e360]: A prompt for critically evaluating and rewriting web marketing copy using 15 weighted copywriting criteria based on clarity, persuasion, and custom...
+          - generic [ref=e361]:
+            - generic [ref=e363]:
+              - button "Content Evaluation" [ref=e364] [cursor=pointer]
+              - button "Copywriting" [ref=e365] [cursor=pointer]
+              - button "Marketing" [ref=e366] [cursor=pointer]
+              - button "Web Strategy" [ref=e367] [cursor=pointer]
+            - group "Prompt actions" [ref=e368]:
+              - button "Download prompt" [ref=e369] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e370] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e371] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e372] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e373] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e374] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e375] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e376] [cursor=pointer]
+        - generic [ref=e379]:
+          - link "Cross-Platform Social Media Repurposing Template" [ref=e380] [cursor=pointer]:
+            - /url: /prompts/social-media-repurposing-template/
+            - heading "Cross-Platform Social Media Repurposing Template" [level=5] [ref=e381] [cursor=pointer]
+          - paragraph [ref=e382]: A structured, platform-aware markdown framework to repurpose blog content for LinkedIn, Instagram, Threads, Mastodon, and more—tailored to match to...
+          - generic [ref=e383]:
+            - generic [ref=e385]:
+              - button "Content Strategy" [ref=e386] [cursor=pointer]
+              - button "Social Media" [ref=e387] [cursor=pointer]
+            - group "Prompt actions" [ref=e388]:
+              - button "Download prompt" [ref=e389] [cursor=pointer]
+              - button "Copy prompt to clipboard" [ref=e390] [cursor=pointer]
+              - button "Send prompt to ChatGPT" [ref=e391] [cursor=pointer]:
+                - img "OpenAI Logo" [ref=e392] [cursor=pointer]
+              - button "Send prompt to Microsoft Copilot" [ref=e393] [cursor=pointer]:
+                - img "Microsoft Copilot Logo" [ref=e394] [cursor=pointer]
+              - button "Send prompt to GitHub Copilot" [ref=e395] [cursor=pointer]:
+                - img "GitHub Copilot Logo" [ref=e396] [cursor=pointer]
+    - navigation "Prompt pagination" [ref=e397]:
+      - list [ref=e398]:
+        - listitem [ref=e399]:
+          - link "Previous" [disabled]:
+            - /url: "#"
+        - listitem [ref=e400]:
+          - link "1" [ref=e401] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e402]:
+          - link "2" [ref=e403] [cursor=pointer]:
+            - /url: "#"
+        - listitem [ref=e404]:
+          - link "Next" [ref=e405] [cursor=pointer]:
+            - /url: "#"
+  - contentinfo [ref=e406]:
+    - generic [ref=e407]:
+      - generic [ref=e409]:
+        - img "Photo of Ted Tschopp" [ref=e412]
+        - link "Ted Tschopp" [ref=e415] [cursor=pointer]:
+          - /url: https://tedt.org
+          - paragraph [ref=e416] [cursor=pointer]:
+            - generic [ref=e417] [cursor=pointer]:
+              - generic [ref=e418] [cursor=pointer]: Ted
+              - generic [ref=e419] [cursor=pointer]: Tschopp
+        - paragraph [ref=e422]: Senior Enterprise Architect
+        - paragraph [ref=e425]:
+          - generic [ref=e426]: Los Angeles
+          - text: ","
+          - generic [ref=e427]: California
+          - text: ","
+          - generic [ref=e428]: USA
+      - generic [ref=e429]:
+        - list [ref=e431]:
+          - listitem [ref=e432]: I am the enterprise architect at Southern California Edison (SCE), serving over 20 million people across 430 cities and 50,000 square miles. In my role, I offer strategic guidance on all software and products developed in IT to executives, senior leadership, and business stakeholders, drawing on my 25 years of experience at SCE.
+          - listitem [ref=e433]: Before joining Edison, I owned a business featured in Wired Magazine. I founded the largest J.R.R. Tolkien community website. Earlier, I worked in market research for the automotive industry.
+          - listitem [ref=e434]: I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
+          - listitem [ref=e435]:
+            - generic [ref=e436]: T
+        - generic [ref=e438]:
+          - generic [ref=e439]:
+            - paragraph [ref=e440]: About Me
+            - list [ref=e441]:
+              - listitem [ref=e442]:
+                - link "Website" [ref=e443] [cursor=pointer]:
+                  - /url: https://www.tedt.org
+                  - text: Website
+              - listitem [ref=e444]:
+                - link "Medium" [ref=e445] [cursor=pointer]:
+                  - /url: https://medium.com/@TedTschopp
+                  - text: Medium
+              - listitem [ref=e446]:
+                - link "Indieweb" [ref=e447] [cursor=pointer]:
+                  - /url: https://indieweb.org/User:Www.tedt.org
+                  - text: Indie
+                  - text: web
+              - listitem [ref=e448]:
+                - link "Keybase" [ref=e449] [cursor=pointer]:
+                  - /url: https://keybase.io/tedtschopp
+                  - text: Key
+                  - text: base
+              - listitem [ref=e450]:
+                - link "Email" [ref=e451] [cursor=pointer]:
+                  - /url: mailto:ted@tedt.org
+                  - text: Email
+              - listitem [ref=e452]:
+                - link "Meetup" [ref=e453] [cursor=pointer]:
+                  - /url: https://www.meetup.com/members//45846/
+                  - text: Meetup
+              - listitem [ref=e454]:
+                - link "Foursquare" [ref=e455] [cursor=pointer]:
+                  - /url: https://foursquare.com/tedtschopp
+                  - text: Foursquare
+          - generic [ref=e456]:
+            - paragraph [ref=e457]: Support Me
+            - list [ref=e458]:
+              - listitem [ref=e459]:
+                - link "BuyMeACoffee" [ref=e460] [cursor=pointer]:
+                  - /url: https://buymeacoffee.com/TedT
+                  - text: Buy
+                  - text: Me
+                  - text: A
+                  - text: Coffee
+              - listitem [ref=e461]:
+                - link "Ko-Fi" [ref=e462] [cursor=pointer]:
+                  - /url: https://ko-fi.com/tedtschopp
+                  - text: Ko-
+                  - text: Fi
+          - generic [ref=e463]:
+            - paragraph [ref=e464]: Social Media
+            - list [ref=e465]:
+              - listitem [ref=e466]:
+                - link "web.brid.gy" [ref=e467] [cursor=pointer]:
+                  - /url: https://web.brid.gy/r/https://tedt.org/
+                  - text: web.
+                  - text: brid.
+                  - text: gy
+              - listitem [ref=e468]:
+                - link "Mastodon" [ref=e469] [cursor=pointer]:
+                  - /url: https://twit.social/@TedT
+                  - text: Mastodon
+              - listitem [ref=e470]:
+                - link "BlueSky" [ref=e471] [cursor=pointer]:
+                  - /url: https://bsky.app/profile/tedt.org
+                  - text: Blue
+                  - text: Sky
+              - listitem [ref=e472]:
+                - link "Threads" [ref=e473] [cursor=pointer]:
+                  - /url: https://threads.net/@TedTschopp
+                  - text: Threads
+              - listitem [ref=e474]:
+                - link "Facebook" [ref=e475] [cursor=pointer]:
+                  - /url: https://www.facebook.com/ted.tschopp
+                  - text: Face
+                  - text: book
+              - listitem [ref=e476]:
+                - link "Instagram" [ref=e477] [cursor=pointer]:
+                  - /url: https://www.instagram.com/TedTschopp
+                  - text: Insta
+                  - text: gram
+              - listitem [ref=e478]:
+                - link "Messenger" [ref=e479] [cursor=pointer]:
+                  - /url: https://m.me/TedTschopp
+                  - text: Messenger
+              - listitem [ref=e480]:
+                - link "Twitter" [ref=e481] [cursor=pointer]:
+                  - /url: https://twitter.com/TedTschopp
+                  - text: Twitter
+              - listitem [ref=e482]:
+                - link "LinkedIn" [ref=e483] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/in/tedtschopp
+                  - text: Linked
+                  - text: In
+              - listitem [ref=e484]:
+                - link "Snapchat" [ref=e485] [cursor=pointer]:
+                  - /url: https://www.snapchat.com/add/TedTschopp
+                  - text: Snap
+                  - text: chat
+              - listitem [ref=e486]:
+                - link "Reddit" [ref=e487] [cursor=pointer]:
+                  - /url: http://reddit.com/u/TedTschopp
+                  - text: Reddit
+          - generic [ref=e488]:
+            - paragraph [ref=e489]: Creative
+            - list [ref=e490]:
+              - listitem [ref=e491]:
+                - link "Goodreads" [ref=e492] [cursor=pointer]:
+                  - /url: https://www.goodreads.com/user/show/856383-ted-tschopp
+                  - text: Good
+                  - text: reads
+              - listitem [ref=e493]:
+                - link "Pinterest" [ref=e494] [cursor=pointer]:
+                  - /url: https://pinterest.com/tedtschopp
+                  - text: Pin
+                  - text: terest
+              - listitem [ref=e495]:
+                - link "Tumblr" [ref=e496] [cursor=pointer]:
+                  - /url: https://www.tumblr.com/blog/tedtschopp
+                  - text: Tumblr
+              - listitem [ref=e497]:
+                - link "Quora" [ref=e498] [cursor=pointer]:
+                  - /url: https://www.quora.com/profile/Ted-Tschopp
+                  - text: Quora
+              - listitem [ref=e499]:
+                - link "YouTube" [ref=e500] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UC4Q8pXroTVyXrIxg2u82pwg
+                  - text: You
+                  - text: Tube
+              - listitem [ref=e501]:
+                - link "Twitch" [ref=e502] [cursor=pointer]:
+                  - /url: https://twitch.tv/tedtschopp
+                  - text: Twitch
+              - listitem [ref=e503]:
+                - link "Vimeo" [ref=e504] [cursor=pointer]:
+                  - /url: https://vimeo.com/TedTschopp
+                  - text: Vimeo
+              - listitem [ref=e505]:
+                - link "SoundCloud" [ref=e506] [cursor=pointer]:
+                  - /url: https://www.soundcloud.com/ted-tschopp
+                  - text: Sound
+                  - text: Cloud
+              - listitem [ref=e507]:
+                - link "Midjourney" [ref=e508] [cursor=pointer]:
+                  - /url: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
+                  - text: Mid
+                  - text: journey
+          - generic [ref=e509]:
+            - paragraph [ref=e510]: Coding
+            - list [ref=e511]:
+              - listitem [ref=e512]:
+                - link "GitHub" [ref=e513] [cursor=pointer]:
+                  - /url: http://github.com/TedTschopp
+                  - text: Git
+                  - text: Hub
+              - listitem [ref=e514]:
+                - link "🤗" [ref=e515] [cursor=pointer]:
+                  - /url: https://huggingface.co/TedTschopp
+                - link "Hugging Face" [ref=e516] [cursor=pointer]:
+                  - /url: https://huggingface.co/TedTschopp
+              - listitem [ref=e517]:
+                - link "Dev.to" [ref=e518] [cursor=pointer]:
+                  - /url: https://dev.to/tedtschopp
+                  - text: Dev.to
+          - generic [ref=e519]:
+            - paragraph [ref=e520]: Gaming
+            - list [ref=e521]:
+              - listitem [ref=e522]:
+                - link "Steam" [ref=e523] [cursor=pointer]:
+                  - /url: https://steamcommunity.com/id/TedTschopp
+                  - text: Steam
+              - listitem [ref=e524]:
+                - link "xBox" [ref=e525] [cursor=pointer]:
+                  - /url: https://account.xbox.com/en-us/profile?gamertag=/TedTschopp
+                  - text: xBox
+              - listitem [ref=e526]:
+                - link "GoG" [ref=e527] [cursor=pointer]:
+                  - /url: https://www.gog.com/u/TedTschopp
+                  - text: GoG
+      - generic [ref=e528]:
+        - list [ref=e530]:
+          - listitem [ref=e531]:
+            - link "About" [ref=e532] [cursor=pointer]:
+              - /url: https://tedt.org/About/
+          - listitem [ref=e533]: ⋅
+          - listitem [ref=e534]:
+            - link "Terms of Use" [ref=e535] [cursor=pointer]:
+              - /url: https://tedt.org/Terms-of-Use/
+          - listitem [ref=e536]: ⋅
+          - listitem [ref=e537]:
+            - link "Privacy Policy" [ref=e538] [cursor=pointer]:
+              - /url: https://tedt.org/Privacy-Policy/
+        - paragraph [ref=e540]: Copyright © Ted Tschopp 2003 - 2025. All Rights Reserved
+```

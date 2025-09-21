@@ -162,8 +162,17 @@
         }
 
         /* --- Accessibility Contrast Helpers (WCAG) --- */
-        .category-title.wrapped-by-theme { text-shadow: 0 0 2px rgba(0,0,0,0.55), 0 0 4px rgba(0,0,0,0.35); }
-        [data-bs-theme="dark"] .category-title.wrapped-by-theme { mix-blend-mode: normal; }
+                .category-title.wrapped-by-theme { text-shadow: 0 0 2px rgba(0,0,0,0.75), 0 0 3px rgba(0,0,0,0.85); }
+                [data-bs-theme="dark"] .category-title.wrapped-by-theme { mix-blend-mode: normal; }
+                /* Specific contrast tuning for problematic palette tokens (axe color-contrast) */
+                .category-title.wrapped-by-theme.MCC { filter: brightness(1.05) saturate(1.1); }
+                .category-title.wrapped-by-theme.GammaWorld { filter: brightness(0.92); }
+                footer .h5 { color: #b3b3b1 !important; }
+                footer .text-muted { color: #b0b0ae !important; }
+                @media (prefers-color-scheme: dark) {
+                    footer .h5 { color: #c6c6c4 !important; }
+                    footer .text-muted { color: #c2c2c0 !important; }
+                }
         .p-job-title, .p-locality, .p-region, .p-country-name { color: #b8b8b6 !important; }
         [data-bs-theme="dark"] .p-job-title, [data-bs-theme="dark"] .p-locality, [data-bs-theme="dark"] .p-region, [data-bs-theme="dark"] .p-country-name { color: #c8c8c6 !important; }
         .p-note li { color: #c8c8c6; }
