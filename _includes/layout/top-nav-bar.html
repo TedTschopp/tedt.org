@@ -4,41 +4,7 @@
               Standardized navbar item sizing: ensure all top-level nav links & icon buttons share consistent 44px height,
               vertical centering, and baseline alignment. This improves visual rhythm and accessible hit target size.
             {%- endcomment -%}
-            <style>
-              /* Scoped to this navbar only */
-              nav[aria-label="Primary"] .navbar-nav { display: flex; align-items: center; gap: 0.75rem; }
-              /* Fallback spacing for browsers or scenarios where flex gap might not apply consistently (ensures visible break between Career & Projects) */
-              nav[aria-label="Primary"] .navbar-nav > li + li { margin-left: 0.75rem; }
-              /* Additional emphasis spacing specifically between the two adjacent dropdown groups (Career & Projects) */
-              nav[aria-label="Primary"] .navbar-nav > li.dropdown + li.dropdown { margin-left: 1.25rem; }
-              nav[aria-label="Primary"] .navbar-nav > li > .nav-link.menu-item,
-              nav[aria-label="Primary"] .navbar-nav > li > button.nav-link.menu-item {
-                display: flex;
-                align-items: center;
-                height: 44px;
-                line-height: 1.1;
-                padding: 0 0.25rem; /* restore minimal horizontal padding to avoid text collision */
-              }
-              nav[aria-label="Primary"] .navbar-nav > li { display: flex; align-items: center; }
-              nav[aria-label="Primary"] .navbar-brand img { vertical-align: middle; }
-              /* Ensure text-based links have consistent font sizing */
-              nav[aria-label="Primary"] .nav-link.menu-item { font-size: 20px; }
-              /* Icon-only buttons already fixed size; ensure no layout shift */
-              nav[aria-label="Primary"] button.nav-link.menu-item { width: 44px; justify-content: center; }
-              /* Dropdown positioning fix: ensure menus anchor directly beneath their toggle instead of drifting to page middle.
-                 Root cause: parent element lacked positioning context or conflicting Bootstrap transform utilities. */
-              nav[aria-label="Primary"] .navbar-nav > li.dropdown, 
-              nav[aria-label="Primary"] .navbar-nav > li.dropdown-center { position: relative; }
-              nav[aria-label="Primary"] .navbar-nav > li .dropdown-menu {
-                position: absolute; /* force explicit positioning context */
-                top: 100%;
-                left: 0;
-                margin-top: 0.4rem; /* slight visual separation from toggle */
-                transform: none !important; /* neutralize any translate from .dropdown-center */
-              }
-              /* Right-align menus that intentionally use dropdown-menu-end while still obeying top placement */
-              nav[aria-label="Primary"] .navbar-nav > li .dropdown-menu-end { right: 0; left: auto; }
-            </style>
+            {%- comment -%} Navbar styles extracted to _sass/components/_navbar.scss {%- endcomment -%}
             <div class="container-fluid">
               <a class="navbar-brand u-url" rel="me" href="{{ site.url }}"><img src="{{ site.url }}/img/home/logo-Tschopp.svg" height="64" width="64" alt="Ted Tschopp home"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +13,8 @@
               <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDarkDropdown">
                 <ul class="navbar-nav ms-auto">
                   <li class="nav-item">
-                    <a href="{{ site.url }}/profile/" class="nav-link mx-2 menu-item" style="text-decoration-thickness: 1px;">Profile</a>
+                    <button type="button" class="nav-link mx-2 menu-item btn btn-link p-0 border-0 js-nav-button" data-href="{{ site.url }}/profile/" style="text-decoration-thickness: 1px;" aria-label="Go to Profile page">Profile</button>
+                    <noscript><a href="{{ site.url }}/profile/" class="visually-hidden">Profile</a></noscript>
                   </li>
                   <li class="nav-item dropdown dropdown-center">
                     {%- comment -%}
@@ -57,17 +24,7 @@
                     <button type="button" class="nav-link mx-2 menu-item dropdown-toggle btn btn-link p-0 border-0" id="careerDropdownToggle" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration-thickness: 1px;">
                       Career
                     </button>
-                    <ul class="dropdown-menu-end dropdown-menu dropdown-menu-dark" aria-labelledby="careerDropdownToggle">
-                      {%- comment -%}
-                        Guarded retrieval of 'Home' category posts. In CI the recent-posts plugin may filter out all posts for this category, leaving nil.
-                        We coerce to an empty array to avoid Liquid's 'Cannot sort a null object' error.
-                      {%- endcomment -%}
-                      {% assign homepage_cat = site.categories['Home'] %}
-                      {% if homepage_cat %}
-                        {% assign sorted_homepage = homepage_cat | safe_sort: 'order' %}
-                      {% else %}
-                        {% assign sorted_homepage = empty %}
-                      {% endif %}
+                    <ul class="dropdown-menu-end dropdown-menu dropdown-menu-dark" aria-labelledby="careerDropdownToggle">{%- comment -%}Items dynamically inserted; pre-loop assignments moved into capture to avoid stray text nodes.{%- endcomment -%}{% assign homepage_cat = site.categories['Home'] %}{% if homepage_cat %}{% assign sorted_homepage = homepage_cat | safe_sort: 'order' %}{% else %}{% assign sorted_homepage = empty %}{% endif %}
                       {% assign last_company = "" %}
                       {% assign new_company = false %}
 
@@ -108,8 +65,7 @@
                     <button class="nav-link mx-2 menu-item dropdown-toggle btn btn-link p-0 border-0" id="projectsDropdownToggle" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration-thickness: 1px;">
                       Projects
                     </button>
-                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="projectsDropdownToggle">
-                      {% comment %} Duplicate guarded retrieval for Projects dropdown (whitespace minimized) {% endcomment %}{% assign homepage_cat = site.categories['Home'] %}{% if homepage_cat %}{% assign sorted_homepage = homepage_cat | safe_sort: 'order' %}{% else %}{% assign sorted_homepage = empty %}{% endif %}
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="projectsDropdownToggle"><script type="application/json" hidden>{% assign homepage_cat = site.categories['Home'] %}{% if homepage_cat %}{% assign sorted_homepage = homepage_cat | safe_sort: 'order' %}{% else %}{% assign sorted_homepage = empty %}{% endif %}</script>
                       {% assign last_company = "" %}
                       {% assign new_company = false %}
                       {% assign first_entry = true %}
@@ -145,14 +101,8 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                      <a href="{{ site.url }}/prompts/" class="nav-link mx-2 menu-item" style="text-decoration-thickness: 1px;">Prompts</a>
-                  </li>
-                  <li class="nav-item">
-                      <a href="{{ site.url }}/RPG/MCC-GW/" class="nav-link mx-2 menu-item nav-active no-category-underline" style="text-decoration: none;">
-                        {% include utility/category-label.html category='dcc' kind='title' legacy_class=false text_override='Dungeon Crawl Classics' wrapper_class_extra='no-underline nav-rpg-label' %},&nbsp;&nbsp;
-                        {% include utility/category-label.html category='mutant-crawl-classics' kind='title' legacy_class=false text_override='Mutant Crawl Classics' wrapper_class_extra='no-underline nav-rpg-label' %}, &amp; 
-                        {% include utility/category-label.html category='gamma-world' kind='title' legacy_class=false text_override='Gamma World' wrapper_class_extra='no-underline nav-rpg-label' %}
-                      </a>
+                    <button type="button" class="nav-link mx-2 menu-item btn btn-link p-0 border-0 js-nav-button" data-href="{{ site.url }}/prompts/" style="text-decoration-thickness: 1px;" aria-label="Go to Prompts page">Prompts</button>
+                    <noscript><a href="{{ site.url }}/prompts/" class="visually-hidden">Prompts</a></noscript>
                   </li>
                   <!-- Accessibility: anchors used purely for JS toggles converted to buttons for proper semantics -->
                   <li class="nav-item">
@@ -174,4 +124,16 @@
               </div>
             </div>
           </nav>
+          <script>
+            // Progressive enhancement: convert data-href buttons into navigable controls
+            (function(){
+              var buttons = document.querySelectorAll('.js-nav-button[data-href]');
+              buttons.forEach(function(btn){
+                if(btn.dataset.enhanced) return; // idempotent
+                btn.addEventListener('click', function(){ window.location = btn.getAttribute('data-href'); });
+                btn.addEventListener('keydown', function(e){ if(e.key === 'Enter' || e.key === ' '){ e.preventDefault(); btn.click(); }});
+                btn.dataset.enhanced = 'true';
+              });
+            })();
+          </script>
 
