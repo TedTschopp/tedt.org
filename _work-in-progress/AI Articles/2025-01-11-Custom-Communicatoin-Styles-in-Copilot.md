@@ -46,7 +46,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: img/AI/Custom-Writing-Styles.webp
+image: https://tedt.org/img/2025-01/Custom-Writing-Styles.webps
 image-alt: "AI learning to communicate in personalized conversation style"
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"

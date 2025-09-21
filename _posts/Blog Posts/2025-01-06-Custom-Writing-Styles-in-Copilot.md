@@ -43,7 +43,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Custom-Writing-Styles.webp
+image: https://tedt.org/img/2025-01/Custom-Writing-Styles.webp
 image-alt: AI writing assistant learning personal style from text samples
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
