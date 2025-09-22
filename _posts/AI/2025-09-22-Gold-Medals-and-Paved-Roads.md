@@ -9,8 +9,8 @@ source: "Original Content with citations"
 source-url: "https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding"
 call-to-action: "Discuss on Mastodon"
 
-date: 2025-09-22 09:00:00 -0700
-update: 2025-09-22 09:00:00 -0700
+date: 2025-09-22 08:30:00 -0700
+update: 2025-09-22 08:30:00 -0700
 
 author:
   avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
@@ -25,6 +25,7 @@ bullets:
   - CIOs must balance rising capability with governance and cost signals.
 
 description: "At the ICPC World Finals, OpenAI and DeepMind’s AI models rivaled human champions, while OpenAI launched GPT-5-Codex, an agentic coding system built to plan, execute, and review code across enterprise workflows. These dual signals highlight both breakthrough capabilities and the steady platform roadmaps shaping the future of software engineering."
+
 seo-description: "OpenAI and DeepMind reach ICPC gold-medal level, while GPT-5-Codex debuts as a long-running coding agent for enterprise engineering."
 
 categories:
