@@ -1,7 +1,6 @@
 ---
 
 layout: post
-
 title: "Gold Medals & Paved Roads"
 subtitle: "AI rivals human champions at ICPC as OpenAI launches GPT-5-Codex for agentic coding"
 quote: "From contest gold medals to paved roads in coding, AI is reshaping both competition and enterprise workflows."
@@ -64,7 +63,7 @@ location:
         latitude: 34.1470
         longitude: -117.9709
 
-image:  "img/2025-09/AI-Gold-Demal.webp"
+image:  "img/2025-09/AI-Champions-on-the-Golden-Path.webp"
 image-alt: "AI achieves gold-medal performance at ICPC while GPT-5-Codex launches"
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
