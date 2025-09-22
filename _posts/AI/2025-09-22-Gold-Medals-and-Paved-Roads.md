@@ -6,16 +6,16 @@ subtitle: "AI rivals human champions at ICPC as OpenAI launches GPT-5-Codex for 
 quote: "From contest gold medals to paved roads in coding, AI is reshaping both competition and enterprise workflows."
 excerpt: "OpenAI and DeepMind reached gold-medal performance at ICPC, while GPT-5-Codex debuts as an agentic coding system for enterprise development."
 source: "Original Content with citations"
-source-url: "[https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding](https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding)"
+source-url: "https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding"
 call-to-action: "Discuss on Mastodon"
 
 date: 2025-09-22 09:00:00 -0700
 update: 2025-09-22 09:00:00 -0700
 
 author:
-    avatar: [https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512\&d=mp\&r=g](https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g)
-    name: Ted Tschopp
-    url: [https://tedt.org/](https://tedt.org/)
+  avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
+  name: "Ted Tschopp"
+  url: "https://tedt.org/"
 
 bullets:
   - OpenAI and DeepMind systems performed at gold-medal level in the ICPC World Finals.
@@ -63,7 +63,7 @@ location:
         latitude: 34.1470
         longitude: -117.9709
 
-image:  "img/2025-09/AI-Champions-on-the-Golden-Path.webp"
+image: "img/2025-09/AI-Champions-on-the-Golden-Path.webp"
 image-alt: "AI achieves gold-medal performance at ICPC while GPT-5-Codex launches"
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
