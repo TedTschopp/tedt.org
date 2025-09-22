@@ -2522,5 +2522,37 @@
       "https://tschopp.net/users/Ted/statuses/115248593390457340"
     ],
     "lastTootTimestamp": 1758553976414
+  },
+  "https://tedt.org/Gold-Medals-and-Paved-Roads/": {
+    "id": "/Gold-Medals-and-Paved-Roads/",
+    "title": "Gold Medals & Paved Roads",
+    "summary": "OpenAI and DeepMind reached gold-medal performance at ICPC, while GPT-5-Codex debuts as an agentic coding system for enterprise development.",
+    "content_text": "OpenAI and DeepMind reached gold-medal performance at ICPC, while GPT-5-Codex debuts as an agentic coding system for enterprise development. https://tedt.org/Gold-Medals-and-Paved-Roads/",
+    "url": "https://tedt.org/Gold-Medals-and-Paved-Roads/",
+    "image": "https://tedt.org/img/2025-09/AI-Champions-on-the-Golden-Path.webp",
+    "tags": [
+      "icpc",
+      "openai",
+      "gpt-5-codex",
+      "deepmind",
+      "coding agents",
+      "software engineering",
+      "enterprise ai",
+      "agentic workflows",
+      "contest benchmarks",
+      "code review",
+      "development tools"
+    ],
+    "date_published": "2025-09-22T08:30:00-07:00",
+    "date_modified": "2025-09-22T08:30:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115249144785682434"
+    ],
+    "lastTootTimestamp": 1758562390003
   }
 }
