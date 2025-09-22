@@ -31,9 +31,9 @@
     rgba(var(--scrim-rgb), 0) 100%);
   filter: blur(var(--glow-blur));
 }
-.wcag-glow.aa { --scrim-alpha: 0.22; }
+.wcag-glow.aa { --scrim-alpha: 0.42; }
 .wcag-glow.large { font-weight: 700; --scrim-alpha: 0.12; }
-.wcag-glow.aaa { --scrim-alpha: 0.32; }
+.wcag-glow.aaa { --scrim-alpha: 0.52; }
 .wcag-glow.light-on-dark { --text: #fff; --scrim-rgb: 0,0,0; --scrim-alpha: 0.85; }
 
 /* Variant: remove rounding on top corners while preserving others */
