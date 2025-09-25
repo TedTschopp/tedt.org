@@ -118,6 +118,35 @@
       });
     </script>
 
+    <!-- Toggle Table of Contents Card visibility -->
+    <script>
+      // Table of Contents card default behavior: visible unless cookie explicitly stores 'false'
+      let tableOfContentsVisible = getCookie('tableOfContentsVisible') !== 'false';
+
+      const applyTableOfContentsState = () => {
+        const tocCard = document.getElementById('table-of-contents-card');
+        if(!tocCard) return; // Graceful no-op if page suppresses TOC (no_toc flag)
+        // When visible, remove inline display so responsive utility classes (d-none d-lg-block) work.
+        if(tableOfContentsVisible) {
+          tocCard.style.removeProperty('display');
+        } else {
+          tocCard.style.display = 'none';
+        }
+      };
+
+      // Toggle function bound to navbar button
+      const toggleShowTableOfContents = () => {
+        tableOfContentsVisible = !tableOfContentsVisible;
+        applyTableOfContentsState();
+        // Persist preference (1 year)
+        document.cookie = `tableOfContentsVisible=${tableOfContentsVisible}; path=/; max-age=31536000`;
+      };
+
+      document.addEventListener('DOMContentLoaded', function(){
+        applyTableOfContentsState();
+      });
+    </script>
+
     <!-- Bottom of the Body include core JavaScript -->
   {% assign this-url = site.url | append: page.url %}
 

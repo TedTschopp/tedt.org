@@ -106,18 +106,37 @@
                   </li>
                   <!-- Accessibility: anchors used purely for JS toggles converted to buttons for proper semantics -->
                   <li class="nav-item">
-                    <button type="button" onclick="toggleTheme()" class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Dark Mode / Light Mode" aria-label="Toggle Dark Mode / Light Mode">
+                    <button type="button" onclick="toggleTheme()" 
+                      class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" 
+                      style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" 
+                      title="Toggle Dark Mode / Light Mode" 
+                      aria-label="Toggle Dark Mode / Light Mode">
                       <i class="fa-solid fa-circle-half-stroke" style="font-size: 20px;" aria-hidden="true"></i>
                     </button>
                   </li>
                   <li class="nav-item">
-                    <button type="button" onclick="togglePilcrow()" class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Winer Links" aria-label="Toggle paragraph permalinks">
+                    <button type="button" onclick="togglePilcrow()" 
+                      class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" 
+                      style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" 
+                      title="Toggle Winer Links" 
+                      aria-label="Toggle paragraph permalinks">
                       <i class="fa-solid fa-paragraph" style="font-size: 20px;" aria-hidden="true"></i>
                     </button>
                   </li>
                   <li class="nav-item">
-                    <button type="button" onclick="toggleBackToTableofContents()" class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Back to Table of Contents" aria-label="Toggle Back to Table of Contents links">
-                      <i class="fa-solid fa-scroll" style="font-size: 20px;" aria-hidden="true"></i>
+                    <button type="button" onclick="toggleShowTableOfContents()" 
+                      class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" 
+                      style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" 
+                      title="Toggle Show Table of Contents" aria-label="Toggle Show Table of Contents">
+                      <i class="fa-regular fa-rectangle-list" style="font-size: 20px;" aria-hidden="true"></i>
+                    </button>
+                  </li>
+                  <li class="nav-item">
+                    <button type="button" onclick="toggleBackToTableofContents()"
+                      class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0"
+                      style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" title="Toggle Back to Top"
+                      aria-label="Toggle Back to Top">
+                      <i class="fa-solid fa-arrows-up-to-line" style="font-size: 20px;" aria-hidden="true"></i>
                     </button>
                   </li>
                 </ul>
