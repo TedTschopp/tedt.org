@@ -1,12 +1,15 @@
 <script>
   const toggleTheme = () => {
-    const htmlTag = document.getElementsByTagName('html')[0];
-    const currentTheme = htmlTag.getAttribute('data-bs-theme');
+    const htmlTag = document.documentElement;
+    const currentTheme = htmlTag.getAttribute('data-bs-theme') || 'dark';
     const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
     htmlTag.setAttribute('data-bs-theme', newTheme);
-    
-    // Write the new theme to a cookie
-    document.cookie = `theme=${newTheme}; path=/`;
+    document.cookie = `theme=${newTheme}; path=/; max-age=31536000`;
+    const btn = document.getElementById('btnToggleTheme');
+    if(btn){
+      const pressed = newTheme === 'dark';
+      btn.setAttribute('aria-pressed', pressed ? 'true':'false');
+    }
   }
 </script>
 
@@ -19,9 +22,16 @@
       if (parts.length === 2) return parts.pop().split(';').shift();
     }
     function applySavedTheme() {
-      const currentTheme = getCookie('theme');
-      if (!currentTheme) return;
-      document.documentElement.setAttribute('data-bs-theme', currentTheme);
+      const saved = getCookie('theme');
+      if(saved){
+        document.documentElement.setAttribute('data-bs-theme', saved);
+      }
+      // Sync pressed state
+      const btn = document.getElementById('btnToggleTheme');
+      if(btn){
+        const mode = document.documentElement.getAttribute('data-bs-theme') || 'dark';
+        btn.setAttribute('aria-pressed', mode === 'dark' ? 'true':'false');
+      }
     }
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', applySavedTheme);

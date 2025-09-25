@@ -199,6 +199,7 @@
         /* Toggle button pressed state (persistent) */
         button[aria-pressed] {
             transition: background-color .15s ease, box-shadow .15s ease, transform .08s ease;            
+            position: relative;
         }
         /* Base override to ensure consistent starting background (respect existing text-bg-secondary classes) */
         button[aria-pressed="false"].text-bg-secondary {
@@ -221,6 +222,7 @@
                 background-color: var(--bs-secondary) !important;
                 filter: brightness(1.25);
                 color: var(--bs-light) !important;
+                z-index: 2; /* prevent overlap visual bleed into neighbor */
             }
             button[aria-pressed="true"].text-bg-secondary:hover {
                 filter: brightness(1.08);

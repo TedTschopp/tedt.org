@@ -106,12 +106,13 @@
                   </li>
                   <!-- Accessibility: anchors used purely for JS toggles converted to buttons for proper semantics -->
                   <li class="nav-item">
-                    <button type="button" onclick="toggleTheme()" 
+                    <button id="btnToggleTheme" type="button" onclick="toggleTheme()" 
                       class="text-bg-secondary rounded nav-link mx-2 menu-item d-flex align-items-center justify-content-center border-0" 
                       style="cursor: pointer; width: 44px; height: 44px; text-decoration: none;" 
                       title="Toggle Dark Mode / Light Mode" 
-                      aria-label="Toggle Dark Mode / Light Mode">
-                      <i class="fa-solid fa-circle-half-stroke" style="font-size: 20px;" aria-hidden="true"></i>
+                      aria-label="Toggle Dark Mode / Light Mode"
+                      aria-pressed="false">
+                      <i class="fa-solid fa-circle-half-stroke" data-swap-icon="fa-circle-half-stroke" style="font-size: 20px;" aria-hidden="true"></i>
                     </button>
                   </li>
                   <li class="nav-item">
