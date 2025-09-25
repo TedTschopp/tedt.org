@@ -16,8 +16,6 @@
         .carousel-indicators button{background-color:rgba(255,255,255,.5);height:4px;width:30px;margin:0 3px;opacity:.5;transition:opacity .3s;border:none}
         .carousel-indicators button.active{background-color:rgba(255,255,255,.9);opacity:1}
     </style>
-    <h2 id="carousel-categories-heading" class="visually-hidden">Browse blog categories</h2>
-    <p id="carousel-categories-instructions" class="visually-hidden">Use the Previous and Next buttons or swipe to change category slides. Each slide shows a category with its latest posts.</p>
   <div class="carousel-inner" role="list" aria-live="polite">
   {%- assign registry = site.data.category_registry -%}
   {%- comment -%}
