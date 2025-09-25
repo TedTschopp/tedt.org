@@ -212,13 +212,15 @@
           </div>
   {%- endfor -%}
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev">
+      {%- comment -%}
+        Replaced hidden text spans with aria-labels to prevent any accidental visual bleed of
+        "Previous/Next" strings over the carousel while retaining accessible labeling.
+      {%- endcomment -%}
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="prev" aria-label="Previous category">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous category</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-of-all-blog-categories" data-bs-slide="next" aria-label="Next category">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next category</span>
       </button>
     </div>
   </div>
