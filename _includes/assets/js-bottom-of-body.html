@@ -87,19 +87,11 @@
         let tocAnimationInProgress = false;
         function applyTocCard(){
           const tocCard = document.getElementById('table-of-contents-card');
-          const mainCol = document.getElementById('main_content_col');
           const btn = document.getElementById('btnToggleTocCard');
-          if(!mainCol) return;
-          if(!tocCard){
-            mainCol.classList.remove('col-lg-7');
-            mainCol.classList.add('col-lg-12');
-            return;
-          }
-
-          // Animation states
+          if(!tocCard){ return; }
+          // Only manage visibility now; layout no longer depends on column width adjustments.
           if(tableOfContentsVisible){
             if(tocCard.classList.contains('hidden')){
-              // preparing to show
               tocCard.classList.remove('hidden','toc-animating-out');
               tocCard.classList.add('toc-animating-in-start');
               requestAnimationFrame(()=>{
@@ -114,36 +106,21 @@
                 tocAnimationInProgress = false;
               }, 300);
             }
-            if(!mainCol.classList.contains('col-lg-7')){
-              mainCol.classList.remove('col-lg-12');
-              mainCol.classList.add('col-lg-7');
-            }
-            tocCard.classList.remove('toc-hidden-margin');
-          } else {
-            // hide with animation
-            if(!tocCard.classList.contains('hidden') && !tocAnimationInProgress){
-              tocCard.classList.add('toc-animating-out');
-              tocAnimationInProgress = true;
-              setTimeout(()=>{
-                tocCard.classList.add('hidden');
-                tocCard.classList.remove('toc-animating-out');
-                tocAnimationInProgress = false;
-              }, 280);
-            }
-            if(!mainCol.classList.contains('col-lg-12')){
-              mainCol.classList.remove('col-lg-7');
-              mainCol.classList.add('col-lg-12');
-            }
-            tocCard.classList.add('toc-hidden-margin');
+          } else if(!tocAnimationInProgress && !tocCard.classList.contains('hidden')) {
+            tocCard.classList.add('toc-animating-out');
+            tocAnimationInProgress = true;
+            setTimeout(()=>{
+              tocCard.classList.add('hidden');
+              tocCard.classList.remove('toc-animating-out');
+              tocAnimationInProgress = false;
+            }, 280);
           }
-
           if(btn){
             setPressed(btn, tableOfContentsVisible);
             btn.title = tableOfContentsVisible ? 'Hide Table of Contents' : 'Show Table of Contents';
             btn.setAttribute('aria-label', btn.title);
             const icon = btn.querySelector('i[data-swap-icon]');
             if(icon){
-              // For TOC we want regular when visible, solid when hidden (inverse)
               if(tableOfContentsVisible){ icon.classList.add('fa-regular'); icon.classList.remove('fa-solid'); }
               else { icon.classList.add('fa-solid'); icon.classList.remove('fa-regular'); }
             }
