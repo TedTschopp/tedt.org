@@ -4,147 +4,179 @@
     <!-- Toggle DarkMode-->
     {% include utility/toggle-theme.html %}
 
-    <!-- Toggle Pilcrow (paragraph markers) -->
+    <!-- Unified Toggle Module (Pilcrow, TOC Arrows, TOC Card) -->
     <script>
-      // Function to get a cookie value by name
-      function getCookie(name) {
-        const value = "; " + document.cookie;
-        const parts = value.split("; " + name + "=");
-        if (parts.length === 2) return parts.pop().split(";").shift();
-        return null;
-      }
-
-      // Global variable to track current pilcrow visibility state
-      let pilcrowVisible = getCookie('pilcrowVisible') === 'true'; // Default to hidden if cookie not set
-      
-      // Function to toggle visibility of Winerlinks
-      const togglePilcrow = () => {
-        // Toggle the visibility state
-        pilcrowVisible = !pilcrowVisible;
-        
-        // Apply the visibility state to all Winerlinks
-        document.querySelectorAll('.Winerlink').forEach(link => {
-          link.style.display = pilcrowVisible ? 'inline' : 'none';
-        });
-        
-        // Save the state to a cookie
-        document.cookie = `pilcrowVisible=${pilcrowVisible}; path=/; max-age=31536000`; // expires in 1 year
-      }
-      
-      // Function to apply the pilcrow visibility state
-      const applyPilcrowState = () => {
-        // Use the global pilcrowVisible value
-        document.querySelectorAll('.Winerlink').forEach(link => {
-          link.style.display = pilcrowVisible ? 'inline' : 'none';
-        });
-      }
-
-      // Create a MutationObserver to watch for when Winerlinks are added to the DOM
-      const setupPilcrowObserver = () => {
-        // Create an observer instance
-        const observer = new MutationObserver((mutations) => {
-          let winerlinksAdded = false;
-          
-          // Check if Winerlinks were added in any of the mutations
-          mutations.forEach(mutation => {
-            if (mutation.addedNodes.length) {
-              const addedWinerlinks = document.querySelectorAll('.Winerlink');
-              if (addedWinerlinks.length > 0) {
-                winerlinksAdded = true;
-              }
-            }
-          });
-          
-          // If Winerlinks were added, apply the visibility state
-          if (winerlinksAdded) {
-            applyPilcrowState();
-          }
-        });
-        
-        // Start observing the document with the configured parameters
-        observer.observe(document.body, { childList: true, subtree: true });
-      };
-      
-      // Initialize when the DOM is loaded
-      document.addEventListener('DOMContentLoaded', function() {
-        setupPilcrowObserver();
-      });
-    </script>
-
-    <!-- Toggle Back to Table of Contents arrows -->
-    <script>
-      // Global variable to track current back-to-TOC arrows visibility state
-      let tocArrowsVisible = getCookie('tocArrowsVisible') === 'true'; // Default to hidden if cookie not set
-      
-      // Function to toggle visibility of back-to-table-of-contents arrows
-      const toggleBackToTableofContents = () => {
-        // Toggle the visibility state
-        tocArrowsVisible = !tocArrowsVisible;
-        
-        // Apply the visibility state to all back-to-TOC arrows
-        applyTocArrowsState();
-        
-        // Save the state to a cookie
-        document.cookie = `tocArrowsVisible=${tocArrowsVisible}; path=/; max-age=31536000`; // expires in 1 year
-      }
-      
-      // Function to apply the TOC arrows visibility state
-      const applyTocArrowsState = () => {
-        // Find all header links that point to the table of contents
-        document.querySelectorAll('h1 a[href="#Top-of-Table-of-Contents"], h2 a[href="#Top-of-Table-of-Contents"], h3 a[href="#Top-of-Table-of-Contents"], h4 a[href="#Top-of-Table-of-Contents"], h5 a[href="#Top-of-Table-of-Contents"], h6 a[href="#Top-of-Table-of-Contents"]').forEach(link => {
-          link.style.display = tocArrowsVisible ? 'inline-block' : 'none';
-        });
-      }
-      
-      // Create a MutationObserver to watch for when header TOC arrows are added to the DOM
-      const setupTocArrowsObserver = () => {
-        // Create an observer instance
-        const observer = new MutationObserver(() => {
-          // Apply current visibility state to any TOC arrows found
-          applyTocArrowsState();
-        });
-        
-        // Start observing the document with the configured parameters
-        observer.observe(document.body, { childList: true, subtree: true });
-      };
-      
-      // Initialize when the DOM is loaded
-      document.addEventListener('DOMContentLoaded', function() {
-        // Apply initial visibility state
-        applyTocArrowsState();
-        
-        // Set up observer for dynamically added TOC arrows
-        setupTocArrowsObserver();
-      });
-    </script>
-
-    <!-- Toggle Table of Contents Card visibility -->
-    <script>
-      // Table of Contents card default behavior: visible unless cookie explicitly stores 'false'
-      let tableOfContentsVisible = getCookie('tableOfContentsVisible') !== 'false';
-
-      const applyTableOfContentsState = () => {
-        const tocCard = document.getElementById('table-of-contents-card');
-        if(!tocCard) return; // Graceful no-op if TOC suppressed (no_toc)
-        if(tableOfContentsVisible) {
-          tocCard.classList.remove('hidden');
-        } else {
-          tocCard.classList.add('hidden');
+      const ToggleManager = (function(){
+        // --- Cookie helpers ---
+        function getCookie(name){
+          const value = '; ' + document.cookie;
+            const parts = value.split('; ' + name + '=');
+            if(parts.length === 2) return parts.pop().split(';').shift();
+            return null;
         }
-      };
+        function setCookie(name,val){ document.cookie = `${name}=${val}; path=/; max-age=31536000`; }
 
-      // Toggle function bound to navbar button
-      const toggleShowTableOfContents = () => {
-        tableOfContentsVisible = !tableOfContentsVisible;
-        applyTableOfContentsState();
-        // Persist preference (1 year)
-        document.cookie = `tableOfContentsVisible=${tableOfContentsVisible}; path=/; max-age=31536000`;
-      };
+        // State
+        let pilcrowVisible = getCookie('pilcrowVisible') === 'true';
+        let tocArrowsVisible = getCookie('tocArrowsVisible') === 'true';
+        let tocHideCount = parseInt(getCookie('tableOfContentsHideCount') || '0', 10);
+        const explicitTocCookie = getCookie('tableOfContentsVisible');
+        const userPrefersTocHidden = tocHideCount >= 3;
+        let tableOfContentsVisible = explicitTocCookie !== null ? (explicitTocCookie === 'true') : !userPrefersTocHidden || (window.matchMedia('(max-width: 991.98px)').matches);
 
-      document.addEventListener('DOMContentLoaded', function(){
-        applyTableOfContentsState();
-      });
+        // --- Utility DOM helpers ---
+        function swapIconWeight(iconEl, active, solidWhenActive=true){
+          if(!iconEl) return;
+          if(solidWhenActive){
+            if(active){ iconEl.classList.add('fa-solid'); iconEl.classList.remove('fa-regular'); }
+            else { iconEl.classList.add('fa-regular'); iconEl.classList.remove('fa-solid'); }
+          } else {
+            // Reverse logic if needed for a future toggle
+            if(active){ iconEl.classList.add('fa-regular'); iconEl.classList.remove('fa-solid'); }
+            else { iconEl.classList.add('fa-solid'); iconEl.classList.remove('fa-regular'); }
+          }
+        }
+        function setPressed(btn, pressed){
+          if(!btn) return;
+          btn.setAttribute('aria-pressed', pressed ? 'true' : 'false');
+        }
+
+        // --- Pilcrow ---
+        function applyPilcrow(){
+          document.querySelectorAll('.Winerlink').forEach(l => l.style.display = pilcrowVisible ? 'inline' : 'none');
+          const btn = document.getElementById('btnTogglePilcrow');
+          if(btn){
+            setPressed(btn, pilcrowVisible);
+            swapIconWeight(btn.querySelector('i[data-swap-icon]'), pilcrowVisible);
+          }
+        }
+        function togglePilcrow(){
+          pilcrowVisible = !pilcrowVisible;
+          setCookie('pilcrowVisible', pilcrowVisible);
+          applyPilcrow();
+        }
+        function setupPilcrowObserver(){
+          const observer = new MutationObserver(muts => {
+            for(const m of muts){ if(m.addedNodes.length){ applyPilcrow(); break; } }
+          });
+          observer.observe(document.body, { childList:true, subtree:true });
+        }
+
+        // --- TOC Arrows ---
+        function applyTocArrows(){
+          document.querySelectorAll('h1 a[href="#Top-of-Table-of-Contents"], h2 a[href="#Top-of-Table-of-Contents"], h3 a[href="#Top-of-Table-of-Contents"], h4 a[href="#Top-of-Table-of-Contents"], h5 a[href="#Top-of-Table-of-Contents"], h6 a[href="#Top-of-Table-of-Contents"]').forEach(a => {
+            a.style.display = tocArrowsVisible ? 'inline-block' : 'none';
+          });
+          const btn = document.getElementById('btnToggleTocArrows');
+          if(btn){
+            setPressed(btn, tocArrowsVisible);
+            swapIconWeight(btn.querySelector('i[data-swap-icon]'), tocArrowsVisible);
+          }
+        }
+        function toggleTocArrows(){
+          tocArrowsVisible = !tocArrowsVisible;
+          setCookie('tocArrowsVisible', tocArrowsVisible);
+          applyTocArrows();
+        }
+        function setupTocArrowsObserver(){
+          const obs = new MutationObserver(applyTocArrows);
+          obs.observe(document.body, { childList:true, subtree:true });
+        }
+
+        // --- TOC Card ---
+        let tocAnimationInProgress = false;
+        function applyTocCard(){
+          const tocCard = document.getElementById('table-of-contents-card');
+          const mainCol = document.getElementById('main_content_col');
+          const btn = document.getElementById('btnToggleTocCard');
+          if(!mainCol) return;
+          if(!tocCard){
+            mainCol.classList.remove('col-lg-7');
+            mainCol.classList.add('col-lg-12');
+            return;
+          }
+
+          // Animation states
+          if(tableOfContentsVisible){
+            if(tocCard.classList.contains('hidden')){
+              // preparing to show
+              tocCard.classList.remove('hidden','toc-animating-out');
+              tocCard.classList.add('toc-animating-in-start');
+              requestAnimationFrame(()=>{
+                requestAnimationFrame(()=>{
+                  tocCard.classList.remove('toc-animating-in-start');
+                  tocCard.classList.add('toc-animating-in');
+                });
+              });
+              tocAnimationInProgress = true;
+              setTimeout(()=>{
+                tocCard.classList.remove('toc-animating-in');
+                tocAnimationInProgress = false;
+              }, 300);
+            }
+            if(!mainCol.classList.contains('col-lg-7')){
+              mainCol.classList.remove('col-lg-12');
+              mainCol.classList.add('col-lg-7');
+            }
+            tocCard.classList.remove('toc-hidden-margin');
+          } else {
+            // hide with animation
+            if(!tocCard.classList.contains('hidden') && !tocAnimationInProgress){
+              tocCard.classList.add('toc-animating-out');
+              tocAnimationInProgress = true;
+              setTimeout(()=>{
+                tocCard.classList.add('hidden');
+                tocCard.classList.remove('toc-animating-out');
+                tocAnimationInProgress = false;
+              }, 280);
+            }
+            if(!mainCol.classList.contains('col-lg-12')){
+              mainCol.classList.remove('col-lg-7');
+              mainCol.classList.add('col-lg-12');
+            }
+            tocCard.classList.add('toc-hidden-margin');
+          }
+
+          if(btn){
+            setPressed(btn, tableOfContentsVisible);
+            btn.title = tableOfContentsVisible ? 'Hide Table of Contents' : 'Show Table of Contents';
+            btn.setAttribute('aria-label', btn.title);
+            const icon = btn.querySelector('i[data-swap-icon]');
+            if(icon){
+              // For TOC we want regular when visible, solid when hidden (inverse)
+              if(tableOfContentsVisible){ icon.classList.add('fa-regular'); icon.classList.remove('fa-solid'); }
+              else { icon.classList.add('fa-solid'); icon.classList.remove('fa-regular'); }
+            }
+          }
+        }
+        function toggleTocCard(){
+          tableOfContentsVisible = !tableOfContentsVisible;
+          setCookie('tableOfContentsVisible', tableOfContentsVisible);
+          if(!tableOfContentsVisible){
+            tocHideCount += 1;
+            setCookie('tableOfContentsHideCount', tocHideCount);
+          }
+          applyTocCard();
+        }
+
+        // --- Public API ---
+        function init(){
+          applyPilcrow();
+          applyTocArrows();
+          applyTocCard();
+          setupPilcrowObserver();
+          setupTocArrowsObserver();
+          // Expose global handlers expected by existing onclick attributes
+          window.togglePilcrow = togglePilcrow;
+          window.toggleBackToTableofContents = toggleTocArrows;
+          window.toggleShowTableOfContents = toggleTocCard;
+        }
+        return { init };
+      })();
+
+      document.addEventListener('DOMContentLoaded', ToggleManager.init);
     </script>
+
 
     <!-- Bottom of the Body include core JavaScript -->
   {% assign this-url = site.url | append: page.url %}

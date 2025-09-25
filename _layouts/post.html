@@ -141,13 +141,14 @@
                            
                             <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
 
-                            {% unless page.no_toc == true or page.no_toc == 'true' %}
-                            <div class="card h-100 no-padding ms-4 d-none d-lg-block col-lg-5 float-end" id="table-of-contents-card">
-                                <div class="col-12">
-                                    <div class="card h-100 position-relative">
+                            <div class="row g-0" id="content-with-toc-row">
+                                {% unless page.no_toc == true or page.no_toc == 'true' %}
+                                <!-- TOC Column: hidden via JS (.hidden) + class width adjustment for main content -->
+                                <div class="col-12 col-lg-5 d-none d-lg-block" id="table-of-contents-card">
+                                    <div class="card h-100 no-padding ms-4 position-relative">
                                         <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/table-of-contents.webp" alt="{{ category | default: 'Table of contents' }}" loading="lazy">
                                         <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
-                                            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
+                                            <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;"></div>
                                             {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
                                             {% assign __toc_slug = __toc_slug | strip %}
                                             {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
@@ -162,20 +163,24 @@
                                             {% else %}
                                                 {% assign __toc_final_href = site.url | append: __toc_href %}
                                             {% endif %}
-                                            <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" name="Top-of-Table-of-Contents" ID="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents 📖</a></p>
+                                            <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents 📖</a></p>
                                         </div>
+                                        <div class="card-body p-0 ps-4" id="insert-table-of-contents-here"></div>
                                     </div>
                                 </div>
-                                <div class="card-body p-0 ps-4" id="insert-table-of-contents-here">
-
+                                {% endunless %}
+                                <div class="col-12 {% unless page.no_toc == true or page.no_toc == 'true' %}col-lg-7{% endunless %}" id="main_content_col">
+                                    {%- comment -%}
+                                        The actual post HTML content. Width adjusts when TOC hidden: JS swaps col-lg-7 -> col-lg-12.
+                                    {%- endcomment -%}
+                                    <div class="e-content" id="main_content">{{ content | lazy_images_except_first }}</div><!-- main post content including hex include -->
                                 </div>
                             </div>
-                            {% endunless %}                   
                             {%- comment -%}
                                 Apply lazy loading to all images except the first without duplicating the
                                 entire content multiple times (handled by custom filter).
                             {%- endcomment -%}
-                            <div class="e-content" id="main_content">{{ content | lazy_images_except_first }}</div><!-- main post content including hex include -->
+                            <!-- (Content block moved into responsive row above) -->
                         </div>
 
                     </div>

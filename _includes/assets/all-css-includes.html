@@ -183,6 +183,54 @@
         .p-note li { color: #c8c8c6; }
         [data-bs-theme="dark"] .p-note li { color: #d4d4d2; }
 
+    /* Smooth reflow when toggling Table of Contents */
+    #main_content_col { transition: width .25s ease, flex-basis .25s ease; }
+    /* Remove the internal ms-4 gap when TOC card is hidden to avoid orphaned space */
+    #table-of-contents-card.hidden { display:none !important; }
+    /* If additional margin adjustments needed, hook via .toc-hidden-margin */
+    .toc-hidden-margin { margin-left:0 !important; }
+
+    /* TOC Card fade / slide animation */
+    #table-of-contents-card { transition: opacity .28s ease, transform .28s ease; }
+    #table-of-contents-card.toc-animating-in-start { opacity:0; transform: translateY(8px); }
+    #table-of-contents-card.toc-animating-in { opacity:1; transform: translateY(0); }
+    #table-of-contents-card.toc-animating-out { opacity:0; transform: translateY(-8px); }
+
+        /* Toggle button pressed state (persistent) */
+        button[aria-pressed] {
+            transition: background-color .15s ease, box-shadow .15s ease, transform .08s ease;            
+        }
+        /* Base override to ensure consistent starting background (respect existing text-bg-secondary classes) */
+        button[aria-pressed="false"].text-bg-secondary {
+            background-color: var(--bs-secondary-bg) !important;
+            color: var(--bs-secondary-color) !important;
+        }
+        /* Pressed state: swap to primary color & subtle inset shadow to simulate a depressed surface */
+        button[aria-pressed="true"].text-bg-secondary {
+            background-color: var(--bs-primary) !important;
+            color: var(--bs-light) !important;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,.35), inset 0 0 0 1px rgba(0,0,0,.4);
+            transform: translateY(1px) scale(.96);
+        }
+        /* Icon inherits text color */
+        button[aria-pressed] i { color: inherit !important; }
+        /* Focus outline kept for accessibility; enhance contrast on pressed */
+        button[aria-pressed="true"].text-bg-secondary:focus-visible { outline: 2px solid var(--bs-light); outline-offset: 2px; }
+            /* Hover states */
+            button[aria-pressed="false"].text-bg-secondary:hover {
+                background-color: var(--bs-secondary) !important;
+                filter: brightness(1.25);
+                color: var(--bs-light) !important;
+            }
+            button[aria-pressed="true"].text-bg-secondary:hover {
+                filter: brightness(1.08);
+            }
+            button[aria-pressed].text-bg-secondary:focus-visible { outline: 2px solid var(--bs-primary); outline-offset: 2px; }
+            button[aria-pressed="true"].text-bg-secondary:focus-visible { outline-color: var(--bs-light); }
+        @media (prefers-reduced-motion: reduce) {
+            button[aria-pressed] { transition: none; }
+        }
+
     </style>
 
     <!-- WCAG contrast utility styles -->
