@@ -1,0 +1,7 @@
+// Utility: `.hidden` class to hide elements (distinct from the `[hidden]` attribute
+// Used for JS-driven visibility toggles (e.g., Table of Contents card) so we avoid
+// clobbering responsive utility classes with inline styles.
+// Keep `!important` to override potential display from layout classes.
+.hidden {
+  display: none !important;
+}

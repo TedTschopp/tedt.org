@@ -7,6 +7,9 @@
 @import "helpers/position";
 @import "helpers/stacks";
 @import "helpers/visually-hidden";
-@import "helpers/stretched-link";
-@import "helpers/text-truncation";
-@import "helpers/vr";
+// Pruned duplicate Bootstrap helpers (clearfix, color-bg, colored-links, focus-ring, ratio,
+// position, stacks, stretched-link, text-truncation, vr, visually-hidden) since we now rely
+// on upstream CDN Bootstrap 5.3.x. Only keep project-specific utility helpers here.
+@import "helpers/hidden"; // custom: JS toggle utility (.hidden)
+@import "helpers/ratio-custom"; // custom non-standard ratio helpers (e.g., 3x1)
+// If future local compilation needed, reintroduce selective imports above.

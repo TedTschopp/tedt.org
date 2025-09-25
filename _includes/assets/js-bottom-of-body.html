@@ -125,12 +125,11 @@
 
       const applyTableOfContentsState = () => {
         const tocCard = document.getElementById('table-of-contents-card');
-        if(!tocCard) return; // Graceful no-op if page suppresses TOC (no_toc flag)
-        // When visible, remove inline display so responsive utility classes (d-none d-lg-block) work.
+        if(!tocCard) return; // Graceful no-op if TOC suppressed (no_toc)
         if(tableOfContentsVisible) {
-          tocCard.style.removeProperty('display');
+          tocCard.classList.remove('hidden');
         } else {
-          tocCard.style.display = 'none';
+          tocCard.classList.add('hidden');
         }
       };
 
