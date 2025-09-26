@@ -152,7 +152,7 @@
                                                                                                                                             <aside id="table-of-contents-card" class="d-none d-lg-block float-lg-end ms-lg-4 mb-3" style="max-width:340px;">
                                                                                                                                                 <div class="card h-100 no-padding position-relative">
                                                                                                                                                     <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/table-of-contents.webp" alt="{{ category | default: 'Table of contents' }}" loading="lazy">
-                                                                                                                                                    <div class="card-img-overlay d-flex flex-column align-items-start justify-content-start p-0 ps-2 pt-2">
+                                                                                                                                                      <div class="card-img-overlay d-flex flex-column align-items-start justify-content-start p-0 ps-2 pt-2" style="pointer-events:none;">
                                                                                 {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
                                                                                 {% assign __toc_slug = __toc_slug | strip %}
                                                                                 {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
@@ -167,9 +167,9 @@
                                                                                 {% else %}
                                                                                     {% assign __toc_final_href = site.url | append: __toc_href %}
                                                                                 {% endif %}
-                                                                                                                                                                <p class="card-title h3 mb-2" style="z-index:2; position:relative;">
+                                                                                                                                                                                                        <p class="card-title h3 mb-2" style="z-index:2; position:relative; pointer-events:auto;">
                                                                                                                                                                     {%- comment -%} Moved heading to top of image per user request (previously bottom-aligned). {%- endcomment -%}
-                                                                                                                                                                    <a class="text-decoration-none" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents</a>
+                                                                                                                                                                                                            <a class="text-decoration-none" style="pointer-events:auto;" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents</a>
                                                                                                                                                                 </p>
                                                                             </div>
                                                                             <div class="card-body p-0 ps-4" id="insert-table-of-contents-here"></div>
