@@ -36,6 +36,23 @@
 .wcag-glow.aaa { --scrim-alpha: 0.52; }
 .wcag-glow.light-on-dark { --text: #fff; --scrim-rgb: 0,0,0; --scrim-alpha: 0.85; }
 
+/* Scoped link color override inside wcag-glow blocks (requested custom color #0645AD) */
+.wcag-glow a {
+  color: #0645AD;
+  text-decoration-color: rgba(6,69,173,0.55);
+}
+.wcag-glow a:visited {
+  color: #0645AD; /* keep same to avoid purple shift unless a distinct visited color desired */
+}
+.wcag-glow a:hover,
+.wcag-glow a:focus-visible {
+  color: #043b94; /* slightly darker for hover for contrast feedback */
+  text-decoration-color: #043b94;
+}
+.wcag-glow a:active {
+  color: #032e72;
+}
+
 /* Variant: remove rounding on top corners while preserving others */
 .wcag-glow.flat-top {
   border-top-left-radius: 0;
