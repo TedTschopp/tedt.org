@@ -1,5 +1,15 @@
           <!-- NAVIGATION -->
-          <nav class="navbar navbar-expand-lg sticky-top bg-dark navbar-dark" role="navigation" aria-label="Primary">
+          {%- comment -%}
+            For article (post) pages we force the navbar to remain fixed at the very top of the viewport at all times.
+            Rationale: user requirement "articles should always have the top nav bar at the top of the screen".
+            Implementation: swap Bootstrap position utility from sticky-top (normal flow until scrolled) to fixed-top (removed from flow).
+            NOTE: Post layout body receives extra padding-top (70px) via inline style or global overrides so content is not obscured.
+          {%- endcomment -%}
+          {%- assign __nav_position_class = 'sticky-top' -%}
+          {%- if page.layout == 'post' -%}
+            {%- assign __nav_position_class = 'fixed-top' -%}
+          {%- endif -%}
+          <nav class="navbar navbar-expand-lg {{ __nav_position_class }} bg-dark navbar-dark" role="navigation" aria-label="Primary">
             {%- comment -%}
               Standardized navbar item sizing: ensure all top-level nav links & icon buttons share consistent 44px height,
               vertical centering, and baseline alignment. This improves visual rhythm and accessible hit target size.
