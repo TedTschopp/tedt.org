@@ -9,6 +9,36 @@
 /* Canary rule to confirm this partial is compiled into bootstrap-build.css. Search for NAVBAR_CANARY. */
 body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
 
+/* Responsive toggler visibility & stacking context ----------------------------------
+  Issue: Toggler appearing when it shouldn't (on large viewports) and collapsed menu
+  content rendering beneath hero/article imagery. Fix by:
+  1. For viewports >= lg: hide the .navbar-toggler (Bootstrap's .navbar-expand-lg should do this, but
+    explicit rule added because custom overrides earlier may have altered default display logic).
+  2. Ensure the collapsing container gains a higher stacking context and isn't occluded by positioned
+    article media. Use position:relative + z-index and an elevated z-index on the open .show state.
+  3. Provide a subtle background & box-shadow on mobile expanded menu to separate from underlying imagery.
+*/
+
+@media (min-width: 992px) { /* lg breakpoint */
+  .navbar.navbar-expand-lg .navbar-toggler { display: none !important; }
+}
+
+.navbar.sticky-top { z-index: 1030; } /* above typical content; slightly below modals (Bootstrap uses 1030 for fixed navs) */
+
+.navbar .collapse.navbar-collapse { position: relative; z-index: 1025; }
+.navbar .collapse.navbar-collapse.show {
+  z-index: 1040; /* raise above hero images */
+  background: rgba(0,0,0,0.92); /* dark backdrop for readability */
+  -webkit-backdrop-filter: blur(4px); /* Safari */
+  backdrop-filter: blur(4px); /* soften underlying content */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border-radius: .5rem;
+  padding: .75rem 1rem; /* breathing room inside expanded panel */
+}
+
+/* Ensure dropdown menus within expanded mobile panel appear above the panel itself */
+.navbar .dropdown-menu { z-index: 1050; }
+
 .navbar.sticky-top {
   height: 70px;
   min-height: 70px;

@@ -1,0 +1,61 @@
+/* Navbar overrides extracted from _sass/_overrides-navbar.scss because the SCSS partial
+   is currently not being emitted into bootstrap-build.css. Keeping this as a standalone
+   late-loaded stylesheet ensures the responsive + stacking fixes apply immediately.
+   TODO: Investigate why @import "overrides-navbar" is ignored during SCSS compilation
+   (likely caching or build pipeline peculiarity). Once resolved, this file can be
+   removed and the import reinstated as the single source of truth. */
+
+/* Canary (optional): body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display:none; } */
+
+@media (min-width: 992px) { /* Hide toggler on lg+ viewports (defense-in-depth) */
+  .navbar.navbar-expand-lg .navbar-toggler { display: none !important; }
+}
+
+/* Base stacking so navbar reliably sits above hero/images but below modals */
+.navbar.sticky-top { z-index: 1030; }
+
+/* Collapse container gets its own context */
+.navbar .collapse.navbar-collapse { position: relative; z-index: 1025; }
+
+/* Expanded mobile menu panel styling */
+.navbar .collapse.navbar-collapse.show {
+  z-index: 1040; /* above hero imagery */
+  background: rgba(0,0,0,0.92);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  border-radius: .5rem;
+  padding: .75rem 1rem;
+}
+
+/* Ensure dropdown menus stack above panel */
+.navbar .dropdown-menu { z-index: 1050; }
+
+/* Fixed height + vertical centering */
+.navbar.sticky-top {
+  height: 70px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar.sticky-top > .container-fluid { height: 100%; display:flex; align-items:center; }
+
+/* Vertically center key interactive elements */
+.navbar.sticky-top .navbar-brand,
+.navbar.sticky-top .navbar-toggler,
+.navbar.sticky-top .navbar-nav > li > .nav-link,
+.navbar.sticky-top .navbar-nav > li > button.nav-link,
+.navbar.sticky-top .navbar-nav > li > button.menu-item {
+  display: flex;
+  align-items: center;
+  height: 70px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Brand image sizing */
+.navbar.sticky-top .navbar-brand img { height: 64px; width: auto; display:block; }
+
+/* Prevent shrinking of list items */
+.navbar.sticky-top .navbar-nav > li { display:flex; align-items:center; }
