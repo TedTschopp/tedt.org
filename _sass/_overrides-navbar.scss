@@ -1,0 +1,42 @@
+/* Navbar height & vertical alignment overrides
+   Reason: Previous attempt adding these rules inside _sass/_navbar.scss did not surface in compiled
+   bootstrap-build.css (likely due to upstream Bootstrap partial precedence or caching). Importing
+   this file LAST guarantees the cascade wins without editing core Bootstrap partials.
+   Accessibility: Maintains 44px minimum interactive targets while giving the bar a consistent 70px
+   visual block for branding and rhythm.
+*/
+
+/* Canary rule to confirm this partial is compiled into bootstrap-build.css. Search for NAVBAR_CANARY. */
+body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
+
+.navbar.sticky-top {
+  height: 70px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar.sticky-top > .container-fluid { height: 100%; display:flex; align-items:center; }
+
+/* Brand & controls vertically centered inside the 70px bar */
+.navbar.sticky-top .navbar-brand,
+.navbar.sticky-top .navbar-toggler,
+.navbar.sticky-top .navbar-nav > li > .nav-link,
+.navbar.sticky-top .navbar-nav > li > button.nav-link,
+.navbar.sticky-top .navbar-nav > li > button.menu-item {
+  display: flex;
+  align-items: center;
+  height: 70px; /* match bar */
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* Brand mark sizing (kept below full bar height for optical breathing room) */
+.navbar.sticky-top .navbar-brand img {
+  height: 64px;
+  width: auto;
+  display: block;
+}
+
+/* Prevent accidental shrink if utility classes applied */
+.navbar.sticky-top .navbar-nav > li { display:flex; align-items:center; }
