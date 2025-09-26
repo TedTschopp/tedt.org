@@ -122,19 +122,19 @@ Codex runs in a sandbox with network access off by default—locally or in the c
 
 ## The business signal: capability rising, cost falling (over time)
 
-There’s a tension every CIO and architect feels: we want broad access, but we know if we lock a decision into place with a vendor or a model, science keeps happening and advances are being made.  Sam Altman put it plainly this week: **“Over the next few weeks, we are launching some new compute-intensive offerings. Because of the associated costs, some features will initially only be available to Pro subscribers, and some new products will have additional fees.  Our intention remains to drive the cost of intelligence down as aggressively as we can and make our services widely available, and we are confident we will get there over time.  But we also want to learn what's possible when we throw a lot of compute, at today's model costs, at interesting new ideas.”** So expect more annoucnments in the coming weeks.
+There’s a tension every CIO and architect feels: we want broad access, but we know if we lock a decision into place with a vendor or a model, science keeps happening and advances are being made.  Sam Altman put it plainly this week: **“Over the next few weeks, we are launching some new compute-intensive offerings. Because of the associated costs, some features will initially only be available to Pro subscribers, and some new products will have additional fees.  Our intention remains to drive the cost of intelligence down as aggressively as we can and make our services widely available, and we are confident we will get there over time.  But we also want to learn what's possible when we throw a lot of compute, at today's model costs, at interesting new ideas.”** So expect more announcements in the coming weeks.
 
 
 ## Ways to think about this information
 
 1. **Treat contest wins as capability signals, not proofs of production fitness.** Tests like ICPC show what’s possible under pressure. Your job is to map those capabilities to governed workflows—especially work that benefits from plan‑execute‑verify loops.
 2. **Lean into agentic patterns where verification is built‑in.** Code review agents that run tests and supply logs are easier to trust than free‑form generators. Start there; widen the circle as evidence accumulates. 
-3. **Prefer the paved road.** Use the unified solutions surface (CLI, IDE, cloud, GitHub) so that context, approvals, and audit travel with the work. That’s how you scale with fewer merge conflicts—organizational and literal. 
+3. **Prefer the paved road.** Use the unified solutions surface (CLI, IDE, cloud, GitHub) so that context, approvals, and audit travel with the work. That’s how you scale with fewer merge conflicts—organizational and literal.
 
 If all this feels like a marine layer—hazy at first, then gradually clear—that’s normal. The light comes as we practice: small faithful steps, reviewed work, honest metrics, and the humility to keep improving. In that rhythm, agents become co‑laborers, and our people remain the point. The gold medals make headlines; the paved roads make tomorrow’s ship date.
 
 ## Sources
 
-* https://venturebeat.com/ai/google-and-openais-coding-wins-at-university-competition-show-enterprise-ai
-* https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding
-* https://x.com/sama/status/1969835407421374910
+* [Venture Beat - Google and OpenAI coding wins at University competition](https://venturebeat.com/ai/google-and-openais-coding-wins-at-university-competition-show-enterprise-ai)
+* [OpenAI unveils new model GPT 5 Codex optimized for Agentic Coding](https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding)
+* [Sam Altman on xAI](https://x.com/sama/status/1969835407421374910)
