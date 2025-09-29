@@ -2585,5 +2585,36 @@
       "https://tschopp.net/users/Ted/statuses/115284694867864616"
     ],
     "lastTootTimestamp": 1759104841222
+  },
+  "https://tedt.org/RFP-Response-Review/": {
+    "id": "/RFP-Response-Review/",
+    "title": "“RFP Response Evaluation Prompt”",
+    "summary": "“A detailed prompt designed to guide evaluation of vendor RFP responses using structured steps, rubric scoring, and reviewer Q&A.”",
+    "content_text": "“A detailed prompt designed to guide evaluation of vendor RFP responses using structured steps, rubric scoring, and reviewer Q&A.” https://tedt.org/RFP-Response-Review/",
+    "url": "https://tedt.org/RFP-Response-Review/",
+    "image": "https://tedt.org/img/prompts/The-Lighthouse-and-the-New-Lens.webp",
+    "tags": [
+      "rfp",
+      "evaluation",
+      "vendor responses",
+      "rubric",
+      "compliance",
+      "scoring",
+      "procurement",
+      "analysis",
+      "governance",
+      "risk assessment"
+    ],
+    "date_published": "2025-09-28T00:00:00-07:00",
+    "date_modified": "2025-09-28T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115285455339325581"
+    ],
+    "lastTootTimestamp": 1759116445095
   }
 }
