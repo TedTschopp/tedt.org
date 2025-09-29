@@ -2,10 +2,10 @@
 
 layout: prompt-details
 
-title: “RFP Response Evaluation Prompt”
-subtitle: “Structured workflow for analyzing, scoring, and critiquing vendor RFP responses”
-quote: “Analyze, score, and critique vendor RFP responses with traceability, grading, and gap analysis.”
-excerpt: “A detailed prompt designed to guide evaluation of vendor RFP responses using structured steps, rubric scoring, and reviewer Q&A.”
+title: RFP Response Evaluation Prompt
+subtitle: Structured workflow for analyzing, scoring, and critiquing vendor RFP responses
+quote: "Analyze, score, and critique vendor RFP responses with traceability, grading, and gap analysis."
+excerpt: "A detailed prompt designed to guide evaluation of vendor RFP responses using structured steps, rubric scoring, and reviewer Q&A."
 
 source: "Original Content"
 source-url: ""
@@ -26,8 +26,8 @@ bullets:
     - Evaluates compliance, readability, risks, and gaps.
     - Produces scoring matrix, gap analysis, risk summary, and reviewer Q&A.
 
-description: “This prompt provides a structured framework for evaluating vendor RFP responses. It guides evaluators through parsing requirements, mapping responses, applying a rubric, identifying risks, and generating actionable outputs such as scoring matrices and reviewer Q&A.”
-seo-description: “Structured prompt for scoring and critiquing vendor RFP responses with rubric-based evaluation, risk analysis, and reviewer Q&A outputs.”
+description: "This prompt provides a structured framework for evaluating vendor RFP responses. It guides evaluators through parsing requirements, mapping responses, applying a rubric, identifying risks, and generating actionable outputs such as scoring matrices and reviewer Q&A."
+seo-description: "Structured prompt for scoring and critiquing vendor RFP responses with rubric-based evaluation, risk analysis, and reviewer Q&A outputs."
 
 categories:
 - Prompts
@@ -110,7 +110,7 @@ prompt_content: |
     ### **Step 4: Quality & Compliance Check**
 
     * Evaluate readability, clarity, and structure.
-    * Detect compliance language (“meets,” “exceeds,” “fully compliant”).
+    * Detect compliance language ("meets," "exceeds," "fully compliant").
     * Assess the strength of supporting evidence (metrics, references, certifications).
     * Flag vague/non-committal language.
     * Check for consistency across sections.
@@ -141,11 +141,11 @@ prompt_content: |
 
     ### ✅ Example Application
 
-    * Requirement: *“Provide 24/7 customer support.”*
-    * Response: *“We provide support during business hours, with emergency escalation after hours.”*
+    * Requirement: *"Provide 24/7 customer support."*
+    * Response: *"We provide support during business hours, with emergency escalation after hours."*
     * Evaluation: **Partial compliance (2/5)**.
     * Risk: Limited after-hours coverage.
-    * Reviewer Question: *“What is the SLA for after-hours support?”*
+    * Reviewer Question: *"What is the SLA for after-hours support?"*
 
     ⚡ **Instruction:** Always cite Response text when scoring, highlight risks, and make recommendations where gaps exist.
 
@@ -241,11 +241,11 @@ prompt_content: |
 
 1. Open your approved AI workspace.
 2. Start a new chat, title it with the RFP name, and **upload the two documents** (RFP + Vendor Response).
-3. Paste the rubric and the required questions into the message box **below** the prompt.
-4. Paste the **prompt** (verbatim) from the next section.
+3. Paste the rubric into the correct spot in the prompt and add the required questions into the correct section of the prompt.
+4. Now paste the **prompt** (verbatim) from the next section.
 5. Send.
 6. When you receive results, skim the **Scoring Matrix**, **Gap Analysis**, **Risk & Strengths**, and **Reviewer Q&A**.
-7. If anything looks off, ask the model to “re‑score using stricter evidence standards” or “show only citations containing SLAs/time‑bound commitments.”
+7. If anything looks off, ask the model to "re‑score using stricter evidence standards" or "show only citations containing SLAs/time‑bound commitments."
 
 **What you’ll get back:**
 
@@ -259,27 +259,27 @@ prompt_content: |
 
 > Paste the text below into your AI workspace. Do **not** edit inside the box unless your team has agreed to a standard variant.
 
-## How the prompt “thinks” (in plain English)
+## How the prompt "thinks" (in plain English)
 
 * **It parses first, judges second.** That keeps us honest.
 * **It maps requirement‑to‑response** so we can trace every claim to vendor text.
 * **It scores with receipts.** Justifications must point to quotes, metrics, or artifacts.
-* **It flags gaps and risks** (e.g., “after‑hours support via escalation only”).
+* **It flags gaps and risks** (e.g., "after‑hours support via escalation only").
 * **It drafts reviewer questions** that close gaps before we sign anything.
 
 ### A tiny example (from the prompt)
 
-> Requirement: “Provide 24/7 customer support.”
-> Response: “Business hours, with emergency escalation after hours.”
+> Requirement: "Provide 24/7 customer support."
+> Response: "Business hours, with emergency escalation after hours."
 > Evaluation: **Partial (2/5)**.
 > Risk: Limited after‑hours coverage.
-> Reviewer Q: “What is the SLA for after‑hours support?”
+> Reviewer Q: "What is the SLA for after‑hours support?"
 
 ## Guardrails & good habits
 
 * **Use approved workspaces** and follow data‑handling policies. Redact sensitive details when needed.
 * **Name your files clearly** (`RFP-<project>-vFinal.pdf`, `Vendor-Response-<company>-v1.docx`).
-* **Ask for stricter evidence** if the scoring feels generous. “Only cite lines with numbers, SLAs, or certifications.”
+* **Ask for stricter evidence** if the scoring feels generous. "Only cite lines with numbers, SLAs, or certifications."
 * **Save what works** in a shared team folder so our approach becomes a paved road—not a goat trail.
 
 ## For leaders: make it the paved road
