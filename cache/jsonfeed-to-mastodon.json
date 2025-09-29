@@ -2588,9 +2588,9 @@
   },
   "https://tedt.org/RFP-Response-Review/": {
     "id": "/RFP-Response-Review/",
-    "title": "“RFP Response Evaluation Prompt”",
-    "summary": "“A detailed prompt designed to guide evaluation of vendor RFP responses using structured steps, rubric scoring, and reviewer Q&A.”",
-    "content_text": "“A detailed prompt designed to guide evaluation of vendor RFP responses using structured steps, rubric scoring, and reviewer Q&A.” https://tedt.org/RFP-Response-Review/",
+    "title": "RFP Response Evaluation Prompt",
+    "summary": "A detailed prompt designed to guide evaluation of vendor RFP responses using structured steps, rubric scoring, and reviewer Q&A.",
+    "content_text": "A detailed prompt designed to guide evaluation of vendor RFP responses using structured steps, rubric scoring, and reviewer Q&A. https://tedt.org/RFP-Response-Review/",
     "url": "https://tedt.org/RFP-Response-Review/",
     "image": "https://tedt.org/img/prompts/The-Lighthouse-and-the-New-Lens.webp",
     "tags": [
@@ -2616,5 +2616,70 @@
       "https://tschopp.net/users/Ted/statuses/115285455339325581"
     ],
     "lastTootTimestamp": 1759116445095
+  },
+  "https://tedt.org/The-Orchard-and-the-Algorithm/": {
+    "id": "/The-Orchard-and-the-Algorithm/",
+    "title": "The Orchard and the Algorithm",
+    "summary": "Modern enterprises make multi‑year bets on tools but hesitate to form people for the long game. As AI arrives as a virtual employee, it shifts budgets, widens apprenticeship gaps, and demands covenant‑minded leadership.",
+    "content_text": "Modern enterprises make multi‑year bets on tools but hesitate to form people for the long game. As AI arrives as a virtual employee, it shifts budgets, widens apprenticeship gaps, and demands covenant‑minded leadership. https://tedt.org/The-Orchard-and-the-Algorithm/",
+    "url": "https://tedt.org/The-Orchard-and-the-Algorithm/",
+    "image": "https://tedt.org/img/2025-09/The-Orchard.webp",
+    "tags": [
+      "ai",
+      "enterprise",
+      "organizational design",
+      "apprenticeship",
+      "reskilling",
+      "model governance",
+      "virtual employees",
+      "model drift",
+      "culture",
+      "ethics",
+      "headcount",
+      "budgets",
+      "automation",
+      "leadership"
+    ],
+    "date_published": "2025-09-28T00:00:00-07:00",
+    "date_modified": "2025-09-28T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115286184520133073"
+    ],
+    "lastTootTimestamp": 1759127571496
+  },
+  "https://tedt.org/The-Lighthouse-and-the-New-Lens/": {
+    "id": "/The-Lighthouse-and-the-New-Lens/",
+    "title": "The Lighthouse and the New Lens",
+    "summary": "A parable of a lighthouse keeper frames why reskilling matters now, with a copy-and-paste AI prompt for fair RFP evaluations.",
+    "content_text": "A parable of a lighthouse keeper frames why reskilling matters now, with a copy-and-paste AI prompt for fair RFP evaluations. https://tedt.org/The-Lighthouse-and-the-New-Lens/",
+    "url": "https://tedt.org/The-Lighthouse-and-the-New-Lens/",
+    "image": "https://tedt.org/img/prompts/The-Lighthouse-and-the-New-Lens.webp",
+    "tags": [
+      "ai",
+      "reskilling",
+      "workforce",
+      "financial times",
+      "accenture",
+      "rfps",
+      "procurement",
+      "evaluation",
+      "prompts",
+      "teachability",
+      "consistency",
+      "risk management"
+    ],
+    "date_published": "2025-09-28T00:00:00-07:00",
+    "date_modified": "2025-09-28T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
   }
 }
