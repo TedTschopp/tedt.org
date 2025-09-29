@@ -27,9 +27,13 @@
     <!-- Scripts that need to be at the end of the header -->
         {% include assets/scripts.html %}
         {% include seo/article-jsonld.html %}
-    <!-- DEBUG(math/mermaid) removed verbose page|jsonify for memory reasons -->
-        {% comment %} Force includes during debugging {% endcomment %}
-                {% include assets/mathjax.html %}
+        {% capture __math_flag %}{{ page.math | default: '' }}{% endcapture %}
+        {% capture __mathjax_flag %}{{ page.mathjax | default: '' }}{% endcapture %}
+        {% assign __math_flag = __math_flag | strip | downcase %}
+        {% assign __mathjax_flag = __mathjax_flag | strip | downcase %}
+        {% if page.math == true or __math_flag == 'true' or __math_flag == '1' or page.mathjax == true or __mathjax_flag == 'true' or __mathjax_flag == '1' %}
+            {% include assets/mathjax.html %}
+        {% endif %}
                 {% if page.mermaid == true or page.mermaid == 'true' %}
                     {% include assets/mermaid.html %}
                 {% endif %}

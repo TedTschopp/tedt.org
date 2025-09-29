@@ -7,12 +7,14 @@
     <!-- jQuery - Load early to ensure availability -->
     {% include assets/js-jquery.html %}
 
-  {% if page.mathjax %}
-    <!-- mathjax -->
-    <script type="text/javascript" async
-         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
-      </script>
-    {% endif %}
+    {% capture __mathjax_flag_scripts %}{{ page.mathjax | default: '' }}{% endcapture %}
+    {% assign __mathjax_flag_scripts = __mathjax_flag_scripts | strip | downcase %}
+    {% if page.mathjax == true or __mathjax_flag_scripts == 'true' or __mathjax_flag_scripts == '1' %}
+        <!-- mathjax -->
+        <script type="text/javascript" async
+                 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js">
+            </script>
+        {% endif %}
 
     {% if mf-location == true %}
     <!-- Leaflet Open Street Maps -->
