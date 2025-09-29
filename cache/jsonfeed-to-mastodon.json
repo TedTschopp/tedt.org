@@ -2554,5 +2554,36 @@
       "https://tschopp.net/users/Ted/statuses/115249144785682434"
     ],
     "lastTootTimestamp": 1758562390003
+  },
+  "https://tedt.org/Reprint-Accenture-to-exit-staff-who-cannot-be-retrained-for-age-of-AI/": {
+    "id": "/Reprint-Accenture-to-exit-staff-who-cannot-be-retrained-for-age-of-AI/",
+    "title": "2025 Reprint - Accenture to ‘exit’ staff who cannot be retrained for age of AI",
+    "summary": "Accenture has announced job cuts and warned that employees unable to adapt to AI-driven roles will be asked to leave, citing weak demand and restructuring.",
+    "content_text": "Accenture has announced job cuts and warned that employees unable to adapt to AI-driven roles will be asked to leave, citing weak demand and restructuring. https://tedt.org/Reprint-Accenture-to-exit-staff-who-cannot-be-retrained-for-age-of-AI/",
+    "url": "https://tedt.org/Reprint-Accenture-to-exit-staff-who-cannot-be-retrained-for-age-of-AI/",
+    "image": "https://tedt.org/img/2025-09/Accenture.webp",
+    "tags": [
+      "accenture",
+      "layoffs",
+      "artificial intelligence",
+      "restructuring",
+      "consulting",
+      "julie sweet",
+      "us government",
+      "revenue",
+      "workforce",
+      "generative ai"
+    ],
+    "date_published": "2025-09-28T09:00:00-07:00",
+    "date_modified": "2025-09-28T09:00:00-07:00",
+    "author": {
+      "avatar": "https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fuploaded-files%2FStephen-Foley-f12dbaca-35f9-4fdc-8efd-31f72e6125f2.png?source=next-opengraph&fit=scale-down&width=900",
+      "name": "Stephen Foley",
+      "url": "https://x.com/stephenfoley"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115284694867864616"
+    ],
+    "lastTootTimestamp": 1759104841222
   }
 }
