@@ -2,16 +2,26 @@
 # Each top-level key is a canonical slug.
 # Fields:
 #   title: Human display title (fallback if not overridden elsewhere)
+#   label: Optional short label override for badges/titles (defaults to title)
 #   raw_names: list of raw legacy names / variants mapping to this slug (serves as alias map)
-#   class: legacy CSS class (for backward compatibility)
+#   class: legacy CSS class (for backward compatibility with historic selectors)
 #   emoji: optional emoji
 #   image: hero/category image path
-#   palette: { start, end, fontTitle?, titleColor?, titleShadow?, titleHoverColor?, titleHoverShadow?, titleStyle?, titleSize?, titleTransform?, titleWeight? }
 #   description, subtitle: optional descriptive metadata
+#   palette:
+#     start / end: gradient endpoints (hex or CSS color values)
+#     fontTitle: optional font-family stack for titles/badges
+#     titleWeight / titleSize / titleStyle / titleTransform: optional typography overrides
+#     titleColorLight / titleColorDark: light & dark mode base colors
+#     titleHoverColorLight / titleHoverColorDark: light & dark mode hover colors
+#     titleHoverColor: legacy single hover color (used as fallback when present)
+#     titleShadow / titleHoverShadow: optional text-shadow strings for resting/hover states
+#   category_home_page: canonical URL path to the rendered category page
 #   hide_from_carousel: true (optional) exclude from homepage category carousel
 #   hide_from_category_list: true (optional) exclude from category sidebar list
-#   category_home_page: canonical URL path to the rendered category page
-#   inline_style: optional CSS string to apply inline to rendered category labels/links
+#   inline_style: optional CSS string applied to rendered category labels/links
+#
+# Add new categories as additional top-level keys following this structure.
 
 ai:
   title: Artificial Intelligence
@@ -641,10 +651,10 @@ shadowrun:
     titleHoverColorLight: "#c9412f"
     titleHoverColorDark: "#000000"
     titleWeight: 500
-  # Provide red outline (multi-direction shadow) matching other category outlines.
-  # Base (1px) outline for normal state; 2px on hover for emphasis.
-  titleShadow: "-1px -1px 0 #c9412f,1px 1px 0 #c9412f,1px -1px 0 #c9412f,-1px 1px 0 #c9412f,0 1px 0 #c9412f,0 -1px 0 #c9412f,1px 0 0 #c9412f,-1px 0 0 #c9412f"
-  titleHoverShadow: "-2px -2px 0 #c9412f,2px 2px 0 #c9412f,2px -2px 0 #c9412f,-2px 2px 0 #c9412f,0 2px 0 #c9412f,0 -2px 0 #c9412f,2px 0 0 #c9412f,-2px 0 0 #c9412f"
+    # Provide red outline (multi-direction shadow) matching other category outlines.
+    # Base (1px) outline for normal state; 2px on hover for emphasis.
+    titleShadow: "-1px -1px 0 #c9412f,1px 1px 0 #c9412f,1px -1px 0 #c9412f,-1px 1px 0 #c9412f,0 1px 0 #c9412f,0 -1px 0 #c9412f,1px 0 0 #c9412f,-1px 0 0 #c9412f"
+    titleHoverShadow: "-2px -2px 0 #c9412f,2px 2px 0 #c9412f,2px -2px 0 #c9412f,-2px 2px 0 #c9412f,0 2px 0 #c9412f,0 -2px 0 #c9412f,2px 0 0 #c9412f,-2px 0 0 #c9412f"
   category_home_page: /category/shadowrun/
   hide_from_carousel: false
   hide_from_category_list: false
@@ -672,26 +682,26 @@ home:
   hide_from_category_list: true
   inline_style: "vertical-align: middle;"
 
-  projects:
-    title: Projects
-    raw_names: [ "Projects" ]
-    class: Projects
-    emoji: "🛠️"
-    subtitle: "Work in Progress & Completed Builds"
-    description: "Notes and write-ups on ongoing and completed projects across tech, gaming, and creative domains."
-    image: /img/categories/projects.webp
-    palette:
-      start: "#3b82f6"
-      end: "#22c55e"
-      titleColorLight: "#22c55e"
-      titleColorDark: "#3b82f6"
-      titleHoverColorLight: "#22c55e"
-      titleHoverColorDark: "#3b82f6"
-      titleWeight: 500
-    category_home_page: /category/projects/
-    hide_from_carousel: true
-    hide_from_category_list: true
-    inline_style: "vertical-align: middle;"
+projects:
+  title: Projects
+  raw_names: [ "Projects" ]
+  class: Projects
+  emoji: "🛠️"
+  subtitle: "Work in Progress & Completed Builds"
+  description: "Notes and write-ups on ongoing and completed projects across tech, gaming, and creative domains."
+  image: /img/categories/projects.webp
+  palette:
+    start: "#3b82f6"
+    end: "#22c55e"
+    titleColorLight: "#22c55e"
+    titleColorDark: "#3b82f6"
+    titleHoverColorLight: "#22c55e"
+    titleHoverColorDark: "#3b82f6"
+    titleWeight: 500
+  category_home_page: /category/projects/
+  hide_from_carousel: true
+  hide_from_category_list: true
+  inline_style: "vertical-align: middle;"
 
 draft:
   title: Draft
