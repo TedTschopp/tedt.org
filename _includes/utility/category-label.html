@@ -12,6 +12,8 @@
     - Adding kind="title" ensures CSS selectors like [data-cat] .category-title apply.
     - Adding kind="badge" enables badge styling; you can wrap externally if needed.
 {%- endcomment -%}
+
+
 {% assign raw_category = include.category | to_s | strip %}
 {% assign registry = site.data.category_registry %}
 {%- assign __canonical = nil -%}
@@ -46,6 +48,8 @@
 {% endif %}
 {% assign entry = registry[__canonical] %}
 {% assign label_text = include.text_override | default: entry.label | default: entry.title | default: raw_category %}
+{%- capture _theme_style -%}{% include utility/category-theme-inline-style.html entry=entry %}{%- endcapture -%}
+{% assign wrapper_style = _theme_style | strip %}
 {%- comment -%} Optional: disable legacy CSS class (which may impose fixed colors) for full registry variable control {%- endcomment -%}
 {% assign use_legacy = include.legacy_class | default: 'true' %}
 {% if use_legacy == true or use_legacy == 'true' %}
@@ -67,6 +71,16 @@
   {% assign element = include.as | default: 'span' %}
 {% endif %}
 {% assign inline_style = entry.inline_style %}
-<span class="category-theme{% if include.wrapper_class_extra %} {{ include.wrapper_class_extra }}{% endif %}" data-category="{{ raw_category | escape }}" data-cat="{{ __canonical }}">
+<span class="category-theme{% if include.wrapper_class_extra %} {{ include.wrapper_class_extra }}{% endif %}" data-category="{{ raw_category | escape }}" data-cat="{{ __canonical }}"{% if wrapper_style != '' %} style="{{ wrapper_style }}"{% endif %}>
   <{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class_to_add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}"{% if inline_style and inline_style != '' %} style="{{ inline_style }}"{% endif %}>{{ label_text }}</{{element}}>
-</span>{% if include.debug %}<!-- raw:'{{raw_category}}' canonical:'{{__canonical}}' class:'{{class_to_add}}' text:'{{label_text}}' style:'{{inline_style}}' legacy:'{{use_legacy}}' -->{% endif %}
+</span>{% if include.debug %}<!-- 
+     
+     raw:'{{raw_category}}' 
+     canonical:'{{__canonical}}' 
+     class:    '{{class_to_add}}' 
+     text:     '{{label_text}}' 
+     style:'{{inline_style}}' 
+     legacy:'{{use_legacy}}' 
+
+-->
+{% endif %}

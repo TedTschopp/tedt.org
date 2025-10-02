@@ -14,7 +14,6 @@ Unify all category visual treatments under a single, data-driven theming system 
 
 - Introduce wrapper output in `category-label.html` include.
 - Create unified `_data/category_registry.yml` (replacing separate alias, palette, styles, and categories-on-blog files).
-- Export JS theming helpers & runtime wrapper upgrade for legacy classes.
 - Early theme init script to respect user/system preference.
 
 ### Phase 1 (In Progress)
@@ -25,17 +24,13 @@ Unify all category visual treatments under a single, data-driven theming system 
 
 ### Phase 2
 
-- Remove runtime legacy wrapping path once templates migrated (toggle via flag inside `category-theme.js`).
+- Emit CSS custom properties directly in Liquid (`utility/category-theme-inline-style.html`) so wrappers are fully styled at build time.
+- Remove runtime legacy wrapping path once templates migrated (no JS dependency remains).
 - Prune unreferenced legacy font class selectors from `logo-and-company-fonts.css` (keep only bridge rules still needed).
 
 ### Phase 3
 
-- (Simplified) JS now derives alias map from `raw_names` in registry; no separate generation step required. Potential future enhancement: build-time precomputation of CSS custom properties to drop JS for static theming.
-
-### Phase 4
-
-- Precompute CSS custom properties server-side (Liquid loop using palette data) to allow removing JS dependency for first paint, leaving JS only for progressive features.
-- Optional: implement `<noscript>` fallback style block with minimal palette for top N categories.
+- Optional: implement `<noscript>` fallback style block if additional resilience required.
 
 ### Phase 5
 
@@ -50,9 +45,9 @@ Unify all category visual treatments under a single, data-driven theming system 
 
 | Risk | Mitigation |
 |------|------------|
-| Alias drift between JS and data file | Eliminated by deriving from unified registry |
+| Alias drift between data sources | Eliminated by deriving from unified registry |
 | FOUC of wrong theme | Optionally inline early init script in `<head>` or server‑render theme attribute once preference cookie known |
-| Legacy templates missed | Add temporary console warnings for elements with legacy classes not wrapped after Phase 1 |
+| Legacy templates missed | Audit templates for direct legacy class usage and replace with include |
 | Performance regression (extra wrappers) | Later consolidate by merging wrapper + inner element if markup becomes redundant |
 
 ## Success Criteria

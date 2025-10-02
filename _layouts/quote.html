@@ -58,12 +58,12 @@
                     {% if __slug == '' %}{% assign __slug = __primary_category | slugify %}{% endif %}
                     {% assign __entry = site.data.category_registry[__slug] %}
                   {% endif %}
-                  {% if __entry %}
-                    {% if page.title %}
-                      {% include utility/category-palette-apply.html entry=__entry title=page.title title_tag='h1' title_class='p-name card-title post-title' wrapper_class='quote-hero' %}
-                    {% else %}
-                      {% include utility/category-palette-apply.html entry=__entry title=__derived_title title_tag='h1' title_class='p-name card-title post-title' wrapper_class='quote-hero' %}
-                    {% endif %}
+                    {% if __entry %}
+                      {% if page.title %}
+                        {% include utility/category-palette-apply.html entry=__entry slug=__slug raw=__primary_category title=page.title title_tag='h1' title_class='p-name card-title post-title' wrapper_class='quote-hero category-theme no-underline' %}
+                      {% else %}
+                        {% include utility/category-palette-apply.html entry=__entry slug=__slug raw=__primary_category title=__derived_title title_tag='h1' title_class='p-name card-title post-title' wrapper_class='quote-hero category-theme no-underline' %}
+                      {% endif %}
                   {% else %}
                     {% if page.title %}
                       <h1 class="p-name card-title">{{ page.title }}</h1>

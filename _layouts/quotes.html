@@ -120,7 +120,7 @@
                                             {% endif %}
                                         {% endcapture %}
                                         {% if __entry %}
-                                            {% include utility/category-palette-apply.html entry=__entry title_html=_quotes_title title_tag='div' title_class='quotes-page-title post-title' wrapper_class='quotes-hero' %}
+                                            {% include utility/category-palette-apply.html entry=__entry slug=__slug raw=__primary_category title_html=_quotes_title title_tag='div' title_class='quotes-page-title post-title' wrapper_class='quotes-hero category-theme no-underline' %}
                                         {% else %}
                                             {{ _quotes_title }}
                                         {% endif %}

@@ -260,7 +260,3 @@
             .addEventListener('change', setThemeColor); // keep in sync
         /* call setThemeColor() again whenever you toggle a .dark class, etc. */
     </script>
-    <!-- Category Theme Data (application/json blocks for safe parsing) -->
-    <script type="application/json" id="category-registry-data">{{ site.data.category_registry | jsonify }}</script>
-    <!-- Category Theme Initializer (consumes unified registry) -->
-        <script src="/js/category-theme.js"></script>

@@ -93,7 +93,7 @@
                                             {% assign __entry = site.data.category_registry[__slug] %}
                                         {% endif %}
                                         {% if __entry %}
-                                            {% include utility/category-palette-apply.html entry=__entry title=page.title title_tag='h1' title_class='p-name post-title' wrapper_class='mccgw-hero' %}
+                                            {% include utility/category-palette-apply.html entry=__entry slug=__slug raw=__primary_category title=page.title title_tag='h1' title_class='p-name post-title' wrapper_class='mccgw-hero category-theme no-underline' %}
                                         {% else %}
                                             <h1 class="p-name">{{ page.title }}</h1>
                                         {% endif %}

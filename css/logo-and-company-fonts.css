@@ -104,6 +104,8 @@
 
 /* ---------- Title treatment (modern + legacy compat) ---------- */
 .category-theme .category-title,
+h1 .category-title,
+.h1 .category-title,
 h2 .category-title,
 .h2 .category-title{
   font-family:var(--theme-font-title);
@@ -122,6 +124,8 @@ h2 .category-title,
 }
 @supports (text-wrap: balance){
   .category-theme .category-title,
+  h1 .category-title,
+  .h1 .category-title,
   h2 .category-title,
   .h2 .category-title{
     text-wrap:balance;
@@ -183,6 +187,8 @@ h2 .category-title,
 /* ---------- Dark mode ---------- */
 @media (prefers-color-scheme: dark){
   .category-theme .category-title,
+  h1 .category-title,
+  .h1 .category-title,
   h2 .category-title,
   .h2 .category-title{
     color:var(--theme-title-color-dark, var(--theme-title-color, var(--theme-text-dark)));
@@ -196,7 +202,7 @@ h2 .category-title,
   .category-theme .category-badge,
   .category-badge{
     color:var(--theme-text-dark);
-    border-color:color-mix(in srgb, var(--theme-accent-end) 65%, transparent);
+  border-color:var(--theme-accent-end);
     background:linear-gradient(90deg,
       color-mix(in srgb, var(--theme-accent-start) 34%, transparent),
       color-mix(in srgb, var(--theme-accent-end) 34%, transparent)
@@ -208,6 +214,8 @@ h2 .category-title,
 /* Explicit light mode reset (guards against persistent light text if user switches from dark to light without full reload) */
 @media (prefers-color-scheme: light){
   .category-theme .category-title,
+  h1 .category-title,
+  .h1 .category-title,
   h2 .category-title,
   .h2 .category-title{
     color: var(--theme-text-light);
@@ -222,6 +230,10 @@ h2 .category-title,
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion: reduce){
   .category-theme .category-title,
+  h1 .category-title,
+  .h1 .category-title,
+  h2 .category-title,
+  .h2 .category-title,
   h2 .category-title,
   .h2 .category-title,
   .category-theme .category-badge,

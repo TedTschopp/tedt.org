@@ -73,7 +73,7 @@
                     {% endif %}
                     {% if __cat_entry %}
                       {% capture _title_html %}{% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}{% endcapture %}
-                      {% include utility/category-palette-apply.html entry=__cat_entry title_html=_title_html title_tag='div' title_class='p-name category-title-wrapper' wrapper_class='category-hero category-hero-page' %}
+                      {% include utility/category-palette-apply.html entry=__cat_entry slug=__cat_slug raw=page.title title_html=_title_html title_tag='div' title_class='p-name category-title-wrapper' wrapper_class='category-hero category-hero-page' %}
                     {% else %}
                       <h1 class="p-name">
                         {% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}
@@ -91,12 +91,14 @@
                     {% endif %}
                     {% assign category = page.category | downcase | slugify %}
                     {% assign registry_entry = site.data.category_registry[category] %}
+                    {%- capture __category_wrapper_style -%}{% include utility/category-theme-inline-style.html entry=registry_entry %}{%- endcapture -%}
+                    {% assign __category_wrapper_style = __category_wrapper_style | strip %}
                     {% if registry_entry and registry_entry.image %}
                       {% assign image_path = registry_entry.image %}
                     {% else %}
                       {% assign image_path = '/img/categories/' | append: category | append: '.webp' %}
                     {% endif %}
-          <figure class="category-theme" data-category="{{ page.category }}" data-cat="{{ category }}">
+            <figure class="category-theme" data-category="{{ page.category }}" data-cat="{{ category }}"{% if __category_wrapper_style != '' %} style="{{ __category_wrapper_style }}"{% endif %}>
             <img class="img-responsive img-thumbnail" src="{{ site.url }}{{ image_path }}" alt="{{ registry_entry.title | default: page.category }}">
           </figure>
                     <!-- Determine description: prefer registry entry, fall back to page.description, then excerpt, then stripped content -->
@@ -181,51 +183,42 @@
                                     {% endif %}
 
                                     <div class="card rounded-0 px-0">
-                                                            <div class="row g-0">
-                                                              <div class="col-md-4">
-                                                                <img src="{{ image_URL }}" alt="{{ image_alt }} by {{ image_credits }}" class="img-fluid rounded-start"
-                                                                  style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
-                                                              </div>
-                                                              <div class="col-md-8">
-                                                                <div class="card-body">
-                                                                  <h4 class="card-title three-line-clamp">
-                                                                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-                                                                  </h4>
-                                                                  <p class="card-text 3">
-                                                                    {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
-                                                                  </p>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
+                                      <div class="row g-0">
+                                        <div class="col-md-4">
+                                          <img src="{{ image_URL }}" alt="{{ image_alt }} by {{ image_credits }}" class="img-fluid rounded-start"
+                                            style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                                        </div>
+                                        <div class="col-md-8">
+                                          <div class="card-body">
+                                            <h4 class="card-title three-line-clamp">
+                                              <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                            </h4>
+                                            <p class="card-text 3">
+                                              {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                   {% else %}
-                                                          <div class="card rounded-0 px-0">
-                                                            <div class="row g-0">
-                                                              <div class="col-md-12">
-                                                                <div class="card-body">
-                                                                  <h4 class="card-title three-line-clamp">
-                                                                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
-                                                                  </h4>
-                                                                  <p class="card-text truncate-3">
-                                                                    {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
-                                                                  </p>
-                                                                </div>
-                                                              </div>
-                                                            </div>
-                                                          </div>
+                                    <div class="card rounded-0 px-0">
+                                      <div class="row g-0">
+                                        <div class="col-md-12">
+                                          <div class="card-body">
+                                            <h4 class="card-title three-line-clamp">
+                                              <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
+                                            </h4>
+                                            <p class="card-text truncate-3">
+                                              {{ post.teaser | default: post.description | default: post.excerpt | strip_html }}
+                                            </p>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
                                   {% endif %}
-
-
-
-
-
-
-
-
-
                                 </div>
                               </div>
-          </li>
+                            </li>
                         {% endfor %}
                       </ol>                    
                       </span>

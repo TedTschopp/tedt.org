@@ -1,0 +1,36 @@
+{%- comment -%}
+  Emit CSS custom property assignments for a category theme wrapper.
+  Params:
+    entry (object, optional): registry entry for the category.
+    default_start (string, optional): fallback gradient start color.
+    default_end (string, optional): fallback gradient end color.
+{%- endcomment -%}
+{%- assign _entry = include.entry -%}
+{%- assign _palette = {} -%}
+{%- if _entry and _entry.palette -%}
+  {%- assign _palette = _entry.palette -%}
+{%- endif -%}
+{%- assign _default_start = include.default_start | default: '#06b6d4' -%}
+{%- assign _default_end = include.default_end | default: '#a78bfa' -%}
+{%- assign _start = _palette.start | default: _default_start -%}
+{%- assign _end = _palette.end | default: _palette.start | default: _default_end -%}
+{%- if _end == '' -%}{%- assign _end = _start -%}{%- endif -%}
+{%- capture _style -%}
+--theme-accent-start: {{ _start }};
+--theme-accent-end: {{ _end }};
+--theme-badge-border: color-mix(in srgb, {{ _end }} 35%, transparent);
+{%- if _palette.fontTitle -%}--theme-font-title: {{ _palette.fontTitle | replace:'"','&quot;' }};{%- endif -%}
+{%- if _palette.titleSize -%}--theme-title-size: {{ _palette.titleSize }};{%- endif -%}
+{%- if _palette.titleStyle -%}--theme-title-style: {{ _palette.titleStyle }};{%- endif -%}
+{%- if _palette.titleTransform -%}--theme-title-transform: {{ _palette.titleTransform }};{%- endif -%}
+{%- if _palette.titleWeight -%}--theme-title-weight: {{ _palette.titleWeight }};{%- endif -%}
+{%- if _palette.titleColor -%}--theme-title-color: {{ _palette.titleColor }};{%- endif -%}
+{%- if _palette.titleColorLight -%}--theme-title-color-light: {{ _palette.titleColorLight }};{%- endif -%}
+{%- if _palette.titleColorDark -%}--theme-title-color-dark: {{ _palette.titleColorDark }};{%- endif -%}
+{%- if _palette.titleHoverColor -%}--theme-title-hover-color: {{ _palette.titleHoverColor }};{%- endif -%}
+{%- if _palette.titleHoverColorLight -%}--theme-title-hover-color-light: {{ _palette.titleHoverColorLight }};{%- endif -%}
+{%- if _palette.titleHoverColorDark -%}--theme-title-hover-color-dark: {{ _palette.titleHoverColorDark }};{%- endif -%}
+{%- if _palette.titleShadow -%}--theme-title-shadow: {{ _palette.titleShadow }};{%- endif -%}
+{%- if _palette.titleHoverShadow -%}--theme-title-hover-shadow: {{ _palette.titleHoverShadow }};{%- endif -%}
+{%- endcapture -%}
+{{ _style | strip | replace: '\n', ' ' }}

@@ -1,13 +1,18 @@
 <!-- Wrap any category block with .category-theme and data-category -->
-<article class="category-theme" data-category="DCC">
+{% capture __stub_slug_raw %}{% include utility/map-category-to-registry.html key='DCC' %}{% endcapture %}
+{% assign __stub_slug = __stub_slug_raw | strip %}
+{% if __stub_slug == '' %}{% assign __stub_slug = 'DCC' | slugify %}{% endif %}
+{% assign __stub_entry = site.data.category_registry[__stub_slug] %}
+{% capture __stub_style %}{% include utility/category-theme-inline-style.html entry=__stub_entry %}{% endcapture %}
+{% assign __stub_style = __stub_style | strip %}
+<article class="category-theme" data-category="DCC" data-cat="{{ __stub_slug }}">
   <header>
     <h2 class="card-title">
    <!-- Use .category-title for new system; legacy classes still work.
      Example: derive the canonical link from category_registry with a fallback. -->
-   {% capture __stub_slug %}{% include utility/map-category-to-registry.html key='DCC' %}{% endcapture %}
-   {% assign __stub_slug = __stub_slug | strip %}
-   {% if __stub_slug == '' %}{% assign __stub_slug = 'DCC' | slugify %}{% endif %}
-   {% assign __stub_entry = site.data.category_registry[__stub_slug] %}
+   {% if __stub_entry == nil %}
+     {% assign __stub_entry = site.data.category_registry[__stub_slug] %}
+   {% endif %}
    {% if __stub_entry and __stub_entry.category_home_page %}
      {% assign __stub_href = __stub_entry.category_home_page %}
    {% else %}
@@ -22,13 +27,28 @@
   </header>
   <p>Post excerpt…</p>
 </article>
+{%- comment -%} Inline styles omitted in stub to keep the sample lint-friendly. Real usage adds style="{{ __stub_style }}" to the wrapper. {%- endcomment -%}
 
-<article class="category-theme" data-category="Middle-eartH">
+{% capture __stub_lotr_slug_raw %}{% include utility/map-category-to-registry.html key='Middle-eartH' %}{% endcapture %}
+{% assign __stub_lotr_slug = __stub_lotr_slug_raw | strip %}
+{% if __stub_lotr_slug == '' %}{% assign __stub_lotr_slug = 'Middle-eartH' | slugify %}{% endif %}
+{% assign __stub_lotr_entry = site.data.category_registry[__stub_lotr_slug] %}
+{% capture __stub_lotr_style %}{% include utility/category-theme-inline-style.html entry=__stub_lotr_entry %}{% endcapture %}
+{% assign __stub_lotr_style = __stub_lotr_style | strip %}
+<article class="category-theme" data-category="Middle-eartH" data-cat="{{ __stub_lotr_slug }}">
   <h2 class="card-title"><span class="category-title LotR">Middle-earth</span></h2>
   <span class="category-badge"><span class="badge-dot" aria-hidden="true"></span> Middle-eartH</span>
 </article>
+{%- comment -%} Inline style example: {{ __stub_lotr_style }} {%- endcomment -%}
 
-<article class="category-theme" data-category="Personal Writing">
+{% capture __stub_pw_slug_raw %}{% include utility/map-category-to-registry.html key='Personal Writing' %}{% endcapture %}
+{% assign __stub_pw_slug = __stub_pw_slug_raw | strip %}
+{% if __stub_pw_slug == '' %}{% assign __stub_pw_slug = 'Personal Writing' | slugify %}{% endif %}
+{% assign __stub_pw_entry = site.data.category_registry[__stub_pw_slug] %}
+{% capture __stub_pw_style %}{% include utility/category-theme-inline-style.html entry=__stub_pw_entry %}{% endcapture %}
+{% assign __stub_pw_style = __stub_pw_style | strip %}
+<article class="category-theme" data-category="Personal Writing" data-cat="{{ __stub_pw_slug }}">
   <h2 class="card-title"><span class="category-title Personal-Writing-Post">A Note on Craft</span></h2>
   <span class="category-badge"><span class="badge-dot" aria-hidden="true"></span> Personal Writing</span>
 </article>
+{%- comment -%} Inline style example: {{ __stub_pw_style }} {%- endcomment -%}
