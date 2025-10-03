@@ -57,14 +57,14 @@
                     {% for link in site.links %}
                       {% if link.Category == Category %}
                         <li class="mb-2">
-                          <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}" 
+                          <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}"
                             rel="me"
-                            alt="Link to my profile on {{link.Name}}" class="u-url footer-link">
+                            class="u-url footer-link">
                             {% assign brand_color = link.Color %}
                             {% if link.Type == "emoji" %}
-                              <span class="footer-link-icon"{% if brand_color %} style="--footer-link-icon-color: {{ brand_color }}"{% endif %} aria-hidden="true">{{ link.Icon-Class }}</span>
+                              <span class="footer-link-icon"{% if brand_color %} style="--footer-link-icon-color: {{ brand_color }}; color: var(--footer-link-icon-color);"{% endif %} aria-hidden="true">{{ link.Icon-Class }}</span>
                             {% elsif link.Type == "fontawesome" %}
-                              <span class="footer-link-icon"{% if brand_color %} style="--footer-link-icon-color: {{ brand_color }}"{% endif %} aria-hidden="true">
+                              <span class="footer-link-icon"{% if brand_color %} style="--footer-link-icon-color: {{ brand_color }}; color: var(--footer-link-icon-color);"{% endif %} aria-hidden="true">
                                 <i class="{{ link.Icon-Class }} fa-lg fa-fw"></i>
                               </span>
                             {% endif %}
