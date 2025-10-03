@@ -318,3 +318,110 @@ h2 .category-title,
   margin-bottom:0 !important;
 }
 
+/* ========================================================================== */
+/* Footer palette (WCAG AA)                                                   */
+/* ========================================================================== */
+
+footer.bd-footer {
+  --footer-bg:#111827;
+  --footer-text:#e2e8f0;
+  --footer-muted:#cbd5f5;
+  --footer-heading:#f8fafc;
+  --footer-link:#38bdf8;
+  --footer-link-hover:#0ea5e9;
+  --footer-divider:#94a3b8;
+  background-color:var(--footer-bg) !important;
+  color:var(--footer-text);
+}
+
+footer.bd-footer .container {
+  color:inherit;
+}
+
+footer.bd-footer p,
+footer.bd-footer li,
+footer.bd-footer .p-note,
+footer.bd-footer .text-body-secondary {
+  color:var(--footer-text);
+}
+
+footer.bd-footer .text-muted,
+footer.bd-footer .small {
+  color:var(--footer-muted) !important;
+}
+
+footer.bd-footer .h4,
+footer.bd-footer .h5,
+footer.bd-footer .p-job-title,
+footer.bd-footer .fnp-name,
+footer.bd-footer .p-note .mb-2 {
+  color:var(--footer-heading) !important;
+  font-weight:600;
+}
+
+footer.bd-footer a {
+  color:var(--footer-link);
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:0.2em;
+  font-weight:600;
+}
+
+footer.bd-footer a:hover,
+footer.bd-footer a:focus-visible {
+  color:var(--footer-link-hover);
+}
+
+footer.bd-footer .footer-link {
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  color:var(--footer-link);
+}
+
+footer.bd-footer .footer-link-icon {
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-width:1.75rem;
+  color:var(--footer-link-icon-color, var(--footer-link-hover));
+  text-decoration:none;
+}
+
+footer.bd-footer .footer-link-icon i {
+  color:inherit;
+}
+
+footer.bd-footer .footer-link-text {
+  color:var(--footer-link);
+}
+
+footer.bd-footer .list-inline-item {
+  color:var(--footer-divider);
+}
+
+footer.bd-footer .list-inline-item a {
+  color:var(--footer-link);
+}
+
+footer.bd-footer .list-inline-item a:hover,
+footer.bd-footer .list-inline-item a:focus-visible {
+  color:var(--footer-link-hover);
+}
+
+footer.bd-footer .display-1,
+footer.bd-footer .icon-tschopp-housemark-optimum {
+  color:var(--footer-heading);
+}
+
+@media (prefers-color-scheme: dark) {
+  footer.bd-footer {
+    --footer-bg:#0b1120;
+    --footer-text:#e2e8f0;
+    --footer-heading:#f8fafc;
+    --footer-link:#60a5fa;
+    --footer-link-hover:#93c5fd;
+    --footer-divider:#94a3b8;
+  }
+}
+

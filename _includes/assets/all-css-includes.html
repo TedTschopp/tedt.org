@@ -4,21 +4,21 @@
 
 
     <!-- Global Bootstrap 5.3 CSS File from SCSS-->
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/bootstrap-build.css">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/bootstrap-build.css' | relative_url }}">
     <!-- Temporary standalone navbar overrides (until SCSS partial emission issue is resolved) -->
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/navbar-overrides.css">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/navbar-overrides.css' | relative_url }}">
 
     <!-- Fonts: Consolidate all Fonts here -->
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/consolidated-fonts.css">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/consolidated-fonts.css' | relative_url }}">
 
     <!-- Logos: Consolidate all Logo Fonts here -->
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/logo-and-company-fonts.css">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/logo-and-company-fonts.css' | relative_url }}">
 
     <!-- Custom CSS -->
     {% if full-page-url == home-page-url %}
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main-landing-page.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/timeline.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/Link-Tree.css"> 
+    <link rel="stylesheet" type="text/css" href="{{ '/css/main-landing-page.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/timeline.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/Link-Tree.css' | relative_url }}"> 
         <style>
             h1, .h1  { 
                 font-family:  "Sofia Sans Extra Condensed", "Optima", "ManukaCondensed", "Manuka", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -72,12 +72,12 @@
 
         </style>
     {% else %}    
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/blog-post.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/solarized-dark.css" >
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/comments-Mastodon.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/web-mention.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/Winerlink.css">
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/table-of-contents.css">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/blog-post.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/solarized-dark.css' | relative_url }}" >
+    <link rel="stylesheet" type="text/css" href="{{ '/css/comments-Mastodon.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/web-mention.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/Winerlink.css' | relative_url }}">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/table-of-contents.css' | relative_url }}">
     {% endif %}
 
     {% if this_is_a_draft == true %}
@@ -168,22 +168,12 @@
             }
         }
 
-        /* --- Accessibility Contrast Helpers (WCAG) --- */
-                .category-title.wrapped-by-theme { text-shadow: 0 0 2px rgba(0,0,0,0.75), 0 0 3px rgba(0,0,0,0.85); }
-                [data-bs-theme="dark"] .category-title.wrapped-by-theme { mix-blend-mode: normal; }
-                /* Specific contrast tuning for problematic palette tokens (axe color-contrast) */
-                .category-title.wrapped-by-theme.MCC { filter: brightness(1.05) saturate(1.1); }
-                .category-title.wrapped-by-theme.GammaWorld { filter: brightness(0.92); }
-                footer .h5 { color: #b3b3b1 !important; }
-                footer .text-muted { color: #b0b0ae !important; }
-                @media (prefers-color-scheme: dark) {
-                    footer .h5 { color: #c6c6c4 !important; }
-                    footer .text-muted { color: #c2c2c0 !important; }
-                }
-        .p-job-title, .p-locality, .p-region, .p-country-name { color: #b8b8b6 !important; }
-        [data-bs-theme="dark"] .p-job-title, [data-bs-theme="dark"] .p-locality, [data-bs-theme="dark"] .p-region, [data-bs-theme="dark"] .p-country-name { color: #c8c8c6 !important; }
-        .p-note li { color: #c8c8c6; }
-        [data-bs-theme="dark"] .p-note li { color: #d4d4d2; }
+    /* --- Accessibility Contrast Helpers (WCAG) --- */
+        .category-title.wrapped-by-theme { text-shadow: 0 0 2px rgba(0,0,0,0.75), 0 0 3px rgba(0,0,0,0.85); }
+        [data-bs-theme="dark"] .category-title.wrapped-by-theme { mix-blend-mode: normal; }
+        /* Specific contrast tuning for problematic palette tokens (axe color-contrast) */
+        .category-title.wrapped-by-theme.MCC { filter: brightness(1.05) saturate(1.1); }
+        .category-title.wrapped-by-theme.GammaWorld { filter: brightness(0.92); }
 
     /* Smooth reflow when toggling Table of Contents */
     #main_content_col { transition: width .25s ease, flex-basis .25s ease; }
@@ -238,10 +228,10 @@
     </style>
 
     <!-- WCAG contrast utility styles -->
-    <link rel="stylesheet" href="{{ site.url }}/css/WCAG.css">
+    <link rel="stylesheet" href="{{ '/css/WCAG.css' | relative_url }}">
 
     <!-- Prompts/mobile overflow fixes (plain CSS, keep last to win specificity by order) -->
-    <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/prompts-overrides.css">
+    <link rel="stylesheet" type="text/css" href="{{ '/css/prompts-overrides.css' | relative_url }}">
 
     <meta id="theme-meta" name="theme-color" content="#101820">
     
