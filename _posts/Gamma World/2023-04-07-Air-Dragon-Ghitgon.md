@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Ghitgon.png'
 title: Air Dragon «Ghitgon»
 creature_name_index: Ghitgon
 notes: ''
@@ -57,7 +57,7 @@ base_stock: Lizard
 robot_classification: ''
 status: ''
 mission: ''
-description: ''
+description: 'These "gons" are the queens of the species and are most akin to the "sergon". Their hides are completely smooth and their bodies are streamlined for more efficient flight. Their claws and teeth are most formidable, but it is their breath that is most feared. "Ghitgons" emit a breath that is so hot, it ignites the air in a three-meter area while this fiery breath is impressive, it is the heat beam that does the damage. It has a range of 20 meters and a base damage of 11 points. The duration is whatever the creature wishes, but only every other Action Turn as the beam can get too hot for even the "ghitgon's" mouth. Since the energy is drawn from a unique source, it is not considered an energy weapon. And there is no known armor that prevents the damage except "ghitgon" armor. "Ghitgon" are only found in the mountains and have adapted quite well to the altitude. They, too, can see for incredible distances. They have been known to take live captives and keep them in their dens for a week before devouring them or feeding them to their young. They hoard items of synthetic materials (nylon ropes, tents, backpacks, and the like). And it has been suggested by some zoologists that the consumption of these synthetic items is vital for the "ghitgon" to be able to produce their heat breath.'
 equipment: ''
 reactions: ''
 behavior: ''

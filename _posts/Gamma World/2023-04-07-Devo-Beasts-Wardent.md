@@ -1,5 +1,5 @@
 ---
-image: ''
+image: '/RPG/MCC-GW/images/Monster-Manual/Devo Beasts.png'
 title: Devo Beasts «Wardent»
 creature_name_index: Wardent
 notes: ''
