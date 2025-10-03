@@ -377,6 +377,7 @@ footer.bd-footer .footer-link {
   align-items:center;
   gap:.55rem;
   color:var(--footer-link);
+  text-decoration:none;
 }
 
 footer.bd-footer .footer-link-icon {
@@ -394,6 +395,13 @@ footer.bd-footer .footer-link-icon i {
 
 footer.bd-footer .footer-link-text {
   color:var(--footer-link);
+}
+
+footer.bd-footer .footer-link:hover,
+footer.bd-footer .footer-link:focus-visible {
+  text-decoration:underline;
+  text-decoration-thickness:2px;
+  text-underline-offset:0.2em;
 }
 
 footer.bd-footer .list-inline-item {
