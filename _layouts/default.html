@@ -207,6 +207,8 @@
                         {% assign __skip = true %}
                       {% elsif post.layout contains "micropubpost" %}
                         {% assign __skip = true %}
+                      {% elsif post.layout contains "gammaworld" %}
+                        {% assign __skip = true %}
                       {% elsif post.layout contains "prompt" or post.category == "Prompts" %}
                         {% assign __skip = true %}
                       {% endif %}
