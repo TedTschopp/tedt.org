@@ -122,7 +122,9 @@
                       <!-- Do Nothing -->
                     {% elsif post.categories contains "Home" or post.category == "Home" %}
                       <!-- Do Nothing -->
-                    {% elsif post.layout contains "micropubpost" %}
+                      {% elsif post.layout contains "micropubpost" %}
+                      <!-- Do Nothing -->
+                      {% elsif post.layout contains "gammaworld" %}
                       <!-- Do Nothing -->
                     {% elsif post.layout contains "prompt" or post.category == "Prompts" %}
                       <!-- Do Nothing -->
@@ -206,8 +208,6 @@
                       {% elsif post.categories contains "Home" or post.category == "Home" %}
                         {% assign __skip = true %}
                       {% elsif post.layout contains "micropubpost" %}
-                        {% assign __skip = true %}
-                      {% elsif post.layout contains "gammaworld" %}
                         {% assign __skip = true %}
                       {% elsif post.layout contains "prompt" or post.category == "Prompts" %}
                         {% assign __skip = true %}
