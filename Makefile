@@ -1,4 +1,4 @@
-.PHONY: build normalize validate_mastodon feed_check legacy_check length_report proofer qa all clean
+.PHONY: build normalize validate_mastodon feed_check legacy_check length_report proofer qa all clean gw-export gw-diff
 
 build:
 	bundle exec jekyll build --quiet
@@ -27,3 +27,12 @@ all: qa proofer
 
 clean:
 	rm -rf _site
+
+# Gamma World export utilities
+gw-export:
+	python3 _code/export_gamma_world_to_csv.py
+
+# Compare two Gamma World export CSV snapshots (usage: make gw-diff A=old.csv B=new.csv)
+gw-diff:
+	@if [ -z "$(A)" ] || [ -z "$(B)" ]; then echo "Usage: make gw-diff A=path/to/old.csv B=path/to/new.csv"; exit 1; fi; \
+	python3 _code/diff_gamma_world_exports.py --old "$(A)" --new "$(B)"
