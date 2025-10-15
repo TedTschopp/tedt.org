@@ -1,3 +1,13 @@
+---
+title: "National Novel Month Winner"
+tags:
+  - creative-writing
+  - fiction
+  - prompt
+keywords:
+  - creative writing
+  - fiction
+---
 Be an author.  I'm going to give you a set of instructions to follow to create a novel.  Please follow them.  Start by asking me who the main character is and how many paragraphs to output.  Then integrate that response with the {Output}.
 
 {Phonetic Construction}

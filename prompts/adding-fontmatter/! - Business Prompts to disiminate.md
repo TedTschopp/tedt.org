@@ -1,3 +1,13 @@
+---
+title: "! - Business Prompts to disiminate"
+tags:
+  - goal-setting
+  - okr
+  - prompt
+keywords:
+  - goal setting
+  - okr
+---
 1. [0. Status Report - Monthly](#0-status-report---monthly)
    1. [Role and Objective](#role-and-objective)
    2. [Instructions](#instructions)
@@ -61,44 +71,37 @@
    7. [Stop Conditions](#stop-conditions-3)
    8. [Post-schedule User Options](#post-schedule-user-options)
 10. [6. Risk-weighted scenario planning](#6-risk-weighted-scenario-planning)
-       1. [Additional Requirements](#additional-requirements)
-    1. [Output Format](#output-format-8)
 11. [7. Feature prioritization matrix](#7-feature-prioritization-matrix)
-12. [Instructions](#instructions-7)
-13. [Output Format](#output-format-9)
-14. [Verbosity](#verbosity-2)
-15. [Stop Conditions](#stop-conditions-4)
-16. [8. Learning acceleration prompt](#8-learning-acceleration-prompt)
-17. [9. Message testing framework](#9-message-testing-framework)
-    1. [Output Format](#output-format-10)
-18. [10. Systems thinking analyzer](#10-systems-thinking-analyzer)
-19. [11. Innovation constraint solver](#11-innovation-constraint-solver)
-20. [12. Quality assurance recursion](#12-quality-assurance-recursion)
-21. [13. Be Proactive (Circle of Influence Analyzer)](#13-be-proactive-circle-of-influence-analyzer)
-22. [15. Put First Things First (Priority Matrix Master)](#15-put-first-things-first-priority-matrix-master)
-23. [16. Think Win-Win (Conflict Resolution Coach)](#16-think-win-win-conflict-resolution-coach)
-24. [17. Seek First to Understand (Empathetic Listening Guide)](#17-seek-first-to-understand-empathetic-listening-guide)
-25. [18. Synergize (Creative Collaboration Catalyst)](#18-synergize-creative-collaboration-catalyst)
-26. [20. The 80/20 Analyzer](#20-the-8020-analyzer)
-27. [21. Worst-Case Scenario Planner](#21-worst-case-scenario-planner)
-28. [22. The Minimum Effective Effort](#22-the-minimum-effective-effort)
-29. [23. The Deconstructionist (Reverse-Engineering Master)](#23-the-deconstructionist-reverse-engineering-master)
-30. [24. The Contrarian Strategist (Opposite Day Success)](#24-the-contrarian-strategist-opposite-day-success)
-31. [25. The Rapid Skill Acquisition Hack (Learn Anything in 20 Hours)](#25-the-rapid-skill-acquisition-hack-learn-anything-in-20-hours)
-32. [26. The Flow Zone Calibrator (Challenge-Skill Balance Master)](#26-the-flow-zone-calibrator-challenge-skill-balance-master)
-33. [27. The Clear Goal Architect (Purpose Clarity Generator)](#27-the-clear-goal-architect-purpose-clarity-generator)
-34. [28. The Distraction Elimination Expert (Attention Merger Specialist)](#28-the-distraction-elimination-expert-attention-merger-specialist)
-35. [29. The Immediate Feedback Designer (Performance Optimization Loop)](#29-the-immediate-feedback-designer-performance-optimization-loop)
-36. [30. The Self-Consciousness Eraser (Ego Dissolution Facilitator)](#30-the-self-consciousness-eraser-ego-dissolution-facilitator)
-37. [31. The Time Transformation Specialist (Temporal Flow Optimizer)](#31-the-time-transformation-specialist-temporal-flow-optimizer)
-38. [32. The Autotelic Experience Creator (Intrinsically Motivated Activity Designer)](#32-the-autotelic-experience-creator-intrinsically-motivated-activity-designer)
-39. [33. The Deep Work Session (Distraction-Proof Planner)](#33-the-deep-work-session-distraction-proof-planner)
-40. [34. Time Audit Master](#34-time-audit-master)
-41. [35. The Digital Minimalism Strategist](#35-the-digital-minimalism-strategist)
-42. [36. The Deep Work Ritual Designer (Consistency Builder)](#36-the-deep-work-ritual-designer-consistency-builder)
-43. [37. Mental Clarity Optimizer](#37-mental-clarity-optimizer)
-44. [38. Career Capital Builder](#38-career-capital-builder)
-45. [39. The Networking Builder (Social Media Strategy)](#39-the-networking-builder-social-media-strategy)
+12. [8. Learning acceleration prompt](#8-learning-acceleration-prompt)
+13. [9. Message testing framework](#9-message-testing-framework)
+14. [10. Systems thinking analyzer](#10-systems-thinking-analyzer)
+15. [11. Innovation constraint solver](#11-innovation-constraint-solver)
+16. [12. Quality assurance recursion](#12-quality-assurance-recursion)
+17. [13. Be Proactive (Circle of Influence Analyzer)](#13-be-proactive-circle-of-influence-analyzer)
+18. [15. Put First Things First (Priority Matrix Master)](#15-put-first-things-first-priority-matrix-master)
+19. [16. Think Win-Win (Conflict Resolution Coach)](#16-think-win-win-conflict-resolution-coach)
+20. [17. Seek First to Understand (Empathetic Listening Guide)](#17-seek-first-to-understand-empathetic-listening-guide)
+21. [18. Synergize (Creative Collaboration Catalyst)](#18-synergize-creative-collaboration-catalyst)
+22. [20. The 80/20 Analyzer](#20-the-8020-analyzer)
+23. [21. Worst-Case Scenario Planner](#21-worst-case-scenario-planner)
+24. [22. The Minimum Effective Effort](#22-the-minimum-effective-effort)
+25. [23. The Deconstructionist (Reverse-Engineering Master)](#23-the-deconstructionist-reverse-engineering-master)
+26. [24. The Contrarian Strategist (Opposite Day Success)](#24-the-contrarian-strategist-opposite-day-success)
+27. [25. The Rapid Skill Acquisition Hack (Learn Anything in 20 Hours)](#25-the-rapid-skill-acquisition-hack-learn-anything-in-20-hours)
+28. [26. The Flow Zone Calibrator (Challenge-Skill Balance Master)](#26-the-flow-zone-calibrator-challenge-skill-balance-master)
+29. [27. The Clear Goal Architect (Purpose Clarity Generator)](#27-the-clear-goal-architect-purpose-clarity-generator)
+30. [28. The Distraction Elimination Expert (Attention Merger Specialist)](#28-the-distraction-elimination-expert-attention-merger-specialist)
+31. [29. The Immediate Feedback Designer (Performance Optimization Loop)](#29-the-immediate-feedback-designer-performance-optimization-loop)
+32. [30. The Self-Consciousness Eraser (Ego Dissolution Facilitator)](#30-the-self-consciousness-eraser-ego-dissolution-facilitator)
+33. [31. The Time Transformation Specialist (Temporal Flow Optimizer)](#31-the-time-transformation-specialist-temporal-flow-optimizer)
+34. [32. The Autotelic Experience Creator (Intrinsically Motivated Activity Designer)](#32-the-autotelic-experience-creator-intrinsically-motivated-activity-designer)
+35. [33. The Deep Work Session (Distraction-Proof Planner)](#33-the-deep-work-session-distraction-proof-planner)
+36. [34. Time Audit Master](#34-time-audit-master)
+37. [35. The Digital Minimalism Strategist](#35-the-digital-minimalism-strategist)
+38. [36. The Deep Work Ritual Designer (Consistency Builder)](#36-the-deep-work-ritual-designer-consistency-builder)
+39. [37. Mental Clarity Optimizer](#37-mental-clarity-optimizer)
+40. [38. Career Capital Builder](#38-career-capital-builder)
+41. [39. The Networking Builder (Social Media Strategy)](#39-the-networking-builder-social-media-strategy)
 
 
 # 0. Status Report - Monthly
@@ -500,143 +503,23 @@ After presenting the routine, ask the user if they are satisfied with the curren
 
 # 6. Risk-weighted scenario planning
 
-Developer: # Scenario Analysis for Decision [X]
+For the decision to [X], map out: (1) best-case scenario and probability, (2) worst-case scenario and probability, (3) most likely scenario and probability, and (4) mitigation strategies for each negative outcome.
 
-Begin with a concise checklist (3-7 bullets) outlining the key steps you will undertake for this scenario analysis task before generating the scenarios.
-
-Provide a comprehensive analysis for the decision to [X], structured as follows:
-
-1. **Best-case scenario**: Include a description and the associated probability (as a percentage).
-2. **Worst-case scenario**: Include a description and the associated probability (as a percentage), as well as mitigation strategies: a list of actionable suggestions to reduce the likelihood or impact of that particular outcome.
-3. **Most likely scenario**: Include a description and the associated probability (as a percentage).
-4. **Other negative scenarios**: For each additional plausible negative scenario relevant to the decision (including the worst-case), provide:
-   - Description
-   - Associated probability (as a percentage)
-   - Mitigation strategies: a list of actionable suggestions to reduce the likelihood or impact of that particular outcome
-
-### Additional Requirements
-- Probabilities must be expressed as percentages (e.g., 20%).
-- The sum of all scenario probabilities should not exceed 100%; if overlaps or ambiguities arise, briefly justify the distribution in a validation note after scenarios are produced.
-- List as many additional negative scenarios as are relevant to the decision.
-- For every negative scenario (including worst-case and additional negatives), you must include a mitigation strategies array of actionable suggestions.
-
-## Output Format
-Present your output as a human-readable report, structured in sections covering each scenario (best-case, worst-case, most likely, and other negative scenarios). Clearly label each section and include all required components (descriptions, probability percentages, and, for negative scenarios, mitigation strategies). Finish with a validation note justifying or commenting on the probability allocations as needed.
 
 # 7. Feature prioritization matrix
 
-Developer: # Role and Objective
-Evaluate a given input list of features, scoring and ranking each according to defined criteria to identify top recommendations, and flagging invalid entries. Present the output as a report tailored for a business analyst audience, ensuring the information is structured for business-driven decision making.
+Evaluate these features: [list]. For each, score 1-10 on: user impact, development effort, business value, and technical risk. Calculate a priority score and explain the top 3 recommendations.
 
-Begin with a concise checklist (3-7 bullets) of your evaluation process to ensure all required steps are covered before proceeding.
-
-# Instructions
-- For each feature in the input list, assess and assign scores for:
-  - User Impact (1–10, integer)
-  - Development Effort (1–10, integer)
-  - Business Value (1–10, integer)
-  - Technical Risk (1–10, integer)
-- Calculate a Priority Score for each feature using:
-  
-  Priority Score = (User Impact * 0.4) + (Business Value * 0.4) - (Development Effort * 0.1) - (Technical Risk * 0.1)
-  
-  - The Priority Score should be a float, rounded to one decimal place.
-- Rank all features by Priority Score in descending order.
-  - If multiple features have the same score, sort those alphabetically by feature name.
-- Identify the top 3 features and provide a brief (1–2 sentence) business-focused explanation for recommending each, emphasizing impacts on business objectives.
-- If any feature entry is missing a name or any scoring criterion, exclude it and report an error specifying the invalid entry and the reason.
-
-After scoring and ranking, validate that all required output fields are present and correctly structured. If any field is omitted or ambiguous, self-correct before finalizing the output.
-
-# Output Format
-Return a feature evaluation report, clearly labeled as a Feature Evaluation Report for Business Analysts, using standard text or tabular format rather than JSON. The report should include the following clearly marked sections:
-
-- **Evaluations**: List of features evaluated, each with its name, user impact, development effort, business value, technical risk, and priority score.
-
-- **Top Recommendations**: The top 3 features, each with a 1–2 sentence explanation of its business benefit.
-
-- **Errors**: Any malformed or missing entries, specifying the feature identifier and the error description.
-
-# Verbosity
-- Keep explanations and error messages concise and clear, with attention to business relevance in summaries and structure.
-
-# Stop Conditions
-- Once evaluations, top recommendations, and errors are presented as specified, the output is considered complete.
 
 # 8. Learning acceleration prompt
 
-Developer: Assist users in mastering a specified [skill/topic] by generating a structured, actionable learning package containing the following components:
+I want to master [skill/topic]. Create: (1) a 30-day learning roadmap, (2) 5 hands-on projects to build competency, (3) key resources and communities, and (4) milestone checkpoints to track progress.
 
-Begin with a concise checklist (3-7 bullets) of your process before generating the package; keep checklist items conceptual, not implementation-level.
-
-**Learning Package Structure:**
-
-- **30-Day Learning Roadmap**: Present a sequential list of daily objectives, one for each of days 1 through 30, to guide consistent learning progress.
-- **Five Hands-on Projects**: Suggest five practical projects relevant to the skill or topic. For each project, include a title, a brief description, defined goals, and expected outcomes that foster applied understanding and competency.
-- **Curated Key Resources and Communities**: Compile a list of essential resources (articles, books, videos, or courses) and include active communities (forums, groups, or online platforms). Specify the type for each entry.
-- **Milestone Checkpoints**: Define major checkpoints with names, brief descriptions, and recommended days for assessment to help monitor progress and highlight achievements within the 30 days.
-
-Format your output as a markdown document using the following structure:
-
-```
-# 30-Day [Skill/Topic] Learning Program
-
-## Checklist
-- [Conceptual step 1]
-- [Conceptual step 2]
-- ...
-
-## 30-Day Roadmap
-| Day | Objective          |
-|-----|-------------------|
-| 1   | ...               |
-| ... | ...               |
-| 30  | ...               |
-
-## Projects
-### 1. [Project Title]
-- **Description:** ...
-- **Goals:** ...
-- **Expected Outcome:** ...
-
-### 2. ...
-
-(Repeat for a total of 5 projects)
-
-## Resources and Communities
-- **[Type]:** [Title or Name] ([URL])
-- ...
-
-## Milestone Checkpoints
-| Name  | Description | Suggested Day |
-|-------|-------------|---------------|
-| ...   | ...         | ...           |
-```
-
-- Ensure to include all 30 roadmap days, five projects, a variety of resources and communities, and several milestone checkpoints as described.
-- If the skill or topic is missing, ambiguous, or invalid, return the following markdown error block and cease further output:
-
-```
-**Error:** No skill or topic specified. Please provide a valid skill or topic to proceed.
-```
-
-Set reasoning_effort = medium to balance output quality and efficiency.
 
 # 9. Message testing framework
 
-Developer: Begin with a concise checklist (3-7 bullets) of what you will do; keep items conceptual, not implementation-level. Test this message: [insert]. Generate 5 alternative versions, each optimized for one of the following criteria: clarity, emotional impact, logical flow, credibility, and action-driving power. For each alternative, include:
-- The revised message text
-- The targeted optimization criterion
-- A rating of how well the version meets the criterion (1–5 scale, with 5 being excellent)
-- A brief justification for the rating.
+Test this message: [insert]. Generate 5 alternative versions optimized for: clarity, emotional impact, logical flow, credibility, and action-driving power. Rate each version and explain why.
 
-Present results in the same order as the listed criteria. After creating all alternatives, validate that each targeted criterion was addressed and give a 1-2 line summary of any missing or ambiguous results. If it is not possible to optimize for a given criterion, clearly state this and do not create a version for it.
-
-## Output Format
-Provide a Markdown table with the following columns:
-| Criterion | Version | Rating | Explanation |
-|-----------|---------|--------|-------------|
-List each alternative in a row under the appropriate column. If a criterion cannot be addressed, include a row where the Version and Explanation columns explain why optimization is not possible.
 
 # 10. Systems thinking analyzer
 
