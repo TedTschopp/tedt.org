@@ -1,6 +1,6 @@
 ---
 image: '/RPG/MCC-GW/images/Monster-Manual/Ghitgon.png'
-title: Air Dragon «Ghitgon»
+title: "Air Dragon «Ghitgon»"
 creature_name_index: Ghitgon
 notes: ''
 genericname: ''
