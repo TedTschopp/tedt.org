@@ -122,9 +122,9 @@
                       <!-- Do Nothing -->
                     {% elsif post.categories contains "Home" or post.category == "Home" %}
                       <!-- Do Nothing -->
-                      {% elsif post.layout contains "micropubpost" %}
+                    {% elsif post.layout contains "micropubpost" %}
                       <!-- Do Nothing -->
-                      {% elsif post.layout contains "gammaworld" %}
+                    {% elsif post.layout contains "gammaworld" %}
                       <!-- Do Nothing -->
                     {% elsif post.layout contains "prompt" or post.category == "Prompts" %}
                       <!-- Do Nothing -->
@@ -133,6 +133,8 @@
                       {% if count > 3 %}
                         {% break %}
                       {% endif %}
+                      {%- comment -%} Track shown URLs to prevent duplicates in fallback scan {%- endcomment -%}
+                      {% assign __shown_urls = __shown_urls | push: post.url %}
 
                       <div class="container">
                         <div class="row align-items-stretch">
@@ -208,6 +210,9 @@
                       {% elsif post.categories contains "Home" or post.category == "Home" %}
                         {% assign __skip = true %}
                       {% elsif post.layout contains "micropubpost" %}
+                        {% assign __skip = true %}
+                      {% elsif post.layout contains "gammaworld" %}
+                        {%- comment -%} Skip Gamma World layout posts (Bestiary style) on homepage blog list to avoid blank/irrelevant card. {%- endcomment -%}
                         {% assign __skip = true %}
                       {% elsif post.layout contains "prompt" or post.category == "Prompts" %}
                         {% assign __skip = true %}
