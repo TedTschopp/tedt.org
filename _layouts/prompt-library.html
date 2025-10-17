@@ -466,8 +466,6 @@ redirect_from:
     <!-- Bootstrap core JavaScript -->
     {% include assets/js-bottom-of-body.html %}
 
-
-    {%- comment -%} Duplicate bootstrap bundle removed (already loaded via assets/js-bottom-of-body.html) {%- endcomment -%}
     <script>
         // Pagination and filtering state
         let currentPage = 1;
@@ -668,8 +666,13 @@ redirect_from:
             buttonElement.setAttribute('aria-pressed', 'true');
             
             // Update the search box with the button text
-            const searchInput = document.querySelector('input[type="text"]');
-            searchInput.value = buttonElement.textContent;
+            const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
+            if (searchInput) {
+                searchInput.value = buttonElement.textContent;
+                console.log('Updated search input with:', buttonElement.textContent); // Debug log
+            } else {
+                console.error('Search input not found'); // Debug log
+            }
             
             // Set current filter to this specific tag/keyword
             currentFilter = `${type}:${value}`;
@@ -706,8 +709,10 @@ redirect_from:
                     // Extract the tag/keyword value and put it in the search box
                     const filterValue = filterParam.split(':')[1];
                     if (filterValue) {
-                        const searchInput = document.querySelector('input[type="text"]');
-                        searchInput.value = toTitleCase(filterValue);
+                        const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
+                        if (searchInput) {
+                            searchInput.value = toTitleCase(filterValue);
+                        }
                     }
                 } else {
                     // Find and activate the filter button for the parameter
@@ -768,8 +773,10 @@ redirect_from:
                 document.querySelectorAll('.btn-tag-filter').forEach(b => b.setAttribute('aria-pressed', 'false'));
                 
                 // Clear the search box when switching to category filters
-                const searchInput = document.querySelector('input[type="text"]');
-                searchInput.value = '';
+                const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
+                if (searchInput) {
+                    searchInput.value = '';
+                }
                 currentSearchTerm = '';
                 
                 currentFilter = this.getAttribute('data-filter').toLowerCase();
@@ -798,8 +805,10 @@ redirect_from:
             document.querySelectorAll('.btn-tag-filter').forEach(b => b.setAttribute('aria-pressed', 'false'));
             
             // Clear the search box
-            const searchInput = document.querySelector('input[type="text"]');
-            searchInput.value = '';
+            const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
+            if (searchInput) {
+                searchInput.value = '';
+            }
             currentSearchTerm = '';
             
             currentFilter = 'all';
@@ -854,7 +863,7 @@ redirect_from:
         });
 
         // Search functionality
-        const searchInput = document.querySelector('input[type="text"]');
+        const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
         searchInput.addEventListener('input', function() {
             currentSearchTerm = this.value.toLowerCase();
             
