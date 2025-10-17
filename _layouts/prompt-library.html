@@ -95,6 +95,42 @@ redirect_from:
             display: block;
             margin: auto;
         }
+
+        .active-tag-btn {
+            background-color: #6c757d;
+            border-color: #6c757d;
+            color: white;
+            transition: all 0.2s ease;
+            border-radius: 15px;
+            font-size: 0.875rem;
+            padding: 0.375rem 0.75rem;
+        }
+
+        .active-tag-btn:hover {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        .active-tag-btn:active {
+            transform: scale(0.95);
+        }
+
+        .active-tag-btn.selected {
+            background-color: #0d6efd;
+            border-color: #0d6efd;
+            color: white;
+        }
+
+        #active-tags-display {
+            background-color: rgba(var(--bs-light-rgb), 0.5) !important;
+            border-color: var(--bs-border-color) !important;
+        }
+
+        [data-bs-theme="dark"] #active-tags-display {
+            background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
+        }
     </style>
 </head>
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
@@ -139,6 +175,15 @@ redirect_from:
                 </div>
             </div>
             <div class="visually-hidden" aria-live="polite" id="sort-status"></div>
+            
+            <!-- Active Tags Display -->
+            <div id="active-tags-display" class="mt-3 p-3 border rounded bg-light" style="display: none;">
+                <h6 class="mb-2 text-muted"><i class="fa-solid fa-tags" aria-hidden="true"></i> Available Tags:</h6>
+                <div id="active-tags-container" class="d-flex flex-wrap gap-2" role="group" aria-label="Filter by available tags">
+                    <!-- Dynamic tag buttons will be inserted here -->
+                </div>
+            </div>
+            
             <div class="d-flex flex-wrap gap-2 mt-3" role="group" aria-label="Filter prompts by category">
                 <button class="btn btn-outline-secondary btn-toggle flex-fill" style="min-width: 140px;" 
                         aria-pressed="true" data-filter="all">All Categories</button>
@@ -315,6 +360,93 @@ redirect_from:
         let currentFilter = 'all';
         let currentSearchTerm = '';
         let currentSort = 'newest';
+
+        // Function to update the active tags display
+        function updateActiveTagsDisplay() {
+            const activeTagsDisplay = document.getElementById('active-tags-display');
+            const activeTagsContainer = document.getElementById('active-tags-container');
+            
+            // Clear existing tags
+            activeTagsContainer.innerHTML = '';
+            
+            // Collect all unique tags from currently filtered cards
+            const availableTags = new Set();
+            filteredCards.forEach(card => {
+                const tagsAttr = card.getAttribute('data-tags') || '';
+                if (tagsAttr) {
+                    // Split on comma and clean up each tag
+                    tagsAttr.split(',').forEach(tag => {
+                        const cleanTag = tag.trim();
+                        if (cleanTag) {
+                            availableTags.add(cleanTag);
+                        }
+                    });
+                }
+            });
+            
+            // Convert to array and sort
+            const sortedTags = Array.from(availableTags).sort();
+            
+            // Show/hide the display based on whether we have tags to filter by
+            // Show when: we have tags AND (we're filtering OR searching OR we have multiple unique tags available)
+            if (sortedTags.length > 0 && (currentFilter !== 'all' || currentSearchTerm !== '' || sortedTags.length > 1)) {
+                activeTagsDisplay.style.display = 'block';
+                
+                // Create buttons for each available tag
+                sortedTags.forEach(tagSlug => {
+                    // Find the original tag name from the existing buttons
+                    const originalButton = document.querySelector(`[data-filter="${tagSlug}"]`);
+                    const tagName = originalButton ? originalButton.textContent : tagSlug.replace(/-/g, ' ');
+                    
+                    const button = document.createElement('button');
+                    button.className = 'btn active-tag-btn';
+                    button.setAttribute('data-tag-filter', tagSlug);
+                    button.setAttribute('title', `Filter by ${tagName}`);
+                    button.textContent = tagName;
+                    
+                    // Mark as selected if this is the current filter
+                    if (currentFilter === tagSlug) {
+                        button.classList.add('selected');
+                    }
+                    
+                    // Add click event
+                    button.addEventListener('click', function() {
+                        // Reset all filter buttons
+                        document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                        
+                        // Find and activate the corresponding filter button
+                        const filterButton = document.querySelector(`[data-filter="${tagSlug}"]`);
+                        if (filterButton) {
+                            filterButton.setAttribute('aria-pressed', 'true');
+                            currentFilter = tagSlug;
+                        } else {
+                            document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+                            currentFilter = 'all';
+                        }
+                        
+                        currentPage = 1;
+                        
+                        // Update URL with filter parameter
+                        const url = new URL(window.location);
+                        if (currentFilter === 'all') {
+                            url.searchParams.delete('filter');
+                        } else {
+                            url.searchParams.set('filter', currentFilter);
+                        }
+                        window.history.pushState({}, '', url);
+                        
+                        applyFiltersAndSort();
+                        
+                        // Scroll to top of results
+                        document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+                    });
+                    
+                    activeTagsContainer.appendChild(button);
+                });
+            } else {
+                activeTagsDisplay.style.display = 'none';
+            }
+        }
 
         // Initialize when page loads
         document.addEventListener('DOMContentLoaded', function() {
@@ -562,6 +694,9 @@ redirect_from:
             if (sortStatus) {
                 sortStatus.textContent = `${filteredCards.length} prompt${filteredCards.length === 1 ? '' : 's'} matching current filters`;
             }
+            
+            // Update the active tags display
+            updateActiveTagsDisplay();
         }
 
         // Pagination functions

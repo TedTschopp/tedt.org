@@ -518,7 +518,7 @@ prompts:
     titleHoverColorDark: "#a78bfa"
     titleWeight: 500
   image: /img/categories/prompt_library.webp
-  category_home_page: /category/prompts/
+  category_home_page: /prompts/
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
