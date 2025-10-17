@@ -132,111 +132,123 @@ redirect_from:
             background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
         }
 
-        /* Tag and Keyword Filter Buttons */
+        /* Tag and Keyword Filter Buttons - Bootstrap 5.3 Aligned */
         .btn-tag-filter {
             min-width: 140px;
-            transition: all 0.2s ease;
+            transition: var(--bs-btn-transition, all 0.15s ease-in-out);
+            font-size: var(--bs-btn-font-size-sm, 0.875rem);
+            padding: var(--bs-btn-padding-y-sm, 0.25rem) var(--bs-btn-padding-x-sm, 0.5rem);
+            border-radius: var(--bs-btn-border-radius-sm, 0.375rem);
+            border-width: var(--bs-btn-border-width, 1px);
+            font-weight: var(--bs-btn-font-weight, 400);
         }
 
         .btn-tag-filter:hover {
-            transform: scale(1.05);
+            transform: translateY(-1px);
+            box-shadow: var(--bs-btn-box-shadow, 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075)), 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
         }
 
-        .btn-tag-filter:active {
-            transform: scale(0.95);
+        .btn-tag-filter:active,
+        .btn-tag-filter.active {
+            transform: translateY(0);
         }
 
-        /* Tag buttons - Blue theme */
+        /* Tag buttons - Blue theme (Bootstrap Primary outline style) */
         .btn-tag {
-            background-color: #0d6efd;
-            border-color: #0d6efd;
-            color: white;
-        }
-
-        .btn-tag:hover {
-            background-color: #0b5ed7;
-            border-color: #0a58ca;
-            color: white;
+            --bs-btn-color: #0d6efd;
+            --bs-btn-bg: transparent;
+            --bs-btn-border-color: #0d6efd;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #0d6efd;
+            --bs-btn-hover-border-color: #0d6efd;
+            --bs-btn-focus-shadow-rgb: 13, 110, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #0d6efd;
+            --bs-btn-active-border-color: #0d6efd;
+            --bs-btn-disabled-color: #0d6efd;
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: #0d6efd;
         }
 
         .btn-tag[aria-pressed="true"] {
-            background-color: #ffffff;
-            border: 3px solid #0d6efd;
-            color: #0d6efd;
-            font-weight: bold;
-            box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0d6efd;
-            position: relative;
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #0d6efd;
+            --bs-btn-border-color: #0d6efd;
+            font-weight: var(--bs-btn-font-weight, 500);
+            box-shadow: var(--bs-btn-focus-box-shadow, 0 0 0 0.25rem rgba(13, 110, 253, 0.25));
         }
 
         .btn-tag[aria-pressed="true"]::before {
             content: "✓ ";
-            font-weight: bold;
+            font-weight: 600;
         }
 
-        /* Keyword buttons - Green theme */
+        /* Keyword buttons - Green theme (Bootstrap Success outline style) */
         .btn-keyword {
-            background-color: #198754;
-            border-color: #198754;
-            color: white;
-        }
-
-        .btn-keyword:hover {
-            background-color: #157347;
-            border-color: #146c43;
-            color: white;
+            --bs-btn-color: #198754;
+            --bs-btn-bg: transparent;
+            --bs-btn-border-color: #198754;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: #198754;
+            --bs-btn-hover-border-color: #198754;
+            --bs-btn-focus-shadow-rgb: 25, 135, 84;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: #198754;
+            --bs-btn-active-border-color: #198754;
+            --bs-btn-disabled-color: #198754;
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: #198754;
         }
 
         .btn-keyword[aria-pressed="true"] {
-            background-color: #ffffff;
-            border: 3px solid #198754;
-            color: #198754;
-            font-weight: bold;
-            box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #198754;
-            position: relative;
+            --bs-btn-color: #fff;
+            --bs-btn-bg: #198754;
+            --bs-btn-border-color: #198754;
+            font-weight: var(--bs-btn-font-weight, 500);
+            box-shadow: var(--bs-btn-focus-box-shadow, 0 0 0 0.25rem rgba(25, 135, 84, 0.25));
         }
 
         .btn-keyword[aria-pressed="true"]::before {
             content: "✓ ";
-            font-weight: bold;
+            font-weight: 600;
         }
 
-        /* Dual buttons (both tag and keyword) - Split color */
+        /* Dual buttons (both tag and keyword) - Custom Bootstrap-aligned gradient */
         .btn-dual {
-            background: linear-gradient(135deg, #0d6efd 0%, #0d6efd 45%, #198754 55%, #198754 100%);
-            border: 2px solid #0d6efd;
-            color: white;
+            --bs-btn-color: #fff;
+            --bs-btn-bg: linear-gradient(135deg, #0d6efd 0%, #0d6efd 45%, #198754 55%, #198754 100%);
+            --bs-btn-border-color: #0d6efd;
+            --bs-btn-hover-color: #fff;
+            --bs-btn-hover-bg: linear-gradient(135deg, #0b5ed7 0%, #0b5ed7 45%, #157347 55%, #157347 100%);
+            --bs-btn-hover-border-color: #0b5ed7;
+            --bs-btn-focus-shadow-rgb: 13, 110, 253;
+            --bs-btn-active-color: #fff;
+            --bs-btn-active-bg: linear-gradient(135deg, #0a58ca 0%, #0a58ca 45%, #146c43 55%, #146c43 100%);
+            --bs-btn-active-border-color: #0a58ca;
+            background: var(--bs-btn-bg);
+            border: var(--bs-btn-border-width, 1px) solid var(--bs-btn-border-color);
             position: relative;
-            box-shadow: inset 0 0 0 1px rgba(255,255,255,0.1);
         }
 
         .btn-dual:hover {
-            background: linear-gradient(135deg, #0b5ed7 0%, #0b5ed7 45%, #157347 55%, #157347 100%);
-            border-color: #0b5ed7;
-            color: white;
-            transform: scale(1.05);
+            background: var(--bs-btn-hover-bg);
+            border-color: var(--bs-btn-hover-border-color);
+            transform: translateY(-1px);
         }
 
         .btn-dual[aria-pressed="true"] {
-            background: #ffffff;
-            border: 3px solid transparent;
-            background-image: linear-gradient(135deg, #0d6efd 0%, #0d6efd 45%, #198754 55%, #198754 100%);
-            background-clip: border-box;
-            color: #000000;
-            font-weight: bold;
-            box-shadow: 0 0 0 2px #ffffff, 0 0 0 4px #0d6efd, 0 0 0 6px #198754;
-            position: relative;
+            --bs-btn-color: #fff;
+            --bs-btn-bg: linear-gradient(135deg, #0d6efd 0%, #0d6efd 45%, #198754 55%, #198754 100%);
+            --bs-btn-border-color: #0d6efd;
+            background: var(--bs-btn-bg);
+            border-color: var(--bs-btn-border-color);
+            font-weight: var(--bs-btn-font-weight, 500);
+            box-shadow: var(--bs-btn-focus-box-shadow, 0 0 0 0.25rem rgba(13, 110, 253, 0.25));
         }
 
         .btn-dual[aria-pressed="true"]::before {
             content: "✓ ";
-            font-weight: bold;
-            color: #000000;
-        }
-
-        .btn-dual[aria-pressed="true"]::after {
-            background: rgba(255,255,255,0.95);
-            border-radius: 50%;
-            box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+            font-weight: 600;
         }
 
         .btn-dual::after {
@@ -587,7 +599,7 @@ redirect_from:
                             const titleCaseTag = toTitleCase(tag);
                             const isDual = dualItems.includes(tag);
                             
-                            button.className = `btn ${isDual ? 'btn-dual' : 'btn-tag'} btn-tag-filter flex-fill`;
+                            button.className = `btn btn-sm ${isDual ? 'btn-dual' : 'btn-tag'} btn-tag-filter flex-fill`;
                             button.setAttribute('data-filter-type', 'tag');
                             button.setAttribute('data-filter-value', tag.toLowerCase().replace(/\s+/g, '-'));
                             
@@ -625,7 +637,7 @@ redirect_from:
                             const titleCaseKeyword = toTitleCase(keyword);
                             const isDual = dualItems.includes(keyword);
                             
-                            button.className = `btn ${isDual ? 'btn-dual' : 'btn-keyword'} btn-tag-filter flex-fill`;
+                            button.className = `btn btn-sm ${isDual ? 'btn-dual' : 'btn-keyword'} btn-tag-filter flex-fill`;
                             button.setAttribute('data-filter-type', 'keyword');
                             button.setAttribute('data-filter-value', keyword.toLowerCase().replace(/\s+/g, '-'));
                             
