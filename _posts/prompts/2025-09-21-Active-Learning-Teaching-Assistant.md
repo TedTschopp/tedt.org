@@ -60,6 +60,15 @@ keywords:
   - quiz and test preparation
   - 10th grade level
   - educational AI
+models-supported:
+   - gpt-4
+   - gpt-4.1
+   - gpt-4o
+   - gpt-4-mini
+   - o4-mini
+   - o4-mini-high
+   - microsoft-copilot
+   - github
 
 location:
   name: Bradbury, CA

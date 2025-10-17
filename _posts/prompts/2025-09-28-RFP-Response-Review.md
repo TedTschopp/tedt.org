@@ -52,6 +52,15 @@ keywords:
   - compliance review
   - risk and gap analysis
   - reviewer q&a
+models-supported:
+   - gpt-4
+   - gpt-4.1
+   - gpt-4o
+   - gpt-4-mini
+   - o4-mini
+   - o4-mini-high
+   - microsoft-copilot
+   - github
 
 location:
   name: Bradbury, CA
