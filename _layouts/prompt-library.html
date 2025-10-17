@@ -480,9 +480,13 @@ redirect_from:
         let tagsVisible = true;
         let keywordsVisible = true;
 
-        // Helper function to convert text to title case
+        // Helper function to convert text to title case, preserving all-caps words
         function toTitleCase(str) {
             return str.replace(/\w\S*/g, function(txt) {
+                // Check if the word is already all caps (and longer than 1 character)
+                if (txt.length > 1 && txt === txt.toUpperCase()) {
+                    return txt; // Keep all-caps words as-is
+                }
                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
             });
         }
@@ -542,54 +546,70 @@ redirect_from:
                 dynamicFiltersDisplay.style.display = 'block';
                 
                 // Handle tags section
-                if (sortedTags.length > 0 && tagsVisible) {
+                if (sortedTags.length > 0) {
                     tagsSection.style.display = 'block';
-                    sortedTags.forEach(tag => {
-                        const button = document.createElement('button');
-                        const titleCaseTag = toTitleCase(tag);
-                        const isDual = dualItems.includes(tag);
-                        
-                        button.className = `btn ${isDual ? 'btn-dual' : 'btn-tag'} btn-tag-filter flex-fill`;
-                        button.setAttribute('data-filter-type', 'tag');
-                        button.setAttribute('data-filter-value', tag.toLowerCase().replace(/\s+/g, '-'));
-                        button.setAttribute('aria-pressed', 'false');
-                        button.setAttribute('title', `Filter by tag: ${titleCaseTag}${isDual ? ' (also a keyword)' : ''}`);
-                        button.textContent = titleCaseTag;
-                        
-                        // Add click event
-                        button.addEventListener('click', function() {
-                            handleTagKeywordFilter('tag', tag, this);
+                    
+                    if (tagsVisible) {
+                        // Show the container and populate with buttons
+                        tagsContainer.style.display = 'flex';
+                        sortedTags.forEach(tag => {
+                            const button = document.createElement('button');
+                            const titleCaseTag = toTitleCase(tag);
+                            const isDual = dualItems.includes(tag);
+                            
+                            button.className = `btn ${isDual ? 'btn-dual' : 'btn-tag'} btn-tag-filter flex-fill`;
+                            button.setAttribute('data-filter-type', 'tag');
+                            button.setAttribute('data-filter-value', tag.toLowerCase().replace(/\s+/g, '-'));
+                            button.setAttribute('aria-pressed', 'false');
+                            button.setAttribute('title', `Filter by tag: ${titleCaseTag}${isDual ? ' (also a keyword)' : ''}`);
+                            button.textContent = titleCaseTag;
+                            
+                            // Add click event
+                            button.addEventListener('click', function() {
+                                handleTagKeywordFilter('tag', tag, this);
+                            });
+                            
+                            tagsContainer.appendChild(button);
                         });
-                        
-                        tagsContainer.appendChild(button);
-                    });
-                } else if (sortedTags.length === 0 || !tagsVisible) {
+                    } else {
+                        // Hide the container but keep the section header visible
+                        tagsContainer.style.display = 'none';
+                    }
+                } else {
                     tagsSection.style.display = 'none';
                 }
                 
                 // Handle keywords section
-                if (sortedKeywords.length > 0 && keywordsVisible) {
+                if (sortedKeywords.length > 0) {
                     keywordsSection.style.display = 'block';
-                    sortedKeywords.forEach(keyword => {
-                        const button = document.createElement('button');
-                        const titleCaseKeyword = toTitleCase(keyword);
-                        const isDual = dualItems.includes(keyword);
-                        
-                        button.className = `btn ${isDual ? 'btn-dual' : 'btn-keyword'} btn-tag-filter flex-fill`;
-                        button.setAttribute('data-filter-type', 'keyword');
-                        button.setAttribute('data-filter-value', keyword.toLowerCase().replace(/\s+/g, '-'));
-                        button.setAttribute('aria-pressed', 'false');
-                        button.setAttribute('title', `Filter by keyword: ${titleCaseKeyword}${isDual ? ' (also a tag)' : ''}`);
-                        button.textContent = titleCaseKeyword;
-                        
-                        // Add click event
-                        button.addEventListener('click', function() {
-                            handleTagKeywordFilter('keyword', keyword, this);
+                    
+                    if (keywordsVisible) {
+                        // Show the container and populate with buttons
+                        keywordsContainer.style.display = 'flex';
+                        sortedKeywords.forEach(keyword => {
+                            const button = document.createElement('button');
+                            const titleCaseKeyword = toTitleCase(keyword);
+                            const isDual = dualItems.includes(keyword);
+                            
+                            button.className = `btn ${isDual ? 'btn-dual' : 'btn-keyword'} btn-tag-filter flex-fill`;
+                            button.setAttribute('data-filter-type', 'keyword');
+                            button.setAttribute('data-filter-value', keyword.toLowerCase().replace(/\s+/g, '-'));
+                            button.setAttribute('aria-pressed', 'false');
+                            button.setAttribute('title', `Filter by keyword: ${titleCaseKeyword}${isDual ? ' (also a tag)' : ''}`);
+                            button.textContent = titleCaseKeyword;
+                            
+                            // Add click event
+                            button.addEventListener('click', function() {
+                                handleTagKeywordFilter('keyword', keyword, this);
+                            });
+                            
+                            keywordsContainer.appendChild(button);
                         });
-                        
-                        keywordsContainer.appendChild(button);
-                    });
-                } else if (sortedKeywords.length === 0 || !keywordsVisible) {
+                    } else {
+                        // Hide the container but keep the section header visible
+                        keywordsContainer.style.display = 'none';
+                    }
+                } else {
                     keywordsSection.style.display = 'none';
                 }
                 
