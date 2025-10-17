@@ -560,7 +560,11 @@ redirect_from:
                             button.className = `btn ${isDual ? 'btn-dual' : 'btn-tag'} btn-tag-filter flex-fill`;
                             button.setAttribute('data-filter-type', 'tag');
                             button.setAttribute('data-filter-value', tag.toLowerCase().replace(/\s+/g, '-'));
-                            button.setAttribute('aria-pressed', 'false');
+                            
+                            // Check if this button should be active based on current filter
+                            const isActive = currentFilter === `tag:${tag}`;
+                            button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                            
                             button.setAttribute('title', `Filter by tag: ${titleCaseTag}${isDual ? ' (also a keyword)' : ''}`);
                             button.textContent = titleCaseTag;
                             
@@ -594,7 +598,11 @@ redirect_from:
                             button.className = `btn ${isDual ? 'btn-dual' : 'btn-keyword'} btn-tag-filter flex-fill`;
                             button.setAttribute('data-filter-type', 'keyword');
                             button.setAttribute('data-filter-value', keyword.toLowerCase().replace(/\s+/g, '-'));
-                            button.setAttribute('aria-pressed', 'false');
+                            
+                            // Check if this button should be active based on current filter
+                            const isActive = currentFilter === `keyword:${keyword}`;
+                            button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                            
                             button.setAttribute('title', `Filter by keyword: ${titleCaseKeyword}${isDual ? ' (also a tag)' : ''}`);
                             button.textContent = titleCaseKeyword;
                             
@@ -659,6 +667,10 @@ redirect_from:
             // Set the clicked button as active
             buttonElement.setAttribute('aria-pressed', 'true');
             
+            // Update the search box with the button text
+            const searchInput = document.querySelector('input[type="text"]');
+            searchInput.value = buttonElement.textContent;
+            
             // Set current filter to this specific tag/keyword
             currentFilter = `${type}:${value}`;
             currentPage = 1;
@@ -690,6 +702,13 @@ redirect_from:
                     currentFilter = filterParam;
                     // Don't activate any category buttons for tag/keyword filters
                     document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'false');
+                    
+                    // Extract the tag/keyword value and put it in the search box
+                    const filterValue = filterParam.split(':')[1];
+                    if (filterValue) {
+                        const searchInput = document.querySelector('input[type="text"]');
+                        searchInput.value = toTitleCase(filterValue);
+                    }
                 } else {
                     // Find and activate the filter button for the parameter
                     const filterButton = document.querySelector(`[data-filter="${filterParam}"]`);
@@ -748,6 +767,11 @@ redirect_from:
                 // Reset all tag/keyword filter buttons when switching to category filters
                 document.querySelectorAll('.btn-tag-filter').forEach(b => b.setAttribute('aria-pressed', 'false'));
                 
+                // Clear the search box when switching to category filters
+                const searchInput = document.querySelector('input[type="text"]');
+                searchInput.value = '';
+                currentSearchTerm = '';
+                
                 currentFilter = this.getAttribute('data-filter').toLowerCase();
                 currentPage = 1;
                 
@@ -772,6 +796,11 @@ redirect_from:
             
             // Reset all tag/keyword filter buttons
             document.querySelectorAll('.btn-tag-filter').forEach(b => b.setAttribute('aria-pressed', 'false'));
+            
+            // Clear the search box
+            const searchInput = document.querySelector('input[type="text"]');
+            searchInput.value = '';
+            currentSearchTerm = '';
             
             currentFilter = 'all';
             currentPage = 1;
@@ -828,6 +857,20 @@ redirect_from:
         const searchInput = document.querySelector('input[type="text"]');
         searchInput.addEventListener('input', function() {
             currentSearchTerm = this.value.toLowerCase();
+            
+            // If user is typing in search box, clear any active tag/keyword filters
+            if (currentSearchTerm !== '') {
+                // Reset all tag/keyword filter buttons
+                document.querySelectorAll('.btn-tag-filter').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                
+                // If current filter is a tag/keyword filter, reset to 'all'
+                if (currentFilter.startsWith('tag:') || currentFilter.startsWith('keyword:')) {
+                    currentFilter = 'all';
+                    document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                    document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+                }
+            }
+            
             currentPage = 1;
             applyFiltersAndSort();
         });
