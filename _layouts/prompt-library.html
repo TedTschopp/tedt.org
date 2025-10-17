@@ -522,13 +522,44 @@ redirect_from:
         let tagsVisible = true;
         let keywordsVisible = true;
 
-        // Helper function to convert text to title case, preserving all-caps words
+        // Global list of words that should remain uppercase
+        const UPPERCASE_WORDS = [
+            'Q&A', 'AI', 'GPT', 'RFP', 'API', 'URL', 'HTML', 'CSS', 'JS', 'JSON', 'XML', 'SQL', 
+            'HTTP', 'HTTPS', 'REST', 'CRUD', 'MVP', 'ROI', 'KPI', 'SLA', 'FAQ', 'CEO', 'CTO', 
+            'CMO', 'CFO', 'HR', 'IT', 'UI', 'UX', 'SEO', 'SEM', 'CRM', 'ERP', 'B2B', 'B2C', 
+            'SaaS', 'PaaS', 'IaaS', 'AWS', 'GCP', 'CI', 'CD', 'DevOps', 'ML', 'NLP', 'IoT', 
+            'VR', 'AR', 'XR', 'PDF', 'CSV', 'PNG', 'JPG', 'JPEG', 'GIF', 'SVG', 'MP4', 'MP3'
+        ];
+
+        // Helper function to convert text to title case with special handling
         function toTitleCase(str) {
             return str.replace(/\w\S*/g, function(txt) {
+                // Check if the word is in our uppercase words list (case-insensitive)
+                if (UPPERCASE_WORDS.some(word => word.toLowerCase() === txt.toLowerCase())) {
+                    return UPPERCASE_WORDS.find(word => word.toLowerCase() === txt.toLowerCase());
+                }
+                
                 // Check if the word is already all caps (and longer than 1 character)
                 if (txt.length > 1 && txt === txt.toUpperCase()) {
                     return txt; // Keep all-caps words as-is
                 }
+                
+                // Handle hyphenated words - capitalize after hyphens
+                if (txt.includes('-')) {
+                    return txt.split('-').map(part => {
+                        if (part.length === 0) return part;
+                        // Check if this part is in our uppercase list
+                        if (UPPERCASE_WORDS.some(word => word.toLowerCase() === part.toLowerCase())) {
+                            return UPPERCASE_WORDS.find(word => word.toLowerCase() === part.toLowerCase());
+                        }
+                        // Check if already all caps
+                        if (part.length > 1 && part === part.toUpperCase()) {
+                            return part;
+                        }
+                        return part.charAt(0).toUpperCase() + part.substr(1).toLowerCase();
+                    }).join('-');
+                }
+                
                 return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
             });
         }
