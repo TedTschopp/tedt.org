@@ -58,7 +58,8 @@ redirect_from:
         }
 
         .tag-filter-btn:hover {
-            background-color: var(--bs-primary-border-subtle) !important;
+            background-color: var(--bs-primary-bg-subtle) !important;
+            color: var(--bs-body-color) !important;
             transform: scale(1.05);
         }
 
@@ -163,8 +164,8 @@ redirect_from:
             --bs-btn-hover-border-color: var(--bs-primary);
             --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
             --bs-btn-active-color: var(--bs-white);
-            --bs-btn-active-bg: var(--bs-primary);
-            --bs-btn-active-border-color: var(--bs-primary);
+            --bs-btn-active-bg: var(--bs-primary-text-emphasis);
+            --bs-btn-active-border-color: var(--bs-primary-text-emphasis);
             --bs-btn-disabled-color: var(--bs-primary);
             --bs-btn-disabled-bg: transparent;
             --bs-btn-disabled-border-color: var(--bs-primary);
@@ -176,6 +177,18 @@ redirect_from:
             --bs-btn-border-color: var(--bs-primary);
             font-weight: var(--bs-btn-font-weight, 500);
             box-shadow: var(--bs-btn-focus-box-shadow, 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25));
+        }
+
+        /* Dark theme specific adjustments for tags */
+        [data-bs-theme="dark"] .btn-tag {
+            --bs-btn-color: var(--bs-primary-text-emphasis);
+            --bs-btn-border-color: var(--bs-primary-border-subtle);
+            --bs-btn-hover-color: var(--bs-gray-900);
+            --bs-btn-hover-bg: var(--bs-primary-text-emphasis);
+            --bs-btn-hover-border-color: var(--bs-primary-text-emphasis);
+            --bs-btn-active-color: var(--bs-gray-900);
+            --bs-btn-active-bg: var(--bs-primary);
+            --bs-btn-active-border-color: var(--bs-primary);
         }
 
         .btn-tag[aria-pressed="true"]::before {
@@ -193,8 +206,8 @@ redirect_from:
             --bs-btn-hover-border-color: var(--bs-success);
             --bs-btn-focus-shadow-rgb: var(--bs-success-rgb);
             --bs-btn-active-color: var(--bs-white);
-            --bs-btn-active-bg: var(--bs-success);
-            --bs-btn-active-border-color: var(--bs-success);
+            --bs-btn-active-bg: var(--bs-success-text-emphasis);
+            --bs-btn-active-border-color: var(--bs-success-text-emphasis);
             --bs-btn-disabled-color: var(--bs-success);
             --bs-btn-disabled-bg: transparent;
             --bs-btn-disabled-border-color: var(--bs-success);
@@ -208,6 +221,18 @@ redirect_from:
             box-shadow: var(--bs-btn-focus-box-shadow, 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25));
         }
 
+        /* Dark theme specific adjustments for keywords */
+        [data-bs-theme="dark"] .btn-keyword {
+            --bs-btn-color: var(--bs-success-text-emphasis);
+            --bs-btn-border-color: var(--bs-success-border-subtle);
+            --bs-btn-hover-color: var(--bs-gray-900);
+            --bs-btn-hover-bg: var(--bs-success-text-emphasis);
+            --bs-btn-hover-border-color: var(--bs-success-text-emphasis);
+            --bs-btn-active-color: var(--bs-gray-900);
+            --bs-btn-active-bg: var(--bs-success);
+            --bs-btn-active-border-color: var(--bs-success);
+        }
+
         .btn-keyword[aria-pressed="true"]::before {
             content: "✓ ";
             font-weight: 600;
@@ -219,8 +244,8 @@ redirect_from:
             --bs-btn-bg: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-primary) 45%, var(--bs-success) 55%, var(--bs-success) 100%);
             --bs-btn-border-color: var(--bs-primary);
             --bs-btn-hover-color: var(--bs-white);
-            --bs-btn-hover-bg: linear-gradient(135deg, var(--bs-primary-border-subtle) 0%, var(--bs-primary-border-subtle) 45%, var(--bs-success-border-subtle) 55%, var(--bs-success-border-subtle) 100%);
-            --bs-btn-hover-border-color: var(--bs-primary-border-subtle);
+            --bs-btn-hover-bg: linear-gradient(135deg, var(--bs-primary-text-emphasis) 0%, var(--bs-primary-text-emphasis) 45%, var(--bs-success-text-emphasis) 55%, var(--bs-success-text-emphasis) 100%);
+            --bs-btn-hover-border-color: var(--bs-primary-text-emphasis);
             --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
             --bs-btn-active-color: var(--bs-white);
             --bs-btn-active-bg: linear-gradient(135deg, var(--bs-primary-text-emphasis) 0%, var(--bs-primary-text-emphasis) 45%, var(--bs-success-text-emphasis) 55%, var(--bs-success-text-emphasis) 100%);
@@ -244,6 +269,15 @@ redirect_from:
             border-color: var(--bs-btn-border-color);
             font-weight: var(--bs-btn-font-weight, 500);
             box-shadow: var(--bs-btn-focus-box-shadow, 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25));
+        }
+
+        /* Dark theme specific adjustments for dual buttons */
+        [data-bs-theme="dark"] .btn-dual {
+            --bs-btn-bg: linear-gradient(135deg, var(--bs-primary-text-emphasis) 0%, var(--bs-primary-text-emphasis) 45%, var(--bs-success-text-emphasis) 55%, var(--bs-success-text-emphasis) 100%);
+            --bs-btn-border-color: var(--bs-primary-text-emphasis);
+            --bs-btn-hover-color: var(--bs-gray-900);
+            --bs-btn-hover-bg: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-primary) 45%, var(--bs-success) 55%, var(--bs-success) 100%);
+            --bs-btn-hover-border-color: var(--bs-primary);
         }
 
         .btn-dual[aria-pressed="true"]::before {
@@ -277,7 +311,7 @@ redirect_from:
         }
 
         .card .card-title a:hover {
-            color: var(--bs-primary-border-subtle) !important;
+            color: var(--bs-primary-text-emphasis) !important;
             text-decoration: underline !important;
             text-underline-offset: 3px;
             text-decoration-thickness: 2px;
@@ -299,9 +333,9 @@ redirect_from:
             transform: translateY(0);
         }
 
-        /* Dark theme adjustments */
+        /* Dark theme adjustments for better WCAG compliance */
         [data-bs-theme="dark"] .card .card-title a {
-            color: var(--bs-primary-bg-subtle) !important;
+            color: var(--bs-primary-text-emphasis) !important;
         }
 
         [data-bs-theme="dark"] .card .card-title a:hover {
@@ -309,8 +343,12 @@ redirect_from:
         }
 
         [data-bs-theme="dark"] .card .card-title a:focus {
-            color: var(--bs-primary-bg-subtle) !important;
-            outline-color: var(--bs-primary-bg-subtle);
+            color: var(--bs-primary-text-emphasis) !important;
+            outline-color: var(--bs-primary-text-emphasis);
+        }
+
+        [data-bs-theme="dark"] .card .card-title a:active {
+            color: var(--bs-primary) !important;
         }
     </style>
 </head>
