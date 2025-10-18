@@ -27,7 +27,8 @@ description: "Professional self improvement find your super power prompt designe
 
 seo-description: "Master self improvement find your super power with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Philosophy
 
 tags: 

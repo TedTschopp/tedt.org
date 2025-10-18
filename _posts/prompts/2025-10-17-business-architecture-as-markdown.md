@@ -27,8 +27,9 @@ description: "Professional architecture business architecture as markdown prompt
 
 seo-description: "Master architecture business architecture as markdown with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Planning

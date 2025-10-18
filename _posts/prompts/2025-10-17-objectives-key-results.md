@@ -27,7 +27,8 @@ description: "Professional business objectives key results prompt designed for h
 
 seo-description: "Master business objectives key results with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Opinion
 
 tags: 

@@ -27,7 +27,8 @@ description: "Professional ttrpg module format prompt designed for high-quality 
 
 seo-description: "Master ttrpg module format with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Role Playing Games
 
 tags: 

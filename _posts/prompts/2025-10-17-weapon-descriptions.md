@@ -27,7 +27,8 @@ description: "Professional ttrpg weapon descriptions prompt designed for high-qu
 
 seo-description: "Master ttrpg weapon descriptions with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Role Playing Games
 
 tags: 

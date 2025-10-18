@@ -27,7 +27,8 @@ description: "Professional business lean six sigma analysis prompt designed for 
 
 seo-description: "Master business lean six sigma analysis with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Opinion
 
 tags: 

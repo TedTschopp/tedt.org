@@ -27,7 +27,8 @@ description: "Professional business business skills prompts prompt designed for 
 
 seo-description: "Master business business skills prompts with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Opinion
 
 tags: 

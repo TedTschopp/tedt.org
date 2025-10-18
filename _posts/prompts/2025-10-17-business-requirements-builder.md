@@ -27,8 +27,9 @@ description: "Professional architecture business requirements builder prompt des
 
 seo-description: "Master architecture business requirements builder with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Planning

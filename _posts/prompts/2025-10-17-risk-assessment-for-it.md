@@ -27,8 +27,9 @@ description: "Professional architecture risk assessment for it prompt designed f
 
 seo-description: "Master architecture risk assessment for it with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Requirements Engineering

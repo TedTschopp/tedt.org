@@ -27,7 +27,8 @@ description: "Professional communications expert novelist prompt designed for hi
 
 seo-description: "Master communications expert novelist with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Communications
 
 tags: 

@@ -27,7 +27,8 @@ description: "Professional sora prompt prompt designed for high-quality content 
 
 seo-description: "Master sora prompt with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - AI
 
 tags: 

@@ -27,7 +27,8 @@ description: "Professional communications tiered messaging framework prompt desi
 
 seo-description: "Master communications tiered messaging framework with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Communications
 
 tags: 

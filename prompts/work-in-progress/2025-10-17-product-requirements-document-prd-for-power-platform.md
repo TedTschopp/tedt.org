@@ -27,9 +27,8 @@ description: "Professional architecture product requirements document (prd) for 
 
 seo-description: "Master architecture product requirements document (prd) for power platform with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories:
-- Prompts
-- Projects
+categories: 
+    - Projects
 
 tags: 
     - Requirements Engineering

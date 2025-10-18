@@ -27,8 +27,9 @@ description: "Professional architecture ai document generator prompt designed fo
 
 seo-description: "Master architecture ai document generator with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Artificial Intelligence

@@ -27,7 +27,8 @@ description: "Professional ttrpg skill profile generator prompt designed for hig
 
 seo-description: "Master ttrpg skill profile generator with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Role Playing Games
 
 tags: 

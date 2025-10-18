@@ -27,7 +27,8 @@ description: "Professional ttrpg module builder prompt designed for high-quality
 
 seo-description: "Master ttrpg module builder with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Role Playing Games
 
 tags: 

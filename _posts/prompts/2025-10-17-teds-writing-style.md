@@ -27,7 +27,8 @@ description: "Professional communications [ted's writing style] prompt designed 
 
 seo-description: "Master communications [ted's writing style] with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+    - Prompts
     - Communications
 
 tags: 
@@ -36,9 +37,9 @@ tags:
     - Writing
 
 keywords: 
-    - style]
+    - style
     - communications
-    - [ted's
+    - teds
     - writing
 
 location:

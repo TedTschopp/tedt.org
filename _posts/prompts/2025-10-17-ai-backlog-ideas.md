@@ -27,8 +27,9 @@ description: "Professional architecture ai backlog ideas prompt designed for hig
 
 seo-description: "Master architecture ai backlog ideas with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Artificial Intelligence

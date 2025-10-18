@@ -27,8 +27,9 @@ description: "Professional architecture avd as markdown prompt designed for high
 
 seo-description: "Master architecture avd as markdown with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Requirements Engineering

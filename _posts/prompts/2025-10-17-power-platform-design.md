@@ -27,8 +27,9 @@ description: "Professional architecture power platform design prompt designed fo
 
 seo-description: "Master architecture power platform design with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Requirements Engineering

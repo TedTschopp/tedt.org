@@ -27,8 +27,9 @@ description: "Professional architecture technology architecture as markdown prom
 
 seo-description: "Master architecture technology architecture as markdown with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Requirements Engineering

@@ -27,8 +27,9 @@ description: "A specialized prompt for converting meeting transcripts into struc
 
 seo-description: "Transform meeting transcripts into professional system requirements specifications following ISO/IEC/IEEE 29148:2018 standards with this specialized analysis prompt."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Requirements Engineering

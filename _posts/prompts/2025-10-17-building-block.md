@@ -27,8 +27,9 @@ description: "Professional architecture building block prompt designed for high-
 
 seo-description: "Master architecture building block with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Requirements Engineering

@@ -27,8 +27,9 @@ description: "Professional architecture prd generator prompt designed for high-q
 
 seo-description: "Master architecture prd generator with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Requirements Engineering

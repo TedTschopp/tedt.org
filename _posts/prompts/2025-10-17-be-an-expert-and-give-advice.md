@@ -27,7 +27,8 @@ description: "Professional communications be an expert and give advice prompt de
 
 seo-description: "Master communications be an expert and give advice with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Communications
 
 tags: 

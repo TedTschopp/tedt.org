@@ -27,7 +27,8 @@ description: "Professional prompt for ted talks prompt designed for high-quality
 
 seo-description: "Master prompt for ted talks with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - AI
 
 tags: 

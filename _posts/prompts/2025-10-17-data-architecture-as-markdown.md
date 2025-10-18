@@ -27,8 +27,9 @@ description: "Professional architecture data architecture as markdown prompt des
 
 seo-description: "Master architecture data architecture as markdown with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Requirements Engineering

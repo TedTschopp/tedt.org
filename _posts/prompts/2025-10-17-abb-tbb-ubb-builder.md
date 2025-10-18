@@ -27,8 +27,9 @@ description: "Professional architecture abb tbb ubb builder prompt designed for 
 
 seo-description: "Master architecture abb tbb ubb builder with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
-    - Projects
+categories:
+- Prompts
+- Projects
 
 tags: 
     - Requirements Engineering

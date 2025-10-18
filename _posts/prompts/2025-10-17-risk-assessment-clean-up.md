@@ -27,7 +27,8 @@ description: "Professional risk assessment clean up prompt designed for high-qua
 
 seo-description: "Master risk assessment clean up with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Opinion
 
 tags: 

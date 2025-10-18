@@ -27,7 +27,8 @@ description: "Professional communications script a podcast prompt designed for h
 
 seo-description: "Master communications script a podcast with this comprehensive AI prompt featuring structured templates and best practices."
 
-categories: 
+categories:
+- Prompts
     - Communications
 
 tags: 
