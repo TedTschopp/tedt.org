@@ -1,0 +1,1642 @@
+---
+layout: prompt-details
+
+title: "Architecture Application Architecture as Markdown"
+subtitle: "Enterprise Architecture and Requirements Engineering"
+quote: ""
+excerpt: "A specialized prompt for architecture application architecture as markdown with advanced AI capabilities and structured output formatting."
+source: "Original Content"
+source-url: ""
+call-to-action: ""
+
+date: 2025-10-17
+update:
+author:
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    name: Ted Tschopp
+    url: https://tedt.org/
+
+bullets:
+    - Advanced prompt engineering techniques
+    - Structured approach to content generation
+    - Customizable templates and frameworks
+    - Best practices for AI interaction
+    - Professional-grade output formatting
+
+description: "Professional architecture application architecture as markdown prompt designed for high-quality content generation and structured analysis."
+
+seo-description: "Master architecture application architecture as markdown with this comprehensive AI prompt featuring structured templates and best practices."
+
+categories: 
+    - Projects
+
+tags: 
+    - Requirements Engineering
+    - Architecture
+    - Documentation
+
+keywords: 
+    - system architecture
+    - application
+    - markdown
+    - architecture
+    - requirements analysis
+
+location:
+    name: Bradbury, CA
+coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
+image: 
+image-alt: ""
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
+image-credits: "Ted Tschopp"
+image-credits-URL: "https://tedt.org/"
+image-credits-artist: "Ted Tschopp"
+image-credits-artist-URL: "https://tedt.org/"
+image-credits-title: ""
+image-description: ""
+image-title: ""
+image_width: 
+image_height: 
+
+mastodon-post-id:
+models-supported:
+- gpt-4
+- gpt-4-turbo
+- gpt-4-mini
+- claude-3-sonnet
+- microsoft-copilot
+- github
+prompt_content: |
+  1. [Information Systems Architecture: Application](#information-systems-architecture-application)
+     1. [Core Application Architecture](#core-application-architecture)
+        1. [Strategic Alignment \& Principles](#strategic-alignment--principles)
+        2. [Application Portfolio Catalog](#application-portfolio-catalog)
+        3. [Application Components \& Services](#application-components--services)
+        4. [UI/UX Design Specification](#uiuxdesignspecification)
+        5. [Current State Architecture](#current-state-architecture)
+        6. [Application Gap Analysis Matrix](#application-gap-analysis-matrix)
+        7. [Future State Architecture](#future-state-architecture)
+     2. [Integration Architecture](#integration-architecture)
+     3. [Integration Architecture](#integration-architecture-1)
+        1. [Application Communication Diagram](#application-communication-diagram)
+        2. [Interface Catalog](#interface-catalog)
+        3. [Application Interaction Requirements \& APIs](#application-interaction-requirements--apis)
+           1. [Integration Principles](#integration-principles)
+           2. [Integration Patterns](#integration-patterns)
+           3. [API Architectures](#api-architectures)
+              1. [Inbound API Architecture](#inbound-api-architecture)
+              2. [Internal API Architecture](#internal-api-architecture)
+              3. [Outbound API Architecture](#outbound-api-architecture)
+           4. [Middleware and Tools](#middleware-and-tools)
+           5. [Interoperability \& Standards](#interoperability--standards)
+           6. [Governance \& Monitoring](#governance--monitoring)
+           7. [Interface Flows](#interface-flows)
+     4. [Lifecycle Governance \& Risk / Compliance](#lifecycle-governance--risk--compliance)
+        1. [Application Lifecycle \& Governance](#application-lifecycle--governance)
+        2. [Standards Information Base](#standards-information-base)
+        3. [Risks, Constraints, and Compliance](#risks-constraints-and-compliance)
+     5. [Visual Models](#visual-models)
+        1. [Application Architecture Models \& Views](#application-architecture-models--views)
+        2. [Application Interaction Matrix (CRUD)](#application-interaction-matrix-crud)
+     6. [Integration Architecture](#integration-architecture-2)
+        1. [Application Communication Diagram](#application-communication-diagram-1)
+        2. [Interface Catalog](#interface-catalog-1)
+        3. [Application–Entity \& Capability Coverage Matrices](#applicationentity--capability-coverage-matrices)
+        4. [Capability Realisation Mapping \& Gap Analysis](#capability-realisation-mapping-gap-analysis)
+        5. [Stakeholder Concerns \& Viewpoints](#stakeholder-concerns--viewpoints)
+           1. [Security Architect](#security-architect)
+           2. [Business Owner (Customer Service VP)](#business-owner-customer-service-vp)
+           3. [CIO / CTO](#cio--cto)
+           4. [Compliance Officer (SOX, PCI, GDPR)](#compliance-officer-sox-pci-gdpr)
+           5. [Integration Architect](#integration-architect)
+           6. [DevOps / Platform Engineer](#devops--platform-engineer)
+           7. [Product Owner / Application Owner](#product-owner--application-owner)
+           8. [Data Architect / DPO](#data-architect--dpo)
+  
+  
+  
+  # Information Systems Architecture: Application
+  
+  ## Core Application Architecture
+  
+  ### Strategic Alignment & Principles
+  
+  <Purpose>
+  This section defines how the Application Architecture supports business goals by identifying and structuring the major applications and their interactions. It establishes alignment with business capabilities, functional requirements, and guiding architectural principles such as modularity, reuse, scalability, and security. This ensures applications are developed or acquired to fit enterprise strategy, avoid redundancy, and support operational effectiveness.
+  
+  <Instructions>
+  1. **Link to Business Architecture:** Explain how the application landscape supports key business functions and processes identified in Phase B.
+  2. **Reference Architecture Principles:** Highlight principles such as reuse, service-orientation, interoperability, cloud readiness, and lifecycle management.
+  3. **Define Scope and Boundaries:** Describe what’s in scope (new applications, modernizations, decommissions) and integration touchpoints.
+  
+  <Example>
+  The application architecture is **business-driven**, meaning every major system and interface is justified by a business need and directly supports a key business capability. For example, a Customer Relationship Management (CRM) application supports the *Manage Customers* business function, while an Order Management system supports *Process Orders*. This ensures a clear line of sight from technology to business outcomes. The scope of this architecture covers the new customer-facing portal and its supporting backend applications (CRM, Order Processing, Billing, Product Catalog), the modernization of legacy components, and the decommissioning of redundant tools (e.g. old spreadsheets or duplicate databases). It defines integration touchpoints such as how the portal will interact with the Order and CRM systems.
+  
+  **Architectural Principles:** To align with enterprise strategy, the solution follows key architecture principles:
+  
+  * **Modularity & Reuse:** Applications are designed in a modular way so that components can be *reused* or upgraded independently without affecting the whole system. For instance, a single **customer authentication** service is built once and reused across the web portal, mobile app, and internal systems rather than duplicated in each. This reduces redundancy and speeds up development by leveraging pre-built modules.
+  * **Service-Oriented Integration:** We embrace service-orientation, exposing functionality via APIs and microservices. Each major capability (e.g. order processing, billing) is delivered as a service with well-defined interfaces. This *loose coupling* ensures changes in one service have minimal impact on others and supports scalability. For example, the Order Management service communicates with the Billing service through an API rather than direct database calls, isolating the two.
+  * **Interoperability & Standardization:** The architecture emphasizes use of open standards and consistent technologies so systems can easily interconnect. Standard protocols (RESTful HTTP for synchronous calls, messaging for async), data formats (JSON for web services), and common identity management (single sign-on) are enforced across applications. This prevents teams from “reinventing the wheel” and reduces integration issues by ensuring new applications can *talk to* existing ones without complex adapters.
+  * **Scalability & Cloud Readiness:** Applications are built to scale horizontally and leverage cloud infrastructure for elasticity. Following a **cloud-first** approach, new components (like the customer portal and order services) are cloud-deployable to take advantage of on-demand scaling and high availability. Design considerations include stateless services and distributed databases to handle increased load. This ensures the architecture can grow with business demand and remain resilient.
+  * **Security by Design:** Security and compliance requirements are baked into application design from the start. All applications adhere to enterprise security policies (e.g. role-based access control, encryption of data in transit and at rest, input validation) so that security is a built-in aspect, not an afterthought. For example, the APIs require authentication tokens and use HTTPS, and sensitive personal data in the CRM is encrypted. This also helps meet regulatory demands (such as privacy laws) early in the design.
+  * **Lifecycle Management:** We plan for the full lifecycle of applications. Each application has an owner and a roadmap for evolution. We avoid “technology for technology’s sake” – if a proposed application doesn’t clearly support a business capability or principle, it’s out of scope. Conversely, legacy applications that no longer align may be slated for phase-out to reduce complexity.
+  
+  **Scope & Boundaries:** The Application Architecture scope includes all solution components needed for the target state. In scope are the **new Customer Portal** (for self-service access), a **modern Cloud CRM** system replacing the legacy CRM, a **new Order Management microservice** (replacing a legacy order-entry app), integration of an **existing Billing/Finance system**, and a **Product Catalog service**. It also covers the integration middleware and APIs that connect these components. Out of scope (for this iteration) are purely back-office systems that do not interface with the solution (e.g. HR system). The boundaries of the solution are clearly defined: for example, the architecture will interface with an external **Payment Gateway** and a **Shipping Carrier API**, but systems outside those integration points are considered external. By defining these boundaries, we ensure a clear focus on relevant applications and avoid scope creep into unrelated systems.
+  
+  Finally, these principles and scope decisions align with the broader enterprise architecture principles (like *technology agnosticism* to avoid vendor lock-in and *data as an asset* to ensure single sources of truth). By adhering to them, the application landscape will remain aligned with business strategy and be positioned to accommodate future changes. In summary, the application architecture is structured to directly enable business functions, guided by enterprise principles of **reuse, interoperability, scalability, security, and agility**, and scoped to include all necessary components while avoiding extraneous complexity.
+  
+  <Prerequisites>
+  
+  * **Completed Business Architecture & Requirements:** Before finalizing application alignment, the Business Architecture (Phase B) must be completed, identifying the key processes, capabilities, and requirements that the applications need to support. This ensures we have a clear mapping of what business goals each application must serve.
+  * **Established Principles & Standards:** Enterprise architecture principles (e.g. published IT standards, security policies, cloud strategy) should already be defined. These act as constraints and guides for designing the application architecture. For instance, knowing there is a “cloud-first” policy or a mandate to prefer COTS solutions where possible will shape the application decisions.
+  * **Current Application Portfolio Assessment:** An inventory of existing applications and their pain points should be available as a baseline. Understanding what systems exist (and their shortcomings such as redundancy or technical debt) is necessary to plan alignment and avoid repeating past mistakes.
+  * **Technology Strategy Inputs:** Any relevant IT strategy or technology roadmaps (for example, plans to adopt microservices or retire mainframe technology) should be identified. These set the context for what kinds of application solutions are feasible or preferred.
+  * **Stakeholder Buy-In:** Key stakeholders (both business and IT) need to agree on the business goals and principles driving the application architecture. Executive sponsorship and user community input are prerequisites to ensure the architecture will be accepted and used.
+  
+  <Standards>
+  
+  * **Architecture Principles Catalog:** The solution adheres to the enterprise’s Architecture Principles (as defined in the Principles catalog). For example, if “Service Reusability” and “Buy over Build” are stated principles, they are applied here by reusing existing services where possible and choosing COTS/SaaS solutions unless a unique custom build is justified.
+  * **Reference Models:** Alignment is checked against any enterprise reference architecture or industry reference models (like TOGAF’s III-RM for integrated information infrastructure). If a **reference application architecture** exists for common capabilities (e.g. a standard way the company implements CRM or e-commerce systems), those models are used as a starting point.
+  * **Naming & Identification:** All applications are given unique identifiers and names in accordance with the enterprise portfolio catalog standards. (For example, prefix “CRM” for customer systems, consistent naming of environments, etc.). This ties into the Application Portfolio Catalog for traceability.
+  * **Scope Definition:** A formal **Statement of Architecture Work** or equivalent document outlines the scope of this architecture effort. It defines what’s included/excluded and is approved by governance, preventing scope creep.
+  * **Compliance Standards:** The architecture will comply with relevant standards such as ISO 25010 for software quality (ensuring maintainability, security), and any industry-specific standards (for example, HL7 in healthcare, or the Open Travel Alliance standards if in travel industry). These standards inform requirements for the applications (e.g. performance, interoperability) from the outset.
+  
+  ### Application Portfolio Catalog
+  
+  <Purpose>
+  The Application Portfolio Catalog records **all business‑facing and technical applications that the enterprise relies on today or plans to introduce**.
+  Its objectives are to:
+  
+  1. **Provide a single source of truth** for architects, product managers, risk owners, and finance regarding what applications exist, what they do, and who owns them.
+  2. **Enable impact and dependency analysis** when changes are proposed (e.g., upgrades, decommissioning, mergers, cloud migration).
+  3. **Support strategic decisions** such as rationalisation, investment prioritisation, technical debt reduction, cyber‑resilience, and licence optimisation.
+  4. **Demonstrate governance compliance** with TOGAF, IT4IT, NIST, SOX, and internal policy requirements for asset management.
+  
+  <Instructions>
+  1. **Scope = Enterprise applications** that are used directly or indirectly to enable business capabilities. Exclude end‑user productivity tools unless they provide unique business logic (e.g., specialised engineering calculation spreadsheets).
+  2. **Capture one line per discrete application or major SaaS subscription.**
+  3. **Populate each mandatory column** exactly as defined in the *Standards* section below. Optional enrichment fields (e.g., data classification, criticality, integration interfaces) may be added but must follow the same conventions.
+  4. **Use authoritative data sources**: CMDB, contract repository, architectural diagrams, vendor portals, and interviews with system owners.
+  5. **Update cadence**
+  
+     * Quarterly for evergreen SaaS and critical systems
+     * Whenever a project stage gate moves an application into a new lifecycle stage
+     * Immediately after an acquisition or divestiture
+  6. **Review & sign‑off**: Catalogue steward circulates the updated file to Domain Architects and Business Owners for confirmation; Enterprise Architecture (EA) retains final approval.
+  
+  <Example>
+  | ID   | Application                              | Description                                                           | Owner/Business Unit              | Platform             | Lifecycle Stage       |
+  |------|------------------------------------------|-----------------------------------------------------------------------|----------------------------------|----------------------|-----------------------|
+  | AP01 | Customer Relationship Management (CRM)   | Manages customer accounts, sales pipeline, and support interactions.  | Sales & Customer Service         | Cloud (SaaS)         | Live                  |
+  | AP02 | Online E-Commerce Platform               | Online platform for digital sales and customer self-service.          | Digital Marketing & Commerce     | Cloud (PaaS)         | Live                  |
+  | AP03 | Enterprise Resource Planning (ERP)       | Core system for finance, accounting, inventory, and order management. | Finance & Operations             | On-Premises          | Live                  |
+  | AP04 | Human Resources Management System (HRMS) | System for employee records, payroll, and HR processes.               | Human Resources                  | On-Premises (Legacy) | Planned (replacement) |
+  | AP05 | Enterprise Data Warehouse (EDW)          | Central repository for enterprise analytics and reporting.            | Enterprise Data & Analytics (IT) | On-Premises          | Live                  |
+  
+  <Prerequisites>
+  
+  Before populating or refreshing this catalog, ensure the following artefacts are in place or updated:
+  
+  | Artefact                              | Purpose in Relation to Catalog                                                                                         | Typical Source/Owner                 |
+  |---------------------------------------|------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
+  | **Business Capability Map**           | Defines the capability hierarchy used to map each application to business value.                                       | Business Architecture                |
+  | **Application Reference Model (ARM)** | Provides the standard categorisation (e.g., Core, Commodity, Differentiating) that is cross‑referenced in the catalog. | EA / TOGAF ADM Phase C               |
+  | **Technology Reference Model (TRM)**  | Lists approved hosting patterns (e.g., Cloud SaaS, Cloud PaaS, On‑Prem VM, Mainframe).                                 | EA / Infrastructure Architecture     |
+  | **CMDB baseline**                     | Supplies technical inventory, instance counts, environments, and support contacts.                                     | IT Service Management                |
+  | **Project & Demand Register**         | Identifies applications in Idea or Planned stage.                                                                      | Portfolio Management Office          |
+  | **End‑of‑Life (EoL) Components List** | Highlights ageing OS / DB / middleware driving lifecycle status changes.                                               | Infrastructure & Security Governance |
+  
+  <Standards>
+  
+  * The Open Group TOGAF® Standard, 10th Edition (2022)
+  * The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)
+  * ISO/IEC 19770‑1:2017 — IT Asset Management
+  * ISO/IEC 20000‑1:2018 — IT Service Management
+  * ISO/IEC 27001:2022 — Information Security Management Systems
+  * ISO/IEC 27017:2015 — Security Controls for Cloud Services
+  * ISO/IEC 27018:2019 — Protection of Personally Identifiable Information (PII) in Public Clouds
+  * ISO/IEC 38500:2015 — Governance of IT for the Organization
+  * ISO/IEC 42010:2011 — Systems and Software Engineering — Architecture Description
+  * ISO 55000:2014 — Asset Management Principles and Terminology
+  * ISO/IEC 12207:2017 — Software Life‑Cycle Processes
+  * COBIT® 2019 Framework — Governance & Management of Enterprise IT
+  * ITIL® 4 — IT Service Management Best Practice
+  * NIST SP 800‑53 Rev. 5 — Security & Privacy Controls for Information Systems
+  * NIST Cybersecurity Framework (CSF) 2.0 — 2024 Edition
+  * CMMI® V2.2 — Capability Maturity Model Integration (Development & Services)
+  * SOC 2 (AICPA) — Trust Services Criteria for Service Organizations
+  * Sarbanes‑Oxley Act (SOX) Section 404 — Internal Control over Financial Reporting
+  * ISO 9001:2015 — Quality Management Systems
+  
+  ### Application Components & Services
+  
+  <Purpose>
+  Break down applications into functional modules or services, showing how they map to business capabilities and technical layers.
+  
+  <Instructions>
+  1. **Use Logical Decomposition:** Identify key services (e.g., customer onboarding, billing, asset tracking) and where they reside.
+  2. **Application to Business Function Mapping:** Map every major applications to business functions using a table (✔ indicates primary support for the function)
+  3. **Differentiate Types:** Clarify distinctions between custom apps, COTS (commercial-off-the-shelf), SaaS, and shared services.
+  4. **Include Reuse and Rationalization:** Highlight opportunities for reuse, consolidation, or replacement.
+  
+  <Example>
+  In the target architecture, each major application is **logically decomposed** into a set of **application components or services**, each responsible for specific business functions. This section describes those components and the types of applications in play (custom-built, COTS, SaaS), and how we are maximizing reuse and eliminating redundancy.
+  
+  **Logical Decomposition by Application:**
+  
+  * **Customer Management (CRM)** – *Type: SaaS.* The Cloud CRM (A1) is a commercial SaaS product, but we can describe its key modules: e.g., **Account Management**, **Contact Management**, **Case Management**, and **Marketing** modules. These are out-of-the-box components of the CRM platform that map to business needs (Account/Contact modules support customer data, Case module supports customer service, etc.). Being SaaS, these modules are configured, not custom-developed. They operate on a shared platform but provide distinct services. We leverage as many native CRM features as possible (for example, using its built-in workflow for customer onboarding), rather than custom building those functions. *Reuse:* If the enterprise has other departments needing a CRM, this same platform can be extended rather than having separate CRMs. This SaaS CRM thus becomes a shared service for multiple business units.
+  * **Order Management Service** – *Type: Custom Microservices.* We decompose A2 into sub-services for clarity and easier development: for example, an **Order Entry Service** (handles new orders, validations), **Inventory Service** (checks and updates inventory levels per order), **Fulfillment/Shipping Service** (coordinates shipping and updates order status), and **Payment Service** (handles payment transactions, possibly via a payment gateway). Each of these is a module that could be separately deployed and scaled. They collectively fulfill the *Process Orders* capability. The separation follows domain boundaries – e.g., the Payment Service might be separate since it interacts with external payment providers. *Reuse & Rationalization:* We ensure no duplicate functionality across services – e.g., only the Payment Service integrates with payment API, so other services call it rather than each implementing payment logic. Also, if any of these services could be used by other contexts (for instance, a Payment Service might be reusable by other applications that need to charge customers), we design it to be a generic shared component. Internally, each microservice has distinct layers (API controller, business logic, data access), following a consistent architecture pattern.
+  * **Billing/Finance Module** – *Type: COTS (ERP).* The billing system is a module of an existing ERP. Rather than breaking it down into sub-modules (since that’s internal to the ERP), we treat it as a black box offering specific **services**: e.g., **Invoice Generation Service**, **Accounts Receivable Service**. These services are exposed via an integration layer – for instance, an API endpoint “GenerateInvoice()” that internally triggers the ERP’s invoice function. We differentiate it as a COTS component meaning we configure and integrate it, but don’t alter its internal code. We *reuse* this existing capability instead of building a new billing system from scratch (rationalizing on cost and reliability). However, if the ERP had overlapping features with other systems, we’d consolidate; in this case, it’s uniquely providing finance functions, so there’s no duplication with others.
+  * **Product Catalog Service** – *Type: Custom (could be partially COTS).* We implement A4 as a custom service, possibly with a standard database or even a lightweight COTS product data management tool behind it. Key components here include a **Product Database** (central data store for all product info) and a **Catalog API Service** that queries/updates that database. Within this service, we could logically separate **Pricing Service** (to manage and provide pricing info, perhaps to handle different pricing rules) and **Product Info Service** (for descriptive info). If the enterprise had an existing product DB or a content management system, we would consider reusing it; assuming not, this is built new. *Rationalization:* This service replaces multiple spreadsheets and ensures one place for product truth. It removes redundant data sources. Additionally, it can serve multiple channels (website, internal systems) – a big reuse improvement over each channel managing product data separately.
+  * **Customer Self-Service Portal** – *Type: Custom Web App.* The portal itself can be thought of as composed of front-end components corresponding to features: **Profile Management UI**, **Product Catalog UI**, **Order Entry UI**, **Order Tracking UI**. These map to services on the back-end (Profile UI talks to CRM, Order UI talks to Order service, etc.). We maintain a separation of concerns: the portal focuses on presentation, while all business logic resides in aforementioned back-end services. If the organization has a design system or reusable UI components, the portal uses those (for consistency and faster development). *Reuse:* We plan to reuse any existing web components (e.g., maybe the company already has a payment widget or a maps address widget). Also, the portal itself could be extended to other user groups (for example, a dealer portal in the future) by reusing the same underlying architecture.
+  
+  | Business Function         | CRM | E-Commerce | ERP | HRMS | EDW |
+  |---------------------------|-----|------------|-----|------|-----|
+  | Sales & Marketing         | ✔   | ✔          |     |      |     |
+  | Customer Service          | ✔   |            |     |      |     |
+  | Order Fulfillment         |     |            | ✔   |      |     |
+  | Finance & Accounting      |     |            | ✔   |      |     |
+  | Human Resource Management |     |            |     | ✔    |     |
+  | Analytics & Reporting     |     |            |     |      | ✔   |
+  
+  **Types of Applications Summary:** We clearly distinguish that **A1 and possibly A3 are COTS/SaaS** – meaning their core code is not in our control, we configure them. **A2, A4, A5 are custom-developed** – giving flexibility but requiring us to manage their full lifecycle. There are also **shared enterprise services** that are part of the architecture but not listed as separate applications: for example, an **Enterprise Identity Service** (for Single Sign-On) is leveraged by A5 and A1 – this is a shared service rather than part of one application. Similarly, an **Enterprise Integration Bus or API Gateway** is a shared component through which these apps communicate. We highlight these as part of the architecture (often under Technology Architecture, but relevant here for application interactions).
+  
+  **Reuse and Rationalization Opportunities:** In designing the components, we intentionally looked for reuse:
+  
+  * Wherever a capability existed in a stable product, we chose to reuse rather than reinvent (e.g., using the SaaS CRM’s case management for customer support instead of writing a new support module).
+  * We identified functional redundancies in the current state and addressed them. For instance, previously both the CRM and order system stored customer addresses separately; in the future, **only the CRM (A1) will master customer data**, and other components will reference it. This consolidation of customer data to a single application is a prime rationalization example (reducing data redundancy and ensuring one source of truth). Similarly, product info was scattered; now one service holds it.
+  * We also reduce overlapping tools: if the ERP’s billing covers invoicing, we won’t procure a separate invoicing tool – avoiding duplicate software for the same function. If the SaaS CRM offers a mobile app out-of-the-box, we use it for internal users instead of building a custom mobile interface.
+  * Some new components can be shared beyond this project: e.g., the **Product Catalog Service** could be used by the e-commerce website or by a retail POS system in the future, not just the portal – making it a reusable enterprise service. The architecture thus not only solves the immediate needs but contributes to a **rationalized application portfolio** where each application has a clear purpose and is leveraged broadly.
+  
+  In conclusion, the Application Architecture is structured into distinct components aligned with business functions. We’ve chosen the right type of solution for each (build or buy) based on strategic fit and reuse potential. By breaking applications into services/modules, we improve maintainability and scalability – each component can evolve on its own. And by eliminating redundant systems and consolidating capabilities, we simplify the application landscape and reduce costs over time. Each component described will be designed and implemented in accordance with these principles, ensuring a clean, service-oriented architecture.
+  
+  ### UI/UX Design Specification
+  
+  <Purpose>
+  
+  This section defines the user‑interface (UI) and user‑experience (UX) approach for all applications in scope. It ensures that every screen, workflow, and interaction:  
+  
+  * Aligns with business goals by enabling users (employees, customers, partners) to complete tasks efficiently and with satisfaction.
+  * Reinforces the enterprise brand through a consistent visual language, tone of voice, and interaction style across web, mobile, and desktop channels.
+  * Meets accessibility, usability, and responsiveness standards so that all users—including those with disabilities—can successfully leverage the solution on any device or assistive technology.
+  * Integrates seamlessly with the overall Application Architecture by specifying UX patterns and component libraries that can be reused across micro‑front‑ends, portals, and native applications, thereby reducing design debt and accelerating development.
+  
+  * Business alignment – Screens and workflows help users (employees, customers, field technicians, partners) complete tasks quickly and accurately.
+  * Brand consistency – All channels share one visual language, tone of voice, and interaction style.
+  * Accessibility & inclusivity – Solutions conform to at least WCAG 2.2 AA so that people of all abilities and devices can succeed.
+  * Reuse & efficiency – Shared design‑system components and interaction patterns reduce design / code debt across micro‑front‑ends, native apps, and portals.
+  * Performance & quality – Clear budgets and usability KPIs drive lightweight, responsive, and continuously improved experiences.
+  
+  <Instructions>
+  
+  1. **Reference Personas & Journeys** – Summarize key user personas (e.g., “Customer Alice,” “Operations Bob”) and the critical journeys each application must support. Map every major UI flow to a business capability or service described earlier.  One‑page persona cards; end‑to‑end journey maps	Map each major UI flow to a business capability or service.
+  2. **Reference Design Principles** - Up‑front principles (e.g., mobile‑first, glove‑friendly controls, minimal data entry)	Principles guide all later decisions.
+  3. **Specify Design System Components** – Identify the design system (e.g., internal Design System X, Material 3, Carbon) and list the atomic components, templates, and micro‑front‑end shells to be reused. Link to the component repository and usage guidelines.  
+  4. **Reference Visual & Interaction Standards** - Color palette, typography, spacing, iconography; navigation, input controls, error handling, data‑viz, offline banners	Cite corporate style guide; document break‑points and responsive grid.
+  5. **Define Interaction Patterns** – Document standard navigation (global header, side‑rail, breadcrumb), input controls, error handling, data‑visualization patterns, and responsive break‑points. Explain how these patterns support the principles of clarity, efficiency, and forgiveness.  
+  6. **Accessibility & Inclusivity** – State conformance targets (WCAG 2.2 AA minimum) and describe how color contrast, keyboard navigation, focus management, ARIA roles, and alternative text will be implemented and verified.  
+  7. **Usability Metrics & Validation** – Establish KPIs such as task‑completion rate, System Usability Scale (SUS) score, Net Promoter Score (NPS), and time‑on‑task. Outline the cadence for usability testing (prototype tests, A/B experiments, post‑launch surveys) and the feedback loop to product backlogs.  
+  8. **Performance & Responsiveness** – Define UI performance budgets (e.g., 100 ms input latency, 2 s Largest Contentful Paint on 3G) and responsive behavior across break‑points (mobile‑first, fluid grids).  
+  9. **Internationalization & Localization** – Describe how text, date/time, number formats, and right‑to‑left layouts will be externalized and managed to support future languages and regions.  
+  10. **Artifact Handoff & Governance** – Detail the toolchain (Figma/Sketch ↔ Storybook ↔ Git) and the review gates (Design Critique, Accessibility Audit, UX Sign‑off) required before a UI is considered “development‑ready.”
+  
+  <Example>
+  
+  * The **Customer Self‑Service Portal (A5)** will adopt the company’s **“Nimbus” design system**:  
+  
+  | **Aspect**                 | **Application Example**                                                                                                                                                                                                                                                                                                                 |
+  |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | **Consistent Look & Feel** | Global header with brand logo, search, and profile dropdown; left‑hand navigation collapsible at <768 px.                                                                                                                                                                                                                               |
+  | **Design Principles**      | Field‑friendly: all touch targets ≥ 44 × 44 px; primary buttons left‑aligned for one‑handed thumb use.                                                                                                                                                                                                                                  |
+  | **Visual Standards**       | Primary action color Blue Fire #00A9E0; body text 16 pt; icons from internal set.                                                                                                                                                                                                                                                       |
+  | **Reusable Components**    | “Nimbus Button,” “Nimbus Data‑Table,” and “Swipe‑to‑complete” pattern published in Storybook.                                                                                                                                                                                                                                           |
+  | **Accessibility**          | All static text ≥ 4.5 : 1 contrast; modal dialogs trap focus; voice‑over labels on every icon. Every form element auto‑receives ARIA labels; color palette has been pre‑tested for 4.5:1 contrast; modal dialogs trap focus until dismissed                                                                                             |
+  | **Responsive Pattern**     | Portal catalog: 4‑column (desktop), 2‑column (tablet), 1‑column (mobile) with src‑set WebP fallback.                                                                                                                                                                                                                                    |
+  | **Performance Budget**     | Largest Contentful Paint < 1.8 s (3 G); bundle ≤ 250 KB.                                                                                                                                                                                                                                                                                |
+  | **Usability Validation**   | Sprint‑3 usability test (8 users) → SUS 88; multi‑step checkout merged into one screen, reducing median task time from 2 min 45 s → 1 min 30 s. age weight capped at 250 KB (gzipped) per route; lazy‑load non‑critical images. Largest Contentful Paint is consistently under 1.8 s on throttled 3G per Lighthouse CI in the pipeline. |
+  | **KPIs (snapshot)**        | Task completion ≥ 95 %; first‑time success ≥ 90 %; work‑order time < 3 min; SUS ≥ 75; offline‑sync success ≥ 99 %.                                                                                                                                                                                                                      |
+  | **Governance**.            | A pull‑request adding a new UI pattern must include a link to the updated Figma frame, accessibility checklist, and automated visual‑regression screenshots before merge.                                                                                                                                                               |
+  
+  <Prerequisites>  
+  
+  * **Approved Personas, Journey Maps, and Service Blueprints** from Business Architecture.  
+  * **Enterprise Brand & Style Guide** (logos, typography, color tokens) from Corporate Style Guide.  
+  * **Established Design System or Component Library** with versioning and contribution workflow from Figma and Knapsack.  
+  * **Accessibility Policy & Target Conformance Level** endorsed by Ethics & Compliance.  
+  * **Front‑end Technology Stack Decision** (React + TypeScript, Angular, Flutter, etc.) and corresponding coding standards from Technology Domain Architecture Team.  
+  * **Tooling Set Up:** Collaboration (Figma), component documentation (Storybook), automated accessibility testing (axe‑core, pa11y), performance monitoring (Lighthouse CI, Web Vitals).  
+  * **Stakeholder Alignment** on UX success metrics and governance gates (Design Review Board schedule, gating criteria).
+  * **Device/environment constraints** (sunlight readability, glove use, offline mode, etc.).
+  * **Stakeholder agreement** on UX success metrics and design governance gates.
+  
+  <Standards & Best Practices>
+  
+  * Accessibility: WCAG 2.2 AA, ARIA 1.2, Section 508 (where applicable).
+  * Usability & Human‑Centered Design: ISO 9241‑210, Nielsen‑Norman Heuristics, cognitive load minimization, Hick’s Law, Fitts’s Law.
+  * Design Tokens & System: Use scalable design tokens (color, spacing, typography) stored in a single source and synced to code via CI.
+  * Responsive & Mobile‑First: CSS Flexbox/Grid with min‑width break‑point strategy, fluid typography, touch‑target ≥ 44 px.
+  * Performance: Core Web Vitals thresholds (LCP ≤ 2.5 s, CLS ≤ 0.1, INP ≤ 200 ms); lazy‑load, tree‑shaking, HTTP/2 multiplexing, image compression (AVIF/WebP).
+  * Security: OWASP Secure Design Principles for front‑end (e.g., encode output, enforce CSP, anti‑XSS libraries).
+  * Internationalization: Unicode UTF‑8 throughout, externalized resource bundles, plurals handling, Bidirectional I18N support.
+  * Design Ops & Governance: Version‑controlled design files, automated visual‑regression testing (Chromatic/BackstopJS), linting for a11y rules in CI, and quarterly UX health audits.
+  * Documentation & Handoff: OpenAPI/Swagger for any UX‑facing APIs, zero‑handoff design‑to‑code workflows (e.g., Figma → CSS/React code snippets), and living style‑guide portals updated with each CI build.
+  
+  ### Current State Architecture
+  
+  <Purpose>
+  To document the as-is application environment, including existing systems, their purposes, capabilities, and known issues or constraints. This baseline allows informed gap analysis and future-state planning.  Please indicate if these are Architectural Building Blocks (ABB) or Solution Building Blocks (SBB) by tagging them.
+  
+  <Instructions>
+  1. **Current State: Inventory of Applications:** List current applications supporting the solution and what business functions they are used for in the solution.  Please indicate if these are Architectural Building Blocks (ABB) or Solution Building Blocks (SBB) by tagging them.
+  2. **Categorize by Capability:** Group applications by business capability or functional domain.
+  3. **Highlight Technical Debt:** Note systems that have technical debt from problem management, any approaching end-of-life, legacy constraints, or integration bottlenecks.
+  
+  <Example>
+  In the current state, the organization’s application landscape consists of several siloed systems that collectively support the business, but with overlaps and inefficiencies. Below is an **inventory of the key existing applications** relevant to the solution and the business capabilities they serve:
+  
+  * **Customer Management (CRM Legacy System):** A legacy on-premises CRM (Customer Relationship Management) system is used to store customer contact information and interaction history. It supports the *Manage Customers* capability by allowing customer service reps to look up customer records. However, this CRM is over 10 years old and difficult to maintain. It has limited integration capabilities (no modern API, only nightly batch exports), leading to data being siloed. There is known **technical debt**: duplicate customer entries often exist because the CRM isn’t integrated with the order system, and the technology stack (built on an outdated platform) is nearing end-of-life support. Maintenance is costly and skilled support is hard to find. This reflects a common situation where legacy systems hinder efficiency – in fact, 88% of businesses report being hindered by legacy software, which also consumes a large portion of IT budgets.
+  * **Order Processing System:** A homegrown Order Management application is used by Order Clerks to enter and track customer orders (*Process Orders* capability). It is a monolithic client-server app running on an internal server. While it has basic functionality for order entry and status tracking, it lacks real-time inventory visibility or modern user interface features. **Integration constraints:** It does not automatically communicate with the CRM or billing systems – clerks manually re-enter customer information from the CRM into the order system, which is error-prone. The order system also produces flat files that are sent to the warehouse system every night (batch integration). This point-to-point, batch integration is a bottleneck and prevents real-time updates. Such data **silos** and nightly syncs are classic symptoms of legacy integration issues. The system also has scaling issues (it can handle current volume but would not perform well if order volume doubled, due to a tightly coupled design and an aging infrastructure).
+  * **Billing/Invoicing System:** A module within the legacy ERP is responsible for invoicing and financial record-keeping (*Generate Invoices* capability). It’s a COTS module (part of a decades-old ERP system) that the Billing Analysts use to issue invoices once they get order information. Currently, the integration between the Order system and this billing module is **manual** – billing staff receive an email or file of fulfilled orders and then input them into the ERP for invoicing. This introduces delays and opportunities for error. The ERP module itself is robust in accounting terms but is **approaching end-of-support** from the vendor in the next 2 years, raising risks if not updated or replaced. There’s technical debt in the form of outdated report generation tools and a lack of API – it was not built for easy integration. Custom scripts have been written to extract data for finance, which are hard to maintain.
+  * **Product Catalog Database:** The Product Management team currently maintains product information in a combination of spreadsheets and a simple database (*Maintain Product Catalog* capability). There is no dedicated product catalog application; instead, the **product data** (descriptions, pricing, stock levels) is stored in a Microsoft Access database and several Excel files. The **constraints here** include data inconsistency (multiple versions of product data), lack of accessibility (only the Product Manager can update the spreadsheets), and no direct integration with the order system or website. This means, for example, the Order Clerks manually refer to printed price lists for product details, and there have been incidents of orders being taken for obsolete products due to lag in updating these files. This setup represents significant technical debt and a **lack of a single source of truth** for product information.
+  
+  **Categorization by Business Capability:** For clarity, the current applications can be grouped by the primary capability they support:
+  
+  * *Sales & Customer Service:* **CRM System** – supports sales reps and customer service (customer info, contacts, leads).
+  * *Order Fulfillment:* **Order Management System** – supports order entry and status tracking.
+  * *Finance:* **Billing (ERP Module)** – supports invoicing and financial posting.
+  * *Product Management:* **Product Catalog (ad hoc DB/Spreadsheets)** – supports product data maintenance.
+  
+  Each of these existing systems is relatively isolated, which leads to **pain points**: data duplication, inconsistent information between systems, and inefficient processes. For example, customer address changes are updated in the CRM but not automatically propagated to the order system or billing system, causing mismatched records. These gaps underscore the need for a more integrated future state.
+  
+  **Technical Debt & Constraints:** Several of the current systems carry technical debt and constraints that limit the business:
+  
+  * The **legacy CRM and Order systems** use outdated technology stacks that are costly to enhance. They lack modern API capabilities, making integration very challenging (any new integration requires building custom connectors or doing batch file transfers). This is a common scenario – indeed, **61% of businesses find integrating new applications with legacy systems to be one of their top challenges**. This means any improvement or new introduction (like a customer portal) faces obstacles in connecting with these old systems.
+  * **Performance and scalability issues** are present in the order system – as order volume grows or if more users need concurrent access (for example, if we opened it to customers directly, which currently we cannot), the system would likely not keep up. The infrastructure is not cloud-scalable and would require significant investment to upgrade.
+  * **Manual processes and workarounds:** The lack of integration has led to several manual workflows (re-entering data, emailing spreadsheets). These are error-prone and slow down operations. For instance, billing being a manual step delays revenue recognition and provides no real-time payment status back to the order system or CRM.
+  * **End-of-Life risk:** The ERP billing module’s vendor support window is closing, which is a risk. If the vendor stops releasing patches, the company could be exposed to security or reliability issues with no fixes. Planning for its replacement or upgrade is imperative.
+  * **Security and compliance gaps:** The current state also has potential compliance issues; for example, customer data in the CRM and spreadsheets may not meet modern security standards (the CRM database might not be encrypted, and spreadsheets with sensitive product cost info may not be access-controlled). Also, having customer data spread in multiple places (CRM, order system, possibly billing records) makes it hard to ensure consistent privacy controls (important for regulations like GDPR/CCPA).
+  
+  In summary, the as-is application architecture is functional but fragmented. It shows **duplication of data**, **siloed functions**, and **aging technology** that collectively hinder business agility and efficiency. This baseline highlights the specific areas the future architecture needs to improve: unify customer and product data, automate integrations, eliminate redundant data entry, and replace or upgrade technologies that pose risk. The following sections will use this current state assessment as a foundation for defining the target application architecture and identifying the gaps to address.
+  
+  <Prerequisites>
+  
+  * **Current State Documentation:** A thorough inventory (list) of all existing applications, including their versions, technologies, and ownership, should be compiled. Prerequisite deliverables could include an *Application Portfolio Catalog* and *Application/Function Matrix* mapping existing systems to business functions. This provides the raw data for analysis.
+  * **Known Issues List:** A compilation of known pain points, incidents, or problem tickets related to current applications is needed. This might come from Problem Management records or interviews with users. For example, knowing that “System X goes down weekly” or “Integration between System Y and Z fails often” is essential to highlight in the current state.
+  * **Business Process Maps:** Having current business process flows (from the Business Architecture phase) helps pinpoint where each application fits and where manual handoffs occur. This contextual information is needed to fully describe current application usage and issues in business terms.
+  * **Technology Assessments:** Any recent assessments or health checks on the existing systems (e.g. a vendor saying the ERP is out of support, or a security audit on the CRM) should be gathered. These provide evidence and quantitative support for statements about technical debt, security gaps, or performance problems.
+  * **Stakeholder Input:** Input from users and IT support staff who work with these systems daily is a prerequisite to ensure the current state description is accurate. Workshops or interviews should be conducted to capture unwritten workarounds or issues. (For instance, the billing clerks might reveal how they actually use Excel to complement the ERP – such insights are critical to document.)
+  
+  <Standards>
+  
+  * **Documentation Standard:** The current state is documented following the standard format (e.g. using ArchiMate or UML diagrams to depict the interactions among current systems). All current-state diagrams and matrices follow the enterprise’s modeling standards. For example, a *System Landscape Diagram* (an ArchiMate Application Cooperation view) may be used to visualize all existing applications and interfaces.
+  * **Severity/Impact Notation:** The organization may have a standard way to indicate technical debt or risk (such as a heat map or rating). We will apply that standard – for instance, marking high-risk systems in red or noting the “Critical” technical debt items in a table. This aligns with IT risk management standards in the company.
+  * **Reference to Baseline Architecture Definition:** This section will conform to TOGAF guidelines for Baseline Description. According to TOGAF, the baseline Application Architecture should be described using relevant artifacts like the Application Portfolio Catalog and Application Communication diagrams. We ensure the current state write-up can be traced back to those artifact formats for consistency.
+  * **Terminology:** We use consistent terminology (as defined in the Architecture Glossary). For example, whether we call something a “system”, “application” or “service” is standardized to avoid confusion. If the enterprise defines “Application” as software that performs business functions (per TOGAF definitions), we use that consistently here.
+  * **Stakeholder Review:** Before finalizing, the current state description will be reviewed by key stakeholders (e.g. the Application Portfolio Manager or owners of each system) as per the governance process. This ensures accuracy and adherence to the truth on the ground. Their sign-off is part of the quality standard for baseline documentation.
+  
+  ### Application Gap Analysis Matrix
+  
+  <Purpose>
+  
+  Provide a **structured, traceable view of the delta between today’s application landscape (Baseline Architecture Building Blocks – ABBs) and the target architecture (Solution Building Blocks – SBBs)**.
+  The matrix is used to
+  
+  1. **Expose functional, technical, security, and compliance shortfalls** that block a capability from meeting current or projected business needs.
+  2. **Prioritise remediation or investment options** by linking each gap to business value, risk, and cost.
+  3. **Feed the transition roadmap** with clearly scoped work packages, ensuring alignment with enterprise strategy, portfolio budgeting, and risk governance.
+  
+  <Instructions>
+  
+  1. **Confirm Scope** : Select the business capabilities, value streams, or products within the engagement scope (e.g., “Order‑to‑Cash”). Ensure the Capability Map version is frozen for this analysis cycle.                                                                                                                                                                                                                                                                                                                    |
+  2. **Gather Baseline Data** : Pull the current ABB list from the *Application Portfolio Catalog* and validate with system owners; harvest current KPIs, technical debt items, known constraints, and service levels (ITIL 4 SLAs/OLAs).                                                                                                                                                                                                                                                                                                 |
+  3. **Identify Gap Types** : For each capability/application pairing, assess gaps across:<br>• **Functional** (missing features, workflow inefficiencies)<br>• **Data & Integration** (real‑time needs, data quality)<br>• **Non‑Functional** (ISO/IEC 25010 quality attributes such as performance, availability, usability)<br>• **Security & Compliance** (ISO/IEC 27001 controls, privacy requirements)<br>• **Technical Debt & Obsolescence** (unsupported versions, EoL tech list)<br>Record gaps in plain, measurable language. |
+  4. **Define Target SBBs** : Propose one or more SBBs that close each gap. Map every SBB to at least one standard pattern from the Technology Reference Model (e.g., “Cloud SaaS CRM”, “Event‑Driven Order Service”).                                                                                                                                                                                                                                                                                                                  |
+  5. **Assess Severity & Priority** : Rate each gap’s business impact and risk likelihood (e.g., High / Med / Low) and assign an urgency class (NIST CSF P1–P4 or custom).                                                                                                                                                                                                                                                                                                                                                                      |
+  6. **Validate with Stakeholders** : Review the draft matrix with Business Capability Owners, Domain Architects, Security, and FinOps. Capture approvals or dissenting comments.                                                                                                                                                                                                                                                                                                                                                               |
+  7. **Publish & Maintain** : Store the signed‑off matrix in the EA repository; update at each major project milestone or quarterly architecture review.                                                                                                                                                                                                                                                                                                                                                                                |
+  
+  *Formatting rules*
+  
+  * Use one row per **Capability** (not per application) to keep the view business‑centred.
+  * Reference applications by unique **ID** from the Application Portfolio Catalog.
+  * Keep descriptions ≤ 120 characters; deeper detail belongs in supporting worksheets.
+  * Colour‑code the “Gaps Identified” cell by severity if the template allows conditional formatting.
+  
+  <Prerequisites>
+  
+  1. **Latest Capability Map** (approved by Business Architecture).
+  2. **Current Application Portfolio Catalog** with lifecycle status and owners.
+  3. **Architecture Principles & Policies** (TOGAF/IT4IT).
+  4. **Quality Attribute Baselines** (ISO/IEC 25010 metrics).
+  5. **Risk Register & Control Library** (aligned to NIST CSF and ISO/IEC 27001).
+  6. **Technology Reference Model & Approved Patterns**.
+  7. **Business Strategy & Roadmap** documents to anchor target‑state assumptions.
+  8. **EoL Technology List** issued by Infrastructure & Security Governance.
+  
+  <Standards>
+  
+  International and de‑facto standards that guide the creation and maintenance of an Application Gap Analysis Matrix:
+  
+  * **The Open Group TOGAF® Standard, 10th Edition (2022)** – ADM Phases B–D artefacts
+  * **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** – Strategy‑to‑Portfolio & Requirement‑to‑Deploy value streams
+  * **ISO/IEC 42010:2011** – Architecture Description
+  * **ISO/IEC 25010:2023** – System & Software Quality Models
+  * **ISO/IEC 12207:2017** – Software Life‑Cycle Processes
+  * **ISO/IEC 19770‑1:2017** – IT Asset Management (for accurate ABB baselining)
+  * **ISO/IEC 27001:2022** – Information Security Management (for security gap criteria)
+  * **NIST Cybersecurity Framework (CSF) 2.0 (2024)** – Risk & control alignment
+  * **NIST SP 800‑53 Rev. 5 (2020)** – Security & Privacy Control Catalog
+  * **COBIT® 2019** – Governance & Management Objectives (APO, BAI, DSS, MEA)
+  * **ITIL® 4 (2019)** – Service Value Chain & Continual Improvement practices
+  * **ISO/IEC 20000‑1:2018** – IT Service Management requirements (service gaps)
+  * **ISO 55000:2014** – Asset Management principles (to support lifecycle decisions)
+  
+  ### Future State Architecture
+  
+  <Purpose>
+  Describes the target application landscape, aligning with strategic objectives such as digital transformation, automation, and improved integration. Emphasizes agility, composability, and business-aligned platforms.  Please indicate if these are Architectural Building Blocks (ABB) or Solution Building Blocks (SBB) by tagging them.
+  
+  <Instructions>
+  1. **Describe Target Outcomes:** Define what the future application ecosystem should enable (e.g., real-time analytics, self-service portals, composable services).  Please indicate if these are Architectural Building Blocks (ABB) or Solution Building Blocks (SBB) by tagging them.
+  2. **Reference Architecture Patterns:** Align proposed applications with enterprise-wide reference models and target states (e.g., microservices, event-driven, cloud-native).
+  3. **Showcase Interoperability:** Highlight intended application-to-application integration and shared services.
+  4. **Future State: Inventory of Applications:** List the future state applications supporting the solution and what business functions they will be used for in the solution.
+  5. **Categorize by Capability:** Group applications by business capability or functional domain.
+  
+  <Example>
+  The **target state application architecture** is designed to be **integrated, flexible, and customer-centric**. It will eliminate the silos of the current environment and provide a seamless platform for business operations and customer interactions. Key outcomes of the future state include:
+  
+  * **Real-Time Data & Integration:** All core applications will be connected in real-time, allowing, for instance, a customer updating their address in the portal/CRM to immediately reflect in order and billing systems. Event-driven updates and APIs replace overnight batch jobs, enabling up-to-the-minute information flow (e.g., an order placed triggers instant inventory allocation and an invoice generation event).
+  * **Self-Service & Omnichannel Enablement:** A new **Customer Self-Service Portal** will empower customers to place orders, track status, manage their profile, and access invoices without needing to call support. This portal (and any future mobile app) will use the same underlying services, ensuring consistent experience across channels.
+  * **Composability & Agility:** The architecture uses a **microservices** pattern for new development, meaning each core function is delivered by a small, independent service (order service, product service, etc.). This composability allows the business to introduce new capabilities or updates (like adding a recommendation service or a new payment method) by adding or modifying individual services rather than monolithic system overhauls. The microservices communicate through standard APIs and event messages, which facilitates flexibility in deployment and scaling.
+  * **360° View of Customer and Operations:** By integrating the CRM, Order, Billing, and Product systems around a shared data model, the future state provides a unified, single source of truth. Analytics and reporting will draw from this integrated data, enabling real-time dashboards (e.g., up-to-date order status, customer purchase history) and better decision-making.
+  * **Improved Scalability & Reliability:** The target applications are largely cloud-native, which means they can automatically scale up or down based on demand. For example, if order volume spikes during a sale, the Order Management service can instantiate additional instances in the cloud to handle the load. High availability is built-in: if one instance fails, another takes over, minimizing downtime. This resiliency is a big improvement over the single-server legacy systems.
+  * **Enhanced Security & Compliance:** The future state also strengthens security – e.g., unified authentication via an Identity Provider for portal and internal systems, encryption of data in transit between services, and audit logging of all cross-application interactions. Compliance is easier since data is consolidated and controls can be uniformly applied (for instance, one place to execute a “right to be forgotten” request from a customer across all systems).
+  
+  To achieve these outcomes, the future architecture aligns with modern **reference patterns**. We are leveraging a **cloud-native, service-oriented architecture**: microservices and APIs form the backbone, and an event-driven approach handles cross-service communication for decoupling. This approach is in line with enterprise target architecture guidelines favoring loosely coupled systems that are easier to maintain and evolve. In particular, event-driven architecture (EDA) will be used for certain processes – for example, an Order Placed event will asynchronously trigger inventory updates and billing. This pattern *promotes loose coupling*, making it easier to scale and update components independently. Also, the solution respects the **Enterprise Reference Architecture** by ensuring each new application fits into the defined layers (e.g., presentation vs. business logic vs. data) and interacts via the enterprise integration backbone.
+  
+  The following table lists the **future-state applications** and key details, grouped by capability domain:
+  
+  | Application ID | Application Name                 | Capability                         | Technical Debt (Future) | Reference Architecture Pattern Used        | Integrated With (Application IDs)             |
+  |----------------|----------------------------------|------------------------------------|-------------------------|--------------------------------------------|-----------------------------------------------|
+  | **A1**         | **Cloud CRM Platform**           | Customer Management                | Very Low (new SaaS)     | SaaS CRM (Cloud-based, modular)            | Integrates with A2, A5 (via API)              |
+  | **A2**         | **Order Management Service**     | Order Processing                   | Low (new build)         | Microservice (Cloud-native, containerized) | Integrates with A1, A3, A4, A5 (API & Events) |
+  | **A3**         | **Billing System Module**        | Billing/Finance                    | Moderate (some legacy)  | COTS ERP Module (exposed via API)          | Integrates with A2, A1 (via API)              |
+  | **A4**         | **Product Catalog Service**      | Product Management                 | Low (new build)         | Custom Microservice (Cloud-native)         | Integrates with A2, A5 (via API)              |
+  | **A5**         | **Customer Self-Service Portal** | Multi-capability (Sales & Support) | Low (new)               | Web Application (Cloud web app)            | Integrates with A1, A2, A4 (via APIs)         |
+  
+  **Descriptions:**
+  
+  * **A1 Cloud CRM Platform:** This is a modern Customer Relationship Management system (likely a SaaS product like Salesforce or a similar cloud CRM) that replaces the old CRM. It supports *Customer Management* capabilities – contact management, lead tracking, customer service case management, etc. Being SaaS, it has minimal technical debt going forward (the vendor maintains it). It adheres to a modular, upgrade-friendly pattern and comes with built-in APIs. **Integrations:** A1 will integrate with A2 (Order Management) to share customer info (e.g., when an order is created, it pulls customer details from A1). It also connects to A5 (Portal) to allow customers to view/update their profile, which actually updates in the CRM. A1, as SaaS, may also integrate with corporate identity services for SSO and can be extended via its API for any future needs.
+  * **A2 Order Management Service:** This is a custom-built order processing application, implemented as a set of microservices. It covers the *Process Orders* capability – from order entry and validation to status tracking and fulfillment coordination. Being cloud-native, it’s containerized and can scale horizontally. It has no legacy baggage (built fresh) so technical debt is initially low. We use domain-driven design: e.g., an **Order Service**, **Inventory Service** (if needed to check stock), etc., that together form the Order Management suite. **Integrations:** A2 is central, integrating with A1 (for customer data lookups and to attach orders to customer accounts), with A3 (to send billing requests or receive payment confirmations), with A4 (to fetch product details like price and availability during order entry), and with A5 (the portal calls A2’s APIs to create orders or query order status). Integration patterns include synchronous REST calls for immediate actions (e.g. portal to order service) and asynchronous events for background processes (e.g. A2 emits an “Order Placed” event that A3 listens to for invoicing).
+  * **A3 Billing System Module:** In the target state, the Billing function might still leverage a module of an ERP or a specialized finance system, but it will be **encapsulated with APIs** so it behaves like a service. For example, we might keep the existing ERP’s AR (Accounts Receivable) module but modernize access via an API layer or replace it with a newer SaaS finance system. Technical debt here is moderate – if we keep the ERP, we mitigate its legacy issues by only exposing needed functionality through services (reducing direct user interaction with the old interface). Over time, we plan to phase out any remaining legacy aspects. **Integrations:** A3 will receive order charge events from A2 to generate invoices (via an API call or message). It will fetch customer bill-to information from A1 as needed (or A2 might pass it along). If payments are processed through an external gateway, A3 also integrates with that (though that might be considered part of A2’s process). A1 (CRM) might also query A3 for billing status or outstanding invoices when customer service reps are viewing a customer – hence A3 provides an API for such queries.
+  * **A4 Product Catalog Service:** This is a new centralized Product Information Management component fulfilling the *Maintain Product Catalog* capability. It is a custom microservice (or set of services) that stores all product data (descriptions, pricing, stock levels, etc.) and provides that data via a service API. This eliminates the spreadsheets/Access DB. **Technical debt** is low as it’s built with modern tech (and possibly hosted on cloud DB and service). It might incorporate a small database optimized for read queries since many components need product info. **Integrations:** A4 provides APIs that A2 (Order) uses in real-time (e.g., to get price or check stock when an order is placed). It also feeds A5 (Portal) – for example, the portal’s product catalog page or product search will call A4 to get up-to-date product details. If needed, A1 (CRM) could even use A4’s data to, say, fetch product names when preparing a quote. Additionally, A4 could push updates (events) if product info changes (like price updates) so that other services cache or refresh their data.
+  * **A5 Customer Self-Service Portal:** This is a new web application (and potentially mobile app in the future) that provides an integrated user interface to customers. It’s essentially the presentation layer combining functions from A1, A2, and A4 to deliver capabilities like account management, product browsing, ordering, and checking order status (*multi-capability* across sales and support). Technical debt is low due to it being a new development using modern web frameworks. It will be hosted in the cloud for scalability and availability. **Integrations:** The portal does not have its own heavy logic; it relies on APIs from other apps. For instance, when a customer logs in, the portal authenticates via an identity service and then pulls their profile from A1 (CRM). When they browse products, it calls A4. When they place an order or view order history, it interacts with A2. This architecture ensures that the portal remains a thin layer and all business rules reside in the underlying services. The portal might also consume composite APIs (if we create any aggregator endpoints) to simplify its interactions.
+  
+  This future state set of applications is **categorized by capability** similarly to current state, but with one key application per capability (eliminating duplication):
+  
+  * *Customer Management:* Cloud CRM (A1) – authoritative system for customer data and interactions.
+  * *Order Fulfillment:* Order Management Microservice suite (A2) – handles order lifecycle end-to-end.
+  * *Finance:* Billing/Finance Module (A3) – manages invoicing and financial records, accessed via API.
+  * *Product Management:* Product Catalog Service (A4) – single source for product information.
+  * *Customer Experience:* Customer Portal (A5) – unified access point for customers, tying together outputs of other apps.
+  
+  **Interoperability in the Future State:** All these applications are designed to be interoperable through a unified integration architecture (detailed in the next section). Each communicates via well-defined interfaces; for example, they share a common data model for key entities (Customer, Order, Product) so that when data flows from one app to another, minimal translation is needed. Shared services (like an enterprise **Integration Middleware** or API Gateway) will ensure messages and API calls flow smoothly between them. The result is a **cohesive application ecosystem** supporting digital business processes (e.g., an online order triggers automated workflows across multiple systems without human intervention).
+  
+  In essence, the future state architecture provides the technological foundation for a transformed business operation: customers can self-serve, employees have up-to-date information, and the business can rapidly introduce new features. The design deliberately adheres to modern architecture patterns (microservices, cloud, events) which are aligned with the enterprise’s target architecture vision. This ensures that the solution not only meets today’s requirements but is built to accommodate tomorrow’s needs with minimal friction.
+  
+  <Prerequisites>
+  * **Enterprise Target Architecture & Roadmap:** Before finalizing the future state, there should be an agreed-upon target architecture vision at the enterprise or program level. This includes target principles (like those we adhered to) and possibly a technology roadmap that indicates preferred platforms (e.g., which cloud provider, which CRM product). Our future state must be developed within that context.
+  * **Gap Analysis (Current vs Target):** A gap assessment should be done identifying what needs to change in moving from current to target. This includes mapping which current systems will be retired or replaced by which future systems (for example, mapping Legacy CRM -> Cloud CRM, etc.). This prerequisite analysis ensures the future state addresses all current state gaps and that nothing essential is lost in transition.
+  * **Investment Approval:** Implementation of the future state often requires significant investment (new software licenses, development effort). A business case and funding need to be in place. We assume the organization’s portfolio governance has approved the needed projects (e.g., acquiring a new CRM SaaS, developing the portal).
+  * **Data Migration Planning:** A plan for migrating data from current systems (customers, orders, products data) to the new systems is needed. Before finalizing the future state design, it’s prerequisite to consider how legacy data will populate the new applications (for instance, migrating all customer records from legacy CRM to the Cloud CRM, migrating product data from spreadsheets to the new catalog service).
+  * **Organizational Readiness:** The target architecture introduces new technologies and processes (like managing microservices, using a portal for customer interactions, etc.). It’s important that the organization (IT and end-users) is prepared. This may involve having trained developers for the new tech stack, change management for users (training customer service reps on the new CRM, etc.), and possibly new roles (like a product manager for the portal or a DevOps engineer for cloud deployments). Ensuring this readiness is a prerequisite to make the future state successful.
+  * **Security & Compliance Input:** Before locking in the target architecture, security and compliance teams should review the plans. They must specify requirements like data encryption standards, identity management integration, compliance checkpoints (for GDPR, PCI, etc.). Those inputs are prerequisites so that the architecture can be designed to meet them from the start rather than retrofitted.
+  
+  <Standards>
+  * **Reference Architecture Patterns:** The future design follows standard architecture patterns endorsed by the enterprise. For example, if the company has a reference for “Event-Driven Microservices Architecture”, we apply those patterns (using pub/sub for events, designing services around bounded contexts). We explicitly aligned with these patterns in our design narrative.
+  * **Technology Standards:** Specific technology choices comply with enterprise standards. If the standard tech stack is, say, Java/Spring Boot for microservices and Angular for front-ends, then A2 and A5 will be built using those (unless exceptions are approved). For SaaS like A1, we choose a vendor from the approved list. All cloud deployments adhere to the cloud governance standards (e.g., using the company’s AWS tenancy with standardized networking, monitoring, etc.).
+  * **Data Standards:** The data that flows through the future systems follows canonical data models (for instance, a standard Customer data schema used across apps). If the enterprise has a master data management standard or common data definitions (like what constitutes a “customer” or “product”), the future state implements those. We ensure that messages or APIs use these standard definitions, which improves integration.
+  * **Interface Standards:** All APIs and integration points in the future state will conform to defined standards – for example, RESTful API design guidelines (naming conventions, versioning, error handling) set by the enterprise architecture board. Also, any events published follow a standard schema (maybe defined in an enterprise Event Catalog). By following these, all services can understand each other’s communications more easily.
+  * **TOGAF Artifacts for Target State:** In documenting the future state, we use TOGAF-recommended artifacts such as an *Application Communication Diagram* (to illustrate all interactions among A1–A5 and external systems) and an *Application and User Location Diagram* if needed (to show where these apps are hosted and used). We also prepare matrices like a *System/Function matrix* to ensure coverage of business functions by future applications. Adhering to these standard artifacts ensures completeness and traceability of the architecture description.
+  * **Compliance Standards:** The design and documentation of the target architecture account for relevant regulatory standards (PCI-DSS for payment handling in orders, GDPR for personal data in CRM, etc.). For instance, as a standard, any system dealing with credit card info (if the portal or order service does) must comply with PCI-DSS – so we include tokenization and never store raw card numbers, etc., in our design. We also follow OWASP standards for web security on the portal. All such compliance considerations are part of our “definition of done” for the architecture design according to enterprise policy.
+  
+  By adhering to these standards, the future state architecture will not only meet its immediate goals but also fit smoothly into the broader enterprise IT environment and governance framework.
+  
+  ## Integration Architecture
+  
+  
+  ## Integration Architecture
+  
+  ### Application Communication Diagram
+  
+  <Purpose>
+  
+  Illustrates—in **one coherent view—the run‑time data and process flows between applications**, the boundaries they cross, and the integration patterns in use. The diagram is the definitive reference for architects, developers, risk owners, and operations teams when they assess change impact, security exposure, or performance constraints.
+  
+  <Instructions>
+  
+  1. **Define Viewpoint & Scope** : Choose an Integration‑ or Application‑centric viewpoint per ISO/IEC/IEEE 42010. Show only the applications, channels, and endpoints relevant to the project or capability in scope.                                                                                                                                                           |
+  2. **Select Modelling Notation** : Use an **internationally standardised notation** (ISO/IEC 19540 ArchiMate 3.2 *Application Collaboration View*, or ISO/IEC 19505 UML 2.5 *Component*/*Deployment* diagrams). Mermaid or C4 can be used for lightweight documentation, but the canonical model must exist in the EA repository.                                                |
+  3. **Represent Applications** : Label each application with its unique ID from the *Application Portfolio Catalog* (AP‑nnn). Group them in logical zones (Core, Edge, Third‑Party, Cloud, DMZ).                                                                                                                                                                               |
+  4. **Draw Flows** : One arrow per **logical interface**. Annotate with:<br>• **Pattern** (Sync Req/Resp, Async Event, Batch, File Drop)<br>• **Primary Protocol** (REST/HTTP, gRPC, MQTT, AMQP, SFTP, JDBC, etc.)<br>• **Key Payload** or process (e.g., “POST /order”, “CustomerCreated event”)<br>• **Direction** and **frequency** (real‑time, hourly, daily). |
+  5. **Indicate Quality & Security** : Where relevant, colour‑code or tag the flow for:<br>• **Criticality** (per ISO/IEC 20000 SLAs)<br>• **Data Classification** (ISO/IEC 27001)<br>• **Latency target** (e.g., <100 ms).                                                                                                                                                          |
+  6. **Show Boundaries** : Use dashed boxes or swim‑lanes to visualise trust zones, VPCs, or geographic regions (per ISO/IEC 27033‑3 network security architecture).                                                                                                                                                                                                     |
+  7. **Version & Trace** : Stamp the diagram with model version, date, and author. Maintain traceability to the Interface Catalog via interface IDs.                                                                                                                                                                                                                     |
+  8. **Validate & Publish** : Review with Domain Architects, Integration Platform team, and Cyber‑Security. Store the approved diagram in the EA tool; export a PNG/SVG for solution‑level documents.                                                                                                                                                                       |
+  
+  <Example>
+  **As Is Application Communications Diagram**
+  
+  ```mermaid
+  flowchart LR
+      subgraph Channel
+        EComm[E-Commerce Platform]
+      end
+      subgraph Core Systems
+        CRM[CRM System]
+        ERP[ERP System]
+        HR[HRMS]
+        DW[Data Warehouse]
+      end
+      EComm -->|New customer data| CRM
+      EComm -->|Online orders| ERP
+      CRM -->|Sales orders| ERP
+      ERP -->|Status updates| EComm
+      CRM -->|Customer data mart feed| DW
+      ERP -->|Sales & finance data| DW
+      HR -->|Employee data| DW
+  ```
+  **To Be Application Communications Diagram**
+  
+  ```mermaid
+  flowchart LR
+    Portal -->|POST Order| OrderService
+    OrderService -->|GET Customer| CRM
+    OrderService -->|Event| BillingService
+  ```
+  
+  <Prerequisites>
+  
+  1. **Updated Application Portfolio Catalog** (IDs, owners).
+  2. **List of Active Interfaces** from the Interface Catalog.
+  3. **Integration Principles & Patterns** adopted by the organisation.
+  4. **Data Classification Matrix** and **Trust‑Zone Definitions**.
+  5. **Current Network & Security Architecture** (zones, firewalls, gateways).
+  6. **SLA/SLO Baselines** for latency, throughput, availability.
+  7. **Technology Reference Model** indicating approved protocols and middleware.
+  
+  <Standards>
+  
+  * **ISO/IEC/IEEE 42010:2011** — Systems & Software Engineering — Architecture Description
+  * **ISO/IEC 19540‑1/‑2:2020** — ArchiMate® 3.2 Notation for Architecture Modelling
+  * **ISO/IEC 19505‑1/‑2:2012** — UML® 2.5 Infrastructure & Superstructure
+  * **The Open Group TOGAF® Standard, 10th Edition (2022)** — ADM Phase C (Data/Application) viewpoints
+  * **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** — Request‑to‑Fulfil value stream integration views
+  * **ISO/IEC 27033‑3:2020** — Network Security Architecture (segmentation and trust‑zones)
+  * **ISO/IEC 25010:2023** — Quality Model (interoperability, performance, security)
+  * **ISO/IEC 27001:2022** — Information Security Management (classification & control requirements)
+  
+  ### Interface Catalog
+  
+  <Purpose>
+  
+  A **comprehensive inventory of every logical interface between two applications or between an application and an external party**. The catalog supports impact analysis, capacity planning, contract management, audit, and risk assessments by detailing owners, protocols, payloads, SLAs, and security classifications.
+  
+  <Instructions>
+  
+  | Field                       | Mandatory? | Description & Allowed Values / Format                                                                                        |
+  |-----------------------------|------------|------------------------------------------------------------------------------------------------------------------------------|
+  | **Interface ID**            | Yes        | Prefix “INT” + zero‑padded number (e.g., INT‑042). Immutable once assigned.                                                  |
+  | **Source Application (ID)** | Yes        | Application ID from Portfolio Catalog.                                                                                       |
+  | **Target Application (ID)** | Yes        | Application ID or “EXT‑\<Partner>” for external entities.                                                                    |
+  | **Pattern**                 | Yes        | *Sync‑Request/Response*, *Async‑Event*, *Batch*, *File*, *Streaming*.                                                        |
+  | **Transport Protocol**      | Yes        | HTTP/1.1, HTTP/2, gRPC, AMQP 1.0, MQTT 3.1.1, SFTP, JDBC, etc. Must appear in the approved protocol list.                    |
+  | **Data Contract**           | Yes        | Reference to schema artefact (e.g., OpenAPI 3.1 YAML, AsyncAPI 2.6 YAML, XSD, Avro). Provide repository URI and version tag. |
+  | **Frequency / Trigger**     | Yes        | “Real‑time”, “Every 5 min”, “Nightly @ 00:30 UTC”, “On Event <name>”.                                                        |
+  | **Data Classification**     | Yes        | *Public*, *Internal*, *Confidential*, *Restricted* (per ISO/IEC 27001).                                                      |
+  | **SLA / SLO**               | Yes        | Availability, latency, throughput targets (aligned to ITIL 4 service metrics).                                               |
+  | **Error & Retry Policy**    | Yes        | Idempotency rules, exponential back‑off, dead‑letter queue, etc.                                                             |
+  | **Owning Team / Contact**   | Yes        | Single accountable team (email, Slack, PagerDuty).                                                                           |
+  | **Lifecycle Status**        | Yes        | *Designed*, *Implemented*, *Live*, *Deprecated*, *Retired*.                                                                  |
+  | **Last Reviewed**           | Yes        | ISO 8601 date when details were last validated.                                                                              |
+  
+  *Process*
+  
+  1. **Create a new entry** whenever a change request adds, modifies, or retires an interface.
+  2. **Peer‑review** each entry for completeness and compliance with approved patterns.
+  3. **Synchronise** with the CMDB and API Gateway catalogue through nightly ETL jobs.
+  4. **Audit** quarterly for SOX and ISO/IEC 27001 control effectiveness.
+  
+  <Example>
+  
+  | Interface ID | Source App      | Target App   | Pattern               | Protocol        | Data Contract            | Frequency               | Class.       | SLA (Avail / Latency) | Owner         | Status   |
+  |--------------|-----------------|--------------|-----------------------|-----------------|--------------------------|-------------------------|--------------|-----------------------|---------------|----------|
+  | INT‑001      | AP01 CRM        | AP03 ERP     | Sync‑Request/Response | REST/HTTP 1.1   | `crm‑order‑v2.yaml`      | Real‑time               | Internal     | 99.9 % / <200 ms      | Sales IT      | Live     |
+  | INT‑014      | AP02 E‑Commerce | EXT‑TaxSvc   | Async‑Event           | HTTPS + Webhook | `asyncapi‑tax‑v1.yaml`   | On Event `OrderCreated` | Confidential | 99.5 % / <1 s         | Digital IT    | Live     |
+  | INT‑027      | AP03 ERP        | DW01 Data WH | Batch                 | SFTP            | `erp‑dw‑sales‑2025.avsc` | Nightly 01:00           | Internal     | 99 % / N/A            | Data Platform | Live     |
+  | INT‑045      | AP05 HRMS       | AP03 ERP     | File                  | SFTP            | `hrms‑erp‑payroll‑xsd`   | Semi‑monthly            | Restricted   | 99.8 % / N/A          | HR IT         | Designed |
+  
+  <Prerequisites>
+  
+  1. **Approved Interface Naming & Versioning Policy** (OpenAPI/AsyncAPI or WSDL).
+  2. **Data Classification & Handling Policy** (ISO/IEC 27001 Annex A).
+  3. **Protocol & Pattern Allow‑List** within the Integration Platform Standards.
+  4. **Authoritative Application IDs** from the Application Portfolio Catalog.
+  5. **SLA/SLO Framework** aligned with ITIL 4 and ISO/IEC 20000‑1.
+  6. **Repository of Schemas & Contracts** (Git, Artefact Repo, API Gateway).
+  7. **Change & Release Management Process** (COBIT 2019 BAI06 / ITIL 4 Change Enablement).
+  
+  <Standards>
+  
+  * **ISO/IEC/IEEE 42010:2011** — Architecture Description (view & model definitions)
+  * **ISO/IEC 19770‑1:2017** — IT Asset Management (inventory discipline)
+  * **ISO/IEC 20000‑1:2018** — IT Service Management (SLA/OLA requirements)
+  * **ISO/IEC 27001:2022** — Information Security Management (data classification & controls)
+  * **ISO/IEC 27002:2022** — Security Controls guidance (Annex A mapping)
+  * **ISO/IEC 20922:2016** — MQTT (messaging protocol reference)
+  * **ISO 20022:2013** — Universal financial industry message scheme (where financial data is exchanged)
+  * **The Open Group TOGAF® Standard, 10th Edition (2022)** — Interface Catalog artefact (Phase C)
+  * **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** — Request‑to‑Fulfil data flows
+  * **OAS OpenAPI Specification 3.1 (2023)** — REST interface contract format
+  * **AsyncAPI Specification 2.6 (2024)** — Event‑driven and streaming interface contracts
+  * **W3C XML Schema 1.1 & WSDL 2.0** — SOAP/XML interface definition standards
+  * **JSON Schema (2020‑12)** — JSON data contract standard
+  * **ITIL® 4 (2019)** — Service Design & Transition practices
+  * **COBIT® 2019** — Governance & Management of Enterprise IT (BAI & DSS domains)
+  
+  ### Application Interaction Requirements & APIs
+  
+  <Purpose>  
+  This section defines how applications within the enterprise interact with each other and with external systems. It outlines the integration principles, interface designs (inbound, internal, outbound), interoperability standards, middleware usage, and security measures. The goal is to establish a robust, loosely coupled, and standards-based architecture that supports agility, scalability, and operational resilience.
+  
+  <Instructions>  
+  1. **Describe Integration Patterns & API Types:** Explain synchronous (REST/gRPC) and asynchronous (event-driven) flows across internal, inbound, and outbound APIs.  
+  2. **Define Standards & Tooling:** Reference canonical models, API security standards, API gateways, and message brokers.  
+  3. **Document Interface Contracts & Middleware:** Clarify the role of ESBs, service meshes, and integration adapters.  
+  4. **Show Governance & Monitoring:** Include practices for versioning, error handling, testing, and observability.
+  
+  <Example>
+  
+  #### Integration Principles
+  
+  We adopt a hybrid integration model that combines **API-led connectivity**, **event-driven architecture**, and **middleware-mediated orchestration**. The architecture separates concerns across three interface types:
+  
+  * **Inbound APIs**: Interfaces exposed to external systems, customers, or partners.
+  * **Internal APIs**: Service-to-service interactions within the enterprise.
+  * **Outbound APIs**: Calls from our systems to third-party or external services.
+  
+  Each interface is designed using API-first principles, emphasizing clear contracts, consistent standards, and secure, scalable interaction patterns.
+  
+  ---
+  
+  #### Integration Patterns
+  
+  | Type         | Pattern                | Use Case Example                                                |
+  |--------------|------------------------|-----------------------------------------------------------------|
+  | Synchronous  | RESTful APIs (JSON)    | Portal calls CRM to retrieve customer data.                     |
+  | Synchronous  | gRPC/Internal REST     | Order service queries Inventory service for stock validation.   |
+  | Asynchronous | Event-Driven Messaging | `OrderPlaced` event triggers Billing and Notification services. |
+  | Mediated     | ESB (e.g., Mulesoft)   | Protocol mediation between new services and legacy ERP system.  |
+  | Batch        | ETL / File Transfer    | Nightly load from CRM to data warehouse for reporting.          |
+  
+  These patterns are selected based on latency, decoupling needs, system boundaries, and data ownership.
+  
+  
+  #### API Architectures
+  
+  ##### Inbound API Architecture
+  
+  APIs exposed to users, customers, or partner systems are secured, rate-limited, and monitored via an **API Gateway**. These APIs include:
+  
+  * **Customer API** – profile data management
+  * **Product Catalog API** – query product listings
+  * **Order Management API** – create, track, retrieve orders
+  * **Billing API** – retrieve invoices or make payments
+  
+  **Security**: OAuth2, OpenID Connect, API keys
+  **Documentation**: OpenAPI/Swagger, developer portal
+  **Governance**: API versioning, SLA-backed interfaces, compliance with RFC 7807 for error responses
+  
+  ##### Internal API Architecture
+  
+  Microservices communicate using internal REST or gRPC APIs and asynchronous events. Principles include:
+  
+  * **Encapsulation** – each service owns its domain and data
+  * **Service Mesh (if used)** – Istio/Linkerd handle discovery, MTLS, retry policies
+  * **Shared Services** – Email, Notification, Audit services offered via internal APIs
+  
+  Events (e.g., `PaymentCompleted`, `OrderShipped`) are published to a **Message Broker** (e.g., Kafka) and subscribed to by relevant services. Internal APIs are documented, versioned, and governed with contract testing (e.g., Pact), traceability (OpenTelemetry), and standard logging.
+  
+  ##### Outbound API Architecture
+  
+  Our applications consume APIs from external vendors like:
+  
+  * **Payment Gateway** – process transactions via Stripe/PayPal/etc.
+  * **Shipping/Logistics API** – generate tracking numbers and shipping labels
+  * **Tax Calculation API** – compute taxes in real-time
+  * **ERP/CRM Integration** – sync with enterprise systems (via ESB or direct API)
+  
+  All external calls are abstracted through **adapter services**, isolating the rest of the application from provider-specific logic. Outbound calls incorporate:
+  
+  * **Timeouts and retries** (with exponential backoff)
+  * **Circuit breakers** (to avoid cascading failures)
+  * **Vault-based secrets management** (for credentials and API keys)
+  * **Compliance handling** (PCI-DSS, GDPR)
+  
+  ---
+  
+  #### Middleware and Tools
+  
+  | Component               | Purpose                                                                 |
+  |-------------------------|-------------------------------------------------------------------------|
+  | API Gateway             | Ingress control, rate limiting, security enforcement                    |
+  | Message Broker          | Kafka/SNS/SQS for async, decoupled messaging                            |
+  | Enterprise Service Bus  | Integration with legacy apps, complex routing, transformation           |
+  | Integration Adapters    | Isolate external system APIs (e.g., shipping, payments, ERP connectors) |
+  | Service Mesh (Optional) | Secure, observable service-to-service communication                     |
+  
+  ---
+  
+  #### Interoperability & Standards
+  
+  * **Data Models**: Canonical formats (e.g., `Customer`, `Order`) with versioned JSON schemas
+  * **Protocols**: REST/JSON (default), gRPC (internal performance), SOAP/XML (legacy support)
+  * **Auth Standards**: OAuth2, mutual TLS, API keys
+  * **Documentation**: OpenAPI specs, internal event catalog
+  * **Error Handling**: RFC 7807 (Problem Details) for REST; dead-letter queues for events
+  * **Versioning**: Semantic versioning, backward compatibility guarantees
+  * **Testing**: Contract testing, integration testing, performance/load testing
+  
+  ---
+  
+  #### Governance & Monitoring
+  
+  * **Logging**: Structured logs with correlation/tracing IDs (e.g., via OpenTelemetry)
+  * **Monitoring**: API usage, latency, failure trends across gateway and middleware
+  * **Audit**: Centralized logs for compliance traceability (SOX, PCI, etc.)
+  * **Change Control**: Interface change reviews, backward compatibility coordination
+  * **Fallback Handling**: Defined strategies per interface (e.g., default tax on failure)
+  
+  ---
+  
+  #### Interface Flows
+  
+  > A customer places an order via the portal:
+  >
+  > 1. Inbound: Portal → Order API → Order Service
+  > 2. Internal: Order → Inventory, Payment (REST/gRPC)
+  > 3. Internal Async: `OrderPlaced` → Billing, Notification services
+  > 4. Outbound: Payment Adapter → Stripe, Shipping Adapter → FedEx
+  > 5. Inbound: FedEx Webhook → Update Order Status
+  > 6. Logging & Tracing: Each step emits trace data and logs for observability
+  
+  ---
+  
+  <Prerequisites>
+  
+  * API Gateway and Message Broker deployed
+  * IAM provider and service identities in place
+  * Enterprise Integration Reference Architecture defined
+  * Legacy system access points identified
+  * Integration patterns catalog established
+  
+  <Standards>
+  
+  * REST API & Event Schema Guidelines
+  * Canonical Data Model Library
+  * API Lifecycle Policies (versioning, deprecation, review)
+  * Internal API Naming Conventions and Auth Model
+  * Contract Testing and Continuous Integration Compliance
+  * Middleware Configuration Playbooks (for API Gateway, ESB, Brokers)
+  
+  ## Lifecycle Governance & Risk / Compliance
+  
+  ### Application Lifecycle & Governance
+  
+  <Purpose>
+  Outlines how applications will be governed throughout their lifecycle — from selection and implementation to maintenance and decommissioning — to ensure compliance, cost-efficiency, and business alignment.
+  
+  <Instructions>
+  1. **Reference Governance Processes:** Include intake, reviews, sunset planning, and funding models.
+  2. **Lifecycle Stages:** Align each application to phases (e.g., pilot, production, deprecated).
+  3. **Map to Portfolios:** Identify product owners or portfolio managers for each app.
+  4. **Environments Required:** List all of the environments needed for this application.
+  5. **Development Methodology:** Identify the solution methodology to be used (e.g. SCRUM, Agile, XP, etc.)
+  
+  <Example>
+  Effective management of our application architecture requires well-defined **lifecycle governance** – ensuring each application is tracked from inception to retirement with appropriate oversight at each stage. This section describes how we will govern the applications (A1–A5) in terms of decision-making, maintenance, and eventual decommissioning, as well as the development approach and environments used.
+  
+  **Governance Processes & Intake:** All new or changed applications go through the enterprise Architecture Review Board (ARB) process. At the outset, any proposal for a new application or major enhancement must go through an **intake process**. For example, if a new module or integration is needed, a Request for Architecture Work is submitted, outlining the business need, expected value, and alignment with strategy. The ARB (comprising enterprise architects, security, infrastructure reps, etc.) will review it. Key governance gates in our project include:
+  
+  * *Initiation/Intake:* We already underwent this for the major components in this solution (CRM selection, Portal development approval, etc.). The ARB ensured alignment with enterprise principles (like avoiding duplicate systems, leveraging preferred tech stacks) at the start. Going forward, any significant changes (say choosing a new third-party product or major refactor) would similarly require ARB review.
+  * *Architecture Design Review:* Before build, the detailed design of each application’s architecture is reviewed (likely what we are doing here). This ensures things like integration patterns and compliance requirements are met. This document will be part of that review evidence.
+  * *Security and Compliance Review:* A separate governance process ensures each application meets security standards. For example, the Portal would go through a threat model review and penetration test sign-off by the security team before going live (a governance checkpoint).
+  * *Pre-Deployment Review:* Prior to moving to production, a Change Advisory Board (CAB) or similar will review the readiness: Did it pass testing? Are support plans in place? Is monitoring configured? Only upon approval can an application or major release go live, adhering to ITIL change management processes.
+  * *Post-Implementation Review:* After go-live, a review (say after \~30 days) might be held to capture lessons, ensure benefits are realized, and any issues are addressed. This is part of continuous improvement governance.
+  
+  Funding for these applications typically comes from a mix of project budget (for initial build) and then operational budget (for ongoing SaaS subscriptions, maintenance, cloud hosting costs). Governance ties in here by requiring cost estimates at intake and tracking ROI. For example, the Cloud CRM (A1) has a subscription cost, which is approved under a vendor management governance and reviewed annually for value.
+  
+  **Lifecycle Stages:** We classify each application in a lifecycle stage and manage accordingly:
+  
+  * *Plan/Ideation:* (Pre-project phase) – e.g., if a new capability is needed, it’s in planning. The CRM and Portal were in this phase when doing vendor selection or initial prototyping.
+  * *Development/Implementation:* Active build and configuration. Currently, the Portal (A5) and Order service (A2) are in development. In this stage, we have agile sprints delivering functionality, and governance focuses on design adherence and quality (via architecture and code reviews).
+  * *Pilot/Testing:* Before full production, some apps may run as a pilot (for instance, releasing the Portal to a small user group first). This stage gathers feedback and ensures stability. Governance requires exit criteria (performance met, no Sev1 bugs outstanding, user acceptance) to move to production.
+  * *Production (Live/Operational):* When fully rolled out to users and handling real transactions. At this stage, the application is under operational governance: monitored by IT operations, incident management applies for outages, and enhancements are managed via change control. Each production app has an assigned **Application Owner** (and technical owner) who is accountable for it in this phase.
+  * *Maintenance/Continuous Improvement:* Over time, an app in production will have minor enhancements, patches, etc. We adopt a *DevOps* approach where the development team remains involved even in operations (especially for custom apps). We schedule regular upgrades for COTS (like CRM updates) under governance oversight to ensure nothing breaks.
+  * *Deprecation/End-of-Life:* Eventually, applications might become obsolete (e.g., if we later consolidate CRM into a global system or replace the ERP module with a new one). We maintain a **sunset plan**: once an application is slated for decommission, it enters a deprecated status (no new features, only critical fixes). We communicate to stakeholders and plan data migration if needed. Governance ensures no app is simply turned off without a proper plan. For instance, if in 5 years we plan to move billing entirely to a new ERP, we will mark A3 as “to be retired” and start migration steps as per a **Transition Architecture**.
+  * *Retirement:*\* This is removing the app from service. Governance requires approvals (especially to ensure compliance – e.g., data archived appropriately, users notified). Once retired, we update the portfolio inventory to mark it as such and maybe archive its documentation. For example, once the legacy CRM was replaced by Cloud CRM, we formally retired it, archived its database for compliance read-only access, and removed the system from active support.
+  
+  Each application in our solution is tracked in the **Application Portfolio Management (APM)** system, which records its current stage, criticality, business owner, etc. The **product owner or business sponsor** for each (for example, Sales VP for the CRM, Operations manager for Order system, etc.) is listed there, as well as the IT owner (like an Application Owner from IT who coordinates technical maintenance). This ensures accountability – each app has someone responsible for its fitness and alignment to business.
+  
+  **Portfolio Mapping:** In the context of enterprise portfolios, our applications fall under certain portfolios:
+  
+  * A1 (CRM) might be under the “Sales & Marketing Portfolio” overseen by the Sales IT manager.
+  * A2/A4/A5 (Order, Product, Portal) likely fall under an “Digital Commerce” or “Operations IT” portfolio.
+  * A3 (Billing) is under “Finance Systems” portfolio.
+    Mapping this helps in governance because portfolio managers periodically review all apps in their domain for redundancy, investment needs, etc. For instance, the portfolio review might question: do we have two CRMs in different divisions that we should consolidate? If so, that triggers future lifecycle decisions.
+  
+  We have designated product owners for each app in the solution implementation team now, who will transition to operational owners post-launch. For example, during development, the project manager oversees, but once live, the CRM might be managed day-to-day by the Customer Service lead (business owner) and an IT CRM application manager (technical owner).
+  
+  **Environments Required:** To support development, testing, and deployment, we establish multiple environments:
+  
+  * **Development (DEV):** Where developers integrate and test code initially. Each developer might also have a local environment or a shared DEV. Continuous integration pipelines deploy to DEV for initial validation. This environment often has stub integrations or sanitized data.
+  * **Test/QA:** A separate environment used by QA engineers for system testing, and by business analysts for functional testing. It should mirror production configurations reasonably. We will deploy release candidates here for thorough testing (including integration with external test systems). Possibly we maintain both a “System Integration Testing (SIT)” environment and a “User Acceptance Testing (UAT)” environment, or combine them if scope is manageable. UAT environment might have more production-like data for realistic validation by end-users.
+  * **Performance/Load Testing:** If needed, a dedicated environment to conduct performance tests. Sometimes this can be done in QA if large enough, but often a separate **Staging** environment is used that is a close replica of prod for final performance and volume tests (ensuring scale and configurations match prod). We will simulate high loads here to ensure the system meets performance NFRs.
+  * **Staging/Pre-Production:** We may have a staging environment that is essentially a dress rehearsal for production deployments. It uses the same production configuration, perhaps even connected to prod external endpoints in test mode. This is used for final verification of releases (smoke tests) just before production. Sometimes UAT and Staging are combined in smaller orgs.
+  * **Production (PROD):** The live environment serving end-users and processing real data.
+  * **Disaster Recovery (DR):** If applicable, we maintain a secondary environment (in another region or data center) for DR. This isn’t used day-to-day but is configured to take over if PROD fails. We might periodically test failover to this environment as part of governance (ensuring our RTO/RPO commitments are met).
+  
+  In summary, at minimum: DEV, QA (including UAT), STAGING, PROD, and possibly PERF and DR. We list these in our deployment plan and have separate configuration for each (like separate database instances, etc.). Data flows between them are controlled (for example, prod personal data won’t be copied to lower env without masking to comply with privacy rules).
+  
+  **Development Methodology:** We are adopting an **Agile methodology**, specifically Scrum, for development. The project is broken into iterations (sprints of 2 weeks). Each sprint, we deliver increments of functionality for one or more applications. For example, Sprint 1 might deliver basic order entry in A2 and corresponding UI in A5; Sprint 2 adds payment integration, etc. We have cross-functional teams (developers, QA, product owner) working continuously and adapting requirements as needed. This Agile approach ensures close alignment with stakeholder needs and allows mid-course corrections (important given evolving digital requirements).
+  
+  To complement Agile, we embrace **DevOps** practices: automated builds, continuous integration (with Jenkins/GitLab CI etc.), and automated deployment to environments. We aim for potentially shippable product at each sprint end, even if not all features are ready, which allows frequent UAT feedback. We also plan to perform continuous testing (unit tests as part of CI, and automated regression tests).
+  
+  For configuration management and releases, we might use feature toggles to deploy code to production that can be turned on when ready (supporting continuous delivery). However, given the major release nature of this project, we likely do a big bang go-live once everything is tested, then move to continuous enhancement post go-live.
+  
+  **Governance of Development Process:** We follow the organization's SDLC guidelines. That means code reviews are mandated (peer review of all code via pull requests), static code analysis and security scanning are done (using tools like SonarQube, Checkmarx in CI pipeline) – these ensure code quality and security issues are caught early. These are **quality gates** that must pass before code merges or deploys (governance at dev stage). The Agile process itself is monitored – we hold sprint demos with stakeholders and our architecture governance body can request to see that the architectural intent is being followed in those demos.
+  
+  **Release management:** We plan a phased rollout (perhaps internal beta then external). Each release is documented and approved through CAB as mentioned. Post-launch, any further changes will go through an Agile maintenance process with regular sprint releases or patches, but still under change management governance for production deployment.
+  
+  **Application Monitoring & KPIs:** Governance also involves ensuring each application meets certain KPIs and SLAs. For instance, Portal uptime, average response time, number of incidents, etc., are tracked. The Application owners will report these in monthly operations reviews. If SLAs are missed, a problem management process is triggered to address root causes. Also, capacity reviews might be scheduled (e.g., every year, check if the infrastructure needs to scale given growth trends – part of lifecycle governance to avoid performance degradation over time).
+  
+  In conclusion, the lifecycle and governance approach ensures our applications not only are delivered successfully but continue to align with business needs and technical standards throughout their existence. By having structured governance gates, clear stage definitions, environment segregation, and an Agile/DevOps operating model, we balance agility with control, thereby reducing risk and maximizing value from our application portfolio.
+  
+  <Prerequisites>
+  * **Defined Roles & Owners:** Before launch, assign and document the business owner and IT owner for each application. For example, ensure someone in the business is identified to take ownership of the CRM usage and prioritization after project (e.g., Head of Sales), and someone in IT is assigned as Application Manager. This is needed for accountability in governance.
+  * **Operational Support Plan:** Develop the support model (who monitors, who responds to incidents, what the escalation path is). If leveraging an existing support team or NOC, engage them early. They might require certain monitoring setup as prerequisite (like specific logs or health check pings).
+  * **Training & Documentation:** Ensure training materials and system documentation are prepared for each application. Users of the CRM need training manuals; support teams need run-books (e.g., what to do if Order service goes down). A prerequisite for production readiness is completing this documentation and training sessions.
+  * **Service Level Agreements (SLAs):** Define target SLAs for each app (uptime, performance). These might be informal internal targets or formal if you have internal OLAs. Knowing these upfront helps tailor monitoring and support processes.
+  * **Tooling for Agile/DevOps:** Have the necessary tools configured: e.g., Jira for backlog tracking, CI/CD pipeline tools ready, Git repositories set up with branching strategy defined. These need to be in place to effectively follow the chosen methodology.
+  * **Data Migration Completion:** If any data from legacy systems must be migrated (e.g., migrating legacy CRM data into new CRM), that needs to be completed in a controlled manner before cut-over. Planning and executing data migration (and data quality checks) is a prerequisite to decommission the old and fully use the new. This ties into lifecycle (sunset of old system only after data in new).
+  * **Test Sign-offs:** Before moving from test to prod, ensure UAT is signed off by business, and performance tests are signed off by IT to confirm readiness per requirements. This formal sign-off is required by governance to proceed.
+  
+  <Standards>
+  * **Enterprise SDLC Policy:** We adhere to the company’s standard SDLC phases and deliverables. For instance, the policy might dictate that for each project, certain documents are produced (architecture doc – which is this, test plan, deployment plan, etc.). We’ve ensured all those exist. Also the SDLC might mandate security testing – we’ll follow that (e.g., a penetration test standard for web apps before go-live).
+  * **Change Management:** All changes in production follow ITIL change management. We will register changes in the Change Management system, get necessary approvals, schedule during approved deployment windows, and perform post-implementation review. Our deployment plan aligns with change management standards (including having a rollback plan for each release).
+  * **IT Governance & Audit:** If the company is subject to SOX or internal audits, we ensure separation of duties in deployment (e.g., developers not promoting code to prod themselves – operations team does it or it’s automated with approvals). We maintain required evidence (like test results, approval records) for audit. In architecture governance terms, we also maintain traceability from requirements to implementation to test cases (maybe using a requirements management tool), fulfilling any audit or quality management standards.
+  * **DevOps & Environment Standards:** Use consistent naming conventions and configuration management for environments. For example, infrastructure as code (Terraform, etc.) is used to set up environments consistently. The standard might be: no manual changes in production; all configuration goes through code and is tracked. We apply that to avoid drift.
+  * **Lifecycle in Portfolio Tool:** The enterprise APM tool (like LeanIX or ServiceNow APM module) should reflect the state of each application. The standard process is to update that repository when an app goes live or is retired. We will ensure, as part of governance, to mark legacy CRM as retired, new CRM as active with the date, etc. Also any risk ratings (some companies rate apps on a scale for risk or business fit) – we’ll provide input for those metrics in the tool.
+  * **Methodology Standards:** Agile is our chosen method. We align with enterprise agile standards – e.g., use of Scrum ceremonies (daily stand-up, sprint review, retrospective). Possibly follow Scaled Agile Framework (if multiple teams, coordinate via a Scrum of Scrums or PI planning). We also integrate QA and security early (standard shift-left testing). Code style guidelines are followed so that maintenance is easier.
+  * **Retirement Policy:** Adhere to policy for data retention on retired systems. For instance, company policy might require keeping data for 7 years for compliance. Thus, when we retire the legacy CRM, we archived its data in read-only form in compliance with that policy before decommissioning the server. Similarly, any time we plan to retire an app, we’ll follow the official checklist (take backup, verify archive readability, notify users X months ahead, etc.).
+  
+  ### Standards Information Base
+  
+  <Purpose>
+  
+  Provide a **single, authoritative catalogue of all external and internal standards, regulations, frameworks, and reference architectures** that govern the full lifecycle of applications—from ideation and design through build, run, change, retirement, and audit.
+  The Standards Information Base (SIB) enables:
+  
+  1. **Design‑time guidance** – architects and engineers know which rules, patterns, and controls they must follow.
+  2. **Lifecycle governance & risk management** – every standard is mapped to the phases or gates in which compliance must be demonstrated.
+  3. **Audit & evidence** – auditors and regulators can trace how each requirement is addressed by architecture artefacts, processes, and controls.
+  4. **Continual improvement** – obsolete or superseded standards are flagged and replaced in a controlled manner.
+  
+  <Instructions>
+  
+  | Step  | Activity                         | Guidance & Expected Deliverables                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+  |-------|----------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | **1** | **Define Classification Scheme** | Group standards into domains such as *Architecture & Modelling*, *Security & Privacy*, *Quality & Service Management*, *Cloud & DevOps*, *Data & Integration*, *Legal & Regulatory*.                                                                                                                                                                                                                                                                                                                                                                                                       |
+  | **2** | **Collect Candidate Standards**  | Harvest from enterprise policy library, legal / regulatory obligations register, industry bodies (ISO, IEC, IEEE, NIST, ETSI, W3C, IETF), and internal pattern repositories.                                                                                                                                                                                                                                                                                                                                                                                                               |
+  | **3** | **Screen & Approve**             | EA Governance Board reviews each candidate for relevance, overlap, and currency. Approved items receive a unique **SIB‑ID**.                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+  | **4** | **Record Metadata**              | For every standard capture:<br>• **SIB‑ID**<br>• **Standard / Regulation** (official title, version, year)<br>• **Issuer / Body** (e.g., ISO, NIST)<br>• **Domain**<br>• **Mandatory / Recommended** status<br>• **Lifecycle Phase(s)** where compliance is checked (Plan, Design, Build, Deploy, Operate, Retire)<br>• **Primary Control Mapping** (e.g., NIST CSF Function, ISO 27001 Annex A control, COBIT objective)<br>• **Internal Policy Link** (URL or repository path)<br>• **Review Cycle** (e.g., 1 yr, 3 yrs)<br>• **Owner** (role/team responsible for monitoring revisions) |
+  | **5** | **Publish & Integrate**          | Store the SIB in the EA tool or GRC platform. Provide API or export for CI/CD pipelines and project templates so standards are injected automatically.                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+  | **6** | **Maintain & Retire**            | Track revision dates; when an external body issues an update, log an action item to assess impact. Retired standards remain in the SIB for historical traceability but are marked “Superseded”.                                                                                                                                                                                                                                                                                                                                                                                            |
+  
+  *Formatting notes*
+  
+  * Use a table or database view; filterable by Domain and Lifecycle Phase.
+  * Colour‑code “Mandatory” entries or approaching review dates.
+  * Version‑stamp the SIB itself (vX.Y, date, author).
+  
+  <Example>
+  
+  | SIB‑ID  | Standard / Regulation                         | Version | Issuer     | Domain                       | Status      | Lifecycle Phase(s)      | Control Mapping / Notes                         | Review Cycle | Owner       |
+  |---------|-----------------------------------------------|---------|------------|------------------------------|-------------|-------------------------|-------------------------------------------------|--------------|-------------|
+  | SIB‑001 | ISO/IEC/IEEE 42010 – Architecture Description | 2011    | ISO        | Architecture & Modelling     | Mandatory   | Plan, Design            | Basis for architecture viewpoints & artefacts   | 3 yrs        | EA Office   |
+  | SIB‑014 | ISO/IEC 27001 – Information Security Mgmt     | 2022    | ISO        | Security & Privacy           | Mandatory   | Design, Deploy, Operate | Mapped to NIST CSF & internal control library   | 1 yr         | CISO Team   |
+  | SIB‑021 | TOGAF® Standard, 10th Edition                 | 2022    | Open Group | Architecture & Governance    | Recommended | Plan, Design            | ADM artefact templates adopted enterprise‑wide  | 3 yrs        | EA Office   |
+  | SIB‑032 | ISO/IEC 25010 – Systems & SW Quality Model    | 2023    | ISO        | Quality & Service Management | Mandatory   | Design, Build, Test     | Drives NFR checklists & acceptance criteria     | 2 yrs        | QA CoE      |
+  | SIB‑045 | NIST SP 800‑53 Rev. 5 – Security Controls     | 2020    | NIST       | Security & Privacy           | Mandatory   | Design, Deploy, Operate | Referenced in cloud landing‑zone guardrails     | 1 yr         | CISO Team   |
+  | SIB‑067 | ISO/IEC 20000‑1 – IT Service Management       | 2018    | ISO        | Quality & Service Management | Mandatory   | Operate, Improve        | SLA / OLA structure; linked to ITIL 4 practices | 3 yrs        | ITSM Lead   |
+  | SIB‑083 | ETSI NFV‑MANO – GS NFV‑MANO 006               | 2023    | ETSI       | Cloud & DevOps               | Recommended | Deploy, Operate         | Guidance for VNF lifecycle automation           | 2 yrs        | DevOps Lead |
+  
+  <Prerequisites>
+  
+  1. **Enterprise Policy & Control Library** – master list of internal policies mapped to external standards.
+  2. **Regulatory Obligations Register** – legal / compliance requirements by jurisdiction and industry.
+  3. **EA Governance Charter & RACI** – defines approval authority for adding or retiring standards.
+  4. **Tooling** – repository (e.g., GRC system, EA tool, Confluence) with version control and access management.
+  5. **Change‑Control Process** – mechanism for triggering SIB updates when external bodies publish new versions.
+  
+  <Standards>
+  
+  * **The Open Group TOGAF® Standard, 10th Edition (2022)** – defines the SIB concept and its role in Architecture Governance.
+  * **ISO/IEC/IEEE 42010:2011** – ensures architectural descriptions, viewpoints, and models used in the SIB are consistent and traceable.
+  * **ISO/IEC 19770‑1:2017** – IT Asset Management principles for cataloguing and lifecycle control of standard artefacts.
+  * **ISO/IEC 27001:2022 & ISO/IEC 27002:2022** – information security management and controls for protecting the integrity and availability of the SIB.
+  * **ISO 9001:2015** – Quality Management System requirements for document control and continual improvement.
+  * **ISO/IEC 20000‑1:2018** – Service Management requirements informing review cycles and change management for the SIB.
+  * **COBIT® 2019 (APO01, APO03, EDM03)** – governance objectives covering policy management, enterprise architecture, and compliance assurance.
+  * **NIST Cybersecurity Framework 2.0 (2024)** – Identify & Protect functions guide classification, access control, and review cadence.
+  
+  
+  
+  
+  
+  
+  ### Risks, Constraints, and Compliance
+  
+  <Purpose>
+  Identifies known risks (technical, operational, vendor), architecture constraints (e.g., hosting location, licensing), and compliance requirements (e.g., SOX, GDPR, NERC-CIP).
+  
+  <Instructions>
+  1. **Describe Risks:** Vendor lock-in, end-of-support, API fragility, scalability issues.
+  2. **List Constraints:** Cloud-first mandates, budget caps, security architecture standards.
+  3. **Note Regulatory Requirements:** Tie application data flows or storage to compliance frameworks.
+  
+  <Example>
+  Implementing this application architecture involves several **risks and constraints** that we must acknowledge and manage. Additionally, we operate under important **compliance requirements** that shape certain design decisions.
+  
+  **Key Risks:**
+  
+  * **Vendor Lock-In Risk:** By using certain SaaS and cloud services, we face potential vendor lock-in. For example, our Cloud CRM (A1) is provided by a specific vendor. If their pricing changes drastically or service quality drops, it could be difficult and costly to switch to another CRM due to data migration and re-integration efforts. Similarly, building on a particular cloud platform’s services could create dependency. Vendor lock-in means we are essentially “stuck” with that vendor unless we invest significant effort to move. **Mitigation:** We mitigate this by ensuring data portability (regular data exports/backups from SaaS, use of standard APIs) and by abstracting vendor-specific implementations where feasible (for example, using an abstraction layer for cloud services, and avoiding proprietary features if not necessary). We also maintain good relationships with vendors and include clauses in contracts for data export assistance.
+  * **Technology Obsolescence:** Some components have lifecycle risks – e.g., the ERP billing module (A3) is known to be nearing end-of-support by its vendor. If it goes out of support, we risk lack of patches or compatibility issues with new OS/DB versions. **Mitigation:** We have flagged this and plan to upgrade or replace the module within 2 years (there is a project in roadmap). In interim, we isolate it behind APIs and monitor vendor announcements.
+  * **Integration Fragility:** The heavy reliance on integrations means there’s risk that changes in one service or external API can break others. E.g., if the shipping provider changes their API spec, our ShippingAdapter could fail. **Mitigation:** We manage this via strict versioning and backward compatibility in our own APIs, automated testing of integration endpoints, and by monitoring external deprecation notices. We have unit and integration tests that run against sandbox externals to catch incompatibilities early. Also, by loosely coupling via events, if one part fails, it doesn’t crash the whole system (e.g., billing can be temporarily down without stopping order placement; it will catch up once restored).
+  * **Performance and Scalability Risks:** While we designed for scalability, there is a risk that real-world usage patterns or volumes exceed our assumptions. For instance, if an unexpected surge of users hits the portal, or if certain queries (like a customer with thousands of orders viewing their history) strain the system. **Mitigation:** We will conduct thorough load testing and tune the system. We’ve designed stateless scalable services behind a load balancer which can scale out. We also included caching for frequently requested data. In production, we will use auto-scaling rules to add capacity if certain thresholds are exceeded. We have also identified database scaling (read replicas, etc.) as a strategy if needed.
+  * **Security Risks:** As with any web-based architecture, there are risks of cyber attacks (SQL injection, XSS, DDoS, data breach). Specifically, storing customer personal data (names, addresses) in CRM means we’re a target for data theft. Also, integration points could be targeted (e.g., someone might try to hit our APIs maliciously). **Mitigation:** We implement robust security measures: input validation, WAF (web application firewall) in front of the portal and APIs, continuous security testing (including third-party penetration tests). We also ensure encryption of data at rest and in transit. Role-based access control is in place to limit data access. Security monitoring (SIEM) will alert on suspicious activities. Compliance with standards like OWASP Top 10 is verified. We treat security as a top priority, not an afterthought.
+  * **Project Delivery Risk:** Implementing multiple new systems concurrently (CRM, Portal, Order service) is complex. There’s a risk of delays or quality issues if integration testing reveals problems. **Mitigation:** We use an agile approach with incremental integration to catch issues early. We have buffer time in the schedule for fixing integration bugs. We also have strong executive support to cut scope if needed to ensure core functionality works properly rather than overreaching.
+  
+  **Constraints:**
+  
+  * **Cloud-First Constraint:** The enterprise has mandated a cloud-first approach for new applications. This means we are expected to deploy on cloud infrastructure (and avoid on-prem servers) unless there’s a compelling reason. Our design indeed leverages cloud services for scalability. A constraint here is to use the approved cloud provider (e.g., AWS) and within that, approved services (for instance, maybe the company has standardized on Azure DevOps pipelines but AWS for runtime). We follow these standards. Also, data residency constraints mean if using cloud, data should reside in certain regions (e.g., all customer data must be in US-based data centers or EU-based depending on user location). We design with region selection accordingly.
+  * **Budget Constraints:** There is a fixed budget for this project and ongoing OPEX limits. For example, we have to be mindful of the number of cloud resources (each microservice, each environment costs money), and the SaaS licensing costs (CRM is per-user licensed). This constrains us to be efficient in design – e.g., perhaps we limit non-critical redundancy or delay a nice-to-have feature that would require a lot of extra infrastructure. We also chose SaaS CRM partly to avoid large up-front costs of building one. We will monitor cloud usage closely to stay in budget (using auto-scaling but with caps, etc.). If budget cuts occur, we might have to reduce scope (that risk is noted).
+  * **Skill Constraints:** The organization’s team has lots of experience in .NET/SQL, but we are introducing, say, Node.js for the portal or new integration tech. There’s a learning curve. We must account for training time, and it constrains how quickly we can develop some components. To mitigate skill constraints, we brought in an experienced vendor for initial setup and are cross-training staff (governance ensures training is budgeted as part of project). We may also constrain choice of new tech to what we can realistically support (e.g., use a familiar DB like PostgreSQL vs a trendy but unfamiliar one).
+  * **Dependency Constraints:** We have to integrate with existing enterprise systems (ERP, etc.) that have their own schedules and constraints. For example, the ERP (for billing) can only be modified in a certain maintenance window or maybe cannot handle high frequency API calls. This constrains how we design our integration (we might batch updates to ERP to a certain time or frequency). Also, the legacy data quality (e.g., customer records might be messy) constrains how smoothly we can migrate to CRM; we might need a data cleanup phase.
+  * **Compliance and Policy Constraints:** We have internal policies that act as constraints. For instance, a security policy may require multi-factor authentication for any admin access to systems – so our admin portals for these apps must integrate with SSO/MFA. A data policy might require that production data not be used in test without masking – thus we must build a data masking tool for testing or generate synthetic data. Also, backup policy: must back up critical data daily and retain for X days – our architecture must include backup setups for databases to comply.
+  * **User Experience Constraints:** The business has mandated that the user experience (especially for the portal) conform to the company’s digital style guide. That is a constraint on the UI design – we must use certain branding, navigation style, etc. It’s not technical, but it shapes how A5 is implemented (we might be constrained to use a particular UI framework already in use by the company’s website to ensure consistency).
+  
+  **Compliance Requirements:**
+  
+  Our solution touches on several regulatory areas, and compliance is non-negotiable:
+  
+  * **Privacy (GDPR/CCPA):** We will store and process personal data of customers (names, addresses, possibly purchase history – which can infer personal preferences). Therefore, GDPR (if we have EU customers) and CCPA (for California residents) apply. We must ensure compliance by design: obtaining consent for data usage where required (e.g., marketing opt-in in CRM), allowing customers to request data deletion or export (our architecture should enable extracting all their data from CRM, orders, etc. easily). We have a mechanism to delete or anonymize personal data upon request. Data minimization is practiced – we only collect what we need and retain as long as needed for purpose. All personal data in transit and at rest is encrypted as per policy. We also maintain records of processing as required. Our design choices like using a single CRM help here (one source to update or scrub data when needed, rather than chasing multiple silos). Logging and monitoring are set to ensure no unauthorized access to PII. In summary, our architecture is aligned with privacy by design principles to meet regulations such as GDPR.
+  * **Financial Controls (SOX):** Because this system will handle financial transactions (orders, payments, revenue records in billing), Sarbanes-Oxley (for public companies) requires controls on financial data accuracy and process integrity. We ensure that any financial relevant transactions (order value, invoice amounts) are logged and cannot be altered without trace (immutability). For instance, once an order is completed, any adjustments (refunds, etc.) are recorded separately rather than changing the original record. We implement role-based permissions so that only authorized personnel can perform actions that affect finance (like only finance team can do an invoice override in billing). The system also produces audit trails – e.g., an audit log records who did what in the CRM or billing system. These logs are kept read-only and archived yearly for auditors. We coordinate with the internal audit team to validate that the order-to-cash process implemented by these apps has proper approvals and reconciliations. For example, ensuring the totals in the order system can be reconciled with totals in the ERP financials. Any integration to the general ledger is checked. By embedding these controls, we comply with SOX requirements on IT systems supporting financial reporting.
+  * **PCI-DSS:** If we process credit card payments directly (depending on whether the payment gateway handles it entirely or our system touches card data), we fall under PCI-DSS (Payment Card Industry Data Security Standard). Our strategy is to minimize scope by using tokenization (the card info is captured by the gateway’s hosted field, so our system never sees the full card number or CVV). Thus, the portal and backend are mostly out of PCI scope, since we transmit only a token. However, if there is any card data passing through (even briefly), we treat our environment as PCI zone: this means strict network segmentation, quarterly scans, and compliance checks. We ensure no card data is stored in our databases or logs. PCI also requires annual security training for developers and regular code reviews for security, which we incorporate. The API calls to gateway are over secure channels and the gateway itself is PCI certified (we have that assurance in contract). Essentially, by design we try to offload PCI-sensitive functions to the specialized provider, thereby simplifying our compliance.
+  * **Industry-Specific Compliance:** If our business was in a specific domain like energy (NERC-CIP) or healthcare (HIPAA), we’d have additional requirements. In our case (retail/e-commerce assumption), main ones are privacy and payment. If there’s any chance we keep medical data or such (likely not), we would comply with HIPAA by ensuring PHI is encrypted and only accessible with need, etc. Noting: NERC-CIP (power grid security) probably doesn’t apply here.
+  * **Accessibility Compliance:** Though not a law in all cases, many places have accessibility requirements (like ADA in the US or EN 301 549 in EU for digital services). We ensure the Portal (A5) is accessible (keyboard navigation, screen reader compatibility, color contrast) as it might be required for public-facing sites. It’s often a policy to meet WCAG 2.1 AA standards.
+  * **Data Sovereignty:** If we operate in certain countries, data cannot leave the country (Russia, China, etc.). We might have to host certain components in specific regions due to that. For now, we consider that personal data of EU citizens will be stored in EU data center of the SaaS or cloud (complying with GDPR data residency if required). We would mention in design if, say, our CRM vendor stores data in US, ensuring they have Privacy Shield or standard contractual clauses in place for EU personal data transfer.
+  * **Audit and Logging Compliance:** Regulations often require keeping logs of user activities, especially in finance (SOX) or if any personal data breaches (GDPR requires breach notifications, so logs help detect breaches). Our logging strategy ensures we can detect anomalies and produce forensic data if needed. We align with IT compliance in logging (like not logging passwords or sensitive fields which would itself break compliance).
+  
+  In summary, our architecture proactively addresses these risks and constraints. We have designed mitigation strategies for each significant risk and acknowledged where constraints shape our design decisions. Additionally, compliance requirements are tightly woven into our architecture choices – from data encryption to audit trails – ensuring that the solution not only meets functional needs but also operates within the legal and policy framework necessary for the business. This risk-aware, compliant design will support a smoother implementation and operation, as we won’t be caught off guard by requirements later (they’ve been built in upfront).
+  
+  <Prerequisites>
+  * **Risk Register:** A formal risk register should be maintained, listing all these identified risks, their impact, likelihood, owners, and mitigation plans. We assume project governance has this in place, and it will be updated continuously. This ensures visibility and active management (e.g., a risk like “performance issue” will have a mitigation task “conduct load test by date X”).
+  * **Sign-off on Constraints:** Stakeholders need to acknowledge constraints (especially business owners understanding budget/time constraints might limit some features). For example, confirming that phase 1 will only support one language or currency if budget doesn’t allow more – such constraint sign-offs prevent later scope creep.
+  * **Compliance Team Engagement:** Before go-live, compliance officers or data protection officers should review the system (especially for GDPR/PCI). Getting their checklist early is a prerequisite so we can address any gaps. For instance, verifying that our privacy policy covers the new data collection on the portal, and that we have cookie consent for any tracking, etc., should be cleared with them.
+  * **Legal Agreements:** For compliance, ensure any needed legal documents are in place: e.g., Data Processing Agreements with the SaaS vendor (for GDPR), PCI attestation from payment provider, etc. Without these, we might be out of compliance. This is more organizational, but crucial.
+  * **Security Testing:** Conduct security risk assessment (threat modeling) and penetration testing as prerequisites to final deployment (especially for PCI compliance and general best practice). Any high findings must be resolved or risk-accepted by appropriate authority.
+  * **Performance Testing Results:** As mitigating performance risk, have a prerequisite that the system must pass defined performance tests (e.g., support X concurrent users with response time < Y). This is effectively a gating criterion to ensure we mitigated scalability risk. If tests fail, we address issues before going live.
+  * **Contingency Plans:** Develop contingency plans for major risks, essentially “Plan B” scenarios. For example, if the payment gateway integration fails close to go-live, do we have an alternate method (maybe manual processing as backup)? Or if Cloud CRM has outage, what’s our manual fallback to continue operations? Documenting and perhaps rehearsing these contingency procedures is a prerequisite to ensure operational resilience.
+  
+  <Standards>
+  * **Risk Management Standard:** The organization likely follows a standard risk management framework (maybe ISO 31000 or internal methodology). We align by classifying risks, assigning ratings (High/Med/Low), and treating them accordingly. Regular risk review meetings will be held. We ensure each risk has an owner and a mitigation strategy in line with this standard process.
+  * **Security Standards Compliance:** We adhere to relevant security frameworks like OWASP ASVS (Application Security Verification Standard) for web apps, ensuring we meet those controls (e.g., authentication, session management standards). For infrastructure, we follow CIS hardening benchmarks for servers/containers. If ISO 27001 or similar is in place, our controls feed into those compliance requirements.
+  * **Privacy by Design:** As per GDPR, privacy by design is a standard we follow. This means data protection principles (minimize, isolate, secure) are integrated into the system design from the start, not bolted on. We have documented how each personal data element flows and how it’s protected, fulfilling Article 25 of GDPR.
+  * **Regulatory Monitoring:** A standard practice is to monitor relevant laws for changes. For instance, if a new privacy regulation or industry standard emerges, the architecture team and compliance team will assess impact. We set up a process to periodically revisit compliance in architecture (e.g., annual review to see if any new rules require changes).
+  * **Constraints Documentation:** All major constraints are documented in project scope and architecture decision records. If something is out of scope due to a constraint, that is captured to manage expectations. Also, any constraint that might be revisited later (like “phase 2 will address multi-currency once budget allows”) is noted so that it’s part of the roadmap.
+  * **Quality Assurance Standards:** We incorporate risk-based testing per standards – meaning higher risk areas get more rigorous testing. For compliance, we include test cases verifying compliance features (e.g., create a dummy user and ensure we can export/delete their data via an admin function to satisfy GDPR rights). This aligns with QA standards that everything in requirements including regulatory ones is tested.
+  * **Audit Trail Standard:** We follow the company’s standard for audit logs (which fields to capture, how to secure them). For example, the standard might be that audit logs cannot be edited or deleted by any application user, and they must record user ID, timestamp, action, and success/failure. We implemented that for critical operations. Also, logs might need to be time-synchronized (NTP across servers) for accuracy – we do that.
+  
+  By rigorously following these standards and prerequisites, we aim to minimize surprises in compliance and risk management. This disciplined approach ensures our architecture remains robust not just technically, but also in satisfying the oversight and regulatory environment in which the business operates. In the event of an audit or assessment, we can demonstrate that we have identified and addressed risks methodically and built compliance into the fabric of our applications.
+  
+  ## Visual Models
+  
+  ### Application Architecture Models & Views
+  
+  <Purpose>
+  Provides visual models to communicate how applications relate to business processes, data, and technology. Useful for stakeholders to grasp complexity and plan changes. The Application Model (i.e., the application architecture) describes the application structure and the interactions among the applications.
+  
+  <Instructions>
+  1. **Use ArchiMate or UML:** Include Application Communication Views, Layered Views, Deployment Views.
+  2. **Model Key Interactions:** Show integration points, external/internal interfaces, and data flow.
+  3. **Reference Logical or Physical Models:** Add supporting diagrams from modeling tools.
+  4. **Describe the application composition and relationships among components:** The model should contain the top-level applications, system-level components and data stores used in the solution. It should also show all the architecturally significant external and internal interfaces between those solution components and between external actors/agents. A typical methodology employed to describe the application model would be a level 1 Data Flow Diagram (DFD).
+  
+  <Example>
+  To **visualize the application architecture**, we provide a set of diagrams and models. These help illustrate how the system is structured and how data flows between elements, complementing the textual description above. We use a layered approach (Business layer, Application layer, Data layer) to show alignment with business capabilities, and application communication diagrams to show integrations.
+  
+  Below is an example **Application Architecture model** depicted in a diagram form (using a Mermaid.js flowchart for illustration). This diagram maps business roles and capabilities to application functions and components, and shows key data entities and their relationships:
+  
+  ```Mermaid
+  flowchart TD
+    %% Business Capabilities
+    B1[Manage Customers]
+    B2[Process Orders]
+    B3[Generate Invoices]
+    B4[Maintain Product Catalog]
+    %% Business Roles (Actors)
+    R1[Customer Service Rep]
+    R2[Order Clerk]
+    R3[Billing Analyst]
+    R4[Product Manager]
+    %% Application Components
+    A1[CRM System]
+    A2[Order System]
+    A3[Billing System]
+    A4[Product Catalog Service]
+    %% Application Functions
+    F1[Customer Profile Management]
+    F2[Order Processing]
+    F3[Invoice Generation]
+    F4[Product Maintenance]
+    %% Logical Data Entities
+    D1["(Customer)"]
+    D2["(Address)"]
+    D3["(Order)"]
+    D4["(Order Item)"]
+    D5["(Product)"]
+    %% Business Role -> Business Capability
+    R1 --> B1
+    R2 --> B2
+    R3 --> B3
+    R4 --> B4
+    %% Capability -> Application Function
+    B1 --> F1
+    B2 --> F2
+    B3 --> F3
+    B4 --> F4
+    %% Application Function -> Application Component
+    F1 --> A1
+    F2 --> A2
+    F3 --> A3
+    F4 --> A4
+    %% Application Component -> Logical Data Entity
+    A1 --> D1
+    A1 --> D2
+    A2 --> D3
+    A2 --> D4
+    A3 --> D3
+    A3 --> D4
+    A4 --> D5
+    %% Data relationships
+    D1 -->|has| D2
+    D3 -->|contains| D4
+    D4 -->|references| D5
+    %% Groupings for clarity
+    subgraph Business Layer
+      R1
+      R2
+      R3
+      R4
+      B1
+      B2
+      B3
+      B4
+    end
+    subgraph Application Layer
+      F1
+      F2
+      F3
+      F4
+      A1
+      A2
+      A3
+      A4
+    end
+    subgraph Data Layer
+      D1
+      D2
+      D3
+      D4
+      D5
+    end
+  ```
+  
+  The above **Layered View** shows how, for example, the *Order Clerk* role is linked to the *Process Orders* capability, which is realized by the Order Processing function in the application layer, implemented by the Order System (A2). The Order System in turn deals with Order and Order Item data entities. Similar traceability is shown for other domains. This helps validate that every business need is supported by an application component, and conversely that every application component is justified by a business need.
+  
+  We also develop an **Application Communication Diagram** (not fully shown here in text) that depicts **interfaces and data flows** between our applications and with external actors. In summary, the communication diagram includes:
+  
+  * A1 (CRM System) – has an interface to A2 (Order System) for customer data lookup (likely via an API call from Order to CRM). Also an interface to A3 (Billing) perhaps to sync customer info or credit data. External interface from CRM: used by Customer Service Reps through a UI.
+  * A2 (Order System) – interfaces with A4 (Product Catalog) to fetch product details, with A3 (Billing) to send billing events, and with external Payment Gateway (actor) to process payments. It also interfaces with A1 (CRM) to retrieve customer data as mentioned. External interface: used by the Order Clerks (internal user) and by the Customer Portal (which we consider part of the order system front-end).
+  * A3 (Billing System) – receives input from A2 (order details to generate invoice), and might interface with an external Finance system (for general ledger posting, if any). It also sends data to a reporting database perhaps. External interface: used by Billing Analysts via an interface or by finance report tools.
+  * A4 (Product Catalog Service) – interfaces with A2 (providing product info) and possibly with external e-commerce site or supplier systems if needed. External interface: used by Product Manager through an admin UI to update products.
+  * Additionally, we include external actors like *Payment Gateway* connecting to Order System, and *Shipping Carrier* API connecting to the Order System (for fulfilling orders).
+  
+  All these interactions are labeled with the data or service they carry (e.g., "CustomerID query", "Order event", "Payment request", etc.) on the communication diagram.
+  
+  We also create a **Deployment Diagram** (in UML) in the Technology Architecture detailing how these application components are deployed across nodes (e.g., CRM SaaS is cloud-hosted, Order System runs on AWS EKS cluster, etc.), but for the scope of Application Architecture, we focus on logical interactions.
+  
+  Another useful view is the **Context Diagram** (Level-1 DFD style) of the Order Management System as a centerpiece:
+  
+  * It shows Order System (A2) in the middle, with arrows going to CRM (to get customer info), Product Service (get product and stock), Billing (send invoice data), Payment Gateway (send payment and receive status), Shipping Service (send shipment order), and Portal (receiving order submissions from customers). This single diagram conveys all inputs/outputs of the Order system in one view, which is great for understanding the integration scope.
+  
+  Similarly, a context diagram for CRM might show it connecting to Order, to an email marketing system, etc., giving a complete picture of its touchpoints.
+  
+  All these models are created in ArchiMate in our EA tool repository for formality. They correspond to standard TOGAF artifacts: we have **Application Communication diagrams**, **Application Usage (interaction with business processes)**, and **Data Entity–Application matrices** that show which applications handle which data. We also used a **System/Function matrix** to ensure each required function (like "Manage customer account") is covered by an application.
+  
+  **Illustrative Summary of Component Relationships:**
+  
+  * The **CRM (A1)** contains sub-components such as Account Management and Contact Management modules. It stores Customer and Address data. It provides customer info to Order System via API call (this is one internal interface).
+  * The **Order System (A2)** comprises modules like Order Entry, Inventory Check, Payment Processing, etc. It uses Product data from Product Service and sends events or API calls to Billing. It also updates Order and Inventory data stores.
+  * The **Billing System (A3)** includes Invoicing module and AR module. It consumes order info and produces Invoice records. It shares Order and Order Item as inputs (from A2) and outputs financial records (which maybe flow to ERP).
+  * The **Product Catalog (A4)** has a Product DB and provides product query and update services. It interacts mainly with A2 (and maybe directly with Portal for product browsing).
+  * **Portal (as part of user interface)** interacts with A2 and indirectly with others through A2. It's considered at the edge of application layer interfacing with users (Customers, who are external actors).
+  
+  By visualizing the above in diagrams, we ensure clarity on how information moves through our system and how responsibilities are assigned. These views help validate that the architecture is complete (all required interactions are accounted for) and compliant with separation of concerns (e.g., no inappropriate direct DB access across components, everything flows via designed interfaces).
+  
+  Finally, all diagrams and models are stored in the architecture repository and will be updated as the architecture evolves. They serve as a reference for future solution designers and for onboarding new team members – a picture is often worth a thousand words in conveying the structure of our application landscape.
+  
+  <Prerequisites>
+  For producing these models, we needed:
+  
+  * **Accurate inputs from Business & Data Architecture:** e.g., list of business capabilities, roles, and key data entities (so that we could include B1–B4 and D1–D5 in the diagram above). These came from previous phases (Phase B and data architecture work).
+  * **Modeling Tools:** Access to an EA modeling tool (such as Archi or Sparx EA) that supports ArchiMate or UML. We have that in place, and architects familiar with using it.
+  * **Conventions Set:** A decision on diagram notation (we chose ArchiMate for consistency, plus some custom visuals via Mermaid for documentation). We aligned on a legend and style (e.g., applications in blue boxes, externals in gray, data stores in cylinders) to keep diagrams understandable.
+  * **Review with Stakeholders:** We conducted a walkthrough of these diagrams with key stakeholders (e.g., dev leads, business analysts) to verify correctness. This was done to ensure the models reflect reality and to catch any missing interaction not described elsewhere.
+  * **Include External Interfaces:** We confirmed all necessary external actors (like Payment Gateway, etc.) to depict them. This required knowledge of all integration requirements (from requirements or use case analysis) as a prerequisite to complete the communication diagram.
+  
+  <Standards>
+  We adhered to **TOGAF’s recommended artifacts** for Application Architecture. Specifically, we produced:
+  
+  * The **Application Communication Diagram** that shows all internode communication between applications (as partially described above).
+  * An **Application and User Location Diagram** which maps where users (by role or geography) access each application – useful if, say, we needed to show that Order Clerks in one location use the Order system hosted elsewhere.
+  * A **System Use-Case Diagram** for key scenarios, showing how users interact with applications to accomplish tasks. This helps validate that the applications collectively support all required user scenarios.
+  * We also have the **Data Entity to Application matrix** (showing CRUD of each data entity by which application) to align with data architecture.
+  
+  The diagrams follow the **ArchiMate 3.1 standard** for notation. For example, business roles and actors are modeled in the Business layer, application components in Application layer, and data objects in the Technology/Data layer. We use junctions, flows, and services in ArchiMate as appropriate. This ensures consistency and that any architect can read them with standard meaning.
+  
+  We also ensure that **level-1 DFD** guidelines are met: the context diagram clearly shows all sources and sinks of data for each major process, satisfying common practice for communicating integration at a high level.
+  
+  All modeling standards, including naming (we name elements clearly, e.g., "Order System" not just "Order"), and layout conventions, are followed as per our architecture team’s guidelines. For example, external systems are represented with the "Business Actor/Role" or an interface with a sterotype <<External>> to make it clear in diagrams.
+  
+  In conclusion, the models and views presented provide a complete and standardized visual representation of the Application Architecture. They serve as a bridge between conceptual understanding and implementation details, ensuring everyone from business stakeholders to developers shares a common picture of how the solution is structured and operates. This visual documentation will be maintained alongside textual documentation, as part of our architecture knowledge base, and updated if the architecture changes in the future.
+  
+  <Standards>
+  (All modeling standards and reference diagrams adhered to were discussed above, combining with prerequisites for brevity.)
+  
+  ### Application Interaction Matrix (CRUD)
+  
+  ## Integration Architecture
+  
+  ### Application Communication Diagram
+  
+  <Purpose>
+  
+  Illustrates—in **one coherent view—the run‑time data and process flows between applications**, the boundaries they cross, and the integration patterns in use. The diagram is the definitive reference for architects, developers, risk owners, and operations teams when they assess change impact, security exposure, or performance constraints.
+  
+  <Instructions>
+  
+  | Step  | Task                            | Guidance & Expected Content                                                                                                                                                                                                                                                                                                                   |
+  |-------|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | **1** | **Define Viewpoint & Scope**    | Choose an Integration‑ or Application‑centric viewpoint per ISO/IEC/IEEE 42010. Show only the applications, channels, and endpoints relevant to the project or capability in scope.                                                                                                                                                           |
+  | **2** | **Select Modelling Notation**   | Use an **internationally standardised notation** (ISO/IEC 19540 ArchiMate 3.2 *Application Collaboration View*, or ISO/IEC 19505 UML 2.5 *Component*/*Deployment* diagrams). Mermaid or C4 can be used for lightweight documentation, but the canonical model must exist in the EA repository.                                                |
+  | **3** | **Represent Applications**      | Label each application with its unique ID from the *Application Portfolio Catalog* (AP‑nnn). Group them in logical zones (Core, Edge, Third‑Party, Cloud, DMZ).                                                                                                                                                                               |
+  | **4** | **Draw Flows**                  | One arrow per **logical interface**. Annotate with:<br>• **Pattern** (Sync Req/Resp, Async Event, Batch, File Drop)<br>• **Primary Protocol** (REST/HTTP, gRPC, MQTT, AMQP, SFTP, JDBC, etc.)<br>• **Key Payload** or process (e.g., “POST /order”, “CustomerCreated event”)<br>• **Direction** and **frequency** (real‑time, hourly, daily). |
+  | **5** | **Indicate Quality & Security** | Where relevant, colour‑code or tag the flow for:<br>• **Criticality** (per ISO/IEC 20000 SLAs)<br>• **Data Classification** (ISO/IEC 27001)<br>• **Latency target** (e.g., <100 ms).                                                                                                                                                          |
+  | **6** | **Show Boundaries**             | Use dashed boxes or swim‑lanes to visualise trust zones, VPCs, or geographic regions (per ISO/IEC 27033‑3 network security architecture).                                                                                                                                                                                                     |
+  | **7** | **Version & Trace**             | Stamp the diagram with model version, date, and author. Maintain traceability to the Interface Catalog via interface IDs.                                                                                                                                                                                                                     |
+  | **8** | **Validate & Publish**          | Review with Domain Architects, Integration Platform team, and Cyber‑Security. Store the approved diagram in the EA tool; export a PNG/SVG for solution‑level documents.                                                                                                                                                                       |
+  
+  <Prerequisites>
+  
+  1. **Updated Application Portfolio Catalog** (IDs, owners).
+  2. **List of Active Interfaces** from the Interface Catalog.
+  3. **Integration Principles & Patterns** adopted by the organisation.
+  4. **Data Classification Matrix** and **Trust‑Zone Definitions**.
+  5. **Current Network & Security Architecture** (zones, firewalls, gateways).
+  6. **SLA/SLO Baselines** for latency, throughput, availability.
+  7. **Technology Reference Model** indicating approved protocols and middleware.
+  
+  <Standards>
+  
+  International and recognised standards that govern creation and maintenance of the Application Communication Diagram:
+  
+  * **ISO/IEC/IEEE 42010:2011** — Systems & Software Engineering — Architecture Description
+  * **ISO/IEC 19540‑1/‑2:2020** — ArchiMate® 3.2 Notation for Architecture Modelling
+  * **ISO/IEC 19505‑1/‑2:2012** — UML® 2.5 Infrastructure & Superstructure
+  * **The Open Group TOGAF® Standard, 10th Edition (2022)** — ADM Phase C (Data/Application) viewpoints
+  * **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** — Request‑to‑Fulfil value stream integration views
+  * **ISO/IEC 27033‑3:2020** — Network Security Architecture (segmentation and trust‑zones)
+  * **ISO/IEC 25010:2023** — Quality Model (interoperability, performance, security)
+  * **ISO/IEC 27001:2022** — Information Security Management (classification & control requirements)
+  
+  ### Interface Catalog
+  
+  <Purpose>
+  
+  A **comprehensive inventory of every logical interface between two applications or between an application and an external party**. The catalog supports impact analysis, capacity planning, contract management, audit, and risk assessments by detailing owners, protocols, payloads, SLAs, and security classifications.
+  
+  <Instructions>
+  
+  | Field                       | Mandatory? | Description & Allowed Values / Format                                                                                        |
+  |-----------------------------|------------|------------------------------------------------------------------------------------------------------------------------------|
+  | **Interface ID**            | Yes        | Prefix “INT” + zero‑padded number (e.g., INT‑042). Immutable once assigned.                                                  |
+  | **Source Application (ID)** | Yes        | Application ID from Portfolio Catalog.                                                                                       |
+  | **Target Application (ID)** | Yes        | Application ID or “EXT‑\<Partner>” for external entities.                                                                    |
+  | **Pattern**                 | Yes        | *Sync‑Request/Response*, *Async‑Event*, *Batch*, *File*, *Streaming*.                                                        |
+  | **Transport Protocol**      | Yes        | HTTP/1.1, HTTP/2, gRPC, AMQP 1.0, MQTT 3.1.1, SFTP, JDBC, etc. Must appear in the approved protocol list.                    |
+  | **Data Contract**           | Yes        | Reference to schema artefact (e.g., OpenAPI 3.1 YAML, AsyncAPI 2.6 YAML, XSD, Avro). Provide repository URI and version tag. |
+  | **Frequency / Trigger**     | Yes        | “Real‑time”, “Every 5 min”, “Nightly @ 00:30 UTC”, “On Event <name>”.                                                        |
+  | **Data Classification**     | Yes        | *Public*, *Internal*, *Confidential*, *Restricted* (per ISO/IEC 27001).                                                      |
+  | **SLA / SLO**               | Yes        | Availability, latency, throughput targets (aligned to ITIL 4 service metrics).                                               |
+  | **Error & Retry Policy**    | Yes        | Idempotency rules, exponential back‑off, dead‑letter queue, etc.                                                             |
+  | **Owning Team / Contact**   | Yes        | Single accountable team (email, Teams).                                                                                      |
+  | **Lifecycle Status**        | Yes        | *Designed*, *Implemented*, *Live*, *Deprecated*, *Retired*.                                                                  |
+  | **Last Reviewed**           | Yes        | ISO 8601 date when details were last validated.                                                                              |
+  
+  *Process*
+  
+  1. **Create a new entry** whenever a change request adds, modifies, or retires an interface.
+  2. **Peer‑review** each entry for completeness and compliance with approved patterns.
+  3. **Synchronise** with the CMDB and API Gateway catalogue through nightly ETL jobs.
+  4. **Audit** quarterly for SOX and ISO/IEC 27001 control effectiveness.
+  
+  <Example>
+  
+  | Interface ID | Source App      | Target App   | Pattern               | Protocol        | Data Contract            | Frequency               | Class.       | SLA (Avail / Latency) | Owner         | Status   |
+  |--------------|-----------------|--------------|-----------------------|-----------------|--------------------------|-------------------------|--------------|-----------------------|---------------|----------|
+  | INT‑001      | AP01 CRM        | AP03 ERP     | Sync‑Request/Response | REST/HTTP 1.1   | `crm‑order‑v2.yaml`      | Real‑time               | Internal     | 99.9 % / <200 ms      | Sales IT      | Live     |
+  | INT‑014      | AP02 E‑Commerce | EXT‑TaxSvc   | Async‑Event           | HTTPS + Webhook | `asyncapi‑tax‑v1.yaml`   | On Event `OrderCreated` | Confidential | 99.5 % / <1 s         | Digital IT    | Live     |
+  | INT‑027      | AP03 ERP        | DW01 Data WH | Batch                 | SFTP            | `erp‑dw‑sales‑2025.avsc` | Nightly 01:00           | Internal     | 99 % / N/A            | Data Platform | Live     |
+  | INT‑045      | AP05 HRMS       | AP03 ERP     | File                  | SFTP            | `hrms‑erp‑payroll‑xsd`   | Semi‑monthly            | Restricted   | 99.8 % / N/A          | HR IT         | Designed |
+  
+  <Prerequisites>
+  
+  1. **Approved Interface Naming & Versioning Policy** (OpenAPI/AsyncAPI or WSDL).
+  2. **Data Classification & Handling Policy** (ISO/IEC 27001 Annex A).
+  3. **Protocol & Pattern Allow‑List** within the Integration Platform Standards.
+  4. **Authoritative Application IDs** from the Application Portfolio Catalog.
+  5. **SLA/SLO Framework** aligned with ITIL 4 and ISO/IEC 20000‑1.
+  6. **Repository of Schemas & Contracts** (Git, Artefact Repo, API Gateway).
+  7. **Change & Release Management Process** (COBIT 2019 BAI06 / ITIL 4 Change Enablement).
+  
+  <Standards>
+  
+  * **ISO/IEC/IEEE 42010:2011** — Architecture Description (view & model definitions)
+  * **ISO/IEC 19770‑1:2017** — IT Asset Management (inventory discipline)
+  * **ISO/IEC 20000‑1:2018** — IT Service Management (SLA/OLA requirements)
+  * **ISO/IEC 27001:2022** — Information Security Management (data classification & controls)
+  * **ISO/IEC 27002:2022** — Security Controls guidance (Annex A mapping)
+  * **ISO/IEC 20922:2016** — MQTT (messaging protocol reference)
+  * **ISO 20022:2013** — Universal financial industry message scheme (where financial data is exchanged)
+  * **The Open Group TOGAF® Standard, 10th Edition (2022)** — Interface Catalog artefact (Phase C)
+  * **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** — Request‑to‑Fulfil data flows
+  * **OAS OpenAPI Specification 3.1 (2023)** — REST interface contract format
+  * **AsyncAPI Specification 2.6 (2024)** — Event‑driven and streaming interface contracts
+  * **W3C XML Schema 1.1 & WSDL 2.0** — SOAP/XML interface definition standards
+  * **JSON Schema (2020‑12)** — JSON data contract standard
+  * **ITIL® 4 (2019)** — Service Design & Transition practices
+  * **COBIT® 2019** — Governance & Management of Enterprise IT (BAI & DSS domains)
+  
+  ### Application–Entity & Capability Coverage Matrices
+  
+  <Purpose>
+  
+  * **Application × Data‑Entity Interaction Matrix (CRUD)** – reveals which systems **Create (C), Read (R), Update (U), or Delete (D)** each enterprise data entity, highlighting master‑data ownership, redundancies, and integration‑impact areas.
+  * **Application × Business‑Capability Summary Matrix** – maps every application to the capability(‑ies) it supports and overlays **lifecycle stage** and **inherent risk level** to aid rationalisation, investment / retirement decisions, and control prioritisation.
+  
+  <Instructions>
+  
+  | Step  | Activity                         | Guidance & Expected Deliverables                                                                                                                                                                                                                                                                                                               |
+  |-------|----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | **1** | **Freeze Reference Models**      | Confirm latest versions of the **Enterprise Data Model** (entities) and the **Business Capability Map** (capabilities).                                                                                                                                                                                                                        |
+  | **2** | **Extract Application List**     | Use the authoritative *Application Portfolio Catalog* (AP‑IDs, owners, lifecycle stage, risk score).                                                                                                                                                                                                                                           |
+  | **3** | **Populate CRUD Matrix**         | <br>1. For each entity, mark the role of every application with **C / R / U / D**. <br>2. If an application is the *single source of truth* (SSoT) for an entity, append **(M)** after the letter(s) – e.g., **C(M), U(M)**. <br>3. Leave blank where no interaction exists to maintain visual clarity.                                        |
+  | **4** | **Populate Capability Matrix**   | <br>1. Place a **✓** where the application delivers significant functionality for that capability (do *not* mark incidental data sharing). <br>2. Copy **Lifecycle Stage** (Idea, Planned, Development, Live, Sunset in‑Progress, Retired) and **Risk Level** (🔴 High, 🟡 Medium, 🟢 Low) directly from the catalog to preserve data lineage. |
+  | **5** | **Quality & Consistency Checks** | <br>• Each entity must have at least one application flagged **C(M)** to avoid orphan data. <br>• Each capability should map to one or more live or planned applications; gaps indicate unmet needs. <br>• Cross‑validate risk colour‑coding with the Enterprise Risk Register.                                                                |
+  | **6** | **Review & Sign‑off**            | Present draft matrices to Data Governance, Business Architecture, Security, and Domain Owners for validation. Record approvals and any dissenting comments.                                                                                                                                                                                    |
+  | **7** | **Publish & Maintain**           | Store the signed‑off matrices in the EA repository (e.g., LeanIX, Sparx, Confluence). Update quarterly or whenever an application changes lifecycle stage or risk rating.                                                                                                                                                                      |
+  
+  *Formatting notes*
+  
+  * Use conditional formatting or emojis for risk levels (🔴 / 🟡 / 🟢) and lifecycle stages to enable rapid scanning.
+  * Keep cell text ≤ 6 characters; detailed notes belong in supporting sheets or tooltips.
+  * Version‑stamp each matrix (author, date, version).
+  
+  <Example>
+  
+  **Application Interaction Matrix (CRUD)**
+  
+  | Data Entity | CRM     | E-Commerce | ERP        | HRMS       | EDW |
+  |-------------|---------|------------|------------|------------|-----|
+  | Customer    | C, R, U | C, R, U    | R          |            | R   |
+  | Order       | C, R, U | C, R, U    | C, R, U    |            | R   |
+  | Product     | R       | R          | C, R, U, D |            | R   |
+  | Inventory   | R       | R          | C, R, U    |            | R   |
+  | Employee    |         |            |            | C, R, U, D | R   |
+  
+  **Application Capability Summary Matrix**
+  
+  | Application | Customer Mgmt | Sales & Marketing | Digital Commerce | Order Fulfillment | Financial Mgmt | HR Mgmt | Analytics & Reporting | Stage      | Risk      |
+  |-------------|---------------|-------------------|------------------|-------------------|----------------|---------|-----------------------|------------|-----------|
+  | CRM         | ✓             | ✓                 |                  |                   |                |         |                       | Live 🟢    | Low 🟢    |
+  | E-Commerce  |               | ✓                 | ✓                |                   |                |         |                       | Live 🟢    | Medium 🟡 |
+  | ERP         |               |                   |                  | ✓                 | ✓              |         |                       | Live 🟢    | High 🔴   |
+  | HRMS        |               |                   |                  |                   |                | ✓       |                       | Planned 🟡 | Medium 🟡 |
+  | EDW         |               |                   |                  |                   |                |         | ✓                     | Live 🟢    | Low 🟢    |
+  
+  <Prerequisites>
+  
+  1. **Enterprise Data Model** with approved entity definitions and owners.
+  2. **Business Capability Map** (current, version‑controlled).
+  3. **Application Portfolio Catalog** (IDs, lifecycle stages, risk ratings).
+  4. **Risk Register & Control Library** to assign risk levels consistently.
+  5. **Data Classification Scheme** (ISO/IEC 27001 Annex A) if entities carry sensitivity labels.
+  6. **Integration Architecture Artefacts** (Interface Catalog and Communication Diagram) to verify CRUD assignments.
+  7. **Change‑Control Records** for pending application introductions or decommissions.
+  
+  <Standards>
+  
+  * **ISO/IEC/IEEE 42010:2011** – Architecture description framework for defining viewpoints, models, and correspondence.
+  * **The Open Group TOGAF® Standard, 10th Edition (2022)** – *Application Interaction Matrix* & *Application/Capability Matrix* artefacts (ADM Phase C).
+  * **The Open Group IT4IT™ Reference Architecture, Version 3.0 (2022)** – Strategy‑to‑Portfolio and Requirement‑to‑Deploy value streams for catalog and risk data.
+  * **ISO/IEC 19540‑1/‑2:2020 (ArchiMate® 3.2)** – Application, Data, and Capability elements & relationships.
+  * **ISO/IEC 19770‑1:2017** – IT Asset Management principles ensuring complete and auditable inventories.
+  * **ISO/IEC 27001:2022** – Information Security Management for risk rating and data‑entity classification.
+  * **ISO/IEC 25010:2023** – System & Software Quality Models (reliability and maintainability factors informing risk).
+  * **COBIT® 2019** – Governance & Management objectives (APO02, BAI02) governing architecture and risk alignment.
+  * **ITIL® 4 (2019)** – Service configuration & risk management practices feeding lifecycle and risk status.
+  
+  ### Capability Realisation Mapping & Gap Analysis
+  
+  <Purpose>
+  
+  1. Verifies coverage — proves every critical capability has at least one enabling application or planned solution.
+  2. Highlights duplication and shortfalls — reveals overlap, under‑investment, or missing functionality so that rationalisation or new investment can be justified.
+  3. Feeds the transition roadmap — each documented gap becomes a scoped work package or architectural decision.
+  4. Supports audit & compliance — demonstrates alignment of technology assets with strategy, governance principles, and risk controls.
+  
+  <Instructions>
+  
+  1. Establish Reference Baselines: Freeze the latest Business Capability Map and Application Portfolio Catalog (incl. lifecycle stage & risk).
+  2. Identify Realising Assets: For every capability in scope, record the application(s) or platform services that directly deliver or enable that capability. Assign the artefact type: ABB (current/baseline) or SBB (target/solution).
+  3. Assess Coverage & Quality: Examine each mapping against:• Functional fit (all required features?)• Non‑functional fit (ISO/IEC 25010 attributes: performance, security, usability, etc.)• Strategic fit (alignment with architecture principles, cloud strategy, data strategy).
+  4. Document Gaps : Where coverage is insufficient, capture concise gap notes:• Nature of shortfall (e.g., “manual process”, “module obsolete”, “no API”)• Severity (🔴 High / 🟡 Medium / 🟢 Low)• Reference to risk register item or control deficiency, if applicable.
+  5. Propose Remediation : For each gap, indicate next action: Enhance, Replace, Retire, New Build, or No Action (with rationale). Where known, reference the target SBB or project ID.
+  6. Validate with Stakeholders : Review draft with Business Capability Owners, Domain Architects, Cyber‑Security, and Portfolio Management. Collect approvals and date‑stamp.
+  7. Publish & Maintain : Store the approved matrix in the EA repository; update quarterly or whenever capability scope, application lifecycle, or risk posture changes. Version every update (vX.Y, date, author).
+  
+  Formatting rules
+  * Use one row per Business Capability. If multiple applications jointly realise a capability, list them comma‑separated or create additional rows with clear identifiers (e.g., “CRM + Billing”).
+  * Keep “Gap Notes” ≤ 120 characters; deeper detail belongs in an issue tracker or roadmap.
+  * Colour‑code gap severity to aid rapid scanning.
+  
+  <Example>
+  
+  | Business Capability | Realized By (App) | ABB/SBB | Gap Notes                                 |
+  |---------------------|-------------------|---------|-------------------------------------------|
+  | Manage Customers    | CRM (A1)          | SBB     | None – mapped 1:1                         |
+  | Process Orders      | Order Svc (A2)    | SBB     | Inventory logic not modularized           |
+  | Product Management  | Catalog Svc (A4)  | SBB     | UI Admin tooling TBD                      |
+  | Financial Reporting | Billing (A3)      | SBB     | ERP module aging – replacement in roadmap |
+  
+  <Prerequisites>
+  
+  1. Approved Business Capability Map (with owners and priority tier).
+  2. Current Application Portfolio Catalog (IDs, lifecycle stage, risk rating).
+  3. Enterprise Architecture Principles & Reference Models (Technology, Data, Security).
+  4. Risk Register and Control Library for mapping gaps to risk appetite.
+  5. Transition or Investment Roadmap to anchor remediation actions.
+  6. Quality Attribute Baselines (ISO/IEC 25010 metrics) for target‑state comparison.
+  7. Change‑Control Records & Project Backlog for in‑flight initiatives affecting capabilities.
+  
+  <Standards>
+  
+  International and industry frameworks guiding structure, notation, and governance of the Capability Realisation Mapping:
+  * The Open Group TOGAF® Standard, 10th Ed. (2022) – Capability–to‑Solution mapping artefact (ADM Phases B–C, and Gap Analysis in Phase E).
+  * The Open Group IT4IT™ Reference Architecture, v3.0 (2022) – Strategy‑to‑Portfolio value stream for capability alignment and demand governance.
+  * ISO/IEC/IEEE 42010:2011 – Architecture description (viewpoints, views, correspondence).
+  * ISO/IEC 19540‑1/‑2:2020 (ArchiMate® 3.2) – Modelling Business Capability, Application Component, and Realisation relationships.
+  * ISO/IEC 25010:2023 – Systems & Software Quality Models for assessing non‑functional gaps.
+  * ISO/IEC 19770‑1:2017 – IT Asset Management, ensuring accurate ABB/SBB inventories.
+  * ISO/IEC 33001 & 33020:2015 – Process assessment for capability maturity (if maturity scoring is applied).
+  * COBIT® 2019 – Governance & Management Objectives (APO03 “Manage Enterprise Architecture”, BAI02 “Manage Requirements Definition”).
+  * ITIL® 4 (2019) – Service Value Chain alignment, especially Plan and Improve stages influencing gap remediation.
+  * NIST Cybersecurity Framework 2.0 (2024) & ISO/IEC 27001:2022 – Risk categorisation and control mapping for security‑related capability gaps.
+  
+  ### Stakeholder Concerns & Viewpoints
+  
+  <Purpose>
+  
+  Captures the key concerns of different stakeholders and shows how the Application Architecture addresses them. Organizing viewpoints around stakeholders ensures the architecture remains relevant, actionable, and aligned with enterprise needs.
+  
+  <Instructions>
+  
+  1. **Identify Stakeholders:** Include business, IT, security, compliance, operations, etc.
+  2. **Capture Concerns:** What keeps them up at night? (e.g., integration reliability, customer experience, compliance)
+  3. **Viewpoint Mapping to the Architecture:** Show how the architecture addresses these concerns. Reference models, patterns, or diagrams as needed.
+  
+  <Example>
+  
+  #### Security Architect
+  
+  **Concerns**
+  
+  * API authentication, authorization, and secure token handling
+  * Protection against common web attacks (OWASP Top 10)
+  * Encryption at rest and in transit
+  * Logging and audit traceability
+  
+  **Architecture Response**
+  
+  * OAuth2 + OpenID Connect implemented across all public-facing APIs
+  * API Gateway enforces rate limits, scopes, and key lifecycle
+  * HTTPS enforced on all traffic, MTLS optional for internal APIs
+  * Web apps and APIs undergo static analysis, pen testing, and follow OWASP ASVS
+  * Centralized audit logging through OpenTelemetry & SIEM integration
+  * Follows "Security by Design" (see `Strategic Principles` and `Integration Architecture`)
+  
+  #### Business Owner (Customer Service VP)
+  
+  **Concerns**
+  
+  * Minimal disruption to operations during CRM migration
+  * Improved visibility into customer data and interactions
+  * Fast time-to-value and reduced training curve
+  
+  **Architecture Response**
+  
+  * SaaS CRM platform selected for ease of deployment and reduced IT overhead
+  * CRM UI tailored to support sales workflows with minimal customization
+  * Historical customer data migrated and deduplicated into single source of truth
+  * Portal enables 24/7 self-service and data-driven sales enablement
+  * Refer to `Future State Architecture` and `Application Components & Services`
+  
+  #### CIO / CTO
+  
+  **Concerns**
+  
+  * Alignment with enterprise strategy (cloud-first, modularity)
+  * Vendor lock-in and technical debt mitigation
+  * Extensibility and long-term maintainability
+  
+  **Architecture Response**
+  
+  * All applications follow modular, service-oriented design patterns
+  * Microservices, event-driven, and API-led integration enable flexibility
+  * SaaS/COTS only used with data exportability and abstraction layers
+  * Lifecycle governance ensures decommissioning of legacy tech
+  * Refer to `Strategic Alignment & Principles` and `Lifecycle Governance`
+  
+  #### Compliance Officer (SOX, PCI, GDPR)
+  
+  **Concerns**
+  
+  * Audit trails, access control, and financial system segregation
+  * Data protection laws (GDPR, CCPA)
+  * PCI-DSS and PII handling
+  
+  **Architecture Response**
+  
+  * All financial transactions logged immutably with role-based controls
+  * Customer data encrypted, accessible only to authorized roles
+  * CRM and Portal designed for GDPR compliance (RTBF, data export)
+  * Tokenization ensures no credit card data is stored locally
+  * Refer to `Risks, Constraints & Compliance` and `Integration Architecture`
+  
+  #### Integration Architect
+  
+  **Concerns**
+  
+  * Reliable service-to-service communication
+  * Protocol mediation for legacy systems
+  * Data consistency across services
+  
+  **Architecture Response**
+  
+  * API-first design: all internal/external interactions via documented APIs
+  * Kafka used for event-driven messaging between services
+  * ESB handles SOAP-to-REST and legacy mediation for ERP/HRMS
+  * Canonical models used for core entities (Customer, Order)
+  * Refer to `Integration & API Architecture` and `Application Communication Diagram`
+  
+  #### DevOps / Platform Engineer
+  
+  **Concerns**
+  
+  * CI/CD pipeline standardization
+  * Observability and alerting for production systems
+  * Secure, scalable deployment environments
+  
+  **Architecture Response**
+  
+  * Git-based pipelines with SonarQube, Checkmarx, and automated deployments
+  * Logging via OpenTelemetry, metrics via Prometheus/Grafana or similar
+  * Environments include DEV, QA, UAT, STAGING, PROD, and DR
+  * Feature flags, rollback plans, and configuration-as-code applied
+  * Refer to `Lifecycle Governance & Risk` and `Environment Requirements`
+  
+  #### Product Owner / Application Owner
+  
+  **Concerns**
+  
+  * Business capability alignment and traceability
+  * Easy backlog grooming and agile delivery alignment
+  * Clear ownership of systems and roadmaps
+  
+  **Architecture Response**
+  
+  * Each application maps directly to one or more business capabilities
+  * Product backlog organized by sprint deliverables and capability support
+  * Application Portfolio catalog includes ownership, lifecycle stage, and KPIs
+  * KPIs and SLAs are monitored post go-live for continuous improvement
+  * Refer to `Application Capability Summary`, `Lifecycle Governance`, and `Application/Function Matrix`
+  
+  #### Data Architect / DPO
+  
+  **Concerns**
+  
+  * Single source of truth for key entities
+  * Canonical data model enforcement
+  * Data residency and sovereignty
+  
+  **Architecture Response**
+  
+  * CRM is authoritative for customer data, Product Catalog is authoritative for SKUs
+  * Canonical JSON schemas defined and enforced across services
+  * Data encryption and regional hosting configured for GDPR compliance
+  * Application CRUD matrix documents full data lifecycle across apps
+  * Refer to `Application Interaction Matrix`, `Data Standards`, and `Risks & Constraints`
+  
+  <Prerequisites>
+  1. Stakeholder Register with roles, contact details, authority levels.
+  2. Business Strategy & Objectives to ensure concerns align with strategic drivers.
+  3. Enterprise Risk Register and current Risk Appetite Statement.
+  4. Regulatory & Compliance Obligations catalogue (e.g., SOX, PCI‑DSS, GDPR).
+  5. Architecture Repository containing current viewpoints, principles, and decision logs.
+  6. Quality Attribute Baseline (ISO/IEC 25010 metrics) for performance, security, etc.
+  7. Change‑Control & Incident Records to surface emerging stakeholder concerns.
+  
+  <Standards>
+  * ISO/IEC/IEEE 42010:2011 — Systems & Software Engineering — Architecture Description (stakeholder, concern, and viewpoint definitions).
+  * The Open Group TOGAF® Standard, 10th Edition (2022) — Stakeholder Management and Architecture Viewpoints (ADM Phase A & Part IV).
+  * ISO 21502:2020 — Project, Programme, and Portfolio Management — Guidance on Stakeholder Engagement.
+  * ISO/IEC 25010:2023 — System & Software Quality Models (provides the quality attributes that typically drive concerns).
+  * COBIT® 2019 — Governance & Management Objectives (APO08 “Manage Relationships”, APO12 “Manage Risk”).
+  * ITIL® 4 (2019) — Stakeholder Value Management and Continual Improvement practices.
+  * ISO/IEC 27001:2022 — Information Security Management (security stakeholder concerns, controls, and residual risk treatment).
+  * ISO 9001:2015 — Quality Management Systems (customer focus and stakeholder satisfaction requirements).
+
+---
+
+This prompt is designed for professional architecture application architecture as markdown prompt designed for high-quality content generation and structured analysis.
+
+## How to Use This Prompt
+
+1. **Copy the prompt** from the prompt content section above
+2. **Customize variables** if any are marked with placeholders like {variable_name}
+3. **Paste into your AI tool** (ChatGPT, Claude, Copilot, etc.)
+4. **Provide your specific input** as requested by the prompt
+5. **Review and iterate** on the generated output as needed
+
+## Prompt Preview
+
+```
+1. [Information Systems Architecture: Application](#information-systems-architecture-application)
+   1. [Core Application Architecture](#core-application-architecture)
+      1. [Strategic Alignment \&...
+```
+
+## Best Practices
+
+- Read through the entire prompt before using to understand its requirements
+- Prepare any background information or context the prompt might need
+- Consider the intended audience and adjust examples accordingly
+- Test with different inputs to see the range of outputs possible
+
+## Supported AI Models
+
+This prompt has been tested and optimized for use with the supported models listed above. It may work with other AI systems but performance may vary.
+
+## Customization Tips
+
+- Modify the tone and style instructions to match your needs
+- Add specific examples relevant to your domain or industry
+- Adjust the output format requirements if needed
+- Include additional constraints or requirements as necessary
