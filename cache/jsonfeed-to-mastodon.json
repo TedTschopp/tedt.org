@@ -2833,7 +2833,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115396573751956686"
+    ],
+    "lastTootTimestamp": 1760811977494
   },
   "https://tedt.org/technology-architecture-as-markdown/": {
     "id": "/technology-architecture-as-markdown/",
@@ -2853,7 +2856,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115399416249072230"
+    ],
+    "lastTootTimestamp": 1760855350576
   },
   "https://tedt.org/sora-prompt/": {
     "id": "/sora-prompt/",
@@ -2868,7 +2874,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115400866044393594"
+    ],
+    "lastTootTimestamp": 1760877472688
   },
   "https://tedt.org/skill-profile-generator/": {
     "id": "/skill-profile-generator/",
@@ -2888,7 +2897,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115402238038935058"
+    ],
+    "lastTootTimestamp": 1760898407672
   },
   "https://tedt.org/script-a-podcast/": {
     "id": "/script-a-podcast/",
@@ -2982,5 +2994,28 @@
       "url": "https://tedt.org/"
     },
     "toots": []
+  },
+  "https://tedt.org/teds-writing-style/": {
+    "id": "/teds-writing-style/",
+    "title": "Communications [Ted's Writing Style]",
+    "summary": "A specialized prompt for communications [ted's writing style] with advanced AI capabilities and structured output formatting.",
+    "content_text": "A specialized prompt for communications [ted's writing style] with advanced AI capabilities and structured output formatting. https://tedt.org/teds-writing-style/",
+    "url": "https://tedt.org/teds-writing-style/",
+    "tags": [
+      "Communications",
+      "Content Creation",
+      "Writing"
+    ],
+    "date_published": "2025-10-17T00:00:00-07:00",
+    "date_modified": "2025-10-17T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115398309268933057"
+    ],
+    "lastTootTimestamp": 1760838459421
   }
 }
