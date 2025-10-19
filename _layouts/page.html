@@ -1,3 +1,71 @@
----
-layout: post
----
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="layout-page">
+  <head>
+    <meta charset="utf-8">
+
+    {% include utility/calculate-variables.html %}
+    
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include seo/indieauth-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include seo/meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa/pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags. -->
+    {% include feeds/feeds.html %}
+
+    {% include assets/all-css-includes.html %}
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include assets/scripts.html %}
+    {% capture __math_flag %}{{ page.math | default: '' }}{% endcapture %}
+    {% capture __mathjax_flag %}{{ page.mathjax | default: '' }}{% endcapture %}
+    {% assign __math_flag = __math_flag | strip | downcase %}
+    {% assign __mathjax_flag = __mathjax_flag | strip | downcase %}
+    {% if page.math == true or __math_flag == 'true' or __math_flag == '1' or page.mathjax == true or __mathjax_flag == 'true' or __mathjax_flag == '1' %}
+        {% include assets/mathjax.html %}
+    {% endif %}
+    {% if page.mermaid == true or page.mermaid == 'true' %}
+        {% include assets/mermaid.html %}
+    {% endif %}
+  </head>
+  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    {% include layout/top-nav-bar.html %}
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row w-100">
+            <!-- Main Content Column -->
+            <div class="col-12" id="content-column">
+                <!-- Page Content -->
+                <main role="main">
+                    <div class="py-4">
+                        <h1 class="mb-4">{{ page.title }}</h1>
+                        {% if page.description %}
+                            <p class="lead">{{ page.description }}</p>
+                        {% endif %}
+                        {{ content }}
+                    </div>
+                </main>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <!-- Footer -->
+    {% include layout/footer.html %}
+
+    <!-- Bootstrap core JavaScript -->
+    {% include assets/js-bottom-of-body.html %}
+
+  </body>
+</html>

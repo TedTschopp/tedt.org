@@ -9,9 +9,6 @@ layout: none
     <title>{{ page.title | escape }} – {{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {% include assets/all-css-includes.html %}
-    {% include assets/scripts.html %}
-
     <!-- Reveal.js core CSS -->
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/reveal.css">
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/theme/black.css" id="theme">
@@ -35,25 +32,20 @@ layout: none
         }
 
         .reveal {
-            margin-top: 70px;
-            /* leave room for nav bar */
+            margin: 0;
         }
 
-        footer.site-footer {
-            display: none;
-        }
-
-        /* Show footer only on last slide */
-        .reveal .slides>section:last-of-type footer.site-footer {
-            display: block;
-            margin-top: 2rem;
+        /* Full screen presentation */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
         }
     </style>
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
-    {% include layout/top-nav-bar.html %}
-
+<body>
     <div class="reveal">
         <div class="slides">
             {% if page.markdown %}
@@ -78,14 +70,23 @@ layout: none
     <script>
         // Wait for all scripts to load and DOM to be ready
         function initializeReveal() {
+            console.log('Attempting to initialize Reveal.js...');
+            console.log('Reveal available:', typeof Reveal !== 'undefined');
+            console.log('RevealMarkdown available:', typeof RevealMarkdown !== 'undefined');
+            console.log('RevealHighlight available:', typeof RevealHighlight !== 'undefined');
+            console.log('RevealNotes available:', typeof RevealNotes !== 'undefined');
+            
             if (typeof Reveal !== 'undefined' && 
                 typeof RevealMarkdown !== 'undefined' && 
                 typeof RevealHighlight !== 'undefined' && 
                 typeof RevealNotes !== 'undefined') {
                 
                 try {
+                    console.log('All dependencies loaded, initializing...');
+                    
                     // Initialize Mermaid first
                     if (typeof mermaid !== 'undefined') {
+                        console.log('Initializing Mermaid...');
                         mermaid.initialize({ 
                             startOnLoad: true,
                             theme: 'dark',
@@ -95,6 +96,7 @@ layout: none
                         });
                     }
                     
+                    console.log('Initializing Reveal.js...');
                     Reveal.initialize({
                         hash: true,
                         slideNumber: true,
@@ -108,9 +110,12 @@ layout: none
                         hashOneBasedIndex: false,
                         // Add some debugging
                         ready: function() {
-                            console.log('Reveal.js is ready');
+                            console.log('Reveal.js is ready and initialized!');
+                            console.log('Total slides:', Reveal.getTotalSlides());
+                            console.log('Current indices:', Reveal.getIndices());
                             // Force to first slide if not already there
                             if (Reveal.getIndices().h !== 0 || Reveal.getIndices().v !== 0) {
+                                console.log('Moving to first slide...');
                                 Reveal.slide(0, 0);
                             }
                         }
@@ -119,6 +124,7 @@ layout: none
                     console.error('Error initializing Reveal.js:', error);
                 }
             } else {
+                console.log('Not all dependencies loaded yet, retrying...');
                 // Retry after a short delay if libraries aren't ready yet
                 setTimeout(initializeReveal, 100);
             }
