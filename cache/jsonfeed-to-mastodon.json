@@ -2920,7 +2920,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115403089236923422"
+    ],
+    "lastTootTimestamp": 1760911395916
   },
   "https://tedt.org/role-and-objective/": {
     "id": "/role-and-objective/",
