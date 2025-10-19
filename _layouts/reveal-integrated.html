@@ -1,0 +1,88 @@
+---
+layout: none
+---
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="utf-8">
+    <title>{{ page.title | escape }} – {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% include assets/all-css-includes.html %}
+    {% include assets/scripts.html %}
+
+    <!-- Reveal.js core CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/reveal.css">
+    <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/theme/black.css" id="theme">
+
+    <style>
+        body,
+        .reveal {
+            background-color: var(--bs-body-bg);
+            color: var(--bs-body-color);
+        }
+
+        .reveal h1,
+        .reveal h2,
+        .reveal h3 {
+            color: var(--bs-primary-text-emphasis);
+        }
+
+        .reveal pre code {
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+        }
+
+        .reveal {
+            margin-top: 70px;
+            /* leave room for nav bar */
+        }
+
+        footer.site-footer {
+            display: none;
+        }
+
+        /* Show footer only on last slide */
+        .reveal .slides>section:last-of-type footer.site-footer {
+            display: block;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    {% include layout/top-nav-bar.html %}
+
+    <div class="reveal">
+        <div class="slides">
+            {% if page.markdown %}
+            <section data-markdown data-separator="^\n---\n" data-separator-vertical="^\n--\n" data-charset="utf-8">
+                <textarea data-template>
+{{ content | strip }}
+          </textarea>
+            </section>
+            {% else %}
+            {{ content }}
+            {% endif %}
+        </div>
+    </div>
+
+    <!-- Reveal.js scripts -->
+    <script src="https://unpkg.com/reveal.js@5/dist/reveal.js"></script>
+    <script src="https://unpkg.com/reveal.js@5/plugin/markdown/markdown.js"></script>
+    <script src="https://unpkg.com/reveal.js@5/plugin/highlight/highlight.js"></script>
+    <script src="https://unpkg.com/reveal.js@5/plugin/notes/notes.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: true,
+            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+            width: 1280, height: 720,
+            controls: true, progress: true, center: true
+        });
+    </script>
+</body>
+
+</html>
