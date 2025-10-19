@@ -73,15 +73,56 @@ layout: none
     <script src="https://unpkg.com/reveal.js@5/plugin/markdown/markdown.js"></script>
     <script src="https://unpkg.com/reveal.js@5/plugin/highlight/highlight.js"></script>
     <script src="https://unpkg.com/reveal.js@5/plugin/notes/notes.js"></script>
+    
+    <!-- Mermaid for diagrams -->
+    <script src="https://unpkg.com/mermaid@10/dist/mermaid.min.js"></script>
 
     <script>
-        Reveal.initialize({
-            hash: true,
-            slideNumber: true,
-            plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-            width: 1280, height: 720,
-            controls: true, progress: true, center: true
-        });
+        // Wait for all scripts to load and DOM to be ready
+        function initializeReveal() {
+            if (typeof Reveal !== 'undefined' && 
+                typeof RevealMarkdown !== 'undefined' && 
+                typeof RevealHighlight !== 'undefined' && 
+                typeof RevealNotes !== 'undefined') {
+                
+                try {
+                    // Initialize Mermaid first
+                    if (typeof mermaid !== 'undefined') {
+                        mermaid.initialize({ 
+                            startOnLoad: true,
+                            theme: 'dark',
+                            themeVariables: {
+                                darkMode: true
+                            }
+                        });
+                    }
+                    
+                    Reveal.initialize({
+                        hash: true,
+                        slideNumber: true,
+                        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+                        width: 1280, 
+                        height: 720,
+                        controls: true, 
+                        progress: true, 
+                        center: true
+                    });
+                } catch (error) {
+                    console.error('Error initializing Reveal.js:', error);
+                }
+            } else {
+                // Retry after a short delay if libraries aren't ready yet
+                setTimeout(initializeReveal, 100);
+            }
+        }
+
+        // Start initialization when DOM is loaded
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeReveal);
+        } else {
+            // DOM is already loaded
+            initializeReveal();
+        }
     </script>
 </body>
 
