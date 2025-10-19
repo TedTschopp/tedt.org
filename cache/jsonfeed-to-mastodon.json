@@ -2856,7 +2856,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115399416249072230"
+    ],
+    "lastTootTimestamp": 1760855350576
   },
   "https://tedt.org/sora-prompt/": {
     "id": "/sora-prompt/",
