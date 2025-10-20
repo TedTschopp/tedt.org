@@ -81,7 +81,7 @@ mastodon-post-id:
 
 ---
 
-# From Guesswork to Geometry: How We Measured the Mind
+## From Guesswork to Geometry: How We Measured the Mind
 
 When my daughters were younger, I’d sit at the kitchen table while they did their homework. One would be sounding out words, the other trying to remember how fractions worked—both frustrated in their own ways. I’d remind them, “You don’t have to know everything. You just have to keep getting better. Make stubbornness your superpower. If you keep at it, and growing, you will get there, and in many cases grow beyond all your friends and peers.”
 
@@ -100,7 +100,7 @@ That's what this year's story about Artificial Intelligence feels like—humanit
 </figure>
 </div>
 
-## The Year We Measured the Mind
+### The Year We Measured the Mind
 
 Last year, when people spoke of AI, it felt like talking about the horizon—everyone could see it, but no one could measure the distance. We had metaphors and milestones, prophets and pundits. What we didn’t have was a ruler.
 
@@ -114,7 +114,7 @@ If an AI ever earns 100% in mathematics, it wouldn’t just “do math well.” 
 
 The ruler has been marked—not in zeros and ones, but in diplomas and lived experience.
 
-## What the Chart Shows
+### What the Chart Shows
 
 The attached radar chart tells a story we can see instead of merely sense. GPT‑4 sits closer to the center, its line tight and tentative, like a sketch of potential. GPT‑5, by contrast, stretches outward in bold red strokes—confident in some directions, fragile in others.
 
@@ -130,7 +130,7 @@ In defining machine intelligence, we inevitably define ourselves. The framework 
 
 So the shift from last year to this one is not just numerical—it’s philosophical. We’ve moved from wondering if machines can think to asking what thinking truly is.
 
-## Working with Uneven Intelligence
+### Working with Uneven Intelligence
 
 The next question is whether we’ll adapt to working with AI that is brilliant in some areas and weak in others—just as we do with people. How will we build systems and habits that let our strengths cover one another’s gaps? Will we demand human parity across all domains before we entrust important work, or will we invite AI out of the party‑trick phase and into collaboration?
 
@@ -138,7 +138,7 @@ The new skill is learning the “people skills” of working with AI. What is ou
 
 GPT‑5 may be halfway to human parity, but the line it draws—radiant, unfinished—reminds us that the story of intelligence, artificial or otherwise, is still unfolding. Like us, it’s a work in progress.
 
-## Epilogue: The Long Game of Growth
+### Epilogue: The Long Game of Growth
 
 When I watch my kids study now, I still see those uneven lines of progress that mark every learning mind. A strength in language here, a gap in memory there. It’s rarely symmetrical, but it’s always alive.
 
