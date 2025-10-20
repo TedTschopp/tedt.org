@@ -70,3 +70,46 @@ body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
 
 /* Prevent accidental shrink if utility classes applied */
 .navbar.sticky-top .navbar-nav > li { display:flex; align-items:center; }
+
+/* --- Beta / Experimental Feature Indicators ---------------------------------------
+   Purpose: Provide a lightweight, accessible visual marker for navigation items that
+   represent features still in early access / beta / experimental phases (e.g. Prompts,
+   Presentations). Keeps semantics separate from text labels so future removal is a
+   one-line edit.
+   Accessibility:
+     * Icons are decorative; actual status is conveyed via visually hidden text span
+       (screen readers announce "Prompts (Early Access)" while sighted users see icon).
+     * Maintains 44px target sizing; badge kept small to avoid shifting link baseline.
+   Performance: Pure CSS; no JS required. Reuses existing font-awesome load.
+   Extension Pattern: Add a modifier class .nav-beta--experimental | --caution | --dev
+   if future differentiated states are needed (palette tokens below can be extended).
+*/
+.nav-beta-icon { /* container for the status icon */
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  margin-left:.35rem; /* subtle separation from text label */
+  font-size:.85rem; /* slightly smaller than base nav text */
+  line-height:1;
+  opacity:.75; /* deemphasize vs primary label */
+  transition:opacity .15s ease, transform .15s ease;
+}
+
+.navbar-nav .nav-link:hover .nav-beta-icon,
+.navbar-nav button.nav-link:hover .nav-beta-icon {
+  opacity:1;
+  transform:translateY(-1px);
+}
+
+/* State variants (future-proofing) */
+.nav-beta--experimental { color: var(--bs-warning); }
+.nav-beta--early { color: var(--bs-info); }
+.nav-beta--caution { color: var(--bs-danger); }
+.nav-beta--inprogress { color: var(--bs-orange, #ff8c42); }
+.nav-beta--dev { color: var(--bs-secondary); }
+
+/* Fallback custom property for orange if not defined */
+:root { --bs-orange: #ff8c42; }
+
+/* Visually hidden helper (reuse if not globally present) */
+.sr-only, .visually-hidden-beta { position:absolute !important; width:1px !important; height:1px !important; padding:0 !important; margin:-1px !important; overflow:hidden !important; clip:rect(0,0,0,0) !important; border:0 !important; }
