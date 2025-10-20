@@ -9,8 +9,8 @@ source: "Original Content"
 source-url: ""
 call-to-action: "Discuss on Mastodon"
 
-date: 2025-10-20 08:18:11 -0700
-update: 2025-10-20 08:18:11 -0700
+date: 2025-10-19 08:18:11 -0700
+update: 2025-10-19 08:18:11 -0700
 
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -68,7 +68,7 @@ location:
         latitude: 34.1470
         longitude: -117.9709
 
-image: /img/2025-10/From-Guesswork-to-Geometry.webp"
+image: /img/2025-10/From-Guesswork-to-Geometry.webp
 image-alt: "A warmly lit oil painting of a father and his two daughters studying together at a cluttered kitchen table, illuminated by a soft lantern glow that contrasts with the surrounding shadows."
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
@@ -89,15 +89,16 @@ Some nights they’d ask, “Dad, how come you are so smart?”
 
 I never had a clean answer. Grades? I got horrible grades. Tests? I did poorly on tests. Curiosity? Yes. I was curious, and I made up my mind to keep asking—and answering—the right questions. Maybe that’s it: asking the right questions year after year—questions that show not just memory but understanding, and thus growth. Growth that wasn’t a straight line; jagged at first, then slowly more even.
 
-That’s what this year’s story about Artificial Intelligence feels like—humanity at its own kitchen table, staring at the homework, finally making sense of those fractions.
+That's what this year's story about Artificial Intelligence feels like—humanity at its own kitchen table, staring at the homework, finally making sense of those fractions.
 
-
-{% include content/figure.html
-    div-class="col-md-3 mt-3 col-lg-3 float-end"
-    url="https://tedt.org/img/2025-10/radar-whitebg.webp"
-    file="https://tedt.org/img/2025-10/radar-whitebg.webp"
-    alt-text="A radar chart comparing GPT‑4 and GPT‑5 across cognitive domains."
-    caption="Radar chart comparing GPT‑4 and GPT‑5 across cognitive domains." %}
+<div class="col-md-3 mt-3 col-lg-3 float-end" markdown="0">
+<figure class="figure">
+<a href="https://tedt.org/img/2025-10/radar-whitebg.webp">
+<img src="https://tedt.org/img/2025-10/radar-whitebg.webp" class="img-fluid img-thumbnail figure-img float-end" alt="A radar chart comparing GPT‑4 and GPT‑5 across cognitive domains." />
+</a>
+<figcaption class="figure-caption">Radar chart comparing GPT‑4 and GPT‑5 across cognitive domains.</figcaption>
+</figure>
+</div>
 
 ## The Year We Measured the Mind
 
@@ -105,7 +106,7 @@ Last year, when people spoke of AI, it felt like talking about the horizon—eve
 
 This year, the AGI Definition Project handed us one.
 
-Researchers collaborated on a test grounded in the Cattell‑Horn‑Carroll theory of human cognition and mapped ten domains of general intelligence: reasoning, memory, perception, knowledge, language, math, and more. Each domain is scored not in vague metaphors, but in human terms.
+[Researchers collaborated on a test grounded in the Cattell‑Horn‑Carroll theory of human cognition](https://www.agidefinition.ai/paper.pdf) and mapped ten domains of general intelligence: reasoning, memory, perception, knowledge, language, math, and more. Each domain is scored not in vague metaphors, but in human terms. 
 
 Here’s the striking part: a score of 100% doesn’t mean perfection; it means parity with a well‑educated adult—someone holding a college degree in that domain.
 
