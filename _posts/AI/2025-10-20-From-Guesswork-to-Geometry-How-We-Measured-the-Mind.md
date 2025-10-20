@@ -66,7 +66,7 @@ location:
         latitude: 34.1470
         longitude: -117.9709
 
-image: /img/2025-10/From-Guesswork-to-Geometry.webp
+image: /img/2025-10/From-Guesswork-to-Geometry.webp"
 image-alt: "A warmly lit oil painting of a father and his two daughters studying together at a cluttered kitchen table, illuminated by a soft lantern glow that contrasts with the surrounding shadows."
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
