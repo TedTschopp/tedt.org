@@ -11,10 +11,12 @@ call-to-action: "Discuss on Mastodon"
 
 date: 2025-10-20 08:18:11 -0700
 update: 2025-10-20 08:18:11 -0700
+
 author:
-    avatar: [https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g](https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g)
-    name: Ted Tschopp
-    url: [https://tedt.org/](https://tedt.org/)
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  name: Ted Tschopp
+  url: https://tedt.org/
+
 
 bullets:
 - The AGI Definition Project introduced a Cattell‑Horn‑Carroll–grounded test across ten cognitive domains.
