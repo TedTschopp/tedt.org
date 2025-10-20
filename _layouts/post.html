@@ -120,10 +120,6 @@
                                         {% endif %}
                                     </div>
                                     <div class="small image-credits">
-                                        {%- comment -%}
-                                          NOTE: Fixed invalid Liquid references (image-credits-URL / image-credits-artist-URL) which caused build failure.
-                                          Variables were assigned earlier using underscores (image_credits_URL, image_credits_artist_URL).
-                                        {%- endcomment -%}
                                         {% if image_credits_URL and image_credits_URL contains "http" %}
                                             <cite><a target="_new" href="{{ image_credits_URL }}">{{ image_credits_title }}</a></cite>:&nbsp;an image by
                                         {% else %}
@@ -145,53 +141,50 @@
                            
                             <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
 
-                                                        {%- comment -%}
-                                                            Reverted TOC layout: Instead of a two-column grid that left empty vertical whitespace
-                                                            beneath a shorter TOC, the TOC now floats within the article content on large screens.
-                                                            This prevents a large blank gutter and matches the earlier inline style the user preferred.
-                                                        {%- endcomment -%}
-                                                        <div id="main_content_col" class="col-12">
-                                                            <div class="e-content position-relative" id="main_content">
-                                                                {% unless page.no_toc == true or page.no_toc == 'true' %}
-                                                                                                                                            <aside id="table-of-contents-card" class="d-none d-lg-block float-lg-end ms-lg-4 mb-3" style="max-width:340px;">
-                                                                                                                                                <div class="card h-100 no-padding position-relative">
-                                                                                                                                                    <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/table-of-contents.webp" alt="{{ category | default: 'Table of contents' }}" loading="lazy">
-                                                                                                                                                      <div class="card-img-overlay d-flex flex-column align-items-start justify-content-start p-0 ps-2 pt-2" style="pointer-events:none;">
-                                                                                {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
-                                                                                {% assign __toc_slug = __toc_slug | strip %}
-                                                                                {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
-                                                                                {% assign __toc_entry = site.data.category_registry[__toc_slug] %}
-                                                                                {% if __toc_entry and __toc_entry.category_home_page %}
-                                                                                    {% assign __toc_href = __toc_entry.category_home_page %}
-                                                                                {% else %}
-                                                                                    {% assign __toc_href = '#' %}
-                                                                                {% endif %}
-                                                                                {% if __toc_href == '#' or __toc_href == '' %}
-                                                                                    {% assign __toc_final_href = '#' %}
-                                                                                {% else %}
-                                                                                    {% assign __toc_final_href = site.url | append: __toc_href %}
-                                                                                {% endif %}
-                                                                                                                                                                                                        <p class="card-title h3 mb-2" style="z-index:2; position:relative; pointer-events:auto;">
-                                                                                                                                                                    {%- comment -%} Moved heading to top of image per user request (previously bottom-aligned). {%- endcomment -%}
-                                                                                                                                                                                                            <a class="text-decoration-none" style="pointer-events:auto;" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents</a>
-                                                                                                                                                                </p>
-                                                                            </div>
-                                                                            <div class="card-body p-0 ps-4" id="insert-table-of-contents-here"></div>
-                                                                        </div>
-                                                                    </aside>
-                                                                {% endunless %}
-                                                                {{ content | lazy_images_except_first }}
-                                                            </div>
-                                                        </div>
+                                {%- comment -%}
+                                    Reverted TOC layout: Instead of a two-column grid that left empty vertical whitespace
+                                    beneath a shorter TOC, the TOC now floats within the article content on large screens.
+                                    This prevents a large blank gutter and matches the earlier inline style the user preferred.
+                                {%- endcomment -%}
+                                <div id="main_content_col" class="col-12">
+                                    <div class="e-content position-relative" id="main_content">
+                                        {% unless page.no_toc == true or page.no_toc == 'true' %}
+                                            <aside id="table-of-contents-card" class="d-none d-lg-block float-lg-end ms-lg-4 mb-3" style="max-width:340px;">
+                                                <div class="card h-100 no-padding position-relative">
+                                                    <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/table-of-contents.webp" alt="{{ category | default: 'Table of contents' }}" loading="lazy">
+                                                    <div class="card-img-overlay d-flex flex-column align-items-start justify-content-start p-0 ps-2 pt-2" style="pointer-events:none;">
+                                                        {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
+                                                        {% assign __toc_slug = __toc_slug | strip %}
+                                                        {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
+                                                        {% assign __toc_entry = site.data.category_registry[__toc_slug] %}
+                                                        {% if __toc_entry and __toc_entry.category_home_page %}
+                                                            {% assign __toc_href = __toc_entry.category_home_page %}
+                                                        {% else %}
+                                                            {% assign __toc_href = '#' %}
+                                                        {% endif %}
+                                                        {% if __toc_href == '#' or __toc_href == '' %}
+                                                            {% assign __toc_final_href = '#' %}
+                                                        {% else %}
+                                                            {% assign __toc_final_href = site.url | append: __toc_href %}
+                                                        {% endif %}
+                                                        <p class="card-title h3 mb-2" style="z-index:2; position:relative; pointer-events:auto;">
+                                                        {%- comment -%} Moved heading to top of image per user request (previously bottom-aligned). {%- endcomment -%}
+                                                        <a class="text-decoration-none" style="pointer-events:auto;" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-body p-0 ps-4" id="insert-table-of-contents-here"></div>
+                                                </div>
+                                            </aside>
+                                        {% endunless %}
+                                        {{ content | lazy_images_except_first }}
+                                    </div>
+                                </div>
                             {%- comment -%}
                                 Apply lazy loading to all images except the first without duplicating the
                                 entire content multiple times (handled by custom filter).
                             {%- endcomment -%}
-                            <!-- (Content block moved into responsive row above) -->
                         </div>
-
                     </div>
-
                 </main>
 
                 {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
