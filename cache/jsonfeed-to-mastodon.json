@@ -2979,7 +2979,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115403963698248040"
+    ],
+    "lastTootTimestamp": 1760924739150
   },
   "https://tedt.org/requirements-analyst/": {
     "id": "/requirements-analyst/",
