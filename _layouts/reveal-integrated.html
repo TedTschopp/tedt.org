@@ -150,10 +150,21 @@ layout: none
                     flowchart: {
                         useMaxWidth: true,
                         htmlLabels: true
-                    }
+                    },
+                    // Security settings
+                    securityLevel: 'loose'
                 });
                 mermaidInitialized = true;
                 console.log('Mermaid initialized successfully');
+                
+                // Immediate processing of any visible diagrams
+                setTimeout(() => {
+                    const mermaidElements = document.querySelectorAll('.mermaid');
+                    console.log('Found', mermaidElements.length, 'Mermaid elements during init');
+                    if (mermaidElements.length > 0) {
+                        mermaid.run();
+                    }
+                }, 500);
             }
         }
 
@@ -244,7 +255,16 @@ layout: none
                                 console.log('Slide changed, processing Mermaid diagrams...');
                                 setTimeout(function() {
                                     try {
-                                        mermaid.run();
+                                        const currentSlide = event.currentSlide;
+                                        const mermaidInSlide = currentSlide.querySelectorAll('.mermaid');
+                                        console.log('Found', mermaidInSlide.length, 'Mermaid elements in current slide');
+                                        
+                                        if (mermaidInSlide.length > 0) {
+                                            mermaidInSlide.forEach((element, index) => {
+                                                console.log('Processing Mermaid element', index, 'with content:', element.textContent.trim().substring(0, 50) + '...');
+                                            });
+                                            mermaid.run();
+                                        }
                                     } catch (error) {
                                         console.error('Error processing Mermaid on slide change:', error);
                                     }
