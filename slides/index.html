@@ -34,12 +34,21 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
         {%- assign w = slide.width | plus: 0 -%}
         {%- assign h = slide.height | plus: 0 -%}
         {%- if h > 0 -%}
-          {%- assign numeric_ratio = w | divided_by: h -%}
-          {%- if numeric_ratio > 1.30 and numeric_ratio < 1.36 -%}
+          {%- comment -%}
+            Liquid `divided_by` performs integer division; 1280/720 would yield 1 instead of ~1.777...
+            Workaround: scale numerator before dividing to preserve 3 decimal precision as integer.
+            ratio_scaled ≈ actual_ratio * 1000. Comparison windows adjusted accordingly:
+              4:3   ~1333 → window 1330..1360
+              16:10 ~1600 → window 1550..1630
+              16:9  ~1777 → window 1750..1805
+          {%- endcomment -%}
+          {%- assign scaled_w = w | times: 1000 -%}
+          {%- assign ratio_scaled = scaled_w | divided_by: h -%}
+          {%- if ratio_scaled > 1330 and ratio_scaled < 1360 -%}
             {%- assign ratio_class = 'ratio-4x3' -%}
-          {%- elsif numeric_ratio > 1.55 and numeric_ratio < 1.63 -%}
+          {%- elsif ratio_scaled > 1550 and ratio_scaled < 1630 -%}
             {%- assign ratio_class = 'ratio-16x10' -%}
-          {%- elsif numeric_ratio > 1.75 and numeric_ratio < 1.80 -%}
+          {%- elsif ratio_scaled > 1750 and ratio_scaled < 1805 -%}
             {%- assign ratio_class = 'ratio-16x9' -%}
           {%- endif -%}
         {%- endif -%}
