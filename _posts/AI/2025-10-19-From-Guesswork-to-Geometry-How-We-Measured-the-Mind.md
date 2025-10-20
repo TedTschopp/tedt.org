@@ -2,7 +2,7 @@
 layout: post
 
 title: "From Guesswork to Geometry: How We Measured the Mind"
-subtitle: "Psychometrics meets AI: a CHC‑based benchmark tests cognition across ten domains and reframes progress toward human parity."
+subtitle: "Psychometrics meets AI"
 quote: "The ruler has been marked—not in zeros and ones, but in diplomas and lived experience."
 excerpt: "This year’s AGI Definition Project maps machine cognition across ten human‑style domains, replacing metaphors with measurement. GPT‑5’s 58% score shows rapid but uneven progress."
 source: "Original Content"
