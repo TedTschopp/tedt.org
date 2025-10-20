@@ -95,6 +95,16 @@ body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
   transition:opacity .15s ease, transform .15s ease;
 }
 
+/* Bake icon via pseudo-element so HTML stays minimal (no <i> required). Decorative; screen reader
+   text provided separately in .visually-hidden-beta span after the link label. */
+.nav-beta-icon::before {
+  content:''; /* default empty; variants override */
+  display:inline-block;
+  font-weight:600;
+  filter:drop-shadow(0 0 1px rgba(0,0,0,.2));
+  font-size:1em; /* inherit sizing from container */
+}
+
 .navbar-nav .nav-link:hover .nav-beta-icon,
 .navbar-nav button.nav-link:hover .nav-beta-icon {
   opacity:1;
@@ -102,11 +112,16 @@ body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
 }
 
 /* State variants (future-proofing) */
-.nav-beta--experimental { color: var(--bs-warning); }
-.nav-beta--early { color: var(--bs-info); }
-.nav-beta--caution { color: var(--bs-danger); }
-.nav-beta--inprogress { color: var(--bs-orange, #ff8c42); }
-.nav-beta--dev { color: var(--bs-secondary); }
+.nav-beta--experimental { color:#b327ff; }
+.nav-beta--experimental::before { content:'🧪'; }
+.nav-beta--early { color:var(--bs-orange, #ff8c42); }
+.nav-beta--early::before { content:'🧭'; }
+.nav-beta--caution { color:#bb2d3b; }
+.nav-beta--caution::before { content:'⚠️'; }
+.nav-beta--inprogress { color:#0d6efd; }
+.nav-beta--inprogress::before { content:'👷'; }
+.nav-beta--dev { color:#198754; }
+.nav-beta--dev::before { content:'⚙️'; }
 
 /* Fallback custom property for orange if not defined */
 :root { --bs-orange: #ff8c42; }
