@@ -1,0 +1,47 @@
+/* Slide card preview fallback
+   Purpose: Provide a readable miniature rendering of the first slide when no explicit slide.image
+   is defined in a Reveal.js deck's front matter. Keeps typography compact and prevents large media
+   from overflowing cards. */
+
+.slide-card-preview {
+  --slide-preview-scale: .85;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: .75rem .85rem .9rem;
+  background: linear-gradient(135deg, var(--bs-body-bg) 0%, var(--bs-body-bg-alt, #111) 100%);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: .25rem;
+  font-size: .75rem; /* compact */
+  line-height: 1.15;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.slide-card-preview h1,
+.slide-card-preview h2,
+.slide-card-preview h3,
+.slide-card-preview h4 { 
+  font-size: 1rem;
+  margin: 0 0 .4rem 0;
+  line-height: 1.1;
+}
+
+.slide-card-preview p { margin: 0 0 .4rem 0; }
+.slide-card-preview ul { margin: 0 0 .4rem 1.1rem; padding:0; }
+.slide-card-preview li { margin-bottom: .2rem; }
+
+/* Avoid Mermaid blocks or code blocks expanding card; hide if present in first slide */
+.slide-card-preview .mermaid,
+.slide-card-preview pre { display:none !important; }
+
+/* Subtle overlay gradient to hint interactivity */
+.slide-card-preview::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,.45));
+  pointer-events: none;
+}

@@ -12,9 +12,28 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
   <div class="col">
     <div class="card h-100 shadow-sm border-0">
       <div class="ratio ratio-16x9">
-        <img src="{{ slide.image | default: '/img/categories/prompt_library.webp' }}"
-             class="card-img-top object-fit-cover"
-             alt="{{ slide.title | escape }}">
+        {%- if slide.image -%}
+          <img src="{{ slide.image }}" class="card-img-top object-fit-cover" alt="{{ slide.title | escape }}">
+        {%- else -%}
+          {%- comment -%}
+            Fallback preview (no slide.image):
+            Enhancement: supports optional front matter key `preview_section_index` (0-based) to
+            select which top-level <section> to show. If invalid / out of range, falls back to the
+            first section. We split once (cached in `section_chunks`) to avoid repeated string ops.
+            NOTE: Nested vertical slides are still linearized by this naive split; acceptable for
+            lightweight preview. Authors can set preview_section_index to point at a vertical parent
+            if desired. Do NOT render large mermaid or code blocks here; CSS hides them.
+          {%- endcomment -%}
+          {%- assign section_chunks = slide.content | split: '</section>' -%}
+          {%- assign selected_fragment = section_chunks[slide.preview_section_index] -%}
+          {%- if selected_fragment == nil or selected_fragment == '' -%}
+            {%- assign selected_fragment = section_chunks[0] -%}
+          {%- endif -%}
+          {%- assign selected_fragment = selected_fragment | append: '</section>' -%}
+          <div class="slide-card-preview" role="img" aria-label="Slide preview: {{ slide.title | escape }}">
+            {{ selected_fragment | replace: '<h1', '<h3' | replace: '<h2', '<h4' }}
+          </div>
+        {%- endif -%}
       </div>
       <div class="card-body">
         <h5 class="card-title"><a href="{{ slide.url | relative_url }}">{{ slide.title }}</a></h5>

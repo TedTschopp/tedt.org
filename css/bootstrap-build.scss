@@ -54,4 +54,5 @@
 
 /* Site-specific overrides (keep last so they win) */
 @import "overrides-prompts";
-@import "overrides-navbar"; // site-specific navbar sizing/alignment (must be last so it wins)
+@import "overrides-slides"; // slide card preview fallback styles
+@import "overrides-navbar"; // site-specific navbar sizing/alignment (must remain last so it wins)
