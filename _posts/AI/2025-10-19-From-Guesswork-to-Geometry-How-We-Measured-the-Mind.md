@@ -69,11 +69,11 @@ location:
         longitude: -117.9709
 
 image: /img/2025-10/From-Guesswork-to-Geometry.webp
-image-alt: "A warmly lit oil painting of a father and his two daughters studying together at a cluttered kitchen table, illuminated by a soft lantern glow that contrasts with the surrounding shadows."
+image-alt: "A warmly lit oil painting of a father and his two daughters studying together at a cluttered kitchen table, illuminated by a soft glow that contrasts with the surrounding shadows."
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
 image-description: "This expressive oil painting depicts an intimate evening scene of a father guiding his two daughters through their homework. The lamplight bathes their faces in gold, while textured brushstrokes of blue and amber evoke warmth, patience, and curiosity. The composition symbolizes the passing of knowledge between generations and the quiet beauty of learning—an allegory for humanity’s own journey to understand intelligence and growth."
-image-title: "From Guesswork to Geometry — A Father Teaching by Lamplight"
+image-title: "From Guesswork to Geometry"
 image_width: 1456
 image_height: 816
 
