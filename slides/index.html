@@ -11,7 +11,40 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
   {% if slide.path contains 'slides/' and slide.url != '/slides/' and slide.layout == 'reveal-integrated' %}
   <div class="col">
     <div class="card h-100 shadow-sm border-0">
-      <div class="ratio ratio-16x9">
+      {%- comment -%}
+        Aspect Ratio Handling:
+        Default to 16:9 unless deck front matter specifies:
+          * aspect_ratio: '4x3' | '16x10' | custom string matching Bootstrap ratio utility pattern
+          * width & height numeric values (e.g., width: 1200, height: 800)
+        If width & height provided, compute a simplified ratio bucket:
+          - 4:3 if (width/height) within 1.30..1.36
+          - 16:10 if within 1.55..1.63
+          - 16:9 if within 1.75..1.80
+          - else fallback to 16x9 for card display (prevents explosion of custom classes)
+        NOTE: Bootstrap ratio utilities only support fixed set (e.g., ratio-16x9, ratio-4x3).
+        Authors wanting pixel-perfect preview should set `aspect_ratio` directly.
+      {%- endcomment -%}
+      {%- assign ratio_class = 'ratio-16x9' -%}
+      {%- if slide.aspect_ratio -%}
+        {%- assign ratio_candidate = slide.aspect_ratio | replace: ':', 'x' | downcase -%}
+        {%- if ratio_candidate == '4x3' or ratio_candidate == '16x10' or ratio_candidate == '16x9' -%}
+          {%- assign ratio_class = 'ratio-' | append: ratio_candidate -%}
+        {%- endif -%}
+      {%- elsif slide.width and slide.height -%}
+        {%- assign w = slide.width | plus: 0 -%}
+        {%- assign h = slide.height | plus: 0 -%}
+        {%- if h > 0 -%}
+          {%- assign numeric_ratio = w | divided_by: h -%}
+          {%- if numeric_ratio > 1.30 and numeric_ratio < 1.36 -%}
+            {%- assign ratio_class = 'ratio-4x3' -%}
+          {%- elsif numeric_ratio > 1.55 and numeric_ratio < 1.63 -%}
+            {%- assign ratio_class = 'ratio-16x10' -%}
+          {%- elsif numeric_ratio > 1.75 and numeric_ratio < 1.80 -%}
+            {%- assign ratio_class = 'ratio-16x9' -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+      <div class="ratio {{ ratio_class }}">
         {%- if slide.image -%}
           <img src="{{ slide.image }}" class="card-img-top object-fit-cover" alt="{{ slide.title | escape }}">
         {%- else -%}
