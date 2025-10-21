@@ -27,6 +27,26 @@
 .card .ratio > img.card-img-top { object-fit:cover; width:100%; height:100%; }
 .card .ratio > .slide-card-preview { position:absolute; inset:0; padding:.75rem .9rem .9rem; }
 
+/* Cross-browser stability (Edge/Safari):
+   Some browsers were collapsing the ratio container height in listing cards, causing the
+   preview overlay to appear as a thin strip. We reinforce the sizing here instead of
+   relying solely on Bootstrap's ::before padding hack, while keeping compatibility.
+   - Explicit position:relative (in case prior cascade interferes)
+   - aspect-ratio declaration for modern browsers
+   - padding-top fallback to preserve space if aspect-ratio unsupported / overridden
+   NOTE: Keep selectors scoped under .card to avoid unintended global overrides. */
+.card .ratio { position:relative; display:block; }
+.card .ratio.ratio-16x9 { aspect-ratio:16/9; padding-top:56.25%; }
+.card .ratio.ratio-4x3 { aspect-ratio:4/3; padding-top:75%; }
+.card .ratio.ratio-16x10 { aspect-ratio:16/10; padding-top:62.5%; }
+
+/* Ensure absolutely positioned preview obeys new ratio sizing and improves readability */
+.card .ratio > .slide-card-preview { 
+  display:flex; flex-direction:column; justify-content:flex-start; 
+  font-size:.75rem; line-height:1.15; 
+  color: var(--bs-body-color);
+}
+
 /* Provide a minimum height so the card body doesn't jump when content varies. */
 .card .ratio.ratio-16x9 { min-height:0; }
 
@@ -52,6 +72,19 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 60%, rgba(0,0,0,.45));
+  /* Slightly lighten gradient for improved text legibility in dark theme */
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,.35));
   pointer-events: none;
 }
+
+/* Headings inside preview: limit overflow and prevent layout shift */
+.slide-card-preview h1,
+.slide-card-preview h2,
+.slide-card-preview h3,
+.slide-card-preview h4 { 
+  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
+  max-width:100%;
+}
+
+/* Prevent long lists from pushing beyond preview; allow vertical scroll if needed */
+.slide-card-preview { overscroll-behavior:contain; }
