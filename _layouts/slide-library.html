@@ -1,0 +1,1807 @@
+---
+redirect_from:
+- /category/slides/
+- /category/slides.html
+---
+
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <title>Slide Library – A Collection of Presentations</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% include utility/calculate-variables.html %}
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include seo/indieauth-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include seo/meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa/pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags -->
+    {% include feeds/feeds.html %}
+
+    <!-- START OF CSS INCLUDE -->
+    {% include assets/all-css-includes.html %}
+
+    <!-- END OF CSS INCLUDE -->
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include assets/scripts.html %}
+
+    <style>
+        .btn-toggle[aria-pressed="true"] {
+            background-color: var(--bs-primary);
+            color: var(--bs-white);
+        }
+    
+        .visually-hidden {
+            position: absolute !important;
+            width: 1px !important;
+            height: 1px !important;
+            padding: 0 !important;
+            margin: -1px !important;
+            overflow: hidden !important;
+            clip: rect(0, 0, 0, 0) !important;
+            border: 0 !important;
+        }
+
+        .tag-filter-btn {
+            transition: all 0.2s ease;
+        }
+
+        .tag-filter-btn:hover {
+            background-color: var(--bs-primary-bg-subtle) !important;
+            color: var(--bs-body-color) !important;
+            transform: scale(1.05);
+        }
+
+        .tag-filter-btn:active {
+            transform: scale(0.95);
+        }
+
+        .ai-provider-buttons {
+            display: flex;
+            flex-wrap: wrap; /* changed from nowrap to wrap for mobile */
+            gap: 2px;
+            width: 100%;
+        }
+        
+        .ai-provider-buttons .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.5rem 0.75rem; /* match details page */
+            flex: 1 1 auto; /* allow flex items to shrink/wrap */
+            min-width: 2.75rem;
+            height: auto;
+            border-radius: 0.25rem;
+            white-space: normal; /* allow text wrapping if labels added later */
+            gap: .35rem;
+            line-height: 1.2;
+        }
+        
+        
+        .ai-provider-buttons .btn img {
+            height: 1.75rem;
+            width: 1.75rem;
+            object-fit: contain;
+            display: block;
+            margin: auto;
+        }
+
+        .active-tag-btn {
+            background-color: var(--bs-secondary);
+            border-color: var(--bs-secondary);
+            color: var(--bs-white);
+            transition: all 0.2s ease;
+            border-radius: 15px;
+            font-size: 0.875rem;
+            padding: 0.375rem 0.75rem;
+        }
+
+        .active-tag-btn:hover {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+            color: var(--bs-white);
+            transform: scale(1.05);
+        }
+
+        .active-tag-btn:active {
+            transform: scale(0.95);
+        }
+
+        .active-tag-btn.selected {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+            color: var(--bs-white);
+        }
+
+        #active-tags-display {
+            background-color: rgba(var(--bs-light-rgb), 0.5) !important;
+            border-color: var(--bs-border-color) !important;
+        }
+
+        [data-bs-theme="dark"] #active-tags-display {
+            background-color: rgba(var(--bs-dark-rgb), 0.5) !important;
+        }
+
+        /* Tag and Keyword Filter Buttons - Bootstrap 5.3 Aligned */
+        .btn-tag-filter {
+            min-width: 140px;
+            transition: var(--bs-btn-transition, all 0.15s ease-in-out);
+            font-size: var(--bs-btn-font-size-sm, 0.875rem);
+            padding: var(--bs-btn-padding-y-sm, 0.25rem) var(--bs-btn-padding-x-sm, 0.5rem);
+            border-radius: var(--bs-btn-border-radius-sm, 0.375rem);
+            border-width: var(--bs-btn-border-width, 1px);
+            font-weight: var(--bs-btn-font-weight, 400);
+        }
+
+        .btn-tag-filter:hover {
+            transform: translateY(-1px);
+            box-shadow: var(--bs-btn-box-shadow, 0 0.125rem 0.25rem rgba(var(--bs-dark-rgb), 0.075)), 0 0.25rem 0.5rem rgba(var(--bs-dark-rgb), 0.15);
+        }
+
+        .btn-tag-filter:active,
+        .btn-tag-filter.active {
+            transform: translateY(0);
+        }
+
+        /* Tag buttons - Blue theme (Bootstrap Primary outline style) */
+        .btn-tag {
+            --bs-btn-color: var(--bs-primary);
+            --bs-btn-bg: transparent;
+            --bs-btn-border-color: var(--bs-primary);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: var(--bs-primary);
+            --bs-btn-hover-border-color: var(--bs-primary);
+            --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+            --bs-btn-active-color: var(--bs-white);
+            --bs-btn-active-bg: var(--bs-primary-text-emphasis);
+            --bs-btn-active-border-color: var(--bs-primary-text-emphasis);
+            --bs-btn-disabled-color: var(--bs-primary);
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: var(--bs-primary);
+        }
+
+        .btn-tag[aria-pressed="true"] {
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bs-primary);
+            --bs-btn-border-color: var(--bs-primary);
+            font-weight: var(--bs-btn-font-weight, 500);
+            box-shadow: var(--bs-btn-focus-box-shadow, 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25));
+        }
+
+        /* Dark theme specific adjustments for tags */
+        [data-bs-theme="dark"] .btn-tag {
+            --bs-btn-color: var(--bs-primary-text-emphasis);
+            --bs-btn-border-color: var(--bs-primary-border-subtle);
+            --bs-btn-hover-color: var(--bs-gray-900);
+            --bs-btn-hover-bg: var(--bs-primary-text-emphasis);
+            --bs-btn-hover-border-color: var(--bs-primary-text-emphasis);
+            --bs-btn-active-color: var(--bs-gray-900);
+            --bs-btn-active-bg: var(--bs-primary);
+            --bs-btn-active-border-color: var(--bs-primary);
+        }
+
+        .btn-tag[aria-pressed="true"]::before {
+            content: "✓ ";
+            font-weight: 600;
+        }
+
+        /* Keyword buttons - Green theme (Bootstrap Success outline style) */
+        .btn-keyword {
+            --bs-btn-color: var(--bs-success);
+            --bs-btn-bg: transparent;
+            --bs-btn-border-color: var(--bs-success);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: var(--bs-success);
+            --bs-btn-hover-border-color: var(--bs-success);
+            --bs-btn-focus-shadow-rgb: var(--bs-success-rgb);
+            --bs-btn-active-color: var(--bs-white);
+            --bs-btn-active-bg: var(--bs-success-text-emphasis);
+            --bs-btn-active-border-color: var(--bs-success-text-emphasis);
+            --bs-btn-disabled-color: var(--bs-success);
+            --bs-btn-disabled-bg: transparent;
+            --bs-btn-disabled-border-color: var(--bs-success);
+        }
+
+        .btn-keyword[aria-pressed="true"] {
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: var(--bs-success);
+            --bs-btn-border-color: var(--bs-success);
+            font-weight: var(--bs-btn-font-weight, 500);
+            box-shadow: var(--bs-btn-focus-box-shadow, 0 0 0 0.25rem rgba(var(--bs-success-rgb), 0.25));
+        }
+
+        /* Dark theme specific adjustments for keywords */
+        [data-bs-theme="dark"] .btn-keyword {
+            --bs-btn-color: var(--bs-success-text-emphasis);
+            --bs-btn-border-color: var(--bs-success-border-subtle);
+            --bs-btn-hover-color: var(--bs-gray-900);
+            --bs-btn-hover-bg: var(--bs-success-text-emphasis);
+            --bs-btn-hover-border-color: var(--bs-success-text-emphasis);
+            --bs-btn-active-color: var(--bs-gray-900);
+            --bs-btn-active-bg: var(--bs-success);
+            --bs-btn-active-border-color: var(--bs-success);
+        }
+
+        .btn-keyword[aria-pressed="true"]::before {
+            content: "✓ ";
+            font-weight: 600;
+        }
+
+        /* Dual buttons (both tag and keyword) - Custom Bootstrap-aligned gradient */
+        .btn-dual {
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-primary) 45%, var(--bs-success) 55%, var(--bs-success) 100%);
+            --bs-btn-border-color: var(--bs-primary);
+            --bs-btn-hover-color: var(--bs-white);
+            --bs-btn-hover-bg: linear-gradient(135deg, var(--bs-primary-text-emphasis) 0%, var(--bs-primary-text-emphasis) 45%, var(--bs-success-text-emphasis) 55%, var(--bs-success-text-emphasis) 100%);
+            --bs-btn-hover-border-color: var(--bs-primary-text-emphasis);
+            --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+            --bs-btn-active-color: var(--bs-white);
+            --bs-btn-active-bg: linear-gradient(135deg, var(--bs-primary-text-emphasis) 0%, var(--bs-primary-text-emphasis) 45%, var(--bs-success-text-emphasis) 55%, var(--bs-success-text-emphasis) 100%);
+            --bs-btn-active-border-color: var(--bs-primary-text-emphasis);
+            background: var(--bs-btn-bg);
+            border: var(--bs-btn-border-width, 1px) solid var(--bs-btn-border-color);
+            position: relative;
+        }
+
+        .btn-dual:hover {
+            background: var(--bs-btn-hover-bg);
+            border-color: var(--bs-btn-hover-border-color);
+            transform: translateY(-1px);
+        }
+
+        .btn-dual[aria-pressed="true"] {
+            --bs-btn-color: var(--bs-white);
+            --bs-btn-bg: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-primary) 45%, var(--bs-success) 55%, var(--bs-success) 100%);
+            --bs-btn-border-color: var(--bs-primary);
+            background: var(--bs-btn-bg);
+            border-color: var(--bs-btn-border-color);
+            font-weight: var(--bs-btn-font-weight, 500);
+            box-shadow: var(--bs-btn-focus-box-shadow, 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25));
+        }
+
+        /* Dark theme specific adjustments for dual buttons */
+        [data-bs-theme="dark"] .btn-dual {
+            --bs-btn-bg: linear-gradient(135deg, var(--bs-primary-text-emphasis) 0%, var(--bs-primary-text-emphasis) 45%, var(--bs-success-text-emphasis) 55%, var(--bs-success-text-emphasis) 100%);
+            --bs-btn-border-color: var(--bs-primary-text-emphasis);
+            --bs-btn-hover-color: var(--bs-gray-900);
+            --bs-btn-hover-bg: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-primary) 45%, var(--bs-success) 55%, var(--bs-success) 100%);
+            --bs-btn-hover-border-color: var(--bs-primary);
+        }
+
+        .btn-dual[aria-pressed="true"]::before {
+            content: "✓ ";
+            font-weight: 600;
+        }
+
+        .btn-dual::after {
+            content: '🏷️🔑';
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            font-size: 0.6rem;
+            background: rgba(255,255,255,0.9);
+            border-radius: 50%;
+            width: 16px;
+            height: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.5rem;
+            line-height: 1;
+        }
+
+        /* Prompt Card Title Link Styling */
+        .card .card-title a {
+            color: var(--bs-primary) !important;
+            text-decoration: none !important;
+            transition: all 0.2s ease-in-out;
+            position: relative;
+        }
+
+        .card .card-title a:hover {
+            color: var(--bs-primary-text-emphasis) !important;
+            text-decoration: underline !important;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 2px;
+            transform: translateY(-1px);
+        }
+
+        .card .card-title a:focus {
+            color: var(--bs-primary) !important;
+            text-decoration: underline !important;
+            text-underline-offset: 3px;
+            text-decoration-thickness: 2px;
+            outline: 2px solid var(--bs-primary);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+
+        .card .card-title a:active {
+            color: var(--bs-primary-text-emphasis) !important;
+            transform: translateY(0);
+        }
+
+        /* Dark theme adjustments for better WCAG compliance */
+        [data-bs-theme="dark"] .card .card-title a {
+            color: var(--bs-primary-text-emphasis) !important;
+        }
+
+        [data-bs-theme="dark"] .card .card-title a:hover {
+            color: var(--bs-primary) !important;
+        }
+
+        [data-bs-theme="dark"] .card .card-title a:focus {
+            color: var(--bs-primary-text-emphasis) !important;
+            outline-color: var(--bs-primary-text-emphasis);
+        }
+
+        [data-bs-theme="dark"] .card .card-title a:active {
+            color: var(--bs-primary) !important;
+        }
+    </style>
+</head>
+<body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+
+    <!-- Navbar -->
+    {% include layout/top-nav-bar.html %}
+
+    <header>
+        <section class="showcase position-relative">
+            <div class="g-0 w-100 container-fluid">
+                <div class="w-100 position-relative">
+                    <img src="../img/categories/prompt_library.webp" class="img-fluid w-100 h-100"
+                        alt="Library of Lost Prompts" loading="lazy">
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main class="container my-4" id="main-content" role="main">
+        <h2 class="visually-hidden">AI Prompt Library Search and Browse</h2>
+        <!-- Search Bar and Sort Dropdown -->
+        <section aria-label="Filter and Sort Controls" class="mb-3">
+            <div class="d-flex flex-column flex-md-row gap-2 w-100">
+                <form role="search" aria-label="Search prompts" class="flex-grow-1">
+                    <div class="input-group">
+                        <span class="input-group-text" id="search-label"><i class="fa-solid fa-search" aria-hidden="true"></i></span>
+                        <input type="text" class="form-control" placeholder="Search prompts..." aria-label="Search prompts" aria-describedby="search-label">
+                    </div>
+                </form>
+                <div class="flex-shrink-0" style="min-width:200px;">
+                    <label for="sort-select" class="visually-hidden">Sort prompts</label>
+                    {%- comment -%}
+                    Sort dropdown was previously rendered with the 'disabled' attribute, preventing user interaction.
+                    JavaScript logic below already handles 'change' events (lines later in file). Removed 'disabled'
+                    and added an explicit placeholder option for clarity & accessibility per WCAG 3.3.2 (labels/instructions).
+                    {%- endcomment -%}
+                    <select class="form-select" id="sort-select" aria-label="Sort prompts">
+                        <option value="newest">Newest first</option>
+                        <option value="highest">Highest rating</option>
+                        <option value="alphabetical">Alphabetical A→Z</option>
+                    </select>
+                </div>
+            </div>
+            <div class="visually-hidden" aria-live="polite" id="sort-status"></div>
+            
+            <!-- Dynamic Tags and Keywords Display -->
+            <div id="dynamic-filters-display" class="mt-3" style="display: none;">
+                <div id="tags-section" class="mb-3" style="display: none;">
+                    <h6 class="mb-2 text-muted d-flex align-items-center justify-content-between">
+                        <span>
+                            <i class="fa-solid fa-tag" aria-hidden="true"></i> Available Tags:
+                        </span>
+                        <button class="btn btn-sm btn-outline-secondary" id="toggle-tags" aria-label="Toggle tags visibility">
+                            <i class="fa-solid fa-eye-slash" aria-hidden="true"></i> Hide
+                        </button>
+                    </h6>
+                    <div id="tags-container" class="d-flex flex-wrap gap-2" role="group" aria-label="Filter by available tags">
+                        <!-- Dynamic tag buttons will be inserted here -->
+                    </div>
+                </div>
+                <div id="keywords-section" class="mb-3" style="display: none;">
+                    <h6 class="mb-2 text-muted d-flex align-items-center justify-content-between">
+                        <span>
+                            <i class="fa-solid fa-key" aria-hidden="true"></i> Available Keywords:
+                        </span>
+                        <button class="btn btn-sm btn-outline-secondary" id="toggle-keywords" aria-label="Toggle keywords visibility">
+                            <i class="fa-solid fa-eye-slash" aria-hidden="true"></i> Hide
+                        </button>
+                    </h6>
+                    <div id="keywords-container" class="d-flex flex-wrap gap-2" role="group" aria-label="Filter by available keywords">
+                        <!-- Dynamic keyword buttons will be inserted here -->
+                    </div>
+                </div>
+            </div>
+            
+            <div class="d-flex flex-wrap gap-2 mt-3" role="group" aria-label="Filter prompts by category">
+                <button class="btn btn-outline-secondary btn-toggle flex-fill" style="min-width: 140px;" 
+                        aria-pressed="true" data-filter="all">All Categories</button>
+                
+                {% assign prompt_posts = site.posts | where: "categories", "Prompts" | slice: 0, 240 %}
+                {% assign all_tags = "" | split: "," %}
+                {% for post in prompt_posts %}
+                    {% for tag in post.tags %}
+                        {% unless all_tags contains tag %}
+                            {% assign all_tags = all_tags | push: tag %}
+                        {% endunless %}
+                    {% endfor %}
+                {% endfor %}
+                
+                {% assign sorted_tags = all_tags | safe_sort %}
+                {% for tag in sorted_tags %}
+                    <button class="btn btn-outline-secondary btn-toggle flex-fill" 
+                            style="min-width: 140px;" 
+                            aria-pressed="false" 
+                            data-filter="{{ tag | downcase | slugify }}">{{ tag }}</button>
+                {% endfor %}
+                
+                <button class="btn btn-outline-secondary flex-fill" 
+                        style="min-width: 140px;" 
+                        aria-label="Clear all filters"
+                        id="clear-filters">Clear Filters</button>
+            </div>
+        </section>
+
+        <!-- Loading Spinner Placeholder -->
+        <div id="loading-spinner" class="text-center my-5" style="display:none;">
+            <div class="spinner-border text-primary" role="status" aria-label="Loading prompts..."></div>
+        </div>
+
+        <!-- Prompt List -->
+        <section aria-label="Prompt List">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                <!-- Dynamic Jekyll Prompt Cards -->
+                {% assign prompt_posts = site.posts | where: "categories", "Prompts" | slice: 0, 240 %}
+                {% for post in prompt_posts %}
+                <div class="col" data-tags="{{ post.tags | join: ',' | downcase | slugify }}" 
+                     data-keywords="{{ post.keywords | join: ',' | downcase | slugify }}"
+                     data-tags-raw="{{ post.tags | join: '|' | escape }}"
+                     data-keywords-raw="{{ post.keywords | join: '|' | escape }}"
+                     data-date="{{ post.date | date: '%Y%m%d' }}" 
+                     data-title="{{ post.title | downcase | slugify }}"
+                     data-likes="0"
+                     data-prompt-content="{% if post.prompt_content %}{{ post.prompt_content | escape }}{% else %}{{ post.content | escape }}{% endif %}"
+                     data-variables="{% if post.variables %}{{ post.variables | jsonify | escape }}{% else %}[]{% endif %}">
+                    <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: {{ post.title }}">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">
+                                <a href="{{ post.url | relative_url }}" aria-label="View prompt details for {{ post.title }}">{{ post.title }}</a>
+                            </h5>
+                            <p class="card-text">
+                                {% if post.description %}
+                                    {{ post.description | strip_html | truncate: 150 }}
+                                {% else %}
+                                    {{ post.excerpt | strip_html | truncate: 150 }}
+                                {% endif %}
+                            </p>
+                            <div class="mt-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <div>
+                                        {% if post.tags %}
+                                            {% assign sorted_tags = post.tags | safe_sort %}
+                                            {% for tag in sorted_tags %}
+                                                <button class="badge bg-primary tag-filter-btn" 
+                                                        title="Filter by {{ tag }}"
+                                                        data-tag="{{ tag | downcase | slugify }}"
+                                                        style="cursor: pointer; border: none;">
+                                                    <i class="fa-solid fa-tag" aria-hidden="true"></i> {{ tag }}
+                                                </button>
+                                            {% endfor %}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                <div class="ai-provider-buttons" role="group" aria-label="Prompt actions">
+                                    <!-- Download Button -->
+                                    <button class="btn btn-primary btn-sm btn-download-prompt animate__animated" 
+                                            aria-label="Download prompt"
+                                            data-prompt-url="{{ post.url | relative_url }}"
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Download prompt as text file">
+                                        <i class="fa-solid fa-download"></i>
+                                    </button>
+                                    
+                                    <!-- Copy Button -->
+                                    <button class="btn btn-primary btn-sm btn-copy-prompt animate__animated" 
+                                            aria-label="Copy prompt to clipboard"
+                                            data-prompt-url="{{ post.url | relative_url }}"
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Copy prompt to clipboard">
+                                        <i class="fa-solid fa-copy"></i>
+                                    </button>
+
+                                    <!-- OpenAI ChatGPT -->
+                                    {% assign openai_models = post.models-supported | where_exp: "model", "model contains 'gpt' or model contains '03' or model contains '04' or model contains 'o1'" %}
+                                    {% if openai_models.size > 0 %}
+                                    <button class="btn btn-send-chatgpt btn-sm btn-send-openai animate__animated" 
+                                            aria-label="Send prompt to ChatGPT"
+                                            data-prompt-url="{{ post.url | relative_url }}"
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Send prompt to OpenAI ChatGPT">
+                                        <img src="/img/logos/OpenAI-Icon.svg" alt="OpenAI Logo" style="height: 1.5rem;">
+                                    </button>
+                                    {% endif %}
+
+                                    <!-- Microsoft Copilot -->
+                                    {% assign microsoft_models = post.models-supported | where_exp: "model", "model contains 'copilot' or model contains 'microsoft'" %}
+                                    {% if microsoft_models.size > 0 %}
+                                    <button class="btn btn-send-microsoft btn-sm btn-send-microsoft animate__animated" 
+                                            aria-label="Send prompt to Microsoft Copilot"
+                                            data-prompt-url="{{ post.url | relative_url }}"
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Send prompt to Microsoft Copilot">
+                                        <img src="/img/logos/Microsoft-Copilot-Icon.svg" alt="Microsoft Copilot Logo" style="height: 1.5rem;">
+                                    </button>
+                                    {% endif %}
+
+                                    <!-- GitHub Copilot -->
+                                    {% assign github_models = post.models-supported | where_exp: "model", "model contains 'github'" %}
+                                    {% if github_models.size > 0 %}
+                                    <button class="btn btn-send-github btn-sm btn-send-github animate__animated" 
+                                            aria-label="Send prompt to GitHub Copilot"
+                                            data-prompt-url="{{ post.url | relative_url }}"
+                                            data-prompt-title="{{ post.title }}"
+                                            title="Send prompt to GitHub Copilot">
+                                        <img src="/img/logos/GitHub-Copilot-Icon.svg" alt="GitHub Copilot Logo" style="height: 1.5rem;">
+                                    </button>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <!-- Message for empty results -->
+            <div id="no-results-message" class="alert alert-warning mt-4 text-center" style="display:none;" role="status">
+                No prompts found. Try adjusting your search or filters.
+            </div>
+        </section>
+
+        <!-- Pagination -->
+        <nav class="mt-4" aria-label="Prompt pagination">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+
+    <!-- Footer -->
+    {% include layout/footer.html %}
+    
+    <!-- Bootstrap core JavaScript -->
+    {% include assets/js-bottom-of-body.html %}
+
+    <script>
+        // Pagination and filtering state
+        let currentPage = 1;
+        let itemsPerPage = 12;
+        let filteredCards = [];
+        let allCards = [];
+        let currentFilter = 'all';
+        let currentSearchTerm = '';
+        let currentSort = 'newest';
+        let tagsVisible = true;
+        let keywordsVisible = true;
+
+        // Global list of words that should remain uppercase
+        const UPPERCASE_WORDS = [
+            'Q&A', 'AI', 'GPT', 'RFP', 'API', 'URL', 'HTML', 'CSS', 'JS', 'JSON', 'XML', 'SQL', 
+            'HTTP', 'HTTPS', 'REST', 'CRUD', 'MVP', 'ROI', 'KPI', 'SLA', 'FAQ', 'CEO', 'CTO', 
+            'CMO', 'CFO', 'HR', 'IT', 'UI', 'UX', 'SEO', 'SEM', 'CRM', 'ERP', 'B2B', 'B2C', 
+            'SaaS', 'PaaS', 'IaaS', 'AWS', 'GCP', 'CI', 'CD', 'DevOps', 'ML', 'NLP', 'IoT', 
+            'VR', 'AR', 'XR', 'PDF', 'CSV', 'PNG', 'JPG', 'JPEG', 'GIF', 'SVG', 'MP4', 'MP3'
+        ];
+
+        // Helper function to convert text to title case with special handling
+        function toTitleCase(str) {
+            return str.replace(/\w\S*/g, function(txt) {
+                // Check if the word is in our uppercase words list (case-insensitive)
+                if (UPPERCASE_WORDS.some(word => word.toLowerCase() === txt.toLowerCase())) {
+                    return UPPERCASE_WORDS.find(word => word.toLowerCase() === txt.toLowerCase());
+                }
+                
+                // Check if the word is already all caps (and longer than 1 character)
+                if (txt.length > 1 && txt === txt.toUpperCase()) {
+                    return txt; // Keep all-caps words as-is
+                }
+                
+                // Handle hyphenated words - capitalize after hyphens
+                if (txt.includes('-')) {
+                    return txt.split('-').map(part => {
+                        if (part.length === 0) return part;
+                        // Check if this part is in our uppercase list
+                        if (UPPERCASE_WORDS.some(word => word.toLowerCase() === part.toLowerCase())) {
+                            return UPPERCASE_WORDS.find(word => word.toLowerCase() === part.toLowerCase());
+                        }
+                        // Check if already all caps
+                        if (part.length > 1 && part === part.toUpperCase()) {
+                            return part;
+                        }
+                        return part.charAt(0).toUpperCase() + part.substr(1).toLowerCase();
+                    }).join('-');
+                }
+                
+                return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+            });
+        }
+
+        // Function to update the dynamic tags and keywords display
+        function updateDynamicFiltersDisplay() {
+            const dynamicFiltersDisplay = document.getElementById('dynamic-filters-display');
+            const tagsSection = document.getElementById('tags-section');
+            const keywordsSection = document.getElementById('keywords-section');
+            const tagsContainer = document.getElementById('tags-container');
+            const keywordsContainer = document.getElementById('keywords-container');
+            
+            // Clear existing buttons
+            tagsContainer.innerHTML = '';
+            keywordsContainer.innerHTML = '';
+            
+            // Collect all unique tags and keywords from currently filtered cards
+            const availableTags = new Set();
+            const availableKeywords = new Set();
+            
+            filteredCards.forEach(card => {
+                // Get raw tags and keywords (original format)
+                const tagsRaw = card.getAttribute('data-tags-raw') || '';
+                const keywordsRaw = card.getAttribute('data-keywords-raw') || '';
+                
+                if (tagsRaw) {
+                    tagsRaw.split('|').forEach(tag => {
+                        const cleanTag = tag.trim();
+                        if (cleanTag && cleanTag !== '') {
+                            availableTags.add(cleanTag);
+                        }
+                    });
+                }
+                
+                if (keywordsRaw) {
+                    keywordsRaw.split('|').forEach(keyword => {
+                        const cleanKeyword = keyword.trim();
+                        if (cleanKeyword && cleanKeyword !== '') {
+                            availableKeywords.add(cleanKeyword);
+                        }
+                    });
+                }
+            });
+            
+            // Convert to arrays and sort
+            const sortedTags = Array.from(availableTags).sort();
+            const sortedKeywords = Array.from(availableKeywords).sort();
+            
+            // Find items that appear in both collections
+            const dualItems = sortedTags.filter(tag => sortedKeywords.includes(tag));
+            
+            // Show/hide sections based on available content
+            const hasContent = sortedTags.length > 0 || sortedKeywords.length > 0;
+            const shouldShow = hasContent && (currentFilter !== 'all' || currentSearchTerm !== '' || sortedTags.length > 1 || sortedKeywords.length > 1);
+            
+            if (shouldShow) {
+                dynamicFiltersDisplay.style.display = 'block';
+                
+                // Handle tags section
+                if (sortedTags.length > 0) {
+                    tagsSection.style.display = 'block';
+                    
+                    if (tagsVisible) {
+                        // Show the container and populate with buttons
+                        tagsContainer.style.display = 'flex';
+                        sortedTags.forEach(tag => {
+                            const button = document.createElement('button');
+                            const titleCaseTag = toTitleCase(tag);
+                            const isDual = dualItems.includes(tag);
+                            
+                            button.className = `btn btn-sm ${isDual ? 'btn-dual' : 'btn-tag'} btn-tag-filter flex-fill`;
+                            button.setAttribute('data-filter-type', 'tag');
+                            button.setAttribute('data-filter-value', tag.toLowerCase().replace(/\s+/g, '-'));
+                            
+                            // Check if this button should be active based on current filter
+                            const isActive = currentFilter === `tag:${tag}`;
+                            button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                            
+                            button.setAttribute('title', `Filter by tag: ${titleCaseTag}${isDual ? ' (also a keyword)' : ''}`);
+                            button.textContent = titleCaseTag;
+                            
+                            // Add click event
+                            button.addEventListener('click', function() {
+                                handleTagKeywordFilter('tag', tag, this);
+                            });
+                            
+                            tagsContainer.appendChild(button);
+                        });
+                    } else {
+                        // Hide the container but keep the section header visible
+                        tagsContainer.style.display = 'none';
+                    }
+                } else {
+                    tagsSection.style.display = 'none';
+                }
+                
+                // Handle keywords section
+                if (sortedKeywords.length > 0) {
+                    keywordsSection.style.display = 'block';
+                    
+                    if (keywordsVisible) {
+                        // Show the container and populate with buttons
+                        keywordsContainer.style.display = 'flex';
+                        sortedKeywords.forEach(keyword => {
+                            const button = document.createElement('button');
+                            const titleCaseKeyword = toTitleCase(keyword);
+                            const isDual = dualItems.includes(keyword);
+                            
+                            button.className = `btn btn-sm ${isDual ? 'btn-dual' : 'btn-keyword'} btn-tag-filter flex-fill`;
+                            button.setAttribute('data-filter-type', 'keyword');
+                            button.setAttribute('data-filter-value', keyword.toLowerCase().replace(/\s+/g, '-'));
+                            
+                            // Check if this button should be active based on current filter
+                            const isActive = currentFilter === `keyword:${keyword}`;
+                            button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                            
+                            button.setAttribute('title', `Filter by keyword: ${titleCaseKeyword}${isDual ? ' (also a tag)' : ''}`);
+                            button.textContent = titleCaseKeyword;
+                            
+                            // Add click event
+                            button.addEventListener('click', function() {
+                                handleTagKeywordFilter('keyword', keyword, this);
+                            });
+                            
+                            keywordsContainer.appendChild(button);
+                        });
+                    } else {
+                        // Hide the container but keep the section header visible
+                        keywordsContainer.style.display = 'none';
+                    }
+                } else {
+                    keywordsSection.style.display = 'none';
+                }
+                
+                // Update toggle button states
+                updateToggleButtons();
+            } else {
+                dynamicFiltersDisplay.style.display = 'none';
+            }
+        }
+
+        // Function to update toggle button states
+        function updateToggleButtons() {
+            const toggleTags = document.getElementById('toggle-tags');
+            const toggleKeywords = document.getElementById('toggle-keywords');
+            
+            if (toggleTags) {
+                const icon = toggleTags.querySelector('i');
+                if (tagsVisible) {
+                    icon.className = 'fa-solid fa-eye-slash';
+                    toggleTags.innerHTML = '<i class="fa-solid fa-eye-slash" aria-hidden="true"></i> Hide';
+                } else {
+                    icon.className = 'fa-solid fa-eye';
+                    toggleTags.innerHTML = '<i class="fa-solid fa-eye" aria-hidden="true"></i> Show';
+                }
+            }
+            
+            if (toggleKeywords) {
+                const icon = toggleKeywords.querySelector('i');
+                if (keywordsVisible) {
+                    icon.className = 'fa-solid fa-eye-slash';
+                    toggleKeywords.innerHTML = '<i class="fa-solid fa-eye-slash" aria-hidden="true"></i> Hide';
+                } else {
+                    icon.className = 'fa-solid fa-eye';
+                    toggleKeywords.innerHTML = '<i class="fa-solid fa-eye" aria-hidden="true"></i> Show';
+                }
+            }
+        }
+
+        // Function to handle tag/keyword filter clicks
+        function handleTagKeywordFilter(type, value, buttonElement) {
+            // Reset all category filter buttons
+            document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+            
+            // Reset all tag/keyword filter buttons
+            document.querySelectorAll('.btn-tag-filter').forEach(b => b.setAttribute('aria-pressed', 'false'));
+            
+            // Set the clicked button as active
+            buttonElement.setAttribute('aria-pressed', 'true');
+            
+            // Update the search box with the button text
+            const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
+            if (searchInput) {
+                searchInput.value = buttonElement.textContent;
+                console.log('Updated search input with:', buttonElement.textContent); // Debug log
+            } else {
+                console.error('Search input not found'); // Debug log
+            }
+            
+            // Set current filter to this specific tag/keyword
+            currentFilter = `${type}:${value}`;
+            currentPage = 1;
+            
+            // Update URL with filter parameter
+            const url = new URL(window.location);
+            url.searchParams.set('filter', currentFilter);
+            window.history.pushState({}, '', url);
+            
+            applyFiltersAndSort();
+            
+            // Scroll to top of results
+            document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Initialize when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            allCards = Array.from(document.querySelectorAll('.col[data-tags]'));
+            filteredCards = [...allCards];
+            
+            // Check for URL parameters to set initial filter
+            const urlParams = new URLSearchParams(window.location.search);
+            const filterParam = urlParams.get('filter');
+            
+            if (filterParam) {
+                // Check if this is a tag/keyword filter or a regular category filter
+                if (filterParam.startsWith('tag:') || filterParam.startsWith('keyword:')) {
+                    // This is a tag or keyword filter, set it directly
+                    currentFilter = filterParam;
+                    // Don't activate any category buttons for tag/keyword filters
+                    document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'false');
+                    
+                    // Extract the tag/keyword value and put it in the search box
+                    const filterValue = filterParam.split(':')[1];
+                    if (filterValue) {
+                        const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
+                        if (searchInput) {
+                            searchInput.value = toTitleCase(filterValue);
+                        }
+                    }
+                } else {
+                    // Find and activate the filter button for the parameter
+                    const filterButton = document.querySelector(`[data-filter="${filterParam}"]`);
+                    if (filterButton) {
+                        // Reset all buttons
+                        document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                        // Activate the target filter
+                        filterButton.setAttribute('aria-pressed', 'true');
+                        currentFilter = filterParam;
+                    } else {
+                        // If filter not found, default to "all"
+                        document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+                        currentFilter = 'all';
+                    }
+                }
+            } else {
+                // No filter parameter, default to "all"
+                document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+                currentFilter = 'all';
+            }
+            
+            // Set initial sort dropdown value
+            document.getElementById('sort-select').value = currentSort;
+            
+            // Apply initial filters and show page
+            updatePagination();
+            applyFiltersAndSort();
+            showPage(1);
+            
+            // Add hover tooltips to tag buttons
+            document.querySelectorAll('.tag-filter-btn').forEach(btn => {
+                const tagName = btn.textContent.trim().replace('🏷️ ', '').replace(' ', '');
+                btn.setAttribute('title', `Click to filter by ${tagName}`);
+            });
+            
+            // Set up toggle functionality for tags and keywords sections
+            // Use event delegation since the buttons are created dynamically
+            document.addEventListener('click', function(e) {
+                if (e.target.id === 'toggle-tags') {
+                    tagsVisible = !tagsVisible;
+                    updateDynamicFiltersDisplay();
+                } else if (e.target.id === 'toggle-keywords') {
+                    keywordsVisible = !keywordsVisible;
+                    updateDynamicFiltersDisplay();
+                }
+            });
+        });
+
+        // Toggle filter button active state and filter prompts
+        document.querySelectorAll('.btn-toggle').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // Reset all category filter buttons
+                document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                this.setAttribute('aria-pressed', 'true');
+                
+                // Reset all tag/keyword filter buttons when switching to category filters
+                document.querySelectorAll('.btn-tag-filter').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                
+                // Clear the search box when switching to category filters
+                const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
+                if (searchInput) {
+                    searchInput.value = '';
+                }
+                currentSearchTerm = '';
+                
+                currentFilter = this.getAttribute('data-filter').toLowerCase();
+                currentPage = 1;
+                
+                // Update URL with filter parameter
+                const url = new URL(window.location);
+                if (currentFilter === 'all') {
+                    url.searchParams.delete('filter');
+                } else {
+                    url.searchParams.set('filter', currentFilter);
+                }
+                window.history.pushState({}, '', url);
+                
+                applyFiltersAndSort();
+            });
+        });
+
+        // Clear filters button
+        document.getElementById('clear-filters').addEventListener('click', function() {
+            // Reset all category filter buttons
+            document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+            document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+            
+            // Reset all tag/keyword filter buttons
+            document.querySelectorAll('.btn-tag-filter').forEach(b => b.setAttribute('aria-pressed', 'false'));
+            
+            // Clear the search box
+            const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
+            if (searchInput) {
+                searchInput.value = '';
+            }
+            currentSearchTerm = '';
+            
+            currentFilter = 'all';
+            currentPage = 1;
+            
+            // Remove filter parameter from URL
+            const url = new URL(window.location);
+            url.searchParams.delete('filter');
+            window.history.pushState({}, '', url);
+            
+            applyFiltersAndSort();
+        });
+
+        // Tag filter buttons in cards
+        document.querySelectorAll('.tag-filter-btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                e.stopPropagation(); // Prevent card click
+                
+                const tagFilter = this.getAttribute('data-tag').toLowerCase();
+                
+                // Reset all filter buttons
+                document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                
+                // Find and activate the corresponding filter button (case insensitive)
+                const filterButton = document.querySelector(`[data-filter="${tagFilter}"]`);
+                if (filterButton) {
+                    filterButton.setAttribute('aria-pressed', 'true');
+                    currentFilter = tagFilter;
+                } else {
+                    // If no matching filter button exists, show all
+                    document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+                    currentFilter = 'all';
+                }
+                
+                currentPage = 1;
+                
+                // Update URL with filter parameter
+                const url = new URL(window.location);
+                if (currentFilter === 'all') {
+                    url.searchParams.delete('filter');
+                } else {
+                    url.searchParams.set('filter', currentFilter);
+                }
+                window.history.pushState({}, '', url);
+                
+                applyFiltersAndSort();
+                
+                // Scroll to top of results
+                document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+
+        // Search functionality
+        const searchInput = document.querySelector('input[type="text"][placeholder="Search prompts..."]');
+        searchInput.addEventListener('input', function() {
+            currentSearchTerm = this.value.toLowerCase();
+            
+            // If user is typing in search box, clear any active tag/keyword filters
+            if (currentSearchTerm !== '') {
+                // Reset all tag/keyword filter buttons
+                document.querySelectorAll('.btn-tag-filter').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                
+                // If current filter is a tag/keyword filter, reset to 'all'
+                if (currentFilter.startsWith('tag:') || currentFilter.startsWith('keyword:')) {
+                    currentFilter = 'all';
+                    document.querySelectorAll('.btn-toggle').forEach(b => b.setAttribute('aria-pressed', 'false'));
+                    document.querySelector('[data-filter="all"]').setAttribute('aria-pressed', 'true');
+                }
+            }
+            
+            currentPage = 1;
+            applyFiltersAndSort();
+        });
+
+        // Sort functionality
+        const sortSelect = document.getElementById('sort-select');
+        const sortStatus = document.getElementById('sort-status');
+        sortSelect.addEventListener('change', function() {
+            currentSort = this.value;
+            currentPage = 1;
+            applyFiltersAndSort();
+            if (sortStatus) {
+                let readable = 'Sorted by newest';
+                if (currentSort === 'highest') readable = 'Sorted by highest rating';
+                else if (currentSort === 'alphabetical') readable = 'Sorted alphabetically';
+                sortStatus.textContent = readable;
+            }
+        });
+
+        // Main function to apply filters, search, and sorting
+        function applyFiltersAndSort() {
+            // Start with all cards
+            filteredCards = [...allCards];
+
+            // Apply category/tag/keyword filter
+            if (currentFilter !== 'all') {
+                filteredCards = filteredCards.filter(card => {
+                    // Check if this is a tag or keyword filter
+                    if (currentFilter.startsWith('tag:')) {
+                        const targetTag = currentFilter.substring(4); // Remove 'tag:' prefix
+                        const tagsRaw = card.getAttribute('data-tags-raw') || '';
+                        return tagsRaw.toLowerCase().includes(targetTag.toLowerCase());
+                    } else if (currentFilter.startsWith('keyword:')) {
+                        const targetKeyword = currentFilter.substring(8); // Remove 'keyword:' prefix
+                        const keywordsRaw = card.getAttribute('data-keywords-raw') || '';
+                        return keywordsRaw.toLowerCase().includes(targetKeyword.toLowerCase());
+                    } else {
+                        // Original tag filtering logic for backward compatibility
+                        const tags = card.getAttribute('data-tags');
+                        return tags && tags.toLowerCase().includes(currentFilter.toLowerCase());
+                    }
+                });
+            }            // Apply search filter
+            if (currentSearchTerm !== '') {
+                filteredCards = filteredCards.filter(card => {
+                    const title = card.querySelector('.card-title').textContent.toLowerCase();
+                    const description = card.querySelector('.card-text').textContent.toLowerCase();
+                    return title.includes(currentSearchTerm) || description.includes(currentSearchTerm);
+                });
+            }
+
+            // Apply sorting
+            filteredCards.sort((a, b) => {
+                if (currentSort === 'newest') {
+                    const dateA = parseInt(a.getAttribute('data-date'));
+                    const dateB = parseInt(b.getAttribute('data-date'));
+                    return dateB - dateA; // Newest first
+                } else if (currentSort === 'highest') {
+                    const likesA = parseInt(a.getAttribute('data-likes') || '0');
+                    const likesB = parseInt(b.getAttribute('data-likes') || '0');
+                    return likesB - likesA; // Highest likes first
+                } else if (currentSort === 'alphabetical') {
+                    const titleA = a.querySelector('.card-title').textContent.toLowerCase();
+                    const titleB = b.querySelector('.card-title').textContent.toLowerCase();
+                    return titleA.localeCompare(titleB);
+                }
+                return 0;
+            });
+
+            // Hide all cards first
+            allCards.forEach(card => {
+                card.style.display = 'none';
+            });
+
+            // Show/hide no results message
+            const noResultsMessage = document.getElementById('no-results-message');
+            if (filteredCards.length === 0) {
+                noResultsMessage.style.display = 'block';
+            } else {
+                noResultsMessage.style.display = 'none';
+            }
+
+            // Update pagination and show current page
+            updatePagination();
+            showPage(currentPage);
+
+            // --- Dynamic Tag Filtering Enhancement ---
+            // We now also prune the visible tag buttons to only those that still occur in the
+            // currently filtered (pre-pagination) card set. This reduces cognitive load and
+            // mirrors the user's evolving search context. Accessibility: we do NOT remove the
+            // elements from the DOM (to preserve focus history) but toggle them with `hidden`.
+            // The active filter (aria-pressed="true"), the universal 'All Categories', and the
+            // 'Clear Filters' control always remain visible.
+            const tagButtons = Array.from(document.querySelectorAll('.btn-toggle[data-filter]'));
+            // Collect tag occurrences from filteredCards
+            const availableTags = new Set();
+            filteredCards.forEach(card => {
+                const tagsAttr = card.getAttribute('data-tags') || '';
+                if (tagsAttr) {
+                    // data-tags may be a single slug or hyphen-joined string from slugify on join
+                    // We split on commas then hyphens only if original tags were joined — but existing code
+                    // sets `data-tags="{{ post.tags | join: ',' | downcase | slugify }}"` which slugifies
+                    // the whole joined string. This can collapse boundaries. For better fidelity we keep
+                    // a substring presence check approach below when filtering earlier; here we just add
+                    // the entire attribute string which is acceptable for coarse-grained matching.
+                    // Future improvement: store structured tags in a separate data attribute.
+                    tagsAttr.split(',').forEach(t => {
+                        if (t.trim()) availableTags.add(t.trim());
+                    });
+                }
+            });
+
+            tagButtons.forEach(btn => {
+                const filterValue = btn.getAttribute('data-filter');
+                const isAll = filterValue === 'all';
+                const isActive = btn.getAttribute('aria-pressed') === 'true';
+                // Keep 'Clear Filters' (no data-filter), handled outside this loop.
+                if (isAll || isActive) {
+                    btn.hidden = false;
+                    return;
+                }
+                // Hide if tag not present in currently filtered set
+                if (!availableTags.has(filterValue)) {
+                    btn.hidden = true;
+                } else {
+                    btn.hidden = false;
+                }
+            });
+
+            // Update live region with counts
+            if (sortStatus) {
+                sortStatus.textContent = `${filteredCards.length} prompt${filteredCards.length === 1 ? '' : 's'} matching current filters`;
+            }
+            
+            // Update the dynamic tags and keywords display
+            updateDynamicFiltersDisplay();
+        }
+
+        // Pagination functions
+        function updatePagination() {
+            const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
+            const paginationContainer = document.querySelector('.pagination');
+            
+            // Clear existing pagination
+            paginationContainer.innerHTML = '';
+
+            // Previous button
+            const prevLi = document.createElement('li');
+            prevLi.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
+            prevLi.innerHTML = `<a class="page-link" href="#" ${currentPage === 1 ? 'tabindex="-1" aria-disabled="true"' : ''}>Previous</a>`;
+            if (currentPage > 1) {
+                prevLi.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    changePage(currentPage - 1);
+                });
+            }
+            paginationContainer.appendChild(prevLi);
+
+            // Page numbers
+            const startPage = Math.max(1, currentPage - 2);
+            const endPage = Math.min(totalPages, startPage + 4);
+
+            for (let i = startPage; i <= endPage; i++) {
+                const pageLi = document.createElement('li');
+                pageLi.className = `page-item ${i === currentPage ? 'active' : ''}`;
+                pageLi.innerHTML = `<a class="page-link" href="#" ${i === currentPage ? 'aria-current="page"' : ''}>${i}</a>`;
+                
+                if (i !== currentPage) {
+                    pageLi.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        changePage(i);
+                    });
+                }
+                paginationContainer.appendChild(pageLi);
+            }
+
+            // Next button
+            const nextLi = document.createElement('li');
+            nextLi.className = `page-item ${currentPage === totalPages || totalPages === 0 ? 'disabled' : ''}`;
+            nextLi.innerHTML = `<a class="page-link" href="#">Next</a>`;
+            if (currentPage < totalPages && totalPages > 0) {
+                nextLi.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    changePage(currentPage + 1);
+                });
+            }
+            paginationContainer.appendChild(nextLi);
+
+            // Hide pagination if only one page or no results
+            const paginationNav = document.querySelector('nav[aria-label="Prompt pagination"]');
+            if (totalPages <= 1) {
+                paginationNav.style.display = 'none';
+            } else {
+                paginationNav.style.display = 'block';
+            }
+        }
+
+        function changePage(page) {
+            currentPage = page;
+            showPage(page);
+            updatePagination();
+            
+            // Scroll to top of results
+            document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        function showPage(page) {
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+
+            // Hide all cards first
+            allCards.forEach(card => {
+                card.style.display = 'none';
+            });
+
+            // Show cards for current page
+            filteredCards.slice(startIndex, endIndex).forEach(card => {
+                card.style.display = '';
+            });
+        }
+
+        // Download prompt functionality
+        document.querySelectorAll('.btn-download-prompt').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const promptUrl = this.getAttribute('data-prompt-url');
+                const promptTitle = this.getAttribute('data-prompt-title');
+                const cardCol = this.closest('.col[data-tags]');
+                
+                // Show loading state
+                this.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                try {
+                    // Get prompt content and variables from data attributes
+                    let promptContent = cardCol.getAttribute('data-prompt-content');
+                    const variablesData = cardCol.getAttribute('data-variables');
+                    
+                    if (!promptContent) {
+                        throw new Error('No prompt content found');
+                    }
+                    
+                    // Decode HTML entities
+                    const textarea = document.createElement('textarea');
+                    textarea.innerHTML = promptContent;
+                    promptContent = textarea.value;
+                    
+                    // Process variables if they exist
+                    if (variablesData && variablesData !== '[]') {
+                        try {
+                            const variables = JSON.parse(variablesData);
+                            
+                            // Apply default values to variables
+                            variables.forEach(variable => {
+                                if (variable.default) {
+                                    let defaultValue = variable.default;
+                                    
+                                    // Handle array defaults (for checkboxes)
+                                    if (Array.isArray(defaultValue)) {
+                                        defaultValue = defaultValue.join(', ');
+                                    }
+                                    
+                                    // Replace both {{variable}} and {{ variable }} formats
+                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                    promptContent = promptContent.replace(regex, defaultValue);
+                                }
+                            });
+                        } catch (e) {
+                            console.warn('Could not parse variables:', e);
+                        }
+                    }
+                    
+                    // Create download
+                    const blob = new Blob([promptContent], { type: 'text/plain' });
+                    const url = URL.createObjectURL(blob);
+                    const a = document.createElement('a');
+                    a.href = url;
+                    a.download = `${promptTitle.replace(/[^a-z0-9]/gi, '_').toLowerCase()}.txt`;
+                    document.body.appendChild(a);
+                    a.click();
+                    document.body.removeChild(a);
+                    URL.revokeObjectURL(url);
+                    
+                    // Success feedback
+                    this.innerHTML = '<i class="fa-solid fa-check"></i>';
+                    this.classList.remove('animate__pulse');
+                    void this.offsetWidth;
+                    this.classList.add('animate__pulse');
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fa-solid fa-download"></i>';
+                        this.classList.remove('animate__pulse');
+                        this.disabled = false;
+                    }, 1500);
+                    
+                } catch (err) {
+                    console.error('Failed to download prompt: ', err);
+                    // Error feedback
+                    this.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i>';
+                    setTimeout(() => {
+                        this.innerHTML = '<i class="fa-solid fa-download"></i>';
+                        this.disabled = false;
+                    }, 1500);
+                }
+            });
+        });
+
+        // OpenAI ChatGPT send functionality
+        document.querySelectorAll('.btn-send-openai').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const cardCol = this.closest('.col[data-tags]');
+                
+                // Show loading state
+                this.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                try {
+                    // Get prompt content and variables from data attributes
+                    let promptContent = cardCol.getAttribute('data-prompt-content');
+                    const variablesData = cardCol.getAttribute('data-variables');
+                    
+                    if (!promptContent) {
+                        throw new Error('No prompt content found');
+                    }
+                    
+                    // Decode HTML entities
+                    const textarea = document.createElement('textarea');
+                    textarea.innerHTML = promptContent;
+                    promptContent = textarea.value;
+                    
+                    // Process variables if they exist
+                    if (variablesData && variablesData !== '[]') {
+                        try {
+                            const variables = JSON.parse(variablesData);
+                            
+                            // Apply default values to variables
+                            variables.forEach(variable => {
+                                if (variable.default) {
+                                    let defaultValue = variable.default;
+                                    
+                                    // Handle array defaults (for checkboxes)
+                                    if (Array.isArray(defaultValue)) {
+                                        defaultValue = defaultValue.join(', ');
+                                    }
+                                    
+                                    // Replace both {{variable}} and {{ variable }} formats
+                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                    promptContent = promptContent.replace(regex, defaultValue);
+                                }
+                            });
+                        } catch (e) {
+                            console.warn('Could not parse variables:', e);
+                        }
+                    }
+                    
+                    // Open ChatGPT with prompt
+                    const defaultModel = "gpt-4";
+                    const encodedPrompt = encodeURIComponent(promptContent);
+                    const url = `https://chat.openai.com/?model=${defaultModel}&q=${encodedPrompt}`;
+                    window.open(url, '_blank', 'noopener');
+                    
+                    // Success feedback
+                    this.innerHTML = '<i class="fas fa-check"></i>';
+                    this.classList.remove('animate__pulse');
+                    void this.offsetWidth;
+                    this.classList.add('animate__pulse');
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" width="12" height="12">';
+                        this.classList.remove('animate__pulse');
+                        this.disabled = false;
+                    }, 1500);
+                    
+                } catch (err) {
+                    console.error('Failed to send to ChatGPT: ', err);
+                    // Error feedback
+                    this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/OpenAI-Logo.svg" alt="OpenAI Logo" width="12" height="12">';
+                        this.disabled = false;
+                    }, 1500);
+                }
+            });
+        });
+
+        // Microsoft Copilot send functionality
+        document.querySelectorAll('.btn-send-microsoft').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const promptTitle = this.getAttribute('data-prompt-title');
+                const cardCol = this.closest('.col[data-tags]');
+                
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                try {
+                    // Get prompt content and variables from data attributes
+                    let promptContent = cardCol.getAttribute('data-prompt-content');
+                    const variablesData = cardCol.getAttribute('data-variables');
+                    
+                    if (!promptContent) {
+                        throw new Error('No prompt content found');
+                    }
+                    
+                    // Decode HTML entities
+                    const textarea = document.createElement('textarea');
+                    textarea.innerHTML = promptContent;
+                    promptContent = textarea.value;
+                    
+                    // Process variables if they exist
+                    if (variablesData && variablesData !== '[]') {
+                        try {
+                            const variables = JSON.parse(variablesData);
+                            
+                            // Apply default values to variables
+                            variables.forEach(variable => {
+                                if (variable.default) {
+                                    let defaultValue = variable.default;
+                                    
+                                    // Handle array defaults (for checkboxes)
+                                    if (Array.isArray(defaultValue)) {
+                                        defaultValue = defaultValue.join(', ');
+                                    }
+                                    
+                                    // Replace both {{variable}} and {{ variable }} formats
+                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                    promptContent = promptContent.replace(regex, defaultValue);
+                                }
+                            });
+                        } catch (e) {
+                            console.warn('Could not parse variables:', e);
+                        }
+                    }
+                    
+                    // Copy to clipboard and open Microsoft Copilot
+                    const fullPrompt = promptTitle + "\n\n" + promptContent;
+                    navigator.clipboard.writeText(fullPrompt).then(() => {
+                        alert('Prompt copied to clipboard! Please paste it into Microsoft Copilot');
+                        window.open('https://copilot.microsoft.com/', '_blank', 'noopener');
+                    });
+                    
+                    // Success feedback
+                    this.innerHTML = '<i class="fas fa-check"></i>';
+                    this.classList.remove('animate__pulse');
+                    void this.offsetWidth;
+                    this.classList.add('animate__pulse');
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" width="12" height="12">';
+                        this.classList.remove('animate__pulse');
+                        this.disabled = false;
+                    }, 1500);
+                    
+                } catch (err) {
+                    console.error('Failed to send to Microsoft Copilot: ', err);
+                    // Error feedback
+                    this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/Microsoft-Copilot-Logo.svg" alt="Microsoft Copilot Logo" width="12" height="12">';
+                        this.disabled = false;
+                    }, 1500);
+                }
+            });
+        });
+
+        // GitHub Copilot send functionality
+        document.querySelectorAll('.btn-send-github').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const cardCol = this.closest('.col[data-tags]');
+                
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                this.disabled = true;
+                
+                try {
+                    // Get prompt content and variables from data attributes
+                    let promptContent = cardCol.getAttribute('data-prompt-content');
+                    const variablesData = cardCol.getAttribute('data-variables');
+                    
+                    if (!promptContent) {
+                        throw new Error('No prompt content found');
+                    }
+                    
+                    // Decode HTML entities
+                    const textarea = document.createElement('textarea');
+                    textarea.innerHTML = promptContent;
+                    promptContent = textarea.value;
+                    
+                    // Process variables if they exist
+                    if (variablesData && variablesData !== '[]') {
+                        try {
+                            const variables = JSON.parse(variablesData);
+                            
+                            // Apply default values to variables
+                            variables.forEach(variable => {
+                                if (variable.default) {
+                                    let defaultValue = variable.default;
+                                    
+                                    // Handle array defaults (for checkboxes)
+                                    if (Array.isArray(defaultValue)) {
+                                        defaultValue = defaultValue.join(', ');
+                                    }
+                                    
+                                    // Replace both {{variable}} and {{ variable }} formats
+                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                    promptContent = promptContent.replace(regex, defaultValue);
+                                }
+                            });
+                        } catch (e) {
+                            console.warn('Could not parse variables:', e);
+                        }
+                    }
+                    
+                    // Open GitHub Copilot with prompt
+                    const encodedPrompt = encodeURIComponent(promptContent);
+                    const url = `https://github.com/copilot?prompt=${encodedPrompt}`;
+                    window.open(url, '_blank', 'noopener');
+                    
+                    // Success feedback
+                    this.innerHTML = '<i class="fas fa-check"></i>';
+                    this.classList.remove('animate__pulse');
+                    void this.offsetWidth;
+                    this.classList.add('animate__pulse');
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" width="12" height="12">';
+                        this.classList.remove('animate__pulse');
+                        this.disabled = false;
+                    }, 1500);
+                    
+                } catch (err) {
+                    console.error('Failed to send to GitHub Copilot: ', err);
+                    // Error feedback
+                    this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                    setTimeout(() => {
+                        this.innerHTML = '<img src="/img/logos/GitHub-Copilot-Logo.svg" alt="GitHub Copilot Logo" width="12" height="12">';
+                        this.disabled = false;
+                    }, 1500);
+                }
+            });
+        });
+
+        // Copy prompt to clipboard - enhanced to use prompt content with default variables
+        document.querySelectorAll('.btn-copy-prompt').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const promptUrl = this.getAttribute('data-prompt-url');
+                const promptTitle = this.getAttribute('data-prompt-title');
+                const cardCol = this.closest('.col[data-tags]');
+                
+                // Show loading state
+                this.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+                this.disabled = true;
+                
+                try {
+                    // Get prompt content and variables from data attributes
+                    let promptContent = cardCol.getAttribute('data-prompt-content');
+                    const variablesData = cardCol.getAttribute('data-variables');
+                    
+                    if (!promptContent) {
+                        throw new Error('No prompt content found');
+                    }
+                    
+                    // Decode HTML entities
+                    const textarea = document.createElement('textarea');
+                    textarea.innerHTML = promptContent;
+                    promptContent = textarea.value;
+                    
+                    // Process variables if they exist
+                    if (variablesData && variablesData !== '[]') {
+                        try {
+                            const variables = JSON.parse(variablesData);
+                            
+                            // Apply default values to variables
+                            variables.forEach(variable => {
+                                if (variable.default) {
+                                    let defaultValue = variable.default;
+                                    
+                                    // Handle array defaults (for checkboxes)
+                                    if (Array.isArray(defaultValue)) {
+                                        defaultValue = defaultValue.join(', ');
+                                    }
+                                    
+                                    // Replace both {{variable}} and {{ variable }} formats
+                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                    promptContent = promptContent.replace(regex, defaultValue);
+                                }
+                            });
+                        } catch (e) {
+                            console.warn('Could not parse variables:', e);
+                        }
+                    }
+                    
+                    // Copy to clipboard
+                    navigator.clipboard.writeText(promptContent).then(() => {
+                        // Success feedback
+                        this.innerHTML = '<i class="fas fa-check"></i>';
+                        this.classList.remove('animate__pulse');
+                        void this.offsetWidth;
+                        this.classList.add('animate__pulse');
+                        setTimeout(() => {
+                            this.innerHTML = '<i class="fas fa-copy"></i>';
+                            this.classList.remove('animate__pulse');
+                            this.disabled = false;
+                        }, 1500);
+                    }).catch(err => {
+                        throw err;
+                    });
+                    
+                } catch (err) {
+                    console.error('Failed to copy prompt: ', err);
+                    
+                    // Fallback: try to fetch from the prompt page
+                    fetch(promptUrl)
+                        .then(response => response.text())
+                        .then(html => {
+                            // Parse the HTML to extract the prompt content
+                            const parser = new DOMParser();
+                            const doc = parser.parseFromString(html, 'text/html');
+                            
+                            // Look for the prompt content in the pre element
+                            const promptElement = doc.querySelector('#original-prompt code, #original-prompt');
+                            let promptContent = '';
+                            
+                            if (promptElement) {
+                                promptContent = promptElement.textContent || promptElement.innerText;
+                            } else {
+                                // Fallback: try to find content in script variables
+                                const scripts = doc.querySelectorAll('script');
+                                for (let script of scripts) {
+                                    const scriptText = script.textContent;
+                                    if (scriptText.includes('originalPrompt =')) {
+                                        // Extract the prompt from the JavaScript variable
+                                        const match = scriptText.match(/originalPrompt\s*=\s*`([^`]*)`/);
+                                        if (match) {
+                                            promptContent = match[1];
+                                            break;
+                                        }
+                                    }
+                                }
+                            }
+                            
+                            if (!promptContent) {
+                                throw new Error('Could not extract prompt content');
+                            }
+                            
+                            // Parse and apply variables if they exist
+                            let processedContent = promptContent;
+                            const scripts = doc.querySelectorAll('script');
+                            
+                            for (let script of scripts) {
+                                const scriptText = script.textContent;
+                                if (scriptText.includes('variableDefinitions =')) {
+                                    try {
+                                        // Extract variable definitions
+                                        const variableMatch = scriptText.match(/variableDefinitions\s*=\s*(\[[\s\S]*?\]);/);
+                                        if (variableMatch) {
+                                            const variableDefinitions = eval(variableMatch[1]);
+                                            
+                                            // Apply default values to variables
+                                            variableDefinitions.forEach(variable => {
+                                                if (variable.default) {
+                                                    let defaultValue = variable.default;
+                                                    
+                                                    // Handle array defaults
+                                                    if (Array.isArray(defaultValue)) {
+                                                        defaultValue = defaultValue.join(', ');
+                                                    }
+                                                    
+                                                    const regex = new RegExp(`\\{\\{\\s*${variable.name}\\s*\\}\\}`, 'g');
+                                                    processedContent = processedContent.replace(regex, defaultValue);
+                                                }
+                                            });
+                                        }
+                                    } catch (e) {
+                                        console.warn('Could not parse variable definitions:', e);
+                                    }
+                                    break;
+                                }
+                            }
+                            
+                            // Copy the processed content to clipboard
+                            return navigator.clipboard.writeText(processedContent);
+                        })
+                        .then(() => {
+                            // Success feedback
+                            this.innerHTML = '<i class="fas fa-check"></i>';
+                            this.classList.remove('animate__pulse');
+                            void this.offsetWidth;
+                            this.classList.add('animate__pulse');
+                            setTimeout(() => {
+                                this.innerHTML = '<i class="fas fa-copy"></i>';
+                                this.classList.remove('animate__pulse');
+                                this.disabled = false;
+                            }, 1500);
+                        })
+                        .catch(fetchErr => {
+                            console.error('Failed to fetch prompt: ', fetchErr);
+                            // Final fallback: copy the description with a link
+                            const promptDescription = this.closest('.card-body').querySelector('.card-text').innerText;
+                            const textToCopy = `${promptTitle}\n\n${promptDescription}\n\nView full prompt: ${window.location.origin}${promptUrl}`;
+                            
+                            navigator.clipboard.writeText(textToCopy).then(() => {
+                                this.innerHTML = '<i class="fas fa-link"></i>';
+                            }).catch(() => {
+                                this.innerHTML = '<i class="fas fa-exclamation-triangle"></i>';
+                            });
+                            
+                            setTimeout(() => {
+                                this.innerHTML = '<i class="fas fa-copy"></i>';
+                                this.disabled = false;
+                            }, 1500);
+                        });
+                }
+            });
+        });
+
+        // Like button functionality with persistence
+        document.querySelectorAll('.btn-like').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                const countSpan = this.querySelector('.like-count');
+                const cardCol = this.closest('.col[data-tags]');
+                let count = parseInt(countSpan.textContent, 10);
+                
+                if (!this.classList.contains('liked')) {
+                    count++;
+                    this.classList.add('liked');
+                    this.querySelector('i').classList.add('text-danger');
+                } else {
+                    count--;
+                    this.classList.remove('liked');
+                    this.querySelector('i').classList.remove('text-danger');
+                }
+                
+                countSpan.textContent = count;
+                cardCol.setAttribute('data-likes', count);
+                
+                // Save to localStorage
+                const promptTitle = this.closest('.card').querySelector('.card-title').textContent;
+                localStorage.setItem(`prompt-like-${promptTitle}`, count);
+                
+                // If currently sorting by highest, re-sort
+                if (currentSort === 'highest') {
+                    applyFiltersAndSort();
+                }
+            });
+        });
+
+        // Load saved likes from localStorage
+        window.addEventListener('load', function() {
+            document.querySelectorAll('.btn-like').forEach(btn => {
+                const promptTitle = btn.closest('.card').querySelector('.card-title').textContent;
+                const savedCount = localStorage.getItem(`prompt-like-${promptTitle}`);
+                if (savedCount) {
+                    const countSpan = btn.querySelector('.like-count');
+                    const cardCol = btn.closest('.col[data-tags]');
+                    countSpan.textContent = savedCount;
+                    cardCol.setAttribute('data-likes', savedCount);
+                    
+                    if (parseInt(savedCount) > 0) {
+                        btn.classList.add('liked');
+                        btn.querySelector('i').classList.add('text-danger');
+                    }
+                }
+            });
+            
+            // Refresh the display after loading likes
+            applyFiltersAndSort();
+        });
+    </script>
+</body>
+</html>
