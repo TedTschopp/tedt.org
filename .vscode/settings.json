@@ -40,7 +40,8 @@
         "zindex"
     ],
     "github-actions.workflows.pinned.workflows": [
-        ".github/workflows/jekyll-gh-pages.yml"
+        ".github/workflows/jekyll-gh-pages.yml",
+        ".github/workflows/deploy.yml"
     ],
     "files.exclude": {
         "**/.DS_Store": true,
