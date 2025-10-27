@@ -62,7 +62,7 @@ location:
         longitude: -117.9709
 
 
-image: /images/posts/when-the-machines-dont-sleep.webp
+image: /img/2025-10/When-the-Machines-Dont-Sleep.webp
 image-alt: "A misty valley at dusk with golden lights glowing from scattered houses, surrounded by dark rolling hills and distant mountains under a deep blue sky streaked with clouds."
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
