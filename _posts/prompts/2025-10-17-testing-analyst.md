@@ -1,16 +1,16 @@
 ---
 layout: prompt-details
 
-title: "Architecture Testing Analyst"
+title: "Requirements / Test Analyst Prompt"
 subtitle: "Enterprise Architecture and Requirements Engineering"
 quote: ""
-excerpt: "A specialized prompt for architecture testing analyst with advanced AI capabilities and structured output formatting."
+excerpt: "A specialized prompt for test analyst with advanced AI capabilities and structured output formatting."
 source: "Original Content"
 source-url: ""
 call-to-action: ""
 
 date: 2025-10-17
-update:
+update: 2025-10-22
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
@@ -23,9 +23,9 @@ bullets:
     - Best practices for AI interaction
     - Professional-grade output formatting
 
-description: "Professional architecture testing analyst prompt designed for high-quality content generation and structured analysis."
+description: "Professional test analyst prompt designed for high-quality content generation and structured analysis."
 
-seo-description: "Master architecture testing analyst with this comprehensive AI prompt featuring structured templates and best practices."
+seo-description: "Master test analyst with this comprehensive AI prompt featuring structured templates and best practices."
 
 categories:
 - Prompts
@@ -36,12 +36,13 @@ tags:
     - Architecture
     - Documentation
 
-keywords: 
-    - testing
-    - system architecture
-    - analyst
-    - architecture
-    - requirements analysis
+keywords:
+   - requirements
+   - test cases
+   - user stories
+   - testing
+   - analyst
+   - requirements analysis
 
 location:
     name: Bradbury, CA
@@ -72,7 +73,7 @@ models-supported:
 - microsoft-copilot
 - github
 prompt_content: |
-  Be a Requirements / Testing Analyst.  I need you to determine the quality of my test cases against the requirements and user stories I have and if there is any gap in them.
+  Be a Requirements / Test Analyst.  I need you to determine the quality of my test cases against the requirements and user stories I have and if there is any gap in them.
   
   ## Instructions
   
@@ -232,7 +233,7 @@ prompt_content: |
 
 ---
 
-This prompt is designed for professional architecture testing analyst prompt designed for high-quality content generation and structured analysis.
+This prompt is designed for professional test analyst designed for high-quality content generation and structured analysis.
 
 ## How to Use This Prompt
 
@@ -241,16 +242,6 @@ This prompt is designed for professional architecture testing analyst prompt des
 3. **Paste into your AI tool** (ChatGPT, Claude, Copilot, etc.)
 4. **Provide your specific input** as requested by the prompt
 5. **Review and iterate** on the generated output as needed
-
-## Prompt Preview
-
-```
-Be a Requirements / Testing Analyst.  I need you to determine the quality of my test cases against the requirements and user stories I have and if there is any gap in them.
-
-## Instructions
-
-1. Ask th...
-```
 
 ## Best Practices
 

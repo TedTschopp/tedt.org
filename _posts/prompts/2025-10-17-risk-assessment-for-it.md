@@ -1,10 +1,10 @@
 ---
 layout: prompt-details
 
-title: "Architecture Risk Assessment for IT"
-subtitle: "Enterprise Architecture and Requirements Engineering"
+title: "Risk Assessment for IT"
+subtitle: "Corporate Risk Simulation and Assessment"
 quote: ""
-excerpt: "A specialized prompt for architecture risk assessment for it with advanced AI capabilities and structured output formatting."
+excerpt: "A specialized prompt for Risk Analysts to conduct a risk assessment of a situation and understand potential risks."
 source: "Original Content"
 source-url: ""
 call-to-action: ""
@@ -23,25 +23,22 @@ bullets:
     - Best practices for AI interaction
     - Professional-grade output formatting
 
-description: "Professional architecture risk assessment for it prompt designed for high-quality content generation and structured analysis."
+description: "Professional risk assessment prompt designed for high-quality content generation and structured analysis."
 
-seo-description: "Master architecture risk assessment for it with this comprehensive AI prompt featuring structured templates and best practices."
+seo-description: "Master risk assessment for IT with this comprehensive AI prompt featuring structured templates and best practices."
 
 categories:
 - Prompts
 - Projects
 
 tags: 
-    - Requirements Engineering
-    - Architecture
-    - Documentation
+    - Risk Assessment
+    - Corporate Risk
+    - IT Risk
 
 keywords: 
     - risk
     - assessment
-    - system architecture
-    - architecture
-    - requirements analysis
 
 location:
     name: Bradbury, CA
@@ -373,7 +370,7 @@ prompt_content: |
 
 ---
 
-This prompt is designed for professional architecture risk assessment for it prompt designed for high-quality content generation and structured analysis.
+This prompt is designed for professional risk Analyst prompt designed for high-quality content generation and structured analysis.
 
 ## How to Use This Prompt
 

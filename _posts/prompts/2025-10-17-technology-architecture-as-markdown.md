@@ -1,8 +1,8 @@
 ---
 layout: prompt-details
 
-title: "Architecture Technology Architecture as Markdown"
-subtitle: "Enterprise Architecture and Requirements Engineering"
+title: "Work In Progress: Technology Architecture Generator"
+subtitle: "Solution Architecture"
 quote: ""
 excerpt: "A specialized prompt for architecture technology architecture as markdown with advanced AI capabilities and structured output formatting."
 source: "Original Content"
@@ -23,16 +23,18 @@ bullets:
     - Best practices for AI interaction
     - Professional-grade output formatting
 
-description: "Professional architecture technology architecture as markdown prompt designed for high-quality content generation and structured analysis."
+description: "Professional technology architecture as markdown prompt designed for high-quality content generation and structured analysis."
 
-seo-description: "Master architecture technology architecture as markdown with this comprehensive AI prompt featuring structured templates and best practices."
+seo-description: "Master technology architecture as markdown with this comprehensive AI prompt featuring structured templates and best practices."
 
 categories:
 - Prompts
 - Projects
 
 tags: 
-    - Requirements Engineering
+    - Technology Architecture
+    - System Architecture
+    - Solution Architecture
     - Architecture
     - Documentation
 
@@ -41,7 +43,6 @@ keywords:
     - system architecture
     - markdown
     - architecture
-    - requirements analysis
 
 location:
     name: Bradbury, CA
@@ -1415,7 +1416,9 @@ prompt_content: |
 
 ---
 
-This prompt is designed for professional architecture technology architecture as markdown prompt designed for high-quality content generation and structured analysis.
+THIS PROMPT IS A WORK IN PROGRESS AND WILL BE UPDATED OVER TIME.
+
+This prompt is designed for professional solution architect who is developing a technology architecture for their project.  
 
 ## How to Use This Prompt
 
@@ -1424,17 +1427,6 @@ This prompt is designed for professional architecture technology architecture as
 3. **Paste into your AI tool** (ChatGPT, Claude, Copilot, etc.)
 4. **Provide your specific input** as requested by the prompt
 5. **Review and iterate** on the generated output as needed
-
-## Prompt Preview
-
-```
-# Technology Architecture Template 
-
-1. [Technology Architecture Template](#technology-architecture-template)
-   1. [Introduction and Scope](#introduction-and-scope)
-      1. [Purpose](#purpose)
-   2....
-```
 
 ## Best Practices
 
