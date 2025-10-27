@@ -189,7 +189,7 @@ Most companies struggle to adapt: slow planning cycles, under funded efforts, si
 
 ## Preparing for the New Kind of Reality
 
-So how should leaders—especially those of us at SCE respond without losing our center? Three moves, in order.
+So how should leaders—especially those of us at the Utility respond without losing our center? Three moves, in order.
 
 ### 1) Become Genuinely AI‑First
 
@@ -224,7 +224,7 @@ Don’t view AI‑only firms solely as enemies. There is value in **competition 
 
 ---
 
-## What This Means at SCE
+## What This Means at at the Utility
 
 We live in a world of non‑negotiables: **safety**, **reliability**, **regulatory compliance**, **customer trust**. That doesn’t insulate us from AI‑only rivals; it shapes how we respond.
 
@@ -249,7 +249,7 @@ Because autonomous agents will likely take root first in corporate contexts, **b
 
 ---
 
-## A Field Guide for Leaders at SCE in the Next 18 Months
+## A Field Guide for Leaders at the Utility in the Next 18 Months
 
 1. [ ] **Name three end‑to‑end workflows** to rebuild around agents (not tools). Charter teams. Set outcome metrics tied to **time‑to‑value** and **safety**.
 2. [ ] **Stand up an agent platform** with **MCP** connectivity, **orchestrator/evaluator** patterns, and **observability** baked in.
