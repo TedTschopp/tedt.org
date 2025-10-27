@@ -79,6 +79,10 @@ image_height: 816
 mastodon-post-id:
 ---
 
+**Bottom Line Up Front (BLUF):**
+
+AI-only firms—companies run entirely by autonomous agents with no human employees—don’t yet exist, but the technology, capital, and coordination models are rapidly aligning to make them inevitable. Their advantage won’t just be lower cost; it will be **Speed to Value**—turning ideas into outcomes faster than any human organization can match. For leaders in regulated, safety-critical industries like utilities, the challenge isn’t to panic but to **prepare**: become truly AI-first by rebuilding core workflows around agents, fortify human strengths like empathy and stewardship, and position your enterprise as the **trust anchor and ethical backbone** in a coming economy where the machines don’t sleep.
+
 # When the Machines Don’t Sleep
 
 It was a school‑morning kind of chaos—the marine layer pressed low over the San Gabriels, waffles toasting, one kid hunting for a missing shoe like it had fallen into a black hole.  Lunchboxes were open, water bottles lined up like a tiny assembly line where each kid was making their lunch. In the middle of it, I glanced at my phone and saw the headline that snapped me awake: **[“A fully autonomous, AI‑only private insurer launches with 50% lower premiums and settlement times measured in minutes.”](https://www.businesswire.com/news/home/20251014317368/en/SUPERAGENT-AI-Launches-Suite-of-AI-Agents-to-Automate-the-Entire-Insurance-Sales-Funnel-From-First-Call-to-Final-Quote)** No employees. No night shifts. No HR. Just agents talking to agents, code shaking hands with code, and customers getting answers at 6:07 a.m. while I’m trying to get the next generation off to school.
@@ -92,19 +96,6 @@ He nodded like that was both fascinating and unfair—right up there with screen
 The headline kept needling me as I made my way to my home office. If an AI‑only firm can drop into a trust‑sensitive market like insurance with half the cost and round‑the‑clock responsiveness, what happens when that same kind of company shows up in our own value stream — or perhaps someplace up and down the value chain around us — **faster than we can convene a change advisory board**? It’s one thing to refactor workflows; it’s another to explain to your child what it means when the machines don’t sleep and the markets don’t wait.
 
 Somewhere between “Have a great day!” and “Don’t forget your team project,” the thought arrived: *This isn’t just about new software. It’s about new kinds of ways of doing business.* We’ve talked for years about becoming “Digital Utility” building teams of specialized agents with humans coordinating. But this headline pointed beyond that frontier—toward **AI‑only firms** that operate without a single human on payroll. That may sound like science fiction. But plenty of yesterday’s sci‑fi now sits in our pockets wrapped around a cellphone. And for those of us in IT inside a regulated, safety‑critical business, and for those of us **raising kids** in the middle of it, the question isn’t whether to panic. It’s whether to prepare—wisely, calmly, and early—so our people and our **children’s future** can flourish in what’s coming next.
-
----
-
-## Key Takeaways
-
-* **This isn’t sci‑fi; it’s a planning horizon.** AI‑only firms don’t exist *yet*, but capital, model autonomy, and tooling are paving the runway. Treat them like a June‑Gloom morning in SoCal—the timing of the burn‑off is uncertain, but the clearing is coming. Prepare now, not later.
-
-* **Their edge is structural, not seasonal.** All‑AI organizations swap labor for compute and clock for code: **lower cost**, **24/7/365 uptime**, **instant, enterprise‑wide changes**, and **compounding learning** that drives sharper pricing and faster, more personal CX. That combination pressures incumbents on margins and speed at the same time.
-
-* **How to win—starting this quarter.** Become truly **AI‑first** by rewiring 2–3 end‑to‑end workflows around agents (not bolt‑ons), with clear **guardrails and human oversight**. Double‑down on human advantages—**curation, imagination, empathy, and the human touch**—and position your company as a **physical execution layer, trust anchor, and ethics steward** in AI‑only ecosystems. Think school drop‑off: clear lanes, consistent routine, fewer crashes.
-
-
----
 
 ## From “Frontier Firm” to “No‑Humans‑in‑the‑Loop”
 
