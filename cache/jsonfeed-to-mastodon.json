@@ -2817,9 +2817,9 @@
   },
   "https://tedt.org/testing-analyst/": {
     "id": "/testing-analyst/",
-    "title": "Architecture Testing Analyst",
-    "summary": "A specialized prompt for architecture testing analyst with advanced AI capabilities and structured output formatting.",
-    "content_text": "A specialized prompt for architecture testing analyst with advanced AI capabilities and structured output formatting. https://tedt.org/testing-analyst/",
+    "title": "Requirements / Test Analyst Prompt",
+    "summary": "A specialized prompt for test analyst with advanced AI capabilities and structured output formatting.",
+    "content_text": "A specialized prompt for test analyst with advanced AI capabilities and structured output formatting. https://tedt.org/testing-analyst/",
     "url": "https://tedt.org/testing-analyst/",
     "tags": [
       "Requirements Engineering",
@@ -2840,12 +2840,14 @@
   },
   "https://tedt.org/technology-architecture-as-markdown/": {
     "id": "/technology-architecture-as-markdown/",
-    "title": "Architecture Technology Architecture as Markdown",
+    "title": "Work In Progress: Technology Architecture Generator",
     "summary": "A specialized prompt for architecture technology architecture as markdown with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for architecture technology architecture as markdown with advanced AI capabilities and structured output formatting. https://tedt.org/technology-architecture-as-markdown/",
     "url": "https://tedt.org/technology-architecture-as-markdown/",
     "tags": [
-      "Requirements Engineering",
+      "Technology Architecture",
+      "System Architecture",
+      "Solution Architecture",
       "Architecture",
       "Documentation"
     ],
@@ -2945,14 +2947,14 @@
   },
   "https://tedt.org/risk-assessment-for-it/": {
     "id": "/risk-assessment-for-it/",
-    "title": "Architecture Risk Assessment for IT",
-    "summary": "A specialized prompt for architecture risk assessment for it with advanced AI capabilities and structured output formatting.",
-    "content_text": "A specialized prompt for architecture risk assessment for it with advanced AI capabilities and structured output formatting. https://tedt.org/risk-assessment-for-it/",
+    "title": "Risk Assessment for IT",
+    "summary": "A specialized prompt for Risk Analysts to conduct a risk assessment of a situation and understand potential risks.",
+    "content_text": "A specialized prompt for Risk Analysts to conduct a risk assessment of a situation and understand potential risks. https://tedt.org/risk-assessment-for-it/",
     "url": "https://tedt.org/risk-assessment-for-it/",
     "tags": [
-      "Requirements Engineering",
-      "Architecture",
-      "Documentation"
+      "Risk Assessment",
+      "Corporate Risk",
+      "IT Risk"
     ],
     "date_published": "2025-10-17T00:00:00-07:00",
     "date_modified": "2025-10-17T00:00:00-07:00",
@@ -3110,5 +3112,37 @@
       "https://tschopp.net/users/Ted/statuses/115407689839738258"
     ],
     "lastTootTimestamp": 1760981595542
+  },
+  "https://tedt.org/When-the-Machines-Dont-Sleep/": {
+    "id": "/When-the-Machines-Dont-Sleep/",
+    "title": "When the Machines Don’t Sleep",
+    "summary": "AI-only companies are arriving faster than most realize. As machines learn to work without rest, leaders must prepare to compete, partner, and preserve what makes our work—and humanity—enduring.",
+    "content_text": "AI-only companies are arriving faster than most realize. As machines learn to work without rest, leaders must prepare to compete, partner, and preserve what makes our work—and humanity—enduring. https://tedt.org/When-the-Machines-Dont-Sleep/",
+    "url": "https://tedt.org/When-the-Machines-Dont-Sleep/",
+    "image": "https://tedt.org/images/posts/when-the-machines-dont-sleep.webp",
+    "tags": [
+      "ai-only firms",
+      "agentic ai",
+      "digital transformation",
+      "speed to value",
+      "microsoft",
+      "openai",
+      "frontier firm",
+      "semantic index",
+      "governance",
+      "stewardship",
+      "leadership"
+    ],
+    "date_published": "2025-10-26T18:00:00-07:00",
+    "date_modified": "2025-10-26T18:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115443575836243219"
+    ],
+    "lastTootTimestamp": 1761529172441
   }
 }
