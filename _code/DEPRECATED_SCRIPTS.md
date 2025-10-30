@@ -68,6 +68,18 @@ python3 _code/find_non_gamma_world_posts_without_categories.py
 python3 _code/check_post_categories.py --check-type missing
 ```
 
+## Additional Scripts That Could Be Consolidated
+
+The following scripts also have similar functionality and could potentially be consolidated into `check_post_categories.py` in a future iteration:
+
+- `check_categories.py` - Test script for specific files
+- `check_categories_improved.py` - Improved version of check_categories.py  
+- `list_empty_categories.py` - List files with empty categories
+- `list_empty_categories_by_dir.py` - List files grouped by directory
+- `count_empty_categories.py` - Count files with empty categories
+
+These could become additional output formats or modes in the main script (e.g., `--format list`, `--format count`, `--group-by directory`).
+
 ## When to Remove Old Scripts
 
 The old scripts should be kept for a transition period (suggested: 1-2 months) to allow any external dependencies to be updated. After that period, they can be safely removed.

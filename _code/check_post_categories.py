@@ -88,7 +88,7 @@ def check_post_empty_categories(file_path):
                 elif re.match(r'^\s*[a-zA-Z]', line):  # Next non-empty line starts with a letter (likely a new field)
                     return True  # No list items before next field
                 
-        return True if not category_value else False
+        return not category_value
     except Exception as e:
         print(f"Error processing {file_path}: {str(e)}", file=sys.stderr)
         return False
@@ -171,6 +171,7 @@ def main():
     )
     
     # Infer default posts directory from script location
+    # Assumes script is in a _code directory one level below repo root
     script_dir = Path(__file__).parent
     repo_root = script_dir.parent
     default_posts_dir = repo_root / '_posts'
@@ -226,12 +227,16 @@ def main():
         'truly-empty': 'with truly empty categories (categories: only)'
     }
     
+    # Use the repo_root determined earlier for relative path calculation
+    script_dir = Path(__file__).parent
+    repo_root = script_dir.parent
+    
     gamma_note = " (excluding Gamma World)" if exclude_gamma_world else ""
     
     if result:
         print(f"Found {len(result)} posts {check_type_labels[args.check_type]}{gamma_note}:")
         for file_path in sorted(result):
-            rel_path = os.path.relpath(file_path, repo_root)
+            rel_path = os.path.relpath(file_path, str(repo_root))
             print(f"- {rel_path}")
         sys.exit(1)  # Exit with error code if issues found
     else:
