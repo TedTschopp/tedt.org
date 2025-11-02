@@ -1,22 +1,19 @@
----
-layout: reveal-integrated
+layout: page
 title: "Presentations"
 permalink: /slides/
 description: "Explore interactive, PowerPoint-style slide decks built with Reveal.js and integrated with the tedt.org theme."
----
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
 
 {%- comment -%}
   Slide deck discovery logic:
-  Previously only iterated over site.pages and required path contains 'slides/' (lowercase),
-  which excluded decks authored as posts under `_posts/Slides/` (capital S) and any future
-  post-based decks. This resulted in an empty listing at /slides/.
-  Fix: iterate over the union of `site.pages` and `site.posts` and perform a case-insensitive
-  path match plus layout check. We normalize path to lowercase for the substring test.
-  Guard: still exclude the index page itself by url, and only include layout == 'reveal-integrated'.
+  This index previously used the `reveal-integrated` layout (single deck player) which suppressed
+  a plain card grid. Switched to the generic `page` layout so content renders normally.
+  Iterate union of site.pages + site.posts; case-insensitive path match for 'slides/' and layout check
+  restricts to real decks. Exclude the index itself. If no decks found, show an informative fallback.
 {%- endcomment -%}
 {%- assign all_slide_candidates = site.pages | concat: site.posts -%}
+{%- assign deck_count = 0 -%}
 {%- for slide in all_slide_candidates -%}
   {%- assign slide_path_lc = slide.path | downcase -%}
   {% if slide_path_lc contains 'slides/' and slide.url != '/slides/' and slide.layout == 'reveal-integrated' %}
@@ -99,6 +96,14 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
     </div>
   </div>
   {% endif %}
-{% endfor %}
+{%- endfor -%}
+
+{%- if deck_count == 0 -%}
+  <div class="col">
+    <div class="alert alert-secondary w-100" role="status">
+      <strong>No presentations published yet.</strong> Slide decks will appear here once added.
+    </div>
+  </div>
+{%- endif -%}
 
 </div>
