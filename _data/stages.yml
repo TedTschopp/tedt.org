@@ -1,0 +1,18 @@
+# Centralized lifecycle stage registry
+# Keys: alpha, beta, gamma
+# Each entry supplies symbol, tooltip (short), sr (screen reader extended), and color token (can map to CSS var).
+alpha:
+  symbol: "α"
+  tooltip: "Alpha - Early & experimental"
+  sr: "Alpha – Early & experimental phase"
+  color: "#ff6b6b"
+beta:
+  symbol: "β"
+  tooltip: "Beta - Mostly complete, still being tested"
+  sr: "Beta – Mostly complete, undergoing testing"
+  color: "#f7b500"
+gamma:
+  symbol: "γ"
+  tooltip: "Gamma - Fully polished, ready for use, but not done"
+  sr: "Gamma – Fully polished, continuing to evolve"
+  color: "#2ecc71"

@@ -1,0 +1,33 @@
+{%- comment -%}
+  stage-badge.html
+  Purpose: Generic lifecycle badge component using central data file `_data/stages.yml`.
+  Usage: {% include utility/stage-badge.html stage="alpha" %}
+  Optional params:
+    * stage: (required) one of alpha, beta, gamma (case-insensitive)
+    * show_parens: (default true) wrap symbol in parentheses
+    * attach_title: (default true) output title attribute string (return via capture if needed)
+    * no_visually_hidden: (default false) suppress screen reader extended text
+    * class_extra: additional class string appended to root span
+  Output: Inline span with classes: .stage-badge .stage--<stage>. Symbol nested in .stage-symbol.
+  Accessibility: Screen reader extended text emitted unless disabled. Title attribute seeded from registry.
+  Extensibility: Add new stages by editing `_data/stages.yml` (symbol, tooltip, sr, color).
+{%- endcomment -%}
+{%- assign _raw = include.stage | downcase | strip -%}
+{%- assign _show_parens = include.show_parens | default: true -%}
+{%- assign _attach_title = include.attach_title | default: true -%}
+{%- assign _no_vh = include.no_visually_hidden | default: false -%}
+{%- assign _extra = include.class_extra | default: '' -%}
+{%- assign _stages = site.data.stages -%}
+{%- assign _entry = _stages[_raw] -%}
+{%- if _entry -%}
+  {%- capture _symbol -%}{{ _entry.symbol }}{%- endcapture -%}
+  {%- capture _tooltip -%}{{ _entry.tooltip }}{%- endcapture -%}
+  {%- capture _sr -%}{{ _entry.sr }}{%- endcapture -%}
+  {%- assign _parens_l = '(' -%}
+  {%- assign _parens_r = ')' -%}
+  {%- if _show_parens == false or _show_parens == 'false' -%}
+    {%- assign _parens_l = '' -%}
+    {%- assign _parens_r = '' -%}
+  {%- endif -%}
+  <span class="stage-badge stage--{{ _raw }} {{ _extra }}"{% if _attach_title %} title="{{ _tooltip }}"{% endif %} aria-hidden="true">{{ _parens_l }}<span class="stage-symbol">{{ _symbol }}</span>{{ _parens_r }}</span>{% unless _no_vh %}<span class="visually-hidden"> {{ _sr }}</span>{% endunless %}
+{%- endif -%}

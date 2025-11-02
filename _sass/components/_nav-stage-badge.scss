@@ -5,24 +5,33 @@
 // Usage: <span class="nav-stage-badge nav-stage--alpha">( <span class="nav-stage-symbol">α</span> )</span>
 // Only the symbol inherits the color; parentheses maintain current text color for subtlety.
 
-.nav-stage-badge {
+/* New unified class names aligning with generic include: .stage-badge / .stage-symbol */
+.nav-stage-badge, .stage-badge {
   display: inline-block;
   line-height: 1;
   font-size: 0.85em;
   font-weight: 600;
-  margin-left: 0.25rem;
+  margin-left: 0.35rem;
   letter-spacing: 0.5px;
-  .nav-stage-symbol { font-family: inherit; }
+}
+.nav-stage-badge .nav-stage-symbol, .stage-badge .stage-symbol { font-family: inherit; }
+
+/* Micro viewport adjustments: shrink symbol slightly to avoid wrapping crowding */
+@media (max-width: 380px) {
+  .nav-stage-badge, .stage-badge { font-size: 0.75em; margin-left: 0.3rem; }
+}
+@media (max-width: 320px) {
+  .nav-stage-badge, .stage-badge { font-size: 0.7em; margin-left: 0.25rem; }
 }
 
 // Stage-specific colors
-.nav-stage--alpha .nav-stage-symbol {
+.nav-stage--alpha .nav-stage-symbol, .stage--alpha .stage-symbol {
   color: var(--stage-alpha-color, #ff6b6b); // vibrant red/pink for experimental
 }
-.nav-stage--beta .nav-stage-symbol {
+.nav-stage--beta .nav-stage-symbol, .stage--beta .stage-symbol {
   color: var(--stage-beta-color, #f7b500); // amber/gold for in-progress stabilization
 }
-.nav-stage--gamma .nav-stage-symbol {
+.nav-stage--gamma .nav-stage-symbol, .stage--gamma .stage-symbol {
   color: var(--stage-gamma-color, #2ecc71); // green for ready/steady
 }
 
@@ -30,7 +39,10 @@
 @media (forced-colors: active) {
   .nav-stage--alpha .nav-stage-symbol,
   .nav-stage--beta .nav-stage-symbol,
-  .nav-stage--gamma .nav-stage-symbol {
+  .nav-stage--gamma .nav-stage-symbol,
+  .stage--alpha .stage-symbol,
+  .stage--beta .stage-symbol,
+  .stage--gamma .stage-symbol {
     color: ButtonText;
   }
 }

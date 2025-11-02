@@ -112,27 +112,25 @@
                   </li>
                   <li class="nav-item">
                     {%- comment -%}
-                      Lifecycle badge: Presentations currently Beta phase.
-                      Replaces prior temporary (🧭) marker with reusable include.
-                      Change stage via: {% include utility/nav-stage-badge.html stage="beta" %}
-                      Tooltip conveys phase meaning while Greek letter stays concise.
+                      Lifecycle badge: Presentations currently Alpha phase (early & experimental).
+                      Adjust stage by editing include invocation below.
                     {%- endcomment -%}
                     <button type="button" class="nav-link mx-2 menu-item btn btn-link p-0 border-0 js-nav-button"
                       data-href="{{ site.url }}/slides/" style="text-decoration-thickness: 1px;"
-                      aria-label="Go to Presentations page" title="Beta - Mostly complete, still being tested">Presentations
-                      {% include utility/nav-stage-badge.html stage="beta" %}
+                      aria-label="Go to Presentations page">Presentations
+                      {% include utility/stage-badge.html stage="alpha" %}
                     </button>
-                    <noscript><a href="{{ site.url }}/slides/" class="visually-hidden" title="Beta - Mostly complete, still being tested">Presentations</a></noscript>
+                    <noscript><a href="{{ site.url }}/slides/" class="visually-hidden" title="{{ site.data.stages.alpha.tooltip }}">Presentations</a></noscript>
                   </li>
                   <li class="nav-item">
                     {%- comment -%}
-                      Lifecycle badge: Prompts currently Alpha phase (experimental).
-                      Swap stage by editing include invocation.
+                      Lifecycle badge: Prompts currently Gamma phase (polished, ready for broad use but evolving).
+                      Adjust stage via include invocation.
                     {%- endcomment -%}
-                    <button type="button" class="nav-link mx-2 menu-item btn btn-link p-0 border-0 js-nav-button" data-href="{{ site.url }}/prompts/" style="text-decoration-thickness: 1px;" aria-label="Go to Prompts page" title="Alpha - Early & experimental">Prompts
-                      {% include utility/nav-stage-badge.html stage="alpha" %}
+                    <button type="button" class="nav-link mx-2 menu-item btn btn-link p-0 border-0 js-nav-button" data-href="{{ site.url }}/prompts/" style="text-decoration-thickness: 1px;" aria-label="Go to Prompts page">Prompts
+                      {% include utility/stage-badge.html stage="gamma" %}
                     </button>
-                    <noscript><a href="{{ site.url }}/prompts/" class="visually-hidden" title="Alpha - Early & experimental">Prompts</a></noscript>
+                    <noscript><a href="{{ site.url }}/prompts/" class="visually-hidden" title="{{ site.data.stages.gamma.tooltip }}">Prompts</a></noscript>
                   </li>
                   <!-- Accessibility: anchors used purely for JS toggles converted to buttons for proper semantics -->
                   <li class="nav-item">
