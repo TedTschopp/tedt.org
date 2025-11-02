@@ -4,6 +4,8 @@ title: "Responsible AI Implementation Roadmap"
 markdown: false
 permalink: /slides/responsible-ai-implementation-roadmap/
 aspect_ratio: 16:9
+date: 2025-01-16
+description: "Execution-focused roadmap for deploying responsible AI practices, governance, and model lifecycle oversight."
 ---
 
 <section>

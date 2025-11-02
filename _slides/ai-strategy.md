@@ -4,6 +4,8 @@ title: "AI Strategy 2026"
 markdown: false
 permalink: /slides/ai-strategy/
 aspect_ratio: 16:9
+date: 2025-01-15
+description: "Strategic roadmap outlining AI architecture, governance, and capability build through 2026."
 ---
 
 <section>
