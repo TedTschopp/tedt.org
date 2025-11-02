@@ -1,0 +1,21 @@
+{%- comment -%}
+  nav-stage-badge.html
+  Purpose: Render a lifecycle stage badge for navigation items (Alpha, Beta, Gamma).
+  Usage: {% include utility/nav-stage-badge.html stage="alpha" %}
+  Accepted stage values (case-insensitive): alpha, beta, gamma.
+  Output: Inline span with Greek letter and accessible tooltip semantics.
+  Accessibility:
+    * Adds aria-label on parent link/button via title attribute context; this include itself outputs visually hidden descriptive text.
+    * Screen reader text clarifies phase meaning.
+  Notes:
+    * Keep symbols compact so nav height remains stable.
+    * If unknown stage passed, renders nothing (fails closed without placeholder).
+{%- endcomment -%}
+{%- assign _stage = include.stage | downcase | strip -%}
+{%- if _stage == 'alpha' -%}
+  <span class="nav-stage-badge" aria-hidden="true">α</span><span class="visually-hidden"> Alpha – Early & experimental.</span>
+{%- elsif _stage == 'beta' -%}
+  <span class="nav-stage-badge" aria-hidden="true">β</span><span class="visually-hidden"> Beta – Mostly complete, still being tested.</span>
+{%- elsif _stage == 'gamma' -%}
+  <span class="nav-stage-badge" aria-hidden="true">γ</span><span class="visually-hidden"> Gamma – Fully polished, ready for use, but not done.</span>
+{%- endif -%}

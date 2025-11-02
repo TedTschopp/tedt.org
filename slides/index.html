@@ -7,8 +7,19 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
 
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
 
-{% for slide in site.pages %}
-  {% if slide.path contains 'slides/' and slide.url != '/slides/' and slide.layout == 'reveal-integrated' %}
+{%- comment -%}
+  Slide deck discovery logic:
+  Previously only iterated over site.pages and required path contains 'slides/' (lowercase),
+  which excluded decks authored as posts under `_posts/Slides/` (capital S) and any future
+  post-based decks. This resulted in an empty listing at /slides/.
+  Fix: iterate over the union of `site.pages` and `site.posts` and perform a case-insensitive
+  path match plus layout check. We normalize path to lowercase for the substring test.
+  Guard: still exclude the index page itself by url, and only include layout == 'reveal-integrated'.
+{%- endcomment -%}
+{%- assign all_slide_candidates = site.pages | concat: site.posts -%}
+{%- for slide in all_slide_candidates -%}
+  {%- assign slide_path_lc = slide.path | downcase -%}
+  {% if slide_path_lc contains 'slides/' and slide.url != '/slides/' and slide.layout == 'reveal-integrated' %}
   <div class="col">
     <div class="card h-100 shadow-sm border-0">
       {%- comment -%}
