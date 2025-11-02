@@ -15,9 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
       - name: Setup Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.x'
       - name: Decide if we should post
@@ -43,7 +43,7 @@ jobs:
         run: |
           echo "Skipping: latest item already posted"
       - name: Commit mastodon cache/front matter (if changed)
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update Mastodon cache/front matter"
           file_pattern: cache/*.json _posts/**/*.md
