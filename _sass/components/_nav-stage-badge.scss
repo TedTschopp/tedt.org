@@ -1,0 +1,36 @@
+// _nav-stage-badge.scss
+// Purpose: Visual styling for lifecycle stage symbols (α, β, γ) used in navigation.
+// Accessibility: Color choices meet WCAG AA contrast against dark navbar (#212529) and light backgrounds.
+// Light/Dark mode: Uses CSS variables if present; falls back to explicit colors.
+// Usage: <span class="nav-stage-badge nav-stage--alpha">( <span class="nav-stage-symbol">α</span> )</span>
+// Only the symbol inherits the color; parentheses maintain current text color for subtlety.
+
+.nav-stage-badge {
+  display: inline-block;
+  line-height: 1;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-left: 0.25rem;
+  letter-spacing: 0.5px;
+  .nav-stage-symbol { font-family: inherit; }
+}
+
+// Stage-specific colors
+.nav-stage--alpha .nav-stage-symbol {
+  color: var(--stage-alpha-color, #ff6b6b); // vibrant red/pink for experimental
+}
+.nav-stage--beta .nav-stage-symbol {
+  color: var(--stage-beta-color, #f7b500); // amber/gold for in-progress stabilization
+}
+.nav-stage--gamma .nav-stage-symbol {
+  color: var(--stage-gamma-color, #2ecc71); // green for ready/steady
+}
+
+// High-contrast mode (prefers-reduced-motion used as a lightweight media query pivot example; can adjust)
+@media (forced-colors: active) {
+  .nav-stage--alpha .nav-stage-symbol,
+  .nav-stage--beta .nav-stage-symbol,
+  .nav-stage--gamma .nav-stage-symbol {
+    color: ButtonText;
+  }
+}

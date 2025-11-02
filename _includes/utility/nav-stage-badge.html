@@ -13,9 +13,9 @@
 {%- endcomment -%}
 {%- assign _stage = include.stage | downcase | strip -%}
 {%- if _stage == 'alpha' -%}
-  <span class="nav-stage-badge" aria-hidden="true">α</span><span class="visually-hidden"> Alpha – Early & experimental.</span>
+  <span class="nav-stage-badge nav-stage--alpha" aria-hidden="true">(<span class="nav-stage-symbol">α</span>)</span><span class="visually-hidden"> Alpha – Early & experimental.</span>
 {%- elsif _stage == 'beta' -%}
-  <span class="nav-stage-badge" aria-hidden="true">β</span><span class="visually-hidden"> Beta – Mostly complete, still being tested.</span>
+  <span class="nav-stage-badge nav-stage--beta" aria-hidden="true">(<span class="nav-stage-symbol">β</span>)</span><span class="visually-hidden"> Beta – Mostly complete, still being tested.</span>
 {%- elsif _stage == 'gamma' -%}
-  <span class="nav-stage-badge" aria-hidden="true">γ</span><span class="visually-hidden"> Gamma – Fully polished, ready for use, but not done.</span>
+  <span class="nav-stage-badge nav-stage--gamma" aria-hidden="true">(<span class="nav-stage-symbol">γ</span>)</span><span class="visually-hidden"> Gamma – Fully polished, ready for use, but not done.</span>
 {%- endif -%}
