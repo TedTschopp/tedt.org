@@ -46,3 +46,22 @@
     color: ButtonText;
   }
 }
+
+/* Reinforced visually hidden rule: Some pages reported the extended lifecycle text (screen-reader only)
+   rendering visibly despite Bootstrap's global .visually-hidden utility. To guarantee concealment even if
+   the utility class fails to compile or is overridden upstream, hide any immediate sibling span with
+   class .visually-hidden following a stage badge root. This keeps semantic separation (badge decorative;
+   description announced by assistive tech) while ensuring sighted users only see the symbol.
+   Scope-limited selector avoids altering other visually hidden elements globally. */
+.stage-badge + .visually-hidden,
+.nav-stage-badge + .visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0,0,0,0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

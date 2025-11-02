@@ -29,5 +29,12 @@
     {%- assign _parens_l = '' -%}
     {%- assign _parens_r = '' -%}
   {%- endif -%}
+  {%- comment -%}
+    Reinforced visually hidden behavior: Some pages surfaced the screen-reader descriptive text visibly
+    ("Alpha – Early & experimental phase", etc.) despite Bootstrap's .visually-hidden utility existing.
+    Supporting SCSS now adds a scoped adjacent-sibling rule (.stage-badge + .visually-hidden) to guarantee
+    concealment even if the global helper is omitted or overridden. This span remains outside the aria-hidden
+    badge so assistive tech announces it. Remove the span via include.no_visually_hidden if not desired.
+  {%- endcomment -%}
   <span class="stage-badge stage--{{ _raw }} {{ _extra }}"{% if _attach_title %} title="{{ _tooltip }}"{% endif %} aria-hidden="true">{{ _parens_l }}<span class="stage-symbol">{{ _symbol }}</span>{{ _parens_r }}</span>{% unless _no_vh %}<span class="visually-hidden"> {{ _sr }}</span>{% endunless %}
 {%- endif -%}
