@@ -105,6 +105,9 @@ collections:
   GammaWorld:
     output: true
     permalink: /:collection/:title
+  slides:
+    output: true
+    permalink: /slides/:name/
 
 # Defaults for different types of posts
 defaults:

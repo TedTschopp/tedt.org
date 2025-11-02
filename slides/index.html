@@ -11,14 +11,17 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
   Slide deck discovery logic:
   This index previously used the `reveal-integrated` layout (single deck player) which suppressed
   a plain card grid. Switched to the generic `page` layout so content renders normally.
-  Iterate union of site.pages + site.posts; case-insensitive path match for 'slides/' and layout check
+  Iterate union of site.pages + site.posts + site.slides (collection). Case-insensitive path match for 'slides/' and layout check.
+  Duplicate suppression: track URLs (collection + posts may overlap) and skip if already shown.
   restricts to real decks. Exclude the index itself. If no decks found, show an informative fallback.
 {%- endcomment -%}
-{%- assign all_slide_candidates = site.pages | concat: site.posts -%}
+{%- assign all_slide_candidates = site.pages | concat: site.posts | concat: site.slides -%}
+{%- assign __shown_urls = '' | split: '' -%}
 {%- assign deck_count = 0 -%}
 {%- for slide in all_slide_candidates -%}
   {%- assign slide_path_lc = slide.path | downcase -%}
   {% if slide_path_lc contains 'slides/' and slide.url != '/slides/' and slide.layout == 'reveal-integrated' %}
+    {%- unless __shown_urls contains slide.url -%}
   <div class="col">
     <div class="card h-100 shadow-sm border-0">
       {%- comment -%}
@@ -97,7 +100,8 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
       </div>
     </div>
   </div>
-  {% endif %}
+    {%- assign __shown_urls = __shown_urls | push: slide.url -%}
+  {% endif %}{% endunless %}
 {%- endfor -%}
 
 {%- if deck_count == 0 -%}
