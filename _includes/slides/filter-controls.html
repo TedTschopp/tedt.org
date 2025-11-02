@@ -1,0 +1,62 @@
+{% comment %}
+Slide topic filter controls.
+Builds a unique topic list from site.slides front matter `topics` arrays.
+Client-side toggling: shows cards containing ANY selected topic when one or more selected; if none selected, shows all.
+Accessibility: Buttons are toggle buttons with aria-pressed state.
+{% endcomment %}
+<div class="slides-filter-bar" id="slides-filter-bar" role="group" aria-label="Filter slide decks by topic">
+  <button type="button" class="filter-toggle" data-topic="__all" aria-pressed="true">All</button>
+  {%- assign all_topics = '' | split: '' -%}
+  {%- for deck in site.slides -%}
+    {%- if deck.topics -%}
+      {%- for t in deck.topics -%}
+        {%- unless all_topics contains t -%}
+          {%- assign all_topics = all_topics | push: t -%}
+        {%- endunless -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- assign sorted_topics = all_topics | sort -%}
+  {%- for t in sorted_topics -%}
+    <button type="button" class="filter-toggle" data-topic="{{ t | escape }}" aria-pressed="false">{{ t }}</button>
+  {%- endfor -%}
+</div>
+<script>
+(function(){
+  const bar = document.getElementById('slides-filter-bar');
+  if(!bar) return;
+  const buttons = bar.querySelectorAll('button.filter-toggle');
+  const cards = document.querySelectorAll('.row [data-topics]');
+
+  function applyFilter(){
+    const active = Array.from(buttons)
+      .filter(b => b.getAttribute('aria-pressed') === 'true' && b.dataset.topic !== '__all')
+      .map(b => b.dataset.topic);
+    const useAll = active.length === 0;
+    cards.forEach(card => {
+      const topics = (card.getAttribute('data-topics') || '').split(',').filter(Boolean);
+      const match = useAll || topics.some(t => active.includes(t));
+      card.style.display = match ? '' : 'none';
+    });
+    // Ensure All button reflects current state
+    const allBtn = bar.querySelector('button[data-topic="__all"]');
+    if(allBtn){ allBtn.setAttribute('aria-pressed', useAll ? 'true' : 'false'); }
+  }
+
+  bar.addEventListener('click', e => {
+    const btn = e.target.closest('button.filter-toggle');
+    if(!btn) return;
+    const topic = btn.dataset.topic;
+    if(topic === '__all'){
+      // Clear others
+      buttons.forEach(b => { if(b !== btn) b.setAttribute('aria-pressed','false'); });
+      btn.setAttribute('aria-pressed','true');
+    } else {
+      // Toggle this button
+      const pressed = btn.getAttribute('aria-pressed') === 'true';
+      btn.setAttribute('aria-pressed', pressed ? 'false' : 'true');
+    }
+    applyFilter();
+  });
+})();
+</script>

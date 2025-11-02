@@ -6,11 +6,18 @@ permalink: /slides/ai-strategy/
 aspect_ratio: 16:9
 date: 2025-01-15
 description: "Strategic roadmap outlining AI architecture, governance, and capability build through 2026."
+image: /img/categories/artificial-intelligence.webp
+topics:
+    - strategy
+    - architecture
+    - governance
+preview_html: "<div class='preview-fragment'><h3>AI Strategy 2026</h3><p>Roadmap, architecture, governance pillars, and execution path.</p></div>"
+last_modified: 2025-02-05
 ---
 
 <section>
     <h1>AI Strategy 2026</h1>
-    <p>Ted Tschopp — Southern California Edison<br>
+    <p>Ted Tschopp — The Tschopp Collective<br>
     <strong>Advancing Responsible and Excellent AI</strong></p>
 </section>
 

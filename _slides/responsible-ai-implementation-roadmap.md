@@ -6,11 +6,18 @@ permalink: /slides/responsible-ai-implementation-roadmap/
 aspect_ratio: 16:9
 date: 2025-01-16
 description: "Execution-focused roadmap for deploying responsible AI practices, governance, and model lifecycle oversight."
+image: /img/categories/artificial-intelligence.webp
+topics:
+  - responsible-ai
+  - governance
+  - execution
+preview_html: "<div class='preview-fragment'><h3>Responsible AI Roadmap</h3><p>Principles, timeline, integration layers, and measurable outcomes.</p></div>"
+last_modified: 2025-02-07
 ---
 
 <section>
   <h1>AI TECHNOLOGY ARCHITECTURE</h1>
-  <p>Ted Tschopp — Southern California Edison<br>
+  <p>Ted Tschopp — The Tschopp Collective<br>
     <strong>Q1 2025</strong>
   </p>
 </section>

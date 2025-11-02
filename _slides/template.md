@@ -1,0 +1,196 @@
+---
+layout: reveal-integrated
+title: "Presentation Template"
+permalink: /slides/template.html
+aspect_ratio: 16:9
+date: 2025-01-19
+last_modified: 2025-02-12
+categories: [Slides]
+description: "Reusable template containing all common professional slide archetypes with guidance comments."
+image: /img/categories/artificial-intelligence.webp
+topics: [template, archetypes, design]
+preview_html: "<div class='preview-fragment'><h3>Presentation Template</h3><p>All slide patterns ready to copy.</p></div>"
+---
+
+{% comment %}
+This template deck contains representative slides for common patterns:
+  (Archetypes: Title, Agenda, Section Break, Current State, Pillars, Comparison Matrix, Timeline, Process Flow, KPI Dashboard, Data Visualization Placeholder, Risk Grid, Quote, Team Intro, Call to Action, Closing, Q&A, Appendix)
+Guidance: Duplicate sections you need; remove those you don't. Each top-level <section> is a horizontal slide; nested <section> inside becomes vertical stack.
+{% endcomment %}
+
+<section class="title-slide">
+  <h1>Your Deck Title</h1>
+  <h2>Concise Subtitle or Tagline</h2>
+  <div class="bar"></div>
+  <p class="fragment">Presenter Name — The Tschopp Collective</p>
+</section>
+
+{% include slides/section-break.html title="Agenda" subtitle="What We'll Cover" %}
+<section>
+  <h2>Agenda</h2>
+  <ol>
+    <li>Context & Goals</li>
+    <li>Current State</li>
+    <li>Strategy / Pillars</li>
+    <li>Roadmap & Timeline</li>
+    <li>Metrics & Outcomes</li>
+    <li>Risks & Mitigations</li>
+    <li>Next Steps / Q&A</li>
+  </ol>
+</section>
+
+{% include slides/section-break.html title="Current State" subtitle="Where We Are" kicker="Snapshot" %}
+<section>
+  <h2>Current State Snapshot</h2>
+  <ul>
+    <li class="fragment">Data Platform: Mature ingestion, emerging governance</li>
+    <li class="fragment">Model Operations: Manual promotion workflows</li>
+    <li class="fragment">Risk Management: Ad hoc documentation</li>
+  </ul>
+</section>
+
+{% include slides/section-break.html title="Strategic Pillars" subtitle="Foundation Elements" kicker="Enablement" %}
+<section>
+  <h2>Strategic Pillars</h2>
+  <div class="columns">
+    <div class="fragment">
+      <h3>Architecture</h3>
+      <p>Integrated hubs & governed gateways.</p>
+    </div>
+    <div class="fragment">
+      <h3>Governance</h3>
+      <p>Transparent lifecycle & risk registry.</p>
+    </div>
+    <div class="fragment">
+      <h3>Enablement</h3>
+      <p>Developer productivity & ethical tooling.</p>
+    </div>
+  </div>
+</section>
+
+{% include slides/section-break.html title="Comparison" subtitle="Decision Matrix" kicker="Evaluation" %}
+<section>
+  <h2>Comparison Matrix</h2>
+  <table>
+    <thead>
+      <tr><th>Option</th><th>Pros</th><th>Cons</th><th>Decision</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Centralized</td><td>Unified control</td><td>Bottleneck risk</td><td class="fragment highlight">✔</td></tr>
+      <tr><td>Federated</td><td>Domain autonomy</td><td>Inconsistent standards</td><td class="fragment">✖</td></tr>
+      <tr><td>Hybrid</td><td>Balanced governance</td><td>Coordination cost</td><td class="fragment">△</td></tr>
+    </tbody>
+  </table>
+</section>
+
+{% include slides/section-break.html title="Timeline" subtitle="Execution Phases" kicker="Roadmap" %}
+<section>
+  <h2>Roadmap Timeline</h2>
+  <div class="mermaid">
+  timeline
+    title Execution Roadmap
+    Q1 2025 : Framework Initiated
+    Q2 2025 : Gateway MVP
+    Q3 2025 : Hub Integration
+    Q4 2025 : Enablement Rollout
+    2026 : Scale & Optimize
+  </div>
+</section>
+
+{% include slides/section-break.html title="Process Flow" subtitle="Lifecycle" kicker="Operations" %}
+<section>
+  <h2>Process Flow</h2>
+  <div class="mermaid">
+  flowchart LR
+    A[Intake] --> B[Assessment]
+    B --> C[Review]
+    C --> D[Development]
+    D --> E[Validation]
+    E --> F[Deployment]
+    F --> G[Monitoring]
+    G --> H[Feedback]
+  </div>
+</section>
+
+{% include slides/section-break.html title="KPIs" subtitle="Performance Metrics" kicker="Outcomes" %}
+<section>
+  <h2>KPI Dashboard</h2>
+  <ul>
+    <li><strong>Model Reuse Rate:</strong> <span class="fragment">42% → 68%</span></li>
+    <li><strong>Deployment Cycle:</strong> <span class="fragment">14d → 5d</span></li>
+    <li><strong>Risk Coverage:</strong> <span class="fragment">55% → 95%</span></li>
+    <li><strong>Auto-Mitigated Incidents:</strong> <span class="fragment">+35%</span></li>
+  </ul>
+</section>
+
+{% include slides/section-break.html title="Data Viz" subtitle="Placeholder" kicker="Chart" %}
+<section>
+  <h2>Data Visualization (Placeholder)</h2>
+  <p class="fragment">Embed SVG / Canvas / image charts with accessible labels.</p>
+  <pre><code class="language-json">{
+    "releases": [5,8,11,13],
+    "riskCoverage": [55,60,73,95]
+  }</code></pre>
+</section>
+
+{% include slides/section-break.html title="Risks" subtitle="Mitigation Plan" kicker="Governance" %}
+<section>
+  <h2>Risk & Mitigation Grid</h2>
+  <table>
+    <thead><tr><th>Risk</th><th>Impact</th><th>Probability</th><th>Mitigation</th></tr></thead>
+    <tbody>
+      <tr><td>Model Drift</td><td>High</td><td>Medium</td><td>Scheduled retraining triggers</td></tr>
+      <tr><td>Opaque Decisions</td><td>Medium</td><td>Medium</td><td>Explainability layer integration</td></tr>
+      <tr><td>Regulatory Change</td><td>High</td><td>Low</td><td>Adaptive policy rule engine</td></tr>
+    </tbody>
+  </table>
+</section>
+
+{% include slides/section-break.html title="Quote" subtitle="Inspiration" kicker="Reflection" %}
+<section>
+  <h2>Quote Slide</h2>
+  <blockquote>“Strategy without governance is acceleration without brakes.”</blockquote>
+  <p class="fragment">— Ted Tschopp</p>
+</section>
+
+{% include slides/section-break.html title="Team" subtitle="Core Roles" kicker="People" %}
+<section>
+  <h2>Team Introduction</h2>
+  <div class="columns">
+    <div class="fragment"><strong>Architecture Lead</strong><br>Jane Doe</div>
+    <div class="fragment"><strong>Data Steward</strong><br>Alex Analyst</div>
+    <div class="fragment"><strong>Risk Partner</strong><br>Riley Manager</div>
+    <div class="fragment"><strong>Dev Enablement</strong><br>Dev Engineer</div>
+  </div>
+</section>
+
+{% include slides/section-break.html title="Action" subtitle="Next Steps" kicker="Momentum" %}
+<section>
+  <h2>Call to Action</h2>
+  <p class="fragment">Align roadmaps with governance milestones.</p>
+  <p class="fragment">Accelerate shared model reuse.</p>
+  <p class="fragment">Embed observability earlier.</p>
+</section>
+
+{% include slides/section-break.html title="Closing" subtitle="Wrap Up" kicker="Thanks" %}
+<section>
+  <h2>Thank You</h2>
+  <p>Questions? Explore additional resources in the appendix.</p>
+</section>
+
+{% include slides/section-break.html title="Q&A" subtitle="Discussion" kicker="Clarifications" %}
+<section>
+  <h2>Q&A</h2>
+  <p class="fragment">Discussion Points: Prioritization, Tooling, Resource Alignment.</p>
+</section>
+
+{% include slides/section-break.html title="Appendix" subtitle="Reference" kicker="Supplemental" %}
+<section>
+  <h2>Appendix</h2>
+  <ul>
+    <li>Glossary</li>
+    <li>Reference Architecture Diagram(s)</li>
+    <li>Policy Frameworks</li>
+    <li>Extended KPI Definitions</li>
+  </ul>
+</section>

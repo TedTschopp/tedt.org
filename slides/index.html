@@ -5,6 +5,7 @@ permalink: /slides/
 description: "Explore interactive, PowerPoint-style slide decks built with Reveal.js and integrated with the tedt.org theme."
 ---
 
+{% include slides/filter-controls.html %}
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
 
 {%- comment -%}
@@ -17,6 +18,12 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
 {%- assign ordered_slides = site.slides | sort: 'date' | reverse -%}
 {%- assign deck_count = ordered_slides | size -%}
 {%- for slide in ordered_slides -%}
+  {%- assign topics_attr = '' -%}
+  {%- if slide.topics and slide.topics.size > 0 -%}
+    {%- assign topics_attr = slide.topics | join: ',' -%}
+  {%- endif -%}
+  <div class="col" data-topics="{{ topics_attr }}">
+    <div class="card h-100 shadow-sm border-0">
   <div class="col">
     <div class="card h-100 shadow-sm border-0">
       {%- comment -%}
@@ -92,6 +99,14 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
         {% else %}
           <p class="card-text text-muted small">View interactive slides →</p>
         {% endif %}
+        {%- if slide.last_modified and slide.last_modified != slide.date -%}
+          <p class="card-text mb-1 small"><span class="badge text-bg-info">Updated {{ slide.last_modified | date: '%Y-%m-%d' }}</span></p>
+        {%- endif -%}
+          {% if slide.topics and slide.topics.size > 0 %}
+            <p class="card-text mt-2 mb-0 small">
+              {% for t in slide.topics %}<span class="badge text-bg-secondary me-1">{{ t }}</span>{% endfor %}
+            </p>
+          {% endif %}
       </div>
     </div>
   </div>

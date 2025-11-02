@@ -283,6 +283,79 @@ Notes:
 
 See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural implications of these flags.
 
+### Slide Deck Front Matter (Collections `slides`)
+
+Slide decks under the `slides` collection support additional metadata driving the `/slides/` index rendering and filtering.
+
+| Key | Required | Type | Purpose |
+|-----|----------|------|---------|
+| `layout` | yes | string | Should be `reveal-integrated` for Reveal.js decks. |
+| `title` | yes | string | Deck display title. Used for card title & page `<title>`. |
+| `permalink` | yes | string | Canonical path (e.g. `/slides/ai-strategy/`). |
+| `date` | yes | date | Primary ordering key (descending). Creation / publish date. |
+| `last_modified` | no | date | If present and different from `date`, an "Updated" badge displays on card. |
+| `description` | recommended | string | Short summary (card text, SEO fallback). Keep ≤160 chars. |
+| `image` | optional | path | Thumbnail image. If absent, preview HTML or first section fragment is used. |
+| `preview_html` | optional | HTML string | Explicit mini-preview markup for card (sanitized by reveal index transforms). Overrides fragment extraction. |
+| `topics` | optional | array[string] | Lightweight categorical tags for filter UI (client‑side). |
+| `aspect_ratio` | optional | string | One of `16:9`, `16:10`, `4:3` (or custom handled class) for preview container ratio. Defaults to `16:9`. |
+| `canonical` | optional | url | Canonical URL override when consolidating duplicate archetype decks. |
+| `redirect_from` | optional | array[string] | Legacy paths for automatic redirection (if plugin / config supports). |
+
+Example:
+
+```yaml
+---
+layout: reveal-integrated
+title: "AI Strategy 2026"
+permalink: /slides/ai-strategy/
+date: 2025-01-15
+last_modified: 2025-02-05
+description: "Strategic roadmap outlining AI architecture, governance, and capability build through 2026."
+topics: [strategy, architecture, governance]
+image: /img/categories/artificial-intelligence.webp
+preview_html: "<div class='preview-fragment'><h3>AI Strategy 2026</h3><p>Roadmap, architecture & governance pillars.</p></div>"
+aspect_ratio: 16:9
+---
+```
+
+### Slide Index Behavior
+
+The `/slides/` page:
+
+1. Renders only `site.slides` (wrapper posts removed to reduce duplication).
+2. Sorts decks by `date` descending.
+3. Chooses preview in priority order: `image` → `preview_html` → first `<section>` fragment.
+4. Shows an Updated badge if `last_modified` exists and differs from `date`.
+5. Generates topic badges from `topics` array and enables client-side filtering (toggle buttons built by `_includes/slides/filter-controls.html`).
+6. Computes aspect ratio class (`ratio-16x9` etc.) based on `aspect_ratio` or heuristics.
+
+
+### Slide Includes
+
+| Include | Path | Purpose |
+|---------|------|---------|
+| Section Break | `_includes/slides/section-break.html` | Standardized divider slide with `title`, optional `subtitle`, and optional `kicker` fragment. |
+| Filter Controls | `_includes/slides/filter-controls.html` | Builds topic toggle buttons and JS to filter visible cards client-side. |
+
+Usage:
+
+```liquid
+{% include slides/section-break.html title="Strategic Pillars" subtitle="Capability Deep Dive" kicker="Enablement Path" %}
+```
+
+### Client-Side Topic Filtering
+
+The filter bar creates toggle buttons for all unique `topics` values found in `site.slides`. Selecting none (or pressing "All") shows every deck; selecting one or more shows decks containing at least one selected topic. Accessible states are managed via `aria-pressed`.
+
+### Styling Utilities for Decks
+
+Swiss / archetype styles extracted into `_sass/components/_slides-archetypes.scss`:
+`title-slide`, `columns`, `highlight-box`, `.bar` utility. These keep deck files lean and reusable across multiple presentations.
+
+When adding new deck-specific structural styles, prefer extending this partial instead of inline `<style>` blocks.
+
+
 ### Mermaid Diagrams Usage
 
 Enable per page with front matter:

@@ -1,0 +1,15 @@
+{% comment %}
+Reusable section break slide.
+Parameters:
+  title (required): Main heading for divider.
+  subtitle (optional): Secondary line.
+  kicker (optional): Small fragment after load.
+Usage:
+  {% include slides/section-break.html title="Strategic Pillars" subtitle="Capability Deep Dive" kicker="Execution Path" %}
+Accessibility: Single <h2> per break; subtitle rendered as <p>. Kicker appears as fragment.
+{% endcomment %}
+<section class="section-break">
+  <h2>{{ include.title | escape }}</h2>
+  {% if include.subtitle %}<p class="text-muted">{{ include.subtitle | escape }}</p>{% endif %}
+  {% if include.kicker %}<p class="fragment fw-semibold">{{ include.kicker | escape }}</p>{% endif %}
+</section>
