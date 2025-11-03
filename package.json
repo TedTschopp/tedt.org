@@ -9,6 +9,7 @@
   "devDependencies": {
     "@axe-core/playwright": "^4.9.1",
     "@playwright/test": "^1.56.1",
-    "@types/node": "^20.11.30"
+    "@types/node": "^20.11.30",
+    "markdownlint-cli2": "^0.14.0"
   }
 }

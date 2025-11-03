@@ -1,0 +1,98 @@
+name: Docs (Markdown Lint & TOC)
+
+on:
+  pull_request:
+    paths:
+      - "README.md"
+      - "docs/**/*.md"
+      - "AGENTS.MD"
+      - "_posts/**/*.md"
+  push:
+    branches: [ main ]
+    paths:
+      - "README.md"
+      - "docs/**/*.md"
+      - "AGENTS.MD"
+      - "_posts/**/*.md"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-toc:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install markdownlint
+        run: |
+          npm install --no-audit --no-fund --save-dev markdownlint-cli2
+
+      - name: Run markdownlint
+        run: |
+          npx markdownlint-cli2 .markdownlint-cli2.yaml || exit 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Detect README heading changes
+        id: heading_check
+        run: |
+          set -e
+          if [ ! -f README.md ]; then echo "skip=true" >> $GITHUB_OUTPUT; exit 0; fi
+          # Derive diff target based on event
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch --depth=50 origin ${{ github.base_ref }}
+            BASE_REF="origin/${{ github.base_ref }}"
+          else
+            BASE_REF="HEAD^"
+          fi
+          if git diff --quiet $BASE_REF -- README.md; then
+            echo "readme_changed=false" >> $GITHUB_OUTPUT
+            echo "Headings unchanged (README not modified)." >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
+          BEFORE_HEADINGS=$(git show $BASE_REF:README.md 2>/dev/null | grep -E '^#{1,3} ' || true)
+          AFTER_HEADINGS=$(cat README.md | grep -E '^#{1,3} ' || true)
+          if [ "$BEFORE_HEADINGS" = "$AFTER_HEADINGS" ]; then
+            echo "readme_changed=true" >> $GITHUB_OUTPUT
+            echo "heading_structure_changed=false" >> $GITHUB_OUTPUT
+            echo "README changed but heading set identical; TOC rebuild not required." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "readme_changed=true" >> $GITHUB_OUTPUT
+            echo "heading_structure_changed=true" >> $GITHUB_OUTPUT
+            echo "README headings changed; TOC drift check enforced." >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Check README TOC (always, fast)
+        id: toc_check
+        run: |
+          python3 _code/update_readme_toc.py --check || EXIT=$?
+          if [ -n "$EXIT" ]; then
+            echo "toc_status=drift" >> $GITHUB_OUTPUT
+            exit $EXIT
+          else
+            echo "toc_status=ok" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Guidance Summary
+        if: always()
+        run: |
+          STATUS="${{ steps.toc_check.outputs.toc_status }}"
+          HS="${{ steps.heading_check.outputs.heading_structure_changed }}"
+          if [ "$STATUS" = "drift" ] && [ "$HS" = "true" ]; then
+            echo "TOC drift detected after heading changes. Run 'make docs-toc' and commit updated README." >> $GITHUB_STEP_SUMMARY
+          elif [ "$STATUS" = "drift" ] && [ "$HS" != "true" ]; then
+            echo "TOC drift detected but headings unchanged; verify manual edits to TOC section or re-run generator to restore canonical numbering." >> $GITHUB_STEP_SUMMARY
+          else
+            echo "TOC OK." >> $GITHUB_STEP_SUMMARY
+          fi

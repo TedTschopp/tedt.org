@@ -198,7 +198,7 @@ _includes/
 All include files follow **kebab-case** naming conventions:
 
 - ✅ `post-preview.html`
-- ✅ `next-and-previous.html`  
+- ✅ `next-and-previous.html`
 - ✅ `category-emoji.html`
 - ❌ `post_preview.html`
 - ❌ `nextAndPrevious.html`
@@ -331,6 +331,7 @@ Current active workflows (legacy files removed / stubbed):
 | Mastodon Backfill      | `mastodon-backfill.yml`     | schedule (q2h), manual                 | Batch or manual backfill of missing toot IDs               |
 | Mastodon Feed Publish  | `mastodon-feed-publish.yml` | push (main), 6h schedule, manual       | Post newest site entry to Mastodon                         |
 | Mastodon Dedupe        | `mastodon-dedupe.yml`       | daily schedule, manual                 | Scan & (optionally) delete duplicate toots                 |
+| Docs (Markdown & TOC)  | `docs-markdown-toc.yml`     | push, PR (markdown paths), manual      | Markdown lint + README heading change-aware TOC drift check|
 
 Composite actions (DRY helpers) under `.github/actions/`:
 
