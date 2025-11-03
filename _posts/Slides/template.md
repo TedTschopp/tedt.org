@@ -1,7 +1,7 @@
 ---
 layout: reveal-integrated
 title: "Presentation Template"
-permalink: /slides/template.html
+permalink: /slides/Presentation-Template.html
 aspect_ratio: 16:9
 date: 2025-01-19
 last_modified: 2025-02-12
