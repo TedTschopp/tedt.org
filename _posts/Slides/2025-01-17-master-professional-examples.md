@@ -7,12 +7,14 @@ date: 2025-01-17
 categories: [Slides]
 description: "Comprehensive gallery of professional slide types: agenda, section breaks, KPIs, timelines, process flows, comparisons, quotes, team, appendix & more."
 image: /img/categories/artificial-intelligence.webp
+image-alt: "Abstract AI themed background"
 topics:
   - design
   - archetypes
   - presentation
 preview_html: "<div class='preview-fragment'><h3>Professional Slide Archetypes</h3><p>Reusable patterns for executive decks.</p></div>"
-canonical: https://tedt.org/slides/master-slide-design/
+# Canonical updated to self to avoid cross-deck duplication.
+canonical: https://tedt.org/slides/master-professional-examples/
 redirect_from:
   - /slides/master-professional-examples-old/
 last_modified: 2025-02-10
@@ -113,12 +115,8 @@ last_modified: 2025-02-10
 
 <section>
   <h2>KPI Dashboard</h2>
-  <ul>
-    <li><strong>Model Reuse Rate:</strong> <span class="fragment">42% → 68%</span></li>
-    <li><strong>Avg Deployment Cycle:</strong> <span class="fragment">14d → 5d</span></li>
-    <li><strong>Risk Registry Coverage:</strong> <span class="fragment">55% → 95%</span></li>
-    <li><strong>Auto-Mitigated Incidents:</strong> <span class="fragment">+35%</span></li>
-  </ul>
+  {%- comment -%} Replaced inline KPI list with reusable include to reduce duplication across decks. {%- endcomment -%}
+  {% include slides/kpi-dashboard.html %}
 </section>
 
 <section>

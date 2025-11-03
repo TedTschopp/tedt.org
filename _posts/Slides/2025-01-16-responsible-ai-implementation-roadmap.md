@@ -5,6 +5,7 @@ markdown: false
 permalink: /slides/responsible-ai-implementation-roadmap/
 aspect_ratio: 16:9
 date: 2025-01-16
+categories: [Slides]
 description: "Execution-focused roadmap for deploying responsible AI practices, governance, and model lifecycle oversight."
 image: /img/categories/artificial-intelligence.webp
 topics:
@@ -123,4 +124,9 @@ route_request("customer_insight")
   <h2>Closing Thoughts</h2>
   <p class="fragment">AI is the new utility.</p>
   <p class="fragment">Our task: ensure it is safe, explainable, and transformative.</p>
+</section>
+
+<section>
+  <h2>KPI Dashboard</h2>
+  {% include slides/kpi-dashboard.html %}
 </section>

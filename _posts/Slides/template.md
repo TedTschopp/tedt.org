@@ -1,13 +1,15 @@
 ---
 layout: reveal-integrated
 title: "Presentation Template"
-permalink: /slides/Presentation-Template.html
+# Fixed permalink to follow `/slides/{slug}/` pattern (removed .html) per AGENTS.md guidance.
+permalink: /slides/presentation-template/
 aspect_ratio: 16:9
 date: 2025-01-19
 last_modified: 2025-02-12
 categories: [Slides]
 description: "Reusable template containing all common professional slide archetypes with guidance comments."
 image: /img/categories/artificial-intelligence.webp
+image-alt: "Abstract AI category graphic"
 topics: [template, archetypes, design]
 preview_html: "<div class='preview-fragment'><h3>Presentation Template</h3><p>All slide patterns ready to copy.</p></div>"
 deck-style: light

@@ -10,6 +10,8 @@ topics:
   - archetypes
 preview_html: "<div class='preview-fragment'><h3>Swiss Design & Archetypes</h3><p>Minimalist styling + executive patterns.</p></div>"
 last_modified: 2025-02-11
+image: /img/categories/artificial-intelligence.webp
+image-alt: "Minimal Swiss design motif"
 ---
 
 {% comment %} Inline style block removed; now using centralized SCSS in _sass/components/_slides-theme.scss (master block migrated). {% endcomment %}
@@ -130,12 +132,8 @@ last_modified: 2025-02-11
 
 <section>
   <h2>KPI Dashboard</h2>
-  <ul>
-    <li><strong>Model Reuse Rate:</strong> <span class="fragment">42% → 68%</span></li>
-    <li><strong>Avg Deployment Cycle:</strong> <span class="fragment">14d → 5d</span></li>
-    <li><strong>Risk Registry Coverage:</strong> <span class="fragment">55% → 95%</span></li>
-    <li><strong>Auto-Mitigated Incidents:</strong> <span class="fragment">+35%</span></li>
-  </ul>
+  {%- comment -%} Using shared KPI include (see `_includes/slides/kpi-dashboard.html`). {%- endcomment -%}
+  {% include slides/kpi-dashboard.html %}
 </section>
 
 <section>
