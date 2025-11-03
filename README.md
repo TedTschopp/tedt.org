@@ -299,6 +299,7 @@ Slide decks under the `slides` collection support additional metadata driving th
 | `preview_html` | optional | HTML string | Explicit mini-preview markup for card (sanitized by reveal index transforms). Overrides fragment extraction. |
 | `topics` | optional | array[string] | Lightweight categorical tags for filter UI (client‑side). |
 | `aspect_ratio` | optional | string | One of `16:9`, `16:10`, `4:3` (or custom handled class) for preview container ratio. Defaults to `16:9`. |
+| `deck-style` | optional | string | High-level palette / tone hint applied as `deck-style-{value}` class to `<body>` (e.g. `light`, `dark`, `accent`). Enables global theming without inline styles. |
 | `canonical` | optional | url | Canonical URL override when consolidating duplicate archetype decks. |
 | `redirect_from` | optional | array[string] | Legacy paths for automatic redirection (if plugin / config supports). |
 
@@ -337,6 +338,8 @@ The `/slides/` page:
 |---------|------|---------|
 | Section Break | `_includes/slides/section-break.html` | Standardized divider slide with `title`, optional `subtitle`, and optional `kicker` fragment. |
 | Filter Controls | `_includes/slides/filter-controls.html` | Builds topic toggle buttons and JS to filter visible cards client-side. |
+| Architecture Metadata | `_includes/slides/architecture-metadata.html` | Standardized ABB / Pattern metadata block (definition + ownership + mapping). |
+| Meta Footer | `_includes/slides/meta-footer.html` | Concise footer with ID / status / version / tags for pattern and building block slides. |
 
 Usage:
 
@@ -354,6 +357,76 @@ Swiss / archetype styles extracted into `_sass/components/_slides-archetypes.scs
 `title-slide`, `columns`, `highlight-box`, `.bar` utility. These keep deck files lean and reusable across multiple presentations.
 
 When adding new deck-specific structural styles, prefer extending this partial instead of inline `<style>` blocks.
+
+### Global Slides Theme
+
+The unified visual language for all Reveal.js decks is defined in `_sass/components/_slides-theme.scss` (imported in `bootstrap.scss` after archetype utilities). It centralizes:
+
+- Palette CSS variables (`--slides-*`) for light/dark surfaces and accents.
+- Responsive heading scale (`h1`/`h2`/`h3`) tuned to viewport width.
+- Structural helpers: `.slide-dark`, `.slide-accent-blue`, `.slide-accent-orange`.
+- Accessibility improvement: Presenter / subtitle fragments stay visible (`.title-slide p.fragment { opacity:1; }`).
+- Consistent table, blockquote, and footer styling inside decks.
+
+Use the provided CSS variables instead of hard-coded hex values for consistency and easier theming. If extending styles, prefer adding selective classes to `_slides-theme.scss` rather than embedding `<style>` blocks inside individual deck files.
+
+### Archetype Classes & Usage
+
+Archetype-specific structural classes (defined in `_sass/components/_slides-archetypes.scss`) standardize styling for architecture & solution taxonomy slides:
+
+| Class | Intent | Typical Content |
+|-------|--------|-----------------|
+| `.arch-building-block` | Logical reusable architectural component definition | ID, name, status, version, description, scope, owner |
+| `.arch-pattern` | Conceptual arrangement of building blocks addressing a concern | Definition, context (problem/forces), solution overview, relationships |
+| `.solution-building-block` | Concrete product/service implementation of architecture | Product/vendor, configuration, governance, interfaces, dependencies |
+| `.solution-pattern` | Deployment/realization pattern using specific solutions | Overview, technology stack, automation, relationships & metrics |
+
+Accent & emphasis utilities:
+
+| Class | Effect |
+|-------|--------|
+| `.slide-dark` | Dark background, light text (title slides / closing) |
+| `.slide-accent-blue` | Primary accent background (section breaks) |
+| `.slide-accent-orange` | Secondary accent background (highlight moments) |
+| `.highlight-box` | Blue info box (default) |
+| `.highlight-box.blue` | Explicit blue variant (same as default) |
+| `.highlight-box.orange` | Orange highlight box |
+| `.highlight-box.gold` | Gold variant (e.g., key metrics / awards) |
+
+Example snippet:
+
+```html
+<section class="arch-pattern">
+   <h2>Architectural Pattern: AI Gateway Mediation</h2>
+   <div class="columns">
+      <div>
+         <h3>Context</h3>
+         <p><strong>Problem:</strong> Fragmented access controls across AI services.</p>
+         <p><strong>Forces:</strong> Security, latency, governance throughput.</p>
+      </div>
+      <div>
+         <h3>Solution Overview</h3>
+         <div class="highlight-box orange">
+            Central policy engine mediates all inbound AI requests.
+         </div>
+      </div>
+   </div>
+   <footer><em>Pattern v1.0 | Draft</em></footer>
+</section>
+```
+
+Use these classes instead of inline `style="background-color: …"` attributes to keep decks maintainable and consistent.
+
+### Deck Style Front Matter
+
+Add `deck-style: light` (or `dark`, `accent`) to a deck front matter to automatically attach `deck-style-{value}` as a `<body>` class in the `reveal-integrated` layout. Extend `_sass/components/_slides-theme.scss` with selectors like:
+
+```scss
+body.deck-style-dark .title-slide { background: var(--slides-bg-dark); }
+body.deck-style-accent .highlight-box { background: var(--slides-accent-orange); }
+```
+
+Keeps palette decisions centralized versus inline per-slide overrides.
 
 
 ### Mermaid Diagrams Usage

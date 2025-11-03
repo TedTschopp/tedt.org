@@ -1,0 +1,18 @@
+{% comment %}
+slides/meta-footer.html
+Standardized footer for architecture/pattern slides.
+Inputs (front matter or include params):
+  id: identifier string (optional)
+  status: lifecycle status (optional)
+  version: version string (optional)
+  tags: array of tag strings (optional)
+Renders a concise meta line for consistent styling.
+{% endcomment %}
+<footer class="slide-meta-footer">
+  <em>
+    {% if include.id %}ID: {{ include.id }} · {% endif %}
+    {% if include.status %}Status: {{ include.status }} · {% endif %}
+    {% if include.version %}Version: {{ include.version }} · {% endif %}
+    {% if include.tags %}Tags: {{ include.tags | join: ', ' }}{% endif %}
+  </em>
+</footer>

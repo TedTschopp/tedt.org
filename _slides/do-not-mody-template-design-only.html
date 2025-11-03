@@ -126,7 +126,7 @@
 <body>
 
     <!-- Title / Opening Slide -->
-    <section class="title-slide" style="background-color: var(--bg-dark); color: var(--white);">
+    <section class="title-slide slide-dark">
         <h1>AI4IT Strategy 2026</h1>
         <h2>Building an AI-Enabled Future for Enterprise IT</h2>
         <p class="fragment">Presented by Ted Tschopp — Enterprise AI Architect</p>
@@ -146,8 +146,7 @@
     </section>
 
     <!-- Section Break Include -->
-    <section
-        style="background-color: var(--accent-blue); color: var(--white); display:flex; flex-direction:column; justify-content:center;">
+    <section class="slide-accent-blue" style="display:flex; flex-direction:column; justify-content:center;">
         <h2>Section: Strategic Overview</h2>
         <h3>Mapping our Path to Intelligent IT</h3>
         <p>Kicker: Vision → Structure → Execution</p>
@@ -323,7 +322,7 @@
     </section>
 
     <!-- Thank You / Closing -->
-    <section style="background-color: var(--bg-dark); color: var(--white);">
+    <section class="slide-dark">
         <h1>Thank You</h1>
         <h3>Questions & Discussion</h3>
     </section>
@@ -349,7 +348,7 @@
     </section>
 
     <!-- Architecture Building Block Slide -->
-    <section style="background-color: var(--bg-light); color: var(--text-primary);">
+    <section class="arch-building-block">
         <h2>Architecture Building Block</h2>
         <div class="columns">
             <div>
@@ -390,10 +389,12 @@
             <p><strong>Mapping:</strong> Domain: Technology | Layer: Logical | Context: Cloud AI Gateway</p>
             <p><strong>Constraints:</strong> SB-53 Compliance, NIST AI RMF, API Security Standards</p>
         </div>
+        {% include slides/architecture-metadata.html id="ABB-001" name="AI Gateway Framework" type="ABB" status="Approved" version="1.2.0" owner="Enterprise Architecture Team" role="AI Strategy Governance" review_cycle="Annual" capabilities="AI Enablement, Governance" processes="Design Review, AI Policy" objectives="Safe AI Adoption" mapping="Domain: Technology | Layer: Logical | Context: Cloud AI Gateway" constraints="SB-53 Compliance, NIST AI RMF, API Security Standards" %}
+        {% include slides/meta-footer.html id="ABB-001" status="Approved" version="1.2.0" tags="architecture, gateway" %}
     </section>
 
     <!-- Architectural Pattern Slide -->
-    <section style="background-color: var(--bg-light); color: var(--text-primary);">
+    <section class="arch-pattern">
         <h2>Architectural Pattern</h2>
         <div class="columns">
             <div>
@@ -418,7 +419,7 @@
                 <p><strong>Structure:</strong> High-level description or diagram of how ABBs are arranged.</p>
                 <p><strong>Principles:</strong> Loose coupling, least privilege, separation of concerns.</p>
 
-                <div class="highlight-box" style="background-color: var(--accent-blue); margin-top:1.5rem;">
+                <div class="highlight-box blue" style="margin-top:1.5rem;">
                     <p><strong>Key Building Blocks:</strong> abb-001, abb-002</p>
                     <p><strong>Improvements:</strong> Security, resilience, modularity</p>
                     <p><strong>Trade-offs:</strong> Increased latency for higher security posture</p>
@@ -440,7 +441,7 @@
 
 
     <!-- Solution Building Block Slide -->
-    <section style="background-color: var(--white); color: var(--text-primary);">
+    <section class="solution-building-block">
         <h2>Solution Building Block</h2>
         <div class="columns">
             <div>
@@ -483,8 +484,10 @@
         </div>
     </section>
 
+        {% include slides/architecture-metadata.html id="arch-pattern-001" name="Example Architectural Pattern" type="Pattern" status="Draft" version="0.9.0" owner="Enterprise Architecture Team" role="Pattern Steward" review_cycle="Quarterly" capabilities="AI Enablement" processes="Design Review" objectives="Resilience, Security" mapping="Pattern: Gateway Mediation" constraints="Latency trade-offs" %}
+        {% include slides/meta-footer.html id="arch-pattern-001" status="Draft" version="0.9.0" tags="pattern, architectural" %}
     <!-- Solution Pattern Slide -->
-    <section style="background-color: var(--white); color: var(--text-primary);">
+    <section class="solution-pattern">
         <h2>Solution Pattern</h2>
         <div class="columns">
             <div>
@@ -508,7 +511,7 @@
                     Vault and Entra ID.</p>
                 <p><strong>Key SBBs:</strong> sbb-001, sbb-002</p>
     
-                <div class="highlight-box" style="background-color: var(--accent-orange); margin-top:1.5rem;">
+                <div class="highlight-box orange" style="margin-top:1.5rem;">
                     <p><strong>Technology Stack:</strong> Azure | M365 | Defender</p>
                     <p><strong>Vendors:</strong> Microsoft</p>
                     <p><strong>Integration Points:</strong> APIM, Key Vault, Entra ID</p>

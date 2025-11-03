@@ -1,0 +1,74 @@
+// _slides-theme.scss
+// Global Reveal slide theme extracted from inline styles in design-only template.
+// Provides CSS variables, base typography scaling, and structural utilities.
+// Follow site instructions: keep minimal and avoid overriding unrelated components.
+
+:root {
+  --slides-bg-light: #F5F6F7;
+  --slides-bg-dark: #1F2126;
+  --slides-accent-blue: #0078D4;
+  --slides-accent-orange: #F36C21;
+  --slides-accent-gold: #C69214;
+  --slides-text-primary: #111111;
+  --slides-text-secondary: #555555;
+  --slides-white: #FFFFFF;
+}
+
+.reveal, .reveal .slides {
+  background-color: var(--slides-bg-light);
+  color: var(--slides-text-primary);
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+/* Base slide section spacing (rely on Reveal defaults, enhance if full-height needed) */
+.reveal .slides section { padding: 4rem 6rem; }
+
+/* Heading scale tuned to viewport; fallback to responsive adjustments */
+.reveal h1 { font-size: 6vw; font-weight:700; margin:0 0 1rem; }
+.reveal h2 { font-size: 3vw; font-weight:700; margin:0 0 1.2rem; }
+.reveal h3 { font-size: 1.5vw; font-weight:700; margin:0 0 .75rem; }
+.reveal p, .reveal li { font-size: 1.1rem; line-height:1.55; }
+
+/* Presenter / subtitle fragments keep visibility */
+.title-slide p.fragment { opacity:1; font-weight:500; }
+
+/* Decorative bar reused across templates */
+.bar { width:8rem; height:0.5rem; background-color: var(--slides-accent-blue); margin-top:1rem; }
+
+/* Fragment baseline transparency (Reveal adds .visible when active) */
+.reveal .fragment { opacity:.15; transition:opacity .4s ease; }
+.reveal .fragment.visible, .reveal .fragment.current-fragment { opacity:1; }
+
+/* Grid-based columns alternative to flex archetype if needed */
+.columns.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:2rem; }
+
+/* Highlight and highlight-box alignment with archetype partial */
+.highlight-box { background-color: var(--slides-accent-blue); color: var(--slides-white); padding:2rem; border-radius:.5rem; font-weight:500; }
+.highlight { background-color: var(--slides-accent-orange); color: var(--slides-white); padding:.25rem .5rem; border-radius:.25rem; }
+
+/* Tables inside slides */
+.reveal table { width:100%; border-collapse:collapse; margin-top:1.5rem; }
+.reveal th, .reveal td { border-bottom:1px solid #ccc; padding: .75rem 1rem; text-align:left; }
+
+/* Blockquotes */
+.reveal blockquote { font-size:2rem; font-weight:300; border-left:.5rem solid var(--slides-accent-blue); padding-left:1.25rem; margin:3rem 0; }
+
+/* Footer element inside pattern slides */
+.reveal footer { position:absolute; bottom:2rem; left:6rem; font-size:.85rem; color: var(--slides-text-secondary); }
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .reveal h1 { font-size: 10vw; }
+  .reveal h2 { font-size: 5vw; }
+  .reveal h3 { font-size: 3.5vw; }
+  .reveal .slides section { padding: 2.5rem 2rem; }
+}
+
+/* Dark variant convenience classes */
+.slide-dark { background-color: var(--slides-bg-dark); color: var(--slides-white); }
+.slide-accent-blue { background-color: var(--slides-accent-blue); color: var(--slides-white); }
+.slide-accent-orange { background-color: var(--slides-accent-orange); color: var(--slides-white); }
+
+/* Ensure .title-slide uses dark theme if not overridden */
+.title-slide { background-color: var(--slides-bg-dark); color: var(--slides-white); }
+.title-slide h2 { color: var(--slides-accent-orange); }

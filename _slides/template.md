@@ -10,6 +10,7 @@ description: "Reusable template containing all common professional slide archety
 image: /img/categories/artificial-intelligence.webp
 topics: [template, archetypes, design]
 preview_html: "<div class='preview-fragment'><h3>Presentation Template</h3><p>All slide patterns ready to copy.</p></div>"
+deck-style: light
 ---
 
 {% comment %}

@@ -1,0 +1,54 @@
+{% comment %}
+slides/architecture-metadata.html
+Reusable metadata block for Architecture / Solution Building Blocks.
+Parameters (pass via include):
+  id: string
+  name: string
+  type: ABB|SBB|Pattern|Solution Pattern
+  status: string
+  version: string
+  owner: string (optional)
+  role: string (optional)
+  review_cycle: string (optional)
+  capabilities: array (optional)
+  processes: array (optional)
+  objectives: array (optional)
+  mapping: string (optional)
+  constraints: string (optional)
+
+Usage example:
+{% include slides/architecture-metadata.html id="ABB-001" name="AI Gateway Framework" type="ABB" status="Approved" version="1.2.0" owner="Enterprise Architecture" role="AI Strategy Governance" review_cycle="Annual" capabilities=cap_list processes=proc_list objectives=obj_list mapping="Domain: Technology | Layer: Logical" constraints="NIST AI RMF" %}
+Where cap_list etc. defined as Liquid arrays in calling context if needed.
+{% endcomment %}
+<div class="architecture-metadata">
+  <div class="columns">
+    <div>
+      <h3>Definition</h3>
+      <p><strong>ID:</strong> {{ include.id }}</p>
+      <p><strong>Name:</strong> {{ include.name }}</p>
+      <p><strong>Type:</strong> {{ include.type }}</p>
+      <p><strong>Status:</strong> {{ include.status }}</p>
+      <p><strong>Version:</strong> {{ include.version }}</p>
+    </div>
+    <div>
+      {% if include.owner or include.role or include.review_cycle %}
+      <h3>Ownership</h3>
+      {% if include.owner %}<p><strong>Owner:</strong> {{ include.owner }}</p>{% endif %}
+      {% if include.role %}<p><strong>Role:</strong> {{ include.role }}</p>{% endif %}
+      {% if include.review_cycle %}<p><strong>Review Cycle:</strong> {{ include.review_cycle }}</p>{% endif %}
+      {% endif %}
+      <h3>Business Alignment</h3>
+      <ul>
+        <li><strong>Capabilities:</strong> {% if include.capabilities %}{{ include.capabilities | join: ', ' }}{% else %}<span class="text-muted">None provided</span>{% endif %}</li>
+        <li><strong>Processes:</strong> {% if include.processes %}{{ include.processes | join: ', ' }}{% else %}<span class="text-muted">None provided</span>{% endif %}</li>
+        <li><strong>Objectives:</strong> {% if include.objectives %}{{ include.objectives | join: ', ' }}{% else %}<span class="text-muted">None provided</span>{% endif %}</li>
+      </ul>
+    </div>
+  </div>
+  {% if include.mapping or include.constraints %}
+  <div class="highlight-box blue" style="margin-top:2rem;">
+    {% if include.mapping %}<p><strong>Mapping:</strong> {{ include.mapping }}</p>{% endif %}
+    {% if include.constraints %}<p><strong>Constraints:</strong> {{ include.constraints }}</p>{% endif %}
+  </div>
+  {% endif %}
+</div>
