@@ -39,7 +39,18 @@ This site includes:
    8. [Quality Gates](#quality-gates)
    9. [GitHub Workflows Overview](#github-workflows-overview)
    10. [Front Matter Feature Flags](#front-matter-feature-flags)
-       1. [Mermaid Diagrams Usage](#mermaid-diagrams-usage)
+       1. [Slide Deck Front Matter (Collections `slides`)](#slide-deck-front-matter-collections-slides)
+       2. [Slide Index Behavior](#slide-index-behavior)
+       3. [Slide Includes](#slide-includes)
+       4. [Client-Side Topic Filtering](#client-side-topic-filtering)
+       5. [Styling Utilities for Decks](#styling-utilities-for-decks)
+       6. [Global Slides Theme](#global-slides-theme)
+          1. [Variable Aliases \& Backward Compatibility](#variable-aliases--backward-compatibility)
+          2. [Deck Style Variants](#deck-style-variants)
+          3. [Full-Height Slides Utility](#full-height-slides-utility)
+       7. [Archetype Classes \& Usage](#archetype-classes--usage)
+       8. [Deck Style Front Matter](#deck-style-front-matter)
+       9. [Mermaid Diagrams Usage](#mermaid-diagrams-usage)
    11. [Homepage Hero System \& Caching](#homepage-hero-system--caching)
        1. [How It Works](#how-it-works)
        2. [Adding / Updating a Hero](#adding--updating-a-hero)
@@ -369,6 +380,67 @@ The unified visual language for all Reveal.js decks is defined in `_sass/compone
 - Consistent table, blockquote, and footer styling inside decks.
 
 Use the provided CSS variables instead of hard-coded hex values for consistency and easier theming. If extending styles, prefer adding selective classes to `_slides-theme.scss` rather than embedding `<style>` blocks inside individual deck files.
+
+#### Variable Aliases & Backward Compatibility
+
+The original inline design block used variable names like `--bg-light`, `--accent-blue`, etc. These have been aliased to the canonical `--slides-*` variables so legacy markup or experimental decks referencing those names continue to work:
+
+| Alias | Canonical Mapping |
+|-------|-------------------|
+| `--bg-light` | `--slides-bg-light` |
+| `--bg-dark` | `--slides-bg-dark` |
+| `--accent-blue` | `--slides-accent-blue` |
+| `--accent-orange` | `--slides-accent-orange` |
+| `--accent-gold` | `--slides-accent-gold` |
+| `--text-primary` | `--slides-text-primary` |
+| `--text-secondary` | `--slides-text-secondary` |
+| `--white` | `--slides-white` |
+
+Prefer the `--slides-*` variables when authoring new styles; aliases exist only to avoid breakage and may be removed after a deprecation notice.
+
+> [!DEPRECATION]
+> Alias variables (`--bg-light`, `--accent-blue`, etc.) are slated for removal no earlier than 2025-07-01. A search-and-replace sweep will update any remaining references before removal. Avoid introducing new usages.
+
+#### Deck Style Variants
+
+Add a `deck-style` key in front matter to apply high-level palette shifts without inline CSS. The layout adds a body class `deck-style-{value}`.
+
+Current variants:
+
+| `deck-style` | Effect | Typical Use |
+|--------------|--------|-------------|
+| `light` | Neutral light canvas (default tokens) | General purpose / minimal decks |
+| `dark` | Dark canvas; headings gold; bar orange | Executive briefings / title emphasis |
+| `accent-blue` | Blue canvas; white headings; bar gold | Section breaks / innovation themes |
+| `accent-orange` | Orange canvas; white headings; bar blue | Call-to-action / risk & mitigation focus |
+| `accent-gold` | Gold canvas; white headings; bar blue | Celebrations / metrics / milestone retros |
+
+Example:
+
+```yaml
+---
+layout: reveal-integrated
+title: "Governance Deep Dive"
+permalink: /slides/governance-deck/
+date: 2025-03-10
+deck-style: dark
+---
+```
+
+Extend by adding rules to `_sass/components/_slides-theme.scss` keyed by `body.deck-style-{your-value}`.
+
+#### Full-Height Slides Utility
+
+To avoid universal `min-height:100vh` (which conflicts with the layout's header height), use the opt-in class `.full-height-slide` when you need a slide to stretch:
+
+```html
+<section class="full-height-slide">
+   <h2>Immersive Overview</h2>
+   <p>Content vertically expanded without forcing all slides to overflow.</p>
+</section>
+```
+
+This keeps decks from introducing scrollbars while still supporting intentional full-height hero or data visualization panels.
 
 ### Archetype Classes & Usage
 

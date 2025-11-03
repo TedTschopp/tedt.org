@@ -4,6 +4,7 @@
 // Follow site instructions: keep minimal and avoid overriding unrelated components.
 
 :root {
+  /* Primary slide design tokens */
   --slides-bg-light: #F5F6F7;
   --slides-bg-dark: #1F2126;
   --slides-accent-blue: #0078D4;
@@ -12,6 +13,16 @@
   --slides-text-primary: #111111;
   --slides-text-secondary: #555555;
   --slides-white: #FFFFFF;
+
+  /* Alias variables (from original master-slide-design inline block) for backward content compatibility */
+  --bg-light: var(--slides-bg-light);
+  --bg-dark: var(--slides-bg-dark);
+  --accent-blue: var(--slides-accent-blue);
+  --accent-orange: var(--slides-accent-orange);
+  --accent-gold: var(--slides-accent-gold);
+  --text-primary: var(--slides-text-primary);
+  --text-secondary: var(--slides-text-secondary);
+  --white: var(--slides-white);
 }
 
 .reveal, .reveal .slides {
@@ -36,14 +47,19 @@
 .bar { width:8rem; height:0.5rem; background-color: var(--slides-accent-blue); margin-top:1rem; }
 
 /* Fragment baseline transparency (Reveal adds .visible when active) */
-.reveal .fragment { opacity:.15; transition:opacity .4s ease; }
+/* Fragment behavior adapted from master-slide-design (higher base opacity for context) */
+.reveal .fragment { opacity:.6; transition:opacity .5s ease; }
 .reveal .fragment.visible, .reveal .fragment.current-fragment { opacity:1; }
 
-/* Grid-based columns alternative to flex archetype if needed */
+/* Columns layouts */
+.columns { display:flex; gap:3rem; flex-wrap:wrap; align-items:flex-start; }
+.columns > * { flex:1 1 14rem; min-width:14rem; }
 .columns.grid { display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:2rem; }
 
 /* Highlight and highlight-box alignment with archetype partial */
+/* Highlight utilities */
 .highlight-box { background-color: var(--slides-accent-blue); color: var(--slides-white); padding:2rem; border-radius:.5rem; font-weight:500; }
+.highlight-box strong { color: var(--slides-accent-gold); }
 .highlight { background-color: var(--slides-accent-orange); color: var(--slides-white); padding:.25rem .5rem; border-radius:.25rem; }
 
 /* Tables inside slides */
@@ -55,6 +71,9 @@
 
 /* Footer element inside pattern slides */
 .reveal footer { position:absolute; bottom:2rem; left:6rem; font-size:.85rem; color: var(--slides-text-secondary); }
+
+/* Optional full-height utility (avoid global min-height:100vh to prevent overflow inside constrained container) */
+.full-height-slide { min-height:100%; }
 
 /* Responsive adjustments */
 @media (max-width: 900px) {
@@ -72,3 +91,31 @@
 /* Ensure .title-slide uses dark theme if not overridden */
 .title-slide { background-color: var(--slides-bg-dark); color: var(--slides-white); }
 .title-slide h2 { color: var(--slides-accent-orange); }
+
+/* Deck style variants (applied via body class deck-style-*) */
+body.deck-style-light .reveal, body.deck-style-light .reveal .slides { background: var(--slides-bg-light); color: var(--slides-text-primary); }
+body.deck-style-light .reveal h1, body.deck-style-light .reveal h2, body.deck-style-light .reveal h3 { color: var(--slides-text-primary); }
+
+body.deck-style-dark .reveal, body.deck-style-dark .reveal .slides { background: var(--slides-bg-dark); color: var(--slides-white); }
+body.deck-style-dark .reveal h1, body.deck-style-dark .reveal h2, body.deck-style-dark .reveal h3 { color: var(--slides-accent-gold); }
+body.deck-style-dark .bar { background-color: var(--slides-accent-orange); }
+
+/* Accent variant emphasizes blue background with white headings */
+body.deck-style-accent-blue .reveal, body.deck-style-accent-blue .reveal .slides { background: var(--slides-accent-blue); color: var(--slides-white); }
+body.deck-style-accent-blue .reveal h1, body.deck-style-accent-blue .reveal h2, body.deck-style-accent-blue .reveal h3 { color: var(--slides-white); }
+body.deck-style-accent-blue .bar { background-color: var(--slides-accent-gold); }
+
+/* Additional accent variants */
+body.deck-style-accent-orange .reveal, body.deck-style-accent-orange .reveal .slides { background: var(--slides-accent-orange); color: var(--slides-white); }
+body.deck-style-accent-orange .reveal h1, body.deck-style-accent-orange .reveal h2, body.deck-style-accent-orange .reveal h3 { color: var(--slides-white); }
+body.deck-style-accent-orange .bar { background-color: var(--slides-accent-blue); }
+
+body.deck-style-accent-gold .reveal, body.deck-style-accent-gold .reveal .slides { background: var(--slides-accent-gold); color: var(--slides-white); }
+body.deck-style-accent-gold .reveal h1, body.deck-style-accent-gold .reveal h2, body.deck-style-accent-gold .reveal h3 { color: var(--slides-white); }
+body.deck-style-accent-gold .bar { background-color: var(--slides-accent-blue); }
+
+/* Accessibility contrast adjustments */
+.highlight-box strong { color: var(--slides-accent-gold); text-shadow: 0 0 2px rgba(0,0,0,.35); }
+body.deck-style-accent-blue .highlight-box strong { text-shadow: 0 0 3px rgba(0,0,0,.55); }
+blockquote { background: none; }
+body.deck-style-dark blockquote { border-left-color: var(--slides-accent-orange); }
