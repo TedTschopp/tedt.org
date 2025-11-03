@@ -32,6 +32,7 @@ This directory contains Architecture Decision Records (ADRs) capturing significa
 | 0009 | [Temporary Downgrade & Pin of ffi 1.16.3](0009-ffi-downgrade-stability-and-upgrade-path.md) | Accepted | 2025-09-14 | Pin `ffi` for build stability; documents upgrade path & security considerations. |
 | 0010 | [`no_toc` Front Matter Flag](0010-no-toc-front-matter-flag.md) | Accepted | 2025-09-14 | Per‑post suppression of Table of Contents card for concise content. |
 | 0011 | [`mermaid` Front Matter Flag](0011-mermaid-front-matter-flag.md) | Accepted | 2025-09-14 | Conditional loading of Mermaid diagrams only on opted-in posts. |
+| 0012 | [Posts-Based Slide Deck Architecture](0012-posts-based-slides.md) | Accepted | 2025-11-03 | Deprecates legacy `slides` collection; unifies decks under `_posts/Slides/`. |
 
 
 ## Conventions
