@@ -9,34 +9,14 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
 
 {%- comment -%}
-  Slide deck discovery (canonical storage = `_posts/Slides/`):
-  Decision: Decks are regular posts kept under `_posts/Slides/` to leverage existing post workflows
-  (front matter defaults, feeds, archival behavior) while avoiding a separate collection.
-  Rendering Logic:
-    1. Attempt to use `site.slides` if a collection is ever reintroduced for advanced indexing.
-    2. If empty, fall back to filtering `site.posts` by `relative_path` prefix `_posts/Slides/`.
-  Ordering: sort by `date` descending (fallback to title only if date absent—should be rare).
-  Each deck should define `date`, `description`, and optionally `topics` for filter bar badges.
-  Preview:
-    * Uses `slide.image` if provided, else a sanitized fragment of the first (or indexed) <section>.
-  Maintenance:
-    * Remove the collection stanza in `_config.yml` once all references to `site.slides` in includes
-      are updated (filter bar currently queries `site.slides`; consider swapping to the ordered set).
-    * Keep this comment concise; expand ADR if architectural strategy changes.
+  Slide deck discovery (canonical storage = `_posts/Slides/`).
+  Simplified logic: directly filter `site.posts` by `relative_path` containing `_posts/Slides/`.
+  Ordering: date descending (fallback to title only if date absent).
+  No collection fallback retained; reintroducing a collection would require intentional template update.
+  Performance: single filtered pass then sort; no nested global scans.
 {%- endcomment -%}
-{%- assign ordered_slides = site.slides | sort: 'date' | reverse -%}
+{%- assign ordered_slides = site.posts | where_exp: 'p', "p.relative_path contains '_posts/Slides/'" | sort: 'date' | reverse -%}
 {%- assign deck_count = ordered_slides | size -%}
-{%- comment -%}
-  Fallback: If the dedicated `slides` collection is empty (e.g., decks still reside in `_posts/Slides`),
-  derive slide-like documents from `site.posts` whose relative_path starts with `_posts/Slides/`.
-  This preserves backward compatibility without requiring immediate content migration.
-  Performance: narrow filter (string startswith) then sort; short-circuits once migrated.
-{%- endcomment -%}
-{%- if deck_count == 0 -%}
-  {%- assign legacy_slides = site.posts | where_exp: 'p','p.relative_path contains '_posts/Slides/'' -%}
-  {%- assign ordered_slides = legacy_slides | sort: 'date' | reverse -%}
-  {%- assign deck_count = ordered_slides | size -%}
-{%- endif -%}
 {%- for slide in ordered_slides -%}
   {%- assign topics_attr = '' -%}
   {%- if slide.topics and slide.topics.size > 0 -%}

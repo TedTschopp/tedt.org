@@ -25,11 +25,13 @@ When assisting with this project:
 
 ### Slides Canonical Location
 
-Reveal.js slide decks are regular posts stored under `_posts/Slides/` (not a separate collection). Templates attempt `site.slides` only if such a collection is reintroduced; otherwise they filter `site.posts` for that path prefix. When adding or modifying decks:
+Reveal.js slide decks are regular posts stored strictly under `_posts/Slides/` (NO separate `slides` collection; that legacy approach is deprecated). Templates filter `site.posts` by `relative_path` containing `_posts/Slides/` to build the index and topic filters. If a future architecture change proposes re‑introducing a collection, it MUST be formalized in a new Accepted ADR first—until then, never reference `site.slides`.
+
+When adding or modifying decks:
 
 1. Place file in `_posts/Slides/` with front matter `layout: reveal-integrated`.
-2. Include `date`, `title`, `description`, and optional `topics`, `preview_html`, `image`.
-3. Avoid inline `<style>`; extend `_sass/components/_slides-theme.scss` or `_slides-archetypes.scss`.
-4. Keep permalink pattern `/slides/{slug}/` via explicit `permalink` in front matter.
-5. Do not recreate the old `slides` collection unless an ADR updates the architecture.
+2. Include mandatory `date`, `title`, `description`; optional `topics`, `preview_html`, `image`, `aspect_ratio`, `last_modified`, `deck-style`.
+3. Avoid inline `<style>`; extend `_sass/components/_slides-theme.scss` or `_sass/components/_slides-archetypes.scss`.
+4. Set explicit `permalink: /slides/{slug}/` (slug derived from filename) to keep stable URLs.
+5. Do not create a `slides` collection—submit an ADR if requirements evolve.
 

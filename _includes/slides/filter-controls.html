@@ -1,17 +1,13 @@
 {% comment %}
 Slide topic filter controls.
-Canonical storage for decks is `_posts/Slides/` (regular posts). We first attempt `site.slides` only if a collection exists;
-otherwise we derive the deck list by filtering `site.posts` for relative_path prefix `_posts/Slides/` (mirrors logic in slides/index.html).
-Builds a unique topic list from combined deck front matter `topics` arrays.
-Client-side toggling: shows cards containing ANY selected topic when one or more selected; if none selected, shows all.
-Accessibility: Buttons are toggle buttons with aria-pressed state.
+Canonical storage: `_posts/Slides/` (regular posts, no collection).
+Deck source derived by filtering `site.posts` for `relative_path` containing `_posts/Slides/`.
+Builds unique topic list from deck `topics` arrays; client-side toggling shows cards with ANY selected topic.
+Accessibility: toggle buttons maintain `aria-pressed` state; "All" shows all when no topics active.
 {% endcomment %}
 <div class="slides-filter-bar" id="slides-filter-bar" role="group" aria-label="Filter slide decks by topic">
   <button type="button" class="filter-toggle" data-topic="__all" aria-pressed="true">All</button>
-  {%- assign deck_source = site.slides -%}
-  {%- if deck_source == empty -%}
-    {%- assign deck_source = site.posts | where_exp: 'p','p.relative_path contains '_posts/Slides/'' -%}
-  {%- endif -%}
+  {%- assign deck_source = site.posts | where_exp: 'p', "p.relative_path contains '_posts/Slides/'" -%}
   {%- assign all_topics = '' | split: '' -%}
   {%- for deck in deck_source -%}
     {%- if deck.topics -%}

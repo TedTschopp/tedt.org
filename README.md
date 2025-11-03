@@ -335,13 +335,13 @@ aspect_ratio: 16:9
 
 The `/slides/` page:
 
-1. Attempts to render `site.slides` (only populated if a collection exists). If empty, it filters `site.posts` for paths beginning with `_posts/Slides/`.
+1. Filters `site.posts` for paths containing `_posts/Slides/` (canonical storage for decks).
 2. Sorts decks by `date` descending.
 3. Chooses preview in priority order: `image` → `preview_html` → first `<section>` fragment.
 4. Shows an Updated badge if `last_modified` exists and differs from `date`.
-5. Generates topic badges from each deck's `topics` array for client-side filtering (toggle buttons built by `_includes/slides/filter-controls.html`).
+5. Generates topic badges from each deck's `topics` array (toggle buttons built by `_includes/slides/filter-controls.html`).
 6. Computes aspect ratio class (`ratio-16x9` etc.) based on `aspect_ratio` or heuristics.
-7. Maintains backward compatibility—no placeholder content is ever injected (see inline Liquid comments in `slides/index.html`).
+7. Avoids placeholder content entirely; cards render only real decks.
 
 
 ### Slide Includes
@@ -361,7 +361,7 @@ Usage:
 
 ### Client-Side Topic Filtering
 
-The filter bar builds toggle buttons from the union of `topics` across the current deck set (collection if present, otherwise filtered posts under `_posts/Slides/`). Selecting none (or pressing "All") shows every deck; selecting one or more shows decks containing at least one selected topic. Accessible states are managed via `aria-pressed`.
+The filter bar builds toggle buttons from the union of `topics` across all decks in `_posts/Slides/`. Selecting none (or pressing "All") shows every deck; selecting one or more shows decks containing at least one selected topic. Accessible states are managed via `aria-pressed`.
 
 ### Styling Utilities for Decks
 
