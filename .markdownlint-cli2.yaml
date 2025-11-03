@@ -15,11 +15,11 @@ config:
     style: dash
 
 globs:
-  - "README.md"
-  - "docs/**/*.md"
-  - "_posts/**/*.md"
-  - "AGENTS.MD"
+- "README.md"
+- "docs/**/*.md"
+- "_posts/**/*.md"
+- "AGENTS.MD"
 
 ignores:
-  - "_site/"
-  - "vendor/"
+- "_site/"
+- "vendor/"
