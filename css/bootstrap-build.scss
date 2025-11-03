@@ -53,6 +53,11 @@
 // scss-docs-end import-stack
 
 /* Site-specific overrides (keep last so they win) */
+// Slides design system imports (ensure global availability for Reveal decks)
+// Added per diagnostics: previously missing, causing absent --slides-* vars in production.
+@import "components/slides-theme";
+@import "components/slides-archetypes";
+@import "components/slides-filter"; // client-side category filter utilities
 @import "overrides-prompts";
 @import "overrides-slides"; // slide card preview fallback styles
 @import "overrides-navbar"; // site-specific navbar sizing/alignment (must remain last so it wins)

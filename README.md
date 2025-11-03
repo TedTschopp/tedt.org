@@ -103,20 +103,20 @@ _includes/
 
 ### Directory Purposes
 
-| Directory | Purpose | Example Files |
-|-----------|---------|---------------|
-| `analytics/` | Third-party tracking and analytics | Google Analytics, Facebook Pixel, Clarity |
-| `assets/` | CSS, JS dependencies, and asset loading | Bootstrap, jQuery, Font Awesome |
-| `content/` | Content display, navigation, formatting | Figure displays, post previews, progress bars |
-| `feeds/` | RSS, JSON feeds, syndication | RSS feeds, JSON feeds |
-| `gaming/` | RPG and gaming-specific functionality | Creature displays, game mechanics |
-| `layout/` | Core page structure and layout | Header, footer, navigation |
-| `personal/` | Personal branding and identity | H-card, resume, contact info |
-| `pwa/` | Progressive Web App features | PWA headers, service workers |
-| `seo/` | SEO, metadata, social cards | Meta tags, Open Graph, Twitter cards |
-| `social/` | Social media integration | Comments, webmentions, sharing |
-| `themes/` | Reusable template components | Post grids, pagination, navigation |
-| `utility/` | Helper functions and tools | Date formatting, text processing |
+| Directory    | Purpose                                 | Example Files                                 |
+|--------------|-----------------------------------------|-----------------------------------------------|
+| `analytics/` | Third-party tracking and analytics      | Google Analytics, Facebook Pixel, Clarity     |
+| `assets/`    | CSS, JS dependencies, and asset loading | Bootstrap, jQuery, Font Awesome               |
+| `content/`   | Content display, navigation, formatting | Figure displays, post previews, progress bars |
+| `feeds/`     | RSS, JSON feeds, syndication            | RSS feeds, JSON feeds                         |
+| `gaming/`    | RPG and gaming-specific functionality   | Creature displays, game mechanics             |
+| `layout/`    | Core page structure and layout          | Header, footer, navigation                    |
+| `personal/`  | Personal branding and identity          | H-card, resume, contact info                  |
+| `pwa/`       | Progressive Web App features            | PWA headers, service workers                  |
+| `seo/`       | SEO, metadata, social cards             | Meta tags, Open Graph, Twitter cards          |
+| `social/`    | Social media integration                | Comments, webmentions, sharing                |
+| `themes/`    | Reusable template components            | Post grids, pagination, navigation            |
+| `utility/`   | Helper functions and tools              | Date formatting, text processing              |
 
 ### Naming Conventions
 
@@ -249,21 +249,21 @@ Run locally with: `make qa`
 
 Current active workflows (legacy files removed / stubbed):
 
-| Workflow | File | Triggers | Purpose |
-|----------|------|----------|---------|
-| Site CI | `site-ci.yml` | push, PR, weekly schedule | Build, security audit, HTML Proofer, feed & sitemap checks |
-| Deploy to GitHub Pages | `deploy-pages.yml` | workflow_run (Site CI success), manual | Deterministic deploy only after green CI |
-| Mastodon Backfill | `mastodon-backfill.yml` | schedule (q2h), manual | Batch or manual backfill of missing toot IDs |
-| Mastodon Feed Publish | `mastodon-feed-publish.yml` | push (main), 6h schedule, manual | Post newest site entry to Mastodon |
-| Mastodon Dedupe | `mastodon-dedupe.yml` | daily schedule, manual | Scan & (optionally) delete duplicate toots |
+| Workflow               | File                        | Triggers                               | Purpose                                                    |
+|------------------------|-----------------------------|----------------------------------------|------------------------------------------------------------|
+| Site CI                | `site-ci.yml`               | push, PR, weekly schedule              | Build, security audit, HTML Proofer, feed & sitemap checks |
+| Deploy to GitHub Pages | `deploy-pages.yml`          | workflow_run (Site CI success), manual | Deterministic deploy only after green CI                   |
+| Mastodon Backfill      | `mastodon-backfill.yml`     | schedule (q2h), manual                 | Batch or manual backfill of missing toot IDs               |
+| Mastodon Feed Publish  | `mastodon-feed-publish.yml` | push (main), 6h schedule, manual       | Post newest site entry to Mastodon                         |
+| Mastodon Dedupe        | `mastodon-dedupe.yml`       | daily schedule, manual                 | Scan & (optionally) delete duplicate toots                 |
 
 Composite actions (DRY helpers) under `.github/actions/`:
 
-| Action | Directory | Description |
-|--------|-----------|-------------|
-| setup-ruby-bundle | `.github/actions/setup-ruby-bundle/` | Standard Ruby + bundler + caching |
-| masto-cache-prep | `.github/actions/masto-cache-prep/` | Normalize mastodon cache & sync front matter preview/live |
-| masto-update-frontmatter | `.github/actions/masto-update-frontmatter/` | Resolve canonical path & update toot ID in markdown |
+| Action                   | Directory                                   | Description                                               |
+|--------------------------|---------------------------------------------|-----------------------------------------------------------|
+| setup-ruby-bundle        | `.github/actions/setup-ruby-bundle/`        | Standard Ruby + bundler + caching                         |
+| masto-cache-prep         | `.github/actions/masto-cache-prep/`         | Normalize mastodon cache & sync front matter preview/live |
+| masto-update-frontmatter | `.github/actions/masto-update-frontmatter/` | Resolve canonical path & update toot ID in markdown       |
 
 Deprecated legacy workflow files were retained only as inert stubs (no triggers) to avoid accidental reactivation; they can be fully removed in a future cleanup once all badges / references are confirmed updated.
 
@@ -271,8 +271,8 @@ Deprecated legacy workflow files were retained only as inert stubs (no triggers)
 
 Certain presentation and asset behaviors can be controlled per-post via boolean front matter flags. These are opt-in / opt-out controls intended to keep pages minimal and purposeful.
 
-| Flag | Type | Default | Effect | When to Use |
-|------|------|---------|--------|-------------|
+| Flag     | Type    | Default | Effect                                                                        | When to Use                                                          |
+|----------|---------|---------|-------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | `no_toc` | boolean | `false` | Suppresses the right-hand Table of Contents card (`#table-of-contents-card`). | Very short posts (≤1 heading) or visual essays where TOC adds noise. |
 | `mermaid` | boolean | `false` | Loads Mermaid diagram support and renders fenced code blocks beginning with ` ```mermaid ` or elements carrying a `data-mermaid` attribute. | Posts containing sequence, flow, graph, or state diagrams. |
 
@@ -298,21 +298,21 @@ See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural imp
 
 Slide decks under the `slides` collection support additional metadata driving the `/slides/` index rendering and filtering.
 
-| Key | Required | Type | Purpose |
-|-----|----------|------|---------|
-| `layout` | yes | string | Should be `reveal-integrated` for Reveal.js decks. |
-| `title` | yes | string | Deck display title. Used for card title & page `<title>`. |
-| `permalink` | yes | string | Canonical path (e.g. `/slides/ai-strategy/`). |
-| `date` | yes | date | Primary ordering key (descending). Creation / publish date. |
-| `last_modified` | no | date | If present and different from `date`, an "Updated" badge displays on card. |
-| `description` | recommended | string | Short summary (card text, SEO fallback). Keep ≤160 chars. |
-| `image` | optional | path | Thumbnail image. If absent, preview HTML or first section fragment is used. |
-| `preview_html` | optional | HTML string | Explicit mini-preview markup for card (sanitized by reveal index transforms). Overrides fragment extraction. |
-| `topics` | optional | array[string] | Lightweight categorical tags for filter UI (client‑side). |
-| `aspect_ratio` | optional | string | One of `16:9`, `16:10`, `4:3` (or custom handled class) for preview container ratio. Defaults to `16:9`. |
-| `deck-style` | optional | string | High-level palette / tone hint applied as `deck-style-{value}` class to `<body>` (e.g. `light`, `dark`, `accent`). Enables global theming without inline styles. |
-| `canonical` | optional | url | Canonical URL override when consolidating duplicate archetype decks. |
-| `redirect_from` | optional | array[string] | Legacy paths for automatic redirection (if plugin / config supports). |
+| Key             | Required    | Type          | Purpose                                                                                                                                                          |
+|-----------------|-------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `layout`        | yes         | string        | Should be `reveal-integrated` for Reveal.js decks.                                                                                                               |
+| `title`         | yes         | string        | Deck display title. Used for card title & page `<title>`.                                                                                                        |
+| `permalink`     | yes         | string        | Canonical path (e.g. `/slides/ai-strategy/`).                                                                                                                    |
+| `date`          | yes         | date          | Primary ordering key (descending). Creation / publish date.                                                                                                      |
+| `last_modified` | no          | date          | If present and different from `date`, an "Updated" badge displays on card.                                                                                       |
+| `description`   | recommended | string        | Short summary (card text, SEO fallback). Keep ≤160 chars.                                                                                                        |
+| `image`         | optional    | path          | Thumbnail image. If absent, preview HTML or first section fragment is used.                                                                                      |
+| `preview_html`  | optional    | HTML string   | Explicit mini-preview markup for card (sanitized by reveal index transforms). Overrides fragment extraction.                                                     |
+| `topics`        | optional    | array[string] | Lightweight categorical tags for filter UI (client‑side).                                                                                                        |
+| `aspect_ratio`  | optional    | string        | One of `16:9`, `16:10`, `4:3` (or custom handled class) for preview container ratio. Defaults to `16:9`.                                                         |
+| `deck-style`    | optional    | string        | High-level palette / tone hint applied as `deck-style-{value}` class to `<body>` (e.g. `light`, `dark`, `accent`). Enables global theming without inline styles. |
+| `canonical`     | optional    | url           | Canonical URL override when consolidating duplicate archetype decks.                                                                                             |
+| `redirect_from` | optional    | array[string] | Legacy paths for automatic redirection (if plugin / config supports).                                                                                            |
 
 Example:
 
@@ -345,12 +345,12 @@ The `/slides/` page:
 
 ### Slide Includes
 
-| Include | Path | Purpose |
-|---------|------|---------|
-| Section Break | `_includes/slides/section-break.html` | Standardized divider slide with `title`, optional `subtitle`, and optional `kicker` fragment. |
-| Filter Controls | `_includes/slides/filter-controls.html` | Builds topic toggle buttons and JS to filter visible cards client-side. |
-| Architecture Metadata | `_includes/slides/architecture-metadata.html` | Standardized ABB / Pattern metadata block (definition + ownership + mapping). |
-| Meta Footer | `_includes/slides/meta-footer.html` | Concise footer with ID / status / version / tags for pattern and building block slides. |
+| Include               | Path                                          | Purpose                                                                                       |
+|-----------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------|
+| Section Break         | `_includes/slides/section-break.html`         | Standardized divider slide with `title`, optional `subtitle`, and optional `kicker` fragment. |
+| Filter Controls       | `_includes/slides/filter-controls.html`       | Builds topic toggle buttons and JS to filter visible cards client-side.                       |
+| Architecture Metadata | `_includes/slides/architecture-metadata.html` | Standardized ABB / Pattern metadata block (definition + ownership + mapping).                 |
+| Meta Footer           | `_includes/slides/meta-footer.html`           | Concise footer with ID / status / version / tags for pattern and building block slides.       |
 
 Usage:
 
@@ -385,16 +385,16 @@ Use the provided CSS variables instead of hard-coded hex values for consistency 
 
 The original inline design block used variable names like `--bg-light`, `--accent-blue`, etc. These have been aliased to the canonical `--slides-*` variables so legacy markup or experimental decks referencing those names continue to work:
 
-| Alias | Canonical Mapping |
-|-------|-------------------|
-| `--bg-light` | `--slides-bg-light` |
-| `--bg-dark` | `--slides-bg-dark` |
-| `--accent-blue` | `--slides-accent-blue` |
-| `--accent-orange` | `--slides-accent-orange` |
-| `--accent-gold` | `--slides-accent-gold` |
-| `--text-primary` | `--slides-text-primary` |
+| Alias              | Canonical Mapping         |
+|--------------------|---------------------------|
+| `--bg-light`       | `--slides-bg-light`       |
+| `--bg-dark`        | `--slides-bg-dark`        |
+| `--accent-blue`    | `--slides-accent-blue`    |
+| `--accent-orange`  | `--slides-accent-orange`  |
+| `--accent-gold`    | `--slides-accent-gold`    |
+| `--text-primary`   | `--slides-text-primary`   |
 | `--text-secondary` | `--slides-text-secondary` |
-| `--white` | `--slides-white` |
+| `--white`          | `--slides-white`          |
 
 Prefer the `--slides-*` variables when authoring new styles; aliases exist only to avoid breakage and may be removed after a deprecation notice.
 
@@ -407,13 +407,13 @@ Add a `deck-style` key in front matter to apply high-level palette shifts withou
 
 Current variants:
 
-| `deck-style` | Effect | Typical Use |
-|--------------|--------|-------------|
-| `light` | Neutral light canvas (default tokens) | General purpose / minimal decks |
-| `dark` | Dark canvas; headings gold; bar orange | Executive briefings / title emphasis |
-| `accent-blue` | Blue canvas; white headings; bar gold | Section breaks / innovation themes |
-| `accent-orange` | Orange canvas; white headings; bar blue | Call-to-action / risk & mitigation focus |
-| `accent-gold` | Gold canvas; white headings; bar blue | Celebrations / metrics / milestone retros |
+| `deck-style`    | Effect                                  | Typical Use                               |
+|-----------------|-----------------------------------------|-------------------------------------------|
+| `light`         | Neutral light canvas (default tokens)   | General purpose / minimal decks           |
+| `dark`          | Dark canvas; headings gold; bar orange  | Executive briefings / title emphasis      |
+| `accent-blue`   | Blue canvas; white headings; bar gold   | Section breaks / innovation themes        |
+| `accent-orange` | Orange canvas; white headings; bar blue | Call-to-action / risk & mitigation focus  |
+| `accent-gold`   | Gold canvas; white headings; bar blue   | Celebrations / metrics / milestone retros |
 
 Example:
 
@@ -446,24 +446,24 @@ This keeps decks from introducing scrollbars while still supporting intentional 
 
 Archetype-specific structural classes (defined in `_sass/components/_slides-archetypes.scss`) standardize styling for architecture & solution taxonomy slides:
 
-| Class | Intent | Typical Content |
-|-------|--------|-----------------|
-| `.arch-building-block` | Logical reusable architectural component definition | ID, name, status, version, description, scope, owner |
-| `.arch-pattern` | Conceptual arrangement of building blocks addressing a concern | Definition, context (problem/forces), solution overview, relationships |
-| `.solution-building-block` | Concrete product/service implementation of architecture | Product/vendor, configuration, governance, interfaces, dependencies |
-| `.solution-pattern` | Deployment/realization pattern using specific solutions | Overview, technology stack, automation, relationships & metrics |
+| Class                      | Intent                                                         | Typical Content                                                        |
+|----------------------------|----------------------------------------------------------------|------------------------------------------------------------------------|
+| `.arch-building-block`     | Logical reusable architectural component definition            | ID, name, status, version, description, scope, owner                   |
+| `.arch-pattern`            | Conceptual arrangement of building blocks addressing a concern | Definition, context (problem/forces), solution overview, relationships |
+| `.solution-building-block` | Concrete product/service implementation of architecture        | Product/vendor, configuration, governance, interfaces, dependencies    |
+| `.solution-pattern`        | Deployment/realization pattern using specific solutions        | Overview, technology stack, automation, relationships & metrics        |
 
 Accent & emphasis utilities:
 
-| Class | Effect |
-|-------|--------|
-| `.slide-dark` | Dark background, light text (title slides / closing) |
-| `.slide-accent-blue` | Primary accent background (section breaks) |
-| `.slide-accent-orange` | Secondary accent background (highlight moments) |
-| `.highlight-box` | Blue info box (default) |
-| `.highlight-box.blue` | Explicit blue variant (same as default) |
-| `.highlight-box.orange` | Orange highlight box |
-| `.highlight-box.gold` | Gold variant (e.g., key metrics / awards) |
+| Class                   | Effect                                               |
+|-------------------------|------------------------------------------------------|
+| `.slide-dark`           | Dark background, light text (title slides / closing) |
+| `.slide-accent-blue`    | Primary accent background (section breaks)           |
+| `.slide-accent-orange`  | Secondary accent background (highlight moments)      |
+| `.highlight-box`        | Blue info box (default)                              |
+| `.highlight-box.blue`   | Explicit blue variant (same as default)              |
+| `.highlight-box.orange` | Orange highlight box                                 |
+| `.highlight-box.gold`   | Gold variant (e.g., key metrics / awards)            |
 
 Example snippet:
 
@@ -598,11 +598,11 @@ The homepage hero (image/video) is selected randomly on each load using a data-d
 
 ### Troubleshooting
 
-| Symptom | Cause | Fix |
-|---------|-------|-----|
-| New hero not appearing randomly | Browser still using old SW | Hard refresh (Shift+Reload) or wait for activate lifecycle |
-| Video never plays | User has `prefers-reduced-motion` enabled | Working as designed |
-| 404 on hero media | File name mismatch with YAML `base` | Ensure filenames match exactly (case-sensitive) |
+| Symptom                         | Cause                                     | Fix                                                        |
+|---------------------------------|-------------------------------------------|------------------------------------------------------------|
+| New hero not appearing randomly | Browser still using old SW                | Hard refresh (Shift+Reload) or wait for activate lifecycle |
+| Video never plays               | User has `prefers-reduced-motion` enabled | Working as designed                                        |
+| 404 on hero media               | File name mismatch with YAML `base`       | Ensure filenames match exactly (case-sensitive)            |
 
 ### Potential Future Enhancements
 
