@@ -39,7 +39,7 @@ This site includes:
    8. [Quality Gates](#quality-gates)
    9. [GitHub Workflows Overview](#github-workflows-overview)
    10. [Front Matter Feature Flags](#front-matter-feature-flags)
-       1. [Slide Deck Front Matter (Collections `slides`)](#slide-deck-front-matter-collections-slides)
+       1. [Slide Deck Front Matter (Canonical Path posts-slides)](#slide-deck-front-matter-canonical-path-posts-slides)
        2. [Slide Index Behavior](#slide-index-behavior)
        3. [Slide Includes](#slide-includes)
        4. [Client-Side Topic Filtering](#client-side-topic-filtering)
@@ -294,9 +294,9 @@ Notes:
 
 See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural implications of these flags.
 
-### Slide Deck Front Matter (Collections `slides`)
+### Slide Deck Front Matter (Canonical Path posts-slides)
 
-Slide decks under the `slides` collection support additional metadata driving the `/slides/` index rendering and filtering.
+Slide decks are regular posts stored under the subdirectory `_posts/Slides/` (not a separate Jekyll collection). This keeps them in existing feed/archive flows and avoids maintaining a parallel collection. Historical references to a `slides` collection remain in templates only as a graceful fallback if a collection is reintroduced later.
 
 | Key             | Required    | Type          | Purpose                                                                                                                                                          |
 |-----------------|-------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -335,12 +335,13 @@ aspect_ratio: 16:9
 
 The `/slides/` page:
 
-1. Renders only `site.slides` (wrapper posts removed to reduce duplication).
+1. Attempts to render `site.slides` (only populated if a collection exists). If empty, it filters `site.posts` for paths beginning with `_posts/Slides/`.
 2. Sorts decks by `date` descending.
 3. Chooses preview in priority order: `image` → `preview_html` → first `<section>` fragment.
 4. Shows an Updated badge if `last_modified` exists and differs from `date`.
-5. Generates topic badges from `topics` array and enables client-side filtering (toggle buttons built by `_includes/slides/filter-controls.html`).
+5. Generates topic badges from each deck's `topics` array for client-side filtering (toggle buttons built by `_includes/slides/filter-controls.html`).
 6. Computes aspect ratio class (`ratio-16x9` etc.) based on `aspect_ratio` or heuristics.
+7. Maintains backward compatibility—no placeholder content is ever injected (see inline Liquid comments in `slides/index.html`).
 
 
 ### Slide Includes
@@ -360,7 +361,7 @@ Usage:
 
 ### Client-Side Topic Filtering
 
-The filter bar creates toggle buttons for all unique `topics` values found in `site.slides`. Selecting none (or pressing "All") shows every deck; selecting one or more shows decks containing at least one selected topic. Accessible states are managed via `aria-pressed`.
+The filter bar builds toggle buttons from the union of `topics` across the current deck set (collection if present, otherwise filtered posts under `_posts/Slides/`). Selecting none (or pressing "All") shows every deck; selecting one or more shows decks containing at least one selected topic. Accessible states are managed via `aria-pressed`.
 
 ### Styling Utilities for Decks
 

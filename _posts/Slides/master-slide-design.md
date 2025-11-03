@@ -1,3 +1,4 @@
+---
 layout: reveal-integrated
 title: "Swiss Design & Professional Archetypes"
 permalink: /slides/master-slide-design/
@@ -7,9 +8,10 @@ description: "Merged Swiss minimalist design patterns with a comprehensive libra
 topics:
   - design
   - archetypes
-  - swiss-style
 preview_html: "<div class='preview-fragment'><h3>Swiss Design & Archetypes</h3><p>Minimalist styling + executive patterns.</p></div>"
 last_modified: 2025-02-11
+---
+
 {% comment %} Inline style block removed; now using centralized SCSS in _sass/components/_slides-theme.scss (master block migrated). {% endcomment %}
 
 
