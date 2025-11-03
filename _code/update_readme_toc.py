@@ -69,20 +69,22 @@ def extract_headings(lines: list[str]) -> list[tuple[int, str, str]]:
             headings.append((level, title, anchor))
     return headings
 
-def build_toc(headings: list[tuple[int, str, str]]) -> list[str]:
-    # The first H1 heading becomes item 1; subsequent H2 headings nested under it.
+def build_toc(headings: list[tuple[int, str, str]], include_h3: bool = True) -> list[str]:
+    """Build TOC lines.
+    First H1 becomes item 1. H2 headings are numbered sequentially. Optional H3 headings become nested bullets.
+    """
     if not headings:
         return []
-    toc_lines = []
-    main_counter = 1
+    toc_lines: list[str] = []
     toc_lines.append(f"1. [{headings[0][1]}](#{headings[0][2]})")
     sub_counter = 1
+    last_h2_index = None
     for level, title, anchor in headings[1:]:
         if level == 2:
             sub_counter += 1
             toc_lines.append(f"   {sub_counter}. [{title}](#{anchor})")
-        elif level == 3:
-            # Third-level headings appear nested under last H2; indentation deeper by 6 spaces
+            last_h2_index = sub_counter
+        elif level == 3 and include_h3:
             toc_lines.append(f"      - [{title}](#{anchor})")
     return toc_lines
 
@@ -106,19 +108,29 @@ def find_toc_block(lines: list[str]) -> tuple[int, int] | None:
     return None
 
 
-def main(write: bool = False) -> int:
+def main(write: bool = False, include_h3: bool = True, check: bool = False) -> int:
     if not README_PATH.exists():
         print("README.md not found", file=sys.stderr)
         return 1
     text = README_PATH.read_text(encoding="utf-8").splitlines()
     headings = extract_headings(text)
-    toc_lines = build_toc(headings)
+    toc_lines = build_toc(headings, include_h3=include_h3)
     block = find_toc_block(text)
     if block is None:
         print("Could not locate TOC block boundaries", file=sys.stderr)
         return 2
     start, end = block
     new_content = text[:start] + ["", *toc_lines, ""] + text[end:]
+    if check:
+        # Compare existing block with newly generated lines (ignoring leading/trailing blanks)
+        existing = [l for l in text[start:end] if l.strip()]
+        generated = [l for l in toc_lines if l.strip()]
+        if existing == generated:
+            print("TOC OK (no changes needed).")
+            return 0
+        else:
+            print("TOC drift detected. Run with --write to update.")
+            return 3
     if write:
         README_PATH.write_text("\n".join(new_content) + "\n", encoding="utf-8")
         print("README TOC updated.")
@@ -128,4 +140,12 @@ def main(write: bool = False) -> int:
 
 if __name__ == "__main__":
     write_flag = "--write" in sys.argv
-    sys.exit(main(write=write_flag))
+    no_h3_flag = "--no-h3" in sys.argv
+    check_flag = "--check" in sys.argv
+    if "--help" in sys.argv:
+        print("Usage: update_readme_toc.py [--write] [--no-h3] [--check]\n" \
+              "  --write  Persist updated TOC into README.md\n" \
+              "  --no-h3  Exclude third-level headings from TOC\n" \
+              "  --check  Exit non-zero if TOC drift detected (CI/pre-commit use)")
+        sys.exit(0)
+    sys.exit(main(write=write_flag, include_h3=not no_h3_flag, check=check_flag))

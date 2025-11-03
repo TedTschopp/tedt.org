@@ -1,4 +1,4 @@
-.PHONY: build normalize validate_mastodon feed_check legacy_check length_report proofer qa all clean gw-export gw-diff
+.PHONY: build normalize validate_mastodon feed_check legacy_check length_report proofer qa all clean gw-export gw-diff docs-toc check-toc
 
 build:
 	bundle exec jekyll build --quiet
@@ -36,3 +36,10 @@ gw-export:
 gw-diff:
 	@if [ -z "$(A)" ] || [ -z "$(B)" ]; then echo "Usage: make gw-diff A=path/to/old.csv B=path/to/new.csv"; exit 1; fi; \
 	python3 _code/diff_gamma_world_exports.py --old "$(A)" --new "$(B)"
+
+# Documentation utilities
+docs-toc:
+	python3 _code/update_readme_toc.py --write
+
+check-toc:
+	python3 _code/update_readme_toc.py --check

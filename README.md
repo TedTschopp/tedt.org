@@ -70,7 +70,23 @@ Guidelines:
 
 Index: See [ADR Index](docs/adr/0000-index.md).
 
+### Documentation Maintenance Utilities
+
+To keep the README Table of Contents current:
+
+- Regenerate after heading changes: `make docs-toc` (runs the `_code/update_readme_toc.py --write` script).
+- Validate in CI / locally: `make check-toc` (non-zero exit if drift detected).
+- Optional pre-commit hook: copy `tools/git-hooks/pre-commit-toc-check.sh` to `.git/hooks/pre-commit` and make it executable:
+
+```bash
+cp tools/git-hooks/pre-commit-toc-check.sh .git/hooks/pre-commit
+chmod +x .git/hooks/pre-commit
+```
+
+Override check for emergency commits with `SKIP_TOC=1 git commit -m "..."`.
+
 ## Table of Contents
+
 
 
 1. [TedT.org](#tedtorg)
@@ -83,6 +99,7 @@ Index: See [ADR Index](docs/adr/0000-index.md).
       - [Social / Syndication](#social-syndication)
       - [Quality & Security](#quality-security)
    4. [ADRs Overview](#adrs-overview)
+      - [Documentation Maintenance Utilities](#documentation-maintenance-utilities)
    5. [Repository Structure](#repository-structure)
    6. [Include Standards](#include-standards)
       - [Directory Structure](#directory-structure)
