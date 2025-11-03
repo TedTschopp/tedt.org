@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swiss Design Archetype Slides</title>
+    <style>
+        :root {
+            --bg-light: #F5F6F7;
+            --bg-dark: #1F2126;
+            --accent-blue: #0078D4;
+            --accent-orange: #F36C21;
+            --accent-gold: #C69214;
+            --text-primary: #111111;
+            --text-secondary: #555555;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-primary);
+        }
+
+        section {
+            padding: 6rem;
+            min-height: 100vh;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            margin: 0;
+            font-weight: 700;
+        }
+
+        h1 {
+            font-size: 6vw;
+        }
+
+        h2 {
+            font-size: 3vw;
+        }
+
+        h3 {
+            font-size: 1.5vw;
+        }
+
+        p,
+        li {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        .bar {
+            width: 8rem;
+            height: 0.5rem;
+            background-color: var(--accent-blue);
+            margin-top: 1rem;
+        }
+
+        .fragment {
+            opacity: 0.6;
+            transition: opacity 0.5s ease;
+        }
+
+        .fragment.reveal {
+            opacity: 1;
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .highlight-box {
+            background-color: var(--accent-blue);
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+        }
+
+        .highlight {
+            background-color: var(--accent-orange);
+            color: var(--white);
+            padding: 0.25rem 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+        }
+
+        th,
+        td {
+            border-bottom: 1px solid #ccc;
+            padding: 1rem;
+            text-align: left;
+        }
+
+        blockquote {
+            font-size: 2rem;
+            font-weight: 300;
+            border-left: 0.5rem solid var(--accent-blue);
+            padding-left: 1.5rem;
+            margin: 4rem 0;
+        }
+
+        footer {
+            position: absolute;
+            bottom: 2rem;
+            left: 6rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Title / Opening Slide -->
+    <section class="title-slide" style="background-color: var(--bg-dark); color: var(--white);">
+        <h1>AI4IT Strategy 2026</h1>
+        <h2>Building an AI-Enabled Future for Enterprise IT</h2>
+        <p class="fragment">Presented by Ted Tschopp — Enterprise AI Architect</p>
+        <div class="bar"></div>
+    </section>
+
+    <!-- Agenda -->
+    <section>
+        <h2>Agenda</h2>
+        <ol>
+            <li class="fragment">Current State</li>
+            <li class="fragment">Strategic Pillars</li>
+            <li class="fragment">Roadmap & Execution</li>
+            <li class="fragment">Risks & Mitigation</li>
+            <li class="fragment">Next Steps</li>
+        </ol>
+    </section>
+
+    <!-- Section Break Include -->
+    <section
+        style="background-color: var(--accent-blue); color: var(--white); display:flex; flex-direction:column; justify-content:center;">
+        <h2>Section: Strategic Overview</h2>
+        <h3>Mapping our Path to Intelligent IT</h3>
+        <p>Kicker: Vision → Structure → Execution</p>
+    </section>
+
+    <!-- Current State Snapshot -->
+    <section>
+        <h2>Current State Snapshot</h2>
+        <ul>
+            <li class="fragment">Disparate AI initiatives across departments</li>
+            <li class="fragment">Limited governance & reuse of prompt assets</li>
+            <li class="fragment">Infrastructure readiness varies across domains</li>
+        </ul>
+    </section>
+
+    <!-- Strategic Pillars / Columns -->
+    <section>
+        <h2>Strategic Pillars</h2>
+        <div class="columns">
+            <div class="fragment highlight-box">Human-Centered AI</div>
+            <div class="fragment highlight-box">Governed & Trusted Frameworks</div>
+            <div class="fragment highlight-box">Unified AI Infrastructure</div>
+        </div>
+    </section>
+
+    <!-- Comparison Matrix -->
+    <section>
+        <h2>Comparison Matrix</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Option</th>
+                    <th>Pros</th>
+                    <th>Cons</th>
+                    <th>Decision</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="fragment">
+                    <td>Centralized Model</td>
+                    <td>Control, Governance</td>
+                    <td>Less Flexibility</td>
+                    <td class="highlight">Adopt</td>
+                </tr>
+                <tr class="fragment">
+                    <td>Federated Model</td>
+                    <td>Autonomy, Speed</td>
+                    <td>Duplication Risk</td>
+                    <td>Partial</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Roadmap Timeline -->
+    <section>
+        <h2>Roadmap Timeline</h2>
+        <div class="mermaid">
+            timeline
+            title AI4IT Implementation
+            Q1 2025 : Design Governance Framework
+            Q2 2025 : Pilot Prompt Library
+            Q3 2025 : Deploy AI Gateway
+            Q4 2025 : Scale Enterprise AI Services
+        </div>
+    </section>
+
+    <!-- Process Flow -->
+    <section>
+        <h2>Process Flow</h2>
+        <div class="mermaid">
+            flowchart LR
+            A[Discovery] --> B[Design]
+            B --> C[Deploy]
+            C --> D[Measure]
+            D --> A
+        </div>
+    </section>
+
+    <!-- KPI Dashboard -->
+    <section>
+        <h2>KPI Dashboard</h2>
+        <ul>
+            <li class="fragment"><strong>Adoption Rate:</strong> 68% → 85%</li>
+            <li class="fragment"><strong>Time to Value:</strong> 6 mo → 3 mo</li>
+            <li class="fragment"><strong>Governed Assets:</strong> 200 → 800</li>
+        </ul>
+    </section>
+
+    <!-- Data Visualization Placeholder -->
+    <section>
+        <h2>Data Visualization Placeholder</h2>
+        <p>Placeholder for bar chart of AI maturity by business unit.</p>
+        <pre><code>{
+  "AI_Readiness": {
+    "Ops": 0.8,
+    "Grid": 0.6,
+    "Customer": 0.7
+  }
+}</code></pre>
+    </section>
+
+    <!-- Risk & Mitigation Grid -->
+    <section>
+        <h2>Risk & Mitigation Grid</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Risk</th>
+                    <th>Impact</th>
+                    <th>Probability</th>
+                    <th>Mitigation</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="fragment">
+                    <td>Data Leakage</td>
+                    <td>High</td>
+                    <td>Medium</td>
+                    <td>PII Redaction Rules</td>
+                </tr>
+                <tr class="fragment">
+                    <td>Model Drift</td>
+                    <td>Medium</td>
+                    <td>High</td>
+                    <td>Retraining Pipeline</td>
+                </tr>
+                <tr class="fragment">
+                    <td>Adoption Lag</td>
+                    <td>Medium</td>
+                    <td>Medium</td>
+                    <td>Change Management</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Quote Slide -->
+    <section>
+        <blockquote>
+            “Technology amplifies intention; AI amplifies understanding.”
+        </blockquote>
+        <p class="fragment">— Ted Tschopp</p>
+    </section>
+
+    <!-- Team Introduction -->
+    <section>
+        <h2>Team Introduction</h2>
+        <div class="columns">
+            <div class="fragment">
+                <h3>Ted Tschopp</h3>
+                <p>Enterprise AI Architect</p>
+            </div>
+            <div class="fragment">
+                <h3>Matt Urban</h3>
+                <p>IT Portfolio Principal</p>
+            </div>
+            <div class="fragment">
+                <h3>Kurt Sweetser</h3>
+                <p>Director of Technology Data</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section>
+        <h2>Call to Action</h2>
+        <ul>
+            <li class="fragment">Adopt the AI Gateway Framework</li>
+            <li class="fragment">Contribute Prompts to the Library</li>
+            <li class="fragment">Engage with UNITE Working Group</li>
+        </ul>
+    </section>
+
+    <!-- Thank You / Closing -->
+    <section style="background-color: var(--bg-dark); color: var(--white);">
+        <h1>Thank You</h1>
+        <h3>Questions & Discussion</h3>
+    </section>
+
+    <!-- Q&A -->
+    <section>
+        <h2>Q&A</h2>
+        <p>Discussion prompts:</p>
+        <ul>
+            <li>Where should AI governance live?</li>
+            <li>Which business areas are ready first?</li>
+        </ul>
+    </section>
+
+    <!-- Appendix -->
+    <section>
+        <h2>Appendix</h2>
+        <ul>
+            <li>AI Governance Charter (Draft)</li>
+            <li>Prompt Engineering Guidelines</li>
+            <li>AI Gateway Architecture Diagram</li>
+        </ul>
+    </section>
+
+    <!-- Architecture Building Block Slide -->
+    <section style="background-color: var(--bg-light); color: var(--text-primary);">
+        <h2>Architecture Building Block</h2>
+        <div class="columns">
+            <div>
+                <h3>Definition</h3>
+                <p><strong>ID:</strong> ABB-001</p>
+                <p><strong>Name:</strong> AI Gateway Framework</p>
+                <p><strong>Type:</strong> Architecture Building Block</p>
+                <p><strong>Status:</strong> Approved</p>
+                <p><strong>Version:</strong> 1.2.0</p>
+            </div>
+            <div>
+                <h3>Description</h3>
+                <p>Provides a reusable logical framework for secure and governed AI integration across platforms.</p>
+                <h3>Scope</h3>
+                <p>Includes governance model, interface design, and conceptual patterns; excludes product-level
+                    configuration.</p>
+            </div>
+        </div>
+
+        <div class="columns" style="margin-top:3rem;">
+            <div>
+                <h3>Owner</h3>
+                <p><strong>Name:</strong> Enterprise Architecture Team</p>
+                <p><strong>Role:</strong> AI Strategy Governance</p>
+                <p><strong>Review Cycle:</strong> Annual</p>
+            </div>
+            <div>
+                <h3>Business Alignment</h3>
+                <ul>
+                    <li><strong>Capabilities:</strong> AI Enablement, Governance</li>
+                    <li><strong>Processes:</strong> Design Review, AI Policy</li>
+                    <li><strong>Objectives:</strong> Safe AI Adoption</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top:3rem; background-color: var(--accent-blue);">
+            <p><strong>Mapping:</strong> Domain: Technology | Layer: Logical | Context: Cloud AI Gateway</p>
+            <p><strong>Constraints:</strong> SB-53 Compliance, NIST AI RMF, API Security Standards</p>
+        </div>
+    </section>
+
+    <!-- Architectural Pattern Slide -->
+    <section style="background-color: var(--bg-light); color: var(--text-primary);">
+        <h2>Architectural Pattern</h2>
+        <div class="columns">
+            <div>
+                <h3>Definition</h3>
+                <p><strong>ID:</strong> arch-pattern-001</p>
+                <p><strong>Name:</strong> Example Architectural Pattern</p>
+                <p><strong>Status:</strong> Draft</p>
+                <p><strong>Description:</strong> Defines a reusable conceptual arrangement of Architecture Building Blocks
+                    that address a common architectural concern or quality attribute.</p>
+
+                <h3>Context</h3>
+                <p><strong>Problem:</strong> Summarize the recurring problem or concern this pattern addresses.</p>
+                <p><strong>Applicability:</strong> Describe situations or architectural scenarios where this pattern
+                    applies.</p>
+                <p><strong>Forces:</strong> List the driving forces, trade-offs, and constraints influencing the pattern.
+                </p>
+            </div>
+
+            <div>
+                <h3>Solution Overview</h3>
+                <p><strong>Intent:</strong> Describe the core idea or strategy of the pattern.</p>
+                <p><strong>Structure:</strong> High-level description or diagram of how ABBs are arranged.</p>
+                <p><strong>Principles:</strong> Loose coupling, least privilege, separation of concerns.</p>
+
+                <div class="highlight-box" style="background-color: var(--accent-blue); margin-top:1.5rem;">
+                    <p><strong>Key Building Blocks:</strong> abb-001, abb-002</p>
+                    <p><strong>Improvements:</strong> Security, resilience, modularity</p>
+                    <p><strong>Trade-offs:</strong> Increased latency for higher security posture</p>
+                </div>
+
+                <h3>Relationships</h3>
+                <ul>
+                    <li><strong>Implemented by:</strong> sol-pattern-001</li>
+                    <li><strong>Generalizes:</strong> —</li>
+                    <li><strong>Used by:</strong> Other AI Architecture patterns</li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <em>Example Architectural Pattern | Created 2025-11-02 | Tags: pattern, architectural</em>
+        </footer>
+    </section>
+
+
+    <!-- Solution Building Block Slide -->
+    <section style="background-color: var(--white); color: var(--text-primary);">
+        <h2>Solution Building Block</h2>
+        <div class="columns">
+            <div>
+                <h3>Definition</h3>
+                <p><strong>ID:</strong> SBB-017</p>
+                <p><strong>Name:</strong> Azure API Management (AI Gateway)</p>
+                <p><strong>Type:</strong> Solution Building Block</p>
+                <p><strong>Status:</strong> In Use</p>
+                <p><strong>Version:</strong> 2.3.1</p>
+            </div>
+            <div>
+                <h3>Description</h3>
+                <p>Implements the AI Gateway ABB using Azure API Management with integrated content moderation, logging, and
+                    Entra ID.</p>
+                <h3>Scope</h3>
+                <p>Includes Azure APIM, Redis Cache, Key Vault, App Insights, and GitHub integration.</p>
+            </div>
+        </div>
+
+        <div class="columns" style="margin-top:3rem;">
+            <div>
+                <h3>Solution Details</h3>
+                <p><strong>Product:</strong> Azure API Management</p>
+                <p><strong>Vendor:</strong> Microsoft</p>
+                <p><strong>Platform:</strong> Azure</p>
+                <p><strong>Configuration:</strong> Multi-region hybrid with self-hosted gateways</p>
+            </div>
+            <div>
+                <h3>Governance</h3>
+                <p><strong>Owner:</strong> AI Engineering Team</p>
+                <p><strong>Approving Authority:</strong> Enterprise Architecture Board</p>
+                <p><strong>Policies:</strong> API Gateway Security, AI Moderation Rules</p>
+            </div>
+        </div>
+
+        <div class="highlight-box" style="margin-top:3rem; background-color: var(--accent-orange);">
+            <p><strong>Interfaces:</strong> Provides: AI Gateway APIs | Requires: Entra ID, Logging</p>
+            <p><strong>Dependencies:</strong> Azure Monitor, Redis, Key Vault</p>
+            <p><strong>Reusability:</strong> Reusable across AI workloads; partially substitutable with Apigee or Kong.</p>
+        </div>
+    </section>
+
+    <!-- Solution Pattern Slide -->
+    <section style="background-color: var(--white); color: var(--text-primary);">
+        <h2>Solution Pattern</h2>
+        <div class="columns">
+            <div>
+                <h3>Definition</h3>
+                <p><strong>ID:</strong> sol-pattern-001</p>
+                <p><strong>Name:</strong> Example Solution Pattern</p>
+                <p><strong>Status:</strong> Draft</p>
+                <p><strong>Description:</strong> Provides a detailed realization of an Architectural Pattern using specific
+                    Solution Building Blocks, products, and deployment configurations.</p>
+    
+                <h3>Context</h3>
+                <p><strong>Use Case:</strong> Secure API Access for Multi-Cloud Environments</p>
+                <p><strong>Applicability:</strong> Where the pattern should or should not be applied.</p>
+                <p><strong>Preconditions:</strong> Azure AD tenant configured, network segmentation, policy enforcement
+                    enabled.</p>
+            </div>
+    
+            <div>
+                <h3>Solution Overview</h3>
+                <p><strong>Overview:</strong> Realizes the AI Gateway pattern using Azure API Management integrated with Key
+                    Vault and Entra ID.</p>
+                <p><strong>Key SBBs:</strong> sbb-001, sbb-002</p>
+    
+                <div class="highlight-box" style="background-color: var(--accent-orange); margin-top:1.5rem;">
+                    <p><strong>Technology Stack:</strong> Azure | M365 | Defender</p>
+                    <p><strong>Vendors:</strong> Microsoft</p>
+                    <p><strong>Integration Points:</strong> APIM, Key Vault, Entra ID</p>
+                </div>
+    
+                <h3>Deployment & Automation</h3>
+                <ul>
+                    <li><strong>Environment:</strong> Cloud, Hybrid</li>
+                    <li><strong>Templates:</strong> Terraform, Bicep</li>
+                    <li><strong>Pipelines:</strong> ADO, GitHub Actions</li>
+                </ul>
+    
+                <h3>Relationships & Metrics</h3>
+                <p><strong>Implements:</strong> arch-pattern-001</p>
+                <p><strong>Benefits:</strong> Reduced configuration drift, standardized deployment</p>
+                <p><strong>Risks:</strong> Vendor lock-in</p>
+            </div>
+        </div>
+    
+        <footer>
+            <em>Example Solution Pattern | Created 2025-11-02 | Tags: pattern, solution</em>
+        </footer>
+    </section>
+
+
+
+    <!-- (Meta) Preview Fragment -->
+    <div class='preview-fragment'>
+        <h3>AI4IT Strategy 2026</h3>
+        <p>Swiss Design slide deck archetypes for enterprise AI storytelling.</p>
+    </div>
+
+
+
+
+
+
+</body>
+
+</html>
