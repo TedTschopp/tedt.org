@@ -31,6 +31,10 @@
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+/* Structural sizing (moved from previous inline layout style) */
+.reveal-container { margin-top:70px; height:calc(100vh - 140px); }
+.reveal { margin:0; width:100%; height:100%; }
+
 /* Base slide section spacing (rely on Reveal defaults, enhance if full-height needed) */
 .reveal .slides section { padding: 4rem 6rem; }
 

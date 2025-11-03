@@ -166,6 +166,16 @@ layout: none
 
     <!-- Bootstrap core JavaScript -->
     {% include assets/js-bottom-of-body.html %}
+        <script>
+            // Fallback: if Reveal failed after 3s, unhide raw slide content for debugging.
+            setTimeout(() => {
+                if (typeof Reveal === 'undefined' || !document.querySelector('.reveal .slides section')) {
+                    console.warn('Reveal fallback activated: showing raw content');
+                    const container = document.querySelector('.reveal');
+                    if (container) { container.style.opacity = '1'; }
+                }
+            }, 3000);
+        </script>
 </body>
 
 </html>
