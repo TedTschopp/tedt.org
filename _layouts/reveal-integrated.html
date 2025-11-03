@@ -34,58 +34,10 @@ layout: none
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/theme/black.css" id="theme-dark">
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/theme/white.css" id="theme-light" disabled>
 
-    <style>
-        /* Reveal.js container adjustments for site header */
-        .reveal-container {
-            margin-top: 70px; /* Account for site header */
-            height: calc(100vh - 140px); /* Subtract header and footer space */
-        }
-
-        .reveal {
-            margin: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        /* Theme-aware styling */
-        [data-bs-theme="dark"] .reveal {
-            background-color: var(--bs-dark);
-            color: var(--bs-light);
-        }
-
-        [data-bs-theme="light"] .reveal {
-            background-color: var(--bs-light);
-            color: var(--bs-dark);
-        }
-
-        [data-bs-theme="dark"] .reveal h1,
-        [data-bs-theme="dark"] .reveal h2,
-        [data-bs-theme="dark"] .reveal h3 {
-            color: var(--bs-primary-text-emphasis);
-        }
-
-        [data-bs-theme="light"] .reveal h1,
-        [data-bs-theme="light"] .reveal h2,
-        [data-bs-theme="light"] .reveal h3 {
-            color: var(--bs-primary);
-        }
-
-        [data-bs-theme="dark"] .reveal pre code {
-            background: rgba(0, 0, 0, 0.3);
-            border-radius: 8px;
-        }
-
-        [data-bs-theme="light"] .reveal pre code {
-            background: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-            color: var(--bs-dark);
-        }
-
-        /* Ensure presentation content doesn't interfere with site navigation */
-        body {
-            scroll-padding-top: 70px;
-        }
-    </style>
+    {%- comment -%}
+      Inline Reveal styling removed in favor of global slide theme SCSS (`_slides-theme.scss`).
+      Keeping only minimal structural adjustments would belong in a future SCSS partial if expanded.
+    {%- endcomment -%}
 </head>
 
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70" class="{% if page.deck-style %}deck-style-{{ page.deck-style | downcase }}{% endif %}">
@@ -96,7 +48,7 @@ layout: none
             <div class="slides">
             {% if page.markdown %}
             <section data-markdown data-separator="^\n---\n" data-separator-vertical="^\n--\n" data-charset="utf-8">
-                <textarea data-template>{{ content | strip }}</textarea>
+                <textarea data-template aria-label="Slide markdown template source" title="Slide markdown template source">{{ content | strip }}</textarea>
             </section>
             {% else %}
             {{ content }}
@@ -118,175 +70,96 @@ layout: none
     {% include assets/scripts.html %}
 
     <script>
-        // Theme switching for Reveal.js
+        // Theme switching + Mermaid safer init (mermaid.run() replaced with mermaid.init)
         let mermaidInitialized = false;
-        
+
         function updateRevealTheme() {
             const isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
             const darkTheme = document.getElementById('theme-dark');
             const lightTheme = document.getElementById('theme-light');
-            
-            if (isDark) {
-                darkTheme.disabled = false;
-                lightTheme.disabled = true;
-            } else {
-                darkTheme.disabled = true;
-                lightTheme.disabled = false;
+            if (!darkTheme || !lightTheme) return;
+            darkTheme.disabled = !isDark;
+            lightTheme.disabled = isDark;
+        }
+
+        function processMermaid(selectorScope) {
+            if (typeof mermaid === 'undefined') return;
+            try {
+                const nodes = (selectorScope || document).querySelectorAll('.mermaid');
+                if (nodes.length === 0) return;
+                // mermaid.init accepts (config?, elements) – we already initialized so pass undefined
+                mermaid.init(undefined, nodes);
+            } catch (err) {
+                console.error('Mermaid render error:', err);
             }
         }
-        
+
         function initializeMermaid() {
-            if (typeof mermaid !== 'undefined' && !mermaidInitialized) {
-                const isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
-                console.log('Initializing Mermaid with theme:', isDark ? 'dark' : 'default');
-                
-                mermaid.initialize({ 
-                    startOnLoad: false, // We'll manually trigger rendering
+            if (typeof mermaid === 'undefined' || mermaidInitialized) return;
+            const isDark = document.documentElement.getAttribute('data-bs-theme') === 'dark';
+            try {
+                mermaid.initialize({
+                    startOnLoad: false,
                     theme: isDark ? 'dark' : 'default',
-                    themeVariables: { 
-                        darkMode: isDark 
-                    },
-                    // Add more specific configuration
-                    flowchart: {
-                        useMaxWidth: true,
-                        htmlLabels: true
-                    },
-                    // Security settings
-                    securityLevel: 'loose'
+                    securityLevel: 'loose',
+                    flowchart: { useMaxWidth: true, htmlLabels: true }
                 });
                 mermaidInitialized = true;
-                console.log('Mermaid initialized successfully');
-                
-                // Immediate processing of any visible diagrams
-                setTimeout(() => {
-                    const mermaidElements = document.querySelectorAll('.mermaid');
-                    console.log('Found', mermaidElements.length, 'Mermaid elements during init');
-                    if (mermaidElements.length > 0) {
-                        mermaid.run();
-                    }
-                }, 500);
+                // Initial render after short delay to allow Reveal Markdown plugin to inject slides
+                setTimeout(() => processMermaid(), 300);
+            } catch (err) {
+                console.error('Mermaid initialization failed:', err);
             }
         }
 
-        // Watch for theme changes
-        const observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.type === 'attributes' && mutation.attributeName === 'data-bs-theme') {
+        // Observe theme changes (do not re-initialize; just swap Reveal theme CSS)
+        const observer = new MutationObserver(mutations => {
+            for (const m of mutations) {
+                if (m.type === 'attributes' && m.attributeName === 'data-bs-theme') {
                     updateRevealTheme();
-                    // Note: We don't re-initialize Mermaid on theme change as it can cause issues
-                    // The initial theme is set correctly during first initialization
                 }
-            });
+            }
         });
-
-        // Start observing theme changes
-        observer.observe(document.documentElement, {
-            attributes: true,
-            attributeFilter: ['data-bs-theme']
-        });
-
-        // Set initial theme
+        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['data-bs-theme'] });
         updateRevealTheme();
     </script>
 
     <script>
-        // Wait for all scripts to load and DOM to be ready
+        // Reveal initialization with Mermaid integration (deduped & safer)
         function initializeReveal() {
-            console.log('Attempting to initialize Reveal.js...');
-            console.log('Reveal available:', typeof Reveal !== 'undefined');
-            console.log('RevealMarkdown available:', typeof RevealMarkdown !== 'undefined');
-            console.log('RevealHighlight available:', typeof RevealHighlight !== 'undefined');
-            console.log('RevealNotes available:', typeof RevealNotes !== 'undefined');
-            
-            if (typeof Reveal !== 'undefined' && 
-                typeof RevealMarkdown !== 'undefined' && 
-                typeof RevealHighlight !== 'undefined' && 
-                typeof RevealNotes !== 'undefined') {
-                
-                try {
-                    console.log('All dependencies loaded, initializing...');
-                    
-                    // Initialize Mermaid first
-                    initializeMermaid();
-                    
-                    console.log('Initializing Reveal.js...');
-                    Reveal.initialize({
-                        hash: true,
-                        slideNumber: true,
-                        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
-                        width: 1280, 
-                        height: 720,
-                        controls: true, 
-                        progress: true, 
-                        center: true,
-                        // Ensure we start on the first slide
-                        hashOneBasedIndex: false,
-                        // Add some debugging
-                        ready: function() {
-                            console.log('Reveal.js is ready and initialized!');
-                            console.log('Total slides:', Reveal.getTotalSlides());
-                            console.log('Current indices:', Reveal.getIndices());
-                            
-                            // Process Mermaid diagrams after Reveal.js is ready
-                            if (typeof mermaid !== 'undefined') {
-                                console.log('Processing Mermaid diagrams after Reveal.js ready...');
-                                const mermaidElements = document.querySelectorAll('.mermaid');
-                                console.log('Found', mermaidElements.length, 'Mermaid elements');
-                                mermaidElements.forEach((element, index) => {
-                                    console.log('Mermaid element', index, 'content:', element.textContent.trim());
-                                });
-                                try {
-                                    mermaid.run();
-                                } catch (error) {
-                                    console.error('Error processing Mermaid diagrams:', error);
-                                }
-                            }
-                            
-                            // Force to first slide if not already there
-                            if (Reveal.getIndices().h !== 0 || Reveal.getIndices().v !== 0) {
-                                console.log('Moving to first slide...');
-                                Reveal.slide(0, 0);
-                            }
-                        },
-                        // Add slide change event to process Mermaid diagrams
-                        slidechanged: function(event) {
-                            // Process Mermaid diagrams when slides change
-                            if (typeof mermaid !== 'undefined') {
-                                console.log('Slide changed, processing Mermaid diagrams...');
-                                setTimeout(function() {
-                                    try {
-                                        const currentSlide = event.currentSlide;
-                                        const mermaidInSlide = currentSlide.querySelectorAll('.mermaid');
-                                        console.log('Found', mermaidInSlide.length, 'Mermaid elements in current slide');
-                                        
-                                        if (mermaidInSlide.length > 0) {
-                                            mermaidInSlide.forEach((element, index) => {
-                                                console.log('Processing Mermaid element', index, 'with content:', element.textContent.trim().substring(0, 50) + '...');
-                                            });
-                                            mermaid.run();
-                                        }
-                                    } catch (error) {
-                                        console.error('Error processing Mermaid on slide change:', error);
-                                    }
-                                }, 100);
-                            }
+            if (!(typeof Reveal !== 'undefined' && typeof RevealMarkdown !== 'undefined')) {
+                return setTimeout(initializeReveal, 100);
+            }
+            try {
+                initializeMermaid();
+                Reveal.initialize({
+                    hash: true,
+                    slideNumber: true,
+                    plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+                    width: 1280,
+                    height: 720,
+                    controls: true,
+                    progress: true,
+                    center: true,
+                    hashOneBasedIndex: false,
+                    ready: () => {
+                        processMermaid();
+                        if (Reveal.getIndices().h !== 0 || Reveal.getIndices().v !== 0) {
+                            Reveal.slide(0,0);
                         }
-                    });
-                } catch (error) {
-                    console.error('Error initializing Reveal.js:', error);
-                }
-            } else {
-                console.log('Not all dependencies loaded yet, retrying...');
-                // Retry after a short delay if libraries aren't ready yet
-                setTimeout(initializeReveal, 100);
+                    }
+                });
+                Reveal.on('slidechanged', e => {
+                    // Re-render mermaid only for current slide to reduce overhead
+                    processMermaid(e.currentSlide);
+                });
+            } catch (err) {
+                console.error('Reveal init error:', err);
             }
         }
-
-        // Start initialization when DOM is loaded
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', initializeReveal);
         } else {
-            // DOM is already loaded
             initializeReveal();
         }
     </script>
