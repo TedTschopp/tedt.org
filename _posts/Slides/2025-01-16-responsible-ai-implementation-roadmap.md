@@ -1,18 +1,126 @@
 ---
 layout: reveal-integrated
-title: "Responsible AI Implementation Roadmap" 
+title: "Responsible AI Implementation Roadmap"
 markdown: false
 permalink: /slides/responsible-ai-implementation-roadmap/
-categories: [Slides]
 aspect_ratio: 16:9
+date: 2025-01-16
+description: "Execution-focused roadmap for deploying responsible AI practices, governance, and model lifecycle oversight."
+image: /img/categories/artificial-intelligence.webp
+topics:
+  - responsible-ai
+  - governance
+  - execution
+preview_html: "<div class='preview-fragment'><h3>Responsible AI Roadmap</h3><p>Principles, timeline, integration layers, and measurable outcomes.</p></div>"
+last_modified: 2025-02-07
 ---
-{% comment %}
-Wrapper post to surface slide deck in site.posts for legacy queries.
-Replacing invalid include_relative path traversal with dynamic collection lookup.
-{% endcomment %}
-{% assign deck = site.slides | where: "permalink", "/slides/responsible-ai-implementation-roadmap/" | first %}
-{% if deck %}
-  {{ deck.content }}
-{% else %}
-  <div class="notice--warning"><p>Slide content unavailable (collection lookup failed).</p></div>
-{% endif %}
+
+<section>
+  <h1>AI TECHNOLOGY ARCHITECTURE</h1>
+  <p>Ted Tschopp — The Tschopp Collective<br>
+    <strong>Q1 2025</strong>
+  </p>
+</section>
+
+<section>
+  <h2>Vision & Guiding Principles</h2>
+  <ul>
+    <li class="fragment">AI that is Safe, Responsible, and Aligned with Human Values</li>
+    <li class="fragment">Transparent, Explainable, and Accountable Systems</li>
+    <li class="fragment">Sustainable AI Operations</li>
+  </ul>
+
+  <section>
+    <h3>Our North Star</h3>
+    <blockquote>"We design AI that earns trust — not just compliance."</blockquote>
+  </section>
+</section>
+
+<section>
+  <h2>Implementation Timeline</h2>
+  <div class="mermaid">
+timeline
+  title Responsible AI Roadmap
+  2025 : Governance Framework & AI Gateway
+  2026 : Model Hubs & Workforce Enablement
+  2027 : Autonomous Optimization & Auditable AI
+  </div>
+</section>
+
+<section>
+  <h2>Enterprise Integration Layers</h2>
+  <div class="mermaid">
+flowchart LR
+    A[Responsible Data Fabric] --> B[AI Gateway]
+    B --> C[Model Hubs]
+    C --> D[Applications & Agents]
+    D --> E[Business-Led Innovation]
+  </div>
+</section>
+
+<section>
+  <h2>Governance Model</h2>
+  <ul>
+    <li>Policy & Ethics Council</li>
+    <li>AI Risk Registry Integration</li>
+    <li>Audit & Compliance Automation</li>
+  </ul>
+
+  <section>
+    <h3>AI Risk Registry Lifecycle</h3>
+    <div class="mermaid">
+sequenceDiagram
+  participant BU as Business Unit
+  participant Risk as Risk Team
+  participant Arch as AI Architecture
+  participant Legal as Legal/Compliance
+
+  BU->>Risk: Identify Use Case Risk
+  Risk->>Arch: Assess Technical Impact
+  Arch->>Legal: Verify Compliance
+  Legal-->>BU: Approve for Deployment
+  </div>
+  </section>
+</section>
+
+<section data-background-image="https://tedt.org/img/categories/artificial-intelligence.webp" data-background-size="cover" data-autoanimate data-autoslide="7000">
+  <h2>AI4IT in Action</h2>
+  <p>Integrating AI governance, architecture, and delivery pipelines.</p>
+</section>
+
+<section>
+  <h2>Metrics & Outcomes</h2>
+  <ul>
+    <li class="fragment">≥95% AI Use Cases Risk-Registered</li>
+    <li class="fragment">100% Model Documentation Compliance</li>
+    <li class="fragment">+30% Developer Productivity through CoPilots</li>
+  </ul>
+</section>
+
+<section data-markdown="slides.md" data-separator="^\n---\n" data-separator-vertical="^\n--\n">
+</section>
+
+<section>
+  <h2>Example Code</h2>
+  <pre><code class="language-python">
+from ai_gateway import ModelHub
+
+def route_request(request):
+    if request.type == "sensitive":
+        return ModelHub("governed").process(request)
+    return ModelHub("general").process(request)
+
+route_request("customer_insight")
+  </code></pre>
+</section>
+
+<section data-notes="Reinforce that this roadmap is both aspirational and executable, with governance built into the lifecycle.">
+  <h2>Speaker Notes Example</h2>
+  <p>Note: Remind the audience that AI4IT is about operationalizing governance, not slowing innovation.</p>
+</section>
+
+<section>
+  <h2>Closing Thoughts</h2>
+  <p class="fragment">AI is the new utility.</p>
+  <p class="fragment">Our task: ensure it is safe, explainable, and transformative.</p>
+</section>

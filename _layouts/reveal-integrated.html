@@ -34,10 +34,6 @@ layout: none
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/theme/black.css" id="theme-dark">
     <link rel="stylesheet" href="https://unpkg.com/reveal.js@5/dist/theme/white.css" id="theme-light" disabled>
 
-    {%- comment -%}
-      Inline Reveal styling removed in favor of global slide theme SCSS (`_slides-theme.scss`).
-      Keeping only minimal structural adjustments would belong in a future SCSS partial if expanded.
-    {%- endcomment -%}
 </head>
 
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70" class="{% if page.deck-style %}deck-style-{{ page.deck-style | downcase }}{% endif %}">
@@ -166,16 +162,16 @@ layout: none
 
     <!-- Bootstrap core JavaScript -->
     {% include assets/js-bottom-of-body.html %}
-        <script>
-            // Fallback: if Reveal failed after 3s, unhide raw slide content for debugging.
-            setTimeout(() => {
-                if (typeof Reveal === 'undefined' || !document.querySelector('.reveal .slides section')) {
-                    console.warn('Reveal fallback activated: showing raw content');
-                    const container = document.querySelector('.reveal');
-                    if (container) { container.style.opacity = '1'; }
-                }
-            }, 3000);
-        </script>
+    <script>
+        // Fallback: if Reveal failed after 3s, unhide raw slide content for debugging.
+        setTimeout(() => {
+            if (typeof Reveal === 'undefined' || !document.querySelector('.reveal .slides section')) {
+                console.warn('Reveal fallback activated: showing raw content');
+                const container = document.querySelector('.reveal');
+                if (container) { container.style.opacity = '1'; }
+            }
+        }, 3000);
+    </script>
 </body>
 
 </html>
