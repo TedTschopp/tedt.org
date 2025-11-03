@@ -1,0 +1,24 @@
+// markdownlint-cli2 configuration (JSONC)
+// See: https://github.com/DavidAnson/markdownlint-cli2#configuration
+{
+  // Globs to include
+  "globs": [
+    "README.md",
+    "docs/**/*.md",
+    "_posts/**/*.md",
+    "AGENTS.MD"
+  ],
+  // Paths to ignore
+  "ignores": [
+    "_site/",
+    "vendor/"
+  ],
+  // Rule configuration mirrors prior YAML
+  "config": {
+    "MD013": false,            // Line length disabled (tables/code blocks)
+    "MD033": false,            // Inline HTML allowed (site uses deliberate HTML snippets)
+    "MD003": { "style": "atx" },
+    "MD009": { "strict": true },
+    "MD004": { "style": "dash" }
+  }
+}

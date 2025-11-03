@@ -37,7 +37,7 @@ jobs:
 
       - name: Run markdownlint
         run: |
-          npx markdownlint-cli2 .markdownlint-cli2.yaml || exit 1
+          npx markdownlint-cli2 || exit 1
 
       - name: Setup Python
         uses: actions/setup-python@v6

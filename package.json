@@ -4,7 +4,8 @@
   "version": "1.0.0",
   "description": "Playwright + axe-core a11y audits for tedt.org",
   "scripts": {
-    "test:a11y": "playwright test tests/a11y --reporter=list"
+    "test:a11y": "playwright test tests/a11y --reporter=list",
+    "lint:md": "markdownlint-cli2"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.9.1",
