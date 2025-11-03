@@ -89,12 +89,16 @@ Guidance: Duplicate sections you need; remove those you don't. Each top-level <s
   <h2>Roadmap Timeline</h2>
   <div class="mermaid">
   timeline
+    %% Using section grouping for Mermaid 10.9.4 timeline stability.
+    %% Changed from "Q1 2025 :" syntax (was throwing Syntax error in text) to sections + quarter labels.
     title Execution Roadmap
-    Q1 2025 : Framework Initiated
-    Q2 2025 : Gateway MVP
-    Q3 2025 : Hub Integration
-    Q4 2025 : Enablement Rollout
-    2026 : Scale & Optimize
+    section 2025
+      Q1 : Framework Initiated
+      Q2 : Gateway MVP
+      Q3 : Hub Integration
+      Q4 : Enablement Rollout
+    section 2026
+      Q1 : Scale & Optimize
   </div>
 </section>
 
