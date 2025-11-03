@@ -17,49 +17,107 @@ This site includes:
 - Integration with Mastodon and other social platforms.
 - Custom scripts for managing and generating content.
 
+## Technology Stack (Condensed)
+
+Key technologies and architectural decisions powering the site:
+
+### Core & Build
+
+- Jekyll 4.3.x+ for static site generation (Liquid templating).
+- Ruby (CI uses >= 3.1) + Bundler; conditional gem constraints for security (see Gemfile comments).
+- Performance instrumentation & category recent post caching ([ADR 0008](docs/adr/0008-memory-probe-and-caching.md)).
+
+### Content & Structure
+
+- Markdown posts under `_posts/` (includes slide decks under `_posts/Slides/` per [ADR 0012](docs/adr/0012-posts-based-slides.md)).
+- Unified category theming / registry ([ADR 0006](docs/adr/0006-carousel-registry-driven-accessibility.md) & [ADR 0007](docs/adr/0007-category-theming-unification.md)) via `_data/category_registry.yml`.
+- Front matter feature flags: `no_toc` ([ADR 0010](docs/adr/0010-no-toc-front-matter-flag.md)), `mermaid` ([ADR 0011](docs/adr/0011-mermaid-front-matter-flag.md)).
+
+### Presentation & Styling
+
+- SCSS partials in `_sass/`; slides theme + archetypes for Reveal.js.
+- Rouge for syntax highlighting.
+- Reveal.js integrated via `layout: reveal-integrated` (no separate collection; path-filtered posts).
+
+### Client-Side Behavior
+
+- Randomized category carousel start ([ADR 0003](docs/adr/0003-random-carousel-start-position.md)).
+- Slide topic filtering (pure client JS; no synthetic placeholders).
+
+### Social / Syndication
+
+- Mastodon integration & backfill scripts in `_code/` (Python utilities).
+- RSS / JSON feeds (Liquid + helper scripts).
+
+### Quality & Security
+
+- HTML Proofer and feed integrity checks in CI.
+- Memory probe & optional periodic GC (env gated) for diagnostics ([ADR 0008](docs/adr/0008-memory-probe-and-caching.md)).
+- `ffi` pinned to 1.16.3 for stability ([ADR 0009](docs/adr/0009-ffi-downgrade-stability-and-upgrade-path.md)) until upgrade conditions met.
+
+For deeper details and rationale, consult ADRs in `docs/adr/`.
+
+## ADRs Overview
+
+Architecture Decision Records (ADRs) capture high-impact, relatively irreversible technical choices with their context, rationale, and consequences. This repository maintains an index (`docs/adr/0000-index.md`) enumerating active, proposed, and deprecated decisions. When proposing a major change (performance model, collection introduction, new feature flag, library adoption) draft a new ADR rather than rewriting an accepted one.
+
+Guidelines:
+
+- Status lifecycle: Proposed → Accepted → (optionally) Deprecated / Superseded.
+- Never renumber ADR files—historic permalinks must remain stable.
+- Link related ADRs via a "See Also" section when cross-cutting concerns exist.
+- Keep ADRs concise; move deep experimental analysis to `docs/planning/`.
+
+Index: See [ADR Index](docs/adr/0000-index.md).
+
 ## Table of Contents
 
+
 1. [TedT.org](#tedtorg)
-   1. [Features](#features)
-   2. [Table of Contents](#table-of-contents)
-   3. [Repository Structure](#repository-structure)
-   4. [Include Standards](#include-standards)
-      1. [Directory Structure](#directory-structure)
-      2. [Directory Purposes](#directory-purposes)
-      3. [Naming Conventions](#naming-conventions)
-      4. [Usage Examples](#usage-examples)
-      5. [Adding New Includes](#adding-new-includes)
-      6. [Migration from Old Structure](#migration-from-old-structure)
-      7. [Quick Reference](#quick-reference)
-   5. [Acknowledgments](#acknowledgments)
-   6. [Custom Scripts](#custom-scripts)
-   7. [How to Contribute](#how-to-contribute)
-      1. [Local Development](#local-development)
-      2. [Testing](#testing)
-   8. [Quality Gates](#quality-gates)
-   9. [GitHub Workflows Overview](#github-workflows-overview)
-   10. [Front Matter Feature Flags](#front-matter-feature-flags)
-       1. [Slide Deck Front Matter (Canonical Path posts-slides)](#slide-deck-front-matter-canonical-path-posts-slides)
-       2. [Slide Index Behavior](#slide-index-behavior)
-       3. [Slide Includes](#slide-includes)
-       4. [Client-Side Topic Filtering](#client-side-topic-filtering)
-       5. [Styling Utilities for Decks](#styling-utilities-for-decks)
-       6. [Global Slides Theme](#global-slides-theme)
-          1. [Variable Aliases \& Backward Compatibility](#variable-aliases--backward-compatibility)
-          2. [Deck Style Variants](#deck-style-variants)
-          3. [Full-Height Slides Utility](#full-height-slides-utility)
-       7. [Archetype Classes \& Usage](#archetype-classes--usage)
-       8. [Deck Style Front Matter](#deck-style-front-matter)
-       9. [Mermaid Diagrams Usage](#mermaid-diagrams-usage)
-   11. [Homepage Hero System \& Caching](#homepage-hero-system--caching)
-       1. [How It Works](#how-it-works)
-       2. [Adding / Updating a Hero](#adding--updating-a-hero)
-       3. [Removing a Hero](#removing-a-hero)
-       4. [Service Worker Details](#service-worker-details)
-       5. [Troubleshooting](#troubleshooting)
-       6. [Potential Future Enhancements](#potential-future-enhancements)
-   12. [License](#license)
-   13. [Contact](#contact)
+   2. [Features](#features)
+   3. [Technology Stack (Condensed)](#technology-stack-condensed)
+      - [Core & Build](#core-build)
+      - [Content & Structure](#content-structure)
+      - [Presentation & Styling](#presentation-styling)
+      - [Client-Side Behavior](#client-side-behavior)
+      - [Social / Syndication](#social-syndication)
+      - [Quality & Security](#quality-security)
+   4. [ADRs Overview](#adrs-overview)
+   5. [Repository Structure](#repository-structure)
+   6. [Include Standards](#include-standards)
+      - [Directory Structure](#directory-structure)
+      - [Directory Purposes](#directory-purposes)
+      - [Naming Conventions](#naming-conventions)
+      - [Usage Examples](#usage-examples)
+      - [Adding New Includes](#adding-new-includes)
+      - [Migration from Old Structure](#migration-from-old-structure)
+      - [Quick Reference](#quick-reference)
+   7. [Acknowledgments](#acknowledgments)
+   8. [Custom Scripts](#custom-scripts)
+   9. [How to Contribute](#how-to-contribute)
+      - [Local Development](#local-development)
+      - [Testing](#testing)
+   10. [Quality Gates](#quality-gates)
+   11. [GitHub Workflows Overview](#github-workflows-overview)
+   12. [Front Matter Feature Flags](#front-matter-feature-flags)
+      - [Slide Deck Front Matter (Canonical Path posts-slides)](#slide-deck-front-matter-canonical-path-posts-slides)
+      - [Slide Index Behavior](#slide-index-behavior)
+      - [Slide Includes](#slide-includes)
+      - [Client-Side Topic Filtering](#client-side-topic-filtering)
+      - [Styling Utilities for Decks](#styling-utilities-for-decks)
+      - [Global Slides Theme](#global-slides-theme)
+      - [Archetype Classes & Usage](#archetype-classes-usage)
+      - [Deck Style Front Matter](#deck-style-front-matter)
+      - [Mermaid Diagrams Usage](#mermaid-diagrams-usage)
+   13. [Homepage Hero System & Caching](#homepage-hero-system-caching)
+      - [How It Works](#how-it-works)
+      - [Adding / Updating a Hero](#adding-updating-a-hero)
+      - [Removing a Hero](#removing-a-hero)
+      - [Service Worker Details](#service-worker-details)
+      - [Troubleshooting](#troubleshooting)
+      - [Potential Future Enhancements](#potential-future-enhancements)
+   14. [License](#license)
+   15. [Contact](#contact)
 
 ## Repository Structure
 
