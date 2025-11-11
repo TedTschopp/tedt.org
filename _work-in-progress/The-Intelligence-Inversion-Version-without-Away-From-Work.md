@@ -31,24 +31,21 @@
 
 ## Contents
 
-   * [Summary](#summary)
-   * [Contents](#contents)
-   * [Executive Summary](#executive-summary)
+- [Summary](#summary)
+- [Contents](#contents)
+- [Executive Summary](#executive-summary)
 
-     1. [The Intelligence Inversion: Why It Happens, When It Happens, and What Follows](#the-intelligence-inversion-why-it-happens-when-it-happens-and-what-follows)
-     2. [Powering the Intelligence Economy: Energy as the Gating Layer of Compute Capital](#powering-the-intelligence-economy-energy-as-the-gating-layer-of-compute-capital)
-     3. [Economic \& Organizational Implications](#economic--organizational-implications)
-     4. [Transition Playbooks \& Milestones for the Next 1,000 Days](#transition-playbooks--milestones-for-the-next-1000-days)
-     5. [Falsifiable Claims, Research Agenda, and Governance for Iteration](#falsifiable-claims-research-agenda-and-governance-for-iteration)
-     6. [Human‑Flourishing Architecture for the Intelligence Economy](#humanflourishing-architecture-for-the-intelligence-economy)
-     7. [Glossary of the Intelligence Economy White Paper](#glossary-of-the-intelligence-economy-white-paper)
-   
-   * [Abbreviations](#abbreviations)
-   * [Appendix A — Impact by Role Type (indicative)](#appendix-a--impact-by-role-type-indicative)
-   * [Appendix B — 90‑Day Action Checklist](#appendix-b--90day-action-checklist)
+   1. [The Intelligence Inversion: Why It Happens, When It Happens, and What Follows](#the-intelligence-inversion-why-it-happens-when-it-happens-and-what-follows)
+   2. [Powering the Intelligence Economy: Energy as the Gating Layer of Compute Capital](#powering-the-intelligence-economy-energy-as-the-gating-layer-of-compute-capital)
+   3. [Economic \& Organizational Implications](#economic--organizational-implications)
+   4. [Transition Playbooks \& Milestones for the Next 1,000 Days](#transition-playbooks--milestones-for-the-next-1000-days)
+   5. [Falsifiable Claims, Research Agenda, and Governance for Iteration](#falsifiable-claims-research-agenda-and-governance-for-iteration)
+   6. [Human‑Flourishing Architecture for the Intelligence Economy](#humanflourishing-architecture-for-the-intelligence-economy)
+   7. [Glossary of the Intelligence Economy White Paper](#glossary-of-the-intelligence-economy-white-paper)
 
-
-
+- [Abbreviations](#abbreviations)
+- [Appendix A — Impact by Role Type (indicative)](#appendix-a--impact-by-role-type-indicative)
+- [Appendix B — 90‑Day Action Checklist](#appendix-b--90day-action-checklist)
 
 ## Executive Summary
 
@@ -187,7 +184,7 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 - Put pilots in limited production; publish internal dashboards (cost per verified outcome, autonomy, escape, MTTR, portability delta, ECI).
 - Negotiate multi‑year **compute + energy** capacity with diversity and provenance clauses.
 - Launch **learning and care service‑credit pilots** tied to outcomes.
-- Run **chaos/killswitch drills**; complete first poisoning/red‑team exercise.
+- Run **chaos/kill switch drills**; complete first poisoning/red‑team exercise.
 
 #### **Next 12 months**
 
@@ -295,7 +292,7 @@ Two labor‑market features are especially important:
 
 - **The “hiring pause” effect**: Before layoffs, many organizations **stop adding** new roles as agent capacity soaks up growth. This disproportionately impacts **early‑career entrants**, leading to cohort scarring even when incumbents are retained.
 
-- **Rebundling of human work**: Remaining human roles skew toward **exception handling, policy design, responsibility and liability, narrative judgment, and relationship capital**. Job descritions and caraeer paths should reflect these rebundled responsibilities.
+- **Rebundling of human work**: Remaining human roles skew toward **exception handling, policy design, responsibility and liability, narrative judgment, and relationship capital**. Job descriptions and career paths should reflect these rebundled responsibilities.
 
 ### Why broad‑based, tax‑funded UBI struggles arithmetically
 
@@ -718,7 +715,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
   - *SRE / DevOps / Platform* → **Agent SRE/Observer** (family: Reliability/Platform).
   - *QA/SDET/Test Manager* → **Verification Engineer** (family: Quality/Engineering).
   - *Data Steward/Governance/Records* → **Data Steward (Provenance)** (family: Data).
-  - *Tech Writer / Conv. Designer / Business Analyst* → **Prompt & Policy Engineer** (family: Product/Content/Policy Eng).
+  - *Tech Writer / Experience Designer / Business Analyst* → **Prompt & Policy Engineer** (family: Product/Content/Policy Eng).
   - *MRM/Validator/GRC/Audit (models)* → **Model Risk Lead** (family: Risk & Compliance).
   - *Product Manager* → **Agent Architect (if outcome is a part of the overall corporate value chain)** (title change; family: Architecture / Strategy)
   - *Project / Program Manager* → **AgentOps Program Manager** (title change; family: Delivery / Operations)
@@ -1149,14 +1146,14 @@ In an economy where cognition is abundant, **discretionary time** becomes the pr
 
 #### **Time metrics**
 
-- **Time Dividend** \((T_{\Delta})\) — hours per person per week shifted from mandatory labor/administration to discretionary use.  
-- **Coordinated Time Index (CTI)** — fraction of civic services delivered at the user’s *first available time*, not the provider’s convenience.  
+- **Time Dividend** \((T_{\Delta})\) — hours per person per week shifted from mandatory labor/administration to discretionary use.
+- **Coordinated Time Index (CTI)** — fraction of civic services delivered at the user’s *first available time*, not the provider’s convenience.
 - **Work-to-Flourish Ratio (WFR)** — time spent on paid tasks vs. time in care, education, community, and rest.
 
 #### **Design rules**
 
-- Every agentic workflow must publish **time-to-outcome** alongside cost.  
-- Public programs target \(T_{\Delta} \geq 5\) hours/week for median households within 24 months, using UPAIs to remove administrative burdens (benefits, taxes, scheduling).  
+- Every agentic workflow must publish **time-to-outcome** alongside cost.
+- Public programs target \(T_{\Delta} \geq 5\) hours/week for median households within 24 months, using UPAIs to remove administrative burdens (benefits, taxes, scheduling).
 - Enterprises report WFR deltas for affected roles as a condition of claiming “AI-driven productivity” in ESG or investor communications.
 
 ### Education: from content coverage to capability formation
@@ -1282,144 +1279,144 @@ Intelligence abundance can produce either a **thin optimization** of clicks and 
 
 ## **Glossary of the Intelligence Economy White Paper**
 
-**A**
+- **A**
 
-- **Agent** — An autonomous software entity that can *plan, act, verify,* and *self-evaluate* across multi-step workflows, using tools, memory, and evaluators to execute economically valuable tasks.
-- **Agent Autonomy Index (AAI)** — The percentage of tasks completed by an agent without human edits or overrides; a core indicator of maturity and reliability.
-- **AgentOps** — The organizational discipline managing the lifecycle of agents—design, deployment, verification, observability, rollback, and governance—analogous to DevOps for AI systems.
-- **Agent-Equivalent Full-Time Employee (AEFTE)** — A measurement expressing total agent capacity in “human-equivalent” work units; used to track substitution and productivity trends.
-- **Algorithmic Organizational Form** — A legal or operational entity run partly or wholly by AI systems with defined policies, logging, and accountability mechanisms.
+  - **Agent** — An autonomous software entity that can *plan, act, verify,* and *self-evaluate* across multi-step workflows, using tools, memory, and evaluators to execute economically valuable tasks.
+  - **Agent Autonomy Index (AAI)** — The percentage of tasks completed by an agent without human edits or overrides; a core indicator of maturity and reliability.
+  - **AgentOps** — The organizational discipline managing the lifecycle of agents—design, deployment, verification, observability, rollback, and governance—analogous to DevOps for AI systems.
+  - **Agent-Equivalent Full-Time Employee (AEFTE)** — A measurement expressing total agent capacity in “human-equivalent” work units; used to track substitution and productivity trends.
+  - **Algorithmic Organizational Form** — A legal or operational entity run partly or wholly by AI systems with defined policies, logging, and accountability mechanisms.
 
-**B**
+- **B**
 
-- **Behavioral Manipulation / Wireheading** — The over-optimization of engagement or pleasure feedback loops by persuasive agents, resulting in decreased autonomy or welfare of users.
+  - **Behavioral Manipulation / Wireheading** — The over-optimization of engagement or pleasure feedback loops by persuasive agents, resulting in decreased autonomy or welfare of users.
 
-**C**
+- **C**
 
-- **Civic AI** — Open, public-interest AI infrastructure and agents aligned to human flourishing in domains such as health, education, and governance.
-- **Civic Compute** — Compute capacity reserved for public or socially beneficial workloads, financed through compute-secured reserves or philanthropic co-investment.
-- **Compute Balance of Trade** — A national metric measuring imports and exports of computational capacity and AI services across borders.
-- **Compute Capital (K₍c₎)** — Hardware, interconnect, and orchestration resources that replace or augment human cognitive labor as the primary factor of production.
-- **Compute Capacity Utilization (CCU)** — The ratio of active compute use to total available civic or enterprise capacity; tracks efficiency of deployed AI infrastructure.
-- **Compute-Secured Reserve Asset (CSRA)** — A digital reserve instrument whose issuance is directly tied to, and finances, civic compute capacity. It anchors monetary value to the infrastructure that powers aligned intelligence.
-- **Concentration Risk** — Dependence on a narrow set of compute or model providers that can threaten resilience or bargaining power.
-- **Culture Credits** — Programmable, human-issued digital credits redeemable for accredited civic or welfare services; the “soft-layer” currency complementing the CSRA.
+  - **Civic AI** — Open, public-interest AI infrastructure and agents aligned to human flourishing in domains such as health, education, and governance.
+  - **Civic Compute** — Compute capacity reserved for public or socially beneficial workloads, financed through compute-secured reserves or philanthropic co-investment.
+  - **Compute Balance of Trade** — A national metric measuring imports and exports of computational capacity and AI services across borders.
+  - **Compute Capital (K₍c₎)** — Hardware, interconnect, and orchestration resources that replace or augment human cognitive labor as the primary factor of production.
+  - **Compute Capacity Utilization (CCU)** — The ratio of active compute use to total available civic or enterprise capacity; tracks efficiency of deployed AI infrastructure.
+  - **Compute-Secured Reserve Asset (CSRA)** — A digital reserve instrument whose issuance is directly tied to, and finances, civic compute capacity. It anchors monetary value to the infrastructure that powers aligned intelligence.
+  - **Concentration Risk** — Dependence on a narrow set of compute or model providers that can threaten resilience or bargaining power.
+  - **Culture Credits** — Programmable, human-issued digital credits redeemable for accredited civic or welfare services; the “soft-layer” currency complementing the CSRA.
 
-**D**
+- **D**
 
-- **Digital Twin (Work)** — An agentic replica of a worker or process built from historical artifacts—emails, code, documents—to replicate tasks and prevent prior errors.
-- **Dual-Layer Monetary System** — A financial architecture combining a hard, compute-backed reserve asset (CSRA) with soft, service-linked credits (HISCs or Culture Credits).
-- **Diversity Capital (D)** — A measure of exposure to varied ideas, cultures, and experiences that sustains adaptability and innovation within human networks.
+  - **Digital Twin (Work)** — An agentic replica of a worker or process built from historical artifacts—emails, code, documents—to replicate tasks and prevent prior errors.
+  - **Dual-Layer Monetary System** — A financial architecture combining a hard, compute-backed reserve asset (CSRA) with soft, service-linked credits (HISCs or Culture Credits).
+  - **Diversity Capital (D)** — A measure of exposure to varied ideas, cultures, and experiences that sustains adaptability and innovation within human networks.
 
-**E**
+- **E**
 
-- **Evaluator / Verifier** — A programmatic or statistical checker that tests agent outputs for correctness, safety, or compliance; the foundation of “verification-first” engineering.
-- **EvalOps** — Continuous integration practices for evaluators—versioned, automated, and enforced as promotion gates for agent releases.
-- **Escape Rate** — Percentage of agent outputs that bypass verification and fail quality or safety checks downstream.
-- **Equitable Access (Parity Band)** — A fairness constraint ensuring demographic redemption and outcome differences stay within ±5 percentage-point bounds.
+  - **Evaluator / Verifier** — A programmatic or statistical checker that tests agent outputs for correctness, safety, or compliance; the foundation of “verification-first” engineering.
+  - **EvalOps** — Continuous integration practices for evaluators—versioned, automated, and enforced as promotion gates for agent releases.
+  - **Escape Rate** — Percentage of agent outputs that bypass verification and fail quality or safety checks downstream.
+  - **Equitable Access (Parity Band)** — A fairness constraint ensuring demographic redemption and outcome differences stay within ±5 percentage-point bounds.
 
-**F**
+- **F**
 
-- **Flourishing Architecture** — The policy and design framework aligning economic and technical systems to enhance material, intellectual, relational, and cultural well-being.
-- **Flourishing Commission** — Independent governance body that calibrates issuance coefficients and welfare metrics for the civic monetary system.
-- **Flourishing Index (FI)** — Composite indicator tracking health, learning, trust, and time-use outcomes; used to guide capacity allocation and monetary reaction functions.
-- **Flourishing Balance Sheet** — An auditable disclosure reporting time dividends, trust, equity, attention safety, and energy efficiency alongside financial results.
+  - **Flourishing Architecture** — The policy and design framework aligning economic and technical systems to enhance material, intellectual, relational, and cultural well-being.
+  - **Flourishing Commission** — Independent governance body that calibrates issuance coefficients and welfare metrics for the civic monetary system.
+  - **Flourishing Index (FI)** — Composite indicator tracking health, learning, trust, and time-use outcomes; used to guide capacity allocation and monetary reaction functions.
+  - **Flourishing Balance Sheet** — An auditable disclosure reporting time dividends, trust, equity, attention safety, and energy efficiency alongside financial results.
 
-**G**
+- **G**
 
-- **Goldenset / Ground Truth** — Reference datasets used for verifier calibration and quality assurance during agent evaluation.
-- **Governance Layer** — The oversight structure managing safety, liability, transparency, and appeals in agentic and monetary systems.
+  - **Golden set / Ground Truth** — Reference datasets used for verifier calibration and quality assurance during agent evaluation.
+  - **Governance Layer** — The oversight structure managing safety, liability, transparency, and appeals in agentic and monetary systems.
 
-**H**
+- **H**
 
-- **Hard Layer (Reserve Asset Layer)** — The immutable compute-backed foundation of the dual-currency system (e.g., CSRA).
-- **Health Navigation Agent** — An agent automating scheduling, forms, and authorization tasks while maintaining clinician oversight.
-- **Human-in-the-Loop Rate (HILR)** — Proportion of outputs requiring human review or correction; inverse of autonomy.
-- **Human-Issued Service Credits (HISCs)** — Non-transferable digital credits distributed per person for verified civic or welfare services, redeemable through UPAIs.
+  - **Hard Layer (Reserve Asset Layer)** — The immutable compute-backed foundation of the dual-currency system (e.g., CSRA).
+  - **Health Navigation Agent** — An agent automating scheduling, forms, and authorization tasks while maintaining clinician oversight.
+  - **Human-in-the-Loop Rate (HILR)** — Proportion of outputs requiring human review or correction; inverse of autonomy.
+  - **Human-Issued Service Credits (HISCs)** — Non-transferable digital credits distributed per person for verified civic or welfare services, redeemable through UPAIs.
 
-**I**
+- **I**
 
-***Identity Binding** — Cryptographic association between a human and their personal AI or account, enabling auditability and consent without excessive surveillance.
-***Information Deflation** — Economic condition where the cost of producing cognitive or informational work approaches zero due to agent proliferation.
-***Intelligence Inversion** — The epochal shift where human cognitive labor becomes less valuable than machine cognition, requiring redefinition of work, money, and purpose.
-***Intelligence Capital (I)** — Human and machine capability combined, measured by access to reliable, aligned intelligence tools.
-***Interoperability (Interop)** — Ability to transfer workflows and data across agent platforms with minimal performance loss.
+  - **Identity Binding** — Cryptographic association between a human and their personal AI or account, enabling auditability and consent without excessive surveillance.
+  - **Information Deflation** — Economic condition where the cost of producing cognitive or informational work approaches zero due to agent proliferation.
+  - **Intelligence Inversion** — The epochal shift where human cognitive labor becomes less valuable than machine cognition, requiring redefinition of work, money, and purpose.
+  - **Intelligence Capital (I)** — Human and machine capability combined, measured by access to reliable, aligned intelligence tools.
+  - **Interoperability (Interop)** — Ability to transfer workflows and data across agent platforms with minimal performance loss.
 
-**K**
+- **K**
 
-- **Key Performance Indicator (KPI)** — Quantifiable measure—e.g., autonomy index, escape rate, cost per verified outcome—used to monitor agent or policy performance.
+  - **Key Performance Indicator (KPI)** — Quantifiable measure—e.g., autonomy index, escape rate, cost per verified outcome—used to monitor agent or policy performance.
 
-**L**
+- **L**
 
-- **Labor-to-Compute Ratio (LCR)** — A macro indicator expressing the substitution of human labor by compute; declining LCR signals deepening automation.
-- **Least-Privilege Access** — Security principle limiting agents to minimal permissions needed for a task, reducing exposure and misuse.
+  - **Labor-to-Compute Ratio (LCR)** — A macro indicator expressing the substitution of human labor by compute; declining LCR signals deepening automation.
+  - **Least-Privilege Access** — Security principle limiting agents to minimal permissions needed for a task, reducing exposure and misuse.
 
-**M**
+- **M**
 
-- **Manipulation Classifier** — A detection model that identifies persuasive or coercive patterns in agent communications, throttling risk beyond user-set thresholds.
-- **Mastery Transcript** — Portable, machine-readable certification of verified competencies replacing traditional grade systems.
-- **Model Risk Management (MRM)** — Governance framework ensuring AI models are validated, monitored, and auditable under defined policies.
-- **Monetary Reaction Function** — Rule describing how HISC issuance or CSRA allocation adjusts to time, unemployment, and verification indicators.
+  - **Manipulation Classifier** — A detection model that identifies persuasive or coercive patterns in agent communications, throttling risk beyond user-set thresholds.
+  - **Mastery Transcript** — Portable, machine-readable certification of verified competencies replacing traditional grade systems.
+  - **Model Risk Management (MRM)** — Governance framework ensuring AI models are validated, monitored, and auditable under defined policies.
+  - **Monetary Reaction Function** — Rule describing how HISC issuance or CSRA allocation adjusts to time, unemployment, and verification indicators.
 
-**N**
+- **N**
 
-- **Network Capital (N)** — The sum of trust, reciprocity, and relationship density across social systems; a key driver of human flourishing.
-- **Network Capital Index (NCI)** — Metric quantifying community connectivity and mutual aid activity; used to gauge social cohesion.
+  - **Network Capital (N)** — The sum of trust, reciprocity, and relationship density across social systems; a key driver of human flourishing.
+  - **Network Capital Index (NCI)** — Metric quantifying community connectivity and mutual aid activity; used to gauge social cohesion.
 
-**O**
+- **O**
 
 - **Outcome-Adjusted Pricing** — Payment model linking service compensation to verified outcomes (e.g., health improvements, learning gains) rather than volume.
 - **Outcome-Verified Economy** — Economic structure in which payments, credits, and incentives depend on programmatically verified results.
 
-**P**
+- **P**
 
-- **Peg Corridor** — Acceptable deviation band within which the exchange rate between HISCs and the verified-service basket is maintained.
-- **Personal AI (UPAI)** — A user-specific AI agent that represents and safeguards an individual’s interests, managing data, decisions, and service interactions.
-- **Plural Infrastructure** — Deliberate diversification of compute, models, and governance to prevent monopolistic capture and enhance resilience.
-- **Portability Metric** — Quantitative comparison of workflow outcomes across different model providers; measures degree of vendor independence.
-- **Provenance** — Traceable record of data origin, transformations, and usage rights that ensures auditability and safety.
+  - **Peg Corridor** — Acceptable deviation band within which the exchange rate between HISCs and the verified-service basket is maintained.
+  - **Universal Personal AI (UPAI)** — A user-specific AI agent that represents and safeguards an individual’s interests, managing data, decisions, and service interactions.
+  - **Plural Infrastructure** — Deliberate diversification of compute, models, and governance to prevent monopolistic capture and enhance resilience.
+  - **Portability Metric** — Quantitative comparison of workflow outcomes across different model providers; measures degree of vendor independence.
+  - **Provenance** — Traceable record of data origin, transformations, and usage rights that ensures auditability and safety.
 
-**R**
+- **R**
 
-- **Red Teaming / Adversarial Testing** — Structured exercises probing agent systems for vulnerabilities such as prompt injection, persuasion, data leakage, or tool abuse.
-- **Rebundling of Human Work** — Recomposition of job roles around judgment, accountability, creativity, and empathy after task automation.
-- **Reserve Coverage Ratio (CCR)** — Ratio of civic compute present value to CSRA market capitalization; indicates adequacy of reserve backing.
+  - **Red Teaming / Adversarial Testing** — Structured exercises probing agent systems for vulnerabilities such as prompt injection, persuasion, data leakage, or tool abuse.
+  - **Rebundling of Human Work** — Recomposition of job roles around judgment, accountability, creativity, and empathy after task automation.
+  - **Reserve Coverage Ratio (CCR)** — Ratio of civic compute present value to CSRA market capitalization; indicates adequacy of reserve backing.
 
-**S**
+- **S**
 
-- **Safety Layer** — Technical and procedural safeguards—evals, kill-switches, policy gates—that prevent or mitigate harmful agent behavior.
-- **Service Credit (Culture Credit / HISC)** — Programmable currency units redeemable for accredited welfare services; distributed universally or as earned top-ups.
-- **Service-Level Objective (SLO) / Service-Level Agreement (SLA)** — Contractual or internal performance guarantees defining acceptable error rates, latency, and reliability for agent operations.
-- **Soft Layer** — Spendable, human-issued currency layer (HISC) tied to verified welfare services and pegged to the CSRA.
-- **Speculative Compute Cycle** — Boom-bust pattern in GPU or model investment detached from verified economic value; mitigated by CCR controls.
+  - **Safety Layer** — Technical and procedural safeguards—evals, kill-switches, policy gates—that prevent or mitigate harmful agent behavior.
+  - **Service Credit (Culture Credit / HISC)** — Programmable currency units redeemable for accredited welfare services; distributed universally or as earned top-ups.
+  - **Service-Level Objective (SLO) / Service-Level Agreement (SLA)** — Contractual or internal performance guarantees defining acceptable error rates, latency, and reliability for agent operations.
+  - **Soft Layer** — Spendable, human-issued currency layer (HISC) tied to verified welfare services and pegged to the CSRA.
+  - **Speculative Compute Cycle** — Boom-bust pattern in GPU or model investment detached from verified economic value; mitigated by CCR controls.
 
-**T**
+- **T**
 
-- **Task Verifiability Threshold** — Quality benchmark (e.g., ≥ 95 % coverage, ≤ 0.5 % escape) required before agents assume primary responsibility for a workflow.
-- **Time Dividend (TΔ)** — Hours of discretionary time gained per person per week from automation and service simplification; the prime welfare metric.
-- **Tool Contract** — Formal schema defining how agents call APIs or systems: functions, rate limits, side effects, and audit requirements.
-- **Trust Metrics** — Measures of user confidence—disclosure compliance, appeal resolution time, manipulation flag rates—used in Flourishing Balance Sheets.
+  - **Task Verifiability Threshold** — Quality benchmark (e.g., ≥ 95 % coverage, ≤ 0.5 % escape) required before agents assume primary responsibility for a workflow.
+  - **Time Dividend (TΔ)** — Hours of discretionary time gained per person per week from automation and service simplification; the prime welfare metric.
+  - **Tool Contract** — Formal schema defining how agents call APIs or systems: functions, rate limits, side effects, and audit requirements.
+  - **Trust Metrics** — Measures of user confidence—disclosure compliance, appeal resolution time, manipulation flag rates—used in Flourishing Balance Sheets.
 
-**U**
+- **U**
 
-- **Universal Basic Income (UBI)** — Unconditional cash payments to all citizens; contrasted with outcome-linked, verification-backed service credits in this framework.
-- **Universal Personal AI (UPAI)** — Personalized AI agent acting as each person’s advocate and interface to digital systems, endowed with privacy, memory, and consent management.
-- **Utility Function for Flourishing** — System objective optimizing not only economic output but human well-being across material, cognitive, social, and diversity dimensions.
+  - **Universal Basic Income (UBI)** — Unconditional cash payments to all citizens; contrasted with outcome-linked, verification-backed service credits in this framework.
+  - **Universal Personal AI (UPAI)** — Personalized AI agent acting as each person’s advocate and interface to digital systems, endowed with privacy, memory, and consent management.
+  - **Utility Function for Flourishing** — System objective optimizing not only economic output but human well-being across material, cognitive, social, and diversity dimensions.
 
-**V**
+- **V**
 
-- **Verification-First Engineering** — Development methodology requiring that every agent output is testable, measured, and governed by verifiers before deployment.
-- **Verifier Coverage Ratio (VCR)** — Portion of outputs protected by programmatic verification tests relative to total outputs produced.
-- **Verification Debt** — Accumulated gap between agent capability and available verification coverage, posing quality and safety risks.
+  - **Verification-First Engineering** — Development methodology requiring that every agent output is testable, measured, and governed by verifiers before deployment.
+  - **Verifier Coverage Ratio (VCR)** — Portion of outputs protected by programmatic verification tests relative to total outputs produced.
+  - **Verification Debt** — Accumulated gap between agent capability and available verification coverage, posing quality and safety risks.
 
-**W**
+- **W**
 
-- **Work-to-Flourish Ratio (WFR)** — Share of total time allocated to paid labor relative to time in learning, care, rest, and community—used as a macro well-being indicator.
-- **White-Collar Blood Bath (Economic Metaphor)** — Rapid contraction in professional cognitive roles following large-scale agent adoption; an early-phase symptom of Intelligence Inversion.
+  - **Work-to-Flourish Ratio (WFR)** — Share of total time allocated to paid labor relative to time in learning, care, rest, and community—used as a macro well-being indicator.
+  - **White-Collar Blood Bath (Economic Metaphor)** — Rapid contraction in professional cognitive roles following large-scale agent adoption; an early-phase symptom of Intelligence Inversion.
 
-**X–Z**
+- **X–Z**
 
-- **Zero-Sum vs. Positive-Sum Intelligence** — A framing distinction: *zero-sum* AI extracts attention and profit; *positive-sum* AI expands human capability and welfare through alignment and verification.
+  - **Zero-Sum vs. Positive-Sum Intelligence** — A framing distinction: *zero-sum* AI extracts attention and profit; *positive-sum* AI expands human capability and welfare through alignment and verification.
 
 ## **Abbreviations**
 
