@@ -118,7 +118,7 @@
 
 ### What it is
 
-**Älplermagronen**—literally “**herdsmen’s macaroni**”—is a hearty Alpine dish of **pasta, potatoes, cream, cheese, and onions**, typically served with **applesauce**. It’s widely regarded as a classic of Swiss mountain cooking, with regional variations across the Alps.
+**Älplermagronen**—literally “**herdsmen’s macaroni**”—is a hearty Alpine dish of **pasta, potatoes, cream, cheese, and onions**, served with **applesauce**. It’s widely regarded as a classic of Swiss mountain cooking, with regional variations across the Alps.
 
 ### How (and when) it took shape
 

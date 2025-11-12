@@ -3,31 +3,25 @@
 
 ## Summary
 
-- **Core thesis (“Intelligence Inversion”)**: ChatGPT launched ~1,000 days ago.  What happens over the next 1,000 days?  The core thesis is that the marginal value of average **human cognitive labor** trends to **≈$0** (and in some workflows **negative**) as AI agents outperform, persist longer, and scale via GPUs.
+- **Core thesis (“Intelligence Inversion”)**: ChatGPT launched 1,000 days ago.  What happens over the next 1,000 days?  The core thesis is that the marginal value of average **human cognitive labor** trends to **≈$0** (and in some workflows **negative**) as AI agents outperform, persist longer, and scale via GPUs.
 
 - **From “smart intern” to autonomous agent**: Tools shift from copilots that need constant prompting to **agents** that learn from a worker’s artifacts, build verifiers/evals, and execute **long‑horizon tasks**.
 
-- **Cost curve collapse**: When human thought is converted over to AI Tokens, a knowledge worker uses ~1,000,000 AI Tokens a day.  The cost for this number of tokens is approaching $0.50, the **compute cost per “digital worker”** could be **~$0.50/day**.
+- **Cost curve collapse**: When human thought is converted over to AI Tokens, a knowledge worker uses ~1,000,000 AI Tokens a day.  The cost for this number of tokens is approaching $0.50, the **compute cost per “digital worker”** could be as much as **~$0.50/day**.
 
-- **Capital redefined**: **Data centers/GPUs** become the decisive **capital stock**; comparative advantage follows **how much compute + orchestration** you control.
+- **Capital redefined**: **Data centers/GPUs** become the decisive **capital stock**; comparative advantage follows **how much compute + orchestration** you control.  **Access to power and cooling** become the **gating criteria for scaling intelligence** vis data centers/GPUs.
 
 - **Labor markets**: First‑wave impacts hit **junior/standardized cognitive roles**; hiring slows before layoffs; some sectors (public/care) lag in impact.
 
-- **Policy implications**: Traditional levers (e.g., **central bank** rate cuts to stimulate hiring) weaken if firms substitute **compute for labor**.
+- **Policy implications**: Traditional levers (e.g., **central bank** rate cuts to stimulate hiring) weaken if firms substitute **compute for labor**.  This sets off geopolitical competition for **compute sovereignty** and energy that has no historical precedent.
 
-- **UBI skepticism**: **Tax‑funded UBI** “doesn’t pencil out” under current receipts, per the speaker’s back‑of‑envelope math; **dividends** from AI firms also too small if broadly distributed.
-
-- **Proposed alternative (speaker)**: A **civic AI stack** funded by a **dual‑currency** design—
-
-  - **“Foundation Coin”** (Bitcoin‑style, secured by compute powering public‑interest AI), and
-  - **“Culture Credits”** (cash‑like, issued for being human and pegged to the first).
-    Plus a **universal, personal AI** for every person, aligned to human flourishing. *Claim by speaker; proposal.*
+- **UBI skepticism**: **Tax‑funded UBI** “doesn’t pencil out” under current receipts; **dividends** from AI firms also too small if broadly distributed.
 
 - **Risk surface expands**: Highly persuasive AI, **wireheading/manipulation**, **data‑poisoning**, centralized compute concentration, **AI‑run entities**, and alignment failures.
 
 - **Strategic response**: Treat **compute** and **agentic workflows** as core enterprise capabilities; redesign job architecture; set **agent governance**; invest in **civic/mission AI** and resilience.
 
-> **Bottom line**: Prepare now for agent‑first operating models, while pushing in parallel for **civic AI infrastructure** that encodes human flourishing—not just profit maximization.
+> **Bottom line**: Prepare now for agent‑first operating models, while pushing in parallel for **an approach** that encodes human flourishing—not just profit maximization into the build-out.
 
 ## Contents
 
