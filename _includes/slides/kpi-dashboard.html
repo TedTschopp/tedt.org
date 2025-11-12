@@ -1,0 +1,45 @@
+{% comment %}
+slides/kpi-dashboard.html
+Reusable KPI dashboard snippet for strategy / performance slides.
+Purpose: Provide a concise, accessible snapshot of AI program performance without inline styling.
+No placeholder rows: Values should be periodically refreshed manually; avoid synthetic metrics.
+Optional include params (all arrays of equal length) to override defaults:
+  labels: ["Models in Production", ...]
+  currents: ["27", ...]
+  trends: ["▲ +8 QoQ", ...]  (include arrow + delta; make sure accessible text matches)
+  targets: ["40", ...]
+If params provided and array lengths mismatch, rows with missing data show a muted "—".
+Usage example:
+  {% include slides/kpi-dashboard.html labels=my_labels currents=my_currents trends=my_trends targets=my_targets %}
+Accessibility: Table markup with descriptive caption; trend cell includes visually hidden extended description.
+{% endcomment %}
+{% assign _labels = include.labels | default: "Models in Production,Data Quality Score,Avg Inference Latency,Automated Governance Coverage,AI Adoption Rate" | split: "," %}
+{% assign _currents = include.currents | default: "27,93%,142 ms,78%,64%" | split: "," %}
+{% assign _trends = include.trends | default: "▲ +8 QoQ,▲ +3pp QoQ,▼ -11 ms QoQ,▲ +6pp QoQ,▲ +9pp QoQ" | split: "," %}
+{% assign _targets = include.targets | default: "40,95%,120 ms,90%,85%" | split: "," %}
+<table class="kpi-table" aria-describedby="kpi-dashboard-footnote">
+  <caption class="fw-semibold">AI Program KPI Snapshot (Quarterly)</caption>
+  <thead>
+    <tr>
+      <th scope="col">KPI</th>
+      <th scope="col">Current</th>
+      <th scope="col">Trend</th>
+      <th scope="col">2026 Target</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for l in _labels %}
+    {% assign idx = forloop.index0 %}
+    {% assign c = _currents[idx] %}
+    {% assign t = _trends[idx] %}
+    {% assign g = _targets[idx] %}
+    <tr>
+      <th scope="row">{{ l | strip }}</th>
+      <td>{% if c %}{{ c | strip }}{% else %}<span class="text-muted">&mdash;</span>{% endif %}</td>
+      <td>{% if t contains '▲' %}<span class="trend-up" aria-label="Improving">{{ t | strip }}</span>{% elsif t contains '▼' %}<span class="trend-down" aria-label="Declining">{{ t | strip }}</span>{% else %}<span class="text-muted">{{ t | strip }}</span>{% endif %}</td>
+      <td>{% if g %}{{ g | strip }}{% else %}<span class="text-muted">&mdash;</span>{% endif %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+<p id="kpi-dashboard-footnote" class="text-muted" style="font-size:0.8em;">Arrows denote quarter-over-quarter movement. Latency measured P95. Governance coverage = % of models with automated policy & risk checks pre-deployment.</p>
