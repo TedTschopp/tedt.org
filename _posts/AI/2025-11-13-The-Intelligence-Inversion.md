@@ -77,7 +77,14 @@ mathjax: true
 
 ---
 
-> The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business  strategy, and user trust**.
+<figure>
+  <blockquote class="blockquote">
+    <p>The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business  strategy, and user trust**.</p>
+  </blockquote>
+  <figcaption class="blockquote-footer">
+    Ted Tschopp in a Talk on <cite title="The Next 1,000 Days">The Next 1,000 Days</cite>
+  </figcaption>
+</figure>
 
 ## Executive Summary
 
