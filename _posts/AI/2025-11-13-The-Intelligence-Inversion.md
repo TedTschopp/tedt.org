@@ -3,7 +3,7 @@ layout: post
 
 title: The Intelligence Inversion - The First 1,000 Days of Enterprise AI
 subtitle: How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises
-quote: The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business  strategy, and user trust**
+quote: The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, businessstrategy, and user trust**
 excerpt: A comprehensive white paper on how agentic AI, compute-as-capital, and verification-first engineering are transforming cost, risk, and operating models in large enterprises—and what leaders must do in the next 1,000 days.
 source: Original Content
 source-url: ""
@@ -161,7 +161,7 @@ Run the company on **disprovable targets**, not hope:
 
 As cognition gets cheap, **time, trust, and attention** become the scarce assets customers and employees value.
 
-#### **Design objectives and metrics**
+#### Design objectives and metrics
 
 - **Time Dividend (TΔ):** hours/week returned to customers or employees; target **≥5 hours** in 24 months for key journeys (e.g., benefits, claims, onboarding).
 - **Manipulation defense:** active throttling of affective persuasion; **disclosure ≥99%**; child & vulnerable‑context guardrails.
@@ -170,14 +170,12 @@ As cognition gets cheap, **time, trust, and attention** become the scarce assets
 
 **Why you care:** These are **brand and regulator “green zones.”** The firms that lead on disclosure, appeals, and parity will set the bar competitors must match.
 
-### Money, Compute, and Your CFO Lens (Section 8)
+### Money, Compute, and Your CFO Lens
 
 **Compute is the comparative advantage** in the intelligence economy. Two practical implications for corporate finance:
 
 1. **Capacity strategy.** Lock in diversified compute through long‑dated capacity contracts, multi‑provider commitments, and energy‑aware siting; publish energy/carbon **per verified outcome**.
 2. **Outcome‑linked spend.** For internal service programs (learning, care, legal triage), pilot **service‑credit** mechanisms where payouts are tied to **verified outcomes**, not usage volume. This caps leakage and focuses spend where it moves the needle.
-
-*Note:* Section 8 proposes a broader **dual‑layer monetary architecture** (compute‑secured reserve + human‑issued service credits) for public systems. For enterprises, the near‑term takeaway is **compute diversification, outcome‑linked funding, and verification‑backed benefits**.
 
 ### Geopolitics, Security, and Resilience
 
@@ -666,7 +664,7 @@ A stylized illustration:
 
 Dividend‑style approaches (e.g., distributing a share of AI/robotics “profits” to all citizens) often **underwhelm per capita** when spread across entire populations, unless the asset base is exceptionally large and widely owned.
 
-**Conclusion.** While safety nets remain essential, **tax‑funded, uniform UBI at meaningful levels** faces arithmetic headwinds. More **endogenous** designs—linking monetary creation to human status and provisioning a **civic compute** base for public‑interest AI—aim to realign value flows without relying solely on shrinking tax bases. (Details of such designs belong in the policy section of the paper; the analytical point here is simply that naïve UBI math strains under the new production function.)
+**Conclusion.** While safety nets remain essential, **tax‑funded, uniform UBI at meaningful levels** faces arithmetic headwinds. More **endogenous** designs—linking monetary creation to human status and provisioning a **civic compute** base for public‑interest AI—aim to realign value flows without relying solely on shrinking tax bases.
 
 ### Boundary Conditions: Where Human MVL Stays Positive
 
@@ -844,7 +842,7 @@ When firms meet incremental demand by **renting compute and deploying agents** r
 Returns accrue where **compute, orchestration, and data access** are jointly controlled. Without counterweights, profits concentrate among platform orchestrators and capital holders, while wage shares in affected sectors decline. The principal distributional lever becomes **access to aligned intelligence** (e.g., universal personal AIs) and **societal ownership of meaningful compute** for public goods.
 
 **Public finance and safety nets.**
-Tax bases anchored in **wages and corporate profits** face pressure if labor’s share of value falls and profits become more mobile. Broad‑based cash entitlements financed purely by contemporary tax receipts strain arithmetic. Sustainable safety nets will require **new issuance and distribution mechanisms** (see policy sections), targeted insurance, and **in‑kind AI services** (e.g., healthcare, education, legal aid) to protect living standards as price levels for intelligence‑intensive services collapse.
+Tax bases anchored in **wages and corporate profits** face pressure if labor’s share of value falls and profits become more mobile. Broad‑based cash entitlements financed purely by contemporary tax receipts strain arithmetic. Sustainable safety nets will require **new issuance and distribution mechanisms**, targeted insurance, and **in‑kind AI services** (e.g., healthcare, education, legal aid) to protect living standards as price levels for intelligence‑intensive services collapse.
 
 **National competitiveness.**
 Competitiveness indices should expand beyond broadband and STEM graduates to include:
@@ -930,7 +928,7 @@ Data sources used for retrieval, fine‑tuning, or verifier training must carry 
 **Cost structure shifts.**
 Personnel costs give way to **compute and orchestration** (inference tokens, tool/API charges, verifier runs, memory stores, logging, and evaluation infrastructure). The new margin stack prioritizes **quality‑adjusted throughput** and **verification efficiency**.
 
-#### **A simple calculus for go/no‑go**
+#### A simple calculus for go/no‑go
 
 Let:
 
@@ -1010,7 +1008,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 - **Primary KPIs:** Quality-adjusted throughput, residual error × penalty, escalation ratio ↓, p95/p99 latency vs. SLO, cost per resolved unit, policy compliance.
 - **90-day outcomes:** Define quality and risk budgets for one value-chain step. Deliver canonical agent template + escalation matrix. Establish data contracts and provenance registry. Publish SLO/SLA pack and rollback playbook.
 
-##### **Agent Architect**
+##### Agent Architect
 
 - **Scope**: Designs multi‑agent systems: planner policies, tool graphs, memory, verifiers, fallbacks, and escalation. Encodes NFRs and safety into orchestration.
 - **Legacy strengths that transfer**: System decomposition, NFRs/SLOs, integration patterns, security‑by‑design, change control.
@@ -1018,7 +1016,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 - **Primary KPIs**: Quality‑adjusted throughput; verifier pass rate; residual error; p95/p99 latency vs. SLO; cost per resolved unit; % of workflows agentized.
 - **90‑day outcomes**: Canonical agent template for 1–2 service lines; tool and verifier catalog; escalation matrix; canaried rollout with rollback runbook.
 
-##### **AgentOps Program Manager**
+##### AgentOps Program Manager
 
 - **Scope**: Orchestrates agentic releases, quality-gated rollouts, and cross-functional incident response; coordinates with SREs, Verification, Data Stewardship, and Policy Engineering.
 - **Legacy strengths that transfer**: Stakeholder management, milestone planning, risk tracking, communication, release management.
@@ -1026,7 +1024,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 - **Primary KPIs**: % releases gated by verifiers; SLO attainment rate; MTTR; incident count by severity; time-to-green post rollback; residual error trend.
 - **90-day outcomes**: Create release calendar with SLO/quality gates. Document incident taxonomy and rollback drill schedule. Implement version pinning and rollout hygiene standards. Launch cost & quality dashboards across agentized lines.
 
-##### **Verification Engineer**
+##### Verification Engineer
 
 - **Scope**: Builds evals, oracle checks, red‑team suites; manages quality budgets; gates deployment; monitors drift/poisoning.
 - **Legacy strengths**: Test strategy, automation, coverage, CI gating, defect analytics.
@@ -1034,7 +1032,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 - **Primary KPIs**: Residual error; verifier precision/recall; eval coverage; escaped‑defect rate; incidents avoided; mean time to update evals.
 - **90‑day outcomes**: Eval suite tied to business penalties; quality budget per flow; verification gates in CI/CD; red‑team playbook.
 
-##### **Agent SRE/Observer**
+##### Agent SRE/Observer
 
 - **Scope**: Operates agent fleets with SLOs and safety SLAs; telemetry, incident response, cost tuning, and rollout hygiene (models/prompts/tools).
 - **Legacy strengths**: SLIs/SLOs, observability, capacity, incident mgmt., blameless postmortems.
@@ -1042,7 +1040,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 - **Primary KPIs**: SLO attainment; MTTR/MTBF; tail latency; rollback frequency; tool error rate; cache hit rate; cost per resolved unit.
 - **90‑day outcomes**: Fleet dashboards (quality+cost+latency); incident taxonomy/runbooks; canary pipelines; rollback drills; cost monitors.
 
-##### **Data Steward (Provenance)**
+##### Data Steward (Provenance)
 
 - **Scope**: Enforces provenance, licensing, consent, toxicity/poisoning defenses; manages data contracts for retrieval/fine‑tune/verifiers.
 - **Legacy strengths**: Catalog/lineage, access controls, retention, audit evidence.
@@ -1050,7 +1048,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 - **Primary KPIs**: % assets with signed provenance; licensing coverage; poisoning incidents; data freshness SLAs; audit findings closed; retrieval accuracy improvements.
 - **90‑day outcomes**: Data contracts for top sources; provenance/license registry; takedown & repair workflow; quarterly refresh plan.
 
-##### **Prompt & Policy Engineer**
+##### Prompt & Policy Engineer
 
 - **Scope**: Turns institutional policy, style, and SOPs into prompts/guards with measurable effects; curates reusable patterns.
 - **Legacy strengths**: Requirements/spec writing, style guides, conversation design, control wording.
@@ -1058,7 +1056,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 - **Primary KPIs**: Δ in verifier pass rates; ↓ hallucination/policy‑violation rates; reviewer time saved; reuse/adoption of patterns.
 - **90‑day outcomes**: Pattern library for top flows; guardrail prompts wired to verifiers; acceptance evals defined with Verification.
 
-##### **Model Risk Lead**
+##### Model Risk Lead
 
 - **Scope**: Independent governance for models/agents: intended use, limitations, off‑label prohibitions, scenario tests, monitoring, and rollback readiness.
 - **Legacy strengths**: MRM/GRC frameworks, documentation, risk appetite statements, regulatory engagement.
@@ -1105,22 +1103,22 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 - **Prompt & Policy Engineer** — Codifies institutional policy and style as prompts/guards and reusable patterns with measured effects on quality and safety.
 - **Model Risk Lead** — Provides independent governance of model/agent deployments: intended use, limitations, scenario tests, monitoring, and rollback readiness.
 
-**Career ladders and mobility.**
+**Career ladders and mobility**
 Traditional ladders (e.g., junior analyst → senior analyst) give way to **orchestration ladders** (e.g., verifier engineer → agent architect → service‑line owner). Internal marketplaces should make **exception work** and **customer trust** roles visible and rewarded.
 
-**Change management.**
+**Change management**
 Adopt an **inversion narrative** early: agents are placed in the flow of work with transparent metrics; humans are upskilled to higher‑judgment roles. Avoid “shadow deployment” that surprises teams; publish **transition roadmaps** and **placement guarantees** where feasible.
 
 ### KPIs and dashboards
 
-#### **Macro‑relevant (for Executives)**
+#### Macro‑relevant (for Executives)
 
 - **Compute intensity** (GPU‑hours per unit of GDP/sector output)
 - **Agent adoption rate** (share of workflows with agents in the critical path)
 - **Quality‑adjusted cost indices** for intelligence‑intensive services
 - **Distributional metrics** (access to personal AIs, civic compute per capita)
 
-#### **Enterprise**
+#### Enterprise
 
 - **Quality‑adjusted throughput** (per service line)
 - **Verifier pass rates** and **residual error** trends
@@ -1131,19 +1129,19 @@ Adopt an **inversion narrative** early: agents are placed in the flow of work wi
 
 ### Strategic Scenarios and Hedges
 
-#### **Soft‑landing scenario.**
+#### Soft‑landing scenario
 
 Agents absorb routine work; wages compress slowly; productivity and real incomes rise as service prices fall. **Hedge** by accelerating agent adoption and reallocating humans to trust‑critical roles.
 
-#### **Sharp inversion scenario.**
+#### Sharp inversion scenario
 
 Hiring stalls; entry‑level cohorts struggle; attention markets dominate distribution. **Hedge** via internal academies, guaranteed placements, attention‑preserving product design, and **contractual access to compute**.
 
-#### **Concentration shock scenario.**
+#### Concentration shock scenario
 
 Sudden scarcity or price spikes in compute or interconnect supply chain. **Hedge** with multi‑region, multi‑vendor strategies and **workload portability**.
 
-#### **Safety/regulatory shock scenario.**
+#### Safety/regulatory shock scenario
 
 High‑profile agent failures trigger stringent controls. **Hedge** by leading on **verification, auditability, and model risk management**, making governance a competitive asset.
 
@@ -1166,7 +1164,7 @@ The Intelligence Inversion rewires the production function: **compute‑plus‑o
 
 #### 1 Enterprises (private and social)
 
-#### **Day 0–90: Foundations**
+#### Day 0–90: Foundations
 
 - Appoint an **Executive Agent Sponsor** and stand up **AgentOps** (product owner, evaluator engineer, agent SRE, model risk lead).
 - Map top 20 workflows by volume/risk; select 3–5 **agent‑first candidates** (high programmability, high volume, verifiable outcomes).
@@ -1174,21 +1172,21 @@ The Intelligence Inversion rewires the production function: **compute‑plus‑o
 - Define canonical **Agent Charter** (scope, objectives, guardrails, escalation).
 - Build **golden datasets** and acceptance criteria; implement baseline verifiers.
 
-#### **Day 90–180: First deployments**
+#### Day 90–180: First deployments
 
 - Ship agent‑first versions for the selected workflows with canaries and **rollback**.
 - Publish **Agent Economics Dashboard**: cost per verified outcome, autonomy index, verifier coverage, escape rate, MTTR.
 - Negotiate **multi‑model** contracts and portability clauses; stand up a “shadow model” for critical workloads.
 - Launch **red‑team program** for injection, tool abuse, and persuasion; wire incidents to change control.
 
-#### **Day 180–365: Scale**
+#### Day 180–365: Scale
 
 - Expand to 10–15 workflows; standardize **pattern libraries** (planner templates, tool graphs, verifiers).
 - Reduce Human‑in‑the‑Loop Rate (HILR) by ≥50% where escape rate <0.5%; move to **sampled human audits**.
 - Integrate **provenance scoring** for training/retrieval corpora; quarantine suspect sources.
 - Implement **customer trust UX**: disclosure, provenance summaries, and appeals.
 
-#### **Day 365–1,000: Industrialize**
+#### Day 365–1,000: Industrialize
 
 - Migrate finance to **unit‑of‑work costing**; conduct quarterly **model price discovery** (frontier vs. small models).
 - Optimize compute mix (cloud, reserved, on‑prem) with portability; track **GPU‑hour intensity** per service.
@@ -1217,7 +1215,7 @@ The Intelligence Inversion rewires the production function: **compute‑plus‑o
 
 ### Canonical Artifacts & Templates
 
-#### **Agent Charter (one per service line)**
+#### Agent Charter (one per service line)
 
 - Purpose & scope; success criteria; forbidden behaviors
 - Inputs/outputs; tool permissions; data access levels
@@ -1225,7 +1223,7 @@ The Intelligence Inversion rewires the production function: **compute‑plus‑o
 - Escalation matrix; rollback conditions; incident contacts
 - Logging & retention; PII handling; disclosure text
 
-#### **Verifier Specification**
+#### Verifier Specification
 
 - Property to test; oracle/ground truth source
 - Test method (rules, secondary‑model, statistical)
@@ -1233,13 +1231,13 @@ The Intelligence Inversion rewires the production function: **compute‑plus‑o
 - Coverage target and sampling plan
 - Failure handling (block, degrade, escalate)
 
-#### **Tool Contract**
+#### Tool Contract
 
 - Function schema; idempotency; auth method
 - Rate limits; policy checks; side‑effects
 - Error taxonomy; retries/backoff; audit fields
 
-#### **Model/Agent Card**
+#### Model/Agent Card
 
 - Intended use; domains; evals (public links)
 - Known limitations/hazards; update schedule
@@ -1247,7 +1245,7 @@ The Intelligence Inversion rewires the production function: **compute‑plus‑o
 - Energy estimates per task; carbon disclosures
 - Safety test results; red‑team findings
 
-#### **Incident Runbook**
+#### Incident Runbook
 
 - Trigger conditions; triage steps; communications
 - Kill‑switches; containment; forensic capture
@@ -1325,7 +1323,7 @@ A 1,000‑day transition is feasible when organizations operationalize four disc
 
 ### What success (or failure) will look like—falsifiable claims
 
-To prevent hand‑waving, progress in the intelligence economy must be evidenced by **public, disprovable** signals. The following claims are designed to be tested within ~1,000 days (by **August 2028**), using the metrics defined in Sections 3–5.
+To prevent hand‑waving, progress in the intelligence economy must be evidenced by **public, disprovable** signals. The following claims are designed to be tested within ~1,000 days (by **August 2028**), using the metrics defined in this paper.
 
 1. **Agent Autonomy at Scale.**
    In at least three large service domains (e.g., customer support, coding assistance for maintenance tasks, claims adjudication), production deployments will achieve:
@@ -1357,55 +1355,55 @@ If a domain fails to meet these thresholds under comparable compute access and g
 
 ### Research agenda (workstreams and objectives)
 
-#### **W1 — Verification Science & EvalOps**
+#### W1 — Verification Science & EvalOps
 
 - *Goal:* Raise verification coverage and sharpen escape‑rate estimates.
 - *Work:* Property‑based tests; oracle construction; secondary‑model verifiers; statistical acceptance sampling; confidence‑calibrated routing.
 - *Deliverables:* Open verifier libraries and measurement protocols per domain; “eval‑as‑code” CI pipelines.
 
-#### **W2 — Long‑Horizon Planning & Reliability**
+#### W2 — Long‑Horizon Planning & Reliability
 
 - *Goal:* Improve multi‑step correctness with tools and memory.
 - *Work:* Planner policies; decomposition heuristics; rollback semantics; speculative execution with human‑boundaries; memory governance.
 - *Deliverables:* Reference planners; error taxonomies; rollback templates; memory retention/forgetting policies.
 
-#### **W3 — Manipulation & Persuasion Defense**
+#### W3 — Manipulation & Persuasion Defense
 
 - *Goal:* Detect and mitigate affective manipulation in language/voice.
 - *Work:* Prosody and timing features; persuasion scoring; user‑set risk knobs; A/B studies on welfare outcomes vs. engagement.
 - *Deliverables:* Manipulation classifiers; red‑team playbooks; disclosure UX patterns; welfare‑aligned optimization strategies.
 
-#### **W4 — Provenance, Poisoning, and Data Contracts**
+#### W4 — Provenance, Poisoning, and Data Contracts
 
 - *Goal:* Ensure lawful and robust data use.
 - *Work:* Lineage capture; licensing enforcement; poisoning detection/remediation; retrieval quarantine policies.
 - *Deliverables:* Provenance scores; dataset SBOMs; poisoning benchmarks and mitigations.
 
-#### **W5 — Agent Identity, Policy, and Least‑Privilege**
+#### W5 — Agent Identity, Policy, and Least‑Privilege
 
 - *Goal:* Treat agents as principals with enforceable policies.
 - *Work:* AuthN/Z patterns; scoped credentials; just‑in‑time privilege elevation; policy‑aware tool wrappers.
 - *Deliverables:* Agent identity standard; policy enforcement middleware; audit‑ready tool contracts.
 
-#### **W6 — Socioeconomic Measurement & Distribution**
+#### W6 — Socioeconomic Measurement & Distribution
 
 - *Goal:* Track macro shifts and design counterweights.
 - *Work:* Labor‑to‑Compute Ratio; Compute Balance of Trade; attention/trust indices; cohort outcomes; impact of service credits.
 - *Deliverables:* Public dashboards; policy triggers; experimental designs for entitlement schemes.
 
-#### **W7 — Energy‑Compute Optimization & Heat Reuse**
+#### W7 — Energy‑Compute Optimization & Heat Reuse
 
 - *Goal:* Reduce cost and carbon per verified outcome.
 - *Work:* Workload shifting to low‑cost windows; thermal co‑location; waste‑heat reuse; latency vs. energy trade‑offs.
 - *Deliverables:* Scheduling policies; facility siting guides; energy disclosures per service.
 
-#### **W8 — Law, Liability, and Algorithmic Organizational Forms**
+#### W8 — Law, Liability, and Algorithmic Organizational Forms
 
 - *Goal:* Align accountability with autonomy.
 - *Work:* Allocation of liability across model/tool/deployer; performance bonds; safe harbors tied to verification; shutdown procedures.
 - *Deliverables:* Model/agent card templates; reference liability clauses; regulator‑ready audit packs.
 
-#### **W9 — Human Flourishing Metrics**
+#### W9 — Human Flourishing Metrics
 
 - *Goal:* Make welfare measurable.
 - *Work:* Time‑use gains (care, education, community); outcome‑adjusted pricing; trust repair capacity; dignity and autonomy measures.
@@ -1413,22 +1411,22 @@ If a domain fails to meet these thresholds under comparable compute access and g
 
 ### Testbeds and methods (how to learn fast)
 
-#### **Enterprise Agentic Testbeds** (claims, support, codemods)
+#### Enterprise Agentic Testbeds (claims, support, codemods)
 
 - Side‑by‑side execution: human‑primary vs. agent‑primary with identical verifiers.
 - Metrics: autonomy, escape rate, cost per verified outcome, MTTR, customer trust deltas.
-- Pre‑committed promotion thresholds (Section 5.7).
+- Pre‑committed promotion thresholds.
 
-#### **Manipulation Sandboxes**
+#### Manipulation Sandboxes
 
 - Controlled experiments varying voice, timing, and phrasing.
 - Outcomes: changes in consent quality, comprehension, and welfare proxies; false‑positive/negative rates of manipulation classifiers.
 
-#### **Poisoning and Drift Challenges**
+#### Poisoning and Drift Challenges
 
 - Periodically release contaminated corpora; measure detection time, containment efficacy, and post‑mortem remediation.
 
-#### **Portability Bake‑Offs**
+#### Portability Bake‑Offs
 
 - Execute identical workflows across multiple providers via capability interfaces; report outcome deltas, latency, and cost.
 
@@ -1505,13 +1503,13 @@ We model flourishing as a composite function over four forms of capital:
 
 In an economy where cognition is abundant, **discretionary time** becomes the principal private good and **coordinated time** the principal public good.
 
-#### **Time metrics**
+#### Time metrics
 
 - **Time Dividend** \((T_{\Delta})\) — hours per person per week shifted from mandatory labor/administration to discretionary use.
 - **Coordinated Time Index (CTI)** — fraction of civic services delivered at the user’s *first available time*, not the provider’s convenience.
 - **Work-to-Flourish Ratio (WFR)** — time spent on paid tasks vs. time in care, education, community, and rest.
 
-#### **Design rules**
+#### Design rules
 
 - Every agentic workflow must publish **time-to-outcome** alongside cost.
 - Public programs target \(T_{\Delta} \geq 5\) hours/week for median households within 24 months, using UPAIs to remove administrative burdens (benefits, taxes, scheduling).
@@ -1521,19 +1519,19 @@ In an economy where cognition is abundant, **discretionary time** becomes the pr
 
 **Objective.** Replace seat‑time proxies with **verified mastery** and **transfer** (the ability to apply knowledge across contexts).
 
-#### **Components**
+#### Components
 
 - **Personal Learning Plans** delivered by Universal Personal AIs with privacy‑preserving local memory.
-- **Mastery Verifiers**: open, domain‑specific evaluators that check understanding and application—integrated into Section 4’s verification layer.
+- **Mastery Verifiers**: open, domain‑specific evaluators that check understanding and application—integrated into the verification layer.
 - **Mastery Transcript**: a portable, machine‑readable record of verified competencies (not grades), signed by accredited verifiers.
 
-#### **Operating norms**
+#### Operating norms
 
 - **Teacher‑on‑the‑loop**: agents tutor and assess; teachers orchestrate, diagnose misconceptions, and manage motivation and inclusion.
 - **Exposure guarantees**: curricular schedules allocate protected, agent‑free time to collaborative projects, arts, physical play, and service.
 - **Equity guardrails**: audited parity in access to UPAIs, bandwidth, and learning verifiers; accommodation for offline/voice access.
 
-#### **KPIs**
+#### KPIs
 
 - Learning gains per \$100; mastery persistence (re‑test at 90 days); transfer scores on novel problems; attendance and engagement without manipulation.
 
@@ -1541,18 +1539,18 @@ In an economy where cognition is abundant, **discretionary time** becomes the pr
 
 **Problem.** As intelligence becomes cheap, **persuasion capacity** grows faster than human defenses, risking wireheading and polarization.
 
-#### **Architecture**
+#### Architecture
 
 - **Attention Charter**: binding commitments for products that deploy persuasive optimization—disclosure, manipulation budgets, and user‑set “risk knobs.”
 - **Provenance & Context**: cryptographic provenance and human‑readable source capsules embedded in media.
 - **Deliberation Spaces**: moderated, agent‑assisted forums with verifiable rules of evidence and argument; identity‑verified participation without doxxing.
 
-#### **Operating norms**
+#### Operating norms
 
 - **No dark patterns** in agent interactions; persuasion analysis runs inline and throttles output if risk exceeds thresholds.
 - **Child protections**: stricter caps on valence‑manipulation, memory retention, and engagement loops; human‑only escalation for sensitive topics.
 
-#### **KPIs**
+#### KPIs
 
 - Manipulation flag rates; comprehension and consent quality; cross‑cutting exposure indices; trust and civility in deliberation spaces.
 
@@ -1560,13 +1558,13 @@ In an economy where cognition is abundant, **discretionary time** becomes the pr
 
 **Objective.** Give people control over their digital selves while enabling continuity of care, learning, and services.
 
-#### **Rules**
+#### Rules
 
 - **Identity binding**: strong, revocable ties between UPAIs and legal identity; support for pseudonymous contexts where lawful and appropriate.
 - **Memory governance**: default minimization; tiered retention; explicit rites of passage (e.g., coming‑of‑age memory reset options).
 - **Posthumous policies**: consented handling of models trained on a person’s voice/text; restrictions on simulated interactions without clear disclosure.
 
-#### **Controls**
+#### Controls
 
 - Local‑first storage where feasible; encrypted sync; audit‑ready access logs; “forget me” operations that propagate through caches and retrievers with proofs.
 
@@ -1574,24 +1572,24 @@ In an economy where cognition is abundant, **discretionary time** becomes the pr
 
 **Objective.** Ensure that agents handling affect do not exploit, coerce, or erode autonomy.
 
-#### **Valence safety kit**
+#### Valence safety kit
 
 - **Emotional rate limiter**: bounds frequency and intensity of affective outputs.
 - **Contextual consent**: higher thresholds for affect in contexts of dependency (health, finance, child interactions).
 - **Second‑opinion triggers**: sensitive recommendations automatically present alternatives and invite human review.
 
-#### **KPIs**
+#### KPIs
 
 - Rates of undue influence findings; appeal acceptance rates; well‑being deltas associated with agent interactions.
 
 ### Institutional roles and governance
 
-#### **Boards and executives**
+#### Boards and executives
 
 - Establish **Flourishing Objectives** alongside financial targets; publish **Flourishing Balance Sheets**.
 - Seat a **Responsibility & Outcomes Committee** with authority over agent deployment, safety, and user appeals.
 
-#### **Standards bodies**
+#### Standards bodies
 
 - Codify **Agent Identity & Policy** (AIP), **Verifier Interchange**, and **Provenance** standards; maintain conformance test suites.
 
@@ -1611,7 +1609,7 @@ A standardized report that sits beside financials:
 | **Sustainability** | Energy/carbon per verified outcome                  | ↓ YoY                    |
 | **Safety**         | Escape rate; Severity‑1 MTTR                        | ≤0.5%; ≤2h               |
 
-All metrics must be auditable and tied to verifiers described in Section 4.
+All metrics must be auditable and tied to verifiers.
 
 ### Failure modes and countermeasures
 
@@ -1639,7 +1637,7 @@ All metrics must be auditable and tied to verifiers described in Section 4.
 
 Intelligence abundance can produce either a **thin optimization** of clicks and costs or a **thick settlement** that expands capability, belonging, and time. The human‑flourishing architecture presented here adds the missing layer: principles, norms, and measurements that keep the economic and technical stack aimed at **dignity, agency, and community**. By treating **time** as the binding constraint, **trust** as a design variable, and **relationships** as infrastructure—not externalities—institutions can convert the intelligence inversion into a broad‑based advance in human welfare.
 
-## **Glossary of the Intelligence Economy White Paper**
+## Glossary of the Intelligence Economy White Paper
 
 - **A**
   - **Agent** — An autonomous software entity that can *observe, orient, decide, act, verify,* and *self-evaluate* across multi-step workflows, using tools, memory, and evaluators to execute economically valuable tasks.
@@ -1758,7 +1756,7 @@ Intelligence abundance can produce either a **thin optimization** of clicks and 
 - **X–Z**
   - **Zero-Sum vs. Positive-Sum Intelligence** — A framing distinction: *zero-sum* AI extracts attention and profit; *positive-sum* AI expands human capability and welfare through alignment and verification.
 
-## **Abbreviations**
+## Abbreviations
 
 | Acronym | Meaning                             |
 |---------|-------------------------------------|
