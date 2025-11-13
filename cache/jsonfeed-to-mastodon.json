@@ -3119,7 +3119,7 @@
     "summary": "AI-only companies are arriving faster than most realize. As machines learn to work without rest, leaders must prepare to compete, partner, and preserve what makes our work—and humanity—enduring.",
     "content_text": "AI-only companies are arriving faster than most realize. As machines learn to work without rest, leaders must prepare to compete, partner, and preserve what makes our work—and humanity—enduring. https://tedt.org/When-the-Machines-Dont-Sleep/",
     "url": "https://tedt.org/When-the-Machines-Dont-Sleep/",
-    "image": "https://tedt.org/images/posts/when-the-machines-dont-sleep.webp",
+    "image": "https://tedt.org/img/2025-10/When-the-Machines-Dont-Sleep.webp",
     "tags": [
       "ai-only firms",
       "agentic ai",
@@ -3144,5 +3144,47 @@
       "https://tschopp.net/users/Ted/statuses/115443575836243219"
     ],
     "lastTootTimestamp": 1761529172441
+  },
+  "https://tedt.org/2025-11-13-The-Intelligence-Inversion/": {
+    "id": "/2025-11-13-The-Intelligence-Inversion/",
+    "title": null,
+    "summary": "",
+    "content_text": "The Intelligence Inversion: What the First 1,000 Days of Generative AI Taught the Large Enterprise – and How to Run the Next 1,000  How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises.  White PaperDate: November 2025Audience: Board, C‑Suite, and Enterprise Architecture / Transformation LeadersScope: Large Enterprises operating intelligence … https://tedt.org/2025-11-13-The-Intelligence-Inversion/",
+    "url": "https://tedt.org/2025-11-13-The-Intelligence-Inversion/",
+    "date_published": "2025-11-13T05:10:56-08:00",
+    "date_modified": "2025-11-13T05:10:56-08:00",
+    "author": {
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/",
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "givenname": "Ted",
+      "familyname": "Tschopp",
+      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
+      "biography": [
+        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
+        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
+        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
+      ],
+      "email": "ted@tschopp.org",
+      "phonenumber": null,
+      "keybaseio_username": "tedtschopp",
+      "twitter_username": "TedTschopp",
+      "github_username": "TedTschopp",
+      "linkedin_username": "tedtschopp",
+      "facebook_username": "ted.tschopp",
+      "google_username": "TedTschopp",
+      "youtube_username": "TedTschopp",
+      "pinterest_username": "TedTschopp",
+      "reddit_username": "tedtschopp",
+      "instagram_username": "tedtschopp",
+      "quora_username": "Ted-Tschopp",
+      "indiewebcamp_username": "Www.tedt.org",
+      "mastodon_username": "TedT@twit.social",
+      "threads_username": "tedtschopp"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115542583095982804"
+    ],
+    "lastTootTimestamp": 1763039903306
   }
 }
