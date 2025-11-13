@@ -1,14 +1,13 @@
 ---
 layout: post
 
-title: “The Intelligence Inversion - The First 1,000 Days of Enterprise AI”
-subtitle: “How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises”
-quote: “The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business  strategy, and user trust**”
-excerpt: “A comprehensive white paper on how agentic AI, compute-as-capital, and verification-first engineering are transforming cost, risk, and operating models in large enterprises—and what leaders must do in the next 1,000 days.”
-source: “Original Content”
-source-url: “”
-call-to-action: “Discuss on Mastodon”
-
+title: The Intelligence Inversion - The First 1,000 Days of Enterprise AI
+subtitle: How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises
+quote: The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business  strategy, and user trust**
+excerpt: A comprehensive white paper on how agentic AI, compute-as-capital, and verification-first engineering are transforming cost, risk, and operating models in large enterprises—and what leaders must do in the next 1,000 days.
+source: Original Content
+source-url: ""
+call-to-action: Discuss on Mastodon
 date: 2025-11-13 04:00:00 -0800
 update: 2025-11-13 04:00:00 -0800
 
@@ -24,9 +23,9 @@ bullets:
 - Verification coverage and escape rate emerged as the gating metrics.
 - Human labor rebundled toward trust, policy, responsibility, and exception handling.
 
-description: “A full-spectrum white paper analyzing the first 1,000 days of generative AI in the enterprise, detailing how agentic systems, verification-first engineering, compute strategy, governance, and human-flourishing architecture are transforming cost structures, operating models, and leadership agendas for large organizations.”
+description: "A full-spectrum white paper analyzing the first 1,000 days of generative AI in the enterprise, detailing how agentic systems, verification-first engineering, compute strategy, governance, and human-flourishing architecture are transforming cost structures, operating models, and leadership agendas for large organizations."
 
-seo-description: “White paper on the first 1,000 days of enterprise AI—verification-first agents, compute strategy, risk, and trust—and how large organizations must navigate the next 1,000 days.”
+seo-description: "White paper on the first 1,000 days of enterprise AI—verification-first agents, compute strategy, risk, and trust—and how large organizations must navigate the next 1,000 days."
 
 categories:
 - AI
@@ -77,16 +76,9 @@ mathjax: true
 
 ---
 
-<figure>
-  <blockquote class="blockquote" markdown="1">
-The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business strategy, and user trust**.
-  </blockquote>
-  <figcaption class="blockquote-footer" markdown="1">
-Ted Tschopp in a Talk on <cite title="The Next 1,000 Days">The Next 1,000 Days</cite>
-  </figcaption>
-</figure>
-
 ## Executive Summary
+
+The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business strategy, and user trust**.
 
 ### Bottom Line Up Front
 
