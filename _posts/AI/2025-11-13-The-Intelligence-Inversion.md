@@ -1,9 +1,10 @@
 ---
 layout: post
+math: true
 
 title: The Intelligence Inversion - The First 1,000 Days of Enterprise AI
 subtitle: How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises
-quote: The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, businessstrategy, and user trust**
+quote: The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business strategy, and user trust**
 excerpt: A comprehensive white paper on how agentic AI, compute-as-capital, and verification-first engineering are transforming cost, risk, and operating models in large enterprises—and what leaders must do in the next 1,000 days.
 source: Original Content
 source-url: ""

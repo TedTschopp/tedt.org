@@ -23,7 +23,12 @@ body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
   .navbar.navbar-expand-lg .navbar-toggler { display: none !important; }
 }
 
-.navbar.sticky-top { z-index: 1030; } /* above typical content; slightly below modals (Bootstrap uses 1030 for fixed navs) */
+/* Use a CSS variable for nav height for easy tuning */
+:root { --nav-height: 70px; }
+
+/* Ensure both sticky and fixed navbars sit above content */
+.navbar.sticky-top,
+.navbar.fixed-top { z-index: 1030; } /* slightly below modals */
 
 .navbar .collapse.navbar-collapse { position: relative; z-index: 1025; }
 .navbar .collapse.navbar-collapse.show {
@@ -39,37 +44,53 @@ body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
 /* Ensure dropdown menus within expanded mobile panel appear above the panel itself */
 .navbar .dropdown-menu { z-index: 1050; }
 
-.navbar.sticky-top {
-  height: 70px;
-  min-height: 70px;
+/* Normalize height & alignment for sticky and fixed variants */
+.navbar.sticky-top,
+.navbar.fixed-top {
+  height: var(--nav-height);
+  min-height: var(--nav-height);
   display: flex;
   align-items: center;
 }
 
-.navbar.sticky-top > .container-fluid { height: 100%; display:flex; align-items:center; }
+.navbar.sticky-top > .container-fluid,
+.navbar.fixed-top > .container-fluid { height: 100%; display:flex; align-items:center; }
 
-/* Brand & controls vertically centered inside the 70px bar */
+/* Brand & controls vertically centered inside the nav bar */
 .navbar.sticky-top .navbar-brand,
+.navbar.fixed-top .navbar-brand,
 .navbar.sticky-top .navbar-toggler,
+.navbar.fixed-top .navbar-toggler,
 .navbar.sticky-top .navbar-nav > li > .nav-link,
+.navbar.fixed-top .navbar-nav > li > .nav-link,
 .navbar.sticky-top .navbar-nav > li > button.nav-link,
-.navbar.sticky-top .navbar-nav > li > button.menu-item {
+.navbar.fixed-top .navbar-nav > li > button.nav-link,
+.navbar.sticky-top .navbar-nav > li > button.menu-item,
+.navbar.fixed-top .navbar-nav > li > button.menu-item {
   display: flex;
   align-items: center;
-  height: 70px; /* match bar */
+  height: var(--nav-height); /* match bar */
   padding-top: 0;
   padding-bottom: 0;
 }
 
 /* Brand mark sizing (kept below full bar height for optical breathing room) */
-.navbar.sticky-top .navbar-brand img {
+.navbar.sticky-top .navbar-brand img,
+.navbar.fixed-top  .navbar-brand img {
   height: 64px;
   width: auto;
   display: block;
 }
 
 /* Prevent accidental shrink if utility classes applied */
-.navbar.sticky-top .navbar-nav > li { display:flex; align-items:center; }
+.navbar.sticky-top .navbar-nav > li,
+.navbar.fixed-top  .navbar-nav > li { display:flex; align-items:center; }
+
+/* Offset page content to avoid overlap with fixed navbar; keep scroll anchoring accurate */
+body {
+  padding-top: var(--nav-height);
+  scroll-padding-top: var(--nav-height);
+}
 
 /* --- Beta / Experimental Feature Indicators ---------------------------------------
    Purpose: Provide a lightweight, accessible visual marker for navigation items that
