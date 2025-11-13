@@ -73,6 +73,8 @@ image_height: 816
 
 mastodon-post-id:
 
+mathjax: TRUE
+
 ---
 
 ## Summary
