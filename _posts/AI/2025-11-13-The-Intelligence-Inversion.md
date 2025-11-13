@@ -2,8 +2,8 @@
 layout: post
 
 title: “The Intelligence Inversion - The First 1,000 Days of Enterprise AI”
-subtitle: “How verification-first agents, compute strategy, and trust are reshaping the large enterprise”
-quote: “The first 1,000 days validated the direction; the next 1,000 will be won on verification economics, compute strategy, and trust.”
+subtitle: “How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises”
+quote: “The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business  strategy, and user trust**”
 excerpt: “A comprehensive white paper on how agentic AI, compute-as-capital, and verification-first engineering are transforming cost, risk, and operating models in large enterprises—and what leaders must do in the next 1,000 days.”
 source: “Original Content”
 source-url: “”
@@ -1487,7 +1487,7 @@ The intelligence inversion is not a single bet on faster models; it is a **testa
 
 ### First principles
 
-The arrival of abundant machine intelligence reorders scarcity. Cognitive output becomes cheap; **attention, trust, time, and meaning** remain scarce. A durable settlement must optimize for human flourishing rather than raw task completion.
+The arrival of abundant machine intelligence reorders scarcity.  The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business  strategy, and user trust**.  Cognitive output becomes cheap; **attention, trust, time, and meaning** remain scarce. A durable settlement must optimize for human flourishing rather than raw task completion.
 
 We model flourishing as a composite function over four forms of capital:
 
