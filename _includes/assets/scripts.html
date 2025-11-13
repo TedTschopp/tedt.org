@@ -15,7 +15,7 @@
         when `page.math` or `page.mathjax` is truthy. Loading v2 here caused duplicate engine
         initialization and prevented reliable rendering. See accessibility & performance guidelines.
     {%- endcomment -%}
-    {# Intentionally no direct MathJax script tag here; rely on centralized include in layout. #}
+    {%- comment -%} Intentionally no direct MathJax script tag here; rely on centralized include in layout (MathJax v3 loaded conditionally via assets/mathjax.html in post layout). {%- endcomment -%}
 
     {% if mf-location == true %}
     <!-- Leaflet Open Street Maps -->
