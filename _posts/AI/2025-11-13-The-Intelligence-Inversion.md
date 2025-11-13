@@ -77,10 +77,13 @@ mathjax: true
 
 ---
 
+> The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business  strategy, and user trust**.
+
 ## Executive Summary
 
 ### Bottom Line Up Front
 
+- **The first 1,000 days of AI** Since ChatGPT launched on **Nov 30, 2022**, enterprises moved from copilots to **verification‑first agents**. Costs fell (e.g., **mini‑class models at ~\$0.15 per 1M input tokens**), enabling <\$1/day “digital worker‑day” at ~1M tokens/day; adoption crossed the majority threshold by mid‑2024.
 - **Compete on verification, not hype.** Tie every AI claim to *cost per verified outcome, autonomy, escape, MTTR,* and *portability*.
 - **Rewire the enterprise.** Stand up AgentOps; hire evaluator engineers; contract for diversified compute and energy; instrument your workflows.
 - **Lead on trust.** Manipulation defenses, provenance, disclosure, and appeals protect the brand and pre‑empt regulation.
