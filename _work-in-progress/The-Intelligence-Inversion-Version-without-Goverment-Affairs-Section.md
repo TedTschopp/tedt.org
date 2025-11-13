@@ -1423,7 +1423,7 @@ The intelligence inversion is not a single bet on faster models; it is a **testa
 
 ### First principles
 
-The arrival of abundant machine intelligence reorders scarcity. Cognitive output becomes cheap; **attention, trust, time, and meaning** remain scarce. A durable settlement must optimize for human flourishing rather than raw task completion.
+The arrival of abundant machine intelligence reorders scarcity.  The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business  strategy, and user trust**.  Cognitive output becomes cheap; **attention, trust, time, and meaning** remain scarce. A durable settlement must optimize for human flourishing rather than raw task completion.
 
 We model flourishing as a composite function over four forms of capital:
 
