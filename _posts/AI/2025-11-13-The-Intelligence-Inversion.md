@@ -44,7 +44,7 @@ tags:
 - energy
 - strategy
 
-keywords:
+keywords: 
 - enterprise AI
 - intelligence inversion
 - agentic workflows
@@ -308,6 +308,8 @@ The exact numbers are less important than the order of magnitude:
 This is the unconscious **token budget** your workforce burns today, unmanaged.
 
 ### Context Windows: How Many “Days of You” Fit in a Model?
+
+**Table – Model Context Window Growth (Human Speech/Thought Equivalents).**
 
 The **context window** is the model’s working memory: how many tokens it can consider at once.
 

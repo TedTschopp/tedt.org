@@ -74,9 +74,15 @@
 <meta name="abstract" content="{{ site.name }}">
 
   {% if page.keywords %}
-      <meta name="keywords" content="{{ page.keywords }}">
+    {%- comment -%}
+      Normalize page keywords output: always join with a comma+space for consistency.
+      If page.keywords is an array, join produces proper CSV. If it is already a scalar
+      string (as in current post), Liquid's join is a no-op. User requested explicit
+      {{ page.keywords | join: ', ' }} usage for uniform SEO delimiter behavior.
+    {%- endcomment -%}
+    <meta name="keywords" content="{{ page.keywords | join: ', ' }}">
   {% else %}
-      <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
+    <meta name="keywords" content="{{ site.keywords | join: ', ' }}">
   {% endif %}
 
 {% comment %} Open Graph logic unified {% endcomment %}
