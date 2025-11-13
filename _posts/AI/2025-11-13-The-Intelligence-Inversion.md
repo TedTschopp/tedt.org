@@ -324,6 +324,7 @@ Over the first 1,000 days of generative AI, this expanded from **less than a mee
 | GPT‑5‑Standard | 128,000               | ~96,000       | ~4.8 days               | ~2.4 days (57.6 hours)    |
 | GPT‑5‑Pro      | 196,000               | ~147,000      | ~7.35 days              | ~3.6 days (86.4 hours)    |
 | GPT‑5‑API      | 400,000               | ~300,000      | ~15 days                | ~7.2 days (172.8 hours)   |
+{: .table .table-striped .table-hover}
 
 *Assuming the lower end of the “thought rate” band.
 
@@ -1014,6 +1015,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 | **Model Risk Manager / Validator (FSI)**                | Independent model validation per SR 11‑7/ECB TRIM‑like frameworks.                                                                                                                                                                                              | **Model Risk Lead**                                                                                                         | Extends validation to agent workflows: intended use, limitations, off‑label prohibitions, scenario tests, and rollback readiness.                                                                                                                                   | Verification Engineer                                                                        |
 | **Internal Audit (IT/Model)**                           | Independent assurance; control effectiveness.                                                                                                                                                                                                                   | **Model Risk Lead**                                                                                                         | Sets evidence requirements (evals, logs, lineage) and challenge function for agentized lines.                                                                                                                                                                       | —                                                                                            |
 | **Support Ops (L1/L2)**                                 | Triage, playbooks, escalations.                                                                                                                                                                                                                                 | **Agent SRE/Observer**                                                                                                      | Operates incident taxonomy for agents; tunes fallbacks/blacklists; manages escalation ratios.                                                                                                                                                                       | Prompt & Policy Engineer                                                                     |
+{: .table .table-striped .table-hover}
 
 #### New role “cards”
 
@@ -1321,6 +1323,7 @@ Activate workforce transition measures in a sector when:
 | **Regulatory whiplash**      | Rapid policy shifts               | Sandboxes; compliance feature flags; policy watch cadences       |
 | **Compute shocks**           | Capacity/price volatility         | Multi‑region hedging; on‑prem reserves; workload portability     |
 | **Cohort scarring**          | Entry‑level pathways collapse     | Apprenticeships; exception roles; credentialed sign‑off tracks   |
+{: .table .table-striped .table-hover}
 
 ### Success Criteria (end‑state indicators)
 
@@ -1647,6 +1650,7 @@ All metrics must be auditable and tied to verifiers described in Section 4.
 | **Liability Ambiguity**                              | Responsibility unclear when AI errors cause harm.                                          | Map accountability per workflow (model vendor, deployer, tool owner); define **safe harbors** and **strict liability zones** in contracts.                                           |
 | **Civic / ESG Backlash**                             | Perception that AI harms communities, jobs, or environment.                                | Publish **Flourishing Balance Sheet** and **energy/carbon metrics**; invest in civic AI pilots that demonstrate public benefit.                                                      |
 | **Skill Atrophy / Human Out-of-the-Loop**            | Staff lose domain expertise due to automation.                                             | Implement **shadow mode rotations**; require periodic human audit samples; maintain cross-training programs.                                                                         |
+{: .table .table-striped .table-hover}
 
 ### Human‑Flourishing Architecture: Aligning Abundant Cognition with Trust & Time
 
@@ -1818,6 +1822,7 @@ Intelligence abundance can produce either a **thin optimization** of clicks and 
 | TΔ      | Time Dividend                       |
 | UPAI    | Universal Personal AI               |
 | VCR     | Verifier Coverage Ratio             |
+{: .table .table-striped .table-hover}
 
 ## Appendix A — Impact by Role Type (indicative)
 
@@ -1828,6 +1833,7 @@ Intelligence abundance can produce either a **thin optimization** of clicks and 
 | Regulated professional (finance, legal, clinical)                      | **Co‑pilot + verification** gains                       | Progressive **delegation** with strong verifiers              | Guardrails, provenance, liability frameworks               |
 | Care, education, public sector field work                              | Assistive agents; slower substitution                   | Mix of human‑led service **plus** agents                      | Augmented capacity; human‑trust emphasis                   |
 | Management                                                             | Shift to **agent portfolios** and outcome orchestration | Fewer middle layers; **narrower spans** with better telemetry | Retrain toward metrics design, exception handling          |
+{: .table .table-striped .table-hover}
 
 ## Appendix B — 90‑Day Action Checklist
 
