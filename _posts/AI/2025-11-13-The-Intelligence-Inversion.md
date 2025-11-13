@@ -20,7 +20,7 @@ author:
 bullets:
 - Enterprise AI shifted from copilots to verification-first autonomous agents.
 - Compute and energy strategy became decisive capital drivers.
-- Quality-adjusted unit costs fell 60%+ in agent-ready domains.
+- Quality-adjusted unit costs fell ≥60% in agent-ready domains.
 - Verification coverage and escape rate emerged as the gating metrics.
 - Human labor rebundled toward trust, policy, responsibility, and exception handling.
 
@@ -73,16 +73,16 @@ image_height: 816
 
 mastodon-post-id:
 
-mathjax: TRUE
+mathjax: true
 
 ---
 
 ## Summary
 
 - **Scorecard, first 1,000 days.** Since ChatGPT launched on **Nov 30, 2022**, enterprises moved from copilots to **verification‑first agents**. Costs fell (e.g., **mini‑class models at ~\$0.15 per 1M input tokens**), enabling <\$1/day “digital worker‑day” at ~1M tokens/day; adoption crossed the majority threshold by mid‑2024.
-- **Core thesis (Intelligence Inversion) holds.** The **marginal value of average cognitive labor** continues to fall toward **≈\$0**, and in latency‑sensitive workflows can be **negative** once agents + verifiers clear quality bars.
+- **Core thesis (Intelligence Inversion) holds.** The **marginal value of average cognitive labor** continues to fall toward **≈$0**, and in latency‑sensitive workflows can be **negative** once agents + verifiers clear quality bars.
 - **From copilots to agents.** Planning, tool use, and **self‑verification** moved from research to production; the limiting reagent is **verifier coverage**, not model IQ.
-- **Cost curve collapse.** **Quality‑adjusted unit costs ↓ 60%+** and **cycle times ↓ 50%+** in agent‑addressable domains when promotion gates (≥95% coverage, ≤0.5% escape) are enforced.
+- **Cost curve collapse.** **Quality‑adjusted unit costs ↓ ≥60%** and **cycle times ↓ ≥50%** in agent‑addressable domains when promotion gates (≥95% coverage, ≤0.5% escape) are enforced.
 - **Capital redefined.** **Compute + orchestration** are the decisive capital stock. High‑density, **liquid‑cooled** racks (~**120 kW/rack**) and **24/7 CFE** portfolios became board‑level decisions. 
 - **Labor markets.** Hiring **pauses** arrived before substitution; early‑career scarring is real. Human work rebundles to **exception handling, policy, and trust**.
 - **Policy & governance matured.** The **EU AI Act** is in force; **NIST AI RMF** underpins enterprise risk programs. Provenance (C2PA) advanced but is not yet universal.
@@ -109,7 +109,7 @@ mathjax: TRUE
 
 **The Intelligence Inversion.** Over the next ~1,000 days (through **August 2028**), general‑purpose AI will move from “smart intern” to **autonomous agents** that plan, act, verify their own work, and handle multi‑step outcomes. Cognitive output becomes **cheap, fast, and scalable with compute**, not headcount. Early signals already visible across routine drafting, tier‑1 support, back‑office adjudication, code maintenance, and complex coordination tasks.
 
-**Economic implication.** For many cognitive workflows, **quality‑adjusted unit costs fall 60%+** and **cycle times drop 50%+** once agents are put in the critical path with robust verification. Hiring pauses arrive first; true substitution follows when verification coverage and tooling mature. Competitive advantage shifts to:
+**Economic implication.** For many cognitive workflows, **quality‑adjusted unit costs fall ≥60%** and **cycle times drop ≥50%** once agents are put in the critical path with robust verification. Hiring pauses arrive first; true substitution follows when verification coverage and tooling mature. Competitive advantage shifts to:
 
 - Access to **compute** and **aligned models**,
 - The ability to **verify** outcomes at scale, and
@@ -243,7 +243,7 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 
 ### What Success Looks Like by August 2028
 
-- **Unit economics:** ≥**60%** reduction in quality‑adjusted unit costs; **50%+** cycle‑time reduction across targeted domains.
+- **Unit economics:** ≥**60%** reduction in quality‑adjusted unit costs; **≥50%** cycle‑time reduction across targeted domains.
 - **Reliability:** **Autonomy ≥70%**, **Verification ≥95%**, **Escape ≤0.5%**, **Sev‑1 MTTR ≤2h**.
 - **Trust & brand:** **Disclosure ≥99%**, appeals ≤**72h**, parity within **±5pp**; manipulation flags trending down.
 - **Resilience:** Multi‑provider portability in production; **ECI ↓ ≥15% YoY**; published provenance/SBOMs.
@@ -406,7 +406,7 @@ Where organizations got the stack right (mini/frontier mix, caching, tools, eval
 
 - **≥60% reductions** in quality‑adjusted unit costs in drafting, L1 support, claims triage, and codemod flows.
 - **≥50% reductions** in cycle time once agents entered the critical path under verification.
-- Token pricing (e.g., GPT‑4o‑mini at **\$0.15/M input** and **\$0.60/M output**) meant ~1M tokens/day cost only **≈\$0.33–\$0.50/day** in pure inference before tools/evals.
+- Token pricing (e.g., GPT‑4o‑mini at **\$0.15/M input** and **\$0.60/M output**) meant ~1M tokens/day cost only **≈$0.33–\$0.50/day** in pure inference before tools/evals.
 
 For CFOs, this was the moment **“cost per verified outcome”** started to replace **FTE hours** as the relevant denominator.
 
@@ -612,7 +612,7 @@ Let **MVL** denote the marginal value of adding (or keeping) a human in a given 
 
 A useful decomposition:
 
-$$[\textbf{MVL} \approx \Delta \text{Output} - \Delta \text{Supervision Cost} - \Delta \text{Error/Variance Cost} - \Delta \text{Coordination Cost} - \Delta \text{Latency Cost}.]$$
+$$\textbf{MVL} \approx \Delta \text{Output} - \Delta \text{Supervision Cost} - \Delta \text{Error/Variance Cost} - \Delta \text{Coordination Cost} - \Delta \text{Latency Cost}.$$
 
 - **ΔOutput**: Incremental quality/quantity from the human.
 - **ΔSupervision Cost**: Extra review, coaching, and prompt/brief cycles required.
