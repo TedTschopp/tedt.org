@@ -75,16 +75,6 @@ mastodon-post-id:
 
 ---
 
-> How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises.
-
-> **White Paper**
-> **Date:** November 2025
-> **Audience:** Board, C‑Suite, and Enterprise Architecture / Transformation Leaders
-> **Scope:** Large Enterprises operating intelligence workflows (e.g., Fortune 500, Global 2000)
-
-> From copilots to verification‑first agents · Compute as capital · Human‑flourishing architecture
-> **Confidential – For Internal Discussion Only. Not for External Distribution Without Approval.**
-
 ## Summary
 
 - **Scorecard, first 1,000 days.** Since ChatGPT launched on **Nov 30, 2022**, enterprises moved from copilots to **verification‑first agents**. Costs fell (e.g., **mini‑class models at ~\$0.15 per 1M input tokens**), enabling <\$1/day “digital worker‑day” at ~1M tokens/day; adoption crossed the majority threshold by mid‑2024.
