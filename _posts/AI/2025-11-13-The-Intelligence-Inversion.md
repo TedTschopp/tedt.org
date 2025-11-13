@@ -1,7 +1,7 @@
 ---
 layout: post
 
-title: “The Intelligence Inversion: The First 1,000 Days of Enterprise AI”
+title: “The Intelligence Inversion - The First 1,000 Days of Enterprise AI”
 subtitle: “How verification-first agents, compute strategy, and trust are reshaping the large enterprise”
 quote: “The first 1,000 days validated the direction; the next 1,000 will be won on verification economics, compute strategy, and trust.”
 excerpt: “A comprehensive white paper on how agentic AI, compute-as-capital, and verification-first engineering are transforming cost, risk, and operating models in large enterprises—and what leaders must do in the next 1,000 days.”
@@ -74,8 +74,6 @@ image_height: 816
 mastodon-post-id:
 
 ---
-
-# The Intelligence Inversion: What the First 1,000 Days of Generative AI Taught the Large Enterprise – and How to Run the Next 1,000
 
 > How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises.
 
