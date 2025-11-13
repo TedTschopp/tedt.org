@@ -77,20 +77,6 @@ mathjax: true
 
 ---
 
-## Summary
-
-- **Scorecard, first 1,000 days.** Since ChatGPT launched on **Nov 30, 2022**, enterprises moved from copilots to **verification‑first agents**. Costs fell (e.g., **mini‑class models at ~\$0.15 per 1M input tokens**), enabling <\$1/day “digital worker‑day” at ~1M tokens/day; adoption crossed the majority threshold by mid‑2024.
-- **Core thesis (Intelligence Inversion) holds.** The **marginal value of average cognitive labor** continues to fall toward **≈$0**, and in latency‑sensitive workflows can be **negative** once agents + verifiers clear quality bars.
-- **From copilots to agents.** Planning, tool use, and **self‑verification** moved from research to production; the limiting reagent is **verifier coverage**, not model IQ.
-- **Cost curve collapse.** **Quality‑adjusted unit costs ↓ ≥60%** and **cycle times ↓ ≥50%** in agent‑addressable domains when promotion gates (≥95% coverage, ≤0.5% escape) are enforced.
-- **Capital redefined.** **Compute + orchestration** are the decisive capital stock. High‑density, **liquid‑cooled** racks (~**120 kW/rack**) and **24/7 CFE** portfolios became board‑level decisions. 
-- **Labor markets.** Hiring **pauses** arrived before substitution; early‑career scarring is real. Human work rebundles to **exception handling, policy, and trust**.
-- **Policy & governance matured.** The **EU AI Act** is in force; **NIST AI RMF** underpins enterprise risk programs. Provenance (C2PA) advanced but is not yet universal.
-- **Risk surface expanded.** Persuasive optimization (“wireheading”), poisoning, compute concentration, and energy constraints are the dominant failure modes.
-- **Strategic response.** Run **AgentOps** and **EvalOps** as core capabilities; contract diversified compute/energy; publish **Energy per Verified Outcome** and a **Flourishing Balance Sheet** next to financials.
-
-> **Bottom line:** The first 1,000 days validated the direction; the **next** 1,000 will be won on **verification economics, compute strategy, and trust**.
-
 ## Executive Summary
 
 ### Bottom Line Up Front
