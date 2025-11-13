@@ -90,10 +90,6 @@ mathjax: true
 - **Invest where it compounds.** Verification libraries, observability, and compute efficiency compound across every use case.
 - **Measure what matters.** Publish the **Flourishing Balance Sheet** next to your financials.
 
-### What Changed—and How Fast
-
-**What changed (Nov 2022 → Aug 2025).** General‑purpose AI moved from “smart intern” to **agentic execution** with programmatic verification. Price/performance improved stepwise (DevDay 2023 cuts; **GPT‑4o** pricing and capabilities in 2024; mini‑class models in 2025), driving production use across support, adjudication, codemods, and structured drafting. Majority enterprise adoption arrived by mid‑2024, with 2025 surveys reporting tangible cost/revenue impact. Regulation hardened (EU AI Act in force; NIST AI RMF mainstreamed). Data‑center energy and **liquid‑cooled high‑density** racks made power and **24/7 CFE** procurement gating layers for scale. 
-
 ### What’s Changing—and How Fast
 
 **The Intelligence Inversion.** Over the next ~1,000 days (through **August 2028**), general‑purpose AI will move from “smart intern” to **autonomous agents** that plan, act, verify their own work, and handle multi‑step outcomes. Cognitive output becomes **cheap, fast, and scalable with compute**, not headcount. Early signals already visible across routine drafting, tier‑1 support, back‑office adjudication, code maintenance, and complex coordination tasks.
@@ -306,13 +302,13 @@ Over the first 1,000 days of generative AI, this expanded from **less than a mee
 
 | Model          | Context Size (tokens) | Approx. Words | Equivalent Human Speech | Equivalent Human Thought* |
 |----------------|-----------------------|---------------|-------------------------|---------------------------|
-| GPT‑1 / GPT‑2  | 2,048                 | ~1,500        | ~0.075 days (1.8 hours) | ~0.03 days (~0.8 hours)   |
-| GPT‑3          | 4,096                 | ~3,000        | ~0.15 days (3.6 hours)  | ~0.07 days (~1.6 hours)   |
-| GPT‑4          | 8,192                 | ~6,000        | ~0.3 days (7.2 hours)   | ~0.13 days (~3.2 hours)   |
-| GPT‑4‑turbo    | 128,000               | ~96,000       | ~4.8 days               | ~2.4 days (57.6 hours)    |
-| GPT‑5‑Standard | 128,000               | ~96,000       | ~4.8 days               | ~2.4 days (57.6 hours)    |
-| GPT‑5‑Pro      | 196,000               | ~147,000      | ~7.35 days              | ~3.6 days (86.4 hours)    |
-| GPT‑5‑API      | 400,000               | ~300,000      | ~15 days                | ~7.2 days (172.8 hours)   |
+| GPT‑1 / GPT‑2  | 2,048                 | ~1,500        | ~1.8 hours              | ~45 minutes               |
+| GPT‑3          | 4,096                 | ~3,000        | ~3.6 hours              | ~1.6 hours                |
+| GPT‑4          | 8,192                 | ~6,000        | ~7.2 hours              | ~3.2 hours                |
+| GPT‑4‑turbo    | 128,000               | ~96,000       | ~4.8 days               | ~2.4 days                 |
+| GPT‑5‑Standard | 128,000               | ~96,000       | ~4.8 days               | ~2.4 days                 |
+| GPT‑5‑Pro      | 196,000               | ~147,000      | ~7.35 days              | ~3.6 days                 |
+| GPT‑5‑API      | 400,000               | ~300,000      | ~15 days                | ~7.2 days                 |
 {: .table .table-striped .table-hover}
 
 *Assuming the lower end of the “thought rate” band.
