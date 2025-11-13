@@ -3186,5 +3186,36 @@
       "https://tschopp.net/users/Ted/statuses/115542583095982804"
     ],
     "lastTootTimestamp": 1763039903306
+  },
+  "https://tedt.org/The-Intelligence-Inversion/": {
+    "id": "/The-Intelligence-Inversion/",
+    "title": "“The Intelligence Inversion - The First 1,000 Days of Enterprise AI”",
+    "summary": "“A comprehensive white paper on how agentic AI, compute-as-capital, and verification-first engineering are transforming cost, risk, and operating models in large enterprises—and what leaders must do in the next 1,000 days.”",
+    "content_text": "“A comprehensive white paper on how agentic AI, compute-as-capital, and verification-first engineering are transforming cost, risk, and operating models in large enterprises—and what leaders must do in the next 1,000 days.” https://tedt.org/The-Intelligence-Inversion/",
+    "url": "https://tedt.org/The-Intelligence-Inversion/",
+    "image": "https://tedt.org/img/2025-11/The-Intelligence-Inversion.webp",
+    "tags": [
+      "enterprise ai",
+      "agents",
+      "verification",
+      "compute",
+      "governance",
+      "risk",
+      "architecture",
+      "economics",
+      "energy",
+      "strategy"
+    ],
+    "date_published": "2025-11-13T04:00:00-08:00",
+    "date_modified": "2025-11-13T04:00:00-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115542863538194963"
+    ],
+    "lastTootTimestamp": 1763044182509
   }
 }
