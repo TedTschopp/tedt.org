@@ -1,6 +1,5 @@
 ---
 layout: post
-math: true
 
 title: The Intelligence Inversion - The First 1,000 Days of Enterprise AI
 subtitle: How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises
@@ -73,7 +72,11 @@ image_height: 816
 
 mastodon-post-id:
 
+math: true
 mathjax: true
+pilcrowVisible: true
+tocArrowsVisible: true
+no_toc: true
 
 ---
 
