@@ -77,13 +77,14 @@ mathjax: true
 
 ---
 
+
 ## Executive Summary
 
 The first 1,000 days of AI validated the a path from science through engineering and into production; the **next** 1,000 will be won on **economics, business strategy, and user trust**.
 
 ### Bottom Line Up Front
 
-- **The first 1,000 days of AI** Since ChatGPT launched on **Nov 30, 2022**, enterprises moved from copilots to **verification‑first agents**. Costs fell (e.g., **mini‑class models at ~\$0.15 per 1M input tokens**), enabling <\$1/day “digital worker‑day” at ~1M tokens/day; adoption crossed the majority threshold by mid‑2024.
+- **The first 1,000 days of AI** Since ChatGPT launched on **Nov 30, 2022**, enterprises moved from copilots to **verification‑first agents**. Costs fell (e.g., **mini‑class models at ≅\$0.15 per 1,000,000 input tokens**), enabling <\$1 a day “digital worker‑day” at ≅1,000,000 tokens a day; adoption crossed the majority threshold by mid‑2024.
 - **Compete on verification, not hype.** Tie every AI claim to *cost per verified outcome, autonomy, escape, MTTR,* and *portability*.
 - **Rewire the enterprise.** Stand up AgentOps; hire evaluator engineers; contract for diversified compute and energy; instrument your workflows.
 - **Lead on trust.** Manipulation defenses, provenance, disclosure, and appeals protect the brand and pre‑empt regulation.
@@ -92,7 +93,7 @@ The first 1,000 days of AI validated the a path from science through engineering
 
 ### What’s Changing—and How Fast
 
-**The Intelligence Inversion.** Over the next ~1,000 days (through **August 2028**), general‑purpose AI will move from “smart intern” to **autonomous agents** that plan, act, verify their own work, and handle multi‑step outcomes. Cognitive output becomes **cheap, fast, and scalable with compute**, not headcount. Early signals already visible across routine drafting, tier‑1 support, back‑office adjudication, code maintenance, and complex coordination tasks.
+**The Intelligence Inversion.** Over the next ≅1,000 days (through **August 2028**), general‑purpose AI will move from “smart intern” to **autonomous agents** that plan, act, verify their own work, and handle multi‑step outcomes. Cognitive output becomes **cheap, fast, and scalable with compute**, not headcount. Early signals already visible across routine drafting, tier‑1 support, back‑office adjudication, code maintenance, and complex coordination tasks.
 
 **Economic implication.** For many cognitive workflows, **quality‑adjusted unit costs fall ≥60%** and **cycle times drop ≥50%** once agents are put in the critical path with robust verification. Hiring pauses arrive first; true substitution follows when verification coverage and tooling mature. Competitive advantage shifts to:
 
@@ -112,20 +113,17 @@ The first 1,000 days of AI validated the a path from science through engineering
 
 Executives should not measure “AI” by model IQ, but by **verified business outcomes**. The operating system for that is:
 
-#### A. Design for Verification From Day One
-
-- **Evaluators/Verifiers** as code: property‑based tests, oracles, statistical acceptance sampling.
-- **Promotion gates**: agents move from shadow to primary only when verifiers hit **≥95% coverage**, **escape rate ≤0.5%**, and the **Autonomy Index ≥70%** for 90 days.
-
-#### B. Safe, Observable Execution
-
-- **Agent identity & policy** (least‑privilege credentials, policy‑aware tool wrappers).
-- **Observability** (structured traces, reason codes).
-- **Kill‑switch & chaos drills** with **MTTR ≤2 hours** for Severity‑1 incidents.
-
-#### C. Portable by Design
-
-- “**Capability interfaces**” between workflow and model provider so identical jobs run on ≥2 stacks with **≤2‑point outcome deltas**. This is your vendor‑risk and bargaining power.
+> **A. Design for Verification From Day One**
+> - **Evaluators/Verifiers** as code: property‑based tests, oracles, statistical acceptance sampling.
+> - **Promotion gates**: agents move from shadow to primary only when verifiers hit **≥95% coverage**, **escape rate ≤0.5%**, and the **Autonomy Index ≥70%** for 90 days.
+> 
+> **B. Safe, Observable Execution**
+> - **Agent identity & policy** (least‑privilege credentials, policy‑aware tool wrappers).
+> - **Observability** (structured traces, reason codes).
+> - **Kill‑switch & chaos drills** with **MTTR ≤2 hours** for Severity‑1 incidents.
+> 
+> **C. Portable by Design**
+> - **Capability interfaces** between workflow and model provider so identical jobs run on ≥2 stacks with **≤2‑point outcome deltas**. This is your vendor‑risk and bargaining power.
 
 #### Board‑Level KPIs
 
@@ -140,7 +138,7 @@ Executives should not measure “AI” by model IQ, but by **verified business o
 Create a **cross‑functional AgentOps function** that sits between product/operations and platform engineering:
 
 - **Roles:** Evaluator engineers, tool‑contract owners, agent SRE/observability, safety & policy engineers, red team.
-- **Process:** Side‑by‑side runs (human‑primary vs. agent‑primary), pre‑committed promotion thresholds, continuous evals, post‑mortems.
+- **Process:** Side‑by‑side runs (human‑primary vs. agent‑primary), pre‑committed promotion thresholds, continuous evaluations, post‑mortems.
 - **Procurement:** Contracts include tool‑contract conformance, provenance, portability trials, energy/carbon disclosures, and service‑level objectives.
 - **Liability & Compliance:** Model/agent cards, dataset SBOMs, audit‑ready logs; explicit allocation of accountability across model, tool, and deployer.
 
@@ -156,7 +154,7 @@ Run the company on **disprovable targets**, not hope:
 - **Portability:** Two critical workflows run across **two providers** with **≤2‑point** outcome spread.
 - **Safety:** **MTTR ≤2h** sustained for Sev‑1; public post‑mortem culture internally.
 
-**Testbeds to stand up:** enterprise claims, support, codemods (side‑by‑side designs); manipulation sandbox (voice, timing, phrasing); poisoning & drift challenges; portability bake‑offs.
+**Testbeds to stand up:** enterprise claims, support, code generation (side‑by‑side designs); manipulation sandbox (voice, timing, phrasing); poisoning & drift challenges; portability bake‑offs.
 
 ### Human Flourishing Is a Business Requirement
 
@@ -164,10 +162,10 @@ As cognition gets cheap, **time, trust, and attention** become the scarce assets
 
 #### Design objectives and metrics
 
-- **Time Dividend (TΔ):** hours/week returned to customers or employees; target **≥5 hours** in 24 months for key journeys (e.g., benefits, claims, onboarding).
+- **Time Dividend (TΔ):** hours a week returned to customers or employees; target **≥5 hours** in 24 months for key journeys (e.g., benefits, claims, onboarding).
 - **Manipulation defense:** active throttling of affective persuasion; **disclosure ≥99%**; child & vulnerable‑context guardrails.
 - **Equity:** redemption/outcome parity **within ±5pp** across demographics; offline/voice access.
-- **Education/Health gains:** learning gains per \$100; time‑to‑treatment; adherence; patient activation—published as **Flourishing Balance Sheet** alongside financials.
+- **Education/Health gains:** learning gains per $100; time‑to‑treatment; adherence; patient activation—published as **Flourishing Balance Sheet** alongside financials.
 
 **Why you care:** These are **brand and regulator “green zones.”** The firms that lead on disclosure, appeals, and parity will set the bar competitors must match.
 
@@ -184,7 +182,7 @@ As cognition gets cheap, **time, trust, and attention** become the scarce assets
 
 **Executives should sponsor:**
 
-- **Compute Sovereignty Ratio (CSR):** domestic (or contracted) civic‑grade compute supply vs. verified demand—keep **0.8–1.2** for resilience without waste.
+- **Compute Sovereignty Ratio (CSR):** domestic (or contracted) civic‑grade compute supply vs. verified demand—keep **0.8 – 1.2** for resilience without waste.
 - **Energy‑Compute Intensity (ECI):** **kWh per verified outcome**—target **≥15% YoY** decline with scheduling to off‑peak windows and heat‑reuse.
 - **Model/Dataset SBOMs & Signing:** reproducible builds; provenance; poisoning audits.
 - **Incident readiness:** GPU‑reserve or burst capacity plan; **Sev‑1 MTTR ≤2h**; quarterly kill‑switch drills.
@@ -200,11 +198,11 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 - Portability targets cannot be met, creating harmful lock‑in;
 - Energy per verified outcome trends upward for two consecutive periods.
 
-### The 90‑/180‑/365‑Day Leadership Agenda
+### The 90 ‑ 180 ‑ 365‑Day Leadership Agenda
 
 #### Next 90 Days
 
-- Appoint an **Executive AgentOps Owner** reporting to the COO/CIO.
+- Appoint an **Executive AgentOps Owner** reporting to the CIO and CIO.
 - Select **two** high‑volume workflows for agent‑first pilots; define **promotion gates** (≥95% verification, ≤0.5% escape).
 - Contract **two model providers**; run a portability bake‑off.
 - Stand up **manipulation defenses** (classifier + throttling + disclosure).
@@ -230,20 +228,22 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 - **Reliability:** **Autonomy ≥70%**, **Verification ≥95%**, **Escape ≤0.5%**, **Sev‑1 MTTR ≤2h**.
 - **Trust & brand:** **Disclosure ≥99%**, appeals ≤**72h**, parity within **±5pp**; manipulation flags trending down.
 - **Resilience:** Multi‑provider portability in production; **ECI ↓ ≥15% YoY**; published provenance/SBOMs.
-- **People outcomes:** **Time Dividend ≥5 hours/week** in targeted customer/employee journeys; measurable education/health gains where deployed.
+- **People outcomes:** **Time Dividend ≥5 hours a week** in targeted customer/employee journeys; measurable education/health gains where deployed.
+
+---
+
 
 ## The First 1,000 Days: From Tokens to Work (Nov 30, 2022 → Aug 26, 2025)
 
-> **Scope.** From the launch of ChatGPT on **Nov 30, 2022** to **Day 1,000 (Aug 26, 2025)**: how transformers, tokens, and agents changed what “intelligence” means inside the large Enterprise—and what separates signal from noise.
+With the launch of ChatGPT on **Nov 30, 2022** to **Day 1,000 (Aug 26, 2025)** transformers, tokens, and agents changed what “intelligence” means inside the large Enterprise—and what separates signal from noise.
 
 ### Transformers, Tokens, and What “Intelligence” Now Means
 
-Under the hood, every frontier system your enterprise cares about—OpenAI GPT‑4/5 and o‑series, Anthropic Claude, Google Gemini—is built on the same architectural idea:
+From a C‑suite lens, a transformer is a **fast, scalable “next‑step planner”** over tokens. Intelligence, in this world, is: *How much **useful state and action** we can pack into tokens per second, per dollar, under governance.*
 
-- The **transformer**: a stack of self‑attention layers that repeatedly answers a single question:
+Under the hood, every frontier system your enterprise cares about (OpenAI GPT‑4/5 and o‑series, Anthropic Claude, Google Gemini) is built on the same architectural idea:
 
-  > *Given all the tokens I’ve seen so far, what should the next token be?*
-
+- The **transformer**: a stack of self‑attention layers that repeatedly answers a single question:  *Given all the tokens I’ve seen so far, what should the next token be?*
 - The **token**: the smallest chunk of information the model reads or writes. Historically this was a slice of text (`"intelli"`, `"gence"`). Today it can represent:
   - Sub‑word fragments and punctuation,
   - Image patches and audio chunks,
@@ -258,34 +258,72 @@ At inference time the pipeline is:
 4. Stack layers to refine those vectors and predict the next token.
 5. Interpret certain token patterns as **actions** (call a tool, run SQL, submit a form) instead of text.
 
-From a C‑suite lens, a transformer is a **fast, scalable “next‑step planner”** over tokens. Intelligence, in this world, is:
+Over the first 1,000 days, the underlying “intelligence substrate” changed far more dramatically than most leaders realize. What began as a system that mainly processed text has evolved into something that can now work across **almost every kind of information your enterprise produces** — from documents and emails to images, audio, video, workflows, logs, procedures, policies, operational data, scientific measurements, and even highly specialized industry signals.
 
-> How much **useful state and action** we can pack into tokens per second, per dollar, under governance.
+In practical terms, three things changed:
 
-Over the first 1,000 days, three properties of this substrate changed radically:
+#### **1. The range of things AI can understand and act on exploded.**
 
-- **What a token can represent** (from text fragments to rich state and tool calls),
-- **How much context** can be kept “on the whiteboard” at once, and
-- **How fast and cheaply** that whiteboard can be updated.
+Tokens—the basic units AI models use to think—used to represent words or fragments of text. Now they represent **meaningful units from every domain**:
+
+* a section of an image,
+* a moment of audio,
+* a video movement,
+* a row in a table,
+* a policy clause,
+* a step in a workflow,
+* a sensor reading,
+* a diagnostic event,
+* a supply-chain update,
+* an operational signal from the grid or field equipment.
+
+**Anything your business touches—words, images, numbers, sounds, operational, scientific, or procedural—can now be represented, reasoned over, and acted on by AI.**
+
+#### **2. The amount of context AI can hold at once grew exponentially.**
+
+Instead of working with the equivalent of “one meeting’s worth” of information, AI can now keep **days of work** in active memory—documents, conversations, history, processes, exceptions, decisions, and the rationale behind them—**all at once**.
+
+This means AI can:
+
+* follow complex, multi-step processes end-to-end,
+* maintain consistency across decisions,
+* remember constraints and policies,
+* coordinate actions across tools, systems, and teams.
+
+It’s the difference between a smart intern and **a fully briefed chief of staff** who never forgets anything.
+
+#### **3. The speed, cost, and reliability of updating that shared “whiteboard” improved dramatically.**
+
+Advances in how models run—streaming, batching, parallel execution, automated checking, and verification—mean that the system can now update this large working memory **faster, cheaper, and with far more consistency** than before.
+
+This enables:
+* real-time responsiveness,
+* automated cross-checking of work,
+* higher-quality outputs with lower error rates,
+* lower cost per validated action.
+
+In short:
+
+**AI is now capable of understanding your business in its full multimodal reality, keeping a vast amount of operational context in mind, and updating it rapidly and reliably.**
+
+This is why the next 1,000 days will look nothing like the previous 1,000.
 
 ### Humans as Context: Speech, Thought, and Tokens
 
-To make this tangible at board level, treat a **day in a knowledge worker’s head** as just another context window.
+To make this tangible, treat a **day in a knowledge worker’s head** as just another context window.
 
 Empirical work on language and thought suggests:
 
-- Humans speak on the order of **~15,000 words per day** on average (with wide variance).
-- Internal speech and “verbal thought” are far denser: estimates suggest **4–30 internal words for every word spoken**, yielding **~60,000–450,000 words/day** of inner dialogue and imagined conversations.
-- We speak at **125–175 words per minute**; that’s in the ballpark of **~2 tokens/second** if we approximate 1 word ≈ 1–1.33 tokens.
+- Humans speak on the order of **≅15,000 words per day** on average (with wide variance).
+- Internal speech and “verbal thought” are far denser: estimates suggest **4–30 internal words for every word spoken**, yielding **≅60,000–450,000 words a day** of inner dialogue and imagined conversations.
+- We speak at **125–175 words per minute**; that’s in the ballpark of **≅2 tokens/second** if we approximate 1 word ≈ 1–1.33 tokens.
 
 Using your working approximation of **1 word ≈ 1.33 tokens**:
 
-- **Spoken per day:** ~15,000 words → **~20,000 tokens**.
-- **Inner speech per day:** ~60,000–450,000 words → **~80,000–600,000+ tokens**.
+- **Spoken per day:** ≅15,000 words → **≅20,000 tokens**.
+- **Inner speech per day:** ≅60,000 – 450,000 words → **≅80,000 – 600,000+ tokens**.
 
-The exact numbers are less important than the order of magnitude:
-
-> A single person’s day of “thinking in language” is on the order of **hundreds of thousands of tokens**—most of which never touch a system of record.
+The exact numbers are less important than the order of magnitude: *A single person’s day of “thinking in language” is on the order of **hundreds of thousands of tokens**—most of which never touch a system of record.*
 
 This is the unconscious **token budget** your workforce burns today, unmanaged.
 
@@ -298,14 +336,116 @@ The **context window** is the model’s working memory: how many tokens it can c
 Over the first 1,000 days of generative AI, this expanded from **less than a meeting** to **multiple human days**:
 
 | Model          | Context Size (tokens) | Approx. Words | Equivalent Human Speech | Equivalent Human Thought* |
-|----------------|-----------------------|---------------|-------------------------|---------------------------|
-| GPT‑1 / GPT‑2  | 2,048                 | ~1,500        | ~1.8 hours              | ~45 minutes               |
-| GPT‑3          | 4,096                 | ~3,000        | ~3.6 hours              | ~1.6 hours                |
-| GPT‑4          | 8,192                 | ~6,000        | ~7.2 hours              | ~3.2 hours                |
-| GPT‑4‑turbo    | 128,000               | ~96,000       | ~4.8 days               | ~2.4 days                 |
-| GPT‑5‑Standard | 128,000               | ~96,000       | ~4.8 days               | ~2.4 days                 |
-| GPT‑5‑Pro      | 196,000               | ~147,000      | ~7.35 days              | ~3.6 days                 |
-| GPT‑5‑API      | 400,000               | ~300,000      | ~15 days                | ~7.2 days                 |
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+-|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+--|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+-|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
+| GPT‑1 / GPT‑2  | 2,048                 | ≅1,500        | ≅1.8 hours              | ≅45 minutes               |
+| GPT‑3          | 4,096                 | ≅3,000        | ≅3.6 hours              | ≅1.6 hours                |
+| GPT‑4          | 8,192                 | ≅6,000        | ≅7.2 hours              | ≅3.2 hours                |
+| GPT‑4‑turbo    | 128,000               | ≅96,000       | ≅4.8 days               | ≅2.4 days                 |
+| GPT‑5‑Standard | 128,000               | ≅96,000       | ≅4.8 days               | ≅2.4 days                 |
+| GPT‑5‑Pro      | 196,000               | ≅147,000      | ≅7.35 days              | ≅3.6 days                 |
+| GPT‑5‑API      | 400,000               | ≅300,000      | ≅15 days                | ≅7.2 days                 |
 {: .table .table-striped .table-hover}
 
 *Assuming the lower end of the “thought rate” band.
@@ -314,10 +454,9 @@ By mid‑2025, a production deployment could hold in active working memory the e
 
 - A week or more of everything a person says, and
 - Several days’ worth of what they think in words,
+- **plus** their email history, policies, tickets, and code paths.
 
-**plus** their email history, policies, tickets, and code paths.
-
-That is what makes credible **digital twins of customers, processes, or employees** possible: the agent can keep most of the relevant history “in mind” at once instead of paging it in and out.
+That is what makes credible **digital twins of customers, processes, or employees** possible: the agent can keep most of the relevant history “in mind” at once instead of paging the right stuff in and out based on a flawed understanding of context switching within the given focus window.
 
 ### Throughput: Tokens per Second vs Human Bandwidth
 
@@ -340,7 +479,7 @@ By Day 1,000, a single high‑end GPU can:
 
 This is what underwrites the cost curve you care about:
 
-- A reasonable “digital worker‑day” of **~1,000,000 tokens** (mixed retrieval + reasoning)
+- A reasonable “digital worker‑day” of **≅1,000,000 tokens** (mixed retrieval + reasoning)
 - At inference prices already in the **tens of cents per million tokens** for mini‑class models, and low single‑digit dollars for frontier models
 - ⇒ Raw compute cost per digital worker‑day in the **sub‑\$1 range** before tools and verifiers.
 
@@ -350,12 +489,12 @@ Against that technical backdrop, the enterprise adoption curve had clear step ch
 
 - **Nov 2022 — ChatGPT (research preview) launches;** generative chat goes mainstream; LLMs move from lab curiosity to board slides.
 - **Mar 2023 — GPT‑4 (multimodal);** durable gains on professional benchmarks; the **copilot era** begins (IDE assistants, Office copilots, early customer‑service bots).
-- **Nov 2023 — DevDay price step‑down + Assistants API;** GPT‑4 Turbo lands at roughly **3× cheaper input / 2× cheaper output** than GPT‑4; Assistants API normalizes tools, retrieval, and structured responses; serious pilots begin.
-- **May 2024 — GPT‑4o (omni) ships;** multimodal I/O and ~50% cheaper than GPT‑4 Turbo in the API; voice and vision become default; free tiers widen the top‑of‑funnel and internal experimentation.
+- **Nov 2023 — OpenAI DevDay price step‑down + Assistants API;** GPT‑4 Turbo lands at roughly **3× cheaper input / 2× cheaper output** than GPT‑4; Assistants API normalizes tools, retrieval, and structured responses; serious pilots begin.
+- **May 2024 — GPT‑4o (omni) ships;** multimodal I/O and ≅50% cheaper than GPT‑4 Turbo in the API; voice and vision become default; free tiers widen the top‑of‑funnel and internal experimentation.
 - **Aug 2024 — EU AI Act enters into force;** first horizontally scoped safety regime with phased obligations; compliance, logging, and risk management move up the agenda.
 - **Sep–Dec 2024 — “Reasoning” models (o1 series) arrive;** long‑horizon reasoning, deliberate mode, and better tool use push models beyond “smart autocomplete” into credible **agent cores**.
-- **Jan–Jun 2025 — Cost & scale shift again;** mini/efficient models (e.g., GPT‑4o‑mini) are priced as low as **\$0.15 per 1M input tokens** and **\$0.60 per 1M output tokens**, enabling **<\$1/day digital workers** at ~1M tokens/day.
-- **2024–2025 — Enterprise adoption hits majority;** industry surveys show ~**65% of enterprises** using GenAI in 2024, with 2025 updates reporting tangible cost and revenue impact and new‑business enablement.
+- **Jan – Jun 2025 — Cost & scale shift again;** mini/efficient models (e.g., GPT‑4o‑mini) are priced as low as **\$0.15 per 1,000,000 input tokens** and **\$0.60 per 1,000,000 output tokens**, enabling **<\$1 a day digital workers** at ≅1,000,000 tokens a day.
+- **2024 – 2025 — Enterprise adoption hits majority;** industry surveys show ≅**65% of enterprises** using GenAI in 2024, with 2025 updates reporting tangible cost and revenue impact and new‑business enablement.
 
 In short: the first 1,000 days compressed **a decade’s worth of architectural, economic, and regulatory change** into three budgeting cycles.
 
@@ -380,18 +519,18 @@ Most organizations moved through three waves:
 
 3. **Agent‑first slices**
 
-   - Agents in the **critical path** for slices of support, adjudication, codemods, and structured drafting.
+   - Agents in the **critical path** for slices of support, adjudication, code generation, and structured drafting.
    - Promotion gates: **verification coverage ≥95%** and **escape rate ≤0.5%** over 90 days.
 
 The gating step (2 → 3) depended far more on **verifier coverage** and **tool‑boundary policy** than on raw model IQ.
 
 #### Unit economics moved
 
-Where organizations got the stack right (mini/frontier mix, caching, tools, evals), they saw:
+Where organizations got the stack right (mini/frontier mix, caching, tools, evaluations), they saw:
 
-- **≥60% reductions** in quality‑adjusted unit costs in drafting, L1 support, claims triage, and codemod flows.
+- **≥60% reductions** in quality‑adjusted unit costs in content drafting, L1 support, claims triage, and code generation flows.
 - **≥50% reductions** in cycle time once agents entered the critical path under verification.
-- Token pricing (e.g., GPT‑4o‑mini at **\$0.15/M input** and **\$0.60/M output**) meant ~1M tokens/day cost only **≈$0.33–\$0.50/day** in pure inference before tools/evals.
+- Token pricing (e.g., GPT‑4o‑mini at **$0.15 per 1,000,000 input tokens** and **$0.60 per 1,000,000 output tokens**) meant ≅1,000,000 tokens a day cost only **≈$0.33 – $0.50 a day** in pure inference before tools and evaluations.
 
 For CFOs, this was the moment **“cost per verified outcome”** started to replace **FTE hours** as the relevant denominator.
 
@@ -405,7 +544,7 @@ For CFOs, this was the moment **“cost per verified outcome”** started to rep
 
 The programs that scaled safely tended to:
 
-- Allocate **≥10% of AI spend to evals + observability**,
+- Allocate **≥10% of AI spend to evaluations + observability**,
 - Ship **model/agent cards** tied to promotion gates, and
 - Align governance to **EU AI Act / NIST AI RMF** expectations.
 
@@ -418,7 +557,7 @@ Hype was not the differentiator; **verification discipline** was.
 
 #### Energy and compute went to the board
 
-- Hardware like NVIDIA’s **GB200 NVL72** (liquid‑cooled, ~**120 kW/rack**) made **power, cooling, and 24/7 CFE procurement** strategic decisions, not facilities footnotes.
+- Hardware like NVIDIA’s **GB200 NVL72** (liquid‑cooled, ≅**120 kW per rack**) made **power, cooling, and 24/7 CFE procurement** strategic decisions, not facilities footnotes.
 - Regulators and grid operators flagged AI/data‑center load as a structural driver of rising electricity demand in 2025–2026.
 
 ### External Signals
@@ -426,9 +565,9 @@ Hype was not the differentiator; **verification discipline** was.
 Outside your four walls, several signals confirmed that the shift was real:
 
 - **Adoption.** Majority of large enterprises now report “regularly using” GenAI, with 2025 surveys linking it to measurable cost savings and new revenue.
-- **Case evidence.** Klarna’s AI assistant handling **~⅔ of chats** and ~**700 FTE‑equivalent workloads** in early 2024 (with later rebalancing) illustrated what **agent‑first + governance trade‑offs** look like in production, not just in pilots.
+- **Case evidence.** Klarna’s AI assistant handling **≅⅔ of chats** and ≅**700 FTE‑equivalent workloads** in early 2024 (with later rebalancing) illustrated what **agent‑first + governance trade‑offs** look like in production, not just in pilots.
 - **Policy hardening.** The **EU AI Act** went live Aug 2024; **NIST AI RMF** became a de facto reference for U.S. risk programs. Logged decisions, provenance, and incident response moved from “nice to have” to expectation.
-- **Cost curve.** Vendor pricing documents across 2023–2025 showed step‑downs (DevDay cuts, GPT‑4o and mini pricing), closing viability gaps for agentic automation and making <\$1/day digital workers credible at scale.
+- **Cost curve.** Vendor pricing documents across 2023–2025 showed step‑downs (DevDay cuts, GPT‑4o and mini pricing), closing viability gaps for agentic automation and making < $1 a day digital workers credible at scale.
 
 ### What Didn’t Happen (Yet)
 
@@ -477,21 +616,19 @@ More relevant for enterprises were benchmarks that look like jobs:
 
 Finally, a set of **“in‑the‑wild” arenas** tested agents in live or semi‑live environments:
 
-- **nof1.ai.**
+- **nof1.ai**
   AI trading agents operate with real capital under fixed rules, exposing **risk profiles, holding times, and failure modes** in non‑stationary markets.
 
-- **Prophet Arena.**
+- **Prophet Arena**
   AI and human forecasters compete on **real prediction markets**, with time‑stamped probability forecasts forming a long‑horizon calibration and reasoning test.
 
-- **Time Horizons & The Village (The AI Digest).**
+- **Time Horizons & The Village (The AI Digest)**
   Experiments probing **how far into the future agents can plan** before reliability collapses, and how multi‑agent “villages” coordinate, cooperate, or misbehave under open‑ended objectives.
 
-- **EQBench live runs (eqbench.com).**
+- **EQBench live runs (eqbench.com)**
   Ongoing evaluations of models’ behavior in emotionally charged, interpersonal scenarios—useful for HR, coaching, mental health triage, and customer support applications.
 
-These ecosystems collectively answered the question:
-
-> *“Can an agent own multi‑step, long‑horizon workflows under uncertainty and still meet human‑grade SLAs?”*
+These ecosystems collectively answered the question: *“Can an agent own multi‑step, long‑horizon workflows under uncertainty and still meet human‑grade SLAs?”*
 
 The answer, by August 2025, is: **yes, in narrow domains, under strong verification and policy; not yet universally.**
 
@@ -503,7 +640,7 @@ By **Aug 26, 2025**, a typical early‑adopter Large Enterprise looked roughly l
 
   - L1 support and triage,
   - Claims and back‑office adjudication,
-  - Codemods and code review assistance,
+  - Code Generation and code review assistance,
   - Structured drafting (policies, briefs, customer communications),
   - Sales operations and CRM hygiene.
 
@@ -538,11 +675,9 @@ Taken together, the first 1,000 days established four facts that anchor the rest
    Agentic and live‑fire arenas show that agents can own multi‑step, long‑horizon workflows—**if and only if** they are surrounded by verifiers, tool boundaries, and incident response.
 
 4. **Economics that change the production function.**
-   A digital worker‑day of ~1M tokens now costs **well under \$1 in raw inference** for mini‑class models and low single digits for frontier models. Once verification is in place, the **marginal value of average human cognitive labor** in those workflows trends toward **\≈$0**, and can become **negative** where humans introduce variance, latency, or error.
+   A digital worker‑day of ≅1,000,000 tokens now costs **well under $1 in raw inference** for mini‑class models and low single digits for frontier models. Once verification is in place, the **marginal value of average human cognitive labor** in those workflows trends toward **≈$0**, and can become **negative** where humans introduce variance, latency, or error.
 
-The question for the next 1,000 days is no longer:
-
-> *“Are the models good enough?”*
+The question for the next 1,000 days is no longer: *“Are the models good enough?”*
 
 They are. The decisive questions now are:
 
@@ -555,9 +690,12 @@ The rest of this document answers those questions: **why the Intelligence Invers
 
 ### What This Means for the Next 1,000 Days
 
-- **Compete on verification economics.** For each service line, publish **cost per verified outcome** and **ECI**; treat evals as capital.
+- **Compete on verification economics.** For each service line, publish **cost per verified outcome** and **ECI**; treat evaluations as capital.
 - **Compute is capital.** Plan for **120 kW+ racks** and liquid cooling; tie CapEx to **24/7 CFE** contracts and failover capacity.
 - **People strategy.** Continue rebundling toward **exception handling, policy, and trust**; protect entry‑level pathways via **AgentOps apprenticeships**.
+
+---
+
 
 ## The Intelligence Inversion: Why It Happens, When It Happens, and What Follows
 
@@ -576,14 +714,14 @@ We use “agents” to mean systems that **observe, orient, decide, act, and ver
 
    - **Planning/Decomposition** (breaking work into actionable steps based on goals and constraints)
    - **Tool‑use** (calling code, databases, APIs based on context and process needs)
-   - **Self‑verification** (checkers/evals, majority vote, programmatic tests)
+   - **Self‑verification** (checkers/evaluations, majority vote, programmatic tests)
    - **Memory and personalization** (learning an organization’s vocabulary, preferences, and constraints)
    - **Code execution** (running code to validate outputs, fetch data, or automate tasks)
 
    The combination reduces variance and rework in ways many teams cannot consistently match.
 
 2. **Cost‑curve collapse**
-   Inference costs per unit of “reasoning” (often proxied by tokens) have been falling rapidly. At contemporary price points, it is economically plausible for an agent performing **~1 million tokens/day** of mixed reasoning and retrieval to cost **well under a dollar per day** in pure inference. Even after adding a multiple for verification, orchestration, and data access, the **effective compute cost per “digital worker‑day”** is low compared with salaries and overhead. The direction of travel remains downward due to model efficiency, hardware improvements, batching, quantization, caching, and specialized small models.
+   Inference costs per unit of “reasoning” (often proxied by tokens) have been falling rapidly. At contemporary price points, it is economically plausible for an agent performing **≅1 million tokens a day** of mixed reasoning and retrieval to cost **well under a dollar per day** in pure inference. Even after adding a multiple for verification, orchestration, and data access, the **effective compute cost per “digital worker‑day”** is low compared with salaries and overhead. The direction of travel remains downward due to model efficiency, hardware improvements, batching, quantization, caching, and specialized small models.
 
 3. **Scalability and simultaneity**
    Humans scale headcount one hire at a time; agents scale by **replicating agents and ensuring they have enough compute**. When a new agent stack ships, DevOps ensures the entire workforce trained **overnight**. This simultaneity is unfamiliar in labor markets and compresses the adjustment periods of this transformation.
@@ -613,7 +751,7 @@ When agent outputs meet target quality **with verification**, the **ΔOutput** t
 
 The transition looks discontinuous for three reasons:
 
-- **Stack completeness**: The jump from “smart intern” to “autonomous contributor” hinges on the **stack**, not just the model—planners, tools, memory, evals, verifiers, observability, and rollback. Once the stack is complete enough for a domain, productivity **snaps** to a new equilibrium.
+- **Stack completeness**: The jump from “smart intern” to “autonomous contributor” hinges on the **stack**, not just the model—planners, tools, memory, evaluations, verifiers, observability, and rollback. Once the stack is complete enough for a domain, productivity **snaps** to a new equilibrium.
 
 - **Fleet upgrades**: The moment a verified agent template is published, thousands of instances can be deployed. In human terms, this resembles **instant reskilling** at scale.
 
@@ -633,7 +771,7 @@ Key properties of (K_c):
 
 - **Elasticity of substitution** with labor is **high**: for many cognitive tasks, agents can replace or augment people with minimal friction.
 - **Reproducibility**: Unlike bespoke plant/equipment, (K_c) can be repurposed across domains (claims today, underwriting tomorrow) with software updates and the reallocation of inference compute.
-- **Orchestration premium**: Competitive advantage concentrates not only in raw computing power but also in **how** compute is scheduled, what tools it can reach, how evals/guards are implemented, and how fast models can be swapped.
+- **Orchestration premium**: Competitive advantage concentrates not only in raw computing power but also in **how** compute is scheduled, what tools it can reach, how evaluations/guards are implemented, and how fast models can be swapped.
 
 **Macro consequence.** Traditional monetary policy levers that work via the **labor channel** (e.g., rate cuts stimulating hiring) weaken if firms scale **compute and agents** instead of adding headcount. Comparative advantage shifts toward regions and firms with **dense, reliable access to compute + orchestration**.
 
@@ -658,8 +796,8 @@ When the tax base is anchored in **income and corporate profits**, a large, flat
 
 A stylized illustration:
 
-- Suppose a society targets **\$20,000 per person per year** as a basic floor. For a population of ~330 million, gross outlays are **~\$6.6 trillion/year**.
-- The United States population is ~330 million, and the federal government’s **total tax receipts** were **~$5.23 trillion in FY2024**.
+- Suppose a society targets **\$20,000 per person per year** as a basic floor. For a population of ≅330 million, gross outlays are **≅\$6.6 trillion/year**.
+- The United States population is ≅330 million, and the federal government’s **total tax receipts** were **≅$5.23 trillion in FY2024**.
 - Compare this to current‑order **total tax receipts**. Even before considering other government obligations, the implied **UBI share** consumes or exceeds available revenue.
 - If one then anticipates **downward pressure** on wage‑based income taxes (due to substitution) and uneven corporate tax capture (due to IP/compute mobility), the structural gap widens.
 
@@ -697,13 +835,19 @@ The Intelligence Inversion is not a slogan but the predictable outcome of four r
 
 The sooner organizations accept this production function and plan accordingly, the smoother the transition will be—for firms, workers, and society.
 
+---
+
+
+---
+
+
 ## Powering the Intelligence Economy: Energy as the Gating Layer of Compute Capital
 
 ### Demand Outlook: Why Power Is the New Scarcity
 
 If compute is the new capital stock, power is the gating input that determines who can scale intelligence reliably; this section sets the metrics and contracts that make that constraint governable.
 
-**Global signal.** The U.S. Energy Information Administration (EIA) projects data‑center electricity demand to continue rising as AI workloads scale, with sector consumption already a material share of global electricity and potentially approaching **~1,000 TWh by 2030** under high‑AI scenarios. The agency’s analysis highlights AI inference growth and high‑density clusters as key drivers.
+**Global signal.** The U.S. Energy Information Administration (EIA) projects data‑center electricity demand to continue rising as AI workloads scale, with sector consumption already a material share of global electricity and potentially approaching **≅1,000 TWh by 2030** under high‑AI scenarios. The agency’s analysis highlights AI inference growth and high‑density clusters as key drivers.
 
 **U.S. inflection.** The EIA reports that **data‑center electricity use is on track to roughly double by 2030**, driven by AI and cloud expansion, with notable regional concentration where grid capacity and power prices are favorable. This converts to a structural step‑up in **power‑indexed opex** and in **capex for interconnection and on‑site electrics**.
 
@@ -711,7 +855,7 @@ If compute is the new capital stock, power is the gating input that determines w
 
 ### Engineering Economics: Density, Cooling, and Facility Efficiency
 
-**Rack density & liquid cooling.** New AI systems (e.g., NVIDIA NVL72) are designed for **liquid‑cooled deployments at ~120 kW per rack**, levels that strain legacy air‑cooled rooms and push facilities toward direct‑to‑chip, rear‑door heat exchangers, or immersion cooling. This is no longer an edge case: it is the design point for frontier model training and high‑throughput inference.
+**Rack density & liquid cooling.** New AI systems (e.g., NVIDIA NVL72) are designed for **liquid‑cooled deployments at ≅120 kW per rack**, levels that strain legacy air‑cooled rooms and push facilities toward direct‑to‑chip, rear‑door heat exchangers, or immersion cooling. This is no longer an edge case: it is the design point for frontier model training and high‑throughput inference.
 
 **Facility efficiency metrics.**
 
@@ -731,7 +875,7 @@ If compute is the new capital stock, power is the gating input that determines w
 
 \[
 \mathrm{ECI}_{\text{tokens}}=10^{6}\cdot\frac{\text{kWh consumed}}{\text{tokens processed}}
-\quad\text{(kWh per 1M tokens)}
+\quad\text{(kWh per 1,000,000 tokens)}
 \]
 
 **Why outcomes?** Agents that fail verification waste energy just as surely as they waste time. Tying energy to *verified* outputs aligns engineering, procurement, and product incentives.
@@ -764,7 +908,7 @@ If compute is the new capital stock, power is the gating input that determines w
 
 ### Operations: Make Compute Carbon‑ and Price‑Aware
 
-**Temporal flexibility is an asset.** Training and many batch inference jobs are **deferrable** or **throttle‑able** within hour/day windows. Align schedulers to **locational marginal emissions** and **locational marginal prices**: run hardest when the grid is clean or cheap; degrade gracefully when tight.
+**Temporal flexibility is an asset.** Training and many batch inference jobs are **deferrable** or **throttle‑able** within hour a day windows. Align schedulers to **locational marginal emissions** and **locational marginal prices**: run hardest when the grid is clean or cheap; degrade gracefully when tight.
 
 **What to implement.**
 
@@ -825,6 +969,8 @@ If compute is the new capital stock, power is the gating input that determines w
 - Commission the first **liquid‑cooled high‑density hall**; validate seasonal PUE.
 - Publish **site‑level dashboards**: PUE/WUE, CFE hours, ECI_outcome, residual emissions.
 - Close **firming contracts** (e.g., nuclear/geothermal where feasible) or storage tolling for the highest‑priority regions; socialize **nuclear options** with community stakeholders where applicable.
+
+---
 
 ## Economic & Organizational Implications
 
@@ -893,7 +1039,7 @@ Corporate and associational law is evolving toward forms that permit **algorithm
 Expect requirements for **model/agent risk management** akin to financial MRM, including:
 
 - Documented **intended use**, **limitations**, and **off‑label prohibitions**;
-- **Pre‑deployment evals**, stress tests, and **scenario analysis**;
+- **Pre‑deployment evaluations**, stress tests, and **scenario analysis**;
 - **On‑going monitoring** (drift, poisoning detection, adversarial testing);
 - **Human override** and **rollback** procedures;
 - **Audit‑ready telemetry** and tamper‑evident logs.
@@ -965,7 +1111,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 #### New Roles
 
 - **Agent Architect**: designs multi‑agent systems, planner policies, and tool graphs.
-- **Verification Engineer**: builds evals, oracle checks, and failure‑mode tests; manages quality budgets.
+- **Verification Engineer**: builds evaluations, oracle checks, and failure‑mode tests; manages quality budgets.
 - **Agent SRE/Observer**: operates fleets, telemetry, incident response, and performance tuning.
 - **Data Steward (Provenance)**: enforces licensing, provenance, poisoning defenses.
 - **Prompt & Policy Engineer**: codifies institutional policies as prompts/guards with measurable effects.
@@ -974,15 +1120,804 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 #### Legacy → New role mapping (rosetta)
 
 | Legacy role                                             | Typical (legacy) description                                                                                                                                                                                                                                    | **Primary new role**                                                                                                        | Updated (agent‑era) description                                                                                                                                                                                                                                     | Secondary mapping                                                                            |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+--|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+--|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+-|
 | **Enterprise Architect**                                | Defines target architectures, NFRs, and standards for whole sections in the value chain and ensure that the business strategy can be met with that given business processes, data, application, technology portfolio using roadmaps and implementation details. | **Value-Chain Architect (Service-Line Owner)**                                                                              | Owns an entire step in the value chain end-to-end from business strategy all the way to implementation details. Sets risk appetite, quality budgets, SLOs, and alignment across human and agentic layers.                                                           | Agent Architect; Verification Engineer; Agent SRE; Data Steward; Prompt & Policy; Model Risk |
 | **Product Manager / Project Manager / Program Manager** | Defines scope, roadmap, and delivery for the implementation of products or projects; manages resources, milestones, and stakeholder expectations.                                                                                                               | **AgentOps Program Manager** *(or)* **Value-Chain Architect** *(if outcome is a part of the overall corporate value chain)* | Leads cross-functional agentic initiatives from planning to rollout, coordinating across Verification, SRE, Policy, and Risk. Manages quality-gated releases, version pinning, incident response, and ensures alignment to business outcomes and value-chain goals. | Agent SRE; Verification; Model Risk; Data Steward; Prompt & Policy                           |
 | **Solutions Architect**                                 | Decomposes business needs into applications, data, APIs and integrations for a program.                                                                                                                                                                         | **Agent Architect**                                                                                                         | Turns workflows into agentic compositions (planner → tools → verifiers → fallbacks); negotiates SLOs and escalation logic with service owners.                                                                                                                      | Verification Engineer                                                                        |
 | **Integration Architect / RPA Lead**                    | Connects systems via ESB/iPaaS/RPA; maintains process automations.                                                                                                                                                                                              | **Agent Architect**                                                                                                         | Replaces brittle scripts with tool‑invocation policies and verifiers; manages version‑pinned tools and rollback paths.                                                                                                                                              | Agent SRE/Observer                                                                           |
 | **Business Process Analyst (BPM)**                      | Maps current/target processes; writes SOPs and controls.                                                                                                                                                                                                        | **Prompt & Policy Engineer**                                                                                                | Codifies SOPs and controls as prompts/guards; maintains pattern libraries with measurable effects.                                                                                                                                                                  | Verification Engineer                                                                        |
-| **Business Analyst**                                    | Gathers requirements; writes user stories; acceptance criteria.                                                                                                                                                                                                 | **Prompt & Policy Engineer**                                                                                                | Writes prompt/guard specs and acceptance evals; partners with Verification on quality budgets.                                                                                                                                                                      | Verification Engineer                                                                        |
+| **Business Analyst**                                    | Gathers requirements; writes user stories; acceptance criteria.                                                                                                                                                                                                 | **Prompt & Policy Engineer**                                                                                                | Writes prompt/guard specs and acceptance evaluations; partners with Verification on quality budgets.                                                                                                                                                                      | Verification Engineer                                                                        |
 | **Product Manager**                                     | Owns roadmap, outcomes, and acceptance criteria.                                                                                                                                                                                                                | **Agent Architect**                                                                                                         | Owns agent template for the service line; trades off quality‑adjusted throughput vs. cost/latency with Verification & SRE.                                                                                                                                          | Prompt & Policy Engineer                                                                     |
-| **QA Engineer / SDET**                                  | Builds automated tests; measures defect escape; gates releases.                                                                                                                                                                                                 | **Verification Engineer**                                                                                                   | Builds evals, oracle checks, red‑team suites; manages error/quality budgets; gates agent rollout via offline/online evals.                                                                                                                                          | Agent SRE/Observer                                                                           |
+| **QA Engineer / SDET**                                  | Builds automated tests; measures defect escape; gates releases.                                                                                                                                                                                                 | **Verification Engineer**                                                                                                   | Builds evaluations, oracle checks, red‑team suites; manages error/quality budgets; gates agent rollout via offline/online evaluations.                                                                                                                                          | Agent SRE/Observer                                                                           |
 | **QA/Test Manager**                                     | Plans test strategy, coverage, and sign‑off.                                                                                                                                                                                                                    | **Verification Engineer**                                                                                                   | Owns verifier coverage, precision/recall, residual error, and penalty models; runs canaries/A‑B gating.                                                                                                                                                             | Model Risk Lead                                                                              |
 | **Site Reliability Engineer (SRE)**                     | SLI/SLOs, telemetry, capacity, incident response.                                                                                                                                                                                                               | **Agent SRE/Observer**                                                                                                      | Operates agent fleets; manages model/prompt rollout, caches, tool error budgets, circuit breakers, and rollbacks.                                                                                                                                                   | Verification Engineer                                                                        |
 | **DevOps / Platform / Observability Engineer**          | CI/CD, infra as code, logging, tracing.                                                                                                                                                                                                                         | **Agent SRE/Observer**                                                                                                      | Adds evaluation jobs, prompt/policy versioning, token/tool cost monitors, drift alarms, and sandboxed tool boundaries.                                                                                                                                              | Agent Architect                                                                              |
@@ -991,11 +1926,11 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 | **Data Steward / Data Governance Lead**                 | Stewardship, retention, access controls, audit.                                                                                                                                                                                                                 | **Data Steward (Provenance)**                                                                                               | Encodes usage restrictions as policy‑enforced contracts; signs provenance; manages refresh cadences and consent flows.                                                                                                                                              | Model Risk Lead                                                                              |
 | **Records Manager / Librarian**                         | Classification, retention, discovery.                                                                                                                                                                                                                           | **Data Steward (Provenance)**                                                                                               | Curates retriever corpora with freshness and licensing SLAs; maintains takedown/repair workflows.                                                                                                                                                                   | —                                                                                            |
 | **Technical Writer / Knowledge Manager**                | Style guides, docs, reusable content patterns.                                                                                                                                                                                                                  | **Prompt & Policy Engineer**                                                                                                | Ships reusable prompt patterns, style/policy guards, and measurable edits that reduce review time.                                                                                                                                                                  | Data Steward                                                                                 |
-| **Conversation Designer (chatbots/IVR)**                | Dialogue flows, intents, utterances.                                                                                                                                                                                                                            | **Prompt & Policy Engineer**                                                                                                | Designs planner hints, tool‑use constraints, and refusal styles; validates via conversation‑level evals.                                                                                                                                                            | Verification Engineer                                                                        |
+| **Conversation Designer (chatbots/IVR)**                | Dialogue flows, intents, utterances.                                                                                                                                                                                                                            | **Prompt & Policy Engineer**                                                                                                | Designs planner hints, tool‑use constraints, and refusal styles; validates via conversation‑level evaluations.                                                                                                                                                            | Verification Engineer                                                                        |
 | **Privacy Engineer / IAM Engineer**                     | Data minimization, consent, least privilege.                                                                                                                                                                                                                    | **Agent SRE/Observer**                                                                                                      | Implements agent identities, scoped credentials, tool‑boundary enforcement, and tamper‑evident logs.                                                                                                                                                                | Data Steward                                                                                 |
 | **Compliance Analyst / GRC**                            | Controls testing, evidence, exceptions.                                                                                                                                                                                                                         | **Model Risk Lead**                                                                                                         | Owns agent risk taxonomy, deployment approvals, and audit‑ready telemetry; tracks exceptions and mitigations.                                                                                                                                                       | Data Steward                                                                                 |
 | **Model Risk Manager / Validator (FSI)**                | Independent model validation per SR 11‑7/ECB TRIM‑like frameworks.                                                                                                                                                                                              | **Model Risk Lead**                                                                                                         | Extends validation to agent workflows: intended use, limitations, off‑label prohibitions, scenario tests, and rollback readiness.                                                                                                                                   | Verification Engineer                                                                        |
-| **Internal Audit (IT/Model)**                           | Independent assurance; control effectiveness.                                                                                                                                                                                                                   | **Model Risk Lead**                                                                                                         | Sets evidence requirements (evals, logs, lineage) and challenge function for agentized lines.                                                                                                                                                                       | —                                                                                            |
+| **Internal Audit (IT/Model)**                           | Independent assurance; control effectiveness.                                                                                                                                                                                                                   | **Model Risk Lead**                                                                                                         | Sets evidence requirements (evaluations, logs, lineage) and challenge function for agentized lines.                                                                                                                                                                       | —                                                                                            |
 | **Support Ops (L1/L2)**                                 | Triage, playbooks, escalations.                                                                                                                                                                                                                                 | **Agent SRE/Observer**                                                                                                      | Operates incident taxonomy for agents; tunes fallbacks/blacklists; manages escalation ratios.                                                                                                                                                                       | Prompt & Policy Engineer                                                                     |
 {: .table .table-striped .table-hover}
 
@@ -1027,10 +1962,10 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 
 ##### Verification Engineer
 
-- **Scope**: Builds evals, oracle checks, red‑team suites; manages quality budgets; gates deployment; monitors drift/poisoning.
+- **Scope**: Builds evaluations, oracle checks, red‑team suites; manages quality budgets; gates deployment; monitors drift/poisoning.
 - **Legacy strengths**: Test strategy, automation, coverage, CI gating, defect analytics.
 - **What’s new**: Model‑assisted oracles, adversarial/Jailbreak testing, penalty modeling, precision/recall targets for verifiers, online A/B gating.
-- **Primary KPIs**: Residual error; verifier precision/recall; eval coverage; escaped‑defect rate; incidents avoided; mean time to update evals.
+- **Primary KPIs**: Residual error; verifier precision/recall; eval coverage; escaped‑defect rate; incidents avoided; mean time to update evaluations.
 - **90‑day outcomes**: Eval suite tied to business penalties; quality budget per flow; verification gates in CI/CD; red‑team playbook.
 
 ##### Agent SRE/Observer
@@ -1055,7 +1990,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 - **Legacy strengths**: Requirements/spec writing, style guides, conversation design, control wording.
 - **What’s new**: Prompt pattern libraries; tool‑use constraints; verifier‑aware acceptance criteria; refusal and safety styles; measurable reductions in review load.
 - **Primary KPIs**: Δ in verifier pass rates; ↓ hallucination/policy‑violation rates; reviewer time saved; reuse/adoption of patterns.
-- **90‑day outcomes**: Pattern library for top flows; guardrail prompts wired to verifiers; acceptance evals defined with Verification.
+- **90‑day outcomes**: Pattern library for top flows; guardrail prompts wired to verifiers; acceptance evaluations defined with Verification.
 
 ##### Model Risk Lead
 
@@ -1098,7 +2033,7 @@ Finance functions should monitor **token price indices**, cache hit rates, and *
 #### One‑liners you can paste under “New roles”
 
 - **Agent Architect** — Designs and standardizes multi‑agent workflows (planner → tools → verifiers → fallback) with SLOs, safety, and upgrade/rollback paths built in.
-- **Verification Engineer** — Builds evals, oracle checks, and red‑team suites; manages quality budgets and deployment gates to keep residual error within penalty‑aware limits.
+- **Verification Engineer** — Builds evaluations, oracle checks, and red‑team suites; manages quality budgets and deployment gates to keep residual error within penalty‑aware limits.
 - **Agent SRE/Observer** — Operates agent fleets to SLO and safety SLAs; owns telemetry, incident response, rollout hygiene, and cost/latency tuning.
 - **Data Steward (Provenance)** — Enforces provenance, licensing, consent, and poisoning defenses; maintains data contracts for retrieval, fine‑tune, and verifier corpora.
 - **Prompt & Policy Engineer** — Codifies institutional policy and style as prompts/guards and reusable patterns with measured effects on quality and safety.
@@ -1150,6 +2085,9 @@ High‑profile agent failures trigger stringent controls. **Hedge** by leading o
 
 The Intelligence Inversion rewires the production function: **compute‑plus‑orchestration** becomes the core capital stock; **agents** move into the critical path; **verification** becomes the rate‑limiting asset; and **humans** rebundle around judgment, responsibility, trust, and meaning. At the macro level, policy levers must pivot from generic labor stimulation to **compute access, civic AI, and aligned distribution**. At the firm level, winners will be those that industrialize **AgentOps**, quantify **quality‑adjusted throughput**, and rebuild organizations for a world where intelligence is abundant but **trust and purpose** remain scarce.
 
+---
+
+
 ## Transition Playbooks & Milestones for the Next 1,000 Days
 
 ### North‑Star Principles
@@ -1197,7 +2135,7 @@ The Intelligence Inversion rewires the production function: **compute‑plus‑o
 #### 2 Regulators and Standard‑Setters
 
 - Define **risk tiers** for agents by domain and capability; require commensurate verification, logging, and human overrides.
-- Mandate **model/agent cards** (intended use, evals, limitations, update cadence); standardize **incident taxonomies**.
+- Mandate **model/agent cards** (intended use, evaluations, limitations, update cadence); standardize **incident taxonomies**.
 - Enforce **synthetic media disclosure** and provenance (e.g., C2PA‑style) in consumer contexts.
 - Provide sandboxes for **algorithmic corporate forms** with requirements for **human trustees**, **capital/insurance**, and **shutdown procedures**.
 - Monitor **Compute Capacity Utilization (CCU)**, **Agent‑Equivalent FTEs (AEFTEs)**, and **Labor‑to‑Compute ratios** as policy indicators.
@@ -1240,7 +2178,7 @@ The Intelligence Inversion rewires the production function: **compute‑plus‑o
 
 #### Model/Agent Card
 
-- Intended use; domains; evals (public links)
+- Intended use; domains; evaluations (public links)
 - Known limitations/hazards; update schedule
 - Training/retrieval data classes (with licensing/provenance)
 - Energy estimates per task; carbon disclosures
@@ -1256,13 +2194,13 @@ The Intelligence Inversion rewires the production function: **compute‑plus‑o
 ### Evaluation & Benchmark Regime
 
 - **Coverage:** % of outputs verified; **Escape rate:** % of errors past verification.
-- **Task‑specific evals:** clinical safety, financial correctness, legal consistency, code tests, data‑handling compliance.
+- **Task‑specific evaluations:** clinical safety, financial correctness, legal consistency, code tests, data‑handling compliance.
 - **Manipulation tests:** susceptibility/resistance indices using controlled affect, timing, and voice parameters.
 - **Adversarial suites:** prompt‑injection corpora, tool‑abuse playbooks, poisoning datasets.
-- **Operational evals:** latency, throughput, cost per verified outcome, compute‑hour intensity.
-- **Governance evals:** disclosure compliance, auditability, right‑to‑explanation latency.
+- **Operational evaluations:** latency, throughput, cost per verified outcome, compute‑hour intensity.
+- **Governance evaluations:** disclosure compliance, auditability, right‑to‑explanation latency.
 
-**Practice:** Treat evals as **software artifacts** (versioned, reviewed, CI‑executed); block promotion without green gates.
+**Practice:** Treat evaluations as **software artifacts** (versioned, reviewed, CI‑executed); block promotion without green gates.
 
 ### Security & Safety Controls
 
@@ -1297,7 +2235,136 @@ Activate workforce transition measures in a sector when:
 ### Risk Register (selected) and Mitigations
 
 | Risk                         | Description                       | Primary Mitigations                                              |
-|------------------------------|-----------------------------------|------------------------------------------------------------------|
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+--|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
 | **Verification debt**        | Agents outpace evaluator quality  | Eval‑as‑code; coverage SLAs; promotion gates; escrowed rollbacks |
 | **Vendor lock‑in**           | Proprietary orchestration/tooling | Capability interfaces; portability clauses; shadow models        |
 | **Manipulation/wireheading** | Persuasion beyond user welfare    | Manipulation classifiers; risk knobs; disclosure and appeals     |
@@ -1320,11 +2387,14 @@ Activate workforce transition measures in a sector when:
 
 A 1,000‑day transition is feasible when organizations operationalize four disciplines in parallel: (1) **AgentOps with verification‑first engineering**, (2) **governed compute and provenance**, (3) **clear liability and incident response**, and (4) **economic mechanisms** that direct abundant cognition toward public value. The playbooks and thresholds above translate those disciplines into concrete actions. Executed with transparency and discipline, they convert intelligence deflation into durable gains for institutions and for people.
 
+---
+
+
 ## Falsifiable Claims, Research Agenda, and Governance for Iteration
 
 ### What success (or failure) will look like—falsifiable claims
 
-To prevent hand‑waving, progress in the intelligence economy must be evidenced by **public, disprovable** signals. The following claims are designed to be tested within ~1,000 days (by **August 2028**), using the metrics defined in this paper.
+To prevent hand‑waving, progress in the intelligence economy must be evidenced by **public, disprovable** signals. The following claims are designed to be tested within ≅1,000 days (by **August 2028**), using the metrics defined in this paper.
 
 1. **Agent Autonomy at Scale.**
    In at least three large service domains (e.g., customer support, coding assistance for maintenance tasks, claims adjudication), production deployments will achieve:
@@ -1412,7 +2482,7 @@ If a domain fails to meet these thresholds under comparable compute access and g
 
 ### Testbeds and methods (how to learn fast)
 
-#### Enterprise Agentic Testbeds (claims, support, codemods)
+#### Enterprise Agentic Testbeds (claims, support, code generation)
 
 - Side‑by‑side execution: human‑primary vs. agent‑primary with identical verifiers.
 - Metrics: autonomy, escape rate, cost per verified outcome, MTTR, customer trust deltas.
@@ -1473,6 +2543,9 @@ These are **stop‑and‑rethink triggers**, not excuses to lower safety or welf
 
 The intelligence inversion is not a single bet on faster models; it is a **testable program** that couples engineering disciplines (AgentOps, verification, provenance), economic mechanisms (civic compute and service credits), and governance (liability, transparency, appeals). By stating falsifiable claims, funding shared testbeds, and committing to standards and ethical boundaries, institutions can convert abundant cognition into **reliable, trustworthy, and broadly distributed** gains—and adjust course rapidly if the evidence points elsewhere.
 
+---
+
+
 ## Human‑Flourishing Architecture for the Intelligence Economy
 
 ### First principles
@@ -1513,7 +2586,7 @@ In an economy where cognition is abundant, **discretionary time** becomes the pr
 #### Design rules
 
 - Every agentic workflow must publish **time-to-outcome** alongside cost.
-- Public programs target \(T_{\Delta} \geq 5\) hours/week for median households within 24 months, using UPAIs to remove administrative burdens (benefits, taxes, scheduling).
+- Public programs target \(T_{\Delta} \geq 5\) hours a week for median households within 24 months, using UPAIs to remove administrative burdens (benefits, taxes, scheduling).
 - Enterprises report WFR deltas for affected roles as a condition of claiming “AI-driven productivity” in ESG or investor communications.
 
 ### Education: from content coverage to capability formation
@@ -1599,8 +2672,101 @@ In an economy where cognition is abundant, **discretionary time** becomes the pr
 A standardized report that sits beside financials:
 
 | Category           | Metric                                              | Target/Signal            |
-|--------------------|-----------------------------------------------------|--------------------------|
-| **Time**           | Time Dividend (T_{\Delta}) (hrs/week, median)       | ↑ to ≥5 within 24 months |
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+--|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+--|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+--|
+| **Time**           | Time Dividend (T_{\Delta}) (hrs a week, median)       | ↑ to ≥5 within 24 months |
 | **Trust**          | Appeal resolution time (p95); disclosure compliance | ≤72 hours; ≥99%          |
 | **Attention**      | Manipulation flag rate; consent quality index       | ↓ QoQ; ↑ QoQ             |
 | **Education**      | Learning gains per \$100; transfer scores           | ↑ QoQ; ↑ QoQ             |
@@ -1615,8 +2781,332 @@ All metrics must be auditable and tied to verifiers.
 ### Failure modes and countermeasures
 
 | **Failure Mode**                                     | **Symptom / Early Warning**                                                                | **Countermeasure / Mitigation Strategy**                                                                                                                                             |
-|------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Verification Debt**                                | AI systems make confident but wrong decisions; “shadow errors” discovered post-deployment. | Adopt **verification-first engineering**; treat evals as code; enforce promotion gates (≥95% coverage, ≤0.5% escape). Maintain evaluator libraries and continuous EvalOps pipelines. |
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+--|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+--|
+| **Verification Debt**                                | AI systems make confident but wrong decisions; “shadow errors” discovered post-deployment. | Adopt **verification-first engineering**; treat evaluations as code; enforce promotion gates (≥95% coverage, ≤0.5% escape). Maintain evaluator libraries and continuous EvalOps pipelines. |
 | **Data Provenance & Poisoning Risk**                 | Model drift, hallucination, or unexplained errors after retraining.                        | Require **dataset SBOMs**, provenance scoring, and poisoning audits. Use quarantine policies and signed data sources.                                                                |
 | **Compute / Model Vendor Lock-In**                   | Migration to other models or clouds infeasible without major redesign.                     | Implement **capability interfaces** and **portability metrics**; test workflows on ≥2 providers with ≤2-pt outcome deltas.                                                           |
 | **Ethical Misalignment / Manipulation**              | Models subtly optimize for engagement or convenience over user welfare.                    | Integrate **manipulation classifiers**, user “risk knobs,” disclosure UX, and welfare-aligned optimization. Conduct red-team testing.                                                |
@@ -1637,6 +3127,9 @@ All metrics must be auditable and tied to verifiers.
 ### Human‑Flourishing Architecture: Aligning Abundant Cognition with Trust & Time
 
 Intelligence abundance can produce either a **thin optimization** of clicks and costs or a **thick settlement** that expands capability, belonging, and time. The human‑flourishing architecture presented here adds the missing layer: principles, norms, and measurements that keep the economic and technical stack aimed at **dignity, agency, and community**. By treating **time** as the binding constraint, **trust** as a design variable, and **relationships** as infrastructure—not externalities—institutions can convert the intelligence inversion into a broad‑based advance in human welfare.
+
+---
+
 
 ## Glossary of the Intelligence Economy White Paper
 
@@ -1728,7 +3221,7 @@ Intelligence abundance can produce either a **thin optimization** of clicks and 
   - **Reserve Coverage Ratio (CCR)** — Ratio of civic compute present value to CSRA market capitalization; indicates adequacy of reserve backing.
 
 - **S**
-  - **Safety Layer** — Technical and procedural safeguards—evals, kill-switches, policy gates—that prevent or mitigate harmful agent behavior.
+  - **Safety Layer** — Technical and procedural safeguards—evaluations, kill-switches, policy gates—that prevent or mitigate harmful agent behavior.
   - **Service Credit (Culture Credit / HISC)** — Programmable currency units redeemable for accredited welfare services; distributed universally or as earned top-ups.
   - **Service-Level Objective (SLO) / Service-Level Agreement (SLA)** — Contractual or internal performance guarantees defining acceptable error rates, latency, and reliability for agent operations.
   - **Soft Layer** — Spendable, human-issued currency layer (HISC) tied to verified welfare services and pegged to the CSRA.
@@ -1757,10 +3250,58 @@ Intelligence abundance can produce either a **thin optimization** of clicks and 
 - **X–Z**
   - **Zero-Sum vs. Positive-Sum Intelligence** — A framing distinction: *zero-sum* AI extracts attention and profit; *positive-sum* AI expands human capability and welfare through alignment and verification.
 
+---
+
+
 ## Abbreviations
 
 | Acronym | Meaning                             |
-|---------|-------------------------------------|
+|
+---
+
+
+---
+
+
+---
+
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+-|
 | AAI     | Agent Autonomy Index                |
 | ACR     | Agent Coverage Ratio                |
 | AEFTE   | Agent-Equivalent Full-Time Employee |
@@ -1784,16 +3325,274 @@ Intelligence abundance can produce either a **thin optimization** of clicks and 
 | VCR     | Verifier Coverage Ratio             |
 {: .table .table-striped .table-hover}
 
+---
+
+
 ## Appendix A — Impact by Role Type (indicative)
 
 | Role category                                                          | Near‑term (0–12 mo)                                     | 12–36 mo outlook                                              | Mitigations                                                |
-|------------------------------------------------------------------------|---------------------------------------------------------|---------------------------------------------------------------|------------------------------------------------------------|
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+
+---
+
+|
 | Standardized cognitive (analyst, junior ops, basic coding, L1 support) | **High automation pressure** via digital twins/agents   | **Very high**; roles rebundled around exceptions              | Upskill to AgentOps; own verifiers; domain oversight       |
 | Creative production (design, video, copy)                              | Rapid **toolchain uplift**; fewer hands                 | **Agentic pipelines** dominate; human taste/network matters   | Brand/story strategy; taste councils; customer co‑creation |
 | Regulated professional (finance, legal, clinical)                      | **Co‑pilot + verification** gains                       | Progressive **delegation** with strong verifiers              | Guardrails, provenance, liability frameworks               |
 | Care, education, public sector field work                              | Assistive agents; slower substitution                   | Mix of human‑led service **plus** agents                      | Augmented capacity; human‑trust emphasis                   |
 | Management                                                             | Shift to **agent portfolios** and outcome orchestration | Fewer middle layers; **narrower spans** with better telemetry | Retrain toward metrics design, exception handling          |
 {: .table .table-striped .table-hover}
+
+---
+
 
 ## Appendix B — 90‑Day Action Checklist
 
