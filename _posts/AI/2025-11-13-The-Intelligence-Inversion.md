@@ -267,16 +267,16 @@ In practical terms, three things changed:
 
 Tokens—the basic units AI models use to think—used to represent words or fragments of text. Now they represent **meaningful units from every domain**:
 
-* a section of an image,
-* a moment of audio,
-* a video movement,
-* a row in a table,
-* a policy clause,
-* a step in a workflow,
-* a sensor reading,
-* a diagnostic event,
-* a supply-chain update,
-* an operational signal from the grid or field equipment.
+- a section of an image,
+- a moment of audio,
+- a video movement,
+- a row in a table,
+- a policy clause,
+- a step in a workflow,
+- a sensor reading,
+- a diagnostic event,
+- a supply-chain update,
+- an operational signal from the grid or field equipment.
 
 **Anything your business touches—words, images, numbers, sounds, operational, scientific, or procedural—can now be represented, reasoned over, and acted on by AI.**
 
@@ -286,10 +286,10 @@ Instead of working with the equivalent of “one meeting’s worth” of informa
 
 This means AI can:
 
-* follow complex, multi-step processes end-to-end,
-* maintain consistency across decisions,
-* remember constraints and policies,
-* coordinate actions across tools, systems, and teams.
+- follow complex, multi-step processes end-to-end,
+- maintain consistency across decisions,
+- remember constraints and policies,
+- coordinate actions across tools, systems, and teams.
 
 It’s the difference between a smart intern and **a fully briefed chief of staff** who never forgets anything.
 
@@ -298,10 +298,11 @@ It’s the difference between a smart intern and **a fully briefed chief of staf
 Advances in how models run—streaming, batching, parallel execution, automated checking, and verification—mean that the system can now update this large working memory **faster, cheaper, and with far more consistency** than before.
 
 This enables:
-* real-time responsiveness,
-* automated cross-checking of work,
-* higher-quality outputs with lower error rates,
-* lower cost per validated action.
+
+- real-time responsiveness,
+- automated cross-checking of work,
+- higher-quality outputs with lower error rates,
+- lower cost per validated action.
 
 In short:
 
