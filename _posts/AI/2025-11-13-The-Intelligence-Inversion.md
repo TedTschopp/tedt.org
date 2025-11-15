@@ -1270,12 +1270,12 @@ Once an **agent + verifier stack** consistently meets or exceeds target quality:
   - Need supervision and coordination
   - Add calendar latency
 
-In high‑tempo or compliance‑sensitive workflows, those penalties can dominate. MVL becomes **negative**: keeping a human in the critical path reduces overall system value.
+In high‑tempo or compliance‑sensitive workflows, those penalties can dominate. The marginal value of an average human becomes **negative**: keeping a human in the critical path reduces overall system value.
 
 From a firm’s perspective, the economically rational move is then to:
 
 - Put **agents in the critical path**, and
-- Reposition humans where their MVL stays positive:
+- Reposition humans where their marginal value stays positive:
 
   - Exception handling
   - Policy and objective setting
@@ -1382,12 +1382,12 @@ Job descriptions should start to reflect these responsibilities explicitly.
 
 #### Why broad‑based, tax‑funded UBI struggles arithmetically
 
-Many discussions jump to **universal basic income (UBI)** as the policy answer. There are hard arithmetic constraints if you try to fund large, flat entitlements from **conventional tax bases**.
+At this point many discussions jump to **universal basic income (UBI)** as the policy answer for those who do not accelerate to **new economic roles or sectors**. There are hard arithmetic constraints if you try to fund large, flat entitlements from **conventional tax bases**.
 
 Stylized example:
 
 - Target **$20,000 per person per year**
-- Population ≈ 330 million → ≈ **$6.6T/year** in outlays
+- US Population ≈ 330 million → ≈ **$6.6T/year** in outlays
 - Compare that with current‑order **total federal tax receipts** (on the order of $5T/year) and existing obligations
 
 Layer on two trends:
@@ -1401,26 +1401,21 @@ You get a structural funding gap unless you:
 - Cut other spending drastically
 - Or find **new mechanisms** (e.g., tying monetary creation or dividends to shared assets, such as public compute or data)
 
-The takeaway for enterprises: **don’t assume UBI will absorb the shock** for your workforce on a useful timeline. Workforce strategy, reskilling, and role rebundling remain core leadership responsibilities.
+The takeaway for enterprises: **don’t assume UBI will absorb the shock** for your customers or your workforce on a useful timeline.  Workforce strategy, reskilling, and role rebundling remain core leadership responsibilities that can not be avoided in the foreseeable future.
 
-#### Where human MVL stays positive
+As a leader of a large organization, you should not assume that UBI or any other large‑scale transfer scheme will arrive in time, at scale, to stabilize your demand. Historically in the U.S., major discretionary interventions only tend to show up once **headline unemployment is in the high‑single digits** and broader underemployment is in the **low‑to‑mid teens**—on the order of 10–15% of the workforce in visible distress. Even then, the timing is erratic: **automatic stabilizers** (unemployment insurance, food assistance, etc.) expand quickly, but the big, bespoke packages arrive on very different clocks—**weeks in an acute crisis like COVID, roughly a year in the 2008–09 Great Recession, and several years in the Great Depression before the New Deal reached scale**. An AI‑driven employment shock that plays out over a decade is therefore likely to **outrun the political system** for long stretches.
+
+That gap matters directly for your customers. If UBI and other supports fail to keep pace, large segments of the population may **not reliably cover housing, food, healthcare, and energy**, let alone discretionary spend. That doesn’t just dent “premium” categories; it **resets the effective standard of living downward**, producing fragile demand, higher volatility in purchasing, and rising defaults as household balance sheets structurally weaken. For enterprises, this shows up as **thinner demand curves, shorter customer lifetimes, and higher churn—even if your product is objectively strong.** Leadership teams should explicitly plan for this scenario: stress‑test business models against prolonged periods of weaker demand, build offerings and pricing that remain viable when customers are cash‑constrained, and treat customer financial resilience as a core strategic input, not a background assumption the state will handle.
+
+#### Where human marginal value stays positive
 
 The inversion is not universal; there are zones where humans retain clear marginal value:
 
-- **Thick trust and lived accountability**
-  Roles where legitimacy, empathy, or moral authority *is* the product (certain public services, sensitive care, high‑stakes negotiations).
-
-- **Rights‑of‑way and embodied access**
-  Work tied to physical presence, permits, and scarce interfaces that software cannot easily obtain.
-
-- **Explicit responsibility regimes**
-  Contexts where law, regulation, or culture demand identified human decision‑makers.
-
-- **Narrative and network capital**
-  People who convene communities, steward brands, and set **collective meaning** have value beyond raw cognition.
-
-- **Non‑stationary frontier problems**
-  Fast‑changing domains with sparse ground truth and ambiguous evaluation, where diverse human perspectives improve outcomes.
+- **Thick trust and lived accountability** - Roles where legitimacy, empathy, or moral authority *is* the product (certain public services, sensitive care, high‑stakes negotiations).
+- **Rights‑of‑way and embodied access** - Work tied to physical presence, permits, and scarce interfaces that software cannot easily obtain.
+- **Explicit responsibility regimes** - Contexts where law, regulation, or culture demand identified human decision‑makers.
+- **Narrative and network capital** - People who convene communities, steward brands, and set **collective meaning** have value beyond raw cognition.
+- **Non‑stationary frontier problems** - Fast‑changing domains with sparse ground truth and ambiguous evaluation, where diverse human perspectives improve outcomes.
 
 Your talent and organization design should **lean into these zones**.
 
@@ -1447,7 +1442,7 @@ This chapter lives at the intersection of economics and architecture. Different 
 - Don’t bank on **slow adjustment**; agent capacity can scale in months, not decades. Plan for **step‑function shifts** in certain lines of business.
 - Build a **people strategy for the inversion**:
 
-  - Early‑career pathways into higher‑MVL roles
+  - Early‑career pathways into higher‑marginal value roles
   - Internal mobility into exception handling, policy, and governance
   - Clear communication about how agentization will be used
 
@@ -1468,7 +1463,7 @@ This chapter lives at the intersection of economics and architecture. Different 
 - Build **detection mechanisms** for inversion points:
 
   - Where workflows meet the criteria in §5.5
-  - Where human MVL is likely trending negative
+  - Where human marginal value is likely trending negative
 
 …and have reference architectures ready for **agent‑first implementations**.
 
@@ -1500,7 +1495,7 @@ This chapter lives at the intersection of economics and architecture. Different 
   - Explanation and evidence surfaces for decisions
   - Controls for customers to opt into or out of agent‑driven flows
 
-- Build **metrics suites** that can track MVL over time:
+- Build **metrics suites** that can track marginal value of a human over time:
 
   - Side‑by‑side comparisons of human‑only, human+agent, agent‑first flows
   - Quality, latency, cost, and satisfaction across variants
@@ -1551,8 +1546,6 @@ We’ll cover:
 - What different roles in the enterprise should actually do next
 
 We’ll end by connecting this back to the **economic and organizational implications** of treating energy as the gating layer of compute.
-
----
 
 ### Demand outlook: why power is the new scarcity
 
@@ -1689,18 +1682,10 @@ For AI builders, this shows up as:
 
 Practical siting heuristics:
 
-- **Prefer firm, proximate capacity**
-
-  - Existing or uprated nuclear, hydro, or efficient gas; substations with documented headroom.
-- **Avoid water‑stressed basins**
-
-  - Unless you can operate in **water‑light modes** (air‑side economization, non‑potable sources).
-- **Exploit climate where possible**
-
-  - Cool, dry climates lower mechanical loads; warm‑water loops plus free cooling broaden siting options.
-- **Co‑locate with heat sinks**
-
-  - District heating or industrial processes that can absorb warm water and turn waste heat into a product.
+- **Prefer firm, proximate capacity** - Existing or uprated nuclear, hydro, or efficient gas; substations with documented headroom.
+- **Avoid water‑stressed basins** - Unless you can operate in **water‑light modes** (air‑side economization, non‑potable sources).
+- **Exploit climate where possible** - Cool, dry climates lower mechanical loads; warm‑water loops plus free cooling broaden siting options.
+- **Co‑locate with heat sinks** - District heating or industrial processes that can absorb warm water and turn waste heat into a product.
 
 #### Procurement: from annual RECs to 24/7 CFE portfolios
 
@@ -1724,11 +1709,11 @@ Contract language should emphasize:
 Standard disclosures you should normalize:
 
 - **24/7 CFE coverage (%)**
-- **Scope 2 emissions** (location‑ and market‑based)
+- **Scope 2 emissions** (location‑based and market‑based)
 - Residual grid mix assumptions
 - **ECI_outcome** by major AI service line
 
-#### Operations: making compute carbon‑ and price‑aware
+#### Operations: making compute carbon‑aware and price‑aware
 
 Even with good siting and procurement, **how you operate** matters.
 
@@ -1825,21 +1810,21 @@ Assigning these explicitly avoids a common failure mode: everyone cares, but **n
 
 #### A 12‑month energy playbook for AI‑heavy organizations
 
-**0–90 days**
+**0 – 90 days**
 
 - Adopt **ECI_outcome** as a top‑line KPI for at least one major AI service.
 - Instrument **per‑rack metering** and refine PUE/WUE measurement at existing sites.
 - Stand up **hourly CFE accounting** for at least one flagship data center.
 - Lock in design standards for **liquid cooling at ≥ 100 kW/rack** and warm‑water loops in all new builds.
 
-**90–180 days**
+**90 – 180 days**
 
 - Execute **at least two PPAs/VPPAs** in different regions with complementary shapes and hourly data.
 - Pilot **carbon‑aware scheduling** for one training cluster and one batch inference workload.
 - Map your **interconnection posture** with grid operators and identify where queue position is critical.
 - Launch **heat‑reuse feasibility** studies with local utilities or district heating networks for priority sites.
 
-**180–365 days**
+**180 – 365 days**
 
 - Commission your first **high‑density, liquid‑cooled hall** and validate seasonal PUE against design.
 
@@ -1935,327 +1920,1199 @@ We turn to those questions next.
 
 ## Economic & Organizational Implications
 
-### Macroeconomic Transformation
+# Chapter AA — Economic & Organizational Implications
 
-**Compute as dominant capital stock.**
-In the intelligence economy, productive capacity increasingly resides in **compute capital**—GPUs, high‑bandwidth memory, interconnects, and the orchestration software that coordinates them. Unlike traditional plant and equipment, compute is **fungible across use cases** and **upgradeable in place** via software and model swaps. Comparative advantage shifts toward jurisdictions and firms that can provision **reliable, low‑latency access to compute** and the talent to orchestrate it.
+### How an Energy‑Bound Intelligence Economy Reshapes Markets, Firms, and Work
 
-**Monetary policy transmission weakens through the labor channel.**
-When firms meet incremental demand by **renting compute and deploying agents** rather than hiring, the classic “rates → borrowing → hiring” transmission loop attenuates. Cheaper capital no longer guarantees higher employment if compute substitutes for labor at the margin. Policy mixes will need to evolve toward:
+In the previous chapters we argued:
 
-- **Credit and procurement channels** that target civic compute, public‑interest AI, and infrastructure;
-- **Countercyclical compute facilities** (e.g., public options for health, education, justice) instead of relying primarily on payroll expansion.
+* **Intelligence Inversion:** for many cognitive tasks, agents will become more
+  capable, reliable, and cheaper than median human workers.
+* **Energy as Gating Layer:** you can only scale those agents as fast as you can
+  secure, cool, and efficiently use power.
 
-**Distributional dynamics and concentration risk.**
-Returns accrue where **compute, orchestration, and data access** are jointly controlled. Without counterweights, profits concentrate among platform orchestrators and capital holders, while wage shares in affected sectors decline. The principal distributional lever becomes **access to aligned intelligence** (e.g., universal personal AIs) and **societal ownership of meaningful compute** for public goods.
+This chapter asks: **what happens to economies, industries, and organizations
+when that’s true?**
 
-**Public finance and safety nets.**
-Tax bases anchored in **wages and corporate profits** face pressure if labor’s share of value falls and profits become more mobile. Broad‑based cash entitlements financed purely by contemporary tax receipts strain arithmetic. Sustainable safety nets will require **new issuance and distribution mechanisms**, targeted insurance, and **in‑kind AI services** (e.g., healthcare, education, legal aid) to protect living standards as price levels for intelligence‑intensive services collapse.
+We’ll cover:
 
-**National competitiveness.**
-Competitiveness indices should expand beyond broadband and STEM graduates to include:
+1. How macroeconomics changes when **compute capital** is the dominant
+   production factor
+2. How **industry structure and competition** evolve in an agentic world
+3. The **labor‑market dynamics** and where humans still matter most
+4. The **regulatory and governance** stack that emerges around agents
+5. How enterprise **operating models and unit economics** change as you move to
+   agent‑first
+6. What different leadership roles should take away
+7. How all of this points to the **new roles and organizational changes** you’ll
+   need next
 
-- **Compute density** per capita and per unit GDP;
-- **Latency and reliability** of access to model and agent ecosystems;
-- **Civic AI capacity** (health, education, safety, justice);
-- **Agent governance standards** and liability regimes that encourage adoption while constraining systemic risk.
 
-### Industrial Organization & Competition
 
-**From data moats to orchestration moats.**
-Proprietary data remains valuable, but the decisive edge shifts to **process moats**: how effectively a firm composes models, tools, memory, verifiers, and retrievers into **agentic workflows**. Orchestration quality (task decomposition, tool selection, verification) compounds across domains, yielding **economies of scope** larger than those obtained from any single model.
+## 1. Macroeconomic Transformation
 
-**Simultaneity and scale.**
-Agent fleets upgrade **instantaneously** when the stack improves. Vendors that ship “**workforce‑as‑a‑service**” with performance SLOs and indemnities compress procurement cycles and crowd out fragmented internal efforts.
+### 1.1 Compute as dominant capital stock
 
-**Attention markets intensify.**
-As intelligence costs approach zero, revenue models skew toward **capturing and directing attention**. Firms that fail to defend customer attention risk margin erosion even if their cost base falls. Trust‑preserving experience design becomes a strategic control point, not a cosmetic concern.
+In an intelligence economy, productive capacity lives increasingly in **compute
+capital (K_c)**:
 
-### Labor‑Market Dynamics
+* GPUs / accelerators
+* High‑bandwidth memory and interconnects
+* The orchestration software that turns raw FLOPs into reliable agent behavior
 
-**Sequenced impact.**
-Automation initially targets **standardized cognitive work** (claims, L1 support, drafting, routine coding, low‑stakes research) where outputs are specifiable and verifiable. **Middle management** compresses as dashboards and simulators reduce coordination burdens. **Regulated professions** transition through extended human‑in‑the‑loop phases with rising agent share. **Care and public‑facing services** remain human‑led longer, though their back‑office layers agentize early.
+This capital differs from traditional plant:
 
-**Early‑career displacement and cohort scarring.**
-Hiring **pauses** typically precede separations as agent capacity absorbs growth. Reduced entry‑level opportunities impair skill formation and career ladders. Effective mitigation pairs **apprenticeship‑style programs** with **AgentOps** skill paths and internal marketplaces for exception handling, customer trust, and policy roles.
+* It’s **fungible across use cases**: the same cluster can run claims agents one
+  hour, simulation jobs the next.
+* It’s **upgradeable in place**: software, models, and kernels can improve
+  capacity without pouring more concrete.
 
-**Rebundling of human work.**
-Remaining human roles concentrate in:
+Comparative advantage shifts toward jurisdictions and firms that can offer:
 
-- **Exception adjudication** and escalation;
-- **Policy design and responsibility** (owning consequences and liability);
-- **Narrative judgment** (defining meaning, taste, and brand);
-- **Relationship and network capital** (trust, convening, legitimacy).
+* Dense, reliable access to **compute**
+* Abundant, stable **power**
+* The talent to **orchestrate** models, agents, and tools safely
 
-### Regulatory and governance implications
+GDP per capita starts to correlate as much with **compute density +
+orchestration maturity** as with traditional capital per worker.
 
-**Algorithmic organizational control.**
-Corporate and associational law is evolving toward forms that permit **algorithmic control** and automated decision‑making under human oversight. Core issues include:
+### 1.2 Monetary policy transmission weakens through the labor channel
 
-- **Attribution and liability** when agents act;
-- **Duty‑of‑care** and documentation standards for agent deployment;
-- **Capital adequacy** for agent‑run service lines whose errors have systemic impact.
+Traditional macro playbook:
 
-**Assurance and supervision.**
-Expect requirements for **model/agent risk management** akin to financial MRM, including:
+> Cut rates → cheaper capital → more borrowing → more hiring → higher incomes.
 
-- Documented **intended use**, **limitations**, and **off‑label prohibitions**;
-- **Pre‑deployment evaluations**, stress tests, and **scenario analysis**;
-- **On‑going monitoring** (drift, poisoning detection, adversarial testing);
-- **Human override** and **rollback** procedures;
-- **Audit‑ready telemetry** and tamper‑evident logs.
+In an agentic economy:
 
-**Public procurement modernization.**
-Governments will need to purchase not only models but **verifier libraries, agent platforms, and shared civic compute**, with contracting frameworks that account for **performance SLOs**, **safety SLAs**, and **upgrade rights** rather than static deliverables.
+* Firms meet incremental demand by **renting compute and deploying agents**, not
+  necessarily by hiring humans.
+* Cheaper capital may translate into **larger clusters**, not proportional
+  employment growth.
 
-### Enterprise operating model: from people‑first to agent‑first
+Result:
 
-**Service lines become agentic.**
-Processes are redesigned with agents in the **critical path** and humans **around the loop**. Each service line has a canonical **agent template**: planner, tool calls, memory, verifiers, fallback, and escalation logic.
+* The classic “rates → borrowing → hiring” channel weakens.
+* Policy levers need to tilt more toward:
 
-**AgentOps as a first‑class function.**
-Responsibilities include:
+  * **Credit and procurement** targeted at civic compute, public‑interest AI,
+    and infrastructure
+  * Direct support for **countercyclical AI capacity** in health, education,
+    justice, and safety, rather than just payroll support
 
-- **Pattern libraries** for planners, tool‑use, retrieval, and verifiers;
-- **Guardrail catalogs** (policy, safety, compliance);
-- **Telemetry & observability** (latency, pass rates, failure modes);
-- **Incident response** (circuit breakers, rollbacks, blacklists);
-- **Release management** (canaries, A/Bs, version pinning).
+### 1.3 Distribution, concentration, and access
 
-**Verification‑first engineering.**
-For every agent task, define a verifier (stat tests, secondary models, business rules) and a **quality budget** (error budgets with financial penalties where appropriate). Verification becomes the **pacing asset** for safe scale‑out.
+Returns concentrate where **compute, orchestration, and data** are jointly
+controlled:
 
-**Identity, policy, and least‑privilege for agents.**
-Agents receive **unique identities**, **scoped credentials**, and **task‑scoped entitlements**. Policies define what an agent **may see**, **may do**, and **must never do**, with provable enforcement at the tool boundary.
+* Platform providers and capital owners capture a large share of value.
+* Wage share in heavily agentized sectors falls, even as output rises.
 
-**Provenance and data contracts.**
-Data sources used for retrieval, fine‑tuning, or verifier training must carry **provenance**, licensing, and **toxicity/poisoning scores**. Data contracts specify refresh cadences, retention, and acceptable use.
+Two redistribution levers gain importance:
 
-### Financial model and unit economics
+1. **Access to aligned intelligence**
 
-**Cost structure shifts.**
-Personnel costs give way to **compute and orchestration** (inference tokens, tool/API charges, verifier runs, memory stores, logging, and evaluation infrastructure). The new margin stack prioritizes **quality‑adjusted throughput** and **verification efficiency**.
+   * Universal or low‑cost personal AIs, civic copilots, and public‑interest
+     agents.
+   * These reduce inequality of *capability*, even if income inequality rises.
 
-#### A simple calculus for go/no‑go
+2. **Societal ownership of meaningful compute**
+
+   * Public or shared ownership stakes in large compute pools.
+   * Governance mechanisms to allocate capacity to public goods.
+
+Without these, you risk a narrow layer of “compute landlords” and a broad base
+with access only as customers, not owners.
+
+### 1.4 Public finance and safety nets
+
+Tax bases tied to **wages and corporate profits** come under pressure:
+
+* Labor’s share of value shrinks in agentized sectors → softer wage tax base.
+* Profits from AI and orchestration can be **highly mobile** and arbitraged
+  across jurisdictions.
+
+Broad, tax‑funded **flat cash entitlements** at meaningful levels run into hard
+arithmetic constraints if they rely solely on current receipts.
+
+More plausible safety nets look like:
+
+* **Targeted insurance** for disruptions (e.g., retraining, sectoral downturns).
+* **In‑kind AI services**: free or subsidized copilots for health, education,
+  legal aid, job search.
+* New issuance and distribution mechanisms that reflect **compute and data as
+  public assets**, not just income streams.
+
+### 1.5 National competitiveness
+
+Competitiveness indices need to grow beyond “STEM grads + broadband”.
+
+You’ll see metrics like:
+
+* **Compute density** per capita and per unit of GDP
+* **Latency, reliability, and reach** of access to model and agent ecosystems
+* **Civic AI capacity** in health, education, safety, and justice
+* **Agent governance regimes** and liability standards that enable adoption
+  while constraining systemic risk
+
+Nations that can field **cheap, reliable, well‑governed intelligence** at scale
+will pull ahead.
+
+
+
+## 2. Industrial Organization & Competition
+
+### 2.1 From data moats to orchestration moats
+
+Proprietary data remains valuable, but the decisive edge shifts to
+**orchestration**:
+
+* How well you decompose tasks
+* How you route between models and tools
+* How you design memory, verification, and feedback loops
+
+These **process moats** compound:
+
+* Orchestration patterns proven in one domain (e.g., support) can be adapted to
+  others (claims, onboarding, underwriting).
+* You get **economies of scope**: the more domains you orchestrate, the better
+  your orchestration toolkit gets.
+
+Data is necessary but not sufficient. The compounding advantage lives in
+**agentic workflow design**.
+
+### 2.2 Simultaneity and “workforce‑as‑a‑service”
+
+Because agents are software:
+
+* A single stack upgrade can roll out to **thousands of agents overnight**.
+* Vendors can sell “**workforce‑as‑a‑service**”:
+
+  * SLOs for resolution rate, quality, and latency
+  * Indemnities and penalties for failures
+  * Continuous improvement baked into the contract
+
+This compresses procurement cycles:
+
+* Instead of multi‑year transformations, you get short pilots followed by **step
+  adoption** once risk and governance concerns are addressed.
+
+### 2.3 Attention and experience moats
+
+As the marginal cost of “thinking” approaches zero, revenue models skew toward:
+
+* **Capturing, holding, and directing attention**
+* Curating **trusted experiences** in an AI‑saturated environment
+
+Firms that fail to defend or grow customer attention risk margin erosion, even
+if:
+
+* Their internal cost base plummets via automation.
+* Their models and orchestration are technically strong.
+
+Trust‑preserving experience design—how your agents interact with
+customers—becomes a **strategic control point**, not a UX afterthought.
+
+
+
+## Labor‑Market Dynamics
+
+### Sequenced impact
+
+The Intelligence Inversion does **not** hit every role at once. Likely sequence:
+
+1. **Standardized cognitive work**
+
+   * Claims processing, L1 support, routine coding, low‑stakes research, content
+     drafting.
+   * Clear specs, high volume, good supervision targets → early agentization.
+
+2. **Middle management**
+
+   * Dashboards, simulators, and verifiers reduce the need for layers focused on
+     status collection and coordination.
+   * Spans of control widen; the middle “coordination sandwich” thins.
+
+3. **Regulated professional services**
+
+   * Long human‑in‑the‑loop phases where agents do the bulk of cognitive work,
+     but humans sign off and carry liability.
+   * Over time, agent share of effort rises; human roles rebundle around
+     judgment, accountability, and client trust.
+
+4. **Care and public‑facing services**
+
+   * Direct substitution slower due to trust, culture, and duty‑of‑care.
+   * Their back‑office cores (scheduling, documentation, case management)
+     agentize early.
+
+### Early‑career displacement and cohort scarring
+
+Before layoffs, you often see **hiring pauses**:
+
+* Growth in work volume is absorbed by agents.
+* New entry‑level roles vanish or shrink.
+
+Consequences:
+
+* Fewer on‑ramps for early‑career workers.
+* Reduced time in “apprenticeship roles” that teach tacit skills.
+* Persistent scars for cohorts that enter during periods of aggressive
+  agentization.
+
+Mitigation paths:
+
+* **Apprenticeship‑style programs** that pair humans with agents explicitly for
+  learning.
+* Career tracks that move people into:
+
+  * AgentOps and orchestration
+  * Trust, safety, and customer stewardship
+  * Policy, governance, and escalation roles
+
+### Rebundling of human work
+
+As agents take over routine cognition, human roles skew toward:
+
+* **Exception adjudication & escalation**
+
+  * Handling edge cases the verifier can’t cleanly decide.
+  * Exercising judgment in ambiguous, high‑stakes situations.
+
+* **Policy design & responsibility**
+
+  * Setting objectives, constraints, and guardrails.
+  * Being accountable for outcomes when agents act.
+
+* **Narrative judgment**
+
+  * Defining brand, taste, and meaning.
+  * Turning raw options into coherent stories and strategy.
+
+* **Relationship & network capital**
+
+  * Building and maintaining trust with customers, regulators, partners, and
+    employees.
+  * Convening communities and coalitions.
+
+Job architecture, performance management, and rewards need to **reflect this
+rebundling**, not pretend the old job shapes remain intact.
+
+### Regulatory & Governance Implications
+
+#### Algorithmic organizational control
+
+Corporate and associational law is evolving toward **algorithmically steered
+entities**:
+
+* Boards and executives delegate operational control to agents and frameworks,
+  not just human managers.
+* Agents routinely make decisions with real financial and social impact.
+
+Key legal questions:
+
+* **Attribution & liability:** when an agent causes harm, who is responsible—the
+  deploying firm, the vendor, specific individuals?
+* **Duty‑of‑care:** what processes and documentation are required before agents
+  can act in high‑risk domains?
+* **Capital adequacy:** for agent‑run services (e.g., lending, trading, critical
+  infrastructure), what capital buffers are required against systemic errors?
+
+Expect emerging regimes that look a lot like **safety cases** in aviation or
+**capital standards** in finance, but for agent stacks.
+
+#### Assurance, supervision, and audit
+
+Regulators and large buyers will increasingly demand:
+
+* Documented **intended use**, limitations, and **off‑label prohibitions** for
+  each model/agent.
+
+* **Pre‑deployment testing** and stress scenarios for important workflows.
+
+* Ongoing monitoring for:
+
+  * Performance drift and distribution shift
+  * Data poisoning and adversarial inputs
+  * Tool‑use failures and prompt injection
+
+* **Human override & rollback** mechanisms:
+
+  * Kill switches
+  * Escalation policies
+  * Version pinning for critical flows
+
+* **Tamper‑evident telemetry and logs** to enable after‑the‑fact investigations.
+
+This becomes the **Model/Agent Risk Management** function, analogous to MRM in
+banks.
+
+#### Public procurement and civic compute
+
+Governments will need to buy not just “models,” but:
+
+* **Verifier libraries** (for policy and legal compliance).
+* **Agent platforms** and orchestration frameworks.
+* **Shared civic compute** that can be used across agencies and public services.
+
+Contracts and RFPs should:
+
+* Specify **performance SLOs** and **safety SLAs**, not just software
+  deliverables.
+* Include rights to **upgrade, retrain, and re‑verify** models over time.
+* Address **data governance, privacy, and fairness** explicitly.
+
+Public institutions that modernize procurement and governance around agents will
+be better positioned to offer **high‑quality civic AI** at scale.
+
+### Enterprise Operating Model & Unit Economics
+
+The inversion is felt most viscerally inside firms: **how you run the business
+changes**.
+
+#### From people‑first processes to agent‑first services
+
+Historically:
+
+* Processes were designed around humans: roles, handoffs, approvals.
+* Automation came later, as bolt‑on scripts and tools.
+
+In an agentic enterprise:
+
+* **Service lines are designed agent‑first**:
+
+  * Agents in the critical path do the baseline work.
+  * Humans operate *around* the loop: oversight, escalation, relationship, and
+    governance.
+
+* Each major service line gains a **canonical agent template**:
+
+  * Planner / decomposer
+  * Tool calls and memory access
+  * Verifiers and cross‑checks
+  * Escalation logic and stop conditions
+
+This doesn’t eliminate humans; it **repositions them**.
+
+#### AgentOps as a first‑class function
+
+To run agents at scale, you need **AgentOps**—the operational discipline for
+agent fleets.
+
+Core responsibilities:
+
+* **Pattern libraries** for planners, tool‑use, retrieval, and verifiers.
+* **Guardrail catalogs** for policy, safety, compliance, and security.
+* **Telemetry & observability**:
+
+  * Latency, pass/fail rates, verifier performance
+  * Tool‑call patterns and error modes
+
+* **Incident response**:
+
+  * Circuit breakers for bad behavior
+  * Rollback and hotfix playbooks
+  * Blacklists for tools, prompts, or patterns
+
+* **Release management**:
+
+  * Canaries and A/B tests
+  * Version pinning for high‑risk flows
+  * Gradual rollout strategies
+
+AgentOps sits at the intersection of **SRE, MLOps, security, and compliance**.
+
+#### Verification‑first engineering
+
+For each agentic workflow, the question becomes:
+
+> “What is the cheapest, most reliable way to know if this output is
+> acceptable?”
+
+That means:
+
+* Designing **verifiers before scaling agents**.
+* Using a mix of:
+
+  * Programmatic checks (business rules, schemas, simulations).
+  * Secondary models / judges.
+  * Human spot checks where necessary.
+
+You can treat quality much like **error budgets** in SRE:
+
+* Define acceptable failure rates per workflow.
+* Tie scale‑out and deployment to verifier performance.
+* Put financial or operational penalties on crossing those budgets.
+
+Verification becomes the **pacing asset** for safe automation.
+
+#### Identity, policy, and least‑privilege for agents
+
+Agents are not generic scripts; they are **principals in your system**.
+
+Good practice:
+
+* Give each agent (or agent class) a **unique identity**.
+
+* Apply **least‑privilege access**:
+
+  * Scoped credentials
+  * Task‑bounded entitlements
+  * Explicit deny lists for high‑risk actions
+
+* Enforce policies at the **tool boundary**, not just inside prompts:
+
+  * E.g., “this agent may read tickets but never touch payroll APIs.”
+  * Policy engines that evaluate every attempted action.
+
+This aligns security, compliance, and operations around agents as **first‑class
+actors**.
+
+### 5.5 Data provenance and contracts
+
+As agents learn from and act on your data:
+
+* Every dataset should carry **provenance** (where it came from), **licensing**,
+  and **risk annotations** (toxicity/poisoning scores).
+* **Data contracts** should specify:
+
+  * Refresh cadences
+  * Retention windows
+  * Acceptable uses (training, evaluation, retrieval, verifiers)
+
+You need to know **what your agents are standing on**, especially in regulated
+domains.
+
+#### Financial model and unit economics
+
+The cost structure shifts from **people** to **compute + orchestration**:
+
+* Model inference (tokens)
+* Tool/API calls
+* Verifier runs
+* Memory and logging
+* Evaluation infrastructure and AgentOps
+
+You can formalize the comparison.
 
 Let:
 
-\[
+[
 C_{\text{agent}} = C_{\text{tokens}} + C_{\text{tools}} + C_{\text{verifier}} + C_{\text{orchestration}} + p_{\text{review}} \cdot C_{\text{human}}
-\]
+]
 
-\[
+[
 C_{\text{human}} = \frac{\text{TCOW}}{\text{throughput}} + C_{\text{rework}} + C_{\text{delay}}
-\]
+]
 
-Deploy agents when:
+Where:
 
-\[
-C_{\text{agent}}\left(1 + r_{\text{residual\_error}} \, P_{\text{penalty}}\right) < C_{\text{human}}
-\]
+* TCOW = total cost of workforce for that role/service.
+* ( p_{\text{review}} ) = fraction of agent outputs that still need human review.
+* ( C_{\text{rework}} ) = cost of defects and rework.
+* ( C_{\text{delay}} ) = cost of latency from human handoffs.
 
-where \( \text{TCOW} \) is total cost of workforce, \( p_{\text{review}} \) the human review rate, and \( r_{\text{residual\_error}} \) the post‑verification error rate with penalty \( P_{\text{penalty}} \).
+Account for residual error risk:
 
-**Capex vs. Opex.**
-Choices include:
+[
+C_{\text{agent, adj}} = C_{\text{agent}} \left( 1 + r_{\text{residual_error}} \cdot P_{\text{penalty}} \right)
+]
 
-- **Cloud GPUs** (elasticity, rapid iteration);
-- **Reserved/committed capacity** (lower unit cost, planning burden);
-- **On‑prem/colocation** (predictable cost, data locality, power availability).
-  Power pricing, cooling constraints, and **interconnect performance** materially affect TCO; the orchestration layer should **abstract heterogeneity** across these footprints.
+Where:
 
-**Token and tool hedging.**
-Finance functions should monitor **token price indices**, cache hit rates, and **tool call distributions**. Techniques to manage exposure include **batching, quantization, speculative decoding, caching, and small‑model substitution** for known sub‑tasks.
+* ( r_{\text{residual_error}} ) = error rate *after* verification.
+* ( P_{\text{penalty}} ) = expected penalty per error (financial, legal, reputational).
 
-### Organization design and talent
+**Go/no‑go rule** (simplified):
 
-#### New Roles
+> Deploy agent‑first when
+> [
+> C_{\text{agent, adj}} < C_{\text{human}}
+> ]
 
-- **Agent Architect**: designs multi‑agent systems, planner policies, and tool graphs.
-- **Verification Engineer**: builds evaluations, oracle checks, and failure‑mode tests; manages quality budgets.
-- **Agent SRE/Observer**: operates fleets, telemetry, incident response, and performance tuning.
-- **Data Steward (Provenance)**: enforces licensing, provenance, poisoning defenses.
-- **Prompt & Policy Engineer**: codifies institutional policies as prompts/guards with measurable effects.
-- **Model Risk Lead**: owns model governance, drift, and independent validation.
+This is the economics lens you should use when deciding **which workflows to
+agentize and how fast**.
 
-#### Legacy → New role mapping (rosetta)
+Capex/opex trade‑offs:
 
-| Legacy role                                             | Typical (legacy) description                                                                                                                                                                                                                                    | **Primary new role**                                                                                                        | Updated (agent‑era) description                                                                                                                                                                                                                                     | Secondary mapping                                                                            |
-|---------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
-| **Enterprise Architect**                                | Defines target architectures, NFRs, and standards for whole sections in the value chain and ensure that the business strategy can be met with that given business processes, data, application, technology portfolio using roadmaps and implementation details. | **Value-Chain Architect (Service-Line Owner)**                                                                              | Owns an entire step in the value chain end-to-end from business strategy all the way to implementation details. Sets risk appetite, quality budgets, SLOs, and alignment across human and agentic layers.                                                           | Agent Architect; Verification Engineer; Agent SRE; Data Steward; Prompt & Policy; Model Risk |
-| **Product Manager / Project Manager / Program Manager** | Defines scope, roadmap, and delivery for the implementation of products or projects; manages resources, milestones, and stakeholder expectations.                                                                                                               | **AgentOps Program Manager** *(or)* **Value-Chain Architect** *(if outcome is a part of the overall corporate value chain)* | Leads cross-functional agentic initiatives from planning to rollout, coordinating across Verification, SRE, Policy, and Risk. Manages quality-gated releases, version pinning, incident response, and ensures alignment to business outcomes and value-chain goals. | Agent SRE; Verification; Model Risk; Data Steward; Prompt & Policy                           |
-| **Solutions Architect**                                 | Decomposes business needs into applications, data, APIs and integrations for a program.                                                                                                                                                                         | **Agent Architect**                                                                                                         | Turns workflows into agentic compositions (planner → tools → verifiers → fallbacks); negotiates SLOs and escalation logic with service owners.                                                                                                                      | Verification Engineer                                                                        |
-| **Integration Architect / RPA Lead**                    | Connects systems via ESB/iPaaS/RPA; maintains process automations.                                                                                                                                                                                              | **Agent Architect**                                                                                                         | Replaces brittle scripts with tool‑invocation policies and verifiers; manages version‑pinned tools and rollback paths.                                                                                                                                              | Agent SRE/Observer                                                                           |
-| **Business Process Analyst (BPM)**                      | Maps current/target processes; writes SOPs and controls.                                                                                                                                                                                                        | **Prompt & Policy Engineer**                                                                                                | Codifies SOPs and controls as prompts/guards; maintains pattern libraries with measurable effects.                                                                                                                                                                  | Verification Engineer                                                                        |
-| **Business Analyst**                                    | Gathers requirements; writes user stories; acceptance criteria.                                                                                                                                                                                                 | **Prompt & Policy Engineer**                                                                                                | Writes prompt/guard specs and acceptance evaluations; partners with Verification on quality budgets.                                                                                                                                                                | Verification Engineer                                                                        |
-| **Product Manager**                                     | Owns roadmap, outcomes, and acceptance criteria.                                                                                                                                                                                                                | **Agent Architect**                                                                                                         | Owns agent template for the service line; trades off quality‑adjusted throughput vs. cost/latency with Verification & SRE.                                                                                                                                          | Prompt & Policy Engineer                                                                     |
-| **QA Engineer / SDET**                                  | Builds automated tests; measures defect escape; gates releases.                                                                                                                                                                                                 | **Verification Engineer**                                                                                                   | Builds evaluations, oracle checks, red‑team suites; manages error/quality budgets; gates agent rollout via offline/online evaluations.                                                                                                                              | Agent SRE/Observer                                                                           |
-| **QA/Test Manager**                                     | Plans test strategy, coverage, and sign‑off.                                                                                                                                                                                                                    | **Verification Engineer**                                                                                                   | Owns verifier coverage, precision/recall, residual error, and penalty models; runs canaries/A‑B gating.                                                                                                                                                             | Model Risk Lead                                                                              |
-| **Site Reliability Engineer (SRE)**                     | SLI/SLOs, telemetry, capacity, incident response.                                                                                                                                                                                                               | **Agent SRE/Observer**                                                                                                      | Operates agent fleets; manages model/prompt rollout, caches, tool error budgets, circuit breakers, and rollbacks.                                                                                                                                                   | Verification Engineer                                                                        |
-| **DevOps / Platform / Observability Engineer**          | CI/CD, infra as code, logging, tracing.                                                                                                                                                                                                                         | **Agent SRE/Observer**                                                                                                      | Adds evaluation jobs, prompt/policy versioning, token/tool cost monitors, drift alarms, and sandboxed tool boundaries.                                                                                                                                              | Agent Architect                                                                              |
-| **MLOps Engineer**                                      | Model serving, feature stores, monitoring.                                                                                                                                                                                                                      | **Agent SRE/Observer**                                                                                                      | Adds agent‑specific SLIs (planner pass rate, verifier latency); supports safe hot‑swap of models/tools.                                                                                                                                                             | Verification Engineer                                                                        |
-| **Data Engineer**                                       | Pipelines, catalogs, lineage, data quality SLAs.                                                                                                                                                                                                                | **Data Steward (Provenance)**                                                                                               | Enforces provenance, licensing, poisoning/toxicity scores, and data contracts for retrieval, fine‑tune, and verifier corpora.                                                                                                                                       | Agent Architect                                                                              |
-| **Data Steward / Data Governance Lead**                 | Stewardship, retention, access controls, audit.                                                                                                                                                                                                                 | **Data Steward (Provenance)**                                                                                               | Encodes usage restrictions as policy‑enforced contracts; signs provenance; manages refresh cadences and consent flows.                                                                                                                                              | Model Risk Lead                                                                              |
-| **Records Manager / Librarian**                         | Classification, retention, discovery.                                                                                                                                                                                                                           | **Data Steward (Provenance)**                                                                                               | Curates retriever corpora with freshness and licensing SLAs; maintains takedown/repair workflows.                                                                                                                                                                   | —                                                                                            |
-| **Technical Writer / Knowledge Manager**                | Style guides, docs, reusable content patterns.                                                                                                                                                                                                                  | **Prompt & Policy Engineer**                                                                                                | Ships reusable prompt patterns, style/policy guards, and measurable edits that reduce review time.                                                                                                                                                                  | Data Steward                                                                                 |
-| **Conversation Designer (chatbots/IVR)**                | Dialogue flows, intents, utterances.                                                                                                                                                                                                                            | **Prompt & Policy Engineer**                                                                                                | Designs planner hints, tool‑use constraints, and refusal styles; validates via conversation‑level evaluations.                                                                                                                                                      | Verification Engineer                                                                        |
-| **Privacy Engineer / IAM Engineer**                     | Data minimization, consent, least privilege.                                                                                                                                                                                                                    | **Agent SRE/Observer**                                                                                                      | Implements agent identities, scoped credentials, tool‑boundary enforcement, and tamper‑evident logs.                                                                                                                                                                | Data Steward                                                                                 |
-| **Compliance Analyst / GRC**                            | Controls testing, evidence, exceptions.                                                                                                                                                                                                                         | **Model Risk Lead**                                                                                                         | Owns agent risk taxonomy, deployment approvals, and audit‑ready telemetry; tracks exceptions and mitigations.                                                                                                                                                       | Data Steward                                                                                 |
-| **Model Risk Manager / Validator (FSI)**                | Independent model validation per SR 11‑7/ECB TRIM‑like frameworks.                                                                                                                                                                                              | **Model Risk Lead**                                                                                                         | Extends validation to agent workflows: intended use, limitations, off‑label prohibitions, scenario tests, and rollback readiness.                                                                                                                                   | Verification Engineer                                                                        |
-| **Internal Audit (IT/Model)**                           | Independent assurance; control effectiveness.                                                                                                                                                                                                                   | **Model Risk Lead**                                                                                                         | Sets evidence requirements (evaluations, logs, lineage) and challenge function for agentized lines.                                                                                                                                                                 | —                                                                                            |
-| **Support Ops (L1/L2)**                                 | Triage, playbooks, escalations.                                                                                                                                                                                                                                 | **Agent SRE/Observer**                                                                                                      | Operates incident taxonomy for agents; tunes fallbacks/blacklists; manages escalation ratios.                                                                                                                                                                       | Prompt & Policy Engineer                                                                     |
+* **Cloud GPUs** – high elasticity and speed of iteration, higher unit cost.
+* **Reserved/committed** – lower unit cost, planning burden.
+* **On‑prem / colo** – higher up‑front capex, better TCO in stable high‑load
+  regimes, sensitive to power/interconnect.
+
+Your orchestration layer should **abstract heterogeneous footprints** so finance
+can mix these options without fragmenting the architecture.
+
+
+
+### What Different Roles Should Take Away
+
+This chapter spans macro, industry, and firm‑level change. Different leaders
+hold different pieces of the response.
+
+#### For Executives and Boards
+
+* Recognize **compute + energy + orchestration** as core strategic assets, not
+  just IT spend.
+
+* Update your mental model of growth:
+
+  * Headcount is no longer the primary knob.
+  * Capacity comes from **agent fleets and compute**, with humans repositioned.
+
+* Ask for **unit economics** in agentic terms:
+
+  * Cost per verified outcome.
+  * ECI_outcome and error‑adjusted C_agent vs. C_human.
+
+* Demand a **clear plan for workforce rebundling**:
+
+  * How roles change.
+  * How early‑career pathways remain viable.
+  * How you support transitions, not just reductions.
+
+#### For Enterprise Architects and CIOs/CTOs
+
+* Design a **reference architecture** for agent‑first services:
+
+  * Agent templates per domain.
+  * Standard guardrails, verifiers, and escalation patterns.
+  * Identity and least‑privilege access for agents.
+
+* Institutionalize **AgentOps**:
+
+  * Treat it like SRE/MLOps: clear ownership, runbooks, and tooling.
+  * Build shared pattern libraries across domains.
+
+* Make **energy, carbon, and economics** first‑class concerns:
+
+  * Model choice and placement driven by ECI_outcome and cost, not just accuracy
+    or latency.
+  * Architecture that can move workloads across clouds, regions, and footprints.
+
+#### For CFOs and Strategy Leaders
+
+* Build a **P&L view** that separates:
+
+  * Human labor
+  * Compute & orchestration
+  * Energy & CFE hedges
+  * AgentOps and verification overhead
+
+* Use the **C_agent vs. C_human** calculus to prioritize:
+
+  * Which workflows to automate first.
+  * Where incremental spend on verifiers or tools unlocks larger savings.
+
+* Treat **PPAs, storage, and firm compute** as strategic hedges in the AI
+  business plan, not mere ESG moves.
+
+#### For CHROs and People Leaders
+
+* Redesign **job families and career paths** around:
+
+  * Exception handling, policy, narrative, and relationship work.
+  * AgentOps and orchestration skills.
+
+* Protect **early‑career pipelines**:
+
+  * Apprentice‑style roles that combine agent work with structured learning.
+  * Rotations through high‑MVL functions like governance, trust, and escalation.
+
+* Integrate **AI literacy and agent collaboration** into leadership and
+  management development.
+
+#### For Legal, Risk, and Compliance
+
+* Build a **Model/Agent Risk Management** capability:
+
+  * Intended‑use documentation and off‑label restrictions.
+  * Pre‑deployment tests, stress scenarios, and sign‑off.
+  * Ongoing monitoring, overrides, and audit trails.
+
+* Work with architects to bake **policy enforcement at the tool boundary**, not
+  just via policy documents.
+
+* Engage early with regulators and industry bodies to help shape **liability,
+  audit, and assurance standards**.
+
+#### For Product Owners and Business Line Leaders
+
+* Think in **units of work**, not features:
+
+  * Claims resolved, tickets closed, orders processed, cases handled.
+  * Ask: “What would an agent‑first version of this look like, with humans
+    around the loop?”
+
+* Design clear **customer‑facing narratives**:
+
+  * When are you talking to an agent vs. a human?
+  * How can customers escalate, override, or get explanations?
+
+* Track:
+
+  * Quality and satisfaction across human‑only vs. agent‑first flows.
+  * The economics of **verified outcomes**, not just “number of AI calls.”
+
+
+
+### From Economics to New Roles and Organizational Shape
+
+So far, across the last few chapters, we’ve established that:
+
+* **Agents** will do a large share of cognitive work.
+* **Compute and energy** will bound how much intelligence you can deploy.
+* The **economics and governance** of AI push firms toward agent‑first services,
+  orchestration moats, and new risk regimes.
+
+Taken together, these forces don’t just tweak org charts; they **demand new
+roles and organizational structures**:
+
+* New functions like **AgentOps**, **Model/Agent Risk Management**, and
+  **Compute Portfolio Management**.
+* New leadership roles that span **technology, energy, finance, and policy**.
+* Re‑shaped lines between IT, operations, product, and compliance.
+* Explicit owners for **agent templates, verifiers, and guardrails** across the
+  enterprise.
+
+In other words, you’ll need to **rebuild the organization around intelligence as
+a managed utility**—not as a scattered set of pilots and features.
+
+The next chapter will make this concrete:
+
+* Which **new roles** are emerging (and which existing roles need to be
+  redefined).
+* How to **structure teams and reporting lines** in an agent‑first enterprise.
+* How to design an organization that can **safely absorb, govern, and exploit**
+  rapidly increasing intelligence capacity.
+
+That is where we turn next.
+
+## Organization design and talent
+
+### Building a Company That Can Actually Use All This Intelligence
+
+The last chapters answered two big questions:
+
+* **What happens when agents outperform median human cognition on many tasks?**
+* **How do energy and compute bound how much intelligence you can deploy?**
+* **What does that do to macroeconomics, markets, and your operating model?**
+
+This chapter gets very concrete:
+
+> If intelligence is abundant but governed, **what kind of organization do you
+> need to run it?** What roles, skills, and structures let you turn AI from
+> scattered pilots into a reliable production function?
+
+We’ll cover:
+
+1. The new core roles in an agent‑first enterprise
+2. How legacy roles map into these new profiles
+3. What these roles actually *do* (role “cards”)
+4. How to transition talent without breaking the plane mid‑flight
+5. The KPIs and dashboards that make this governable
+6. What different leadership groups should focus on
+7. How this sets up a concrete 1,000‑day **playbook and milestone plan** in the
+   next chapter
+
+
+
+### The New Core Roles in an Agent‑First Enterprise
+
+In an intelligence‑inverted firm, your critical path is no longer “human →
+system → human.” It’s **agent → tool → verifier → human (for exceptions)**. That
+demands a different cast of characters.
+
+#### Core new roles
+
+* **Value‑Chain Architect (Service‑Line Owner)** Owns an entire step of the
+  value chain end‑to‑end—business goals, human+agent orchestration, risk
+  appetite, SLOs, and data contracts.
+
+* **Agent Architect** Designs multi‑agent workflows: planners, tool graphs,
+  memory, verifiers, fallbacks, and escalation logic—with cost, latency, and
+  risk baked in.
+
+* **AgentOps Program Manager** Runs cross‑functional agent rollouts:
+  quality‑gated releases, version pinning, incident response, and alignment with
+  business outcomes.
+
+* **Verification Engineer** Builds evaluation suites, oracle checks, and
+  red‑team tests; manages **quality budgets** and deployment gates; tracks
+  residual error and penalty exposure.
+
+* **Agent SRE / Observer** Operates agent fleets: telemetry, SLOs, safety SLAs,
+  incidents, rollbacks, and cost tuning (tokens, tools, cache, and model
+  choice).
+
+* **Data Steward** Owns data quality, provenance, licensing, consent,
+  poisoning/toxicity scores; maintains data contracts for retrieval,
+  fine‑tuning, and verifiers.
+
+* **Prompt & Policy Engineer** Encodes institutional policy, SOPs, and brand
+  voice into prompts/guards and prompt patterns with **measurable effects** on
+  quality and safety.
+
+* **Model Risk Lead** Provides independent governance for models and agents:
+  intended use, limitations, off‑label prohibitions, scenario tests, monitoring,
+  and rollback readiness.
+
+These roles sit on top of your existing disciplines (architecture, SRE, QA,
+data, risk). They are **evolution paths**, not random net‑new titles.
+
+#### Legacy → New Role Mapping (“Rosetta Stone”)
+
+You don’t get to hire an entirely new company. Most of this capability comes
+from **re‑badging and re‑skilling** existing roles.
+
+You don’t need to adopt these titles verbatim. What matters is that **someone**
+is doing this work, and HRIS has a coherent mapping so you can grow and pay
+these skills appropriately.
+
+Here’s how typical legacy roles map into the new ones:
+
+| Legacy role                                    | Typical (legacy) description                                                                                                                                                 | **Primary new role**                                             | Updated (agent‑era) description                                                                                                                                                                                                     | Secondary mapping                                                                            |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| **Enterprise Architect**                       | Defines target architectures, NFRs, and standards for whole sections of the value chain; ensures business strategy can be met via processes, data, apps, tech, and roadmaps. | **Value‑Chain Architect (Service‑Line Owner)**                   | Owns an entire step in the value chain end‑to‑end—from strategy to runtime. Sets risk appetite, quality budgets, and SLOs across human and agentic layers; aligns compute, people, and process around outcomes.                     | Agent Architect; Verification Engineer; Agent SRE; Data Steward; Prompt & Policy; Model Risk |
+| **Product / Project / Program Manager**        | Defines scope, roadmap, and delivery for products or projects; manages resources, milestones, and stakeholders.                                                              | **AgentOps Program Manager** *(or)* **Value‑Chain Architect**    | Leads cross‑functional agentic initiatives from planning to rollout, coordinating Verification, SRE, Policy, and Risk. Manages quality‑gated releases, version pinning, incident response, and alignment to value‑chain objectives. | Agent SRE; Verification; Model Risk; Data Steward; Prompt & Policy                           |
+| **Solutions Architect**                        | Decomposes business needs into applications, data, APIs, and integrations.                                                                                                   | **Agent Architect**                                              | Turns workflows into agentic compositions (planner → tools → verifiers → fallbacks); negotiates SLOs and escalation logic with service owners.                                                                                      | Verification Engineer                                                                        |
+| **Integration Architect / RPA Lead**           | Connects systems via ESB/iPaaS/RPA; maintains process automations.                                                                                                           | **Agent Architect**                                              | Replaces brittle scripts with tool‑invocation policies and verifiers; manages version‑pinned tools and rollback paths.                                                                                                              | Agent SRE/Observer                                                                           |
+| **Business Process Analyst (BPM)**             | Maps current/target processes; writes SOPs and controls.                                                                                                                     | **Prompt & Policy Engineer**                                     | Codifies SOPs and controls as prompts/guards; maintains pattern libraries with measurable effects on quality and review load.                                                                                                       | Verification Engineer                                                                        |
+| **Business Analyst**                           | Gathers requirements; writes user stories and acceptance criteria.                                                                                                           | **Prompt & Policy Engineer**                                     | Writes prompt/guard specs and acceptance evaluations; partners with Verification on quality budgets and eval coverage.                                                                                                              | Verification Engineer                                                                        |
+| **Product Manager**                            | Owns roadmap, outcomes, and acceptance criteria.                                                                                                                             | **Agent Architect** *(or Value‑Chain Architect for whole flows)* | Owns agent templates for their service line; trades off quality‑adjusted throughput vs. cost/latency with Verification & SRE; designs customer‑facing agent experiences.                                                            | Prompt & Policy Engineer                                                                     |
+| **QA Engineer / SDET**                         | Builds automated tests; measures defect escape; gates releases.                                                                                                              | **Verification Engineer**                                        | Builds evaluations, oracle checks, and red‑team suites; manages error/quality budgets; gates agent rollout via offline and online evaluations.                                                                                      | Agent SRE/Observer                                                                           |
+| **QA/Test Manager**                            | Plans test strategy, coverage, and sign‑off.                                                                                                                                 | **Verification Engineer**                                        | Owns verifier coverage, precision/recall, residual error, and penalty models; runs canary and A/B gating for agent deployments.                                                                                                     | Model Risk Lead                                                                              |
+| **Site Reliability Engineer (SRE)**            | Defines SLIs/SLOs, telemetry, capacity, and incident response.                                                                                                               | **Agent SRE/Observer**                                           | Operates agent fleets; manages model/prompt rollout, caches, tool error budgets, circuit breakers, and rollbacks; runs blameless postmortems on agent incidents.                                                                    | Verification Engineer                                                                        |
+| **DevOps / Platform / Observability Engineer** | CI/CD, infra as code, logging, tracing.                                                                                                                                      | **Agent SRE/Observer**                                           | Adds evaluation jobs; prompt/policy versioning; token/tool cost monitors; drift alarms; sandboxed tool boundaries; supports carbon‑/price‑aware placement of workloads.                                                             | Agent Architect                                                                              |
+| **MLOps Engineer**                             | Model serving, feature stores, monitoring.                                                                                                                                   | **Agent SRE/Observer**                                           | Adds agent‑specific SLIs (planner pass rate, verifier latency); supports safe hot‑swap of models/tools and cross‑model routing.                                                                                                     | Verification Engineer                                                                        |
+| **Data Engineer**                              | Pipelines, catalogs, lineage, data‑quality SLAs.                                                                                                                             | **Data Steward (Provenance)**                                    | Enforces provenance, licensing, poisoning/toxicity scores, and data contracts for retrieval, fine‑tune, and verifier corpora.                                                                                                       | Agent Architect                                                                              |
+| **Data Steward / Data Governance Lead**        | Stewardship, retention, access controls, audit.                                                                                                                              | **Data Steward (Provenance)**                                    | Encodes usage restrictions as policy‑enforced contracts; signs provenance; manages refresh cadences and consent flows across AI use.                                                                                                | Model Risk Lead                                                                              |
+| **Records Manager / Librarian**                | Classification, retention, discovery.                                                                                                                                        | **Data Steward (Provenance)**                                    | Curates retriever corpora with freshness and licensing SLAs; maintains takedown/repair workflows for harmful or obsolete content.                                                                                                   | —                                                                                            |
+| **Technical Writer / Knowledge Manager**       | Style guides, docs, reusable content patterns.                                                                                                                               | **Prompt & Policy Engineer**                                     | Ships reusable prompt patterns, style and policy guards, and measurable edits that reduce review time while preserving brand and compliance.                                                                                        | Data Steward                                                                                 |
+| **Conversation Designer (chatbots/IVR)**       | Dialogue flows, intents, utterances.                                                                                                                                         | **Prompt & Policy Engineer**                                     | Designs planner hints, tool‑use constraints, refusal styles, and conversation‑level evaluations; tunes for user trust and clarity.                                                                                                  | Verification Engineer                                                                        |
+| **Privacy Engineer / IAM Engineer**            | Data minimization, consent, least privilege.                                                                                                                                 | **Agent SRE/Observer**                                           | Implements agent identities, scoped credentials, tool‑boundary enforcement, and tamper‑evident logs; collaborates on policy‑as‑code at the tool layer.                                                                              | Data Steward                                                                                 |
+| **Compliance Analyst / GRC**                   | Controls testing, evidence, exceptions.                                                                                                                                      | **Model Risk Lead**                                              | Owns agent risk taxonomy, deployment approvals, and audit‑ready telemetry; tracks exceptions and mitigations for agentized services.                                                                                                | Data Steward                                                                                 |
+| **Model Risk Manager / Validator (FSI)**       | Independent model validation per SR 11‑7/ECB TRIM‑style frameworks.                                                                                                          | **Model Risk Lead**                                              | Extends validation to agent workflows: intended use, limitations, off‑label prohibitions, scenario tests, and rollback readiness; oversees third‑party agent providers.                                                             | Verification Engineer                                                                        |
+| **Internal Audit (IT/Model)**                  | Independent assurance; control effectiveness.                                                                                                                                | **Model Risk Lead**                                              | Sets evidence requirements (evaluations, logs, lineage) and challenge function for agentized lines; coordinates with regulators and external auditors.                                                                              | —                                                                                            |
+| **Support Ops (L1/L2)**                        | Triage, playbooks, escalations.                                                                                                                                              | **Agent SRE/Observer**                                           | Operates incident taxonomy for agents; tunes fallbacks/blacklists; manages escalation ratios and human‑in‑the‑loop placement.                                                                                                       | Prompt & Policy Engineer                                                                     |
+
 {: .table .table-striped .table-hover}
 
-#### New role “cards”
+#### New Role “Cards” (What These People Actually Do)
 
-##### Value-Chain Architect (Service-Line Owner)
+Short, concrete descriptions you can drop straight into role charters.
 
-- **Scope:** Owns a complete value-chain step across all TOGAF/ArchiMate layers — from Values, Ambitions, and Principles down to runtime orchestration and data contracts.
-- **Legacy strengths:** Strategic alignment, capability modeling, architecture governance, business process integration.
-- **What’s new:** Compute and human budget management, verifier-first design, multi-agent orchestration, risk-aware SLOs, alignment of motivation through technology.
-- **Primary KPIs:** Quality-adjusted throughput, residual error × penalty, escalation ratio ↓, p95/p99 latency vs. SLO, cost per resolved unit, policy compliance.
-- **90-day outcomes:** Define quality and risk budgets for one value-chain step. Deliver canonical agent template + escalation matrix. Establish data contracts and provenance registry. Publish SLO/SLA pack and rollback playbook.
+##### Value‑Chain Architect (Service‑Line Owner)
+
+* **Scope** Owns a complete value‑chain step across all layers—from values,
+  ambitions, and principles down to runtime orchestration and data contracts.
+
+* **Legacy strengths that transfer** Strategic alignment, capability modeling,
+  architecture governance, process integration.
+
+* **What’s new** Verifier‑first design, compute/human budget management,
+  multi‑agent orchestration, risk‑aware SLOs, and quality‑adjusted throughput.
+
+* **Primary KPIs**
+
+  * Quality‑adjusted throughput
+  * Residual error × penalty
+  * Escalation ratio ↓
+  * p95/p99 latency vs. SLO
+  * Cost per resolved unit
+  * Policy and compliance adherence
+
+* **90‑day outcomes**
+
+  * Choose one value‑chain step; define quality and risk budgets.
+  * Deliver a canonical agent template + escalation matrix.
+  * Establish data contracts and provenance registry for that step.
+  * Publish SLO/SLA pack and a rollback playbook.
 
 ##### Agent Architect
 
-- **Scope**: Designs multi‑agent systems: planner policies, tool graphs, memory, verifiers, fallbacks, and escalation. Encodes NFRs and safety into orchestration.
-- **Legacy strengths that transfer**: System decomposition, NFRs/SLOs, integration patterns, security‑by‑design, change control.
-- **What’s new**: Verification‑first design; token/tool economics; version pinning; canaries; rollback choreography; agent identity boundaries.
-- **Primary KPIs**: Quality‑adjusted throughput; verifier pass rate; residual error; p95/p99 latency vs. SLO; cost per resolved unit; % of workflows agentized.
-- **90‑day outcomes**: Canonical agent template for 1–2 service lines; tool and verifier catalog; escalation matrix; canaried rollout with rollback runbook.
+* **Scope** Designs multi‑agent systems: planners, tool graphs, memory flows,
+  verifiers, fallbacks, and escalation.
+
+* **What’s new vs. classic architecture** Verification‑first design; token/tool
+  economics; version pinning; canaries; prompt/model rollback choreography;
+  agent identity boundaries.
+
+* **Primary KPIs**
+
+  * Quality‑adjusted throughput
+  * Verifier pass rate
+  * Residual error
+  * p95/p99 latency vs. SLO
+  * Cost per resolved unit
+  * % of workflows agentized
+
+* **90‑day outcomes**
+
+  * Ship a canonical agent template for 1–2 service lines.
+  * Define tool and verifier catalogs for those flows.
+  * Agree escalation logic with business and risk owners.
+  * Run a canaried rollout with validated rollback runbooks.
 
 ##### AgentOps Program Manager
 
-- **Scope**: Orchestrates agentic releases, quality-gated rollouts, and cross-functional incident response; coordinates with SREs, Verification, Data Stewardship, and Policy Engineering.
-- **Legacy strengths that transfer**: Stakeholder management, milestone planning, risk tracking, communication, release management.
-- **What’s new**: Gate deployments via verifiers and quality budgets; manage token/tool costs; oversee version pinning, rollback, and telemetry hygiene.
-- **Primary KPIs**: % releases gated by verifiers; SLO attainment rate; MTTR; incident count by severity; time-to-green post rollback; residual error trend.
-- **90-day outcomes**: Create release calendar with SLO/quality gates. Document incident taxonomy and rollback drill schedule. Implement version pinning and rollout hygiene standards. Launch cost & quality dashboards across agentized lines.
+* **Scope** Orchestrates agentic releases from planning to rollout; coordinates
+  across SRE, Verification, Data Stewardship, Policy, and Risk.
+
+* **What’s new vs. classic PM/Program** Quality budgets as release gates, not
+  just dates; version pinning; incident drills; token/tool cost management.
+
+* **Primary KPIs**
+
+  * % of releases gated by verifiers
+  * SLO attainment rate
+  * MTTR for agent incidents
+  * Time‑to‑green after rollback
+  * Residual error trend over releases
+
+* **90‑day outcomes**
+
+  * Build a release calendar with SLO/quality gates.
+  * Document agent incident taxonomy and escalation paths.
+  * Implement version pinning and rollout hygiene practices.
+  * Stand up cost and quality dashboards across agentized lines.
 
 ##### Verification Engineer
 
-- **Scope**: Builds evaluations, oracle checks, red‑team suites; manages quality budgets; gates deployment; monitors drift/poisoning.
-- **Legacy strengths**: Test strategy, automation, coverage, CI gating, defect analytics.
-- **What’s new**: Model‑assisted oracles, adversarial/Jailbreak testing, penalty modeling, precision/recall targets for verifiers, online A/B gating.
-- **Primary KPIs**: Residual error; verifier precision/recall; eval coverage; escaped‑defect rate; incidents avoided; mean time to update evaluations.
-- **90‑day outcomes**: Eval suite tied to business penalties; quality budget per flow; verification gates in CI/CD; red‑team playbook.
+* **Scope** Builds evaluations, oracle checks, and red‑team suites; manages
+  quality budgets and deployment gates; monitors drift and poisoning.
 
-##### Agent SRE/Observer
+* **Primary KPIs**
 
-- **Scope**: Operates agent fleets with SLOs and safety SLAs; telemetry, incident response, cost tuning, and rollout hygiene (models/prompts/tools).
-- **Legacy strengths**: SLIs/SLOs, observability, capacity, incident mgmt., blameless postmortems.
-- **What’s new**: Prompt/policy versioning; token/tool cost controls; cache/speculative decoding; circuit breakers & blacklists; model/prompt hot‑swap; agent identity/entitlement enforcement.
-- **Primary KPIs**: SLO attainment; MTTR/MTBF; tail latency; rollback frequency; tool error rate; cache hit rate; cost per resolved unit.
-- **90‑day outcomes**: Fleet dashboards (quality+cost+latency); incident taxonomy/runbooks; canary pipelines; rollback drills; cost monitors.
+  * Residual error (post‑verification)
+  * Verifier precision/recall
+  * Evaluation coverage vs. risk inventory
+  * Escaped‑defect rate
+  * Incidents avoided by evals
+  * Mean time to update evaluations after issues
 
-##### Data Steward (Provenance)
+* **90‑day outcomes**
 
-- **Scope**: Enforces provenance, licensing, consent, toxicity/poisoning defenses; manages data contracts for retrieval/fine‑tune/verifiers.
-- **Legacy strengths**: Catalog/lineage, access controls, retention, audit evidence.
-- **What’s new**: Provenance signing; toxicity/poisoning scoring; synthetic data governance; usage restrictions encoded as policy; refresh/repair cadences.
-- **Primary KPIs**: % assets with signed provenance; licensing coverage; poisoning incidents; data freshness SLAs; audit findings closed; retrieval accuracy improvements.
-- **90‑day outcomes**: Data contracts for top sources; provenance/license registry; takedown & repair workflow; quarterly refresh plan.
+  * Define eval suite tied to real business penalties.
+  * Set a quality budget per critical flow.
+  * Wire verification gates into CI/CD and deployment.
+  * Publish a red‑team playbook and run at least one exercise.
+
+##### Agent SRE / Observer
+
+* **Scope** Operates agent fleets to SLO and safety SLAs; owns telemetry,
+  incidents, cost tuning, and rollout hygiene.
+
+* **Primary KPIs**
+
+  * SLO attainment (latency, availability, quality)
+  * MTTR / MTBF for agent incidents
+  * Tail latency (p95/p99)
+  * Tool error rates and cache hit rates
+  * Rollback frequency and success rate
+  * Cost per resolved unit / verified outcome
+
+* **90‑day outcomes**
+
+  * Build fleet dashboards (quality, cost, latency) for one line.
+  * Define and test incident taxonomies and runbooks.
+  * Implement canary pipelines and rollback drills.
+  * Stand up cost monitors for tokens, tools, and verifiers.
+
+##### Data Steward
+
+* **Scope** Enforces quality, provenance, licensing, consent, and poisoning defenses;
+  manages data contracts for retrieval, fine‑tuning, and verifiers.
+
+* **Primary KPIs**
+
+  * % of key assets with signed provenance and licensing
+  * Number and severity of poisoning/toxicity incidents
+  * Data freshness SLAs met
+  * Retrieval accuracy improvements
+  * Audit findings closed on time
+
+* **90‑day outcomes**
+
+  * Draft data contracts for top retrieval/fine‑tune/verifier sources.
+  * Stand up a provenance/license registry.
+  * Define takedown and repair workflows.
+  * Set a refresh plan for critical corpora.
 
 ##### Prompt & Policy Engineer
 
-- **Scope**: Turns institutional policy, style, and SOPs into prompts/guards with measurable effects; curates reusable patterns.
-- **Legacy strengths**: Requirements/spec writing, style guides, conversation design, control wording.
-- **What’s new**: Prompt pattern libraries; tool‑use constraints; verifier‑aware acceptance criteria; refusal and safety styles; measurable reductions in review load.
-- **Primary KPIs**: Δ in verifier pass rates; ↓ hallucination/policy‑violation rates; reviewer time saved; reuse/adoption of patterns.
-- **90‑day outcomes**: Pattern library for top flows; guardrail prompts wired to verifiers; acceptance evaluations defined with Verification.
+* **Scope** Codifies institutional policy, SOPs, and brand voice as
+  prompts/guards and pattern libraries with measurable effects.
+
+* **Primary KPIs**
+
+  * Change in verifier pass rates
+  * Reduction in hallucination/policy‑violation rates
+  * Reviewer time saved per output
+  * Adoption and reuse of prompt patterns
+
+* **90‑day outcomes**
+
+  * Ship a pattern library for top workflows (support, claims, sales, etc.).
+  * Wire guardrail prompts to verifiers and logging.
+  * Define acceptance evaluations with Verification.
 
 ##### Model Risk Lead
 
-- **Scope**: Independent governance for models/agents: intended use, limitations, off‑label prohibitions, scenario tests, monitoring, and rollback readiness.
-- **Legacy strengths**: MRM/GRC frameworks, documentation, risk appetite statements, regulatory engagement.
-- **What’s new**: Agentic risk taxonomy (tool misuse, autonomy, jailbreaks); eval oversight; drift/poisoning triggers; liability mapping to SLO penalties.
-- **Primary KPIs**: Time‑to‑approve with quality maintained; control effectiveness; severity/recurrence of incidents; audit‑ready coverage; exceptions closed on time.
-- **90‑day outcomes**: Policy & RACI for agent deployments; approval gates with evidence requirements; quarterly scenario exercises.
+* **Scope** Provides independent governance for models and agents; owns risk
+  taxonomy, approvals, and scenario tests.
 
-#### Practical transition guide (for change plans)
+* **Primary KPIs**
 
-- **Title mapping for HRIS**
+  * Time‑to‑approve without compromising quality
+  * Control effectiveness vs. incidents
+  * Severity/frequency of agent‑related issues
+  * Audit‑ready coverage of critical agents
+  * Exception and remediation backlog
 
-  - *Enterprise Architect / Chief Architect* → **Value-Chain Architect (Service-Line Owner)** (title change; family: Architecture /  Strategy)
-  - *Solutions Architect* → **Agent Architect** (title change; family stays in Architecture).
-  - *SRE / DevOps / Platform* → **Agent SRE/Observer** (family: Reliability/Platform).
-  - *QA/SDET/Test Manager* → **Verification Engineer** (family: Quality/Engineering).
-  - *Data Steward/Governance/Records* → **Data Steward (Provenance)** (family: Data).
-  - *Tech Writer / Experience Designer / Business Analyst* → **Prompt & Policy Engineer** (family: Product/Content/Policy Eng).
-  - *MRM/Validator/GRC/Audit (models)* → **Model Risk Lead** (family: Risk & Compliance).
-  - *Product Manager* → **Agent Architect (if outcome is a part of the overall corporate value chain)** (title change; family: Architecture / Strategy)
-  - *Project / Program Manager* → **AgentOps Program Manager** (title change; family: Delivery / Operations)
+* **90‑day outcomes**
 
-- **Skill bridge (8–12 weeks, part‑time)**
+  * Publish policy and RACI for agent deployments.
+  * Define approval gates and evidence requirements.
+  * Run at least one scenario exercise per high‑risk service line.
 
-  - *Architects → Agent Architect*: orchestration patterns, tool boundaries, verifier‑first design, rollout hygiene.
-  - *QA/SDET → Verification*: eval design, oracle construction, red‑teaming, penalty models, online gating.
-  - *SRE/DevOps → Agent SRE*: prompt/policy versioning, token/tool cost controls, drift detection, circuit breakers.
-  - *Data Gov → Provenance*: licensing, provenance signing, poisoning detection, consented feedback loops.
-  - *Writers/BA/Compliance → Prompt & Policy*: pattern libraries, measurable guardrails, refusal styles.
-  - *GRC/MRM → Model Risk*: agent taxonomy, evidence packs, scenario testing, approval workflows.
-  - *Enterprise Architect → Value-Chain Architect* → Value-chain decomposition; TOGAF motivation-to-implementation mapping; verifier-first design; compute economics; orchestration policy; multi-agent alignment; SLO and risk budgeting.
-  - *Product Manager → Value-Chain Architect / Agent Architect* → Translating user journeys into agent workflows; quality budgets; verifiers as acceptance criteria; cost/latency trade-offs; attention-preserving product design.
-  - *Project/Program Manager → AgentOps Program Manager* → Quality-gated rollout pipelines; incident taxonomies; drift detection; rollback orchestration; cross-functional dependency management.                                          |
+#### One‑liners you can paste under “New roles”
+
+- **Agent Architect** — Designs and standardizes multi‑agent workflows (planner
+  → tools → verifiers → fallback) with SLOs, safety, and upgrade/rollback paths
+  built in.
+- **Verification Engineer** — Builds evaluations, oracle checks, and red‑team
+  suites; manages quality budgets and deployment gates to keep residual error
+  within penalty‑aware limits.
+- **Agent SRE/Observer** — Operates agent fleets to SLO and safety SLAs; owns
+  telemetry, incident response, rollout hygiene, and cost/latency tuning.
+- **Data Steward (Provenance)** — Enforces quality, provenance, licensing,
+  consent, and poisoning defenses; maintains data contracts for retrieval,
+  fine‑tune, and verifier corpora.
+- **Prompt & Policy Engineer** — Codifies institutional policy and style as
+  prompts/guards and reusable patterns with measured effects on quality and
+  safety.
+- **Model Risk Lead** — Provides independent governance of model/agent
+  deployments: intended use, limitations, scenario tests, monitoring, and
+  rollback readiness.
+
+
+
+#### Practical Transition: How to Get from Today’s Org to This One
+
+You can’t flip a switch. But you can **stage talent moves** deliberately.
+
+##### Title & family mapping for HR
+
+Suggested patterns:
+
+* Enterprise / Chief Architect → **Value‑Chain Architect** (family: Architecture
+  / Strategy)
+* Solutions Architect → **Agent Architect** (Architecture)
+* SRE / DevOps / Platform → **Agent SRE/Observer** (Reliability / Platform)
+* QA / SDET / Test Manager → **Verification Engineer** (Quality / Engineering)
+* Data Steward / Governance / Records → **Data Steward (Provenance)** (Data)
+* Tech Writer / Knowledge / BA / Conversation Designer → **Prompt & Policy
+  Engineer** (Product / Content / Policy Eng)
+* Model Risk / Validator / GRC / Audit (model) → **Model Risk Lead** (Risk &
+  Compliance)
+* Product Manager → **Agent Architect** or **Value‑Chain Architect** (depending
+  on scope)
+* Project / Program Manager → **AgentOps Program Manager** (Delivery /
+  Operations)
+
+You don’t need to re‑label everyone on day one. Start with **pilot domains** and
+use them as proof points.
+
+##### Skill bridges (8–12 weeks, part‑time)
+
+Design short, targeted upskilling tracks:
+
+* **Architects → Agent Architect / Value‑Chain Architect** - Orchestration
+  patterns; tool boundaries; verifier‑first design; compute economics; rollout
+  and rollback hygiene.
+* **QA/SDET → Verification Engineer** - Evaluation design; oracle construction;
+  red‑teaming; penalty models; online gating and drift monitoring.
+* **SRE/DevOps → Agent SRE** - Prompt/model versioning; token/tool cost
+  controls; agent‑specific SLIs; circuit breakers; kill switches.
+* **Data Gov → Data Steward (Provenance)** - Licensing; provenance signing;
+  poisoning detection; synthetic data and feedback governance.
+* **Writers/BA/Compliance → Prompt & Policy** - Prompt pattern design;
+  measurable guardrails; refusal patterns; collaboration with risk and legal.
+* **GRC/MRM → Model Risk Lead** - Agent taxonomy; evidence packs; scenario
+  testing; setting risk appetites for autonomy levels.
+
+
+#### Performance contracts in year one
+
+Tie OKRs directly to the KPIs above. For example:
+
+* Verification Engineer: **“Residual error < X% with Y% coverage by end of
+  Q4.”**
+* Agent SRE: **“SLO attainment ≥ 99%, cost per resolved ticket ↓ 15% YoY.”**
+* Data Steward: **“Provenance coverage ≥ 90% of retrieval corpus.”**
+* Prompt & Policy: **“Policy‑violation incidents ↓ 50% while reviewer time ↓
+  25%.”**
+
+This makes “new roles” feel like **real jobs**, not rebranded experiments. |
 
 - **Performance contracts (first year)**
 
   - Tie each role’s OKRs to the **KPIs** listed above (e.g., Verification owns *residual error ≤ X*; Agent SRE owns *SLO attainment ≥ Y* and *cost per resolved unit ≤ Z*; Data Steward owns *provenance coverage ≥ N%*, etc.).
 
-#### One‑liners you can paste under “New roles”
+### KPIs & Dashboards for Organization & Talent
 
-- **Agent Architect** — Designs and standardizes multi‑agent workflows (planner → tools → verifiers → fallback) with SLOs, safety, and upgrade/rollback paths built in.
-- **Verification Engineer** — Builds evaluations, oracle checks, and red‑team suites; manages quality budgets and deployment gates to keep residual error within penalty‑aware limits.
-- **Agent SRE/Observer** — Operates agent fleets to SLO and safety SLAs; owns telemetry, incident response, rollout hygiene, and cost/latency tuning.
-- **Data Steward (Provenance)** — Enforces provenance, licensing, consent, and poisoning defenses; maintains data contracts for retrieval, fine‑tune, and verifier corpora.
-- **Prompt & Policy Engineer** — Codifies institutional policy and style as prompts/guards and reusable patterns with measured effects on quality and safety.
-- **Model Risk Lead** — Provides independent governance of model/agent deployments: intended use, limitations, scenario tests, monitoring, and rollback readiness.
+To manage this org, you need a small set of shared dials.
 
-**Career ladders and mobility**
-Traditional ladders (e.g., junior analyst → senior analyst) give way to **orchestration ladders** (e.g., verifier engineer → agent architect → service‑line owner). Internal marketplaces should make **exception work** and **customer trust** roles visible and rewarded.
+#### Enterprise‑level talent & org KPIs
 
-**Change management**
-Adopt an **inversion narrative** early: agents are placed in the flow of work with transparent metrics; humans are upskilled to higher‑judgment roles. Avoid “shadow deployment” that surprises teams; publish **transition roadmaps** and **placement guarantees** where feasible.
+* **Agent adoption rate** – % of major workflows with agents in the critical
+  path
+* **Human review rate & escalation ratio** – should decline as verifiers improve
+* **Quality‑adjusted throughput** – outcomes per unit cost/time per service line
+* **Residual error and penalty exposure** – by domain
+* **Early‑career placement** – share of new hires in high‑MVL roles vs. legacy
+  roles
+* **Internal mobility** – transitions into AgentOps / verification / trust roles
 
-### KPIs and dashboards
+#### Role‑specific dashboards
 
-#### Macro‑relevant (for Executives)
+* **Agent Architect / Value‑Chain Architect**
+  * Throughput, error, latency vs. SLO for their step
+  * Agent coverage vs. manual; cost per resolved outcome
 
-- **Compute intensity** (GPU‑hours per unit of GDP/sector output)
-- **Agent adoption rate** (share of workflows with agents in the critical path)
-- **Quality‑adjusted cost indices** for intelligence‑intensive services
-- **Distributional metrics** (access to personal AIs, civic compute per capita)
+* **AgentOps PM & Agent SRE**
 
-#### Enterprise
+  * Release cadence; % releases gated by verifiers
+  * Incident counts and MTTR; rollback and canary metrics
 
-- **Quality‑adjusted throughput** (per service line)
-- **Verifier pass rates** and **residual error** trends
-- **Agent MTTR/MTBF**, incident counts by severity
-- **Token/tool mix**, cache hit rates, and **cost per resolved unit**
-- **Human review rate** and **escalation ratio** (should fall over time)
-- **Customer trust metrics** (complaints, reversals, NPS in agent‑touched journeys)
+* **Verification Engineer**
 
-### Strategic Scenarios and Hedges
+  * Eval coverage; residual error; escaped‑defect trends
+  * Time to add/update evals after issues
 
-#### Soft‑landing scenario
+* **Data Steward**
 
-Agents absorb routine work; wages compress slowly; productivity and real incomes rise as service prices fall. **Hedge** by accelerating agent adoption and reallocating humans to trust‑critical roles.
+  * Provenance/license coverage; data freshness
+  * Poisoning/toxicity incidents and remediation time
 
-#### Sharp inversion scenario
+* **Prompt & Policy Engineer**
 
-Hiring stalls; entry‑level cohorts struggle; attention markets dominate distribution. **Hedge** via internal academies, guaranteed placements, attention‑preserving product design, and **contractual access to compute**.
+  * Hallucination/policy‑violation rates
+  * Review time per output; pattern adoption
 
-#### Concentration shock scenario
+* **Model Risk Lead**
 
-Sudden scarcity or price spikes in compute or interconnect supply chain. **Hedge** with multi‑region, multi‑vendor strategies and **workload portability**.
+  * Number of approved agents by risk class
+  * Exceptions backlog; audit findings
 
-#### Safety/regulatory shock scenario
+These dashboards should be **self‑service** for leadership and tightly coupled
+to performance reviews.
 
-High‑profile agent failures trigger stringent controls. **Hedge** by leading on **verification, auditability, and model risk management**, making governance a competitive asset.
+### What Different Leadership Groups Should Focus On
 
-### Operating Model Shift: Capital, Agents, Verification, Human Roles
+This chapter is inherently cross‑functional. Here’s how to slice it by role.
 
-The Intelligence Inversion rewires the production function: **compute‑plus‑orchestration** becomes the core capital stock; **agents** move into the critical path; **verification** becomes the rate‑limiting asset; and **humans** rebundle around judgment, responsibility, trust, and meaning. At the macro level, policy levers must pivot from generic labor stimulation to **compute access, civic AI, and aligned distribution**. At the firm level, winners will be those that industrialize **AgentOps**, quantify **quality‑adjusted throughput**, and rebuild organizations for a world where intelligence is abundant but **trust and purpose** remain scarce.
+#### Executives & Boards
+
+* Endorse the **agent‑first operating model** explicitly.
+* Approve the **new role families** and career paths.
+* Require **Value‑Chain Architect** ownership for major service lines.
+* Tie incentive structures to **quality‑adjusted throughput** and **safe
+  automation**, not just raw cost reduction.
+
+#### Enterprise Architects / CIOs / CTOs
+
+* Own the **reference organization** for agent‑first delivery:
+
+  * Where Agent Architects, AgentOps, Verification, Data Stewardship, and Model
+    Risk sit.
+  * How they interface with product, risk, and operations.
+
+* Sponsor the **skill bridges** and ensure they have real curriculum, not ad‑hoc
+  slide decks.
+
+* Standardize on **agent templates** and supporting patterns across domains.
+
+#### CFOs & Strategy Leaders
+
+* Incorporate new roles into **long‑range planning**:
+
+  * Cost curves for AgentOps, verification, and risk mgmt.
+  * Expected reductions in human review and escalation over time.
+
+* Require **go/no‑go economics** (C_agent vs. C_human) for automation decisions.
+
+* Treat **AgentOps, Verification, and Model Risk** as core enablers of
+  sustainable margin, not overhead.
+
+#### CHROs & People Leaders
+
+* Redesign **job families** and **ladders**:
+
+  * From “analyst → senior analyst → manager” to “verifier → agent architect →
+    service‑line owner.”
+  * From generic ops roles to **exception, trust, and governance** tracks.
+
+* Build **internal academies** for AgentOps, Verification, and Prompt & Policy.
+
+* Protect early‑career entrants with **apprenticeship‑style** roles and
+  transparent pathways into high‑MVL work.
+
+#### Legal, Risk, & Compliance
+
+* Stand up a **Model/Agent Risk Management** function:
+
+  * Policy, approvals, scenarios, and evidence packs.
+  * Clear mapping from incidents to control improvements and training.
+
+* Partner on **role definitions**:
+
+  * Model Risk Lead, Data Steward, Prompt & Policy Engineer.
+  * Ensure RACI is explicit for agent‑driven incidents.
+
+#### Product, Operations, and Line‑of‑Business Leaders
+
+* Adopt **agent‑first design** for new initiatives.
+* Nominate **Value‑Chain Architects** for key flows.
+* Collaborate with Prompt & Policy and Verification to define:
+
+  * Acceptable outcomes
+  * Quality budgets
+  * Customer‑facing expectations for agent behavior
+
+### Closing: From Org Design to a 1,000‑Day Playbook
+
+Across the last four chapters we’ve assembled the pieces:
+
+* **Agents** will own more of the cognitive work.
+* **Compute and energy** set the hard capacity limits.
+* **Economics and governance** push you toward agent‑first services.
+* This chapter translated that into **roles, mappings, and org structure**.
+
+Taken together, they imply a simple but demanding mandate:
+
+> You’re not just adopting AI features; you’re building a **new type of
+> organization**—one that treats intelligence as a managed utility, not a
+> sporadic project.
+
+The natural next question is *“What do we do when?”*:
+
+* Which roles should exist **by when**?
+* Which workflows should be agentized in **Phase 1 vs. Phase 2 vs. Phase 3**?
+* What **milestones** (on quality, cost, risk, and talent) should you hit at ~6,
+  12, 24, and 33 months?
+
+That’s the focus of the next chapter:
+
+* A **1,000‑day playbook** with concrete milestones
+* Suggested sequencing of **platform, use‑case, and talent** investments
+* Checklists to know whether you’re *ready* to move from pilots → copilots →
+  digital workers → semi‑autonomous flows
+
+In other words: we’ll turn this organizational design into a **timeline you can
+actually execute against**.
+
+TODO: I am here on my editing
 
 ---
 
