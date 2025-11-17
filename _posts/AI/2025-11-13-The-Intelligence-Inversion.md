@@ -230,14 +230,16 @@ With the launch of ChatGPT on **Nov 30, 2022** to **Day 1,000 (Aug 26, 2025)** t
 
 From a C‑suite lens, a transformer is a **fast, scalable “next‑step planner”** over tokens. Intelligence, in this world, is: *How much **useful state and action** we can pack into tokens per second, per dollar, under governance.*
 
-Under the hood, every frontier system your enterprise cares about (OpenAI GPT‑4/5 and o‑series, Anthropic Claude, Google Gemini) is built on the same architectural idea:
-
-- The **transformer**: a stack of self‑attention layers that repeatedly answers a single question:  *Given all the tokens I’ve seen so far, what should the next token be?*
-- The **token**: the smallest chunk of information the model reads or writes. Historically this was a slice of text (`"intelli"`, `"gence"`). Today it can represent:
-  - Sub‑word fragments and punctuation,
-  - Image patches and audio chunks,
-  - Function calls and API payloads,
-  - Pointers into external tools and memories.
+> **The Transformer and the Token**
+> Under the hood, every frontier system your enterprise cares about (OpenAI GPT‑4/5 and o‑series, Anthropic Claude, Google Gemini) is built on the same architectural idea:
+> 
+> - The **transformer**: a stack of self‑attention layers that repeatedly answers a single question:  *Given all the tokens I’ve seen so far, what should the next token be?*
+> - The **token**: the smallest chunk of information the model reads or writes. Historically this was a slice of text (`"intelli"`, `"gence"`). Today it can represent:
+>   - Sub‑word fragments and punctuation,
+>   - Image patches and audio chunks,
+>   - Function calls and API payloads,
+>   - Pointers into external tools and memories.
+{: .alert .alert-info}
 
 At inference time the pipeline is:
 
@@ -1379,11 +1381,14 @@ You get a structural funding gap unless you:
 - Cut other spending drastically
 - Or find **new mechanisms** (e.g., tying monetary creation or dividends to shared assets, such as public compute or data)
 
-The takeaway for enterprises: **don’t assume UBI will absorb the shock** for your customers or your workforce on a useful timeline.  Workforce strategy, reskilling, and role rebundling remain core leadership responsibilities that can not be avoided in the foreseeable future.
+> **UBI Challenges**
 
-As a leader of a large organization, you should not assume that UBI or any other large‑scale transfer scheme will arrive in time, at scale, to stabilize your demand. Historically in the U.S., major discretionary interventions only tend to show up once **headline unemployment is in the high‑single digits** and broader underemployment is in the **low‑to‑mid teens**—on the order of 10–15% of the workforce in visible distress. Even then, the timing is erratic: **automatic stabilizers** (unemployment insurance, food assistance, etc.) expand quickly, but the big, bespoke packages arrive on very different clocks—**weeks in an acute crisis like COVID, roughly a year in the 2008–09 Great Recession, and several years in the Great Depression before the New Deal reached scale**. An AI‑driven employment shock that plays out over a decade is therefore likely to **outrun the political system** for long stretches.
-
-That gap matters directly for your customers. If UBI and other supports fail to keep pace, large segments of the population may **not reliably cover housing, food, healthcare, and energy**, let alone discretionary spend. That doesn’t just dent “premium” categories; it **resets the effective standard of living downward**, producing fragile demand, higher volatility in purchasing, and rising defaults as household balance sheets structurally weaken. For enterprises, this shows up as **thinner demand curves, shorter customer lifetimes, and higher churn—even if your product is objectively strong.** Leadership teams should explicitly plan for this scenario: stress‑test business models against prolonged periods of weaker demand, build offerings and pricing that remain viable when customers are cash‑constrained, and treat customer financial resilience as a core strategic input, not a background assumption the state will handle.
+> The takeaway for enterprises: **don’t assume UBI will absorb the shock** for your customers or your workforce on a useful timeline.  Workforce strategy, reskilling, and role rebundling remain core leadership responsibilities that can not be avoided in the foreseeable future.
+>
+> As a leader of a large organization, you should not assume that UBI or any other large‑scale transfer scheme will arrive in time, at scale, to stabilize your demand. Historically in the U.S., major discretionary interventions only tend to show up once **headline unemployment is in the high‑single digits** and broader underemployment is in the **low‑to‑mid teens**—on the order of 10–15% of the workforce in visible distress. Even then, the timing is erratic: **automatic stabilizers** (unemployment insurance, food assistance, etc.) expand quickly, but the big, bespoke packages arrive on very different clocks—**weeks in an acute crisis like COVID, roughly a year in the 2008–09 Great Recession, and several years in the Great Depression before the New Deal reached scale**. An AI‑driven employment shock that plays out over a decade is therefore likely to **outrun the political system** for long stretches.
+>
+> That gap matters directly for your customers. If UBI and other supports fail to keep pace, large segments of the population may **not reliably cover housing, food, healthcare, and energy**, let alone discretionary spend. That doesn’t just dent “premium” categories; it **resets the effective standard of living downward**, producing fragile demand, higher volatility in purchasing, and rising defaults as household balance sheets structurally weaken. For enterprises, this shows up as **thinner demand curves, shorter customer lifetimes, and higher churn—even if your product is objectively strong.** Leadership teams should explicitly plan for this scenario: stress‑test business models against prolonged periods of weaker demand, build offerings and pricing that remain viable when customers are cash‑constrained, and treat customer financial resilience as a core strategic input, not a background assumption the state will handle.
+{: .alert .alert-info}
 
 #### Where human marginal value stays positive
 
@@ -1567,10 +1572,9 @@ This is no longer an edge case. It’s the **standard design point** for serious
 
 The classic and still central metric is:
 
-- **PUE (Power Usage Effectiveness)**
-  [
-  \text{PUE} = \frac{\text{Total facility power}}{\text{IT equipment power}}
-  ]
+> - **PUE (Power Usage Effectiveness)**
+> $$ \text{PUE} = \frac{\text{Total facility power}}{\text{IT equipment power}}$$
+{: .alert .alert-info}
 
   - Best‑in‑class new builds target **≤ 1.15** under design conditions.
   - What matters economically is **seasonal and p95 PUE**, not just a single design number.
@@ -2374,13 +2378,9 @@ You can formalize the comparison.
 
 Let:
 
-[
-C_{\text{agent}} = C_{\text{tokens}} + C_{\text{tools}} + C_{\text{verifier}} + C_{\text{orchestration}} + p_{\text{review}} \cdot C_{\text{human}}
-]
+$$C_{\text{agent}} = C_{\text{tokens}} + C_{\text{tools}} + C_{\text{verifier}} + C_{\text{orchestration}} + p_{\text{review}} \cdot C_{\text{human}}$$
 
-[
-C_{\text{human}} = \frac{\text{TCOW}}{\text{throughput}} + C_{\text{rework}} + C_{\text{delay}}
-]
+$$C_{\text{human}} = \frac{\text{TCOW}}{\text{throughput}} + C_{\text{rework}} + C_{\text{delay}}$$
 
 Where:
 
@@ -2391,9 +2391,8 @@ Where:
 
 Account for residual error risk:
 
-[
-C_{\text{agent, adj}} = C_{\text{agent}} \left( 1 + r_{\text{residual_error}} \cdot P_{\text{penalty}} \right)
-]
+$$
+C_{\text{agent, adj}} = C_{\text{agent}} \left( 1 + r_{\text{residual_error}} \cdot P_{\text{penalty}} \right)$$
 
 Where:
 
@@ -2403,9 +2402,8 @@ Where:
 **Go/no‑go rule** (simplified):
 
 > Deploy agent‑first when
-> [
-> C_{\text{agent, adj}} < C_{\text{human}}
-> ]
+> $$C_{\text{agent, adj}} < C_{\text{human}}$$
+{: .alert .alert-info}
 
 This is the economics lens you should use when deciding **which workflows to
 agentize and how fast**.
@@ -2895,24 +2893,17 @@ Suggested patterns:
 You don’t need to re‑label everyone on day one. Start with **pilot domains** and
 use them as proof points.
 
-##### Skill bridges (8–12 weeks, part‑time)
-
-Design short, targeted upskilling tracks:
-
-- **Architects → Agent Architect / Value‑Chain Architect** - Orchestration
-  patterns; tool boundaries; verifier‑first design; compute economics; rollout
-  and rollback hygiene.
-- **QA/SDET → Verification Engineer** - Evaluation design; oracle construction;
-  red‑teaming; penalty models; online gating and drift monitoring.
-- **SRE/DevOps → Agent SRE** - Prompt/model versioning; token/tool cost
-  controls; agent‑specific SLIs; circuit breakers; kill switches.
-- **Data Gov → Data Steward (Provenance)** - Licensing; provenance signing;
-  poisoning detection; synthetic data and feedback governance.
-- **Writers/BA/Compliance → Prompt & Policy** - Prompt pattern design;
-  measurable guardrails; refusal patterns; collaboration with risk and legal.
-- **GRC/MRM → Model Risk Lead** - Agent taxonomy; evidence packs; scenario
-  testing; setting risk appetites for autonomy levels.
-
+> **Skill bridges (8–12 weeks, part‑time)**
+> 
+> Design short, targeted upskilling tracks:
+> 
+> - **Architects → Agent Architect / Value‑Chain Architect** - Orchestration patterns; tool boundaries; verifier‑first design; compute economics; rollout  and rollback hygiene.
+> - **QA/SDET → Verification Engineer** - Evaluation design; oracle construction;  red‑teaming; penalty models; online gating and drift monitoring.
+> - **SRE/DevOps → Agent SRE** - Prompt/model versioning; token/tool cost controls; agent‑specific SLIs; circuit breakers; kill switches.
+> - **Data Gov → Data Steward (Provenance)** - Licensing; provenance signing; poisoning detection; synthetic data and feedback governance.
+> - **Writers/BA/Compliance → Prompt & Policy** - Prompt pattern design; measurable guardrails; refusal patterns; collaboration with risk and legal.
+> - **GRC/MRM → Model Risk Lead** - Agent taxonomy; evidence packs; scenario testing; setting risk appetites for autonomy levels.
+{: .alert .alert-info}
 
 #### Performance contracts in year one
 
