@@ -326,29 +326,40 @@ The **context window** is the model’s working memory: how many tokens it can c
 Over the first 1,000 days of generative AI, this expanded from **less than a meeting** to **multiple human days**:
 
 | Model             | Year | Context Size (tokens) | Approx. words* | Human speech equivalent† | Human thought equivalent‡ |
-|-------------------|------|----------------------:|----------------|--------------------------|---------------------------|
-| GPT‑1             | 2018 |                   512 | ≈400           | ≈35 min                  | ≈10 min                   |
-| GPT‑2             | 2019 |                 1,024 | ≈800           | ≈1.2 h                   | ≈20 min                   |
-| GPT‑3             | 2020 |                 4,096 | ≈3,000         | ≈4.9 h                   | ≈1.2 h                    |
-| GPT‑4             | 2023 |                 8,192 | ≈6,000         | ≈9.8 h                   | ≈2.5 h                    |
-| GPT‑4‑turbo       | 2023 |               128,000 | ≈96,000        | ≈6.4 days                | ≈1.6 days                 |
-| GPT‑4o            | 2024 |               128,000 | ≈96,000        | ≈6.4 days                | ≈1.6 days                 |
-| GPT‑4o‑mini       | 2024 |               128,000 | ≈96,000        | ≈6.4 days                | ≈1.6 days                 |
-| o1‑mini           | 2024 |               128,000 | ≈96,000        | ≈6.4 days                | ≈1.6 days                 |
-| o1                | 2024 |               200,000 | ≈150,000       | ≈10.0 days               | ≈2.5 days                 |
-| GPT‑5‑Standard    | 2025 |               128,000 | ≈96,000        | ≈6.4 days                | ≈1.6 days                 |
-| GPT‑5‑Pro         | 2025 |               196,000 | ≈147,000       | ≈9.8 days                | ≈2.5 days                 |
-| GPT‑5‑API         | 2025 |               400,000 | ≈300,000       | ≈20 days                 | ≈5 days                   |
-| Gemini 2.5 Pro    | 2025 |             1,000,000 | ≈750,000       | ≈50 days                 | ≈12.5 days                |
-| Claude Sonnet 4.5 | 2025 |             1,000,000 | ≈750,000       | ≈50 days                 | ≈12.5 days                |
-| Llama 4 Scout     | 2025 |            10,000,000 | ≈7,500,000     | ≈500 days                | ≈125 days                 |
+|-------------------|------|:---------------------:|:--------------:|:------------------------:|:-------------------------:|
+| GPT‑1             | 2018 |          512          |      ≈400      |         ≈35 min          |          ≈10 min          |
+| GPT‑2             | 2019 |         1,024         |      ≈800      |          ≈1.2 h          |          ≈20 min          |
+| GPT‑3             | 2020 |         4,096         |     ≈3,000     |          ≈4.9 h          |          ≈1.2 h           |
+| GPT‑4             | 2023 |         8,192         |     ≈6,000     |          ≈9.8 h          |          ≈2.5 h           |
+| GPT‑4‑turbo       | 2023 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
+| GPT‑4o            | 2024 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
+| GPT‑4o‑mini       | 2024 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
+| o1‑mini           | 2024 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
+| o1                | 2024 |        200,000        |    ≈150,000    |        ≈10.0 days        |         ≈2.5 days         |
+| GPT‑5‑Standard    | 2025 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
+| GPT‑5‑Pro         | 2025 |        196,000        |    ≈147,000    |        ≈9.8 days         |         ≈2.5 days         |
+| GPT‑5‑API         | 2025 |        400,000        |    ≈300,000    |         ≈20 days         |          ≈5 days          |
+| Gemini 2.5 Pro    | 2025 |       1,000,000       |    ≈750,000    |         ≈50 days         |        ≈12.5 days         |
+| Claude Sonnet 4.5 | 2025 |       1,000,000       |    ≈750,000    |         ≈50 days         |        ≈12.5 days         |
+| Llama 4 Scout     | 2025 |      10,000,000       |   ≈7,500,000   |        ≈500 days         |         ≈125 days         |
 {: .table .table-striped .table-hover}
 
 - Approx. words = tokens × 0.75.
 † Speech equivalent assumes ≈20,000 tokens/day of spoken language.
 ‡ Thought equivalent assumes ≈80,000 tokens/day of inner verbal thought.
 
+Here is a clean, self-contained paragraph you can drop directly into the
+section. It preserves your voice, matches the depth of the surrounding material,
+and bridges *context size*, *intelligence*, and *conversation/thought size* as
+distinct but related phenomena.
+
+
+
+> **Context Size, Intelligence, and the Shape of Thought**
+> As context windows scale from thousands to millions of tokens, it's tempting to equate **more context** with **more intelligence**—but the two are related only indirectly. A larger window does not make a model “smarter”; it makes the model capable of **holding longer, more coherent arcs of conversation, task-state, and thought** without dropping threads. In humans, intelligence emerges not from the raw amount of speech or internal monologue we generate, but from our ability to **select, compress, and prioritize** the right parts of that stream. Models face the same constraint: a million-token window can capture weeks of conversations, policies, and reasoning traces, but using that window effectively requires the model to identify which 1–5% of the content is actually causal, relevant, or decision-bearing. In this sense, *context size is to intelligence what bandwidth is to insight*: it expands the canvas but does not supply the brushstrokes. What large windows really unlock is continuity—the ability to sustain long-range dependencies, multi-day reasoning chains, and evolving plans in a way that begins to match the temporal structure of human cognition. Intelligence still comes from what the model does **within** that space; context simply defines how much of the ongoing story the model can keep “alive” at once.
+> 
 > One important detail: a model’s “context window” is a **shared budget for both input and output** in a single request. System prompts, tools, previous messages, uploaded documents, intermediate reasoning, and the model’s reply all count against the same token limit. So a “400k‑token” or “1M‑token” model doesn’t just mean you can *send* that many tokens — it means the **sum of what you send plus what it generates** can’t exceed that window. If you’ve already used ~300k tokens for history and docs on a 400k‑token model, you only have ~100k tokens left for the answer.
+{: .alert .alert-info}
 
 By mid‑2025, a production deployment could hold in active working memory the equivalent of:
 
@@ -2632,7 +2643,7 @@ these skills appropriately.
 Here’s how typical legacy roles map into the new ones:
 
 | Legacy role                                    | Typical (legacy) description                                                                                                                                                 | **Primary new role**                                             | Updated (agent‑era) description                                                                                                                                                                                                     | Secondary mapping                                                                            |
-| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+|------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------|
 | **Enterprise Architect**                       | Defines target architectures, NFRs, and standards for whole sections of the value chain; ensures business strategy can be met via processes, data, apps, tech, and roadmaps. | **Value‑Chain Architect (Service‑Line Owner)**                   | Owns an entire step in the value chain end‑to‑end—from strategy to runtime. Sets risk appetite, quality budgets, and SLOs across human and agentic layers; aligns compute, people, and process around outcomes.                     | Agent Architect; Verification Engineer; Agent SRE; Data Steward; Prompt & Policy; Model Risk |
 | **Product / Project / Program Manager**        | Defines scope, roadmap, and delivery for products or projects; manages resources, milestones, and stakeholders.                                                              | **AgentOps Program Manager** *(or)* **Value‑Chain Architect**    | Leads cross‑functional agentic initiatives from planning to rollout, coordinating Verification, SRE, Policy, and Risk. Manages quality‑gated releases, version pinning, incident response, and alignment to value‑chain objectives. | Agent SRE; Verification; Model Risk; Data Steward; Prompt & Policy                           |
 | **Solutions Architect**                        | Decomposes business needs into applications, data, APIs, and integrations.                                                                                                   | **Agent Architect**                                              | Turns workflows into agentic compositions (planner → tools → verifiers → fallbacks); negotiates SLOs and escalation logic with service owners.                                                                                      | Verification Engineer                                                                        |
