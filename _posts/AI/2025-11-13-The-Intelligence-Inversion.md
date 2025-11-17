@@ -1885,7 +1885,7 @@ We turn to those questions next.
 
 ---
 
-TODO: EDITING HERE
+TODO: Economic and Organizational Implications chapter needs editing
 
 ## Economic & Organizational Implications
 
@@ -1916,7 +1916,7 @@ We’ll cover:
 
 
 
-## 1. Macroeconomic Transformation
+### Macroeconomic Transformation
 
 ### 1.1 Compute as dominant capital stock
 
@@ -2026,7 +2026,7 @@ will pull ahead.
 
 
 
-## 2. Industrial Organization & Competition
+### Industrial Organization & Competition
 
 ### 2.1 From data moats to orchestration moats
 
@@ -2081,9 +2081,9 @@ customers—becomes a **strategic control point**, not a UX afterthought.
 
 
 
-## Labor‑Market Dynamics
+### Labor‑Market Dynamics
 
-### Sequenced impact
+#### Sequenced impact
 
 The Intelligence Inversion does **not** hit every role at once. Likely sequence:
 
@@ -2112,7 +2112,7 @@ The Intelligence Inversion does **not** hit every role at once. Likely sequence:
    - Their back‑office cores (scheduling, documentation, case management)
      agentize early.
 
-### Early‑career displacement and cohort scarring
+#### Early‑career displacement and cohort scarring
 
 Before layoffs, you often see **hiring pauses**:
 
@@ -2136,7 +2136,7 @@ Mitigation paths:
   - Trust, safety, and customer stewardship
   - Policy, governance, and escalation roles
 
-### Rebundling of human work
+#### Rebundling of human work
 
 As agents take over routine cognition, human roles skew toward:
 
@@ -2164,7 +2164,7 @@ As agents take over routine cognition, human roles skew toward:
 Job architecture, performance management, and rewards need to **reflect this
 rebundling**, not pretend the old job shapes remain intact.
 
-### Regulatory & Governance Implications
+#### Regulatory & Governance Implications
 
 #### Algorithmic organizational control
 
@@ -2231,7 +2231,7 @@ Contracts and RFPs should:
 Public institutions that modernize procurement and governance around agents will
 be better positioned to offer **high‑quality civic AI** at scale.
 
-### Enterprise Operating Model & Unit Economics
+#### Enterprise Operating Model & Unit Economics
 
 The inversion is felt most viscerally inside firms: **how you run the business
 changes**.
@@ -2334,7 +2334,7 @@ Good practice:
 This aligns security, compliance, and operations around agents as **first‑class
 actors**.
 
-### 5.5 Data provenance and contracts
+### Data provenance and contracts
 
 As agents learn from and act on your data:
 
@@ -2408,8 +2408,6 @@ Capex/opex trade‑offs:
 
 Your orchestration layer should **abstract heterogeneous footprints** so finance
 can mix these options without fragmenting the architecture.
-
-
 
 ### What Different Roles Should Take Away
 
@@ -2520,8 +2518,6 @@ hold different pieces of the response.
   - Quality and satisfaction across human‑only vs. agent‑first flows.
   - The economics of **verified outcomes**, not just “number of AI calls.”
 
-
-
 ### From Economics to New Roles and Organizational Shape
 
 So far, across the last few chapters, we’ve established that:
@@ -2580,8 +2576,6 @@ We’ll cover:
 6. What different leadership groups should focus on
 7. How this sets up a concrete 1,000‑day **playbook and milestone plan** in the
    next chapter
-
-
 
 ### The New Core Roles in an Agent‑First Enterprise
 
