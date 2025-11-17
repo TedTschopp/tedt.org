@@ -80,6 +80,24 @@ no_toc: true
 
 ---
 
+<style>
+.alert.alert-info {
+  width: 50%;
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  clear: right;
+}
+
+@media (max-width: 768px) {
+  .alert.alert-info {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+}
+</style>
+
 ## Executive Summary
 
 The first 1,000 days of AI validated the path from science through engineering and into production; the **next** 1,000 will be won on **economics, business strategy, and user trust**.
@@ -231,6 +249,7 @@ With the launch of ChatGPT on **Nov 30, 2022** to **Day 1,000 (Aug 26, 2025)** t
 From a C‑suite lens, a transformer is a **fast, scalable “next‑step planner”** over tokens. Intelligence, in this world, is: *How much **useful state and action** we can pack into tokens per second, per dollar, under governance.*
 
 > **The Transformer and the Token**
+> 
 > Under the hood, every frontier system your enterprise cares about (OpenAI GPT‑4/5 and o‑series, Anthropic Claude, Google Gemini) is built on the same architectural idea:
 > 
 > - The **transformer**: a stack of self‑attention layers that repeatedly answers a single question:  *Given all the tokens I’ve seen so far, what should the next token be?*
@@ -308,9 +327,9 @@ Empirical work on language and thought suggests:
 
 - Humans speak on the order of **≅15,000 words per day** on average (with wide variance).
 - Internal speech and “verbal thought” are far denser: estimates suggest **4–30 internal words for every word spoken**, yielding **≅60,000–450,000 words a day** of inner dialogue and imagined conversations.
-- We speak at **125–175 words per minute**; that’s in the ballpark of **≅2 tokens/second** if we approximate 1 word ≈ 1–1.33 tokens.
+- We speak at **125–175 words per minute**; that’s in the ballpark of **≅2 tokens/second** if we approximate 1 word ≅ 1–1.33 tokens.
 
-Using your working approximation of **1 word ≈ 1.33 tokens**:
+Using your working approximation of **1 word ≅ 1.33 tokens**:
 
 - **Spoken per day:** ≅15,000 words → **≅20,000 tokens**.
 - **Inner speech per day:** ≅60,000 – 450,000 words → **≅80,000 – 600,000+ tokens**.
@@ -329,26 +348,26 @@ Over the first 1,000 days of generative AI, this expanded from **less than a mee
 
 | Model             | Year | Context Size (tokens) | Approx. words* | Human speech equivalent† | Human thought equivalent‡ |
 |-------------------|------|:---------------------:|:--------------:|:------------------------:|:-------------------------:|
-| GPT‑1             | 2018 |          512          |      ≈400      |         ≈35 min          |          ≈10 min          |
-| GPT‑2             | 2019 |         1,024         |      ≈800      |          ≈1.2 h          |          ≈20 min          |
-| GPT‑3             | 2020 |         4,096         |     ≈3,000     |          ≈4.9 h          |          ≈1.2 h           |
-| GPT‑4             | 2023 |         8,192         |     ≈6,000     |          ≈9.8 h          |          ≈2.5 h           |
-| GPT‑4‑turbo       | 2023 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
-| GPT‑4o            | 2024 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
-| GPT‑4o‑mini       | 2024 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
-| o1‑mini           | 2024 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
-| o1                | 2024 |        200,000        |    ≈150,000    |        ≈10.0 days        |         ≈2.5 days         |
-| GPT‑5‑Standard    | 2025 |        128,000        |    ≈96,000     |        ≈6.4 days         |         ≈1.6 days         |
-| GPT‑5‑Pro         | 2025 |        196,000        |    ≈147,000    |        ≈9.8 days         |         ≈2.5 days         |
-| GPT‑5‑API         | 2025 |        400,000        |    ≈300,000    |         ≈20 days         |          ≈5 days          |
-| Gemini 2.5 Pro    | 2025 |       1,000,000       |    ≈750,000    |         ≈50 days         |        ≈12.5 days         |
-| Claude Sonnet 4.5 | 2025 |       1,000,000       |    ≈750,000    |         ≈50 days         |        ≈12.5 days         |
-| Llama 4 Scout     | 2025 |      10,000,000       |   ≈7,500,000   |        ≈500 days         |         ≈125 days         |
+| GPT‑1             | 2018 |          512          |      ≅400      |         ≅35 min          |          ≅10 min          |
+| GPT‑2             | 2019 |         1,024         |      ≅800      |          ≅1.2 h          |          ≅20 min          |
+| GPT‑3             | 2020 |         4,096         |     ≅3,000     |          ≅4.9 h          |          ≅1.2 h           |
+| GPT‑4             | 2023 |         8,192         |     ≅6,000     |          ≅9.8 h          |          ≅2.5 h           |
+| GPT‑4‑turbo       | 2023 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+| GPT‑4o            | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+| GPT‑4o‑mini       | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+| o1‑mini           | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+| o1                | 2024 |        200,000        |    ≅150,000    |        ≅10.0 days        |         ≅2.5 days         |
+| GPT‑5‑Standard    | 2025 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+| GPT‑5‑Pro         | 2025 |        196,000        |    ≅147,000    |        ≅9.8 days         |         ≅2.5 days         |
+| GPT‑5‑API         | 2025 |        400,000        |    ≅300,000    |         ≅20 days         |          ≅5 days          |
+| Gemini 2.5 Pro    | 2025 |       1,000,000       |    ≅750,000    |         ≅50 days         |        ≅12.5 days         |
+| Claude Sonnet 4.5 | 2025 |       1,000,000       |    ≅750,000    |         ≅50 days         |        ≅12.5 days         |
+| Llama 4 Scout     | 2025 |      10,000,000       |   ≅7,500,000   |        ≅500 days         |         ≅125 days         |
 {: .table .table-striped .table-hover}
 
 - Approx. words = tokens × 0.75.
-† Speech equivalent assumes ≈20,000 tokens/day of spoken language.
-‡ Thought equivalent assumes ≈80,000 tokens/day of inner verbal thought.
+† Speech equivalent assumes ≅20,000 tokens/day of spoken language.
+‡ Thought equivalent assumes ≅80,000 tokens/day of inner verbal thought.
 
 Here is a clean, self-contained paragraph you can drop directly into the
 section. It preserves your voice, matches the depth of the surrounding material,
@@ -358,9 +377,17 @@ distinct but related phenomena.
 
 
 > **Context Size, Intelligence, and the Shape of Thought**
+> 
 > As context windows scale from thousands to millions of tokens, it's tempting to equate **more context** with **more intelligence**—but the two are related only indirectly. A larger window does not make a model “smarter”; it makes the model capable of **holding longer, more coherent arcs of conversation, task-state, and thought** without dropping threads. In humans, intelligence emerges not from the raw amount of speech or internal monologue we generate, but from our ability to **select, compress, and prioritize** the right parts of that stream. Models face the same constraint: a million-token window can capture weeks of conversations, policies, and reasoning traces, but using that window effectively requires the model to identify which 1–5% of the content is actually causal, relevant, or decision-bearing. In this sense, *context size is to intelligence what bandwidth is to insight*: it expands the canvas but does not supply the brushstrokes. What large windows really unlock is continuity—the ability to sustain long-range dependencies, multi-day reasoning chains, and evolving plans in a way that begins to match the temporal structure of human cognition. Intelligence still comes from what the model does **within** that space; context simply defines how much of the ongoing story the model can keep “alive” at once.
 > 
-> One important detail: a model’s “context window” is a **shared budget for both input and output** in a single request. System prompts, tools, previous messages, uploaded documents, intermediate reasoning, and the model’s reply all count against the same token limit. So a “400k‑token” or “1M‑token” model doesn’t just mean you can *send* that many tokens — it means the **sum of what you send plus what it generates** can’t exceed that window. If you’ve already used ~300k tokens for history and docs on a 400k‑token model, you only have ~100k tokens left for the answer.
+> **One important detail:** a model’s “context window” is a **shared budget for
+> both input and output** in a single request. System prompts, tools, previous
+> messages, uploaded documents, intermediate reasoning, and the model’s reply
+> all count against the same token limit. So a “400,000 token” or “1,000,000
+> token” model doesn’t just mean you can *send* that many tokens — it means the
+> **sum of what you send plus what it generates** can’t exceed that window. If
+> you’ve already used ≅300,000 tokens for history and docs on a 400,000 token
+> model, you only have ≅100,000 tokens left for the answer.
 {: .alert .alert-info}
 
 By mid‑2025, a production deployment could hold in active working memory the equivalent of:
@@ -457,7 +484,7 @@ Where organizations got the stack right (mini/frontier mix, caching, tools, eval
 
 - **≥60% reductions** in quality‑adjusted unit costs in content drafting, L1 support, claims triage, and code generation flows.
 - **≥50% reductions** in cycle time once agents entered the critical path under verification.
-- Token pricing (e.g., GPT‑4o‑mini at **$0.15 per 1,000,000 input tokens** and **$0.60 per 1,000,000 output tokens**) meant ≅1,000,000 tokens a day cost only **≈$0.33 – $0.50 a day** in pure inference before tools and evaluations.
+- Token pricing (e.g., GPT‑4o‑mini at **$0.15 per 1,000,000 input tokens** and **$0.60 per 1,000,000 output tokens**) meant ≅1,000,000 tokens a day cost only **≅$0.33 – $0.50 a day** in pure inference before tools and evaluations.
 
 For CFOs, this was the moment **“cost per verified outcome”** started to replace **FTE hours** as the relevant denominator.
 
@@ -602,7 +629,7 @@ Taken together, the first 1,000 days established four facts that anchor the rest
    Agentic and live‑fire arenas show that agents can own multi‑step, long‑horizon workflows—**if and only if** they are surrounded by verifiers, tool boundaries, and incident response.
 
 4. **Economics that change the production function.**
-   A digital worker‑day of ≅1,000,000 tokens now costs **well under $1 in raw inference** for mini‑class models and low single digits for frontier models. Once verification is in place, the **marginal value of average human cognitive labor** in those workflows trends toward **≈$0**, and can become **negative** where humans introduce variance, latency, or error.
+   A digital worker‑day of ≅1,000,000 tokens now costs **well under $1 in raw inference** for mini‑class models and low single digits for frontier models. Once verification is in place, the **marginal value of average human cognitive labor** in those workflows trends toward **≅$0**, and can become **negative** where humans introduce variance, latency, or error.
 
 The question for the next 1,000 days is no longer: *“Are the models good enough?”*
 
@@ -743,7 +770,9 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Ultra‑Low Precision Training & Inference 8 bit Floating-Point, 4 bit Floating-Point, and 1 bit numbers
 
-- **4‑bit training** is moving from theory to practice: 12,000,000,000 parameter models trained entirely in 4 bit Floating-Point with near‑parity accuracy and ~3× speedup vs 8 bit Floating-Point.
+- **4‑bit training** is moving from theory to practice: 12,000,000,000 parameter
+  models trained entirely in 4 bit Floating-Point with near‑parity accuracy and
+  ≅3× speedup vs 8 bit Floating-Point.
 - **1‑bit inference models** achieve competitive performance at dramatically lower energy and cost.
 - Hardware vendors are pushing **microscaling formats** (8, 6, and 4 bit) as first‑class on new GPU generations.
 
@@ -895,7 +924,7 @@ The architecture question becomes: **how will your operational systems expose th
 
 There’s no precise clock, but you can think in **three overlapping phases**.
 
-#### Phase 1 — Now → ~October 2026 (Industrializing Today’s Tricks)
+#### Phase 1 — Now → October 2026 (Industrializing Today’s Tricks)
 
 ##### What actually ships
 
@@ -905,7 +934,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
   - Project‑level memories, preferences, simple “show/forget” controls.
 
-- **Long‑context Products** (~512K–1M tokens) offered as enterprise versions.
+- **Long‑context Products** (≅512,000 – 1,000,000 tokens) offered as enterprise versions.
 
 - **FP8** becomes standard for large‑scale training; **FP4 and 1‑bit** start to appear in internal and niche workloads.
 
@@ -1367,7 +1396,7 @@ At this point many discussions jump to **universal basic income (UBI)** as the p
 Stylized example:
 
 - Target **$20,000 per person per year**
-- US Population ≈ 330 million → ≈ **$6.6T/year** in outlays
+- US Population ≅ 330 million → ≅ **$6.6T/year** in outlays
 - Compare that with current‑order **total federal tax receipts** (on the order of $5T/year) and existing obligations
 
 Layer on two trends:
@@ -3062,7 +3091,7 @@ The natural next question is *“What do we do when?”*:
 
 - Which roles should exist **by when**?
 - Which workflows should be agentized in **Phase 1 vs. Phase 2 vs. Phase 3**?
-- What **milestones** (on quality, cost, risk, and talent) should you hit at ~6,
+- What **milestones** (on quality, cost, risk, and talent) should you hit at 6,
   12, 24, and 33 months?
 
 That’s the focus of the next chapter:
