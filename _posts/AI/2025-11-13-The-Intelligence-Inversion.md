@@ -272,7 +272,7 @@ Over the first 1,000 days, the underlying “intelligence substrate” changed f
 
 In practical terms, three things changed:
 
-#### **1. The range of things AI can understand and act on exploded.**
+#### 1. The range of things AI can understand and act on exploded
 
 Tokens—the basic units AI models use to think—used to represent words or fragments of text. Now they represent **meaningful units from every domain**:
 
@@ -289,7 +289,7 @@ Tokens—the basic units AI models use to think—used to represent words or fra
 
 **Anything your business touches—words, images, numbers, sounds, operational, scientific, or procedural—can now be represented, reasoned over, and acted on by AI.**
 
-#### **2. The amount of context AI can hold at once grew exponentially.**
+#### 2. The amount of context AI can hold at once grew exponentially
 
 Instead of working with the equivalent of “one meeting’s worth” of information, AI can now keep **days of work** in active memory—documents, conversations, history, processes, exceptions, decisions, and the rationale behind them—**all at once**.
 
@@ -302,7 +302,7 @@ This means AI can:
 
 It’s the difference between a smart intern and **a fully briefed chief of staff** who never forgets anything.
 
-#### **3. The speed, cost, and reliability of updating that shared “whiteboard” improved dramatically.**
+#### The speed, cost, and reliability of updating that shared “whiteboard” improved dramatically
 
 Advances in how models run—streaming, batching, parallel execution, automated checking, and verification—mean that the system can now update this large working memory **faster, cheaper, and with far more consistency** than before.
 
@@ -368,13 +368,6 @@ Over the first 1,000 days of generative AI, this expanded from **less than a mee
 - Approx. words = tokens × 0.75.
 † Speech equivalent assumes ≅20,000 tokens/day of spoken language.
 ‡ Thought equivalent assumes ≅80,000 tokens/day of inner verbal thought.
-
-Here is a clean, self-contained paragraph you can drop directly into the
-section. It preserves your voice, matches the depth of the surrounding material,
-and bridges *context size*, *intelligence*, and *conversation/thought size* as
-distinct but related phenomena.
-
-
 
 > **Context Size, Intelligence, and the Shape of Thought**
 > 
