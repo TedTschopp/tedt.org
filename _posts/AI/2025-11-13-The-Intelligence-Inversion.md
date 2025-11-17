@@ -3412,7 +3412,7 @@ The arrival of abundant machine intelligence reorders scarcity.  The first 1,000
 
 We model flourishing as a composite function over four forms of capital:
 
-\[
+$$
 \textbf{Flourishing } \mathcal{F} = f\Big(
 \underbrace{M}_{\text{Material}},
 \;
@@ -3422,7 +3422,7 @@ We model flourishing as a composite function over four forms of capital:
 \;
 \underbrace{D}_{\text{Diversity of Exposure}}
 \Big)
-\]
+$$
 
 - **Material (M):** safety, housing, nutrition, healthcare access.
 - **Intelligence (I):** capability uplift via tools, skills, and personal AIs.
@@ -3437,14 +3437,14 @@ In an economy where cognition is abundant, **discretionary time** becomes the pr
 
 #### Time metrics
 
-- **Time Dividend** \((T_{\Delta})\) — hours per person per week shifted from mandatory labor/administration to discretionary use.
+- **Time Dividend** $(T_{\Delta})$ — hours per person per week shifted from mandatory labor/administration to discretionary use.
 - **Coordinated Time Index (CTI)** — fraction of civic services delivered at the user’s *first available time*, not the provider’s convenience.
 - **Work-to-Flourish Ratio (WFR)** — time spent on paid tasks vs. time in care, education, community, and rest.
 
 #### Design rules
 
 - Every agentic workflow must publish **time-to-outcome** alongside cost.
-- Public programs target \(T_{\Delta} \geq 5\) hours a week for median households within 24 months, using UPAIs to remove administrative burdens (benefits, taxes, scheduling).
+- Public programs target $T_{\Delta} \geq 5$ hours a week for median households within 24 months, using UPAIs to remove administrative burdens (benefits, taxes, scheduling).
 - Enterprises report WFR deltas for affected roles as a condition of claiming “AI-driven productivity” in ESG or investor communications.
 
 ### Education: from content coverage to capability formation
