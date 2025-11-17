@@ -178,19 +178,7 @@ As cognition gets cheap, **time, trust, and attention** become the scarce assets
 1. **Capacity strategy.** Lock in diversified compute through long‑dated capacity contracts, multi‑provider commitments, and energy‑aware siting; publish energy/carbon **per verified outcome**.
 2. **Outcome‑linked spend.** For internal service programs (learning, care, legal triage), pilot **service‑credit** mechanisms where payouts are tied to **verified outcomes**, not usage volume. This caps leakage and focuses spend where it moves the needle.
 
-### Geopolitics, Security, and Resilience
-
-**Supply risks are now strategic:** accelerators, model supply chains, energy, and data provenance.
-
-**Executives should sponsor:**
-
-- **Compute Sovereignty Ratio (CSR):** domestic (or contracted) civic‑grade compute supply vs. verified demand—keep **0.8 – 1.2** for resilience without waste.
-- **Energy‑Compute Intensity (ECI):** **kWh per verified outcome**—target **≥15% YoY** decline with scheduling to off‑peak windows and heat‑reuse.
-- **Model/Dataset SBOMs & Signing:** reproducible builds; provenance; poisoning audits.
-- **Incident readiness:** GPU‑reserve or burst capacity plan; **Sev‑1 MTTR ≤2 hours**; quarterly kill‑switch drills.
-- **International norms:** adopt content provenance/watermark standards; avoid single‑vendor or single‑nation dependence; insist on multi‑region hosting.
-
-### What Would Change Our Mind (Revision Triggers)
+### What Would Change Minds
 
 Re‑evaluate the agent‑first plan if, after adequate investment and governance:
 
@@ -666,13 +654,13 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Deeper Reasoning: RLVR & Self‑Play
 
-**What’s happening**
+##### What’s happening
 
 - **Reinforcement Learning with Verifiable (but Noisy) Rewards (RLVR)** trains models using *checkable* outcomes: program outputs, math proofs, compiler passes, business rule engines, LLM judges, etc.
 - New work explicitly tackles **noisy verifiers** – treating symbolic checkers and LLM judges as imperfect and correcting for their errors.
 - **Self‑play** and prompt‑time steering (e.g., Self‑Anchor‑like methods) let models generate harder examples for themselves and keep attention on the right intermediate steps.
 
-**Why it matters**
+##### Why it matters
 
 - In domains where you can define a verifier – code, math, pricing formulas, certain compliance checks – you can now **train models to be reliably good**, not just “pretty good on average.”
 - We move from “generic chat model” to **specialist reasoning Models as Products**:
@@ -692,13 +680,13 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Long‑Term Memory & Agentic LLMs
 
-**What’s happening**
+##### What’s happening
 
 - New **memory architectures** let agents store and revisit past interactions using external memories instead of stuffing everything into a monster context window.
 - Reinforcement Learning‑trained **memory managers** learn *what* to store, *how* to summarize it, and *when* to recall it for downstream tasks.
 - Vendors are starting to treat **long‑term memory as a product layer**: user‑visible, auditable, and subject to data governance.
 
-**Why it matters**
+##### Why it matters
 
 - Assistants and agents become **persistent entities**:
 
@@ -710,7 +698,7 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
   - Personal → Team → Organization
   - With separate retention, access, and governance rules.
 
-**Enterprise implications for the next 1,000 days**
+##### Enterprise implications for the next 1,000 days
 
 - Expect assistants that **“stay the same person”** across channels (email, docs, tickets, code) with explicit “show, edit, forget” memory controls.
 - Treat AI memory like **regulated data**:
@@ -724,12 +712,12 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Long‑Context Efficiency & Infrastructure
 
-**What’s happening**
+##### What’s happening
 
 - Techniques like **Core Attention Disaggregation (CAD)** offload attention computation to dedicated “attention servers,” enabling 512K–1M+ token contexts with reasonable throughput.
 - Hardware–software co‑design (e.g., PLENA‑like accelerators, packing/prefetch schedulers, larger on‑chip memories) attacks the **KV‑cache memory wall**, yielding substantial decode speedups.
 
-**Why it matters**
+##### Why it matters
 
 - 1,000,000 token contexts stop being an exotic demo and become a **routine Product** for enterprise use.
 - Instead of intricate chunking and retrieval plumbing for every system, you can often just **drop entire artifacts into context**:
@@ -738,7 +726,7 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
   - Complex contracts and portfolios
   - Long‑running multi‑agent sessions
 
-**Enterprise implications for the next 1,000 days**
+##### Enterprise implications for the next 1,000 days
 
 - Plan for **“whole system” questions**: architecture drift, portfolio analysis, cross‑application impact.
 - Reduce investment in bespoke context‑mangling patterns; increase investment in:
@@ -748,18 +736,18 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Ultra‑Low Precision Training & Inference 8 bit Floating-Point, 4 bit Floating-Point, and 1 bit numbers
 
-**What’s happening**
+##### What’s happening
 
 - **4‑bit training** is moving from theory to practice: 12,000,000,000 parameter models trained entirely in 4 bit Floating-Point with near‑parity accuracy and ~3× speedup vs 8 bit Floating-Point.
 - **1‑bit inference models** achieve competitive performance at dramatically lower energy and cost.
 - Hardware vendors are pushing **microscaling formats** (8, 6, and 4 bit) as first‑class on new GPU generations.
 
-**Why it matters**
+##### Why it matters
 
 - High‑quality models become **cheaper to train and run** by constant and predictable factors.
 - Good LLMs become deployable on **smaller on‑prem boxes and even edge devices**, with feasible latency and power consumption.
 
-**Enterprise implications for the next 1,000 days**
+##### Enterprise implications for the next 1,000 days
 
 - Training serious **domain‑specific models** (1,000,000,000 – 30,000,000,000 parameters) becomes viable for F500 enterprises, not just hyperscalers.
 
@@ -773,18 +761,18 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Mechanistic Interpretability & Full‑Stack Safety
 
-**What’s happening**
+##### What’s happening
 
 - Mechanistic interpretability now includes **rule‑based descriptions of attention features**, mapping internal circuits to human‑legible rules.
 - Benchmarks like **SAEBench** and taxonomies for full‑stack safety give more consistent ways to evaluate interpretability tools.
 - Safety work increasingly covers the full stack: **data → training → deployment → tool‑using agents.**
 
-**Why it matters**
+##### Why it matters
 
 - We move from “we tested the model on a benchmark and it seems fine” to **“we can inspect and steer internal features in specific ways.”**
 - Regulators and internal risk teams begin to ask for **artifacts**, not just high‑level scores.
 
-**Enterprise implications for the next 1,000 days**
+##### Enterprise implications for the next 1,000 days
 
 - Expect commercial **“model X‑ray” tools**: dashboards, feature probes, hooks for controlling or editing behavior.
 
@@ -798,12 +786,12 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### World Models & Embodied / Robotics AI
 
-**What’s happening**
+##### What’s happening
 
 - An explosion of **world models** – neural models of environments – for robotics, autonomous driving, and simulation.
 - New platforms aim at **foundation world models** for physical environments, and control‑oriented world models that tie directly to robot policies.
 
-**Why it matters**
+##### Why it matters
 
 - You can increasingly **train robots and autonomous systems in learned simulators**, then fine‑tune in the real world.
 - For non‑robotics domains, world‑model ideas flow into **digital twins with agency**: systems that both simulate and act.
@@ -824,13 +812,13 @@ The architecture question becomes: **how will your operational systems expose th
 
 #### Multimodal Video & Physically‑Aware Generation
 
-**What’s happening**
+##### What’s happening
 
 - New models unify **video understanding, generation, and editing** under one framework.
 - Video‑MLLMs are becoming **3D‑aware** and **physics‑aware**, blending text, vision, and basic physical reasoning.
 - Multimodal models are being used to generate **semantic video descriptors** powering recommendations and analytics.
 
-**Why it matters**
+##### Why it matters
 
 - Video stops being a “dumb blob” of pixels over a timeline and becomes **structured, searchable, and generatable data**.
 - Enterprises get:
@@ -838,7 +826,7 @@ The architecture question becomes: **how will your operational systems expose th
   - Text‑to‑video tools good enough for **marketing, training, and explainers**.
   - Video QA and analytics for **inspection, sports, security, and operations** that can answer “why” and “what likely happened,” not just “what’s in the frame.”
 
-**Enterprise implications for the next 1,000 days**
+##### Enterprise implications for the next 1,000 days
 
 - Plan for **video as a first‑class data type** in AI roadmaps.
 - Consider where physically aware video models could:
@@ -849,13 +837,13 @@ The architecture question becomes: **how will your operational systems expose th
 
 #### LLM Agents, Tool Learning & Planning
 
-**What’s happening**
+##### What’s happening
 
 - Dedicated surveys and benchmarks now focus on **agents and tool use**: planning, robustness, safety, and real‑world API interaction.
 - New benchmarks test not just “can you call the tool?” but “**should** you call it, and how often, and in what order?”
 - Agent training methods synthesize **environments and tasks** to teach planning, not just single turns.
 
-**Why it matters**
+##### Why it matters
 
 - Agents move from “fancy macros that call APIs” to entities that can:
 
@@ -870,7 +858,7 @@ The architecture question becomes: **how will your operational systems expose th
   - Memory
   - Critic/Evaluator
 
-**Enterprise implications for the next 1,000 days**
+##### Enterprise implications for the next 1,000 days
 
 - Expect **“digital workers”** for well‑scoped workflows:
 
@@ -885,12 +873,12 @@ The architecture question becomes: **how will your operational systems expose th
 
 #### Brain‑Inspired & Non‑Transformer Architectures
 
-**What’s happening**
+##### What’s happening
 
 - New proposals (e.g., brain‑inspired architectures, state‑space models, neuromorphic approaches) test alternatives and complements to transformers.
 - Many aim at **continual learning, streaming data, and higher energy efficiency**.
 
-**Why it matters**
+##### Why it matters
 
 - In the next 1,000 days, these are likely **niche but important** in:
 
@@ -900,7 +888,7 @@ The architecture question becomes: **how will your operational systems expose th
 
 - Longer‑term, they could reshape the performance/price frontier.
 
-**Enterprise implications for the next 1,000 days**
+##### Enterprise implications for the next 1,000 days
 
 - Watch this space, but don’t bet the roadmap on it yet.
 - Expect early products in:
@@ -912,11 +900,9 @@ The architecture question becomes: **how will your operational systems expose th
 
 There’s no precise clock, but you can think in **three overlapping phases**.
 
-#### Phase 1 — Now → ~October 2026
+#### Phase 1 — Now → ~October 2026 (Industrializing Today’s Tricks)
 
-**Theme: Industrializing Today’s Tricks**
-
-**What actually ships**
+##### What actually ships
 
 - **Reasoning modes** and RLVR/self‑play recipes integrated into major commercial models, especially for math, code, and structured decision‑making.
 
@@ -930,7 +916,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
 - Enterprises standardize on **agent frameworks for “read and suggest”** workflows, keeping write/execute permissions constrained.
 
-**Business consequences**
+##### Business consequences
 
 - Training and inference costs drop by a clear constant factor.
 - Most value is still **augmentation**:
@@ -938,7 +924,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
   - Better copilots; faster humans.
   - 5–20% productivity gains where adoption is strong.
 
-**What to prioritize**
+##### What to prioritize
 
 - Choose and standardize your **core model platforms** (plus one open‑source route).
 - Define your **AI integration layer**:
@@ -952,11 +938,9 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
   - Data boundaries, human‑in‑loop defaults, and clear no‑go zones.
 
-#### Phase 2 — November 2026 → October 2027
+#### Phase 2 — November 2026 → October 2027 (Agents Grow Up, Memory Grows Long)
 
-**Theme: Agents Grow Up, Memory Grows Long**
-
-**What evolves**
+##### What evolves
 
 - RLVR + self‑play + prompt‑time control deliver **clearly better reasoning models** across many enterprise domains.
 
@@ -974,7 +958,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
   - Pluggable planners, tool routers, and memory.
   - Built‑in safety and tool‑use policies.
 
-**What you actually see**
+##### What you actually see
 
 - **Vertical digital workers**:
 
@@ -992,13 +976,13 @@ There’s no precise clock, but you can think in **three overlapping phases**.
   - Reliable text‑to‑video for marketing, education, training
   - Video analytics for industrial monitoring, sports, and security, with explainable outputs
 
-**Business consequences**
+##### Business consequences
 
 - For many back‑office workflows, **agent + human** becomes the default pattern
 - Organizations see **compound productivity gains (10–30%)** in targeted areas
 - A new vendor ecosystem crystallizes around **AI infrastructure**: training stacks, memory backends, safety/interpretability layers
 
-**What to prioritize**
+##### What to prioritize
 
 - Move from **copilots → digital workers** in well‑scoped, low‑ to medium‑risk areas
 - Invest in **canonical tool APIs** and **data contracts** around systems agents will touch
@@ -1006,11 +990,9 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
   - SLOs, incident management, monitoring, and runtime controls
 
-#### Phase 3 — November 2027 → 11 August 2028
+#### Phase 3 — November 2027 → 11 August 2028 (World Models, Continual Learning & Semi‑Autonomy)
 
-**Theme: World Models, Continual Learning & Semi‑Autonomy (in Niches)**
-
-**Likely developments**
+##### Likely developments
 
 - World‑model‑centric simulation becomes standard in Robotics, warehousing, some mobility, and complex industrial operations.
 - Assistants with **multi‑year identity and memory** become normal with a much better long‑horizon task completion.
@@ -1021,7 +1003,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
 - Brain‑inspired and hybrid architectures show **niche strength** in streaming and low‑power environments.
 
-**Product & business patterns**
+##### Product & business patterns
 
 - **Semi‑autonomous flows** in specific verticals:
 
@@ -1039,7 +1021,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
   - Vendors selling **“AI operating layers”** – bundled reasoning engines, world models, memory, and safety tooling
   - **Outcome‑based pricing:** resolved tickets, uptime improvements, throughput gains
 
-**What to prioritize**
+##### What to prioritize
 
 - Identify **bounded domains** where semi‑autonomous behavior is acceptable and valuable.
 - Implement strong **kill switches, rollback, and audit** for AI‑driven changes.
