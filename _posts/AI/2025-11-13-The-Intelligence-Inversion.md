@@ -244,7 +244,7 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 
 ---
 
-## The First 1,000 Days: From Tokens to Work (Nov 30, 2022 → Aug 26, 2025)
+## The First 1,000 Days: From Tokens to Work
 
 With the launch of ChatGPT on **Nov 30, 2022** to **Day 1,000 (Aug 26, 2025)** transformers, tokens, and agents changed what “intelligence” means inside the large Enterprise—and what separates signal from noise.
 
@@ -350,33 +350,33 @@ The **context window** is the model’s working memory: how many tokens it can c
 
 Over the first 1,000 days of generative AI, this expanded from **less than a meeting** to **multiple human days**:
 
-| Model             | Year | Context Size (tokens) | Approx. words* | Human speech equivalent† | Human thought equivalent‡ |
-|-------------------|------|:---------------------:|:--------------:|:------------------------:|:-------------------------:|
-| GPT‑1             | 2018 |          512          |      ≅400      |         ≅35 min          |          ≅10 min          |
-| GPT‑2             | 2019 |         1,024         |      ≅800      |          ≅1.2 h          |          ≅20 min          |
-| GPT‑3             | 2020 |         4,096         |     ≅3,000     |          ≅4.9 h          |          ≅1.2 h           |
-| GPT‑4             | 2023 |         8,192         |     ≅6,000     |          ≅9.8 h          |          ≅2.5 h           |
-| GPT‑4‑turbo       | 2023 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-| GPT‑4o            | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-| GPT‑4o‑mini       | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-| o1‑mini           | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-| o1                | 2024 |        200,000        |    ≅150,000    |        ≅10.0 days        |         ≅2.5 days         |
-| GPT‑5‑Standard    | 2025 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-| GPT‑5‑Pro         | 2025 |        196,000        |    ≅147,000    |        ≅9.8 days         |         ≅2.5 days         |
-| GPT‑5‑API         | 2025 |        400,000        |    ≅300,000    |         ≅20 days         |          ≅5 days          |
-| Gemini 2.5 Pro    | 2025 |       1,000,000       |    ≅750,000    |         ≅50 days         |        ≅12.5 days         |
+|             Model | Year | Context Size (tokens) | Approx. words^*^ | Human speech equivalent^†^ | Human thought equivalent^‡^ |
+|------------------:|------|:---------------------:|:--------------:|:------------------------:|:-------------------------:|
+|             GPT‑1 | 2018 |          512          |      ≅400      |         ≅35 min          |          ≅10 min          |
+|             GPT‑2 | 2019 |         1,024         |      ≅800      |          ≅1.2 h          |          ≅20 min          |
+|             GPT‑3 | 2020 |         4,096         |     ≅3,000     |          ≅4.9 h          |          ≅1.2 h           |
+|             GPT‑4 | 2023 |         8,192         |     ≅6,000     |          ≅9.8 h          |          ≅2.5 h           |
+|       GPT‑4‑turbo | 2023 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+|            GPT‑4o | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+|       GPT‑4o‑mini | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+|           o1‑mini | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+|                o1 | 2024 |        200,000        |    ≅150,000    |        ≅10.0 days        |         ≅2.5 days         |
+|    GPT‑5‑Standard | 2025 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
+|         GPT‑5‑Pro | 2025 |        196,000        |    ≅147,000    |        ≅9.8 days         |         ≅2.5 days         |
+|         GPT‑5‑API | 2025 |        400,000        |    ≅300,000    |         ≅20 days         |          ≅5 days          |
+|    Gemini 2.5 Pro | 2025 |       1,000,000       |    ≅750,000    |         ≅50 days         |        ≅12.5 days         |
 | Claude Sonnet 4.5 | 2025 |       1,000,000       |    ≅750,000    |         ≅50 days         |        ≅12.5 days         |
-| Llama 4 Scout     | 2025 |      10,000,000       |   ≅7,500,000   |        ≅500 days         |         ≅125 days         |
+|     Llama 4 Scout | 2025 |      10,000,000       |   ≅7,500,000   |        ≅500 days         |         ≅125 days         |
 {: .table .table-striped .table-hover}
 
-\* Approx. words = tokens × 0.75.
+\* Approximate number of words = tokens × 0.75.
 
 † Speech equivalent assumes ≅20,000 tokens/day of spoken language.
 
 ‡ Thought equivalent assumes ≅80,000 tokens/day of inner verbal thought.
 
 > **Context Size, Intelligence, and the Shape of Thought**
-> 
+>
 > As context windows scale from thousands to millions of tokens, it's tempting to equate **more context** with **more intelligence**—but the two are related only indirectly. A larger window does not make a model “smarter”; it makes the model capable of **holding longer, more coherent arcs of conversation, task-state, and thought** without dropping threads. In humans, intelligence emerges not from the raw amount of speech or internal monologue we generate, but from our ability to **select, compress, and prioritize** the right parts of that stream. Models face the same constraint: a million-token window can capture weeks of conversations, policies, and reasoning traces, but using that window effectively requires the model to identify which 1–5% of the content is actually causal, relevant, or decision-bearing. In this sense, *context size is to intelligence what bandwidth is to insight*: it expands the canvas but does not supply the brushstrokes. What large windows really unlock is continuity—the ability to sustain long-range dependencies, multi-day reasoning chains, and evolving plans in a way that begins to match the temporal structure of human cognition. Intelligence still comes from what the model does **within** that space; context simply defines how much of the ongoing story the model can keep “alive” at once.
 > 
 > **One important detail:** a model’s “context window” is a **shared budget for
@@ -886,13 +886,13 @@ The architecture question becomes: **how will your operational systems expose th
   - Low‑power on‑device agents.
   - Specialized sensors or industrial devices that “learn on the job.”
 
-### A 1,000‑Day Timeline (2025‑11‑15 → 2028‑08‑11)
+### The Next 1,000‑Day Timeline
 
 There’s no precise clock, but you can think in **three overlapping phases**.
 
 #### Phase 1 — Now → October 2026 (Industrializing Today’s Tricks)
 
-##### What actually ships
+##### What Actually Ships
 
 - **Reasoning modes** and Reinforced learning with verifiable rewards/self‑play recipes integrated into major commercial models, especially for math, code,   and structured decision‑making.
 
@@ -902,14 +902,14 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 - **FP8** becomes standard for large‑scale training; **FP4 and 1‑bit** start to appear in internal and niche workloads.
 - Enterprises standardize on **agent frameworks for “read and suggest”** workflows, keeping write/execute permissions constrained.
 
-##### Business consequences
+##### Business Consequences
 
 - Training and inference costs drop by a clear constant factor.
 - Most value is still **augmentation**:
   - Better copilots; faster humans.
   - 5–20% productivity gains where adoption is strong.
 
-##### What to prioritize
+##### What to Prioritize
 
 - Choose and standardize your **core model platforms** (plus one open‑source route).
 - Define your **AI integration layer**:
@@ -2699,7 +2699,7 @@ Tie OKRs directly to the KPIs above. For example:
 - Prompt & Policy: **“Policy‑violation incidents ↓ 50% while reviewer time ↓
   25%.”**
 
-This makes “new roles” feel like **real jobs**, not rebranded experiments. |
+This makes “new roles” feel like **real jobs**, not rebranded experiments. 
 
 - **Performance contracts (first year)** - Tie each role’s OKRs to the **KPIs** listed above (e.g., Verification owns *residual error ≤ X*; Agent SRE owns *SLO attainment ≥ Y* and *cost per resolved unit ≤ Z*; Data Steward owns *provenance coverage ≥ N%*, etc.).
 
