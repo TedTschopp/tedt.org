@@ -610,7 +610,7 @@ The rest of this document answers those questions: **why the Intelligence Invers
 
 ---
 
-## The Next 1,000 Days: The Intelligence Inversion 
+## The Next 1,000 Days: The Intelligence Inversion
 
 Roughly 1,000 days ago, “AI strategy” meant pilots with chatbots and text copilots. Today, most enterprises are somewhere between “every knowledge worker has a copilot” and “we’re wiring agents into real systems, but we’re nervous.”
 
@@ -652,15 +652,13 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 ### Research Fronts that Actually Matter for Enterprises
 
-#### Deeper Reasoning: RLVR & Self‑Play
-
-##### What’s happening
+#### Deeper Reasoning: Reinforced learning with verifiable rewards & Self‑Play
 
 - **Reinforcement Learning with Verifiable (but Noisy) Rewards (RLVR)** trains models using *checkable* outcomes: program outputs, math proofs, compiler passes, business rule engines, LLM judges, etc.
 - New work explicitly tackles **noisy verifiers** – treating symbolic checkers and LLM judges as imperfect and correcting for their errors.
 - **Self‑play** and prompt‑time steering (e.g., Self‑Anchor‑like methods) let models generate harder examples for themselves and keep attention on the right intermediate steps.
 
-##### Why it matters
+##### Why Deeper Reasoning: RLVR & Self‑Play matters
 
 - In domains where you can define a verifier – code, math, pricing formulas, certain compliance checks – you can now **train models to be reliably good**, not just “pretty good on average.”
 - We move from “generic chat model” to **specialist reasoning Models as Products**:
@@ -669,7 +667,7 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
   - “Risk and forecasting reasoning”
   - “Policy‑aware decision support”
 
-**Enterprise implications (next 1,000 days)**
+##### Enterprise implications for Deeper Reasoning: RLVR & Self‑Play for the next 1,000 days
 
 - Expect major vendors to ship **“reasoning modes”** as standard, with higher latency and cost but much better reliability.
 - Expect toolchains and recipes for **training small, domain‑specific reasoning models** via Reinforcement Learning with Verifiable Rewards (RLVR) to arrive in mainstream frameworks.
@@ -680,13 +678,11 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Long‑Term Memory & Agentic LLMs
 
-##### What’s happening
-
 - New **memory architectures** let agents store and revisit past interactions using external memories instead of stuffing everything into a monster context window.
 - Reinforcement Learning‑trained **memory managers** learn *what* to store, *how* to summarize it, and *when* to recall it for downstream tasks.
 - Vendors are starting to treat **long‑term memory as a product layer**: user‑visible, auditable, and subject to data governance.
 
-##### Why it matters
+##### Why Long‑Term Memory & Agentic LLMs matters
 
 - Assistants and agents become **persistent entities**:
 
@@ -698,7 +694,7 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
   - Personal → Team → Organization
   - With separate retention, access, and governance rules.
 
-##### Enterprise implications for the next 1,000 days
+##### Enterprise implications for Long‑Term Memory & Agentic LLMs for the next 1,000 days
 
 - Expect assistants that **“stay the same person”** across channels (email, docs, tickets, code) with explicit “show, edit, forget” memory controls.
 - Treat AI memory like **regulated data**:
@@ -712,12 +708,10 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Long‑Context Efficiency & Infrastructure
 
-##### What’s happening
-
 - Techniques like **Core Attention Disaggregation (CAD)** offload attention computation to dedicated “attention servers,” enabling 512K–1M+ token contexts with reasonable throughput.
 - Hardware–software co‑design (e.g., PLENA‑like accelerators, packing/prefetch schedulers, larger on‑chip memories) attacks the **KV‑cache memory wall**, yielding substantial decode speedups.
 
-##### Why it matters
+##### Why Long‑Context Efficiency & Infrastructure matters
 
 - 1,000,000 token contexts stop being an exotic demo and become a **routine Product** for enterprise use.
 - Instead of intricate chunking and retrieval plumbing for every system, you can often just **drop entire artifacts into context**:
@@ -726,7 +720,7 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
   - Complex contracts and portfolios
   - Long‑running multi‑agent sessions
 
-##### Enterprise implications for the next 1,000 days
+##### Enterprise implications for Long‑Context Efficiency & Infrastructure for the next 1,000 days
 
 - Plan for **“whole system” questions**: architecture drift, portfolio analysis, cross‑application impact.
 - Reduce investment in bespoke context‑mangling patterns; increase investment in:
@@ -736,18 +730,16 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Ultra‑Low Precision Training & Inference 8 bit Floating-Point, 4 bit Floating-Point, and 1 bit numbers
 
-##### What’s happening
-
 - **4‑bit training** is moving from theory to practice: 12,000,000,000 parameter models trained entirely in 4 bit Floating-Point with near‑parity accuracy and ~3× speedup vs 8 bit Floating-Point.
 - **1‑bit inference models** achieve competitive performance at dramatically lower energy and cost.
 - Hardware vendors are pushing **microscaling formats** (8, 6, and 4 bit) as first‑class on new GPU generations.
 
-##### Why it matters
+##### Why Ultra‑Low Precision Training & Inference matters
 
 - High‑quality models become **cheaper to train and run** by constant and predictable factors.
 - Good LLMs become deployable on **smaller on‑prem boxes and even edge devices**, with feasible latency and power consumption.
 
-##### Enterprise implications for the next 1,000 days
+##### Enterprise implications for Ultra‑Low Precision Training & Inference for the next 1,000 days
 
 - Training serious **domain‑specific models** (1,000,000,000 – 30,000,000,000 parameters) becomes viable for F500 enterprises, not just hyperscalers.
 
@@ -761,18 +753,16 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### Mechanistic Interpretability & Full‑Stack Safety
 
-##### What’s happening
-
 - Mechanistic interpretability now includes **rule‑based descriptions of attention features**, mapping internal circuits to human‑legible rules.
 - Benchmarks like **SAEBench** and taxonomies for full‑stack safety give more consistent ways to evaluate interpretability tools.
 - Safety work increasingly covers the full stack: **data → training → deployment → tool‑using agents.**
 
-##### Why it matters
+##### Why Mechanistic Interpretability & Full‑Stack Safety matters
 
 - We move from “we tested the model on a benchmark and it seems fine” to **“we can inspect and steer internal features in specific ways.”**
 - Regulators and internal risk teams begin to ask for **artifacts**, not just high‑level scores.
 
-##### Enterprise implications for the next 1,000 days
+##### Enterprise implications for Mechanistic Interpretability & Full‑Stack Safety for the next 1,000 days
 
 - Expect commercial **“model X‑ray” tools**: dashboards, feature probes, hooks for controlling or editing behavior.
 
@@ -786,17 +776,15 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 #### World Models & Embodied / Robotics AI
 
-##### What’s happening
-
 - An explosion of **world models** – neural models of environments – for robotics, autonomous driving, and simulation.
 - New platforms aim at **foundation world models** for physical environments, and control‑oriented world models that tie directly to robot policies.
 
-##### Why it matters
+##### Why World Models & Embodied / Robotics AI matters
 
 - You can increasingly **train robots and autonomous systems in learned simulators**, then fine‑tune in the real world.
 - For non‑robotics domains, world‑model ideas flow into **digital twins with agency**: systems that both simulate and act.
 
-**Enterprise implications (next 1,000 days)**
+##### Enterprise implications for World Models & Embodied / Robotics AI for the next 1,000 days
 
 - If you touch physical operations (warehouses, logistics, manufacturing, mobility), expect:
 
@@ -812,13 +800,11 @@ The architecture question becomes: **how will your operational systems expose th
 
 #### Multimodal Video & Physically‑Aware Generation
 
-##### What’s happening
-
 - New models unify **video understanding, generation, and editing** under one framework.
 - Video‑MLLMs are becoming **3D‑aware** and **physics‑aware**, blending text, vision, and basic physical reasoning.
 - Multimodal models are being used to generate **semantic video descriptors** powering recommendations and analytics.
 
-##### Why it matters
+##### Why Multimodal Video & Physically‑Aware Generation matters
 
 - Video stops being a “dumb blob” of pixels over a timeline and becomes **structured, searchable, and generatable data**.
 - Enterprises get:
@@ -826,7 +812,7 @@ The architecture question becomes: **how will your operational systems expose th
   - Text‑to‑video tools good enough for **marketing, training, and explainers**.
   - Video QA and analytics for **inspection, sports, security, and operations** that can answer “why” and “what likely happened,” not just “what’s in the frame.”
 
-##### Enterprise implications for the next 1,000 days
+##### Enterprise implications for Multimodal Video & Physically‑Aware Generation for the next 1,000 days
 
 - Plan for **video as a first‑class data type** in AI roadmaps.
 - Consider where physically aware video models could:
@@ -837,13 +823,11 @@ The architecture question becomes: **how will your operational systems expose th
 
 #### LLM Agents, Tool Learning & Planning
 
-##### What’s happening
-
-- Dedicated surveys and benchmarks now focus on **agents and tool use**: planning, robustness, safety, and real‑world API interaction.
+- Dedicated surveys and benchmarks for AI Models now focus on **agents and tool use**: planning, robustness, safety, and real‑world API interaction.
 - New benchmarks test not just “can you call the tool?” but “**should** you call it, and how often, and in what order?”
 - Agent training methods synthesize **environments and tasks** to teach planning, not just single turns.
 
-##### Why it matters
+##### Why LLM Agents, Tool Learning & Planning matters
 
 - Agents move from “fancy macros that call APIs” to entities that can:
 
@@ -858,7 +842,7 @@ The architecture question becomes: **how will your operational systems expose th
   - Memory
   - Critic/Evaluator
 
-##### Enterprise implications for the next 1,000 days
+##### Enterprise implications for LLM Agents, Tool Learning & Planning for the next 1,000 days
 
 - Expect **“digital workers”** for well‑scoped workflows:
 
@@ -873,12 +857,10 @@ The architecture question becomes: **how will your operational systems expose th
 
 #### Brain‑Inspired & Non‑Transformer Architectures
 
-##### What’s happening
-
-- New proposals (e.g., brain‑inspired architectures, state‑space models, neuromorphic approaches) test alternatives and complements to transformers.
+- New proposals (e.g., brain‑inspired architectures, state‑space models, neuromorphic approaches) test alternatives and complements to the transformer architecture that mirror biological brains.
 - Many aim at **continual learning, streaming data, and higher energy efficiency**.
 
-##### Why it matters
+##### Why Brain-Inspired Architectures matter
 
 - In the next 1,000 days, these are likely **niche but important** in:
 
@@ -888,7 +870,7 @@ The architecture question becomes: **how will your operational systems expose th
 
 - Longer‑term, they could reshape the performance/price frontier.
 
-##### Enterprise implications for the next 1,000 days
+##### Enterprise implications of Brain-Inspired Architectures for the next 1,000 days
 
 - Watch this space, but don’t bet the roadmap on it yet.
 - Expect early products in:
@@ -904,7 +886,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
 ##### What actually ships
 
-- **Reasoning modes** and RLVR/self‑play recipes integrated into major commercial models, especially for math, code, and structured decision‑making.
+- **Reasoning modes** and Reinforced learning with verifiable rewards/self‑play recipes integrated into major commercial models, especially for math, code,   and structured decision‑making.
 
 - First **serious long‑term memory features** in mainstream assistants:
 
@@ -940,9 +922,11 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
 #### Phase 2 — November 2026 → October 2027 (Agents Grow Up, Memory Grows Long)
 
-##### What evolves
+##### What evolves when Agents Grow Up, Memory Grows Long
 
-- RLVR + self‑play + prompt‑time control deliver **clearly better reasoning models** across many enterprise domains.
+- Reinforcement Learning with Verifiable Rewards + self‑play + prompt‑time
+  control deliver **clearly better reasoning models** across many enterprise
+  domains.
 
 - Long‑term memory matures:
 
@@ -958,7 +942,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
   - Pluggable planners, tool routers, and memory.
   - Built‑in safety and tool‑use policies.
 
-##### What you actually see
+##### What you actually see when Agents Grow Up, Memory Grows Long
 
 - **Vertical digital workers**:
 
@@ -976,13 +960,13 @@ There’s no precise clock, but you can think in **three overlapping phases**.
   - Reliable text‑to‑video for marketing, education, training
   - Video analytics for industrial monitoring, sports, and security, with explainable outputs
 
-##### Business consequences
+##### Business consequences of Agents Growing Up and when Memory Grows Long
 
 - For many back‑office workflows, **agent + human** becomes the default pattern
 - Organizations see **compound productivity gains (10–30%)** in targeted areas
 - A new vendor ecosystem crystallizes around **AI infrastructure**: training stacks, memory backends, safety/interpretability layers
 
-##### What to prioritize
+##### What to prioritize during Phase 2
 
 - Move from **copilots → digital workers** in well‑scoped, low‑ to medium‑risk areas
 - Invest in **canonical tool APIs** and **data contracts** around systems agents will touch
@@ -992,7 +976,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
 #### Phase 3 — November 2027 → 11 August 2028 (World Models, Continual Learning & Semi‑Autonomy)
 
-##### Likely developments
+##### Likely developments with World Models, Continual Learning & Semi‑Autonomy
 
 - World‑model‑centric simulation becomes standard in Robotics, warehousing, some mobility, and complex industrial operations.
 - Assistants with **multi‑year identity and memory** become normal with a much better long‑horizon task completion.
@@ -1003,7 +987,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
 - Brain‑inspired and hybrid architectures show **niche strength** in streaming and low‑power environments.
 
-##### Product & business patterns
+##### Product & business patterns with World Models, Continual Learning & Semi‑Autonomy
 
 - **Semi‑autonomous flows** in specific verticals:
 
@@ -1014,14 +998,15 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 - **Training regimes**:
 
   - Much more training in simulated or agentic environments (world models, generated tasks)
-  - RLVR and self‑play become routine for post‑training on specialized tasks
+  - Reinforcement Learning with Verifiable Rewards and self‑play become routine
+    for post‑training on specialized tasks
 
 - **Business models**:
 
   - Vendors selling **“AI operating layers”** – bundled reasoning engines, world models, memory, and safety tooling
   - **Outcome‑based pricing:** resolved tickets, uptime improvements, throughput gains
 
-##### What to prioritize
+##### What to prioritize through Phase 3
 
 - Identify **bounded domains** where semi‑autonomous behavior is acceptable and valuable.
 - Implement strong **kill switches, rollback, and audit** for AI‑driven changes.
@@ -1033,7 +1018,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 A useful way to reason about all of this is as a pipeline:
 
 1. **Science (2025–2026)**
-   RLVR, world models, long‑context tricks, FP4/1‑bit, mechanistic interpretability, new architectures.
+   Reinforcement Learning with Verifiable Rewards, world models, long‑context tricks, FP4/1‑bit, mechanistic interpretability, new architectures.
 
    - You *track* this; you mostly **don’t do it yourself**.
 
@@ -1094,7 +1079,7 @@ As a leader, your main job is to **shorten the distance from “science exists�
 
 - Build **scenario plans** around:
 
-  - Labor mix changes (human+agent teams).
+  - Labor mix changes (human + agent teams).
   - New products enabled by world models, video understanding, and long‑term memory.
 
 #### For Product Owners
@@ -1900,17 +1885,17 @@ We turn to those questions next.
 
 ---
 
-## Economic & Organizational Implications
+TODO: EDITING HERE
 
-# Chapter AA — Economic & Organizational Implications
+## Economic & Organizational Implications
 
 ### How an Energy‑Bound Intelligence Economy Reshapes Markets, Firms, and Work
 
 In the previous chapters we argued:
 
-* **Intelligence Inversion:** for many cognitive tasks, agents will become more
+- **Intelligence Inversion:** for many cognitive tasks, agents will become more
   capable, reliable, and cheaper than median human workers.
-* **Energy as Gating Layer:** you can only scale those agents as fast as you can
+- **Energy as Gating Layer:** you can only scale those agents as fast as you can
   secure, cool, and efficiently use power.
 
 This chapter asks: **what happens to economies, industries, and organizations
@@ -1938,22 +1923,22 @@ We’ll cover:
 In an intelligence economy, productive capacity lives increasingly in **compute
 capital (K_c)**:
 
-* GPUs / accelerators
-* High‑bandwidth memory and interconnects
-* The orchestration software that turns raw FLOPs into reliable agent behavior
+- GPUs / accelerators
+- High‑bandwidth memory and interconnects
+- The orchestration software that turns raw FLOPs into reliable agent behavior
 
 This capital differs from traditional plant:
 
-* It’s **fungible across use cases**: the same cluster can run claims agents one
+- It’s **fungible across use cases**: the same cluster can run claims agents one
   hour, simulation jobs the next.
-* It’s **upgradeable in place**: software, models, and kernels can improve
+- It’s **upgradeable in place**: software, models, and kernels can improve
   capacity without pouring more concrete.
 
 Comparative advantage shifts toward jurisdictions and firms that can offer:
 
-* Dense, reliable access to **compute**
-* Abundant, stable **power**
-* The talent to **orchestrate** models, agents, and tools safely
+- Dense, reliable access to **compute**
+- Abundant, stable **power**
+- The talent to **orchestrate** models, agents, and tools safely
 
 GDP per capita starts to correlate as much with **compute density +
 orchestration maturity** as with traditional capital per worker.
@@ -1966,19 +1951,19 @@ Traditional macro playbook:
 
 In an agentic economy:
 
-* Firms meet incremental demand by **renting compute and deploying agents**, not
+- Firms meet incremental demand by **renting compute and deploying agents**, not
   necessarily by hiring humans.
-* Cheaper capital may translate into **larger clusters**, not proportional
+- Cheaper capital may translate into **larger clusters**, not proportional
   employment growth.
 
 Result:
 
-* The classic “rates → borrowing → hiring” channel weakens.
-* Policy levers need to tilt more toward:
+- The classic “rates → borrowing → hiring” channel weakens.
+- Policy levers need to tilt more toward:
 
-  * **Credit and procurement** targeted at civic compute, public‑interest AI,
+  - **Credit and procurement** targeted at civic compute, public‑interest AI,
     and infrastructure
-  * Direct support for **countercyclical AI capacity** in health, education,
+  - Direct support for **countercyclical AI capacity** in health, education,
     justice, and safety, rather than just payroll support
 
 ### 1.3 Distribution, concentration, and access
@@ -1986,21 +1971,21 @@ Result:
 Returns concentrate where **compute, orchestration, and data** are jointly
 controlled:
 
-* Platform providers and capital owners capture a large share of value.
-* Wage share in heavily agentized sectors falls, even as output rises.
+- Platform providers and capital owners capture a large share of value.
+- Wage share in heavily agentized sectors falls, even as output rises.
 
 Two redistribution levers gain importance:
 
 1. **Access to aligned intelligence**
 
-   * Universal or low‑cost personal AIs, civic copilots, and public‑interest
+   - Universal or low‑cost personal AIs, civic copilots, and public‑interest
      agents.
-   * These reduce inequality of *capability*, even if income inequality rises.
+   - These reduce inequality of *capability*, even if income inequality rises.
 
 2. **Societal ownership of meaningful compute**
 
-   * Public or shared ownership stakes in large compute pools.
-   * Governance mechanisms to allocate capacity to public goods.
+   - Public or shared ownership stakes in large compute pools.
+   - Governance mechanisms to allocate capacity to public goods.
 
 Without these, you risk a narrow layer of “compute landlords” and a broad base
 with access only as customers, not owners.
@@ -2009,8 +1994,8 @@ with access only as customers, not owners.
 
 Tax bases tied to **wages and corporate profits** come under pressure:
 
-* Labor’s share of value shrinks in agentized sectors → softer wage tax base.
-* Profits from AI and orchestration can be **highly mobile** and arbitraged
+- Labor’s share of value shrinks in agentized sectors → softer wage tax base.
+- Profits from AI and orchestration can be **highly mobile** and arbitraged
   across jurisdictions.
 
 Broad, tax‑funded **flat cash entitlements** at meaningful levels run into hard
@@ -2018,10 +2003,10 @@ arithmetic constraints if they rely solely on current receipts.
 
 More plausible safety nets look like:
 
-* **Targeted insurance** for disruptions (e.g., retraining, sectoral downturns).
-* **In‑kind AI services**: free or subsidized copilots for health, education,
+- **Targeted insurance** for disruptions (e.g., retraining, sectoral downturns).
+- **In‑kind AI services**: free or subsidized copilots for health, education,
   legal aid, job search.
-* New issuance and distribution mechanisms that reflect **compute and data as
+- New issuance and distribution mechanisms that reflect **compute and data as
   public assets**, not just income streams.
 
 ### 1.5 National competitiveness
@@ -2030,10 +2015,10 @@ Competitiveness indices need to grow beyond “STEM grads + broadband”.
 
 You’ll see metrics like:
 
-* **Compute density** per capita and per unit of GDP
-* **Latency, reliability, and reach** of access to model and agent ecosystems
-* **Civic AI capacity** in health, education, safety, and justice
-* **Agent governance regimes** and liability standards that enable adoption
+- **Compute density** per capita and per unit of GDP
+- **Latency, reliability, and reach** of access to model and agent ecosystems
+- **Civic AI capacity** in health, education, safety, and justice
+- **Agent governance regimes** and liability standards that enable adoption
   while constraining systemic risk
 
 Nations that can field **cheap, reliable, well‑governed intelligence** at scale
@@ -2048,15 +2033,15 @@ will pull ahead.
 Proprietary data remains valuable, but the decisive edge shifts to
 **orchestration**:
 
-* How well you decompose tasks
-* How you route between models and tools
-* How you design memory, verification, and feedback loops
+- How well you decompose tasks
+- How you route between models and tools
+- How you design memory, verification, and feedback loops
 
 These **process moats** compound:
 
-* Orchestration patterns proven in one domain (e.g., support) can be adapted to
+- Orchestration patterns proven in one domain (e.g., support) can be adapted to
   others (claims, onboarding, underwriting).
-* You get **economies of scope**: the more domains you orchestrate, the better
+- You get **economies of scope**: the more domains you orchestrate, the better
   your orchestration toolkit gets.
 
 Data is necessary but not sufficient. The compounding advantage lives in
@@ -2066,30 +2051,30 @@ Data is necessary but not sufficient. The compounding advantage lives in
 
 Because agents are software:
 
-* A single stack upgrade can roll out to **thousands of agents overnight**.
-* Vendors can sell “**workforce‑as‑a‑service**”:
+- A single stack upgrade can roll out to **thousands of agents overnight**.
+- Vendors can sell “**workforce‑as‑a‑service**”:
 
-  * SLOs for resolution rate, quality, and latency
-  * Indemnities and penalties for failures
-  * Continuous improvement baked into the contract
+  - SLOs for resolution rate, quality, and latency
+  - Indemnities and penalties for failures
+  - Continuous improvement baked into the contract
 
 This compresses procurement cycles:
 
-* Instead of multi‑year transformations, you get short pilots followed by **step
+- Instead of multi‑year transformations, you get short pilots followed by **step
   adoption** once risk and governance concerns are addressed.
 
 ### 2.3 Attention and experience moats
 
 As the marginal cost of “thinking” approaches zero, revenue models skew toward:
 
-* **Capturing, holding, and directing attention**
-* Curating **trusted experiences** in an AI‑saturated environment
+- **Capturing, holding, and directing attention**
+- Curating **trusted experiences** in an AI‑saturated environment
 
 Firms that fail to defend or grow customer attention risk margin erosion, even
 if:
 
-* Their internal cost base plummets via automation.
-* Their models and orchestration are technically strong.
+- Their internal cost base plummets via automation.
+- Their models and orchestration are technically strong.
 
 Trust‑preserving experience design—how your agents interact with
 customers—becomes a **strategic control point**, not a UX afterthought.
@@ -2104,77 +2089,77 @@ The Intelligence Inversion does **not** hit every role at once. Likely sequence:
 
 1. **Standardized cognitive work**
 
-   * Claims processing, L1 support, routine coding, low‑stakes research, content
+   - Claims processing, L1 support, routine coding, low‑stakes research, content
      drafting.
-   * Clear specs, high volume, good supervision targets → early agentization.
+   - Clear specs, high volume, good supervision targets → early agentization.
 
 2. **Middle management**
 
-   * Dashboards, simulators, and verifiers reduce the need for layers focused on
+   - Dashboards, simulators, and verifiers reduce the need for layers focused on
      status collection and coordination.
-   * Spans of control widen; the middle “coordination sandwich” thins.
+   - Spans of control widen; the middle “coordination sandwich” thins.
 
 3. **Regulated professional services**
 
-   * Long human‑in‑the‑loop phases where agents do the bulk of cognitive work,
+   - Long human‑in‑the‑loop phases where agents do the bulk of cognitive work,
      but humans sign off and carry liability.
-   * Over time, agent share of effort rises; human roles rebundle around
+   - Over time, agent share of effort rises; human roles rebundle around
      judgment, accountability, and client trust.
 
 4. **Care and public‑facing services**
 
-   * Direct substitution slower due to trust, culture, and duty‑of‑care.
-   * Their back‑office cores (scheduling, documentation, case management)
+   - Direct substitution slower due to trust, culture, and duty‑of‑care.
+   - Their back‑office cores (scheduling, documentation, case management)
      agentize early.
 
 ### Early‑career displacement and cohort scarring
 
 Before layoffs, you often see **hiring pauses**:
 
-* Growth in work volume is absorbed by agents.
-* New entry‑level roles vanish or shrink.
+- Growth in work volume is absorbed by agents.
+- New entry‑level roles vanish or shrink.
 
 Consequences:
 
-* Fewer on‑ramps for early‑career workers.
-* Reduced time in “apprenticeship roles” that teach tacit skills.
-* Persistent scars for cohorts that enter during periods of aggressive
+- Fewer on‑ramps for early‑career workers.
+- Reduced time in “apprenticeship roles” that teach tacit skills.
+- Persistent scars for cohorts that enter during periods of aggressive
   agentization.
 
 Mitigation paths:
 
-* **Apprenticeship‑style programs** that pair humans with agents explicitly for
+- **Apprenticeship‑style programs** that pair humans with agents explicitly for
   learning.
-* Career tracks that move people into:
+- Career tracks that move people into:
 
-  * AgentOps and orchestration
-  * Trust, safety, and customer stewardship
-  * Policy, governance, and escalation roles
+  - AgentOps and orchestration
+  - Trust, safety, and customer stewardship
+  - Policy, governance, and escalation roles
 
 ### Rebundling of human work
 
 As agents take over routine cognition, human roles skew toward:
 
-* **Exception adjudication & escalation**
+- **Exception adjudication & escalation**
 
-  * Handling edge cases the verifier can’t cleanly decide.
-  * Exercising judgment in ambiguous, high‑stakes situations.
+  - Handling edge cases the verifier can’t cleanly decide.
+  - Exercising judgment in ambiguous, high‑stakes situations.
 
-* **Policy design & responsibility**
+- **Policy design & responsibility**
 
-  * Setting objectives, constraints, and guardrails.
-  * Being accountable for outcomes when agents act.
+  - Setting objectives, constraints, and guardrails.
+  - Being accountable for outcomes when agents act.
 
-* **Narrative judgment**
+- **Narrative judgment**
 
-  * Defining brand, taste, and meaning.
-  * Turning raw options into coherent stories and strategy.
+  - Defining brand, taste, and meaning.
+  - Turning raw options into coherent stories and strategy.
 
-* **Relationship & network capital**
+- **Relationship & network capital**
 
-  * Building and maintaining trust with customers, regulators, partners, and
+  - Building and maintaining trust with customers, regulators, partners, and
     employees.
-  * Convening communities and coalitions.
+  - Convening communities and coalitions.
 
 Job architecture, performance management, and rewards need to **reflect this
 rebundling**, not pretend the old job shapes remain intact.
@@ -2186,17 +2171,17 @@ rebundling**, not pretend the old job shapes remain intact.
 Corporate and associational law is evolving toward **algorithmically steered
 entities**:
 
-* Boards and executives delegate operational control to agents and frameworks,
+- Boards and executives delegate operational control to agents and frameworks,
   not just human managers.
-* Agents routinely make decisions with real financial and social impact.
+- Agents routinely make decisions with real financial and social impact.
 
 Key legal questions:
 
-* **Attribution & liability:** when an agent causes harm, who is responsible—the
+- **Attribution & liability:** when an agent causes harm, who is responsible—the
   deploying firm, the vendor, specific individuals?
-* **Duty‑of‑care:** what processes and documentation are required before agents
+- **Duty‑of‑care:** what processes and documentation are required before agents
   can act in high‑risk domains?
-* **Capital adequacy:** for agent‑run services (e.g., lending, trading, critical
+- **Capital adequacy:** for agent‑run services (e.g., lending, trading, critical
   infrastructure), what capital buffers are required against systemic errors?
 
 Expect emerging regimes that look a lot like **safety cases** in aviation or
@@ -2206,24 +2191,24 @@ Expect emerging regimes that look a lot like **safety cases** in aviation or
 
 Regulators and large buyers will increasingly demand:
 
-* Documented **intended use**, limitations, and **off‑label prohibitions** for
+- Documented **intended use**, limitations, and **off‑label prohibitions** for
   each model/agent.
 
-* **Pre‑deployment testing** and stress scenarios for important workflows.
+- **Pre‑deployment testing** and stress scenarios for important workflows.
 
-* Ongoing monitoring for:
+- Ongoing monitoring for:
 
-  * Performance drift and distribution shift
-  * Data poisoning and adversarial inputs
-  * Tool‑use failures and prompt injection
+  - Performance drift and distribution shift
+  - Data poisoning and adversarial inputs
+  - Tool‑use failures and prompt injection
 
-* **Human override & rollback** mechanisms:
+- **Human override & rollback** mechanisms:
 
-  * Kill switches
-  * Escalation policies
-  * Version pinning for critical flows
+  - Kill switches
+  - Escalation policies
+  - Version pinning for critical flows
 
-* **Tamper‑evident telemetry and logs** to enable after‑the‑fact investigations.
+- **Tamper‑evident telemetry and logs** to enable after‑the‑fact investigations.
 
 This becomes the **Model/Agent Risk Management** function, analogous to MRM in
 banks.
@@ -2232,16 +2217,16 @@ banks.
 
 Governments will need to buy not just “models,” but:
 
-* **Verifier libraries** (for policy and legal compliance).
-* **Agent platforms** and orchestration frameworks.
-* **Shared civic compute** that can be used across agencies and public services.
+- **Verifier libraries** (for policy and legal compliance).
+- **Agent platforms** and orchestration frameworks.
+- **Shared civic compute** that can be used across agencies and public services.
 
 Contracts and RFPs should:
 
-* Specify **performance SLOs** and **safety SLAs**, not just software
+- Specify **performance SLOs** and **safety SLAs**, not just software
   deliverables.
-* Include rights to **upgrade, retrain, and re‑verify** models over time.
-* Address **data governance, privacy, and fairness** explicitly.
+- Include rights to **upgrade, retrain, and re‑verify** models over time.
+- Address **data governance, privacy, and fairness** explicitly.
 
 Public institutions that modernize procurement and governance around agents will
 be better positioned to offer **high‑quality civic AI** at scale.
@@ -2255,23 +2240,23 @@ changes**.
 
 Historically:
 
-* Processes were designed around humans: roles, handoffs, approvals.
-* Automation came later, as bolt‑on scripts and tools.
+- Processes were designed around humans: roles, handoffs, approvals.
+- Automation came later, as bolt‑on scripts and tools.
 
 In an agentic enterprise:
 
-* **Service lines are designed agent‑first**:
+- **Service lines are designed agent‑first**:
 
-  * Agents in the critical path do the baseline work.
-  * Humans operate *around* the loop: oversight, escalation, relationship, and
+  - Agents in the critical path do the baseline work.
+  - Humans operate *around* the loop: oversight, escalation, relationship, and
     governance.
 
-* Each major service line gains a **canonical agent template**:
+- Each major service line gains a **canonical agent template**:
 
-  * Planner / decomposer
-  * Tool calls and memory access
-  * Verifiers and cross‑checks
-  * Escalation logic and stop conditions
+  - Planner / decomposer
+  - Tool calls and memory access
+  - Verifiers and cross‑checks
+  - Escalation logic and stop conditions
 
 This doesn’t eliminate humans; it **repositions them**.
 
@@ -2282,24 +2267,24 @@ agent fleets.
 
 Core responsibilities:
 
-* **Pattern libraries** for planners, tool‑use, retrieval, and verifiers.
-* **Guardrail catalogs** for policy, safety, compliance, and security.
-* **Telemetry & observability**:
+- **Pattern libraries** for planners, tool‑use, retrieval, and verifiers.
+- **Guardrail catalogs** for policy, safety, compliance, and security.
+- **Telemetry & observability**:
 
-  * Latency, pass/fail rates, verifier performance
-  * Tool‑call patterns and error modes
+  - Latency, pass/fail rates, verifier performance
+  - Tool‑call patterns and error modes
 
-* **Incident response**:
+- **Incident response**:
 
-  * Circuit breakers for bad behavior
-  * Rollback and hotfix playbooks
-  * Blacklists for tools, prompts, or patterns
+  - Circuit breakers for bad behavior
+  - Rollback and hotfix playbooks
+  - Blacklists for tools, prompts, or patterns
 
-* **Release management**:
+- **Release management**:
 
-  * Canaries and A/B tests
-  * Version pinning for high‑risk flows
-  * Gradual rollout strategies
+  - Canaries and A/B tests
+  - Version pinning for high‑risk flows
+  - Gradual rollout strategies
 
 AgentOps sits at the intersection of **SRE, MLOps, security, and compliance**.
 
@@ -2312,18 +2297,18 @@ For each agentic workflow, the question becomes:
 
 That means:
 
-* Designing **verifiers before scaling agents**.
-* Using a mix of:
+- Designing **verifiers before scaling agents**.
+- Using a mix of:
 
-  * Programmatic checks (business rules, schemas, simulations).
-  * Secondary models / judges.
-  * Human spot checks where necessary.
+  - Programmatic checks (business rules, schemas, simulations).
+  - Secondary models / judges.
+  - Human spot checks where necessary.
 
 You can treat quality much like **error budgets** in SRE:
 
-* Define acceptable failure rates per workflow.
-* Tie scale‑out and deployment to verifier performance.
-* Put financial or operational penalties on crossing those budgets.
+- Define acceptable failure rates per workflow.
+- Tie scale‑out and deployment to verifier performance.
+- Put financial or operational penalties on crossing those budgets.
 
 Verification becomes the **pacing asset** for safe automation.
 
@@ -2333,18 +2318,18 @@ Agents are not generic scripts; they are **principals in your system**.
 
 Good practice:
 
-* Give each agent (or agent class) a **unique identity**.
+- Give each agent (or agent class) a **unique identity**.
 
-* Apply **least‑privilege access**:
+- Apply **least‑privilege access**:
 
-  * Scoped credentials
-  * Task‑bounded entitlements
-  * Explicit deny lists for high‑risk actions
+  - Scoped credentials
+  - Task‑bounded entitlements
+  - Explicit deny lists for high‑risk actions
 
-* Enforce policies at the **tool boundary**, not just inside prompts:
+- Enforce policies at the **tool boundary**, not just inside prompts:
 
-  * E.g., “this agent may read tickets but never touch payroll APIs.”
-  * Policy engines that evaluate every attempted action.
+  - E.g., “this agent may read tickets but never touch payroll APIs.”
+  - Policy engines that evaluate every attempted action.
 
 This aligns security, compliance, and operations around agents as **first‑class
 actors**.
@@ -2353,13 +2338,13 @@ actors**.
 
 As agents learn from and act on your data:
 
-* Every dataset should carry **provenance** (where it came from), **licensing**,
+- Every dataset should carry **provenance** (where it came from), **licensing**,
   and **risk annotations** (toxicity/poisoning scores).
-* **Data contracts** should specify:
+- **Data contracts** should specify:
 
-  * Refresh cadences
-  * Retention windows
-  * Acceptable uses (training, evaluation, retrieval, verifiers)
+  - Refresh cadences
+  - Retention windows
+  - Acceptable uses (training, evaluation, retrieval, verifiers)
 
 You need to know **what your agents are standing on**, especially in regulated
 domains.
@@ -2368,11 +2353,11 @@ domains.
 
 The cost structure shifts from **people** to **compute + orchestration**:
 
-* Model inference (tokens)
-* Tool/API calls
-* Verifier runs
-* Memory and logging
-* Evaluation infrastructure and AgentOps
+- Model inference (tokens)
+- Tool/API calls
+- Verifier runs
+- Memory and logging
+- Evaluation infrastructure and AgentOps
 
 You can formalize the comparison.
 
@@ -2388,10 +2373,10 @@ C_{\text{human}} = \frac{\text{TCOW}}{\text{throughput}} + C_{\text{rework}} + C
 
 Where:
 
-* TCOW = total cost of workforce for that role/service.
-* ( p_{\text{review}} ) = fraction of agent outputs that still need human review.
-* ( C_{\text{rework}} ) = cost of defects and rework.
-* ( C_{\text{delay}} ) = cost of latency from human handoffs.
+- TCOW = total cost of workforce for that role/service.
+- ( p_{\text{review}} ) = fraction of agent outputs that still need human review.
+- ( C_{\text{rework}} ) = cost of defects and rework.
+- ( C_{\text{delay}} ) = cost of latency from human handoffs.
 
 Account for residual error risk:
 
@@ -2401,8 +2386,8 @@ C_{\text{agent, adj}} = C_{\text{agent}} \left( 1 + r_{\text{residual_error}} \c
 
 Where:
 
-* ( r_{\text{residual_error}} ) = error rate *after* verification.
-* ( P_{\text{penalty}} ) = expected penalty per error (financial, legal, reputational).
+- ( r_{\text{residual_error}} ) = error rate *after* verification.
+- ( P_{\text{penalty}} ) = expected penalty per error (financial, legal, reputational).
 
 **Go/no‑go rule** (simplified):
 
@@ -2416,9 +2401,9 @@ agentize and how fast**.
 
 Capex/opex trade‑offs:
 
-* **Cloud GPUs** – high elasticity and speed of iteration, higher unit cost.
-* **Reserved/committed** – lower unit cost, planning burden.
-* **On‑prem / colo** – higher up‑front capex, better TCO in stable high‑load
+- **Cloud GPUs** – high elasticity and speed of iteration, higher unit cost.
+- **Reserved/committed** – lower unit cost, planning burden.
+- **On‑prem / colo** – higher up‑front capex, better TCO in stable high‑load
   regimes, sensitive to power/interconnect.
 
 Your orchestration layer should **abstract heterogeneous footprints** so finance
@@ -2433,107 +2418,107 @@ hold different pieces of the response.
 
 #### For Executives and Boards
 
-* Recognize **compute + energy + orchestration** as core strategic assets, not
+- Recognize **compute + energy + orchestration** as core strategic assets, not
   just IT spend.
 
-* Update your mental model of growth:
+- Update your mental model of growth:
 
-  * Headcount is no longer the primary knob.
-  * Capacity comes from **agent fleets and compute**, with humans repositioned.
+  - Headcount is no longer the primary knob.
+  - Capacity comes from **agent fleets and compute**, with humans repositioned.
 
-* Ask for **unit economics** in agentic terms:
+- Ask for **unit economics** in agentic terms:
 
-  * Cost per verified outcome.
-  * ECI_outcome and error‑adjusted C_agent vs. C_human.
+  - Cost per verified outcome.
+  - ECI_outcome and error‑adjusted C_agent vs. C_human.
 
-* Demand a **clear plan for workforce rebundling**:
+- Demand a **clear plan for workforce rebundling**:
 
-  * How roles change.
-  * How early‑career pathways remain viable.
-  * How you support transitions, not just reductions.
+  - How roles change.
+  - How early‑career pathways remain viable.
+  - How you support transitions, not just reductions.
 
 #### For Enterprise Architects and CIOs/CTOs
 
-* Design a **reference architecture** for agent‑first services:
+- Design a **reference architecture** for agent‑first services:
 
-  * Agent templates per domain.
-  * Standard guardrails, verifiers, and escalation patterns.
-  * Identity and least‑privilege access for agents.
+  - Agent templates per domain.
+  - Standard guardrails, verifiers, and escalation patterns.
+  - Identity and least‑privilege access for agents.
 
-* Institutionalize **AgentOps**:
+- Institutionalize **AgentOps**:
 
-  * Treat it like SRE/MLOps: clear ownership, runbooks, and tooling.
-  * Build shared pattern libraries across domains.
+  - Treat it like SRE/MLOps: clear ownership, runbooks, and tooling.
+  - Build shared pattern libraries across domains.
 
-* Make **energy, carbon, and economics** first‑class concerns:
+- Make **energy, carbon, and economics** first‑class concerns:
 
-  * Model choice and placement driven by ECI_outcome and cost, not just accuracy
+  - Model choice and placement driven by ECI_outcome and cost, not just accuracy
     or latency.
-  * Architecture that can move workloads across clouds, regions, and footprints.
+  - Architecture that can move workloads across clouds, regions, and footprints.
 
 #### For CFOs and Strategy Leaders
 
-* Build a **P&L view** that separates:
+- Build a **P&L view** that separates:
 
-  * Human labor
-  * Compute & orchestration
-  * Energy & CFE hedges
-  * AgentOps and verification overhead
+  - Human labor
+  - Compute & orchestration
+  - Energy & CFE hedges
+  - AgentOps and verification overhead
 
-* Use the **C_agent vs. C_human** calculus to prioritize:
+- Use the **C_agent vs. C_human** calculus to prioritize:
 
-  * Which workflows to automate first.
-  * Where incremental spend on verifiers or tools unlocks larger savings.
+  - Which workflows to automate first.
+  - Where incremental spend on verifiers or tools unlocks larger savings.
 
-* Treat **PPAs, storage, and firm compute** as strategic hedges in the AI
+- Treat **PPAs, storage, and firm compute** as strategic hedges in the AI
   business plan, not mere ESG moves.
 
 #### For CHROs and People Leaders
 
-* Redesign **job families and career paths** around:
+- Redesign **job families and career paths** around:
 
-  * Exception handling, policy, narrative, and relationship work.
-  * AgentOps and orchestration skills.
+  - Exception handling, policy, narrative, and relationship work.
+  - AgentOps and orchestration skills.
 
-* Protect **early‑career pipelines**:
+- Protect **early‑career pipelines**:
 
-  * Apprentice‑style roles that combine agent work with structured learning.
-  * Rotations through high‑MVL functions like governance, trust, and escalation.
+  - Apprentice‑style roles that combine agent work with structured learning.
+  - Rotations through high‑MVL functions like governance, trust, and escalation.
 
-* Integrate **AI literacy and agent collaboration** into leadership and
+- Integrate **AI literacy and agent collaboration** into leadership and
   management development.
 
 #### For Legal, Risk, and Compliance
 
-* Build a **Model/Agent Risk Management** capability:
+- Build a **Model/Agent Risk Management** capability:
 
-  * Intended‑use documentation and off‑label restrictions.
-  * Pre‑deployment tests, stress scenarios, and sign‑off.
-  * Ongoing monitoring, overrides, and audit trails.
+  - Intended‑use documentation and off‑label restrictions.
+  - Pre‑deployment tests, stress scenarios, and sign‑off.
+  - Ongoing monitoring, overrides, and audit trails.
 
-* Work with architects to bake **policy enforcement at the tool boundary**, not
+- Work with architects to bake **policy enforcement at the tool boundary**, not
   just via policy documents.
 
-* Engage early with regulators and industry bodies to help shape **liability,
+- Engage early with regulators and industry bodies to help shape **liability,
   audit, and assurance standards**.
 
 #### For Product Owners and Business Line Leaders
 
-* Think in **units of work**, not features:
+- Think in **units of work**, not features:
 
-  * Claims resolved, tickets closed, orders processed, cases handled.
-  * Ask: “What would an agent‑first version of this look like, with humans
+  - Claims resolved, tickets closed, orders processed, cases handled.
+  - Ask: “What would an agent‑first version of this look like, with humans
     around the loop?”
 
-* Design clear **customer‑facing narratives**:
+- Design clear **customer‑facing narratives**:
 
-  * When are you talking to an agent vs. a human?
-  * How can customers escalate, override, or get explanations?
+  - When are you talking to an agent vs. a human?
+  - How can customers escalate, override, or get explanations?
 
-* Track:
+- Track:
 
-  * Quality and satisfaction across human‑only vs. agent‑first flows.
-  * The economics of **verified outcomes**, not just “number of AI calls.”
+  - Quality and satisfaction across human‑only vs. agent‑first flows.
+  - The economics of **verified outcomes**, not just “number of AI calls.”
 
 
 
@@ -2541,19 +2526,19 @@ hold different pieces of the response.
 
 So far, across the last few chapters, we’ve established that:
 
-* **Agents** will do a large share of cognitive work.
-* **Compute and energy** will bound how much intelligence you can deploy.
-* The **economics and governance** of AI push firms toward agent‑first services,
+- **Agents** will do a large share of cognitive work.
+- **Compute and energy** will bound how much intelligence you can deploy.
+- The **economics and governance** of AI push firms toward agent‑first services,
   orchestration moats, and new risk regimes.
 
 Taken together, these forces don’t just tweak org charts; they **demand new
 roles and organizational structures**:
 
-* New functions like **AgentOps**, **Model/Agent Risk Management**, and
+- New functions like **AgentOps**, **Model/Agent Risk Management**, and
   **Compute Portfolio Management**.
-* New leadership roles that span **technology, energy, finance, and policy**.
-* Re‑shaped lines between IT, operations, product, and compliance.
-* Explicit owners for **agent templates, verifiers, and guardrails** across the
+- New leadership roles that span **technology, energy, finance, and policy**.
+- Re‑shaped lines between IT, operations, product, and compliance.
+- Explicit owners for **agent templates, verifiers, and guardrails** across the
   enterprise.
 
 In other words, you’ll need to **rebuild the organization around intelligence as
@@ -2561,10 +2546,10 @@ a managed utility**—not as a scattered set of pilots and features.
 
 The next chapter will make this concrete:
 
-* Which **new roles** are emerging (and which existing roles need to be
+- Which **new roles** are emerging (and which existing roles need to be
   redefined).
-* How to **structure teams and reporting lines** in an agent‑first enterprise.
-* How to design an organization that can **safely absorb, govern, and exploit**
+- How to **structure teams and reporting lines** in an agent‑first enterprise.
+- How to design an organization that can **safely absorb, govern, and exploit**
   rapidly increasing intelligence capacity.
 
 That is where we turn next.
@@ -2575,9 +2560,9 @@ That is where we turn next.
 
 The last chapters answered two big questions:
 
-* **What happens when agents outperform median human cognition on many tasks?**
-* **How do energy and compute bound how much intelligence you can deploy?**
-* **What does that do to macroeconomics, markets, and your operating model?**
+- **What happens when agents outperform median human cognition on many tasks?**
+- **How do energy and compute bound how much intelligence you can deploy?**
+- **What does that do to macroeconomics, markets, and your operating model?**
 
 This chapter gets very concrete:
 
@@ -2606,35 +2591,35 @@ demands a different cast of characters.
 
 #### Core new roles
 
-* **Value‑Chain Architect (Service‑Line Owner)** Owns an entire step of the
+- **Value‑Chain Architect (Service‑Line Owner)** Owns an entire step of the
   value chain end‑to‑end—business goals, human+agent orchestration, risk
   appetite, SLOs, and data contracts.
 
-* **Agent Architect** Designs multi‑agent workflows: planners, tool graphs,
+- **Agent Architect** Designs multi‑agent workflows: planners, tool graphs,
   memory, verifiers, fallbacks, and escalation logic—with cost, latency, and
   risk baked in.
 
-* **AgentOps Program Manager** Runs cross‑functional agent rollouts:
+- **AgentOps Program Manager** Runs cross‑functional agent rollouts:
   quality‑gated releases, version pinning, incident response, and alignment with
   business outcomes.
 
-* **Verification Engineer** Builds evaluation suites, oracle checks, and
+- **Verification Engineer** Builds evaluation suites, oracle checks, and
   red‑team tests; manages **quality budgets** and deployment gates; tracks
   residual error and penalty exposure.
 
-* **Agent SRE / Observer** Operates agent fleets: telemetry, SLOs, safety SLAs,
+- **Agent SRE / Observer** Operates agent fleets: telemetry, SLOs, safety SLAs,
   incidents, rollbacks, and cost tuning (tokens, tools, cache, and model
   choice).
 
-* **Data Steward** Owns data quality, provenance, licensing, consent,
+- **Data Steward** Owns data quality, provenance, licensing, consent,
   poisoning/toxicity scores; maintains data contracts for retrieval,
   fine‑tuning, and verifiers.
 
-* **Prompt & Policy Engineer** Encodes institutional policy, SOPs, and brand
+- **Prompt & Policy Engineer** Encodes institutional policy, SOPs, and brand
   voice into prompts/guards and prompt patterns with **measurable effects** on
   quality and safety.
 
-* **Model Risk Lead** Provides independent governance for models and agents:
+- **Model Risk Lead** Provides independent governance for models and agents:
   intended use, limitations, off‑label prohibitions, scenario tests, monitoring,
   and rollback readiness.
 
@@ -2685,177 +2670,177 @@ Short, concrete descriptions you can drop straight into role charters.
 
 ##### Value‑Chain Architect (Service‑Line Owner)
 
-* **Scope** Owns a complete value‑chain step across all layers—from values,
+- **Scope** Owns a complete value‑chain step across all layers—from values,
   ambitions, and principles down to runtime orchestration and data contracts.
 
-* **Legacy strengths that transfer** Strategic alignment, capability modeling,
+- **Legacy strengths that transfer** Strategic alignment, capability modeling,
   architecture governance, process integration.
 
-* **What’s new** Verifier‑first design, compute/human budget management,
+- **What’s new** Verifier‑first design, compute/human budget management,
   multi‑agent orchestration, risk‑aware SLOs, and quality‑adjusted throughput.
 
-* **Primary KPIs**
+- **Primary KPIs**
 
-  * Quality‑adjusted throughput
-  * Residual error × penalty
-  * Escalation ratio ↓
-  * p95/p99 latency vs. SLO
-  * Cost per resolved unit
-  * Policy and compliance adherence
+  - Quality‑adjusted throughput
+  - Residual error × penalty
+  - Escalation ratio ↓
+  - p95/p99 latency vs. SLO
+  - Cost per resolved unit
+  - Policy and compliance adherence
 
-* **90‑day outcomes**
+- **90‑day outcomes**
 
-  * Choose one value‑chain step; define quality and risk budgets.
-  * Deliver a canonical agent template + escalation matrix.
-  * Establish data contracts and provenance registry for that step.
-  * Publish SLO/SLA pack and a rollback playbook.
+  - Choose one value‑chain step; define quality and risk budgets.
+  - Deliver a canonical agent template + escalation matrix.
+  - Establish data contracts and provenance registry for that step.
+  - Publish SLO/SLA pack and a rollback playbook.
 
 ##### Agent Architect
 
-* **Scope** Designs multi‑agent systems: planners, tool graphs, memory flows,
+- **Scope** Designs multi‑agent systems: planners, tool graphs, memory flows,
   verifiers, fallbacks, and escalation.
 
-* **What’s new vs. classic architecture** Verification‑first design; token/tool
+- **What’s new vs. classic architecture** Verification‑first design; token/tool
   economics; version pinning; canaries; prompt/model rollback choreography;
   agent identity boundaries.
 
-* **Primary KPIs**
+- **Primary KPIs**
 
-  * Quality‑adjusted throughput
-  * Verifier pass rate
-  * Residual error
-  * p95/p99 latency vs. SLO
-  * Cost per resolved unit
-  * % of workflows agentized
+  - Quality‑adjusted throughput
+  - Verifier pass rate
+  - Residual error
+  - p95/p99 latency vs. SLO
+  - Cost per resolved unit
+  - % of workflows agentized
 
-* **90‑day outcomes**
+- **90‑day outcomes**
 
-  * Ship a canonical agent template for 1–2 service lines.
-  * Define tool and verifier catalogs for those flows.
-  * Agree escalation logic with business and risk owners.
-  * Run a canaried rollout with validated rollback runbooks.
+  - Ship a canonical agent template for 1–2 service lines.
+  - Define tool and verifier catalogs for those flows.
+  - Agree escalation logic with business and risk owners.
+  - Run a canaried rollout with validated rollback runbooks.
 
 ##### AgentOps Program Manager
 
-* **Scope** Orchestrates agentic releases from planning to rollout; coordinates
+- **Scope** Orchestrates agentic releases from planning to rollout; coordinates
   across SRE, Verification, Data Stewardship, Policy, and Risk.
 
-* **What’s new vs. classic PM/Program** Quality budgets as release gates, not
+- **What’s new vs. classic PM/Program** Quality budgets as release gates, not
   just dates; version pinning; incident drills; token/tool cost management.
 
-* **Primary KPIs**
+- **Primary KPIs**
 
-  * % of releases gated by verifiers
-  * SLO attainment rate
-  * MTTR for agent incidents
-  * Time‑to‑green after rollback
-  * Residual error trend over releases
+  - % of releases gated by verifiers
+  - SLO attainment rate
+  - MTTR for agent incidents
+  - Time‑to‑green after rollback
+  - Residual error trend over releases
 
-* **90‑day outcomes**
+- **90‑day outcomes**
 
-  * Build a release calendar with SLO/quality gates.
-  * Document agent incident taxonomy and escalation paths.
-  * Implement version pinning and rollout hygiene practices.
-  * Stand up cost and quality dashboards across agentized lines.
+  - Build a release calendar with SLO/quality gates.
+  - Document agent incident taxonomy and escalation paths.
+  - Implement version pinning and rollout hygiene practices.
+  - Stand up cost and quality dashboards across agentized lines.
 
 ##### Verification Engineer
 
-* **Scope** Builds evaluations, oracle checks, and red‑team suites; manages
+- **Scope** Builds evaluations, oracle checks, and red‑team suites; manages
   quality budgets and deployment gates; monitors drift and poisoning.
 
-* **Primary KPIs**
+- **Primary KPIs**
 
-  * Residual error (post‑verification)
-  * Verifier precision/recall
-  * Evaluation coverage vs. risk inventory
-  * Escaped‑defect rate
-  * Incidents avoided by evals
-  * Mean time to update evaluations after issues
+  - Residual error (post‑verification)
+  - Verifier precision/recall
+  - Evaluation coverage vs. risk inventory
+  - Escaped‑defect rate
+  - Incidents avoided by evals
+  - Mean time to update evaluations after issues
 
-* **90‑day outcomes**
+- **90‑day outcomes**
 
-  * Define eval suite tied to real business penalties.
-  * Set a quality budget per critical flow.
-  * Wire verification gates into CI/CD and deployment.
-  * Publish a red‑team playbook and run at least one exercise.
+  - Define eval suite tied to real business penalties.
+  - Set a quality budget per critical flow.
+  - Wire verification gates into CI/CD and deployment.
+  - Publish a red‑team playbook and run at least one exercise.
 
 ##### Agent SRE / Observer
 
-* **Scope** Operates agent fleets to SLO and safety SLAs; owns telemetry,
+- **Scope** Operates agent fleets to SLO and safety SLAs; owns telemetry,
   incidents, cost tuning, and rollout hygiene.
 
-* **Primary KPIs**
+- **Primary KPIs**
 
-  * SLO attainment (latency, availability, quality)
-  * MTTR / MTBF for agent incidents
-  * Tail latency (p95/p99)
-  * Tool error rates and cache hit rates
-  * Rollback frequency and success rate
-  * Cost per resolved unit / verified outcome
+  - SLO attainment (latency, availability, quality)
+  - MTTR / MTBF for agent incidents
+  - Tail latency (p95/p99)
+  - Tool error rates and cache hit rates
+  - Rollback frequency and success rate
+  - Cost per resolved unit / verified outcome
 
-* **90‑day outcomes**
+- **90‑day outcomes**
 
-  * Build fleet dashboards (quality, cost, latency) for one line.
-  * Define and test incident taxonomies and runbooks.
-  * Implement canary pipelines and rollback drills.
-  * Stand up cost monitors for tokens, tools, and verifiers.
+  - Build fleet dashboards (quality, cost, latency) for one line.
+  - Define and test incident taxonomies and runbooks.
+  - Implement canary pipelines and rollback drills.
+  - Stand up cost monitors for tokens, tools, and verifiers.
 
 ##### Data Steward
 
-* **Scope** Enforces quality, provenance, licensing, consent, and poisoning defenses;
+- **Scope** Enforces quality, provenance, licensing, consent, and poisoning defenses;
   manages data contracts for retrieval, fine‑tuning, and verifiers.
 
-* **Primary KPIs**
+- **Primary KPIs**
 
-  * % of key assets with signed provenance and licensing
-  * Number and severity of poisoning/toxicity incidents
-  * Data freshness SLAs met
-  * Retrieval accuracy improvements
-  * Audit findings closed on time
+  - % of key assets with signed provenance and licensing
+  - Number and severity of poisoning/toxicity incidents
+  - Data freshness SLAs met
+  - Retrieval accuracy improvements
+  - Audit findings closed on time
 
-* **90‑day outcomes**
+- **90‑day outcomes**
 
-  * Draft data contracts for top retrieval/fine‑tune/verifier sources.
-  * Stand up a provenance/license registry.
-  * Define takedown and repair workflows.
-  * Set a refresh plan for critical corpora.
+  - Draft data contracts for top retrieval/fine‑tune/verifier sources.
+  - Stand up a provenance/license registry.
+  - Define takedown and repair workflows.
+  - Set a refresh plan for critical corpora.
 
 ##### Prompt & Policy Engineer
 
-* **Scope** Codifies institutional policy, SOPs, and brand voice as
+- **Scope** Codifies institutional policy, SOPs, and brand voice as
   prompts/guards and pattern libraries with measurable effects.
 
-* **Primary KPIs**
+- **Primary KPIs**
 
-  * Change in verifier pass rates
-  * Reduction in hallucination/policy‑violation rates
-  * Reviewer time saved per output
-  * Adoption and reuse of prompt patterns
+  - Change in verifier pass rates
+  - Reduction in hallucination/policy‑violation rates
+  - Reviewer time saved per output
+  - Adoption and reuse of prompt patterns
 
-* **90‑day outcomes**
+- **90‑day outcomes**
 
-  * Ship a pattern library for top workflows (support, claims, sales, etc.).
-  * Wire guardrail prompts to verifiers and logging.
-  * Define acceptance evaluations with Verification.
+  - Ship a pattern library for top workflows (support, claims, sales, etc.).
+  - Wire guardrail prompts to verifiers and logging.
+  - Define acceptance evaluations with Verification.
 
 ##### Model Risk Lead
 
-* **Scope** Provides independent governance for models and agents; owns risk
+- **Scope** Provides independent governance for models and agents; owns risk
   taxonomy, approvals, and scenario tests.
 
-* **Primary KPIs**
+- **Primary KPIs**
 
-  * Time‑to‑approve without compromising quality
-  * Control effectiveness vs. incidents
-  * Severity/frequency of agent‑related issues
-  * Audit‑ready coverage of critical agents
-  * Exception and remediation backlog
+  - Time‑to‑approve without compromising quality
+  - Control effectiveness vs. incidents
+  - Severity/frequency of agent‑related issues
+  - Audit‑ready coverage of critical agents
+  - Exception and remediation backlog
 
-* **90‑day outcomes**
+- **90‑day outcomes**
 
-  * Publish policy and RACI for agent deployments.
-  * Define approval gates and evidence requirements.
-  * Run at least one scenario exercise per high‑risk service line.
+  - Publish policy and RACI for agent deployments.
+  - Define approval gates and evidence requirements.
+  - Run at least one scenario exercise per high‑risk service line.
 
 #### One‑liners you can paste under “New roles”
 
@@ -2887,19 +2872,19 @@ You can’t flip a switch. But you can **stage talent moves** deliberately.
 
 Suggested patterns:
 
-* Enterprise / Chief Architect → **Value‑Chain Architect** (family: Architecture
+- Enterprise / Chief Architect → **Value‑Chain Architect** (family: Architecture
   / Strategy)
-* Solutions Architect → **Agent Architect** (Architecture)
-* SRE / DevOps / Platform → **Agent SRE/Observer** (Reliability / Platform)
-* QA / SDET / Test Manager → **Verification Engineer** (Quality / Engineering)
-* Data Steward / Governance / Records → **Data Steward (Provenance)** (Data)
-* Tech Writer / Knowledge / BA / Conversation Designer → **Prompt & Policy
+- Solutions Architect → **Agent Architect** (Architecture)
+- SRE / DevOps / Platform → **Agent SRE/Observer** (Reliability / Platform)
+- QA / SDET / Test Manager → **Verification Engineer** (Quality / Engineering)
+- Data Steward / Governance / Records → **Data Steward (Provenance)** (Data)
+- Tech Writer / Knowledge / BA / Conversation Designer → **Prompt & Policy
   Engineer** (Product / Content / Policy Eng)
-* Model Risk / Validator / GRC / Audit (model) → **Model Risk Lead** (Risk &
+- Model Risk / Validator / GRC / Audit (model) → **Model Risk Lead** (Risk &
   Compliance)
-* Product Manager → **Agent Architect** or **Value‑Chain Architect** (depending
+- Product Manager → **Agent Architect** or **Value‑Chain Architect** (depending
   on scope)
-* Project / Program Manager → **AgentOps Program Manager** (Delivery /
+- Project / Program Manager → **AgentOps Program Manager** (Delivery /
   Operations)
 
 You don’t need to re‑label everyone on day one. Start with **pilot domains** and
@@ -2909,18 +2894,18 @@ use them as proof points.
 
 Design short, targeted upskilling tracks:
 
-* **Architects → Agent Architect / Value‑Chain Architect** - Orchestration
+- **Architects → Agent Architect / Value‑Chain Architect** - Orchestration
   patterns; tool boundaries; verifier‑first design; compute economics; rollout
   and rollback hygiene.
-* **QA/SDET → Verification Engineer** - Evaluation design; oracle construction;
+- **QA/SDET → Verification Engineer** - Evaluation design; oracle construction;
   red‑teaming; penalty models; online gating and drift monitoring.
-* **SRE/DevOps → Agent SRE** - Prompt/model versioning; token/tool cost
+- **SRE/DevOps → Agent SRE** - Prompt/model versioning; token/tool cost
   controls; agent‑specific SLIs; circuit breakers; kill switches.
-* **Data Gov → Data Steward (Provenance)** - Licensing; provenance signing;
+- **Data Gov → Data Steward (Provenance)** - Licensing; provenance signing;
   poisoning detection; synthetic data and feedback governance.
-* **Writers/BA/Compliance → Prompt & Policy** - Prompt pattern design;
+- **Writers/BA/Compliance → Prompt & Policy** - Prompt pattern design;
   measurable guardrails; refusal patterns; collaboration with risk and legal.
-* **GRC/MRM → Model Risk Lead** - Agent taxonomy; evidence packs; scenario
+- **GRC/MRM → Model Risk Lead** - Agent taxonomy; evidence packs; scenario
   testing; setting risk appetites for autonomy levels.
 
 
@@ -2928,11 +2913,11 @@ Design short, targeted upskilling tracks:
 
 Tie OKRs directly to the KPIs above. For example:
 
-* Verification Engineer: **“Residual error < X% with Y% coverage by end of
+- Verification Engineer: **“Residual error < X% with Y% coverage by end of
   Q4.”**
-* Agent SRE: **“SLO attainment ≥ 99%, cost per resolved ticket ↓ 15% YoY.”**
-* Data Steward: **“Provenance coverage ≥ 90% of retrieval corpus.”**
-* Prompt & Policy: **“Policy‑violation incidents ↓ 50% while reviewer time ↓
+- Agent SRE: **“SLO attainment ≥ 99%, cost per resolved ticket ↓ 15% YoY.”**
+- Data Steward: **“Provenance coverage ≥ 90% of retrieval corpus.”**
+- Prompt & Policy: **“Policy‑violation incidents ↓ 50% while reviewer time ↓
   25%.”**
 
 This makes “new roles” feel like **real jobs**, not rebranded experiments. |
@@ -2947,45 +2932,45 @@ To manage this org, you need a small set of shared dials.
 
 #### Enterprise‑level talent & org KPIs
 
-* **Agent adoption rate** – % of major workflows with agents in the critical
+- **Agent adoption rate** – % of major workflows with agents in the critical
   path
-* **Human review rate & escalation ratio** – should decline as verifiers improve
-* **Quality‑adjusted throughput** – outcomes per unit cost/time per service line
-* **Residual error and penalty exposure** – by domain
-* **Early‑career placement** – share of new hires in high‑MVL roles vs. legacy
+- **Human review rate & escalation ratio** – should decline as verifiers improve
+- **Quality‑adjusted throughput** – outcomes per unit cost/time per service line
+- **Residual error and penalty exposure** – by domain
+- **Early‑career placement** – share of new hires in high‑MVL roles vs. legacy
   roles
-* **Internal mobility** – transitions into AgentOps / verification / trust roles
+- **Internal mobility** – transitions into AgentOps / verification / trust roles
 
 #### Role‑specific dashboards
 
-* **Agent Architect / Value‑Chain Architect**
-  * Throughput, error, latency vs. SLO for their step
-  * Agent coverage vs. manual; cost per resolved outcome
+- **Agent Architect / Value‑Chain Architect**
+  - Throughput, error, latency vs. SLO for their step
+  - Agent coverage vs. manual; cost per resolved outcome
 
-* **AgentOps PM & Agent SRE**
+- **AgentOps PM & Agent SRE**
 
-  * Release cadence; % releases gated by verifiers
-  * Incident counts and MTTR; rollback and canary metrics
+  - Release cadence; % releases gated by verifiers
+  - Incident counts and MTTR; rollback and canary metrics
 
-* **Verification Engineer**
+- **Verification Engineer**
 
-  * Eval coverage; residual error; escaped‑defect trends
-  * Time to add/update evals after issues
+  - Eval coverage; residual error; escaped‑defect trends
+  - Time to add/update evals after issues
 
-* **Data Steward**
+- **Data Steward**
 
-  * Provenance/license coverage; data freshness
-  * Poisoning/toxicity incidents and remediation time
+  - Provenance/license coverage; data freshness
+  - Poisoning/toxicity incidents and remediation time
 
-* **Prompt & Policy Engineer**
+- **Prompt & Policy Engineer**
 
-  * Hallucination/policy‑violation rates
-  * Review time per output; pattern adoption
+  - Hallucination/policy‑violation rates
+  - Review time per output; pattern adoption
 
-* **Model Risk Lead**
+- **Model Risk Lead**
 
-  * Number of approved agents by risk class
-  * Exceptions backlog; audit findings
+  - Number of approved agents by risk class
+  - Exceptions backlog; audit findings
 
 These dashboards should be **self‑service** for leadership and tightly coupled
 to performance reviews.
@@ -2996,80 +2981,80 @@ This chapter is inherently cross‑functional. Here’s how to slice it by role.
 
 #### Executives & Boards
 
-* Endorse the **agent‑first operating model** explicitly.
-* Approve the **new role families** and career paths.
-* Require **Value‑Chain Architect** ownership for major service lines.
-* Tie incentive structures to **quality‑adjusted throughput** and **safe
+- Endorse the **agent‑first operating model** explicitly.
+- Approve the **new role families** and career paths.
+- Require **Value‑Chain Architect** ownership for major service lines.
+- Tie incentive structures to **quality‑adjusted throughput** and **safe
   automation**, not just raw cost reduction.
 
 #### Enterprise Architects / CIOs / CTOs
 
-* Own the **reference organization** for agent‑first delivery:
+- Own the **reference organization** for agent‑first delivery:
 
-  * Where Agent Architects, AgentOps, Verification, Data Stewardship, and Model
+  - Where Agent Architects, AgentOps, Verification, Data Stewardship, and Model
     Risk sit.
-  * How they interface with product, risk, and operations.
+  - How they interface with product, risk, and operations.
 
-* Sponsor the **skill bridges** and ensure they have real curriculum, not ad‑hoc
+- Sponsor the **skill bridges** and ensure they have real curriculum, not ad‑hoc
   slide decks.
 
-* Standardize on **agent templates** and supporting patterns across domains.
+- Standardize on **agent templates** and supporting patterns across domains.
 
 #### CFOs & Strategy Leaders
 
-* Incorporate new roles into **long‑range planning**:
+- Incorporate new roles into **long‑range planning**:
 
-  * Cost curves for AgentOps, verification, and risk mgmt.
-  * Expected reductions in human review and escalation over time.
+  - Cost curves for AgentOps, verification, and risk mgmt.
+  - Expected reductions in human review and escalation over time.
 
-* Require **go/no‑go economics** (C_agent vs. C_human) for automation decisions.
+- Require **go/no‑go economics** (C_agent vs. C_human) for automation decisions.
 
-* Treat **AgentOps, Verification, and Model Risk** as core enablers of
+- Treat **AgentOps, Verification, and Model Risk** as core enablers of
   sustainable margin, not overhead.
 
 #### CHROs & People Leaders
 
-* Redesign **job families** and **ladders**:
+- Redesign **job families** and **ladders**:
 
-  * From “analyst → senior analyst → manager” to “verifier → agent architect →
+  - From “analyst → senior analyst → manager” to “verifier → agent architect →
     service‑line owner.”
-  * From generic ops roles to **exception, trust, and governance** tracks.
+  - From generic ops roles to **exception, trust, and governance** tracks.
 
-* Build **internal academies** for AgentOps, Verification, and Prompt & Policy.
+- Build **internal academies** for AgentOps, Verification, and Prompt & Policy.
 
-* Protect early‑career entrants with **apprenticeship‑style** roles and
+- Protect early‑career entrants with **apprenticeship‑style** roles and
   transparent pathways into high‑MVL work.
 
 #### Legal, Risk, & Compliance
 
-* Stand up a **Model/Agent Risk Management** function:
+- Stand up a **Model/Agent Risk Management** function:
 
-  * Policy, approvals, scenarios, and evidence packs.
-  * Clear mapping from incidents to control improvements and training.
+  - Policy, approvals, scenarios, and evidence packs.
+  - Clear mapping from incidents to control improvements and training.
 
-* Partner on **role definitions**:
+- Partner on **role definitions**:
 
-  * Model Risk Lead, Data Steward, Prompt & Policy Engineer.
-  * Ensure RACI is explicit for agent‑driven incidents.
+  - Model Risk Lead, Data Steward, Prompt & Policy Engineer.
+  - Ensure RACI is explicit for agent‑driven incidents.
 
 #### Product, Operations, and Line‑of‑Business Leaders
 
-* Adopt **agent‑first design** for new initiatives.
-* Nominate **Value‑Chain Architects** for key flows.
-* Collaborate with Prompt & Policy and Verification to define:
+- Adopt **agent‑first design** for new initiatives.
+- Nominate **Value‑Chain Architects** for key flows.
+- Collaborate with Prompt & Policy and Verification to define:
 
-  * Acceptable outcomes
-  * Quality budgets
-  * Customer‑facing expectations for agent behavior
+  - Acceptable outcomes
+  - Quality budgets
+  - Customer‑facing expectations for agent behavior
 
 ### Closing: From Org Design to a 1,000‑Day Playbook
 
 Across the last four chapters we’ve assembled the pieces:
 
-* **Agents** will own more of the cognitive work.
-* **Compute and energy** set the hard capacity limits.
-* **Economics and governance** push you toward agent‑first services.
-* This chapter translated that into **roles, mappings, and org structure**.
+- **Agents** will own more of the cognitive work.
+- **Compute and energy** set the hard capacity limits.
+- **Economics and governance** push you toward agent‑first services.
+- This chapter translated that into **roles, mappings, and org structure**.
 
 Taken together, they imply a simple but demanding mandate:
 
@@ -3079,16 +3064,16 @@ Taken together, they imply a simple but demanding mandate:
 
 The natural next question is *“What do we do when?”*:
 
-* Which roles should exist **by when**?
-* Which workflows should be agentized in **Phase 1 vs. Phase 2 vs. Phase 3**?
-* What **milestones** (on quality, cost, risk, and talent) should you hit at ~6,
+- Which roles should exist **by when**?
+- Which workflows should be agentized in **Phase 1 vs. Phase 2 vs. Phase 3**?
+- What **milestones** (on quality, cost, risk, and talent) should you hit at ~6,
   12, 24, and 33 months?
 
 That’s the focus of the next chapter:
 
-* A **1,000‑day playbook** with concrete milestones
-* Suggested sequencing of **platform, use‑case, and talent** investments
-* Checklists to know whether you’re *ready* to move from pilots → copilots →
+- A **1,000‑day playbook** with concrete milestones
+- Suggested sequencing of **platform, use‑case, and talent** investments
+- Checklists to know whether you’re *ready* to move from pilots → copilots →
   digital workers → semi‑autonomous flows
 
 In other words: we’ll turn this organizational design into a **timeline you can
