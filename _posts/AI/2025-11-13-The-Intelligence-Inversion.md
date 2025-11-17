@@ -87,6 +87,7 @@ no_toc: true
   margin-left: 1.5rem;
   margin-bottom: 1rem;
   clear: right;
+  text-justify: auto;
 }
 
 @media (max-width: 768px) {
@@ -248,7 +249,7 @@ With the launch of ChatGPT on **Nov 30, 2022** to **Day 1,000 (Aug 26, 2025)** t
 
 From a C‑suite lens, a transformer is a **fast, scalable “next‑step planner”** over tokens. Intelligence, in this world, is: *How much **useful state and action** we can pack into tokens per second, per dollar, under governance.*
 
-> **The Transformer and the Token**
+> **The Transformer & The Token**
 > 
 > Under the hood, every frontier system your enterprise cares about (OpenAI GPT‑4/5 and o‑series, Anthropic Claude, Google Gemini) is built on the same architectural idea:
 > 
