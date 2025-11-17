@@ -1253,14 +1253,14 @@ Let’s call **MVL** the marginal value of adding (or keeping) a human in a give
 
 A helpful decomposition:
 
-[
+$$
 \text{MVL} \approx \Delta \text{Output}
 
 - \Delta \text{Supervision Cost}
 - \Delta \text{Error/Variance Cost}
 - \Delta \text{Coordination Cost}
 - \Delta \text{Latency Cost}
-  ]
+$$
 
 Where:
 
@@ -1411,7 +1411,7 @@ You get a structural funding gap unless you:
 - Or find **new mechanisms** (e.g., tying monetary creation or dividends to shared assets, such as public compute or data)
 
 > **UBI Challenges**
-
+>
 > The takeaway for enterprises: **don’t assume UBI will absorb the shock** for your customers or your workforce on a useful timeline.  Workforce strategy, reskilling, and role rebundling remain core leadership responsibilities that can not be avoided in the foreseeable future.
 >
 > As a leader of a large organization, you should not assume that UBI or any other large‑scale transfer scheme will arrive in time, at scale, to stabilize your demand. Historically in the U.S., major discretionary interventions only tend to show up once **headline unemployment is in the high‑single digits** and broader underemployment is in the **low‑to‑mid teens**—on the order of 10–15% of the workforce in visible distress. Even then, the timing is erratic: **automatic stabilizers** (unemployment insurance, food assistance, etc.) expand quickly, but the big, bespoke packages arrive on very different clocks—**weeks in an acute crisis like COVID, roughly a year in the 2008–09 Great Recession, and several years in the Great Depression before the New Deal reached scale**. An AI‑driven employment shock that plays out over a decade is therefore likely to **outrun the political system** for long stretches.
@@ -1635,16 +1635,11 @@ Traditional metrics (PUE, kWh, emissions) are necessary but not sufficient. They
 
 Two useful forms:
 
-[
-\mathrm{ECI_{outcome}} =
-\frac{\text{kWh consumed}}{\text{count of AI outcomes that pass verifier(s)}}
-]
+$$\mathrm{ECI_{outcome}} = \frac{\text{kWh consumed}}{\text{count of AI outcomes that pass verifier(s)}}$$
 
-[
-\mathrm{ECI_{tokens}} =
-10^{6} \cdot \frac{\text{kWh consumed}}{\text{tokens processed}}
-\quad \text{(kWh per 1,000,000 tokens)}
-]
+
+$$\mathrm{ECI_{tokens}} = 10^{6} \cdot \frac{\text{kWh consumed}}{\text{tokens processed}}
+\quad \text{(kWh per 1,000,000 tokens)}$$
 
 - **ECI_outcome** focuses on **business‑meaningful outcomes** (e.g., resolved tickets, successful forecasts, correct adjudications).
 - **ECI_tokens** is useful for comparing **raw model / infra efficiency** across stacks.
@@ -1958,8 +1953,6 @@ We’ll cover:
 7. How all of this points to the **new roles and organizational changes** you’ll
    need next
 
-
-
 ### Macroeconomic Transformation
 
 ### 1.1 Compute as dominant capital stock
@@ -2068,8 +2061,6 @@ You’ll see metrics like:
 Nations that can field **cheap, reliable, well‑governed intelligence** at scale
 will pull ahead.
 
-
-
 ### Industrial Organization & Competition
 
 ### 2.1 From data moats to orchestration moats
@@ -2122,8 +2113,6 @@ if:
 
 Trust‑preserving experience design—how your agents interact with
 customers—becomes a **strategic control point**, not a UX afterthought.
-
-
 
 ### Labor‑Market Dynamics
 
@@ -2414,23 +2403,23 @@ $$C_{\text{human}} = \frac{\text{TCOW}}{\text{throughput}} + C_{\text{rework}} +
 Where:
 
 - TCOW = total cost of workforce for that role/service.
-- ( p_{\text{review}} ) = fraction of agent outputs that still need human review.
-- ( C_{\text{rework}} ) = cost of defects and rework.
-- ( C_{\text{delay}} ) = cost of latency from human handoffs.
+- ( $$p_{\text{review}}$$ ) = fraction of agent outputs that still need human review.
+- ( $$C_{\text{rework}}$$ ) = cost of defects and rework.
+- ( $$C_{\text{delay}}$$ ) = cost of latency from human handoffs.
 
 Account for residual error risk:
 
-$$
-C_{\text{agent, adj}} = C_{\text{agent}} \left( 1 + r_{\text{residual_error}} \cdot P_{\text{penalty}} \right)$$
+$$C_{\text{agent, adj}} = C_{\text{agent}} \left( 1 + r_{\text{residual_error}} \cdot P_{\text{penalty}} \right)$$
 
 Where:
 
-- ( r_{\text{residual_error}} ) = error rate *after* verification.
-- ( P_{\text{penalty}} ) = expected penalty per error (financial, legal, reputational).
+- ( $$r_{\text{residual_error}}$$ ) = error rate *after* verification.
+- ( $$P_{\text{penalty}}$$ ) = expected penalty per error (financial, legal, reputational).
 
 **Go/no‑go rule** (simplified):
 
 > Deploy agent‑first when
+>
 > $$C_{\text{agent, adj}} < C_{\text{human}}$$
 {: .alert .alert-info}
 
@@ -2693,7 +2682,6 @@ Here’s how typical legacy roles map into the new ones:
 | **Model Risk Manager / Validator (FSI)**       | Independent model validation per SR 11‑7/ECB TRIM‑style frameworks.                                                                                                          | **Model Risk Lead**                                              | Extends validation to agent workflows: intended use, limitations, off‑label prohibitions, scenario tests, and rollback readiness; oversees third‑party agent providers.                                                             | Verification Engineer                                                                        |
 | **Internal Audit (IT/Model)**                  | Independent assurance; control effectiveness.                                                                                                                                | **Model Risk Lead**                                              | Sets evidence requirements (evaluations, logs, lineage) and challenge function for agentized lines; coordinates with regulators and external auditors.                                                                              | —                                                                                            |
 | **Support Ops (L1/L2)**                        | Triage, playbooks, escalations.                                                                                                                                              | **Agent SRE/Observer**                                           | Operates incident taxonomy for agents; tunes fallbacks/blacklists; manages escalation ratios and human‑in‑the‑loop placement.                                                                                                       | Prompt & Policy Engineer                                                                     |
-
 {: .table .table-striped .table-hover}
 
 #### New Role “Cards” (What These People Actually Do)
@@ -2893,8 +2881,6 @@ Short, concrete descriptions you can drop straight into role charters.
 - **Model Risk Lead** — Provides independent governance of model/agent
   deployments: intended use, limitations, scenario tests, monitoring, and
   rollback readiness.
-
-
 
 #### Practical Transition: How to Get from Today’s Org to This One
 
@@ -3571,6 +3557,7 @@ A standardized report that sits beside financials:
 | **Network**        | NCI (density/reciprocity); service participation    | ↑ QoQ                    |
 | **Sustainability** | Energy/carbon per verified outcome                  | ↓ YoY                    |
 | **Safety**         | Escape rate; Severity‑1 MTTR                        | ≤0.5%; ≤ 2hours          |
+{: .table .table-striped .table-hover}
 
 All metrics must be auditable and tied to verifiers.
 
