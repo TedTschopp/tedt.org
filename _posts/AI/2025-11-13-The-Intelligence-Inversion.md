@@ -99,9 +99,84 @@ no_toc: true
 }
 </style>
 
+<!-- Article styling for improved readability -->
+<style>
+
+/* Improved readability spacing */
+article p {
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}
+
+/* Stronger heading hierarchy */
+article h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 700;
+  border-bottom: 2px solid rgba(0,123,255,0.2);
+  padding-bottom: 0.5rem;
+}
+
+article h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+article h4 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+  color: rgba(0,123,255,1);
+}
+
+/* Table breathing room */
+article table {
+  margin: 2rem 0;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* List spacing */
+article ul, article ol {
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+article li {
+  margin-bottom: 0.5rem;
+}
+
+/* Blockquote visual distinction */
+article blockquote {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  background: rgba(0,123,255,0.03);
+  border-left: 4px solid rgba(0,123,255,0.4);
+}
+
+/* Section dividers for major breaks */
+article hr {
+  margin: 3rem 0;
+  border: none;
+  border-top: 2px solid rgba(0,123,255,0.15);
+}
+
+/* Executive Summary visual separation */
+article > div:first-of-type {
+  background: rgba(242,188,87,0.05);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+</style>
+
 ## Executive Summary
 
 The first 1,000 days of AI validated the path from science through engineering and into production; the **next** 1,000 will be won on **economics, business strategy, and user trust**.
+
+---
 
 ### Bottom Line Up Front
 
@@ -179,6 +254,8 @@ Run the company on **disprovable targets**, not hope:
 - **Safety:** **MTTR ≤2 hours** sustained for Sev‑1; public post‑mortem culture internally.
 
 **Testbeds to stand up:** enterprise claims, support, code generation (side‑by‑side designs); manipulation sandbox (voice, timing, phrasing); poisoning & drift challenges; portability bake‑offs.
+
+---
 
 ### Human Flourishing Is a Business Requirement
 
@@ -518,6 +595,8 @@ Outside your four walls, several signals confirmed that the shift was real:
 - **Case evidence.** Klarna’s AI assistant handling **≅⅔ of chats** and ≅**700 FTE‑equivalent workloads** in early 2024 (with later rebalancing) illustrated what **agent‑first + governance trade‑offs** look like in production, not just in pilots.
 - **Policy hardening.** The **EU AI Act** went live Aug 2024; **NIST AI RMF** became a de facto reference for U.S. risk programs. Logged decisions, provenance, and incident response moved from “nice to have” to expectation.
 - **Cost curve.** Vendor pricing documents across 2023–2025 showed step‑downs (DevDay cuts, GPT‑4o and mini pricing), closing viability gaps for agentic automation and making < $1 a day digital workers credible at scale.
+
+---
 
 ### What Didn’t Happen (Yet)
 
@@ -1376,6 +1455,8 @@ This chapter lives at the intersection of economics and architecture. Different 
 - Model **capacity, cost, and risk** with agents in the loop:
   - What happens to unit economics if 50–80% of a process is automated?
   - Where do you need new controls, audits, and escalation paths?
+---
+
 - Treat **policy and social response** as scenario variables, not constants. Don’t assume external safety nets will fully stabilize your workforce.
 
 #### For Product Owners
@@ -1565,6 +1646,8 @@ Practical siting heuristics:
 - **Prefer firm, proximate capacity** - Existing or uprated nuclear, hydro, or efficient gas; substations with documented headroom.
 - **Avoid water‑stressed basins** - Unless you can operate in **water‑light modes** (air‑side economization, non‑potable sources).
 - **Exploit climate where possible** - Cool, dry climates lower mechanical loads; warm‑water loops plus free cooling broaden siting options.
+---
+
 - **Co‑locate with heat sinks** - District heating or industrial processes that can absorb warm water and turn waste heat into a product.
 
 #### Procurement: from annual RECs to 24/7 CFE portfolios
@@ -2399,6 +2482,8 @@ We’ll cover:
 7. How this sets up a concrete 1,000‑day **playbook and milestone plan** in the
    next chapter
 
+---
+
 ### The New Core Roles in an Agent‑First Enterprise
 
 In an intelligence‑inverted firm, your critical path is no longer “human →
@@ -2908,6 +2993,8 @@ TODO: I am here on my editing
 - Function schema; idempotency; auth method
 - Rate limits; policy checks; side‑effects
 - Error taxonomy; retries/backoff; audit fields
+
+---
 
 #### Model/Agent Card
 
