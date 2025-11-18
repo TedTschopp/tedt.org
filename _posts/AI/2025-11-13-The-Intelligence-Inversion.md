@@ -116,6 +116,8 @@ article h2 {
   font-weight: 700;
   border-bottom: 2px solid rgba(0,123,255,0.2);
   padding-bottom: 0.5rem;
+  font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 2.2;
 }
 
 article h3 {
@@ -175,8 +177,6 @@ article > div:first-of-type {
 ## Executive Summary
 
 The first 1,000 days of AI validated the path from science through engineering and into production; the **next** 1,000 will be won on **economics, business strategy, and user trust**.
-
----
 
 ### Bottom Line Up Front
 
@@ -254,8 +254,6 @@ Run the company on **disprovable targets**, not hope:
 - **Safety:** **MTTR ≤2 hours** sustained for Sev‑1; public post‑mortem culture internally.
 
 **Testbeds to stand up:** enterprise claims, support, code generation (side‑by‑side designs); manipulation sandbox (voice, timing, phrasing); poisoning & drift challenges; portability bake‑offs.
-
----
 
 ### Human Flourishing Is a Business Requirement
 
@@ -539,12 +537,10 @@ Most organizations moved through three waves:
 1. **Copilot pilots**
    - Embedded in Office, IDEs, search, and knowledge tools.
    - Goal: individual productivity and experimentation.
-
 2. **Verified workflows**
    - RAG systems + rules + eval checks wrapped around existing processes.
    - Goal: reduce drafting, summarization, triage, and search effort.
    - Success criteria: measurable accuracy under human‑in‑the‑loop review.
-
 3. **Agent‑first slices**
    - Agents in the **critical path** for slices of support, adjudication, code generation, and structured drafting.
    - Promotion gates: **verification coverage ≥95%** and **escape rate ≤0.5%** over 90 days.
@@ -596,9 +592,7 @@ Outside your four walls, several signals confirmed that the shift was real:
 - **Policy hardening.** The **EU AI Act** went live Aug 2024; **NIST AI RMF** became a de facto reference for U.S. risk programs. Logged decisions, provenance, and incident response moved from “nice to have” to expectation.
 - **Cost curve.** Vendor pricing documents across 2023–2025 showed step‑downs (DevDay cuts, GPT‑4o and mini pricing), closing viability gaps for agentic automation and making < $1 a day digital workers credible at scale.
 
----
-
-### What Didn’t Happen (Yet)
+### What Hasn't Happened Yet
 
 Equally important are the things that **did not** fully materialize by Day 1,000:
 
@@ -632,30 +626,18 @@ Static tests established that **“IQ” was no longer the primary bottleneck**.
 
 More relevant for enterprises were benchmarks that look like jobs:
 
-- **SWE‑bench / PR‑style arenas (e.g., prarena.ai).**
-  Evaluate coding agents on real issues and pull requests: Does the PR compile? Does it get merged? Does it reduce bugs? This is **software work**, not just puzzles.
-
-- **Web and app arenas.**
-  Agents operate browsers and apps to complete multi‑step tasks (forms, navigation, transactions) under evaluation, surfacing brittleness in tool use and state management.
-
-- **CRM and enterprise task arenas.**
-  Agents are tested on complex CRM workflows—sales, service, CPQ—measuring whether they can operate within realistic enterprise systems and policies.
+- **SWE‑bench / PR‑style arenas (e.g., prarena.ai).** - Evaluate coding agents on real issues and pull requests: Does the PR compile? Does it get merged? Does it reduce bugs? This is **software work**, not just puzzles.
+- **Web and app arenas.** - Agents operate browsers and apps to complete multi‑step tasks (forms, navigation, transactions) under evaluation, surfacing brittleness in tool use and state management.
+- **CRM and enterprise task arenas.** - Agents are tested on complex CRM workflows—sales, service, CPQ—measuring whether they can operate within realistic enterprise systems and policies.
 
 #### Live‑fire agent arenas
 
 Finally, a set of **“in‑the‑wild” arenas** tested agents in live or semi‑live environments:
 
-- **nof1.ai**
-  AI trading agents operate with real capital under fixed rules, exposing **risk profiles, holding times, and failure modes** in non‑stationary markets.
-
-- **Prophet Arena**
-  AI and human forecasters compete on **real prediction markets**, with time‑stamped probability forecasts forming a long‑horizon calibration and reasoning test.
-
-- **Time Horizons & The Village (The AI Digest)**
-  Experiments probing **how far into the future agents can plan** before reliability collapses, and how multi‑agent “villages” coordinate, cooperate, or misbehave under open‑ended objectives.
-
-- **EQBench live runs (eqbench.com)**
-  Ongoing evaluations of models’ behavior in emotionally charged, interpersonal scenarios—useful for HR, coaching, mental health triage, and customer support applications.
+- **nof1.ai** - AI trading agents operate with real capital under fixed rules, exposing **risk profiles, holding times, and failure modes** in non‑stationary markets.
+- **Prophet Arena** - AI and human forecasters compete on **real prediction markets**, with time‑stamped probability forecasts forming a long‑horizon calibration and reasoning test.
+- **Time Horizons & The Village (The AI Digest)** - Experiments probing **how far into the future agents can plan** before reliability collapses, and how multi‑agent “villages” coordinate, cooperate, or misbehave under open‑ended objectives.
+- **EQBench live runs (eqbench.com)** - Ongoing evaluations of models’ behavior in emotionally charged, interpersonal scenarios—useful for HR, coaching, mental health triage, and customer support applications.
 
 These ecosystems collectively answered the question: *“Can an agent own multi‑step, long‑horizon workflows under uncertainty and still meet human‑grade SLAs?”*
 
@@ -666,20 +648,20 @@ The answer, by August 2025, is: **yes, in narrow domains, under strong verificat
 By **Aug 26, 2025**, a typical early‑adopter Large Enterprise looked roughly like this:
 
 - **Where agents “stick”:**
-  - L1 support and triage,
-  - Claims and back‑office adjudication,
-  - Code Generation and code review assistance,
-  - Structured drafting (policies, briefs, customer communications),
-  - Sales operations and CRM hygiene.
+  - L1 support and triage
+  - Claims and back‑office adjudication
+  - Code Generation and code review assistance
+  - Structured drafting (policies, briefs, customer communications)
+  - Sales operations and CRM hygiene
 - **Thresholds that predict scale:**
-  - **Verifier coverage ≥95%**,
-  - **Escape rate ≤0.5%**,
-  - **Autonomy Index ≥70%** (share of tasks completed without human edits),
-  - **MTTR ≤2 hours** for Severity‑1 incidents,
-  - **Portability delta ≤2 percentage points** across at least two model providers.
+  - **Verifier coverage ≥95%**
+  - **Escape rate ≤0.5%**
+  - **Autonomy Index ≥70%** (share of tasks completed without human edits)
+  - **MTTR ≤2 hours** for Severity‑1 incidents
+  - **Portability delta ≤2 percentage points** across at least two model providers
 - **Board‑level KPIs added since 2023:**
-  - **Energy per verified outcome (ECI)**,
-  - **24/7 CFE‑hour coverage**,
+  - **Energy per verified outcome (ECI)**
+  - **24/7 CFE‑hour coverage**
   - **Portability delta** across providers
   - **Manipulation flag rate** in customer‑facing journeys
 
@@ -1455,7 +1437,6 @@ This chapter lives at the intersection of economics and architecture. Different 
 - Model **capacity, cost, and risk** with agents in the loop:
   - What happens to unit economics if 50–80% of a process is automated?
   - Where do you need new controls, audits, and escalation paths?
----
 
 - Treat **policy and social response** as scenario variables, not constants. Don’t assume external safety nets will fully stabilize your workforce.
 
@@ -1646,7 +1627,6 @@ Practical siting heuristics:
 - **Prefer firm, proximate capacity** - Existing or uprated nuclear, hydro, or efficient gas; substations with documented headroom.
 - **Avoid water‑stressed basins** - Unless you can operate in **water‑light modes** (air‑side economization, non‑potable sources).
 - **Exploit climate where possible** - Cool, dry climates lower mechanical loads; warm‑water loops plus free cooling broaden siting options.
----
 
 - **Co‑locate with heat sinks** - District heating or industrial processes that can absorb warm water and turn waste heat into a product.
 
@@ -2482,8 +2462,6 @@ We’ll cover:
 7. How this sets up a concrete 1,000‑day **playbook and milestone plan** in the
    next chapter
 
----
-
 ### The New Core Roles in an Agent‑First Enterprise
 
 In an intelligence‑inverted firm, your critical path is no longer “human →
@@ -2993,8 +2971,6 @@ TODO: I am here on my editing
 - Function schema; idempotency; auth method
 - Rate limits; policy checks; side‑effects
 - Error taxonomy; retries/backoff; audit fields
-
----
 
 #### Model/Agent Card
 
