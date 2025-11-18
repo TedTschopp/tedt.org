@@ -183,7 +183,7 @@ article p {
   }
 
   .article h4 {
-
+    /* color: var(--bs-accent1); */
   }
 
   .article blockquote {
@@ -202,7 +202,7 @@ article p {
 }
 
 [data-bs-theme="dark"] .article h4 {
-  color: var(--bs-accent1);
+  /* color: var(--bs-accent1); */
 }
 
 [data-bs-theme="dark"] .article blockquote {
