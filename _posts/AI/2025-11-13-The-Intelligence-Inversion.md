@@ -350,7 +350,7 @@ The **context window** is the model’s working memory: how many tokens it can c
 
 Over the first 1,000 days of generative AI, this expanded from **less than a meeting** to **multiple human days**:
 
-|             Model | Year | Context Size (tokens) | Approx. words^*^ | Human speech equivalent^†^ | Human thought equivalent^‡^ |
+|             Model | Year | Context Size (tokens) | Approximate number of Words* | Human speech equivalent† | Human thought equivalent‡ |
 |------------------:|------|:---------------------:|:--------------:|:------------------------:|:-------------------------:|
 |             GPT‑1 | 2018 |          512          |      ≅400      |         ≅35 min          |          ≅10 min          |
 |             GPT‑2 | 2019 |         1,024         |      ≅800      |          ≅1.2 h          |          ≅20 min          |
@@ -592,14 +592,12 @@ By **Aug 26, 2025**, a typical early‑adopter Large Enterprise looked roughly l
   - Code Generation and code review assistance,
   - Structured drafting (policies, briefs, customer communications),
   - Sales operations and CRM hygiene.
-
 - **Thresholds that predict scale:**
   - **Verifier coverage ≥95%**,
   - **Escape rate ≤0.5%**,
   - **Autonomy Index ≥70%** (share of tasks completed without human edits),
   - **MTTR ≤2 hours** for Severity‑1 incidents,
   - **Portability delta ≤2 percentage points** across at least two model providers.
-
 - **Board‑level KPIs added since 2023:**
   - **Energy per verified outcome (ECI)**,
   - **24/7 CFE‑hour coverage**,
@@ -612,17 +610,10 @@ These metrics and thresholds became the **de facto maturity model** for enterpri
 
 Taken together, the first 1,000 days established four facts that anchor the rest of this white paper:
 
-1. **Bandwidth parity (and beyond).**
-   In terms of **tokens/second** and **tokens in context**, models now operate in the same order of magnitude as human speech and thought—and can be replicated across thousands of “digital workers” at once.
-
-2. **Task‑level competence parity.**
-   On exams, coding benchmarks, and many structured tasks, frontier models match or exceed median professional performance. The **IQ question is largely settled** for a wide set of cognitive tasks.
-
-3. **Agentic viability under constraints.**
-   Agentic and live‑fire arenas show that agents can own multi‑step, long‑horizon workflows—**if and only if** they are surrounded by verifiers, tool boundaries, and incident response.
-
-4. **Economics that change the production function.**
-   A digital worker‑day of ≅1,000,000 tokens now costs **well under $1 in raw inference** for mini‑class models and low single digits for frontier models. Once verification is in place, the **marginal value of average human cognitive labor** in those workflows trends toward **≅$0**, and can become **negative** where humans introduce variance, latency, or error.
+1. **Bandwidth parity (and beyond).** - In terms of **tokens/second** and **tokens in context**, models now operate in the same order of magnitude as human speech and thought—and can be replicated across thousands of “digital workers” at once.
+2. **Task‑level competence parity.** - On exams, coding benchmarks, and many structured tasks, frontier models match or exceed median professional performance. The **IQ question is largely settled** for a wide set of cognitive tasks.
+3. **Agentic viability under constraints.** - Agentic and live‑fire arenas show that agents can own multi‑step, long‑horizon workflows—**if and only if** they are surrounded by verifiers, tool boundaries, and incident response.
+4. **Economics that change the production function.** - A digital worker‑day of ≅1,000,000 tokens now costs **well under $1 in raw inference** for mini‑class models and low single digits for frontier models. Once verification is in place, the **marginal value of average human cognitive labor** in those workflows trends toward **≅$0**, and can become **negative** where humans introduce variance, latency, or error.
 
 The question for the next 1,000 days is no longer: *“Are the models good enough?”*
 
@@ -664,14 +655,9 @@ This chapter looks at:
 
 The next 1,000 days are shaped by three overlapping shifts:
 
-1. **From pattern matching to verifiable reasoning**
-   Reinforced learning with verifiable rewards (RLVR), self‑play, and prompt‑time steering techniques are turning “sometimes brilliant, sometimes wrong” LLMs into **more systematically reliable reasoners** in domains where we can check answers.
-
-2. **From stateless chat to long‑term memory and identity**
-   Memory architectures, memory‑trained agents, and cheap long context give us assistants and agents that **persist across months or years**, not just a single conversation.
-
-3. **From “copilots in apps” to “agents in systems”**
-   Tool‑using, planning‑capable agents will increasingly orchestrate real workflows across CRMs, ERPs, ITSM, CI/CD, and robotics systems, with **governed autonomy** in bounded domains.
+1. **From pattern matching to verifiable reasoning** - Reinforced learning with verifiable rewards (RLVR), self‑play, and prompt‑time steering techniques are turning “sometimes brilliant, sometimes wrong” LLMs into **more systematically reliable reasoners** in domains where we can check answers.
+2. **From stateless chat to long‑term memory and identity** - Memory architectures, memory‑trained agents, and cheap long context give us assistants and agents that **persist across months or years**, not just a single conversation.
+3. **From “copilots in apps” to “agents in systems”** - Tool‑using, planning‑capable agents will increasingly orchestrate real workflows across CRMs, ERPs, ITSM, CI/CD, and robotics systems, with **governed autonomy** in bounded domains.
 
 As these capabilities mature, **the limit moves upstream**:
 
@@ -848,7 +834,6 @@ The architecture question becomes: **how will your operational systems expose th
   - Break down goals
   - Plan across multiple steps
   - Decide when not to act
-
 - The design kit stabilizes around:
   - Planner
   - Tool router
@@ -861,7 +846,6 @@ The architecture question becomes: **how will your operational systems expose th
   - Ticket triage and resolution.
   - Common IT operations.
   - Routine finance and revenue operations.
-
 - Architecturally:
   - Treat agents as **services** with SLOs, logs, and policies.
   - Provide **clean, well‑documented tool APIs**; avoid letting agents touch systems via brittle screen‑scraping or ad‑hoc scripts.
@@ -894,7 +878,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 
 ##### What Actually Ships
 
-- **Reasoning modes** and Reinforced learning with verifiable rewards/self‑play recipes integrated into major commercial models, especially for math, code,   and structured decision‑making.
+- **Reasoning modes** and Reinforced learning with verifiable rewards/self‑play recipes integrated into major commercial models, especially for math, code, and structured decision‑making.
 
 - First **serious long‑term memory features** in mainstream assistants:
   - Project‑level memories, preferences, simple “show/forget” controls.
