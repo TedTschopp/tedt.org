@@ -111,13 +111,12 @@ article p {
 /* Stronger heading hierarchy */
 .article h2 {
   margin-top: 3rem;
-  margin-bottom: 1.5rem;
-  font-size: 2rem;
-  font-weight: 700;
+  margin-bottom: 0rem;
+  padding-bottom: 0.0rem;
+  font-size: 6rem;
+  font-weight: 100;
   border-bottom: 2px solid var(--bs-accent1-border-subtle);
-  padding-bottom: 0.5rem;
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 2.2;
 }
 
 .article h3 {
@@ -131,7 +130,6 @@ article p {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
-  color: var(--bs-accent1);
 }
 
 /* Table breathing room */
