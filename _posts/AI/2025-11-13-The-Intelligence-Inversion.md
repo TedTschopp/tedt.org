@@ -87,8 +87,6 @@ no_toc: true
   margin-left: 1.5rem;
   margin-bottom: 1rem;
   clear: right;
-  text-align: justify;
-  text-justify: auto;
 }
 
 @media (max-width: 768px) {
@@ -116,11 +114,14 @@ article p {
   padding-bottom: 0.0rem;
   font-size: 6rem;
   font-weight: 100;
-  border-bottom: 2px solid var(--bs-accent1-border-subtle);
-  border-bottom-width: 2px;
+  border-bottom: 1px solid var(--bs-accent1-border-subtle);
+  border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--bs-accent1-border-subtle);
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  direction: rtl; 
+  text-align: left;
+
 }
 
 .article h3 {
