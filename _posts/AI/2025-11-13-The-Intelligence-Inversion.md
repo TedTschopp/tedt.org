@@ -109,68 +109,106 @@ article p {
 }
 
 /* Stronger heading hierarchy */
-article h2 {
+.article h2 {
   margin-top: 3rem;
   margin-bottom: 1.5rem;
   font-size: 2rem;
   font-weight: 700;
-  border-bottom: 2px solid rgba(0,123,255,0.2);
+  border-bottom: 2px solid var(--bs-accent1-border-subtle);
   padding-bottom: 0.5rem;
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 2.2;
 }
 
-article h3 {
+.article h3 {
   margin-top: 2.5rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-article h4 {
+.article h4 {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
-  color: rgba(0,123,255,1);
+  color: var(--bs-accent1);
 }
 
 /* Table breathing room */
-article table {
+.article table {
   margin: 2rem 0;
-  border: 1px solid rgba(0,0,0,0.1);
+  border: var(--bs-border-width) solid var(--bs-border-color);
 }
 
 /* List spacing */
-article ul, article ol {
+.article ul, .article ol {
   margin-bottom: 1.5rem;
   line-height: 1.7;
 }
 
-article li {
+.article li {
   margin-bottom: 0.5rem;
 }
 
 /* Blockquote visual distinction */
-article blockquote {
+.article blockquote {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: rgba(0,123,255,0.03);
-  border-left: 4px solid rgba(0,123,255,0.4);
+  background: var(--bs-accent1-bg-subtle);
+  border-left: 4px solid var(--bs-accent1-border-subtle);
 }
 
 /* Section dividers for major breaks */
-article hr {
+.article hr {
   margin: 3rem 0;
   border: none;
-  border-top: 2px solid rgba(0,123,255,0.15);
+  border-top: 2px solid var(--bs-accent1-border-subtle);
 }
 
 /* Executive Summary visual separation */
-article > div:first-of-type {
-  background: rgba(242,188,87,0.05);
+.article > div:first-of-type {
+  background: var(--bs-accent2-bg-subtle);
   padding: 1.5rem;
-  border-radius: 8px;
+  border-radius: var(--bs-border-radius-lg);
   margin-bottom: 2rem;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+  .article h2 {
+    border-bottom-color: var(--bs-accent1-border-subtle);
+  }
+  
+  .article h4 {
+    color: var(--bs-accent1);
+  }
+  
+  .article blockquote {
+    background: var(--bs-accent1-bg-subtle);
+    border-left-color: var(--bs-accent1-border-subtle);
+  }
+  
+  .article hr {
+    border-top-color: var(--bs-accent1-border-subtle);
+  }
+}
+
+/* Explicit dark mode when data-bs-theme="dark" */
+[data-bs-theme="dark"] .article h2 {
+  border-bottom-color: var(--bs-accent1-border-subtle);
+}
+
+[data-bs-theme="dark"] .article h4 {
+  color: var(--bs-accent1);
+}
+
+[data-bs-theme="dark"] .article blockquote {
+  background: var(--bs-accent1-bg-subtle);
+  border-left-color: var(--bs-accent1-border-subtle);
+}
+
+[data-bs-theme="dark"] .article hr {
+  border-top-color: var(--bs-accent1-border-subtle);
 }
 </style>
 
