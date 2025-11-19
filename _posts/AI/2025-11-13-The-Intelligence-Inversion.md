@@ -125,17 +125,16 @@ article p {
 }
 
 .article h3 {
-  margin-top: 4rem;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 4rem;
   font-weight: 600;
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
 
 .article h4 {
-  margin-top: 2rem;
   margin-bottom: 0.75rem;
+  font-size: 2rem;
   font-weight: 600;
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
