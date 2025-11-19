@@ -23,7 +23,7 @@ The homepage (`_layouts/default.html` + includes) assembles:
 Permalink style: `/:title/`. Posts use rich front matter (images, credits, bullets, feature flags like `no_toc`, `mermaid`). Maintain consistent naming (`image-alt`, `image-credits-artist`, etc.). If you add a new flag, update README front‑matter section and (if globally referenced) add guarded logic (`{% if page.flag %}`) near the relevant include. Avoid bloating layouts with per‑page special cases—prefer small includes.
 
 ### 5. Performance & Build Workflow
-Local build: `bundle exec jekyll serve` (or the provided VS Code task). CI uses GitHub Actions (`site-ci.yml`) running: build, feed integrity, Mastodon audits, HTML Proofer, security scans. Keep Gemfile minimal; only add gems when absolutely required. Ruby conditional logic in `Gemfile` enforces secure transitive versions on newer Rubies—preserve it.
+Local build: `bundle exec jekyll serve` (or the provided VS Code task "Clean build + HTMLProofer (internal)"). Production builds use `JEKYLL_ENV=production`. CI uses GitHub Actions (`.github/workflows/deploy.yml`) running: build with heartbeat monitoring, artifact upload, deterministic deploy. Quick QA gate: `make qa` (normalize dates, build, feed checks, Mastodon validation). Full validation: `make all` (adds HTML Proofer). Keep Gemfile minimal; only add gems when absolutely required. Ruby conditional logic in `Gemfile` enforces secure transitive versions on newer Rubies (>=3.1)—preserve it.
 
 ### 6. Link & HTML Integrity
 HTML Proofer runs locally via the build task (see failing external links in task output). When editing templates, prefer `post.url | absolute_url` for links and ensure internal anchors exist before referencing them. Don’t suppress proofer failures with blanket ignores; fix root causes or add narrowly scoped exceptions with comments.
@@ -33,33 +33,73 @@ Scripts are single‑purpose utilities: auditing categories, syncing Mastodon ID
 * Search for an existing one with similar output.
 * If extending, keep original CLI arguments/backwards compatibility unless intentionally versioning.
 * Add usage comments at top (shebang + docstring). Do not hardcode absolute local paths; assume repo root execution.
+* Python scripts use type hints and graceful yaml fallback; see `backfill_masto_posts.py` as reference pattern.
+* Ruby scripts follow Jekyll plugin conventions when manipulating site data.
 
 ### 8. Styling & Assets
 SCSS lives under `_sass/`; aggregated includes are managed via `_includes/assets/all-css-includes.html`. New global styles belong in SCSS partials, not inline `<style>` blocks (except tiny, data‑driven helper styles like carousel control tweaks). Reuse utility classes when expanding components.
 
-### 9. Safe Change Principles
+### 9. Plugin System (`_plugins/`)
+Custom Jekyll plugins extend build behavior:
+* `memory_probe.rb`: Environment-gated RSS monitoring (enable with `MEM_PROBE=1`). Never remove probe checkpoints—they're used for performance regression detection (ADR 0008).
+* `category_recent_index.rb`: Builds `recent_by_category` cache to avoid repeated `site.posts` scans. Auto-runs during build if cache missing.
+* `periodic_gc.rb`: Optional forced GC (enable with `FORCE_PERIODIC_GC=1`). Use only for diagnostics.
+* `lazy_images_filter.rb`, `safe_sort_filter.rb`: Liquid filters for template convenience.
+* Do not add plugins incompatible with GitHub Pages safe mode unless deploying via separate CI workflow (which this site does).
+
+### 9. Plugin System (`_plugins/`)
+Custom Jekyll plugins extend build behavior:
+* `memory_probe.rb`: Environment-gated RSS monitoring (enable with `MEM_PROBE=1`). Never remove probe checkpoints—they're used for performance regression detection (ADR 0008).
+* `category_recent_index.rb`: Builds `recent_by_category` cache to avoid repeated `site.posts` scans. Auto-runs during build if cache missing.
+* `periodic_gc.rb`: Optional forced GC (enable with `FORCE_PERIODIC_GC=1`). Use only for diagnostics.
+* `lazy_images_filter.rb`, `safe_sort_filter.rb`: Liquid filters for template convenience.
+* Do not add plugins incompatible with GitHub Pages safe mode unless deploying via separate CI workflow (which this site does).
+
+### 10. Safe Change Principles
 * Touch only related files; avoid cascading refactors.
 * Preserve existing Liquid control flow; when altering loops add a Liquid comment explaining the constraint (e.g., reason for exclusion filters).
 * Never introduce placeholders or dummy content into rendered HTML.
 * If a change might widen query scope (e.g., scanning all `site.posts`), confirm it short‑circuits after meeting display limits.
 
-### 10. Accessibility & Semantics
+### 10. Safe Change Principles
+* Touch only related files; avoid cascading refactors.
+* Preserve existing Liquid control flow; when altering loops add a Liquid comment explaining the constraint (e.g., reason for exclusion filters).
+* Never introduce placeholders or dummy content into rendered HTML.
+* If a change might widen query scope (e.g., scanning all `site.posts`), confirm it short‑circuits after meeting display limits.
+
+### 11. Accessibility & Semantics
 Images require meaningful `alt` (fallback to title if absent). Carousels must retain ARIA labels already present. Do not remove visually hidden instructional text. When adding interactive controls, mirror existing accessibility patterns.
 
-### 11. Adding Categories or Heroes
+### 11. Accessibility & Semantics
+Images require meaningful `alt` (fallback to title if absent). Carousels must retain ARIA labels already present. Do not remove visually hidden instructional text. When adding interactive controls, mirror existing accessibility patterns.
+
+### 12. Adding Categories or Heroes
 Category: add an entry to `category_registry.yml` (slug: { title, raw_names, palette, image, description, ... }). Ensure unique slug, define both subtitle & description if shown on carousel.
 Hero: add to YAML + assets; no template change needed.
 
-### 12. Common Pitfalls to Avoid
+### 12. Adding Categories or Heroes
+Category: add an entry to `category_registry.yml` (slug: { title, raw_names, palette, image, description, ... }). Ensure unique slug, define both subtitle & description if shown on carousel.
+Hero: add to YAML + assets; no template change needed.
+
+### 13. Common Pitfalls to Avoid
 * Breaking front matter with unescaped quotes → site renders raw (no layout).
 * Adding broad `slice` limits that hide older but valid content.
 * Introducing inline JS where a reusable include exists.
 * Forgetting to use `| strip_html` before truncation (causes layout glitches).
 
-### 13. Commit & PR Guidance
+### 13. Common Pitfalls to Avoid
+* Breaking front matter with unescaped quotes → site renders raw (no layout).
+* Adding broad `slice` limits that hide older but valid content.
+* Introducing inline JS where a reusable include exists.
+* Forgetting to use `| strip_html` before truncation (causes layout glitches).
+
+### 14. Commit & PR Guidance
 Atomic commits, clear imperative messages ("Fix blog loop exclusion for Folklore overlap"). If modifying build or category registry, mention potential impact on homepage density.
 
-### 14. When Unsure
+### 14. Commit & PR Guidance
+Atomic commits, clear imperative messages ("Fix blog loop exclusion for Folklore overlap"). If modifying build or category registry, mention potential impact on homepage density.
+
+### 15. When Unsure
 Prefer inspecting similar existing include. If introducing a new pattern, isolate it in `_includes/utility/` or a new logically named subfolder and document at top of file.
 
 Stay minimal, data‑driven, and reversible.
@@ -184,4 +224,96 @@ Use this quick pass before opening a PR:
 10. Security / Dependencies: No new gems unless justified; pinned versions respected.
 
 If any item fails, iterate before submitting to keep review cycles short and focused.
+
+### 23. Key Development Workflows
+
+**Local Development:**
+```bash
+bundle install                           # First-time setup
+bundle exec jekyll serve                 # Live reload dev server
+make qa                                  # Quick validation (dates, feeds, Mastodon)
+make all                                 # Full validation including HTML Proofer
+```
+
+**Available VS Code Tasks:**
+* "Clean build + HTMLProofer (internal)" - Full build with link checking
+* "Jekyll clean prod build (tee log)" - Production build with logging
+
+**CI/CD Pipeline:**
+1. `deploy.yml` - Main deployment workflow
+   - Builds with heartbeat monitoring (prevents timeout)
+   - Ruby 3.2 with platform locking
+   - Uploads artifact and deploys to GitHub Pages
+2. `mastodon-feed.yml` - Automated social posting
+3. `docs-markdown-toc.yml` - README TOC validation
+
+**Testing Categories:**
+* Feed integrity: `ruby tests/check_feed_integrity.rb`
+* Mastodon validation: `ruby tests/validate_mastodon_feed.rb`
+* Legacy key check: `ruby tests/check_no_legacy_siteurl.rb`
+* Image paths: `ruby tests/check_image_paths.rb`
+* Alt text audit: `ruby tests/check_image_alt_text.rb`
+
+**Common Diagnostic Commands:**
+```bash
+# Memory profiling during build
+MEM_PROBE=1 bundle exec jekyll build
+
+# Force garbage collection (debug only)
+FORCE_PERIODIC_GC=1 bundle exec jekyll build
+
+# Skip external link checks (faster local validation)
+SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --check-html --allow-missing-href
+```
+
+### 24. Slides & Reveal.js Integration
+
+**Critical: No separate `slides` collection.** All slide decks are posts in `_posts/Slides/`:
+* Use `layout: reveal-integrated` in front matter
+* Set explicit `permalink: /slides/{slug}/`
+* Filter templates check `relative_path` containing `_posts/Slides/`
+* Never reference `site.slides` - it doesn't exist (legacy approach deprecated per ADR 0012)
+
+**Slide-specific front matter:**
+* `topics`: Array for client-side filtering
+* `preview_html`: Custom card preview (overrides auto-extraction)
+* `aspect_ratio`: One of `16:9`, `16:10`, `4:3`
+* `deck-style`: Palette variant (`light`, `dark`, `accent-blue`, `accent-orange`, `accent-gold`)
+
+**Styling locations:**
+* Global theme: `_sass/components/_slides-theme.scss`
+* Archetypes (reusable patterns): `_sass/components/_slides-archetypes.scss`
+* Slide includes: `_includes/slides/` (section-break, filter-controls, architecture-metadata, meta-footer)
+
+### 25. Mastodon Integration Patterns
+
+The site auto-syncs content to Mastodon using a sophisticated backfill system:
+
+**Key scripts:**
+* `backfill_masto_posts.py` - Creates toots for posts lacking `mastodon-post-id`
+* `sync_masto_ids_from_cache.py` - Updates front matter from cache
+* `dedupe_masto_statuses.py` - Removes duplicate toots
+* `update_masto_frontmatter.py` - Batch front matter updates
+
+**Front matter field:** `mastodon-post-id: "12345678"` - Add to enable comment integration
+
+**Cache file:** `cache/jsonfeed-to-mastodon.json` - Canonical toot ID registry
+
+**Workflow safeguards:**
+* Dry-run by default (use `--write` flag for live posting)
+* Requires `MASTODON_TOKEN` environment variable
+* Rate limiting with configurable delays (`--rate` flag)
+* Date filtering (`--since` flag) to process recent content only
+
+**Example usage:**
+```bash
+# Dry-run: see what would be posted
+python3 _code/backfill_masto_posts.py
+
+# Actually post with 8-second delays
+python3 _code/backfill_masto_posts.py --write --rate 8
+
+# Only process content from 2024 onwards
+python3 _code/backfill_masto_posts.py --write --since 2024-01-01 --limit 10
+```
 
