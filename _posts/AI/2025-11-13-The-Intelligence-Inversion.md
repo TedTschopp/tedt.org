@@ -87,7 +87,6 @@ no_toc: true
   margin-left: 1.5rem;
   margin-bottom: 1rem;
   clear: right;
-  text-justify: auto;
 }
 
 @media (max-width: 768px) {
@@ -115,8 +114,14 @@ article p {
   padding-bottom: 0.0rem;
   font-size: 6rem;
   font-weight: 100;
-  border-bottom: 2px solid var(--bs-accent1-border-subtle);
+  border-bottom: 1px solid var(--bs-accent1-border-subtle);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--bs-accent1-border-subtle);
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  direction: rtl; 
+  text-align: left;
+
 }
 
 .article h3 {
@@ -176,16 +181,16 @@ article p {
   .article h2 {
     border-bottom-color: var(--bs-accent1-border-subtle);
   }
-  
+
   .article h4 {
-    color: var(--bs-accent1);
+    /* color: var(--bs-accent1); */
   }
-  
+
   .article blockquote {
     background: var(--bs-accent1-bg-subtle);
     border-left-color: var(--bs-accent1-border-subtle);
   }
-  
+
   .article hr {
     border-top-color: var(--bs-accent1-border-subtle);
   }
@@ -197,7 +202,7 @@ article p {
 }
 
 [data-bs-theme="dark"] .article h4 {
-  color: var(--bs-accent1);
+  /* color: var(--bs-accent1); */
 }
 
 [data-bs-theme="dark"] .article blockquote {
