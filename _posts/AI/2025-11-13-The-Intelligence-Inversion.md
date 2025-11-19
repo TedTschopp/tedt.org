@@ -139,6 +139,15 @@ article p {
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.article h5 {
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
 /* Table breathing room */
 .article table {
   margin: 2rem 0;
