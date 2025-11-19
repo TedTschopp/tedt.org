@@ -119,22 +119,25 @@ article p {
   border-bottom-style: solid;
   border-bottom-color: var(--bs-accent1-border-subtle);
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  direction: rtl; 
-  text-align: left;
-
+  direction: rtl;
+  text-align: right;
+  unicode-bidi: plaintext; /* Keeps Latin text readable */
 }
 
 .article h3 {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 600;
+  font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
 }
 
 .article h4 {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   font-weight: 600;
+  font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Table breathing room */
