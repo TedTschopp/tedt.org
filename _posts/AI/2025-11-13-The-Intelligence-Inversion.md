@@ -119,15 +119,14 @@ article p {
   border-bottom-style: solid;
   border-bottom-color: var(--bs-accent1-border-subtle);
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  direction: rtl;
-  text-align: right;
-  unicode-bidi: plaintext; /* Keeps Latin text readable */
+  text-align: left;
+  text-align-last: justify;
 }
 
 .article h3 {
   margin-bottom: 1rem;
   font-size: 4rem;
-  font-weight: 600;
+  font-weight: 100;
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 }
@@ -135,14 +134,14 @@ article p {
 .article h4 {
   margin-bottom: 0.75rem;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 100;
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .article h5 {
   margin-bottom: 0.75rem;
   font-size: 1.5rem;
-  font-weight: 600;
+  font-weight: 100;
   font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
