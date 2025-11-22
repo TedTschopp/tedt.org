@@ -26,6 +26,21 @@ body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
 /* Use a CSS variable for nav height for easy tuning */
 :root { --nav-height: 70px; }
 
+/* Bootstrap position utilities (fixed-top, sticky-top) since they were pruned from helpers */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+}
+
 /* Ensure both sticky and fixed navbars sit above content */
 .navbar.sticky-top,
 .navbar.fixed-top { z-index: 1030; } /* slightly below modals */
