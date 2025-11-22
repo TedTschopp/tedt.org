@@ -107,43 +107,48 @@ article p {
   margin-bottom: 1.5rem;
 }
 
-/* Stronger heading hierarchy */
+/* Stronger heading hierarchy with dark red color scheme */
 .article h2 {
   margin-top: 3rem;
   margin-bottom: 0rem;
   padding-bottom: 0.0rem;
   font-size: 6rem;
   font-weight: 100;
-  border-bottom: 1px solid var(--bs-accent1-border-subtle);
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: var(--bs-accent1-border-subtle);
-  font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 1px solid var(--bs-accent3-border-subtle);
+  color: var(--bs-accent3-text-emphasis);
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-align: left;
   text-align-last: justify;
+  text-wrap: balance;
 }
 
 .article h3 {
   margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 100;
-  font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
-
+  color: var(--bs-accent3);
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  text-wrap: balance;
 }
 
 .article h4 {
   margin-bottom: 0.75rem;
-  font-size: 2rem;
-  font-weight: 100;
-  font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: var(--bs-danger-text-emphasis);
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  text-wrap: balance;
 }
 
 .article h5 {
   margin-bottom: 0.75rem;
-  font-size: 1.5rem;
-  font-weight: 100;
-  font-family: "Sofia Sans Extra Condensed", Optima, ManukaCondensed, Manuka, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--bs-danger);
+  font-family: "Sofia Sans Extra Condensed", sans-serif;
+  text-wrap: balance;
 }
+
 
 
 
@@ -167,15 +172,15 @@ article p {
 .article blockquote {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: var(--bs-accent1-bg-subtle);
-  border-left: 4px solid var(--bs-accent1-border-subtle);
+  background: var(--bs-accent3-bg-subtle);
+  border-left: 4px solid var(--bs-accent3-border-subtle);
 }
 
 /* Section dividers for major breaks */
 .article hr {
   margin: 3rem 0;
   border: none;
-  border-top: 2px solid var(--bs-accent1-border-subtle);
+  border-top: 2px solid var(--bs-accent3-border-subtle);
 }
 
 /* Executive Summary visual separation */
@@ -186,43 +191,7 @@ article p {
   margin-bottom: 2rem;
 }
 
-/* Dark mode adjustments */
-@media (prefers-color-scheme: dark) {
-  .article h2 {
-    border-bottom-color: var(--bs-accent1-border-subtle);
-  }
-
-  .article h4 {
-    /* color: var(--bs-accent1); */
-  }
-
-  .article blockquote {
-    background: var(--bs-accent1-bg-subtle);
-    border-left-color: var(--bs-accent1-border-subtle);
-  }
-
-  .article hr {
-    border-top-color: var(--bs-accent1-border-subtle);
-  }
-}
-
-/* Explicit dark mode when data-bs-theme="dark" */
-[data-bs-theme="dark"] .article h2 {
-  border-bottom-color: var(--bs-accent1-border-subtle);
-}
-
-[data-bs-theme="dark"] .article h4 {
-  /* color: var(--bs-accent1); */
-}
-
-[data-bs-theme="dark"] .article blockquote {
-  background: var(--bs-accent1-bg-subtle);
-  border-left-color: var(--bs-accent1-border-subtle);
-}
-
-[data-bs-theme="dark"] .article hr {
-  border-top-color: var(--bs-accent1-border-subtle);
-}
+/* No dark mode overrides needed - CSS custom properties handle theme switching automatically */
 </style>
 
 ## Executive Summary
