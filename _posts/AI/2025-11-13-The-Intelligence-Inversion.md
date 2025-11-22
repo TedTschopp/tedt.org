@@ -151,38 +151,38 @@ article p {
 /* Dark mode: switch to gold colors */
 @media (prefers-color-scheme: dark) {
   .article h2 {
-    border-bottom-color: var(--bs-accent2-border-subtle);
-    color: var(--bs-accent2-text-emphasis);
+    border-bottom-color: var(--bs-accent2-border-subtle) !important;
+    color: var(--bs-accent2-text-emphasis) !important;
   }
 
   .article h3 {
-    color: var(--bs-accent2);
+    color: var(--bs-accent2) !important;
   }
 
   .article h4 {
-    color: var(--bs-warning-text-emphasis);
+    color: var(--bs-warning-text-emphasis) !important;
   }
 
   .article h5 {
-    color: var(--bs-warning);
+    color: var(--bs-warning) !important;
   }
 }
 
 [data-bs-theme="dark"] .article h2 {
-  border-bottom-color: var(--bs-accent2-border-subtle);
-  color: var(--bs-accent2-text-emphasis);
+  border-bottom-color: var(--bs-accent2-border-subtle) !important;
+  color: var(--bs-accent2-text-emphasis) !important;
 }
 
 [data-bs-theme="dark"] .article h3 {
-  color: var(--bs-accent2);
+  color: var(--bs-accent2) !important;
 }
 
 [data-bs-theme="dark"] .article h4 {
-  color: var(--bs-warning-text-emphasis);
+  color: var(--bs-warning-text-emphasis) !important;
 }
 
 [data-bs-theme="dark"] .article h5 {
-  color: var(--bs-warning);
+  color: var(--bs-warning) !important;
 }
 
 
