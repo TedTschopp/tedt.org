@@ -5,7 +5,7 @@
             Implementation: swap Bootstrap position utility from sticky-top (normal flow until scrolled) to fixed-top (removed from flow).
             NOTE: Post layout body receives extra padding-top (70px) via inline style or global overrides so content is not obscured.
           {%- endcomment -%}
-          {%- assign __nav_position_class = 'sticky-top' -%}
+          {%- assign __nav_position_class = 'fixed-top' -%}
           {%- comment -%} Precompute homepage items once to avoid emitting stray text inside any <ul>. {%- endcomment -%}
           {%- assign homepage_cat = site.categories['Home'] -%}
           {%- if homepage_cat -%}
