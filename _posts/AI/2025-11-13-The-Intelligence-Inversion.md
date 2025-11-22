@@ -107,18 +107,17 @@ article p {
   margin-bottom: 1.5rem;
 }
 
-/* Stronger heading hierarchy with dark red color scheme */
+/* Stronger heading hierarchy with gold color scheme */
 .article h2 {
   margin-top: 3rem;
   margin-bottom: 0rem;
   padding-bottom: 0.0rem;
   font-size: 6rem;
   font-weight: 100;
-  border-bottom: 1px solid var(--bs-accent3-border-subtle);
-  color: var(--bs-accent3-text-emphasis);
+  border-bottom: 1px solid var(--bs-accent2-border-subtle);
+  color: var(--bs-accent2-text-emphasis);
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-align: left;
-  text-align-last: justify;
   text-wrap: balance;
 }
 
@@ -126,7 +125,7 @@ article p {
   margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 100;
-  color: var(--bs-accent3);
+  color: var(--bs-accent2);
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-wrap: balance;
 }
@@ -135,7 +134,7 @@ article p {
   margin-bottom: 0.75rem;
   font-size: 3rem;
   font-weight: 400;
-  color: var(--bs-danger-text-emphasis);
+  color: var(--bs-warning-text-emphasis);
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-wrap: balance;
 }
@@ -144,7 +143,7 @@ article p {
   margin-bottom: 0.75rem;
   font-size: 2rem;
   font-weight: 400;
-  color: var(--bs-danger);
+  color: var(--bs-warning);
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-wrap: balance;
 }
@@ -172,15 +171,15 @@ article p {
 .article blockquote {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: var(--bs-accent3-bg-subtle);
-  border-left: 4px solid var(--bs-accent3-border-subtle);
+  background: var(--bs-accent2-bg-subtle);
+  border-left: 4px solid var(--bs-accent2-border-subtle);
 }
 
 /* Section dividers for major breaks */
 .article hr {
   margin: 3rem 0;
   border: none;
-  border-top: 2px solid var(--bs-accent3-border-subtle);
+  border-top: 2px solid var(--bs-accent2-border-subtle);
 }
 
 /* Executive Summary visual separation */
