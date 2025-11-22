@@ -2,6 +2,12 @@
 // Maintains accessible 44px targets, spacing, and dropdown positioning.
 // If adjusting spacing, keep .dropdown adjacency rule for Career/Projects separation.
 
+// Ensure navbar-collapse vertically centers its content
+nav[aria-label="Primary"] .navbar-collapse {
+  display: flex;
+  align-items: center;
+}
+
 nav[aria-label="Primary"] .navbar-nav {
   display: flex;
   align-items: center;
