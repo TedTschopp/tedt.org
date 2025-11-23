@@ -111,7 +111,7 @@ article p {
 .article h2 {
   margin-top: 3rem;
   margin-bottom: 0rem;
-  padding-bottom: 0.0rem;
+  padding-bottom: 0.3rem;
   font-size: 6rem;
   font-weight: 100;
   color: var(--bs-success-text-emphasis);
@@ -119,10 +119,13 @@ article p {
   font-variant-ligatures: discretionary-ligatures;
   text-align: left;
   text-wrap: balance;
-  text-decoration: underline;
-  text-decoration-color: var(--bs-success-border-subtle);
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0; /* Positions line at baseline */
+  background-image: linear-gradient(
+    var(--bs-success-border-subtle),
+    var(--bs-success-border-subtle)
+  );
+  background-size: 100% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
 }
 
 .article h3 {
@@ -156,8 +159,11 @@ article p {
 @media (prefers-color-scheme: dark) {
   .article h2 {
     color: var(--bs-accent2-text-emphasis) !important;
-    text-decoration-color: var(--bs-accent2-border-subtle) !important;
-}
+    background-image: linear-gradient(
+      var(--bs-accent2-border-subtle),
+      var(--bs-accent2-border-subtle)
+    ) !important;
+  }
 
   .article h3 {
     color: var(--bs-accent2) !important;
@@ -174,7 +180,10 @@ article p {
 
 [data-bs-theme="dark"] .article h2 {
   color: var(--bs-accent2-text-emphasis) !important;
-  text-decoration-color: var(--bs-accent2-border-subtle) !important;
+  background-image: linear-gradient(
+    var(--bs-accent2-border-subtle),
+    var(--bs-accent2-border-subtle)
+  ) !important;
 }
 
 [data-bs-theme="dark"] .article h3 {
