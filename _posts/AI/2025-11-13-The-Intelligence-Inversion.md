@@ -123,7 +123,7 @@ article p {
     var(--bs-accent2-text-emphasis) !important,
     var(--bs-accent2-text-emphasis) !important
   );
-  background-size: 100% 1px;
+  background-size: 100% 2px;
   background-position: 0 calc(100% - 22.5%); /* up from bottom */
   background-repeat: no-repeat;
 }
@@ -434,30 +434,29 @@ mark.green-glow {
 }
 
 [data-bs-theme="dark"] mark.green-glow {
-  background: 
+  background:
     linear-gradient(
-      104deg, 
-      rgba(80, 200, 120, 0) 0.9%, 
-      rgba(80, 200, 120, 0.9) 2.4%, 
-      rgba(80, 200, 120, 0.4) 5.8%, 
-      rgba(80, 200, 120, 0.08) 93%, 
-      rgba(80, 200, 120, 0.5) 96%, 
+      104deg,
+      rgba(80, 200, 120, 0) 0.9%,
+      rgba(80, 200, 120, 0.9) 2.4%,
+      rgba(80, 200, 120, 0.4) 5.8%,
+      rgba(80, 200, 120, 0.08) 93%,
+      rgba(80, 200, 120, 0.5) 96%,
       rgba(80, 200, 120, 0) 98%
     ), 
     linear-gradient(
       183deg, 
-      rgba(80, 200, 120, 0) 0%, 
-      rgba(80, 200, 120, 0.25) 7.9%, 
+      rgba(80, 200, 120, 0) 0%,
+      rgba(80, 200, 120, 0.25) 7.9%,
       rgba(80, 200, 120, 0) 15%
     );
-  text-shadow: 
-    -12px 12px 9.8px rgba(80, 200, 120, 0.5), 
-    21px -18.1px 7.3px rgba(0, 0, 0, 0.8), 
-    -18.1px -27.3px 30px rgba(0, 0, 0, 0.6);
+  text-shadow: (
+    -12px 12px 9.8px rgba(80, 200, 120, 0.5),
+    21px -18.1px 7.3px rgba(0, 0, 0, 0.8),
+    -18.1px -27.3px 30px rgba(0, 0, 0, 0.6)
+  )
   color: --bs-body-color-rgb !important;
 }
-
-
 
 
 </style>
