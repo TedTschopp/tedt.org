@@ -295,87 +295,104 @@ automatically */
 }
 
 
-/* Alternative angled highlight style */
+/* ============================================================================
+   ANGLED HIGHLIGHTER EFFECT
+   Creates a stylized highlight with angled edges (like a physical highlighter)
+   using three layered linear gradients for left edge, center, and right edge.
+   ============================================================================ */
 
-.highlight, mark {
- --mark-color: #f8db75;
- --mark-skew: 0.25em;
- --mark-height: 1em;
- --mark-overlap: 0.3em;
-
- margin-inline: calc(var(--mark-overlap) * -1);
- padding-inline: var(--mark-overlap);
-
- background-color: transparent;
- background-image:
-  linear-gradient(
-   to bottom right,
-   transparent 50%,
-   var(--mark-color) 50%
-  ),
-  linear-gradient(
-   var(--mark-color),
-   var(--mark-color)
-  ),
-  linear-gradient(
-   to top left,
-   transparent 50%,
-   var(--mark-color) 50%
-  )
- ;
- background-size:
-  var(--mark-skew) var(--mark-height),
-  calc(100% - var(--mark-skew) * 2 + 1px) var(--mark-height),
-  var(--mark-skew) var(--mark-height)
- ;
- background-position:
-  left center,
-  center,
-  right center
- ;
- background-repeat: no-repeat;
- 
- /* Force dark text for WCAG AAA compliance (10.8:1 contrast) on yellow highlight */
- /* Works in both light and dark modes */
- color: rgb(31, 33, 38) !important;
- 
-}
-
-/* Traditional highlighter style
-
+.highlight, 
 mark {
-  /* Remove the solid block + default browser style */
-  background-color: transparent;
+  /* Custom properties for easy theming */
+  --mark-color: #FFFF66;          /* Bright yellow highlight color */
+  --mark-skew: 0.25em;              /* Width of angled edges */
+  --mark-height: 1em;               /* Height of highlight stripe */
+  --mark-overlap: 0.3em;            /* Horizontal padding/overlap */
 
-  /* Highlighter stripe using your exact color */
-  background-image: linear-gradient(
-    to top,
-    rgba(255, 255, 0, 0) 0%,       /* transparent at very top */
-    rgba(255, 255, 0, 0.25) 30%,   /* soft fade-in */
-    rgba(255, 255, 0, 0.6) 60%,    /* main highlighter band (your color) */
-    rgba(255, 255, 0, 0.3) 85%,    /* soft fade-out */
-    rgba(255, 255, 0, 0) 100%      /* transparent at bottom */
-  );
+  /* Extend highlight slightly beyond text bounds for visual comfort */
+  margin-inline: calc(var(--mark-overlap) * -1);
+  padding-inline: var(--mark-overlap);
+
+  /* Three-layer gradient technique to create angled edges */
+  background-color: transparent;
+  background-image:
+    /* Left angled edge: diagonal gradient from transparent to highlight */
+    linear-gradient(
+      to bottom right,
+      transparent 50%,
+      var(--mark-color) 50%
+    ),
+    /* Center fill: solid highlight color */
+    linear-gradient(
+      var(--mark-color),
+      var(--mark-color)
+    ),
+    /* Right angled edge: diagonal gradient from highlight to transparent */
+    linear-gradient(
+      to top left,
+      transparent 50%,
+      var(--mark-color) 50%
+    );
+
+  /* Size each gradient layer: left edge | center fill | right edge */
+  background-size:
+    var(--mark-skew) var(--mark-height),
+    calc(100% - var(--mark-skew) * 2 + 1px) var(--mark-height),
+    var(--mark-skew) var(--mark-height);
+
+  /* Position each layer horizontally */
+  background-position:
+    left center,
+    center,
+    right center;
 
   background-repeat: no-repeat;
-  background-size: 100% 100%;
 
-  /* Snug highlight around the text */
-  padding: 0 0.18em;
-
-  /* Make multi-line <mark markdown="1"> look like separate strokes */
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
-
-  /* Keep text color consistent with surrounding copy */
-  color: inherit;
-
-  /* No rounded corners or heavy shadow – more like ink than a pill */
-  border-radius: 0;
-  box-shadow: none;
+  /* -------------------------------------------------------------------------
+     ACCESSIBILITY: WCAG AAA Compliance
+     Force dark text on yellow background ensures 10.8:1 contrast ratio
+     in both light and dark modes (overrides Bootstrap theme inheritance)
+     ------------------------------------------------------------------------- */
+  color: rgb(31, 33, 38) !important;
 }
 
-*/
+/* ============================================================================
+   ALTERNATIVE: GREEN GLOWING HIGHLIGHTER STYLE
+   Source: https://stackoverflow.com/a (Matt Pi, modified by community)
+   Retrieved 2025-11-22, License: CC BY-SA 4.0
+   Creates a glowing green highlight with soft shadows and rounded edges
+   Uncomment the section below to use this style instead of the angled style
+   ============================================================================ */
+
+mark.green-glow {
+  font-weight: bolder;
+  background: 
+    linear-gradient(
+      104deg, 
+      rgba(130, 255, 173, 0) 0.9%, 
+      rgba(130, 255, 173, 1.25) 2.4%, 
+      rgba(130, 255, 173, 0.5) 5.8%, 
+      rgba(130, 255, 173, 0.1) 93%, 
+      rgba(130, 255, 173, 0.7) 96%, 
+      rgba(130, 255, 173, 0) 98%
+    ), 
+    linear-gradient(
+      183deg, 
+      rgba(130, 255, 173, 0) 0%, 
+      rgba(130, 255, 173, 0.3) 7.9%, 
+      rgba(130, 255, 173, 0) 15%
+    );
+  padding: 0.6em 13.7px;
+  line-height: 1.8em;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+  margin: 0;
+  border-radius: 7.5px;
+  text-shadow: 
+    -12px 12px 9.8px rgba(130, 255, 173, 0.7), 
+    21px -18.1px 7.3px rgba(255, 255, 255, 1), 
+    -18.1px -27.3px 30px rgba(255, 255, 255, 1);
+}
 
 
 
@@ -384,7 +401,7 @@ mark {
 
 ## Executive Summary
 
-<mark>The first 1,000 days of AI validated the path from science through engineering
+<mark class="green-glow">The first 1,000 days of AI validated the path from science through engineering
 and into production; the <strong>next</strong> 1,000 will be won on <strong>economics, business
 strategy, and user trust</strong>.</mark>
 
@@ -400,7 +417,7 @@ strategy, and user trust</strong>.</mark>
   contract for diversified compute and energy; instrument your workflows.</mark>
 - <mark><strong>Lead on trust.</strong> Manipulation defenses, provenance, disclosure, and appeals
   protect the brand and pre‑empt regulation.</mark>
-- <mark><strong>Invest where it compounds.</strong> Verification libraries, observability, and
+- <mark class="green-glow"><strong>Invest where it compounds.</strong> Verification libraries, observability, and
   compute efficiency compound across every use case.</mark>
 - <mark><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
