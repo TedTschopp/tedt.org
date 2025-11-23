@@ -339,13 +339,13 @@ strategy, and user trust**.</mark>
 
 ### What’s Changing & How Fast
 
-<mark>**The Intelligence Inversion.** Over the next ≅1,000 days (through **August
+<mark> **The Intelligence Inversion.** Over the next ≅1,000 days (through **August
 2028**), general‑purpose AI will move from <q>smart intern</q> to **autonomous
 agents** that plan, act, verify their own work, and handle multi‑step outcomes.
 Cognitive output becomes **cheap, fast, and scalable with compute**, not
 headcount. Early signals already visible across routine drafting, tier‑1
 support, back‑office adjudication, code maintenance, and complex coordination
-tasks.</mark>
+tasks. </mark>
 
 **Economic implication.** For many cognitive workflows, **quality‑adjusted unit
 costs fall ≥60%** and **cycle times drop ≥50%** once agents are put in the
