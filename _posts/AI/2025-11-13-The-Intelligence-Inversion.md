@@ -268,7 +268,7 @@ strategy, and user trust**.
 - **The first 1,000 days of AI** Since ChatGPT launched on **Nov 30, 2022**,
   enterprises moved from copilots to **verification‑first agents**. Costs fell
   (e.g., **mini‑class models at ≅\$0.15 per 1,000,000 input tokens**), enabling
-  <\$1 a day “digital worker‑day” at ≅1,000,000 tokens a day; adoption crossed
+  <\$1 a day <q>digital worker‑day</q> at ≅1,000,000 tokens a day; adoption crossed
   the majority threshold by mid‑2024.
 - **Compete on verification, not hype.** Tie every AI claim to *cost per
   verified outcome, autonomy, escape, MTTR,* and *portability*.
@@ -620,22 +620,22 @@ Over the first 1,000 days of generative AI, this expanded from **less than a
 meeting** to **multiple human days**:
 
 |             Model | Year | Context Size (tokens) | Approximate number of Words* | Human speech equivalent† | Human thought equivalent‡ |
-|------------------:|------|:---------------------:|:--------------:|:------------------------:|:-------------------------:|
-|             GPT‑1 | 2018 |          512          |      ≅400      |         ≅35 min          |          ≅10 min          |
-|             GPT‑2 | 2019 |         1,024         |      ≅800      |          ≅1.2 h          |          ≅20 min          |
-|             GPT‑3 | 2020 |         4,096         |     ≅3,000     |          ≅4.9 h          |          ≅1.2 h           |
-|             GPT‑4 | 2023 |         8,192         |     ≅6,000     |          ≅9.8 h          |          ≅2.5 h           |
-|       GPT‑4‑turbo | 2023 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-|            GPT‑4o | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-|       GPT‑4o‑mini | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-|           o1‑mini | 2024 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-|                o1 | 2024 |        200,000        |    ≅150,000    |        ≅10.0 days        |         ≅2.5 days         |
-|    GPT‑5‑Standard | 2025 |        128,000        |    ≅96,000     |        ≅6.4 days         |         ≅1.6 days         |
-|         GPT‑5‑Pro | 2025 |        196,000        |    ≅147,000    |        ≅9.8 days         |         ≅2.5 days         |
-|         GPT‑5‑API | 2025 |        400,000        |    ≅300,000    |         ≅20 days         |          ≅5 days          |
-|    Gemini 2.5 Pro | 2025 |       1,000,000       |    ≅750,000    |         ≅50 days         |        ≅12.5 days         |
-| Claude Sonnet 4.5 | 2025 |       1,000,000       |    ≅750,000    |         ≅50 days         |        ≅12.5 days         |
-|     Llama 4 Scout | 2025 |      10,000,000       |   ≅7,500,000   |        ≅500 days         |         ≅125 days         |
+|------------------:|------|:---------------------:|:----------------------------:|:------------------------:|:-------------------------:|
+|             GPT‑1 | 2018 |          512          |             ≅400             |         ≅35 min          |          ≅10 min          |
+|             GPT‑2 | 2019 |         1,024         |             ≅800             |          ≅1.2 h          |          ≅20 min          |
+|             GPT‑3 | 2020 |         4,096         |            ≅3,000            |          ≅4.9 h          |          ≅1.2 h           |
+|             GPT‑4 | 2023 |         8,192         |            ≅6,000            |          ≅9.8 h          |          ≅2.5 h           |
+|       GPT‑4‑turbo | 2023 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
+|            GPT‑4o | 2024 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
+|       GPT‑4o‑mini | 2024 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
+|           o1‑mini | 2024 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
+|                o1 | 2024 |        200,000        |           ≅150,000           |        ≅10.0 days        |         ≅2.5 days         |
+|    GPT‑5‑Standard | 2025 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
+|         GPT‑5‑Pro | 2025 |        196,000        |           ≅147,000           |        ≅9.8 days         |         ≅2.5 days         |
+|         GPT‑5‑API | 2025 |        400,000        |           ≅300,000           |         ≅20 days         |          ≅5 days          |
+|    Gemini 2.5 Pro | 2025 |       1,000,000       |           ≅750,000           |         ≅50 days         |        ≅12.5 days         |
+| Claude Sonnet 4.5 | 2025 |       1,000,000       |           ≅750,000           |         ≅50 days         |        ≅12.5 days         |
+|     Llama 4 Scout | 2025 |      10,000,000       |          ≅7,500,000          |        ≅500 days         |         ≅125 days         |
 {: .table .table-striped .table-hover}
 
 \* Approximate number of words = tokens × 0.75.
@@ -4336,3 +4336,158 @@ inversion into a broad‑based advance in human welfare.
 - [ ] Red‑team **persuasion** & **poisoning**; implement countermeasures.
 - [ ] Draft a **workforce transition** note (hiring, reskilling, placement).
 - [ ] Allocate a modest **mission‑AI** budget (open health/education pilots).
+
+
+## Appendix C - Agent-First Enterprise: Deliverables & Artifacts
+
+### Complete Deliverables Organized by Category
+
+**1. FOUNDATIONAL GOVERNANCE & POLICY**
+
+| #   | Category   | Deliverable/Artifact                   | Purpose                                                                      | Primary Owner            | Phase | Audience                     |
+|-----|------------|----------------------------------------|------------------------------------------------------------------------------|--------------------------|-------|------------------------------|
+| 1.1 | Governance | Agent Charter                          | Define scope, objectives, guardrails, escalation paths per service line      | Value-Chain Architect    | 1     | All stakeholders             |
+| 1.2 | Governance | Tool Contract                          | Specify function schema, auth, rate limits, policy checks, audit fields      | Agent Architect          | 1     | Engineering, Security        |
+| 1.3 | Governance | Model/Agent Card                       | Document intended use, limitations, evaluations, energy/carbon, safety tests | Model Risk Lead          | 1     | Risk, Compliance, Regulators |
+| 1.4 | Governance | Agent Identity & Policy (AIP) Standard | Define unique identities, credential scopes, auditable policy enforcement    | Agent SRE                | 1     | Engineering, Security        |
+| 1.5 | Governance | RACI Matrix                            | Clarify responsibility for agent-driven incidents                            | AgentOps Program Manager | 1     | Operations, Leadership       |
+| 1.6 | Governance | Policy Enforcement Framework           | Implement policy checks at tool boundary                                     | Prompt & Policy Engineer | 1     | Engineering, Compliance      |
+| 1.7 | Governance | Quality Budgets & Penalty Models       | Set acceptable error rates and financial exposure per service line           | Verification Engineer    | 1     | Finance, Risk                |
+| 1.8 | Governance | Agent Performance Bonds Framework      | Define internal accounting for high-impact agent actions                     | CFO, Model Risk Lead     | 2     | Finance, Risk                |
+{: .table .table-striped .table-hover}
+
+**2. VERIFICATION & QUALITY ASSURANCE**
+
+| #   | Category | Deliverable/Artifact                   | Purpose                                                                       | Primary Owner            | Phase | Audience             |
+|-----|----------|----------------------------------------|-------------------------------------------------------------------------------|--------------------------|-------|----------------------|
+| 2.1 | Quality  | Verifier Specification                 | Define test methods, oracles, false-positive/negative rates, failure handling | Verification Engineer    | 1     | Engineering, QA      |
+| 2.2 | Quality  | Verifier Libraries                     | Build domain-specific evaluation suites, oracle checks, red-team tests        | Verification Engineer    | 1     | Engineering, QA      |
+| 2.3 | Quality  | Verifier Interchange Format            | Create portable, signed evaluators with declared characteristics              | Standards Body           | 3     | Industry-wide        |
+| 2.4 | Quality  | Red-Team Playbooks                     | Document prompt injection, tool abuse, persuasion, poisoning scenarios        | Security, Verification   | 1     | Security, Risk       |
+| 2.5 | Quality  | Approval Packs                         | Prepare intended use, limitations, eval results, rollback plans               | Model Risk Lead          | 1     | Risk, Compliance     |
+| 2.6 | Quality  | Incident Taxonomy & Reporting Standard | Standardize severity scales, kill-switch behavior, post-mortem formats        | AgentOps Program Manager | 2     | Operations, Industry |
+{: .table .table-striped .table-hover}
+
+**3. OPERATIONAL PLAYBOOKS & RUNBOOKS**
+
+| #   | Category   | Deliverable/Artifact      | Purpose                                                                             | Primary Owner     | Phase | Audience              |
+|-----|------------|---------------------------|-------------------------------------------------------------------------------------|-------------------|-------|-----------------------|
+| 3.1 | Operations | Incident Runbook          | Define trigger conditions, triage, kill-switches, notifications, remediation        | Agent SRE         | 1     | Operations, SRE       |
+| 3.2 | Operations | 12-Month Energy Playbook  | Plan demand forecasting, capacity, PPA negotiations, site optimization              | CTO, Facilities   | 1     | Executive, Operations |
+| 3.3 | Operations | 1,000-Day Playbook        | Provide stakeholder-specific milestones (enterprises, regulators, education, media) | Executive Sponsor | 1     | All stakeholders      |
+| 3.4 | Operations | Workforce Transition Plan | Map hiring, reskilling, career paths, performance contracts                         | CHRO              | 1     | HR, Leadership        |
+| 3.5 | Operations | Skill Bridges Curriculum  | Design 8-12 week upskilling programs for 6 role transitions                         | CHRO, Training    | 2     | HR, Employees         |
+{: .table .table-striped .table-hover}
+
+**4. TECHNICAL ARCHITECTURE & STANDARDS**
+
+| #   | Category     | Deliverable/Artifact             | Purpose                                                                       | Primary Owner        | Phase | Audience                  |
+|-----|--------------|----------------------------------|-------------------------------------------------------------------------------|----------------------|-------|---------------------------|
+| 4.1 | Architecture | Reference Architecture           | Design agent-first services, guardrails, verifiers, escalation, identity      | Enterprise Architect | 1     | Engineering, Architecture |
+| 4.2 | Architecture | Agent Templates                  | Create canonical planners, tool calls, verifiers, escalation per service line | Agent Architect      | 1     | Engineering               |
+| 4.3 | Architecture | Pattern Libraries                | Develop reusable planner templates, tool graphs, verifier types, prompts      | Agent Architect      | 1     | Engineering               |
+| 4.4 | Architecture | Tool Contract Schema             | Standardize function signatures, side-effects, rate limits, audit fields      | Standards Body       | 2     | Industry-wide             |
+| 4.5 | Architecture | Provenance & Disclosure Protocol | Implement cryptographic provenance, disclosure flags, source capsules         | Data Steward         | 2     | Engineering, Compliance   |
+{: .table .table-striped .table-hover}
+
+**5. DATA GOVERNANCE & PROVENANCE**
+
+| #   | Category | Deliverable/Artifact | Purpose                                                              | Primary Owner | Phase | Audience                |
+|-----|----------|----------------------|----------------------------------------------------------------------|---------------|-------|-------------------------|
+| 5.1 | Data     | Dataset SBOMs        | Document weights, data, training runs with signed bills of materials | Data Steward  | 1     | Compliance, Engineering |
+| 5.2 | Data     | Data Contracts       | Specify refresh cadences, retention, acceptable uses, provenance     | Data Steward  | 1     | Engineering, Compliance |
+| 5.3 | Data     | Provenance Scores    | Track licensing, consent, poisoning/toxicity for all corpora         | Data Steward  | 1     | Compliance, Risk        |
+{: .table .table-striped .table-hover}
+
+**6. MONITORING & OBSERVABILITY**
+
+| #   | Category   | Deliverable/Artifact         | Purpose                                                                   | Primary Owner            | Phase | Audience               |
+|-----|------------|------------------------------|---------------------------------------------------------------------------|--------------------------|-------|------------------------|
+| 6.1 | Monitoring | Agent Economics Dashboard    | Track cost per verified outcome, autonomy, coverage, escape rate, MTTR    | Agent SRE                | 1     | Operations, Finance    |
+| 6.2 | Monitoring | Agent Architect Dashboard    | Monitor throughput, error, latency vs SLO, coverage, cost per outcome     | Agent Architect          | 2     | Engineering            |
+| 6.3 | Monitoring | AgentOps PM Dashboard        | Track release cadence, gated releases, incidents, MTTR, rollback metrics  | AgentOps Program Manager | 2     | Operations, Leadership |
+| 6.4 | Monitoring | Verification Dashboard       | Display eval coverage, residual error, escaped defects, eval update time  | Verification Engineer    | 1     | QA, Risk               |
+| 6.5 | Monitoring | Data Steward Dashboard       | Show provenance/license coverage, freshness, poisoning incidents          | Data Steward             | 2     | Compliance, Data       |
+| 6.6 | Monitoring | Prompt & Policy Dashboard    | Track hallucination/policy violations, review time, pattern adoption      | Prompt & Policy Engineer | 2     | Compliance, Operations |
+| 6.7 | Monitoring | Model Risk Dashboard         | Report approved agents by risk class, exceptions backlog, audit findings  | Model Risk Lead          | 2     | Risk, Compliance       |
+| 6.8 | Monitoring | Site-Level Energy Dashboards | Display ECI_outcome, GPU-hour intensity, CFE coverage, carbon per service | Facilities, CTO          | 2     | Executive, Operations  |
+{: .table .table-striped .table-hover}
+
+**7. BUSINESS & STRATEGIC FRAMEWORKS**
+
+| #   | Category | Deliverable/Artifact       | Purpose                                                                                    | Primary Owner     | Phase | Audience                 |
+|-----|----------|----------------------------|--------------------------------------------------------------------------------------------|-------------------|-------|--------------------------|
+| 7.1 | Strategy | Flourishing Balance Sheet  | Measure time, trust, attention, education, health, equity, network, sustainability, safety | Executive Sponsor | 3     | Board, Executive, Public |
+| 7.2 | Strategy | Workforce Transition Plan  | Plan hiring strategy, reskilling, career redesign, performance contracts                   | CHRO              | 1     | HR, Executive            |
+| 7.3 | Strategy | P&L View (Agent Economics) | Separate human labor, compute, energy, AgentOps, verification costs                        | CFO               | 1     | Finance, Executive       |
+| 7.4 | Strategy | Performance Contracts      | Tie role OKRs to KPIs (residual error, SLO attainment, coverage, etc.)                     | CHRO, Managers    | 2     | HR, Leadership           |
+{: .table .table-striped .table-hover}
+
+**8. INTEROPERABILITY & STANDARDS**
+
+| #   | Category  | Deliverable/Artifact             | Purpose                                                     | Primary Owner  | Phase | Audience      |
+|-----|-----------|----------------------------------|-------------------------------------------------------------|----------------|-------|---------------|
+| 8.1 | Standards | Agent Identity & Policy Standard | Establish unique identities, scopes, auditable enforcement  | Standards Body | 2     | Industry-wide |
+| 8.2 | Standards | Verifier Interchange Format      | Enable portable evaluators with declared characteristics    | Standards Body | 3     | Industry-wide |
+| 8.3 | Standards | Tool Contract Schema             | Standardize function signatures, side-effects, audit fields | Standards Body | 2     | Industry-wide |
+| 8.4 | Standards | Provenance & Disclosure Protocol | Define cryptographic provenance, disclosure flags           | Standards Body | 2     | Industry-wide |
+| 8.5 | Standards | Incident Taxonomy Standard       | Align severity scales, kill-switch behavior, post-mortems   | Standards Body | 2     | Industry-wide |
+{: .table .table-striped .table-hover}
+
+### Legend
+
+**Phase:**
+- **Year 1** = Foundational
+- **Year 2** = Operational Scale
+- **Year 3** = Strategic/Industry
+
+**Primary Owner Roles:**
+- Value-Chain Architect (Service-Line Owner)
+- Agent Architect
+- AgentOps Program Manager
+- Verification Engineer
+- Agent SRE/Observer
+- Data Steward (Provenance)
+- Prompt & Policy Engineer
+- Model Risk Lead
+- Executive roles (CTO, CFO, CHRO)
+
+**Audience:**
+- Engineering: Technical teams building agent systems
+- Operations: Day-to-day execution and incident response
+- Risk/Compliance: Governance, audit, regulatory
+- Executive/Leadership: Strategic decision-making
+- Finance: Cost management and ROI
+- HR: Talent and organizational design
+- Security: Identity, access, threat modeling
+- Industry-wide: Standards bodies, regulators, peer organizations
+- Public: External stakeholders, customers
+
+### Critical Path Dependencies
+
+\`\`\` Foundational (Must Have First):
+1. Agent Charter → 2. Agent Templates → 3. Verifier Specification → 4. Incident
+   Runbook
+
+Supporting Infrastructure:
+5. Tool Contract → 6. Data Contracts → 7. Reference Architecture
+
+Monitoring Layer:
+8. Agent Economics Dashboard → 9. Role-Specific Dashboards
+
+Standards & Maturity:
+10. Pattern Libraries → 11. Interoperability Standards → 12. Flourishing Balance
+    Sheet \`\`\`
+
+### Quick Start Checklist (First 90 Days)
+
+- [ ] Agent Charter (1.1)
+- [ ] Tool Contract (1.2)
+- [ ] Agent Templates (4.2)
+- [ ] Verifier Specification (2.1)
+- [ ] Incident Runbook (3.1)
+- [ ] Agent Economics Dashboard (6.1)
+- [ ] Data Contracts (5.2)
+- [ ] Reference Architecture (4.1)
+- [ ] 1,000-Day Playbook (3.3)
+- [ ] Workforce Transition Plan (3.4)
