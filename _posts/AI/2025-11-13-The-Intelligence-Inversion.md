@@ -380,9 +380,9 @@ mark {
 
 ## Executive Summary
 
-The first 1,000 days of AI validated the path from science through engineering
-and into production; the **next** 1,000 will be won on **economics, business
-strategy, and user trust**.{: .highlight}
+<mark>The first 1,000 days of AI validated the path from science through engineering
+and into production; the <strong>next</strong> 1,000 will be won on <strong>economics, business
+strategy, and user trust</strong>.</mark>
 
 ### Bottom Line Up Front
 
@@ -391,21 +391,25 @@ strategy, and user trust**.{: .highlight}
   (e.g., **mini‑class models at ≅\$0.15 per 1,000,000 input tokens**), enabling
   <\$1 a day <q>digital worker‑day</q> at ≅1,000,000 tokens a day; adoption crossed
   the majority threshold by mid‑2024.
-- **Compete on verification, not hype.** Tie every AI claim to *cost per verified outcome, autonomy, escape, MTTR,* and *portability*.{: .highlight}
-- **Rewire the enterprise.** Stand up AgentOps; hire evaluator engineers; contract for diversified compute and energy; instrument your workflows.{: .highlight}
-- **Lead on trust.** Manipulation defenses, provenance, disclosure, and appeals protect the brand and pre‑empt regulation.{: .highlight}
-- **Invest where it compounds.** Verification libraries, observability, and compute efficiency compound across every use case.{: .highlight}
-- **Measure what matters.** Publish the **Flourishing Balance Sheet** next to your financials.{: .highlight}
+- <mark><strong>Compete on verification, not hype.</strong> Tie every AI claim to <em>cost per verified outcome, autonomy, escape, MTTR,</em> and <em>portability</em>.</mark>
+- <mark><strong>Rewire the enterprise.</strong> Stand up AgentOps; hire evaluator engineers;
+  contract for diversified compute and energy; instrument your workflows.</mark>
+- <mark><strong>Lead on trust.</strong> Manipulation defenses, provenance, disclosure, and appeals
+  protect the brand and pre‑empt regulation.</mark>
+- <mark><strong>Invest where it compounds.</strong> Verification libraries, observability, and
+  compute efficiency compound across every use case.</mark>
+- <mark><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
+  your financials.</mark>
 
 ### What’s Changing & How Fast
 
-**The Intelligence Inversion.** Over the next ≅1,000 days (through **August
-2028**), general‑purpose AI will move from <q>smart intern</q> to **autonomous
-agents** that plan, act, verify their own work, and handle multi‑step outcomes.
-Cognitive output becomes **cheap, fast, and scalable with compute**, not
+<mark><strong>The Intelligence Inversion.</strong> Over the next ≅1,000 days (through <strong>August
+2028</strong>), general‑purpose AI will move from <q>smart intern</q> to <strong>autonomous
+agents</strong> that plan, act, verify their own work, and handle multi‑step outcomes.
+Cognitive output becomes <strong>cheap, fast, and scalable with compute</strong>, not
 headcount. Early signals already visible across routine drafting, tier‑1
 support, back‑office adjudication, code maintenance, and complex coordination
-tasks.{: .highlight}
+tasks.</mark>
 
 **Economic implication.** For many cognitive workflows, **quality‑adjusted unit
 costs fall ≥60%** and **cycle times drop ≥50%** once agents are put in the
@@ -420,10 +424,11 @@ advantage shifts to:
 
 ### What This Means For Large Enterprise Profit & Loss
 
-- **Cogs & OpEx:** In agent‑addressable domains, **cost per verified outcome** (not hours) becomes the right denominator. Expect large step‑downs as autonomy rises.
-{: .highlight}
-- **CapEx & Balance Sheet:** Compute, eval tooling, and observability become enduring capital — **<q>compute is the new capital stock.</q>**
-{: .highlight}
+- <mark><strong>Cogs &amp; OpEx:</strong> In agent‑addressable domains, <strong>cost per verified outcome</strong>
+  (not hours) becomes the right denominator. Expect large step‑downs as autonomy
+  rises.</mark>
+- <mark><strong>CapEx &amp; Balance Sheet:</strong> Compute, eval tooling, and observability
+  become enduring capital — <strong><q>compute is the new capital stock.</q></strong></mark>
 - **Revenue Growth:** Faster cycle times and 24/7 agent capacity expand
   serviceable demand (e.g., claims cleared, tickets resolved, quotes delivered).
 - **Working Capital:** Better throughput reduces WIP and DSO in service chains.
@@ -432,9 +437,8 @@ advantage shifts to:
 
 ### The Operating Model That Works: Verification ‑ First Agents
 
-Executives should not measure <q>AI</q> by model IQ, but by **verified business
-outcomes**. The operating system for that is:
-{: .highlight}
+<mark>Executives should not measure <q>AI</q> by model IQ, but by <strong>verified business
+outcomes</strong>. The operating system for that is:</mark>
 
 #### Design for Verification From Day One
 
@@ -506,9 +510,8 @@ poisoning & drift challenges; portability bake‑offs.
 
 ### Human Flourishing Is A Business Requirement
 
-As cognition gets cheap, **time, trust, and attention** become the scarce assets
-customers and employees value.
-{: .highlight}
+<mark>As cognition gets cheap, <strong>time, trust, and attention</strong> become the scarce assets
+customers and employees value.</mark>
 
 #### Design Objectives & Metrics
 
@@ -529,9 +532,8 @@ match.
 
 ### Money, Compute, & Your CFO Lens
 
-**Compute is the comparative advantage** in the intelligence economy. Two
-practical implications for corporate finance:
-{: .highlight}
+<mark><strong>Compute is the comparative advantage</strong> in the intelligence economy. Two
+practical implications for corporate finance:</mark>
 
 1. **Capacity strategy.** Lock in diversified compute through long‑dated
    capacity contracts, multi‑provider commitments, and energy‑aware siting;
