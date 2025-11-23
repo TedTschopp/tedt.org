@@ -250,6 +250,63 @@ article p {
 /* No dark mode overrides needed - CSS custom properties handle theme switching
 automatically */
 
+
+
+
+/* Base inline quote styling */
+.entry-content q {
+  quotes: "“" "”" "‘" "’";
+  font-style: italic;
+}
+
+/* Insert the actual quotes */
+.entry-content q::before {
+  content: open-quote;
+}
+.entry-content q::after {
+  content: close-quote;
+}
+
+
+/* If the whole phrase is already emphasized, don't double-italic the quote */
+.entry-content em q,
+.entry-content i q,
+.entry-content strong q {
+  font-style: normal;
+}
+
+/* Optional: in headings, keep quotes upright so they don't look too noisy */
+.entry-content h1 q,
+.entry-content h2 q,
+.entry-content h3 q {
+  font-style: normal;
+}
+
+/* Key, definitional quotes inline */
+.entry-content mark {
+  background-color: rgba(255, 215, 0, 0.14); /* or your accent color, very faint */
+  padding: 0 .2em;
+  border-radius: .2em;
+  font-weight: 500;
+}
+
+/* Optional: mild hover/focus to help scanning with keyboard or mouse */
+.entry-content mark:hover,
+.entry-content mark:focus-visible {
+  background-color: rgba(255, 215, 0, 0.22);
+  outline: none;
+}
+
+.entry-content q {
+  quotes: "“" "”" "‘" "’";
+}
+
+.entry-content q q {
+  quotes: "‘" "’";  /* inner nested pair */
+}
+
+
+
 </style>
 
 
@@ -259,9 +316,9 @@ automatically */
 
 ## Executive Summary
 
-The first 1,000 days of AI validated the path from science through engineering
+<mark>The first 1,000 days of AI validated the path from science through engineering
 and into production; the **next** 1,000 will be won on **economics, business
-strategy, and user trust**.
+strategy, and user trust**.</mark>
 
 ### Bottom Line Up Front
 
@@ -270,7 +327,7 @@ strategy, and user trust**.
   (e.g., **mini‑class models at ≅\$0.15 per 1,000,000 input tokens**), enabling
   <\$1 a day <q>digital worker‑day</q> at ≅1,000,000 tokens a day; adoption crossed
   the majority threshold by mid‑2024.
-- **Compete on verification, not hype.** Tie every AI claim to *cost per
+- <mark>**Compete on verification, not hype.** Tie every AI claim to *cost per
   verified outcome, autonomy, escape, MTTR,* and *portability*.
 - **Rewire the enterprise.** Stand up AgentOps; hire evaluator engineers;
   contract for diversified compute and energy; instrument your workflows.
@@ -279,17 +336,17 @@ strategy, and user trust**.
 - **Invest where it compounds.** Verification libraries, observability, and
   compute efficiency compound across every use case.
 - **Measure what matters.** Publish the **Flourishing Balance Sheet** next to
-  your financials.
+  your financials.</mark>
 
 ### What’s Changing & How Fast
 
-**The Intelligence Inversion.** Over the next ≅1,000 days (through **August
-2028**), general‑purpose AI will move from “smart intern” to **autonomous
+<mark>**The Intelligence Inversion.** Over the next ≅1,000 days (through **August
+2028**), general‑purpose AI will move from <q>smart intern</q> to **autonomous
 agents** that plan, act, verify their own work, and handle multi‑step outcomes.
 Cognitive output becomes **cheap, fast, and scalable with compute**, not
 headcount. Early signals already visible across routine drafting, tier‑1
 support, back‑office adjudication, code maintenance, and complex coordination
-tasks.
+tasks.</mark>
 
 **Economic implication.** For many cognitive workflows, **quality‑adjusted unit
 costs fall ≥60%** and **cycle times drop ≥50%** once agents are put in the
@@ -304,11 +361,11 @@ advantage shifts to:
 
 ### What This Means For Large Enterprise Profit & Loss
 
-- **Cogs & OpEx:** In agent‑addressable domains, **cost per verified outcome**
+- <mark>**Cogs & OpEx:** In agent‑addressable domains, **cost per verified outcome**
   (not hours) becomes the right denominator. Expect large step‑downs as autonomy
-  rises.
+  rises.</mark>
 - **CapEx & Balance Sheet:** Compute, eval tooling, and observability become
-  enduring capital—**“compute is the new capital stock.”**
+  enduring capital — **<mark><q>compute is the new capital stock.</q></mark>**
 - **Revenue Growth:** Faster cycle times and 24/7 agent capacity expand
   serviceable demand (e.g., claims cleared, tickets resolved, quotes delivered).
 - **Working Capital:** Better throughput reduces WIP and DSO in service chains.
@@ -317,10 +374,10 @@ advantage shifts to:
 
 ### The Operating Model That Works: Verification ‑ First Agents
 
-Executives should not measure “AI” by model IQ, but by **verified business
-outcomes**. The operating system for that is:
+<mark>Executives should not measure <q>AI</q> by model IQ, but by **verified business
+outcomes**. The operating system for that is:</mark>
 
-**A. Design for Verification From Day One**
+#### Design for Verification From Day One
 
 - **Evaluators/Verifiers** as code: property‑based tests, oracles, statistical
   acceptance sampling.
@@ -328,7 +385,7 @@ outcomes**. The operating system for that is:
   hit **≥95% coverage**, **escape rate ≤0.5%**, and the **Autonomy Index ≥70%**
   for 90 days.
 
-**B. Safe, Observable Execution**
+#### Safe, Observable Execution
 
 - **Agent identity & policy** (least‑privilege credentials, policy‑aware tool
   wrappers).
@@ -336,7 +393,7 @@ outcomes**. The operating system for that is:
 - **Kill‑switch & chaos drills** with **MTTR ≤2 hours** for Severity‑1
   incidents.
 
-**C. Portable by Design**
+#### Portable by Design
 
 - **Capability interfaces** between workflow and model provider so identical
   jobs run on ≥2 stacks with **≤2‑point outcome deltas**. This is your
@@ -390,8 +447,8 @@ poisoning & drift challenges; portability bake‑offs.
 
 ### Human Flourishing Is A Business Requirement
 
-As cognition gets cheap, **time, trust, and attention** become the scarce assets
-customers and employees value.
+<mark>As cognition gets cheap, **time, trust, and attention** become the scarce assets
+customers and employees value.</mark>
 
 #### Design Objectives & Metrics
 
@@ -406,14 +463,14 @@ customers and employees value.
   adherence; patient activation—published as **Flourishing Balance Sheet**
   alongside financials.
 
-**Why you care:** These are **brand and regulator “green zones.”** The firms
+**Why you care:** These are **brand and regulator <q>green zones.</q>** The firms
 that lead on disclosure, appeals, and parity will set the bar competitors must
 match.
 
 ### Money, Compute, & Your CFO Lens
 
-**Compute is the comparative advantage** in the intelligence economy. Two
-practical implications for corporate finance:
+<mark>**Compute is the comparative advantage** in the intelligence economy. Two
+practical implications for corporate finance:</mark>
 
 1. **Capacity strategy.** Lock in diversified compute through long‑dated
    capacity contracts, multi‑provider commitments, and energy‑aware siting;
@@ -481,12 +538,12 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 ## The First 3 Years: From Tokens To Work
 
 With the launch of ChatGPT on **Nov 30, 2022** to **November 30, 2025**
-transformers, tokens, and agents changed what “intelligence” means inside the
+transformers, tokens, and agents changed what <q>intelligence</q> means inside the
 large Enterprise—and what separates signal from noise.
 
-### Transformers, Tokens, & What “Intelligence” Now Means
+### Transformers, Tokens, & What <q>Intelligence</q> Now Means
 
-From a C‑suite lens, a transformer is a **fast, scalable “next‑step planner”**
+From a C‑suite lens, a transformer is a **fast, scalable <q>next‑step planner</q>**
 over tokens. Intelligence, in this world, is: *How much **useful state and
 action** we can pack into tokens per second, per dollar, under governance.*
 
@@ -509,13 +566,13 @@ At inference time the pipeline is:
 
 1. Break inputs (text, code, images, transcripts) into **tokens**.
 2. Map tokens to **embeddings**, dense vectors that encode approximate meaning.
-3. Use **self‑attention** so each token “looks at” all the others in the context
+3. Use **self‑attention** so each token <q>looks at</q> all the others in the context
    window to decide what matters.
 4. Stack layers to refine those vectors and predict the next token.
 5. Interpret certain token patterns as **actions** (call a tool, run SQL, submit
    a form) instead of text.
 
-Over the first 1,000 days, the underlying “intelligence substrate” changed far
+Over the first 1,000 days, the underlying <q>intelligence substrate</q> changed far
 more dramatically than most leaders realize. What began as a system that mainly
 processed text has evolved into something that can now work across **almost
 every kind of information your enterprise produces** — from documents and emails
@@ -546,7 +603,7 @@ AI.**
 
 #### 2. The Amount Of Context AI Can Hold At Once Grew Exponentially
 
-Instead of working with the equivalent of “one meeting’s worth” of information,
+Instead of working with the equivalent of <q>one meeting’s worth</q> of information,
 AI can now keep **days of work** in active memory—documents, conversations,
 history, processes, exceptions, decisions, and the rationale behind them—**all
 at once**.
@@ -561,7 +618,7 @@ This means AI can:
 It’s the difference between a smart intern and **a fully briefed chief of
 staff** who never forgets anything.
 
-#### The Speed, Cost, & Reliability Of Updating That Shared “Whiteboard” Improved Dramatically
+#### The Speed, Cost, & Reliability Of Updating That Shared <q>Whiteboard</q> Improved Dramatically
 
 Advances in how models run—streaming, batching, parallel execution, automated
 checking, and verification—mean that the system can now update this large
@@ -591,7 +648,7 @@ Empirical work on language and thought suggests:
 
 - Humans speak on the order of **≅15,000 words per day** on average (with wide
   variance).
-- Internal speech and “verbal thought” are far denser: estimates suggest **4–30
+- Internal speech and <q>verbal thought</q> are far denser: estimates suggest **4–30
   internal words for every word spoken**, yielding **≅60,000–450,000 words a
   day** of inner dialogue and imagined conversations.
 - We speak at **125–175 words per minute**; that’s in the ballpark of **≅2
@@ -604,12 +661,12 @@ Using your working approximation of **1 word ≅ 1.33 tokens**:
   tokens**.
 
 The exact numbers are less important than the order of magnitude: *A single
-person’s day of “thinking in language” is on the order of **hundreds of
+person’s day of <q>thinking in language</q> is on the order of **hundreds of
 thousands of tokens**—most of which never touch a system of record.*
 
 This is the unconscious **token budget** your workforce burns today, unmanaged.
 
-### Context Windows: How Many “Days Of You” Fit In A Model?
+### Context Windows: How Many <q>Days Of You</q> Fit In A Model?
 
 **Table – Model Context Window Growth (Human Speech/Thought Equivalents).**
 
@@ -648,7 +705,7 @@ meeting** to **multiple human days**:
 > 
 > As context windows scale from thousands to millions of tokens, it's tempting
 > to equate **more context** with **more intelligence**—but the two are related
-> only indirectly. A larger window does not make a model “smarter”; it makes the
+> only indirectly. A larger window does not make a model <q>smarter</q>; it makes the
 > model capable of **holding longer, more coherent arcs of conversation,
 > task-state, and thought** without dropping threads. In humans, intelligence
 > emerges not from the raw amount of speech or internal monologue we generate,
@@ -663,13 +720,13 @@ meeting** to **multiple human days**:
 > chains, and evolving plans in a way that begins to match the temporal
 > structure of human cognition. Intelligence still comes from what the model
 > does **within** that space; context simply defines how much of the ongoing
-> story the model can keep “alive” at once.
+> story the model can keep <q>alive</q> at once.
 > 
-> **One important detail:** a model’s “context window” is a **shared budget for
+> **One important detail:** a model’s <q>context window</q> is a **shared budget for
 > both input and output** in a single request. System prompts, tools, previous
 > messages, uploaded documents, intermediate reasoning, and the model’s reply
-> all count against the same token limit. So a “400,000 token” or “1,000,000
-> token” model doesn’t just mean you can *send* that many tokens — it means the
+> all count against the same token limit. So a <q>400,000 token</q> or <q>1,000,000
+> token</q> model doesn’t just mean you can *send* that many tokens — it means the
 > **sum of what you send plus what it generates** can’t exceed that window. If
 > you’ve already used ≅300,000 tokens for history and docs on a 400,000 token
 > model, you only have ≅100,000 tokens left for the answer.
@@ -686,13 +743,13 @@ The catch is that not all thoughts and words are created equal. To be effective,
 the model still has to learn which parts of that stream actually matter.
 
 With **hundreds of thousands—and increasingly millions—of tokens** of context,
-the model can now keep most of the relevant history “in mind” at once. That
+the model can now keep most of the relevant history <q>in mind</q> at once. That
 dramatically reduces the need for brittle retrieval logic, aggressive
 summarization, or manual context‑switching strategies.
 
 That’s what makes credible **digital twins of customers, processes, or
 employees** possible: the agent can operate over a long, coherent slice of a
-person’s or system’s recent behavior, instead of constantly paging the “right”
+person’s or system’s recent behavior, instead of constantly paging the <q>right</q>
 shards of context in and out based on a shallow understanding of what ought to
 be in focus.
 
@@ -716,11 +773,11 @@ Models:
   jobs across GPUs and cache shared work.
 
 By Day 1,000, a single high‑end GPU can: *Generate language at or above human
-thought‑speed for hundreds of concurrent “digital workers” at once.*
+thought‑speed for hundreds of concurrent <q>digital workers</q> at once.*
 
 This is what underwrites the cost curve you care about:
 
-- A reasonable “digital worker‑day” of **≅1,000,000 tokens** (mixed retrieval +
+- A reasonable <q>digital worker‑day</q> of **≅1,000,000 tokens** (mixed retrieval +
   reasoning)
 - At inference prices already in the **tens of cents per million tokens** for
   mini‑class models, and low single‑digit dollars for frontier models
@@ -747,9 +804,9 @@ changes:
 - **Aug 2024 — EU AI Act enters into force;** first horizontally scoped safety
   regime with phased obligations; compliance, logging, and risk management move
   up the agenda.
-- **Sep–Dec 2024 — “Reasoning” models (o1 series) arrive;** long‑horizon
-  reasoning, deliberate mode, and better tool use push models beyond “smart
-  autocomplete” into credible **agent cores**.
+- **Sep–Dec 2024 — <q>Reasoning</q> models (o1 series) arrive;** long‑horizon
+  reasoning, deliberate mode, and better tool use push models beyond <q>smart
+  autocomplete</q> into credible **agent cores**.
 - **Jan – Jun 2025 — Cost & scale shift again;** mini/efficient models (e.g.,
   GPT‑4o‑mini) are priced as low as **\$0.15 per 1,000,000 input tokens** and
   **\$0.60 per 1,000,000 output tokens**, enabling **<\$1 a day digital
@@ -798,7 +855,7 @@ evaluations), they saw:
   **$0.60 per 1,000,000 output tokens**) meant ≅1,000,000 tokens a day cost only
   **≅$0.33 – $0.50 a day** in pure inference before tools and evaluations.
 
-For CFOs, this was the moment **“cost per verified outcome”** started to replace
+For CFOs, this was the moment **<q>cost per verified outcome</q>** started to replace
 **FTE hours** as the relevant denominator.
 
 #### AgentOps Became A Thing
@@ -838,7 +895,7 @@ Hype was not the differentiator; **verification discipline** was.
 
 Outside your four walls, several signals confirmed that the shift was real:
 
-- **Adoption.** Majority of large enterprises now report “regularly using”
+- **Adoption.** Majority of large enterprises now report <q>regularly using</q>
   GenAI, with 2025 surveys linking it to measurable cost savings and new
   revenue.
 - **Case evidence.** Klarna’s AI assistant handling **≅⅔ of chats** and ≅**700
@@ -847,7 +904,7 @@ Outside your four walls, several signals confirmed that the shift was real:
   in pilots.
 - **Policy hardening.** The **EU AI Act** went live Aug 2024; **NIST AI RMF**
   became a de facto reference for U.S. risk programs. Logged decisions,
-  provenance, and incident response moved from “nice to have” to expectation.
+  provenance, and incident response moved from <q>nice to have</q> to expectation.
 - **Cost curve.** Vendor pricing documents across 2023–2025 showed step‑downs
   (DevDay cuts, GPT‑4o and mini pricing), closing viability gaps for agentic
   automation and making < $1 a day digital workers credible at scale.
@@ -893,9 +950,9 @@ Across the first 1,000 days, frontier models:
   handling role‑played conflict, coaching, and negotiation scenarios at or above
   typical human baselines.
 
-Static tests established that **“IQ” was no longer the primary bottleneck**.
+Static tests established that **<q>IQ</q> was no longer the primary bottleneck**.
 
-#### Agentic & “Work‑Like” Benchmarks
+#### Agentic & <q>Work‑Like</q> Benchmarks
 
 More relevant for enterprises were benchmarks that look like jobs:
 
@@ -911,7 +968,7 @@ More relevant for enterprises were benchmarks that look like jobs:
 
 #### Live ‑ Fire Agent Arenas
 
-Finally, a set of **“in‑the‑wild” arenas** tested agents in live or semi‑live
+Finally, a set of **<q>in‑the‑wild</q> arenas** tested agents in live or semi‑live
 environments:
 
 - **nof1.ai** - AI trading agents operate with real capital under fixed rules,
@@ -922,15 +979,15 @@ environments:
   calibration and reasoning test.
 - **Time Horizons & The Village (The AI Digest)** - Experiments probing **how
   far into the future agents can plan** before reliability collapses, and how
-  multi‑agent “villages” coordinate, cooperate, or misbehave under open‑ended
+  multi‑agent <q>villages</q> coordinate, cooperate, or misbehave under open‑ended
   objectives.
 - **EQBench live runs (eqbench.com)** - Ongoing evaluations of models’ behavior
   in emotionally charged, interpersonal scenarios—useful for HR, coaching,
   mental health triage, and customer support applications.
 
-These ecosystems collectively answered the question: *“Can an agent own
+These ecosystems collectively answered the question: *<q>Can an agent own
 multi‑step, long‑horizon workflows under uncertainty and still meet human‑grade
-SLAs?”*
+SLAs?</q>*
 
 The answer, by August 2025, is: **yes, in narrow domains, under strong
 verification and policy; not yet universally.**
@@ -939,7 +996,7 @@ verification and policy; not yet universally.**
 
 By **2025**, a typical early‑adopter Large Enterprise looked roughly like this:
 
-- **Where agents “stick”:**
+- **Where agents <q>stick</q>:**
   - L1 support and triage
   - Claims and back‑office adjudication
   - Code Generation and code review assistance
@@ -969,8 +1026,8 @@ of this white paper:
 
 1. **Bandwidth parity (and beyond).** - In terms of **tokens/second** and
    **tokens in context**, models now operate in the same order of magnitude as
-   human speech and thought—and can be replicated across thousands of “digital
-   workers” at once.
+   human speech and thought—and can be replicated across thousands of <q>digital
+   workers</q> at once.
 2. **Task‑level competence parity.** - On exams, coding benchmarks, and many
    structured tasks, frontier models match or exceed median professional
    performance. The **IQ question is largely settled** for a wide set of
@@ -985,8 +1042,8 @@ of this white paper:
    workflows trends toward **≅$0**, and can become **negative** where humans
    introduce variance, latency, or error.
 
-The question for the next 1,000 days is no longer: *“Are the models good
-enough?”*
+The question for the next 1,000 days is no longer: *<q>Are the models good
+enough?</q>*
 
 They are. The decisive questions now are:
 
@@ -1015,9 +1072,9 @@ Inversion happens, when it happens in your domains, and how to run the next
 
 ## The Next 1,000 Days: The Intelligence Inversion
 
-Roughly 1,000 days ago, “AI strategy” meant pilots with chatbots and text
-copilots. Today, most enterprises are somewhere between “every knowledge worker
-has a copilot” and “we’re wiring agents into real systems, but we’re nervous.”
+Roughly 1,000 days ago, <q>AI strategy</q> meant pilots with chatbots and text
+copilots. Today, most enterprises are somewhere between <q>every knowledge worker
+has a copilot</q> and <q>we’re wiring agents into real systems, but we’re nervous.</q>
 
 The next 1,000 days – from **November 2025 to November 2028** – are a different
 phase altogether. Models will reason better, remember longer, act through tools
@@ -1026,7 +1083,7 @@ model can do* to *what the organization is architected to safely allow*.
 
 That is the **Intelligence Inversion**:
 
-> **The primary “intelligence bottleneck” moves from the model to the
+> **The primary <q>intelligence bottleneck</q> moves from the model to the
 > enterprise.** The systems will be capable of deeper reasoning, longer memory,
 > and real action **faster** than most organizations can provide clean data,
 > guardrails, and operating models.
@@ -1044,13 +1101,13 @@ The next 1,000 days are shaped by three overlapping shifts:
 
 1. **From pattern matching to verifiable reasoning** - Reinforced learning with
    verifiable rewards (RLVR), self‑play, and prompt‑time steering techniques are
-   turning “sometimes brilliant, sometimes wrong” LLMs into **more
+   turning <q>sometimes brilliant, sometimes wrong</q> LLMs into **more
    systematically reliable reasoners** in domains where we can check answers.
 2. **From stateless chat to long‑term memory and identity** - Memory
    architectures, memory‑trained agents, and cheap long context give us
    assistants and agents that **persist across months or years**, not just a
    single conversation.
-3. **From “copilots in apps” to “agents in systems”** - Tool‑using,
+3. **From <q>copilots in apps</q> to <q>agents in systems</q>** - Tool‑using,
    planning‑capable agents will increasingly orchestrate real workflows across
    CRMs, ERPs, ITSM, CI/CD, and robotics systems, with **governed autonomy** in
    bounded domains.
@@ -1087,23 +1144,23 @@ then maps them onto a 1,000‑day timeline and concrete enterprise actions.
 
 - In domains where you can define a verifier – code, math, pricing formulas,
   certain compliance checks – you can now **train models to be reliably good**,
-  not just “pretty good on average.”
-- We move from “generic chat model” to **specialist reasoning Models as
+  not just <q>pretty good on average.</q>
+- We move from <q>generic chat model</q> to **specialist reasoning Models as
   Products**:
-  - “High‑precision code reasoning”
-  - “Risk and forecasting reasoning”
-  - “Policy‑aware decision support”
+  - <q>High‑precision code reasoning</q>
+  - <q>Risk and forecasting reasoning</q>
+  - <q>Policy‑aware decision support</q>
 
 ##### Enterprise Implications For Deeper Reasoning: RLVR & Self‑Play For The Next 1,000 Days
 
-- Expect major vendors to ship **“reasoning modes”** as standard, with higher
+- Expect major vendors to ship **<q>reasoning modes</q>** as standard, with higher
   latency and cost but much better reliability.
 - Expect toolchains and recipes for **training small, domain‑specific reasoning
   models** via Reinforcement Learning with Verifiable Rewards (RLVR) to arrive
   in mainstream frameworks.
 - You don’t need to research RLVR – but you should start asking:
-  - “For this workflow, what could count as a verifiable reward?”
-  - “Where would we accept a slower but more trustworthy ‘analysis mode’?”
+  - <q>For this workflow, what could count as a verifiable reward?</q>
+  - <q>Where would we accept a slower but more trustworthy ‘analysis mode’?</q>
 
 #### Long‑Term Memory & Agentic LLMs
 
@@ -1128,8 +1185,8 @@ then maps them onto a 1,000‑day timeline and concrete enterprise actions.
 
 ##### Enterprise Implications For Long‑Term Memory & Agentic LLMs For The Next 1,000 Days
 
-- Expect assistants that **“stay the same person”** across channels (email,
-  docs, tickets, code) with explicit “show, edit, forget” memory controls.
+- Expect assistants that **<q>stay the same person</q>** across channels (email,
+  docs, tickets, code) with explicit <q>show, edit, forget</q> memory controls.
 - Treat AI memory like **regulated data**:
   - Design schemas and scopes up front (personal vs team vs org).
   - Decide what *must not* be remembered (PII, certain regulated data).
@@ -1140,7 +1197,7 @@ then maps them onto a 1,000‑day timeline and concrete enterprise actions.
 #### Long‑Context Efficiency & Infrastructure
 
 - Techniques like **Core Attention Disaggregation (CAD)** offload attention
-  computation to dedicated “attention servers,” enabling 512K–1M+ token contexts
+  computation to dedicated <q>attention servers,</q> enabling 512K–1M+ token contexts
   with reasonable throughput.
 - Hardware–software co‑design (e.g., PLENA‑like accelerators, packing/prefetch
   schedulers, larger on‑chip memories) attacks the **KV‑cache memory wall**,
@@ -1158,7 +1215,7 @@ then maps them onto a 1,000‑day timeline and concrete enterprise actions.
 
 ##### Enterprise Implications For Long‑Context Efficiency & Infrastructure For The Next 1,000 Days
 
-- Plan for **“whole system” questions**: architecture drift, portfolio analysis,
+- Plan for **<q>whole system</q> questions**: architecture drift, portfolio analysis,
   cross‑application impact.
 - Reduce investment in bespoke context‑mangling patterns; increase investment
   in:
@@ -1206,14 +1263,14 @@ then maps them onto a 1,000‑day timeline and concrete enterprise actions.
 
 ##### Why Mechanistic Interpretability & Full‑Stack Safety Matters
 
-- We move from “we tested the model on a benchmark and it seems fine” to **“we
-  can inspect and steer internal features in specific ways.”**
+- We move from <q>we tested the model on a benchmark and it seems fine</q> to **<q>we
+  can inspect and steer internal features in specific ways.</q>**
 - Regulators and internal risk teams begin to ask for **artifacts**, not just
   high‑level scores.
 
 ##### Enterprise Implications For Mechanistic Interpretability & Full‑Stack Safety For The Next 1,000 Days
 
-- Expect commercial **“model X‑ray” tools**: dashboards, feature probes, hooks
+- Expect commercial **<q>model X‑ray</q> tools**: dashboards, feature probes, hooks
   for controlling or editing behavior.
 - For high‑risk domains (finance, health, critical infrastructure), buyers will
   be expected to show:
@@ -1242,7 +1299,7 @@ then maps them onto a 1,000‑day timeline and concrete enterprise actions.
 - If you touch physical operations (warehouses, logistics, manufacturing,
   mobility), expect:
   - Simulation‑centric tooling for training and validating policies.
-  - Vendors advertising “world‑model‑powered” digital twins and robots.
+  - Vendors advertising <q>world‑model‑powered</q> digital twins and robots.
 - Even if you’re not in robotics, the same ideas show up as **scenario
   simulation**:
   - What if we changed this routing policy?
@@ -1262,13 +1319,13 @@ the right signals and levers to these simulators?**
 
 ##### Why Multimodal Video & Physically‑Aware Generation Matters
 
-- Video stops being a “dumb blob” of pixels over a timeline and becomes
+- Video stops being a <q>dumb blob</q> of pixels over a timeline and becomes
   **structured, searchable, and generatable data**.
 - Enterprises get:
   - Text‑to‑video tools good enough for **marketing, training, and explainers**.
   - Video QA and analytics for **inspection, sports, security, and operations**
-    that can answer “why” and “what likely happened,” not just “what’s in the
-    frame.”
+    that can answer <q>why</q> and <q>what likely happened,</q> not just <q>what’s in the
+    frame.</q>
 
 ##### Enterprise Implications For Multimodal Video & Physically‑Aware Generation For The Next 1,000 Days
 
@@ -1282,14 +1339,14 @@ the right signals and levers to these simulators?**
 
 - Dedicated surveys and benchmarks for AI Models now focus on **agents and tool
   use**: planning, robustness, safety, and real‑world API interaction.
-- New benchmarks test not just “can you call the tool?” but “**should** you call
-  it, and how often, and in what order?”
+- New benchmarks test not just <q>can you call the tool?</q> but <q>**should** you call
+  it, and how often, and in what order?</q>
 - Agent training methods synthesize **environments and tasks** to teach
   planning, not just single turns.
 
 ##### Why LLM Agents, Tool Learning & Planning Matters
 
-- Agents move from “fancy macros that call APIs” to entities that can:
+- Agents move from <q>fancy macros that call APIs</q> to entities that can:
   - Break down goals
   - Plan across multiple steps
   - Decide when not to act
@@ -1301,7 +1358,7 @@ the right signals and levers to these simulators?**
 
 ##### Enterprise Implications For LLM Agents, Tool Learning & Planning For The Next 1,000 Days
 
-- Expect **“digital workers”** for well‑scoped workflows:
+- Expect **<q>digital workers</q>** for well‑scoped workflows:
   - Ticket triage and resolution.
   - Common IT operations.
   - Routine finance and revenue operations.
@@ -1331,7 +1388,7 @@ the right signals and levers to these simulators?**
 - Watch this space, but don’t bet the roadmap on it yet.
 - Expect early products in:
   - Low‑power on‑device agents.
-  - Specialized sensors or industrial devices that “learn on the job.”
+  - Specialized sensors or industrial devices that <q>learn on the job.</q>
 
 ### The Next 1,000‑Day Timeline
 
@@ -1346,12 +1403,12 @@ There’s no precise clock, but you can think in **three overlapping phases**.
   and structured decision‑making.
 
 - First **serious long‑term memory features** in mainstream assistants:
-  - Project‑level memories, preferences, simple “show/forget” controls.
+  - Project‑level memories, preferences, simple <q>show/forget</q> controls.
 - **Long‑context Products** (≅512,000 – 1,000,000 tokens) offered as enterprise
   versions.
 - **FP8** becomes standard for large‑scale training; **FP4 and 1‑bit** start to
   appear in internal and niche workloads.
-- Enterprises standardize on **agent frameworks for “read and suggest”**
+- Enterprises standardize on **agent frameworks for <q>read and suggest</q>**
   workflows, keeping write/execute permissions constrained.
 
 ##### Business Consequences
@@ -1449,7 +1506,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
   - Reinforcement Learning with Verifiable Rewards and self‑play become routine
     for post‑training on specialized tasks
 - **Business models**:
-  - Vendors selling **“AI operating layers”** – bundled reasoning engines, world
+  - Vendors selling **<q>AI operating layers</q>** – bundled reasoning engines, world
     models, memory, and safety tooling
   - **Outcome‑based pricing:** resolved tickets, uptime improvements, throughput
     gains
@@ -1464,7 +1521,7 @@ There’s no precise clock, but you can think in **three overlapping phases**.
 - Align with emerging **regulatory and standards frameworks** for AI safety,
   logging, and interpretability.
 
-### The “Science → Engineering → Product → Value” Lens
+### The <q>Science → Engineering → Product → Value</q> Lens
 
 A useful way to reason about all of this is as a pipeline:
 
@@ -1492,8 +1549,8 @@ A useful way to reason about all of this is as a pipeline:
    - Phase 2: Workflow automation and improved reliability.
    - Phase 3: New operating models and new products.
 
-As a leader, your main job is to **shorten the distance from “science exists” to
-“we can safely use the products built on it.”** That means:
+As a leader, your main job is to **shorten the distance from <q>science exists</q> to
+<q>we can safely use the products built on it.</q>** That means:
 
 - Cleaning data and system boundaries.
 - Defining **tooling and governance layers** now, before agents get powerful.
@@ -1518,8 +1575,8 @@ As a leader, your main job is to **shorten the distance from “science exists�
   - Logging, observability, and safety hooks for agents.
 - Make **data and system boundaries legible** to AI:
   - Clear ownership, clean contracts, consistent metadata.
-- Plan for tests like “if an agent had correct access, could it *safely*
-  automate this workflow?”
+- Plan for tests like <q>if an agent had correct access, could it *safely*
+  automate this workflow?</q>
 
 #### For Planners & Portfolio Leaders
 
@@ -1545,7 +1602,7 @@ As a leader, your main job is to **shorten the distance from “science exists�
 
 ### Closing: Designing For The Intelligence Inversion
 
-By 2028, the novelty of “having AI in the loop” will have faded. What will
+By 2028, the novelty of <q>having AI in the loop</q> will have faded. What will
 differentiate organizations is not *whether* they use AI, but **how
 intelligently their systems, data, and governance are arranged around it.**
 
@@ -1651,7 +1708,7 @@ on well‑specified tasks.
 
 #### Cost ‑ Curve Collapse
 
-Inference costs per unit of “reasoning” (tokens) have been falling rapidly. With
+Inference costs per unit of <q>reasoning</q> (tokens) have been falling rapidly. With
 current and emerging efficiency gains, it is entirely plausible for an agent
 consuming **on the order of 1 million tokens per day** to cost **well under a
 dollar per day** in raw compute.
@@ -1673,7 +1730,7 @@ compute and spinning up instances**.
 Once you have a vetted agent template for a given workflow, you can:
 
 - Deploy thousands of copies simultaneously
-- “Retrain” your entire digital workforce via a model or policy update
+- <q>Retrain</q> your entire digital workforce via a model or policy update
 - Scale up or down by adjusting compute allocation
 
 This simultaneity compresses adjustment periods: capacity jumps in **step
@@ -1683,13 +1740,13 @@ changes**, not gradual curves.
 
 Agents don’t fatigue. You can:
 
-- Run many “agent workdays” in a single calendar day
+- Run many <q>agent workdays</q> in a single calendar day
 - Use **off‑hours compute** to pre‑compute plans, draft documents, or explore
   scenarios
 - Run multiple scenarios in parallel rather than serially
 
-Throughput and latency expectations shift accordingly; what was once “next week”
-becomes “later today.”
+Throughput and latency expectations shift accordingly; what was once <q>next week</q>
+becomes <q>later today.</q>
 
 ### Why The Marginal Value Of Average Cognitive Labor Trends To Zero (& Sometimes Negative)
 
@@ -1743,7 +1800,7 @@ This doesn’t feel like a smooth, linear substitution. It behaves more like a
 
 #### Stack Completeness
 
-The jump from “smart intern” to “autonomous contributor” depends on the
+The jump from <q>smart intern</q> to <q>autonomous contributor</q> depends on the
 **stack**, not just the base model:
 
 - Planner
@@ -1752,7 +1809,7 @@ The jump from “smart intern” to “autonomous contributor” depends on the
 - Verifiers and judges
 - Observability and rollback
 
-Once that stack is “good enough” for a domain, productivity doesn’t creep up—it
+Once that stack is <q>good enough</q> for a domain, productivity doesn’t creep up—it
 **snaps** to a new equilibrium.
 
 #### Fleet Upgrades
@@ -1769,7 +1826,7 @@ by updating one artifact.
 
 #### Vendor Packaging & Guarantees
 
-As vendors start offering **“workforce‑as‑a‑service”**:
+As vendors start offering **<q>workforce‑as‑a‑service</q>**:
 
 - Clear SLOs for quality and latency
 - Financial remedies for failures
@@ -1813,8 +1870,8 @@ Key characteristics:
   you can swap models and policies
 
 As more value flows through agents instead of humans, **compute +
-orchestration** starts to look like the primary capital base for “intelligence
-production.”
+orchestration** starts to look like the primary capital base for <q>intelligence
+production.</q>
 
 #### Labor ‑ Market Dynamics: Sequencing & Heterogeneity
 
@@ -1896,7 +1953,7 @@ You get a structural funding gap unless you:
 > That gap matters directly for your customers. If UBI and other supports fail
 > to keep pace, large segments of the population may **not reliably cover
 > housing, food, healthcare, and energy**, let alone discretionary spend. That
-> doesn’t just dent “premium” categories; it **resets the effective standard of
+> doesn’t just dent <q>premium</q> categories; it **resets the effective standard of
 > living downward**, producing fragile demand, higher volatility in purchasing,
 > and rising defaults as household balance sheets structurally weaken. For
 > enterprises, this shows up as **thinner demand curves, shorter customer
@@ -1974,7 +2031,7 @@ roles have different levers.
   - Observability and policy
 - Design for **compute capital** as a core asset:
   - Multi‑tenant orchestration across use cases
-  - Ability to redeploy compute between “digital workers” quickly
+  - Ability to redeploy compute between <q>digital workers</q> quickly
   - Clear separation between model, policy, tools, and data
 - Build **detection mechanisms** for inversion points:
   - Where workflows meet the criteria in §5.5
@@ -2002,7 +2059,7 @@ roles have different levers.
 
 - Start from **unit of work**, not features:
   - Tickets resolved, claims adjudicated, cases processed, briefs written
-  - Ask: “What would an agent owning this end‑to‑end look like?”
+  - Ask: <q>What would an agent owning this end‑to‑end look like?</q>
 - Design products with **agents in the critical path and humans around the
   loop**:
   - Clear escalation channels
@@ -2022,7 +2079,7 @@ Once you accept that:
 
 …a new constraint comes into focus:
 
-> **Every marginal unit of “intelligence” you buy is ultimately a marginal unit
+> **Every marginal unit of <q>intelligence</q> you buy is ultimately a marginal unit
 > of energy and physical infrastructure.**
 
 As organizations and nations race to build and operate ever‑larger fleets of
@@ -2039,7 +2096,7 @@ boundaries. It also changes:
 
 - Which regions can sustain dense clusters of compute capital
 - How we finance and govern the build‑out of AI‑specific infrastructure
-- How “civic compute” and public‑interest AI might be provisioned alongside
+- How <q>civic compute</q> and public‑interest AI might be provisioned alongside
   commercial capacity
 
 That’s the next layer of the story.
@@ -2057,7 +2114,7 @@ This chapter goes one layer down:
 
 > If compute is the new capital stock, **energy is the gating input**. Over the
 > next 1,000 days, the ability to secure, shape, and efficiently use power will
-> set the real boundary on how much “intelligence” you can deploy.
+> set the real boundary on how much <q>intelligence</q> you can deploy.
 
 We’ll cover:
 
@@ -2174,7 +2231,7 @@ $$\mathrm{ECI_{tokens}} = 10^{6} \cdot \frac{\text{kWh consumed}}{\text{tokens p
 - **ECI_tokens** is useful for comparing **raw model / infra efficiency** across
   stacks.
 
-#### Why “per Verified Outcome” Matters
+#### Why <q>per Verified Outcome</q> Matters
 
 Agents that fail verification don’t just waste time; they waste energy. Tying
 energy to *verified* outputs:
@@ -2238,7 +2295,7 @@ Practical siting heuristics:
 
 #### Procurement: From Annual RECs To 24/7 CFE Portfolios
 
-Buying enough “green power” on an **annual** MWh basis is now table stakes. The
+Buying enough <q>green power</q> on an **annual** MWh basis is now table stakes. The
 leading edge is moving to **24/7 carbon‑free energy (CFE)**:
 
 - Matching consumption **hour‑by‑hour** with carbon‑free supply
@@ -2335,7 +2392,7 @@ At minimum, boards and executive committees should see:
 
 #### Promotion Thresholds To Scale A Site Or Cluster
 
-Before you double or triple a site’s AI load, you should be able to say “yes” to
+Before you double or triple a site’s AI load, you should be able to say <q>yes</q> to
 something like:
 
 - **PUE ≤ 1.2** under p95 ambient conditions
@@ -2466,8 +2523,8 @@ leaders have different levers.
   - How much they cost
   - How you price or bundle them
 - Use **ECI_outcome** as part of your internal business case:
-  - “What does it cost us, in kWh and carbon, to deliver this AI feature per
-    transaction?”
+  - <q>What does it cost us, in kWh and carbon, to deliver this AI feature per
+    transaction?</q>
 - Where appropriate, turn efficient, low‑carbon AI into a **customer‑visible
   differentiator**.
 
@@ -2569,7 +2626,7 @@ In an agentic economy:
 
 Result:
 
-- The classic “rates → borrowing → hiring” channel weakens.
+- The classic <q>rates → borrowing → hiring</q> channel weakens.
 - Policy levers need to tilt more toward:
   - **Credit and procurement** targeted at civic compute, public‑interest AI,
     and infrastructure
@@ -2597,7 +2654,7 @@ Two redistribution levers gain importance:
    - Public or shared ownership stakes in large compute pools.
    - Governance mechanisms to allocate capacity to public goods.
 
-Without these, you risk a narrow layer of “compute landlords” and a broad base
+Without these, you risk a narrow layer of <q>compute landlords</q> and a broad base
 with access only as customers, not owners.
 
 #### Public Finance & Safety Nets
@@ -2621,7 +2678,7 @@ More plausible safety nets look like:
 
 #### National Competitiveness
 
-Competitiveness indices need to grow beyond “STEM grads + broadband”.
+Competitiveness indices need to grow beyond <q>STEM grads + broadband</q>.
 
 You’ll see metrics like:
 
@@ -2655,12 +2712,12 @@ These **process moats** compound:
 Data is necessary but not sufficient. The compounding advantage lives in
 **agentic workflow design**.
 
-#### Simultaneity & “workforce‑As‑A‑Service”
+#### Simultaneity & <q>workforce‑As‑A‑Service</q>
 
 Because agents are software:
 
 - A single stack upgrade can roll out to **thousands of agents overnight**.
-- Vendors can sell “**workforce‑as‑a‑service**”:
+- Vendors can sell <q>**workforce‑as‑a‑service**</q>:
   - SLOs for resolution rate, quality, and latency
   - Indemnities and penalties for failures
   - Continuous improvement baked into the contract
@@ -2672,7 +2729,7 @@ This compresses procurement cycles:
 
 #### Attention & Experience Moats
 
-As the marginal cost of “thinking” approaches zero, revenue models skew toward:
+As the marginal cost of <q>thinking</q> approaches zero, revenue models skew toward:
 
 - **Capturing, holding, and directing attention**
 - Curating **trusted experiences** in an AI‑saturated environment
@@ -2702,7 +2759,7 @@ The Intelligence Inversion does **not** hit every role at once. Likely sequence:
 
    - Dashboards, simulators, and verifiers reduce the need for layers focused on
      status collection and coordination.
-   - Spans of control widen; the middle “coordination sandwich” thins.
+   - Spans of control widen; the middle <q>coordination sandwich</q> thins.
 
 3. **Regulated professional services**
 
@@ -2727,7 +2784,7 @@ Before layoffs, you often see **hiring pauses**:
 Consequences:
 
 - Fewer on‑ramps for early‑career workers.
-- Reduced time in “apprenticeship roles” that teach tacit skills.
+- Reduced time in <q>apprenticeship roles</q> that teach tacit skills.
 - Persistent scars for cohorts that enter during periods of aggressive
   agentization.
 
@@ -2806,7 +2863,7 @@ banks.
 
 #### Public Procurement & Civic Compute
 
-Governments will need to buy not just “models,” but:
+Governments will need to buy not just <q>models,</q> but:
 
 - **Verifier libraries** (for policy and legal compliance).
 - **Agent platforms** and orchestration frameworks.
@@ -2875,8 +2932,8 @@ AgentOps sits at the intersection of **SRE, MLOps, security, and compliance**.
 
 For each agentic workflow, the question becomes:
 
-> “What is the cheapest, most reliable way to know if this output is
-> acceptable?”
+> <q>What is the cheapest, most reliable way to know if this output is
+> acceptable?</q>
 
 That means:
 
@@ -2906,7 +2963,7 @@ Good practice:
   - Task‑bounded entitlements
   - Explicit deny lists for high‑risk actions
 - Enforce policies at the **tool boundary**, not just inside prompts:
-  - E.g., “this agent may read tickets but never touch payroll APIs.”
+  - E.g., <q>this agent may read tickets but never touch payroll APIs.</q>
   - Policy engines that evaluate every attempted action.
 
 This aligns security, compliance, and operations around agents as **first‑class
@@ -3053,14 +3110,14 @@ hold different pieces of the response.
 
 - Think in **units of work**, not features:
   - Claims resolved, tickets closed, orders processed, cases handled.
-  - Ask: “What would an agent‑first version of this look like, with humans
-    around the loop?”
+  - Ask: <q>What would an agent‑first version of this look like, with humans
+    around the loop?</q>
 - Design clear **customer‑facing narratives**:
   - When are you talking to an agent vs. a human?
   - How can customers escalate, override, or get explanations?
 - Track:
   - Quality and satisfaction across human‑only vs. agent‑first flows.
-  - The economics of **verified outcomes**, not just “number of AI calls.”
+  - The economics of **verified outcomes**, not just <q>number of AI calls.</q>
 
 ### From Economics To New Roles & Organizational Shape
 
@@ -3114,7 +3171,7 @@ We’ll cover:
 
 1. The new core roles in an agent‑first enterprise
 2. How legacy roles map into these new profiles
-3. What these roles actually *do* (role “cards”)
+3. What these roles actually *do* (role <q>cards</q>)
 4. How to transition talent without breaking the plane mid‑flight
 5. The KPIs and dashboards that make this governable
 6. What different leadership groups should focus on
@@ -3123,8 +3180,8 @@ We’ll cover:
 
 ### The New Core Roles In An Agent‑First Enterprise
 
-In an intelligence‑inverted firm, your critical path is no longer “human →
-system → human.” It’s **agent → tool → verifier → human (for exceptions)**. That
+In an intelligence‑inverted firm, your critical path is no longer <q>human →
+system → human.</q> It’s **agent → tool → verifier → human (for exceptions)**. That
 demands a different cast of characters.
 
 #### Core New Roles
@@ -3157,7 +3214,7 @@ demands a different cast of characters.
 These roles sit on top of your existing disciplines (architecture, SRE, QA,
 data, risk). They are **evolution paths**, not random net‑new titles.
 
-#### Legacy → New Role Mapping (“Rosetta Stone”)
+#### Legacy → New Role Mapping (<q>Rosetta Stone</q>)
 
 You don’t get to hire an entirely new company. Most of this capability comes
 from **re‑badging and re‑skilling** existing roles.
@@ -3194,7 +3251,7 @@ Here’s how typical legacy roles map into the new ones:
 | **Support Ops (L1/L2)**                        | Triage, playbooks, escalations.                                                                                                                                              | **Agent SRE/Observer**                                           | Operates incident taxonomy for agents; tunes fallbacks/blacklists; manages escalation ratios and human‑in‑the‑loop placement.                                                                                                       | Prompt & Policy Engineer                                                                     |
 {: .table .table-striped .table-hover}
 
-#### New Role “Cards” (What These People Actually Do)
+#### New Role <q>Cards</q> (What These People Actually Do)
 
 Short, concrete descriptions you can drop straight into role charters.
 
@@ -3336,7 +3393,7 @@ Short, concrete descriptions you can drop straight into role charters.
   - Define approval gates and evidence requirements.
   - Run at least one scenario exercise per high‑risk service line.
 
-#### One‑Liners You Can Paste Under “New Roles”
+#### One‑Liners You Can Paste Under <q>New Roles</q>
 
 - **Agent Architect** — Designs and standardizes multi‑agent workflows (planner
   → tools → verifiers → fallback) with SLOs, safety, and upgrade/rollback paths
@@ -3404,14 +3461,14 @@ use them as proof points.
 
 Tie OKRs directly to the KPIs above. For example:
 
-- Verification Engineer: **“Residual error < X% with Y% coverage by end of
-  Q4.”**
-- Agent SRE: **“SLO attainment ≥ 99%, cost per resolved ticket ↓ 15% YoY.”**
-- Data Steward: **“Provenance coverage ≥ 90% of retrieval corpus.”**
-- Prompt & Policy: **“Policy‑violation incidents ↓ 50% while reviewer time ↓
-  25%.”**
+- Verification Engineer: **<q>Residual error < X% with Y% coverage by end of
+  Q4.</q>**
+- Agent SRE: **<q>SLO attainment ≥ 99%, cost per resolved ticket ↓ 15% YoY.</q>**
+- Data Steward: **<q>Provenance coverage ≥ 90% of retrieval corpus.</q>**
+- Prompt & Policy: **<q>Policy‑violation incidents ↓ 50% while reviewer time ↓
+  25%.</q>**
 
-This makes “new roles” feel like **real jobs**, not rebranded experiments.
+This makes <q>new roles</q> feel like **real jobs**, not rebranded experiments.
 
 - **Performance contracts (first year)** - Tie each role’s OKRs to the **KPIs**
   listed above (e.g., Verification owns *residual error ≤ X*; Agent SRE owns
@@ -3491,8 +3548,8 @@ This chapter is inherently cross‑functional. Here’s how to slice it by role.
 #### CHROs & People Leaders
 
 - Redesign **job families** and **ladders**:
-  - From “analyst → senior analyst → manager” to “verifier → agent architect →
-    service‑line owner.”
+  - From <q>analyst → senior analyst → manager</q> to <q>verifier → agent architect →
+    service‑line owner.</q>
   - From generic ops roles to **exception, trust, and governance** tracks.
 - Build **internal academies** for AgentOps, Verification, and Prompt & Policy.
 - Protect early‑career entrants with **apprenticeship‑style** roles and
@@ -3531,7 +3588,7 @@ Taken together, they imply a simple but demanding mandate:
 > organization**—one that treats intelligence as a managed utility, not a
 > sporadic project.
 
-The natural next question is *“What do we do when?”*:
+The natural next question is *<q>What do we do when?</q>*:
 
 - Which roles should exist **by when**?
 - Which workflows should be agentized in **Phase 1 vs. Phase 2 vs. Phase 3**?
@@ -3600,7 +3657,7 @@ visibility.
   * Autonomy index (how much of the flow is agent‑driven),
   * Verifier coverage and escape rate,
   * MTTR for agent incidents.
-* Negotiate **multi‑model contracts** and portability clauses: at least one “shadow model” for critical workloads to avoid single‑vendor
+* Negotiate **multi‑model contracts** and portability clauses: at least one <q>shadow model</q> for critical workloads to avoid single‑vendor
     lock‑in.
 * Stand up an **internal red‑team program**:
   * Prompt injection, tool abuse, mis‑routing, persuasion attempts.
@@ -3621,7 +3678,7 @@ visibility.
 
 #### End of Year 1 → End of Year 2: From Copilots to Digital Workers
 
-**Goal:** Scale from “strong copilots” to **digital workers** owning whole slices of work, with mature AgentOps and risk management.
+**Goal:** Scale from <q>strong copilots</q> to **digital workers** owning whole slices of work, with mature AgentOps and risk management.
 
 * **Scale agent coverage** in selected domains:
   * Aim for **30–50%+ of L1/L2 volume** in support, standard ops, or back‑office
@@ -3917,8 +3974,8 @@ this paper.
    will be achieved and sustained for at least 180 days.
 
 If a domain fails to meet these thresholds under comparable compute access and
-governance, the thesis that “agents belong in the critical path with
-verification‑first engineering” would need revision.
+governance, the thesis that <q>agents belong in the critical path with
+verification‑first engineering</q> would need revision.
 
 ### Research Agenda (workstreams & Objectives)
 
@@ -3928,7 +3985,7 @@ verification‑first engineering” would need revision.
 - *Work:* Property‑based tests; oracle construction; secondary‑model verifiers;
   statistical acceptance sampling; confidence‑calibrated routing.
 - *Deliverables:* Open verifier libraries and measurement protocols per domain;
-  “eval‑as‑code” CI pipelines.
+  <q>eval‑as‑code</q> CI pipelines.
 
 #### W2 — Long‑Horizon Planning & Reliability
 
@@ -4149,7 +4206,7 @@ principal private good and **coordinated time** the principal public good.
 - Every agentic workflow must publish **time-to-outcome** alongside cost.
 - Public programs target $T_{\Delta} \geq 5$ hours a week for median households within 24 months, using UPAIs to remove administrative burdens (benefits, taxes, scheduling).
 - Enterprises report WFR deltas for affected roles as a condition of claiming
-  “AI-driven productivity” in ESG or investor communications.
+  <q>AI-driven productivity</q> in ESG or investor communications.
 
 ### Education: From Content Coverage To Capability Formation
 
@@ -4187,7 +4244,7 @@ than human defenses, risking wireheading and polarization.
 #### Architecture
 
 - **Attention Charter**: binding commitments for products that deploy persuasive
-  optimization—disclosure, manipulation budgets, and user‑set “risk knobs.”
+  optimization—disclosure, manipulation budgets, and user‑set <q>risk knobs.</q>
 - **Provenance & Context**: cryptographic provenance and human‑readable source
   capsules embedded in media.
 - **Deliberation Spaces**: moderated, agent‑assisted forums with verifiable
@@ -4223,7 +4280,7 @@ continuity of care, learning, and services.
 #### Controls
 
 - Local‑first storage where feasible; encrypted sync; audit‑ready access logs;
-  “forget me” operations that propagate through caches and retrievers with
+  <q>forget me</q> operations that propagate through caches and retrievers with
   proofs.
 
 ### Emotional & Relational Safety
@@ -4282,10 +4339,10 @@ All metrics must be auditable and tied to verifiers.
 
 | **Failure Mode**                                     | **Symptom / Early Warning**                                                                | **Countermeasure / Mitigation Strategy**                                                                                                                                                   |
 |------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Verification Debt**                                | AI systems make confident but wrong decisions; “shadow errors” discovered post-deployment. | Adopt **verification-first engineering**; treat evaluations as code; enforce promotion gates (≥95% coverage, ≤0.5% escape). Maintain evaluator libraries and continuous EvalOps pipelines. |
+| **Verification Debt**                                | AI systems make confident but wrong decisions; <q>shadow errors</q> discovered post-deployment. | Adopt **verification-first engineering**; treat evaluations as code; enforce promotion gates (≥95% coverage, ≤0.5% escape). Maintain evaluator libraries and continuous EvalOps pipelines. |
 | **Data Provenance & Poisoning Risk**                 | Model drift, hallucination, or unexplained errors after retraining.                        | Require **dataset SBOMs**, provenance scoring, and poisoning audits. Use quarantine policies and signed data sources.                                                                      |
 | **Compute / Model Vendor Lock-In**                   | Migration to other models or clouds infeasible without major redesign.                     | Implement **capability interfaces** and **portability metrics**; test workflows on ≥2 providers with ≤2-pt outcome deltas.                                                                 |
-| **Ethical Misalignment / Manipulation**              | Models subtly optimize for engagement or convenience over user welfare.                    | Integrate **manipulation classifiers**, user “risk knobs,” disclosure UX, and welfare-aligned optimization. Conduct red-team testing.                                                      |
+| **Ethical Misalignment / Manipulation**              | Models subtly optimize for engagement or convenience over user welfare.                    | Integrate **manipulation classifiers**, user <q>risk knobs,</q> disclosure UX, and welfare-aligned optimization. Conduct red-team testing.                                                      |
 | **Regulatory / Compliance Drift**                    | Model behavior or data handling no longer compliant with evolving law.                     | Maintain **policy-aware prompts**, traceable model cards, and automatic compliance testing in CI/CD. Engage Compliance in AgentOps.                                                        |
 | **Security & Identity Breach**                       | Unauthorized agent actions, data leaks, or credential misuse.                              | Assign **per-agent identities** and scoped credentials; enforce least privilege; enable hardware-backed key custody and kill-switch drills.                                                |
 | **Energy & Cost Blowout**                            | Rising GPU costs, uncontrolled token usage, or unsustainable power draw.                   | Track **ECI_outcome** (kWh per verified outcome) and **cost per verified outcome**; adopt carbon-aware scheduling and caching.                                                             |
