@@ -369,29 +369,40 @@ mark {
 }
 
 /* ============================================================================
-   ALTERNATIVE: GREEN GLOWING HIGHLIGHTER STYLE
+   GLOWING HIGHLIGHTER STYLE (Variable Color System)
    Source: https://stackoverflow.com/a (Matt Pi, modified by community)
    Retrieved 2025-11-22, License: CC BY-SA 4.0
-   Creates a glowing green highlight with soft shadows and rounded edges
+   Creates a glowing highlight with soft shadows and rounded edges
+   Color is customizable via CSS variables with calculated text colors
    ============================================================================ */
 
-mark.green-glow {
+mark.glow {
+  /* Define base glow color (green by default) */
+  --glow-r: 130;
+  --glow-g: 255;
+  --glow-b: 173;
+  
+  /* Calculate dark text color: darken by 95% and shift toward glow color */
+  --text-r: calc(var(--glow-r) * 0.05);
+  --text-g: calc(var(--glow-g) * 0.20);
+  --text-b: calc(var(--glow-b) * 0.14);
+  
   font-weight: bolder;
   background: 
     linear-gradient(
       104deg, 
-      rgba(130, 255, 173, 0) 0.9%, 
-      rgba(130, 255, 173, 1.25) 2.4%, 
-      rgba(130, 255, 173, 0.5) 5.8%, 
-      rgba(130, 255, 173, 0.1) 93%, 
-      rgba(130, 255, 173, 0.7) 96%, 
-      rgba(130, 255, 173, 0) 98%
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%, 
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 1.25) 2.4%, 
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 5.8%, 
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.1) 93%, 
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.7) 96%, 
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 98%
     ), 
     linear-gradient(
       183deg, 
-      rgba(130, 255, 173, 0) 0%, 
-      rgba(130, 255, 173, 0.3) 7.9%, 
-      rgba(130, 255, 173, 0) 15%
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%, 
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.3) 7.9%, 
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
     );
   padding: 0.6em 13.7px;
   line-height: 1.2em;
@@ -399,29 +410,73 @@ mark.green-glow {
   -webkit-box-decoration-break: clone;
   margin: 0;
   border-radius: 7.5px;
+  /* WCAG AAA: Calculated dark text shifted toward glow color */
+  color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 }
 
-/* Dark mode variant: deeper glow with adjusted shadows for dark backgrounds */
+/* Dark mode variant: deeper glow with light text tinged with glow color */
 @media (prefers-color-scheme: dark) {
-  mark.green-glow {
-    color: var(--bs-card-color)  !important;
+  mark.glow {
+    /* Darker, more subdued glow color for dark backgrounds */
+    --glow-r: 80;
+    --glow-g: 200;
+    --glow-b: 120;
+    
+    /* Calculate light text: brighten to 85% white + 15% glow color */
+    --text-r: calc(255 * 0.85 + var(--glow-r) * 0.15);
+    --text-g: calc(255 * 0.85 + var(--glow-g) * 0.15);
+    --text-b: calc(255 * 0.85 + var(--glow-b) * 0.15);
+    
     background: 
       linear-gradient(
         104deg, 
-        rgba(80, 200, 120, 0) 0.9%,
-        rgba(80, 200, 120, 0.9) 2.4%,
-        rgba(80, 200, 120, 0.4) 5.8%,
-        rgba(80, 200, 120, 0.08) 93%,
-        rgba(80, 200, 120, 0.5) 96%,
-        rgba(80, 200, 120, 0) 98%
+        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
+        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.9) 2.4%,
+        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.4) 5.8%,
+        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.08) 93%,
+        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 96%,
+        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 98%
       ), 
       linear-gradient(
         183deg, 
-        rgba(80, 200, 120, 0) 0%,
-        rgba(80, 200, 120, 0.25) 7.9%,
-        rgba(80, 200, 120, 0) 15%
+        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%,
+        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.25) 7.9%,
+        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
       );
+    /* WCAG AAA: Calculated light text with glow color tinge */
+    color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
   }
+}
+
+[data-bs-theme="dark"] mark.glow {
+  /* Darker, more subdued glow color for dark backgrounds */
+  --glow-r: 80;
+  --glow-g: 200;
+  --glow-b: 120;
+  
+  /* Calculate light text: brighten to 85% white + 15% glow color */
+  --text-r: calc(255 * 0.85 + var(--glow-r) * 0.15);
+  --text-g: calc(255 * 0.85 + var(--glow-g) * 0.15);
+  --text-b: calc(255 * 0.85 + var(--glow-b) * 0.15);
+  
+  background: 
+    linear-gradient(
+      104deg, 
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.9) 2.4%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.4) 5.8%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.08) 93%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 96%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 98%
+    ), 
+    linear-gradient(
+      183deg, 
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.25) 7.9%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
+    );
+  /* WCAG AAA: Calculated light text with glow color tinge */
+  color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 }
 
 
@@ -431,7 +486,7 @@ mark.green-glow {
 
 ## Executive Summary
 
-<mark class="green-glow">The first 1,000 days of AI validated the path from science through engineering
+<mark class="glow">The first 1,000 days of AI validated the path from science through engineering
 and into production; the <strong>next</strong> 1,000 will be won on <strong>economics, business
 strategy, and user trust</strong>.</mark>
 
@@ -447,7 +502,7 @@ strategy, and user trust</strong>.</mark>
   contract for diversified compute and energy; instrument your workflows.</mark>
 - <mark><strong>Lead on trust.</strong> Manipulation defenses, provenance, disclosure, and appeals
   protect the brand and pre‑empt regulation.</mark>
-- <mark class="green-glow"><strong>Invest where it compounds.</strong> Verification libraries, observability, and
+- <mark class="glow"><strong>Invest where it compounds.</strong> Verification libraries, observability, and
   compute efficiency compound across every use case.</mark>
 - <mark><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
