@@ -124,7 +124,7 @@ article p {
     var(--bs-success-border-subtle)
   );
   background-size: 100% 1px;
-  background-position: 0 100%;
+  background-position: 0 calc(100% - 2px); /* 2px up from bottom */
   background-repeat: no-repeat;
 }
 
