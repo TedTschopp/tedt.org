@@ -114,12 +114,15 @@ article p {
   padding-bottom: 0.0rem;
   font-size: 6rem;
   font-weight: 100;
-  border-bottom: 1px solid var(--bs-success-border-subtle);
   color: var(--bs-success-text-emphasis);
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-variant-ligatures: discretionary-ligatures;
   text-align: left;
   text-wrap: balance;
+  text-decoration: underline;
+  text-decoration-color: var(--bs-success-border-subtle);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0; /* Positions line at baseline */
 }
 
 .article h3 {
@@ -152,9 +155,9 @@ article p {
 /* Dark mode: switch to gold colors */
 @media (prefers-color-scheme: dark) {
   .article h2 {
-    border-bottom-color: var(--bs-accent2-border-subtle) !important;
     color: var(--bs-accent2-text-emphasis) !important;
-  }
+    text-decoration-color: var(--bs-accent2-border-subtle) !important;
+}
 
   .article h3 {
     color: var(--bs-accent2) !important;
@@ -170,8 +173,8 @@ article p {
 }
 
 [data-bs-theme="dark"] .article h2 {
-  border-bottom-color: var(--bs-accent2-border-subtle) !important;
   color: var(--bs-accent2-text-emphasis) !important;
+  text-decoration-color: var(--bs-accent2-border-subtle) !important;
 }
 
 [data-bs-theme="dark"] .article h3 {
@@ -387,10 +390,11 @@ mark.green-glow {
   -webkit-box-decoration-break: clone;
   margin: 0;
   border-radius: 7.5px;
+  /* This isn't working for me
   text-shadow: 
     -12px 12px 9.8px rgba(130, 255, 173, 0.7), 
     21px -18.1px 7.3px rgba(255, 255, 255, 1), 
-    -18.1px -27.3px 30px rgba(255, 255, 255, 1);
+    -18.1px -27.3px 30px rgba(255, 255, 255, 1); */
 }
 
 /* Dark mode variant: deeper glow with adjusted shadows for dark backgrounds */
@@ -412,10 +416,11 @@ mark.green-glow {
         rgba(80, 200, 120, 0.25) 7.9%, 
         rgba(80, 200, 120, 0) 15%
       );
+    /* This isn't working for me
     text-shadow: 
       -12px 12px 9.8px rgba(80, 200, 120, 0.5), 
       21px -18.1px 7.3px rgba(0, 0, 0, 0.8), 
-      -18.1px -27.3px 30px rgba(0, 0, 0, 0.6);
+      -18.1px -27.3px 30px rgba(0, 0, 0, 0.6); */
   }
 }
 
@@ -440,7 +445,7 @@ mark.green-glow {
     -12px 12px 9.8px rgba(80, 200, 120, 0.5), 
     21px -18.1px 7.3px rgba(0, 0, 0, 0.8), 
     -18.1px -27.3px 30px rgba(0, 0, 0, 0.6);
-  color: rgb(31, 33, 38) !important;
+  color: --bs-body-color-rgb !important;
 }
 
 
