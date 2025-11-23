@@ -327,8 +327,7 @@ strategy, and user trust**.</mark>
   (e.g., **mini‑class models at ≅\$0.15 per 1,000,000 input tokens**), enabling
   <\$1 a day <q>digital worker‑day</q> at ≅1,000,000 tokens a day; adoption crossed
   the majority threshold by mid‑2024.
-- <mark>**Compete on verification, not hype.** Tie every AI claim to *cost per
-  verified outcome, autonomy, escape, MTTR,* and *portability*.
+- <mark> **Compete on verification, not hype.** Tie every AI claim to *cost per verified outcome, autonomy, escape, MTTR,* and *portability*.
 - **Rewire the enterprise.** Stand up AgentOps; hire evaluator engineers;
   contract for diversified compute and energy; instrument your workflows.
 - **Lead on trust.** Manipulation defenses, provenance, disclosure, and appeals
@@ -336,7 +335,7 @@ strategy, and user trust**.</mark>
 - **Invest where it compounds.** Verification libraries, observability, and
   compute efficiency compound across every use case.
 - **Measure what matters.** Publish the **Flourishing Balance Sheet** next to
-  your financials.</mark>
+  your financials. </mark>
 
 ### What’s Changing & How Fast
 
