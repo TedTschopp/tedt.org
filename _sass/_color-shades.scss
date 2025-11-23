@@ -1,0 +1,208 @@
+// Color Shades Generator
+// Generates 11 shade variants (50-950) for all theme colors
+// Based on the color-chart.html shade calculation formula:
+// 50: lighten 45%, 100: lighten 40%, 200: lighten 30%, 300: lighten 20%, 400: lighten 10%
+// 500: base color (no modification)
+// 600: darken 10%, 700: darken 20%, 800: darken 30%, 900: darken 40%, 950: darken 45%
+
+// Import mixins for tint-color and shade-color if not already available
+// Note: Bootstrap provides these, but we use lighten/darken for consistency with color-chart
+
+// Light color shades
+$light-50:  lighten($light, 45%) !default;
+$light-100: lighten($light, 40%) !default;
+$light-200: lighten($light, 30%) !default;
+$light-300: lighten($light, 20%) !default;
+$light-400: lighten($light, 10%) !default;
+$light-500: $light !default; // Base color
+$light-600: darken($light, 10%) !default;
+$light-700: darken($light, 20%) !default;
+$light-800: darken($light, 30%) !default;
+$light-900: darken($light, 40%) !default;
+$light-950: darken($light, 45%) !default;
+
+// Dark color shades
+$dark-50:  lighten($dark, 45%) !default;
+$dark-100: lighten($dark, 40%) !default;
+$dark-200: lighten($dark, 30%) !default;
+$dark-300: lighten($dark, 20%) !default;
+$dark-400: lighten($dark, 10%) !default;
+$dark-500: $dark !default; // Base color
+$dark-600: darken($dark, 10%) !default;
+$dark-700: darken($dark, 20%) !default;
+$dark-800: darken($dark, 30%) !default;
+$dark-900: darken($dark, 40%) !default;
+$dark-950: darken($dark, 45%) !default;
+
+// Primary color shades
+$primary-50:  lighten($primary, 45%) !default;
+$primary-100: lighten($primary, 40%) !default;
+$primary-200: lighten($primary, 30%) !default;
+$primary-300: lighten($primary, 20%) !default;
+$primary-400: lighten($primary, 10%) !default;
+$primary-500: $primary !default; // Base color
+$primary-600: darken($primary, 10%) !default;
+$primary-700: darken($primary, 20%) !default;
+$primary-800: darken($primary, 30%) !default;
+$primary-900: darken($primary, 40%) !default;
+$primary-950: darken($primary, 45%) !default;
+
+// Secondary color shades
+$secondary-50:  lighten($secondary, 45%) !default;
+$secondary-100: lighten($secondary, 40%) !default;
+$secondary-200: lighten($secondary, 30%) !default;
+$secondary-300: lighten($secondary, 20%) !default;
+$secondary-400: lighten($secondary, 10%) !default;
+$secondary-500: $secondary !default; // Base color
+$secondary-600: darken($secondary, 10%) !default;
+$secondary-700: darken($secondary, 20%) !default;
+$secondary-800: darken($secondary, 30%) !default;
+$secondary-900: darken($secondary, 40%) !default;
+$secondary-950: darken($secondary, 45%) !default;
+
+// Info color shades
+$info-50:  lighten($info, 45%) !default;
+$info-100: lighten($info, 40%) !default;
+$info-200: lighten($info, 30%) !default;
+$info-300: lighten($info, 20%) !default;
+$info-400: lighten($info, 10%) !default;
+$info-500: $info !default; // Base color
+$info-600: darken($info, 10%) !default;
+$info-700: darken($info, 20%) !default;
+$info-800: darken($info, 30%) !default;
+$info-900: darken($info, 40%) !default;
+$info-950: darken($info, 45%) !default;
+
+// Accent1 color shades
+$accent1-50:  lighten($accent1, 45%) !default;
+$accent1-100: lighten($accent1, 40%) !default;
+$accent1-200: lighten($accent1, 30%) !default;
+$accent1-300: lighten($accent1, 20%) !default;
+$accent1-400: lighten($accent1, 10%) !default;
+$accent1-500: $accent1 !default; // Base color
+$accent1-600: darken($accent1, 10%) !default;
+$accent1-700: darken($accent1, 20%) !default;
+$accent1-800: darken($accent1, 30%) !default;
+$accent1-900: darken($accent1, 40%) !default;
+$accent1-950: darken($accent1, 45%) !default;
+
+// Accent2 color shades
+$accent2-50:  lighten($accent2, 45%) !default;
+$accent2-100: lighten($accent2, 40%) !default;
+$accent2-200: lighten($accent2, 30%) !default;
+$accent2-300: lighten($accent2, 20%) !default;
+$accent2-400: lighten($accent2, 10%) !default;
+$accent2-500: $accent2 !default; // Base color
+$accent2-600: darken($accent2, 10%) !default;
+$accent2-700: darken($accent2, 20%) !default;
+$accent2-800: darken($accent2, 30%) !default;
+$accent2-900: darken($accent2, 40%) !default;
+$accent2-950: darken($accent2, 45%) !default;
+
+// Accent3 color shades
+$accent3-50:  lighten($accent3, 45%) !default;
+$accent3-100: lighten($accent3, 40%) !default;
+$accent3-200: lighten($accent3, 30%) !default;
+$accent3-300: lighten($accent3, 20%) !default;
+$accent3-400: lighten($accent3, 10%) !default;
+$accent3-500: $accent3 !default; // Base color
+$accent3-600: darken($accent3, 10%) !default;
+$accent3-700: darken($accent3, 20%) !default;
+$accent3-800: darken($accent3, 30%) !default;
+$accent3-900: darken($accent3, 40%) !default;
+$accent3-950: darken($accent3, 45%) !default;
+
+// Success color shades
+$success-50:  lighten($success, 45%) !default;
+$success-100: lighten($success, 40%) !default;
+$success-200: lighten($success, 30%) !default;
+$success-300: lighten($success, 20%) !default;
+$success-400: lighten($success, 10%) !default;
+$success-500: $success !default; // Base color
+$success-600: darken($success, 10%) !default;
+$success-700: darken($success, 20%) !default;
+$success-800: darken($success, 30%) !default;
+$success-900: darken($success, 40%) !default;
+$success-950: darken($success, 45%) !default;
+
+// Warning color shades
+$warning-50:  lighten($warning, 45%) !default;
+$warning-100: lighten($warning, 40%) !default;
+$warning-200: lighten($warning, 30%) !default;
+$warning-300: lighten($warning, 20%) !default;
+$warning-400: lighten($warning, 10%) !default;
+$warning-500: $warning !default; // Base color
+$warning-600: darken($warning, 10%) !default;
+$warning-700: darken($warning, 20%) !default;
+$warning-800: darken($warning, 30%) !default;
+$warning-900: darken($warning, 40%) !default;
+$warning-950: darken($warning, 45%) !default;
+
+// Danger color shades
+$danger-50:  lighten($danger, 45%) !default;
+$danger-100: lighten($danger, 40%) !default;
+$danger-200: lighten($danger, 30%) !default;
+$danger-300: lighten($danger, 20%) !default;
+$danger-400: lighten($danger, 10%) !default;
+$danger-500: $danger !default; // Base color
+$danger-600: darken($danger, 10%) !default;
+$danger-700: darken($danger, 20%) !default;
+$danger-800: darken($danger, 30%) !default;
+$danger-900: darken($danger, 40%) !default;
+$danger-950: darken($danger, 45%) !default;
+
+// Export all shades as a map for programmatic access
+$color-shades: (
+  "light": (
+    50: $light-50, 100: $light-100, 200: $light-200, 300: $light-300, 400: $light-400,
+    500: $light-500, 600: $light-600, 700: $light-700, 800: $light-800, 900: $light-900, 950: $light-950
+  ),
+  "dark": (
+    50: $dark-50, 100: $dark-100, 200: $dark-200, 300: $dark-300, 400: $dark-400,
+    500: $dark-500, 600: $dark-600, 700: $dark-700, 800: $dark-800, 900: $dark-900, 950: $dark-950
+  ),
+  "primary": (
+    50: $primary-50, 100: $primary-100, 200: $primary-200, 300: $primary-300, 400: $primary-400,
+    500: $primary-500, 600: $primary-600, 700: $primary-700, 800: $primary-800, 900: $primary-900, 950: $primary-950
+  ),
+  "secondary": (
+    50: $secondary-50, 100: $secondary-100, 200: $secondary-200, 300: $secondary-300, 400: $secondary-400,
+    500: $secondary-500, 600: $secondary-600, 700: $secondary-700, 800: $secondary-800, 900: $secondary-900, 950: $secondary-950
+  ),
+  "info": (
+    50: $info-50, 100: $info-100, 200: $info-200, 300: $info-300, 400: $info-400,
+    500: $info-500, 600: $info-600, 700: $info-700, 800: $info-800, 900: $info-900, 950: $info-950
+  ),
+  "accent1": (
+    50: $accent1-50, 100: $accent1-100, 200: $accent1-200, 300: $accent1-300, 400: $accent1-400,
+    500: $accent1-500, 600: $accent1-600, 700: $accent1-700, 800: $accent1-800, 900: $accent1-900, 950: $accent1-950
+  ),
+  "accent2": (
+    50: $accent2-50, 100: $accent2-100, 200: $accent2-200, 300: $accent2-300, 400: $accent2-400,
+    500: $accent2-500, 600: $accent2-600, 700: $accent2-700, 800: $accent2-800, 900: $accent2-900, 950: $accent2-950
+  ),
+  "accent3": (
+    50: $accent3-50, 100: $accent3-100, 200: $accent3-200, 300: $accent3-300, 400: $accent3-400,
+    500: $accent3-500, 600: $accent3-600, 700: $accent3-700, 800: $accent3-800, 900: $accent3-900, 950: $accent3-950
+  ),
+  "success": (
+    50: $success-50, 100: $success-100, 200: $success-200, 300: $success-300, 400: $success-400,
+    500: $success-500, 600: $success-600, 700: $success-700, 800: $success-800, 900: $success-900, 950: $success-950
+  ),
+  "warning": (
+    50: $warning-50, 100: $warning-100, 200: $warning-200, 300: $warning-300, 400: $warning-400,
+    500: $warning-500, 600: $warning-600, 700: $warning-700, 800: $warning-800, 900: $warning-900, 950: $warning-950
+  ),
+  "danger": (
+    50: $danger-50, 100: $danger-100, 200: $danger-200, 300: $danger-300, 400: $danger-400,
+    500: $danger-500, 600: $danger-600, 700: $danger-700, 800: $danger-800, 900: $danger-900, 950: $danger-950
+  )
+) !default;
+
+// Usage Notes:
+// - All shades follow the same pattern from color-chart.html
+// - 500 is always the base color (no modification)
+// - Lighter shades (50-400) use lighten() function
+// - Darker shades (600-950) use darken() function
+// - Use like: color: $primary-700; or background: $accent2-100;
+// - Access via map: map-get(map-get($color-shades, "primary"), 700)

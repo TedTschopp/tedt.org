@@ -14,6 +14,9 @@ $theme-colors-text: (
   "info": $info-text-emphasis,
   "warning": $warning-text-emphasis,
   "danger": $danger-text-emphasis,
+  "accent1": $accent1-text-emphasis,
+  "accent2": $accent2-text-emphasis,
+  "accent3": $accent3-text-emphasis,
   "light": $light-text-emphasis,
   "dark": $dark-text-emphasis,
 ) !default;
@@ -27,6 +30,9 @@ $theme-colors-bg-subtle: (
   "info": $info-bg-subtle,
   "warning": $warning-bg-subtle,
   "danger": $danger-bg-subtle,
+  "accent1": $accent1-bg-subtle,
+  "accent2": $accent2-bg-subtle,
+  "accent3": $accent3-bg-subtle,
   "light": $light-bg-subtle,
   "dark": $dark-bg-subtle,
 ) !default;
@@ -40,6 +46,9 @@ $theme-colors-border-subtle: (
   "info": $info-border-subtle,
   "warning": $warning-border-subtle,
   "danger": $danger-border-subtle,
+  "accent1": $accent1-border-subtle,
+  "accent2": $accent2-border-subtle,
+  "accent3": $accent3-border-subtle,
   "light": $light-border-subtle,
   "dark": $dark-border-subtle,
 ) !default;
@@ -58,6 +67,9 @@ $theme-colors-border-subtle-dark: null !default;
     "info": $info-text-emphasis-dark,
     "warning": $warning-text-emphasis-dark,
     "danger": $danger-text-emphasis-dark,
+    "accent1": $accent1-text-emphasis-dark,
+    "accent2": $accent2-text-emphasis-dark,
+    "accent3": $accent3-text-emphasis-dark,
     "light": $light-text-emphasis-dark,
     "dark": $dark-text-emphasis-dark,
   ) !default;
@@ -71,6 +83,9 @@ $theme-colors-border-subtle-dark: null !default;
     "info": $info-bg-subtle-dark,
     "warning": $warning-bg-subtle-dark,
     "danger": $danger-bg-subtle-dark,
+    "accent1": $accent1-bg-subtle-dark,
+    "accent2": $accent2-bg-subtle-dark,
+    "accent3": $accent3-bg-subtle-dark,
     "light": $light-bg-subtle-dark,
     "dark": $dark-bg-subtle-dark,
   ) !default;
@@ -84,6 +99,9 @@ $theme-colors-border-subtle-dark: null !default;
     "info": $info-border-subtle-dark,
     "warning": $warning-border-subtle-dark,
     "danger": $danger-border-subtle-dark,
+    "accent1": $accent1-border-subtle-dark,
+    "accent2": $accent2-border-subtle-dark,
+    "accent3": $accent3-border-subtle-dark,
     "light": $light-border-subtle-dark,
     "dark": $dark-border-subtle-dark,
   ) !default;

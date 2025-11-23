@@ -1002,7 +1002,7 @@ The architecture question becomes: **how will your operational systems expose th
 
 There’s no precise clock, but you can think in **three overlapping phases**.
 
-#### Phase 1 — Now → October 2026 (Industrializing Today’s Tricks)
+#### Phase 1 — Now → 2026 Turning Today's Tricks into Products that Produce Value
 
 ##### What Actually Ships
 
