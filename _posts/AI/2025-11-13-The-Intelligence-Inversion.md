@@ -502,19 +502,21 @@ strategy, and user trust</strong>.</mark>
   (e.g., **mini‑class models at ≅\$0.15 per 1,000,000 input tokens**), enabling
   <\$1 a day <q>digital worker‑day</q> at ≅1,000,000 tokens a day; adoption crossed
   the majority threshold by mid‑2024.
-- <mark><strong>Compete on verification, not hype.</strong> Tie every AI claim to <em>cost per verified outcome, autonomy, escape, MTTR,</em> and <em>portability</em>.</mark>
-- <mark><strong>Rewire the enterprise.</strong> Stand up AgentOps; hire evaluator engineers;
+- <mark class="glow"><strong>Compete on verification, not hype.</strong> Tie
+  every AI claim to <em>cost per verified outcome, autonomy, escape, MTTR,</em>
+  and <em>portability</em>.</mark>
+- <mark class="glow"><strong>Rewire the enterprise.</strong> Stand up AgentOps; hire evaluator engineers;
   contract for diversified compute and energy; instrument your workflows.</mark>
-- <mark><strong>Lead on trust.</strong> Manipulation defenses, provenance, disclosure, and appeals
+- <mark class="glow"><strong>Lead on trust.</strong> Manipulation defenses, provenance, disclosure, and appeals
   protect the brand and pre‑empt regulation.</mark>
 - <mark class="glow"><strong>Invest where it compounds.</strong> Verification libraries, observability, and
   compute efficiency compound across every use case.</mark>
-- <mark><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
+- <mark class="glow"><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
 
 ### What’s Changing & How Fast
 
-<mark><strong>The Intelligence Inversion.</strong> Over the next ≅1,000 days (through <strong>August
+<mark class="glow"><strong>The Intelligence Inversion.</strong> Over the next ≅1,000 days (through <strong>August
 2028</strong>), general‑purpose AI will move from <q>smart intern</q> to <strong>autonomous
 agents</strong> that plan, act, verify their own work, and handle multi‑step outcomes.
 Cognitive output becomes <strong>cheap, fast, and scalable with compute</strong>, not
@@ -535,10 +537,10 @@ advantage shifts to:
 
 ### What This Means For Large Enterprise Profit & Loss
 
-- <mark><strong>Cogs &amp; OpEx:</strong> In agent‑addressable domains, <strong>cost per verified outcome</strong>
+- <mark class="glow"><strong>Cogs &amp; OpEx:</strong> In agent‑addressable domains, <strong>cost per verified outcome</strong>
   (not hours) becomes the right denominator. Expect large step‑downs as autonomy
   rises.</mark>
-- <mark><strong>CapEx &amp; Balance Sheet:</strong> Compute, eval tooling, and observability
+- <mark class="glow"><strong>CapEx &amp; Balance Sheet:</strong> Compute, eval tooling, and observability
   become enduring capital — <strong><q>compute is the new capital stock.</q></strong></mark>
 - **Revenue Growth:** Faster cycle times and 24/7 agent capacity expand
   serviceable demand (e.g., claims cleared, tickets resolved, quotes delivered).
@@ -548,7 +550,7 @@ advantage shifts to:
 
 ### The Operating Model That Works: Verification ‑ First Agents
 
-<mark>Executives should not measure <q>AI</q> by model IQ, but by <strong>verified business
+<mark class="glow">Executives should not measure <q>AI</q> by model IQ, but by <strong>verified business
 outcomes</strong>. The operating system for that is:</mark>
 
 #### Design for Verification From Day One
@@ -621,7 +623,7 @@ poisoning & drift challenges; portability bake‑offs.
 
 ### Human Flourishing Is A Business Requirement
 
-<mark>As cognition gets cheap, <strong>time, trust, and attention</strong> become the scarce assets
+<mark class="glow">As cognition gets cheap, <strong>time, trust, and attention</strong> become the scarce assets
 customers and employees value.</mark>
 
 #### Design Objectives & Metrics
@@ -643,7 +645,7 @@ match.
 
 ### Money, Compute, & Your CFO Lens
 
-<mark><strong>Compute is the comparative advantage</strong> in the intelligence economy. Two
+<mark class="glow"><strong>Compute is the comparative advantage</strong> in the intelligence economy. Two
 practical implications for corporate finance:</mark>
 
 1. **Capacity strategy.** Lock in diversified compute through long‑dated
