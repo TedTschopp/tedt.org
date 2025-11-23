@@ -282,19 +282,38 @@ automatically */
   font-style: normal;
 }
 
-/* Key, definitional quotes inline */
-.entry-content mark {
-  background-color: rgba(255, 215, 0, 0.14); /* or your accent color, very faint */
-  padding: 0 .2em;
-  border-radius: .2em;
-  font-weight: 500;
-}
 
-/* Optional: mild hover/focus to help scanning with keyboard or mouse */
-.entry-content mark:hover,
-.entry-content mark:focus-visible {
-  background-color: rgba(255, 215, 0, 0.22);
-  outline: none;
+
+mark {
+  /* Remove the solid block + default browser style */
+  background-color: transparent;
+
+  /* Highlighter stripe using your exact color */
+  background-image: linear-gradient(
+    to top,
+    rgba(255, 255, 0, 0) 0%,       /* transparent at very top */
+    rgba(255, 255, 0, 0.25) 30%,   /* soft fade-in */
+    rgba(255, 255, 0, 0.6) 60%,    /* main highlighter band (your color) */
+    rgba(255, 255, 0, 0.3) 85%,    /* soft fade-out */
+    rgba(255, 255, 0, 0) 100%      /* transparent at bottom */
+  );
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+
+  /* Snug highlight around the text */
+  padding: 0 0.18em;
+
+  /* Make multi-line <mark> look like separate strokes */
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+
+  /* Keep text color consistent with surrounding copy */
+  color: inherit;
+
+  /* No rounded corners or heavy shadow – more like ink than a pill */
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .entry-content q {
