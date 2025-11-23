@@ -120,11 +120,11 @@ article p {
   text-align: left;
   text-wrap: balance;
   background-image: linear-gradient(
-    var(--bs-success-border-subtle),
-    var(--bs-success-border-subtle)
+    var(--bs-accent2-text-emphasis) !important,
+    var(--bs-accent2-text-emphasis) !important
   );
   background-size: 100% 1px;
-  background-position: 0 calc(100% - 2px); /* 2px up from bottom */
+  background-position: 0 calc(100% - 22.5%); /* up from bottom */
   background-repeat: no-repeat;
 }
 
