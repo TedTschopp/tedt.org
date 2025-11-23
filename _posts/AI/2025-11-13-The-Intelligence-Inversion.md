@@ -334,7 +334,11 @@ automatically */
   right center
  ;
  background-repeat: no-repeat;
- color: inherit;
+ 
+ /* Force dark text for WCAG AAA compliance (10.8:1 contrast) on yellow highlight */
+ /* Works in both light and dark modes */
+ color: rgb(31, 33, 38) !important;
+ 
 }
 
 /* Traditional highlighter style
