@@ -361,7 +361,6 @@ mark {
    Source: https://stackoverflow.com/a (Matt Pi, modified by community)
    Retrieved 2025-11-22, License: CC BY-SA 4.0
    Creates a glowing green highlight with soft shadows and rounded edges
-   Uncomment the section below to use this style instead of the angled style
    ============================================================================ */
 
 mark.green-glow {
@@ -392,6 +391,55 @@ mark.green-glow {
     -12px 12px 9.8px rgba(130, 255, 173, 0.7), 
     21px -18.1px 7.3px rgba(255, 255, 255, 1), 
     -18.1px -27.3px 30px rgba(255, 255, 255, 1);
+}
+
+/* Dark mode variant: deeper glow with adjusted shadows for dark backgrounds */
+@media (prefers-color-scheme: dark) {
+  mark.green-glow {
+    background: 
+      linear-gradient(
+        104deg, 
+        rgba(80, 200, 120, 0) 0.9%, 
+        rgba(80, 200, 120, 0.9) 2.4%, 
+        rgba(80, 200, 120, 0.4) 5.8%, 
+        rgba(80, 200, 120, 0.08) 93%, 
+        rgba(80, 200, 120, 0.5) 96%, 
+        rgba(80, 200, 120, 0) 98%
+      ), 
+      linear-gradient(
+        183deg, 
+        rgba(80, 200, 120, 0) 0%, 
+        rgba(80, 200, 120, 0.25) 7.9%, 
+        rgba(80, 200, 120, 0) 15%
+      );
+    text-shadow: 
+      -12px 12px 9.8px rgba(80, 200, 120, 0.5), 
+      21px -18.1px 7.3px rgba(0, 0, 0, 0.8), 
+      -18.1px -27.3px 30px rgba(0, 0, 0, 0.6);
+  }
+}
+
+[data-bs-theme="dark"] mark.green-glow {
+  background: 
+    linear-gradient(
+      104deg, 
+      rgba(80, 200, 120, 0) 0.9%, 
+      rgba(80, 200, 120, 0.9) 2.4%, 
+      rgba(80, 200, 120, 0.4) 5.8%, 
+      rgba(80, 200, 120, 0.08) 93%, 
+      rgba(80, 200, 120, 0.5) 96%, 
+      rgba(80, 200, 120, 0) 98%
+    ), 
+    linear-gradient(
+      183deg, 
+      rgba(80, 200, 120, 0) 0%, 
+      rgba(80, 200, 120, 0.25) 7.9%, 
+      rgba(80, 200, 120, 0) 15%
+    );
+  text-shadow: 
+    -12px 12px 9.8px rgba(80, 200, 120, 0.5), 
+    21px -18.1px 7.3px rgba(0, 0, 0, 0.8), 
+    -18.1px -27.3px 30px rgba(0, 0, 0, 0.6);
 }
 
 
