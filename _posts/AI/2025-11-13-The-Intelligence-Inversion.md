@@ -382,7 +382,7 @@ mark.green-glow {
       rgba(130, 255, 173, 0) 15%
     );
   padding: 0.6em 13.7px;
-  line-height: 1.8em;
+  line-height: 1.2em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   margin: 0;
@@ -440,6 +440,7 @@ mark.green-glow {
     -12px 12px 9.8px rgba(80, 200, 120, 0.5), 
     21px -18.1px 7.3px rgba(0, 0, 0, 0.8), 
     -18.1px -27.3px 30px rgba(0, 0, 0, 0.6);
+  color: rgb(31, 33, 38) !important;
 }
 
 
