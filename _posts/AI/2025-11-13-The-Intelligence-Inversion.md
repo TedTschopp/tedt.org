@@ -117,6 +117,7 @@ article p {
   border-bottom: 1px solid var(--bs-success-border-subtle);
   color: var(--bs-success-text-emphasis);
   font-family: "Sofia Sans Extra Condensed", sans-serif;
+  font-variant-ligatures: discretionary-ligatures;
   text-align: left;
   text-wrap: balance;
 }
@@ -185,9 +186,6 @@ article p {
   color: var(--bs-warning) !important;
 }
 
-
-
-
 /* Table breathing room */
 .article table {
   margin: 2rem 0;
@@ -250,7 +248,13 @@ article p {
 }
 
 /* No dark mode overrides needed - CSS custom properties handle theme switching automatically */
+
 </style>
+
+
+
+
+
 
 ## Executive Summary
 
@@ -265,7 +269,7 @@ The first 1,000 days of AI validated the path from science through engineering a
 - **Invest where it compounds.** Verification libraries, observability, and compute efficiency compound across every use case.
 - **Measure what matters.** Publish the **Flourishing Balance Sheet** next to your financials.
 
-### What’s Changing—and How Fast
+### What’s Changing & How Fast
 
 **The Intelligence Inversion.** Over the next ≅1,000 days (through **August 2028**), general‑purpose AI will move from “smart intern” to **autonomous agents** that plan, act, verify their own work, and handle multi‑step outcomes. Cognitive output becomes **cheap, fast, and scalable with compute**, not headcount. Early signals already visible across routine drafting, tier‑1 support, back‑office adjudication, code maintenance, and complex coordination tasks.
 
@@ -275,7 +279,7 @@ The first 1,000 days of AI validated the path from science through engineering a
 - The ability to **verify** outcomes at scale, and
 - The speed of **organizational rewiring** (AgentOps, policy, security, and workforce).
 
-### What This Means for the Large Enterprise P&L
+### What This Means for Large Enterprise Profit & Loss
 
 - **Cogs & OpEx:** In agent‑addressable domains, **cost per verified outcome** (not hours) becomes the right denominator. Expect large step‑downs as autonomy rises.
 - **CapEx & Balance Sheet:** Compute, eval tooling, and observability become enduring capital—**“compute is the new capital stock.”**
@@ -302,7 +306,7 @@ Executives should not measure “AI” by model IQ, but by **verified business o
 
 - **Capability interfaces** between workflow and model provider so identical jobs run on ≥2 stacks with **≤2‑point outcome deltas**. This is your vendor‑risk and bargaining power.
 
-#### Board‑Level KPIs
+#### Board Level KPIs
 
 - Cost per **verified outcome**
 - **Autonomy Index**, **Verifier Coverage**, **Escape Rate**
@@ -310,7 +314,7 @@ Executives should not measure “AI” by model IQ, but by **verified business o
 - **Portability delta** (multi‑provider)
 - **Energy per verified outcome**
 
-### Organization and Talent: Build AgentOps
+### Organization & Talent: Build AgentOps
 
 Create a **cross‑functional AgentOps function** that sits between product/operations and platform engineering:
 
@@ -337,7 +341,7 @@ Run the company on **disprovable targets**, not hope:
 
 As cognition gets cheap, **time, trust, and attention** become the scarce assets customers and employees value.
 
-#### Design objectives and metrics
+#### Design Objectives and Metrics
 
 - **Time Dividend (TΔ):** hours a week returned to customers or employees; target **≥5 hours** in 24 months for key journeys (e.g., benefits, claims, onboarding).
 - **Manipulation defense:** active throttling of affective persuasion; **disclosure ≥99%**; child & vulnerable‑context guardrails.
@@ -346,7 +350,7 @@ As cognition gets cheap, **time, trust, and attention** become the scarce assets
 
 **Why you care:** These are **brand and regulator “green zones.”** The firms that lead on disclosure, appeals, and parity will set the bar competitors must match.
 
-### Money, Compute, and Your CFO Lens
+### Money, Compute, & Your CFO Lens
 
 **Compute is the comparative advantage** in the intelligence economy. Two practical implications for corporate finance:
 
@@ -387,7 +391,7 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 - Publish the first **Flourishing Balance Sheet**; set **Time Dividend** targets for two flagship journeys.
 - Achieve **portability** for two critical workflows across two providers; report **≤2‑point** outcome spread.
 
-### What Success Looks Like by August 2028
+### What Success Looks Like by 2028
 
 - **Unit economics:** ≥**60%** reduction in quality‑adjusted unit costs; **≥50%** cycle‑time reduction across targeted domains.
 - **Reliability:** **Autonomy ≥70%**, **Verification ≥95%**, **Escape ≤0.5%**, **Sev‑1 MTTR ≤2 hours**.
@@ -397,9 +401,9 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 
 ---
 
-## The First 1,000 Days: From Tokens to Work
+## The First 3 Years: From Tokens to Work
 
-With the launch of ChatGPT on **Nov 30, 2022** to **Day 1,000 (Aug 26, 2025)** transformers, tokens, and agents changed what “intelligence” means inside the large Enterprise—and what separates signal from noise.
+With the launch of ChatGPT on **Nov 30, 2022** to **November 30, 2025** transformers, tokens, and agents changed what “intelligence” means inside the large Enterprise—and what separates signal from noise.
 
 ### Transformers, Tokens, and What “Intelligence” Now Means
 
@@ -429,7 +433,7 @@ Over the first 1,000 days, the underlying “intelligence substrate” changed f
 
 In practical terms, three things changed:
 
-#### 1. The range of things AI can understand and act on exploded
+#### 1. The Range of Things AI Can Understand and Act On Exploded
 
 Tokens—the basic units AI models use to think—used to represent words or fragments of text. Now they represent **meaningful units from every domain**:
 
@@ -446,7 +450,7 @@ Tokens—the basic units AI models use to think—used to represent words or fra
 
 **Anything your business touches—words, images, numbers, sounds, operational, scientific, or procedural—can now be represented, reasoned over, and acted on by AI.**
 
-#### 2. The amount of context AI can hold at once grew exponentially
+#### 2. The Amount of Context AI Can Hold at Once Grew Exponentially
 
 Instead of working with the equivalent of “one meeting’s worth” of information, AI can now keep **days of work** in active memory—documents, conversations, history, processes, exceptions, decisions, and the rationale behind them—**all at once**.
 
@@ -459,7 +463,7 @@ This means AI can:
 
 It’s the difference between a smart intern and **a fully briefed chief of staff** who never forgets anything.
 
-#### The speed, cost, and reliability of updating that shared “whiteboard” improved dramatically
+#### The Speed, Cost, and Reliability of Updating That Shared “Whiteboard” Improved Dramatically
 
 Advances in how models run—streaming, batching, parallel execution, automated checking, and verification—mean that the system can now update this large working memory **faster, cheaper, and with far more consistency** than before.
 
@@ -554,18 +558,6 @@ With **hundreds of thousands—and increasingly millions—of tokens** of contex
 
 That’s what makes credible **digital twins of customers, processes, or employees** possible: the agent can operate over a long, coherent slice of a person’s or system’s recent behavior, instead of constantly paging the “right” shards of context in and out based on a shallow understanding of what ought to be in focus.
 
-By mid‑2025, a production deployment could hold in active working memory the equivalent of:
-
-- A week or more of everything a person says aloud, and
-- Several days’ worth of what they think in words,
-- **plus** their email history, policies, tickets, and code paths.
-
-The only problem is that not all thoughts and words are created equally, and the model has to figure out what matters most to be effective.
-
-However, with **hundreds of thousands of tokens** of context, the model can now maintain **most of the relevant history “in mind” at once**—dramatically reducing the need for complex retrieval, summarization, or context‑switching strategies.
-
-That is what makes credible **digital twins of customers, processes, or employees** possible: the agent can keep most of the relevant history “in mind” at once instead of paging the right stuff in and out based on a flawed understanding of context switching within the given focus window.
-
 ### Throughput: Tokens per Second vs Human Bandwidth
 
 Speed matters as much as memory.
@@ -608,7 +600,7 @@ In short: the first 1,000 days compressed **a decade’s worth of architectural,
 
 Inside large enterprises, the pattern was remarkably consistent.
 
-#### From tools to teams
+#### From Tools to Teams
 
 Most organizations moved through three waves:
 
@@ -625,7 +617,7 @@ Most organizations moved through three waves:
 
 The gating step (2 → 3) depended far more on **verifier coverage** and **tool‑boundary policy** than on raw model IQ.
 
-#### Unit economics moved
+#### Unit Economics Moved
 
 Where organizations got the stack right (mini/frontier mix, caching, tools, evaluations), they saw:
 
@@ -635,13 +627,13 @@ Where organizations got the stack right (mini/frontier mix, caching, tools, eval
 
 For CFOs, this was the moment **“cost per verified outcome”** started to replace **FTE hours** as the relevant denominator.
 
-#### AgentOps became a thing
+#### AgentOps Became a Thing
 
 - **Evaluator Engineering** and **Agent SRE** became named roles.
 - AgentOps teams owned **agent templates, verifiers, telemetry, and incident response**, sitting between product/ops and platform teams.
 - Microsoft Copilot GA (Nov 2023) and ecosystem tooling made the basic pattern familiar; internal platforms generalized it.
 
-#### Verification outran hype
+#### Verification Outran Hype
 
 The programs that scaled safely tended to:
 
@@ -651,12 +643,12 @@ The programs that scaled safely tended to:
 
 Hype was not the differentiator; **verification discipline** was.
 
-#### Portability pressures rose
+#### Portability Pressures Rose
 
 - Firms introduced **capability interfaces** and **shadow models** to avoid single‑vendor dependence.
 - Context windows expanded into the **hundreds‑of‑thousands‑of‑tokens class**, making long documents and traces portable across providers.
 
-#### Energy and compute went to the board
+#### Energy and Compute Went to the Board
 
 - Hardware like NVIDIA’s **GB200 NVL72** (liquid‑cooled, ≅**120 kW per rack**) made **power, cooling, and 24/7 CFE procurement** strategic decisions, not facilities footnotes.
 - Regulators and grid operators flagged AI/data‑center load as a structural driver of rising electricity demand in 2025–2026.
@@ -674,22 +666,19 @@ Outside your four walls, several signals confirmed that the shift was real:
 
 Equally important are the things that **did not** fully materialize by Day 1,000:
 
-- **Full autonomy everywhere.**
-  High‑stakes domains (clinical, regulatory filings, core banking) still require **human sign‑off**; verifiers remain the pacing asset. Agents are powerful, but **not yet turnkey replacements** in these lines.
+- **Full Autonomy Everywhere.** -  High‑stakes domains (clinical, regulatory filings, core banking) still require **human sign‑off**; verifiers remain the pacing asset. Agents are powerful, but **not yet turnkey replacements** in these lines.
 
-- **Frictionless sustainability.**
-  Data‑center energy and carbon footprints became binding constraints. Leaders moved to **24/7 CFE portfolios (hourly matched)** and heat‑reuse partnerships, but grid and permitting realities kept this uneven and costly.
+- **Frictionless Sustainability.** - Data‑center energy and carbon footprints became binding constraints. Leaders moved to **24/7 CFE portfolios (hourly matched)** and heat‑reuse partnerships, but grid and permitting realities kept this uneven and costly.
 
-- **Universal provenance.**
-  C2PA/Content Credentials spread to cameras and creative tools, but platform‑level adoption remains incomplete. Provenance is necessary, but not sufficient, against manipulation and synthetic media harms.
+- **Universal Provenance.** - C2PA/Content Credentials spread to cameras and creative tools, but platform‑level adoption remains incomplete. Provenance is necessary, but not sufficient, against manipulation and synthetic media harms.
 
 All of which reinforced the central message: **engineering and governance, not just model IQ, define what is economically and socially viable.**
 
-### Agents Under Test: Benchmarks and Arenas
+### Agents Under Test: Benchmarks & Arenas
 
 To understand whether agents could be trusted with real work, the ecosystem moved beyond static exams to **dynamic, agentic testbeds**.
 
-#### Cognitive and professional benchmarks
+#### Cognitive & Professional Benchmarks
 
 Across the first 1,000 days, frontier models:
 
@@ -700,7 +689,7 @@ Across the first 1,000 days, frontier models:
 
 Static tests established that **“IQ” was no longer the primary bottleneck**.
 
-#### Agentic and “work‑like” benchmarks
+#### Agentic & “Work‑Like” Benchmarks
 
 More relevant for enterprises were benchmarks that look like jobs:
 
@@ -708,7 +697,7 @@ More relevant for enterprises were benchmarks that look like jobs:
 - **Web and app arenas.** - Agents operate browsers and apps to complete multi‑step tasks (forms, navigation, transactions) under evaluation, surfacing brittleness in tool use and state management.
 - **CRM and enterprise task arenas.** - Agents are tested on complex CRM workflows—sales, service, CPQ—measuring whether they can operate within realistic enterprise systems and policies.
 
-#### Live‑fire agent arenas
+#### Live ‑ Fire Agent Arenas
 
 Finally, a set of **“in‑the‑wild” arenas** tested agents in live or semi‑live environments:
 
@@ -721,9 +710,9 @@ These ecosystems collectively answered the question: *“Can an agent own multi�
 
 The answer, by August 2025, is: **yes, in narrow domains, under strong verification and policy; not yet universally.**
 
-### Enterprise Scorecard at Day 1,000
+### Enterprise Scorecard @ Day 1,000
 
-By **Aug 26, 2025**, a typical early‑adopter Large Enterprise looked roughly like this:
+By **2025**, a typical early‑adopter Large Enterprise looked roughly like this:
 
 - **Where agents “stick”:**
   - L1 support and triage
@@ -810,13 +799,13 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
 
 ### Research Fronts that Actually Matter for Enterprises
 
-#### Deeper Reasoning: Reinforced learning with verifiable rewards & Self‑Play
+#### Deeper Reasoning: Reinforced Learning with Verifiable Rewards & Self‑Play
 
 - **Reinforcement Learning with Verifiable (but Noisy) Rewards (RLVR)** trains models using *checkable* outcomes: program outputs, math proofs, compiler passes, business rule engines, LLM judges, etc.
 - New work explicitly tackles **noisy verifiers** – treating symbolic checkers and LLM judges as imperfect and correcting for their errors.
 - **Self‑play** and prompt‑time steering (e.g., Self‑Anchor‑like methods) let models generate harder examples for themselves and keep attention on the right intermediate steps.
 
-##### Why Deeper Reasoning: RLVR & Self‑Play matters
+##### Why Deeper Reasoning: RLVR & Self‑Play Matters
 
 - In domains where you can define a verifier – code, math, pricing formulas, certain compliance checks – you can now **train models to be reliably good**, not just “pretty good on average.”
 - We move from “generic chat model” to **specialist reasoning Models as Products**:
@@ -824,7 +813,7 @@ The rest of this chapter unpacks the research fronts that drive this inversion, 
   - “Risk and forecasting reasoning”
   - “Policy‑aware decision support”
 
-##### Enterprise implications for Deeper Reasoning: RLVR & Self‑Play for the next 1,000 days
+##### Enterprise Implications for Deeper Reasoning: RLVR & Self‑Play for the Next 1,000 days
 
 - Expect major vendors to ship **“reasoning modes”** as standard, with higher latency and cost but much better reliability.
 - Expect toolchains and recipes for **training small, domain‑specific reasoning models** via Reinforcement Learning with Verifiable Rewards (RLVR) to arrive in mainstream frameworks.
