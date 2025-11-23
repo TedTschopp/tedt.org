@@ -313,7 +313,7 @@ automatically */
    using three layered linear gradients for left edge, center, and right edge.
    ============================================================================ */
 
-.highlight, 
+.highlight,
 mark {
   /* Custom properties for easy theming */
   --mark-color: #FFFF66;          /* Bright yellow highlight color */
@@ -376,32 +376,40 @@ mark {
    Color is customizable via CSS variables with calculated text colors
    ============================================================================ */
 
+/* Global base color definition - change these to adjust the entire glow system */
+:root {
+  /* Light mode base glow color (yellow-green by default) */
+  --glow-base-r: 255;
+  --glow-base-g: 255;
+  --glow-base-b: 102;
+}
+
 mark.glow {
-  /* Define base glow color (green by default) */
-  --glow-r: 130;
-  --glow-g: 255;
-  --glow-b: 173;
-  
+  /* Use global base colors directly for light mode */
+  --glow-r: var(--glow-base-r);
+  --glow-g: var(--glow-base-g);
+  --glow-b: var(--glow-base-b);
+
   /* Calculate dark text color: darken by 95% and shift toward glow color */
   --text-r: calc(var(--glow-r) * 0.05);
   --text-g: calc(var(--glow-g) * 0.20);
   --text-b: calc(var(--glow-b) * 0.14);
-  
+
   font-weight: bolder;
-  background: 
+  background:
     linear-gradient(
-      104deg, 
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%, 
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 1.25) 2.4%, 
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 5.8%, 
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.1) 93%, 
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.7) 96%, 
+      104deg,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 1.25) 2.4%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 5.8%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.1) 93%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.7) 96%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 98%
-    ), 
+    ),
     linear-gradient(
-      183deg, 
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%, 
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.3) 7.9%, 
+      183deg,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.3) 7.9%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
     );
   padding: 0.6em 13.7px;
@@ -417,28 +425,28 @@ mark.glow {
 /* Dark mode variant: deeper glow with light text tinged with glow color */
 @media (prefers-color-scheme: dark) {
   mark.glow {
-    /* Darker, more subdued glow color for dark backgrounds */
-    --glow-r: 80;
-    --glow-g: 200;
-    --glow-b: 120;
-    
+    /* Calculate darker, more subdued glow color based on global base */
+    --glow-r: calc(var(--glow-base-r) * 0.31);
+    --glow-g: calc(var(--glow-base-g) * 0.78);
+    --glow-b: calc(var(--glow-base-b) * 1.18);
+
     /* Calculate light text: brighten to 85% white + 15% glow color */
     --text-r: calc(255 * 0.85 + var(--glow-r) * 0.15);
     --text-g: calc(255 * 0.85 + var(--glow-g) * 0.15);
     --text-b: calc(255 * 0.85 + var(--glow-b) * 0.15);
-    
-    background: 
+
+    background:
       linear-gradient(
-        104deg, 
+        104deg,
         rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
         rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.9) 2.4%,
         rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.4) 5.8%,
         rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.08) 93%,
         rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 96%,
         rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 98%
-      ), 
+      ),
       linear-gradient(
-        183deg, 
+        183deg,
         rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%,
         rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.25) 7.9%,
         rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
@@ -449,28 +457,28 @@ mark.glow {
 }
 
 [data-bs-theme="dark"] mark.glow {
-  /* Darker, more subdued glow color for dark backgrounds */
-  --glow-r: 80;
-  --glow-g: 200;
-  --glow-b: 120;
-  
+  /* Calculate darker, more subdued glow color based on global base */
+  --glow-r: calc(var(--glow-base-r) * 0.31);
+  --glow-g: calc(var(--glow-base-g) * 0.78);
+  --glow-b: calc(var(--glow-base-b) * 1.18);
+
   /* Calculate light text: brighten to 85% white + 15% glow color */
   --text-r: calc(255 * 0.85 + var(--glow-r) * 0.15);
   --text-g: calc(255 * 0.85 + var(--glow-g) * 0.15);
   --text-b: calc(255 * 0.85 + var(--glow-b) * 0.15);
-  
-  background: 
+
+  background:
     linear-gradient(
-      104deg, 
+      104deg,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.9) 2.4%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.4) 5.8%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.08) 93%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 96%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 98%
-    ), 
+    ),
     linear-gradient(
-      183deg, 
+      183deg,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.25) 7.9%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
@@ -478,9 +486,6 @@ mark.glow {
   /* WCAG AAA: Calculated light text with glow color tinge */
   color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 }
-
-
-
 
 </style>
 
@@ -717,11 +722,11 @@ over tokens. Intelligence, in this world, is: *How much **useful state and
 action** we can pack into tokens per second, per dollar, under governance.*
 
 > **The Transformer & The Token**
-> 
+>
 > Under the hood, every frontier system your enterprise cares about (OpenAI
 > GPT‑4/5 and o‑series, Anthropic Claude, Google Gemini) is built on the same
 > architectural idea:
-> 
+>
 > - The **transformer**: a stack of self‑attention layers that repeatedly
 > answers a single question: *Given all the tokens I’ve seen so far, what should
 > the next token be?* - The **token**: the smallest chunk of information the
@@ -871,7 +876,7 @@ meeting** to **multiple human days**:
 ‡ Thought equivalent assumes ≅80,000 tokens/day of inner verbal thought.
 
 > **Context Size, Intelligence, and the Shape of Thought**
-> 
+>
 > As context windows scale from thousands to millions of tokens, it's tempting
 > to equate **more context** with **more intelligence**—but the two are related
 > only indirectly. A larger window does not make a model <q>smarter</q>; it makes the
@@ -890,7 +895,7 @@ meeting** to **multiple human days**:
 > structure of human cognition. Intelligence still comes from what the model
 > does **within** that space; context simply defines how much of the ongoing
 > story the model can keep <q>alive</q> at once.
-> 
+>
 > **One important detail:** a model’s <q>context window</q> is a **shared budget for
 > both input and output** in a single request. System prompts, tools, previous
 > messages, uploaded documents, intermediate reasoning, and the model’s reply
@@ -2100,12 +2105,12 @@ You get a structural funding gap unless you:
   shared assets, such as public compute or data)
 
 > **UBI Challenges**
-> 
+>
 > The takeaway for enterprises: **don’t assume UBI will absorb the shock** for
 > your customers or your workforce on a useful timeline. Workforce strategy,
 > reskilling, and role rebundling remain core leadership responsibilities that
 > can not be avoided in the foreseeable future.
-> 
+>
 > As a leader of a large organization, you should not assume that UBI or any
 > other large‑scale transfer scheme will arrive in time, at scale, to stabilize
 > your demand. Historically in the U.S., major discretionary interventions only
@@ -2118,7 +2123,7 @@ You get a structural funding gap unless you:
 > Great Recession, and several years in the Great Depression before the New Deal
 > reached scale**. An AI‑driven employment shock that plays out over a decade is
 > therefore likely to **outrun the political system** for long stretches.
-> 
+>
 > That gap matters directly for your customers. If UBI and other supports fail
 > to keep pace, large segments of the population may **not reliably cover
 > housing, food, healthcare, and energy**, let alone discretionary spend. That
@@ -3189,7 +3194,7 @@ Where:
 **Go/no‑go rule** (simplified):
 
 > Deploy agent‑first when
-> 
+>
 > $$C_{\text{agent, adj}} < C_{\text{human}}$$
 {: .alert .alert-info}
 
@@ -3609,9 +3614,9 @@ You don’t need to re‑label everyone on day one. Start with **pilot domains**
 use them as proof points.
 
 > **Skill bridges (8–12 weeks, part‑time)**
-> 
+>
 > Design short, targeted upskilling tracks:
-> 
+>
 > - **Architects → Agent Architect / Value‑Chain Architect** - Orchestration
 > patterns; tool boundaries; verifier‑first design; compute economics; rollout
 > and rollback hygiene. - **QA/SDET → Verification Engineer** - Evaluation
