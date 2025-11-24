@@ -96,6 +96,23 @@ no_toc: true
     margin-left: 0;
   }
 }
+
+/* Match definition list width and alignment with alert boxes */
+dl.definition-list {
+  width: 50%;
+  float: right;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+  clear: right;
+}
+
+@media (max-width: 768px) {
+  dl.definition-list {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+}
 </style>
 
 <!-- Article styling for improved readability -->
@@ -442,9 +459,8 @@ mark.glow {
 
 
 /* --- Definition list container --- */
-/* Add class="Definition-list" to your <dl> for best results */
+/* Add class="definition-list" to your <dl> for best results */
 dl.definition-list {
-  margin: 0 0 2rem;
   padding: 1.5rem 1.75rem;
   border-radius: 12px;
   border: 1px solid rgba(0, 0, 0, 0.08);
@@ -552,38 +568,28 @@ strategy, and user trust</strong>.</mark>
 
 {: .definition-list }
 **Cost per Verified Outcome**
-: All‑in cost (compute, tools, infra, and
-associated human work) divided by the number of business outcomes that *pass
-their verifiers* in a given workflow and period.
+: All‑in cost (compute, tools, infra, and associated human work) divided by the number of business outcomes that *pass their verifiers* in a given workflow and period.
 
-**Autonomy Index** : Percentage of tasks or flows that the agent completes
-end‑to‑end **without human edits or intervention** in a given domain.
+**Autonomy Index** 
+: Percentage of tasks or flows that the agent completes end‑to‑end **without human edits or intervention** in a given domain.
 
-**Verifier Coverage** : Percentage of the agent’s outputs that pass through one
-or more verifiers (tests, oracles, evaluators, or human audit) before being
-accepted as <q>done.</q>
+**Verifier Coverage** 
+: Percentage of the agent’s outputs that pass through one or more verifiers (tests, oracles, evaluators, or human audit) before being accepted as <q>done.</q>
 
-**Escape Rate** : Percentage of all agent outputs that are **both wrong and not
-caught by verifiers**—i.e., errors that escape verification into production or
-customer‑facing channels.
+**Escape Rate** 
+: Percentage of all agent outputs that are **both wrong and not caught by verifiers**—i.e., errors that escape verification into production or customer‑facing channels.
 
-**Mean Time to Restore (Sev‑1)** : Average elapsed time from the start of a
+**Mean Time to Restore (Sev‑1)** 
+: Average elapsed time from the start of a **Severity‑1 agent incident** (critical customer or system impact) to full restoration of normal service.
 
-**Severity‑1 agent incident** (critical customer or system impact) to full
-restoration of normal service.
+**Severity‑1 incident rate** 
+: Frequency of Severity‑1 agent incidents over a period, typically measured as the number of Sev‑1 incidents per unit time (e.g., per quarter) and/or per N verified outcomes.
 
-**Severity‑1 incident rate** : Frequency of Severity‑1 agent incidents over a
-period, typically measured as the number of Sev‑1 incidents per unit time (e.g.,
-per quarter) and/or per N verified outcomes.
+**Portability delta** (multi‑provider) 
+: Percentage‑point difference in key outcome metrics (e.g., verified success rate, cost per verified outcome) when the **same workflow** runs on at least two model providers; smaller deltas mean better portability and lower vendor lock‑in.
 
-**Portability delta** (multi‑provider) : Percentage‑point difference in key
-outcome metrics (e.g., verified success rate, cost per verified outcome) when
-the **same workflow** runs on at least two model providers; smaller deltas mean
-better portability and lower vendor lock‑in.
-
-**Energy per verified outcome** : Kilowatt‑hours of energy consumed by the AI
-stack divided by the count of AI outcomes that pass their verifiers (kWh per
-verified outcome).
+**Energy per verified outcome** 
+: Kilowatt‑hours of energy consumed by the AI stack divided by the count of AI outcomes that pass their verifiers (kWh per verified outcome).
 
 ### What’s Changing & How Fast
 
