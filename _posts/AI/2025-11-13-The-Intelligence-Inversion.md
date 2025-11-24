@@ -463,8 +463,8 @@ mark.glow {
 dl.definition-list {
   padding: 1.5rem 1.75rem;
   border-radius: 12px;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  background: rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(var(--bs-dark-rgb), 1);
+  background: rgba(var(--bs-light-rgb), 1);
 }
 
 /* Two-column, board-style layout on wider screens */
