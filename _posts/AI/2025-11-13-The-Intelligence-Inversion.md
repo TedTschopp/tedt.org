@@ -408,40 +408,36 @@ mark.glow {
   color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 }
 
-/* Dark mode variant: deeper glow with light text tinged with glow color
-   Handles both OS-level dark mode and Bootstrap theme switcher */
-@media (prefers-color-scheme: dark),
-[data-bs-theme="dark"] {
-  mark.glow {
-    /* Calculate darker, more subdued glow color based on global base */
-    --glow-r: calc(var(--glow-base-r) * 0.31);
-    --glow-g: calc(var(--glow-base-g) * 0.31);
-    --glow-b: calc(var(--glow-base-b) * 0.31);
+/* Dark mode variant: applies when Bootstrap theme switcher is set to dark */
+[data-bs-theme="dark"] mark.glow {
+  /* Calculate darker, more subdued glow color based on global base */
+  --glow-r: calc(var(--glow-base-r) * 0.31);
+  --glow-g: calc(var(--glow-base-g) * 0.31);
+  --glow-b: calc(var(--glow-base-b) * 0.31);
 
-    /* Calculate light text: brighten to 85% white + 15% glow color */
-    --text-r: calc(255 * 0.85 + var(--glow-r) * 0.15);
-    --text-g: calc(255 * 0.85 + var(--glow-g) * 0.15);
-    --text-b: calc(255 * 0.85 + var(--glow-b) * 0.15);
+  /* Calculate light text: brighten to 85% white + 15% glow color */
+  --text-r: calc(255 * 0.85 + var(--glow-r) * 0.15);
+  --text-g: calc(255 * 0.85 + var(--glow-g) * 0.15);
+  --text-b: calc(255 * 0.85 + var(--glow-b) * 0.15);
 
-    background:
-      linear-gradient(
-        104deg,
-        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
-        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.9) 2.4%,
-        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.4) 5.8%,
-        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.08) 93%,
-        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 96%,
-        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 98%
-      ),
-      linear-gradient(
-        183deg,
-        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%,
-        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.25) 7.9%,
-        rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
-      );
-    /* WCAG AAA: Calculated light text with glow color tinge */
-    color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
-  }
+  background:
+    linear-gradient(
+      104deg,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.9) 2.4%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.4) 5.8%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.08) 93%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 96%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 98%
+    ),
+    linear-gradient(
+      183deg,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.25) 7.9%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
+    );
+  /* WCAG AAA: Calculated light text with glow color tinge */
+  color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 }
 </style>
 
