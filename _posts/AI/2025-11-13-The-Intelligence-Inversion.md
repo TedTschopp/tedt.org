@@ -311,48 +311,39 @@ automatically */
    ANGLED HIGHLIGHTER EFFECT
    Creates a stylized highlight with angled edges (like a physical highlighter)
    using three layered linear gradients for left edge, center, and right edge.
-   ============================================================================ 
+   ============================================================================
 
 .highlight,
 mark {
-  /* Custom properties for easy theming */
-  --mark-color: #FFFF66;          /* Bright yellow highlight color */
-  --mark-skew: 0.25em;              /* Width of angled edges */
-  --mark-height: 1em;               /* Height of highlight stripe */
-  --mark-overlap: 0.3em;            /* Horizontal padding/overlap */
-
-  /* Extend highlight slightly beyond text bounds for visual comfort */
+  --mark-color: #FFFF66;
+  --mark-skew: 0.25em;
+  --mark-height: 1em;
+  --mark-overlap: 0.3em;
   margin-inline: calc(var(--mark-overlap) * -1);
   padding-inline: var(--mark-overlap);
 
-  /* Three-layer gradient technique to create angled edges */
   background-color: transparent;
   background-image:
-    /* Left angled edge: diagonal gradient from transparent to highlight */
     linear-gradient(
       to bottom right,
       transparent 50%,
       var(--mark-color) 50%
     ),
-    /* Center fill: solid highlight color */
     linear-gradient(
       var(--mark-color),
       var(--mark-color)
     ),
-    /* Right angled edge: diagonal gradient from highlight to transparent */
     linear-gradient(
       to top left,
       transparent 50%,
       var(--mark-color) 50%
     );
 
-  /* Size each gradient layer: left edge | center fill | right edge */
   background-size:
     var(--mark-skew) var(--mark-height),
     calc(100% - var(--mark-skew) * 2 + 1px) var(--mark-height),
     var(--mark-skew) var(--mark-height);
 
-  /* Position each layer horizontally */
   background-position:
     left center,
     center,
@@ -360,14 +351,8 @@ mark {
 
   background-repeat: no-repeat;
 
-  /* -------------------------------------------------------------------------
-     ACCESSIBILITY: WCAG AAA Compliance
-     Force dark text on yellow background ensures 10.8:1 contrast ratio
-     in both light and dark modes (overrides Bootstrap theme inheritance)
-     ------------------------------------------------------------------------- */
   color: rgb(31, 33, 38) !important;
 }
-
 */
 
 /* ============================================================================
@@ -379,6 +364,7 @@ mark {
    ============================================================================ */
 
 /* Global base color definition - change these to adjust the entire glow system */
+
 :root {
   /* Light mode base glow color (yellow-green by default) */
   --glow-base-r: 255;
