@@ -383,7 +383,7 @@ mark.glow {
   --text-g: calc(var(--glow-g) * 0.40);
   --text-b: calc(var(--glow-b) * 0.25);
 
-  font-weight: bolder;
+  background:
     linear-gradient(
       104deg,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
