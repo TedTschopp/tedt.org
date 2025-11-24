@@ -671,9 +671,9 @@ large Enterprise—and what separates signal from noise.
 
 ### Transformers, Tokens, & What <q>Intelligence</q> Now Means
 
-From a C‑suite lens, a transformer is a **fast, scalable <q>next‑step planner</q>**
-over tokens. Intelligence, in this world, is: *How much **useful state and
-action** we can pack into tokens per second, per dollar, under governance.*
+<mask class="glow">From a C‑suite lens, a transformer is a **fast, scalable <q>next‑step planner</q>**
+over tokens. Intelligence, in this world, is: <i>How much <strong>useful state and
+action</strong> we can pack into tokens per second, per dollar, under governance.</i></mask>
 
 > **The Transformer & The Token**
 >
@@ -743,8 +743,8 @@ This means AI can:
 - remember constraints and policies,
 - coordinate actions across tools, systems, and teams.
 
-It’s the difference between a smart intern and **a fully briefed chief of
-staff** who never forgets anything.
+<mask class="glow">It’s the difference between a smart intern and **a fully briefed chief of
+staff** who never forgets anything.</mask>
 
 #### The Speed, Cost, & Reliability Of Updating That Shared <q>Whiteboard</q> Improved Dramatically
 
@@ -1198,7 +1198,7 @@ Inversion happens, when it happens in your domains, and how to run the next
 
 
 
-## The Next 1,000 Days: The Intelligence Inversion
+## The Next 3 Years: The Intelligence Inversion
 
 Roughly 1,000 days ago, <q>AI strategy</q> meant pilots with chatbots and text
 copilots. Today, most enterprises are somewhere between <q>every knowledge worker
@@ -1249,8 +1249,8 @@ As these capabilities mature, **the limit moves upstream**:
 - The assistant will be *able* to remember years of history – but do you have a
   memory model, retention rules, and access control?
 
-That’s the inversion: models stop being the main bottleneck; **your data,
-architecture, and operating model become the constraint.**
+<mask class="glow">That’s the inversion: models stop being the main bottleneck; <strong>your data,
+architecture, and operating model become the constraint.</strong></mask>
 
 The rest of this chapter unpacks the research fronts that drive this inversion,
 then maps them onto a 1,000‑day timeline and concrete enterprise actions.
