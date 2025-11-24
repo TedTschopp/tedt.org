@@ -124,7 +124,7 @@ article p {
     var(--bs-accent2-text-emphasis) !important
   );
   background-size: 100% 2px;
-  background-position: 0 calc(100% - 22.5%); /* up from bottom */
+  background-position: 0 calc(100% - 27px); /* up from bottom */
   background-repeat: no-repeat;
 }
 
@@ -852,23 +852,23 @@ consider at once.
 Over the first 1,000 days of generative AI, this expanded from **less than a
 meeting** to **multiple human days**:
 
-|             Model | Year | Context Size (tokens) | Approximate number of Words* | Human speech equivalent† | Human thought equivalent‡ |
-|------------------:|------|:---------------------:|:----------------------------:|:------------------------:|:-------------------------:|
-|             GPT‑1 | 2018 |          512          |             ≅400             |         ≅35 min          |          ≅10 min          |
-|             GPT‑2 | 2019 |         1,024         |             ≅800             |          ≅1.2 h          |          ≅20 min          |
-|             GPT‑3 | 2020 |         4,096         |            ≅3,000            |          ≅4.9 h          |          ≅1.2 h           |
-|             GPT‑4 | 2023 |         8,192         |            ≅6,000            |          ≅9.8 h          |          ≅2.5 h           |
-|       GPT‑4‑turbo | 2023 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
-|            GPT‑4o | 2024 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
-|       GPT‑4o‑mini | 2024 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
-|           o1‑mini | 2024 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
-|                o1 | 2024 |        200,000        |           ≅150,000           |        ≅10.0 days        |         ≅2.5 days         |
-|    GPT‑5‑Standard | 2025 |        128,000        |           ≅96,000            |        ≅6.4 days         |         ≅1.6 days         |
-|         GPT‑5‑Pro | 2025 |        196,000        |           ≅147,000           |        ≅9.8 days         |         ≅2.5 days         |
-|         GPT‑5‑API | 2025 |        400,000        |           ≅300,000           |         ≅20 days         |          ≅5 days          |
-|    Gemini 2.5 Pro | 2025 |       1,000,000       |           ≅750,000           |         ≅50 days         |        ≅12.5 days         |
-| Claude Sonnet 4.5 | 2025 |       1,000,000       |           ≅750,000           |         ≅50 days         |        ≅12.5 days         |
-|     Llama 4 Scout | 2025 |      10,000,000       |          ≅7,500,000          |        ≅500 days         |         ≅125 days         |
+|             Model | Year | Context Size (tokens)  | Approximate number of Words* | Human speech equivalent† | Human thought equivalent‡ |
+|------------------:|------|:----------------------:|:----------------------------:|:------------------------:|:-------------------------:|
+|             GPT‑1 | 2018 |          512           |             ≅400             |         ≅35 min          |          ≅10 min          |
+|             GPT‑2 | 2019 |      1,<wbr/>024       |             ≅800             |          ≅1.2 h          |          ≅20 min          |
+|             GPT‑3 | 2020 |      4,<wbr/>096       |         ≅3,<wbr/>000         |          ≅4.9 h          |          ≅1.2 h           |
+|             GPT‑4 | 2023 |      8,<wbr/>192       |         ≅6,<wbr/>000         |          ≅9.8 h          |          ≅2.5 h           |
+|       GPT‑4‑turbo | 2023 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|            GPT‑4o | 2024 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|       GPT‑4o‑mini | 2024 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|           o1‑mini | 2024 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|                o1 | 2024 |     200,<wbr/>000      |        ≅150,<wbr/>000        |        ≅10.0 days        |         ≅2.5 days         |
+|    GPT‑5‑Standard | 2025 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|         GPT‑5‑Pro | 2025 |     196,<wbr/>000      |        ≅147,<wbr/>000        |        ≅9.8 days         |         ≅2.5 days         |
+|         GPT‑5‑API | 2025 |     400,<wbr/>000      |        ≅300,<wbr/>000        |         ≅20 days         |          ≅5 days          |
+|    Gemini 2.5 Pro | 2025 | 1,<wbr/>000,<wbr/>000  |        ≅750,<wbr/>000        |         ≅50 days         |        ≅12.5 days         |
+| Claude Sonnet 4.5 | 2025 | 1,<wbr/>000,<wbr/>000  |        ≅750,<wbr/>000        |         ≅50 days         |        ≅12.5 days         |
+|     Llama 4 Scout | 2025 | 10,<wbr/>000,<wbr/>000 |    ≅7,<wbr/>500,<wbr/>000    |        ≅500 days         |         ≅125 days         |
 {: .table .table-striped .table-hover}
 
 \* Approximate number of words = tokens × 0.75.
@@ -4513,24 +4513,24 @@ All metrics must be auditable and tied to verifiers.
 
 ### Failure Modes & Countermeasures
 
-| **Failure Mode**                                     | **Symptom / Early Warning**                                                                | **Countermeasure / Mitigation Strategy**                                                                                                                                                   |
-|------------------------------------------------------|--------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Failure Mode**                                     | **Symptom / Early Warning**                                                                     | **Countermeasure / Mitigation Strategy**                                                                                                                                                   |
+|------------------------------------------------------|-------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Verification Debt**                                | AI systems make confident but wrong decisions; <q>shadow errors</q> discovered post-deployment. | Adopt **verification-first engineering**; treat evaluations as code; enforce promotion gates (≥95% coverage, ≤0.5% escape). Maintain evaluator libraries and continuous EvalOps pipelines. |
-| **Data Provenance & Poisoning Risk**                 | Model drift, hallucination, or unexplained errors after retraining.                        | Require **dataset SBOMs**, provenance scoring, and poisoning audits. Use quarantine policies and signed data sources.                                                                      |
-| **Compute / Model Vendor Lock-In**                   | Migration to other models or clouds infeasible without major redesign.                     | Implement **capability interfaces** and **portability metrics**; test workflows on ≥2 providers with ≤2-pt outcome deltas.                                                                 |
-| **Ethical Misalignment / Manipulation**              | Models subtly optimize for engagement or convenience over user welfare.                    | Integrate **manipulation classifiers**, user <q>risk knobs,</q> disclosure UX, and welfare-aligned optimization. Conduct red-team testing.                                                      |
-| **Regulatory / Compliance Drift**                    | Model behavior or data handling no longer compliant with evolving law.                     | Maintain **policy-aware prompts**, traceable model cards, and automatic compliance testing in CI/CD. Engage Compliance in AgentOps.                                                        |
-| **Security & Identity Breach**                       | Unauthorized agent actions, data leaks, or credential misuse.                              | Assign **per-agent identities** and scoped credentials; enforce least privilege; enable hardware-backed key custody and kill-switch drills.                                                |
-| **Energy & Cost Blowout**                            | Rising GPU costs, uncontrolled token usage, or unsustainable power draw.                   | Track **ECI_outcome** (kWh per verified outcome) and **cost per verified outcome**; adopt carbon-aware scheduling and caching.                                                             |
-| **Cultural Resistance / Human Displacement Anxiety** | Staff slow to adopt; morale and trust decline; shadow IT use grows.                        | Publish transparent **transition roadmaps**; retrain into AgentOps and verification roles; use internal communication framing around augmentation.                                         |
-| **Governance Fragmentation**                         | AI systems deployed without unified oversight; inconsistent policies and risk handling.    | Form a central **AI Governance Board**; standardize model/agent cards, incident reporting, and escalation runbooks.                                                                        |
-| **Lack of Observability / Black-Box Agents**         | Incidents or performance regressions cannot be diagnosed.                                  | Require **structured traces**, reason codes, and agent observability (latency, cost, autonomy, escape rate, MTTR). Mandate audit-ready logs.                                               |
-| **Attention / Trust Collapse**                       | Customer or employee trust erodes due to opaque or manipulative outputs.                   | Implement **provenance disclosure**, appeal paths, and time-to-human fallbacks; track manipulation and appeal metrics on Flourishing Balance Sheet.                                        |
-| **Verification Bottleneck (EvalOps Lag)**            | Model development outpaces verification capability; delays releases.                       | Resource **Evaluator Engineering** as a first-class discipline; reuse domain-specific verifier patterns; automate test generation.                                                         |
-| **Over-Centralized Compute Risk**                    | Outage or policy decision in one region halts enterprise operations.                       | Build **multi-region compute** with failover; maintain **Compute Sovereignty Ratio** (0.8–1.2); ensure cross-provider contracts.                                                           |
-| **Liability Ambiguity**                              | Responsibility unclear when AI errors cause harm.                                          | Map accountability per workflow (model vendor, deployer, tool owner); define **safe harbors** and **strict liability zones** in contracts.                                                 |
-| **Civic / ESG Backlash**                             | Perception that AI harms communities, jobs, or environment.                                | Publish **Flourishing Balance Sheet** and **energy/carbon metrics**; invest in civic AI pilots that demonstrate public benefit.                                                            |
-| **Skill Atrophy / Human Out-of-the-Loop**            | Staff lose domain expertise due to automation.                                             | Implement **shadow mode rotations**; require periodic human audit samples; maintain cross-training programs.                                                                               |
+| **Data Provenance & Poisoning Risk**                 | Model drift, hallucination, or unexplained errors after retraining.                             | Require **dataset SBOMs**, provenance scoring, and poisoning audits. Use quarantine policies and signed data sources.                                                                      |
+| **Compute / Model Vendor Lock-In**                   | Migration to other models or clouds infeasible without major redesign.                          | Implement **capability interfaces** and **portability metrics**; test workflows on ≥2 providers with ≤2-pt outcome deltas.                                                                 |
+| **Ethical Misalignment / Manipulation**              | Models subtly optimize for engagement or convenience over user welfare.                         | Integrate **manipulation classifiers**, user <q>risk knobs,</q> disclosure UX, and welfare-aligned optimization. Conduct red-team testing.                                                 |
+| **Regulatory / Compliance Drift**                    | Model behavior or data handling no longer compliant with evolving law.                          | Maintain **policy-aware prompts**, traceable model cards, and automatic compliance testing in CI/CD. Engage Compliance in AgentOps.                                                        |
+| **Security & Identity Breach**                       | Unauthorized agent actions, data leaks, or credential misuse.                                   | Assign **per-agent identities** and scoped credentials; enforce least privilege; enable hardware-backed key custody and kill-switch drills.                                                |
+| **Energy & Cost Blowout**                            | Rising GPU costs, uncontrolled token usage, or unsustainable power draw.                        | Track **ECI_outcome** (kWh per verified outcome) and **cost per verified outcome**; adopt carbon-aware scheduling and caching.                                                             |
+| **Cultural Resistance / Human Displacement Anxiety** | Staff slow to adopt; morale and trust decline; shadow IT use grows.                             | Publish transparent **transition roadmaps**; retrain into AgentOps and verification roles; use internal communication framing around augmentation.                                         |
+| **Governance Fragmentation**                         | AI systems deployed without unified oversight; inconsistent policies and risk handling.         | Form a central **AI Governance Board**; standardize model/agent cards, incident reporting, and escalation runbooks.                                                                        |
+| **Lack of Observability / Black-Box Agents**         | Incidents or performance regressions cannot be diagnosed.                                       | Require **structured traces**, reason codes, and agent observability (latency, cost, autonomy, escape rate, MTTR). Mandate audit-ready logs.                                               |
+| **Attention / Trust Collapse**                       | Customer or employee trust erodes due to opaque or manipulative outputs.                        | Implement **provenance disclosure**, appeal paths, and time-to-human fallbacks; track manipulation and appeal metrics on Flourishing Balance Sheet.                                        |
+| **Verification Bottleneck (EvalOps Lag)**            | Model development outpaces verification capability; delays releases.                            | Resource **Evaluator Engineering** as a first-class discipline; reuse domain-specific verifier patterns; automate test generation.                                                         |
+| **Over-Centralized Compute Risk**                    | Outage or policy decision in one region halts enterprise operations.                            | Build **multi-region compute** with failover; maintain **Compute Sovereignty Ratio** (0.8–1.2); ensure cross-provider contracts.                                                           |
+| **Liability Ambiguity**                              | Responsibility unclear when AI errors cause harm.                                               | Map accountability per workflow (model vendor, deployer, tool owner); define **safe harbors** and **strict liability zones** in contracts.                                                 |
+| **Civic / ESG Backlash**                             | Perception that AI harms communities, jobs, or environment.                                     | Publish **Flourishing Balance Sheet** and **energy/carbon metrics**; invest in civic AI pilots that demonstrate public benefit.                                                            |
+| **Skill Atrophy / Human Out-of-the-Loop**            | Staff lose domain expertise due to automation.                                                  | Implement **shadow mode rotations**; require periodic human audit samples; maintain cross-training programs.                                                                               |
 {: .table .table-striped .table-hover}
 
 ### Human‑Flourishing Architecture: Aligning Abundant Cognition With Trust & Time
