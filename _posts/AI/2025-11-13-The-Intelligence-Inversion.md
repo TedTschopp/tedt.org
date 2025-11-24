@@ -615,6 +615,7 @@ outcomes</strong>. The operating system for that is:</mark>
 
 #### Board Level KPIs
 
+{: .kpi-list }
 **Cost per Verified Outcome**
 : All‑in cost (compute, tools, infra, and
 associated human work) divided by the number of business outcomes that *pass
@@ -653,7 +654,7 @@ better portability and lower vendor lock‑in.
 : Kilowatt‑hours of energy consumed by the AI
 stack divided by the count of AI outcomes that pass their verifiers (kWh per
 verified outcome).
-{: .kpi-list }
+
 
 
 ### Organization & Talent: Build AgentOps
