@@ -441,12 +441,9 @@ mark.glow {
 }
 
 
-/* =========================== New Board Level KPIs block
-=========================== */
-
-/* --- KPI definition list container --- */
-/* Add class="kpi-list" to your <dl> for best results */
-dl.kpi-list {
+/* --- Definition list container --- */
+/* Add class="Definition-list" to your <dl> for best results */
+dl.definition-list {
   margin: 0 0 2rem;
   padding: 1.5rem 1.75rem;
   border-radius: 12px;
@@ -456,7 +453,7 @@ dl.kpi-list {
 
 /* Two-column, board-style layout on wider screens */
 @media (min-width: 768px) {
-  dl.kpi-list {
+  dl.definition-list {
     display: grid;
     grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
     column-gap: 1.75rem;
@@ -464,8 +461,8 @@ dl.kpi-list {
   }
 }
 
-/* KPI term (dt) */
-dl.kpi-list dt {
+/* Definition term (dt) */
+dl.definition-list dt {
   margin: 0;
   font-weight: 650;
   color: #111;
@@ -473,8 +470,8 @@ dl.kpi-list dt {
   padding-left: 0.85rem;
 }
 
-/* Accent bar next to KPI name */
-dl.kpi-list dt::before {
+/* Accent bar next to Definition name */
+dl.definition-list dt::before {
   content: "";
   position: absolute;
   left: 0;
@@ -485,8 +482,8 @@ dl.kpi-list dt::before {
   background: #1f4b99; /* tweak to match your brand */
 }
 
-/* KPI description (dd) */
-dl.kpi-list dd {
+/* Definition description (dd) */
+dl.definition-list dd {
   margin: 0 0 0.75rem;
   color: #444;
   line-height: 1.6;
@@ -495,34 +492,34 @@ dl.kpi-list dd {
 
 /* Align dd to second column on wider screens */
 @media (min-width: 768px) {
-  dl.kpi-list dt {
+  dl.definition-list dt {
     grid-column: 1;
   }
-  dl.kpi-list dd {
+  dl.definition-list dd {
     grid-column: 2;
   }
 }
 
 /* Inline emphasis inside descriptions */
-dl.kpi-list em {
+dl.definition-list em {
   font-style: italic;
 }
 
-dl.kpi-list strong {
+dl.definition-list strong {
   font-weight: 650;
 }
 
 /* Nice typographic quotes for <q> */
-dl.kpi-list q {
+dl.definition-list q {
   quotes: "“" "”" "‘" "’";
   font-style: italic;
 }
 
-dl.kpi-list q::before {
+dl.definition-list q::before {
   content: open-quote;
 }
 
-dl.kpi-list q::after {
+dl.definition-list q::after {
   content: close-quote;
 }
 
@@ -552,6 +549,41 @@ strategy, and user trust</strong>.</mark>
   compute efficiency all compound across every use case.</mark>
 - <mark class="glow"><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
+
+{: .definition-list }
+**Cost per Verified Outcome**
+: All‑in cost (compute, tools, infra, and
+associated human work) divided by the number of business outcomes that *pass
+their verifiers* in a given workflow and period.
+
+**Autonomy Index** : Percentage of tasks or flows that the agent completes
+end‑to‑end **without human edits or intervention** in a given domain.
+
+**Verifier Coverage** : Percentage of the agent’s outputs that pass through one
+or more verifiers (tests, oracles, evaluators, or human audit) before being
+accepted as <q>done.</q>
+
+**Escape Rate** : Percentage of all agent outputs that are **both wrong and not
+caught by verifiers**—i.e., errors that escape verification into production or
+customer‑facing channels.
+
+**Mean Time to Restore (Sev‑1)** : Average elapsed time from the start of a
+
+**Severity‑1 agent incident** (critical customer or system impact) to full
+restoration of normal service.
+
+**Severity‑1 incident rate** : Frequency of Severity‑1 agent incidents over a
+period, typically measured as the number of Sev‑1 incidents per unit time (e.g.,
+per quarter) and/or per N verified outcomes.
+
+**Portability delta** (multi‑provider) : Percentage‑point difference in key
+outcome metrics (e.g., verified success rate, cost per verified outcome) when
+the **same workflow** runs on at least two model providers; smaller deltas mean
+better portability and lower vendor lock‑in.
+
+**Energy per verified outcome** : Kilowatt‑hours of energy consumed by the AI
+stack divided by the count of AI outcomes that pass their verifiers (kWh per
+verified outcome).
 
 ### What’s Changing & How Fast
 
@@ -612,63 +644,14 @@ outcomes</strong>. The operating system for that is:</mark>
 
 - **Capability interfaces** between workflow and model provider so identical
   jobs run on ≥2 stacks with **≤2‑point outcome deltas**. This is your vendor‑risk and bargaining power.
-<style>
 
-  blockquote.alert.alert-info {
-  float: right;
-  max-width: 28rem;
-  margin: 0 0 1.5rem 1.5rem;
-}
+#### Board‑level KPIs
 
-blockquote.alert.alert-info + h3 {
-  clear: both;
-}
-</style>
-
-
-> **Board Level KPIs**
->
-> {: .kpi-list }
-> **Cost per Verified Outcome**
-> : All‑in cost (compute, tools, infra, and
-> associated human work) divided by the number of business outcomes that *pass
-> their verifiers* in a given workflow and period.
->
-> **Autonomy Index**
-> : Percentage of tasks or flows that the agent completes
-> end‑to‑end **without human edits or intervention** in a given domain.
->
-> **Verifier Coverage**
-> : Percentage of the agent’s outputs that pass through one
-> or more verifiers (tests, oracles, evaluators, or human audit) before being
-> accepted as <q>done.</q>
->
-> **Escape Rate**
-> : Percentage of all agent outputs that are **both wrong and not
-> caught by verifiers**—i.e., errors that escape verification into production or
-> customer‑facing channels.
->
-> **Mean Time to Restore (Sev‑1)**
-> : Average elapsed time from the start of a
-> **Severity‑1 agent incident** (critical customer or system impact) to full
-> restoration of normal service.
->
-> **Severity‑1 incident rate**
-> : Frequency of Severity‑1 agent incidents over a
-> period, typically measured as the number of Sev‑1 incidents per unit time (e.g.,
-> per quarter) and/or per N verified outcomes.
->
-> **Portability delta** (multi‑provider) 
-> : Percentage‑point difference in key outcome metrics (e.g., verified success rate,
-> cost per verified outcome) when the **same workflow** runs on at least two model
-> providers; smaller deltas mean better portability and lower vendor lock‑in.
->
-> **Energy per verified outcome**
-> : Kilowatt‑hours of energy consumed by the AI
-> stack divided by the count of AI outcomes that pass their verifiers (kWh per
-> verified outcome).
-{: .alert .alert-info}
-
+- Cost per **verified outcome** 
+- **Autonomy Index**, **Verifier Coverage**, **Escape Rate** 
+- **MTTR** for Sev‑1, incident rate 
+- **Portability delta** (multi‑provider) 
+- **Energy per verified outcome**
 
 ### Organization & Talent: Build AgentOps
 
