@@ -444,35 +444,34 @@ mark.glow {
 ## Executive Summary
 
 <mark class="glow">The first 1,000 days of AI validated the path from science through engineering
-and into production; the <strong>next</strong> 1,000 will be won on <strong>economics, business
+and into production that produced real value; the <strong>next</strong> 1,000 will be won on <strong>economics, business
 strategy, and user trust</strong>.</mark>
 
 ### Bottom Line Up Front
 
 - **The first 1,000 days of AI** Since ChatGPT launched on **Nov 30, 2022**,
-  enterprises moved from copilots to **verification‑first agents**. Costs fell
-  (e.g., **mini‑class models at ≅\$0.15 per 1,000,000 input tokens**), enabling
-  <\$1 a day <q>digital worker‑day</q> at ≅1,000,000 tokens a day; adoption crossed
+  enterprises moved from experiments to **verification‑first agents**. Costs fell, enabling
+  <\$1 a day <q>digital worker‑day</q> at ≅1,000,000 tokens a day and adoption crossed
   the majority threshold by mid‑2024.
-- <mark class="glow"><strong>Compete on verification, not hype.</strong> Tie
-  every AI claim to <em>cost per verified outcome, autonomy, escape, MTTR,</em>
+- <mark class="glow"><strong>You must compete on verification, not hype.</strong> Tie
+  every AI claim to <em>cost per verified outcome, autonomy, error rates, MTTR,</em>
   and <em>portability</em>.</mark>
-- <mark class="glow"><strong>Rewire the enterprise.</strong> Stand up AgentOps; hire evaluator engineers;
-  contract for diversified compute and energy; instrument your workflows.</mark>
-- <mark class="glow"><strong>Lead on trust.</strong> Manipulation defenses, provenance, disclosure, and appeals
-  protect the brand and pre‑empt regulation.</mark>
+- <mark class="glow"><strong>Your Plan: Rewire your enterprise.</strong> Stand up AgentOps, Hire evaluator engineers.
+  Contract for diversified compute and energy. Instrument your workflows.</mark>
+- <mark class="glow"><strong>Lead on trust.</strong> Manipulation defenses, data provenance, AI transparency, and appeals
+  protect your brand and pre‑empt regulation.</mark>
 - <mark class="glow"><strong>Invest where it compounds.</strong> Verification libraries, observability, and
-  compute efficiency compound across every use case.</mark>
+  compute efficiency all compound across every use case.</mark>
 - <mark class="glow"><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
 
 ### What’s Changing & How Fast
 
-<mark class="glow"><strong>The Intelligence Inversion.</strong> Over the next ≅1,000 days (through <strong>August
-2028</strong>), general‑purpose AI will move from <q>smart intern</q> to <strong>autonomous
-agents</strong> that plan, act, verify their own work, and handle multi‑step outcomes.
+<mark class="glow"><strong>The Intelligence Inversion.</strong> Over the next ≅1,000 days (through the end of
+2028</strong>), AI models will move from <q>smart intern</q> to <strong>autonomous
+agents</strong> that plan, observe, orient, decide, act, and verify their own work, and handle multi‑step outcomes.
 Cognitive output becomes <strong>cheap, fast, and scalable with compute</strong>, not
-headcount. Early signals already visible across routine drafting, tier‑1
+headcount. Early signals are already visible across multiple use cases including: routine drafting, tier‑1
 support, back‑office adjudication, code maintenance, and complex coordination
 tasks.</mark>
 
@@ -489,14 +488,16 @@ advantage shifts to:
 
 ### What This Means For Large Enterprise Profit & Loss
 
-- <mark class="glow"><strong>Cogs &amp; OpEx:</strong> In agent‑addressable domains, <strong>cost per verified outcome</strong>
+- <mark class="glow"><strong>Costs of Goods Sold &amp; Operating Expenses:</strong> 
+  In agent‑addressable domains, <strong>cost per verified outcome</strong>
   (not hours) becomes the right denominator. Expect large step‑downs as autonomy
   rises.</mark>
-- <mark class="glow"><strong>CapEx &amp; Balance Sheet:</strong> Compute, eval tooling, and observability
+- <mark class="glow"><strong>Capital Expenses &amp; Balance Sheet:</strong> Compute, eval tooling, and observability
   become enduring capital — <strong><q>compute is the new capital stock.</q></strong></mark>
 - **Revenue Growth:** Faster cycle times and 24/7 agent capacity expand
   serviceable demand (e.g., claims cleared, tickets resolved, quotes delivered).
-- **Working Capital:** Better throughput reduces WIP and DSO in service chains.
+- **Working Capital:** Better throughput reduces Work In Progress and Days Sales
+  Outstanding in service chains.
 - **Risk & Brand:** Manipulation‑resistant interaction design, provenance, and
   appeals become **trust differentiators** and regulatory hedges.
 
@@ -510,30 +511,59 @@ outcomes</strong>. The operating system for that is:</mark>
 - **Evaluators/Verifiers** as code: property‑based tests, oracles, statistical
   acceptance sampling.
 - **Promotion gates**: agents move from shadow to primary only when verifiers
-  hit **≥95% coverage**, **escape rate ≤0.5%**, and the **Autonomy Index ≥70%**
+  hit **≥95% coverage**, **escape rate ≤0.5%**, and the **Autonomy Index(tasks completed without human edits) ≥70%**
   for 90 days.
 
 #### Safe, Observable Execution
 
-- **Agent identity & policy** (least‑privilege credentials, policy‑aware tool
-  wrappers).
+- **Agent identity & policy** (least‑privilege credentials, policy‑aware tool wrappers).
 - **Observability** (structured traces, reason codes).
-- **Kill‑switch & chaos drills** with **MTTR ≤2 hours** for Severity‑1
-  incidents.
+- **Kill‑switch & chaos drills** with **MTTR ≤2 hours** for Severity‑1 incidents.
 
 #### Portable by Design
 
 - **Capability interfaces** between workflow and model provider so identical
-  jobs run on ≥2 stacks with **≤2‑point outcome deltas**. This is your
-  vendor‑risk and bargaining power.
+  jobs run on ≥2 stacks with **≤2‑point outcome deltas**. This is your vendor‑risk and bargaining power.
 
 #### Board Level KPIs
 
 - Cost per **verified outcome**
-- **Autonomy Index**, **Verifier Coverage**, **Escape Rate**
-- **MTTR** for Sev‑1, incident rate
-- **Portability delta** (multi‑provider)
+- **Autonomy Index** (tasks completed without human edits), **Verifier
+  Coverage** (Percentage of agent output checked by a verifier), **Escape Rate**
+- **Mean Time to Restore** for Sev‑1 defects and incident rate
+- **Portability delta (Time series graph on the agents that are vendor or model or hyperscaler locked)**
 - **Energy per verified outcome**
+
+
+
+#### Board Level KPIs
+
+**Cost per verified outcome** : Total cost of running the system divided by the
+number of outcomes that pass verification (human or automated).
+
+**Autonomy Index** : Percentage of tasks completed by the AI without any human
+edits to its final output.
+
+**Verifier Coverage** : Percentage of AI outputs that receive an explicit check
+by a human or automated verifier.
+
+**Escape Rate** : Percentage of faulty or unacceptable outputs that pass through
+verification and reach production or end users.
+
+**Mean Time to Restore (Sev‑1)** : Average time to restore normal service after
+a Severity‑1 defect or incident is detected.
+
+**Severity‑1 incident rate** : Number of Severity‑1 incidents per unit of time (for
+example, per month or per 1,000 requests).
+
+**Portability delta** (multi‑provider) : Measured gap between the number of agents that
+are vendor, model, or hyperscaler locked.
+
+**Energy per verified outcome** : Total energy consumed by the system divided by
+the number of verified outcomes.
+
+
+
 
 ### Organization & Talent: Build AgentOps
 
@@ -661,9 +691,15 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 - **People outcomes:** **Time Dividend ≥5 hours a week** in targeted
   customer/employee journeys; measurable education/health gains where deployed.
 
-
-
 ## The First 3 Years: From Tokens To Work
+
+> **Three years vs. 1,000 Days**
+>
+> Throughout this white paper I use "1,000 days" as a convenient shorthand for a
+> roughly three‑year strategic window (for example, late 2022 → late 2025 and late
+> 2025 → late 2028), so when you see "1,000 days" and "three years" you can read
+> them as the same planning horizon rather than a claim about exact date math.
+{: .alert .alert-info}
 
 With the launch of ChatGPT on **Nov 30, 2022** to **November 30, 2025**
 transformers, tokens, and agents changed what <q>intelligence</q> means inside the
