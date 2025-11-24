@@ -726,7 +726,7 @@ action** we can pack into tokens per second, per dollar, under governance.*
 > **The Transformer & The Token**
 >
 > Under the hood, every frontier system your enterprise cares about (OpenAI
-> GPT‑4/5 and o‑series, Anthropic Claude, Google Gemini) is built on the same
+> GPT ‑ 4/5 and o‑series, Anthropic Claude, Google Gemini) is built on the same
 > architectural idea:
 >
 > - The **transformer**: a stack of self‑attention layers that repeatedly
@@ -854,18 +854,18 @@ meeting** to **multiple human days**:
 
 |             Model | Year | Context Size (tokens)  | Approximate number of Words* | Human speech equivalent† | Human thought equivalent‡ |
 |------------------:|------|:----------------------:|:----------------------------:|:------------------------:|:-------------------------:|
-|             GPT‑1 | 2018 |          512           |             ≅400             |         ≅35 min          |          ≅10 min          |
-|             GPT‑2 | 2019 |      1,<wbr/>024       |             ≅800             |          ≅1.2 h          |          ≅20 min          |
-|             GPT‑3 | 2020 |      4,<wbr/>096       |         ≅3,<wbr/>000         |          ≅4.9 h          |          ≅1.2 h           |
-|             GPT‑4 | 2023 |      8,<wbr/>192       |         ≅6,<wbr/>000         |          ≅9.8 h          |          ≅2.5 h           |
-|       GPT‑4‑turbo | 2023 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
-|            GPT‑4o | 2024 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
-|       GPT‑4o‑mini | 2024 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
-|           o1‑mini | 2024 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|           GPT ‑ 1 | 2018 |          512           |             ≅400             |         ≅35 min          |          ≅10 min          |
+|           GPT ‑ 2 | 2019 |      1,<wbr/>024       |             ≅800             |          ≅1.2 h          |          ≅20 min          |
+|           GPT ‑ 3 | 2020 |      4,<wbr/>096       |         ≅3,<wbr/>000         |          ≅4.9 h          |          ≅1.2 h           |
+|           GPT ‑ 4 | 2023 |      8,<wbr/>192       |         ≅6,<wbr/>000         |          ≅9.8 h          |          ≅2.5 h           |
+|     GPT ‑ 4 Turbo | 2023 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|          GPT ‑ 4o | 2024 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|     GPT ‑ 4o mini | 2024 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|           o1 mini | 2024 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
 |                o1 | 2024 |     200,<wbr/>000      |        ≅150,<wbr/>000        |        ≅10.0 days        |         ≅2.5 days         |
-|    GPT‑5‑Standard | 2025 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
-|         GPT‑5‑Pro | 2025 |     196,<wbr/>000      |        ≅147,<wbr/>000        |        ≅9.8 days         |         ≅2.5 days         |
-|         GPT‑5‑API | 2025 |     400,<wbr/>000      |        ≅300,<wbr/>000        |         ≅20 days         |          ≅5 days          |
+|  GPT ‑ 5 Standard | 2025 |     128,<wbr/>000      |        ≅96,<wbr/>000         |        ≅6.4 days         |         ≅1.6 days         |
+|       GPT ‑ 5 Pro | 2025 |     196,<wbr/>000      |        ≅147,<wbr/>000        |        ≅9.8 days         |         ≅2.5 days         |
+|       GPT ‑ 5 API | 2025 |     400,<wbr/>000      |        ≅300,<wbr/>000        |         ≅20 days         |          ≅5 days          |
 |    Gemini 2.5 Pro | 2025 | 1,<wbr/>000,<wbr/>000  |        ≅750,<wbr/>000        |         ≅50 days         |        ≅12.5 days         |
 | Claude Sonnet 4.5 | 2025 | 1,<wbr/>000,<wbr/>000  |        ≅750,<wbr/>000        |         ≅50 days         |        ≅12.5 days         |
 |     Llama 4 Scout | 2025 | 10,<wbr/>000,<wbr/>000 |    ≅7,<wbr/>500,<wbr/>000    |        ≅500 days         |         ≅125 days         |
@@ -941,10 +941,10 @@ Humans:
 
 Models:
 
-- Early GPT‑1/2 era: single‑digit **tokens/second**; conversational but
+- Early GPT ‑ 1 & 2 era: single‑digit **tokens/second**; conversational but
   sluggish.
-- GPT‑3/4 era: **tens of tokens/second** per stream.
-- GPT‑4‑turbo / GPT‑4o / GPT‑5 era: **dozens to hundreds of tokens/second** per
+- GPT ‑ 3 & 4 era: **tens of tokens/second** per stream.
+- GPT ‑ 4 Turbo / GPT ‑ 4o / GPT ‑ 5 era: **dozens to hundreds of tokens/second** per
   stream, and **thousands+ tokens/second effective throughput** when you batch
   jobs across GPUs and cache shared work.
 
@@ -967,14 +967,14 @@ changes:
 
 - **Nov 2022 — ChatGPT (research preview) launches;** generative chat goes
   mainstream; LLMs move from lab curiosity to board slides.
-- **Mar 2023 — GPT‑4 (multimodal);** durable gains on professional benchmarks;
+- **Mar 2023 — GPT ‑ 4 (multimodal);** durable gains on professional benchmarks;
   the **copilot era** begins (IDE assistants, Office copilots, early
   customer‑service bots).
-- **Nov 2023 — OpenAI DevDay price step‑down + Assistants API;** GPT‑4 Turbo
-  lands at roughly **3× cheaper input / 2× cheaper output** than GPT‑4;
+- **Nov 2023 — OpenAI DevDay price step‑down + Assistants API;** GPT ‑ 4 Turbo
+  lands at roughly **3× cheaper input / 2× cheaper output** than GPT ‑ 4;
   Assistants API normalizes tools, retrieval, and structured responses; serious
   pilots begin.
-- **May 2024 — GPT‑4o (omni) ships;** multimodal I/O and ≅50% cheaper than GPT‑4
+- **May 2024 — GPT ‑ 4o (omni) ships;** multimodal I/O and ≅50% cheaper than GPT ‑ 4
   Turbo in the API; voice and vision become default; free tiers widen the
   top‑of‑funnel and internal experimentation.
 - **Aug 2024 — EU AI Act enters into force;** first horizontally scoped safety
@@ -984,7 +984,7 @@ changes:
   reasoning, deliberate mode, and better tool use push models beyond <q>smart
   autocomplete</q> into credible **agent cores**.
 - **Jan – Jun 2025 — Cost & scale shift again;** mini/efficient models (e.g.,
-  GPT‑4o‑mini) are priced as low as **\$0.15 per 1,000,000 input tokens** and
+  GPT ‑ 4o‑mini) are priced as low as **\$0.15 per 1,000,000 input tokens** and
   **\$0.60 per 1,000,000 output tokens**, enabling **<\$1 a day digital
   workers** at ≅1,000,000 tokens a day.
 - **2024 – 2025 — Enterprise adoption hits majority;** industry surveys show
@@ -1027,7 +1027,7 @@ evaluations), they saw:
   support, claims triage, and code generation flows.
 - **≥50% reductions** in cycle time once agents entered the critical path under
   verification.
-- Token pricing (e.g., GPT‑4o‑mini at **$0.15 per 1,000,000 input tokens** and
+- Token pricing (e.g., GPT ‑ 4o‑mini at **$0.15 per 1,000,000 input tokens** and
   **$0.60 per 1,000,000 output tokens**) meant ≅1,000,000 tokens a day cost only
   **≅$0.33 – $0.50 a day** in pure inference before tools and evaluations.
 
@@ -1082,7 +1082,7 @@ Outside your four walls, several signals confirmed that the shift was real:
   became a de facto reference for U.S. risk programs. Logged decisions,
   provenance, and incident response moved from <q>nice to have</q> to expectation.
 - **Cost curve.** Vendor pricing documents across 2023–2025 showed step‑downs
-  (DevDay cuts, GPT‑4o and mini pricing), closing viability gaps for agentic
+  (DevDay cuts, GPT ‑ 4o and mini pricing), closing viability gaps for agentic
   automation and making < $1 a day digital workers credible at scale.
 
 ### What Hasn't Happened Yet
