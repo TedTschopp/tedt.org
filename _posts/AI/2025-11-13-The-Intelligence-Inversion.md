@@ -612,6 +612,18 @@ outcomes</strong>. The operating system for that is:</mark>
 
 - **Capability interfaces** between workflow and model provider so identical
   jobs run on ≥2 stacks with **≤2‑point outcome deltas**. This is your vendor‑risk and bargaining power.
+<style>
+
+  blockquote.alert.alert-info {
+  float: right;
+  max-width: 28rem;
+  margin: 0 0 1.5rem 1.5rem;
+}
+
+blockquote.alert.alert-info + h3 {
+  clear: both;
+}
+</style>
 
 
 > **Board Level KPIs**
@@ -621,36 +633,36 @@ outcomes</strong>. The operating system for that is:</mark>
 > : All‑in cost (compute, tools, infra, and
 > associated human work) divided by the number of business outcomes that *pass
 > their verifiers* in a given workflow and period.
-> 
+>
 > **Autonomy Index**
 > : Percentage of tasks or flows that the agent completes
 > end‑to‑end **without human edits or intervention** in a given domain.
-> 
+>
 > **Verifier Coverage**
 > : Percentage of the agent’s outputs that pass through one
 > or more verifiers (tests, oracles, evaluators, or human audit) before being
 > accepted as <q>done.</q>
-> 
+>
 > **Escape Rate**
 > : Percentage of all agent outputs that are **both wrong and not
 > caught by verifiers**—i.e., errors that escape verification into production or
 > customer‑facing channels.
-> 
+>
 > **Mean Time to Restore (Sev‑1)**
 > : Average elapsed time from the start of a
 > **Severity‑1 agent incident** (critical customer or system impact) to full
 > restoration of normal service.
-> 
+>
 > **Severity‑1 incident rate**
 > : Frequency of Severity‑1 agent incidents over a
 > period, typically measured as the number of Sev‑1 incidents per unit time (e.g.,
 > per quarter) and/or per N verified outcomes.
-> 
-> **Portability delta** (multi‑provider) : Percentage‑point difference in key
-> outcome metrics (e.g., verified success rate, cost per verified outcome) when
-> the **same workflow** runs on at least two model providers; smaller deltas mean
-> better portability and lower vendor lock‑in.
-> 
+>
+> **Portability delta** (multi‑provider) 
+> : Percentage‑point difference in key outcome metrics (e.g., verified success rate,
+> cost per verified outcome) when the **same workflow** runs on at least two model
+> providers; smaller deltas mean better portability and lower vendor lock‑in.
+>
 > **Energy per verified outcome**
 > : Kilowatt‑hours of energy consumed by the AI
 > stack divided by the count of AI outcomes that pass their verifiers (kWh per
