@@ -439,6 +439,133 @@ mark.glow {
   /* WCAG AAA: Calculated light text with glow color tinge */
   color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 }
+
+
+/* =========================== New Board Level KPIs block
+=========================== */
+
+/* Section heading */
+#new-board-level-kpis {
+  margin-top: 3rem;
+  margin-bottom: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(15, 23, 42, 0.08); /* subtle divider */
+}
+
+/* Back-to-TOC icon (Font Awesome arrow) */
+#new-board-level-kpis > a[aria-label="Back to Table of Contents"] {
+  /* override the inline display:none; */
+  display: inline-flex !important;
+  align-items: center;
+  gap: 0.25rem;
+
+  font-size: 0.8rem;
+  color: inherit;
+  text-decoration: none;
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(2px);
+  transition:
+    opacity 150ms ease-out,
+    transform 150ms ease-out;
+}
+
+#new-board-level-kpis:hover > a[aria-label="Back to Table of Contents"],
+#new-board-level-kpis:focus-within > a[aria-label="Back to Table of Contents"] {
+  opacity: 0.7;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+/* =========================== KPI definition list ===========================
+*/
+
+/* Card container for the KPI <dl> that follows the heading */
+#new-board-level-kpis ~ dl {
+  margin: 1.25rem 0 0;
+  padding: 1.5rem 1.75rem;
+
+  border-radius: 0.75rem;
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  background:
+    linear-gradient(
+      to right,
+      rgba(15, 23, 42, 0.03),
+      rgba(15, 23, 42, 0.0)
+    );
+
+  display: grid;
+  grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+  column-gap: 2rem;
+  row-gap: 0.75rem;
+}
+
+/* KPI term (dt) */
+#new-board-level-kpis ~ dl dt {
+  grid-column: 1;
+  margin: 0;
+
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: none;
+  color: inherit;
+
+  display: flex;
+  align-items: baseline;
+}
+
+/* Small dot before each KPI name */
+#new-board-level-kpis ~ dl dt::before {
+  content: "";
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 999px;
+  margin-right: 0.4rem;
+
+  background-color: currentColor;
+  opacity: 0.65;
+  transform: translateY(-1px);
+}
+
+/* KPI definition (dd) */
+#new-board-level-kpis ~ dl dd {
+  grid-column: 2;
+  margin: 0 0 0.4rem;
+
+  color: rgba(15, 23, 42, 0.82);
+  line-height: 1.5;
+}
+
+/* tighten bottom spacing on the last item */
+#new-board-level-kpis ~ dl dd:last-of-type {
+  margin-bottom: 0;
+}
+
+/* =========================== Responsive tweaks =========================== */
+
+@media (max-width: 768px) {
+  #new-board-level-kpis ~ dl {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 1.25rem 1.25rem;
+  }
+
+  #new-board-level-kpis ~ dl dt,
+  #new-board-level-kpis ~ dl dd {
+    grid-column: 1;
+  }
+
+  #new-board-level-kpis ~ dl dt {
+    margin-top: 0.5rem;
+  }
+
+  #new-board-level-kpis ~ dl dd {
+    margin-top: 0.1rem;
+  }
+}
+
+
 </style>
 
 ## Executive Summary
@@ -527,16 +654,7 @@ outcomes</strong>. The operating system for that is:</mark>
 
 #### Board Level KPIs
 
-- Cost per **verified outcome**
-- **Autonomy Index** (tasks completed without human edits), **Verifier
-  Coverage** (Percentage of agent output checked by a verifier), **Escape Rate**
-- **Mean Time to Restore** for Sev‑1 defects and incident rate
-- **Portability delta (Time series graph on the agents that are vendor or model or hyperscaler locked)**
-- **Energy per verified outcome**
-
-#### New Board Level KPIs
-
-**Cost per verified outcome**
+**Cost per Verified Outcome**
 : All‑in cost (compute, tools, infra, and
 associated human work) divided by the number of business outcomes that *pass
 their verifiers* in a given workflow and period.
