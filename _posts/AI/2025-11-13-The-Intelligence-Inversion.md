@@ -378,10 +378,12 @@ mark.glow {
   --glow-g: var(--glow-base-g);
   --glow-b: var(--glow-base-b);
 
-  /* Calculate dark text color: use full saturation with good contrast */
-  --text-r: calc(var(--glow-r) * 0.40);
-  --text-g: calc(var(--glow-g) * 0.40);
-  --text-b: calc(var(--glow-b) * 0.25);
+  /* Calculate dark, near-black text that maintains the glow color's hue */
+  --text-r: calc(var(--glow-base-r) * 0.10);
+  --text-g: calc(var(--glow-base-g) * 0.10);
+  --text-b: calc(var(--glow-base-b) * 0.10);
+
+  color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 
   background:
     linear-gradient(
@@ -406,9 +408,6 @@ mark.glow {
   -webkit-box-decoration-break: clone;
   margin: 0;
   border-radius: 7.5px;
-
-  /* WCAG AAA: Calculated dark text shifted toward glow color */
-  color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 }
 
 /* Dark mode variant: deeper glow with light text tinged with glow color */
