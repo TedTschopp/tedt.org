@@ -379,9 +379,9 @@ mark.glow {
   --glow-b: var(--glow-base-b);
 
   /* Calculate dark text color: darken by 95% and shift toward glow color */
-  --text-r: calc(var(--glow-r) * 0.05);
+  --text-r: calc(var(--glow-r) * 0.20);
   --text-g: calc(var(--glow-g) * 0.20);
-  --text-b: calc(var(--glow-b) * 0.14);
+  --text-b: calc(var(--glow-b) * 0.20);
 
   background:
     linear-gradient(
@@ -399,12 +399,14 @@ mark.glow {
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.3) 7.9%,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
     );
+
   padding: 0.6em 13.7px;
   line-height: 1.2em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
   margin: 0;
   border-radius: 7.5px;
+
   /* WCAG AAA: Calculated dark text shifted toward glow color */
   color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 }
@@ -414,8 +416,8 @@ mark.glow {
   mark.glow {
     /* Calculate darker, more subdued glow color based on global base */
     --glow-r: calc(var(--glow-base-r) * 0.31);
-    --glow-g: calc(var(--glow-base-g) * 0.78);
-    --glow-b: calc(var(--glow-base-b) * 1.18);
+    --glow-g: calc(var(--glow-base-g) * 0.31);
+    --glow-b: calc(var(--glow-base-b) * 0.31);
 
     /* Calculate light text: brighten to 85% white + 15% glow color */
     --text-r: calc(255 * 0.85 + var(--glow-r) * 0.15);
@@ -446,8 +448,8 @@ mark.glow {
 [data-bs-theme="dark"] mark.glow {
   /* Calculate darker, more subdued glow color based on global base */
   --glow-r: calc(var(--glow-base-r) * 0.31);
-  --glow-g: calc(var(--glow-base-g) * 0.78);
-  --glow-b: calc(var(--glow-base-b) * 1.18);
+  --glow-g: calc(var(--glow-base-g) * 0.31);
+  --glow-b: calc(var(--glow-base-b) * 0.31);
 
   /* Calculate light text: brighten to 85% white + 15% glow color */
   --text-r: calc(255 * 0.85 + var(--glow-r) * 0.15);
@@ -473,7 +475,6 @@ mark.glow {
   /* WCAG AAA: Calculated light text with glow color tinge */
   color: rgb(var(--text-r), var(--text-g), var(--text-b)) !important;
 }
-
 </style>
 
 ## Executive Summary
