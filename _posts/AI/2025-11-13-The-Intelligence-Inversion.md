@@ -311,7 +311,7 @@ automatically */
    ANGLED HIGHLIGHTER EFFECT
    Creates a stylized highlight with angled edges (like a physical highlighter)
    using three layered linear gradients for left edge, center, and right edge.
-   ============================================================================ */
+   ============================================================================ 
 
 .highlight,
 mark {
@@ -367,6 +367,8 @@ mark {
      ------------------------------------------------------------------------- */
   color: rgb(31, 33, 38) !important;
 }
+
+*/
 
 /* ============================================================================
    GLOWING HIGHLIGHTER STYLE (Variable Color System)
