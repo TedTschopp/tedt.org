@@ -386,18 +386,18 @@ mark.glow {
   background:
     linear-gradient(
       104deg,
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 1.25) 2.4%,
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.5) 5.8%,
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.1) 93%,
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.7) 96%,
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 98%
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.00) 00.9%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 1.25) 02.4%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.50) 05.8%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.10) 93.0%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.70) 96.0%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.00) 98.0%
     ),
     linear-gradient(
       183deg,
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0%,
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.3) 7.9%,
-      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 15%
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.00) 00.0%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.33) 07.9%,
+      rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0.00) 15.0%
     );
   padding: 0.6em 13.7px;
   line-height: 1.2em;
