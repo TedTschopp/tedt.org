@@ -647,10 +647,10 @@ outcomes</strong>. The operating system for that is:</mark>
 
 #### Board‑level KPIs
 
-- Cost per **verified outcome** 
-- **Autonomy Index**, **Verifier Coverage**, **Escape Rate** 
-- **MTTR** for Sev‑1, incident rate 
-- **Portability delta** (multi‑provider) 
+- Cost per **verified outcome**
+- **Autonomy Index**, **Verifier Coverage**, **Escape Rate**
+- **MTTR** for Sev‑1, incident rate
+- **Portability delta** (multi‑provider)
 - **Energy per verified outcome**
 
 ### Organization & Talent: Build AgentOps
