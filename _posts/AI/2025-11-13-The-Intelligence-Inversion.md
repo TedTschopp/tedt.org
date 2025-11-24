@@ -534,7 +534,7 @@ outcomes</strong>. The operating system for that is:</mark>
 - **Portability delta (Time series graph on the agents that are vendor or model or hyperscaler locked)**
 - **Energy per verified outcome**
 
-#### Board Level KPIs
+#### New Board Level KPIs
 
 **Cost per verified outcome** : All‑in cost (compute, tools, infra, and
 associated human work) divided by the number of business outcomes that *pass
