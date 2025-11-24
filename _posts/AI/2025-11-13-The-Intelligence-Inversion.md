@@ -534,36 +534,39 @@ outcomes</strong>. The operating system for that is:</mark>
 - **Portability delta (Time series graph on the agents that are vendor or model or hyperscaler locked)**
 - **Energy per verified outcome**
 
-
-
 #### Board Level KPIs
 
-**Cost per verified outcome** : Total cost of running the system divided by the
-number of outcomes that pass verification (human or automated).
+**Cost per verified outcome** : All‑in cost (compute, tools, infra, and
+associated human work) divided by the number of business outcomes that *pass
+their verifiers* in a given workflow and period.
 
-**Autonomy Index** : Percentage of tasks completed by the AI without any human
-edits to its final output.
+**Autonomy Index** : Percentage of tasks or flows that the agent completes
+end‑to‑end **without human edits or intervention** in a given domain.
 
-**Verifier Coverage** : Percentage of AI outputs that receive an explicit check
-by a human or automated verifier.
+**Verifier Coverage** : Percentage of the agent’s outputs that pass through one
+or more verifiers (tests, oracles, evaluators, or human audit) before being
+accepted as <q>done.</q>
 
-**Escape Rate** : Percentage of faulty or unacceptable outputs that pass through
-verification and reach production or end users.
+**Escape Rate** : Percentage of all agent outputs that are **both wrong and not
+caught by verifiers**—i.e., errors that escape verification into production or
+customer‑facing channels.
 
-**Mean Time to Restore (Sev‑1)** : Average time to restore normal service after
-a Severity‑1 defect or incident is detected.
+**Mean Time to Restore (Sev‑1)** : Average elapsed time from the start of a
+**Severity‑1 agent incident** (critical customer or system impact) to full
+restoration of normal service.
 
-**Severity‑1 incident rate** : Number of Severity‑1 incidents per unit of time (for
-example, per month or per 1,000 requests).
+**Severity‑1 incident rate** : Frequency of Severity‑1 agent incidents over a
+period, typically measured as the number of Sev‑1 incidents per unit time (e.g.,
+per quarter) and/or per N verified outcomes.
 
-**Portability delta** (multi‑provider) : Measured gap between the number of agents that
-are vendor, model, or hyperscaler locked.
+**Portability delta** (multi‑provider) : Percentage‑point difference in key
+outcome metrics (e.g., verified success rate, cost per verified outcome) when
+the **same workflow** runs on at least two model providers; smaller deltas mean
+better portability and lower vendor lock‑in.
 
-**Energy per verified outcome** : Total energy consumed by the system divided by
-the number of verified outcomes.
-
-
-
+**Energy per verified outcome** : Kilowatt‑hours of energy consumed by the AI
+stack divided by the count of AI outcomes that pass their verifiers (kWh per
+verified outcome).
 
 ### Organization & Talent: Build AgentOps
 
