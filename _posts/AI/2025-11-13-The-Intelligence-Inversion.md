@@ -378,12 +378,12 @@ mark.glow {
   --glow-g: var(--glow-base-g);
   --glow-b: var(--glow-base-b);
 
-  /* Calculate dark text color: darken by 95% and shift toward glow color */
-  --text-r: calc(var(--glow-r) * 0.20);
-  --text-g: calc(var(--glow-g) * 0.20);
-  --text-b: calc(var(--glow-b) * 0.20);
+  /* Calculate dark text color: use full saturation with good contrast */
+  --text-r: calc(var(--glow-r) * 0.40);
+  --text-g: calc(var(--glow-g) * 0.40);
+  --text-b: calc(var(--glow-b) * 0.25);
 
-  background:
+  font-weight: bolder;
     linear-gradient(
       104deg,
       rgba(var(--glow-r), var(--glow-g), var(--glow-b), 0) 0.9%,
