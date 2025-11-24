@@ -444,125 +444,86 @@ mark.glow {
 /* =========================== New Board Level KPIs block
 =========================== */
 
-/* Section heading */
-#new-board-level-kpis {
-  margin-top: 3rem;
-  margin-bottom: 0.75rem;
-  padding-top: 0.5rem;
-  border-top: 1px solid rgba(15, 23, 42, 0.08); /* subtle divider */
-}
-
-/* Back-to-TOC icon (Font Awesome arrow) */
-#new-board-level-kpis > a[aria-label="Back to Table of Contents"] {
-  /* override the inline display:none; */
-  display: inline-flex !important;
-  align-items: center;
-  gap: 0.25rem;
-
-  font-size: 0.8rem;
-  color: inherit;
-  text-decoration: none;
-
-  opacity: 0;
-  pointer-events: none;
-  transform: translateY(2px);
-  transition:
-    opacity 150ms ease-out,
-    transform 150ms ease-out;
-}
-
-#new-board-level-kpis:hover > a[aria-label="Back to Table of Contents"],
-#new-board-level-kpis:focus-within > a[aria-label="Back to Table of Contents"] {
-  opacity: 0.7;
-  pointer-events: auto;
-  transform: translateY(0);
-}
-
-/* =========================== KPI definition list ===========================
-*/
-
-/* Card container for the KPI <dl> that follows the heading */
-#new-board-level-kpis ~ dl {
-  margin: 1.25rem 0 0;
+/* --- KPI definition list container --- */
+/* Add class="kpi-list" to your <dl> for best results */
+dl.kpi-list {
+  margin: 0 0 2rem;
   padding: 1.5rem 1.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.02);
+}
 
-  border-radius: 0.75rem;
-  border: 1px solid rgba(15, 23, 42, 0.08);
-  background:
-    linear-gradient(
-      to right,
-      rgba(15, 23, 42, 0.03),
-      rgba(15, 23, 42, 0.0)
-    );
-
-  display: grid;
-  grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
-  column-gap: 2rem;
-  row-gap: 0.75rem;
+/* Two-column, board-style layout on wider screens */
+@media (min-width: 768px) {
+  dl.kpi-list {
+    display: grid;
+    grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+    column-gap: 1.75rem;
+    row-gap: 0.75rem;
+  }
 }
 
 /* KPI term (dt) */
-#new-board-level-kpis ~ dl dt {
-  grid-column: 1;
+dl.kpi-list dt {
   margin: 0;
-
-  font-weight: 600;
-  letter-spacing: 0.02em;
-  text-transform: none;
-  color: inherit;
-
-  display: flex;
-  align-items: baseline;
+  font-weight: 650;
+  color: #111;
+  position: relative;
+  padding-left: 0.85rem;
 }
 
-/* Small dot before each KPI name */
-#new-board-level-kpis ~ dl dt::before {
+/* Accent bar next to KPI name */
+dl.kpi-list dt::before {
   content: "";
-  display: inline-block;
-  width: 0.45rem;
-  height: 0.45rem;
+  position: absolute;
+  left: 0;
+  top: 0.35em;
+  width: 0.35rem;
+  height: 0.9em;
   border-radius: 999px;
-  margin-right: 0.4rem;
-
-  background-color: currentColor;
-  opacity: 0.65;
-  transform: translateY(-1px);
+  background: #1f4b99; /* tweak to match your brand */
 }
 
-/* KPI definition (dd) */
-#new-board-level-kpis ~ dl dd {
-  grid-column: 2;
-  margin: 0 0 0.4rem;
-
-  color: rgba(15, 23, 42, 0.82);
-  line-height: 1.5;
+/* KPI description (dd) */
+dl.kpi-list dd {
+  margin: 0 0 0.75rem;
+  color: #444;
+  line-height: 1.6;
+  font-size: 0.95rem;
 }
 
-/* tighten bottom spacing on the last item */
-#new-board-level-kpis ~ dl dd:last-of-type {
-  margin-bottom: 0;
-}
-
-/* =========================== Responsive tweaks =========================== */
-
-@media (max-width: 768px) {
-  #new-board-level-kpis ~ dl {
-    grid-template-columns: minmax(0, 1fr);
-    padding: 1.25rem 1.25rem;
-  }
-
-  #new-board-level-kpis ~ dl dt,
-  #new-board-level-kpis ~ dl dd {
+/* Align dd to second column on wider screens */
+@media (min-width: 768px) {
+  dl.kpi-list dt {
     grid-column: 1;
   }
-
-  #new-board-level-kpis ~ dl dt {
-    margin-top: 0.5rem;
+  dl.kpi-list dd {
+    grid-column: 2;
   }
+}
 
-  #new-board-level-kpis ~ dl dd {
-    margin-top: 0.1rem;
-  }
+/* Inline emphasis inside descriptions */
+dl.kpi-list em {
+  font-style: italic;
+}
+
+dl.kpi-list strong {
+  font-weight: 650;
+}
+
+/* Nice typographic quotes for <q> */
+dl.kpi-list q {
+  quotes: "“" "”" "‘" "’";
+  font-style: italic;
+}
+
+dl.kpi-list q::before {
+  content: open-quote;
+}
+
+dl.kpi-list q::after {
+  content: close-quote;
 }
 
 
@@ -692,6 +653,8 @@ better portability and lower vendor lock‑in.
 : Kilowatt‑hours of energy consumed by the AI
 stack divided by the count of AI outcomes that pass their verifiers (kWh per
 verified outcome).
+{: .kpi-list }
+
 
 ### Organization & Talent: Build AgentOps
 
