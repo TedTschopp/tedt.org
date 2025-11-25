@@ -539,19 +539,26 @@ dl.definition-list q::after {
   content: close-quote;
 }
 
-/* --- Glossary header (h6 for lowest heading level) --- */
+/* --- Definition list header (h6 = lowest heading level) --- */
 h6.definition-list-heading {
-  margin: 1.5rem 0 0.35rem;
-  font-size: 0.8rem;
+  margin: 1.5rem 0 0;                  /* space above card, none between header & dl */
+  padding: 0.6rem 1.75rem 0.35rem;     /* match dl side padding */
+  font-size: 0.8rem;                   /* subtle, smaller than body */
   font-weight: 600;
-  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: rgba(var(--bs-dark-rgb), 0.7);
+  letter-spacing: 0.12em;
+  color: rgba(var(--bs-dark-rgb), 0.75);
+  border-radius: 12px 12px 0 0;        /* top of the card */
+  border: 1px solid rgba(var(--bs-dark-rgb), 1);
+  border-bottom: 0;                    /* dl will draw the bottom */
+  background: rgba(var(--bs-light-rgb), 1);
 }
 
-/* Tighten spacing when the header is directly above the definition list */
+/* Merge header + dl into a single box when used together */
 h6.definition-list-heading + dl.definition-list {
-  margin-top: 0;
+  margin-top: 0;                       /* no gap between them */
+  border-radius: 0 0 12px 12px;        /* bottom of the card */
+  border-top: 0;                       /* header already has the top border */
 }
 
 </style>
@@ -581,6 +588,7 @@ strategy, and user trust</strong>.</mark>
   your financials.</mark>
 
 ###### Key Terms in Section.
+{: .definition-list-heading }
 
 {: .definition-list }
 **Intelligence Inversion**
@@ -671,7 +679,7 @@ strategy, and user trust</strong>.</mark>
 ### What’s Changing & How Fast
 
 <mark class="glow"><strong>The Intelligence Inversion.</strong> Over the next ≅1,000 days (through the end of
-2028</strong>), AI models will move from <q>smart intern</q> to <strong>autonomous
+2028), AI models will move from <q>smart intern</q> to <strong>autonomous
 agents</strong> that plan, observe, orient, decide, act, and verify their own work, and handle multi‑step outcomes.
 Cognitive output becomes <strong>cheap, fast, and scalable with compute</strong>, not
 headcount. Early signals are already visible across multiple use cases including: routine drafting, tier‑1
@@ -4488,7 +4496,7 @@ evidence points elsewhere.
 
 
 
-## Human‑Flourishing Architecture For The Intelligence Economy
+## Human Flourishing Architecture For The Intelligence Economy
 
 ### First Principles
 
