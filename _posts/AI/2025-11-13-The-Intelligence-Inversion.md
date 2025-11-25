@@ -539,6 +539,20 @@ dl.definition-list q::after {
   content: close-quote;
 }
 
+/* --- Glossary header (h6 for lowest heading level) --- */
+h6.definition-list-heading {
+  margin: 1.5rem 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(var(--bs-dark-rgb), 0.7);
+}
+
+/* Tighten spacing when the header is directly above the definition list */
+h6.definition-list-heading + dl.definition-list {
+  margin-top: 0;
+}
 
 </style>
 
@@ -565,6 +579,8 @@ strategy, and user trust</strong>.</mark>
   compute efficiency all compound across every use case.</mark>
 - <mark class="glow"><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
+
+###### Key Terms in Section.
 
 {: .definition-list }
 **Intelligence Inversion**
