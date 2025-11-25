@@ -770,7 +770,8 @@ model, or a trusted human label.
 a subset of outputs, inspect them carefully, and use statistics to infer overall
 quality and decide whether to accept or reject a batch.
 
-**Promotion gates / promotion thresholds** : Pre‑defined metric thresholds
+**Promotion gates / promotion thresholds** 
+: Pre‑defined metric thresholds
 (e.g., Autonomy ≥70%, Verifier Coverage ≥95%, Escape Rate ≤0.5%) that agents
 must meet and sustain before moving from **shadow mode** to **primary**.
 
@@ -821,8 +822,8 @@ agents—e.g., disabling certain capabilities or routing all work back to humans
 stress parts of the system (e.g., kill a provider, corrupt a tool) to see how
 well agents and infrastructure recover.
 
-**Mean Time to Restore (MTTR, Sev‑1)** :
- Average elapsed time from the start of
+**Mean Time to Restore (MTTR, Sev‑1)** 
+: Average elapsed time from the start of
 a **Severity‑1 agent incident** (critical customer or system impact) to full
 restoration of normal service.
 
