@@ -566,206 +566,165 @@ strategy, and user trust</strong>.</mark>
 - <mark class="glow"><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
 
+
+
 {: .definition-list }
 **Intelligence Inversion**
 : The shift where high‑quality cognitive work (analysis, drafting, coding, support) becomes cheaper and faster to get from AI systems than from adding human headcount, so the limiting factor becomes **compute capacity**, not people.
 
-**Autonomous agents**
+**Autonomous agents** 
 : AI systems that can plan, act, and verify their own work
 across multiple steps and tools to achieve a goal with limited human
 intervention (e.g., they decide what to do next, call APIs, update systems, and
 check results).
 
-**Aligned models**
+**Aligned models** 
 : AI models that have been tuned (via training, fine‑tuning,
 and policy controls) so their behavior is consistent with an organization’s
 goals, risk constraints, and ethical standards.
 
-**Agent‑addressable domain**
+**Agent‑addressable domain** 
 : A workflow area (e.g., claims, support, code
 maintenance) where AI agents can realistically perform a large share of work
 with acceptable quality and risk.
 
-**Agent‑first / agent‑primary**
+**Agent‑first / agent‑primary** 
 : A design where AI agents, not humans, are the
 default “primary” worker on a task or workflow. Humans review exceptions or
 high‑risk cases instead of doing every step themselves.
 
-**Human‑primary**
+**Human‑primary** 
 : The traditional design where humans are the primary workers
 and AI is optional assistance (or not present at all).
 
-**AgentOps (Agent Operations)**
+**AgentOps (Agent Operations)** 
 : The cross‑functional function that runs AI
 agents in production—owning their performance, safety, observability, incident
 response, and lifecycle (from pilots to full rollout).
 
-**Executive AgentOps Owner**
+**Executive AgentOps Owner** 
 : A senior leader (often reporting to the CIO/COO)
 who is accountable for the organization’s AgentOps function and for agent‑driven
 outcomes.
 
-**Agent SRE (Agent Site Reliability Engineering)**
+**Agent SRE (Agent Site Reliability Engineering)** 
 : Reliability engineering
 specialized for AI agents—owning uptime, incident response, MTTR, performance
 SLOs, and resilience of agent‑powered workflows.
 
-**Compute (in this context)**
+**Compute (in this context)** 
 : The hardware and cloud resources (GPUs, TPUs,
 CPUs, networking, storage) used to train and run AI models and agents.
 
-**Capital stock (“compute is the new capital stock”)**
+**Capital stock (“compute is the new capital stock”)** 
 : Traditionally, a firm’s
 long‑lived productive assets (factories, machines). Here, it means **compute
 infrastructure and tooling** becoming a core, durable asset that determines how
 much “intelligence” a firm can deploy.
 
-**Comparative advantage (in compute)**
+**Comparative advantage (in compute)** 
 : A firm’s relative advantage from having
 cheaper, more abundant, or better‑managed compute compared with peers, allowing
 it to run more or better AI.
 
-**Intelligence economy**
+**Intelligence economy** 
 : An environment where scalable machine intelligence
 (not just physical capital or manual labor) is a major driver of productivity,
 cost, and competitive advantage.
 
-**Quality‑adjusted unit cost**
+**Quality‑adjusted unit cost** 
 : The **cost per unit of work after adjusting for
 quality**, so you aren’t “saving money” by quietly accepting worse outcomes. If
 agents are cheaper but lower quality, quality adjustment corrects for that.
 
-**Unit economics**
-: Revenue and cost per “unit” of output (e.g., per claim
-resolved, ticket handled, or quote delivered), used to judge whether a workflow
-is economically attractive.
-
-**Cycle time**
-: Total elapsed time from the moment a task enters a workflow
-(e.g., a claim is filed) to the moment it is fully completed and verified.
-
-**Critical path (in workflows)**
-: The sequence of steps that determines the
-minimum possible cycle time because each step on this path must finish before
-the next one can start.
-
-**Cost of Goods Sold (COGS)**
-: Direct costs of delivering your product or
-service (e.g., materials, direct labor, and now agent‑related costs that scale
-with volume).
-
-**Operating Expenses (OpEx)**
-: Ongoing expenses to run the business that are
-not directly tied to each unit sold (e.g., salaries, rent, overhead, many
-software subscriptions).
-
-**Capital Expenses (CapEx)**
-: Spending on long‑lived assets (e.g., data
-centers, dedicated compute, large upfront software investments) that are
-capitalized and depreciated over time.
-
-**Working capital**
-: The difference between short‑term assets and short‑term
-liabilities. Operationally, it’s the cash tied up in **inventory, work in
-progress, and unpaid invoices.**
-
-**Work in Progress (WIP)**
-: Items that have been started but not yet
-completed—e.g., claims in review, support tickets waiting on info, partially
-processed applications.
-
-**Days Sales Outstanding (DSO)**
-: The average number of days it takes to
-collect cash after a sale is made. Lower DSO means faster cash conversion.
-
-**Serviceable demand**
+**Serviceable demand** 
 : The amount of customer demand that the organization can
 actually fulfill, given its capacity. Faster, cheaper agents let you serve more
 of the demand that’s currently backlogged or turned away.
 
-**Manipulation‑resistant interaction design**
+**Manipulation‑resistant interaction design** 
 : Designing AI interactions (UI,
 wording, timing, defaults) so that systems **avoid nudging, pressuring, or
 covertly persuading** users—especially in sensitive or vulnerable contexts.
 
-**Manipulation defenses**
+**Manipulation defenses** 
 : Technical and policy safeguards (e.g., classifiers,
 throttling, mandatory disclosures) that detect or limit manipulative behavior by
 agents or prompts.
 
-**Manipulation sandbox**
+**Manipulation sandbox** 
 : A controlled environment where you intentionally test
 agents against manipulative prompts (voice, timing, phrasing) to measure and
 harden defenses.
 
-**Affective persuasion**
+**Affective persuasion** 
 : Attempts to influence people primarily by targeting
 their emotions rather than by providing transparent facts and reasoning.
 
-**Guardrails**
+**Guardrails** 
 : Hard or soft constraints—rules, filters, policies, and UI
 limits—that keep agents from taking actions or generating content outside
 approved boundaries.
 
-**Evaluator / Verifier**
+**Evaluator / Verifier** 
 : A person or piece of code that **checks an agent’s
 output** against rules, tests, or ground truth (e.g., “is this claim decision
 correct?”, “did the code pass all tests?”).
 
-**Evaluators / Verifiers as code**
+**Evaluators / Verifiers as code** 
 : Implementing evaluators as software (tests,
 checks, or models) rather than relying only on ad‑hoc human review, so
 verification can scale and be automated.
 
-**Evaluator Engineering**
+**Evaluator Engineering** 
 : The discipline of designing, building, and
 maintaining evaluators and verification systems (tests, metrics, sampling
 processes) for agent workflows.
 
-**Eval tooling (evaluation tooling)**
+**Eval tooling (evaluation tooling)** 
 : The tools and infrastructure used to run
 evaluations—e.g., test harnesses, metrics dashboards, statistical sampling
 systems, red‑team harnesses.
 
-**Verification‑first thinking**
+**Verification‑first thinking** 
 : Designing workflows so that **verification is
 the starting point**, not an afterthought. You decide how to check correctness
 up front, then build agents and processes around that.
 
-**Verifier Coverage**
+**Verifier Coverage** 
 : Percentage of the agent’s outputs that pass through one
 or more verifiers (tests, oracles, evaluators, or human audit) before being
 accepted as “done.”
 
-**Escape Rate**
+**Escape Rate** 
 : Percentage of all agent outputs that are **both wrong and not
 caught by verifiers**—i.e., errors that escape into production or
 customer‑facing channels.
 
-**Cost per Verified Outcome**
+**Cost per Verified Outcome** 
 : All‑in cost (compute, tools, infra, and
 associated human work) divided by the number of business outcomes that *pass
 their verifiers* in a given workflow and period.
 
-**Autonomy (as a metric)**
+**Autonomy (as a metric)** 
 : The share of tasks in a domain that agents complete
 end‑to‑end without a human making changes to their work.
 
-**Autonomy Index**
+**Autonomy Index** 
 : Percentage of tasks or flows that the agent completes
 end‑to‑end **without human edits or intervention** in a given domain.
 
-**Property‑based tests**
+**Property‑based tests** 
 : Automated tests that check whether outputs satisfy
 general properties (rules) rather than specific expected answers—e.g., “total
 must equal the sum of line items” or “dates must be in the future.”
 
-**Oracles (in testing/evaluation)**
+**Oracles (in testing/evaluation)** 
 : Mechanisms that can tell you whether an
 output is correct or acceptable—this could be a rule‑based system, a second
 model, or a trusted human label.
 
-**Statistical acceptance sampling**
+**Statistical acceptance sampling** 
 : A quality‑control method where you sample
 a subset of outputs, inspect them carefully, and use statistics to infer overall
 quality and decide whether to accept or reject a batch.
@@ -775,49 +734,49 @@ quality and decide whether to accept or reject a batch.
 (e.g., Autonomy ≥70%, Verifier Coverage ≥95%, Escape Rate ≤0.5%) that agents
 must meet and sustain before moving from **shadow mode** to **primary**.
 
-**Shadow mode / shadow to primary**
+**Shadow mode / shadow to primary** 
 : Running agents in parallel with humans on
 real workloads, but without letting agent outputs affect customers. Once metrics
 pass promotion gates, the agent becomes the primary worker.
 
-**Side‑by‑side runs (human‑primary vs agent‑primary)**
+**Side‑by‑side runs (human‑primary vs agent‑primary)** 
 : Operating both a
 human‑primary version and an agent‑primary version of the same workflow in
 parallel so you can compare cost, quality, and speed.
 
-**Agent identity & policy**
+**Agent identity & policy** 
 : Treating each agent like a distinct “user” with
 its own identity, permissions, and policies so you can control what it can do
 and audit its actions.
 
-**Least‑privilege credentials**
+**Least‑privilege credentials** 
 : Security principle that an agent (or user)
 gets only the minimal access levels needed to perform its tasks—and nothing
 more.
 
-**Policy‑aware tool wrappers**
+**Policy‑aware tool wrappers** 
 : Software wrappers around tools or APIs that
 enforce policies (permissions, rate limits, approval rules) every time an agent
 tries to use that tool.
 
-**Observability**
+**Observability** 
 : The ability to deeply understand what a system is doing by
 looking at **logs, metrics, and traces**—crucial for debugging agents and
 proving compliance.
 
-**Structured traces**
+**Structured traces** 
 : Machine‑readable logs showing the sequence of steps an
 agent took, along with inputs, outputs, tools called, and timing.
 
-**Reason codes**
+**Reason codes** 
 : Standardized labels that explain *why* a decision was made
 (e.g., why a claim was denied), used for transparency, auditing, and appeals.
 
-**Kill‑switch**
+**Kill‑switch** 
 : A mechanism to immediately stop an agent or set of
 agents—e.g., disabling certain capabilities or routing all work back to humans.
 
-**Chaos drills / chaos engineering**
+**Chaos drills / chaos engineering** 
 : Deliberate experiments where you break or
 stress parts of the system (e.g., kill a provider, corrupt a tool) to see how
 well agents and infrastructure recover.
@@ -827,214 +786,158 @@ well agents and infrastructure recover.
 a **Severity‑1 agent incident** (critical customer or system impact) to full
 restoration of normal service.
 
-**Severity‑1 incident (Sev‑1)**
+**Severity‑1 incident (Sev‑1)** 
 : The most serious class of incident—high
 business or customer impact—requiring immediate, coordinated response.
 
-**Severity‑1 incident rate**
+**Severity‑1 incident rate** 
 : Frequency of Severity‑1 agent incidents over a
 period, typically measured as the number of Sev‑1 incidents per unit time (e.g.,
 per quarter) and/or per N verified outcomes.
 
-**Incident rate (general)**
-: How often incidents (of a given severity) occur
-over time or per amount of work done.
-
-**Service‑level objective (SLO)**
+**Service‑level objective (SLO)** 
 : A formal target for service performance
 (e.g., “99.9% of appeals resolved within 72 hours” or “MTTR ≤ 2 hours for Sev‑1
 incidents”).
 
-**Capability interfaces**
+**Capability interfaces** 
 : Standardized interfaces between workflows and model
 providers so the **same job description** can be run on multiple AI stacks with
 minimal changes.
 
-**Portability (multi‑provider portability)**
-: The ability to run the same
+**Portability (multi‑provider portability)** : The ability to run the same
 workflow on more than one model/provider stack with similar outcomes, so you are
 not locked into a single vendor.
 
-**Portability delta (multi‑provider)**
+**Portability delta (multi‑provider)** 
 : Percentage‑point difference in key
 outcome metrics (e.g., verified success rate, cost per verified outcome) when
 the **same workflow** runs on at least two model providers; smaller deltas mean
 better portability and lower vendor lock‑in.
 
-**Outcome delta / outcome spread**
+**Outcome delta / outcome spread** 
 : The gap in results (e.g., success rates,
 error rates, cost per outcome) between two models, providers, or configurations.
 
-**Vendor lock‑in**
-: A situation where it is very hard or expensive to switch
-providers due to proprietary interfaces, data, or tooling.
-
-**Vendor risk**
-: The risk of being over‑dependent on a single vendor for
-critical workflows (e.g., outages, pricing power, policy changes).
-
-**Testbed**
+**Testbed** 
 : A controlled environment and dataset where you can systematically
 test agents, measure metrics, and run bake‑offs before full production rollout.
 
-**Portability bake‑off**
+**Portability bake‑off** 
 : A structured comparison where you run the same
 workflow on multiple providers to compare quality, cost, latency, and
 portability deltas.
 
-**Data poisoning**
+**Data poisoning** 
 : Malicious or accidental corruption of training,
 fine‑tuning, or evaluation data so that the model learns harmful or wrong
 behavior.
 
-**Drift (data/model drift)**
+**Drift (data/model drift)** 
 : Gradual change in data patterns or model behavior
 over time (e.g., new fraud patterns), which can degrade performance if not
 monitored and corrected.
 
-**Red team**
+**Red team** 
 : A group whose job is to attack the system (e.g., to jailbreak
 models, cause harmful outputs, or violate policies) in order to find and fix
 weaknesses.
 
-**Model / Agent cards**
+**Model / Agent cards** 
 : Structured documentation that describes an AI model or
 agent’s capabilities, limitations, intended use, safety constraints, and
 evaluation results.
 
-**Dataset SBOM (Software Bill of Materials)**
+**Dataset SBOM (Software Bill of Materials)** 
 : An inventory of datasets and
 data sources used to train, fine‑tune, or evaluate models/agents, maintained for
 transparency, risk, and compliance.
 
-**Audit‑ready logs**
-: Logs captured in a consistent, tamper‑resistant, and
+**Audit‑ready logs** :
+ Logs captured in a consistent, tamper‑resistant, and
 well‑structured way so auditors or regulators can reconstruct what happened.
 
-**Tool contracts**
+**Tool contracts** 
 : Explicit specifications of what a tool/API does, what
 inputs it accepts, what outputs it returns, and what safety constraints apply.
 
-**Tool‑contract conformance**
+**Tool‑contract conformance** 
 : The degree to which a tool’s **actual behavior**
 matches its contract, verified via testing and monitoring.
 
-**Tool‑contract owners**
+**Tool‑contract owners** 
 : People responsible for each tool contract, its
 correctness, and its safe integration with agents.
 
-**No‑regret upskilling / no‑regret moves**
+**No‑regret upskilling / no‑regret moves** 
 : Training and role changes that will
 be valuable under almost any future scenario (e.g., building evaluation and
 reliability skills), regardless of exactly how agent capabilities evolve.
 
-**ICs (Individual Contributors)**
-: Employees who do not manage other people but
-contribute directly via their own specialized work (engineering, design,
-analysis, etc.).
-
-**Time Dividend (TΔ)**
+**Time Dividend (TΔ)** 
 : The **net hours per week** returned to customers or
 employees by automating or simplifying journeys (e.g., claims, onboarding,
 benefits), after accounting for any new tasks introduced.
 
-**Equity as outcome parity (±5pp)**
+**Equity as outcome parity (±5pp)** 
 : Ensuring that outcome rates (e.g.,
 approvals, redemptions, error rates) are within ±5 **percentage points (pp)**
 across demographic groups—so, for example, 80% vs 84% is acceptable; 80% vs 95%
 is not.
 
-**Adherence (in health)**
+**Adherence (in health)** 
 : How consistently a patient follows a prescribed
 treatment plan (medication, therapy, follow‑ups).
 
-**Patient activation**
+**Patient activation** 
 : The extent to which patients understand their
 condition, feel confident managing it, and take proactive steps in their care.
 
-**Flourishing Balance Sheet**
+**Flourishing Balance Sheet** 
 : A standardized report that tracks
 **non‑financial human outcomes**—such as time dividends, learning gains, health
 improvements, equity metrics—alongside traditional financial statements.
 
-**Brand and regulator “green zones”**
+**Brand and regulator “green zones”** 
 : Areas where your practices are
 transparent, fair, and well‑defended enough that regulators view them as
 low‑risk and customers see them as trust‑enhancing.
 
-**Outcome‑linked spend**
+**Outcome‑linked spend** 
 : Budgeting and contracts where payments are tied to
 **verified outcomes** (e.g., claims correctly resolved) rather than raw usage
 volume (e.g., API calls).
 
-**Service‑credit mechanisms** : Contract provisions where the provider offers
+**Service‑credit mechanisms** 
+: Contract provisions where the provider offers
 credits or refunds if they miss agreed performance targets, effectively sharing
 downside risk.
 
-**Leakage (in spend)**
+**Leakage (in spend)** 
 : Money spent on a program or vendor that does **not**
 translate into the desired outcomes (e.g., usage fees without verified value).
 
-**Legal triage**
+**Legal triage** 
 : Rapidly categorizing and prioritizing legal requests (e.g.,
 incoming cases, contracts) so the right level of review is applied.
 
-**ECI (Energy/Carbon Intensity)**
+**ECI (Energy/Carbon Intensity)** 
 : A measure of environmental impact—typically
 energy use and associated carbon emissions **per unit of compute or per verified
 outcome** (e.g., kWh or kg CO₂e per 1,000 outcomes).
 
-**Energy per verified outcome**
-: Kilowatt‑hours of energy consumed by the AI
+**Energy per verified outcome** : Kilowatt‑hours of energy consumed by the AI
 stack divided by the count of AI outcomes that pass their verifiers (kWh per
 verified outcome).
 
-**YoY (year‑over‑year)**
-: Comparing a metric to the same metric in the previous
-year (e.g., “ECI ↓ ≥15% YoY” means energy/carbon intensity per outcome is at
-least 15% lower than last year).
-
-**Board‑level KPIs (Key Performance Indicators)**
-: The small set of metrics
-that directors monitor regularly (e.g., Cost per Verified Outcome, Autonomy
-Index, Verifier Coverage, Escape Rate, MTTR, Portability delta, Energy per
-verified outcome).
-
-**Tier‑1 support**
-: The first line of customer support handling common,
-repetitive inquiries, often with standard scripts and playbooks.
-
-**Back‑office adjudication**
+**Back‑office adjudication** 
 : Behind‑the‑scenes decision work (e.g., claims
 adjudication, underwriting) where staff review cases, apply rules, and issue
 decisions.
 
-**Enterprise claims**
-: Large‑scale claims workflows (insurance, benefits, warranties, etc.) inside big organizations.
-
-**Cost per Verified Outcome**
-: All‑in cost (compute, tools, infra, and associated human work) divided by the number of business outcomes that *pass their verifiers* in a given workflow and period.
-
-**Autonomy Index**
-: Percentage of tasks or flows that the agent completes end‑to‑end **without human edits or intervention** in a given domain.
-
-**Verifier Coverage**
-: Percentage of the agent’s outputs that pass through one or more verifiers (tests, oracles, evaluators, or human audit) before being accepted as <q>done.</q>
-
-**Escape Rate**
-: Percentage of all agent outputs that are **both wrong and not caught by verifiers**—i.e., errors that escape verification into production or customer‑facing channels.
-
-**Mean Time to Restore (Sev‑1)**
-: Average elapsed time from the start of a **Severity‑1 agent incident** (critical customer or system impact) to full restoration of normal service.
-
-**Severity‑1 incident rate**
-: Frequency of Severity‑1 agent incidents over a period, typically measured as the number of Sev‑1 incidents per unit time (e.g., per quarter) and/or per N verified outcomes.
-
-**Portability delta** (multi‑provider)
-: Percentage‑point difference in key outcome metrics (e.g., verified success rate, cost per verified outcome) when the **same workflow** runs on at least two model providers; smaller deltas mean better portability and lower vendor lock‑in.
-
-**Energy per verified outcome**
-: Kilowatt‑hours of energy consumed by the AI stack divided by the count of AI outcomes that pass their verifiers (kWh per verified outcome).
+**Enterprise claims** 
+: Large‑scale claims workflows (insurance, benefits,
+warranties, etc.) inside big organizations.
 
 ### What’s Changing & How Fast
 
