@@ -805,7 +805,8 @@ incidents”).
 providers so the **same job description** can be run on multiple AI stacks with
 minimal changes.
 
-**Portability (multi‑provider portability)** : The ability to run the same
+**Portability (multi‑provider portability)** 
+: The ability to run the same
 workflow on more than one model/provider stack with similar outcomes, so you are
 not locked into a single vendor.
 
