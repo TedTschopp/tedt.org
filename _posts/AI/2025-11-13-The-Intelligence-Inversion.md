@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: long-article
 
 title: The Intelligence Inversion - The First 1,000 Days of Enterprise AI
 subtitle: How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises

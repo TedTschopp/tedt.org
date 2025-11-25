@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="layout-post-debug">
+  <head>
+    <meta charset="utf-8">
+
+    {% include utility/calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include seo/indieauth-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include seo/meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa/pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags. -->
+    {% include feeds/feeds.html %}
+
+    {% include assets/all-css-includes.html %}
+
+
+    <!-- Scripts that need to be at the end of the header -->
+        {% include assets/scripts.html %}
+        {% include seo/article-jsonld.html %}
+        {% capture __math_flag %}{{ page.math | default: '' }}{% endcapture %}
+        {% capture __mathjax_flag %}{{ page.mathjax | default: '' }}{% endcapture %}
+        {% assign __math_flag = __math_flag | strip | downcase %}
+        {% assign __mathjax_flag = __mathjax_flag | strip | downcase %}
+        {% if page.math == true or __math_flag == 'true' or __math_flag == '1' or page.mathjax == true or __mathjax_flag == 'true' or __mathjax_flag == '1' %}
+            {% include assets/mathjax.html %}
+        {% endif %}
+                {% if page.mermaid == true or page.mermaid == 'true' %}
+                    {% include assets/mermaid.html %}
+                {% endif %}
+  </head>
+    <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    {%- comment -%} Removed skip link per user request. (Previously: a11y shortcut 'Skip to content'). {%- endcomment -%}
+    {% include layout/top-nav-bar.html %}
+
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row w-100">
+            <!-- Blog Post Content Column -->
+            <div class="col-12 col-lg-12 col-xxl-12" id="content-column">
+                <!-- Blog Post -->
+                <main class="h-entry" role="main">
+
+                    <div class="card h-100 no-padding">
+                        {% if page.image %}
+                            {% if page.image-alt %}
+                                {% assign image_alt = page.image-alt %}
+                            {% elsif page.image-description %}
+                                {% assign image_alt = page.image-description %}
+                            {% else %}
+                                {% assign image_alt = page.title %}
+                            {% endif %}
+
+                            {% if page.image-credits-title %}
+                                {% assign image_credits_title = page.image-credits-title %}
+                            {% elsif page.image-title %}
+                                {% assign image_credits_title = page.image-title %}
+                            {% else %}
+                                {% assign image_credits_title = "Unknown" %}
+                            {% endif %}
+
+                            {% if page.image-credits-artist %}
+                                {% assign image_credits = page.image-credits-artist %}
+                            {% elsif page.image-artist %}
+                                {% assign image_credits = page.image-artist %}
+                            {% else %}
+                                {% assign image_credits = "Unknown" %}
+                            {% endif %}
+
+                            {% if page.image-credits-artist-URL %}
+                                {% assign image_credits_artist_URL = page.image-credits-artist-URL %}
+                            {% elsif page.image-artist-URL %}
+                                {% assign image_credits_artist_URL = page.image-artist-URL %}
+                            {% endif %}
+
+                            {% if page.image contains "http" %}
+                                {% assign image_URL = page.image %}
+                            {% else %}
+                                {% assign image_URL = site.url | append: "/" | append: page.image %}
+                            {% endif %}
+                        {% else %}
+                            {% if site.featured-image %}
+                                {% if site.featured-image contains "http" %}
+                                    {% assign image_URL = site.featured-image %}
+                                {% else %}
+                                    {% assign image_URL = site.url | append: "/" | append: site.featured-image %}
+                                {% endif %}
+                            {% else %}
+                                {% assign image_URL = site.url | append: "/img/No-Image-Provided.png" %}
+                            {% endif %}
+                            {% assign image_alt = "A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto.  The brushwork has rich textures, earthy palette with luminous highlights" %}
+                            {% assign image_credits_title = 'In Search of an Image - "No Image Associated with this article"' %}
+                            {% assign image_credits = "Ted Tschopp" %}
+                            {% assign image_credits_artist_URL = "https://tedt.org/" %}
+                        {% endif %}
+                        <div class="card h-100 position-relative">
+                            <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"> <!-- hero image intentionally eager -->
+                            <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 pe-2 ps-2">
+                                <div class="wcag-glow aaa mb-2" style="--pad-x:0.75em; --pad-y:0.4em;">
+                                    <div class="post-hero mb-1">
+                                        <h1 class="p-name card-title post-title mb-1">{{ page.title }}</h1>
+                                        {% if page.subtitle %}
+                                            <p class="card-subtitle h2 mb-2 fw-normal post-subtitle">{{ page.subtitle }}</p>
+                                        {% endif %}
+                                    </div>
+                                    <div class="small mb-1">
+                                        {% if page.author.name %}
+                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></span>
+                                        {% else %}
+                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></span>
+                                        {% endif %}
+                                    </div>
+                                    <div class="small image-credits">
+                                        {% if image_credits_URL and image_credits_URL contains "http" %}
+                                            <cite><a target="_new" href="{{ image_credits_URL }}">{{ image_credits_title }}</a></cite>:&nbsp;an image by
+                                        {% else %}
+                                            <cite>{{ image_credits_title }}</cite>:&nbsp;an image by
+                                        {% endif %}
+                                        {% if image_credits_artist_URL and image_credits_artist_URL contains "http" %}
+                                            {%- assign __img_credit_href = image_credits_artist_URL | strip -%}
+                                            {%- if __img_credit_href != '' -%}
+                                            <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_blank" class="url fn n" href="{{ __img_credit_href | escape }}">{{ image_credits | escape }}</a></address></span>
+                                            {%- endif -%}
+                                        {% else %}
+                                            {{ image_credits }}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body pt-1 p-4 h-100">
+                           
+                            <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
+
+                                {%- comment -%}
+                                    Reverted TOC layout: Instead of a two-column grid that left empty vertical whitespace
+                                    beneath a shorter TOC, the TOC now floats within the article content on large screens.
+                                    This prevents a large blank gutter and matches the earlier inline style the user preferred.
+                                {%- endcomment -%}
+                                <div id="main_content_col" class="col-12">
+                                    <div class="article e-content position-relative" id="main_content">
+                                        {% unless page.no_toc == true or page.no_toc == 'true' %}
+                                            <aside id="table-of-contents-card" class="d-none d-lg-block float-lg-end ms-lg-4 mb-3" style="max-width:340px;">
+                                                <div class="card h-100 no-padding position-relative">
+                                                    <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/table-of-contents.webp" alt="{{ category | default: 'Table of contents' }}" loading="lazy">
+                                                    <div class="card-img-overlay d-flex flex-column align-items-start justify-content-start p-0 ps-2 pt-2" style="pointer-events:none;">
+                                                        {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
+                                                        {% assign __toc_slug = __toc_slug | strip %}
+                                                        {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
+                                                        {% assign __toc_entry = site.data.category_registry[__toc_slug] %}
+                                                        {% if __toc_entry and __toc_entry.category_home_page %}
+                                                            {% assign __toc_href = __toc_entry.category_home_page %}
+                                                        {% else %}
+                                                            {% assign __toc_href = '#' %}
+                                                        {% endif %}
+                                                        {% if __toc_href == '#' or __toc_href == '' %}
+                                                            {% assign __toc_final_href = '#' %}
+                                                        {% else %}
+                                                            {% assign __toc_final_href = site.url | append: __toc_href %}
+                                                        {% endif %}
+                                                        <p class="card-title h3 mb-2" style="z-index:2; position:relative; pointer-events:auto;">
+                                                        {%- comment -%} Moved heading to top of image per user request (previously bottom-aligned). {%- endcomment -%}
+                                                        <a class="text-decoration-none" style="pointer-events:auto;" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents</a>
+                                                        </p>
+                                                    </div>
+                                                    <div class="card-body p-0 ps-4" id="insert-table-of-contents-here"></div>
+                                                </div>
+                                            </aside>
+                                        {% endunless %}
+                                        {{ content | lazy_images_except_first }}
+                                    </div>
+                                </div>
+                            {%- comment -%}
+                                Apply lazy loading to all images except the first without duplicating the
+                                entire content multiple times (handled by custom filter).
+                            {%- endcomment -%}
+                        </div>
+                    </div>
+                </main>
+
+                {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+                    {% include social/comments-mastodon-tree.html %}
+                {% endif %}
+
+                {% include social/comments-webmentions.html %}
+
+                <!--Next and Previous Articles -->
+                {% include content/next-and-previous.html %}
+
+            </div>
+
+        </div>
+        <hr>
+    </div>
+
+    <!-- Footer -->
+    {% include layout/footer.html %}
+
+    <!-- Bootstrap core JavaScript -->
+    {% include assets/js-bottom-of-body.html %}
+
+  </body>
+</html>
