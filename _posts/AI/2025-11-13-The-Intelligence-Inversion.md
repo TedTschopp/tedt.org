@@ -854,8 +854,8 @@ evaluation results.
 data sources used to train, fine‑tune, or evaluate models/agents, maintained for
 transparency, risk, and compliance.
 
-**Audit‑ready logs** :
- Logs captured in a consistent, tamper‑resistant, and
+**Audit‑ready logs** 
+: Logs captured in a consistent, tamper‑resistant, and
 well‑structured way so auditors or regulators can reconstruct what happened.
 
 **Tool contracts** 
@@ -905,40 +905,28 @@ transparent, fair, and well‑defended enough that regulators view them as
 low‑risk and customers see them as trust‑enhancing.
 
 **Outcome‑linked spend** 
-: Budgeting and contracts where payments are tied to
-**verified outcomes** (e.g., claims correctly resolved) rather than raw usage
-volume (e.g., API calls).
+: Budgeting and contracts where payments are tied to **verified outcomes** (e.g., claims correctly resolved) rather than raw usage volume (e.g., API calls).
 
 **Service‑credit mechanisms** 
-: Contract provisions where the provider offers
-credits or refunds if they miss agreed performance targets, effectively sharing
-downside risk.
+: Contract provisions where the provider offers credits or refunds if they miss agreed performance targets, effectively sharing downside risk.
 
 **Leakage (in spend)** 
-: Money spent on a program or vendor that does **not**
-translate into the desired outcomes (e.g., usage fees without verified value).
+: Money spent on a program or vendor that does **not** translate into the desired outcomes (e.g., usage fees without verified value).
 
 **Legal triage** 
-: Rapidly categorizing and prioritizing legal requests (e.g.,
-incoming cases, contracts) so the right level of review is applied.
+: Rapidly categorizing and prioritizing legal requests (e.g., incoming cases, contracts) so the right level of review is applied.
 
 **ECI (Energy/Carbon Intensity)** 
-: A measure of environmental impact—typically
-energy use and associated carbon emissions **per unit of compute or per verified
-outcome** (e.g., kWh or kg CO₂e per 1,000 outcomes).
+: A measure of environmental impact—typically energy use and associated carbon emissions **per unit of compute or per verified outcome** (e.g., kWh or kg CO₂e per 1,000 outcomes).
 
-**Energy per verified outcome** : Kilowatt‑hours of energy consumed by the AI
-stack divided by the count of AI outcomes that pass their verifiers (kWh per
-verified outcome).
+**Energy per verified outcome** 
+: Kilowatt‑hours of energy consumed by the AI stack divided by the count of AI outcomes that pass their verifiers (kWh per verified outcome).
 
 **Back‑office adjudication** 
-: Behind‑the‑scenes decision work (e.g., claims
-adjudication, underwriting) where staff review cases, apply rules, and issue
-decisions.
+: Behind‑the‑scenes decision work (e.g., claims adjudication, underwriting) where staff review cases, apply rules, and issue decisions.
 
 **Enterprise claims** 
-: Large‑scale claims workflows (insurance, benefits,
-warranties, etc.) inside big organizations.
+: Large‑scale claims workflows (insurance, benefits, warranties, etc.) inside big organizations.
 
 ### What’s Changing & How Fast
 
