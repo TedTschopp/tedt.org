@@ -566,7 +566,6 @@ strategy, and user trust</strong>.</mark>
 - <mark class="glow"><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
 
-**Definition of Terms**
 {: .definition-list }
 **Intelligence Inversion**
 : When high‑quality cognitive work (analysis, drafting, coding, support) is cheaper and faster from AI than from adding people, so your bottleneck becomes **compute** and deployment, not headcount.
