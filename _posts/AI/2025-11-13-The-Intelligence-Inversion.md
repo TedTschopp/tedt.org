@@ -124,14 +124,38 @@ article p {
   margin-bottom: 1.5rem;
 }
 
-/* Stronger heading hierarchy - green in light mode, gold in dark mode */
+:root {
+  /* Light mode base blue color (yellow-green by default) */
+  --blue-text-base-0-r: 76;  --blue-text-base-0-g: 113;  --blue-text-base-0-b: 133;
+  --blue-text-base-1-r: 96;  --blue-text-base-1-g: 136;  --blue-text-base-1-b: 158;
+  --blue-text-base-2-r: 118; --blue-text-base-2-g: 160;  --blue-text-base-2-b: 184;
+  --blue-text-base-3-r: 142; --blue-text-base-3-g: 184;  --blue-text-base-3-b: 209;
+  --blue-text-base-4-r: 168; --blue-text-base-4-g: 208;  --blue-text-base-4-b: 231; /* lightest WCAG-safe */
+
+
+
+  /* Dark mode base yellow color (yellow-green by default) */
+  --yellow-text-base-0-r: 217; --yellow-text-base-0-g: 180; --yellow-text-base-0-b: 108;
+  --yellow-text-base-1-r: 190; --yellow-text-base-1-g: 155; --yellow-text-base-1-b: 92;
+  --yellow-text-base-2-r: 164; --yellow-text-base-2-g: 132; --yellow-text-base-2-b: 78;
+  --yellow-text-base-3-r: 138; --yellow-text-base-3-g: 110; --yellow-text-base-3-b: 66;
+  --yellow-text-base-4-r: 112; --yellow-text-base-4-g: 89;  --yellow-text-base-4-b: 54; /* darkest WCAG-safe */
+
+}
+
+
+
+
+
+
+/* Stronger heading hierarchy - blue in light mode, yellow-gold in dark mode */
 .article h2 {
   margin-top: 3rem;
   margin-bottom: 0rem;
   padding-bottom: 0.3rem;
   font-size: 6rem;
   font-weight: 100;
-  color: var(--bs-success-text-emphasis);
+  color: rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b));
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   font-variant-ligatures: discretionary-ligatures;
   text-align: left;
@@ -149,7 +173,7 @@ article p {
   margin-bottom: 1rem;
   font-size: 4rem;
   font-weight: 100;
-  color: var(--bs-success);
+  color: rgb(var(--blue-text-base-1-r), var(--blue-text-base-1-g), var(--blue-text-base-1-b));
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-wrap: balance;
 }
@@ -158,7 +182,7 @@ article p {
   margin-bottom: 0.75rem;
   font-size: 3rem;
   font-weight: 400;
-  color: var(--bs-success-text-emphasis);
+  color: rgb(var(--blue-text-base-2-r), var(--blue-text-base-2-g), var(--blue-text-base-2-b));
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-wrap: balance;
 }
@@ -167,15 +191,15 @@ article p {
   margin-bottom: 0.75rem;
   font-size: 2rem;
   font-weight: 400;
-  color: var(--bs-success);
+  color: rgb(var(--blue-text-base-3-r), var(--blue-text-base-3-g), var(--blue-text-base-3-b));
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-wrap: balance;
 }
 
-/* Dark mode: switch to gold colors */
+/* Dark mode: switch to yellow-gold text using yellow base scale */
 @media (prefers-color-scheme: dark) {
   .article h2 {
-    color: var(--bs-accent2-text-emphasis) !important;
+    color: rgb(var(--yellow-text-base-0-r), var(--yellow-text-base-0-g), var(--yellow-text-base-0-b)) !important;
     background-image: linear-gradient(
       var(--bs-accent2-border-subtle),
       var(--bs-accent2-border-subtle)
@@ -183,20 +207,20 @@ article p {
   }
 
   .article h3 {
-    color: var(--bs-accent2) !important;
+    color: rgb(var(--yellow-text-base-1-r), var(--yellow-text-base-1-g), var(--yellow-text-base-1-b)) !important;
   }
 
   .article h4 {
-    color: var(--bs-warning-text-emphasis) !important;
+    color: rgb(var(--yellow-text-base-2-r), var(--yellow-text-base-2-g), var(--yellow-text-base-2-b)) !important;
   }
 
   .article h5 {
-    color: var(--bs-warning) !important;
+    color: rgb(var(--yellow-text-base-3-r), var(--yellow-text-base-3-g), var(--yellow-text-base-3-b)) !important;
   }
 }
 
 [data-bs-theme="dark"] .article h2 {
-  color: var(--bs-accent2-text-emphasis) !important;
+  color: rgb(var(--yellow-text-base-0-r), var(--yellow-text-base-0-g), var(--yellow-text-base-0-b)) !important;
   background-image: linear-gradient(
     var(--bs-accent2-border-subtle),
     var(--bs-accent2-border-subtle)
@@ -204,15 +228,15 @@ article p {
 }
 
 [data-bs-theme="dark"] .article h3 {
-  color: var(--bs-accent2) !important;
+  color: rgb(var(--yellow-text-base-1-r), var(--yellow-text-base-1-g), var(--yellow-text-base-1-b)) !important;
 }
 
 [data-bs-theme="dark"] .article h4 {
-  color: var(--bs-warning-text-emphasis) !important;
+  color: rgb(var(--yellow-text-base-2-r), var(--yellow-text-base-2-g), var(--yellow-text-base-2-b)) !important;
 }
 
 [data-bs-theme="dark"] .article h5 {
-  color: var(--bs-warning) !important;
+  color: rgb(var(--yellow-text-base-3-r), var(--yellow-text-base-3-g), var(--yellow-text-base-3-b)) !important;
 }
 
 /* Table breathing room */
