@@ -1136,7 +1136,7 @@ The same forces that make the intelligence inversion powerful also create
 correlated risks. These design requirements assume explicit planning for at
 least the following failure modes:
 
-#### Verification debt
+#### Verification Debt
 
   *Symptom*: Agents make confident but wrong decisions; you discover “shadow
   errors” after deployment.
@@ -1145,7 +1145,7 @@ least the following failure modes:
   coverage, low escape rate) before agents move to primary; maintain shared
   verifier libraries and continuous EvalOps.
 
-#### Data provenance & poisoning risk
+#### Data Provenance & Poisoning Risk
 
   *Symptom*: Sudden behavior shifts, hallucinations, or unexplained errors after
   retrains or data refreshes.
@@ -1153,7 +1153,7 @@ least the following failure modes:
   *Countermeasure*: Maintain dataset SBOMs, provenance scores, and poisoning
   audits; use quarantine policies and signed/attested data sources.
 
-#### Compute / model vendor lock‑in
+#### Compute / Model Vendor Lock‑In
 
   *Symptom*: Migrating to another provider is effectively impossible without
   re‑writing workflows.
@@ -1161,7 +1161,7 @@ least the following failure modes:
   *Countermeasure*: Use capability interfaces and portability metrics; routinely
   run key workflows across ≥2 providers and track outcome deltas.
 
-#### Ethical misalignment / manipulation**
+#### Ethical Misalignment / Manipulation
 
   *Symptom*: Systems quietly optimize for engagement or convenience over user
   welfare.
@@ -1170,7 +1170,7 @@ least the following failure modes:
   strong disclosure UX, and welfare‑aligned objectives; red‑team for persuasion
   harms.
 
-#### Regulatory / compliance drift
+#### Regulatory / Compliance Drift
 
   *Symptom*: Model or agent behavior falls out of alignment with evolving law or
   policy.
@@ -1178,7 +1178,7 @@ least the following failure modes:
   *Countermeasure*: Policy‑aware prompts and tools, traceable model/agent cards,
   automatic compliance tests in CI/CD; embed Compliance into AgentOps.
 
-#### Security & identity breaches
+#### Security & Identity Breaches
 
   *Symptom*: Unauthorized actions, data leakage, or misuse of credentials by
   agents.
@@ -1186,14 +1186,14 @@ least the following failure modes:
   *Countermeasure*: Per‑agent identities with least‑privilege credentials,
   hardware‑backed key custody where possible, rehearsed kill‑switch drills.
 
-#### Energy & cost blowouts**
+#### Energy & Cost Blowouts
 
   *Symptom*: GPU spend or power draw grows faster than business value.
 
   *Countermeasure*: Track kWh and $ per verified outcome; use caching,
   carbon‑aware scheduling, and capacity planning tied to business KPIs.
 
-#### Cultural resistance / displacement anxiety
+#### Cultural Resistance / Displacement Anxiety
 
   *Symptom*: Adoption stalls, morale drops, shadow IT emerges.
 
@@ -1201,7 +1201,7 @@ least the following failure modes:
   AgentOps/verification career paths, and frame change around **augmentation
   plus flourishing metrics**, not just cost cutting.
 
-#### Governance fragmentation
+#### Governance Fragmentation
 
   *Symptom*: Multiple AI initiatives with inconsistent policies and risk
   handling.
@@ -1209,14 +1209,14 @@ least the following failure modes:
   *Countermeasure*: Central AI governance board; standardized model/agent cards,
   incident taxonomies, and escalation runbooks.
 
-#### Lack of observability / black‑box agents
+#### Lack of Observability / Black‑Box Agents
 
   *Symptom*: You can’t explain or debug incidents and regressions.
 
   *Countermeasure*: Require structured traces, reason codes, agent observability
   dashboards (latency, cost, autonomy, escape rate, MTTR), and audit‑ready logs.
 
-#### Attention / trust collapse
+#### Attention / Trust Collapse
 
   *Symptom*: Customers or employees stop trusting AI‑mediated channels due to
   opaque or manipulative behavior.
@@ -1225,7 +1225,7 @@ least the following failure modes:
   time‑to‑human fallbacks; track manipulation and appeal metrics on the
   Flourishing Balance Sheet.
 
-#### Verification bottleneck (EvalOps lag)
+#### Verification Bottleneck (EvalOps lag)
 
   *Symptom*: Model and agent development outpace verification capability,
   slowing safe releases.
@@ -1234,7 +1234,7 @@ least the following failure modes:
   reuse domain‑specific verifier patterns; automate test generation and eval
   pipelines.
 
-#### Over‑centralized compute risk
+#### Over Centralized Compute Risk
 
   *Symptom*: A single region or provider outage or policy shift halts
   operations.
@@ -1242,7 +1242,7 @@ least the following failure modes:
   *Countermeasure*: Multi‑region, multi‑provider compute with failover; maintain
   a healthy “compute sovereignty” ratio through contracts and architecture.
 
-#### Liability ambiguity
+#### Liability Ambiguity
 
   *Symptom*: No one is clearly responsible when an AI error causes harm.
 
@@ -1250,7 +1250,7 @@ least the following failure modes:
   deployer, and tool owners; define safe harbors and strict‑liability zones in
   contracts.
 
-#### Civic / ESG backlash
+#### Civic / ESG Backlash
 
   *Symptom*: Perception that AI deployment harms communities, jobs, or the
   environment.
@@ -1259,7 +1259,7 @@ least the following failure modes:
   metrics; co‑fund civic pilots in education, health, and public services that
   demonstrate net positive impact.
 
-#### Skill atrophy / human out‑of‑the‑loop
+#### Skill Atrophy / Human Out‑Of‑The‑Loop
 
   *Symptom*: Staff lose critical domain expertise due to over‑reliance on
   agents.
