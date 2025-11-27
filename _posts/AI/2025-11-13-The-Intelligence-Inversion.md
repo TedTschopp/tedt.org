@@ -867,32 +867,33 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 - **People outcomes:** **Time Dividend ≥5 hours a week** in targeted
   customer/employee journeys; measurable education/health gains where deployed.
 
-
-
-
 ## Human‑Flourishing as the Destination for the Intelligence Economy
 
 ### First Principles
 
-The arrival of scalable machine intelligence changes what is scarce. The first
-≅1,000 days of enterprise AI showed that models and agents can reliably turn
-tokens into work; the next 1,000 days will be governed by **economics, business
-design, and user trust**, not by model IQ alone.
+<mark class="glow">The arrival of scalable machine intelligence changes what is scarce.</mark>
 
-As agents get cheaper and faster, **cognitive output is no longer the
-bottleneck**. What remains hard to manufacture is:
+<mark class="glow">The first ≅1,000 days of enterprise AI showed that models and agents can reliably turn
+tokens into work; the next 1,000 days will be governed by <strong>economics, business
+design, and user trust</strong>, not by model IQ alone.</mark>
 
-- people’s **discretionary time**,
-- **trust** in institutions and systems,
-- **attention** that isn’t hijacked, and
-- a sense of **meaning, dignity, and belonging**.
+<mark class="glow">As agents get cheaper and faster, <strong>cognitive output is no longer the
+bottleneck.</strong></mark> What remains hard to manufacture is:
 
-If our operating model optimizes only for task completion and cost per ticket,
+- <mark class="glow">people’s <strong>discretionary time</strong>,</mark>
+- <mark class="glow"><strong>trust</strong> in institutions and
+  systems,</mark>
+- <mark class="glow"><strong>attention</strong> that isn’t hijacked,
+  and</mark>
+- <mark class="glow">a sense of <strong>meaning, dignity, and
+  belonging</strong>.</mark>
+
+<mark class="glow">If our operating model optimizes only for task completion and cost per ticket,
 the intelligence inversion will produce brittle, low‑trust systems. So we treat
-*flourishing* as the objective function.
+<i>flourishing</i> as the objective function.</mark>
 
-We’ll model human flourishing as a composite over four interacting “capital
-stocks”:
+<mark class="glow">We’ll model human flourishing as a composite over four interacting <q>capital
+stocks</q>:</mark>
 
 $$
 \textbf{Flourishing } \mathcal{F} = f\Big( \underbrace{M}*{\text{Material}}, \underbrace{I}*{\text{Intelligence}}, \underbrace{N}*{\text{Network}}, \underbrace{D}*{\text{Diversity of Exposure}} \Big)
@@ -906,14 +907,14 @@ $$
 - **Diversity (D)** – contact with varied ideas, people, and cultures that
   maintain adaptability.
 
-**Design constraint:** raising access to intelligence while degrading networks
+<mark class="glow"><strong>Design constraint:</strong> raising access to intelligence while degrading networks
 or narrowing exposure yields fragile societies and fragile firms. Product,
 policy, and architecture decisions should push out the *joint frontier* of M, I,
-N, and D—not trade N and D away for marginal gains in I.
+N, and D—not trade N and D away for marginal gains in I.</mark>
 
 ### Time As The Binding Constraint
 
-Once cognitive work is cheap, **time** becomes the key scarcity:
+<mark class="glow">Once cognitive work is cheap, <strong>time</strong> becomes the key scarcity:</mark>
 
 - **Private good:** time under your own control.
 - **Public good:** how well we can coordinate time across people, services, and
@@ -953,8 +954,7 @@ Once cognitive work is cheap, **time** becomes the key scarcity:
 
 #### Objective
 
-Move from “hours in seat” to **verified capability and transfer**: can learners
-apply what they know in new contexts, not just recall it.
+<mark class="glow">Move from <q>hours in seat</q> to <strong>verified capability and transfer</strong>: can learners apply what they know in new contexts, not just recall it.</mark>
 
 #### Components
 
@@ -992,10 +992,10 @@ apply what they know in new contexts, not just recall it.
 
 #### Problem
 
-As intelligence becomes cheap, **persuasion capacity** can scale faster than
+<mark class="glow">As intelligence becomes cheap, <strong>persuasion capacity</strong> can scale faster than
 human cognitive defenses. If we blindly optimize for engagement, we risk
-**addiction, polarization, and “wireheading”**—systems that chase emotional
-spikes rather than human welfare.
+<strong>addiction, polarization, and <q>wireheading</q></strong> — systems that chase emotional
+spikes rather than human welfare.</mark>
 
 #### Design Considerations
 
@@ -1031,8 +1031,7 @@ spikes rather than human welfare.
 
 #### Objective
 
-Give people **real control over their digital selves**—while still enabling
-long‑term continuity in care, education, and services.
+<mark class="glow">Give people <strong>real control over their digital selves</strong> — while still enabling long‑term continuity in care, education, and services.</mark>
 
 #### Design Considerations
 
@@ -1274,20 +1273,18 @@ least the following failure modes:
 
 ### Human‑Flourishing Requirements for AI Systems: Aligning Abundant Cognition With Trust & Time
 
-Intelligence abundance can yield either a **thin equilibrium** that maximizes
-clicks and short‑term cost reductions, or a **thick settlement** that expands
-capability, belonging, and time for people. These human‑flourishing requirements
+<mark class="glow">Intelligence abundance can yield either a <strong>thin equilibrium</strong> that maximizes clicks and short‑term cost reductions, or a <strong>thick settlement</strong> that expands
+capability, belonging, and time for people.</mark> These human‑flourishing requirements
 add the missing layer above compute and agents: principles, norms, and
 measurements that keep the economic and technical stack aimed at dignity,
-agency, and community. By treating **time as the binding constraint**, **trust
-as a design variable**, and **relationships as critical infrastructure rather
-than externalities**, institutions can turn the intelligence inversion into a
+agency, and community. <mark class="glow">By treating <strong>time as the binding constraint</strong>, <strong>trust as a design variable</strong>, and <strong>relationships as critical infrastructure rather
+than externalities</strong>, institutions can turn the intelligence inversion into a
 broad‑based advance in human welfare—not just a line‑item improvement in the
-P&L.
+P&L.</mark>
 
-Human‑flourishing is the destination: a picture of what it would mean to use
+<mark class="glow">Human‑flourishing is the destination: a picture of what it would mean to use
 abundant intelligence to expand capability, belonging, and time rather than
-compress them. To make it real, we now need to look at the trajectory that
+compress them.</mark> To make it real, we now need to look at the trajectory that
 brought us here. The next section rewinds through the first three years of
 modern enterprise AI—how transformers, tokens, and early agentic systems moved
 from labs into production, what actually worked inside large organizations, and
