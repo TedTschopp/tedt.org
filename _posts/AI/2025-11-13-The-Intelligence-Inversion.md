@@ -365,8 +365,8 @@ mark {
 :root {
   /* Light mode base glow color (yellow-green by default) */
   --glow-base-r: 102;
-  --glow-base-g: 102;
-  --glow-base-b: 255;
+  --glow-base-g: 255;
+  --glow-base-b: 102;
 }
 
 mark.glow {
@@ -532,6 +532,11 @@ h6.definition-list-heading {
   border: 1px solid rgba(var(--bs-dark-rgb), 1);
   border-bottom: 0;                    /* dl will draw the bottom */
   background: rgba(var(--bs-light-rgb), 1);
+  /* Match width and alignment with definition list / alert boxes */
+  width: 50%;
+  float: right;
+  margin-left: 1.5rem;
+  clear: right;
 }
 
 /* Merge header + dl into a single box when used together */
@@ -539,6 +544,15 @@ h6.definition-list-heading + dl.definition-list {
   margin-top: 0;                       /* no gap between them */
   border-radius: 0 0 12px 12px;        /* bottom of the card */
   border-top: 0;                       /* header already has the top border */
+}
+
+/* Responsive: header + definition list full-width on small screens */
+@media (max-width: 768px) {
+  h6.definition-list-heading {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
 }
 
 </style>
