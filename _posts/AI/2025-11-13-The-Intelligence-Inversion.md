@@ -364,9 +364,9 @@ mark {
 
 :root {
   /* Light mode base glow color (yellow-green by default) */
-  --glow-base-r: 255;
-  --glow-base-g: 255;
-  --glow-base-b: 102;
+  --glow-base-r: 102;
+  --glow-base-g: 102;
+  --glow-base-b: 255;
 }
 
 mark.glow {
