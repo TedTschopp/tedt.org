@@ -449,7 +449,7 @@ mark.glow {
 /* Add class="definition-list" to your <dl> for best results */
 dl.definition-list {
   padding: 1.5rem 1.75rem;
-  border-radius: 12px;
+  border-radius: 6px;
   border: 1px solid rgba(var(--bs-dark-rgb), 1);
   background: rgba(var(--bs-light-rgb), 1);
 }
@@ -535,7 +535,7 @@ h6.definition-list-heading {
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: rgba(var(--bs-dark-rgb), 0.75);
-  border-radius: 12px 12px 0 0;        /* top of the card */
+  border-radius: 6px 6px 0 0;        /* top of the card */
   border: 1px solid rgba(var(--bs-dark-rgb), 1);
   border-bottom: 0;                    /* dl will draw the bottom */
   background: rgba(var(--bs-light-rgb), 1);
@@ -549,7 +549,7 @@ h6.definition-list-heading {
 /* Merge header + dl into a single box when used together */
 h6.definition-list-heading + dl.definition-list {
   margin-top: 0;                       /* no gap between them */
-  border-radius: 0 0 12px 12px;        /* bottom of the card */
+  border-radius: 0 0 6px 6px;        /* bottom of the card */
   border-top: 0;                       /* header already has the top border */
 }
 
