@@ -143,11 +143,6 @@ article p {
 
 }
 
-
-
-
-
-
 /* Stronger heading hierarchy - blue in light mode, yellow-gold in dark mode */
 .article h2 {
   margin-top: 3rem;
@@ -161,8 +156,8 @@ article p {
   text-align: left;
   text-wrap: balance;
   background-image: linear-gradient(
-    var(--bs-accent2-text-emphasis) !important,
-    var(--bs-accent2-text-emphasis) !important
+    rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b)) !important,
+    rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b)) !important
   );
   background-size: 100% 2px;
   background-position: 0 calc(100% - 27px); /* up from bottom */
@@ -197,33 +192,12 @@ article p {
 }
 
 /* Dark mode: switch to yellow-gold text using yellow base scale */
-@media (prefers-color-scheme: dark) {
-  .article h2 {
-    color: rgb(var(--yellow-text-base-0-r), var(--yellow-text-base-0-g), var(--yellow-text-base-0-b)) !important;
-    background-image: linear-gradient(
-      var(--bs-accent2-border-subtle),
-      var(--bs-accent2-border-subtle)
-    ) !important;
-  }
-
-  .article h3 {
-    color: rgb(var(--yellow-text-base-1-r), var(--yellow-text-base-1-g), var(--yellow-text-base-1-b)) !important;
-  }
-
-  .article h4 {
-    color: rgb(var(--yellow-text-base-2-r), var(--yellow-text-base-2-g), var(--yellow-text-base-2-b)) !important;
-  }
-
-  .article h5 {
-    color: rgb(var(--yellow-text-base-3-r), var(--yellow-text-base-3-g), var(--yellow-text-base-3-b)) !important;
-  }
-}
 
 [data-bs-theme="dark"] .article h2 {
   color: rgb(var(--yellow-text-base-0-r), var(--yellow-text-base-0-g), var(--yellow-text-base-0-b)) !important;
   background-image: linear-gradient(
-    var(--bs-accent2-border-subtle),
-    var(--bs-accent2-border-subtle)
+    rgb(var(--yellow-text-base-0-r), var(--yellow-text-base-0-g), var(--yellow-text-base-0-b)),
+    rgb(var(--yellow-text-base-0-r), var(--yellow-text-base-0-g), var(--yellow-text-base-0-b))
   ) !important;
 }
 
@@ -263,13 +237,6 @@ article p {
   border-left: 4px solid var(--bs-success-border-subtle);
 }
 
-@media (prefers-color-scheme: dark) {
-  .article blockquote {
-    background: var(--bs-accent2-bg-subtle);
-    border-left-color: var(--bs-accent2-border-subtle);
-  }
-}
-
 [data-bs-theme="dark"] .article blockquote {
   background: var(--bs-accent2-bg-subtle);
   border-left-color: var(--bs-accent2-border-subtle);
@@ -280,12 +247,6 @@ article p {
   margin: 3rem 0;
   border: none;
   border-top: 2px solid var(--bs-success-border-subtle);
-}
-
-@media (prefers-color-scheme: dark) {
-  .article hr {
-    border-top-color: var(--bs-accent2-border-subtle);
-  }
 }
 
 [data-bs-theme="dark"] .article hr {
@@ -299,11 +260,6 @@ article p {
   border-radius: var(--bs-border-radius-lg);
   margin-bottom: 2rem;
 }
-
-/* No dark mode overrides needed - CSS custom properties handle theme switching
-automatically */
-
-
 
 
 /* Base inline quote styling */
