@@ -155,9 +155,10 @@ article p {
   font-variant-ligatures: discretionary-ligatures;
   text-align: left;
   text-wrap: balance;
+  /* Light mode underline in base-0 blue */
   background-image: linear-gradient(
-    rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b)) !important,
-    rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b)) !important
+    rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b)),
+    rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b))
   );
   background-size: 100% 2px;
   background-position: 0 calc(100% - 27px); /* up from bottom */
@@ -195,6 +196,7 @@ article p {
 
 [data-bs-theme="dark"] .article h2 {
   color: rgb(var(--yellow-text-base-0-r), var(--yellow-text-base-0-g), var(--yellow-text-base-0-b)) !important;
+  /* Dark mode underline in base-0 yellow */
   background-image: linear-gradient(
     rgb(var(--yellow-text-base-0-r), var(--yellow-text-base-0-g), var(--yellow-text-base-0-b)),
     rgb(var(--yellow-text-base-0-r), var(--yellow-text-base-0-g), var(--yellow-text-base-0-b))
