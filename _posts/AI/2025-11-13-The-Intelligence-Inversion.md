@@ -177,7 +177,7 @@ article p {
 .article h4 {
   margin-bottom: 0.75rem;
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 100;
   color: rgb(var(--blue-text-base-2-r), var(--blue-text-base-2-g), var(--blue-text-base-2-b));
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-wrap: balance;
@@ -186,7 +186,7 @@ article p {
 .article h5 {
   margin-bottom: 0.75rem;
   font-size: 2rem;
-  font-weight: 400;
+  font-weight: 100;
   color: rgb(var(--blue-text-base-3-r), var(--blue-text-base-3-g), var(--blue-text-base-3-b));
   font-family: "Sofia Sans Extra Condensed", sans-serif;
   text-wrap: balance;
