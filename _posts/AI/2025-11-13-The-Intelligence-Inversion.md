@@ -171,6 +171,7 @@ article p {
   font-weight: 100;
   color: rgb(var(--blue-text-base-1-r), var(--blue-text-base-1-g), var(--blue-text-base-1-b));
   font-family: "Sofia Sans Extra Condensed", sans-serif;
+  text-align: left;
   text-wrap: balance;
 }
 
@@ -180,6 +181,7 @@ article p {
   font-weight: 100;
   color: rgb(var(--blue-text-base-2-r), var(--blue-text-base-2-g), var(--blue-text-base-2-b));
   font-family: "Sofia Sans Extra Condensed", sans-serif;
+  text-align: left;
   text-wrap: balance;
 }
 
@@ -189,6 +191,7 @@ article p {
   font-weight: 100;
   color: rgb(var(--blue-text-base-3-r), var(--blue-text-base-3-g), var(--blue-text-base-3-b));
   font-family: "Sofia Sans Extra Condensed", sans-serif;
+  text-align: left;
   text-wrap: balance;
 }
 
@@ -561,6 +564,15 @@ h6.definition-list-heading + dl.definition-list {
 
 ## Executive Summary
 
+> **Three years vs. 1,000 Days**
+> 
+> Throughout this white paper I use "1,000 days" as a convenient shorthand for a
+> roughly three‑year strategic window (for example, late 2022 → late 2025 and
+> late 2025 → late 2028), so when you see "1,000 days" and "three years" you can
+> read them as the same planning horizon rather than a claim about exact date
+> math.
+{: .alert .alert-info}
+
 <mark class="glow">The first 1,000 days of AI validated the path from science through engineering
 and into production that produced real value; the <strong>next</strong> 1,000 will be won on <strong>economics, business
 strategy, and user trust</strong>.</mark>
@@ -606,10 +618,10 @@ strategy, and user trust</strong>.</mark>
 : The function and engineering discipline that run agents in production—owning performance, uptime, incident response, and lifecycle, similar to DevOps/SRE but for AI agents.
 
 **Compute as capital stock & comparative advantage**
-: Treating compute infrastructure and tooling as a core, durable asset that determines how much “intelligence” you can deploy—and a source of competitive advantage if you can access or manage it better than peers.
+: Treating compute infrastructure and tooling as a core, durable asset that determines how much <q>intelligence</q> you can deploy—and a source of competitive advantage if you can access or manage it better than peers.
 
 **Serviceable demand & quality‑adjusted unit cost**
-: Serviceable demand is how much customer demand you can actually serve given capacity; quality‑adjusted unit cost is cost per unit of work **after** correcting for quality so you’re not “saving” money by shipping worse outcomes.
+: Serviceable demand is how much customer demand you can actually serve given capacity; quality‑adjusted unit cost is cost per unit of work **after** correcting for quality so you’re not <q>saving</q> money by shipping worse outcomes.
 
 **Manipulation‑resistant design, defenses & guardrails**
 : UI, policies, and technical controls that prevent agents from nudging, pressuring, or covertly persuading users; includes safeguards, testing for manipulative behavior, and rules/filters that keep agents within approved boundaries.
@@ -618,7 +630,7 @@ strategy, and user trust</strong>.</mark>
 : Designing workflows around how you will **check correctness** (evaluators, tests, oracles) from the start, using evaluators‑as‑code, property‑based tests, statistical sampling, and dedicated eval tooling rather than ad‑hoc human review.
 
 **Core autonomy metrics (Autonomy / Autonomy Index)**
-: The share of tasks or flows that agents complete end‑to‑end without humans changing their work—how “hands‑off” a domain truly is.
+: The share of tasks or flows that agents complete end‑to‑end without humans changing their work—how <q>hands‑off</q> a domain truly is.
 
 **Core quality & safety metrics**
 : * **Verifier Coverage** – % of agent outputs that pass through one or more
@@ -637,7 +649,7 @@ strategy, and user trust</strong>.</mark>
 : Deep logging and tracing of what agents did (steps, tools, inputs/outputs) plus standardized explanations for decisions, so you can debug, audit, and explain behavior.
 
 **Reliability controls (Kill‑switch & chaos drills)**
-: The ability to shut agents down or route work back to humans immediately, and regular “break it on purpose” drills to test resilience when models, tools, or providers fail.
+: The ability to shut agents down or route work back to humans immediately, and regular <q>break it on purpose</q> drills to test resilience when models, tools, or providers fail.
 
 **Incident management metrics (Sev‑1, MTTR, incident rate, SLOs)**
 : **Borrowed from SRE:** defining Severity‑1 incidents for agent failures, tracking how often they occur and how quickly you restore service (MTTR), under formal service‑level objectives.
@@ -889,8 +901,7 @@ bottleneck.</strong></mark> What remains hard to manufacture is:
   belonging</strong>.</mark>
 
 <mark class="glow">If our operating model optimizes only for task completion and cost per ticket,
-the intelligence inversion will produce brittle, low‑trust systems. So we treat
-<i>flourishing</i> as the objective function.</mark>
+the intelligence inversion will produce brittle, low‑trust systems. So we treat <i>flourishing</i> as the objective function.</mark>
 
 <mark class="glow">We’ll model human flourishing as a composite over four interacting <q>capital
 stocks</q>:</mark>
@@ -909,8 +920,8 @@ $$
 
 <mark class="glow"><strong>Design constraint:</strong> raising access to intelligence while degrading networks
 or narrowing exposure yields fragile societies and fragile firms. Product,
-policy, and architecture decisions should push out the *joint frontier* of M, I,
-N, and D—not trade N and D away for marginal gains in I.</mark>
+policy, and design decisions should push out the <i>joint frontier</i> of M, I,
+N, and D — not trade N and D away for marginal gains in I.</mark>
 
 ### Time As The Binding Constraint
 
@@ -941,12 +952,12 @@ N, and D—not trade N and D away for marginal gains in I.</mark>
 #### Design Considerations
 
 - Every **agentic workflow** publishes **time‑to‑outcome** alongside financial
-  cost. “Cheap but slow for the user” is not success.
+  cost. <q>Cheap but slow for the user</q> is not success.
 - Public and civic programs set explicit **Time Dividend targets** (e.g.,
-  “within 24 months, return ≥5 hours per week to the median household”) and use
+  <q>within 24 months, return ≥5 hours per week to the median household</q>) and use
   personal AIs to strip out paperwork, eligibility navigation, and scheduling
   friction.
-- When enterprises market “AI‑driven productivity” in ESG or investor
+- When enterprises market <q>AI‑driven productivity</q> in ESG or investor
   communications, they disclose **WFR deltas** for the people affected—not just
   margin improvements.
 
@@ -1000,8 +1011,8 @@ spikes rather than human welfare.</mark>
 #### Design Considerations
 
 - **Attention Charter**: A binding set of commitments for any product that uses
-  AI to steer behavior: clear disclosure, limits (“manipulation budgets”), and
-  user‑controlled “risk knobs” for how much persuasion they accept.
+  AI to steer behavior: clear disclosure, limits (<q>manipulation budgets</q>), and
+  user‑controlled <q>risk knobs</q> for how much persuasion they accept.
 - **Provenance & Context**: Cryptographic provenance for media and AI outputs
   that demonstrates if the content was produced by AI or by Humans, plus
   **human‑readable source capsules** (what model, what data, what sponsor) that
@@ -1039,7 +1050,7 @@ spikes rather than human welfare.</mark>
   their legal identity when required, but **revocable and scoped**, with support
   for pseudonymous or role‑based identities where law and context allow.
 - **Memory governance**: Memory is **minimized by default**, tiered by
-  sensitivity and purpose, with explicit “rites of passage” (for example,
+  sensitivity and purpose, with explicit <q>rites of passage</q> (for example,
   coming‑of‑age options that archive or reset parts of childhood data, or the
   deletion of classwork after a course is completed, leaving only the final
   deliverable for the class and any personal notes the student took, along with
@@ -1055,7 +1066,7 @@ spikes rather than human welfare.</mark>
 - **Local‑first storage** wherever feasible, with encrypted sync to cloud.
 - Audit‑ready access logs for who (or what agent) touched which memories and
   when.
-- “Forget me” operations associated with CCPA that propagate through caches,
+- <q>Forget me</q> operations associated with CCPA that propagate through caches,
   retrievers, and downstream systems, with verifiable proofs of deletion.
 
 ### Emotional & Relational Safety
@@ -1142,8 +1153,8 @@ least the following failure modes:
 
 #### Verification Debt
 
-  *Symptom*: Agents make confident but wrong decisions; you discover “shadow
-  errors” after deployment.
+  *Symptom*: Agents make confident but wrong decisions; you discover <q>shadow
+  errors</q> after deployment.
 
   *Countermeasure*: Treat evaluation as code; enforce promotion gates (high
   coverage, low escape rate) before agents move to primary; maintain shared
@@ -1170,7 +1181,7 @@ least the following failure modes:
   *Symptom*: Systems quietly optimize for engagement or convenience over user
   welfare.
 
-  *Countermeasure*: Integrate manipulation classifiers, user “risk knobs,”
+  *Countermeasure*: Integrate manipulation classifiers, user <q>risk knobs</q>,
   strong disclosure UX, and welfare‑aligned objectives; red‑team for persuasion
   harms.
 
@@ -1244,7 +1255,7 @@ least the following failure modes:
   operations.
 
   *Countermeasure*: Multi‑region, multi‑provider compute with failover; maintain
-  a healthy “compute sovereignty” ratio through contracts and architecture.
+  a healthy <q>compute sovereignty</q> ratio through contracts and architecture.
 
 #### Liability Ambiguity
 
@@ -1268,7 +1279,7 @@ least the following failure modes:
   *Symptom*: Staff lose critical domain expertise due to over‑reliance on
   agents.
 
-  *Countermeasure*: Rotate people through “shadow mode” work, require periodic
+  *Countermeasure*: Rotate people through <q>shadow mode</q> work, require periodic
   human audits, and maintain cross‑training programs.
 
 ### Human‑Flourishing Requirements for AI Systems: Aligning Abundant Cognition With Trust & Time
@@ -1294,14 +1305,6 @@ way they are in this paper, why time and trust show up as primary KPIs, and why
 governance and architecture have to evolve together over the next 1,000 days.
 
 ## The First 3 Years: From Tokens To Work
-
-> **Three years vs. 1,000 Days**
->
-> Throughout this white paper I use "1,000 days" as a convenient shorthand for a
-> roughly three‑year strategic window (for example, late 2022 → late 2025 and late
-> 2025 → late 2028), so when you see "1,000 days" and "three years" you can read
-> them as the same planning horizon rather than a claim about exact date math.
-{: .alert .alert-info}
 
 With the launch of ChatGPT on **Nov 30, 2022** to **November 30, 2025**
 transformers, tokens, and agents changed what <q>intelligence</q> means inside the
