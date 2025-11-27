@@ -81,6 +81,8 @@ no_toc: true
 ---
 
 <style>
+
+  
 .alert.alert-info {
   width: 50%;
   float: right;
@@ -238,13 +240,13 @@ article p {
 .article blockquote {
   margin: 2rem 0;
   padding: 1.5rem;
-  background: var(--bs-success-bg-subtle);
-  border-left: 4px solid var(--bs-success-border-subtle);
+  background: rgba(var(--bs-light-rgb), 1);
+  border-left: 4px solid rgba(var(--bs-light-rgb), 1);
 }
 
 [data-bs-theme="dark"] .article blockquote {
-  background: var(--bs-accent2-bg-subtle);
-  border-left-color: var(--bs-accent2-border-subtle);
+  background: rgba(var(--bs-light-rgb), 1);
+  border-left-color: rgba(var(--bs-light-rgb), 1);
 }
 
 /* Section dividers for major breaks - green in light mode, gold in dark mode */
