@@ -611,7 +611,7 @@ strategy, and user trust</strong>.</mark>
 - <mark class="glow"><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
 
-###### Key Terms in Section.
+###### Key Terms in Section
 {: .definition-list-heading }
 
 {: .definition-list }
