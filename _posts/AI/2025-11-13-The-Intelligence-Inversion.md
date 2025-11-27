@@ -299,9 +299,6 @@ article p {
 }
 
 
-
-
-
 .entry-content q {
   quotes: "“" "”" "‘" "’";
 }
@@ -1013,12 +1010,11 @@ spikes rather than human welfare.</mark>
 #### Design Considerations
 
 - **Attention Charter**: A binding set of commitments for any product that uses
-  AI to steer behavior: clear disclosure, limits (<q>manipulation budgets</q>), and
+  AI to steer behavior: clear disclosure, <q>manipulation budgets</q>, and
   user‑controlled <q>risk knobs</q> for how much persuasion they accept.
 - **Provenance & Context**: Cryptographic provenance for media and AI outputs
   that demonstrates if the content was produced by AI or by Humans, plus
-  **human‑readable source capsules** (what model, what data, what sponsor) that
-  travel with content.
+  **human‑readable source capsules** that communicate what model was used, what data was used, and who sponsored the content, so users can make informed judgments.  This data needs to travel inside the content itself.  
 - **Deliberation Spaces**: Moderated, agent‑assisted forums where rules of
   evidence and argument are explicit and enforceable, with identity‑verified
   participants but protection from doxxing.
@@ -1027,13 +1023,13 @@ spikes rather than human welfare.</mark>
 
 - No **dark patterns** in agent interactions; run persuasion‑risk analysis
   inline and throttle or change behavior when risk crosses thresholds.
-- Stricter controls for **children and other vulnerable groups**: tighter limits
+- Stricter controls for **children and other vulnerable groups**: bespoke and appropriate controls 
   on emotional targeting, memory retention, and engagement loops; human‑only
   escalation for sensitive topics.
 
 #### KPIs
 
-- Rate of **manipulation flags** and interventions.
+- Rate of **manipulation flags** and human interventions.
 - Measures of **comprehension and consent quality** (do people actually
   understand what they agreed to?).
 - Indices of **cross‑cutting exposure** (how often people see credible views
