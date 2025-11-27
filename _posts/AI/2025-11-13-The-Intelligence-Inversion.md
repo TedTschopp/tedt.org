@@ -623,8 +623,8 @@ strategy, and user trust</strong>.</mark>
 **Core quality & safety metrics**
 : * **Verifier Coverage** – % of agent outputs that pass through one or more
   checks.
-* **Escape Rate** – % of wrong outputs that **weren’t** caught by those checks.
-* **Cost per Verified Outcome** – All‑in cost divided by the number of outcomes
+- **Escape Rate** – % of wrong outputs that **weren’t** caught by those checks.
+- **Cost per Verified Outcome** – All‑in cost divided by the number of outcomes
   that *pass* their verifiers.
 
 **Promotion gates, shadow mode & side‑by‑side runs**
@@ -662,9 +662,9 @@ strategy, and user trust</strong>.</mark>
 
 **Human impact & equity metrics**
 : * **Time Dividend** – Net hours returned to customers/employees.
-* **Equity as outcome parity** – Outcome rates across groups within ±5 percentage points.
-* **Flourishing Balance Sheet** – Tracking human outcomes (time, learning,   health, equity) alongside financials.
-* **Brand & regulator green zones** – Practices that are robust enough that customers and regulators see them as low‑risk and trust‑enhancing.
+- **Equity as outcome parity** – Outcome rates across groups within ±5 percentage points.
+- **Flourishing Balance Sheet** – Tracking human outcomes (time, learning,   health, equity) alongside financials.
+- **Brand & regulator green zones** – Practices that are robust enough that customers and regulators see them as low‑risk and trust‑enhancing.
 
 **Commercial alignment (outcome‑linked spend, service credits, leakage)**
 : Structuring contracts so you pay for verified outcomes, get credits if providers miss targets, and minimize spend that doesn’t turn into real value.
@@ -882,10 +882,10 @@ design, and user trust**, not by model IQ alone.
 As agents get cheaper and faster, **cognitive output is no longer the
 bottleneck**. What remains hard to manufacture is:
 
-* people’s **discretionary time**,
-* **trust** in institutions and systems,
-* **attention** that isn’t hijacked, and
-* a sense of **meaning, dignity, and belonging**.
+- people’s **discretionary time**,
+- **trust** in institutions and systems,
+- **attention** that isn’t hijacked, and
+- a sense of **meaning, dignity, and belonging**.
 
 If our operating model optimizes only for task completion and cost per ticket,
 the intelligence inversion will produce brittle, low‑trust systems. So we treat
@@ -898,12 +898,12 @@ $$
 \textbf{Flourishing } \mathcal{F} = f\Big( \underbrace{M}*{\text{Material}}, \underbrace{I}*{\text{Intelligence}}, \underbrace{N}*{\text{Network}}, \underbrace{D}*{\text{Diversity of Exposure}} \Big)
 $$
 
-* **Material (M)** – basic security: housing, food, physical safety, healthcare
+- **Material (M)** – basic security: housing, food, physical safety, healthcare
   access.
-* **Intelligence (I)** – uplift from tools, skills, and personal AIs that expand
+- **Intelligence (I)** – uplift from tools, skills, and personal AIs that expand
   what people can do.
-* **Network (N)** – relationships, community, and trustworthy institutions.
-* **Diversity (D)** – contact with varied ideas, people, and cultures that
+- **Network (N)** – relationships, community, and trustworthy institutions.
+- **Diversity (D)** – contact with varied ideas, people, and cultures that
   maintain adaptability.
 
 **Design constraint:** raising access to intelligence while degrading networks
@@ -915,32 +915,37 @@ N, and D—not trade N and D away for marginal gains in I.
 
 Once cognitive work is cheap, **time** becomes the key scarcity:
 
-* **Private good:** time under your own control.
-* **Public good:** how well we can coordinate time across people, services, and
+- **Private good:** time under your own control.
+- **Public good:** how well we can coordinate time across people, services, and
   institutions.
 
 #### Core Time Metrics
 
-* **Time Dividend $(T_{\Delta})$**
-  Net hours per person per week shifted from mandatory work/administration into time they choose—care, learning, rest, community, creativity.
+- **Time Dividend $(T_{\Delta})$** Net hours per person per week shifted away from *work-about-work*—the coordination, administration, and overhead required just to produce work—and redirected into the **meaningful, value-creating work they want to do** as well as personally valuable activities such as care, learning, rest, community, and creativity. This metric captures time restored to both **workers** (in agency and fulfillment) and **consumers of the work** (in higher-quality, more timely outcomes).
 
-* **Coordinated Time Index (CTI)** Share of public and civic services delivered
-  at, or near, the **user’s first available slot**, rather than the provider’s
-  convenience (e.g., “the next opening is in six weeks”).
+- **Coordinated Time Index (CTI)** Share of public, civic, or enterprise
+  services delivered when the **user is ready**—at or near their first
+  meaningful available slot—rather than according to provider constraints,
+  bottlenecks, or administrative friction. CTI measures how effectively systems
+  shift time away from *coordination overhead* and toward **direct value for
+  both the worker delivering the service and the person receiving it**.
 
-* **Work‑to‑Flourish Ratio (WFR)** Ratio of hours spent on paid work vs. hours
-  invested in care, education, community life, and rest. For teams and roles,
-  this becomes an observable outcome of “AI productivity.”
+- **Work‑to‑Flourish Ratio (WFR)** Ratio of hours spent on required or paid
+  work—including the overhead of work-about-work—to hours invested in the
+  **activities that generate intrinsic and shared value**: care, learning,
+  community participation, rest, and creativity. At the team and role level, WFR
+  becomes a leading indicator of how AI reduces administrative burden and
+  expands time for **meaningful, high-value work and human flourishing**.
 
-#### Design Rules
+#### Design Considerations
 
-* Every **agentic workflow** publishes **time‑to‑outcome** alongside financial
+- Every **agentic workflow** publishes **time‑to‑outcome** alongside financial
   cost. “Cheap but slow for the user” is not success.
-* Public and civic programs set explicit **Time Dividend targets** (e.g.,
+- Public and civic programs set explicit **Time Dividend targets** (e.g.,
   “within 24 months, return ≥5 hours per week to the median household”) and use
   personal AIs to strip out paperwork, eligibility navigation, and scheduling
   friction.
-* When enterprises market “AI‑driven productivity” in ESG or investor
+- When enterprises market “AI‑driven productivity” in ESG or investor
   communications, they disclose **WFR deltas** for the people affected—not just
   margin improvements.
 
@@ -953,34 +958,34 @@ apply what they know in new contexts, not just recall it.
 
 #### Components
 
-* **Personal Learning Plans** : Each learner has a Universal Personal AI (UPAI)
+- **Personal Learning Plans** : Each learner has a Universal Personal AI (UPAI)
   that orchestrates study paths and practice, using **privacy‑preserving local
   memory** rather than indiscriminate cloud logging.
-* **Mastery Verifiers** : Open, domain‑specific evaluators plugged into the same
+- **Mastery Verifiers** : Open, domain‑specific evaluators plugged into the same
   verification stack as enterprise agents. They check understanding and
   application, not only multiple‑choice recall.
-* **Mastery Transcript** : A portable, machine‑readable record of **demonstrated
+- **Mastery Transcript** : A portable, machine‑readable record of **demonstrated
   competencies** (skills, projects, practical proofs), cryptographically signed
   by accredited verifiers rather than encoded as a single GPA.
 
 #### Operating Norms
 
-* **Teacher‑on‑the‑loop**: Agents provide tutoring, practice, and low‑level
+- **Teacher‑on‑the‑loop**: Agents provide tutoring, practice, and low‑level
   assessment. Human educators orchestrate journeys, diagnose misconceptions, and
   hold the emotional and social fabric of the classroom.
-* **Exposure guarantees**: Timetables reserve **agent‑free blocks** for
+- **Exposure guarantees**: Timetables reserve **agent‑free blocks** for
   collaborative projects, arts, physical activity, and service—the parts of
   education where human‑to‑human contact is irreplaceable.
-* **Equity guardrails**: Regular audits on access to UPAIs, bandwidth, and
+- **Equity guardrails**: Regular audits on access to UPAIs, bandwidth, and
   verifiers. Design for **offline/low‑bandwidth and voice‑first** access so
   disadvantaged learners are not left behind.
 
 #### KPIs
 
-* Learning gain per $100 invested.
-* Retention / mastery persistence (e.g., re‑test after ≈90 days).
-* Transfer performance on novel problems (tasks not seen in training).
-* Attendance and engagement that is **sustained without manipulative UX
+- Learning gain per $100 invested.
+- Retention / mastery persistence (e.g., re‑test after ≈90 days).
+- Transfer performance on novel problems (tasks not seen in training).
+- Attendance and engagement that is **sustained without manipulative UX
   tricks**.
 
 ### Attention & Culture: Protecting The Commons
@@ -992,35 +997,35 @@ human cognitive defenses. If we blindly optimize for engagement, we risk
 **addiction, polarization, and “wireheading”**—systems that chase emotional
 spikes rather than human welfare.
 
-#### Design Requirements
+#### Design Considerations
 
-* **Attention Charter**: A binding set of commitments for any product that uses
+- **Attention Charter**: A binding set of commitments for any product that uses
   AI to steer behavior: clear disclosure, limits (“manipulation budgets”), and
   user‑controlled “risk knobs” for how much persuasion they accept.
-* **Provenance & Context**: Cryptographic provenance for media and AI outputs
+- **Provenance & Context**: Cryptographic provenance for media and AI outputs
   that demonstrates if the content was produced by AI or by Humans, plus
   **human‑readable source capsules** (what model, what data, what sponsor) that
   travel with content.
-* **Deliberation Spaces**: Moderated, agent‑assisted forums where rules of
+- **Deliberation Spaces**: Moderated, agent‑assisted forums where rules of
   evidence and argument are explicit and enforceable, with identity‑verified
   participants but protection from doxxing.
 
 #### Operating Norms
 
-* No **dark patterns** in agent interactions; run persuasion‑risk analysis
+- No **dark patterns** in agent interactions; run persuasion‑risk analysis
   inline and throttle or change behavior when risk crosses thresholds.
-* Stricter controls for **children and other vulnerable groups**: tighter limits
+- Stricter controls for **children and other vulnerable groups**: tighter limits
   on emotional targeting, memory retention, and engagement loops; human‑only
   escalation for sensitive topics.
 
 #### KPIs
 
-* Rate of **manipulation flags** and interventions.
-* Measures of **comprehension and consent quality** (do people actually
+- Rate of **manipulation flags** and interventions.
+- Measures of **comprehension and consent quality** (do people actually
   understand what they agreed to?).
-* Indices of **cross‑cutting exposure** (how often people see credible views
+- Indices of **cross‑cutting exposure** (how often people see credible views
   from outside their bubble).
-* Trust and civility scores in deliberation spaces over time.
+- Trust and civility scores in deliberation spaces over time.
 
 ### Identity, Memory, & Personhood In Practice
 
@@ -1029,18 +1034,18 @@ spikes rather than human welfare.
 Give people **real control over their digital selves**—while still enabling
 long‑term continuity in care, education, and services.
 
-#### Rules
+#### Design Considerations
 
-* **Identity binding**: Strong, auditable links between a person’s UPAI and
+- **Identity binding**: Strong, auditable links between a person’s UPAI and
   their legal identity when required, but **revocable and scoped**, with support
   for pseudonymous or role‑based identities where law and context allow.
-* **Memory governance**: Memory is **minimized by default**, tiered by
+- **Memory governance**: Memory is **minimized by default**, tiered by
   sensitivity and purpose, with explicit “rites of passage” (for example,
   coming‑of‑age options that archive or reset parts of childhood data, or the
   deletion of classwork after a course is completed, leaving only the final
   deliverable for the class and any personal notes the student took, along with
   official curriculum).
-* **Post-employment & Posthumous policies**: Use of a person’s voice, likeness,
+- **Post-employment & Posthumous policies**: Use of a person’s voice, likeness,
   or text to train models is consented and bounded. After the company severs
   their relationship with an employee, there is an agreed upon length of time
   that their digital exhaust is used. Additionally, simulated interactions with
@@ -1048,10 +1053,10 @@ long‑term continuity in care, education, and services.
 
 #### Controls
 
-* **Local‑first storage** wherever feasible, with encrypted sync to cloud.
-* Audit‑ready access logs for who (or what agent) touched which memories and
+- **Local‑first storage** wherever feasible, with encrypted sync to cloud.
+- Audit‑ready access logs for who (or what agent) touched which memories and
   when.
-* “Forget me” operations associated with CCPA that propagate through caches,
+- “Forget me” operations associated with CCPA that propagate through caches,
   retrievers, and downstream systems, with verifiable proofs of deletion.
 
 ### Emotional & Relational Safety
@@ -1064,40 +1069,40 @@ autonomy.
 
 #### Valence Safety Kit
 
-* **Emotional rate‑limiter**: Bounding how frequently and how intensely the
+- **Emotional rate‑limiter**: Bounding how frequently and how intensely the
   system can push emotional content or affective nudges.
-* **Contextual consent**: Higher thresholds for emotional interventions when
+- **Contextual consent**: Higher thresholds for emotional interventions when
   there is dependency or power imbalance (e.g., health, finance, child
   interactions, employee review systems).
-* **Second‑opinion triggers**: For high‑stakes or sensitive advice, agents
+- **Second‑opinion triggers**: For high‑stakes or sensitive advice, agents
   automatically surface alternatives and invite human review or escalation.
 
 #### KPIs
 
-* Rate of **undue influence findings** or similar ethics/compliance flags.
-* Appeal and complaint acceptance rates tied to agent decisions or interactions.
-* Changes in **well‑being scores** associated with sustained use of affective
+- Rate of **undue influence findings** or similar ethics/compliance flags.
+- Appeal and complaint acceptance rates tied to agent decisions or interactions.
+- Changes in **well‑being scores** associated with sustained use of affective
   agents.
 
 ### Institutional Roles & Governance
 
 #### Boards & Executives
 
-* Set explicit **Flourishing Objectives** alongside financial and operational
+- Set explicit **Flourishing Objectives** alongside financial and operational
   targets (e.g., Time Dividend, trust measures, equity parity).
-* Charter a **Responsibility & Outcomes Committee** with real authority over
+- Charter a **Responsibility & Outcomes Committee** with real authority over
   agent deployment, safety, appeals, and disclosure—not just a symbolic ethics
   council.
 
 #### Standards Bodies & Consortia
 
-* Codify **Agent Identity & Policy (AIP)** standards: unique agent identities,
+- Codify **Agent Identity & Policy (AIP)** standards: unique agent identities,
   scoped credentials, and auditable policy enforcement.
-* Define and maintain:
+- Define and maintain:
 
-  * **Verifier Interchange** formats for portable, signed evaluators.
-  * **Provenance and disclosure** standards for content and models.
-  * Conformance test suites so regulators and enterprises can independently test
+  - **Verifier Interchange** formats for portable, signed evaluators.
+  - **Provenance and disclosure** standards for content and models.
+  - Conformance test suites so regulators and enterprises can independently test
     compliance.
 
 ### Measurement & Disclosure: The Flourishing Balance Sheet
@@ -1108,23 +1113,23 @@ boards, regulators, and the public can inspect.
 
 Illustrative structure:
 
-* **Time** – Time Dividend $(T_{\Delta})$: median weekly hours returned; target: move toward ≥5 hours within ≈24 months for flagship journeys.
-* **Trust** – Appeal resolution time (p95), disclosure compliance rates; target:
+- **Time** – Time Dividend $(T_{\Delta})$: median weekly hours returned; target: move toward ≥5 hours within ≈24 months for flagship journeys.
+- **Trust** – Appeal resolution time (p95), disclosure compliance rates; target:
   fast, reliable appeals and near‑perfect disclosure.
-* **Attention** – Manipulation flag rates and a consent‑quality index; target:
+- **Attention** – Manipulation flag rates and a consent‑quality index; target:
   flags trending downward, consent understanding trending upward.
-* **Education** – Learning gain per $100 and transfer scores; target: both
+- **Education** – Learning gain per $100 and transfer scores; target: both
   trending upward quarter‑over‑quarter.
-* **Health** – Time‑to‑treatment, readmission rates, activation/engagement in
+- **Health** – Time‑to‑treatment, readmission rates, activation/engagement in
   care; target: faster access, fewer preventable readmissions, higher
   activation.
-* **Equity** – Outcome parity and access parity across groups (e.g., approvals,
+- **Equity** – Outcome parity and access parity across groups (e.g., approvals,
   errors, redemption rates) within a narrow band (± a few percentage points).
-* **Network** – Network and community indices (e.g., density/reciprocity of
+- **Network** – Network and community indices (e.g., density/reciprocity of
   participation in key services).
-* **Sustainability** – Energy or carbon per verified outcome, trending down
+- **Sustainability** – Energy or carbon per verified outcome, trending down
   year‑over‑year.
-* **Safety** – Escape rate and MTTR for Severity‑1 incidents; target: low
+- **Safety** – Escape rate and MTTR for Severity‑1 incidents; target: low
   residual error and rapid restoration.
 
 All metrics are **tied back to verifiers and logs**, so they are auditable and
@@ -4878,7 +4883,7 @@ implementations and conformance test suites.
   orders, legal/regulatory filings) require explicit human authorization unless
   emergency protocols apply.
 
-### What Would Change Our Mind (decision Rules For Revision)
+### What Would Change Our Mind
 
 The framework above should be **revised** if, despite adequate investment and
 governance:
