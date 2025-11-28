@@ -9,7 +9,7 @@ Parameters:
 {% endcomment %}
 {% assign audio_label = include.label | default: "Audio Recap" %}
 {% assign audio_type = include.type | default: "audio/mp4" %}
-<div class="audio-player-alert alert alert-success">
+<div class="audio-player-alert alert alert-successm-0 p-0">
 <div class="card-body py-3">
 <div class="d-flex align-items-center gap-3">
 <div class="flex-shrink-0">
@@ -22,6 +22,9 @@ Your browser does not support the audio element.
 </audio>
 </div>
 </div>
-{% if include.description %}<p class="text-muted small mb-0 mt-2"><i class="bi bi-info-circle me-1"></i> {{ include.description }}</p>{% endif %}
+<div class="d-flex justify-content-between align-items-end mt-2">
+{% if include.description %}<p class="text-muted small mb-0"><i class="bi bi-info-circle me-1"></i> {{ include.description }}</p>{% else %}<span></span>{% endif %}
+<span class="text-muted small mb-0">Powered by: <img src="/img/NotebookLM_logo.svg" alt="NotebookLM logo" style="height: 1.2em; vertical-align: middle;"></span>
+</div>
 </div>
 </div>
