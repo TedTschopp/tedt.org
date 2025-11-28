@@ -2,7 +2,7 @@
 layout: long-article
 
 title: Winning the Intelligence Inversion
-subtitle: How enterprises will compete on compute, agents, and verification in the next 1,000 days
+subtitle: How Enterprises Will Compete on Compute, Agents, & Verification in the Next 1,000 Days
 quote: When intelligence gets cheap, your bottleneck isn’t talent—it’s compute, verification, and the courage to rewire how work gets done.
 excerpt: Over the next 1,000 days, AI stops being a science project and becomes core infrastructure. Cognitive work—drafting, support, claims, coding—will often be cheaper and faster from agents than from adding people. The bottleneck for large enterprises shifts from headcount to compute, verification, and the speed at which leaders are willing to rewire how work gets done. </br> This piece is a CEO‑level guide to that inversion. It lays out how to treat compute as capital stock, how to measure AI by cost per verified outcome rather than tokens or licenses, and how to build an AgentOps function that can safely put autonomous agents into the critical path of real revenue and risk. </br>Most importantly, it argues that human flourishing—time, trust, equity, and attention—is not a “nice to have” but a business requirement. As intelligence becomes cheap, those are the scarcities your brand, regulators, and employees will judge you on. The next three years will belong to leaders who can link AI economics, operating models, and human outcomes into a single agenda.</br>
 source: Original Content
@@ -547,6 +547,12 @@ h6.definition-list-heading + dl.definition-list {
 }
 
 </style>
+
+{% include components/audio-player.html 
+   src="/media/audio/Winning-the-Intelligence-Inversion.m4a" 
+   label="Audio Recap" 
+   description="Listen to a summary of this article while you read or on the go."
+%}
 
 ## Executive Summary
 
