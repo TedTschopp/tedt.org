@@ -78,6 +78,16 @@ pilcrowVisible: true
 tocArrowsVisible: true
 no_toc: true
 
+
+redirect_from: 
+- /2025/11/13/the-intelligence-inversion/
+- /the-intelligence-inversion/
+- /The-Intelligence-Inversion/
+- /AI/The-Intelligence-Inversion/
+- /2025/11/The-Intelligence-Inversion/
+- /2025/The-Intelligence-Inversion/
+- /AI/2025/11/13/The-Intelligence-Inversion/
+
 ---
 
 <style>
