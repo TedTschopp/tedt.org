@@ -557,7 +557,7 @@ h6.definition-list-heading + dl.definition-list {
 
 </style>
 
-{% include components/audio-player.html src="/media/audio/Winning-the-Intelligence-Inversion.m4a" label="Audio Summary" description="Listen to a summary of this article while you read or on the go." %}
+{% include components/audio-player.html src="/media/audio/Winning-the-Intelligence-Inversion.m4a" label="Audio Summary" description="**As AI makes high-quality cognitive work effectively free, leaders face a fundamental strategic crossroads about what to optimize for in their organizations.** </br></br>When intelligence becomes abundant, your strategy will either collapse into brittle cost-optimization or rise to invest that abundance in the only things that remain scarce—your customers’ time and your organization’s trust." %}
 
 ## Executive Summary
 
