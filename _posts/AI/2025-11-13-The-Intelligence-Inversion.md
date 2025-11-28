@@ -82,7 +82,7 @@ no_toc: true
 
 <style>
 
-  
+
 .alert.alert-success {
   width: 50%;
   float: right;
@@ -90,6 +90,13 @@ no_toc: true
   margin-bottom: 1rem;
   clear: right;
 }
+
+.audio-player-alert.alert.alert-success {
+  width: 100%;
+  float: none;
+  clear: both;
+}
+
 
 @media (max-width: 768px) {
   .alert.alert-success {
