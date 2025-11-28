@@ -548,11 +548,7 @@ h6.definition-list-heading + dl.definition-list {
 
 </style>
 
-{% include components/audio-player.html 
-   src="/media/audio/Winning-the-Intelligence-Inversion.m4a" 
-   label="Audio Recap" 
-   description="Listen to a summary of this article while you read or on the go."
-%}
+{% include components/audio-player.html src="/media/audio/Winning-the-Intelligence-Inversion.m4a" label="Audio Recap" description="Listen to a summary of this article while you read or on the go." %}
 
 ## Executive Summary
 
