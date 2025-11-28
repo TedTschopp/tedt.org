@@ -83,7 +83,7 @@ no_toc: true
 <style>
 
   
-.alert.alert-info {
+.alert.alert-success {
   width: 50%;
   float: right;
   margin-left: 1.5rem;
@@ -92,7 +92,7 @@ no_toc: true
 }
 
 @media (max-width: 768px) {
-  .alert.alert-info {
+  .alert.alert-success {
     width: 100%;
     float: none;
     margin-left: 0;
@@ -234,19 +234,6 @@ article p {
 
 .article li {
   margin-bottom: 0.5rem;
-}
-
-/* Blockquote visual distinction - green in light mode, gold in dark mode */
-.article blockquote {
-  margin: 2rem 0;
-  padding: 1.5rem;
-  background: rgba(var(--bs-light-rgb), 1);
-  border-left: 4px solid rgba(var(--bs-light-rgb), 1);
-}
-
-[data-bs-theme="dark"] .article blockquote {
-  background: rgba(var(--bs-light-rgb), 1);
-  border-left-color: rgba(var(--bs-light-rgb), 1);
 }
 
 /* Section dividers for major breaks - green in light mode, gold in dark mode */
@@ -570,7 +557,7 @@ h6.definition-list-heading + dl.definition-list {
 > late 2025 → late 2028), so when you see "1,000 days" and "three years" you can
 > read them as the same planning horizon rather than a claim about exact date
 > math.
-{: .alert .alert-info}
+{: .alert .alert-success}
 
 <mark class="glow">The first 1,000 days of AI validated the path from science through engineering
 and into production that produced real value; the <strong>next</strong> 1,000 will be won on <strong>economics, business
@@ -1327,7 +1314,7 @@ action</strong> we can pack into tokens per second, per dollar, under governance
 > `"gence"`). Today it can represent: - Sub‑word fragments and punctuation, -
 > Image patches and audio chunks, - Function calls and API payloads, - Pointers
 > into external tools and memories.
-{: .alert .alert-info}
+{: .alert .alert-success}
 
 At inference time the pipeline is:
 
@@ -1497,7 +1484,7 @@ meeting** to **multiple human days**:
 > **sum of what you send plus what it generates** can’t exceed that window. If
 > you’ve already used ≅300,000 tokens for history and docs on a 400,000 token
 > model, you only have ≅100,000 tokens left for the answer.
-{: .alert .alert-info}
+{: .alert .alert-success}
 
 By mid‑2025, a production deployment could hold in active working memory the
 equivalent of:
@@ -2734,7 +2721,7 @@ You get a structural funding gap unless you:
 > and pricing that remain viable when customers are cash‑constrained, and treat
 > customer financial resilience as a core strategic input, not a background
 > assumption the state will handle.
-{: .alert .alert-info}
+{: .alert .alert-success}
 
 #### Where Human Marginal Value Stays Positive
 
@@ -3793,7 +3780,7 @@ Where:
 > Deploy agent‑first when
 >
 > $$C_{\text{agent, adj}} < C_{\text{human}}$$
-{: .alert .alert-info}
+{: .alert .alert-success}
 
 This is the economics lens you should use when deciding **which workflows to
 agentize and how fast**.
@@ -4226,7 +4213,7 @@ use them as proof points.
 > measurable guardrails; refusal patterns; collaboration with risk and legal. -
 > **GRC/MRM → Model Risk Lead** - Agent taxonomy; evidence packs; scenario
 > testing; setting risk appetites for autonomy levels.
-{: .alert .alert-info}
+{: .alert .alert-success}
 
 #### Performance Contracts In Year One
 
