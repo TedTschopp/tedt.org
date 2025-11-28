@@ -1,41 +1,27 @@
 {% comment %}
 Audio Player Component
-Usage:
-  {% include components/audio-player.html 
-     src="/media/audio/your-file.m4a" 
-     label="Audio Recap" 
-     description="Listen to a summary of this article while you read or on the go."
-  %}
-
+Usage: {% include components/audio-player.html src="/media/audio/your-file.m4a" label="Audio Recap" description="Listen to a summary." %}
 Parameters:
   - src: Path to the audio file (required)
   - label: Badge text (optional, defaults to "Audio Recap")
   - description: Helper text below player (optional)
   - type: MIME type (optional, defaults to "audio/mp4")
 {% endcomment %}
-
 {% assign audio_label = include.label | default: "Audio Recap" %}
 {% assign audio_type = include.type | default: "audio/mp4" %}
-
 <div class="card mb-4 border-0 shadow-sm">
-  <div class="card-body py-3">
-    <div class="d-flex align-items-center gap-3">
-      <div class="flex-shrink-0">
-        <span class="badge bg-primary rounded-pill px-3 py-2">
-          <i class="bi bi-headphones me-1"></i> {{ audio_label }}
-        </span>
-      </div>
-      <div class="flex-grow-1">
-        <audio controls preload="metadata" class="w-100" style="height: 40px;">
-          <source src="{{ include.src }}" type="{{ audio_type }}">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    </div>
-    {% if include.description %}
-    <p class="text-muted small mb-0 mt-2">
-      <i class="bi bi-info-circle me-1"></i> {{ include.description }}
-    </p>
-    {% endif %}
-  </div>
+<div class="card-body py-3">
+<div class="d-flex align-items-center gap-3">
+<div class="flex-shrink-0">
+<span class="badge bg-primary rounded-pill px-3 py-2"><i class="bi bi-headphones me-1"></i> {{ audio_label }}</span>
+</div>
+<div class="flex-grow-1">
+<audio controls preload="metadata" class="w-100" style="height: 40px;">
+<source src="{{ include.src }}" type="{{ audio_type }}">
+Your browser does not support the audio element.
+</audio>
+</div>
+</div>
+{% if include.description %}<p class="text-muted small mb-0 mt-2"><i class="bi bi-info-circle me-1"></i> {{ include.description }}</p>{% endif %}
+</div>
 </div>
