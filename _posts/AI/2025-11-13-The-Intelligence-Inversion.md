@@ -61,7 +61,7 @@ location:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/2025-11/The-Intelligence-Inversion-2.webp
+image: /img/2025-11/The-Intelligence-Inversion-3.webp
 image-alt: "Illustration of executives in a glass boardroom above a glowing data city, studying an inverted pyramid of light"
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
