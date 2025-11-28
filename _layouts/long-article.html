@@ -102,38 +102,43 @@
                             {% assign image_credits = "Ted Tschopp" %}
                             {% assign image_credits_artist_URL = "https://tedt.org/" %}
                         {% endif %}
-                        <div class="card h-100 position-relative">
-                            <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"> <!-- hero image intentionally eager -->
-                            <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 pe-2 ps-2">
-                                <div class="wcag-glow aaa mb-2" style="--pad-x:0.75em; --pad-y:0.4em;">
-                                    <div class="post-hero mb-1">
-                                        <h1 class="p-name card-title post-title mb-1">{{ page.title }}</h1>
-                                        {% if page.subtitle %}
-                                            <p class="card-subtitle h2 mb-2 fw-normal post-subtitle">{{ page.subtitle }}</p>
-                                        {% endif %}
-                                    </div>
-                                    <div class="small mb-1">
-                                        {% if page.author.name %}
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></span>
-                                        {% else %}
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></span>
-                                        {% endif %}
-                                    </div>
-                                    <div class="small image-credits">
-                                        {% if image_credits_URL and image_credits_URL contains "http" %}
-                                            <cite><a target="_new" href="{{ image_credits_URL }}">{{ image_credits_title }}</a></cite>:&nbsp;an image by
-                                        {% else %}
-                                            <cite>{{ image_credits_title }}</cite>:&nbsp;an image by
-                                        {% endif %}
-                                        {% if image_credits_artist_URL and image_credits_artist_URL contains "http" %}
-                                            {%- assign __img_credit_href = image_credits_artist_URL | strip -%}
-                                            {%- if __img_credit_href != '' -%}
-                                            <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_blank" class="url fn n" href="{{ __img_credit_href | escape }}">{{ image_credits | escape }}</a></address></span>
-                                            {%- endif -%}
-                                        {% else %}
-                                            {{ image_credits }}
-                                        {% endif %}
-                                    </div>
+                        <div class="card h-100">
+                            <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"><!-- hero image intentionally eager -->
+                            <div class="card-body pt-3 pb-3 ps-4 pe-4">
+                                <div class="post-hero mb-2">
+                                    <h1 class="p-name card-title post-title mb-1">{{ page.title }}</h1>
+                                    {% if page.subtitle %}
+                                    <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">{{ page.subtitle }}</p>
+                                    {% endif %}
+                                </div>
+                                <div class="small text-body-secondary mb-1">
+                                    {% if page.author.name %}
+                                    <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img
+                                                src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo"
+                                                loading="lazy" alt="{{ page.author.name | escape }} avatar"> {{page.author.name}}</a></span>
+                                    {% else %}
+                                    <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img
+                                                src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo"
+                                                loading="lazy" alt="{{ site.author.name | escape }} avatar"> {{site.author.name}}</a></span>
+                                    {% endif %}
+                                </div>
+                                <div class="small text-body-secondary image-credits">
+                                    {% if image_credits_URL and image_credits_URL contains "http" %}
+                                        <cite><a target="_new" href="{{ image_credits_URL }}">{{ image_credits_title }}</a></cite>:&nbsp;an image by
+                                    {% else %}
+                                        <cite>{{ image_credits_title }}</cite>:&nbsp;an image by
+                                    {% endif %}
+                                    {% if image_credits_artist_URL and image_credits_artist_URL contains "http" %}
+                                        {%- assign __img_credit_href = image_credits_artist_URL | strip -%}
+                                        {%- if __img_credit_href != '' -%}
+                                            <span class="vcard">
+                                                <address style="display:inline;" class="author"><a rel="author" target="_blank" class="url fn n"
+                                                        href="{{ __img_credit_href | escape }}">{{ image_credits | escape }}</a></address>
+                                            </span>
+                                        {%- endif -%}
+                                    {% else %}
+                                        {{ image_credits }}
+                                    {% endif %}
                                 </div>
                             </div>
                         </div>
