@@ -369,7 +369,7 @@ mark {
   --glow-base-b: 102;
 }
 
-mark.glow {
+mark {
   /* Use global base colors directly for light mode */
   --glow-r: var(--glow-base-r);
   --glow-g: var(--glow-base-g);
@@ -406,7 +406,7 @@ mark.glow {
 }
 
 /* Dark mode variant: applies when Bootstrap theme switcher is set to dark */
-[data-bs-theme="dark"] mark.glow {
+[data-bs-theme="dark"] mark {
   /* Calculate darker, more subdued glow color based on global base */
   --glow-r: calc(var(--glow-base-r) * 0.31);
   --glow-g: calc(var(--glow-base-g) * 0.31);
@@ -563,14 +563,14 @@ h6.definition-list-heading + dl.definition-list {
 
 > **Three years vs. 1,000 Days**
 > 
-> Throughout this white paper I use "1,000 days" as a convenient shorthand for a
+> Throughout this white paper I use <q>1,000 days</q> as a convenient shorthand for a
 > roughly three‑year strategic window (for example, late 2022 → late 2025 and
-> late 2025 → late 2028), so when you see "1,000 days" and "three years" you can
+> late 2025 → late 2028), so when you see <q>1,000 days</q> and <q>three years</q> you can
 > read them as the same planning horizon rather than a claim about exact date
 > math.
 {: .alert .alert-success}
 
-<mark class="glow">The first 1,000 days of AI validated the path from science through engineering
+<mark>The first 1,000 days of AI validated the path from science through engineering
 and into production that produced real value; the <strong>next</strong> 1,000 will be won on <strong>economics, business
 strategy, and user trust</strong>.</mark>
 
@@ -580,16 +580,16 @@ strategy, and user trust</strong>.</mark>
   enterprises moved from experiments to **verification‑first agents**. Costs fell, enabling
   <\$1 a day <q>digital worker‑day</q> at ≅1,000,000 tokens a day and adoption crossed
   the majority threshold by mid‑2024.
-- <mark class="glow"><strong>You must compete on verification, not hype.</strong> Tie
+- <mark><strong>You must compete on verification, not hype.</strong> Tie
   every AI claim to <em>cost per verified outcome, autonomy, error rates, MTTR,</em>
   and <em>portability</em>.</mark>
-- <mark class="glow"><strong>Your Plan: Rewire your enterprise.</strong> Stand up AgentOps, Hire evaluator engineers.
+- <mark><strong>Your Plan: Rewire your enterprise.</strong> Stand up AgentOps, Hire evaluator engineers.
   Contract for diversified compute and energy. Instrument your workflows.</mark>
-- <mark class="glow"><strong>Lead on trust.</strong> Manipulation defenses, data provenance, AI transparency, and appeals
+- <mark><strong>Lead on trust.</strong> Manipulation defenses, data provenance, AI transparency, and appeals
   protect your brand and pre‑empt regulation.</mark>
-- <mark class="glow"><strong>Invest where it compounds.</strong> Verification libraries, observability, and
+- <mark><strong>Invest where it compounds.</strong> Verification libraries, observability, and
   compute efficiency all compound across every use case.</mark>
-- <mark class="glow"><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
+- <mark><strong>Measure what matters.</strong> Publish the <strong>Flourishing Balance Sheet</strong> next to
   your financials.</mark>
 
 ###### Key Terms in Section
@@ -683,7 +683,7 @@ strategy, and user trust</strong>.</mark>
 
 ### What’s Changing & How Fast
 
-<mark class="glow"><strong>The Intelligence Inversion.</strong> Over the next ≅1,000 days (through the end of
+<mark><strong>The Intelligence Inversion.</strong> Over the next ≅1,000 days (through the end of
 2028), AI models will move from <q>smart intern</q> to <strong>autonomous
 agents</strong> that plan, observe, orient, decide, act, and verify their own work, and handle multi‑step outcomes.
 Cognitive output becomes <strong>cheap, fast, and scalable with compute</strong>, not
@@ -704,7 +704,7 @@ advantage shifts to:
 
 ### Human Flourishing Is A Business Requirement
 
-<mark class="glow">As cognition gets cheap, <strong>time, trust, and
+<mark>As cognition gets cheap, <strong>time, trust, and
 attention</strong> become the scarce assets customers and employees
 value.</mark>
 
@@ -727,11 +727,11 @@ must match.
 
 ### What This Means For Large Enterprise Profit & Loss
 
-- <mark class="glow"><strong>Costs of Goods Sold &amp; Operating Expenses:</strong>
+- <mark><strong>Costs of Goods Sold &amp; Operating Expenses:</strong>
   In agent‑addressable domains, <strong>cost per verified outcome</strong>
   (not hours) becomes the right denominator. Expect large step‑downs as autonomy
   rises.</mark>
-- <mark class="glow"><strong>Capital Expenses &amp; Balance Sheet:</strong> Compute, eval tooling, and observability
+- <mark><strong>Capital Expenses &amp; Balance Sheet:</strong> Compute, eval tooling, and observability
   become enduring capital — <strong><q>compute is the new capital stock.</q></strong></mark>
 - **Revenue Growth:** Faster cycle times and 24/7 agent capacity expand
   serviceable demand (e.g., claims cleared, tickets resolved, quotes delivered).
@@ -742,7 +742,7 @@ must match.
 
 ### The Operating Model That Works: Verification ‑ First Agents
 
-<mark class="glow">Executives should not measure <q>AI</q> by model IQ, but by <strong>verified business
+<mark>Executives should not measure <q>AI</q> by model IQ, but by <strong>verified business
 outcomes</strong>. The operating system for that is:</mark>
 
 #### Design for Verification From Day One
@@ -812,7 +812,7 @@ poisoning & drift challenges; portability bake‑offs.
 
 ### Money, Compute, & Your CFO Lens
 
-<mark class="glow"><strong>Compute is the comparative advantage</strong> in the intelligence economy. Two
+<mark><strong>Compute is the comparative advantage</strong> in the intelligence economy. Two
 practical implications for corporate finance:</mark>
 
 1. **Capacity strategy.** Lock in diversified compute through long‑dated
@@ -880,27 +880,27 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
 
 ### First Principles
 
-<mark class="glow">The arrival of scalable machine intelligence changes what is scarce.</mark>
+<mark>The arrival of scalable machine intelligence changes what is scarce.</mark>
 
-<mark class="glow">The first ≅1,000 days of enterprise AI showed that models and agents can reliably turn
+<mark>The first ≅1,000 days of enterprise AI showed that models and agents can reliably turn
 tokens into work; the next 1,000 days will be governed by <strong>economics, business
 design, and user trust</strong>, not by model IQ alone.</mark>
 
-<mark class="glow">As agents get cheaper and faster, <strong>cognitive output is no longer the
+<mark>As agents get cheaper and faster, <strong>cognitive output is no longer the
 bottleneck.</strong></mark> What remains hard to manufacture is:
 
-- <mark class="glow">people’s <strong>discretionary time</strong>,</mark>
-- <mark class="glow"><strong>trust</strong> in institutions and
+- <mark>people’s <strong>discretionary time</strong>,</mark>
+- <mark><strong>trust</strong> in institutions and
   systems,</mark>
-- <mark class="glow"><strong>attention</strong> that isn’t hijacked,
+- <mark><strong>attention</strong> that isn’t hijacked,
   and</mark>
-- <mark class="glow">a sense of <strong>meaning, dignity, and
+- <mark>a sense of <strong>meaning, dignity, and
   belonging</strong>.</mark>
 
-<mark class="glow">If our operating model optimizes only for task completion and cost per ticket,
+<mark>If our operating model optimizes only for task completion and cost per ticket,
 the intelligence inversion will produce brittle, low‑trust systems. So we treat <i>flourishing</i> as the objective function.</mark>
 
-<mark class="glow">We’ll model human flourishing as a composite over four interacting <q>capital
+<mark>We’ll model human flourishing as a composite over four interacting <q>capital
 stocks</q>:</mark>
 
 $$
@@ -915,14 +915,14 @@ $$
 - **Diversity (D)** – contact with varied ideas, people, and cultures that
   maintain adaptability.
 
-<mark class="glow"><strong>Design constraint:</strong> raising access to intelligence while degrading networks
+<mark><strong>Design constraint:</strong> raising access to intelligence while degrading networks
 or narrowing exposure yields fragile societies and fragile firms. Product,
 policy, and design decisions should push out the <i>joint frontier</i> of M, I,
 N, and D — not trade N and D away for marginal gains in I.</mark>
 
 ### Time As The Binding Constraint
 
-<mark class="glow">Once cognitive work is cheap, <strong>time</strong> becomes the key scarcity:</mark>
+<mark>Once cognitive work is cheap, <strong>time</strong> becomes the key scarcity:</mark>
 
 - **Private good:** time under your own control.
 - **Public good:** how well we can coordinate time across people, services, and
@@ -962,7 +962,7 @@ N, and D — not trade N and D away for marginal gains in I.</mark>
 
 #### Objective
 
-<mark class="glow">Move from <q>hours in seat</q> to <strong>verified capability and transfer</strong>: can learners apply what they know in new contexts, not just recall it.</mark>
+<mark>Move from <q>hours in seat</q> to <strong>verified capability and transfer</strong>: can learners apply what they know in new contexts, not just recall it.</mark>
 
 #### Components
 
@@ -1000,7 +1000,7 @@ N, and D — not trade N and D away for marginal gains in I.</mark>
 
 #### Problem
 
-<mark class="glow">As intelligence becomes cheap, <strong>persuasion capacity</strong> can scale faster than
+<mark>As intelligence becomes cheap, <strong>persuasion capacity</strong> can scale faster than
 human cognitive defenses. If we blindly optimize for engagement, we risk
 <strong>addiction, polarization, and <q>wireheading</q></strong> — systems that chase emotional
 spikes rather than human welfare.</mark>
@@ -1038,7 +1038,7 @@ spikes rather than human welfare.</mark>
 
 #### Objective
 
-<mark class="glow">Give people <strong>real control over their digital selves</strong> — while still enabling long‑term continuity in care, education, and services.</mark>
+<mark>Give people <strong>real control over their digital selves</strong> — while still enabling long‑term continuity in care, education, and services.</mark>
 
 #### Design Considerations
 
@@ -1280,16 +1280,16 @@ least the following failure modes:
 
 ### Human‑Flourishing Requirements for AI Systems: Aligning Abundant Cognition With Trust & Time
 
-<mark class="glow">Intelligence abundance can yield either a <strong>thin equilibrium</strong> that maximizes clicks and short‑term cost reductions, or a <strong>thick settlement</strong> that expands
+<mark>Intelligence abundance can yield either a <strong>thin equilibrium</strong> that maximizes clicks and short‑term cost reductions, or a <strong>thick settlement</strong> that expands
 capability, belonging, and time for people.</mark> These human‑flourishing requirements
 add the missing layer above compute and agents: principles, norms, and
 measurements that keep the economic and technical stack aimed at dignity,
-agency, and community. <mark class="glow">By treating <strong>time as the binding constraint</strong>, <strong>trust as a design variable</strong>, and <strong>relationships as critical infrastructure rather
+agency, and community. <mark>By treating <strong>time as the binding constraint</strong>, <strong>trust as a design variable</strong>, and <strong>relationships as critical infrastructure rather
 than externalities</strong>, institutions can turn the intelligence inversion into a
 broad‑based advance in human welfare—not just a line‑item improvement in the
 P&L.</mark>
 
-<mark class="glow">Human‑flourishing is the destination: a picture of what it would mean to use
+<mark>Human‑flourishing is the destination: a picture of what it would mean to use
 abundant intelligence to expand capability, belonging, and time rather than
 compress them.</mark> To make it real, we now need to look at the trajectory that
 brought us here. The next section rewinds through the first three years of
