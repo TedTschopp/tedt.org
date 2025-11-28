@@ -264,14 +264,6 @@ article p {
   border-top-color: var(--bs-accent2-border-subtle);
 }
 
-/* Executive Summary visual separation */
-.article > div:first-of-type {
-  background: var(--bs-accent2-bg-subtle);
-  padding: 1.5rem;
-  border-radius: var(--bs-border-radius-lg);
-  margin-bottom: 2rem;
-}
-
 
 /* Base inline quote styling */
 .entry-content q {
