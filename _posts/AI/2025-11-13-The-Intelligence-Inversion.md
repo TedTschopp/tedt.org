@@ -5078,7 +5078,8 @@ evidence points elsewhere.
 
 ### Critical Path Dependencies
 
-\`\`\` Foundational (Must Have First):
+``` 
+Foundational (Must Have First):
 1. Agent Charter → 2. Agent Templates → 3. Verifier Specification → 4. Incident
    Runbook
 
@@ -5090,7 +5091,8 @@ Monitoring Layer:
 
 Standards & Maturity:
 10. Pattern Libraries → 11. Interoperability Standards → 12. Flourishing Balance
-    Sheet \`\`\`
+    Sheet 
+```
 
 ### Quick Start Checklist (First 90 Days)
 
