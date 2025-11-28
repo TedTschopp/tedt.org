@@ -1,10 +1,10 @@
 ---
 layout: long-article
 
-title: The Intelligence Inversion - The First 1,000 Days of Enterprise AI
-subtitle: How agentic AI, compute, and verification are rewiring cost, risk, and operating models in large enterprises
-quote: The first 1,000 days of AI validated the path from science through engineering and into production; the **next** 1,000 will be won on **economics, business strategy, and user trust**
-excerpt: A comprehensive white paper on how agentic AI, compute-as-capital, and verification-first engineering are transforming cost, risk, and operating models in large enterprises—and what leaders must do in the next 1,000 days.
+title: Winning the Intelligence Inversion
+subtitle: How enterprises will compete on compute, agents, and verification in the next 1,000 days
+quote: When intelligence gets cheap, your bottleneck isn’t talent—it’s compute, verification, and the courage to rewire how work gets done.
+excerpt: Over the next 1,000 days, AI stops being a science project and becomes core infrastructure. Cognitive work—drafting, support, claims, coding—will often be cheaper and faster from agents than from adding people. The bottleneck for large enterprises shifts from headcount to compute, verification, and the speed at which leaders are willing to rewire how work gets done. </br> This piece is a CEO‑level guide to that inversion. It lays out how to treat compute as capital stock, how to measure AI by cost per verified outcome rather than tokens or licenses, and how to build an AgentOps function that can safely put autonomous agents into the critical path of real revenue and risk. </br>Most importantly, it argues that human flourishing—time, trust, equity, and attention—is not a “nice to have” but a business requirement. As intelligence becomes cheap, those are the scarcities your brand, regulators, and employees will judge you on. The next three years will belong to leaders who can link AI economics, operating models, and human outcomes into a single agenda.</br>
 source: Original Content
 source-url: ""
 call-to-action: Discuss on Mastodon
@@ -17,15 +17,15 @@ author:
   url: https://tedt.org/
 
 bullets:
-- Enterprise AI shifted from copilots to verification-first autonomous agents.
-- Compute and energy strategy became decisive capital drivers.
-- Quality-adjusted unit costs fell ≥60% in agent-ready domains.
-- Verification coverage and escape rate emerged as the gating metrics.
-- Human labor rebundled toward trust, policy, responsibility, and exception handling.
+- Compete on verification, not hype - Anchor every AI initiative in cost per verified outcome, autonomy, error/escape rates, MTTR, and portability—not model IQ or feature lists.
+- Treat compute as capital stock - Plan long‑dated, multi‑provider compute and energy strategy the way you plan plants or data centers; your deployed “intelligence capacity” becomes a durable advantage. 
+- Stand up AgentOps as a first‑class function - Create cross‑functional teams for evaluator engineering, observability, safety, and agent SRE to run agents in production with promotion gates and incident management. 
+- Make trust design‑critical - Build in manipulation defenses, provenance, transparency, and human appeals as non‑negotiable requirements, not bolt‑on compliance work.
+- Publish a Flourishing Balance Sheet - Track Time Dividend, equity of outcomes, and attention/health alongside traditional financials to signal—to markets and regulators—that AI is improving lives, not just margins. 
 
-description: "A full-spectrum white paper analyzing the first 1,000 days of generative AI in the enterprise, detailing how agentic systems, verification-first engineering, compute strategy, governance, and human-flourishing architecture are transforming cost structures, operating models, and leadership agendas for large organizations."
+description: "A strategic guide for CEOs and enterprise leaders on how compute, agents, and verification will reshape cost, risk, and trust in the first 1,000 days of AI."
 
-seo-description: "White paper on the first 1,000 days of enterprise AI—verification-first agents, compute strategy, risk, and trust—and how large organizations must navigate the next 1,000 days."
+seo-description: "As AI makes cognition cheap, the real advantage moves to compute, verification, and trust. This CEO guide maps how to rewire capital, operations, and metrics for the next 1,000 days of enterprise AI."
 
 categories:
 - AI
@@ -61,11 +61,11 @@ location:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/2025-11/The-Intelligence-Inversion.webp
-image-alt: "A vast, circular, cathedral-like chamber rendered in watercolor, with towering shelves of books, geometric stone architecture, and warm golden light pouring down from a glowing oculus above. A small solitary figure stands at the center, dwarfed by the monumental structure."
+image: /img/2025-11/The-Intelligence-Inversion-2.webp
+image-alt: "Illustration of executives in a glass boardroom above a glowing data city, studying an inverted pyramid of light"
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
-image-description: "This image depicts an immense, domed interior space resembling an ancient yet futuristic library or archive. The architecture is composed of layered, geometric stone blocks in muted blues, golds, and earthy tones, giving it a mosaic-like watercolor texture. A dramatic beam of warm golden light cascades from a luminous opening at the top of the dome, illuminating the central chamber. Bookshelves curve along the walls, emphasizing the scale and grandeur of the space. Near the center, a lone human figure stands, highlighting the monumentality and contemplative atmosphere of the scene."
+image-description: "Illustration of executives in a glass boardroom above a glowing data city, studying an inverted pyramid of light"
 image-title: "The Intelligence Inversion – Grand Archive of Light"
 image_width: 1456
 image_height: 816
