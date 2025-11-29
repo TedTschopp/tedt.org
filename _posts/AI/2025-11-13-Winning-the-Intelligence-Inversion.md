@@ -177,13 +177,14 @@ article p {
   /* underline */
   text-shadow:
       /* Horizontal gaps */
-       0.05em 0 0      var(--bs-body-bg),
-      -0.05em 0 0      var(--bs-body-bg),
-       0.10em 0 0      var(--bs-body-bg),
-      -0.10em 0 0      var(--bs-body-bg),
-      /* Vertical gaps for descender area */
-       0.05em 0.05em 0 var(--bs-body-bg),
-      -0.05em 0.05em 0 var(--bs-body-bg);
+       0.01em 0 0      var(--bs-body-bg),
+      -0.01em 0 0      var(--bs-body-bg),
+       0.02em 0 0      var(--bs-body-bg),
+      -0.02em 0 0      var(--bs-body-bg),
+       0.03em 0 0      var(--bs-body-bg),
+      -0.03em 0 0      var(--bs-body-bg),
+       0.04em 0 0      var(--bs-body-bg),
+      -0.04em 0 0      var(--bs-body-bg);
   background-image: linear-gradient(
     rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b)),
     rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b))
@@ -886,6 +887,8 @@ Re‑evaluate the agent‑first plan if, after adequate investment and governanc
   customer/employee journeys; measurable education/health gains where deployed.
 
 ## Human‑Flourishing as the Destination for the Intelligence Economy
+
+{% include components/video-player.html id="xr65j6C2KyU" label="Video Summary" description="Watch a video summary of the key concepts in this section article." %}
 
 ### First Principles
 
@@ -2401,8 +2404,6 @@ The intelligence in the software is rising either way.
 
 The real question for the enterprise is: **will your architecture, operating
 model, and governance rise with it – or be the new bottleneck?**
-
-
 
 ## The Intelligence Inversion: Why It Happens, When It Happens, & What Follows
 
