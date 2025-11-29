@@ -182,9 +182,7 @@ article p {
        0.02em 0 0      var(--bs-body-bg),
       -0.02em 0 0      var(--bs-body-bg),
        0.03em 0 0      var(--bs-body-bg),
-      -0.03em 0 0      var(--bs-body-bg),
-       0.04em 0 0      var(--bs-body-bg),
-      -0.04em 0 0      var(--bs-body-bg);
+      -0.03em 0 0      var(--bs-body-bg);
   background-image: linear-gradient(
     rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b)),
     rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b))
@@ -1313,6 +1311,8 @@ way they are in this paper, why time and trust show up as primary KPIs, and why
 governance and architecture have to evolve together over the next 1,000 days.
 
 ## The First 3 Years: From Tokens To Work
+
+{% include components/video-player.html id="veh6h2rIXQM" label="Video Summary" description="Watch a video summary of the key concepts in this section article." %}
 
 With the launch of ChatGPT on **Nov 30, 2022** to **November 30, 2025**
 transformers, tokens, and agents changed what <q>intelligence</q> means inside the
