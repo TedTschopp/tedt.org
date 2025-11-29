@@ -177,13 +177,13 @@ article p {
   /* underline */
   text-shadow:
       /* Horizontal gaps */
-      0.05em 0 0 var(--bs-body-bg),
-    -0.05em 0 0 var(--bs-body-bg),
-      0.1em 0 0 var(--bs-body-bg),
-    -0.1em 0 0 var(--bs-body-bg),
+       0.05em 0 0 var(--bs-body-bg),
+      -0.05em 0 0 var(--bs-body-bg),
+       0.1em 0 0 var(--bs-body-bg),
+      -0.1em 0 0 var(--bs-body-bg),
       /* Vertical gaps for descender area */
-      0.05em 0.05em 0 var(--bs-body-bg),
-    -0.05em 0.05em 0 var(--bs-body-bg);
+       0.05em 0.05em 0 var(--bs-body-bg),
+      -0.05em 0.05em 0 var(--bs-body-bg);
   background-image: linear-gradient(
     rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b)),
     rgb(var(--blue-text-base-0-r), var(--blue-text-base-0-g), var(--blue-text-base-0-b))
