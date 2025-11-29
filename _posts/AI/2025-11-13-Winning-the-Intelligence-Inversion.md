@@ -177,10 +177,10 @@ article p {
   /* underline */
   text-shadow:
       /* Horizontal gaps */
-       0.05em 0 0 var(--bs-body-bg),
-      -0.05em 0 0 var(--bs-body-bg),
-       0.1em 0 0 var(--bs-body-bg),
-      -0.1em 0 0 var(--bs-body-bg),
+       0.05em 0 0      var(--bs-body-bg),
+      -0.05em 0 0      var(--bs-body-bg),
+       0.10em 0 0      var(--bs-body-bg),
+      -0.10em 0 0      var(--bs-body-bg),
       /* Vertical gaps for descender area */
        0.05em 0.05em 0 var(--bs-body-bg),
       -0.05em 0.05em 0 var(--bs-body-bg);
@@ -496,7 +496,7 @@ dl.definition-list dd {
 }
 
 /* Align dd to second column on wider screens */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   dl.definition-list dt {
     grid-column: 1;
   }
@@ -556,7 +556,7 @@ h6.definition-list-heading + dl.definition-list {
 }
 
 /* Responsive: header + definition list full-width on small screens */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   h6.definition-list-heading {
     width: 100%;
     float: none;
