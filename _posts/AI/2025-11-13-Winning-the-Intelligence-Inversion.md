@@ -1853,6 +1853,8 @@ Inversion happens, when it happens in your domains, and how to run the next
 
 ## The Next 3 Years: The Intelligence Inversion
 
+{% include components/video-player.html id="SKjIpEO8rxk" label="Video Summary" description="Watch a video summary of the key concepts in this section article." %}
+
 Roughly 1,000 days ago, <q>AI strategy</q> meant pilots with chatbots and text
 copilots. Today, most enterprises are somewhere between <q>every knowledge worker
 has a copilot</q> and <q>we’re wiring agents into real systems, but we’re nervous.</q>
@@ -2406,6 +2408,8 @@ The real question for the enterprise is: **will your architecture, operating
 model, and governance rise with it – or be the new bottleneck?**
 
 ## The Intelligence Inversion: Why It Happens, When It Happens, & What Follows
+
+{% include components/video-player.html id="fEwYoOGC408" label="Video Summary" description="Watch a video summary of the key concepts in this section article." %}
 
 In the previous chapter we treated the **Intelligence Inversion** as an
 enterprise‑level shift: models become capable of deeper reasoning, longer
