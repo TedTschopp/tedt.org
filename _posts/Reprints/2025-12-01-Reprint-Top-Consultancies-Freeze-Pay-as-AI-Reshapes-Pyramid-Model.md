@@ -82,6 +82,8 @@ mastodon-post-id:
 
 ---
 
+## Originally published in the [Financial Times on December 1, 2025](https://www.ft.com/content/2b15601b-8d02-4abe-a789-7862874042be).
+
 Top consultancies have frozen starting salaries for the third consecutive year as artificial intelligence starts to reshape the industry, forcing firms to reconsider their traditional “pyramid” structure.
 
 Job offers sent by firms including [McKinsey](https://www.mckinsey.com) and [Boston Consulting Group](https://www.bcg.com) for 2026 show that pay for graduates is being held at the same level as this year, according to [Management Consulted](https://managementconsulted.com), which coaches students through the interview process, and people familiar with the offers.
@@ -92,7 +94,7 @@ The offers suggest a cautious approach to hiring from firms that are among the l
 
 “AI disruption is more real in professional services and technology than in the rest of the economy,” he said.
 
-[Management Consulted](https://managementconsulted.com) found first year packages for undergraduate hires in the US, including salary and bonuses, totalled between \$135,000 and \$140,000 at [McKinsey](https://www.mckinsey.com), [BCG](https://www.bcg.com) and [Bain](https://www.bain.com) & Co in 2024 and 2025, while MBA graduates could expect \$270,000 - \$285,000. The three firms declined to comment.
+[Management Consulted](https://managementconsulted.com) found first year packages for undergraduate hires in the US, including salary and bonuses, totalled between \$135,000 and \$140,000 at [McKinsey](https://www.mckinsey.com), [BCG](https://www.bcg.com) and [Bain & Co](https://www.bain.com) in 2024 and 2025, while MBA graduates could expect \$270,000 - \$285,000. The three firms declined to comment.
 
 Starting salaries for consultants at the Big Four — [Deloitte](https://www2.deloitte.com), [EY](https://www.ey.com), [KPMG](https://home.kpmg) and [PwC](https://www.pwc.com) — which tend to be lower, have stagnated for even longer, showing no increase since 2022.
 
