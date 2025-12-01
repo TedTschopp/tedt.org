@@ -2888,6 +2888,8 @@ That’s the next layer of the story.
 
 ## Powering The Intelligence Economy: Energy As The Gating Layer Of Compute Capital
 
+{% include components/video-player.html id="vqNtxddQEks" label="Video Summary" description="Watch a video summary of the key concepts in this section article." %}
+
 In the last chapter we argued that **compute capital (K_c)** becomes the primary
 lever of cognitive output once the Intelligence Inversion kicks in: agents plus
 models do more and more of the work, and the limiting factor becomes how much

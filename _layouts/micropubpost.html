@@ -50,14 +50,9 @@
 
                 <main class="h-entry" role="main">
                   <!-- Title -->
-                    <!-- Author TODO: Fix this to be dynamic for more than one author. -->
                   <h1 class="p-name lead"><a href="{{page.mf-syndication}}"> Checked into {{page.mf-checkin[0].properties.name}}</a></h1>
 
-          {% if page.author.name == null or page.author.name == empty %}
-            <p class="lead">by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" class="u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></p>
-          {% else %}
-            <p class="lead">by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" class="u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></p>
-          {% endif %}
+                  <p class="lead">{% include utility/author-byline.html page=page %}</p>
 
                   <hr>
 

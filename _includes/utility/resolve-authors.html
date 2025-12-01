@@ -1,0 +1,84 @@
+{%- comment -%}
+  Unified author resolution include.
+  Handles both legacy single-author format and new multi-author array format.
+  
+  Input: Pass the page/post object that may have author(s) defined
+    - include.page: The page or post object to resolve authors for
+  
+  Supported front matter formats:
+    Legacy (single author - still supported):
+      author: tschopp                     # Registry key lookup
+      author: "Jane Doe"                  # Plain string name
+      author:                             # Inline object
+        name: Jane Doe
+        url: https://example.com
+        avatar: /img/jane.jpg
+    
+    New (multiple authors - array):
+      authors:
+        - tschopp                         # Registry key
+        - copilot                         # Another registry key
+      authors:
+        - name: Jane Doe
+          url: https://example.com
+        - name: John Smith
+          url: https://other.com
+      authors:
+        - tschopp                         # Mix: registry key
+        - name: External Contributor      # Mix: inline object
+          url: https://external.com
+  
+  Output variables:
+    - resolved_authors: Array of author objects with name, url, avatar
+    - resolved_authors_count: Number of authors
+    - primary_author: First/primary author object (for backward compatibility)
+{%- endcomment -%}
+
+{%- assign _page = include.page | default: page -%}
+{%- assign resolved_authors = "" | split: "" -%}
+
+{%- comment -%} Check for new 'authors' array format first {%- endcomment -%}
+{%- if _page.authors and _page.authors.size > 0 -%}
+  {%- for _auth in _page.authors -%}
+    {%- comment -%} Check if it's a string (registry key or plain name) {%- endcomment -%}
+    {%- if _auth.name -%}
+      {%- comment -%} It's already an object with at least a name {%- endcomment -%}
+      {%- assign _author_obj = _auth -%}
+    {%- else -%}
+      {%- comment -%} It's a string - try registry lookup first {%- endcomment -%}
+      {%- assign _lookup = site.authors[_auth] -%}
+      {%- if _lookup -%}
+        {%- assign _author_obj = _lookup -%}
+      {%- else -%}
+        {%- comment -%} Plain string name - create minimal object {%- endcomment -%}
+        {%- capture _author_obj_json -%}{"name": {{ _auth | jsonify }}}{%- endcapture -%}
+        {%- assign _author_obj = _author_obj_json -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign resolved_authors = resolved_authors | push: _author_obj -%}
+  {%- endfor -%}
+
+{%- elsif _page.author -%}
+  {%- comment -%} Legacy single author format {%- endcomment -%}
+  {%- if _page.author.name -%}
+    {%- comment -%} Inline author object {%- endcomment -%}
+    {%- assign resolved_authors = resolved_authors | push: _page.author -%}
+  {%- else -%}
+    {%- comment -%} String - try registry lookup {%- endcomment -%}
+    {%- assign _lookup = site.authors[_page.author] -%}
+    {%- if _lookup -%}
+      {%- assign resolved_authors = resolved_authors | push: _lookup -%}
+    {%- else -%}
+      {%- comment -%} Plain string name {%- endcomment -%}
+      {%- capture _author_obj_json -%}{"name": {{ _page.author | jsonify }}}{%- endcapture -%}
+      {%- assign resolved_authors = resolved_authors | push: _author_obj_json -%}
+    {%- endif -%}
+  {%- endif -%}
+
+{%- else -%}
+  {%- comment -%} No author specified - fall back to site default {%- endcomment -%}
+  {%- assign resolved_authors = resolved_authors | push: site.author -%}
+{%- endif -%}
+
+{%- assign resolved_authors_count = resolved_authors.size -%}
+{%- assign primary_author = resolved_authors | first -%}

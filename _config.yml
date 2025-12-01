@@ -116,8 +116,28 @@ defaults:
   values:
     permalink: "/prompts/:slug/"
 
-# Variables that will be used elsewhere
-# Use {% assign author = site.authors[page.author] %} to get author which author
+# =============================================================================
+# AUTHOR REGISTRY
+# =============================================================================
+# Define all authors here. Reference them in post front matter by their key.
+#
+# Single author (legacy format - still fully supported):
+#   author: tschopp
+#
+# Multiple authors (new array format):
+#   authors:
+#     - tschopp
+#     - copilot
+#
+# You can also mix registry keys with inline definitions:
+#   authors:
+#     - tschopp
+#     - name: Guest Contributor
+#       url: https://example.com
+#
+# Use {% assign author = site.authors[page.author] %} for single-author lookup
+# Or use {% include utility/resolve-authors.html page=page %} for multi-author
+# =============================================================================
 authors:
   tschopp:
     name: Ted Tschopp
@@ -146,6 +166,11 @@ authors:
     indiewebcamp_username: Www.tedt.org
     mastodon_username: TedT@twit.social
     threads_username: tedtschopp
+
+  copilot:
+    name: GitHub Copilot
+    url: https://github.com/features/copilot
+    avatar: https://github.githubassets.com/images/modules/site/copilot/copilot.png
 
 author:
   name: Ted Tschopp

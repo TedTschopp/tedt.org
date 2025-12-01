@@ -1,6 +1,7 @@
 {%- comment -%}
   Article / BlogPosting JSON-LD structured data.
   Included only on individual post pages.
+  Supports both legacy single 'author' and new 'authors' array format.
 {%- endcomment -%}
 {%- assign article_image = image_URL | default: page.image | default: site.featured-image -%}
 {%- if article_image and article_image contains 'http' == false -%}
@@ -8,6 +9,39 @@
 {%- endif -%}
 {%- assign publish_date = page.date | date_to_xmlschema -%}
 {%- assign modified_date = page.last_modified_at | default: page.date | date_to_xmlschema -%}
+
+{%- comment -%} Resolve authors for JSON-LD {%- endcomment -%}
+{%- assign _ld_authors = "" | split: "" -%}
+{%- if page.authors and page.authors.size > 0 -%}
+    {%- for _auth in page.authors -%}
+        {%- if _auth.name -%}
+            {%- assign _ld_authors = _ld_authors | push: _auth -%}
+        {%- else -%}
+            {%- assign _lookup = site.authors[_auth] -%}
+            {%- if _lookup -%}
+                {%- assign _ld_authors = _ld_authors | push: _lookup -%}
+            {%- else -%}
+                {%- capture _plain -%}{"name": {{ _auth | jsonify }}}{%- endcapture -%}
+                {%- assign _ld_authors = _ld_authors | push: _plain -%}
+            {%- endif -%}
+        {%- endif -%}
+    {%- endfor -%}
+{%- elsif page.author -%}
+    {%- if page.author.name -%}
+        {%- assign _ld_authors = _ld_authors | push: page.author -%}
+    {%- else -%}
+        {%- assign _lookup = site.authors[page.author] -%}
+        {%- if _lookup -%}
+            {%- assign _ld_authors = _ld_authors | push: _lookup -%}
+        {%- else -%}
+            {%- capture _plain -%}{"name": {{ page.author | jsonify }}}{%- endcapture -%}
+            {%- assign _ld_authors = _ld_authors | push: _plain -%}
+        {%- endif -%}
+    {%- endif -%}
+{%- else -%}
+    {%- assign _ld_authors = _ld_authors | push: site.author -%}
+{%- endif -%}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -22,12 +56,26 @@
   {% if article_image %}"image": [ {{ article_image | jsonify }} ],{% endif %}
   "datePublished": "{{ publish_date }}",
   "dateModified": "{{ modified_date }}",
+  {%- if _ld_authors.size > 1 -%}
+  "author": [
+    {%- for _a in _ld_authors -%}
+    {
+      "@type": "Person",
+      "name": {%- if _a.name -%}{{ _a.name | jsonify }}{%- else -%}{{ _a }}{%- endif -%}
+      {%- if _a.url -%},"url": {{ _a.url | jsonify }}{%- endif -%}
+      {%- if _a.avatar -%},"image": {{ _a.avatar | absolute_url | jsonify }}{%- endif -%}
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ],
+  {%- else -%}
+  {%- assign _primary = _ld_authors | first -%}
   "author": {
     "@type": "Person",
-    "name": {{ page.author.name | default: site.author.name | jsonify }},
-    {% if page.author.url or site.author.url %}"url": {{ page.author.url | default: site.author.url | jsonify }},{% endif %}
-    {% if page.author.avatar or site.author.avatar %}"image": {{ page.author.avatar | default: site.author.avatar | absolute_url | jsonify }}{% endif %}
+    "name": {%- if _primary.name -%}{{ _primary.name | jsonify }}{%- else -%}{{ _primary }}{%- endif -%}
+    {%- if _primary.url -%},"url": {{ _primary.url | jsonify }}{%- endif -%}
+    {%- if _primary.avatar -%},"image": {{ _primary.avatar | absolute_url | jsonify }}{%- endif -%}
   },
+  {%- endif -%}
   "publisher": {
     "@type": "Organization",
     "name": {{ site.title | default: site.name | jsonify }},

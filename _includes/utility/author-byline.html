@@ -1,0 +1,37 @@
+{%- comment -%}
+  Author byline display component.
+  Renders author(s) with microformats2 markup for IndieWeb compatibility.
+  
+  Usage: {% include utility/author-byline.html page=page %}
+  
+  Optional parameters:
+    - show_avatar: true/false (default: true)
+    - avatar_size: CSS class or size (default: uses u-photo)
+    - separator: text between multiple authors (default: " and ")
+    - prefix: text before authors (default: "by ")
+{%- endcomment -%}
+
+{%- include utility/resolve-authors.html page=include.page -%}
+
+{%- assign _show_avatar = include.show_avatar | default: true -%}
+{%- assign _separator = include.separator | default: " and " -%}
+{%- assign _prefix = include.prefix | default: "by " -%}
+
+{%- if resolved_authors_count > 0 -%}
+<span class="author-byline">{{ _prefix }}{%- for _author in resolved_authors -%}
+  {%- comment -%} Handle both object and JSON string formats {%- endcomment -%}
+  {%- if _author.name -%}
+    {%- assign _name = _author.name -%}
+    {%- assign _url = _author.url -%}
+    {%- assign _avatar = _author.avatar -%}
+  {%- else -%}
+    {%- comment -%} It's a JSON string from plain name fallback {%- endcomment -%}
+    {%- assign _name = _author -%}
+    {%- assign _url = nil -%}
+    {%- assign _avatar = nil -%}
+  {%- endif -%}
+  
+  {%- if _url -%}
+<a rel="author" class="p-author h-card" href="{{ _url }}">{%- if _show_avatar and _avatar -%}<img src="{{ _avatar }}" class="u-photo author-avatar" loading="lazy" alt="{{ _name | escape }} avatar" style="width: 1.5em; height: 1.5em; border-radius: 50%; vertical-align: middle; margin-right: 0.25em;">{%- endif -%}{{ _name }}</a>{%- else -%}<span class="p-author h-card">{%- if _show_avatar and _avatar -%}<img src="{{ _avatar }}" class="u-photo author-avatar" loading="lazy" alt="{{ _name | escape }} avatar" style="width: 1.5em; height: 1.5em; border-radius: 50%; vertical-align: middle; margin-right: 0.25em;">{%- endif -%}{{ _name }}</span>{%- endif -%}{%- unless forloop.last -%}{{ _separator }}{%- endunless -%}
+{%- endfor -%}</span>
+{%- endif -%}

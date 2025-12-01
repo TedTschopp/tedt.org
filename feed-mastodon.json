@@ -80,18 +80,44 @@ layout: null
       {% if post.tags.size > 1 %}"tags": {{ post.tags | jsonify }},{% endif %}
       "date_published": "{{ post.date | date_to_xmlschema }}",
       "date_modified": "{{ post.date | date_to_xmlschema }}",
-      {% if post.author %}
-        {% assign lookup = site.authors[post.author] %}
-        {% if lookup %}
-          "author": {{ lookup | jsonify }}
-        {% elsif post.author.name or post.author.url or post.author.avatar %}
-          "author": {{ post.author | jsonify }}
-        {% else %}
-          "author": { "name": {{ post.author | jsonify }} }
-        {% endif %}
-      {% else %}
-        "author": {{ site.author | jsonify }}
-      {% endif %}
+      {%- comment -%} Multi-author resolution: supports both legacy 'author' and new 'authors' array {%- endcomment -%}
+      {%- assign _feed_authors = "" | split: "" -%}
+      {%- if post.authors and post.authors.size > 0 -%}
+          {%- for _auth in post.authors -%}
+              {%- if _auth.name -%}
+                  {%- assign _feed_authors = _feed_authors | push: _auth -%}
+              {%- else -%}
+                  {%- assign _lookup = site.authors[_auth] -%}
+                  {%- if _lookup -%}
+                      {%- assign _feed_authors = _feed_authors | push: _lookup -%}
+                  {%- else -%}
+                      {%- capture _plain_author -%}{"name": {{ _auth | jsonify }}}{%- endcapture -%}
+                      {%- assign _feed_authors = _feed_authors | push: _plain_author -%}
+                  {%- endif -%}
+              {%- endif -%}
+          {%- endfor -%}
+      {%- elsif post.author -%}
+          {%- assign _lookup = site.authors[post.author] -%}
+          {%- if _lookup -%}
+              {%- assign _feed_authors = _feed_authors | push: _lookup -%}
+          {%- elsif post.author.name or post.author.url or post.author.avatar -%}
+              {%- assign _feed_authors = _feed_authors | push: post.author -%}
+          {%- else -%}
+              {%- capture _plain_author -%}{"name": {{ post.author | jsonify }}}{%- endcapture -%}
+              {%- assign _feed_authors = _feed_authors | push: _plain_author -%}
+          {%- endif -%}
+      {%- else -%}
+          {%- assign _feed_authors = _feed_authors | push: site.author -%}
+      {%- endif -%}
+      {%- if _feed_authors.size > 1 -%}
+          "authors": [
+          {%- for _a in _feed_authors -%}
+              {%- if _a.name -%}{{ _a | jsonify }}{%- else -%}{{ _a }}{%- endif -%}{%- unless forloop.last -%},{%- endunless -%}
+          {%- endfor -%}
+          ]
+      {%- else -%}
+          "author": {%- assign _single = _feed_authors | first -%}{%- if _single.name -%}{{ _single | jsonify }}{%- else -%}{{ _single }}{%- endif -%}
+      {%- endif -%}
     }{% if forloop.last == false %},{% endif %}
   {% endfor %}
   ]
