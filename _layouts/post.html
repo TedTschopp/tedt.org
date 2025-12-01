@@ -112,11 +112,7 @@
                                     {% endif %}
                                 </div>
                                 <div class="small text-body-secondary mb-1">
-                                    {% if page.author.name %}
-                                        <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar"> {{page.author.name}}</a></span>
-                                    {% else %}
-                                        <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar"> {{site.author.name}}</a></span>
-                                    {% endif %}
+                                    <span class="card-text">written {% include utility/author-byline.html page=page prefix="" %}</span>
                                 </div>
                                 <div class="small text-body-secondary image-credits">
                                     {% if image_credits_URL and image_credits_URL contains "http" %}
