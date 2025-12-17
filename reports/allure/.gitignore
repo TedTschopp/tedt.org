@@ -1,0 +1,9 @@
+# Raw Allure result artifacts (generated)
+/allure-results/*
+!/allure-results/.gitkeep
+!/allure-results/*-result.json
+!/allure-results/*-container.json
+
+# Rendered HTML report (generated)
+/latest/*
+!/latest/.gitkeep

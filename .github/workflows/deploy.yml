@@ -13,14 +13,27 @@ permissions:
 concurrency:
   group: deploy-pages-${{ github.ref }}
   cancel-in-progress: false
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install Node dependencies
+        run: |
+          npm install --no-audit --no-fund
+
+      - name: Install Playwright (Chromium)
+        run: |
+          npx playwright install --with-deps chromium
+
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
@@ -36,6 +49,33 @@ jobs:
         run: |
           bundle config set --local path 'vendor/bundle'
           bundle install --jobs 4
+
+      - name: Run a11y tests (Allure)
+        id: a11y
+        continue-on-error: true
+        run: |
+          npm run test:a11y:allure
+
+      - name: Generate Allure report (published)
+        if: always()
+        run: |
+          npm run allure:generate
+
+      - name: Upload Allure report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: allure-report
+          path: |
+            reports/allure/latest
+            reports/allure/allure-results
+
+      - name: A11y job summary
+        if: always()
+        run: |
+          echo "## Accessibility (Playwright + Allure)" >> $GITHUB_STEP_SUMMARY
+          echo "- Outcome: ${{ steps.a11y.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Published path in deployed site: /reports/allure/latest/index.html" >> $GITHUB_STEP_SUMMARY
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production

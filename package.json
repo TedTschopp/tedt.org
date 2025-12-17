@@ -5,12 +5,17 @@
   "description": "Playwright + axe-core a11y audits for tedt.org",
   "scripts": {
     "test:a11y": "playwright test tests/a11y --reporter=list",
+    "test:a11y:allure": "node tools/run-playwright-a11y-allure.mjs",
+    "allure:generate": "npx allure generate reports/allure/allure-results -o reports/allure/latest --clean",
+    "allure:open": "npx allure open reports/allure/latest",
     "lint:md": "markdownlint-cli2"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.9.1",
     "@playwright/test": "^1.56.1",
     "@types/node": "^20.11.30",
+    "allure-commandline": "^2.29.0",
+    "allure-playwright": "^3.0.0",
     "markdownlint-cli2": "^0.14.0"
   }
 }

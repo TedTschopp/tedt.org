@@ -1,5 +1,16 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const reporter: any[] = [['list']];
+
+if (process.env.PLAYWRIGHT_ALLURE === '1') {
+  reporter.push([
+    'allure-playwright',
+    {
+      outputFolder: 'reports/allure/allure-results'
+    }
+  ]);
+}
+
 export default defineConfig({
   testDir: 'tests/a11y',
   timeout: 30_000,
@@ -9,7 +20,7 @@ export default defineConfig({
     baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://127.0.0.1:4000',
     trace: 'off'
   },
-  reporter: [['list']],
+  reporter,
   webServer: {
     command: 'JEKYLL_ENV=production bundle exec jekyll serve --no-watch --port 4000 --host 127.0.0.1',
     port: 4000,
