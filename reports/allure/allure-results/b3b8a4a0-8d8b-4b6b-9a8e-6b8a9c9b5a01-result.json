@@ -19,6 +19,7 @@
   ],
   "parameters": [
     { "name": "service_name", "value": "Customer Portal Redesign" },
+    { "name": "version", "value": "2.4.1" },
     { "name": "request_id", "value": "REQ-0001" },
     { "name": "requestor", "value": "Sarah Chen" },
     { "name": "overall_health", "value": "On Track" },

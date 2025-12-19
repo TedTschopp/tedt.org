@@ -19,6 +19,7 @@
   ],
   "parameters": [
     { "name": "service_name", "value": "HR Self-Service Portal" },
+    { "name": "version", "value": "4.2.0" },
     { "name": "request_id", "value": "REQ-0008" },
     { "name": "requestor", "value": "Robert Martinez" },
     { "name": "overall_health", "value": "On Track" },

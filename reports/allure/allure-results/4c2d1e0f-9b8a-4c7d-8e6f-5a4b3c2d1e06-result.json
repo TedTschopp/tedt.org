@@ -19,6 +19,7 @@
   ],
   "parameters": [
     { "name": "service_name", "value": "Cloud Cost Optimization Tool" },
+    { "name": "version", "value": "0.1.0" },
     { "name": "request_id", "value": "REQ-0006" },
     { "name": "requestor", "value": "Michael Torres" },
     { "name": "overall_health", "value": "At Risk" },
@@ -46,62 +47,62 @@
     },
     {
       "name": "Approved & Scheduled (ITIL v4: Plan / Govern)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "Approval record captured", "status": "passed", "stage": "finished" },
-        { "name": "Work prioritized", "status": "passed", "stage": "finished" },
-        { "name": "Delivery window scheduled", "status": "passed", "stage": "finished" }
+        { "name": "Approval record captured", "status": "skipped", "stage": "pending" },
+        { "name": "Work prioritized", "status": "skipped", "stage": "pending" },
+        { "name": "Delivery window scheduled", "status": "skipped", "stage": "pending" }
       ]
     },
     {
       "name": "Being Designed (ITIL v4: Design & Transition)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "Solution design produced", "status": "passed", "stage": "finished" },
-        { "name": "NFRs confirmed", "status": "passed", "stage": "finished" },
-        { "name": "Transition plan prepared", "status": "passed", "stage": "finished" }
+        { "name": "Solution design produced", "status": "skipped", "stage": "pending" },
+        { "name": "NFRs confirmed", "status": "skipped", "stage": "pending" },
+        { "name": "Transition plan prepared", "status": "skipped", "stage": "pending" }
       ]
     },
     {
       "name": "Coding (ITIL v4: Obtain/Build)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "Implementation completed", "status": "passed", "stage": "finished" },
-        { "name": "Build artifacts produced", "status": "passed", "stage": "finished" },
-        { "name": "Pipelines executed", "status": "passed", "stage": "finished" }
+        { "name": "Implementation completed", "status": "skipped", "stage": "pending" },
+        { "name": "Build artifacts produced", "status": "skipped", "stage": "pending" },
+        { "name": "Pipelines executed", "status": "skipped", "stage": "pending" }
       ]
     },
     {
       "name": "Validating & Testing (ITIL v4: Design & Transition)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "Functional testing", "status": "passed", "stage": "finished" },
-        { "name": "Integration validation", "status": "passed", "stage": "finished" },
-        { "name": "Security/quality checks", "status": "passed", "stage": "finished" }
+        { "name": "Functional testing", "status": "skipped", "stage": "pending" },
+        { "name": "Integration validation", "status": "skipped", "stage": "pending" },
+        { "name": "Security/quality checks", "status": "skipped", "stage": "pending" }
       ]
     },
     {
       "name": "Ready for Testing (ITIL v4: Engage)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "UAT environment made available", "status": "passed", "stage": "finished" },
-        { "name": "UAT instructions provided", "status": "passed", "stage": "finished" },
-        { "name": "Acceptance recorded", "status": "passed", "stage": "finished" }
+        { "name": "UAT environment made available", "status": "skipped", "stage": "pending" },
+        { "name": "UAT instructions provided", "status": "skipped", "stage": "pending" },
+        { "name": "Acceptance recorded", "status": "skipped", "stage": "pending" }
       ]
     },
     {
       "name": "Completed & Supported (ITIL v4: Improve)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "Transitioned to support", "status": "passed", "stage": "finished" },
-        { "name": "Monitoring/ownership established", "status": "passed", "stage": "finished" },
-        { "name": "Improvement opportunities logged", "status": "passed", "stage": "finished" }
+        { "name": "Transitioned to support", "status": "skipped", "stage": "pending" },
+        { "name": "Monitoring/ownership established", "status": "skipped", "stage": "pending" },
+        { "name": "Improvement opportunities logged", "status": "skipped", "stage": "pending" }
       ]
     }
   ],

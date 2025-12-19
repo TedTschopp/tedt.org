@@ -19,6 +19,7 @@
   ],
   "parameters": [
     { "name": "service_name", "value": "Vendor Management Platform" },
+    { "name": "version", "value": "1.3.0-rc.2" },
     { "name": "request_id", "value": "REQ-0015" },
     { "name": "requestor", "value": "Diana Ross" },
     { "name": "overall_health", "value": "On Track" },
@@ -96,12 +97,12 @@
     },
     {
       "name": "Completed & Supported (ITIL v4: Improve)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "Transitioned to support", "status": "passed", "stage": "finished" },
-        { "name": "Monitoring/ownership established", "status": "passed", "stage": "finished" },
-        { "name": "Improvement opportunities logged", "status": "passed", "stage": "finished" }
+        { "name": "Transitioned to support", "status": "skipped", "stage": "pending" },
+        { "name": "Monitoring/ownership established", "status": "skipped", "stage": "pending" },
+        { "name": "Improvement opportunities logged", "status": "skipped", "stage": "pending" }
       ]
     }
   ],

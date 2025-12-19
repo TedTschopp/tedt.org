@@ -19,6 +19,7 @@
   ],
   "parameters": [
     { "name": "service_name", "value": "Mobile Banking App v3.0" },
+    { "name": "version", "value": "3.0.0-rc.1" },
     { "name": "request_id", "value": "REQ-0003" },
     { "name": "requestor", "value": "Emily Rodriguez" },
     { "name": "overall_health", "value": "On Track" },
@@ -96,12 +97,12 @@
     },
     {
       "name": "Completed & Supported (ITIL v4: Improve)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "Transitioned to support", "status": "passed", "stage": "finished" },
-        { "name": "Monitoring/ownership established", "status": "passed", "stage": "finished" },
-        { "name": "Improvement opportunities logged", "status": "passed", "stage": "finished" }
+        { "name": "Transitioned to support", "status": "skipped", "stage": "pending" },
+        { "name": "Monitoring/ownership established", "status": "skipped", "stage": "pending" },
+        { "name": "Improvement opportunities logged", "status": "skipped", "stage": "pending" }
       ]
     }
   ],

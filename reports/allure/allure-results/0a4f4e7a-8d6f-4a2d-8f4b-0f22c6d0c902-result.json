@@ -19,6 +19,7 @@
   ],
   "parameters": [
     { "name": "service_name", "value": "API Gateway Migration" },
+    { "name": "version", "value": "3.0.0-beta.2" },
     { "name": "request_id", "value": "REQ-0002" },
     { "name": "requestor", "value": "Marcus Johnson" },
     { "name": "overall_health", "value": "On Track" },
@@ -76,32 +77,32 @@
     },
     {
       "name": "Validating & Testing (ITIL v4: Design & Transition)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "Functional testing", "status": "passed", "stage": "finished" },
-        { "name": "Integration validation", "status": "passed", "stage": "finished" },
-        { "name": "Security/quality checks", "status": "passed", "stage": "finished" }
+        { "name": "Functional testing", "status": "skipped", "stage": "pending" },
+        { "name": "Integration validation", "status": "skipped", "stage": "pending" },
+        { "name": "Security/quality checks", "status": "skipped", "stage": "pending" }
       ]
     },
     {
       "name": "Ready for Testing (ITIL v4: Engage)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "UAT environment made available", "status": "passed", "stage": "finished" },
-        { "name": "UAT instructions provided", "status": "passed", "stage": "finished" },
-        { "name": "Acceptance recorded", "status": "passed", "stage": "finished" }
+        { "name": "UAT environment made available", "status": "skipped", "stage": "pending" },
+        { "name": "UAT instructions provided", "status": "skipped", "stage": "pending" },
+        { "name": "Acceptance recorded", "status": "skipped", "stage": "pending" }
       ]
     },
     {
       "name": "Completed & Supported (ITIL v4: Improve)",
-      "status": "passed",
-      "stage": "finished",
+      "status": "skipped",
+      "stage": "pending",
       "steps": [
-        { "name": "Transitioned to support", "status": "passed", "stage": "finished" },
-        { "name": "Monitoring/ownership established", "status": "passed", "stage": "finished" },
-        { "name": "Improvement opportunities logged", "status": "passed", "stage": "finished" }
+        { "name": "Transitioned to support", "status": "skipped", "stage": "pending" },
+        { "name": "Monitoring/ownership established", "status": "skipped", "stage": "pending" },
+        { "name": "Improvement opportunities logged", "status": "skipped", "stage": "pending" }
       ]
     }
   ],
