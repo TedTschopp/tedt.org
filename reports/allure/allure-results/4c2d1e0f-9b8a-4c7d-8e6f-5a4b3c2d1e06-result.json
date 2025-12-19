@@ -1,29 +1,74 @@
 {
   "uuid": "4c2d1e0f-9b8a-4c7d-8e6f-5a4b3c2d1e06",
-  "name": "IT Service Pizza Tracker Lifecycle — Cloud Cost Optimization Tool",
+  "name": "IT Service Pizza Tracker Lifecycle \u2014 Cloud Cost Optimization Tool",
   "fullName": "it.pizza_tracker.lifecycle.cloud_cost_optimization",
   "historyId": "it.pizza_tracker.lifecycle.cloud_cost_optimization.v1",
   "status": "passed",
   "stage": "finished",
   "description": "Stage-based visibility into an IT product/service request lifecycle aligned to ITIL v4 using a Pizza Tracker model.",
   "labels": [
-    { "name": "framework", "value": "allure2" },
-    { "name": "parentSuite", "value": "Infrastructure Portfolio" },
-    { "name": "suite", "value": "FinOps" },
-    { "name": "subSuite", "value": "Cloud Cost Optimization Tool" },
-    { "name": "epic", "value": "Infrastructure Portfolio" },
-    { "name": "feature", "value": "FinOps" },
-    { "name": "story", "value": "Cloud Cost Optimization Tool" },
-    { "name": "tag", "value": "ITILv4" },
-    { "name": "tag", "value": "Pizza Tracker" }
+    {
+      "name": "framework",
+      "value": "allure2"
+    },
+    {
+      "name": "parentSuite",
+      "value": "Infrastructure Portfolio"
+    },
+    {
+      "name": "suite",
+      "value": "FinOps"
+    },
+    {
+      "name": "subSuite",
+      "value": "Cloud Cost Optimization Tool"
+    },
+    {
+      "name": "epic",
+      "value": "Infrastructure Portfolio"
+    },
+    {
+      "name": "feature",
+      "value": "FinOps"
+    },
+    {
+      "name": "story",
+      "value": "Cloud Cost Optimization Tool"
+    },
+    {
+      "name": "tag",
+      "value": "ITILv4"
+    },
+    {
+      "name": "tag",
+      "value": "Pizza Tracker"
+    }
   ],
   "parameters": [
-    { "name": "service_name", "value": "Cloud Cost Optimization Tool" },
-    { "name": "version", "value": "0.1.0" },
-    { "name": "request_id", "value": "REQ-0006" },
-    { "name": "requestor", "value": "Michael Torres" },
-    { "name": "overall_health", "value": "At Risk" },
-    { "name": "current_status", "value": "Business Case Being Validated" }
+    {
+      "name": "service_name",
+      "value": "Cloud Cost Optimization Tool"
+    },
+    {
+      "name": "version",
+      "value": "0.1.0"
+    },
+    {
+      "name": "request_id",
+      "value": "REQ-0006"
+    },
+    {
+      "name": "requestor",
+      "value": "Michael Torres"
+    },
+    {
+      "name": "overall_health",
+      "value": "At Risk"
+    },
+    {
+      "name": "current_status",
+      "value": "Business Case Being Validated"
+    }
   ],
   "steps": [
     {
@@ -31,79 +76,233 @@
       "status": "passed",
       "stage": "finished",
       "steps": [
-        { "name": "Request captured in intake system", "status": "passed", "stage": "finished" },
-        { "name": "Acknowledgement sent to requestor", "status": "passed", "stage": "finished" }
-      ]
+        {
+          "name": "Request captured in intake system",
+          "status": "passed",
+          "stage": "finished",
+          "start": 1765920000000,
+          "stop": 1765921200000
+        },
+        {
+          "name": "Acknowledgement sent to requestor",
+          "status": "passed",
+          "stage": "finished",
+          "start": 1765921200000,
+          "stop": 1765922400000
+        }
+      ],
+      "stop": 1765922400000,
+      "start": 1765920000000
     },
     {
       "name": "Business Case Being Validated (ITIL v4: Engage / Plan)",
       "status": "passed",
       "stage": "finished",
       "steps": [
-        { "name": "Business value assessed", "status": "passed", "stage": "finished" },
-        { "name": "Cost/risk/alignment reviewed", "status": "passed", "stage": "finished" },
-        { "name": "Outcome recorded (Approve/Defer/Reject)", "status": "passed", "stage": "finished" }
-      ]
+        {
+          "name": "Business value assessed",
+          "status": "passed",
+          "stage": "finished",
+          "start": 1765922460000,
+          "stop": 1765923660000
+        },
+        {
+          "name": "Cost/risk/alignment reviewed",
+          "status": "passed",
+          "stage": "finished",
+          "start": 1765923660000,
+          "stop": 1765924860000
+        },
+        {
+          "name": "Outcome recorded (Approve/Defer/Reject)",
+          "status": "passed",
+          "stage": "finished",
+          "start": 1765924860000,
+          "stop": 1765926060000
+        }
+      ],
+      "stop": 1765926060000,
+      "start": 1765922460000
     },
     {
       "name": "Approved & Scheduled (ITIL v4: Plan / Govern)",
       "status": "skipped",
       "stage": "pending",
       "steps": [
-        { "name": "Approval record captured", "status": "skipped", "stage": "pending" },
-        { "name": "Work prioritized", "status": "skipped", "stage": "pending" },
-        { "name": "Delivery window scheduled", "status": "skipped", "stage": "pending" }
-      ]
+        {
+          "name": "Approval record captured",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765926120000,
+          "stop": 1765927320000
+        },
+        {
+          "name": "Work prioritized",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765927320000,
+          "stop": 1765928520000
+        },
+        {
+          "name": "Delivery window scheduled",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765928520000,
+          "stop": 1765929720000
+        }
+      ],
+      "stop": 1765929720000,
+      "start": 1765926120000
     },
     {
       "name": "Being Designed (ITIL v4: Design & Transition)",
       "status": "skipped",
       "stage": "pending",
       "steps": [
-        { "name": "Solution design produced", "status": "skipped", "stage": "pending" },
-        { "name": "NFRs confirmed", "status": "skipped", "stage": "pending" },
-        { "name": "Transition plan prepared", "status": "skipped", "stage": "pending" }
-      ]
+        {
+          "name": "Solution design produced",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765929780000,
+          "stop": 1765930980000
+        },
+        {
+          "name": "NFRs confirmed",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765930980000,
+          "stop": 1765932180000
+        },
+        {
+          "name": "Transition plan prepared",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765932180000,
+          "stop": 1765933380000
+        }
+      ],
+      "stop": 1765933380000,
+      "start": 1765929780000
     },
     {
       "name": "Coding (ITIL v4: Obtain/Build)",
       "status": "skipped",
       "stage": "pending",
       "steps": [
-        { "name": "Implementation completed", "status": "skipped", "stage": "pending" },
-        { "name": "Build artifacts produced", "status": "skipped", "stage": "pending" },
-        { "name": "Pipelines executed", "status": "skipped", "stage": "pending" }
-      ]
+        {
+          "name": "Implementation completed",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765933440000,
+          "stop": 1765934640000
+        },
+        {
+          "name": "Build artifacts produced",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765934640000,
+          "stop": 1765935840000
+        },
+        {
+          "name": "Pipelines executed",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765935840000,
+          "stop": 1765937040000
+        }
+      ],
+      "stop": 1765937040000,
+      "start": 1765933440000
     },
     {
       "name": "Validating & Testing (ITIL v4: Design & Transition)",
       "status": "skipped",
       "stage": "pending",
       "steps": [
-        { "name": "Functional testing", "status": "skipped", "stage": "pending" },
-        { "name": "Integration validation", "status": "skipped", "stage": "pending" },
-        { "name": "Security/quality checks", "status": "skipped", "stage": "pending" }
-      ]
+        {
+          "name": "Functional testing",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765937100000,
+          "stop": 1765938300000
+        },
+        {
+          "name": "Integration validation",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765938300000,
+          "stop": 1765939500000
+        },
+        {
+          "name": "Security/quality checks",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765939500000,
+          "stop": 1765940700000
+        }
+      ],
+      "stop": 1765940700000,
+      "start": 1765937100000
     },
     {
       "name": "Ready for Testing (ITIL v4: Engage)",
       "status": "skipped",
       "stage": "pending",
       "steps": [
-        { "name": "UAT environment made available", "status": "skipped", "stage": "pending" },
-        { "name": "UAT instructions provided", "status": "skipped", "stage": "pending" },
-        { "name": "Acceptance recorded", "status": "skipped", "stage": "pending" }
-      ]
+        {
+          "name": "UAT environment made available",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765940760000,
+          "stop": 1765941960000
+        },
+        {
+          "name": "UAT instructions provided",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765941960000,
+          "stop": 1765943160000
+        },
+        {
+          "name": "Acceptance recorded",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765943160000,
+          "stop": 1765944360000
+        }
+      ],
+      "stop": 1765944360000,
+      "start": 1765940760000
     },
     {
       "name": "Completed & Supported (ITIL v4: Improve)",
       "status": "skipped",
       "stage": "pending",
       "steps": [
-        { "name": "Transitioned to support", "status": "skipped", "stage": "pending" },
-        { "name": "Monitoring/ownership established", "status": "skipped", "stage": "pending" },
-        { "name": "Improvement opportunities logged", "status": "skipped", "stage": "pending" }
-      ]
+        {
+          "name": "Transitioned to support",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765944420000,
+          "stop": 1765945620000
+        },
+        {
+          "name": "Monitoring/ownership established",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765945620000,
+          "stop": 1765946820000
+        },
+        {
+          "name": "Improvement opportunities logged",
+          "status": "skipped",
+          "stage": "pending",
+          "start": 1765946820000,
+          "stop": 1765948020000
+        }
+      ],
+      "stop": 1765948020000,
+      "start": 1765944420000
     }
   ],
   "start": 1765920000000,
