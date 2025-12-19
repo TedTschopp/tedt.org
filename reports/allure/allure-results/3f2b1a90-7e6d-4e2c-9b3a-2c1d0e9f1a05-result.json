@@ -246,26 +246,26 @@
     },
     {
       "name": "Ready for Testing (ITIL v4: Engage)",
-      "status": "skipped",
+      "status": "unknown",
       "stage": "pending",
       "steps": [
         {
           "name": "UAT environment made available",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765940760000,
           "stop": 1765941960000
         },
         {
           "name": "UAT instructions provided",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765941960000,
           "stop": 1765943160000
         },
         {
           "name": "Acceptance recorded",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765943160000,
           "stop": 1765944360000
@@ -276,26 +276,26 @@
     },
     {
       "name": "Completed & Supported (ITIL v4: Improve)",
-      "status": "skipped",
+      "status": "unknown",
       "stage": "pending",
       "steps": [
         {
           "name": "Transitioned to support",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765944420000,
           "stop": 1765945620000
         },
         {
           "name": "Monitoring/ownership established",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765945620000,
           "stop": 1765946820000
         },
         {
           "name": "Improvement opportunities logged",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765946820000,
           "stop": 1765948020000

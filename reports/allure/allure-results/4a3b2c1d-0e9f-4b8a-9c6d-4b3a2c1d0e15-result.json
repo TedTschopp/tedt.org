@@ -276,26 +276,26 @@
     },
     {
       "name": "Completed & Supported (ITIL v4: Improve)",
-      "status": "skipped",
+      "status": "unknown",
       "stage": "pending",
       "steps": [
         {
           "name": "Transitioned to support",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765944420000,
           "stop": 1765945620000
         },
         {
           "name": "Monitoring/ownership established",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765945620000,
           "stop": 1765946820000
         },
         {
           "name": "Improvement opportunities logged",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765946820000,
           "stop": 1765948020000

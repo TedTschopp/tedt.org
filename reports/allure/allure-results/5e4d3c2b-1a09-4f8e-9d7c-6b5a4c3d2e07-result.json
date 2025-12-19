@@ -156,26 +156,26 @@
     },
     {
       "name": "Being Designed (ITIL v4: Design & Transition)",
-      "status": "skipped",
+      "status": "unknown",
       "stage": "pending",
       "steps": [
         {
           "name": "Solution design produced",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765929780000,
           "stop": 1765930980000
         },
         {
           "name": "NFRs confirmed",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765930980000,
           "stop": 1765932180000
         },
         {
           "name": "Transition plan prepared",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765932180000,
           "stop": 1765933380000
@@ -186,26 +186,26 @@
     },
     {
       "name": "Coding (ITIL v4: Obtain/Build)",
-      "status": "skipped",
+      "status": "unknown",
       "stage": "pending",
       "steps": [
         {
           "name": "Implementation completed",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765933440000,
           "stop": 1765934640000
         },
         {
           "name": "Build artifacts produced",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765934640000,
           "stop": 1765935840000
         },
         {
           "name": "Pipelines executed",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765935840000,
           "stop": 1765937040000
@@ -216,26 +216,26 @@
     },
     {
       "name": "Validating & Testing (ITIL v4: Design & Transition)",
-      "status": "skipped",
+      "status": "unknown",
       "stage": "pending",
       "steps": [
         {
           "name": "Functional testing",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765937100000,
           "stop": 1765938300000
         },
         {
           "name": "Integration validation",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765938300000,
           "stop": 1765939500000
         },
         {
           "name": "Security/quality checks",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765939500000,
           "stop": 1765940700000
@@ -246,26 +246,26 @@
     },
     {
       "name": "Ready for Testing (ITIL v4: Engage)",
-      "status": "skipped",
+      "status": "unknown",
       "stage": "pending",
       "steps": [
         {
           "name": "UAT environment made available",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765940760000,
           "stop": 1765941960000
         },
         {
           "name": "UAT instructions provided",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765941960000,
           "stop": 1765943160000
         },
         {
           "name": "Acceptance recorded",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765943160000,
           "stop": 1765944360000
@@ -276,26 +276,26 @@
     },
     {
       "name": "Completed & Supported (ITIL v4: Improve)",
-      "status": "skipped",
+      "status": "unknown",
       "stage": "pending",
       "steps": [
         {
           "name": "Transitioned to support",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765944420000,
           "stop": 1765945620000
         },
         {
           "name": "Monitoring/ownership established",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765945620000,
           "stop": 1765946820000
         },
         {
           "name": "Improvement opportunities logged",
-          "status": "skipped",
+          "status": "unknown",
           "stage": "pending",
           "start": 1765946820000,
           "stop": 1765948020000
