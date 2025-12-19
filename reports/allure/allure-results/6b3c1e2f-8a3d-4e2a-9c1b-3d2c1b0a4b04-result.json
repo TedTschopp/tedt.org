@@ -1,23 +1,26 @@
 {
   "uuid": "6b3c1e2f-8a3d-4e2a-9c1b-3d2c1b0a4b04",
-  "name": "IT Service Pizza Tracker Lifecycle — Project 04",
-  "fullName": "it.pizza_tracker.lifecycle.project_04",
-  "historyId": "it.pizza_tracker.lifecycle.project_04.v1",
+  "name": "IT Service Pizza Tracker Lifecycle — Data Warehouse Modernization",
+  "fullName": "it.pizza_tracker.lifecycle.data_warehouse_modernization",
+  "historyId": "it.pizza_tracker.lifecycle.data_warehouse_modernization.v1",
   "status": "passed",
   "stage": "finished",
   "description": "Stage-based visibility into an IT product/service request lifecycle aligned to ITIL v4 using a Pizza Tracker model.",
   "labels": [
     { "name": "framework", "value": "allure2" },
-    { "name": "epic", "value": "IT Service Lifecycle" },
-    { "name": "feature", "value": "Pizza Tracker" },
-    { "name": "suite", "value": "ITIL v4 Aligned Tracker" },
+    { "name": "parentSuite", "value": "Data & Analytics Portfolio" },
+    { "name": "suite", "value": "Data Platform" },
+    { "name": "subSuite", "value": "Data Warehouse Modernization" },
+    { "name": "epic", "value": "Data & Analytics Portfolio" },
+    { "name": "feature", "value": "Data Platform" },
+    { "name": "story", "value": "Data Warehouse Modernization" },
     { "name": "tag", "value": "ITILv4" },
-    { "name": "tag", "value": "IT4IT-optional" }
+    { "name": "tag", "value": "Pizza Tracker" }
   ],
   "parameters": [
-    { "name": "service_name", "value": "Project 04" },
+    { "name": "service_name", "value": "Data Warehouse Modernization" },
     { "name": "request_id", "value": "REQ-0004" },
-    { "name": "requestor", "value": "TBD" },
+    { "name": "requestor", "value": "David Kim" },
     { "name": "overall_health", "value": "At Risk" },
     { "name": "current_status", "value": "Being Designed" }
   ],

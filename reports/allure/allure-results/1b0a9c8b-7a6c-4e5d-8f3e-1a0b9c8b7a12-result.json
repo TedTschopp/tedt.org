@@ -1,25 +1,28 @@
 {
   "uuid": "1b0a9c8b-7a6c-4e5d-8f3e-1a0b9c8b7a12",
-  "name": "IT Service Pizza Tracker Lifecycle — Project 12",
-  "fullName": "it.pizza_tracker.lifecycle.project_12",
-  "historyId": "it.pizza_tracker.lifecycle.project_12.v1",
+  "name": "IT Service Pizza Tracker Lifecycle — MLOps Pipeline Framework",
+  "fullName": "it.pizza_tracker.lifecycle.mlops_pipeline_framework",
+  "historyId": "it.pizza_tracker.lifecycle.mlops_pipeline_framework.v1",
   "status": "passed",
   "stage": "finished",
   "description": "Stage-based visibility into an IT product/service request lifecycle aligned to ITIL v4 using a Pizza Tracker model.",
   "labels": [
     { "name": "framework", "value": "allure2" },
-    { "name": "epic", "value": "IT Service Lifecycle" },
-    { "name": "feature", "value": "Pizza Tracker" },
-    { "name": "suite", "value": "ITIL v4 Aligned Tracker" },
+    { "name": "parentSuite", "value": "AI & Automation Portfolio" },
+    { "name": "suite", "value": "ML Infrastructure" },
+    { "name": "subSuite", "value": "MLOps Pipeline Framework" },
+    { "name": "epic", "value": "AI & Automation Portfolio" },
+    { "name": "feature", "value": "ML Infrastructure" },
+    { "name": "story", "value": "MLOps Pipeline Framework" },
     { "name": "tag", "value": "ITILv4" },
-    { "name": "tag", "value": "IT4IT-optional" }
+    { "name": "tag", "value": "Pizza Tracker" }
   ],
   "parameters": [
-    { "name": "service_name", "value": "Project 12" },
+    { "name": "service_name", "value": "MLOps Pipeline Framework" },
     { "name": "request_id", "value": "REQ-0012" },
-    { "name": "requestor", "value": "TBD" },
+    { "name": "requestor", "value": "Kevin O'Brien" },
     { "name": "overall_health", "value": "On Track" },
-    { "name": "current_status", "value": "Business Case Being Validated" }
+    { "name": "current_status", "value": "Being Designed" }
   ],
   "steps": [
     {

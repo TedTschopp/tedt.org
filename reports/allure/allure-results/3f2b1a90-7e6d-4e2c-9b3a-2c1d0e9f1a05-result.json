@@ -1,25 +1,28 @@
 {
   "uuid": "3f2b1a90-7e6d-4e2c-9b3a-2c1d0e9f1a05",
-  "name": "IT Service Pizza Tracker Lifecycle — Project 05",
-  "fullName": "it.pizza_tracker.lifecycle.project_05",
-  "historyId": "it.pizza_tracker.lifecycle.project_05.v1",
+  "name": "IT Service Pizza Tracker Lifecycle — Identity Management Platform",
+  "fullName": "it.pizza_tracker.lifecycle.identity_management_platform",
+  "historyId": "it.pizza_tracker.lifecycle.identity_management_platform.v1",
   "status": "passed",
   "stage": "finished",
   "description": "Stage-based visibility into an IT product/service request lifecycle aligned to ITIL v4 using a Pizza Tracker model.",
   "labels": [
     { "name": "framework", "value": "allure2" },
-    { "name": "epic", "value": "IT Service Lifecycle" },
-    { "name": "feature", "value": "Pizza Tracker" },
-    { "name": "suite", "value": "ITIL v4 Aligned Tracker" },
+    { "name": "parentSuite", "value": "Security Portfolio" },
+    { "name": "suite", "value": "Identity & Access" },
+    { "name": "subSuite", "value": "Identity Management Platform" },
+    { "name": "epic", "value": "Security Portfolio" },
+    { "name": "feature", "value": "Identity & Access" },
+    { "name": "story", "value": "Identity Management Platform" },
     { "name": "tag", "value": "ITILv4" },
-    { "name": "tag", "value": "IT4IT-optional" }
+    { "name": "tag", "value": "Pizza Tracker" }
   ],
   "parameters": [
-    { "name": "service_name", "value": "Project 05" },
+    { "name": "service_name", "value": "Identity Management Platform" },
     { "name": "request_id", "value": "REQ-0005" },
-    { "name": "requestor", "value": "TBD" },
+    { "name": "requestor", "value": "Jennifer Walsh" },
     { "name": "overall_health", "value": "On Track" },
-    { "name": "current_status", "value": "Coding" }
+    { "name": "current_status", "value": "Validating & Testing" }
   ],
   "steps": [
     {
