@@ -678,61 +678,96 @@
     const rainfallConfig = JSON.parse(JSON.stringify(mapConfig));
     rainfallConfig.palette = applyPalette(palette.rainfall);
 
-    // Generate rainfall map based on planet.c logic
-    const rainfallMap = [];
+    // First pass: calculate raw rainfall values (not color indices yet)
+    const rawRainfallMap = [];
+    let minRain = Infinity;
+    let maxRain = -Infinity;
+
+    // Find height range for normalization
+    let minHeight = Infinity;
+    let maxHeight = -Infinity;
     for (let row = 0; row < mapConfig.rows; row++) {
-      rainfallMap[row] = [];
-      // Calculate latitude as in planet.c: y = 1 at north pole, -1 at south pole, 0 at equator
+      for (let col = 0; col < mapConfig.cols; col++) {
+        if (heightMap[row][col] < minHeight) minHeight = heightMap[row][col];
+        if (heightMap[row][col] > maxHeight) maxHeight = heightMap[row][col];
+      }
+    }
+    const heightRange = maxHeight - minHeight || 1;
+
+    for (let row = 0; row < mapConfig.rows; row++) {
+      rawRainfallMap[row] = [];
+      
+      // Calculate latitude: 0 at equator, 1 at poles
+      const latitudeNorm = Math.abs(row / mapConfig.rows - 0.5) * 2;
+      // y goes from 1 (north pole) to -1 (south pole), 0 at equator
       const y = 1 - 2 * (row / (mapConfig.rows - 1));
-      const sun = Math.sqrt(1.0 - y * y);
+      const sun = Math.sqrt(1.0 - y * y); // Solar intensity, max at equator
+
       for (let col = 0; col < mapConfig.cols; col++) {
         const elevation = heightMap[row][col];
         const isWater = elevation < waterLevel;
-        // Calculate temperature as in planet.c
-        let temp;
+        
+        // Normalize elevation to 0-1 range
+        const elevNorm = (elevation - minHeight) / heightRange;
+        
+        // Calculate base temperature factor (similar to planet.c but normalized)
+        let tempFactor;
         if (isWater) {
-          temp = sun / 8.0 + elevation * 0.3;
+          tempFactor = sun * 0.8 + 0.2; // Water moderates temperature
         } else {
-          temp = sun / 8.0 - elevation * 1.2;
+          // Land: reduce temperature with elevation (lapse rate effect)
+          const elevAboveWater = Math.max(0, elevation - waterLevel) / heightRange;
+          tempFactor = sun * (1 - elevAboveWater * 0.5);
         }
-        // Calculate rain shadow (use existing function if available, else 0)
-        let rainShadow = 0;
-        if (typeof calculateRainShadow === 'function') {
-          // Use neighbors for rain shadow
-          const prevRow = (row - 1 + mapConfig.rows) % mapConfig.rows;
-          const prevCol = (col - 1 + mapConfig.cols) % mapConfig.cols;
-          rainShadow = calculateRainShadow(
-            { x: prevRow, y: col, z: elevation, h: heightMap[prevRow][col] },
-            { x: row, y: prevCol, z: elevation, h: heightMap[row][prevCol] },
-            { x: row, y: col, z: elevation, h: elevation },
-            150
-          );
-        }
-        // Calculate rainfall as in planet.c
+        
+        // Calculate rainfall based on multiple factors
+        // 1. Base rainfall from temperature (warm air holds more moisture)
+        let rain = tempFactor * 0.6;
+        
+        // 2. Latitude effect: ITCZ at equator (high rain), subtropical highs (dry), 
+        //    mid-latitude westerlies (moderate), polar (dry)
         const y2 = Math.abs(y) - 0.5;
-        let rain = temp * 0.65 + 0.1 - 0.011 / (y2 * y2 + 0.1);
-        rain += 0.03 * rainShadow;
-        if (rain < 0.0) rain = 0.0;
-        // Map rainfall to color indices
-        if (isWater) {
-          rainfallMap[row][col] =
-            Math.floor(rain * rainfallConfig.palette.n_sea) +
-            rainfallConfig.palette.sea_idx;
-        } else {
-          rainfallMap[row][col] =
-            Math.floor(rain * rainfallConfig.palette.n_land) +
-            rainfallConfig.palette.land_idx;
+        const latitudeEffect = 0.3 - 0.15 / (y2 * y2 + 0.1);
+        rain += latitudeEffect;
+        
+        // 3. Orographic effect: coastal areas and windward slopes get more rain
+        if (!isWater) {
+          // Check for nearby water (simple proximity check)
+          let nearWater = false;
+          const checkRadius = 3;
+          for (let dr = -checkRadius; dr <= checkRadius && !nearWater; dr++) {
+            for (let dc = -checkRadius; dc <= checkRadius && !nearWater; dc++) {
+              const checkRow = Math.max(0, Math.min(mapConfig.rows - 1, row + dr));
+              const checkCol = (col + dc + mapConfig.cols) % mapConfig.cols;
+              if (heightMap[checkRow][checkCol] < waterLevel) {
+                nearWater = true;
+              }
+            }
+          }
+          if (nearWater) {
+            rain += 0.15; // Coastal areas get more rain
+          }
+          
+          // High elevations can cause rain shadow or orographic lift
+          if (elevNorm > 0.6) {
+            rain *= 0.7; // Mountains can create dry conditions (simplified)
+          }
         }
+        
+        // Clamp and store raw value
+        rain = Math.max(0, Math.min(1, rain));
+        rawRainfallMap[row][col] = rain;
+        
+        // Track min/max for later normalization
+        if (rain < minRain) minRain = rain;
+        if (rain > maxRain) maxRain = rain;
       }
     }
 
-    // Set the rainfall map
-    rainfallConfig.map = rainfallMap;
-
-    // --- Smoothing pass: box blur for rainfall map ---
-    const smoothedRainfallMap = [];
+    // Second pass: smooth the raw rainfall values with box blur
+    const smoothedRawMap = [];
     for (let row = 0; row < mapConfig.rows; row++) {
-      smoothedRainfallMap[row] = [];
+      smoothedRawMap[row] = [];
       for (let col = 0; col < mapConfig.cols; col++) {
         let sum = 0;
         let count = 0;
@@ -740,18 +775,45 @@
         for (let dr = -1; dr <= 1; dr++) {
           for (let dc = -1; dc <= 1; dc++) {
             const r = row + dr;
-            const c = col + dc;
-            if (r >= 0 && r < mapConfig.rows && c >= 0 && c < mapConfig.cols) {
-              sum += rainfallMap[r][c];
+            const c = (col + dc + mapConfig.cols) % mapConfig.cols; // Wrap horizontally
+            if (r >= 0 && r < mapConfig.rows) {
+              sum += rawRainfallMap[r][c];
               count++;
             }
           }
         }
-        smoothedRainfallMap[row][col] = sum / count;
+        smoothedRawMap[row][col] = sum / count;
       }
     }
-    rainfallConfig.map = smoothedRainfallMap;
-    // --- End smoothing pass ---
+
+    // Third pass: normalize and convert to color indices
+    const rainfallMap = [];
+    const rainRange = maxRain - minRain || 1;
+    
+    for (let row = 0; row < mapConfig.rows; row++) {
+      rainfallMap[row] = [];
+      for (let col = 0; col < mapConfig.cols; col++) {
+        const elevation = heightMap[row][col];
+        const isWater = elevation < waterLevel;
+        
+        // Normalize rainfall to 0-1 using actual range
+        const rainNorm = (smoothedRawMap[row][col] - minRain) / rainRange;
+        
+        // Map to color indices
+        if (isWater) {
+          rainfallMap[row][col] =
+            Math.floor(rainNorm * (rainfallConfig.palette.n_sea - 1)) +
+            rainfallConfig.palette.sea_idx;
+        } else {
+          rainfallMap[row][col] =
+            Math.floor(rainNorm * (rainfallConfig.palette.n_land - 1)) +
+            rainfallConfig.palette.land_idx;
+        }
+      }
+    }
+
+    // Set the rainfall map
+    rainfallConfig.map = rainfallMap;
 
     // Create the rainfall image
     const rainfallImage = new_image(
