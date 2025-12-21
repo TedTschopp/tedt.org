@@ -3170,18 +3170,16 @@
   
   /**
    * Render square projection ice cover
-   * Uses getRotatedMapValue for proper rotation handling (same as World Map)
-   * Uses actual palette colors for each ice pixel
+   * Uses exact same logic as renderSquareProjection but only renders ice pixels
    */
   function renderSquareIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    for (let row = 0; row < imageConfig.width; row++) {
-      for (let col = 0; col < imageConfig.height; col++) {
-        // Get map value using rotation-aware function (same pattern as renderSquareProjection)
-        const mapValue = getRotatedMapValue(mapConfig, col, row);
-        
-        // Only show ice (map value >= ice_idx), use actual palette color
-        if (mapValue >= iceIdx) {
-          ctx.fillStyle = colorMap[mapValue];
+    // Exact same loop structure as renderSquareProjection
+    for (var row = 0; row < imageConfig.width; row++) {
+      for (var col = 0; col < imageConfig.height; col++) {
+        var pixelValue = getRotatedMapValue(mapConfig, col, row);
+        // Only difference: filter for ice pixels only
+        if (pixelValue >= iceIdx) {
+          ctx.fillStyle = colorMap[pixelValue];
           ctx.fillRect(row, col, 1, 1);
         }
       }
@@ -3190,36 +3188,47 @@
   
   /**
    * Render Mollweide projection ice cover
-   * Uses getRotatedMapValue for proper rotation handling
-   * Uses actual palette colors for each ice pixel
+   * Uses exact same logic as renderMollweideProjection but only renders ice pixels
    */
   function renderMollweideIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
-    
-    for (let row = 0; row < imageConfig.height; row++) {
-      sinFactors[row] = Math.sqrt(Math.sin((row / imageConfig.height) * Math.PI));
-      ellipseWidths[row] = Math.floor(wd2 * sinFactors[row]);
-      
-      const theta = Math.asin((2.8284271247 * (0.5 - row / imageConfig.height)) / Math.sqrt(2));
+    // Exact same precalculation as renderMollweideProjection
+    for (var row = 0; row < imageConfig.height; row++) {
+      sinFactors[row] = Math.sqrt(
+        Math.sin((row / imageConfig.height) * Math.PI)
+      );
+      ellipseWidths[row] = Math.floor(imageConfig.wd2 * sinFactors[row]);
+
+      var theta = Math.asin(
+        (2.8284271247 * (0.5 - row / imageConfig.height)) / Math.sqrt(2)
+      );
       rowPositions[row] = Math.floor(
-        (0.5 - Math.asin((2 * theta + Math.sin(2 * theta)) / Math.PI) / Math.PI) * mapConfig.rows
+        (0.5 -
+          Math.asin((2 * theta + Math.sin(2 * theta)) / Math.PI) / Math.PI) *
+          mapConfig.rows
       );
     }
-    
-    for (let row = 0; row < imageConfig.width; row++) {
-      for (let col = 0; col < imageConfig.height; col++) {
-        if (row > wd2 - ellipseWidths[col] && row < wd2 + ellipseWidths[col]) {
-          const mapCol = Math.floor((row - wd2) / sinFactors[col]) + (mapConfig.cd2 || Math.floor(mapConfig.cols / 2));
-          const mapRow = rowPositions[col];
-          
-          // Use getRotatedMapValue for proper rotation handling
-          const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
-          
-          // Only show ice, use actual palette color
-          if (mapValue >= iceIdx) {
-            ctx.fillStyle = colorMap[mapValue];
-            ctx.fillRect(row, col, 1, 1);
-          }
+
+    // Exact same pixel mapping loop as renderMollweideProjection
+    for (row = 0; row < imageConfig.width; row++) {
+      for (var col = 0; col < imageConfig.height; col++) {
+        var pixelValue = 0;
+
+        if (
+          row > imageConfig.wd2 - ellipseWidths[col] &&
+          row < imageConfig.wd2 + ellipseWidths[col]
+        ) {
+          pixelValue = getRotatedMapValue(
+            mapConfig,
+            rowPositions[col],
+            Math.floor((row - imageConfig.wd2) / sinFactors[col]) +
+              mapConfig.cd2
+          );
+        }
+
+        // Only difference: filter for ice pixels only
+        if (pixelValue >= iceIdx) {
+          ctx.fillStyle = colorMap[pixelValue];
+          ctx.fillRect(row, col, 1, 1);
         }
       }
     }
@@ -3227,31 +3236,36 @@
   
   /**
    * Render Sinusoidal projection ice cover
-   * Uses getRotatedMapValue for proper rotation handling
-   * Uses actual palette colors for each ice pixel
+   * Uses exact same logic as renderSinusoidalProjection but only renders ice pixels
    */
   function renderSinusoidalIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
-    
-    for (let row = 0; row < imageConfig.height; row++) {
+    // Exact same precalculation as renderSinusoidalProjection
+    for (var row = 0; row < imageConfig.height; row++) {
       sinFactors[row] = Math.sin((row / imageConfig.height) * Math.PI);
-      ellipseWidths[row] = Math.floor(wd2 * sinFactors[row]);
+      ellipseWidths[row] = Math.floor(imageConfig.wd2 * sinFactors[row]);
     }
-    
-    for (let row = 0; row < imageConfig.width; row++) {
-      for (let col = 0; col < imageConfig.height; col++) {
-        if (row > wd2 - ellipseWidths[col] && row < wd2 + ellipseWidths[col]) {
-          const mapCol = Math.floor((row - wd2) / sinFactors[col]) + (mapConfig.cd2 || Math.floor(mapConfig.cols / 2));
-          const mapRow = col;
-          
-          // Use getRotatedMapValue for proper rotation handling
-          const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
-          
-          // Only show ice, use actual palette color
-          if (mapValue >= iceIdx) {
-            ctx.fillStyle = colorMap[mapValue];
-            ctx.fillRect(row, col, 1, 1);
-          }
+
+    // Exact same pixel mapping loop as renderSinusoidalProjection
+    for (row = 0; row < imageConfig.width; row++) {
+      for (var col = 0; col < imageConfig.height; col++) {
+        var pixelValue = 0;
+
+        if (
+          row > imageConfig.wd2 - ellipseWidths[col] &&
+          row < imageConfig.wd2 + ellipseWidths[col]
+        ) {
+          pixelValue = getRotatedMapValue(
+            mapConfig,
+            col,
+            Math.floor((row - imageConfig.wd2) / sinFactors[col]) +
+              mapConfig.cd2
+          );
+        }
+
+        // Only difference: filter for ice pixels only
+        if (pixelValue >= iceIdx) {
+          ctx.fillStyle = colorMap[pixelValue];
+          ctx.fillRect(row, col, 1, 1);
         }
       }
     }
@@ -3259,27 +3273,36 @@
   
   /**
    * Render Mercator projection ice cover
-   * Uses getRotatedMapValue for proper rotation handling
-   * Uses actual palette colors for each ice pixel
+   * Uses exact same logic as renderMercatorProjection but only renders ice pixels
    */
   function renderMercatorIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    for (let row = 0; row < imageConfig.height; row++) {
-      rowPositions[row] = Math.floor(
-        (0.5 - Math.atan(Math.sinh((0.5 - row / imageConfig.height) * Math.PI)) / Math.PI) * mapConfig.rows
+    // Exact same precalculations as renderMercatorProjection
+    for (var row = 0; row < imageConfig.width; row++) {
+      columnPositions[row] = Math.floor(
+        (row / imageConfig.width) * mapConfig.cols
       );
     }
-    
-    for (let row = 0; row < imageConfig.width; row++) {
-      for (let col = 0; col < imageConfig.height; col++) {
-        const mapCol = Math.floor((row / imageConfig.width) * mapConfig.cols);
-        const mapRow = rowPositions[col];
-        
-        // Use getRotatedMapValue for proper rotation handling
-        const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
-        
-        // Only show ice, use actual palette color
-        if (mapValue >= iceIdx) {
-          ctx.fillStyle = colorMap[mapValue];
+
+    for (row = 0; row < imageConfig.height; row++) {
+      rowPositions[row] = Math.floor(
+        (0.5 -
+          Math.atan(Math.sinh((0.5 - row / imageConfig.height) * Math.PI)) /
+            Math.PI) *
+          mapConfig.rows
+      );
+    }
+
+    // Exact same pixel mapping loop as renderMercatorProjection
+    for (row = 0; row < imageConfig.width; row++) {
+      for (var col = 0; col < imageConfig.height; col++) {
+        var pixelValue = getRotatedMapValue(
+          mapConfig,
+          rowPositions[col],
+          columnPositions[row]
+        );
+        // Only difference: filter for ice pixels only
+        if (pixelValue >= iceIdx) {
+          ctx.fillStyle = colorMap[pixelValue];
           ctx.fillRect(row, col, 1, 1);
         }
       }
@@ -3288,36 +3311,34 @@
   
   /**
    * Render Transverse Mercator projection ice cover
-   * Uses getRotatedMapValue for proper rotation handling
-   * Uses actual palette colors for each ice pixel
+   * Uses exact same logic as renderTransverseMercatorProjection but only renders ice pixels
    */
   function renderTransMercIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    const hd2 = imageConfig.hd2 || Math.floor(imageConfig.height / 2);
-    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
-    const scale = 0.5;
-    
-    for (let screenY = 0; screenY < imageConfig.height; screenY++) {
-      for (let screenX = 0; screenX < imageConfig.width; screenX++) {
-        const x = (screenX - wd2) / (wd2 * scale);
-        const y = (screenY - hd2) / (hd2 * scale);
-        
-        if (x * x + y * y > 4) continue;
-        
-        const lon = Math.atan2(Math.sinh(x), Math.cos(y));
-        const lat = Math.asin(Math.sin(y) / Math.cosh(x));
-        
-        const mapCol = Math.floor(((lon / Math.PI + 1) / 2) * mapConfig.cols) % mapConfig.cols;
-        const mapRow = Math.floor((0.5 - lat / Math.PI) * mapConfig.rows);
-        
-        if (mapRow < 0 || mapRow >= mapConfig.rows) continue;
-        
-        // Use getRotatedMapValue for proper rotation handling
-        const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
-        
-        // Only show ice, use actual palette color
-        if (mapValue >= iceIdx) {
-          ctx.fillStyle = colorMap[mapValue];
-          ctx.fillRect(screenX, screenY, 1, 1);
+    // Exact same loop structure and calculations as renderTransverseMercatorProjection
+    for (var row = 0; row < imageConfig.width; row++) {
+      for (var col = 0; col < imageConfig.height; col++) {
+        var angle = (row / imageConfig.width) * 2 * Math.PI;
+        var lat = 4 * (col / imageConfig.height - 0.5);
+        var lon = Math.atan(Math.sinh(lat) / Math.cos(angle));
+        var halfPi = Math.PI / 2;
+
+        if (angle > halfPi && angle <= 3 * halfPi) {
+          lon += Math.PI;
+        }
+
+        var pixelValue = getRotatedMapValue(
+          mapConfig,
+          Math.floor(
+            (0.5 - Math.asin(Math.sin(angle) / Math.cosh(lat)) / Math.PI) *
+              mapConfig.rows
+          ),
+          Math.floor((lon / (2 * Math.PI)) * mapConfig.cols)
+        );
+
+        // Only difference: filter for ice pixels only
+        if (pixelValue >= iceIdx) {
+          ctx.fillStyle = colorMap[pixelValue];
+          ctx.fillRect(row, col, 1, 1);
         }
       }
     }
@@ -3325,18 +3346,60 @@
   
   /**
    * Render Icosahedral projection ice cover
-   * Uses getRotatedMapValue for proper rotation handling
-   * Uses actual palette colors for each ice pixel
+   * Uses exact same logic as renderIcosahedralProjection but only renders ice pixels
    */
   function renderIcosahedralIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    for (let row = 0; row < imageConfig.width; row++) {
-      for (let col = 0; col < imageConfig.height; col++) {
-        // Use getRotatedMapValue for proper rotation handling (same pattern as square)
-        const mapValue = getRotatedMapValue(mapConfig, col, row);
-        
-        // Only show ice, use actual palette color
-        if (mapValue >= iceIdx) {
-          ctx.fillStyle = colorMap[mapValue];
+    // Exact same loop structure and calculations as renderIcosahedralProjection
+    for (var row = 0; row < imageConfig.width; row++) {
+      for (var col = 0; col < imageConfig.height; col++) {
+        var colIndex = Math.floor(row / imageConfig.col_w);
+        var rowIndex = Math.floor(col / imageConfig.row_h);
+        var colOffset = Math.floor(row - colIndex * imageConfig.col_w);
+        var rowOffset = Math.floor(
+          0.5773502692 * Math.floor(col - rowIndex * imageConfig.row_h)
+        );
+        let pixelIndex = -1;
+
+        if ((rowIndex + colIndex) % 2 == 0) {
+          colOffset = Math.floor(imageConfig.col_w - colOffset);
+        }
+
+        // Complex icosahedral mapping logic (identical to World Map)
+        if (rowIndex == 0) {
+          if (colIndex < 10 && colOffset < rowOffset) {
+            pixelIndex = Math.floor(
+              (colOffset / rowOffset) * imageConfig.col_w
+            );
+          }
+        } else if (rowIndex == 1) {
+          if (colIndex == 0) {
+            if (colOffset > rowOffset) {
+              pixelIndex = colOffset;
+            }
+          } else if (colIndex < 10) {
+            pixelIndex = colOffset;
+          } else if (colIndex == 10 && colOffset < rowOffset) {
+            pixelIndex = colOffset;
+          }
+        } else if (rowIndex == 2 && colIndex > 0 && colOffset > rowOffset) {
+          colOffset = Math.floor(imageConfig.col_w - colOffset);
+          rowOffset = Math.floor(imageConfig.col_w - rowOffset);
+          pixelIndex = Math.floor((colOffset / rowOffset) * imageConfig.col_w);
+          pixelIndex = Math.floor(imageConfig.col_w - pixelIndex);
+        }
+
+        var pixelValue = 0;
+        if (pixelIndex > -1) {
+          if ((rowIndex + colIndex) % 2 == 0) {
+            pixelIndex = Math.floor(imageConfig.col_w - pixelIndex);
+          }
+          pixelIndex += Math.floor(colIndex * imageConfig.col_w);
+          pixelValue = getRotatedMapValue(mapConfig, col, pixelIndex);
+        }
+
+        // Only difference: filter for ice pixels only
+        if (pixelValue >= iceIdx) {
+          ctx.fillStyle = colorMap[pixelValue];
           ctx.fillRect(row, col, 1, 1);
         }
       }
