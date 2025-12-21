@@ -306,6 +306,12 @@
       const initialIceYears = 10000;
       cellData.calculateIceCoverage(initialIceYears);
       
+      // Calculate biomes using Whittaker diagram (after ice so we can override with ice biome)
+      cellData.calculateBiomes();
+      
+      // Calculate Holdridge Life Zones (alternative classification system)
+      cellData.calculateHoldridgeLifeZones();
+      
       // Log ice stats
       const iceStats = cellData.getIceStats();
       console.log('Ice coverage stats:', iceStats);
@@ -482,6 +488,22 @@
       temperatureMap
     );
 
+    // Generate and render the Whittaker biome map
+    generateAndRenderBiomeMap(
+      finalMap,
+      imageConfig,
+      originalHeightMap,
+      waterLevel
+    );
+
+    // Generate and render the Holdridge Life Zones map
+    generateAndRenderHoldridgeMap(
+      finalMap,
+      imageConfig,
+      originalHeightMap,
+      waterLevel
+    );
+
     // Generate and render the lake map
     generateAndRenderLakeMap(
       finalMap,
@@ -524,6 +546,13 @@
         
         // Recalculate ice coverage with full simulation time
         cellData.calculateIceCoverage(timeYears);
+        
+        // Recalculate biomes after ice changes
+        cellData.calculateBiomes();
+        
+        // Recalculate Holdridge Life Zones
+        cellData.calculateHoldridgeLifeZones();
+        
         const iceStats = cellData.getIceStats();
         console.log('Post-erosion ice stats:', iceStats);
         
@@ -1199,6 +1228,148 @@
     
     ctx.putImageData(imageData, 0, 0);
     console.log("Evaporation map complete");
+  }
+
+  /**
+   * Render the biome map using CellDataModel
+   * Based on Whittaker diagram from planet.c (temperature × rainfall)
+   *
+   * @param {object} mapConfig - The map configuration (used for compatibility)
+   * @param {object} imageConfig - The image configuration
+   */
+  function generateAndRenderBiomeMap(
+    mapConfig,
+    imageConfig,
+    heightMap,
+    waterLevel
+  ) {
+    console.log("Rendering biome map from CellDataModel...");
+
+    const canvas = $('biome-map');
+    if (!canvas) {
+      console.warn('biome-map canvas not found');
+      return;
+    }
+    
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    // Check if cell data is available
+    if (!window.worldCellData) {
+      ctx.fillStyle = '#888';
+      ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Cell data not available', 10, 20);
+      return;
+    }
+    
+    const cellData = window.worldCellData;
+    
+    // Ensure biomes are calculated
+    if (!cellData.biomeColors || cellData.biomeColors.length === 0) {
+      cellData.calculateBiomes();
+    }
+    
+    // Create image data
+    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
+    const data = imageData.data;
+    
+    // Render based on cell data
+    const scaleX = cellData.cols / imageConfig.width;
+    const scaleY = cellData.rows / imageConfig.height;
+    
+    for (let y = 0; y < imageConfig.height; y++) {
+      for (let x = 0; x < imageConfig.width; x++) {
+        // Map pixel to cell
+        const col = Math.floor(x * scaleX);
+        const row = Math.floor(y * scaleY);
+        const cell = row * cellData.cols + col;
+        
+        const idx = (y * imageConfig.width + x) * 4;
+        
+        // Get pre-calculated biome colors
+        data[idx] = cellData.biomeColors[cell * 3];         // R
+        data[idx + 1] = cellData.biomeColors[cell * 3 + 1]; // G
+        data[idx + 2] = cellData.biomeColors[cell * 3 + 2]; // B
+        data[idx + 3] = 255; // Alpha
+      }
+    }
+    
+    ctx.putImageData(imageData, 0, 0);
+    console.log("Whittaker Biome Model complete");
+  }
+
+  /**
+   * Render the Holdridge Life Zones map using CellDataModel
+   * Based on biotemperature and precipitation with PET ratio
+   *
+   * @param {object} mapConfig - The map configuration (used for compatibility)
+   * @param {object} imageConfig - The image configuration
+   */
+  function generateAndRenderHoldridgeMap(
+    mapConfig,
+    imageConfig,
+    heightMap,
+    waterLevel
+  ) {
+    console.log("Rendering Holdridge Life Zones from CellDataModel...");
+
+    const canvas = $('holdridge-map');
+    if (!canvas) {
+      console.warn('holdridge-map canvas not found');
+      return;
+    }
+    
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    // Check if cell data is available
+    if (!window.worldCellData) {
+      ctx.fillStyle = '#888';
+      ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Cell data not available', 10, 20);
+      return;
+    }
+    
+    const cellData = window.worldCellData;
+    
+    // Ensure Holdridge zones are calculated
+    if (!cellData.holdridgeColors || cellData.holdridgeColors.length === 0) {
+      cellData.calculateHoldridgeLifeZones();
+    }
+    
+    // Create image data
+    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
+    const data = imageData.data;
+    
+    // Render based on cell data
+    const scaleX = cellData.cols / imageConfig.width;
+    const scaleY = cellData.rows / imageConfig.height;
+    
+    for (let y = 0; y < imageConfig.height; y++) {
+      for (let x = 0; x < imageConfig.width; x++) {
+        // Map pixel to cell
+        const col = Math.floor(x * scaleX);
+        const row = Math.floor(y * scaleY);
+        const cell = row * cellData.cols + col;
+        
+        const idx = (y * imageConfig.width + x) * 4;
+        
+        // Get pre-calculated Holdridge colors
+        data[idx] = cellData.holdridgeColors[cell * 3];         // R
+        data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1]; // G
+        data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2]; // B
+        data[idx + 3] = 255; // Alpha
+      }
+    }
+    
+    ctx.putImageData(imageData, 0, 0);
+    console.log("Holdridge Life Zones complete");
   }
 
   /**

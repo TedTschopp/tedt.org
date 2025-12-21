@@ -568,6 +568,109 @@
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
 
+      <h2>Whittaker Biome Model</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        Whittaker diagram classification based on temperature and rainfall (from planet.c).
+      </p>
+      <div style="margin: 0 2em 1em; display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px;">
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(255,255,255); border: 1px solid #ccc;"></span> Ice/Polar</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(210,210,210); border: 1px solid #ccc;"></span> Tundra</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(105,155,120); border: 1px solid #ccc;"></span> Boreal</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(155,215,170); border: 1px solid #ccc;"></span> Temperate Forest</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(170,195,200); border: 1px solid #ccc;"></span> Temperate Rain</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(250,215,165); border: 1px solid #ccc;"></span> Grassland</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(225,155,100); border: 1px solid #ccc;"></span> Steppe</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(185,150,160); border: 1px solid #ccc;"></span> Woodland</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(220,195,175); border: 1px solid #ccc;"></span> Desert</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(130,190,25); border: 1px solid #ccc;"></span> Tropical Forest</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(110,160,170); border: 1px solid #ccc;"></span> Tropical Rain</span>
+        <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(65,105,170); border: 1px solid #ccc;"></span> Ocean</span>
+      </div>
+      <canvas id="biome-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+
+      <h2>Holdridge Life Zones</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        Classification based on biotemperature (mean annual temp with &lt;0°C and &gt;30°C treated as dormant) 
+        and annual precipitation, using the PET (Potential Evapotranspiration) ratio.
+      </p>
+      <div style="margin: 0 2em 1em; font-size: 10px; line-height: 1.4;">
+        <!-- Tropical (>24°C) -->
+        <div style="margin-bottom: 6px;">
+          <strong>Tropical (&gt;24°C):</strong>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(0,102,51); border: 1px solid #999;"></span> Rain Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(0,128,64); border: 1px solid #999;"></span> Wet Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(34,153,84); border: 1px solid #999;"></span> Moist Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(102,170,85); border: 1px solid #999;"></span> Dry Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(170,170,85); border: 1px solid #999;"></span> Thorn Woodland</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(230,220,170); border: 1px solid #999;"></span> Desert</span>
+        </div>
+        <!-- Subtropical (18-24°C) -->
+        <div style="margin-bottom: 6px;">
+          <strong>Subtropical (18-24°C):</strong>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(0,110,70); border: 1px solid #999;"></span> Rain Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(34,139,87); border: 1px solid #999;"></span> Wet Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(85,170,110); border: 1px solid #999;"></span> Moist Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(153,187,102); border: 1px solid #999;"></span> Dry Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(190,180,120); border: 1px solid #999;"></span> Thorn Woodland</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(235,225,180); border: 1px solid #999;"></span> Desert</span>
+        </div>
+        <!-- Warm Temperate (12-18°C) -->
+        <div style="margin-bottom: 6px;">
+          <strong>Warm Temperate (12-18°C):</strong>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(34,102,68); border: 1px solid #999;"></span> Rain Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(60,130,90); border: 1px solid #999;"></span> Wet Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(102,160,120); border: 1px solid #999;"></span> Moist Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(170,190,130); border: 1px solid #999;"></span> Dry Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(200,200,150); border: 1px solid #999;"></span> Steppe</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(235,230,190); border: 1px solid #999;"></span> Desert</span>
+        </div>
+        <!-- Cool Temperate (6-12°C) -->
+        <div style="margin-bottom: 6px;">
+          <strong>Cool Temperate (6-12°C):</strong>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(40,90,80); border: 1px solid #999;"></span> Rain Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(70,120,110); border: 1px solid #999;"></span> Wet Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(110,150,140); border: 1px solid #999;"></span> Moist Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(170,190,170); border: 1px solid #999;"></span> Dry Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(210,210,190); border: 1px solid #999;"></span> Steppe</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(235,235,215); border: 1px solid #999;"></span> Desert</span>
+        </div>
+        <!-- Boreal (3-6°C) -->
+        <div style="margin-bottom: 6px;">
+          <strong>Boreal (3-6°C):</strong>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(45,80,90); border: 1px solid #999;"></span> Rain Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(70,110,130); border: 1px solid #999;"></span> Wet Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(110,140,160); border: 1px solid #999;"></span> Moist Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(160,180,190); border: 1px solid #999;"></span> Dry Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(200,210,210); border: 1px solid #999;"></span> Steppe</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(230,235,235); border: 1px solid #999;"></span> Desert</span>
+        </div>
+        <!-- Subpolar (1.5-3°C) -->
+        <div style="margin-bottom: 6px;">
+          <strong>Subpolar (1.5-3°C):</strong>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(160,190,200); border: 1px solid #999;"></span> Wet Tundra</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(190,210,220); border: 1px solid #999;"></span> Moist Tundra</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(210,225,235); border: 1px solid #999;"></span> Tundra</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(225,235,240); border: 1px solid #999;"></span> Dry Tundra</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(230,240,245); border: 1px solid #999;"></span> Steppe</span>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(240,245,248); border: 1px solid #999;"></span> Desert</span>
+        </div>
+        <!-- Polar (<1.5°C) -->
+        <div style="margin-bottom: 6px;">
+          <strong>Polar (&lt;1.5°C):</strong>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(245,245,245); border: 1px solid #999;"></span> Polar Desert</span>
+        </div>
+        <!-- Ocean -->
+        <div>
+          <strong>Ocean:</strong>
+          <span style="display: inline-flex; align-items: center; gap: 2px; margin-left: 4px;"><span style="width: 12px; height: 12px; background: rgb(65,105,170); border: 1px solid #999;"></span> Ocean</span>
+        </div>
+      </div>
+      <canvas id="holdridge-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+
       <div id="simulation-status" style="margin: 20px 0; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif;">
         <output id="sim_time_readout" style="font-weight: 600; color: #333;">Simulation: Ready</output>
         <span id="sim_progress_readout" style="margin-left: 12px; color: #666;"></span>
@@ -774,21 +877,34 @@
           lines.push(`Cell ${info.cell} (${info.status})`);
           lines.push('');
           
-          // Layer stack (bottom to top) with elevation and thickness
+          // Layer stack (bottom to top) - always show all layers
           lines.push('─── Layer Stack ───');
           lines.push(`  Bedrock surface: ${info.bedrockSurface.toFixed(1)} m`);
           lines.push(`  + Sediment: ${info.sedimentThickness.toFixed(1)} m → Ground: ${info.groundElevation.toFixed(1)} m`);
+          
+          // Water layer (always show, indicate type or "none")
+          const waterLabel = info.waterType ? `+ ${info.waterType}` : '+ Water';
           if (info.waterThickness > 0.01) {
-            const waterLabel = info.waterType ? `+ ${info.waterType}` : '+ Water';
             lines.push(`  ${waterLabel}: ${info.waterThickness.toFixed(1)} m → Surface: ${info.waterElevation.toFixed(1)} m`);
+          } else {
+            lines.push(`  + Water: 0.0 m`);
           }
+          
+          // Ice layer (always show, indicate type or "none")
+          const iceLabel = info.iceType ? `+ ${info.iceType}` : '+ Ice';
           if (info.iceThickness > 0.01) {
-            const iceLabel = info.iceType ? `+ ${info.iceType}` : '+ Ice';
             lines.push(`  ${iceLabel}: ${info.iceThickness.toFixed(1)} m → Top: ${info.iceElevation.toFixed(1)} m`);
+          } else {
+            lines.push(`  + Ice: 0.0 m`);
           }
+          
+          // Snow layer (always show)
           if (info.snowThickness > 0.01) {
             lines.push(`  + Snow: ${info.snowThickness.toFixed(1)} m → Top: ${info.snowElevation.toFixed(1)} m`);
+          } else {
+            lines.push(`  + Snow: 0.0 m`);
           }
+          
           lines.push('');
           lines.push(`Overall Elevation: ${info.surface.toFixed(1)} m`);
           lines.push(`Sea Level: ${info.seaLevel.toFixed(1)} m (${info.surfaceVsSea >= 0 ? '+' : ''}${info.surfaceVsSea.toFixed(1)} m vs sea)`);
@@ -798,6 +914,9 @@
           lines.push(`Temperature: ${info.temperature.toFixed(1)}°C (warmest: ${info.warmestMonthTemp.toFixed(1)}°C)`);
           lines.push(`Rainfall: ${info.rainfall.toFixed(0)} mm/year`);
           lines.push(`Evaporation: ${info.evaporation.toFixed(0)} mm/year`);
+          lines.push(`Whittaker Biome: ${info.biomeName}`);
+          lines.push(`Holdridge Zone: ${info.holdridgeZoneName}`);
+          lines.push(`  (Biotemperature: ${info.biotemperature.toFixed(1)}°C, PET Ratio: ${info.petRatio.toFixed(2)})`);
           lines.push('');
           
           // Mass balance

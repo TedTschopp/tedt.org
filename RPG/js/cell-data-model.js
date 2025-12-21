@@ -175,6 +175,12 @@ class CellDataModel {
         this.evaporationColors = new Uint8Array(this.cellCount);       // Evaporation palette indices
         this.snowfallColors = new Uint8Array(this.cellCount);          // Snowfall/perennial snow palette indices
         this.terrainColors = new Uint8Array(this.cellCount);           // Terrain-only (no water)
+        this.biomeIndex = new Uint8Array(this.cellCount);              // Whittaker biome type index
+        this.biomeColors = new Uint8Array(this.cellCount * 3);         // RGB colors for Whittaker biome map
+        this.holdridgeIndex = new Uint8Array(this.cellCount);          // Holdridge life zone index
+        this.holdridgeColors = new Uint8Array(this.cellCount * 3);     // RGB colors for Holdridge map
+        this.biotemperature = new Float32Array(this.cellCount);        // Holdridge biotemperature (°C)
+        this.petRatio = new Float32Array(this.cellCount);              // PET / Precipitation ratio
         
         // ====================================================================
         // SIMULATION STATE
@@ -749,6 +755,275 @@ class CellDataModel {
     }
     
     /**
+     * Calculate biomes using Whittaker diagram (temperature × rainfall)
+     * Based on planet.c by Torben Mogensen
+     * 
+     * The Whittaker diagram maps annual temperature and precipitation
+     * to biome types. We normalize our values to match the 45×45 lookup table.
+     */
+    calculateBiomes() {
+        const seaLevel = this.config.seaLevel;
+        const biomeTypes = CellDataModel.BIOME_TYPES;
+        const diagram = CellDataModel.BIOME_DIAGRAM;
+        
+        // Find actual temperature and rainfall ranges for normalization
+        let tempMin = Infinity, tempMax = -Infinity;
+        let rainMin = Infinity, rainMax = -Infinity;
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            if (this.cellElevation[cell] >= seaLevel) {
+                tempMin = Math.min(tempMin, this.temperature[cell]);
+                tempMax = Math.max(tempMax, this.temperature[cell]);
+                rainMin = Math.min(rainMin, this.rainfall[cell]);
+                rainMax = Math.max(rainMax, this.rainfall[cell]);
+            }
+        }
+        
+        console.log(`Biome calculation - Temp range: ${tempMin.toFixed(1)}°C to ${tempMax.toFixed(1)}°C`);
+        console.log(`Biome calculation - Rainfall range: ${rainMin.toFixed(0)} to ${rainMax.toFixed(0)} mm/yr`);
+        
+        // planet.c uses normalized 0-1 values scaled by 300 with offsets
+        // tt = rain * 300 - 9   (0 = dry, 44 = wet)
+        // rr = temp * 300 + 10  (0 = cold, 44 = hot)
+        // We need to map our real values to 0-1 ranges first
+        
+        // Temperature: typically -40°C to +40°C → 0 to 1
+        // Rainfall: typically 0 to 4000 mm/yr → 0 to 1
+        const tempNormMin = -40;  // °C for norm=0
+        const tempNormMax = 40;   // °C for norm=1
+        const rainNormMin = 0;    // mm/yr for norm=0
+        const rainNormMax = 4000; // mm/yr for norm=1
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            const elevation = this.cellElevation[cell];
+            
+            // Ocean cells get water biome
+            if (elevation < seaLevel) {
+                const oceanType = biomeTypes['X'];
+                this.biomeIndex[cell] = oceanType.index;
+                this.biomeColors[cell * 3] = oceanType.color[0];
+                this.biomeColors[cell * 3 + 1] = oceanType.color[1];
+                this.biomeColors[cell * 3 + 2] = oceanType.color[2];
+                continue;
+            }
+            
+            // Normalize temperature to 0-1 range
+            const temp = this.temperature[cell];
+            const tempNorm = Math.max(0, Math.min(1, 
+                (temp - tempNormMin) / (tempNormMax - tempNormMin)
+            ));
+            
+            // Normalize rainfall to 0-1 range
+            const rain = this.rainfall[cell];
+            const rainNorm = Math.max(0, Math.min(1,
+                (rain - rainNormMin) / (rainNormMax - rainNormMin)
+            ));
+            
+            // Convert to diagram indices (matching planet.c logic)
+            // tt = rainfall axis (row in diagram), rr = temperature axis (column)
+            const tt = Math.min(44, Math.max(0, Math.floor(rainNorm * 300 - 9)));
+            const rr = Math.min(44, Math.max(0, Math.floor(tempNorm * 300 + 10)));
+            
+            // Look up biome character from Whittaker diagram
+            const biomeChar = diagram[tt][rr];
+            const biome = biomeTypes[biomeChar] || biomeTypes['G']; // Default to grassland
+            
+            // Override with ice if there's significant ice coverage
+            let finalBiome = biome;
+            if (this.glacialIceThickness[cell] > 50 || this.hasPerennialSnow[cell]) {
+                finalBiome = biomeTypes['I'];
+            }
+            
+            this.biomeIndex[cell] = finalBiome.index;
+            this.biomeColors[cell * 3] = finalBiome.color[0];
+            this.biomeColors[cell * 3 + 1] = finalBiome.color[1];
+            this.biomeColors[cell * 3 + 2] = finalBiome.color[2];
+        }
+        
+        // Log biome distribution
+        const biomeCounts = {};
+        for (const [char, info] of Object.entries(biomeTypes)) {
+            biomeCounts[info.name] = 0;
+        }
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            const name = this.getBiomeName(cell);
+            biomeCounts[name] = (biomeCounts[name] || 0) + 1;
+        }
+        console.log('Whittaker biome distribution:', biomeCounts);
+    }
+    
+    /**
+     * Get Whittaker biome name for a cell
+     */
+    getBiomeName(cell) {
+        const biomeTypes = CellDataModel.BIOME_TYPES;
+        const index = this.biomeIndex[cell];
+        
+        for (const [char, biome] of Object.entries(biomeTypes)) {
+            if (biome.index === index) {
+                return biome.name;
+            }
+        }
+        return 'Unknown';
+    }
+    
+    /**
+     * Calculate Holdridge Life Zones
+     * Based on biotemperature and precipitation with PET ratio
+     * 
+     * Biotemperature: Mean annual temp with values <0°C and >30°C set to 0
+     * (plants are dormant outside this range)
+     * 
+     * PET (Potential Evapotranspiration) = Biotemperature × 58.93 mm
+     * PET Ratio = PET / Annual Precipitation
+     * 
+     * Uses lookup table from user-provided Holdridge classification:
+     * Thermal Belts: Polar, Subpolar, Boreal, Cool Temperate, Warm Temperate, Subtropical, Tropical
+     * Humidity Provinces: Superhumid, Perhumid, Humid, Subhumid, Semiarid, Arid, Perarid
+     */
+    calculateHoldridgeLifeZones() {
+        const seaLevel = this.config.seaLevel;
+        const table = CellDataModel.HOLDRIDGE_TABLE;
+        const colors = CellDataModel.HOLDRIDGE_COLORS;
+        
+        console.log('Calculating Holdridge Life Zones...');
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            const elevation = this.cellElevation[cell];
+            
+            // Ocean cells
+            if (elevation < seaLevel) {
+                const oceanColor = colors['Ocean'];
+                this.holdridgeIndex[cell] = 255; // Special ocean index
+                this.holdridgeColors[cell * 3] = oceanColor[0];
+                this.holdridgeColors[cell * 3 + 1] = oceanColor[1];
+                this.holdridgeColors[cell * 3 + 2] = oceanColor[2];
+                this.biotemperature[cell] = 0;
+                this.petRatio[cell] = 0;
+                continue;
+            }
+            
+            // Calculate biotemperature
+            // Mean annual temp with values <0°C and >30°C treated as 0
+            // (approximation: we don't have monthly data, so use annual mean adjusted)
+            const meanTemp = this.temperature[cell];
+            let bioTemp;
+            
+            if (meanTemp <= 0) {
+                // Cold: biotemperature approaches 0
+                bioTemp = Math.max(0, meanTemp + 5) / 5; // Gradual transition
+            } else if (meanTemp >= 30) {
+                // Hot: biotemperature capped near 30
+                bioTemp = 30 - (meanTemp - 30) * 0.5; // Gradual reduction above 30
+                bioTemp = Math.max(24, bioTemp);
+            } else {
+                // Normal range: biotemperature ≈ mean annual temperature
+                bioTemp = meanTemp;
+            }
+            
+            this.biotemperature[cell] = bioTemp;
+            
+            // Calculate PET (Potential Evapotranspiration)
+            // Holdridge formula: PET = biotemperature × 58.93 (mm)
+            const pet = bioTemp * 58.93;
+            
+            // Get annual precipitation
+            const precipitation = Math.max(1, this.rainfall[cell]); // Avoid division by zero
+            
+            // Calculate PET ratio
+            const petRatio = pet / precipitation;
+            this.petRatio[cell] = petRatio;
+            
+            // Determine thermal belt from biotemperature
+            // 0=Polar, 1=Subpolar, 2=Boreal, 3=Cool Temperate, 4=Warm Temperate, 5=Subtropical, 6=Tropical
+            let thermalBelt;
+            if (bioTemp < 1.5) {
+                thermalBelt = 0; // Polar (<1.5°C)
+            } else if (bioTemp < 3) {
+                thermalBelt = 1; // Subpolar (1.5-3°C)
+            } else if (bioTemp < 6) {
+                thermalBelt = 2; // Boreal (3-6°C)
+            } else if (bioTemp < 12) {
+                thermalBelt = 3; // Cool Temperate (6-12°C)
+            } else if (bioTemp < 18) {
+                thermalBelt = 4; // Warm Temperate (12-18°C)
+            } else if (bioTemp < 24) {
+                thermalBelt = 5; // Subtropical (18-24°C)
+            } else {
+                thermalBelt = 6; // Tropical (>24°C)
+            }
+            
+            // Determine humidity province from PET ratio
+            // 0=Superhumid, 1=Perhumid, 2=Humid, 3=Subhumid, 4=Semiarid, 5=Arid, 6=Perarid
+            let humidityProvince;
+            if (petRatio < 0.25) {
+                humidityProvince = 0; // Superhumid
+            } else if (petRatio < 0.5) {
+                humidityProvince = 1; // Perhumid
+            } else if (petRatio < 1) {
+                humidityProvince = 2; // Humid
+            } else if (petRatio < 2) {
+                humidityProvince = 3; // Subhumid
+            } else if (petRatio < 4) {
+                humidityProvince = 4; // Semiarid
+            } else if (petRatio < 8) {
+                humidityProvince = 5; // Arid
+            } else {
+                humidityProvince = 6; // Perarid
+            }
+            
+            // Look up zone name from table
+            let zoneName = table[thermalBelt][humidityProvince];
+            
+            // Override with polar desert if significant ice coverage
+            if (this.glacialIceThickness[cell] > 50 || this.hasPerennialSnow[cell]) {
+                zoneName = 'Polar Desert';
+            }
+            
+            // Store index as encoded thermal belt * 7 + humidity province
+            this.holdridgeIndex[cell] = thermalBelt * 7 + humidityProvince;
+            
+            // Get color for this zone
+            const color = colors[zoneName] || colors['Polar Desert'];
+            this.holdridgeColors[cell * 3] = color[0];
+            this.holdridgeColors[cell * 3 + 1] = color[1];
+            this.holdridgeColors[cell * 3 + 2] = color[2];
+        }
+        
+        // Log zone distribution
+        const zoneCounts = {};
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            const zoneName = this.getHoldridgeZoneName(cell);
+            zoneCounts[zoneName] = (zoneCounts[zoneName] || 0) + 1;
+        }
+        console.log('Holdridge Life Zone distribution:', zoneCounts);
+    }
+    
+    /**
+     * Get Holdridge Life Zone name for a cell
+     */
+    getHoldridgeZoneName(cell) {
+        const index = this.holdridgeIndex[cell];
+        
+        // Ocean
+        if (index === 255) {
+            return 'Ocean';
+        }
+        
+        // Decode thermal belt and humidity province
+        const thermalBelt = Math.floor(index / 7);
+        const humidityProvince = index % 7;
+        
+        const table = CellDataModel.HOLDRIDGE_TABLE;
+        if (thermalBelt >= 0 && thermalBelt < table.length &&
+            humidityProvince >= 0 && humidityProvince < table[thermalBelt].length) {
+            return table[thermalBelt][humidityProvince];
+        }
+        
+        return 'Unknown';
+    }
+    
+    /**
      * Calculate snowfall and perennial snow coverage using mass balance model
      * Based on: Perennial snow exists where annual snowfall accumulation >= ablation
      * 
@@ -916,7 +1191,173 @@ class CellDataModel {
         
         // Density for thickness calculations
         ICE_DENSITY: 917,        // kg/m³
-        WATER_DENSITY: 1000      // kg/m³
+        WATER_DENSITY: 1000,     // kg/m³
+        
+        // Equilibrium constraints (realistic ice sheet limits)
+        MAX_ICE_THICKNESS: 4000, // Maximum ice thickness (meters) - Antarctic max ~4800m
+        ICE_FLOW_FACTOR: 0.001,  // Ice flow/spreading reduces accumulation at edges
+        EQUILIBRIUM_TIME: 50000  // Years to reach near-equilibrium
+    };
+    
+    /**
+     * Biome types based on Whittaker diagram (planet.c style)
+     * Keys are single character codes used in the lookup table
+     */
+    static BIOME_TYPES = {
+        'I': { index: 0,  name: 'Ice/Polar Desert',     color: [255, 255, 255] },
+        'T': { index: 1,  name: 'Tundra',               color: [210, 210, 210] },
+        'G': { index: 2,  name: 'Grassland',            color: [250, 215, 165] },
+        'B': { index: 3,  name: 'Boreal Forest',        color: [105, 155, 120] },
+        'D': { index: 4,  name: 'Desert',               color: [220, 195, 175] },
+        'S': { index: 5,  name: 'Steppe/Savanna',       color: [225, 155, 100] },
+        'F': { index: 6,  name: 'Temperate Forest',     color: [155, 215, 170] },
+        'R': { index: 7,  name: 'Temperate Rainforest', color: [170, 195, 200] },
+        'W': { index: 8,  name: 'Woodland/Shrubland',   color: [185, 150, 160] },
+        'E': { index: 9,  name: 'Tropical Forest',      color: [130, 190, 25]  },
+        'O': { index: 10, name: 'Tropical Rainforest',  color: [110, 160, 170] },
+        'X': { index: 11, name: 'Ocean',                color: [65, 105, 170]  }  // Water
+    };
+    
+    /**
+     * Whittaker biome diagram - 45x45 lookup table
+     * Rows = rainfall (0=dry to 44=wet), Columns = temperature (0=cold to 44=hot)
+     * From planet.c by Torben Mogensen
+     */
+    static BIOME_DIAGRAM = [
+        "IIITTTTTGGGGGGGGDDDDDDDDDDDDDDDDDDDDDDDDDDDDD",
+        "IIITTTTTGGGGGGGGDDDDGGDSDDSDDDDDDDDDDDDDDDDDD",
+        "IITTTTTTTTTBGGGGGGGGGGGSSSSSSDDDDDDDDDDDDDDDD",
+        "IITTTTTTTTBBBBBBGGGGGGGSSSSSSSSSWWWWWWWDDDDDD",
+        "IITTTTTTTTBBBBBBGGGGGGGSSSSSSSSSSWWWWWWWWWWDD",
+        "IIITTTTTTTBBBBBBFGGGGGGSSSSSSSSSSSWWWWWWWWWWW",
+        "IIIITTTTTTBBBBBBFFGGGGGSSSSSSSSSSSWWWWWWWWWWW",
+        "IIIIITTTTTBBBBBBFFFFGGGSSSSSSSSSSSWWWWWWWWWWW",
+        "IIIIITTTTTBBBBBBBFFFFGGGSSSSSSSSSSSWWWWWWWWWW",
+        "IIIIIITTTTBBBBBBBFFFFFFGGGSSSSSSSSWWWWWWWWWWW",
+        "IIIIIIITTTBBBBBBBFFFFFFFFGGGSSSSSSWWWWWWWWWWW",
+        "IIIIIIIITTBBBBBBBFFFFFFFFFFGGSSSSSWWWWWWWWWWW",
+        "IIIIIIIIITBBBBBBBFFFFFFFFFFFFFSSSSWWWWWWWWWWW",
+        "IIIIIIIIIITBBBBBBFFFFFFFFFFFFFFFSSEEEWWWWWWWW",
+        "IIIIIIIIIITBBBBBBFFFFFFFFFFFFFFFFFFEEEEEEWWWW",
+        "IIIIIIIIIIIBBBBBBFFFFFFFFFFFFFFFFFFEEEEEEEEWW",
+        "IIIIIIIIIIIBBBBBBRFFFFFFFFFFFFFFFFFEEEEEEEEEE",
+        "IIIIIIIIIIIIBBBBBBRFFFFFFFFFFFFFFFFEEEEEEEEEE",
+        "IIIIIIIIIIIIIBBBBBRRRFFFFFFFFFFFFFFEEEEEEEEEE",
+        "IIIIIIIIIIIIIIIBBBRRRRRFFFFFFFFFFFFEEEEEEEEEE",
+        "IIIIIIIIIIIIIIIIIBRRRRRRRFFFFFFFFFFEEEEEEEEEE",
+        "IIIIIIIIIIIIIIIIIRRRRRRRRRRFFFFFFFFEEEEEEEEEE",
+        "IIIIIIIIIIIIIIIIIIRRRRRRRRRRRRFFFFFEEEEEEEEEE",
+        "IIIIIIIIIIIIIIIIIIIRRRRRRRRRRRRRFRREEEEEEEEEE",
+        "IIIIIIIIIIIIIIIIIIIIIRRRRRRRRRRRRRRRREEEEEEEE",
+        "IIIIIIIIIIIIIIIIIIIIIIIRRRRRRRRRRRRRROOEEEEEE",
+        "IIIIIIIIIIIIIIIIIIIIIIIIRRRRRRRRRRRROOOOOEEEE",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIRRRRRRRRRROOOOOOEEE",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIRRRRRRRRROOOOOOOEE",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIRRRRRRRROOOOOOOEE",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIRRRRRRROOOOOOOOE",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIRRRRROOOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIRROOOOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIROOOOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIROOOOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOO",
+        "IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIOOOOOOO"
+    ];
+    
+    /**
+     * Holdridge Life Zone System
+     * Based on biotemperature (mean annual temp with <0°C and >30°C clamped to 0)
+     * and annual precipitation on logarithmic scales.
+     * 
+     * Latitudinal belts (biotemperature ranges):
+     *   Polar: 0-1.5°C, Subpolar: 1.5-3°C, Boreal: 3-6°C, 
+     *   Cool Temperate: 6-12°C, Warm Temperate: 12-18°C,
+     *   Subtropical: 18-24°C, Tropical: >24°C
+     * 
+     * Thermal Belts (Biotemperature ranges):
+     *   Polar: <1.5°C, Subpolar: 1.5-3°C, Boreal: 3-6°C, Cool Temperate: 6-12°C,
+     *   Warm Temperate: 12-18°C, Subtropical: 18-24°C, Tropical: >24°C
+     * 
+     * Humidity Provinces (PET ratio = PET/Precipitation):
+     *   Superhumid: <0.25, Perhumid: 0.25-0.5, Humid: 0.5-1, Subhumid: 1-2,
+     *   Semiarid: 2-4, Arid: 4-8, Perarid: ≥8
+     */
+    
+    // Holdridge Life Zone lookup table [thermal belt][humidity province]
+    // Thermal belts: 0=Polar, 1=Subpolar, 2=Boreal, 3=Cool Temp, 4=Warm Temp, 5=Subtropical, 6=Tropical
+    // Humidity: 0=Superhumid, 1=Perhumid, 2=Humid, 3=Subhumid, 4=Semiarid, 5=Arid, 6=Perarid
+    static HOLDRIDGE_TABLE = [
+        // Polar (<1.5°C) - all humidity provinces = Polar Desert
+        ['Polar Desert', 'Polar Desert', 'Polar Desert', 'Polar Desert', 'Polar Desert', 'Polar Desert', 'Polar Desert'],
+        // Subpolar (1.5-3°C)
+        ['Subpolar Wet Tundra', 'Subpolar Moist Tundra', 'Subpolar Tundra', 'Subpolar Dry Tundra', 'Subpolar Steppe', 'Subpolar Desert', 'Subpolar Desert'],
+        // Boreal (3-6°C)
+        ['Boreal Rain Forest', 'Boreal Wet Forest', 'Boreal Moist Forest', 'Boreal Dry Forest', 'Boreal Steppe', 'Boreal Desert', 'Boreal Desert'],
+        // Cool Temperate (6-12°C)
+        ['Cool Temperate Rain Forest', 'Cool Temperate Wet Forest', 'Cool Temperate Moist Forest', 'Cool Temperate Dry Forest', 'Cool Temperate Steppe', 'Cool Temperate Desert', 'Cool Temperate Desert'],
+        // Warm Temperate (12-18°C)
+        ['Warm Temperate Rain Forest', 'Warm Temperate Wet Forest', 'Warm Temperate Moist Forest', 'Warm Temperate Dry Forest', 'Warm Temperate Steppe', 'Warm Temperate Desert', 'Warm Temperate Desert'],
+        // Subtropical (18-24°C)
+        ['Subtropical Rain Forest', 'Subtropical Wet Forest', 'Subtropical Moist Forest', 'Subtropical Dry Forest', 'Subtropical Thorn Woodland', 'Subtropical Desert', 'Subtropical Desert'],
+        // Tropical (>24°C)
+        ['Tropical Rain Forest', 'Tropical Wet Forest', 'Tropical Moist Forest', 'Tropical Dry Forest', 'Tropical Thorn Woodland', 'Tropical Desert', 'Tropical Desert']
+    ];
+    
+    // Color palette for each unique zone name
+    static HOLDRIDGE_COLORS = {
+        // Tropical
+        'Tropical Rain Forest':            [0, 102, 51],
+        'Tropical Wet Forest':             [0, 128, 64],
+        'Tropical Moist Forest':           [34, 153, 84],
+        'Tropical Dry Forest':             [102, 170, 85],
+        'Tropical Thorn Woodland':         [170, 170, 85],
+        'Tropical Desert':                 [230, 220, 170],
+        // Subtropical
+        'Subtropical Rain Forest':         [0, 110, 70],
+        'Subtropical Wet Forest':          [34, 139, 87],
+        'Subtropical Moist Forest':        [85, 170, 110],
+        'Subtropical Dry Forest':          [153, 187, 102],
+        'Subtropical Thorn Woodland':      [190, 180, 120],
+        'Subtropical Desert':              [235, 225, 180],
+        // Warm Temperate
+        'Warm Temperate Rain Forest':      [34, 102, 68],
+        'Warm Temperate Wet Forest':       [60, 130, 90],
+        'Warm Temperate Moist Forest':     [102, 160, 120],
+        'Warm Temperate Dry Forest':       [170, 190, 130],
+        'Warm Temperate Steppe':           [200, 200, 150],
+        'Warm Temperate Desert':           [235, 230, 190],
+        // Cool Temperate
+        'Cool Temperate Rain Forest':      [40, 90, 80],
+        'Cool Temperate Wet Forest':       [70, 120, 110],
+        'Cool Temperate Moist Forest':     [110, 150, 140],
+        'Cool Temperate Dry Forest':       [170, 190, 170],
+        'Cool Temperate Steppe':           [210, 210, 190],
+        'Cool Temperate Desert':           [235, 235, 215],
+        // Boreal
+        'Boreal Rain Forest':              [45, 80, 90],
+        'Boreal Wet Forest':               [70, 110, 130],
+        'Boreal Moist Forest':             [110, 140, 160],
+        'Boreal Dry Forest':               [160, 180, 190],
+        'Boreal Steppe':                   [200, 210, 210],
+        'Boreal Desert':                   [230, 235, 235],
+        // Subpolar
+        'Subpolar Wet Tundra':             [160, 190, 200],
+        'Subpolar Moist Tundra':           [190, 210, 220],
+        'Subpolar Tundra':                 [210, 225, 235],
+        'Subpolar Dry Tundra':             [225, 235, 240],
+        'Subpolar Steppe':                 [230, 240, 245],
+        'Subpolar Desert':                 [240, 245, 248],
+        // Polar
+        'Polar Desert':                    [245, 245, 245],
+        // Ocean
+        'Ocean':                           [65, 105, 170]
     };
     
     /**
@@ -992,11 +1433,18 @@ class CellDataModel {
     
     /**
      * Update ice and snow thickness based on mass balance over time
-     * Positive balance → accumulate snow → compact to ice
-     * Negative balance → melt ice and snow
+     * Uses equilibrium model: ice thickness approaches a steady-state value
+     * determined by mass balance, not by cumulative accumulation.
+     * 
+     * Real ice sheets reach equilibrium where accumulation = ablation + ice flow.
+     * Equilibrium thickness scales roughly with sqrt(accumulation rate).
+     * We model this by calculating equilibrium thickness and interpolating toward it.
      */
     _updateIceThickness(yearsElapsed, config) {
         const seaLevel = this.config.seaLevel;
+        // Time constant for approaching equilibrium (years)
+        // Larger = slower approach to equilibrium
+        const TAU = config.EQUILIBRIUM_TIME || 50000;
         
         for (let cell = 0; cell < this.cellCount; cell++) {
             const elevation = this.cellElevation[cell];
@@ -1014,12 +1462,7 @@ class CellDataModel {
             // Get annual mass balance (mm water equivalent per year)
             const annualBalance = this.snowMassBalance[cell];
             
-            // Convert to ice-equivalent thickness change (meters)
-            // mm w.e./yr × years × (water density / ice density) / 1000
-            const iceEquivalent = annualBalance * yearsElapsed * 
-                (config.WATER_DENSITY / config.ICE_DENSITY) / 1000;
-            
-            // Track cumulative balance
+            // Track cumulative balance (for stats/classification)
             this.cumulativeMassBalance[cell] += annualBalance * yearsElapsed;
             
             // Track consecutive years with positive balance
@@ -1032,19 +1475,41 @@ class CellDataModel {
                 this.yearsPositiveBalance[cell] = 0;
             }
             
-            if (iceEquivalent > 0) {
-                // ACCUMULATION: Add to snow layer
-                this.snowDepth[cell] += iceEquivalent;
+            // Current total ice thickness
+            const currentIce = this.glacialIceThickness[cell] + 
+                              this.snowDepth[cell] * config.SNOW_TO_ICE_RATIO;
+            
+            if (annualBalance > 0) {
+                // ACCUMULATION zone - calculate equilibrium thickness
+                // Ice sheet thickness scales as sqrt(accumulation) in simple models
+                // h_eq = k * sqrt(balance) where k is tuned for realistic values
+                // With k=30: 100mm/yr → 300m, 500mm/yr → 670m, 2000mm/yr → 1340m
+                // Higher elevations and colder temps can support thicker ice
+                const tempFactor = Math.max(0.5, 1 - this.temperature[cell] / 20);
+                const k = 30 * tempFactor; // Scale factor for equilibrium thickness
                 
-                // Compact excess snow to glacial ice (firn process)
-                if (this.snowDepth[cell] > config.MAX_SNOW_DEPTH) {
-                    const excessSnow = this.snowDepth[cell] - config.MAX_SNOW_DEPTH;
-                    this.snowDepth[cell] = config.MAX_SNOW_DEPTH;
-                    this.glacialIceThickness[cell] += excessSnow * config.SNOW_TO_ICE_RATIO;
-                }
+                const equilibriumThickness = Math.min(
+                    config.MAX_ICE_THICKNESS,
+                    k * Math.sqrt(annualBalance)
+                );
+                
+                // Approach equilibrium exponentially: h(t) = h_eq * (1 - e^(-t/τ))
+                // For numerical stability with large yearsElapsed:
+                const approachFactor = 1 - Math.exp(-yearsElapsed / TAU);
+                
+                // New thickness interpolates from current toward equilibrium
+                const newIce = currentIce + (equilibriumThickness - currentIce) * approachFactor;
+                
+                // Split between glacial ice and snow (most as ice, some as surface snow)
+                this.glacialIceThickness[cell] = Math.max(0, newIce - config.MAX_SNOW_DEPTH);
+                this.snowDepth[cell] = Math.min(newIce, config.MAX_SNOW_DEPTH);
+                
             } else {
-                // ABLATION: First melt snow, then ice
-                let meltRemaining = -iceEquivalent;
+                // ABLATION zone - melt based on negative balance
+                // Convert ablation to meters per simulation period
+                const meltAmount = -annualBalance * yearsElapsed * 
+                    (config.WATER_DENSITY / config.ICE_DENSITY) / 1000;
+                let meltRemaining = meltAmount;
                 
                 // Melt snow first
                 if (this.snowDepth[cell] > 0) {
@@ -1521,6 +1986,14 @@ class CellDataModel {
             snowMassBalance: this.snowMassBalance[cell],
             cumulativeMassBalance: this.cumulativeMassBalance[cell],
             yearsPositiveBalance: this.yearsPositiveBalance[cell],
+            // Whittaker Biome
+            biomeIndex: this.biomeIndex[cell],
+            biomeName: this.getBiomeName(cell),
+            // Holdridge Life Zone
+            holdridgeIndex: this.holdridgeIndex[cell],
+            holdridgeZoneName: this.getHoldridgeZoneName(cell),
+            biotemperature: this.biotemperature[cell],
+            petRatio: this.petRatio[cell],
             // Other
             isCoastal: this.isCoastal[cell] === 1,
             lakeIndex: this.lakeIndex[cell]
