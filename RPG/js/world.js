@@ -435,6 +435,28 @@
       waterLevel
     );
 
+    // Run time simulation and generate erosion-based maps if enabled
+    if ($("enable_time_simulation") && $("enable_time_simulation").checked) {
+      const timeYears = $("time_passage").intValue() * 1000000; // Convert to years
+      const showRivers = $("show_rivers").checked;
+      const showCoastlines = $("show_coastlines").checked;
+      
+      generateAndRenderErosionMaps(
+        finalMap,
+        imageConfig,
+        originalHeightMap,
+        waterLevel,
+        timeYears,
+        showRivers,
+        showCoastlines
+      );
+      
+      timing = markTiming(timing, "erosion");
+    } else {
+      // Clear the erosion-related canvases when simulation is disabled
+      clearErosionCanvases(imageConfig);
+    }
+
     timing = markTiming(timing, "image");
 
     // Update timing information in the UI
@@ -2534,6 +2556,485 @@
     ellipseWidths = [],
     rowPositions = [],
     columnPositions = [];
+
+  /**
+   * Generate and render erosion-based maps (river, coastline, terrain)
+   * Uses the ErosionSimulation class from erosion-simulation.js
+   * @param {object} mapConfig - The map configuration
+   * @param {object} imageConfig - The image configuration
+   * @param {Array} heightMap - The original height map data
+   * @param {number} waterLevel - The water level
+   * @param {number} timeYears - Time to simulate in years
+   * @param {boolean} showRivers - Whether to show rivers
+   * @param {boolean} showCoastlines - Whether to show coastlines
+   */
+  function generateAndRenderErosionMaps(
+    mapConfig,
+    imageConfig,
+    heightMap,
+    waterLevel,
+    timeYears,
+    showRivers,
+    showCoastlines
+  ) {
+    console.log(`Running erosion simulation for ${timeYears / 1000000} million years...`);
+    
+    // Check if ErosionSimulation is available
+    if (typeof window.ErosionSimulation === 'undefined') {
+      console.error('ErosionSimulation not found. Make sure erosion-simulation.js is loaded.');
+      return;
+    }
+    
+    // Find min/max heights for normalization
+    let minHeight = Infinity, maxHeight = -Infinity;
+    for (let row = 0; row < mapConfig.rows; row++) {
+      for (let col = 0; col < mapConfig.cols; col++) {
+        if (heightMap[row][col] < minHeight) minHeight = heightMap[row][col];
+        if (heightMap[row][col] > maxHeight) maxHeight = heightMap[row][col];
+      }
+    }
+    const heightRange = maxHeight - minHeight || 1;
+    const normalizedWaterLevel = (waterLevel - minHeight) / heightRange;
+    
+    // Create erosion simulation
+    const erosion = new window.ErosionSimulation(heightMap, {
+      seaLevel: normalizedWaterLevel,
+      rainfall: 0.3,
+      pixelLength: 125,
+      fluvialTransportCoefficient: 60,
+      sedimentationDistance: 25000
+    });
+    
+    // Run simulation with progress updates
+    const stepSize = 50000; // 50,000 years per step
+    const numSteps = Math.ceil(timeYears / stepSize);
+    
+    for (let i = 0; i < numSteps; i++) {
+      erosion.step(stepSize);
+      if (i % 10 === 0) {
+        console.log(`Erosion step ${i + 1}/${numSteps} (${((i + 1) / numSteps * 100).toFixed(1)}%)`);
+      }
+    }
+    
+    console.log('Erosion simulation complete.');
+    
+    // Get river segments
+    const riverSegments = erosion.getRiverSegments(0.005);
+    console.log(`Found ${riverSegments.length} river segments`);
+    
+    // Get coastline segments
+    const coastlineSegments = erosion.getCoastlineSegments();
+    console.log(`Found ${coastlineSegments.length} coastline segments`);
+    
+    // Render river map
+    if (showRivers) {
+      renderRiverMap(
+        mapConfig,
+        imageConfig,
+        heightMap,
+        waterLevel,
+        riverSegments
+      );
+    } else {
+      clearCanvas('river-map', imageConfig);
+    }
+    
+    // Render coastline map
+    if (showCoastlines) {
+      renderCoastlineMap(
+        mapConfig,
+        imageConfig,
+        heightMap,
+        waterLevel,
+        coastlineSegments
+      );
+    } else {
+      clearCanvas('coastline-map', imageConfig);
+    }
+    
+    // Render terrain map with erosion
+    // Use the erosion simulation's normalized sea level for correct water/land coloring
+    const erodedSeaLevel = erosion.getNormalizedSeaLevel();
+    console.log(`Eroded sea level: ${erodedSeaLevel.toFixed(3)}`);
+    
+    renderTerrainMap(
+      mapConfig,
+      imageConfig,
+      erosion.getNormalizedElevationMap(),
+      erodedSeaLevel
+    );
+    
+    // Render the final combined map (terrain + coastlines + rivers)
+    renderFinalMap(
+      mapConfig,
+      imageConfig,
+      erosion.getNormalizedElevationMap(),
+      erodedSeaLevel,
+      coastlineSegments,
+      riverSegments,
+      showCoastlines,
+      showRivers
+    );
+  }
+  
+  /**
+   * Render the river map
+   */
+  function renderRiverMap(mapConfig, imageConfig, heightMap, waterLevel, riverSegments) {
+    console.log('Rendering river map...');
+    
+    const canvas = $('river-map');
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    // First render base terrain
+    renderBaseTerrainToContext(ctx, mapConfig, imageConfig, heightMap, waterLevel);
+    
+    // Then overlay rivers
+    if (typeof window.renderRivers === 'function' && riverSegments.length > 0) {
+      window.renderRivers(
+        ctx,
+        riverSegments,
+        imageConfig.width,
+        imageConfig.height,
+        mapConfig.cols,
+        mapConfig.rows,
+        {
+          color: 'rgba(30, 80, 180, 0.9)',
+          minWidth: 0.5,
+          maxWidth: 4,
+          useDischargeWidth: true
+        }
+      );
+    }
+  }
+  
+  /**
+   * Render the coastline map
+   */
+  function renderCoastlineMap(mapConfig, imageConfig, heightMap, waterLevel, coastlineSegments) {
+    console.log('Rendering coastline map...');
+    
+    const canvas = $('coastline-map');
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    // First render base terrain
+    renderBaseTerrainToContext(ctx, mapConfig, imageConfig, heightMap, waterLevel);
+    
+    // Then overlay coastlines
+    if (typeof window.renderCoastlines === 'function' && coastlineSegments.length > 0) {
+      window.renderCoastlines(
+        ctx,
+        coastlineSegments,
+        imageConfig.width,
+        imageConfig.height,
+        mapConfig.cols,
+        mapConfig.rows,
+        {
+          seaColor: 'rgba(0, 30, 80, 0.8)',
+          lakeColor: 'rgba(30, 80, 120, 0.7)',
+          lineWidth: 2
+        }
+      );
+    }
+  }
+  
+  /**
+   * Render the terrain map with erosion effects
+   */
+  function renderTerrainMap(mapConfig, imageConfig, elevationMap, waterLevel) {
+    console.log('Rendering terrain map with erosion...');
+    
+    const canvas = $('terrain-map');
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    const scaleX = imageConfig.width / mapConfig.cols;
+    const scaleY = imageConfig.height / mapConfig.rows;
+    
+    // Render each cell with a vibrant, visible palette
+    for (let row = 0; row < elevationMap.length; row++) {
+      for (let col = 0; col < elevationMap[row].length; col++) {
+        const elev = elevationMap[row][col];
+        let r, g, b;
+        
+        if (elev < waterLevel) {
+          // Water - deep blue to light blue gradient
+          const depth = (waterLevel - elev) / waterLevel;
+          // Deep water: dark blue (0, 20, 80), shallow: light blue (100, 180, 220)
+          r = Math.floor(100 - depth * 100);
+          g = Math.floor(180 - depth * 160);
+          b = Math.floor(220 - depth * 140);
+        } else {
+          // Land - use a more vibrant elevation-based palette
+          const landElev = (elev - waterLevel) / (1 - waterLevel);
+          
+          if (landElev < 0.15) {
+            // Coastal lowland - bright green
+            const t = landElev / 0.15;
+            r = Math.floor(34 + t * 30);
+            g = Math.floor(139 + t * 20);
+            b = Math.floor(34 + t * 30);
+          } else if (landElev < 0.3) {
+            // Low hills - yellow-green
+            const t = (landElev - 0.15) / 0.15;
+            r = Math.floor(64 + t * 90);
+            g = Math.floor(159 + t * 40);
+            b = Math.floor(64 - t * 30);
+          } else if (landElev < 0.45) {
+            // Mid elevation - golden/tan
+            const t = (landElev - 0.3) / 0.15;
+            r = Math.floor(154 + t * 50);
+            g = Math.floor(199 - t * 40);
+            b = Math.floor(34 + t * 50);
+          } else if (landElev < 0.6) {
+            // Highlands - orange-brown
+            const t = (landElev - 0.45) / 0.15;
+            r = Math.floor(204 + t * 30);
+            g = Math.floor(159 - t * 50);
+            b = Math.floor(84 - t * 30);
+          } else if (landElev < 0.75) {
+            // High mountains - reddish brown to gray
+            const t = (landElev - 0.6) / 0.15;
+            r = Math.floor(234 - t * 60);
+            g = Math.floor(109 + t * 40);
+            b = Math.floor(54 + t * 70);
+          } else if (landElev < 0.9) {
+            // Alpine - gray rock
+            const t = (landElev - 0.75) / 0.15;
+            r = Math.floor(174 + t * 40);
+            g = Math.floor(149 + t * 50);
+            b = Math.floor(124 + t * 60);
+          } else {
+            // Snow caps - white
+            const t = (landElev - 0.9) / 0.1;
+            r = Math.floor(214 + t * 41);
+            g = Math.floor(199 + t * 56);
+            b = Math.floor(184 + t * 71);
+          }
+        }
+        
+        ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+        ctx.fillRect(
+          Math.floor(col * scaleX),
+          Math.floor(row * scaleY),
+          Math.ceil(scaleX),
+          Math.ceil(scaleY)
+        );
+      }
+    }
+  }
+  
+  /**
+   * Render the final combined map with terrain, coastlines, and rivers
+   * This combines all erosion visualization layers into a single view
+   */
+  function renderFinalMap(mapConfig, imageConfig, elevationMap, waterLevel, coastlineSegments, riverSegments, showCoastlines, showRivers) {
+    console.log('Rendering final combined map...');
+    
+    const canvas = $('final-map');
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    const scaleX = imageConfig.width / mapConfig.cols;
+    const scaleY = imageConfig.height / mapConfig.rows;
+    
+    // Layer 1: Render terrain base with the same vibrant palette as terrain map
+    for (let row = 0; row < elevationMap.length; row++) {
+      for (let col = 0; col < elevationMap[row].length; col++) {
+        const elev = elevationMap[row][col];
+        let r, g, b;
+        
+        if (elev < waterLevel) {
+          // Water - deep blue to light blue gradient
+          const depth = (waterLevel - elev) / waterLevel;
+          r = Math.floor(100 - depth * 100);
+          g = Math.floor(180 - depth * 160);
+          b = Math.floor(220 - depth * 140);
+        } else {
+          // Land - vibrant elevation-based palette
+          const landElev = (elev - waterLevel) / (1 - waterLevel);
+          
+          if (landElev < 0.15) {
+            // Coastal lowland - bright green
+            const t = landElev / 0.15;
+            r = Math.floor(34 + t * 30);
+            g = Math.floor(139 + t * 20);
+            b = Math.floor(34 + t * 30);
+          } else if (landElev < 0.3) {
+            // Low hills - yellow-green
+            const t = (landElev - 0.15) / 0.15;
+            r = Math.floor(64 + t * 90);
+            g = Math.floor(159 + t * 40);
+            b = Math.floor(64 - t * 30);
+          } else if (landElev < 0.45) {
+            // Mid elevation - golden/tan
+            const t = (landElev - 0.3) / 0.15;
+            r = Math.floor(154 + t * 50);
+            g = Math.floor(199 - t * 40);
+            b = Math.floor(34 + t * 50);
+          } else if (landElev < 0.6) {
+            // Highlands - orange-brown
+            const t = (landElev - 0.45) / 0.15;
+            r = Math.floor(204 + t * 30);
+            g = Math.floor(159 - t * 50);
+            b = Math.floor(84 - t * 30);
+          } else if (landElev < 0.75) {
+            // High mountains - reddish brown to gray
+            const t = (landElev - 0.6) / 0.15;
+            r = Math.floor(234 - t * 60);
+            g = Math.floor(109 + t * 40);
+            b = Math.floor(54 + t * 70);
+          } else if (landElev < 0.9) {
+            // Alpine - gray rock
+            const t = (landElev - 0.75) / 0.15;
+            r = Math.floor(174 + t * 40);
+            g = Math.floor(149 + t * 50);
+            b = Math.floor(124 + t * 60);
+          } else {
+            // Snow caps - white
+            const t = (landElev - 0.9) / 0.1;
+            r = Math.floor(214 + t * 41);
+            g = Math.floor(199 + t * 56);
+            b = Math.floor(184 + t * 71);
+          }
+        }
+        
+        ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
+        ctx.fillRect(
+          Math.floor(col * scaleX),
+          Math.floor(row * scaleY),
+          Math.ceil(scaleX),
+          Math.ceil(scaleY)
+        );
+      }
+    }
+    
+    // Layer 2: Overlay coastlines
+    if (showCoastlines && typeof window.renderCoastlines === 'function' && coastlineSegments.length > 0) {
+      window.renderCoastlines(
+        ctx,
+        coastlineSegments,
+        imageConfig.width,
+        imageConfig.height,
+        mapConfig.cols,
+        mapConfig.rows,
+        {
+          seaColor: 'rgba(20, 50, 100, 0.6)',
+          lakeColor: 'rgba(40, 90, 140, 0.5)',
+          lineWidth: 1.5
+        }
+      );
+    }
+    
+    // Layer 3: Overlay rivers
+    if (showRivers && typeof window.renderRivers === 'function' && riverSegments.length > 0) {
+      window.renderRivers(
+        ctx,
+        riverSegments,
+        imageConfig.width,
+        imageConfig.height,
+        mapConfig.cols,
+        mapConfig.rows,
+        {
+          color: 'rgba(30, 100, 200, 0.85)',
+          minWidth: 0.5,
+          maxWidth: 3.5,
+          useDischargeWidth: true
+        }
+      );
+    }
+    
+    console.log('Final combined map rendered.');
+  }
+  
+  /**
+   * Render base terrain to a canvas context
+   */
+  function renderBaseTerrainToContext(ctx, mapConfig, imageConfig, heightMap, waterLevel) {
+    // Find min/max heights
+    let minHeight = Infinity, maxHeight = -Infinity;
+    for (let row = 0; row < mapConfig.rows; row++) {
+      for (let col = 0; col < mapConfig.cols; col++) {
+        if (heightMap[row][col] < minHeight) minHeight = heightMap[row][col];
+        if (heightMap[row][col] > maxHeight) maxHeight = heightMap[row][col];
+      }
+    }
+    const heightRange = maxHeight - minHeight || 1;
+    
+    const scaleX = imageConfig.width / mapConfig.cols;
+    const scaleY = imageConfig.height / mapConfig.rows;
+    
+    // Render base terrain
+    for (let row = 0; row < mapConfig.rows; row++) {
+      for (let col = 0; col < mapConfig.cols; col++) {
+        const h = heightMap[row][col];
+        const normalizedH = (h - minHeight) / heightRange;
+        const normalizedWater = (waterLevel - minHeight) / heightRange;
+        
+        let color;
+        if (normalizedH < normalizedWater) {
+          // Water - blue gradient
+          const depth = 1 - normalizedH / normalizedWater;
+          color = `rgb(${Math.floor(100 - depth * 60)}, ${Math.floor(150 - depth * 50)}, ${Math.floor(200 - depth * 30)})`;
+        } else {
+          // Land - green to tan to white
+          const landH = (normalizedH - normalizedWater) / (1 - normalizedWater);
+          if (landH < 0.3) {
+            color = `rgb(${Math.floor(60 + landH * 100)}, ${Math.floor(120 + landH * 50)}, ${Math.floor(60)})`;
+          } else if (landH < 0.6) {
+            const t = (landH - 0.3) / 0.3;
+            color = `rgb(${Math.floor(90 + t * 60)}, ${Math.floor(135 + t * 15)}, ${Math.floor(60 + t * 40)})`;
+          } else {
+            const t = (landH - 0.6) / 0.4;
+            const gray = Math.floor(150 + t * 80);
+            color = `rgb(${gray}, ${Math.floor(150 + t * 80)}, ${Math.floor(100 + t * 120)})`;
+          }
+        }
+        
+        ctx.fillStyle = color;
+        ctx.fillRect(
+          Math.floor(col * scaleX),
+          Math.floor(row * scaleY),
+          Math.ceil(scaleX),
+          Math.ceil(scaleY)
+        );
+      }
+    }
+  }
+  
+  /**
+   * Clear a canvas element
+   */
+  function clearCanvas(canvasId, imageConfig) {
+    const canvas = $(canvasId);
+    if (!canvas) return;
+    
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    ctx.fillStyle = '#f0f0f0';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = '#999';
+    ctx.font = '14px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('Enable time simulation to view', canvas.width / 2, canvas.height / 2);
+  }
+  
+  /**
+   * Clear all erosion-related canvases
+   */
+  function clearErosionCanvases(imageConfig) {
+    clearCanvas('river-map', imageConfig);
+    clearCanvas('coastline-map', imageConfig);
+    clearCanvas('terrain-map', imageConfig);
+    clearCanvas('final-map', imageConfig);
+  }
 
   // Expose the updateMap function for the export
   exports.updateMap = updateMap;

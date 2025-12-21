@@ -39,7 +39,10 @@
     'erode':            true, // Default erosion setting
     'horizontal_factor': 0.5, // Default horizontal distortion factor
     'vertical_factor':   0.2, // Default vertical distortion factor
-    'enable_hack_theta': true // Default theta hack setting
+    'enable_hack_theta': true, // Default theta hack setting
+    'ocean_currents':    true, // Default ocean currents setting
+    'enable_time_simulation': true, // Default time simulation setting
+    'time_passage':      5 // Default time passage in million years
   };
   var max_height      = 1000;
   var max_iter        = 25000;
@@ -410,9 +413,26 @@
         </tr>
         <tr>
           <td class="key">Simulate Ocean Currents:</td>
-          <td class="value"><input type="checkbox" id="ocean_currents" /></td>
+          <td class="value"><input type="checkbox" id="ocean_currents" checked /></td>
           <td class="key">Enable Theta Hack:</td>
           <td class="value"><input type="checkbox" id="enable_hack_theta" checked /></td>
+        </tr>
+        <tr>
+          <td class="key">Time Simulation:</td>
+          <td class="value"><input type="checkbox" id="enable_time_simulation" checked /></td>
+          <td class="key">Time (Million Years):</td>
+          <td class="value">
+            <div class="slider-container">
+              <input type="range" id="time_passage" min="0" max="50" step="1" class="slider" value="5" />
+              <span id="time_passage_value" class="slider-value">5 MY</span>
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td class="key">Show Rivers:</td>
+          <td class="value"><input type="checkbox" id="show_rivers" checked /></td>
+          <td class="key">Show Coastlines:</td>
+          <td class="value"><input type="checkbox" id="show_coastlines" checked /></td>
         </tr>
         <tr>
           <td class="key">Horizontal Factor:</td>
@@ -469,11 +489,32 @@
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
 
+      <h2>River Map</h2>
+      <canvas id="river-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+
+      <h2>Coastline Map</h2>
+      <canvas id="coastline-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+
+      <h2>Terrain Map (with Erosion)</h2>
+      <canvas id="terrain-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+
+      <h2>Final Simulated Map</h2>
+      <canvas id="final-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+
       <p class="control"><b>Time:</b> <span id="dt"></span> seconds</p>
       <p>Fractal World Generator based on work at: http://donjon.bin.sh/</p>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.7.3/prototype.js"></script>
+    <script src="./js/erosion-simulation.js"></script>
     <script src="./js/world.js"></script>
     <script src="./js/canvas.js"></script>
     <script src="./js/custom-seeded-random.js"></script>
@@ -533,6 +574,28 @@
         $('erode').observe('change', updateMap);
         $('enable_hack_theta').observe('change', updateMap);
         $('ocean_currents').observe('change', updateMap);
+        
+        // Set up time simulation controls
+        const timeSimCheckbox = $('enable_time_simulation');
+        const timeSlider = $('time_passage');
+        const timeValueDisplay = $('time_passage_value');
+        
+        timeSlider.observe('input', function() {
+          const value = timeSlider.value;
+          timeValueDisplay.update(value + ' MY');
+        });
+        
+        timeSlider.observe('change', function() {
+          if (timeSimCheckbox.checked) {
+            updateMap();
+          }
+        });
+        
+        timeSimCheckbox.observe('change', updateMap);
+        
+        // Set up river and coastline toggles
+        $('show_rivers').observe('change', updateMap);
+        $('show_coastlines').observe('change', updateMap);
       };
     </script>
   </body>
