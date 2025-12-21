@@ -1914,10 +1914,6 @@
         islandMap[row][col] !== 0 ||
         (polarRegionMap && polarRegionMap[row][col])
       ) {
-        // If this water body touches the edge of the map
-        if (row === 0 || row === maxRows - 1 || col === 0 || col === maxCols - 1) {
-          waterBodyData.touchesEdge = true;
-        }
         continue;
       }
 
@@ -2093,6 +2089,9 @@
     if (oceanSizeThreshold === null) {
       oceanSizeThreshold = Math.floor(mapConfig.rows * mapConfig.cols * 0.01); // 1% of map size
     }
+
+    // Get polarRegionMap from mapConfig
+    const polarRegionMap = mapConfig.polarRegionMap || null;
 
     // Create maps to track water bodies and visited cells
     const waterBodyMap = createEmptyMap(mapConfig, 0);
@@ -2478,9 +2477,4 @@ function calculateRainfallWithShadow(temp, latitude, rainShadow) {
   rain += 0.03 * rainShadow;
   return Math.max(0.0, rain); // Ensure rainfall is not negative
 }
-
-// Expose top-level helpers for use inside the IIFE and globally
-window.generateAndRenderLakeMap = generateAndRenderLakeMap;
-window.identifyLakes = identifyLakes;
-window.floodFillWaterBody = floodFillWaterBody;
 

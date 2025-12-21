@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Fractal World Generator v1.0.2</title>
     <script type="text/javascript">
@@ -24,7 +24,8 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // configuration
 
-  let default_query = {
+  // Using var to ensure these are accessible as globals for world.js
+  var default_query = {
     'seed':             Date.now(),
     'projection':       'square',
     'palette':          'atlas',
@@ -40,30 +41,15 @@
     'vertical_factor':   0.2, // Default vertical distortion factor
     'enable_hack_theta': true // Default theta hack setting
   };
-  let max_height      = 1000;
-  let max_iter        = 25000;
+  var max_height      = 1000;
+  var max_iter        = 25000;
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // palettes
 
-  let palette = {
+  var palette = {
     'olsson': {                         // john olsson
       'title':          'Olsson',
-      'sea_RGB': [
-        'rgb(0, 0, 68)', 'rgb(0, 17, 102)', 'rgb(0, 51, 136)',
-        'rgb(0, 85, 170)', 'rgb(0, 119, 187)', 'rgb(0, 153, 221)',
-        'rgb(0, 204, 255)', 'rgb(34, 221, 255)', 'rgb(68, 238, 255)',
-        'rgb(102, 255, 255)', 'rgb(119, 255, 255)', 'rgb(136, 255, 255)',
-        'rgb(153, 255, 255)', 'rgb(170, 255, 255)', 'rgb(187, 255, 255)'
-      ],
-      'land_RGB': [
-        'rgb(0, 68, 0)', 'rgb(34, 102, 0)', 'rgb(34, 136, 0)',
-        'rgb(119, 170, 0)', 'rgb(187, 221, 0)', 'rgb(255, 187, 34)',
-        'rgb(238, 170, 34)', 'rgb(221, 136, 34)', 'rgb(204, 136, 34)',
-        'rgb(187, 102, 34)', 'rgb(170, 85, 34)', 'rgb(153, 85, 34)',
-        'rgb(136, 68, 34)', 'rgb(119, 51, 34)', 'rgb(85, 51, 17)',
-        'rgb(68, 34, 0)'
-      ],
       'sea': [
         [0x00,0x00,0x44], [0x00,0x11,0x66], [0x00,0x33,0x88],
         [0x00,0x55,0xAA], [0x00,0x77,0xBB], [0x00,0x99,0xDD],
@@ -288,13 +274,6 @@
       ]
     }
   };
-
-
-
-  
-    </script>
-    <script>
-      // Removed the generateHexagonalProjection function from here.
     </script>
     <style>
         /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
@@ -495,9 +474,9 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.7.3/prototype.js"></script>
-    <script src = "js/world.js"></script>
-    <script src = "js/canvas.js"></script>
-    <script src = "js/custom-seeded-random.js"></script>
+    <script src="./js/world.js"></script>
+    <script src="./js/canvas.js"></script>
+    <script src="./js/custom-seeded-random.js"></script>
 
     <script>
       // Wait for both DOM and all scripts to be fully loaded
