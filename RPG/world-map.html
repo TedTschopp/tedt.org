@@ -286,6 +286,27 @@
             font-family: 'Asul', sans-serif; font-size: 14px; 
         }
 
+        /* Cell info tooltip (Islands-style) */
+        #cell_info {
+            position: fixed;
+            z-index: 1000;
+            white-space: pre;
+            padding: 8px 10px;
+            border-radius: 8px;
+            background: rgba(0,0,0,0.85);
+            color: rgba(255,255,255,0.96);
+            font-size: 12px;
+            line-height: 1.35;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            pointer-events: none;
+            display: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+        }
+        
+        #cell_info.visible {
+            display: block;
+        }
+
         /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
         /* common */
 
@@ -519,12 +540,33 @@
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
 
+      <h2>Islands-Style WebGL Terrain</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        GPU-accelerated terrain rendering with elevation-based coloring, hillshade, and water effects.
+        Based on the <a href="https://github.com/TedTschopp/Islands" target="_blank" rel="noopener">TedTschopp/Islands</a> rendering approach.
+      </p>
+      <canvas id="islands-webgl-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+        <p>Your web browser does not appear to support WebGL.</p>
+      </canvas>
+      <div id="webgl-controls" style="margin: 10px auto; max-width: 600px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+        <label style="margin-right: 20px;">
+          <input type="checkbox" id="webgl_show_coastlines" checked /> Show Coastlines
+        </label>
+        <label>
+          <input type="checkbox" id="webgl_show_rivers" checked /> Show Rivers
+        </label>
+      </div>
+
       <p class="control"><b>Time:</b> <span id="dt"></span> seconds</p>
-      <p>Fractal World Generator based on work at: http://donjon.bin.sh/</p>
     </div>
 
+    <!-- Cell info tooltip (Islands-style) -->
+    <div id="cell_info"></div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.7.3/prototype.js"></script>
+    <script src="./js/cell-data-model.js"></script>
     <script src="./js/erosion-simulation.js"></script>
+    <script src="./js/islands-webgl-renderer.js"></script>
     <script src="./js/world.js"></script>
     <script src="./js/canvas.js"></script>
     <script src="./js/custom-seeded-random.js"></script>
@@ -606,6 +648,162 @@
         // Set up river and coastline toggles
         $('show_rivers').observe('change', updateMap);
         $('show_coastlines').observe('change', updateMap);
+        
+        // ================================================================
+        // Cell Info Tooltip (Islands-style mouse tracking)
+        // ================================================================
+        const cellInfoEl = document.getElementById('cell_info');
+        const mapCanvas = document.getElementById('map');
+        let mouseInCanvas = false;
+        let mouseX = 0;
+        let mouseY = 0;
+        
+        // Track mouse position over the main map canvas
+        mapCanvas.addEventListener('mousemove', function(event) {
+          const rect = mapCanvas.getBoundingClientRect();
+          mouseX = event.clientX - rect.left;
+          mouseY = event.clientY - rect.top;
+          
+          // Position tooltip near cursor
+          cellInfoEl.style.left = (event.clientX + 20) + 'px';
+          cellInfoEl.style.top = (event.clientY + 20) + 'px';
+          
+          updateCellInfo();
+        });
+        
+        mapCanvas.addEventListener('mouseenter', function() {
+          mouseInCanvas = true;
+          cellInfoEl.classList.add('visible');
+        });
+        
+        mapCanvas.addEventListener('mouseleave', function() {
+          mouseInCanvas = false;
+          cellInfoEl.classList.remove('visible');
+        });
+        
+        function updateCellInfo() {
+          if (!mouseInCanvas || !window.worldCellData) {
+            cellInfoEl.textContent = '';
+            return;
+          }
+          
+          const cellData = window.worldCellData;
+          const scaleX = cellData.cols / mapCanvas.width;
+          const scaleY = cellData.rows / mapCanvas.height;
+          
+          const col = Math.floor(mouseX * scaleX);
+          const row = Math.floor(mouseY * scaleY);
+          
+          if (row < 0 || row >= cellData.rows || col < 0 || col >= cellData.cols) {
+            cellInfoEl.textContent = '';
+            return;
+          }
+          
+          const cell = row * cellData.cols + col;
+          const info = cellData.getCellInfo(cell);
+          
+          // Format tooltip similar to Islands
+          const lines = [];
+          lines.push(`Cell ${info.cell} (${info.status})`);
+          lines.push(`Surface: ${info.surface.toFixed(1)} m  (${info.surfaceVsSea >= 0 ? '+' : ''}${info.surfaceVsSea.toFixed(1)} m vs sea level)`);
+          lines.push(`Ground:  ${info.ground.toFixed(1)} m`);
+          if (info.water > 0.01) {
+            lines.push(`Water:   ${info.water.toFixed(1)} m`);
+          }
+          lines.push(`Bedrock: ${info.bedrock.toFixed(1)} m, Sediment: ${info.sediment.toFixed(1)} m`);
+          if (info.ice > 0.01) {
+            lines.push(`Ice:     ${info.ice.toFixed(1)} m`);
+          }
+          lines.push(`Sea level: ${info.seaLevel.toFixed(1)} m`);
+          lines.push('');
+          lines.push(`Temperature: ${info.temperature.toFixed(1)}°C`);
+          lines.push(`Rainfall: ${info.rainfall.toFixed(0)} mm/year`);
+          lines.push(`Evaporation: ${info.evaporation.toFixed(0)} mm/year`);
+          
+          cellInfoEl.textContent = lines.join('\n');
+        }
+        
+        // ================================================================
+        // Islands-Style WebGL Renderer Setup
+        // ================================================================
+        const webglCanvas = document.getElementById('islands-webgl-map');
+        let webglRenderer = null;
+        
+        // Set up WebGL controls
+        const webglShowCoastlines = document.getElementById('webgl_show_coastlines');
+        const webglShowRivers = document.getElementById('webgl_show_rivers');
+        
+        if (webglShowCoastlines) {
+          webglShowCoastlines.addEventListener('change', function() {
+            if (webglRenderer) {
+              webglRenderer.options.showCoastlines = this.checked;
+              webglRenderer.render();
+            }
+          });
+        }
+        
+        if (webglShowRivers) {
+          webglShowRivers.addEventListener('change', function() {
+            if (webglRenderer) {
+              webglRenderer.options.showRivers = this.checked;
+              webglRenderer.render();
+            }
+          });
+        }
+        
+        // Create a MutationObserver to detect when cell data is ready/updated
+        // This watches for the worldCellData global to be set
+        let lastCellDataUpdate = 0;
+        
+        function initOrUpdateWebGLRenderer() {
+          if (!window.worldCellData) return;
+          if (!window.IslandsWebGLRenderer) {
+            console.warn('IslandsWebGLRenderer not available');
+            return;
+          }
+          
+          const cellData = window.worldCellData;
+          
+          // Create renderer if needed
+          if (!webglRenderer) {
+            webglRenderer = new window.IslandsWebGLRenderer(webglCanvas, cellData, {
+              showCoastlines: webglShowCoastlines?.checked !== false,
+              showRivers: webglShowRivers?.checked !== false,
+              meanSeaLevel: cellData.config?.meanSeaLevel || 2000,
+              lakeThreshold: cellData.config?.lakeThreshold || 5
+            });
+            
+            if (!webglRenderer.init()) {
+              console.error('Failed to initialize WebGL renderer');
+              webglRenderer = null;
+              return;
+            }
+          } else {
+            // Update cell data reference
+            webglRenderer.cellData = cellData;
+          }
+          
+          // Render
+          webglRenderer.render();
+        }
+        
+        // Hook into the updateMap function to trigger WebGL re-renders
+        // We poll periodically for worldCellData changes since map generation is async
+        let webglUpdateInterval = setInterval(function() {
+          if (window.worldCellData) {
+            const cellData = window.worldCellData;
+            // Check if data was recently updated (by checking a timestamp if available)
+            if (cellData._lastUpdate !== lastCellDataUpdate) {
+              lastCellDataUpdate = cellData._lastUpdate || Date.now();
+              initOrUpdateWebGLRenderer();
+            }
+          }
+        }, 500);
+        
+        // Also trigger on initial load after a delay
+        setTimeout(function() {
+          initOrUpdateWebGLRenderer();
+        }, 1500);
       };
     </script>
   </body>

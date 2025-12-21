@@ -281,6 +281,46 @@
     const originalHeightMap = JSON.parse(JSON.stringify(config.map));
     const waterLevel = calculateWaterLevel(config);
 
+    // ====================================================================
+    // CREATE CELL DATA MODEL (Islands-style unified data structure)
+    // ====================================================================
+    
+    // Initialize the cell data model (if CellDataModel class is available)
+    if (typeof CellDataModel !== 'undefined') {
+      const cellData = new CellDataModel(config.rows, config.cols, {
+        pixelLength: 125, // meters per pixel
+        meanSeaLevel: 2000,
+        pctWater: config.pct_water,
+        pctIce: config.pct_ice,
+        rainfall: 0.3
+      });
+      
+      // Initialize terrain from the generated heightmap
+      cellData.initializeFromHeightmap(config.map);
+      
+      // Calculate climate data using your existing formulas
+      cellData.calculateClimate();
+      
+      // Calculate ice coverage
+      cellData.calculateIceCoverage();
+      
+      // Calculate coastal areas and lakes
+      cellData.calculateCoastalAndLakes();
+      
+      // Store globally for mouse tracking/tooltip
+      window.worldCellData = cellData;
+      
+      // Mark as updated for WebGL renderer detection
+      cellData._lastUpdate = Date.now();
+      
+      console.log('CellDataModel created with', cellData.cellCount, 'cells');
+    } else {
+      console.warn('CellDataModel not available - tooltip info will be limited');
+      window.worldCellData = null;
+    }
+    
+    // ====================================================================
+
     // Get the palette configuration
     var palette = config.palette;
     var minHeight = 2147483647;
@@ -450,6 +490,25 @@
         showRivers,
         showCoastlines
       );
+      
+      // Update the CellDataModel with erosion results if available
+      if (window.worldCellData && window.lastErosionSimulation) {
+        const erosion = window.lastErosionSimulation;
+        const cellData = window.worldCellData;
+        
+        // Sync bedrock and sediment from erosion simulation
+        for (let cell = 0; cell < cellData.cellCount; cell++) {
+          cellData.bedrockThickness[cell] = erosion.bedrockThickness[cell];
+          cellData.sedimentThickness[cell] = erosion.sedimentThickness[cell];
+          cellData.lakeThickness[cell] = erosion.lakeThicknessArray[cell];
+        }
+        
+        cellData.time = timeYears;
+        cellData.updateElevation();
+        cellData.calculateClimate(); // Recalculate climate after erosion changes terrain
+        
+        console.log('CellDataModel synced with erosion simulation');
+      }
       
       timing = markTiming(timing, "erosion");
     } else {
@@ -2922,6 +2981,17 @@
     }
     
     console.log('Erosion simulation complete.');
+    
+    // Store erosion simulation globally for CellDataModel sync
+    window.lastErosionSimulation = erosion;
+    
+    // Also make it available with the expected name for WebGL renderer
+    window.erosionSimulation = erosion;
+    
+    // Mark cell data as updated for WebGL renderer
+    if (window.worldCellData) {
+      window.worldCellData._lastUpdate = Date.now();
+    }
     
     // Get river segments
     const riverSegments = erosion.getRiverSegments(0.005);

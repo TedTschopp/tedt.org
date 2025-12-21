@@ -356,6 +356,13 @@ class ErosionSimulation {
         this.seaLevel = this.meanSeaLevel;
         this.rainfall = options.rainfall || 0.3; // meters/year
         
+        // (D) Dynamic sea level parameters (from Islands)
+        this.enableDynamicSeaLevel = options.enableDynamicSeaLevel !== false; // Enable by default
+        this.seaLevelAmplitude = options.seaLevelAmplitude || 50; // meters
+        this.seaLevelPeriod = options.seaLevelPeriod || 500000; // years per cycle
+        this.upliftStartTime = options.upliftStartTime || 500000; // years before uplift kicks in
+        this.seaLevelStartTime = options.seaLevelStartTime || 2000000; // years before sea level changes
+        
         // Erosion parameters
         this.fluvialTransportCoefficient = options.fluvialTransportCoefficient || 60;
         this.sedimentationDistance = options.sedimentationDistance || 25000;
@@ -387,6 +394,9 @@ class ErosionSimulation {
         this.cellElevation = new Float32Array(this.cellCount);
         this.erodibility = new Float32Array(this.cellCount);
         
+        // (A) Uplift array - tectonic uplift rate in mm/year
+        this.upliftArray = new Float32Array(this.cellCount);
+        
         // Cell positions
         this.cellX = new Float32Array(this.cellCount);
         this.cellY = new Float32Array(this.cellCount);
@@ -417,7 +427,11 @@ class ErosionSimulation {
                 this.bedrockThickness[cell] = normalizedHeight * 3000 + 1000;
                 this.sedimentThickness[cell] = Math.random() * 5;
                 this.lakeThicknessArray[cell] = 0;
+                // (B) Initialize erodibility with spatial variation
                 this.erodibility[cell] = 0.5 + Math.random() * 0.5;
+                
+                // (A) Initialize uplift rate to zero (will be set by setupUplift)
+                this.upliftArray[cell] = 0;
                 
                 this.cellX[cell] = col;
                 this.cellY[cell] = row;
@@ -426,6 +440,57 @@ class ErosionSimulation {
         
         // Calculate sea level based on percentage
         this.seaLevel = this.meanSeaLevel * 3000 + 1000;
+        
+        // Store as meanSeaLevel for dynamic changes
+        this.meanSeaLevel = this.seaLevel;
+    }
+    
+    /**
+     * (B) Sync erodibility from external CellDataModel
+     * @param {CellDataModel} cellDataModel - The cell data model to sync from
+     */
+    syncErodibilityFrom(cellDataModel) {
+        if (!cellDataModel || !cellDataModel.erodibility) return;
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            this.erodibility[cell] = cellDataModel.erodibility[cell];
+        }
+    }
+    
+    /**
+     * (B) Sync erodibility to external CellDataModel
+     * @param {CellDataModel} cellDataModel - The cell data model to sync to
+     */
+    syncErodibilityTo(cellDataModel) {
+        if (!cellDataModel || !cellDataModel.erodibility) return;
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            cellDataModel.erodibility[cell] = this.erodibility[cell];
+        }
+    }
+    
+    /**
+     * (A) Sync uplift array from external CellDataModel
+     * @param {CellDataModel} cellDataModel - The cell data model to sync from
+     */
+    syncUpliftFrom(cellDataModel) {
+        if (!cellDataModel || !cellDataModel.upliftRate) return;
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            this.upliftArray[cell] = cellDataModel.upliftRate[cell];
+        }
+    }
+    
+    /**
+     * (A) Sync uplift array to external CellDataModel
+     * @param {CellDataModel} cellDataModel - The cell data model to sync to
+     */
+    syncUpliftTo(cellDataModel) {
+        if (!cellDataModel || !cellDataModel.upliftRate) return;
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            cellDataModel.upliftRate[cell] = this.upliftArray[cell];
+        }
     }
     
     _buildNeighborGraph() {
@@ -880,11 +945,82 @@ class ErosionSimulation {
      */
     step(dt) {
         this.time += dt;
+        
+        // (D) Dynamic sea level oscillation (from Islands)
+        if (this.enableDynamicSeaLevel && this.time > this.seaLevelStartTime) {
+            this.seaLevel = this.meanSeaLevel + 
+                this.seaLevelAmplitude * Math.sin(2 * Math.PI * this.time / this.seaLevelPeriod);
+        }
+        
+        // (A) Apply tectonic uplift after initial period
+        if (this.time > this.upliftStartTime) {
+            this.applyUplift(dt);
+        }
+        
         this.initializeDrainage();
         this.calculateDrainageGraph();
         this.runDrainage(dt);
         
         // Update cell elevations
+        for (let i = 0; i < this.cellCount; i++) {
+            this.cellElevation[i] = this.bedrockThickness[i] + this.sedimentThickness[i];
+        }
+    }
+    
+    /**
+     * (A) Apply tectonic uplift to bedrock
+     * Uplift is applied only to cells above a threshold elevation
+     * @param {number} dt - Time step in years
+     */
+    applyUplift(dt) {
+        const upliftThreshold = 1500; // Only uplift terrain above this elevation
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            if (this.cellElevation[cell] < upliftThreshold) continue;
+            
+            // upliftArray is in mm/year, convert to meters
+            const upliftMeters = this.upliftArray[cell] * 0.001 * dt;
+            this.bedrockThickness[cell] += upliftMeters;
+        }
+    }
+    
+    /**
+     * (A) Setup uplift field using noise patterns (like Islands)
+     * Creates realistic tectonic uplift zones
+     */
+    setupUplift() {
+        // Create noise-based uplift pattern
+        const bumps = new SNoise(30, 10, 25);
+        bumps.octaves(7, 0.6);
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            const x = this.cellX[cell];
+            const y = this.cellY[cell];
+            
+            // Noise-based uplift rate (mm/year)
+            this.upliftArray[cell] = 0.5 * bumps.get(x, y);
+            this.upliftArray[cell] += 0.1 * Math.random();
+        }
+    }
+    
+    /**
+     * (C) Pre-fill lakes with sediment (from Islands)
+     * This helps stabilize the terrain before main simulation
+     */
+    fillLakes() {
+        // Run drainage to identify lake basins
+        this.initializeDrainage();
+        this.calculateDrainageGraph();
+        
+        // Fill lake basins with sediment
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            if (this.lakeIndex[cell] > 0) {
+                // Add sediment equal to lake depth plus small random variation
+                this.sedimentThickness[cell] += this.lakeThicknessArray[cell] + Math.random();
+            }
+        }
+        
+        // Update elevations after filling
         for (let i = 0; i < this.cellCount; i++) {
             this.cellElevation[i] = this.bedrockThickness[i] + this.sedimentThickness[i];
         }
