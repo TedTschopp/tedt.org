@@ -727,6 +727,236 @@
         </label>
       </div>
 
+      <!-- ================================================================ -->
+      <!-- Islands-Style WebGL Multi-Mode Maps                             -->
+      <!-- GPU-accelerated versions of each data layer with projection     -->
+      <!-- support (Square, Mercator, Mollweide, Sinusoidal)               -->
+      <!-- ================================================================ -->
+
+      <h2>WebGL Temperature Map</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        GPU-accelerated temperature visualization with hillshade. Blue (cold) to Red (hot).
+      </p>
+      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+        <label style="margin-right: 15px;">
+          Projection: 
+          <select id="webgl_temp_projection" style="padding: 2px 6px;">
+            <option value="square" selected>Square (Equirectangular)</option>
+            <option value="mercator">Mercator</option>
+            <option value="mollweide">Mollweide (Equal-Area)</option>
+            <option value="sinusoidal">Sinusoidal</option>
+          </select>
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_temp_hillshade" checked /> Hillshade
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_temp_coastlines" checked /> Coastlines
+        </label>
+        <label>
+          <input type="checkbox" id="webgl_temp_rivers" /> Rivers
+        </label>
+      </div>
+      <canvas id="webgl-temperature-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+        <p>Your web browser does not appear to support WebGL.</p>
+      </canvas>
+
+      <h2>WebGL Rainfall Map</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        GPU-accelerated rainfall visualization. Tan (dry) to Blue (wet), measured in mm/year.
+      </p>
+      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+        <label style="margin-right: 15px;">
+          Projection: 
+          <select id="webgl_rain_projection" style="padding: 2px 6px;">
+            <option value="square" selected>Square (Equirectangular)</option>
+            <option value="mercator">Mercator</option>
+            <option value="mollweide">Mollweide (Equal-Area)</option>
+            <option value="sinusoidal">Sinusoidal</option>
+          </select>
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_rain_hillshade" checked /> Hillshade
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_rain_coastlines" checked /> Coastlines
+        </label>
+        <label>
+          <input type="checkbox" id="webgl_rain_rivers" checked /> Rivers
+        </label>
+      </div>
+      <canvas id="webgl-rainfall-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+        <p>Your web browser does not appear to support WebGL.</p>
+      </canvas>
+
+      <h2>WebGL Evaporation Map</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        GPU-accelerated evaporation visualization. Low (blue) to High (red), measured in mm/year equivalent.
+      </p>
+      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+        <label style="margin-right: 15px;">
+          Projection: 
+          <select id="webgl_evap_projection" style="padding: 2px 6px;">
+            <option value="square" selected>Square (Equirectangular)</option>
+            <option value="mercator">Mercator</option>
+            <option value="mollweide">Mollweide (Equal-Area)</option>
+            <option value="sinusoidal">Sinusoidal</option>
+          </select>
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_evap_hillshade" checked /> Hillshade
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_evap_coastlines" checked /> Coastlines
+        </label>
+        <label>
+          <input type="checkbox" id="webgl_evap_rivers" /> Rivers
+        </label>
+      </div>
+      <canvas id="webgl-evaporation-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+        <p>Your web browser does not appear to support WebGL.</p>
+      </canvas>
+
+      <h2>WebGL Snowfall Map</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        GPU-accelerated snow accumulation. Brown (no snow) to White (permanent snow), in mm/year.
+      </p>
+      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+        <label style="margin-right: 15px;">
+          Projection: 
+          <select id="webgl_snow_projection" style="padding: 2px 6px;">
+            <option value="square" selected>Square (Equirectangular)</option>
+            <option value="mercator">Mercator</option>
+            <option value="mollweide">Mollweide (Equal-Area)</option>
+            <option value="sinusoidal">Sinusoidal</option>
+          </select>
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_snow_hillshade" checked /> Hillshade
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_snow_coastlines" checked /> Coastlines
+        </label>
+        <label>
+          <input type="checkbox" id="webgl_snow_rivers" /> Rivers
+        </label>
+      </div>
+      <canvas id="webgl-snowfall-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+        <p>Your web browser does not appear to support WebGL.</p>
+      </canvas>
+
+      <h2>WebGL Whittaker Biome Map</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        GPU-accelerated Whittaker biome classification with optional hillshade overlay.
+      </p>
+      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+        <label style="margin-right: 15px;">
+          Projection: 
+          <select id="webgl_biome_projection" style="padding: 2px 6px;">
+            <option value="square" selected>Square (Equirectangular)</option>
+            <option value="mercator">Mercator</option>
+            <option value="mollweide">Mollweide (Equal-Area)</option>
+            <option value="sinusoidal">Sinusoidal</option>
+          </select>
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_biome_hillshade" /> Hillshade
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_biome_coastlines" checked /> Coastlines
+        </label>
+        <label>
+          <input type="checkbox" id="webgl_biome_rivers" checked /> Rivers
+        </label>
+      </div>
+      <canvas id="webgl-biome-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+        <p>Your web browser does not appear to support WebGL.</p>
+      </canvas>
+
+      <h2>WebGL Holdridge Life Zone Map</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        GPU-accelerated Holdridge Life Zone classification based on biotemperature and PET ratio.
+      </p>
+      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+        <label style="margin-right: 15px;">
+          Projection: 
+          <select id="webgl_holdridge_projection" style="padding: 2px 6px;">
+            <option value="square" selected>Square (Equirectangular)</option>
+            <option value="mercator">Mercator</option>
+            <option value="mollweide">Mollweide (Equal-Area)</option>
+            <option value="sinusoidal">Sinusoidal</option>
+          </select>
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_holdridge_hillshade" /> Hillshade
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_holdridge_coastlines" checked /> Coastlines
+        </label>
+        <label>
+          <input type="checkbox" id="webgl_holdridge_rivers" checked /> Rivers
+        </label>
+      </div>
+      <canvas id="webgl-holdridge-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+        <p>Your web browser does not appear to support WebGL.</p>
+      </canvas>
+
+      <h2>WebGL Ice Cap Map</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        GPU-accelerated ice classification: Perennial Snow (light), Glaciers (blue), Ice Caps (white).
+      </p>
+      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+        <label style="margin-right: 15px;">
+          Projection: 
+          <select id="webgl_ice_projection" style="padding: 2px 6px;">
+            <option value="square" selected>Square (Equirectangular)</option>
+            <option value="mercator">Mercator</option>
+            <option value="mollweide">Mollweide (Equal-Area)</option>
+            <option value="sinusoidal">Sinusoidal</option>
+          </select>
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_ice_hillshade" checked /> Hillshade
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_ice_coastlines" checked /> Coastlines
+        </label>
+        <label>
+          <input type="checkbox" id="webgl_ice_rivers" /> Rivers
+        </label>
+      </div>
+      <canvas id="webgl-icecap-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+        <p>Your web browser does not appear to support WebGL.</p>
+      </canvas>
+
+      <h2>WebGL Elevation Map</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        GPU-accelerated terrain elevation with full ocean depth visualization and hillshade.
+      </p>
+      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+        <label style="margin-right: 15px;">
+          Projection: 
+          <select id="webgl_elev_projection" style="padding: 2px 6px;">
+            <option value="square" selected>Square (Equirectangular)</option>
+            <option value="mercator">Mercator</option>
+            <option value="mollweide">Mollweide (Equal-Area)</option>
+            <option value="sinusoidal">Sinusoidal</option>
+          </select>
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_elev_hillshade" checked /> Hillshade
+        </label>
+        <label style="margin-right: 15px;">
+          <input type="checkbox" id="webgl_elev_coastlines" checked /> Coastlines
+        </label>
+        <label>
+          <input type="checkbox" id="webgl_elev_rivers" checked /> Rivers
+        </label>
+      </div>
+      <canvas id="webgl-elevation-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+        <p>Your web browser does not appear to support WebGL.</p>
+      </canvas>
+
       <p class="control"><b>Time:</b> <span id="dt"></span> seconds</p>
     </div>
 
@@ -737,6 +967,7 @@
     <script src="./js/cell-data-model.js"></script>
     <script src="./js/erosion-simulation.js"></script>
     <script src="./js/islands-webgl-renderer.js"></script>
+    <script src="./js/islands-webgl-multi-renderer.js"></script>
     <script src="./js/world.js"></script>
     <script src="./js/canvas.js"></script>
     <script src="./js/custom-seeded-random.js"></script>
@@ -1012,6 +1243,7 @@
             if (cellData._lastUpdate !== lastCellDataUpdate) {
               lastCellDataUpdate = cellData._lastUpdate || Date.now();
               initOrUpdateWebGLRenderer();
+              initOrUpdateMultiModeRenderers();
             }
           }
         }, 500);
@@ -1019,7 +1251,132 @@
         // Also trigger on initial load after a delay
         setTimeout(function() {
           initOrUpdateWebGLRenderer();
+          initOrUpdateMultiModeRenderers();
         }, 1500);
+        
+        // ================================================================
+        // Islands-Style Multi-Mode WebGL Renderers Setup
+        // ================================================================
+        
+        // Configuration for each multi-mode WebGL map
+        const multiModeConfigs = [
+          { id: 'webgl-temperature-map', mode: 'temperature', prefix: 'webgl_temp' },
+          { id: 'webgl-rainfall-map', mode: 'rainfall', prefix: 'webgl_rain' },
+          { id: 'webgl-evaporation-map', mode: 'evaporation', prefix: 'webgl_evap' },
+          { id: 'webgl-snowfall-map', mode: 'snowfall', prefix: 'webgl_snow' },
+          { id: 'webgl-biome-map', mode: 'biome', prefix: 'webgl_biome' },
+          { id: 'webgl-holdridge-map', mode: 'holdridge', prefix: 'webgl_holdridge' },
+          { id: 'webgl-icecap-map', mode: 'icecap', prefix: 'webgl_ice' },
+          { id: 'webgl-elevation-map', mode: 'elevation', prefix: 'webgl_elev' }
+        ];
+        
+        // Store renderers
+        const multiModeRenderers = {};
+        
+        // Initialize or update all multi-mode renderers
+        function initOrUpdateMultiModeRenderers() {
+          if (!window.worldCellData) return;
+          if (!window.IslandsWebGLMultiRenderer) {
+            console.warn('IslandsWebGLMultiRenderer not available');
+            return;
+          }
+          
+          const cellData = window.worldCellData;
+          
+          for (const config of multiModeConfigs) {
+            const canvas = document.getElementById(config.id);
+            if (!canvas) continue;
+            
+            // Get control elements
+            const projectionSelect = document.getElementById(config.prefix + '_projection');
+            const hillshadeCheck = document.getElementById(config.prefix + '_hillshade');
+            const coastlinesCheck = document.getElementById(config.prefix + '_coastlines');
+            const riversCheck = document.getElementById(config.prefix + '_rivers');
+            
+            const projection = projectionSelect?.value || 'square';
+            const showHillshade = hillshadeCheck?.checked !== false;
+            const showCoastlines = coastlinesCheck?.checked !== false;
+            const showRivers = riversCheck?.checked || false;
+            
+            // Create renderer if needed
+            if (!multiModeRenderers[config.id]) {
+              const renderer = new window.IslandsWebGLMultiRenderer(canvas, cellData, {
+                mode: config.mode,
+                projection: projection,
+                showHillshade: showHillshade,
+                showCoastlines: showCoastlines,
+                showRivers: showRivers,
+                meanSeaLevel: cellData.config?.meanSeaLevel || 2000,
+                lakeThreshold: cellData.config?.lakeThreshold || 5
+              });
+              
+              if (!renderer.init()) {
+                console.error('Failed to initialize WebGL multi-renderer for ' + config.id);
+                continue;
+              }
+              
+              multiModeRenderers[config.id] = renderer;
+              
+              // Set up event listeners for this renderer
+              setupMultiModeControls(config, renderer);
+            } else {
+              // Update existing renderer
+              const renderer = multiModeRenderers[config.id];
+              renderer.cellData = cellData;
+              
+              // Check if projection changed (requires shader recompile)
+              if (renderer.options.projection !== projection) {
+                renderer.setProjection(projection);
+              }
+              
+              renderer.options.showHillshade = showHillshade;
+              renderer.options.showCoastlines = showCoastlines;
+              renderer.options.showRivers = showRivers;
+            }
+            
+            // Render
+            multiModeRenderers[config.id].render();
+          }
+        }
+        
+        // Set up controls for a single multi-mode renderer
+        function setupMultiModeControls(config, renderer) {
+          const projectionSelect = document.getElementById(config.prefix + '_projection');
+          const hillshadeCheck = document.getElementById(config.prefix + '_hillshade');
+          const coastlinesCheck = document.getElementById(config.prefix + '_coastlines');
+          const riversCheck = document.getElementById(config.prefix + '_rivers');
+          
+          if (projectionSelect) {
+            projectionSelect.addEventListener('change', function() {
+              renderer.setProjection(this.value);
+              renderer.render();
+            });
+          }
+          
+          if (hillshadeCheck) {
+            hillshadeCheck.addEventListener('change', function() {
+              renderer.options.showHillshade = this.checked;
+              renderer.render();
+            });
+          }
+          
+          if (coastlinesCheck) {
+            coastlinesCheck.addEventListener('change', function() {
+              renderer.options.showCoastlines = this.checked;
+              renderer.render();
+            });
+          }
+          
+          if (riversCheck) {
+            riversCheck.addEventListener('change', function() {
+              renderer.options.showRivers = this.checked;
+              renderer.render();
+            });
+          }
+        }
+        
+        // Initial attempt to initialize multi-mode renderers
+        setTimeout(initOrUpdateMultiModeRenderers, 2000);
       };
     </script>
   </body>
