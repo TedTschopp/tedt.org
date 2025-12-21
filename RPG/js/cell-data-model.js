@@ -96,11 +96,42 @@ class CellDataModel {
         this.upliftRate = new Float32Array(this.cellCount);            // Tectonic uplift (mm/year)
         
         // ====================================================================
-        // ICE/SNOW COVERAGE
+        // ICE CAP / GLACIER MODEL (mass balance driven)
+        // Layer stack from bottom to top: bedrock → sediment → water → ice → snow
         // ====================================================================
         
-        this.iceThickness = new Float32Array(this.cellCount);          // Ice/snow depth (meters)
-        this.isIceCovered = new Uint8Array(this.cellCount);            // Boolean: has ice cap
+        // Primary thickness layers (meters)
+        this.glacialIceThickness = new Float32Array(this.cellCount);   // Compacted glacial ice (meters)
+        this.snowDepth = new Float32Array(this.cellCount);             // Seasonal/perennial snow on top (meters)
+        
+        // Classification flags
+        this.isIceCap = new Uint8Array(this.cellCount);                // True ice cap (large, low relief, thick)
+        this.isGlacier = new Uint8Array(this.cellCount);               // Mountain glacier (not ice cap)
+        this.hasPerennialSnow = new Uint8Array(this.cellCount);        // Year-round snow cover (any type)
+        this.icePatchId = new Int32Array(this.cellCount);              // Contiguous ice patch ID (-1 = none)
+        
+        // Local terrain analysis
+        this.localRelief = new Float32Array(this.cellCount);           // Relief in analysis window (meters)
+        
+        // Legacy compatibility
+        this.iceThickness = this.glacialIceThickness;                  // Alias for backward compatibility
+        this.isIceCovered = this.hasPerennialSnow;                     // Alias for backward compatibility
+        
+        // ====================================================================
+        // SNOWFALL / MASS BALANCE (annual rates)
+        // ====================================================================
+        
+        this.snowFraction = new Float32Array(this.cellCount);          // Fraction of precip falling as snow (0-1)
+        this.snowAccumulation = new Float32Array(this.cellCount);      // Annual snowfall (mm water equiv)
+        this.snowMelt = new Float32Array(this.cellCount);              // Annual melt from PDD (mm)
+        this.snowSublimation = new Float32Array(this.cellCount);       // Annual sublimation (mm)
+        this.snowAblation = new Float32Array(this.cellCount);          // Total ablation: melt + sublimation (mm)
+        this.snowMassBalance = new Float32Array(this.cellCount);       // Net: accumulation - ablation (mm/yr)
+        this.warmestMonthTemp = new Float32Array(this.cellCount);      // Estimated warmest month temp (°C)
+        
+        // Cumulative tracking
+        this.cumulativeMassBalance = new Float32Array(this.cellCount); // Total ice equivalent accumulated (mm)
+        this.yearsPositiveBalance = new Uint16Array(this.cellCount);   // Consecutive years with b > 0
         
         // ====================================================================
         // DRAINAGE/HYDROLOGY (Islands-style)
@@ -142,6 +173,7 @@ class CellDataModel {
         this.temperatureColors = new Uint8Array(this.cellCount);       // Temperature palette indices
         this.rainfallColors = new Uint8Array(this.cellCount);          // Rainfall palette indices
         this.evaporationColors = new Uint8Array(this.cellCount);       // Evaporation palette indices
+        this.snowfallColors = new Uint8Array(this.cellCount);          // Snowfall/perennial snow palette indices
         this.terrainColors = new Uint8Array(this.cellCount);           // Terrain-only (no water)
         
         // ====================================================================
@@ -588,39 +620,98 @@ class CellDataModel {
     }
     
     /**
-     * Calculate evaporation for all cells
-     * Preserves your existing evaporation formula
+     * Calculate evaporation for all cells using planet.c-style physics
+     * Based on Penman-Monteith simplification:
+     * - Temperature drives potential evaporation (Clausius-Clapeyron: ~7% per °C)
+     * - Water availability limits actual evaporation on land
+     * - Wind/turbulence effects approximated by latitude (trade winds, westerlies)
+     * 
+     * Must be called AFTER calculateTemperature() and calculateRainfall()
      */
     calculateEvaporation() {
         const seaLevel = this.config.seaLevel;
         
-        // First calculate water proximity
+        // First calculate water proximity for land cells
         this._calculateWaterProximity();
+        
+        // Reference values for normalization
+        const T_REF = 20;           // Reference temperature (°C) for base evaporation
+        const E_REF = 1500;         // Reference potential evaporation at T_REF (mm/year)
+        const LAPSE_FACTOR = 0.07;  // Clausius-Clapeyron: ~7% increase per °C
         
         for (let cell = 0; cell < this.cellCount; cell++) {
             const row = Math.floor(cell / this.cols);
             const elevation = this.cellElevation[cell];
             const isWater = elevation < seaLevel;
+            const temp = this.temperature[cell];  // Use actual calculated temperature
             
-            // Temperature factor (equator = high evaporation, poles = low)
-            const temperatureFactor = 1 - Math.abs(row / this.rows - 0.5) * 2;
+            // ================================================================
+            // Step 1: Calculate potential evaporation (Ep)
+            // Based on Clausius-Clapeyron relationship
+            // ================================================================
+            // Ep increases exponentially with temperature
+            // At T_REF (20°C): Ep = E_REF (1500 mm/year)
+            // Every 1°C increase → ~7% more evaporation
+            const potentialEvap = E_REF * Math.exp(LAPSE_FACTOR * (temp - T_REF));
             
-            // Water factor
-            let waterFactor;
-            if (isWater) {
-                // Shallower water evaporates more
-                waterFactor = 0.8 + 0.2 * (1 - (seaLevel - elevation) / seaLevel);
+            // ================================================================
+            // Step 2: Wind factor based on latitude (planet.c style)
+            // ================================================================
+            // y ranges from 1 (north pole) to -1 (south pole)
+            const y = 1 - 2 * (row / (this.rows - 1 || 1));
+            const absY = Math.abs(y);
+            
+            // Wind patterns: stronger in mid-latitudes (westerlies) and tropics (trades)
+            // Calmer near equator (doldrums) and poles
+            // Peak around |y| = 0.5 (30°) and |y| = 0.7 (45°)
+            let windFactor;
+            if (absY < 0.15) {
+                // ITCZ / Doldrums - calm
+                windFactor = 0.7 + absY * 2;  // 0.7 to 1.0
+            } else if (absY < 0.5) {
+                // Trade wind belt - moderate to strong
+                windFactor = 1.0 + (absY - 0.15) * 0.6;  // 1.0 to 1.2
+            } else if (absY < 0.75) {
+                // Westerlies belt - strong winds
+                windFactor = 1.2 - (absY - 0.5) * 0.4;  // 1.2 to 1.1
             } else {
-                // Land evaporation depends on water proximity
-                waterFactor = this.waterProximity[cell] * 0.7;
+                // Polar regions - moderate but dry
+                windFactor = 1.1 - (absY - 0.75) * 0.8;  // 1.1 to 0.9
             }
             
-            // Combine factors
-            let evap = temperatureFactor * 0.6 + waterFactor * 0.4;
-            evap = Math.max(0, Math.min(1, evap));
+            // ================================================================
+            // Step 3: Water availability factor
+            // ================================================================
+            let waterAvailability;
+            if (isWater) {
+                // Open water: unlimited water supply
+                // Deeper water is slightly cooler, reducing evaporation
+                const depthFactor = Math.min(1, (seaLevel - elevation) / 1000);
+                waterAvailability = 1.0 - depthFactor * 0.1;  // 0.9 to 1.0
+            } else {
+                // Land: water availability depends on rainfall and proximity to water
+                // Budyko-style: actual evap limited by min(potential, precipitation)
+                const rainfall = this.rainfall[cell];
+                const proximity = this.waterProximity[cell];
+                
+                // Aridity index influence: dry areas can't evaporate what they don't have
+                const supplyRatio = Math.min(1, rainfall / (potentialEvap + 1));
+                
+                // Nearby water sources increase local humidity/availability
+                const proximityBonus = proximity * 0.3;
+                
+                waterAvailability = Math.min(1, supplyRatio + proximityBonus);
+            }
             
-            // Convert to mm/year equivalent
-            this.evaporation[cell] = evap * 2000;
+            // ================================================================
+            // Step 4: Combine factors for actual evaporation
+            // ================================================================
+            let actualEvap = potentialEvap * windFactor * waterAvailability;
+            
+            // Clamp to reasonable range (0 to 3000 mm/year)
+            actualEvap = Math.max(0, Math.min(3000, actualEvap));
+            
+            this.evaporation[cell] = actualEvap;
         }
     }
     
@@ -658,57 +749,498 @@ class CellDataModel {
     }
     
     /**
+     * Calculate snowfall and perennial snow coverage using mass balance model
+     * Based on: Perennial snow exists where annual snowfall accumulation >= ablation
+     * 
+     * Constants (tunable):
+     * - T_snow: -2°C (below this, mostly snow)
+     * - T_rain: +2°C (above this, mostly rain)
+     * - k_m: 4 mm/(°C·day) degree-day melt factor
+     * - k_s: 0.35 sublimation scaling factor
+     * - α: 1.5 fast-rule threshold for maritime glaciers
+     */
+    calculateSnowfall() {
+        const seaLevel = this.config.seaLevel;
+        
+        // ================================================================
+        // Configurable constants (defaults from the formula)
+        // ================================================================
+        const T_SNOW = -2;       // °C - below this, mostly snow
+        const T_RAIN = 2;        // °C - above this, mostly rain
+        const K_MELT = 4;        // mm/(°C·day) - degree-day melt factor for snow
+        const K_SUBLIMATION = 0.35;  // Sublimation scaling factor
+        const ALPHA = 1.5;       // Fast-rule threshold for maritime glaciers
+        const LAPSE_RATE = 6.5;  // °C per 1000m elevation
+        
+        // Seasonal temperature variation by latitude
+        // Equator ~0°C variation, poles ~30°C variation
+        const getSeasonalAmplitude = (latFactor) => {
+            return 5 + latFactor * 25;  // 5°C at equator, 30°C at poles
+        };
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            const row = Math.floor(cell / this.cols);
+            const elevation = this.cellElevation[cell];
+            const isWater = elevation < seaLevel;
+            
+            // Get mean annual temperature
+            const meanTemp = this.temperature[cell];
+            
+            // Latitude factor: 0 at equator, 1 at poles
+            const latFactor = Math.abs(row / this.rows - 0.5) * 2;
+            
+            // ============================================================
+            // Step 1: Estimate warmest month temperature (T_max)
+            // ============================================================
+            // Since we don't have seasonal data, estimate from mean + latitude
+            const seasonalAmplitude = getSeasonalAmplitude(latFactor);
+            const warmestMonthTemp = meanTemp + seasonalAmplitude / 2;
+            this.warmestMonthTemp[cell] = warmestMonthTemp;
+            
+            // ============================================================
+            // Step 2: Calculate snow fraction (f_snow)
+            // ============================================================
+            // Smooth transition: clamp((T_rain - T_mean) / (T_rain - T_snow), 0, 1)
+            let snowFraction;
+            if (meanTemp <= T_SNOW) {
+                snowFraction = 1.0;
+            } else if (meanTemp >= T_RAIN) {
+                snowFraction = 0.0;
+            } else {
+                snowFraction = (T_RAIN - meanTemp) / (T_RAIN - T_SNOW);
+            }
+            this.snowFraction[cell] = snowFraction;
+            
+            // ============================================================
+            // Step 3: Calculate annual snowfall accumulation (A)
+            // ============================================================
+            // A = P × f_snow (where P is total precipitation)
+            const precipitation = this.rainfall[cell];  // mm/year (already includes all precip)
+            const snowAccumulation = precipitation * snowFraction;
+            this.snowAccumulation[cell] = snowAccumulation;
+            
+            // ============================================================
+            // Step 4: Calculate ablation (melt + sublimation)
+            // ============================================================
+            
+            // 4a: Melt from Positive Degree Days (PDD)
+            // Approximate PDD from warmest month temp
+            // crude: PDD ≈ max(0, T_max) × 90 (warm season ~3 months)
+            const pdd = Math.max(0, warmestMonthTemp) * 90;
+            const melt = K_MELT * pdd;  // mm water equivalent
+            this.snowMelt[cell] = melt;
+            
+            // 4b: Sublimation (dryness-driven)
+            // S = k_s × E (evaporation as proxy for sublimation capacity)
+            const sublimation = K_SUBLIMATION * this.evaporation[cell];
+            this.snowSublimation[cell] = sublimation;
+            
+            // Total ablation: B = M + S
+            const ablation = melt + sublimation;
+            this.snowAblation[cell] = ablation;
+            
+            // ============================================================
+            // Step 5: Calculate mass balance
+            // ============================================================
+            const massBalance = snowAccumulation - ablation;
+            this.snowMassBalance[cell] = massBalance;
+            
+            // ============================================================
+            // Step 6: Determine perennial snow coverage
+            // ============================================================
+            // Method 1 (mass balance): Perennial snow if A - B >= 0
+            // Method 2 (fast rule): Perennial snow if:
+            //   (a) T_max <= 0 (never melts), OR
+            //   (b) T_max <= 2 AND P×f_snow >= α×E (maritime glaciers)
+            
+            let hasPerennialSnow = false;
+            
+            if (!isWater) {
+                // Fast rule check first (more lenient)
+                const neverMelts = warmestMonthTemp <= 0;
+                const maritimeGlacier = warmestMonthTemp <= 2 && 
+                    snowAccumulation >= ALPHA * this.evaporation[cell];
+                
+                // Mass balance check
+                const positiveBalance = massBalance >= 0;
+                
+                // Either condition grants perennial snow
+                hasPerennialSnow = neverMelts || maritimeGlacier || positiveBalance;
+            }
+            
+            this.hasPerennialSnow[cell] = hasPerennialSnow ? 1 : 0;
+        }
+    }
+    
+    /**
      * Calculate all climate data
      */
     calculateClimate() {
         this.calculateTemperature();
         this.calculateRainfall();
         this.calculateEvaporation();
+        this.calculateSnowfall();  // Add snowfall after other climate data
         this.dirty.climate = false;
     }
     
     // ========================================================================
-    // ICE COVERAGE
+    // ICE CAP / GLACIER MODEL (Mass Balance Driven)
     // ========================================================================
     
     /**
-     * Calculate ice coverage based on latitude and elevation
+     * Ice cap model configuration constants
      */
-    calculateIceCoverage() {
+    static ICE_CAP_CONFIG = {
+        // Temperature thresholds (°C)
+        T_SNOW: -2,              // Below this, all precip is snow
+        T_RAIN: 2,               // Above this, all precip is rain
+        
+        // Ablation parameters
+        K_MELT: 4,               // mm/(°C·day) degree-day melt factor
+        D_WARM: 90,              // days in warm season
+        K_SUBLIMATION: 0.35,     // Sublimation scaling factor
+        
+        // Ice cap classification thresholds
+        A_CAP: 100,              // Minimum area for ice cap (km²)
+        R_CAP: 500,              // Maximum relief for ice cap (meters)
+        H_CAP: 150,              // Minimum thickness for ice cap (meters)
+        B_CAP: 200,              // Minimum sustained balance for proxy (mm/yr)
+        N_YEARS: 100,            // Consecutive years needed for ice cap proxy
+        
+        // Relief analysis window (cells radius)
+        RELIEF_WINDOW: 10,       // ~20km radius at typical resolution
+        
+        // Snow-to-ice compaction
+        SNOW_TO_ICE_RATIO: 0.4,  // 1m snow ≈ 0.4m ice (firn compaction)
+        MAX_SNOW_DEPTH: 20,      // Max seasonal snow before compacting (meters)
+        
+        // Density for thickness calculations
+        ICE_DENSITY: 917,        // kg/m³
+        WATER_DENSITY: 1000      // kg/m³
+    };
+    
+    /**
+     * Main ice coverage calculation using mass balance model
+     * Call this after calculateSnowfall() to build ice caps over time
+     * 
+     * @param {number} yearsElapsed - Simulation time step in years
+     */
+    calculateIceCoverage(yearsElapsed = 1000) {
+        const config = CellDataModel.ICE_CAP_CONFIG;
         const seaLevel = this.config.seaLevel;
-        const pctIce = this.config.pctIce / 100;
+        
+        console.log(`Calculating ice coverage for ${yearsElapsed} years...`);
+        
+        // Step 1: Calculate local relief for each cell
+        this._calculateLocalRelief(config.RELIEF_WINDOW);
+        
+        // Step 2: Update ice/snow thickness based on mass balance
+        this._updateIceThickness(yearsElapsed, config);
+        
+        // Step 3: Identify contiguous ice patches
+        this._identifyIcePatches();
+        
+        // Step 4: Classify ice caps vs glaciers
+        this._classifyIceBodies(config);
+        
+        console.log('Ice coverage calculation complete');
+    }
+    
+    /**
+     * Calculate local relief (elevation range) in a window around each cell
+     * Ice caps prefer low-relief plateaus
+     */
+    _calculateLocalRelief(windowRadius) {
+        const seaLevel = this.config.seaLevel;
         
         for (let cell = 0; cell < this.cellCount; cell++) {
-            const row = Math.floor(cell / this.cols);
-            const elevation = this.cellElevation[cell];
+            const row = this.getRow(cell);
+            const col = this.getCol(cell);
+            const centerElev = this.cellElevation[cell];
             
-            // Latitude factor: 0 at equator, 1 at poles
-            const latFactor = Math.abs(row / this.rows - 0.5) * 2;
-            
-            // Ice threshold based on pct_ice setting
-            // At equator, need very high elevation for ice
-            // At poles, even sea level can have ice
-            const iceThreshold = (1 - pctIce) * 0.7;
-            
-            // Elevation factor (higher = colder)
-            let elevFactor = 0;
-            if (elevation > seaLevel) {
-                const maxElev = seaLevel + 2500; // Above this is definitely snowy
-                elevFactor = Math.min((elevation - seaLevel) / (maxElev - seaLevel), 1);
+            // Skip water cells
+            if (centerElev < seaLevel) {
+                this.localRelief[cell] = 0;
+                continue;
             }
             
-            // Combined ice probability
-            const iceProb = latFactor * 0.7 + elevFactor * 0.3;
+            let minElev = centerElev;
+            let maxElev = centerElev;
             
-            if (iceProb > iceThreshold) {
-                this.isIceCovered[cell] = 1;
-                // Ice thickness based on how far above threshold
-                this.iceThickness[cell] = (iceProb - iceThreshold) * 100;
+            // Search in window
+            for (let dr = -windowRadius; dr <= windowRadius; dr++) {
+                for (let dc = -windowRadius; dc <= windowRadius; dc++) {
+                    const r = row + dr;
+                    const c = (col + dc + this.cols) % this.cols; // Wrap horizontally
+                    
+                    if (r >= 0 && r < this.rows) {
+                        const checkCell = r * this.cols + c;
+                        const elev = this.cellElevation[checkCell];
+                        
+                        // Only consider land cells for relief
+                        if (elev >= seaLevel) {
+                            if (elev < minElev) minElev = elev;
+                            if (elev > maxElev) maxElev = elev;
+                        }
+                    }
+                }
+            }
+            
+            this.localRelief[cell] = maxElev - minElev;
+        }
+    }
+    
+    /**
+     * Update ice and snow thickness based on mass balance over time
+     * Positive balance → accumulate snow → compact to ice
+     * Negative balance → melt ice and snow
+     */
+    _updateIceThickness(yearsElapsed, config) {
+        const seaLevel = this.config.seaLevel;
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            const elevation = this.cellElevation[cell];
+            const isWater = elevation < seaLevel;
+            
+            if (isWater) {
+                // Ocean cells: may have sea ice but not ice caps
+                this.glacialIceThickness[cell] = 0;
+                this.snowDepth[cell] = 0;
+                this.cumulativeMassBalance[cell] = 0;
+                this.yearsPositiveBalance[cell] = 0;
+                continue;
+            }
+            
+            // Get annual mass balance (mm water equivalent per year)
+            const annualBalance = this.snowMassBalance[cell];
+            
+            // Convert to ice-equivalent thickness change (meters)
+            // mm w.e./yr × years × (water density / ice density) / 1000
+            const iceEquivalent = annualBalance * yearsElapsed * 
+                (config.WATER_DENSITY / config.ICE_DENSITY) / 1000;
+            
+            // Track cumulative balance
+            this.cumulativeMassBalance[cell] += annualBalance * yearsElapsed;
+            
+            // Track consecutive years with positive balance
+            if (annualBalance > 0) {
+                this.yearsPositiveBalance[cell] = Math.min(
+                    this.yearsPositiveBalance[cell] + yearsElapsed,
+                    65535 // Uint16 max
+                );
             } else {
-                this.isIceCovered[cell] = 0;
-                this.iceThickness[cell] = 0;
+                this.yearsPositiveBalance[cell] = 0;
+            }
+            
+            if (iceEquivalent > 0) {
+                // ACCUMULATION: Add to snow layer
+                this.snowDepth[cell] += iceEquivalent;
+                
+                // Compact excess snow to glacial ice (firn process)
+                if (this.snowDepth[cell] > config.MAX_SNOW_DEPTH) {
+                    const excessSnow = this.snowDepth[cell] - config.MAX_SNOW_DEPTH;
+                    this.snowDepth[cell] = config.MAX_SNOW_DEPTH;
+                    this.glacialIceThickness[cell] += excessSnow * config.SNOW_TO_ICE_RATIO;
+                }
+            } else {
+                // ABLATION: First melt snow, then ice
+                let meltRemaining = -iceEquivalent;
+                
+                // Melt snow first
+                if (this.snowDepth[cell] > 0) {
+                    const snowMelt = Math.min(this.snowDepth[cell], meltRemaining);
+                    this.snowDepth[cell] -= snowMelt;
+                    meltRemaining -= snowMelt;
+                }
+                
+                // Then melt ice
+                if (meltRemaining > 0 && this.glacialIceThickness[cell] > 0) {
+                    this.glacialIceThickness[cell] = Math.max(
+                        0,
+                        this.glacialIceThickness[cell] - meltRemaining
+                    );
+                }
+            }
+            
+            // Set perennial snow flag
+            this.hasPerennialSnow[cell] = (
+                this.glacialIceThickness[cell] > 0 || 
+                this.snowDepth[cell] > 1
+            ) ? 1 : 0;
+        }
+    }
+    
+    /**
+     * Identify contiguous patches of ice/snow using flood fill
+     * Returns array of patch info: {id, cells, area}
+     */
+    _identifyIcePatches() {
+        // Reset patch IDs
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            this.icePatchId[cell] = -1;
+        }
+        
+        let patchId = 0;
+        const patches = [];
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            // Skip if already assigned or no ice/snow
+            if (this.icePatchId[cell] >= 0) continue;
+            if (this.hasPerennialSnow[cell] === 0) continue;
+            
+            // Flood fill from this cell
+            const patchCells = this._floodFillIcePatch(cell, patchId);
+            
+            if (patchCells.length > 0) {
+                patches.push({
+                    id: patchId,
+                    cells: patchCells,
+                    cellCount: patchCells.length
+                });
+                patchId++;
             }
         }
+        
+        // Store patches for later use
+        this._icePatches = patches;
+        return patches;
+    }
+    
+    /**
+     * Flood fill to find all cells in a contiguous ice patch
+     */
+    _floodFillIcePatch(startCell, patchId) {
+        const cells = [];
+        const queue = [startCell];
+        
+        while (queue.length > 0) {
+            const cell = queue.shift();
+            
+            // Skip if already visited or no ice
+            if (this.icePatchId[cell] >= 0) continue;
+            if (this.hasPerennialSnow[cell] === 0) continue;
+            
+            // Mark as part of this patch
+            this.icePatchId[cell] = patchId;
+            cells.push(cell);
+            
+            // Add neighbors to queue
+            const neighbors = this._getNeighborIndices(cell);
+            for (const neighbor of neighbors) {
+                if (this.icePatchId[neighbor] < 0 && 
+                    this.hasPerennialSnow[neighbor] === 1) {
+                    queue.push(neighbor);
+                }
+            }
+        }
+        
+        return cells;
+    }
+    
+    /**
+     * Classify each ice body as ice cap or glacier
+     * Ice cap criteria:
+     * 1. Large area (A >= A_cap)
+     * 2. Low relief (R <= R_cap)
+     * 3. Thick ice (H >= H_cap)
+     */
+    _classifyIceBodies(config) {
+        // Estimate cell area in km² (assuming ~1km grid cells, adjust as needed)
+        const cellAreaKm2 = (this.config.cellSizeKm || 10) ** 2;
+        
+        // Reset classification
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            this.isIceCap[cell] = 0;
+            this.isGlacier[cell] = 0;
+        }
+        
+        if (!this._icePatches) return;
+        
+        for (const patch of this._icePatches) {
+            // Calculate patch metrics
+            const areaKm2 = patch.cellCount * cellAreaKm2;
+            
+            // Calculate average relief and thickness for patch
+            let totalRelief = 0;
+            let totalThickness = 0;
+            let maxThickness = 0;
+            
+            for (const cell of patch.cells) {
+                totalRelief += this.localRelief[cell];
+                const thickness = this.glacialIceThickness[cell] + this.snowDepth[cell];
+                totalThickness += thickness;
+                if (thickness > maxThickness) maxThickness = thickness;
+            }
+            
+            const avgRelief = totalRelief / patch.cellCount;
+            const avgThickness = totalThickness / patch.cellCount;
+            
+            // Check ice cap criteria
+            const isLargeEnough = areaKm2 >= config.A_CAP;
+            const isLowRelief = avgRelief <= config.R_CAP;
+            const isThickEnough = maxThickness >= config.H_CAP;
+            
+            // Classify cells in this patch
+            const isIceCap = isLargeEnough && isLowRelief && isThickEnough;
+            
+            for (const cell of patch.cells) {
+                if (isIceCap) {
+                    this.isIceCap[cell] = 1;
+                    this.isGlacier[cell] = 0;
+                } else if (this.glacialIceThickness[cell] > 10) {
+                    // Glacier: has significant ice but doesn't meet ice cap criteria
+                    this.isIceCap[cell] = 0;
+                    this.isGlacier[cell] = 1;
+                } else {
+                    // Perennial snowfield: thin coverage, neither cap nor glacier
+                    this.isIceCap[cell] = 0;
+                    this.isGlacier[cell] = 0;
+                }
+            }
+            
+            // Debug log for large patches
+            if (patch.cellCount > 100) {
+                console.log(`Patch ${patch.id}: ${patch.cellCount} cells, ` +
+                    `${areaKm2.toFixed(0)} km², relief=${avgRelief.toFixed(0)}m, ` +
+                    `thickness=${avgThickness.toFixed(1)}m, ` +
+                    `isIceCap=${isIceCap}`);
+            }
+        }
+    }
+    
+    /**
+     * Get total ice/snow stats for debugging
+     */
+    getIceStats() {
+        let totalIceCells = 0;
+        let totalIceCapCells = 0;
+        let totalGlacierCells = 0;
+        let totalSnowCells = 0;
+        let maxIceThickness = 0;
+        let maxSnowDepth = 0;
+        
+        for (let cell = 0; cell < this.cellCount; cell++) {
+            if (this.hasPerennialSnow[cell] === 1) totalSnowCells++;
+            if (this.glacialIceThickness[cell] > 0) totalIceCells++;
+            if (this.isIceCap[cell] === 1) totalIceCapCells++;
+            if (this.isGlacier[cell] === 1) totalGlacierCells++;
+            if (this.glacialIceThickness[cell] > maxIceThickness) {
+                maxIceThickness = this.glacialIceThickness[cell];
+            }
+            if (this.snowDepth[cell] > maxSnowDepth) {
+                maxSnowDepth = this.snowDepth[cell];
+            }
+        }
+        
+        return {
+            totalSnowCells,
+            totalIceCells,
+            totalIceCapCells,
+            totalGlacierCells,
+            maxIceThickness,
+            maxSnowDepth,
+            patchCount: this._icePatches ? this._icePatches.length : 0
+        };
     }
     
     // ========================================================================
@@ -875,32 +1407,121 @@ class CellDataModel {
     
     /**
      * Get cell info for tooltip/debug (Islands-style)
+     * 
+     * Layer model (from bottom to top):
+     * - bedrockThickness: Elevation of bedrock surface from datum (meters)
+     * - sedimentThickness: Thickness of sediment layer on bedrock (meters)
+     * - lakeThickness: Depth of water above ground (lakes only, meters)
+     * - glacialIceThickness: Thickness of glacial ice (meters)
+     * - snowDepth: Depth of snow on top (meters)
      */
     getCellInfo(cell) {
         const seaLevel = this.config.seaLevel;
-        const bedrock = this.bedrockThickness[cell];
-        const sediment = this.sedimentThickness[cell];
-        const ground = bedrock + sediment;
-        const water = this.lakeThickness[cell];
-        const surface = ground + water;
-        const ice = this.iceThickness[cell];
+        
+        // Base terrain
+        const bedrockSurface = this.bedrockThickness[cell];    // Elevation of bedrock top
+        const sedimentDepth = this.sedimentThickness[cell];    // Sediment thickness
+        const groundElevation = bedrockSurface + sedimentDepth; // = cellElevation
+        
+        // Water layer (only for lakes, not ocean)
+        const waterDepth = this.lakeThickness[cell];           // Lake water depth
+        const waterSurface = groundElevation + waterDepth;     // Top of water
+        
+        // Ice and snow (sits on ground, not on water for glaciers)
+        // For glaciers/ice caps, ice replaces any water
+        const iceThickness = this.glacialIceThickness[cell];   // Glacial ice thickness
+        const snowDepth = this.snowDepth[cell];                // Snow depth
+        
+        // Calculate surface elevations for each layer
+        // Ice sits on ground (displaces water conceptually)
+        const iceBaseSurface = groundElevation;                // Ice base = ground
+        const iceSurface = iceBaseSurface + iceThickness;      // Top of ice
+        const snowSurface = iceSurface + snowDepth;            // Top of snow
+        
+        // Overall surface elevation (highest point)
+        const surfaceElevation = Math.max(waterSurface, snowSurface);
+        
+        // Determine water type
+        let waterType = '';
+        if (waterDepth > 0.01) {
+            if (waterDepth > this.config.lakeThreshold) {
+                waterType = 'Lake';
+            } else if (groundElevation < seaLevel) {
+                waterType = 'Ocean';
+            } else {
+                waterType = 'River/Wetland';
+            }
+        }
+        
+        // Determine ice type
+        let iceType = '';
+        if (this.isIceCap[cell] === 1) {
+            iceType = 'Ice Cap';
+        } else if (this.isGlacier[cell] === 1) {
+            iceType = 'Glacier';
+        } else if (iceThickness > 0.01) {
+            iceType = 'Ice';
+        }
         
         return {
             cell: cell,
             row: this.getRow(cell),
             col: this.getCol(cell),
             status: this.getCellStatus(cell),
-            surface: surface,
-            surfaceVsSea: surface - seaLevel,
-            ground: ground,
-            water: water,
-            bedrock: bedrock,
-            sediment: sediment,
-            ice: ice,
+            
+            // Layer thicknesses (physical depths)
+            bedrockSurface: bedrockSurface,        // Bedrock top elevation
+            sedimentThickness: sedimentDepth,       // Sediment layer thickness
+            waterThickness: waterDepth,             // Water depth (lakes)
+            iceThickness: iceThickness,             // Ice layer thickness
+            snowThickness: snowDepth,               // Snow layer thickness
+            
+            // Layer surface elevations (cumulative heights)
+            groundElevation: groundElevation,       // Ground surface (bedrock + sediment)
+            waterElevation: waterSurface,           // Water surface elevation
+            iceElevation: iceSurface,               // Ice surface elevation  
+            snowElevation: snowSurface,             // Snow surface elevation
+            
+            // Legacy aliases for backward compatibility
+            bedrock: bedrockSurface,
+            sediment: sedimentDepth,
+            ground: groundElevation,
+            water: waterDepth,
+            ice: iceThickness,
+            snow: snowDepth,
+            bedrockElevation: bedrockSurface,       // Legacy
+            sedimentElevation: groundElevation,     // Legacy (was confusing)
+            
+            // Type labels
+            waterType: waterType,
+            iceType: iceType,
+            
+            // Surface info
+            surface: surfaceElevation,
+            surfaceVsSea: surfaceElevation - seaLevel,
             seaLevel: seaLevel,
+            
+            // Ice/snow classification
+            isIceCap: this.isIceCap[cell] === 1,
+            isGlacier: this.isGlacier[cell] === 1,
+            hasPerennialSnow: this.hasPerennialSnow[cell] === 1,
+            icePatchId: this.icePatchId[cell],
+            localRelief: this.localRelief[cell],
+            // Climate data
             temperature: this.temperature[cell],
+            warmestMonthTemp: this.warmestMonthTemp[cell],
             rainfall: this.rainfall[cell],
             evaporation: this.evaporation[cell],
+            // Mass balance
+            snowFraction: this.snowFraction[cell],
+            snowAccumulation: this.snowAccumulation[cell],
+            snowMelt: this.snowMelt[cell],
+            snowSublimation: this.snowSublimation[cell],
+            snowAblation: this.snowAblation[cell],
+            snowMassBalance: this.snowMassBalance[cell],
+            cumulativeMassBalance: this.cumulativeMassBalance[cell],
+            yearsPositiveBalance: this.yearsPositiveBalance[cell],
+            // Other
             isCoastal: this.isCoastal[cell] === 1,
             lakeIndex: this.lakeIndex[cell]
         };

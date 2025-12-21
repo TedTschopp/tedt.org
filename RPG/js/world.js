@@ -301,8 +301,14 @@
       // Calculate climate data using your existing formulas
       cellData.calculateClimate();
       
-      // Calculate ice coverage
-      cellData.calculateIceCoverage();
+      // Calculate initial ice coverage (mass-balance driven)
+      // Use a reasonable initial time for ice cap formation (10,000 years)
+      const initialIceYears = 10000;
+      cellData.calculateIceCoverage(initialIceYears);
+      
+      // Log ice stats
+      const iceStats = cellData.getIceStats();
+      console.log('Ice coverage stats:', iceStats);
       
       // Calculate coastal areas and lakes
       cellData.calculateCoastalAndLakes();
@@ -467,6 +473,15 @@
       waterLevel
     );
 
+    // Generate and render the snowfall/perennial snow map
+    generateAndRenderSnowfallMap(
+      finalMap,
+      imageConfig,
+      originalHeightMap,
+      waterLevel,
+      temperatureMap
+    );
+
     // Generate and render the lake map
     generateAndRenderLakeMap(
       finalMap,
@@ -506,6 +521,11 @@
         cellData.time = timeYears;
         cellData.updateElevation();
         cellData.calculateClimate(); // Recalculate climate after erosion changes terrain
+        
+        // Recalculate ice coverage with full simulation time
+        cellData.calculateIceCoverage(timeYears);
+        const iceStats = cellData.getIceStats();
+        console.log('Post-erosion ice stats:', iceStats);
         
         console.log('CellDataModel synced with erosion simulation');
       }
@@ -1044,11 +1064,11 @@
   }
 
   /**
-   * Generate and render the evaporation map
-   * @param {object} mapConfig - The map configuration
+   * Render the evaporation map using CellDataModel data
+   * Uses physics-based evaporation calculation (Penman-Monteith style)
+   * 
+   * @param {object} mapConfig - The map configuration (for compatibility)
    * @param {object} imageConfig - The image configuration
-   * @param {Array} heightMap - The original height map data
-   * @param {number} waterLevel - The water level
    */
   function generateAndRenderEvaporationMap(
     mapConfig,
@@ -1056,106 +1076,282 @@
     heightMap,
     waterLevel
   ) {
+    console.log("Rendering evaporation map from CellDataModel...");
+
+    const canvas = $('evaporation-map');
+    if (!canvas) {
+      console.warn('evaporation-map canvas not found');
+      return;
+    }
     
-    console.log("Generating evaporation map...");
-
-    // Create a copy of the map config for evaporation
-    const evaporationConfig = JSON.parse(JSON.stringify(mapConfig));
-    evaporationConfig.palette = applyPalette(palette.evaporation);
-
-    // Generate evaporation map based on temperature and water availability
-    const evaporationMap = [];
-    const proximityMap = calculateWaterProximity(
-      mapConfig,
-      heightMap,
-      waterLevel
-    );
-
-    for (let row = 0; row < mapConfig.rows; row++) {
-      evaporationMap[row] = [];
-
-      // Temperature factor (equator = high evaporation, poles = low)
-      const temperatureFactor = 1 - Math.abs(row / mapConfig.rows - 0.5) * 2;
-
-      for (let col = 0; col < mapConfig.cols; col++) {
-        const elevation = heightMap[row][col];
-        const isWater = elevation < waterLevel;
-
-        // Water bodies have high evaporation, land depends on water availability
-        const waterFactor = isWater
-          ? 0.8 + 0.2 * (1 - (waterLevel - elevation) / waterLevel) // Shallower water evaporates more
-          : proximityMap[row][col] * 0.7; // Land evaporation depends on water proximity
-
-        // Combine factors
-        let evaporation = temperatureFactor * 0.6 + waterFactor * 0.4;
-
-        // Clamp evaporation value between 0 and 1
-        evaporation = Math.max(0, Math.min(1, evaporation));
-
-        // Map to evaporation color indices
-        if (isWater) {
-          // Water areas - use sea palette
-          evaporationMap[row][col] =
-            Math.floor(evaporation * evaporationConfig.palette.n_sea) +
-            evaporationConfig.palette.sea_idx;
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    // Check if cell data is available
+    if (!window.worldCellData) {
+      ctx.fillStyle = '#888';
+      ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Cell data not available', 10, 20);
+      return;
+    }
+    
+    const cellData = window.worldCellData;
+    const seaLevel = cellData.config.seaLevel;
+    
+    // Find evaporation range for normalization
+    let minEvap = Infinity, maxEvap = -Infinity;
+    for (let cell = 0; cell < cellData.cellCount; cell++) {
+      const evap = cellData.evaporation[cell];
+      if (evap < minEvap) minEvap = evap;
+      if (evap > maxEvap) maxEvap = evap;
+    }
+    
+    // Ensure valid range
+    if (!isFinite(minEvap)) minEvap = 0;
+    if (!isFinite(maxEvap)) maxEvap = 2000;
+    const evapRange = maxEvap - minEvap || 1;
+    
+    console.log(`Evaporation range: ${minEvap.toFixed(0)} to ${maxEvap.toFixed(0)} mm/yr`);
+    
+    // Color gradient for evaporation visualization
+    // Low evaporation (cold/dry) → cool blues
+    // High evaporation (hot/wet) → warm oranges/reds
+    const getColorForEvaporation = (evaporation, isWater) => {
+      // Normalize to 0-1 range
+      const normalized = (evaporation - minEvap) / evapRange;
+      
+      if (isWater) {
+        // Ocean: blue gradient (darker = less evaporation)
+        const t = normalized;
+        return {
+          r: Math.floor(32 + t * 60),    // 32 → 92
+          g: Math.floor(48 + t * 100),   // 48 → 148
+          b: Math.floor(100 + t * 100)   // 100 → 200
+        };
+      } else {
+        // Land: brown/tan to orange/red gradient
+        if (normalized < 0.25) {
+          // Very low evaporation: cool gray-blue (cold/arid)
+          const t = normalized / 0.25;
+          return {
+            r: Math.floor(140 + t * 40),   // 140 → 180
+            g: Math.floor(140 + t * 30),   // 140 → 170
+            b: Math.floor(160 - t * 20)    // 160 → 140
+          };
+        } else if (normalized < 0.5) {
+          // Low-moderate: tan/beige
+          const t = (normalized - 0.25) / 0.25;
+          return {
+            r: Math.floor(180 + t * 40),   // 180 → 220
+            g: Math.floor(170 + t * 20),   // 170 → 190
+            b: Math.floor(140 - t * 40)    // 140 → 100
+          };
+        } else if (normalized < 0.75) {
+          // Moderate-high: warm yellow/orange
+          const t = (normalized - 0.5) / 0.25;
+          return {
+            r: Math.floor(220 + t * 35),   // 220 → 255
+            g: Math.floor(190 - t * 50),   // 190 → 140
+            b: Math.floor(100 - t * 50)    // 100 → 50
+          };
         } else {
-          // Land areas - use land palette
-          evaporationMap[row][col] =
-            Math.floor(evaporation * evaporationConfig.palette.n_land) +
-            evaporationConfig.palette.land_idx;
+          // Very high evaporation: hot orange/red
+          const t = (normalized - 0.75) / 0.25;
+          return {
+            r: 255,
+            g: Math.floor(140 - t * 60),   // 140 → 80
+            b: Math.floor(50 - t * 30)     // 50 → 20
+          };
         }
       }
+    };
+    
+    // Create image data
+    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
+    const data = imageData.data;
+    
+    // Render based on cell data
+    const scaleX = cellData.cols / imageConfig.width;
+    const scaleY = cellData.rows / imageConfig.height;
+    
+    for (let y = 0; y < imageConfig.height; y++) {
+      for (let x = 0; x < imageConfig.width; x++) {
+        // Map pixel to cell
+        const col = Math.floor(x * scaleX);
+        const row = Math.floor(y * scaleY);
+        const cell = row * cellData.cols + col;
+        
+        const idx = (y * imageConfig.width + x) * 4;
+        const elevation = cellData.cellElevation[cell];
+        const isWater = elevation < seaLevel;
+        const evaporation = cellData.evaporation[cell];
+        
+        const color = getColorForEvaporation(evaporation, isWater);
+        data[idx] = color.r;
+        data[idx + 1] = color.g;
+        data[idx + 2] = color.b;
+        data[idx + 3] = 255; // Alpha
+      }
     }
+    
+    ctx.putImageData(imageData, 0, 0);
+    console.log("Evaporation map complete");
+  }
 
-    // Set the evaporation map
-    evaporationConfig.map = evaporationMap;
+  /**
+   * Render the snowfall/perennial snow map using CellDataModel
+   * Uses mass balance data for accurate visualization:
+   * - Accumulation (A) = P × f_snow (precipitation × snow fraction)
+   * - Ablation (B) = M + S (melt + sublimation)
+   * - Mass balance b = A - B
+   * - Perennial snow where b ≥ 0 OR fast-rule conditions met
+   *
+   * @param {object} mapConfig - The map configuration (used for compatibility)
+   * @param {object} imageConfig - The image configuration
+   */
+  function generateAndRenderSnowfallMap(
+    mapConfig,
+    imageConfig,
+    heightMap,
+    waterLevel,
+    temperatureMap
+  ) {
+    console.log("Rendering snowfall/perennial snow map from CellDataModel...");
 
-    // Create the evaporation image
-    const evaporationImage = new_image(
-      "evaporation-map",
-      imageConfig.width,
-      imageConfig.height
-    );
-
-    // Render the evaporation map with the appropriate projection
-    if (mapConfig.projection == "mercator") {
-      renderMercatorProjection(
-        evaporationImage,
-        evaporationConfig,
-        imageConfig
-      );
-    } else if (mapConfig.projection == "transmerc") {
-      renderTransverseMercatorProjection(
-        evaporationImage,
-        evaporationConfig,
-        imageConfig
-      );
-    } else if (mapConfig.projection == "icosahedral") {
-      renderIcosahedralProjection(
-        evaporationImage,
-        evaporationConfig,
-        imageConfig
-      );
-    } else if (mapConfig.projection == "mollweide") {
-      renderMollweideProjection(
-        evaporationImage,
-        evaporationConfig,
-        imageConfig
-      );
-    } else if (mapConfig.projection == "sinusoidal") {
-      renderSinusoidalProjection(
-        evaporationImage,
-        evaporationConfig,
-        imageConfig
-      );
-    } else {
-      // Default square projection
-      renderSquareProjection(evaporationImage, evaporationConfig, imageConfig);
+    const canvas = $('snowfall-map');
+    if (!canvas) {
+      console.warn('snowfall-map canvas not found');
+      return;
     }
-
-    console.log("Drawing evaporation map...");
-    // Draw the pixels to the canvas
-    draw_pixels(evaporationImage);
+    
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    // Check if cell data is available
+    if (!window.worldCellData) {
+      ctx.fillStyle = '#888';
+      ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Cell data not available', 10, 20);
+      return;
+    }
+    
+    const cellData = window.worldCellData;
+    const seaLevel = cellData.config.seaLevel;
+    
+    // Find mass balance range for normalization (land cells only)
+    let minBalance = Infinity, maxBalance = -Infinity;
+    for (let cell = 0; cell < cellData.cellCount; cell++) {
+      if (cellData.cellElevation[cell] >= seaLevel) {
+        const mb = cellData.snowMassBalance[cell];
+        if (mb < minBalance) minBalance = mb;
+        if (mb > maxBalance) maxBalance = mb;
+      }
+    }
+    
+    // Ensure we have a valid range
+    if (!isFinite(minBalance)) minBalance = -1000;
+    if (!isFinite(maxBalance)) maxBalance = 1000;
+    const balanceRange = maxBalance - minBalance || 1;
+    
+    console.log(`Mass balance range: ${minBalance.toFixed(0)} to ${maxBalance.toFixed(0)} mm/yr`);
+    
+    // Color gradient for mass balance visualization
+    // Negative balance (melt zones) → warm browns/yellows
+    // Zero balance → gray transition  
+    // Positive balance (accumulation zones) → blues/white
+    const getColorForMassBalance = (massBalance, hasPerennialSnow) => {
+      // Normalize to 0-1 range
+      const normalized = (massBalance - minBalance) / balanceRange;
+      
+      // If perennial snow, ensure it shows in the upper color range
+      if (hasPerennialSnow) {
+        // Perennial snow: light blue to white
+        const t = Math.max(0.6, normalized); // At least 60% up the scale
+        const r = Math.floor(200 + t * 55);
+        const g = Math.floor(220 + t * 35);
+        const b = 255;
+        return { r, g, b };
+      }
+      
+      if (normalized < 0.3) {
+        // Heavy melt zone: brown to tan
+        const t = normalized / 0.3;
+        return {
+          r: Math.floor(139 + t * 80),  // 139 → 219
+          g: Math.floor(69 + t * 110),  // 69 → 179
+          b: Math.floor(19 + t * 80)    // 19 → 99
+        };
+      } else if (normalized < 0.5) {
+        // Moderate melt: tan to yellow/beige
+        const t = (normalized - 0.3) / 0.2;
+        return {
+          r: Math.floor(219 + t * 21),  // 219 → 240
+          g: Math.floor(179 + t * 46),  // 179 → 225
+          b: Math.floor(99 + t * 60)    // 99 → 159
+        };
+      } else if (normalized < 0.6) {
+        // Near-zero: beige to light gray
+        const t = (normalized - 0.5) / 0.1;
+        return {
+          r: Math.floor(240 - t * 8),   // 240 → 232
+          g: Math.floor(225 + t * 7),   // 225 → 232
+          b: Math.floor(159 + t * 81)   // 159 → 240
+        };
+      } else {
+        // Positive balance: gray to blue to white
+        const t = (normalized - 0.6) / 0.4;
+        return {
+          r: Math.floor(232 - t * 32),  // 232 → 200 → increases again
+          g: Math.floor(232 - t * 12),  // 232 → 220
+          b: 255                         // Stay blue
+        };
+      }
+    };
+    
+    // Create image data
+    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
+    const data = imageData.data;
+    
+    // Render based on cell data
+    const scaleX = cellData.cols / imageConfig.width;
+    const scaleY = cellData.rows / imageConfig.height;
+    
+    for (let y = 0; y < imageConfig.height; y++) {
+      for (let x = 0; x < imageConfig.width; x++) {
+        // Map pixel to cell
+        const col = Math.floor(x * scaleX);
+        const row = Math.floor(y * scaleY);
+        const cell = row * cellData.cols + col;
+        
+        const idx = (y * imageConfig.width + x) * 4;
+        const elevation = cellData.cellElevation[cell];
+        
+        if (elevation < seaLevel) {
+          // Ocean - dark blue
+          data[idx] = 32;
+          data[idx + 1] = 48;
+          data[idx + 2] = 80;
+        } else {
+          // Land - color by mass balance
+          const massBalance = cellData.snowMassBalance[cell];
+          const hasSnow = cellData.hasPerennialSnow[cell] === 1;
+          const color = getColorForMassBalance(massBalance, hasSnow);
+          data[idx] = color.r;
+          data[idx + 1] = color.g;
+          data[idx + 2] = color.b;
+        }
+        data[idx + 3] = 255; // Alpha
+      }
+    }
+    
+    ctx.putImageData(imageData, 0, 0);
+    console.log("Snowfall/perennial snow map complete");
   }
 
   /**
@@ -3048,8 +3244,8 @@
       erosion.lakeThreshold || 0.01
     );
     
-    // Render polar ice cover map
-    renderIceCoverMap(
+    // Render ice cap classification map (mass-balance driven)
+    renderIceCapClassificationMap(
       mapConfig,
       imageConfig
     );
@@ -3194,286 +3390,103 @@
   }
   
   /**
-   * Render the polar ice cover map
-   * Shows only ice/snow areas on a neutral background (no terrain)
+   * Render the ice cap classification map
+   * Shows ice caps, glaciers, and perennial snowfields using mass-balance driven classification
    */
-  function renderIceCoverMap(mapConfig, imageConfig) {
-    console.log('Rendering polar ice cover map...');
+  function renderIceCapClassificationMap(mapConfig, imageConfig) {
+    console.log('Rendering ice cap classification map...');
     
-    const canvas = $('ice-cover-map');
+    const canvas = $('icecap-map');
+    if (!canvas) {
+      console.warn('icecap-map canvas not found');
+      return;
+    }
+    
     canvas.width = imageConfig.width;
     canvas.height = imageConfig.height;
     const ctx = canvas.getContext('2d');
     
-    // Fill with neutral background (light gray)
-    ctx.fillStyle = '#e8e8e8';
-    ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+    // Check if cell data is available
+    if (!window.worldCellData) {
+      ctx.fillStyle = '#888';
+      ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Cell data not available', 10, 20);
+      return;
+    }
     
-    // Render only ice areas with projection
-    renderProjectedIceCover(ctx, mapConfig, imageConfig);
-  }
-  
-  /**
-   * Render projected ice cover (ice areas only)
-   * Uses actual palette colors to match World Map appearance
-   */
-  function renderProjectedIceCover(ctx, mapConfig, imageConfig) {
-    const projection = mapConfig.projection || 'square';
-    const palette = mapConfig.palette;
-    const iceIdx = palette.ice_idx;
-    const colorMap = palette.cmap; // Use actual palette colors like World Map
+    const cellData = window.worldCellData;
+    const seaLevel = cellData.config.seaLevel;
     
-    if (projection === 'mollweide') {
-      renderMollweideIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
-    } else if (projection === 'sinusoidal') {
-      renderSinusoidalIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
-    } else if (projection === 'mercator') {
-      renderMercatorIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
-    } else if (projection === 'transmerc') {
-      renderTransMercIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
-    } else if (projection === 'icosahedral') {
-      renderIcosahedralIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
-    } else {
-      renderSquareIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
+    // Colors for different ice classifications
+    const colors = {
+      ocean: '#304060',           // Dark blue for ocean
+      land: '#B8A090',            // Tan/brown for bare land
+      snowfield: '#E0E0E8',       // Light gray for perennial snowfields
+      glacier: '#88B8F0',         // Blue for glaciers
+      iceCap: '#F0FFFF'           // Near-white for ice caps
+    };
+    
+    // Create image data
+    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
+    const data = imageData.data;
+    
+    // Render based on projection
+    const scaleX = cellData.cols / imageConfig.width;
+    const scaleY = cellData.rows / imageConfig.height;
+    
+    for (let y = 0; y < imageConfig.height; y++) {
+      for (let x = 0; x < imageConfig.width; x++) {
+        // Map pixel to cell
+        const col = Math.floor(x * scaleX);
+        const row = Math.floor(y * scaleY);
+        const cell = row * cellData.cols + col;
+        
+        let color;
+        const elevation = cellData.cellElevation[cell];
+        
+        if (elevation < seaLevel) {
+          // Ocean
+          color = colors.ocean;
+        } else if (cellData.isIceCap[cell] === 1) {
+          // Ice cap
+          color = colors.iceCap;
+        } else if (cellData.isGlacier[cell] === 1) {
+          // Glacier
+          color = colors.glacier;
+        } else if (cellData.hasPerennialSnow[cell] === 1) {
+          // Perennial snowfield
+          color = colors.snowfield;
+        } else {
+          // Bare land
+          color = colors.land;
+        }
+        
+        // Parse color and set pixel
+        const idx = (y * imageConfig.width + x) * 4;
+        const rgb = hexToRgb(color);
+        data[idx] = rgb.r;
+        data[idx + 1] = rgb.g;
+        data[idx + 2] = rgb.b;
+        data[idx + 3] = 255;
+      }
     }
+    
+    ctx.putImageData(imageData, 0, 0);
+    console.log('Ice cap classification map complete');
   }
   
   /**
-   * Render square projection ice cover
-   * Uses exact same logic as renderSquareProjection but only renders ice pixels
+   * Helper to convert hex color to RGB
    */
-  function renderSquareIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    // Exact same loop structure as renderSquareProjection
-    for (var row = 0; row < imageConfig.width; row++) {
-      for (var col = 0; col < imageConfig.height; col++) {
-        var pixelValue = getRotatedMapValue(mapConfig, col, row);
-        // Only difference: filter for ice pixels only
-        if (pixelValue >= iceIdx) {
-          ctx.fillStyle = colorMap[pixelValue];
-          ctx.fillRect(row, col, 1, 1);
-        }
-      }
-    }
-  }
-  
-  /**
-   * Render Mollweide projection ice cover
-   * Uses exact same logic as renderMollweideProjection but only renders ice pixels
-   */
-  function renderMollweideIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    // Exact same precalculation as renderMollweideProjection
-    for (var row = 0; row < imageConfig.height; row++) {
-      sinFactors[row] = Math.sqrt(
-        Math.sin((row / imageConfig.height) * Math.PI)
-      );
-      ellipseWidths[row] = Math.floor(imageConfig.wd2 * sinFactors[row]);
-
-      var theta = Math.asin(
-        (2.8284271247 * (0.5 - row / imageConfig.height)) / Math.sqrt(2)
-      );
-      rowPositions[row] = Math.floor(
-        (0.5 -
-          Math.asin((2 * theta + Math.sin(2 * theta)) / Math.PI) / Math.PI) *
-          mapConfig.rows
-      );
-    }
-
-    // Exact same pixel mapping loop as renderMollweideProjection
-    for (row = 0; row < imageConfig.width; row++) {
-      for (var col = 0; col < imageConfig.height; col++) {
-        var pixelValue = 0;
-
-        if (
-          row > imageConfig.wd2 - ellipseWidths[col] &&
-          row < imageConfig.wd2 + ellipseWidths[col]
-        ) {
-          pixelValue = getRotatedMapValue(
-            mapConfig,
-            rowPositions[col],
-            Math.floor((row - imageConfig.wd2) / sinFactors[col]) +
-              mapConfig.cd2
-          );
-        }
-
-        // Only difference: filter for ice pixels only
-        if (pixelValue >= iceIdx) {
-          ctx.fillStyle = colorMap[pixelValue];
-          ctx.fillRect(row, col, 1, 1);
-        }
-      }
-    }
-  }
-  
-  /**
-   * Render Sinusoidal projection ice cover
-   * Uses exact same logic as renderSinusoidalProjection but only renders ice pixels
-   */
-  function renderSinusoidalIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    // Exact same precalculation as renderSinusoidalProjection
-    for (var row = 0; row < imageConfig.height; row++) {
-      sinFactors[row] = Math.sin((row / imageConfig.height) * Math.PI);
-      ellipseWidths[row] = Math.floor(imageConfig.wd2 * sinFactors[row]);
-    }
-
-    // Exact same pixel mapping loop as renderSinusoidalProjection
-    for (row = 0; row < imageConfig.width; row++) {
-      for (var col = 0; col < imageConfig.height; col++) {
-        var pixelValue = 0;
-
-        if (
-          row > imageConfig.wd2 - ellipseWidths[col] &&
-          row < imageConfig.wd2 + ellipseWidths[col]
-        ) {
-          pixelValue = getRotatedMapValue(
-            mapConfig,
-            col,
-            Math.floor((row - imageConfig.wd2) / sinFactors[col]) +
-              mapConfig.cd2
-          );
-        }
-
-        // Only difference: filter for ice pixels only
-        if (pixelValue >= iceIdx) {
-          ctx.fillStyle = colorMap[pixelValue];
-          ctx.fillRect(row, col, 1, 1);
-        }
-      }
-    }
-  }
-  
-  /**
-   * Render Mercator projection ice cover
-   * Uses exact same logic as renderMercatorProjection but only renders ice pixels
-   */
-  function renderMercatorIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    // Exact same precalculations as renderMercatorProjection
-    for (var row = 0; row < imageConfig.width; row++) {
-      columnPositions[row] = Math.floor(
-        (row / imageConfig.width) * mapConfig.cols
-      );
-    }
-
-    for (row = 0; row < imageConfig.height; row++) {
-      rowPositions[row] = Math.floor(
-        (0.5 -
-          Math.atan(Math.sinh((0.5 - row / imageConfig.height) * Math.PI)) /
-            Math.PI) *
-          mapConfig.rows
-      );
-    }
-
-    // Exact same pixel mapping loop as renderMercatorProjection
-    for (row = 0; row < imageConfig.width; row++) {
-      for (var col = 0; col < imageConfig.height; col++) {
-        var pixelValue = getRotatedMapValue(
-          mapConfig,
-          rowPositions[col],
-          columnPositions[row]
-        );
-        // Only difference: filter for ice pixels only
-        if (pixelValue >= iceIdx) {
-          ctx.fillStyle = colorMap[pixelValue];
-          ctx.fillRect(row, col, 1, 1);
-        }
-      }
-    }
-  }
-  
-  /**
-   * Render Transverse Mercator projection ice cover
-   * Uses exact same logic as renderTransverseMercatorProjection but only renders ice pixels
-   */
-  function renderTransMercIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    // Exact same loop structure and calculations as renderTransverseMercatorProjection
-    for (var row = 0; row < imageConfig.width; row++) {
-      for (var col = 0; col < imageConfig.height; col++) {
-        var angle = (row / imageConfig.width) * 2 * Math.PI;
-        var lat = 4 * (col / imageConfig.height - 0.5);
-        var lon = Math.atan(Math.sinh(lat) / Math.cos(angle));
-        var halfPi = Math.PI / 2;
-
-        if (angle > halfPi && angle <= 3 * halfPi) {
-          lon += Math.PI;
-        }
-
-        var pixelValue = getRotatedMapValue(
-          mapConfig,
-          Math.floor(
-            (0.5 - Math.asin(Math.sin(angle) / Math.cosh(lat)) / Math.PI) *
-              mapConfig.rows
-          ),
-          Math.floor((lon / (2 * Math.PI)) * mapConfig.cols)
-        );
-
-        // Only difference: filter for ice pixels only
-        if (pixelValue >= iceIdx) {
-          ctx.fillStyle = colorMap[pixelValue];
-          ctx.fillRect(row, col, 1, 1);
-        }
-      }
-    }
-  }
-  
-  /**
-   * Render Icosahedral projection ice cover
-   * Uses exact same logic as renderIcosahedralProjection but only renders ice pixels
-   */
-  function renderIcosahedralIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
-    // Exact same loop structure and calculations as renderIcosahedralProjection
-    for (var row = 0; row < imageConfig.width; row++) {
-      for (var col = 0; col < imageConfig.height; col++) {
-        var colIndex = Math.floor(row / imageConfig.col_w);
-        var rowIndex = Math.floor(col / imageConfig.row_h);
-        var colOffset = Math.floor(row - colIndex * imageConfig.col_w);
-        var rowOffset = Math.floor(
-          0.5773502692 * Math.floor(col - rowIndex * imageConfig.row_h)
-        );
-        let pixelIndex = -1;
-
-        if ((rowIndex + colIndex) % 2 == 0) {
-          colOffset = Math.floor(imageConfig.col_w - colOffset);
-        }
-
-        // Complex icosahedral mapping logic (identical to World Map)
-        if (rowIndex == 0) {
-          if (colIndex < 10 && colOffset < rowOffset) {
-            pixelIndex = Math.floor(
-              (colOffset / rowOffset) * imageConfig.col_w
-            );
-          }
-        } else if (rowIndex == 1) {
-          if (colIndex == 0) {
-            if (colOffset > rowOffset) {
-              pixelIndex = colOffset;
-            }
-          } else if (colIndex < 10) {
-            pixelIndex = colOffset;
-          } else if (colIndex == 10 && colOffset < rowOffset) {
-            pixelIndex = colOffset;
-          }
-        } else if (rowIndex == 2 && colIndex > 0 && colOffset > rowOffset) {
-          colOffset = Math.floor(imageConfig.col_w - colOffset);
-          rowOffset = Math.floor(imageConfig.col_w - rowOffset);
-          pixelIndex = Math.floor((colOffset / rowOffset) * imageConfig.col_w);
-          pixelIndex = Math.floor(imageConfig.col_w - pixelIndex);
-        }
-
-        var pixelValue = 0;
-        if (pixelIndex > -1) {
-          if ((rowIndex + colIndex) % 2 == 0) {
-            pixelIndex = Math.floor(imageConfig.col_w - pixelIndex);
-          }
-          pixelIndex += Math.floor(colIndex * imageConfig.col_w);
-          pixelValue = getRotatedMapValue(mapConfig, col, pixelIndex);
-        }
-
-        // Only difference: filter for ice pixels only
-        if (pixelValue >= iceIdx) {
-          ctx.fillStyle = colorMap[pixelValue];
-          ctx.fillRect(row, col, 1, 1);
-        }
-      }
-    }
+  function hexToRgb(hex) {
+    const result = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    return result ? {
+      r: parseInt(result[1], 16),
+      g: parseInt(result[2], 16),
+      b: parseInt(result[3], 16)
+    } : { r: 0, g: 0, b: 0 };
   }
   
   /**

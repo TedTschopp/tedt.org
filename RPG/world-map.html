@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta charset="UTF-8">
     <title>Fractal World Generator v1.0.2</title>
     <script type="text/javascript">
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -275,6 +276,59 @@
         [0xFF,0xFF,0xC0], [0xFF,0xFF,0xD0], [0xFF,0xFF,0xE0],
         [0xFF,0xFF,0xF0]
       ]
+    },
+    // Snowfall palette: blue gradient for snow accumulation, warm colors for melt areas
+    // Perennial snow (positive mass balance) shown in white/light blue
+    'snowfall': {
+      'title':          'Snowfall & Perennial Snow',
+      'set':            { 'pct_ice': 0 },
+      'sea': [
+        // Ocean - dark blue gradient (not relevant for snow)
+        [0x20,0x30,0x50], [0x24,0x34,0x54], [0x28,0x38,0x58],
+        [0x2C,0x3C,0x5C], [0x30,0x40,0x60], [0x34,0x44,0x64],
+        [0x38,0x48,0x68], [0x3C,0x4C,0x6C], [0x40,0x50,0x70],
+        [0x44,0x54,0x74], [0x48,0x58,0x78], [0x4C,0x5C,0x7C],
+        [0x50,0x60,0x80], [0x54,0x64,0x84], [0x58,0x68,0x88]
+      ],
+      'land': [
+        // Negative mass balance (heavy melt) - warm/brown colors
+        [0x8B,0x45,0x13], [0x9C,0x55,0x21], [0xAD,0x65,0x2F],
+        [0xBE,0x75,0x3D], [0xCF,0x85,0x4B], [0xD4,0x95,0x60],
+        // Near-zero balance - yellow/beige transition
+        [0xDA,0xA5,0x75], [0xE0,0xB5,0x8A], [0xE6,0xC5,0x9F],
+        // Low positive balance - light blue/gray
+        [0xE8,0xE8,0xF0], [0xD8,0xE4,0xF0], [0xC8,0xDC,0xF4],
+        // Moderate positive - blue tones
+        [0xB0,0xD0,0xF8], [0x98,0xC8,0xFC],
+        // High positive balance (deep snow) - bright blue to white
+        [0x80,0xC0,0xFF], [0xF0,0xF8,0xFF]  // Last = perennial snow white
+      ]
+    },
+    // Ice cap classification palette
+    // Shows ice caps (white), glaciers (blue), perennial snow (light gray), bare land (brown)
+    'icecap': {
+      'title':          'Ice Cap Classification',
+      'set':            { 'pct_ice': 0 },
+      'sea': [
+        // Ocean - dark blue gradient
+        [0x20,0x30,0x50], [0x24,0x34,0x54], [0x28,0x38,0x58],
+        [0x2C,0x3C,0x5C], [0x30,0x40,0x60], [0x34,0x44,0x64],
+        [0x38,0x48,0x68], [0x3C,0x4C,0x6C], [0x40,0x50,0x70],
+        [0x44,0x54,0x74], [0x48,0x58,0x78], [0x4C,0x5C,0x7C],
+        [0x50,0x60,0x80], [0x54,0x64,0x84], [0x58,0x68,0x88]
+      ],
+      'land': [
+        // Bare land - brown/tan gradient (indices 0-7)
+        [0x8B,0x73,0x55], [0x9C,0x82,0x64], [0xAD,0x91,0x73],
+        [0xBE,0xA0,0x82], [0xCF,0xAF,0x91], [0xD4,0xBE,0xA0],
+        [0xDA,0xCD,0xAF], [0xE0,0xDC,0xBE],
+        // Perennial snowfield - light gray/white (indices 8-10)
+        [0xD0,0xD0,0xD8], [0xE0,0xE0,0xE8], [0xEA,0xEA,0xF0],
+        // Glacier - blue tones (indices 11-13)
+        [0x70,0xA0,0xE0], [0x88,0xB8,0xF0], [0xA0,0xD0,0xFF],
+        // Ice cap - bright white/cyan (indices 14-15)
+        [0xE8,0xF8,0xFF], [0xF8,0xFF,0xFF]
+      ]
     }
   };
     </script>
@@ -505,6 +559,15 @@
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
 
+      <h2>Snowfall & Perennial Snow Map</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        Mass balance model: Perennial snow (white) exists where annual accumulation ≥ ablation (melt + sublimation).
+        Blue gradient shows snow accumulation; warmer colors show areas with net melt.
+      </p>
+      <canvas id="snowfall-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+
       <div id="simulation-status" style="margin: 20px 0; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif;">
         <output id="sim_time_readout" style="font-weight: 600; color: #333;">Simulation: Ready</output>
         <span id="sim_progress_readout" style="margin-left: 12px; color: #666;"></span>
@@ -525,8 +588,13 @@
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
 
-      <h2>Polar Ice Cover</h2>
-      <canvas id="ice-cover-map" width="1" height="1">
+      <h2>Ice Cap Classification</h2>
+      <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+        Mass-balance driven classification: <span style="color: #F8FFFF;">■</span> Ice Caps (large, low-relief, thick),
+        <span style="color: #88B8F0;">■</span> Glaciers (smaller/steeper),
+        <span style="color: #E0E0E8;">■</span> Perennial Snowfields.
+      </p>
+      <canvas id="icecap-map" width="1" height="1">
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
 
@@ -543,7 +611,6 @@
       <h2>Islands-Style WebGL Terrain</h2>
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated terrain rendering with elevation-based coloring, hillshade, and water effects.
-        Based on the <a href="https://github.com/TedTschopp/Islands" target="_blank" rel="noopener">TedTschopp/Islands</a> rendering approach.
       </p>
       <canvas id="islands-webgl-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
         <p>Your web browser does not appear to support WebGL.</p>
@@ -702,23 +769,53 @@
           const cell = row * cellData.cols + col;
           const info = cellData.getCellInfo(cell);
           
-          // Format tooltip similar to Islands
+          // Format tooltip with full layer stack
           const lines = [];
           lines.push(`Cell ${info.cell} (${info.status})`);
-          lines.push(`Surface: ${info.surface.toFixed(1)} m  (${info.surfaceVsSea >= 0 ? '+' : ''}${info.surfaceVsSea.toFixed(1)} m vs sea level)`);
-          lines.push(`Ground:  ${info.ground.toFixed(1)} m`);
-          if (info.water > 0.01) {
-            lines.push(`Water:   ${info.water.toFixed(1)} m`);
-          }
-          lines.push(`Bedrock: ${info.bedrock.toFixed(1)} m, Sediment: ${info.sediment.toFixed(1)} m`);
-          if (info.ice > 0.01) {
-            lines.push(`Ice:     ${info.ice.toFixed(1)} m`);
-          }
-          lines.push(`Sea level: ${info.seaLevel.toFixed(1)} m`);
           lines.push('');
-          lines.push(`Temperature: ${info.temperature.toFixed(1)}°C`);
+          
+          // Layer stack (bottom to top) with elevation and thickness
+          lines.push('─── Layer Stack ───');
+          lines.push(`  Bedrock surface: ${info.bedrockSurface.toFixed(1)} m`);
+          lines.push(`  + Sediment: ${info.sedimentThickness.toFixed(1)} m → Ground: ${info.groundElevation.toFixed(1)} m`);
+          if (info.waterThickness > 0.01) {
+            const waterLabel = info.waterType ? `+ ${info.waterType}` : '+ Water';
+            lines.push(`  ${waterLabel}: ${info.waterThickness.toFixed(1)} m → Surface: ${info.waterElevation.toFixed(1)} m`);
+          }
+          if (info.iceThickness > 0.01) {
+            const iceLabel = info.iceType ? `+ ${info.iceType}` : '+ Ice';
+            lines.push(`  ${iceLabel}: ${info.iceThickness.toFixed(1)} m → Top: ${info.iceElevation.toFixed(1)} m`);
+          }
+          if (info.snowThickness > 0.01) {
+            lines.push(`  + Snow: ${info.snowThickness.toFixed(1)} m → Top: ${info.snowElevation.toFixed(1)} m`);
+          }
+          lines.push('');
+          lines.push(`Overall Elevation: ${info.surface.toFixed(1)} m`);
+          lines.push(`Sea Level: ${info.seaLevel.toFixed(1)} m (${info.surfaceVsSea >= 0 ? '+' : ''}${info.surfaceVsSea.toFixed(1)} m vs sea)`);
+          lines.push('');
+          
+          // Climate data
+          lines.push(`Temperature: ${info.temperature.toFixed(1)}°C (warmest: ${info.warmestMonthTemp.toFixed(1)}°C)`);
           lines.push(`Rainfall: ${info.rainfall.toFixed(0)} mm/year`);
           lines.push(`Evaporation: ${info.evaporation.toFixed(0)} mm/year`);
+          lines.push('');
+          
+          // Mass balance
+          lines.push(`Snow fraction: ${(info.snowFraction * 100).toFixed(0)}%`);
+          lines.push(`Accum: ${info.snowAccumulation.toFixed(0)} mm, Ablation: ${info.snowAblation.toFixed(0)} mm`);
+          lines.push(`Balance: ${info.snowMassBalance >= 0 ? '+' : ''}${info.snowMassBalance.toFixed(0)} mm/yr`);
+          if (info.localRelief > 0) {
+            lines.push(`Local relief: ${info.localRelief.toFixed(0)} m`);
+          }
+          
+          // Ice classification
+          if (info.isIceCap) {
+            lines.push('🏔️ ICE CAP (patch #' + info.icePatchId + ')');
+          } else if (info.isGlacier) {
+            lines.push('🧊 GLACIER (patch #' + info.icePatchId + ')');
+          } else if (info.hasPerennialSnow) {
+            lines.push('❄️ PERENNIAL SNOW');
+          }
           
           cellInfoEl.textContent = lines.join('\n');
         }
