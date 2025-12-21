@@ -3145,43 +3145,43 @@
   
   /**
    * Render projected ice cover (ice areas only)
+   * Uses actual palette colors to match World Map appearance
    */
   function renderProjectedIceCover(ctx, mapConfig, imageConfig) {
     const projection = mapConfig.projection || 'square';
     const palette = mapConfig.palette;
     const iceIdx = palette.ice_idx;
-    
-    // Ice color - white/light blue tint
-    const iceColor = { r: 240, g: 248, b: 255 }; // AliceBlue - slight blue tint
+    const colorMap = palette.cmap; // Use actual palette colors like World Map
     
     if (projection === 'mollweide') {
-      renderMollweideIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+      renderMollweideIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
     } else if (projection === 'sinusoidal') {
-      renderSinusoidalIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+      renderSinusoidalIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
     } else if (projection === 'mercator') {
-      renderMercatorIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+      renderMercatorIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
     } else if (projection === 'transmerc') {
-      renderTransMercIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+      renderTransMercIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
     } else if (projection === 'icosahedral') {
-      renderIcosahedralIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+      renderIcosahedralIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
     } else {
-      renderSquareIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+      renderSquareIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap);
     }
   }
   
   /**
    * Render square projection ice cover
    * Uses getRotatedMapValue for proper rotation handling (same as World Map)
+   * Uses actual palette colors for each ice pixel
    */
-  function renderSquareIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+  function renderSquareIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
     for (let row = 0; row < imageConfig.width; row++) {
       for (let col = 0; col < imageConfig.height; col++) {
         // Get map value using rotation-aware function (same pattern as renderSquareProjection)
         const mapValue = getRotatedMapValue(mapConfig, col, row);
         
-        // Only show ice (map value >= ice_idx)
+        // Only show ice (map value >= ice_idx), use actual palette color
         if (mapValue >= iceIdx) {
-          ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+          ctx.fillStyle = colorMap[mapValue];
           ctx.fillRect(row, col, 1, 1);
         }
       }
@@ -3191,8 +3191,9 @@
   /**
    * Render Mollweide projection ice cover
    * Uses getRotatedMapValue for proper rotation handling
+   * Uses actual palette colors for each ice pixel
    */
-  function renderMollweideIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+  function renderMollweideIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
     const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
     
     for (let row = 0; row < imageConfig.height; row++) {
@@ -3214,8 +3215,9 @@
           // Use getRotatedMapValue for proper rotation handling
           const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
           
+          // Only show ice, use actual palette color
           if (mapValue >= iceIdx) {
-            ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+            ctx.fillStyle = colorMap[mapValue];
             ctx.fillRect(row, col, 1, 1);
           }
         }
@@ -3226,8 +3228,9 @@
   /**
    * Render Sinusoidal projection ice cover
    * Uses getRotatedMapValue for proper rotation handling
+   * Uses actual palette colors for each ice pixel
    */
-  function renderSinusoidalIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+  function renderSinusoidalIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
     const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
     
     for (let row = 0; row < imageConfig.height; row++) {
@@ -3244,8 +3247,9 @@
           // Use getRotatedMapValue for proper rotation handling
           const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
           
+          // Only show ice, use actual palette color
           if (mapValue >= iceIdx) {
-            ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+            ctx.fillStyle = colorMap[mapValue];
             ctx.fillRect(row, col, 1, 1);
           }
         }
@@ -3256,8 +3260,9 @@
   /**
    * Render Mercator projection ice cover
    * Uses getRotatedMapValue for proper rotation handling
+   * Uses actual palette colors for each ice pixel
    */
-  function renderMercatorIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+  function renderMercatorIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
     for (let row = 0; row < imageConfig.height; row++) {
       rowPositions[row] = Math.floor(
         (0.5 - Math.atan(Math.sinh((0.5 - row / imageConfig.height) * Math.PI)) / Math.PI) * mapConfig.rows
@@ -3272,8 +3277,9 @@
         // Use getRotatedMapValue for proper rotation handling
         const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
         
+        // Only show ice, use actual palette color
         if (mapValue >= iceIdx) {
-          ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+          ctx.fillStyle = colorMap[mapValue];
           ctx.fillRect(row, col, 1, 1);
         }
       }
@@ -3283,8 +3289,9 @@
   /**
    * Render Transverse Mercator projection ice cover
    * Uses getRotatedMapValue for proper rotation handling
+   * Uses actual palette colors for each ice pixel
    */
-  function renderTransMercIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+  function renderTransMercIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
     const hd2 = imageConfig.hd2 || Math.floor(imageConfig.height / 2);
     const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
     const scale = 0.5;
@@ -3307,8 +3314,9 @@
         // Use getRotatedMapValue for proper rotation handling
         const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
         
+        // Only show ice, use actual palette color
         if (mapValue >= iceIdx) {
-          ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+          ctx.fillStyle = colorMap[mapValue];
           ctx.fillRect(screenX, screenY, 1, 1);
         }
       }
@@ -3318,15 +3326,17 @@
   /**
    * Render Icosahedral projection ice cover
    * Uses getRotatedMapValue for proper rotation handling
+   * Uses actual palette colors for each ice pixel
    */
-  function renderIcosahedralIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+  function renderIcosahedralIceCover(ctx, mapConfig, imageConfig, iceIdx, colorMap) {
     for (let row = 0; row < imageConfig.width; row++) {
       for (let col = 0; col < imageConfig.height; col++) {
         // Use getRotatedMapValue for proper rotation handling (same pattern as square)
         const mapValue = getRotatedMapValue(mapConfig, col, row);
         
+        // Only show ice, use actual palette color
         if (mapValue >= iceIdx) {
-          ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+          ctx.fillStyle = colorMap[mapValue];
           ctx.fillRect(row, col, 1, 1);
         }
       }
