@@ -42,7 +42,7 @@
     'enable_hack_theta': true, // Default theta hack setting
     'ocean_currents':    true, // Default ocean currents setting
     'enable_time_simulation': true, // Default time simulation setting
-    'time_passage':      5 // Default time passage in million years
+    'time_passage':      1.5 // Default time passage in million years
   };
   var max_height      = 1000;
   var max_iter        = 25000;
@@ -423,8 +423,8 @@
           <td class="key">Time (Million Years):</td>
           <td class="value">
             <div class="slider-container">
-              <input type="range" id="time_passage" min="0" max="50" step="1" class="slider" value="5" />
-              <span id="time_passage_value" class="slider-value">5 MY</span>
+              <input type="range" id="time_passage" min="0" max="50" step="0.5" class="slider" value="1.5" />
+              <span id="time_passage_value" class="slider-value">1.5 MY</span>
             </div>
           </td>
         </tr>
@@ -483,11 +483,11 @@
       <canvas id="evaporation-map" width="1" height="1">
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
-      
-      <h2>Lake Map</h2>
-      <canvas id="lake-map" width="1" height="1">
-        <p>Your web browser does not appear to support HTML5 canvas.</p>
-      </canvas>
+
+      <div id="simulation-status" style="margin: 20px 0; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif;">
+        <output id="sim_time_readout" style="font-weight: 600; color: #333;">Simulation: Ready</output>
+        <span id="sim_progress_readout" style="margin-left: 12px; color: #666;"></span>
+      </div>
 
       <h2>River Map</h2>
       <canvas id="river-map" width="1" height="1">
@@ -496,6 +496,16 @@
 
       <h2>Coastline Map</h2>
       <canvas id="coastline-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+
+      <h2>Water Cover Map</h2>
+      <canvas id="lake-map" width="1" height="1">
+        <p>Your web browser does not appear to support HTML5 canvas.</p>
+      </canvas>
+
+      <h2>Polar Ice Cover</h2>
+      <canvas id="ice-cover-map" width="1" height="1">
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
 

@@ -430,6 +430,9 @@ class ErosionSimulation {
     
     _buildNeighborGraph() {
         // 8-connectivity neighbor offsets
+        // For a spherical/cylindrical projection:
+        // - Horizontal (left-right) wraps around
+        // - Vertical (top-bottom) are the poles and don't wrap
         const offsets = [
             [-1, -1], [-1, 0], [-1, 1],
             [0, -1],           [0, 1],
@@ -443,23 +446,50 @@ class ErosionSimulation {
                 
                 for (const [dr, dc] of offsets) {
                     const nr = row + dr;
-                    const nc = col + dc;
+                    // Wrap column horizontally (cylindrical/spherical projection)
+                    const nc = (col + dc + this.cols) % this.cols;
                     
-                    if (nr >= 0 && nr < this.rows && nc >= 0 && nc < this.cols) {
-                        const neighbor = nr * this.cols + nc;
-                        const position = cell * this.maxNeighbors + neighborCount;
-                        
-                        this.cellNeighbors[position] = neighbor;
-                        
-                        // Calculate distance (diagonal vs cardinal)
-                        const dist = Math.sqrt(dr * dr + dc * dc);
-                        this.cellNeighborDistance[position] = dist;
-                        
-                        neighborCount++;
-                    }
+                    // Rows (latitude) don't wrap - top/bottom are poles
+                    if (nr < 0 || nr >= this.rows) continue;
+                    
+                    const neighbor = nr * this.cols + nc;
+                    const position = cell * this.maxNeighbors + neighborCount;
+                    
+                    this.cellNeighbors[position] = neighbor;
+                    
+                    // Calculate distance (diagonal vs cardinal)
+                    // For wrapped neighbors, distance is still the same
+                    const dist = Math.sqrt(dr * dr + dc * dc);
+                    this.cellNeighborDistance[position] = dist;
+                    
+                    // Track if this is a wrapped edge for rendering
+                    const isWrapped = (col + dc < 0 || col + dc >= this.cols);
+                    // Store wrapped flag in high bit of neighbor (we'll use this for rendering)
+                    // Actually, let's use a separate array for this
+                    
+                    neighborCount++;
                 }
                 
                 this.cellNeighborCount[cell] = neighborCount;
+            }
+        }
+        
+        // Build a lookup for which neighbor connections cross the map edge (for rendering)
+        this.neighborWrapped = new Uint8Array(this.cellCount * this.maxNeighbors);
+        for (let row = 0; row < this.rows; row++) {
+            for (let col = 0; col < this.cols; col++) {
+                const cell = row * this.cols + col;
+                const count = this.cellNeighborCount[cell];
+                
+                for (let i = 0; i < count; i++) {
+                    const position = cell * this.maxNeighbors + i;
+                    const neighbor = this.cellNeighbors[position];
+                    const neighborCol = neighbor % this.cols;
+                    
+                    // If columns differ by more than 1, it's a wrapped edge
+                    const colDiff = Math.abs(col - neighborCol);
+                    this.neighborWrapped[position] = (colDiff > 1) ? 1 : 0;
+                }
             }
         }
     }
@@ -520,14 +550,14 @@ class ErosionSimulation {
         }
         
         // Mark edge cells that are below sea level
+        // For spherical/cylindrical projection:
+        // - Left/right edges wrap around (no drain needed)
+        // - Top/bottom edges are poles (mark as ocean drain if below sea level)
         for (let col = 0; col < this.cols; col++) {
-            this._markEdgeCell(col); // Top row
-            this._markEdgeCell((this.rows - 1) * this.cols + col); // Bottom row
+            this._markEdgeCell(col); // Top row (north pole)
+            this._markEdgeCell((this.rows - 1) * this.cols + col); // Bottom row (south pole)
         }
-        for (let row = 0; row < this.rows; row++) {
-            this._markEdgeCell(row * this.cols); // Left column
-            this._markEdgeCell(row * this.cols + (this.cols - 1)); // Right column
-        }
+        // Note: Left and right columns are NOT marked as edges because they wrap horizontally
     }
     
     _markEdgeCell(cell) {
@@ -935,6 +965,37 @@ class ErosionSimulation {
     }
     
     /**
+     * Get the lake thickness map as a 2D array
+     * Lake thickness indicates depth of water above ground level for inland lakes
+     * @returns {number[][]} - 2D array of lake thickness values (0 = no lake)
+     */
+    getLakeThicknessMap() {
+        const map = [];
+        for (let row = 0; row < this.rows; row++) {
+            map[row] = [];
+            for (let col = 0; col < this.cols; col++) {
+                const cell = row * this.cols + col;
+                map[row][col] = this.lakeThicknessArray[cell];
+            }
+        }
+        return map;
+    }
+    
+    /**
+     * Get max lake thickness for normalization
+     * @returns {number} - Maximum lake thickness value
+     */
+    getMaxLakeThickness() {
+        let maxThickness = 0;
+        for (let i = 0; i < this.cellCount; i++) {
+            if (this.lakeThicknessArray[i] > maxThickness) {
+                maxThickness = this.lakeThicknessArray[i];
+            }
+        }
+        return maxThickness;
+    }
+    
+    /**
      * Get river segments for rendering
      * @param {number} minDischarge - Minimum discharge to include
      * @returns {object[]} - Array of river segments {x1, y1, x2, y2, discharge}
@@ -966,6 +1027,9 @@ class ErosionSimulation {
             for (let j = 0; j < count; j++) {
                 const position = cell * this.maxNeighbors + j;
                 const otherCell = this.cellNeighbors[position];
+                
+                // Skip wrapped edges (would draw lines across the entire map)
+                if (this.neighborWrapped && this.neighborWrapped[position]) continue;
                 
                 if (this.discharge[position] < threshold) continue;
                 
@@ -1014,6 +1078,9 @@ class ErosionSimulation {
             for (let j = 0; j < count; j++) {
                 const position = cell * this.maxNeighbors + j;
                 const neighbor = this.cellNeighbors[position];
+                
+                // Skip wrapped edges (would draw lines across the entire map)
+                if (this.neighborWrapped && this.neighborWrapped[position]) continue;
                 
                 // Skip if already processed
                 const key = Math.min(cell, neighbor) + '_' + Math.max(cell, neighbor);
@@ -1109,7 +1176,10 @@ function renderRivers(ctx, riverSegments, width, height, mapCols, mapRows, optio
         color = 'rgba(50, 100, 200, 0.8)',
         minWidth = 0.5,
         maxWidth = 3,
-        useDischargeWidth = true
+        useDischargeWidth = true,
+        projection = 'square',
+        imageConfig = null,
+        mapConfig = null
     } = options;
     
     const scaleX = width / mapCols;
@@ -1126,13 +1196,288 @@ function renderRivers(ctx, riverSegments, width, height, mapCols, mapRows, optio
         ctx.lineWidth = lineWidth;
         ctx.globalAlpha = 0.3 + 0.7 * Math.sqrt(segment.normalizedDischarge);
         
-        ctx.beginPath();
-        ctx.moveTo(segment.x1 * scaleX, segment.y1 * scaleY);
-        ctx.lineTo(segment.x2 * scaleX, segment.y2 * scaleY);
-        ctx.stroke();
+        // Transform coordinates based on projection
+        const p1 = projectPoint(segment.x1, segment.y1, mapCols, mapRows, width, height, projection, imageConfig);
+        const p2 = projectPoint(segment.x2, segment.y2, mapCols, mapRows, width, height, projection, imageConfig);
+        
+        // Only draw if both points are valid (inside projection bounds)
+        if (p1 && p2) {
+            ctx.beginPath();
+            ctx.moveTo(p1.x, p1.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.stroke();
+        }
     });
     
     ctx.globalAlpha = 1;
+}
+
+/**
+ * Project a point from map coordinates to screen coordinates based on projection
+ * This is the INVERSE of the original projection functions in world.js
+ * 
+ * IMPORTANT: In world.js projections, the loop variable naming is confusing:
+ * - outer loop 'row' iterates 0 to width, so it's actually screenX
+ * - inner loop 'col' iterates 0 to height, so it's actually screenY
+ */
+function projectPoint(mapX, mapY, mapCols, mapRows, screenWidth, screenHeight, projection, imageConfig) {
+    const mapCol = mapX;  // x is column in map space
+    const mapRow = mapY;  // y is row in map space
+    
+    if (projection === 'square' || !projection) {
+        return {
+            x: mapCol * screenWidth / mapCols,
+            y: mapRow * screenHeight / mapRows
+        };
+    }
+    
+    if (projection === 'mollweide') {
+        // Original Mollweide mapping (screen -> map):
+        // sinFactors[screenY] = sqrt(sin((screenY / height) * PI))
+        // theta = asin((2.8284271247 * (0.5 - screenY/height)) / sqrt(2))  
+        // mapRow = (0.5 - asin((2*theta + sin(2*theta))/PI) / PI) * mapRows
+        // mapCol = floor((screenX - wd2) / sinFactors[screenY]) + cd2
+        //
+        // For inverse, we need to find screenY given mapRow (complex, use binary search)
+        // and screenX given mapCol and screenY
+        
+        const wd2 = imageConfig?.wd2 || Math.floor(screenWidth / 2);
+        const cd2 = mapCols / 2;
+        
+        // Binary search to find screenY that maps to our mapRow
+        // The mapping is monotonic: as screenY increases from 0 to height, mapRow goes from 0 to mapRows
+        let low = 0, high = screenHeight - 1;
+        let screenY = screenHeight / 2;
+        
+        for (let i = 0; i < 20; i++) { // 20 iterations gives good precision
+            const mid = (low + high) / 2;
+            const theta = Math.asin((2.8284271247 * (0.5 - mid / screenHeight)) / Math.sqrt(2));
+            const testMapRow = (0.5 - Math.asin((2 * theta + Math.sin(2 * theta)) / Math.PI) / Math.PI) * mapRows;
+            
+            if (testMapRow < mapRow) {
+                low = mid;
+            } else {
+                high = mid;
+            }
+            screenY = (low + high) / 2;
+        }
+        
+        // Calculate sinFactor at this screenY
+        const sinFactor = Math.sqrt(Math.sin((screenY / screenHeight) * Math.PI));
+        if (sinFactor < 0.001) return null; // At poles
+        
+        // Inverse for screenX: mapCol = floor((screenX - wd2) / sinFactor) + cd2
+        // So: screenX = (mapCol - cd2) * sinFactor + wd2
+        const screenX = (mapCol - cd2) * sinFactor + wd2;
+        
+        // Check bounds
+        const ellipseWidth = wd2 * sinFactor;
+        if (screenX < wd2 - ellipseWidth || screenX > wd2 + ellipseWidth) {
+            return null;
+        }
+        
+        return { x: screenX, y: screenY };
+    }
+    
+    if (projection === 'sinusoidal') {
+        // Original Sinusoidal mapping (screen -> map):
+        // sinFactors[screenY] = sin((screenY / height) * PI)
+        // mapRow = screenY (direct linear mapping - uses 'col' which is screenY)
+        // mapCol = floor((screenX - wd2) / sinFactors[screenY]) + cd2
+        
+        const wd2 = imageConfig?.wd2 || Math.floor(screenWidth / 2);
+        const cd2 = mapCols / 2;
+        
+        // For sinusoidal, mapRow = col directly, so:
+        // screenY = mapRow * height / mapRows
+        const screenY = mapRow * screenHeight / mapRows;
+        
+        // Calculate sinFactor at this screenY
+        const sinFactor = Math.sin((screenY / screenHeight) * Math.PI);
+        if (sinFactor < 0.001) return null; // At poles
+        
+        // Inverse for screenX: mapCol = floor((screenX - wd2) / sinFactor) + cd2
+        // So: screenX = (mapCol - cd2) * sinFactor + wd2
+        const screenX = (mapCol - cd2) * sinFactor + wd2;
+        
+        // Check bounds
+        const ellipseWidth = wd2 * sinFactor;
+        if (screenX < wd2 - ellipseWidth || screenX > wd2 + ellipseWidth) {
+            return null;
+        }
+        
+        return { x: screenX, y: screenY };
+    }
+    
+    if (projection === 'mercator') {
+        // Original Mercator mapping (screen -> map):
+        // mapCol = (screenX / width) * mapCols
+        // mapRow = (0.5 - atan(sinh((0.5 - screenY/height) * PI)) / PI) * mapRows
+        
+        // Inverse for screenX (trivial):
+        const screenX = mapCol * screenWidth / mapCols;
+        
+        // Inverse for screenY: solve for screenY given mapRow
+        // mapRow/mapRows = 0.5 - atan(sinh((0.5 - screenY/height) * PI)) / PI
+        // Let lat = PI * (0.5 - mapRow/mapRows)
+        // Then: sinh((0.5 - screenY/height) * PI) = tan(lat)
+        // (0.5 - screenY/height) * PI = asinh(tan(lat))
+        // screenY = height * (0.5 - asinh(tan(lat)) / PI)
+        const lat = Math.PI * (0.5 - mapRow / mapRows);
+        
+        // Clamp lat to avoid infinity at poles
+        if (Math.abs(lat) > Math.PI / 2 - 0.01) return null;
+        
+        const screenY = screenHeight * (0.5 - Math.asinh(Math.tan(lat)) / Math.PI);
+        
+        if (screenY < 0 || screenY >= screenHeight) return null;
+        return { x: screenX, y: screenY };
+    }
+    
+    if (projection === 'transmerc') {
+        // Original Transverse Mercator mapping (screen -> map):
+        // angle = (screenX / width) * 2 * PI
+        // lat = 4 * (screenY / height - 0.5)  -- ranges from -2 to 2
+        // lon = atan(sinh(lat) / cos(angle))
+        // if (angle > PI/2 && angle <= 3*PI/2) lon += PI
+        // mapRow = (0.5 - asin(sin(angle) / cosh(lat)) / PI) * mapRows
+        // mapCol = (lon / (2*PI)) * mapCols
+        //
+        // Use Newton-Raphson iteration to invert
+        
+        // Forward function
+        function forwardTM(sx, sy) {
+            const angle = (sx / screenWidth) * 2 * Math.PI;
+            const lat = 4 * (sy / screenHeight - 0.5);
+            const coshLat = Math.cosh(lat);
+            const sinhLat = Math.sinh(lat);
+            const cosAngle = Math.cos(angle);
+            const sinAngle = Math.sin(angle);
+            
+            let lon = Math.atan2(sinhLat, cosAngle); // Use atan2 for better quadrant handling
+            
+            // Adjust to [0, 2*PI) range
+            if (lon < 0) lon += 2 * Math.PI;
+            
+            const sinAngleOverCosh = sinAngle / coshLat;
+            // Clamp to valid asin range
+            const clamped = Math.max(-1, Math.min(1, sinAngleOverCosh));
+            const mr = (0.5 - Math.asin(clamped) / Math.PI) * mapRows;
+            const mc = (lon / (2 * Math.PI)) * mapCols;
+            
+            return { mr, mc };
+        }
+        
+        // Start with linear initial guess
+        let sx = (mapCol / mapCols) * screenWidth;
+        let sy = (mapRow / mapRows) * screenHeight;
+        
+        // Newton-Raphson iteration with numerical Jacobian
+        const eps = 0.5;
+        const targetMr = mapRow;
+        const targetMc = mapCol;
+        
+        for (let iter = 0; iter < 15; iter++) {
+            const f = forwardTM(sx, sy);
+            
+            // Handle column wraparound
+            let errMc = f.mc - targetMc;
+            if (errMc > mapCols / 2) errMc -= mapCols;
+            if (errMc < -mapCols / 2) errMc += mapCols;
+            
+            const errMr = f.mr - targetMr;
+            const err = Math.sqrt(errMr * errMr + errMc * errMc);
+            
+            if (err < 0.5) {
+                // Good enough
+                if (sx >= 0 && sx < screenWidth && sy >= 0 && sy < screenHeight) {
+                    return { x: sx, y: sy };
+                }
+                break;
+            }
+            
+            // Compute numerical Jacobian
+            const fxp = forwardTM(sx + eps, sy);
+            const fyp = forwardTM(sx, sy + eps);
+            
+            // d(mr)/d(sx), d(mr)/d(sy)
+            const dMr_dSx = (fxp.mr - f.mr) / eps;
+            const dMr_dSy = (fyp.mr - f.mr) / eps;
+            
+            // d(mc)/d(sx), d(mc)/d(sy) - handle wraparound
+            let dMc_dSx = (fxp.mc - f.mc) / eps;
+            let dMc_dSy = (fyp.mc - f.mc) / eps;
+            if (Math.abs(dMc_dSx) > mapCols / 2) dMc_dSx = dMc_dSx > 0 ? dMc_dSx - mapCols : dMc_dSx + mapCols;
+            if (Math.abs(dMc_dSy) > mapCols / 2) dMc_dSy = dMc_dSy > 0 ? dMc_dSy - mapCols : dMc_dSy + mapCols;
+            
+            // Solve 2x2 system: J * delta = -error
+            const det = dMr_dSx * dMc_dSy - dMr_dSy * dMc_dSx;
+            if (Math.abs(det) < 1e-10) break; // Singular Jacobian
+            
+            const dSx = (-errMr * dMc_dSy + errMc * dMr_dSy) / det;
+            const dSy = (-errMc * dMr_dSx + errMr * dMc_dSx) / det;
+            
+            // Limit step size to avoid overshooting
+            const maxStep = Math.max(screenWidth, screenHeight) / 4;
+            const stepLen = Math.sqrt(dSx * dSx + dSy * dSy);
+            const scale = stepLen > maxStep ? maxStep / stepLen : 1;
+            
+            sx += dSx * scale;
+            sy += dSy * scale;
+            
+            // Keep in bounds
+            sx = Math.max(0, Math.min(screenWidth - 1, sx));
+            sy = Math.max(0, Math.min(screenHeight - 1, sy));
+        }
+        
+        // Final check
+        const finalF = forwardTM(sx, sy);
+        let finalErrMc = finalF.mc - targetMc;
+        if (finalErrMc > mapCols / 2) finalErrMc -= mapCols;
+        if (finalErrMc < -mapCols / 2) finalErrMc += mapCols;
+        const finalErr = Math.sqrt(Math.pow(finalF.mr - targetMr, 2) + finalErrMc * finalErrMc);
+        
+        if (finalErr < 2 && sx >= 0 && sx < screenWidth && sy >= 0 && sy < screenHeight) {
+            return { x: sx, y: sy };
+        }
+        
+        return null;
+    }
+    
+    if (projection === 'icosahedral') {
+        // Icosahedral projection is complex - the map coordinates need to be
+        // transformed into the triangular sections. We use the inverse mapping
+        // from the terrain renderer.
+        const col_w = imageConfig?.col_w || Math.floor(screenWidth / 11);
+        const row_h = imageConfig?.row_h || Math.floor(screenHeight / 3);
+        
+        // For icosahedral, we need to find which screen position corresponds
+        // to our map coordinate. This is complex because the same map coordinate
+        // can appear in multiple triangular sections.
+        // 
+        // We'll use a simplified approach: map the column directly to x position
+        // in the middle row (rowIndex=1), which is the main visible band
+        const screenX = col * screenWidth / mapCols;
+        const screenY = row_h + (row * row_h / mapRows); // Place in middle row
+        
+        // Check if we're in a valid triangular section
+        const colIndex = Math.floor(screenX / col_w);
+        const rowIndex = Math.floor(screenY / row_h);
+        
+        if (rowIndex === 1 && colIndex >= 0 && colIndex <= 10) {
+            return { x: screenX, y: screenY };
+        }
+        
+        // For points that fall outside the middle band, skip them
+        // (icosahedral projection is too complex for simple line overlay)
+        return null;
+    }
+    
+    // Default: simple linear scaling
+    return {
+        x: col * screenWidth / mapCols,
+        y: row * screenHeight / mapRows
+    };
 }
 
 /**
@@ -1149,11 +1494,11 @@ function renderCoastlines(ctx, coastlineSegments, width, height, mapCols, mapRow
     const {
         seaColor = 'rgba(0, 50, 100, 0.6)',
         lakeColor = 'rgba(50, 100, 150, 0.5)',
-        lineWidth = 1
+        lineWidth = 1,
+        projection = 'square',
+        imageConfig = null,
+        mapConfig = null
     } = options;
-    
-    const scaleX = width / mapCols;
-    const scaleY = height / mapRows;
     
     ctx.lineWidth = lineWidth;
     ctx.lineCap = 'round';
@@ -1161,10 +1506,17 @@ function renderCoastlines(ctx, coastlineSegments, width, height, mapCols, mapRow
     coastlineSegments.forEach(segment => {
         ctx.strokeStyle = segment.isLake ? lakeColor : seaColor;
         
-        ctx.beginPath();
-        ctx.moveTo(segment.x1 * scaleX, segment.y1 * scaleY);
-        ctx.lineTo(segment.x2 * scaleX, segment.y2 * scaleY);
-        ctx.stroke();
+        // Transform coordinates based on projection
+        const p1 = projectPoint(segment.x1, segment.y1, mapCols, mapRows, width, height, projection, imageConfig);
+        const p2 = projectPoint(segment.x2, segment.y2, mapCols, mapRows, width, height, projection, imageConfig);
+        
+        // Only draw if both points are valid (inside projection bounds)
+        if (p1 && p2) {
+            ctx.beginPath();
+            ctx.moveTo(p1.x, p1.y);
+            ctx.lineTo(p2.x, p2.y);
+            ctx.stroke();
+        }
     });
 }
 
@@ -1172,9 +1524,109 @@ function renderCoastlines(ctx, coastlineSegments, width, height, mapCols, mapRow
 // EXPORT
 // ============================================================================
 
+/**
+ * Render lakes overlay on a canvas
+ * Lakes are displayed as blue-tinted areas where lake_thickness > threshold
+ * @param {CanvasRenderingContext2D} ctx - Canvas context
+ * @param {number[][]} lakeThicknessMap - 2D array of lake thickness values
+ * @param {number} maxLakeThickness - Maximum lake thickness for normalization
+ * @param {number} lakeThreshold - Minimum thickness to consider as lake
+ * @param {number} width - Canvas width
+ * @param {number} height - Canvas height
+ * @param {number} mapCols - Map columns
+ * @param {number} mapRows - Map rows
+ * @param {object} options - Rendering options
+ */
+function renderLakes(ctx, lakeThicknessMap, maxLakeThickness, lakeThreshold, width, height, mapCols, mapRows, options = {}) {
+    const {
+        shallowColor = { r: 100, g: 180, b: 255 },  // Light blue for shallow lakes
+        deepColor = { r: 30, g: 80, b: 150 },       // Dark blue for deep lakes
+        projection = 'square',
+        imageConfig = null,
+        mapConfig = null
+    } = options;
+    
+    // Get imageData for direct pixel manipulation
+    const imageData = ctx.getImageData(0, 0, width, height);
+    const data = imageData.data;
+    
+    const scaleX = width / mapCols;
+    const scaleY = height / mapRows;
+    
+    // Normalize threshold relative to max thickness
+    const normalizedThreshold = maxLakeThickness > 0 ? lakeThreshold / maxLakeThickness : 0;
+    
+    for (let row = 0; row < mapRows; row++) {
+        for (let col = 0; col < mapCols; col++) {
+            const thickness = lakeThicknessMap[row][col];
+            
+            // Skip if not a lake (below threshold)
+            if (thickness <= lakeThreshold) continue;
+            
+            // Normalize lake depth (0 = threshold, 1 = max depth)
+            const normalizedDepth = maxLakeThickness > lakeThreshold 
+                ? (thickness - lakeThreshold) / (maxLakeThickness - lakeThreshold)
+                : 0;
+            
+            // Interpolate color based on depth
+            const t = Math.min(normalizedDepth, 1);
+            const r = Math.floor(shallowColor.r + t * (deepColor.r - shallowColor.r));
+            const g = Math.floor(shallowColor.g + t * (deepColor.g - shallowColor.g));
+            const b = Math.floor(shallowColor.b + t * (deepColor.b - shallowColor.b));
+            
+            // Project the cell coordinates
+            const p = projectPoint(col, row, mapCols, mapRows, width, height, projection, imageConfig);
+            if (!p) continue;
+            
+            // Fill pixels in the projected area
+            // For square projection, fill a simple rectangle
+            // For other projections, we need to fill the projected cell area
+            if (projection === 'square') {
+                const startX = Math.floor(col * scaleX);
+                const startY = Math.floor(row * scaleY);
+                const endX = Math.floor((col + 1) * scaleX);
+                const endY = Math.floor((row + 1) * scaleY);
+                
+                for (let py = startY; py < endY && py < height; py++) {
+                    for (let px = startX; px < endX && px < width; px++) {
+                        const idx = (py * width + px) * 4;
+                        data[idx] = r;
+                        data[idx + 1] = g;
+                        data[idx + 2] = b;
+                        data[idx + 3] = 255;
+                    }
+                }
+            } else {
+                // For other projections, just color the projected point area
+                const px = Math.floor(p.x);
+                const py = Math.floor(p.y);
+                
+                // Fill a small area around the projected point
+                const radius = Math.max(1, Math.floor(Math.min(scaleX, scaleY) / 2));
+                for (let dy = -radius; dy <= radius; dy++) {
+                    for (let dx = -radius; dx <= radius; dx++) {
+                        const targetX = px + dx;
+                        const targetY = py + dy;
+                        if (targetX >= 0 && targetX < width && targetY >= 0 && targetY < height) {
+                            const idx = (targetY * width + targetX) * 4;
+                            data[idx] = r;
+                            data[idx + 1] = g;
+                            data[idx + 2] = b;
+                            data[idx + 3] = 255;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    ctx.putImageData(imageData, 0, 0);
+}
+
 // Make classes available globally
 window.ErosionSimulation = ErosionSimulation;
 window.SNoise = SNoise;
 window.SimplexNoise2D = SimplexNoise2D;
 window.renderRivers = renderRivers;
 window.renderCoastlines = renderCoastlines;
+window.renderLakes = renderLakes;

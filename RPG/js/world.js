@@ -437,7 +437,7 @@
 
     // Run time simulation and generate erosion-based maps if enabled
     if ($("enable_time_simulation") && $("enable_time_simulation").checked) {
-      const timeYears = $("time_passage").intValue() * 1000000; // Convert to years
+      const timeYears = parseFloat($("time_passage").getValue()) * 1000000; // Convert to years
       const showRivers = $("show_rivers").checked;
       const showCoastlines = $("show_coastlines").checked;
       
@@ -455,6 +455,8 @@
     } else {
       // Clear the erosion-related canvases when simulation is disabled
       clearErosionCanvases(imageConfig);
+      // Update status to show simulation is disabled
+      updateSimulationStatus(0, 0, 'disabled');
     }
 
     timing = markTiming(timing, "image");
@@ -2558,6 +2560,301 @@
     columnPositions = [];
 
   /**
+   * Format simulation time for display (similar to Islands repo)
+   */
+  function formatSimTime(years) {
+    const absYears = Math.abs(years);
+    if (absYears < 10000) {
+      return `${Math.round(years).toLocaleString()} years`;
+    }
+    if (absYears < 1000000) {
+      return `${(years / 1000).toFixed(1)} thousand years`;
+    }
+    return `${(years / 1000000).toFixed(2)} million years`;
+  }
+  
+  /**
+   * Update the simulation status readout
+   */
+  function updateSimulationStatus(currentTime, totalTime, phase, extraInfo) {
+    const timeReadout = $('sim_time_readout');
+    const progressReadout = $('sim_progress_readout');
+    
+    if (timeReadout) {
+      if (phase === 'running') {
+        timeReadout.innerHTML = `Simulation Time: ${formatSimTime(currentTime)}`;
+      } else if (phase === 'complete') {
+        timeReadout.innerHTML = `Simulation Complete: ${formatSimTime(totalTime)}`;
+      } else if (phase === 'ready') {
+        timeReadout.innerHTML = 'Simulation: Ready';
+      } else if (phase === 'disabled') {
+        timeReadout.innerHTML = 'Simulation: Disabled';
+      }
+    }
+    
+    if (progressReadout) {
+      if (phase === 'running') {
+        const pct = ((currentTime / totalTime) * 100).toFixed(1);
+        progressReadout.innerHTML = `(${pct}% complete)`;
+      } else if (phase === 'complete' && extraInfo) {
+        progressReadout.innerHTML = extraInfo;
+      } else {
+        progressReadout.innerHTML = '';
+      }
+    }
+  }
+
+  /**
+   * Get elevation value with rotation applied (for erosion maps)
+   * @param {object} mapConfig - The map configuration
+   * @param {Array} elevationMap - 2D array of elevation values
+   * @param {number} row - Row index
+   * @param {number} col - Column index
+   * @returns {number} - Elevation value at the rotated position
+   */
+  function getRotatedElevation(mapConfig, elevationMap, row, col) {
+    // Apply rotation
+    col -= mapConfig.rpx || 0;
+
+    // Clamp row values
+    if (row < 0) row = 0;
+    if (row >= mapConfig.rows) row = mapConfig.rows - 1;
+
+    // Wrap column values
+    while (col < 0) col += mapConfig.cols;
+    if (col >= mapConfig.cols) col %= mapConfig.cols;
+
+    return elevationMap[row] ? elevationMap[row][col] : 0;
+  }
+
+  /**
+   * Render elevation map to canvas context using the selected projection
+   * @param {CanvasRenderingContext2D} ctx - Canvas context
+   * @param {object} mapConfig - Map configuration (includes projection setting)
+   * @param {object} imageConfig - Image configuration
+   * @param {Array} elevationMap - 2D normalized elevation map (0-1 values)
+   * @param {number} waterLevel - Normalized water level (0-1)
+   */
+  function renderProjectedTerrain(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    const projection = mapConfig.projection || 'square';
+    
+    // Clear canvas first
+    ctx.fillStyle = '#000000';
+    ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+    
+    if (projection === 'mollweide') {
+      renderMollweideTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else if (projection === 'sinusoidal') {
+      renderSinusoidalTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else if (projection === 'mercator') {
+      renderMercatorTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else if (projection === 'transmerc') {
+      renderTransverseMercatorTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else if (projection === 'icosahedral') {
+      renderIcosahedralTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else {
+      // Default square projection
+      renderSquareTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    }
+  }
+  
+  /**
+   * Render square projection terrain
+   */
+  function renderSquareTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    const scaleX = imageConfig.width / mapConfig.cols;
+    const scaleY = imageConfig.height / mapConfig.rows;
+    
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        const elev = getRotatedElevation(mapConfig, elevationMap, col, row);
+        const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+        
+        ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+        ctx.fillRect(row, col, 1, 1);
+      }
+    }
+  }
+  
+  /**
+   * Render Mollweide projection terrain
+   */
+  function renderMollweideTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
+    
+    // Precalculate ellipse values
+    for (let row = 0; row < imageConfig.height; row++) {
+      sinFactors[row] = Math.sqrt(Math.sin((row / imageConfig.height) * Math.PI));
+      ellipseWidths[row] = Math.floor(wd2 * sinFactors[row]);
+      
+      const theta = Math.asin((2.8284271247 * (0.5 - row / imageConfig.height)) / Math.sqrt(2));
+      rowPositions[row] = Math.floor(
+        (0.5 - Math.asin((2 * theta + Math.sin(2 * theta)) / Math.PI) / Math.PI) * mapConfig.rows
+      );
+    }
+    
+    // Map pixels
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        if (row > wd2 - ellipseWidths[col] && row < wd2 + ellipseWidths[col]) {
+          const mapCol = Math.floor((row - wd2) / sinFactors[col]) + (mapConfig.cd2 || Math.floor(mapConfig.cols / 2));
+          const elev = getRotatedElevation(mapConfig, elevationMap, rowPositions[col], mapCol);
+          const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+          
+          ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+          ctx.fillRect(row, col, 1, 1);
+        }
+      }
+    }
+  }
+  
+  /**
+   * Render Sinusoidal projection terrain
+   */
+  function renderSinusoidalTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
+    
+    // Precalculate sine values
+    for (let row = 0; row < imageConfig.height; row++) {
+      sinFactors[row] = Math.sin((row / imageConfig.height) * Math.PI);
+      ellipseWidths[row] = Math.floor(wd2 * sinFactors[row]);
+    }
+    
+    // Map pixels
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        if (row > wd2 - ellipseWidths[col] && row < wd2 + ellipseWidths[col]) {
+          const mapCol = Math.floor((row - wd2) / sinFactors[col]) + (mapConfig.cd2 || Math.floor(mapConfig.cols / 2));
+          const elev = getRotatedElevation(mapConfig, elevationMap, col, mapCol);
+          const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+          
+          ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+          ctx.fillRect(row, col, 1, 1);
+        }
+      }
+    }
+  }
+  
+  /**
+   * Render Mercator projection terrain
+   * Matches original renderMercatorProjection exactly
+   */
+  function renderMercatorTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    // Precalculate column positions (matches original)
+    for (let row = 0; row < imageConfig.width; row++) {
+      columnPositions[row] = Math.floor((row / imageConfig.width) * mapConfig.cols);
+    }
+    
+    // Precalculate row positions with Mercator formula (matches original)
+    for (let row = 0; row < imageConfig.height; row++) {
+      rowPositions[row] = Math.floor(
+        (0.5 - Math.atan(Math.sinh((0.5 - row / imageConfig.height) * Math.PI)) / Math.PI) * mapConfig.rows
+      );
+    }
+    
+    // Map pixels
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        const elev = getRotatedElevation(mapConfig, elevationMap, rowPositions[col], columnPositions[row]);
+        const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+        
+        ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+        ctx.fillRect(row, col, 1, 1);
+      }
+    }
+  }
+  
+  /**
+   * Render Transverse Mercator projection terrain
+   * Matches original renderTransverseMercatorProjection exactly
+   */
+  function renderTransverseMercatorTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        const angle = (row / imageConfig.width) * 2 * Math.PI;
+        const lat = 4 * (col / imageConfig.height - 0.5);
+        let lon = Math.atan(Math.sinh(lat) / Math.cos(angle));
+        const halfPi = Math.PI / 2;
+        
+        if (angle > halfPi && angle <= 3 * halfPi) {
+          lon += Math.PI;
+        }
+        
+        const mapRow = Math.floor(
+          (0.5 - Math.asin(Math.sin(angle) / Math.cosh(lat)) / Math.PI) * mapConfig.rows
+        );
+        const mapCol = Math.floor((lon / (2 * Math.PI)) * mapConfig.cols);
+        
+        const elev = getRotatedElevation(mapConfig, elevationMap, mapRow, mapCol);
+        const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+        
+        ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+        ctx.fillRect(row, col, 1, 1);
+      }
+    }
+  }
+  
+  /**
+   * Render Icosahedral projection terrain
+   * Matches the original renderIcosahedralProjection logic exactly
+   */
+  function renderIcosahedralTerrainToContext(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    const col_w = imageConfig.col_w || Math.floor(imageConfig.width / 11);
+    const row_h = imageConfig.row_h || Math.floor(imageConfig.height / 3);
+    
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        let colIndex = Math.floor(row / col_w);
+        let rowIndex = Math.floor(col / row_h);
+        let colOffset = Math.floor(row - colIndex * col_w);
+        let rowOffset = Math.floor(0.5773502692 * Math.floor(col - rowIndex * row_h));
+        let pixelIndex = -1;
+
+        if ((rowIndex + colIndex) % 2 == 0) {
+          colOffset = Math.floor(col_w - colOffset);
+        }
+
+        // Complex icosahedral mapping logic (matches original)
+        if (rowIndex == 0) {
+          if (colIndex < 10 && colOffset < rowOffset) {
+            pixelIndex = Math.floor((colOffset / rowOffset) * col_w);
+          }
+        } else if (rowIndex == 1) {
+          if (colIndex == 0) {
+            if (colOffset > rowOffset) {
+              pixelIndex = colOffset;
+            }
+          } else if (colIndex < 10) {
+            pixelIndex = colOffset;
+          } else if (colIndex == 10 && colOffset < rowOffset) {
+            pixelIndex = colOffset;
+          }
+        } else if (rowIndex == 2 && colIndex > 0 && colOffset > rowOffset) {
+          colOffset = Math.floor(col_w - colOffset);
+          rowOffset = Math.floor(col_w - rowOffset);
+          pixelIndex = Math.floor((colOffset / rowOffset) * col_w);
+          pixelIndex = Math.floor(col_w - pixelIndex);
+        }
+
+        if (pixelIndex > -1) {
+          if ((rowIndex + colIndex) % 2 == 0) {
+            pixelIndex = Math.floor(col_w - pixelIndex);
+          }
+          pixelIndex += Math.floor(colIndex * col_w);
+          
+          // Get elevation using the same coordinate transform as original
+          const elev = getRotatedElevation(mapConfig, elevationMap, col, pixelIndex);
+          const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+          
+          ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+          ctx.fillRect(row, col, 1, 1);
+        }
+        // If pixelIndex is -1, leave that pixel transparent/black (outside the projection)
+      }
+    }
+  }
+
+  /**
    * Generate and render erosion-based maps (river, coastline, terrain)
    * Uses the ErosionSimulation class from erosion-simulation.js
    * @param {object} mapConfig - The map configuration
@@ -2578,6 +2875,9 @@
     showCoastlines
   ) {
     console.log(`Running erosion simulation for ${timeYears / 1000000} million years...`);
+    
+    // Update status display
+    updateSimulationStatus(0, timeYears, 'running');
     
     // Check if ErosionSimulation is available
     if (typeof window.ErosionSimulation === 'undefined') {
@@ -2608,11 +2908,16 @@
     // Run simulation with progress updates
     const stepSize = 50000; // 50,000 years per step
     const numSteps = Math.ceil(timeYears / stepSize);
+    let simulatedTime = 0;
     
     for (let i = 0; i < numSteps; i++) {
       erosion.step(stepSize);
+      simulatedTime += stepSize;
+      
+      // Update status display every 10 steps
       if (i % 10 === 0) {
         console.log(`Erosion step ${i + 1}/${numSteps} (${((i + 1) / numSteps * 100).toFixed(1)}%)`);
+        updateSimulationStatus(simulatedTime, timeYears, 'running');
       }
     }
     
@@ -2625,6 +2930,16 @@
     // Get coastline segments
     const coastlineSegments = erosion.getCoastlineSegments();
     console.log(`Found ${coastlineSegments.length} coastline segments`);
+    
+    // Get lake data
+    const lakeThicknessMap = erosion.getLakeThicknessMap();
+    const maxLakeThickness = erosion.getMaxLakeThickness();
+    const lakeCells = erosion.getLakeCells();
+    console.log(`Found ${lakeCells.length} lake cells (max thickness: ${maxLakeThickness.toFixed(3)})`);
+    
+    // Update status with feature counts
+    const statusExtra = `(${riverSegments.length} river segments, ${coastlineSegments.length} coastline segments, ${lakeCells.length} lake cells)`;
+    updateSimulationStatus(timeYears, timeYears, 'complete', statusExtra);
     
     // Render river map
     if (showRivers) {
@@ -2651,6 +2966,23 @@
     } else {
       clearCanvas('coastline-map', imageConfig);
     }
+    
+    // Render water cover map (always show if lakes exist)
+    renderLakeMap(
+      mapConfig,
+      imageConfig,
+      heightMap,
+      waterLevel,
+      lakeThicknessMap,
+      maxLakeThickness,
+      erosion.lakeThreshold || 0.01
+    );
+    
+    // Render polar ice cover map
+    renderIceCoverMap(
+      mapConfig,
+      imageConfig
+    );
     
     // Render terrain map with erosion
     // Use the erosion simulation's normalized sea level for correct water/land coloring
@@ -2679,6 +3011,7 @@
   
   /**
    * Render the river map
+   * Shows only rivers on a neutral background (no terrain)
    */
   function renderRiverMap(mapConfig, imageConfig, heightMap, waterLevel, riverSegments) {
     console.log('Rendering river map...');
@@ -2688,10 +3021,11 @@
     canvas.height = imageConfig.height;
     const ctx = canvas.getContext('2d');
     
-    // First render base terrain
-    renderBaseTerrainToContext(ctx, mapConfig, imageConfig, heightMap, waterLevel);
+    // Fill with neutral background (light gray)
+    ctx.fillStyle = '#e8e8e8';
+    ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
     
-    // Then overlay rivers
+    // Draw rivers (blue on neutral background)
     if (typeof window.renderRivers === 'function' && riverSegments.length > 0) {
       window.renderRivers(
         ctx,
@@ -2701,10 +3035,13 @@
         mapConfig.cols,
         mapConfig.rows,
         {
-          color: 'rgba(30, 80, 180, 0.9)',
+          color: 'rgba(30, 100, 180, 1.0)',
           minWidth: 0.5,
-          maxWidth: 4,
-          useDischargeWidth: true
+          maxWidth: 3,
+          useDischargeWidth: true,
+          projection: mapConfig.projection,
+          imageConfig: imageConfig,
+          mapConfig: mapConfig
         }
       );
     }
@@ -2712,6 +3049,7 @@
   
   /**
    * Render the coastline map
+   * Shows only coastlines on a neutral background (no terrain)
    */
   function renderCoastlineMap(mapConfig, imageConfig, heightMap, waterLevel, coastlineSegments) {
     console.log('Rendering coastline map...');
@@ -2721,10 +3059,11 @@
     canvas.height = imageConfig.height;
     const ctx = canvas.getContext('2d');
     
-    // First render base terrain
-    renderBaseTerrainToContext(ctx, mapConfig, imageConfig, heightMap, waterLevel);
+    // Fill with neutral background (light gray)
+    ctx.fillStyle = '#e8e8e8';
+    ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
     
-    // Then overlay coastlines
+    // Draw coastlines (dark blue for sea, lighter blue for lakes)
     if (typeof window.renderCoastlines === 'function' && coastlineSegments.length > 0) {
       window.renderCoastlines(
         ctx,
@@ -2734,97 +3073,577 @@
         mapConfig.cols,
         mapConfig.rows,
         {
-          seaColor: 'rgba(0, 30, 80, 0.8)',
-          lakeColor: 'rgba(30, 80, 120, 0.7)',
-          lineWidth: 2
+          seaColor: 'rgba(20, 60, 120, 1.0)',
+          lakeColor: 'rgba(50, 120, 180, 1.0)',
+          lineWidth: 1.5,
+          projection: mapConfig.projection,
+          imageConfig: imageConfig,
+          mapConfig: mapConfig
         }
       );
     }
   }
   
   /**
+   * Render the water cover map
+   * Shows only lakes on a neutral background (no terrain)
+   * Based on lake_thickness from Islands drainage.js
+   */
+  function renderLakeMap(mapConfig, imageConfig, heightMap, waterLevel, lakeThicknessMap, maxLakeThickness, lakeThreshold) {
+    console.log('Rendering water cover map...');
+    
+    const canvas = $('lake-map');
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    // Fill with neutral background (light gray)
+    ctx.fillStyle = '#e8e8e8';
+    ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+    
+    // Render lakes with depth-based coloring on neutral background
+    if (typeof window.renderLakes === 'function' && maxLakeThickness > lakeThreshold) {
+      window.renderLakes(
+        ctx,
+        lakeThicknessMap,
+        maxLakeThickness,
+        lakeThreshold,
+        imageConfig.width,
+        imageConfig.height,
+        mapConfig.cols,
+        mapConfig.rows,
+        {
+          shallowColor: { r: 100, g: 180, b: 255 },  // Light blue
+          deepColor: { r: 30, g: 80, b: 150 },       // Dark blue
+          projection: mapConfig.projection,
+          imageConfig: imageConfig,
+          mapConfig: mapConfig
+        }
+      );
+    }
+  }
+  
+  /**
+   * Render the polar ice cover map
+   * Shows only ice/snow areas on a neutral background (no terrain)
+   */
+  function renderIceCoverMap(mapConfig, imageConfig) {
+    console.log('Rendering polar ice cover map...');
+    
+    const canvas = $('ice-cover-map');
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    // Fill with neutral background (light gray)
+    ctx.fillStyle = '#e8e8e8';
+    ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+    
+    // Render only ice areas with projection
+    renderProjectedIceCover(ctx, mapConfig, imageConfig);
+  }
+  
+  /**
+   * Render projected ice cover (ice areas only)
+   */
+  function renderProjectedIceCover(ctx, mapConfig, imageConfig) {
+    const projection = mapConfig.projection || 'square';
+    const palette = mapConfig.palette;
+    const iceIdx = palette.ice_idx;
+    
+    // Ice color - white/light blue tint
+    const iceColor = { r: 240, g: 248, b: 255 }; // AliceBlue - slight blue tint
+    
+    if (projection === 'mollweide') {
+      renderMollweideIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+    } else if (projection === 'sinusoidal') {
+      renderSinusoidalIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+    } else if (projection === 'mercator') {
+      renderMercatorIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+    } else if (projection === 'transmerc') {
+      renderTransMercIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+    } else if (projection === 'icosahedral') {
+      renderIcosahedralIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+    } else {
+      renderSquareIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor);
+    }
+  }
+  
+  /**
+   * Render square projection ice cover
+   * Uses getRotatedMapValue for proper rotation handling (same as World Map)
+   */
+  function renderSquareIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        // Get map value using rotation-aware function (same pattern as renderSquareProjection)
+        const mapValue = getRotatedMapValue(mapConfig, col, row);
+        
+        // Only show ice (map value >= ice_idx)
+        if (mapValue >= iceIdx) {
+          ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+          ctx.fillRect(row, col, 1, 1);
+        }
+      }
+    }
+  }
+  
+  /**
+   * Render Mollweide projection ice cover
+   * Uses getRotatedMapValue for proper rotation handling
+   */
+  function renderMollweideIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
+    
+    for (let row = 0; row < imageConfig.height; row++) {
+      sinFactors[row] = Math.sqrt(Math.sin((row / imageConfig.height) * Math.PI));
+      ellipseWidths[row] = Math.floor(wd2 * sinFactors[row]);
+      
+      const theta = Math.asin((2.8284271247 * (0.5 - row / imageConfig.height)) / Math.sqrt(2));
+      rowPositions[row] = Math.floor(
+        (0.5 - Math.asin((2 * theta + Math.sin(2 * theta)) / Math.PI) / Math.PI) * mapConfig.rows
+      );
+    }
+    
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        if (row > wd2 - ellipseWidths[col] && row < wd2 + ellipseWidths[col]) {
+          const mapCol = Math.floor((row - wd2) / sinFactors[col]) + (mapConfig.cd2 || Math.floor(mapConfig.cols / 2));
+          const mapRow = rowPositions[col];
+          
+          // Use getRotatedMapValue for proper rotation handling
+          const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
+          
+          if (mapValue >= iceIdx) {
+            ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+            ctx.fillRect(row, col, 1, 1);
+          }
+        }
+      }
+    }
+  }
+  
+  /**
+   * Render Sinusoidal projection ice cover
+   * Uses getRotatedMapValue for proper rotation handling
+   */
+  function renderSinusoidalIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
+    
+    for (let row = 0; row < imageConfig.height; row++) {
+      sinFactors[row] = Math.sin((row / imageConfig.height) * Math.PI);
+      ellipseWidths[row] = Math.floor(wd2 * sinFactors[row]);
+    }
+    
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        if (row > wd2 - ellipseWidths[col] && row < wd2 + ellipseWidths[col]) {
+          const mapCol = Math.floor((row - wd2) / sinFactors[col]) + (mapConfig.cd2 || Math.floor(mapConfig.cols / 2));
+          const mapRow = col;
+          
+          // Use getRotatedMapValue for proper rotation handling
+          const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
+          
+          if (mapValue >= iceIdx) {
+            ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+            ctx.fillRect(row, col, 1, 1);
+          }
+        }
+      }
+    }
+  }
+  
+  /**
+   * Render Mercator projection ice cover
+   * Uses getRotatedMapValue for proper rotation handling
+   */
+  function renderMercatorIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+    for (let row = 0; row < imageConfig.height; row++) {
+      rowPositions[row] = Math.floor(
+        (0.5 - Math.atan(Math.sinh((0.5 - row / imageConfig.height) * Math.PI)) / Math.PI) * mapConfig.rows
+      );
+    }
+    
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        const mapCol = Math.floor((row / imageConfig.width) * mapConfig.cols);
+        const mapRow = rowPositions[col];
+        
+        // Use getRotatedMapValue for proper rotation handling
+        const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
+        
+        if (mapValue >= iceIdx) {
+          ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+          ctx.fillRect(row, col, 1, 1);
+        }
+      }
+    }
+  }
+  
+  /**
+   * Render Transverse Mercator projection ice cover
+   * Uses getRotatedMapValue for proper rotation handling
+   */
+  function renderTransMercIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+    const hd2 = imageConfig.hd2 || Math.floor(imageConfig.height / 2);
+    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
+    const scale = 0.5;
+    
+    for (let screenY = 0; screenY < imageConfig.height; screenY++) {
+      for (let screenX = 0; screenX < imageConfig.width; screenX++) {
+        const x = (screenX - wd2) / (wd2 * scale);
+        const y = (screenY - hd2) / (hd2 * scale);
+        
+        if (x * x + y * y > 4) continue;
+        
+        const lon = Math.atan2(Math.sinh(x), Math.cos(y));
+        const lat = Math.asin(Math.sin(y) / Math.cosh(x));
+        
+        const mapCol = Math.floor(((lon / Math.PI + 1) / 2) * mapConfig.cols) % mapConfig.cols;
+        const mapRow = Math.floor((0.5 - lat / Math.PI) * mapConfig.rows);
+        
+        if (mapRow < 0 || mapRow >= mapConfig.rows) continue;
+        
+        // Use getRotatedMapValue for proper rotation handling
+        const mapValue = getRotatedMapValue(mapConfig, mapRow, mapCol);
+        
+        if (mapValue >= iceIdx) {
+          ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+          ctx.fillRect(screenX, screenY, 1, 1);
+        }
+      }
+    }
+  }
+  
+  /**
+   * Render Icosahedral projection ice cover
+   * Uses getRotatedMapValue for proper rotation handling
+   */
+  function renderIcosahedralIceCover(ctx, mapConfig, imageConfig, iceIdx, iceColor) {
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        // Use getRotatedMapValue for proper rotation handling (same pattern as square)
+        const mapValue = getRotatedMapValue(mapConfig, col, row);
+        
+        if (mapValue >= iceIdx) {
+          ctx.fillStyle = `rgb(${iceColor.r}, ${iceColor.g}, ${iceColor.b})`;
+          ctx.fillRect(row, col, 1, 1);
+        }
+      }
+    }
+  }
+  
+  /**
+   * Get color from mapConfig palette (same colors as World Map)
+   * Uses the same indexed palette that World Map uses
+   * @param {number} elevation - Normalized elevation (0-1)
+   * @param {number} waterLevel - Normalized water level (0-1)
+   * @param {object} palette - The palette object from mapConfig.palette
+   * @returns {object} - RGB color {r, g, b}
+   */
+  function getPaletteColor(elevation, waterLevel, palette) {
+    if (!palette || !palette.cmap) {
+      // Fallback to Islands palette if no palette available
+      return getIslandsPaletteColor(elevation, waterLevel);
+    }
+    
+    let colorIndex;
+    
+    if (elevation < waterLevel) {
+      // Water - map to sea colors
+      const seaDepth = (waterLevel - elevation) / waterLevel;
+      colorIndex = palette.sea_idx + Math.floor(seaDepth * (palette.n_sea - 1));
+      colorIndex = Math.max(palette.sea_idx, Math.min(colorIndex, palette.land_idx - 1));
+    } else {
+      // Land - map to land colors
+      const landHeight = (elevation - waterLevel) / (1 - waterLevel);
+      colorIndex = palette.land_idx + Math.floor(landHeight * (palette.n_land - 1));
+      colorIndex = Math.max(palette.land_idx, Math.min(colorIndex, palette.ice_idx - 1));
+    }
+    
+    const hexColor = palette.cmap[colorIndex];
+    if (!hexColor) {
+      return { r: 128, g: 128, b: 128 }; // Gray fallback
+    }
+    
+    // Parse hex color string to RGB
+    const hex = hexColor.replace('#', '');
+    return {
+      r: parseInt(hex.substring(0, 2), 16),
+      g: parseInt(hex.substring(2, 4), 16),
+      b: parseInt(hex.substring(4, 6), 16)
+    };
+  }
+
+  /**
+   * Get color from Islands-style elevation palette
+   * Based on TedTschopp/Islands webgl.js color scheme
+   * @param {number} elevation - Normalized elevation (0-1)
+   * @param {number} waterLevel - Normalized water level (0-1)
+   * @returns {object} - RGB color {r, g, b}
+   */
+  function getIslandsPaletteColor(elevation, waterLevel) {
+    let r, g, b;
+    
+    if (elevation < waterLevel) {
+      // Water - Islands palette: sea_colour to deep_sea_colour
+      // sea_colour = rgb(120, 165, 255), deep_sea_colour = rgb(94, 130, 226)
+      const depth = (waterLevel - elevation) / waterLevel;
+      const depthStep = Math.floor(depth * 1.5); // Step-based like Islands
+      const t = Math.min(depthStep / 1.5, 1);
+      r = Math.floor(120 - t * 26);  // 120 -> 94
+      g = Math.floor(165 - t * 35);  // 165 -> 130
+      b = Math.floor(255 - t * 29);  // 255 -> 226
+    } else {
+      // Land - convert normalized elevation to meters-like scale
+      // Islands uses absolute meters with thresholds at 0, 50, 500, 1200, 1700, 2800, 4000m
+      // Map our 0-1 land elevation to 0-4000m equivalent
+      const landElev = (elevation - waterLevel) / (1 - waterLevel);
+      const elevMeters = landElev * 4000;
+      
+      // Islands palette colors (from webgl.js)
+      // colour_0m = rgb(0, 97, 71) - dark green
+      // colour_50m = rgb(16, 122, 47) - green  
+      // colour_500m = rgb(232, 215, 125) - tan/sandy
+      // colour_1200m = rgb(161, 67, 0) - orange-brown
+      // colour_1700m = rgb(158, 0, 0) - red-brown
+      // colour_2800m = rgb(160, 160, 160) - gray rock
+      // colour_4000m = rgb(240, 240, 240) - white snow
+      
+      if (elevMeters < 50) {
+        const t = elevMeters / 50;
+        r = Math.floor(0 + t * 16);     // 0 -> 16
+        g = Math.floor(97 + t * 25);    // 97 -> 122
+        b = Math.floor(71 - t * 24);    // 71 -> 47
+      } else if (elevMeters < 500) {
+        const t = (elevMeters - 50) / 450;
+        r = Math.floor(16 + t * 216);   // 16 -> 232
+        g = Math.floor(122 + t * 93);   // 122 -> 215
+        b = Math.floor(47 + t * 78);    // 47 -> 125
+      } else if (elevMeters < 1200) {
+        const t = (elevMeters - 500) / 700;
+        r = Math.floor(232 - t * 71);   // 232 -> 161
+        g = Math.floor(215 - t * 148);  // 215 -> 67
+        b = Math.floor(125 - t * 125);  // 125 -> 0
+      } else if (elevMeters < 1700) {
+        const t = (elevMeters - 1200) / 500;
+        r = Math.floor(161 - t * 3);    // 161 -> 158
+        g = Math.floor(67 - t * 67);    // 67 -> 0
+        b = Math.floor(0);              // 0 -> 0
+      } else if (elevMeters < 2800) {
+        const t = (elevMeters - 1700) / 1100;
+        r = Math.floor(158 + t * 2);    // 158 -> 160
+        g = Math.floor(0 + t * 160);    // 0 -> 160
+        b = Math.floor(0 + t * 160);    // 0 -> 160
+      } else {
+        const t = Math.min((elevMeters - 2800) / 1200, 1);
+        r = Math.floor(160 + t * 80);   // 160 -> 240
+        g = Math.floor(160 + t * 80);   // 160 -> 240
+        b = Math.floor(160 + t * 80);   // 160 -> 240
+      }
+    }
+    
+    return { r, g, b };
+  }
+  
+  /**
    * Render the terrain map with erosion effects
+   * Shows only land areas (no water coverage)
    */
   function renderTerrainMap(mapConfig, imageConfig, elevationMap, waterLevel) {
-    console.log('Rendering terrain map with erosion...');
+    console.log('Rendering terrain map with erosion (land only)...');
     
     const canvas = $('terrain-map');
     canvas.width = imageConfig.width;
     canvas.height = imageConfig.height;
     const ctx = canvas.getContext('2d');
     
+    // Fill with neutral background (light gray) for water areas
+    ctx.fillStyle = '#e8e8e8';
+    ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+    
+    // Render only land terrain with projection (skip water)
+    renderProjectedTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+  }
+  
+  /**
+   * Render projected terrain showing only land (water areas are transparent/skipped)
+   */
+  function renderProjectedTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    const projection = mapConfig.projection || 'square';
+    
+    if (projection === 'mollweide') {
+      renderMollweideTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else if (projection === 'sinusoidal') {
+      renderSinusoidalTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else if (projection === 'mercator') {
+      renderMercatorTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else if (projection === 'transmerc') {
+      renderTransMercTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else if (projection === 'icosahedral') {
+      renderIcosahedralTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    } else {
+      // Default square projection
+      renderSquareTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
+    }
+  }
+  
+  /**
+   * Render square projection terrain (land only)
+   */
+  function renderSquareTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        const elev = getRotatedElevation(mapConfig, elevationMap, col, row);
+        
+        // Skip water areas
+        if (elev < waterLevel) continue;
+        
+        const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+        ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+        ctx.fillRect(row, col, 1, 1);
+      }
+    }
+  }
+  
+  /**
+   * Render Mollweide projection terrain (land only)
+   */
+  function renderMollweideTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
+    
+    for (let row = 0; row < imageConfig.height; row++) {
+      sinFactors[row] = Math.sqrt(Math.sin((row / imageConfig.height) * Math.PI));
+      ellipseWidths[row] = Math.floor(wd2 * sinFactors[row]);
+      
+      const theta = Math.asin((2.8284271247 * (0.5 - row / imageConfig.height)) / Math.sqrt(2));
+      rowPositions[row] = Math.floor(
+        (0.5 - Math.asin((2 * theta + Math.sin(2 * theta)) / Math.PI) / Math.PI) * mapConfig.rows
+      );
+    }
+    
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        if (row > wd2 - ellipseWidths[col] && row < wd2 + ellipseWidths[col]) {
+          const mapCol = Math.floor((row - wd2) / sinFactors[col]) + (mapConfig.cd2 || Math.floor(mapConfig.cols / 2));
+          const elev = getRotatedElevation(mapConfig, elevationMap, rowPositions[col], mapCol);
+          
+          // Skip water areas
+          if (elev < waterLevel) continue;
+          
+          const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+          ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+          ctx.fillRect(row, col, 1, 1);
+        }
+      }
+    }
+  }
+  
+  /**
+   * Render Sinusoidal projection terrain (land only)
+   */
+  function renderSinusoidalTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
+    
+    for (let row = 0; row < imageConfig.height; row++) {
+      sinFactors[row] = Math.sin((row / imageConfig.height) * Math.PI);
+      ellipseWidths[row] = Math.floor(wd2 * sinFactors[row]);
+    }
+    
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        if (row > wd2 - ellipseWidths[col] && row < wd2 + ellipseWidths[col]) {
+          const mapCol = Math.floor((row - wd2) / sinFactors[col]) + (mapConfig.cd2 || Math.floor(mapConfig.cols / 2));
+          const elev = getRotatedElevation(mapConfig, elevationMap, col, mapCol);
+          
+          // Skip water areas
+          if (elev < waterLevel) continue;
+          
+          const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+          ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+          ctx.fillRect(row, col, 1, 1);
+        }
+      }
+    }
+  }
+  
+  /**
+   * Render Mercator projection terrain (land only)
+   */
+  function renderMercatorTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    for (let row = 0; row < imageConfig.height; row++) {
+      rowPositions[row] = Math.floor(
+        (0.5 - Math.atan(Math.sinh((0.5 - row / imageConfig.height) * Math.PI)) / Math.PI) * mapConfig.rows
+      );
+    }
+    
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        const mapCol = Math.floor((row / imageConfig.width) * mapConfig.cols);
+        const elev = getRotatedElevation(mapConfig, elevationMap, rowPositions[col], mapCol);
+        
+        // Skip water areas
+        if (elev < waterLevel) continue;
+        
+        const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+        ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+        ctx.fillRect(row, col, 1, 1);
+      }
+    }
+  }
+  
+  /**
+   * Render Transverse Mercator projection terrain (land only)
+   */
+  function renderTransMercTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
+    const hd2 = imageConfig.hd2 || Math.floor(imageConfig.height / 2);
+    const wd2 = imageConfig.wd2 || Math.floor(imageConfig.width / 2);
+    const scale = 0.5;
+    
+    for (let screenY = 0; screenY < imageConfig.height; screenY++) {
+      for (let screenX = 0; screenX < imageConfig.width; screenX++) {
+        const x = (screenX - wd2) / (wd2 * scale);
+        const y = (screenY - hd2) / (hd2 * scale);
+        
+        if (x * x + y * y > 4) continue;
+        
+        const lon = Math.atan2(Math.sinh(x), Math.cos(y));
+        const lat = Math.asin(Math.sin(y) / Math.cosh(x));
+        
+        const mapCol = Math.floor(((lon / Math.PI + 1) / 2) * mapConfig.cols) % mapConfig.cols;
+        const mapRow = Math.floor((0.5 - lat / Math.PI) * mapConfig.rows);
+        
+        if (mapRow < 0 || mapRow >= mapConfig.rows) continue;
+        
+        const elev = getRotatedElevation(mapConfig, elevationMap, mapRow, mapCol);
+        
+        // Skip water areas
+        if (elev < waterLevel) continue;
+        
+        const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+        ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+        ctx.fillRect(screenX, screenY, 1, 1);
+      }
+    }
+  }
+  
+  /**
+   * Render Icosahedral projection terrain (land only)
+   */
+  function renderIcosahedralTerrainLandOnly(ctx, mapConfig, imageConfig, elevationMap, waterLevel) {
     const scaleX = imageConfig.width / mapConfig.cols;
     const scaleY = imageConfig.height / mapConfig.rows;
     
-    // Render each cell with a vibrant, visible palette
-    for (let row = 0; row < elevationMap.length; row++) {
-      for (let col = 0; col < elevationMap[row].length; col++) {
-        const elev = elevationMap[row][col];
-        let r, g, b;
+    for (let row = 0; row < imageConfig.width; row++) {
+      for (let col = 0; col < imageConfig.height; col++) {
+        const elev = getRotatedElevation(mapConfig, elevationMap, col, row);
         
-        if (elev < waterLevel) {
-          // Water - deep blue to light blue gradient
-          const depth = (waterLevel - elev) / waterLevel;
-          // Deep water: dark blue (0, 20, 80), shallow: light blue (100, 180, 220)
-          r = Math.floor(100 - depth * 100);
-          g = Math.floor(180 - depth * 160);
-          b = Math.floor(220 - depth * 140);
-        } else {
-          // Land - use a more vibrant elevation-based palette
-          const landElev = (elev - waterLevel) / (1 - waterLevel);
-          
-          if (landElev < 0.15) {
-            // Coastal lowland - bright green
-            const t = landElev / 0.15;
-            r = Math.floor(34 + t * 30);
-            g = Math.floor(139 + t * 20);
-            b = Math.floor(34 + t * 30);
-          } else if (landElev < 0.3) {
-            // Low hills - yellow-green
-            const t = (landElev - 0.15) / 0.15;
-            r = Math.floor(64 + t * 90);
-            g = Math.floor(159 + t * 40);
-            b = Math.floor(64 - t * 30);
-          } else if (landElev < 0.45) {
-            // Mid elevation - golden/tan
-            const t = (landElev - 0.3) / 0.15;
-            r = Math.floor(154 + t * 50);
-            g = Math.floor(199 - t * 40);
-            b = Math.floor(34 + t * 50);
-          } else if (landElev < 0.6) {
-            // Highlands - orange-brown
-            const t = (landElev - 0.45) / 0.15;
-            r = Math.floor(204 + t * 30);
-            g = Math.floor(159 - t * 50);
-            b = Math.floor(84 - t * 30);
-          } else if (landElev < 0.75) {
-            // High mountains - reddish brown to gray
-            const t = (landElev - 0.6) / 0.15;
-            r = Math.floor(234 - t * 60);
-            g = Math.floor(109 + t * 40);
-            b = Math.floor(54 + t * 70);
-          } else if (landElev < 0.9) {
-            // Alpine - gray rock
-            const t = (landElev - 0.75) / 0.15;
-            r = Math.floor(174 + t * 40);
-            g = Math.floor(149 + t * 50);
-            b = Math.floor(124 + t * 60);
-          } else {
-            // Snow caps - white
-            const t = (landElev - 0.9) / 0.1;
-            r = Math.floor(214 + t * 41);
-            g = Math.floor(199 + t * 56);
-            b = Math.floor(184 + t * 71);
-          }
-        }
+        // Skip water areas
+        if (elev < waterLevel) continue;
         
-        ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
-        ctx.fillRect(
-          Math.floor(col * scaleX),
-          Math.floor(row * scaleY),
-          Math.ceil(scaleX),
-          Math.ceil(scaleY)
-        );
+        const color = getPaletteColor(elev, waterLevel, mapConfig.palette);
+        ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
+        ctx.fillRect(row, col, 1, 1);
       }
     }
   }
@@ -2841,81 +3660,10 @@
     canvas.height = imageConfig.height;
     const ctx = canvas.getContext('2d');
     
-    const scaleX = imageConfig.width / mapConfig.cols;
-    const scaleY = imageConfig.height / mapConfig.rows;
+    // Layer 1: Render terrain base with projection
+    renderProjectedTerrain(ctx, mapConfig, imageConfig, elevationMap, waterLevel);
     
-    // Layer 1: Render terrain base with the same vibrant palette as terrain map
-    for (let row = 0; row < elevationMap.length; row++) {
-      for (let col = 0; col < elevationMap[row].length; col++) {
-        const elev = elevationMap[row][col];
-        let r, g, b;
-        
-        if (elev < waterLevel) {
-          // Water - deep blue to light blue gradient
-          const depth = (waterLevel - elev) / waterLevel;
-          r = Math.floor(100 - depth * 100);
-          g = Math.floor(180 - depth * 160);
-          b = Math.floor(220 - depth * 140);
-        } else {
-          // Land - vibrant elevation-based palette
-          const landElev = (elev - waterLevel) / (1 - waterLevel);
-          
-          if (landElev < 0.15) {
-            // Coastal lowland - bright green
-            const t = landElev / 0.15;
-            r = Math.floor(34 + t * 30);
-            g = Math.floor(139 + t * 20);
-            b = Math.floor(34 + t * 30);
-          } else if (landElev < 0.3) {
-            // Low hills - yellow-green
-            const t = (landElev - 0.15) / 0.15;
-            r = Math.floor(64 + t * 90);
-            g = Math.floor(159 + t * 40);
-            b = Math.floor(64 - t * 30);
-          } else if (landElev < 0.45) {
-            // Mid elevation - golden/tan
-            const t = (landElev - 0.3) / 0.15;
-            r = Math.floor(154 + t * 50);
-            g = Math.floor(199 - t * 40);
-            b = Math.floor(34 + t * 50);
-          } else if (landElev < 0.6) {
-            // Highlands - orange-brown
-            const t = (landElev - 0.45) / 0.15;
-            r = Math.floor(204 + t * 30);
-            g = Math.floor(159 - t * 50);
-            b = Math.floor(84 - t * 30);
-          } else if (landElev < 0.75) {
-            // High mountains - reddish brown to gray
-            const t = (landElev - 0.6) / 0.15;
-            r = Math.floor(234 - t * 60);
-            g = Math.floor(109 + t * 40);
-            b = Math.floor(54 + t * 70);
-          } else if (landElev < 0.9) {
-            // Alpine - gray rock
-            const t = (landElev - 0.75) / 0.15;
-            r = Math.floor(174 + t * 40);
-            g = Math.floor(149 + t * 50);
-            b = Math.floor(124 + t * 60);
-          } else {
-            // Snow caps - white
-            const t = (landElev - 0.9) / 0.1;
-            r = Math.floor(214 + t * 41);
-            g = Math.floor(199 + t * 56);
-            b = Math.floor(184 + t * 71);
-          }
-        }
-        
-        ctx.fillStyle = `rgb(${r}, ${g}, ${b})`;
-        ctx.fillRect(
-          Math.floor(col * scaleX),
-          Math.floor(row * scaleY),
-          Math.ceil(scaleX),
-          Math.ceil(scaleY)
-        );
-      }
-    }
-    
-    // Layer 2: Overlay coastlines
+    // Layer 2: Overlay coastlines (Islands uses black with opacity)
     if (showCoastlines && typeof window.renderCoastlines === 'function' && coastlineSegments.length > 0) {
       window.renderCoastlines(
         ctx,
@@ -2925,14 +3673,17 @@
         mapConfig.cols,
         mapConfig.rows,
         {
-          seaColor: 'rgba(20, 50, 100, 0.6)',
-          lakeColor: 'rgba(40, 90, 140, 0.5)',
-          lineWidth: 1.5
+          seaColor: 'rgba(0, 0, 0, 0.5)',
+          lakeColor: 'rgba(0, 0, 0, 0.4)',
+          lineWidth: 1,
+          projection: mapConfig.projection,
+          imageConfig: imageConfig,
+          mapConfig: mapConfig
         }
       );
     }
     
-    // Layer 3: Overlay rivers
+    // Layer 3: Overlay rivers (Islands uses black with opacity based on discharge)
     if (showRivers && typeof window.renderRivers === 'function' && riverSegments.length > 0) {
       window.renderRivers(
         ctx,
@@ -2942,10 +3693,13 @@
         mapConfig.cols,
         mapConfig.rows,
         {
-          color: 'rgba(30, 100, 200, 0.85)',
+          color: 'rgba(0, 0, 0, 0.7)',
           minWidth: 0.5,
-          maxWidth: 3.5,
-          useDischargeWidth: true
+          maxWidth: 3,
+          useDischargeWidth: true,
+          projection: mapConfig.projection,
+          imageConfig: imageConfig,
+          mapConfig: mapConfig
         }
       );
     }
@@ -2957,7 +3711,7 @@
    * Render base terrain to a canvas context
    */
   function renderBaseTerrainToContext(ctx, mapConfig, imageConfig, heightMap, waterLevel) {
-    // Find min/max heights
+    // Find min/max heights for normalization
     let minHeight = Infinity, maxHeight = -Infinity;
     for (let row = 0; row < mapConfig.rows; row++) {
       for (let col = 0; col < mapConfig.cols; col++) {
@@ -2966,38 +3720,20 @@
       }
     }
     const heightRange = maxHeight - minHeight || 1;
+    const normalizedWaterLevel = (waterLevel - minHeight) / heightRange;
     
     const scaleX = imageConfig.width / mapConfig.cols;
     const scaleY = imageConfig.height / mapConfig.rows;
     
-    // Render base terrain
+    // Render base terrain using same palette as World Map
     for (let row = 0; row < mapConfig.rows; row++) {
       for (let col = 0; col < mapConfig.cols; col++) {
         const h = heightMap[row][col];
         const normalizedH = (h - minHeight) / heightRange;
-        const normalizedWater = (waterLevel - minHeight) / heightRange;
         
-        let color;
-        if (normalizedH < normalizedWater) {
-          // Water - blue gradient
-          const depth = 1 - normalizedH / normalizedWater;
-          color = `rgb(${Math.floor(100 - depth * 60)}, ${Math.floor(150 - depth * 50)}, ${Math.floor(200 - depth * 30)})`;
-        } else {
-          // Land - green to tan to white
-          const landH = (normalizedH - normalizedWater) / (1 - normalizedWater);
-          if (landH < 0.3) {
-            color = `rgb(${Math.floor(60 + landH * 100)}, ${Math.floor(120 + landH * 50)}, ${Math.floor(60)})`;
-          } else if (landH < 0.6) {
-            const t = (landH - 0.3) / 0.3;
-            color = `rgb(${Math.floor(90 + t * 60)}, ${Math.floor(135 + t * 15)}, ${Math.floor(60 + t * 40)})`;
-          } else {
-            const t = (landH - 0.6) / 0.4;
-            const gray = Math.floor(150 + t * 80);
-            color = `rgb(${gray}, ${Math.floor(150 + t * 80)}, ${Math.floor(100 + t * 120)})`;
-          }
-        }
+        const color = getPaletteColor(normalizedH, normalizedWaterLevel, mapConfig.palette);
         
-        ctx.fillStyle = color;
+        ctx.fillStyle = `rgb(${color.r}, ${color.g}, ${color.b})`;
         ctx.fillRect(
           Math.floor(col * scaleX),
           Math.floor(row * scaleY),
