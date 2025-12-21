@@ -560,45 +560,106 @@
     waterLevel
   ) {
 
-    console.log("Generating temperature map...");
+    console.log("Generating temperature map (planet.c algorithm)...");
 
     // Create a copy of the map config for temperature
     const temperatureConfig = JSON.parse(JSON.stringify(mapConfig));
     temperatureConfig.palette = applyPalette(palette.temperature);
 
-    // Generate temperature map based on latitude and elevation
-    const temperatureMap = [];
+    // Find height range for normalization to planet.c's altitude scale
+    // planet.c uses altitude roughly in range -0.1 to 0.1
+    let minHeight = Infinity;
+    let maxHeight = -Infinity;
     for (let row = 0; row < mapConfig.rows; row++) {
-      temperatureMap[row] = [];
+      for (let col = 0; col < mapConfig.cols; col++) {
+        if (heightMap[row][col] < minHeight) minHeight = heightMap[row][col];
+        if (heightMap[row][col] > maxHeight) maxHeight = heightMap[row][col];
+      }
+    }
+    const heightRange = maxHeight - minHeight || 1;
 
-      // Calculate latitude factor (equator = hot, poles = cold)
-      const latitudeFactor = 1 - Math.abs(row / mapConfig.rows - 0.5) * 2;
+    // First pass: calculate raw temperature values using planet.c formula
+    const rawTempMap = [];
+    let tempMin = Infinity;
+    let tempMax = -Infinity;
+
+    for (let row = 0; row < mapConfig.rows; row++) {
+      rawTempMap[row] = [];
+
+      // planet.c: y ranges from 1 (north pole) to -1 (south pole)
+      const y = 1 - 2 * (row / (mapConfig.rows - 1 || 1));
+      
+      // planet.c: sun = sqrt(1.0 - y*y) - solar intensity based on latitude
+      // This gives 1.0 at equator, 0.0 at poles
+      const sun = Math.sqrt(1.0 - y * y);
 
       for (let col = 0; col < mapConfig.cols; col++) {
         const elevation = heightMap[row][col];
         const isWater = elevation < waterLevel;
-
-        // Higher elevations are colder
-        const elevationFactor = isWater
-          ? 0.2 // Water has less temperature variation with height
-          : 1 - (elevation - waterLevel) / (mapConfig.rows * 0.25);
-
-        // Combine factors (latitude has more influence than elevation)
-        let temperature = latitudeFactor * 0.7 + elevationFactor * 0.3;
-
-        // Clamp temperature value between 0 and 1
-        temperature = Math.max(0, Math.min(1, temperature));
-
-        // Map to temperature color indices
+        
+        // Normalize altitude to planet.c scale (roughly -0.1 to 0.1)
+        // Sea level is at 0, land goes positive, deep water goes negative
+        let alt;
         if (isWater) {
-          // Water areas - use sea palette
+          // Water: negative altitude (depth below sea level)
+          alt = -0.1 * (waterLevel - elevation) / (waterLevel - minHeight || 1);
+        } else {
+          // Land: positive altitude (height above sea level)
+          alt = 0.1 * (elevation - waterLevel) / (maxHeight - waterLevel || 1);
+        }
+
+        // planet.c temperature formula:
+        // if (alt < 0) temp = sun/8.0 + alt*0.3;  // deep water colder
+        // else temp = sun/8.0 - alt*1.2;          // high altitudes colder
+        let temp;
+        if (alt < 0) {
+          temp = sun / 8.0 + alt * 0.3;  // Deep water is slightly colder
+        } else {
+          temp = sun / 8.0 - alt * 1.2;  // High land is much colder (lapse rate)
+        }
+
+        rawTempMap[row][col] = temp;
+        
+        // Track min/max for normalization (only on land per planet.c)
+        if (!isWater) {
+          if (temp < tempMin) tempMin = temp;
+          if (temp > tempMax) tempMax = temp;
+        }
+      }
+    }
+
+    // Include water temps in range if no land
+    if (tempMin === Infinity) {
+      for (let row = 0; row < mapConfig.rows; row++) {
+        for (let col = 0; col < mapConfig.cols; col++) {
+          if (rawTempMap[row][col] < tempMin) tempMin = rawTempMap[row][col];
+          if (rawTempMap[row][col] > tempMax) tempMax = rawTempMap[row][col];
+        }
+      }
+    }
+
+    const tempRange = tempMax - tempMin || 1;
+
+    // Second pass: normalize and convert to color indices
+    const temperatureMap = [];
+    for (let row = 0; row < mapConfig.rows; row++) {
+      temperatureMap[row] = [];
+      for (let col = 0; col < mapConfig.cols; col++) {
+        const elevation = heightMap[row][col];
+        const isWater = elevation < waterLevel;
+        
+        // Normalize temperature to 0-1 range
+        const tempNorm = (rawTempMap[row][col] - tempMin) / tempRange;
+        const tempClamped = Math.max(0, Math.min(1, tempNorm));
+
+        // Map to color indices
+        if (isWater) {
           temperatureMap[row][col] =
-            Math.floor(temperature * temperatureConfig.palette.n_sea) +
+            Math.floor(tempClamped * (temperatureConfig.palette.n_sea - 1)) +
             temperatureConfig.palette.sea_idx;
         } else {
-          // Land areas - use land palette
           temperatureMap[row][col] =
-            Math.floor(temperature * temperatureConfig.palette.n_land) +
+            Math.floor(tempClamped * (temperatureConfig.palette.n_land - 1)) +
             temperatureConfig.palette.land_idx;
         }
       }
@@ -654,113 +715,87 @@
     // Draw the pixels to the canvas
     draw_pixels(temperatureImage);
 
-    return temperatureMap;
+    // Return the raw temperature map for use by rainfall calculation
+    return rawTempMap;
   }
 
   /**
-   * Generate and render the rainfall map
+   * Generate and render the rainfall map using planet.c algorithm
    * @param {object} mapConfig - The map configuration
    * @param {object} imageConfig - The image configuration
    * @param {Array} heightMap - The original height map data
    * @param {number} waterLevel - The water level
-   * @param {Array} temperatureMap - The temperature map data
+   * @param {Array} rawTempMap - The raw temperature values from generateAndRenderTemperatureMap
    */
   function generateAndRenderRainfallMap(
     mapConfig,
     imageConfig,
     heightMap,
     waterLevel,
-    temperatureMap
+    rawTempMap
   ) {
-    console.log("Generating rainfall map...");
+    console.log("Generating rainfall map (planet.c algorithm)...");
 
     // Create a copy of the map config for rainfall
     const rainfallConfig = JSON.parse(JSON.stringify(mapConfig));
     rainfallConfig.palette = applyPalette(palette.rainfall);
 
-    // First pass: calculate raw rainfall values (not color indices yet)
+    // First, calculate the rain shadow map (simplified 2D approximation)
+    // planet.c uses 3D terrain normals; we approximate with horizontal gradient
+    const rainShadowMap = calculateRainShadow(mapConfig, heightMap, waterLevel);
+
+    // First pass: calculate raw rainfall values using planet.c formula
     const rawRainfallMap = [];
     let minRain = Infinity;
     let maxRain = -Infinity;
 
-    // Find height range for normalization
-    let minHeight = Infinity;
-    let maxHeight = -Infinity;
-    for (let row = 0; row < mapConfig.rows; row++) {
-      for (let col = 0; col < mapConfig.cols; col++) {
-        if (heightMap[row][col] < minHeight) minHeight = heightMap[row][col];
-        if (heightMap[row][col] > maxHeight) maxHeight = heightMap[row][col];
-      }
-    }
-    const heightRange = maxHeight - minHeight || 1;
-
     for (let row = 0; row < mapConfig.rows; row++) {
       rawRainfallMap[row] = [];
       
-      // Calculate latitude: 0 at equator, 1 at poles
-      const latitudeNorm = Math.abs(row / mapConfig.rows - 0.5) * 2;
-      // y goes from 1 (north pole) to -1 (south pole), 0 at equator
-      const y = 1 - 2 * (row / (mapConfig.rows - 1));
-      const sun = Math.sqrt(1.0 - y * y); // Solar intensity, max at equator
+      // planet.c: y ranges from 1 (north pole) to -1 (south pole)
+      const y = 1 - 2 * (row / (mapConfig.rows - 1 || 1));
+      
+      // planet.c: y2 = fabs(y) - 0.5
+      // This creates subtropical dry belts around |latitude| = 0.5 (30°)
+      const y2 = Math.abs(y) - 0.5;
 
       for (let col = 0; col < mapConfig.cols; col++) {
         const elevation = heightMap[row][col];
         const isWater = elevation < waterLevel;
         
-        // Normalize elevation to 0-1 range
-        const elevNorm = (elevation - minHeight) / heightRange;
+        // Get temperature from the raw temperature map
+        const temp = rawTempMap[row][col];
         
-        // Calculate base temperature factor (similar to planet.c but normalized)
-        let tempFactor;
-        if (isWater) {
-          tempFactor = sun * 0.8 + 0.2; // Water moderates temperature
-        } else {
-          // Land: reduce temperature with elevation (lapse rate effect)
-          const elevAboveWater = Math.max(0, elevation - waterLevel) / heightRange;
-          tempFactor = sun * (1 - elevAboveWater * 0.5);
-        }
+        // planet.c rainfall formula:
+        // rain = temp*0.65 + 0.1 - 0.011/(y2*y2+0.1)
+        // The last term creates dry subtropical high pressure belts
+        let rain = temp * 0.65 + 0.1 - 0.011 / (y2 * y2 + 0.1);
         
-        // Calculate rainfall based on multiple factors
-        // 1. Base rainfall from temperature (warm air holds more moisture)
-        let rain = tempFactor * 0.6;
+        // planet.c: rain += 0.03 * rainShadow
+        // Add rain shadow effect (negative in shadow, positive on windward)
+        rain += 0.03 * rainShadowMap[row][col];
         
-        // 2. Latitude effect: ITCZ at equator (high rain), subtropical highs (dry), 
-        //    mid-latitude westerlies (moderate), polar (dry)
-        const y2 = Math.abs(y) - 0.5;
-        const latitudeEffect = 0.3 - 0.15 / (y2 * y2 + 0.1);
-        rain += latitudeEffect;
+        // planet.c adjusts negative rain values for deserts
+        // We keep it simple: clamp to non-negative
+        if (rain < 0) rain = 0;
         
-        // 3. Orographic effect: coastal areas and windward slopes get more rain
-        if (!isWater) {
-          // Check for nearby water (simple proximity check)
-          let nearWater = false;
-          const checkRadius = 3;
-          for (let dr = -checkRadius; dr <= checkRadius && !nearWater; dr++) {
-            for (let dc = -checkRadius; dc <= checkRadius && !nearWater; dc++) {
-              const checkRow = Math.max(0, Math.min(mapConfig.rows - 1, row + dr));
-              const checkCol = (col + dc + mapConfig.cols) % mapConfig.cols;
-              if (heightMap[checkRow][checkCol] < waterLevel) {
-                nearWater = true;
-              }
-            }
-          }
-          if (nearWater) {
-            rain += 0.15; // Coastal areas get more rain
-          }
-          
-          // High elevations can cause rain shadow or orographic lift
-          if (elevNorm > 0.6) {
-            rain *= 0.7; // Mountains can create dry conditions (simplified)
-          }
-        }
-        
-        // Clamp and store raw value
-        rain = Math.max(0, Math.min(1, rain));
         rawRainfallMap[row][col] = rain;
         
-        // Track min/max for later normalization
-        if (rain < minRain) minRain = rain;
-        if (rain > maxRain) maxRain = rain;
+        // Track min/max for normalization (land only per planet.c)
+        if (!isWater) {
+          if (rain < minRain) minRain = rain;
+          if (rain > maxRain) maxRain = rain;
+        }
+      }
+    }
+
+    // Include water if no land found
+    if (minRain === Infinity) {
+      for (let row = 0; row < mapConfig.rows; row++) {
+        for (let col = 0; col < mapConfig.cols; col++) {
+          if (rawRainfallMap[row][col] < minRain) minRain = rawRainfallMap[row][col];
+          if (rawRainfallMap[row][col] > maxRain) maxRain = rawRainfallMap[row][col];
+        }
       }
     }
 
@@ -798,15 +833,16 @@
         
         // Normalize rainfall to 0-1 using actual range
         const rainNorm = (smoothedRawMap[row][col] - minRain) / rainRange;
+        const rainClamped = Math.max(0, Math.min(1, rainNorm));
         
         // Map to color indices
         if (isWater) {
           rainfallMap[row][col] =
-            Math.floor(rainNorm * (rainfallConfig.palette.n_sea - 1)) +
+            Math.floor(rainClamped * (rainfallConfig.palette.n_sea - 1)) +
             rainfallConfig.palette.sea_idx;
         } else {
           rainfallMap[row][col] =
-            Math.floor(rainNorm * (rainfallConfig.palette.n_land - 1)) +
+            Math.floor(rainClamped * (rainfallConfig.palette.n_land - 1)) +
             rainfallConfig.palette.land_idx;
         }
       }
@@ -845,6 +881,83 @@
     console.log("Drawing rainfall map...");
     // Draw the pixels to the canvas
     draw_pixels(rainfallImage);
+    
+    // Return raw rainfall for potential biome calculation
+    return rawRainfallMap;
+  }
+
+  /**
+   * Calculate rain shadow effect based on terrain gradients
+   * Approximates planet.c's 3D rain shadow using 2D horizontal gradients
+   * @param {object} mapConfig - The map configuration  
+   * @param {Array} heightMap - The height map
+   * @param {number} waterLevel - The water level
+   * @returns {Array} Rain shadow values (negative = shadow, positive = windward)
+   */
+  function calculateRainShadow(mapConfig, heightMap, waterLevel) {
+    const rainShadow = [];
+    
+    // planet.c uses shade_angle = 150.0 (degrees) for shadow calculation
+    // We approximate by looking at terrain slope in prevailing wind direction
+    // Assume westerlies (wind from west to east) as dominant pattern
+    
+    for (let row = 0; row < mapConfig.rows; row++) {
+      rainShadow[row] = [];
+      
+      // Vary wind direction by latitude (trade winds, westerlies, polar easterlies)
+      // Simplified: trades (equator to ~30°), westerlies (30° to 60°), polar easterlies
+      const y = 1 - 2 * (row / (mapConfig.rows - 1 || 1));
+      const absY = Math.abs(y);
+      
+      // Wind direction: +1 = from west, -1 = from east
+      let windDir;
+      if (absY < 0.5) {
+        // Trade winds: blow from east (toward equator and west)
+        windDir = -1;
+      } else if (absY < 0.85) {
+        // Westerlies: blow from west
+        windDir = 1;
+      } else {
+        // Polar easterlies: blow from east  
+        windDir = -1;
+      }
+      
+      for (let col = 0; col < mapConfig.cols; col++) {
+        const elevation = heightMap[row][col];
+        const isWater = elevation < waterLevel;
+        
+        if (isWater) {
+          // Water doesn't have rain shadow effect
+          rainShadow[row][col] = 0;
+          continue;
+        }
+        
+        // Look upwind for higher terrain that would cast rain shadow
+        let shadow = 0;
+        const lookDistance = 10; // pixels to check upwind
+        
+        for (let d = 1; d <= lookDistance; d++) {
+          const checkCol = (col - d * windDir + mapConfig.cols) % mapConfig.cols;
+          const upwindElev = heightMap[row][checkCol];
+          
+          // If upwind terrain is higher, we're in rain shadow
+          if (upwindElev > elevation && upwindElev > waterLevel) {
+            const elevDiff = (upwindElev - elevation) / (mapConfig.rows * 0.1);
+            shadow -= elevDiff / d; // Shadow decreases with distance
+          }
+          // If we're higher than upwind, we're on windward side
+          else if (elevation > upwindElev && upwindElev > waterLevel) {
+            const elevDiff = (elevation - upwindElev) / (mapConfig.rows * 0.1);
+            shadow += elevDiff / d; // Orographic lift
+          }
+        }
+        
+        // Clamp shadow effect
+        rainShadow[row][col] = Math.max(-2, Math.min(2, shadow));
+      }
+    }
+    
+    return rainShadow;
   }
 
   /**
