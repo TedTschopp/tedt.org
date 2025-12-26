@@ -296,7 +296,8 @@
       });
       
       // Initialize terrain from the generated heightmap
-      cellData.initializeFromHeightmap(config.map);
+      // Pass the calculated waterLevel to ensure ocean detection matches the main map
+      cellData.initializeFromHeightmap(config.map, waterLevel);
       
       // Calculate climate data using your existing formulas
       cellData.calculateClimate();
@@ -403,6 +404,10 @@
     // Apply ice caps based on ice percentage
     var finalMap = (config = applyIce(config));
     timing = markTiming(timing, "create");
+    
+    // Store mapConfig globally for use in ecosystem simulation buttons
+    // This allows the HTML event handlers to access rpx for rotation
+    window.worldMapConfig = finalMap;
 
     // Set up rendering configuration based on projection
     var imageConfig = {};
@@ -504,6 +509,9 @@
       waterLevel
     );
 
+    // Generate and render the ecosystem maps (derived from Holdridge zones)
+    renderAllEcosystemMaps(finalMap, imageConfig);
+
     // Generate and render the lake map
     generateAndRenderLakeMap(
       finalMap,
@@ -552,6 +560,9 @@
         
         // Recalculate Holdridge Life Zones
         cellData.calculateHoldridgeLifeZones();
+        
+        // Re-render ecosystem maps with updated climate/Holdridge data
+        renderAllEcosystemMaps(finalMap, imageConfig);
         
         const iceStats = cellData.getIceStats();
         console.log('Post-erosion ice stats:', iceStats);
@@ -1276,15 +1287,20 @@
     const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
     const data = imageData.data;
     
-    // Render based on cell data
+    // Render based on cell data with rotation applied
     const scaleX = cellData.cols / imageConfig.width;
     const scaleY = cellData.rows / imageConfig.height;
+    const rpx = mapConfig.rpx || 0; // Rotation in pixels
     
     for (let y = 0; y < imageConfig.height; y++) {
       for (let x = 0; x < imageConfig.width; x++) {
-        // Map pixel to cell
-        const col = Math.floor(x * scaleX);
+        // Map pixel to cell with rotation applied
+        let col = Math.floor(x * scaleX);
         const row = Math.floor(y * scaleY);
+        
+        // Apply rotation (same formula as getRotatedMapValue)
+        col = (col - rpx + cellData.cols) % cellData.cols;
+        
         const cell = row * cellData.cols + col;
         
         const idx = (y * imageConfig.width + x) * 4;
@@ -1347,15 +1363,20 @@
     const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
     const data = imageData.data;
     
-    // Render based on cell data
+    // Render based on cell data with rotation applied
     const scaleX = cellData.cols / imageConfig.width;
     const scaleY = cellData.rows / imageConfig.height;
+    const rpx = mapConfig.rpx || 0; // Rotation in pixels
     
     for (let y = 0; y < imageConfig.height; y++) {
       for (let x = 0; x < imageConfig.width; x++) {
-        // Map pixel to cell
-        const col = Math.floor(x * scaleX);
+        // Map pixel to cell with rotation applied
+        let col = Math.floor(x * scaleX);
         const row = Math.floor(y * scaleY);
+        
+        // Apply rotation (same formula as getRotatedMapValue)
+        col = (col - rpx + cellData.cols) % cellData.cols;
+        
         const cell = row * cellData.cols + col;
         
         const idx = (y * imageConfig.width + x) * 4;
@@ -1380,8 +1401,10 @@
   /**
    * Render the soil map from ecosystem simulation or derived from Holdridge zones
    * Shows soil color based on OM content, leaching, salinity, waterlogging
+   * @param {object} mapConfig - The map configuration (contains rpx for rotation)
+   * @param {object} imageConfig - The image configuration
    */
-  function renderSoilMap(imageConfig) {
+  function renderSoilMap(mapConfig, imageConfig) {
     console.log("Rendering soil map...");
 
     const canvas = $('soil-map');
@@ -1404,7 +1427,6 @@
     }
     
     const cellData = window.worldCellData;
-    const seaLevel = cellData.config.seaLevel;
     
     // Check if simulation has run (has soil colors), otherwise derive from Holdridge
     const hasSimulationData = cellData.soilColorRGB && cellData.soilColorRGB.length > 0 &&
@@ -1415,6 +1437,7 @@
     
     const scaleX = cellData.cols / imageConfig.width;
     const scaleY = cellData.rows / imageConfig.height;
+    const rpx = mapConfig.rpx || 0; // Rotation in pixels
     
     // Soil color palettes
     const soilColors = {
@@ -1423,24 +1446,31 @@
       black: [50, 45, 40],      // High OM
       pale: [235, 225, 200],    // Arid
       gray: [140, 145, 150],    // Permafrost
-      ocean: [30, 60, 100]
+      ocean: [65, 105, 170]     // Match Holdridge ocean color
     };
     
     for (let y = 0; y < imageConfig.height; y++) {
       for (let x = 0; x < imageConfig.width; x++) {
-        const col = Math.floor(x * scaleX);
+        // Map pixel to cell with rotation applied
+        let col = Math.floor(x * scaleX);
         const row = Math.floor(y * scaleY);
+        
+        // Apply rotation (same formula as getRotatedMapValue)
+        col = (col - rpx + cellData.cols) % cellData.cols;
+        
         const cell = row * cellData.cols + col;
         
         const idx = (y * imageConfig.width + x) * 4;
         
-        const groundElev = cellData.cellElevation[cell] || 
-                          (cellData.bedrockThickness[cell] + cellData.sedimentThickness[cell]);
+        // Use holdridgeColors directly for ocean to guarantee exact match with Holdridge map
+        // holdridgeColors are pre-calculated using elevation < seaLevel
+        const isOcean = cellData.holdridgeIndex[cell] === 255;
         
-        if (groundElev < seaLevel) {
-          data[idx] = soilColors.ocean[0];
-          data[idx + 1] = soilColors.ocean[1];
-          data[idx + 2] = soilColors.ocean[2];
+        if (isOcean) {
+          // Use exact same ocean color from Holdridge calculation
+          data[idx] = cellData.holdridgeColors[cell * 3];
+          data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1];
+          data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2];
         } else if (hasSimulationData) {
           // Use simulation colors
           data[idx] = cellData.soilColorRGB[cell * 3];
@@ -1498,8 +1528,10 @@
   /**
    * Render the vegetation map from ecosystem simulation or derived from Holdridge zones
    * Shows vegetation cover, canopy density, and ground cover type
+   * @param {object} mapConfig - The map configuration (contains rpx for rotation)
+   * @param {object} imageConfig - The image configuration
    */
-  function renderVegetationMap(imageConfig) {
+  function renderVegetationMap(mapConfig, imageConfig) {
     console.log("Rendering vegetation map...");
 
     const canvas = $('vegetation-map');
@@ -1522,7 +1554,6 @@
     }
     
     const cellData = window.worldCellData;
-    const seaLevel = cellData.config.seaLevel;
     
     const hasSimulationData = cellData.vegColors && cellData.vegColors.length > 0 &&
                               cellData.vegColors.some(v => v !== 0);
@@ -1532,22 +1563,29 @@
     
     const scaleX = cellData.cols / imageConfig.width;
     const scaleY = cellData.rows / imageConfig.height;
+    const rpx = mapConfig.rpx || 0; // Rotation in pixels
     
     for (let y = 0; y < imageConfig.height; y++) {
       for (let x = 0; x < imageConfig.width; x++) {
-        const col = Math.floor(x * scaleX);
+        // Map pixel to cell with rotation applied
+        let col = Math.floor(x * scaleX);
         const row = Math.floor(y * scaleY);
+        
+        // Apply rotation (same formula as getRotatedMapValue)
+        col = (col - rpx + cellData.cols) % cellData.cols;
+        
         const cell = row * cellData.cols + col;
         
         const idx = (y * imageConfig.width + x) * 4;
         
-        const groundElev = cellData.cellElevation[cell] || 
-                          (cellData.bedrockThickness[cell] + cellData.sedimentThickness[cell]);
+        // Use holdridgeColors directly for ocean to guarantee exact match with Holdridge map
+        const isOcean = cellData.holdridgeIndex[cell] === 255;
         
-        if (groundElev < seaLevel) {
-          data[idx] = 30;
-          data[idx + 1] = 50;
-          data[idx + 2] = 90;
+        if (isOcean) {
+          // Use exact same ocean color from Holdridge calculation
+          data[idx] = cellData.holdridgeColors[cell * 3];
+          data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1];
+          data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2];
         } else if (hasSimulationData) {
           data[idx] = cellData.vegColors[cell * 3];
           data[idx + 1] = cellData.vegColors[cell * 3 + 1];
@@ -1598,8 +1636,10 @@
   /**
    * Render the fauna map from ecosystem simulation or derived from Holdridge zones
    * Shows fauna guild abundance as RGB channels
+   * @param {object} mapConfig - The map configuration (contains rpx for rotation)
+   * @param {object} imageConfig - The image configuration
    */
-  function renderFaunaMap(imageConfig) {
+  function renderFaunaMap(mapConfig, imageConfig) {
     console.log("Rendering fauna map...");
 
     const canvas = $('fauna-map');
@@ -1622,7 +1662,6 @@
     }
     
     const cellData = window.worldCellData;
-    const seaLevel = cellData.config.seaLevel;
     
     const hasSimulationData = cellData.faunaColors && cellData.faunaColors.length > 0 &&
                               cellData.faunaColors.some(v => v !== 0);
@@ -1632,6 +1671,7 @@
     
     const scaleX = cellData.cols / imageConfig.width;
     const scaleY = cellData.rows / imageConfig.height;
+    const rpx = mapConfig.rpx || 0; // Rotation in pixels
     
     // Fauna weights by zone type (R=mammals, G=invertebrates+amphibians, B=reptiles+birds)
     const faunaByZone = {
@@ -1651,19 +1691,25 @@
     
     for (let y = 0; y < imageConfig.height; y++) {
       for (let x = 0; x < imageConfig.width; x++) {
-        const col = Math.floor(x * scaleX);
+        // Map pixel to cell with rotation applied
+        let col = Math.floor(x * scaleX);
         const row = Math.floor(y * scaleY);
+        
+        // Apply rotation (same formula as getRotatedMapValue)
+        col = (col - rpx + cellData.cols) % cellData.cols;
+        
         const cell = row * cellData.cols + col;
         
         const idx = (y * imageConfig.width + x) * 4;
         
-        const groundElev = cellData.cellElevation[cell] || 
-                          (cellData.bedrockThickness[cell] + cellData.sedimentThickness[cell]);
+        // Use holdridgeColors directly for ocean to guarantee exact match with Holdridge map
+        const isOcean = cellData.holdridgeIndex[cell] === 255;
         
-        if (groundElev < seaLevel) {
-          data[idx] = 30;
-          data[idx + 1] = 50;
-          data[idx + 2] = 90;
+        if (isOcean) {
+          // Use exact same ocean color from Holdridge calculation
+          data[idx] = cellData.holdridgeColors[cell * 3];
+          data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1];
+          data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2];
         } else if (hasSimulationData) {
           data[idx] = cellData.faunaColors[cell * 3];
           data[idx + 1] = cellData.faunaColors[cell * 3 + 1];
@@ -1700,8 +1746,10 @@
   /**
    * Render the fire risk map from ecosystem simulation or derived from climate
    * Shows annual fire probability as a heat map
+   * @param {object} mapConfig - The map configuration (contains rpx for rotation)
+   * @param {object} imageConfig - The image configuration
    */
-  function renderFireRiskMap(imageConfig) {
+  function renderFireRiskMap(mapConfig, imageConfig) {
     console.log("Rendering fire risk map...");
 
     const canvas = $('fire-risk-map');
@@ -1724,7 +1772,6 @@
     }
     
     const cellData = window.worldCellData;
-    const seaLevel = cellData.config.seaLevel;
     
     const hasSimulationData = cellData.fireRisk && cellData.fireRisk.length > 0 &&
                               cellData.fireRisk.some(v => v !== 0);
@@ -1734,22 +1781,29 @@
     
     const scaleX = cellData.cols / imageConfig.width;
     const scaleY = cellData.rows / imageConfig.height;
+    const rpx = mapConfig.rpx || 0; // Rotation in pixels
     
     for (let y = 0; y < imageConfig.height; y++) {
       for (let x = 0; x < imageConfig.width; x++) {
-        const col = Math.floor(x * scaleX);
+        // Map pixel to cell with rotation applied
+        let col = Math.floor(x * scaleX);
         const row = Math.floor(y * scaleY);
+        
+        // Apply rotation (same formula as getRotatedMapValue)
+        col = (col - rpx + cellData.cols) % cellData.cols;
+        
         const cell = row * cellData.cols + col;
         
         const idx = (y * imageConfig.width + x) * 4;
         
-        const groundElev = cellData.cellElevation[cell] || 
-                          (cellData.bedrockThickness[cell] + cellData.sedimentThickness[cell]);
+        // Use holdridgeColors directly for ocean to guarantee exact match with Holdridge map
+        const isOcean = cellData.holdridgeIndex[cell] === 255;
         
-        if (groundElev < seaLevel) {
-          data[idx] = 30;
-          data[idx + 1] = 50;
-          data[idx + 2] = 90;
+        if (isOcean) {
+          // Use exact same ocean color from Holdridge calculation
+          data[idx] = cellData.holdridgeColors[cell * 3];
+          data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1];
+          data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2];
         } else {
           let risk;
           
@@ -1811,12 +1865,14 @@
   /**
    * Render all ecosystem maps
    * Called after ecosystem simulation steps
+   * @param {object} mapConfig - The map configuration (contains rpx for rotation)
+   * @param {object} imageConfig - The image configuration
    */
-  function renderAllEcosystemMaps(imageConfig) {
-    renderSoilMap(imageConfig);
-    renderVegetationMap(imageConfig);
-    renderFaunaMap(imageConfig);
-    renderFireRiskMap(imageConfig);
+  function renderAllEcosystemMaps(mapConfig, imageConfig) {
+    renderSoilMap(mapConfig, imageConfig);
+    renderVegetationMap(mapConfig, imageConfig);
+    renderFaunaMap(mapConfig, imageConfig);
+    renderFireRiskMap(mapConfig, imageConfig);
   }
 
   // Expose ecosystem map functions globally

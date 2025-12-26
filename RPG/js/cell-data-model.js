@@ -343,7 +343,7 @@ class CellDataModel {
      * Initialize terrain from a heightmap
      * @param {number[][]} heightmap - 2D array of elevation values
      */
-    initializeFromHeightmap(heightmap) {
+    initializeFromHeightmap(heightmap, externalWaterLevel = null) {
         // Find min/max for normalization
         let minHeight = Infinity, maxHeight = -Infinity;
         for (let row = 0; row < this.rows; row++) {
@@ -355,6 +355,14 @@ class CellDataModel {
         }
         
         const heightRange = maxHeight - minHeight || 1;
+        
+        // If external water level provided, convert it to our scaled elevation range
+        // The external waterLevel is in raw heightmap units, we need to convert to meters
+        let scaledWaterLevel = null;
+        if (externalWaterLevel !== null) {
+            const normalizedWaterLevel = (externalWaterLevel - minHeight) / heightRange;
+            scaledWaterLevel = normalizedWaterLevel * 2500 + 600;
+        }
         
         // Populate terrain arrays
         for (let row = 0; row < this.rows; row++) {
@@ -374,8 +382,13 @@ class CellDataModel {
             }
         }
         
-        // Calculate sea level based on water percentage
-        this._calculateSeaLevel();
+        // Use external water level if provided, otherwise calculate from percentage
+        if (scaledWaterLevel !== null) {
+            this.config.seaLevel = scaledWaterLevel;
+            console.log(`Using external water level: ${scaledWaterLevel.toFixed(1)}m`);
+        } else {
+            this._calculateSeaLevel();
+        }
         
         // Update derived values
         this.updateElevation();
@@ -1103,6 +1116,109 @@ class CellDataModel {
         }
         
         return 'Unknown';
+    }
+    
+    // ========================================================================
+    // ECOSYSTEM NAME HELPERS (for tooltip display)
+    // ========================================================================
+    
+    /**
+     * Get soil texture name (sand/loam/clay)
+     */
+    getSoilTextureName(cell) {
+        const texture = this.soilTexture[cell];
+        const names = ['Sand', 'Loam', 'Clay'];
+        return names[texture] || 'Unknown';
+    }
+    
+    /**
+     * Get soil type (order) name
+     */
+    getSoilTypeName(cell) {
+        const typeClass = this.soilTypeClass[cell];
+        const names = [
+            'Raw/Undeveloped',   // 0: RAW
+            'Oxisol',            // 1: Highly weathered tropical
+            'Ultisol',           // 2: Leached acidic forest
+            'Alfisol',           // 3: Moderately leached
+            'Mollisol',          // 4: Grassland dark soils
+            'Spodosol',          // 5: Acidic conifer forest
+            'Aridisol',          // 6: Desert soils
+            'Gelisol',           // 7: Permafrost soils
+            'Inceptisol',        // 8: Young developing soils
+            'Histosol'           // 9: Organic/peat soils
+        ];
+        return names[typeClass] || 'Unknown';
+    }
+    
+    /**
+     * Get ground cover mode name
+     */
+    getGroundCoverModeName(cell) {
+        const mode = this.vegGroundCoverMode[cell];
+        const names = ['Litter', 'Moss/Lichen', 'Grass/Herb', 'Bio Crust', 'Sparse/Bare'];
+        return names[mode] || 'Unknown';
+    }
+    
+    /**
+     * Get vegetation template name from ID
+     */
+    getVegetationTemplateName(cell) {
+        // The template ID maps to the Holdridge zone name since we use it as the key
+        const templateId = this.vegTemplateId[cell];
+        // Template ID is typically the same as holdridge index
+        if (templateId === 255) return 'Ocean';
+        return this.getHoldridgeZoneName(cell);
+    }
+    
+    /**
+     * Calculate total fauna abundance (normalized 0-1)
+     */
+    getFaunaTotalAbundance(cell) {
+        return (
+            this.faunaGrazers[cell] +
+            this.faunaBrowsers[cell] +
+            this.faunaPredators[cell] +
+            this.faunaInsects[cell] +
+            this.faunaAmphibians[cell] +
+            this.faunaReptiles[cell] +
+            this.faunaBirds[cell]
+        ) / 7; // Normalize by number of guilds
+    }
+    
+    /**
+     * Get dominant fauna guild for a cell
+     */
+    getDominantFaunaGuild(cell) {
+        const guilds = [
+            { name: 'Grazers', value: this.faunaGrazers[cell] },
+            { name: 'Browsers', value: this.faunaBrowsers[cell] },
+            { name: 'Predators', value: this.faunaPredators[cell] },
+            { name: 'Insects', value: this.faunaInsects[cell] },
+            { name: 'Amphibians', value: this.faunaAmphibians[cell] },
+            { name: 'Reptiles', value: this.faunaReptiles[cell] },
+            { name: 'Birds', value: this.faunaBirds[cell] }
+        ];
+        
+        let dominant = guilds[0];
+        for (const guild of guilds) {
+            if (guild.value > dominant.value) {
+                dominant = guild;
+            }
+        }
+        return dominant.value > 0 ? dominant.name : 'None';
+    }
+    
+    /**
+     * Get fire risk category
+     */
+    getFireRiskCategory(cell) {
+        const risk = this.fireRisk[cell];
+        if (risk < 0.1) return 'Very Low';
+        if (risk < 0.25) return 'Low';
+        if (risk < 0.5) return 'Moderate';
+        if (risk < 0.75) return 'High';
+        return 'Extreme';
     }
     
     /**
@@ -2076,6 +2192,59 @@ class CellDataModel {
             holdridgeZoneName: this.getHoldridgeZoneName(cell),
             biotemperature: this.biotemperature[cell],
             petRatio: this.petRatio[cell],
+            
+            // ================================================================
+            // ECOSYSTEM DATA (Soil, Vegetation, Fauna, Fire)
+            // ================================================================
+            
+            // Soil properties
+            soilTexture: this.soilTexture[cell],
+            soilTextureName: this.getSoilTextureName(cell),
+            soilTypeClass: this.soilTypeClass[cell],
+            soilTypeName: this.getSoilTypeName(cell),
+            soilDepth: this.soilDepth[cell],
+            soilMoisture: this.soilMoist[cell],
+            fieldCapacity: this.fieldCapacity[cell],
+            soilOrganicMatter: this.soilOM[cell],
+            soilSalinity: this.soilSalinity[cell],
+            soilWaterlogging: this.soilWaterlog[cell],
+            soilPermafrost: this.soilPermafrost[cell] === 1,
+            soilLeachIndex: this.soilLeachIndex[cell],
+            
+            // Vegetation properties
+            vegCover: this.vegCover[cell],
+            vegCanopy: this.vegCanopy[cell],
+            vegGroundCover: this.vegGroundCover[cell],
+            vegGroundCoverMode: this.vegGroundCoverMode[cell],
+            vegGroundCoverModeName: this.getGroundCoverModeName(cell),
+            vegFuelLoad: this.vegFuelLoad[cell],
+            vegNPP: this.vegNPP[cell],
+            vegLitterfall: this.vegLitterfall[cell],
+            
+            // Fauna properties
+            faunaGrazers: this.faunaGrazers[cell],
+            faunaBrowsers: this.faunaBrowsers[cell],
+            faunaPredators: this.faunaPredators[cell],
+            faunaInsects: this.faunaInsects[cell],
+            faunaAmphibians: this.faunaAmphibians[cell],
+            faunaReptiles: this.faunaReptiles[cell],
+            faunaBirds: this.faunaBirds[cell],
+            faunaTotalBiomass: this.faunaTotalBiomass[cell],
+            faunaTotalAbundance: this.getFaunaTotalAbundance(cell),
+            faunaDominantGuild: this.getDominantFaunaGuild(cell),
+            
+            // Fire properties
+            fireRisk: this.fireRisk[cell],
+            fireRiskCategory: this.getFireRiskCategory(cell),
+            yearsSinceFire: this.yearsSinceFire[cell],
+            fireIntensity: this.fireIntensity[cell],
+            
+            // Hydrology
+            hydroRunoff: this.hydroRunoff[cell],
+            hydroInfiltration: this.hydroInfiltration[cell],
+            hydroETActual: this.hydroETActual[cell],
+            hydroSlope: this.hydroSlope[cell],
+            
             // Other
             isCoastal: this.isCoastal[cell] === 1,
             lakeIndex: this.lakeIndex[cell]

@@ -673,14 +673,14 @@
 
       <!-- Ecosystem Simulation Maps -->
       <div id="ecosystem-simulation-section">
-        <h2>Ecosystem Simulation</h2>
+        <h2>Ecosystem Maps</h2>
         <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
-          Dynamic ecosystem simulation based on Holdridge Life Zones. Click "Run Ecosystem Simulation" to 
-          initialize and advance the simulation. The maps below show soil, vegetation, and fauna state.
+          Ecosystem characteristics derived from Holdridge Life Zones. Maps show initial conditions based on climate;
+          use the simulation controls to model ecosystem dynamics over time (soil development, vegetation succession, fauna populations, fire cycles).
         </p>
         <div style="margin: 10px auto 20px; text-align: center; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
           <button id="btn_init_ecosystem" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #2a7d4f; color: white; border: none; border-radius: 6px;">
-            Initialize Ecosystem
+            Start Dynamic Simulation
           </button>
           <button id="btn_step_ecosystem_1" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #3a8d5f; color: white; border: none; border-radius: 6px;" disabled>
             Step +1 Year
@@ -693,7 +693,7 @@
           </button>
         </div>
         <div id="ecosystem-status" style="margin: 10px auto 20px; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif; max-width: 800px;">
-          <output id="ecosystem_readout" style="font-weight: 600; color: #333;">Ecosystem: Not initialized</output>
+          <output id="ecosystem_readout" style="font-weight: 600; color: #333;">Showing initial conditions from climate data</output>
           <div id="ecosystem_stats" style="margin-top: 8px; font-size: 13px; color: #666; display: none;"></div>
         </div>
 
@@ -1269,6 +1269,73 @@
             lines.push('❄️ PERENNIAL SNOW');
           }
           
+          // ================================================================
+          // ECOSYSTEM DATA
+          // ================================================================
+          
+          // Only show ecosystem data if we're on land (not ocean)
+          if (info.holdridgeIndex !== 255) {
+            lines.push('');
+            lines.push('─── Ecosystem ───');
+            
+            // Soil section
+            lines.push(`🪨 Soil: ${info.soilTypeName} (${info.soilTextureName})`);
+            lines.push(`   Depth: ${info.soilDepth.toFixed(2)} m`);
+            if (info.soilOrganicMatter > 0.01) {
+              lines.push(`   Organic Matter: ${(info.soilOrganicMatter * 100).toFixed(1)}%`);
+            }
+            if (info.soilMoisture > 0 || info.fieldCapacity > 0) {
+              lines.push(`   Moisture: ${info.soilMoisture.toFixed(0)} mm / ${info.fieldCapacity.toFixed(0)} mm capacity`);
+            }
+            if (info.soilSalinity > 0.05) {
+              lines.push(`   ⚠️ Saline: ${(info.soilSalinity * 100).toFixed(0)}%`);
+            }
+            if (info.soilWaterlogging > 0.3) {
+              lines.push(`   💧 Waterlogged: ${(info.soilWaterlogging * 100).toFixed(0)}%`);
+            }
+            if (info.soilPermafrost) {
+              lines.push('   🧊 Permafrost present');
+            }
+            
+            // Vegetation section
+            lines.push('');
+            lines.push(`🌿 Vegetation: ${(info.vegCover * 100).toFixed(0)}% cover`);
+            if (info.vegCanopy > 0.01) {
+              lines.push(`   Canopy: ${(info.vegCanopy * 100).toFixed(0)}%`);
+            }
+            lines.push(`   Ground: ${info.vegGroundCoverModeName} (${(info.vegGroundCover * 100).toFixed(0)}%)`);
+            if (info.vegNPP > 0) {
+              lines.push(`   NPP: ${info.vegNPP.toFixed(0)} g C/m²/yr`);
+            }
+            
+            // Fauna section
+            lines.push('');
+            const totalFauna = info.faunaTotalAbundance;
+            if (totalFauna > 0.01) {
+              lines.push(`🦌 Fauna: ${(totalFauna * 100).toFixed(0)}% abundance`);
+              lines.push(`   Dominant: ${info.faunaDominantGuild}`);
+              // Show individual guilds if notable
+              const guilds = [];
+              if (info.faunaGrazers > 0.1) guilds.push(`Grazers ${(info.faunaGrazers * 100).toFixed(0)}%`);
+              if (info.faunaBrowsers > 0.1) guilds.push(`Browsers ${(info.faunaBrowsers * 100).toFixed(0)}%`);
+              if (info.faunaPredators > 0.05) guilds.push(`Predators ${(info.faunaPredators * 100).toFixed(0)}%`);
+              if (info.faunaBirds > 0.1) guilds.push(`Birds ${(info.faunaBirds * 100).toFixed(0)}%`);
+              if (guilds.length > 0) {
+                lines.push(`   ${guilds.join(', ')}`);
+              }
+            } else {
+              lines.push('🦌 Fauna: Sparse');
+            }
+            
+            // Fire section
+            lines.push('');
+            lines.push(`🔥 Fire Risk: ${info.fireRiskCategory} (${(info.fireRisk * 100).toFixed(0)}%)`);
+            lines.push(`   Fuel Load: ${(info.vegFuelLoad * 100).toFixed(0)}%`);
+            if (info.yearsSinceFire > 0) {
+              lines.push(`   Years since fire: ${info.yearsSinceFire}`);
+            }
+          }
+          
           cellInfoEl.textContent = lines.join('\n');
         }
         
@@ -1544,7 +1611,8 @@
                 
                 // Render initial maps
                 const imageConfig = getEcosystemImageConfig();
-                window.renderAllEcosystemMaps(imageConfig);
+                const mapConfig = window.worldMapConfig || { rpx: 0 };
+                window.renderAllEcosystemMaps(mapConfig, imageConfig);
                 
                 // Enable step buttons
                 btnStep1.disabled = false;
@@ -1579,7 +1647,8 @@
               holdridgeSim.stepYear();
               
               const imageConfig = getEcosystemImageConfig();
-              window.renderAllEcosystemMaps(imageConfig);
+              const mapConfig = window.worldMapConfig || { rpx: 0 };
+              window.renderAllEcosystemMaps(mapConfig, imageConfig);
               
               updateEcosystemStatus();
               
@@ -1603,7 +1672,8 @@
               });
               
               const imageConfig = getEcosystemImageConfig();
-              window.renderAllEcosystemMaps(imageConfig);
+              const mapConfig = window.worldMapConfig || { rpx: 0 };
+              window.renderAllEcosystemMaps(mapConfig, imageConfig);
               
               updateEcosystemStatus();
               
@@ -1641,7 +1711,8 @@
               } else {
                 // Done
                 const imageConfig = getEcosystemImageConfig();
-                window.renderAllEcosystemMaps(imageConfig);
+                const mapConfig = window.worldMapConfig || { rpx: 0 };
+                window.renderAllEcosystemMaps(mapConfig, imageConfig);
                 
                 updateEcosystemStatus();
                 
