@@ -671,6 +671,106 @@
         <p>Your web browser does not appear to support HTML5 canvas.</p>
       </canvas>
 
+      <!-- Ecosystem Simulation Maps -->
+      <div id="ecosystem-simulation-section">
+        <h2>Ecosystem Simulation</h2>
+        <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+          Dynamic ecosystem simulation based on Holdridge Life Zones. Click "Run Ecosystem Simulation" to 
+          initialize and advance the simulation. The maps below show soil, vegetation, and fauna state.
+        </p>
+        <div style="margin: 10px auto 20px; text-align: center; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <button id="btn_init_ecosystem" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #2a7d4f; color: white; border: none; border-radius: 6px;">
+            Initialize Ecosystem
+          </button>
+          <button id="btn_step_ecosystem_1" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #3a8d5f; color: white; border: none; border-radius: 6px;" disabled>
+            Step +1 Year
+          </button>
+          <button id="btn_step_ecosystem_10" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #4a9d6f; color: white; border: none; border-radius: 6px;" disabled>
+            Step +10 Years
+          </button>
+          <button id="btn_step_ecosystem_100" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #5aad7f; color: white; border: none; border-radius: 6px;" disabled>
+            Step +100 Years
+          </button>
+        </div>
+        <div id="ecosystem-status" style="margin: 10px auto 20px; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif; max-width: 800px;">
+          <output id="ecosystem_readout" style="font-weight: 600; color: #333;">Ecosystem: Not initialized</output>
+          <div id="ecosystem_stats" style="margin-top: 8px; font-size: 13px; color: #666; display: none;"></div>
+        </div>
+
+        <h3>Soil Map</h3>
+        <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+          Soil color indicates type and composition based on organic matter, leaching, salinity, and drainage.
+        </p>
+        <div style="margin: 0 2em 1em; display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px;">
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(139,119,101); border: 1px solid #ccc;"></span> Typical (Inceptisol)</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(178,102,76); border: 1px solid #ccc;"></span> Red (Oxisol/Ultisol)</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(50,45,40); border: 1px solid #ccc;"></span> Black (Mollisol)</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(235,225,200); border: 1px solid #ccc;"></span> Pale (Aridisol)</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(140,145,150); border: 1px solid #ccc;"></span> Gray (Gelisol)</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(30,60,100); border: 1px solid #ccc;"></span> Ocean</span>
+        </div>
+        <canvas id="soil-map" width="1" height="1">
+          <p>Your web browser does not appear to support HTML5 canvas.</p>
+        </canvas>
+
+        <h3>Vegetation Map</h3>
+        <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+          Vegetation cover shows canopy density and ground cover type based on the Holdridge life zone targets.
+        </p>
+        <div style="margin: 0 2em 1em; display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px;">
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(20,80,20); border: 1px solid #ccc;"></span> Dense Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(60,120,60); border: 1px solid #ccc;"></span> Open Forest</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(100,160,80); border: 1px solid #ccc;"></span> Woodland</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(180,200,80); border: 1px solid #ccc;"></span> Grassland</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(100,140,90); border: 1px solid #ccc;"></span> Moss/Tundra</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(139,90,43); border: 1px solid #ccc;"></span> Litter Floor</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(180,160,130); border: 1px solid #ccc;"></span> Desert Crust</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(200,180,150); border: 1px solid #ccc;"></span> Sparse/Bare</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(30,50,90); border: 1px solid #ccc;"></span> Ocean</span>
+        </div>
+        <canvas id="vegetation-map" width="1" height="1">
+          <p>Your web browser does not appear to support HTML5 canvas.</p>
+        </canvas>
+
+        <h3>Fauna Map</h3>
+        <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+          Fauna guild abundance encoded as RGB color channels. Brightness indicates total biodiversity.
+        </p>
+        <div style="margin: 0 2em 1em; display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px;">
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(240,60,60); border: 1px solid #ccc;"></span> <strong>R:</strong> Large Mammals</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(60,240,60); border: 1px solid #ccc;"></span> <strong>G:</strong> Invertebrates + Amphibians</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(60,60,240); border: 1px solid #ccc;"></span> <strong>B:</strong> Reptiles + Birds</span>
+        </div>
+        <div style="margin: 0 2em 1em; display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px;">
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(240,240,60); border: 1px solid #ccc;"></span> Savanna (mammals + invertebrates)</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(60,240,240); border: 1px solid #ccc;"></span> Wetland (invertebrates + birds)</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(240,60,240); border: 1px solid #ccc;"></span> Desert (mammals + reptiles)</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(240,240,240); border: 1px solid #ccc;"></span> High Diversity (all guilds)</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(60,60,60); border: 1px solid #ccc;"></span> Low Diversity</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(30,50,90); border: 1px solid #ccc;"></span> Ocean</span>
+        </div>
+        <canvas id="fauna-map" width="1" height="1">
+          <p>Your web browser does not appear to support HTML5 canvas.</p>
+        </canvas>
+
+        <h3>Fire Risk Map</h3>
+        <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
+          Composite fire danger based on annual fire probability, fuel load, and dryness.
+        </p>
+        <div style="margin: 0 2em 1em; display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px;">
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(0,200,80); border: 1px solid #ccc;"></span> Very Low</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(128,228,40); border: 1px solid #ccc;"></span> Low</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(255,255,0); border: 1px solid #ccc;"></span> Moderate</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(255,180,0); border: 1px solid #ccc;"></span> High</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(255,100,0); border: 1px solid #ccc;"></span> Very High</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(255,0,0); border: 1px solid #ccc;"></span> Extreme</span>
+          <span style="display: inline-flex; align-items: center; gap: 4px;"><span style="width: 16px; height: 16px; background: rgb(30,50,90); border: 1px solid #ccc;"></span> Ocean</span>
+        </div>
+        <canvas id="fire-risk-map" width="1" height="1">
+          <p>Your web browser does not appear to support HTML5 canvas.</p>
+        </canvas>
+      </div>
+
       <div id="simulation-status" style="margin: 20px 0; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif;">
         <output id="sim_time_readout" style="font-weight: 600; color: #333;">Simulation: Ready</output>
         <span id="sim_progress_readout" style="margin-left: 12px; color: #666;"></span>
@@ -965,6 +1065,8 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prototype/1.7.3/prototype.js"></script>
     <script src="./js/cell-data-model.js"></script>
+    <script src="./js/ecosystem-templates.js"></script>
+    <script src="./js/holdridge-simulation.js"></script>
     <script src="./js/erosion-simulation.js"></script>
     <script src="./js/islands-webgl-renderer.js"></script>
     <script src="./js/islands-webgl-multi-renderer.js"></script>
@@ -1377,6 +1479,183 @@
         
         // Initial attempt to initialize multi-mode renderers
         setTimeout(initOrUpdateMultiModeRenderers, 2000);
+        
+        // ================================================================
+        // Ecosystem Simulation Controls
+        // ================================================================
+        const ecosystemReadout = document.getElementById('ecosystem_readout');
+        const ecosystemStats = document.getElementById('ecosystem_stats');
+        const btnInit = document.getElementById('btn_init_ecosystem');
+        const btnStep1 = document.getElementById('btn_step_ecosystem_1');
+        const btnStep10 = document.getElementById('btn_step_ecosystem_10');
+        const btnStep100 = document.getElementById('btn_step_ecosystem_100');
+        
+        let holdridgeSim = null;
+        
+        // Get image config from the main map canvas for ecosystem rendering
+        function getEcosystemImageConfig() {
+          const mainCanvas = document.getElementById('map');
+          return {
+            width: mainCanvas.width || 800,
+            height: mainCanvas.height || 600
+          };
+        }
+        
+        // Update ecosystem status display
+        function updateEcosystemStatus() {
+          if (!holdridgeSim) {
+            ecosystemReadout.textContent = 'Ecosystem: Not initialized';
+            ecosystemStats.style.display = 'none';
+            return;
+          }
+          
+          const stats = holdridgeSim.getStats();
+          ecosystemReadout.textContent = `Ecosystem: Year ${stats.simulationYear}`;
+          
+          ecosystemStats.innerHTML = `
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 8px;">
+              <span>🌱 Avg Veg Cover: ${(stats.avgVegCover * 100).toFixed(1)}%</span>
+              <span>🌲 Avg Canopy: ${(stats.avgCanopy * 100).toFixed(1)}%</span>
+              <span>🪱 Avg Soil OM: ${(stats.avgSoilOM * 100).toFixed(2)}%</span>
+              <span>🦌 Avg Fauna: ${(stats.avgFaunaBiomass * 100).toFixed(1)}%</span>
+              <span>🔥 Fires This Year: ${stats.fireEventsThisYear}</span>
+              <span>🗺️ Land Cells: ${stats.landCells.toLocaleString()}</span>
+            </div>
+          `;
+          ecosystemStats.style.display = 'block';
+        }
+        
+        // Initialize ecosystem simulation
+        if (btnInit) {
+          btnInit.addEventListener('click', function() {
+            if (!window.worldCellData) {
+              alert('Generate a world first!');
+              return;
+            }
+            
+            btnInit.disabled = true;
+            btnInit.textContent = 'Initializing...';
+            
+            setTimeout(function() {
+              try {
+                // Create simulation
+                holdridgeSim = new HoldridgeSimulation(window.worldCellData);
+                holdridgeSim.initialize();
+                
+                // Render initial maps
+                const imageConfig = getEcosystemImageConfig();
+                window.renderAllEcosystemMaps(imageConfig);
+                
+                // Enable step buttons
+                btnStep1.disabled = false;
+                btnStep10.disabled = false;
+                btnStep100.disabled = false;
+                
+                btnInit.textContent = 'Re-Initialize';
+                btnInit.disabled = false;
+                
+                updateEcosystemStatus();
+                
+                console.log('Ecosystem simulation initialized');
+              } catch (e) {
+                console.error('Failed to initialize ecosystem:', e);
+                alert('Failed to initialize ecosystem simulation: ' + e.message);
+                btnInit.disabled = false;
+                btnInit.textContent = 'Initialize Ecosystem';
+              }
+            }, 50);
+          });
+        }
+        
+        // Step 1 year
+        if (btnStep1) {
+          btnStep1.addEventListener('click', function() {
+            if (!holdridgeSim) return;
+            
+            btnStep1.textContent = 'Running...';
+            btnStep1.disabled = true;
+            
+            setTimeout(function() {
+              holdridgeSim.stepYear();
+              
+              const imageConfig = getEcosystemImageConfig();
+              window.renderAllEcosystemMaps(imageConfig);
+              
+              updateEcosystemStatus();
+              
+              btnStep1.textContent = 'Step +1 Year';
+              btnStep1.disabled = false;
+            }, 10);
+          });
+        }
+        
+        // Step 10 years
+        if (btnStep10) {
+          btnStep10.addEventListener('click', function() {
+            if (!holdridgeSim) return;
+            
+            btnStep10.textContent = 'Running...';
+            btnStep10.disabled = true;
+            
+            setTimeout(function() {
+              holdridgeSim.stepYears(10, function(year, total) {
+                ecosystemReadout.textContent = `Ecosystem: Running year ${year}/${total}...`;
+              });
+              
+              const imageConfig = getEcosystemImageConfig();
+              window.renderAllEcosystemMaps(imageConfig);
+              
+              updateEcosystemStatus();
+              
+              btnStep10.textContent = 'Step +10 Years';
+              btnStep10.disabled = false;
+            }, 10);
+          });
+        }
+        
+        // Step 100 years
+        if (btnStep100) {
+          btnStep100.addEventListener('click', function() {
+            if (!holdridgeSim) return;
+            
+            btnStep100.textContent = 'Running...';
+            btnStep100.disabled = true;
+            
+            // Run in chunks to allow UI updates
+            let year = 0;
+            const totalYears = 100;
+            const chunkSize = 10;
+            
+            function runChunk() {
+              const endYear = Math.min(year + chunkSize, totalYears);
+              
+              while (year < endYear) {
+                holdridgeSim.stepYear();
+                year++;
+              }
+              
+              ecosystemReadout.textContent = `Ecosystem: Running year ${year}/${totalYears}...`;
+              
+              if (year < totalYears) {
+                setTimeout(runChunk, 10);
+              } else {
+                // Done
+                const imageConfig = getEcosystemImageConfig();
+                window.renderAllEcosystemMaps(imageConfig);
+                
+                updateEcosystemStatus();
+                
+                btnStep100.textContent = 'Step +100 Years';
+                btnStep100.disabled = false;
+              }
+            }
+            
+            setTimeout(runChunk, 10);
+          });
+        }
+        
+        // Store simulation reference globally for debugging
+        window.holdridgeSim = holdridgeSim;
       };
     </script>
   </body>

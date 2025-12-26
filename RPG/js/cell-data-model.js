@@ -183,6 +183,74 @@ class CellDataModel {
         this.petRatio = new Float32Array(this.cellCount);              // PET / Precipitation ratio
         
         // ====================================================================
+        // SOIL STATE MODEL (Holdridge simulation)
+        // Physical and chemical properties of soil per cell
+        // ====================================================================
+        
+        // Soil structure
+        this.soilTexture = new Uint8Array(this.cellCount);             // 0=sand, 1=loam, 2=clay
+        this.soilDepth = new Float32Array(this.cellCount);             // meters
+        this.soilMoist = new Float32Array(this.cellCount);             // current moisture (mm)
+        this.fieldCapacity = new Float32Array(this.cellCount);         // max moisture capacity (mm)
+        this.soilOM = new Float32Array(this.cellCount);                // organic matter fraction (0-1)
+        this.soilSalinity = new Float32Array(this.cellCount);          // salt content (0-1)
+        this.soilWaterlog = new Float32Array(this.cellCount);          // waterlogging level (0-1)
+        this.soilPermafrost = new Uint8Array(this.cellCount);          // permafrost present (bool)
+        this.soilTypeClass = new Uint8Array(this.cellCount);           // soil order classification
+        this.soilColorRGB = new Uint8Array(this.cellCount * 3);        // derived soil color
+        
+        // Derived soil indices (for color calculation)
+        this.soilLeachIndex = new Float32Array(this.cellCount);        // leaching intensity
+        this.soilBlackness = new Float32Array(this.cellCount);         // darkness from OM
+        this.soilPaleness = new Float32Array(this.cellCount);          // paleness from salts
+        this.soilGrayness = new Float32Array(this.cellCount);          // grayness from waterlog
+        this.soilRedness = new Float32Array(this.cellCount);           // redness from weathering
+        
+        // ====================================================================
+        // VEGETATION STATE MODEL (Holdridge simulation)
+        // Vegetation structure and dynamics per cell
+        // ====================================================================
+        
+        this.vegCover = new Float32Array(this.cellCount);              // total vegetation cover (0-1)
+        this.vegCanopy = new Float32Array(this.cellCount);             // tree canopy cover (0-1)
+        this.vegGroundCover = new Float32Array(this.cellCount);        // ground layer cover (0-1)
+        this.vegFuelLoad = new Float32Array(this.cellCount);           // fire fuel accumulation (0-1)
+        this.vegTemplateId = new Uint8Array(this.cellCount);           // current ecosystem template ID
+        this.vegNPP = new Float32Array(this.cellCount);                // net primary productivity (g C/m²/yr)
+        this.vegLitterfall = new Float32Array(this.cellCount);         // annual litter input (g C/m²/yr)
+        this.vegGroundCoverMode = new Uint8Array(this.cellCount);      // 0=litter, 1=moss, 2=grass, 3=crust, 4=sparse
+        this.vegColors = new Uint8Array(this.cellCount * 3);           // RGB colors for vegetation map
+        
+        // Fire tracking
+        this.fireRisk = new Float32Array(this.cellCount);              // fire probability this year
+        this.yearsSinceFire = new Uint16Array(this.cellCount);         // years since last fire
+        this.fireIntensity = new Float32Array(this.cellCount);         // last fire intensity (0-1)
+        
+        // ====================================================================
+        // FAUNA GUILD MODEL (Holdridge simulation)
+        // Biomass/abundance of ecological guilds per cell
+        // ====================================================================
+        
+        this.faunaGrazers = new Float32Array(this.cellCount);          // grazing mammals (0-1)
+        this.faunaBrowsers = new Float32Array(this.cellCount);         // browsing mammals (0-1)
+        this.faunaPredators = new Float32Array(this.cellCount);        // predators (0-1)
+        this.faunaInsects = new Float32Array(this.cellCount);          // invertebrates (0-1)
+        this.faunaAmphibians = new Float32Array(this.cellCount);       // amphibians (0-1)
+        this.faunaReptiles = new Float32Array(this.cellCount);         // reptiles (0-1)
+        this.faunaBirds = new Float32Array(this.cellCount);            // birds (0-1)
+        this.faunaColors = new Uint8Array(this.cellCount * 3);         // RGB colors for fauna map
+        this.faunaTotalBiomass = new Float32Array(this.cellCount);     // total fauna biomass index
+        
+        // ====================================================================
+        // HYDROLOGY BUCKET MODEL (annual water budget)
+        // ====================================================================
+        
+        this.hydroRunoff = new Float32Array(this.cellCount);           // annual runoff (mm/yr)
+        this.hydroInfiltration = new Float32Array(this.cellCount);     // annual infiltration (mm/yr)
+        this.hydroETActual = new Float32Array(this.cellCount);         // actual evapotranspiration (mm/yr)
+        this.hydroSlope = new Float32Array(this.cellCount);            // terrain slope (0-1)
+        
+        // ====================================================================
         // SIMULATION STATE
         // ====================================================================
         
@@ -255,6 +323,20 @@ class CellDataModel {
                 this.cellNeighborCount[cell] = neighborCount;
             }
         }
+    }
+    
+    /**
+     * Get an array of neighbor cell indices for a given cell
+     * @param {number} cell - The cell index
+     * @returns {number[]} Array of neighbor cell indices
+     */
+    _getNeighborIndices(cell) {
+        const count = this.cellNeighborCount[cell];
+        const neighbors = [];
+        for (let i = 0; i < count; i++) {
+            neighbors.push(this.cellNeighbors[cell * this.maxNeighbors + i]);
+        }
+        return neighbors;
     }
     
     /**

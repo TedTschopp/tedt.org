@@ -1372,6 +1372,460 @@
     console.log("Holdridge Life Zones complete");
   }
 
+  // ============================================================================
+  // ECOSYSTEM SIMULATION MAPS
+  // These maps visualize output from the HoldridgeSimulation system
+  // ============================================================================
+
+  /**
+   * Render the soil map from ecosystem simulation or derived from Holdridge zones
+   * Shows soil color based on OM content, leaching, salinity, waterlogging
+   */
+  function renderSoilMap(imageConfig) {
+    console.log("Rendering soil map...");
+
+    const canvas = $('soil-map');
+    if (!canvas) {
+      console.warn('soil-map canvas not found');
+      return;
+    }
+    
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    if (!window.worldCellData) {
+      ctx.fillStyle = '#888';
+      ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Cell data not available', 10, 20);
+      return;
+    }
+    
+    const cellData = window.worldCellData;
+    const seaLevel = cellData.config.seaLevel;
+    
+    // Check if simulation has run (has soil colors), otherwise derive from Holdridge
+    const hasSimulationData = cellData.soilColorRGB && cellData.soilColorRGB.length > 0 &&
+                              cellData.soilColorRGB.some(v => v !== 0);
+    
+    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
+    const data = imageData.data;
+    
+    const scaleX = cellData.cols / imageConfig.width;
+    const scaleY = cellData.rows / imageConfig.height;
+    
+    // Soil color palettes
+    const soilColors = {
+      base: [139, 119, 101],    // Brown
+      red: [178, 102, 76],      // Tropical/leached
+      black: [50, 45, 40],      // High OM
+      pale: [235, 225, 200],    // Arid
+      gray: [140, 145, 150],    // Permafrost
+      ocean: [30, 60, 100]
+    };
+    
+    for (let y = 0; y < imageConfig.height; y++) {
+      for (let x = 0; x < imageConfig.width; x++) {
+        const col = Math.floor(x * scaleX);
+        const row = Math.floor(y * scaleY);
+        const cell = row * cellData.cols + col;
+        
+        const idx = (y * imageConfig.width + x) * 4;
+        
+        const groundElev = cellData.cellElevation[cell] || 
+                          (cellData.bedrockThickness[cell] + cellData.sedimentThickness[cell]);
+        
+        if (groundElev < seaLevel) {
+          data[idx] = soilColors.ocean[0];
+          data[idx + 1] = soilColors.ocean[1];
+          data[idx + 2] = soilColors.ocean[2];
+        } else if (hasSimulationData) {
+          // Use simulation colors
+          data[idx] = cellData.soilColorRGB[cell * 3];
+          data[idx + 1] = cellData.soilColorRGB[cell * 3 + 1];
+          data[idx + 2] = cellData.soilColorRGB[cell * 3 + 2];
+        } else {
+          // Derive from Holdridge zone and climate
+          const zoneName = cellData.getHoldridgeZoneName ? cellData.getHoldridgeZoneName(cell) : '';
+          const bioT = cellData.biotemperature ? cellData.biotemperature[cell] : 15;
+          const petRatio = cellData.petRatio ? cellData.petRatio[cell] : 1;
+          
+          let r = soilColors.base[0], g = soilColors.base[1], b = soilColors.base[2];
+          
+          // Tropical = red soils
+          if (zoneName.includes('Tropical') && bioT > 20) {
+            const t = Math.min(1, (bioT - 20) / 8);
+            r = r + (soilColors.red[0] - r) * t;
+            g = g + (soilColors.red[1] - g) * t;
+            b = b + (soilColors.red[2] - b) * t;
+          }
+          // Grassland/steppe = dark soils
+          if (zoneName.includes('Steppe') || zoneName.includes('Grassland') || zoneName.includes('Moist') && !zoneName.includes('Forest')) {
+            const t = 0.5;
+            r = r + (soilColors.black[0] - r) * t;
+            g = g + (soilColors.black[1] - g) * t;
+            b = b + (soilColors.black[2] - b) * t;
+          }
+          // Desert/arid = pale soils
+          if (zoneName.includes('Desert') || petRatio > 4) {
+            const t = Math.min(1, (petRatio - 2) / 6);
+            r = r + (soilColors.pale[0] - r) * t;
+            g = g + (soilColors.pale[1] - g) * t;
+            b = b + (soilColors.pale[2] - b) * t;
+          }
+          // Cold = gray soils
+          if (zoneName.includes('Tundra') || zoneName.includes('Polar') || bioT < 3) {
+            const t = Math.min(1, (5 - bioT) / 5);
+            r = r + (soilColors.gray[0] - r) * t;
+            g = g + (soilColors.gray[1] - g) * t;
+            b = b + (soilColors.gray[2] - b) * t;
+          }
+          
+          data[idx] = Math.round(r);
+          data[idx + 1] = Math.round(g);
+          data[idx + 2] = Math.round(b);
+        }
+        data[idx + 3] = 255;
+      }
+    }
+    
+    ctx.putImageData(imageData, 0, 0);
+    console.log("Soil map complete");
+  }
+
+  /**
+   * Render the vegetation map from ecosystem simulation or derived from Holdridge zones
+   * Shows vegetation cover, canopy density, and ground cover type
+   */
+  function renderVegetationMap(imageConfig) {
+    console.log("Rendering vegetation map...");
+
+    const canvas = $('vegetation-map');
+    if (!canvas) {
+      console.warn('vegetation-map canvas not found');
+      return;
+    }
+    
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    if (!window.worldCellData) {
+      ctx.fillStyle = '#888';
+      ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Cell data not available', 10, 20);
+      return;
+    }
+    
+    const cellData = window.worldCellData;
+    const seaLevel = cellData.config.seaLevel;
+    
+    const hasSimulationData = cellData.vegColors && cellData.vegColors.length > 0 &&
+                              cellData.vegColors.some(v => v !== 0);
+    
+    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
+    const data = imageData.data;
+    
+    const scaleX = cellData.cols / imageConfig.width;
+    const scaleY = cellData.rows / imageConfig.height;
+    
+    for (let y = 0; y < imageConfig.height; y++) {
+      for (let x = 0; x < imageConfig.width; x++) {
+        const col = Math.floor(x * scaleX);
+        const row = Math.floor(y * scaleY);
+        const cell = row * cellData.cols + col;
+        
+        const idx = (y * imageConfig.width + x) * 4;
+        
+        const groundElev = cellData.cellElevation[cell] || 
+                          (cellData.bedrockThickness[cell] + cellData.sedimentThickness[cell]);
+        
+        if (groundElev < seaLevel) {
+          data[idx] = 30;
+          data[idx + 1] = 50;
+          data[idx + 2] = 90;
+        } else if (hasSimulationData) {
+          data[idx] = cellData.vegColors[cell * 3];
+          data[idx + 1] = cellData.vegColors[cell * 3 + 1];
+          data[idx + 2] = cellData.vegColors[cell * 3 + 2];
+        } else {
+          // Derive from Holdridge zone
+          const zoneName = cellData.getHoldridgeZoneName ? cellData.getHoldridgeZoneName(cell) : '';
+          
+          let r, g, b;
+          
+          if (zoneName.includes('Rain Forest') || zoneName.includes('Wet Forest')) {
+            // Dense forest - dark green
+            r = 20; g = 80; b = 20;
+          } else if (zoneName.includes('Moist Forest')) {
+            r = 40; g = 110; b = 40;
+          } else if (zoneName.includes('Dry Forest') || zoneName.includes('Woodland')) {
+            r = 80; g = 140; b = 60;
+          } else if (zoneName.includes('Thorn')) {
+            r = 120; g = 130; b = 70;
+          } else if (zoneName.includes('Steppe') || zoneName.includes('Grassland')) {
+            // Grassland - yellow-green
+            r = 180; g = 200; b = 80;
+          } else if (zoneName.includes('Tundra')) {
+            // Tundra - moss green
+            r = 100; g = 140; b = 90;
+          } else if (zoneName.includes('Desert') || zoneName.includes('Polar')) {
+            // Desert/polar - sparse
+            r = 200; g = 180; b = 150;
+          } else if (zoneName.includes('Boreal')) {
+            r = 60; g = 100; b = 70;
+          } else {
+            // Default
+            r = 140; g = 160; b = 100;
+          }
+          
+          data[idx] = r;
+          data[idx + 1] = g;
+          data[idx + 2] = b;
+        }
+        data[idx + 3] = 255;
+      }
+    }
+    
+    ctx.putImageData(imageData, 0, 0);
+    console.log("Vegetation map complete");
+  }
+
+  /**
+   * Render the fauna map from ecosystem simulation or derived from Holdridge zones
+   * Shows fauna guild abundance as RGB channels
+   */
+  function renderFaunaMap(imageConfig) {
+    console.log("Rendering fauna map...");
+
+    const canvas = $('fauna-map');
+    if (!canvas) {
+      console.warn('fauna-map canvas not found');
+      return;
+    }
+    
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    if (!window.worldCellData) {
+      ctx.fillStyle = '#888';
+      ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Cell data not available', 10, 20);
+      return;
+    }
+    
+    const cellData = window.worldCellData;
+    const seaLevel = cellData.config.seaLevel;
+    
+    const hasSimulationData = cellData.faunaColors && cellData.faunaColors.length > 0 &&
+                              cellData.faunaColors.some(v => v !== 0);
+    
+    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
+    const data = imageData.data;
+    
+    const scaleX = cellData.cols / imageConfig.width;
+    const scaleY = cellData.rows / imageConfig.height;
+    
+    // Fauna weights by zone type (R=mammals, G=invertebrates+amphibians, B=reptiles+birds)
+    const faunaByZone = {
+      'Rain Forest': [0.6, 0.9, 0.7],      // High invertebrates, good all around
+      'Wet Forest': [0.7, 0.8, 0.6],
+      'Moist Forest': [0.8, 0.7, 0.6],
+      'Dry Forest': [0.7, 0.5, 0.7],
+      'Thorn': [0.5, 0.4, 0.8],            // More reptiles
+      'Steppe': [0.9, 0.6, 0.5],           // High grazers
+      'Grassland': [0.9, 0.7, 0.5],        // High grazers
+      'Desert': [0.3, 0.3, 0.7],           // Reptiles dominate
+      'Tundra': [0.6, 0.4, 0.5],           // Moderate mammals, birds
+      'Polar': [0.2, 0.1, 0.3],            // Low diversity
+      'Boreal': [0.7, 0.5, 0.5],
+      'default': [0.5, 0.5, 0.5]
+    };
+    
+    for (let y = 0; y < imageConfig.height; y++) {
+      for (let x = 0; x < imageConfig.width; x++) {
+        const col = Math.floor(x * scaleX);
+        const row = Math.floor(y * scaleY);
+        const cell = row * cellData.cols + col;
+        
+        const idx = (y * imageConfig.width + x) * 4;
+        
+        const groundElev = cellData.cellElevation[cell] || 
+                          (cellData.bedrockThickness[cell] + cellData.sedimentThickness[cell]);
+        
+        if (groundElev < seaLevel) {
+          data[idx] = 30;
+          data[idx + 1] = 50;
+          data[idx + 2] = 90;
+        } else if (hasSimulationData) {
+          data[idx] = cellData.faunaColors[cell * 3];
+          data[idx + 1] = cellData.faunaColors[cell * 3 + 1];
+          data[idx + 2] = cellData.faunaColors[cell * 3 + 2];
+        } else {
+          // Derive from Holdridge zone
+          const zoneName = cellData.getHoldridgeZoneName ? cellData.getHoldridgeZoneName(cell) : '';
+          
+          // Find matching zone weights
+          let weights = faunaByZone['default'];
+          for (const key in faunaByZone) {
+            if (zoneName.includes(key)) {
+              weights = faunaByZone[key];
+              break;
+            }
+          }
+          
+          // Convert to RGB with saturation
+          const maxW = Math.max(...weights);
+          const brightness = (weights[0] + weights[1] + weights[2]) / 3;
+          
+          data[idx] = Math.round(40 + (weights[0] / maxW) * brightness * 215);
+          data[idx + 1] = Math.round(40 + (weights[1] / maxW) * brightness * 215);
+          data[idx + 2] = Math.round(40 + (weights[2] / maxW) * brightness * 215);
+        }
+        data[idx + 3] = 255;
+      }
+    }
+    
+    ctx.putImageData(imageData, 0, 0);
+    console.log("Fauna map complete");
+  }
+
+  /**
+   * Render the fire risk map from ecosystem simulation or derived from climate
+   * Shows annual fire probability as a heat map
+   */
+  function renderFireRiskMap(imageConfig) {
+    console.log("Rendering fire risk map...");
+
+    const canvas = $('fire-risk-map');
+    if (!canvas) {
+      console.warn('fire-risk-map canvas not found');
+      return;
+    }
+    
+    canvas.width = imageConfig.width;
+    canvas.height = imageConfig.height;
+    const ctx = canvas.getContext('2d');
+    
+    if (!window.worldCellData) {
+      ctx.fillStyle = '#888';
+      ctx.fillRect(0, 0, imageConfig.width, imageConfig.height);
+      ctx.fillStyle = '#fff';
+      ctx.font = '14px sans-serif';
+      ctx.fillText('Cell data not available', 10, 20);
+      return;
+    }
+    
+    const cellData = window.worldCellData;
+    const seaLevel = cellData.config.seaLevel;
+    
+    const hasSimulationData = cellData.fireRisk && cellData.fireRisk.length > 0 &&
+                              cellData.fireRisk.some(v => v !== 0);
+    
+    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
+    const data = imageData.data;
+    
+    const scaleX = cellData.cols / imageConfig.width;
+    const scaleY = cellData.rows / imageConfig.height;
+    
+    for (let y = 0; y < imageConfig.height; y++) {
+      for (let x = 0; x < imageConfig.width; x++) {
+        const col = Math.floor(x * scaleX);
+        const row = Math.floor(y * scaleY);
+        const cell = row * cellData.cols + col;
+        
+        const idx = (y * imageConfig.width + x) * 4;
+        
+        const groundElev = cellData.cellElevation[cell] || 
+                          (cellData.bedrockThickness[cell] + cellData.sedimentThickness[cell]);
+        
+        if (groundElev < seaLevel) {
+          data[idx] = 30;
+          data[idx + 1] = 50;
+          data[idx + 2] = 90;
+        } else {
+          let risk;
+          
+          if (hasSimulationData) {
+            const rawRisk = cellData.fireRisk[cell];
+            const fuelLoad = cellData.vegFuelLoad ? cellData.vegFuelLoad[cell] : 0;
+            const composite = rawRisk * 0.6 + fuelLoad * 0.4;
+            risk = Math.min(1, Math.sqrt(composite * 5));
+          } else {
+            // Derive from climate: drier + warmer + grassland/savanna = higher risk
+            const zoneName = cellData.getHoldridgeZoneName ? cellData.getHoldridgeZoneName(cell) : '';
+            const petRatio = cellData.petRatio ? cellData.petRatio[cell] : 1;
+            const bioT = cellData.biotemperature ? cellData.biotemperature[cell] : 15;
+            
+            // Base risk from PET ratio (dryness)
+            let baseRisk = 0;
+            if (petRatio > 1 && petRatio < 8) {
+              baseRisk = (petRatio - 1) / 7 * 0.5; // Peak in semi-arid
+            }
+            
+            // Boost for fire-prone zones
+            if (zoneName.includes('Steppe') || zoneName.includes('Grassland') || zoneName.includes('Savanna')) {
+              baseRisk += 0.3;
+            } else if (zoneName.includes('Thorn') || zoneName.includes('Dry Forest')) {
+              baseRisk += 0.2;
+            } else if (zoneName.includes('Desert') || zoneName.includes('Rain Forest') || zoneName.includes('Tundra') || zoneName.includes('Polar')) {
+              baseRisk *= 0.3; // Very low in deserts (no fuel) and wet/cold zones
+            }
+            
+            // Temperature modifier
+            if (bioT > 15) {
+              baseRisk *= 1 + (bioT - 15) / 20;
+            }
+            
+            risk = Math.min(1, Math.sqrt(baseRisk * 2));
+          }
+          
+          // Color gradient: green -> yellow -> red
+          if (risk < 0.5) {
+            const t = risk * 2;
+            data[idx] = Math.round(t * 255);
+            data[idx + 1] = Math.round(200 + t * 55);
+            data[idx + 2] = Math.round((1 - t) * 80);
+          } else {
+            const t = (risk - 0.5) * 2;
+            data[idx] = 255;
+            data[idx + 1] = Math.round((1 - t) * 255);
+            data[idx + 2] = 0;
+          }
+        }
+        data[idx + 3] = 255;
+      }
+    }
+    
+    ctx.putImageData(imageData, 0, 0);
+    console.log("Fire risk map complete");
+  }
+
+  /**
+   * Render all ecosystem maps
+   * Called after ecosystem simulation steps
+   */
+  function renderAllEcosystemMaps(imageConfig) {
+    renderSoilMap(imageConfig);
+    renderVegetationMap(imageConfig);
+    renderFaunaMap(imageConfig);
+    renderFireRiskMap(imageConfig);
+  }
+
+  // Expose ecosystem map functions globally
+  window.renderSoilMap = renderSoilMap;
+  window.renderVegetationMap = renderVegetationMap;
+  window.renderFaunaMap = renderFaunaMap;
+  window.renderFireRiskMap = renderFireRiskMap;
+  window.renderAllEcosystemMaps = renderAllEcosystemMaps;
+
   /**
    * Render the snowfall/perennial snow map using CellDataModel
    * Uses mass balance data for accurate visualization:
