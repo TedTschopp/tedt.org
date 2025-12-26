@@ -20,6 +20,11 @@
     // Expose the updateMap function to the global scope
     window.updateMap = globalExports.updateMap;
     
+    // Optional exports (added as needed)
+    if (typeof globalExports.rerenderAllMaps === 'function') {
+      window.rerenderAllMaps = globalExports.rerenderAllMaps;
+    }
+    
 })(window, (window, exports) => {
   // Event handler functions for UI elements
 
@@ -281,6 +286,10 @@
     const originalHeightMap = JSON.parse(JSON.stringify(config.map));
     const waterLevel = calculateWaterLevel(config);
 
+    // Persist inputs needed for re-rendering without regenerating the world
+    window.worldOriginalHeightMap = originalHeightMap;
+    window.worldWaterLevel = waterLevel;
+
     // ====================================================================
     // CREATE CELL DATA MODEL (Islands-style unified data structure)
     // ====================================================================
@@ -409,6 +418,10 @@
     // This allows the HTML event handlers to access rpx for rotation
     window.worldMapConfig = finalMap;
 
+    // IMPORTANT: Some downstream renderers (e.g., lake map) mutate mapConfig.map.
+    // Cache the terrain/ice classification map used for the main world map.
+    window.worldTerrainTypeMap = JSON.parse(JSON.stringify(finalMap.map));
+
     // Set up rendering configuration based on projection
     var imageConfig = {};
     if (
@@ -434,6 +447,10 @@
     ) {
       imageConfig.wd2 = Math.floor(imageConfig.width / 2);
     }
+
+    // Store imageConfig globally for use in ecosystem simulation buttons.
+    // Projection-aware ecosystem maps require wd2/col_w/row_h, not just width/height.
+    window.worldImageConfig = imageConfig;
 
     // Create the map image
     var mapImage = new_image("map", imageConfig.width, imageConfig.height);
@@ -466,6 +483,9 @@
       originalHeightMap,
       waterLevel
     );
+
+    // Persist temperature field for re-renders (rainfall/snowfall depend on it)
+    window.worldTemperatureRawMap = temperatureMap;
 
     // Generate and render the rainfall map with temperatureMap
     generateAndRenderRainfallMap(
@@ -1103,6 +1123,210 @@
     return rainShadow;
   }
 
+      // ============================================================================
+      // CellDataModel projected rendering helpers
+      //
+      // Important: Many of the traditional maps (world/temperature/rainfall/etc.)
+      // render through the projection pipeline (mercator/mollweide/sinusoidal/etc.)
+      // which remaps pixels to source grid cells.
+      //
+      // The CellDataModel-backed maps (biome/holdridge/ecosystem) must use the same
+      // projection math to avoid showing a "different map" geography.
+      // ============================================================================
+
+      function getRotatedCellIndex(mapConfig, cellData, row, col) {
+        // Match getRotatedMapValue() behavior, but return a CellDataModel index.
+        col -= mapConfig.rpx || 0;
+
+        // Clamp row values
+        if (row < 0) row = 0;
+        if (row >= mapConfig.rows) row = mapConfig.rl1;
+
+        // Wrap column values
+        while (col < 0) col += mapConfig.cols;
+        if (col >= mapConfig.cols) col %= mapConfig.cols;
+
+        return row * cellData.cols + col;
+      }
+
+      function renderProjectedCellDataToContext(
+        ctx,
+        mapConfig,
+        imageConfig,
+        cellData,
+        getRgbForCell
+      ) {
+        const width = imageConfig.width;
+        const height = imageConfig.height;
+        const imageData = ctx.createImageData(width, height);
+        const data = imageData.data;
+
+        const projection = mapConfig.projection;
+
+        // Precompute lookup tables mirroring the classic projection renderers.
+        let columnPositions = null;
+        let rowPositions = null;
+        let sinFactors = null;
+        let ellipseWidths = null;
+
+        if (projection === 'mercator') {
+          columnPositions = new Array(width);
+          rowPositions = new Array(height);
+          for (let x = 0; x < width; x++) {
+            columnPositions[x] = Math.floor((x / width) * mapConfig.cols);
+          }
+          for (let y = 0; y < height; y++) {
+            rowPositions[y] = Math.floor(
+              (0.5 -
+                Math.atan(Math.sinh((0.5 - y / height) * Math.PI)) / Math.PI) *
+                mapConfig.rows
+            );
+          }
+        } else if (projection === 'mollweide') {
+          sinFactors = new Array(height);
+          ellipseWidths = new Array(height);
+          rowPositions = new Array(height);
+          for (let y = 0; y < height; y++) {
+            sinFactors[y] = Math.sqrt(Math.sin((y / height) * Math.PI));
+            ellipseWidths[y] = Math.floor(imageConfig.wd2 * sinFactors[y]);
+
+            const theta = Math.asin(
+              (2.8284271247 * (0.5 - y / height)) / Math.sqrt(2)
+            );
+            rowPositions[y] = Math.floor(
+              (0.5 -
+                Math.asin((2 * theta + Math.sin(2 * theta)) / Math.PI) /
+                  Math.PI) *
+                mapConfig.rows
+            );
+          }
+        } else if (projection === 'sinusoidal') {
+          sinFactors = new Array(height);
+          ellipseWidths = new Array(height);
+          for (let y = 0; y < height; y++) {
+            sinFactors[y] = Math.sin((y / height) * Math.PI);
+            ellipseWidths[y] = Math.floor(imageConfig.wd2 * sinFactors[y]);
+          }
+        }
+
+        for (let x = 0; x < width; x++) {
+          for (let y = 0; y < height; y++) {
+            let mapRow = 0;
+            let mapCol = 0;
+            let inBounds = true;
+
+            if (projection === 'mercator') {
+              mapRow = rowPositions[y];
+              mapCol = columnPositions[x];
+            } else if (projection === 'transmerc') {
+              const angle = (x / width) * 2 * Math.PI;
+              const lat = 4 * (y / height - 0.5);
+              let lon = Math.atan(Math.sinh(lat) / Math.cos(angle));
+              const halfPi = Math.PI / 2;
+              if (angle > halfPi && angle <= 3 * halfPi) {
+                lon += Math.PI;
+              }
+              mapRow = Math.floor(
+                (0.5 -
+                  Math.asin(Math.sin(angle) / Math.cosh(lat)) / Math.PI) *
+                  mapConfig.rows
+              );
+              mapCol = Math.floor((lon / (2 * Math.PI)) * mapConfig.cols);
+            } else if (projection === 'icosahedral') {
+              const colIndex = Math.floor(x / imageConfig.col_w);
+              const rowIndex = Math.floor(y / imageConfig.row_h);
+              let colOffset = Math.floor(x - colIndex * imageConfig.col_w);
+              let rowOffset = Math.floor(
+                0.5773502692 * Math.floor(y - rowIndex * imageConfig.row_h)
+              );
+              let pixelIndex = -1;
+
+              if ((rowIndex + colIndex) % 2 === 0) {
+                colOffset = Math.floor(imageConfig.col_w - colOffset);
+              }
+
+              if (rowIndex === 0) {
+                if (colIndex < 10 && colOffset < rowOffset) {
+                  pixelIndex = Math.floor(
+                    (colOffset / rowOffset) * imageConfig.col_w
+                  );
+                }
+              } else if (rowIndex === 1) {
+                if (colIndex === 0) {
+                  if (colOffset > rowOffset) {
+                    pixelIndex = colOffset;
+                  }
+                } else if (colIndex < 10) {
+                  pixelIndex = colOffset;
+                } else if (colIndex === 10 && colOffset < rowOffset) {
+                  pixelIndex = colOffset;
+                }
+              } else if (rowIndex === 2 && colIndex > 0 && colOffset > rowOffset) {
+                colOffset = Math.floor(imageConfig.col_w - colOffset);
+                rowOffset = Math.floor(imageConfig.col_w - rowOffset);
+                pixelIndex = Math.floor(
+                  (colOffset / rowOffset) * imageConfig.col_w
+                );
+                pixelIndex = Math.floor(imageConfig.col_w - pixelIndex);
+              }
+
+              if (pixelIndex > -1) {
+                if ((rowIndex + colIndex) % 2 === 0) {
+                  pixelIndex = Math.floor(imageConfig.col_w - pixelIndex);
+                }
+                pixelIndex += Math.floor(colIndex * imageConfig.col_w);
+
+                mapRow = y;
+                mapCol = pixelIndex;
+              } else {
+                inBounds = false;
+              }
+            } else if (projection === 'mollweide') {
+              if (
+                x > imageConfig.wd2 - ellipseWidths[y] &&
+                x < imageConfig.wd2 + ellipseWidths[y]
+              ) {
+                mapRow = rowPositions[y];
+                mapCol =
+                  Math.floor((x - imageConfig.wd2) / sinFactors[y]) + mapConfig.cd2;
+              } else {
+                inBounds = false;
+              }
+            } else if (projection === 'sinusoidal') {
+              if (
+                x > imageConfig.wd2 - ellipseWidths[y] &&
+                x < imageConfig.wd2 + ellipseWidths[y]
+              ) {
+                mapRow = y;
+                mapCol =
+                  Math.floor((x - imageConfig.wd2) / sinFactors[y]) + mapConfig.cd2;
+              } else {
+                inBounds = false;
+              }
+            } else {
+              // Default square projection
+              mapRow = y;
+              mapCol = x;
+            }
+
+            const idx = (y * width + x) * 4;
+            if (!inBounds) {
+              // Leave transparent outside projection bounds
+              continue;
+            }
+
+            const cell = getRotatedCellIndex(mapConfig, cellData, mapRow, mapCol);
+            const rgb = getRgbForCell(cell);
+            data[idx] = rgb[0];
+            data[idx + 1] = rgb[1];
+            data[idx + 2] = rgb[2];
+            data[idx + 3] = rgb[3] ?? 255;
+          }
+        }
+
+        ctx.putImageData(imageData, 0, 0);
+      }
+
   /**
    * Render the evaporation map using CellDataModel data
    * Uses physics-based evaporation calculation (Penman-Monteith style)
@@ -1123,11 +1347,11 @@
       console.warn('evaporation-map canvas not found');
       return;
     }
-    
+
     canvas.width = imageConfig.width;
     canvas.height = imageConfig.height;
     const ctx = canvas.getContext('2d');
-    
+
     // Check if cell data is available
     if (!window.worldCellData) {
       ctx.fillStyle = '#888';
@@ -1137,10 +1361,10 @@
       ctx.fillText('Cell data not available', 10, 20);
       return;
     }
-    
+
     const cellData = window.worldCellData;
     const seaLevel = cellData.config.seaLevel;
-    
+
     // Find evaporation range for normalization
     let minEvap = Infinity, maxEvap = -Infinity;
     for (let cell = 0; cell < cellData.cellCount; cell++) {
@@ -1148,21 +1372,21 @@
       if (evap < minEvap) minEvap = evap;
       if (evap > maxEvap) maxEvap = evap;
     }
-    
+
     // Ensure valid range
     if (!isFinite(minEvap)) minEvap = 0;
     if (!isFinite(maxEvap)) maxEvap = 2000;
     const evapRange = maxEvap - minEvap || 1;
-    
+
     console.log(`Evaporation range: ${minEvap.toFixed(0)} to ${maxEvap.toFixed(0)} mm/yr`);
-    
+
     // Color gradient for evaporation visualization
     // Low evaporation (cold/dry) → cool blues
     // High evaporation (hot/wet) → warm oranges/reds
     const getColorForEvaporation = (evaporation, isWater) => {
       // Normalize to 0-1 range
       const normalized = (evaporation - minEvap) / evapRange;
-      
+
       if (isWater) {
         // Ocean: blue gradient (darker = less evaporation)
         const t = normalized;
@@ -1208,15 +1432,15 @@
         }
       }
     };
-    
+
     // Create image data
     const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
     const data = imageData.data;
-    
+
     // Render based on cell data
     const scaleX = cellData.cols / imageConfig.width;
     const scaleY = cellData.rows / imageConfig.height;
-    
+
     for (let y = 0; y < imageConfig.height; y++) {
       for (let x = 0; x < imageConfig.width; x++) {
         // Map pixel to cell
@@ -1283,37 +1507,14 @@
       cellData.calculateBiomes();
     }
     
-    // Create image data
-    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
-    const data = imageData.data;
-    
-    // Render based on cell data with rotation applied
-    const scaleX = cellData.cols / imageConfig.width;
-    const scaleY = cellData.rows / imageConfig.height;
-    const rpx = mapConfig.rpx || 0; // Rotation in pixels
-    
-    for (let y = 0; y < imageConfig.height; y++) {
-      for (let x = 0; x < imageConfig.width; x++) {
-        // Map pixel to cell with rotation applied
-        let col = Math.floor(x * scaleX);
-        const row = Math.floor(y * scaleY);
-        
-        // Apply rotation (same formula as getRotatedMapValue)
-        col = (col - rpx + cellData.cols) % cellData.cols;
-        
-        const cell = row * cellData.cols + col;
-        
-        const idx = (y * imageConfig.width + x) * 4;
-        
-        // Get pre-calculated biome colors
-        data[idx] = cellData.biomeColors[cell * 3];         // R
-        data[idx + 1] = cellData.biomeColors[cell * 3 + 1]; // G
-        data[idx + 2] = cellData.biomeColors[cell * 3 + 2]; // B
-        data[idx + 3] = 255; // Alpha
-      }
-    }
-    
-    ctx.putImageData(imageData, 0, 0);
+    renderProjectedCellDataToContext(ctx, mapConfig, imageConfig, cellData, (cell) => {
+      return [
+        cellData.biomeColors[cell * 3],
+        cellData.biomeColors[cell * 3 + 1],
+        cellData.biomeColors[cell * 3 + 2],
+        255,
+      ];
+    });
     console.log("Whittaker Biome Model complete");
   }
 
@@ -1359,37 +1560,14 @@
       cellData.calculateHoldridgeLifeZones();
     }
     
-    // Create image data
-    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
-    const data = imageData.data;
-    
-    // Render based on cell data with rotation applied
-    const scaleX = cellData.cols / imageConfig.width;
-    const scaleY = cellData.rows / imageConfig.height;
-    const rpx = mapConfig.rpx || 0; // Rotation in pixels
-    
-    for (let y = 0; y < imageConfig.height; y++) {
-      for (let x = 0; x < imageConfig.width; x++) {
-        // Map pixel to cell with rotation applied
-        let col = Math.floor(x * scaleX);
-        const row = Math.floor(y * scaleY);
-        
-        // Apply rotation (same formula as getRotatedMapValue)
-        col = (col - rpx + cellData.cols) % cellData.cols;
-        
-        const cell = row * cellData.cols + col;
-        
-        const idx = (y * imageConfig.width + x) * 4;
-        
-        // Get pre-calculated Holdridge colors
-        data[idx] = cellData.holdridgeColors[cell * 3];         // R
-        data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1]; // G
-        data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2]; // B
-        data[idx + 3] = 255; // Alpha
-      }
-    }
-    
-    ctx.putImageData(imageData, 0, 0);
+    renderProjectedCellDataToContext(ctx, mapConfig, imageConfig, cellData, (cell) => {
+      return [
+        cellData.holdridgeColors[cell * 3],
+        cellData.holdridgeColors[cell * 3 + 1],
+        cellData.holdridgeColors[cell * 3 + 2],
+        255,
+      ];
+    });
     console.log("Holdridge Life Zones complete");
   }
 
@@ -1427,17 +1605,16 @@
     }
     
     const cellData = window.worldCellData;
+
+    // Ensure Holdridge zones are calculated (used for ocean detection/colors)
+    if (!cellData.holdridgeColors || cellData.holdridgeColors.length === 0 ||
+        !cellData.holdridgeIndex || cellData.holdridgeIndex.length === 0) {
+      cellData.calculateHoldridgeLifeZones();
+    }
     
     // Check if simulation has run (has soil colors), otherwise derive from Holdridge
     const hasSimulationData = cellData.soilColorRGB && cellData.soilColorRGB.length > 0 &&
                               cellData.soilColorRGB.some(v => v !== 0);
-    
-    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
-    const data = imageData.data;
-    
-    const scaleX = cellData.cols / imageConfig.width;
-    const scaleY = cellData.rows / imageConfig.height;
-    const rpx = mapConfig.rpx || 0; // Rotation in pixels
     
     // Soil color palettes
     const soilColors = {
@@ -1448,80 +1625,67 @@
       gray: [140, 145, 150],    // Permafrost
       ocean: [65, 105, 170]     // Match Holdridge ocean color
     };
-    
-    for (let y = 0; y < imageConfig.height; y++) {
-      for (let x = 0; x < imageConfig.width; x++) {
-        // Map pixel to cell with rotation applied
-        let col = Math.floor(x * scaleX);
-        const row = Math.floor(y * scaleY);
-        
-        // Apply rotation (same formula as getRotatedMapValue)
-        col = (col - rpx + cellData.cols) % cellData.cols;
-        
-        const cell = row * cellData.cols + col;
-        
-        const idx = (y * imageConfig.width + x) * 4;
-        
-        // Use holdridgeColors directly for ocean to guarantee exact match with Holdridge map
-        // holdridgeColors are pre-calculated using elevation < seaLevel
-        const isOcean = cellData.holdridgeIndex[cell] === 255;
-        
-        if (isOcean) {
-          // Use exact same ocean color from Holdridge calculation
-          data[idx] = cellData.holdridgeColors[cell * 3];
-          data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1];
-          data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2];
-        } else if (hasSimulationData) {
-          // Use simulation colors
-          data[idx] = cellData.soilColorRGB[cell * 3];
-          data[idx + 1] = cellData.soilColorRGB[cell * 3 + 1];
-          data[idx + 2] = cellData.soilColorRGB[cell * 3 + 2];
-        } else {
-          // Derive from Holdridge zone and climate
-          const zoneName = cellData.getHoldridgeZoneName ? cellData.getHoldridgeZoneName(cell) : '';
-          const bioT = cellData.biotemperature ? cellData.biotemperature[cell] : 15;
-          const petRatio = cellData.petRatio ? cellData.petRatio[cell] : 1;
-          
-          let r = soilColors.base[0], g = soilColors.base[1], b = soilColors.base[2];
-          
-          // Tropical = red soils
-          if (zoneName.includes('Tropical') && bioT > 20) {
-            const t = Math.min(1, (bioT - 20) / 8);
-            r = r + (soilColors.red[0] - r) * t;
-            g = g + (soilColors.red[1] - g) * t;
-            b = b + (soilColors.red[2] - b) * t;
-          }
-          // Grassland/steppe = dark soils
-          if (zoneName.includes('Steppe') || zoneName.includes('Grassland') || zoneName.includes('Moist') && !zoneName.includes('Forest')) {
-            const t = 0.5;
-            r = r + (soilColors.black[0] - r) * t;
-            g = g + (soilColors.black[1] - g) * t;
-            b = b + (soilColors.black[2] - b) * t;
-          }
-          // Desert/arid = pale soils
-          if (zoneName.includes('Desert') || petRatio > 4) {
-            const t = Math.min(1, (petRatio - 2) / 6);
-            r = r + (soilColors.pale[0] - r) * t;
-            g = g + (soilColors.pale[1] - g) * t;
-            b = b + (soilColors.pale[2] - b) * t;
-          }
-          // Cold = gray soils
-          if (zoneName.includes('Tundra') || zoneName.includes('Polar') || bioT < 3) {
-            const t = Math.min(1, (5 - bioT) / 5);
-            r = r + (soilColors.gray[0] - r) * t;
-            g = g + (soilColors.gray[1] - g) * t;
-            b = b + (soilColors.gray[2] - b) * t;
-          }
-          
-          data[idx] = Math.round(r);
-          data[idx + 1] = Math.round(g);
-          data[idx + 2] = Math.round(b);
-        }
-        data[idx + 3] = 255;
+
+    renderProjectedCellDataToContext(ctx, mapConfig, imageConfig, cellData, (cell) => {
+      const isOcean = cellData.holdridgeIndex[cell] === 255;
+      if (isOcean) {
+        return [
+          cellData.holdridgeColors[cell * 3],
+          cellData.holdridgeColors[cell * 3 + 1],
+          cellData.holdridgeColors[cell * 3 + 2],
+          255,
+        ];
       }
-    }
-    
-    ctx.putImageData(imageData, 0, 0);
+
+      if (hasSimulationData) {
+        return [
+          cellData.soilColorRGB[cell * 3],
+          cellData.soilColorRGB[cell * 3 + 1],
+          cellData.soilColorRGB[cell * 3 + 2],
+          255,
+        ];
+      }
+
+      // Derive from Holdridge zone and climate
+      const zoneName = cellData.getHoldridgeZoneName
+        ? cellData.getHoldridgeZoneName(cell)
+        : '';
+      const bioT = cellData.biotemperature ? cellData.biotemperature[cell] : 15;
+      const petRatio = cellData.petRatio ? cellData.petRatio[cell] : 1;
+
+      let r = soilColors.base[0], g = soilColors.base[1], b = soilColors.base[2];
+
+      // Tropical = red soils
+      if (zoneName.includes('Tropical') && bioT > 20) {
+        const t = Math.min(1, (bioT - 20) / 8);
+        r = r + (soilColors.red[0] - r) * t;
+        g = g + (soilColors.red[1] - g) * t;
+        b = b + (soilColors.red[2] - b) * t;
+      }
+      // Grassland/steppe = dark soils
+      if (zoneName.includes('Steppe') || zoneName.includes('Grassland') || zoneName.includes('Moist') && !zoneName.includes('Forest')) {
+        const t = 0.5;
+        r = r + (soilColors.black[0] - r) * t;
+        g = g + (soilColors.black[1] - g) * t;
+        b = b + (soilColors.black[2] - b) * t;
+      }
+      // Desert/arid = pale soils
+      if (zoneName.includes('Desert') || petRatio > 4) {
+        const t = Math.min(1, (petRatio - 2) / 6);
+        r = r + (soilColors.pale[0] - r) * t;
+        g = g + (soilColors.pale[1] - g) * t;
+        b = b + (soilColors.pale[2] - b) * t;
+      }
+      // Cold = gray soils
+      if (zoneName.includes('Tundra') || zoneName.includes('Polar') || bioT < 3) {
+        const t = Math.min(1, (5 - bioT) / 5);
+        r = r + (soilColors.gray[0] - r) * t;
+        g = g + (soilColors.gray[1] - g) * t;
+        b = b + (soilColors.gray[2] - b) * t;
+      }
+
+      return [Math.round(r), Math.round(g), Math.round(b), 255];
+    });
     console.log("Soil map complete");
   }
 
@@ -1554,82 +1718,70 @@
     }
     
     const cellData = window.worldCellData;
+
+    // Ensure Holdridge zones are calculated (used for ocean detection/colors)
+    if (!cellData.holdridgeColors || cellData.holdridgeColors.length === 0 ||
+        !cellData.holdridgeIndex || cellData.holdridgeIndex.length === 0) {
+      cellData.calculateHoldridgeLifeZones();
+    }
     
     const hasSimulationData = cellData.vegColors && cellData.vegColors.length > 0 &&
                               cellData.vegColors.some(v => v !== 0);
-    
-    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
-    const data = imageData.data;
-    
-    const scaleX = cellData.cols / imageConfig.width;
-    const scaleY = cellData.rows / imageConfig.height;
-    const rpx = mapConfig.rpx || 0; // Rotation in pixels
-    
-    for (let y = 0; y < imageConfig.height; y++) {
-      for (let x = 0; x < imageConfig.width; x++) {
-        // Map pixel to cell with rotation applied
-        let col = Math.floor(x * scaleX);
-        const row = Math.floor(y * scaleY);
-        
-        // Apply rotation (same formula as getRotatedMapValue)
-        col = (col - rpx + cellData.cols) % cellData.cols;
-        
-        const cell = row * cellData.cols + col;
-        
-        const idx = (y * imageConfig.width + x) * 4;
-        
-        // Use holdridgeColors directly for ocean to guarantee exact match with Holdridge map
-        const isOcean = cellData.holdridgeIndex[cell] === 255;
-        
-        if (isOcean) {
-          // Use exact same ocean color from Holdridge calculation
-          data[idx] = cellData.holdridgeColors[cell * 3];
-          data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1];
-          data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2];
-        } else if (hasSimulationData) {
-          data[idx] = cellData.vegColors[cell * 3];
-          data[idx + 1] = cellData.vegColors[cell * 3 + 1];
-          data[idx + 2] = cellData.vegColors[cell * 3 + 2];
-        } else {
-          // Derive from Holdridge zone
-          const zoneName = cellData.getHoldridgeZoneName ? cellData.getHoldridgeZoneName(cell) : '';
-          
-          let r, g, b;
-          
-          if (zoneName.includes('Rain Forest') || zoneName.includes('Wet Forest')) {
-            // Dense forest - dark green
-            r = 20; g = 80; b = 20;
-          } else if (zoneName.includes('Moist Forest')) {
-            r = 40; g = 110; b = 40;
-          } else if (zoneName.includes('Dry Forest') || zoneName.includes('Woodland')) {
-            r = 80; g = 140; b = 60;
-          } else if (zoneName.includes('Thorn')) {
-            r = 120; g = 130; b = 70;
-          } else if (zoneName.includes('Steppe') || zoneName.includes('Grassland')) {
-            // Grassland - yellow-green
-            r = 180; g = 200; b = 80;
-          } else if (zoneName.includes('Tundra')) {
-            // Tundra - moss green
-            r = 100; g = 140; b = 90;
-          } else if (zoneName.includes('Desert') || zoneName.includes('Polar')) {
-            // Desert/polar - sparse
-            r = 200; g = 180; b = 150;
-          } else if (zoneName.includes('Boreal')) {
-            r = 60; g = 100; b = 70;
-          } else {
-            // Default
-            r = 140; g = 160; b = 100;
-          }
-          
-          data[idx] = r;
-          data[idx + 1] = g;
-          data[idx + 2] = b;
-        }
-        data[idx + 3] = 255;
+
+    renderProjectedCellDataToContext(ctx, mapConfig, imageConfig, cellData, (cell) => {
+      const isOcean = cellData.holdridgeIndex[cell] === 255;
+      if (isOcean) {
+        return [
+          cellData.holdridgeColors[cell * 3],
+          cellData.holdridgeColors[cell * 3 + 1],
+          cellData.holdridgeColors[cell * 3 + 2],
+          255,
+        ];
       }
-    }
-    
-    ctx.putImageData(imageData, 0, 0);
+
+      if (hasSimulationData) {
+        return [
+          cellData.vegColors[cell * 3],
+          cellData.vegColors[cell * 3 + 1],
+          cellData.vegColors[cell * 3 + 2],
+          255,
+        ];
+      }
+
+      // Derive from Holdridge zone
+      const zoneName = cellData.getHoldridgeZoneName
+        ? cellData.getHoldridgeZoneName(cell)
+        : '';
+
+      let r, g, b;
+
+      if (zoneName.includes('Rain Forest') || zoneName.includes('Wet Forest')) {
+        // Dense forest - dark green
+        r = 20; g = 80; b = 20;
+      } else if (zoneName.includes('Moist Forest')) {
+        r = 40; g = 110; b = 40;
+      } else if (zoneName.includes('Dry Forest') || zoneName.includes('Woodland')) {
+        r = 80; g = 140; b = 60;
+      } else if (zoneName.includes('Thorn')) {
+        r = 120; g = 130; b = 70;
+      } else if (zoneName.includes('Steppe') || zoneName.includes('Grassland')) {
+        // Grassland - yellow-green
+        r = 180; g = 200; b = 80;
+      } else if (zoneName.includes('Tundra')) {
+        // Tundra - moss green
+        r = 100; g = 140; b = 90;
+      } else if (zoneName.includes('Desert') || zoneName.includes('Polar')) {
+        // Desert/polar - sparse
+        r = 200; g = 180; b = 150;
+      } else if (zoneName.includes('Boreal')) {
+        r = 60; g = 100; b = 70;
+      } else {
+        // Default
+        r = 140; g = 160; b = 100;
+      }
+
+      return [r, g, b, 255];
+    });
     console.log("Vegetation map complete");
   }
 
@@ -1662,16 +1814,15 @@
     }
     
     const cellData = window.worldCellData;
+
+    // Ensure Holdridge zones are calculated (used for ocean detection/colors)
+    if (!cellData.holdridgeColors || cellData.holdridgeColors.length === 0 ||
+        !cellData.holdridgeIndex || cellData.holdridgeIndex.length === 0) {
+      cellData.calculateHoldridgeLifeZones();
+    }
     
     const hasSimulationData = cellData.faunaColors && cellData.faunaColors.length > 0 &&
                               cellData.faunaColors.some(v => v !== 0);
-    
-    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
-    const data = imageData.data;
-    
-    const scaleX = cellData.cols / imageConfig.width;
-    const scaleY = cellData.rows / imageConfig.height;
-    const rpx = mapConfig.rpx || 0; // Rotation in pixels
     
     // Fauna weights by zone type (R=mammals, G=invertebrates+amphibians, B=reptiles+birds)
     const faunaByZone = {
@@ -1688,58 +1839,52 @@
       'Boreal': [0.7, 0.5, 0.5],
       'default': [0.5, 0.5, 0.5]
     };
-    
-    for (let y = 0; y < imageConfig.height; y++) {
-      for (let x = 0; x < imageConfig.width; x++) {
-        // Map pixel to cell with rotation applied
-        let col = Math.floor(x * scaleX);
-        const row = Math.floor(y * scaleY);
-        
-        // Apply rotation (same formula as getRotatedMapValue)
-        col = (col - rpx + cellData.cols) % cellData.cols;
-        
-        const cell = row * cellData.cols + col;
-        
-        const idx = (y * imageConfig.width + x) * 4;
-        
-        // Use holdridgeColors directly for ocean to guarantee exact match with Holdridge map
-        const isOcean = cellData.holdridgeIndex[cell] === 255;
-        
-        if (isOcean) {
-          // Use exact same ocean color from Holdridge calculation
-          data[idx] = cellData.holdridgeColors[cell * 3];
-          data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1];
-          data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2];
-        } else if (hasSimulationData) {
-          data[idx] = cellData.faunaColors[cell * 3];
-          data[idx + 1] = cellData.faunaColors[cell * 3 + 1];
-          data[idx + 2] = cellData.faunaColors[cell * 3 + 2];
-        } else {
-          // Derive from Holdridge zone
-          const zoneName = cellData.getHoldridgeZoneName ? cellData.getHoldridgeZoneName(cell) : '';
-          
-          // Find matching zone weights
-          let weights = faunaByZone['default'];
-          for (const key in faunaByZone) {
-            if (zoneName.includes(key)) {
-              weights = faunaByZone[key];
-              break;
-            }
-          }
-          
-          // Convert to RGB with saturation
-          const maxW = Math.max(...weights);
-          const brightness = (weights[0] + weights[1] + weights[2]) / 3;
-          
-          data[idx] = Math.round(40 + (weights[0] / maxW) * brightness * 215);
-          data[idx + 1] = Math.round(40 + (weights[1] / maxW) * brightness * 215);
-          data[idx + 2] = Math.round(40 + (weights[2] / maxW) * brightness * 215);
-        }
-        data[idx + 3] = 255;
+
+    renderProjectedCellDataToContext(ctx, mapConfig, imageConfig, cellData, (cell) => {
+      const isOcean = cellData.holdridgeIndex[cell] === 255;
+      if (isOcean) {
+        return [
+          cellData.holdridgeColors[cell * 3],
+          cellData.holdridgeColors[cell * 3 + 1],
+          cellData.holdridgeColors[cell * 3 + 2],
+          255,
+        ];
       }
-    }
-    
-    ctx.putImageData(imageData, 0, 0);
+
+      if (hasSimulationData) {
+        return [
+          cellData.faunaColors[cell * 3],
+          cellData.faunaColors[cell * 3 + 1],
+          cellData.faunaColors[cell * 3 + 2],
+          255,
+        ];
+      }
+
+      // Derive from Holdridge zone
+      const zoneName = cellData.getHoldridgeZoneName
+        ? cellData.getHoldridgeZoneName(cell)
+        : '';
+
+      // Find matching zone weights
+      let weights = faunaByZone['default'];
+      for (const key in faunaByZone) {
+        if (zoneName.includes(key)) {
+          weights = faunaByZone[key];
+          break;
+        }
+      }
+
+      // Convert to RGB with saturation
+      const maxW = Math.max(...weights);
+      const brightness = (weights[0] + weights[1] + weights[2]) / 3;
+
+      return [
+        Math.round(40 + (weights[0] / maxW) * brightness * 215),
+        Math.round(40 + (weights[1] / maxW) * brightness * 215),
+        Math.round(40 + (weights[2] / maxW) * brightness * 215),
+        255,
+      ];
+    });
     console.log("Fauna map complete");
   }
 
@@ -1772,93 +1917,79 @@
     }
     
     const cellData = window.worldCellData;
+
+    // Ensure Holdridge zones are calculated (used for ocean detection/colors)
+    if (!cellData.holdridgeColors || cellData.holdridgeColors.length === 0 ||
+        !cellData.holdridgeIndex || cellData.holdridgeIndex.length === 0) {
+      cellData.calculateHoldridgeLifeZones();
+    }
     
     const hasSimulationData = cellData.fireRisk && cellData.fireRisk.length > 0 &&
                               cellData.fireRisk.some(v => v !== 0);
-    
-    const imageData = ctx.createImageData(imageConfig.width, imageConfig.height);
-    const data = imageData.data;
-    
-    const scaleX = cellData.cols / imageConfig.width;
-    const scaleY = cellData.rows / imageConfig.height;
-    const rpx = mapConfig.rpx || 0; // Rotation in pixels
-    
-    for (let y = 0; y < imageConfig.height; y++) {
-      for (let x = 0; x < imageConfig.width; x++) {
-        // Map pixel to cell with rotation applied
-        let col = Math.floor(x * scaleX);
-        const row = Math.floor(y * scaleY);
-        
-        // Apply rotation (same formula as getRotatedMapValue)
-        col = (col - rpx + cellData.cols) % cellData.cols;
-        
-        const cell = row * cellData.cols + col;
-        
-        const idx = (y * imageConfig.width + x) * 4;
-        
-        // Use holdridgeColors directly for ocean to guarantee exact match with Holdridge map
-        const isOcean = cellData.holdridgeIndex[cell] === 255;
-        
-        if (isOcean) {
-          // Use exact same ocean color from Holdridge calculation
-          data[idx] = cellData.holdridgeColors[cell * 3];
-          data[idx + 1] = cellData.holdridgeColors[cell * 3 + 1];
-          data[idx + 2] = cellData.holdridgeColors[cell * 3 + 2];
-        } else {
-          let risk;
-          
-          if (hasSimulationData) {
-            const rawRisk = cellData.fireRisk[cell];
-            const fuelLoad = cellData.vegFuelLoad ? cellData.vegFuelLoad[cell] : 0;
-            const composite = rawRisk * 0.6 + fuelLoad * 0.4;
-            risk = Math.min(1, Math.sqrt(composite * 5));
-          } else {
-            // Derive from climate: drier + warmer + grassland/savanna = higher risk
-            const zoneName = cellData.getHoldridgeZoneName ? cellData.getHoldridgeZoneName(cell) : '';
-            const petRatio = cellData.petRatio ? cellData.petRatio[cell] : 1;
-            const bioT = cellData.biotemperature ? cellData.biotemperature[cell] : 15;
-            
-            // Base risk from PET ratio (dryness)
-            let baseRisk = 0;
-            if (petRatio > 1 && petRatio < 8) {
-              baseRisk = (petRatio - 1) / 7 * 0.5; // Peak in semi-arid
-            }
-            
-            // Boost for fire-prone zones
-            if (zoneName.includes('Steppe') || zoneName.includes('Grassland') || zoneName.includes('Savanna')) {
-              baseRisk += 0.3;
-            } else if (zoneName.includes('Thorn') || zoneName.includes('Dry Forest')) {
-              baseRisk += 0.2;
-            } else if (zoneName.includes('Desert') || zoneName.includes('Rain Forest') || zoneName.includes('Tundra') || zoneName.includes('Polar')) {
-              baseRisk *= 0.3; // Very low in deserts (no fuel) and wet/cold zones
-            }
-            
-            // Temperature modifier
-            if (bioT > 15) {
-              baseRisk *= 1 + (bioT - 15) / 20;
-            }
-            
-            risk = Math.min(1, Math.sqrt(baseRisk * 2));
-          }
-          
-          // Color gradient: green -> yellow -> red
-          if (risk < 0.5) {
-            const t = risk * 2;
-            data[idx] = Math.round(t * 255);
-            data[idx + 1] = Math.round(200 + t * 55);
-            data[idx + 2] = Math.round((1 - t) * 80);
-          } else {
-            const t = (risk - 0.5) * 2;
-            data[idx] = 255;
-            data[idx + 1] = Math.round((1 - t) * 255);
-            data[idx + 2] = 0;
-          }
-        }
-        data[idx + 3] = 255;
+
+    renderProjectedCellDataToContext(ctx, mapConfig, imageConfig, cellData, (cell) => {
+      const isOcean = cellData.holdridgeIndex[cell] === 255;
+      if (isOcean) {
+        return [
+          cellData.holdridgeColors[cell * 3],
+          cellData.holdridgeColors[cell * 3 + 1],
+          cellData.holdridgeColors[cell * 3 + 2],
+          255,
+        ];
       }
-    }
-    
-    ctx.putImageData(imageData, 0, 0);
+
+      let risk;
+
+      if (hasSimulationData) {
+        const rawRisk = cellData.fireRisk[cell];
+        const fuelLoad = cellData.vegFuelLoad ? cellData.vegFuelLoad[cell] : 0;
+        const composite = rawRisk * 0.6 + fuelLoad * 0.4;
+        risk = Math.min(1, Math.sqrt(composite * 5));
+      } else {
+        // Derive from climate: drier + warmer + grassland/savanna = higher risk
+        const zoneName = cellData.getHoldridgeZoneName
+          ? cellData.getHoldridgeZoneName(cell)
+          : '';
+        const petRatio = cellData.petRatio ? cellData.petRatio[cell] : 1;
+        const bioT = cellData.biotemperature ? cellData.biotemperature[cell] : 15;
+
+        // Base risk from PET ratio (dryness)
+        let baseRisk = 0;
+        if (petRatio > 1 && petRatio < 8) {
+          baseRisk = (petRatio - 1) / 7 * 0.5; // Peak in semi-arid
+        }
+
+        // Boost for fire-prone zones
+        if (zoneName.includes('Steppe') || zoneName.includes('Grassland') || zoneName.includes('Savanna')) {
+          baseRisk += 0.3;
+        } else if (zoneName.includes('Thorn') || zoneName.includes('Dry Forest')) {
+          baseRisk += 0.2;
+        } else if (zoneName.includes('Desert') || zoneName.includes('Rain Forest') || zoneName.includes('Tundra') || zoneName.includes('Polar')) {
+          baseRisk *= 0.3; // Very low in deserts (no fuel) and wet/cold zones
+        }
+
+        // Temperature modifier
+        if (bioT > 15) {
+          baseRisk *= 1 + (bioT - 15) / 20;
+        }
+
+        risk = Math.min(1, Math.sqrt(baseRisk * 2));
+      }
+
+      // Color gradient: green -> yellow -> red
+      if (risk < 0.5) {
+        const t = risk * 2;
+        return [
+          Math.round(t * 255),
+          Math.round(200 + t * 55),
+          Math.round((1 - t) * 80),
+          255,
+        ];
+      }
+
+      const t = (risk - 0.5) * 2;
+      return [255, Math.round((1 - t) * 255), 0, 255];
+    });
     console.log("Fire risk map complete");
   }
 
@@ -4609,8 +4740,122 @@
     clearCanvas('final-map', imageConfig);
   }
 
+  /**
+   * Re-render all maps from the currently generated world state.
+   * Does NOT regenerate the world; uses cached globals from updateMap().
+   */
+  function rerenderAllMaps() {
+    const mapConfig = window.worldMapConfig;
+    const imageConfig = window.worldImageConfig;
+    const originalHeightMap = window.worldOriginalHeightMap;
+    const waterLevel = window.worldWaterLevel;
+    const terrainTypeMap = window.worldTerrainTypeMap;
+
+    if (!mapConfig || !imageConfig || !originalHeightMap || typeof waterLevel !== 'number' || !terrainTypeMap) {
+      console.warn('rerenderAllMaps: missing cached world state; generate a world first.');
+      return;
+    }
+
+    // Re-render the main world map (use cached terrain map since mapConfig.map may have been mutated later)
+    const worldConfigForRender = Object.assign({}, mapConfig, { map: terrainTypeMap });
+    const mapImage = new_image('map', imageConfig.width, imageConfig.height);
+    cache_pixels(true);
+
+    if (mapConfig.projection == 'mercator') {
+      renderMercatorProjection(mapImage, worldConfigForRender, imageConfig);
+    } else if (mapConfig.projection == 'transmerc') {
+      renderTransverseMercatorProjection(mapImage, worldConfigForRender, imageConfig);
+    } else if (mapConfig.projection == 'icosahedral') {
+      renderIcosahedralProjection(mapImage, worldConfigForRender, imageConfig);
+    } else if (mapConfig.projection == 'mollweide') {
+      renderMollweideProjection(mapImage, worldConfigForRender, imageConfig);
+    } else if (mapConfig.projection == 'sinusoidal') {
+      renderSinusoidalProjection(mapImage, worldConfigForRender, imageConfig);
+    } else {
+      renderSquareProjection(mapImage, worldConfigForRender, imageConfig);
+    }
+    draw_pixels(mapImage);
+
+    // Climate maps
+    const rawTempMap = generateAndRenderTemperatureMap(mapConfig, imageConfig, originalHeightMap, waterLevel);
+    window.worldTemperatureRawMap = rawTempMap;
+
+    generateAndRenderRainfallMap(mapConfig, imageConfig, originalHeightMap, waterLevel, rawTempMap);
+    generateAndRenderEvaporationMap(mapConfig, imageConfig, originalHeightMap, waterLevel);
+    generateAndRenderSnowfallMap(mapConfig, imageConfig, originalHeightMap, waterLevel, rawTempMap);
+
+    // CellDataModel-derived maps
+    generateAndRenderBiomeMap(mapConfig, imageConfig, originalHeightMap, waterLevel);
+    generateAndRenderHoldridgeMap(mapConfig, imageConfig, originalHeightMap, waterLevel);
+    renderAllEcosystemMaps(mapConfig, imageConfig);
+
+    // Lake map: use a cloned mapConfig to avoid mutating window.worldMapConfig
+    try {
+      const lakeConfig = JSON.parse(JSON.stringify(mapConfig));
+      generateAndRenderLakeMap(lakeConfig, imageConfig, originalHeightMap, waterLevel);
+    } catch (e) {
+      console.warn('rerenderAllMaps: lake map render failed', e);
+    }
+
+    // Erosion-based maps (if a simulation exists, just re-render from its current state)
+    if (window.lastErosionSimulation) {
+      try {
+        const erosion = window.lastErosionSimulation;
+        const showRivers = !!($('show_rivers') && $('show_rivers').checked);
+        const showCoastlines = !!($('show_coastlines') && $('show_coastlines').checked);
+
+        const riverSegments = erosion.getRiverSegments(0.005);
+        const coastlineSegments = erosion.getCoastlineSegments();
+        const lakeThicknessMap = erosion.getLakeThicknessMap();
+        const maxLakeThickness = erosion.getMaxLakeThickness();
+
+        if (showRivers) {
+          renderRiverMap(mapConfig, imageConfig, originalHeightMap, waterLevel, riverSegments);
+        } else {
+          clearCanvas('river-map', imageConfig);
+        }
+
+        if (showCoastlines) {
+          renderCoastlineMap(mapConfig, imageConfig, originalHeightMap, waterLevel, coastlineSegments);
+        } else {
+          clearCanvas('coastline-map', imageConfig);
+        }
+
+        renderLakeMap(
+          mapConfig,
+          imageConfig,
+          originalHeightMap,
+          waterLevel,
+          lakeThicknessMap,
+          maxLakeThickness,
+          erosion.lakeThreshold || 0.01
+        );
+
+        renderIceCapClassificationMap(mapConfig, imageConfig);
+
+        const erodedSeaLevel = erosion.getNormalizedSeaLevel();
+        renderTerrainMap(mapConfig, imageConfig, erosion.getNormalizedElevationMap(), erodedSeaLevel);
+        renderFinalMap(
+          mapConfig,
+          imageConfig,
+          erosion.getNormalizedElevationMap(),
+          erodedSeaLevel,
+          coastlineSegments,
+          riverSegments,
+          showCoastlines,
+          showRivers
+        );
+      } catch (e) {
+        console.warn('rerenderAllMaps: erosion maps re-render failed', e);
+      }
+    }
+  }
+
   // Expose the updateMap function for the export
   exports.updateMap = updateMap;
+
+  // Expose the rerenderAllMaps function for ecosystem controls
+  exports.rerenderAllMaps = rerenderAllMaps;
 });
 
 // Move applyPalette to the true top-level scope so it is available everywhere

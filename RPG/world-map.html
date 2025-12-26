@@ -539,6 +539,28 @@
       </table>
     </form>
     <div class="center">
+      <!-- Ecosystem Simulation Controls (moved to top; applies to all maps) -->
+      <div id="ecosystem-simulation-controls">
+        <div style="margin: 10px auto 20px; text-align: center; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <button id="btn_init_ecosystem" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #2a7d4f; color: white; border: none; border-radius: 6px;">
+            Start Dynamic Simulation
+          </button>
+          <button id="btn_step_ecosystem_1" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #3a8d5f; color: white; border: none; border-radius: 6px;" disabled>
+            Step +1 Year
+          </button>
+          <button id="btn_step_ecosystem_10" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #4a9d6f; color: white; border: none; border-radius: 6px;" disabled>
+            Step +10 Years
+          </button>
+          <button id="btn_step_ecosystem_100" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #5aad7f; color: white; border: none; border-radius: 6px;" disabled>
+            Step +100 Years
+          </button>
+        </div>
+        <div id="ecosystem-status" style="margin: 10px auto 20px; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif; max-width: 800px;">
+          <output id="ecosystem_readout" style="font-weight: 600; color: #333;">Showing initial conditions from climate data</output>
+          <div id="ecosystem_stats" style="margin-top: 8px; font-size: 13px; color: #666; display: none;"></div>
+        </div>
+      </div>
+
       <h2>World Map</h2>
       <canvas id="map" width="1" height="1">
         <p>Your web browser does not appear to support HTML5 canvas.</p>
@@ -678,24 +700,6 @@
           Ecosystem characteristics derived from Holdridge Life Zones. Maps show initial conditions based on climate;
           use the simulation controls to model ecosystem dynamics over time (soil development, vegetation succession, fauna populations, fire cycles).
         </p>
-        <div style="margin: 10px auto 20px; text-align: center; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-          <button id="btn_init_ecosystem" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #2a7d4f; color: white; border: none; border-radius: 6px;">
-            Start Dynamic Simulation
-          </button>
-          <button id="btn_step_ecosystem_1" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #3a8d5f; color: white; border: none; border-radius: 6px;" disabled>
-            Step +1 Year
-          </button>
-          <button id="btn_step_ecosystem_10" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #4a9d6f; color: white; border: none; border-radius: 6px;" disabled>
-            Step +10 Years
-          </button>
-          <button id="btn_step_ecosystem_100" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #5aad7f; color: white; border: none; border-radius: 6px;" disabled>
-            Step +100 Years
-          </button>
-        </div>
-        <div id="ecosystem-status" style="margin: 10px auto 20px; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif; max-width: 800px;">
-          <output id="ecosystem_readout" style="font-weight: 600; color: #333;">Showing initial conditions from climate data</output>
-          <div id="ecosystem_stats" style="margin-top: 8px; font-size: 13px; color: #666; display: none;"></div>
-        </div>
 
         <h3>Soil Map</h3>
         <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
@@ -1561,6 +1565,12 @@
         
         // Get image config from the main map canvas for ecosystem rendering
         function getEcosystemImageConfig() {
+          // Prefer the exact config used by world.js when rendering the main map.
+          // Projection-aware rendering needs extra fields (e.g., wd2/col_w/row_h).
+          if (window.worldImageConfig) {
+            return window.worldImageConfig;
+          }
+
           const mainCanvas = document.getElementById('map');
           return {
             width: mainCanvas.width || 800,
@@ -1608,11 +1618,22 @@
                 // Create simulation
                 holdridgeSim = new HoldridgeSimulation(window.worldCellData);
                 holdridgeSim.initialize();
+
+                // Mark cell data updated so WebGL layers refresh too
+                if (window.worldCellData) {
+                  window.worldCellData._lastUpdate = Date.now();
+                }
+                window.holdridgeSim = holdridgeSim;
                 
-                // Render initial maps
-                const imageConfig = getEcosystemImageConfig();
-                const mapConfig = window.worldMapConfig || { rpx: 0 };
-                window.renderAllEcosystemMaps(mapConfig, imageConfig);
+                // Render updated maps
+                if (typeof window.rerenderAllMaps === 'function') {
+                  window.rerenderAllMaps();
+                } else {
+                  // Fallback: ecosystem-only
+                  const imageConfig = getEcosystemImageConfig();
+                  const mapConfig = window.worldMapConfig || { rpx: 0 };
+                  window.renderAllEcosystemMaps(mapConfig, imageConfig);
+                }
                 
                 // Enable step buttons
                 btnStep1.disabled = false;
@@ -1645,10 +1666,18 @@
             
             setTimeout(function() {
               holdridgeSim.stepYear();
+
+              if (window.worldCellData) {
+                window.worldCellData._lastUpdate = Date.now();
+              }
               
-              const imageConfig = getEcosystemImageConfig();
-              const mapConfig = window.worldMapConfig || { rpx: 0 };
-              window.renderAllEcosystemMaps(mapConfig, imageConfig);
+              if (typeof window.rerenderAllMaps === 'function') {
+                window.rerenderAllMaps();
+              } else {
+                const imageConfig = getEcosystemImageConfig();
+                const mapConfig = window.worldMapConfig || { rpx: 0 };
+                window.renderAllEcosystemMaps(mapConfig, imageConfig);
+              }
               
               updateEcosystemStatus();
               
@@ -1670,10 +1699,18 @@
               holdridgeSim.stepYears(10, function(year, total) {
                 ecosystemReadout.textContent = `Ecosystem: Running year ${year}/${total}...`;
               });
+
+              if (window.worldCellData) {
+                window.worldCellData._lastUpdate = Date.now();
+              }
               
-              const imageConfig = getEcosystemImageConfig();
-              const mapConfig = window.worldMapConfig || { rpx: 0 };
-              window.renderAllEcosystemMaps(mapConfig, imageConfig);
+              if (typeof window.rerenderAllMaps === 'function') {
+                window.rerenderAllMaps();
+              } else {
+                const imageConfig = getEcosystemImageConfig();
+                const mapConfig = window.worldMapConfig || { rpx: 0 };
+                window.renderAllEcosystemMaps(mapConfig, imageConfig);
+              }
               
               updateEcosystemStatus();
               
@@ -1710,9 +1747,17 @@
                 setTimeout(runChunk, 10);
               } else {
                 // Done
-                const imageConfig = getEcosystemImageConfig();
-                const mapConfig = window.worldMapConfig || { rpx: 0 };
-                window.renderAllEcosystemMaps(mapConfig, imageConfig);
+                if (window.worldCellData) {
+                  window.worldCellData._lastUpdate = Date.now();
+                }
+
+                if (typeof window.rerenderAllMaps === 'function') {
+                  window.rerenderAllMaps();
+                } else {
+                  const imageConfig = getEcosystemImageConfig();
+                  const mapConfig = window.worldMapConfig || { rpx: 0 };
+                  window.renderAllEcosystemMaps(mapConfig, imageConfig);
+                }
                 
                 updateEcosystemStatus();
                 
