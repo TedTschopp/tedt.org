@@ -26,28 +26,28 @@ b94b31288d269cdbc55a79dfbeef72fce89895d0:
       confidence_level: "High"
       confidence_rationale: "Meaning is straightforward; slight uncertainty remains about ethnonym usage and exact farm-building sense."
   location_ids:
-    - "ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7"
-    - "a9b1f1f4cf8a3e3a0c1f2f5c17f3ed8a6e5b46ae"
-    - "5a86fd5f45e4c16cf39e2a1f8c3d6c65f11e3af1"
-    - "ca9d3c7dc7e1d8e4f6c7f58a7e09d1d178c2f8a4"
-    - "2e8e0dcbf0f8f4fba7f0a0a2f7d0a6d1e3c9c0a5"
+  - "ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7"
+  - "a9b1f1f4cf8a3e3a0c1f2f5c17f3ed8a6e5b46ae"
+  - "5a86fd5f45e4c16cf39e2a1f8c3d6c65f11e3af1"
+  - "ca9d3c7dc7e1d8e4f6c7f58a7e09d1d178c2f8a4"
+  - "2e8e0dcbf0f8f4fba7f0a0a2f7d0a6d1e3c9c0a5"
   entity_ids:
-    - "d8a62a0e6f2c1c2eb7f273d8d9c7f9b2e5a7b8f6"
-    - "2c6d2b9e0a7d4d9f88b6f1b1a0c3a5f2d9a4c6e1"
-    - "d6f4a1b7d9f3c2a8b4e6c1d0f7a8c9e2b3d4a5f6"
-    - "c9a9b8a7d6c5b4a3f2e1d0c9b8a7d6c5b4a3f2e1"
-    - "1b2c3d4e5f60718293a4b5c6d7e8f90123456789"
+  - "d8a62a0e6f2c1c2eb7f273d8d9c7f9b2e5a7b8f6"
+  - "2c6d2b9e0a7d4d9f88b6f1b1a0c3a5f2d9a4c6e1"
+  - "d6f4a1b7d9f3c2a8b4e6c1d0f7a8c9e2b3d4a5f6"
+  - "c9a9b8a7d6c5b4a3f2e1d0c9b8a7d6c5b4a3f2e1"
+  - "1b2c3d4e5f60718293a4b5c6d7e8f90123456789"
   myth_classification:
     myth_type: "Legend"
     primary_themes:
-      - "Wild Hunt"
-      - "Seasonal haunting (Christmas)"
-      - "Household peril and protection"
+    - "Wild Hunt"
+    - "Seasonal haunting (Christmas)"
+    - "Household peril and protection"
     secondary_themes:
-      - "Giants"
-      - "Dwarfs"
-      - "Cursed dead/spirits"
-      - "Storm as omen"
+    - "Giants"
+    - "Dwarfs"
+    - "Cursed dead/spirits"
+    - "Storm as omen"
     narrative_function: "Warning tale and practice-enforcement (open the gates) tied to a feared nocturnal procession."
     belief_context: "Alpine legend with Christian calendar framing (Christmas-tide) and protective custom."
   atu_inference:
@@ -55,10 +55,10 @@ b94b31288d269cdbc55a79dfbeef72fce89895d0:
     notes: "Local legend/Wild Hunt complex; ATU tale-types typically do not fit well."
   thompson_motif_inference:
     motif_candidates:
-      - motif_label: "Wild Hunt / spectral host in storm"
-        confidence: 0.78
-      - motif_label: "Protective/appeasing act to avert harm (opening doors/gates)"
-        confidence: 0.72
+    - motif_label: "Wild Hunt / spectral host in storm"
+      confidence: 0.78
+    - motif_label: "Protective/appeasing act to avert harm (opening doors/gates)"
+      confidence: 0.72
     notes: "Motif labels given without codes because exact Thompson codes are not recalled with full reliability."
   notes_on_translation: "Kept 'Wütisheer' as a named phenomenon; rendered farm-terms literally; treated ethnonym 'Westfriesen' as reported legendary designation."
   extracted_metadata:
@@ -102,27 +102,27 @@ b94b31288d269cdbc55a79dfbeef72fce89895d0:
       confidence_level: "Medium"
       confidence_rationale: "Rendering is faithful but a few Swiss-German terms remain approximate; place-name referents are not fully disambiguated."
   location_ids:
-    - "edb8f0a4c6f7d1b2c3a4e5f60718293a4b5c6d7e"
-    - "d0b9a8c7f6e5d4c3b2a1908273645544332211ff"
-    - "d6d4b3a2c1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6"
-    - "a3f2e1d0c9b8a7d6c5b4a3f2e1d0c9b8a7d6c5b4"
-    - "b2c3d4e5f60718293a4b5c6d7e8f901234567890"
-    - "c3d4e5f60718293a4b5c6d7e8f90123456789012"
-    - "d4e5f60718293a4b5c6d7e8f9012345678901234"
-    - "e5f60718293a4b5c6d7e8f901234567890123456"
+  - "edb8f0a4c6f7d1b2c3a4e5f60718293a4b5c6d7e"
+  - "d0b9a8c7f6e5d4c3b2a1908273645544332211ff"
+  - "d6d4b3a2c1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6"
+  - "a3f2e1d0c9b8a7d6c5b4a3f2e1d0c9b8a7d6c5b4"
+  - "b2c3d4e5f60718293a4b5c6d7e8f901234567890"
+  - "c3d4e5f60718293a4b5c6d7e8f90123456789012"
+  - "d4e5f60718293a4b5c6d7e8f9012345678901234"
+  - "e5f60718293a4b5c6d7e8f901234567890123456"
   entity_ids:
-    - "e2f6fbf5c2b6f7f0b2f2b41d7df5f8b38d28fb34"
-    - "8b7c6d5e4f3029182736455463728190a1b2c3d4"
+  - "e2f6fbf5c2b6f7f0b2f2b41d7df5f8b38d28fb34"
+  - "8b7c6d5e4f3029182736455463728190a1b2c3d4"
   myth_classification:
     myth_type: "Ghost Story"
     primary_themes:
-      - "Night luring"
-      - "Enchantment/ban"
-      - "Disorientation and lost time"
+    - "Night luring"
+    - "Enchantment/ban"
+    - "Disorientation and lost time"
     secondary_themes:
-      - "Alcohol and vulnerability"
-      - "Liminal roadsides (ditch, river, forest edge)"
-      - "Community recognition of the phenomenon"
+    - "Alcohol and vulnerability"
+    - "Liminal roadsides (ditch, river, forest edge)"
+    - "Community recognition of the phenomenon"
     narrative_function: "Warning tale about night travel and seductive/false cries for help; explains errant wandering and exhaustion."
     belief_context: "Local spirit-lore framed in everyday village life; no overt doctrinal claim, but assumes real bewitchment."
   atu_inference:
@@ -130,10 +130,10 @@ b94b31288d269cdbc55a79dfbeef72fce89895d0:
     notes: "Legend/haunting vignette; ATU classification not clearly applicable."
   thompson_motif_inference:
     motif_candidates:
-      - motif_label: "Supernatural being lures traveler by voice"
-        confidence: 0.75
-      - motif_label: "Bewitchment causes wandering until dawn"
-        confidence: 0.70
+    - motif_label: "Supernatural being lures traveler by voice"
+      confidence: 0.75
+    - motif_label: "Bewitchment causes wandering until dawn"
+      confidence: 0.70
     notes: "Codes omitted; labels reflect motifs supported by direct textual cues."
   notes_on_translation: "Maintained local lexicon (Wyden, Znüni, Kilbi) with conservative English approximations; kept the narrative's breathless pursuit structure and paragraphing."
   extracted_metadata:
@@ -173,19 +173,19 @@ b94b31288d269cdbc55a79dfbeef72fce89895d0:
       confidence_level: "High"
       confidence_rationale: "Faithful and fluent; the only uncertainty is the exact intended rendering of the book-title."
   location_ids:
-    - "0d2c1dcd4f3fd564dce7a7a1a7b02b2ff6d3eaa5"
+  - "0d2c1dcd4f3fd564dce7a7a1a7b02b2ff6d3eaa5"
   entity_ids:
-    - "b0d3a7d1a9f2e4c6b8d0a1c3e5f60718293a4b5c"
-    - "c6b5a4b3c2d1e0f9a8b7c6d5e4f3029182736455"
+  - "b0d3a7d1a9f2e4c6b8d0a1c3e5f60718293a4b5c"
+  - "c6b5a4b3c2d1e0f9a8b7c6d5e4f3029182736455"
   myth_classification:
     myth_type: "Legend"
     primary_themes:
-      - "Magic book"
-      - "Speech-act power (reading aloud)"
-      - "Fear of uncanny gifts"
+    - "Magic book"
+    - "Speech-act power (reading aloud)"
+    - "Fear of uncanny gifts"
     secondary_themes:
-      - "Monastic cellar"
-      - "Everyday domestic setting"
+    - "Monastic cellar"
+    - "Everyday domestic setting"
     narrative_function: "Explanatory anecdote about a magic book; also mild moral about fear and missed benefit."
     belief_context: "Christian folk milieu (Capuchin, 'clerical') with tolerated marvel."
   atu_inference:
@@ -193,8 +193,8 @@ b94b31288d269cdbc55a79dfbeef72fce89895d0:
     notes: "Short legend/anecdote; ATU typology not clearly applicable."
   thompson_motif_inference:
     motif_candidates:
-      - motif_label: "Magic book produces goods when read"
-        confidence: 0.74
+    - motif_label: "Magic book produces goods when read"
+      confidence: 0.74
     notes: "Motif code omitted; label reflects the described magical mechanism."
   notes_on_translation: "Preserved informant line; rendered 'Geistlicher Schild' as a title; avoided interpretive claims about real monastic involvement."
   extracted_metadata:
@@ -242,23 +242,23 @@ b94b31288d269cdbc55a79dfbeef72fce89895d0:
       confidence_level: "Medium"
       confidence_rationale: "Readable smoothing is faithful, but several dialect constructions remain only approximate in English."
   location_ids:
-    - "4de1d22d8f2a7d95bd7d1bf1fd1932f2e4a70fb6"
-    - "5f2b31364a1e7b2c5c0a6e6b4b2f1d9c2f6e1a3b"
+  - "4de1d22d8f2a7d95bd7d1bf1fd1932f2e4a70fb6"
+  - "5f2b31364a1e7b2c5c0a6e6b4b2f1d9c2f6e1a3b"
   entity_ids:
-    - "e9a5c3d2b1f0a9876543210fedcba9876543210f"
-    - "1f2e3d4c5b6a79808192a3b4c5d6e7f8091a2b3c"
-    - "2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e"
+  - "e9a5c3d2b1f0a9876543210fedcba9876543210f"
+  - "1f2e3d4c5b6a79808192a3b4c5d6e7f8091a2b3c"
+  - "2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e"
   myth_classification:
     myth_type: "Moral Warning"
     primary_themes:
-      - "Magic book"
-      - "Invisibility"
-      - "Temptation and petty taking"
-      - "Prevention of moral slide"
+    - "Magic book"
+    - "Invisibility"
+    - "Temptation and petty taking"
+    - "Prevention of moral slide"
     secondary_themes:
-      - "Christian household conscience"
-      - "Priest as authority"
-      - "Hunger and poverty"
+    - "Christian household conscience"
+    - "Priest as authority"
+    - "Hunger and poverty"
     narrative_function: "Moral enforcement: small wrongdoing can lead to greater; book is removed to avert worse."
     belief_context: "Explicit Christian framing ('christliche Frau') and schoolbook proverb; folk-magic treated as perilous."
   atu_inference:
@@ -266,10 +266,10 @@ b94b31288d269cdbc55a79dfbeef72fce89895d0:
     notes: "Legend/moral anecdote; ATU tale-type not confidently applicable."
   thompson_motif_inference:
     motif_candidates:
-      - motif_label: "Magic book grants invisibility"
-        confidence: 0.70
-      - motif_label: "Cleric destroys magical object"
-        confidence: 0.66
+    - motif_label: "Magic book grants invisibility"
+      confidence: 0.70
+    - motif_label: "Cleric destroys magical object"
+      confidence: 0.66
     notes: "No reliable Thompson codes supplied; motif labels are conservative."
   notes_on_translation: "Dialect speech kept close; proverb translated literally; avoided interpreting exact geography of 'Ruossdiele'."
   extracted_metadata:
@@ -313,20 +313,20 @@ fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f:
       confidence_level: "High"
       confidence_rationale: "Meaning is stable; place-name disambiguation remains conservative and no coordinates are inferred."
   location_ids:
-    - "6a3d5f2c0b7e9d1a3c5e7f8091a2b3c4d5e6f708"
-    - "ad7c50f76f1d5d9d24d3b9b11365bb57e9c7b3f0"
+  - "6a3d5f2c0b7e9d1a3c5e7f8091a2b3c4d5e6f708"
+  - "ad7c50f76f1d5d9d24d3b9b11365bb57e9c7b3f0"
   entity_ids:
-    - "b0d3a7d1a9f2e4c6b8d0a1c3e5f60718293a4b5c"
-    - "4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f"
+  - "b0d3a7d1a9f2e4c6b8d0a1c3e5f60718293a4b5c"
+  - "4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f"
   myth_classification:
     myth_type: "Religious Legend"
     primary_themes:
-      - "Confession and absolution"
-      - "Magic book as contested aid"
-      - "Deliverance from robbers"
+    - "Confession and absolution"
+    - "Magic book as contested aid"
+    - "Deliverance from robbers"
     secondary_themes:
-      - "Storm as crisis"
-      - "Moral question to clergy"
+    - "Storm as crisis"
+    - "Moral question to clergy"
     narrative_function: "Tests clerical judgment; demonstrates practical saving power of the forbidden book."
     belief_context: "Christian sacramental framework (confession/absolution) interwoven with tolerated magical practice."
   atu_inference:
@@ -334,10 +334,10 @@ fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f:
     notes: "Legend-like anecdote; not clearly an ATU fairy-tale type."
   thompson_motif_inference:
     motif_candidates:
-      - motif_label: "Magic text used for protection against attackers"
-        confidence: 0.70
-      - motif_label: "Adversaries frozen/immobilized by spell"
-        confidence: 0.68
+    - motif_label: "Magic text used for protection against attackers"
+      confidence: 0.70
+    - motif_label: "Adversaries frozen/immobilized by spell"
+      confidence: 0.68
     notes: "Labels only; motif codes not supplied to avoid fabrication."
   notes_on_translation: "Retained rhetorical closing question; translated 'Gädemli' as small hut/shed; kept 'Geistlicher Schild' as fixed title."
   extracted_metadata:
