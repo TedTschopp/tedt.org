@@ -1,0 +1,103 @@
+{%- comment -%}
+  Folklore Translation Tabs
+  Renders Bootstrap tabs for switching between Literal and Readable translations.
+  
+  Usage: {% include folklore/translation-tabs.html story=story story_id=id %}
+  
+  Expects story.translations with literal and readable objects containing:
+  - text (the translation)
+  - confidence_score, confidence_level, confidence_rationale
+{%- endcomment -%}
+
+{%- assign tab_id = include.story_id | slugify -%}
+
+<div class="folklore-translations mb-4">
+  <ul class="nav nav-tabs" id="translation-tabs-{{ tab_id }}" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" 
+              id="readable-tab-{{ tab_id }}" 
+              data-bs-toggle="tab" 
+              data-bs-target="#readable-{{ tab_id }}" 
+              type="button" 
+              role="tab" 
+              aria-controls="readable-{{ tab_id }}" 
+              aria-selected="true">
+        📖 Readable Translation
+        {% if include.story.translations.readable.confidence_level %}
+          <span class="badge 
+            {%- case include.story.translations.readable.confidence_level -%}
+              {%- when 'High' -%} bg-success
+              {%- when 'Medium' -%} bg-warning text-dark
+              {%- when 'Low' -%} bg-danger
+            {%- endcase -%}
+            ms-1">{{ include.story.translations.readable.confidence_level }}</span>
+        {% endif %}
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" 
+              id="literal-tab-{{ tab_id }}" 
+              data-bs-toggle="tab" 
+              data-bs-target="#literal-{{ tab_id }}" 
+              type="button" 
+              role="tab" 
+              aria-controls="literal-{{ tab_id }}" 
+              aria-selected="false">
+        📜 Literal Translation
+        {% if include.story.translations.literal.confidence_level %}
+          <span class="badge 
+            {%- case include.story.translations.literal.confidence_level -%}
+              {%- when 'High' -%} bg-success
+              {%- when 'Medium' -%} bg-warning text-dark
+              {%- when 'Low' -%} bg-danger
+            {%- endcase -%}
+            ms-1">{{ include.story.translations.literal.confidence_level }}</span>
+        {% endif %}
+      </button>
+    </li>
+  </ul>
+  
+  <div class="tab-content border border-top-0 rounded-bottom p-4" id="translation-content-{{ tab_id }}">
+    {%- comment -%} Readable Translation Tab {%- endcomment -%}
+    <div class="tab-pane fade show active" 
+         id="readable-{{ tab_id }}" 
+         role="tabpanel" 
+         aria-labelledby="readable-tab-{{ tab_id }}">
+      <div class="folklore-story-text">
+        {{ include.story.translations.readable.text | newline_to_br }}
+      </div>
+      
+      {% if include.story.translations.readable.confidence_rationale %}
+      <details class="mt-3">
+        <summary class="small text-body-secondary">
+          Translation confidence: {{ include.story.translations.readable.confidence_score | times: 100 | round }}%
+        </summary>
+        <p class="small text-body-secondary mt-2 mb-0">
+          {{ include.story.translations.readable.confidence_rationale }}
+        </p>
+      </details>
+      {% endif %}
+    </div>
+    
+    {%- comment -%} Literal Translation Tab {%- endcomment -%}
+    <div class="tab-pane fade" 
+         id="literal-{{ tab_id }}" 
+         role="tabpanel" 
+         aria-labelledby="literal-tab-{{ tab_id }}">
+      <div class="folklore-story-text font-monospace" style="font-size: 0.95em;">
+        {{ include.story.translations.literal.text | newline_to_br }}
+      </div>
+      
+      {% if include.story.translations.literal.confidence_rationale %}
+      <details class="mt-3">
+        <summary class="small text-body-secondary">
+          Translation confidence: {{ include.story.translations.literal.confidence_score | times: 100 | round }}%
+        </summary>
+        <p class="small text-body-secondary mt-2 mb-0">
+          {{ include.story.translations.literal.confidence_rationale }}
+        </p>
+      </details>
+      {% endif %}
+    </div>
+  </div>
+</div>

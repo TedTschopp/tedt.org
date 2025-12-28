@@ -1,0 +1,38 @@
+{%- comment -%}
+  Folklore Location Badge
+  Renders a clickable location badge/tag linked to the location index page.
+  
+  Usage: {% include folklore/location-badge.html location_id=id %}
+  
+  Looks up the location in site.data.folklore.locations by ID.
+{%- endcomment -%}
+
+{%- assign loc = site.data.folklore.locations[include.location_id] -%}
+{%- if loc -%}
+  <a href="{{ site.url }}/folklore/locations/#{{ include.location_id }}" 
+     class="badge text-decoration-none me-1 mb-1 folklore-location-badge"
+     title="{{ loc.notes | default: loc.modern_english_name }}">
+    {%- case loc.location_type -%}
+      {%- when 'Mountain' -%}🏔️
+      {%- when 'Valley' -%}🏞️
+      {%- when 'River' -%}🌊
+      {%- when 'Village' -%}🏘️
+      {%- when 'Town/Village' -%}🏘️
+      {%- when 'Forest' -%}🌲
+      {%- when 'Glacier' -%}🧊
+      {%- when 'Pass/Ridge' -%}⛰️
+      {%- when 'Settlement' -%}🏠
+      {%- when 'Mountain slope' -%}⛰️
+      {%- when 'Local area/woods' -%}🌳
+      {%- when 'Named place (meadow/spot)' -%}📍
+      {%- when 'Farm outbuilding' -%}🏚️
+      {%- else -%}📍
+    {%- endcase -%}
+    {{ loc.modern_english_name }}
+    {%- if loc.location_type -%}
+      <span class="visually-hidden">({{ loc.location_type }})</span>
+    {%- endif -%}
+  </a>
+{%- else -%}
+  <span class="badge bg-secondary me-1 mb-1">📍 Unknown Location</span>
+{%- endif -%}

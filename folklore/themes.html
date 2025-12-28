@@ -1,0 +1,185 @@
+---
+layout: default
+title: "Folklore Themes"
+subtitle: "Thematic Index of Swiss Folk Tales"
+description: "Browse Swiss folklore by primary and secondary themes—from Wild Hunts to magic books, from cursed spirits to protective rituals."
+permalink: /folklore/themes/
+---
+
+{% include utility/calculate-variables.html %}
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-12">
+      <div class="card">
+        <div class="card-header">
+          <h1 class="h3 mb-0">🏷️ Folklore Themes</h1>
+        </div>
+        <div class="card-body">
+          <p class="lead">
+            Explore Swiss folklore by thematic content. Each theme links to all stories that feature it.
+          </p>
+
+          {%- comment -%} Collect all unique themes {%- endcomment -%}
+          {% assign all_primary_themes = "" | split: "" %}
+          {% assign all_secondary_themes = "" | split: "" %}
+          {% assign all_myth_types = "" | split: "" %}
+          
+          {% for story_pair in site.data.folklore.stories %}
+            {% assign story = story_pair[1] %}
+            
+            {% if story.myth_classification.myth_type %}
+              {% unless all_myth_types contains story.myth_classification.myth_type %}
+                {% assign all_myth_types = all_myth_types | push: story.myth_classification.myth_type %}
+              {% endunless %}
+            {% endif %}
+            
+            {% for theme in story.myth_classification.primary_themes %}
+              {% unless all_primary_themes contains theme %}
+                {% assign all_primary_themes = all_primary_themes | push: theme %}
+              {% endunless %}
+            {% endfor %}
+            
+            {% for theme in story.myth_classification.secondary_themes %}
+              {% unless all_secondary_themes contains theme %}
+                {% assign all_secondary_themes = all_secondary_themes | push: theme %}
+              {% endunless %}
+            {% endfor %}
+          {% endfor %}
+
+          {% assign all_primary_themes = all_primary_themes | sort %}
+          {% assign all_secondary_themes = all_secondary_themes | sort %}
+          {% assign all_myth_types = all_myth_types | sort %}
+
+          {%- comment -%} Myth Types Section {%- endcomment -%}
+          <section class="mb-5">
+            <h2 class="h4 border-bottom pb-2">📚 Story Types</h2>
+            <div class="row">
+              {% for myth_type in all_myth_types %}
+              <div class="col-md-4 col-lg-3 mb-3">
+                <div class="card h-100" id="type-{{ myth_type | slugify }}">
+                  <div class="card-body">
+                    <h3 class="h6">{{ myth_type }}</h3>
+                    <ul class="list-unstyled small mb-0">
+                      {% for story_pair in site.data.folklore.stories %}
+                        {% assign story_id = story_pair[0] %}
+                        {% assign story = story_pair[1] %}
+                        {% if story.myth_classification.myth_type == myth_type %}
+                        <li>
+                          <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title | truncate: 30 }}</a>
+                        </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </section>
+
+          {%- comment -%} Primary Themes Section {%- endcomment -%}
+          <section class="mb-5">
+            <h2 class="h4 border-bottom pb-2">🎯 Primary Themes</h2>
+            <p class="text-body-secondary">The main narrative and symbolic focus of each story.</p>
+            <div class="row">
+              {% for theme in all_primary_themes %}
+              <div class="col-md-4 col-lg-3 mb-3">
+                <div class="card h-100" id="primary-{{ theme | slugify }}">
+                  <div class="card-header">
+                    <h3 class="h6 mb-0">{{ theme }}</h3>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled small mb-0">
+                      {% for story_pair in site.data.folklore.stories %}
+                        {% assign story_id = story_pair[0] %}
+                        {% assign story = story_pair[1] %}
+                        {% if story.myth_classification.primary_themes contains theme %}
+                        <li>
+                          <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title | truncate: 30 }}</a>
+                        </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </section>
+
+          {%- comment -%} Secondary Themes Section {%- endcomment -%}
+          <section class="mb-5">
+            <h2 class="h4 border-bottom pb-2">🔖 Secondary Themes</h2>
+            <p class="text-body-secondary">Supporting motifs, character types, and narrative elements.</p>
+            <div class="d-flex flex-wrap gap-2">
+              {% for theme in all_secondary_themes %}
+                {% assign theme_count = 0 %}
+                {% for story_pair in site.data.folklore.stories %}
+                  {% if story_pair[1].myth_classification.secondary_themes contains theme %}
+                    {% assign theme_count = theme_count | plus: 1 %}
+                  {% endif %}
+                {% endfor %}
+                <a href="#secondary-{{ theme | slugify }}" 
+                   class="badge bg-info text-dark text-decoration-none"
+                   data-bs-toggle="collapse"
+                   role="button"
+                   aria-expanded="false">
+                  {{ theme }} ({{ theme_count }})
+                </a>
+              {% endfor %}
+            </div>
+            
+            <div class="mt-4">
+              {% for theme in all_secondary_themes %}
+              <div class="collapse mb-3" id="secondary-{{ theme | slugify }}">
+                <div class="card">
+                  <div class="card-header">
+                    <h3 class="h6 mb-0">{{ theme }}</h3>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-unstyled small mb-0 row">
+                      {% for story_pair in site.data.folklore.stories %}
+                        {% assign story_id = story_pair[0] %}
+                        {% assign story = story_pair[1] %}
+                        {% if story.myth_classification.secondary_themes contains theme %}
+                        <li class="col-md-6">
+                          <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title }}</a>
+                          <span class="text-body-secondary">— {{ story.author }}</span>
+                        </li>
+                        {% endif %}
+                      {% endfor %}
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </section>
+
+          {%- comment -%} Navigation {%- endcomment -%}
+          <nav class="mt-4 pt-4 border-top" aria-label="Folklore navigation">
+            <div class="row">
+              <div class="col-md-4 mb-2">
+                <a href="{{ site.url }}/folklore/" class="btn btn-outline-secondary w-100">
+                  📚 All Stories
+                </a>
+              </div>
+              <div class="col-md-4 mb-2">
+                <a href="{{ site.url }}/folklore/locations/" class="btn btn-outline-secondary w-100">
+                  📍 Browse Locations
+                </a>
+              </div>
+              <div class="col-md-4 mb-2">
+                <a href="{{ site.url }}/folklore/entities/" class="btn btn-outline-secondary w-100">
+                  👻 Browse Entities
+                </a>
+              </div>
+            </div>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

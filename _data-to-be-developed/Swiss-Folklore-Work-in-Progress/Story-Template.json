@@ -1,0 +1,41 @@
+{
+  "story_id": "",
+  "Title": "",
+  "Author": "",
+  "Category": "",
+  "SourceURL": "",
+  "Original_Language": "German / Swiss German",
+  "Translations": {
+    "Literal": {
+      "text": "",
+      "confidence_score": 0.0,
+      "confidence_level": "",
+      "confidence_rationale": "",
+      "uncertain_spans": []
+    },
+    "Readable": {
+      "text": "",
+      "confidence_score": 0.0,
+      "confidence_level": "",
+      "confidence_rationale": "",
+      "uncertain_spans": []
+    }
+  },
+  "Locations": [],
+  "Mythological_Entities": [],
+  "Myth_Classification": {},
+  "ATU_Inference": {
+    "atu_candidates": [],
+    "notes": ""
+  },
+  "Thompson_Motif_Inference": {
+    "motif_candidates": [],
+    "notes": ""
+  },
+  "Notes_on_Translation": "",
+  "Extracted_Metadata": {
+    "Informant": null,
+    "Collector": null,
+    "Bibliography": null
+  }
+}

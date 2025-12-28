@@ -1,0 +1,346 @@
+# Swiss Folklore Stories Index
+# Generated from Story-Output.json - keyed by story_id
+# Each story contains translations, locations, entities, and classification metadata
+
+b94b31288d269cdbc55a79dfbeef72fce89895d0:
+  title: "Das Wütisheer (H. Michel)"
+  author: "Hans Michel"
+  category: "Sage"
+  source_url: "https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/6705/das-wuetisheer-h-michel"
+  original_language: "German / Swiss German"
+  translations:
+    literal:
+      text: |
+        From the Rotental one often hears, over beyond the Scheidegg, the roaring of the wroth host, or the Wütisheer. Most fiercely it drives its haunting about the holy Christmas-tide. Mighty giants, prime-dwellers of the land, called West Frisians, lead the night-faring train; then come dwarfs of loathly shape, riding upon all manner of vermin-beasts, and the spirits of all those laden with curse, whose sojourn is the Rotental and the Rottal glacier.
+
+        But when the howling storm makes known the drawing-near of this wild hunt, then up on the Scheidegg, there where the way leads toward Gassen and the Faulhorn, the gates of the milk-house must stand opened to this ghost-haunting. Woe to the house if this does not happen!
+      confidence_score: 0.88
+      confidence_level: "High"
+      confidence_rationale: "Standard German narrative with clear syntax; a few regional toponyms and culture-terms are interpreted conservatively."
+    readable:
+      text: |
+        People often hear, from the Rotental and across the Scheidegg, the roar of the raging host, the Wütisheer. It is worst around the holy Christmas season, when it carries on its haunting most fiercely. Mighty giants—said to be the land's first inhabitants and called West Frisians—lead the nocturnal procession. After them come dwarfs of dreadful shape, riding on every sort of beast, and the spirits of all those burdened with a curse, whose haunt is the Rotental and the Rottal Glacier.
+
+        When the howling storm announces the approach of this wild hunt, the gates of the milk-house up on the Scheidegg—where the road goes toward Gassen and the Faulhorn—must be opened to the ghostly troop. Woe to the house if this is not done!
+      confidence_score: 0.86
+      confidence_level: "High"
+      confidence_rationale: "Meaning is straightforward; slight uncertainty remains about ethnonym usage and exact farm-building sense."
+  location_ids:
+    - "ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7"
+    - "a9b1f1f4cf8a3e3a0c1f2f5c17f3ed8a6e5b46ae"
+    - "5a86fd5f45e4c16cf39e2a1f8c3d6c65f11e3af1"
+    - "ca9d3c7dc7e1d8e4f6c7f58a7e09d1d178c2f8a4"
+    - "2e8e0dcbf0f8f4fba7f0a0a2f7d0a6d1e3c9c0a5"
+  entity_ids:
+    - "d8a62a0e6f2c1c2eb7f273d8d9c7f9b2e5a7b8f6"
+    - "2c6d2b9e0a7d4d9f88b6f1b1a0c3a5f2d9a4c6e1"
+    - "d6f4a1b7d9f3c2a8b4e6c1d0f7a8c9e2b3d4a5f6"
+    - "c9a9b8a7d6c5b4a3f2e1d0c9b8a7d6c5b4a3f2e1"
+    - "1b2c3d4e5f60718293a4b5c6d7e8f90123456789"
+  myth_classification:
+    myth_type: "Legend"
+    primary_themes:
+      - "Wild Hunt"
+      - "Seasonal haunting (Christmas)"
+      - "Household peril and protection"
+    secondary_themes:
+      - "Giants"
+      - "Dwarfs"
+      - "Cursed dead/spirits"
+      - "Storm as omen"
+    narrative_function: "Warning tale and practice-enforcement (open the gates) tied to a feared nocturnal procession."
+    belief_context: "Alpine legend with Christian calendar framing (Christmas-tide) and protective custom."
+  atu_inference:
+    atu_candidates: []
+    notes: "Local legend/Wild Hunt complex; ATU tale-types typically do not fit well."
+  thompson_motif_inference:
+    motif_candidates:
+      - motif_label: "Wild Hunt / spectral host in storm"
+        confidence: 0.78
+      - motif_label: "Protective/appeasing act to avert harm (opening doors/gates)"
+        confidence: 0.72
+    notes: "Motif labels given without codes because exact Thompson codes are not recalled with full reliability."
+  notes_on_translation: "Kept 'Wütisheer' as a named phenomenon; rendered farm-terms literally; treated ethnonym 'Westfriesen' as reported legendary designation."
+  extracted_metadata:
+    informant: null
+    collector: null
+    bibliography: "Hans Michel, Ein Kratten voll Lauterbrunner Sagen. Wengen 1936. Eingelesen von der Mutabor Märchenstiftung auf www.maerchen.ch."
+
+2980bfdf495e5b36f6b87ae59d36a9c8440e56c5:
+  title: "Das Wydenweiblein"
+  author: "K. Freuler / H. Thürer"
+  category: "Sage"
+  source_url: "https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/9410/das-wydenweiblein"
+  original_language: "German / Swiss German"
+  translations:
+    literal:
+      text: |
+        When a man of Nidfurnen has his clock stand still, he simply looks after the Schwanden time and does not even need to set on the nose-mirror, so near is the neighboring place with the high factory chimneys. A cat's jump it is till there—by day; but at night-time the road can stretch into hours, especially when one is alone.
+
+        If now a late homecomer comes, who in Schwanden among merry friends has taken a merry draught and is now with himself and the rest of the world wholly content, toward the Wyden: his feet find the wonted way of themselves, his thoughts go another. Then he suddenly starts up out of the sleep-walking. Has not someone called? Quite near it must have been, there beyond the road-ditch, by the hazel-bush. Now he hears it again: it is a woman's voice, softly wailing for help. And our wanderer, who in his lifted mood cannot pass by any sorrow, slips through the lath-fence into the meadow and hastes toward the brushwood that squats dark at the meadow's edge.
+
+        "Who is there?" All stays still. Already he would go back to the highway, then he hears the call anew. This time, though, it is a sweet luring: "Come, come!", coaxing and softly compelling like the first fiddle-strokes of a Kilbi waltz. And it will also seem to him that now the tone comes from the Linth. And he must follow it, whether he will or not. Over it goes to the river, where the melt-waters strike the weirs and the tender sounds sink away in the rushing of the waves.
+
+        Hardly climbs the man back over the bank-boulders, and as he stands up on the slope and listens and his eyes, through the dark, search for the road, there presses the calling from the Glärnisch-hang, from the Blumerwald down—fine and yet so mighty that the poor night-goer, will-less and blind, storms up over walls and fences, ditches and hummocks. He runs, he stumbles—breathless he reaches the forest-edge. There—a cracking in the twigs, a fluttering-up as of a bird—and the lovely lament sits again down in the Wyden.
+
+        So lasts the restless hunt until the Vrinelisgärtli shows up in pale early light and the sun reddens the Tödi. Then at last the fooled one stands at the Nidfurnen Stutz, just when the farmers clap shut their sheds and the factory workers step out of the doors with their little mid-morning kettles. The young girls giggle and may also point at the weary, wavering shape at the roadside. But the old folk, who for near half a century go the same way to the day's work, cast a pitying and understanding look upon the unlucky one, for they well know that the Wydenweiblein had him in its ban.
+      confidence_score: 0.80
+      confidence_level: "Medium"
+      confidence_rationale: "Mostly standard German with local terms and place-names; several regional nouns require conservative mapping."
+    readable:
+      text: |
+        When a man from Nidfurnen finds his clock has stopped, he simply checks the time in Schwanden—so near is the neighboring place with its tall factory chimneys that he does not even need to put on his spectacles. In daylight it is only a cat's leap away; but at night the road can stretch into hours, especially when one is alone.
+
+        A late homecomer, who has had a cheerful drink with cheerful friends in Schwanden and is now wholly pleased with himself and the world, heads toward the Wyden. His feet follow the familiar way on their own, while his thoughts wander elsewhere. Then he suddenly jolts out of his sleepwalking: did someone call? It must have been very near, just beyond the roadside ditch by the hazel bush. He hears it again—a woman's voice softly lamenting for help. And the wanderer, in his uplifted mood unable to pass any suffering by, slips through the fence into the meadow and hurries toward the dark brush at the meadow's edge.
+
+        "Who is there?" Silence. He is about to return to the road when the call comes again, but now it is sweet and beckoning: "Come, come!"—coaxing and gently forcing, like the first violin strokes of a Kilbi waltz. It seems to him that the sound now comes from the Linth, and he must follow, whether he wishes it or not. He goes over to the river, where meltwater beats against the riverworks and the faint sounds vanish in the roar of the waves.
+
+        With effort he climbs back over the river stones. As he stands on the bank and listens, searching through the darkness for the road, the calling presses down from the slope of the Glärnisch, from the Blumerwald—delicate and yet so powerful that the poor night-walker, without will and without sight, rushes uphill over walls and fences, ditches and knolls. He runs, he stumbles, and reaches the forest edge breathless. Then—a crack in the branches, a flutter like a bird—and the lovely lament is again down in the Wyden.
+
+        So the restless chase goes on until the Vrinelisgärtli appears in pale dawn light and the sun reddens the Tödi. Then the deluded man finally stands on the Nidfurnen Stutz, just as the farmers shut their sheds and the factory workers step out with their mid-morning snack tins. The young girls giggle and point at the tired, swaying figure at the roadside; but the old people, who have walked the same way to work for nearly half a century, look on the unlucky man with pity and understanding, for they know well that the Wydenweiblein had him under its spell.
+      confidence_score: 0.78
+      confidence_level: "Medium"
+      confidence_rationale: "Rendering is faithful but a few Swiss-German terms remain approximate; place-name referents are not fully disambiguated."
+  location_ids:
+    - "edb8f0a4c6f7d1b2c3a4e5f60718293a4b5c6d7e"
+    - "d0b9a8c7f6e5d4c3b2a1908273645544332211ff"
+    - "d6d4b3a2c1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6"
+    - "a3f2e1d0c9b8a7d6c5b4a3f2e1d0c9b8a7d6c5b4"
+    - "b2c3d4e5f60718293a4b5c6d7e8f901234567890"
+    - "c3d4e5f60718293a4b5c6d7e8f90123456789012"
+    - "d4e5f60718293a4b5c6d7e8f9012345678901234"
+    - "e5f60718293a4b5c6d7e8f901234567890123456"
+  entity_ids:
+    - "e2f6fbf5c2b6f7f0b2f2b41d7df5f8b38d28fb34"
+    - "8b7c6d5e4f3029182736455463728190a1b2c3d4"
+  myth_classification:
+    myth_type: "Ghost Story"
+    primary_themes:
+      - "Night luring"
+      - "Enchantment/ban"
+      - "Disorientation and lost time"
+    secondary_themes:
+      - "Alcohol and vulnerability"
+      - "Liminal roadsides (ditch, river, forest edge)"
+      - "Community recognition of the phenomenon"
+    narrative_function: "Warning tale about night travel and seductive/false cries for help; explains errant wandering and exhaustion."
+    belief_context: "Local spirit-lore framed in everyday village life; no overt doctrinal claim, but assumes real bewitchment."
+  atu_inference:
+    atu_candidates: []
+    notes: "Legend/haunting vignette; ATU classification not clearly applicable."
+  thompson_motif_inference:
+    motif_candidates:
+      - motif_label: "Supernatural being lures traveler by voice"
+        confidence: 0.75
+      - motif_label: "Bewitchment causes wandering until dawn"
+        confidence: 0.70
+    notes: "Codes omitted; labels reflect motifs supported by direct textual cues."
+  notes_on_translation: "Maintained local lexicon (Wyden, Znüni, Kilbi) with conservative English approximations; kept the narrative's breathless pursuit structure and paragraphing."
+  extracted_metadata:
+    informant: null
+    collector: null
+    bibliography: "K. Freuler, H. Thürer, Glarner Sagen, Glarus 1953. Eingelesen von der Mutabor Märchenstiftung, www.maerchen.ch"
+
+434e1c6212cefb2c179cebaefb73d062fb021de8:
+  title: "Das Zauberbuch"
+  author: "Josef Müller"
+  category: "Sage"
+  source_url: "https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/3763/das-zauberbuch"
+  original_language: "German / Swiss German"
+  translations:
+    literal:
+      text: |
+        A goat-boy once found a book; it was the Clerical Shield, and he stuck it into a trouser pocket. In the evening, as he would go to bed, the book came into his mind, and he began to read in it. When he had read for a while, and in doing so had spoken out all the words plainly—as is the wont with folk not trained in reading—there suddenly stood a fair, great straw-bottle full of wine before him on the table.
+
+        He gaped at it for some moments without understanding, and then fear came over him, and he let book and wine be where they were, and made himself swift into the bed under the feather-cover.
+
+        Soon after, he told his odd happening to a Capuchin, and he said to him: "If only you had drunk the wine; it was good; it came out of our cellar."
+
+        Heinrich Baumann, 72 years old, Attinghausen
+      confidence_score: 0.90
+      confidence_level: "High"
+      confidence_rationale: "Clear standard German; key term 'Geistlicher Schild' treated as fixed title; minimal ambiguity."
+    readable:
+      text: |
+        A goatherd boy once found a book—the "Clerical Shield"—and put it in his trouser pocket. In the evening, as he was about to go to bed, he remembered the book and began to read in it. After he had read for a while, pronouncing every word clearly, as people unpracticed in reading commonly do, a handsome large straw-wrapped bottle full of wine suddenly stood on the table before him.
+
+        He stared at it for a few moments in bafflement, and then fear came upon him. He left the book and the wine where they were and quickly got into bed under the feather quilt.
+
+        Not long afterward he told this strange experience to a Capuchin, who said to him: "You should have drunk the wine—it was good; it came from our cellar."
+
+        Heinrich Baumann, 72 years old, Attinghausen
+      confidence_score: 0.89
+      confidence_level: "High"
+      confidence_rationale: "Faithful and fluent; the only uncertainty is the exact intended rendering of the book-title."
+  location_ids:
+    - "0d2c1dcd4f3fd564dce7a7a1a7b02b2ff6d3eaa5"
+  entity_ids:
+    - "b0d3a7d1a9f2e4c6b8d0a1c3e5f60718293a4b5c"
+    - "c6b5a4b3c2d1e0f9a8b7c6d5e4f3029182736455"
+  myth_classification:
+    myth_type: "Legend"
+    primary_themes:
+      - "Magic book"
+      - "Speech-act power (reading aloud)"
+      - "Fear of uncanny gifts"
+    secondary_themes:
+      - "Monastic cellar"
+      - "Everyday domestic setting"
+    narrative_function: "Explanatory anecdote about a magic book; also mild moral about fear and missed benefit."
+    belief_context: "Christian folk milieu (Capuchin, 'clerical') with tolerated marvel."
+  atu_inference:
+    atu_candidates: []
+    notes: "Short legend/anecdote; ATU typology not clearly applicable."
+  thompson_motif_inference:
+    motif_candidates:
+      - motif_label: "Magic book produces goods when read"
+        confidence: 0.74
+    notes: "Motif code omitted; label reflects the described magical mechanism."
+  notes_on_translation: "Preserved informant line; rendered 'Geistlicher Schild' as a title; avoided interpretive claims about real monastic involvement."
+  extracted_metadata:
+    informant: "Heinrich Baumann, 72 J. alt, Attinghausen"
+    collector: null
+    bibliography: "Müller, Josef: Sagen aus Uri 1-3. Bd. 1-2 ed. Hanns Bächtold-Stäubli; Bd. 3 ed. Robert Wildhaber. Basel: G. Krebs, 1926, 1929, 1945. Eingelesen von der Mutabor Märchenstiftung auf www.maerchen.ch."
+
+6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a:
+  title: "Das Zauberbuch der drei armen Büblein"
+  author: "Josef Müller"
+  category: "Sage"
+  source_url: "https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/3775/das-zauberbuch-der-drei-armen-bueblein"
+  original_language: "German / Swiss German"
+  translations:
+    literal:
+      text: |
+        "Up on the mountain"—Seelisberg—there lived three poor brothers, young, hungry little lads. One day they caught, on the Ruoss-diele, or heaven knows where, an old magic book. With its help they made themselves unseen and conjured themselves into the cattle-stall of the parish priest, where in all modesty they let the foam off the freshly milked milk taste good to them: "And there they foamed."
+
+        At that time on Seelisberg there served the priest Peter Anton Furrer († 1883), and he owned a landed holding and a notable stock of cattle. While the three rascals, however, made themselves merry with the milk-foam, they were also at home, but likewise unseen, and chatted or read half-aloud in their precious book.
+
+        One evening the mother asked: "Where are you all, that one hears me prattling and yet can see you nowhere?" "In the parson's shed are we, and are here foaming," confessed the lads. "Yes, how do you do that! one hears you here in the room?" the mother asks further and gets for answer: "We are reading in a book." "Then lay it away!" she commands. Then they laid it on the table and came forth to be seen again.
+
+        The Christian woman took up the uncanny book and brought it to the priest, who burned it. Yet the boys still often said, when hunger plagued them: "If only we had not given that book—then we could still go foaming more, and fend off hunger!"
+
+        To the teller I said: "If I had been mother, I would have let them keep the book, for a little bit of foam—this would now not have been theft; the priest would surely have allowed it." But he meant: "The mother would have thought: it could yet lead to worse. In our school-book it said: 'With small one begins; with great one one ends.'"
+
+        Jos. Maria Aschwanden, 60 years old
+      confidence_score: 0.70
+      confidence_level: "Medium"
+      confidence_rationale: "Heavy Swiss German dialect passages; several idioms and clipped forms require best-guess mapping while preserving structure."
+    readable:
+      text: |
+        "Up on the mountain"—at Seelisberg—three poor brothers lived, hungry little boys. One day they came by an old magic book, on the Ruossdiele or goodness knows where. With it they made themselves invisible and whisked into the parish priest's cattle stall, where, in all modesty, they enjoyed the foam from freshly milked milk.
+
+        At that time the priest on Seelisberg was Peter Anton Furrer († 1883), who owned a small estate and a sizeable herd. Yet while the three scamps feasted on milk foam, they were also at home—still invisible—chatting or reading half aloud in their splendid book.
+
+        One evening the mother asked: "Where are you all? I can hear you prattling, and yet I can't see you anywhere." "We're in the parson's shed, skimming foam," the boys admitted. "But how can that be—when I can hear you here in the room?" she pressed, and they answered: "We're reading in a book." "Then put it away!" she ordered. They set it on the table and became visible again.
+
+        The Christian woman took the eerie book to the priest, who burned it. But the boys often said afterward, when hunger tormented them: "If only we hadn't given the book away—then we could have gone skimming more foam, and kept hunger off!"
+
+        I said to the narrator: "If I had been the mother, I would have let them keep the book for a little foam—surely that wasn't theft; the priest would have allowed it." But he replied: "The mother likely thought it could lead to worse. In our schoolbook it said: 'With small one begins; with great one ends.'"
+
+        Jos. Maria Aschwanden, 60 years old
+      confidence_score: 0.68
+      confidence_level: "Medium"
+      confidence_rationale: "Readable smoothing is faithful, but several dialect constructions remain only approximate in English."
+  location_ids:
+    - "4de1d22d8f2a7d95bd7d1bf1fd1932f2e4a70fb6"
+    - "5f2b31364a1e7b2c5c0a6e6b4b2f1d9c2f6e1a3b"
+  entity_ids:
+    - "e9a5c3d2b1f0a9876543210fedcba9876543210f"
+    - "1f2e3d4c5b6a79808192a3b4c5d6e7f8091a2b3c"
+    - "2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e"
+  myth_classification:
+    myth_type: "Moral Warning"
+    primary_themes:
+      - "Magic book"
+      - "Invisibility"
+      - "Temptation and petty taking"
+      - "Prevention of moral slide"
+    secondary_themes:
+      - "Christian household conscience"
+      - "Priest as authority"
+      - "Hunger and poverty"
+    narrative_function: "Moral enforcement: small wrongdoing can lead to greater; book is removed to avert worse."
+    belief_context: "Explicit Christian framing ('christliche Frau') and schoolbook proverb; folk-magic treated as perilous."
+  atu_inference:
+    atu_candidates: []
+    notes: "Legend/moral anecdote; ATU tale-type not confidently applicable."
+  thompson_motif_inference:
+    motif_candidates:
+      - motif_label: "Magic book grants invisibility"
+        confidence: 0.70
+      - motif_label: "Cleric destroys magical object"
+        confidence: 0.66
+    notes: "No reliable Thompson codes supplied; motif labels are conservative."
+  notes_on_translation: "Dialect speech kept close; proverb translated literally; avoided interpreting exact geography of 'Ruossdiele'."
+  extracted_metadata:
+    informant: "Jos. Maria Aschwanden, 60 J. alt"
+    collector: null
+    bibliography: "Müller, Josef: Sagen aus Uri 1-3. Bd. 1-2 ed. Hanns Bächtold-Stäubli; Bd. 3 ed. Robert Wildhaber. Basel: G. Krebs, 1926, 1929, 1945. Eingelesen von der Mutabor Märchenstiftung auf www.maerchen.ch."
+
+fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f:
+  title: "Das Zauberbuch hilft in der Not"
+  author: "Josef Müller"
+  category: "Sage"
+  source_url: "https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/3776/das-zauberbuch-hilft-in-der-not"
+  original_language: "German / Swiss German"
+  translations:
+    literal:
+      text: |
+        A man possessed the Clerical Shield. When he once confessed, the clergyman demanded the magic book from him; yet he did not give it out, he needed it only in need, and that could surely be no so great sin, he meant, and therefore had to go out of church without absolution.
+
+        Now it once befell that he, toward nightfall, had to march through the Wassnerwald, where, as is known, a feared robber-band had its lair. At some distance before him he saw a clergyman walking along; glad to find a comrade, he quickened his steps and caught him up. It was the confessor who had not wished to absolve him! yet by the same he was not recognized.
+
+        Because it became pitch-dark night and a grisly storm broke in, the two, not very knowing of the way, saw themselves compelled to flee into a little shed by the road, without guessing that it was a robber-hut. Suddenly the robbers came rushing up and would fall upon the intruders. The clergyman trembled in all his limbs like aspen-leaf. His worldly companion, however, drew lightning-fast the Clerical Shield out of his pocket and read in it. As by command the robbers now set themselves in two divisions and then stood stiff as bucks, without stirring a limb. As through an honor-guard the two wanderers could now, when morning dawned, depart unhurt.
+
+        Did the clerical gentleman not change his view about the use of the magic book?
+
+        Jos. Maria Tresch, 70 years old, Silenen
+      confidence_score: 0.86
+      confidence_level: "High"
+      confidence_rationale: "Clear narrative; key uncertainty is the exact local referent of 'Wassnerwald' and nuance of 'Gädemli'."
+    readable:
+      text: |
+        A man owned the "Clerical Shield." When he once went to confession, the priest demanded that he hand over the magic book; but he would not give it up. He claimed he needed it only in times of need, and that surely could not be such a great sin—so he had to leave the church without absolution.
+
+        It happened one day that, as dusk fell, he had to pass through the Wassnerwald, where a dreaded band of robbers was said to live. Ahead of him he saw a priest walking. Glad to find a companion, he hurried and caught up—only to discover it was the very confessor who had refused him absolution, though the priest did not recognize him.
+
+        Night grew pitch-black, and a terrible storm broke. The two, unfamiliar with the way, fled into a small roadside hut, not knowing it was a robbers' den. Suddenly the robbers burst in and meant to attack. The priest shook like an aspen leaf, but the layman swiftly pulled out the "Clerical Shield" and read from it. At once the robbers arranged themselves in two ranks and stood rigid, unable to move a limb. At dawn the two travelers walked out unharmed, as if through an honor guard.
+
+        Did the priest not change his opinion about using the magic book?
+
+        Jos. Maria Tresch, 70 years old, Silenen
+      confidence_score: 0.85
+      confidence_level: "High"
+      confidence_rationale: "Meaning is stable; place-name disambiguation remains conservative and no coordinates are inferred."
+  location_ids:
+    - "6a3d5f2c0b7e9d1a3c5e7f8091a2b3c4d5e6f708"
+    - "ad7c50f76f1d5d9d24d3b9b11365bb57e9c7b3f0"
+  entity_ids:
+    - "b0d3a7d1a9f2e4c6b8d0a1c3e5f60718293a4b5c"
+    - "4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f"
+  myth_classification:
+    myth_type: "Religious Legend"
+    primary_themes:
+      - "Confession and absolution"
+      - "Magic book as contested aid"
+      - "Deliverance from robbers"
+    secondary_themes:
+      - "Storm as crisis"
+      - "Moral question to clergy"
+    narrative_function: "Tests clerical judgment; demonstrates practical saving power of the forbidden book."
+    belief_context: "Christian sacramental framework (confession/absolution) interwoven with tolerated magical practice."
+  atu_inference:
+    atu_candidates: []
+    notes: "Legend-like anecdote; not clearly an ATU fairy-tale type."
+  thompson_motif_inference:
+    motif_candidates:
+      - motif_label: "Magic text used for protection against attackers"
+        confidence: 0.70
+      - motif_label: "Adversaries frozen/immobilized by spell"
+        confidence: 0.68
+    notes: "Labels only; motif codes not supplied to avoid fabrication."
+  notes_on_translation: "Retained rhetorical closing question; translated 'Gädemli' as small hut/shed; kept 'Geistlicher Schild' as fixed title."
+  extracted_metadata:
+    informant: "Jos. Maria Tresch, 70 J. alt, Silenen"
+    collector: null
+    bibliography: "Müller, Josef: Sagen aus Uri 1-3. Bd. 1-2 ed. Hanns Bächtold-Stäubli; Bd. 3 ed. Robert Wildhaber. Basel: G. Krebs, 1926, 1929, 1945. Eingelesen von der Mutabor Märchenstiftung auf www.maerchen.ch."

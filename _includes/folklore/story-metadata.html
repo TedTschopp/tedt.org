@@ -1,0 +1,152 @@
+{%- comment -%}
+  Folklore Story Metadata Block
+  Renders structured metadata (dl/dt/dd) for a folklore story.
+  
+  Usage: {% include folklore/story-metadata.html story=story %}
+  
+  Expects a story object with:
+  - title, author, category, source_url, original_language
+  - myth_classification (myth_type, primary_themes, secondary_themes, narrative_function, belief_context)
+  - atu_inference, thompson_motif_inference
+  - extracted_metadata (informant, collector, bibliography)
+  - notes_on_translation
+{%- endcomment -%}
+
+<div class="folklore-metadata card mb-4">
+  <div class="card-header">
+    <h3 class="h5 mb-0">📜 Story Details</h3>
+  </div>
+  <div class="card-body">
+    <dl class="row mb-0">
+      {% if include.story.author %}
+      <dt class="col-sm-4">Author/Source</dt>
+      <dd class="col-sm-8">{{ include.story.author }}</dd>
+      {% endif %}
+
+      {% if include.story.category %}
+      <dt class="col-sm-4">Category</dt>
+      <dd class="col-sm-8">{{ include.story.category }}</dd>
+      {% endif %}
+
+      {% if include.story.original_language %}
+      <dt class="col-sm-4">Original Language</dt>
+      <dd class="col-sm-8">{{ include.story.original_language }}</dd>
+      {% endif %}
+
+      {% if include.story.myth_classification.myth_type %}
+      <dt class="col-sm-4">Myth Type</dt>
+      <dd class="col-sm-8">
+        <span class="badge bg-secondary">{{ include.story.myth_classification.myth_type }}</span>
+      </dd>
+      {% endif %}
+
+      {% if include.story.myth_classification.primary_themes and include.story.myth_classification.primary_themes.size > 0 %}
+      <dt class="col-sm-4">Primary Themes</dt>
+      <dd class="col-sm-8">
+        {% for theme in include.story.myth_classification.primary_themes %}
+          <span class="badge bg-primary me-1">{{ theme }}</span>
+        {% endfor %}
+      </dd>
+      {% endif %}
+
+      {% if include.story.myth_classification.secondary_themes and include.story.myth_classification.secondary_themes.size > 0 %}
+      <dt class="col-sm-4">Secondary Themes</dt>
+      <dd class="col-sm-8">
+        {% for theme in include.story.myth_classification.secondary_themes %}
+          <span class="badge bg-info text-dark me-1">{{ theme }}</span>
+        {% endfor %}
+      </dd>
+      {% endif %}
+
+      {% if include.story.myth_classification.narrative_function %}
+      <dt class="col-sm-4">Narrative Function</dt>
+      <dd class="col-sm-8">{{ include.story.myth_classification.narrative_function }}</dd>
+      {% endif %}
+
+      {% if include.story.myth_classification.belief_context %}
+      <dt class="col-sm-4">Belief Context</dt>
+      <dd class="col-sm-8">{{ include.story.myth_classification.belief_context }}</dd>
+      {% endif %}
+
+      {% if include.story.source_url %}
+      <dt class="col-sm-4">Original Source</dt>
+      <dd class="col-sm-8">
+        <a href="{{ include.story.source_url }}" target="_blank" rel="noopener noreferrer">
+          View on Märchenstiftung <i class="bi bi-box-arrow-up-right"></i>
+        </a>
+      </dd>
+      {% endif %}
+    </dl>
+  </div>
+</div>
+
+{%- comment -%} ATU & Thompson Motif Section {%- endcomment -%}
+{% if include.story.thompson_motif_inference.motif_candidates.size > 0 or include.story.atu_inference.notes != '' %}
+<div class="folklore-classification card mb-4">
+  <div class="card-header">
+    <h3 class="h5 mb-0">🔍 Folklore Classification</h3>
+  </div>
+  <div class="card-body">
+    {% if include.story.thompson_motif_inference.motif_candidates.size > 0 %}
+    <h4 class="h6">Thompson Motif Index</h4>
+    <ul class="list-unstyled">
+      {% for motif in include.story.thompson_motif_inference.motif_candidates %}
+      <li class="mb-2">
+        <span class="fw-bold">{{ motif.motif_label }}</span>
+        {% if motif.confidence %}
+          <span class="badge bg-secondary ms-2">{{ motif.confidence | times: 100 | round }}% confidence</span>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% if include.story.thompson_motif_inference.notes %}
+    <p class="small text-body-secondary">{{ include.story.thompson_motif_inference.notes }}</p>
+    {% endif %}
+    {% endif %}
+
+    {% if include.story.atu_inference.notes %}
+    <h4 class="h6 mt-3">ATU Classification</h4>
+    <p class="small text-body-secondary">{{ include.story.atu_inference.notes }}</p>
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+
+{%- comment -%} Provenance / Bibliography Section {%- endcomment -%}
+{% if include.story.extracted_metadata.informant or include.story.extracted_metadata.collector or include.story.extracted_metadata.bibliography %}
+<div class="folklore-provenance card mb-4">
+  <div class="card-header">
+    <h3 class="h5 mb-0">📚 Provenance</h3>
+  </div>
+  <div class="card-body">
+    <dl class="row mb-0">
+      {% if include.story.extracted_metadata.informant %}
+      <dt class="col-sm-4">Informant</dt>
+      <dd class="col-sm-8">{{ include.story.extracted_metadata.informant }}</dd>
+      {% endif %}
+
+      {% if include.story.extracted_metadata.collector %}
+      <dt class="col-sm-4">Collector</dt>
+      <dd class="col-sm-8">{{ include.story.extracted_metadata.collector }}</dd>
+      {% endif %}
+
+      {% if include.story.extracted_metadata.bibliography %}
+      <dt class="col-sm-4">Bibliography</dt>
+      <dd class="col-sm-8"><cite>{{ include.story.extracted_metadata.bibliography }}</cite></dd>
+      {% endif %}
+    </dl>
+  </div>
+</div>
+{% endif %}
+
+{%- comment -%} Translation Notes {%- endcomment -%}
+{% if include.story.notes_on_translation %}
+<div class="folklore-translation-notes card mb-4">
+  <div class="card-header">
+    <h3 class="h5 mb-0">📝 Notes on Translation</h3>
+  </div>
+  <div class="card-body">
+    <p class="mb-0">{{ include.story.notes_on_translation }}</p>
+  </div>
+</div>
+{% endif %}

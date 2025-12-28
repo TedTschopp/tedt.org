@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="layout-folklore-index">
+  <head>
+    <meta charset="utf-8">
+
+    {% include utility/calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    {% include seo/indieauth-webmentions-metadata.html %}
+    {% include seo/meta-data-seo.html %}
+    {% include pwa/pwa-header-includes.html %}
+    {% include feeds/feeds.html %}
+    {% include assets/all-css-includes.html %}
+    {% include assets/scripts.html %}
+  </head>
+  <body style="scroll-padding-top: 70px;">
+    {% include layout/top-nav-bar.html %}
+
+    {%- comment -%}
+      Folklore Stories Index Layout
+      Lists all stories from _data/folklore/stories.yml
+    {%- endcomment -%}
+
+    <div class="container">
+      <div class="row w-100">
+        <div class="col-12" id="content-column">
+          <main role="main">
+            <article class="card h-100 no-padding">
+
+              {%- comment -%} Hero Section {%- endcomment -%}
+              {% if page.image %}
+                {% assign image_URL = page.image %}
+              {% else %}
+                {% assign image_URL = site.url | append: "/img/categories/folklore.webp" %}
+              {% endif %}
+
+              <div class="card rounded-bottom-0 h-100">
+                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ page.title | default: 'Swiss Folklore Stories' | escape }}">
+                <div class="card-body pt-3 pb-3 ps-4 pe-4">
+                  <div class="post-hero mb-2">
+                    <h1 class="card-title post-title mb-1">{{ page.title | default: "📚 Swiss Folklore Collection" }}</h1>
+                    {% if page.subtitle %}
+                    <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">{{ page.subtitle }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body rounded-top-0 p-4 h-100">
+
+                <p class="lead mb-4">
+                  {{ page.description | default: "A curated collection of Swiss-German folklore tales, translated and annotated with locations, mythological entities, and scholarly classification." }}
+                </p>
+
+                {%- comment -%} Statistics {%- endcomment -%}
+                {% assign story_count = site.data.folklore.stories | size %}
+                {% assign location_count = site.data.folklore.locations | size %}
+                {% assign entity_count = site.data.folklore.entities | size %}
+                
+                <div class="row mb-4">
+                  <div class="col-md-4 mb-3">
+                    <div class="card bg-body-secondary h-100">
+                      <div class="card-body text-center">
+                        <div class="display-4">📖</div>
+                        <h2 class="h3">{{ story_count }}</h2>
+                        <p class="text-body-secondary mb-0">Stories</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card bg-body-secondary h-100">
+                      <div class="card-body text-center">
+                        <div class="display-4">📍</div>
+                        <h2 class="h3">{{ location_count }}</h2>
+                        <p class="text-body-secondary mb-0">Locations</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <div class="card bg-body-secondary h-100">
+                      <div class="card-body text-center">
+                        <div class="display-4">👻</div>
+                        <h2 class="h3">{{ entity_count }}</h2>
+                        <p class="text-body-secondary mb-0">Entities</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {%- comment -%} Browse navigation {%- endcomment -%}
+                <nav class="mb-4" aria-label="Browse options">
+                  <div class="d-flex flex-wrap gap-2">
+                    <a href="{{ site.url }}/folklore/locations/" class="btn btn-outline-primary">
+                      📍 Browse by Location
+                    </a>
+                    <a href="{{ site.url }}/folklore/entities/" class="btn btn-outline-primary">
+                      👻 Browse by Entity
+                    </a>
+                    <a href="{{ site.url }}/folklore/themes/" class="btn btn-outline-primary">
+                      🏷️ Browse by Theme
+                    </a>
+                  </div>
+                </nav>
+
+                <h2 class="h4 mb-3 border-bottom pb-2">All Stories</h2>
+
+                <div class="row">
+                  {% for story_pair in site.data.folklore.stories %}
+                    {% assign story_id = story_pair[0] %}
+                    {% assign story = story_pair[1] %}
+                  <div class="col-lg-6 mb-4">
+                    <div class="card h-100">
+                      <div class="card-header">
+                        <h3 class="h6 mb-0">
+                          <a href="{{ site.url }}/folklore/stories/{{ story_id }}/" class="text-decoration-none">
+                            {{ story.title }}
+                          </a>
+                        </h3>
+                      </div>
+                      <div class="card-body">
+                        <p class="small text-body-secondary mb-2">{{ story.author }}</p>
+                        <p class="small mb-3">
+                          {{ story.translations.readable.text | strip_html | truncate: 200 }}
+                        </p>
+                        
+                        <div class="mb-2">
+                          <span class="badge bg-secondary me-1">{{ story.myth_classification.myth_type }}</span>
+                          {% for theme in story.myth_classification.primary_themes limit: 2 %}
+                            <span class="badge bg-primary me-1">{{ theme }}</span>
+                          {% endfor %}
+                        </div>
+
+                        {% if story.location_ids and story.location_ids.size > 0 %}
+                        <div class="small">
+                          <strong>Locations:</strong>
+                          {% for loc_id in story.location_ids limit: 3 %}
+                            {% include folklore/location-badge.html location_id=loc_id %}
+                          {% endfor %}
+                          {% if story.location_ids.size > 3 %}
+                            <span class="text-body-secondary">+{{ story.location_ids.size | minus: 3 }} more</span>
+                          {% endif %}
+                        </div>
+                        {% endif %}
+                      </div>
+                      <div class="card-footer">
+                        <a href="{{ site.url }}/folklore/stories/{{ story_id }}/" class="btn btn-sm btn-outline-primary">
+                          Read Story →
+                        </a>
+                        {% if story.source_url %}
+                        <a href="{{ story.source_url }}" target="_blank" rel="noopener" class="btn btn-sm btn-outline-secondary">
+                          Original Source <i class="bi bi-box-arrow-up-right"></i>
+                        </a>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                  {% endfor %}
+                </div>
+
+                {{ content }}
+
+              </div>
+            </article>
+          </main>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    {% include layout/footer.html %}
+    {% include assets/js-bottom-of-body.html %}
+
+  </body>
+</html>

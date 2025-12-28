@@ -1,0 +1,164 @@
+# Swiss Folklore Mythological Entities Index
+# Keyed by entity_id for cross-reference from stories
+# Includes beings, phenomena, objects, rituals, and events
+
+d8a62a0e6f2c1c2eb7f273d8d9c7f9b2e5a7b8f6:
+  entity_name: "Wütisheer (Wild Hunt Host)"
+  entity_name_original: "das Brausen des wütenden Heeres oder das Wütisheer"
+  entity_type: "Event"
+  description: "A roaring nocturnal host that passes over the Scheidegg, strongest at Christmas-tide, experienced as a haunting procession."
+  cultural_context: "Alpine legend; Wild Hunt complex with seasonal (Christmas) haunting"
+  threat_level: "Dangerous"
+  associated_location_ids:
+    - "ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7"
+    - "a9b1f1f4cf8a3e3a0c1f2f5c17f3ed8a6e5b46ae"
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+2c6d2b9e0a7d4d9f88b6f1b1a0c3a5f2d9a4c6e1:
+  entity_name: "Giants (prime-dwellers; 'Westfriesen')"
+  entity_name_original: "Mächtige Riesen ... Westfriesen genannt"
+  entity_type: "Being"
+  description: "Mighty giants described as ancient inhabitants who lead the night procession."
+  cultural_context: "Alpine legend; ancestral/primeval beings"
+  threat_level: "Ominous"
+  associated_location_ids:
+    - "a9b1f1f4cf8a3e3a0c1f2f5c17f3ed8a6e5b46ae"
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+d6f4a1b7d9f3c2a8b4e6c1d0f7a8c9e2b3d4a5f6:
+  entity_name: "Hideous Dwarfs on Unclean Beasts"
+  entity_name_original: "Zwerge von scheusslicher Gestalt, reitend auf allem möglichen Ungetier"
+  entity_type: "Being"
+  description: "Dwarfs of dreadful appearance riding on various vermin-like creatures as part of the host."
+  cultural_context: "Alpine legend; dwarf-lore; Wild Hunt entourage"
+  threat_level: "Ominous"
+  associated_location_ids:
+    - "a9b1f1f4cf8a3e3a0c1f2f5c17f3ed8a6e5b46ae"
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+c9a9b8a7d6c5b4a3f2e1d0c9b8a7d6c5b4a3f2e1:
+  entity_name: "Cursed Spirits of Rotental/Rottal Glacier"
+  entity_name_original: "die Geister aller jener Fluchbeladenen"
+  entity_type: "Being"
+  description: "Spirits of people burdened with a curse, whose dwelling-place is the Rotental and the Rottal Glacier."
+  cultural_context: "Christian folk belief and Alpine haunting lore"
+  threat_level: "Dangerous"
+  associated_location_ids:
+    - "ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7"
+    - "2e8e0dcbf0f8f4fba7f0a0a2f7d0a6d1e3c9c0a5"
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+1b2c3d4e5f60718293a4b5c6d7e8f90123456789:
+  entity_name: "Obligatory Opening of the Milk-house Gates"
+  entity_name_original: "müssen ... diesem Geisterspuk die Tore des Melkhauses geöffnet sein"
+  entity_type: "Ritual"
+  description: "A required act: opening the milk-house gates when the Wild Hunt nears; failure brings woe."
+  cultural_context: "Protective household practice within Wild Hunt belief"
+  threat_level: "Dangerous"
+  associated_location_ids:
+    - "a9b1f1f4cf8a3e3a0c1f2f5c17f3ed8a6e5b46ae"
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+e2f6fbf5c2b6f7f0b2f2b41d7df5f8b38d28fb34:
+  entity_name: "Wydenweiblein (Luring Woman-Spirit)"
+  entity_name_original: "Wydenweiblein"
+  entity_type: "Being"
+  description: "A female voice that lures a night-walker away from the road, driving him in a restless chase until dawn; understood as having him 'in the ban'."
+  cultural_context: "Alpine haunting lore; lure/spell in liminal night travel"
+  threat_level: "Dangerous"
+  associated_location_ids:
+    - "d6d4b3a2c1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6"
+    - "a3f2e1d0c9b8a7d6c5b4a3f2e1d0c9b8a7d6c5b4"
+    - "b2c3d4e5f60718293a4b5c6d7e8f901234567890"
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+8b7c6d5e4f3029182736455463728190a1b2c3d4:
+  entity_name: "Compulsive Lure-Call"
+  entity_name_original: "«Komm, komm!», einschmeichelnd und sanft zwingend"
+  entity_type: "Phenomenon"
+  description: "An irresistible call that compels pursuit despite the listener's will."
+  cultural_context: "Folk belief in bewitching calls/voices in the night"
+  threat_level: "Dangerous"
+  associated_location_ids:
+    - "d6d4b3a2c1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6"
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+b0d3a7d1a9f2e4c6b8d0a1c3e5f60718293a4b5c:
+  entity_name: "Geistlicher Schild (Magic Book)"
+  entity_name_original: "der Geistliche Schild"
+  entity_type: "Object"
+  description: "A named grimoire/chapbook whose spoken reading produces magical effects; treated as uncanny but sometimes linked to monastery cellars or protective powers."
+  cultural_context: "Christian folk belief intersecting with grimoire/chapbook lore"
+  threat_level: "Ominous"
+  associated_location_ids:
+    - "0d2c1dcd4f3fd564dce7a7a1a7b02b2ff6d3eaa5"
+    - "6a3d5f2c0b7e9d1a3c5e7f8091a2b3c4d5e6f708"
+  story_ids:
+    - "434e1c6212cefb2c179cebaefb73d062fb021de8"
+    - "fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f"
+
+c6b5a4b3c2d1e0f9a8b7c6d5e4f3029182736455:
+  entity_name: "Wine Conjured by Reading Aloud"
+  entity_name_original: "stand plötzlich eine ... Strohflasche voll Wein"
+  entity_type: "Phenomenon"
+  description: "Sudden appearance of a wine bottle as an effect of reading the book aloud clearly."
+  cultural_context: "Folk-magic effect attached to a named book; framed with monastic provenance in punchline"
+  threat_level: "Ominous"
+  associated_location_ids: []
+  story_ids:
+    - "434e1c6212cefb2c179cebaefb73d062fb021de8"
+
+e9a5c3d2b1f0a9876543210fedcba9876543210f:
+  entity_name: "Magic Book (Invisibility-Granting)"
+  entity_name_original: "altes Zauberbuch"
+  entity_type: "Object"
+  description: "An old magic book enabling invisibility and remote presence; later burned by the priest as uncanny/dangerous."
+  cultural_context: "Christian folk belief vs. folk-magic/grimoire lore"
+  threat_level: "Dangerous"
+  associated_location_ids:
+    - "4de1d22d8f2a7d95bd7d1bf1fd1932f2e4a70fb6"
+    - "5f2b31364a1e7b2c5c0a6e6b4b2f1d9c2f6e1a3b"
+  story_ids:
+    - "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a"
+
+1f2e3d4c5b6a79808192a3b4c5d6e7f8091a2b3c:
+  entity_name: "Invisibility by Book-Use"
+  entity_name_original: "machten sie sich unsichtbar"
+  entity_type: "Phenomenon"
+  description: "Becoming unseen while still audible at home; used for mischief and food-taking."
+  cultural_context: "Folk-magic effect"
+  threat_level: "Ominous"
+  associated_location_ids:
+    - "4de1d22d8f2a7d95bd7d1bf1fd1932f2e4a70fb6"
+  story_ids:
+    - "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a"
+
+2b3c4d5e6f708192a3b4c5d6e7f8091a2b3c4d5e:
+  entity_name: "Priestly Burning of the Uncanny Book"
+  entity_name_original: "brachte es dem Pfarrer, der es verbrannte"
+  entity_type: "Ritual"
+  description: "A Christian protective act: surrendering and burning the magic book to prevent worse consequences."
+  cultural_context: "Christian moral framework opposing folk-magic objects"
+  threat_level: "None"
+  associated_location_ids:
+    - "4de1d22d8f2a7d95bd7d1bf1fd1932f2e4a70fb6"
+  story_ids:
+    - "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a"
+
+4c5d6e7f8091a2b3c4d5e6f708192a3b4c5d6e7f:
+  entity_name: "Robbers Immobilized by Reading"
+  entity_name_original: "blieben dann bocksteif stehen"
+  entity_type: "Phenomenon"
+  description: "The robbers become rigid and unable to move after the book is read."
+  cultural_context: "Folk-magic effect used as protection"
+  threat_level: "Dangerous"
+  associated_location_ids: []
+  story_ids:
+    - "fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f"

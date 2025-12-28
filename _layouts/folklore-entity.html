@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="layout-folklore-entity">
+  <head>
+    <meta charset="utf-8">
+
+    {% include utility/calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    {% include seo/indieauth-webmentions-metadata.html %}
+    {% include seo/meta-data-seo.html %}
+    {% include pwa/pwa-header-includes.html %}
+    {% include feeds/feeds.html %}
+    {% include assets/all-css-includes.html %}
+    {% include assets/scripts.html %}
+
+    <style>
+      .entity-card {
+        scroll-margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body style="scroll-padding-top: 70px;">
+    {% include layout/top-nav-bar.html %}
+
+    {%- comment -%}
+      Folklore Entity Index Layout
+      Displays mythological entities (beings, phenomena, objects, rituals, events).
+      
+      Can be used in two modes:
+      1. Single entity page (page.entity_id set)
+      2. All entities index (no entity_id, lists all)
+    {%- endcomment -%}
+
+    <div class="container">
+      <div class="row w-100">
+        <div class="col-12" id="content-column">
+          <main role="main">
+            <article class="card h-100 no-padding">
+
+              {%- comment -%} Hero Section {%- endcomment -%}
+              {% if page.image %}
+                {% assign image_URL = page.image %}
+              {% else %}
+                {% assign image_URL = site.url | append: "/img/categories/folklore.webp" %}
+              {% endif %}
+
+              <div class="card rounded-bottom-0 h-100">
+                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ page.title | default: 'Swiss Folklore Entities' | escape }}">
+                <div class="card-body pt-3 pb-3 ps-4 pe-4">
+                  <div class="post-hero mb-2">
+                    <h1 class="card-title post-title mb-1">{{ page.title | default: "👻 Mythological Entities" }}</h1>
+                    {% if page.subtitle %}
+                    <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">{{ page.subtitle }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body rounded-top-0 p-4 h-100">
+
+                {% if page.entity_id %}
+                  {%- comment -%} Single Entity Mode {%- endcomment -%}
+                  {%- assign entity = site.data.folklore.entities[page.entity_id] -%}
+                  
+                  {% if entity %}
+                  {% include folklore/entity-card.html entity_id=page.entity_id %}
+                  
+                  <h2 class="h4 mt-4">Stories Featuring This Entity</h2>
+                  <div class="row">
+                    {% for story_id in entity.story_ids %}
+                      {%- assign story = site.data.folklore.stories[story_id] -%}
+                      {% if story %}
+                      <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h3 class="h6 card-title">
+                              <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title }}</a>
+                            </h3>
+                            <p class="small text-body-secondary mb-2">{{ story.author }}</p>
+                            <p class="small mb-2">{{ story.translations.readable.text | strip_html | truncate: 150 }}</p>
+                            <span class="badge bg-secondary">{{ story.myth_classification.myth_type }}</span>
+                          </div>
+                        </div>
+                      </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  {% else %}
+                  <div class="alert alert-warning">Entity not found.</div>
+                  {% endif %}
+
+                {% else %}
+                  {%- comment -%} All Entities Index Mode {%- endcomment -%}
+                  
+                  {% assign entity_types = "Being,Event,Phenomenon,Object,Ritual" | split: "," %}
+                  
+                  <p class="lead mb-4">
+                    Discover the supernatural beings, mystical phenomena, magical objects, and sacred rituals 
+                    from Swiss folklore traditions.
+                  </p>
+
+                  {%- comment -%} Quick navigation by type {%- endcomment -%}
+                  <nav class="mb-4" aria-label="Entity type navigation">
+                    <div class="d-flex flex-wrap gap-2">
+                      {% for type in entity_types %}
+                        {% assign type_count = 0 %}
+                        {% for ent_pair in site.data.folklore.entities %}
+                          {% if ent_pair[1].entity_type == type %}
+                            {% assign type_count = type_count | plus: 1 %}
+                          {% endif %}
+                        {% endfor %}
+                        {% if type_count > 0 %}
+                        <a href="#type-{{ type | slugify }}" class="btn btn-sm btn-outline-secondary">
+                          {%- case type -%}
+                            {%- when 'Being' -%}👤
+                            {%- when 'Event' -%}⚡
+                            {%- when 'Phenomenon' -%}✨
+                            {%- when 'Object' -%}📕
+                            {%- when 'Ritual' -%}🕯️
+                          {%- endcase -%}
+                          {{ type }} ({{ type_count }})
+                        </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  </nav>
+
+                  {%- comment -%} Quick navigation by threat level {%- endcomment -%}
+                  <nav class="mb-4" aria-label="Threat level navigation">
+                    <strong class="small me-2">By Threat Level:</strong>
+                    <div class="d-inline-flex flex-wrap gap-2">
+                      {% assign threat_levels = "Dangerous,Ominous,None" | split: "," %}
+                      {% for level in threat_levels %}
+                        {% assign level_count = 0 %}
+                        {% for ent_pair in site.data.folklore.entities %}
+                          {% if ent_pair[1].threat_level == level %}
+                            {% assign level_count = level_count | plus: 1 %}
+                          {% endif %}
+                        {% endfor %}
+                        {% if level_count > 0 %}
+                        <a href="#threat-{{ level | slugify }}" class="btn btn-sm 
+                          {%- case level -%}
+                            {%- when 'Dangerous' -%} btn-outline-danger
+                            {%- when 'Ominous' -%} btn-outline-warning
+                            {%- when 'None' -%} btn-outline-success
+                          {%- endcase -%}">
+                          {{ level }} ({{ level_count }})
+                        </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  </nav>
+
+                  {%- comment -%} List by entity type {%- endcomment -%}
+                  {% for type in entity_types %}
+                    {% assign entities_of_type = "" | split: "" %}
+                    {% for ent_pair in site.data.folklore.entities %}
+                      {% if ent_pair[1].entity_type == type %}
+                        {% assign entities_of_type = entities_of_type | push: ent_pair %}
+                      {% endif %}
+                    {% endfor %}
+                    
+                    {% if entities_of_type.size > 0 %}
+                    <section id="type-{{ type | slugify }}" class="mb-5">
+                      <h2 class="h4 mb-3 border-bottom pb-2">
+                        {%- case type -%}
+                          {%- when 'Being' -%}👤 Beings
+                          {%- when 'Event' -%}⚡ Events
+                          {%- when 'Phenomenon' -%}✨ Phenomena
+                          {%- when 'Object' -%}📕 Objects
+                          {%- when 'Ritual' -%}🕯️ Rituals
+                        {%- endcase -%}
+                      </h2>
+                      
+                      <div class="row">
+                        {% for ent_pair in entities_of_type %}
+                          {% assign ent_id = ent_pair[0] %}
+                          {% assign ent = ent_pair[1] %}
+                        <div class="col-lg-6 mb-3">
+                          <div class="card h-100 entity-card" id="{{ ent_id }}">
+                            <div class="card-header d-flex justify-content-between align-items-center">
+                              <h3 class="h6 mb-0">{{ ent.entity_name }}</h3>
+                              {%- case ent.threat_level -%}
+                                {%- when 'Dangerous' -%}
+                                  <span class="badge bg-danger">⚠️ Dangerous</span>
+                                {%- when 'Ominous' -%}
+                                  <span class="badge bg-warning text-dark">⚡ Ominous</span>
+                                {%- when 'None' -%}
+                                  <span class="badge bg-success">✓ Benign</span>
+                              {%- endcase -%}
+                            </div>
+                            <div class="card-body">
+                              {% if ent.entity_name_original %}
+                              <p class="small text-body-secondary fst-italic mb-2">
+                                "{{ ent.entity_name_original }}"
+                              </p>
+                              {% endif %}
+                              <p class="small mb-2">{{ ent.description }}</p>
+                              {% if ent.cultural_context %}
+                              <p class="small text-body-secondary mb-2">
+                                <strong>Context:</strong> {{ ent.cultural_context }}
+                              </p>
+                              {% endif %}
+                              <div class="d-flex flex-wrap gap-1">
+                                {% for story_id in ent.story_ids %}
+                                  {%- assign story = site.data.folklore.stories[story_id] -%}
+                                  {% if story %}
+                                  <a href="{{ site.url }}/folklore/stories/{{ story_id }}/" 
+                                     class="badge bg-secondary text-decoration-none"
+                                     title="{{ story.title }}">
+                                    📖 {{ story.title | truncate: 25 }}
+                                  </a>
+                                  {% endif %}
+                                {% endfor %}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                    </section>
+                    {% endif %}
+                  {% endfor %}
+
+                {% endif %}
+
+                {%- comment -%} Navigation {%- endcomment -%}
+                <nav class="mt-4 pt-4 border-top" aria-label="Folklore navigation">
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/folklore/" class="btn btn-outline-secondary w-100">
+                        📚 All Stories
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/folklore/locations/" class="btn btn-outline-secondary w-100">
+                        📍 Browse Locations
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/folklore/entities/" class="btn btn-outline-secondary w-100">
+                        👻 Browse Entities
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+
+                {{ content }}
+
+              </div>
+            </article>
+          </main>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    {% include layout/footer.html %}
+    {% include assets/js-bottom-of-body.html %}
+
+  </body>
+</html>

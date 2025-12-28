@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="layout-folklore-location">
+  <head>
+    <meta charset="utf-8">
+
+    {% include utility/calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    {% include seo/indieauth-webmentions-metadata.html %}
+    {% include seo/meta-data-seo.html %}
+    {% include pwa/pwa-header-includes.html %}
+    {% include feeds/feeds.html %}
+    {% include assets/all-css-includes.html %}
+    {% include assets/scripts.html %}
+
+    <style>
+      .folklore-location-badge {
+        background-color: var(--bs-tertiary-bg);
+        color: var(--bs-body-color);
+        border: 1px solid var(--bs-border-color);
+      }
+      .folklore-location-badge:hover {
+        background-color: var(--bs-primary);
+        color: white;
+      }
+      .location-card {
+        scroll-margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body style="scroll-padding-top: 70px;">
+    {% include layout/top-nav-bar.html %}
+
+    {%- comment -%}
+      Folklore Location Index Layout
+      Displays a single location with all stories that reference it.
+      
+      Can be used in two modes:
+      1. Single location page (page.location_id set)
+      2. All locations index (no location_id, lists all)
+    {%- endcomment -%}
+
+    <div class="container">
+      <div class="row w-100">
+        <div class="col-12" id="content-column">
+          <main role="main">
+            <article class="card h-100 no-padding">
+
+              {%- comment -%} Hero Section {%- endcomment -%}
+              {% if page.image %}
+                {% assign image_URL = page.image %}
+              {% else %}
+                {% assign image_URL = site.url | append: "/img/categories/folklore.webp" %}
+              {% endif %}
+
+              <div class="card rounded-bottom-0 h-100">
+                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ page.title | default: 'Swiss Folklore Locations' | escape }}">
+                <div class="card-body pt-3 pb-3 ps-4 pe-4">
+                  <div class="post-hero mb-2">
+                    <h1 class="card-title post-title mb-1">{{ page.title | default: "📍 Folklore Locations" }}</h1>
+                    {% if page.subtitle %}
+                    <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">{{ page.subtitle }}</p>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body rounded-top-0 p-4 h-100">
+
+                {% if page.location_id %}
+                  {%- comment -%} Single Location Mode {%- endcomment -%}
+                  {%- assign location = site.data.folklore.locations[page.location_id] -%}
+                  
+                  {% if location %}
+                  <div class="location-details mb-4">
+                    <dl class="row">
+                      <dt class="col-sm-3">Location Type</dt>
+                      <dd class="col-sm-9">
+                        {%- case location.location_type -%}
+                          {%- when 'Mountain' -%}🏔️
+                          {%- when 'Valley' -%}🏞️
+                          {%- when 'River' -%}🌊
+                          {%- when 'Village' -%}🏘️
+                          {%- when 'Town/Village' -%}🏘️
+                          {%- when 'Forest' -%}🌲
+                          {%- when 'Glacier' -%}🧊
+                          {%- when 'Pass/Ridge' -%}⛰️
+                          {%- else -%}📍
+                        {%- endcase -%}
+                        {{ location.location_type }}
+                      </dd>
+
+                      {% if location.modern_local_name and location.modern_local_name != location.modern_english_name %}
+                      <dt class="col-sm-3">Local Name</dt>
+                      <dd class="col-sm-9">{{ location.modern_local_name }}</dd>
+                      {% endif %}
+
+                      <dt class="col-sm-3">Country</dt>
+                      <dd class="col-sm-9">{{ location.country }}</dd>
+
+                      {% if location.geocoding_confidence %}
+                      <dt class="col-sm-3">Geocoding Confidence</dt>
+                      <dd class="col-sm-9">
+                        <span class="badge 
+                          {%- case location.geocoding_confidence -%}
+                            {%- when 'High' -%} bg-success
+                            {%- when 'Medium' -%} bg-warning text-dark
+                            {%- when 'Low' -%} bg-secondary
+                          {%- endcase -%}">{{ location.geocoding_confidence }}</span>
+                      </dd>
+                      {% endif %}
+
+                      {% if location.notes %}
+                      <dt class="col-sm-3">Notes</dt>
+                      <dd class="col-sm-9">{{ location.notes }}</dd>
+                      {% endif %}
+                    </dl>
+                  </div>
+
+                  <h2 class="h4">Stories at this Location</h2>
+                  <div class="row">
+                    {% for story_id in location.story_ids %}
+                      {%- assign story = site.data.folklore.stories[story_id] -%}
+                      {% if story %}
+                      <div class="col-md-6 mb-3">
+                        <div class="card h-100">
+                          <div class="card-body">
+                            <h3 class="h6 card-title">
+                              <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title }}</a>
+                            </h3>
+                            <p class="small text-body-secondary mb-2">{{ story.author }}</p>
+                            <span class="badge bg-secondary">{{ story.myth_classification.myth_type }}</span>
+                          </div>
+                        </div>
+                      </div>
+                      {% endif %}
+                    {% endfor %}
+                  </div>
+                  {% else %}
+                  <div class="alert alert-warning">Location not found.</div>
+                  {% endif %}
+
+                {% else %}
+                  {%- comment -%} All Locations Index Mode {%- endcomment -%}
+                  
+                  {%- comment -%} Group locations by type {%- endcomment -%}
+                  {% assign location_types = "Mountain,Valley,River,Village,Town/Village,Forest,Glacier,Pass/Ridge,Settlement,Mountain slope,Local area/woods,Named place (meadow/spot),Farm outbuilding" | split: "," %}
+                  
+                  <p class="lead mb-4">
+                    Explore the real-world locations mentioned in Swiss folklore tales. 
+                    Click any location to see all stories associated with it.
+                  </p>
+
+                  {%- comment -%} Quick navigation {%- endcomment -%}
+                  <nav class="mb-4" aria-label="Location type navigation">
+                    <div class="d-flex flex-wrap gap-2">
+                      {% for type in location_types %}
+                        {% assign type_count = 0 %}
+                        {% for loc_pair in site.data.folklore.locations %}
+                          {% if loc_pair[1].location_type == type %}
+                            {% assign type_count = type_count | plus: 1 %}
+                          {% endif %}
+                        {% endfor %}
+                        {% if type_count > 0 %}
+                        <a href="#type-{{ type | slugify }}" class="btn btn-sm btn-outline-secondary">
+                          {%- case type -%}
+                            {%- when 'Mountain' -%}🏔️
+                            {%- when 'Valley' -%}🏞️
+                            {%- when 'River' -%}🌊
+                            {%- when 'Village' -%}🏘️
+                            {%- when 'Town/Village' -%}🏘️
+                            {%- when 'Forest' -%}🌲
+                            {%- when 'Glacier' -%}🧊
+                            {%- when 'Pass/Ridge' -%}⛰️
+                            {%- else -%}📍
+                          {%- endcase -%}
+                          {{ type }} ({{ type_count }})
+                        </a>
+                        {% endif %}
+                      {% endfor %}
+                    </div>
+                  </nav>
+
+                  {%- comment -%} List by type {%- endcomment -%}
+                  {% for type in location_types %}
+                    {% assign locations_of_type = "" | split: "" %}
+                    {% for loc_pair in site.data.folklore.locations %}
+                      {% if loc_pair[1].location_type == type %}
+                        {% assign locations_of_type = locations_of_type | push: loc_pair %}
+                      {% endif %}
+                    {% endfor %}
+                    
+                    {% if locations_of_type.size > 0 %}
+                    <section id="type-{{ type | slugify }}" class="mb-5">
+                      <h2 class="h4 mb-3 border-bottom pb-2">
+                        {%- case type -%}
+                          {%- when 'Mountain' -%}🏔️
+                          {%- when 'Valley' -%}🏞️
+                          {%- when 'River' -%}🌊
+                          {%- when 'Village' -%}🏘️
+                          {%- when 'Town/Village' -%}🏘️
+                          {%- when 'Forest' -%}🌲
+                          {%- when 'Glacier' -%}🧊
+                          {%- when 'Pass/Ridge' -%}⛰️
+                          {%- else -%}📍
+                        {%- endcase -%}
+                        {{ type }}
+                      </h2>
+                      
+                      <div class="row">
+                        {% for loc_pair in locations_of_type %}
+                          {% assign loc_id = loc_pair[0] %}
+                          {% assign loc = loc_pair[1] %}
+                        <div class="col-md-6 col-lg-4 mb-3">
+                          <div class="card h-100 location-card" id="{{ loc_id }}">
+                            <div class="card-body">
+                              <h3 class="h6 card-title">{{ loc.modern_english_name }}</h3>
+                              {% if loc.modern_local_name and loc.modern_local_name != loc.modern_english_name %}
+                              <p class="small text-body-secondary fst-italic mb-2">{{ loc.modern_local_name }}</p>
+                              {% endif %}
+                              <p class="small mb-2">{{ loc.country }}</p>
+                              <p class="small text-body-secondary mb-2">
+                                {{ loc.story_ids.size }} {% if loc.story_ids.size == 1 %}story{% else %}stories{% endif %}
+                              </p>
+                              <div class="d-flex flex-wrap gap-1">
+                                {% for story_id in loc.story_ids %}
+                                  {%- assign story = site.data.folklore.stories[story_id] -%}
+                                  {% if story %}
+                                  <a href="{{ site.url }}/folklore/stories/{{ story_id }}/" 
+                                     class="badge bg-secondary text-decoration-none"
+                                     title="{{ story.title }}">
+                                    {{ story.title | truncate: 20 }}
+                                  </a>
+                                  {% endif %}
+                                {% endfor %}
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                    </section>
+                    {% endif %}
+                  {% endfor %}
+
+                {% endif %}
+
+                {%- comment -%} Navigation {%- endcomment -%}
+                <nav class="mt-4 pt-4 border-top" aria-label="Folklore navigation">
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/folklore/" class="btn btn-outline-secondary w-100">
+                        📚 All Stories
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/folklore/locations/" class="btn btn-outline-secondary w-100">
+                        📍 Browse Locations
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/folklore/entities/" class="btn btn-outline-secondary w-100">
+                        👻 Browse Entities
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+
+                {{ content }}
+
+              </div>
+            </article>
+          </main>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    {% include layout/footer.html %}
+    {% include assets/js-bottom-of-body.html %}
+
+  </body>
+</html>

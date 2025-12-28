@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark" class="layout-folklore-story">
+  <head>
+    <meta charset="utf-8">
+
+    {% include utility/calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <!-- IndieAuth and WebMentions Metadata -->
+    {% include seo/indieauth-webmentions-metadata.html %}
+
+    <!-- SEO Metadata -->
+    {% include seo/meta-data-seo.html %}
+
+    <!-- PWA Header Includes -->
+    {% include pwa/pwa-header-includes.html %}
+
+    <!-- News Feed Meta Tags. -->
+    {% include feeds/feeds.html %}
+
+    {% include assets/all-css-includes.html %}
+
+    <!-- Scripts that need to be at the end of the header -->
+    {% include assets/scripts.html %}
+    {% include seo/article-jsonld.html %}
+
+    <style>
+      .folklore-story-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+      }
+      .folklore-story-text br + br {
+        display: block;
+        content: "";
+        margin-top: 1em;
+      }
+      .folklore-location-badge {
+        background-color: var(--bs-tertiary-bg);
+        color: var(--bs-body-color);
+        border: 1px solid var(--bs-border-color);
+      }
+      .folklore-location-badge:hover {
+        background-color: var(--bs-primary);
+        color: white;
+      }
+    </style>
+  </head>
+  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    {% include layout/top-nav-bar.html %}
+
+    {%- comment -%}
+      Folklore Story Layout
+      Displays a single folklore story with translations, metadata, locations, and entities.
+      
+      Front matter should include:
+      - layout: folklore-story
+      - story_id: (the key from _data/folklore/stories.yml)
+      - title: (optional override)
+      - image: (optional hero image)
+    {%- endcomment -%}
+
+    {%- assign story_id = page.story_id -%}
+    {%- assign story = site.data.folklore.stories[story_id] -%}
+
+    <!-- Page Content -->
+    <div class="container">
+      <div class="row w-100">
+        <div class="col-12" id="content-column">
+          <main class="h-entry" role="main">
+            <article class="card h-100 no-padding">
+              
+              {%- comment -%} Hero Image Section {%- endcomment -%}
+              {% if page.image %}
+                {% assign image_URL = page.image %}
+                {% assign image_alt = page.image-alt | default: story.title %}
+              {% else %}
+                {% assign image_URL = site.url | append: "/img/categories/folklore.webp" %}
+                {% assign image_alt = "Swiss Alps folklore illustration" %}
+              {% endif %}
+
+              <div class="card rounded-bottom-0 h-100">
+                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}">
+                <div class="card-body pt-3 pb-3 ps-4 pe-4">
+                  <div class="post-hero mb-2">
+                    <h1 class="p-name card-title post-title mb-1">{{ page.title | default: story.title }}</h1>
+                    {% if story.author %}
+                    <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">
+                      by {{ story.author }}
+                    </p>
+                    {% endif %}
+                  </div>
+                  <div class="small text-body-secondary mb-1">
+                    <span class="badge bg-secondary me-1">{{ story.myth_classification.myth_type }}</span>
+                    <span class="badge bg-info text-dark me-1">{{ story.original_language }}</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-body rounded-top-0 p-4 h-100">
+                <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
+
+                {%- comment -%} Locations Section {%- endcomment -%}
+                {% if story.location_ids and story.location_ids.size > 0 %}
+                <div class="mb-4">
+                  <h2 class="h5">📍 Locations in this Story</h2>
+                  <div class="d-flex flex-wrap">
+                    {% for loc_id in story.location_ids %}
+                      {% include folklore/location-badge.html location_id=loc_id %}
+                    {% endfor %}
+                  </div>
+                </div>
+                {% endif %}
+
+                {%- comment -%} Translation Tabs {%- endcomment -%}
+                <h2 class="h5 mb-3">📖 The Story</h2>
+                {% include folklore/translation-tabs.html story=story story_id=story_id %}
+
+                {%- comment -%} Entities Section {%- endcomment -%}
+                {% if story.entity_ids and story.entity_ids.size > 0 %}
+                <div class="mb-4">
+                  <h2 class="h5">👻 Mythological Entities</h2>
+                  <div class="d-flex flex-wrap mb-3">
+                    {% for entity_id in story.entity_ids %}
+                      {% include folklore/entity-card.html entity_id=entity_id compact=true %}
+                    {% endfor %}
+                  </div>
+                  
+                  <details>
+                    <summary class="text-body-secondary">View detailed entity information</summary>
+                    <div class="mt-3">
+                      {% for entity_id in story.entity_ids %}
+                        {% include folklore/entity-card.html entity_id=entity_id %}
+                      {% endfor %}
+                    </div>
+                  </details>
+                </div>
+                {% endif %}
+
+                {%- comment -%} Story Metadata {%- endcomment -%}
+                {% include folklore/story-metadata.html story=story %}
+
+                {%- comment -%} Any additional page content {%- endcomment -%}
+                {% if content and content != '' %}
+                <div class="e-content mt-4">
+                  {{ content }}
+                </div>
+                {% endif %}
+
+                {%- comment -%} Navigation to browse pages {%- endcomment -%}
+                <nav class="mt-4 pt-4 border-top" aria-label="Folklore navigation">
+                  <div class="row">
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/folklore/" class="btn btn-outline-secondary w-100">
+                        📚 All Stories
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/folklore/locations/" class="btn btn-outline-secondary w-100">
+                        📍 Browse Locations
+                      </a>
+                    </div>
+                    <div class="col-md-4 mb-2">
+                      <a href="{{ site.url }}/folklore/entities/" class="btn btn-outline-secondary w-100">
+                        👻 Browse Entities
+                      </a>
+                    </div>
+                  </div>
+                </nav>
+
+              </div>
+            </article>
+          </main>
+
+          {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+            {% include social/comments-mastodon-tree.html %}
+          {% endif %}
+
+          {% include social/comments-webmentions.html %}
+
+        </div>
+      </div>
+      <hr>
+    </div>
+
+    <!-- Footer -->
+    {% include layout/footer.html %}
+
+    <!-- Bootstrap core JavaScript -->
+    {% include assets/js-bottom-of-body.html %}
+
+  </body>
+</html>

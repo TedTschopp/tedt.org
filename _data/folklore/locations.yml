@@ -1,0 +1,255 @@
+# Swiss Folklore Locations Index
+# Keyed by location_id for cross-reference from stories
+# Each location tracks which stories reference it via story_ids array
+
+ac9c1a2ef9b0d0fbbd47f28da9d1f2d9d1f4d3b7:
+  original_name: "Rotental"
+  modern_english_name: "Rotental"
+  modern_local_name: "Rotental"
+  location_type: "Valley"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Mentioned as the direction from which the sound is heard; canton not specified in-text."
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+a9b1f1f4cf8a3e3a0c1f2f5c17f3ed8a6e5b46ae:
+  original_name: "Scheidegg"
+  modern_english_name: "Scheidegg"
+  modern_local_name: "Scheidegg"
+  location_type: "Pass/Ridge"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Local toponym; multiple 'Scheidegg' exist in Switzerland, so coordinates withheld."
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+5a86fd5f45e4c16cf39e2a1f8c3d6c65f11e3af1:
+  original_name: "Gassen"
+  modern_english_name: "Gassen"
+  modern_local_name: "Gassen"
+  location_type: "Settlement"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Mentioned as a route direction from the Scheidegg; exact municipality unclear."
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+ca9d3c7dc7e1d8e4f6c7f58a7e09d1d178c2f8a4:
+  original_name: "Faulhorn"
+  modern_english_name: "Faulhorn"
+  modern_local_name: "Faulhorn"
+  location_type: "Mountain"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Medium"
+  notes: "Well-known mountain name; coordinates omitted per rule (not explicitly provided in text)."
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+2e8e0dcbf0f8f4fba7f0a0a2f7d0a6d1e3c9c0a5:
+  original_name: "Rottalgletscher"
+  modern_english_name: "Rottal Glacier"
+  modern_local_name: "Rottalgletscher"
+  location_type: "Glacier"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Named as a haunting-place of cursed spirits; exact glacier identification not fixed from text alone."
+  story_ids:
+    - "b94b31288d269cdbc55a79dfbeef72fce89895d0"
+
+edb8f0a4c6f7d1b2c3a4e5f60718293a4b5c6d7e:
+  original_name: "Nidfurner"
+  modern_english_name: "Nidfurnen"
+  modern_local_name: "Nidfurnen"
+  location_type: "Village"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Mentioned as home community; canton not stated in-text (record metadata indicates Glarus, but kept conservative)."
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+d0b9a8c7f6e5d4c3b2a1908273645544332211ff:
+  original_name: "Schwanden"
+  modern_english_name: "Schwanden"
+  modern_local_name: "Schwanden"
+  location_type: "Town/Village"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Neighbor place with factory chimneys; likely in same region; coordinates omitted."
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+d6d4b3a2c1f0e9d8c7b6a5f4e3d2c1b0a9f8e7d6:
+  original_name: "Wyden"
+  modern_english_name: "Wyden"
+  modern_local_name: "Wyden"
+  location_type: "Local area/woods"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Area name used as lure-point and locus of the entity; not uniquely identified from text alone."
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+a3f2e1d0c9b8a7d6c5b4a3f2e1d0c9b8a7d6c5b4:
+  original_name: "Linth"
+  modern_english_name: "Linth"
+  modern_local_name: "Linth"
+  location_type: "River"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Medium"
+  notes: "Named river; coordinates omitted."
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+b2c3d4e5f60718293a4b5c6d7e8f901234567890:
+  original_name: "Glärnischhang"
+  modern_english_name: "Glärnisch slope"
+  modern_local_name: "Glärnischhang"
+  location_type: "Mountain slope"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Slope of Glärnisch; no coordinates provided."
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+c3d4e5f60718293a4b5c6d7e8f90123456789012:
+  original_name: "Blumerwald"
+  modern_english_name: "Blumer Forest"
+  modern_local_name: "Blumerwald"
+  location_type: "Forest"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Forest-name as sound-source; not disambiguated."
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+d4e5f60718293a4b5c6d7e8f9012345678901234:
+  original_name: "Vrinelisgärtli"
+  modern_english_name: "Vrinelisgärtli"
+  modern_local_name: "Vrinelisgärtli"
+  location_type: "Named place (meadow/spot)"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Named place appearing at dawn; kept as local name."
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+e5f60718293a4b5c6d7e8f901234567890123456:
+  original_name: "Tödi"
+  modern_english_name: "Tödi"
+  modern_local_name: "Tödi"
+  location_type: "Mountain"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Medium"
+  notes: "Well-known mountain; coordinates omitted."
+  story_ids:
+    - "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5"
+
+0d2c1dcd4f3fd564dce7a7a1a7b02b2ff6d3eaa5:
+  original_name: "Attinghausen"
+  modern_english_name: "Attinghausen"
+  modern_local_name: "Attinghausen"
+  location_type: "Village"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Medium"
+  notes: "Given as informant residence; coordinates omitted."
+  story_ids:
+    - "434e1c6212cefb2c179cebaefb73d062fb021de8"
+
+4de1d22d8f2a7d95bd7d1bf1fd1932f2e4a70fb6:
+  original_name: "Seelisberg"
+  modern_english_name: "Seelisberg"
+  modern_local_name: "Seelisberg"
+  location_type: "Village"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Medium"
+  notes: "Explicitly named; administrative hierarchy not stated inside the story text."
+  story_ids:
+    - "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a"
+
+5f2b31364a1e7b2c5c0a6e6b4b2f1d9c2f6e1a3b:
+  original_name: "Pfahrs Gadä"
+  modern_english_name: "parson's shed/barn"
+  modern_local_name: "Pfarrgaden (approx.)"
+  location_type: "Farm outbuilding"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Dialect phrase; normalized cautiously; kept as a functional place."
+  story_ids:
+    - "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a"
+
+6a3d5f2c0b7e9d1a3c5e7f8091a2b3c4d5e6f708:
+  original_name: "Wassnerwald"
+  modern_english_name: "Wassnerwald"
+  modern_local_name: "Wassnerwald"
+  location_type: "Forest"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Low"
+  notes: "Forest-name; not uniquely geocoded from text alone."
+  story_ids:
+    - "fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f"
+
+ad7c50f76f1d5d9d24d3b9b11365bb57e9c7b3f0:
+  original_name: "Silenen"
+  modern_english_name: "Silenen"
+  modern_local_name: "Silenen"
+  location_type: "Village"
+  country: "Switzerland"
+  administrative_hierarchy: null
+  latitude: null
+  longitude: null
+  geocoding_confidence: "Medium"
+  notes: "Informant location; coordinates omitted."
+  story_ids:
+    - "fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f"

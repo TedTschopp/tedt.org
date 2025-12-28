@@ -1,0 +1,108 @@
+{%- comment -%}
+  Folklore Entity Card
+  Renders a card for a mythological entity with type, threat level, and description.
+  
+  Usage: {% include folklore/entity-card.html entity_id=id %}
+         {% include folklore/entity-card.html entity_id=id compact=true %}
+  
+  Looks up the entity in site.data.folklore.entities by ID.
+  Set compact=true for inline badge style instead of full card.
+{%- endcomment -%}
+
+{%- assign entity = site.data.folklore.entities[include.entity_id] -%}
+{%- if entity -%}
+  {%- if include.compact -%}
+    {%- comment -%} Compact badge mode {%- endcomment -%}
+    <a href="{{ site.url }}/folklore/entities/#{{ include.entity_id }}" 
+       class="badge text-decoration-none me-1 mb-1 folklore-entity-badge
+              {%- case entity.threat_level -%}
+                {%- when 'Dangerous' -%} bg-danger
+                {%- when 'Ominous' -%} bg-warning text-dark
+                {%- when 'None' -%} bg-success
+                {%- else -%} bg-secondary
+              {%- endcase -%}"
+       title="{{ entity.description | truncate: 100 }}">
+      {%- case entity.entity_type -%}
+        {%- when 'Being' -%}👤
+        {%- when 'Event' -%}⚡
+        {%- when 'Phenomenon' -%}✨
+        {%- when 'Object' -%}📕
+        {%- when 'Ritual' -%}🕯️
+        {%- else -%}❓
+      {%- endcase -%}
+      {{ entity.entity_name | truncate: 30 }}
+    </a>
+  {%- else -%}
+    {%- comment -%} Full card mode {%- endcomment -%}
+    <div class="card folklore-entity-card mb-3" id="{{ include.entity_id }}">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <h4 class="h6 mb-0">
+          {%- case entity.entity_type -%}
+            {%- when 'Being' -%}👤
+            {%- when 'Event' -%}⚡
+            {%- when 'Phenomenon' -%}✨
+            {%- when 'Object' -%}📕
+            {%- when 'Ritual' -%}🕯️
+            {%- else -%}❓
+          {%- endcase -%}
+          {{ entity.entity_name }}
+        </h4>
+        <div>
+          <span class="badge bg-secondary me-1">{{ entity.entity_type }}</span>
+          {%- case entity.threat_level -%}
+            {%- when 'Dangerous' -%}
+              <span class="badge bg-danger">⚠️ Dangerous</span>
+            {%- when 'Ominous' -%}
+              <span class="badge bg-warning text-dark">⚡ Ominous</span>
+            {%- when 'None' -%}
+              <span class="badge bg-success">✓ Benign</span>
+          {%- endcase -%}
+        </div>
+      </div>
+      <div class="card-body">
+        {% if entity.entity_name_original %}
+        <p class="small text-body-secondary fst-italic mb-2">
+          Original: "{{ entity.entity_name_original }}"
+        </p>
+        {% endif %}
+        
+        <p class="mb-2">{{ entity.description }}</p>
+        
+        {% if entity.cultural_context %}
+        <p class="small text-body-secondary mb-2">
+          <strong>Cultural Context:</strong> {{ entity.cultural_context }}
+        </p>
+        {% endif %}
+
+        {% if entity.associated_location_ids and entity.associated_location_ids.size > 0 %}
+        <div class="mt-2">
+          <strong class="small">Associated Locations:</strong>
+          <div class="mt-1">
+            {% for loc_id in entity.associated_location_ids %}
+              {% include folklore/location-badge.html location_id=loc_id %}
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+
+        {% if entity.story_ids and entity.story_ids.size > 0 %}
+        <div class="mt-2">
+          <strong class="small">Appears in:</strong>
+          <ul class="list-unstyled small mt-1 mb-0">
+            {% for story_id in entity.story_ids %}
+              {%- assign story = site.data.folklore.stories[story_id] -%}
+              {% if story %}
+              <li>
+                <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title }}</a>
+              </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  {%- endif -%}
+{%- else -%}
+  <span class="badge bg-secondary">❓ Unknown Entity</span>
+{%- endif -%}
