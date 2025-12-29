@@ -106,795 +106,15 @@ OUTPUT CONSTRAINTS
 - No process notes, hidden reasoning, or tool output.
 - Keep content skimmable: short paragraphs, bullets, and clear headers.
 
-
 RSS FEED CONTENT:
-
+This XML file does not appear to have any style information associated with it. The document tree is shown below.
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
 <channel>
 <title>Ted Tschopp's AI News</title> <link>https://rss.tedt.org/</link>
 <description>Latest AI News and Ratings from Ted Tschopp</description>
 <docs>http://www.rssboard.org/rss-specification</docs> <generator>GitHub Action
 RSS Scraper v2.1 (retention)</generator> <language>en</language>
-<lastBuildDate>Sun, 14 Dec 2025 16:14:00 +0000</lastBuildDate>
-<item>
-<title>
-Building a GenAI Agent for Partner-Guest Messaging [ * ]
-</title>
-<link>
-https://booking.ai/building-a-genai-agent-for-partner-guest-messaging-f54afb72e6cf
-</link>
-<description>
-Booking.com has deployed a production-scale GenAI agent that handles
-partner-guest messaging using a multi-agent architecture, improving satisfaction
-and response times across hundreds of thousands of daily interactions. Our
-analysts highlighted this as a strong case study of AI automation in customer
-service, noting its use of LangGraph to build a semantic orchestration layer and
-lightweight models makes it a valuable reference for enterprise chatbot design.
-</description>
-<guid isPermaLink="false">caa475197ca42e0ff1619c01751ed46b</guid> <pubDate>Tue,
-02 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Launching DeepSeek‑V3.2 & DeepSeek‑V3.2‑Speciale [ ! ]
-</title>
-<link>
-https://x.com/deepseek_ai/status/1995452641430651132
-</link>
-<description>
-The article shows that DeepSeek‑V3.2 (and its variant “Speciale”) delivers
-state‑of‑the‑art performance — reportedly on par with top closed‑source LLMs —
-while being open‑source. Our analysts noted this could be a major turning point
-for open‑source AI adoption and could “level the playing field” globally.
-</description>
-<guid isPermaLink="false">f90ba53e817a4f1b21943e0144f52f8a</guid> <pubDate>Tue,
-02 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-All The Biggest News from AWS’ Big Tech Show Re:Invent 2025 [ ~ ]
-</title>
-<link>
-https://techcrunch.com/2025/12/02/all-the-biggest-news-from-aws-big-tech-show-reinvent-2025/
-</link>
-<description>
-This roundup of announcements from AWS’s re:Invent 2025 highlights many new
-products and services. Our analysts noted that for those not deeply invested in
-AWS’s ecosystem, the updates are interesting but optional.
-</description>
-<guid isPermaLink="false">30f6d1b261c358c8a11eca82333050b5</guid> <pubDate>Wed,
-03 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>The Trinity Manifesto [ ~ ]</title>
-<link>https://www.arcee.ai/blog/the-trinity-manifesto</link>
-<description>
-The manifesto from ARCEE outlines a vision for a U.S.-based set of
-mixture‑of‑experts (MoE) models meant to serve as an alternative to
-Chinese‑origin open models. Our analysts felt it’s good to have such
-alternatives — but since model quality and real‑world performance remain
-uncertain, they assigned it a middle‑to‑lower priority for now.
-</description>
-<guid isPermaLink="false">2520cb47a9a96a73c2fd87e14e168b03</guid> <pubDate>Wed,
-03 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Introducing Mistral 3 [ ~ ]</title>
-<link>https://mistral.ai/news/mistral-3</link>
-<description>
-Mistral 3 introduces a new family of open-source models with strong performance,
-flexible customization, and open weights — positioning it as a potential
-diversification option for enterprises seeking alternatives to closed or
-China-based models. Our analysts noted that while new Mistral models offer
-promise for vendor diversification and risk mitigation, it’s still early, with
-limited customer traction or proof points to validate real-world impact at this
-stage.
-</description>
-<guid isPermaLink="false">04a067f206db3f439744312177525531</guid> <pubDate>Wed,
-03 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-AWS Announces New Capabilities for Its AI Agent Builder [ * ]
-</title>
-<link>
-https://techcrunch.com/2025/12/02/aws-announces-new-capabilities-for-its-ai-agent-builder/
-</link>
-<description>
-AWS has expanded its agent builder with support for memory, policy boundaries,
-and evaluation frameworks — a move that helps define the emerging standards for
-enterprise-grade agent orchestration and lifecycle management. Our analysts
-highlighted that while this is a product announcement, AI leaders need to track
-these developments closely, as AWS’s scale and customer base give it the power
-to shape how agent infrastructure is designed and supported across the industry.
-</description>
-<guid isPermaLink="false">9637cc448f39c9bab560e87fb876ef35</guid> <pubDate>Wed,
-03 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-NVIDIA Advances Open Model Development for Digital and Physical AI [ * ]
-</title>
-<link>
-https://blogs.nvidia.com/blog/neurips-open-source-digital-physical-ai/
-</link>
-<description>
-This announcement details how NVIDIA is pushing into “physical AI,” releasing
-open‑source models (including a reasoning vision‑language‑action model for
-autonomous driving) and tools for robotics, speech, safety, and other real‑world
-AI applications. Our analysts flagged this as important because of NVIDIA’s
-strategic weight and the potential long-term implications — even if most AI
-leaders aren’t in autonomous driving or robotics today, awareness of these
-developments is critical to not get blindsided as the AI frontier expands.
-</description>
-<guid isPermaLink="false">fb778722c3b87d06a607630ac9107b6d</guid> <pubDate>Wed,
-03 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Why Your Company Needs a Chief Data, Analytics, and AI Officer [ ! ]
-</title>
-<link>
-https://hbr.org/2025/12/why-your-company-needs-a-chief-data-analytics-and-ai-officer
-</link>
-<description>
-This HBR article makes a strong case for creating a unified Chief Data,
-Analytics, and AI Officer role to elevate AI and data strategy as core business
-functions, on par with marketing or logistics — particularly for firms
-struggling with decentralized AI governance and proliferation of employee-built
-tools. Our analysts debated the issue - some saw this as a necessary move to
-drive accountability and strategic alignment across data and AI, others warned
-it could backfire by centralizing control in traditionally weak staff functions,
-potentially slowing AI innovation — but all agreed the debate itself is critical
-and timely for AI leaders.
-</description>
-<guid isPermaLink="false">08999d1fef83de019851e6045d0fc579</guid> <pubDate>Wed,
-03 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Seedream 4.5 [ ~ ]</title>
-<link>https://seed.bytedance.com/en/seedream4_5</link>
-<description>
-ByteDance’s Seedream 4.5 offers improved rendering of dense text and
-object-specific editing in images, positioning it as a commercially-focused
-competitor in the image generation space. Our analysts saw this as part of the
-broader leapfrog competition in multimodal AI, but noted that without production
-evidence, clear workflows, or trust guarantees — especially for regulated
-industries — it remains a model to watch rather than adopt.
-</description>
-<guid isPermaLink="false">d02ce83d103e41b63e84f477086357c6</guid> <pubDate>Thu,
-04 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-STARFlow‑V: End-to-End Video Generative Modeling with Normalizing Flow [ ~ ]
-</title>
-<link>https://huggingface.co/papers/2511.20462</link>
-<description>
-Apple’s STARFlow-V proposes a new approach to video generation using normalizing
-flows instead of diffusion, supporting text-to-video, image-to-video, and
-video-to-video tasks with strong temporal consistency. While our analysts found
-the architecture promising and acknowledged Apple's quiet progress in AI
-research, they agreed this is still early-stage work best suited for
-experimental teams in video or marketing applications.
-</description>
-<guid isPermaLink="false">80bfd6357a5c1c67481474d09e693177</guid> <pubDate>Thu,
-04 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Introducing Lux, the World's Best Foundation Computer‑Use Model [ ~ ]
-</title>
-<link>https://agiopen.org/blog</link>
-<description>
-Lux is a new foundation model from OpenAGI focused on "computer use" tasks such
-as UI navigation and screen interactions, claiming improved performance through
-"agentic pretraining." However, our analysts were cautious, citing the lack of
-technical details, peer benchmarks, or customers — and noted that while the
-concept of agentic environments is promising, this model remains early and
-unproven, especially in the wake of newer releases from major labs.
-</description>
-<guid isPermaLink="false">11c8d151f0bbcebad81fdd721c14a0f3</guid> <pubDate>Thu,
-04 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-ToolOrchestra: Elevating Intelligence via Efficient Model and Tool Orchestration [ * ]
-</title>
-<link>https://huggingface.co/nvidia/Orchestrator-8B</link>
-<description>
-NVIDIA’s new Orchestrator-8B is an 8B-parameter orchestrator model designed to
-efficiently manage tool use, outperforming larger models like GPT-5 in
-orchestration tasks while operating at significantly lower cost. Our analysts
-viewed this as a major development in agentic workflows, noting that
-orchestration and tool calling are key friction points in automation today — and
-praised NVIDIA’s ability to offer high accuracy with lower total cost of
-operation, especially for AI leaders exploring modular systems.
-</description>
-<guid isPermaLink="false">068b4e5c654aafb494816a3950f7d951</guid> <pubDate>Thu,
-04 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Matillion Reduces Data Pipeline Creation from 40 Hours to 1 With Claude‑Powered
-AI Assistant [ * ]
-</title>
-<link>https://www.claude.com/customers/matillion</link>
-<description>
-This case study highlights how Claude is enabling significant acceleration in
-ETL processes by cutting data pipeline creation time from 40 hours to just 1
-hour, making generative AI directly applicable to enterprise data engineering.
-Our analysts emphasized that while details were light, this still reflects a
-strong trend in agentic infrastructure for automating complex data workflows,
-noting real-world relevance for data consultancies and executives managing
-analytics backlogs.
-</description>
-<guid isPermaLink="false">b74424187ee592134af9b228913b2b80</guid> <pubDate>Thu,
-04 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-How Myriad Genetics Achieved Fast, Accurate, and Cost‑Efficient Document
-Processing Using the AWS Open-Source Generative AI Intelligent Document
-Processing Accelerator [ ! ]
-</title>
-<link>
-https://aws.amazon.com/blogs/machine-learning/how-myriad-genetics-achieved-fast-accurate-and-cost-efficient-document-processing-using-the-aws-open-source-generative-ai-intelligent-document-processing-accelerator/
-</link>
-<description>
-This case study showcases a production deployment of AWS’s open-source
-generative AI Intelligent Document Processing (IDP) accelerator, which enabled
-Myriad Genetics to automate classification of unstructured healthcare documents
-with 98% accuracy, an 80% latency reduction, and human-level performance. Our
-analysts praised its detailed architecture diagrams, prompt iteration examples,
-and evaluation framework, calling it “one of the best case studies we’ve seen”
-and a strong example of how AI can process unstructured documents at scale,
-especially for regulated industries like healthcare and insurance.
-</description>
-<guid isPermaLink="false">cd93c8ef561bbef603f6c7318a759468</guid> <pubDate>Thu,
-04 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Local-Deployable GELab-Zero-4B Masters Android Apps [ ~ ]
-</title>
-<link>https://opengelab.github.io/index.html</link>
-<description>
-This article describes a 4B-parameter vision-language model that runs locally on
-Android devices to automate actions like tapping, typing, and navigation using
-screenshot-based reasoning. The panel rated it Optional because, although it
-hints at the future of edge AI and mobile agents, the work lacks independent
-benchmarking and remains too immature for enterprise decision-making.
-</description>
-<guid isPermaLink="false">f772da0884c42a504bc5e305aac82c73</guid> <pubDate>Fri,
-05 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-MSD explores applying generative Al to improve the deviation management process
-using AWS services [ ~ ]
-</title>
-<link>
-https://aws.amazon.com/blogs/machine-learning/msd-explores-applying-generative-al-to-improve-the-deviation-management-process-using-aws-services/
-</link>
-<description>
-This AWS piece outlines MSD’s early-stage GenAI experiment for improving pharma
-deviation management using Bedrock, OpenSearch, RDS, and other standard AWS
-components. Our analysts found the architecture is extremely high-level and
-cookie-cutter, functioning more as AWS marketing than a meaningful
-implementation guide for leaders.
-</description>
-<guid isPermaLink="false">d163f180325dfdaf3bcca8f62d53079f</guid> <pubDate>Fri,
-05 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-How Jimdo empower solopreneurs with AI-powered business assistance [ ~ ]
-</title>
-<link>https://blog.langchain.com/customers-jimdo/</link>
-<description>
-This case study describes how Jimdo uses LangChain-based assistants to help
-European solopreneurs boost customer engagement and site performance, supported
-by uplift metrics like increased inquiries and new-user growth. Our analysts
-felt that the article lacks technical depth, relies on LangChain (which analysts
-see as unsuitable for production), and feels more like a demo than a strategic
-model.
-</description>
-<guid isPermaLink="false">337e5e929d21b7892f7e1ca31e74ec34</guid> <pubDate>Fri,
-05 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Mixture of Experts Powers the Most Intelligent Frontier AI Models, Runs 10x
-Faster on NVIDIA Blackwell NVL72 [ ~ ]
-</title>
-<link>
-https://blogs.nvidia.com/blog/mixture-of-experts-frontier-models/
-</link>
-<description>
-This NVIDIA article explains how its Blackwell NVL72 hardware dramatically
-speeds up Mixture-of-Experts (MoE) models and highlights their growing dominance
-in open-source leaderboards. Our analysts marked it Optional because, while MoE
-and efficiency metrics like tokens-per-watt matter, the piece reads as GPU
-marketing with limited actionable value for strategic AI leaders.
-</description>
-<guid isPermaLink="false">70c5dbc878cbb6a8923d0a5b70a562dd</guid> <pubDate>Fri,
-05 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-How confessions can keep language models honest [ * ]
-</title>
-<link>
-https://openai.com/index/how-confessions-can-keep-language-models-honest
-</link>
-<description>
-This OpenAI research article introduces a “confession” mechanism that trains
-models to reveal when they hallucinate or use shortcuts, combining answer
-generation with an honesty-optimized reflection pathway. Our analysts rated it
-Important because it advances techniques for evaluating alignment and
-hallucination by treating honesty as a controllable signal, pointing toward
-future judge-models and evaluation frameworks.
-</description>
-<guid isPermaLink="false">5801420b1d4f353ecadf69b9b660ecc8</guid> <pubDate>Fri,
-05 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>State of AI [ ! ]</title> <link>https://openrouter.ai/state-of-ai</link>
-<description>
-This article presents OpenRouter’s massive data-driven “State of AI” report,
-summarizing 100 trillion-scale usage trends across open-source models, dominant
-applications, model leaders, and shifting inference patterns. Our panel called
-it Essential because it provides a uniquely evidence-backed view of open vs.
-closed model dynamics, explosive growth in reasoning models, and sticky
-model-adoption behaviors that AI leaders must understand.
-</description>
-<guid isPermaLink="false">69bc7dc20f7bc835b8dd8af9bf544720</guid> <pubDate>Fri,
-05 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-How Shopify uses Anthropic’s Claude on Google Cloud’s Vertex AI to supercharge
-Sidekick [ ~ ]
-</title>
-<link>https://www.claude.com/customers/shopify</link>
-<description>
-Shopify’s Sidekick assistant uses Claude on Google Cloud’s Vertex AI to help
-merchants query analytics using natural language instead of complex proprietary
-syntax ShopifyQL. The system claims sub-second response times and improved
-accessibility for sellers. Our analysts noted that the article lacked
-implementation depth and outcomes, making it more of a promotional overview than
-a detailed case study.
-</description>
-<guid isPermaLink="false">bd605030fbaff98b065b3813bfdb3941</guid> <pubDate>Mon,
-08 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Announcing Rnj‑1 [ ~ ]</title>
-<link>https://essential.ai/research/rnj-1</link>
-<description>
-Essential AI released RNJ-1, an 32-billion parameter open-source model optimized
-for math, reasoning, and code generation. The model performs strongly on SWE
-benchmarks (20%, far outperforming other small models) and demonstrates tool-use
-capabilities — but it’s still early-stage with no production validation. Our
-analysts noted that while technically impressive for its size and open-source
-status, it remains a product announcement without broader strategic implications
-or real-world deployment evidence.
-</description>
-<guid isPermaLink="false">d263ee8b9fa4930b2ca866a79ede7ea1</guid> <pubDate>Mon,
-08 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Measuring Agents in Production [ * ]</title>
-<link>https://arxiv.org/abs/2512.04123?s=09</link>
-<description>
-This paper surveys 306 practitioners across 26 industries to understand how
-companies define, deploy, and evaluate AI agents in the real world — covering
-model choices, use of multi-step workflows, and the continued reliance on human
-oversight. The study highlights that most organizations are still early in
-maturity and cautious with autonomy. Our analysts agreed that this study
-provides empirical benchmarks that AI leaders can use to calibrate their own
-agent strategies, even if the paper leans academic and technical.
-</description>
-<guid isPermaLink="false">ac3cfafd8459e94d53e38d1770c6f02e</guid> <pubDate>Mon,
-08 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-How CBRE powers unified property management search and digital assistant using
-Amazon Bedrock [ * ]
-</title>
-<link>
-https://aws.amazon.com/blogs/machine-learning/how-cbre-powers-unified-property-management-search-and-digital-assistant-using-amazon-bedrock/
-</link>
-<description>
-CBRE partnered with AWS to create a generative AI-powered digital assistant that
-lets employees query over 8 million unstructured documents using natural
-language, which is then translated to SQL for retrieval. The result was a 67%
-reduction in processing time and a major improvement in navigating complex real
-estate data. Our analysts noted that it showcases a well-documented enterprise
-use case with real impact, reinforcing how AI can drive efficiencies in
-document-heavy, traditional industries.
-</description>
-<guid isPermaLink="false">04789a370847f3c358d1ef014f25c1b5</guid> <pubDate>Mon,
-08 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-The Impact of Visual Generative AI on Advertising Effectiveness [ ! ]
-</title>
-<link>
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5638311&s=09
-</link>
-<description>
-This academic study from Emory and NYU tested how consumers respond to human,
-AI-modified, and fully AI-generated ads. Surprisingly, fully AI-generated ads
-outperformed the others by 19%, while AI-modified ads performed worst. However,
-disclosing that an ad was AI-generated reduced trust by 31.5%. Our analysts
-agreed that this study provides actionable, data-driven insights on AI-driven
-content creation and consumer perception — a must-read for marketing leaders
-adapting to AI-generated media.
-</description>
-<guid isPermaLink="false">de4914375322615bc355ca59685286a2</guid> <pubDate>Mon,
-08 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>How AI is transforming work at Anthropic [ ! ]</title>
-<link>
-https://www.anthropic.com/research/how-ai-is-transforming-work-at-anthropic
-</link>
-<description>
-Anthropic conducted a detailed internal study analyzing how 132 engineers use
-generative AI at work to understand how AI impacts coding tasks, productivity,
-collaboration, and trust. They found AI adoption doubled productivity, expanded
-skill sets, and shifted collaboration from peer mentoring to solo AI-assisted
-work, while non-technical users were successfully using AI for tasks like
-debugging and data analysis. Our analysts rated this essential because it’s one
-of the first large-scale, real-world data sets showing how generative AI
-transforms knowledge work, offering lessons that will soon apply across
-industries.
-</description>
-<guid isPermaLink="false">f32e94b21771565dac6688ccd6cb11a7</guid> <pubDate>Mon,
-08 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Qwen3-TTS Update! 49 Timbres + 10 Languages + 9 Dialects [ ~ ]
-</title>
-<link>https://qwen.ai/blog?id=qwen3-tts-1128</link>
-<description>
-Qwen3-TTS expands multilingual support and vocal timbres for text-to-speech but
-does not open-source the model or offer a significant advance over existing
-competitive tools like ElevenLabs. Our analysts considered it a routine product
-update with limited strategic implications for AI leaders.
-</description>
-<guid isPermaLink="false">11431953f8a1f92263dad69f5bf47461</guid> <pubDate>Tue,
-09 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>The AI Consumer Index (ACE) [ ~ ]</title>
-<link>https://arxiv.org/abs/2512.04921?s=09</link>
-<description>
-The ACE benchmark tests consumer-facing AI tools on everyday tasks like shopping
-and cooking, finding that top models performed at or below 50%, showing a gap
-between consumer expectations and model capabilities. Our analysts agreed that
-it's early-stage research from a data-labeling company and lacks immediate
-actionable value for enterprise AI leaders.
-</description>
-<guid isPermaLink="false">adbfe4e7fdc12a5251d726f8b58e8e7f</guid> <pubDate>Tue,
-09 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-How Airtable Built a High Quality Q&A Assistant [ * ]
-</title>
-<link>
-https://medium.com/airtable-eng/how-we-built-a-high-quality-q-a-assistant-738ae9efeb7a
-</link>
-<description>
-Airtable's case study illustrates how AI was used to enable executives to query
-unstructured and semi-structured data across data bases in Airtable with natural
-language, demonstrating the potential of AI as a user interface. Our analysts
-noted that it exemplifies a real-world implementation of AI-driven interfaces
-and signals a broader trend in enterprise data access and productivity tools.
-</description>
-<guid isPermaLink="false">83475b11af2f83b4e8e25a9230042e20</guid> <pubDate>Tue,
-09 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Playing Pretend: Expert Personas Don't Improve Factual Accuracy [ * ]
-</title>
-<link>
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5879722
-</link>
-<description>
-This research shows that adding expert personas to prompts, a common
-prompt-engineering technique, doesnâ€™t improve factual accuracy of large
-language models. Our analysts marked this as important because it challenges a
-widespread practice and informs more efficient and evidence-backed prompt
-engineering.
-</description>
-<guid isPermaLink="false">dea90519cdeae62a65a8310047b42ef9</guid> <pubDate>Tue,
-09 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Traversing the Frontier of Superintelligence [ * ]</title>
-<link>https://poetiq.ai/posts/arcagi_announcement</link>
-<description>
-Poetiq introduces a meta-agent architecture that sits atop frontier models (like
-GPT-5 or Gemini) and improves performance, efficiency, and flexibility across
-benchmarks like ARC-AGI. While benchmarks are strong, our analysts agreed that
-it's still research-stage without deployment data, though the architecture
-suggests a new layer of AI performance improvement strategies.
-</description>
-<guid isPermaLink="false">cf87ae027d2beb3563bac6aeb110d520</guid> <pubDate>Tue,
-09 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>The State of Enterprise AI 2025 Report [ ! ]</title>
-<link>
-https://openai.com/index/the-state-of-enterprise-ai-2025-report/?s=09
-</link>
-<description>
-This report from OpenAI shows that enterprise AI use has moved decisively from
-experimentation into embedded workflows: workers report saving 40-60 minutes per
-day, and heavy users more than 10 hours a week. It also reveals a sharp
-bifurcation between frontier users, the ones who use AI tools up to sixteen
-times more than average users, and the rest of the market, underscoring a
-growing performance gap that leaders must address. Our analysts noted the
-breadth of adoption data, its significance for AI leaders making strategy
-decisions, and the clear message that AI is now part of business-as-usual for
-many companies.
-</description>
-<guid isPermaLink="false">26fd76a714ede63a0b236192d11a8c27</guid> <pubDate>Tue,
-09 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>What If? AI in 2026 and Beyond [ ~ ]</title>
-<link>
-https://www.oreilly.com/radar/what-if-ai-in-2026-and-beyond/
-</link>
-<description>
-This forward‑looking essay from O'Reilly offers scenarios on how AI might evolve
-in coming years from economic “singularity”-style shifts to more incremental
-technological change. While speculative, it provides a useful big‑picture lens,
-though our analysts viewed it as lower priority compared to data‑backed reports
-or concrete model releases.
-</description>
-<guid isPermaLink="false">39975ef6512821fa5a64f1d1a0843e08</guid> <pubDate>Wed,
-10 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>Devstral 2 family of models [ ~ ]</title>
-<link>https://mistral.ai/news/devstral-2-vibe-cli</link>
-<description>
-Devstral 2 marks the latest release from Mistral AI, a 123‑billion‑parameter
-coding model (and a 24 B “Small” sibling) optimized for agentic
-software‑engineering tasks with a 256 K‑token context window and strong
-SWE‑bench performance. Our analysts noted that the product offers a
-terminal‑native coding assistant via Mistral Vibe CLI, making open‑source,
-locally deployable code agents more accessible. This is a positive for
-open‑source developers, though the update is seen as incremental rather than
-transformative.
-</description>
-<guid isPermaLink="false">7ab6810f1133b02b621de0a198594b11</guid> <pubDate>Wed,
-10 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-GLM‑4.6V: Open Source Multimodal Models with Native Tool Use [ * ]
-</title>
-<link>https://z.ai/blog/glm-4.6v</link>
-<description>
-The post describes a new family of models from a Chinese company Z.ai including
-a 106B-parameter variant and a smaller on‑device model built to support
-long-range multimodal context (images, documents, etc.) along with native
-tool‑calling, enabling AI agents to “see and act” in a unified loop. Our
-analysts viewed this as a potentially meaningful step for multimodal,
-open‑source, agentic AI and worth tracking for future workflows.
-</description>
-<guid isPermaLink="false">df43f9b45b9e97b2364d2dac3988955c</guid> <pubDate>Wed,
-10 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Banco Bradesco streamlines customer service with Azure AI Foundry, apps, and
-databases [ ! ]
-</title>
-<link>
-https://www.microsoft.com/en/customers/story/25660-banco-bradesco-sa-azure-ai-foundry
-</link>
-<description>
-The case study shows how Banco Bradesco used Microsoft Azure AI Foundry to build
-customizable, low‑code AI agents enabling non‑technical teams to deploy
-generative‑AI tools for customer service and internal workflows. Our analysts
-agreed that this demonstrates a real, enterprise‑grade application of generative
-AI, giving a concrete example of operational impact beyond experimental pilots.
-</description>
-<guid isPermaLink="false">5f9ec8d2efc27fe5a6167b51d9a060fb</guid> <pubDate>Wed,
-10 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Sam Altman’s Sprint to Correct OpenAI’s Direction and Fend Off Google [ ! ]
-</title>
-<link>
-https://www.wsj.com/tech/ai/openai-sam-altman-google-code-red-c3a312ad
-</link>
-<description>
-This WSJ article outlines how OpenAI under Sam Altman is reportedly scrambling
-to recalibrate strategy amid growing pressure from rivals like Google and
-shifting market demands. Our analysts flagged this as “on‑the‑beat” coverage
-with strong implications for the future competitive and strategic landscape of
-generative AI.
-</description>
-<guid isPermaLink="false">620811aa12fa089e6ccbc1a523345909</guid> <pubDate>Wed,
-10 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-2025: The State of Generative AI in the Enterprise [ ! ]
-</title>
-<link>
-https://menlovc.com/perspective/2025-the-state-of-generative-ai-in-the-enterprise/
-</link>
-<description>
-This data‑driven report from Menlo Ventures provides a comprehensive snapshot of
-generative AI adoption in enterprise — covering model usage trends, vendor vs.
-build‑in‑house dynamics, and the shifting AI‑vendor landscape. Our analysts
-emphasized it as vital reading for anyone planning or evaluating AI strategy in
-a business context.
-</description>
-<guid isPermaLink="false">92d328d451d679e529c1c27c9b6478fd</guid> <pubDate>Wed,
-10 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-How Hud's runtime sensor cut triage time from 3 hours to 10 minutes [ ~ ]
-</title>
-<link>
-https://venturebeat.com/ai/how-huds-runtime-sensor-cut-triage-time-from-3-hours-to-10-minutes
-</link>
-<description>
-This article describes a successful case of AI-driven operational efficiency in
-healthcare, where Hud's runtime sensor reduced patient triage times drastically.
-While the analysts acknowledged the real-world impact, they saw this as a niche
-use case with limited implications for broader AI strategy or platform
-evolution.
-</description>
-<guid isPermaLink="false">19820f8d0ebb7b2b1142fb4f0d1b9907</guid> <pubDate>Thu,
-11 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-Apriel-1.6-15b-Thinker: Cost-efficient Frontier Multimodal Performance [ ~ ]
-</title>
-<link>
-https://huggingface.co/blog/ServiceNow-AI/apriel-1p6-15b-thinker
-</link>
-<description>
-ServiceNow’s new 15B parameter multimodal model offers decent, cost-efficient
-performance, but doesn't outperform leading models and adds to the daily influx
-of similar releases. Analysts questioned the strategic rationale behind
-companies like ServiceNow building their own models but acknowledged it may be
-part of a long-term vertical integration strategy to preserve market power.
-</description>
-<guid isPermaLink="false">832cdfc777c23a355892c3d69181c356</guid> <pubDate>Thu,
-11 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-It's About Time: The Copilot Usage Report 2025 [ ~ ]
-</title>
-<link>
-https://microsoft.ai/wp-content/uploads/2025/12/What_people_do_with_Copilot-8.pdf
-</link>
-<description>
-Microsoft’s usage report provides detailed insights into consumer Copilot
-behavior segmented by time and device type, like health queries on mobile and
-work during standard business hours. Despite offering a unique lens on task/time
-articulation, our analysts noted that the report excludes enterprise data,
-limiting its strategic value for AI leaders seeking enterprise-grade insights.
-</description>
-<guid isPermaLink="false">9d250e7c5281e8127319aac0b95f7126</guid> <pubDate>Thu,
-11 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>How People Use AI Agents [ ~ ]</title>
-<link>
-https://www.perplexity.ai/hub/blog/how-people-use-ai-agents
-</link>
-<description>
-Perplexity’s internal study shows that most users deploy AI agents for
-productivity and research-related tasks, coining the term “hard cognitive work.”
-While this aligns with expectations, the panel considered it a thin dataset with
-limited breadth compared to usage data from larger players like OpenAI or
-Microsoft.
-</description>
-<guid isPermaLink="false">495630fdadf5d1185b81b92541b67880</guid> <pubDate>Thu,
-11 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-A Practical Guide for Designing, Developing, and Deploying Production-Grade
-Agentic AI Workflows [ ~ ]
-</title>
-<link>https://arxiv.org/abs/2512.08769</link>
-<description>
-This research paper proposes a conceptual framework for agentic AI workflows but
-lacks real-world deployment or empirical grounding. Our analysts felt it missed
-the mark on addressing practical issues like MLOps, drift, and market dynamics,
-concluding that market power — not elegant frameworks — will dictate adoption
-paths.
-</description>
-<guid isPermaLink="false">6859952f68bdf2862bfe7cffa48b3081</guid> <pubDate>Thu,
-11 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-‘Greetings, earthlings’: Nvidia-backed Starcloud trains first AI model in space
-as orbital data center race heats up [ ~ ]
-</title>
-<link>
-https://www.cnbc.com/2025/12/10/nvidia-backed-starcloud-trains-first-ai-model-in-space-orbital-data-centers.html
-</link>
-<description>
-This article reports on Starcloud’s milestone of training an AI model in space,
-highlighting the emerging interest in orbital data centers due to their cooling
-and energy advantages. However, our analysts viewed this as more of a
-speculative, long-horizon development with limited near-term relevance for AI
-leaders, emphasizing scalability challenges and the hype-driven nature of such
-space-based initiatives.
-</description>
-<guid isPermaLink="false">66d7f521f91bf2bb188318b94d4a6fe2</guid> <pubDate>Thu,
-11 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-U.S. Investors Are Going Big on China AI Despite Concerns in Congress [ ~ ]
-</title>
-<link>https://archive.is/FhLSM#selection-547.0-550.0</link>
-<description>
-The Wall Street Journal article highlights investor interest in Chinese AI
-markets despite geopolitical and regulatory concerns, reflecting global capital
-flows into AI opportunities. Our analysts found this interesting from an
-investment angle but not directly actionable for most AI leaders.
-</description>
-<guid isPermaLink="false">67d5a08ed37969f3668afdb273d6f586</guid> <pubDate>Fri,
-12 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-OneStory: Coherent Multi‑Shot Video Generation with Adaptive Memory [ ~ ]
-</title>
-<link>https://huggingface.co/papers/2512.07802</link>
-<description>
-This Meta research white paper explores multi‑shot video generation using
-adaptive memory, advancing theoretical frameworks for consistency in
-AI‑generated video. Our analysts emphasized that, while fascinating, it remains
-early research without enterprise deployment or clear business impact at this
-stage.
-</description>
-<guid isPermaLink="false">b6f8fd35b07816a612147fac63d20f4c</guid> <pubDate>Fri,
-12 Dec 2025 00:00:00 +0000</pubDate>
-</item>
-<item>
-<title>
-The Walt Disney Company and OpenAI Reach Landmark Agreement to Bring Beloved
-Characters from Across Disney’s Brands to Sora [ * ]
-</title>
-<link>https://openai.com/index/disney-sora-agreement/</link>
-<description>
-Disney’s strategic partnership and $1 Billion equity investment in OpenAI to
-bring iconic characters into Sora signals a shift in how media companies engage
-with generative AI and branded content creation. Our analysts noted the
-significance of large media IP entering the AI space and its potential to
-transform storytelling, making this an important industry development.
-</description>
-<guid isPermaLink="false">6e3b262416826edfd7667c59ad8442d0</guid> <pubDate>Fri,
-12 Dec 2025 00:00:00 +0000</pubDate>
-</item>
+<lastBuildDate>Sun, 28 Dec 2025 16:14:56 +0000</lastBuildDate>
 <item>
 <title>
 Announcing Model Context Protocol (MCP) Support for Google Services [ * ]
@@ -940,6 +160,726 @@ news for AI leaders.
 </description>
 <guid isPermaLink="false">e175d61bd5bc98ac136a76e8095b7d43</guid> <pubDate>Fri,
 12 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Disco [ ~ ]</title> <link>https://labs.google/disco</link>
+<description>
+DISCO is a new early-stage experimental tool from Google that supports
+task-level internet interaction with an agentic UX. Our analysts found it
+interesting conceptually but light on detail and too premature to provide value
+for most AI leaders today.
+</description>
+<guid isPermaLink="false">20f8ca87d61c1122a508158add6a4699</guid> <pubDate>Mon,
+15 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+How Swisscom Builds Enterprise Agentic AI For Customer Support and Sales Using
+Amazon Bedrock Agentcore [ ~ ]
+</title>
+<link>
+https://aws.amazon.com/blogs/machine-learning/how-swisscom-builds-enterprise-agentic-ai-for-customer-support-and-sales-using-amazon-bedrock-agentcore/
+</link>
+<description>
+This AWS case study details Swisscomâ€™s implementation of agentic AI for
+customer support and sales using Bedrock AgentCore. Our analysts found the
+architecture informative but flagged the lack of real-world outcomes and
+vendor-specific framing as reasons to categorize it as optional.
+</description>
+<guid isPermaLink="false">e117a2807a75361070142022399b5788</guid> <pubDate>Mon,
+15 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>AutoGLM Goes Open Source [ ~ ]</title>
+<link>https://xiao9905.github.io/AutoGLM/blog.html</link>
+<description>
+AutoGLM, a Chinese-developed system enabling autonomous smartphone operation via
+on-screen perception, has now been open-sourced. While the technical
+accomplishment is notable, our analysts considered it experimental, with no
+platform support, making it optional reading at this stage.
+</description>
+<guid isPermaLink="false">99a6f5a5d0cff6b586117428d645979d</guid> <pubDate>Mon,
+15 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Introducing GWM-1 [ ~ ]</title>
+<link>
+https://runwayml.com/research/introducing-runway-gwm-1
+</link>
+<description>
+Runway introduced GWM-1, a world model aimed at enabling simulations for
+robotics, gaming, and agentic interaction. While the potential of world models
+is significant, our analysts viewed the announcement as early and lacking
+practical use cases, limiting its current impact for AI decision-makers.
+</description>
+<guid isPermaLink="false">ecd3aa317e7b47a7695b54c7c4d58339</guid> <pubDate>Mon,
+15 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Towards a Science of Scaling Agent Systems [ * ]</title>
+<link>https://arxiv.org/abs/2512.08296</link>
+<description>
+A research collaboration between Google, DeepMind, and MIT introduces a robust
+framework for evaluating how agentic systems scale, revealing that increasing
+agents can degrade performance depending on architecture. Our analysts
+emphasized this frameworkâ€™s value for AI leaders architecting multi-agent
+systems and called it the most analytically thorough study to date in this
+domain, though noted it remains highly technical.
+</description>
+<guid isPermaLink="false">7e9d2ffc3b56f5e3ce71363f54da04bb</guid> <pubDate>Mon,
+15 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Build with Gemini Deep Research [ * ]</title>
+<link>
+https://blog.google/technology/developers/deep-research-agent-gemini-api/
+</link>
+<description>
+Google launched the Gemini Deep Research Agent API, enabling developers to embed
+deep web research capabilities into their apps, and also open-sourced Deep
+Search QA to benchmark multi-step web research accuracy. Our analysts agreed
+this is a strategic, if expected, product move from Google, noting its relevance
+for AI leaders given the integration into Notebook LM and the broader
+implications for competition with OpenAI.
+</description>
+<guid isPermaLink="false">b775d327777e942080ec91f186c47a2b</guid> <pubDate>Mon,
+15 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Zoom AI Sets New State-Of-The-Art Benchmark On Humanity's Last Exam [ ~ ]
+</title>
+<link>
+https://www.zoom.com/en/blog/humanitys-last-exam-zoom-ai-breakthrough/
+</link>
+<description>
+Zoom AI’s federated LLM coordination system achieves notable benchmark results
+on “Humanity’s Last Exam,” showcasing effective model orchestration. Our
+analysts found it an impressive technical feat but regarded it as a ‘puff’ piece
+with limited strategic value or applicability for AI leaders.
+</description>
+<guid isPermaLink="false">8ca537ab0152c943f064c480bc0e43db</guid> <pubDate>Tue,
+16 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Your AI Strategy Needs to Expand Beyond the U.S. and China [ ~ ]
+</title>
+<link>
+https://hbr.org/2025/12/your-ai-strategy-needs-to-expand-beyond-the-u-s-and-china
+</link>
+<description>
+This article argues for geographic diversification in AI strategy, spotlighting
+countries like Canada, UAE, Singapore, and Japan as emerging markets. Our
+analysts found the execution guidance too general and questioned the maturity of
+the ecosystems discussed, making it more of a conceptual piece than a practical
+one.
+</description>
+<guid isPermaLink="false">3a2b33d9ca495313d6512bd5d27cb234</guid> <pubDate>Tue,
+16 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+BNY Builds “AI For Everyone, Everywhere” With OpenAI [ * ]
+</title>
+<link>https://openai.com/index/bny/</link>
+<description>
+BNY Mellon outlines how it has embedded generative AI into the core fabric of
+the organization by enabling employees to build AI-driven use cases across
+functions. Our analysts highlighted the company's structured
+governance—including an AI Council, Use Case Assessment Process, and AI Release
+Board—as a strong example of scalable, compliant AI integration in a highly
+regulated industry.
+</description>
+<guid isPermaLink="false">5ff7eb4981c953c24c795beeaa3c8297</guid> <pubDate>Tue,
+16 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>2025 Open Models Year in Review [ * ]</title>
+<link>
+https://www.interconnects.ai/p/2025-open-models-year-in-review
+</link>
+<description>
+This year-end roundup highlights how open source models like DeepSeek and Qwen
+gained traction and solidified their role in enterprise AI deployments. Our
+analysts agreed it provides valuable context for AI leaders planning 2026
+strategy, particularly for those evaluating open model ecosystems.
+</description>
+<guid isPermaLink="false">816c019df93e0efdf181a3987881ab0c</guid> <pubDate>Tue,
+16 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Inside NVIDIA Nemotron 3: Techniques, Tools, and Data That Make It Efficient and
+Accurate [ * ]
+</title>
+<link>
+https://developer.nvidia.com/blog/inside-nvidia-nemotron-3-techniques-tools-and-data-that-make-it-efficient-and-accurate/
+</link>
+<description>
+NVIDIA's Nemotron 3 introduces a novel hybrid Mamba-Transformer-MoE architecture
+supporting 1M-token context windows and open-source availability for agentic AI
+use cases. Our analysts noted that while it lacks wide distribution today, it
+reflects Nvidia’s strategic push into open models and long-context reasoning
+with technical innovations worth watching.
+</description>
+<guid isPermaLink="false">3f2ae0020ebe1dfaa2fae8d799403d5e</guid> <pubDate>Tue,
+16 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+How Harmonic Security Improved Their Data-Leakage Detection System [ ! ]
+</title>
+<link>
+https://aws.amazon.com/blogs/machine-learning/how-harmonic-security-improved-their-data-leakage-detection-system-with-low-latency-fine-tuned-models-using-amazon-sagemaker-amazon-bedrock-and-amazon-nova-pro/
+</link>
+<description>
+This case study outlines how Harmonic Security built a low-latency, fine-tuned
+model using AWS tools to improve their data-leakage detection capabilities,
+reducing inference time to under 500ms without losing accuracy. Our analysts
+emphasized that it demonstrates a production-grade generative AI solution with
+strong performance and high relevance for AI leaders dealing with latency,
+orchestration, and data security challenges in real-time environments.
+</description>
+<guid isPermaLink="false">260dba020281e687d50aa7f87f2b96cd</guid> <pubDate>Tue,
+16 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Evaluating AI’s Ability to Perform Scientific Research Tasks [ ~ ]
+</title>
+<link>https://openai.com/index/frontierscience/</link>
+<description>
+OpenAI’s New Frontier research evaluation framework measures whether AI can go
+beyond pattern matching to meaningfully support scientific workflows in physics,
+chemistry, biology, and other domains. Our analysts described this as an
+important milestone in understanding AI’s role in deep R&D but optional for the
+majority of enterprise leaders.
+</description>
+<guid isPermaLink="false">fe28b0ad69ac1651773d4ee6ac291cc3</guid> <pubDate>Wed,
+17 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>FLUX.2 [max] from Black Forest Labs [ * ]</title>
+<link>https://bfl.ai/models/flux-2-max</link>
+<description>
+Black Forest Labs’ FLUX.2 [max] pushes generative AI image technology closer to
+true production workflows, emphasizing photorealism, visual consistency, and
+multi‑asset control rather than one‑off creative edits. Our analysts viewed it
+as a serious contender for enterprise creative pipelines where consistent
+branding, real‑world detail, and campaign‑scale image generation matter more
+than accessibility or casual image creation.
+</description>
+<guid isPermaLink="false">5e30cda5aeb45bfdd61928d256421352</guid> <pubDate>Wed,
+17 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Introducing MiMo‑V2‑Flash From Xiaomi [ * ]</title>
+<link>https://mimo.xiaomi.com/blog/mimo-v2-flash</link>
+<description>
+Xiaomi’s MiMo‑V2‑Flash is a Mixture‑of‑Experts (MoE) open‑weight large language
+model with a 309B parameter architecture and active compute optimization,
+offering high‑speed reasoning and efficient long‑context handling — a noteworthy
+entrant in the open model ecosystem. Our analysts flagged it as important for
+leaders to watch due to its implications for cost‑efficient AI deployment and
+competition with proprietary systems.
+</description>
+<guid isPermaLink="false">55e078e6854ade31a08c796dbc667853</guid> <pubDate>Wed,
+17 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Molmo 2: State‑of‑the‑Art Video Understanding, Pointing, and Tracking [ * ]
+</title>
+<link>https://allenai.org/blog/molmo2</link>
+<description>
+The Allen Institute’s Molmo 2 family brings advanced open‑weight models that
+extend beyond static images into video grounding, dense captioning, and object
+tracking across time, pushing open multimodal AI forward. Our analysts
+highlighted that this open ecosystem development is significant for enterprise
+and academic use — especially for video analytics and grounding tasks — making
+it important for AI leaders to know.
+</description>
+<guid isPermaLink="false">402ac56e1b2eefa27057d1a9f5de740e</guid> <pubDate>Wed,
+17 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+OpenAI’s Latest Image Generation Feature — ChatGPT Images Is Here [ * ]
+</title>
+<link>
+https://openai.com/index/new-chatgpt-images-is-here/
+</link>
+<description>
+OpenAI just rolled out an upgraded ChatGPT Images experience powered by GPT
+Image 1.5, improving image generation speed and editing precision — a strategic
+response to Google’s Nano Banana Pro in the competitive AI market. Our analysts
+noted that this helps OpenAI stay competitive in multimodal UX and supports
+AI-driven content creation, making it an important release for practitioners and
+enterprise teams alike.
+</description>
+<guid isPermaLink="false">fa717a245a077fbd0adca3810ddcd1fd</guid> <pubDate>Wed,
+17 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Beyond DeepSeek: China’s Diverse Open‑Weight AI Ecosystem and Its Policy
+Implications [ ! ]
+</title>
+<link>
+https://hai.stanford.edu/assets/files/hai-digichina-issue-brief-beyond-deepseek-chinas-diverse-open-weight-ai-ecosystem-policy-implications.pdf
+</link>
+<description>
+This Stanford policy brief unpacks how China’s open‑weight model ecosystem —
+spanning many vendors and competitive offerings — is reshaping global AI
+adoption, particularly in markets that can’t afford proprietary models. Our
+analysts underscored its strategic importance for enterprise and policy leaders,
+noting that understanding these dynamics is critical for shaping AI strategy,
+governance, and competitive positioning.
+</description>
+<guid isPermaLink="false">019b39c230c318f1665e1f69f522b44b</guid> <pubDate>Wed,
+17 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Memory in the Age of AI Agents: A Survey [ ~ ]</title>
+<link>https://arxiv.org/pdf/2512.13564</link>
+<description>
+This survey paper provides a comprehensive conceptual framework for
+understanding memory structures in AI agents, outlining token‑level,
+experiential, and functional memory types. While recognized by our analysts as
+insightful for researchers and developers, it was considered too technical and
+not immediately actionable for most AI leaders, qualifying it as optional.
+</description>
+<guid isPermaLink="false">e1c2839fca1b1fb211aa3afe9e9e4994</guid> <pubDate>Thu,
+18 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>State of Agent Engineering [ ~ ]</title>
+<link>
+https://www.langchain.com/state-of-agent-engineering
+</link>
+<description>
+LangChain’s agent engineering report offers survey data on enterprise use and
+challenges with agents, highlighting adoption rates and blockers such as quality
+and consistency. Our analysts noted its value as a data point but criticized
+methodological limitations, broad definitions, and lack of strategic
+actionability, making it optional rather than essential reading.
+</description>
+<guid isPermaLink="false">f5c3e98de11671ef6671eaab4082acda</guid> <pubDate>Thu,
+18 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Introducing Meta Segment Anything Model Audio (SAM Audio) [ * ]
+</title>
+<link>https://ai.meta.com/samaudio</link>
+<description>
+Meta’s SAM Audio introduces a novel audio segmentation model that can isolate
+and extract distinct sound sources (e.g. individual voices, background music,
+ambient noise) from complex audio environments without prior labeling — a
+foundational breakthrough for real-time audio understanding. Our analysts agreed
+that this innovation pushes the frontier of multimodal AI interfaces, enabling
+more precise voice-based interaction in noisy real-world conditions and laying
+the groundwork for next-gen hearing aids, smart assistants, and ambient
+computing applications.
+</description>
+<guid isPermaLink="false">272e9666bf136e98acaebe3d7f81630c</guid> <pubDate>Thu,
+18 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Gemini 3 Flash: Frontier Intelligence Built For Speed [ ! ]
+</title>
+<link>
+https://blog.google/products/gemini/gemini-3-flash/
+</link>
+<description>
+Google has combined the multimodal and deep‑thinking capabilities of Gemini 3
+Pro into a high‑speed, cost‑efficient model that rivals leading models from
+competitors and pushes the performance and cost frontier. Our analysts
+highlighted that this marks a significant advancement for Google’s AI strategy
+in terms of speed, cost‑performance, and competitive positioning with other
+major AI providers — making it must‑know for AI leaders.
+</description>
+<guid isPermaLink="false">1a6ae6bf60fe8df106e84ebe3bfac3cb</guid> <pubDate>Thu,
+18 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+How Tata Power CoE Built A Scalable AI‑Powered Solar Panel Inspection Solution
+With Amazon Sagemaker AI and Amazon Bedrock [ ! ]
+</title>
+<link>
+https://aws.amazon.com/blogs/machine-learning/how-tata-power-coe-built-a-scalable-ai-powered-solar-panel-inspection-solution-with-amazon-sagemaker-ai-and-amazon-bedrock/
+</link>
+<description>
+This AWS case study shows a real‑world deployment of AI to solve industrial
+field problems at scale, dramatically reducing onsite revisits and improving
+operational quality for millions of rooftops. Our analysts emphasized that
+bringing AI into physical world use cases like this is a foundational shift for
+enterprise adoption, especially in challenging environments.
+</description>
+<guid isPermaLink="false">c52d3258d696d7628dabbb3df67e8399</guid> <pubDate>Thu,
+18 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Emergence of Human to Robot Transfer in VLAs [ ~ ]</title>
+<link>https://www.pi.website/research/human_to_robot</link>
+<description>
+This research explores whether Vision-Language-Action (VLA) models can
+generalize from human demonstrations to robotic applications. Our analysts
+agreed the concept is intriguing but ultimately unvalidated and overly
+speculative, marking it as an optional read for now.
+</description>
+<guid isPermaLink="false">030d02476d472f1ee779e482122fb60b</guid> <pubDate>Fri,
+19 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Mistral OCR 3 [ ~ ]</title>
+<link>https://mistral.ai/news/mistral-ocr-3</link>
+<description>
+Mistral introduces a smart OCR tool to parse forms and PDFs, a foundational
+issue in enterprise automation. Our analysts acknowledged the technical
+relevance but dismissed the announcement as premature due to lack of benchmarks,
+customers, and evidence of performance superiority.
+</description>
+<guid isPermaLink="false">3cb5fbfe9bb8396e3eb859427b020410</guid> <pubDate>Fri,
+19 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+How China built its ‘Manhattan Project’ to rival the West in AI chips [ ~ ]
+</title>
+<link>
+https://www.reuters.com/world/china/how-china-built-its-manhattan-project-rival-west-ai-chips-2025-12-17/
+</link>
+<description>
+Reuters investigates China’s covert efforts to close the gap in AI chip
+production by reverse-engineering ASML tech and recruiting ex-engineers under
+fake identities. While considered essential geopolitically, our analysts noted
+it’s less actionable for AI leaders focused on short-term enterprise AI, placing
+it in the policy-not-practice bucket.
+</description>
+<guid isPermaLink="false">13553d6fed8740c75816ac6990a175c8</guid> <pubDate>Fri,
+19 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Introducing Ray3 Modify [ * ]</title>
+<link>https://lumalabs.ai/blog/news/ray3-modify</link>
+<description>
+Luma’s Ray3 Modify advances video AI from creation to editing, with features
+like frame-level control, character consistency, and semantic editing. Our
+analysts noted this marks a shift toward production-grade AI video workflows,
+making it relevant for marketers and brand professionals as these tools become
+central to scalable content creation.
+</description>
+<guid isPermaLink="false">f78a73aa78732488387317cf1537ce39</guid> <pubDate>Fri,
+19 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Bringing AI to local businesses: How Podium is arming 10,000+ SMBs with AI
+agents [ ! ]
+</title>
+<link>https://openai.com/index/podium/</link>
+<description>
+Podium’s AI agents, like “Jerry,” are automating lead capture, scheduling, and
+follow-ups for over 10,000 small businesses across verticals like HVAC and med
+spas. Our analysts highlighted this as a tangible example of agentic AI’s
+scalability in real-world environments, showing how verticalized,
+after-hours-capable agents are creating real business value for SMBs.
+</description>
+<guid isPermaLink="false">75e1b28a49a0892045b40283a82f37e0</guid> <pubDate>Fri,
+19 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>State of Consumer AI 2025 [ ! ]</title>
+<link>
+https://www.a16z.news/p/state-of-consumer-ai-2025?utm_source=post-email-title&publication_id=13145&post_id=181915063&utm_campaign=email-post-title&isFreemail=true&r=1v3zy&triedRedirect=true&utm_medium=email
+</link>
+<description>
+This report analyzes consumer adoption of AI assistants, revealing strong user
+stickiness. Only 9% of ChatGPT users try other bots, and multi-bot usage remains
+rare. Our analysts emphasized this has major implications for enterprise AI
+strategies due to switching costs, UX retraining burdens, and OpenAI's IPO
+ambitions, drawing parallels to past tech battles like browser wars and
+reinforcing the strategic importance of user loyalty.
+</description>
+<guid isPermaLink="false">582a0aa2eae4b6d6e1872743eb90e86e</guid> <pubDate>Fri,
+19 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+FunctionGemma: Bringing Bespoke Function Calling to the Edge [ ~ ]
+</title>
+<link>
+https://blog.google/technology/developers/functiongemma/
+</link>
+<description>
+Google’s FunctionGemma offers a lightweight edge model optimized for function
+calling on-device, a technology trend toward offline or low‑latency AI
+interaction. Despite its relevance to edge AI, our analysts saw this
+announcement as more of a product update than a broad industry shift.
+</description>
+<guid isPermaLink="false">ec3999c12ccac8f2d225fce811c19a79</guid> <pubDate>Mon,
+22 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+The Shape of AI: Jaggedness, Bottlenecks and Salients [ ~ ]
+</title>
+<link>
+https://www.oneusefulthing.org/p/the-shape-of-ai-jaggedness-bottlenecks
+</link>
+<description>
+Ethan Mollick’s conceptual piece explores the uneven frontier of AI capabilities
+and limitations. While it introduces interesting ideas about where AI excels and
+falters, our analysts felt the argument was somewhat confusing and not yet
+practically actionable, making it an optional read for AI leaders.
+</description>
+<guid isPermaLink="false">d337a6f3aa712f310a58d0b40aefb9d0</guid> <pubDate>Mon,
+22 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Introducing GPT‑5.2‑Codex [ ~ ]</title>
+<link>
+https://openai.com/index/introducing-gpt-5-2-codex/
+</link>
+<description>
+OpenAI’s GPT‑5.2‑Codex represents a refinement of their coding models, merging
+the latest GPT‑5.2 improvements with Codex capabilities. Our analysts found it
+more incremental than groundbreaking, providing utility without marking a clear
+step change — hence useful but optional.
+</description>
+<guid isPermaLink="false">3c511fc7846ed134e2aab6874ad0eec0</guid> <pubDate>Mon,
+22 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>AI Will Kill All the Lawyers [ * ]</title>
+<link>
+https://spectator.com/article/ai-will-kill-all-the-lawyers/
+</link>
+<description>
+This provocative article highlights how AI automation is rapidly transforming
+professional services like legal work, illustrated through a real-world scenario
+where AI outperformed expert human lawyers. Our analysts agreed that the core
+message about AI’s disruptive industry impact resonated as an important trend
+everyone should be aware of.
+</description>
+<guid isPermaLink="false">c8e317579742f2f00b7e172e83e131ac</guid> <pubDate>Mon,
+22 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Introducing Bloom: An Open Source Tool for Automated Behavioral Evaluations [ * ]
+</title>
+<link>https://www.anthropic.com/research/bloom</link>
+<description>
+Anthropic’s Bloom introduces an open-source framework for behavioral evaluation
+of AI systems — a critical advance beyond simple benchmark performance metrics
+toward assessing how models actually behave in real-world settings. Our analysts
+saw this as a meaningful milestone for AI safety and transparency, making it an
+important development for practitioners and researchers alike.
+</description>
+<guid isPermaLink="false">88e8be55d84d2a608e14cef094d3429f</guid> <pubDate>Mon,
+22 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>2025 LLM Year in Review [ ! ]</title>
+<link>https://karpathy.bearblog.dev/year-in-review-2025/</link>
+<description>
+This review by Andrej Karpathy distills the major developments in large language
+models over 2025, highlighting trends like the shift to verifiable reward
+training approaches and the impending impact of new AI hardware. Our analysts
+agreed it’s essential reading from an AI insider to understand the field’s
+evolution and to ground future strategic decisions for AI leaders.
+</description>
+<guid isPermaLink="false">d4206d36ef8d32d20e4e8b35e88a20a6</guid> <pubDate>Mon,
+22 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Danone: Transforming Critical Business Operations at Scale with Microsoft AI &
+Autonomous Agents [ ~ ]
+</title>
+<link>
+https://www.microsoft.com/en/customers/story/25506-danone-microsoft-365-copilot
+</link>
+<description>
+Microsoft showcases how Danone used Copilot and autonomous agents to automate HR
+and order-to-cash processes across its global operations. However, our analysts
+felt the article lacked technical depth, offered limited new insight, and read
+more like sanitized corporate marketing than a substantive AI transformation
+case study.
+</description>
+<guid isPermaLink="false">833a1ebd410e7a8b2ef2805946d428ea</guid> <pubDate>Tue,
+23 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Evaluating Context Compression for AI Agents [ ~ ]</title>
+<link>https://factory.ai/news/evaluating-compression</link>
+<description>
+Factory.ai outlines its structured approach to context compression to improve
+token efficiency in long-context software development scenarios. Our analysts
+found the method transparent and developer-focused, but agreed it's a niche
+concern with limited current application for most enterprise AI users.
+</description>
+<guid isPermaLink="false">f43adf71c1a97b53b02c7c453cecd135</guid> <pubDate>Tue,
+23 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Binti Modernizes Child Welfare Systems with Claude [ ~ ]
+</title>
+<link>https://www.claude.com/customers/binti</link>
+<description>
+This case study from Anthropic highlights how Binti uses Claude to streamline
+documentation in child welfare systems. While it's a compelling “AI for Good”
+story, our analysts agreed the technical depth was lacking, making it more
+inspirational than actionable for AI decision-makers.
+</description>
+<guid isPermaLink="false">3adb1a2a004473977a42f188dc49020c</guid> <pubDate>Tue,
+23 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>GLM-4.7: Advancing the Coding Capability [ ~ ]</title>
+<link>https://z.ai/blog/glm-4.7</link>
+<description>
+Z.ai’s GLM-4.7 model demonstrates improved coding abilities and introduces novel
+thinking techniques like preserved and turn-level thinking for efficient
+inference. Our analysts noted it performs well on benchmarks but remains niche
+and primarily relevant for teams evaluating open-source LLMs, thus optional for
+most AI leaders.
+</description>
+<guid isPermaLink="false">5fca71283b7a2eef78831999f71c1146</guid> <pubDate>Tue,
+23 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>The Changing Drivers of LLM Adoption [ * ]</title>
+<link>
+https://epochai.substack.com/p/the-changing-drivers-of-llm-adoption
+</link>
+<description>
+Epoch AI presents survey data showing a shift from early adopters to broader
+organizational usage of large language models, noting increased adoption across
+demographics and industries. Our analysts considered the article valuable for AI
+leaders to understand bottom-up adoption trends and the evolving landscape of
+LLM usage, despite the data being familiar to most practitioners.
+</description>
+<guid isPermaLink="false">095e90ff0fb2e2ef25a634bc41099206</guid> <pubDate>Tue,
+23 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Evaluating Chain-Of-Thought Monitorability [ * ]</title>
+<link>
+https://openai.com/index/evaluating-chain-of-thought-monitorability/
+</link>
+<description>
+OpenAI explores how to monitor large language models' reasoning processes by
+analyzing the "chain of thought" outputs to evaluate if models are revealing
+their thinking in a consistent and observable way. Our analysts agreed this
+transparency is critical for AI leaders working on explainability,
+observability, and error tracking, especially when deploying AI models in
+enterprise settings.
+</description>
+<guid isPermaLink="false">62bd1087feffc557cadd1f2086bdbca0</guid> <pubDate>Tue,
+23 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+How dLocal Automated Compliance Reviews Using Amazon Quick Automate [ ~ ]
+</title>
+<link>
+https://aws.amazon.com/blogs/machine-learning/how-dlocal-automated-compliance-reviews-using-amazon-quick-automate/
+</link>
+<description>
+This AWS case study describes how dLocal combined traditional automation with
+limited generative AI to streamline merchant compliance reviews. While the
+results show efficiency gains, our analysts felt the AI component was relatively
+modest, making this a lower-priority read.
+</description>
+<guid isPermaLink="false">6a790f0c7427e585be74554b9c7f555c</guid> <pubDate>Wed,
+24 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+MiniMax M2.1: Significantly Enhanced Multi-Language Programming, Built for
+Real-World Complex Tasks [ ~ ]
+</title>
+<link>https://www.minimax.io/news/minimax-m21</link>
+<description>
+MiniMax M2.1 delivers incremental improvements in multi-language programming
+performance and handling of longer, more complex tasks. Our analysts considered
+this a solid but evolutionary update in the rapidly evolving open source large
+language model landscape.
+</description>
+<guid isPermaLink="false">182fdb7297c489687a316ed1dc4df773</guid> <pubDate>Wed,
+24 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+Continuously Hardening Chatgpt Atlas Against Prompt Injection Attacks [ ~ ]
+</title>
+<link>
+https://openai.com/index/hardening-atlas-against-prompt-injection/
+</link>
+<description>
+OpenAI outlines security updates aimed at reducing prompt injection
+vulnerabilities in ChatGPT Atlas through automated red teaming and mitigations.
+Our analysts viewed this as expected remediation rather than a strategic
+advance, making it an optional read mainly for those tracking AI security
+issues.
+</description>
+<guid isPermaLink="false">06399b957d8314ccc68ca70163044eee</guid> <pubDate>Wed,
+24 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Claude in Chrome [ * ]</title> <link>https://www.claude.com/chrome</link>
+<description>
+This product announcement introduces Claudeâ€™s ability to operate directly
+inside the browser, enabling AI-driven computer use such as navigation,
+clicking, and task execution. Our analysts viewed this as an important signal of
+where agentic AI is heading, while noting that enterprise adoption will require
+stronger governance and integration into controlled workflows.
+</description>
+<guid isPermaLink="false">ef6d0185e58b4dc3400dd960e73ab661</guid> <pubDate>Wed,
+24 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+A Systematic Approach to Experimenting with Gen AI [ * ]
+</title>
+<link>
+https://hbr.org/2026/01/a-systematic-approach-to-experimenting-with-gen-ai
+</link>
+<description>
+This Harvard Business Review article argues that organizations should approach
+generative AI adoption as a disciplined experimentation process rather than
+isolated pilots. While our analysts noted the guidance largely reflects
+established management practices and lacks concrete frameworks for scaling to
+production, they agreed it is an important reference for leaders seeking to
+justify and structure AI experimentation within their organizations.
+</description>
+<guid isPermaLink="false">4f74a2cc3789b50f7945d6993a330b52</guid> <pubDate>Wed,
+24 Dec 2025 00:00:00 +0000</pubDate>
+</item>
+<item>
+<title>
+AI Tools Are Overdelivering: Results from Our Large-Scale AI Productivity Survey [ ! ]
+</title>
+<link>
+https://www.lennysnewsletter.com/p/ai-tools-are-overdelivering-results
+</link>
+<description>
+This article summarizes results from a large-scale survey of approximately 1,750
+professionals showing that generative AI tools are exceeding expectations in
+productivity and work quality, particularly in software and product roles. Our
+analysts highlighted the strong data, clear task-level breakdowns, and
+widespread adoption signals as making this one of the most compelling and
+actionable pieces of AI news for leaders today.
+</description>
+<guid isPermaLink="false">640e2e99fa7b775929dd723d49ba3251</guid> <pubDate>Wed,
+24 Dec 2025 00:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
