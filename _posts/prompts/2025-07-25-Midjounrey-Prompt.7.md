@@ -8,8 +8,9 @@ permalink: /prompts/midjourney-v7-prompt-template/
 categories:
 - Prompts
 tags:
-- Midjourney
 - Image Generation
+- Artificial Intelligence
+- Content Creation
 ## NOTE: mastodon-post-id initial placeholder removed; actual id appears later.
 ## (Removed original 'mastodon-post-id: null')
 author:
@@ -18,10 +19,12 @@ author:
   url: https://tedt.org/
 date: 2025-07-25
 keywords:
-- Midjourney
+- visual generation
 - AI image generation
+- Midjourney
+- prompt engineering
 - AI art
-- visual storytelling
+- image prompts
 models-supported:
 - gpt-4
 - gpt-4-mini

@@ -32,16 +32,16 @@ categories:
 - Projects
 
 tags: 
-    - Requirements Engineering
     - Architecture
+    - Requirements Engineering
     - Documentation
 
 keywords: 
-    - automation
-    - designer
     - system architecture
-    - architecture
+    - solution architecture
     - requirements analysis
+    - automation
+    - design patterns
 
 location:
     name: Bradbury, CA

@@ -32,9 +32,18 @@ categories:
     - Philosophy
 
 tags: 
+- Planning
+- Business Strategy
+- Teaching & Education
 
 
 keywords: 
+- prompt engineering
+- strategic planning
+- self-improvement
+- content creation
+- AI prompts
+- personal development
     - improvement
     - self
     - super

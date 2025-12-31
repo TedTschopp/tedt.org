@@ -32,17 +32,16 @@ categories:
 - Projects
 
 tags: 
-    - Requirements Engineering
     - Architecture
+    - Requirements Engineering
     - Documentation
 
 keywords: 
-    - platform
-    - power
+    - Power Platform
     - system architecture
-    - design
-    - architecture
+    - solution architecture
     - requirements analysis
+    - design patterns
 
 location:
     name: Bradbury, CA

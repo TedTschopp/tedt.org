@@ -32,15 +32,16 @@ categories:
     - Opinion
 
 tags: 
-    - Planning
     - Business Strategy
-    - Management
+    - Planning
+    - Risk Management
 
 keywords: 
-    - lean
-    - business
-    - sigma
-    - analysis
+    - strategic planning
+    - business strategy
+    - process improvement
+    - risk assessment
+    - analytics
 
 location:
     name: Bradbury, CA

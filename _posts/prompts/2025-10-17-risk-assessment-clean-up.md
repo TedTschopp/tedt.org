@@ -32,12 +32,17 @@ categories:
     - Opinion
 
 tags: 
+    - Risk Management
+    - Documentation
+    - Business Strategy
 
 
 keywords: 
-    - assessment
-    - risk
-    - clean
+    - risk assessment
+    - documentation
+    - content cleanup
+    - strategic planning
+    - compliance
 
 location:
     name: Bradbury, CA

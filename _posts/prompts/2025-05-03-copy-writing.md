@@ -7,10 +7,9 @@ permalink: /prompts/marketing-copy-evaluation-template/
 categories:
 - Prompts
 tags:
-- Copywriting
-- Marketing
-- Content Evaluation
-- Web Strategy
+- Content Creation
+- Communications
+- Business Strategy
 mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -18,9 +17,12 @@ author:
   url: https://tedt.org/
 date: 2025-05-03
 keywords:
-- Marketing
-- Advertising Strategy
-- Copy Critique
+- copywriting
+- content creation
+- marketing
+- content evaluation
+- persuasion
+- web strategy
 models-supported:
 - gpt-4
 - gpt-4-mini

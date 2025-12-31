@@ -37,13 +37,11 @@ tags:
     - Documentation
 
 keywords: 
-    - review
-    - requirements
-    - analyst
-    - system architecture
-    - quality
-    - architecture
     - requirements analysis
+    - verification & validation
+    - systems engineering
+    - quality review
+    - ISO standards
 
 location:
     name: Bradbury, CA

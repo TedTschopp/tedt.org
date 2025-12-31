@@ -32,16 +32,16 @@ categories:
     - Opinion
 
 tags: 
-    - Planning
     - Business Strategy
-    - Management
+    - Planning
+    - Teaching & Education
 
 keywords: 
-    - prompts
     - prompt engineering
     - AI prompts
-    - business
-    - skills
+    - business strategy
+    - strategic planning
+    - professional development
 
 location:
     name: Bradbury, CA

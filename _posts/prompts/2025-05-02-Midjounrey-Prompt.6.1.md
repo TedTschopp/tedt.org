@@ -8,8 +8,9 @@ permalink: /prompts/midjourney-v6.1-prompt-template/
 categories:
 - Prompts
 tags:
-- Midjourney
 - Image Generation
+- Artificial Intelligence
+- Content Creation
 mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -18,25 +19,11 @@ author:
 date: 2025-05-02
 keywords:
 - Midjourney
-- Midjourney V6.1
-- prompt engineering
-- generative AI
+- visual generation
 - AI image generation
+- prompt engineering
 - AI art
-- prompt structure
 - image prompts
-- style guide
-- aspect ratio
-- chaos parameter
-- stylize parameter
-- seed value
-- negative prompting
-- photorealistic prompts
-- anime prompts
-- prompt layering
-- structured prompt
-- AI creative tools
-- visual storytelling
 models-supported:
 - gpt-4
 - gpt-4-mini

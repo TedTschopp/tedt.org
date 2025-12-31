@@ -32,16 +32,16 @@ categories:
     - Communications
 
 tags: 
-    - Communications
-    - Content Creation
     - Writing
+    - Content Creation
+    - Communications
 
 keywords: 
-    - novelist
-    - communications
+    - novel writing
+    - content creation
+    - creative writing
     - prompt engineering
-    - prompt
-    - AI prompts
+    - storytelling
 
 location:
     name: Bradbury, CA

@@ -32,16 +32,16 @@ categories:
 - Projects
 
 tags: 
-    - Requirements Engineering
     - Architecture
+    - Requirements Engineering
     - Documentation
 
 keywords: 
+    - application architecture
     - system architecture
-    - application
     - markdown
-    - architecture
     - requirements analysis
+    - documentation
 
 location:
     name: Bradbury, CA

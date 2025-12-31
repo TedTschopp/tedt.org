@@ -13,10 +13,8 @@ categories:
 - Prompts
 tags:
 - Content Creation
-- Demo
-- Variables
+- Artificial Intelligence
 - Writing
-- Customization
 models-supported:
 - gpt-4
 - gpt-4-turbo
@@ -28,6 +26,14 @@ image: /img/prompts/prompt-variable-demo.png
 image-alt: A futuristic interface showing dynamic form elements and variables being
   processed
 image-credits-title: Dynamic Prompt Variables Interface
+keywords:
+- prompt engineering
+- prompt templates
+- content creation
+- AI prompts
+- prompt design
+- customization
+- variables
 image-credits: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
 series:

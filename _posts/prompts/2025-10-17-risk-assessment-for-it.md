@@ -32,13 +32,16 @@ categories:
 - Projects
 
 tags: 
-    - Risk Assessment
-    - Corporate Risk
-    - IT Risk
+    - Risk Management
+    - Planning
+    - Business Strategy
 
 keywords: 
-    - risk
-    - assessment
+    - risk assessment
+    - IT risk
+    - strategic planning
+    - compliance
+    - security
 
 location:
     name: Bradbury, CA

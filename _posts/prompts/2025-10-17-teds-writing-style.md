@@ -32,15 +32,16 @@ categories:
     - Communications
 
 tags: 
-    - Communications
-    - Content Creation
     - Writing
+    - Content Creation
+    - Communications
 
 keywords: 
-    - style
-    - communications
-    - teds
-    - writing
+    - writing style
+    - content creation
+    - copywriting
+    - technical writing
+    - prompt engineering
 
 location:
     name: Bradbury, CA

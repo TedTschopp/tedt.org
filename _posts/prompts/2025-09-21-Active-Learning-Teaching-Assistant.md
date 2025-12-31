@@ -33,21 +33,9 @@ categories:
 - Prompts
 
 tags:
-  - teaching assistant
-  - active learning
-  - tutoring
-  - scaffolding
-  - socratic method
-  - homework policy
-  - study skills
-  - quizzes and test prep
-  - learning goals
-  - interactive exercises
-  - feedback and validation
-  - mnemonics
-  - tone and approach
-  - checklist
-  - reasoning effort
+  - Teaching & Education
+  - Artificial Intelligence
+  - Planning
 
 keywords:
   - teaching assistant prompt

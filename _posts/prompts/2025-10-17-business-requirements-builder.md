@@ -32,20 +32,16 @@ categories:
 - Projects
 
 tags: 
-    - Planning
-    - Management
-    - Business Strategy
-    - Architecture
     - Requirements Engineering
-    - Documentation
+    - Business Strategy
+    - Planning
 
 keywords: 
-    - requirements
-    - system architecture
-    - builder
-    - architecture
-    - business
     - requirements analysis
+    - business architecture
+    - strategic planning
+    - product management
+    - documentation
 
 location:
     name: Bradbury, CA

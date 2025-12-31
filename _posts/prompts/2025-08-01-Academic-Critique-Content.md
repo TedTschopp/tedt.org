@@ -13,14 +13,15 @@ date: 2025-08-01
 categories:
 - Prompts
 tags:
-- Academic Writing
-- Critique
-- Analysis
-- Evaluation
-- Research
-- Scholarly Writing
-- Peer Review
-- Assessment
+- Writing
+- Documentation
+- Communications
+keywords:
+- academic critique
+- technical writing
+- content evaluation
+- peer review
+- documentation
 models-supported:
 - gpt-4
 - gpt-4-turbo

@@ -8,11 +8,9 @@ permalink: /prompts/ai-tutoring-prompt-designer/
 categories:
 - Prompts
 tags:
-- Tutoring
-- Instructional Design
-- Coaching
-- Adaptive Learning
-- AI Education
+- Teaching & Education
+- Artificial Intelligence
+- Planning
 mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -20,21 +18,13 @@ author:
   url: https://tedt.org/
 date: 2025-05-04
 keywords:
-- tutoring prompts
-- instructional scaffolding
+- AI tutoring
+- educational AI
+- prompt engineering
+- instructional design
 - adaptive learning
-- AI tutor
-- open-ended questioning
 - educational dialogue
-- teaching strategies
-- knowledge construction
-- educational ai
-- learning misconceptions
-- example-based instruction
-- personalized learning
-- concept mastery
-- feedback and praise
-- student explanation
+- scaffolding
 models-supported:
 - gpt-4
 - gpt-4-mini

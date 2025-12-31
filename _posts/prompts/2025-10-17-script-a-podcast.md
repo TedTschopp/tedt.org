@@ -32,14 +32,16 @@ categories:
     - Communications
 
 tags: 
-    - Communications
     - Content Creation
+    - Communications
     - Writing
 
 keywords: 
-    - podcast
-    - script
+    - podcast scripting
+    - content creation
     - communications
+    - scriptwriting
+    - audio content
 
 location:
     name: Bradbury, CA

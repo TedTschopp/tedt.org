@@ -8,11 +8,9 @@ permalink: /prompts/artistic-Analysis/
 categories:
 - Prompts
 tags:
-- Art Analysis
-- Interdisciplinary
-- Cultural Commentary
-- Literary Criticism
-- Aesthetic Theory
+- Writing
+- Content Creation
+- Documentation
 mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -20,9 +18,11 @@ author:
   url: https://tedt.org/
 date: 2025-05-04
 keywords:
-- Art Criticism
-- Visual Analysis
-- Symbolic Interpretation
+- academic critique
+- visual analysis
+- content creation
+- creative writing
+- artistic interpretation
 models-supported:
 - gpt-4
 - gpt-4.5

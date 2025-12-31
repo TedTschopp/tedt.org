@@ -32,18 +32,15 @@ categories:
 - Projects
 
 tags: 
+    - Product Management
+    - Planning
     - Artificial Intelligence
-    - AI Prompts
-    - Architecture
-    - Requirements Engineering
-    - Machine Learning
-    - Documentation
 
 keywords: 
-    - system architecture
-    - ideas
-    - backlog
-    - architecture
+    - product requirements (PRD)
+    - strategic planning
+    - AI prompts
+    - product management
     - requirements analysis
 
 location:

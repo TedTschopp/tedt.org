@@ -32,14 +32,16 @@ categories:
     - Opinion
 
 tags: 
-    - Planning
     - Business Strategy
-    - Management
+    - Planning
+    - Product Management
 
 keywords: 
-    - objectives
-    - results
-    - business
+    - strategic planning
+    - business strategy
+    - OKR
+    - product management
+    - goal setting
 
 location:
     name: Bradbury, CA

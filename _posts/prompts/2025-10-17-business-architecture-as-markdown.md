@@ -32,18 +32,16 @@ categories:
 - Projects
 
 tags: 
-    - Planning
-    - Management
-    - Business Strategy
     - Architecture
-    - Requirements Engineering
+    - Business Strategy
     - Documentation
+    - Planning
 
 keywords: 
+    - business architecture
     - system architecture
     - markdown
-    - architecture
-    - business
+    - strategic planning
     - requirements analysis
 
 location:

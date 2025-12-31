@@ -8,9 +8,9 @@ permalink: /prompts/ai-teaching-assistant-prompt-creator/
 categories:
 - Prompts
 tags:
-- Education
-- Instructional Design
-- AI Assistants
+- Teaching & Education
+- Artificial Intelligence
+- Planning
 mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -18,19 +18,13 @@ author:
   url: https://tedt.org/
 date: 2025-05-04
 keywords:
-- AI teaching assistant
+- AI tutoring
+- educational AI
 - prompt engineering
+- AI prompts
+- teaching assistant
 - instructional design
-- teacher productivity
-- educational automation
-- dialogue-based AI
-- GPT-based tutoring
-- educational AI prompts
-- lesson plan assistant
-- grading assistant
-- quiz generator
-- GPT-4 educational tools
-- teaching with AI
+- lesson planning
 models-supported:
 - gpt-4
 - gpt-4.5

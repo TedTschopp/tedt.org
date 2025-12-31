@@ -34,13 +34,14 @@ categories:
 tags: 
     - Communications
     - Content Creation
-    - Writing
+    - Planning
 
 keywords: 
-    - give
-    - expert
+    - prompt engineering
+    - content creation
     - communications
-    - advice
+    - expert systems
+    - AI prompts
 
 location:
     name: Bradbury, CA

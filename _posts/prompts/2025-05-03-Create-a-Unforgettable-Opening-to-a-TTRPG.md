@@ -8,12 +8,9 @@ permalink: /prompts/Create-a-Unforgettable-Opening-to-a-TTRPG/
 categories:
 - Prompts
 tags:
+- Game Master
 - TTRPG
-- Roleplay
-- Roleplaying
-- Storytelling
-- Art Analysis
-- Worldbuilding
+- Content Creation
 mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -22,9 +19,10 @@ author:
 date: 2025-05-03
 keywords:
 - TTRPG
-- Story Prompts
-- Worldbuilding
-- Visual Storytelling
+- RPG tools
+- tabletop gaming
+- worldbuilding
+- storytelling
 - narrative design
 models-supported:
 - gpt-4

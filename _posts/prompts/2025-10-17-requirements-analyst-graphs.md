@@ -37,12 +37,11 @@ tags:
     - Documentation
 
 keywords: 
-    - graphs
-    - requirements
-    - system architecture
-    - analyst
-    - architecture
     - requirements analysis
+    - system architecture
+    - MBSE
+    - visualization
+    - documentation
 
 location:
     name: Bradbury, CA

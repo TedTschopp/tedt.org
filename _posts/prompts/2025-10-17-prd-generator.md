@@ -32,15 +32,16 @@ categories:
 - Projects
 
 tags: 
+    - Product Management
     - Requirements Engineering
-    - Architecture
     - Documentation
 
 keywords: 
-    - architecture
-    - system architecture
-    - generator
+    - product requirements (PRD)
     - requirements analysis
+    - system architecture
+    - documentation
+    - product management
 
 location:
     name: Bradbury, CA

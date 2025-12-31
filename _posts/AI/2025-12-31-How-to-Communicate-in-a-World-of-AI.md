@@ -2,7 +2,7 @@
 layout: post
 
 title: "How to Communicate in a World of AI"
-subtitle: "Why specification thinking is the new office superpower"
+subtitle: "Why Specification Thinking is the New Office Superpower"
 quote: "When doing gets easier, the bottleneck shifts toward knowing what you want and communicating it precisely."
 excerpt: "AI accelerates drafting and execution, shifting the bottleneck to clear intent. Specifications—goals, constraints, and tests—turn prompts into repeatable quality."
 source: "Original Content"
@@ -24,7 +24,7 @@ bullets:
 - "A strong office specification defines purpose, audience, scope, allowed inputs, success criteria, and examples."
 - "Use the loop: specification → generate → evaluate → revise to build trust and scale collaboration."
 
-description: "AI speeds up producing drafts, but it doesn’t preserve the intent behind them. This post argues that specifications—clear goals, constraints, and success criteria—are the shared language that aligns people and AI. It explains how specs differ from prompts and evaluations, and offers a simple specification-first playbook for everyday work."
+description: "AI speeds up producing documents, but it doesn’t preserve the intent behind them. This post argues that specifications—clear goals, constraints, and success criteria—are the shared language that aligns people and AI. It explains how specs differ from prompts and evaluations, and offers a simple specification-first playbook for everyday work."
 
 seo-description: "AI makes drafting faster, but clarity becomes scarce. Learn specification thinking—goals, constraints, and evaluation—to get repeatable, auditable work."
 

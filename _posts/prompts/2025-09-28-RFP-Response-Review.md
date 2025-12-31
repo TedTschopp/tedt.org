@@ -33,21 +33,17 @@ categories:
 - Prompts
 
 tags:
-  - rfp
-  - evaluation
-  - vendor responses
-  - rubric
-  - compliance
-  - scoring
-  - procurement
-  - analysis
-  - governance
-  - risk assessment
+  - Business Strategy
+  - Planning
+  - Risk Management
 
 keywords:
-  - rfp evaluation
-  - vendor response analysis
-  - procurement scoring
+  - RFP
+  - procurement
+  - vendor analysis
+  - risk assessment
+  - compliance
+  - strategic planning
   - rubric-based grading
   - compliance review
   - risk and gap analysis

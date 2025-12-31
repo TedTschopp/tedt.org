@@ -33,18 +33,15 @@ categories:
 
 tags: 
     - Artificial Intelligence
-    - AI Prompts
-    - Architecture
-    - Requirements Engineering
-    - Machine Learning
     - Documentation
+    - Architecture
 
 keywords: 
+    - AI prompts
+    - documentation
+    - content creation
     - system architecture
-    - document
-    - generator
-    - architecture
-    - requirements analysis
+    - technical writing
 
 location:
     name: Bradbury, CA

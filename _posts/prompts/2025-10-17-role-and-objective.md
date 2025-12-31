@@ -32,9 +32,18 @@ categories:
     - AI
 
 tags: 
+- Planning
+- Documentation
+- Business Strategy
 
 
 keywords: 
+- prompt engineering
+- AI prompts
+- role definition
+- objective setting
+- strategic planning
+- content creation
     - objective
     - role
 

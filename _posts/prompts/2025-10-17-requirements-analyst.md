@@ -40,12 +40,12 @@ tags:
     - SRS Generation
 
 keywords: 
-    - requirements analyst
-    - ISO 29148
-    - SRS generation
+    - requirements analysis
+    - ISO standards
     - systems engineering
-    - meeting transcript analysis
-    - requirements specification
+    - MBSE
+    - documentation
+    - SRS generation
 
 location:
     name: Bradbury, CA

@@ -37,12 +37,11 @@ tags:
     - Documentation
 
 keywords:
-   - requirements
-   - test cases
-   - user stories
-   - testing
-   - analyst
    - requirements analysis
+   - verification & validation
+   - systems engineering
+   - test cases
+   - Gherkin
 
 location:
     name: Bradbury, CA

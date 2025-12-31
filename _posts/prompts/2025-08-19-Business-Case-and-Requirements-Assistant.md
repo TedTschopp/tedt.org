@@ -7,14 +7,10 @@ permalink: /prompts/business-case-and-requirements-assistant/
 categories:
   - Prompts
 tags:
-  - Agile
-  - Product Management
   - Requirements Engineering
-  - Backlog Refinement
-  - User Stories
-  - Acceptance Criteria
-  - Verification & Validation
-  - MBSE
+  - Product Management
+  - Planning
+  - Business Strategy
 mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -23,14 +19,12 @@ author:
 
 date: 2025-08-19
 keywords:
-   - Agile Coaching
-   - Business Case
-   - Backlog Decomposition
+   - business case
+   - requirements analysis
+   - product requirements (PRD)
    - Gherkin
-   - INVEST
-   - User Personas
-   - Compliance
-   - Verification and Validation
+   - user personas
+   - verification & validation
    - MBSE
 models-supported:
    - gpt-4

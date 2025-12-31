@@ -8,11 +8,9 @@ permalink: /prompts/ai-simulation-creator/
 categories:
 - Prompts
 tags:
-- Simulation
-- Roleplay
-- Instructional Design
-- AI Mentor
-- Skill Building
+- Teaching & Education
+- Artificial Intelligence
+- Planning
 mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -20,13 +18,12 @@ author:
   url: https://tedt.org/
 date: 2025-05-04
 keywords:
+- AI simulation
+- educational AI
+- AI tutoring
+- prompt engineering
 - roleplay simulation
-- AI game master
 - experiential learning
-- performance feedback
-- negotiation training
-- hiring simulations
-- instructional scenarios
 - skill-based learning
 - scenario-based AI
 - workplace simulation

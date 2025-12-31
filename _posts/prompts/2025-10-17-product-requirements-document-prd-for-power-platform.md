@@ -32,18 +32,16 @@ categories:
 - Projects
 
 tags: 
+    - Product Management
     - Requirements Engineering
-    - Architecture
     - Documentation
 
 keywords: 
-    - requirements
-    - system architecture
-    - product
-    - architecture
-    - (prd)
+    - product requirements (PRD)
+    - Power Platform
     - requirements analysis
-    - document
+    - documentation
+    - product management
 
 location:
     name: Bradbury, CA

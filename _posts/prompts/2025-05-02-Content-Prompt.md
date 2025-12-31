@@ -8,8 +8,10 @@ permalink: /prompts/social-media-repurposing-template/
 categories:
 - Prompts
 tags:
-- Content Strategy
-- Social Media
+- Content Creation
+- Communications
+- Writing
+- Business Strategy
 mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -17,17 +19,13 @@ author:
   url: https://tedt.org/
 date: 2025-05-03
 keywords:
-- content strategy
+- content creation
+- social media
+- copywriting
 - platform repurposing
-- prompt template
 - markdown
-- AI tools
-- social media copy
-- tone adaptation
-- audience engagement
-- LinkedIn writing
-- Threads content
-- Mastodon post
+- prompt templates
+- content strategy
 - Instagram feed
 - YouTube Shorts
 - TikTok captions

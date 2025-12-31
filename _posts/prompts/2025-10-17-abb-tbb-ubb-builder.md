@@ -32,15 +32,16 @@ categories:
 - Projects
 
 tags: 
-    - Requirements Engineering
     - Architecture
+    - Requirements Engineering
     - Documentation
 
 keywords: 
-    - architecture
-    - builder
-    - requirements analysis
     - system architecture
+    - solution architecture
+    - requirements analysis
+    - design patterns
+    - building blocks
 
 location:
     name: Bradbury, CA

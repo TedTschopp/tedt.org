@@ -34,15 +34,14 @@ categories:
 tags: 
     - Game Master
     - TTRPG
-    - Roleplay
+    - Content Creation
 
 keywords: 
-    - skill
-    - profile
     - RPG tools
-    - ttrpg
-    - generator
+    - TTRPG
     - tabletop gaming
+    - character generator
+    - content creation
 
 location:
     name: Bradbury, CA

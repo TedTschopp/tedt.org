@@ -32,13 +32,17 @@ categories:
     - AI
 
 tags: 
+    - Content Creation
+    - Communications
+    - Planning
 
 
 keywords: 
-    - AI prompts
+    - presentation
+    - public speaking
+    - content creation
     - prompt engineering
-    - talks
-    - prompt
+    - storytelling
 
 location:
     name: Bradbury, CA

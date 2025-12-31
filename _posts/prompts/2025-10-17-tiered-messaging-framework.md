@@ -34,13 +34,14 @@ categories:
 tags: 
     - Communications
     - Content Creation
-    - Writing
+    - Business Strategy
 
 keywords: 
-    - framework
-    - tiered
+    - content creation
     - communications
-    - messaging
+    - messaging framework
+    - copywriting
+    - stakeholder management
 
 location:
     name: Bradbury, CA

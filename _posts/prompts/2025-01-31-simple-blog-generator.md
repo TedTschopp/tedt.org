@@ -10,10 +10,15 @@ author:
 date: 2025-01-31
 categories: [Prompts]
 tags: 
-  - Blogging
-  - Writing 
-  - Simple 
-  - Basic
+  - Content Creation
+  - Writing
+  - Communications
+keywords:
+  - blog writing
+  - content creation
+  - copywriting
+  - prompt templates
+  - AI prompts
 
 models-supported: [gpt-4, gpt-4-mini, microsoft-copilot, github]
 

@@ -32,9 +32,18 @@ categories:
     - AI
 
 tags: 
+- Image Generation
+- Artificial Intelligence
+- Content Creation
 
 
 keywords: 
+- visual generation
+- video generation
+- Sora
+- AI prompts
+- prompt engineering
+- AI video
     - AI prompts
     - prompt engineering
     - sora

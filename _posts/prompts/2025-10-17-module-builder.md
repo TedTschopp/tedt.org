@@ -34,14 +34,14 @@ categories:
 tags: 
     - Game Master
     - TTRPG
-    - Roleplay
+    - Content Creation
 
 keywords: 
     - RPG tools
-    - ttrpg
-    - module
-    - builder
+    - TTRPG
     - tabletop gaming
+    - module builder
+    - content creation
 
 location:
     name: Bradbury, CA
