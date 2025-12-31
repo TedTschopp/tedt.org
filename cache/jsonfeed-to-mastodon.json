@@ -3287,5 +3287,38 @@
       "https://tschopp.net/users/Ted/statuses/115645594401124111"
     ],
     "lastTootTimestamp": 1764611731105
+  },
+  "https://tedt.org/How-to-Communicate-in-a-World-of-AI/": {
+    "id": "/How-to-Communicate-in-a-World-of-AI/",
+    "title": "How to Communicate in a World of AI",
+    "summary": "AI accelerates drafting and execution, shifting the bottleneck to clear intent. Specifications—goals, constraints, and tests—turn prompts into repeatable quality.",
+    "content_text": "AI accelerates drafting and execution, shifting the bottleneck to clear intent. Specifications—goals, constraints, and tests—turn prompts into repeatable quality. https://tedt.org/How-to-Communicate-in-a-World-of-AI/",
+    "url": "https://tedt.org/How-to-Communicate-in-a-World-of-AI/",
+    "image": "https://tedt.org/img/2025-12/Specification-Thinking-team-drafting-a-six-bullet.webp",
+    "tags": [
+      "ai",
+      "communication",
+      "specifications",
+      "specification-writing",
+      "prompt-engineering",
+      "evaluation",
+      "rubrics",
+      "documentation",
+      "knowledge-work",
+      "version-control",
+      "quality",
+      "governance"
+    ],
+    "date_published": "2025-12-31T13:09:45-08:00",
+    "date_modified": "2025-12-31T13:09:45-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115816390305907643"
+    ],
+    "lastTootTimestamp": 1767217869765
   }
 }
