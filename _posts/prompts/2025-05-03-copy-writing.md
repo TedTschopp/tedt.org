@@ -17,12 +17,11 @@ author:
   url: https://tedt.org/
 date: 2025-05-03
 keywords:
-- copywriting
-- content creation
-- marketing
-- content evaluation
-- persuasion
-- web strategy
+  - content creation
+  - copywriting
+  - persuasion
+  - prompt engineering
+  - social media
 models-supported:
 - gpt-4
 - gpt-4-mini

@@ -32,21 +32,18 @@ categories:
     - AI
 
 tags: 
-- Planning
-- Documentation
-- Business Strategy
+  - Planning
+  - Documentation
+  - Business Strategy
 
 
-keywords: 
-- prompt engineering
-- AI prompts
-- role definition
-- objective setting
-- strategic planning
-- content creation
-    - objective
-    - role
-
+keywords:
+  - content creation
+  - goal setting
+  - objective setting
+  - prompt engineering
+  - role definition
+  - strategic planning
 location:
     name: Bradbury, CA
 coordinates:

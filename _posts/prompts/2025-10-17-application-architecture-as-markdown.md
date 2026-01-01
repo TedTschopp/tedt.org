@@ -36,13 +36,12 @@ tags:
     - Requirements Engineering
     - Documentation
 
-keywords: 
-    - application architecture
-    - system architecture
-    - markdown
-    - requirements analysis
-    - documentation
-
+keywords:
+  - documentation
+  - markdown
+  - requirements analysis
+  - solution architecture
+  - system architecture
 location:
     name: Bradbury, CA
 coordinates:
@@ -294,10 +293,10 @@ prompt_content: |
   
   <Instructions>
   
-  1. **Reference Personas & Journeys** – Summarize key user personas (e.g., “Customer Alice,” “Operations Bob”) and the critical journeys each application must support. Map every major UI flow to a business capability or service described earlier.  One‑page persona cards; end‑to‑end journey maps	Map each major UI flow to a business capability or service.
-  2. **Reference Design Principles** - Up‑front principles (e.g., mobile‑first, glove‑friendly controls, minimal data entry)	Principles guide all later decisions.
+  1. **Reference Personas & Journeys** – Summarize key user personas (e.g., “Customer Alice,” “Operations Bob”) and the critical journeys each application must support. Map every major UI flow to a business capability or service described earlier.  One‑page persona cards; end‑to‑end journey maps  Map each major UI flow to a business capability or service.
+  2. **Reference Design Principles** - Up‑front principles (e.g., mobile‑first, glove‑friendly controls, minimal data entry)  Principles guide all later decisions.
   3. **Specify Design System Components** – Identify the design system (e.g., internal Design System X, Material 3, Carbon) and list the atomic components, templates, and micro‑front‑end shells to be reused. Link to the component repository and usage guidelines.  
-  4. **Reference Visual & Interaction Standards** - Color palette, typography, spacing, iconography; navigation, input controls, error handling, data‑viz, offline banners	Cite corporate style guide; document break‑points and responsive grid.
+  4. **Reference Visual & Interaction Standards** - Color palette, typography, spacing, iconography; navigation, input controls, error handling, data‑viz, offline banners  Cite corporate style guide; document break‑points and responsive grid.
   5. **Define Interaction Patterns** – Document standard navigation (global header, side‑rail, breadcrumb), input controls, error handling, data‑visualization patterns, and responsive break‑points. Explain how these patterns support the principles of clarity, efficiency, and forgiveness.  
   6. **Accessibility & Inclusivity** – State conformance targets (WCAG 2.2 AA minimum) and describe how color contrast, keyboard navigation, focus management, ARIA roles, and alternative text will be implemented and verified.  
   7. **Usability Metrics & Validation** – Establish KPIs such as task‑completion rate, System Usability Scale (SUS) score, Net Promoter Score (NPS), and time‑on‑task. Outline the cadence for usability testing (prototype tests, A/B experiments, post‑launch surveys) and the feedback loop to product backlogs.  

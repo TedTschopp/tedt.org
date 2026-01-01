@@ -18,21 +18,24 @@ author:
   url: https://tedt.org/
 date: 2025-05-02
 keywords:
-- Midjourney
-- visual generation
-- AI image generation
-- prompt engineering
-- AI art
-- image prompts
+  - documentation
+  - image generation
+  - Midjourney
+  - prompt engineering
+  - visual generation
+bullets:
+  - Structured weight-based prompt system for Midjourney V6.1
+  - Detailed formatting and keyword layering
+  - Comprehensive parameter explanations
 models-supported:
-- gpt-4
-- gpt-4-mini
-- gpt-4.5
-- 3
-- 04-mini
-- 04-mini-high
-- microsoft-copilot
-- github
+  - gpt-4
+  - gpt-4-mini
+  - gpt-4.5
+  - 3
+  - 04-mini
+  - 04-mini-high
+  - microsoft-copilot
+  - github
 prompt_content: "You will now act as a prompt generator for a generative AI called\
   \ \"Midjourney V6.1\". Midjourney AI generates images based on given prompts.I will\
   \ provide a concept in so wait till i give you instruction and you will provide\

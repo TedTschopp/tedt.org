@@ -36,13 +36,12 @@ tags:
     - Content Creation
     - Planning
 
-keywords: 
-    - prompt engineering
-    - content creation
-    - communications
-    - expert systems
-    - AI prompts
-
+keywords:
+  - content creation
+  - expert systems
+  - knowledge management
+  - prompt engineering
+  - stakeholder communications
 location:
     name: Bradbury, CA
 coordinates:

@@ -36,13 +36,13 @@ tags:
     - Content Creation
     - Business Strategy
 
-keywords: 
-    - content creation
-    - communications
-    - messaging framework
-    - copywriting
-    - stakeholder management
-
+keywords:
+  - content creation
+  - copywriting
+  - messaging framework
+  - messaging strategy
+  - prompt engineering
+  - stakeholder communications
 location:
     name: Bradbury, CA
 coordinates:
@@ -73,9 +73,7 @@ models-supported:
 - github
 prompt_content: |
   ## Tiered Messaging Framework
-  
-  ---
-  
+ 
   ### Level 1: Core Message in a Single Sentence
   
   #### Purpose
@@ -109,8 +107,6 @@ prompt_content: |
   * Use plain language accessible to a general audience
   * Clearly reflect the core benefit or value
   
-  ---
-  
   ### Level 2: Supporting Paragraph
   
   #### Purpose
@@ -143,8 +139,6 @@ prompt_content: |
   * Maintain brevity, typically fifty words or fewer
   * Clearly align with the core message
   * Avoid overly technical terms unless necessary
-  
-  ---
   
   ### Level 3: One-Pager / Executive Summary
   
@@ -184,8 +178,6 @@ prompt_content: |
   * Limit to one standard page (\~400–500 words); visual elements like infographics or diagrams are encouraged to enhance readability and engagement.
   * Organize clearly using headers, bullet points, or visual aids
   * Use direct, persuasive, and strategically aligned language
-  
-  ---
   
   ### Level 4: Detailed Communication / Messaging Plan
   
@@ -265,8 +257,6 @@ This prompt is designed for professional communications tiered messaging framewo
 
 ```
 ## Tiered Messaging Framework
-
----
 
 ### Level 1: Core Message in a Single Sentence
 

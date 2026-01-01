@@ -36,13 +36,12 @@ tags:
     - Planning
     - Artificial Intelligence
 
-keywords: 
-    - product requirements (PRD)
-    - strategic planning
-    - AI prompts
-    - product management
-    - requirements analysis
-
+keywords:
+  - backlog management
+  - product management
+  - product requirements
+  - requirements analysis
+  - strategic planning
 location:
     name: Bradbury, CA
 coordinates:
@@ -183,89 +182,89 @@ prompt_content: |
   - Simulate energy trading scenarios, optimize power purchase agreements (PPAs), and forecast wholesale energy pricing. - "
   "47. Electric Grid Troubleshooting Automation - AI-driven diagnostic tool for faster fault identification and resolution.
   Use Case:
-  •	Develop a knowledge graph integrating historical outage data, asset information, and GIS data to guide troubleshooting.
-  •	Implement natural language processing (NLP) models that allow field engineers to query a system for guidance.
-  •	Deploy computer vision models to analyze drone or sensor footage for visual signs of failure (e.g., corrosion, equipment tilt).
-  •	Integrate with ticketing systems (e.g., ServiceNow) to automate issue escalation and resolution.
+  •  Develop a knowledge graph integrating historical outage data, asset information, and GIS data to guide troubleshooting.
+  •  Implement natural language processing (NLP) models that allow field engineers to query a system for guidance.
+  •  Deploy computer vision models to analyze drone or sensor footage for visual signs of failure (e.g., corrosion, equipment tilt).
+  •  Integrate with ticketing systems (e.g., ServiceNow) to automate issue escalation and resolution.
   Outcome: Faster diagnosis of faults with reduced manual effort, improving field technician efficiency. - "
   "48. Ai-Assisted Switching - Automating and optimizing switchgear control for grid reconfiguration.
   Use Case:
-  •	Use reinforcement learning (RL) models that predict optimal switching sequences during fault isolation or grid congestion.
-  •	Integrate with Distribution Management Systems (DMS) for real-time switching control.
-  •	Factor in load balancing, voltage control, and DER integration to ensure grid stability.
+  •  Use reinforcement learning (RL) models that predict optimal switching sequences during fault isolation or grid congestion.
+  •  Integrate with Distribution Management Systems (DMS) for real-time switching control.
+  •  Factor in load balancing, voltage control, and DER integration to ensure grid stability.
   Outcome: Faster response to outages, improved grid stability, and efficient DER integration. - "
   "49. Zonal Control Grid Management - AI-driven grid partitioning and localized control for enhanced stability.
   Use Case:
-  •	Develop AI models that dynamically segment the grid into self-sufficient zones for fault isolation and localized optimization.
-  •	Use graph neural networks (GNNs) to analyze electrical topology and identify optimal zones.
-  •	Predict overload risks or instability points in each zone and proactively balance power flow.
+  •  Develop AI models that dynamically segment the grid into self-sufficient zones for fault isolation and localized optimization.
+  •  Use graph neural networks (GNNs) to analyze electrical topology and identify optimal zones.
+  •  Predict overload risks or instability points in each zone and proactively balance power flow.
   Outcome: Enhanced grid resilience, especially during extreme weather or wildfire risks. - "
   "50. Predictive Outage & Storm Management - Forecasting storm impact and automating crew readiness.
   Use Case:
-  •	Develop predictive models that combine weather data, vegetation indices, and asset health metrics to forecast outage risks.
-  •	Use geospatial analytics to model storm paths and predict the most vulnerable grid segments.
-  •	Automate crew dispatch optimization by integrating with workforce management platforms.
+  •  Develop predictive models that combine weather data, vegetation indices, and asset health metrics to forecast outage risks.
+  •  Use geospatial analytics to model storm paths and predict the most vulnerable grid segments.
+  •  Automate crew dispatch optimization by integrating with workforce management platforms.
   Outcome: Reduced restoration times, improved resource allocation, and proactive outage prevention. - "
   "51. System Operator Co-pilot - AI-powered assistant for real-time decision support.
   Use Case:
-  •	Deploy an AI copilot interface that uses NLP and ML models to analyze SCADA data, recommend control actions, and automate reports.
-  •	Integrate with Digital Twin models for real-time simulation and impact analysis.
-  •	Enable voice-based or text-driven guidance for system operators during critical grid events.
+  •  Deploy an AI copilot interface that uses NLP and ML models to analyze SCADA data, recommend control actions, and automate reports.
+  •  Integrate with Digital Twin models for real-time simulation and impact analysis.
+  •  Enable voice-based or text-driven guidance for system operators during critical grid events.
   Outcome: Faster, data-driven decisions with improved situational awareness. - "
   "52. AI-Assisted FLISR (Fault Location, Isolation, and Service Restoration) - Enhanced FLISR capabilities using AI for faster service restoration.
   Use Case:
-  •	Train ML models to analyze historical fault data, power flow patterns, and topology to predict likely fault locations.
-  •	Use reinforcement learning models to optimize FLISR sequences by prioritizing key feeders or critical loads.
-  •	Automate sectionalizing switches to reroute power and minimize outage impact.
+  •  Train ML models to analyze historical fault data, power flow patterns, and topology to predict likely fault locations.
+  •  Use reinforcement learning models to optimize FLISR sequences by prioritizing key feeders or critical loads.
+  •  Automate sectionalizing switches to reroute power and minimize outage impact.
   Outcome: Faster restoration, reduced outage duration, and improved customer satisfaction. - "
   "53. Auto Dispatcher - AI-optimized field crew dispatching for efficient response.
   Use Case:
-  •	Develop AI-driven route optimization models that prioritize dispatch orders based on fault severity, crew availability, and geographic proximity.
-  •	Incorporate geospatial data for real-time traffic, terrain conditions, and access constraints.
-  •	Enable two-way communication with crews for dynamic re-routing.
+  •  Develop AI-driven route optimization models that prioritize dispatch orders based on fault severity, crew availability, and geographic proximity.
+  •  Incorporate geospatial data for real-time traffic, terrain conditions, and access constraints.
+  •  Enable two-way communication with crews for dynamic re-routing.
   Outcome: Reduced downtime, improved crew efficiency, and cost savings. - "
   "54. AI-Enhanced Contigency Analysis - Predictive models for proactive contingency planning.
   Use Case:
-  •	Implement AI models that simulate “N-1,” “N-2,” or “N-x” contingency scenarios.
-  •	Use graph-based models to evaluate cascading failures across transmission and distribution systems.
-  •	Integrate AI with EMS (Energy Management Systems) to automate contingency plan recommendations.
+  •  Implement AI models that simulate “N-1,” “N-2,” or “N-x” contingency scenarios.
+  •  Use graph-based models to evaluate cascading failures across transmission and distribution systems.
+  •  Integrate AI with EMS (Energy Management Systems) to automate contingency plan recommendations.
   Outcome: Improved grid resilience and proactive risk mitigation. - "
   "55. Generative Design & Engineering - AI-driven design optimization for infrastructure projects.
   Use Case:
-  •	Utilize Generative AI models to generate optimal substation layouts, transmission tower designs, and cable routing.
-  •	Use physics-informed neural networks to ensure designs adhere to load, thermal, and mechanical constraints.
-  •	Automate design comparison for efficiency, material cost, and environmental impact.
+  •  Utilize Generative AI models to generate optimal substation layouts, transmission tower designs, and cable routing.
+  •  Use physics-informed neural networks to ensure designs adhere to load, thermal, and mechanical constraints.
+  •  Automate design comparison for efficiency, material cost, and environmental impact.
   Outcome: Faster engineering design cycles with cost-effective and optimized designs. - "
   "56. Engineering Expert Assistant / Copilot (Engineering RAG Tool) - Retrieval-Augmented Generation (RAG) tool for engineering support.
   Use Case:
-  •	Implement an AI copilot trained on utility standards, engineering manuals, and technical documentation.
-  •	Use vector search and knowledge graphs to retrieve relevant engineering best practices and solutions.
-  •	Enable conversational interfaces to assist engineers in complex design or troubleshooting tasks.
+  •  Implement an AI copilot trained on utility standards, engineering manuals, and technical documentation.
+  •  Use vector search and knowledge graphs to retrieve relevant engineering best practices and solutions.
+  •  Enable conversational interfaces to assist engineers in complex design or troubleshooting tasks.
   Outcome: Enhanced decision-making for engineers with quick access to complex technical information. - "
   "57. AI-Enhanced Interconnection Assessment - AI-driven assessment for DER integration and grid impact analysis.
   Use Case:
-  •	Develop AI models that analyze proposed solar, wind, or battery installations to predict grid impact.
-  •	Simulate power flow changes, voltage fluctuations, and fault current impacts in real-time.
-  •	Provide automated recommendations for optimal interconnection points and capacity limits.
+  •  Develop AI models that analyze proposed solar, wind, or battery installations to predict grid impact.
+  •  Simulate power flow changes, voltage fluctuations, and fault current impacts in real-time.
+  •  Provide automated recommendations for optimal interconnection points and capacity limits.
   Outcome: Faster DER integration with improved grid stability. - "
   "58. Intelligent Asset Management (Predictive Maintenance & Vegetation Management) - AI models for asset health monitoring and vegetation risk reduction.
   Use Case:
-  •	Deploy AI models that use vibration, temperature, and electrical stress data to predict asset failure.
-  •	Use drone-based computer vision models to monitor vegetation encroachment along power lines.
-  •	Integrate with maintenance platforms to prioritize high-risk assets for proactive repair.
+  •  Deploy AI models that use vibration, temperature, and electrical stress data to predict asset failure.
+  •  Use drone-based computer vision models to monitor vegetation encroachment along power lines.
+  •  Integrate with maintenance platforms to prioritize high-risk assets for proactive repair.
   Outcome: Improved asset lifespan, reduced maintenance costs, and improved reliability. - "
   "59. Event Impact Modeling - AI-powered simulations for analyzing grid stress events.
   Use Case:
-  •	Develop simulation models that predict how wildfire threats, earthquakes, or cyberattacks will propagate across the grid.
-  •	Use agent-based modeling to simulate the behavior of customers, DERs, and utility crews in response to events.
-  •	Generate automated impact reports and response recommendations.
+  •  Develop simulation models that predict how wildfire threats, earthquakes, or cyberattacks will propagate across the grid.
+  •  Use agent-based modeling to simulate the behavior of customers, DERs, and utility crews in response to events.
+  •  Generate automated impact reports and response recommendations.
   Outcome: Improved emergency preparedness and faster recovery strategies. - "
   "60. Incipient Faults Predictive Analytics - Detecting early-stage faults before they escalate into major outages.
   Use Case:
-  •	Build a data pipeline that aggregates waveform data from sensors like PMUs (Phasor Measurement Units), smart meters, and SCADA systems.
-  •	Utilize AI models (e.g., LSTM, CNNs) to analyze waveform distortions for signs of insulation breakdown, arcing, or partial discharge events.
-  •	Integrate streaming analytics platforms like Apache Kafka for real-time data ingestion and alert generation.
-  •	Use pattern recognition and signal decomposition techniques to filter noise and accurately identify anomalies.
+  •  Build a data pipeline that aggregates waveform data from sensors like PMUs (Phasor Measurement Units), smart meters, and SCADA systems.
+  •  Utilize AI models (e.g., LSTM, CNNs) to analyze waveform distortions for signs of insulation breakdown, arcing, or partial discharge events.
+  •  Integrate streaming analytics platforms like Apache Kafka for real-time data ingestion and alert generation.
+  •  Use pattern recognition and signal decomposition techniques to filter noise and accurately identify anomalies.
   Outcome: Early detection of failing transformers, underground cable issues, or failing circuit breakers to improve grid reliability. - "
   61. Job Package Automation - Automatically perform engineering analysis tasks and create job packages which are technical documents that are utilized by field technicians to perform installation work for DGS Infrastructure and services.   - 
   62. Outage Reporting Automation - Automation and AI to analyze data to perform impact analyais of DGS assets and subsequently create standardized communications to report impact to clients.  Able to classify outages as non-service impacting or service impacting.  Able to repeat outage analysis real time before taking outage and compare to initial analysis to validate impact is the same. - 

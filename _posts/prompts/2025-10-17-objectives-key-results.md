@@ -36,13 +36,13 @@ tags:
     - Planning
     - Product Management
 
-keywords: 
-    - strategic planning
-    - business strategy
-    - OKR
-    - product management
-    - goal setting
-
+keywords:
+  - business strategy
+  - goal setting
+  - OKR framework
+  - product management
+  - prompt engineering
+  - strategic planning
 location:
     name: Bradbury, CA
 coordinates:

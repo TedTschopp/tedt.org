@@ -28,21 +28,20 @@ description: "Professional risk assessment prompt designed for high-quality cont
 seo-description: "Master risk assessment for IT with this comprehensive AI prompt featuring structured templates and best practices."
 
 categories:
-- Prompts
-- Projects
+  - Prompts
+  - Projects
 
 tags: 
-    - Risk Management
-    - Planning
-    - Business Strategy
+  - Risk Management
+  - Planning
+  - Business Strategy
 
-keywords: 
-    - risk assessment
-    - IT risk
-    - strategic planning
-    - compliance
-    - security
-
+keywords:
+  - compliance
+  - IT risk management
+  - prompt engineering
+  - risk assessment
+  - strategic planning
 location:
     name: Bradbury, CA
 coordinates:

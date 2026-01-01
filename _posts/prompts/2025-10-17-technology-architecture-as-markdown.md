@@ -36,13 +36,13 @@ tags:
     - Requirements Engineering
     - Documentation
 
-keywords: 
-    - technology architecture
-    - solution architecture
-    - system architecture
-    - markdown
-    - documentation
-
+keywords:
+  - documentation
+  - markdown
+  - prompt engineering
+  - solution architecture
+  - system architecture
+  - technology architecture
 location:
     name: Bradbury, CA
 coordinates:
@@ -175,7 +175,7 @@ prompt_content: |
          1. [Roadmap Timeline](#roadmap-timeline)
          2. [Technology Lifecycle Status](#technology-lifecycle-status)
          3. [Future Evolution](#future-evolution)
-     11. [Infrastructure Resilience and Performance \[TODO REMOVE ME INTO SECTION 5\]](#infrastructure-resilience-and-performance-todo-remove-me-into-section-5)
+     11. [Infrastructure Resilience and Performance](#infrastructure-resilience-and-performance)
          1. [Resiliency and Availability](#resiliency-and-availability)
          2. [Performance and Scalability](#performance-and-scalability)
          3. [Capacity and Growth Planning](#capacity-and-growth-planning)
@@ -1300,7 +1300,7 @@ prompt_content: |
   
   *(Placeholder – briefly mention any known future technology trends or upgrades beyond the current target state. For example, “Plan to incorporate IoT sensor networks in 2026” or “Evaluate quantum-safe encryption by 2027”. This provides forward-looking context to the roadmap.)*
   
-  ## Infrastructure Resilience and Performance [TODO REMOVE ME INTO SECTION 5]
+  ## Infrastructure Resilience and Performance
   
   *(Guidance: Specify the **non-functional requirements** related to resilience and performance that the technology architecture must support. This includes availability, reliability, disaster recovery, and performance (throughput, latency) targets. Also describe how the architecture meets these requirements.)*
   

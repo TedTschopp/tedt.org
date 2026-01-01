@@ -37,19 +37,13 @@ tags:
 - Teaching & Education
 
 
-keywords: 
-- prompt engineering
-- strategic planning
-- self-improvement
-- content creation
-- AI prompts
-- personal development
-    - improvement
-    - self
-    - super
-    - your
-    - find
-
+keywords:
+  - content creation
+  - personal development
+  - prompt engineering
+  - self-improvement
+  - strategic planning
+  - strengths assessment
 location:
     name: Bradbury, CA
 coordinates:

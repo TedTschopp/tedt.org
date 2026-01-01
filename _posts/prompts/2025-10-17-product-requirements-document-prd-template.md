@@ -36,13 +36,12 @@ tags:
     - Requirements Engineering
     - Documentation
 
-keywords: 
-    - product requirements (PRD)
-    - requirements analysis
-    - documentation
-    - product management
-    - templates
-
+keywords:
+  - documentation
+  - product management
+  - product requirements
+  - requirements analysis
+  - templates
 location:
     name: Bradbury, CA
 coordinates:

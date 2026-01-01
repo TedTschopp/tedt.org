@@ -36,13 +36,12 @@ tags:
     - Requirements Engineering
     - Artificial Intelligence
 
-keywords: 
-    - prompt engineering
-    - AI prompts
-    - system architecture
-    - requirements analysis
-    - prompt design
-
+keywords:
+  - prompt design
+  - prompt engineering
+  - prompt templates
+  - requirements analysis
+  - system architecture
 location:
     name: Bradbury, CA
 coordinates:

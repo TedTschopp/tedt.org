@@ -38,13 +38,6 @@ tags:
 
 
 keywords: 
-- visual generation
-- video generation
-- Sora
-- AI prompts
-- prompt engineering
-- AI video
-    - AI prompts
     - prompt engineering
     - sora
     - prompt

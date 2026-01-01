@@ -36,13 +36,12 @@ tags:
     - Requirements Engineering
     - Documentation
 
-keywords: 
-    - product requirements (PRD)
-    - requirements analysis
-    - system architecture
-    - documentation
-    - product management
-
+keywords:
+  - documentation
+  - product management
+  - product requirements
+  - requirements analysis
+  - system architecture
 location:
     name: Bradbury, CA
 coordinates:
@@ -191,12 +190,12 @@ prompt_content: |
      - Address all points mentioned in each section
     
   6. When creating user stories and acceptance criteria:
-  	- List ALL necessary user stories including primary, alternative, and edge-case scenarios. 
-  	- Assign a unique requirement ID (e.g., US-001) to each user story for direct traceability
-  	- Include at least one user story specifically for secure access or authentication if the application requires user identification or access restrictions
-  	- Ensure no potential user interaction is omitted
-  	- Make sure each user story is testable
-  	- Review the user_story example below for guidance on how to structure your user stories
+    - List ALL necessary user stories including primary, alternative, and edge-case scenarios. 
+    - Assign a unique requirement ID (e.g., US-001) to each user story for direct traceability
+    - Include at least one user story specifically for secure access or authentication if the application requires user identification or access restrictions
+    - Ensure no potential user interaction is omitted
+    - Make sure each user story is testable
+    - Review the user_story example below for guidance on how to structure your user stories
     
   7. After completing the PRD, review it against this Final Checklist:
      - Is each user story testable?
@@ -206,12 +205,12 @@ prompt_content: |
     
   8. Format your PRD:
      - Maintain consistent formatting and numbering.
-    	- Do not use dividers or horizontal rules in the output.
-    	- List ALL User Stories in the output!
-  	  - Format the PRD in valid Markdown, with no extraneous disclaimers.
-  	  - Do not add a conclusion or footer. The user_story section is the last section.
-  	  - Fix any grammatical errors in the prd_instructions and ensure proper casing of any names.
-  	  - When referring to the project, do not use project_title. Instead, refer to it in a more simple and conversational way. For example, "the project", "this tool" etc.
+      - Do not use dividers or horizontal rules in the output.
+      - List ALL User Stories in the output!
+      - Format the PRD in valid Markdown, with no extraneous disclaimers.
+      - Do not add a conclusion or footer. The user_story section is the last section.
+      - Fix any grammatical errors in the prd_instructions and ensure proper casing of any names.
+      - When referring to the project, do not use project_title. Instead, refer to it in a more simple and conversational way. For example, "the project", "this tool" etc.
     
   </steps>
   

@@ -32,18 +32,17 @@ categories:
     - Opinion
 
 tags: 
-    - Risk Management
-    - Documentation
-    - Business Strategy
+  - Risk Management
+  - Documentation
+  - Business Strategy
 
 
-keywords: 
-    - risk assessment
-    - documentation
-    - content cleanup
-    - strategic planning
-    - compliance
-
+keywords:
+  - compliance
+  - content creation
+  - documentation
+  - risk assessment
+  - strategic planning
 location:
     name: Bradbury, CA
 coordinates:

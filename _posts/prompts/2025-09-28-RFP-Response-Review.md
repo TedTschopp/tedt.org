@@ -38,16 +38,13 @@ tags:
   - Risk Management
 
 keywords:
-  - RFP
-  - procurement
-  - vendor analysis
-  - risk assessment
+  - assessment tools
   - compliance
+  - procurement
+  - quality review
+  - risk assessment
   - strategic planning
-  - rubric-based grading
-  - compliance review
-  - risk and gap analysis
-  - reviewer q&a
+
 models-supported:
    - gpt-4
    - gpt-4.1

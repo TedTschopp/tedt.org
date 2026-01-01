@@ -27,13 +27,15 @@ image-alt: A futuristic interface showing dynamic form elements and variables be
   processed
 image-credits-title: Dynamic Prompt Variables Interface
 keywords:
-- prompt engineering
-- prompt templates
-- content creation
-- AI prompts
-- prompt design
-- customization
-- variables
+  - content creation
+  - documentation
+  - dynamic variables
+  - prompt engineering
+  - prompt templates
+bullets:
+  - Demonstrates all variable input types (text, textarea, number, select, radio, checkbox)
+  - Dynamic content creation with customizable format and style
+  - Comprehensive example for variable-driven prompts
 image-credits: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
 series:

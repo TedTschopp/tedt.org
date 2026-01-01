@@ -19,13 +19,13 @@ author:
 
 date: 2025-08-19
 keywords:
-   - business case
-   - requirements analysis
-   - product requirements (PRD)
-   - Gherkin
-   - user personas
-   - verification & validation
-   - MBSE
+  - business strategy
+  - Gherkin
+  - MBSE
+  - product requirements
+  - requirements analysis
+  - user personas
+  - verification & validation
 models-supported:
    - gpt-4
    - gpt-4.1

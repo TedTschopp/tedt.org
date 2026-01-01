@@ -19,36 +19,29 @@ author:
   url: https://tedt.org/
 date: 2025-05-03
 keywords:
-- content creation
-- social media
-- copywriting
-- platform repurposing
-- markdown
-- prompt templates
-- content strategy
-- Instagram feed
-- YouTube Shorts
-- TikTok captions
-- email newsletter
-- multi-platform strategy
-- writing prompts
-- enterprise communication
-- thought leadership
+  - content creation
+  - copywriting
+  - creative writing
+  - markdown
+  - prompt templates
+  - social media
+  - stakeholder communications
+  - thought leadership
 models-supported:
-- gpt-4
-- gpt-4-mini
-- gpt-4.5
-- 3
-- 04-mini
-- 04-mini-high
-- microsoft-copilot
-- github
+  - gpt-4
+  - gpt-4-mini
+  - gpt-4.5
+  - 3
+  - 04-mini
+  - 04-mini-high
+  - microsoft-copilot
+  - github
 prompt_content: "You are a cross-platform content strategist. I will provide you with\
   \ a blog post including a title, subtitle, body content, and (optionally) a description\
   \ of an accompanying image. Your task is to rewrite the content for the following\
   \ platforms:\n\n1. \U0001F418 Mastodon\n2. \U0001F4BC LinkedIn\n3. \U0001F9F5 Viva\
   \ Engage / Yammer\n4. \U0001F324\uFE0F Bluesky\n5. \U0001F4AC Microsoft Teams\n\
-  6. \U0001F4EC Email Newsletter\n7. \U0001F3AC YouTube Shorts / TikTok / Instagram\
+  1. \U0001F4EC Email Newsletter\n7. \U0001F3AC YouTube Shorts / TikTok / Instagram\
   \ Reels\n8. \U0001F4F8 Instagram (Feed Post)\n9. \U0001F310 Facebook\n10. \U0001F9F5\
   \ Threads\n11. \U0001F3A7 Podcast\n12. \U0001FAB5 Markdown Output (this one)\n\n\
   Each output should reflect the tone, structure, and audience expectations of that\

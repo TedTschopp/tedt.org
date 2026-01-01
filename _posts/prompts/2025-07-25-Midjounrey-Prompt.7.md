@@ -19,21 +19,24 @@ author:
   url: https://tedt.org/
 date: 2025-07-25
 keywords:
-- visual generation
-- AI image generation
-- Midjourney
-- prompt engineering
-- AI art
-- image prompts
+  - documentation
+  - image generation
+  - Midjourney
+  - prompt engineering
+  - visual generation
+bullets:
+  - Structured prompt system for Midjourney V7
+  - Weight-based keyword layering
+  - Detailed parameter specifications and formatting
 models-supported:
-- gpt-4
-- gpt-4-mini
-- gpt-4.5
-- 3
-- 04-mini
-- 04-mini-high
-- microsoft-copilot
-- github
+  - gpt-4
+  - gpt-4-mini
+  - gpt-4.5
+  - 3
+  - 04-mini
+  - 04-mini-high
+  - microsoft-copilot
+  - github
 prompt_content: |-
   Developer: # Role and Objective
   - Create structured text prompts for Midjourney Version 7 image generation, strictly following the specified format and integrating detailed scene, style, and parameter specifications.

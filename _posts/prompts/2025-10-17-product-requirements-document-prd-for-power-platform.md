@@ -36,13 +36,12 @@ tags:
     - Requirements Engineering
     - Documentation
 
-keywords: 
-    - product requirements (PRD)
-    - Power Platform
-    - requirements analysis
-    - documentation
-    - product management
-
+keywords:
+  - documentation
+  - Power Platform
+  - product management
+  - product requirements
+  - requirements analysis
 location:
     name: Bradbury, CA
 coordinates:

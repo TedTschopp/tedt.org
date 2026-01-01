@@ -37,11 +37,11 @@ tags:
     - Teaching & Education
 
 keywords: 
-    - prompt engineering
-    - AI prompts
     - business strategy
-    - strategic planning
     - professional development
+    - prompt engineering
+    - skill development
+    - strategic planning
 
 location:
     name: Bradbury, CA
@@ -653,7 +653,7 @@ prompt_content: |
   
      Example: *What are the feedback loops reinforcing or stabilizing this problem?*
   
-  6. **Jobs-to-be-Done (JTBD):**
+  6. **Jobs-to-be-Done:**
      Explore the problem through the lens of underlying jobs customers or stakeholders are trying to accomplish.
   
      Example: *What fundamental job is our user trying to achieve that our problem relates to or disrupts?*

@@ -37,9 +37,9 @@ tags:
     - Architecture
 
 keywords: 
-    - AI prompts
-    - documentation
     - content creation
+    - documentation
+    - prompt engineering
     - system architecture
     - technical writing
 

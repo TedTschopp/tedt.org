@@ -18,13 +18,16 @@ author:
   url: https://tedt.org/
 date: 2025-05-04
 keywords:
-- AI tutoring
-- educational AI
-- prompt engineering
-- AI prompts
-- teaching assistant
-- instructional design
-- lesson planning
+  - documentation
+  - educational AI
+  - instructional design
+  - prompt engineering
+  - teaching tools
+bullets:
+  - Dialogue-based prompt for building custom teaching assistants
+  - Streamlines lesson planning, quiz generation, and grading
+  - Customizable for specific instructional tasks
+
 models-supported:
 - gpt-4
 - gpt-4.5

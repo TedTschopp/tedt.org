@@ -36,13 +36,13 @@ tags:
     - TTRPG
     - Content Creation
 
-keywords: 
-    - RPG tools
-    - TTRPG
-    - tabletop gaming
-    - character generator
-    - content creation
-
+keywords:
+  - character development
+  - content creation
+  - prompt engineering
+  - RPG tools
+  - tabletop gaming
+  - TTRPG
 location:
     name: Bradbury, CA
 coordinates:

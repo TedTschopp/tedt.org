@@ -18,22 +18,21 @@ author:
   url: https://tedt.org/
 date: 2025-05-04
 keywords:
-- AI tutoring
-- educational AI
-- prompt engineering
-- instructional design
-- adaptive learning
-- educational dialogue
-- scaffolding
+  - adaptive learning
+  - educational AI
+  - educational dialogue
+  - instructional design
+  - prompt engineering
+  - scaffolding
 models-supported:
-- gpt-4
-- gpt-4-mini
-- gpt-4.5
-- 3
-- 04-mini
-- 04-mini-high
-- microsoft-copilot
-- github
+  - gpt-4
+  - gpt-4-mini
+  - gpt-4.5
+  - 3
+  - 04-mini
+  - 04-mini-high
+  - microsoft-copilot
+  - github
 prompt_content: "Goal: In this exercise, you will work with the user to create a code\
   \ block tutoring prompt to help someone else learn about or get better at something\
   \ the user knows well.\nPersona: You are an AI instructional designer, helpful and\

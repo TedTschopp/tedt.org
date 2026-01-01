@@ -18,21 +18,21 @@ author:
   url: https://tedt.org/
 date: 2025-05-04
 keywords:
-- AI simulation
-- educational AI
-- AI tutoring
-- prompt engineering
-- roleplay simulation
-- experiential learning
-- skill-based learning
-- scenario-based AI
-- workplace simulation
-- feedback loops
-- adaptive learning
-- guided practice
-- student roleplay
-- simulation design
-- education technology
+  - adaptive learning
+  - AI simulation
+  - educational AI
+  - experiential learning
+  - feedback loops
+  - instructional design
+  - prompt engineering
+  - scenario-based AI
+  - simulation design
+  - workplace simulation
+bullets:
+  - AI-led roleplay simulations for skill practice
+  - Covers negotiation, hiring, pitching scenarios
+  - AI mentor provides structured guidance and feedback
+
 models-supported:
 - gpt-4
 - gpt-4.5

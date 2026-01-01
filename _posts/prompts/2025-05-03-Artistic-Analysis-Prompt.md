@@ -18,11 +18,15 @@ author:
   url: https://tedt.org/
 date: 2025-05-04
 keywords:
-- academic critique
-- visual analysis
-- content creation
-- creative writing
-- artistic interpretation
+  - academic critique
+  - content creation
+  - creative writing
+  - prompt engineering
+  - visual generation
+bullets:
+  - Scholarly analysis of artistic works across any medium
+  - Symbolically-rich and culturally contextual critiques
+  - Covers visual, auditory, and performative arts
 models-supported:
 - gpt-4
 - gpt-4.5

@@ -17,11 +17,16 @@ tags:
 - Documentation
 - Communications
 keywords:
-- academic critique
-- technical writing
-- content evaluation
-- peer review
-- documentation
+  - academic critique
+  - content creation
+  - documentation
+  - quality review
+  - technical writing
+bullets:
+  - Structured framework for scholarly paper analysis
+  - Detailed grading rubric and evaluation criteria
+  - Professional standards for academic content review
+
 models-supported:
 - gpt-4
 - gpt-4-turbo
@@ -110,7 +115,9 @@ variables:
   default: 'no'
   required: true
   help: Should the critique include a formal grading assessment?
-prompt_content: "Act as an academic reviewer and critique the content provided using\
+
+prompt_content: |
+  Act as an academic reviewer and critique the content provided using\
   \ the following structured template. Focus your analysis on {{critique_focus}} and\
   \ follow {{citation_style}} citation standards throughout your critique.\n\n**Critique\
   \ Level:** {{critique_depth}}\n**Paper Title:** {{paper_title}}\n**Author(s):**\
@@ -322,9 +329,14 @@ prompt_content: "Act as an academic reviewer and critique the content provided u
   \                | 4     | Nearly error-free                                   \
   \ |\n| Use of Sources/Citations | 3     | Minor citation errors, otherwise well-chosen\
   \ sources |\n| **Total**                | 23    |                              \
-  \                        |\n\n<Standards>\n\n* **AAC\\&U VALUE Rubrics** (American\
-  \ Association of Colleges & Universities)\n* **APA / MLA / Chicago Style Guidelines**\n\
-  * **Bloom\u2019s Taxonomy for Critical Thinking**\n"
+  \                        |
+
+  <Standards>
+
+  * **AAC\&U VALUE Rubrics** (American Association of Colleges & Universities)
+  * **APA / MLA / Chicago Style Guidelines**
+  * **Bloom's Taxonomy for Critical Thinking**
+
 image_width: 1456
 image_height: 816
 

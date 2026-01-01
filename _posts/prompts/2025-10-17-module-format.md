@@ -36,13 +36,13 @@ tags:
     - TTRPG
     - Content Creation
 
-keywords: 
-    - RPG tools
-    - TTRPG
-    - tabletop gaming
-    - module builder
-    - content creation
-
+keywords:
+  - content creation
+  - module templates
+  - prompt engineering
+  - RPG tools
+  - tabletop gaming
+  - TTRPG
 location:
     name: Bradbury, CA
 coordinates:
@@ -81,8 +81,6 @@ prompt_content: |
   5. **Conclusion**
   6. **Appendices**
   
-  ---
-  
   ## 1. Introduction
   
   **Purpose:** To equip the Game Master (GM) with essential information for running the adventure effectively.
@@ -96,8 +94,6 @@ prompt_content: |
   * **Game Mechanics Notes:** Highlights any specific rules or mechanics pertinent to the adventure's system.
   
   * **Preparation Tips:** Suggests how to utilize provided materials like handouts, maps, and character sheets for optimal gameplay.
-  
-  ---
   
   ## Acts of the adventure
   <INSTRUCTIONS> For each act in the adventure, fill out one of the following.
@@ -180,9 +176,6 @@ prompt_content: |
   
   * **Key Locations:** Details significant places the PCs will encounter, providing context and potential interactions.
   
-  
-  
-  
   ### Key Locations
   
   #### 1. **Location Header**
@@ -240,10 +233,7 @@ prompt_content: |
   <function> Helps the GM guide player movement and understand the spatial layout of the setting.
   
   <instructions>References to adjacent areas, such as "A path leads north to the forest glade" or "A staircase descends into the cellar."
-  
-  
-  
-  
+    
   ### **Non-Player Characters (NPCs):** Introduces important NPCs, outlining their roles and relevance to the unfolding events.
   
   <purpose>Provide the Game Master (GM) with detailed profiles of characters that inhabit the game world, excluding the player characters. These profiles offer insights into each NPC's role, motivations, and potential interactions with players.
@@ -665,8 +655,6 @@ prompt_content: |
   4. Detail Each Path: Provide concise summaries of each resolution path, including the final state of the game world and the implications for the players.
   5. Maintain Flexibility: Encourage GMs to adapt the resolution paths as needed, based on the unique dynamics of their gaming group.
   
-  ---
-  
   ## 5. Conclusion
   
   **Purpose:** To provide closure, reflecting on the PCs' actions and their impact on the game world.
@@ -679,8 +667,6 @@ prompt_content: |
   
   * **Player Feedback:** Encourages reflection on the adventure's events, fostering player engagement and satisfaction.
   
-  ---
-  
   ## 6. Appendices
   
   **Purpose:** To provide supplementary materials that support gameplay and enhance the GM's ability to run the adventure.
@@ -689,7 +675,7 @@ prompt_content: |
   
   * **Handouts:** Printable materials for players, such as letters, maps, or artifacts, to increase immersion.
   
-  * **Pregenerated Characters:** Ready-to-use PCs with backgrounds and stats, facilitating quick game setup.([provintorpg.blogspot.com][1])
+  * **Pregenerated Characters:** Ready-to-use PCs with backgrounds and stats, facilitating quick game setup.
   
   * **Banter Cards:** Tools to encourage role-playing and character interaction, adding depth to the gaming experience.
   

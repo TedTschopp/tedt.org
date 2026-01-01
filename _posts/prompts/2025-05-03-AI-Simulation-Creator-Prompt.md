@@ -18,12 +18,15 @@ author:
   url: https://tedt.org/
 date: 2025-05-04
 keywords:
-- AI simulation
-- educational AI
-- AI tutoring
-- roleplay simulation
-- instructional design
-- experiential learning
+  - AI simulation
+  - educational AI
+  - experiential learning
+  - instructional design
+  - prompt engineering
+bullets:
+  - Roleplay-based learning scenarios with AI mentor
+  - Practice negotiations, hiring, and pitching skills
+  - Structured instructional template for skill-building
 models-supported:
 - gpt-4
 - gpt-4.5

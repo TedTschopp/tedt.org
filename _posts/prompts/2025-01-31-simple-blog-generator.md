@@ -14,12 +14,15 @@ tags:
   - Writing
   - Communications
 keywords:
-  - blog writing
   - content creation
+  - content writing
   - copywriting
+  - prompt engineering
   - prompt templates
-  - AI prompts
-
+bullets:
+  - Basic variable functionality demonstration
+  - Generates 500-800 word blog posts
+  - Customizable topic, audience, and tone
 models-supported: [gpt-4, gpt-4-mini, microsoft-copilot, github]
 
 series:

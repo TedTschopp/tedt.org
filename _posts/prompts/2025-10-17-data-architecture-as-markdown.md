@@ -36,13 +36,13 @@ tags:
     - Requirements Engineering
     - Documentation
 
-keywords: 
-    - data architecture
-    - system architecture
-    - markdown
-    - requirements analysis
-    - documentation
-
+keywords:
+  - data architecture
+  - documentation
+  - markdown
+  - prompt engineering
+  - requirements analysis
+  - system architecture
 location:
     name: Bradbury, CA
 coordinates:

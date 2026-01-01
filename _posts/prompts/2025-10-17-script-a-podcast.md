@@ -36,13 +36,13 @@ tags:
     - Communications
     - Writing
 
-keywords: 
-    - podcast scripting
-    - content creation
-    - communications
-    - scriptwriting
-    - audio content
-
+keywords:
+  - audio content
+  - content creation
+  - content writing
+  - podcast scripting
+  - prompt engineering
+  - stakeholder communications
 location:
     name: Bradbury, CA
 coordinates:

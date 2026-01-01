@@ -36,13 +36,12 @@ tags:
     - Content Creation
     - Communications
 
-keywords: 
-    - novel writing
-    - content creation
-    - creative writing
-    - prompt engineering
-    - storytelling
-
+keywords:
+  - content creation
+  - creative writing
+  - fiction writing
+  - prompt engineering
+  - storytelling
 location:
     name: Bradbury, CA
 coordinates:

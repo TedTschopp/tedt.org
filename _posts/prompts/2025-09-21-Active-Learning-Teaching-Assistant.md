@@ -38,16 +38,16 @@ tags:
   - Planning
 
 keywords:
-  - teaching assistant prompt
-  - active learning
-  - tutoring guidelines
-  - socratic method
-  - scaffolding techniques
-  - homework help policy
-  - validation feedback
-  - quiz and test preparation
-  - 10th grade level
+  - adaptive learning
+  - assessment tools
   - educational AI
+  - homework help policy
+  - prompt templates
+  - quality review
+  - scaffolding
+  - socratic method
+  - tutoring guidelines
+
 models-supported:
    - gpt-4
    - gpt-4.1

@@ -907,16 +907,16 @@ prompt_content: |
   * Experience levels must be assessed using a consistent rubric across all actor groups.  
   * Ratings must use the following scale:
   
-  Qualitative Values	Quantitative Values	Description
-  Very Experienced	10 (96–100)	Considered world-class experts in the process or system domain
-  Experienced	8 (80–95)	Advanced credentials or decades of relevant professional experience
-  Moderate	5 (21–79)	Professional background with solid operational familiarity
-  Low	2 (5–20)	Some applicable experience but lacking full operational depth
-  Very Low	0 (0–4)	No meaningful experience in the domain; significant onboarding or enablement required
+  Qualitative Values  Quantitative Values  Description
+  Very Experienced  10 (96–100)  Considered world-class experts in the process or system domain
+  Experienced  8 (80–95)  Advanced credentials or decades of relevant professional experience
+  Moderate  5 (21–79)  Professional background with solid operational familiarity
+  Low  2 (5–20)  Some applicable experience but lacking full operational depth
+  Very Low  0 (0–4)  No meaningful experience in the domain; significant onboarding or enablement required
   
   * Align this section with organizational change management (OCM) strategies and workforce enablement planning.
-  * 	Include this data in user readiness assessments and transition risk evaluations.
-  * 	Where possible, leverage HR or workforce development data to substantiate estimates.
+  *   Include this data in user readiness assessments and transition risk evaluations.
+  *   Where possible, leverage HR or workforce development data to substantiate estimates.
   </Standards>
 
 ---

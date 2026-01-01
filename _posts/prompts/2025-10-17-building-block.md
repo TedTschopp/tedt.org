@@ -36,13 +36,12 @@ tags:
     - Architecture
     - Documentation
 
-keywords: 
-    - system architecture
-    - building
-    - architecture
-    - block
-    - requirements analysis
-
+keywords:
+  - architecture patterns
+  - documentation
+  - prompt engineering
+  - requirements analysis
+  - system architecture
 location:
     name: Bradbury, CA
 coordinates:

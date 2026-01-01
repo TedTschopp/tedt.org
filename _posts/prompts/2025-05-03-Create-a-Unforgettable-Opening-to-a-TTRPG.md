@@ -24,6 +24,11 @@ keywords:
 - worldbuilding
 - storytelling
 - narrative design
+bullets:
+  - Generate richly layered TTRPG session openings
+  - Culturally resonant narrative design
+  - Blends worldbuilding with artistic analysis
+
 models-supported:
 - gpt-4
 - gpt-4.5
