@@ -13,8 +13,9 @@
   font-weight: 600;
   margin-left: 0.35rem;
   letter-spacing: 0.5px;
+  color: var(--stage-color, currentColor);
 }
-.nav-stage-badge .nav-stage-symbol, .stage-badge .stage-symbol { font-family: inherit; }
+.nav-stage-badge .nav-stage-symbol, .stage-badge .stage-symbol { font-family: inherit; color: inherit; }
 
 /* Micro viewport adjustments: shrink symbol slightly to avoid wrapping crowding */
 @media (max-width: 380px) {
@@ -24,25 +25,19 @@
   .nav-stage-badge, .stage-badge { font-size: 0.7em; margin-left: 0.25rem; }
 }
 
-// Stage-specific colors
-.nav-stage--alpha .nav-stage-symbol, .stage--alpha .stage-symbol {
-  color: var(--stage-alpha-color, #ff6b6b); // vibrant red/pink for experimental
-}
-.nav-stage--beta .nav-stage-symbol, .stage--beta .stage-symbol {
-  color: var(--stage-beta-color, #f7b500); // amber/gold for in-progress stabilization
-}
-.nav-stage--gamma .nav-stage-symbol, .stage--gamma .stage-symbol {
-  color: var(--stage-gamma-color, #2ecc71); // green for ready/steady
-}
+// Stage-specific defaults (can be overridden per-instance via inline --stage-color from _data/stages.yml)
+.nav-stage--alpha, .stage--alpha { --stage-color: var(--stage-alpha-color, #ff6b6b); }
+.nav-stage--beta, .stage--beta { --stage-color: var(--stage-beta-color, #f7b500); }
+.nav-stage--gamma, .stage--gamma { --stage-color: var(--stage-gamma-color, #2ecc71); }
 
 // High-contrast mode (prefers-reduced-motion used as a lightweight media query pivot example; can adjust)
 @media (forced-colors: active) {
-  .nav-stage--alpha .nav-stage-symbol,
-  .nav-stage--beta .nav-stage-symbol,
-  .nav-stage--gamma .nav-stage-symbol,
-  .stage--alpha .stage-symbol,
-  .stage--beta .stage-symbol,
-  .stage--gamma .stage-symbol {
+  .nav-stage--alpha,
+  .nav-stage--beta,
+  .nav-stage--gamma,
+  .stage--alpha,
+  .stage--beta,
+  .stage--gamma {
     color: ButtonText;
   }
 }

@@ -23,6 +23,7 @@
   {%- capture _symbol -%}{{ _entry.symbol }}{%- endcapture -%}
   {%- capture _tooltip -%}{{ _entry.tooltip }}{%- endcapture -%}
   {%- capture _sr -%}{{ _entry.sr }}{%- endcapture -%}
+  {%- capture _color -%}{{ _entry.color }}{%- endcapture -%}
   {%- assign _parens_l = '(' -%}
   {%- assign _parens_r = ')' -%}
   {%- if _show_parens == false or _show_parens == 'false' -%}
@@ -36,5 +37,5 @@
     concealment even if the global helper is omitted or overridden. This span remains outside the aria-hidden
     badge so assistive tech announces it. Remove the span via include.no_visually_hidden if not desired.
   {%- endcomment -%}
-  <span class="stage-badge stage--{{ _raw }} {{ _extra }}"{% if _attach_title %} title="{{ _tooltip }}"{% endif %} aria-hidden="true">{{ _parens_l }}<span class="stage-symbol">{{ _symbol }}</span>{{ _parens_r }}</span>{% unless _no_vh %}<span class="visually-hidden sr-only"> {{ _sr }}</span>{% endunless %}
+  <span class="stage-badge stage--{{ _raw }} {{ _extra }}"{% if _attach_title %} title="{{ _tooltip }}"{% endif %}{% unless _color == blank %} style="--stage-color: {{ _color }};"{% endunless %} aria-hidden="true">{{ _parens_l }}<span class="stage-symbol">{{ _symbol }}</span>{{ _parens_r }}</span>{% unless _no_vh %}<span class="visually-hidden sr-only"> {{ _sr }}</span>{% endunless %}
 {%- endif -%}
