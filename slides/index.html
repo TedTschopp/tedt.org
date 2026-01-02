@@ -70,21 +70,23 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
         {%- if slide.image -%}
             <img src="{{ slide.image }}" class="card-img-top" alt="{{ slide.image-alt | default: slide.title | escape }}" loading="lazy">
 
-            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 z-1" aria-hidden="true"></div>
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 z-2" aria-hidden="true">
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 z-1 pe-none" aria-hidden="true"></div>
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 z-2 pe-none" aria-hidden="true">
               <div class="h5 mb-1 text-white">{{ slide.title | escape }}</div>
               {%- if slide.description -%}
                 <div class="small text-white">{{ slide.description | escape }}</div>
               {%- endif -%}
             </div>
+            <a href="{{ slide.url | relative_url }}" class="position-absolute top-0 start-0 w-100 h-100 z-3" aria-label="Open {{ slide.title | escape }}"></a>
         {%- else -%}
-          <div class="w-100 h-100 bg-dark bg-opacity-50" aria-hidden="true"></div>
-          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3" aria-hidden="true">
+          <div class="w-100 h-100 bg-dark bg-opacity-50 pe-none" aria-hidden="true"></div>
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 pe-none" aria-hidden="true">
             <div class="h5 mb-1 text-white">{{ slide.title | escape }}</div>
             {%- if slide.description -%}
               <div class="small text-white">{{ slide.description | escape }}</div>
             {%- endif -%}
           </div>
+          <a href="{{ slide.url | relative_url }}" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Open {{ slide.title | escape }}"></a>
         {%- endif -%}
       </div>
       <div class="card-body">
