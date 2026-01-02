@@ -105,7 +105,7 @@ image-alt: "Minimal Swiss design motif"
 
 <section>
   <h2>Roadmap Timeline</h2>
-  <div class="mermaid">
+  <div class="mermaid" markdown="0">
   timeline
     title Execution Roadmap
     Q1 2025 : Governance Framework Initiated
@@ -118,7 +118,7 @@ image-alt: "Minimal Swiss design motif"
 
 <section>
   <h2>Process Flow</h2>
-  <div class="mermaid">
+  <div class="mermaid" markdown="0">
   flowchart LR
     A[Intake] --> B[Risk Assessment]
     B --> C[Architecture Review]

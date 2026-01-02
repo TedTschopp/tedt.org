@@ -12,7 +12,6 @@ image: /img/categories/artificial-intelligence.webp
 image-alt: "Abstract AI category graphic"
 topics: [template, archetypes, design]
 preview_html: "<div class='preview-fragment'><h3>Presentation Template</h3><p>All slide patterns ready to copy.</p></div>"
-deck-style: light
 ---
 
 {% comment %}
@@ -89,7 +88,7 @@ Guidance: Duplicate sections you need; remove those you don't. Each top-level <s
 {% include slides/section-break.html title="Timeline" subtitle="Execution Phases" kicker="Roadmap" %}
 <section>
   <h2>Roadmap Timeline</h2>
-  <div class="mermaid">
+  <div class="mermaid" markdown="0">
   timeline
     %% Using section grouping for Mermaid 10.9.4 timeline stability.
     %% Changed from "Q1 2025 :" syntax (was throwing Syntax error in text) to sections + quarter labels.
@@ -107,7 +106,7 @@ Guidance: Duplicate sections you need; remove those you don't. Each top-level <s
 {% include slides/section-break.html title="Process Flow" subtitle="Lifecycle" kicker="Operations" %}
 <section>
   <h2>Process Flow</h2>
-  <div class="mermaid">
+  <div class="mermaid" markdown="0">
   flowchart LR
     A[Intake] --> B[Assessment]
     B --> C[Review]

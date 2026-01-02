@@ -66,7 +66,7 @@ layout: none
     {% include assets/scripts.html %}
 
     <script>
-        // Theme switching + Mermaid safer init (mermaid.run() replaced with mermaid.init)
+        // Theme switching + Mermaid integration
         let mermaidInitialized = false;
 
         function updateRevealTheme() {
@@ -78,14 +78,32 @@ layout: none
             lightTheme.disabled = isDark;
         }
 
-        function processMermaid(selectorScope) {
+        async function processMermaid(selectorScope) {
             if (typeof mermaid === 'undefined') return;
+            const scope = selectorScope || document;
+            const allNodes = Array.from(scope.querySelectorAll('.mermaid'));
+            if (allNodes.length === 0) return;
+
+            // Only process nodes once; avoid re-parsing already-rendered SVG
+            const nodes = allNodes.filter(n => !n.dataset.mermaidProcessed && !n.querySelector('svg'));
+            if (nodes.length === 0) return;
+
+            // Normalize Markdown-wrapped Mermaid blocks (<p>...</p>) back to raw text
+            for (const node of nodes) {
+                const source = (node.textContent || '').trim();
+                if (!source) continue;
+                node.innerHTML = source;
+            }
+
             try {
-                const nodes = (selectorScope || document).querySelectorAll('.mermaid');
-                if (nodes.length === 0) return;
-                // mermaid.init accepts (config?, elements) – we already initialized so pass undefined
-                mermaid.init(undefined, nodes);
+                if (typeof mermaid.run === 'function') {
+                    await Promise.resolve(mermaid.run({ nodes }));
+                } else if (typeof mermaid.init === 'function') {
+                    await Promise.resolve(mermaid.init(undefined, nodes));
+                }
+                for (const node of nodes) node.dataset.mermaidProcessed = 'true';
             } catch (err) {
+                // Prevent unhandled promise rejections from bubbling
                 console.error('Mermaid render error:', err);
             }
         }
@@ -101,8 +119,6 @@ layout: none
                     flowchart: { useMaxWidth: true, htmlLabels: true }
                 });
                 mermaidInitialized = true;
-                // Initial render after short delay to allow Reveal Markdown plugin to inject slides
-                setTimeout(() => processMermaid(), 300);
             } catch (err) {
                 console.error('Mermaid initialization failed:', err);
             }
@@ -121,14 +137,14 @@ layout: none
     </script>
 
     <script>
-        // Reveal initialization with Mermaid integration (deduped & safer)
+        // Reveal initialization with Mermaid integration
         function initializeReveal() {
             if (!(typeof Reveal !== 'undefined' && typeof RevealMarkdown !== 'undefined')) {
                 return setTimeout(initializeReveal, 100);
             }
             try {
                 initializeMermaid();
-                Reveal.initialize({
+                const initResult = Reveal.initialize({
                     hash: true,
                     slideNumber: true,
                     plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
