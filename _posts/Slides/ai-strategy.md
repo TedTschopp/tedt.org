@@ -1,0 +1,105 @@
+---
+layout: reveal-integrated
+title: "AI Strategy 2026 (Legacy Draft)"
+markdown: false
+published: false
+permalink: /slides/ai-strategy-legacy-draft/
+date: 2025-01-31
+categories: [Slides]
+description: "Legacy draft deck content (kept for reference; not published)."
+aspect_ratio: 16:9
+
+
+---
+
+<section>
+    <h1>AI Strategy 2026</h1>
+    <p>Ted Tschopp — Southern California Edison<br>
+    <strong>Advancing Responsible and Excellent AI</strong></p>
+</section>
+
+<section>
+    <h2>Why Now</h2>
+    <ul>
+        <li>Industry transformation</li>
+        <li>Data maturity and governance</li>
+        <li>Policy and risk convergence</li>
+    </ul>
+    
+    <section>
+        <h3>The Tipping Point</h3>
+        <blockquote>"The future of IT is not ITIL or IT4IT — it's AI4IT."</blockquote>
+    </section>
+</section>
+
+<section>
+    <h2>Architecture Overview</h2>
+    <div class="mermaid">
+flowchart LR
+    A[Data Sources] --> B[AI Gateway]
+    B --> C[Model Hubs]
+    C --> D[Apps and CoPilots]
+    </div>
+</section>
+
+<!-- Simple horizontal slide -->
+<section>
+    <h2>Welcome to the Full Spec Deck</h2>
+    <p>This slide deck demonstrates nearly all configuration options and slide features of Reveal.js.</p>
+</section>
+
+<!-- Vertical sub-slides -->
+<section>
+    <h2>Vertical Slides Example</h2>
+    <section>
+        <p>Vertical Slide A</p>
+    </section>
+    <section>
+        <p>Vertical Slide B</p>
+    </section>
+</section>
+
+<!-- Fragments -->
+<section>
+    <h2>Using Fragments</h2>
+    <p class="fragment">First point</p>
+    <p class="fragment">Second point</p>
+    <p class="fragment">Third point</p>
+</section>
+
+<!-- Background & auto-slide -->
+<section data-background-color="#222" data-autoslide="5000" data-auto-animate>
+    <h2 style="color:#fff;">Background & Auto-Slide</h2>
+    <p style="color:#ccc;">Automatically advance every 5 seconds, with fancy background.</p>
+</section>
+
+<!-- Code with syntax highlight -->
+<section>
+    <h2>Code Example</h2>
+    <pre><code class="language-javascript">
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+greet('Ted');
+          </code></pre>
+</section>
+
+<!-- Speaker notes -->
+<section data-notes="These are speaker notes for this slide.">
+    <h2>Speaker Notes Slide</h2>
+    <p>The presenter can see this note in speaker view.</p>
+</section>
+
+<!-- Nested vertical + fragments + custom class -->
+<section>
+    <h2>Nested & Custom Class</h2>
+    <p class="fragment custom-class">Important fragment with custom style</p>
+    <section>
+        <p>Nested vertical slide 1</p>
+    </section>
+    <section>
+        <p>Nested vertical slide 2</p>
+    </section>
+</section>
+
+
