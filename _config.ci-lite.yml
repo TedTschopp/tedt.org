@@ -6,6 +6,9 @@ exclude:
 - _data/Checkins/**
 - _data/Checkins
 
+# Exclude temp worktrees (may contain non-Jekyll sources like Bootstrap's site)
+- tmp/**
+
 # (Optional) add other heavy paths if needed later.
 
 ### Note

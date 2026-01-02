@@ -4,7 +4,7 @@
 		{
 			"label": "Clean build + HTMLProofer (internal)",
 			"type": "shell",
-			"command": "rm -rf _site && bundle exec jekyll build --quiet && SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --check-html --allow-missing-href",
+			"command": "rm -rf _site && bundle exec jekyll build --quiet && bundle exec htmlproofer ./_site --root-dir ./_site --check-html --allow-missing-href --disable-external",
 			"isBackground": false,
 			"problemMatcher": [
 				"$eslint-stylish"

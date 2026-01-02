@@ -10,6 +10,9 @@ exclude:
 # Exclude large in-progress data (kept for future development; do not load or process)
 - _data-to-be-developed/**
 
+# Exclude temp worktrees (may contain non-Jekyll sources like Bootstrap's site)
+- tmp/**
+
 # Enable explicit kramdown + MathJax processing
 markdown: kramdown
 kramdown:

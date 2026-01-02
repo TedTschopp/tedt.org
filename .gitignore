@@ -129,6 +129,10 @@ AutoTest.Net/
 # Web workbench (sass)
 .sass-cache/
 
+# Local scratch / temporary worktrees (e.g., vendored upstream sources during upgrades)
+tmp/
+
+
 # Installshield output folder
 [Ee]xpress/
 
