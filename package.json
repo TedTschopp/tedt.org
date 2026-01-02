@@ -9,6 +9,8 @@
     "allure:clean": "node tools/clean-allure.mjs",
     "allure:generate": "npx allure generate reports/allure/allure-results -o reports/allure/latest --clean",
     "allure:open": "npx allure open reports/allure/latest",
+    "lint:css:overrides": "stylelint \"_sass/_overrides-*.scss\" \"css/*-overrides.css\"",
+    "lint:js": "node tools/check-js-syntax.mjs",
     "lint:md": "markdownlint-cli2"
   },
   "devDependencies": {
@@ -17,6 +19,9 @@
     "@types/node": "^20.11.30",
     "allure-commandline": "^2.29.0",
     "allure-playwright": "^3.0.0",
-    "markdownlint-cli2": "^0.14.0"
+    "markdownlint-cli2": "^0.14.0",
+    "postcss-scss": "^4.0.9",
+    "stylelint": "^16.10.0",
+    "stylelint-scss": "^6.6.1"
   }
 }

@@ -82,6 +82,72 @@ jobs:
             exit 0
           fi
 
+      - name: Markdown lint
+        id: mdlint
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          npm run lint:md 2>&1 | tee tmp/markdownlint.txt
+
+      - name: Record Markdown lint (Allure)
+        if: always()
+        run: |
+          STATUS="${{ steps.mdlint.outcome }}"
+          if [ "$STATUS" = "success" ]; then A_STATUS=passed; else A_STATUS=failed; fi
+          python3 reports/allure/write_simple_allure_result.py \
+            --output-dir reports/allure/allure-results \
+            --name "Markdown quality (markdownlint)" \
+            --suite "Site Quality" \
+            --sub-suite "Markdown" \
+            --status "$A_STATUS" \
+            --attach "markdownlint=tmp/markdownlint.txt" \
+            --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
+      - name: JavaScript syntax check
+        id: jslint
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          npm run lint:js 2>&1 | tee tmp/js-syntax.txt
+
+      - name: Record JavaScript syntax check (Allure)
+        if: always()
+        run: |
+          STATUS="${{ steps.jslint.outcome }}"
+          if [ "$STATUS" = "success" ]; then A_STATUS=passed; else A_STATUS=failed; fi
+          python3 reports/allure/write_simple_allure_result.py \
+            --output-dir reports/allure/allure-results \
+            --name "JavaScript quality (syntax)" \
+            --suite "Site Quality" \
+            --sub-suite "JavaScript" \
+            --status "$A_STATUS" \
+            --attach "node --check output=tmp/js-syntax.txt" \
+            --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
+      - name: CSS/SCSS overrides lint (Stylelint)
+        id: csslint
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          npm run lint:css:overrides 2>&1 | tee tmp/stylelint-overrides.txt
+
+      - name: Record CSS/SCSS overrides lint (Allure)
+        if: always()
+        run: |
+          STATUS="${{ steps.csslint.outcome }}"
+          if [ "$STATUS" = "success" ]; then A_STATUS=passed; else A_STATUS=failed; fi
+          python3 reports/allure/write_simple_allure_result.py \
+            --output-dir reports/allure/allure-results \
+            --name "CSS quality (overrides only, stylelint)" \
+            --suite "Site Quality" \
+            --sub-suite "CSS Overrides" \
+            --status "$A_STATUS" \
+            --attach "stylelint overrides=tmp/stylelint-overrides.txt" \
+            --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
           echo "[allure] Downloading artifact zip..."
           curl -sSL -L \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
@@ -126,6 +192,47 @@ jobs:
         run: |
           npm run test:a11y:allure
 
+      - name: Build with Jekyll
+        env:
+          JEKYLL_ENV: production
+        run: |
+          (
+            while true; do
+              echo "[heartbeat] still building at $(date -u +%H:%M:%S)";
+              sleep 30;
+            done
+          ) &
+          HB_PID=$!
+          trap 'echo "[heartbeat] stopping (exit code $?)"; kill $HB_PID || true' EXIT INT TERM
+          echo "[debug] Starting Jekyll build at $(date -u +%H:%M:%S)"
+          time bundle exec jekyll build --trace --profile || {
+            echo "[debug] Jekyll build exited with code $? at $(date -u +%H:%M:%S)";
+            exit 1;
+          }
+          echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
+
+      - name: Link + HTML checks (HTMLProofer)
+        id: proofer
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --check-html --allow-missing-href 2>&1 | tee tmp/htmlproofer.txt
+
+      - name: Record Link + HTML checks (Allure)
+        if: always()
+        run: |
+          STATUS="${{ steps.proofer.outcome }}"
+          if [ "$STATUS" = "success" ]; then A_STATUS=passed; else A_STATUS=failed; fi
+          python3 reports/allure/write_simple_allure_result.py \
+            --output-dir reports/allure/allure-results \
+            --name "Generated HTML quality + missing links (HTMLProofer)" \
+            --suite "Site Quality" \
+            --sub-suite "Generated HTML" \
+            --status "$A_STATUS" \
+            --attach "htmlproofer=tmp/htmlproofer.txt" \
+            --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
       - name: Capture GitHub Actions errors/warnings (Allure)
         if: always()
         env:
@@ -158,6 +265,14 @@ jobs:
         run: |
           npm run allure:generate
 
+      - name: Copy Allure report into site output
+        if: always()
+        run: |
+          mkdir -p _site/reports/allure
+          rm -rf _site/reports/allure/latest || true
+          cp -R reports/allure/latest _site/reports/allure/latest
+          cp reports/allure/index.html _site/reports/allure/index.html
+
       - name: Upload Allure report artifact
         if: always()
         uses: actions/upload-artifact@v6
@@ -167,30 +282,15 @@ jobs:
             reports/allure/latest
             reports/allure/allure-results
 
-      - name: A11y job summary
+      - name: Quality job summary
         if: always()
         run: |
-          echo "## Accessibility (Playwright + Allure)" >> $GITHUB_STEP_SUMMARY
-          echo "- Outcome: ${{ steps.a11y.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "## Quality (Allure)" >> $GITHUB_STEP_SUMMARY
+          echo "- A11y outcome: ${{ steps.a11y.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- Markdown outcome: ${{ steps.mdlint.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- JS syntax outcome: ${{ steps.jslint.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- HTMLProofer outcome: ${{ steps.proofer.outcome }}" >> $GITHUB_STEP_SUMMARY
           echo "- Published path in deployed site: /reports/allure/latest/index.html" >> $GITHUB_STEP_SUMMARY
-      - name: Build with Jekyll
-        env:
-          JEKYLL_ENV: production
-        run: |
-          (
-            while true; do
-              echo "[heartbeat] still building at $(date -u +%H:%M:%S)";
-              sleep 30;
-            done
-          ) &
-          HB_PID=$!
-          trap 'echo "[heartbeat] stopping (exit code $?)"; kill $HB_PID || true' EXIT INT TERM
-          echo "[debug] Starting Jekyll build at $(date -u +%H:%M:%S)"
-          time bundle exec jekyll build --trace --profile || {
-            echo "[debug] Jekyll build exited with code $? at $(date -u +%H:%M:%S)";
-            exit 1;
-          }
-          echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
       - name: Post-build artifact size summary
         if: success()
         run: |
