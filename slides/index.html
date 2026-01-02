@@ -77,7 +77,6 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
                 <div class="small text-white">{{ slide.description | escape }}</div>
               {%- endif -%}
             </div>
-            <a href="{{ slide.url | relative_url }}" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Open {{ slide.title | escape }}"></a>
         {%- else -%}
           <div class="w-100 h-100 bg-dark bg-opacity-50 pe-none" aria-hidden="true"></div>
           <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 pe-none" aria-hidden="true">
@@ -86,11 +85,10 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
               <div class="small text-white">{{ slide.description | escape }}</div>
             {%- endif -%}
           </div>
-          <a href="{{ slide.url | relative_url }}" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Open {{ slide.title | escape }}"></a>
         {%- endif -%}
       </div>
       <div class="card-body">
-        <h5 class="card-title"><a href="{{ slide.url | relative_url }}">{{ slide.title }}</a></h5>
+        <h5 class="card-title"><a class="stretched-link" href="{{ slide.url | relative_url }}">{{ slide.title }}</a></h5>
         {% if slide.description %}
           <p class="card-text text-muted small">{{ slide.description }}</p>
         {% else %}
