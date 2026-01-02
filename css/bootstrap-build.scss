@@ -57,6 +57,8 @@
 
 /* Site-specific overrides (keep last so they win) */
 // Slides: use Reveal.js default themes (no custom slide design system CSS)
+@import "helpers/hidden"; // site utility used for JS-driven visibility toggles
+@import "components/nav-stage-badge"; // alpha/beta/gamma stage indicators in nav
 @import "components/slides-filter"; // client-side category filter utilities
 @import "overrides-prompts";
 @import "overrides-slides"; // slide card preview fallback styles

@@ -1,3 +1,15 @@
+/*
+  DEPRECATED (custom helper)
+
+  This partial is retained temporarily for reference.
+
+  It is NOT imported by the active build. The site now defines custom ratios via `$aspect-ratios`
+  in `_sass/_variables-site.scss`, and Bootstrap generates the `.ratio-*` classes via
+  `_sass/helpers/_ratio.scss`.
+
+  Safe to delete once the site has been visually validated and you give the all-clear.
+*/
+
 // Custom aspect ratio helpers not provided by upstream Bootstrap CDN.
 // Bootstrap provides 1x1, 4x3, 16x9, 21x9. Site uses 3x1 in hero/carousel cards.
 
