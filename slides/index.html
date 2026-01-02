@@ -70,6 +70,16 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
         {%- if slide.image -%}
             <img src="{{ slide.image }}" class="card-img-top" alt="{{ slide.image-alt | default: slide.title | escape }}" loading="lazy">
         {%- else -%}
+          {%- if slide.markdown -%}
+          <div class="slide-card-preview" aria-hidden="true">
+            <h3>{{ slide.title }}</h3>
+            {%- if slide.description -%}
+              <p>{{ slide.description }}</p>
+            {%- else -%}
+              <p>{{ slide.content | strip_html | normalize_whitespace | truncatewords: 22 }}</p>
+            {%- endif -%}
+          </div>
+          {%- else -%}
           {%- comment -%}
             Fallback preview (no slide.image):
             Enhancement: supports optional front matter key `preview_section_index` (0-based) to
@@ -79,15 +89,19 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
             lightweight preview. Authors can set preview_section_index to point at a vertical parent
             if desired. Do NOT render large mermaid or code blocks here; CSS hides them.
           {%- endcomment -%}
-          {%- assign section_chunks = slide.content | split: '</section>' -%}
-          {%- assign selected_fragment = section_chunks[slide.preview_section_index] -%}
-          {%- if selected_fragment == nil or selected_fragment == '' -%}
-            {%- assign selected_fragment = section_chunks[0] -%}
+          {%- assign selected_fragment = slide.content -%}
+          {%- if slide.content contains '</section>' -%}
+            {%- assign section_chunks = slide.content | split: '</section>' -%}
+            {%- assign selected_fragment = section_chunks[slide.preview_section_index] -%}
+            {%- if selected_fragment == nil or selected_fragment == '' -%}
+              {%- assign selected_fragment = section_chunks[0] -%}
+            {%- endif -%}
+            {%- assign selected_fragment = selected_fragment | append: '</section>' -%}
           {%- endif -%}
-          {%- assign selected_fragment = selected_fragment | append: '</section>' -%}
           <div class="slide-card-preview" aria-hidden="true">
-            {{ selected_fragment | replace: '<h1', '<h3' | replace: '<h2', '<h4' }}
+            {{ selected_fragment | replace: '<h1', '<h3' | replace: '</h1>', '</h3>' | replace: '<h2', '<h4' | replace: '</h2>', '</h4>' }}
           </div>
+          {%- endif -%}
         {%- endif -%}
       </div>
       <div class="card-body">
