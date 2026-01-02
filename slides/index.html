@@ -70,47 +70,21 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
         {%- if slide.image -%}
             <img src="{{ slide.image }}" class="card-img-top" alt="{{ slide.image-alt | default: slide.title | escape }}" loading="lazy">
 
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 z-1" aria-hidden="true">
-              <div class="bg-dark bg-opacity-50 rounded-3 px-3 py-2">
-                <div class="h5 mb-1 text-white">{{ slide.title | escape }}</div>
-                {%- if slide.description -%}
-                  <div class="small text-white">{{ slide.description | escape }}</div>
-                {%- endif -%}
-              </div>
+            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 z-1" aria-hidden="true"></div>
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 z-2" aria-hidden="true">
+              <div class="h5 mb-1 text-white">{{ slide.title | escape }}</div>
+              {%- if slide.description -%}
+                <div class="small text-white">{{ slide.description | escape }}</div>
+              {%- endif -%}
             </div>
         {%- else -%}
-          {%- if slide.markdown -%}
-          <div class="slide-card-preview" aria-hidden="true">
-            <h3>{{ slide.title }}</h3>
+          <div class="w-100 h-100 bg-dark bg-opacity-50" aria-hidden="true"></div>
+          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3" aria-hidden="true">
+            <div class="h5 mb-1 text-white">{{ slide.title | escape }}</div>
             {%- if slide.description -%}
-              <p>{{ slide.description }}</p>
-            {%- else -%}
-              <p>{{ slide.content | strip_html | normalize_whitespace | truncatewords: 22 }}</p>
+              <div class="small text-white">{{ slide.description | escape }}</div>
             {%- endif -%}
           </div>
-          {%- else -%}
-          {%- comment -%}
-            Fallback preview (no slide.image):
-            Enhancement: supports optional front matter key `preview_section_index` (0-based) to
-            select which top-level <section> to show. If invalid / out of range, falls back to the
-            first section. We split once (cached in `section_chunks`) to avoid repeated string ops.
-            NOTE: Nested vertical slides are still linearized by this naive split; acceptable for
-            lightweight preview. Authors can set preview_section_index to point at a vertical parent
-            if desired. Do NOT render large mermaid or code blocks here; CSS hides them.
-          {%- endcomment -%}
-          {%- assign selected_fragment = slide.content -%}
-          {%- if slide.content contains '</section>' -%}
-            {%- assign section_chunks = slide.content | split: '</section>' -%}
-            {%- assign selected_fragment = section_chunks[slide.preview_section_index] -%}
-            {%- if selected_fragment == nil or selected_fragment == '' -%}
-              {%- assign selected_fragment = section_chunks[0] -%}
-            {%- endif -%}
-            {%- assign selected_fragment = selected_fragment | append: '</section>' -%}
-          {%- endif -%}
-          <div class="slide-card-preview" aria-hidden="true">
-            {{ selected_fragment | replace: '<h1', '<h3' | replace: '</h1>', '</h3>' | replace: '<h2', '<h4' | replace: '</h2>', '</h4>' }}
-          </div>
-          {%- endif -%}
         {%- endif -%}
       </div>
       <div class="card-body">
