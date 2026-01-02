@@ -23,7 +23,7 @@
 /* Ensure the Bootstrap ratio wrapper inside slide cards behaves consistently. The .ratio > *
   rule already sets position:absolute; here we guarantee object-fit for images and constrain
   preview div to full area. */
-.card .ratio { background:#000; border-radius:.25rem .25rem 0 0; }
+.card .ratio { background:#000; border-radius:.25rem .25rem 0 0; overflow:hidden; }
 .card .ratio > img.card-img-top { object-fit:cover; width:100%; height:100%; }
 .card .ratio > .slide-card-preview { position:absolute; inset:0; padding:.75rem .9rem .9rem; }
 
