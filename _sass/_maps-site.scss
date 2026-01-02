@@ -1,0 +1,90 @@
+// Site overrides for Bootstrap Sass maps.
+//
+// Imported BEFORE Bootstrap's `_maps.scss` so Bootstrap defaults (`!default`)
+// will not overwrite these values.
+
+$theme-colors-text: (
+  "primary": $primary-text-emphasis,
+  "secondary": $secondary-text-emphasis,
+  "success": $success-text-emphasis,
+  "info": $info-text-emphasis,
+  "warning": $warning-text-emphasis,
+  "danger": $danger-text-emphasis,
+  "accent1": $accent1-text-emphasis,
+  "accent2": $accent2-text-emphasis,
+  "accent3": $accent3-text-emphasis,
+  "light": $light-text-emphasis,
+  "dark": $dark-text-emphasis,
+);
+
+$theme-colors-bg-subtle: (
+  "primary": $primary-bg-subtle,
+  "secondary": $secondary-bg-subtle,
+  "success": $success-bg-subtle,
+  "info": $info-bg-subtle,
+  "warning": $warning-bg-subtle,
+  "danger": $danger-bg-subtle,
+  "accent1": $accent1-bg-subtle,
+  "accent2": $accent2-bg-subtle,
+  "accent3": $accent3-bg-subtle,
+  "light": $light-bg-subtle,
+  "dark": $dark-bg-subtle,
+);
+
+$theme-colors-border-subtle: (
+  "primary": $primary-border-subtle,
+  "secondary": $secondary-border-subtle,
+  "success": $success-border-subtle,
+  "info": $info-border-subtle,
+  "warning": $warning-border-subtle,
+  "danger": $danger-border-subtle,
+  "accent1": $accent1-border-subtle,
+  "accent2": $accent2-border-subtle,
+  "accent3": $accent3-border-subtle,
+  "light": $light-border-subtle,
+  "dark": $dark-border-subtle,
+);
+
+@if $enable-dark-mode {
+  $theme-colors-text-dark: (
+    "primary": $primary-text-emphasis-dark,
+    "secondary": $secondary-text-emphasis-dark,
+    "success": $success-text-emphasis-dark,
+    "info": $info-text-emphasis-dark,
+    "warning": $warning-text-emphasis-dark,
+    "danger": $danger-text-emphasis-dark,
+    "accent1": $accent1-text-emphasis-dark,
+    "accent2": $accent2-text-emphasis-dark,
+    "accent3": $accent3-text-emphasis-dark,
+    "light": $light-text-emphasis-dark,
+    "dark": $dark-text-emphasis-dark,
+  );
+
+  $theme-colors-bg-subtle-dark: (
+    "primary": $primary-bg-subtle-dark,
+    "secondary": $secondary-bg-subtle-dark,
+    "success": $success-bg-subtle-dark,
+    "info": $info-bg-subtle-dark,
+    "warning": $warning-bg-subtle-dark,
+    "danger": $danger-bg-subtle-dark,
+    "accent1": $accent1-bg-subtle-dark,
+    "accent2": $accent2-bg-subtle-dark,
+    "accent3": $accent3-bg-subtle-dark,
+    "light": $light-bg-subtle-dark,
+    "dark": $dark-bg-subtle-dark,
+  );
+
+  $theme-colors-border-subtle-dark: (
+    "primary": $primary-border-subtle-dark,
+    "secondary": $secondary-border-subtle-dark,
+    "success": $success-border-subtle-dark,
+    "info": $info-border-subtle-dark,
+    "warning": $warning-border-subtle-dark,
+    "danger": $danger-border-subtle-dark,
+    "accent1": $accent1-border-subtle-dark,
+    "accent2": $accent2-border-subtle-dark,
+    "accent3": $accent3-border-subtle-dark,
+    "light": $light-border-subtle-dark,
+    "dark": $dark-border-subtle-dark,
+  );
+}

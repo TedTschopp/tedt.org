@@ -1,1 +1,7 @@
-// Deprecated: duplicate of Bootstrap .text-truncate helper. Intentionally left blank.
+//
+// Text truncation
+//
+
+.text-truncate {
+	@include text-truncate();
+}

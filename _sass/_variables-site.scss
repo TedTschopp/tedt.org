@@ -1,0 +1,167 @@
+// Site overrides for Bootstrap Sass variables.
+//
+// Keep this file small and focused: define only variables you intentionally override.
+// It is imported BEFORE Bootstrap's `_variables.scss` so Bootstrap defaults (`!default`)
+// will not overwrite these values.
+
+// ----------------------------------------------------------------------------
+// Core palette adjustments
+// ----------------------------------------------------------------------------
+$white: rgba(248, 246, 240, 1);
+$gray-100: rgba(224, 222, 218, 1);
+$gray-200: rgba(200, 199, 195, 1);
+$gray-300: rgba(176, 175, 172, 1);
+$gray-400: rgba(152, 151, 150, 1);
+$gray-500: rgba(128, 128, 128, 1);
+$gray-600: rgba(103, 104, 105, 1);
+$gray-700: rgba(79, 80, 82, 1);
+$gray-800: rgba(55, 56, 60, 1);
+$gray-900: rgba(31, 33, 38, 1);
+$black: rgba(7, 9, 15, 1);
+
+$blue: rgba(13, 110, 253, 1);
+$indigo: rgba(102, 16, 242, 1);
+$purple: rgba(111, 66, 193, 1);
+$pink: rgba(214, 51, 132, 1);
+$red: rgba(220, 53, 69, 1);
+$orange: rgba(253, 126, 20, 1);
+$yellow: rgba(255, 193, 7, 1);
+$green: rgba(25, 135, 84, 1);
+$teal: rgba(32, 201, 151, 1);
+$cyan: rgba(13, 202, 240, 1);
+
+// ----------------------------------------------------------------------------
+// Theme colors (adds site-specific accents)
+// ----------------------------------------------------------------------------
+$light: rgba(177, 179, 179, 1);
+$dark: rgba(16, 24, 32, 1);
+$primary: rgba(0, 68, 111, 1);
+$secondary: rgba(232, 96, 39, 1);
+$info: rgba(0, 169, 224, 1);
+$success: rgba(0, 179, 57, 1);
+$warning: rgba(242, 188, 87, 1);
+$danger: rgba(249, 0, 65, 1);
+
+$accent1: rgba(0, 123, 255, 1);
+$accent2: rgba(242, 188, 87, 1);
+$accent3: rgba(111, 26, 7, 1);
+
+// Add accents into the theme color map so helpers/utilities can generate classes.
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "info": $info,
+  "accent1": $accent1,
+  "accent2": $accent2,
+  "accent3": $accent3,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark,
+);
+
+$accent1-text-emphasis: shade-color($accent1, 60%);
+$accent2-text-emphasis: shade-color($accent2, 60%);
+$accent3-text-emphasis: shade-color($accent3, 60%);
+$accent1-bg-subtle: tint-color($accent1, 80%);
+$accent2-bg-subtle: tint-color($accent2, 80%);
+$accent3-bg-subtle: tint-color($accent3, 80%);
+$accent1-border-subtle: tint-color($accent1, 60%);
+$accent2-border-subtle: tint-color($accent2, 60%);
+$accent3-border-subtle: tint-color($accent3, 60%);
+
+// ----------------------------------------------------------------------------
+// Feature toggles
+// ----------------------------------------------------------------------------
+$enable-shadows: true;
+
+// ----------------------------------------------------------------------------
+// Typography
+// ----------------------------------------------------------------------------
+// stylelint-disable value-keyword-case
+$font-family-sans-serif: Inter, "Noto Sans", "Helvetica Neue", "Apple Color Emoji", "Segoe UI", "Segoe UI Emoji", "Segoe UI Symbol", Roboto, "Noto Color Emoji", "Liberation Sans", sans-serif;
+$font-family-monospace: "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+// stylelint-enable value-keyword-case
+
+$font-size-root: 16px;
+$font-size-base: 1.125rem;
+$line-height-base: 1.6;
+$line-height-sm: $line-height-base * .875;
+$line-height-lg: $line-height-base * 1.25;
+
+$headings-font-family: "Cal Sans", "Titillium Web", "Optima", "Arsenal", "Palatino", "Book Antiqua", "Georgia", serif;
+
+// Links
+$link-color: $accent1;
+$link-decoration: underline;
+
+// ----------------------------------------------------------------------------
+// Layout extensions
+// ----------------------------------------------------------------------------
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px,
+  fhd: 1920px,
+  rt: 2560px,
+  rt15: 2880px,
+  uhd: 3840px,
+  4k: 4096px,
+  8k: 8192px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px,
+  xxxl: 1560px,
+  fhd: 1824px,
+  rt: 2640px,
+  rt15: 2736px,
+  uhd: 3648px,
+  4k: 3900px,
+  8k: 7788px,
+);
+
+// ----------------------------------------------------------------------------
+// Ratios
+// ----------------------------------------------------------------------------
+$aspect-ratios: (
+  "1x1": 100%,
+  "2x3": calc(3 / 2 * 100%),
+  "5x2": calc(2 / 5 * 100%),
+  "3x1": calc(1 / 3 * 100%),
+  "3x4": calc(4 / 3 * 100%),
+  "4x1": calc(1 / 4 * 100%),
+  "4x3": calc(3 / 4 * 100%),
+  "9x20": calc(20 / 9 * 100%),
+  "9x195": calc(19.5 / 9 * 100%),
+  "16x9": calc(9 / 16 * 100%),
+  "16x10": calc(10 / 16 * 100%),
+  "21x9": calc(9 / 21 * 100%),
+);
+
+// ----------------------------------------------------------------------------
+// Tables
+// ----------------------------------------------------------------------------
+$table-bg-scale: -80%;
+$table-variants: (
+  "primary": shift-color($primary, $table-bg-scale),
+  "secondary": shift-color($secondary, $table-bg-scale),
+  "success": shift-color($success, $table-bg-scale),
+  "info": shift-color($info, $table-bg-scale),
+  "warning": shift-color($warning, $table-bg-scale),
+  "danger": shift-color($danger, $table-bg-scale),
+  "accent1": shift-color($accent1, $table-bg-scale),
+  "accent2": shift-color($accent2, $table-bg-scale),
+  "accent3": shift-color($accent3, $table-bg-scale),
+  "light": $light,
+  "dark": $dark,
+);

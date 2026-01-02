@@ -288,35 +288,3 @@
   }
 }
 
-// --- Custom vertical alignment & fixed height adjustments (site-specific) ---
-// Ensure the header bar is exactly 70px tall and all interactive elements are vertically centered.
-.navbar.sticky-top {
-  height: 70px;
-  min-height: 70px;
-}
-.navbar.sticky-top > .container-fluid { height:100%; }
-.navbar .navbar-brand {
-  display: flex;
-  align-items: center;
-  height: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.navbar .navbar-brand img { height:64px; width:auto; display:block; }
-.navbar .navbar-nav > li > .nav-link,
-.navbar .navbar-nav > li > button.nav-link,
-.navbar .navbar-nav > li > button.menu-item {
-  display: flex;
-  align-items: center;
-  height: 70px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.navbar .navbar-toggler {
-  display: flex;
-  align-items: center;
-  height: 70px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-

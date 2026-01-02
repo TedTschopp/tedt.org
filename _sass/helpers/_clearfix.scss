@@ -1,1 +1,3 @@
-// Deprecated: duplicate of Bootstrap native helper. Intentionally left blank.
+.clearfix {
+	@include clearfix();
+}

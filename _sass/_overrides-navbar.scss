@@ -1,13 +1,9 @@
 /* Navbar height & vertical alignment overrides
-   Reason: Previous attempt adding these rules inside _sass/_navbar.scss did not surface in compiled
-   bootstrap-build.css (likely due to upstream Bootstrap partial precedence or caching). Importing
-   this file LAST guarantees the cascade wins without editing core Bootstrap partials.
-   Accessibility: Maintains 44px minimum interactive targets while giving the bar a consistent 70px
-   visual block for branding and rhythm.
+  Reason: Site-specific navbar behavior lives here (imported late) rather than modifying
+  vendored Bootstrap partials.
+  Accessibility: Maintains 44px minimum interactive targets while giving the bar a consistent 70px
+  visual block for branding and rhythm.
 */
-
-/* Canary rule to confirm this partial is compiled into bootstrap-build.css. Search for NAVBAR_CANARY. */
-body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
 
 /* Responsive toggler visibility & stacking context ----------------------------------
   Issue: Toggler appearing when it shouldn't (on large viewports) and collapsed menu
@@ -25,21 +21,6 @@ body.NAVBAR_CANARY_TEST::before { content: "NAVBAR_CANARY"; display: none; }
 
 /* Use a CSS variable for nav height for easy tuning */
 :root { --nav-height: 70px; }
-
-/* Bootstrap position utilities (fixed-top, sticky-top) since they were pruned from helpers */
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-.sticky-top {
-  position: sticky;
-  top: 0;
-  z-index: 1020;
-}
 
 /* Ensure both sticky and fixed navbars sit above content */
 .navbar.sticky-top,

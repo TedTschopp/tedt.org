@@ -1,0 +1,18 @@
+// Site overrides for Bootstrap dark mode Sass variables.
+//
+// Imported BEFORE Bootstrap's `_variables-dark.scss` so Bootstrap defaults (`!default`)
+// will not overwrite these values.
+
+$accent1-text-emphasis-dark: tint-color($accent1, 40%);
+$accent2-text-emphasis-dark: tint-color($accent2, 40%);
+$accent3-text-emphasis-dark: tint-color($accent3, 40%);
+
+$accent1-bg-subtle-dark: shade-color($accent1, 80%);
+$accent2-bg-subtle-dark: shade-color($accent2, 80%);
+$accent3-bg-subtle-dark: shade-color($accent3, 80%);
+
+$accent1-border-subtle-dark: shade-color($accent1, 40%);
+$accent2-border-subtle-dark: shade-color($accent2, 40%);
+$accent3-border-subtle-dark: shade-color($accent3, 40%);
+
+$link-color-dark: tint-color($accent1, 40%);
