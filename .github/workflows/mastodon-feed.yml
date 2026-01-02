@@ -9,6 +9,7 @@ on:
 
 permissions:
   contents: write
+  actions: read
 
 jobs:
   post-feed:
@@ -16,6 +17,82 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v5
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Node dependencies
+        run: |
+          npm install --no-audit --no-fund
+
+      - name: Clean Allure output (this run)
+        if: always()
+        run: |
+          npm run allure:clean
+
+      - name: Restore Allure history (trends)
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p tmp/allure-history
+
+          echo "[allure] Looking for latest 'allure-report-mastodon-feed' artifact to restore history..."
+
+          DOWNLOAD_URL=$(python3 - <<'PY'
+          import json
+          import os
+          import urllib.request
+
+          repo = os.environ['GITHUB_REPOSITORY']
+          token = os.environ['GITHUB_TOKEN']
+          url = f"https://api.github.com/repos/{repo}/actions/artifacts?per_page=100"
+
+          req = urllib.request.Request(
+              url,
+              headers={
+                  "Authorization": f"Bearer {token}",
+                  "Accept": "application/vnd.github+json",
+                  "User-Agent": "tedt.org-allure-history"
+              },
+          )
+          with urllib.request.urlopen(req) as resp:
+              data = json.load(resp)
+
+          artifacts = data.get('artifacts', [])
+          matches = [a for a in artifacts if a.get('name') == 'allure-report-mastodon-feed' and not a.get('expired', False)]
+          matches.sort(key=lambda a: a.get('created_at', ''), reverse=True)
+
+          if not matches:
+              print('')
+              raise SystemExit(0)
+
+          print(matches[0].get('archive_download_url', ''))
+          PY
+          )
+
+          if [ -z "${DOWNLOAD_URL:-}" ]; then
+            echo "[allure] No prior artifact found; skipping history restore."
+            exit 0
+          fi
+
+          echo "[allure] Downloading artifact zip..."
+          curl -sSL -L \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "$DOWNLOAD_URL" \
+            -o tmp/allure-history.zip
+
+          unzip -q -o tmp/allure-history.zip -d tmp/allure-history
+
+          if [ -d "tmp/allure-history/reports/allure/latest/history" ]; then
+            mkdir -p reports/allure/allure-results/history
+            cp -R tmp/allure-history/reports/allure/latest/history/* reports/allure/allure-results/history/ || true
+            echo "[allure] Restored history/ into allure-results/history."
+          else
+            echo "[allure] Artifact had no history directory; skipping."
+          fi
       - name: Setup Python
         uses: actions/setup-python@v6
         with:
@@ -47,3 +124,44 @@ jobs:
         with:
           commit_message: "chore: update Mastodon cache/front matter"
           file_pattern: cache/*.json _posts/**/*.md
+
+      - name: Capture GitHub Actions errors/warnings (Allure)
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p tmp/gha-logs
+          mkdir -p reports/allure/allure-results
+          echo "[diag] Downloading workflow run logs..."
+          curl -sSL \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/logs" \
+            -o tmp/gha-logs.zip
+          unzip -q -o tmp/gha-logs.zip -d tmp/gha-logs
+          python3 reports/allure/github_actions_logs_to_allure.py \
+            --logs-dir tmp/gha-logs \
+            --output-dir reports/allure/allure-results \
+            --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
+      - name: Write Allure metadata (environment + executor)
+        if: always()
+        run: |
+          python3 reports/allure/write_allure_metadata.py \
+            --output-dir reports/allure/allure-results \
+            --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+
+      - name: Generate Allure report (artifact)
+        if: always()
+        run: |
+          npm run allure:generate
+
+      - name: Upload Allure report artifact
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: allure-report-mastodon-feed
+          path: |
+            reports/allure/latest
+            reports/allure/allure-results

@@ -6,6 +6,7 @@
   "scripts": {
     "test:a11y": "playwright test tests/a11y --reporter=list",
     "test:a11y:allure": "node tools/run-playwright-a11y-allure.mjs",
+    "allure:clean": "node tools/clean-allure.mjs",
     "allure:generate": "npx allure generate reports/allure/allure-results -o reports/allure/latest --clean",
     "allure:open": "npx allure open reports/allure/latest",
     "lint:md": "markdownlint-cli2"
