@@ -24,8 +24,6 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
   {%- endif -%}
   <div class="col" data-topics="{{ topics_attr }}">
     <div class="card h-100 shadow-sm border-0">
-  <div class="col">
-    <div class="card h-100 shadow-sm border-0">
       {%- comment -%}
         Aspect Ratio Handling:
         Default to 16:9 unless deck front matter specifies:
@@ -87,7 +85,7 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
             {%- assign selected_fragment = section_chunks[0] -%}
           {%- endif -%}
           {%- assign selected_fragment = selected_fragment | append: '</section>' -%}
-            <div class="slide-card-preview" aria-hidden="false">
+          <div class="slide-card-preview" aria-hidden="true">
             {{ selected_fragment | replace: '<h1', '<h3' | replace: '<h2', '<h4' }}
           </div>
         {%- endif -%}
