@@ -88,3 +88,11 @@
 
 /* Prevent long lists from pushing beyond preview; allow vertical scroll if needed */
 .slide-card-preview { overscroll-behavior:contain; }
+
+/* Reveal deck layout sizing
+  We keep Reveal.js' default themes, but still need explicit container sizing because
+  the site navbar is fixed-top and removed from normal flow.
+  Scope to slide pages only (html.layout-reveal) to avoid affecting the rest of the site. */
+html.layout-reveal body { padding-top: 70px; }
+html.layout-reveal .reveal-container { height: calc(100vh - 70px); }
+html.layout-reveal .reveal { width: 100%; height: 100%; margin: 0; }
