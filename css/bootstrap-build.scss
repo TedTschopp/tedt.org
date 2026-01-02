@@ -53,10 +53,7 @@
 // scss-docs-end import-stack
 
 /* Site-specific overrides (keep last so they win) */
-// Slides design system imports (ensure global availability for Reveal decks)
-// Added per diagnostics: previously missing, causing absent --slides-* vars in production.
-@import "components/slides-theme";
-@import "components/slides-archetypes";
+// Slides: use Reveal.js default themes (no custom slide design system CSS)
 @import "components/slides-filter"; // client-side category filter utilities
 @import "overrides-prompts";
 @import "overrides-slides"; // slide card preview fallback styles
