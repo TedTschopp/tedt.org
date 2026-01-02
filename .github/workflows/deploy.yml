@@ -37,6 +37,7 @@ jobs:
 
       - name: Restore Allure history (trends)
         if: always()
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
@@ -45,41 +46,35 @@ jobs:
 
           echo "[allure] Looking for latest 'allure-report' artifact to restore history..."
 
-            DOWNLOAD_URL=$(python3 - <<'PY'
-            import json
-            import os
-            import urllib.request
-
-            repo = os.environ['GITHUB_REPOSITORY']
-            token = os.environ['GITHUB_TOKEN']
-            url = f"https://api.github.com/repos/{repo}/actions/artifacts?per_page=100"
-
-            req = urllib.request.Request(
-              url,
-              headers={
-                "Authorization": f"Bearer {token}",
-                "Accept": "application/vnd.github+json",
-                "User-Agent": "tedt.org-allure-history"
-              },
-            )
-            with urllib.request.urlopen(req) as resp:
-              data = json.load(resp)
-
-            artifacts = data.get('artifacts', [])
-            matches = [a for a in artifacts if a.get('name') == 'allure-report' and not a.get('expired', False)]
-            matches.sort(key=lambda a: a.get('created_at', ''), reverse=True)
-
-            if not matches:
-              print('')
-              raise SystemExit(0)
-
-            print(matches[0].get('archive_download_url', ''))
-            PY
-            )
+          DOWNLOAD_URL="$(python3 -c 'import json, os, urllib.request; repo=os.environ["GITHUB_REPOSITORY"]; token=os.environ["GITHUB_TOKEN"]; url=f"https://api.github.com/repos/{repo}/actions/artifacts?per_page=100"; req=urllib.request.Request(url, headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "User-Agent": "tedt.org-allure-history"}); data=json.load(urllib.request.urlopen(req)); arts=data.get("artifacts", []); matches=[a for a in arts if a.get("name")=="allure-report" and not a.get("expired", False)]; matches.sort(key=lambda a: a.get("created_at", ""), reverse=True); print(matches[0].get("archive_download_url", "") if matches else "")')"
 
           if [ -z "${DOWNLOAD_URL:-}" ] || [ "${DOWNLOAD_URL:-}" = "NO_ARTIFACT" ]; then
             echo "[allure] No prior artifact found; skipping history restore."
             exit 0
+          fi
+
+          echo "[allure] Downloading artifact zip..."
+          if ! curl -fsSL -L \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "$DOWNLOAD_URL" \
+            -o tmp/allure-history.zip; then
+            echo "[allure] Failed to download prior artifact; skipping history restore."
+            exit 0
+          fi
+
+          if ! unzip -q -o tmp/allure-history.zip -d tmp/allure-history; then
+            echo "[allure] Failed to unzip prior artifact; skipping history restore."
+            exit 0
+          fi
+
+          if [ -d "tmp/allure-history/reports/allure/latest/history" ]; then
+            mkdir -p reports/allure/allure-results/history
+            # Copy prior report history into this run's results so Allure can compute trends.
+            cp -R tmp/allure-history/reports/allure/latest/history/* reports/allure/allure-results/history/ || true
+            echo "[allure] Restored history/ into allure-results/history."
+          else
+            echo "[allure] Artifact had no history directory; skipping."
           fi
 
       - name: Markdown lint
@@ -147,24 +142,6 @@ jobs:
             --status "$A_STATUS" \
             --attach "stylelint overrides=tmp/stylelint-overrides.txt" \
             --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
-
-          echo "[allure] Downloading artifact zip..."
-          curl -sSL -L \
-            -H "Authorization: Bearer $GITHUB_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "$DOWNLOAD_URL" \
-            -o tmp/allure-history.zip
-
-          unzip -q -o tmp/allure-history.zip -d tmp/allure-history
-
-          if [ -d "tmp/allure-history/reports/allure/latest/history" ]; then
-            mkdir -p reports/allure/allure-results/history
-            # Copy prior report history into this run's results so Allure can compute trends.
-            cp -R tmp/allure-history/reports/allure/latest/history/* reports/allure/allure-results/history/ || true
-            echo "[allure] Restored history/ into allure-results/history."
-          else
-            echo "[allure] Artifact had no history directory; skipping."
-          fi
 
       - name: Install Playwright (Chromium)
         run: |
@@ -235,6 +212,7 @@ jobs:
 
       - name: Capture GitHub Actions errors/warnings (Allure)
         if: always()
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{ github.token }}
         run: |
@@ -242,15 +220,35 @@ jobs:
           mkdir -p tmp/gha-logs
           mkdir -p reports/allure/allure-results
           echo "[diag] Downloading workflow run logs..."
-          curl -sSL \
+          if curl -fsSL -L \
             -H "Authorization: Bearer $GITHUB_TOKEN" \
             -H "Accept: application/vnd.github+json" \
             "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/logs" \
-            -o tmp/gha-logs.zip
-          unzip -q -o tmp/gha-logs.zip -d tmp/gha-logs
-          python3 reports/allure/github_actions_logs_to_allure.py \
-            --logs-dir tmp/gha-logs \
+            -o tmp/gha-logs.zip; then
+            if unzip -q -o tmp/gha-logs.zip -d tmp/gha-logs; then
+              python3 reports/allure/github_actions_logs_to_allure.py \
+                --logs-dir tmp/gha-logs \
+                --output-dir reports/allure/allure-results \
+                --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+              exit 0
+            fi
+          fi
+
+          echo "[diag] Logs download/unzip failed; capturing diagnostics as Allure attachment."
+          # Re-fetch without -f so we can attach the response body for debugging.
+          curl -sSL -L \
+            -H "Authorization: Bearer $GITHUB_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/logs" \
+            -o tmp/gha-logs-error.txt || true
+
+          python3 reports/allure/write_simple_allure_result.py \
             --output-dir reports/allure/allure-results \
+            --name "GitHub Actions workflow diagnostics capture" \
+            --suite "CI Diagnostics" \
+            --sub-suite "GitHub Actions" \
+            --status failed \
+            --attach "logs download response=tmp/gha-logs-error.txt" \
             --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
       - name: Write Allure metadata (environment + executor)
