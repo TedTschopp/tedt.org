@@ -69,6 +69,15 @@ description: "Explore interactive, PowerPoint-style slide decks built with Revea
       <div class="ratio {{ ratio_class }}">
         {%- if slide.image -%}
             <img src="{{ slide.image }}" class="card-img-top" alt="{{ slide.image-alt | default: slide.title | escape }}" loading="lazy">
+
+            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 z-1" aria-hidden="true">
+              <div class="bg-dark bg-opacity-50 rounded-3 px-3 py-2">
+                <div class="h5 mb-1 text-white">{{ slide.title | escape }}</div>
+                {%- if slide.description -%}
+                  <div class="small text-white">{{ slide.description | escape }}</div>
+                {%- endif -%}
+              </div>
+            </div>
         {%- else -%}
           {%- if slide.markdown -%}
           <div class="slide-card-preview" aria-hidden="true">
