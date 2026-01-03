@@ -225,6 +225,49 @@
             }
             button[aria-pressed].text-bg-secondary:focus-visible { outline: 2px solid var(--bs-primary); outline-offset: 2px; }
             button[aria-pressed="true"].text-bg-secondary:focus-visible { outline-color: var(--bs-light); }
+
+        /* --- Light / Auto / Dark segmented switcher (pepelsbey-style, Bootstrap colors) --- */
+        #colorSchemeToggle.scheme-switcher {
+            display: inline-flex;
+            align-items: center;
+            gap: 2px;
+            padding: 2px;
+            border: 1px solid var(--bs-border-color-translucent);
+            border-radius: var(--bs-border-radius-pill);
+            background: transparent;
+            /* In navbar, these vars exist; elsewhere fallback to body color */
+            color: var(--bs-navbar-color, var(--bs-body-color));
+        }
+        #colorSchemeToggle.scheme-switcher .scheme-switcher__button {
+            appearance: none;
+            background: transparent;
+            border: 0;
+            border-radius: var(--bs-border-radius-pill);
+            color: inherit;
+            font: inherit;
+            line-height: 1;
+            padding: 0 .65rem;
+            min-height: 44px;
+            cursor: pointer;
+            transition: background-color .15s ease, color .15s ease;
+        }
+        #colorSchemeToggle.scheme-switcher .scheme-switcher__button:hover {
+            color: var(--bs-navbar-hover-color, var(--bs-body-color));
+        }
+        #colorSchemeToggle.scheme-switcher .scheme-switcher__button[aria-pressed="true"] {
+            background-color: var(--bs-primary);
+            color: var(--bs-light);
+        }
+        #colorSchemeToggle.scheme-switcher .scheme-switcher__button[aria-pressed="true"]:hover {
+            filter: brightness(1.05);
+        }
+        #colorSchemeToggle.scheme-switcher .scheme-switcher__button:focus-visible {
+            outline: 2px solid var(--bs-primary);
+            outline-offset: 2px;
+        }
+        @media (prefers-reduced-motion: reduce) {
+            #colorSchemeToggle.scheme-switcher .scheme-switcher__button { transition: none; }
+        }
         @media (prefers-reduced-motion: reduce) {
             button[aria-pressed] { transition: none; }
         }
