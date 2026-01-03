@@ -1,0 +1,88 @@
+{%- comment -%}
+  Wires up the Light / Auto / Dark UI buttons.
+  Runs at the end of <body> so the navbar exists.
+{%- endcomment -%}
+<script>
+(function () {
+  'use strict';
+
+  var api = window.__TedColorScheme;
+  if (!api) return;
+
+  var STORAGE_KEY = api.STORAGE_KEY || 'color-scheme';
+
+  function setLocalStorage(value) {
+    try {
+      localStorage.setItem(STORAGE_KEY, value);
+    } catch (e) {}
+  }
+
+  function deleteCookie(name) {
+    document.cookie = name + '=; path=/; max-age=0';
+  }
+
+  function migrateLegacyCookies(nextPreference) {
+    // Stop old 2-state logic from fighting the new 3-state logic.
+    // We keep compatibility by clearing known legacy cookie names.
+    deleteCookie('theme');
+    deleteCookie('site_theme');
+
+    // Persist only via localStorage going forward.
+    setLocalStorage(nextPreference);
+  }
+
+  function setPressedState(container, preference) {
+    if (!container) return;
+    var buttons = container.querySelectorAll('button[data-color-scheme]');
+    buttons.forEach(function (btn) {
+      var v = (btn.getAttribute('data-color-scheme') || '').toLowerCase();
+      btn.setAttribute('aria-pressed', v === preference ? 'true' : 'false');
+    });
+  }
+
+  function setup(container) {
+    if (!container || container.dataset.enhanced === 'true') return;
+
+    function applyAndSync(nextPreference) {
+      var applied = api.set(nextPreference);
+      migrateLegacyCookies(applied);
+      setPressedState(container, applied);
+    }
+
+    container.addEventListener('click', function (e) {
+      var btn = e.target && e.target.closest ? e.target.closest('button[data-color-scheme]') : null;
+      if (!btn) return;
+      e.preventDefault();
+      var nextPreference = btn.getAttribute('data-color-scheme');
+      applyAndSync(nextPreference);
+    });
+
+    // Initial state
+    setPressedState(container, api.get());
+
+    // When OS scheme changes, update Bootstrap theme if in Auto.
+    try {
+      var mql = window.matchMedia('(prefers-color-scheme: dark)');
+      var handler = function () {
+        var pref = api.refreshAuto();
+        setPressedState(container, pref);
+      };
+      if (mql && mql.addEventListener) mql.addEventListener('change', handler);
+      else if (mql && mql.addListener) mql.addListener(handler);
+    } catch (e) {}
+
+    container.dataset.enhanced = 'true';
+  }
+
+  function init() {
+    var container = document.getElementById('colorSchemeToggle');
+    setup(container);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+})();
+</script>

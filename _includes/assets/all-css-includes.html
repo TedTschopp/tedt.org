@@ -1,4 +1,10 @@
-    <!-- Font Awesome CDN (primary icon set). Local fallback removed per request; restore by uncommenting include below if ever needed. -->
+        {%- comment -%}
+            Native Light/Auto/Dark scheme controller.
+            Kept at the very top of head includes to minimize flash and to match pepelsbey.dev semantics.
+        {%- endcomment -%}
+        {% include utility/color-scheme-head.html %}
+
+        <!-- Font Awesome CDN (primary icon set). Local fallback removed per request; restore by uncommenting include below if ever needed. -->
     {% include assets/css-fontawesome.html %}
     {%- comment -%} Legacy fallback: {% include assets/css-fa-fallback.html %} {%- endcomment -%}
 
@@ -230,21 +236,3 @@
 
     <!-- Prompts/mobile overflow fixes (plain CSS, keep last to win specificity by order) -->
     <link rel="stylesheet" type="text/css" href="{{ '/css/prompts-overrides.css' | relative_url }}">
-
-    <meta id="theme-meta" name="theme-color" content="#101820">
-    
-    <script>
-        function setThemeColor() {
-            const styles = getComputedStyle(document.documentElement);
-            const rgb = styles.getPropertyValue('--bs-dark-rgb').trim();   // e.g. "33,37,41"
-            const opacity = styles.getPropertyValue('--bs-bg-opacity').trim() || '1';
-            document
-                .querySelector('#theme-meta')
-                .setAttribute('content', `rgba(${rgb},${opacity})`);
-        }
-
-        setThemeColor();                         // first paint
-        matchMedia('(prefers-color-scheme: dark)')
-            .addEventListener('change', setThemeColor); // keep in sync
-        /* call setThemeColor() again whenever you toggle a .dark class, etc. */
-    </script>

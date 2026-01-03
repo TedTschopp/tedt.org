@@ -1,0 +1,114 @@
+{%- comment -%}
+  Native Light / Auto / Dark color scheme controller.
+  - Mirrors pepelsbey.dev demo UX semantics (light / light dark / dark)
+  - Also maps to Bootstrap `data-bs-theme` for component theming
+  - Runs in <head> (early) to minimize flash
+{%- endcomment -%}
+<meta name="color-scheme" content="light dark">
+<script>
+(function () {
+  'use strict';
+
+  var STORAGE_KEY = 'color-scheme';
+
+  function getCookie(name) {
+    var value = '; ' + document.cookie;
+    var parts = value.split('; ' + name + '=');
+    if (parts.length === 2) return parts.pop().split(';').shift();
+    return null;
+  }
+
+  function normalizePreference(value) {
+    if (!value) return 'auto';
+    var v = String(value).toLowerCase().trim();
+
+    // Support pepelsbey-style string as a persisted value
+    if (v === 'light dark') return 'auto';
+
+    if (v === 'light' || v === 'dark' || v === 'auto') return v;
+
+    // Support older boolean-ish / short forms
+    if (v === 'system') return 'auto';
+
+    return 'auto';
+  }
+
+  function ensureColorSchemeMeta() {
+    var meta = document.querySelector('meta[name="color-scheme"]');
+    if (!meta) {
+      meta = document.createElement('meta');
+      meta.setAttribute('name', 'color-scheme');
+      document.head.appendChild(meta);
+    }
+    return meta;
+  }
+
+  function getPrefersDark() {
+    try {
+      return !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches);
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function readPreference() {
+    // 1) localStorage (new)
+    try {
+      var stored = localStorage.getItem(STORAGE_KEY);
+      if (stored) return normalizePreference(stored);
+    } catch (e) {}
+
+    // 2) legacy cookies (old)
+    var legacy = getCookie('theme') || getCookie('site_theme');
+    if (legacy) return normalizePreference(legacy);
+
+    // 3) default
+    return 'auto';
+  }
+
+  function applyPreference(preference) {
+    var pref = normalizePreference(preference);
+    var meta = ensureColorSchemeMeta();
+    var html = document.documentElement;
+
+    var prefersDark = getPrefersDark();
+
+    var metaContent;
+    var bsTheme;
+
+    if (pref === 'light') {
+      metaContent = 'light';
+      bsTheme = 'light';
+    } else if (pref === 'dark') {
+      metaContent = 'dark';
+      bsTheme = 'dark';
+    } else {
+      metaContent = 'light dark';
+      bsTheme = prefersDark ? 'dark' : 'light';
+    }
+
+    meta.setAttribute('content', metaContent);
+    html.setAttribute('data-bs-theme', bsTheme);
+
+    // Optional: a stable marker for other scripts (no CSS dependence)
+    html.setAttribute('data-color-scheme', pref);
+
+    return pref;
+  }
+
+  var currentPreference = applyPreference(readPreference());
+
+  // Expose a tiny API for the bottom-of-body wiring script.
+  window.__TedColorScheme = {
+    STORAGE_KEY: STORAGE_KEY,
+    get: function () { return currentPreference; },
+    set: function (next) { currentPreference = applyPreference(next); return currentPreference; },
+    refreshAuto: function () {
+      if (currentPreference === 'auto') {
+        currentPreference = applyPreference('auto');
+      }
+      return currentPreference;
+    }
+  };
+})();
+</script>
