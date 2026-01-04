@@ -13,9 +13,9 @@ date: 2026-01-04 14:00:00 -0800
 update: 2026-01-04 14:00:00 -0800
 
 author:
-  avatar: [https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g](https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g)
+  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
-  url: [https://tedt.org/](https://tedt.org/)
+  url: https://tedt.org/
 
 bullets:
 - AI accelerates existing workflows, good or bad
