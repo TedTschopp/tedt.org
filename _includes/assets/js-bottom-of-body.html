@@ -88,7 +88,17 @@
         function applyTocCard(){
           const tocCard = document.getElementById('table-of-contents-card');
           const btn = document.getElementById('btnToggleTocCard');
-          if(!tocCard){ return; }
+          if(!tocCard){
+            if(btn){
+              btn.setAttribute('aria-disabled', 'true');
+              btn.setAttribute('disabled', 'disabled');
+            }
+            return;
+          }
+          if(btn){
+            btn.removeAttribute('disabled');
+            btn.removeAttribute('aria-disabled');
+          }
           // Only manage visibility now; layout no longer depends on column width adjustments.
           if(tableOfContentsVisible){
             if(tocCard.classList.contains('hidden')){
@@ -117,13 +127,14 @@
           }
           if(btn){
             setPressed(btn, tableOfContentsVisible);
-            btn.title = tableOfContentsVisible ? 'Hide Table of Contents' : 'Show Table of Contents';
-            btn.setAttribute('aria-label', btn.title);
-            const icon = btn.querySelector('i[data-swap-icon]');
-            if(icon){
-              if(tableOfContentsVisible){ icon.classList.add('fa-regular'); icon.classList.remove('fa-solid'); }
-              else { icon.classList.add('fa-solid'); icon.classList.remove('fa-regular'); }
-            }
+            const label = tableOfContentsVisible ? 'Hide TOC' : 'Show TOC';
+            btn.title = label;
+            btn.setAttribute('aria-label', label);
+
+            // Match requested UI text.
+            // Visible label includes the hamburger glyph when showing.
+            const buttonText = tableOfContentsVisible ? 'Hide TOC' : '☰ Show TOC';
+            if(btn.textContent !== buttonText){ btn.textContent = buttonText; }
           }
         }
         function toggleTocCard(){
