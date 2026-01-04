@@ -47,7 +47,7 @@ location:
 coordinates:
   latitude: 33.8621672
   longitude: -118.0312011
-image: img/2011-03/smart-connect.webp
+image: /img/2011-03/smart-connect.webp
 image-alt: null
 image-artist: null
 image-artist-URL: null

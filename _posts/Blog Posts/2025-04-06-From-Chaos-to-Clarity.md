@@ -54,7 +54,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/From-Chaos-to-Clarity.webp
+image: /img/AI/From-Chaos-to-Clarity.webp
 image-alt: Abstract visualization of transforming chaotic meeting notes into clear
   structured requirements
 image-artist: Ted Tschopp

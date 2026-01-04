@@ -50,4 +50,4 @@ Donald Crowdis, the 93-year-old blogger of Don to Earth, has a brave and bitters
   
 "I've floated on the remark "Been there, done that" for some time now, but the notion that the moment is approaching when I can no longer say this bothers me. The truth is, I don't want to go."
 
-[read more](http://dontoearth.blogspot.com/2007/01/it-bothers-me-that-i-have-to-go.html)&#160;|&#160;[digg story](http://digg.com/offbeat_news/93_year_old_blogger_It_Bothers_Me_That_I_Have_To_Go)
+[read more](http://dontoearth.blogspot.com/2007/01/it-bothers-me-that-i-have-to-go.html)&#160;|&#160;[digg story](https://web.archive.org/web/20070202080443/http://digg.com/offbeat_news/93_year_old_blogger_It_Bothers_Me_That_I_Have_To_Go)

@@ -40,7 +40,7 @@ location:
 coordinates:
   latitude: 34.124192468540095
   longitude: -117.92754621529434
-image: img/2011-02/edisonintl_2dlogon.webp
+image: /img/2011-02/edisonintl_2dlogon.webp
 image-alt: null
 image-artist: null
 image-artist-URL: null

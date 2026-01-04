@@ -167,19 +167,24 @@
                                     {% endif %}
             
                                     {% if post.image-credits-artist-URL %}
-                                        {% assign image_credits_artist_URL = post.image-credits-artist %}
+                                      {% assign image_credits_artist_URL = post.image-credits-artist-URL %}
                                     {% elsif post.image-artist-URL %}
                                         {% assign image_credits_artist_URL = post.image-artist-URL %}
                                     {% endif %}
             
                                     {% if post.image %}
-                                        {% if post.image contains "http" %}
-                                            {% assign image_URL = post.image %}
-                                        {% else %}
-                                            {% assign image_URL = site.url | append: "/" | append: post.image %}
-                                        {% endif %}
+                                      {% assign _image_raw = post.image | strip %}
+                                      {% assign _image_first = _image_raw | slice: 0, 1 %}
+                                      {% assign _image_first2 = _image_raw | slice: 0, 2 %}
+                                      {% if _image_raw contains '://' or _image_first2 == '//' %}
+                                        {% assign image_URL = _image_raw %}
+                                      {% elsif _image_first == "/" %}
+                                        {% assign image_URL = site.url | append: _image_raw %}
+                                      {% else %}
+                                        {% assign image_URL = site.url | append: "/" | append: _image_raw %}
+                                      {% endif %}
                                     {% else %}
-                                        {% assign image_URL = site.featured-image %}
+                                      {% assign image_URL = site.featured-image %}
                                     {% endif %}
 
                                     <div class="card rounded-0 px-0">

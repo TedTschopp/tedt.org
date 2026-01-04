@@ -33,7 +33,7 @@ location:
 coordinates:
   latitude: 34.02455
   longitude: -117.767693
-image: img/Fiction/Ted_Tschopp_Impressionistic_view_of_An_image_of_a_young_thin.webp
+image: /img/Fiction/Ted_Tschopp_Impressionistic_view_of_An_image_of_a_young_thin.webp
 image-alt: null
 image-artist: null
 image-artist-URL: null

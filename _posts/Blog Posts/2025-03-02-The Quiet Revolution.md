@@ -51,7 +51,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/The-Quiet-Revolution.webp
+image: /img/AI/The-Quiet-Revolution.webp
 image-alt: Modern office environment subtly transformed by AI integration
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

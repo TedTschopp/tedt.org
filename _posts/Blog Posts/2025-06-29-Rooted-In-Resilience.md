@@ -55,7 +55,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Rooted-in-Resilience.webp
+image: /img/AI/Rooted-in-Resilience.webp
 image-alt: Deep-rooted tree weathering a storm, symbolizing enterprise resilience
   during AI transformation
 image-artist: Ted Tschopp

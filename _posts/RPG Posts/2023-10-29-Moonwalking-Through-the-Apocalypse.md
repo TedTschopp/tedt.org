@@ -43,7 +43,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2023-10/Michael-JX Moonwalking Through the Apocalypse.webp
+image: /img/2023-10/Michael-JX Moonwalking Through the Apocalypse.webp
 image-alt: The imposing figure of Michael-JX in a barren wasteland
 image-title: 'Michael-JX: Moonwalking Through the Apocalypse'
 image-description: Michael-JX stands tall, a relic from the past and a harbinger of

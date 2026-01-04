@@ -58,7 +58,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/WINS-4-Quandrents.webp
+image: /img/AI/WINS-4-Quandrents.webp
 image-alt: 2x2 matrix diagram showing WINS framework categories for AI workflow analysis
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

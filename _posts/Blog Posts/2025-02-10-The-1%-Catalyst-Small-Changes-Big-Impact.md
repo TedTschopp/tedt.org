@@ -48,7 +48,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/The-1-Percent-Catalyst.webp
+image: /img/AI/The-1-Percent-Catalyst.webp
 image-alt: Solar panels and wind turbines representing energy sector transformation
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

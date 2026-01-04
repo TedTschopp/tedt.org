@@ -62,7 +62,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Deep-Seek.webp
+image: /img/AI/Deep-Seek.webp
 image-alt: Diagram showing the five-step DeepSeek R1 training pipeline with dog training
   metaphors
 image-artist: Ted Tschopp

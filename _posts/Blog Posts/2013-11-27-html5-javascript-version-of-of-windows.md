@@ -43,7 +43,7 @@ location:
 coordinates:
   latitude: 34.256278
   longitude: -118.267083
-image: img/2013-11/javascript.webp
+image: /img/2013-11/javascript.webp
 image-alt: null
 image-artist: null
 image-artist-URL: null

@@ -32,7 +32,7 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: img/2005-10/Two-concepts-of-hell.webp
+image: /img/2005-10/Two-concepts-of-hell.webp
 image-alt: null
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

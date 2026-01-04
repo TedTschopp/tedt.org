@@ -56,7 +56,7 @@ Recent advancements in AI, particularly OpenAI’s o1 and o3 models, are redefin
 
 A decade ago, Standford University and YCombinator created a course offereed at Stanford called "How to Start a Startup." Sam Altman, who is now had of OpenAI, brought together a group of people to talk about how to run a startup. The focus of this write up is Lecture 14 - How to Operate. And specifically on an idea in there called "Barrels and Ammunition".
 
-Watch now: [Barrels and Ammunition]("https://www.youtube.com/watch?v=6fQHLK1aIBs")
+Watch now: [Barrels and Ammunition](https://www.youtube.com/watch?v=6fQHLK1aIBs)
 
 ### The o1 Breakthru
 

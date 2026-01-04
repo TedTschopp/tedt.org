@@ -45,7 +45,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2025-09/Accenture.webp
+image: /img/2025-09/Accenture.webp
 image-alt: Picture of the Stargate
 image-artist: null
 image-artist-URL: null

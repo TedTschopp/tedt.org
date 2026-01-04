@@ -37,7 +37,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/home/RPG-Map.webp
+image: /img/home/RPG-Map.webp
 image-alt: RPG Map from the 1980s.
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

@@ -40,7 +40,7 @@ location:
   coordinates:
     latitude: 34.1470
     longitude: -117.9709
-image: img/AI/Night-Routine.webp
+image: /img/AI/Night-Routine.webp
 image-alt: "Stylized family at bedtime with anxious expressions dad with beard mom with curly hair three kids one holding a toothbrush teal and warm-orange textured look"
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"

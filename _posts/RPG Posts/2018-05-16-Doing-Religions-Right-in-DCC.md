@@ -40,7 +40,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2018-05/the-valar.webp
+image: /img/2018-05/the-valar.webp
 image-alt: The 15 Valar from J.R.R. Tolkien's Silmarillion, in the style of Byzantine
   icons.
 image-artist: Dan Hainsworth

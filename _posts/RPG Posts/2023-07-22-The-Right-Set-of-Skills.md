@@ -33,7 +33,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2023-07/FAME.webp
+image: /img/2023-07/FAME.webp
 image-alt: Photo by Ted Tschopp using Midjourney
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

@@ -31,7 +31,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/Gamma-World-Midjourney.png
+image: /img/Gamma-World-Midjourney.png
 image-alt: An artist carving a statue of a man out of a giant mountain
 image-artist: Ted Tschopp using Midjourney
 image-artist-URL: https://tedt.org/

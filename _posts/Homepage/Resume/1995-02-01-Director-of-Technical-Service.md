@@ -63,7 +63,7 @@ location:
 coordinates:
   latitude: null
   longitude: null
-image: img/home/Market-Research.webp
+image: /img/home/Market-Research.webp
 image-alt: A man drawing market research on a piece of wall, in the style of light
   gray and bronze, american consumer culture, text-based, stylish
 image-artist: Ted Tschopp

@@ -58,7 +58,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Riding-the-AI-Wave-This-Isnt-Just-Another-Trend.webp
+image: /img/AI/Riding-the-AI-Wave-This-Isnt-Just-Another-Trend.webp
 image-alt: Father and son navigating terrain during camping trip, symbolizing AI navigation
   in the workplace
 image-artist: Ted Tschopp

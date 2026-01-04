@@ -35,7 +35,7 @@ location:
 coordinates:
   latitude: null
   longitude: null
-image: img/home/Ted-Tschopp-Senior-Enterprise-Architect-v4.webp
+image: /img/home/Ted-Tschopp-Senior-Enterprise-Architect-v4.webp
 image-alt: null
 image-artist: Ted Tschopp and Midjourney
 image-artist-URL: https://tedt.org/

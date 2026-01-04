@@ -132,7 +132,16 @@
                             {% assign image_credits_title = post.image-credits-title | default: post.image-title | default: "Unknown" %}
                             {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
                             {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
-                            {% assign image_URL = post.image %}
+                            {% assign _image_raw = post.image | strip %}
+                            {% assign _image_first = _image_raw | slice: 0, 1 %}
+                            {% assign _image_first2 = _image_raw | slice: 0, 2 %}
+                            {% if _image_raw contains '://' or _image_first2 == '//' %}
+                              {% assign image_URL = _image_raw %}
+                            {% elsif _image_first == '/' %}
+                              {% assign image_URL = _image_raw %}
+                            {% else %}
+                              {% assign image_URL = '/' | append: _image_raw %}
+                            {% endif %}
                             <div class="card rounded-0 px-0">
                               <div class="row g-0">
                                 <div class="col-md-4">
@@ -216,7 +225,16 @@
                             {% assign image_credits_title = post.image-credits-title | default: post.image-title | default: "Unknown" %}
                             {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
                             {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
-                            {% assign image_URL = post.image %}
+                            {% assign _image_raw = post.image | strip %}
+                            {% assign _image_first = _image_raw | slice: 0, 1 %}
+                            {% assign _image_first2 = _image_raw | slice: 0, 2 %}
+                            {% if _image_raw contains '://' or _image_first2 == '//' %}
+                              {% assign image_URL = _image_raw %}
+                            {% elsif _image_first == '/' %}
+                              {% assign image_URL = _image_raw %}
+                            {% else %}
+                              {% assign image_URL = '/' | append: _image_raw %}
+                            {% endif %}
                             <div class="card rounded-0 px-0">
                               <div class="row g-0">
                                 <div class="col-md-4">
@@ -309,7 +327,16 @@
                           {% assign image_credits_title = post.image-credits-title | default: post.image-title | default: "Unknown" %}
                           {% assign image_credits = post.image-credits-artist | default: post.image-artist | default: "Unknown" %}
                           {% assign image_credits_artist_URL = post.image-credits-artist-URL | default: post.image-artist-URL %}
-                          {% assign image_URL = post.image %}
+                          {% assign _image_raw = post.image | strip %}
+                          {% assign _image_first = _image_raw | slice: 0, 1 %}
+                          {% assign _image_first2 = _image_raw | slice: 0, 2 %}
+                          {% if _image_raw contains '://' or _image_first2 == '//' %}
+                            {% assign image_URL = _image_raw %}
+                          {% elsif _image_first == '/' %}
+                            {% assign image_URL = _image_raw %}
+                          {% else %}
+                            {% assign image_URL = '/' | append: _image_raw %}
+                          {% endif %}
                           <div class="card rounded-0 px-0">
                             <div class="row g-0">
                               <div class="col-md-4">
@@ -423,9 +450,19 @@
                   <a name="{{ post.title | slugify}}" style="scroll-margin-top: 76px;"></a>
                   <div class="card mb-3">
                     <div class="row g-0 align-items-center">
+                      {% assign _image_raw = post.image | strip %}
+                      {% assign _image_first = _image_raw | slice: 0, 1 %}
+                      {% assign _image_first2 = _image_raw | slice: 0, 2 %}
+                      {% if _image_raw contains '://' or _image_first2 == '//' %}
+                        {% assign image_URL = _image_raw %}
+                      {% elsif _image_first == '/' %}
+                        {% assign image_URL = _image_raw %}
+                      {% else %}
+                        {% assign image_URL = '/' | append: _image_raw %}
+                      {% endif %}
                       {% if mod != 1 %}<!-- odd -->
                         <div class="col-md-4 d-flex align-items-center">
-                          <img src="{{ site.url }}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
+                          <img src="{{ image_URL }}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
                         </div>
                         <div class="col-md-8">
                           <div class="card-body align-items-center {{ watermark }}">
@@ -459,7 +496,7 @@
                           </div>
                         </div>
                         <div class="col-md-4 d-flex align-items-center">
-                          <img src="{{ site.url }}/{{post.image}}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
+                          <img src="{{ image_URL }}" class="img-fluid rounded-start" alt="{{post.image-credits-title}} by {{post.image-credits-artist}}">
                         </div>
                       {% endif %}
                     </div>

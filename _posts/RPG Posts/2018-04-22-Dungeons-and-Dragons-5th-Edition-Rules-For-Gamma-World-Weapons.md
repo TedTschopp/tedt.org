@@ -29,7 +29,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2018-04/The-Leviathan.webp
+image: /img/2018-04/The-Leviathan.webp
 image-alt: null
 image-artist: Larry Elmore
 image-artist-URL: http://www.larryelmore.com/

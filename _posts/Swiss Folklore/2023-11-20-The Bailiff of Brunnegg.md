@@ -47,7 +47,7 @@ location:
 coordinates:
   latitude: 47.422161
   longitude: 8.214489
-image: img/Swiss/A_haunting_snowy_scene_at_Brunnegg_Castle.webp
+image: /img/Swiss/A_haunting_snowy_scene_at_Brunnegg_Castle.webp
 image-alt: 'A haunting snowy scene at Brunnegg Castle in Switzerland, during the harsh
   winter, a menacing ghostly figure of the bailiff riding on a black horse. A castle
   looms in the background, partially obscured by a fierce, swirling snowstorm. The

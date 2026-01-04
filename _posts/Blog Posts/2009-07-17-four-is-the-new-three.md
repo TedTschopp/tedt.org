@@ -35,7 +35,7 @@ location:
 coordinates:
   latitude: 34.02455
   longitude: -117.767693
-image: img/2013-06/four-is-the-new-three.webp
+image: /img/2013-06/four-is-the-new-three.webp
 image-alt: null
 image-artist: null
 image-artist-URL: null

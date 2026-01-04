@@ -36,7 +36,7 @@ location:
 coordinates:
   latitude: 34.256278
   longitude: -118.267083
-image: img/2011-06/Tessellated_Pavement_Sunrise_Landscape.webp
+image: /img/2011-06/Tessellated_Pavement_Sunrise_Landscape.webp
 image-alt: null
 image-artist: JJ Harrison
 image-artist-URL: https://www.jjharrison.com.au/

@@ -37,7 +37,7 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: img/2007-01/Digital-Dreams-and-Dusty-Books.png
+image: /img/2007-01/Digital-Dreams-and-Dusty-Books.png
 image-alt: An early-2000s computer resting on a writing desk with books and coffee
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

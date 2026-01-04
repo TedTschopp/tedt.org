@@ -56,7 +56,7 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: img/2007-01/A-Beginning.png
+image: /img/2007-01/A-Beginning.png
 image-alt: null
 image-artist: Ted Tschopp
 image-artist-URL: null

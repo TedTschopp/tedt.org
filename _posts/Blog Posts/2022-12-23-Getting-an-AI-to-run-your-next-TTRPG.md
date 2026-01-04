@@ -27,7 +27,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2022-12/TTRPG-Gamma-World-ASCII-Art.webp
+image: /img/2022-12/TTRPG-Gamma-World-ASCII-Art.webp
 image-alt: Gamma World 1st Edition RPG Books and dice
 image-artist: null
 image-artist-URL: null

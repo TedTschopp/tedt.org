@@ -80,7 +80,7 @@ location:
 coordinates:
   latitude: null
   longitude: null
-image: img/home/Ted-Tschopp-Engineering-and-Developer-Lead.webp
+image: /img/home/Ted-Tschopp-Engineering-and-Developer-Lead.webp
 image-alt: null
 image-artist: Ted Tschopp and Midjourney
 image-artist-URL: https://www.tedt.org/

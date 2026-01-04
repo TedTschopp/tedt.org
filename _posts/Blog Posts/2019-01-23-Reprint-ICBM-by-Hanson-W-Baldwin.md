@@ -39,7 +39,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2019-01/ICBM.webp
+image: /img/2019-01/ICBM.webp
 image-alt: Picture of an ICBM
 image-artist: null
 image-artist-URL: null

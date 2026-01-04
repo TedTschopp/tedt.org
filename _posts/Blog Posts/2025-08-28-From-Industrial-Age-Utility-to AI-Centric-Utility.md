@@ -70,11 +70,11 @@ location:
 image: "img/2025-08/Transmission-and-Data.webp"
 image-alt: "Transmission towers with a digital data overlay representing edge‑to‑cloud flow and context preservation."
 image-artist: "Ted Tschopp"
-image-artist-URL: https://tedt.org/"
+image-artist-URL: https://tedt.org/
 image-credits: "Ted Tschopp"
-image-credits-URL: https://tedt.org/"
+image-credits-URL: https://tedt.org/
 image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: https://tedt.org/"
+image-credits-artist-URL: https://tedt.org/
 image-credits-title: "From Industrial-Age Utility to AI-Centric Utility"
 image-description: "A visual metaphor for transforming a traditional utility into an AI‑centric enterprise: electrons and data moving end‑to‑end with minimal latency."
 image-title: "From Industrial-Age Utility to AI-Centric Utility"

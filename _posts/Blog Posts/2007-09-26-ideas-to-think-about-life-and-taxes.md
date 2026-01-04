@@ -35,7 +35,7 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: img/2007-09/taxonomy.png
+image: /img/2007-09/taxonomy.png
 image-alt: null
 image-artist: Alex Wright
 image-artist-URL: https://alexwright.com

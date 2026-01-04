@@ -34,7 +34,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2024-01/cyberpunk_club_outside_in_Los_Angeles.webp
+image: /img/2024-01/cyberpunk_club_outside_in_Los_Angeles.webp
 image-alt: Exterior of a cyberpunk nightclub in Los Angeles, lit by neon signs, wet
   reflective streets, futuristic cityscape backdrop
 image-title: Neon Night at a Cyberpunk Clubfront in Los Angeles

@@ -62,7 +62,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Unlocking-Corporate-Learning-with-AI-Simulations.webp
+image: /img/AI/Unlocking-Corporate-Learning-with-AI-Simulations.webp
 image-alt: Nested boxes representing recursion concept, symbolizing AI simulation
   layers in corporate learning
 image-artist: Ted Tschopp

@@ -50,7 +50,7 @@ location:
   coordinates: null
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Hannah-with-a-cat-no-title.webp
+image: /img/AI/Hannah-with-a-cat-no-title.webp
 image-alt: Child carefully building a complex Lego Tuxedo Cat, symbolizing organizational
   resilience during AI integration
 image-artist: Ted Tschopp

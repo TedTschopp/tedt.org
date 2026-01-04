@@ -64,7 +64,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Lighting-the-Trail.webp
+image: /img/AI/Lighting-the-Trail.webp
 image-alt: Cub Scouts around a campfire during Arrow of Light ceremony, representing
   AI-supported traditional values
 image-artist: Ted Tschopp

@@ -4,11 +4,11 @@ layout: quote
 title: 'There Are No Ordinary People – C.S. Lewis'
 title-url: ''
 subtitle: 'From *The Weight of Glory* (1941), sermon by C.S. Lewis'
-subtitle-url: 'https://en.wikipedia.org/wiki/The_Weight_of_Glory'
+subtitle-url: 'https://en.wikipedia.org/wiki/The_Weight_of_Glory_and_Other_Addresses'
 quote: 'There are no ordinary people. You have never talked to a mere mortal.'
 excerpt: "Lewis reminds us that every human soul is immortal, far surpassing nations and cultures in significance."
 source: 'The Weight Of Glory'
-source-url: 'https://en.wikipedia.org/wiki/The_Weight_of_Glory'
+source-url: 'https://en.wikipedia.org/wiki/The_Weight_of_Glory_and_Other_Addresses'
 call-to-action: ''
 
 date: 1941-01-01

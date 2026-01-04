@@ -50,7 +50,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Crafting-Conversations-with-AI.webp
+image: /img/AI/Crafting-Conversations-with-AI.webp
 image-alt: Professional conversation between human architect and AI, representing
   structured prompt engineering
 image-artist: Ted Tschopp

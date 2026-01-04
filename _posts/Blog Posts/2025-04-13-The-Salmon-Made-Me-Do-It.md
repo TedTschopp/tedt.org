@@ -63,7 +63,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/The Salmon-Made-Me-Do-It.webp
+image: /img/AI/The Salmon-Made-Me-Do-It.webp
 image-alt: Family gathered around dinner table with perfectly cooked salmon, representing
   successful AI collaboration
 image-artist: Ted Tschopp

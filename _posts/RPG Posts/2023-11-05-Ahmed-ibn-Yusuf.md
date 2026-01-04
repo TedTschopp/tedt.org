@@ -34,7 +34,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the
+image: /img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the
   Great Library in Bagdad.webp
 image-alt: Portrait of Ahmed ibn Yusuf, a porter of Baghdad’s Great Library (Bayt
   al‑Hikmah), carrying scroll-laden boxes amid richly detailed Islamic architecture.

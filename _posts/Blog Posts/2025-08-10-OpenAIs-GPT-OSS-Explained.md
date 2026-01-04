@@ -53,7 +53,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/OSS.webp
+image: /img/AI/OSS.webp
 image-alt: 'A split-brain illustration with the left side featuring science and research
   symbols, and the right side containing technology and data icons, surrounded by
   interconnected lines, gears, and interface elements. '

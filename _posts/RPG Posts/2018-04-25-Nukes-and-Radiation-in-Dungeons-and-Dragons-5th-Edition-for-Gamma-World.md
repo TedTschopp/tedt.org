@@ -37,7 +37,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2018-04/Third-Edition.webp
+image: /img/2018-04/Third-Edition.webp
 image-alt: null
 image-artist: Keith Parkinson
 image-artist-URL: https://www.keithparkinson.com/

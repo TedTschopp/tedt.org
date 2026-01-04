@@ -31,7 +31,7 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: img/2006-12/Los-Angeles-In-The-Rain.webp
+image: /img/2006-12/Los-Angeles-In-The-Rain.webp
 image-alt: null
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

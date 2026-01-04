@@ -34,7 +34,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2018-05/Ebstorfer-stich2.webp
+image: /img/2018-05/Ebstorfer-stich2.webp
 image-alt: Medieval map of the world (Ebstorf Map) featuring countries, cities, various
   bishoprics, and text describing the world's creation, animals, and historical elements.
 image-artist: Gervase of Ebstorf

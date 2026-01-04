@@ -1,0 +1,1085 @@
+Running ["ScriptCheck", "LinkCheck", "ImageCheck", "HtmlCheck"] on ["./_site"] on *.html... 
+
+
+  https://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.js is an invalid URL
+Checking 1795 external links...
+Ran on 1216 files!
+
+
+- ./_site/93-year-old-blogger-it-bothers-me-that-i-have-to-go/index.html
+  *  External link http://digg.com/offbeat_news/93_year_old_blogger_It_Bothers_Me_That_I_Have_To_Go failed: 404 No error
+- ./_site/A-Memory-of-Myths-and-the-Naming-of-𒀀𒌋𒀯/index.html
+  *  External link https://tschopp.net/@Ted/111784156309273441 failed: 404 No error
+- ./_site/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/index.html
+  *  External link https://nordvpn.com/blog/is-github-copilot-safe-to-use-at-work/#:~:text=,what%20they%20are%3A%20just%20suggestions failed: 403 No error
+  *  External link https://tschopp.net/@Ted/113998922120307948 failed: 404 No error
+  *  External link https://tsh.io/blog/future-of-low-code-no-code/#:~:text=Initially%2C%20it%20was%20thought%20that,step%20in%20to%20oversee%20them failed: 403 No error
+  *  External link https://tsh.io/blog/future-of-low-code-no-code/#:~:text=The%20solution%20was%20built%20to,knowledge%20creates%20too%20much%20risk failed: 403 No error
+- ./_site/Art-of-Innovation/index.html
+  *  External link https://tschopp.net/@Ted/111223710272362671 failed: 404 No error
+- ./_site/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/index.html
+  *  "https://www.youtube.com/watch?v=6fQHLK1aIBs" is an invalid URL (line 851)
+     <a href="&quot;https://www.youtube.com/watch?v=6fQHLK1aIBs&quot;">Barrels and Ammunition</a>
+- ./_site/Bespreekbaarheid-The-Missing-Ingredient-in-IT-Organizations/index.html
+  *  External link https://tschopp.net/@Ted/113782781327230004 failed: 404 No error
+- ./_site/CS-Lewis-There-are-no-ordinary-people/index.html
+  *  External link https://en.wikipedia.org/wiki/The_Weight_of_Glory failed: 404 No error
+- ./_site/Crucial-Prompting/index.html
+  *  External link https://tschopp.net/@Ted/115017680452230236 failed: 404 No error
+- ./_site/Custom-Communicatoin-Styles-in-Copilot/index.html
+  *  External link https://tedt.org/https://tedt.org/img/2025-01/90mm-De-Bange-in-1898.webp failed: 404 No error
+- ./_site/Custom-Writing-Styles-in-Copilot/index.html
+  *  External link https://tedt.org/https://tedt.org/img/2025-01/ai-communication-style.webp failed: 404 No error
+- ./_site/Doing-Religions-Right-in-DCC/index.html
+  *  External link https://www.etsy.com/shop/dthains failed: 403 No error
+- ./_site/EmbedToot/embed-article-view.html
+  *  68:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 68)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 238)
+  *  image has no src or srcset attribute (line 238)
+- ./_site/EmbedToot/embed-post-and-comments-normal.html
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  91:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 91)
+  *  image  does not have an alt attribute (line 356)
+  *  image  does not have an alt attribute (line 377)
+  *  image has no src or srcset attribute (line 377)
+  *  image has no src or srcset attribute (line 356)
+- ./_site/EmbedToot/embed-post-and-comments-tree-view-v2.html
+  *  117:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 117)
+  *  579:51: ERROR: Unexpected character (") in attribute name.
+                    <p class=" text-start p-0 m-0 "><a href="" class=" authorLink" target="_blank"><span
+                                                  ^ (line 579)
+  *  579:53: ERROR: Start tag 'a' isn't allowed here. Currently open tags: html, body, section, div, div, div, div, div, p, a, span.
+                    <p class=" text-start p-0 m-0 "><a href="" class=" authorLink" target="_blank"><span
+                                                    ^ (line 579)
+  *  579:53: ERROR: Start tag 'a' isn't allowed here. Currently open tags: html, body, section, div, div, div, div, div, p, a, span.
+                    <p class=" text-start p-0 m-0 "><a href="" class=" authorLink" target="_blank"><span
+                                                    ^ (line 579)
+  *  7:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 7)
+  *  image  does not have an alt attribute (line 539)
+  *  image  does not have an alt attribute (line 516)
+  *  image has no src or srcset attribute (line 516)
+  *  image has no src or srcset attribute (line 539)
+  *  image has no src or srcset attribute (line 570)
+- ./_site/EmbedToot/embed-post-and-comments-tree-view.html
+  *  118:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 118)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 515)
+  *  image  does not have an alt attribute (line 536)
+  *  image has no src or srcset attribute (line 515)
+  *  image has no src or srcset attribute (line 536)
+- ./_site/EmbedToot/embed-post-and-replies-thread.html
+  *  68:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 68)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 238)
+  *  image has no src or srcset attribute (line 238)
+- ./_site/EmbedToot/embed-single-post.html
+  *  63:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 63)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 162)
+  *  image has no src or srcset attribute (line 162)
+- ./_site/EmbedToot/embed-users-recent-posts-mini.html
+  *  84:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 84)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 472)
+  *  image has no src or srcset attribute (line 472)
+- ./_site/EmbedToot/embed-users-recent-posts-normal.html
+  *  75:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 75)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 460)
+  *  image has no src or srcset attribute (line 460)
+- ./_site/Eric-Shinseki-If-you-don't-like-change-you'/index.html
+  *  External link https://www.nytimes.com/2009/11/11/us/politics/11vets.html failed: 403 No error
+- ./_site/From-Industrial-Age-Utility-to-AI-Centric-Utility/index.html
+  *  External link https://tedt.org/" failed: 404 No error
+- ./_site/Gamma-World-Terrain/index.html
+  *  External link https://tschopp.net/@Ted/110963006446543896 failed: 404 No error
+- ./_site/Gold-Medals-and-Paved-Roads/index.html
+  *  External link https://venturebeat.com/ai/google-and-openais-coding-wins-at-university-competition-show-enterprise-ai failed: 429 No error
+  *  External link https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding failed: 429 No error
+- ./_site/Jack-Welch-Good-business-leaders-create-a/index.html
+  *  External link https://hbr.org/2015/01/what-makes-a-great-leader failed: 404 No error
+- ./_site/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/index.html
+  *  image https://tedt.org/img/AI/Learning-by-Doing.webp does not have an alt attribute (line 802)
+- ./_site/MCC-Shaman-Spell/index.html
+  *  External link https://tschopp.net/@Ted/111819663872505089 failed: 404 No error
+- ./_site/Mehmet-Al-Mansur/index.html
+  *  internally linking to /Swiss-Folklore/The-Basilisk-Egg, which does not exist (line 3129)
+     <a href="/Swiss-Folklore/The-Basilisk-Egg" class="prev"><i class="fa-solid fa-angles-left" aria-hidden="true"></i> The Basilisk</a>
+- ./_site/Moonwalking-Through-the-Apocalypse/index.html
+  *  internally linking to /Swiss-Folklore/The-Basilisk-Egg, which does not exist (line 3178)
+     <a href="/Swiss-Folklore/The-Basilisk-Egg" class="next">The Basilisk <i class="fa-solid fa-angles-right" aria-hidden="true"></i></a>
+- ./_site/Mutations-in-Gamma-World/index.html
+  *  External link https://larsson.artstation.com/projects/qOJQn failed: 403 No error
+- ./_site/Numbers-An-Ork-Accountant/index.html
+  *  External link https://tedt.org/https://tedt.org/img/TTRPG/MCC-GW/Hard-Hologram-R2D2-C3PO.png failed: 404 No error
+  *  External link https://tschopp.net/@Ted/111796991086841890 failed: 404 No error
+- ./_site/OpenAIs-GPT-OSS-Explained/index.html
+  *  External link https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss failed: 403 No error
+  *  External link https://openai.com/index/gpt-oss-model-card/ failed: 403 No error
+  *  External link https://openai.com/safety/preparedness failed: 403 No error
+- ./_site/Prompting-Guide-for-ChatGPT-5/index.html
+  *  External link https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt?utm_source=chatgpt.com failed: 403 No error
+  *  External link https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt?utm_source=chatgpt.com failed: 403 No error
+  *  External link https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview?utm_source=chatgpt.com failed: 403 No error
+  *  External link https://openai.com/index/introducing-canvas/?utm_source=chatgpt.com failed: 403 No error
+  *  External link https://openai.com/index/introducing-chatgpt-agent/?utm_source=chatgpt.com failed: 403 No error
+  *  External link https://platform.openai.com/docs/guides/prompt-engineering?utm_source=chatgpt.com failed: 403 No error
+  *  External link https://platform.openai.com/docs/guides/tools?utm_source=chatgpt.com failed: 403 No error
+- ./_site/RPG/MCC-GW/Archaic Alignments.html
+  *  315:563: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td.
+                The following is a collection of writings collected in the library of Haven regarding other Archaic Alignments.  The city of Haven has either not encountered these alignments or they describe non-canonical understandings of known alignments.  The person who contributed this work to the library, Gene, said he acquired this work from the bodies of what he would only describe as some alien like mutants he had never seen before.  As time permits the scribes at this library will integrate this information with the above texts as it is validated.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^ (line 315)
+- ./_site/RPG/MCC-GW/DroidSpell.html
+  *  74:149: ERROR: End tag 'i' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td, p.
+<i>Manifestation 5:</i> The shaman's fingers on both hands become ridged and contorted as they point towards the location the Hologram is to appear.</i>
+                                                                                                                                                    ^ (line 74)
+- ./_site/RPG/MCC-GW/Forest-Home.html
+  *  46:17: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td.
+                </p>
+                ^ (line 46)
+  *  External link https://tedt.org/wp-content/uploads/2018/04/Third-Edition.webp failed: 404 No error
+- ./_site/RPG/MCC-GW/Gamma-Speak.html
+  *  787:21: ERROR: End tag 'dt' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td, dl.
+                    </dt>
+                    ^ (line 787)
+- ./_site/RPG/MCC-GW/index.html
+  *  External link https://tedt.org/2018/09/04/Firearms-in-MCC-DCC/ failed: 404 No error
+  *  External link https://tedt.org/2018/10/14/Rules-for-Gamma-World-Weapons-in-MCC-DCC.html#black-ray-pistol failed: 404 No error
+  *  External link https://www.scabard.com/pbs/campaign/333757 failed: 403 No error
+- ./_site/RPG/MCC-GW/wolf-creek-hallow.html
+  *  46:17: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td.
+                </p>
+                ^ (line 46)
+- ./_site/RPG/Traveller/Sheet.html
+  *  227:13: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, div, div, div, div, span, span.
+            </div> <!-- sheet-charmancer_stat-panel -->
+            ^ (line 227)
+  *  244:13: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, div, div, div, div, span, span.
+            </div> <!-- sheet-charmancer_stat-panel -->
+            ^ (line 244)
+  *  261:13: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, div, div, div, div, span, span.
+            </div> <!-- sheet-charmancer_stat-panel -->
+            ^ (line 261)
+  *  278:13: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, div, div, div, div, span, span.
+            </div> <!-- sheet-charmancer_stat-panel -->
+            ^ (line 278)
+  *  5070:17: ERROR: Start tag 'td' isn't allowed here. Currently open tags: html, body, div, rolltemplate, div, table, tbody.
+                <td colspan="4">Rolling with BOON</td>
+                ^ (line 5070)
+- ./_site/RPG/Traveller/Ship-Sheet.html
+  *  External link https://fonts.googleapis.com failed: 404 No error
+  *  External link https://fonts.gstatic.com failed: 404 No error
+- ./_site/RPG/Traveller/index.html
+  *    https://ariutta.github.io/svg-pan-zoom/dist/svg-pan-zoom.js is an invalid URL
+  *  29:3: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
+  <body>
+  ^ (line 29)
+- ./_site/RPG/teds/stories/index.html
+  *  image https://tedt.org/RPG/MCC-GW/images/GammaWorldHeaderEdited.webp does not have an alt attribute (line 34)
+- ./_site/Reprint-Accenture-to-exit-staff-who-cannot-be-retrained-for-age-of-AI/index.html
+  *  External link https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2Fuploaded-files%2FStephen-Foley-f12dbaca-35f9-4fdc-8efd-31f72e6125f2.png?source=next-opengraph&fit=scale-down&width=900 failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Couldn't resolve host name
+- ./_site/Reprint-ICBM-by-Hanson-W-Baldwin/index.html
+  *  External link https://upload.wikimedia.org/wikipedia/commons/2/2c/Hanson_Baldwin.webp failed: 404 No error
+- ./_site/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/index.html
+  *  External link https://managementconsulted.com failed: 403 No error
+  *  External link https://media.licdn.com/dms/image/v2/C4D03AQE16CQ-sIlzEw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1589209362516?e=1766016000&v=beta&t=5WYWLbfIMv8TL9Lz2eN1wb8TuGqJK-_LEhGmbOFmgIU failed: 403 No error
+  *  External link https://media.licdn.com/dms/image/v2/D4E03AQEqaKdqYOsAZQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1704319410680?e=1766016000&v=beta&t=6l8PWvDHKkF-Pks9z9L_uY_yzpflYEJXfGcOu2jR-pc failed: 403 No error
+  *  External link https://www.alvarezandmarsal.com failed: 403 No error
+  *  External link https://www.ft.com/content/2b15601b-8d02-4abe-a789-7862874042be failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Couldn't resolve host name
+  *  External link https://www.linkedin.com/in/antonio-alvarez-iii-80090/ failed: 999 No error
+  *  External link https://www.linkedin.com/in/ellesheva-kissin/?originalSubdomain=uk failed: 999 No error
+  *  External link https://www.linkedin.com/in/erickutcher/ failed: 999 No error
+  *  External link https://www.linkedin.com/in/marco-amitrano-b4155b19/?originalSubdomain=uk failed: 999 No error
+  *  External link https://www.linkedin.com/in/marksbunker/?originalSubdomain=uk failed: 999 No error
+  *  External link https://www.linkedin.com/in/mohamed-kande-739574/ failed: 999 No error
+  *  External link https://www.linkedin.com/in/namaanmian/ failed: 999 No error
+  *  External link https://www.linkedin.com/in/rhornby/ failed: 999 No error
+  *  External link https://www.linkedin.com/in/stephen-foley-8045ba248/ failed: 999 No error
+  *  External link https://www.mckinsey.com/ failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Stream error in the HTTP/2 framing layer
+- ./_site/Rules-for-Firearms-in-MCC-DCC/index.html
+  *  External link https://megalomatthew.artstation.com/ failed: 403 No error
+- ./_site/Rules-for-Gamma-World-Weapons-in-MCC-DCC/index.html
+  *  External link https://www.artstation.com/artwork/lqz25 failed: 403 No error
+- ./_site/Steve-Jobs-In-most-peoples-vocabularies/index.html
+  *  External link https://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/272277/ failed: 502 No error
+- ./_site/Swiss-Folklore/From-the-Swabian-War-Benedikt-Fontana.html
+  *  External link https://tschopp.net/@Ted/110924710196764929 failed: 404 No error
+- ./_site/Swiss-Folklore/The-Army-in-Schrattenberg.html
+  *  External link https://tschopp.net/@Ted/110925700403906782 failed: 404 No error
+- ./_site/Swiss-Folklore/The-Bailiff-of-Brunnegg.html
+  *  External link https://tschopp.net/@Ted/111443917454528953 failed: 404 No error
+- ./_site/Swiss-Folklore/The-Betten-Dog.html
+  *  External link https://tschopp.net/@Ted/111116965359149248 failed: 404 No error
+- ./_site/Swiss-Folklore/Wodans-Revenge.html
+  *  linking to internal hash #what that does not exist (line 865)
+     <a href="#what" class="who">voluptuous women</a>
+- ./_site/Swiss-Folklore/the-well-at-schwanden.html
+  *  External link https://tschopp.net/@Ted/111404502000070430 failed: 404 No error
+- ./_site/Tell-me-if-anything-was-ever-done/index.html
+  *  External link https://tschopp.net/@Ted/113859271380786463 failed: 404 No error
+- ./_site/The-Chriemhild-Trench/index.html
+  *  External link https://commons.wikimedia.org/wiki/File:T%C3%BCrlersee1.webp failed: 404 No error
+  *  External link https://tedt.org/https://tedt.org/img/2024-01/Aeon%20-%20Memory%20of%20Myths.webp failed: 404 No error
+- ./_site/The-Human-Edge/index.html
+  *  External link https://tschopp.net/@Ted/114174613806302241 failed: 404 No error
+  *  External link https://www.news.com.au/finance/business/manufacturing/chinese-companys-dark-factory-will-no-human-workers-soon-be-the-norm/news-story/9468c5bc380108deba4e55a95d6c28d4 failed: 403 No error
+- ./_site/The-Mentor-In-The-Machine/index.html
+  *  External link https://tschopp.net/@Ted/115022112505356872 failed: 404 No error
+- ./_site/The-Skill-That-Outgrows-the-Tool/index.html
+  *  External link https://tschopp.net/@Ted/115185638308621396 failed: 404 No error
+- ./_site/The-Student-Who-Taught-Herself/index.html
+  *  External link https://tschopp.net/@Ted/114497428586613439 failed: 404 No error
+- ./_site/Unlocking-Corporate-Learning-with-AI-Simulations/index.html
+  *  External link https://tedt.org/prompts/Simulation-Creator.md failed: 404 No error
+- ./_site/What-AI-in-2024-Means-for-Us-in-2025/index.html
+  *  External link https://tedt.org/https://tedt.org/img/2025-01/Custom-Writing-Styles.webp failed: 404 No error
+- ./_site/What-Makes-the-Human/index.html
+  *  linking to internal hash #acrobatics-knowledge-areas that does not exist (line 1062)
+     <a href="#acrobatics-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #acuity-characteristics that does not exist (line 1188)
+     <a href="#acuity-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #adept-knowledge-areas that does not exist (line 1278)
+     <a href="#adept-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #agility-characteristics that does not exist (line 1044)
+     <a href="#agility-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #animal-handling-knowledge-areas that does not exist (line 1422)
+     <a href="#animal-handling-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #animism-knowledge-areas that does not exist (line 1314)
+     <a href="#animism-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #arcane-knowledge-areas that does not exist (line 1230)
+     <a href="#arcane-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #athletics-knowledge-areas that does not exist (line 1026)
+     <a href="#athletics-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #bureaucracy-knowledge-areas that does not exist (line 1410)
+     <a href="#bureaucracy-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #chaos-knowledge-areas that does not exist (line 1254)
+     <a href="#chaos-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #deception-knowledge-areas that does not exist (line 1374)
+     <a href="#deception-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #drive--ride--pilot-knowledge-areas that does not exist (line 1086)
+     <a href="#drive--ride--pilot-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #engineering-knowledge-areas that does not exist (line 1158)
+     <a href="#engineering-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #etiquette-knowledge-areas that does not exist (line 1362)
+     <a href="#etiquette-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #faith-characteristics that does not exist (line 1260)
+     <a href="#faith-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #formal-sciences-knowledge-areas that does not exist (line 1218)
+     <a href="#formal-sciences-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #gnosis-knowledge-areas that does not exist (line 1242)
+     <a href="#gnosis-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #identity-characteristics that does not exist (line 1404)
+     <a href="#identity-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #insight-knowledge-areas that does not exist (line 1170)
+     <a href="#insight-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #intellect-characteristics that does not exist (line 1116)
+     <a href="#intellect-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #intimidation-knowledge-areas that does not exist (line 1398)
+     <a href="#intimidation-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #investigation-knowledge-areas that does not exist (line 1182)
+     <a href="#investigation-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #leadership-knowledge-areas that does not exist (line 1434)
+     <a href="#leadership-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #life-sciences-knowledge-areas that does not exist (line 1134)
+     <a href="#life-sciences-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #manners-characteristics that does not exist (line 1332)
+     <a href="#manners-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #melee-combat-knowledge-areas that does not exist (line 1038)
+     <a href="#melee-combat-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #metaphysics-knowledge-areas that does not exist (line 1302)
+     <a href="#metaphysics-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #muscle-characteristics that does not exist (line 1008)
+     <a href="#muscle-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #mystery-characteristics that does not exist (line 1296)
+     <a href="#mystery-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #order-knowledge-areas that does not exist (line 1290)
+     <a href="#order-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #perception-knowledge-areas that does not exist (line 1206)
+     <a href="#perception-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #performance-knowledge-areas that does not exist (line 1350)
+     <a href="#performance-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #personality-characteristics that does not exist (line 1368)
+     <a href="#personality-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #persuasion-knowledge-areas that does not exist (line 1386)
+     <a href="#persuasion-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #physical-sciences--survival-knowledge-areas that does not exist (line 1146)
+     <a href="#physical-sciences--survival-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #ranged-combat-knowledge-areas that does not exist (line 1014)
+     <a href="#ranged-combat-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #reasoning-characteristics that does not exist (line 1152)
+     <a href="#reasoning-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #ruggedness-knowledge-areas that does not exist (line 1098)
+     <a href="#ruggedness-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #shamanism-knowledge-areas that does not exist (line 1326)
+     <a href="#shamanism-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #skepticism-characteristics that does not exist (line 1224)
+     <a href="#skepticism-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #sleight-of-hand-knowledge-areas that does not exist (line 1074)
+     <a href="#sleight-of-hand-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #social-sciences-knowledge-areas that does not exist (line 1122)
+     <a href="#social-sciences-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #stamina-characteristics that does not exist (line 1080)
+     <a href="#stamina-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #stealth-knowledge-areas that does not exist (line 1050)
+     <a href="#stealth-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #style-knowledge-areas that does not exist (line 1338)
+     <a href="#style-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #theurgy-knowledge-areas that does not exist (line 1266)
+     <a href="#theurgy-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #traditions-knowledge-areas that does not exist (line 1194)
+     <a href="#traditions-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #unarmed-combat-knowledge-areas that does not exist (line 1110)
+     <a href="#unarmed-combat-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+- ./_site/When-the-Machines-Dont-Sleep/index.html
+  *  External link https://www.businesswire.com/news/home/20251014317368/en/SUPERAGENT-AI-Launches-Suite-of-AI-Agents-to-Automate-the-Entire-Insurance-Sales-Funnel-From-First-Call-to-Final-Quote failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Stream error in the HTTP/2 framing layer
+  *  External link https://www.congress.gov/bill/119th-congress/house-bill/238 failed: 403 No error
+  *  External link https://www.forbes.com/councils/forbestechcouncil/2025/05/19/intelligence-too-cheap-to-meter-positioning-for-the-future-of-ai/ failed: 403 No error
+  *  External link https://www.wsj.com/opinion/the-robots-that-handle-your-amazon-orders-0eb2f6e7 failed: 401 No error
+- ./_site/You-Have-My-Sword-and-My-Bow-and-My-Axe/index.html
+  *  External link https://tedt.org/category/the-m%C3%A4rchen-engine/ failed: 404 No error
+  *  External link https://tedt.org/https://tedt.org/img/2023-07/FAME.webp failed: 404 No error
+- ./_site/a-beginning/index.html
+  *  External link https://tedt.org/personal%20writing/the-path-west failed: 404 No error
+- ./_site/a-little-calend/index.html
+  *  External link https://tedt.org/2006/04/07/a_little_calend/ failed: 404 No error
+- ./_site/books-movies-an/index.html
+  *  External link http://www.childrenofmen.net/ failed: 301 Couldn't resolve host name
+- ./_site/category/mutant-crawl-classics/index.html
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Albilope.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Arns.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Attercops%20Abulare.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Attercops.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Ber%20Leps.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Blaashes.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Blade%20Whales.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Blights.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Blood%20Birds.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Bumbles.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Buzzbirds.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Cal%20Thens.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Crusteans.png failed: 404 No error
+  *  External link https://tedt.org//RPG/MCC-GW/images/Monster-Manual/Dagmits.png failed: 404 No error
+- ./_site/collaboration-lessons-learned-from-tasmania/index.html
+  *  External link https://en.wikipedia.org/wiki/File:Tessellated_Pavement_Sunrise_Landscape.webp failed: 404 No error
+- ./_site/computerized-story-telling/index.html
+  *  External link https://tedt.org/files/MEXICA_DPhil_RPyP.pdf failed: 404 No error
+  *  External link https://tedt.org/files/Three_computer-based_models_of_storytelling_BRUTUS.pdf failed: 404 No error
+- ./_site/film-snob/index.html
+  *  External link http://disney.go.com/disneypictures/pirates/atworldsend/ failed: 403 No error
+  *  External link http://www.foxsearchlight.com/daywatch/ failed: 403 No error
+  *  External link http://www.sonypictures.com/homevideo/paprika/index.html failed: 404 No error
+- ./_site/folklore/entities/index.html
+  *  linking to internal hash #threat-dangerous that does not exist (line 817)
+     <a href="#threat-dangerous" class="btn btn-smbtn-outline-danger">
+                          Dangerous (7)
+                        </a>
+  *  linking to internal hash #threat-none that does not exist (line 833)
+     <a href="#threat-none" class="btn btn-smbtn-outline-success">
+                          None (1)
+                        </a>
+  *  linking to internal hash #threat-ominous that does not exist (line 825)
+     <a href="#threat-ominous" class="btn btn-smbtn-outline-warning">
+                          Ominous (5)
+                        </a>
+- ./_site/folklore/stories/2980bfdf495e5b36f6b87ae59d36a9c8440e56c5/index.html
+  *  External link https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/9410/das-wydenweiblein failed: 404 No error
+- ./_site/folklore/stories/434e1c6212cefb2c179cebaefb73d062fb021de8/index.html
+  *  External link https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/3763/das-zauberbuch failed: 404 No error
+- ./_site/folklore/stories/6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a/index.html
+  *  External link https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/3775/das-zauberbuch-der-drei-armen-bueblein failed: 404 No error
+- ./_site/folklore/stories/b94b31288d269cdbc55a79dfbeef72fce89895d0/index.html
+  *  External link https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/6705/das-wuetisheer-h-michel failed: 404 No error
+- ./_site/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/index.html
+  *  External link https://www.maerchenstiftung.ch/de/maerchen/maerchensuche/3776/das-zauberbuch-hilft-in-der-not failed: 404 No error
+- ./_site/folklore/themes/index.html
+  *  4527:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
+  <style>
+  ^ (line 4527)
+  *  internal image img/2018-04/Sunset on this ideology.webp does not exist (line 2141)
+  *  internal image img/2018-05/Ebstorfer-stich2.webp does not exist (line 1634)
+  *  internal image img/2018-05/Ebstorfer-stich2.webp does not exist (line 1620)
+  *  internal image img/2018-05/the-valar.webp does not exist (line 2126)
+  *  internal image img/2023-10/A_blacksmith_making_weapons_in_a_hollowed_out_tree.webp does not exist (line 1708)
+  *  internal image img/2023-10/Michael-JX Moonwalking Through the Apocalypse.webp does not exist (line 1768)
+  *  internal image img/2023-10/Michael-JX Moonwalking Through the Apocalypse.webp does not exist (line 1475)
+  *  internal image img/2023-11/Ahmed ibn Yusuf - Porter at Bayt al - A porter who works for the Great Library in Bagdad.webp does not exist (line 1546)
+  *  internal image img/2023-11/Mehmet Al-Mansur.webp does not exist (line 1560)
+  *  internal image img/2024-01/cyberpunk_club_outside_in_Los_Angeles.webp does not exist (line 2409)
+  *  internal image img/2024-01/cyberpunk_club_outside_in_Los_Angeles.webp does not exist (line 2275)
+  *  internal image img/2024-06/stargate.webp does not exist (line 2215)
+  *  internal image img/2025-08/Transmission-and-Data.webp does not exist (line 2335)
+  *  internal image img/2025-08/hex-map-seeded-frontier.webp does not exist (line 2261)
+  *  internal image img/2025-08/hex-map-seeded-frontier.webp does not exist (line 1606)
+  *  internal image img/2025-09/AI-Champions-on-the-Golden-Path.webp does not exist (line 1341)
+  *  internal image img/2025-09/Accenture.webp does not exist (line 2201)
+  *  internal image img/2025-09/The-Digital-Loom.webp does not exist (line 1355)
+  *  internal image img/AI/Hannah-with-a-cat-no-title.webp does not exist (line 1913)
+  *  internal image img/AI/Learning-by-Doing.webp does not exist (line 1927)
+  *  internal image img/Gamma-World-Midjourney.png does not exist (line 1489)
+  *  internal image img/Swiss/A_haunting_snowy_scene_at_Brunnegg_Castle.webp does not exist (line 1415)
+  *  internal image img/Swiss/A_haunting_snowy_scene_at_Brunnegg_Castle.webp does not exist (line 1077)
+  *  internal image img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.webp does not exist (line 1108)
+  *  internal image img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.webp does not exist (line 1429)
+  *  internal image img/Swiss/Turlersee-Lake.webp does not exist (line 1046)
+  *  internal image img/Swiss/Turlersee-Lake.webp does not exist (line 1401)
+- ./_site/html5-javascript-version-of-of-windows/index.html
+  *  External link http://www.gildertech.com/bios.html failed: 404 No error
+  *  External link http://www.irvingwb.com/about.html failed: 404 No error
+- ./_site/index.html
+  *  4596:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
+  <style>
+  ^ (line 4596)
+  *  External link http://www.dohring.com failed: got a time out (response code 0)
+  *  External link https://The-Password-Challange.tedt.org/ failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Couldn't resolve host name
+- ./_site/ipfs/index.html
+  *  image  does not have an alt attribute (line 69)
+  *  image has no src or srcset attribute (line 69)
+- ./_site/martin-luther-on-beer/index.html
+  *  (https://de.wikipedia.org/wiki/Gustav_Spangenberg_(Maler)) is an invalid URL (line 812)
+     <a rel="author" target="_blank" class="url fn n" href="(https://de.wikipedia.org/wiki/Gustav_Spangenberg_(Maler))">Gustav (Gustav Adolf) Spangenberg</a>
+- ./_site/mastodon-backfill-history/index.html
+  *  internally linking to /Logs/mastodon-backfill-summary.md, which does not exist (line 772)
+     <a href="/Logs/mastodon-backfill-summary.md">/Logs/mastodon-backfill-summary.md</a>
+- ./_site/mastodon-backfill-summary/index.html
+  *  internally linking to /Logs/mastodon-backfill-summary.md, which does not exist (line 770)
+     <a href="/Logs/mastodon-backfill-summary.md">/Logs/mastodon-backfill-summary.md</a>
+- ./_site/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/index.html
+  *  External link http://www.microsoft.com/presspass/press/2006/jun06/06-20MSCreativeCommonsPR.mspx failed: 403 No error
+- ./_site/myedison-com-corporate-portal/index.html
+  *  External link https://tedt.org/category/home/ failed: 404 No error
+- ./_site/playing-it-cool-playing-it-fast/index.html
+  *  External link http://MUSIC/iTunes/ failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Couldn't resolve host name
+  *  External link http://www.potionfactory.com/tangerine/ failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Couldn't resolve host name
+  *  internally linking to /iTunes/, which does not exist (line 842)
+     <a href="/iTunes/">file://localhost/E:/iTunes/</a>
+- ./_site/prompts/Create-a-Unforgettable-Opening-to-a-TTRPG/index.html
+  *  1292:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1292)
+  *  1800:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1800)
+- ./_site/prompts/abb-sbb-ubb-builder/index.html
+  *  1320:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1320)
+  *  1974:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1974)
+  *  External link https://tedt.org/prompts/abb-sbb-ubb-builder/ failed: 404 No error
+- ./_site/prompts/academic-critique-content/index.html
+  *  1296:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1296)
+  *  3579:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3579)
+  *  External link https://tedt.org/prompts/academic-critique-content/ failed: 404 No error
+- ./_site/prompts/active-learning-teaching-assistant/index.html
+  *  1293:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1293)
+  *  1551:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1551)
+  *  External link https://tedt.org/prompts/active-learning-teaching-assistant/ failed: 404 No error
+- ./_site/prompts/ai-backlog-ideas/index.html
+  *  1321:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1321)
+  *  2067:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2067)
+  *  External link https://tedt.org/prompts/ai-backlog-ideas/ failed: 404 No error
+- ./_site/prompts/ai-document-generator/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  1644:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1644)
+  *  External link https://tedt.org/prompts/ai-document-generator/ failed: 404 No error
+- ./_site/prompts/ai-simulation-creator-roleplay-prompt/index.html
+  *  1291:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1291)
+  *  1503:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1503)
+- ./_site/prompts/ai-simulation-creator/index.html
+  *  1291:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1291)
+  *  1501:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1501)
+- ./_site/prompts/ai-teaching-assistant-prompt-creator/index.html
+  *  1291:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1291)
+  *  1535:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1535)
+- ./_site/prompts/ai-tutoring-prompt-designer/index.html
+  *  1296:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1296)
+  *  1534:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1534)
+- ./_site/prompts/application-architecture-as-markdown/index.html
+  *  1319:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1319)
+  *  4589:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4589)
+  *  External link https://tedt.org/prompts/application-architecture-as-markdown/ failed: 404 No error
+- ./_site/prompts/architecture-designer/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  1732:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1732)
+  *  External link https://tedt.org/prompts/architecture-designer/ failed: 404 No error
+- ./_site/prompts/architecture-prompt/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  1612:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1612)
+  *  External link https://tedt.org/prompts/architecture-prompt/ failed: 404 No error
+- ./_site/prompts/artistic-Analysis/index.html
+  *  1291:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1291)
+  *  1639:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1639)
+- ./_site/prompts/avd-as-markdown/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  4167:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4167)
+  *  External link https://tedt.org/prompts/avd-as-markdown/ failed: 404 No error
+- ./_site/prompts/be-an-expert-and-give-advice/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  1553:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1553)
+  *  External link https://tedt.org/prompts/be-an-expert-and-give-advice/ failed: 404 No error
+- ./_site/prompts/building-block/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  1667:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1667)
+  *  External link https://tedt.org/prompts/building-block/ failed: 404 No error
+- ./_site/prompts/business-architecture-as-markdown/index.html
+  *  1322:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1322)
+  *  3226:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3226)
+  *  External link https://tedt.org/prompts/business-architecture-as-markdown/ failed: 404 No error
+- ./_site/prompts/business-case-and-requirements-assistant/index.html
+  *  1294:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1294)
+  *  2436:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2436)
+- ./_site/prompts/business-requirements-builder/index.html
+  *  1323:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1323)
+  *  1775:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1775)
+  *  External link https://tedt.org/prompts/business-requirements-builder/ failed: 404 No error
+- ./_site/prompts/business-skills-prompts/index.html
+  *  1319:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1319)
+  *  2731:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2731)
+  *  External link https://tedt.org/prompts/business-skills-prompts/ failed: 404 No error
+- ./_site/prompts/data-architecture-as-markdown/index.html
+  *  1319:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1319)
+  *  3887:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3887)
+  *  External link https://tedt.org/prompts/data-architecture-as-markdown/ failed: 404 No error
+- ./_site/prompts/executive-keynote-generator/index.html
+  *  1323:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1323)
+  *  1595:103: ERROR: Unexpected character (") in attribute name.
+                                  placeholder="Share a brief, personal story of your "before" state..."
+                                                                                                      ^ (line 1595)
+  *  1595:87: ERROR: Missing whitespace between attributes.
+                                  placeholder="Share a brief, personal story of your "before" state..."
+                                                                                      ^ (line 1595)
+  *  1595:93: ERROR: Unexpected character (") in attribute name.
+                                  placeholder="Share a brief, personal story of your "before" state..."
+                                                                                            ^ (line 1595)
+  *  1885:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1885)
+  *  External link https://tedt.org/prompts/executive-keynote-generator/ failed: 404 No error
+- ./_site/prompts/expert-novelist/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  1608:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1608)
+  *  External link https://tedt.org/prompts/expert-novelist/ failed: 404 No error
+- ./_site/prompts/find-your-super-power/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  1572:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1572)
+  *  External link https://tedt.org/prompts/find-your-super-power/ failed: 404 No error
+- ./_site/prompts/lean-six-sigma-analysis/index.html
+  *  1324:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1324)
+  *  1564:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1564)
+  *  External link https://tedt.org/prompts/lean-six-sigma-analysis/ failed: 404 No error
+- ./_site/prompts/marketing-copy-evaluation-template/index.html
+  *  1291:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1291)
+  *  1595:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1595)
+- ./_site/prompts/microsoft-power-automate-systems-architect/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  1712:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1712)
+  *  External link https://tedt.org/prompts/microsoft-power-automate-systems-architect/ failed: 404 No error
+- ./_site/prompts/midjourney-v6.1-prompt-template/index.html
+  *  1292:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1292)
+  *  1716:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1716)
+- ./_site/prompts/midjourney-v7-prompt-template/index.html
+  *  1291:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1291)
+  *  1581:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1581)
+- ./_site/prompts/module-builder/index.html
+  *  1324:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1324)
+  *  2090:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2090)
+  *  External link https://tedt.org/prompts/module-builder/ failed: 404 No error
+- ./_site/prompts/module-format/index.html
+  *  1330:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1330)
+  *  2754:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2754)
+  *  External link https://tedt.org/prompts/module-format/ failed: 404 No error
+- ./_site/prompts/objectives-key-results/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  1626:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1626)
+  *  External link https://tedt.org/prompts/objectives-key-results/ failed: 404 No error
+- ./_site/prompts/prd-agent/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  1669:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1669)
+  *  External link https://tedt.org/prompts/prd-agent/ failed: 404 No error
+- ./_site/prompts/prd-generator/index.html
+  *  1319:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1319)
+  *  2053:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2053)
+  *  External link https://tedt.org/prompts/prd-generator/ failed: 404 No error
+- ./_site/prompts/product-requirements-document-prd-for-power-platform/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  2993:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2993)
+  *  External link https://tedt.org/prompts/product-requirements-document-prd-for-power-platform/ failed: 404 No error
+- ./_site/prompts/product-requirements-document-prd-template-2/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  4517:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4517)
+  *  External link https://tedt.org/prompts/product-requirements-document-prd-template-2/ failed: 404 No error
+- ./_site/prompts/product-requirements-document-prd-template/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  3539:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3539)
+  *  External link https://tedt.org/prompts/product-requirements-document-prd-template/ failed: 404 No error
+- ./_site/prompts/requirements-analyst-quality-review/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  1624:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1624)
+  *  External link https://tedt.org/prompts/requirements-analyst-quality-review/ failed: 404 No error
+- ./_site/prompts/requirements-analyst/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  1622:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1622)
+  *  External link https://tedt.org/prompts/requirements-analyst/ failed: 404 No error
+- ./_site/prompts/rfp-response-review/index.html
+  *  1361:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1361)
+  *  1861:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1861)
+  *  External link https://tedt.org/prompts/rfp-response-review/ failed: 404 No error
+- ./_site/prompts/risk-assessment-clean-up/index.html
+  *  1319:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1319)
+  *  2019:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2019)
+  *  External link https://tedt.org/prompts/risk-assessment-clean-up/ failed: 404 No error
+- ./_site/prompts/risk-assessment-for-it/index.html
+  *  1327:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1327)
+  *  2131:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2131)
+  *  External link https://tedt.org/prompts/risk-assessment-for-it/ failed: 404 No error
+- ./_site/prompts/role-and-objective/index.html
+  *  1321:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1321)
+  *  1583:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1583)
+  *  External link https://tedt.org/prompts/role-and-objective/ failed: 404 No error
+- ./_site/prompts/script-a-podcast/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  1623:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1623)
+  *  External link https://tedt.org/prompts/script-a-podcast/ failed: 404 No error
+- ./_site/prompts/simple-blog-generator/index.html
+  *  1282:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1282)
+  *  2883:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2883)
+  *  External link https://tedt.org/prompts/simple-blog-generator/ failed: 404 No error
+- ./_site/prompts/skill-profile-generator/index.html
+  *  1321:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1321)
+  *  1587:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1587)
+  *  External link https://tedt.org/prompts/skill-profile-generator/ failed: 404 No error
+- ./_site/prompts/social-media-repurposing-template/index.html
+  *  1291:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1291)
+  *  1787:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1787)
+- ./_site/prompts/sora-prompt/index.html
+  *  1320:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1320)
+  *  1770:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1770)
+  *  External link https://tedt.org/prompts/sora-prompt/ failed: 404 No error
+- ./_site/prompts/technology-architecture-as-markdown/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  4202:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4202)
+  *  External link https://tedt.org/prompts/technology-architecture-as-markdown/ failed: 404 No error
+- ./_site/prompts/teds-writing-style/index.html
+  *  1321:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1321)
+  *  1579:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1579)
+- ./_site/prompts/testing-analyst/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1836:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1836)
+  *  External link https://tedt.org/prompts/testing-analyst/ failed: 404 No error
+- ./_site/prompts/tiered-messaging-framework/index.html
+  *  1323:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1323)
+  *  1867:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1867)
+  *  External link https://tedt.org/prompts/tiered-messaging-framework/ failed: 404 No error
+- ./_site/prompts/universal-content-creator-demo/index.html
+  *  1308:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1308)
+  *  3331:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3331)
+  *  External link https://tedt.org/prompts/universal-content-creator-demo/ failed: 404 No error
+- ./_site/prompts/weapon-descriptions/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  1543:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1543)
+  *  External link https://tedt.org/prompts/weapon-descriptions/ failed: 404 No error
+- ./_site/prompts/work-in-progress/2025-10-17-product-requirements-document-prd-for-power-platform/index.html
+  *  2988:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2988)
+- ./_site/reports/allure/latest/index.html
+  *  internal script app-10bb98e228244dbdb4e2.js does not exist (line 29)
+- ./_site/reprint-whats-actually-inside-a-100-billion-AI-data-center/index.html
+  *  External link https://c10.patreonusercontent.com/4/patreon-media/p/campaign/11189995/9de25452d31542b487b60a589dae2704/eyJoIjoxMDgwLCJ3IjoxMDgwfQ%3D%3D/2.jpg?token-time=1718755200&token-hash=_YWNs1QRnrCqYkWFNWd6HGmNeW3QxP3bMKp4Q_FQimk%3D failed: 403 No error
+- ./_site/sex-gardening-a/index.html
+  *  External link https://tedt.org/https://tedt.org/img/2007-01/Seedling-in-the-ashes.png failed: 404 No error
+- ./_site/slides/master-professional-examples/index.html
+  *  723:12: ERROR: Character tokens aren't legal here
+    <tbody>
+           ^ (line 723)
+  *  724:10: ERROR: Character tokens aren't legal here
+    published: false
+         ^ (line 724)
+  *  724:11: ERROR: Character tokens aren't legal here
+    published: false
+          ^ (line 724)
+  *  724:12: ERROR: Character tokens aren't legal here
+    published: false
+           ^ (line 724)
+  *  724:13: ERROR: Character tokens aren't legal here
+    published: false
+            ^ (line 724)
+  *  724:14: ERROR: Character tokens aren't legal here
+    published: false
+             ^ (line 724)
+  *  724:15: ERROR: Character tokens aren't legal here
+    published: false
+              ^ (line 724)
+  *  724:16: ERROR: Character tokens aren't legal here
+    published: false
+               ^ (line 724)
+  *  724:17: ERROR: Character tokens aren't legal here
+    published: false
+                ^ (line 724)
+  *  724:18: ERROR: Character tokens aren't legal here
+    published: false
+                 ^ (line 724)
+  *  724:19: ERROR: Character tokens aren't legal here
+    published: false
+                  ^ (line 724)
+  *  724:1: ERROR: Character tokens aren't legal here
+    published: false
+^ (line 724)
+  *  724:20: ERROR: Character tokens aren't legal here
+    published: false
+                   ^ (line 724)
+  *  724:21: ERROR: Character tokens aren't legal here
+    published: false
+                    ^ (line 724)
+  *  724:2: ERROR: Character tokens aren't legal here
+    published: false
+ ^ (line 724)
+  *  724:3: ERROR: Character tokens aren't legal here
+    published: false
+  ^ (line 724)
+  *  724:4: ERROR: Character tokens aren't legal here
+    published: false
+   ^ (line 724)
+  *  724:5: ERROR: Character tokens aren't legal here
+    published: false
+    ^ (line 724)
+  *  724:6: ERROR: Character tokens aren't legal here
+    published: false
+     ^ (line 724)
+  *  724:7: ERROR: Character tokens aren't legal here
+    published: false
+      ^ (line 724)
+  *  724:8: ERROR: Character tokens aren't legal here
+    published: false
+       ^ (line 724)
+  *  724:9: ERROR: Character tokens aren't legal here
+    published: false
+        ^ (line 724)
+  *  725:1: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+^ (line 725)
+  *  725:2: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+ ^ (line 725)
+  *  725:3: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+  ^ (line 725)
+  *  725:4: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+   ^ (line 725)
+  *  725:5: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+    ^ (line 725)
+  *  725:6: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+     ^ (line 725)
+- ./_site/the-component-smart-phone-and-why-it-will-fail/index.html
+  *  External link http://www.dscout.com/ara# failed: 404 No error
+- ./_site/the-google-browseros/index.html
+  *  External link https://tschopp.net/@Ted/111179921177417786 failed: 404 No error
+- ./_site/thoughts-on-corporate-collaboration-tools/index.html
+  *  External link http://smallblue.research.ibm.com/projects/snvalue/ failed: got a time out (response code 0)
+  *  External link https://tedt.org/prompts/teds-writing-style/ failed: 404 No error
+- ./_site/too-many-feeds/index.html
+  *  External link http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/ failed: 404 No error
+- ./_site/tools/prompt-library/index.html
+  *  internal image ../img/categories/prompt_library.webp does not exist (line 1077)
+  *  linking to internal hash # that does not exist (line 18507)
+     <a class="page-link" href="#">Next</a>
+  *  linking to internal hash # that does not exist (line 18499)
+     <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+  *  linking to internal hash # that does not exist (line 18502)
+     <a class="page-link" href="#">1</a>
+  *  linking to internal hash # that does not exist (line 18504)
+     <a class="page-link" href="#">2</a>
+  *  linking to internal hash # that does not exist (line 18505)
+     <a class="page-link" href="#">3</a>
+- ./_site/tools/todo_hex.html
+  *  17:97: ERROR: End tag 'br' isn't allowed here. Currently open tags: html, body, main, section.
+                <canvas id="layout-test-orientation-pointy" width="1000" height="1000"></canvas></br>
+                                                                                                ^ (line 17)
+  *  internal script js/hex-implementation.js does not exist (line 24)
+  *  internal script js/hex.js does not exist (line 23)
+- ./_site/what-should-google-buy/index.html
+  *  External link https://foursquare.com/tedtschopp failed: 404 No error
+  *  External link https://indieauth.com/auth failed: 400 No error
+  *  External link https://indieweb.org/User:Www.tedt.org/ failed: 404 No error
+  *  External link https://ko-fi.com/tedtschopp failed: 403 No error
+  *  External link https://medium.com/@TedTschopp failed: 403 No error
+  *  External link https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816 failed: response code 0 means something's wrong.
+             It's possible libcurl couldn't connect to the server or perhaps the request timed out.
+             Sometimes, making too many requests at once also breaks things.
+             Either way, the return message (if any) from the server is: Couldn't resolve host name
+  *  External link https://vimeo.com/TedTschopp failed: 404 No error
+  *  External link https://www.linkedin.com/in/tedtschopp failed: 999 No error
+  *  External link https://www.linkedin.com/in/tedtschopp/ failed: 999 No error
+  *  External link https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/ failed: 403 No error
+  *  External link https://www.quora.com/profile/Ted-Tschopp failed: 403 No error
+  *  External link https://www.quora.com/profile/Ted-Tschopp/ failed: 403 No error
+
+HTML-Proofer found 476 failures!

@@ -81,18 +81,34 @@
                     {% elsif page.image-artist-URL %}
                     {% assign image_credits_artist_URL = page.image-artist-URL %}
                     {% endif %}
+
+                    {% if page.image-credits-URL %}
+                    {% assign image_credits_URL = page.image-credits-URL %}
+                    {% elsif page.image-URL %}
+                    {% assign image_credits_URL = page.image-URL %}
+                    {% endif %}
                 
-                    {% if page.image contains "http" %}
-                    {% assign image_URL = page.image %}
+                    {% assign _image_raw = page.image | strip %}
+                    {% assign _image_first = _image_raw | slice: 0, 1 %}
+                    {% assign _image_first2 = _image_raw | slice: 0, 2 %}
+                    {% if _image_raw contains '://' or _image_first2 == '//' %}
+                    {% assign image_URL = _image_raw %}
+                    {% elsif _image_first == "/" %}
+                    {% assign image_URL = site.url | append: _image_raw %}
                     {% else %}
-                    {% assign image_URL = site.url | append: "/" | append: page.image %}
+                    {% assign image_URL = site.url | append: "/" | append: _image_raw %}
                     {% endif %}
                     {% else %}
                     {% if site.featured-image %}
-                    {% if site.featured-image contains "http" %}
-                    {% assign image_URL = site.featured-image %}
+                        {% assign _image_raw = site.featured-image | strip %}
+                        {% assign _image_first = _image_raw | slice: 0, 1 %}
+                        {% assign _image_first2 = _image_raw | slice: 0, 2 %}
+                        {% if _image_raw contains '://' or _image_first2 == '//' %}
+                    {% assign image_URL = _image_raw %}
+                        {% elsif _image_first == "/" %}
+                    {% assign image_URL = site.url | append: _image_raw %}
                     {% else %}
-                    {% assign image_URL = site.url | append: "/" | append: site.featured-image %}
+                    {% assign image_URL = site.url | append: "/" | append: _image_raw %}
                     {% endif %}
                     {% else %}
                     {% assign image_URL = site.url | append: "/img/No-Image-Provided.png" %}
@@ -126,12 +142,16 @@
                                         {% endif %}
                                     </div>
                                     <div class="small image-credits">
-                                        {% if image-credits-URL contains "http" %}
-                                            <cite><a target="_new" href="{{image_credits_URL }}">{{image_credits_title}}</a></cite>:&nbsp;an image by
+                                        {%- assign __prompt_img_credits_href = image_credits_URL | default: '' | strip -%}
+                                        {%- assign __prompt_img_credits_href_first2 = __prompt_img_credits_href | slice: 0, 2 -%}
+                                        {% if __prompt_img_credits_href != '' and (__prompt_img_credits_href contains '://' or __prompt_img_credits_href_first2 == '//') %}
+                                            <cite><a target="_new" href="{{ image_credits_URL }}">{{ image_credits_title }}</a></cite>:&nbsp;an image by
                                         {% else %}
                                             <cite>{{image_credits_title}}</cite>:&nbsp;an image by
                                         {% endif %}
-                                        {% if image-credits-artist-URL contains "http" %}
+                                        {%- assign __prompt_img_artist_href = image_credits_artist_URL | default: '' | strip -%}
+                                        {%- assign __prompt_img_artist_href_first2 = __prompt_img_artist_href | slice: 0, 2 -%}
+                                        {% if __prompt_img_artist_href != '' and (__prompt_img_artist_href contains '://' or __prompt_img_artist_href_first2 == '//') %}
                                             {%- assign __prompt_img_credit_href = image_credits_artist_URL | strip -%}
                                             {%- if __prompt_img_credit_href != '' -%}
                                             <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_blank" class="url fn n" href="{{ __prompt_img_credit_href | escape }}">{{ image_credits | escape }}</a></address></span>

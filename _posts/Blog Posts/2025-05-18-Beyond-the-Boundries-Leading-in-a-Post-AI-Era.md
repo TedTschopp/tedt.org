@@ -62,7 +62,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Beyond-the-Boundries.webp
+image: /img/AI/Beyond-the-Boundries.webp
 image-alt: Child holding a smooth stone on Hawaiian beach, symbolizing what humans
   hold that AI cannot
 image-artist: Ted Tschopp

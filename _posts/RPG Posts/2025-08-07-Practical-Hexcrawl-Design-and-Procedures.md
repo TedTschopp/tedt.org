@@ -24,7 +24,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2025-08/hex-map-seeded-frontier.webp
+image: /img/2025-08/hex-map-seeded-frontier.webp
 image-alt: A weathered campaign hex map with rivers, ridges, ruins, and colored exploration
   annotations
 image-artist: Ted Tschopp (concept + Midjourney assist)

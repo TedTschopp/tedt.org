@@ -32,7 +32,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2023-09/Ted_Tschopp_Pop_Art_Modern_Office.webp
+image: /img/2023-09/Ted_Tschopp_Pop_Art_Modern_Office.webp
 image-alt: Modern Office with Bright Colors, Gree, Yellow, Orange, and Blue.
 image-artist: null
 image-artist-URL: null

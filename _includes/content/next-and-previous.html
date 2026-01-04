@@ -19,14 +19,23 @@
 	{% if page.previous.image == null or page.previous.image == empty or page.previous.image == '' %}
 		{% assign previous_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
 	{% else %}
-		{% assign previous_image = site.url | append: "/" | append: page.previous.image  %}
+		{% assign previous_image_raw = page.previous.image | strip %}
+		{% assign previous_image_first = previous_image_raw | slice: 0, 1 %}
+		{% assign previous_image_first2 = previous_image_raw | slice: 0, 2 %}
+		{% if previous_image_raw contains '://' or previous_image_first2 == '//' %}
+			{% assign previous_image = previous_image_raw %}
+		{% elsif previous_image_first == '/' %}
+			{% assign previous_image = previous_image_raw %}
+		{% else %}
+			{% assign previous_image = '/' | append: previous_image_raw %}
+		{% endif %}
 	{% endif %}
 
 	{% assign previous_url = page.previous.url %}
 {% else %}
 	{% assign previous_url = site.url %}
 	{% assign previous_title = "Home" %}
-	{% assign previous_image = site.url | append: "/img/" | append: "webpage_thumbnail.webp" %}
+	{% assign previous_image = "/img/webpage_thumbnail.webp" %}
 	{% assign previous_subtitle = site.subtitle %}
 {% endif %}
 
@@ -51,7 +60,16 @@
 	{% if page.next.image == null or page.next.image == empty or page.next.image == '' %}
 		{% assign next_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
 	{% else %}
-		{% assign next_image = site.url | append: "/" | append: page.next.image  %}
+		{% assign next_image_raw = page.next.image | strip %}
+		{% assign next_image_first = next_image_raw | slice: 0, 1 %}
+		{% assign next_image_first2 = next_image_raw | slice: 0, 2 %}
+		{% if next_image_raw contains '://' or next_image_first2 == '//' %}
+			{% assign next_image = next_image_raw %}
+		{% elsif next_image_first == '/' %}
+			{% assign next_image = next_image_raw %}
+		{% else %}
+			{% assign next_image = '/' | append: next_image_raw %}
+		{% endif %}
 	{% endif %}
 
 	{% assign next_url = page.next.url %}
@@ -60,7 +78,7 @@
 
 	{% assign next_url = site.url %}
 	{% assign next_title = "Home" %}
-	{% assign next_image = site.url | append: "/img/" | append: "webpage_thumbnail.webp" %}
+	{% assign next_image = "/img/webpage_thumbnail.webp" %}
 	{% assign next_subtitle = site.subtitle %}
 
 {% endif %}

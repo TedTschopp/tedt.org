@@ -41,7 +41,7 @@ location:
 coordinates:
   latitude: null
   longitude: null
-image: img/home/tolkienonline.webp
+image: /img/home/tolkienonline.webp
 image-alt: Lord of the Rings wallpaper, in the style of layered landscapes, meticulously
   crafted scenes, dark and brooding, photo collage landscapes
 image-artist: Ted Tschopp

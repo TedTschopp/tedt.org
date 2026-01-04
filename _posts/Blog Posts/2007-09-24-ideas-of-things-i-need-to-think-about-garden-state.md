@@ -35,7 +35,7 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: img/Religion/Ted_Tschopp_the_lush_Garden_of_Eden.webp
+image: /img/Religion/Ted_Tschopp_the_lush_Garden_of_Eden.webp
 image-alt: null
 image-artist: null
 image-artist-URL: null

@@ -49,7 +49,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2018-07/ola-larsson-genlabbalpha.webp
+image: /img/2018-07/ola-larsson-genlabbalpha.webp
 image-alt: null
 image-artist: Ola Larsson
 image-artist-URL: https://larsson.artstation.com/projects/qOJQn

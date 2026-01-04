@@ -40,7 +40,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2015-01/7348035690_d483c5e3e0_o.webp
+image: /img/2015-01/7348035690_d483c5e3e0_o.webp
 image-alt: null
 image-artist: null
 image-artist-URL: null

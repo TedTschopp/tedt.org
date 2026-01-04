@@ -43,7 +43,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2023-10/A_blacksmith_making_weapons_in_a_hollowed_out_tree.webp
+image: /img/2023-10/A_blacksmith_making_weapons_in_a_hollowed_out_tree.webp
 image-alt: A blacksmith making fictional weapons.
 image-title: Warcraft
 image-description: A blacksmith making fictional weapons.

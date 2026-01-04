@@ -31,7 +31,7 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: img/2006-01/The-Path-West.webp
+image: /img/2006-01/The-Path-West.webp
 image-alt: sands slip through outstretched fingers, A serene beach at sunset, waves
   gently lap the shore, A lone figure stands in contemplation, reflections on time,
   forgiveness, life's journey expressed

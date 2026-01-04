@@ -105,10 +105,9 @@ variables:
   rows: 6
   default: ''
   help: What does the audience *think* they know about this topic that is incomplete or wrong? What is the crucial gap in their knowledge that you will reveal?
-- name: personal_stake
   label: 'Question 4: The Personal Stake (Rapport)'
   type: textarea
-  placeholder: Share a brief, personal story of your "before" state...
+  placeholder: Share a brief, personal story of your 'before' state...
   required: true
   rows: 6
   default: ''

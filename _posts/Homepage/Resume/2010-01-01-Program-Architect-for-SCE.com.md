@@ -67,7 +67,7 @@ location:
 coordinates:
   latitude: null
   longitude: null
-image: img/home/sce_com.webp
+image: /img/home/sce_com.webp
 image-alt: null
 image-artist: Ted Tschopp
 image-artist-URL: https://www.sce.com/

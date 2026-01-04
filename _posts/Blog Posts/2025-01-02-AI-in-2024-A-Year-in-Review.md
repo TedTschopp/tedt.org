@@ -48,7 +48,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/What-AI-in-2024-Means-for-Us-in-2025.webp
+image: /img/AI/What-AI-in-2024-Means-for-Us-in-2025.webp
 image-alt: Visual representation of AI breakthroughs in 2024
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/

@@ -33,7 +33,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/2018-10/seth-justus-huntersalienguns.webp
+image: /img/2018-10/seth-justus-huntersalienguns.webp
 image-alt: null
 image-artist: Seth Justus
 image-artist-URL: https://www.artstation.com/artwork/lqz25

@@ -32,7 +32,7 @@ location:
 coordinates:
   latitude: null
   longitude: null
-image: img/2018-11/District-9-Alien-Fuel-Cell-by-Josh-Haberman.webp
+image: /img/2018-11/District-9-Alien-Fuel-Cell-by-Josh-Haberman.webp
 image-alt: null
 image-artist: Josh Haberman
 image-artist-URL: https://www.artstation.com/artwork/lqz25

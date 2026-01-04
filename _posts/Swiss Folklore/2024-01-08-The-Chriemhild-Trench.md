@@ -43,7 +43,7 @@ location:
 coordinates:
   latitude: 47.2849
   longitude: 8.4634
-image: img/Swiss/Turlersee-Lake.webp
+image: /img/Swiss/Turlersee-Lake.webp
 image-alt: "An image of Tu\u0308rlersee-Lake taken by someone from shore."
 image-artist: Leandros at German Wikipedia
 image-artist-URL: "https://commons.wikimedia.org/wiki/File:T\xFCrlersee1.webp"

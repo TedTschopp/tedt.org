@@ -49,7 +49,7 @@ location:
 coordinates:
   latitude: 34.147
   longitude: -117.9709
-image: img/AI/Crucial-Prompting.webp
+image: /img/AI/Crucial-Prompting.webp
 image-alt: Construction metaphor showing the building blocks of effective AI prompting
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
