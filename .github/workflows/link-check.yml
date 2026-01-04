@@ -1,0 +1,53 @@
+name: Link + HTML checks (manual)
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  htmlproofer:
+    name: HTMLProofer
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: false
+
+      - name: Add Linux platform to lockfile
+        run: |
+          ruby -v
+          bundler -v
+          bundle lock --add-platform x86_64-linux || true
+          bundle lock --add-platform ruby || true
+
+      - name: Install gems
+        run: |
+          bundle config set --local path 'vendor/bundle'
+          bundle install --jobs 4
+
+      - name: Build with Jekyll
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --trace
+
+      - name: Link + HTML checks (HTMLProofer)
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --check-html --allow-missing-href 2>&1 | tee tmp/htmlproofer.txt
+
+      - name: Upload HTMLProofer log
+        if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: htmlproofer-log
+          path: tmp/htmlproofer.txt

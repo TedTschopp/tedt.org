@@ -188,28 +188,6 @@ jobs:
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
 
-      - name: Link + HTML checks (HTMLProofer)
-        id: proofer
-        continue-on-error: true
-        run: |
-          set -euo pipefail
-          mkdir -p tmp
-          SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --check-html --allow-missing-href 2>&1 | tee tmp/htmlproofer.txt
-
-      - name: Record Link + HTML checks (Allure)
-        if: always()
-        run: |
-          STATUS="${{ steps.proofer.outcome }}"
-          if [ "$STATUS" = "success" ]; then A_STATUS=passed; else A_STATUS=failed; fi
-          python3 reports/allure/write_simple_allure_result.py \
-            --output-dir reports/allure/allure-results \
-            --name "Generated HTML quality + missing links (HTMLProofer)" \
-            --suite "Site Quality" \
-            --sub-suite "Generated HTML" \
-            --status "$A_STATUS" \
-            --attach "htmlproofer=tmp/htmlproofer.txt" \
-            --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
-
       - name: Capture GitHub Actions errors/warnings (Allure)
         if: always()
         continue-on-error: true
@@ -287,7 +265,6 @@ jobs:
           echo "- A11y outcome: ${{ steps.a11y.outcome }}" >> $GITHUB_STEP_SUMMARY
           echo "- Markdown outcome: ${{ steps.mdlint.outcome }}" >> $GITHUB_STEP_SUMMARY
           echo "- JS syntax outcome: ${{ steps.jslint.outcome }}" >> $GITHUB_STEP_SUMMARY
-          echo "- HTMLProofer outcome: ${{ steps.proofer.outcome }}" >> $GITHUB_STEP_SUMMARY
           echo "- Published path in deployed site: /reports/allure/latest/index.html" >> $GITHUB_STEP_SUMMARY
       - name: Post-build artifact size summary
         if: success()

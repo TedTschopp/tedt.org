@@ -11,21 +11,18 @@ nav[aria-label="Primary"] .navbar-collapse {
 nav[aria-label="Primary"] .navbar-nav {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  /* Spacing is handled via Bootstrap utility margins in markup (e.g. `mx-2`).
+     Avoid double-spacing by not adding a container gap here. */
+  gap: 0;
 }
 
-// Fallback spacing if gap unsupported
-nav[aria-label="Primary"] .navbar-nav > li + li {
-  margin-left: 0.75rem;
-}
-
-// Extra separation specifically between adjacent dropdowns (Career & Projects)
-nav[aria-label="Primary"] .navbar-nav > li.dropdown + li.dropdown {
-  margin-left: 1.25rem;
-}
+nav[aria-label="Primary"] .navbar-nav > li,
+nav[aria-label="Primary"] .navbar-nav > .nav-item { display: flex; align-items: center; }
 
 nav[aria-label="Primary"] .navbar-nav > li > .nav-link.menu-item,
-nav[aria-label="Primary"] .navbar-nav > li > button.nav-link.menu-item {
+nav[aria-label="Primary"] .navbar-nav > li > button.nav-link.menu-item,
+nav[aria-label="Primary"] .navbar-nav > .nav-item > .nav-link.menu-item,
+nav[aria-label="Primary"] .navbar-nav > .nav-item > button.nav-link.menu-item {
   display: flex;
   align-items: center;
   height: 44px;
@@ -33,22 +30,24 @@ nav[aria-label="Primary"] .navbar-nav > li > button.nav-link.menu-item {
   padding: 0 0.25rem; // minimal horizontal padding
 }
 
-nav[aria-label="Primary"] .navbar-nav > li { display: flex; align-items: center; }
 nav[aria-label="Primary"] .navbar-brand img { vertical-align: middle; }
 nav[aria-label="Primary"] .nav-link.menu-item { font-size: 20px; }
-nav[aria-label="Primary"] button.nav-link.menu-item { width: 44px; justify-content: center; }
 
 // Dropdown positioning fix
 nav[aria-label="Primary"] .navbar-nav > li.dropdown,
-nav[aria-label="Primary"] .navbar-nav > li.dropdown-center { position: relative; }
-nav[aria-label="Primary"] .navbar-nav > li .dropdown-menu {
+nav[aria-label="Primary"] .navbar-nav > li.dropdown-center,
+nav[aria-label="Primary"] .navbar-nav > .nav-item.dropdown,
+nav[aria-label="Primary"] .navbar-nav > .nav-item.dropdown-center { position: relative; }
+nav[aria-label="Primary"] .navbar-nav > li .dropdown-menu,
+nav[aria-label="Primary"] .navbar-nav > .nav-item .dropdown-menu {
   position: absolute;
   top: 100%;
   left: 0;
   margin-top: 0.4rem;
   transform: none !important;
 }
-nav[aria-label="Primary"] .navbar-nav > li .dropdown-menu-end { right: 0; left: auto; }
+nav[aria-label="Primary"] .navbar-nav > li .dropdown-menu-end,
+nav[aria-label="Primary"] .navbar-nav > .nav-item .dropdown-menu-end { right: 0; left: auto; }
 
 // Dropdown item sizing smaller than top-level buttons
 nav[aria-label="Primary"] .dropdown-menu .dropdown-item {

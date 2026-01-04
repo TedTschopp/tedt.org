@@ -62,7 +62,13 @@
 .navbar.sticky-top .navbar-nav > li > button.nav-link,
 .navbar.fixed-top .navbar-nav > li > button.nav-link,
 .navbar.sticky-top .navbar-nav > li > button.menu-item,
-.navbar.fixed-top .navbar-nav > li > button.menu-item {
+.navbar.fixed-top .navbar-nav > li > button.menu-item,
+.navbar.sticky-top .navbar-nav > .nav-item > .nav-link,
+.navbar.fixed-top .navbar-nav > .nav-item > .nav-link,
+.navbar.sticky-top .navbar-nav > .nav-item > button.nav-link,
+.navbar.fixed-top .navbar-nav > .nav-item > button.nav-link,
+.navbar.sticky-top .navbar-nav > .nav-item > button.menu-item,
+.navbar.fixed-top .navbar-nav > .nav-item > button.menu-item {
   display: flex;
   align-items: center;
   height: var(--nav-height); /* match bar */
@@ -80,7 +86,9 @@
 
 /* Prevent accidental shrink if utility classes applied */
 .navbar.sticky-top .navbar-nav > li,
-.navbar.fixed-top  .navbar-nav > li { display:flex; align-items:center; }
+.navbar.fixed-top  .navbar-nav > li,
+.navbar.sticky-top .navbar-nav > .nav-item,
+.navbar.fixed-top  .navbar-nav > .nav-item { display:flex; align-items:center; }
 
 /* Offset page content to avoid overlap with fixed navbar; keep scroll anchoring accurate */
 body {
