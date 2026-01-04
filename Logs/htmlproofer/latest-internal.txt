@@ -1,0 +1,766 @@
+Running ["ScriptCheck", "LinkCheck", "ImageCheck", "HtmlCheck"] on ["./_site"] on *.html... 
+
+
+Ran on 1216 files!
+
+
+- ./_site/EmbedToot/embed-article-view.html
+  *  68:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 68)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 238)
+  *  image has no src or srcset attribute (line 238)
+- ./_site/EmbedToot/embed-post-and-comments-normal.html
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  91:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 91)
+  *  image  does not have an alt attribute (line 356)
+  *  image  does not have an alt attribute (line 377)
+  *  image has no src or srcset attribute (line 377)
+  *  image has no src or srcset attribute (line 356)
+- ./_site/EmbedToot/embed-post-and-comments-tree-view-v2.html
+  *  117:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 117)
+  *  579:51: ERROR: Unexpected character (") in attribute name.
+                    <p class=" text-start p-0 m-0 "><a href="" class=" authorLink" target="_blank"><span
+                                                  ^ (line 579)
+  *  579:53: ERROR: Start tag 'a' isn't allowed here. Currently open tags: html, body, section, div, div, div, div, div, p, a, span.
+                    <p class=" text-start p-0 m-0 "><a href="" class=" authorLink" target="_blank"><span
+                                                    ^ (line 579)
+  *  579:53: ERROR: Start tag 'a' isn't allowed here. Currently open tags: html, body, section, div, div, div, div, div, p, a, span.
+                    <p class=" text-start p-0 m-0 "><a href="" class=" authorLink" target="_blank"><span
+                                                    ^ (line 579)
+  *  7:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 7)
+  *  image  does not have an alt attribute (line 539)
+  *  image  does not have an alt attribute (line 516)
+  *  image has no src or srcset attribute (line 516)
+  *  image has no src or srcset attribute (line 539)
+  *  image has no src or srcset attribute (line 570)
+- ./_site/EmbedToot/embed-post-and-comments-tree-view.html
+  *  118:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 118)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 536)
+  *  image  does not have an alt attribute (line 515)
+  *  image has no src or srcset attribute (line 536)
+  *  image has no src or srcset attribute (line 515)
+- ./_site/EmbedToot/embed-post-and-replies-thread.html
+  *  68:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 68)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 238)
+  *  image has no src or srcset attribute (line 238)
+- ./_site/EmbedToot/embed-single-post.html
+  *  63:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 63)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 162)
+  *  image has no src or srcset attribute (line 162)
+- ./_site/EmbedToot/embed-users-recent-posts-mini.html
+  *  84:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 84)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 472)
+  *  image has no src or srcset attribute (line 472)
+- ./_site/EmbedToot/embed-users-recent-posts-normal.html
+  *  75:1: ERROR: Start tag 'script' isn't allowed here. Currently open tags: html.
+<script language="JavaScript">
+^ (line 75)
+  *  8:1: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html.
+<style>
+^ (line 8)
+  *  image  does not have an alt attribute (line 460)
+  *  image has no src or srcset attribute (line 460)
+- ./_site/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/index.html
+  *  image https://tedt.org/img/AI/Learning-by-Doing.webp does not have an alt attribute (line 802)
+- ./_site/Mehmet-Al-Mansur/index.html
+  *  internally linking to /Swiss-Folklore/The-Basilisk-Egg, which does not exist (line 3127)
+     <a href="/Swiss-Folklore/The-Basilisk-Egg" class="prev"><i class="fa-solid fa-angles-left" aria-hidden="true"></i> The Basilisk</a>
+- ./_site/Moonwalking-Through-the-Apocalypse/index.html
+  *  internally linking to /Swiss-Folklore/The-Basilisk-Egg, which does not exist (line 3176)
+     <a href="/Swiss-Folklore/The-Basilisk-Egg" class="next">The Basilisk <i class="fa-solid fa-angles-right" aria-hidden="true"></i></a>
+- ./_site/RPG/MCC-GW/Archaic Alignments.html
+  *  315:563: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td.
+                The following is a collection of writings collected in the library of Haven regarding other Archaic Alignments.  The city of Haven has either not encountered these alignments or they describe non-canonical understandings of known alignments.  The person who contributed this work to the library, Gene, said he acquired this work from the bodies of what he would only describe as some alien like mutants he had never seen before.  As time permits the scribes at this library will integrate this information with the above texts as it is validated.</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  ^ (line 315)
+- ./_site/RPG/MCC-GW/DroidSpell.html
+  *  74:149: ERROR: End tag 'i' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td, p.
+<i>Manifestation 5:</i> The shaman's fingers on both hands become ridged and contorted as they point towards the location the Hologram is to appear.</i>
+                                                                                                                                                    ^ (line 74)
+- ./_site/RPG/MCC-GW/Forest-Home.html
+  *  46:17: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td.
+                </p>
+                ^ (line 46)
+- ./_site/RPG/MCC-GW/Gamma-Speak.html
+  *  787:21: ERROR: End tag 'dt' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td, dl.
+                    </dt>
+                    ^ (line 787)
+- ./_site/RPG/MCC-GW/wolf-creek-hallow.html
+  *  46:17: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, table, tbody, tr, td.
+                </p>
+                ^ (line 46)
+- ./_site/RPG/Traveller/Sheet.html
+  *  227:13: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, div, div, div, div, span, span.
+            </div> <!-- sheet-charmancer_stat-panel -->
+            ^ (line 227)
+  *  244:13: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, div, div, div, div, span, span.
+            </div> <!-- sheet-charmancer_stat-panel -->
+            ^ (line 244)
+  *  261:13: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, div, div, div, div, span, span.
+            </div> <!-- sheet-charmancer_stat-panel -->
+            ^ (line 261)
+  *  278:13: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, div, div, div, div, span, span.
+            </div> <!-- sheet-charmancer_stat-panel -->
+            ^ (line 278)
+  *  5070:17: ERROR: Start tag 'td' isn't allowed here. Currently open tags: html, body, div, rolltemplate, div, table, tbody.
+                <td colspan="4">Rolling with BOON</td>
+                ^ (line 5070)
+- ./_site/RPG/Traveller/index.html
+  *  29:3: ERROR: Start tag 'body' isn't allowed here. Currently open tags: html, body.
+  <body>
+  ^ (line 29)
+- ./_site/RPG/teds/stories/index.html
+  *  image https://tedt.org/RPG/MCC-GW/images/GammaWorldHeaderEdited.webp does not have an alt attribute (line 34)
+- ./_site/What-Makes-the-Human/index.html
+  *  linking to internal hash #acrobatics-knowledge-areas that does not exist (line 1060)
+     <a href="#acrobatics-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #acuity-characteristics that does not exist (line 1186)
+     <a href="#acuity-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #adept-knowledge-areas that does not exist (line 1276)
+     <a href="#adept-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #agility-characteristics that does not exist (line 1042)
+     <a href="#agility-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #animal-handling-knowledge-areas that does not exist (line 1420)
+     <a href="#animal-handling-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #animism-knowledge-areas that does not exist (line 1312)
+     <a href="#animism-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #arcane-knowledge-areas that does not exist (line 1228)
+     <a href="#arcane-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #athletics-knowledge-areas that does not exist (line 1024)
+     <a href="#athletics-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #bureaucracy-knowledge-areas that does not exist (line 1408)
+     <a href="#bureaucracy-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #chaos-knowledge-areas that does not exist (line 1252)
+     <a href="#chaos-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #deception-knowledge-areas that does not exist (line 1372)
+     <a href="#deception-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #drive--ride--pilot-knowledge-areas that does not exist (line 1084)
+     <a href="#drive--ride--pilot-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #engineering-knowledge-areas that does not exist (line 1156)
+     <a href="#engineering-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #etiquette-knowledge-areas that does not exist (line 1360)
+     <a href="#etiquette-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #faith-characteristics that does not exist (line 1258)
+     <a href="#faith-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #formal-sciences-knowledge-areas that does not exist (line 1216)
+     <a href="#formal-sciences-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #gnosis-knowledge-areas that does not exist (line 1240)
+     <a href="#gnosis-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #identity-characteristics that does not exist (line 1402)
+     <a href="#identity-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #insight-knowledge-areas that does not exist (line 1168)
+     <a href="#insight-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #intellect-characteristics that does not exist (line 1114)
+     <a href="#intellect-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #intimidation-knowledge-areas that does not exist (line 1396)
+     <a href="#intimidation-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #investigation-knowledge-areas that does not exist (line 1180)
+     <a href="#investigation-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #leadership-knowledge-areas that does not exist (line 1432)
+     <a href="#leadership-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #life-sciences-knowledge-areas that does not exist (line 1132)
+     <a href="#life-sciences-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #manners-characteristics that does not exist (line 1330)
+     <a href="#manners-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #melee-combat-knowledge-areas that does not exist (line 1036)
+     <a href="#melee-combat-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #metaphysics-knowledge-areas that does not exist (line 1300)
+     <a href="#metaphysics-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #muscle-characteristics that does not exist (line 1006)
+     <a href="#muscle-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #mystery-characteristics that does not exist (line 1294)
+     <a href="#mystery-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #order-knowledge-areas that does not exist (line 1288)
+     <a href="#order-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #perception-knowledge-areas that does not exist (line 1204)
+     <a href="#perception-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #performance-knowledge-areas that does not exist (line 1348)
+     <a href="#performance-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #personality-characteristics that does not exist (line 1366)
+     <a href="#personality-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #persuasion-knowledge-areas that does not exist (line 1384)
+     <a href="#persuasion-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #physical-sciences--survival-knowledge-areas that does not exist (line 1144)
+     <a href="#physical-sciences--survival-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #ranged-combat-knowledge-areas that does not exist (line 1012)
+     <a href="#ranged-combat-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #reasoning-characteristics that does not exist (line 1150)
+     <a href="#reasoning-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #ruggedness-knowledge-areas that does not exist (line 1096)
+     <a href="#ruggedness-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #shamanism-knowledge-areas that does not exist (line 1324)
+     <a href="#shamanism-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #skepticism-characteristics that does not exist (line 1222)
+     <a href="#skepticism-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #sleight-of-hand-knowledge-areas that does not exist (line 1072)
+     <a href="#sleight-of-hand-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #social-sciences-knowledge-areas that does not exist (line 1120)
+     <a href="#social-sciences-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #stamina-characteristics that does not exist (line 1078)
+     <a href="#stamina-characteristics" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #stealth-knowledge-areas that does not exist (line 1048)
+     <a href="#stealth-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #style-knowledge-areas that does not exist (line 1336)
+     <a href="#style-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #theurgy-knowledge-areas that does not exist (line 1264)
+     <a href="#theurgy-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #traditions-knowledge-areas that does not exist (line 1192)
+     <a href="#traditions-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+  *  linking to internal hash #unarmed-combat-knowledge-areas that does not exist (line 1108)
+     <a href="#unarmed-combat-knowledge-areas" class="WinerAnchor text-decoration-none">↓</a>
+- ./_site/folklore/entities/index.html
+  *  linking to internal hash #threat-dangerous that does not exist (line 817)
+     <a href="#threat-dangerous" class="btn btn-smbtn-outline-danger">
+                          Dangerous (7)
+                        </a>
+  *  linking to internal hash #threat-none that does not exist (line 833)
+     <a href="#threat-none" class="btn btn-smbtn-outline-success">
+                          None (1)
+                        </a>
+  *  linking to internal hash #threat-ominous that does not exist (line 825)
+     <a href="#threat-ominous" class="btn btn-smbtn-outline-warning">
+                          Ominous (5)
+                        </a>
+- ./_site/folklore/themes/index.html
+  *  4609:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
+  <style>
+  ^ (line 4609)
+- ./_site/index.html
+  *  4678:3: ERROR: Start tag 'style' isn't allowed here. Currently open tags: html, body.
+  <style>
+  ^ (line 4678)
+- ./_site/ipfs/index.html
+  *  image  does not have an alt attribute (line 69)
+  *  image has no src or srcset attribute (line 69)
+- ./_site/mastodon-backfill-history/index.html
+  *  internally linking to /Logs/mastodon-backfill-summary.md, which does not exist (line 772)
+     <a href="/Logs/mastodon-backfill-summary.md">/Logs/mastodon-backfill-summary.md</a>
+- ./_site/mastodon-backfill-summary/index.html
+  *  internally linking to /Logs/mastodon-backfill-summary.md, which does not exist (line 770)
+     <a href="/Logs/mastodon-backfill-summary.md">/Logs/mastodon-backfill-summary.md</a>
+- ./_site/prompts/Create-a-Unforgettable-Opening-to-a-TTRPG/index.html
+  *  1288:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1288)
+  *  1796:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1796)
+- ./_site/prompts/abb-sbb-ubb-builder/index.html
+  *  1316:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1316)
+  *  1970:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1970)
+- ./_site/prompts/academic-critique-content/index.html
+  *  1292:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1292)
+  *  3575:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3575)
+- ./_site/prompts/active-learning-teaching-assistant/index.html
+  *  1289:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1289)
+  *  1547:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1547)
+- ./_site/prompts/ai-backlog-ideas/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  2063:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2063)
+- ./_site/prompts/ai-document-generator/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1640:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1640)
+- ./_site/prompts/ai-simulation-creator-roleplay-prompt/index.html
+  *  1287:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1287)
+  *  1499:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1499)
+- ./_site/prompts/ai-simulation-creator/index.html
+  *  1287:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1287)
+  *  1497:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1497)
+- ./_site/prompts/ai-teaching-assistant-prompt-creator/index.html
+  *  1287:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1287)
+  *  1531:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1531)
+- ./_site/prompts/ai-tutoring-prompt-designer/index.html
+  *  1292:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1292)
+  *  1530:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1530)
+- ./_site/prompts/application-architecture-as-markdown/index.html
+  *  1315:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1315)
+  *  4585:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4585)
+- ./_site/prompts/architecture-designer/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1728:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1728)
+- ./_site/prompts/architecture-prompt/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1608:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1608)
+- ./_site/prompts/artistic-Analysis/index.html
+  *  1287:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1287)
+  *  1635:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1635)
+- ./_site/prompts/avd-as-markdown/index.html
+  *  1313:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1313)
+  *  4163:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4163)
+- ./_site/prompts/be-an-expert-and-give-advice/index.html
+  *  1313:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1313)
+  *  1549:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1549)
+- ./_site/prompts/building-block/index.html
+  *  1313:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1313)
+  *  1663:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1663)
+- ./_site/prompts/business-architecture-as-markdown/index.html
+  *  1318:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1318)
+  *  3222:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3222)
+- ./_site/prompts/business-case-and-requirements-assistant/index.html
+  *  1290:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1290)
+  *  2432:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2432)
+- ./_site/prompts/business-requirements-builder/index.html
+  *  1319:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1319)
+  *  1771:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1771)
+- ./_site/prompts/business-skills-prompts/index.html
+  *  1315:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1315)
+  *  2727:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2727)
+- ./_site/prompts/data-architecture-as-markdown/index.html
+  *  1315:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1315)
+  *  3883:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3883)
+- ./_site/prompts/executive-keynote-generator/index.html
+  *  1319:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1319)
+  *  1852:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1852)
+- ./_site/prompts/expert-novelist/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1604:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1604)
+- ./_site/prompts/find-your-super-power/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1568:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1568)
+- ./_site/prompts/lean-six-sigma-analysis/index.html
+  *  1320:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1320)
+  *  1560:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1560)
+- ./_site/prompts/marketing-copy-evaluation-template/index.html
+  *  1287:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1287)
+  *  1591:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1591)
+- ./_site/prompts/microsoft-power-automate-systems-architect/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1708:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1708)
+- ./_site/prompts/midjourney-v6.1-prompt-template/index.html
+  *  1288:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1288)
+  *  1712:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1712)
+- ./_site/prompts/midjourney-v7-prompt-template/index.html
+  *  1287:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1287)
+  *  1577:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1577)
+- ./_site/prompts/module-builder/index.html
+  *  1320:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1320)
+  *  2086:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2086)
+- ./_site/prompts/module-format/index.html
+  *  1326:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1326)
+  *  2750:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2750)
+- ./_site/prompts/objectives-key-results/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1622:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1622)
+- ./_site/prompts/prd-agent/index.html
+  *  1313:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1313)
+  *  1665:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1665)
+- ./_site/prompts/prd-generator/index.html
+  *  1315:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1315)
+  *  2049:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2049)
+- ./_site/prompts/product-requirements-document-prd-for-power-platform/index.html
+  *  1313:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1313)
+  *  2989:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2989)
+- ./_site/prompts/product-requirements-document-prd-template-2/index.html
+  *  1313:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1313)
+  *  4513:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4513)
+- ./_site/prompts/product-requirements-document-prd-template/index.html
+  *  1313:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1313)
+  *  3535:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3535)
+- ./_site/prompts/requirements-analyst-quality-review/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1620:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1620)
+- ./_site/prompts/requirements-analyst/index.html
+  *  1314:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1314)
+  *  1618:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1618)
+- ./_site/prompts/rfp-response-review/index.html
+  *  1357:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1357)
+  *  1857:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1857)
+- ./_site/prompts/risk-assessment-clean-up/index.html
+  *  1315:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1315)
+  *  2015:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2015)
+- ./_site/prompts/risk-assessment-for-it/index.html
+  *  1323:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1323)
+  *  2127:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2127)
+- ./_site/prompts/role-and-objective/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  1579:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1579)
+- ./_site/prompts/script-a-podcast/index.html
+  *  1313:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1313)
+  *  1619:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1619)
+- ./_site/prompts/simple-blog-generator/index.html
+  *  1278:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1278)
+  *  2879:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2879)
+- ./_site/prompts/skill-profile-generator/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  1583:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1583)
+- ./_site/prompts/social-media-repurposing-template/index.html
+  *  1287:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1287)
+  *  1783:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1783)
+- ./_site/prompts/sora-prompt/index.html
+  *  1316:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1316)
+  *  1766:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1766)
+- ./_site/prompts/technology-architecture-as-markdown/index.html
+  *  1310:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1310)
+  *  4198:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 4198)
+- ./_site/prompts/teds-writing-style/index.html
+  *  1317:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1317)
+  *  1575:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1575)
+- ./_site/prompts/testing-analyst/index.html
+  *  1310:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1310)
+  *  1832:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1832)
+- ./_site/prompts/tiered-messaging-framework/index.html
+  *  1319:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1319)
+  *  1863:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1863)
+- ./_site/prompts/universal-content-creator-demo/index.html
+  *  1304:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1304)
+  *  3327:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 3327)
+- ./_site/prompts/weapon-descriptions/index.html
+  *  1313:1: ERROR: End tag 'p' isn't allowed here. Currently open tags: html, body, main, div, div.
+</p>
+^ (line 1313)
+  *  1539:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 1539)
+- ./_site/prompts/work-in-progress/2025-10-17-product-requirements-document-prd-for-power-platform/index.html
+  *  2984:9: ERROR: End tag 'div' isn't allowed here. Currently open tags: html, body, main.
+        </div>
+        ^ (line 2984)
+- ./_site/reports/allure/latest/index.html
+  *  internal script app-10bb98e228244dbdb4e2.js does not exist (line 29)
+- ./_site/slides/master-professional-examples/index.html
+  *  723:12: ERROR: Character tokens aren't legal here
+    <tbody>
+           ^ (line 723)
+  *  724:10: ERROR: Character tokens aren't legal here
+    published: false
+         ^ (line 724)
+  *  724:11: ERROR: Character tokens aren't legal here
+    published: false
+          ^ (line 724)
+  *  724:12: ERROR: Character tokens aren't legal here
+    published: false
+           ^ (line 724)
+  *  724:13: ERROR: Character tokens aren't legal here
+    published: false
+            ^ (line 724)
+  *  724:14: ERROR: Character tokens aren't legal here
+    published: false
+             ^ (line 724)
+  *  724:15: ERROR: Character tokens aren't legal here
+    published: false
+              ^ (line 724)
+  *  724:16: ERROR: Character tokens aren't legal here
+    published: false
+               ^ (line 724)
+  *  724:17: ERROR: Character tokens aren't legal here
+    published: false
+                ^ (line 724)
+  *  724:18: ERROR: Character tokens aren't legal here
+    published: false
+                 ^ (line 724)
+  *  724:19: ERROR: Character tokens aren't legal here
+    published: false
+                  ^ (line 724)
+  *  724:1: ERROR: Character tokens aren't legal here
+    published: false
+^ (line 724)
+  *  724:20: ERROR: Character tokens aren't legal here
+    published: false
+                   ^ (line 724)
+  *  724:21: ERROR: Character tokens aren't legal here
+    published: false
+                    ^ (line 724)
+  *  724:2: ERROR: Character tokens aren't legal here
+    published: false
+ ^ (line 724)
+  *  724:3: ERROR: Character tokens aren't legal here
+    published: false
+  ^ (line 724)
+  *  724:4: ERROR: Character tokens aren't legal here
+    published: false
+   ^ (line 724)
+  *  724:5: ERROR: Character tokens aren't legal here
+    published: false
+    ^ (line 724)
+  *  724:6: ERROR: Character tokens aren't legal here
+    published: false
+     ^ (line 724)
+  *  724:7: ERROR: Character tokens aren't legal here
+    published: false
+      ^ (line 724)
+  *  724:8: ERROR: Character tokens aren't legal here
+    published: false
+       ^ (line 724)
+  *  724:9: ERROR: Character tokens aren't legal here
+    published: false
+        ^ (line 724)
+  *  725:1: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+^ (line 725)
+  *  725:2: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+ ^ (line 725)
+  *  725:3: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+  ^ (line 725)
+  *  725:4: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+   ^ (line 725)
+  *  725:5: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+    ^ (line 725)
+  *  725:6: ERROR: Character tokens aren't legal here
+      <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
+     ^ (line 725)
+- ./_site/tools/prompt-library/index.html
+  *  linking to internal hash # that does not exist (line 18507)
+     <a class="page-link" href="#">Next</a>
+  *  linking to internal hash # that does not exist (line 18502)
+     <a class="page-link" href="#">1</a>
+  *  linking to internal hash # that does not exist (line 18504)
+     <a class="page-link" href="#">2</a>
+  *  linking to internal hash # that does not exist (line 18505)
+     <a class="page-link" href="#">3</a>
+  *  linking to internal hash # that does not exist (line 18499)
+     <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+- ./_site/tools/todo_hex.html
+  *  17:97: ERROR: End tag 'br' isn't allowed here. Currently open tags: html, body, main, section.
+                <canvas id="layout-test-orientation-pointy" width="1000" height="1000"></canvas></br>
+                                                                                                ^ (line 17)
+  *  internal script js/hex-implementation.js does not exist (line 24)
+  *  internal script js/hex.js does not exist (line 23)
+
+HTML-Proofer found 262 failures!
