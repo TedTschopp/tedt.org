@@ -48,19 +48,14 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: 
-image-alt: ""
+image: /img/prompts/Teds-Writing-Style.webp
+image-alt: "A solitary figure walks along a river path toward distant buildings, rendered in fine architectural linework with handwritten notes and grid marks, as if the scene were both a memory and a blueprint."
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: ""
-image-title: ""
-image_width: 
-image_height: 
+image-description: "A contemplative urban scene drawn as a hybrid of sketch, blueprint, and memory. A lone figure walks beside a calm river toward softly rendered historic buildings, while precise grid lines, annotations, and measured marks overlay the image. Bare trees, muted winter tones, and a small warm glow in the distance create a quiet tension between order and longing, structure and soul—suggesting a journey where reflection, faith, and hope are carefully, almost reverently, mapped out over time."
+image-title: "Walking the Measure of Memory"
+image_width: 1456 
+image_height: 816
 
 mastodon-post-id:
 models-supported:
