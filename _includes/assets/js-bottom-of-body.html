@@ -85,20 +85,58 @@
 
         // --- TOC Card ---
         let tocAnimationInProgress = false;
+
+        function setDisabled(el, disabled){
+          if(!el) return;
+          if(disabled){
+            el.setAttribute('aria-disabled', 'true');
+            el.setAttribute('disabled', 'disabled');
+          } else {
+            el.removeAttribute('aria-disabled');
+            el.removeAttribute('disabled');
+          }
+        }
+
+        function applyTocToggleButtons(disabled){
+          // New segmented control (Show/Hide) in navbar
+          const toggleGroup = document.getElementById('tocVisibilityToggle');
+          if(toggleGroup){
+            const showBtn = toggleGroup.querySelector('button[data-toc-visibility="show"]');
+            const hideBtn = toggleGroup.querySelector('button[data-toc-visibility="hide"]');
+
+            setDisabled(showBtn, !!disabled);
+            setDisabled(hideBtn, !!disabled);
+
+            if(!disabled){
+              setPressed(showBtn, !!tableOfContentsVisible);
+              setPressed(hideBtn, !tableOfContentsVisible);
+            } else {
+              setPressed(showBtn, false);
+              setPressed(hideBtn, false);
+            }
+          }
+
+          // Back-compat: older single-button toggle (if present)
+          const legacyBtn = document.getElementById('btnToggleTocCard');
+          if(legacyBtn){
+            setDisabled(legacyBtn, !!disabled);
+            if(!disabled){
+              setPressed(legacyBtn, tableOfContentsVisible);
+              legacyBtn.title = tableOfContentsVisible ? 'Hide TOC' : 'Show TOC';
+              legacyBtn.setAttribute('aria-label', legacyBtn.title);
+            } else {
+              setPressed(legacyBtn, false);
+            }
+          }
+        }
+
         function applyTocCard(){
           const tocCard = document.getElementById('table-of-contents-card');
-          const btn = document.getElementById('btnToggleTocCard');
           if(!tocCard){
-            if(btn){
-              btn.setAttribute('aria-disabled', 'true');
-              btn.setAttribute('disabled', 'disabled');
-            }
+            applyTocToggleButtons(true);
             return;
           }
-          if(btn){
-            btn.removeAttribute('disabled');
-            btn.removeAttribute('aria-disabled');
-          }
+          applyTocToggleButtons(false);
           // Only manage visibility now; layout no longer depends on column width adjustments.
           if(tableOfContentsVisible){
             if(tocCard.classList.contains('hidden')){
@@ -125,26 +163,36 @@
               tocAnimationInProgress = false;
             }, 280);
           }
-          if(btn){
-            setPressed(btn, tableOfContentsVisible);
-            const label = tableOfContentsVisible ? 'Hide TOC' : 'Show TOC';
-            btn.title = label;
-            btn.setAttribute('aria-label', label);
-
-            // Match requested UI text.
-            // Visible label includes the hamburger glyph when showing.
-            const buttonText = tableOfContentsVisible ? 'Hide TOC' : '☰ Show TOC';
-            if(btn.textContent !== buttonText){ btn.textContent = buttonText; }
-          }
+          // Button UI is managed by applyTocToggleButtons().
         }
-        function toggleTocCard(){
-          tableOfContentsVisible = !tableOfContentsVisible;
+
+        function setTocCardVisible(nextVisible){
+          tableOfContentsVisible = !!nextVisible;
           setCookie('tableOfContentsVisible', tableOfContentsVisible);
           if(!tableOfContentsVisible){
             tocHideCount += 1;
             setCookie('tableOfContentsHideCount', tocHideCount);
           }
           applyTocCard();
+        }
+        function toggleTocCard(){
+          setTocCardVisible(!tableOfContentsVisible);
+        }
+
+        function setupTocCardButtons(){
+          const toggleGroup = document.getElementById('tocVisibilityToggle');
+          if(!toggleGroup || toggleGroup.dataset.enhanced === 'true') return;
+
+          toggleGroup.addEventListener('click', function(e){
+            const btn = e.target && e.target.closest ? e.target.closest('button[data-toc-visibility]') : null;
+            if(!btn) return;
+            e.preventDefault();
+            const mode = (btn.getAttribute('data-toc-visibility') || '').toLowerCase();
+            if(mode === 'show') setTocCardVisible(true);
+            if(mode === 'hide') setTocCardVisible(false);
+          });
+
+          toggleGroup.dataset.enhanced = 'true';
         }
 
         // --- Public API ---
@@ -154,6 +202,7 @@
           applyTocCard();
           setupPilcrowObserver();
           setupTocArrowsObserver();
+          setupTocCardButtons();
           // Expose global handlers expected by existing onclick attributes
           window.togglePilcrow = togglePilcrow;
           window.toggleBackToTableofContents = toggleTocArrows;
