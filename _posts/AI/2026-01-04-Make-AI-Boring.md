@@ -2,7 +2,7 @@
 layout: post
 
 title: "Making AI Boring on Purpose"
-subtitle: "Why value, quality, and standard work must come before speed"
+subtitle: "Value, Then Quality, Then Speed"
 quote: "If you want predictable cost, trustworthy outcomes, and real speed, you have to make AI boring on purpose."
 excerpt: "AI doesn’t create discipline—it amplifies what already exists. To get predictable cost, trustworthy outcomes, and sustainable speed, organizations must lead with value, design for quality, and only then pursue scale."
 source: "Original Content"
@@ -72,11 +72,7 @@ mastodon-post-id:
 
 ---
 
-**Bottom line up front:** AI scales what already exists. If you want predictable
-cost, trustworthy outcomes, and real speed, you have to make it boring on
-purpose: value first, quality next, speed last.
-
-# Making AI Boring on Purpose: Value, Then Quality, Then Speed
+{% include components/audio-player.html src="Making-AI-Adoption-Predictable-and-Boring-on-Purpose.m4a" label="Audio Summary" description="AI scales what already exists. If you want predictable cost, trustworthy outcomes, and real speed, you have to make it boring on purpose: value first, quality next, speed last." %}
 
 A couple years ago, on a gray Saturday with that familiar coastal marine layer hanging over the neighborhood, our kitchen turned into a tiny factory.
 
