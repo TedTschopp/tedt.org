@@ -84,7 +84,6 @@
         }
 
         // --- TOC Card ---
-        let tocAnimationInProgress = false;
 
         function setDisabled(el, disabled){
           if(!el) return;
@@ -128,40 +127,42 @@
               setPressed(legacyBtn, false);
             }
           }
+
+          // Inline TOC button within the TOC card header
+          const inlineBtn = document.getElementById('btnToggleTocInline');
+          if(inlineBtn){
+            setDisabled(inlineBtn, !!disabled);
+            if(!disabled){
+              inlineBtn.setAttribute('aria-pressed', tableOfContentsVisible ? 'true' : 'false');
+              inlineBtn.setAttribute('aria-expanded', tableOfContentsVisible ? 'true' : 'false');
+              inlineBtn.textContent = tableOfContentsVisible ? 'Hide' : 'Show';
+              inlineBtn.title = tableOfContentsVisible ? 'Hide table of contents' : 'Show table of contents';
+              inlineBtn.setAttribute('aria-label', inlineBtn.title);
+            } else {
+              inlineBtn.setAttribute('aria-pressed', 'false');
+              inlineBtn.setAttribute('aria-expanded', 'false');
+              inlineBtn.textContent = 'Show';
+            }
+          }
         }
 
         function applyTocCard(){
           const tocCard = document.getElementById('table-of-contents-card');
+          const tocBody = document.getElementById('insert-table-of-contents-here');
           if(!tocCard){
             applyTocToggleButtons(true);
             return;
           }
+          if(!tocBody){
+            applyTocToggleButtons(true);
+            return;
+          }
           applyTocToggleButtons(false);
-          // Only manage visibility now; layout no longer depends on column width adjustments.
+          // Manage visibility of the TOC content area (keep the header visible).
           if(tableOfContentsVisible){
-            if(tocCard.classList.contains('hidden')){
-              tocCard.classList.remove('hidden','toc-animating-out');
-              tocCard.classList.add('toc-animating-in-start');
-              requestAnimationFrame(()=>{
-                requestAnimationFrame(()=>{
-                  tocCard.classList.remove('toc-animating-in-start');
-                  tocCard.classList.add('toc-animating-in');
-                });
-              });
-              tocAnimationInProgress = true;
-              setTimeout(()=>{
-                tocCard.classList.remove('toc-animating-in');
-                tocAnimationInProgress = false;
-              }, 300);
-            }
-          } else if(!tocAnimationInProgress && !tocCard.classList.contains('hidden')) {
-            tocCard.classList.add('toc-animating-out');
-            tocAnimationInProgress = true;
-            setTimeout(()=>{
-              tocCard.classList.add('hidden');
-              tocCard.classList.remove('toc-animating-out');
-              tocAnimationInProgress = false;
-            }, 280);
+            tocBody.classList.remove('d-none');
+          } else {
+            tocBody.classList.add('d-none');
           }
           // Button UI is managed by applyTocToggleButtons().
         }

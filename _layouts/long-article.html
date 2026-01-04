@@ -154,29 +154,32 @@
                                 <div id="main_content_col" class="col-12">
                                     {% unless page.no_toc == true or page.no_toc == 'true' %}
                                         <aside id="table-of-contents-card" class="mb-3">
-                                            <div class="card h-100 no-padding position-relative">
-                                                <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/table-of-contents.webp" alt="{{ category | default: 'Table of contents' }}" loading="lazy">
-                                                <div class="card-img-overlay d-flex flex-column align-items-start justify-content-start p-0 ps-2 pt-2" style="pointer-events:none;">
-                                                    {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
-                                                    {% assign __toc_slug = __toc_slug | strip %}
-                                                    {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
-                                                    {% assign __toc_entry = site.data.category_registry[__toc_slug] %}
-                                                    {% if __toc_entry and __toc_entry.category_home_page %}
-                                                        {% assign __toc_href = __toc_entry.category_home_page %}
-                                                    {% else %}
-                                                        {% assign __toc_href = '#' %}
-                                                    {% endif %}
-                                                    {% if __toc_href == '#' or __toc_href == '' %}
-                                                        {% assign __toc_final_href = '#' %}
-                                                    {% else %}
-                                                        {% assign __toc_final_href = site.url | append: __toc_href %}
-                                                    {% endif %}
-                                                    <p class="card-title h3 mb-2" style="z-index:2; position:relative; pointer-events:auto;">
-                                                    {%- comment -%} Moved heading to top of image per user request (previously bottom-aligned). {%- endcomment -%}
-                                                    <a class="text-decoration-none" style="pointer-events:auto;" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents</a>
-                                                    </p>
+                                            <div class="card h-100 no-padding">
+                                                {%- comment -%} TOC header (no image) with inline show/hide toggle. {%- endcomment -%}
+                                                <div class="card-body pt-3 pb-2 ps-4 pe-4">
+                                                    <div class="d-flex align-items-center justify-content-between gap-3">
+                                                        {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
+                                                        {% assign __toc_slug = __toc_slug | strip %}
+                                                        {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
+                                                        {% assign __toc_entry = site.data.category_registry[__toc_slug] %}
+                                                        {% if __toc_entry and __toc_entry.category_home_page %}
+                                                            {% assign __toc_href = __toc_entry.category_home_page %}
+                                                        {% else %}
+                                                            {% assign __toc_href = '#' %}
+                                                        {% endif %}
+                                                        {% if __toc_href == '#' or __toc_href == '' %}
+                                                            {% assign __toc_final_href = '#' %}
+                                                        {% else %}
+                                                            {% assign __toc_final_href = site.url | append: __toc_href %}
+                                                        {% endif %}
+
+                                                        <a class="text-decoration-none h3 mb-0" name="Top-of-Table-of-Contents" id="Top-of-Table-of-Contents" href="{{ __toc_final_href }}">Table of Contents</a>
+
+                                                        <button id="btnToggleTocInline" type="button" class="btn btn-sm btn-outline-secondary" onclick="toggleShowTableOfContents()" aria-pressed="true" aria-controls="insert-table-of-contents-here" aria-label="Hide table of contents">Hide</button>
+                                                    </div>
                                                 </div>
-                                                <div class="card-body p-0 ps-4" id="insert-table-of-contents-here"></div>
+
+                                                <div class="card-body pt-0 ps-4" id="insert-table-of-contents-here"></div>
                                             </div>
                                         </aside>
                                     {% endunless %}
