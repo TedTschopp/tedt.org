@@ -13,11 +13,11 @@ tech:
   - HTML
   - CSS
 links:
-  live: "https://tedt.org/The-Password-Challange/"
+  live: "https://the-password-challange.tedt.org"
   repo: "https://github.com/TedTschopp/The-Password-Challange"
   docs: null
   download: null
-image: "/img/projects/password-list.jpg"
+image: "/img/home/password.webp"
 screenshots: []
 features:
   - "Dictionary checks (common passwords / words)"
