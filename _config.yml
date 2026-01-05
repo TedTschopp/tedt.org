@@ -108,8 +108,11 @@ collections:
   GammaWorld:
     output: true
     permalink: /:collection/:title
-# Slides are stored as regular posts under `_posts/Slides/` (see README: Slide Deck Front Matter).
-# Former `slides` collection removed for simplification; templates retain graceful fallback logic.
+  # Slides are stored as regular posts under `_posts/Slides/` (see README: Slide Deck Front Matter).
+  # Former `slides` collection removed for simplification; templates retain graceful fallback logic.
+  tools:
+    output: true
+    permalink: /tools/:name/
 
 # Defaults for different types of posts
 defaults:
@@ -118,6 +121,12 @@ defaults:
     type: "posts"
   values:
     permalink: "/prompts/:slug/"
+- scope:
+    path: ""
+    type: tools
+  values:
+    layout: tool
+    no_toc: true
 
 # =============================================================================
 # AUTHOR REGISTRY

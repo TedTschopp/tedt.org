@@ -1,0 +1,105 @@
+---
+layout: page
+title: Tools
+permalink: /tools/
+no_toc: true
+---
+
+<div class="container my-4 tools-index">
+    <p class="lead">
+        A catalog of the tools, experiments, and little software toys I’ve built.
+    </p>
+
+    {% assign featured = site.tools | where: "featured", true | sort: "title" %}
+    {% assign others = site.tools | where_exp: "t", "t.featured != true" | sort: "last_modified" | reverse %}
+    {% assign tools = featured | concat: others %}
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        {% for tool in tools %}
+        <div class="col">
+            <div class="card h-100">
+                {% if tool.hero_image %}
+                <a href="{{ tool.url | relative_url }}">
+                    <img src="{{ tool.hero_image | relative_url }}" class="card-img-top" alt="{{ tool.title }} thumbnail">
+                </a>
+                {% endif %}
+
+                <div class="card-body">
+                    <h2 class="h5 card-title mb-2">
+                        <a href="{{ tool.url | relative_url }}" class="text-decoration-none">
+                            {{ tool.title }}
+                        </a>
+                    </h2>
+
+                    {% if tool.summary %}
+                    <p class="card-text">{{ tool.summary }}</p>
+                    {% else %}
+                    <p class="card-text">
+                        {{ tool.content | strip_html | truncate: 160 }}
+                    </p>
+                    {% endif %}
+
+                    <div class="d-flex flex-wrap gap-1 mt-2">
+                        {% if tool.status %}
+                        <span class="badge text-bg-secondary">{{ tool.status }}</span>
+                        {% endif %}
+                        {% if tool.tool_type %}
+                        <span class="badge text-bg-light border">{{ tool.tool_type }}</span>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <div class="card-footer d-flex justify-content-between align-items-center gap-2">
+                    <small class="text-body-secondary">
+                        {% if tool.last_modified %}
+                        Updated {{ tool.last_modified | date: "%b %-d, %Y" }}
+                        {% elsif tool.date %}
+                        {{ tool.date | date: "%b %-d, %Y" }}
+                        {% endif %}
+                    </small>
+
+                    <div class="btn-group">
+                        {% if tool.links.live %}
+                        <a class="btn btn-sm btn-primary" href="{{ tool.links.live }}" target="_blank" rel="noopener">
+                            Live
+                        </a>
+                        {% endif %}
+                        {% if tool.links.repo %}
+                        <a class="btn btn-sm btn-outline-secondary" href="{{ tool.links.repo }}" target="_blank" rel="noopener">
+                            Code
+                        </a>
+                        {% endif %}
+                        <a class="btn btn-sm btn-outline-secondary" href="{{ tool.url | relative_url }}">
+                            Details
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    {% comment %}
+    Optional: simple “tag cloud” below (pure Liquid, no JS)
+    {% endcomment %}
+
+    {% assign all_tags = "" | split: "" %}
+    {% for tool in site.tools %}
+    {% if tool.tags %}
+    {% for tag in tool.tags %}
+    {% assign all_tags = all_tags | push: tag %}
+    {% endfor %}
+    {% endif %}
+    {% endfor %}
+    {% assign all_tags = all_tags | uniq | sort %}
+
+    {% if all_tags.size > 0 %}
+    <hr class="my-5">
+    <h2 class="h4">Tags</h2>
+    <div class="d-flex flex-wrap gap-2">
+        {% for tag in all_tags %}
+        <span class="badge text-bg-secondary">{{ tag }}</span>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>

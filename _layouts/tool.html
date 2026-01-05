@@ -1,0 +1,144 @@
+---
+layout: default
+---
+
+<article class="container my-4 tool-detail">
+    <header class="mb-4">
+        <h1 class="mb-2">{{ page.title }}</h1>
+
+        {% if page.summary %}
+        <p class="lead mb-3">{{ page.summary }}</p>
+        {% endif %}
+
+        <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
+            {% if page.status %}
+            <span class="badge rounded-pill text-bg-secondary">
+                {{ page.status | upcase }}
+            </span>
+            {% endif %}
+
+            {% if page.tool_type %}
+            <span class="badge rounded-pill text-bg-light border">
+                {{ page.tool_type }}
+            </span>
+            {% endif %}
+
+            {% if page.last_modified %}
+            <span class="small text-body-secondary">
+                Updated {{ page.last_modified | date: "%B %-d, %Y" }}
+            </span>
+            {% elsif page.date %}
+            <span class="small text-body-secondary">
+                {{ page.date | date: "%B %-d, %Y" }}
+            </span>
+            {% endif %}
+        </div>
+
+        <div class="d-flex flex-wrap gap-2">
+            {% if page.links.live %}
+            <a class="btn btn-primary" href="{{ page.links.live }}" target="_blank" rel="noopener">
+                Open Tool
+            </a>
+            {% endif %}
+
+            {% if page.links.repo %}
+            <a class="btn btn-outline-secondary" href="{{ page.links.repo }}" target="_blank" rel="noopener">
+                Source
+            </a>
+            {% endif %}
+
+            {% if page.links.docs %}
+            <a class="btn btn-outline-secondary" href="{{ page.links.docs }}" target="_blank" rel="noopener">
+                Docs
+            </a>
+            {% endif %}
+
+            {% if page.links.download %}
+            <a class="btn btn-outline-secondary" href="{{ page.links.download }}" target="_blank" rel="noopener">
+                Download
+            </a>
+            {% endif %}
+
+            <a class="btn btn-link" href="{{ '/tools/' | relative_url }}">
+                ← All tools
+            </a>
+        </div>
+    </header>
+
+    {% if page.hero_image %}
+    <figure class="mb-4">
+        <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded" alt="{{ page.title }} hero image">
+    </figure>
+    {% endif %}
+
+    <section class="mb-4">
+        <div class="row g-4">
+            <div class="col-12 col-lg-7">
+                <div class="tool-content">
+                    {{ content }}
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-5">
+                <div class="p-3 border rounded bg-light-subtle">
+                    <h2 class="h5 mb-3">Details</h2>
+
+                    {% if page.tech %}
+                    <div class="mb-3">
+                        <div class="small text-body-secondary">Tech</div>
+                        <ul class="mb-0">
+                            {% for t in page.tech %}
+                            <li>{{ t }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+
+                    {% if page.license %}
+                    <div class="mb-3">
+                        <div class="small text-body-secondary">License</div>
+                        <div>{{ page.license }}</div>
+                    </div>
+                    {% endif %}
+
+                    {% if page.tags %}
+                    <div class="mb-0">
+                        <div class="small text-body-secondary">Tags</div>
+                        <div class="d-flex flex-wrap gap-1 mt-1">
+                            {% for tag in page.tags %}
+                            <span class="badge text-bg-secondary">{{ tag }}</span>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endif %}
+                </div>
+
+                {% if page.features %}
+                <div class="mt-4">
+                    <h2 class="h5">Features</h2>
+                    <ul>
+                        {% for f in page.features %}
+                        <li>{{ f }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+    </section>
+
+    {% if page.screenshots %}
+    <section class="mb-5">
+        <h2 class="h4 mb-3">Screenshots</h2>
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+            {% for shot in page.screenshots %}
+            <div class="col">
+                <a href="{{ shot | relative_url }}">
+                    <img src="{{ shot | relative_url }}" class="img-fluid rounded border" alt="{{ page.title }} screenshot {{ forloop.index }}">
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+</article>
