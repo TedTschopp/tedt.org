@@ -89,8 +89,15 @@
                     {% if _subtitle != '' %}
                       <h2 class="category-subtitle">{{ _subtitle }}</h2>
                     {% endif %}
-                    {% assign category = page.category | downcase | slugify %}
-                    {% assign registry_entry = site.data.category_registry[category] %}
+                    {%- comment -%}
+                      Category pages should use the same selector rules as the homepage category carousel:
+                      match posts by canonical slug, registry title, and any registry raw_names aliases.
+
+                      IMPORTANT: do not derive registry lookup from `page.category | slugify`.
+                      Many categories have canonical slugs that differ from the slugified title (e.g. AI).
+                    {%- endcomment -%}
+                    {% assign category = __cat_slug %}
+                    {% assign registry_entry = __cat_entry %}
                     {%- capture __category_wrapper_style -%}{% include utility/category-theme-inline-style.html entry=registry_entry %}{%- endcapture -%}
                     {% assign __category_wrapper_style = __category_wrapper_style | strip %}
                     {% if registry_entry and registry_entry.image %}
@@ -98,7 +105,7 @@
                     {% else %}
                       {% assign image_path = '/img/categories/' | append: category | append: '.webp' %}
                     {% endif %}
-            <figure class="category-theme" data-category="{{ page.category }}" data-cat="{{ category }}"{% if __category_wrapper_style != '' %} style="{{ __category_wrapper_style }}"{% endif %}>
+            <figure class="category-theme" data-category="{{ registry_entry.title | default: page.category }}" data-cat="{{ category }}"{% if __category_wrapper_style != '' %} style="{{ __category_wrapper_style }}"{% endif %}>
             <img class="img-responsive img-thumbnail" src="{{ site.url }}{{ image_path }}" alt="{{ registry_entry.title | default: page.category }}">
           </figure>
                     <!-- Determine description: prefer registry entry, fall back to page.description, then excerpt, then stripped content -->
@@ -116,24 +123,81 @@
                     {% endif %}
 
                     <span class="e-content" id="main_content">
-                      {% assign primary_category = page.category %}
-                      {% assign posts_arr = site.categories[primary_category] %}
-                      {% if registry_entry %}
-                        {% if posts_arr == nil or posts_arr == empty %}
-                          {% if registry_entry.title %}
-                            {% assign posts_arr = site.categories[registry_entry.title] | default: posts_arr %}
-                          {% endif %}
-                          {% if posts_arr == nil or posts_arr == empty %}
-                            {% if registry_entry.raw_names %}
-                              {% for variant in registry_entry.raw_names %}
-                                {% if site.categories[variant] and site.categories[variant] != empty %}
-                                  {% assign posts_arr = site.categories[variant] %}
-                                  {% break %}
-                                {% endif %}
-                              {% endfor %}
+                      {%- comment -%}
+                        Build a unified post list across all category variants (page.category, canonical slug,
+                        registry title, and raw_names), then sort newest-first and de-dupe by URL.
+                      {%- endcomment -%}
+                      {% assign __variant_keys = '' | split: '' %}
+                      {% if page.category and page.category != '' %}
+                        {% assign __variant_keys = __variant_keys | push: page.category %}
+                      {% endif %}
+                      {% if category and category != '' %}
+                        {% assign __variant_keys = __variant_keys | push: category %}
+                      {% endif %}
+                      {% if registry_entry and registry_entry.title and registry_entry.title != '' %}
+                        {% assign __variant_keys = __variant_keys | push: registry_entry.title %}
+                      {% endif %}
+                      {% if registry_entry and registry_entry.raw_names %}
+                        {% if registry_entry.raw_names.first %}
+                          {% for rn in registry_entry.raw_names %}
+                            {% if rn and rn != '' %}
+                              {% assign __variant_keys = __variant_keys | push: rn %}
+                            {% endif %}
+                          {% endfor %}
+                        {% else %}
+                          {% assign __variant_keys = __variant_keys | push: registry_entry.raw_names %}
+                        {% endif %}
+                      {% endif %}
+
+                      {% assign __posts_union = '' | split: '' %}
+                      {% for k in __variant_keys %}
+                        {% assign _arr = site.categories[k] %}
+                        {% if _arr and _arr != empty %}
+                          {% for p in _arr %}
+                            {% assign __posts_union = __posts_union | push: p %}
+                          {% endfor %}
+                        {% endif %}
+                      {% endfor %}
+
+                      {% assign __posts_union = __posts_union | safe_sort: 'date' | reverse %}
+                      {% assign posts_arr = '' | split: '' %}
+                      {% assign __seen_urls = '' | split: '' %}
+                      {% for p in __posts_union %}
+                        {% if __seen_urls contains p.url %}{% continue %}{% endif %}
+                        {% assign __seen_urls = __seen_urls | push: p.url %}
+                        {% assign posts_arr = posts_arr | push: p %}
+                      {% endfor %}
+
+                      {%- comment -%}
+                        Fallback: if we somehow didn't resolve via site.categories (rare), scan posts
+                        using the same matching rules as the homepage carousel.
+                      {%- endcomment -%}
+                      {% if (posts_arr == nil or posts_arr == empty) and registry_entry %}
+                        {% assign __scan = site.posts | safe_sort: 'date' | reverse %}
+                        {% for p in __scan %}
+                          {% assign post_match = false %}
+                          {% if p.categories %}
+                            {% if registry_entry.title and p.categories contains registry_entry.title %}
+                              {% assign post_match = true %}
+                            {% endif %}
+                            {% if post_match == false and category and p.categories contains category %}
+                              {% assign post_match = true %}
+                            {% endif %}
+                            {% if post_match == false and registry_entry.raw_names %}
+                              {% if registry_entry.raw_names.first %}
+                                {% for rn in registry_entry.raw_names %}
+                                  {% if p.categories contains rn %}{% assign post_match = true %}{% break %}{% endif %}
+                                {% endfor %}
+                              {% else %}
+                                {% if p.categories contains registry_entry.raw_names %}{% assign post_match = true %}{% endif %}
+                              {% endif %}
                             {% endif %}
                           {% endif %}
-                        {% endif %}
+                          {% unless post_match %}{% continue %}{% endunless %}
+                          {% if __seen_urls contains p.url %}{% continue %}{% endif %}
+                          {% assign __seen_urls = __seen_urls | push: p.url %}
+                          {% assign posts_arr = posts_arr | push: p %}
+                        {% endfor %}
                       {% endif %}
                       <ol class="list-unstyled" aria-label="Posts in category {{ page.category }}">
                         {% for post in posts_arr %}
