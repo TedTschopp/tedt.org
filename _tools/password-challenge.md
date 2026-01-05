@@ -1,6 +1,7 @@
 ---
 title: "The Password Challenge"
 summary: "Password entropy + time-to-crack estimator with common-password checks."
+subtitle: "Password entropy + time-to-crack estimator with common-password checks."
 status: archived
 tool_type: webapp
 date: 2012-10-24
@@ -16,7 +17,7 @@ links:
   repo: "https://github.com/TedTschopp/The-Password-Challange"
   docs: null
   download: null
-hero_image: "/img/projects/password-list.jpg"
+image: "/img/projects/password-list.jpg"
 screenshots: []
 features:
   - "Dictionary checks (common passwords / words)"

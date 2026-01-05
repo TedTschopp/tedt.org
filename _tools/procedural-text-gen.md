@@ -1,6 +1,7 @@
 ---
 title: "Tool Name"                 # required
 summary: "One-sentence description" # required (used on cards)
+subtitle: "One-sentence description" # used by long-article hero
 status: active                      # active | maintained | prototype | archived
 tool_type: webapp                   # webapp | cli | bot | library | script | game | dataset
 date: 2025-01-05                    # “created / published”
@@ -19,7 +20,7 @@ links:                              # optional: any/all can be null/omitted
   docs: "https://example.com/docs"
   download: null
 
-hero_image: "/img/tools/hero.png"   # optional (site-relative)
+image: "/img/tools/hero.png"        # optional (site-relative)
 screenshots:                        # optional
   - "/img/tools/screen1.png"
   - "/img/tools/screen2.png"

@@ -18,9 +18,10 @@ no_toc: true
         {% for tool in tools %}
         <div class="col">
             <div class="card h-100">
-                {% if tool.hero_image %}
+                {% assign thumb = tool.image | default: tool.hero_image %}
+                {% if thumb %}
                 <a href="{{ tool.url | relative_url }}">
-                    <img src="{{ tool.hero_image | relative_url }}" class="card-img-top" alt="{{ tool.title }} thumbnail">
+                    <img src="{{ thumb | relative_url }}" class="card-img-top" alt="{{ tool.title }} thumbnail">
                 </a>
                 {% endif %}
 
