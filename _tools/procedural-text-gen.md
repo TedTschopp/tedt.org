@@ -20,10 +20,17 @@ links:                              # optional: any/all can be null/omitted
   docs: "https://example.com/docs"
   download: null
 
-image: "/img/tools/hero.png"        # optional (site-relative)
+image: "/img/404/404-1.webp"        # optional (site-relative)
+image_hero: "/img/404/404-2.webp"   # optional (site-relative, overrides image for hero)
 screenshots:                        # optional
-  - "/img/tools/screen1.png"
-  - "/img/tools/screen2.png"
+  - "/img/404/404-3.webp"
+  - "/img/404/404-4.webp"
+  - "/img/404/404-5.webp"
+  - "/img/404/404-6.webp"
+  - "/img/404/404-7.webp"
+  - "/img/404/404-8.webp"
+  - "/img/404/404-9.webp"
+  - "/img/404/404-10.webp"
 
 features:                           # optional
   - "Feature 1"

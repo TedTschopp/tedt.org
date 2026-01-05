@@ -18,6 +18,8 @@ links:
   docs: null
   download: null
 image: "/img/home/password.webp"
+image_hero: "/img/home/password.webp"
+
 screenshots: []
 features:
   - "Dictionary checks (common passwords / words)"
