@@ -17,6 +17,7 @@ links:
   docs: null
   download: null
 hero_image: "/img/projects/password-list.jpg"
+screenshots: []
 features:
   - "Dictionary checks (common passwords / words)"
   - "Entropy + complexity scoring"
