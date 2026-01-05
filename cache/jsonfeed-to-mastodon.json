@@ -3366,5 +3366,36 @@
       "https://tschopp.net/users/Ted/statuses/115839224002418656"
     ],
     "lastTootTimestamp": 1767566284308
+  },
+  "https://tedt.org/Make-AI-Boring/": {
+    "id": "/Make-AI-Boring/",
+    "title": "Making AI Boring on Purpose",
+    "summary": "AI doesn’t create discipline—it amplifies what already exists. To get predictable cost, trustworthy outcomes, and sustainable speed, organizations must lead with value, design for quality, and only then pursue scale.",
+    "content_text": "AI doesn’t create discipline—it amplifies what already exists. To get predictable cost, trustworthy outcomes, and sustainable speed, organizations must lead with value, design for quality, and only then pursue scale. https://tedt.org/Make-AI-Boring/",
+    "url": "https://tedt.org/Make-AI-Boring/",
+    "image": "https://tedt.org/img/AI/Make-AI-Boring.webp",
+    "tags": [
+      "ai strategy",
+      "enterprise ai",
+      "standard work",
+      "lean",
+      "governance",
+      "cost control",
+      "quality",
+      "scalability",
+      "finops",
+      "operating model"
+    ],
+    "date_published": "2026-01-04T14:00:00-08:00",
+    "date_modified": "2026-01-04T14:00:00-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115840028500228469"
+    ],
+    "lastTootTimestamp": 1767578559960
   }
 }
