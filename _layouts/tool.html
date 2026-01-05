@@ -65,9 +65,20 @@ layout: long-article
         </div>
     </header>
 
-    {% if page.hero_image %}
+    {% assign hero_image = page.hero_image | to_s | strip %}
+    {% if hero_image == "" %}
+        {% assign fallback_404_images = site.static_files | where_exp: "f", "f.path contains '/img/404/'" | where_exp: "f", "f.extname == '.webp'" %}
+        {% assign fallback_404_image = fallback_404_images | sample %}
+        {% if fallback_404_image %}
+            {% assign hero_image = fallback_404_image.path %}
+        {% endif %}
+    {% endif %}
+
+    {% if hero_image != "" %}
     <figure class="mb-4">
-        <img src="{{ page.hero_image | relative_url }}" class="img-fluid rounded" alt="{{ page.title }} hero image">
+        <div class="ratio ratio-3x1 rounded overflow-hidden">
+            <img src="{{ hero_image | relative_url }}" class="w-100 h-100 object-fit-cover" alt="{{ page.title }} hero image">
+        </div>
     </figure>
     {% endif %}
 

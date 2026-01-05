@@ -13,7 +13,7 @@ tech:
   - HTML
   - CSS
 links:
-  live: "https://the-password-challange.tedt.org"
+  live: "https://tedtschopp.github.io/The-Password-Challange/"
   repo: "https://github.com/TedTschopp/The-Password-Challange"
   docs: null
   download: null
