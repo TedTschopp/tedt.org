@@ -217,7 +217,7 @@
             button[aria-pressed="false"].text-bg-secondary:hover {
                 background-color: var(--bs-secondary) !important;
                 filter: brightness(1.25);
-                color: var(--bs-light) !important;
+                color: var(--bs-nav-link-color) !important;
                 z-index: 2; /* prevent overlap visual bleed into neighbor */
             }
             button[aria-pressed="true"].text-bg-secondary:hover {
@@ -232,7 +232,7 @@
             align-items: center;
             gap: 2px;
             padding: 2px;
-            border: 2px solid var(--bs-white);
+            border: 2px solid var(--bs-nav-link-color);
             border-radius: var(--bs-border-radius-pill);
             background: transparent;
             /* Keep visible regardless of surrounding background */
