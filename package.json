@@ -5,12 +5,12 @@
   "description": "Playwright + axe-core a11y audits for tedt.org",
   "scripts": {
     "test:a11y": "playwright test tests/a11y --reporter=list",
-    "test:a11y:allure": "node tools/run-playwright-a11y-allure.mjs",
-    "allure:clean": "node tools/clean-allure.mjs",
+    "test:a11y:allure": "node scripts/run-playwright-a11y-allure.mjs",
+    "allure:clean": "node scripts/clean-allure.mjs",
     "allure:generate": "npx allure generate reports/allure/allure-results -o reports/allure/latest --clean",
     "allure:open": "npx allure open reports/allure/latest",
     "lint:css:overrides": "stylelint \"_sass/_overrides-*.scss\" \"css/*-overrides.css\"",
-    "lint:js": "node tools/check-js-syntax.mjs",
+    "lint:js": "node scripts/check-js-syntax.mjs",
     "lint:md": "markdownlint-cli2"
   },
   "devDependencies": {

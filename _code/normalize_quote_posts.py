@@ -21,6 +21,7 @@ Assumptions:
 """
 
 from __future__ import annotations
+
 import re
 from pathlib import Path
 
@@ -33,10 +34,12 @@ DATE_RE_YM = re.compile(r'^(?P<y>\d{4})-(?P<m>\d{2})$')
 DATE_RE_YEAR = re.compile(r'^(?P<y>-?\d{1,4})$')
 CENTURY_RE = re.compile(r'\bcentury\b', re.IGNORECASE)
 
+
 def normalize_date(raw: str) -> tuple[str | None, str | None]:
     """Return (normalized_date, original_date_if_added) or (None, None) if skip.
     Skip if blank, contains 'century', or has non-supported pattern.
     """
+
     value = raw.strip()
     if not value:
         return None, None
@@ -58,12 +61,14 @@ def normalize_date(raw: str) -> tuple[str | None, str | None]:
         return f"{y}-01-01", orig
     return None, None
 
+
 def collapse_initials(slug: str) -> str:
     # Remove periods from sequences like C.S.-Lewis -> CS-Lewis (keep hyphens)
     new = slug.replace('.', '')
     # Collapse multiple hyphens
     new = re.sub(r'-{2,}', '-', new)
     return new
+
 
 def parse_front_matter(text: str):
     if not text.startswith('---'):
@@ -77,15 +82,22 @@ def parse_front_matter(text: str):
     if fm_end_idx is None:
         return None, None, None
     fm_lines = parts[1:fm_end_idx]
-    body = '\n'.join(parts[fm_end_idx+1:])
+    body = '\n'.join(parts[fm_end_idx + 1 :])
     return fm_lines, fm_end_idx, body
 
-def update_front_matter(lines: list[str], normalized_date: str, original_date: str | None, old_slug: str, new_slug: str, add_redirect: bool) -> list[str]:
+
+def update_front_matter(
+    lines: list[str],
+    normalized_date: str,
+    original_date: str | None,
+    old_slug: str,
+    new_slug: str,
+    add_redirect: bool,
+) -> list[str]:
     out = []
-    inserted_redirect = False
     have_redirect = False
     have_original_date = any(l.startswith('original-date:') for l in lines)
-    for i, line in enumerate(lines):
+    for line in lines:
         if line.startswith('date:'):
             out.append(f'date: {normalized_date}')
             if original_date and not have_original_date:
@@ -95,18 +107,19 @@ def update_front_matter(lines: list[str], normalized_date: str, original_date: s
             out.append(line)
         else:
             out.append(line)
-        # After categories/tags block or before end, we can inject redirect if needed
+
     if add_redirect:
         if not have_redirect:
             out.append('redirect_from:')
             out.append(f'  - /{old_slug}/')
-            inserted_redirect = True
         else:
             # append if not already present
             key = f'  - /{old_slug}/'
             if key not in out:
                 out.append(key)
+
     return out
+
 
 def main():
     changed = 0
@@ -116,35 +129,51 @@ def main():
             continue
         if PHASE2 in path.parents:
             continue
+
         original_name = path.name
         slug = original_name[:-3]  # drop .md
+
         # If already has date prefix (YYYY-MM-DD-)
         m = re.match(r'^(\d{4}-\d{2}-\d{2})-(.+)$', slug)
         if m:
             current_slug_part = m.group(2)
         else:
             current_slug_part = slug
+
         text = path.read_text(encoding='utf-8')
-        fm_lines, fm_end_idx, body = parse_front_matter(text)
+        fm_lines, _fm_end_idx, body = parse_front_matter(text)
         if fm_lines is None:
             continue
+
         # Extract date line
         raw_date = ''
         for l in fm_lines:
             if l.startswith('date:'):
                 raw_date = l.split(':', 1)[1].strip()
                 break
+
         normalized_date, original_date = normalize_date(raw_date)
         if normalized_date is None:
             skipped += 1
             continue
+
         # slug normalization (remove periods)
         new_slug_part = collapse_initials(current_slug_part)
         slug_changed = new_slug_part != current_slug_part
+
         new_filename = f'{normalized_date}-{new_slug_part}.md'
         add_redirect = slug_changed or not m  # always add redirect when adding date prefix
-        new_fm_lines = update_front_matter(fm_lines, normalized_date, original_date, current_slug_part, new_slug_part, add_redirect)
+
+        new_fm_lines = update_front_matter(
+            fm_lines,
+            normalized_date,
+            original_date,
+            current_slug_part,
+            new_slug_part,
+            add_redirect,
+        )
         new_content = '---\n' + '\n'.join(new_fm_lines) + '\n---\n' + body.lstrip()
+
         # Write to new file path (avoid overwrite if same)
         target_path = path.with_name(new_filename)
         if target_path != path:
@@ -152,8 +181,11 @@ def main():
             path.unlink()
         else:
             path.write_text(new_content, encoding='utf-8')
+
         changed += 1
+
     print(f'Changed: {changed}, Skipped (phase2/century/blank): {skipped}')
+
 
 if __name__ == '__main__':
     main()
