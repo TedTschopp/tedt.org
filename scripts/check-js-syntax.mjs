@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { readdirSync, statSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 
 const IGNORE = [
@@ -19,6 +19,17 @@ function isIgnored(path) {
   return IGNORE.some((re) => re.test(path));
 }
 
+function hasJekyllFrontMatter(path) {
+  // Jekyll allows front matter in any file to enable Liquid processing.
+  // Those sources are not valid JavaScript until rendered by Jekyll.
+  try {
+    const head = readFileSync(path, { encoding: 'utf8' }).slice(0, 2048);
+    return head.startsWith('---\n') || head.startsWith('---\r\n');
+  } catch {
+    return false;
+  }
+}
+
 function walk(path, out) {
   const st = statSync(path);
   if (st.isDirectory()) {
@@ -30,6 +41,7 @@ function walk(path, out) {
   if (!st.isFile()) return;
   if (!path.endsWith('.js') && !path.endsWith('.mjs')) return;
   if (isIgnored(path)) return;
+  if (hasJekyllFrontMatter(path)) return;
   out.push(path);
 }
 
