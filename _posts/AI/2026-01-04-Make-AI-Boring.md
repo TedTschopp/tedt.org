@@ -200,6 +200,7 @@ teams innovate in how they use AI to get results.**
 | **Agent Behavior Rules**    | Safety rules, escalation rules, what it must never do                         | **Tight**                 | Ensures consistent behavior under pressure—especially in field, outage, and customer scenarios |
 | **Prompts and Workflows**   | Team-specific instructions and workflows                                      | **Loose**                 | Enables local optimization without rewriting the platform                                      |
 | **Use Cases and Outcomes**  | Which problems we solve and what success looks like                           | **Business-owned**        | Keeps AI tied to **results** (cost, reliability, safety, customer experience)                  |
+{: .well .table}
 
 The one-sentence policy:
 
