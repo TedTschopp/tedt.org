@@ -72,6 +72,8 @@ mastodon-post-id:
 
 ---
 
+{% include components/video-player.html id="NYkpWyJMmaM" label="Video Summary" description="Watch a video summary of the key concepts in this section article." %}
+
 {% include components/audio-player.html src="/media/audio/Making-AI-Adoption-Predictable-and-Boring-on-Purpose.m4a" label="Audio Summary" description="AI scales what already exists. If you want predictable cost, trustworthy outcomes, and real speed, you have to make it boring on purpose: value first, quality next, speed last." %}
 
 A couple years ago, on a gray Saturday with that familiar coastal marine layer hanging over the neighborhood, our kitchen turned into a tiny factory.
