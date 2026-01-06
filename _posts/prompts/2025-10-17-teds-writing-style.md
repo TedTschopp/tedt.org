@@ -48,7 +48,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/prompts/Teds-Writing-Style.webp
+image: /img/prompts/teds-writing-style.webp
 image-alt: "A solitary figure walks along a river path toward distant buildings, rendered in fine architectural linework with handwritten notes and grid marks, as if the scene were both a memory and a blueprint."
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
