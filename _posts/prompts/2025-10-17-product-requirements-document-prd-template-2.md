@@ -1584,12 +1584,6 @@ This prompt is designed for professional architecture product requirements docum
 4. **Provide your specific input** as requested by the prompt
 5. **Review and iterate** on the generated output as needed
 
-## Prompt Preview
-
-```
-*This template is intended for internal IT software products at an electric utility, following Agile best practices (with flexibility for some Waterfall processes). A PRD is a guide that defines a pro...
-```
-
 ## Best Practices
 
 - Read through the entire prompt before using to understand its requirements

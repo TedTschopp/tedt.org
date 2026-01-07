@@ -818,12 +818,6 @@ This prompt is designed for professional architecture product requirements docum
 4. **Provide your specific input** as requested by the prompt
 5. **Review and iterate** on the generated output as needed
 
-## Prompt Preview
-
-```
-**Note:** This template is designed for internal IT software products built on Microsoft Power Platform (e.g. Power Apps, Power Automate, DataVerse). It is intended to be used by both IT teams and Bus...
-```
-
 ## Best Practices
 
 - Read through the entire prompt before using to understand its requirements

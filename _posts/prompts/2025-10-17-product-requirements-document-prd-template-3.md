@@ -1,15 +1,15 @@
 ---
 layout: prompt-details
 
-title: "Architecture Product Requirements Document (PRD) Template 2"
+title: "Architecture Product Requirements Document (PRD) Template 3"
 subtitle: "Enterprise Architecture and Requirements Engineering"
 quote: ""
-excerpt: "A specialized prompt for architecture product requirements document (prd) template 2 with advanced AI capabilities and structured output formatting."
+excerpt: "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting."
 source: "Original Content"
 source-url: ""
 call-to-action: ""
 
-date: 2025-10-17
+date: 2025-12-07
 update:
 author:
     avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -1583,12 +1583,6 @@ This prompt is designed for professional architecture product requirements docum
 3. **Paste into your AI tool** (ChatGPT, Claude, Copilot, etc.)
 4. **Provide your specific input** as requested by the prompt
 5. **Review and iterate** on the generated output as needed
-
-## Prompt Preview
-
-```
-*This template is intended for internal IT software products at an electric utility, following Agile best practices (with flexibility for some Waterfall processes). A PRD is a guide that defines a pro...
-```
 
 ## Best Practices
 
