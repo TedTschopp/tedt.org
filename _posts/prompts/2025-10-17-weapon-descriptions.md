@@ -42,7 +42,6 @@ keywords:
   - prompt engineering
   - RPG tools
   - tabletop gaming
-  - TTRPG
 location:
     name: Bradbury, CA
 coordinates:

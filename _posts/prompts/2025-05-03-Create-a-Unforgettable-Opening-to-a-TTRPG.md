@@ -18,7 +18,6 @@ author:
   url: https://tedt.org/
 date: 2025-05-03
 keywords:
-- TTRPG
 - RPG tools
 - tabletop gaming
 - worldbuilding
