@@ -3021,7 +3021,7 @@
     "summary": "A specialized prompt for communications [ted's writing style] with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for communications [ted's writing style] with advanced AI capabilities and structured output formatting. https://tedt.org/teds-writing-style/",
     "url": "https://tedt.org/teds-writing-style/",
-    "image": "https://tedt.org/img/prompts/Teds-Writing-Style.webp",
+    "image": "https://tedt.org/img/prompts/teds-writing-style.webp",
     "tags": [
       "Writing",
       "Content Creation",
@@ -3397,5 +3397,28 @@
       "https://tschopp.net/users/Ted/statuses/115840028500228469"
     ],
     "lastTootTimestamp": 1767578559960
+  },
+  "https://tedt.org/product-requirements-document-prd-template-3/": {
+    "id": "/product-requirements-document-prd-template-3/",
+    "title": "Architecture Product Requirements Document (PRD) Template 3",
+    "summary": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting.",
+    "content_text": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting. https://tedt.org/product-requirements-document-prd-template-3/",
+    "url": "https://tedt.org/product-requirements-document-prd-template-3/",
+    "tags": [
+      "Product Management",
+      "Requirements Engineering",
+      "Documentation"
+    ],
+    "date_published": "2025-12-07T00:00:00-08:00",
+    "date_modified": "2025-12-07T00:00:00-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115856979176643344"
+    ],
+    "lastTootTimestamp": 1767837206807
   }
 }
