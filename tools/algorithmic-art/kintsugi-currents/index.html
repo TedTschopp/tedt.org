@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<!--
+    THIS IS A TEMPLATE THAT SHOULD BE USED EVERY TIME AND MODIFIED.
+    WHAT TO KEEP:
+    ✓ Overall structure (header, sidebar, main content)
+    ✓ Anthropic branding (colors, fonts, layout)
+    ✓ Seed navigation section (always include this)
+    ✓ Self-contained artifact (everything inline)
+
+    WHAT TO CREATIVELY EDIT:
+    ✗ The p5.js algorithm (implement YOUR vision)
+    ✗ The parameters (define what YOUR art needs)
+    ✗ The UI controls (match YOUR parameters)
+
+    Let your philosophy guide the implementation.
+    The world is your oyster - be creative!
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kintsugi Currents — Generative Art Viewer</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.7.0/p5.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Anthropic Brand Colors */
+        :root {
+            --anthropic-dark: #141413;
+            --anthropic-light: #faf9f5;
+            --anthropic-mid-gray: #b0aea5;
+            --anthropic-light-gray: #e8e6dc;
+            --anthropic-orange: #d97757;
+            --anthropic-blue: #6a9bcc;
+            --anthropic-green: #788c5d;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, var(--anthropic-light) 0%, #f5f3ee 100%);
+            min-height: 100vh;
+            color: var(--anthropic-dark);
+        }
+
+        .container {
+            display: flex;
+            min-height: 100vh;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 320px;
+            flex-shrink: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 24px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(20, 20, 19, 0.1);
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .sidebar h1 {
+            font-family: 'Lora', serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: var(--anthropic-dark);
+            margin-bottom: 8px;
+        }
+
+        .sidebar .subtitle {
+            color: var(--anthropic-mid-gray);
+            font-size: 14px;
+            margin-bottom: 32px;
+            line-height: 1.4;
+        }
+
+        /* Control Sections */
+        .control-section {
+            margin-bottom: 32px;
+        }
+
+        .control-section h3 {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--anthropic-dark);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .control-section h3::before {
+            content: '•';
+            color: var(--anthropic-orange);
+            font-weight: bold;
+        }
+
+        /* Seed Controls */
+        .seed-input {
+            width: 100%;
+            background: var(--anthropic-light);
+            padding: 12px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            margin-bottom: 12px;
+            border: 1px solid var(--anthropic-light-gray);
+            text-align: center;
+        }
+
+        .seed-input:focus {
+            outline: none;
+            border-color: var(--anthropic-orange);
+            box-shadow: 0 0 0 2px rgba(217, 119, 87, 0.1);
+            background: white;
+        }
+
+        .seed-controls {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        .regen-button {
+            margin-bottom: 0;
+        }
+
+        /* Parameter Controls */
+        .control-group {
+            margin-bottom: 20px;
+        }
+
+        .control-group label {
+            display: block;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--anthropic-dark);
+            margin-bottom: 8px;
+        }
+
+        .slider-container {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .slider-container input[type="range"] {
+            flex: 1;
+            height: 4px;
+            background: var(--anthropic-light-gray);
+            border-radius: 2px;
+            outline: none;
+            -webkit-appearance: none;
+        }
+
+        .slider-container input[type="range"]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            width: 16px;
+            height: 16px;
+            background: var(--anthropic-orange);
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .slider-container input[type="range"]::-webkit-slider-thumb:hover {
+            transform: scale(1.1);
+            background: #c86641;
+        }
+
+        .slider-container input[type="range"]::-moz-range-thumb {
+            width: 16px;
+            height: 16px;
+            background: var(--anthropic-orange);
+            border-radius: 50%;
+            border: none;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .value-display {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: var(--anthropic-mid-gray);
+            min-width: 60px;
+            text-align: right;
+        }
+
+        /* Color Pickers */
+        .color-group {
+            margin-bottom: 16px;
+        }
+
+        .color-group label {
+            display: block;
+            font-size: 12px;
+            color: var(--anthropic-mid-gray);
+            margin-bottom: 4px;
+        }
+
+        .color-picker-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .color-picker-container input[type="color"] {
+            width: 32px;
+            height: 32px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            background: none;
+            padding: 0;
+        }
+
+        .color-value {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: var(--anthropic-mid-gray);
+        }
+
+        /* Buttons */
+        .button {
+            background: var(--anthropic-orange);
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 6px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            width: 100%;
+        }
+
+        .button:hover {
+            background: #c86641;
+            transform: translateY(-1px);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .button.secondary {
+            background: var(--anthropic-blue);
+        }
+
+        .button.secondary:hover {
+            background: #5a8bb8;
+        }
+
+        .button.tertiary {
+            background: var(--anthropic-green);
+        }
+
+        .button.tertiary:hover {
+            background: #6b7b52;
+        }
+
+        .button-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        .button-row .button {
+            flex: 1;
+        }
+
+        /* Canvas Area */
+        .canvas-area {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 0;
+        }
+
+        #canvas-container {
+            width: 100%;
+            max-width: 1000px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(20, 20, 19, 0.1);
+            background: white;
+        }
+
+        #canvas-container canvas {
+            display: block;
+            width: 100% !important;
+            height: auto !important;
+        }
+
+        /* Loading State */
+        .loading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            color: var(--anthropic-mid-gray);
+        }
+
+        /* Responsive - Stack on mobile */
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .canvas-area {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Control Sidebar -->
+        <div class="sidebar">
+            <!-- Headers (CUSTOMIZE THIS FOR YOUR ART) -->
+            <h1>Kintsugi Currents</h1>
+            <div class="subtitle">A curl-noise field where fractures become seams: particles stitch turbulence into calm, repeatable with a seed.</div>
+
+            <!-- Seed Section (ALWAYS KEEP THIS) -->
+            <div class="control-section">
+                <h3>Seed</h3>
+                <input type="number" id="seed-input" class="seed-input" value="12345" onchange="updateSeed()">
+                <div class="seed-controls">
+                    <button class="button secondary" onclick="previousSeed()">← Prev</button>
+                    <button class="button secondary" onclick="nextSeed()">Next →</button>
+                </div>
+                <button class="button tertiary regen-button" onclick="randomSeedAndUpdate()">↻ Random</button>
+            </div>
+
+            <!-- Parameters Section (CUSTOMIZE THIS FOR YOUR ART) -->
+            <div class="control-section">
+                <h3>Parameters</h3>
+
+                <!-- Particle Count -->
+                <div class="control-group">
+                    <label>Particle Count</label>
+                    <div class="slider-container">
+                        <input type="range" id="particleCount" min="1500" max="12000" step="500" value="6500" oninput="updateParam('particleCount', this.value)">
+                        <span class="value-display" id="particleCount-value">6500</span>
+                    </div>
+                </div>
+
+                <!-- Step Size -->
+                <div class="control-group">
+                    <label>Step Size</label>
+                    <div class="slider-container">
+                        <input type="range" id="stepSize" min="0.25" max="2.5" step="0.05" value="1.1" oninput="updateParam('stepSize', this.value)">
+                        <span class="value-display" id="stepSize-value">1.1</span>
+                    </div>
+                </div>
+
+                <!-- Field Scale -->
+                <div class="control-group">
+                    <label>Field Scale</label>
+                    <div class="slider-container">
+                        <input type="range" id="fieldScale" min="0.001" max="0.02" step="0.001" value="0.006" oninput="updateParam('fieldScale', this.value)">
+                        <span class="value-display" id="fieldScale-value">0.006</span>
+                    </div>
+                </div>
+
+                <!-- Vorticity -->
+                <div class="control-group">
+                    <label>Vorticity</label>
+                    <div class="slider-container">
+                        <input type="range" id="vorticity" min="0.2" max="2.2" step="0.05" value="1.25" oninput="updateParam('vorticity', this.value)">
+                        <span class="value-display" id="vorticity-value">1.25</span>
+                    </div>
+                </div>
+
+                <!-- Fade -->
+                <div class="control-group">
+                    <label>Fade (lower = more accumulation)</label>
+                    <div class="slider-container">
+                        <input type="range" id="fade" min="0" max="30" step="1" value="6" oninput="updateParam('fade', this.value)">
+                        <span class="value-display" id="fade-value">6</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Colors Section (OPTIONAL - CUSTOMIZE OR REMOVE) -->
+            <div class="control-section">
+                <h3>Colors</h3>
+
+                <div class="color-group">
+                    <label>Seam</label>
+                    <div class="color-picker-container">
+                        <input type="color" id="color1" value="#d97757" onchange="updateColor('color1', this.value)">
+                        <span class="color-value" id="color1-value">#d97757</span>
+                    </div>
+                </div>
+
+                <div class="color-group">
+                    <label>Current</label>
+                    <div class="color-picker-container">
+                        <input type="color" id="color2" value="#6a9bcc" onchange="updateColor('color2', this.value)">
+                        <span class="color-value" id="color2-value">#6a9bcc</span>
+                    </div>
+                </div>
+
+                <div class="color-group">
+                    <label>Moss</label>
+                    <div class="color-picker-container">
+                        <input type="color" id="color3" value="#788c5d" onchange="updateColor('color3', this.value)">
+                        <span class="color-value" id="color3-value">#788c5d</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actions Section (ALWAYS KEEP THIS) -->
+            <div class="control-section">
+                <h3>Actions</h3>
+                <div class="button-row" style="margin-bottom: 8px;">
+                    <button class="button" onclick="resetParameters()">Reset</button>
+                    <button class="button secondary" onclick="togglePause()" id="pause-btn">Pause</button>
+                </div>
+                <div class="button-row">
+                    <button class="button tertiary" onclick="exportPNG()">Export PNG</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Canvas Area -->
+        <div class="canvas-area">
+            <div id="canvas-container">
+                <div class="loading">Initializing generative art...</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ═══════════════════════════════════════════════════════════════════════
+        // GENERATIVE ART PARAMETERS - CUSTOMIZE FOR YOUR ALGORITHM
+        // ═══════════════════════════════════════════════════════════════════════
+
+        let params = {
+            seed: 12345,
+            particleCount: 6500,
+            stepSize: 1.1,
+            fieldScale: 0.006,
+            vorticity: 1.25,
+            fade: 6,
+            colorPalette: ['#d97757', '#6a9bcc', '#788c5d']
+        };
+
+        let defaultParams = { ...params }; // Store defaults for reset
+
+        // ═══════════════════════════════════════════════════════════════════════
+        // P5.JS GENERATIVE ART ALGORITHM - REPLACE WITH YOUR VISION
+        // ═══════════════════════════════════════════════════════════════════════
+
+        let particles = [];
+        let cols, rows;
+        let scl = 10; // Flow field resolution
+
+        let paused = false;
+        let bg;
+
+        function setup() {
+            let canvas = createCanvas(1200, 1200);
+            canvas.parent('canvas-container');
+
+            pixelDensity(2);
+            bg = color(250, 249, 245);
+
+            initializeSystem();
+
+            // Remove loading message
+            document.querySelector('.loading').style.display = 'none';
+        }
+
+        function initializeSystem() {
+            // Seed the randomness for reproducibility
+            randomSeed(params.seed);
+            noiseSeed(params.seed);
+
+            cols = floor(width / scl);
+            rows = floor(height / scl);
+
+            background(bg);
+            particles = [];
+
+            // Conceptual seed: “minimal instruction, emergent structure”
+            // We seed spawn modes from the digits of the seed.
+            const seedDigits = String(params.seed).split('').map(d => parseInt(d, 10));
+            const bias = seedDigits.reduce((a, b) => a + b, 0) % 100;
+
+            for (let i = 0; i < params.particleCount; i++) {
+                particles.push(new Particle(bias));
+            }
+        }
+
+        function fieldAngle(x, y) {
+            // A carefully tuned blend of layered noise and gentle anisotropy.
+            const nx = x * params.fieldScale;
+            const ny = y * params.fieldScale;
+
+            const n1 = noise(nx, ny);
+            const n2 = noise(nx * 2.0 + 17.1, ny * 2.0 + 3.7);
+            const n3 = noise(nx * 0.5 - 11.0, ny * 0.5 + 19.2);
+
+            const base = (n1 * 0.65 + n2 * 0.25 + n3 * 0.10);
+
+            // Subtle directional “grain” to avoid uniform turbulence.
+            const grain = 0.20 * sin((x / width) * TWO_PI) + 0.12 * cos((y / height) * TWO_PI);
+
+            return (base + grain) * TWO_PI * params.vorticity;
+        }
+
+        function curlVector(x, y) {
+            // Compute a curl-like vector by sampling a scalar angle field.
+            // This produces coherent vortices without explicit attractors.
+            const eps = 1.5;
+
+            const aL = fieldAngle(x - eps, y);
+            const aR = fieldAngle(x + eps, y);
+            const aU = fieldAngle(x, y - eps);
+            const aD = fieldAngle(x, y + eps);
+
+            // Finite differences on sine/cosine projection to stabilize wrapping.
+            const dx = (sin(aR) - sin(aL)) * 0.5;
+            const dy = (cos(aD) - cos(aU)) * 0.5;
+
+            // Curl-ish rotation: (dy, -dx)
+            const v = createVector(dy, -dx);
+            v.normalize();
+            return v;
+        }
+
+        function paletteAt(t) {
+            // t in [0,1]
+            const c1 = color(params.colorPalette[0]);
+            const c2 = color(params.colorPalette[1]);
+            const c3 = color(params.colorPalette[2]);
+
+            if (t < 0.5) return lerpColor(c1, c2, t / 0.5);
+            return lerpColor(c2, c3, (t - 0.5) / 0.5);
+        }
+
+        function draw() {
+            if (paused) return;
+
+            // Controlled fading for temporal evolution.
+            if (params.fade > 0) {
+                noStroke();
+                fill(red(bg), green(bg), blue(bg), params.fade);
+                rect(0, 0, width, height);
+            }
+
+            // A handful of substeps per frame gives smoother seams.
+            const substeps = 2;
+            for (let s = 0; s < substeps; s++) {
+                for (let i = 0; i < particles.length; i++) {
+                    particles[i].step();
+                }
+            }
+        }
+
+        class Particle {
+            constructor(bias) {
+                this.bias = bias;
+                this.reset(true);
+                this.hueT = random();
+            }
+
+            reset(isInitial = false) {
+                // Spawn from edges or near-center, biased by seed.
+                const mode = (this.bias + floor(random(100))) % 4;
+                let x, y;
+
+                if (mode === 0) {
+                    x = random(width);
+                    y = random([0, height]);
+                } else if (mode === 1) {
+                    x = random([0, width]);
+                    y = random(height);
+                } else if (mode === 2) {
+                    const r = pow(random(), 1.7) * (min(width, height) * 0.48);
+                    const a = random(TWO_PI);
+                    x = width / 2 + cos(a) * r;
+                    y = height / 2 + sin(a) * r;
+                } else {
+                    x = random(width);
+                    y = random(height);
+                }
+
+                this.pos = createVector(constrain(x, 0, width), constrain(y, 0, height));
+                this.prev = this.pos.copy();
+                this.vel = createVector(0, 0);
+
+                // Slightly lower alpha on initial fill to avoid immediate blotting.
+                this.alpha = isInitial ? 18 : 26;
+                this.weight = isInitial ? 0.8 : 1.0;
+            }
+
+            step() {
+                this.prev.set(this.pos);
+
+                const v = curlVector(this.pos.x, this.pos.y);
+
+                // Field energy used for color.
+                const t = noise(this.pos.x * params.fieldScale * 1.5 + 9.1, this.pos.y * params.fieldScale * 1.5 - 4.2);
+                const col = paletteAt(0.15 + 0.70 * t);
+
+                this.vel.x = v.x * params.stepSize;
+                this.vel.y = v.y * params.stepSize;
+
+                this.pos.add(this.vel);
+
+                // Wrap softly for continuity.
+                if (this.pos.x < 0 || this.pos.x > width || this.pos.y < 0 || this.pos.y > height) {
+                    this.reset(false);
+                    return;
+                }
+
+                stroke(red(col), green(col), blue(col), this.alpha);
+                strokeWeight(this.weight);
+                line(this.prev.x, this.prev.y, this.pos.x, this.pos.y);
+
+                // Occasionally re-seed a particle to prevent stagnation.
+                if (random() < 0.0008) {
+                    this.reset(false);
+                }
+            }
+        }
+
+        // ═══════════════════════════════════════════════════════════════════════
+        // UI CONTROL HANDLERS - CUSTOMIZE FOR YOUR PARAMETERS
+        // ═══════════════════════════════════════════════════════════════════════
+
+        function updateParam(paramName, value) {
+            const numeric = Number(value);
+            params[paramName] = numeric;
+
+            const label = document.getElementById(`${paramName}-value`);
+            if (label) {
+                // Avoid long floats in the UI.
+                label.textContent = (Number.isInteger(numeric) ? numeric : numeric.toFixed(3).replace(/\.0+$/, '').replace(/(\.[0-9]*?)0+$/, '$1'));
+            }
+
+            // Some parameters require re-init.
+            if (paramName === 'particleCount' || paramName === 'fieldScale' || paramName === 'vorticity') {
+                initializeSystem();
+            }
+        }
+
+        function updateColor(colorId, value) {
+            const idx = colorId === 'color1' ? 0 : (colorId === 'color2' ? 1 : 2);
+            params.colorPalette[idx] = value;
+            document.getElementById(`${colorId}-value`).textContent = value;
+        }
+
+        function togglePause() {
+            paused = !paused;
+            document.getElementById('pause-btn').textContent = paused ? 'Resume' : 'Pause';
+        }
+
+        function exportPNG() {
+            // A deterministic filename helps catalog runs.
+            saveCanvas(`kintsugi-currents-seed-${params.seed}`, 'png');
+        }
+
+        // ═══════════════════════════════════════════════════════════════════════
+        // SEED CONTROL FUNCTIONS - ALWAYS KEEP THESE
+        // ═══════════════════════════════════════════════════════════════════════
+
+        function updateSeedDisplay() {
+            document.getElementById('seed-input').value = params.seed;
+        }
+
+        function updateSeed() {
+            let input = document.getElementById('seed-input');
+            let newSeed = parseInt(input.value);
+            if (newSeed && newSeed > 0) {
+                params.seed = newSeed;
+                initializeSystem();
+            } else {
+                // Reset to current seed if invalid
+                updateSeedDisplay();
+            }
+        }
+
+        function previousSeed() {
+            params.seed = Math.max(1, params.seed - 1);
+            updateSeedDisplay();
+            initializeSystem();
+        }
+
+        function nextSeed() {
+            params.seed = params.seed + 1;
+            updateSeedDisplay();
+            initializeSystem();
+        }
+
+        function randomSeedAndUpdate() {
+            params.seed = Math.floor(Math.random() * 999999) + 1;
+            updateSeedDisplay();
+            initializeSystem();
+        }
+
+        function resetParameters() {
+            params = { ...defaultParams };
+
+            // Update UI elements
+            document.getElementById('particleCount').value = params.particleCount;
+            document.getElementById('particleCount-value').textContent = params.particleCount;
+
+            document.getElementById('stepSize').value = params.stepSize;
+            document.getElementById('stepSize-value').textContent = params.stepSize;
+
+            document.getElementById('fieldScale').value = params.fieldScale;
+            document.getElementById('fieldScale-value').textContent = params.fieldScale;
+
+            document.getElementById('vorticity').value = params.vorticity;
+            document.getElementById('vorticity-value').textContent = params.vorticity;
+
+            document.getElementById('fade').value = params.fade;
+            document.getElementById('fade-value').textContent = params.fade;
+
+            // Reset colors
+            document.getElementById('color1').value = params.colorPalette[0];
+            document.getElementById('color1-value').textContent = params.colorPalette[0];
+            document.getElementById('color2').value = params.colorPalette[1];
+            document.getElementById('color2-value').textContent = params.colorPalette[1];
+            document.getElementById('color3').value = params.colorPalette[2];
+            document.getElementById('color3-value').textContent = params.colorPalette[2];
+
+            paused = false;
+            document.getElementById('pause-btn').textContent = 'Pause';
+
+            updateSeedDisplay();
+            initializeSystem();
+        }
+
+        // Initialize UI on load
+        window.addEventListener('load', function() {
+            updateSeedDisplay();
+        });
+    </script>
+</body>
+</html>
