@@ -350,6 +350,15 @@ redirect_from:
         [data-bs-theme="dark"] .card .card-title a:active {
             color: var(--bs-primary) !important;
         }
+
+        /* Prompt card hero image (match homepage 3x1 headers) */
+        .prompt-card-image {
+            background: var(--bs-body-bg);
+        }
+
+        .prompt-card-image img {
+            object-fit: cover;
+        }
     </style>
 </head>
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
@@ -475,6 +484,39 @@ redirect_from:
                      data-prompt-content="{% if post.prompt_content %}{{ post.prompt_content | escape }}{% else %}{{ post.content | escape }}{% endif %}"
                      data-variables="{% if post.variables %}{{ post.variables | jsonify | escape }}{% else %}[]{% endif %}">
                     <div class="card h-100 d-flex flex-column" tabindex="0" aria-label="Prompt: {{ post.title }}">
+                        {%- assign __card_image_raw = post.image | default: '' | strip -%}
+                        {%- if __card_image_raw == '' -%}
+                            {%- assign __card_image_raw = site.featured-image | default: '' | strip -%}
+                        {%- endif -%}
+                        {%- if __card_image_raw == '' -%}
+                            {%- assign __card_image_raw = '/img/No-Image-Provided.png' -%}
+                        {%- endif -%}
+
+                        {%- assign __card_image_first = __card_image_raw | slice: 0, 1 -%}
+                        {%- assign __card_image_first2 = __card_image_raw | slice: 0, 2 -%}
+                        {%- if __card_image_raw contains '://' or __card_image_first2 == '//' -%}
+                            {%- assign __card_image_url = __card_image_raw -%}
+                        {%- elsif __card_image_first == '/' -%}
+                            {%- assign __card_image_url = __card_image_raw | relative_url -%}
+                        {%- else -%}
+                            {%- assign __card_image_url = '/' | append: __card_image_raw | relative_url -%}
+                        {%- endif -%}
+
+                        {%- if post.image-alt -%}
+                            {%- assign __card_image_alt = post.image-alt -%}
+                        {%- elsif post.image-description -%}
+                            {%- assign __card_image_alt = post.image-description -%}
+                        {%- else -%}
+                            {%- assign __card_image_alt = post.title -%}
+                        {%- endif -%}
+
+                        <a href="{{ post.url | relative_url }}" class="text-decoration-none" aria-label="View prompt details for {{ post.title }}">
+                            <div class="position-relative">
+                                <div class="ratio ratio-3x1 rounded-top overflow-hidden prompt-card-image">
+                                    <img class="card-img-top w-100 h-100 d-block img-fluid" src="{{ __card_image_url }}" alt="{{ __card_image_alt | escape }}" loading="lazy" decoding="async">
+                                </div>
+                            </div>
+                        </a>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">
                                 <a href="{{ post.url | relative_url }}" aria-label="View prompt details for {{ post.title }}">{{ post.title }}</a>
