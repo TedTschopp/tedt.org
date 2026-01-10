@@ -48,19 +48,15 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: 
-image-alt: ""
+image: /img/prompts/Public-Speaking.webp
+image-alt: "An executive speaker stands on a minimalist stage addressing an audience, while abstract interconnected lines and diagrams form a cloud above, symbolizing ideas, structure, and insight emerging from complexity."
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: ""
-image-title: ""
-image_width: 
-image_height: 
+image-description: "A conceptual illustration of a senior executive delivering a keynote presentation, with abstract networks, diagrams, and flowing lines suspended overhead to represent complex ideas being transformed into clear, structured insight. The image evokes thought leadership, strategic storytelling, and the art of turning complexity into understanding for an engaged audience."
+image-title: "From Complexity to Clarity: The Executive Keynote Moment"
+image_width: 1456
+image_height: 816
+
 
 mastodon-post-id:
 models-supported:

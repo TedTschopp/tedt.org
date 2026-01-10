@@ -50,19 +50,14 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: 
-image-alt: ""
+image: /img/prompts/architecture-product-requirements-document.png
+image-alt: "Abstract architectural sketch of an enterprise workspace with layered blueprints, technical annotations, and interconnected systems representing a structured product requirements document."
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
-image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
-image-credits-title: ""
-image-description: ""
-image-title: ""
-image_width: 
-image_height: 
+image-description: "A detailed architectural illustration depicting an enterprise workspace overlaid with hand-drawn blueprints, system diagrams, and technical annotations. The image visually represents the complexity and rigor of an Architecture Product Requirements Document (PRD), emphasizing structure, traceability, and disciplined design thinking across people, processes, and technology."
+image-title: "Architectural Blueprint of Enterprise Product Requirements"
+image_width: 1456
+image_height: 816
 
 mastodon-post-id:
 models-supported:
