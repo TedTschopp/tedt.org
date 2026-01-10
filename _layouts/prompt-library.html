@@ -502,12 +502,15 @@ redirect_from:
                             {%- assign __card_image_url = '/' | append: __card_image_raw | relative_url -%}
                         {%- endif -%}
 
-                        {%- if post.image-alt -%}
-                            {%- assign __card_image_alt = post.image-alt -%}
-                        {%- elsif post.image-description -%}
-                            {%- assign __card_image_alt = post.image-description -%}
-                        {%- else -%}
-                            {%- assign __card_image_alt = post.title -%}
+                        {%- assign __card_image_alt = post["image-alt"] | default: '' | strip -%}
+                        {%- if __card_image_alt == '' -%}
+                            {%- assign __card_image_alt = post["image-description"] | default: '' | strip -%}
+                        {%- endif -%}
+                        {%- if __card_image_alt == '' -%}
+                            {%- assign __card_image_alt = post.title | default: '' | strip -%}
+                        {%- endif -%}
+                        {%- if __card_image_alt == '' -%}
+                            {%- assign __card_image_alt = 'Prompt image' -%}
                         {%- endif -%}
 
                         <a href="{{ post.url | relative_url }}" class="text-decoration-none" aria-label="View prompt details for {{ post.title }}">
