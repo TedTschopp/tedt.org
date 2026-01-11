@@ -57,8 +57,9 @@ Normalize dates:
 - Rank: enterprise impact, novelty, next steps for enterprises, global interest, and West Coast relevance (never stated directly).
 
 6) ORGANIZE INTO SECTIONS (3–6 total) Suggestions:
-- Big Moves
+- The Big Picture
 - Enterprise Ops & Adoption
+- Strategy & Change
 - Security, Risk & Compliance
 - Vendors, Platforms & Models
 - Policy & Regulation
