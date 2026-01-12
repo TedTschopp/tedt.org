@@ -7,19 +7,287 @@
     <title>Color Chart</title>
     <style>
         body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
             margin: 0;
             background-color: #f4f4f4;
+            height: 100vh;
+            overflow: hidden;
+            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+
+        #viewport {
+            position: fixed;
+            inset: 0;
+            overflow: hidden;
+            background: #f4f4f4;
+            touch-action: none;
+        }
+
+        #world {
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform-origin: 0 0;
+            will-change: transform;
+        }
+
+        #controls {
+            position: fixed;
+            top: 14px;
+            left: 14px;
+            z-index: 10;
+            display: grid;
+            grid-template-columns: 44px 44px 44px;
+            grid-auto-rows: 44px;
+            gap: 8px;
+            padding: 10px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.82);
+            border: 1px solid rgba(0, 0, 0, 0.12);
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.10),
+                0 2px 8px rgba(0, 0, 0, 0.08);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+
+        #controls button {
+            appearance: none;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #111;
+            font-size: 18px;
+            font-weight: 600;
+            cursor: pointer;
+            line-height: 1;
+            display: grid;
+            place-items: center;
+        }
+
+        #controls button:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        #controls button:active {
+            transform: translateY(1px);
+        }
+
+        #controls button:focus-visible {
+            outline: 3px solid rgba(0, 169, 224, 0.55);
+            outline-offset: 2px;
+        }
+
+        #status {
+            position: fixed;
+            left: 14px;
+            top: 210px;
+            z-index: 10;
+            padding: 8px 10px;
+            border-radius: 12px;
+            background: rgba(16, 24, 32, 0.78);
+            color: rgba(255, 255, 255, 0.92);
+            font-size: 12px;
+            letter-spacing: 0.2px;
+            user-select: none;
+        }
+
+        #sr-help {
+            position: absolute;
+            left: -9999px;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.4.2/tinycolor.min.js"></script>
 </head>
 
 <body>
+    <div id="sr-help">
+        Pan with the arrow buttons or drag. Zoom with plus/minus or mouse wheel.
+    </div>
+
+    <div id="viewport" aria-describedby="sr-help">
+        <div id="world"></div>
+    </div>
+
+    <div id="controls" role="group" aria-label="Pan and zoom controls">
+        <button id="zoomIn" type="button" aria-label="Zoom in">+</button>
+        <button id="reset" type="button" aria-label="Reset view">⟲</button>
+        <button id="zoomOut" type="button" aria-label="Zoom out">−</button>
+        <button id="panLeft" type="button" aria-label="Pan left">←</button>
+        <button id="panDown" type="button" aria-label="Pan down">↓</button>
+        <button id="panRight" type="button" aria-label="Pan right">→</button>
+        <button id="panUp" type="button" aria-label="Pan up">↑</button>
+        <button id="panCenter" type="button" aria-label="Center chart">◎</button>
+        <button id="toggleStatus" type="button" aria-label="Toggle status">i</button>
+    </div>
+
+    <div id="status" aria-live="polite"></div>
     <script>
+        const viewportEl = document.getElementById('viewport');
+        const worldEl = document.getElementById('world');
+        const statusEl = document.getElementById('status');
+
+        const viewState = {
+            x: 0,
+            y: 0,
+            scale: 1,
+            minScale: 0.25,
+            maxScale: 4,
+            panStep: 120,
+            showStatus: true,
+        };
+
+        function clamp(value, min, max) {
+            return Math.min(max, Math.max(min, value));
+        }
+
+        function applyTransform() {
+            worldEl.style.transform = `translate(${viewState.x}px, ${viewState.y}px) scale(${viewState.scale})`;
+            if (viewState.showStatus) {
+                statusEl.textContent = `Zoom: ${Math.round(viewState.scale * 100)}%   Offset: ${Math.round(viewState.x)}, ${Math.round(viewState.y)}`;
+                statusEl.style.display = 'block';
+            } else {
+                statusEl.style.display = 'none';
+            }
+        }
+
+        function zoomAboutPoint(newScale, clientX, clientY) {
+            const oldScale = viewState.scale;
+            newScale = clamp(newScale, viewState.minScale, viewState.maxScale);
+            if (newScale === oldScale) return;
+
+            const worldX = (clientX - viewState.x) / oldScale;
+            const worldY = (clientY - viewState.y) / oldScale;
+            viewState.scale = newScale;
+            viewState.x = clientX - worldX * newScale;
+            viewState.y = clientY - worldY * newScale;
+            applyTransform();
+        }
+
+        function centerChart() {
+            // Center based on the chart container's intrinsic size.
+            const chart = worldEl.querySelector('[data-color-chart]');
+            if (!chart) return;
+            const vw = viewportEl.clientWidth;
+            const vh = viewportEl.clientHeight;
+            const contentW = chart.scrollWidth;
+            const contentH = chart.scrollHeight;
+            viewState.x = Math.round((vw - contentW * viewState.scale) / 2);
+            viewState.y = Math.round((vh - contentH * viewState.scale) / 2);
+            applyTransform();
+        }
+
+        function resetView() {
+            viewState.scale = 1;
+            viewState.x = 0;
+            viewState.y = 0;
+            applyTransform();
+            // If chart exists, center it.
+            centerChart();
+        }
+
+        function panBy(dx, dy) {
+            viewState.x += dx;
+            viewState.y += dy;
+            applyTransform();
+        }
+
+        // Buttons
+        document.getElementById('zoomIn').addEventListener('click', () => {
+            zoomAboutPoint(viewState.scale * 1.15, viewportEl.clientWidth / 2, viewportEl.clientHeight / 2);
+        });
+        document.getElementById('zoomOut').addEventListener('click', () => {
+            zoomAboutPoint(viewState.scale / 1.15, viewportEl.clientWidth / 2, viewportEl.clientHeight / 2);
+        });
+        document.getElementById('reset').addEventListener('click', resetView);
+
+        document.getElementById('panLeft').addEventListener('click', () => panBy(-viewState.panStep, 0));
+        document.getElementById('panRight').addEventListener('click', () => panBy(viewState.panStep, 0));
+        document.getElementById('panUp').addEventListener('click', () => panBy(0, -viewState.panStep));
+        document.getElementById('panDown').addEventListener('click', () => panBy(0, viewState.panStep));
+        document.getElementById('panCenter').addEventListener('click', centerChart);
+        document.getElementById('toggleStatus').addEventListener('click', () => {
+            viewState.showStatus = !viewState.showStatus;
+            applyTransform();
+        });
+
+        // Drag to pan
+        let isDragging = false;
+        let lastX = 0;
+        let lastY = 0;
+
+        viewportEl.addEventListener('pointerdown', (e) => {
+            // Avoid stealing clicks from buttons.
+            if (e.target && (e.target.closest && e.target.closest('#controls'))) return;
+            isDragging = true;
+            lastX = e.clientX;
+            lastY = e.clientY;
+            viewportEl.setPointerCapture(e.pointerId);
+        });
+
+        viewportEl.addEventListener('pointermove', (e) => {
+            if (!isDragging) return;
+            const dx = e.clientX - lastX;
+            const dy = e.clientY - lastY;
+            lastX = e.clientX;
+            lastY = e.clientY;
+            panBy(dx, dy);
+        });
+
+        viewportEl.addEventListener('pointerup', () => {
+            isDragging = false;
+        });
+        viewportEl.addEventListener('pointercancel', () => {
+            isDragging = false;
+        });
+
+        // Wheel to zoom (trackpad friendly)
+        viewportEl.addEventListener('wheel', (e) => {
+            // Let users scroll page if we ever stop using fixed fullscreen.
+            e.preventDefault();
+            const direction = e.deltaY > 0 ? -1 : 1;
+            const factor = direction > 0 ? 1.12 : 1 / 1.12;
+            zoomAboutPoint(viewState.scale * factor, e.clientX, e.clientY);
+        }, { passive: false });
+
+        // Keyboard shortcuts
+        window.addEventListener('keydown', (e) => {
+            if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+            const step = e.shiftKey ? viewState.panStep * 2 : viewState.panStep;
+            switch (e.key) {
+                case 'ArrowLeft':
+                    panBy(-step, 0);
+                    break;
+                case 'ArrowRight':
+                    panBy(step, 0);
+                    break;
+                case 'ArrowUp':
+                    panBy(0, -step);
+                    break;
+                case 'ArrowDown':
+                    panBy(0, step);
+                    break;
+                case '+':
+                case '=':
+                    zoomAboutPoint(viewState.scale * 1.15, viewportEl.clientWidth / 2, viewportEl.clientHeight / 2);
+                    break;
+                case '-':
+                case '_':
+                    zoomAboutPoint(viewState.scale / 1.15, viewportEl.clientWidth / 2, viewportEl.clientHeight / 2);
+                    break;
+                case '0':
+                    resetView();
+                    break;
+            }
+        });
+
+        window.addEventListener('resize', () => {
+            // Keep the chart roughly centered on resize.
+            centerChart();
+        });
+
         function getUrlParameters() {
             const urlSearchParams = new URLSearchParams(window.location.search);
             let colorParameter = null;
@@ -153,6 +421,7 @@
 
         async function generateColorChart() {
             const chartContainer = document.createElement('div');
+            chartContainer.setAttribute('data-color-chart', 'true');
             chartContainer.style.display = 'grid';
             chartContainer.style.gridTemplateColumns = `repeat(${colorShades.length + 1}, 200px)`;
             chartContainer.style.gap = '8px';
@@ -161,7 +430,7 @@
             chartContainer.style.justifyContent = 'center';
             chartContainer.style.gridTemplateColumns = `repeat(${colorShades.length}, 200px)`;
 
-            document.body.appendChild(chartContainer);
+            worldEl.appendChild(chartContainer);
 
             const headerRow = document.createElement('div');
             headerRow.style.display = 'grid';
@@ -315,10 +584,20 @@
                 colorBoxes.forEach(box => chartContainer.appendChild(box));
             }
 
-            document.body.appendChild(chartContainer);
+            // Chart container already attached to world.
+
+            // Initial view: center the generated chart.
+            centerChart();
         }
 
-        generateColorChart();
+        applyTransform();
+        generateColorChart().then(() => {
+            // Center and ensure status is correct once layout is ready.
+            requestAnimationFrame(() => {
+                centerChart();
+                applyTransform();
+            });
+        });
     </script>
 </body>
 
