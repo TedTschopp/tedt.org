@@ -69,7 +69,7 @@ coordinates:
 latitude: 34.1470
 longitude: -117.9709
 
-image:  /img/AI/The-Kitchen-Protocol.webp
+image:  /img/AI/The-Pancake-Protocol.webp
 image-alt: "Three children wearing aprons carefully shape pancakes together on baking trays in a warm, sunlit kitchen."
 image-artist: "Ted Tschopp"
 image-artist-URL: https://tedt.org/
@@ -79,6 +79,8 @@ image_width: 1456
 image_height: 816
 
 mastodon-post-id:
+
+
 
 ---
 

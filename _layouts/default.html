@@ -115,8 +115,8 @@
                       <!-- Do Nothing -->
                     {% elsif post.layout contains "gammaworld" %}
                       <!-- Do Nothing -->
-                    {% elsif post.layout contains "prompt" or post.category == "Prompts" %}
-                      <!-- Do Nothing -->
+                    {% elsif post.categories contains "Prompts" or post.layout contains "prompt" or post.path contains "_posts/Prompts/" %}
+                      {%- comment -%} Exclude prompt posts from homepage Blog column (Prompts live under _posts/Prompts/ and use prompt-* layouts; some also carry other categories like Projects). {%- endcomment -%}
                     {% else %}
                       {% assign count = count | plus: 1 %}
                       {% if count > 3 %}
@@ -212,7 +212,8 @@
                       {% elsif post.layout contains "gammaworld" %}
                         {%- comment -%} Skip Gamma World layout posts (Bestiary style) on homepage blog list to avoid blank/irrelevant card. {%- endcomment -%}
                         {% assign __skip = true %}
-                      {% elsif post.layout contains "prompt" or post.category == "Prompts" %}
+                      {% elsif post.categories contains "Prompts" or post.layout contains "prompt" or post.path contains "_posts/Prompts/" %}
+                        {%- comment -%} Exclude prompt posts from homepage Blog column (Prompts live under _posts/Prompts/ and use prompt-* layouts; some also carry other categories like Projects). {%- endcomment -%}
                         {% assign __skip = true %}
                       {% endif %}
                       {% if __skip %}{% continue %}{% endif %}

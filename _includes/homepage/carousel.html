@@ -34,6 +34,8 @@
   {%- assign _cached_recent = site.config.recent_by_category[slug] | default: site.config.recent_by_category[entry.title] -%}
   {%- assign _scan_set = _cached_recent | default: _fallback_recent -%}
   {%- for p in _scan_set -%}
+      {%- comment -%} Keep Prompt Library content out of the homepage carousel (prompts can share other categories like Communications/Projects, but they have their own library views). {%- endcomment -%}
+      {%- if p.path contains '_posts/Prompts/' or p.layout contains 'prompt' or p.categories contains 'Prompts' -%}{%- continue -%}{%- endif -%}
       {%- if p.categories -%}
         {%- assign matched = false -%}
         {%- if p.categories contains entry.title -%}{%- assign matched = true -%}{%- endif -%}
@@ -97,6 +99,8 @@
                   {%- assign __shown_urls = '' | split: '' -%}
                   {%- for post in _recent_cat_posts -%}
                     {%- if displayed >= 3 -%}{%- break -%}{%- endif -%}
+                    {%- comment -%} Keep Prompt Library content out of the homepage carousel (prompts can share other categories like Communications/Projects, but they have their own library views). {%- endcomment -%}
+                    {%- if post.path contains '_posts/Prompts/' or post.layout contains 'prompt' or post.categories contains 'Prompts' -%}{%- continue -%}{%- endif -%}
                     {%- assign post_match = false -%}
                     {%- if post.categories -%}
                       {%- if post.categories contains entry.title -%}{%- assign post_match = true -%}{%- endif -%}
@@ -162,6 +166,8 @@
                     {%- assign _all_posts_scan = site.posts | safe_sort: 'date' | reverse -%}
                     {%- for post in _all_posts_scan -%}
                       {%- if displayed >= 3 -%}{%- break -%}{%- endif -%}
+                      {%- comment -%} Keep Prompt Library content out of the homepage carousel (prompts can share other categories like Communications/Projects, but they have their own library views). {%- endcomment -%}
+                      {%- if post.path contains '_posts/Prompts/' or post.layout contains 'prompt' or post.categories contains 'Prompts' -%}{%- continue -%}{%- endif -%}
                       {%- if __shown_urls contains post.url -%}{%- continue -%}{%- endif -%}
                       {%- assign post_match = false -%}
                       {%- if post.categories -%}
