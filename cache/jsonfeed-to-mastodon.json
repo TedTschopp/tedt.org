@@ -2775,6 +2775,7 @@
     "summary": "A specialized prompt for ttrpg weapon descriptions with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for ttrpg weapon descriptions with advanced AI capabilities and structured output formatting. https://tedt.org/weapon-descriptions/",
     "url": "https://tedt.org/weapon-descriptions/",
+    "image": "https://tedt.org/img/prompts/TTRPG-Opening-Scene.png",
     "tags": [
       "Game Master",
       "TTRPG",
@@ -2798,6 +2799,7 @@
     "summary": "A specialized prompt for communications tiered messaging framework with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for communications tiered messaging framework with advanced AI capabilities and structured output formatting. https://tedt.org/tiered-messaging-framework/",
     "url": "https://tedt.org/tiered-messaging-framework/",
+    "image": "https://tedt.org/img/prompts/Public-Speaking.webp",
     "tags": [
       "Communications",
       "Content Creation",
@@ -2821,6 +2823,7 @@
     "summary": "A specialized prompt for test analyst with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for test analyst with advanced AI capabilities and structured output formatting. https://tedt.org/testing-analyst/",
     "url": "https://tedt.org/testing-analyst/",
+    "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.png",
     "tags": [
       "Requirements Engineering",
       "Architecture",
@@ -3404,6 +3407,7 @@
     "summary": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting. https://tedt.org/product-requirements-document-prd-template-3/",
     "url": "https://tedt.org/product-requirements-document-prd-template-3/",
+    "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.png",
     "tags": [
       "Product Management",
       "Requirements Engineering",
@@ -3427,8 +3431,8 @@
     "summary": "",
     "content_text": "This prompt is designed for professional architecture product requirementsdocument (prd) template 2 prompt designed for high-quality content generationand structured analysis.How to Use This Prompt  Copy the prompt from the prompt content section above  Customize variables if any are marked with placeholders like {variable_name}  Paste into your AI tool (ChatGPT, Claude, Copilot, etc.)  Provide y… https://tedt.org/2025-10-17-product-requirements-document-prd-template-4/",
     "url": "https://tedt.org/2025-10-17-product-requirements-document-prd-template-4/",
-    "date_published": "2026-01-09T09:20:53-08:00",
-    "date_modified": "2026-01-09T09:20:53-08:00",
+    "date_published": "2026-01-12T08:24:11-08:00",
+    "date_modified": "2026-01-12T08:24:11-08:00",
     "author": {
       "name": "Ted Tschopp",
       "url": "https://tedt.org/",
@@ -3462,5 +3466,40 @@
       "https://tschopp.net/users/Ted/statuses/115866462060133402"
     ],
     "lastTootTimestamp": 1767981904088
+  },
+  "https://tedt.org/The-Pancake-Protocol/": {
+    "id": "/The-Pancake-Protocol/",
+    "title": "The Pancake Protocol: an Agentic Kitchen",
+    "summary": "A kitchen metaphor for the standards behind agentic AI systems. MCP provides the plumbing for tools and context, while agents and skills make work repeatable with guardrails.",
+    "content_text": "A kitchen metaphor for the standards behind agentic AI systems. MCP provides the plumbing for tools and context, while agents and skills make work repeatable with guardrails. https://tedt.org/The-Pancake-Protocol/",
+    "url": "https://tedt.org/The-Pancake-Protocol/",
+    "image": "https://tedt.org/img/AI/The-Kitchen-Protocol.webp",
+    "tags": [
+      "agentic-systems",
+      "ai-agents",
+      "mcp",
+      "model-context-protocol",
+      "tool-use",
+      "context",
+      "standard-work",
+      "lean-six-sigma",
+      "guardrails",
+      "authorization",
+      "consent",
+      "prompts",
+      "skills",
+      "composability"
+    ],
+    "date_published": "2026-01-12T07:21:20-08:00",
+    "date_modified": "2026-01-12T07:21:20-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115883149655026238"
+    ],
+    "lastTootTimestamp": 1768236536578
   }
 }
