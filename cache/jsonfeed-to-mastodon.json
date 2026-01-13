@@ -3473,7 +3473,7 @@
     "summary": "A kitchen metaphor for the standards behind agentic AI systems. MCP provides the plumbing for tools and context, while agents and skills make work repeatable with guardrails.",
     "content_text": "A kitchen metaphor for the standards behind agentic AI systems. MCP provides the plumbing for tools and context, while agents and skills make work repeatable with guardrails. https://tedt.org/The-Pancake-Protocol/",
     "url": "https://tedt.org/The-Pancake-Protocol/",
-    "image": "https://tedt.org/img/AI/The-Kitchen-Protocol.webp",
+    "image": "https://tedt.org/img/AI/The-Pancake-Protocol.webp",
     "tags": [
       "agentic-systems",
       "ai-agents",
@@ -3501,5 +3501,32 @@
       "https://tschopp.net/users/Ted/statuses/115883149655026238"
     ],
     "lastTootTimestamp": 1768236536578
+  },
+  "https://tedt.org/Color-Chart-Pan-Zoom/": {
+    "id": "/Color-Chart-Pan-Zoom/",
+    "title": "A Color Chart You Can Move Around",
+    "summary": "A small documentation post for the Color Chart tool on tedt.org: how to pan, how to zoom, and how to feed it your own palette from the URL.",
+    "content_text": "A small documentation post for the Color Chart tool on tedt.org: how to pan, how to zoom, and how to feed it your own palette from the URL. https://tedt.org/Color-Chart-Pan-Zoom/",
+    "url": "https://tedt.org/Color-Chart-Pan-Zoom/",
+    "image": "https://tedt.org/img/2026-01/color-tool.webp",
+    "tags": [
+      "Color",
+      "UI",
+      "JavaScript",
+      "Accessibility",
+      "Tools",
+      "CSS"
+    ],
+    "date_published": "2026-01-12T09:00:00-08:00",
+    "date_modified": "2026-01-12T09:00:00-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115885279355609200"
+    ],
+    "lastTootTimestamp": 1768269033231
   }
 }
