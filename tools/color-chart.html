@@ -47,7 +47,7 @@
             z-index: 10;
             display: grid;
             grid-template-columns: 44px 44px 44px;
-            grid-auto-rows: 44px;
+            grid-auto-rows: minmax(44px, auto);
             gap: 8px;
             padding: 10px;
             box-sizing: border-box;
@@ -160,10 +160,7 @@
 
 
         #status {
-            position: fixed;
-            left: 14px;
-            top: 260px;
-            z-index: 10;
+            grid-column: 1 / -1;
             padding: 8px 10px;
             border-radius: 12px;
             background: rgba(16, 24, 32, 0.78);
@@ -171,6 +168,9 @@
             font-size: 12px;
             letter-spacing: 0.2px;
             user-select: none;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         #sr-help {
@@ -208,9 +208,8 @@
         <div id="fontHint">
             Installed fonts require the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Local_Font_Access_API" target="_blank" rel="noreferrer">Local Font Access API</a> (permission + secure context).
         </div>
+        <div id="status" aria-live="polite"></div>
     </div>
-
-    <div id="status" aria-live="polite"></div>
     <script>
         const viewportEl = document.getElementById('viewport');
         const worldEl = document.getElementById('world');
