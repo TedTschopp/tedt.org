@@ -176,9 +176,7 @@
             font-size: 12px;
             letter-spacing: 0.2px;
             user-select: none;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            white-space: pre-line;
         }
 
         #sr-help {
@@ -520,7 +518,7 @@
         function applyTransform() {
             worldEl.style.transform = `translate(${viewState.x}px, ${viewState.y}px) scale(${viewState.scale})`;
             if (viewState.showStatus) {
-                statusEl.textContent = `Zoom: ${Math.round(viewState.scale * 100)}%   Offset: ${Math.round(viewState.x)}, ${Math.round(viewState.y)}`;
+                statusEl.textContent = `Zoom: ${Math.round(viewState.scale * 100)}%\nOffset: ${Math.round(viewState.x)}, ${Math.round(viewState.y)}`;
                 statusEl.style.display = 'block';
             } else {
                 statusEl.style.display = 'none';
