@@ -371,6 +371,16 @@
             const boxes = Array.from(worldEl.querySelectorAll('.color-box'));
             if (boxes.length === 0) return;
 
+            const measureHeight = (el) => {
+                // offsetHeight is not affected by CSS transforms (e.g., world scale),
+                // which prevents runaway min-height calculations when zoomed.
+                const h = (el && typeof el.offsetHeight === 'number') ? el.offsetHeight : 0;
+                if (h > 0) return h;
+                // Fallback for edge cases.
+                const rect = el?.getBoundingClientRect?.();
+                return rect ? rect.height : 0;
+            };
+
             const slots = [
                 'title',
                 'subtitle',
@@ -397,7 +407,7 @@
                 for (const slot of slots) {
                     const el = box.querySelector(`[data-slot="${slot}"]`);
                     if (!el) continue;
-                    maxBySlot[slot] = Math.max(maxBySlot[slot], el.getBoundingClientRect().height);
+                    maxBySlot[slot] = Math.max(maxBySlot[slot], measureHeight(el));
                 }
             }
 
@@ -413,7 +423,7 @@
             // Ensure every box has the same overall height too.
             let maxBoxHeight = 0;
             for (const box of boxes) {
-                maxBoxHeight = Math.max(maxBoxHeight, box.getBoundingClientRect().height);
+                maxBoxHeight = Math.max(maxBoxHeight, measureHeight(box));
             }
             maxBoxHeight = Math.ceil(maxBoxHeight);
             for (const box of boxes) {
