@@ -411,6 +411,12 @@
                 groups.get(font.group).push(font);
             }
 
+            // Alphabetize within each group by label.
+            for (const [groupName, fonts] of groups.entries()) {
+                fonts.sort((a, b) => String(a.label).localeCompare(String(b.label), undefined, { sensitivity: 'base' }));
+                groups.set(groupName, fonts);
+            }
+
             fontSelectEl.innerHTML = '';
 
             const preferredOrder = ['Default', 'Installed', 'TedT.org', 'Google Fonts'];
