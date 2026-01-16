@@ -30,6 +30,13 @@
             overflow: hidden;
             background: #f4f4f4;
             touch-action: none;
+            cursor: grab;
+        }
+
+        body.is-panning {
+            cursor: grabbing;
+            user-select: none;
+            -webkit-user-select: none;
         }
 
         #world {
@@ -573,9 +580,14 @@
         viewportEl.addEventListener('pointerdown', (e) => {
             // Avoid stealing clicks from buttons.
             if (e.target && (e.target.closest && e.target.closest('#controls'))) return;
+
+            // Prevent the browser from starting a text selection while panning.
+            e.preventDefault();
+
             isDragging = true;
             lastX = e.clientX;
             lastY = e.clientY;
+            document.body.classList.add('is-panning');
             viewportEl.setPointerCapture(e.pointerId);
         });
 
@@ -590,9 +602,11 @@
 
         viewportEl.addEventListener('pointerup', () => {
             isDragging = false;
+            document.body.classList.remove('is-panning');
         });
         viewportEl.addEventListener('pointercancel', () => {
             isDragging = false;
+            document.body.classList.remove('is-panning');
         });
 
         // Wheel to zoom (trackpad friendly)
