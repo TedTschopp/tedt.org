@@ -1194,7 +1194,7 @@
                 const baseHls = tinycolor(color.hex).toHsl();
                 const contrastWithWhite = calculateContrastRatio(baseRgbArray, [255, 255, 255]);
                 const contrastWithBlack = calculateContrastRatio(baseRgbArray, [0, 0, 0]);
-                const baseColorName = await fetchColorNameFromApi(color.hex);
+                const baseColorName = await getColorName(color.hex);
 
                 const shadeBoxes = colorShades.map(async (shade, index) => {
                     const colorBox = document.createElement('div');
