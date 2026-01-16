@@ -49,6 +49,8 @@
             grid-auto-rows: 44px;
             gap: 8px;
             padding: 10px;
+            box-sizing: border-box;
+            width: calc(44px * 3 + 8px * 2 + 10px * 2);
             border-radius: 14px;
             background: rgba(255, 255, 255, 0.82);
             border: 1px solid rgba(0, 0, 0, 0.12);
@@ -97,7 +99,9 @@
             font-weight: 650;
             padding: 0 12px;
             cursor: pointer;
-            flex: 1;
+            grid-column: 1 / -1;
+            width: 100%;
+            min-width: 0;
         }
 
         #fontSelect:focus-visible {
@@ -105,28 +109,6 @@
             outline-offset: 2px;
         }
 
-        #fontRow {
-            grid-column: 1 / -1;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        #fontPreview {
-            width: 44px;
-            height: 44px;
-            flex: 0 0 44px;
-            display: grid;
-            place-items: center;
-            border: 1px solid rgba(0, 0, 0, 0.14);
-            border-radius: 12px;
-            background: rgba(255, 255, 255, 0.9);
-            color: #111;
-            font-size: 18px;
-            font-weight: 750;
-            line-height: 1;
-            user-select: none;
-        }
 
         #status {
             position: fixed;
@@ -172,10 +154,7 @@
         <button id="panUp" type="button" aria-label="Pan up">↑</button>
         <button id="panCenter" type="button" aria-label="Center chart">◎</button>
         <button id="toggleStatus" type="button" aria-label="Toggle status">i</button>
-        <div id="fontRow" aria-label="Swatch typography">
-            <div id="fontPreview" aria-hidden="true">Aa</div>
-            <select id="fontSelect" aria-label="Swatch font"></select>
-        </div>
+        <select id="fontSelect" aria-label="Swatch font"></select>
     </div>
 
     <div id="status" aria-live="polite"></div>
@@ -185,14 +164,13 @@
         const statusEl = document.getElementById('status');
 
         const fontSelectEl = document.getElementById('fontSelect');
-        const fontPreviewEl = document.getElementById('fontPreview');
         const DEFAULT_SWATCH_FONT = 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif';
         const SWATCH_FONT_STORAGE_KEY = 'tedt_color_chart_swatch_font';
 
         const fontCatalog = [
-            // System
-            { group: 'System', label: 'System UI', css: DEFAULT_SWATCH_FONT },
-            { group: 'System', label: 'Monospace (System)', css: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
+            // Local (system fonts + installed fonts when supported)
+            { group: 'Local', label: 'System UI', css: DEFAULT_SWATCH_FONT },
+            { group: 'Local', label: 'Monospace (System)', css: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
 
             // Google fonts (loaded via /css/consolidated-fonts.css)
             { group: 'Google Fonts', label: 'Cal Sans', css: '"Cal Sans", ' + DEFAULT_SWATCH_FONT },
@@ -255,41 +233,89 @@
             { group: 'Google Fonts', label: 'UnifrakturMaguntia', css: 'UnifrakturMaguntia, "Palatino", "Book Antiqua", Georgia, serif' },
 
             // Local / hosted fonts (loaded via /css/consolidated-fonts.css)
-            { group: 'TedT.org (Local)', label: 'Optima', css: 'Optima, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'Optima Titling', css: '"Optima Titling", Optima, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'Manuka', css: 'Manuka, ' + DEFAULT_SWATCH_FONT },
-            { group: 'TedT.org (Local)', label: 'Manuka Condensed', css: 'ManukaCondensed, ' + DEFAULT_SWATCH_FONT },
-            { group: 'TedT.org (Local)', label: 'Manuka Slab', css: 'ManukaSlab, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'PalmPilot', css: 'PalmPilot, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
-            { group: 'TedT.org (Local)', label: 'Bestiary', css: 'Bestiary, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'Shadowrun', css: 'Shadowrun, ' + DEFAULT_SWATCH_FONT },
-            { group: 'TedT.org (Local)', label: 'Checkbook', css: 'Checkbook, ' + DEFAULT_SWATCH_FONT },
-            { group: 'TedT.org (Local)', label: 'Dana Library Hand', css: '"Dana Library Hand", ' + DEFAULT_SWATCH_FONT },
-            { group: 'TedT.org (Local)', label: 'Duvall', css: 'Duvall, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'GameEmpire', css: 'GameEmpire, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'IrwinAllen', css: 'IrwinAllen, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'lp1_regular', css: 'lp1_regular, ' + DEFAULT_SWATCH_FONT },
-            { group: 'TedT.org (Local)', label: 'lowwe', css: 'lowwe, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'UngerFrakturZierbuchstaben', css: 'UngerFrakturZierbuchstaben, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'CedarvilleCursive', css: 'CedarvilleCursive, ' + DEFAULT_SWATCH_FONT },
-            { group: 'TedT.org (Local)', label: 'coelnische_current_fraktur', css: 'coelnische_current_fraktur, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'strassburgfraktur', css: 'strassburgfraktur, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'SkennertonFraktur', css: 'SkennertonFraktur, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'Hillal', css: 'Hillal, ' + DEFAULT_SWATCH_FONT },
-            { group: 'TedT.org (Local)', label: 'AntiquarianScribe', css: 'AntiquarianScribe, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'TerraIgnota', css: 'TerraIgnota, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'Quentin', css: 'Quentin, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'Souvenir Demi', css: '"Souvenir Demi", "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'Egyptienne MN Condensed Bold', css: '"Egyptienne MN Condensed Bold", "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'Ringbearer', css: 'Ringbearer, "Palatino", "Book Antiqua", Georgia, serif' },
-            { group: 'TedT.org (Local)', label: 'tschopp-housemark-optimum (icons)', css: '"tschopp-housemark-optimum", ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org', label: 'Optima', css: 'Optima, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'Optima Titling', css: '"Optima Titling", Optima, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'Manuka', css: 'Manuka, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org', label: 'Manuka Condensed', css: 'ManukaCondensed, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org', label: 'Manuka Slab', css: 'ManukaSlab, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'PalmPilot', css: 'PalmPilot, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
+            { group: 'TedT.org', label: 'Bestiary', css: 'Bestiary, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'Shadowrun', css: 'Shadowrun, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org', label: 'Checkbook', css: 'Checkbook, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org', label: 'Dana Library Hand', css: '"Dana Library Hand", ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org', label: 'Duvall', css: 'Duvall, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'GameEmpire', css: 'GameEmpire, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'IrwinAllen', css: 'IrwinAllen, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'lp1_regular', css: 'lp1_regular, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org', label: 'lowwe', css: 'lowwe, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'UngerFrakturZierbuchstaben', css: 'UngerFrakturZierbuchstaben, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'CedarvilleCursive', css: 'CedarvilleCursive, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org', label: 'coelnische_current_fraktur', css: 'coelnische_current_fraktur, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'strassburgfraktur', css: 'strassburgfraktur, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'SkennertonFraktur', css: 'SkennertonFraktur, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'Hillal', css: 'Hillal, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org', label: 'AntiquarianScribe', css: 'AntiquarianScribe, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'TerraIgnota', css: 'TerraIgnota, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'Quentin', css: 'Quentin, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'Souvenir Demi', css: '"Souvenir Demi", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'Egyptienne MN Condensed Bold', css: '"Egyptienne MN Condensed Bold", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'Ringbearer', css: 'Ringbearer, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org', label: 'tschopp-housemark-optimum (icons)', css: '"tschopp-housemark-optimum", ' + DEFAULT_SWATCH_FONT },
         ];
+
+        let localFontsLoaded = false;
+
+        function quoteFontFamily(fontFamily) {
+            const safe = String(fontFamily || '').replace(/\\/g, '\\\\').replace(/"/g, '\\"');
+            return `"${safe}"`;
+        }
 
         function applySwatchFont(fontCss) {
             const value = (fontCss && String(fontCss).trim().length > 0) ? fontCss : DEFAULT_SWATCH_FONT;
             document.documentElement.style.setProperty('--swatch-font-family', value);
             fontSelectEl.style.fontFamily = value;
-            fontPreviewEl.style.fontFamily = value;
+        }
+
+        function getOrCreateOptgroup(label) {
+            const existing = Array.from(fontSelectEl.children).find(el => el.tagName === 'OPTGROUP' && el.label === label);
+            if (existing) return existing;
+            const optGroupEl = document.createElement('optgroup');
+            optGroupEl.label = label;
+            fontSelectEl.appendChild(optGroupEl);
+            return optGroupEl;
+        }
+
+        async function tryLoadInstalledLocalFonts() {
+            if (localFontsLoaded) return;
+            localFontsLoaded = true;
+
+            // Local Font Access API (Chromium-based browsers). Requires secure context + permission.
+            if (!('queryLocalFonts' in window)) return;
+
+            try {
+                const localFonts = await window.queryLocalFonts();
+                const families = Array.from(new Set(localFonts.map(f => f.family).filter(Boolean))).sort((a, b) => a.localeCompare(b));
+                if (families.length === 0) return;
+
+                const localGroup = getOrCreateOptgroup('Local');
+                const fragment = document.createDocumentFragment();
+
+                const divider = document.createElement('option');
+                divider.disabled = true;
+                divider.textContent = '— Installed fonts —';
+                fragment.appendChild(divider);
+
+                for (const family of families) {
+                    const optionEl = document.createElement('option');
+                    optionEl.value = `${quoteFontFamily(family)}, ${DEFAULT_SWATCH_FONT}`;
+                    optionEl.textContent = family;
+                    fragment.appendChild(optionEl);
+                }
+
+                localGroup.appendChild(fragment);
+            } catch {
+                // User denied or API error; keep dropdown usable.
+            }
         }
 
         function setupFontDropdown() {
@@ -301,7 +327,14 @@
 
             fontSelectEl.innerHTML = '';
 
-            for (const [groupName, fonts] of groups.entries()) {
+            const preferredOrder = ['Local', 'TedT.org', 'Google Fonts'];
+            const orderedGroups = [
+                ...preferredOrder.filter(name => groups.has(name)),
+                ...Array.from(groups.keys()).filter(name => !preferredOrder.includes(name)),
+            ];
+
+            for (const groupName of orderedGroups) {
+                const fonts = groups.get(groupName) || [];
                 const optGroupEl = document.createElement('optgroup');
                 optGroupEl.label = groupName;
 
@@ -337,6 +370,11 @@
                     // Ignore storage errors (private browsing, quota, etc.)
                 }
             });
+
+            // Populate installed fonts when supported, on a user gesture.
+            fontSelectEl.addEventListener('pointerdown', () => {
+                void tryLoadInstalledLocalFonts();
+            }, { passive: true });
         }
 
         setupFontDropdown();
