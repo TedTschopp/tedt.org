@@ -279,6 +279,24 @@
             white-space: pre-line;
         }
 
+        #actionMessage {
+            grid-column: 1 / -1;
+            padding: 8px 10px;
+            border-radius: 12px;
+            background: rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(0, 0, 0, 0.10);
+            color: rgba(0, 0, 0, 0.78);
+            font-size: 12px;
+            line-height: 1.25;
+            white-space: pre-line;
+            user-select: none;
+            display: none;
+        }
+
+        #actionMessage.is-visible {
+            display: block;
+        }
+
         #sr-help {
             position: absolute;
             left: -9999px;
@@ -319,8 +337,10 @@
             <div id="colorsPanelTitle">Colors</div>
             <div id="colorsList" aria-label="Color list"></div>
             <button id="addColorBtn" type="button">Add color</button>
+            <button id="saveUrlBtn" type="button">Save URL</button>
         </div>
 
+        <div id="actionMessage" aria-live="polite"></div>
         <div id="status" aria-live="polite"></div>
     </div>
     <script>
@@ -334,6 +354,8 @@
 
         const colorsListEl = document.getElementById('colorsList');
         const addColorBtnEl = document.getElementById('addColorBtn');
+        const saveUrlBtnEl = document.getElementById('saveUrlBtn');
+        const actionMessageEl = document.getElementById('actionMessage');
 
         const DEFAULT_SWATCH_FONT = 'sans-serif';
         const SWATCH_FONT_STORAGE_KEY = 'tedt_color_chart_swatch_font';
@@ -960,6 +982,14 @@
             return null;
         }
 
+        function getOriginalCParamValue() {
+            const urlSearchParams = new URLSearchParams(window.location.search);
+            for (const [key, value] of urlSearchParams.entries()) {
+                if (key.toLowerCase() === 'c') return value;
+            }
+            return null;
+        }
+
         const initialColors = (getUrlParameters() || [
             { hex: '#00664F' },
             { hex: '#FED141' },
@@ -976,6 +1006,10 @@
             { hex: '#F0B323' },
             { hex: '#722257' },
         ]);
+
+        const originalCParamRaw = getOriginalCParamValue();
+        const originalCParamDecodedLower = originalCParamRaw ? decodeURIComponent(String(originalCParamRaw).trim()).toLowerCase() : '';
+        let preservePresetC = (originalCParamDecodedLower === 'ted' || originalCParamDecodedLower === 'teds');
 
         const colorNameCache = new Map();
 
@@ -996,6 +1030,60 @@
         }
 
         let activeColors = initialColors.map(c => ({ hex: normalizeHex6(c.hex) }));
+
+        function setQueryParamCaseInsensitive(params, targetKey, value) {
+            const lower = String(targetKey).toLowerCase();
+            for (const key of Array.from(params.keys())) {
+                if (key.toLowerCase() === lower) params.delete(key);
+            }
+            params.set(targetKey, value);
+        }
+
+        function updateUrlFromActiveColors() {
+            if (preservePresetC) return;
+            const params = new URLSearchParams(window.location.search);
+            const hexList = activeColors
+                .map(c => normalizeHex6(c.hex))
+                .map(h => h.replace('#', ''))
+                .join(',');
+            setQueryParamCaseInsensitive(params, 'c', hexList);
+
+            const nextUrl = `${window.location.pathname}?${params.toString()}${window.location.hash || ''}`;
+            window.history.replaceState(null, '', nextUrl);
+        }
+
+        let actionMessageTimer = 0;
+
+        function showActionMessage(text) {
+            if (!actionMessageEl) return;
+            actionMessageEl.textContent = String(text || '');
+            actionMessageEl.classList.add('is-visible');
+            if (actionMessageTimer) window.clearTimeout(actionMessageTimer);
+            actionMessageTimer = window.setTimeout(() => {
+                actionMessageEl.classList.remove('is-visible');
+                actionMessageEl.textContent = '';
+                actionMessageTimer = 0;
+            }, 2200);
+        }
+
+        async function copyTextToClipboard(text) {
+            const value = String(text || '');
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                await navigator.clipboard.writeText(value);
+                return;
+            }
+            // Fallback for older browsers / insecure contexts.
+            const ta = document.createElement('textarea');
+            ta.value = value;
+            ta.setAttribute('readonly', '');
+            ta.style.position = 'fixed';
+            ta.style.left = '-9999px';
+            ta.style.top = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            document.execCommand('copy');
+            document.body.removeChild(ta);
+        }
 
         function getDerivedColorMeta(color) {
             const rgb = tinycolor(color.hex).toRgb();
@@ -1067,6 +1155,8 @@
                 delBtn.addEventListener('click', () => {
                     if (activeColors.length <= 1) return;
                     activeColors.splice(index, 1);
+                    preservePresetC = false;
+                    updateUrlFromActiveColors();
                     renderColorsOverlay();
                     scheduleRenderChart();
                 });
@@ -1074,6 +1164,8 @@
                 swatchEl.addEventListener('input', () => {
                     const nextHex = normalizeHex6(swatchEl.value);
                     activeColors[index].hex = nextHex;
+                    preservePresetC = false;
+                    updateUrlFromActiveColors();
                     hexEl.textContent = nextHex;
                     // Reset cached name for this entry.
                     nameEl.textContent = 'Loading…';
@@ -1355,8 +1447,23 @@
         if (addColorBtnEl) {
             addColorBtnEl.addEventListener('click', () => {
                 activeColors.push({ hex: '#808080' });
+                preservePresetC = false;
+                updateUrlFromActiveColors();
                 renderColorsOverlay();
                 scheduleRenderChart();
+            });
+        }
+
+        if (saveUrlBtnEl) {
+            saveUrlBtnEl.addEventListener('click', async () => {
+                try {
+                    preservePresetC = false;
+                    updateUrlFromActiveColors();
+                    await copyTextToClipboard(window.location.href);
+                    showActionMessage('Copied URL to clipboard.');
+                } catch {
+                    showActionMessage('Could not copy URL (clipboard unavailable).');
+                }
             });
         }
 
