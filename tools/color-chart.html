@@ -5,13 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Chart</title>
+    <link rel="stylesheet" href="/css/consolidated-fonts.css">
     <style>
+        :root {
+            --swatch-font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+
         body {
             margin: 0;
             background-color: #f4f4f4;
             height: 100vh;
             overflow: hidden;
             font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+        }
+
+        [data-color-chart] {
+            font-family: var(--swatch-font-family);
         }
 
         #viewport {
@@ -77,10 +86,52 @@
             outline-offset: 2px;
         }
 
+        #fontSelect {
+            height: 44px;
+            appearance: none;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #111;
+            font-size: 13px;
+            font-weight: 650;
+            padding: 0 12px;
+            cursor: pointer;
+            flex: 1;
+        }
+
+        #fontSelect:focus-visible {
+            outline: 3px solid rgba(0, 169, 224, 0.55);
+            outline-offset: 2px;
+        }
+
+        #fontRow {
+            grid-column: 1 / -1;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #fontPreview {
+            width: 44px;
+            height: 44px;
+            flex: 0 0 44px;
+            display: grid;
+            place-items: center;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #111;
+            font-size: 18px;
+            font-weight: 750;
+            line-height: 1;
+            user-select: none;
+        }
+
         #status {
             position: fixed;
             left: 14px;
-            top: 210px;
+            top: 260px;
             z-index: 10;
             padding: 8px 10px;
             border-radius: 12px;
@@ -111,7 +162,7 @@
         <div id="world"></div>
     </div>
 
-    <div id="controls" role="group" aria-label="Pan and zoom controls">
+    <div id="controls" role="group" aria-label="Chart controls">
         <button id="zoomIn" type="button" aria-label="Zoom in">+</button>
         <button id="reset" type="button" aria-label="Reset view">⟲</button>
         <button id="zoomOut" type="button" aria-label="Zoom out">−</button>
@@ -121,6 +172,10 @@
         <button id="panUp" type="button" aria-label="Pan up">↑</button>
         <button id="panCenter" type="button" aria-label="Center chart">◎</button>
         <button id="toggleStatus" type="button" aria-label="Toggle status">i</button>
+        <div id="fontRow" aria-label="Swatch typography">
+            <div id="fontPreview" aria-hidden="true">Aa</div>
+            <select id="fontSelect" aria-label="Swatch font"></select>
+        </div>
     </div>
 
     <div id="status" aria-live="polite"></div>
@@ -128,6 +183,163 @@
         const viewportEl = document.getElementById('viewport');
         const worldEl = document.getElementById('world');
         const statusEl = document.getElementById('status');
+
+        const fontSelectEl = document.getElementById('fontSelect');
+        const fontPreviewEl = document.getElementById('fontPreview');
+        const DEFAULT_SWATCH_FONT = 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif';
+        const SWATCH_FONT_STORAGE_KEY = 'tedt_color_chart_swatch_font';
+
+        const fontCatalog = [
+            // System
+            { group: 'System', label: 'System UI', css: DEFAULT_SWATCH_FONT },
+            { group: 'System', label: 'Monospace (System)', css: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
+
+            // Google fonts (loaded via /css/consolidated-fonts.css)
+            { group: 'Google Fonts', label: 'Cal Sans', css: '"Cal Sans", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Titillium Web', css: '"Titillium Web", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Inter', css: 'Inter, ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Inter Tight', css: '"Inter Tight", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Libre Franklin', css: '"Libre Franklin", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'IBM Plex Sans', css: '"IBM Plex Sans", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Space Grotesk', css: '"Space Grotesk", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Source Sans Pro', css: '"Source Sans Pro", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Merriweather Sans', css: '"Merriweather Sans", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Oswald', css: 'Oswald, ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Rajdhani', css: 'Rajdhani, ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Roboto', css: 'Roboto, ' + DEFAULT_SWATCH_FONT },
+
+            { group: 'Google Fonts', label: 'Fira Code', css: '"Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
+            { group: 'Google Fonts', label: 'Share Tech Mono', css: '"Share Tech Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
+            { group: 'Google Fonts', label: 'Press Start 2P', css: '"Press Start 2P", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
+
+            { group: 'Google Fonts', label: 'Arsenal', css: 'Arsenal, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Cinzel', css: 'Cinzel, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Cinzel Decorative', css: '"Cinzel Decorative", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Cormorant Garamond', css: '"Cormorant Garamond", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'EB Garamond', css: '"EB Garamond", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Crimson Pro', css: '"Crimson Pro", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Libre Baskerville', css: '"Libre Baskerville", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Cardo', css: 'Cardo, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Quattrocento', css: 'Quattrocento, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Playfair Display', css: '"Playfair Display", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Old Standard TT', css: '"Old Standard TT", "Palatino", "Book Antiqua", Georgia, serif' },
+
+            { group: 'Google Fonts', label: 'Spectral SC', css: '"Spectral SC", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'IM Fell DW Pica', css: '"IM Fell DW Pica", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'IM Fell English', css: '"IM Fell English", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Alice', css: 'Alice, "Palatino", "Book Antiqua", Georgia, serif' },
+
+            { group: 'Google Fonts', label: 'MedievalSharp', css: 'MedievalSharp, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Limelight', css: 'Limelight, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Orbitron', css: 'Orbitron, ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Audiowide', css: 'Audiowide, ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Special Elite', css: '"Special Elite", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
+            { group: 'Google Fonts', label: 'Bangers', css: 'Bangers, ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Noto Sans Runic', css: '"Noto Sans Runic", ' + DEFAULT_SWATCH_FONT },
+
+            { group: 'Google Fonts', label: 'Sofia Sans', css: '"Sofia Sans", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Sofia Sans Condensed', css: '"Sofia Sans Condensed", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Sofia Sans Semi Condensed', css: '"Sofia Sans Semi Condensed", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Sofia Sans Extra Condensed', css: '"Sofia Sans Extra Condensed", ' + DEFAULT_SWATCH_FONT },
+
+            { group: 'Google Fonts', label: 'Architects Daughter', css: '"Architects Daughter", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Cedarville Cursive', css: '"Cedarville Cursive", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Fondamento', css: 'Fondamento, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Fredericka the Great', css: '"Fredericka the Great", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Lovers Quarrel', css: '"Lovers Quarrel", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Marcellus', css: 'Marcellus, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'Patrick Hand', css: '"Patrick Hand", ' + DEFAULT_SWATCH_FONT },
+            { group: 'Google Fonts', label: 'Kalam', css: 'Kalam, ' + DEFAULT_SWATCH_FONT },
+
+            { group: 'Google Fonts', label: 'UnifrakturCook', css: 'UnifrakturCook, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'Google Fonts', label: 'UnifrakturMaguntia', css: 'UnifrakturMaguntia, "Palatino", "Book Antiqua", Georgia, serif' },
+
+            // Local / hosted fonts (loaded via /css/consolidated-fonts.css)
+            { group: 'TedT.org (Local)', label: 'Optima', css: 'Optima, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'Optima Titling', css: '"Optima Titling", Optima, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'Manuka', css: 'Manuka, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org (Local)', label: 'Manuka Condensed', css: 'ManukaCondensed, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org (Local)', label: 'Manuka Slab', css: 'ManukaSlab, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'PalmPilot', css: 'PalmPilot, ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
+            { group: 'TedT.org (Local)', label: 'Bestiary', css: 'Bestiary, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'Shadowrun', css: 'Shadowrun, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org (Local)', label: 'Checkbook', css: 'Checkbook, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org (Local)', label: 'Dana Library Hand', css: '"Dana Library Hand", ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org (Local)', label: 'Duvall', css: 'Duvall, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'GameEmpire', css: 'GameEmpire, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'IrwinAllen', css: 'IrwinAllen, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'lp1_regular', css: 'lp1_regular, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org (Local)', label: 'lowwe', css: 'lowwe, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'UngerFrakturZierbuchstaben', css: 'UngerFrakturZierbuchstaben, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'CedarvilleCursive', css: 'CedarvilleCursive, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org (Local)', label: 'coelnische_current_fraktur', css: 'coelnische_current_fraktur, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'strassburgfraktur', css: 'strassburgfraktur, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'SkennertonFraktur', css: 'SkennertonFraktur, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'Hillal', css: 'Hillal, ' + DEFAULT_SWATCH_FONT },
+            { group: 'TedT.org (Local)', label: 'AntiquarianScribe', css: 'AntiquarianScribe, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'TerraIgnota', css: 'TerraIgnota, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'Quentin', css: 'Quentin, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'Souvenir Demi', css: '"Souvenir Demi", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'Egyptienne MN Condensed Bold', css: '"Egyptienne MN Condensed Bold", "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'Ringbearer', css: 'Ringbearer, "Palatino", "Book Antiqua", Georgia, serif' },
+            { group: 'TedT.org (Local)', label: 'tschopp-housemark-optimum (icons)', css: '"tschopp-housemark-optimum", ' + DEFAULT_SWATCH_FONT },
+        ];
+
+        function applySwatchFont(fontCss) {
+            const value = (fontCss && String(fontCss).trim().length > 0) ? fontCss : DEFAULT_SWATCH_FONT;
+            document.documentElement.style.setProperty('--swatch-font-family', value);
+            fontSelectEl.style.fontFamily = value;
+            fontPreviewEl.style.fontFamily = value;
+        }
+
+        function setupFontDropdown() {
+            const groups = new Map();
+            for (const font of fontCatalog) {
+                if (!groups.has(font.group)) groups.set(font.group, []);
+                groups.get(font.group).push(font);
+            }
+
+            fontSelectEl.innerHTML = '';
+
+            for (const [groupName, fonts] of groups.entries()) {
+                const optGroupEl = document.createElement('optgroup');
+                optGroupEl.label = groupName;
+
+                fonts.forEach((font) => {
+                    const optionEl = document.createElement('option');
+                    optionEl.value = font.css;
+                    optionEl.textContent = font.label;
+                    optionEl.style.fontFamily = font.css;
+                    optGroupEl.appendChild(optionEl);
+                });
+
+                fontSelectEl.appendChild(optGroupEl);
+            }
+
+            const saved = localStorage.getItem(SWATCH_FONT_STORAGE_KEY);
+            const initialValue = (saved && saved.trim().length > 0) ? saved : DEFAULT_SWATCH_FONT;
+
+            // If the saved value isn't in the list, fall back cleanly.
+            const optionToSelect = Array.from(fontSelectEl.options).find(o => o.value === initialValue);
+            if (optionToSelect) {
+                fontSelectEl.value = initialValue;
+            } else {
+                fontSelectEl.value = DEFAULT_SWATCH_FONT;
+            }
+
+            applySwatchFont(fontSelectEl.value);
+
+            fontSelectEl.addEventListener('change', () => {
+                applySwatchFont(fontSelectEl.value);
+                try {
+                    localStorage.setItem(SWATCH_FONT_STORAGE_KEY, fontSelectEl.value);
+                } catch {
+                    // Ignore storage errors (private browsing, quota, etc.)
+                }
+            });
+        }
+
+        setupFontDropdown();
 
         const viewState = {
             x: 0,
@@ -254,7 +466,7 @@
 
         // Keyboard shortcuts
         window.addEventListener('keydown', (e) => {
-            if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA')) return;
+            if (e.target && (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA' || e.target.tagName === 'SELECT')) return;
             const step = e.shiftKey ? viewState.panStep * 2 : viewState.panStep;
             switch (e.key) {
                 case 'ArrowLeft':
@@ -449,7 +661,6 @@
                 usageDescription.textContent = colorUsageDescriptions[index];
                 usageDescription.style.fontSize = '16pt';
                 usageDescription.style.fontWeight = 'bold';
-                usageDescription.style.fontFamily = 'sans-serif';
                 usageDescription.style.textAlign = 'center';
 
                 headerCell.appendChild(usageDescription);
@@ -490,7 +701,6 @@
                     colorBox.style.alignItems = 'flex-start';
                     colorBox.style.justifyContent = 'flex-start';
                     colorBox.style.padding = '10px';
-                    colorBox.style.fontFamily = 'sans-serif';
                     colorBox.style.fontSize = '12px';
                     colorBox.style.textAlign = 'left';
                     colorBox.style.position = 'relative';
