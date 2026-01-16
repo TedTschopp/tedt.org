@@ -54,12 +54,12 @@
             left: 14px;
             z-index: 10;
             display: grid;
-            grid-template-columns: 44px 44px 44px;
+            grid-template-columns: repeat(3, minmax(44px, 1fr));
             grid-auto-rows: minmax(44px, auto);
             gap: 8px;
             padding: 10px;
             box-sizing: border-box;
-            width: calc(44px * 3 + 8px * 2 + 10px * 2);
+            width: min(460px, calc(100vw - 28px));
             border-radius: 14px;
             background: rgba(255, 255, 255, 0.82);
             border: 1px solid rgba(0, 0, 0, 0.12);
@@ -181,7 +181,7 @@
         #colorsList {
             display: grid;
             gap: 6px;
-            max-height: 240px;
+            max-height: 280px;
             overflow: auto;
             padding-right: 2px;
         }
@@ -229,7 +229,7 @@
             color: rgba(0, 0, 0, 0.62);
         }
 
-        .deleteColorBtn {
+        #controls button.deleteColorBtn {
             height: 28px;
             width: 36px;
             border-radius: 10px;
@@ -237,7 +237,7 @@
             font-weight: 800;
         }
 
-        #addColorBtn {
+        #controls #addColorBtn {
             height: 44px;
             appearance: none;
             border: 1px solid rgba(0, 0, 0, 0.14);
