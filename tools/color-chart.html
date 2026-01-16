@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="/css/consolidated-fonts.css">
     <style>
         :root {
-            --swatch-font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            /* Generic (browser-defined) default fonts */
+            --swatch-font-family: sans-serif;
         }
 
         body {
@@ -16,7 +17,7 @@
             background-color: #f4f4f4;
             height: 100vh;
             overflow: hidden;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+            font-family: sans-serif;
         }
 
         [data-color-chart] {
@@ -109,6 +110,54 @@
             outline-offset: 2px;
         }
 
+        #loadLocalFonts {
+            height: 44px;
+            appearance: none;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #111;
+            font-size: 13px;
+            font-weight: 650;
+            padding: 0 12px;
+            cursor: pointer;
+            grid-column: 1 / -1;
+            width: 100%;
+            min-width: 0;
+            display: grid;
+            place-items: center;
+        }
+
+        #loadLocalFonts:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        #loadLocalFonts:active {
+            transform: translateY(1px);
+        }
+
+        #loadLocalFonts:disabled {
+            cursor: not-allowed;
+            opacity: 0.55;
+        }
+
+        #loadLocalFonts:focus-visible {
+            outline: 3px solid rgba(0, 169, 224, 0.55);
+            outline-offset: 2px;
+        }
+
+        #fontHint {
+            grid-column: 1 / -1;
+            font-size: 11px;
+            line-height: 1.25;
+            color: rgba(0, 0, 0, 0.72);
+            margin-top: -2px;
+        }
+
+        #fontHint a {
+            color: inherit;
+        }
+
 
         #status {
             position: fixed;
@@ -155,6 +204,10 @@
         <button id="panCenter" type="button" aria-label="Center chart">◎</button>
         <button id="toggleStatus" type="button" aria-label="Toggle status">i</button>
         <select id="fontSelect" aria-label="Swatch font"></select>
+        <button id="loadLocalFonts" type="button">Load installed fonts</button>
+        <div id="fontHint">
+            Installed fonts require the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Local_Font_Access_API" target="_blank" rel="noreferrer">Local Font Access API</a> (permission + secure context).
+        </div>
     </div>
 
     <div id="status" aria-live="polite"></div>
@@ -164,13 +217,23 @@
         const statusEl = document.getElementById('status');
 
         const fontSelectEl = document.getElementById('fontSelect');
-        const DEFAULT_SWATCH_FONT = 'system-ui, -apple-system, Segoe UI, Roboto, sans-serif';
+        const loadLocalFontsBtnEl = document.getElementById('loadLocalFonts');
+        const fontHintEl = document.getElementById('fontHint');
+
+        const DEFAULT_SWATCH_FONT = 'sans-serif';
         const SWATCH_FONT_STORAGE_KEY = 'tedt_color_chart_swatch_font';
 
         const fontCatalog = [
-            // Local (system fonts + installed fonts when supported)
-            { group: 'Local', label: 'System UI', css: DEFAULT_SWATCH_FONT },
-            { group: 'Local', label: 'Monospace (System)', css: 'ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace' },
+            // Browser-generic defaults (defined by the user agent)
+            { group: 'Default', label: 'Sans-serif', css: 'sans-serif' },
+            { group: 'Default', label: 'Serif', css: 'serif' },
+            { group: 'Default', label: 'Monospace', css: 'monospace' },
+            { group: 'Default', label: 'Cursive', css: 'cursive' },
+            { group: 'Default', label: 'Fantasy', css: 'fantasy' },
+            { group: 'Default', label: 'System UI', css: 'system-ui' },
+            { group: 'Default', label: 'UI Sans-serif', css: 'ui-sans-serif, sans-serif' },
+            { group: 'Default', label: 'UI Serif', css: 'ui-serif, serif' },
+            { group: 'Default', label: 'UI Monospace', css: 'ui-monospace, monospace' },
 
             // Google fonts (loaded via /css/consolidated-fonts.css)
             { group: 'Google Fonts', label: 'Cal Sans', css: '"Cal Sans", ' + DEFAULT_SWATCH_FONT },
@@ -265,6 +328,16 @@
 
         let localFontsLoaded = false;
 
+        function supportsLocalFontAccessApi() {
+            return ('queryLocalFonts' in window) && (window.isSecureContext || location.hostname === 'localhost');
+        }
+
+        function setLocalFontHint(text, isError = false) {
+            if (!fontHintEl) return;
+            fontHintEl.style.color = isError ? 'rgba(120, 0, 0, 0.78)' : 'rgba(0, 0, 0, 0.72)';
+            fontHintEl.innerHTML = text;
+        }
+
         function quoteFontFamily(fontFamily) {
             const safe = String(fontFamily || '').replace(/\\/g, '\\\\').replace(/"/g, '\\"');
             return `"${safe}"`;
@@ -290,20 +363,31 @@
             localFontsLoaded = true;
 
             // Local Font Access API (Chromium-based browsers). Requires secure context + permission.
-            if (!('queryLocalFonts' in window)) return;
+            if (!supportsLocalFontAccessApi()) {
+                setLocalFontHint('Installed fonts unavailable here. Requires secure context + browser support.');
+                return;
+            }
 
             try {
+                // If Permissions API is available, hint at permission state.
+                try {
+                    if (navigator.permissions && navigator.permissions.query) {
+                        const result = await navigator.permissions.query({ name: 'local-fonts' });
+                        if (result && result.state === 'denied') {
+                            setLocalFontHint('Local font access is denied in this browser profile.', true);
+                            return;
+                        }
+                    }
+                } catch {
+                    // Ignore permission query failures (not consistently implemented).
+                }
+
                 const localFonts = await window.queryLocalFonts();
                 const families = Array.from(new Set(localFonts.map(f => f.family).filter(Boolean))).sort((a, b) => a.localeCompare(b));
                 if (families.length === 0) return;
 
-                const localGroup = getOrCreateOptgroup('Local');
+                const localGroup = getOrCreateOptgroup('Installed');
                 const fragment = document.createDocumentFragment();
-
-                const divider = document.createElement('option');
-                divider.disabled = true;
-                divider.textContent = '— Installed fonts —';
-                fragment.appendChild(divider);
 
                 for (const family of families) {
                     const optionEl = document.createElement('option');
@@ -313,8 +397,10 @@
                 }
 
                 localGroup.appendChild(fragment);
+                setLocalFontHint(`Loaded ${families.length} installed font families via Local Font Access API.`);
             } catch {
                 // User denied or API error; keep dropdown usable.
+                setLocalFontHint('Unable to load installed fonts (permission denied or unsupported).', true);
             }
         }
 
@@ -327,7 +413,7 @@
 
             fontSelectEl.innerHTML = '';
 
-            const preferredOrder = ['Local', 'TedT.org', 'Google Fonts'];
+            const preferredOrder = ['Default', 'Installed', 'TedT.org', 'Google Fonts'];
             const orderedGroups = [
                 ...preferredOrder.filter(name => groups.has(name)),
                 ...Array.from(groups.keys()).filter(name => !preferredOrder.includes(name)),
@@ -375,6 +461,17 @@
             fontSelectEl.addEventListener('pointerdown', () => {
                 void tryLoadInstalledLocalFonts();
             }, { passive: true });
+
+            if (loadLocalFontsBtnEl) {
+                loadLocalFontsBtnEl.disabled = !supportsLocalFontAccessApi();
+                loadLocalFontsBtnEl.addEventListener('click', () => {
+                    void tryLoadInstalledLocalFonts();
+                });
+            }
+
+            if (!supportsLocalFontAccessApi()) {
+                setLocalFontHint('Installed fonts unavailable here. Requires Chromium + HTTPS and permission.');
+            }
         }
 
         setupFontDropdown();
