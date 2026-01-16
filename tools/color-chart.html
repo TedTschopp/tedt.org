@@ -45,6 +45,7 @@
             top: 0;
             transform-origin: 0 0;
             will-change: transform;
+            font-family: var(--swatch-font-family);
         }
 
         #controls {
@@ -393,6 +394,12 @@
                 if (families.length === 0) return;
 
                 const localGroup = getOrCreateOptgroup('Installed');
+
+                // Remove placeholder (if present).
+                Array.from(localGroup.children)
+                    .filter(el => el.tagName === 'OPTION' && el.dataset && el.dataset.placeholder === 'installed')
+                    .forEach(el => el.remove());
+
                 const fragment = document.createDocumentFragment();
 
                 for (const family of families) {
@@ -427,7 +434,7 @@
 
             const preferredOrder = ['Default', 'Installed', 'TedT.org', 'Google Fonts'];
             const orderedGroups = [
-                ...preferredOrder.filter(name => groups.has(name)),
+                ...preferredOrder,
                 ...Array.from(groups.keys()).filter(name => !preferredOrder.includes(name)),
             ];
 
@@ -435,6 +442,14 @@
                 const fonts = groups.get(groupName) || [];
                 const optGroupEl = document.createElement('optgroup');
                 optGroupEl.label = groupName;
+
+                if (groupName === 'Installed' && fonts.length === 0) {
+                    const placeholderEl = document.createElement('option');
+                    placeholderEl.disabled = true;
+                    placeholderEl.textContent = '— Click “Load installed fonts” —';
+                    placeholderEl.dataset.placeholder = 'installed';
+                    optGroupEl.appendChild(placeholderEl);
+                }
 
                 fonts.forEach((font) => {
                     const optionEl = document.createElement('option');
