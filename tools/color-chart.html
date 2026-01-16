@@ -166,6 +166,103 @@
             color: inherit;
         }
 
+        #colorsPanel {
+            grid-column: 1 / -1;
+            display: grid;
+            gap: 8px;
+        }
+
+        #colorsPanelTitle {
+            font-size: 12px;
+            font-weight: 750;
+            color: rgba(0, 0, 0, 0.78);
+        }
+
+        #colorsList {
+            display: grid;
+            gap: 6px;
+        }
+
+        .colorRow {
+            display: grid;
+            grid-template-columns: 36px 1fr 36px;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 8px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.78);
+            border: 1px solid rgba(0, 0, 0, 0.10);
+        }
+
+        .colorSwatch {
+            width: 36px;
+            height: 28px;
+            padding: 0;
+            border: 1px solid rgba(0, 0, 0, 0.16);
+            border-radius: 10px;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        .colorMeta {
+            min-width: 0;
+            display: grid;
+            gap: 2px;
+        }
+
+        .colorName {
+            font-size: 12px;
+            font-weight: 700;
+            line-height: 1.1;
+            color: rgba(0, 0, 0, 0.88);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .colorHex {
+            font-size: 11px;
+            line-height: 1.1;
+            color: rgba(0, 0, 0, 0.62);
+        }
+
+        .deleteColorBtn {
+            height: 28px;
+            width: 36px;
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 800;
+        }
+
+        #addColorBtn {
+            height: 44px;
+            appearance: none;
+            border: 1px solid rgba(0, 0, 0, 0.14);
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.9);
+            color: #111;
+            font-size: 13px;
+            font-weight: 650;
+            padding: 0 12px;
+            cursor: pointer;
+            width: 100%;
+            display: grid;
+            place-items: center;
+        }
+
+        #addColorBtn:hover {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        #addColorBtn:active {
+            transform: translateY(1px);
+        }
+
+        #addColorBtn:focus-visible {
+            outline: 3px solid rgba(0, 169, 224, 0.55);
+            outline-offset: 2px;
+        }
+
 
         #status {
             grid-column: 1 / -1;
@@ -214,6 +311,13 @@
         <div id="fontHint">
             Installed fonts require the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Local_Font_Access_API" target="_blank" rel="noreferrer">Local Font Access API</a> (permission + secure context).
         </div>
+
+        <div id="colorsPanel" aria-label="Active colors">
+            <div id="colorsPanelTitle">Colors</div>
+            <div id="colorsList" aria-label="Color list"></div>
+            <button id="addColorBtn" type="button">Add color</button>
+        </div>
+
         <div id="status" aria-live="polite"></div>
     </div>
     <script>
@@ -224,6 +328,9 @@
         const fontSelectEl = document.getElementById('fontSelect');
         const loadLocalFontsBtnEl = document.getElementById('loadLocalFonts');
         const fontHintEl = document.getElementById('fontHint');
+
+        const colorsListEl = document.getElementById('colorsList');
+        const addColorBtnEl = document.getElementById('addColorBtn');
 
         const DEFAULT_SWATCH_FONT = 'sans-serif';
         const SWATCH_FONT_STORAGE_KEY = 'tedt_color_chart_swatch_font';
@@ -850,7 +957,7 @@
             return null;
         }
 
-        const colorDefinitions = (getUrlParameters() || [
+        const initialColors = (getUrlParameters() || [
             { hex: '#00664F' },
             { hex: '#FED141' },
             { hex: '#707372' },
@@ -865,12 +972,126 @@
             { hex: '#E87722' },
             { hex: '#F0B323' },
             { hex: '#722257' },
-        ]).map(color => ({
-            ...color,
-            rgb: tinycolor(color.hex).toRgb(),
-            hls: tinycolor(color.hex).toHsl(),
-            cmyk: convertRgbToCmyk(tinycolor(color.hex).toRgb().r, tinycolor(color.hex).toRgb().g, tinycolor(color.hex).toRgb().b),
-        }));
+        ]);
+
+        const colorNameCache = new Map();
+
+        function normalizeHex6(hex) {
+            const raw = String(hex || '').trim();
+            if (!raw) return '#000000';
+            let value = raw.startsWith('#') ? raw : `#${raw}`;
+            value = value.toUpperCase();
+            if (/^#[0-9A-F]{3}$/.test(value)) {
+                value = `#${value[1]}${value[1]}${value[2]}${value[2]}${value[3]}${value[3]}`;
+            }
+            if (/^#[0-9A-F]{8}$/.test(value)) {
+                // Color input doesn't support alpha; keep RGB portion.
+                value = value.slice(0, 7);
+            }
+            if (!/^#[0-9A-F]{6}$/.test(value)) return '#000000';
+            return value;
+        }
+
+        let activeColors = initialColors.map(c => ({ hex: normalizeHex6(c.hex) }));
+
+        function getDerivedColorMeta(color) {
+            const rgb = tinycolor(color.hex).toRgb();
+            return {
+                rgb,
+                hls: tinycolor(color.hex).toHsl(),
+                cmyk: convertRgbToCmyk(rgb.r, rgb.g, rgb.b),
+            };
+        }
+
+        async function getColorName(hex) {
+            const key = normalizeHex6(hex);
+            if (colorNameCache.has(key)) return colorNameCache.get(key);
+            try {
+                const name = await fetchColorNameFromApi(key);
+                const safe = (name && String(name).trim().length > 0) ? String(name).trim() : key;
+                colorNameCache.set(key, safe);
+                return safe;
+            } catch {
+                colorNameCache.set(key, key);
+                return key;
+            }
+        }
+
+        let renderChartRaf = 0;
+
+        function scheduleRenderChart() {
+            if (renderChartRaf) cancelAnimationFrame(renderChartRaf);
+            renderChartRaf = requestAnimationFrame(() => {
+                renderChartRaf = 0;
+                void renderChart({ center: false });
+            });
+        }
+
+        function renderColorsOverlay() {
+            if (!colorsListEl) return;
+            colorsListEl.innerHTML = '';
+
+            activeColors.forEach((color, index) => {
+                const rowEl = document.createElement('div');
+                rowEl.className = 'colorRow';
+
+                const swatchEl = document.createElement('input');
+                swatchEl.type = 'color';
+                swatchEl.className = 'colorSwatch';
+                swatchEl.value = normalizeHex6(color.hex);
+                swatchEl.setAttribute('aria-label', `Pick color ${index + 1}`);
+
+                const metaEl = document.createElement('div');
+                metaEl.className = 'colorMeta';
+
+                const nameEl = document.createElement('div');
+                nameEl.className = 'colorName';
+                nameEl.textContent = 'Loading…';
+
+                const hexEl = document.createElement('div');
+                hexEl.className = 'colorHex';
+                hexEl.textContent = normalizeHex6(color.hex);
+
+                metaEl.appendChild(nameEl);
+                metaEl.appendChild(hexEl);
+
+                const delBtn = document.createElement('button');
+                delBtn.type = 'button';
+                delBtn.className = 'deleteColorBtn';
+                delBtn.textContent = '×';
+                delBtn.setAttribute('aria-label', `Delete color ${index + 1}`);
+
+                delBtn.addEventListener('click', () => {
+                    if (activeColors.length <= 1) return;
+                    activeColors.splice(index, 1);
+                    renderColorsOverlay();
+                    scheduleRenderChart();
+                });
+
+                swatchEl.addEventListener('input', () => {
+                    const nextHex = normalizeHex6(swatchEl.value);
+                    activeColors[index].hex = nextHex;
+                    hexEl.textContent = nextHex;
+                    // Reset cached name for this entry.
+                    nameEl.textContent = 'Loading…';
+                    void getColorName(nextHex).then(n => {
+                        nameEl.textContent = n;
+                    });
+                    scheduleRenderChart();
+                });
+
+                rowEl.appendChild(swatchEl);
+                rowEl.appendChild(metaEl);
+                rowEl.appendChild(delBtn);
+
+                colorsListEl.appendChild(rowEl);
+
+                void getColorName(color.hex).then(n => {
+                    // Ensure we don't overwrite if this row has been rebuilt.
+                    if (rowEl.isConnected) nameEl.textContent = n;
+                });
+            });
+        }
 
         const colorUsageDescriptions = [
             "Backgrounds and subtle highlights", // 50
@@ -923,7 +1144,7 @@
 
         const colorShades = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950'];
 
-        async function generateColorChart() {
+        async function generateColorChart({ center = false } = {}) {
             const chartContainer = document.createElement('div');
             chartContainer.setAttribute('data-color-chart', 'true');
             chartContainer.style.display = 'grid';
@@ -960,6 +1181,11 @@
             });
 
             chartContainer.insertBefore(headerRow, chartContainer.firstChild);
+
+            const colorDefinitions = activeColors.map(color => ({
+                ...color,
+                ...getDerivedColorMeta(color),
+            }));
 
             for (const color of colorDefinitions) {
                 const baseRgb = tinycolor(color.hex).toRgb();
@@ -1110,11 +1336,28 @@
             }
 
             // Initial view: center the generated chart.
-            centerChart();
+            if (center) centerChart();
+        }
+
+        async function renderChart({ center = false } = {}) {
+            // Clear existing chart before re-render.
+            worldEl.innerHTML = '';
+            await generateColorChart({ center });
+            // Ensure transform/status stay current.
+            applyTransform();
         }
 
         applyTransform();
-        generateColorChart().then(() => {
+        renderColorsOverlay();
+        if (addColorBtnEl) {
+            addColorBtnEl.addEventListener('click', () => {
+                activeColors.push({ hex: '#808080' });
+                renderColorsOverlay();
+                scheduleRenderChart();
+            });
+        }
+
+        renderChart({ center: true }).then(() => {
             // Center and ensure status is correct once layout is ready.
             requestAnimationFrame(() => {
                 centerChart();
