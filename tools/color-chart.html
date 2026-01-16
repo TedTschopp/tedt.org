@@ -181,12 +181,15 @@
         #colorsList {
             display: grid;
             gap: 6px;
+            max-height: 240px;
+            overflow: auto;
+            padding-right: 2px;
         }
 
         .colorRow {
             display: grid;
             grid-template-columns: 36px 1fr 36px;
-            align-items: center;
+            align-items: start;
             gap: 8px;
             padding: 6px 8px;
             border-radius: 12px;
@@ -215,9 +218,9 @@
             font-weight: 700;
             line-height: 1.1;
             color: rgba(0, 0, 0, 0.88);
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
+            white-space: normal;
+            overflow-wrap: anywhere;
+            word-break: break-word;
         }
 
         .colorHex {
