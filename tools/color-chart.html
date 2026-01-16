@@ -352,6 +352,73 @@
             const value = (fontCss && String(fontCss).trim().length > 0) ? fontCss : DEFAULT_SWATCH_FONT;
             document.documentElement.style.setProperty('--swatch-font-family', value);
             fontSelectEl.style.fontFamily = value;
+
+            // Font metrics affect wrapping; re-normalize box layout after change.
+            scheduleNormalizeColorBoxes();
+        }
+
+        let normalizeColorBoxesRaf = 0;
+
+        function scheduleNormalizeColorBoxes() {
+            if (normalizeColorBoxesRaf) cancelAnimationFrame(normalizeColorBoxesRaf);
+            normalizeColorBoxesRaf = requestAnimationFrame(() => {
+                normalizeColorBoxesRaf = 0;
+                normalizeColorBoxes();
+            });
+        }
+
+        function normalizeColorBoxes() {
+            const boxes = Array.from(worldEl.querySelectorAll('.color-box'));
+            if (boxes.length === 0) return;
+
+            const slots = [
+                'title',
+                'subtitle',
+                'hex',
+                'rgb',
+                'cmyk',
+                'hls',
+                'wcagWhite',
+                'wcagBlack',
+                'sample',
+            ];
+
+            // Clear any previous normalization so measurements reflect intrinsic layout.
+            for (const box of boxes) {
+                box.style.minHeight = '';
+                for (const slot of slots) {
+                    const el = box.querySelector(`[data-slot="${slot}"]`);
+                    if (el) el.style.minHeight = '';
+                }
+            }
+
+            const maxBySlot = Object.fromEntries(slots.map(s => [s, 0]));
+            for (const box of boxes) {
+                for (const slot of slots) {
+                    const el = box.querySelector(`[data-slot="${slot}"]`);
+                    if (!el) continue;
+                    maxBySlot[slot] = Math.max(maxBySlot[slot], el.getBoundingClientRect().height);
+                }
+            }
+
+            for (const box of boxes) {
+                for (const slot of slots) {
+                    const el = box.querySelector(`[data-slot="${slot}"]`);
+                    if (!el) continue;
+                    const h = Math.ceil(maxBySlot[slot]);
+                    if (h > 0) el.style.minHeight = `${h}px`;
+                }
+            }
+
+            // Ensure every box has the same overall height too.
+            let maxBoxHeight = 0;
+            for (const box of boxes) {
+                maxBoxHeight = Math.max(maxBoxHeight, box.getBoundingClientRect().height);
+            }
+            maxBoxHeight = Math.ceil(maxBoxHeight);
+            for (const box of boxes) {
+                if (maxBoxHeight > 0) box.style.minHeight = `${maxBoxHeight}px`;
+            }
         }
 
         function getOrCreateOptgroup(label) {
@@ -847,6 +914,7 @@
 
                 const shadeBoxes = colorShades.map(async (shade, index) => {
                     const colorBox = document.createElement('div');
+                    colorBox.className = 'color-box';
                     const shadeColors = {
                         50: tinycolor(color.hex).clone().lighten(45).toHexString(),
                         100: tinycolor(color.hex).clone().lighten(40).toHexString(),
@@ -861,7 +929,6 @@
                         950: tinycolor(color.hex).clone().darken(45).toHexString(),
                     };
                     colorBox.style.backgroundColor = shadeColors[shade];
-                    colorBox.style.height = '150px';
                     colorBox.style.borderRadius = '8px';
                     colorBox.style.display = 'flex';
                     colorBox.style.flexDirection = 'column';
@@ -882,6 +949,7 @@
                     const recalculatedRgbArray = [recalculatedRgb.r, recalculatedRgb.g, recalculatedRgb.b];
                     const dynamicColorName = await fetchColorNameFromApi(shadeColors[shade]);
                     const dynamicNameElement = document.createElement('div');
+                    dynamicNameElement.dataset.slot = 'title';
                     dynamicNameElement.textContent = `${dynamicColorName}`;
                     dynamicNameElement.style.fontWeight = 'bold';
                     dynamicNameElement.style.textDecoration = 'underline';
@@ -889,6 +957,7 @@
                     colorBox.appendChild(dynamicNameElement);
 
                     const baseColorNameElement = document.createElement('div');
+                    baseColorNameElement.dataset.slot = 'subtitle';
                     if (shade === '500') {
                         baseColorNameElement.textContent = `Base Color`;
                     } else {
@@ -899,16 +968,20 @@
                     colorBox.appendChild(baseColorNameElement);
 
                     const hexElement = document.createElement('div');
+                    hexElement.dataset.slot = 'hex';
                     hexElement.innerHTML = `<strong>Hex:</strong> ${shadeColors[shade].toUpperCase()}`;
 
                     const rgbElement = document.createElement('div');
+                    rgbElement.dataset.slot = 'rgb';
                     rgbElement.innerHTML = `<strong>RGB:</strong> ${recalculatedRgbArray.join(', ')}`;
 
                     const cmykElement = document.createElement('div');
+                    cmykElement.dataset.slot = 'cmyk';
                     const recalculatedCmyk = convertRgbToCmyk(...recalculatedRgbArray).map(value => isNaN(value) ? 0 : value);
                     cmykElement.innerHTML = `<strong>CMYK:</strong> ${recalculatedCmyk.join(', ')}`;
 
                     const hlsElement = document.createElement('div');
+                    hlsElement.dataset.slot = 'hls';
                     const recalculatedHls = tinycolor(shadeColors[shade]).toHsl();
                     const recalculatedHlsArray = [
                         Math.round(recalculatedHls.h),
@@ -934,14 +1007,17 @@
                     }
 
                     const contrastWithWhiteElement = document.createElement('div');
+                    contrastWithWhiteElement.dataset.slot = 'wcagWhite';
                     contrastWithWhiteElement.innerHTML = `<strong>WCAG:White:</strong> ${contrastWithWhiteRatio}:1`;
                     colorBox.appendChild(contrastWithWhiteElement);
 
                     const contrastWithBlackElement = document.createElement('div');
+                    contrastWithBlackElement.dataset.slot = 'wcagBlack';
                     contrastWithBlackElement.innerHTML = `<strong>WCAG:Black</strong> ${contrastWithBlackRatio}:1`;
                     colorBox.appendChild(contrastWithBlackElement);
 
                     const sampleTextElement = document.createElement('div');
+                    sampleTextElement.dataset.slot = 'sample';
                     sampleTextElement.textContent = 'Gg Aa Rr Qq Ss';
                     sampleTextElement.style.fontSize = '16pt';
                     sampleTextElement.style.fontWeight = 'bold';
@@ -962,6 +1038,18 @@
             }
 
             // Chart container already attached to world.
+
+            // Normalize square sizing once everything is laid out.
+            scheduleNormalizeColorBoxes();
+
+            // Normalize again after fonts are ready (Google fonts / local selection).
+            if (document.fonts && document.fonts.ready) {
+                try {
+                    document.fonts.ready.then(() => scheduleNormalizeColorBoxes());
+                } catch {
+                    // Ignore.
+                }
+            }
 
             // Initial view: center the generated chart.
             centerChart();
