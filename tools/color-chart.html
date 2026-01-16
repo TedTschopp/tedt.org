@@ -348,6 +348,38 @@
             return `"${safe}"`;
         }
 
+        function getFirstFontFamily(fontCss) {
+            const css = String(fontCss || '').trim();
+            if (!css) return '';
+            // Extract first family token (handles quoted family names).
+            if (css.startsWith('"') || css.startsWith("'")) {
+                const quote = css[0];
+                const end = css.indexOf(quote, 1);
+                if (end > 1) return css.slice(0, end + 1);
+                return '';
+            }
+            const comma = css.indexOf(',');
+            const token = (comma >= 0 ? css.slice(0, comma) : css).trim();
+            return token;
+        }
+
+        function scheduleNormalizeAfterFontLoad(fontCss) {
+            const family = getFirstFontFamily(fontCss);
+            if (!family || !document.fonts || !document.fonts.load) return;
+
+            // Try a couple of shorthands that match our usage (bold 12pt/16pt).
+            const probes = [
+                `700 12pt ${family}`,
+                `700 16pt ${family}`,
+            ];
+
+            Promise.allSettled(probes.map(p => document.fonts.load(p)))
+                .then(() => scheduleNormalizeColorBoxes())
+                .catch(() => {
+                    // Ignore font loading errors.
+                });
+        }
+
         function applySwatchFont(fontCss) {
             const value = (fontCss && String(fontCss).trim().length > 0) ? fontCss : DEFAULT_SWATCH_FONT;
             document.documentElement.style.setProperty('--swatch-font-family', value);
@@ -355,6 +387,9 @@
 
             // Font metrics affect wrapping; re-normalize box layout after change.
             scheduleNormalizeColorBoxes();
+
+            // Re-normalize again once the selected font is actually available.
+            scheduleNormalizeAfterFontLoad(value);
         }
 
         let normalizeColorBoxesRaf = 0;
@@ -381,7 +416,7 @@
                 return rect ? rect.height : 0;
             };
 
-            const slots = [
+            const preferredSlots = [
                 'title',
                 'subtitle',
                 'hex',
@@ -391,6 +426,19 @@
                 'wcagWhite',
                 'wcagBlack',
                 'sample',
+            ];
+
+            // Cover *all* defined slots so future fields stay aligned automatically.
+            const discovered = new Set();
+            for (const box of boxes) {
+                for (const el of Array.from(box.querySelectorAll('[data-slot]'))) {
+                    const slot = el?.dataset?.slot;
+                    if (slot) discovered.add(slot);
+                }
+            }
+            const slots = [
+                ...preferredSlots.filter(s => discovered.has(s)),
+                ...Array.from(discovered).filter(s => !preferredSlots.includes(s)).sort((a, b) => a.localeCompare(b)),
             ];
 
             // Clear any previous normalization so measurements reflect intrinsic layout.
