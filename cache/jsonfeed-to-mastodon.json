@@ -3570,5 +3570,34 @@
       "https://tschopp.net/users/Ted/statuses/115907712873941479"
     ],
     "lastTootTimestamp": 1768611341608
+  },
+  "https://tedt.org/The-Death-of-Software/": {
+    "id": "/The-Death-of-Software/",
+    "title": "The Death of Software 2.0",
+    "summary": "Using the memory hierarchy as an analogy, this essay argues that AI agents will become the fast, non-persistent layer for information work—while durable systems of record (data, state, APIs) become the true value layer.",
+    "content_text": "Using the memory hierarchy as an analogy, this essay argues that AI agents will become the fast, non-persistent layer for information work—while durable systems of record (data, state, APIs) become the true value layer. https://tedt.org/The-Death-of-Software/",
+    "url": "https://tedt.org/The-Death-of-Software/",
+    "image": "https://tedt.org/img/2026-01/Memory-vs-Software.webp",
+    "tags": [
+      "AI",
+      "Agents",
+      "Claude",
+      "SaaS",
+      "APIs",
+      "Infrastructure",
+      "Product strategy",
+      "Memory hierarchy"
+    ],
+    "date_published": "2026-01-16T07:00:00-08:00",
+    "date_modified": "2026-01-16T07:00:00-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115909043216153074"
+    ],
+    "lastTootTimestamp": 1768631640975
   }
 }
