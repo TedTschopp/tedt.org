@@ -3528,5 +3528,47 @@
       "https://tschopp.net/users/Ted/statuses/115885279355609200"
     ],
     "lastTootTimestamp": 1768269033231
+  },
+  "https://tedt.org/2026-01-16-The-Death-of-Software/": {
+    "id": "/2026-01-16-The-Death-of-Software/",
+    "title": null,
+    "summary": "",
+    "content_text": "The age of PDF is over. The time of markdown has begun. Why Memory Hierarchies are the best analogy for how software must change. And why Software it’s unlikely to command the most value.When I last wrote about software, I received significant pushback. Today, I believe that Claude Code is confirming the original case I had all along. Software is going to become an output of hardware and an exten… https://tedt.org/2026-01-16-The-Death-of-Software/",
+    "url": "https://tedt.org/2026-01-16-The-Death-of-Software/",
+    "date_published": "2026-01-16T16:43:43-08:00",
+    "date_modified": "2026-01-16T16:43:43-08:00",
+    "author": {
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/",
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "givenname": "Ted",
+      "familyname": "Tschopp",
+      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்",
+      "biography": [
+        "I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.",
+        "Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.",
+        "I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools."
+      ],
+      "email": "ted@tschopp.org",
+      "phonenumber": null,
+      "keybaseio_username": "tedtschopp",
+      "twitter_username": "TedTschopp",
+      "github_username": "TedTschopp",
+      "linkedin_username": "tedtschopp",
+      "facebook_username": "ted.tschopp",
+      "google_username": "TedTschopp",
+      "youtube_username": "TedTschopp",
+      "pinterest_username": "TedTschopp",
+      "reddit_username": "tedtschopp",
+      "instagram_username": "tedtschopp",
+      "quora_username": "Ted-Tschopp",
+      "indiewebcamp_username": "Www.tedt.org",
+      "mastodon_username": "TedT@twit.social",
+      "threads_username": "tedtschopp"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115907712873941479"
+    ],
+    "lastTootTimestamp": 1768611341608
   }
 }
