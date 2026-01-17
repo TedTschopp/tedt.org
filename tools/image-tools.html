@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Image Tools (Phase 4)</title>
+	<link rel="stylesheet" href="../css/consolidated-fonts.css">
+	<link rel="stylesheet" href="image-tools/image-tools.css">
+</head>
+
+<body>
+	<main data-image-tools>
+		<div id="controls" aria-label="Controls">
+			<header class="header">
+				<h1 class="title">Image Tools</h1>
+				<p class="subtitle">Phase 4: JPEG optimization with quality + side-by-side comparison.</p>
+			</header>
+
+			<nav class="tabs" role="tablist" aria-label="Tool collections">
+				<button class="tab" id="tab-editor" role="tab" aria-selected="true" aria-controls="panel-editor" data-tab="editor" type="button">Editor</button>
+				<button class="tab" id="tab-raster-to-svg" role="tab" aria-selected="false" aria-controls="panel-raster-to-svg" data-tab="raster-to-svg" type="button">Raster → SVG</button>
+				<button class="tab" id="tab-svg-to-raster" role="tab" aria-selected="false" aria-controls="panel-svg-to-raster" data-tab="svg-to-raster" type="button">SVG → Raster</button>
+			</nav>
+
+			<div id="panel-editor" class="tab-panel" role="tabpanel" aria-labelledby="tab-editor" data-panel="editor">
+				<div class="controls-row">
+				<input id="fileInput" class="sr-only" type="file" accept="image/*" />
+
+				<button id="chooseBtn" type="button" class="btn btn-primary">Choose file</button>
+				<button id="pasteBtn" type="button" class="btn" aria-describedby="pasteHint">Paste</button>
+				<button id="resetBtn" type="button" class="btn btn-danger" disabled>Reset</button>
+				</div>
+
+				<div class="control-grid" aria-label="Crop controls">
+				<label class="field">
+					<span class="label">Aspect</span>
+					<select id="aspectSelect" class="select">
+						<option value="1:1" selected>Square (1:1)</option>
+						<option value="4:5">Portrait (4:5)</option>
+						<option value="16:9">Landscape (16:9)</option>
+						<option value="original">Original</option>
+					</select>
+				</label>
+
+				<label class="field">
+					<span class="label">Zoom</span>
+					<div class="zoom-row">
+						<input id="zoomRange" type="range" min="1" max="4" step="0.01" value="1" disabled />
+						<span id="zoomValue" class="zoom-value">100%</span>
+					</div>
+				</label>
+
+				<div class="control-actions">
+					<button id="fitBtn" type="button" class="btn" disabled>Fit</button>
+					<button id="centerCropBtn" type="button" class="btn" disabled>Center crop</button>
+				</div>
+				</div>
+
+				<div class="control-grid" aria-label="Export controls">
+				<div class="row-head">
+					<div class="row-title">Export</div>
+					<div id="exportSize" class="row-subtitle">Estimated size: —</div>
+				</div>
+
+				<div class="size-grid" aria-label="Output size">
+					<label class="field">
+						<span class="label">Width (px)</span>
+						<input id="outWidth" class="input" type="number" inputmode="numeric" min="1" step="1" value="512" disabled />
+					</label>
+					<label class="field">
+						<span class="label">Height (px)</span>
+						<input id="outHeight" class="input" type="number" inputmode="numeric" min="1" step="1" value="512" disabled />
+					</label>
+				</div>
+
+				<div class="toggle-row">
+					<label class="toggle">
+						<input id="lockAspect" type="checkbox" checked disabled />
+						<span>Lock aspect</span>
+					</label>
+					<button id="useCropSizeBtn" type="button" class="btn btn-compact" disabled>Use crop size</button>
+				</div>
+
+				<div class="size-grid" aria-label="Background and format">
+					<label class="field">
+						<span class="label">Format</span>
+						<select id="formatSelect" class="select" disabled>
+							<option value="png" selected>PNG</option>
+							<option value="jpeg">JPEG</option>
+						</select>
+					</label>
+					<label class="field">
+						<span class="label">Background</span>
+						<div class="bg-row">
+							<input id="bgColor" class="color" type="color" value="#ffffff" disabled />
+							<label class="toggle small">
+								<input id="bgTransparent" type="checkbox" checked disabled />
+								<span>Transparent</span>
+							</label>
+						</div>
+					</label>
+				</div>
+
+				<div id="jpegControls" class="jpeg-controls" aria-label="JPEG optimization" hidden>
+					<label class="field">
+						<span class="label">JPEG quality</span>
+						<div class="quality-row">
+							<input id="jpegQuality" type="range" min="0.1" max="1" step="0.01" value="0.82" disabled />
+							<span id="jpegQualityValue" class="zoom-value">82%</span>
+						</div>
+					</label>
+					<div class="hint">Tip: lower quality = smaller files (with more artifacts).</div>
+				</div>
+
+				<div class="control-actions">
+					<button id="exportBtn" type="button" class="btn btn-primary" disabled>Export</button>
+					<button id="copyBtn" type="button" class="btn" disabled>Copy</button>
+				</div>
+				</div>
+
+				<p id="pasteHint" class="hint">
+				Tip: press <kbd>⌘</kbd>+<kbd>V</kbd> (Mac) or <kbd>Ctrl</kbd>+<kbd>V</kbd> after copying an image.
+				</p>
+
+				<div id="dropZone" class="drop-zone" tabindex="0" role="button" aria-label="Drop an image here or press Enter to choose a file">
+				<div class="drop-zone-inner">
+					<div class="drop-title">Drop image here</div>
+					<div class="drop-subtitle">or click / press Enter</div>
+				</div>
+				</div>
+
+				<div class="status" aria-live="polite" aria-atomic="true">
+				<span id="statusText">No image loaded.</span>
+				</div>
+			</div>
+
+			<div id="panel-raster-to-svg" class="tab-panel" role="tabpanel" aria-labelledby="tab-raster-to-svg" data-panel="raster-to-svg" hidden>
+				<div class="controls-row">
+					<input id="r2sFileInput" class="sr-only" type="file" accept="image/*" />
+					<button id="r2sChooseBtn" type="button" class="btn btn-primary">Choose</button>
+					<button id="r2sPasteBtn" type="button" class="btn" aria-describedby="r2sPasteHint">Paste</button>
+					<button id="r2sResetBtn" type="button" class="btn btn-danger" disabled>Reset</button>
+				</div>
+				<p id="r2sPasteHint" class="hint">Tip: you can also paste (Cmd/Ctrl+V) after copying an image.</p>
+				<div id="r2sDropZone" class="drop-zone" tabindex="0" role="button" aria-label="Drop an image here or press Enter to choose a file">
+					<div class="drop-zone-inner">
+						<div class="drop-title">Drop raster image</div>
+						<div class="drop-subtitle">or click / press Enter</div>
+					</div>
+				</div>
+				<div class="control-grid" aria-label="Raster to SVG output">
+					<div class="row-head">
+						<div class="row-title">SVG Output</div>
+						<div id="r2sMeta" class="row-subtitle">—</div>
+					</div>
+					<div class="control-actions">
+						<button id="r2sCopyBtn" type="button" class="btn" disabled>Copy SVG</button>
+						<button id="r2sDownloadBtn" type="button" class="btn btn-primary" disabled>Download .svg</button>
+					</div>
+				</div>
+				<div class="status" aria-live="polite" aria-atomic="true"><span id="r2sStatusText">No image loaded.</span></div>
+			</div>
+
+			<div id="panel-svg-to-raster" class="tab-panel" role="tabpanel" aria-labelledby="tab-svg-to-raster" data-panel="svg-to-raster" hidden>
+				<div class="controls-row">
+					<input id="s2rFileInput" class="sr-only" type="file" accept="image/svg+xml,.svg" />
+					<button id="s2rChooseBtn" type="button" class="btn btn-primary">Choose</button>
+					<button id="s2rPasteBtn" type="button" class="btn" aria-describedby="s2rPasteHint">Paste</button>
+					<button id="s2rResetBtn" type="button" class="btn btn-danger" disabled>Reset</button>
+				</div>
+				<p id="s2rPasteHint" class="hint">Paste SVG markup (or an SVG file).</p>
+				<div class="control-grid" aria-label="SVG to Raster controls">
+					<label class="field">
+						<span class="label">Format</span>
+						<select id="s2rFormat" class="select" disabled>
+							<option value="png" selected>PNG</option>
+							<option value="jpeg">JPEG</option>
+						</select>
+					</label>
+					<div class="size-grid" aria-label="Output size">
+						<label class="field">
+							<span class="label">Width (px)</span>
+							<input id="s2rOutWidth" class="input" type="number" inputmode="numeric" min="1" step="1" value="512" disabled />
+						</label>
+						<label class="field">
+							<span class="label">Height (px)</span>
+							<input id="s2rOutHeight" class="input" type="number" inputmode="numeric" min="1" step="1" value="512" disabled />
+						</label>
+					</div>
+					<label class="field">
+						<span class="label">Padding (px)</span>
+						<input id="s2rPadding" class="input" type="number" inputmode="numeric" min="0" step="1" value="0" disabled />
+					</label>
+					<label class="field">
+						<span class="label">Background</span>
+						<div class="bg-row">
+							<input id="s2rBgColor" class="color" type="color" value="#ffffff" disabled />
+							<label class="toggle small">
+								<input id="s2rTransparent" type="checkbox" checked disabled />
+								<span>Transparent</span>
+							</label>
+						</div>
+					</label>
+					<div class="row-head">
+						<div class="row-title">Export</div>
+						<div id="s2rSize" class="row-subtitle">Estimated size: —</div>
+					</div>
+					<div class="control-actions">
+						<button id="s2rExportBtn" type="button" class="btn btn-primary" disabled>Export</button>
+						<button id="s2rCopyBtn" type="button" class="btn" disabled>Copy</button>
+					</div>
+				</div>
+				<div class="status" aria-live="polite" aria-atomic="true"><span id="s2rStatusText">No SVG loaded.</span></div>
+			</div>
+		</div>
+
+		<div id="viewport" aria-label="Preview area">
+			<div id="view-editor" class="view" data-view="editor">
+			<section class="card" aria-label="Preview">
+				<div class="editor-grid">
+					<div class="editor-pane">
+						<div class="editor-stage">
+							<canvas id="editorCanvas" class="editor-canvas" aria-label="Crop editor"></canvas>
+							<div id="previewPlaceholder" class="preview-placeholder">Drop or paste an image to begin.</div>
+							<img id="previewImage" class="preview-image" alt="Selected image preview" />
+						</div>
+						<p class="micro-hint">
+							Drag crop box to move, drag corners to resize. Drag outside crop to pan. Scroll to zoom.
+						</p>
+					</div>
+
+					<div class="preview-pane" aria-label="Cropped preview">
+						<div class="preview-title">Cropped preview</div>
+						<canvas id="cropPreview" class="crop-canvas"></canvas>
+						<div class="preview-meta" id="cropMeta">—</div>
+					</div>
+				</div>
+
+				<dl class="meta" aria-label="Image details">
+					<div class="meta-row">
+						<dt>Name</dt>
+						<dd id="metaName">—</dd>
+					</div>
+					<div class="meta-row">
+						<dt>Type</dt>
+						<dd id="metaType">—</dd>
+					</div>
+					<div class="meta-row">
+						<dt>Size</dt>
+						<dd id="metaSize">—</dd>
+					</div>
+					<div class="meta-row">
+						<dt>Dimensions</dt>
+						<dd id="metaDims">—</dd>
+					</div>
+				</dl>
+			</section>
+
+			<section id="jpegCompare" class="card" aria-label="JPEG comparison" hidden>
+				<div class="compare-head">
+					<div class="row-title">JPEG Comparison</div>
+					<div class="row-subtitle">Same crop + size, different quality.</div>
+				</div>
+				<div class="compare-grid">
+					<div class="compare-col">
+						<div class="compare-title">Baseline</div>
+						<div class="compare-meta" id="jpegBaselineMeta">—</div>
+						<div class="compare-frame">
+							<img id="jpegBaselineImg" alt="Baseline JPEG preview" />
+						</div>
+					</div>
+
+					<div class="compare-col">
+						<div class="compare-title">Optimized</div>
+						<div class="compare-meta" id="jpegOptimizedMeta">—</div>
+						<div class="compare-frame">
+							<img id="jpegOptimizedImg" alt="Optimized JPEG preview" />
+						</div>
+					</div>
+				</div>
+				<p class="micro-hint">Baseline uses a fixed quality (92%). Optimized uses your slider setting.</p>
+			</section>
+			</div>
+
+			<div id="view-raster-to-svg" class="view" data-view="raster-to-svg" hidden>
+				<section class="card" aria-label="Raster to SVG">
+					<div class="row-head">
+						<div class="row-title">Raster → SVG</div>
+						<div class="row-subtitle">Wrap the raster inside an SVG <code>&lt;image&gt;</code>.</div>
+					</div>
+					<div class="compare-grid">
+						<div class="compare-col">
+							<div class="compare-title">SVG preview</div>
+							<div class="compare-frame">
+								<iframe id="r2sPreview" title="SVG preview" class="iframe" sandbox="allow-same-origin"></iframe>
+							</div>
+						</div>
+						<div class="compare-col">
+							<div class="compare-title">SVG source</div>
+							<textarea id="r2sSource" class="textarea" rows="14" readonly></textarea>
+							<p class="micro-hint">This is an embed wrapper, not a vector trace.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div id="view-svg-to-raster" class="view" data-view="svg-to-raster" hidden>
+				<section class="card" aria-label="SVG to Raster">
+					<div class="compare-grid">
+						<div class="compare-col">
+							<div class="compare-title">SVG input</div>
+							<textarea id="s2rSource" class="textarea" rows="14" placeholder="Paste SVG markup here…"></textarea>
+						</div>
+						<div class="compare-col">
+							<div class="compare-title">Raster preview</div>
+							<canvas id="s2rCanvas" class="crop-canvas" aria-label="Raster preview"></canvas>
+							<div class="preview-meta" id="s2rMeta">—</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<script src="image-tools/image-tools.js"></script>
+	</main>
+</body>
+
+</html>
