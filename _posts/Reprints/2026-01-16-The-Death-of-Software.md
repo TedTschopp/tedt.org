@@ -1,7 +1,5 @@
 ---
-
 layout: post
-
 title: "The Death of Software 2.0"
 subtitle: "Why the memory hierarchy is the right analogy for agentic software"
 quote: "Claude Code is DRAM."
@@ -14,51 +12,53 @@ date: 2026-01-16 07:00:00 -0800
 update: 2026-01-16 07:00:00 -0800
 
 author:
-	avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
-	name: "Ted Tschopp"
-	url: "https://tedt.org/"
+  avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
+  name: "Ted Tschopp"
+  url: "https://tedt.org/"
 
 bullets:
-	- Agentic systems shift value from UI workflows to durable sources of truth.
-	- The context window is fast memory; outputs get compacted into persistence.
-	- SaaS pricing power weakens as interfaces become generated and disposable.
-	- APIs, data, and infrastructure become the "NAND" layer of the stack.
+  - Agentic systems shift value from UI workflows to durable sources of truth.
+  - The context window is fast memory; outputs get compacted into persistence.
+  - SaaS pricing power weakens as interfaces become generated and disposable.
+  - APIs, data, and infrastructure become the "NAND" layer of the stack.
 
 description: "An essay on why agentic AI changes software economics: interfaces become ephemeral, while durable systems of record (data, state, and APIs) become the high-value layer—using the memory hierarchy as the guiding analogy."
 seo-description: "The Death of Software 2.0: why AI agents make UI-driven SaaS less defensible, and why APIs, data, and infrastructure become the durable value layer—explained via the memory hierarchy analogy."
 
 categories:
-	- AI
-	- Opinion
-	- Computers
-	- Reprint
+  - AI
+  - Opinion
+  - Computers
+  - Reprint
 
 tags:
-	- AI
-	- Agents
-	- Claude
-	- SaaS
-	- APIs
-	- Infrastructure
-	- Product strategy
-	- Memory hierarchy
+  - AI
+  - Agents
+  - Claude
+  - SaaS
+  - APIs
+  - Infrastructure
+  - Product strategy
+  - Memory hierarchy
 
 keywords:
-	- death of software
-	- agentic ai
-	- ai agents software economics
-	- memory hierarchy analogy
-	- saas price to sales
-	- systems of record apis
+  - death of software
+  - agentic ai
+  - ai agents software economics
+  - memory hierarchy analogy
+  - saas price to sales
+  - systems of record apis
 
 location:
-	name: Bradbury, CA
-	coordinates:
-		latitude: 34.1470
-		longitude: -117.9709
+  name: Bradbury, CA
+  coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image: /img/2026-01/Memory-vs-Software.webp
 image-alt: "Diagram comparing agentic AI workflows to the memory hierarchy, mapping ephemeral computation to fast memory and durable systems of record to persistent storage"
+image-artist: "Ted Tschopp"
+image-artist-URL: "https://tedt.org/"
 image-description: "A conceptual graphic that uses the memory hierarchy as a metaphor for the future software stack: AI agents as fast, non-persistent compute and APIs/data as persistent storage."
 image-title: "AI and Software as a Memory Hierarchy"
 
