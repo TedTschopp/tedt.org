@@ -20,26 +20,22 @@ html for these tools - tedt.org/tools/image-tools.html
 
 ### Core Principles (Non-Negotiable)
 
-* **Client-side only**: No backend, no server calls.
-* **One job per tool**: Each page does one thing well.
-* **Immediate feedback**: Every change updates the preview instantly.
-* **Progressive build**: Never jump ahead—each phase must work before
+- **Client-side only**: No backend, no server calls.
+- **One job per tool**: Each page does one thing well.
+- **Immediate feedback**: Every change updates the preview instantly.
+- **Progressive build**: Never jump ahead—each phase must work before
   continuing.
-* **Readable code**: Prioritize simple, understandable implementations.
-* **Safe by default**: Especially when handling SVG input.
-
-
+- **Readable code**: Prioritize simple, understandable implementations.
+- **Safe by default**: Especially when handling SVG input.
 
 ### Technical Constraints
 
-* Use **plain HTML, CSS, and JavaScript** (no frameworks unless strictly
+- Use **plain HTML, CSS, and JavaScript** (no frameworks unless strictly
   necessary).
-* Prefer **Web APIs** (`<canvas>`, `FileReader`, Clipboard API, URL fragments).
-* No build step required.
-* Everything should run from a static file or static hosting.
-* All logic should be inspectable in the browser.
-
-
+- Prefer **Web APIs** (`<canvas>`, `FileReader`, Clipboard API, URL fragments).
+- No build step required.
+- Everything should run from a static file or static hosting.
+- All logic should be inspectable in the browser.
 
 ### Build Order (You MUST follow this sequence)
 
@@ -47,54 +43,46 @@ html for these tools - tedt.org/tools/image-tools.html
 
 Build a reusable input layer that supports:
 
-* Drag-and-drop image upload
-* Click-to-select file upload
-* Paste-from-clipboard image input
-* Immediate image preview
-* Reset-to-default behavior
+- Drag-and-drop image upload
+- Click-to-select file upload
+- Paste-from-clipboard image input
+- Immediate image preview
+- Reset-to-default behavior
 
 ✔️ Stop and verify: image input works reliably across methods.
-
-
 
 #### Phase 2 — Crop, Zoom, and Aspect Ratio Engine
 
 Extend the image tool with:
 
-* Draggable crop box
-* Zoom and pan controls
-* Fixed aspect ratio presets (square, portrait, landscape, avatar)
-* Live preview of the cropped output
+- Draggable crop box
+- Zoom and pan controls
+- Fixed aspect ratio presets (square, portrait, landscape, avatar)
+- Live preview of the cropped output
 
 ✔️ Stop and verify: user can frame an image precisely.
-
-
 
 #### Phase 3 — Resize, Background, and Export
 
 Add:
 
-* Pixel-based resize controls
-* Background color selection
-* Transparent background support when possible
-* One-click image export
-* Display of output file size before download
+- Pixel-based resize controls
+- Background color selection
+- Transparent background support when possible
+- One-click image export
+- Display of output file size before download
 
 ✔️ Stop and verify: exported images match preview.
-
-
 
 #### Phase 4 — JPEG Optimization & Comparison
 
 Add:
 
-* Adjustable JPEG quality slider
-* Side-by-side comparison view (original vs optimized)
-* Real-time file size updates
+- Adjustable JPEG quality slider
+- Side-by-side comparison view (original vs optimized)
+- Real-time file size updates
 
 ✔️ Stop and verify: quality vs size tradeoff is obvious.
-
-
 
 #### Phase 5 — Raster ↔ SVG Tools
 
@@ -104,72 +92,294 @@ Build tools for:
 
 1. Raster → SVG:
 
-   * Upload/paste raster image
-   * Convert to SVG
-   * Preview SVG
-   * View and copy SVG source
+   - Upload/paste raster image
+   - Convert to SVG
+   - Preview SVG
+   - View and copy SVG source
 
 2. SVG → Raster:
 
-   * Paste SVG code or upload SVG file
-   * Render to PNG or JPEG
-   * Control background color, padding, and output size
+   - Paste SVG code or upload SVG file
+   - Render to PNG or JPEG
+   - Control background color, padding, and output size
 
 ✔️ Stop and verify: SVG inputs render safely and predictably.
-
-
 
 #### Phase 6 — SVG Security & Sandbox
 
 Build an SVG sandbox tool that:
 
-* Accepts SVG input
-* Sanitizes unsafe elements
-* Prevents script execution
-* Shows both rendered output and sanitized SVG source
+- Accepts SVG input
+- Sanitizes unsafe elements
+- Prevents script execution
+- Shows both rendered output and sanitized SVG source
 
 ✔️ Stop and verify: malicious SVGs do not execute.
-
-
 
 #### Phase 7 — SVG Embedding Utilities
 
 Build a tool that:
 
-* Encodes SVGs as base64 `<img>` tags
-* Displays rendered result
-* Shows encoded string
-* Shows decoded SVG source
+- Encodes SVGs as base64 `<img>` tags
+- Displays rendered result
+- Shows encoded string
+- Shows decoded SVG source
 
 ✔️ Stop and verify: embedded SVGs render safely.
-
-
 
 #### Phase 8 — Avatar Web Component
 
 Build a reusable avatar picker that:
 
-* Accepts image input (drop/paste/select)
-* Enforces a fixed aspect ratio
-* Allows crop and zoom
-* Outputs a JPEG data URL
-* Writes the result to a hidden form input
+- Accepts image input (drop/paste/select)
+- Enforces a fixed aspect ratio
+- Allows crop and zoom
+- Outputs a JPEG data URL
+- Writes the result to a hidden form input
 
 ✔️ Stop and verify: component integrates cleanly into a form.
-
-
 
 #### Phase 9 — State & Portability
 
 Add:
 
-* URL fragment or query-based state persistence
-* Shareable links
-* Offline functionality after initial load
+- URL fragment or query-based state persistence
+- Shareable links
+- Offline functionality after initial load
 
 ✔️ Stop and verify: refreshing the page preserves state.
 
+#### Phase 10 — Local-Only Vector Trace App (Baseline Shell)
 
+**Objective** Introduce a **single-page, local-run vector tracing app** that can
+host multiple bitmap→SVG engines.
+
+**Build**
+
+- `index.html` running via `file://` or static server
+- Single-page layout with three panels:
+
+  - Input & Controls (left)
+  - Previews (center)
+  - SVG Output & Export (right)
+
+**Add**
+
+- Image input (file, drop, paste)
+- Canvas-based normalization pipeline:
+
+  - Resize to max dimension (default 1024, configurable)
+  - Produce `ImageData`
+- Engine-agnostic controls:
+
+  - Max dimension
+  - Reset
+  - Overlay opacity
+- Output panel:
+
+  - SVG preview
+  - Read-only SVG text
+  - Download + copy buttons
+- Diagnostics:
+
+  - Stage timings
+  - Collapsible error panel
+
+✔️ Stop and verify: placeholder SVG exports work.
+
+#### Phase 11 — Shared Preprocessing Pipeline
+
+**Objective** Create a reusable preprocessing stage for all engines.
+
+**Add**
+
+- ImageData transforms:
+
+  - Grayscale toggle
+  - Contrast slider
+  - Blur slider (simple box blur OK)
+  - Invert toggle
+- Preview canvases:
+
+  - Original
+  - Preprocessed
+- Deterministic behavior
+
+✔️ Stop and verify.
+
+#### Phase 12 — Engine Framework & Plugin Interface
+
+**Objective** Allow engine swapping without UI rewrites.
+
+**Define**
+
+- Engine interface:
+
+  ```js
+  trace(imageData, params) → { svg, metrics, previews? }
+  ```
+
+**Add**
+
+- Engine registry:
+
+  - Potrace (stub)
+  - ImageTracer (stub)
+  - OpenCV Contours (stub)
+- Engine selector dropdown
+- Dynamic per-engine parameter UI
+- Metrics panel (duration, size, paths)
+
+✔️ Stop and verify: stub engines return valid SVG.
+
+#### Phase 13 — Potrace Engine (High-Contrast)
+
+**Objective** Enable logo/line-art tracing.
+
+**Add**
+
+- JS/WASM Potrace integration
+- Controls:
+
+  - Threshold slider
+  - Optional Otsu
+  - Speckle removal
+  - Curve optimization
+- Output styling:
+
+  - Fill color
+  - Optional stroke mode
+
+✔️ Stop and verify.
+
+#### Phase 14 — ImageTracerJS Engine (Multi-Color)
+
+**Objective** Support flat-color posterized tracing.
+
+**Add**
+
+- Local ImageTracerJS dependency
+- Controls:
+
+  - Color count
+  - Noise filter
+  - Path fitting
+  - Stroke toggle
+- Palette legend with path counts
+
+✔️ Stop and verify.
+
+#### Phase 15 — OpenCV.js Contour Engine
+
+**Objective** Enable edge-based contour tracing.
+
+**Add**
+
+- Local OpenCV.js loading
+- Controls:
+
+  - Blur kernel
+  - Canny thresholds
+  - Contour mode
+  - Approximation epsilon
+- SVG path generation per contour
+
+✔️ Stop and verify.
+
+### Phase 16 — Comparison & Overlay Tools
+
+**Objective** Make tuning visually obvious.
+
+**Add**
+
+- SVG-over-bitmap overlay
+- Opacity slider
+- Show/hide toggle
+- Zoom controls (fit / 100%)
+- Pan/drag
+
+✔️ Stop and verify.
+
+#### Phase 17 — Export & Reproducibility
+
+**Objective** Enable sharing and re-running traces.
+
+**Add**
+
+- Export options:
+
+  - SVG download
+  - Copy SVG
+  - Data URL (optional)
+  - Trace bundle JSON:
+
+    - engine
+    - params
+    - input metadata
+    - SVG
+- SVG minification:
+
+  - Whitespace stripping
+  - Decimal rounding
+
+✔️ Stop and verify.
+
+#### Phase 18 — Performance Hardening
+
+**Objective** Keep UI responsive.
+
+**Add**
+
+- Cancelable runs (ignore stale executions)
+- Optional Web Worker (`worker.js`, no bundler)
+- Safety limits:
+
+  - Warn >2048px
+  - Hard cap at 4096px
+
+✔️ Stop and verify.
+
+#### Phase 19 — Test Assets & Self-Test Mode
+
+**Objective** Prevent regressions.
+
+**Add**
+
+- `./test-assets/`:
+
+  - Logo
+  - Handwriting
+  - Flat illustration
+  - Photo
+- Self-test button:
+
+  - Runs each engine
+  - Reports success + metrics
+- SVG validity checks:
+
+  - XML parse
+  - `<svg>` root + viewBox
+
+✔️ Stop and verify.
+
+#### Phase 20 — Documentation & Local Packaging
+
+**Objective** Make the system usable and extensible.
+
+**Add**
+
+- `README.md`:
+
+  - `file://` usage
+  - Optional local server
+  - Adding engines/libs
+  - Parameter explanations
+  - Known limitations
+- In-app Help panel:
+
+  - Which engine to use for which image type
+
+✔️ Stop and verify: new user exports SVG in <5 minutes.
 
 ### Output Expectations (Per Phase)
 
@@ -182,26 +392,22 @@ For **each phase**, you must produce:
 Do **not** proceed to the next phase until the current one is complete and
 usable.
 
-
-
 ### Tone & Behavior
 
-* Do not over-engineer.
-* Do not add features early.
-* Do not collapse phases.
-* Do not “optimize later”—build it cleanly now.
-* Treat each tool as something a human will actually use.
-
-
+- Do not over-engineer.
+- Do not add features early.
+- Do not collapse phases.
+- Do not “optimize later”—build it cleanly now.
+- Treat each tool as something a human will actually use.
 
 ### Success Criteria
 
 The final result should feel like:
 
-* A set of **sharp, trustworthy tools**
-* Something a developer would bookmark and reuse
-* Easy to understand by reading the source
-* Boring in the best possible way
+- A set of **sharp, trustworthy tools**
+- Something a developer would bookmark and reuse
+- Easy to understand by reading the source
+- Boring in the best possible way
 
 ---
 

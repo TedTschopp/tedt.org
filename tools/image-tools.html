@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Image Tools (Phase 4)</title>
+	<title>Image Tools</title>
 	<link rel="stylesheet" href="../css/consolidated-fonts.css">
 	<link rel="stylesheet" href="image-tools/image-tools.css">
 </head>
@@ -14,13 +14,23 @@
 		<div id="controls" aria-label="Controls">
 			<header class="header">
 				<h1 class="title">Image Tools</h1>
-				<p class="subtitle">Phase 4: JPEG optimization with quality + side-by-side comparison.</p>
+				<p class="subtitle">Client-side image editor, JPEG optimization, and SVG utilities.</p>
+				<div class="controls-row controls-row--2" aria-label="Share and persistence">
+					<button id="copyLinkBtn" type="button" class="btn">Copy link</button>
+					<button id="clearStateBtn" type="button" class="btn btn-danger">Clear saved</button>
+				</div>
+				<div class="status" aria-live="polite" aria-atomic="true">
+					<span id="globalStatusText">Ready.</span>
+				</div>
 			</header>
 
 			<nav class="tabs" role="tablist" aria-label="Tool collections">
 				<button class="tab" id="tab-editor" role="tab" aria-selected="true" aria-controls="panel-editor" data-tab="editor" type="button">Editor</button>
 				<button class="tab" id="tab-raster-to-svg" role="tab" aria-selected="false" aria-controls="panel-raster-to-svg" data-tab="raster-to-svg" type="button">Raster → SVG</button>
 				<button class="tab" id="tab-svg-to-raster" role="tab" aria-selected="false" aria-controls="panel-svg-to-raster" data-tab="svg-to-raster" type="button">SVG → Raster</button>
+				<button class="tab" id="tab-svg-sandbox" role="tab" aria-selected="false" aria-controls="panel-svg-sandbox" data-tab="svg-sandbox" type="button">SVG Sandbox</button>
+				<button class="tab" id="tab-svg-embed" role="tab" aria-selected="false" aria-controls="panel-svg-embed" data-tab="svg-embed" type="button">SVG Embed</button>
+				<button class="tab" id="tab-avatar" role="tab" aria-selected="false" aria-controls="panel-avatar" data-tab="avatar" type="button">Avatar</button>
 			</nav>
 
 			<div id="panel-editor" class="tab-panel" role="tabpanel" aria-labelledby="tab-editor" data-panel="editor">
@@ -36,17 +46,66 @@
 				<label class="field">
 					<span class="label">Aspect</span>
 					<select id="aspectSelect" class="select">
-						<option value="1:1" selected>Square (1:1)</option>
-						<option value="4:5">Portrait (4:5)</option>
-						<option value="16:9">Landscape (16:9)</option>
-						<option value="original">Original</option>
+						<optgroup label="Social Media">
+							<option value="1:1" selected>1:1 — Instagram feed, Facebook feed, LinkedIn posts</option>
+							<option value="4:5">4:5 — Instagram feed (optimized), Facebook feed ads</option>
+							<option value="9:16">9:16 — TikTok, Reels, Shorts, Snapchat</option>
+							<option value="16:9">16:9 — YouTube videos, Facebook video, LinkedIn video</option>
+							<option value="3:2">3:2 — Photography posts, blog images, editorial crops</option>
+							<option value="21:9">21:9 — Cinematic promos, immersive banner videos</option>
+						</optgroup>
+						<optgroup label="Storytelling">
+							<option value="1:1">1:1 — Controlled, neutral framing</option>
+							<option value="4:3">4:3 — Intimate, human-focused</option>
+							<option value="9:16">9:16 — Immediate, personal, present-moment</option>
+							<option value="16:9">16:9 — Balanced, familiar, general-purpose</option>
+							<option value="1.85:1">1.85:1 — Human-scale cinematic</option>
+							<option value="2:1">2.00:1 — Modern, flexible, streaming-native</option>
+							<option value="2.39:1">2.39:1 — Epic, mythic, environmental</option>
+						</optgroup>
+						<optgroup label="Web / Digital">
+							<option value="16:9">16:9 — Web video, embeds, presentations</option>
+							<option value="21:9">21:9 — Immersive web experiences, hero videos</option>
+							<option value="5:2">5:2 — Website hero banners, landing headers</option>
+							<option value="3:1">3:1 — Email headers, navigation banners</option>
+						</optgroup>
+						<optgroup label="Photography">
+							<option value="3:2">3:2 — DSLR/mirrorless, editorial photography</option>
+							<option value="4:3">4:3 — Medium-format, fine art photography</option>
+						</optgroup>
+						<optgroup label="Film">
+							<option value="1.33:1">1.33:1 — Classic (early cinema, art-house)</option>
+							<option value="1.66:1">1.66:1 — European cinema</option>
+							<option value="1.85:1">1.85:1 — Modern theatrical (drama, comedy)</option>
+							<option value="2:1">2.00:1 — Hybrid (prestige TV, streaming originals)</option>
+							<option value="2.20:1">2.20:1 — Large format (70mm epics)</option>
+							<option value="2.39:1">2.39:1 — Anamorphic (action, sci-fi, fantasy)</option>
+							<option value="2.76:1">2.76:1 — Ultra-wide (roadshow epics)</option>
+						</optgroup>
+						<optgroup label="Television">
+							<option value="4:3">4:3 — Legacy broadcast (pre-HD)</option>
+							<option value="16:9">16:9 — Modern (HDTV, streaming)</option>
+						</optgroup>
+						<optgroup label="Print">
+							<option value="1.4142:1">√2:1 — ISO A-series (A4, A5, books, reports)</option>
+							<option value="1.294:1">1.294:1 — US Letter office documents</option>
+						</optgroup>
+						<optgroup label="Magazine">
+							<option value="1.33:1">1.33:1 — Digest</option>
+							<option value="1.45:1">1.45:1 — Trade / News</option>
+							<option value="1.50:1">1.50:1 — Fashion / Art</option>
+							<option value="1.62:1">1.62:1 — Photo / Coffee Table</option>
+						</optgroup>
+						<optgroup label="Source">
+							<option value="original">Original</option>
+						</optgroup>
 					</select>
 				</label>
 
 				<label class="field">
 					<span class="label">Zoom</span>
 					<div class="zoom-row">
-						<input id="zoomRange" type="range" min="1" max="4" step="0.01" value="1" disabled />
+						<input id="zoomRange" type="range" min="0.25" max="4" step="0.01" value="1" disabled />
 						<span id="zoomValue" class="zoom-value">100%</span>
 					</div>
 				</label>
@@ -54,6 +113,7 @@
 				<div class="control-actions">
 					<button id="fitBtn" type="button" class="btn" disabled>Fit</button>
 					<button id="centerCropBtn" type="button" class="btn" disabled>Center crop</button>
+					<button id="resetViewBtn" type="button" class="btn" disabled>Reset view</button>
 				</div>
 				</div>
 
@@ -117,6 +177,39 @@
 					<button id="exportBtn" type="button" class="btn btn-primary" disabled>Export</button>
 					<button id="copyBtn" type="button" class="btn" disabled>Copy</button>
 				</div>
+				</div>
+
+				<div class="control-grid" aria-label="Background removal">
+					<div class="row-head">
+						<div class="row-title">Background Remove</div>
+						<div class="row-subtitle">Experimental: best with uniform backgrounds.</div>
+					</div>
+
+					<div class="toggle-row">
+						<label class="toggle">
+							<input id="bgRemoveEnabled" type="checkbox" disabled />
+							<span>Remove background (edge sample)</span>
+						</label>
+					</div>
+
+					<label class="field">
+						<span class="label">Threshold</span>
+						<input id="bgRemoveThreshold" type="range" min="0" max="120" step="1" value="38" disabled />
+					</label>
+
+					<label class="field">
+						<span class="label">Feather</span>
+						<input id="bgRemoveFeather" type="range" min="0" max="8" step="0.1" value="1.5" disabled />
+					</label>
+
+					<label class="field">
+						<span class="label">Edge inset (px)</span>
+						<input id="bgRemoveInset" class="input" type="number" inputmode="numeric" min="0" step="1" value="8" disabled />
+					</label>
+					<div id="bgRemoveJpegWarning" class="hint" hidden>
+						JPEG can’t keep transparency. Background removal will be flattened onto the selected Background color.
+					</div>
+					<div class="hint">Tip: if the subject touches the border, this may remove the wrong regions.</div>
 				</div>
 
 				<p id="pasteHint" class="hint">
@@ -213,6 +306,34 @@
 				</div>
 				<div class="status" aria-live="polite" aria-atomic="true"><span id="s2rStatusText">No SVG loaded.</span></div>
 			</div>
+
+			<div id="panel-svg-sandbox" class="tab-panel" role="tabpanel" aria-labelledby="tab-svg-sandbox" data-panel="svg-sandbox" hidden>
+				<div class="controls-row">
+					<input id="sbxFileInput" class="sr-only" type="file" accept="image/svg+xml,.svg" />
+					<button id="sbxChooseBtn" type="button" class="btn btn-primary">Choose</button>
+					<button id="sbxPasteBtn" type="button" class="btn" aria-describedby="sbxPasteHint">Paste</button>
+					<button id="sbxResetBtn" type="button" class="btn btn-danger" disabled>Reset</button>
+				</div>
+				<p id="sbxPasteHint" class="hint">Paste SVG markup (or choose an SVG file). Scripts will be removed and never executed.</p>
+				<div class="status" aria-live="polite" aria-atomic="true"><span id="sbxStatusText">No SVG loaded.</span></div>
+			</div>
+
+			<div id="panel-svg-embed" class="tab-panel" role="tabpanel" aria-labelledby="tab-svg-embed" data-panel="svg-embed" hidden>
+				<div class="controls-row">
+					<input id="embFileInput" class="sr-only" type="file" accept="image/svg+xml,.svg" />
+					<button id="embChooseBtn" type="button" class="btn btn-primary">Choose</button>
+					<button id="embPasteBtn" type="button" class="btn" aria-describedby="embPasteHint">Paste</button>
+					<button id="embCopyTagBtn" type="button" class="btn" disabled>Copy &lt;img&gt; tag</button>
+					<button id="embCopyDataBtn" type="button" class="btn" disabled>Copy data URI</button>
+					<button id="embResetBtn" type="button" class="btn btn-danger" disabled>Reset</button>
+				</div>
+				<p id="embPasteHint" class="hint">Encodes SVG into a base64 <code>&lt;img&gt;</code> tag. The SVG is sanitized first.</p>
+				<div class="status" aria-live="polite" aria-atomic="true"><span id="embStatusText">No SVG loaded.</span></div>
+			</div>
+
+			<div id="panel-avatar" class="tab-panel" role="tabpanel" aria-labelledby="tab-avatar" data-panel="avatar" hidden>
+				<p class="hint">A reusable avatar cropper component that outputs a JPEG data URL to a hidden input.</p>
+			</div>
 		</div>
 
 		<div id="viewport" aria-label="Preview area">
@@ -223,17 +344,9 @@
 						<div class="editor-stage">
 							<canvas id="editorCanvas" class="editor-canvas" aria-label="Crop editor"></canvas>
 							<div id="previewPlaceholder" class="preview-placeholder">Drop or paste an image to begin.</div>
-							<img id="previewImage" class="preview-image" alt="Selected image preview" />
+							<img id="previewImage" class="preview-image" alt="Selected image preview" src="data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
 						</div>
-						<p class="micro-hint">
-							Drag crop box to move, drag corners to resize. Drag outside crop to pan. Scroll to zoom.
-						</p>
-					</div>
-
-					<div class="preview-pane" aria-label="Cropped preview">
-						<div class="preview-title">Cropped preview</div>
-						<canvas id="cropPreview" class="crop-canvas"></canvas>
-						<div class="preview-meta" id="cropMeta">—</div>
+						<p class="micro-hint">Drag crop box to move, drag corners to resize. Drag outside crop to pan. Scroll to zoom.</p>
 					</div>
 				</div>
 
@@ -257,6 +370,21 @@
 				</dl>
 			</section>
 
+			<section class="card" aria-label="Output preview">
+				<div class="compare-head">
+					<div class="row-title">Output Preview</div>
+					<div class="row-subtitle">Actual export result (with background / transparency).</div>
+				</div>
+				<div class="compare-grid compare-grid--single">
+					<div class="compare-col">
+						<div class="compare-frame" id="outputPreviewFrame">
+							<img id="outputPreviewImg" alt="Output preview" src="data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
+						</div>
+						<div class="compare-meta" id="outputPreviewMeta">—</div>
+					</div>
+				</div>
+			</section>
+
 			<section id="jpegCompare" class="card" aria-label="JPEG comparison" hidden>
 				<div class="compare-head">
 					<div class="row-title">JPEG Comparison</div>
@@ -267,7 +395,7 @@
 						<div class="compare-title">Baseline</div>
 						<div class="compare-meta" id="jpegBaselineMeta">—</div>
 						<div class="compare-frame">
-							<img id="jpegBaselineImg" alt="Baseline JPEG preview" />
+							<img id="jpegBaselineImg" alt="Baseline JPEG preview" src="data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
 						</div>
 					</div>
 
@@ -275,7 +403,7 @@
 						<div class="compare-title">Optimized</div>
 						<div class="compare-meta" id="jpegOptimizedMeta">—</div>
 						<div class="compare-frame">
-							<img id="jpegOptimizedImg" alt="Optimized JPEG preview" />
+							<img id="jpegOptimizedImg" alt="Optimized JPEG preview" src="data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
 						</div>
 					</div>
 				</div>
@@ -318,6 +446,83 @@
 							<div class="preview-meta" id="s2rMeta">—</div>
 						</div>
 					</div>
+				</section>
+			</div>
+
+			<div id="view-svg-sandbox" class="view" data-view="svg-sandbox" hidden>
+				<section class="card" aria-label="SVG Sandbox">
+					<div class="row-head">
+						<div class="row-title">SVG Sandbox</div>
+						<div class="row-subtitle">Sanitize SVG and preview the safe result.</div>
+					</div>
+					<div class="compare-grid compare-grid--single">
+						<div class="compare-col">
+							<div class="compare-title">SVG input</div>
+							<textarea id="sbxSource" class="textarea" rows="12" placeholder="Paste SVG markup here…"></textarea>
+							<div class="preview-meta" id="sbxMeta">—</div>
+							<div class="preview-meta" id="sbxReport">—</div>
+						</div>
+					</div>
+					<div class="compare-grid">
+						<div class="compare-col">
+							<div class="compare-title">Rendered (sanitized)</div>
+							<div class="compare-frame">
+								<iframe id="sbxPreview" title="Sanitized SVG preview" class="iframe" sandbox></iframe>
+							</div>
+						</div>
+						<div class="compare-col">
+							<div class="compare-title">Sanitized SVG</div>
+							<textarea id="sbxSanitized" class="textarea" rows="12" readonly></textarea>
+							<p class="micro-hint">This is a best-effort sanitizer; complex SVG features may be stripped.</p>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div id="view-svg-embed" class="view" data-view="svg-embed" hidden>
+				<section class="card" aria-label="SVG Embed">
+					<div class="row-head">
+						<div class="row-title">SVG Embed</div>
+						<div class="row-subtitle">Create an embeddable base64 &lt;img&gt; tag and verify it round-trips.</div>
+					</div>
+					<div class="compare-grid">
+						<div class="compare-col">
+							<div class="compare-title">SVG input</div>
+							<textarea id="embSource" class="textarea" rows="12" placeholder="Paste SVG markup here…"></textarea>
+							<div class="preview-meta" id="embMeta">—</div>
+						</div>
+						<div class="compare-col">
+							<div class="compare-title">Rendered (as &lt;img&gt;)</div>
+							<div class="compare-frame">
+								<img id="embImg" alt="Embedded SVG preview" loading="lazy" src="data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" />
+							</div>
+							<div class="preview-meta" id="embImgMeta">—</div>
+						</div>
+					</div>
+					<div class="compare-grid">
+						<div class="compare-col">
+							<div class="compare-title">Encoded &lt;img&gt; tag</div>
+							<textarea id="embTag" class="textarea" rows="8" readonly></textarea>
+							<p class="micro-hint">Tip: base64 increases size; keep SVGs small.</p>
+						</div>
+						<div class="compare-col">
+							<div class="compare-title">Decoded SVG (sanitized)</div>
+							<textarea id="embDecoded" class="textarea" rows="8" readonly></textarea>
+						</div>
+					</div>
+				</section>
+			</div>
+
+			<div id="view-avatar" class="view" data-view="avatar" hidden>
+				<section class="card" aria-label="Avatar">
+					<div class="row-head">
+						<div class="row-title">Avatar</div>
+						<div class="row-subtitle">Drop/paste/select, crop + zoom, then get a JPEG data URL for forms.</div>
+					</div>
+					<form class="stack" action="#" method="post">
+						<avatar-picker input-name="avatar_data_url" output-size="256"></avatar-picker>
+						<div class="micro-hint">The hidden input named <code>avatar_data_url</code> will contain the JPEG data URL.</div>
+					</form>
 				</section>
 			</div>
 		</div>

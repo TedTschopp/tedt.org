@@ -84,6 +84,12 @@ body {
 	display: none !important;
 }
 
+/* Output Preview now uses the same layout system as JPEG Comparison.
+   Keep it full width and consistent across cards. */
+.compare-grid {
+	width: 100%;
+}
+
 .tab-panel {
 	display: grid;
 	gap: 10px;
@@ -113,6 +119,10 @@ body {
 	display: grid;
 	grid-template-columns: repeat(3, minmax(44px, 1fr));
 	gap: 8px;
+}
+
+.controls-row.controls-row--2 {
+	grid-template-columns: repeat(2, minmax(44px, 1fr));
 }
 
 .btn {
@@ -418,9 +428,18 @@ kbd {
 	gap: 14px;
 }
 
+/* Use for single-preview sections (e.g., Output Preview) so they don't become half-width
+	 at desktop breakpoints where comparisons become two columns. */
+.compare-grid--single {
+	grid-template-columns: 1fr;
+}
+
 @media (min-width: 920px) {
 	.compare-grid {
 		grid-template-columns: 1fr 1fr;
+	}
+	.compare-grid--single {
+		grid-template-columns: 1fr;
 	}
 }
 
@@ -448,8 +467,16 @@ kbd {
 	background: rgba(255, 255, 255, 0.85);
 	overflow: hidden;
 	min-height: 200px;
+	width: 100%;
 	display: grid;
 	place-items: center;
+}
+
+.checkerboard {
+	background-color: rgba(255, 255, 255, 0.85);
+	background-image:
+		repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.06) 0 12px, rgba(255, 255, 255, 0.00) 12px 24px),
+		repeating-linear-gradient(-45deg, rgba(0, 0, 0, 0.06) 0 12px, rgba(255, 255, 255, 0.00) 12px 24px);
 }
 
 .compare-frame img {
@@ -496,6 +523,18 @@ kbd {
 .editor-grid {
 	display: grid;
 	gap: 14px;
+	width: 100%;
+}
+
+/* Ensure grid children can actually fill/shrink within the track. */
+.editor-grid > * {
+	min-width: 0;
+}
+
+/* The editor column should always occupy the full width of its grid track. */
+.editor-pane {
+	width: 100%;
+	min-width: 0;
 }
 
 @media (min-width: 920px) {
@@ -512,12 +551,15 @@ kbd {
 	background: rgba(255, 255, 255, 0.75);
 	overflow: hidden;
 	min-height: 360px;
+	width: 100%;
+	max-width: 100%;
 }
 
 .editor-canvas {
 	display: block;
 	width: 100%;
 	height: min(62vh, 520px);
+	max-width: 100%;
 }
 
 .crop-canvas {

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="512" viewBox="0 0 1024 512">
+  <rect width="100%" height="100%" fill="#fffdf8"/>
+  <g stroke="#1b1b1b" stroke-width="14" stroke-linecap="round" stroke-linejoin="round" fill="none" opacity="0.96">
+    <!-- pseudo-handwriting strokes: intentionally wiggly paths -->
+    <path d="M 120 200 C 170 120, 240 120, 260 200 C 280 290, 210 310, 190 245 C 170 185, 230 180, 260 220"/>
+    <path d="M 310 165 C 355 140, 395 150, 410 190 C 430 245, 390 285, 340 275 C 300 266, 290 220, 320 200"/>
+    <path d="M 460 160 C 520 145, 565 155, 590 190 C 628 244, 585 310, 520 292"/>
+    <path d="M 640 150 C 705 140, 760 150, 790 190 C 820 230, 810 290, 740 302 C 690 310, 650 280, 655 235"/>
+    <path d="M 140 340 C 210 330, 260 340, 320 350 C 410 366, 480 370, 560 360 C 650 348, 720 340, 880 350"/>
+  </g>
+  <g opacity="0.18" stroke="#00a9e0" stroke-width="3">
+    <path d="M 96 120 H 928"/>
+    <path d="M 96 256 H 928"/>
+    <path d="M 96 392 H 928"/>
+  </g>
+</svg>

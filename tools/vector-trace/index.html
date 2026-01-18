@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Vector Trace (Local)</title>
+	<link rel="stylesheet" href="../../css/consolidated-fonts.css">
+	<link rel="stylesheet" href="./vector-trace.css" />
+</head>
+
+<body>
+	<main class="app" data-vector-trace>
+		<header class="app__header">
+			<h1 class="title">Vector Trace (Local)</h1>
+			<p class="subtitle">Single-page bitmap → SVG workspace (client-side only).</p>
+			<p class="hint" style="margin: 6px 0 0;">
+				Tip: for best compatibility, serve this folder over <code>http://localhost</code> (e.g. <code>python3 -m http.server</code>). See
+				<a href="./README.md" target="_blank" rel="noopener">README</a>.
+			</p>
+		</header>
+
+		<div class="layout" role="application" aria-label="Vector trace app">
+			<aside class="panel panel--controls" aria-label="Input and controls">
+				<section class="card">
+					<div class="row-head">
+						<div class="row-title">Input</div>
+						<div class="row-subtitle">Drop, paste, or choose an image.</div>
+					</div>
+					<input id="vtFileInput" class="sr-only" type="file" accept="image/*" />
+					<div class="controls-row">
+						<button id="vtChooseBtn" type="button" class="btn btn-primary">Choose</button>
+						<button id="vtPasteBtn" type="button" class="btn">Paste</button>
+						<button id="vtResetBtn" type="button" class="btn btn-danger" disabled>Reset</button>
+					</div>
+					<label class="field" style="margin-bottom: 10px;">
+						<span class="label">Load test asset…</span>
+						<div style="display:flex; gap: 8px;">
+							<select id="vtTestAsset" class="input" style="flex:1;">
+								<option value="">Select…</option>
+								<option value="logo">Logo</option>
+								<option value="handwriting">Handwriting</option>
+								<option value="flat-illustration">Flat illustration</option>
+								<option value="photo-ish">Photo-ish</option>
+							</select>
+							<button id="vtLoadTestAssetBtn" type="button" class="btn">Load</button>
+						</div>
+					</label>
+					<div id="vtDropZone" class="drop-zone" tabindex="0" role="button" aria-label="Drop an image here or press Enter to choose">
+						<div class="drop-zone-inner">
+							<div class="drop-title">Drop image here</div>
+							<div class="drop-subtitle">or click / press Enter</div>
+						</div>
+					</div>
+					<p class="hint">Tip: press <kbd>⌘</kbd>+<kbd>V</kbd> (Mac) or <kbd>Ctrl</kbd>+<kbd>V</kbd> after copying an image.</p>
+					<div class="status" aria-live="polite" aria-atomic="true"><span id="vtStatus">No image loaded.</span></div>
+				</section>
+
+				<section class="card" aria-label="Engine-agnostic controls">
+					<div class="row-head">
+						<div class="row-title">Controls</div>
+						<div class="row-subtitle">Preprocessing + overlay.</div>
+					</div>
+					<label class="field">
+						<span class="label">Engine</span>
+						<select id="vtEngine" class="input">
+							<option value="raster-wrapper" selected>Raster wrapper (baseline)</option>
+							<option value="potrace">Potrace (high-contrast)</option>
+							<option value="imagetracer">ImageTracer (multi-color)</option>
+							<option value="opencv-contours">OpenCV contours (edge-based)</option>
+						</select>
+					</label>
+					<div id="vtEngineParams" class="engine-params" aria-label="Engine parameters"></div>
+					<label class="field">
+						<span class="label">Max dimension</span>
+						<input id="vtMaxDim" class="input" type="number" inputmode="numeric" min="64" step="1" value="1024" />
+					</label>
+					<div class="toggle-row" aria-label="Preprocess toggles">
+						<label class="toggle">
+							<input id="vtGrayscale" type="checkbox" />
+							<span>Grayscale</span>
+						</label>
+						<label class="toggle">
+							<input id="vtInvert" type="checkbox" />
+							<span>Invert</span>
+						</label>
+					</div>
+					<label class="field">
+						<span class="label">Contrast</span>
+						<div class="slider-row">
+							<input id="vtContrast" type="range" min="-100" max="100" step="1" value="0" />
+							<span id="vtContrastValue" class="value">0</span>
+						</div>
+					</label>
+					<label class="field">
+						<span class="label">Blur (box)</span>
+						<div class="slider-row">
+							<input id="vtBlur" type="range" min="0" max="8" step="1" value="0" />
+							<span id="vtBlurValue" class="value">0</span>
+						</div>
+					</label>
+					<label class="field">
+						<span class="label">Overlay opacity</span>
+						<div class="slider-row">
+							<input id="vtOverlay" type="range" min="0" max="1" step="0.01" value="0.35" />
+							<span id="vtOverlayValue" class="value">35%</span>
+						</div>
+					</label>
+					<button id="vtRebuildBtn" type="button" class="btn" disabled>Rebuild outputs</button>
+				</section>
+
+				<section class="card" aria-label="Help">
+					<div class="row-head">
+						<div class="row-title">Help</div>
+						<div class="row-subtitle">Pick the right engine.</div>
+					</div>
+					<details>
+						<summary>Which engine should I use?</summary>
+						<div style="margin-top: 8px; font-size: 12px; color: rgba(0,0,0,0.68); line-height: 1.5;">
+							<p style="margin: 0 0 8px;">
+								<strong>Raster wrapper</strong>: baseline sanity check (no tracing) — confirms normalization/export pipeline.
+							</p>
+							<p style="margin: 0 0 8px;">
+								<strong>Potrace (high-contrast)</strong>: logos, icons, line art, screenshots of UI/diagrams. Use when you want crisp silhouettes.
+							</p>
+							<p style="margin: 0 0 8px;">
+								<strong>ImageTracer (multi-color)</strong>: flat illustrations and posterized art. Use when you can tolerate a stylized result.
+							</p>
+							<p style="margin: 0 0 8px;">
+								<strong>OpenCV contours</strong>: edge/outline tracing. Useful for quick outlines; often noisy on photos.
+							</p>
+							<p style="margin: 0;">
+								Tip: use <strong>Self-test engines</strong> in Diagnostics to verify output stays valid after changes.
+							</p>
+						</div>
+					</details>
+					<details style="margin-top: 10px;">
+						<summary>Local run notes</summary>
+						<div style="margin-top: 8px; font-size: 12px; color: rgba(0,0,0,0.68); line-height: 1.5;">
+							<p style="margin: 0;">
+								For best results, serve this folder over <code>http://localhost</code> (some features like Web Workers and clipboard can be limited on <code>file://</code>).
+							</p>
+						</div>
+					</details>
+				</section>
+
+				<section class="card" aria-label="Diagnostics">
+					<div class="row-head">
+						<div class="row-title">Diagnostics</div>
+						<div class="row-subtitle">Stage timings + errors.</div>
+					</div>
+					<ul class="timings" aria-label="Timings">
+						<li><span>Load</span><span id="vtTimeLoad">—</span></li>
+						<li><span>Normalize</span><span id="vtTimeNormalize">—</span></li>
+						<li><span>Preprocess</span><span id="vtTimePreprocess">—</span></li>
+						<li><span>SVG build</span><span id="vtTimeSvg">—</span></li>
+					</ul>
+					<div class="toggle-row" aria-label="Performance options">
+						<label class="toggle" title="Uses a Web Worker when available (Potrace/ImageTracer only).">
+							<input id="vtUseWorker" type="checkbox" checked />
+							<span>Use Web Worker</span>
+						</label>
+					</div>
+					<p id="vtWorkerHint" class="hint" style="display:none; margin: 0;">
+						Worker not available on <code>file://</code>. Serve this page over <code>http://localhost</code> to enable it.
+					</p>
+					<div class="controls-row" style="grid-template-columns: 1fr; margin-top: 10px;">
+						<button id="vtSelfTestBtn" type="button" class="btn">Self-test engines</button>
+					</div>
+					<details id="vtSelfTest" class="errors" style="margin-top: 6px;">
+						<summary>Self-test results</summary>
+						<pre id="vtSelfTestOut" class="error-text"></pre>
+					</details>
+					<details id="vtErrors" class="errors">
+						<summary>Error details</summary>
+						<pre id="vtErrorText" class="error-text"></pre>
+					</details>
+				</section>
+			</aside>
+
+			<section class="panel panel--previews" aria-label="Previews">
+				<div class="card">
+					<div class="row-head">
+						<div class="row-title">Previews</div>
+						<div id="vtMeta" class="row-subtitle">—</div>
+					</div>
+					<div class="preview-stage" aria-label="Preview stage">
+						<canvas id="vtCanvasOriginal" class="canvas" aria-label="Original"></canvas>
+						<canvas id="vtCanvasProcessed" class="canvas canvas--overlay" aria-label="Preprocessed"></canvas>
+						<div id="vtPlaceholder" class="placeholder">Load an image to begin.</div>
+					</div>
+					<p class="hint">Overlay shows preprocessed pixels over original (for debugging).</p>
+				</div>
+
+				<div class="card" aria-label="Compare">
+					<div class="row-head">
+						<div class="row-title">Compare</div>
+						<div class="row-subtitle">SVG overlay for tuning.</div>
+					</div>
+					<div class="compare-controls" aria-label="Compare controls">
+						<label class="toggle">
+							<input id="vtCompareShow" type="checkbox" checked />
+							<span>Show SVG</span>
+						</label>
+						<label class="field" style="margin:0;">
+							<span class="label">Opacity</span>
+							<div class="slider-row" style="margin:0;">
+								<input id="vtCompareOpacity" type="range" min="0" max="100" step="1" value="70" />
+								<span id="vtCompareOpacityValue" class="value">70%</span>
+							</div>
+						</label>
+						<div class="compare-zoom" aria-label="Zoom controls">
+							<button id="vtCompareFitBtn" type="button" class="btn">Fit</button>
+							<button id="vtCompare100Btn" type="button" class="btn">100%</button>
+						</div>
+					</div>
+					<div id="vtCompareViewport" class="compare-viewport" aria-label="SVG over bitmap (drag to pan)">
+						<div id="vtCompareScene" class="compare-scene">
+							<canvas id="vtCompareCanvas" class="compare-canvas" aria-label="Compare raster"></canvas>
+							<div id="vtCompareSvg" class="compare-svg" aria-label="Compare SVG overlay"></div>
+						</div>
+						<div id="vtCompareEmpty" class="placeholder">Trace an image to see the overlay.</div>
+					</div>
+					<p class="hint">Drag to pan. Use Fit/100% to reset zoom.</p>
+				</div>
+			</section>
+
+			<aside class="panel panel--output" aria-label="SVG output">
+				<section class="card">
+					<div class="row-head">
+						<div class="row-title">SVG Output</div>
+						<div id="vtSvgMeta" class="row-subtitle">—</div>
+					</div>
+					<div class="controls-row">
+						<button id="vtCopySvgBtn" type="button" class="btn" disabled>Copy</button>
+						<button id="vtDownloadSvgBtn" type="button" class="btn btn-primary" disabled>Download .svg</button>
+						<button id="vtCopyDataUrlBtn" type="button" class="btn" disabled>Copy data URL</button>
+						<button id="vtDownloadPngBtn" type="button" class="btn" disabled>Download normalized .png</button>
+						<button id="vtDownloadBundleBtn" type="button" class="btn" disabled>Download trace .json</button>
+						<button id="vtCopyBundleBtn" type="button" class="btn" disabled>Copy trace JSON</button>
+					</div>
+					<div class="toggle-row" aria-label="Export options">
+						<label class="toggle">
+							<input id="vtMinify" type="checkbox" checked />
+							<span>Minify exports</span>
+						</label>
+						<label class="field" style="margin:0; min-width: 160px;">
+							<span class="label">Decimal rounding</span>
+							<input id="vtDecimals" class="input" type="number" inputmode="numeric" min="0" max="4" step="1" value="2" />
+						</label>
+					</div>
+					<ul class="metrics" aria-label="Metrics">
+						<li><span>Engine</span><span id="vtMetricEngine">—</span></li>
+						<li><span>Duration</span><span id="vtMetricDuration">—</span></li>
+						<li><span>Paths</span><span id="vtMetricPaths">—</span></li>
+						<li><span>SVG bytes</span><span id="vtMetricBytes">—</span></li>
+					</ul>
+					<div id="vtPaletteLegend" class="palette" aria-label="Palette legend"></div>
+					<div class="frame" aria-label="SVG preview">
+						<iframe id="vtSvgPreview" class="iframe" title="SVG preview" sandbox></iframe>
+					</div>
+					<div class="row-head" style="margin-top: 10px;">
+						<div class="row-title">SVG source</div>
+						<div class="row-subtitle">Read-only until engines are added.</div>
+					</div>
+					<textarea id="vtSvgText" class="textarea" rows="14" readonly></textarea>
+				</section>
+			</aside>
+		</div>
+	</main>
+
+	<script src="./vector-trace.js"></script>
+</body>
+
+</html>

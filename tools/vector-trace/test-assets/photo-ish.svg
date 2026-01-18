@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="512" viewBox="0 0 1024 512">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0b1b3a"/>
+      <stop offset="0.55" stop-color="#153a7a"/>
+      <stop offset="1" stop-color="#f2d7a1"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="0.72" cy="0.32" r="0.55">
+      <stop offset="0" stop-color="#fff6cc" stop-opacity="1"/>
+      <stop offset="0.45" stop-color="#ffd27a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ffd27a" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.22 0"/>
+      <feBlend mode="overlay" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#sky)"/>
+  <rect width="100%" height="100%" fill="url(#sun)"/>
+  <g opacity="0.92">
+    <path d="M 0 380 C 180 320, 300 430, 520 370 C 720 315, 860 420, 1024 360 L 1024 512 L 0 512 Z" fill="#2a1d12"/>
+    <path d="M 0 410 C 220 360, 360 470, 600 410 C 780 368, 910 455, 1024 405 L 1024 512 L 0 512 Z" fill="#3a2a1a" opacity="0.85"/>
+  </g>
+  <g filter="url(#grain)">
+    <rect width="100%" height="100%" fill="#ffffff" opacity="0.05"/>
+  </g>
+  <g opacity="0.22" fill="#ffffff">
+    <circle cx="120" cy="90" r="2"/>
+    <circle cx="180" cy="140" r="1.6"/>
+    <circle cx="260" cy="80" r="1.4"/>
+    <circle cx="340" cy="150" r="1.8"/>
+    <circle cx="450" cy="100" r="1.6"/>
+    <circle cx="560" cy="140" r="1.4"/>
+    <circle cx="660" cy="90" r="1.8"/>
+    <circle cx="760" cy="150" r="1.5"/>
+    <circle cx="860" cy="110" r="1.7"/>
+  </g>
+</svg>
