@@ -2915,6 +2915,96 @@ Supported:
 		return Math.max(1, Math.round(n));
 	}
 
+	function parseNonNegativeNumber(value, fallback) {
+		const n = Number(value);
+		if (!Number.isFinite(n)) return fallback;
+		return Math.max(0, n);
+	}
+
+	function estimateEdgeBackgroundRgb(imageData, insetPx) {
+		const w = imageData.width;
+		const h = imageData.height;
+		const d = imageData.data;
+		const inset = clampInt(Number(insetPx), 0, Math.floor(Math.min(w, h) / 2) - 1);
+		if (w <= 2 || h <= 2) return null;
+
+		// Sample a thin perimeter ring; step by 2 pixels to keep it fast.
+		const step = 2;
+		const band = 2;
+		let sumR = 0, sumG = 0, sumB = 0, count = 0;
+		const add = (x, y) => {
+			if (x < 0 || y < 0 || x >= w || y >= h) return;
+			const i = (y * w + x) * 4;
+			const a = d[i + 3];
+			if (a === 0) return;
+			sumR += d[i];
+			sumG += d[i + 1];
+			sumB += d[i + 2];
+			count++;
+		};
+
+		const left = inset;
+		const right = w - 1 - inset;
+		const top = inset;
+		const bottom = h - 1 - inset;
+		if (right <= left || bottom <= top) return null;
+
+		for (let x = left; x <= right; x += step) {
+			for (let b = 0; b < band; b++) {
+				add(x, top + b);
+				add(x, bottom - b);
+			}
+		}
+		for (let y = top; y <= bottom; y += step) {
+			for (let b = 0; b < band; b++) {
+				add(left + b, y);
+				add(right - b, y);
+			}
+		}
+
+		if (count <= 0) return null;
+		return {
+			r: Math.round(sumR / count),
+			g: Math.round(sumG / count),
+			b: Math.round(sumB / count),
+		};
+	}
+
+	function applyBackgroundRemoveInPlace(imageData, opts) {
+		const w = imageData.width;
+		const h = imageData.height;
+		const d = imageData.data;
+		const threshold = clampInt(Number(opts.threshold), 0, 255);
+		const featherPx = clamp(Number(opts.feather), 0, 50);
+		const inset = clampInt(Number(opts.inset), 0, 100000);
+
+		const bg = estimateEdgeBackgroundRgb(imageData, inset);
+		if (!bg) return false;
+
+		// Feather is specified in px but we're operating in color-distance space.
+		// Use a simple linear ramp with a scale factor that feels reasonable.
+		const featherRange = Math.max(1, Math.round(featherPx * 18));
+		const t0 = threshold;
+		const t1 = threshold + featherRange;
+
+		for (let i = 0; i < d.length; i += 4) {
+			const a = d[i + 3];
+			if (a === 0) continue;
+			const dr = d[i] - bg.r;
+			const dg = d[i + 1] - bg.g;
+			const db = d[i + 2] - bg.b;
+			const dist = Math.sqrt(dr * dr + dg * dg + db * db);
+			if (dist <= t0) {
+				d[i + 3] = 0;
+				continue;
+			}
+			if (dist >= t1) continue;
+			const k = (dist - t0) / (t1 - t0);
+			d[i + 3] = clampInt(Math.round(a * k), 0, 255);
+		}
+		return true;
+	}
+
 	class ExportController {
 		/** @param {{
 		 * outWidth: HTMLInputElement,
@@ -2924,6 +3014,11 @@ Supported:
 		 * formatSelect: HTMLSelectElement,
 		 * bgColor: HTMLInputElement,
 		 * bgTransparent: HTMLInputElement,
+		 * bgRemoveEnabled: HTMLInputElement,
+		 * bgRemoveThreshold: HTMLInputElement,
+		 * bgRemoveFeather: HTMLInputElement,
+		 * bgRemoveInset: HTMLInputElement,
+		 * bgRemoveJpegWarning: HTMLElement,
 		 * exportBtn: HTMLButtonElement,
 		 * copyBtn: HTMLButtonElement,
 		 * exportSize: HTMLElement,
@@ -2953,12 +3048,15 @@ Supported:
 			this.outputPreviewUrl = "";
 			this.exportCanvas = document.createElement("canvas");
 			this.exportCtx = this.exportCanvas.getContext("2d");
+			this.stageCanvas = document.createElement("canvas");
+			this.stageCtx = this.stageCanvas.getContext("2d", { willReadFrequently: true });
 
 			this.onSizeInput = this.onSizeInput.bind(this);
 			this.onLockAspect = this.onLockAspect.bind(this);
 			this.onUseCropSize = this.onUseCropSize.bind(this);
 			this.onFormatChange = this.onFormatChange.bind(this);
 			this.onBgChange = this.onBgChange.bind(this);
+			this.onBgRemoveChange = this.onBgRemoveChange.bind(this);
 			this.onExport = this.onExport.bind(this);
 			this.onCopy = this.onCopy.bind(this);
 			this.onJpegQuality = this.onJpegQuality.bind(this);
@@ -2972,6 +3070,10 @@ Supported:
 			this.els.formatSelect.addEventListener("change", this.onFormatChange);
 			this.els.bgColor.addEventListener("input", this.onBgChange);
 			this.els.bgTransparent.addEventListener("change", this.onBgChange);
+			this.els.bgRemoveEnabled.addEventListener("change", this.onBgRemoveChange);
+			this.els.bgRemoveThreshold.addEventListener("input", this.onBgRemoveChange);
+			this.els.bgRemoveFeather.addEventListener("input", this.onBgRemoveChange);
+			this.els.bgRemoveInset.addEventListener("input", this.onBgRemoveChange);
 			this.els.exportBtn.addEventListener("click", this.onExport);
 			this.els.copyBtn.addEventListener("click", this.onCopy);
 			this.els.jpegQuality.addEventListener("input", this.onJpegQuality);
@@ -2997,12 +3099,37 @@ Supported:
 			this.els.formatSelect.disabled = !enabled;
 			this.els.bgColor.disabled = !enabled;
 			this.els.bgTransparent.disabled = !enabled;
+			this.els.bgRemoveEnabled.disabled = !enabled;
+			this.els.bgRemoveThreshold.disabled = !enabled;
+			this.els.bgRemoveFeather.disabled = !enabled;
+			this.els.bgRemoveInset.disabled = !enabled;
 			this.els.exportBtn.disabled = !enabled;
 			this.els.copyBtn.disabled = !enabled;
 			this.els.jpegQuality.disabled = !enabled;
+			if (!enabled) this.els.bgRemoveJpegWarning.hidden = true;
+			if (enabled) this.updateBgRemoveUi();
 			// Output preview is always visible when enabled.
 			this.clearOutputPreviewUrl();
 			if (!enabled) this.updateEstimateLabel(null);
+		}
+
+		getBgRemoveSettings() {
+			return {
+				enabled: !!this.els.bgRemoveEnabled.checked,
+				threshold: clampInt(Number(this.els.bgRemoveThreshold.value || 38), 0, 255),
+				feather: clamp(parseNonNegativeNumber(this.els.bgRemoveFeather.value, 1.5), 0, 50),
+				inset: clampInt(Number(this.els.bgRemoveInset.value || 8), 0, 100000),
+			};
+		}
+
+		updateBgRemoveUi() {
+			if (!this.enabled) {
+				this.els.bgRemoveJpegWarning.hidden = true;
+				return;
+			}
+			const fmt = this.getExportFormat();
+			const br = this.getBgRemoveSettings();
+			this.els.bgRemoveJpegWarning.hidden = !(br.enabled && fmt === "jpeg");
 		}
 
 		clear() {
@@ -3097,6 +3224,7 @@ Supported:
 				this.setJpegUiVisible(false);
 				this.clearJpegUrls();
 			}
+			this.updateBgRemoveUi();
 			this.scheduleEstimate();
 		}
 
@@ -3140,6 +3268,18 @@ Supported:
 				this.els.bgTransparent.checked = false;
 			}
 
+			this.scheduleEstimate();
+			this.scheduleJpegCompare();
+		}
+
+		onBgRemoveChange() {
+			if (!this.enabled) return;
+			// Keep inputs clamped.
+			const s = this.getBgRemoveSettings();
+			this.els.bgRemoveThreshold.value = String(s.threshold);
+			this.els.bgRemoveFeather.value = String(s.feather);
+			this.els.bgRemoveInset.value = String(s.inset);
+			this.updateBgRemoveUi();
 			this.scheduleEstimate();
 			this.scheduleJpegCompare();
 		}
@@ -3211,14 +3351,11 @@ Supported:
 		}
 
 		async renderToJpegBlob(quality) {
-			// Render using the same crop + output size, forcing an opaque background.
-			const ctx = this.exportCtx;
-			const image = this.cropEditor.image;
-			const rect = this.cropEditor.getCropRectInImagePixels();
-			if (!ctx || !image || !rect) throw new Error("No image to export");
-
 			const outW = parsePositiveInt(this.els.outWidth.value, 512);
 			const outH = parsePositiveInt(this.els.outHeight.value, 512);
+			const stage = await this.renderStageCanvas(outW, outH);
+			const ctx = this.exportCtx;
+			if (!ctx) throw new Error("Export canvas unavailable");
 			this.exportCanvas.width = outW;
 			this.exportCanvas.height = outH;
 			ctx.setTransform(1, 0, 0, 1, 0, 0);
@@ -3227,7 +3364,7 @@ Supported:
 			ctx.imageSmoothingQuality = "high";
 			ctx.fillStyle = String(this.els.bgColor.value || "#ffffff");
 			ctx.fillRect(0, 0, outW, outH);
-			this.drawCropContained(ctx, image, rect, outW, outH);
+			ctx.drawImage(stage, 0, 0);
 			return await blobFromCanvas(this.exportCanvas, "image/jpeg", clamp(Number(quality), 0.1, 1));
 		}
 
@@ -3276,33 +3413,58 @@ Supported:
 		}
 
 		async renderToBlob() {
-			const ctx = this.exportCtx;
-			const image = this.cropEditor.image;
-			const rect = this.cropEditor.getCropRectInImagePixels();
-			if (!ctx || !image || !rect) throw new Error("No image to export");
-
 			const outW = parsePositiveInt(this.els.outWidth.value, 512);
 			const outH = parsePositiveInt(this.els.outHeight.value, 512);
+			const fmt = this.getExportFormat();
+			const bgTransparent = fmt === "png" && !!this.els.bgTransparent.checked;
+			const stage = await this.renderStageCanvas(outW, outH);
+			if (bgTransparent) {
+				if (fmt === "jpeg") throw new Error("Internal error: JPEG cannot be transparent.");
+				return await blobFromCanvas(stage, "image/png");
+			}
+
+			const ctx = this.exportCtx;
+			if (!ctx) throw new Error("Export canvas unavailable");
 			this.exportCanvas.width = outW;
 			this.exportCanvas.height = outH;
 			ctx.setTransform(1, 0, 0, 1, 0, 0);
 			ctx.clearRect(0, 0, outW, outH);
 			ctx.imageSmoothingEnabled = true;
 			ctx.imageSmoothingQuality = "high";
-
-			const fmt = this.getExportFormat();
-			const bgTransparent = fmt === "png" && !!this.els.bgTransparent.checked;
-			if (!bgTransparent) {
-				ctx.fillStyle = String(this.els.bgColor.value || "#ffffff");
-				ctx.fillRect(0, 0, outW, outH);
-			}
-
-			this.drawCropContained(ctx, image, rect, outW, outH);
+			ctx.fillStyle = String(this.els.bgColor.value || "#ffffff");
+			ctx.fillRect(0, 0, outW, outH);
+			ctx.drawImage(stage, 0, 0);
 
 			if (fmt === "jpeg") {
 				return await blobFromCanvas(this.exportCanvas, "image/jpeg", clamp(Number(this.els.jpegQuality.value || 0.92), 0.1, 1));
 			}
 			return await blobFromCanvas(this.exportCanvas, "image/png");
+		}
+
+		async renderStageCanvas(outW, outH) {
+			const stageCtx = this.stageCtx;
+			const image = this.cropEditor.image;
+			const rect = this.cropEditor.getCropRectInImagePixels();
+			if (!stageCtx || !image || !rect) throw new Error("No image to export");
+			this.stageCanvas.width = outW;
+			this.stageCanvas.height = outH;
+			stageCtx.setTransform(1, 0, 0, 1, 0, 0);
+			stageCtx.clearRect(0, 0, outW, outH);
+			stageCtx.imageSmoothingEnabled = true;
+			stageCtx.imageSmoothingQuality = "high";
+			this.drawCropContained(stageCtx, image, rect, outW, outH);
+
+			const br = this.getBgRemoveSettings();
+			if (br.enabled) {
+				try {
+					const imgData = stageCtx.getImageData(0, 0, outW, outH);
+					applyBackgroundRemoveInPlace(imgData, br);
+					stageCtx.putImageData(imgData, 0, 0);
+				} catch (_) {
+					// If ImageData access is blocked/unavailable, silently skip.
+				}
+			}
+			return this.stageCanvas;
 		}
 
 		async onExport() {
@@ -3392,6 +3554,11 @@ Supported:
 			outputPreviewFrame: document.getElementById("outputPreviewFrame"),
 			outputPreviewImg: document.getElementById("outputPreviewImg"),
 			outputPreviewMeta: document.getElementById("outputPreviewMeta"),
+			bgRemoveEnabled: document.getElementById("bgRemoveEnabled"),
+			bgRemoveThreshold: document.getElementById("bgRemoveThreshold"),
+			bgRemoveFeather: document.getElementById("bgRemoveFeather"),
+			bgRemoveInset: document.getElementById("bgRemoveInset"),
+			bgRemoveJpegWarning: document.getElementById("bgRemoveJpegWarning"),
 		};
 
 		const requiredKeys = [
@@ -3435,6 +3602,11 @@ Supported:
 			"jpegOptimizedImg",
 			"jpegBaselineMeta",
 			"jpegOptimizedMeta",
+			"bgRemoveEnabled",
+			"bgRemoveThreshold",
+			"bgRemoveFeather",
+			"bgRemoveInset",
+			"bgRemoveJpegWarning",
 		];
 
 		for (const key of requiredKeys) {
@@ -3477,6 +3649,11 @@ Supported:
 			formatSelect: els.formatSelect,
 			bgColor: els.bgColor,
 			bgTransparent: els.bgTransparent,
+			bgRemoveEnabled: els.bgRemoveEnabled,
+			bgRemoveThreshold: els.bgRemoveThreshold,
+			bgRemoveFeather: els.bgRemoveFeather,
+			bgRemoveInset: els.bgRemoveInset,
+			bgRemoveJpegWarning: els.bgRemoveJpegWarning,
 			exportBtn: els.exportBtn,
 			copyBtn: els.copyBtn,
 			exportSize: els.exportSize,
