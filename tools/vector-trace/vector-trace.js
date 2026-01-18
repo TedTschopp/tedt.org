@@ -1647,7 +1647,7 @@
 			const bytes = encodeSvgTextBytes(this.exportedSvgText);
 			if (this.els.metricBytes) this.els.metricBytes.textContent = `${Number(bytes).toLocaleString()} B`;
 			if (this.els.svgText) this.els.svgText.value = this.exportedSvgText;
-			if (this.els.svgPreview) this.els.svgPreview.srcdoc = svgToSandboxDoc(this.exportedSvgText);
+				if (this.els.svgPreview) this.els.svgPreview.src = svgToDataUrl(this.exportedSvgText);
 			if (this.els.svgMeta && this.normalized.w && this.normalized.h) {
 				this.els.svgMeta.textContent = `${this.normalized.w}×${this.normalized.h} · ${Math.round(bytes / 1024)} KB`;
 			}
@@ -2211,7 +2211,7 @@
 			this.renderPaletteLegend(res?.metrics?.palette || null);
 
 			if (this.els.svgText) this.els.svgText.value = this.exportedSvgText || this.svgText;
-			if (this.els.svgPreview) this.els.svgPreview.srcdoc = svgToSandboxDoc(this.exportedSvgText || this.svgText);
+			if (this.els.svgPreview) this.els.svgPreview.src = svgToDataUrl(this.exportedSvgText || this.svgText);
 			if (this.els.svgMeta) this.els.svgMeta.textContent = `${w}×${h} · ${Math.round(bytes / 1024)} KB`;
 			this.lastTraceBundle = this.buildTraceBundle();
 
