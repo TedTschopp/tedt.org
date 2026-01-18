@@ -31,6 +31,7 @@
 				<button class="tab" id="tab-svg-sandbox" role="tab" aria-selected="false" aria-controls="panel-svg-sandbox" data-tab="svg-sandbox" type="button">SVG Sandbox</button>
 				<button class="tab" id="tab-svg-embed" role="tab" aria-selected="false" aria-controls="panel-svg-embed" data-tab="svg-embed" type="button">SVG Embed</button>
 				<button class="tab" id="tab-avatar" role="tab" aria-selected="false" aria-controls="panel-avatar" data-tab="avatar" type="button">Avatar</button>
+				<button class="tab" id="tab-vector-trace" role="tab" aria-selected="false" aria-controls="panel-vector-trace" data-tab="vector-trace" type="button">Vector Trace</button>
 			</nav>
 
 			<div id="panel-editor" class="tab-panel" role="tabpanel" aria-labelledby="tab-editor" data-panel="editor">
@@ -334,6 +335,15 @@
 			<div id="panel-avatar" class="tab-panel" role="tabpanel" aria-labelledby="tab-avatar" data-panel="avatar" hidden>
 				<p class="hint">A reusable avatar cropper component that outputs a JPEG data URL to a hidden input.</p>
 			</div>
+
+			<div id="panel-vector-trace" class="tab-panel" role="tabpanel" aria-labelledby="tab-vector-trace" data-panel="vector-trace" hidden>
+				<p class="hint">Vector Trace is embedded in the preview area to avoid CSS/JS collisions with Image Tools.</p>
+				<div class="controls-row controls-row--2" aria-label="Vector Trace links">
+					<a class="btn btn-primary" href="vector-trace/" target="_blank" rel="noopener" style="display:inline-grid; place-items:center; text-decoration:none;">Open standalone</a>
+					<a class="btn" href="vector-trace/README.md" target="_blank" rel="noopener" style="display:inline-grid; place-items:center; text-decoration:none;">README</a>
+				</div>
+				<p class="hint">Tip: Web Worker support works best over <code>http://localhost</code> (not <code>file://</code>).</p>
+			</div>
 		</div>
 
 		<div id="viewport" aria-label="Preview area">
@@ -524,6 +534,18 @@
 						<div class="micro-hint">The hidden input named <code>avatar_data_url</code> will contain the JPEG data URL.</div>
 					</form>
 				</section>
+			</div>
+
+			<div id="view-vector-trace" class="view view--vector-trace" data-view="vector-trace" hidden>
+				<iframe
+					class="vector-trace-embed"
+					src="vector-trace/"
+					title="Vector Trace"
+					loading="lazy"
+					allow="clipboard-read; clipboard-write"
+					sandbox="allow-scripts allow-downloads allow-forms allow-same-origin"
+				></iframe>
+				<div class="micro-hint">If the embed is blocked, use the “Open standalone” button in the left panel.</div>
 			</div>
 		</div>
 

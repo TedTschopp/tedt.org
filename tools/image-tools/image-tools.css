@@ -51,7 +51,7 @@ body {
 
 .tabs {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
 	gap: 8px;
 }
 
@@ -231,6 +231,32 @@ kbd {
 	overflow: auto;
 	padding: 14px;
 	padding-top: calc(14px + 560px);
+}
+
+.view--vector-trace {
+	position: fixed;
+	inset: 0;
+	padding: 14px;
+	padding-top: calc(14px + 560px);
+	display: grid;
+	grid-template-rows: 1fr auto;
+	gap: 10px;
+}
+
+@media (min-width: 920px) {
+	.view--vector-trace {
+		padding-top: 14px;
+		padding-left: calc(28px + var(--it-controls-w));
+	}
+}
+
+.vector-trace-embed {
+	width: 100%;
+	height: 100%;
+	border: 1px solid var(--it-border);
+	border-radius: var(--it-radius);
+	background: rgba(255, 255, 255, 0.94);
+	box-shadow: var(--it-shadow);
 }
 
 @media (min-width: 920px) {
