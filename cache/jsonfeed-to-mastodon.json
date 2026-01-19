@@ -3599,5 +3599,40 @@
       "https://tschopp.net/users/Ted/statuses/115909043216153074"
     ],
     "lastTootTimestamp": 1768631640975
+  },
+  "https://tedt.org/Agents-Dont-Click/": {
+    "id": "/Agents-Dont-Click/",
+    "title": "Agents Don’t Click",
+    "summary": "A thesis about the next platform shift: agentic workflows move interaction from human-first UIs to tool calls, policy, and auditability—turning many screens into generated receipts and approval gates.",
+    "content_text": "A thesis about the next platform shift: agentic workflows move interaction from human-first UIs to tool calls, policy, and auditability—turning many screens into generated receipts and approval gates. https://tedt.org/Agents-Dont-Click/",
+    "url": "https://tedt.org/Agents-Dont-Click/",
+    "image": "https://tedt.org/img/AI/Agentic-Office.webp",
+    "tags": [
+      "agentic-systems",
+      "ai-agents",
+      "workflows",
+      "systems-of-record",
+      "systems-of-engagement",
+      "ui",
+      "apis",
+      "governance",
+      "auditability",
+      "policy",
+      "authorization",
+      "idempotency",
+      "observability",
+      "traceability"
+    ],
+    "date_published": "2026-01-18T07:21:20-08:00",
+    "date_modified": "2026-01-18T07:21:20-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115919062308513044"
+    ],
+    "lastTootTimestamp": 1768784520199
   }
 }
