@@ -3603,10 +3603,10 @@
   "https://tedt.org/Agents-Dont-Click/": {
     "id": "/Agents-Dont-Click/",
     "title": "Agents Don’t Click",
-    "summary": "A thesis about the next platform shift: agentic workflows move interaction from human-first UIs to tool calls, policy, and auditability—turning many screens into generated receipts and approval gates.",
-    "content_text": "A thesis about the next platform shift: agentic workflows move interaction from human-first UIs to tool calls, policy, and auditability—turning many screens into generated receipts and approval gates. https://tedt.org/Agents-Dont-Click/",
+    "summary": "A thesis about the next platform shift: agentic workflows move interaction from human-first UIs to tool calls, policy and auditability — turning many screens into generated receipts and approval gates.",
+    "content_text": "A thesis about the next platform shift: agentic workflows move interaction from human-first UIs to tool calls, policy and auditability — turning many screens into generated receipts and approval gates. https://tedt.org/Agents-Dont-Click/",
     "url": "https://tedt.org/Agents-Dont-Click/",
-    "image": "https://tedt.org/img/AI/Agentic-Office.webp",
+    "image": "https://tedt.org/img/2026-01/Agentic-Office.webp",
     "tags": [
       "agentic-systems",
       "ai-agents",
@@ -3634,5 +3634,34 @@
       "https://tschopp.net/users/Ted/statuses/115919062308513044"
     ],
     "lastTootTimestamp": 1768784520199
+  },
+  "https://tedt.org/Reprint-The-Death-of-Software/": {
+    "id": "/Reprint-The-Death-of-Software/",
+    "title": "REPRINT: The Death of Software 2.0",
+    "summary": "Using the memory hierarchy as an analogy, this essay argues that AI agents will become the fast, non-persistent layer for information work—while durable systems of record (data, state, APIs) become the true value layer.",
+    "content_text": "Using the memory hierarchy as an analogy, this essay argues that AI agents will become the fast, non-persistent layer for information work—while durable systems of record (data, state, APIs) become the true value layer. https://tedt.org/Reprint-The-Death-of-Software/",
+    "url": "https://tedt.org/Reprint-The-Death-of-Software/",
+    "image": "https://tedt.org/img/2026-01/Memory-vs-Software.webp",
+    "tags": [
+      "AI",
+      "Agents",
+      "Claude",
+      "SaaS",
+      "APIs",
+      "Infrastructure",
+      "Product strategy",
+      "Memory hierarchy"
+    ],
+    "date_published": "2026-01-16T07:00:00-08:00",
+    "date_modified": "2026-01-16T07:00:00-08:00",
+    "author": {
+      "avatar": "https://substackcdn.com/image/fetch/$s_!s7Zl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4063d155-1ee2-4c94-b009-2ed682737040_183x275.jpeg",
+      "name": "Doug O'Laughlin",
+      "url": "https://substack.com/@foolallthetime"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115920399854591372"
+    ],
+    "lastTootTimestamp": 1768804929575
   }
 }
