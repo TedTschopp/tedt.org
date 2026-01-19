@@ -4,17 +4,17 @@ title: "REPRINT: The Death of Software 2.0"
 subtitle: "Why the memory hierarchy is the right analogy for agentic software"
 quote: "Claude Code is DRAM."
 excerpt: "Using the memory hierarchy as an analogy, this essay argues that AI agents will become the fast, non-persistent layer for information work—while durable systems of record (data, state, APIs) become the true value layer."
-source: "Original Content"
-source-url: ""
+source: "Doug O'Laughlin"
+source-url: "https://www.fabricatedknowledge.com/p/the-death-of-software-20-a-better"
 call-to-action: "Discuss on Mastodon"
 
 date: 2026-01-16 07:00:00 -0800
 update: 2026-01-16 07:00:00 -0800
 
 author:
-  avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
-  name: "Ted Tschopp"
-  url: "https://tedt.org/"
+  avatar: "https://substackcdn.com/image/fetch/$s_!s7Zl!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F4063d155-1ee2-4c94-b009-2ed682737040_183x275.jpeg"
+  name: "Doug O'Laughlin"
+  url: "https://substack.com/@foolallthetime"
 
 bullets:
   - Agentic systems shift value from UI workflows to durable sources of truth.

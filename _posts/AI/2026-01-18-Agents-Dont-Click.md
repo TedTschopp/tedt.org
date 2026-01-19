@@ -121,7 +121,7 @@ in how software is packaged, sold, and operated. So when I say “I get it,” I
 do—and I also have enough scar tissue to recognize when a layer is becoming a
 commodity.
 
-## AI is still in the Apple ][ phase
+## AI is still in the Apple II phase
 
 People point to the weaknesses of early AI chatbots and conclude: “See, it won’t
 work.”
@@ -252,7 +252,7 @@ and accountability**—not the place where all work is performed.
 
 Let’s take a workflow almost every enterprise recognizes:
 
-### Example: Access request + least privilege approval (Teams → Sailpoint → Azure AD → audit)
+### Example: Access request + least privilege approval (Teams → SailPoint → Azure AD → audit)
 
 #### How it works today (human-first UI loop)
 
@@ -400,7 +400,7 @@ industries.
 
 The hard problems aren’t “Can the model talk?” They’re:
 
-### 1) Non-determinism and reproducibility
+### 1. Nondeterminism and reproducibility
 
 If an agent makes decisions, you need to answer:
 
@@ -410,7 +410,7 @@ If an agent makes decisions, you need to answer:
 
 That implies replay, versioning, and evidence capture—not just logging.
 
-### 2) Security: adversarial inputs and tool misuse
+### 2. Security: adversarial inputs and tool misuse
 
 If agents can read and write across systems, your attack surface changes:
 
@@ -421,7 +421,7 @@ If agents can read and write across systems, your attack surface changes:
 Agent systems need hardened boundaries and policy enforcement, not just
 “smartness.”
 
-### 3) Authorization is harder than it looks
+### 3. Authorization is harder than it looks
 
 “Permissions replace seats” is true—but implementing least privilege at
 enterprise scale is painful:
@@ -432,7 +432,7 @@ enterprise scale is painful:
 * temporary access
 * approvals tied to policy and context
 
-### 4) Regulated workflows still require humans 
+### 4. Regulated workflows still require humans
 
 In many domains, humans must:
 
