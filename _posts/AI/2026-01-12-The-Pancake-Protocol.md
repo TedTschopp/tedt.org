@@ -64,10 +64,10 @@ keywords:
 - "agent skills"
 
 location:
-name: Bradbury, CA
-coordinates:
-latitude: 34.1470
-longitude: -117.9709
+  name: Bradbury, CA
+  coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
 
 image:  /img/AI/The-Pancake-Protocol.webp
 image-alt: "Three children wearing aprons carefully shape pancakes together on baking trays in a warm, sunlit kitchen."
