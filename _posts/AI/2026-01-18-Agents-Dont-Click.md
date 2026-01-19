@@ -68,7 +68,7 @@ location:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/AI/Agentic-Office.webp
+image: /img/2026-01/Agentic-Office.webp
 image-alt: "Dimly lit operations office seen through a glass wall, with desks and multiple monitors showing blue dashboards."
 image-artist: "Ted Tschopp"
 image-artist-URL: https://tedt.org/
@@ -80,8 +80,6 @@ image_height: 816
 
 mastodon-post-id:
 ---
-
-# Agents Don’t Click: How agentic workflows turn UIs into receipts
 
 Every platform shift has a familiar pattern: the underlying machinery stays, but
 the *interface layer* gets rewritten.

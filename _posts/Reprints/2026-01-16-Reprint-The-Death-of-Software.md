@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "The Death of Software 2.0"
+title: "REPRINT: The Death of Software 2.0"
 subtitle: "Why the memory hierarchy is the right analogy for agentic software"
 quote: "Claude Code is DRAM."
 excerpt: "Using the memory hierarchy as an analogy, this essay argues that AI agents will become the fast, non-persistent layer for information work—while durable systems of record (data, state, APIs) become the true value layer."
