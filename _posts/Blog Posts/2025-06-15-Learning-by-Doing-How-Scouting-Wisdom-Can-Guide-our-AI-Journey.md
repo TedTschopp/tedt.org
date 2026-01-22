@@ -2,34 +2,27 @@
 layout: post
 title: Learning by Doing
 subtitle: How Scouting Wisdom Can Guide our AI Journey
-quote: Let's move forward together, thoughtfully, eagerly, and openly, into this new,
-  hopeful chapter of our shared learning journey.
-excerpt: "Just as Scout camp teaches skills through personalized guidance and real-world\
-  \ practice, mastering AI isn't just about technical training\u2014it's about weaving\
-  \ AI learning seamlessly into daily work through dynamic partnership and continuous\
-  \ adaptation."
+quote: "Let's move forward together, thoughtfully, eagerly, and openly, into this new, hopeful chapter of our shared learning journey."
+excerpt: "Just as Scout camp teaches skills through personalized guidance and real-world practice, mastering AI isn't just about technical training\u2014it's about weaving AI learning seamlessly into daily work through dynamic partnership and continuous adaptation."
 source: Original Content
 source-url: ''
-call-to-action: Share how you're integrating AI learning into your daily work routine
+call-to-action: "Share how you're integrating AI learning into your daily work routine"
 date: 2025-06-15
 update: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org/
+
 bullets:
-- AI learning happens naturally through daily practice, like learning to speak or
-  ride a bike
+- AI learning happens naturally through daily practice, like learning to speak or ride a bike
 - AI becomes a co-creator, generating interactive scenarios and responsive simulations
 - Real-time AI guidance provides compassionate support without fear of costly mistakes
-- AI handles routine tasks, freeing humans for deeper work requiring creativity and
-  judgment
-- Four-step journey: Reflect & Identify, Partner & Create, Experiment & Learn, Share
-    & Grow
-description: "Exploring how the principles of Scout camp\u2014personalized guidance,\
-  \ real-world practice, and adaptive learning\u2014can transform how we approach\
-  \ AI training and integration in the workplace."
-seo-description: Learn how Scout camp principles can guide AI learning in the workplace.
+- AI handles routine tasks, freeing humans for deeper work requiring creativity and judgment
+- Four-step journey: Reflect & Identify, Partner & Create, Experiment & Learn, Share & Grow
+description: "Exploring how the principles of Scout camp personalized guidance, real-world practice, and adaptive learning can transform how we approach AI training and integration in the workplace."
+seo-description: >-
+  Learn how Scout camp principles can guide AI learning in the workplace.
   Discover practical steps for integrating AI training through personalized guidance
   and real-world application.
 categories:
@@ -49,25 +42,18 @@ tags:
 - BSA Scout camp
 - employee training
 - Fortune magazine
-keywords: AI learning, Scout camp wisdom, workplace AI training, human-AI partnership,
-  adaptive learning, AI integration, personalized guidance, real-time learning, professional
-  development
+keywords: AI learning, Scout camp wisdom, workplace AI training, human-AI partnership, adaptive learning, AI integration, personalized guidance, real-time learning, professional development
 location:
   name: Bradbury, CA
-coordinates:
-  latitude: 34.147
-  longitude: -117.9709
+  coordinates:
+    latitude: 34.147
+    longitude: -117.9709
 image: /img/AI/Learning-by-Doing.webp
-image-alt: ''
+image-alt: 'Boy in a scout uniform sitting at an outdoor café table, giving a thumbs up while eating pizza'
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
-image-credits: Ted Tschopp
-image-credits-URL: https://tedt.org/
-image-credits-artist: Ted Tschopp
-image-credits-artist-URL: https://tedt.org/
-image-credits-title: ''
-image-description: ''
-image-title: ''
+image-description: 'An image of a boy wearing a scout uniform seated at an outdoor café table with white chairs and red umbrellas, enjoying a slice of pizza and giving a thumbs up—visually representing the scout-inspired ‘learning by doing’ theme of the article about hands-on AI training and real-world practice.'
+image-title: 'Scout Learning by Doing'
 mastodon-post-id: 115006307407887240
 image_width: 1536
 image_height: 1024
