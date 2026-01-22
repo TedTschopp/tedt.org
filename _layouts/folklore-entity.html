@@ -155,6 +155,9 @@
                   </nav>
 
                   {%- comment -%} List by entity type {%- endcomment -%}
+                  {%- assign __threat_anchor_dangerous_added = false -%}
+                  {%- assign __threat_anchor_ominous_added = false -%}
+                  {%- assign __threat_anchor_none_added = false -%}
                   {% for type in entity_types %}
                     {% assign entities_of_type = "" | split: "" %}
                     {% for ent_pair in site.data.folklore.entities %}
@@ -179,6 +182,17 @@
                         {% for ent_pair in entities_of_type %}
                           {% assign ent_id = ent_pair[0] %}
                           {% assign ent = ent_pair[1] %}
+
+                          {%- if ent.threat_level == 'Dangerous' and __threat_anchor_dangerous_added == false -%}
+                            <div id="threat-dangerous" class="visually-hidden" aria-hidden="true"></div>
+                            {%- assign __threat_anchor_dangerous_added = true -%}
+                          {%- elsif ent.threat_level == 'Ominous' and __threat_anchor_ominous_added == false -%}
+                            <div id="threat-ominous" class="visually-hidden" aria-hidden="true"></div>
+                            {%- assign __threat_anchor_ominous_added = true -%}
+                          {%- elsif ent.threat_level == 'None' and __threat_anchor_none_added == false -%}
+                            <div id="threat-none" class="visually-hidden" aria-hidden="true"></div>
+                            {%- assign __threat_anchor_none_added = true -%}
+                          {%- endif -%}
                         <div class="col-lg-6 mb-3">
                           <div class="card h-100 entity-card" id="{{ ent_id }}">
                             <div class="card-header d-flex justify-content-between align-items-center">

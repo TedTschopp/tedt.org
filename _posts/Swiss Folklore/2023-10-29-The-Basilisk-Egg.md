@@ -55,7 +55,9 @@ image-description: Sculpture in front of the Lange Erlen Zoo, a basilisk.
 image-title: Sculpture in front of the Lange Erlen Zoo, a basilisk.
 monster-or-magical-or-religious-ideas: Basilisk
 year-the-event-took-place: 1474
-permalink: /Swiss-Folklore/The-Basilisk-Egg
+permalink: /Swiss-Folklore/The-Basilisk-Egg/
+redirect_from:
+  - /Swiss-Folklore/The-Basilisk-Egg
 mathjax: null
 order: null
 image_width: 2640

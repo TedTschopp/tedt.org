@@ -79,7 +79,6 @@ last_modified: 2025-02-10
       <tr><th>Option</th><th>Pros</th><th>Cons</th><th>Decision</th></tr>
     </thead>
     <tbody>
-    published: false
       <tr><td>Centralized Hub</td><td>Unified control</td><td>Potential bottleneck</td><td class="fragment highlight">✔ Selected</td></tr>
       <tr><td>Federated</td><td>Domain autonomy</td><td>Inconsistent standards</td><td class="fragment">✖</td></tr>
       <tr><td>Hybrid</td><td>Balanced governance</td><td>Higher coordination cost</td><td class="fragment">△ Future Eval</td></tr>

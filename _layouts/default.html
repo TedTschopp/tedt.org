@@ -58,6 +58,8 @@
 
       <!-- Scripts that need to be at the end of the header -->
       {% include assets/scripts.html %}
+
+      {% include utility/theme-debug-style.html %}
   <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
 
     {% include layout/top-nav-bar.html %}
@@ -669,8 +671,8 @@
       });
     </script>
 
-  </body>
+    {% include utility/theme-debug.html %}
 
-  {% include utility/theme-debug.html %}
+  </body>
 
 </html>

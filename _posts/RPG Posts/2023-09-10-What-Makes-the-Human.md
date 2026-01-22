@@ -57,6 +57,73 @@ mastodon-post-id: '115017670363496709'
 ---
 ## Character Sheet - Work in Progress
 
+<div class="visually-hidden" aria-hidden="true">
+  <span id="academic"></span>
+  <span id="acrobatics-knowledge-areas"></span>
+  <span id="acuity-characteristics"></span>
+  <span id="adept-knowledge-areas"></span>
+  <span id="agility-characteristics"></span>
+  <span id="animal-handling-knowledge-areas"></span>
+  <span id="animism-knowledge-areas"></span>
+  <span id="arcane-knowledge-areas"></span>
+  <span id="assets"></span>
+  <span id="athletics-knowledge-areas"></span>
+  <span id="bureaucracy-knowledge-areas"></span>
+  <span id="chaos-knowledge-areas"></span>
+  <span id="community-hallmarks"></span>
+  <span id="deception-knowledge-areas"></span>
+  <span id="drive--ride--pilot-knowledge-areas"></span>
+  <span id="elite-gear"></span>
+  <span id="emotional"></span>
+  <span id="engineering-knowledge-areas"></span>
+  <span id="environmental-hallmarks"></span>
+  <span id="equipment"></span>
+  <span id="etiquette-knowledge-areas"></span>
+  <span id="faith-characteristics"></span>
+  <span id="fitness"></span>
+  <span id="formal-sciences-knowledge-areas"></span>
+  <span id="gnosis-knowledge-areas"></span>
+  <span id="identity-characteristics"></span>
+  <span id="insight-knowledge-areas"></span>
+  <span id="intellect-characteristics"></span>
+  <span id="intimidation-knowledge-areas"></span>
+  <span id="investigation-knowledge-areas"></span>
+  <span id="leadership-knowledge-areas"></span>
+  <span id="life-sciences-knowledge-areas"></span>
+  <span id="manners-characteristics"></span>
+  <span id="melee-combat-knowledge-areas"></span>
+  <span id="metaphysics-knowledge-areas"></span>
+  <span id="muscle-characteristics"></span>
+  <span id="mystery-characteristics"></span>
+  <span id="mystical"></span>
+  <span id="named-items"></span>
+  <span id="occupational-hallmarks"></span>
+  <span id="operational-gear"></span>
+  <span id="order-knowledge-areas"></span>
+  <span id="perception-knowledge-areas"></span>
+  <span id="performance-knowledge-areas"></span>
+  <span id="personality-characteristics"></span>
+  <span id="persuasion-knowledge-areas"></span>
+  <span id="physical-sciences--survival-knowledge-areas"></span>
+  <span id="pocket-money"></span>
+  <span id="ranged-combat-knowledge-areas"></span>
+  <span id="rating"></span>
+  <span id="reasoning-characteristics"></span>
+  <span id="recreational-hallmarks"></span>
+  <span id="ruggedness-knowledge-areas"></span>
+  <span id="shamanism-knowledge-areas"></span>
+  <span id="skepticism-characteristics"></span>
+  <span id="sleight-of-hand-knowledge-areas"></span>
+  <span id="social-sciences-knowledge-areas"></span>
+  <span id="specialized-tools"></span>
+  <span id="stamina-characteristics"></span>
+  <span id="stealth-knowledge-areas"></span>
+  <span id="style-knowledge-areas"></span>
+  <span id="theurgy-knowledge-areas"></span>
+  <span id="traditions-knowledge-areas"></span>
+  <span id="unarmed-combat-knowledge-areas"></span>
+</div>
+
 |                                                                                                       Name | Description                                                                     |
 |-----------------------------------------------------------------------------------------------------------:|:--------------------------------------------------------------------------------|
 |                                                                                                      Name: |                                                                                 |
