@@ -26,34 +26,32 @@ The "Face Death" activity immerses your character in a harrowing experience of p
 
 ##### In the Depths of Despair
 
-
 * Do a physical check to see if you are body is still in good enough conditions.
 * Do a social check to survive homesickness
 * Do a mental check to survive boredom.
 * Do a spiritual check to reattach your spiritual 
 
-
 1. **Isolation and Powerlessness**:
-   - Stricken by a debilitating condition, your once-active body fails you. Immobile and seemingly lifeless, you experience the anguish of awareness without the ability to communicate or respond.  
-   - Fears of being forgotten and misunderstood intensify as loved ones mourn your supposed demise.  
+   * Stricken by a debilitating condition, your once-active body fails you. Immobile and seemingly lifeless, you experience the anguish of awareness without the ability to communicate or respond.  
+   * Fears of being forgotten and misunderstood intensify as loved ones mourn your supposed demise.  
 
 2. **Summoning Unimaginable Strength**:
-   - Despite physical betrayal, your spirit refuses to be silenced. You explore alternative means of communication, striving to make your presence known.
-   - Love and support, coupled with tireless efforts from loved ones and medical professionals, lead to unconventional methods of connecting with the outside world.
+   * Despite physical betrayal, your spirit refuses to be silenced. You explore alternative means of communication, striving to make your presence known.
+   * Love and support, coupled with tireless efforts from loved ones and medical professionals, lead to unconventional methods of connecting with the outside world.
 
 3. **Monumental Triumphs and Redefined Perception**:
-   - Small triumphs become monumental victories, igniting a flicker of hope. You redefine life and resilience as you navigate the darkest corners of existence.
-   - The indomitable spirit within you leaves an indelible mark on all witnesses, showcasing profound determination and the will to survive.
+   * Small triumphs become monumental victories, igniting a flicker of hope. You redefine life and resilience as you navigate the darkest corners of existence.
+   * The indomitable spirit within you leaves an indelible mark on all witnesses, showcasing profound determination and the will to survive.
 
 ##### Reclaiming Mastery Over Body
 
 1. **Physical Therapy and Rehabilitation**:
-   - Embark on a journey to reclaim mastery over your physical body. Supported by loved ones and dedicated medical professionals, undergo rigorous physical therapy.
-   - Each day presents new challenges, confronted with unwavering courage. The process rebuilds physical abilities and cultivates unyielding resilience.
+   * Embark on a journey to reclaim mastery over your physical body. Supported by loved ones and dedicated medical professionals, undergo rigorous physical therapy.
+   * Each day presents new challenges, confronted with unwavering courage. The process rebuilds physical abilities and cultivates unyielding resilience.
 
 2. **First Steps Unaided**:
-   - Slowly, strength returns to your limbs, and you gain greater control over movements. The once-distant dream of mobility becomes a reality.
-   - Cherish the simple acts of standing, walking, and embracing the world. This arduous process not only restores physical abilities but forms the foundation for remarkable recovery.
+   * Slowly, strength returns to your limbs, and you gain greater control over movements. The once-distant dream of mobility becomes a reality.
+   * Cherish the simple acts of standing, walking, and embracing the world. This arduous process not only restores physical abilities but forms the foundation for remarkable recovery.
 
 "Face Death" is a profound journey of resilience, triumph, and the unwavering will to survive, offering a narrative rich in emotional depth and the strength that emerges from confronting the darkest challenges.
 
@@ -74,40 +72,40 @@ The "Face Desolation" activity plunges your character into the profound impact o
 ##### Soul-Shattering Ordeal
 
 1. **Crumbling Foundation of Belief**:
-   - Experience the profound impact of a loss of faith and spirituality, questioning the very essence of your existence.
-   - Overwhelming weight of perceived failure in meeting spiritual obligations leads to disconnection from purpose and divine guidance.
+   * Experience the profound impact of a loss of faith and spirituality, questioning the very essence of your existence.
+   * Overwhelming weight of perceived failure in meeting spiritual obligations leads to disconnection from purpose and divine guidance.
 
 2. **Emptiness and Disconnection**:
-   - Deep sense of emptiness settles within you as once-solaceful rituals become hollow and meaningless.
-   - Grapple with feelings of guilt and unworthiness, distancing yourself from the faith community and facing isolation.
+   * Deep sense of emptiness settles within you as once-solaceful rituals become hollow and meaningless.
+   * Grapple with feelings of guilt and unworthiness, distancing yourself from the faith community and facing isolation.
 
 ##### Journey of Rediscovery
 
 1. **Exploration and Introspection**:
-   - Amid desolation, embark on a journey of introspection and self-discovery.
-   - Question preconceived notions, seeking answers to existential questions and realizing the deeply personal nature of spirituality.
+   * Amid desolation, embark on a journey of introspection and self-discovery.
+   * Question preconceived notions, seeking answers to existential questions and realizing the deeply personal nature of spirituality.
 
 2. **Embracing Complexity and Uncertainty**:
-   - Learn that spirituality is a personal and evolving aspect of life, free from rigid expectations.
-   - Find solace in the beauty of uncertainty, embracing the complexities of the human experience.
+   * Learn that spirituality is a personal and evolving aspect of life, free from rigid expectations.
+   * Find solace in the beauty of uncertainty, embracing the complexities of the human experience.
 
 3. **Rediscovering Faith**:
-   - The arduous road to rediscovering faith involves self-compassion and growth.
-   - Understand the potential for resilience in the face of profound personal transformation.
+   * The arduous road to rediscovering faith involves self-compassion and growth.
+   * Understand the potential for resilience in the face of profound personal transformation.
 
 ##### Healing Your Spirituality
 
 1. **Reevaluating Beliefs and Relationship with the Divine**:
-   - Post physical and emotional challenges, reevaluate beliefs and relationship with the divine.
-   - Seek solace in meditation, prayer, or introspective practices, finding comfort and connection in the vastness of the universe.
+   * Post physical and emotional challenges, reevaluate beliefs and relationship with the divine.
+   * Seek solace in meditation, prayer, or introspective practices, finding comfort and connection in the vastness of the universe.
 
 2. **Inner Journey of Spiritual Growth**:
-   - Unfolding as an exploration of your inner truths, this journey is not confined to a specific religion or doctrine.
-   - Discover meaning in adversity and embrace the profound interconnectedness of all living beings.
+   * Unfolding as an exploration of your inner truths, this journey is not confined to a specific religion or doctrine.
+   * Discover meaning in adversity and embrace the profound interconnectedness of all living beings.
 
 3. **Profound Appreciation for Life**:
-   - Uncover the strength to overcome dark moments, emerging with a profound appreciation for the beauty and sanctity of life.
-   - Guided by the knowledge that your existence is part of something much greater, find a profound sense of purpose and peace.
+   * Uncover the strength to overcome dark moments, emerging with a profound appreciation for the beauty and sanctity of life.
+   * Guided by the knowledge that your existence is part of something much greater, find a profound sense of purpose and peace.
 
 "Face Desolation" is a narrative of inner turmoil, rediscovery, and spiritual growth, offering a profound exploration of the complexities of faith and the transformative power of personal journey.
 
@@ -128,40 +126,40 @@ As you reemerge into the world, you encounter the complex task of rebuilding you
 ##### Harrowing Experience of Abandonment
 
 1. **Enveloped in Darkness**:
-   - Experience the darkness that distorts your perception of reality, feeling utterly abandoned and rejected.
-   - Social interactions become overwhelming, and isolation convinces you that nobody cares.
+   * Experience the darkness that distorts your perception of reality, feeling utterly abandoned and rejected.
+   * Social interactions become overwhelming, and isolation convinces you that nobody cares.
 
 2. **Suffocating Loneliness**:
-   - The weight of loneliness becomes suffocating, turning each day into an insurmountable battle against your own mind.
-   - Joy and hope feel like distant memories as you lose interest in once-enjoyable activities.
+   * The weight of loneliness becomes suffocating, turning each day into an insurmountable battle against your own mind.
+   * Joy and hope feel like distant memories as you lose interest in once-enjoyable activities.
 
 3. **Crumbled Self-Esteem**:
-   - Relentless fatigue consumes your being, and the persistent belief of being unlovable and unworthy takes hold.
-   - Life feels stagnant, and the struggle to see a way out of the darkness becomes overwhelming.
+   * Relentless fatigue consumes your being, and the persistent belief of being unlovable and unworthy takes hold.
+   * Life feels stagnant, and the struggle to see a way out of the darkness becomes overwhelming.
 
 ##### Journey of Healing and Reconnection
 
 1. **Glimmer of Hope**:
-   - Amidst the bleakness, a glimmer of hope emerges through therapy, support from loved ones, and seeking professional help.
-   - Challenge distorted beliefs, starting the journey to rebuild connections with others.
+   * Amidst the bleakness, a glimmer of hope emerges through therapy, support from loved ones, and seeking professional help.
+   * Challenge distorted beliefs, starting the journey to rebuild connections with others.
 
 2. **Tumultuous Journey of Healing**:
-   - Tumultuous journey of healing and self-discovery gradually reveals strength and resilience within yourself.
-   - Confront and navigate the depths of depression, fostering a newfound appreciation for mental health.
+   * Tumultuous journey of healing and self-discovery gradually reveals strength and resilience within yourself.
+   * Confront and navigate the depths of depression, fostering a newfound appreciation for mental health.
 
 ##### Rebuilding Social Standing
 
 1. **Reemerging into the World**:
-   - Reemerge into the world, encountering the complex task of rebuilding your social standing.
-   - Others grapple with grief and loss caused by your supposed demise.
+   * Reemerge into the world, encountering the complex task of rebuilding your social standing.
+   * Others grapple with grief and loss caused by your supposed demise.
 
 2. **Navigating Conflicting Emotions**:
-   - Heartwarming and challenging process of reconnecting with loved ones, navigating conflicting emotions of joy and pain.
-   - Strive to bridge the gap with empathy and open communication, rebuilding relationships that brought comfort and support.
+   * Heartwarming and challenging process of reconnecting with loved ones, navigating conflicting emotions of joy and pain.
+   * Strive to bridge the gap with empathy and open communication, rebuilding relationships that brought comfort and support.
 
 3. **Confronting Judgments and Misconceptions**:
-   - Confront judgments and misconceptions, finding strength in the loyalty of friends and family who stood by you.
-   - Rebuild social standing through compassion and understanding, solidifying bonds of love and support.
+   * Confront judgments and misconceptions, finding strength in the loyalty of friends and family who stood by you.
+   * Rebuild social standing through compassion and understanding, solidifying bonds of love and support.
 
 "Face Abandonment" is a poignant narrative of isolation, healing, and rebuilding connections, emphasizing the power of compassion and understanding in overcoming profound challenges.
 
@@ -182,40 +180,40 @@ Healing the wounds of the mind requires a different type of journey, one that de
 ##### Life-Altering Journey of Mental Breakdown
 
 1. **Unbearable Weight of the World**:
-   - The weight of the world becomes unbearable as your mind transforms into a storm of chaos and confusion.
-   - Thoughts spiral uncontrollably, turning the once familiar terrain of your mind into a treacherous maze.
+   * The weight of the world becomes unbearable as your mind transforms into a storm of chaos and confusion.
+   * Thoughts spiral uncontrollably, turning the once familiar terrain of your mind into a treacherous maze.
 
 2. **Insurmountable Challenges**:
-   - Basic daily tasks become insurmountable challenges, and even the simplest actions require immense effort.
-   - The world around you feels distant and surreal, making it challenging to connect with reality.
+   * Basic daily tasks become insurmountable challenges, and even the simplest actions require immense effort.
+   * The world around you feels distant and surreal, making it challenging to connect with reality.
 
 3. **Overwhelming Emotions and Isolation**:
-   - Emotions overwhelm you, fluctuating between numbness and overwhelming despair.
-   - Time loses its grip as days blend into an indistinguishable haze, and isolation prevents expressing inner turmoil.
+   * Emotions overwhelm you, fluctuating between numbness and overwhelming despair.
+   * Time loses its grip as days blend into an indistinguishable haze, and isolation prevents expressing inner turmoil.
 
 ##### Journey of Recovery and Transformation
 
 1. **Flicker of Hope and Professional Help**:
-   - Despite the darkness, a flicker of hope emerges with professional help and the support of loved ones.
-   - Begin rebuilding the fragments of your shattered mind, discovering resilience and strength within.
+   * Despite the darkness, a flicker of hope emerges with professional help and the support of loved ones.
+   * Begin rebuilding the fragments of your shattered mind, discovering resilience and strength within.
 
 2. **Profound and Transformative Journey**:
-   - The journey is profound and transformative, teaching the importance of self-compassion, understanding, and seeking help.
-   - Navigate the arduous path to recovery, emerging with a renewed sense of purpose to advocate for mental health.
+   * The journey is profound and transformative, teaching the importance of self-compassion, understanding, and seeking help.
+   * Navigate the arduous path to recovery, emerging with a renewed sense of purpose to advocate for mental health.
 
 ##### Healing the Mind
 
 1. **Solace in Therapy and Counseling**:
-   - Seek solace in therapy and counseling, addressing the trauma that engulfed you during your immobilization.
-   - Confront overwhelming emotions and fears through introspection and self-compassion.
+   * Seek solace in therapy and counseling, addressing the trauma that engulfed you during your immobilization.
+   * Confront overwhelming emotions and fears through introspection and self-compassion.
 
 2. **Coping Strategies and Empowerment**:
-   - Develop coping strategies to manage anxiety and depression with the guidance of skilled professionals.
-   - Empower yourself to face life's challenges head-on, discovering newfound resilience in your emotional landscape.
+   * Develop coping strategies to manage anxiety and depression with the guidance of skilled professionals.
+   * Empower yourself to face life's challenges head-on, discovering newfound resilience in your emotional landscape.
 
 3. **Power of Self-Acceptance and Growth**:
-   - Embrace the power of self-acceptance, finding strength in vulnerability and allowing yourself to grow in the face of adversity.
-   - Learn to navigate moments of vulnerability and setbacks, fostering a deeper connection with your inner self.
+   * Embrace the power of self-acceptance, finding strength in vulnerability and allowing yourself to grow in the face of adversity.
+   * Learn to navigate moments of vulnerability and setbacks, fostering a deeper connection with your inner self.
 
 "Face Duress" is a poignant narrative of navigating mental chaos, rediscovering clarity, and embracing the transformative power of self-acceptance and growth.
 
@@ -240,7 +238,7 @@ Healing the wounds of the mind requires a different type of journey, one that de
 
 ### Legacy
 
-Your character becomes an NPC and spends their time doing any number of the following activites.  It is recommended that you still keep track of what your character is doing, but now the Referee is in charge chosing the seasonal activites they are involved in.  Some ideas include.
+Your character becomes an NPC and spends their time doing any number of the following activites.  It is recommended that you still keep track of what your character is doing, but now the Referee is in charge chosing the seasonal activities they are involved in.  Some ideas include.
 
 1. **Mentorship and Education**: Imparting knowledge, skills, and wisdom to younger generations or successors. This can include teaching, mentoring, or even writing books and articles to share one's experiences and insights.
 
@@ -290,9 +288,9 @@ To successfully pass down your knowledge or skill, select the specific area of e
 2. **Determine the Training Process**: Outline how you plan to teach your protégé. This might involve a series of skill checks to represent the training process. The complexity and duration of training should reflect the depth and rarity of the knowledge being passed on.
 
 3. **Training Outcome**:
-   - **Success**: If the skill checks are successful, your protégé gains a basic understanding or proficiency in the skill or knowledge area. This can manifest as a bonus in their future skill checks related to this area.
-   - **Partial Success**: If the skill checks yield mixed results, the protégé gains some insight but may need further training to fully grasp the skill or knowledge.
-   - **Failure**: Should the skill checks fail, the training does not produce the desired outcome, but the attempt may still foster a bond between your character and the protégé, leading to future roleplaying opportunities.
+   * **Success**: If the skill checks are successful, your protégé gains a basic understanding or proficiency in the skill or knowledge area. This can manifest as a bonus in their future skill checks related to this area.
+   * **Partial Success**: If the skill checks yield mixed results, the protégé gains some insight but may need further training to fully grasp the skill or knowledge.
+   * **Failure**: Should the skill checks fail, the training does not produce the desired outcome, but the attempt may still foster a bond between your character and the protégé, leading to future roleplaying opportunities.
 
 4. **Long-term Impact**: Reflect on how this transfer of knowledge impacts both your character and their protégé. It's a chance for character growth, establishing new relationships, and potentially shaping future events in the game world.
 
@@ -313,13 +311,13 @@ This endeavor is not just about leaving a physical legacy; it's about creating s
 2. **Gather Resources**: Depending on the project's scale, gathering the necessary resources might require multiple quests, acquiring funds, or rallying support from allies and communities. This stage might involve a series of skill checks to secure funding, materials, or permissions.
 
 3. **Implementation Phase**:
-   - **Planning**: Develop a detailed plan for your project, involving strategy and logistics. This might require skill checks related to knowledge, strategy, or negotiation.
-   - **Construction/Establishment**: Actualize the project. This could involve a variety of skill checks, depending on the nature of the project (e.g., crafting, building, social skills for organizing committees or workforces).
+   * **Planning**: Develop a detailed plan for your project, involving strategy and logistics. This might require skill checks related to knowledge, strategy, or negotiation.
+   * **Construction/Establishment**: Actualize the project. This could involve a variety of skill checks, depending on the nature of the project (e.g., crafting, building, social skills for organizing committees or workforces).
 
 4. **Outcome and Impact**:
-   - **Success**: On successful completion, the project becomes a recognized part of the game world. It might offer ongoing benefits or influence, like a safe haven for adventurers, a learning center offering knowledge, or a monument that inspires.
-   - **Partial Success**: The project takes shape but might require further effort to fully realize its potential. It can still serve as a focal point for future adventures or plot developments.
-   - **Failure**: The project faces significant challenges or setbacks. While it may not reach completion as envisioned, these challenges can lead to new storylines and character development opportunities.
+   * **Success**: On successful completion, the project becomes a recognized part of the game world. It might offer ongoing benefits or influence, like a safe haven for adventurers, a learning center offering knowledge, or a monument that inspires.
+   * **Partial Success**: The project takes shape but might require further effort to fully realize its potential. It can still serve as a focal point for future adventures or plot developments.
+   * **Failure**: The project faces significant challenges or setbacks. While it may not reach completion as envisioned, these challenges can lead to new storylines and character development opportunities.
 
 5. **Legacy and Continuation**: Reflect on how this project becomes part of your character’s legacy. How does it affect the communities and lands it touches? Will it require ongoing oversight or provide a platform for future adventures?
 
@@ -338,13 +336,13 @@ The "Craft a Heirloom" activity is a unique opportunity for your character to cr
 2. **Gather Materials**: The heirloom's creation will likely require special materials, some of which may be rare or difficult to obtain. This stage might involve quests to locate these materials, negotiations with merchants, or challenges to acquire them.
 
 3. **Crafting Process**:
-   - **Skill Check for Crafting**: Perform a series of skill checks appropriate to the item being crafted. For a weapon, this might involve blacksmithing or enchanting; for a piece of jewelry, gem cutting or metalworking.
-   - **Infusing Essence**: Beyond the physical crafting, consider how your character's essence, experiences, or powers are imbued into the heirloom. This might require additional skill checks or narrative descriptions.
+   * **Skill Check for Crafting**: Perform a series of skill checks appropriate to the item being crafted. For a weapon, this might involve blacksmithing or enchanting; for a piece of jewelry, gem cutting or metalworking.
+   * **Infusing Essence**: Beyond the physical crafting, consider how your character's essence, experiences, or powers are imbued into the heirloom. This might require additional skill checks or narrative descriptions.
 
 4. **Outcome and Significance**:
-   - **Success**: A successful crafting process results in an heirloom that carries not just material value but also significant personal and magical properties. It might confer specific bonuses or abilities, or simply hold immense sentimental value.
-   - **Partial Success**: The heirloom is created, but it may lack some of the intended power or significance. It still holds value and can be a focal point for future development.
-   - **Failure**: The crafting process faces unexpected difficulties. The resultant item may still hold meaning as a symbol of the attempt and the character's intentions.
+   * **Success**: A successful crafting process results in an heirloom that carries not just material value but also significant personal and magical properties. It might confer specific bonuses or abilities, or simply hold immense sentimental value.
+   * **Partial Success**: The heirloom is created, but it may lack some of the intended power or significance. It still holds value and can be a focal point for future development.
+   * **Failure**: The crafting process faces unexpected difficulties. The resultant item may still hold meaning as a symbol of the attempt and the character's intentions.
 
 5. **Passing the Heirloom On**: Contemplate how this heirloom will be passed down or used in the future. Will it be given to a protégé, used by future generations, or perhaps become a key element in an ongoing storyline?
 
@@ -363,13 +361,13 @@ The activity "Compose a Legendary Tale or Song" provides a unique opportunity fo
 2. **Crafting the Composition**: This step involves actual writing or composing. It might include a series of skill checks related to creativity, such as Perform, Artistry, or even Lore, depending on the nature of the tale or song.
 
 3. **Presentation of the Work**:
-   - **Performance**: If your character wishes to perform their composition, arrange a suitable occasion and audience. This might involve additional skill checks for the performance itself.
-   - **Recording**: Alternatively, your character might choose to record the work in a written or magical format, preserving it for posterity without a public performance.
+   * **Performance**: If your character wishes to perform their composition, arrange a suitable occasion and audience. This might involve additional skill checks for the performance itself.
+   * **Recording**: Alternatively, your character might choose to record the work in a written or magical format, preserving it for posterity without a public performance.
 
 4. **Outcome and Influence**:
-   - **Success**: A successful composition resonates with the audience, becoming a part of the cultural landscape. It might inspire others, become a symbol of a certain idea or movement, or simply be cherished as a work of art.
-   - **Partial Success**: The work is completed but perhaps does not achieve the widespread acclaim or impact hoped for. It might still be significant to certain individuals or groups.
-   - **Failure**: The creative process proves more challenging than expected. The result might not be the masterpiece envisioned, but the attempt itself can become a story worth telling.
+   * **Success**: A successful composition resonates with the audience, becoming a part of the cultural landscape. It might inspire others, become a symbol of a certain idea or movement, or simply be cherished as a work of art.
+   * **Partial Success**: The work is completed but perhaps does not achieve the widespread acclaim or impact hoped for. It might still be significant to certain individuals or groups.
+   * **Failure**: The creative process proves more challenging than expected. The result might not be the masterpiece envisioned, but the attempt itself can become a story worth telling.
 
 5. **Legacy of the Composition**: Reflect on how this creation adds to your character’s legacy. Does it become a popular anthem in taverns, a rallying cry for a cause, or a deeply personal work that moves those who encounter it?
 
@@ -388,13 +386,13 @@ The "Endow a Scholarship or Grant" activity allows your character to make a last
 2. **Securing Funds and Resources**: Establishing a scholarship or grant requires significant resources. This might involve accumulating wealth through quests, securing donations from influential figures, or dedicating personal assets. Skill checks related to negotiation, persuasion, or other relevant abilities may be necessary to gather the required resources.
 
 3. **Establishment and Management**:
-   - **Setting Criteria**: Define who is eligible for the scholarship or grant and what the selection criteria will be. This could involve a combination of merit, need, or specific talents.
-   - **Administration**: Decide how the scholarship or grant will be administered. Will your character oversee it personally, or appoint a trusted individual or council to manage it?
+   * **Setting Criteria**: Define who is eligible for the scholarship or grant and what the selection criteria will be. This could involve a combination of merit, need, or specific talents.
+   * **Administration**: Decide how the scholarship or grant will be administered. Will your character oversee it personally, or appoint a trusted individual or council to manage it?
 
 4. **Outcome and Impact**:
-   - **Success**: A successful endowment not only benefits the recipients but also enhances your character's reputation as a benefactor. It could lead to new connections, storylines, and a lasting positive impact in the game world.
-   - **Partial Success**: The scholarship or grant is established but faces challenges, such as limited resources or difficulties in management. These hurdles can offer new plotlines and character development opportunities.
-   - **Failure**: The attempt to create the scholarship or grant encounters significant obstacles. While it may not succeed as planned, the effort itself can influence your character's story and relationships.
+   * **Success**: A successful endowment not only benefits the recipients but also enhances your character's reputation as a benefactor. It could lead to new connections, storylines, and a lasting positive impact in the game world.
+   * **Partial Success**: The scholarship or grant is established but faces challenges, such as limited resources or difficulties in management. These hurdles can offer new plotlines and character development opportunities.
+   * **Failure**: The attempt to create the scholarship or grant encounters significant obstacles. While it may not succeed as planned, the effort itself can influence your character's story and relationships.
 
 5. **Legacy Considerations**: Reflect on how this endowment will affect the lives of those it supports and the broader community. How does it contribute to your character's legacy? Will the recipients of the scholarship or grant play a role in future storylines?
 
@@ -413,13 +411,13 @@ In the "Create a Map or Chronicle" activity, your character takes on the role of
 2. **Gathering Information**: This process involves recalling past adventures, researching historical events, or exploring unknown regions. Skill checks might include Memory, Research, or even Survival and Exploration, depending on the nature of the content being documented.
 
 3. **Compilation Process**:
-   - **Documenting**: Transcribe your findings and experiences into a coherent form. This might require skill checks related to Writing, Artistry, or Cartography.
-   - **Authenticating**: Ensure the accuracy and authenticity of the information. This could involve consulting experts, cross-referencing with existing works, or verifying details firsthand.
+   * **Documenting**: Transcribe your findings and experiences into a coherent form. This might require skill checks related to Writing, Artistry, or Cartography.
+   * **Authenticating**: Ensure the accuracy and authenticity of the information. This could involve consulting experts, cross-referencing with existing works, or verifying details firsthand.
 
 4. **Outcome and Influence**:
-   - **Success**: A successfully created map or chronicle becomes a valuable resource in the game world. It might guide future adventurers, inform scholars, or even alter the understanding of certain regions or events.
-   - **Partial Success**: The document is completed but may contain gaps or uncertainties. It still holds value and could lead to future quests to uncover missing information.
-   - **Failure**: Challenges in the creation process lead to an incomplete or inaccurate document. However, this outcome can create new storylines as characters seek to correct or finish the work.
+   * **Success**: A successfully created map or chronicle becomes a valuable resource in the game world. It might guide future adventurers, inform scholars, or even alter the understanding of certain regions or events.
+   * **Partial Success**: The document is completed but may contain gaps or uncertainties. It still holds value and could lead to future quests to uncover missing information.
+   * **Failure**: Challenges in the creation process lead to an incomplete or inaccurate document. However, this outcome can create new storylines as characters seek to correct or finish the work.
 
 5. **Legacy and Continuation**: Contemplate the long-term impact of your character’s work. How will it be used by others? Who will maintain or update it in the future? This creation can become a significant part of your character's legacy, influencing the game world for years to come.
 
@@ -438,13 +436,13 @@ The "Plant a Legacy Tree or Garden" activity allows your character to create a l
 2. **Gathering Materials and Preparing the Site**: Acquire the necessary seeds, saplings, or plants, which might involve quests to find rare or magical species. Preparing the site may require clearing land, enriching soil, or creating protective enchantments, involving skill checks like Nature, Survival, or Magic.
 
 3. **Planting and Blessing**:
-   - **Physical Planting**: This step involves the actual planting, which could be a simple or elaborate process, depending on the nature of the tree or garden.
-   - **Spiritual Connection**: This might include a ritual or ceremony to imbue the site with magical or spiritual significance, reflecting your character’s connection to the land and their aspirations for the legacy they leave.
+   * **Physical Planting**: This step involves the actual planting, which could be a simple or elaborate process, depending on the nature of the tree or garden.
+   * **Spiritual Connection**: This might include a ritual or ceremony to imbue the site with magical or spiritual significance, reflecting your character’s connection to the land and their aspirations for the legacy they leave.
 
 4. **Outcome and Resonance**:
-   - **Success**: A successful planting results in a thriving tree or garden that becomes a known landmark. It might have special properties (like healing herbs or magical fruits) or become a pilgrimage site for those seeking wisdom or solace.
-   - **Partial Success**: The tree or garden takes root but may require further care or face challenges. It still stands as a symbol of your character's efforts and intentions.
-   - **Failure**: The initial planting faces unexpected difficulties. While the tree or garden may not flourish as hoped, the attempt can become part of your character’s story, possibly leading to future quests to revive or protect it.
+   * **Success**: A successful planting results in a thriving tree or garden that becomes a known landmark. It might have special properties (like healing herbs or magical fruits) or become a pilgrimage site for those seeking wisdom or solace.
+   * **Partial Success**: The tree or garden takes root but may require further care or face challenges. It still stands as a symbol of your character's efforts and intentions.
+   * **Failure**: The initial planting faces unexpected difficulties. While the tree or garden may not flourish as hoped, the attempt can become part of your character’s story, possibly leading to future quests to revive or protect it.
 
 5. **Ongoing Legacy**: Reflect on the long-term impact of this living legacy. How does it affect the local ecosystem, the community, or travelers who encounter it? This tree or garden can become a lasting part of your character's narrative, evolving even as the character's own story concludes.
 
@@ -463,13 +461,13 @@ The "Initiate a Festival or Tradition" activity enables your character to establ
 2. **Planning and Organization**: Organizing a festival or establishing a tradition requires careful planning. This might involve coordinating with local authorities, gathering resources, or convincing others to participate. Skill checks could include Persuasion, Leadership, or Organizational skills.
 
 3. **Launch the Festival or Tradition**:
-   - **Inaugural Event**: For a festival, this could be the first celebration, involving activities, games, and ceremonies. For a tradition, it might be the first performance of a ritual or practice.
-   - **Community Involvement**: Engage the local community or relevant groups in the event. Their participation can help to ensure the festival or tradition takes root.
+   * **Inaugural Event**: For a festival, this could be the first celebration, involving activities, games, and ceremonies. For a tradition, it might be the first performance of a ritual or practice.
+   * **Community Involvement**: Engage the local community or relevant groups in the event. Their participation can help to ensure the festival or tradition takes root.
 
 4. **Outcome and Cultural Impact**:
-   - **Success**: A successful initiation leads to the festival or tradition becoming an integral part of the community or culture. It might be celebrated or observed annually, becoming a fixture in the game world.
-   - **Partial Success**: The festival or tradition is established but may face challenges in becoming widely accepted or continued. It might require further efforts to fully integrate into the cultural fabric.
-   - **Failure**: The attempt to initiate the festival or tradition encounters resistance or difficulties. While it may not take hold as hoped, the effort can open new storylines and character development opportunities.
+   * **Success**: A successful initiation leads to the festival or tradition becoming an integral part of the community or culture. It might be celebrated or observed annually, becoming a fixture in the game world.
+   * **Partial Success**: The festival or tradition is established but may face challenges in becoming widely accepted or continued. It might require further efforts to fully integrate into the cultural fabric.
+   * **Failure**: The attempt to initiate the festival or tradition encounters resistance or difficulties. While it may not take hold as hoped, the effort can open new storylines and character development opportunities.
 
 5. **Legacy and Continuation**: Reflect on the potential long-term effects of this new festival or tradition. How does it honor your character's legacy? What role might it play in future stories or the lives of other characters?
 
@@ -488,13 +486,13 @@ In the "Bestow a Title or Position" activity, your character has the opportunity
 2. **Determine the Title or Position**: Decide on the nature of the title or position. It should be relevant to the recipient's abilities and contributions. Titles can range from honorary designations to roles that carry significant authority or responsibility.
 
 3. **Formal Bestowal Process**:
-   - **Ceremony**: Organize a formal ceremony or announcement to publicly bestow the title or position. This may involve skill checks related to Diplomacy, Oratory, or even Performance.
-   - **Legal and Social Formalities**: Ensure that all necessary legal or social procedures are followed to legitimize the title or position. This might involve consulting with authorities, preparing official documents, or securing the endorsement of influential figures.
+   * **Ceremony**: Organize a formal ceremony or announcement to publicly bestow the title or position. This may involve skill checks related to Diplomacy, Oratory, or even Performance.
+   * **Legal and Social Formalities**: Ensure that all necessary legal or social procedures are followed to legitimize the title or position. This might involve consulting with authorities, preparing official documents, or securing the endorsement of influential figures.
 
 4. **Outcome and Influence**:
-   - **Success**: A successful bestowal strengthens bonds between your character and the recipient, enhances your character's influence, and potentially alters the power structure within a community or group.
-   - **Partial Success**: The title or position is conferred, but there may be unforeseen challenges or complications. These could create new storylines or conflicts.
-   - **Failure**: The attempt to bestow the title or position encounters significant opposition or fails to be recognized. This can lead to interesting narrative developments, including disputes, rivalries, or quests to validate the title.
+   * **Success**: A successful bestowal strengthens bonds between your character and the recipient, enhances your character's influence, and potentially alters the power structure within a community or group.
+   * **Partial Success**: The title or position is conferred, but there may be unforeseen challenges or complications. These could create new storylines or conflicts.
+   * **Failure**: The attempt to bestow the title or position encounters significant opposition or fails to be recognized. This can lead to interesting narrative developments, including disputes, rivalries, or quests to validate the title.
 
 5. **Continued Role and Legacy**: Reflect on how this bestowal shapes the recipient's path and your character's legacy. How does it affect the dynamics within the game world? Will the recipient rise to the occasion or face challenges in their new role?
 
@@ -513,13 +511,13 @@ The "Establish a Safe Haven or Sanctuary" activity allows your character to crea
 2. **Acquiring and Preparing the Site**: Securing the location may involve purchasing land, clearing a site in the wilderness, or renovating an existing structure. This stage might require a series of skill checks related to Negotiation, Survival, Construction, or even Magic, depending on the nature of the sanctuary.
 
 3. **Establishing the Haven**:
-   - **Construction and Setup**: Build or prepare the necessary facilities, which could range from simple shelters to elaborate buildings with specific functions. This may involve Crafting, Engineering, or Magic skill checks.
-   - **Securing Support**: Establish a network of support for the haven, such as recruiting staff, securing supply lines, or forming alliances with nearby communities or factions.
+   * **Construction and Setup**: Build or prepare the necessary facilities, which could range from simple shelters to elaborate buildings with specific functions. This may involve Crafting, Engineering, or Magic skill checks.
+   * **Securing Support**: Establish a network of support for the haven, such as recruiting staff, securing supply lines, or forming alliances with nearby communities or factions.
 
 4. **Outcome and Impact**:
-   - **Success**: A successful establishment becomes a recognized and respected part of the game world. It might become a hub for quests, a source of support for the characters, or a key location in the narrative.
-   - **Partial Success**: The haven is established but faces ongoing challenges, such as limited resources, threats from the outside, or internal conflicts. These issues can lead to further adventures or plot developments.
-   - **Failure**: The attempt to create the safe haven or sanctuary encounters significant obstacles. While it may not fully realize the envisioned goal, the effort can impact your character’s story and lead to new narrative paths.
+   * **Success**: A successful establishment becomes a recognized and respected part of the game world. It might become a hub for quests, a source of support for the characters, or a key location in the narrative.
+   * **Partial Success**: The haven is established but faces ongoing challenges, such as limited resources, threats from the outside, or internal conflicts. These issues can lead to further adventures or plot developments.
+   * **Failure**: The attempt to create the safe haven or sanctuary encounters significant obstacles. While it may not fully realize the envisioned goal, the effort can impact your character’s story and lead to new narrative paths.
 
 5. **Legacy and Continuation**: Consider the long-term role of the haven in the game world. How does it embody your character’s ideals? What impact does it have on the surrounding area and its inhabitants? This sanctuary can become a crucial part of your character's legacy, affecting many lives and stories within the game.
 
@@ -545,56 +543,56 @@ The "Courting a Spouse" activity in the game allows your character to explore th
 1. **Deciding to Court**: The first step is a personal decision. Your character might be drawn to someone they have met on their journeys, like a Loremaster, or see the strategic value in an alliance through marriage. This decision should be informed by your character’s background, experiences, and the current narrative.
 
 2. **Initiating the Courtship**:
-   - **Consult with the Referee**: Bring up your intention to court a spouse during the Seasonal phase of the game. This involves a discussion with your Referee to ensure the courtship aligns with the game’s narrative and dynamics.
-   - **Formal Declaration**: Courtship is a formal process. It's not just expressing interest but a declaration of intent to marry. The cultural context of your character and the intended spouse will play a significant role here, affecting the customs and expectations involved in courtship.
+   * **Consult with the Referee**: Bring up your intention to court a spouse during the Seasonal phase of the game. This involves a discussion with your Referee to ensure the courtship aligns with the game’s narrative and dynamics.
+   * **Formal Declaration**: Courtship is a formal process. It's not just expressing interest but a declaration of intent to marry. The cultural context of your character and the intended spouse will play a significant role here, affecting the customs and expectations involved in courtship.
 
 3. **Cultural Nuances and Permissions**:
-   - **Understanding Cultural Practices**: Different cultures in the game world may have varying practices regarding courtship. This could range from the need for extravagant gifts to a simple mutual agreement to marry.
-   - **Seeking Approval**: If your character is of noble birth or serves a sworn lord, they might need to seek their lord’s blessing to proceed with the marriage.
+   * **Understanding Cultural Practices**: Different cultures in the game world may have varying practices regarding courtship. This could range from the need for extravagant gifts to a simple mutual agreement to marry.
+   * **Seeking Approval**: If your character is of noble birth or serves a sworn lord, they might need to seek their lord’s blessing to proceed with the marriage.
 
 4. **Process and Challenges**:
-   - **Time and Patience**: Successful courtship is not a swift affair. It takes time and patience, considering the potential risks associated with the adventurer’s lifestyle.
-   - **Potential Partner’s Consideration**: The person your character is courting will likely need time to contemplate the decision, weighing the risks and rewards of joining lives with someone who leads a hazardous life.
+   * **Time and Patience**: Successful courtship is not a swift affair. It takes time and patience, considering the potential risks associated with the adventurer’s lifestyle.
+   * **Potential Partner’s Consideration**: The person your character is courting will likely need time to contemplate the decision, weighing the risks and rewards of joining lives with someone who leads a hazardous life.
 
 5. **Outcome and Impact on the Narrative**:
-   - **Success**: A successful courtship leads to a deeper narrative layer, where your character now has a spouse, adding new dimensions to their story and motivations.
-   - **Partial Success or Failure**: The courtship may face complications or not lead to marriage. These outcomes can significantly influence your character’s personal narrative, leading to new emotional and role-playing opportunities.
+   * **Success**: A successful courtship leads to a deeper narrative layer, where your character now has a spouse, adding new dimensions to their story and motivations.
+   * **Partial Success or Failure**: The courtship may face complications or not lead to marriage. These outcomes can significantly influence your character’s personal narrative, leading to new emotional and role-playing opportunities.
 
 Courting a spouse is a profound and character-defining activity. It offers an opportunity to explore the emotional and personal aspects of your character's life, adding richness and complexity to their story within the game world.
 
 #### Give Birth to Children
 
-- **Narrative Focus**: Childbirth should be more narrative-focused than mechanically intensive. It should emphasize the continuation of lineages and the joy of new life in a world often shadowed by darkness.
+* **Narrative Focus**: Childbirth should be more narrative-focused than mechanically intensive. It should emphasize the continuation of lineages and the joy of new life in a world often shadowed by darkness.
 
-- **Cultural Context**: Consider the different cultures of your world and how childbirth might be viewed or celebrated differently among them.
+* **Cultural Context**: Consider the different cultures of your world and how childbirth might be viewed or celebrated differently among them.
 
 ##### Rules for giving Birth to Children
 
 1. **Timing and Decision**: Childbirth can occur during long periods of downtime between adventures or campaigns. It should be a player's choice to pursue this for their character, in consultation with the referee.
 
 2. **Pregnancy Journey**:
-   - Duration: Reflect the race of the character.
-   - Narration: Incorporate aspects like prenatal preparation, cultural rituals, or significant events during the pregnancy.
+   * Duration: Reflect the race of the character.
+   * Narration: Incorporate aspects like prenatal preparation, cultural rituals, or significant events during the pregnancy.
 
 3. **Childbirth Event**:
-   - Mechanics: Use simple skill checks to represent the health and well-being of parent and child. For example, a "Resilience" check to determine how well the character copes with childbirth.
-   - Consequences: A challenging childbirth might initiate a compelling narrative arc, where characters embark on a quest for a rare and valuable remedy or solution, demonstrating the resilience and dedication of those involved."
+   * Mechanics: Use simple skill checks to represent the health and well-being of parent and child. For example, a "Resilience" check to determine how well the character copes with childbirth.
+   * Consequences: A challenging childbirth might initiate a compelling narrative arc, where characters embark on a quest for a rare and valuable remedy or solution, demonstrating the resilience and dedication of those involved."
 
 4. **Post-Childbirth**:
-   - Recovery: Include a realistic recovery period, affecting the character's availability for strenuous adventures.
-   - Child Rearing: Integrate narrative elements about raising a child, perhaps influencing future storylines or character development.
+   * Recovery: Include a realistic recovery period, affecting the character's availability for strenuous adventures.
+   * Child Rearing: Integrate narrative elements about raising a child, perhaps influencing future storylines or character development.
 
 5. **Role of the Child**:
-   - Future Adventures: The child could become an NPC, a source of new adventures, or even a playable character in future campaigns once the character that is a player becomes an NPC.
-   - Legacy: The child's growth can reflect the ongoing legacy of the character in the world .
+   * Future Adventures: The child could become an NPC, a source of new adventures, or even a playable character in future campaigns once the character that is a player becomes an NPC.
+   * Legacy: The child's growth can reflect the ongoing legacy of the character in the world .
 
 6. **Cultural Celebrations**: Include details on how different cultures celebrate childbirth, adding depth to the world-building.
 
 ##### Guidelines for Implementation
 
-- **Consent and Comfort**: Ensure all players are comfortable with this aspect of the story. Avoid graphic descriptions and focus on the emotional and cultural significance of childbirth.
-- **Flexibility**: Allow players to be as involved or hands-off with this aspect of their character’s story as they wish.
-- **Narrative Integration**: Make sure that the inclusion of childbirth aligns with the ongoing narrative and enhances the storytelling experience.
+* **Consent and Comfort**: Ensure all players are comfortable with this aspect of the story. Avoid graphic descriptions and focus on the emotional and cultural significance of childbirth.
+* **Flexibility**: Allow players to be as involved or hands-off with this aspect of their character’s story as they wish.
+* **Narrative Integration**: Make sure that the inclusion of childbirth aligns with the ongoing narrative and enhances the storytelling experience.
 
 #### Write your Epilogue - Fix
 
@@ -626,26 +624,26 @@ For each miss, choose one.
 1. **Retirement or Conclusion**: When your character's adventuring life comes to an end due to retirement, death, or other significant reasons, and you do not have an heir, the stage is set for writing the epilogue.
 
 2. **Rolling Against Legacy Tracks**:
-   - **Challenge Dice Roll**: Roll the challenge dice for each of the former character's legacy tracks (quests, bonds, and discoveries).
-   - **Evaluate the Outcome**: The roll's outcome (strong hit, weak hit, or miss) determines the options available for your new character.
+   * **Challenge Dice Roll**: Roll the challenge dice for each of the former character's legacy tracks (quests, bonds, and discoveries).
+   * **Evaluate the Outcome**: The roll's outcome (strong hit, weak hit, or miss) determines the options available for your new character.
 
 3. **Outcomes and Choices**:
-   - **Strong Hit Options**: If you roll a strong hit, choose one of the following:
-     - Follow their path: Inherit a path or companion asset from the former character, including any abilities.
-     - Share a connection: Inherit a connection from the former character, along with any progress or bond benefits.
-     - Accept an inheritance: Inherit the former character’s command vehicle and one module or support vehicle, including any abilities.
-   - **Weak Hit Options**: On a weak hit, choose one of the following:
-     - See it through: Take up an unfinished quest of the former character.
-     - Rebuild a connection: Choose a former connection and envision how they have changed dramatically. Gain an advantage when reconnecting with them.
-     - Explore familiar ground: Visit a meaningful location to the former character, observing its changes or dangers. This place may offer sanctuary.
-   - **Miss Options**: On a miss, choose one of the following:
-     - Deal with the aftermath: Envision how a former foe of the character has risen in power or influence.
-     - Switch loyalties: Start in opposition to your former character’s beliefs or goals.
-     - Open Pandora’s Box: Face the consequences of a discovery or advancement made by the former character.
+   * **Strong Hit Options**: If you roll a strong hit, choose one of the following:
+     * Follow their path: Inherit a path or companion asset from the former character, including any abilities.
+     * Share a connection: Inherit a connection from the former character, along with any progress or bond benefits.
+     * Accept an inheritance: Inherit the former character’s command vehicle and one module or support vehicle, including any abilities.
+   * **Weak Hit Options**: On a weak hit, choose one of the following:
+     * See it through: Take up an unfinished quest of the former character.
+     * Rebuild a connection: Choose a former connection and envision how they have changed dramatically. Gain an advantage when reconnecting with them.
+     * Explore familiar ground: Visit a meaningful location to the former character, observing its changes or dangers. This place may offer sanctuary.
+   * **Miss Options**: On a miss, choose one of the following:
+     * Deal with the aftermath: Envision how a former foe of the character has risen in power or influence.
+     * Switch loyalties: Start in opposition to your former character’s beliefs or goals.
+     * Open Pandora’s Box: Face the consequences of a discovery or advancement made by the former character.
 
 4. **Shaping the New Character**:
-   - **Influence of the Past**: Use the outcomes of the rolls to shape your new character's background, motivations, and starting conditions. This intertwining of narratives creates a sense of continuity and depth in the game world.
-   - **Legacy Impact**: Reflect on how your former character's actions and choices have shaped the world and the new character’s story. This can add a rich layer of storytelling and continuity to the game.
+   * **Influence of the Past**: Use the outcomes of the rolls to shape your new character's background, motivations, and starting conditions. This intertwining of narratives creates a sense of continuity and depth in the game world.
+   * **Legacy Impact**: Reflect on how your former character's actions and choices have shaped the world and the new character’s story. This can add a rich layer of storytelling and continuity to the game.
 
 "Write Your Epilogue" is a meaningful way to transition from one character to another, ensuring that the legacy of a former character continues to echo through the game world, influencing new stories and adventures.
 
@@ -670,17 +668,17 @@ The "Name an Heir" activity allows your character to designate a successor, a sy
 1. **Selection of the Heir**: When you decide to name an heir, consider who in the game world embodies aspects of your character’s spirit and values. This person becomes more than a mere recipient of material wealth; they are the continuation of your character’s story.
 
 2. **Formalizing the Heir**:
-   - **Recording the Choice**: Officially name your chosen heir on your character sheet. This act signifies a deep bond and a significant shift in your character’s narrative.
-   - **Hope and Responsibility**: Upon naming the heir, your character gains 1 point of Hope, reflecting the optimism and aspirations placed in the heir’s future.
+   * **Recording the Choice**: Officially name your chosen heir on your character sheet. This act signifies a deep bond and a significant shift in your character’s narrative.
+   * **Hope and Responsibility**: Upon naming the heir, your character gains 1 point of Hope, reflecting the optimism and aspirations placed in the heir’s future.
 
 3. **Impact of the Heir’s Fate**:
-   - If the chosen heir suffers an unfortunate fate, your character is deeply affected, receiving 4 Shadow points. This represents the emotional and psychological impact of losing someone you envisioned as a key part of your legacy.
+   * If the chosen heir suffers an unfortunate fate, your character is deeply affected, receiving 4 Shadow points. This represents the emotional and psychological impact of losing someone you envisioned as a key part of your legacy.
 
 4. **Irrevocability of the Decision**:
-   - The choice to name an heir is a one-time event. Once made, it cannot be undone or altered. This irrevocability adds weight and significance to the decision, making it a pivotal moment in your character’s story.
+   * The choice to name an heir is a one-time event. Once made, it cannot be undone or altered. This irrevocability adds weight and significance to the decision, making it a pivotal moment in your character’s story.
 
 5. **Legacy and Continuity**:
-   - The heir, initially a non-player character, has the potential to become a playable character if your current character exits the story for any reason. This transition can create a seamless narrative link between characters and generations within the game.
+   * The heir, initially a non-player character, has the potential to become a playable character if your current character exits the story for any reason. This transition can create a seamless narrative link between characters and generations within the game.
 
 Naming an heir in the game is a powerful and character-defining choice. It's an opportunity to explore themes of legacy, hope, and the continuation of ideals beyond a single character's lifetime, adding depth and continuity to the storytelling experience.
 
@@ -855,11 +853,11 @@ You choose to express yourself by creating a piece of art during a period of res
 
 You can further adjust the challenge by selecting one of these modifiers:
 
-- **Popular (-2 TN):** You opt for a style or theme familiar to a specific culture. While this makes your art more accessible to those from that culture, it becomes slightly more challenging for others to appreciate, increasing their TN by 2.
+* **Popular (-2 TN):** You opt for a style or theme familiar to a specific culture. While this makes your art more accessible to those from that culture, it becomes slightly more challenging for others to appreciate, increasing their TN by 2.
   
-- **Thematic (-2 TN):** Your artwork focuses on a specific theme or subject and resonates most strongly under certain conditions.
+* **Thematic (-2 TN):** Your artwork focuses on a specific theme or subject and resonates most strongly under certain conditions.
   
-- **Traditional / Ancient (+2 TN):** You delve into time-honored techniques and themes to create a piece rooted in tradition or antiquity. This work resonates deeply conveying the historical or cultural significance of the event.
+* **Traditional / Ancient (+2 TN):** You delve into time-honored techniques and themes to create a piece rooted in tradition or antiquity. This work resonates deeply conveying the historical or cultural significance of the event.
 
 If your roll is successful, the quality of that roll sets the bar for how challenging it is for others to truly appreciate or interpret your art. If you don't succeed, you struggle with your medium or message, but there's always another chance to try again later.
 
@@ -904,9 +902,9 @@ During your journey or in moments of reflection, you and your companions can cho
 
 First, pick a piece of art from your collective portfolio. Then, each of you makes an Art roll.
 
-- **If you succeed in your roll,** you find yourself Inspired for the rest of the session. This inspiration can be 'spent' to add 2 Success dice to any one future roll.
+* **If you succeed in your roll,** you find yourself Inspired for the rest of the session. This inspiration can be 'spent' to add 2 Success dice to any one future roll.
   
-- **If the total number of successes from the group meets or exceeds the number of participants,** all of you gain a temporary Unity point, usable only for the current session.
+* **If the total number of successes from the group meets or exceeds the number of participants,** all of you gain a temporary Unity point, usable only for the current session.
 
 Remember, each piece of art can be performed or engaged with only once during each period of respite (twice if it's an Abstract piece). Mark it off your list whether it was a success or not.
 
@@ -948,8 +946,8 @@ If you've executed commendably courageous acts during your adventuring phase in 
 
 Choosing to "Earn a Title" generally implies two things:
 
-- Your reputation now extends to another community. You can now influence the narrative of an end-of-year downtime phase as if you were a member of that community. Additionally, when you spend a downtime phase within the home settlement of that community, your reputation score is maintained, as if you've returned to your own home.
-- You are granted a piece of property or a dwelling. The size and features of this land or home will be in line with your standard of living.
+* Your reputation now extends to another community. You can now influence the narrative of an end-of-year downtime phase as if you were a member of that community. Additionally, when you spend a downtime phase within the home settlement of that community, your reputation score is maintained, as if you've returned to your own home.
+* You are granted a piece of property or a dwelling. The size and features of this land or home will be in line with your standard of living.
 
 You have the possibility to earn titles from multiple different communities.
 
@@ -1019,24 +1017,24 @@ Before setting out, you must choose a destination and determine the expected dur
 
 ##### Sample Modifiers
 
-- **Guided (-2 TN):** If you have a local guide or a very accurate map, the difficulty eases by 2 TN.
+* **Guided (-2 TN):** If you have a local guide or a very accurate map, the difficulty eases by 2 TN.
   
-- **Rushed (+2 TN):** Trying to reach your destination quickly increases the TN by 2, but reduces the journey's time by 25%.
+* **Rushed (+2 TN):** Trying to reach your destination quickly increases the TN by 2, but reduces the journey's time by 25%.
   
-- **Uncharted (+4 TN):** If you're in an unexplored or poorly mapped area, the TN for Navigation rolls increases by 4.
+* **Uncharted (+4 TN):** If you're in an unexplored or poorly mapped area, the TN for Navigation rolls increases by 4.
   
 ##### Outcomes
 
-- **Successful Roll:** You've setoff without major hiccups. The game master may present minor encounters or findings.
-- **Failed Roll:** Your party encounters difficulties setting started.  This could include such things as getting lost, facing hazardous weather, or stumbling upon dangerous wildlife.
-- **Critical Success:** Your party finds a shortcut or an interesting landmark, possibly reducing the journey's time or offering a side quest.
-- **Critical Failure:** Not only do you lose your way, but the party also faces a severe crisis that could include a deadly encounter, exhaustion, or loss of supplies.
+* **Successful Roll:** You've setoff without major hiccups. The game master may present minor encounters or findings.
+* **Failed Roll:** Your party encounters difficulties setting started.  This could include such things as getting lost, facing hazardous weather, or stumbling upon dangerous wildlife.
+* **Critical Success:** Your party finds a shortcut or an interesting landmark, possibly reducing the journey's time or offering a side quest.
+* **Critical Failure:** Not only do you lose your way, but the party also faces a severe crisis that could include a deadly encounter, exhaustion, or loss of supplies.
 
 ##### Bonuses
 
-- **If the total number of successes from the group exceeds the number of participants,** you reach your destination with some additional benefits like finding valuable resources or uncovering a hidden location.
+* **If the total number of successes from the group exceeds the number of participants,** you reach your destination with some additional benefits like finding valuable resources or uncovering a hidden location.
   
-- **If everyone in the group fails their roll,** the journey takes twice as long and you encounter significant dangers or setbacks.
+* **If everyone in the group fails their roll,** the journey takes twice as long and you encounter significant dangers or setbacks.
 
 ##### Final Arrival
 

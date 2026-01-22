@@ -1,6 +1,6 @@
-### Writing Styles in LLMs
+## Writing Styles in LLMs
 
-Here is a superpower for you to enhance your use of [Copilot](https://copilot.microsoft.com) or ChatGPT. You can have Copilot write something in your own style of writing.  
+Here is a superpower for you to enhance your use of [Copilot](https://copilot.microsoft.com) or ChatGPT. You can have Copilot write something in your own style of writing.
 
 ```prompt
 I'd like your help in creating articles for [my blog tedt.org]. Your first task will be to understand my writing style based on examples that I give you. After that, we'll create some content. To start, please say GO AHEAD and I will paste examples of my writing. Keep saying GO AHEAD and I will paste new examples. When I am done I will give you additional instructions. 
