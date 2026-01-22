@@ -167,7 +167,7 @@
                 </div>
             </div>
             <div class="card-body">
-                <p class="card-text mb-3">{{page.content | trim}}</p>
+                <div class="card-text mb-3">{{ content }}</div>
                 
                 <div class="w-100 mb-3">
                     {% for tag in page.tags %}
@@ -181,6 +181,7 @@
 
                 <div class="card my-3 mb-0 prompt-shell">
                     <div class="prompt-toolbar card-header d-flex w-100 justify-content-between flex-wrap gap-3 ps-3 pe-3 py-2">
+                        <span id="download" class="visually-hidden" aria-hidden="true"></span>
 
                         <div class="d-flex align-items-center gap-3 flex-wrap">
                             <span class="prompt-label">Prompt</span>
@@ -197,7 +198,7 @@
                         </div>
 
                         <div class="d-flex align-items-center gap-2 prompt-control-buttons flex-wrap" role="group" aria-label="Download or Copy Prompt">
-                            <a href="#" id="download-prompt-link"
+                            <a href="#download" id="download-prompt-link"
                                 class="btn btn-primary btn-sm" download="{{ page.title | slugify }}.txt">
                                 <i class="fas fa-download"></i> <span class="d-none d-sm-inline">Download Prompt</span>
                             </a>
@@ -271,12 +272,8 @@
                             </button>
                             {% endif %}
                         </div> <!-- Close ai-provider-buttons -->
-
-
-
                     </div>
-                </div>
-                    
+                
                     <!-- Prompt Variables Form -->
                     {% include prompt-variables-form.html %}
 
@@ -305,7 +302,7 @@
                         <div class="d-flex align-items-center gap-3 flex-wrap">
                         </div>
                         <div class="d-flex align-items-center gap-2 prompt-control-buttons flex-wrap" role="group" aria-label="Download or Copy Prompt (bottom toolbar)">
-                            <a href="#" id="download-prompt-link-bottom-toolbar"
+                            <a href="#download" id="download-prompt-link-bottom-toolbar"
                                 class="btn btn-primary btn-sm" download="{{ page.title | slugify }}.txt">
                                 <i class="fas fa-download"></i> <span class="d-none d-sm-inline">Download Prompt</span>
                             </a>
