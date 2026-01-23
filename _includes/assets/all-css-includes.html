@@ -66,12 +66,15 @@
             }
             p.three-line-clamp {
                 display: -webkit-box;
-                -webkit-line-clamp: 3; 
-                line-clamp: 3;
-                -webkit-box-orient: vertical;  
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
                 overflow: hidden;
-                height: calc(var(--bs-body-line-height) * 3);         /* exactly line-height × number of lines (1.2em × 3) */
+
+                line-height: var(--bs-body-line-height);
+                height: calc(var(--bs-body-font-size) * var(--bs-body-line-height) * 3); /* exactly line-height × number of lines */
             }
+
+
 
 
         </style>
