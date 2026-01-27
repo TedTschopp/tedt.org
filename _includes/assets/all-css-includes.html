@@ -1,10 +1,7 @@
-        {%- comment -%}
-            Native Light/Auto/Dark scheme controller.
-            Kept at the very top of head includes to minimize flash and to match pepelsbey.dev semantics.
-        {%- endcomment -%}
-        {% include utility/color-scheme-head.html %}
 
-        <!-- Font Awesome CDN (primary icon set). Local fallback removed per request; restore by uncommenting include below if ever needed. -->
+    {% include utility/color-scheme-head.html %}
+
+    <!-- Font Awesome CDN (primary icon set). Local fallback removed per request; restore by uncommenting include below if ever needed. -->
     {% include assets/css-fontawesome.html %}
     {%- comment -%} Legacy fallback: {% include assets/css-fa-fallback.html %} {%- endcomment -%}
 
@@ -20,9 +17,9 @@
 
     <!-- Custom CSS -->
     {% if full-page-url == home-page-url %}
-    <link rel="stylesheet" type="text/css" href="{{ '/css/main-landing-page.css' | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ '/css/timeline.css' | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ '/css/Link-Tree.css' | relative_url }}"> 
+        <link rel="stylesheet" type="text/css" href="{{ '/css/main-landing-page.css' | relative_url }}">
+        <link rel="stylesheet" type="text/css" href="{{ '/css/timeline.css' | relative_url }}">
+        <link rel="stylesheet" type="text/css" href="{{ '/css/Link-Tree.css' | relative_url }}"> 
         <style>
             h1, .h1  { 
                 font-family:  "Sofia Sans Extra Condensed", "Optima", "ManukaCondensed", "Manuka", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -30,7 +27,7 @@
                 letter-spacing: -3px;
                 font-size: 60px;
                 font-stretch: extra-condensed;
-           }
+        }
             h2, .h2 { 
                 font-family:  "Sofia Sans Extra Condensed", "Optima", "ManukaCondensed", "Manuka", "Helvetica Neue", Helvetica, Arial, sans-serif;
                 font-weight: 600;
@@ -73,22 +70,18 @@
                 line-height: var(--bs-body-line-height);
                 height: calc(var(--bs-body-font-size) * var(--bs-body-line-height) * 3); /* exactly line-height × number of lines */
             }
-
-
-
-
         </style>
     {% else %}    
-    <link rel="stylesheet" type="text/css" href="{{ '/css/blog-post.css' | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ '/css/solarized-dark.css' | relative_url }}" >
-    <link rel="stylesheet" type="text/css" href="{{ '/css/comments-Mastodon.css' | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ '/css/web-mention.css' | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ '/css/Winerlink.css' | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="{{ '/css/table-of-contents.css' | relative_url }}">
+        <link rel="stylesheet" type="text/css" href="{{ '/css/blog-post.css' | relative_url }}">
+        <link rel="stylesheet" type="text/css" href="{{ '/css/solarized-dark.css' | relative_url }}" >
+        <link rel="stylesheet" type="text/css" href="{{ '/css/comments-Mastodon.css' | relative_url }}">
+        <link rel="stylesheet" type="text/css" href="{{ '/css/web-mention.css' | relative_url }}">
+        <link rel="stylesheet" type="text/css" href="{{ '/css/Winerlink.css' | relative_url }}">
+        <link rel="stylesheet" type="text/css" href="{{ '/css/table-of-contents.css' | relative_url }}">
     {% endif %}
 
     {% if this_is_a_draft == true %}
-    {# removed draft blog post progress styles #}
+        {# removed draft blog post progress styles #}
     {% endif %}
 
     <style>
@@ -175,25 +168,25 @@
             }
         }
 
-    /* --- Accessibility Contrast Helpers (WCAG) --- */
+        /* --- Accessibility Contrast Helpers (WCAG) --- */
         .category-title.wrapped-by-theme { text-shadow: 0 0 2px rgba(0,0,0,0.75), 0 0 3px rgba(0,0,0,0.85); }
         [data-bs-theme="dark"] .category-title.wrapped-by-theme { mix-blend-mode: normal; }
         /* Specific contrast tuning for problematic palette tokens (axe color-contrast) */
         .category-title.wrapped-by-theme.MCC { filter: brightness(1.05) saturate(1.1); }
         .category-title.wrapped-by-theme.GammaWorld { filter: brightness(0.92); }
 
-    /* Smooth reflow when toggling Table of Contents */
-    #main_content_col { transition: width .25s ease, flex-basis .25s ease; }
-    /* Remove the internal ms-4 gap when TOC card is hidden to avoid orphaned space */
-    #table-of-contents-card.hidden { display:none !important; }
-    /* If additional margin adjustments needed, hook via .toc-hidden-margin */
-    .toc-hidden-margin { margin-left:0 !important; }
+        /* Smooth reflow when toggling Table of Contents */
+        #main_content_col { transition: width .25s ease, flex-basis .25s ease; }
+        /* Remove the internal ms-4 gap when TOC card is hidden to avoid orphaned space */
+        #table-of-contents-card.hidden { display:none !important; }
+        /* If additional margin adjustments needed, hook via .toc-hidden-margin */
+        .toc-hidden-margin { margin-left:0 !important; }
 
-    /* TOC Card fade / slide animation */
-    #table-of-contents-card { transition: opacity .28s ease, transform .28s ease; }
-    #table-of-contents-card.toc-animating-in-start { opacity:0; transform: translateY(8px); }
-    #table-of-contents-card.toc-animating-in { opacity:1; transform: translateY(0); }
-    #table-of-contents-card.toc-animating-out { opacity:0; transform: translateY(-8px); }
+        /* TOC Card fade / slide animation */
+        #table-of-contents-card { transition: opacity .28s ease, transform .28s ease; }
+        #table-of-contents-card.toc-animating-in-start { opacity:0; transform: translateY(8px); }
+        #table-of-contents-card.toc-animating-in { opacity:1; transform: translateY(0); }
+        #table-of-contents-card.toc-animating-out { opacity:0; transform: translateY(-8px); }
 
         /* Toggle button pressed state (persistent) */
         button[aria-pressed] {
