@@ -1,5 +1,4 @@
 ---
-
 layout: post
 
 title: "An Introduction to OpenClaw"
@@ -12,10 +11,11 @@ call-to-action: "Discuss this on Mastodon"
 
 date: 2026-02-01 19:00:00 -0800
 update: 2026-02-01 19:00:00 -0800
+
 author:
-    avatar: [https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g](https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g)
-    name: Ted Tschopp
-    url: [https://tedt.org/](https://tedt.org/)
+   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+   name: Ted Tschopp
+   url: https://tedt.org/
 
 bullets:
 - OpenClaw is an open-source AI agent that can take real actions, not just generate text.
@@ -61,18 +61,13 @@ location:
         longitude: -117.9709
 
 image: /img/AI/Clawbots-on-Moltbook.webp
-image-alt: "Conceptual illustration of autonomous AI agents interacting online"
+image-alt: "A swarm of glowing, mech-organic, shrimp-like bots drifting through a luminous, futuristic cityscape bathed in blue and amber light."
 image-artist: "Ted Tschopp"
-image-artist-URL: "[https://tedt.org/](https://tedt.org/)"
-image-credits: "Ted Tschopp"
-image-credits-URL: "[https://tedt.org/](https://tedt.org/)"
-image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "[https://tedt.org/](https://tedt.org/)"
-image-credits-title: ""
-image-description: ""
-image-title: ""
-image_width:
-image_height:
+image-artist-URL: "https://tedt.org/"
+image-description: "A sci-fi scene showing numerous biotechnological or robotic creatures resembling large translucent shrimps or “clawbots” floating and navigating through a dense, illuminated metropolis. The environment is rich with warm golden lights from towering structures interwoven with darker blue tones, suggesting a high-tech underground or otherworldly network where these machines operate or travel."
+image-title: "Clawbots on Moltbook"
+image_width: 1456
+image_height: 816
 
 mastodon-post-id:
 
