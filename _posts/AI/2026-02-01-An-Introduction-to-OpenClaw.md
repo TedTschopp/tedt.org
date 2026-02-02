@@ -6,7 +6,6 @@ subtitle: "A Beta Version of an AI Agent for Normal People"
 quote: "The future is already here—it’s just not evenly distributed."
 excerpt: "OpenClaw and Moltbook show how AI is moving from drafting text to taking action. The shift brings real productivity gains—and a new class of security and compliance risk most organizations are not ready for."
 source: "Original Content with citations"
-source-url: ""
 call-to-action: "Discuss this on Mastodon"
 
 date: 2026-02-01 19:00:00 -0800
@@ -55,10 +54,11 @@ keywords:
 - shadow AI
 
 location:
-    name: Bradbury, CA
-    coordinates:
-        latitude: 34.1470
-        longitude: -117.9709
+  name: Bradbury, CA
+  coordinates:
+    latitude: 34.1470
+    longitude: -117.9709
+
 
 image: /img/AI/Clawbots-on-Moltbook.webp
 image-alt: "A swarm of glowing, mech-organic, shrimp-like bots drifting through a luminous, futuristic cityscape bathed in blue and amber light."
