@@ -3,7 +3,7 @@ layout: post
 
 title: "An Introduction to OpenClaw"
 subtitle: "A Beta Version of an AI Agent for Normal People"
-quote: ""The future is already here—it’s just not evenly distributed.""
+quote: "The future is already here—it’s just not evenly distributed."
 excerpt: "OpenClaw and Moltbook show how AI is moving from drafting text to taking action. The shift brings real productivity gains—and a new class of security and compliance risk most organizations are not ready for."
 source: "Original Content with citations"
 source-url: ""
