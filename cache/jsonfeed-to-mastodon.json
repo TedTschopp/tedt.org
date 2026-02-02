@@ -3705,5 +3705,36 @@
       "https://tschopp.net/users/Ted/statuses/115998993456881541"
     ],
     "lastTootTimestamp": 1770004172702
+  },
+  "https://tedt.org/An-Introduction-to-OpenClaw/": {
+    "id": "/An-Introduction-to-OpenClaw/",
+    "title": "An Introduction to OpenClaw",
+    "summary": "OpenClaw and Moltbook show how AI is moving from drafting text to taking action. The shift brings real productivity gains—and a new class of security and compliance risk most organizations are not ready for.",
+    "content_text": "OpenClaw and Moltbook show how AI is moving from drafting text to taking action. The shift brings real productivity gains—and a new class of security and compliance risk most organizations are not ready for. https://tedt.org/An-Introduction-to-OpenClaw/",
+    "url": "https://tedt.org/An-Introduction-to-OpenClaw/",
+    "image": "https://tedt.org/img/AI/Clawbots-on-Moltbook.webp",
+    "tags": [
+      "ai agents",
+      "agentic ai",
+      "openclaw",
+      "moltbook",
+      "enterprise ai",
+      "security",
+      "compliance",
+      "shadow ai",
+      "automation",
+      "governance"
+    ],
+    "date_published": "2026-02-01T19:00:00-08:00",
+    "date_modified": "2026-02-01T19:00:00-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/115999761879264934"
+    ],
+    "lastTootTimestamp": 1770015897918
   }
 }
