@@ -1,4 +1,5 @@
 ---
+published: false                 # template-only: do not render or list as a real tool
 title: "Tool Name"                 # required
 summary: "One-sentence description" # required (used on cards)
 subtitle: "One-sentence description" # used by long-article hero
@@ -21,7 +22,7 @@ links:                              # optional: any/all can be null/omitted
   download: null
 
 image: "/img/404/404-1.webp"        # optional (site-relative)
-image_hero: "/img/404/404-2.webp"   # optional (site-relative, overrides image for hero)
+hero_image: "/img/404/404-2.webp"   # optional (site-relative, overrides image for hero)
 screenshots:                        # optional
   - "/img/404/404-3.webp"
   - "/img/404/404-4.webp"
