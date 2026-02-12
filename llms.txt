@@ -1,0 +1,28 @@
+# TedT.org
+
+> Personal website by Ted Tschopp covering technology, theology, creativity, and related projects.
+
+Notes:
+
+- Primary content is published as HTML pages; RSS/JSON feeds and Markdown ADRs are often the cleanest machine-readable sources.
+
+## Key pages
+
+- [Homepage](https://tedt.org/): Recent writing and featured sections.
+- [Profile](https://tedt.org/profile/): Biography and key links.
+- [AI Prompt Library](https://tedt.org/prompts/): Curated prompt collection.
+
+## Feeds
+
+- [RSS feed](https://tedt.org/rss.xml): Latest posts.
+- [JSON feed](https://tedt.org/feed.json): Latest posts in JSON Feed format.
+
+## Architecture / implementation notes (Markdown)
+
+- [ADR index](https://tedt.org/docs/adr/0000-index.md): Architecture Decision Records (ADRs).
+- [CI notes](https://tedt.org/docs/ci.md): Build/deploy notes.
+
+## Optional
+
+- [Sitemap](https://tedt.org/sitemap.xml): Full list of site URLs (large).
+- [Source repository](https://github.com/TedTschopp/tedt.org): Markdown sources, scripts, and build config.

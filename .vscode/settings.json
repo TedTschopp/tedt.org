@@ -63,6 +63,10 @@
     "terminal.integrated.env.osx": {
         "PATH": "/Users/tedtschopp/.local/bin:/opt/homebrew/bin:/usr/local/bin:${env:PATH}"
     },
-    "chat.useNestedAgentsMdFiles": true
+    "chat.useNestedAgentsMdFiles": true,
+    "chat.tools.terminal.autoApprove": {
+        "set": true,
+        "test": true
+    }
 
 }
