@@ -13,7 +13,7 @@ tech:
   - HTML
   - CSS
 links:
-  live: "/tools/color-chart.html"
+  live: "https://tedt.org/tools/color-chart.html"
   repo: null
   docs: "/Color-Chart-Pan-Zoom/"
   download: null
