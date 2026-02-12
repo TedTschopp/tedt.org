@@ -3736,5 +3736,32 @@
       "https://tschopp.net/users/Ted/statuses/115999761879264934"
     ],
     "lastTootTimestamp": 1770015897918
+  },
+  "https://tedt.org/Image-Tools-Design-and-Security/": {
+    "id": "/Image-Tools-Design-and-Security/",
+    "title": "Image Tools: Design and Security",
+    "summary": "A short documentation post for Image Tools on tedt.org: what it includes, how it persists state, how offline caching is scoped, and what the SVG sanitizer removes.",
+    "content_text": "A short documentation post for Image Tools on tedt.org: what it includes, how it persists state, how offline caching is scoped, and what the SVG sanitizer removes. https://tedt.org/Image-Tools-Design-and-Security/",
+    "url": "https://tedt.org/Image-Tools-Design-and-Security/",
+    "image": "https://tedt.org/img/2026-02/image-tools-hero.webp",
+    "tags": [
+      "Image",
+      "SVG",
+      "JavaScript",
+      "Security",
+      "Tools",
+      "CSS"
+    ],
+    "date_published": "2026-02-12T09:00:00-08:00",
+    "date_modified": "2026-02-12T09:00:00-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116059322740820027"
+    ],
+    "lastTootTimestamp": 1770924724542
   }
 }
