@@ -13,9 +13,9 @@ tech:
   - HTML
   - CSS
 links:
-  live: "{{ site.url }}{% link tools/color-chart.html %}"
+  live: "/tools/color-chart.html"
   repo: null
-  docs: "{{ site.url }}/Color-Chart-Pan-Zoom/"
+  docs: "/Color-Chart-Pan-Zoom/"
   download: null
 image: "/img/2026-01/color-tool.webp"
 hero_image: "/img/2026-01/color-tool.webp"
@@ -31,13 +31,16 @@ license: "MIT"
 
 ## What it does
 
-Color Chart is a fullscreen palette explorer: it turns one or more base colors into a grid of related shades, then lets you *move around the chart* (pan and zoom) to evaluate the palette as a system.
+Color Chart is a fullscreen palette explorer: it turns one or more base colors
+into a grid of related shades, then lets you *move around the chart* (pan and
+zoom) to evaluate the palette as a system.
 
 ## How to use it
 
-- **Open the tool:** {{ site.url }}{% link tools/color-chart.html %}
+- **Open the tool:** /tools/color-chart.html
 - **Pan:** drag the background (or use arrow keys / on-screen arrows)
-- **Zoom:** mouse wheel / trackpad scroll, or `+` / `-` (or the on-screen `+` / `−` buttons)
+- **Zoom:** mouse wheel / trackpad scroll, or `+` / `-` (or the on-screen
+  `+` / `−` buttons)
 - **Reset:** `0` (or the reset button)
 
 ## URL palettes (`?c=`)
@@ -49,5 +52,6 @@ You can generate a chart from a specific palette without editing the tool:
 
 ## Notes
 
-- Full usage docs live here: [A Color Chart You Can Move Around]({{ site.url }}/Color-Chart-Pan-Zoom/)
-- The tool is intentionally self-contained (single HTML file) so it can be copied/modified easily.
+- Full usage docs live here: [A Color Chart You Can Move Around](/Color-Chart-Pan-Zoom/)
+- The tool is intentionally self-contained (single HTML file) so it can be
+  copied/modified easily.
