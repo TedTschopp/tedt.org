@@ -356,7 +356,7 @@
     const COCOMO_YEAR_MIN = 2000;
     const COCOMO_YEAR_MAX = 2030;
     const DEFAULT_COST_YEAR = Math.max(COCOMO_YEAR_MIN, Math.min(COCOMO_YEAR_MAX, new Date().getFullYear()));
-    const COUNTER_BATCH_SIZE = 120;
+    const COUNTER_BATCH_SIZE = 40;
     const DOCUMENT_BASENAMES = new Set([
       'readme',
       'changelog',
@@ -547,6 +547,13 @@
         return `.${leaf.slice(idx + 1)}`;
       }
       return '(no extension)';
+    }
+
+    function encodeGitHubPath(path) {
+      return String(path || '')
+        .split('/')
+        .map((segment) => encodeURIComponent(segment))
+        .join('/');
     }
 
     function collectUnmappedTypes(paths) {
@@ -812,6 +819,12 @@
             parsed.groupLines += batchParsed.groupLines;
             parsed.groupFiles += batchParsed.groupFiles;
             parsed.fileResults.push(...batchParsed.fileResults);
+
+            Perl.eval(`
+              for my $path (${filePaths.map((p) => `'${p}'`).join(', ')}) {
+                unlink $path if -e $path;
+              }
+            `);
           }
         }
 
@@ -836,12 +849,39 @@
               };
             }
 
-            window.wasmOutput = [];
-            module.callMain(filePaths);
-            const batchParsed = parseCounterOutput(window.wasmOutput.join('\n'), pathMeta);
-            parsed.groupLines += batchParsed.groupLines;
-            parsed.groupFiles += batchParsed.groupFiles;
-            parsed.fileResults.push(...batchParsed.fileResults);
+            const invokeWasm = (paths, meta) => {
+              window.wasmOutput = [];
+              module.callMain(paths);
+              return parseCounterOutput(window.wasmOutput.join('\n'), meta);
+            };
+
+            try {
+              const batchParsed = invokeWasm(filePaths, pathMeta);
+              parsed.groupLines += batchParsed.groupLines;
+              parsed.groupFiles += batchParsed.groupFiles;
+              parsed.fileResults.push(...batchParsed.fileResults);
+            } catch (error) {
+              const message = String(error && error.message ? error.message : error);
+              if (!/stack overflow|stack cookie|aborted/i.test(message) || filePaths.length <= 1) {
+                throw error;
+              }
+
+              for (const singlePath of filePaths) {
+                try {
+                  const singleParsed = invokeWasm([singlePath], { [singlePath]: pathMeta[singlePath] });
+                  parsed.groupLines += singleParsed.groupLines;
+                  parsed.groupFiles += singleParsed.groupFiles;
+                  parsed.fileResults.push(...singleParsed.fileResults);
+                } catch (singleError) {
+                  const singleMessage = String(singleError && singleError.message ? singleError.message : singleError);
+                  throw new Error(`Counter ${group.counter} failed on ${pathMeta[singlePath]?.filename || singlePath}: ${singleMessage}`);
+                }
+              }
+            } finally {
+              for (const path of filePaths) {
+                try { module.FS.unlink(path); } catch {}
+              }
+            }
           }
         }
 
@@ -1074,7 +1114,8 @@
         const batch = analyzablePaths.slice(i, i + batchSize);
         setStatus(`Downloading files ${i + 1}-${Math.min(i + batch.length, analyzablePaths.length)} of ${analyzablePaths.length}...`, 'info');
         const chunks = await Promise.all(batch.map(async (path) => {
-          const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${ref}/${path}`;
+          const encodedPath = encodeGitHubPath(path);
+          const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${encodeURIComponent(ref)}/${encodedPath}`;
           try {
             const r = await fetch(rawUrl);
             if (!r.ok) return null;
