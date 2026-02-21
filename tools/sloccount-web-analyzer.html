@@ -660,10 +660,23 @@
       const fileResults = [];
       for (const line of lines) {
         if (!line.trim() || line.startsWith('Total:')) continue;
-        const match = line.match(/^(\d+)\s+(.+)$/);
-        if (match) {
-          const fileLines = parseInt(match[1], 10);
-          const rawPath = (match[2] || '').trim();
+        const normalizedLine = line.trim();
+        let fileLines = null;
+        let rawPath = null;
+
+        const leadingCountFormat = normalizedLine.match(/^(\d+)\s+(.+)$/);
+        if (leadingCountFormat) {
+          fileLines = parseInt(leadingCountFormat[1], 10);
+          rawPath = (leadingCountFormat[2] || '').trim();
+        } else {
+          const trailingCountFormat = normalizedLine.match(/^(.+?)\s*:\s*(\d+)\s*$/);
+          if (trailingCountFormat) {
+            rawPath = (trailingCountFormat[1] || '').trim();
+            fileLines = parseInt(trailingCountFormat[2], 10);
+          }
+        }
+
+        if (Number.isFinite(fileLines) && rawPath) {
           const meta = pathMeta[rawPath] || { filename: rawPath, createdYear: null, createdYearSource: 'unknown' };
           groupLines += fileLines;
           groupFiles += 1;
@@ -938,6 +951,10 @@
               }
             }
           }
+        }
+
+        if (parsed.groupFiles === 0 && parsed.groupLines === 0) {
+          continue;
         }
 
         if (!langStats[group.lang]) {
