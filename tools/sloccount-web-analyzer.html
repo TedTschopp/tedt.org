@@ -107,9 +107,38 @@
       </div>
 
       <div class="card mb-3">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <strong>Unmapped File Types</strong>
+          <span id="unmappedTypeCount" class="badge text-bg-secondary">0</span>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-striped table-hover table-fixed mb-0">
+            <thead>
+              <tr><th>Type</th><th class="text-end">Files</th><th>Example</th></tr>
+            </thead>
+            <tbody id="unmappedTypeBody">
+              <tr><td colspan="3" class="text-body-secondary">Run analysis to list file types not included by current mappings.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card mb-3">
         <div class="card-header"><strong>Cost Model (Basic COCOMO)</strong></div>
         <div class="card-body">
           <div class="row g-3">
+            <div class="col-sm-12 col-lg-6">
+              <label class="form-label" for="cocomoModeInput">Calculation Mode</label>
+              <select id="cocomoModeInput" class="form-select">
+                <option value="by-file-year" selected>By file created year (default)</option>
+                <option value="original">Original formula (manual constants)</option>
+                <option value="force-year">Force single year for all files</option>
+              </select>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+              <label class="form-label" for="forceYearInput">Forced Year</label>
+              <select id="forceYearInput" class="form-select"></select>
+            </div>
             <div class="col-sm-6 col-lg-3"><label class="form-label" for="salaryInput">Annual Salary (USD)</label><input id="salaryInput" class="form-control" type="number" value="56286"></div>
             <div class="col-sm-6 col-lg-3"><label class="form-label" for="overheadInput">Overhead Multiplier</label><input id="overheadInput" class="form-control" type="number" step="0.1" value="2.4"></div>
             <div class="col-sm-6 col-lg-2"><label class="form-label" for="aInput">Effort A</label><input id="aInput" class="form-control" type="number" step="0.01" value="2.4"></div>
@@ -117,7 +146,19 @@
             <div class="col-sm-6 col-lg-1"><label class="form-label" for="cInput">Sched C</label><input id="cInput" class="form-control" type="number" step="0.01" value="2.5"></div>
             <div class="col-sm-6 col-lg-1"><label class="form-label" for="dInput">Sched D</label><input id="dInput" class="form-control" type="number" step="0.01" value="0.38"></div>
           </div>
+          <p id="cocomoModeNote" class="muted-note mt-2 mb-0">Mode: By file created year.</p>
           <button id="recalcBtn" class="btn btn-outline-secondary btn-sm mt-3">Recalculate</button>
+
+          <div class="table-responsive mt-3">
+            <table class="table table-sm table-striped mb-0">
+              <thead>
+                <tr><th>Year</th><th class="text-end">Files</th><th class="text-end">Lines</th><th class="text-end">Cost (USD)</th></tr>
+              </thead>
+              <tbody id="yearCostBody">
+                <tr><td colspan="4" class="text-body-secondary">Run an analysis to see per-year costing.</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
 
@@ -134,6 +175,32 @@
       rb: { counter: 'ruby_count', type: 'perl', lang: 'Ruby' },
       pl: { counter: 'perl_count', type: 'perl', lang: 'Perl' },
       pm: { counter: 'perl_count', type: 'perl', lang: 'Perl' },
+      ada: { counter: 'ada_count', type: 'perl', lang: 'Ada' },
+      adb: { counter: 'ada_count', type: 'perl', lang: 'Ada' },
+      ads: { counter: 'ada_count', type: 'perl', lang: 'Ada' },
+      asm: { counter: 'asm_count', type: 'perl', lang: 'Assembly' },
+      s: { counter: 'asm_count', type: 'perl', lang: 'Assembly' },
+      ahk: { counter: 'autohotkey_count', type: 'perl', lang: 'AutoHotkey' },
+      au3: { counter: 'autoit_count', type: 'perl', lang: 'AutoIt' },
+      awk: { counter: 'awk_count', type: 'perl', lang: 'AWK' },
+      bat: { counter: 'batch_count', type: 'perl', lang: 'Batch' },
+      cmd: { counter: 'batch_count', type: 'perl', lang: 'Batch' },
+      cob: { counter: 'cobol_count', type: 'perl', lang: 'COBOL' },
+      cbl: { counter: 'cobol_count', type: 'perl', lang: 'COBOL' },
+      cpy: { counter: 'cobol_count', type: 'perl', lang: 'COBOL' },
+      csh: { counter: 'csh_count', type: 'perl', lang: 'C Shell' },
+      tcsh: { counter: 'csh_count', type: 'perl', lang: 'C Shell' },
+      exp: { counter: 'exp_count', type: 'perl', lang: 'Expect' },
+      f: { counter: 'fortran_count', type: 'perl', lang: 'Fortran' },
+      for: { counter: 'fortran_count', type: 'perl', lang: 'Fortran' },
+      f77: { counter: 'fortran_count', type: 'perl', lang: 'Fortran' },
+      f90: { counter: 'f90_count', type: 'perl', lang: 'Fortran 90+' },
+      f95: { counter: 'f90_count', type: 'perl', lang: 'Fortran 90+' },
+      f03: { counter: 'f90_count', type: 'perl', lang: 'Fortran 90+' },
+      f08: { counter: 'f90_count', type: 'perl', lang: 'Fortran 90+' },
+      hs: { counter: 'haskell_count', type: 'perl', lang: 'Haskell' },
+      lhs: { counter: 'haskell_count', type: 'perl', lang: 'Haskell' },
+      iss: { counter: 'innosetup_count', type: 'perl', lang: 'Inno Setup' },
       sh: { counter: 'sh_count', type: 'wasm', lang: 'Shell' },
       bash: { counter: 'sh_count', type: 'wasm', lang: 'Shell' },
       zsh: { counter: 'sh_count', type: 'wasm', lang: 'Shell' },
@@ -155,6 +222,58 @@
       php: { counter: 'php_count', type: 'wasm', lang: 'PHP' },
       phtml: { counter: 'php_count', type: 'wasm', lang: 'PHP' },
       sql: { counter: 'sql_count', type: 'perl', lang: 'SQL' },
+      mk: { counter: 'makefile_count', type: 'perl', lang: 'Makefile' },
+      lisp: { counter: 'lisp_count', type: 'perl', lang: 'Lisp' },
+      lsp: { counter: 'lisp_count', type: 'perl', lang: 'Lisp' },
+      cl: { counter: 'lisp_count', type: 'perl', lang: 'Lisp' },
+      el: { counter: 'lisp_count', type: 'perl', lang: 'Lisp' },
+      m3: { counter: 'modula3_count', type: 'perl', lang: 'Modula-3' },
+      i3: { counter: 'modula3_count', type: 'perl', lang: 'Modula-3' },
+      mg: { counter: 'modula3_count', type: 'perl', lang: 'Modula-3' },
+      ig: { counter: 'modula3_count', type: 'perl', lang: 'Modula-3' },
+      m: { counter: 'objc_count', type: 'perl', lang: 'Objective-C' },
+      mm: { counter: 'objc_count', type: 'perl', lang: 'Objective-C++' },
+      sed: { counter: 'sed_count', type: 'perl', lang: 'sed' },
+      tcl: { counter: 'tcl_count', type: 'perl', lang: 'Tcl' },
+      tk: { counter: 'tcl_count', type: 'perl', lang: 'Tcl' },
+      vb: { counter: 'vbasic_count', type: 'perl', lang: 'Visual Basic' },
+      bas: { counter: 'vbasic_count', type: 'perl', lang: 'Visual Basic' },
+      frm: { counter: 'vbasic_count', type: 'perl', lang: 'Visual Basic' },
+      cls: { counter: 'vbasic_count', type: 'perl', lang: 'Visual Basic' },
+      ctl: { counter: 'vbasic_count', type: 'perl', lang: 'Visual Basic' },
+      vbs: { counter: 'vbscript_count', type: 'perl', lang: 'VBScript' },
+      json: { counter: 'javascript_count', type: 'wasm', lang: 'JavaScript' },
+      jsonc: { counter: 'javascript_count', type: 'wasm', lang: 'JavaScript' },
+      json5: { counter: 'javascript_count', type: 'wasm', lang: 'JavaScript' },
+      yaml: { counter: 'generic_count', type: 'wasm', lang: DATA_CONFIG_BUCKET_LANG },
+      yml: { counter: 'generic_count', type: 'wasm', lang: DATA_CONFIG_BUCKET_LANG },
+      toml: { counter: 'generic_count', type: 'wasm', lang: DATA_CONFIG_BUCKET_LANG },
+      ini: { counter: 'generic_count', type: 'wasm', lang: DATA_CONFIG_BUCKET_LANG },
+      cfg: { counter: 'generic_count', type: 'wasm', lang: DATA_CONFIG_BUCKET_LANG },
+      conf: { counter: 'generic_count', type: 'wasm', lang: DATA_CONFIG_BUCKET_LANG },
+      config: { counter: 'generic_count', type: 'wasm', lang: DATA_CONFIG_BUCKET_LANG },
+      properties: { counter: 'generic_count', type: 'wasm', lang: DATA_CONFIG_BUCKET_LANG },
+      env: { counter: 'generic_count', type: 'wasm', lang: DATA_CONFIG_BUCKET_LANG },
+      md: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      markdown: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      mdown: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      mkd: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      mkdn: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      mdtxt: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      mdtext: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      rmd: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      qmd: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      rst: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      rest: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      adoc: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      asciidoc: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      textile: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      org: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      pod: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      wiki: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      txt: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      text: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      nfo: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
       swift: { counter: 'swift_count', type: 'perl', lang: 'Swift' },
       kt: { counter: 'kotlin_count', type: 'perl', lang: 'Kotlin' },
       kts: { counter: 'kotlin_count', type: 'perl', lang: 'Kotlin' },
@@ -192,6 +311,73 @@
       pig_count: { script: 'pig_count.js', factory: 'createPigCountModule' }
     };
 
+    const cocomoConstantsByYear = {
+      2000: { salary: 56286, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 172.200 },
+      2001: { salary: 57888, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 177.100 },
+      2002: { salary: 58803, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 179.900 },
+      2003: { salary: 60143, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 184.000 },
+      2004: { salary: 61745, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 188.900 },
+      2005: { salary: 63828, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 195.300 },
+      2006: { salary: 65883, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 201.600 },
+      2007: { salary: 67760, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 207.342 },
+      2008: { salary: 70362, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 215.303 },
+      2009: { salary: 70112, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 214.537 },
+      2010: { salary: 71277, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 218.056 },
+      2011: { salary: 73528, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 224.939 },
+      2012: { salary: 75050, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 229.594 },
+      2013: { salary: 76149, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 232.957 },
+      2014: { salary: 77384, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 236.736 },
+      2015: { salary: 77476, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 237.017 },
+      2016: { salary: 78453, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 240.007 },
+      2017: { salary: 80124, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 245.120 },
+      2018: { salary: 82081, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 251.107 },
+      2019: { salary: 83569, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 255.657 },
+      2020: { salary: 84600, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 258.811 },
+      2021: { salary: 88574, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 270.970 },
+      2022: { salary: 95663, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 292.655 },
+      2023: { salary: 99599, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 304.702 },
+      2024: { salary: 102540, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 313.689 },
+      2025: { salary: 105232, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 321.943 },
+      2026: { salary: 108178, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 330.957 },
+      2027: { salary: 110774, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 338.900 },
+      2028: { salary: 113322, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 346.695 },
+      2029: { salary: 115929, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 354.669 },
+      2030: { salary: 118595, overhead: 2.4, a: 2.4, b: 1.05, c: 2.5, d: 0.38, cpiU: 362.826 }
+    };
+
+    const COCOMO_MODE = {
+      ORIGINAL: 'original',
+      BY_FILE_YEAR: 'by-file-year',
+      FORCE_YEAR: 'force-year'
+    };
+
+    const COCOMO_YEAR_MIN = 2000;
+    const COCOMO_YEAR_MAX = 2030;
+    const DEFAULT_COST_YEAR = Math.max(COCOMO_YEAR_MIN, Math.min(COCOMO_YEAR_MAX, new Date().getFullYear()));
+    const DOC_BUCKET_LANG = 'Documents';
+    const DATA_CONFIG_BUCKET_LANG = 'Data/Config';
+    const DOCUMENT_BASENAMES = new Set([
+      'readme',
+      'changelog',
+      'changes',
+      'history',
+      'license',
+      'licence',
+      'copying',
+      'notice',
+      'authors',
+      'contributors',
+      'contributing',
+      'code_of_conduct',
+      'security',
+      'support',
+      'roadmap',
+      'faq',
+      'notes',
+      'release_notes',
+      'todo'
+    ]);
+
     const statusEl = document.getElementById('status');
     const resultsEl = document.getElementById('results');
     const languageBody = document.getElementById('languageTableBody');
@@ -199,9 +385,16 @@
     const analyzeGithubBtn = document.getElementById('analyzeGithubBtn');
     const analyzeZipBtn = document.getElementById('analyzeZipBtn');
     const loadedCountersEl = document.getElementById('loadedCounters');
+    const cocomoModeInput = document.getElementById('cocomoModeInput');
+    const forceYearInput = document.getElementById('forceYearInput');
+    const cocomoModeNote = document.getElementById('cocomoModeNote');
+    const yearCostBody = document.getElementById('yearCostBody');
+    const unmappedTypeBody = document.getElementById('unmappedTypeBody');
+    const unmappedTypeCount = document.getElementById('unmappedTypeCount');
 
     let lastSummary = null;
     let currentFiles = [];
+    let lastUnmappedTypes = [];
     let perlReady = false;
     let slocScripts = {};
     let wasmModules = {};
@@ -211,6 +404,54 @@
     analyzeZipBtn.disabled = true;
 
     const LOCAL_SERVER_COMMAND = 'python3 -m http.server 4000';
+
+    function normalizeYear(year) {
+      const value = Number(year);
+      if (!Number.isFinite(value)) return null;
+      return Math.max(COCOMO_YEAR_MIN, Math.min(COCOMO_YEAR_MAX, Math.floor(value)));
+    }
+
+    function inferYearFromPath(path) {
+      if (!path) return null;
+      const directMatch = path.match(/(?:^|[^\d])(19\d{2}|20\d{2})(?:[^\d]|$)/);
+      if (!directMatch) return null;
+      return normalizeYear(Number(directMatch[1]));
+    }
+
+    function cocomoConstantsForYear(year) {
+      const normalized = normalizeYear(year) || DEFAULT_COST_YEAR;
+      return cocomoConstantsByYear[normalized] || cocomoConstantsByYear[DEFAULT_COST_YEAR];
+    }
+
+    function populateYearSelect() {
+      forceYearInput.innerHTML = '';
+      for (let year = COCOMO_YEAR_MAX; year >= COCOMO_YEAR_MIN; year -= 1) {
+        const option = document.createElement('option');
+        option.value = String(year);
+        option.textContent = String(year);
+        if (year === normalizeYear(DEFAULT_COST_YEAR)) option.selected = true;
+        forceYearInput.appendChild(option);
+      }
+    }
+
+    function syncCocomoControls() {
+      const mode = cocomoModeInput.value;
+      const manualInputs = ['salaryInput', 'overheadInput', 'aInput', 'bInput', 'cInput', 'dInput'];
+      const manualEnabled = mode === COCOMO_MODE.ORIGINAL;
+      for (const inputId of manualInputs) {
+        const input = document.getElementById(inputId);
+        input.disabled = !manualEnabled;
+      }
+      forceYearInput.disabled = mode !== COCOMO_MODE.FORCE_YEAR;
+
+      if (mode === COCOMO_MODE.BY_FILE_YEAR) {
+        cocomoModeNote.textContent = 'Mode: By file created year using annual constants (default).';
+      } else if (mode === COCOMO_MODE.FORCE_YEAR) {
+        cocomoModeNote.textContent = `Mode: Forced year ${forceYearInput.value} for all files.`;
+      } else {
+        cocomoModeNote.textContent = 'Mode: Original formula using manual constants.';
+      }
+    }
 
     function setStatus(message, type = 'secondary', allowHtml = false) {
       statusEl.className = `alert alert-${type}`;
@@ -282,6 +523,11 @@
       const lower = (filePath || '').toLowerCase();
       if (!lower) return null;
       if (lower.endsWith('/dockerfile') || lower === 'dockerfile') return 'sh';
+      const leaf = lower.split('/').pop();
+      const leafNoExt = leaf.replace(/\.[^.]*$/, '');
+      if (leaf === 'makefile' || leaf === 'gnumakefile' || leaf === 'bsdmakefile') return 'mk';
+      if (leaf.startsWith('makefile.')) return 'mk';
+      if (DOCUMENT_BASENAMES.has(leaf) || DOCUMENT_BASENAMES.has(leafNoExt)) return 'md';
       const idx = lower.lastIndexOf('.');
       if (idx === -1) return null;
       return lower.slice(idx + 1);
@@ -290,6 +536,45 @@
     function isSupportedSourceFile(filePath) {
       const ext = extensionFor(filePath);
       return !!(ext && COUNTER_MAP[ext]);
+    }
+
+    function describeUnmappedType(filePath) {
+      const lower = (filePath || '').toLowerCase();
+      const leaf = lower.split('/').pop() || lower;
+      const idx = leaf.lastIndexOf('.');
+      if (idx !== -1 && idx < leaf.length - 1) {
+        return `.${leaf.slice(idx + 1)}`;
+      }
+      return '(no extension)';
+    }
+
+    function collectUnmappedTypes(paths) {
+      const map = {};
+      for (const path of paths) {
+        if (isSupportedSourceFile(path)) continue;
+        const type = describeUnmappedType(path);
+        if (!map[type]) {
+          map[type] = { type, count: 0, sample: path };
+        }
+        map[type].count += 1;
+      }
+      return Object.values(map).sort((a, b) => b.count - a.count || a.type.localeCompare(b.type));
+    }
+
+    function renderUnmappedTypes(rows) {
+      lastUnmappedTypes = rows || [];
+      unmappedTypeCount.textContent = String(lastUnmappedTypes.length);
+      unmappedTypeBody.innerHTML = '';
+      if (!lastUnmappedTypes.length) {
+        unmappedTypeBody.innerHTML = '<tr><td colspan="3" class="text-body-secondary">No unmapped file types in this input.</td></tr>';
+        return;
+      }
+
+      for (const row of lastUnmappedTypes) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${row.type}</td><td class="text-end">${row.count.toLocaleString()}</td><td class="mono">${row.sample}</td>`;
+        unmappedTypeBody.appendChild(tr);
+      }
     }
 
     function loadScript(url, parentTag = 'head') {
@@ -316,19 +601,29 @@
       return window.JSZip;
     }
 
-    function parseCounterOutput(output) {
+    function parseCounterOutput(output, pathMeta = {}) {
       const lines = (output || '').split('\n');
       let groupLines = 0;
       let groupFiles = 0;
+      const fileResults = [];
       for (const line of lines) {
         if (!line.trim() || line.startsWith('Total:')) continue;
-        const match = line.match(/^(\d+)\s+/);
+        const match = line.match(/^(\d+)\s+(.+)$/);
         if (match) {
-          groupLines += parseInt(match[1], 10);
+          const fileLines = parseInt(match[1], 10);
+          const rawPath = (match[2] || '').trim();
+          const meta = pathMeta[rawPath] || { filename: rawPath, createdYear: null, createdYearSource: 'unknown' };
+          groupLines += fileLines;
           groupFiles += 1;
+          fileResults.push({
+            filename: meta.filename,
+            lines: fileLines,
+            createdYear: normalizeYear(meta.createdYear),
+            createdYearSource: meta.createdYearSource || 'unknown'
+          });
         }
       }
-      return { groupLines, groupFiles };
+      return { groupLines, groupFiles, fileResults };
     }
 
     async function initializeWebAssemblyEngine() {
@@ -452,12 +747,15 @@
         }
         filesByCounter[key].files.push({
           filename: file.filename || file.path,
-          content: file.content
+          content: file.content,
+          createdYear: normalizeYear(file.createdYear),
+          createdYearSource: file.createdYearSource || 'unknown'
         });
       }
 
       const langStats = {};
       let totalLines = 0;
+      const fileStats = [];
 
       for (const key of Object.keys(filesByCounter)) {
         const group = filesByCounter[key];
@@ -468,6 +766,7 @@
           if (!script) continue;
 
           const filePaths = [];
+          const pathMeta = {};
           for (let i = 0; i < group.files.length; i += 1) {
             const file = group.files[i];
             const sanitized = file.filename.replace(/[^a-zA-Z0-9._\/-]/g, '_').split('/').pop();
@@ -482,6 +781,11 @@
               close($fh);
             `);
             filePaths.push(path);
+            pathMeta[path] = {
+              filename: file.filename,
+              createdYear: file.createdYear,
+              createdYearSource: file.createdYearSource
+            };
           }
           window._tempFileContent = null;
 
@@ -501,13 +805,14 @@
             js('window')->{perlCounterOutput} = $output;
           `);
 
-          parsed = parseCounterOutput(window.perlCounterOutput);
+          parsed = parseCounterOutput(window.perlCounterOutput, pathMeta);
         }
 
         if (group.type === 'wasm') {
           const module = wasmModules[group.counter] || wasmModules.generic_count;
           if (!module) continue;
           const filePaths = [];
+          const pathMeta = {};
 
           for (let i = 0; i < group.files.length; i += 1) {
             const file = group.files[i];
@@ -515,11 +820,16 @@
             const path = `/tmp/${Date.now()}_${i}_${sanitized}`;
             module.FS.writeFile(path, file.content);
             filePaths.push(path);
+            pathMeta[path] = {
+              filename: file.filename,
+              createdYear: file.createdYear,
+              createdYearSource: file.createdYearSource
+            };
           }
 
           window.wasmOutput = [];
           module.callMain(filePaths);
-          parsed = parseCounterOutput(window.wasmOutput.join('\n'));
+          parsed = parseCounterOutput(window.wasmOutput.join('\n'), pathMeta);
         }
 
         if (!langStats[group.lang]) {
@@ -528,6 +838,9 @@
         langStats[group.lang].lines += parsed.groupLines;
         langStats[group.lang].files += parsed.groupFiles;
         totalLines += parsed.groupLines;
+        for (const fileStat of parsed.fileResults) {
+          fileStats.push(fileStat);
+        }
       }
 
       const languages = Object.values(langStats).sort((a, b) => b.lines - a.lines);
@@ -537,31 +850,105 @@
         totalLines,
         totalFiles,
         totalLanguages: languages.length,
-        languages
+        languages,
+        fileStats
       };
     }
 
-    function computeCocomo(totalLines) {
-      const kloc = totalLines / 1000;
-      const salary = Number(document.getElementById('salaryInput').value || 56286);
-      const overhead = Number(document.getElementById('overheadInput').value || 2.4);
-      const a = Number(document.getElementById('aInput').value || 2.4);
-      const b = Number(document.getElementById('bInput').value || 1.05);
-      const c = Number(document.getElementById('cInput').value || 2.5);
-      const d = Number(document.getElementById('dInput').value || 0.38);
-
-      const effortPM = kloc > 0 ? a * Math.pow(kloc, b) : 0;
-      const scheduleMonths = effortPM > 0 ? c * Math.pow(effortPM, d) : 0;
+    function computeSingleCocomo(lines, constants) {
+      const kloc = lines / 1000;
+      const effortPM = kloc > 0 ? constants.a * Math.pow(kloc, constants.b) : 0;
+      const scheduleMonths = effortPM > 0 ? constants.c * Math.pow(effortPM, constants.d) : 0;
       const personYears = effortPM / 12;
-      const annualLoaded = salary * overhead;
+      const annualLoaded = constants.salary * constants.overhead;
       const cost = personYears * annualLoaded;
-
       return { effortPM, scheduleMonths, personYears, cost };
+    }
+
+    function renderYearBreakdown(yearRows) {
+      yearCostBody.innerHTML = '';
+      if (!yearRows.length) {
+        yearCostBody.innerHTML = '<tr><td colspan="4" class="text-body-secondary">No per-year data available.</td></tr>';
+        return;
+      }
+      for (const row of yearRows) {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${row.year}</td><td class="text-end">${row.files.toLocaleString()}</td><td class="text-end">${row.lines.toLocaleString()}</td><td class="text-end">$${Math.round(row.cost).toLocaleString()}</td>`;
+        yearCostBody.appendChild(tr);
+      }
+    }
+
+    function computeCocomo(summary) {
+      const mode = cocomoModeInput.value;
+
+      if (mode === COCOMO_MODE.ORIGINAL) {
+        const constants = {
+          salary: Number(document.getElementById('salaryInput').value || 56286),
+          overhead: Number(document.getElementById('overheadInput').value || 2.4),
+          a: Number(document.getElementById('aInput').value || 2.4),
+          b: Number(document.getElementById('bInput').value || 1.05),
+          c: Number(document.getElementById('cInput').value || 2.5),
+          d: Number(document.getElementById('dInput').value || 0.38)
+        };
+        const value = computeSingleCocomo(summary.totalLines, constants);
+        renderYearBreakdown([]);
+        return { ...value, mode, unknownYearFiles: 0 };
+      }
+
+      const forceYear = normalizeYear(forceYearInput.value) || DEFAULT_COST_YEAR;
+      const files = summary.fileStats || [];
+      const yearMap = {};
+      let totalEffortPM = 0;
+      let totalScheduleMonths = 0;
+      let totalPersonYears = 0;
+      let totalCost = 0;
+      let unknownYearFiles = 0;
+
+      for (const file of files) {
+        if (!file.lines) continue;
+        let year = null;
+        if (mode === COCOMO_MODE.FORCE_YEAR) {
+          year = forceYear;
+        } else {
+          year = normalizeYear(file.createdYear);
+          if (!year) {
+            year = DEFAULT_COST_YEAR;
+            unknownYearFiles += 1;
+          }
+        }
+
+        const constants = cocomoConstantsForYear(year);
+        const value = computeSingleCocomo(file.lines, constants);
+
+        if (!yearMap[year]) {
+          yearMap[year] = { year, files: 0, lines: 0, cost: 0 };
+        }
+        yearMap[year].files += 1;
+        yearMap[year].lines += file.lines;
+        yearMap[year].cost += value.cost;
+
+        totalEffortPM += value.effortPM;
+        totalScheduleMonths += value.scheduleMonths;
+        totalPersonYears += value.personYears;
+        totalCost += value.cost;
+      }
+
+      const yearRows = Object.values(yearMap).sort((a, b) => a.year - b.year);
+      renderYearBreakdown(yearRows);
+
+      return {
+        effortPM: totalEffortPM,
+        scheduleMonths: totalScheduleMonths,
+        personYears: totalPersonYears,
+        cost: totalCost,
+        mode,
+        unknownYearFiles
+      };
     }
 
     function renderResults(summary, sourceLabel) {
       lastSummary = summary;
-      const cocomo = computeCocomo(summary.totalLines);
+      const cocomo = computeCocomo(summary);
 
       document.getElementById('totalLines').textContent = summary.totalLines.toLocaleString();
       document.getElementById('totalLanguages').textContent = summary.totalLanguages.toLocaleString();
@@ -569,6 +956,11 @@
       document.getElementById('personYears').textContent = cocomo.personYears.toFixed(2);
       document.getElementById('estCost').textContent = `$${Math.round(cocomo.cost).toLocaleString()}`;
       document.getElementById('analyzedSource').textContent = sourceLabel;
+      renderUnmappedTypes(summary.unmappedTypes || []);
+
+      if (cocomo.mode === COCOMO_MODE.BY_FILE_YEAR && cocomo.unknownYearFiles > 0) {
+        setStatus(`Analysis complete. ${cocomo.unknownYearFiles} file(s) had unknown created year and defaulted to ${DEFAULT_COST_YEAR}.`, 'warning');
+      }
 
       languageBody.innerHTML = '';
       for (const row of summary.languages) {
@@ -581,6 +973,19 @@
       resultsEl.classList.remove('d-none');
     }
 
+    function announceAnalysisCompletion(summary, suffix = '') {
+      if (!summary) return;
+      const mode = cocomoModeInput.value;
+      if (mode === COCOMO_MODE.BY_FILE_YEAR) {
+        const unknownCount = (summary.fileStats || []).filter((file) => !normalizeYear(file.createdYear)).length;
+        if (unknownCount > 0) {
+          setStatus(`Analysis complete${suffix}. ${unknownCount} file(s) had unknown created year and defaulted to ${DEFAULT_COST_YEAR}.`, 'warning');
+          return;
+        }
+      }
+      setStatus(`Analysis complete${suffix}.`, 'success');
+    }
+
     async function analyzePaste() {
       const filename = document.getElementById('pasteFilename').value.trim();
       const code = document.getElementById('pasteCode').value;
@@ -588,18 +993,26 @@
       if (!code.trim()) { setStatus('Code is required for paste mode.', 'danger'); return; }
       if (!isSupportedSourceFile(filename)) {
         setStatus('Unsupported filename extension for SLOCCount analysis.', 'warning');
+        renderUnmappedTypes([{ type: describeUnmappedType(filename), count: 1, sample: filename }]);
         return;
       }
 
       setStatus('Analyzing pasted code with WebAssembly SLOCCount...', 'info');
-      const summary = await runSloccount([{ filename, content: code }]);
+      const inferredYear = inferYearFromPath(filename);
+      const summary = await runSloccount([{
+        filename,
+        content: code,
+        createdYear: inferredYear,
+        createdYearSource: inferredYear ? 'filename' : 'unknown'
+      }]);
+      summary.unmappedTypes = [];
       if (summary.totalFiles === 0) {
         setStatus('No recognized code files from pasted input.', 'warning');
         return;
       }
-      currentFiles = [{ filename, content: code }];
+      currentFiles = [{ filename, content: code, createdYear: inferredYear }];
       renderResults(summary, 'Paste Code');
-      setStatus('Analysis complete.', 'success');
+      announceAnalysisCompletion(summary);
     }
 
     async function analyzeGithub() {
@@ -631,23 +1044,35 @@
 
       const paths = (treeJson.tree || [])
         .filter((n) => n.type === 'blob')
-        .map((n) => n.path)
-        .filter((p) => isSupportedSourceFile(p));
+        .map((n) => n.path);
 
-      if (paths.length === 0) { setStatus('No recognized code files found in repository.', 'warning'); return; }
+      const unmappedTypes = collectUnmappedTypes(paths);
+      const analyzablePaths = paths.filter((p) => isSupportedSourceFile(p));
+
+      if (analyzablePaths.length === 0) {
+        renderUnmappedTypes(unmappedTypes);
+        setStatus('No recognized code files found in repository.', 'warning');
+        return;
+      }
 
       const files = [];
       const batchSize = 8;
-      for (let i = 0; i < paths.length; i += batchSize) {
-        const batch = paths.slice(i, i + batchSize);
-        setStatus(`Downloading files ${i + 1}-${Math.min(i + batch.length, paths.length)} of ${paths.length}...`, 'info');
+      for (let i = 0; i < analyzablePaths.length; i += batchSize) {
+        const batch = analyzablePaths.slice(i, i + batchSize);
+        setStatus(`Downloading files ${i + 1}-${Math.min(i + batch.length, analyzablePaths.length)} of ${analyzablePaths.length}...`, 'info');
         const chunks = await Promise.all(batch.map(async (path) => {
           const rawUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${ref}/${path}`;
           try {
             const r = await fetch(rawUrl);
             if (!r.ok) return null;
             const content = await r.text();
-            return { filename: path, content };
+            const inferredYear = inferYearFromPath(path);
+            return {
+              filename: path,
+              content,
+              createdYear: inferredYear,
+              createdYearSource: inferredYear ? 'filename' : 'unknown'
+            };
           } catch {
             return null;
           }
@@ -659,9 +1084,10 @@
 
       setStatus(`Running WebAssembly SLOCCount on ${files.length} files...`, 'info');
       const summary = await runSloccount(files);
+      summary.unmappedTypes = unmappedTypes;
       currentFiles = files;
       renderResults(summary, `GitHub: ${owner}/${repo}@${ref}`);
-      setStatus(`Analysis complete. Processed ${summary.totalFiles} files.`, 'success');
+      announceAnalysisCompletion(summary, `. Processed ${summary.totalFiles} files`);
     }
 
     async function analyzeZip() {
@@ -681,8 +1107,14 @@
 
       setStatus('Reading ZIP archive...', 'info');
       const zip = await JSZip.loadAsync(file);
-      const entries = Object.values(zip.files).filter((z) => !z.dir && isSupportedSourceFile(z.name));
-      if (entries.length === 0) { setStatus('No recognized code files found in ZIP.', 'warning'); return; }
+      const allEntries = Object.values(zip.files).filter((z) => !z.dir);
+      const unmappedTypes = collectUnmappedTypes(allEntries.map((z) => z.name));
+      const entries = allEntries.filter((z) => isSupportedSourceFile(z.name));
+      if (entries.length === 0) {
+        renderUnmappedTypes(unmappedTypes);
+        setStatus('No recognized code files found in ZIP.', 'warning');
+        return;
+      }
 
       const files = [];
       let processed = 0;
@@ -691,7 +1123,14 @@
         setStatus(`Extracting ${processed}/${entries.length}: ${entry.name}`, 'info');
         try {
           const content = await entry.async('string');
-          files.push({ filename: entry.name, content });
+          const zipYear = entry.date instanceof Date ? normalizeYear(entry.date.getUTCFullYear()) : null;
+          const inferredYear = zipYear || inferYearFromPath(entry.name);
+          files.push({
+            filename: entry.name,
+            content,
+            createdYear: inferredYear,
+            createdYearSource: zipYear ? 'zip-entry-date' : (inferredYear ? 'filename' : 'unknown')
+          });
         } catch {
           // Skip unreadable files
         }
@@ -700,9 +1139,10 @@
       if (!files.length) { setStatus('ZIP parsed, but no readable source files were extracted.', 'danger'); return; }
       setStatus(`Running WebAssembly SLOCCount on ${files.length} files...`, 'info');
       const summary = await runSloccount(files);
+      summary.unmappedTypes = unmappedTypes;
       currentFiles = files;
       renderResults(summary, `ZIP: ${file.name}`);
-      setStatus(`Analysis complete. Processed ${summary.totalFiles} files from ZIP.`, 'success');
+      announceAnalysisCompletion(summary, `. Processed ${summary.totalFiles} files from ZIP`);
     }
 
     document.getElementById('analyzePasteBtn').addEventListener('click', () => analyzePaste().catch((e) => setStatus(`Paste analysis failed: ${e.message}`, 'danger')));
@@ -714,8 +1154,25 @@
         setStatus('Run an analysis first, then recalculate.', 'warning');
         return;
       }
+      if (!lastSummary.unmappedTypes) {
+        lastSummary.unmappedTypes = lastUnmappedTypes;
+      }
       renderResults(lastSummary, document.getElementById('analyzedSource').textContent || 'Analysis');
       setStatus('Cost model recalculated.', 'success');
+    });
+
+    cocomoModeInput.addEventListener('change', () => {
+      syncCocomoControls();
+      if (lastSummary) {
+        renderResults(lastSummary, document.getElementById('analyzedSource').textContent || 'Analysis');
+      }
+    });
+
+    forceYearInput.addEventListener('change', () => {
+      syncCocomoControls();
+      if (cocomoModeInput.value === COCOMO_MODE.FORCE_YEAR && lastSummary) {
+        renderResults(lastSummary, document.getElementById('analyzedSource').textContent || 'Analysis');
+      }
     });
 
     document.getElementById('githubRepo').addEventListener('keypress', (event) => {
@@ -724,6 +1181,10 @@
         if (!analyzeGithubBtn.disabled) analyzeGithub().catch((e) => setStatus(`GitHub analysis failed: ${e.message}`, 'danger'));
       }
     });
+
+    populateYearSelect();
+    cocomoModeInput.value = COCOMO_MODE.BY_FILE_YEAR;
+    syncCocomoControls();
 
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', initializeWebAssemblyEngine, { once: true });
