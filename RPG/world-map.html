@@ -1,8 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fractal World Generator v1.0.2</title>
+    <script>
+      (function loadStylesheets() {
+        const isFileProtocol = window.location.protocol === 'file:';
+        document.documentElement.setAttribute('data-file-protocol', String(isFileProtocol));
+
+        const stylesheets = isFileProtocol
+          ? [
+              'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
+              'https://tedt.org/css/consolidated-fonts.css'
+            ]
+          : ['../css/bootstrap-build.css', '../css/consolidated-fonts.css'];
+
+        for (const href of stylesheets) {
+          const link = document.createElement('link');
+          link.rel = 'stylesheet';
+          link.href = href;
+          document.head.appendChild(link);
+        }
+      })();
+    </script>
     <script type="text/javascript">
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 // this is a completely self-contained random world generator,
@@ -333,108 +354,311 @@
   };
     </script>
     <style>
-        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-        /* structure */
+      :root {
+        --map-card-bg: rgba(var(--bs-dark-rgb), 0.72);
+        --map-card-border: rgba(var(--bs-secondary-rgb), 0.35);
+        --map-panel-bg: rgba(var(--bs-body-bg-rgb), 0.78);
+        --map-soft-text: var(--bs-secondary-color);
+        --map-accent-shadow: 0 14px 42px rgba(0, 0, 0, 0.35);
+      }
 
-        body { margin: 0px; padding: 0px;
-            font-family: 'Asul', sans-serif; font-size: 14px; 
+      body {
+        margin: 0;
+        min-height: 100vh;
+        padding: 24px 0 36px;
+        font-family: var(--bs-body-font-family);
+        color: var(--bs-body-color);
+        background: radial-gradient(120% 120% at 50% 0%, rgba(var(--bs-primary-rgb), 0.12) 0%, rgba(var(--bs-body-bg-rgb), 1) 55%);
+      }
+
+      h1 {
+        margin: 0 0 14px;
+        text-align: center;
+        font-size: clamp(1.4rem, 2vw, 1.9rem);
+        line-height: 1.2;
+        font-weight: 750;
+        letter-spacing: 0.01em;
+      }
+
+      h2 {
+        margin: 32px auto 10px;
+        width: min(1240px, calc(100vw - 48px));
+        text-align: left;
+        font-size: clamp(1.08rem, 1.5vw, 1.35rem);
+        font-weight: 700;
+      }
+
+      h3 {
+        margin: 26px auto 10px;
+        width: min(1240px, calc(100vw - 48px));
+        text-align: left;
+        font-size: clamp(0.98rem, 1.25vw, 1.12rem);
+        font-weight: 680;
+        color: var(--bs-body-color);
+      }
+
+      form {
+        margin: 0 auto 20px;
+        padding: 14px;
+        width: min(1240px, calc(100vw - 48px));
+        border-radius: 16px;
+        background: var(--map-card-bg);
+        border: 1px solid var(--map-card-border);
+        box-shadow: var(--map-accent-shadow);
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+      }
+
+      table {
+        margin: 0;
+        width: 100%;
+        border: none;
+        border-collapse: separate;
+        border-spacing: 0;
+      }
+
+      td {
+        padding: 8px 10px;
+        text-align: left;
+        vertical-align: middle;
+      }
+
+      td.key {
+        text-align: right;
+        font-weight: 650;
+        font-size: 12px;
+        color: var(--map-soft-text);
+        width: 180px;
+        white-space: nowrap;
+      }
+
+      input,
+      select,
+      button {
+        font-family: var(--bs-body-font-family);
+        font-size: 13px;
+        line-height: 1.25;
+      }
+
+      input:not([type="checkbox"]):not([type="range"]):not([type="button"]),
+      select {
+        min-width: 10em;
+        margin-right: 0.5em;
+        padding: 0.42rem 0.58rem;
+        border-radius: 10px;
+        border: 1px solid rgba(var(--bs-secondary-rgb), 0.55);
+        background: rgba(var(--bs-body-bg-rgb), 0.9);
+        color: var(--bs-body-color);
+      }
+
+      input[type="button"],
+      button {
+        appearance: none;
+        border: 1px solid rgba(var(--bs-secondary-rgb), 0.55);
+        border-radius: 10px;
+        background: rgba(var(--bs-body-bg-rgb), 0.88);
+        color: var(--bs-body-color);
+        font-weight: 640;
+        padding: 0.48rem 0.78rem;
+        cursor: pointer;
+      }
+
+      input[type="button"]:hover,
+      button:hover {
+        border-color: rgba(var(--bs-primary-rgb), 0.7);
+        background: rgba(var(--bs-body-bg-rgb), 1);
+      }
+
+      input[type="button"]:disabled,
+      button:disabled {
+        opacity: 0.58;
+        cursor: not-allowed;
+      }
+
+      input[type="checkbox"] {
+        transform: scale(1.06);
+        margin-right: 6px;
+      }
+
+      input[type="range"] {
+        accent-color: rgba(var(--bs-primary-rgb), 1);
+      }
+
+      input:focus-visible,
+      select:focus-visible,
+      button:focus-visible {
+        outline: 2px solid rgba(var(--bs-primary-rgb), 0.75);
+        outline-offset: 1px;
+      }
+
+      canvas {
+        margin: 0 auto 18px;
+        display: block;
+        width: min(1240px, calc(100vw - 48px));
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        border: 1px solid rgba(var(--bs-secondary-rgb), 0.5);
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.28);
+      }
+
+      .webgl-canvas {
+        background: #1a3a5c;
+      }
+
+      .center {
+        text-align: center;
+      }
+
+      table.center {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .slider-container {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .slider {
+        flex: 1;
+        margin-right: 0;
+      }
+
+      .slider-value {
+        min-width: 60px;
+        text-align: right;
+        font-variant-numeric: tabular-nums;
+        color: var(--map-soft-text);
+        font-size: 12px;
+        font-weight: 640;
+      }
+
+      .actions-bar {
+        background: rgba(var(--bs-secondary-rgb), 0.2);
+        border-radius: 12px;
+      }
+
+      .ecosystem-actions {
+        margin: 10px auto 20px;
+        text-align: center;
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: min(1240px, calc(100vw - 48px));
+      }
+
+      .ecosystem-btn {
+        padding: 10px 18px;
+        border: 1px solid rgba(var(--bs-success-rgb), 0.7);
+        border-radius: 10px;
+        color: #fff;
+        background: linear-gradient(135deg, rgba(var(--bs-success-rgb), 0.92), rgba(var(--bs-success-rgb), 0.72));
+      }
+
+      .ecosystem-btn:hover {
+        border-color: rgba(var(--bs-success-rgb), 0.95);
+        background: linear-gradient(135deg, rgba(var(--bs-success-rgb), 1), rgba(var(--bs-success-rgb), 0.8));
+        color: #fff;
+      }
+
+      #ecosystem-status,
+      #simulation-status,
+      #webgl-controls,
+      .webgl-multi-controls {
+        margin: 12px auto 20px !important;
+        width: min(1240px, calc(100vw - 48px));
+        max-width: min(1240px, calc(100vw - 48px)) !important;
+        padding: 12px 14px !important;
+        border-radius: 12px !important;
+        background: var(--map-panel-bg) !important;
+        border: 1px solid var(--map-card-border);
+        color: var(--bs-body-color) !important;
+      }
+
+      #ecosystem_readout,
+      #sim_time_readout {
+        color: var(--bs-body-color) !important;
+      }
+
+      #ecosystem_stats,
+      #sim_progress_readout {
+        color: var(--map-soft-text) !important;
+      }
+
+      #webgl-controls label,
+      .webgl-multi-controls label {
+        color: var(--bs-body-color);
+      }
+
+      p[style*="color: #666"],
+      p[style*="color:#666"] {
+        color: var(--map-soft-text) !important;
+      }
+
+      #cell_info {
+        position: fixed;
+        z-index: 1000;
+        white-space: pre;
+        padding: 8px 10px;
+        border-radius: 8px;
+        background: rgba(0,0,0,0.88);
+        color: rgba(255,255,255,0.96);
+        font-size: 12px;
+        line-height: 1.35;
+        font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+        pointer-events: none;
+        display: none;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      }
+
+      #cell_info.visible {
+        display: block;
+      }
+
+      @media screen {
+        h1.title { display: none; }
+        form { display: block; }
+      }
+
+      @media print {
+        h1.title { display: block; }
+        form, .control { display: none; }
+      }
+
+      @media (max-width: 900px) {
+        body {
+          padding-top: 14px;
         }
 
-        /* Cell info tooltip (Islands-style) */
-        #cell_info {
-            position: fixed;
-            z-index: 1000;
-            white-space: pre;
-            padding: 8px 10px;
-            border-radius: 8px;
-            background: rgba(0,0,0,0.85);
-            color: rgba(255,255,255,0.96);
-            font-size: 12px;
-            line-height: 1.35;
-            font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-            pointer-events: none;
-            display: none;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-        }
-        
-        #cell_info.visible {
-            display: block;
+        form,
+        h2,
+        h3,
+        canvas,
+        #ecosystem-status,
+        #simulation-status,
+        #webgl-controls,
+        .webgl-multi-controls,
+        .ecosystem-actions {
+          width: calc(100vw - 24px) !important;
         }
 
-        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-        /* common */
-
-        h1 { 
-            text-align: center; font-size: 150%; font-weight: bold; 
-        }
-
-        form { 
-            margin: 2ex 2em; padding: 0px; 
-        }
-        input { margin-right: 0.5em; padding: 0.5ex 0.5em;
-            font-family: Monaco, monospace; font-size: 11px; 
-        }
-        select {
-             min-width: 10em; margin-right: 0.5em; font-size: 11px; 
-        }
-
-        table {
-            margin: 0px 2em; border: none; border-collapse: collapse; 
-        }
-        td {
-            padding: 0.5ex 0.5em; text-align: left; vertical-align: top; 
-        }
+        td,
         td.key {
-            text-align: right; font-weight: bold; 
+          display: block;
+          width: auto;
+          text-align: left;
+          padding-left: 8px;
+          padding-right: 8px;
         }
 
-        canvas {
-            margin: 2ex auto; 
+        td.key {
+          padding-bottom: 0;
+          margin-top: 8px;
         }
-
-        .center {
-            text-align: center; 
-        }
-
-        table.center {
-            margin-left: auto; margin-right: auto;
-        }
-
-        /* Slider styles */
-        .slider-container {
-            display: flex;
-            align-items: center;
-        }
-        
-        .slider {
-            flex-grow: 1;
-            margin-right: 10px;
-        }
-        
-        .slider-value {
-            width: 30px;
-            text-align: center;
-        }
-
-        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-        /* screen */
-
-        @media screen {
-            h1.title { display: none; }
-            form { display: block; }
-        }
-
-        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-        /* print */
-
-        @media print {
-            h1.title { display: block; }
-            form, .control { display: none; }
-        }
-
-        /* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
-
-
+      }
     </style>
   </head>
   <body>
@@ -443,33 +667,33 @@
       <table id="form" class="center">
         <tr>
           <td class="key">Random Seed:</td>
-          <td colspan="5" class="value"><input id="seed" size="20" /> &nbsp; <input type="button" id="new_seed" value="New" /> </td>
+          <td colspan="5" class="value"><input id="seed" size="20" title="Random seed" /> &nbsp; <input type="button" id="new_seed" value="New" title="Generate a new random seed" /> </td>
         </tr>
         <tr>
           <td class="key">Projection:</td>
-          <td class="value"><select id="projection"></select></td>
+          <td class="value"><select id="projection" title="Map projection"></select></td>
           <td class="key">Palette:</td>
-          <td class="value"><select id="palette"></select></td>
+          <td class="value"><select id="palette" title="Color palette"></select></td>
         </tr>
         <tr>
           <td class="key">% Water:</td>
-          <td class="value"><input id="pct_water" size="5" /></td>
+          <td class="value"><input id="pct_water" size="5" title="Percent water coverage" /></td>
           <td class="key">% Ice:</td>
-          <td class="value"><input id="pct_ice" size="5" /></td>
+          <td class="value"><input id="pct_ice" size="5" title="Percent ice coverage" /></td>
         </tr>
         <tr>
           <td class="key">Height:</td>
-          <td class="value"><input id="height" size="5" /></td>
+          <td class="value"><input id="height" size="5" title="Map height" /></td>
           <td class="key">Iterations:</td>
-          <td class="value"><input id="iter" size="5" /></td>
+          <td class="value"><input id="iter" size="5" title="Generation iterations" /></td>
           <td class="key">Rotate:</td>
-          <td class="value"><input id="rotate" size="5" /></td>
+          <td class="value"><input id="rotate" size="5" title="Rotation" /></td>
         </tr>
         <tr>
           <td class="key">Terrain Variation:</td>
           <td colspan="5" class="value">
             <div class="slider-container">
-              <input type="range" id="terrain_variation" min="0" max="100" step="1" class="slider" value="75" />
+              <input type="range" id="terrain_variation" min="0" max="100" step="1" class="slider" value="75" title="Terrain variation" />
               <span id="terrain_variation_value" class="slider-value">75%</span>
             </div>
           </td>
@@ -477,43 +701,43 @@
         <tr>
           <td class="key">Algorithm:</td>
           <td class="value">
-            <select id="algorithm">
+            <select id="algorithm" title="Generation algorithm">
               <option value="voss">Basic Voss</option>
               <option value="voss_x3">Voss x3</option>
               <option value="voss_a7" selected>Voss a7</option>
             </select>
           </td>
           <td class="key">Apply Erosion:</td>
-          <td class="value"><input type="checkbox" id="erode" checked /></td>
+          <td class="value"><input type="checkbox" id="erode" checked title="Apply erosion" /></td>
         </tr>
         <tr>
           <td class="key">Simulate Ocean Currents:</td>
-          <td class="value"><input type="checkbox" id="ocean_currents" checked /></td>
+          <td class="value"><input type="checkbox" id="ocean_currents" checked title="Simulate ocean currents" /></td>
           <td class="key">Enable Theta Hack:</td>
-          <td class="value"><input type="checkbox" id="enable_hack_theta" checked /></td>
+          <td class="value"><input type="checkbox" id="enable_hack_theta" checked title="Enable theta hack" /></td>
         </tr>
         <tr>
           <td class="key">Time Simulation:</td>
-          <td class="value"><input type="checkbox" id="enable_time_simulation" checked /></td>
+          <td class="value"><input type="checkbox" id="enable_time_simulation" checked title="Enable time simulation" /></td>
           <td class="key">Time (Million Years):</td>
           <td class="value">
             <div class="slider-container">
-              <input type="range" id="time_passage" min="0" max="50" step="0.5" class="slider" value="1.5" />
+              <input type="range" id="time_passage" min="0" max="50" step="0.5" class="slider" value="1.5" title="Time passage in million years" />
               <span id="time_passage_value" class="slider-value">1.5 MY</span>
             </div>
           </td>
         </tr>
         <tr>
           <td class="key">Show Rivers:</td>
-          <td class="value"><input type="checkbox" id="show_rivers" checked /></td>
+          <td class="value"><input type="checkbox" id="show_rivers" checked title="Show rivers" /></td>
           <td class="key">Show Coastlines:</td>
-          <td class="value"><input type="checkbox" id="show_coastlines" checked /></td>
+          <td class="value"><input type="checkbox" id="show_coastlines" checked title="Show coastlines" /></td>
         </tr>
         <tr>
           <td class="key">Horizontal Factor:</td>
           <td colspan="5" class="value">
             <div class="slider-container">
-              <input type="range" id="horizontal_factor" min="0" max="100" step="1" class="slider" value="50" />
+              <input type="range" id="horizontal_factor" min="0" max="100" step="1" class="slider" value="50" title="Horizontal distortion factor" />
               <span id="horizontal_factor_value" class="slider-value">0.50</span>
             </div>
           </td>
@@ -522,7 +746,7 @@
           <td class="key">Vertical Factor:</td>
           <td colspan="5" class="value">
             <div class="slider-container">
-              <input type="range" id="vertical_factor" min="0" max="100" step="1" class="slider" value="20" />
+              <input type="range" id="vertical_factor" min="0" max="100" step="1" class="slider" value="20" title="Vertical distortion factor" />
               <span id="vertical_factor_value" class="slider-value">0.20</span>
             </div>
           </td>
@@ -531,7 +755,7 @@
           <td colspan="6"></td>
         </tr>
         <tr>
-          <td colspan="6" class="center" style="background: #dedede;">
+          <td colspan="6" class="center actions-bar">
             <input id="save_map" type="button" value="Save as PNG" />
             &nbsp; <input id="print_map" type="button" value="Print" />
           </td>
@@ -541,23 +765,23 @@
     <div class="center">
       <!-- Ecosystem Simulation Controls (moved to top; applies to all maps) -->
       <div id="ecosystem-simulation-controls">
-        <div style="margin: 10px auto 20px; text-align: center; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
-          <button id="btn_init_ecosystem" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #2a7d4f; color: white; border: none; border-radius: 6px;">
+        <div class="ecosystem-actions">
+          <button id="btn_init_ecosystem" class="ecosystem-btn" type="button">
             Start Dynamic Simulation
           </button>
-          <button id="btn_step_ecosystem_1" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #3a8d5f; color: white; border: none; border-radius: 6px;" disabled>
+          <button id="btn_step_ecosystem_1" class="ecosystem-btn" type="button" disabled>
             Step +1 Year
           </button>
-          <button id="btn_step_ecosystem_10" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #4a9d6f; color: white; border: none; border-radius: 6px;" disabled>
+          <button id="btn_step_ecosystem_10" class="ecosystem-btn" type="button" disabled>
             Step +10 Years
           </button>
-          <button id="btn_step_ecosystem_100" type="button" style="padding: 10px 20px; font-size: 14px; cursor: pointer; background: #5aad7f; color: white; border: none; border-radius: 6px;" disabled>
+          <button id="btn_step_ecosystem_100" class="ecosystem-btn" type="button" disabled>
             Step +100 Years
           </button>
         </div>
-        <div id="ecosystem-status" style="margin: 10px auto 20px; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif; max-width: 800px;">
-          <output id="ecosystem_readout" style="font-weight: 600; color: #333;">Showing initial conditions from climate data</output>
-          <div id="ecosystem_stats" style="margin-top: 8px; font-size: 13px; color: #666; display: none;"></div>
+        <div id="ecosystem-status">
+          <output id="ecosystem_readout" style="font-weight: 600;">Showing initial conditions from climate data</output>
+          <div id="ecosystem_stats" style="margin-top: 8px; font-size: 13px; display: none;"></div>
         </div>
       </div>
 
@@ -775,9 +999,9 @@
         </canvas>
       </div>
 
-      <div id="simulation-status" style="margin: 20px 0; padding: 12px 16px; background: rgba(0,0,0,0.04); border-radius: 8px; font-family: system-ui, -apple-system, sans-serif;">
-        <output id="sim_time_readout" style="font-weight: 600; color: #333;">Simulation: Ready</output>
-        <span id="sim_progress_readout" style="margin-left: 12px; color: #666;"></span>
+      <div id="simulation-status">
+        <output id="sim_time_readout" style="font-weight: 600;">Simulation: Ready</output>
+        <span id="sim_progress_readout" style="margin-left: 12px;"></span>
       </div>
 
       <h2>River Map</h2>
@@ -819,10 +1043,10 @@
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated terrain rendering with elevation-based coloring, hillshade, and water effects.
       </p>
-      <canvas id="islands-webgl-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+      <canvas id="islands-webgl-map" class="webgl-canvas" width="1" height="1">
         <p>Your web browser does not appear to support WebGL.</p>
       </canvas>
-      <div id="webgl-controls" style="margin: 10px auto; max-width: 600px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+      <div id="webgl-controls" style="text-align: center;">
         <label style="margin-right: 20px;">
           <input type="checkbox" id="webgl_show_coastlines" checked /> Show Coastlines
         </label>
@@ -841,7 +1065,7 @@
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated temperature visualization with hillshade. Blue (cold) to Red (hot).
       </p>
-      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+      <div class="webgl-multi-controls" style="text-align: center;">
         <label style="margin-right: 15px;">
           Projection: 
           <select id="webgl_temp_projection" style="padding: 2px 6px;">
@@ -861,7 +1085,7 @@
           <input type="checkbox" id="webgl_temp_rivers" /> Rivers
         </label>
       </div>
-      <canvas id="webgl-temperature-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+      <canvas id="webgl-temperature-map" class="webgl-canvas" width="1" height="1">
         <p>Your web browser does not appear to support WebGL.</p>
       </canvas>
 
@@ -869,7 +1093,7 @@
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated rainfall visualization. Tan (dry) to Blue (wet), measured in mm/year.
       </p>
-      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+      <div class="webgl-multi-controls" style="text-align: center;">
         <label style="margin-right: 15px;">
           Projection: 
           <select id="webgl_rain_projection" style="padding: 2px 6px;">
@@ -889,7 +1113,7 @@
           <input type="checkbox" id="webgl_rain_rivers" checked /> Rivers
         </label>
       </div>
-      <canvas id="webgl-rainfall-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+      <canvas id="webgl-rainfall-map" class="webgl-canvas" width="1" height="1">
         <p>Your web browser does not appear to support WebGL.</p>
       </canvas>
 
@@ -897,7 +1121,7 @@
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated evaporation visualization. Low (blue) to High (red), measured in mm/year equivalent.
       </p>
-      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+      <div class="webgl-multi-controls" style="text-align: center;">
         <label style="margin-right: 15px;">
           Projection: 
           <select id="webgl_evap_projection" style="padding: 2px 6px;">
@@ -917,7 +1141,7 @@
           <input type="checkbox" id="webgl_evap_rivers" /> Rivers
         </label>
       </div>
-      <canvas id="webgl-evaporation-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+      <canvas id="webgl-evaporation-map" class="webgl-canvas" width="1" height="1">
         <p>Your web browser does not appear to support WebGL.</p>
       </canvas>
 
@@ -925,7 +1149,7 @@
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated snow accumulation. Brown (no snow) to White (permanent snow), in mm/year.
       </p>
-      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+      <div class="webgl-multi-controls" style="text-align: center;">
         <label style="margin-right: 15px;">
           Projection: 
           <select id="webgl_snow_projection" style="padding: 2px 6px;">
@@ -945,7 +1169,7 @@
           <input type="checkbox" id="webgl_snow_rivers" /> Rivers
         </label>
       </div>
-      <canvas id="webgl-snowfall-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+      <canvas id="webgl-snowfall-map" class="webgl-canvas" width="1" height="1">
         <p>Your web browser does not appear to support WebGL.</p>
       </canvas>
 
@@ -953,7 +1177,7 @@
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated Whittaker biome classification with optional hillshade overlay.
       </p>
-      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+      <div class="webgl-multi-controls" style="text-align: center;">
         <label style="margin-right: 15px;">
           Projection: 
           <select id="webgl_biome_projection" style="padding: 2px 6px;">
@@ -973,7 +1197,7 @@
           <input type="checkbox" id="webgl_biome_rivers" checked /> Rivers
         </label>
       </div>
-      <canvas id="webgl-biome-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+      <canvas id="webgl-biome-map" class="webgl-canvas" width="1" height="1">
         <p>Your web browser does not appear to support WebGL.</p>
       </canvas>
 
@@ -981,7 +1205,7 @@
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated Holdridge Life Zone classification based on biotemperature and PET ratio.
       </p>
-      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+      <div class="webgl-multi-controls" style="text-align: center;">
         <label style="margin-right: 15px;">
           Projection: 
           <select id="webgl_holdridge_projection" style="padding: 2px 6px;">
@@ -1001,7 +1225,7 @@
           <input type="checkbox" id="webgl_holdridge_rivers" checked /> Rivers
         </label>
       </div>
-      <canvas id="webgl-holdridge-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+      <canvas id="webgl-holdridge-map" class="webgl-canvas" width="1" height="1">
         <p>Your web browser does not appear to support WebGL.</p>
       </canvas>
 
@@ -1009,7 +1233,7 @@
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated ice classification: Perennial Snow (light), Glaciers (blue), Ice Caps (white).
       </p>
-      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+      <div class="webgl-multi-controls" style="text-align: center;">
         <label style="margin-right: 15px;">
           Projection: 
           <select id="webgl_ice_projection" style="padding: 2px 6px;">
@@ -1029,7 +1253,7 @@
           <input type="checkbox" id="webgl_ice_rivers" /> Rivers
         </label>
       </div>
-      <canvas id="webgl-icecap-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+      <canvas id="webgl-icecap-map" class="webgl-canvas" width="1" height="1">
         <p>Your web browser does not appear to support WebGL.</p>
       </canvas>
 
@@ -1037,7 +1261,7 @@
       <p style="margin: 0 2em 1em; color: #666; font-size: 13px;">
         GPU-accelerated terrain elevation with full ocean depth visualization and hillshade.
       </p>
-      <div class="webgl-multi-controls" style="margin: 0 auto 10px; max-width: 700px; text-align: center; padding: 8px; background: #f5f5f5; border-radius: 6px;">
+      <div class="webgl-multi-controls" style="text-align: center;">
         <label style="margin-right: 15px;">
           Projection: 
           <select id="webgl_elev_projection" style="padding: 2px 6px;">
@@ -1057,7 +1281,7 @@
           <input type="checkbox" id="webgl_elev_rivers" checked /> Rivers
         </label>
       </div>
-      <canvas id="webgl-elevation-map" width="1" height="1" style="border: 1px solid #ccc; background: #1a3a5c;">
+      <canvas id="webgl-elevation-map" class="webgl-canvas" width="1" height="1">
         <p>Your web browser does not appear to support WebGL.</p>
       </canvas>
 
