@@ -356,6 +356,7 @@
     const COCOMO_YEAR_MIN = 2000;
     const COCOMO_YEAR_MAX = 2030;
     const DEFAULT_COST_YEAR = Math.max(COCOMO_YEAR_MIN, Math.min(COCOMO_YEAR_MAX, new Date().getFullYear()));
+    const COUNTER_BATCH_SIZE = 120;
     const DOCUMENT_BASENAMES = new Set([
       'readme',
       'changelog',
@@ -759,77 +760,89 @@
 
       for (const key of Object.keys(filesByCounter)) {
         const group = filesByCounter[key];
-        let parsed = { groupLines: 0, groupFiles: 0 };
+        let parsed = { groupLines: 0, groupFiles: 0, fileResults: [] };
 
         if (group.type === 'perl') {
           const script = window.counterScripts[group.counter];
           if (!script) continue;
 
-          const filePaths = [];
-          const pathMeta = {};
-          for (let i = 0; i < group.files.length; i += 1) {
-            const file = group.files[i];
-            const sanitized = file.filename.replace(/[^a-zA-Z0-9._\/-]/g, '_').split('/').pop();
-            const path = `/tmp/${Date.now()}_${i}_${sanitized}`;
-            window._tempFileContent = file.content;
+          for (let offset = 0; offset < group.files.length; offset += COUNTER_BATCH_SIZE) {
+            const batchFiles = group.files.slice(offset, offset + COUNTER_BATCH_SIZE);
+            const filePaths = [];
+            const pathMeta = {};
+            for (let i = 0; i < batchFiles.length; i += 1) {
+              const file = batchFiles[i];
+              const sanitized = file.filename.replace(/[^a-zA-Z0-9._\/-]/g, '_').split('/').pop();
+              const path = `/tmp/${Date.now()}_${offset + i}_${sanitized}`;
+              window._tempFileContent = file.content;
+              Perl.eval(`
+                use WebPerl qw/js/;
+                my $path = '${path}';
+                my $content = js('window')->{_tempFileContent};
+                open(my $fh, '>', $path) or die "Cannot write $path: $!";
+                print $fh $content;
+                close($fh);
+              `);
+              filePaths.push(path);
+              pathMeta[path] = {
+                filename: file.filename,
+                createdYear: file.createdYear,
+                createdYearSource: file.createdYearSource
+              };
+            }
+            window._tempFileContent = null;
+
+            window.perlCounterOutput = '';
             Perl.eval(`
+              use warnings;
               use WebPerl qw/js/;
-              my $path = '${path}';
-              my $content = js('window')->{_tempFileContent};
-              open(my $fh, '>', $path) or die "Cannot write $path: $!";
-              print $fh $content;
-              close($fh);
+              my $script = js('window')->{counterScripts}{'${group.counter}'};
+              @ARGV = (${filePaths.map((p) => `'${p}'`).join(', ')});
+              my $output = '';
+              open(my $stdout_fh, '>', \\\$output) or die "Cannot redirect: $!";
+              select $stdout_fh;
+              eval $script;
+              if ($@) { $output .= "ERROR: $@"; }
+              select STDOUT;
+              close($stdout_fh);
+              js('window')->{perlCounterOutput} = $output;
             `);
-            filePaths.push(path);
-            pathMeta[path] = {
-              filename: file.filename,
-              createdYear: file.createdYear,
-              createdYearSource: file.createdYearSource
-            };
+
+            const batchParsed = parseCounterOutput(window.perlCounterOutput, pathMeta);
+            parsed.groupLines += batchParsed.groupLines;
+            parsed.groupFiles += batchParsed.groupFiles;
+            parsed.fileResults.push(...batchParsed.fileResults);
           }
-          window._tempFileContent = null;
-
-          window.perlCounterOutput = '';
-          Perl.eval(`
-            use warnings;
-            use WebPerl qw/js/;
-            my $script = js('window')->{counterScripts}{'${group.counter}'};
-            @ARGV = (${filePaths.map((p) => `'${p}'`).join(', ')});
-            my $output = '';
-            open(my $stdout_fh, '>', \\\$output) or die "Cannot redirect: $!";
-            select $stdout_fh;
-            eval $script;
-            if ($@) { $output .= "ERROR: $@"; }
-            select STDOUT;
-            close($stdout_fh);
-            js('window')->{perlCounterOutput} = $output;
-          `);
-
-          parsed = parseCounterOutput(window.perlCounterOutput, pathMeta);
         }
 
         if (group.type === 'wasm') {
           const module = wasmModules[group.counter] || wasmModules.generic_count;
           if (!module) continue;
-          const filePaths = [];
-          const pathMeta = {};
+          for (let offset = 0; offset < group.files.length; offset += COUNTER_BATCH_SIZE) {
+            const batchFiles = group.files.slice(offset, offset + COUNTER_BATCH_SIZE);
+            const filePaths = [];
+            const pathMeta = {};
 
-          for (let i = 0; i < group.files.length; i += 1) {
-            const file = group.files[i];
-            const sanitized = file.filename.replace(/[^a-zA-Z0-9._\/-]/g, '_').split('/').pop();
-            const path = `/tmp/${Date.now()}_${i}_${sanitized}`;
-            module.FS.writeFile(path, file.content);
-            filePaths.push(path);
-            pathMeta[path] = {
-              filename: file.filename,
-              createdYear: file.createdYear,
-              createdYearSource: file.createdYearSource
-            };
+            for (let i = 0; i < batchFiles.length; i += 1) {
+              const file = batchFiles[i];
+              const sanitized = file.filename.replace(/[^a-zA-Z0-9._\/-]/g, '_').split('/').pop();
+              const path = `/tmp/${Date.now()}_${offset + i}_${sanitized}`;
+              module.FS.writeFile(path, file.content);
+              filePaths.push(path);
+              pathMeta[path] = {
+                filename: file.filename,
+                createdYear: file.createdYear,
+                createdYearSource: file.createdYearSource
+              };
+            }
+
+            window.wasmOutput = [];
+            module.callMain(filePaths);
+            const batchParsed = parseCounterOutput(window.wasmOutput.join('\n'), pathMeta);
+            parsed.groupLines += batchParsed.groupLines;
+            parsed.groupFiles += batchParsed.groupFiles;
+            parsed.fileResults.push(...batchParsed.fileResults);
           }
-
-          window.wasmOutput = [];
-          module.callMain(filePaths);
-          parsed = parseCounterOutput(window.wasmOutput.join('\n'), pathMeta);
         }
 
         if (!langStats[group.lang]) {

@@ -3,5 +3,5 @@ Configuration file: /Users/tedtschopp/Developer/tedt.org/_config.yml
        Destination: /Users/tedtschopp/Developer/tedt.org/_site
  Incremental build: disabled. Enable with --incremental
       Generating... 
-                    done in 16.609 seconds.
+                    done in 16.822 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
