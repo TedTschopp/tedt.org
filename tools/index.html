@@ -6,6 +6,12 @@ no_toc: true
 ---
 
 <div class="container my-4 tools-index">
+    <style>
+        .tools-index .muted-note { color: var(--bs-secondary-color); }
+        .tools-index .tool-thumb-wrap { aspect-ratio: 16 / 9; overflow: hidden; background: rgba(var(--bs-body-color-rgb), 0.04); }
+        .tools-index .tool-thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .tools-index .tool-summary { min-height: 4.5rem; }
+    </style>
     <p class="lead">
         A catalog of the tools, experiments, and little software toys I’ve built.
     </p>
@@ -19,11 +25,13 @@ no_toc: true
         <div class="col">
             <div class="card h-100">
                 {% assign thumb = tool.image | default: tool.hero_image %}
-                {% if thumb %}
-                <a href="{{ tool.url | relative_url }}">
-                    <img src="{{ thumb | relative_url }}" class="card-img-top" alt="{{ tool.title }} thumbnail">
+                <a href="{{ tool.url | relative_url }}" class="tool-thumb-wrap card-img-top d-block">
+                    {% if thumb %}
+                    <img src="{{ thumb | relative_url }}" alt="{{ tool.title }} thumbnail">
+                    {% else %}
+                    <div class="h-100 d-flex align-items-center justify-content-center muted-note">No preview image</div>
+                    {% endif %}
                 </a>
-                {% endif %}
 
                 <div class="card-body">
                     <h2 class="h5 card-title mb-2">
@@ -33,19 +41,19 @@ no_toc: true
                     </h2>
 
                     {% if tool.summary %}
-                    <p class="card-text">{{ tool.summary }}</p>
+                    <p class="card-text tool-summary">{{ tool.summary }}</p>
                     {% else %}
-                    <p class="card-text">
+                    <p class="card-text tool-summary">
                         {{ tool.content | strip_html | truncate: 160 }}
                     </p>
                     {% endif %}
 
-                    <div class="d-flex flex-wrap gap-1 mt-2">
+                    <div class="d-flex flex-wrap gap-1 mt-2 align-items-center">
                         {% if tool.status %}
-                        <span class="badge text-bg-secondary">{{ tool.status }}</span>
+                        <span class="badge text-bg-secondary">{{ tool.status | upcase }}</span>
                         {% endif %}
                         {% if tool.tool_type %}
-                        <span class="badge text-bg-light border">{{ tool.tool_type }}</span>
+                        <span class="badge text-bg-light border">{{ tool.tool_type | downcase }}</span>
                         {% endif %}
                     </div>
                 </div>

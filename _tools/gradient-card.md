@@ -19,6 +19,12 @@ links:
   download: null
 image: "/img/bg-showcase-1.webp"
 hero_image: "/img/bg-showcase-1.webp"
+features:
+  - "Interactive linear, radial, and conic gradient generation"
+  - "Two configurable pattern overlays with blend modes"
+  - "Film grain and vignette effects"
+  - "Settings copy/restore through JSON"
+  - "Local PNG export at custom resolution"
 license: "MIT"
 ---
 

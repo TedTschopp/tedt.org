@@ -17,8 +17,8 @@ links:
   repo: null
   docs: null
   download: null
-image: "/img/bg-showcase-1.webp"
-hero_image: "/img/bg-showcase-1.webp"
+image: "/img/2026-02/SLOCCount.png"
+hero_image: "/img/2026-02/SLOCCount.png"
 features:
   - "Paste code analysis with filename-based language detection"
   - "Public GitHub repository scan with progress status"

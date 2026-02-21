@@ -4,293 +4,129 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gradient image generator</title>
-<link rel="stylesheet" href="/css/bootstrap-build.css">
-<link rel="stylesheet" href="/css/consolidated-fonts.css">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<script>
+  (function loadStylesheets() {
+    const isFileProtocol = window.location.protocol === 'file:';
+    document.documentElement.setAttribute('data-file-protocol', String(isFileProtocol));
+
+    const stylesheets = isFileProtocol
+      ? ['https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css']
+      : ['../css/bootstrap-build.css', '../css/consolidated-fonts.css'];
+
+    for (const href of stylesheets) {
+      const link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = href;
+      document.head.appendChild(link);
+    }
+  })();
+</script>
 <style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: var(--bs-body-font-family, Helvetica, Arial, sans-serif);
-  background: #0f1117;
-  color: #e0e4ec;
-  min-height: 100vh;
-}
-
-.app {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 24px;
-}
-
-h1 {
-  font-size: 22px;
-  font-weight: 600;
-  margin: 0 0 20px 0;
-  color: #fff;
-}
-
-.layout {
-  display: flex;
-  gap: 24px;
-  align-items: flex-start;
-}
-
-.preview-wrap {
-  flex: 1;
-  min-width: 0;
-  position: sticky;
-  top: 24px;
-}
-
-.canvas-container {
-  background: #1a1d27;
-  border-radius: 12px;
-  padding: 16px;
-  border: 1px solid #2a2d3a;
-}
+body { background: var(--bs-body-bg); }
+.app-wrap { max-width: 1200px; }
+.muted-note { color: var(--bs-secondary-color); font-size: 0.9rem; }
+.preview-wrap { position: sticky; top: 1rem; }
+.canvas-shell { border: 1px solid var(--bs-border-color); border-radius: 0.5rem; padding: 0.75rem; background: rgba(var(--bs-body-color-rgb), 0.02); }
 
 canvas {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 6px;
+  border-radius: 0.35rem;
 }
 
-.preview-actions {
-  display: flex;
-  gap: 8px;
-  margin-top: 12px;
-}
-
-.preview-actions button {
-  flex: 1;
-}
-
-.controls {
-  width: 340px;
-  flex-shrink: 0;
-  max-height: calc(100vh - 48px);
-  overflow-y: auto;
-  padding-right: 8px;
-}
-
-.controls::-webkit-scrollbar {
-  width: 5px;
-}
-
-.controls::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-.controls::-webkit-scrollbar-thumb {
-  background: #3a3d4a;
-  border-radius: 3px;
-}
-
-.section {
-  background: #1a1d27;
-  border-radius: 10px;
-  padding: 16px;
-  margin-bottom: 12px;
-  border: 1px solid #2a2d3a;
-}
-
-.section-title {
-  font-size: 11px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: #6b7280;
-  margin: 0 0 12px 0;
-}
-
-.field {
-  margin-bottom: 12px;
-}
-
-.field:last-child {
-  margin-bottom: 0;
-}
+.controls { max-height: calc(100vh - 2rem); overflow-y: auto; }
+.section { margin-bottom: 0.75rem; }
+.field { margin-bottom: 0.8rem; }
+.field:last-child { margin-bottom: 0; }
 
 .field-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 4px;
+  margin-bottom: 0.35rem;
 }
 
 .field-row label {
-  font-size: 13px;
-  color: #9ca3af;
+  font-size: 0.86rem;
+  color: var(--bs-secondary-color);
 }
 
 .field-row .value {
-  font-size: 12px;
-  color: #6b7280;
+  font-size: 0.8rem;
+  color: var(--bs-secondary-color);
   font-variant-numeric: tabular-nums;
-}
-
-input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  height: 6px;
-  border-radius: 3px;
-  background: #2a2d3a;
-  outline: none;
-  margin: 4px 0;
-}
-
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  background: #5b8af5;
-  cursor: pointer;
-  border: 2px solid #1a1d27;
-}
-
-input[type="color"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 36px;
-  height: 28px;
-  border: 2px solid #2a2d3a;
-  border-radius: 6px;
-  background: none;
-  cursor: pointer;
-  padding: 1px;
-}
-
-input[type="color"]::-webkit-color-swatch-wrapper {
-  padding: 0;
-}
-
-input[type="color"]::-webkit-color-swatch {
-  border: none;
-  border-radius: 4px;
 }
 
 .color-pair {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
 }
 
 .color-pair label {
-  font-size: 12px;
-  color: #6b7280;
-  width: 16px;
-}
-
-select, input[type="text"], textarea {
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  background: #0f1117;
-  border: 1px solid #2a2d3a;
-  border-radius: 6px;
-  color: #e0e4ec;
-  padding: 6px 10px;
-  width: 100%;
-  outline: none;
-}
-
-select {
-  font-size: 13px;
-  cursor: pointer;
-}
-
-select:focus, input[type="text"]:focus, textarea:focus {
-  border-color: #5b8af5;
-}
-
-textarea {
-  font-size: 16px;
-  font-family: monospace;
-  resize: vertical;
-  min-height: 80px;
-}
-
-.json-section {
-  margin-top: 4px;
+  font-size: 0.8rem;
+  color: var(--bs-secondary-color);
+  width: 1rem;
 }
 
 .json-actions {
   display: flex;
-  gap: 8px;
-  margin-bottom: 8px;
-}
-
-.json-actions button {
-  flex: 1;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .toast {
   position: fixed;
-  bottom: 24px;
+  bottom: 1rem;
   left: 50%;
-  transform: translateX(-50%) translateY(80px);
-  background: #5b8af5;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 8px;
-  font-size: 13px;
+  transform: translateX(-50%) translateY(120%);
+  background: var(--bs-primary);
+  color: var(--bs-light);
+  padding: 0.5rem 0.85rem;
+  border-radius: 0.45rem;
+  font-size: 0.82rem;
   font-weight: 600;
   pointer-events: none;
   opacity: 0;
-  transition: transform 0.3s, opacity 0.3s;
-  z-index: 100;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+  z-index: 1050;
 }
 
 .toast.show {
-  transform: translateX(-50%) translateY(0);
+  transform: translateX(-50%) translateY(0%);
   opacity: 1;
 }
 
 .dims {
   display: flex;
-  gap: 8px;
+  gap: 0.5rem;
   align-items: center;
 }
 
 .dims input[type="text"] {
-  width: 80px;
+  width: 5.25rem;
   text-align: center;
 }
 
 .dims span {
-  color: #6b7280;
-  font-size: 13px;
+  color: var(--bs-secondary-color);
+  font-size: 0.85rem;
 }
 
 .checkbox-row {
   display: flex;
   align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  color: #9ca3af;
+  gap: 0.5rem;
+  font-size: 0.86rem;
+  color: var(--bs-secondary-color);
   cursor: pointer;
 }
 
-.checkbox-row input[type="checkbox"] {
-  accent-color: #5b8af5;
-  width: 16px;
-  height: 16px;
-}
-
-@media (max-width: 800px) {
-  .layout {
-    flex-direction: column;
-  }
+@media (max-width: 991.98px) {
   .controls {
-    width: 100%;
     max-height: none;
-    position: static;
   }
   .preview-wrap {
     position: static;
@@ -299,21 +135,39 @@ textarea {
 </style>
 </head>
 <body>
-<div class="app">
-  <h1>Gradient image generator</h1>
-  <div class="layout">
-    <div class="preview-wrap">
-      <div class="canvas-container">
-        <canvas id="canvas"></canvas>
-      </div>
-      <div class="preview-actions">
-        <button class="btn btn-primary" id="downloadBtn">Download PNG</button>
-        <button class="btn btn-outline-secondary" id="randomBtn">Randomize</button>
+<main class="container app-wrap py-4">
+  <div class="mb-3">
+    <h1 class="h2 mb-1">Gradient image generator</h1>
+    <p class="mb-0 muted-note">Build gradient cards with layered patterns and export PNG output directly in your browser.</p>
+  </div>
+
+  <div id="status" class="alert alert-secondary" role="status" aria-live="polite">Ready.</div>
+
+  <div class="row g-3 align-items-start">
+    <div class="col-lg-8">
+      <div class="preview-wrap">
+        <div class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong>Preview</strong>
+            <span class="badge text-bg-secondary" id="canvasBadge">1600 × 800</span>
+          </div>
+          <div class="card-body">
+            <div class="canvas-shell">
+              <canvas id="canvas"></canvas>
+            </div>
+            <div class="d-flex gap-2 mt-3">
+              <button class="btn btn-primary flex-fill" id="downloadBtn">Download PNG</button>
+              <button class="btn btn-outline-secondary flex-fill" id="randomBtn">Randomize</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="controls" id="controls"></div>
+    <div class="col-lg-4">
+      <div id="controls" class="controls"></div>
+    </div>
   </div>
-</div>
+</main>
 <div class="toast" id="toast"></div>
 
 <script type="module">
@@ -352,6 +206,46 @@ const defaults = {
 let S = { ...defaults };
 const canvas = document.getElementById("canvas");
 const ctx = canvas.getContext("2d");
+const statusEl = document.getElementById("status");
+const canvasBadgeEl = document.getElementById("canvasBadge");
+const LOCAL_SERVER_COMMAND = "python3 -m http.server 4000";
+
+function setStatus(message, type = "secondary", allowHtml = false) {
+  statusEl.className = `alert alert-${type}`;
+  if (allowHtml) {
+    statusEl.innerHTML = message;
+  } else {
+    statusEl.textContent = message;
+  }
+}
+
+function showFileProtocolWarning() {
+  setStatus(
+    'Opened with file://. If styles look off, run a local server for full parity.' +
+    '<div class="mt-2 d-flex flex-wrap gap-2 align-items-center">' +
+    '<button id="copyLocalServeCmd" type="button" class="btn btn-sm btn-outline-dark">Copy local server command</button>' +
+    '<span class="small">Then open <code>http://localhost:4000/tools/gradient-card.html</code></span>' +
+    '</div>',
+    'warning',
+    true
+  );
+
+  const copyBtn = document.getElementById('copyLocalServeCmd');
+  if (!copyBtn) return;
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(LOCAL_SERVER_COMMAND);
+      const original = copyBtn.textContent;
+      copyBtn.textContent = 'Copied';
+      setTimeout(() => {
+        copyBtn.textContent = original;
+      }, 1200);
+    } catch {
+      setStatus(`Run this in repo root: ${LOCAL_SERVER_COMMAND}`, 'warning');
+    }
+  });
+}
 
 function showToast(msg) {
   const t = document.getElementById("toast");
@@ -578,6 +472,7 @@ function render() {
   const h2 = S.height;
   canvas.width = w;
   canvas.height = h2;
+  canvasBadgeEl.textContent = `${w.toLocaleString()} × ${h2.toLocaleString()}`;
 
   let grad;
   if (S.gradientType === "linear") {
@@ -739,8 +634,9 @@ function buildControls() {
 
   for (const sec of sections) {
     const div = document.createElement("div");
-    div.className = "section";
-    div.innerHTML = `<div class="section-title">${sec.title}</div>`;
+    div.className = "section card";
+    div.innerHTML = `<div class="card-header"><strong>${sec.title}</strong></div><div class="card-body"></div>`;
+    const body = div.querySelector(".card-body");
 
     for (const f of sec.fields) {
       const fd = document.createElement("div");
@@ -762,7 +658,7 @@ function buildControls() {
         });
       } else if (f.type === "select") {
         fd.innerHTML = `
-          <div class="field-row"><label>${f.label}</label></div>
+          <div class="field-row"><label class="form-label mb-1">${f.label}</label></div>
           <select class="form-select form-select-sm" data-key="${f.key}">
             ${f.options.map(([v, l]) => `<option value="${v}" ${S[f.key] === v ? "selected" : ""}>${l}</option>`).join("")}
           </select>
@@ -775,7 +671,7 @@ function buildControls() {
       } else if (f.type === "color") {
         fd.innerHTML = `
           <div class="field-row">
-            <label>${f.label}</label>
+            <label class="form-label mb-0">${f.label}</label>
             <input class="form-control form-control-color" type="color" value="${S[f.key]}" data-key="${f.key}">
           </div>
         `;
@@ -788,7 +684,7 @@ function buildControls() {
           <div class="color-pair">
             <label>A</label><input class="form-control form-control-color" type="color" value="${S.color1}" data-key="color1">
             <label>B</label><input class="form-control form-control-color" type="color" value="${S.color2}" data-key="color2">
-            <button class="btn btn-outline-secondary btn-sm" id="swapColors">Swap</button>
+            <button class="btn btn-outline-secondary btn-sm" data-action="swap-colors">Swap</button>
           </div>
         `;
         fd.querySelectorAll("input").forEach((inp) => {
@@ -797,15 +693,16 @@ function buildControls() {
             render();
           });
         });
-        fd.querySelector("#swapColors").addEventListener("click", () => {
+        fd.querySelector('[data-action="swap-colors"]').addEventListener("click", () => {
           [S.color1, S.color2] = [S.color2, S.color1];
           buildControls();
           render();
+          setStatus("Swapped gradient colors.", "info");
         });
       } else if (f.type === "checkbox") {
         fd.innerHTML = `
           <label class="checkbox-row">
-            <input type="checkbox" ${S[f.key] ? "checked" : ""} data-key="${f.key}">
+            <input class="form-check-input m-0" type="checkbox" ${S[f.key] ? "checked" : ""} data-key="${f.key}">
             ${f.label}
           </label>
         `;
@@ -841,7 +738,10 @@ function buildControls() {
           <button class="btn btn-outline-secondary btn-sm" id="resetBtn" style="width:100%;">Reset to defaults</button>
         `;
         fd.querySelector("#copyJson").addEventListener("click", () => {
-          navigator.clipboard.writeText(JSON.stringify(S, null, 2)).then(() => showToast("Settings copied to clipboard"));
+          navigator.clipboard.writeText(JSON.stringify(S, null, 2)).then(() => {
+            showToast("Settings copied to clipboard");
+            setStatus("Settings copied to clipboard.", "success");
+          });
         });
         fd.querySelector("#pasteJson").addEventListener("click", () => {
           const input = prompt("Paste settings JSON:");
@@ -852,8 +752,10 @@ function buildControls() {
               buildControls();
               render();
               showToast("Settings restored");
+              setStatus("Settings restored from JSON.", "success");
             } catch {
               showToast("Invalid JSON");
+              setStatus("Invalid JSON settings payload.", "warning");
             }
           }
         });
@@ -862,9 +764,10 @@ function buildControls() {
           buildControls();
           render();
           showToast("Reset to defaults");
+          setStatus("Controls reset to defaults.", "info");
         });
       }
-      div.appendChild(fd);
+      body.appendChild(fd);
     }
     c.appendChild(div);
   }
@@ -925,6 +828,7 @@ function randomize() {
 
   buildControls();
   render();
+  setStatus("Randomized gradient settings.", "info");
 }
 
 document.getElementById("downloadBtn").addEventListener("click", () => {
@@ -933,12 +837,18 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
   link.href = canvas.toDataURL("image/png");
   link.click();
   showToast("Image downloaded");
+  setStatus(`Downloaded PNG (${S.width} × ${S.height}).`, "success");
 });
 
 document.getElementById("randomBtn").addEventListener("click", randomize);
 
 buildControls();
 render();
+if (window.location.protocol === 'file:') {
+  showFileProtocolWarning();
+} else {
+  setStatus("Ready. Adjust settings or randomize to generate a new card.", "secondary");
+}
 </script>
 </body>
 </html>
