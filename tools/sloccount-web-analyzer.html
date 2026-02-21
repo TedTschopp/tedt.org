@@ -357,6 +357,7 @@
     const COCOMO_YEAR_MAX = 2030;
     const DEFAULT_COST_YEAR = Math.max(COCOMO_YEAR_MIN, Math.min(COCOMO_YEAR_MAX, new Date().getFullYear()));
     const COUNTER_BATCH_SIZE = 40;
+    const PREFER_PERL_COUNTERS = new Set(['generic_count', 'javascript_count', 'sh_count']);
     const DOCUMENT_BASENAMES = new Set([
       'readme',
       'changelog',
@@ -801,10 +802,20 @@
         const counterInfo = ext ? COUNTER_MAP[ext] : null;
         if (!counterInfo) continue;
 
-        const key = `${counterInfo.type}:${counterInfo.counter}:${counterInfo.lang}`;
+        let executionType = counterInfo.type;
+        if (
+          executionType === 'wasm' &&
+          PREFER_PERL_COUNTERS.has(counterInfo.counter) &&
+          window.counterScripts &&
+          typeof window.counterScripts[counterInfo.counter] === 'string'
+        ) {
+          executionType = 'perl';
+        }
+
+        const key = `${executionType}:${counterInfo.counter}:${counterInfo.lang}`;
         if (!filesByCounter[key]) {
           filesByCounter[key] = {
-            type: counterInfo.type,
+            type: executionType,
             counter: counterInfo.counter,
             lang: counterInfo.lang,
             files: []
