@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SLOCCount Web Analyzer</title>
+  <title>Source Lines of Code Count</title>
   <meta name="description" content="Analyze source code in the browser for SLOC and rough COCOMO cost estimates.">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="stylesheet" href="../css/bootstrap-build.css">
@@ -19,7 +19,7 @@
 <body>
   <main class="container app-wrap py-4">
     <div class="mb-3">
-      <h1 class="h2 mb-1">SLOCCount Web Analyzer</h1>
+      <h1 class="h2 mb-1">Source Lines of Code Count</h1>
       <p class="mb-0 muted-note">Client-side Source Lines of Code analysis with rough Basic COCOMO cost and effort estimates.</p>
       <p id="loadedCounters" class="mb-0 mt-1 muted-note">Loaded counters: initializing…</p>
     </div>
@@ -260,6 +260,7 @@
       rest: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
       adoc: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
       asciidoc: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
+      md: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
       textile: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
       org: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
       pod: { counter: 'generic_count', type: 'wasm', lang: DOC_BUCKET_LANG },
@@ -282,7 +283,9 @@
       html: { counter: 'generic_count', type: 'wasm', lang: 'HTML' },
       htm: { counter: 'generic_count', type: 'wasm', lang: 'HTML' },
       css: { counter: 'generic_count', type: 'wasm', lang: 'CSS' },
+      scss: { counter: 'generic_count', type: 'wasm', lang: 'CSS' },
       xml: { counter: 'generic_count', type: 'wasm', lang: 'XML' },
+      xsd: { counter: 'generic_count', type: 'wasm', lang: 'XML' },
       lua: { counter: 'generic_count', type: 'wasm', lang: 'Lua' },
       vim: { counter: 'generic_count', type: 'wasm', lang: 'Vim script' },
       y: { counter: 'lexcount1', type: 'wasm', lang: 'Yacc' },
@@ -376,6 +379,7 @@
     const analyzePasteBtn = document.getElementById('analyzePasteBtn');
     const analyzeGithubBtn = document.getElementById('analyzeGithubBtn');
     const analyzeZipBtn = document.getElementById('analyzeZipBtn');
+    const githubRepoInput = document.getElementById('githubRepo');
     const loadedCountersEl = document.getElementById('loadedCounters');
     const cocomoModeInput = document.getElementById('cocomoModeInput');
     const forceYearInput = document.getElementById('forceYearInput');
@@ -393,12 +397,25 @@
     let wasmModules = {};
     let originalModeConstants = null;
     let cocomoUiMode = COCOMO_MODE.BY_FILE_YEAR;
+    const initialQueryParams = new URLSearchParams(window.location.search);
+    let pendingAutoAnalyzeGithub = false;
 
     analyzePasteBtn.disabled = true;
     analyzeGithubBtn.disabled = true;
     analyzeZipBtn.disabled = true;
 
     const LOCAL_SERVER_COMMAND = 'python3 -m http.server 4000';
+
+    function updateRepoQueryParam(repoValue) {
+      const url = new URL(window.location.href);
+      const value = (repoValue || '').trim();
+      if (value) {
+        url.searchParams.set('repo', value);
+      } else {
+        url.searchParams.delete('repo');
+      }
+      history.replaceState(null, '', `${url.pathname}${url.search}${url.hash}`);
+    }
 
     function normalizeYear(year) {
       const value = Number(year);
@@ -780,6 +797,11 @@
         analyzeGithubBtn.disabled = false;
         analyzeZipBtn.disabled = false;
         setStatus(`WebAssembly SLOCCount ready. Loaded counters: ${counterSummary}`, 'success');
+
+        if (pendingAutoAnalyzeGithub) {
+          pendingAutoAnalyzeGithub = false;
+          analyzeGithub().catch((e) => setStatus(`GitHub analysis failed: ${e.message}`, 'danger'));
+        }
       } catch (error) {
         if (loadedCountersEl) {
           loadedCountersEl.textContent = 'Loaded counters: failed to initialize';
@@ -1156,7 +1178,9 @@
     }
 
     async function analyzeGithub() {
-      const parsed = parseRepoInput(document.getElementById('githubRepo').value);
+      const rawRepoValue = githubRepoInput.value;
+      updateRepoQueryParam(rawRepoValue);
+      const parsed = parseRepoInput(rawRepoValue);
       const refInput = document.getElementById('githubRef').value.trim();
       if (!parsed) { setStatus('Enter a valid GitHub repository: owner/repo or full URL.', 'danger'); return; }
 
@@ -1324,12 +1348,27 @@
       });
     }
 
-    document.getElementById('githubRepo').addEventListener('keypress', (event) => {
+    githubRepoInput.addEventListener('paste', () => {
+      setTimeout(() => updateRepoQueryParam(githubRepoInput.value), 0);
+    });
+
+    githubRepoInput.addEventListener('change', () => {
+      updateRepoQueryParam(githubRepoInput.value);
+    });
+
+    githubRepoInput.addEventListener('keypress', (event) => {
       if (event.key === 'Enter') {
         event.preventDefault();
         if (!analyzeGithubBtn.disabled) analyzeGithub().catch((e) => setStatus(`GitHub analysis failed: ${e.message}`, 'danger'));
       }
     });
+
+    const initialRepoValue = (initialQueryParams.get('repo') || '').trim();
+    if (initialRepoValue) {
+      githubRepoInput.value = initialRepoValue;
+      setTab('github-tab');
+      pendingAutoAnalyzeGithub = true;
+    }
 
     populateYearSelect();
     cocomoModeInput.value = COCOMO_MODE.BY_FILE_YEAR;
