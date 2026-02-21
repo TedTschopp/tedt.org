@@ -482,6 +482,9 @@
         const input = document.getElementById(inputId);
         input.disabled = !manualEnabled;
       }
+      if (mode === COCOMO_MODE.ORIGINAL) {
+        forceYearInput.value = String(COCOMO_YEAR_MIN);
+      }
       forceYearInput.disabled = mode !== COCOMO_MODE.FORCE_YEAR;
 
       if (mode === COCOMO_MODE.BY_FILE_YEAR) {
@@ -805,6 +808,9 @@
       const langStats = {};
       let totalLines = 0;
       const fileStats = [];
+      const skippedFiles = [];
+
+      const isRecoverableWasmRuntimeError = (message) => /stack overflow|stack cookie|aborted|out of bounds|out-of-bounds|memory access/i.test(message || '');
 
       for (const key of Object.keys(filesByCounter)) {
         const group = filesByCounter[key];
@@ -903,7 +909,7 @@
               parsed.fileResults.push(...batchParsed.fileResults);
             } catch (error) {
               const message = String(error && error.message ? error.message : error);
-              if (!/stack overflow|stack cookie|aborted/i.test(message) || filePaths.length <= 1) {
+              if (!isRecoverableWasmRuntimeError(message) || filePaths.length <= 1) {
                 throw error;
               }
 
@@ -915,6 +921,14 @@
                   parsed.fileResults.push(...singleParsed.fileResults);
                 } catch (singleError) {
                   const singleMessage = String(singleError && singleError.message ? singleError.message : singleError);
+                  if (isRecoverableWasmRuntimeError(singleMessage)) {
+                    skippedFiles.push({
+                      filename: pathMeta[singlePath]?.filename || singlePath,
+                      counter: group.counter,
+                      reason: singleMessage
+                    });
+                    continue;
+                  }
                   throw new Error(`Counter ${group.counter} failed on ${pathMeta[singlePath]?.filename || singlePath}: ${singleMessage}`);
                 }
               }
@@ -945,7 +959,8 @@
         totalFiles,
         totalLanguages: languages.length,
         languages,
-        fileStats
+        fileStats,
+        skippedFiles
       };
     }
 
@@ -1070,6 +1085,23 @@
     function announceAnalysisCompletion(summary, suffix = '') {
       if (!summary) return;
       const mode = cocomoModeInput.value;
+      const skippedCount = (summary.skippedFiles || []).length;
+
+      if (skippedCount > 0 && mode === COCOMO_MODE.BY_FILE_YEAR) {
+        const unknownCount = (summary.fileStats || []).filter((file) => !normalizeYear(file.createdYear)).length;
+        if (unknownCount > 0) {
+          setStatus(`Analysis complete${suffix}. Skipped ${skippedCount} file(s) due to runtime counter limits. ${unknownCount} file(s) had unknown created year and defaulted to ${DEFAULT_COST_YEAR}.`, 'warning');
+          return;
+        }
+        setStatus(`Analysis complete${suffix}. Skipped ${skippedCount} file(s) due to runtime counter limits.`, 'warning');
+        return;
+      }
+
+      if (skippedCount > 0) {
+        setStatus(`Analysis complete${suffix}. Skipped ${skippedCount} file(s) due to runtime counter limits.`, 'warning');
+        return;
+      }
+
       if (mode === COCOMO_MODE.BY_FILE_YEAR) {
         const unknownCount = (summary.fileStats || []).filter((file) => !normalizeYear(file.createdYear)).length;
         if (unknownCount > 0) {
