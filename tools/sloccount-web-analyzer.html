@@ -392,6 +392,7 @@
     const yearCostBody = document.getElementById('yearCostBody');
     const unmappedTypeBody = document.getElementById('unmappedTypeBody');
     const unmappedTypeCount = document.getElementById('unmappedTypeCount');
+    const COCOMO_INPUT_IDS = ['salaryInput', 'overheadInput', 'aInput', 'bInput', 'cInput', 'dInput'];
 
     let lastSummary = null;
     let currentFiles = [];
@@ -399,6 +400,8 @@
     let perlReady = false;
     let slocScripts = {};
     let wasmModules = {};
+    let originalModeConstants = null;
+    let cocomoUiMode = COCOMO_MODE.BY_FILE_YEAR;
 
     analyzePasteBtn.disabled = true;
     analyzeGithubBtn.disabled = true;
@@ -435,11 +438,47 @@
       }
     }
 
+    function readCocomoInputs() {
+      return {
+        salary: Number(document.getElementById('salaryInput').value || 56286),
+        overhead: Number(document.getElementById('overheadInput').value || 2.4),
+        a: Number(document.getElementById('aInput').value || 2.4),
+        b: Number(document.getElementById('bInput').value || 1.05),
+        c: Number(document.getElementById('cInput').value || 2.5),
+        d: Number(document.getElementById('dInput').value || 0.38)
+      };
+    }
+
+    function writeCocomoInputs(constants) {
+      if (!constants) return;
+      document.getElementById('salaryInput').value = String(Math.round(constants.salary));
+      document.getElementById('overheadInput').value = String(constants.overhead);
+      document.getElementById('aInput').value = String(constants.a);
+      document.getElementById('bInput').value = String(constants.b);
+      document.getElementById('cInput').value = String(constants.c);
+      document.getElementById('dInput').value = String(constants.d);
+    }
+
     function syncCocomoControls() {
       const mode = cocomoModeInput.value;
-      const manualInputs = ['salaryInput', 'overheadInput', 'aInput', 'bInput', 'cInput', 'dInput'];
+
+      if (cocomoUiMode === COCOMO_MODE.ORIGINAL && mode !== COCOMO_MODE.ORIGINAL) {
+        originalModeConstants = readCocomoInputs();
+      }
+
+      if (mode === COCOMO_MODE.ORIGINAL) {
+        if (originalModeConstants) {
+          writeCocomoInputs(originalModeConstants);
+        }
+      } else {
+        const displayYear = mode === COCOMO_MODE.FORCE_YEAR
+          ? (normalizeYear(forceYearInput.value) || DEFAULT_COST_YEAR)
+          : DEFAULT_COST_YEAR;
+        writeCocomoInputs(cocomoConstantsForYear(displayYear));
+      }
+
       const manualEnabled = mode === COCOMO_MODE.ORIGINAL;
-      for (const inputId of manualInputs) {
+      for (const inputId of COCOMO_INPUT_IDS) {
         const input = document.getElementById(inputId);
         input.disabled = !manualEnabled;
       }
@@ -452,6 +491,8 @@
       } else {
         cocomoModeNote.textContent = 'Mode: Original formula using manual constants.';
       }
+
+      cocomoUiMode = mode;
     }
 
     function setStatus(message, type = 'secondary', allowHtml = false) {
@@ -1229,6 +1270,14 @@
       }
     });
 
+    for (const inputId of COCOMO_INPUT_IDS) {
+      document.getElementById(inputId).addEventListener('input', () => {
+        if (cocomoModeInput.value === COCOMO_MODE.ORIGINAL) {
+          originalModeConstants = readCocomoInputs();
+        }
+      });
+    }
+
     document.getElementById('githubRepo').addEventListener('keypress', (event) => {
       if (event.key === 'Enter') {
         event.preventDefault();
@@ -1238,6 +1287,7 @@
 
     populateYearSelect();
     cocomoModeInput.value = COCOMO_MODE.BY_FILE_YEAR;
+    originalModeConstants = readCocomoInputs();
     syncCocomoControls();
 
     if (document.readyState === 'loading') {
