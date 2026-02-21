@@ -17,8 +17,8 @@ links:
   repo: null
   docs: null
   download: null
-image: "/img/bg-showcase-1.webp"
-hero_image: "/img/bg-showcase-1.webp"
+image: "/img/2026-02/gradient-card-tool-screenshot.png"
+hero_image: "/img/2026-02/gradient-card-tool-screenshot.png"
 features:
   - "Interactive linear, radial, and conic gradient generation"
   - "Two configurable pattern overlays with blend modes"
