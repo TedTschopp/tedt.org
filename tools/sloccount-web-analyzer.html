@@ -170,6 +170,8 @@
 
   <script>
     const SLOC_ASSET_BASE = './lib';
+    const DOC_BUCKET_LANG = 'Documents';
+    const DATA_CONFIG_BUCKET_LANG = 'Data/Config';
     const COUNTER_MAP = {
       py: { counter: 'python_count', type: 'perl', lang: 'Python' },
       rb: { counter: 'ruby_count', type: 'perl', lang: 'Ruby' },
@@ -354,8 +356,6 @@
     const COCOMO_YEAR_MIN = 2000;
     const COCOMO_YEAR_MAX = 2030;
     const DEFAULT_COST_YEAR = Math.max(COCOMO_YEAR_MIN, Math.min(COCOMO_YEAR_MAX, new Date().getFullYear()));
-    const DOC_BUCKET_LANG = 'Documents';
-    const DATA_CONFIG_BUCKET_LANG = 'Data/Config';
     const DOCUMENT_BASENAMES = new Set([
       'readme',
       'changelog',
