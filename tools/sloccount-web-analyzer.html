@@ -210,9 +210,43 @@
     analyzeGithubBtn.disabled = true;
     analyzeZipBtn.disabled = true;
 
-    function setStatus(message, type = 'secondary') {
+    const LOCAL_SERVER_COMMAND = 'python3 -m http.server 4000';
+
+    function setStatus(message, type = 'secondary', allowHtml = false) {
       statusEl.className = `alert alert-${type}`;
-      statusEl.textContent = message;
+      if (allowHtml) {
+        statusEl.innerHTML = message;
+      } else {
+        statusEl.textContent = message;
+      }
+    }
+
+    function showFileProtocolWarning() {
+      setStatus(
+        'This tool cannot run via file:// due to browser security limits for WebAssembly/data fetches.' +
+        '<div class="mt-2 d-flex flex-wrap gap-2 align-items-center">' +
+        '<button id="copyLocalServeCmd" type="button" class="btn btn-sm btn-outline-dark">Copy local server command</button>' +
+        '<span class="small">Then open <code>http://localhost:4000/tools/sloccount-web-analyzer.html</code></span>' +
+        '</div>',
+        'warning',
+        true
+      );
+
+      const copyBtn = document.getElementById('copyLocalServeCmd');
+      if (!copyBtn) return;
+
+      copyBtn.addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(LOCAL_SERVER_COMMAND);
+          const original = copyBtn.textContent;
+          copyBtn.textContent = 'Copied';
+          setTimeout(() => {
+            copyBtn.textContent = original;
+          }, 1200);
+        } catch {
+          setStatus(`Run this in repo root: ${LOCAL_SERVER_COMMAND}`, 'warning');
+        }
+      });
     }
 
     function setTab(tabId) {
@@ -258,19 +292,22 @@
       return !!(ext && COUNTER_MAP[ext]);
     }
 
-    function loadScript(url) {
+    function loadScript(url, parentTag = 'head') {
       return new Promise((resolve, reject) => {
         const script = document.createElement('script');
         script.src = url;
+        script.async = false;
+        script.defer = false;
         script.onload = resolve;
         script.onerror = reject;
-        document.head.appendChild(script);
+        const parent = parentTag === 'body' ? document.body : document.head;
+        parent.appendChild(script);
       });
     }
 
     async function loadWebPerl() {
       if (window.Perl) return;
-      await loadScript('./lib/webperl/webperl.js');
+      await loadScript('./lib/webperl/webperl.js', 'body');
     }
 
     async function loadJsZip() {
@@ -301,7 +338,7 @@
           if (loadedCountersEl) {
             loadedCountersEl.textContent = 'Loaded counters: unavailable in file:// mode';
           }
-          setStatus('This tool cannot run via file:// due to browser security limits for WebAssembly/data fetches. Start a local server from repo root, e.g. `python3 -m http.server 4000`, then open http://localhost:4000/tools/sloccount-web-analyzer.html', 'warning');
+          showFileProtocolWarning();
           return;
         }
 
@@ -688,7 +725,11 @@
       }
     });
 
-    initializeWebAssemblyEngine();
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initializeWebAssemblyEngine, { once: true });
+    } else {
+      initializeWebAssemblyEngine();
+    }
   </script>
   <script type="text/perl">
     1;
