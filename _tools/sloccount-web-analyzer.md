@@ -1,5 +1,5 @@
 ---
-title: "SLOCCount Web Analyzer"
+title: "Source Lines of Code Count Web Analyzer"
 summary: "Browser-based source line analysis with language breakdown and rough Basic COCOMO effort/cost estimates."
 subtitle: "Client-side SLOC and cost analyzer"
 status: active

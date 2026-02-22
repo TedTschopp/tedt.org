@@ -786,24 +786,8 @@ window.MorphScripts = (() => {
   };
 
   register(
-    { api: 1, name: 'UPPERCASE', description: 'Converts your text to uppercase.', icon: 'type', tags: 'upcase,uppercase,capital', category: 'Case' },
-    (state) => { state.text = state.text.toUpperCase(); }
-  );
-
-  register(
     { api: 1, name: 'lowercase', description: 'Converts your text to lowercase.', icon: 'type', tags: 'downcase,lowercase', category: 'Case' },
     (state) => { state.text = state.text.toLowerCase(); }
-  );
-
-  register(
-    { api: 1, name: 'Camel Case', description: 'convertsYourTextToCamelCase', icon: 'camel', tags: 'camel,case,function', category: 'Case' },
-    (state) => {
-      state.text = state.text.split('\n').map(line =>
-        splitWords(line).map((w, i) =>
-          i === 0 ? w.toLowerCase() : w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()
-        ).join('')
-      ).join('\n');
-    }
   );
 
   register(
@@ -854,21 +838,12 @@ window.MorphScripts = (() => {
   );
 
   register(
-    { api: 1, name: 'Sentance Case', description: 'Converts text to sentence case.', icon: 'type', tags: 'sentance,sentence,case,typo-compatible', category: 'Case' },
-    (state) => {
-      state.text = state.text
-        .toLowerCase()
-        .replace(/(^\s*[a-z])|([.!?]\s+[a-z])/g, m => m.toUpperCase());
-    }
-  );
-
-  register(
-    { api: 1, name: 'All Caps', description: 'Converts text to all capital letters.', icon: 'type', tags: 'caps,allcaps,uppercase,shouting', category: 'Case' },
+    { api: 1, name: 'All Caps', description: 'Converts text to all capital letters.', icon: 'type', tags: 'caps,allcaps,uppercase,upcase,capital,shouting', category: 'Case' },
     (state) => { state.text = state.text.toUpperCase(); }
   );
 
   register(
-    { api: 1, name: 'CamelCase', description: 'convertsYourTextToCamelCase', icon: 'camel', tags: 'camel,case,function,identifier', category: 'Case' },
+    { api: 1, name: 'CamelCase', description: 'convertsYourTextToCamelCase', icon: 'camel', tags: 'camel,case,camel case,function,identifier', category: 'Case' },
     (state) => {
       state.text = state.text.split('\n').map(line =>
         splitWords(line).map((w, i) =>

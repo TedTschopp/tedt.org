@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Morph — Text Transformer</title>
-  <meta name="description" content="A scriptable scratchpad for developers. Transform text with 96 built-in operations — encoding, formatting, hashing, case conversion, and more. All client-side.">
+  <meta name="description" content="A scriptable scratchpad for developers. Transform text with 93 built-in operations — encoding, formatting, hashing, case conversion, and more. All client-side.">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link
     rel="stylesheet"
@@ -68,15 +68,32 @@
       background: var(--bs-tertiary-bg);
     }
     .picker-item .pi-icon {
-      width: 1.5rem; text-align: center; font-size: 1rem; opacity: 0.9;
+      width: 2.05rem; height: 2.05rem;
+      display: inline-flex; align-items: center; justify-content: center;
+      text-align: center; font-size: 1.15rem;
+      color: var(--bs-primary);
+      background: rgba(var(--bs-primary-rgb), 0.14);
+      border: 1px solid rgba(var(--bs-primary-rgb), 0.35);
+      border-radius: 0.45rem;
       flex: 0 0 auto;
     }
-    .picker-item .pi-icon i { font-size: 0.95rem; line-height: 1; }
+    .picker-item .pi-icon i { font-size: 1.15rem; line-height: 1; }
     .picker-item .pi-main {
       display: flex; flex-direction: column; min-width: 0; flex: 1;
     }
-    .picker-item .pi-name { font-weight: 500; }
-    .picker-item .pi-desc { color: var(--bs-secondary-color); font-size: 0.85rem; }
+    .picker-item .pi-name {
+      font-weight: 500;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .picker-item .pi-desc {
+      color: var(--bs-secondary-color); font-size: 0.85rem;
+      overflow-wrap: anywhere; word-break: break-word;
+      display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+      line-clamp: 2; overflow: hidden;
+    }
     .picker-item .pi-cat {
       margin-left: auto; font-size: 0.75rem; white-space: nowrap;
       color: var(--bs-secondary-color); opacity: 0.7;
@@ -128,11 +145,33 @@
     .script-btn:hover {
       border-color: var(--bs-primary); background: rgba(var(--bs-primary-rgb), 0.1);
     }
-    .script-btn .sb-header { display: flex; align-items: center; gap: 0.35rem; }
-    .script-btn .sb-icon { width: 1.2rem; text-align: center; font-size: 0.95rem; opacity: 0.9; }
-    .script-btn .sb-icon i { font-size: 0.95rem; line-height: 1; }
-    .script-btn .sb-name { font-weight: 500; font-size: 0.9rem; }
-    .script-btn .sb-desc { font-size: 0.78rem; color: var(--bs-secondary-color); margin-top: 2px; }
+    .script-btn .sb-header { display: flex; align-items: center; gap: 0.4rem; width: 100%; min-width: 0; }
+    .script-btn .sb-icon {
+      width: 1.95rem; height: 1.95rem;
+      display: inline-flex; align-items: center; justify-content: center;
+      text-align: center; font-size: 1.15rem;
+      color: var(--bs-primary);
+      background: rgba(var(--bs-primary-rgb), 0.14);
+      border: 1px solid rgba(var(--bs-primary-rgb), 0.35);
+      border-radius: 0.4rem;
+      flex: 0 0 auto;
+    }
+    .script-btn .sb-icon i { font-size: 1.15rem; line-height: 1; }
+    .script-btn .sb-name {
+      font-weight: 500; font-size: 0.9rem;
+      min-width: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: block;
+    }
+    .script-btn .sb-desc {
+      font-size: 0.78rem; color: var(--bs-secondary-color); margin-top: 2px;
+      overflow-wrap: anywhere; word-break: break-word;
+      display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;
+      line-clamp: 2; overflow: hidden;
+      width: 100%;
+    }
 
     /* ── Keyboard shortcut hint ── */
     kbd {
@@ -423,7 +462,7 @@
         rerunLabel.textContent = 'Re-run: ' + script.meta.name;
 
         // Track history
-        history.unshift({ name: script.meta.name, time: new Date() });
+        history.unshift({ name: script.meta.name, time: new Date(), script });
         if (history.length > 20) history.length = 20;
         renderHistory();
       } catch (e) {
@@ -457,10 +496,12 @@
         div.className = 'picker-item' + (i === pickerIndex ? ' active' : '');
         div.setAttribute('role', 'option');
         const iconHtml = getScriptIconHTML(s.meta.icon, 'pi-icon');
+        const apiLabel = `v${Number(s.meta.api || 1)}`;
+        div.title = `${s.meta.name} (${apiLabel})`;
         div.innerHTML = `${iconHtml}
           <span class="pi-main"><span class="pi-name">${esc(s.meta.name)}</span>
           <span class="pi-desc">${esc(s.meta.description)}</span></span>
-          <span class="pi-cat">${esc(s.meta.category || '')}</span>`;
+          <span class="pi-cat">${esc((s.meta.category || '') + ' · ' + apiLabel)}</span>`;
         div.addEventListener('click', () => { closePicker(); runScript(s); });
         div.addEventListener('mouseenter', () => {
           pickerIndex = i;
@@ -593,6 +634,7 @@
         const btn = document.createElement('button');
         btn.className = 'script-btn';
         const iconHtml = getScriptIconHTML(s.meta.icon, 'sb-icon');
+        btn.title = `${s.meta.name} (api v${Number(s.meta.api || 1)})`;
         btn.innerHTML = `<span class="sb-header">${iconHtml}<span class="sb-name">${esc(s.meta.name)}</span></span><span class="sb-desc">${esc(s.meta.description)}</span>`;
         btn.addEventListener('click', () => runScript(s));
         scriptGrid.appendChild(btn);
@@ -614,6 +656,12 @@
         div.className = 'history-item';
         const time = h.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
         div.innerHTML = `<span>${esc(h.name)}</span><span class="text-body-secondary">${time}</span>`;
+        if (h.script) {
+          div.title = `Re-run ${h.name}`;
+          div.addEventListener('click', () => runScript(h.script));
+        } else {
+          div.style.cursor = 'default';
+        }
         historyList.appendChild(div);
       });
     }
