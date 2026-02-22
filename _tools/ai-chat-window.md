@@ -18,8 +18,9 @@ links:
   docs: null
   download: null
 image: "/img/2026-02/ai-chat-window-screenshot.png"
-hero_image: "/img/2026-02/ai-chat-window-screenshot.png"
+hero_image: "/img/2026-02/ai-chat-window-hero.png"
 screenshots:
+  - "/img/2026-02/ai-chat-window-hero.png"
   - "/img/2026-02/ai-chat-window-screenshot.png"
   - "/img/2026-02/ai-chat-window-screenshot-monitor.png"
 features:
