@@ -1,0 +1,1503 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI Prompt</title>
+  <meta name="description" content="Prompt and stream responses from OpenAI models in a client-side scratchpad with a live request/response monitor.">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
+  <script>
+    (function loadStylesheets() {
+      const isFileProtocol = window.location.protocol === 'file:';
+      document.documentElement.setAttribute('data-file-protocol', String(isFileProtocol));
+
+      const stylesheets = isFileProtocol
+        ? [
+            'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
+            'https://tedt.org/css/consolidated-fonts.css'
+          ]
+        : ['../css/bootstrap-build.css', '../css/consolidated-fonts.css'];
+
+      for (const href of stylesheets) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        document.head.appendChild(link);
+      }
+    })();
+  </script>
+  <style>
+    body { background: var(--bs-body-bg); }
+    .app-wrap { max-width: 1120px; }
+    .muted-note { color: var(--bs-secondary-color); font-size: 0.9rem; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    #systemPrompt { min-height: 96px; }
+    #contentPrompt { min-height: 260px; }
+
+    #historyList { display: flex; flex-direction: column; gap: 0.35rem; }
+    .history-item {
+      cursor: pointer;
+      border: 1px solid var(--bs-border-color);
+      border-radius: 0.4rem;
+      background: var(--bs-tertiary-bg);
+      color: var(--bs-body-color);
+      padding: 0.4rem 0.55rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 0.85rem;
+    }
+    .history-item:hover {
+      border-color: var(--bs-primary);
+      background: rgba(var(--bs-primary-rgb), 0.1);
+    }
+
+    #outputBox {
+      min-height: 130px;
+      border: 1px solid var(--bs-border-color);
+      border-radius: 0.5rem;
+      background: var(--bs-tertiary-bg);
+      padding: 1rem 1.1rem;
+      line-height: 1.6;
+    }
+    #outputBox.empty { color: var(--bs-secondary-color); font-style: italic; }
+    #outputBox pre {
+      background: rgba(var(--bs-body-color-rgb), 0.08);
+      border: 1px solid var(--bs-border-color);
+      border-radius: 0.35rem;
+      padding: 0.7rem;
+      overflow-x: auto;
+    }
+    #outputBox code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.88em;
+    }
+
+    .model-table-wrap {
+      max-height: 280px;
+      overflow: auto;
+      border: 1px solid var(--bs-border-color);
+      border-radius: 0.45rem;
+    }
+    .model-code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.85rem;
+    }
+
+    .model-controls {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .model-select-wrap {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    .model-controls .btn {
+      flex: 0 0 auto;
+      white-space: nowrap;
+    }
+
+    #monitorBox {
+      min-height: 220px;
+      max-height: 420px;
+      overflow: auto;
+      border: 1px solid var(--bs-border-color);
+      border-radius: 0.5rem;
+      background: var(--bs-tertiary-bg);
+      padding: 0.8rem;
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 0.82rem;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    .fa-fallback { display: none; }
+    html.fa-unavailable .fa-icon { display: none; }
+    html.fa-unavailable .fa-fallback { display: inline; }
+  </style>
+</head>
+<body>
+  <main class="container app-wrap py-4">
+    <div class="mb-3">
+      <h1 class="h2 mb-1">OpenAI Prompt</h1>
+      <p class="mb-0 muted-note">Prompt OpenAI models with optional system instructions, streaming output, model discovery, and a live debug monitor.</p>
+    </div>
+
+    <div id="topStatus" class="alert alert-secondary py-2" role="status" aria-live="polite">Ready.</div>
+
+    <section class="card mb-3">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <strong>Model Provider &amp; API Keys</strong>
+        <button id="toggleProviderCardBtn" class="btn btn-outline-secondary btn-sm">Minimize provider settings</button>
+      </div>
+      <div id="providerCardBody" class="card-body">
+        <label for="providerSelect" class="form-label mb-1">Provider</label>
+        <select id="providerSelect" class="form-select" aria-label="Model provider">
+          <option value="openai" selected>OpenAI (implemented)</option>
+          <option value="anthropic" disabled>Anthropic (disabled)</option>
+          <option value="google-gemini" disabled>Google Gemini (disabled)</option>
+          <option value="azure-openai" disabled>Azure OpenAI (disabled)</option>
+          <option value="xai" disabled>xAI (disabled)</option>
+          <option value="cohere" disabled>Cohere (disabled)</option>
+          <option value="mistral" disabled>Mistral (disabled)</option>
+          <option value="meta-llama" disabled>Meta Llama API (disabled)</option>
+          <option value="aws-bedrock" disabled>AWS Bedrock (disabled)</option>
+          <option value="together" disabled>Together AI (disabled)</option>
+          <option value="openrouter" disabled>OpenRouter (disabled)</option>
+          <option value="perplexity" disabled>Perplexity (disabled)</option>
+          <option value="deepseek" disabled>DeepSeek (disabled)</option>
+          <option value="fireworks" disabled>Fireworks AI (disabled)</option>
+          <option value="groq" disabled>Groq (disabled)</option>
+          <option value="ollama" disabled>Ollama / Local</option>
+        </select>
+
+        <div class="form-check form-switch mt-3">
+          <input class="form-check-input" type="checkbox" role="switch" id="enableOllamaToggle">
+          <label class="form-check-label" for="enableOllamaToggle">Define API endpoint to enable Ollama / Local provider</label>
+        </div>
+
+        <div id="ollamaSettings" class="mt-2 d-none">
+          <label for="localApiStyle" class="form-label mb-1">Local API format</label>
+          <select id="localApiStyle" class="form-select mb-2">
+            <option value="ollama">Ollama native (/api/*)</option>
+            <option value="openai">OpenAI-compatible (/v1/*, e.g., LM Studio)</option>
+          </select>
+          <label for="ollamaBaseUrl" class="form-label mb-1">Local model server base URL</label>
+          <input id="ollamaBaseUrl" class="form-control mono" type="url" placeholder="http://localhost:11434" value="http://localhost:11434">
+          <p class="muted-note mb-0 mt-1">Ollama format uses <span class="mono">/api/tags</span> + <span class="mono">/api/chat</span>. OpenAI-compatible format uses <span class="mono">/v1/models</span> + <span class="mono">/v1/chat/completions</span>.</p>
+        </div>
+
+        <p class="muted-note mb-0 mt-2">Implemented providers: OpenAI, Ollama / Local.</p>
+
+        <div class="border-top mt-3 pt-3">
+          <p class="muted-note mb-2">Selected provider for key entry: <strong id="selectedProviderForKey">OpenAI</strong></p>
+          <p class="muted-note mb-2">Keys are stored in your browser local storage only and are grouped by vendor.</p>
+          <div class="table-responsive">
+            <table class="table table-sm mb-0">
+              <thead>
+                <tr>
+                  <th>Vendor</th>
+                  <th>Stored key</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="apiKeyList">
+                <tr>
+                  <td colspan="3" class="text-body-secondary">No vendor API keys saved yet.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card mb-3">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <strong>Model</strong>
+        <div class="d-flex gap-2">
+          <button id="clearSavedStateBtn" class="btn btn-outline-secondary btn-sm">Clear saved model/content</button>
+          <button id="toggleModelBtn" class="btn btn-outline-secondary btn-sm">Minimize model</button>
+        </div>
+      </div>
+      <div id="modelCardBody" class="card-body">
+        <div class="mb-2">
+          <label for="activeModelProviderSelect" class="form-label mb-1">Active Model Provider</label>
+          <select id="activeModelProviderSelect" class="form-select"></select>
+          <p class="muted-note mb-0 mt-1">Choose which provider's models are active in the selector below.</p>
+        </div>
+
+        <div>
+          <label for="modelSelect" class="form-label mb-1">Model</label>
+          <div class="model-controls">
+            <div class="model-select-wrap">
+              <select id="modelSelect" class="form-select"></select>
+            </div>
+            <button id="refreshModelsBtn" class="btn btn-outline-secondary"><i class="fa-solid fa-arrows-rotate me-1" aria-hidden="true"></i>Refresh models</button>
+          </div>
+          <p class="muted-note mb-0 mt-1">API code: <span id="modelCodeLabel" class="model-code">gpt-4o-mini</span></p>
+        </div>
+
+        <div class="mt-3">
+          <div class="d-flex justify-content-between align-items-center mb-1">
+            <span class="small text-uppercase text-body-secondary">Available Models</span>
+            <span id="modelCount" class="badge text-bg-secondary">0</span>
+          </div>
+          <div class="model-table-wrap table-responsive">
+            <table class="table table-sm table-striped table-hover mb-0">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>API Code</th>
+                  <th>Definition</th>
+                </tr>
+              </thead>
+              <tbody id="modelTableBody">
+                <tr>
+                  <td colspan="3" class="text-body-secondary">Model list will load from OpenAI when an API key is available.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <label for="systemPrompt" class="form-label">System Prompt</label>
+        <textarea id="systemPrompt" class="form-control mono" placeholder="Optional system prompt…"></textarea>
+        <div class="mt-3" id="historySection">
+          <div id="historyList"></div>
+          <button id="toggleHistoryBtn" class="btn btn-link btn-sm px-0 d-none">Show more…</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <label for="contentPrompt" class="form-label">Content</label>
+        <textarea id="contentPrompt" class="form-control mono" placeholder="Enter your prompt content here…"></textarea>
+        <div class="mt-2 d-flex justify-content-end">
+          <button id="submitBtn" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane me-1" aria-hidden="true"></i>Submit</button>
+        </div>
+
+        <div id="errorMsg" class="alert alert-danger mt-3 d-none mb-0"></div>
+        <p id="statusLine" class="muted-note mt-2 mb-0"></p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <strong>Output</strong>
+        <button id="copyBtn" class="btn btn-outline-secondary btn-sm">Copy to clipboard</button>
+      </div>
+      <div class="card-body">
+        <div id="outputBox" class="empty">Response will appear here…</div>
+      </div>
+    </section>
+
+    <section id="monitorCard" class="card mt-3 mb-3">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <strong>Request/Response Monitor</strong>
+        <div class="d-flex gap-2">
+          <button id="copyMonitorBtn" class="btn btn-outline-secondary btn-sm">Copy monitor log</button>
+          <button id="toggleMonitorBtn" class="btn btn-outline-secondary btn-sm">Expand monitor</button>
+          <button id="clearMonitorBtn" class="btn btn-outline-secondary btn-sm">Clear monitor</button>
+        </div>
+      </div>
+      <div id="monitorCardBody" class="card-body d-none">
+        <p class="muted-note mb-2">Shows URL, method, headers (auth redacted), payload, response metadata, and stream events for debugging.</p>
+        <div id="monitorBox">Monitor ready.</div>
+      </div>
+    </section>
+  </main>
+
+  <script type="module">
+    import { marked } from 'https://esm.run/marked';
+
+    const STORAGE_KEY_API = 'OPENAI_API_KEY';
+    const STORAGE_KEY_API_KEYS = 'openai_prompt_api_keys';
+    const STORAGE_KEY_HIST = 'openai_prompt_system_history';
+    const STORAGE_KEY_MODEL = 'openai_prompt_selected_model';
+    const STORAGE_KEY_ACTIVE_TARGET = 'openai_prompt_active_target';
+    const STORAGE_KEY_CONTENT = 'openai_prompt_content';
+    const STORAGE_KEY_ACTIVE_MODEL_PROVIDER = 'openai_prompt_active_model_provider';
+    const STORAGE_KEY_PROVIDER = 'openai_prompt_provider';
+    const STORAGE_KEY_OLLAMA_ENABLED = 'openai_prompt_ollama_enabled';
+    const STORAGE_KEY_OLLAMA_BASE_URL = 'openai_prompt_ollama_base_url';
+    const STORAGE_KEY_LOCAL_API_STYLE = 'openai_prompt_local_api_style';
+    const MAX_STORED = 50;
+    const INITIAL_VISIBLE = 3;
+    const TRUNCATE_LEN = 90;
+    const DEFAULT_MODELS = ['gpt-4o-mini', 'gpt-4o', 'gpt-4.1-mini', 'gpt-4.1', 'o4-mini', 'o3-mini'];
+    const DEFAULT_OLLAMA_URL = 'http://localhost:11434';
+
+    const MODEL_NAME_MAP = {
+      'gpt-4o-mini': 'GPT-4o Mini',
+      'gpt-4o': 'GPT-4o',
+      'gpt-4.1-mini': 'GPT-4.1 Mini',
+      'gpt-4.1': 'GPT-4.1',
+      'o4-mini': 'o4-mini (Reasoning)',
+      'o3-mini': 'o3-mini (Reasoning)'
+    };
+
+    const topStatus = document.getElementById('topStatus');
+    const providerCardBody = document.getElementById('providerCardBody');
+    const toggleProviderCardBtn = document.getElementById('toggleProviderCardBtn');
+    const providerSelectEl = document.getElementById('providerSelect');
+    const enableOllamaToggleEl = document.getElementById('enableOllamaToggle');
+    const ollamaSettingsEl = document.getElementById('ollamaSettings');
+    const localApiStyleEl = document.getElementById('localApiStyle');
+    const ollamaBaseUrlEl = document.getElementById('ollamaBaseUrl');
+    const selectedProviderForKeyEl = document.getElementById('selectedProviderForKey');
+    const apiKeyListEl = document.getElementById('apiKeyList');
+    const systemPromptEl = document.getElementById('systemPrompt');
+    const contentPromptEl = document.getElementById('contentPrompt');
+    const activeModelProviderSelectEl = document.getElementById('activeModelProviderSelect');
+    const modelSelectEl = document.getElementById('modelSelect');
+    const modelCodeLabelEl = document.getElementById('modelCodeLabel');
+    const modelCardBody = document.getElementById('modelCardBody');
+    const clearSavedStateBtn = document.getElementById('clearSavedStateBtn');
+    const toggleModelBtn = document.getElementById('toggleModelBtn');
+    const refreshModelsBtn = document.getElementById('refreshModelsBtn');
+    const modelCountEl = document.getElementById('modelCount');
+    const modelTableBodyEl = document.getElementById('modelTableBody');
+    const monitorCard = document.getElementById('monitorCard');
+    const monitorCardBody = document.getElementById('monitorCardBody');
+    const toggleMonitorBtn = document.getElementById('toggleMonitorBtn');
+    const copyMonitorBtn = document.getElementById('copyMonitorBtn');
+    const monitorBox = document.getElementById('monitorBox');
+    const clearMonitorBtn = document.getElementById('clearMonitorBtn');
+    const submitBtn = document.getElementById('submitBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const outputBox = document.getElementById('outputBox');
+    const statusLine = document.getElementById('statusLine');
+    const errorMsg = document.getElementById('errorMsg');
+    const historyList = document.getElementById('historyList');
+    const toggleHistoryBtn = document.getElementById('toggleHistoryBtn');
+
+    let fullText = '';
+    let showAllHistory = false;
+    let lastOllamaModelRefreshAt = 0;
+    const discoveredModelsByProvider = {
+      openai: [...DEFAULT_MODELS],
+      ollama: []
+    };
+
+    function appendMonitor(title, data) {
+      const stamp = new Date().toISOString();
+      const line = `\n[${stamp}] ${title}\n${typeof data === 'string' ? data : JSON.stringify(data, null, 2)}\n`;
+      monitorBox.textContent += line;
+      monitorBox.scrollTop = monitorBox.scrollHeight;
+    }
+
+    function redactAuth(headersObj) {
+      const clone = { ...headersObj };
+      if (clone.Authorization) {
+        const token = clone.Authorization.replace(/^Bearer\s+/i, '');
+        const masked = token.length > 8 ? `${token.slice(0, 4)}...${token.slice(-4)}` : '***';
+        clone.Authorization = `Bearer ${masked}`;
+      }
+      return clone;
+    }
+
+    function modelDisplayName(id) {
+      if (MODEL_NAME_MAP[id]) return MODEL_NAME_MAP[id];
+      if (id.startsWith('gpt-')) {
+        const pretty = id.replace(/^gpt-/, 'GPT-').replace(/-/g, ' ');
+        return pretty.replace(/\bmini\b/gi, 'Mini').replace(/\bpreview\b/gi, 'Preview');
+      }
+      if (id.startsWith('o')) return `${id} (Reasoning)`;
+      return id;
+    }
+
+    function modelApiDefinition(id) {
+      const parts = id.split('-').filter(Boolean);
+      const family = parts[0] || 'unknown';
+      if (family === 'gpt') {
+        const generation = parts[1] || 'latest';
+        const variant = parts.slice(2).join('-') || 'base';
+        return `Family: GPT; generation: ${generation}; variant: ${variant}.`;
+      }
+      if (/^o\d/.test(family)) {
+        const variant = parts.slice(1).join('-') || 'base';
+        return `Family: ${family}; reasoning-focused model; variant: ${variant}.`;
+      }
+      return `API model id returned by OpenAI /v1/models (${id}).`;
+    }
+
+    function makeTargetValue(provider, modelId) {
+      return `${provider}::${modelId}`;
+    }
+
+    function parseTargetValue(value) {
+      const [provider, ...rest] = String(value || '').split('::');
+      const model = rest.join('::');
+      if (!provider || !model) return { provider: getCurrentProvider(), model: String(value || '') };
+      return { provider, model };
+    }
+
+    function getConfiguredProviders() {
+      const providers = [];
+      if (getApiKeyForProvider('openai', { promptIfMissing: false })) {
+        providers.push('openai');
+      }
+      if (isOllamaEnabled() && getOllamaBaseUrl() && getApiKeyForProvider('ollama', { promptIfMissing: false })) {
+        providers.push('ollama');
+      }
+      return providers;
+    }
+
+    function getActiveModelProviderFilter() {
+      const selected = activeModelProviderSelectEl.value || localStorage.getItem(STORAGE_KEY_ACTIVE_MODEL_PROVIDER) || 'all';
+      return selected || 'all';
+    }
+
+    function updateActiveModelProviderOptions(configuredProviders) {
+      const current = activeModelProviderSelectEl.value;
+      const saved = localStorage.getItem(STORAGE_KEY_ACTIVE_MODEL_PROVIDER) || '';
+      activeModelProviderSelectEl.innerHTML = '';
+
+      const allOption = document.createElement('option');
+      allOption.value = 'all';
+      allOption.textContent = 'All configured providers';
+      activeModelProviderSelectEl.appendChild(allOption);
+
+      configuredProviders.forEach((provider) => {
+        const option = document.createElement('option');
+        option.value = provider;
+        option.textContent = providerLabel(provider);
+        activeModelProviderSelectEl.appendChild(option);
+      });
+
+      const available = ['all', ...configuredProviders];
+      const preferred = [saved, current, getCurrentProvider(), 'all'].find((candidate) => available.includes(candidate));
+      activeModelProviderSelectEl.value = preferred || 'all';
+      localStorage.setItem(STORAGE_KEY_ACTIVE_MODEL_PROVIDER, activeModelProviderSelectEl.value);
+      activeModelProviderSelectEl.disabled = configuredProviders.length === 0;
+    }
+
+    function getActiveTarget() {
+      const selected = modelSelectEl.value || localStorage.getItem(STORAGE_KEY_ACTIVE_TARGET) || '';
+      const parsed = parseTargetValue(selected);
+      const configured = getConfiguredProviders();
+      const filter = getActiveModelProviderFilter();
+      const providers = filter === 'all' ? configured : configured.filter((provider) => provider === filter);
+
+      if (parsed.model) {
+        const modelsForParsedProvider = discoveredModelsByProvider[parsed.provider] || [];
+        const parsedVisible = providers.includes(parsed.provider);
+        const parsedExists = modelsForParsedProvider.includes(parsed.model);
+        if (parsedVisible && parsedExists) return parsed;
+      }
+
+      if (providers.length === 0) return { provider: 'openai', model: DEFAULT_MODELS[0] };
+      const provider = providers[0];
+      const models = discoveredModelsByProvider[provider] || [];
+      return { provider, model: models[0] || '' };
+    }
+
+    function renderModelTable(modelTargets) {
+      modelCountEl.textContent = String(modelTargets.length);
+      modelTableBodyEl.innerHTML = '';
+      if (modelTargets.length === 0) {
+        modelTableBodyEl.innerHTML = '<tr><td colspan="3" class="text-body-secondary">No models available.</td></tr>';
+        return;
+      }
+      modelTargets.forEach(({ provider, model }) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${providerLabel(provider)} · ${modelDisplayName(model)}</td>
+          <td><span class="model-code">${model}</span></td>
+          <td>${modelApiDefinition(model)}</td>
+        `;
+        modelTableBodyEl.appendChild(row);
+      });
+    }
+
+    function setTopStatus(message, variant = 'secondary') {
+      topStatus.className = `alert alert-${variant} py-2`;
+      topStatus.textContent = message;
+    }
+
+    function isLikelyCorsPreflightFailure(errorMessage) {
+      const text = String(errorMessage || '').toLowerCase();
+      return text.includes('load failed') || text.includes('failed to fetch') || text.includes('networkerror');
+    }
+
+    function detectFontAwesomeAvailability() {
+      const probe = document.createElement('i');
+      probe.className = 'fa-solid fa-chevron-down';
+      probe.style.position = 'absolute';
+      probe.style.visibility = 'hidden';
+      document.body.appendChild(probe);
+      const family = getComputedStyle(probe).fontFamily || '';
+      document.body.removeChild(probe);
+      const hasFA = /font awesome/i.test(family);
+      document.documentElement.classList.toggle('fa-unavailable', !hasFA);
+    }
+
+    function setToggleButtonContent(button, expanded, noun) {
+      const label = expanded ? `Minimize ${noun}` : `Expand ${noun}`;
+      const iconClass = expanded ? 'fa-solid fa-chevron-up' : 'fa-solid fa-chevron-down';
+      const emoji = expanded ? '🔼' : '🔽';
+      button.innerHTML = `<span class="fa-icon"><i class="${iconClass} me-1" aria-hidden="true"></i></span><span class="fa-fallback me-1" aria-hidden="true">${emoji}</span>${label}`;
+    }
+
+    function getCurrentProvider() {
+      return providerSelectEl.value || 'openai';
+    }
+
+    function providerLabel(provider) {
+      if (provider === 'openai') return 'OpenAI';
+      if (provider === 'ollama') return 'Ollama / Local';
+      return provider;
+    }
+
+    function loadApiKeys() {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY_API_KEYS) || '{}');
+        if (parsed && typeof parsed === 'object' && !Array.isArray(parsed)) return parsed;
+      } catch {
+        // ignore parse issues and return empty
+      }
+      return {};
+    }
+
+    function saveApiKeys(keys) {
+      localStorage.setItem(STORAGE_KEY_API_KEYS, JSON.stringify(keys));
+    }
+
+    function maskApiKey(key) {
+      const value = String(key || '').trim();
+      if (!value) return '—';
+      if (value.length <= 8) return '••••••••';
+      return `${value.slice(0, 4)}…${value.slice(-4)}`;
+    }
+
+    function getApiKeyForProvider(provider, { promptIfMissing = true } = {}) {
+      const keys = loadApiKeys();
+      let key = String(keys[provider] || '').trim();
+      if (!key && promptIfMissing) {
+        const entered = prompt(`Enter your ${providerLabel(provider)} API key:`);
+        if (entered && entered.trim()) {
+          key = entered.trim();
+          keys[provider] = key;
+          saveApiKeys(keys);
+          updateApiKeyUI();
+        }
+      }
+      return key;
+    }
+
+    function setApiKeyForProvider(provider, key) {
+      const keys = loadApiKeys();
+      const normalized = String(key || '').trim();
+      if (normalized) keys[provider] = normalized;
+      else delete keys[provider];
+      saveApiKeys(keys);
+    }
+
+    function renderApiKeyList() {
+      const keys = loadApiKeys();
+      const currentProvider = getCurrentProvider();
+      const entriesMap = new Map(Object.entries(keys).filter(([, value]) => String(value || '').trim()));
+      if (!entriesMap.has(currentProvider)) {
+        entriesMap.set(currentProvider, '');
+      }
+      if (isOllamaEnabled() && !entriesMap.has('ollama')) {
+        entriesMap.set('ollama', '');
+      }
+      const entries = [...entriesMap.entries()];
+      apiKeyListEl.innerHTML = '';
+
+      if (entries.length === 0) {
+        apiKeyListEl.innerHTML = '<tr><td colspan="3" class="text-body-secondary">No vendor API keys saved yet.</td></tr>';
+        return;
+      }
+
+      entries.sort(([a], [b]) => a.localeCompare(b));
+      entries.forEach(([provider, key]) => {
+        const hasKey = !!String(key || '').trim();
+        const row = document.createElement('tr');
+        row.innerHTML = `
+          <td>${providerLabel(provider)}</td>
+          <td><span class="model-code">${maskApiKey(key)}</span></td>
+          <td>
+            <div class="d-flex gap-2">
+              <button class="btn btn-outline-secondary btn-sm" data-action="edit-key" data-provider="${provider}">${hasKey ? 'Change' : 'Set'} key</button>
+              ${hasKey ? `<button class="btn btn-outline-danger btn-sm" data-action="remove-key" data-provider="${provider}">Remove key</button>` : ''}
+            </div>
+          </td>
+        `;
+        apiKeyListEl.appendChild(row);
+      });
+    }
+
+    function normalizeOllamaBaseUrl(url) {
+      const raw = (url || '').trim();
+      if (!raw) return DEFAULT_OLLAMA_URL;
+      return raw.replace(/\/+$/, '');
+    }
+
+    function getOllamaBaseUrl() {
+      const saved = localStorage.getItem(STORAGE_KEY_OLLAMA_BASE_URL);
+      return normalizeOllamaBaseUrl(saved || DEFAULT_OLLAMA_URL);
+    }
+
+    function normalizeLocalApiStyle(value) {
+      return value === 'openai' ? 'openai' : 'ollama';
+    }
+
+    function getLocalApiStyle() {
+      const saved = localStorage.getItem(STORAGE_KEY_LOCAL_API_STYLE);
+      return normalizeLocalApiStyle(saved || 'ollama');
+    }
+
+    function isOllamaEnabled() {
+      return localStorage.getItem(STORAGE_KEY_OLLAMA_ENABLED) === 'true';
+    }
+
+    function updateProviderUI() {
+      const ollamaEnabled = isOllamaEnabled();
+      const ollamaOption = providerSelectEl.querySelector('option[value="ollama"]');
+      if (ollamaOption) {
+        ollamaOption.disabled = !ollamaEnabled;
+        ollamaOption.textContent = ollamaEnabled ? 'Ollama / Local (enabled)' : 'Ollama / Local (disabled)';
+      }
+
+      enableOllamaToggleEl.checked = ollamaEnabled;
+      ollamaSettingsEl.classList.toggle('d-none', !ollamaEnabled);
+      localApiStyleEl.value = getLocalApiStyle();
+      ollamaBaseUrlEl.value = getOllamaBaseUrl();
+
+      if (!ollamaEnabled && getCurrentProvider() === 'ollama') {
+        providerSelectEl.value = 'openai';
+        localStorage.setItem(STORAGE_KEY_PROVIDER, 'openai');
+      }
+
+      const provider = getCurrentProvider();
+      selectedProviderForKeyEl.textContent = providerLabel(provider);
+      updateApiKeyUI();
+    }
+
+    function rebuildModelOptions() {
+      const configuredProviders = getConfiguredProviders();
+      updateActiveModelProviderOptions(configuredProviders);
+      const providerFilter = getActiveModelProviderFilter();
+      const visibleProviders = providerFilter === 'all'
+        ? configuredProviders
+        : configuredProviders.filter((provider) => provider === providerFilter);
+
+      const current = modelSelectEl.value;
+      const savedTarget = localStorage.getItem(STORAGE_KEY_ACTIVE_TARGET) || localStorage.getItem(STORAGE_KEY_MODEL) || '';
+
+      modelSelectEl.innerHTML = '';
+
+      const targets = [];
+      visibleProviders.forEach((provider) => {
+        const models = discoveredModelsByProvider[provider] || [];
+        if (models.length === 0) return;
+
+        const group = document.createElement('optgroup');
+        group.label = providerLabel(provider);
+        models.forEach((modelId) => {
+          const target = makeTargetValue(provider, modelId);
+          targets.push({ provider, model: modelId, target });
+          const opt = document.createElement('option');
+          opt.value = target;
+          opt.textContent = `${modelDisplayName(modelId)} (${modelId})`;
+          group.appendChild(opt);
+        });
+
+        modelSelectEl.appendChild(group);
+      });
+
+      if (targets.length === 0) {
+        modelCodeLabelEl.textContent = '—';
+        renderModelTable([]);
+        return;
+      }
+
+      const targetValues = targets.map((t) => t.target);
+      if (savedTarget && targetValues.includes(savedTarget)) modelSelectEl.value = savedTarget;
+      else if (current && targetValues.includes(current)) modelSelectEl.value = current;
+      else modelSelectEl.value = targetValues[0];
+
+      const active = parseTargetValue(modelSelectEl.value);
+      modelCodeLabelEl.textContent = `${providerLabel(active.provider)} / ${active.model}`;
+      localStorage.setItem(STORAGE_KEY_ACTIVE_TARGET, modelSelectEl.value);
+      localStorage.setItem(STORAGE_KEY_MODEL, modelSelectEl.value);
+      renderModelTable(targets);
+    }
+
+    function setModelOptions(models, provider = getCurrentProvider()) {
+      discoveredModelsByProvider[provider] = Array.isArray(models) ? [...models] : [];
+      rebuildModelOptions();
+    }
+
+    function updateApiKeyUI() {
+      renderApiKeyList();
+    }
+
+    function loadHistory() {
+      try { return JSON.parse(localStorage.getItem(STORAGE_KEY_HIST) || '[]'); }
+      catch { return []; }
+    }
+
+    function saveToHistory(promptText) {
+      if (!promptText.trim()) return;
+      let history = loadHistory().filter(h => h !== promptText);
+      history.unshift(promptText);
+      localStorage.setItem(STORAGE_KEY_HIST, JSON.stringify(history.slice(0, MAX_STORED)));
+    }
+
+    function truncate(str, len) {
+      return str.length > len ? str.slice(0, len).trimEnd() + '…' : str;
+    }
+
+    function renderHistory() {
+      const history = loadHistory();
+      historyList.innerHTML = '';
+      if (history.length === 0) {
+        toggleHistoryBtn.classList.add('d-none');
+        return;
+      }
+      const visible = showAllHistory ? history : history.slice(0, INITIAL_VISIBLE);
+      visible.forEach(item => {
+        const el = document.createElement('button');
+        el.type = 'button';
+        el.className = 'history-item w-100 text-start';
+        el.title = item;
+        el.textContent = truncate(item, TRUNCATE_LEN);
+        el.addEventListener('click', () => {
+          systemPromptEl.value = item;
+          setTopStatus('Loaded system prompt from history.', 'info');
+        });
+        historyList.appendChild(el);
+      });
+
+      const extra = history.length - INITIAL_VISIBLE;
+      if (extra > 0 && !showAllHistory) {
+        toggleHistoryBtn.textContent = `${extra} more…`;
+        toggleHistoryBtn.classList.remove('d-none');
+      } else if (showAllHistory && history.length > INITIAL_VISIBLE) {
+        toggleHistoryBtn.textContent = 'Show fewer';
+        toggleHistoryBtn.classList.remove('d-none');
+      } else {
+        toggleHistoryBtn.classList.add('d-none');
+      }
+    }
+
+    function preferredModelOrder(a, b) {
+      const score = (id) => {
+        if (id === 'gpt-4o-mini') return 0;
+        if (id === 'gpt-4o') return 1;
+        if (id.startsWith('gpt-4.1')) return 2;
+        if (id.startsWith('gpt-4')) return 3;
+        if (id.startsWith('o4')) return 4;
+        if (id.startsWith('o3')) return 5;
+        if (id.startsWith('gpt-')) return 6;
+        if (id.startsWith('o')) return 7;
+        return 99;
+      };
+      const diff = score(a) - score(b);
+      return diff !== 0 ? diff : a.localeCompare(b);
+    }
+
+    async function loadOllamaModels(options = {}) {
+      const { silent = false, apiKey = '' } = options;
+      const baseUrl = getOllamaBaseUrl();
+      const localApiStyle = getLocalApiStyle();
+      const isOpenAICompatibleLocal = localApiStyle === 'openai';
+      const url = `${baseUrl}${isOpenAICompatibleLocal ? '/v1/models' : '/api/tags'}`;
+      const effectiveApiKey = String(apiKey || getApiKeyForProvider('ollama', { promptIfMissing: false }) || '').trim();
+
+      if (!effectiveApiKey) {
+        setModelOptions([], 'ollama');
+        appendMonitor('OLLAMA_MODEL_DISCOVERY_SKIPPED', {
+          endpoint: baseUrl,
+          apiStyle: localApiStyle,
+          reason: 'No API key set for Ollama / Local provider'
+        });
+        if (!silent) statusLine.textContent = 'No API key set for Ollama / Local provider.';
+        return;
+      }
+
+      try {
+        if (!silent) statusLine.textContent = isOpenAICompatibleLocal ? 'Loading local OpenAI-compatible models…' : 'Loading Ollama models…';
+        appendMonitor('OLLAMA_MODEL_DISCOVERY_REQUEST', {
+          url,
+          method: 'GET',
+          headers: redactAuth({ Authorization: `Bearer ${effectiveApiKey}` })
+        });
+
+        const response = await fetch(url, {
+          method: 'GET',
+          headers: { Authorization: `Bearer ${effectiveApiKey}` }
+        });
+        appendMonitor('OLLAMA_MODEL_DISCOVERY_RESPONSE', { status: response.status, ok: response.ok });
+
+        if (!response.ok) {
+          const body = await response.text();
+          appendMonitor('OLLAMA_MODEL_DISCOVERY_ERROR_BODY', body);
+          throw new Error(`Ollama model list error ${response.status}`);
+        }
+
+        const payload = await response.json();
+        const ids = isOpenAICompatibleLocal
+          ? (payload.data || []).map((m) => m.id).filter(Boolean).sort(preferredModelOrder)
+          : (payload.models || []).map((m) => m.name).filter(Boolean).sort((a, b) => a.localeCompare(b));
+        setModelOptions(ids, 'ollama');
+        appendMonitor('OLLAMA_MODEL_DISCOVERY_PARSED', { count: ids.length, first: ids.slice(0, 10) });
+        setMonitorErrorState(false);
+
+        if (!silent) statusLine.textContent = isOpenAICompatibleLocal
+          ? `Loaded ${ids.length} local OpenAI-compatible models`
+          : `Loaded ${ids.length} Ollama models`;
+      } catch (err) {
+        const endpoint = getOllamaBaseUrl();
+        const errorMessage = String(err?.message || err || 'Unknown error');
+        const likelyCors = isLikelyCorsPreflightFailure(errorMessage);
+        setModelOptions([], 'ollama');
+        appendMonitor('OLLAMA_MODEL_DISCOVERY_FAILED', {
+          endpoint,
+          apiStyle: localApiStyle,
+          error: errorMessage,
+          likelyCorsPreflight: likelyCors,
+          suggestion: likelyCors
+            ? 'Server likely rejected browser preflight (OPTIONS). Allow CORS + OPTIONS on local server or use a same-origin proxy.'
+            : 'Inspect server logs for endpoint/auth errors.'
+        });
+        setMonitorExpanded(true);
+        setMonitorErrorState(true);
+        if (!silent) statusLine.textContent = likelyCors
+          ? `Local model discovery blocked by browser CORS/preflight at ${endpoint}.`
+          : (localApiStyle === 'openai'
+            ? `Could not load local OpenAI-compatible models from ${endpoint}.`
+            : `Could not load Ollama models from ${endpoint}.`);
+      }
+    }
+
+    async function loadModels(apiKey, options = {}) {
+      const { silent = false, provider = getCurrentProvider() } = options;
+
+      if (provider === 'ollama') {
+        await loadOllamaModels({ silent, apiKey });
+        return;
+      }
+
+      if (!apiKey) {
+        setModelOptions([], 'openai');
+        return;
+      }
+
+      try {
+        if (!silent) statusLine.textContent = 'Loading models…';
+        appendMonitor('MODEL_DISCOVERY_REQUEST', {
+          url: 'https://api.openai.com/v1/models',
+          method: 'GET',
+          headers: redactAuth({ Authorization: `Bearer ${apiKey}` })
+        });
+
+        const response = await fetch('https://api.openai.com/v1/models', {
+          method: 'GET',
+          headers: { Authorization: `Bearer ${apiKey}` }
+        });
+
+        appendMonitor('MODEL_DISCOVERY_RESPONSE', {
+          status: response.status,
+          ok: response.ok
+        });
+
+        if (!response.ok) {
+          const body = await response.text();
+          appendMonitor('MODEL_DISCOVERY_ERROR_BODY', body);
+          throw new Error(`Model list error ${response.status}`);
+        }
+
+        const payload = await response.json();
+        const ids = (payload.data || [])
+          .map((m) => m.id)
+          .filter(Boolean)
+          .filter((id) => id.startsWith('gpt-') || id.startsWith('o') || id.includes('chat'))
+          .sort(preferredModelOrder);
+
+        const unique = [...new Set([...DEFAULT_MODELS, ...ids])];
+        setModelOptions(unique, 'openai');
+        appendMonitor('MODEL_DISCOVERY_PARSED', { count: unique.length, first: unique.slice(0, 10) });
+        setMonitorErrorState(false);
+
+        if (!silent) statusLine.textContent = `Loaded ${unique.length} models`;
+      } catch (err) {
+        setModelOptions([], 'openai');
+        appendMonitor('MODEL_DISCOVERY_FAILED', String(err.message || err));
+        setMonitorExpanded(true);
+        setMonitorErrorState(true);
+        if (!silent) statusLine.textContent = 'Could not load model list; using defaults.';
+      }
+    }
+
+    async function refreshConfiguredModels(options = {}) {
+      const { silent = false, scope = 'all' } = options;
+
+      const refreshOpenAI = scope === 'all' || scope === 'openai';
+      const refreshOllama = scope === 'all' || scope === 'ollama';
+
+      if (refreshOpenAI) {
+        const openaiKey = getApiKeyForProvider('openai', { promptIfMissing: false });
+        if (openaiKey) await loadModels(openaiKey, { silent, provider: 'openai' });
+        else setModelOptions([], 'openai');
+      }
+
+      if (refreshOllama) {
+        const ollamaKey = getApiKeyForProvider('ollama', { promptIfMissing: false });
+        if (isOllamaEnabled() && getOllamaBaseUrl() && ollamaKey) await loadModels(ollamaKey, { silent, provider: 'ollama' });
+        else setModelOptions([], 'ollama');
+      }
+
+      rebuildModelOptions();
+    }
+
+    async function refreshOllamaIfActive(options = {}) {
+      const { silent = true, force = false } = options;
+      if (!isOllamaEnabled() || !getOllamaBaseUrl()) return;
+
+      const filter = getActiveModelProviderFilter();
+      if (filter !== 'ollama' && filter !== 'all') return;
+
+      const now = Date.now();
+      if (!force && now - lastOllamaModelRefreshAt < 4000) return;
+      lastOllamaModelRefreshAt = now;
+
+      const ollamaKey = getApiKeyForProvider('ollama', { promptIfMissing: false });
+      await loadModels(ollamaKey, { silent, provider: 'ollama' });
+      rebuildModelOptions();
+    }
+
+    function setMonitorErrorState(hasError) {
+      monitorCard.classList.toggle('border-danger', hasError);
+      monitorCard.classList.toggle('border-2', hasError);
+      monitorBox.classList.toggle('bg-danger-subtle', hasError);
+      monitorBox.classList.toggle('text-danger-emphasis', hasError);
+    }
+
+    function showError(message) {
+      errorMsg.textContent = message;
+      errorMsg.classList.remove('d-none');
+      setMonitorExpanded(true);
+      setMonitorErrorState(true);
+      setTopStatus('Request failed.', 'danger');
+    }
+
+    function clearError() {
+      errorMsg.classList.add('d-none');
+      errorMsg.textContent = '';
+      setMonitorErrorState(false);
+    }
+
+    function setMonitorExpanded(expanded) {
+      monitorCardBody.classList.toggle('d-none', !expanded);
+      setToggleButtonContent(toggleMonitorBtn, expanded, 'monitor');
+    }
+
+    function setModelExpanded(expanded) {
+      modelCardBody.classList.toggle('d-none', !expanded);
+      setToggleButtonContent(toggleModelBtn, expanded, 'model');
+    }
+
+    function setProviderCardExpanded(expanded) {
+      providerCardBody.classList.toggle('d-none', !expanded);
+      setToggleButtonContent(toggleProviderCardBtn, expanded, 'provider settings');
+    }
+
+    async function submit() {
+      const systemPrompt = systemPromptEl.value.trim();
+      const content = contentPromptEl.value.trim();
+      const activeTarget = getActiveTarget();
+      const model = activeTarget.model || 'gpt-4o-mini';
+      const provider = activeTarget.provider || getCurrentProvider();
+
+      if (!content) {
+        contentPromptEl.focus();
+        return;
+      }
+
+      if (!activeTarget.model) {
+        setTopStatus('No active model available. Define provider credentials/endpoints and refresh models.', 'secondary');
+        return;
+      }
+
+      clearError();
+      outputBox.classList.remove('empty');
+      outputBox.innerHTML = '';
+      fullText = '';
+      statusLine.textContent = 'Preparing request…';
+      submitBtn.disabled = true;
+      setTopStatus('Generating…', 'warning');
+
+      if (provider === 'ollama') {
+        await refreshOllamaIfActive({ silent: true, force: true });
+      }
+
+      if (systemPrompt) {
+        saveToHistory(systemPrompt);
+        renderHistory();
+      }
+
+      try {
+        const messages = [];
+        if (systemPrompt) messages.push({ role: 'system', content: systemPrompt });
+        messages.push({ role: 'user', content });
+
+        let response;
+        if (provider === 'ollama') {
+          const baseUrl = getOllamaBaseUrl();
+          const localApiStyle = getLocalApiStyle();
+          const isOpenAICompatibleLocal = localApiStyle === 'openai';
+          const localApiKey = getApiKeyForProvider('ollama');
+          if (!localApiKey) {
+            statusLine.textContent = '';
+            submitBtn.disabled = false;
+            setTopStatus('No API key set for Ollama / Local provider.', 'secondary');
+            return;
+          }
+          const requestPayload = { model, messages, stream: true };
+          const url = `${baseUrl}${isOpenAICompatibleLocal ? '/v1/chat/completions' : '/api/chat'}`;
+          appendMonitor('OLLAMA_CHAT_REQUEST', {
+            url,
+            method: 'POST',
+            headers: redactAuth({
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${localApiKey}`
+            }),
+            apiStyle: localApiStyle,
+            body: requestPayload
+          });
+
+          response = await fetch(url, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${localApiKey}`
+            },
+            body: JSON.stringify(requestPayload)
+          });
+        } else {
+          const apiKey = getApiKeyForProvider(provider);
+          if (!apiKey) {
+            statusLine.textContent = '';
+            submitBtn.disabled = false;
+            setTopStatus(`No API key set for ${providerLabel(provider)}.`, 'secondary');
+            return;
+          }
+
+          const requestPayload = { model, messages, stream: true };
+          appendMonitor('CHAT_REQUEST', {
+            url: 'https://api.openai.com/v1/chat/completions',
+            method: 'POST',
+            headers: redactAuth({
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${apiKey}`
+            }),
+            body: requestPayload
+          });
+
+          response = await fetch('https://api.openai.com/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              Authorization: `Bearer ${apiKey}`
+            },
+            body: JSON.stringify(requestPayload)
+          });
+        }
+
+        const responseHeaders = {};
+        response.headers.forEach((value, key) => {
+          if (/authorization|api-key/i.test(key)) return;
+          responseHeaders[key] = value;
+        });
+
+        appendMonitor(provider === 'ollama' ? 'OLLAMA_CHAT_RESPONSE_HEADERS' : 'CHAT_RESPONSE_HEADERS', {
+          status: response.status,
+          ok: response.ok,
+          headers: responseHeaders
+        });
+
+        if (!response.ok) {
+          const errBody = await response.text();
+          appendMonitor(provider === 'ollama' ? 'OLLAMA_CHAT_ERROR_BODY' : 'CHAT_ERROR_BODY', errBody);
+          const localStyleLabel = getLocalApiStyle() === 'openai' ? 'Local OpenAI-compatible API' : 'Ollama';
+          const providerLabel = provider === 'ollama' ? localStyleLabel : 'OpenAI API';
+          throw new Error(`${providerLabel} error ${response.status}: ${errBody}`);
+        }
+
+        if (!response.body) {
+          appendMonitor('CHAT_STREAM_ERROR', 'Streaming response body unavailable');
+          throw new Error('Streaming not supported by this browser response body');
+        }
+
+        const reader = response.body.getReader();
+        const decoder = new TextDecoder('utf-8');
+        let buffer = '';
+        let chunks = 0;
+
+        while (true) {
+          const { value, done } = await reader.read();
+          if (done) break;
+          buffer += decoder.decode(value, { stream: true });
+
+          const lines = buffer.split('\n');
+          buffer = lines.pop() || '';
+
+          for (const line of lines) {
+            const trimmed = line.trim();
+            if (!trimmed) continue;
+
+            const localApiStyle = provider === 'ollama' ? getLocalApiStyle() : 'openai';
+            const localOpenAICompat = provider === 'ollama' && localApiStyle === 'openai';
+            const payload = provider === 'ollama'
+              ? (localOpenAICompat ? (trimmed.startsWith('data:') ? trimmed.slice(5).trim() : '') : trimmed)
+              : (trimmed.startsWith('data:') ? trimmed.slice(5).trim() : '');
+            if (!payload) continue;
+
+            if ((provider !== 'ollama' || localOpenAICompat) && payload === '[DONE]') {
+              appendMonitor('CHAT_STREAM_DONE', 'Received [DONE] sentinel');
+              continue;
+            }
+
+            try {
+              const json = JSON.parse(payload);
+              const delta = provider === 'ollama'
+                ? (localOpenAICompat ? (json.choices?.[0]?.delta?.content || '') : (json.message?.content || ''))
+                : (json.choices?.[0]?.delta?.content || '');
+              if (delta) {
+                fullText += delta;
+                outputBox.innerHTML = marked.parse(fullText);
+                chunks += 1;
+                statusLine.textContent = `Streaming… (${chunks} chunks)`;
+                if (chunks % 20 === 0) {
+                  appendMonitor(provider === 'ollama' ? 'OLLAMA_CHAT_STREAM_PROGRESS' : 'CHAT_STREAM_PROGRESS', { chunks, chars: fullText.length });
+                }
+              }
+            } catch {
+              appendMonitor(provider === 'ollama' ? 'OLLAMA_CHAT_STREAM_NON_JSON' : 'CHAT_STREAM_NON_JSON', payload);
+            }
+          }
+        }
+
+        if (!fullText) {
+          outputBox.classList.add('empty');
+          outputBox.textContent = 'No text content returned.';
+        }
+
+        appendMonitor(provider === 'ollama' ? 'OLLAMA_CHAT_COMPLETE' : 'CHAT_COMPLETE', { chunks, chars: fullText.length, model });
+        statusLine.textContent = 'Done';
+        setTopStatus('Completed.', 'success');
+      } catch (err) {
+        if (!fullText) {
+          outputBox.classList.add('empty');
+          outputBox.textContent = 'Response will appear here…';
+        }
+        const message = String(err?.message || err || 'Unknown error');
+        const likelyCors = provider === 'ollama' && isLikelyCorsPreflightFailure(message);
+        statusLine.textContent = '';
+        appendMonitor(provider === 'ollama' ? 'OLLAMA_CHAT_FAILURE' : 'CHAT_FAILURE', {
+          error: message,
+          likelyCorsPreflight: likelyCors,
+          suggestion: likelyCors
+            ? 'Browser blocked request during CORS preflight. Local server must allow OPTIONS + Access-Control-Allow-* headers, or use a proxy.'
+            : null
+        });
+        if (likelyCors) {
+          showError('Local request blocked by browser CORS/preflight. Configure local server CORS/OPTIONS or use a same-origin proxy.');
+        } else {
+          showError(message);
+        }
+      } finally {
+        submitBtn.disabled = false;
+      }
+    }
+
+    copyBtn.addEventListener('click', async () => {
+      if (!fullText) return;
+      try {
+        await navigator.clipboard.writeText(fullText);
+      } catch {
+        const ta = document.createElement('textarea');
+        ta.value = fullText;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      copyBtn.textContent = 'Copied!';
+      copyBtn.classList.add('btn-success');
+      setTimeout(() => {
+        copyBtn.textContent = 'Copy to clipboard';
+        copyBtn.classList.remove('btn-success');
+      }, 1800);
+    });
+
+    copyMonitorBtn.addEventListener('click', async () => {
+      const logText = monitorBox.textContent || '';
+      if (!logText.trim()) return;
+      try {
+        await navigator.clipboard.writeText(logText);
+      } catch {
+        const ta = document.createElement('textarea');
+        ta.value = logText;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+      }
+      copyMonitorBtn.textContent = 'Copied monitor log!';
+      copyMonitorBtn.classList.add('btn-success');
+      setTimeout(() => {
+        copyMonitorBtn.textContent = 'Copy monitor log';
+        copyMonitorBtn.classList.remove('btn-success');
+      }, 1800);
+    });
+
+    apiKeyListEl.addEventListener('click', (event) => {
+      const button = event.target.closest('button[data-action]');
+      if (!button) return;
+
+      const action = button.getAttribute('data-action');
+      const provider = button.getAttribute('data-provider') || 'openai';
+
+      if (action === 'remove-key') {
+        setApiKeyForProvider(provider, '');
+        updateApiKeyUI();
+        setTopStatus(`${providerLabel(provider)} API key removed.`, 'secondary');
+        refreshConfiguredModels({ silent: false, scope: provider });
+        return;
+      }
+
+      const existing = getApiKeyForProvider(provider, { promptIfMissing: false });
+      const promptText = existing
+        ? `Enter your new ${providerLabel(provider)} API key (leave blank to remove):`
+        : `Enter your ${providerLabel(provider)} API key:`;
+      const entered = prompt(promptText, existing || '');
+      if (entered === null) return;
+
+      setApiKeyForProvider(provider, entered);
+      updateApiKeyUI();
+
+      const updated = getApiKeyForProvider(provider, { promptIfMissing: false });
+      if (updated) {
+        setTopStatus(`${providerLabel(provider)} API key saved.`, 'info');
+      } else {
+        setTopStatus(`${providerLabel(provider)} API key removed.`, 'secondary');
+      }
+
+      refreshConfiguredModels({ silent: false, scope: provider });
+    });
+
+    toggleHistoryBtn.addEventListener('click', () => {
+      showAllHistory = !showAllHistory;
+      renderHistory();
+    });
+
+    refreshModelsBtn.addEventListener('click', async () => {
+      const scope = activeModelProviderSelectEl.value || 'all';
+      await refreshConfiguredModels({ silent: false, scope });
+      if (scope === 'all') setTopStatus('Model list refreshed for all configured providers.', 'info');
+      else setTopStatus(`Model list refreshed for ${providerLabel(scope)}.`, 'info');
+    });
+
+    providerSelectEl.addEventListener('change', async () => {
+      const provider = getCurrentProvider();
+      localStorage.setItem(STORAGE_KEY_PROVIDER, provider);
+
+      if (provider === 'openai' || provider === 'ollama') {
+        localStorage.setItem(STORAGE_KEY_ACTIVE_MODEL_PROVIDER, provider);
+      }
+
+      updateProviderUI();
+
+      await refreshConfiguredModels({ silent: false, scope: provider });
+      if (provider === 'ollama') {
+        setTopStatus('Provider set to Ollama / Local.', 'info');
+      } else {
+        setTopStatus(`Provider set to ${providerLabel(provider)}.`, 'info');
+      }
+    });
+
+    enableOllamaToggleEl.addEventListener('change', async () => {
+      localStorage.setItem(STORAGE_KEY_OLLAMA_ENABLED, String(enableOllamaToggleEl.checked));
+      updateProviderUI();
+
+      if (enableOllamaToggleEl.checked) {
+        setTopStatus('Ollama / Local provider enabled.', 'info');
+      } else {
+        setTopStatus('Ollama / Local provider disabled.', 'secondary');
+      }
+
+      refreshConfiguredModels({ silent: false, scope: 'ollama' });
+    });
+
+    ollamaBaseUrlEl.addEventListener('change', () => {
+      const normalized = normalizeOllamaBaseUrl(ollamaBaseUrlEl.value);
+      ollamaBaseUrlEl.value = normalized;
+      localStorage.setItem(STORAGE_KEY_OLLAMA_BASE_URL, normalized);
+      setTopStatus('Local model server base URL saved.', 'info');
+      refreshConfiguredModels({ silent: false, scope: 'ollama' });
+    });
+
+    localApiStyleEl.addEventListener('change', () => {
+      const style = normalizeLocalApiStyle(localApiStyleEl.value);
+      localStorage.setItem(STORAGE_KEY_LOCAL_API_STYLE, style);
+      setTopStatus(style === 'openai' ? 'Local API format set to OpenAI-compatible.' : 'Local API format set to Ollama native.', 'info');
+      refreshConfiguredModels({ silent: false, scope: 'ollama' });
+    });
+
+    activeModelProviderSelectEl.addEventListener('change', async () => {
+      localStorage.setItem(STORAGE_KEY_ACTIVE_MODEL_PROVIDER, activeModelProviderSelectEl.value || 'all');
+      await refreshOllamaIfActive({ silent: false, force: true });
+      rebuildModelOptions();
+      const selected = activeModelProviderSelectEl.value || 'all';
+      if (selected === 'all') {
+        setTopStatus('Active model provider set to all configured providers.', 'info');
+      } else {
+        setTopStatus(`Active model provider set to ${providerLabel(selected)}.`, 'info');
+      }
+    });
+
+    modelSelectEl.addEventListener('focus', async () => {
+      await refreshOllamaIfActive({ silent: true, force: false });
+    });
+
+    modelSelectEl.addEventListener('change', () => {
+      modelCodeLabelEl.textContent = modelSelectEl.value || '—';
+      if (modelSelectEl.value) {
+        localStorage.setItem(STORAGE_KEY_ACTIVE_TARGET, modelSelectEl.value);
+        localStorage.setItem(STORAGE_KEY_MODEL, modelSelectEl.value);
+      }
+      const active = parseTargetValue(modelSelectEl.value || '');
+      modelCodeLabelEl.textContent = active.model
+        ? `${providerLabel(active.provider)} / ${active.model}`
+        : '—';
+    });
+
+    toggleModelBtn.addEventListener('click', () => {
+      const expanded = modelCardBody.classList.contains('d-none');
+      setModelExpanded(expanded);
+    });
+
+    toggleProviderCardBtn.addEventListener('click', () => {
+      const expanded = providerCardBody.classList.contains('d-none');
+      setProviderCardExpanded(expanded);
+    });
+
+    clearSavedStateBtn.addEventListener('click', () => {
+      localStorage.removeItem(STORAGE_KEY_MODEL);
+      localStorage.removeItem(STORAGE_KEY_CONTENT);
+      contentPromptEl.value = '';
+      if (getCurrentProvider() === 'ollama') {
+        refreshConfiguredModels({ silent: true });
+      } else {
+        refreshConfiguredModels({ silent: true });
+      }
+      setTopStatus('Cleared saved model and content.', 'info');
+    });
+
+    clearMonitorBtn.addEventListener('click', () => {
+      monitorBox.textContent = 'Monitor cleared.';
+      setMonitorErrorState(false);
+    });
+
+    toggleMonitorBtn.addEventListener('click', () => {
+      const expanded = monitorCardBody.classList.contains('d-none');
+      setMonitorExpanded(expanded);
+    });
+
+    submitBtn.addEventListener('click', submit);
+
+    contentPromptEl.addEventListener('keydown', (e) => {
+      if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
+        e.preventDefault();
+        submit();
+      }
+    });
+
+    contentPromptEl.addEventListener('input', () => {
+      localStorage.setItem(STORAGE_KEY_CONTENT, contentPromptEl.value);
+    });
+
+    contentPromptEl.addEventListener('paste', (e) => {
+      const text = e.clipboardData?.getData('text');
+      if (!text) return;
+      if (/%[0-9A-Fa-f]{2}/.test(text)) {
+        try {
+          const decoded = decodeURIComponent(text);
+          if (decoded !== text) {
+            e.preventDefault();
+            const ta = e.target;
+            const start = ta.selectionStart;
+            const end = ta.selectionEnd;
+            ta.value = ta.value.slice(0, start) + decoded + ta.value.slice(end);
+            const cursor = start + decoded.length;
+            ta.selectionStart = ta.selectionEnd = cursor;
+            localStorage.setItem(STORAGE_KEY_CONTENT, ta.value);
+          }
+        } catch {
+          // malformed URI sequence; allow default paste
+        }
+      }
+    });
+
+    (function init() {
+      detectFontAwesomeAvailability();
+
+      const legacyApiKey = localStorage.getItem(STORAGE_KEY_API);
+      if (legacyApiKey && legacyApiKey.trim()) {
+        const keys = loadApiKeys();
+        if (!keys.openai) {
+          keys.openai = legacyApiKey.trim();
+          saveApiKeys(keys);
+        }
+        localStorage.removeItem(STORAGE_KEY_API);
+      }
+
+      if (localStorage.getItem(STORAGE_KEY_OLLAMA_ENABLED) === null) {
+        localStorage.setItem(STORAGE_KEY_OLLAMA_ENABLED, 'false');
+      }
+      if (!localStorage.getItem(STORAGE_KEY_OLLAMA_BASE_URL)) {
+        localStorage.setItem(STORAGE_KEY_OLLAMA_BASE_URL, DEFAULT_OLLAMA_URL);
+      }
+      if (!localStorage.getItem(STORAGE_KEY_LOCAL_API_STYLE)) {
+        localStorage.setItem(STORAGE_KEY_LOCAL_API_STYLE, 'ollama');
+      }
+
+      const savedProvider = localStorage.getItem(STORAGE_KEY_PROVIDER) || 'openai';
+      providerSelectEl.value = savedProvider === 'ollama' && !isOllamaEnabled() ? 'openai' : savedProvider;
+      localStorage.setItem(STORAGE_KEY_PROVIDER, providerSelectEl.value);
+
+      localStorage.setItem(STORAGE_KEY_ACTIVE_MODEL_PROVIDER, providerSelectEl.value);
+
+      updateProviderUI();
+
+      const history = loadHistory();
+      if (history.length > 0) {
+        systemPromptEl.value = history[0];
+      }
+      const savedContent = localStorage.getItem(STORAGE_KEY_CONTENT);
+      if (savedContent) {
+        contentPromptEl.value = savedContent;
+      }
+      const storedApiKey = getApiKeyForProvider(getCurrentProvider(), { promptIfMissing: false });
+      refreshConfiguredModels({ silent: true, scope: getCurrentProvider() });
+      renderHistory();
+      updateApiKeyUI();
+      appendMonitor('INIT', {
+        app: 'openai-prompt',
+        provider: getCurrentProvider(),
+        ollamaEnabled: isOllamaEnabled(),
+        ollamaBaseUrl: getOllamaBaseUrl(),
+        localApiStyle: getLocalApiStyle(),
+        modelDefault: modelSelectEl.value,
+        hasSavedContent: Boolean(savedContent),
+        savedModel: localStorage.getItem(STORAGE_KEY_MODEL) || null,
+        hasStoredApiKey: Boolean(storedApiKey)
+      });
+      setProviderCardExpanded(true);
+      setModelExpanded(true);
+      setMonitorExpanded(false);
+      setTopStatus('Ready. Enter content and submit.', 'secondary');
+    })();
+  </script>
+</body>
+</html>
