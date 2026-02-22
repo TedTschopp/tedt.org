@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Morph — Text Transformer</title>
+  <meta name="description" content="A scriptable scratchpad for developers. Transform text with 65 built-in operations — encoding, formatting, hashing, case conversion, and more. All client-side.">
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <script>
+    (function loadStylesheets() {
+      const isFileProtocol = window.location.protocol === 'file:';
+      document.documentElement.setAttribute('data-file-protocol', String(isFileProtocol));
+
+      const stylesheets = isFileProtocol
+        ? [
+            'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
+            'https://tedt.org/css/consolidated-fonts.css'
+          ]
+        : ['../css/bootstrap-build.css', '../css/consolidated-fonts.css'];
+
+      for (const href of stylesheets) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        document.head.appendChild(link);
+      }
+    })();
+  </script>
+  <style>
+    body { background: var(--bs-body-bg); }
+    .app-wrap { max-width: 1120px; }
+    .muted-note { color: var(--bs-secondary-color); font-size: 0.9rem; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    /* ── Command palette ── */
+    .picker-backdrop {
+      position: fixed; inset: 0; z-index: 1050;
+      background: rgba(0,0,0,0.55); display: none;
+      align-items: flex-start; justify-content: center; padding-top: 12vh;
+    }
+    .picker-backdrop.show { display: flex; }
+    .picker-box {
+      width: 100%; max-width: 560px;
+      background: var(--bs-body-bg); border: 1px solid var(--bs-border-color);
+      border-radius: 0.75rem; overflow: hidden;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.5);
+    }
+    .picker-search {
+      width: 100%; border: none; border-bottom: 1px solid var(--bs-border-color);
+      background: transparent; color: var(--bs-body-color);
+      padding: 0.85rem 1rem; font-size: 1.05rem; outline: none;
+    }
+    .picker-search::placeholder { color: var(--bs-secondary-color); }
+    .picker-results {
+      max-height: 340px; overflow-y: auto; padding: 0.25rem 0;
+    }
+    .picker-item {
+      display: flex; align-items: center; gap: 0.65rem;
+      padding: 0.5rem 1rem; cursor: pointer; transition: background 0.1s;
+    }
+    .picker-item:hover, .picker-item.active {
+      background: var(--bs-tertiary-bg);
+    }
+    .picker-item .pi-name { font-weight: 500; }
+    .picker-item .pi-desc { color: var(--bs-secondary-color); font-size: 0.85rem; }
+    .picker-item .pi-cat {
+      margin-left: auto; font-size: 0.75rem; white-space: nowrap;
+      color: var(--bs-secondary-color); opacity: 0.7;
+    }
+
+    /* ── Editor area ── */
+    #editor {
+      min-height: 380px; resize: vertical;
+      font-size: 0.95rem; line-height: 1.5; tab-size: 2;
+    }
+
+    /* ── Status bar ── */
+    .status-bar {
+      display: flex; align-items: center; gap: 0.75rem;
+      padding: 0.4rem 0.75rem; font-size: 0.85rem;
+      border-top: 1px solid var(--bs-border-color);
+      background: var(--bs-tertiary-bg); border-radius: 0 0 0.375rem 0.375rem;
+    }
+    .status-bar .status-msg { flex: 1; min-width: 0; }
+    .status-bar .status-info { color: var(--bs-info-text-emphasis); }
+    .status-bar .status-error { color: var(--bs-danger-text-emphasis); }
+    .status-bar .status-counts { color: var(--bs-secondary-color); white-space: nowrap; }
+
+    /* ── Category chips ── */
+    .cat-chips { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+    .cat-chip {
+      padding: 0.2rem 0.6rem; border-radius: 1rem; font-size: 0.8rem;
+      cursor: pointer; border: 1px solid var(--bs-border-color);
+      background: transparent; color: var(--bs-body-color); transition: all 0.15s;
+    }
+    .cat-chip:hover { background: var(--bs-tertiary-bg); }
+    .cat-chip.active {
+      background: var(--bs-primary); color: #fff;
+      border-color: var(--bs-primary);
+    }
+
+    /* ── Script grid ── */
+    .script-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 0.5rem;
+    }
+    .script-btn {
+      display: flex; flex-direction: column; align-items: flex-start;
+      padding: 0.6rem 0.75rem; border-radius: 0.375rem;
+      background: var(--bs-tertiary-bg); border: 1px solid var(--bs-border-color);
+      cursor: pointer; transition: all 0.15s; text-align: left;
+      color: var(--bs-body-color);
+    }
+    .script-btn:hover {
+      border-color: var(--bs-primary); background: rgba(var(--bs-primary-rgb), 0.1);
+    }
+    .script-btn .sb-name { font-weight: 500; font-size: 0.9rem; }
+    .script-btn .sb-desc { font-size: 0.78rem; color: var(--bs-secondary-color); margin-top: 2px; }
+
+    /* ── Keyboard shortcut hint ── */
+    kbd {
+      display: inline-block; padding: 0.15rem 0.4rem; font-size: 0.78rem;
+      border-radius: 0.25rem; border: 1px solid var(--bs-border-color);
+      background: var(--bs-tertiary-bg); color: var(--bs-secondary-color);
+    }
+
+    /* ── History panel ── */
+    .history-item {
+      display: flex; justify-content: space-between; align-items: center;
+      padding: 0.35rem 0; border-bottom: 1px solid var(--bs-border-color);
+      font-size: 0.85rem; cursor: pointer;
+    }
+    .history-item:hover { color: var(--bs-primary); }
+    .history-item:last-child { border-bottom: none; }
+  </style>
+</head>
+<body>
+  <main class="container app-wrap py-4">
+    <!-- ── Header ── -->
+    <div class="mb-3">
+      <h1 class="h2 mb-1">Morph <span class="text-body-secondary h5">— Text Transformer</span></h1>
+      <p class="mb-0 muted-note">
+        A scriptable scratchpad for developers. Pick a script (or press <kbd class="mod-key">Ctrl</kbd>+<kbd>B</kbd>) to transform your text.
+        <span id="scriptCount" class="text-body-secondary"></span>
+      </p>
+    </div>
+
+    <!-- ── Status ── -->
+    <div id="topStatus" class="alert alert-secondary py-2" role="status" aria-live="polite">Ready — paste text below, then pick a transformation.</div>
+
+    <!-- ── Script picker trigger + last-run ── -->
+    <div class="d-flex align-items-center gap-2 mb-3 flex-wrap">
+      <button id="openPickerBtn" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search me-1" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/></svg>
+        Pick Script&hellip;
+      </button>
+      <button id="rerunBtn" class="btn btn-outline-secondary d-none" data-title-tpl="Re-run last script ({mod}+Shift+B)" title="Re-run last script (Ctrl+Shift+B)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-repeat me-1" viewBox="0 0 16 16"><path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41m-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9"/><path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5 5 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"/></svg>
+        <span id="rerunLabel">Re-run</span>
+      </button>
+      <button id="undoBtn" class="btn btn-outline-secondary d-none" title="Undo last transformation">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-counterclockwise me-1" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2z"/><path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466"/></svg>
+        Undo
+      </button>
+      <button id="clearBtn" class="btn btn-outline-secondary" data-title-tpl="Clear editor ({mod}+N)" title="Clear editor (Ctrl+N)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark me-1" viewBox="0 0 16 16"><path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/></svg>
+        Clear
+      </button>
+      <button id="copyBtn" class="btn btn-outline-secondary" title="Copy to clipboard">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard me-1" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/></svg>
+        Copy
+      </button>
+    </div>
+
+    <!-- ── Editor Card ── -->
+    <div class="card mb-3">
+      <div class="card-body p-0">
+        <textarea id="editor" class="form-control mono border-0 rounded-bottom-0" rows="16"
+          placeholder="Paste your text here&#10;&#10;Then pick a script to transform it…"
+          spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+        <div class="status-bar">
+          <span id="statusMsg" class="status-msg"></span>
+          <span id="statusCounts" class="status-counts">0 chars · 0 words · 1 line</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Scripts Browser (always visible) ── -->
+    <section class="card mb-3">
+      <div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <strong>Scripts</strong>
+        <div class="d-flex align-items-center gap-2 flex-grow-1" style="max-width:360px;">
+          <input id="filterInput" class="form-control form-control-sm" type="search" placeholder="Filter scripts…" aria-label="Filter scripts">
+        </div>
+      </div>
+      <div class="card-body">
+        <div id="catChips" class="cat-chips mb-3"></div>
+        <div id="scriptGrid" class="script-grid"></div>
+        <p id="noScriptsMsg" class="text-body-secondary d-none mb-0">No scripts match this filter.</p>
+      </div>
+    </section>
+
+    <!-- ── History ── -->
+    <section id="historySection" class="card mb-3 d-none">
+      <div class="card-header d-flex justify-content-between align-items-center">
+        <strong>Recent Transformations</strong>
+        <button id="clearHistoryBtn" class="btn btn-outline-secondary btn-sm">Clear</button>
+      </div>
+      <div class="card-body">
+        <div id="historyList"></div>
+      </div>
+    </section>
+
+    <!-- ── Info ── -->
+    <div class="alert alert-secondary mb-0">
+      <strong>About Morph.</strong> Inspired by <a href="https://github.com/IvanMathy/Boop" target="_blank" rel="noopener">IvanMathy/Boop</a> (MIT).
+      All transformations run entirely in your browser — nothing leaves your machine.
+      Press <kbd class="mod-key">Ctrl</kbd>+<kbd>B</kbd> to open the script picker, <kbd class="mod-key">Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>B</kbd> to re-run the last script.
+    </div>
+  </main>
+
+  <!-- ── Command Palette Overlay ── -->
+  <div id="pickerBackdrop" class="picker-backdrop" role="dialog" aria-modal="true" aria-label="Script picker">
+    <div class="picker-box">
+      <input id="pickerSearch" class="picker-search" type="text" placeholder="Search scripts… (type * to list all)" autocomplete="off" autofocus>
+      <div id="pickerResults" class="picker-results" role="listbox"></div>
+    </div>
+  </div>
+
+  <!-- ── Scripts ── -->
+  <script src="lib/morph/morph-scripts.js"></script>
+  <script>
+  (() => {
+    'use strict';
+
+    /* Platform-aware modifier key label (⌘ on Mac, Ctrl elsewhere) */
+    const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
+    const modLabel = isMac ? '⌘' : 'Ctrl';
+    document.querySelectorAll('.mod-key').forEach(el => { el.textContent = modLabel; });
+    document.querySelectorAll('[data-title-tpl]').forEach(el => {
+      el.title = el.dataset.titleTpl.replace('{mod}', modLabel);
+    });
+
+    const BS = window.MorphScripts;
+    const allScripts = BS.list();
+    const allCategories = BS.categories();
+
+    // ── DOM refs ──
+    const editor = document.getElementById('editor');
+    const topStatus = document.getElementById('topStatus');
+    const statusMsg = document.getElementById('statusMsg');
+    const statusCounts = document.getElementById('statusCounts');
+    const openPickerBtn = document.getElementById('openPickerBtn');
+    const rerunBtn = document.getElementById('rerunBtn');
+    const rerunLabel = document.getElementById('rerunLabel');
+    const undoBtn = document.getElementById('undoBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const copyBtn = document.getElementById('copyBtn');
+    const filterInput = document.getElementById('filterInput');
+    const catChips = document.getElementById('catChips');
+    const scriptGrid = document.getElementById('scriptGrid');
+    const noScriptsMsg = document.getElementById('noScriptsMsg');
+    const pickerBackdrop = document.getElementById('pickerBackdrop');
+    const pickerSearch = document.getElementById('pickerSearch');
+    const pickerResults = document.getElementById('pickerResults');
+    const historySection = document.getElementById('historySection');
+    const historyList = document.getElementById('historyList');
+    const clearHistoryBtn = document.getElementById('clearHistoryBtn');
+    const scriptCountEl = document.getElementById('scriptCount');
+
+    // ── State ──
+    let lastScript = null;
+    let previousText = null;
+    let activeCategory = null;
+    let pickerIndex = 0;
+    let pickerFiltered = [];
+    const history = [];
+
+    scriptCountEl.textContent = `(${allScripts.length} scripts loaded)`;
+
+    // ── Helpers ──
+    function updateCounts() {
+      const t = editor.value;
+      const chars = [...t].length;
+      const words = t.trim() ? (t.trim().match(/\S+/g) || []).length : 0;
+      const lines = t.split('\n').length;
+      statusCounts.textContent = `${chars.toLocaleString()} chars · ${words.toLocaleString()} words · ${lines.toLocaleString()} line${lines !== 1 ? 's' : ''}`;
+    }
+
+    function setStatus(msg, type) {
+      statusMsg.textContent = msg || '';
+      statusMsg.className = 'status-msg' + (type === 'error' ? ' status-error' : type === 'info' ? ' status-info' : '');
+      if (type === 'error') {
+        topStatus.className = 'alert alert-danger py-2';
+        topStatus.textContent = msg;
+      } else if (type === 'info') {
+        topStatus.className = 'alert alert-info py-2';
+        topStatus.textContent = msg;
+      } else {
+        topStatus.className = 'alert alert-success py-2';
+        topStatus.textContent = msg || 'Ready.';
+      }
+    }
+
+    // ── Run a script ──
+    async function runScript(script) {
+      const inputText = editor.value;
+      previousText = inputText;
+      undoBtn.classList.remove('d-none');
+
+      try {
+        const result = await BS.run(script, inputText);
+        editor.value = result.text;
+        updateCounts();
+
+        if (result.error) {
+          setStatus(script.meta.name + ': ' + result.error, 'error');
+        } else if (result.info) {
+          setStatus(script.meta.name + ' — ' + result.info, 'info');
+        } else {
+          setStatus(script.meta.name + ' applied.', 'success');
+        }
+
+        lastScript = script;
+        rerunBtn.classList.remove('d-none');
+        rerunLabel.textContent = 'Re-run: ' + script.meta.name;
+
+        // Track history
+        history.unshift({ name: script.meta.name, time: new Date() });
+        if (history.length > 20) history.length = 20;
+        renderHistory();
+      } catch (e) {
+        setStatus('Error: ' + e.message, 'error');
+      }
+    }
+
+    // ── Command Palette ──
+    function openPicker() {
+      pickerSearch.value = '';
+      pickerBackdrop.classList.add('show');
+      pickerSearch.focus();
+      updatePickerResults('');
+    }
+
+    function closePicker() {
+      pickerBackdrop.classList.remove('show');
+      editor.focus();
+    }
+
+    function updatePickerResults(query) {
+      pickerFiltered = BS.search(query || '*');
+      pickerIndex = 0;
+      renderPickerList();
+    }
+
+    function renderPickerList() {
+      pickerResults.innerHTML = '';
+      pickerFiltered.forEach((s, i) => {
+        const div = document.createElement('div');
+        div.className = 'picker-item' + (i === pickerIndex ? ' active' : '');
+        div.setAttribute('role', 'option');
+        div.innerHTML = `<span class="pi-name">${esc(s.meta.name)}</span>
+          <span class="pi-desc">${esc(s.meta.description)}</span>
+          <span class="pi-cat">${esc(s.meta.category || '')}</span>`;
+        div.addEventListener('click', () => { closePicker(); runScript(s); });
+        div.addEventListener('mouseenter', () => {
+          pickerIndex = i;
+          document.querySelectorAll('.picker-item').forEach((el, j) =>
+            el.classList.toggle('active', j === i));
+        });
+        pickerResults.appendChild(div);
+      });
+    }
+
+    function esc(str) {
+      const d = document.createElement('div');
+      d.textContent = str;
+      return d.innerHTML;
+    }
+
+    pickerSearch.addEventListener('input', () => updatePickerResults(pickerSearch.value));
+    pickerSearch.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') { closePicker(); e.preventDefault(); return; }
+      if (e.key === 'ArrowDown') { pickerIndex = Math.min(pickerIndex + 1, pickerFiltered.length - 1); renderPickerList(); scrollPickerItem(); e.preventDefault(); return; }
+      if (e.key === 'ArrowUp') { pickerIndex = Math.max(pickerIndex - 1, 0); renderPickerList(); scrollPickerItem(); e.preventDefault(); return; }
+      if (e.key === 'Enter' && pickerFiltered.length > 0) {
+        closePicker();
+        runScript(pickerFiltered[pickerIndex]);
+        e.preventDefault();
+      }
+    });
+
+    function scrollPickerItem() {
+      const active = pickerResults.querySelector('.picker-item.active');
+      if (active) active.scrollIntoView({ block: 'nearest' });
+    }
+
+    pickerBackdrop.addEventListener('click', (e) => {
+      if (e.target === pickerBackdrop) closePicker();
+    });
+
+    // ── Keyboard shortcuts ──
+    document.addEventListener('keydown', (e) => {
+      const mod = isMac ? e.metaKey : e.ctrlKey;
+
+      // Ctrl/Cmd + B → open picker
+      if (mod && !e.shiftKey && e.key.toLowerCase() === 'b') {
+        e.preventDefault();
+        openPicker();
+        return;
+      }
+      // Ctrl/Cmd + Shift + B → re-run
+      if (mod && e.shiftKey && e.key.toLowerCase() === 'b') {
+        e.preventDefault();
+        if (lastScript) runScript(lastScript);
+        return;
+      }
+      // Ctrl/Cmd + N → clear
+      if (mod && e.key.toLowerCase() === 'n') {
+        e.preventDefault();
+        editor.value = '';
+        updateCounts();
+        setStatus('Editor cleared.', 'success');
+        return;
+      }
+      // Escape in editor → close picker if open
+      if (e.key === 'Escape' && pickerBackdrop.classList.contains('show')) {
+        closePicker();
+        e.preventDefault();
+      }
+    });
+
+    // ── Buttons ──
+    openPickerBtn.addEventListener('click', openPicker);
+    rerunBtn.addEventListener('click', () => { if (lastScript) runScript(lastScript); });
+    undoBtn.addEventListener('click', () => {
+      if (previousText !== null) {
+        editor.value = previousText;
+        previousText = null;
+        undoBtn.classList.add('d-none');
+        updateCounts();
+        setStatus('Undo applied.', 'success');
+      }
+    });
+    clearBtn.addEventListener('click', () => {
+      editor.value = '';
+      updateCounts();
+      setStatus('Editor cleared.', 'success');
+    });
+    copyBtn.addEventListener('click', () => {
+      navigator.clipboard.writeText(editor.value).then(() => {
+        setStatus('Copied to clipboard.', 'info');
+      });
+    });
+
+    // ── Category Chips + Script Grid ──
+    function renderChips() {
+      catChips.innerHTML = '';
+      const allChip = document.createElement('button');
+      allChip.className = 'cat-chip' + (activeCategory === null ? ' active' : '');
+      allChip.textContent = 'All';
+      allChip.addEventListener('click', () => { activeCategory = null; renderChips(); renderGrid(); });
+      catChips.appendChild(allChip);
+
+      allCategories.forEach(cat => {
+        const chip = document.createElement('button');
+        chip.className = 'cat-chip' + (activeCategory === cat ? ' active' : '');
+        chip.textContent = cat;
+        chip.addEventListener('click', () => { activeCategory = cat; renderChips(); renderGrid(); });
+        catChips.appendChild(chip);
+      });
+    }
+
+    function renderGrid() {
+      const query = filterInput.value.toLowerCase().trim();
+      let filtered = allScripts;
+
+      if (activeCategory) {
+        filtered = filtered.filter(s => s.meta.category === activeCategory);
+      }
+      if (query) {
+        filtered = filtered.filter(s => {
+          const m = s.meta;
+          return m.name.toLowerCase().includes(query)
+            || m.description.toLowerCase().includes(query)
+            || (m.tags || '').toLowerCase().includes(query);
+        });
+      }
+
+      scriptGrid.innerHTML = '';
+      noScriptsMsg.classList.toggle('d-none', filtered.length > 0);
+
+      filtered.forEach(s => {
+        const btn = document.createElement('button');
+        btn.className = 'script-btn';
+        btn.innerHTML = `<span class="sb-name">${esc(s.meta.name)}</span><span class="sb-desc">${esc(s.meta.description)}</span>`;
+        btn.addEventListener('click', () => runScript(s));
+        scriptGrid.appendChild(btn);
+      });
+    }
+
+    filterInput.addEventListener('input', renderGrid);
+
+    // ── History ──
+    function renderHistory() {
+      if (history.length === 0) {
+        historySection.classList.add('d-none');
+        return;
+      }
+      historySection.classList.remove('d-none');
+      historyList.innerHTML = '';
+      history.forEach(h => {
+        const div = document.createElement('div');
+        div.className = 'history-item';
+        const time = h.time.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        div.innerHTML = `<span>${esc(h.name)}</span><span class="text-body-secondary">${time}</span>`;
+        historyList.appendChild(div);
+      });
+    }
+
+    clearHistoryBtn.addEventListener('click', () => {
+      history.length = 0;
+      renderHistory();
+    });
+
+    // ── Live counts ──
+    editor.addEventListener('input', updateCounts);
+
+    // ── Init ──
+    renderChips();
+    renderGrid();
+    updateCounts();
+  })();
+  </script>
+</body>
+</html>
