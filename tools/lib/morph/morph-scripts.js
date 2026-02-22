@@ -47,6 +47,31 @@ window.MorphScripts = (() => {
   );
 
   register(
+    { api: 1, name: 'Base64 URL Encode', description: 'Encodes text as URL-safe Base64.', icon: 'metamorphose', tags: 'base64url,base64,url,encode,jwt', category: 'Encoding' },
+    (state) => {
+      try {
+        const encoded = btoa(unescape(encodeURIComponent(state.text)));
+        state.text = encoded.replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/g, '');
+      } catch (e) {
+        state.postError('Base64 URL encode failed: ' + e.message);
+      }
+    }
+  );
+
+  register(
+    { api: 1, name: 'Base64 URL Decode', description: 'Decodes URL-safe Base64 text.', icon: 'metamorphose', tags: 'base64url,base64,url,decode,jwt', category: 'Encoding' },
+    (state) => {
+      try {
+        const normalized = state.text.trim().replace(/-/g, '+').replace(/_/g, '/');
+        const padded = normalized + '='.repeat((4 - (normalized.length % 4 || 4)) % 4);
+        state.text = decodeURIComponent(escape(atob(padded)));
+      } catch (e) {
+        state.postError('Invalid Base64 URL text');
+      }
+    }
+  );
+
+  register(
     { api: 1, name: 'URL Encode', description: 'Encodes URL entities in your text.', icon: 'link', tags: 'url,encode,convert,percent', category: 'Encoding' },
     (state) => { state.text = encodeURIComponent(state.text); }
   );
@@ -177,6 +202,322 @@ window.MorphScripts = (() => {
     }
   );
 
+  function yamlScalar(value) {
+    if (value === null) return 'null';
+    if (typeof value === 'number' || typeof value === 'boolean') return String(value);
+    if (typeof value !== 'string') return JSON.stringify(value);
+    if (value === '') return "''";
+    if (/[:#\n\r\t]|^\s|\s$/.test(value)) return JSON.stringify(value);
+    return value;
+  }
+
+  function keyForYaml(key) {
+    return /^[A-Za-z0-9_-]+$/.test(key) ? key : JSON.stringify(String(key));
+  }
+
+  function jsonToYaml(value, indent = 0) {
+    const pad = ' '.repeat(indent);
+    if (Array.isArray(value)) {
+      if (value.length === 0) return pad + '[]';
+      return value.map((item) => {
+        if (item && typeof item === 'object') {
+          return pad + '-\n' + jsonToYaml(item, indent + 2);
+        }
+        return pad + '- ' + yamlScalar(item);
+      }).join('\n');
+    }
+    if (value && typeof value === 'object') {
+      const keys = Object.keys(value);
+      if (keys.length === 0) return pad + '{}';
+      return keys.map((k) => {
+        const v = value[k];
+        if (v && typeof v === 'object') {
+          return pad + keyForYaml(k) + ':\n' + jsonToYaml(v, indent + 2);
+        }
+        return pad + keyForYaml(k) + ': ' + yamlScalar(v);
+      }).join('\n');
+    }
+    return pad + yamlScalar(value);
+  }
+
+  function parseYamlScalar(token) {
+    const t = token.trim();
+    if (t === 'null' || t === '~') return null;
+    if (t === 'true') return true;
+    if (t === 'false') return false;
+    if (/^-?\d+(\.\d+)?$/.test(t)) return Number(t);
+    if ((t.startsWith('"') && t.endsWith('"')) || (t.startsWith("'") && t.endsWith("'"))) {
+      if (t.startsWith('"')) {
+        try { return JSON.parse(t); } catch (_) { return t.slice(1, -1); }
+      }
+      return t.slice(1, -1);
+    }
+    return t;
+  }
+
+  function yamlToJson(yaml) {
+    const lines = yaml.replace(/\t/g, '  ').split(/\r?\n/);
+    let idx = 0;
+
+    function leadingSpaces(s) {
+      const m = s.match(/^\s*/);
+      return m ? m[0].length : 0;
+    }
+
+    function nextSignificant(i) {
+      while (i < lines.length) {
+        const raw = lines[i];
+        const trimmed = raw.trim();
+        if (trimmed !== '' && !trimmed.startsWith('#')) return i;
+        i += 1;
+      }
+      return i;
+    }
+
+    function parseBlock(indent) {
+      idx = nextSignificant(idx);
+      if (idx >= lines.length) return null;
+
+      const firstLine = lines[idx];
+      const firstTrim = firstLine.trim();
+      const isArray = firstTrim.startsWith('- ');
+
+      if (isArray) {
+        const arr = [];
+        while (idx < lines.length) {
+          idx = nextSignificant(idx);
+          if (idx >= lines.length) break;
+          const raw = lines[idx];
+          const currentIndent = leadingSpaces(raw);
+          const trimmed = raw.trim();
+          if (currentIndent < indent || !trimmed.startsWith('- ')) break;
+          if (currentIndent > indent) {
+            throw new Error('Unexpected indentation in YAML list');
+          }
+
+          const rest = trimmed.slice(2).trim();
+          if (rest === '') {
+            idx += 1;
+            arr.push(parseBlock(indent + 2));
+            continue;
+          }
+
+          const kv = rest.match(/^([^:]+):\s*(.*)$/);
+          if (kv) {
+            const obj = {};
+            const key = kv[1].trim().replace(/^['"]|['"]$/g, '');
+            const valuePart = kv[2];
+            if (valuePart === '') {
+              idx += 1;
+              obj[key] = parseBlock(indent + 2);
+            } else {
+              obj[key] = parseYamlScalar(valuePart);
+              idx += 1;
+            }
+            arr.push(obj);
+            continue;
+          }
+
+          arr.push(parseYamlScalar(rest));
+          idx += 1;
+        }
+        return arr;
+      }
+
+      const obj = {};
+      while (idx < lines.length) {
+        idx = nextSignificant(idx);
+        if (idx >= lines.length) break;
+        const raw = lines[idx];
+        const currentIndent = leadingSpaces(raw);
+        const trimmed = raw.trim();
+        if (currentIndent < indent || trimmed.startsWith('- ')) break;
+        if (currentIndent > indent) {
+          throw new Error('Unexpected indentation in YAML object');
+        }
+
+        const kv = trimmed.match(/^([^:]+):\s*(.*)$/);
+        if (!kv) throw new Error('Invalid YAML mapping: ' + trimmed);
+        const key = kv[1].trim().replace(/^['"]|['"]$/g, '');
+        const valuePart = kv[2];
+
+        if (valuePart === '') {
+          idx += 1;
+          const nextIdx = nextSignificant(idx);
+          if (nextIdx < lines.length && leadingSpaces(lines[nextIdx]) > currentIndent) {
+            obj[key] = parseBlock(currentIndent + 2);
+          } else {
+            obj[key] = null;
+          }
+        } else {
+          obj[key] = parseYamlScalar(valuePart);
+          idx += 1;
+        }
+      }
+      return obj;
+    }
+
+    const result = parseBlock(0);
+    return result === null ? {} : result;
+  }
+
+  function parseCsv(csvText) {
+    const rows = [];
+    let row = [];
+    let field = '';
+    let inQuotes = false;
+    const text = csvText.replace(/\r\n?/g, '\n') + '\n';
+
+    for (let i = 0; i < text.length; i++) {
+      const ch = text[i];
+      const next = text[i + 1];
+
+      if (inQuotes) {
+        if (ch === '"' && next === '"') {
+          field += '"';
+          i += 1;
+        } else if (ch === '"') {
+          inQuotes = false;
+        } else {
+          field += ch;
+        }
+      } else {
+        if (ch === '"') {
+          inQuotes = true;
+        } else if (ch === ',') {
+          row.push(field);
+          field = '';
+        } else if (ch === '\n') {
+          row.push(field);
+          if (row.length > 1 || row[0] !== '') rows.push(row);
+          row = [];
+          field = '';
+        } else {
+          field += ch;
+        }
+      }
+    }
+
+    return rows;
+  }
+
+  function csvEscape(value) {
+    const s = value == null ? '' : String(value);
+    if (/[,"\n]/.test(s)) return '"' + s.replace(/"/g, '""') + '"';
+    return s;
+  }
+
+  register(
+    { api: 1, name: 'JSON to YAML', description: 'Converts JSON to YAML.', icon: 'metamorphose', tags: 'json,yaml,convert,config', category: 'JSON' },
+    (state) => {
+      try {
+        const parsed = JSON.parse(state.text);
+        state.text = jsonToYaml(parsed);
+      } catch (e) {
+        state.postError('Invalid JSON');
+      }
+    }
+  );
+
+  register(
+    { api: 1, name: 'YAML to JSON', description: 'Converts YAML to JSON (supports common YAML mappings/lists).', icon: 'metamorphose', tags: 'yaml,json,convert,config', category: 'JSON' },
+    (state) => {
+      try {
+        const parsed = yamlToJson(state.text);
+        state.text = JSON.stringify(parsed, null, 2);
+      } catch (e) {
+        state.postError('Invalid/unsupported YAML: ' + e.message);
+      }
+    }
+  );
+
+  register(
+    { api: 1, name: 'JSON Array to JSONL', description: 'Converts a JSON array to newline-delimited JSON.', icon: 'metamorphose', tags: 'json,jsonl,ndjson,array,convert', category: 'JSON' },
+    (state) => {
+      try {
+        const parsed = JSON.parse(state.text);
+        if (!Array.isArray(parsed)) {
+          state.postError('Expected a JSON array');
+          return;
+        }
+        state.text = parsed.map(item => JSON.stringify(item)).join('\n');
+      } catch (e) {
+        state.postError('Invalid JSON');
+      }
+    }
+  );
+
+  register(
+    { api: 1, name: 'JSONL to JSON Array', description: 'Converts newline-delimited JSON to a JSON array.', icon: 'metamorphose', tags: 'jsonl,ndjson,json,array,convert', category: 'JSON' },
+    (state) => {
+      try {
+        const lines = state.text.split(/\r?\n/).map(l => l.trim()).filter(Boolean);
+        const arr = lines.map((line, i) => {
+          try { return JSON.parse(line); }
+          catch (_) { throw new Error('Line ' + (i + 1) + ' is not valid JSON'); }
+        });
+        state.text = JSON.stringify(arr, null, 2);
+      } catch (e) {
+        state.postError(e.message);
+      }
+    }
+  );
+
+  register(
+    { api: 1, name: 'CSV to JSON', description: 'Converts CSV rows to JSON objects using header row.', icon: 'metamorphose', tags: 'csv,json,table,convert', category: 'JSON' },
+    (state) => {
+      try {
+        const rows = parseCsv(state.text);
+        if (rows.length === 0) {
+          state.postError('CSV appears empty');
+          return;
+        }
+        const headers = rows[0].map(h => h.trim());
+        const body = rows.slice(1).map((row) => {
+          const obj = {};
+          headers.forEach((h, idx) => {
+            obj[h || ('column_' + (idx + 1))] = row[idx] ?? '';
+          });
+          return obj;
+        });
+        state.text = JSON.stringify(body, null, 2);
+      } catch (e) {
+        state.postError('Unable to parse CSV: ' + e.message);
+      }
+    }
+  );
+
+  register(
+    { api: 1, name: 'JSON to CSV', description: 'Converts JSON array of objects to CSV.', icon: 'metamorphose', tags: 'json,csv,table,convert', category: 'JSON' },
+    (state) => {
+      try {
+        const parsed = JSON.parse(state.text);
+        const rows = Array.isArray(parsed) ? parsed : [parsed];
+        if (!rows.every(r => r && typeof r === 'object' && !Array.isArray(r))) {
+          state.postError('Expected an object or array of objects');
+          return;
+        }
+        const headers = [];
+        rows.forEach((row) => {
+          Object.keys(row).forEach((k) => {
+            if (!headers.includes(k)) headers.push(k);
+          });
+        });
+        const csvRows = [headers.map(csvEscape).join(',')];
+        rows.forEach((row) => {
+          csvRows.push(headers.map((h) => {
+            const value = row[h];
+            if (value && typeof value === 'object') return csvEscape(JSON.stringify(value));
+            return csvEscape(value);
+          }).join(','));
+        });
+        state.text = csvRows.join('\n');
+      } catch (e) {
+        state.postError('Invalid JSON');
+      }
+    }
+  );
+
   register(
     { api: 1, name: 'JSON to Query String', description: 'Converts JSON to URL query string.', icon: 'website', tags: 'url,query,params,json,convert', category: 'JSON' },
     (state) => {
@@ -250,6 +591,22 @@ window.MorphScripts = (() => {
   );
 
   register(
+    { api: 1, name: 'Strip HTML Tags', description: 'Removes HTML tags and keeps text content.', icon: 'broom', tags: 'html,strip,tags,text,clean', category: 'Format' },
+    (state) => {
+      const el = document.createElement('div');
+      el.innerHTML = state.text;
+      state.text = el.textContent || '';
+    }
+  );
+
+  register(
+    { api: 1, name: 'Regex Escape', description: 'Escapes text so it is safe in regular expressions.', icon: 'metamorphose', tags: 'regex,escape,pattern,safe', category: 'Format' },
+    (state) => {
+      state.text = state.text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+  );
+
+  register(
     { api: 1, name: 'Markdown Quote', description: 'Adds > to the start of every line.', icon: 'term', tags: 'quote,markdown,blockquote', category: 'Format' },
     (state) => {
       state.text = state.text.split('\n').map(line => '> ' + line).join('\n');
@@ -293,6 +650,123 @@ window.MorphScripts = (() => {
       .split(' ')
       .filter(Boolean);
   }
+
+  function capitalizeWord(word) {
+    if (!word) return word;
+    return word.charAt(0).toUpperCase() + word.slice(1).toLowerCase();
+  }
+
+  function isAllUpper(word) {
+    return /[A-Z]/.test(word) && word === word.toUpperCase();
+  }
+
+  function titleCaseToken(core, shouldLowercase) {
+    if (!core) return core;
+    const wasAllUpper = isAllUpper(core);
+    const parts = core.split('-');
+    const cased = parts.map((part) => {
+      if (!part) return part;
+      if (shouldLowercase(part.toLowerCase())) return part.toLowerCase();
+      if (wasAllUpper && part.length <= 5) return part;
+      return capitalizeWord(part);
+    });
+    return cased.join('-');
+  }
+
+  function applyTitleCaseLine(line, style) {
+    const tokens = line.match(/\S+|\s+/g) || [];
+    const wordIndices = [];
+
+    for (let i = 0; i < tokens.length; i++) {
+      if (/\S/.test(tokens[i])) wordIndices.push(i);
+    }
+
+    if (wordIndices.length === 0) return line;
+
+    function classify(word) {
+      const lower = word.toLowerCase();
+      if (style.alwaysLower && style.alwaysLower.has(lower)) return true;
+      if (style.maxPrepositionLength && style.prepositions && style.prepositions.has(lower)) {
+        return lower.length <= style.maxPrepositionLength;
+      }
+      if (style.lowerAllPrepositions && style.prepositions && style.prepositions.has(lower)) {
+        return true;
+      }
+      return false;
+    }
+
+    for (let j = 0; j < wordIndices.length; j++) {
+      const tokenIndex = wordIndices[j];
+      const isFirst = j === 0;
+      const isLast = j === wordIndices.length - 1;
+      const token = tokens[tokenIndex];
+
+      const match = token.match(/^([^A-Za-z0-9]*)([A-Za-z0-9][A-Za-z0-9'’.-]*)([^A-Za-z0-9]*)$/);
+      if (!match) continue;
+
+      const [, prefix, core, suffix] = match;
+      const prevToken = j > 0 ? tokens[wordIndices[j - 1]] : '';
+      const forceCap = isFirst || isLast || /[:.!?]\s*$/.test(prevToken);
+      const lowered = (w) => !forceCap && classify(w);
+      const transformed = titleCaseToken(core, lowered);
+
+      tokens[tokenIndex] = prefix + transformed + suffix;
+    }
+
+    return tokens.join('');
+  }
+
+  const baseAlwaysLower = new Set([
+    'a', 'an', 'the',
+    'and', 'but', 'for', 'nor', 'or', 'so', 'yet',
+    'as', 'at', 'by', 'in', 'of', 'off', 'on', 'per', 'to', 'up', 'via'
+  ]);
+
+  const prepositions = new Set([
+    'about', 'above', 'across', 'after', 'against', 'along', 'amid', 'among', 'around', 'as', 'at',
+    'before', 'behind', 'below', 'beneath', 'beside', 'between', 'beyond', 'by',
+    'despite', 'down', 'during',
+    'except',
+    'for', 'from',
+    'in', 'inside', 'into',
+    'like',
+    'near',
+    'of', 'off', 'on', 'onto', 'out', 'outside', 'over',
+    'past', 'per',
+    'since',
+    'through', 'throughout', 'till', 'to', 'toward', 'towards',
+    'under', 'underneath', 'until', 'unto', 'up', 'upon',
+    'via',
+    'with', 'within', 'without'
+  ]);
+
+  const titleStyles = {
+    chicago: {
+      alwaysLower: baseAlwaysLower,
+      prepositions,
+      lowerAllPrepositions: true
+    },
+    ap: {
+      alwaysLower: baseAlwaysLower,
+      prepositions,
+      maxPrepositionLength: 3
+    },
+    mla: {
+      alwaysLower: baseAlwaysLower,
+      prepositions,
+      lowerAllPrepositions: true
+    },
+    apa: {
+      alwaysLower: baseAlwaysLower,
+      prepositions,
+      maxPrepositionLength: 3
+    },
+    nyt: {
+      alwaysLower: baseAlwaysLower,
+      prepositions,
+      maxPrepositionLength: 3
+    }
+  };
 
   register(
     { api: 1, name: 'UPPERCASE', description: 'Converts your text to uppercase.', icon: 'type', tags: 'upcase,uppercase,capital', category: 'Case' },
@@ -343,6 +817,95 @@ window.MorphScripts = (() => {
   );
 
   register(
+    { api: 1, name: 'Swap Case', description: 'Inverts uppercase/lowercase for each character.', icon: 'type', tags: 'swap,case,invert,upper,lower', category: 'Case' },
+    (state) => {
+      state.text = Array.from(state.text).map((ch) => {
+        if (ch >= 'a' && ch <= 'z') return ch.toUpperCase();
+        if (ch >= 'A' && ch <= 'Z') return ch.toLowerCase();
+        return ch;
+      }).join('');
+    }
+  );
+
+  register(
+    { api: 1, name: 'Sentence Case', description: 'Converts text to sentence case.', icon: 'type', tags: 'sentence,sentance,case', category: 'Case' },
+    (state) => {
+      state.text = state.text
+        .toLowerCase()
+        .replace(/(^\s*[a-z])|([.!?]\s+[a-z])/g, m => m.toUpperCase());
+    }
+  );
+
+  register(
+    { api: 1, name: 'Sentance Case', description: 'Converts text to sentence case.', icon: 'type', tags: 'sentance,sentence,case,typo-compatible', category: 'Case' },
+    (state) => {
+      state.text = state.text
+        .toLowerCase()
+        .replace(/(^\s*[a-z])|([.!?]\s+[a-z])/g, m => m.toUpperCase());
+    }
+  );
+
+  register(
+    { api: 1, name: 'All Caps', description: 'Converts text to all capital letters.', icon: 'type', tags: 'caps,allcaps,uppercase,shouting', category: 'Case' },
+    (state) => { state.text = state.text.toUpperCase(); }
+  );
+
+  register(
+    { api: 1, name: 'CamelCase', description: 'convertsYourTextToCamelCase', icon: 'camel', tags: 'camel,case,function,identifier', category: 'Case' },
+    (state) => {
+      state.text = state.text.split('\n').map(line =>
+        splitWords(line).map((w, i) =>
+          i === 0 ? w.toLowerCase() : capitalizeWord(w)
+        ).join('')
+      ).join('\n');
+    }
+  );
+
+  register(
+    { api: 1, name: 'PascalCase', description: 'ConvertsYourTextToPascalCase', icon: 'camel', tags: 'pascal,case,function,identifier', category: 'Case' },
+    (state) => {
+      state.text = state.text.split('\n').map(line =>
+        splitWords(line).map(w => capitalizeWord(w)).join('')
+      ).join('\n');
+    }
+  );
+
+  register(
+    { api: 1, name: 'Chicago Title Case', description: 'Applies Chicago-style title capitalization.', icon: 'type', tags: 'title,case,chicago,headline', category: 'Case' },
+    (state) => {
+      state.text = state.text.split('\n').map(line => applyTitleCaseLine(line, titleStyles.chicago)).join('\n');
+    }
+  );
+
+  register(
+    { api: 1, name: 'AP Title Case', description: 'Applies AP-style title capitalization.', icon: 'type', tags: 'title,case,ap,headline', category: 'Case' },
+    (state) => {
+      state.text = state.text.split('\n').map(line => applyTitleCaseLine(line, titleStyles.ap)).join('\n');
+    }
+  );
+
+  register(
+    { api: 1, name: 'MLA Title Case', description: 'Applies MLA-style title capitalization.', icon: 'type', tags: 'title,case,mla,heading', category: 'Case' },
+    (state) => {
+      state.text = state.text.split('\n').map(line => applyTitleCaseLine(line, titleStyles.mla)).join('\n');
+    }
+  );
+
+  register(
+    { api: 1, name: 'APA Title Case', description: 'Applies APA-style title capitalization.', icon: 'type', tags: 'title,case,apa,heading', category: 'Case' },
+    (state) => {
+      state.text = state.text.split('\n').map(line => applyTitleCaseLine(line, titleStyles.apa)).join('\n');
+    }
+  );
+
+  register(
+    { api: 1, name: 'New York Times Title Case', description: 'Applies New York Times-style title capitalization.', icon: 'type', tags: 'title,case,nyt,new york times,headline', category: 'Case' },
+    (state) => {
+      state.text = state.text.split('\n').map(line => applyTitleCaseLine(line, titleStyles.nyt)).join('\n');
+    }
+  );
+
+  register(
     { api: 1, name: 'Sponge Case', description: 'CoNvERtS yoUR Text To A HIghER fOrM.', icon: 'pineapple', tags: 'bob,sarcasm,sponge,random', category: 'Case' },
     (state) => {
       state.text = state.text.split('').map(c =>
@@ -384,6 +947,15 @@ window.MorphScripts = (() => {
   );
 
   register(
+    { api: 1, name: 'Sort Lines (Case-Insensitive)', description: 'Sort lines alphabetically, ignoring case.', icon: 'sort-characters', tags: 'sort,lines,case-insensitive,alphabet', category: 'Lines' },
+    (state) => {
+      state.text = state.text.replace(/\n$/, '').split('\n')
+        .sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }))
+        .join('\n');
+    }
+  );
+
+  register(
     { api: 1, name: 'Reverse Lines', description: 'Flips every line of your text.', icon: 'flip', tags: 'reverse,order,invert,mirror,flip', category: 'Lines' },
     (state) => { state.text = state.text.split('\n').reverse().join('\n'); }
   );
@@ -407,6 +979,24 @@ window.MorphScripts = (() => {
       const out = [...new Set(lines)];
       state.text = out.join('\n');
       state.postInfo((lines.length - out.length) + ' duplicate lines removed');
+    }
+  );
+
+  register(
+    { api: 1, name: 'Unique Lines (Case-Insensitive)', description: 'Removes duplicate lines without case sensitivity.', icon: 'filtration', tags: 'unique,lines,dedupe,case-insensitive', category: 'Lines' },
+    (state) => {
+      const lines = state.text.split('\n');
+      const seen = new Set();
+      const out = [];
+      lines.forEach((line) => {
+        const key = line.toLocaleLowerCase();
+        if (!seen.has(key)) {
+          seen.add(key);
+          out.push(line);
+        }
+      });
+      state.text = out.join('\n');
+      state.postInfo((lines.length - out.length) + ' duplicate lines removed (case-insensitive)');
     }
   );
 
@@ -440,6 +1030,41 @@ window.MorphScripts = (() => {
     }
   );
 
+  register(
+    { api: 1, name: 'Wrap Lines (80 chars)', description: 'Wraps paragraphs to 80 characters per line.', icon: 'collapse', tags: 'wrap,lines,format,80,column', category: 'Lines' },
+    (state) => {
+      const width = 80;
+      function wrapParagraph(paragraph) {
+        const words = paragraph.replace(/\s+/g, ' ').trim().split(' ').filter(Boolean);
+        if (words.length === 0) return '';
+        const lines = [];
+        let current = words[0];
+        for (let i = 1; i < words.length; i++) {
+          const word = words[i];
+          if ((current + ' ' + word).length > width) {
+            lines.push(current);
+            current = word;
+          } else {
+            current += ' ' + word;
+          }
+        }
+        lines.push(current);
+        return lines.join('\n');
+      }
+
+      const paragraphs = state.text.split(/\n\s*\n/);
+      state.text = paragraphs.map(wrapParagraph).join('\n\n');
+    }
+  );
+
+  register(
+    { api: 1, name: 'Unwrap Lines', description: 'Joins wrapped lines back into paragraphs.', icon: 'collapse', tags: 'unwrap,lines,paragraph,join', category: 'Lines' },
+    (state) => {
+      const paragraphs = state.text.split(/\n\s*\n/);
+      state.text = paragraphs.map(p => p.replace(/\s*\n\s*/g, ' ').replace(/\s+/g, ' ').trim()).join('\n\n');
+    }
+  );
+
   /* ═══════════════════════════════════════════════
      Utilities / Text
      ═══════════════════════════════════════════════ */
@@ -457,6 +1082,39 @@ window.MorphScripts = (() => {
   );
 
   register(
+    { api: 1, name: 'Normalize Whitespace', description: 'Normalizes line endings, trims trailing spaces, and collapses repeated spaces.', icon: 'scissors', tags: 'normalize,whitespace,spaces,tabs,eol', category: 'Utilities' },
+    (state) => {
+      state.text = state.text
+        .replace(/\r\n?/g, '\n')
+        .split('\n')
+        .map(line => line.replace(/[\t ]+$/g, '').replace(/\t/g, ' ').replace(/ {2,}/g, ' '))
+        .join('\n')
+        .replace(/\n{3,}/g, '\n\n');
+    }
+  );
+
+  register(
+    { api: 1, name: 'Tabs to Spaces', description: 'Converts tab characters to four spaces.', icon: 'scissors', tags: 'tabs,spaces,indentation,convert', category: 'Utilities' },
+    (state) => {
+      state.text = state.text.replace(/\t/g, '    ');
+    }
+  );
+
+  register(
+    { api: 1, name: 'Spaces to Tabs', description: 'Converts groups of four leading spaces to tabs.', icon: 'scissors', tags: 'spaces,tabs,indentation,convert', category: 'Utilities' },
+    (state) => {
+      state.text = state.text.split('\n').map((line) => {
+        const m = line.match(/^ +/);
+        if (!m) return line;
+        const leading = m[0];
+        const tabs = '\t'.repeat(Math.floor(leading.length / 4));
+        const spaces = ' '.repeat(leading.length % 4);
+        return tabs + spaces + line.slice(leading.length);
+      }).join('\n');
+    }
+  );
+
+  register(
     { api: 1, name: 'Remove Empty Lines', description: 'Removes blank lines from your text.', icon: 'scissors', tags: 'remove,empty,blank,lines', category: 'Utilities' },
     (state) => {
       const lines = state.text.split('\n');
@@ -467,8 +1125,32 @@ window.MorphScripts = (() => {
   );
 
   register(
+    { api: 1, name: 'Remove Zero-Width Chars', description: 'Removes invisible zero-width Unicode characters.', icon: 'scissors', tags: 'zero-width,unicode,clean,invisible', category: 'Utilities' },
+    (state) => {
+      const before = state.text.length;
+      state.text = state.text.replace(/[\u200B\u200C\u200D\u2060\uFEFF]/g, '');
+      const removed = before - state.text.length;
+      state.postInfo(removed + ' zero-width characters removed');
+    }
+  );
+
+  register(
     { api: 1, name: 'Reverse String', description: '!seod ti tahw sseuG', icon: 'flip', tags: 'flip,mirror,invert,reverse,string', category: 'Utilities' },
     (state) => { state.text = [...state.text].reverse().join(''); }
+  );
+
+  register(
+    { api: 1, name: 'Slugify', description: 'Converts text into a URL-friendly slug.', icon: 'link', tags: 'slug,url,seo,normalize,permalink', category: 'Utilities' },
+    (state) => {
+      state.text = state.text
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .trim()
+        .replace(/[\s_-]+/g, '-')
+        .replace(/^-+|-+$/g, '');
+    }
   );
 
   register(
