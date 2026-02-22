@@ -519,6 +519,23 @@ window.MorphScripts = (() => {
   );
 
   register(
+    { api: 1, name: 'Python Dict to JSON', description: 'Converts a Python-style dict/object literal into JSON.', icon: 'snake', tags: 'python,dict,json,convert,parse', category: 'JSON' },
+    (state) => {
+      try {
+        const normalized = state.text
+          .replace(/\bTrue\b/g, 'true')
+          .replace(/\bFalse\b/g, 'false')
+          .replace(/\bNone\b/g, 'null')
+          .replace(/'/g, '"')
+          .replace(/,\s*([}\]])/g, '$1');
+        state.text = JSON.stringify(JSON.parse(normalized), null, 2);
+      } catch (e) {
+        state.postError('Invalid Python dict/object literal');
+      }
+    }
+  );
+
+  register(
     { api: 1, name: 'JSON to Query String', description: 'Converts JSON to URL query string.', icon: 'website', tags: 'url,query,params,json,convert', category: 'JSON' },
     (state) => {
       function toQuery(obj, prefix) {

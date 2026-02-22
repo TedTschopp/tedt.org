@@ -4,8 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Morph — Text Transformer</title>
-  <meta name="description" content="A scriptable scratchpad for developers. Transform text with 95 built-in operations — encoding, formatting, hashing, case conversion, and more. All client-side.">
+  <meta name="description" content="A scriptable scratchpad for developers. Transform text with 96 built-in operations — encoding, formatting, hashing, case conversion, and more. All client-side.">
   <link rel="icon" href="../favicon.ico" sizes="any">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer">
   <script>
     (function loadStylesheets() {
       const isFileProtocol = window.location.protocol === 'file:';
@@ -61,6 +67,14 @@
     .picker-item:hover, .picker-item.active {
       background: var(--bs-tertiary-bg);
     }
+    .picker-item .pi-icon {
+      width: 1.5rem; text-align: center; font-size: 1rem; opacity: 0.9;
+      flex: 0 0 auto;
+    }
+    .picker-item .pi-icon i { font-size: 0.95rem; line-height: 1; }
+    .picker-item .pi-main {
+      display: flex; flex-direction: column; min-width: 0; flex: 1;
+    }
     .picker-item .pi-name { font-weight: 500; }
     .picker-item .pi-desc { color: var(--bs-secondary-color); font-size: 0.85rem; }
     .picker-item .pi-cat {
@@ -114,6 +128,9 @@
     .script-btn:hover {
       border-color: var(--bs-primary); background: rgba(var(--bs-primary-rgb), 0.1);
     }
+    .script-btn .sb-header { display: flex; align-items: center; gap: 0.35rem; }
+    .script-btn .sb-icon { width: 1.2rem; text-align: center; font-size: 0.95rem; opacity: 0.9; }
+    .script-btn .sb-icon i { font-size: 0.95rem; line-height: 1; }
     .script-btn .sb-name { font-weight: 500; font-size: 0.9rem; }
     .script-btn .sb-desc { font-size: 0.78rem; color: var(--bs-secondary-color); margin-top: 2px; }
 
@@ -276,6 +293,86 @@
     let pickerFiltered = [];
     const history = [];
 
+    const ICON_MAP = {
+      metamorphose: '🧬',
+      link: '🔗',
+      HTML: '🌐',
+      quote: '❞',
+      roman: '🔁',
+      broom: '🧹',
+      snake: '🐍',
+      website: '🕸️',
+      command: '⌘',
+      term: '🧾',
+      counter: '🔢',
+      type: '🔤',
+      camel: '🐫',
+      kebab: '🥙',
+      pineapple: '🍍',
+      colosseum: '🏛️',
+      'sort-characters': '🔤',
+      'sort-numbers': '🔢',
+      flip: '↔️',
+      dice: '🎲',
+      filtration: '🧪',
+      collapse: '🪗',
+      scissors: '✂️',
+      abacus: '🧮',
+      fingerprint: '🔐',
+      'color-wheel': '🎨',
+      watch: '🕒'
+    };
+
+    const FA_ICON_MAP = {
+      metamorphose: 'fa-solid fa-shuffle',
+      link: 'fa-solid fa-link',
+      HTML: 'fa-solid fa-code',
+      quote: 'fa-solid fa-quote-right',
+      roman: 'fa-solid fa-repeat',
+      broom: 'fa-solid fa-broom',
+      snake: 'fa-solid fa-staff-snake',
+      website: 'fa-solid fa-globe',
+      command: 'fa-solid fa-terminal',
+      term: 'fa-solid fa-file-lines',
+      counter: 'fa-solid fa-hashtag',
+      type: 'fa-solid fa-font',
+      camel: 'fa-solid fa-signature',
+      kebab: 'fa-solid fa-minus',
+      pineapple: 'fa-solid fa-face-grin-squint',
+      colosseum: 'fa-solid fa-landmark',
+      'sort-characters': 'fa-solid fa-arrow-down-a-z',
+      'sort-numbers': 'fa-solid fa-arrow-down-1-9',
+      flip: 'fa-solid fa-right-left',
+      dice: 'fa-solid fa-dice',
+      filtration: 'fa-solid fa-filter',
+      collapse: 'fa-solid fa-minimize',
+      scissors: 'fa-solid fa-scissors',
+      abacus: 'fa-solid fa-calculator',
+      fingerprint: 'fa-solid fa-fingerprint',
+      'color-wheel': 'fa-solid fa-palette',
+      watch: 'fa-regular fa-clock'
+    };
+
+    const hasFontAwesome = Boolean(
+      window.FontAwesome ||
+      window.FontAwesomeConfig ||
+      document.querySelector('link[href*="fontawesome"], link[href*="font-awesome"]')
+    );
+
+    function getScriptIcon(iconName) {
+      return ICON_MAP[iconName] || '🧩';
+    }
+
+    function getScriptIconHTML(iconName, className) {
+      const label = esc(iconName || 'script');
+      const faClass = FA_ICON_MAP[iconName];
+      if (hasFontAwesome && faClass) {
+        return `<span class="${className}" title="${label}" aria-label="${label}"><i class="${faClass}" aria-hidden="true"></i><span class="visually-hidden">${label}</span></span>`;
+      }
+      const emoji = getScriptIcon(iconName);
+      return `<span class="${className}" role="img" aria-label="${label}" title="${label}">${emoji}</span>`;
+    }
+
     scriptCountEl.textContent = `(${allScripts.length} scripts loaded)`;
 
     // ── Helpers ──
@@ -359,8 +456,10 @@
         const div = document.createElement('div');
         div.className = 'picker-item' + (i === pickerIndex ? ' active' : '');
         div.setAttribute('role', 'option');
-        div.innerHTML = `<span class="pi-name">${esc(s.meta.name)}</span>
-          <span class="pi-desc">${esc(s.meta.description)}</span>
+        const iconHtml = getScriptIconHTML(s.meta.icon, 'pi-icon');
+        div.innerHTML = `${iconHtml}
+          <span class="pi-main"><span class="pi-name">${esc(s.meta.name)}</span>
+          <span class="pi-desc">${esc(s.meta.description)}</span></span>
           <span class="pi-cat">${esc(s.meta.category || '')}</span>`;
         div.addEventListener('click', () => { closePicker(); runScript(s); });
         div.addEventListener('mouseenter', () => {
@@ -493,7 +592,8 @@
       filtered.forEach(s => {
         const btn = document.createElement('button');
         btn.className = 'script-btn';
-        btn.innerHTML = `<span class="sb-name">${esc(s.meta.name)}</span><span class="sb-desc">${esc(s.meta.description)}</span>`;
+        const iconHtml = getScriptIconHTML(s.meta.icon, 'sb-icon');
+        btn.innerHTML = `<span class="sb-header">${iconHtml}<span class="sb-name">${esc(s.meta.name)}</span></span><span class="sb-desc">${esc(s.meta.description)}</span>`;
         btn.addEventListener('click', () => runScript(s));
         scriptGrid.appendChild(btn);
       });

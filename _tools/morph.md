@@ -1,6 +1,6 @@
 ---
 title: "Morph — Text Transformer"
-summary: "A scriptable scratchpad for developers. 95 built-in text transformations — encoding, formatting, hashing, case conversion, and more — all in the browser."
+summary: "A scriptable scratchpad for developers. 96 built-in text transformations — encoding, formatting, hashing, case conversion, and more — all in the browser."
 subtitle: "Client-side text transformation toolkit"
 status: active
 tool_type: webapp
@@ -23,7 +23,7 @@ screenshots:
   - "/img/2026-02/morph-tool-screenshot.png"
   - "/img/2026-02/morph-tool-screenshot-picker.png"
 features:
-  - "95 built-in text transformations"
+  - "96 built-in text transformations"
   - "Command palette with fuzzy search (⌘/Ctrl+B)"
   - "Base64, URL, HTML, JWT encoding/decoding"
   - "JSON format, minify, sort, and query string conversion"
@@ -37,7 +37,7 @@ license: "MIT"
 
 ## What it does
 
-Morph is a browser-based text transformation workbench with 95 built-in scripts.
+Morph is a browser-based text transformation workbench with 96 built-in scripts.
 Paste text, choose an operation, and get immediate output for common developer
 workflows: formatting, encoding/decoding, hashing, case conversion, and line
 operations.
