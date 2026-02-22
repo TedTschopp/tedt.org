@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>OpenAI Prompt</title>
-  <meta name="description" content="Prompt and stream responses from OpenAI models in a client-side scratchpad with a live request/response monitor.">
+  <title>AI Chat Window</title>
+  <meta name="description" content="Prompt and stream responses from AI models in a client-side scratchpad with a live request/response monitor.">
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link
     rel="stylesheet"
@@ -19,15 +19,34 @@
 
       const stylesheets = isFileProtocol
         ? [
-            'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
-            'https://tedt.org/css/consolidated-fonts.css'
+            { href: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' },
+            { href: 'https://tedt.org/css/consolidated-fonts.css' }
           ]
-        : ['../css/bootstrap-build.css', '../css/consolidated-fonts.css'];
+        : [
+            {
+              href: '../css/bootstrap-build.css',
+              fallback: 'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'
+            },
+            {
+              href: '../css/consolidated-fonts.css',
+              fallback: 'https://tedt.org/css/consolidated-fonts.css'
+            }
+          ];
 
-      for (const href of stylesheets) {
+      for (const { href, fallback } of stylesheets) {
         const link = document.createElement('link');
         link.rel = 'stylesheet';
         link.href = href;
+        if (fallback) {
+          link.addEventListener('error', () => {
+            if (document.querySelector(`link[data-fallback-for="${href}"]`)) return;
+            const fallbackLink = document.createElement('link');
+            fallbackLink.rel = 'stylesheet';
+            fallbackLink.href = fallback;
+            fallbackLink.dataset.fallbackFor = href;
+            document.head.appendChild(fallbackLink);
+          }, { once: true });
+        }
         document.head.appendChild(link);
       }
     })();
@@ -37,6 +56,38 @@
     .app-wrap { max-width: 1120px; }
     .muted-note { color: var(--bs-secondary-color); font-size: 0.9rem; }
     .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    .card {
+      background: var(--bs-body-bg);
+      border-color: var(--bs-border-color);
+    }
+    .card-header {
+      background: var(--bs-tertiary-bg);
+      border-bottom-color: var(--bs-border-color);
+    }
+
+    .btn-outline-secondary {
+      background: var(--bs-tertiary-bg);
+      border-color: var(--bs-border-color);
+      color: var(--bs-body-color);
+    }
+    .btn-outline-secondary:hover,
+    .btn-outline-secondary:focus-visible {
+      border-color: var(--bs-primary);
+      background: rgba(var(--bs-primary-rgb), 0.12);
+      color: var(--bs-body-color);
+    }
+
+    .form-control,
+    .form-select {
+      background: var(--bs-body-bg);
+      border-color: var(--bs-border-color);
+    }
+    .form-control:focus,
+    .form-select:focus {
+      border-color: rgba(var(--bs-primary-rgb), 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(var(--bs-primary-rgb), 0.15);
+    }
 
     #systemPrompt { min-height: 96px; }
     #contentPrompt { min-height: 260px; }
@@ -128,8 +179,8 @@
 <body>
   <main class="container app-wrap py-4">
     <div class="mb-3">
-      <h1 class="h2 mb-1">OpenAI Prompt</h1>
-      <p class="mb-0 muted-note">Prompt OpenAI models with optional system instructions, streaming output, model discovery, and a live debug monitor.</p>
+      <h1 class="h2 mb-1">AI Chat Window</h1>
+      <p class="mb-0 muted-note">Prompt AI models with optional system instructions, streaming output, model discovery, and a live debug monitor.</p>
     </div>
 
     <div id="topStatus" class="alert alert-secondary py-2" role="status" aria-live="polite">Ready.</div>
@@ -205,7 +256,11 @@
       <div class="card-header d-flex justify-content-between align-items-center">
         <strong>Model</strong>
         <div class="d-flex gap-2">
-          <button id="clearSavedStateBtn" class="btn btn-outline-secondary btn-sm">Clear saved model/content</button>
+          <button id="clearSavedStateBtn" class="btn btn-outline-secondary btn-sm">
+            <span class="fa-icon"><i class="fa-solid fa-eraser me-1" aria-hidden="true"></i></span>
+            <span class="fa-fallback me-1" aria-hidden="true">🧹</span>
+            Clear saved model/content
+          </button>
           <button id="toggleModelBtn" class="btn btn-outline-secondary btn-sm">Minimize model</button>
         </div>
       </div>
@@ -222,7 +277,11 @@
             <div class="model-select-wrap">
               <select id="modelSelect" class="form-select"></select>
             </div>
-            <button id="refreshModelsBtn" class="btn btn-outline-secondary"><i class="fa-solid fa-arrows-rotate me-1" aria-hidden="true"></i>Refresh models</button>
+            <button id="refreshModelsBtn" class="btn btn-outline-secondary">
+              <span class="fa-icon"><i class="fa-solid fa-arrows-rotate me-1" aria-hidden="true"></i></span>
+              <span class="fa-fallback me-1" aria-hidden="true">🔄</span>
+              Refresh models
+            </button>
           </div>
           <p class="muted-note mb-0 mt-1">API code: <span id="modelCodeLabel" class="model-code">gpt-4o-mini</span></p>
         </div>
@@ -268,7 +327,11 @@
         <label for="contentPrompt" class="form-label">Content</label>
         <textarea id="contentPrompt" class="form-control mono" placeholder="Enter your prompt content here…"></textarea>
         <div class="mt-2 d-flex justify-content-end">
-          <button id="submitBtn" class="btn btn-primary btn-sm"><i class="fa-solid fa-paper-plane me-1" aria-hidden="true"></i>Submit</button>
+          <button id="submitBtn" class="btn btn-primary btn-sm">
+            <span class="fa-icon"><i class="fa-solid fa-paper-plane me-1" aria-hidden="true"></i></span>
+            <span class="fa-fallback me-1" aria-hidden="true">📨</span>
+            Submit
+          </button>
         </div>
 
         <div id="errorMsg" class="alert alert-danger mt-3 d-none mb-0"></div>
@@ -279,7 +342,11 @@
     <section class="card">
       <div class="card-header d-flex justify-content-between align-items-center">
         <strong>Output</strong>
-        <button id="copyBtn" class="btn btn-outline-secondary btn-sm">Copy to clipboard</button>
+        <button id="copyBtn" class="btn btn-outline-secondary btn-sm">
+          <span class="fa-icon"><i class="fa-regular fa-copy me-1" aria-hidden="true"></i></span>
+          <span class="fa-fallback me-1" aria-hidden="true">📋</span>
+          Copy to clipboard
+        </button>
       </div>
       <div class="card-body">
         <div id="outputBox" class="empty">Response will appear here…</div>
@@ -290,9 +357,17 @@
       <div class="card-header d-flex justify-content-between align-items-center">
         <strong>Request/Response Monitor</strong>
         <div class="d-flex gap-2">
-          <button id="copyMonitorBtn" class="btn btn-outline-secondary btn-sm">Copy monitor log</button>
+          <button id="copyMonitorBtn" class="btn btn-outline-secondary btn-sm">
+            <span class="fa-icon"><i class="fa-regular fa-copy me-1" aria-hidden="true"></i></span>
+            <span class="fa-fallback me-1" aria-hidden="true">📋</span>
+            Copy monitor log
+          </button>
           <button id="toggleMonitorBtn" class="btn btn-outline-secondary btn-sm">Expand monitor</button>
-          <button id="clearMonitorBtn" class="btn btn-outline-secondary btn-sm">Clear monitor</button>
+          <button id="clearMonitorBtn" class="btn btn-outline-secondary btn-sm">
+            <span class="fa-icon"><i class="fa-solid fa-trash-can me-1" aria-hidden="true"></i></span>
+            <span class="fa-fallback me-1" aria-hidden="true">🗑️</span>
+            Clear monitor
+          </button>
         </div>
       </div>
       <div id="monitorCardBody" class="card-body d-none">
@@ -306,16 +381,29 @@
     import { marked } from 'https://esm.run/marked';
 
     const STORAGE_KEY_API = 'OPENAI_API_KEY';
-    const STORAGE_KEY_API_KEYS = 'openai_prompt_api_keys';
-    const STORAGE_KEY_HIST = 'openai_prompt_system_history';
-    const STORAGE_KEY_MODEL = 'openai_prompt_selected_model';
-    const STORAGE_KEY_ACTIVE_TARGET = 'openai_prompt_active_target';
-    const STORAGE_KEY_CONTENT = 'openai_prompt_content';
-    const STORAGE_KEY_ACTIVE_MODEL_PROVIDER = 'openai_prompt_active_model_provider';
-    const STORAGE_KEY_PROVIDER = 'openai_prompt_provider';
-    const STORAGE_KEY_OLLAMA_ENABLED = 'openai_prompt_ollama_enabled';
-    const STORAGE_KEY_OLLAMA_BASE_URL = 'openai_prompt_ollama_base_url';
-    const STORAGE_KEY_LOCAL_API_STYLE = 'openai_prompt_local_api_style';
+    const STORAGE_KEY_API_KEYS = 'ai_chat_window_api_keys';
+    const STORAGE_KEY_HIST = 'ai_chat_window_system_history';
+    const STORAGE_KEY_MODEL = 'ai_chat_window_selected_model';
+    const STORAGE_KEY_ACTIVE_TARGET = 'ai_chat_window_active_target';
+    const STORAGE_KEY_CONTENT = 'ai_chat_window_content';
+    const STORAGE_KEY_ACTIVE_MODEL_PROVIDER = 'ai_chat_window_active_model_provider';
+    const STORAGE_KEY_PROVIDER = 'ai_chat_window_provider';
+    const STORAGE_KEY_OLLAMA_ENABLED = 'ai_chat_window_ollama_enabled';
+    const STORAGE_KEY_OLLAMA_BASE_URL = 'ai_chat_window_ollama_base_url';
+    const STORAGE_KEY_LOCAL_API_STYLE = 'ai_chat_window_local_api_style';
+
+    const LEGACY_NAMESPACE_KEYS = {
+      ai_chat_window_api_keys: 'openai_prompt_api_keys',
+      ai_chat_window_system_history: 'openai_prompt_system_history',
+      ai_chat_window_selected_model: 'openai_prompt_selected_model',
+      ai_chat_window_active_target: 'openai_prompt_active_target',
+      ai_chat_window_content: 'openai_prompt_content',
+      ai_chat_window_active_model_provider: 'openai_prompt_active_model_provider',
+      ai_chat_window_provider: 'openai_prompt_provider',
+      ai_chat_window_ollama_enabled: 'openai_prompt_ollama_enabled',
+      ai_chat_window_ollama_base_url: 'openai_prompt_ollama_base_url',
+      ai_chat_window_local_api_style: 'openai_prompt_local_api_style'
+    };
     const MAX_STORED = 50;
     const INITIAL_VISIBLE = 3;
     const TRUNCATE_LEN = 90;
@@ -379,6 +467,22 @@
       const line = `\n[${stamp}] ${title}\n${typeof data === 'string' ? data : JSON.stringify(data, null, 2)}\n`;
       monitorBox.textContent += line;
       monitorBox.scrollTop = monitorBox.scrollHeight;
+    }
+
+    function migrateStorageNamespace() {
+      const migrated = [];
+      Object.entries(LEGACY_NAMESPACE_KEYS).forEach(([nextKey, legacyKey]) => {
+        const nextVal = localStorage.getItem(nextKey);
+        const legacyVal = localStorage.getItem(legacyKey);
+        if ((nextVal === null || nextVal === '') && legacyVal !== null) {
+          localStorage.setItem(nextKey, legacyVal);
+          migrated.push({ from: legacyKey, to: nextKey });
+        }
+        if (legacyVal !== null) {
+          localStorage.removeItem(legacyKey);
+        }
+      });
+      return migrated;
     }
 
     function redactAuth(headersObj) {
@@ -1442,6 +1546,8 @@
     (function init() {
       detectFontAwesomeAvailability();
 
+      const migratedKeys = migrateStorageNamespace();
+
       const legacyApiKey = localStorage.getItem(STORAGE_KEY_API);
       if (legacyApiKey && legacyApiKey.trim()) {
         const keys = loadApiKeys();
@@ -1483,7 +1589,9 @@
       renderHistory();
       updateApiKeyUI();
       appendMonitor('INIT', {
-        app: 'openai-prompt',
+        app: 'ai-chat-window',
+        storageNamespace: 'ai_chat_window_*',
+        migratedLegacyKeys: migratedKeys,
         provider: getCurrentProvider(),
         ollamaEnabled: isOllamaEnabled(),
         ollamaBaseUrl: getOllamaBaseUrl(),
