@@ -1,0 +1,22 @@
+.packs-summary {
+	margin-bottom: 0.7rem;
+	color: #555;
+}
+
+.pack-card {
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	border-radius: 0.45rem;
+	padding: 0.65rem;
+	margin-bottom: 0.55rem;
+	background: #fff;
+}
+
+.pack-title {
+	font-weight: 700;
+	margin-bottom: 0.2rem;
+}
+
+.pack-items {
+	font-size: 0.95rem;
+	line-height: 1.35;
+}

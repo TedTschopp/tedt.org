@@ -1,0 +1,39 @@
+.door-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	gap: 0.35rem 1rem;
+}
+
+.door-header {
+	font-weight: 600;
+	margin-bottom: 0.75rem;
+}
+
+.door-card {
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 0.5rem;
+	padding: 0.65rem 0.75rem;
+	margin-bottom: 0.75rem;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.door-title {
+	font-weight: 600;
+	margin-bottom: 0.35rem;
+}
+
+.door-table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.door-table td {
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+	padding: 0.2rem 0.3rem;
+}
+
+.door-roll {
+	width: 70px;
+	font-weight: 600;
+	white-space: nowrap;
+}

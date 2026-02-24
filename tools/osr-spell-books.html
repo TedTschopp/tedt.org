@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Spell Books | Wizardawn Converted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
+  <link href="./osr-spell-books/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wiz-tool-shell">
+    <header class="wiz-tool-header">
+      <h1 class="h3 mb-1">Spell Books</h1>
+      <p class="text-muted mb-0">Build custom OSRIC / Advanced Edition fantasy spell listings with sorting, filters, and detailed spell cards.</p>
+    </header>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <form id="tool-form" class="row g-3">
+          <div class="col-md-4">
+            <label for="sort" class="form-label">Sort Spells</label>
+            <select id="sort" name="sort" class="form-select">
+              <option value="1" selected>Alphabetical</option>
+              <option value="2">Class / Alphabetical</option>
+              <option value="3">Class / Level / Alphabetical</option>
+              <option value="4">Level / Alphabetical</option>
+              <option value="5">Level / Class / Alphabetical</option>
+            </select>
+          </div>
+          <div class="col-md-4 d-flex align-items-end">
+            <div class="form-check">
+              <input id="extra" name="extra" type="checkbox" value="1" class="form-check-input">
+              <label for="extra" class="form-check-label">Include Any Spell References</label>
+            </div>
+          </div>
+
+          <div class="col-12"><hr class="my-1"></div>
+
+          <div class="col-md-3">
+            <label for="listing" class="form-label">Type</label>
+            <select id="listing" name="listing" class="form-select">
+              <option value="" selected></option>
+              <option value="All">All</option>
+              <option value="Cleric">Cleric</option>
+              <option value="Druid">Druid</option>
+              <option value="Illusionist">Illusionist</option>
+              <option value="Magic-User">Magic-User</option>
+              <option value="Abjuration">Abjuration</option>
+              <option value="Alteration">Alteration</option>
+              <option value="Charm">Charm</option>
+              <option value="Conjuration">Conjuration</option>
+              <option value="Divination">Divination</option>
+              <option value="Enchantment">Enchantment</option>
+              <option value="Evocation">Evocation</option>
+              <option value="Illusion">Illusion</option>
+              <option value="Invocation">Invocation</option>
+              <option value="Necromancy">Necromancy</option>
+              <option value="Phantasm">Phantasm</option>
+              <option value="Possession">Possession</option>
+              <option value="Summoning">Summoning</option>
+              <option value="Transmutation">Transmutation</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="mins" class="form-label">Level Op</label>
+            <select id="mins" name="mins" class="form-select">
+              <option value="0" selected>=</option>
+              <option value="1"><=</option>
+              <option value="2">>=</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="level" class="form-label">Level</label>
+            <input id="level" name="level" type="number" min="1" max="9" class="form-control" placeholder="any level">
+          </div>
+
+          <div class="col-md-5">
+            <label for="seed" class="form-label">Seed</label>
+            <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
+          </div>
+
+          <div class="col-12">
+            <label class="form-label">Specific Spell Selection (used when Type is blank)</label>
+            <div class="row g-2" id="spell-lists">
+              <div class="col-md-3">
+                <div class="spell-list card"><div class="card-header py-2">Cleric Spells</div><div id="cleric-list" class="card-body spell-scroll"></div></div>
+              </div>
+              <div class="col-md-3">
+                <div class="spell-list card"><div class="card-header py-2">Druid Spells</div><div id="druid-list" class="card-body spell-scroll"></div></div>
+              </div>
+              <div class="col-md-3">
+                <div class="spell-list card"><div class="card-header py-2">Illusionist Spells</div><div id="illusionist-list" class="card-body spell-scroll"></div></div>
+              </div>
+              <div class="col-md-3">
+                <div class="spell-list card"><div class="card-header py-2">Magic-User Spells</div><div id="mage-list" class="card-body spell-scroll"></div></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button id="export-json" type="button" class="btn btn-outline-secondary">Export JSON</button>
+            <button id="export-md" type="button" class="btn btn-outline-secondary">Export Markdown</button>
+            <button id="export-html" type="button" class="btn btn-outline-secondary">Export HTML</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="wiz-tool-output" id="output" aria-live="polite">
+      <em>Output will appear here.</em>
+    </section>
+  </main>
+
+  <script src="./osr-support-files/shared/js/core.js"></script>
+  <script src="./osr-support-files/shared/js/data.js"></script>
+  <script src="./osr-spell-books/app.js"></script>
+</body>
+</html>

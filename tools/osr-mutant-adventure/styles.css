@@ -1,0 +1,36 @@
+.uruins-header {
+	font-weight: 600;
+	margin-bottom: 0.75rem;
+}
+
+.wiz-tool-shell {
+	max-width: none;
+}
+
+.wiz-tool-output {
+	overflow: visible;
+	width: max-content;
+	min-width: 100%;
+}
+
+.uruins-summary {
+	margin: 0 0 0.75rem;
+	padding-left: 1.1rem;
+}
+
+.uruins-card {
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 0.5rem;
+	padding: 0.65rem 0.75rem;
+	margin-bottom: 0.5rem;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.uruins-title {
+	font-weight: 600;
+}
+
+.uruins-sub {
+	opacity: 0.85;
+	font-size: 0.9rem;
+}

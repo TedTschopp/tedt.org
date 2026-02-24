@@ -1,0 +1,18 @@
+.names-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 0.4rem 1rem;
+}
+
+.names-card {
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 0.5rem;
+	padding: 0.65rem 0.75rem;
+	margin-bottom: 0.65rem;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.names-title {
+	font-weight: 600;
+	margin-bottom: 0.35rem;
+}

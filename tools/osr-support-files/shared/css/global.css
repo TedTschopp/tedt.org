@@ -1,0 +1,67 @@
+/* Wizardawn converted-tools global layer */
+/* Intentionally lightweight. Inherit tedt.org global Bootstrap styles where deployed. */
+
+.wiz-tool-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.wiz-tool-header {
+  margin-bottom: 1rem;
+}
+
+.wiz-tool-output {
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-height: 8rem;
+  background: #fff;
+}
+
+.wiz-map-grid {
+  overflow: auto;
+  max-height: 34rem;
+}
+
+.wiz-map-row {
+  display: flex;
+  line-height: 1;
+}
+
+.wiz-map-tile {
+  display: inline-flex;
+  width: 5.7rem;
+  height: 5.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  background: #f5f6f8;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.wiz-map-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wiz-map-meta {
+  margin-top: 0.45rem;
+  font-size: 0.82rem;
+  opacity: 0.75;
+}
+
+.wiz-map-key {
+  position: absolute;
+  bottom: 0.06rem;
+  right: 0.08rem;
+  padding: 0 0.2rem;
+  border-radius: 0.2rem;
+  font-size: 0.62rem;
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.86);
+}

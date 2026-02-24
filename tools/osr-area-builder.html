@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Area Builder | Wizardawn Converted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
+  <link href="./osr-area-builder/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wiz-tool-shell">
+    <header class="wiz-tool-header">
+      <h1 class="h3 mb-1">Area Builder</h1>
+      <p class="text-muted mb-0">Generate a compact adventure area with encounters, traps, atmosphere, and loot controls for multiple game systems.</p>
+    </header>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <form id="tool-form" class="row g-3">
+          <div class="col-md-3">
+            <label for="seed" class="form-label">Seed</label>
+            <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
+          </div>
+          <div class="col-md-4">
+            <label for="game" class="form-label">Game</label>
+            <select id="game" name="game" class="form-select">
+              <option>Labyrinth Lord</option>
+              <option>OSRIC</option>
+              <option>AD&amp;D</option>
+              <option>Swords &amp; Wizardry</option>
+              <option>BFRPG</option>
+              <option>Swords &amp; Six-Siders</option>
+              <option>BD&amp;D</option>
+              <option>Tunnels &amp; Trolls 5th Edition</option>
+              <option>Tunnels &amp; Trolls 7th Edition</option>
+              <option>Tunnels &amp; Trolls Deluxe</option>
+              <option>Mutant Future</option>
+              <option>Broken Urthe</option>
+              <option>Gamma World</option>
+              <option>Fantasy</option>
+            </select>
+          </div>
+          <div class="col-md-5">
+            <label for="areaName" class="form-label">Locale Name</label>
+            <input id="areaName" name="areaName" type="text" class="form-control" placeholder="optional">
+          </div>
+
+          <div class="col-md-3">
+            <label for="currency" class="form-label">Currency</label>
+            <input id="currency" name="currency" type="text" class="form-control" value="gold">
+          </div>
+          <div class="col-md-2">
+            <label for="level" class="form-label">Level</label>
+            <input id="level" name="level" type="number" min="1" max="20" value="3" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="characters" class="form-label">Characters</label>
+            <input id="characters" name="characters" type="number" min="1" max="20" value="4" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="ttDifficulty" class="form-label">T&amp;T Difficulty</label>
+            <select id="ttDifficulty" name="ttDifficulty" class="form-select">
+              <option value="9">Easy</option>
+              <option value="1" selected>Normal</option>
+              <option value="2">Challenging</option>
+              <option value="3">Difficult</option>
+              <option value="4">Heroic</option>
+              <option value="5">Epic</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="areaType" class="form-label">Area Type</label>
+            <select id="areaType" name="areaType" class="form-select">
+              <option value="0">Random Area</option>
+              <option>Castle</option>
+              <option>Cave</option>
+              <option>Dungeon</option>
+              <option>Fort</option>
+              <option>Mine</option>
+              <option>Ruins</option>
+              <option>Temple</option>
+              <option>Tower</option>
+              <option>Unknown Danger</option>
+              <option>Airport</option>
+              <option>Bomb Shelter</option>
+              <option>Factory</option>
+              <option>Military Base</option>
+              <option>Space Station</option>
+              <option>Prison</option>
+            </select>
+          </div>
+
+          <div class="col-md-3">
+            <label for="terrain" class="form-label">Terrain</label>
+            <select id="terrain" name="terrain" class="form-select">
+              <option>Desert</option>
+              <option>Forest</option>
+              <option>Hills</option>
+              <option>Jungle</option>
+              <option>Lake</option>
+              <option>Mountains</option>
+              <option>Plains</option>
+              <option>Sea</option>
+              <option>Snow</option>
+              <option>Swamp</option>
+              <option>Tropics</option>
+              <option>Underworld</option>
+              <option>Wasteland</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="mainEncounter1" class="form-label">1st Main Encounter</label>
+            <input id="mainEncounter1" name="mainEncounter1" type="text" class="form-control" placeholder="optional">
+          </div>
+          <div class="col-md-1">
+            <label for="mainChance1" class="form-label">%</label>
+            <input id="mainChance1" name="mainChance1" type="number" min="0" max="100" value="25" class="form-control">
+          </div>
+          <div class="col-md-3">
+            <label for="mainEncounter2" class="form-label">2nd Main Encounter</label>
+            <input id="mainEncounter2" name="mainEncounter2" type="text" class="form-control" placeholder="optional">
+          </div>
+          <div class="col-md-1">
+            <label for="mainChance2" class="form-label">%</label>
+            <input id="mainChance2" name="mainChance2" type="number" min="0" max="100" value="15" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="atmosphere" class="form-label">Atmos.</label>
+            <input id="atmosphere" name="atmosphere" type="number" min="0" max="100" value="80" class="form-control">
+          </div>
+
+          <div class="col-12">
+            <h2 class="h6 mb-2">Density Controls</h2>
+          </div>
+          <div class="col-md-2">
+            <label for="encChance" class="form-label">Encounter %</label>
+            <input id="encChance" name="encChance" type="number" min="0" max="100" value="35" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="encMin" class="form-label">Enc Min</label>
+            <input id="encMin" name="encMin" type="number" min="1" max="10" value="1" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="encMax" class="form-label">Enc Max</label>
+            <input id="encMax" name="encMax" type="number" min="1" max="10" value="4" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="trapChance" class="form-label">Trap %</label>
+            <input id="trapChance" name="trapChance" type="number" min="0" max="100" value="10" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootChance" class="form-label">Loot %</label>
+            <input id="lootChance" name="lootChance" type="number" min="0" max="100" value="20" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootAdjust" class="form-label">Loot Adj %</label>
+            <input id="lootAdjust" name="lootAdjust" type="number" min="0" max="100" value="2" class="form-control">
+          </div>
+
+          <div class="col-12 d-flex flex-wrap gap-3">
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="furnish" name="furnish" value="1" checked><label class="form-check-label" for="furnish">Furnish rooms</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="mutantsOnly" name="mutantsOnly" value="1"><label class="form-check-label" for="mutantsOnly">Mutants only</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="showDescriptions" name="showDescriptions" value="1" checked><label class="form-check-label" for="showDescriptions">Show descriptions</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useAec" name="useAec" value="1"><label class="form-check-label" for="useAec">Include AEC</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useMom" name="useMom" value="1"><label class="form-check-label" for="useMom">Include Monsters of Myth</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useFf" name="useFf" value="1"><label class="form-check-label" for="useFf">Include Fiend Folio</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useMm2" name="useMm2" value="1"><label class="form-check-label" for="useMm2">Include MM2</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="treasuredBosses" name="treasuredBosses" value="1"><label class="form-check-label" for="treasuredBosses">Treasure bosses</label></div>
+          </div>
+
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button id="export-json" type="button" class="btn btn-outline-secondary">Export JSON</button>
+            <button id="export-md" type="button" class="btn btn-outline-secondary">Export Markdown</button>
+            <button id="export-html" type="button" class="btn btn-outline-secondary">Export HTML</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="wiz-tool-output" id="output" aria-live="polite">
+      <em>Output will appear here.</em>
+    </section>
+  </main>
+
+  <script src="./osr-support-files/shared/js/core.js"></script>
+  <script src="./osr-support-files/shared/js/data.js"></script>
+  <script src="./osr-area-builder/app.js"></script>
+</body>
+</html>

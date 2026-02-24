@@ -1,0 +1,63 @@
+.acity-summary {
+	margin-bottom: 0.75rem;
+	color: #555;
+}
+
+.wiz-tool-shell {
+	max-width: none;
+}
+
+.wiz-tool-output {
+	overflow: visible;
+	width: max-content;
+	min-width: 100%;
+}
+
+.acity-grid {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 0.75rem;
+}
+
+.acity-grid td {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 3.4rem;
+	width: 3.4rem;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.2rem;
+	font-size: 0.72rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.tile-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.1rem;
+}
+
+.tile-ruined-building { background: #efebe9; }
+.tile-ruined-street { background: #eceff1; }
+.tile-debris-field { background: #fff3e0; }
+.tile-collapsed-zone { background: #f3e5f5; }
+.tile-overgrown-block { background: #e8f5e9; }
+
+.tile-label {
+	display: block;
+	font-size: 0.68rem;
+}
+
+.tile-key {
+	display: block;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0.05rem;
+	right: 0.1rem;
+	padding: 0 0.2rem;
+	font-size: 0.62rem;
+	background: rgba(255, 255, 255, 0.85);
+	border-radius: 0.15rem;
+}

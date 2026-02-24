@@ -1,0 +1,23 @@
+.ultimate-meta {
+	font-size: 0.95rem;
+	line-height: 1.35;
+}
+
+.wiz-tool-shell {
+	max-width: none;
+}
+
+.wiz-tool-output {
+	overflow: visible;
+	width: max-content;
+	min-width: 100%;
+}
+
+.ultimate-table {
+	font-size: 0.88rem;
+}
+
+.ultimate-table th,
+.ultimate-table td {
+	vertical-align: top;
+}

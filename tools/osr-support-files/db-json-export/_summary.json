@@ -1,0 +1,62 @@
+{
+    "database": "wizardawn",
+    "exported_at": "2026-02-23T15:25:15+00:00",
+    "table_count": 11,
+    "tables": [
+        {
+            "table": "articles",
+            "rows": 0,
+            "status": "ok"
+        },
+        {
+            "table": "geomorphs",
+            "rows": 5436,
+            "status": "ok"
+        },
+        {
+            "table": "lablord_spells",
+            "rows": 161,
+            "status": "ok"
+        },
+        {
+            "table": "maps_created",
+            "rows": 12,
+            "status": "ok"
+        },
+        {
+            "table": "menus",
+            "rows": 163,
+            "status": "ok"
+        },
+        {
+            "table": "monsters_rpgs",
+            "rows": 4038,
+            "status": "ok"
+        },
+        {
+            "table": "mutants",
+            "rows": 127,
+            "status": "ok"
+        },
+        {
+            "table": "osric_spells",
+            "rows": 414,
+            "status": "ok"
+        },
+        {
+            "table": "store_items",
+            "rows": 1876,
+            "status": "ok"
+        },
+        {
+            "table": "worldmap",
+            "rows": 88,
+            "status": "ok"
+        },
+        {
+            "table": "worldmap_legend",
+            "rows": 105,
+            "status": "ok"
+        }
+    ]
+}

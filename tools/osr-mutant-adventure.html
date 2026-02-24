@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mutant Adventure | Wizardawn Converted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
+  <link href="./osr-mutant-adventure/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wiz-tool-shell">
+    <header class="wiz-tool-header">
+      <h1 class="h3 mb-1">Mutant Adventure</h1>
+      <p class="text-muted mb-0">Generate post-apocalyptic buildings, ruined cities, and derelict ships with configurable encounters, traps, contents, and loot.</p>
+    </header>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <form id="tool-form" class="row g-3">
+          <div class="col-md-4">
+            <label for="seed" class="form-label">Seed</label>
+            <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
+          </div>
+          <div class="col-md-4">
+            <label for="game" class="form-label">Game</label>
+            <select id="game" name="game" class="form-select">
+              <option>Mutant Future</option>
+              <option>Gamma World</option>
+              <option>Metamorphosis Alpha</option>
+              <option>Broken Urthe</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <label for="mapType" class="form-label">Map Type</label>
+            <select id="mapType" name="mapType" class="form-select">
+              <option>Ruined City</option>
+              <option>Building</option>
+              <option>Exodus Spaceship</option>
+              <option>Spaceship</option>
+            </select>
+          </div>
+
+          <div class="col-md-4">
+            <label for="name" class="form-label">Name</label>
+            <input id="name" name="name" type="text" class="form-control" placeholder="optional">
+          </div>
+          <div class="col-md-2">
+            <label for="currency" class="form-label">Currency</label>
+            <input id="currency" name="currency" type="text" class="form-control" value="gold">
+          </div>
+          <div class="col-md-2">
+            <label for="level" class="form-label">Level</label>
+            <input id="level" name="level" type="number" min="0" max="100" value="0" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="characters" class="form-label">Characters</label>
+            <input id="characters" name="characters" type="number" min="0" max="20" value="0" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="terrain" class="form-label">Outer Terrain</label>
+            <select id="terrain" name="terrain" class="form-select">
+              <option value="">Random</option>
+              <option>Forest</option>
+              <option>Hills</option>
+              <option>Mountains</option>
+              <option>Plains</option>
+              <option>Swamp</option>
+              <option>Desert</option>
+              <option>Wastelands</option>
+              <option>Lake/River</option>
+              <option>Sea</option>
+              <option>Snowy Forest</option>
+              <option>Snowy Hills</option>
+              <option>Snowy Mountains</option>
+              <option>Snowy Plains</option>
+              <option>Jungle Forest</option>
+              <option>Jungle Hills</option>
+              <option>Jungle Mountains</option>
+              <option>Jungle Swamp</option>
+            </select>
+          </div>
+
+          <div class="col-md-2">
+            <label for="mapWide" class="form-label">Map Width</label>
+            <input id="mapWide" name="mapWide" type="number" min="1" max="10" value="4" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="mapHigh" class="form-label">Map Height</label>
+            <input id="mapHigh" name="mapHigh" type="number" min="1" max="10" value="4" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="mapRooms" class="form-label">My Map Rooms</label>
+            <input id="mapRooms" name="mapRooms" type="number" min="0" max="1000" value="0" class="form-control">
+          </div>
+          <div class="col-md-3">
+            <label for="enemyOne" class="form-label">First Main Enemy</label>
+            <input id="enemyOne" name="enemyOne" type="text" class="form-control" placeholder="optional">
+          </div>
+          <div class="col-md-1">
+            <label for="enemyOneChance" class="form-label">%</label>
+            <input id="enemyOneChance" name="enemyOneChance" type="number" min="0" max="100" value="0" class="form-control">
+          </div>
+          <div class="col-md-3">
+            <label for="enemyTwo" class="form-label">Second Main Enemy</label>
+            <input id="enemyTwo" name="enemyTwo" type="text" class="form-control" placeholder="optional">
+          </div>
+          <div class="col-md-1">
+            <label for="enemyTwoChance" class="form-label">%</label>
+            <input id="enemyTwoChance" name="enemyTwoChance" type="number" min="0" max="100" value="0" class="form-control">
+          </div>
+
+          <div class="col-md-2 d-flex align-items-end">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="outsideVisitors" name="outsideVisitors" value="1">
+              <label class="form-check-label" for="outsideVisitors">Outer visitors</label>
+            </div>
+          </div>
+          <div class="col-md-2 d-flex align-items-end">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="mutantsOnly" name="mutantsOnly" value="1">
+              <label class="form-check-label" for="mutantsOnly">Mutants only</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <label for="atmo" class="form-label">Atmosphere %</label>
+            <input id="atmo" name="atmo" type="number" min="0" max="100" value="0" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootRigged" class="form-label">Loot Trapped %</label>
+            <input id="lootRigged" name="lootRigged" type="number" min="0" max="100" value="30" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootAdjust" class="form-label">Loot Adjust %</label>
+            <input id="lootAdjust" name="lootAdjust" type="number" min="0" max="100" value="2" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="cashCut" class="form-label">Cash Amount %</label>
+            <input id="cashCut" name="cashCut" type="number" min="1" max="1000" value="100" class="form-control">
+          </div>
+
+          <div class="col-md-2">
+            <label for="enemyChance" class="form-label">Enemy %</label>
+            <input id="enemyChance" name="enemyChance" type="number" min="0" max="100" value="35" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="enemyMin" class="form-label">Min</label>
+            <input id="enemyMin" name="enemyMin" type="number" min="1" max="10" value="1" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="enemyMax" class="form-label">Max</label>
+            <input id="enemyMax" name="enemyMax" type="number" min="1" max="10" value="5" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="enemyLow" class="form-label">Low Bias</label>
+            <input id="enemyLow" name="enemyLow" type="number" min="0" max="100" value="0" class="form-control">
+          </div>
+
+          <div class="col-md-2">
+            <label for="trapChance" class="form-label">Trap %</label>
+            <input id="trapChance" name="trapChance" type="number" min="0" max="100" value="10" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="trapMin" class="form-label">Min</label>
+            <input id="trapMin" name="trapMin" type="number" min="1" max="10" value="1" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="trapMax" class="form-label">Max</label>
+            <input id="trapMax" name="trapMax" type="number" min="1" max="10" value="3" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="trapLow" class="form-label">Low Bias</label>
+            <input id="trapLow" name="trapLow" type="number" min="0" max="100" value="0" class="form-control">
+          </div>
+
+          <div class="col-md-2">
+            <label for="contentChance" class="form-label">Contents %</label>
+            <input id="contentChance" name="contentChance" type="number" min="0" max="100" value="70" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="contentMin" class="form-label">Min</label>
+            <input id="contentMin" name="contentMin" type="number" min="1" max="25" value="1" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="contentMax" class="form-label">Max</label>
+            <input id="contentMax" name="contentMax" type="number" min="1" max="25" value="10" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="contentLow" class="form-label">Low Bias</label>
+            <input id="contentLow" name="contentLow" type="number" min="0" max="100" value="5" class="form-control">
+          </div>
+
+          <div class="col-md-2">
+            <label for="lootChance" class="form-label">Loot %</label>
+            <input id="lootChance" name="lootChance" type="number" min="0" max="100" value="20" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="lootMin" class="form-label">Min</label>
+            <input id="lootMin" name="lootMin" type="number" min="1" max="25" value="1" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="lootMax" class="form-label">Max</label>
+            <input id="lootMax" name="lootMax" type="number" min="1" max="25" value="5" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootLow" class="form-label">Low Bias</label>
+            <input id="lootLow" name="lootLow" type="number" min="0" max="100" value="20" class="form-control">
+          </div>
+
+          <div class="col-md-2">
+            <label for="techItems" class="form-label">Tech Items %</label>
+            <input id="techItems" name="techItems" type="number" min="0" max="100" value="100" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="derelictRobots" class="form-label">Derelict Robots %</label>
+            <input id="derelictRobots" name="derelictRobots" type="number" min="0" max="100" value="2" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="derelictVehicles" class="form-label">Derelict Vehicles %</label>
+            <input id="derelictVehicles" name="derelictVehicles" type="number" min="0" max="100" value="2" class="form-control">
+          </div>
+
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button id="export-json" type="button" class="btn btn-outline-secondary">Export JSON</button>
+            <button id="export-md" type="button" class="btn btn-outline-secondary">Export Markdown</button>
+            <button id="export-html" type="button" class="btn btn-outline-secondary">Export HTML</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="wiz-tool-output" id="output" aria-live="polite">
+      <em>Output will appear here.</em>
+    </section>
+  </main>
+
+  <script src="./osr-support-files/shared/js/core.js"></script>
+  <script src="./osr-support-files/shared/js/data.js?v=20260224d"></script>
+  <script src="./osr-support-files/shared/js/map-utils.js?v=20260224g"></script>
+  <script src="./osr-mutant-adventure/app.js"></script>
+</body>
+</html>

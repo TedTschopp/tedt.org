@@ -1,0 +1,17 @@
+.zombie-card {
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	border-radius: 0.5rem;
+	padding: 0.75rem;
+	margin-bottom: 0.75rem;
+	background: #fff;
+}
+
+.zombie-title {
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.zombie-meta {
+	font-size: 0.9rem;
+	color: #555;
+}

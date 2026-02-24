@@ -1,0 +1,20 @@
+.ftown-header {
+	margin-bottom: 0.7rem;
+	color: #555;
+	font-weight: 600;
+}
+
+.ftown-card {
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	border-radius: 0.45rem;
+	padding: 0.65rem;
+	margin-bottom: 0.55rem;
+	background: #fff;
+	font-size: 0.92rem;
+	line-height: 1.35;
+}
+
+.ftown-title {
+	font-weight: 700;
+	margin-bottom: 0.2rem;
+}

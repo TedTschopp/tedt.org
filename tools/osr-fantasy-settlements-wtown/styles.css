@@ -1,0 +1,25 @@
+.wtown-header {
+	margin-bottom: 0.7rem;
+	color: #555;
+	font-weight: 600;
+}
+
+.wtown-card {
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	border-radius: 0.45rem;
+	padding: 0.65rem;
+	margin-bottom: 0.55rem;
+	background: #fff;
+	font-size: 0.92rem;
+	line-height: 1.35;
+}
+
+.wtown-title {
+	font-weight: 700;
+	margin-bottom: 0.2rem;
+}
+
+.wtown-sub {
+	margin-top: 0.2rem;
+	color: #444;
+}

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Zombie Hordes | Wizardawn Converted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
+  <link href="./osr-zombie-hordes/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wiz-tool-shell">
+    <header class="wiz-tool-header">
+      <h1 class="h3 mb-1">Zombie Hordes</h1>
+      <p class="text-muted mb-0">Create random zombie groups for survival-horror play, including Necropalyx and generic modes.</p>
+    </header>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <form id="tool-form" class="row g-3">
+          <div class="col-md-3">
+            <label for="game" class="form-label">Game Mode</label>
+            <select id="game" name="game" class="form-select">
+              <option value="Generic" selected>Generic</option>
+              <option value="Necropalyx">Necropalyx</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="amount" class="form-label">Amount of Zombies</label>
+            <input id="amount" name="amount" type="number" min="1" max="100" value="10" class="form-control">
+          </div>
+          <div class="col-md-6">
+            <label for="seed" class="form-label">Seed</label>
+            <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
+          </div>
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button id="export-json" type="button" class="btn btn-outline-secondary">Export JSON</button>
+            <button id="export-md" type="button" class="btn btn-outline-secondary">Export Markdown</button>
+            <button id="export-html" type="button" class="btn btn-outline-secondary">Export HTML</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="wiz-tool-output" id="output" aria-live="polite">
+      <em>Output will appear here.</em>
+    </section>
+  </main>
+
+  <script src="./osr-support-files/shared/js/core.js"></script>
+  <script src="./osr-support-files/shared/js/data.js"></script>
+  <script src="./osr-zombie-hordes/app.js"></script>
+</body>
+</html>

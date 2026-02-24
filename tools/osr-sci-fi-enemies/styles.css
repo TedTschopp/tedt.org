@@ -1,0 +1,23 @@
+.scifi-summary {
+	margin-bottom: 0.7rem;
+	color: #555;
+}
+
+.scifi-card {
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	border-radius: 0.45rem;
+	padding: 0.65rem;
+	margin-bottom: 0.55rem;
+	background: #fff;
+}
+
+.scifi-title {
+	font-weight: 700;
+	margin-bottom: 0.2rem;
+}
+
+.scifi-line {
+	font-size: 0.92rem;
+	line-height: 1.35;
+	margin-bottom: 0.15rem;
+}

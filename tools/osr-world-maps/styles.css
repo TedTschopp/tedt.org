@@ -1,0 +1,244 @@
+.world-info {
+	font-size: 0.95rem;
+	line-height: 1.35;
+}
+
+.world-map {
+	overflow: visible;
+	border: 1px solid var(--bs-border-color, #c9cdd2);
+	border-radius: 0.35rem;
+	background: var(--bs-body-bg, #ffffff);
+	padding: 0.5rem;
+	max-height: none;
+	width: max-content;
+}
+
+.world-map-php {
+	position: relative;
+	display: inline-block;
+	min-width: 0;
+}
+
+.wiz-tool-shell {
+	max-width: none;
+}
+
+.wiz-tool-output {
+	overflow: visible;
+	width: max-content;
+	min-width: 100%;
+}
+
+.world-map-card,
+.world-legend-card {
+	max-width: none;
+}
+
+.world-hex-stack {
+	position: absolute;
+	width: 41px;
+	height: 33px;
+	display: block;
+	overflow: hidden;
+	z-index: 2;
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+}
+
+.world-hex-terrain,
+.world-hex-color,
+.world-hex-highlight {
+	position: absolute;
+	width: 41px;
+	height: 33px;
+	display: block;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+.world-hex-terrain {
+	z-index: 2;
+}
+
+.world-hex-color {
+	z-index: 3;
+}
+
+.world-hex-highlight {
+	z-index: 4;
+}
+
+.world-hex-frame {
+	position: absolute;
+	inset: 0;
+	clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+	border: 1px solid rgba(0, 0, 0, 0.32);
+	box-sizing: border-box;
+	pointer-events: none;
+	z-index: 4;
+	display: none;
+}
+
+.world-hex-gridtile {
+	position: absolute;
+	display: block;
+	pointer-events: none;
+	z-index: 1;
+}
+
+.hex-row {
+	display: flex;
+	white-space: nowrap;
+	line-height: 1;
+	margin-bottom: -0.6rem;
+}
+
+.hex-offset {
+	margin-left: 2.4rem;
+}
+
+.world-map .hex-row {
+	margin-bottom: -0.6rem;
+}
+
+.world-map .hex-offset {
+	margin-left: 2.4rem;
+}
+
+.hex-cell {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 4.8rem;
+	height: 2.7rem;
+	margin: 0.1rem;
+	border: 1px solid var(--bs-border-color, #c9cdd2);
+	border-radius: 0;
+	font-size: 0.62rem;
+	font-weight: 600;
+	color: var(--bs-body-color, #1f2933);
+	background: var(--bs-light-bg-subtle, #f8f9fa);
+	overflow: hidden;
+	position: relative;
+	clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+	box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.07);
+}
+
+.world-map .hex-cell {
+	width: 4.8rem;
+	height: 2.7rem;
+	margin: 0.1rem;
+}
+
+.hex-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.hex-image-color {
+	opacity: 0.72;
+}
+
+.hex-marker {
+	position: absolute;
+	font-size: 0.7rem;
+	line-height: 1;
+	color: var(--bs-warning-text-emphasis, #8a5a00);
+	text-shadow: 0 0 2px #fff;
+	z-index: 5;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.hex-fallback {
+	font-size: 0.62rem;
+}
+
+.hex-landmark {
+	color: var(--bs-warning-text-emphasis, #8a5a00);
+	font-size: 0.68rem;
+}
+
+.legend-list {
+	columns: 2;
+	column-gap: 1.25rem;
+}
+
+.legend-list li {
+	break-inside: avoid;
+	margin-bottom: 0.2rem;
+}
+
+.legend-glyph {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 1.7rem;
+	height: 1rem;
+	border: 1px solid var(--bs-border-color, #c9cdd2);
+	border-radius: 0.2rem;
+	font-size: 0.68rem;
+	margin-right: 0.2rem;
+	overflow: hidden;
+}
+
+.legend-hex {
+	position: relative;
+	display: inline-block;
+	width: 41px;
+	height: 33px;
+	margin-right: 0.25rem;
+	vertical-align: middle;
+	overflow: hidden;
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+	border: 1px solid var(--bs-border-color, #c9cdd2);
+	box-sizing: border-box;
+}
+
+.legend-hex-layer {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+}
+
+.legend-hex-color {
+	z-index: 2;
+}
+
+.legend-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.legend-image-color {
+	opacity: 0.72;
+}
+
+.hex-ocean { background-color: var(--bs-primary-bg-subtle, #bcd9ff); }
+.hex-coast { background-color: var(--bs-info-bg-subtle, #cdeef7); }
+.hex-plains { background-color: var(--bs-success-bg-subtle, #d6efd9); }
+.hex-forest { background-color: #9fd6a4; }
+.hex-hills { background-color: var(--bs-warning-bg-subtle, #f8e3b6); }
+.hex-mountains { background-color: var(--bs-secondary-bg-subtle, #dcdfe3); }
+.hex-swamp { background-color: #96c5a0; }
+.hex-desert { background-color: #efdca9; }
+.hex-tundra { background-color: var(--bs-light-bg-subtle, #f8f9fa); }
+.hex-jungle { background-color: #7fc38a; }
+.hex-ruins { background-color: #c8ccd1; }
+.hex-waste { background-color: var(--bs-body-secondary-bg, #e3e6ea); }
+.hex-underdark { background-color: var(--bs-dark-bg-subtle, #b7bec6); }
+
+@media (max-width: 768px) {
+	.legend-list {
+		columns: 1;
+	}
+}

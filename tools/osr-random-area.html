@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Random Area | Wizardawn Converted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
+  <link href="./osr-random-area/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wiz-tool-shell">
+    <header class="wiz-tool-header">
+      <h1 class="h3 mb-1">Random Area</h1>
+      <p class="text-muted mb-0">Create random areas with encounters, traps, contents, and loot.</p>
+    </header>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <form id="tool-form" class="row g-3">
+          <div class="col-md-4">
+            <label for="area-name" class="form-label">Name</label>
+            <input id="area-name" name="areaName" type="text" class="form-control" placeholder="Forest, Ruins of Khar, etc.">
+          </div>
+          <div class="col-md-2">
+            <label for="level" class="form-label">Level</label>
+            <input id="level" name="level" type="number" min="1" max="100" value="1" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="areas" class="form-label">Areas</label>
+            <input id="areas" name="areas" type="number" min="1" max="1000" value="10" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="terrain" class="form-label">Terrain</label>
+            <input id="terrain" name="terrain" type="text" class="form-control" placeholder="F, S, C">
+          </div>
+          <div class="col-md-2">
+            <label for="seed" class="form-label">Seed</label>
+            <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
+          </div>
+
+          <div class="col-12"><hr class="my-1"></div>
+
+          <div class="col-md-3"><label class="form-label" for="enc-chance">Encounter %</label><input id="enc-chance" name="encChance" type="number" min="0" max="100" value="30" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="enc-min">Enc Min</label><input id="enc-min" name="encMin" type="number" min="1" max="10" value="1" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="enc-max">Enc Max</label><input id="enc-max" name="encMax" type="number" min="1" max="10" value="3" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="enc-low">Enc Low</label><input id="enc-low" name="encLow" type="number" min="0" max="100" value="0" class="form-control"></div>
+
+          <div class="col-md-3"><label class="form-label" for="trap-chance">Trap %</label><input id="trap-chance" name="trapChance" type="number" min="0" max="100" value="10" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="trap-min">Trap Min</label><input id="trap-min" name="trapMin" type="number" min="1" max="10" value="1" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="trap-max">Trap Max</label><input id="trap-max" name="trapMax" type="number" min="1" max="10" value="2" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="trap-low">Trap Low</label><input id="trap-low" name="trapLow" type="number" min="0" max="100" value="0" class="form-control"></div>
+
+          <div class="col-md-3"><label class="form-label" for="contents-chance">Contents %</label><input id="contents-chance" name="contentsChance" type="number" min="0" max="100" value="20" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="contents-min">Contents Min</label><input id="contents-min" name="contentsMin" type="number" min="1" max="25" value="1" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="contents-max">Contents Max</label><input id="contents-max" name="contentsMax" type="number" min="1" max="25" value="3" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="contents-low">Contents Low</label><input id="contents-low" name="contentsLow" type="number" min="0" max="100" value="0" class="form-control"></div>
+
+          <div class="col-md-3"><label class="form-label" for="loot-chance">Loot %</label><input id="loot-chance" name="lootChance" type="number" min="0" max="100" value="10" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="loot-min">Loot Min</label><input id="loot-min" name="lootMin" type="number" min="1" max="25" value="1" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="loot-max">Loot Max</label><input id="loot-max" name="lootMax" type="number" min="1" max="25" value="10" class="form-control"></div>
+          <div class="col-md-2"><label class="form-label" for="loot-low">Loot Low</label><input id="loot-low" name="lootLow" type="number" min="0" max="100" value="5" class="form-control"></div>
+
+          <div class="col-md-3"><label class="form-label" for="rigged-chance">Loot Trapped %</label><input id="rigged-chance" name="riggedChance" type="number" min="0" max="100" value="25" class="form-control"></div>
+          <div class="col-md-3 d-flex align-items-end"><div class="form-check"><input id="loot-adjust" name="lootAdjust" type="checkbox" value="1" class="form-check-input" checked><label for="loot-adjust" class="form-check-label">Loot adjustment by encounter level</label></div></div>
+          <div class="col-md-2"><label class="form-label" for="adjustment">Adj % per level</label><input id="adjustment" name="adjustment" type="number" min="0" max="100" value="5" class="form-control"></div>
+
+          <div class="col-12">
+            <label for="main-encounters" class="form-label">Main Encounters (one per line, optional tab format: name\tlevel\tdetail)</label>
+            <textarea id="main-encounters" name="mainEncounters" rows="3" class="form-control" placeholder="Goblin Patrol\t2\t6 goblins with shortbows"></textarea>
+          </div>
+          <div class="col-md-3">
+            <label for="main-chance" class="form-label">Main % Appear</label>
+            <input id="main-chance" name="mainChance" type="number" min="0" max="100" value="50" class="form-control">
+          </div>
+          <div class="col-12">
+            <label for="data" class="form-label">Data (optional lines; prefixes `enemy:`, `trap:`, `content:`, `loot:`, `box:`)</label>
+            <textarea id="data" name="data" rows="5" class="form-control" placeholder="enemy: Skeleton, level 1\ntrap: Needle trap\ncontent: Broken table\nloot: silver candlestick\nbox: iron coffer"></textarea>
+          </div>
+
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button id="export-json" type="button" class="btn btn-outline-secondary">Export JSON</button>
+            <button id="export-md" type="button" class="btn btn-outline-secondary">Export Markdown</button>
+            <button id="export-html" type="button" class="btn btn-outline-secondary">Export HTML</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="wiz-tool-output" id="output" aria-live="polite">
+      <em>Output will appear here.</em>
+    </section>
+  </main>
+
+  <script src="./osr-support-files/shared/js/core.js"></script>
+  <script src="./osr-support-files/shared/js/data.js"></script>
+  <script src="./osr-random-area/app.js"></script>
+</body>
+</html>

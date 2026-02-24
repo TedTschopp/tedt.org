@@ -1,0 +1,27 @@
+.race-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 0.4rem 1rem;
+}
+
+.ttown-header {
+	font-weight: 600;
+	margin-bottom: 0.75rem;
+}
+
+.ttown-card {
+	border: 1px solid rgba(255, 255, 255, 0.15);
+	border-radius: 0.5rem;
+	padding: 0.65rem 0.75rem;
+	margin-bottom: 0.5rem;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.ttown-title {
+	font-weight: 600;
+}
+
+.ttown-sub {
+	opacity: 0.85;
+	font-size: 0.9rem;
+}

@@ -1,0 +1,94 @@
+.hexcrawl-meta {
+	font-size: 0.95rem;
+	line-height: 1.35;
+}
+
+.wiz-tool-shell {
+	max-width: none;
+}
+
+.wiz-tool-output {
+	overflow: visible;
+	width: max-content;
+	min-width: 100%;
+}
+
+.hexcrawl-list {
+	margin-bottom: 0;
+	padding-left: 1.2rem;
+}
+
+.hexcrawl-list li {
+	margin-bottom: 0.2rem;
+}
+
+.hexcrawl-table {
+	font-size: 0.88rem;
+}
+
+.hexcrawl-table th,
+.hexcrawl-table td {
+	vertical-align: top;
+}
+
+.hexcrawl-map {
+	position: relative;
+	overflow: visible;
+	padding: 0.25rem;
+	max-height: none;
+	width: max-content;
+}
+
+.hexcrawl-row {
+	display: flex;
+	justify-content: center;
+	line-height: 1;
+	margin-bottom: 0.02rem;
+}
+
+.hexcrawl-cell {
+	display: inline-flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 41px;
+	height: 33px;
+	margin: 0;
+	overflow: hidden;
+	border: none;
+	border-radius: 0;
+	background: #f4f5f7;
+	font-size: 0.62rem;
+	font-weight: 600;
+	-webkit-clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 50%, 80% 100%, 20% 100%, 0% 50%);
+}
+
+.hexcrawl-cell-image {
+	position: absolute;
+	top: 1px;
+	left: 1px;
+	display: block;
+	width: 41px;
+	height: 33px;
+	object-fit: cover;
+}
+
+.hexcrawl-cell-color {
+	z-index: 2;
+}
+
+.hexcrawl-site {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 0.55rem;
+	line-height: 1;
+	padding: 0 0.15rem;
+	border-radius: 0.2rem;
+	background: rgba(255, 255, 255, 0.88);
+	color: #b00020;
+	font-weight: 700;
+	z-index: 3;
+}

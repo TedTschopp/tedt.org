@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Basic Adventurers Guild | Wizardawn Converted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
+  <link href="./osr-basic-adventurers-guild/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wiz-tool-shell">
+    <header class="wiz-tool-header">
+      <h1 class="h3 mb-1">Basic Adventurers Guild</h1>
+      <p class="text-muted mb-0">Generate Labyrinth Lord adventurers with listing or sheet-style output.</p>
+    </header>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <form id="tool-form" class="row g-3">
+          <div class="col-md-3">
+            <label for="output-type" class="form-label">Type</label>
+            <select id="output-type" name="outputType" class="form-select">
+              <option value="Character Listing" selected>Character Listing</option>
+              <option value="Character Sheets">Character Sheets</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="lvl1" class="form-label">Level Min</label>
+            <input id="lvl1" name="lvl1" type="number" min="1" max="20" value="1" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lvl2" class="form-label">Level Max</label>
+            <input id="lvl2" name="lvl2" type="number" min="1" max="20" value="20" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="sex" class="form-label">Gender</label>
+            <select id="sex" name="sex" class="form-select">
+              <option value="Any" selected>Any</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="seed" class="form-label">Seed</label>
+            <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
+          </div>
+
+          <div class="col-12"><hr class="my-1"></div>
+
+          <div class="col-md-2">
+            <label for="qty-cleric" class="form-label">Cleric</label>
+            <input id="qty-cleric" name="qtyCleric" type="number" min="0" max="20" value="0" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="qty-dwarf" class="form-label">Dwarf</label>
+            <input id="qty-dwarf" name="qtyDwarf" type="number" min="0" max="20" value="0" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="qty-elf" class="form-label">Elf</label>
+            <input id="qty-elf" name="qtyElf" type="number" min="0" max="20" value="0" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="qty-fighter" class="form-label">Fighter</label>
+            <input id="qty-fighter" name="qtyFighter" type="number" min="0" max="20" value="1" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="qty-halfling" class="form-label">Halfling</label>
+            <input id="qty-halfling" name="qtyHalfling" type="number" min="0" max="20" value="0" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="qty-mage" class="form-label">Magic-User</label>
+            <input id="qty-mage" name="qtyMage" type="number" min="0" max="20" value="0" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="qty-thief" class="form-label">Thief</label>
+            <input id="qty-thief" name="qtyThief" type="number" min="0" max="20" value="0" class="form-control">
+          </div>
+
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="name-char" name="nameCharacters" type="checkbox" value="1" class="form-check-input" checked><label for="name-char" class="form-check-label">Name</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="show-relics" name="showRelics" type="checkbox" value="1" class="form-check-input"><label for="show-relics" class="form-check-label">Magic Items</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="max-hp" name="maxHp" type="checkbox" value="1" class="form-check-input"><label for="max-hp" class="form-check-label">Max HP</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="show-desc" name="showDescriptions" type="checkbox" value="1" class="form-check-input" checked><label for="show-desc" class="form-check-label">Descriptions</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="show-eq" name="showEquipment" type="checkbox" value="1" class="form-check-input" checked><label for="show-eq" class="form-check-label">Equipment</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="show-sk" name="showSkills" type="checkbox" value="1" class="form-check-input" checked><label for="show-sk" class="form-check-label">Skills</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="show-spell-list" name="showSpellLists" type="checkbox" value="1" class="form-check-input"><label for="show-spell-list" class="form-check-label">Spell Lists</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="show-spell-book" name="showSpellBook" type="checkbox" value="1" class="form-check-input"><label for="show-spell-book" class="form-check-label">Spell Book</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="show-alignment" name="showAlignment" type="checkbox" value="1" class="form-check-input" checked><label for="show-alignment" class="form-check-label">Alignment</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="show-age" name="showAge" type="checkbox" value="1" class="form-check-input" checked><label for="show-age" class="form-check-label">Age</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="choose-languages" name="chooseLanguages" type="checkbox" value="1" class="form-check-input" checked><label for="choose-languages" class="form-check-label">Choose Languages</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="use-aec-langs" name="useAecLanguages" type="checkbox" value="1" class="form-check-input"><label for="use-aec-langs" class="form-check-label">AEC Languages</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="advanced-sheet" name="advancedSheet" type="checkbox" value="1" class="form-check-input"><label for="advanced-sheet" class="form-check-label">Advanced Sheet</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="random-xp" name="randomExperience" type="checkbox" value="1" class="form-check-input"><label for="random-xp" class="form-check-label">Random XP</label></div></div>
+          <div class="col-md-2 d-flex align-items-end"><div class="form-check"><input id="image-separator" name="imageSeparator" type="checkbox" value="1" class="form-check-input" checked><label for="image-separator" class="form-check-label">Image Separator</label></div></div>
+
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button id="export-json" type="button" class="btn btn-outline-secondary">Export JSON</button>
+            <button id="export-md" type="button" class="btn btn-outline-secondary">Export Markdown</button>
+            <button id="export-html" type="button" class="btn btn-outline-secondary">Export HTML</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="wiz-tool-output" id="output" aria-live="polite">
+      <em>Output will appear here.</em>
+    </section>
+  </main>
+
+  <script src="./osr-support-files/shared/js/core.js"></script>
+  <script src="./osr-support-files/shared/js/data.js"></script>
+  <script src="./osr-basic-adventurers-guild/app.js"></script>
+</body>
+</html>

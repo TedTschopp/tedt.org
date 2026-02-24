@@ -1,0 +1,74 @@
+.sewer-summary {
+	margin-bottom: 0.75rem;
+	color: #555;
+}
+
+.wiz-tool-shell {
+	max-width: none;
+}
+
+.wiz-tool-output {
+	overflow: visible;
+	width: max-content;
+	min-width: 100%;
+}
+
+.sewer-grid {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 0.75rem;
+}
+
+.sewer-grid td {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 3.2rem;
+	width: 3.2rem;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.25rem;
+	font-size: 0.82rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.tile-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.1rem;
+}
+
+.tile-room {
+	background: #e8f3ff;
+}
+
+.tile-tunnel {
+	background: #f7f7f7;
+}
+
+.tile-junction {
+	background: #e9ffe8;
+}
+
+.tile-dead-end {
+	background: #fff5e8;
+}
+
+.tile-label {
+	display: block;
+	font-size: 0.72rem;
+	color: #444;
+}
+
+.tile-key {
+	display: block;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0.05rem;
+	right: 0.1rem;
+	padding: 0 0.2rem;
+	font-size: 0.62rem;
+	background: rgba(255, 255, 255, 0.85);
+	border-radius: 0.15rem;
+}

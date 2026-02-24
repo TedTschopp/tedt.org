@@ -1,0 +1,33 @@
+.lists-header {
+	font-weight: 600;
+	margin-bottom: 0.7rem;
+}
+
+.lists-card {
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 0.5rem;
+	padding: 0.6rem 0.75rem;
+	margin-bottom: 0.5rem;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.lists-title {
+	font-weight: 600;
+}
+
+.lists-sub {
+	opacity: 0.86;
+	font-size: 0.92rem;
+}
+
+.lists-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 0.6rem;
+}
+
+.lists-table th,
+.lists-table td {
+	border-top: 1px solid rgba(255, 255, 255, 0.15);
+	padding: 0.32rem 0.4rem;
+}

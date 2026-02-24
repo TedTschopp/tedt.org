@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Dungeon Delve | Wizardawn Converted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
+  <link href="./osr-dungeon-delve/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wiz-tool-shell">
+    <header class="wiz-tool-header">
+      <h1 class="h3 mb-1">Dungeon Delve</h1>
+      <p class="text-muted mb-0">Create a configurable dungeon delve with room-by-room encounters, traps, loot, and atmosphere hints.</p>
+    </header>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <form id="tool-form" class="row g-3">
+          <div class="col-md-3">
+            <label for="seed" class="form-label">Seed</label>
+            <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
+          </div>
+          <div class="col-md-4">
+            <label for="game" class="form-label">Game</label>
+            <select id="game" name="game" class="form-select">
+              <option>Labyrinth Lord</option>
+              <option>OSRIC</option>
+              <option>AD&amp;D</option>
+              <option>Swords &amp; Wizardry</option>
+              <option>BFRPG</option>
+              <option>Swords &amp; Six-Siders</option>
+              <option>BD&amp;D</option>
+              <option>Tunnels &amp; Trolls 5th Edition</option>
+              <option>Tunnels &amp; Trolls 7th Edition</option>
+              <option>Tunnels &amp; Trolls Deluxe</option>
+              <option>Fantasy</option>
+            </select>
+          </div>
+          <div class="col-md-5">
+            <label for="areaName" class="form-label">Delve Name</label>
+            <input id="areaName" name="areaName" type="text" class="form-control" placeholder="optional">
+          </div>
+
+          <div class="col-md-2">
+            <label for="level" class="form-label">Level</label>
+            <input id="level" name="level" type="number" min="1" max="20" value="3" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="characters" class="form-label">Characters</label>
+            <input id="characters" name="characters" type="number" min="1" max="20" value="4" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="mapWide" class="form-label">Map Width</label>
+            <input id="mapWide" name="mapWide" type="number" min="1" max="10" value="4" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="mapHigh" class="form-label">Map Height</label>
+            <input id="mapHigh" name="mapHigh" type="number" min="1" max="10" value="4" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="delveType" class="form-label">Delve Type</label>
+            <select id="delveType" name="delveType" class="form-select">
+              <option>Simple</option>
+              <option>Complex</option>
+              <option>Progressive</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="omitFloors" class="form-label">Omit Floors %</label>
+            <input id="omitFloors" name="omitFloors" type="number" min="0" max="100" value="0" class="form-control">
+          </div>
+
+          <div class="col-md-3">
+            <label for="terrain" class="form-label">Outside Terrain</label>
+            <select id="terrain" name="terrain" class="form-select">
+              <option value="">None</option>
+              <option value="PF">Forest</option>
+              <option value="PH">Hills</option>
+              <option value="PM">Mountains</option>
+              <option value="PP">Plains</option>
+              <option value="PS">Swamp</option>
+              <option value="PD">Desert</option>
+              <option value="FW">Freshwater</option>
+              <option value="SW">Sea</option>
+              <option value="CF">Snowy Forest</option>
+              <option value="CH">Snowy Hills</option>
+              <option value="CM">Snowy Mountains</option>
+              <option value="CP">Snowy Plains</option>
+              <option value="TF">Jungle/Tropics Forest</option>
+              <option value="TH">Jungle/Tropics Hills</option>
+              <option value="TM">Jungle/Tropics Mountains</option>
+              <option value="TS">Jungle/Tropics Swamp</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="atmo" class="form-label">Unusual Atmo %</label>
+            <input id="atmo" name="atmo" type="number" min="0" max="100" value="20" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="encChance" class="form-label">Encounter %</label>
+            <input id="encChance" name="encChance" type="number" min="0" max="100" value="35" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="trapChance" class="form-label">Trap %</label>
+            <input id="trapChance" name="trapChance" type="number" min="0" max="100" value="10" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootChance" class="form-label">Loot %</label>
+            <input id="lootChance" name="lootChance" type="number" min="0" max="100" value="20" class="form-control">
+          </div>
+          <div class="col-md-1">
+            <label for="lootAdjust" class="form-label">Adj %</label>
+            <input id="lootAdjust" name="lootAdjust" type="number" min="0" max="100" value="2" class="form-control">
+          </div>
+
+          <div class="col-md-2">
+            <label for="encMin" class="form-label">Enc Min</label>
+            <input id="encMin" name="encMin" type="number" min="1" max="9" value="1" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="encMax" class="form-label">Enc Max</label>
+            <input id="encMax" name="encMax" type="number" min="1" max="9" value="4" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="trapMin" class="form-label">Trap Min</label>
+            <input id="trapMin" name="trapMin" type="number" min="1" max="9" value="1" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="trapMax" class="form-label">Trap Max</label>
+            <input id="trapMax" name="trapMax" type="number" min="1" max="9" value="3" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootMin" class="form-label">Loot Min</label>
+            <input id="lootMin" name="lootMin" type="number" min="1" max="25" value="1" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootMax" class="form-label">Loot Max</label>
+            <input id="lootMax" name="lootMax" type="number" min="1" max="25" value="5" class="form-control">
+          </div>
+
+          <div class="col-12 d-flex flex-wrap gap-3">
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="outsideVisitors" name="outsideVisitors" value="1"><label class="form-check-label" for="outsideVisitors">Outside visitors</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="undeadOnly" name="undeadOnly" value="1"><label class="form-check-label" for="undeadOnly">Undead only</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="furnishRooms" name="furnishRooms" value="1" checked><label class="form-check-label" for="furnishRooms">Furnish rooms</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="showDescriptions" name="showDescriptions" value="1" checked><label class="form-check-label" for="showDescriptions">Show descriptions</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="manualMonsters" name="manualMonsters" value="1"><label class="form-check-label" for="manualMonsters">Manual of Monsters</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="treasured" name="treasured" value="1"><label class="form-check-label" for="treasured">Treasured bosses</label></div>
+          </div>
+
+          <div class="col-12 d-flex flex-wrap gap-3">
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useAec" name="useAec" value="1"><label class="form-check-label" for="useAec">AEC</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useMom" name="useMom" value="1"><label class="form-check-label" for="useMom">Monsters of Myth</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useFf" name="useFf" value="1"><label class="form-check-label" for="useFf">Fiend Folio</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useMm2" name="useMm2" value="1"><label class="form-check-label" for="useMm2">Monster Manual II</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useUa" name="useUa" value="1"><label class="form-check-label" for="useUa">Unearthed Arcana</label></div>
+          </div>
+
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button id="export-json" type="button" class="btn btn-outline-secondary">Export JSON</button>
+            <button id="export-md" type="button" class="btn btn-outline-secondary">Export Markdown</button>
+            <button id="export-html" type="button" class="btn btn-outline-secondary">Export HTML</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="wiz-tool-output" id="output" aria-live="polite">
+      <em>Output will appear here.</em>
+    </section>
+  </main>
+
+  <script src="./osr-support-files/shared/js/core.js"></script>
+  <script src="./osr-support-files/shared/js/data.js"></script>
+  <script src="./osr-dungeon-delve/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+.encounter-header {
+	font-weight: 600;
+	margin-bottom: 0.7rem;
+}
+
+.encounter-card {
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 0.5rem;
+	padding: 0.65rem 0.75rem;
+	margin-bottom: 0.55rem;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.encounter-title {
+	font-weight: 600;
+}
+
+.encounter-sub {
+	opacity: 0.85;
+	font-size: 0.9rem;
+}

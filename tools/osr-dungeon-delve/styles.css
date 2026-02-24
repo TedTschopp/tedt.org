@@ -1,0 +1,13 @@
+.delve-meta {
+	font-size: 0.95rem;
+	line-height: 1.35;
+}
+
+.delve-table {
+	font-size: 0.88rem;
+}
+
+.delve-table th,
+.delve-table td {
+	vertical-align: top;
+}

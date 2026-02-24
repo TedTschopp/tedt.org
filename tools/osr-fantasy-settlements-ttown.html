@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Fantasy Settlements | Wizardawn Converted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
+  <link href="./osr-fantasy-settlements-ttown/styles.css" rel="stylesheet">
+</head>
+<body>
+  <main class="wiz-tool-shell">
+    <header class="wiz-tool-header">
+      <h1 class="h3 mb-1">Fantasy Settlements</h1>
+      <p class="text-muted mb-0">Generate a random Tunnels &amp; Trolls settlement with configurable map size, institutions, stock levels, and resident kindred.</p>
+    </header>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <form id="tool-form" class="row g-3">
+          <div class="col-md-6">
+            <label for="seed" class="form-label">Seed</label>
+            <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
+          </div>
+          <div class="col-md-6">
+            <label for="name" class="form-label">Settlement Name</label>
+            <input id="name" name="name" type="text" class="form-control" placeholder="optional">
+          </div>
+
+          <div class="col-md-3">
+            <label for="built" class="form-label">Map Type</label>
+            <select id="built" name="built" class="form-select">
+              <option>City</option>
+              <option>Keep</option>
+              <option>Village</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="mapWide" class="form-label">Map Width</label>
+            <input id="mapWide" name="mapWide" type="number" min="1" max="10" value="5" class="form-control">
+          </div>
+          <div class="col-md-3">
+            <label for="mapHigh" class="form-label">Map Height</label>
+            <input id="mapHigh" name="mapHigh" type="number" min="1" max="10" value="5" class="form-control">
+          </div>
+          <div class="col-md-3">
+            <label for="mapRooms" class="form-label">My Map's Buildings</label>
+            <input id="mapRooms" name="mapRooms" type="number" min="0" max="1000" value="0" class="form-control">
+          </div>
+
+          <div class="col-md-3">
+            <label for="stock" class="form-label">Stock %</label>
+            <input id="stock" name="stock" type="number" min="5" max="100" step="5" value="70" class="form-control">
+          </div>
+
+          <div class="col-md-3 d-flex align-items-end">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="populate" name="populate" value="1">
+              <label class="form-check-label" for="populate">Populate citizens</label>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-items-end">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="water" name="water" value="1" checked>
+              <label class="form-check-label" for="water">Sea side</label>
+            </div>
+          </div>
+          <div class="col-md-3 d-flex align-items-end">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="shelf" name="shelf" value="1" checked>
+              <label class="form-check-label" for="shelf">Limited quantity per item</label>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label mb-1">Create</label>
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="rulers" name="rulers" value="1" checked><label class="form-check-label" for="rulers">Rulers</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="stores" name="stores" value="1" checked><label class="form-check-label" for="stores">Merchants</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="guilds" name="guilds" value="1" checked><label class="form-check-label" for="guilds">Guilds</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="police" name="police" value="1" checked><label class="form-check-label" for="police">Guards</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="church" name="church" value="1" checked><label class="form-check-label" for="church">Churches</label></div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label mb-1">Weapons/Armor Source</label>
+            <div class="d-flex flex-wrap gap-3">
+              <div class="form-check"><input class="form-check-input" type="radio" id="itemClassic" name="oldway" value="0" checked><label class="form-check-label" for="itemClassic">Use T&amp;T items</label></div>
+              <div class="form-check"><input class="form-check-input" type="radio" id="itemMagestykc" name="oldway" value="1"><label class="form-check-label" for="itemMagestykc">Use Magestykc items</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="showcase1" name="showcase1" value="1"><label class="form-check-label" for="showcase1">Show classifications</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="showcase2" name="showcase2" value="1"><label class="form-check-label" for="showcase2">Show statistics</label></div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label mb-1">Kindred Residents (none selected = all)</label>
+            <div class="race-grid">
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceHuman" name="race" value="Human"><label class="form-check-label" for="raceHuman">Human</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceBrownie" name="race" value="Brownie"><label class="form-check-label" for="raceBrownie">Brownie</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceCentaur" name="race" value="Centaur"><label class="form-check-label" for="raceCentaur">Centaur</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceCyclops" name="race" value="Cyclops"><label class="form-check-label" for="raceCyclops">Cyclops</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceDaklafar" name="race" value="Daklafar"><label class="form-check-label" for="raceDaklafar">Daklafar</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceDwarf" name="race" value="Dwarf"><label class="form-check-label" for="raceDwarf">Dwarf</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceDwurman" name="race" value="Dwurman"><label class="form-check-label" for="raceDwurman">Dwurman</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceElf" name="race" value="Elf"><label class="form-check-label" for="raceElf">Elf</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceFairy" name="race" value="Fairy"><label class="form-check-label" for="raceFairy">Fairy</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceFalcoran" name="race" value="Falcoran"><label class="form-check-label" for="raceFalcoran">Falcoran</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceFruglum" name="race" value="Fruglum"><label class="form-check-label" for="raceFruglum">Fruglum</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceGnome" name="race" value="Gnome"><label class="form-check-label" for="raceGnome">Gnome</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceGoblin" name="race" value="Goblin"><label class="form-check-label" for="raceGoblin">Goblin</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceGremlin" name="race" value="Gremlin"><label class="form-check-label" for="raceGremlin">Gremlin</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceGreyling" name="race" value="Greyling"><label class="form-check-label" for="raceGreyling">Greyling</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceHobgoblin" name="race" value="Hobgoblin"><label class="form-check-label" for="raceHobgoblin">Hobgoblin</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceHobling" name="race" value="Hobling"><label class="form-check-label" for="raceHobling">Hobling</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceImp" name="race" value="Imp"><label class="form-check-label" for="raceImp">Imp</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceKobold" name="race" value="Kobold"><label class="form-check-label" for="raceKobold">Kobold</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceLeprechaun" name="race" value="Leprechaun"><label class="form-check-label" for="raceLeprechaun">Leprechaun</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceMantaran" name="race" value="Mantaran"><label class="form-check-label" for="raceMantaran">Mantaran</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceMinotaur" name="race" value="Minotaur"><label class="form-check-label" for="raceMinotaur">Minotaur</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceNeptar" name="race" value="Neptar"><label class="form-check-label" for="raceNeptar">Neptar</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceOgre" name="race" value="Ogre"><label class="form-check-label" for="raceOgre">Ogre</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceOrke" name="race" value="Orke"><label class="form-check-label" for="raceOrke">Orke</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="racePixie" name="race" value="Pixie"><label class="form-check-label" for="racePixie">Pixie</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceRattanu" name="race" value="Rattanu"><label class="form-check-label" for="raceRattanu">Rattanu</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceSatyr" name="race" value="Satyr"><label class="form-check-label" for="raceSatyr">Satyr</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceSauriman" name="race" value="Sauriman"><label class="form-check-label" for="raceSauriman">Sauriman</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceSlitheran" name="race" value="Slitheran"><label class="form-check-label" for="raceSlitheran">Slitheran</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceSprite" name="race" value="Sprite"><label class="form-check-label" for="raceSprite">Sprite</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceSuvart" name="race" value="Suvart"><label class="form-check-label" for="raceSuvart">Suvart</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceTigran" name="race" value="Tigran"><label class="form-check-label" for="raceTigran">Tigran</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceTroll" name="race" value="Troll"><label class="form-check-label" for="raceTroll">Troll</label></div>
+              <div class="form-check"><input class="form-check-input" type="checkbox" id="raceWulfan" name="race" value="Wulfan"><label class="form-check-label" for="raceWulfan">Wulfan</label></div>
+            </div>
+          </div>
+
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button id="export-json" type="button" class="btn btn-outline-secondary">Export JSON</button>
+            <button id="export-md" type="button" class="btn btn-outline-secondary">Export Markdown</button>
+            <button id="export-html" type="button" class="btn btn-outline-secondary">Export HTML</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="wiz-tool-output" id="output" aria-live="polite">
+      <em>Output will appear here.</em>
+    </section>
+  </main>
+
+  <script src="./osr-support-files/shared/js/core.js"></script>
+  <script src="./osr-support-files/shared/js/data.js"></script>
+  <script src="./osr-fantasy-settlements-ttown/app.js"></script>
+</body>
+</html>

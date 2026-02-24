@@ -1,0 +1,18 @@
+.apoc-summary {
+	margin-bottom: 0.7rem;
+	color: #555;
+}
+
+.apoc-section {
+	border: 1px solid rgba(0, 0, 0, 0.12);
+	border-radius: 0.45rem;
+	padding: 0.6rem;
+	margin-bottom: 0.6rem;
+	background: #fff;
+}
+
+.roll-col {
+	width: 56px;
+	text-align: center;
+	font-weight: 600;
+}

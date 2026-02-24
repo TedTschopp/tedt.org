@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>World Adventure | Wizardawn Converted</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
+  <link href="./osr-world-adventure/styles.css?v=20260224b" rel="stylesheet">
+</head>
+<body>
+  <main class="wiz-tool-shell">
+    <header class="wiz-tool-header">
+      <h1 class="h3 mb-1">World Adventure</h1>
+      <p class="text-muted mb-0">Generate one detailed world-hex adventure region with landmarks, exploration sites, hazards, and encounter-ready content.</p>
+    </header>
+
+    <section class="card mb-3">
+      <div class="card-body">
+        <form id="tool-form" class="row g-3">
+          <div class="col-md-3">
+            <label for="seed" class="form-label">Seed</label>
+            <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
+          </div>
+          <div class="col-md-4">
+            <label for="game" class="form-label">Game</label>
+            <select id="game" name="game" class="form-select">
+              <option>Labyrinth Lord</option>
+              <option>OSRIC</option>
+              <option>AD&amp;D</option>
+              <option>Swords &amp; Wizardry</option>
+              <option>BFRPG</option>
+              <option>Swords &amp; Six-Siders</option>
+              <option>BD&amp;D</option>
+              <option>Tunnels &amp; Trolls 5th Edition</option>
+              <option>Tunnels &amp; Trolls 7th Edition</option>
+              <option>Tunnels &amp; Trolls Deluxe</option>
+              <option>Mutant Future</option>
+              <option>Broken Urthe</option>
+              <option>Gamma World</option>
+              <option>Fantasy</option>
+            </select>
+          </div>
+          <div class="col-md-5">
+            <label for="areaName" class="form-label">Hex Name</label>
+            <input id="areaName" name="areaName" type="text" class="form-control" placeholder="optional">
+          </div>
+
+          <div class="col-md-2">
+            <label for="level" class="form-label">Level</label>
+            <input id="level" name="level" type="number" min="1" max="20" value="3" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="characters" class="form-label">Characters</label>
+            <input id="characters" name="characters" type="number" min="1" max="20" value="4" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="hexMiles" class="form-label">Hex Miles</label>
+            <input id="hexMiles" name="hexMiles" type="number" min="1" max="120" value="24" class="form-control">
+          </div>
+          <div class="col-md-3">
+            <label for="terrain" class="form-label">Outside Terrain</label>
+            <select id="terrain" name="terrain" class="form-select">
+              <option value="100">Desert</option>
+              <option value="101">Forest</option>
+              <option value="102">Hills</option>
+              <option value="103">Jungle</option>
+              <option value="110">Lake</option>
+              <option value="104">Mountains</option>
+              <option value="105">Plains</option>
+              <option value="106">Sea</option>
+              <option value="107">Snow</option>
+              <option value="108">Swamp</option>
+              <option value="109">Tropics</option>
+              <option value="112">Underworld</option>
+              <option value="111">Wasteland</option>
+            </select>
+          </div>
+          <div class="col-md-1 d-flex align-items-end">
+            <div class="form-check mb-2">
+              <input class="form-check-input" type="checkbox" id="colorMap" name="colorMap" value="1">
+              <label class="form-check-label" for="colorMap">Color</label>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <label for="currency" class="form-label">Currency</label>
+            <input id="currency" name="currency" type="text" value="gold" class="form-control">
+          </div>
+
+          <div class="col-md-2">
+            <label for="atmo" class="form-label">Atmosphere %</label>
+            <input id="atmo" name="atmo" type="number" min="0" max="100" value="20" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="encChance" class="form-label">Encounter %</label>
+            <input id="encChance" name="encChance" type="number" min="0" max="100" value="35" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="trapChance" class="form-label">Trap %</label>
+            <input id="trapChance" name="trapChance" type="number" min="0" max="100" value="10" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="contentChance" class="form-label">Content %</label>
+            <input id="contentChance" name="contentChance" type="number" min="0" max="100" value="10" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootChance" class="form-label">Loot %</label>
+            <input id="lootChance" name="lootChance" type="number" min="0" max="100" value="20" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootAdjust" class="form-label">Loot Adj %</label>
+            <input id="lootAdjust" name="lootAdjust" type="number" min="0" max="100" value="2" class="form-control">
+          </div>
+
+          <div class="col-md-2">
+            <label for="siteMin" class="form-label">Sites Min</label>
+            <input id="siteMin" name="siteMin" type="number" min="1" max="12" value="2" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="siteMax" class="form-label">Sites Max</label>
+            <input id="siteMax" name="siteMax" type="number" min="1" max="12" value="6" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootMin" class="form-label">Loot Min</label>
+            <input id="lootMin" name="lootMin" type="number" min="1" max="25" value="1" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="lootMax" class="form-label">Loot Max</label>
+            <input id="lootMax" name="lootMax" type="number" min="1" max="25" value="5" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="cashPct" class="form-label">Cash %</label>
+            <input id="cashPct" name="cashPct" type="number" min="0" max="1000" value="100" class="form-control">
+          </div>
+          <div class="col-md-2">
+            <label for="techPct" class="form-label">Tech %</label>
+            <input id="techPct" name="techPct" type="number" min="0" max="100" value="100" class="form-control">
+          </div>
+
+          <div class="col-12 d-flex flex-wrap gap-3">
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="furnishRooms" name="furnishRooms" value="1" checked><label class="form-check-label" for="furnishRooms">Furnish rooms</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="mutantsOnly" name="mutantsOnly" value="1"><label class="form-check-label" for="mutantsOnly">Mutants only</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="showDescriptions" name="showDescriptions" value="1" checked><label class="form-check-label" for="showDescriptions">Show descriptions</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useAec" name="useAec" value="1"><label class="form-check-label" for="useAec">AEC</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useMom" name="useMom" value="1"><label class="form-check-label" for="useMom">Monsters of Myth</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useFf" name="useFf" value="1"><label class="form-check-label" for="useFf">Fiend Folio</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useMm2" name="useMm2" value="1"><label class="form-check-label" for="useMm2">MMII</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="useUa" name="useUa" value="1"><label class="form-check-label" for="useUa">UA</label></div>
+            <div class="form-check"><input class="form-check-input" type="checkbox" id="treasured" name="treasured" value="1"><label class="form-check-label" for="treasured">Treasured bosses</label></div>
+          </div>
+
+          <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Generate</button>
+            <button id="export-json" type="button" class="btn btn-outline-secondary">Export JSON</button>
+            <button id="export-md" type="button" class="btn btn-outline-secondary">Export Markdown</button>
+            <button id="export-html" type="button" class="btn btn-outline-secondary">Export HTML</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="wiz-tool-output" id="output" aria-live="polite">
+      <em>Output will appear here.</em>
+    </section>
+  </main>
+
+  <script src="./osr-support-files/shared/js/core.js"></script>
+  <script src="./osr-support-files/shared/js/data.js?v=20260224d"></script>
+  <script src="./osr-support-files/shared/js/map-utils.js?v=20260224g"></script>
+  <script src="./osr-world-adventure/app.js"></script>
+</body>
+</html>

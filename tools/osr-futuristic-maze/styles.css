@@ -1,0 +1,26 @@
+.uexfl-header {
+	font-weight: 600;
+	margin-bottom: 0.75rem;
+}
+
+.uexfl-summary {
+	margin: 0 0 0.75rem;
+	padding-left: 1.1rem;
+}
+
+.uexfl-card {
+	border: 1px solid rgba(255, 255, 255, 0.14);
+	border-radius: 0.5rem;
+	padding: 0.65rem 0.75rem;
+	margin-bottom: 0.5rem;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.uexfl-title {
+	font-weight: 600;
+}
+
+.uexfl-sub {
+	opacity: 0.85;
+	font-size: 0.9rem;
+}

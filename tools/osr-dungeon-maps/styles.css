@@ -1,0 +1,62 @@
+.dmap-summary {
+	margin-bottom: 0.75rem;
+	color: #555;
+}
+
+.wiz-tool-shell {
+	max-width: none;
+}
+
+.wiz-tool-output {
+	overflow: visible;
+	width: max-content;
+	min-width: 100%;
+}
+
+.dmap-grid {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 0.75rem;
+}
+
+.dmap-grid td {
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	height: 3.3rem;
+	width: 3.3rem;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0.2rem;
+	font-size: 0.75rem;
+	overflow: hidden;
+	position: relative;
+}
+
+.tile-image {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 0.1rem;
+}
+
+.tile-dungeon { background: #eceff1; }
+.tile-cave { background: #efebe9; }
+.tile-mixed { background: #f3e5f5; }
+.tile-side { background: #e0f7fa; }
+
+.tile-label {
+	display: block;
+	font-size: 0.7rem;
+}
+
+.tile-key {
+	display: block;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0.05rem;
+	right: 0.1rem;
+	padding: 0 0.2rem;
+	font-size: 0.62rem;
+	background: rgba(255, 255, 255, 0.85);
+	border-radius: 0.15rem;
+}
