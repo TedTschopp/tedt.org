@@ -17,10 +17,10 @@ links:
   repo: null
   docs: null
   download: null
-image: "/img/2026-02/qr-builder-tool.svg"
-hero_image: "/img/2026-02/qr-builder-tool.svg"
+image: "/img/2026-02/qr-builder-tool-screenshot.png"
+hero_image: "/img/2026-02/qr-builder-tool-screenshot.png"
 screenshots:
-  - "/img/2026-02/qr-builder-tool.svg"
+  - "/img/2026-02/qr-builder-tool-screenshot.png"
 features:
   - "Instant QR preview as you type"
   - "Keyboard-friendly: ⌘/Ctrl+Enter to render"
