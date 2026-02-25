@@ -1,0 +1,12 @@
+/* Shared tedt.org CSS entrypoint for standalone /tools pages.
+   Keeps tool HTML lightweight while inheriting the same global styling.
+
+    Must stay in sync with the unconditional base CSS includes in:
+       _includes/assets/all-css-includes.html
+    Enforced by:
+       tests/check_tools_css_sync.rb
+*/
+
+@import url("/css/bootstrap-build.css");
+@import url("/css/consolidated-fonts.css");
+@import url("/css/logo-and-company-fonts.css");

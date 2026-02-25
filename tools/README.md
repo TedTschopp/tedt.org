@@ -19,7 +19,7 @@ This folder contains standalone SPA scaffolds for each Wizardawn tool conversion
 ## Notes
 
 - Tools are scaffolded only; generation logic still needs to be ported from PHP.
-- Bootstrap is loaded from CDN by default in each tool shell.
+- Tools inherit tedt.org global styling via `/tools/lib/tedt-org-tools.css`.
 - Export stubs (JSON/Markdown/HTML) are included in each tool app.
 
 ## Tools
