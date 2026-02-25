@@ -292,7 +292,7 @@ function renderResult(result) {
   if (adventure.mapPreview && window.WizardawnMap) {
     const mapCard = window.WizardawnMap.createGeomorphMapCard(adventure.mapPreview, {
       title: 'Generated Map',
-      assetBase: '../osr-support-files/assets/maps/'
+      assetBase: '/tools/osr-support-files/assets/maps/'
     });
     output.appendChild(mapCard);
   }

@@ -216,7 +216,7 @@ function renderResult(result) {
   if (window.WizardawnMap?.createGeomorphMapCard) {
     const mapCard = window.WizardawnMap.createGeomorphMapCard(buildMapPreview(result), {
       title: 'Generated Map',
-      assetBase: '../osr-support-files/assets/maps/'
+      assetBase: '/tools/osr-support-files/assets/maps/'
     });
     output.appendChild(mapCard);
   }
