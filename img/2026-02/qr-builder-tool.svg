@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="500" viewBox="0 0 1500 500">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f172a" />
+      <stop offset="1" stop-color="#111827" />
+    </linearGradient>
+    <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#000" flood-opacity="0.45" />
+    </filter>
+  </defs>
+
+  <rect width="1500" height="500" fill="url(#bg)" />
+
+  <!-- QR tile -->
+  <g transform="translate(520 70)" filter="url(#soft)">
+    <rect x="0" y="0" width="460" height="360" rx="28" fill="#ffffff" />
+
+    <!-- A simple, stylized QR-like pattern (original artwork, not a real code) -->
+    <g transform="translate(60 40)" fill="#000000">
+      <!-- finder-like corners -->
+      <rect x="0" y="0" width="90" height="90" />
+      <rect x="18" y="18" width="54" height="54" fill="#ffffff" />
+      <rect x="28" y="28" width="34" height="34" fill="#000000" />
+
+      <rect x="250" y="0" width="90" height="90" />
+      <rect x="268" y="18" width="54" height="54" fill="#ffffff" />
+      <rect x="278" y="28" width="34" height="34" fill="#000000" />
+
+      <rect x="0" y="190" width="90" height="90" />
+      <rect x="18" y="208" width="54" height="54" fill="#ffffff" />
+      <rect x="28" y="218" width="34" height="34" fill="#000000" />
+
+      <!-- middle noise blocks -->
+      <rect x="120" y="20" width="16" height="16" />
+      <rect x="152" y="20" width="16" height="16" />
+      <rect x="184" y="20" width="16" height="16" />
+
+      <rect x="120" y="52" width="16" height="16" />
+      <rect x="168" y="52" width="16" height="16" />
+      <rect x="216" y="52" width="16" height="16" />
+
+      <rect x="120" y="84" width="16" height="16" />
+      <rect x="152" y="84" width="16" height="16" />
+      <rect x="216" y="84" width="16" height="16" />
+
+      <rect x="120" y="132" width="16" height="16" />
+      <rect x="152" y="132" width="16" height="16" />
+      <rect x="184" y="132" width="16" height="16" />
+      <rect x="216" y="132" width="16" height="16" />
+
+      <rect x="120" y="164" width="16" height="16" />
+      <rect x="184" y="164" width="16" height="16" />
+      <rect x="216" y="164" width="16" height="16" />
+
+      <rect x="120" y="196" width="16" height="16" />
+      <rect x="152" y="196" width="16" height="16" />
+      <rect x="184" y="196" width="16" height="16" />
+      <rect x="216" y="196" width="16" height="16" />
+
+      <rect x="120" y="228" width="16" height="16" />
+      <rect x="152" y="228" width="16" height="16" />
+      <rect x="216" y="228" width="16" height="16" />
+
+      <rect x="250" y="132" width="16" height="16" />
+      <rect x="282" y="132" width="16" height="16" />
+      <rect x="314" y="132" width="16" height="16" />
+
+      <rect x="250" y="164" width="16" height="16" />
+      <rect x="298" y="164" width="16" height="16" />
+      <rect x="330" y="164" width="16" height="16" />
+
+      <rect x="250" y="196" width="16" height="16" />
+      <rect x="282" y="196" width="16" height="16" />
+      <rect x="314" y="196" width="16" height="16" />
+      <rect x="346" y="196" width="16" height="16" />
+
+      <rect x="250" y="228" width="16" height="16" />
+      <rect x="314" y="228" width="16" height="16" />
+      <rect x="346" y="228" width="16" height="16" />
+    </g>
+
+    <text x="230" y="330" text-anchor="middle" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="28" fill="#111827">
+      QR Builder
+    </text>
+  </g>
+
+  <!-- Title -->
+  <text x="80" y="150" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="44" fill="#e5e7eb" font-weight="700">
+    QR Builder
+  </text>
+  <text x="80" y="198" font-family="system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif" font-size="22" fill="#94a3b8">
+    Client-side QR code generator
+  </text>
+
+  <text x="80" y="270" font-family="ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace" font-size="18" fill="#cbd5e1">
+    Paste text → render → scan
+  </text>
+</svg>

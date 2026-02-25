@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Builder — QR Code Generator</title>
+  <meta name="description" content="A client-side QR code generator. Paste text or a URL and get a clean, scannable QR code — nothing leaves your browser.">
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+
+  <script>
+    (function loadStylesheets() {
+      const isFileProtocol = window.location.protocol === 'file:';
+      document.documentElement.setAttribute('data-file-protocol', String(isFileProtocol));
+
+      const stylesheets = isFileProtocol
+        ? [
+            'https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css',
+            'https://tedt.org/css/consolidated-fonts.css'
+          ]
+        : ['../css/bootstrap-build.css', '../css/consolidated-fonts.css'];
+
+      for (const href of stylesheets) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = href;
+        document.head.appendChild(link);
+      }
+    })();
+  </script>
+
+  <style>
+    body { background: var(--bs-body-bg); }
+    .app-wrap { max-width: 1120px; }
+    .muted-note { color: var(--bs-secondary-color); font-size: 0.9rem; }
+    .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; }
+
+    #contentInput {
+      min-height: 160px;
+      resize: vertical;
+      font-size: 0.95rem;
+      line-height: 1.45;
+    }
+
+    .status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.85rem;
+      border-top: 1px solid var(--bs-border-color);
+      background: var(--bs-tertiary-bg);
+      border-radius: 0 0 0.375rem 0.375rem;
+    }
+
+    .status-bar .counts {
+      color: var(--bs-secondary-color);
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .qr-tile {
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.12);
+      border-radius: 0.75rem;
+      padding: 1rem;
+    }
+
+    .qr-target {
+      width: 100%;
+      max-width: 420px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .qr-target canvas,
+    .qr-target img,
+    .qr-target svg {
+      display: block;
+      width: 100%;
+      height: auto;
+      image-rendering: pixelated;
+    }
+
+    .hint-row {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    kbd {
+      display: inline-block;
+      padding: 0.15rem 0.4rem;
+      font-size: 0.78rem;
+      border-radius: 0.25rem;
+      border: 1px solid var(--bs-border-color);
+      background: var(--bs-tertiary-bg);
+      color: var(--bs-secondary-color);
+    }
+
+    .placeholder-box {
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      border: 1px dashed var(--bs-border-color);
+      border-radius: 0.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--bs-secondary-color);
+      background: rgba(0, 0, 0, 0.02);
+      font-size: 0.9rem;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+  <main class="container app-wrap py-4">
+    <div class="mb-3">
+      <h1 class="h2 mb-1">QR Builder <span class="text-body-secondary h5">— QR Code Generator</span></h1>
+      <p class="mb-0 muted-note">
+        Paste text or a URL, and get a clean QR code.
+        Press <kbd class="mod-key">Ctrl</kbd>+<kbd>Enter</kbd> to render.
+      </p>
+    </div>
+
+    <div id="topStatus" class="alert alert-secondary py-2" role="status" aria-live="polite">Ready — enter content below.</div>
+
+    <div class="d-flex align-items-center gap-2 mb-3 flex-wrap">
+      <button id="renderBtn" type="button" class="btn btn-primary" data-title-tpl="Render QR ({mod}+Enter)" title="Render QR (Ctrl+Enter)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-qr-code-scan me-1" viewBox="0 0 16 16">
+          <path d="M0 0h5v5H0zM1 1v3h3V1zm10-1h5v5h-5zm1 1v3h3V1zM0 11h5v5H0zm1 1v3h3v-3zm10 0h5v5h-5zm1 1v3h3v-3z"/>
+          <path d="M7 0h2v2H7zM7 3h2v1H7zM7 5h2v1H7zM7 7h2v2H7zM9 7h1v2H9zM7 10h1v1H7zM9 10h1v1H9zM7 12h2v1H7zM10 12h2v1h-2zM7 14h2v2H7z"/>
+        </svg>
+        Render
+      </button>
+
+      <button id="clearBtn" type="button" class="btn btn-outline-secondary" data-title-tpl="Clear ({mod}+N)" title="Clear (Ctrl+N)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark me-1" viewBox="0 0 16 16">
+          <path d="M14 4.5V14a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h5.5zm-3 0A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4.5z"/>
+        </svg>
+        Clear
+      </button>
+
+      <span class="text-body-secondary small">Client-side only.</span>
+    </div>
+
+    <div class="row g-3">
+      <div class="col-12">
+        <section class="card">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong>Options</strong>
+            <span class="text-body-secondary small">QR rendering</span>
+          </div>
+          <div class="card-body">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="sizeSelect">Size</label>
+                <select id="sizeSelect" class="form-select" aria-label="QR code size">
+                  <option value="192">192 × 192</option>
+                  <option value="256">256 × 256</option>
+                  <option value="320" selected>320 × 320</option>
+                  <option value="384">384 × 384</option>
+                  <option value="512">512 × 512</option>
+                  <option value="768">768 × 768</option>
+                  <option value="1024">1024 × 1024</option>
+                </select>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="eccSelect">Error correction</label>
+                <select id="eccSelect" class="form-select" aria-label="QR error correction level">
+                  <option value="L">L — smallest, least redundant</option>
+                  <option value="M" selected>M — balanced</option>
+                  <option value="Q">Q — more robust</option>
+                  <option value="H">H — most robust</option>
+                </select>
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="fgColor">Foreground</label>
+                <input id="fgColor" class="form-control form-control-color" type="color" value="#000000" aria-label="QR foreground color">
+              </div>
+
+              <div class="col-12 col-md-6">
+                <label class="form-label" for="bgColor">Background</label>
+                <input id="bgColor" class="form-control form-control-color" type="color" value="#ffffff" aria-label="QR background color">
+              </div>
+            </div>
+
+            <p class="muted-note mb-0 mt-3">
+              Higher error correction tolerates more damage, but makes denser codes.
+              For best scan reliability, keep high contrast.
+            </p>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <section class="card h-100">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong>Input</strong>
+            <span class="text-body-secondary small">Text / URL</span>
+          </div>
+          <div class="card-body p-0">
+            <label class="visually-hidden" for="contentInput">QR content</label>
+            <textarea id="contentInput" class="form-control mono border-0 rounded-bottom-0" rows="8"
+              placeholder="https://tedt.org&#10;&#10;(or any text you want to encode…)"
+              spellcheck="false" autocomplete="off" autocorrect="off" autocapitalize="off"></textarea>
+            <div class="status-bar">
+              <span id="inputHint" class="text-body-secondary">Auto-updates as you type.</span>
+              <span id="inputCounts" class="counts">0 chars · 1 line</span>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-6">
+        <section class="card h-100">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong>QR Code</strong>
+            <span id="qrMeta" class="text-body-secondary small">320×320</span>
+          </div>
+          <div class="card-body">
+            <div class="qr-tile">
+              <div id="qrTarget" class="qr-target" aria-label="QR code output">
+                <div id="qrPlaceholder" class="placeholder-box">
+                  Your QR code will appear here.
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-3 hint-row muted-note">
+              <span>Tip: Most camera apps scan this instantly.</span>
+              <span class="text-body-secondary">If scanning fails, shorten the content.</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="alert alert-secondary mt-3 mb-0">
+      <strong>About QR Builder.</strong>
+      All QR generation runs entirely in your browser. The generator library is loaded from jsDelivr.
+    </div>
+  </main>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const isMac = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
+      const modLabel = isMac ? '⌘' : 'Ctrl';
+
+      document.querySelectorAll('.mod-key').forEach(el => {
+        el.textContent = modLabel;
+      });
+
+      document.querySelectorAll('[data-title-tpl]').forEach(el => {
+        el.title = el.dataset.titleTpl.replace('{mod}', modLabel);
+      });
+
+      const topStatus = document.getElementById('topStatus');
+      const renderBtn = document.getElementById('renderBtn');
+      const clearBtn = document.getElementById('clearBtn');
+      const contentInput = document.getElementById('contentInput');
+      const inputCounts = document.getElementById('inputCounts');
+      const sizeSelect = document.getElementById('sizeSelect');
+      const eccSelect = document.getElementById('eccSelect');
+      const fgColor = document.getElementById('fgColor');
+      const bgColor = document.getElementById('bgColor');
+      const qrTarget = document.getElementById('qrTarget');
+      const qrPlaceholder = document.getElementById('qrPlaceholder');
+      const qrMeta = document.getElementById('qrMeta');
+
+      let renderTimer = null;
+
+      function setTopStatus(kind, msg) {
+        topStatus.classList.remove('alert-secondary', 'alert-success', 'alert-danger');
+        topStatus.classList.add(kind);
+        topStatus.textContent = msg;
+      }
+
+      function countLines(text) {
+        if (text.length === 0) return 1;
+        return text.split(/\r\n|\r|\n/).length;
+      }
+
+      function updateCounts() {
+        const text = contentInput.value;
+        inputCounts.textContent = `${text.length} chars · ${countLines(text)} line${countLines(text) === 1 ? '' : 's'}`;
+      }
+
+      function clearQrOutput() {
+        while (qrTarget.firstChild) qrTarget.removeChild(qrTarget.firstChild);
+        qrTarget.appendChild(qrPlaceholder);
+      }
+
+      function getOptions() {
+        const size = Number(sizeSelect.value) || 320;
+        const ecc = (eccSelect.value || 'M').toUpperCase();
+        const colorDark = fgColor.value || '#000000';
+        const colorLight = bgColor.value || '#ffffff';
+
+        const eccMap = {
+          L: QRCode?.CorrectLevel?.L,
+          M: QRCode?.CorrectLevel?.M,
+          Q: QRCode?.CorrectLevel?.Q,
+          H: QRCode?.CorrectLevel?.H,
+        };
+
+        return {
+          size,
+          ecc,
+          correctLevel: eccMap[ecc] ?? (QRCode?.CorrectLevel?.M),
+          colorDark,
+          colorLight,
+        };
+      }
+
+      function updateQrMeta() {
+        const opts = getOptions();
+        qrMeta.textContent = `${opts.size}×${opts.size} · ECC ${opts.ecc}`;
+      }
+
+      function renderQrNow() {
+        if (typeof window.QRCode !== 'function') {
+          setTopStatus('alert-danger', 'QR generator library failed to load. Check your network connection.');
+          return;
+        }
+
+        const raw = contentInput.value;
+        const text = raw.trim();
+
+        updateCounts();
+
+        if (!text) {
+          clearQrOutput();
+          setTopStatus('alert-secondary', 'Ready — enter content below.');
+          return;
+        }
+
+        // Reset target.
+        while (qrTarget.firstChild) qrTarget.removeChild(qrTarget.firstChild);
+
+        try {
+          const opts = getOptions();
+
+          // qrcodejs renders a <canvas> (or <img>) into the target element.
+          // Keep background light for scan reliability.
+          const qr = new QRCode(qrTarget, {
+            text,
+            width: opts.size,
+            height: opts.size,
+            colorDark: opts.colorDark,
+            colorLight: opts.colorLight,
+            correctLevel: opts.correctLevel
+          });
+
+          // Avoid unused lint warnings (and keep reference for future debugging).
+          void qr;
+
+          setTopStatus('alert-success', 'Rendered — point a camera at it.');
+        } catch (err) {
+          clearQrOutput();
+          const msg = (err && err.message) ? err.message : String(err);
+          setTopStatus('alert-danger', `Could not render QR: ${msg}`);
+        }
+      }
+
+      function scheduleRender() {
+        if (renderTimer) window.clearTimeout(renderTimer);
+        renderTimer = window.setTimeout(() => {
+          renderTimer = null;
+          renderQrNow();
+        }, 200);
+      }
+
+      // Events
+      contentInput.addEventListener('input', () => {
+        updateCounts();
+        scheduleRender();
+      });
+
+      ;[sizeSelect, eccSelect, fgColor, bgColor].forEach(el => {
+        el.addEventListener('input', () => {
+          updateQrMeta();
+          scheduleRender();
+        });
+        el.addEventListener('change', () => {
+          updateQrMeta();
+          scheduleRender();
+        });
+      });
+
+      contentInput.addEventListener('keydown', (e) => {
+        const isEnter = e.key === 'Enter';
+        const hasMod = isMac ? e.metaKey : e.ctrlKey;
+
+        if (hasMod && isEnter) {
+          e.preventDefault();
+          if (renderTimer) {
+            window.clearTimeout(renderTimer);
+            renderTimer = null;
+          }
+          renderQrNow();
+        }
+
+        // {mod}+N clears.
+        if (hasMod && (e.key === 'n' || e.key === 'N')) {
+          e.preventDefault();
+          clearBtn.click();
+        }
+      });
+
+      renderBtn.addEventListener('click', () => {
+        if (renderTimer) {
+          window.clearTimeout(renderTimer);
+          renderTimer = null;
+        }
+        renderQrNow();
+      });
+
+      clearBtn.addEventListener('click', () => {
+        contentInput.value = '';
+        updateCounts();
+        clearQrOutput();
+        setTopStatus('alert-secondary', 'Cleared.');
+        contentInput.focus();
+      });
+
+      // Initial.
+      updateCounts();
+      updateQrMeta();
+      clearQrOutput();
+    })();
+  </script>
+</body>
+</html>
