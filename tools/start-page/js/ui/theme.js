@@ -77,12 +77,18 @@ export function applyBase16Theme(paletteName) {
     if (!palette) return;
 
     // Map Base16 to Semantic Keys
-    const mapping = {
+    const defaultMapping = {
         'bgCanvas': 'base00', 'bgSurface': 'base01', 'bgHighlight': 'base02',
         'borderDim': 'base02', 'borderBright': 'base03',
         'textMain': 'base05', 'textMuted': 'base04', 'textFaint': 'base03', 'textInverse': 'base00',
         'brandPrimary': 'base0B', 'brandSecondary': 'base0D', 'brandTertiary': 'base0E',
         'statusError': 'base08', 'statusWarning': 'base09', 'statusSuccess': 'base0B'
+    };
+
+    // Optional palette-specific override (keeps legacy behavior for existing palettes)
+    const mapping = {
+        ...defaultMapping,
+        ...(palette.mapping && typeof palette.mapping === 'object' ? palette.mapping : {})
     };
 
     const newTheme = { ...state.settings.theme };

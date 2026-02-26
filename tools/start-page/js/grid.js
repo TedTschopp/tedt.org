@@ -88,7 +88,14 @@ export async function renderGrid(dragInfo = null) {
     };
 
     // --- THE ANIMATION TRIGGER ---
-    if (document.startViewTransition) {
+    // Safari/VT API can throw InvalidStateError when the document is hidden.
+    // In that case (or if transitions are unsupported), fall back to a plain DOM update.
+    const canUseViewTransition =
+        !!document.startViewTransition &&
+        document.visibilityState === 'visible' &&
+        !document.hidden;
+
+    if (canUseViewTransition) {
         let styleTag = null;
 
         // Success: Snap instantly. Fail: Animate back.
@@ -102,14 +109,22 @@ export async function renderGrid(dragInfo = null) {
             document.head.appendChild(styleTag);
         }
 
-        const transition = document.startViewTransition(() => updateDOM());
+        try {
+            const transition = document.startViewTransition(() => updateDOM());
 
-        transition.finished.finally(() => {
+            // Always clean up our temporary VT tuning style.
+            transition.finished
+                .catch(() => {})
+                .finally(() => {
+                    if (styleTag) styleTag.remove();
+                });
+        } catch (err) {
             if (styleTag) styleTag.remove();
-        });
+            await updateDOM();
+        }
 
     } else {
-        updateDOM();
+        await updateDOM();
     }
 }
 

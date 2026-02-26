@@ -62,7 +62,17 @@ input:focus, select:focus, textarea:focus, .modal-input:focus {
 input[style*="width:100px"] { width: 100px !important; text-align: right !important; }
 
 /* Hidden/Utility Inputs */
-.hidden-native-picker { display: none; }
+.hidden-native-picker {
+    /* Safari will not open the native color picker if the input is display:none.
+       Keep it rendered but non-intrusive/offscreen. */
+    position: fixed;
+    left: -9999px;
+    top: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
 .modal-input-color { width: 130px !important; }
 
 /* --- TOGGLE SWITCH --- */

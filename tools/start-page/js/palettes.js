@@ -262,5 +262,63 @@ window.HESTIA_PALETTES = {
   	"base0F": "555555",
   	"name": "Hackerman",
   	"slug": "hackerman"
+  },
+
+  "tedt-org-dark": {
+    "base00": "1f2126",
+    "base01": "2b2d31",
+    "base02": "37383c",
+    "base03": "4f5052",
+    "base04": "676869",
+    "base05": "b0afac",
+    "base06": "e0deda",
+    "base07": "f8f6f0",
+    "base08": "f90041",
+    "base09": "f2bc57",
+    "base0A": "e86027",
+    "base0B": "00b339",
+    "base0C": "00a9e0",
+    "base0D": "66b0ff",
+    "base0E": "00446f",
+    "base0F": "6f1a07",
+    "name": "tedt.org Dark",
+    "slug": "tedt-org-dark",
+    "mapping": {
+      "borderDim": "base03",
+      "borderBright": "base04",
+      "brandPrimary": "base0E",
+      "brandSecondary": "base0A",
+      "brandTertiary": "base0C",
+      "statusSuccess": "base0B"
+    }
+  },
+
+  "tedt-org-light": {
+    "base00": "f8f6f0",
+    "base01": "e0deda",
+    "base02": "c8c7c3",
+    "base03": "b0afac",
+    "base04": "676869",
+    "base05": "1f2126",
+    "base06": "07090f",
+    "base07": "000000",
+    "base08": "f90041",
+    "base09": "f2bc57",
+    "base0A": "e86027",
+    "base0B": "00b339",
+    "base0C": "00a9e0",
+    "base0D": "007bff",
+    "base0E": "00446f",
+    "base0F": "6f1a07",
+    "name": "tedt.org Light",
+    "slug": "tedt-org-light",
+    "mapping": {
+      "borderDim": "base03",
+      "borderBright": "base04",
+      "brandPrimary": "base0E",
+      "brandSecondary": "base0A",
+      "brandTertiary": "base0C",
+      "statusSuccess": "base0B"
+    }
   }
 };

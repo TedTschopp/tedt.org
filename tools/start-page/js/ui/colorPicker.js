@@ -39,8 +39,10 @@ export function openColorPicker(targetEl, onSelect, onCustom) {
         text: 'Custom...',
         on: {
             click: () => {
-                closePopover();
+                // Safari is sensitive to user-gesture timing for native pickers.
+                // Trigger the native picker first, then close the popover.
                 if (onCustom) onCustom(); // Opens native picker
+                closePopover();
             }
         }
     });

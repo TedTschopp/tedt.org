@@ -162,12 +162,17 @@ function resolveThemeDefault(key) {
 
     if (activePal && window.HESTIA_PALETTES && window.HESTIA_PALETTES[activePal]) {
         const palette = window.HESTIA_PALETTES[activePal];
-        const mapping = {
+        const defaultMapping = {
             'bgCanvas': 'base00', 'bgSurface': 'base01', 'bgHighlight': 'base02',
             'borderDim': 'base02', 'borderBright': 'base03',
             'textMain': 'base05', 'textMuted': 'base04', 'textFaint': 'base03', 'textInverse': 'base00',
             'brandPrimary': 'base0B', 'brandSecondary': 'base0D', 'brandTertiary': 'base0E',
             'statusError': 'base08', 'statusWarning': 'base09', 'statusSuccess': 'base0B'
+        };
+
+        const mapping = {
+            ...defaultMapping,
+            ...(palette.mapping && typeof palette.mapping === 'object' ? palette.mapping : {})
         };
         const baseKey = mapping[key];
         if (baseKey && palette[baseKey]) {
