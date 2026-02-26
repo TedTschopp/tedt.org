@@ -1,0 +1,59 @@
+/* -------------------------------------------------------------------------- */
+/* 1. VARIABLES (THEME API)                                                   */
+/* -------------------------------------------------------------------------- */
+
+:root {
+    /* LAYER 1: RAW BASE16 (Populated by JS theme engine) */
+    /* --base00 to --base0F are injected dynamically */
+
+    /* LAYER 2: COLOR ALIASES (Human Readable) */
+    /* These align with Base16 standards so you can use var(--red) safely */
+    --red:      var(--base08); /* Variables, Errors */
+    --orange:   var(--base09); /* Constants, Warnings */
+    --yellow:   var(--base0A); /* Classes, Highlights */
+    --green:    var(--base0B); /* Strings, Success */
+    --cyan:     var(--base0C); /* Support, Info */
+    --blue:     var(--base0D); /* Functions, Links */
+    --purple:   var(--base0E); /* Keywords, Tertiary */
+    --brown:    var(--base0F); /* Deprecated, Critical */
+
+    /* LAYER 3: SEMANTIC MAPPING (Functional Roles) */
+
+    /* Surfaces */
+    --bg-canvas:    var(--base00);
+    --bg-surface:   var(--base01);
+    --bg-highlight: var(--base02);
+    --bg-selection: var(--base02); /* Text selection background */
+    --bg-panel:     var(--base07); /* Optional contrasting panel */
+
+    /* Borders */
+    --border-dim:        var(--base02);
+    --border-bright:     var(--base03);
+    --border-focus:      var(--base04); /* For active inputs */
+
+    /* Typography */
+    --text-main:    var(--base05); /* Default Text */
+    --text-muted:   var(--base04); /* Metadata / Disabled */
+    --text-faint:   var(--base03); /* Watermarks */
+    --text-bright:  var(--base06); /* Headings / Bold */
+    --text-inverse: var(--base00); /* Text on top of bright colors */
+
+    /* Branding */
+    --brand-primary:   var(--base0B); /* Green-ish by default */
+    --brand-secondary: var(--base0D); /* Blue-ish by default */
+    --brand-tertiary:  var(--base0E); /* Purple-ish by default */
+
+    /* Status Indicators (Full Spectrum) */
+    --status-error:    var(--red);
+    --status-warning:  var(--orange);
+    --status-notice:   var(--yellow); /* New! For alerts/marks */
+    --status-success:  var(--green);
+    --status-info:     var(--cyan);   /* New! For informational badges */
+    --status-critical: var(--brown);  /* New! For destructive actions */
+
+    /* Geometry (Controlled by Settings) */
+    --gap-size: 10px;
+    --radius: 5px;
+    --grid-padding: 20px;
+    --font-main-stack: 'Courier New', Courier, monospace;
+}

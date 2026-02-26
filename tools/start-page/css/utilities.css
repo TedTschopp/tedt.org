@@ -1,0 +1,42 @@
+/* -------------------------------------------------------------------------- */
+/* UTILITIES (Helper Classes for Users)                                       */
+/* -------------------------------------------------------------------------- */
+
+/* Text Colors */
+.text-red    { color: var(--red) !important; }
+.text-orange { color: var(--orange) !important; }
+.text-yellow { color: var(--yellow) !important; }
+.text-green  { color: var(--green) !important; }
+.text-cyan   { color: var(--cyan) !important; }
+.text-blue   { color: var(--blue) !important; }
+.text-purple { color: var(--purple) !important; }
+.text-brown  { color: var(--brown) !important; }
+.text-muted  { color: var(--text-muted) !important; }
+
+/* Background Colors */
+.bg-red    { background-color: var(--red); color: var(--bg-canvas); }
+.bg-orange { background-color: var(--orange); color: var(--bg-canvas); }
+.bg-yellow { background-color: var(--yellow); color: var(--bg-canvas); }
+.bg-green  { background-color: var(--green); color: var(--bg-canvas); }
+.bg-cyan   { background-color: var(--cyan); color: var(--bg-canvas); }
+.bg-blue   { background-color: var(--blue); color: var(--bg-canvas); }
+.bg-purple { background-color: var(--purple); color: var(--bg-canvas); }
+.bg-brown  { background-color: var(--brown); color: var(--bg-canvas); }
+
+/* Badges (Subtle Backgrounds) */
+.badge {
+    display: inline-block;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border: 1px solid currentColor;
+}
+
+/* Markdown Helpers */
+.highlight {
+    background-color: var(--bg-highlight);
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: var(--brand-primary);
+}

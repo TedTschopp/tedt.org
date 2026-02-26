@@ -1,0 +1,133 @@
+/* -------------------------------------------------------------------------- */
+/* 5. APP CARDS                                                               */
+/* -------------------------------------------------------------------------- */
+
+.app-card {
+    background-color: var(--bg-surface);
+    border: 1px solid transparent;
+    border-radius: var(--radius);
+    display: flex; flex-direction: column; justify-content: center; align-items: center;
+    position: relative; z-index: 10;
+
+    transition: box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
+
+    color: var(--text-main);
+    overflow: hidden; min-height: 0; min-width: 0;
+}
+
+/* Shadows */
+body.shadow-on .app-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard-container.show-outlines .app-card {
+    border-color: var(--border-dim);
+}
+
+.dashboard-container.edit-mode .app-card {
+    cursor: grab;
+    border-color: var(--border-bright);
+    border-style: solid;
+    animation: shake-gentle 0.25s infinite;
+}
+.dashboard-container.edit-mode .app-card:hover { border-color: var(--brand-primary); }
+
+.dashboard-container.edit-mode .app-card.moving {
+    cursor: grabbing;
+    opacity: 0.9;
+    z-index: 1000;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    animation: none;
+    transform: scale(1.02);
+    transition: none;
+}
+
+/* --- VIEW TRANSITION TUNING (The Snappy Fix) --- */
+/* Target all view transition groups to apply consistent easing */
+::view-transition-group(*) {
+    animation-duration: 0.3s;
+    animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1); /* Fast start, smooth stop */
+}
+
+/* Remove cross-fade for a solid slide feel */
+::view-transition-old(*),
+::view-transition-new(*) {
+    mix-blend-mode: normal;
+    height: 100%;
+    width: 100%;
+}
+
+/* Base Ghost */
+.grid-ghost {
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: var(--radius);
+    z-index: 1;
+    pointer-events: none;
+    transition: all 0.1s ease-out;
+}
+
+.grid-ghost.ghost-valid {
+    border-color: var(--status-success);
+    background: rgba(var(--status-success-rgb, 161, 181, 108), 0.1);
+}
+
+.grid-ghost.ghost-invalid {
+    border-color: var(--status-error);
+    background: rgba(var(--status-error-rgb, 171, 70, 66), 0.1);
+}
+
+.grid-ghost.ghost-displaced {
+    border-color: var(--status-warning);
+    background: rgba(var(--status-warning-rgb, 247, 202, 136), 0.1);
+    animation: pulse-ghost 1s infinite;
+}
+
+@keyframes pulse-ghost {
+    0% { opacity: 0.4; }
+    50% { opacity: 0.7; }
+    100% { opacity: 0.4; }
+}
+
+.edit-btn, .delete-btn {
+    position: absolute; width: 30px; height: 30px;
+    border-radius: 4px; color: white;
+    display: flex; justify-content: center; align-items: center;
+    font-size: 12px; cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    opacity: 0; pointer-events: none; transition: opacity 0.2s;
+}
+.edit-btn { top: 46px; right: 8px; background: var(--brand-secondary); z-index: 5000; }
+.delete-btn { top: 8px; right: 8px; background: var(--status-error); z-index: 5001; }
+
+.dashboard-container.edit-mode .app-card:hover .edit-btn,
+.dashboard-container.edit-mode .app-card:hover .delete-btn {
+    opacity: 1; pointer-events: auto;
+}
+
+.resize-handle {
+    position: absolute; bottom: 0; right: 0;
+    width: 25px; height: 25px; cursor: nwse-resize;
+    background: linear-gradient(135deg, transparent 50%, var(--border-dim) 50%);
+    border-bottom-right-radius: var(--radius);
+    opacity: 0; z-index: 20; pointer-events: none;
+}
+.dashboard-container.edit-mode .app-card:hover .resize-handle { opacity: 1; }
+.dashboard-container.edit-mode .resize-handle { pointer-events: auto; }
+
+.card-meta {
+    position: absolute; bottom: 8px; left: 8px;
+    font-size: 0.7rem; color: var(--text-muted);
+    opacity: 0; pointer-events: none;
+}
+.dashboard-container.edit-mode .card-meta { opacity: 1; }
+
+@keyframes shake-gentle {
+    0%, 50%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(0.3deg); }
+    75% { transform: rotate(-0.3deg); }
+}
+
+@media (max-width: 768px) {
+    .app-card { width: 100%; min-height: 150px; grid-column: auto !important; grid-row: auto !important; }
+}

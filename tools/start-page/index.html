@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hestia</title>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cards.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/overlays.css">
+    <link rel="stylesheet" href="css/utilities.css">
+</head>
+<body>
+
+    <!-- Header / Toolbar -->
+    <header>
+        <h1 id="headerTitle"><i class="fa-solid fa-fire"></i> HESTIA</h1>
+        <div class="toolbar">
+            <button class="btn btn-icon btn-error" id="clearBtn" title="Clear Dashboard" disabled>
+                <i class="fa-solid fa-eraser"></i>
+            </button>
+            <button class="btn btn-icon" id="addBtn" title="Add New App" disabled>
+                <i class="fa-solid fa-plus"></i>
+            </button>
+            <button class="btn btn-icon btn-primary" id="editBtn" title="Edit Layout">
+                <i class="fa-solid fa-pen-to-square"></i>
+            </button>
+            <button class="btn btn-icon btn-primary" id="settingsBtn" title="Open Settings">
+                <i class="fa-solid fa-gear"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Dashboard Grid -->
+    <div class="dashboard-container" id="dashboard">
+        <div class="grid-lines" id="gridLines"></div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div class="settings-panel" id="settingsPanel">
+        <div class="settings-modal-header">
+            <h3>Dashboard Settings</h3>
+            <div style="display: flex; gap: 10px;">
+                <button class="btn btn-icon" title="Download current theme and layout">
+                    <i class="fa-solid fa-download"></i>
+                </button>
+                <button class="btn btn-icon" title="Load theme and layout from a file">
+                    <i class="fa-solid fa-upload"></i>
+                </button>
+                <input type="file" id="file-import" accept=".json" style="display: none;">
+
+                <button class="btn btn-error" onclick="confirmReset()" title="Wipes all saved settings">
+                    <i class="fa-solid fa-rotate"></i>
+                </button>
+                <button class="btn btn-icon" title="Close Settings">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="settings-content">
+            <!-- General Group -->
+            <div class="settings-group">
+                <h4>General</h4>
+                <div class="general-grid-container">
+                    <div>
+                        <!-- Title -->
+                        <div class="setting-row">
+                            <span class="setting-label">Title</span>
+                            <div class="setting-controls">
+                                <input type="text" class="setting-val" id="input-titleBarText" data-default="HESTIA">
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-titleBarText"></i>
+                            </div>
+                        </div>
+                        <!-- Icon -->
+                        <div class="setting-row">
+                            <span class="setting-label">Icon</span>
+                            <div class="setting-controls">
+                                <input type="text" class="setting-val" id="input-titleBarIcon" data-default="fa-fire" title="FontAwesome class">
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-titleBarIcon"></i>
+                            </div>
+                        </div>
+                        <!-- Font -->
+                        <div class="setting-row">
+                            <span class="setting-label">Font Family</span>
+                            <div class="setting-controls">
+                                <input type="text" class="setting-val" id="input-fontFamily" data-default="Courier New">
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-fontFamily"></i>
+                            </div>
+                        </div>
+                        <!-- Shadows Toggle -->
+                        <div class="setting-row">
+                            <span class="setting-label">Shadows</span>
+                            <div class="setting-controls" style="width: 270px; padding-left: 70px; justify-content: flex-start;">
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="input-shadow" data-default="true">
+                                    <span class="slider"></span>
+                                </label>
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-shadow"></i>
+                            </div>
+                        </div>
+                        <!-- Outlines Toggle -->
+                        <div class="setting-row">
+                            <span class="setting-label">Outlines</span>
+                            <div class="setting-controls" style="width: 270px; padding-left: 70px; justify-content: flex-start;">
+                                <label class="toggle-switch">
+                                    <input type="checkbox" id="input-outlines" data-default="true">
+                                    <span class="slider"></span>
+                                </label>
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-outlines"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Geometry Settings -->
+                    <div>
+                        <div class="setting-row">
+                            <span class="setting-label">Padding</span>
+                            <div class="setting-controls">
+                                <input type="text" class="setting-val" style="width:150px; text-align:right;" id="input-gridPadding" data-default="20px">
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-gridPadding"></i>
+                            </div>
+                        </div>
+                        <div class="setting-row">
+                            <span class="setting-label">Gap Size</span>
+                            <div class="setting-controls">
+                                <input type="text" class="setting-val" style="width:150px; text-align:right;" id="input-gapSize" data-default="10px">
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-gapSize"></i>
+                            </div>
+                        </div>
+                        <div class="setting-row">
+                            <span class="setting-label">Radius</span>
+                            <div class="setting-controls">
+                                <input type="text" class="setting-val" style="width:150px; text-align:right;" id="input-borderRadius" data-default="5px">
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-borderRadius"></i>
+                            </div>
+                        </div>
+                        <div class="setting-row">
+                            <span class="setting-label">Columns</span>
+                            <div class="setting-controls">
+                                <input type="text" class="setting-val" style="width:150px; text-align:right;" id="input-gridColumns" data-default="10" disabled>
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-gridColumns"></i>
+                            </div>
+                        </div>
+                        <div class="setting-row">
+                            <span class="setting-label">Rows</span>
+                            <div class="setting-controls">
+                                <input type="text" class="setting-val" style="width:150px; text-align:right;" id="input-gridRows" data-default="6" disabled>
+                                <i class="fa-solid fa-rotate-left reset-icon" id="reset-gridRows"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Themes Group -->
+            <div class="settings-group">
+                <h4>Themes & Colors</h4>
+                <div class="setting-row" style="margin-bottom: 20px;">
+                    <div class="setting-controls" style="width:100%; display:flex; gap:10px; align-items: center;">
+                        <select class="setting-select" id="presetSelect" style="flex:1;"></select>
+                        <input type="text" id="newThemeName" class="setting-val" style="flex:1;" placeholder="Name current theme...">
+                        <button class="btn btn-icon" title="Save Preset">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="colors-grid-container">
+                    <!-- Main Colors -->
+                    <div class="color-column">
+                        <div class="color-group-wrapper">
+                            <h5>Main Colors</h5>
+                            <div class="setting-row"><span class="setting-label">Canvas</span><div class="setting-controls"><div class="color-preview" id="preview-bgCanvas"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-bgCanvas"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Card</span><div class="setting-controls"><div class="color-preview" id="preview-bgSurface"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-bgSurface"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Highlight</span><div class="setting-controls"><div class="color-preview" id="preview-bgHighlight"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-bgHighlight"></i></div></div>
+                        </div>
+                        <div class="color-group-wrapper">
+                            <h5>Borders</h5>
+                            <div class="setting-row"><span class="setting-label">Dim</span><div class="setting-controls"><div class="color-preview" id="preview-borderDim"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-borderDim"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Bright</span><div class="setting-controls"><div class="color-preview" id="preview-borderBright"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-borderBright"></i></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Font Colors -->
+                    <div class="color-column">
+                        <div class="color-group-wrapper">
+                            <h5>Font Colors</h5>
+                            <div class="setting-row"><span class="setting-label">Main</span><div class="setting-controls"><div class="color-preview" id="preview-textMain"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-textMain"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Muted</span><div class="setting-controls"><div class="color-preview" id="preview-textMuted"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-textMuted"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Faint</span><div class="setting-controls"><div class="color-preview" id="preview-textFaint"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-textFaint"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Inverse</span><div class="setting-controls"><div class="color-preview" id="preview-textInverse"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-textInverse"></i></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Brand & Status -->
+                    <div class="color-column">
+                        <div class="color-group-wrapper">
+                            <h5>Branding</h5>
+                            <div class="setting-row"><span class="setting-label">Primary</span><div class="setting-controls"><div class="color-preview" id="preview-brandPrimary"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-brandPrimary"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Secondary</span><div class="setting-controls"><div class="color-preview" id="preview-brandSecondary"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-brandSecondary"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Tertiary</span><div class="setting-controls"><div class="color-preview" id="preview-brandTertiary"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-brandTertiary"></i></div></div>
+                        </div>
+                        <div class="color-group-wrapper">
+                            <h5>Status</h5>
+                            <div class="setting-row"><span class="setting-label">Error</span><div class="setting-controls"><div class="color-preview" id="preview-statusError"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-statusError"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Warning</span><div class="setting-controls"><div class="color-preview" id="preview-statusWarning"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-statusWarning"></i></div></div>
+                            <div class="setting-row"><span class="setting-label">Success</span><div class="setting-controls"><div class="color-preview" id="preview-statusSuccess"></div><i class="fa-solid fa-rotate-left reset-icon" id="reset-statusSuccess"></i></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="settings-footer">
+            Hestia-core v0.1.0 &nbsp; <i class="fa-solid fa-heart" style="color:var(--status-error);"></i> &nbsp; <a href="https://github.com/mult1v4c/hestia-core" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+
+        <!-- Hidden Native Inputs for Color Pickers -->
+        <input type="color" class="hidden-native-picker" id="native-input-bgCanvas">
+        <input type="color" class="hidden-native-picker" id="native-input-bgSurface">
+        <input type="color" class="hidden-native-picker" id="native-input-bgHighlight">
+        <input type="color" class="hidden-native-picker" id="native-input-borderDim">
+        <input type="color" class="hidden-native-picker" id="native-input-borderBright">
+        <input type="color" class="hidden-native-picker" id="native-input-textMain">
+        <input type="color" class="hidden-native-picker" id="native-input-textMuted">
+        <input type="color" class="hidden-native-picker" id="native-input-textFaint">
+        <input type="color" class="hidden-native-picker" id="native-input-textInverse">
+        <input type="color" class="hidden-native-picker" id="native-input-brandPrimary">
+        <input type="color" class="hidden-native-picker" id="native-input-brandSecondary">
+        <input type="color" class="hidden-native-picker" id="native-input-brandTertiary">
+        <input type="color" class="hidden-native-picker" id="native-input-statusError">
+        <input type="color" class="hidden-native-picker" id="native-input-statusWarning">
+        <input type="color" class="hidden-native-picker" id="native-input-statusSuccess">
+        <!-- Modal Transient Inputs -->
+        <input type="color" class="hidden-native-picker" id="input-modal-bg-native">
+        <input type="color" class="hidden-native-picker" id="input-modal-text-native">
+    </div>
+
+    <!-- UI Components -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Generic Modal Template -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <div class="modal-header" id="modalTitle">Title</div>
+            <div class="modal-body" id="modalContent">Content</div>
+            <div class="modal-footer">
+                <button class="btn" id="modalCancel"><i class="fa-solid fa-xmark"></i></button>
+                <button class="btn btn-icon btn-primary" id="modalConfirm"><i class="fa-solid fa-checkmark"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <!-- We keep palettes separate for now as it is a large data file -->
+    <script src="js/palettes.js"></script>
+    <!-- Main Application Entry Point -->
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

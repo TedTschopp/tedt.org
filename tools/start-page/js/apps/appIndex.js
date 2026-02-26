@@ -1,0 +1,15 @@
+import './linkApp.js';
+import './noteApp.js';
+import './imageApp.js';
+import './weatherApp.js';
+import './calendarApp.js';
+import './clockApp.js';
+import './helloWorld.js';
+import './glancesApp.js';
+import './piholeApp.js';
+import './delugeApp.js';
+import './jellyfinApp.js';
+import './rssApp.js';
+import './matrixApp.js';
+import './pipesApp.js';
+import './fetchApp.js';

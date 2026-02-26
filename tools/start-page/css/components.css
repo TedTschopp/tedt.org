@@ -1,0 +1,86 @@
+/* -------------------------------------------------------------------------- */
+/* 3. REUSABLE COMPONENTS                                                     */
+/* -------------------------------------------------------------------------- */
+
+/* --- BUTTONS --- */
+.btn {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-dim);
+    color: var(--text-main);
+    height: 30px;
+    padding: 0 10px;
+    display: flex; justify-content: center; align-items: center; gap: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s;
+    font-family: inherit; font-size: 0.8rem; white-space: nowrap;
+}
+.btn:hover:not(:disabled) { background: var(--bg-highlight); border-color: var(--brand-primary); }
+.btn:disabled { opacity: 0.3; cursor: not-allowed; color: var(--text-muted); }
+
+.btn-primary { border-color: var(--brand-primary); color: var(--brand-primary); }
+.btn-primary:hover { background: var(--brand-primary); color: var(--bg-canvas); }
+
+.btn-icon { width: 30px; height: 30px; padding: 0; }
+
+.btn-error { color: var(--status-error); }
+.btn-error:hover:not(:disabled) { border-color: var(--status-error); color: var(--status-error) !important; }
+
+/* --- INPUTS --- */
+/* We group all input-like classes here to ensure they get the paint (colors) */
+input[type="text"],
+input[type="number"],
+select,
+textarea,
+.modal-input,
+.setting-val {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-dim);
+    color: var(--text-main);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 0.85rem;
+}
+
+input:disabled {
+    background-color: var(--bg-canvas);
+    outline: none;
+}
+
+input:focus, select:focus, textarea:focus, .modal-input:focus {
+    outline: none;
+    border-color: var(--brand-primary);
+}
+
+/* Specialized Input Layouts */
+.modal-input { width: 100%; padding: 8px; }
+.setting-val { height: 30px; }
+.setting-select { width: 100%; cursor: pointer; height: 30px; }
+
+/* Dimension Inputs (e.g. "10px") */
+input[style*="width:100px"] { width: 100px !important; text-align: right !important; }
+
+/* Hidden/Utility Inputs */
+.hidden-native-picker { display: none; }
+.modal-input-color { width: 130px !important; }
+
+/* --- TOGGLE SWITCH --- */
+.toggle-switch {
+    position: relative; display: inline-block; width: 44px; height: 22px;
+}
+.toggle-switch input { opacity: 0; width: 0; height: 0; }
+.slider {
+    position: absolute; cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: var(--bg-highlight);
+    transition: .3s; border-radius: 22px; border: 1px solid var(--border-dim);
+}
+.slider:before {
+    position: absolute; content: "";
+    height: 16px; width: 16px; left: 2px; bottom: 2px;
+    background-color: var(--text-muted);
+    transition: .3s; border-radius: 50%;
+}
+input:checked + .slider { background-color: var(--brand-primary); border-color: var(--brand-primary); }
+input:checked + .slider:before { transform: translateX(22px); background-color: var(--bg-canvas); }

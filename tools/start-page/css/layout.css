@@ -1,0 +1,55 @@
+/* -------------------------------------------------------------------------- */
+/* 4. MACRO LAYOUT (Header & Grid)                                            */
+/* -------------------------------------------------------------------------- */
+
+/* --- HEADER --- */
+header {
+    padding: 0 20px;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-dim);
+    display: flex; justify-content: space-between; align-items: center;
+    height: 60px; flex-shrink: 0;
+}
+
+h1 {
+    font-size: 1.5rem; letter-spacing: 2px; color: var(--brand-primary);
+    display: flex; align-items: center; gap: 10px;
+}
+
+.toolbar { display: flex; gap: 10px; align-items: center; }
+
+/* --- DASHBOARD GRID --- */
+.dashboard-container {
+    flex: 1;
+    padding: var(--grid-padding);
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols, 10), minmax(0, 1fr));
+    grid-template-rows: repeat(var(--grid-rows, 6), minmax(0, 1fr));
+    gap: var(--gap-size);
+    position: relative;
+    transition: gap 0.3s, padding 0.3s;
+}
+
+.grid-lines {
+    position: absolute;
+    top: var(--grid-padding); left: var(--grid-padding);
+    right: var(--grid-padding); bottom: var(--grid-padding);
+    display: grid;
+    grid-template-columns: repeat(var(--grid-cols, 10), 1fr);
+    grid-template-rows: repeat(var(--grid-rows, 6), 1fr);
+    gap: var(--gap-size);
+    pointer-events: none; z-index: 0; opacity: 0; transition: opacity 0.3s;
+}
+.dashboard-container.edit-mode .grid-lines { opacity: 1; }
+
+.grid-cell {
+    border: 1px dashed var(--border-dim);
+    border-radius: var(--radius);
+    opacity: 0.5;
+}
+
+/* Responsive Fallback */
+@media (max-width: 768px) {
+    .dashboard-container { display: flex; flex-direction: column; height: auto; }
+    .grid-lines { display: none; }
+}
