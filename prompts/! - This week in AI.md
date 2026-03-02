@@ -56,16 +56,14 @@ Normalize dates:
 - Aim for 8–12 primary items, or fewer if not enough pass filtering.
 - Rank: enterprise impact, novelty, next steps for enterprises, global interest, and West Coast relevance (never stated directly).
 
-6) ORGANIZE INTO SECTIONS (3–6 total) Suggestions:
-- The Big Picture
+1) ORGANIZE INTO SECTIONS these sections:
 - Enterprise Ops & Adoption
-- Strategy & Change
-- Security, Risk & Compliance
+- Security, Risk & Compliance Vendors,
 - Vendors, Platforms & Models
 - Policy & Regulation
-- Research & Capabilities (if timely)
+- Research & Capabilities
 
-7) WRITE NEWSLETTER IN CLEAN MARKDOWN Format:
+1) WRITE NEWSLETTER IN CLEAN MARKDOWN Format:
 
 A) Header
 - Title: “This Week in Enterprise AI — Week Ending {DATE_IN_PT}”
