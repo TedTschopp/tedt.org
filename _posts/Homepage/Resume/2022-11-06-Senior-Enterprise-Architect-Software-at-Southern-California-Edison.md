@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Senior Enterprise Architect, Artificial Intelligence & Software at Southern
+title: Enterprise Architect, Artificial Intelligence & Software at Southern
   California Edison
 title-url: https://www.edisoncareers.com/listjobs/all/search/sce-job-function/information-technology/
 subtitle: null
@@ -35,12 +35,12 @@ location:
 coordinates:
   latitude: null
   longitude: null
-image: /img/home/Ted-Tschopp-Senior-Enterprise-Architect-v4.webp
+image: /img/home/Ted-Tschopp-Enterprise-Architect-v4.webp
 image-alt: null
 image-artist: Ted Tschopp and Midjourney
 image-artist-URL: https://tedt.org/
 image-description: null
-image-title: Ted Tschopp as Senior Enterprise Architect
+image-title: Ted Tschopp as Enterprise Architect
 monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
