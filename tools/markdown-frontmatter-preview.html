@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Markdown Front Matter Preview</title>
+  <meta name="description" content="Paste Markdown with YAML front matter, edit it live, and preview both the YAML and rendered content side by side.">
+  <link rel="canonical" href="https://tedt.org/tools/markdown-frontmatter-preview.html">
+
+  <meta property="og:title" content="Markdown Front Matter Preview">
+  <meta property="og:description" content="Paste Markdown with YAML front matter, edit it live, and preview both the YAML and rendered content side by side.">
+  <meta property="og:url" content="https://tedt.org/tools/markdown-frontmatter-preview.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Markdown Front Matter Preview">
+  <meta name="twitter:description" content="Paste Markdown with YAML front matter, edit it live, and preview both the YAML and rendered content side by side.">
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <link rel="icon" type="image/webp" href="../img/favicon-196x196.webp" sizes="196x196">
+  <link rel="icon" type="image/webp" href="../img/favicon-96x96.webp" sizes="96x96">
+  <link rel="icon" type="image/webp" href="../img/favicon-32x32.webp" sizes="32x32">
+  <link rel="icon" type="image/webp" href="../img/favicon-16x16.webp" sizes="16x16">
+  <link rel="apple-touch-icon" href="../img/apple-touch-icon-152x152.png" sizes="152x152">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+
+  <style>
+    :root {
+      --tool-editor-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --tool-reading-font: Charter, Iowan Old Style, Palatino Linotype, Book Antiqua, Georgia, serif;
+      --tool-border-contrast: rgba(255, 255, 255, 0.16);
+      --tool-focus-ring: rgba(var(--bs-primary-rgb), 0.55);
+    }
+
+    body {
+      background: var(--bs-body-bg);
+    }
+
+    .app-shell {
+      max-width: 1120px;
+    }
+
+    .muted-note {
+      color: var(--bs-secondary-color);
+      font-size: 0.9rem;
+    }
+
+    .mono {
+      font-family: var(--tool-editor-font);
+    }
+
+    .toolbar {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+
+    .status-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--tool-border-contrast);
+      background: var(--bs-tertiary-bg);
+      color: var(--bs-secondary-color);
+      font-size: 0.85rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .status-pill strong {
+      color: var(--bs-body-color);
+      font-weight: 600;
+    }
+
+    .workbench {
+      display: grid;
+      grid-template-columns: minmax(360px, 1fr) minmax(360px, 1fr);
+      gap: 1rem;
+      align-items: stretch;
+    }
+
+    .panel-card {
+      display: flex;
+      flex-direction: column;
+      min-height: 100%;
+      border: 1px solid var(--tool-border-contrast);
+      background: var(--bs-body-bg);
+    }
+
+    .panel-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: start;
+      gap: 1rem;
+      padding: 1rem 1.1rem 0.85rem;
+      border-bottom: 1px solid var(--tool-border-contrast);
+      background: var(--bs-tertiary-bg);
+    }
+
+    .panel-title {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 650;
+    }
+
+    .panel-subtitle {
+      margin: 0.2rem 0 0;
+      color: var(--bs-secondary-color);
+      font-size: 0.88rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card {
+      background: var(--bs-body-bg);
+      border-color: var(--bs-border-color);
+    }
+
+    .card-header {
+      background: var(--bs-tertiary-bg);
+      border-bottom-color: var(--bs-border-color);
+    }
+
+    .panel-body-fill {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      min-height: 0;
+    }
+
+    .source-frame {
+      flex: 1 1 auto;
+      min-height: 0;
+      margin: 1rem;
+      margin-top: 0;
+      border: 1px solid var(--tool-border-contrast);
+      border-radius: 1rem;
+      background: var(--bs-body-bg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .source-frame-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.95rem 1rem 0.8rem;
+      border-bottom: 1px solid var(--tool-border-contrast);
+      background: var(--bs-tertiary-bg);
+    }
+
+    .source-frame-head h3 {
+      margin: 0;
+      font-size: 0.98rem;
+      font-weight: 650;
+    }
+
+    .panel-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      padding: 1rem;
+    }
+
+    .panel-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      padding: 0.75rem 1.1rem 0.95rem;
+      border-top: 1px solid var(--tool-border-contrast);
+      background: var(--bs-tertiary-bg);
+    }
+
+    .status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.85rem;
+      border-top: 1px solid var(--tool-border-contrast);
+      background: var(--bs-tertiary-bg);
+    }
+
+    .status-bar .counts,
+    .meta-inline {
+      color: var(--bs-secondary-color);
+      font-size: 0.85rem;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .status-bar .counts {
+      font-size: 0.85rem;
+    }
+
+    #sourceInput {
+      flex: 1 1 auto;
+      resize: none;
+      min-height: 100%;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      tab-size: 2;
+      border: 0;
+      width: 100%;
+      padding: 1.1rem;
+      background: transparent;
+      color: var(--bs-body-color);
+      font-family: var(--tool-editor-font);
+    }
+
+    #sourceInput:focus {
+      outline: 2px solid var(--tool-focus-ring);
+      outline-offset: -2px;
+      box-shadow: inset 0 0 0 1px var(--tool-focus-ring);
+    }
+
+    .hint-text {
+      color: var(--bs-secondary-color);
+      font-size: 0.85rem;
+    }
+
+    .preview-stack {
+      flex: 1 1 auto;
+      min-height: 0;
+      display: grid;
+      grid-template-rows: auto minmax(0, 1fr);
+      gap: 1rem;
+    }
+
+    .yaml-preview,
+    .markdown-preview {
+      border: 1px solid var(--tool-border-contrast);
+      border-radius: 1rem;
+      background: var(--bs-body-bg);
+      overflow: hidden;
+    }
+
+    .preview-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      padding: 0.95rem 1rem 0.8rem;
+      border-bottom: 1px solid var(--tool-border-contrast);
+      background: var(--bs-tertiary-bg);
+    }
+
+    .preview-head h2 {
+      margin: 0;
+      font-size: 0.98rem;
+      font-weight: 650;
+    }
+
+    .preview-toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      padding: 0;
+      font: inherit;
+      cursor: pointer;
+    }
+
+    .preview-toggle-title {
+      font-size: 0.98rem;
+      font-weight: 650;
+      line-height: 1.2;
+    }
+
+    .preview-toggle:focus-visible {
+      outline: 2px solid rgba(var(--bs-primary-rgb), 0.45);
+      outline-offset: 3px;
+      border-radius: 0.35rem;
+    }
+
+    .preview-toggle-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.15rem;
+      height: 1.15rem;
+      border-radius: 999px;
+      background: rgba(var(--bs-body-color-rgb), 0.08);
+      font-size: 0.72rem;
+      line-height: 1;
+      transition: transform 160ms ease;
+    }
+
+    .yaml-preview.is-expanded .preview-toggle-icon {
+      transform: rotate(90deg);
+    }
+
+    .preview-body {
+      padding: 1rem;
+    }
+
+    .yaml-preview-body[hidden] {
+      display: none !important;
+    }
+
+    .preview-body-scroll {
+      overflow: auto;
+      min-height: 480px;
+    }
+
+    .yaml-grid {
+      display: grid;
+      grid-template-columns: minmax(140px, 220px) 1fr;
+      gap: 0.75rem 1rem;
+      margin: 0;
+    }
+
+    .yaml-grid dt {
+      margin: 0;
+      font-family: var(--tool-editor-font);
+      font-size: 0.86rem;
+      color: #fbbf24;
+      word-break: break-word;
+    }
+
+    .yaml-grid dd {
+      margin: 0;
+      color: var(--bs-body-color);
+      font-size: 0.94rem;
+      word-break: break-word;
+    }
+
+    .yaml-value-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .yaml-chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.84rem;
+    }
+
+    .yaml-raw,
+    .empty-state,
+    .error-box {
+      border-radius: 0.8rem;
+      padding: 0.95rem 1rem;
+      font-size: 0.92rem;
+    }
+
+    .yaml-raw {
+      margin: 0;
+      background: rgba(0, 0, 0, 0.18);
+      border: 1px solid var(--tool-border-contrast);
+      color: #f8fafc;
+      font-family: var(--tool-editor-font);
+      line-height: 1.55;
+      white-space: pre-wrap;
+      word-break: break-word;
+    }
+
+    .empty-state {
+      background: rgba(var(--bs-body-color-rgb), 0.03);
+      border: 1px dashed var(--tool-border-contrast);
+      color: var(--bs-secondary-color);
+    }
+
+    .error-box {
+      background: rgba(220, 53, 69, 0.12);
+      border: 1px solid rgba(220, 53, 69, 0.25);
+      color: #ffb4bf;
+    }
+
+    .markdown-output {
+      font-family: var(--tool-reading-font);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .markdown-output > *:first-child {
+      margin-top: 0;
+    }
+
+    .markdown-output > *:last-child {
+      margin-bottom: 0;
+    }
+
+    .markdown-output h1,
+    .markdown-output h2,
+    .markdown-output h3,
+    .markdown-output h4,
+    .markdown-output h5,
+    .markdown-output h6 {
+      font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+      font-weight: 650;
+      line-height: 1.2;
+      margin-top: 1.8rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .markdown-output h1 {
+      font-size: clamp(1.9rem, 1.4rem + 1.3vw, 2.6rem);
+    }
+
+    .markdown-output h2 {
+      font-size: clamp(1.45rem, 1.22rem + 0.7vw, 1.85rem);
+    }
+
+    .markdown-output h3 {
+      font-size: 1.25rem;
+    }
+
+    .markdown-output p,
+    .markdown-output ul,
+    .markdown-output ol,
+    .markdown-output blockquote,
+    .markdown-output pre,
+    .markdown-output table {
+      margin-bottom: 1.1rem;
+    }
+
+    .markdown-output a {
+      color: var(--bs-primary);
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.16em;
+    }
+
+    .markdown-output blockquote {
+      margin-left: 0;
+      padding: 0.9rem 1rem;
+      border-left: 4px solid rgba(var(--bs-primary-rgb), 0.5);
+      background: rgba(var(--bs-primary-rgb), 0.08);
+      border-radius: 0 0.8rem 0.8rem 0;
+    }
+
+    .markdown-output code {
+      font-family: var(--tool-editor-font);
+      font-size: 0.9em;
+      background: rgba(var(--bs-body-color-rgb), 0.08);
+      padding: 0.15rem 0.35rem;
+      border-radius: 0.35rem;
+    }
+
+    .markdown-output pre {
+      background: rgba(0, 0, 0, 0.18);
+      border: 1px solid var(--tool-border-contrast);
+      border-radius: 0.9rem;
+      padding: 1rem;
+      overflow: auto;
+    }
+
+    .markdown-output pre code {
+      background: transparent;
+      padding: 0;
+      border-radius: 0;
+    }
+
+    .markdown-output img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0.85rem;
+    }
+
+    .markdown-output table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.95rem;
+    }
+
+    .markdown-output th,
+    .markdown-output td {
+      padding: 0.7rem 0.8rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      vertical-align: top;
+    }
+
+    .markdown-output th {
+      background: rgba(var(--bs-body-color-rgb), 0.06);
+      font-family: "Avenir Next", "Segoe UI", system-ui, sans-serif;
+    }
+
+    @media (max-width: 991.98px) {
+      .workbench {
+        grid-template-columns: 1fr;
+      }
+
+      #sourceInput,
+      .preview-body-scroll {
+        min-height: 48vh;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .panel-header,
+      .panel-footer,
+      .preview-head,
+      .preview-body,
+      .panel-actions {
+        padding-left: 0.85rem;
+        padding-right: 0.85rem;
+      }
+
+      .yaml-grid {
+        grid-template-columns: 1fr;
+        gap: 0.35rem;
+      }
+
+      .meta-inline {
+        white-space: normal;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="container app-shell py-4">
+    <div class="mb-3">
+      <h1 class="h2 mb-1">Markdown Front Matter Preview <span class="text-body-secondary h5">— YAML + Markdown Workspace</span></h1>
+      <p class="mb-0 muted-note">Paste a full content blob with YAML front matter, edit the source live, and inspect the parsed metadata above the rendered Markdown.</p>
+    </div>
+
+    <div class="toolbar">
+      <button id="sampleBtn" type="button" class="btn btn-primary">Load sample</button>
+      <span class="status-pill"><strong id="frontMatterStatus">Front matter detected</strong><span id="lineStats">0 lines</span></span>
+      <span class="status-pill"><strong id="yamlStatus">YAML ready</strong><span id="renderStats">0 chars</span></span>
+    </div>
+
+    <section class="workbench" aria-label="Markdown and preview workspace">
+      <article class="panel-card rounded-4 overflow-hidden">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Source</h2>
+            <p class="panel-subtitle">Edit the full source, including front matter fences.</p>
+          </div>
+          <div id="editorMeta" class="meta-inline">Live preview enabled</div>
+        </div>
+
+        <div class="panel-actions" aria-label="Source actions">
+          <button id="sourceCopyBtn" type="button" class="btn btn-outline-secondary btn-sm">Copy</button>
+          <button id="sourcePasteBtn" type="button" class="btn btn-outline-secondary btn-sm">Paste</button>
+          <button id="sourceClearBtn" type="button" class="btn btn-outline-danger btn-sm">Clear</button>
+        </div>
+
+        <div class="panel-body-fill">
+          <div class="source-frame">
+            <div class="source-frame-head">
+              <h3 id="rawTextTitle">Raw Text</h3>
+              <span id="rawTextMeta" class="meta-inline">0 lines</span>
+            </div>
+            <label class="visually-hidden" for="sourceInput">Markdown with YAML front matter</label>
+            <textarea id="sourceInput" class="editor-area" spellcheck="false" autocomplete="off" autocorrect="off"></textarea>
+          </div>
+        </div>
+
+        <div class="panel-footer">
+          <div class="hint-text">Tip: press <kbd>Tab</kbd> to indent and <kbd>⌘</kbd>/<kbd>Ctrl</kbd> + <kbd>S</kbd> to copy the current source.</div>
+          <div id="parseStatus" class="hint-text" aria-live="polite">Ready.</div>
+        </div>
+      </article>
+
+      <article class="panel-card rounded-4 overflow-hidden">
+        <div class="panel-header">
+          <div>
+            <h2 class="panel-title">Preview</h2>
+            <p class="panel-subtitle">YAML first, then the rendered Markdown.</p>
+          </div>
+          <div id="previewMeta" class="meta-inline">Client-side only</div>
+        </div>
+
+        <div class="panel-actions" aria-label="Preview actions">
+          <button id="previewCopyHtmlBtn" type="button" class="btn btn-outline-secondary btn-sm">Copy HTML</button>
+          <button id="previewCopyBtn" type="button" class="btn btn-outline-secondary btn-sm">Copy rich text</button>
+          <button id="previewCopyStyledBtn" type="button" class="btn btn-outline-secondary btn-sm">Copy styled rich text</button>
+        </div>
+
+        <div class="preview-stack p-3 p-lg-4 pt-3 panel-body-fill">
+          <section class="yaml-preview" aria-labelledby="yamlPreviewTitle">
+            <div class="preview-head">
+              <button id="yamlToggleBtn" class="preview-toggle" type="button" aria-expanded="false" aria-controls="yamlPreviewBodyWrap">
+                <span class="preview-toggle-icon" aria-hidden="true">›</span>
+                <span id="yamlPreviewTitle" class="preview-toggle-title">YAML Front Matter</span>
+              </button>
+              <span id="yamlPreviewMeta" class="meta-inline">No keys</span>
+            </div>
+            <div id="yamlPreviewBodyWrap" class="yaml-preview-body" hidden>
+              <div id="yamlPreviewBody" class="preview-body"></div>
+            </div>
+          </section>
+
+          <section class="markdown-preview" aria-labelledby="markdownPreviewTitle">
+            <div class="preview-head">
+              <h2 id="markdownPreviewTitle">Rendered Markdown</h2>
+              <span id="markdownPreviewMeta" class="meta-inline">Empty</span>
+            </div>
+            <div id="markdownPreviewBody" class="preview-body preview-body-scroll markdown-output"></div>
+          </section>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script>
+    (() => {
+      'use strict';
+
+      const STORAGE_KEY = 'tedt:tools:markdown-frontmatter-preview:v1';
+      const COOKIE_KEY = 'tedt_markdown_frontmatter_preview';
+      const YAML_TOGGLE_STORAGE_KEY = 'tedt:tools:markdown-frontmatter-preview:yaml-expanded';
+      const YAML_TOGGLE_COOKIE_KEY = 'tedt_markdown_frontmatter_preview_yaml_expanded';
+      const COOKIE_MAX_LENGTH = 3500;
+      const SAMPLE_DOCUMENT = `---
+title: Markdown Front Matter Preview
+description: A quick visual check for YAML front matter and rendered Markdown.
+categories:
+  - Tools
+  - Writing
+tags:
+  - markdown
+  - yaml
+  - preview
+published: true
+author:
+  name: Ted Tschopp
+  role: Enterprise Architect
+hero_image: /img/social-preview.webp
+last_modified: 2026-03-07
+---
+
+# Live preview, without the guesswork
+
+Use this page when you want to validate three things quickly:
+
+1. The front matter fence is where you think it is.
+2. The YAML shape looks right.
+3. The Markdown body renders the way the site will likely present it.
+
+## Why this exists
+
+The failure mode is usually simple: a quote, an indent, or a missing fence.
+
+> Front matter errors are rarely dramatic. They are usually quiet and expensive.
+
+### Useful checks
+
+- Confirm arrays render as arrays.
+- Confirm dates and booleans are parsed the way you expect.
+- Confirm headings, lists, links, and code blocks read cleanly.
+
+
+\`\`\`yaml
+no_toc: true
+mermaid: false
+\`\`\`
+
+[View tedt.org](https://tedt.org)
+`;
+
+      const sourceInput = document.getElementById('sourceInput');
+      const sampleBtn = document.getElementById('sampleBtn');
+      const sourceCopyBtn = document.getElementById('sourceCopyBtn');
+      const sourcePasteBtn = document.getElementById('sourcePasteBtn');
+      const sourceClearBtn = document.getElementById('sourceClearBtn');
+      const previewCopyHtmlBtn = document.getElementById('previewCopyHtmlBtn');
+      const previewCopyBtn = document.getElementById('previewCopyBtn');
+      const previewCopyStyledBtn = document.getElementById('previewCopyStyledBtn');
+      const parseStatus = document.getElementById('parseStatus');
+      const editorMeta = document.getElementById('editorMeta');
+      const previewMeta = document.getElementById('previewMeta');
+      const rawTextMeta = document.getElementById('rawTextMeta');
+      const frontMatterStatus = document.getElementById('frontMatterStatus');
+      const yamlStatus = document.getElementById('yamlStatus');
+      const lineStats = document.getElementById('lineStats');
+      const renderStats = document.getElementById('renderStats');
+      const yamlPreviewSection = document.querySelector('.yaml-preview');
+      const yamlToggleBtn = document.getElementById('yamlToggleBtn');
+      const yamlPreviewTitle = document.getElementById('yamlPreviewTitle');
+      const yamlPreviewBody = document.getElementById('yamlPreviewBody');
+      const yamlPreviewBodyWrap = document.getElementById('yamlPreviewBodyWrap');
+      const yamlPreviewMeta = document.getElementById('yamlPreviewMeta');
+      const markdownPreviewBody = document.getElementById('markdownPreviewBody');
+      const markdownPreviewTitle = document.getElementById('markdownPreviewTitle');
+      const markdownPreviewMeta = document.getElementById('markdownPreviewMeta');
+
+      function getCookie(name) {
+        const prefix = `${name}=`;
+        const match = document.cookie.split('; ').find((entry) => entry.startsWith(prefix));
+        return match ? decodeURIComponent(match.slice(prefix.length)) : '';
+      }
+
+      function setCookie(name, value) {
+        if (!value) {
+          document.cookie = `${name}=; path=/; max-age=0; SameSite=Lax`;
+          return;
+        }
+
+        const encoded = encodeURIComponent(value);
+        document.cookie = `${name}=${encoded}; path=/; max-age=${60 * 60 * 24 * 30}; SameSite=Lax`;
+      }
+
+      function loadStoredBoolean(storageKey, cookieKey, defaultValue) {
+        try {
+          const saved = window.localStorage.getItem(storageKey);
+          if (saved === 'true') {
+            return true;
+          }
+          if (saved === 'false') {
+            return false;
+          }
+        } catch (error) {
+          // Local storage is optional in this tool.
+        }
+
+        const cookieValue = getCookie(cookieKey);
+        if (cookieValue === 'true') {
+          return true;
+        }
+        if (cookieValue === 'false') {
+          return false;
+        }
+
+        return defaultValue;
+      }
+
+      function persistBoolean(storageKey, cookieKey, value) {
+        try {
+          window.localStorage.setItem(storageKey, value ? 'true' : 'false');
+        } catch (error) {
+          // Local storage is optional in this tool.
+        }
+
+        setCookie(cookieKey, value ? 'true' : 'false');
+      }
+
+      function setYamlExpanded(expanded) {
+        yamlPreviewSection.classList.toggle('is-expanded', expanded);
+        yamlPreviewBodyWrap.hidden = !expanded;
+        yamlToggleBtn.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      }
+
+      function toggleYamlExpanded() {
+        const nextValue = yamlToggleBtn.getAttribute('aria-expanded') !== 'true';
+        setYamlExpanded(nextValue);
+        persistBoolean(YAML_TOGGLE_STORAGE_KEY, YAML_TOGGLE_COOKIE_KEY, nextValue);
+      }
+
+      marked.setOptions({
+        gfm: true,
+        breaks: true,
+        headerIds: false,
+        mangle: false
+      });
+
+      function loadInitialDocument() {
+        try {
+          const saved = window.localStorage.getItem(STORAGE_KEY);
+          if (saved && saved.trim()) {
+            sourceInput.value = saved;
+            return;
+          }
+        } catch (error) {
+          // Local storage is optional in this tool.
+        }
+
+        const cookieValue = getCookie(COOKIE_KEY);
+        if (cookieValue && cookieValue.trim()) {
+          sourceInput.value = cookieValue;
+          return;
+        }
+
+        sourceInput.value = SAMPLE_DOCUMENT;
+      }
+
+      function saveDocument(value) {
+        try {
+          window.localStorage.setItem(STORAGE_KEY, value);
+        } catch (error) {
+          // Ignore persistence failures and keep the app usable.
+        }
+
+        if (value.length > COOKIE_MAX_LENGTH) {
+          setCookie(COOKIE_KEY, '');
+          return;
+        }
+
+        setCookie(COOKIE_KEY, value);
+      }
+
+      function escapeHtml(value) {
+        return String(value)
+          .replaceAll('&', '&amp;')
+          .replaceAll('<', '&lt;')
+          .replaceAll('>', '&gt;')
+          .replaceAll('"', '&quot;')
+          .replaceAll("'", '&#39;');
+      }
+
+      function countLines(value) {
+        if (!value.length) {
+          return 0;
+        }
+        return value.split(/\r?\n/).length;
+      }
+
+      function splitFrontMatter(value) {
+        const normalized = value.replace(/^\uFEFF/, '');
+        if (!normalized.startsWith('---\n') && !normalized.startsWith('---\r\n')) {
+          return {
+            hasFrontMatter: false,
+            yaml: '',
+            markdown: value,
+            error: ''
+          };
+        }
+
+        const lines = normalized.split(/\r?\n/);
+        let closingIndex = -1;
+        for (let index = 1; index < lines.length; index += 1) {
+          if (lines[index].trim() === '---') {
+            closingIndex = index;
+            break;
+          }
+        }
+
+        if (closingIndex === -1) {
+          return {
+            hasFrontMatter: true,
+            yaml: lines.slice(1).join('\n'),
+            markdown: '',
+            error: 'Opening front matter fence found, but no closing --- fence was detected.'
+          };
+        }
+
+        return {
+          hasFrontMatter: true,
+          yaml: lines.slice(1, closingIndex).join('\n'),
+          markdown: lines.slice(closingIndex + 1).join('\n'),
+          error: ''
+        };
+      }
+
+      function valueToMarkup(value) {
+        if (Array.isArray(value)) {
+          if (!value.length) {
+            return '<span class="text-body-secondary">[]</span>';
+          }
+
+          return `<div class="yaml-value-list">${value.map((item) => `<span class="yaml-chip">${escapeHtml(formatScalar(item))}</span>`).join('')}</div>`;
+        }
+
+        if (value && typeof value === 'object') {
+          return `<pre class="yaml-raw">${escapeHtml(window.jsyaml.dump(value).trim())}</pre>`;
+        }
+
+        return escapeHtml(formatScalar(value));
+      }
+
+      function formatScalar(value) {
+        if (value === null) {
+          return 'null';
+        }
+        if (typeof value === 'boolean') {
+          return value ? 'true' : 'false';
+        }
+        if (value instanceof Date && !Number.isNaN(value.valueOf())) {
+          return value.toISOString();
+        }
+        return String(value);
+      }
+
+      function renderYamlPreview(yamlText) {
+        if (!yamlText.trim()) {
+          yamlPreviewMeta.textContent = 'No keys';
+          yamlStatus.textContent = 'No YAML';
+          yamlPreviewBody.innerHTML = '<div class="empty-state">No YAML front matter detected. Add an opening <code>---</code> line, your YAML, and a closing <code>---</code> line to populate this panel.</div>';
+          return;
+        }
+
+        try {
+          const parsed = window.jsyaml.load(yamlText);
+
+          if (!parsed || typeof parsed !== 'object' || Array.isArray(parsed)) {
+            yamlPreviewMeta.textContent = 'Scalar YAML';
+            yamlStatus.textContent = 'YAML ready';
+            yamlPreviewBody.innerHTML = `<pre class="yaml-raw">${escapeHtml(yamlText)}</pre>`;
+            return;
+          }
+
+          const entries = Object.entries(parsed);
+          yamlPreviewMeta.textContent = `${entries.length} ${entries.length === 1 ? 'key' : 'keys'}`;
+          yamlStatus.textContent = 'YAML ready';
+          yamlPreviewBody.innerHTML = `<dl class="yaml-grid">${entries.map(([key, value]) => `<dt>${escapeHtml(key)}</dt><dd>${valueToMarkup(value)}</dd>`).join('')}</dl>`;
+        } catch (error) {
+          yamlPreviewMeta.textContent = 'Parse error';
+          yamlStatus.textContent = 'YAML error';
+          yamlPreviewBody.innerHTML = `
+            <div class="error-box" role="alert">
+              <strong>YAML parse error.</strong><br>
+              ${escapeHtml(error.message)}
+            </div>
+            <pre class="yaml-raw mt-3">${escapeHtml(yamlText)}</pre>
+          `;
+        }
+      }
+
+      function renderMarkdownPreview(markdownText) {
+        const trimmed = markdownText.trim();
+
+        if (!trimmed) {
+          markdownPreviewMeta.textContent = 'Empty';
+          markdownPreviewBody.innerHTML = '<div class="empty-state">The Markdown body is empty. Add content below the closing front matter fence to see the rendered preview.</div>';
+          return;
+        }
+
+        markdownPreviewMeta.textContent = `${countLines(markdownText)} ${countLines(markdownText) === 1 ? 'line' : 'lines'}`;
+        markdownPreviewBody.innerHTML = marked.parse(markdownText);
+      }
+
+      function updatePreview() {
+        const value = sourceInput.value;
+        const split = splitFrontMatter(value);
+        const chars = value.length;
+        const lines = countLines(value);
+
+        saveDocument(value);
+
+        lineStats.textContent = `${lines} ${lines === 1 ? 'line' : 'lines'}`;
+        renderStats.textContent = `${chars} ${chars === 1 ? 'char' : 'chars'}`;
+        rawTextMeta.textContent = `${lines} ${lines === 1 ? 'line' : 'lines'}`;
+        editorMeta.textContent = `${lines} lines · ${chars} chars`;
+
+        if (split.hasFrontMatter) {
+          frontMatterStatus.textContent = 'Front matter detected';
+        } else {
+          frontMatterStatus.textContent = 'No front matter';
+        }
+
+        if (split.error) {
+          parseStatus.textContent = split.error;
+          previewMeta.textContent = 'Incomplete front matter';
+          yamlStatus.textContent = 'YAML pending';
+          yamlPreviewMeta.textContent = 'Fence issue';
+          yamlPreviewBody.innerHTML = `<div class="error-box" role="alert">${escapeHtml(split.error)}</div>`;
+          markdownPreviewMeta.textContent = 'Waiting';
+          markdownPreviewBody.innerHTML = '<div class="empty-state">Close the YAML front matter fence to render the Markdown body.</div>';
+          return;
+        }
+
+        parseStatus.textContent = split.hasFrontMatter ? 'Parsed source into YAML front matter and Markdown body.' : 'Rendering the full blob as Markdown because no front matter fence was detected.';
+        previewMeta.textContent = split.hasFrontMatter ? 'YAML + Markdown' : 'Markdown only';
+
+        renderYamlPreview(split.yaml);
+        renderMarkdownPreview(split.markdown);
+      }
+
+      async function copySourceToClipboard() {
+        try {
+          await navigator.clipboard.writeText(sourceInput.value);
+          parseStatus.textContent = 'Source copied to the clipboard.';
+        } catch (error) {
+          parseStatus.textContent = 'Clipboard copy failed in this browser context.';
+        }
+      }
+
+      async function pasteSourceFromClipboard() {
+        try {
+          const text = await navigator.clipboard.readText();
+          if (!text) {
+            parseStatus.textContent = 'Clipboard is empty.';
+            return;
+          }
+
+          sourceInput.value = text;
+          updatePreview();
+          sourceInput.focus();
+          parseStatus.textContent = 'Clipboard pasted into the source editor.';
+        } catch (error) {
+          parseStatus.textContent = 'Clipboard paste failed in this browser context.';
+        }
+      }
+
+      function buildPreviewClipboardPayload() {
+        const richWrapper = document.createElement('div');
+        richWrapper.innerHTML = `
+          <section>
+            <h2>YAML Front Matter</h2>
+            ${yamlPreviewBody.innerHTML}
+          </section>
+          <section>
+            <h2>Rendered Markdown</h2>
+            ${markdownPreviewBody.innerHTML}
+          </section>
+        `;
+
+        const plainText = [
+          'YAML Front Matter',
+          yamlPreviewBody.innerText.trim(),
+          '',
+          'Rendered Markdown',
+          markdownPreviewBody.innerText.trim()
+        ].join('\n').trim();
+
+        return {
+          html: richWrapper.innerHTML,
+          text: plainText
+        };
+      }
+
+      function copyComputedStyles(sourceNode, targetNode) {
+        if (!(sourceNode instanceof Element) || !(targetNode instanceof Element)) {
+          return;
+        }
+
+        const computed = window.getComputedStyle(sourceNode);
+        for (const propertyName of computed) {
+          targetNode.style.setProperty(
+            propertyName,
+            computed.getPropertyValue(propertyName),
+            computed.getPropertyPriority(propertyName)
+          );
+        }
+
+        targetNode.style.setProperty('box-sizing', 'border-box');
+
+        const sourceChildren = Array.from(sourceNode.children);
+        const targetChildren = Array.from(targetNode.children);
+        for (let index = 0; index < sourceChildren.length; index += 1) {
+          copyComputedStyles(sourceChildren[index], targetChildren[index]);
+        }
+      }
+
+      function createStyledClone(sourceNode) {
+        const clone = sourceNode.cloneNode(true);
+        copyComputedStyles(sourceNode, clone);
+        return clone;
+      }
+
+      function buildStyledPreviewClipboardPayload() {
+        const wrapper = document.createElement('div');
+        wrapper.style.fontFamily = window.getComputedStyle(markdownPreviewBody).fontFamily;
+        wrapper.style.color = window.getComputedStyle(markdownPreviewBody).color;
+        wrapper.style.background = 'transparent';
+
+        const yamlSection = document.createElement('section');
+        yamlSection.style.marginBottom = '1.5rem';
+        yamlSection.appendChild(createStyledClone(yamlPreviewTitle));
+        yamlSection.appendChild(createStyledClone(yamlPreviewBody));
+
+        const markdownSection = document.createElement('section');
+        markdownSection.appendChild(createStyledClone(markdownPreviewTitle));
+        markdownSection.appendChild(createStyledClone(markdownPreviewBody));
+
+        wrapper.appendChild(yamlSection);
+        wrapper.appendChild(markdownSection);
+
+        return {
+          html: wrapper.innerHTML,
+          text: [
+            'YAML Front Matter',
+            yamlPreviewBody.innerText.trim(),
+            '',
+            'Rendered Markdown',
+            markdownPreviewBody.innerText.trim()
+          ].join('\n').trim()
+        };
+      }
+
+      async function copyPreviewRichText() {
+        const payload = buildPreviewClipboardPayload();
+
+        try {
+          if (navigator.clipboard && window.ClipboardItem) {
+            const item = new window.ClipboardItem({
+              'text/html': new Blob([payload.html], { type: 'text/html' }),
+              'text/plain': new Blob([payload.text], { type: 'text/plain' })
+            });
+            await navigator.clipboard.write([item]);
+          } else if (navigator.clipboard) {
+            await navigator.clipboard.writeText(payload.text);
+          } else {
+            throw new Error('Clipboard API unavailable');
+          }
+
+          parseStatus.textContent = 'Preview copied as rich text.';
+        } catch (error) {
+          parseStatus.textContent = 'Preview rich-text copy failed in this browser context.';
+        }
+      }
+
+      async function copyPreviewHtml() {
+        const payload = buildPreviewClipboardPayload();
+
+        try {
+          await navigator.clipboard.writeText(payload.html);
+          parseStatus.textContent = 'Preview HTML copied to the clipboard.';
+        } catch (error) {
+          parseStatus.textContent = 'Preview HTML copy failed in this browser context.';
+        }
+      }
+
+      async function copyPreviewStyledRichText() {
+        const payload = buildStyledPreviewClipboardPayload();
+
+        try {
+          if (navigator.clipboard && window.ClipboardItem) {
+            const item = new window.ClipboardItem({
+              'text/html': new Blob([payload.html], { type: 'text/html' }),
+              'text/plain': new Blob([payload.text], { type: 'text/plain' })
+            });
+            await navigator.clipboard.write([item]);
+          } else if (navigator.clipboard) {
+            await navigator.clipboard.writeText(payload.text);
+          } else {
+            throw new Error('Clipboard API unavailable');
+          }
+
+          parseStatus.textContent = 'Preview copied as styled rich text.';
+        } catch (error) {
+          parseStatus.textContent = 'Styled rich-text copy failed in this browser context.';
+        }
+      }
+
+      sourceInput.addEventListener('input', updatePreview);
+
+      sourceInput.addEventListener('keydown', (event) => {
+        if (event.key === 'Tab') {
+          event.preventDefault();
+          const start = sourceInput.selectionStart;
+          const end = sourceInput.selectionEnd;
+          const nextValue = `${sourceInput.value.slice(0, start)}  ${sourceInput.value.slice(end)}`;
+          sourceInput.value = nextValue;
+          sourceInput.selectionStart = start + 2;
+          sourceInput.selectionEnd = start + 2;
+          updatePreview();
+          return;
+        }
+
+        if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 's') {
+          event.preventDefault();
+          copySourceToClipboard();
+        }
+      });
+
+      sampleBtn.addEventListener('click', () => {
+        sourceInput.value = SAMPLE_DOCUMENT;
+        updatePreview();
+        sourceInput.focus();
+      });
+
+      sourceCopyBtn.addEventListener('click', () => {
+        copySourceToClipboard();
+      });
+
+      sourcePasteBtn.addEventListener('click', () => {
+        pasteSourceFromClipboard();
+      });
+
+      sourceClearBtn.addEventListener('click', () => {
+        sourceInput.value = '';
+        updatePreview();
+        sourceInput.focus();
+      });
+
+      previewCopyBtn.addEventListener('click', () => {
+        copyPreviewRichText();
+      });
+
+      previewCopyStyledBtn.addEventListener('click', () => {
+        copyPreviewStyledRichText();
+      });
+
+      previewCopyHtmlBtn.addEventListener('click', () => {
+        copyPreviewHtml();
+      });
+
+      yamlToggleBtn.addEventListener('click', () => {
+        toggleYamlExpanded();
+      });
+
+      loadInitialDocument();
+      setYamlExpanded(loadStoredBoolean(YAML_TOGGLE_STORAGE_KEY, YAML_TOGGLE_COOKIE_KEY, false));
+      updatePreview();
+    })();
+  </script>
+</body>
+</html>
