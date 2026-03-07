@@ -30,7 +30,10 @@ no_toc: true
             font-weight: 500;
             padding: 0.45rem 0.7rem;
         }
-        .tools-index .tool-meta-row { margin-top: auto; }
+        .tools-index .tool-meta-row {
+            margin-top: auto;
+            padding-top: 0.75rem;
+        }
         .tools-index .tool-meta-badge {
             background: rgba(var(--bs-primary-rgb), 0.12);
             border: 1px solid rgba(var(--bs-primary-rgb), 0.22);
@@ -124,7 +127,7 @@ no_toc: true
                         {% endif %}
                     </a>
 
-                    <div class="d-flex flex-wrap gap-1 mt-3 align-items-center tool-meta-row">
+                    <div class="d-flex flex-wrap gap-1 align-items-center tool-meta-row">
                         {% if tool.status %}
                         <span class="badge rounded-pill tool-meta-badge">{{ tool.status | upcase }}</span>
                         {% endif %}
