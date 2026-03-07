@@ -26,12 +26,12 @@ let worldLandmarkPool = [...LANDMARKS];
 
 function landAssetPath(imageName) {
   if (!imageName) return '';
-  return `/tools/osr-support-files/assets/land/${encodeURIComponent(imageName)}`;
+  return `/tools/osr-tools/osr-support-files/assets/land/${encodeURIComponent(imageName)}`;
 }
 
 function legacyLandPath(imageName) {
   if (!imageName) return '';
-  return `/tools/osr-support-files/assets/land/${encodeURIComponent(imageName)}`;
+  return `/tools/osr-tools/osr-support-files/assets/land/${encodeURIComponent(imageName)}`;
 }
 
 function terrainBaseAsset(terrainKey) {

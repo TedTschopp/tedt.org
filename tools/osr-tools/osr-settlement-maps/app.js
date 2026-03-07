@@ -66,7 +66,7 @@ function pick(rng, list) {
 
 function mapAssetPath(imageName) {
   if (!imageName) return '';
-  return `/tools/osr-support-files/assets/maps/${encodeURIComponent(imageName)}`;
+  return `/tools/osr-tools/osr-support-files/assets/maps/${encodeURIComponent(imageName)}`;
 }
 
 function normalizeText(value) {

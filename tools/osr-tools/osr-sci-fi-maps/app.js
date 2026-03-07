@@ -225,7 +225,7 @@ function renderResult(result) {
   if (window.WizardawnMap?.createGeomorphMapCard) {
     const mapCard = window.WizardawnMap.createGeomorphMapCard(buildMapPreview(result), {
       title: 'Generated Map',
-      assetBase: '/tools/osr-support-files/assets/maps/',
+      assetBase: '/tools/osr-tools/osr-support-files/assets/maps/',
       wrapClass: `wiz-map-grid ${result.config.colored === '0' ? 'palette-blue' : 'palette-bw'}`
     });
     output.appendChild(mapCard);

@@ -1,6 +1,6 @@
 # Converted Tools Workspace
 
-Start here: [../START-HERE.md](../START-HERE.md)
+Start here: [../../README.md](../../README.md)
 
 This folder contains standalone SPA scaffolds for each Wizardawn tool conversion.
 

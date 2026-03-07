@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Basic Spell Books | Wizardawn Converted</title>
+  <title>Spell Books | Wizardawn Converted</title>
   <link rel="stylesheet" href="/tools/lib/tedt-org-tools.css">
   <link href="./osr-support-files/shared/css/global.css" rel="stylesheet">
-  <link href="./osr-basic-spell-books/styles.css" rel="stylesheet">
+  <link href="./osr-spell-books/styles.css" rel="stylesheet">
 </head>
 <body>
   <main class="wiz-tool-shell">
     <header class="wiz-tool-header">
-      <h1 class="h3 mb-1">Basic Spell Books</h1>
-      <p class="text-muted mb-0">Build custom Labyrinth Lord spell listings with flexible sorting, filtering, and optional spell-reference details.</p>
+      <h1 class="h3 mb-1">Spell Books</h1>
+      <p class="text-muted mb-0">Build custom OSRIC / Advanced Edition fantasy spell listings with sorting, filters, and detailed spell cards.</p>
     </header>
 
     <section class="card mb-3">
@@ -43,16 +43,31 @@
               <option value="" selected></option>
               <option value="All">All</option>
               <option value="Cleric">Cleric</option>
-              <option value="Elf">Elf</option>
+              <option value="Druid">Druid</option>
+              <option value="Illusionist">Illusionist</option>
               <option value="Magic-User">Magic-User</option>
+              <option value="Abjuration">Abjuration</option>
+              <option value="Alteration">Alteration</option>
+              <option value="Charm">Charm</option>
+              <option value="Conjuration">Conjuration</option>
+              <option value="Divination">Divination</option>
+              <option value="Enchantment">Enchantment</option>
+              <option value="Evocation">Evocation</option>
+              <option value="Illusion">Illusion</option>
+              <option value="Invocation">Invocation</option>
+              <option value="Necromancy">Necromancy</option>
+              <option value="Phantasm">Phantasm</option>
+              <option value="Possession">Possession</option>
+              <option value="Summoning">Summoning</option>
+              <option value="Transmutation">Transmutation</option>
             </select>
           </div>
           <div class="col-md-2">
             <label for="mins" class="form-label">Level Op</label>
             <select id="mins" name="mins" class="form-select">
               <option value="0" selected>=</option>
-              <option value="1"><=</option>
-              <option value="2">>=</option>
+              <option value="1">&lt;=</option>
+              <option value="2">&gt;=</option>
             </select>
           </div>
           <div class="col-md-2">
@@ -60,7 +75,7 @@
             <input id="level" name="level" type="number" min="1" max="9" class="form-control" placeholder="any level">
           </div>
 
-          <div class="col-md-6">
+          <div class="col-md-5">
             <label for="seed" class="form-label">Seed</label>
             <input id="seed" name="seed" type="text" class="form-control" placeholder="optional seed">
           </div>
@@ -68,13 +83,16 @@
           <div class="col-12">
             <label class="form-label">Specific Spell Selection (used when Type is blank)</label>
             <div class="row g-2" id="spell-lists">
-              <div class="col-md-4">
+              <div class="col-md-3">
                 <div class="spell-list card"><div class="card-header py-2">Cleric Spells</div><div id="cleric-list" class="card-body spell-scroll"></div></div>
               </div>
-              <div class="col-md-4">
-                <div class="spell-list card"><div class="card-header py-2">Elf Spells</div><div id="elf-list" class="card-body spell-scroll"></div></div>
+              <div class="col-md-3">
+                <div class="spell-list card"><div class="card-header py-2">Druid Spells</div><div id="druid-list" class="card-body spell-scroll"></div></div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-3">
+                <div class="spell-list card"><div class="card-header py-2">Illusionist Spells</div><div id="illusionist-list" class="card-body spell-scroll"></div></div>
+              </div>
+              <div class="col-md-3">
                 <div class="spell-list card"><div class="card-header py-2">Magic-User Spells</div><div id="mage-list" class="card-body spell-scroll"></div></div>
               </div>
             </div>
@@ -97,6 +115,6 @@
 
   <script src="./osr-support-files/shared/js/core.js"></script>
   <script src="./osr-support-files/shared/js/data.js"></script>
-  <script src="./osr-basic-spell-books/app.js"></script>
+  <script src="./osr-spell-books/app.js"></script>
 </body>
 </html>

@@ -372,7 +372,7 @@ function renderResult(result) {
       ? window.WizardawnMap.createHexMapCard(result.payload.mapPreview, {
           title: 'Hex Map',
           cardClass: 'card mb-3 hexcrawl-map-card',
-          assetBase: '/tools/osr-support-files/assets/land/',
+          assetBase: '/tools/osr-tools/osr-support-files/assets/land/',
           colorMap: result.config.colorMap,
           expandCardWithMap: true
         })

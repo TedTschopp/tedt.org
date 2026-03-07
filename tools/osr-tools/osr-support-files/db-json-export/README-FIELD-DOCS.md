@@ -1,6 +1,6 @@
 # JSON Field Documentation
 
-Start here: [../START-HERE.md](../START-HERE.md)
+Start here: [../../README.md](../../README.md)
 
 These sidecar documents describe exported JSON tables and fields used by the PHP tools.
 

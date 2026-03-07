@@ -315,7 +315,7 @@ function renderResult(result) {
   if (result.payload.mapPreview && window.WizardawnMap) {
     const mapCard = window.WizardawnMap.createGeomorphMapCard(result.payload.mapPreview, {
       title: 'Generated Map',
-      assetBase: '/tools/osr-support-files/assets/maps/'
+      assetBase: '/tools/osr-tools/osr-support-files/assets/maps/'
     });
     output.appendChild(mapCard);
   }
