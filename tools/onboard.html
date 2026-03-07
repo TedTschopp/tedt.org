@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Party Onboarding</title>
+	<meta name="description" content="A themed onboarding screen for a social network built for Dungeons and Dragons players.">
+	<link rel="icon" href="../favicon.ico" sizes="any">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="/tools/lib/tedt-org-tools.css">
+	<style>
+		:root {
+			--bg-night: #0d1311;
+			--bg-panel: rgba(17, 25, 22, 0.82);
+			--bg-panel-strong: rgba(20, 29, 25, 0.94);
+			--bg-card: rgba(244, 232, 201, 0.08);
+			--bg-card-active: rgba(198, 163, 91, 0.18);
+			--line-soft: rgba(238, 219, 171, 0.14);
+			--line-strong: rgba(219, 186, 116, 0.42);
+			--text-main: #f5ecd2;
+			--text-soft: #d8ccb0;
+			--text-muted: #ac9f82;
+			--accent: #d6b46a;
+			--accent-strong: #f0cf7f;
+			--accent-forest: #5d8a67;
+			--danger-shadow: rgba(214, 180, 106, 0.28);
+			--shadow-deep: 0 24px 80px rgba(0, 0, 0, 0.38);
+			--radius-xl: 28px;
+			--radius-lg: 20px;
+			--radius-md: 14px;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			min-height: 100%;
+		}
+
+		body {
+			margin: 0;
+			color: var(--text-main);
+			font-family: "Instrument Sans", sans-serif;
+			background:
+				radial-gradient(circle at top left, rgba(93, 138, 103, 0.2), transparent 32%),
+				radial-gradient(circle at top right, rgba(214, 180, 106, 0.16), transparent 28%),
+				linear-gradient(180deg, #17211c 0%, var(--bg-night) 52%, #08100d 100%);
+			overflow-x: hidden;
+		}
+
+		body::before,
+		body::after {
+			content: "";
+			position: fixed;
+			inset: 0;
+			pointer-events: none;
+			z-index: 0;
+		}
+
+		body::before {
+			background:
+				linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+				linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+			background-size: 38px 38px;
+			-webkit-mask-image: radial-gradient(circle at center, black 52%, transparent 88%);
+			mask-image: radial-gradient(circle at center, black 52%, transparent 88%);
+			opacity: 0.32;
+		}
+
+		body::after {
+			background: radial-gradient(circle at center, transparent 55%, rgba(0, 0, 0, 0.48) 100%);
+		}
+
+		.screen {
+			position: relative;
+			z-index: 1;
+			min-height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 32px;
+		}
+
+		.shell {
+			width: min(1160px, 100%);
+			display: grid;
+			grid-template-columns: 0.94fr 1.06fr;
+			border: 1px solid var(--line-soft);
+			border-radius: var(--radius-xl);
+			overflow: hidden;
+			background: linear-gradient(180deg, rgba(13, 19, 17, 0.88), rgba(8, 12, 10, 0.94));
+			box-shadow: var(--shadow-deep);
+			-webkit-backdrop-filter: blur(18px);
+			backdrop-filter: blur(18px);
+		}
+
+		.intro,
+		.panel {
+			padding: 34px;
+		}
+
+		.intro {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			gap: 28px;
+			background:
+				linear-gradient(160deg, rgba(214, 180, 106, 0.14), transparent 30%),
+				linear-gradient(180deg, rgba(14, 21, 18, 0.78), rgba(8, 12, 10, 0.9));
+			border-right: 1px solid var(--line-soft);
+		}
+
+		.intro::after {
+			content: "";
+			position: absolute;
+			right: 0;
+			top: 10%;
+			bottom: 10%;
+			width: 1px;
+			background: linear-gradient(180deg, transparent, rgba(214, 180, 106, 0.35), transparent);
+		}
+
+		.eyebrow,
+		.badge-step,
+		.section-label {
+			letter-spacing: 0.16em;
+			text-transform: uppercase;
+			font-size: 0.72rem;
+			color: var(--text-muted);
+		}
+
+		.badge-step {
+			display: inline-flex;
+			align-items: center;
+			gap: 10px;
+			padding: 8px 12px;
+			border: 1px solid var(--line-soft);
+			border-radius: 999px;
+			background: rgba(244, 232, 201, 0.04);
+			width: fit-content;
+		}
+
+		.badge-step::before {
+			content: "";
+			width: 8px;
+			height: 8px;
+			border-radius: 50%;
+			background: radial-gradient(circle, var(--accent-strong), var(--accent));
+			box-shadow: 0 0 18px var(--danger-shadow);
+		}
+
+		h1,
+		h2,
+		.style-title {
+			font-family: "Cinzel", serif;
+		}
+
+		h1 {
+			margin: 12px 0 14px;
+			font-size: clamp(2.4rem, 4vw, 4rem);
+			line-height: 0.95;
+			letter-spacing: 0.02em;
+		}
+
+		.lede {
+			max-width: 28rem;
+			font-size: 1.02rem;
+			line-height: 1.7;
+			color: var(--text-soft);
+			margin: 0;
+		}
+
+		.runes {
+			display: inline-flex;
+			gap: 10px;
+			align-items: center;
+			color: var(--accent);
+			font-size: 1rem;
+			opacity: 0.92;
+		}
+
+		.runes span {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 32px;
+			height: 32px;
+			border-radius: 50%;
+			border: 1px solid rgba(214, 180, 106, 0.28);
+			background: rgba(244, 232, 201, 0.03);
+		}
+
+		.guide-card {
+			display: grid;
+			gap: 18px;
+			padding: 22px;
+			border-radius: var(--radius-lg);
+			border: 1px solid var(--line-soft);
+			background: linear-gradient(180deg, rgba(244, 232, 201, 0.05), rgba(244, 232, 201, 0.02));
+		}
+
+		.checklist {
+			display: grid;
+			gap: 12px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.checklist li {
+			display: grid;
+			grid-template-columns: 32px 1fr;
+			gap: 12px;
+			align-items: start;
+			color: var(--text-soft);
+		}
+
+		.checklist strong {
+			display: block;
+			color: var(--text-main);
+			margin-bottom: 3px;
+			font-size: 0.96rem;
+		}
+
+		.check-icon {
+			width: 32px;
+			height: 32px;
+			border-radius: 10px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			color: var(--accent-strong);
+			background: rgba(214, 180, 106, 0.1);
+			border: 1px solid rgba(214, 180, 106, 0.18);
+			font-size: 0.92rem;
+			margin-top: 2px;
+		}
+
+		.steps {
+			display: flex;
+			gap: 12px;
+			flex-wrap: wrap;
+		}
+
+		.step-pill {
+			padding: 10px 14px;
+			border-radius: 999px;
+			border: 1px solid var(--line-soft);
+			background: rgba(244, 232, 201, 0.035);
+			color: var(--text-soft);
+			font-size: 0.88rem;
+		}
+
+		.step-pill.current {
+			border-color: rgba(214, 180, 106, 0.36);
+			color: var(--text-main);
+			background: rgba(214, 180, 106, 0.12);
+		}
+
+		.panel {
+			background:
+				radial-gradient(circle at top, rgba(255, 244, 214, 0.04), transparent 34%),
+				linear-gradient(180deg, rgba(20, 29, 25, 0.95), rgba(14, 20, 18, 0.98));
+		}
+
+		.panel-head {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			gap: 16px;
+			margin-bottom: 22px;
+		}
+
+		.panel-head h2 {
+			font-size: 1.75rem;
+			margin: 6px 0 8px;
+		}
+
+		.panel-head p {
+			margin: 0;
+			color: var(--text-soft);
+			max-width: 32rem;
+			line-height: 1.65;
+		}
+
+		.meter {
+			min-width: 116px;
+			padding: 14px 16px;
+			border-radius: 18px;
+			border: 1px solid var(--line-soft);
+			background: rgba(244, 232, 201, 0.035);
+			text-align: right;
+		}
+
+		.meter strong {
+			display: block;
+			font-size: 1.5rem;
+			color: var(--accent-strong);
+			line-height: 1;
+		}
+
+		.meter span {
+			color: var(--text-muted);
+			font-size: 0.82rem;
+		}
+
+		form {
+			display: grid;
+			gap: 24px;
+		}
+
+		.section {
+			display: grid;
+			gap: 14px;
+		}
+
+		.section-header {
+			display: flex;
+			align-items: end;
+			justify-content: space-between;
+			gap: 16px;
+		}
+
+		.section-header p,
+		.profile-note {
+			margin: 6px 0 0;
+			color: var(--text-muted);
+			font-size: 0.92rem;
+			line-height: 1.55;
+		}
+
+		.style-grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 14px;
+		}
+
+		.style-option input {
+			position: absolute;
+			opacity: 0;
+			pointer-events: none;
+		}
+
+		.style-card {
+			position: relative;
+			display: grid;
+			gap: 10px;
+			min-height: 168px;
+			padding: 18px;
+			border-radius: 18px;
+			border: 1px solid var(--line-soft);
+			background: var(--bg-card);
+			cursor: pointer;
+			transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+		}
+
+		.style-card:hover,
+		.style-option input:focus-visible + .style-card {
+			transform: translateY(-2px);
+			border-color: rgba(214, 180, 106, 0.34);
+			box-shadow: 0 12px 24px rgba(0, 0, 0, 0.16);
+		}
+
+		.style-option input:checked + .style-card {
+			background: var(--bg-card-active);
+			border-color: var(--line-strong);
+			box-shadow: 0 0 0 1px rgba(214, 180, 106, 0.12), 0 18px 34px rgba(0, 0, 0, 0.24);
+		}
+
+		.style-option input:checked + .style-card .style-mark {
+			background: var(--accent);
+			color: #1a1710;
+			border-color: rgba(255, 255, 255, 0.14);
+		}
+
+		.style-topline {
+			display: flex;
+			justify-content: space-between;
+			gap: 10px;
+			align-items: start;
+		}
+
+		.style-mark {
+			width: 34px;
+			height: 34px;
+			border-radius: 12px;
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			background: rgba(244, 232, 201, 0.06);
+			border: 1px solid var(--line-soft);
+			color: var(--accent-strong);
+			font-size: 1rem;
+			flex: 0 0 auto;
+		}
+
+		.style-title {
+			font-size: 1.12rem;
+			margin: 0;
+		}
+
+		.style-card p {
+			margin: 0;
+			color: var(--text-soft);
+			line-height: 1.55;
+			font-size: 0.94rem;
+		}
+
+		.style-meta {
+			margin-top: auto;
+			font-size: 0.8rem;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+			color: var(--text-muted);
+		}
+
+		.profile-grid {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 14px;
+		}
+
+		.field,
+		.field-wide {
+			display: grid;
+			gap: 8px;
+		}
+
+		.field-wide {
+			grid-column: 1 / -1;
+		}
+
+		label {
+			font-size: 0.92rem;
+			color: var(--text-soft);
+			font-weight: 600;
+		}
+
+		.hint {
+			color: var(--text-muted);
+			font-weight: 500;
+			font-size: 0.8rem;
+		}
+
+		input,
+		textarea,
+		select {
+			width: 100%;
+			border: 1px solid rgba(232, 217, 183, 0.14);
+			border-radius: 14px;
+			background: rgba(250, 242, 223, 0.045);
+			color: var(--text-main);
+			padding: 14px 15px;
+			font: inherit;
+			transition: border-color 160ms ease, box-shadow 160ms ease, background 160ms ease;
+		}
+
+		textarea {
+			min-height: 112px;
+			resize: vertical;
+		}
+
+		input::placeholder,
+		textarea::placeholder {
+			color: #8f8369;
+		}
+
+		input:focus,
+		textarea:focus,
+		select:focus {
+			outline: none;
+			border-color: rgba(214, 180, 106, 0.46);
+			box-shadow: 0 0 0 4px rgba(214, 180, 106, 0.12);
+			background: rgba(250, 242, 223, 0.07);
+		}
+
+		.nudges {
+			display: grid;
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+			gap: 12px;
+		}
+
+		.nudge {
+			padding: 14px 15px;
+			border-radius: 16px;
+			border: 1px solid var(--line-soft);
+			background: rgba(244, 232, 201, 0.035);
+			color: var(--text-soft);
+			font-size: 0.9rem;
+			line-height: 1.5;
+		}
+
+		.nudge strong {
+			display: block;
+			color: var(--text-main);
+			margin-bottom: 4px;
+		}
+
+		.actions {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 16px;
+			padding-top: 8px;
+			border-top: 1px solid var(--line-soft);
+		}
+
+		.microcopy {
+			color: var(--text-muted);
+			font-size: 0.88rem;
+			max-width: 28rem;
+			line-height: 1.55;
+			margin: 0;
+		}
+
+		.button-row {
+			display: flex;
+			gap: 12px;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+		}
+
+		.btn-ghost,
+		.btn-primary-quest {
+			appearance: none;
+			border: 0;
+			border-radius: 999px;
+			font: inherit;
+			font-weight: 700;
+			padding: 13px 20px;
+			transition: transform 160ms ease, box-shadow 160ms ease, background 160ms ease, color 160ms ease;
+		}
+
+		.btn-ghost {
+			color: var(--text-soft);
+			background: rgba(244, 232, 201, 0.04);
+			border: 1px solid var(--line-soft);
+		}
+
+		.btn-primary-quest {
+			color: #1a1710;
+			background: linear-gradient(180deg, #f0cf7f, #d6b46a);
+			box-shadow: 0 14px 30px rgba(214, 180, 106, 0.22);
+		}
+
+		.btn-ghost:hover,
+		.btn-primary-quest:hover {
+			transform: translateY(-1px);
+		}
+
+		.btn-primary-quest:hover {
+			box-shadow: 0 18px 38px rgba(214, 180, 106, 0.28);
+		}
+
+		@media (max-width: 980px) {
+			.shell {
+				grid-template-columns: 1fr;
+			}
+
+			.intro {
+				border-right: 0;
+				border-bottom: 1px solid var(--line-soft);
+			}
+
+			.intro::after {
+				display: none;
+			}
+		}
+
+		@media (max-width: 720px) {
+			.screen {
+				padding: 16px;
+			}
+
+			.intro,
+			.panel {
+				padding: 22px;
+			}
+
+			.panel-head,
+			.actions,
+			.section-header {
+				grid-template-columns: 1fr;
+				display: grid;
+			}
+
+			.style-grid,
+			.profile-grid,
+			.nudges {
+				grid-template-columns: 1fr;
+			}
+
+			.button-row {
+				width: 100%;
+				justify-content: stretch;
+			}
+
+			.button-row button {
+				flex: 1 1 auto;
+			}
+
+			.meter {
+				text-align: left;
+				min-width: 0;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="screen">
+		<section class="shell" aria-label="Player onboarding">
+			<aside class="intro">
+				<div>
+					<div class="badge-step">New adventurer onboarding</div>
+					<div class="runes" aria-hidden="true">
+						<span>⚔</span>
+						<span>✦</span>
+						<span>🛡</span>
+					</div>
+					<p class="eyebrow">Welcome to the fellowship board</p>
+					<h1>Find your party before the first roll.</h1>
+					<p class="lede">
+						Set the tone for your profile so the right tables, campaigns, and fellow adventurers can find you.
+						Pick how you like to play, add a few quick details, and you are ready to enter the tavern.
+					</p>
+				</div>
+
+				<div class="guide-card">
+					<p class="section-label">What this does</p>
+					<ul class="checklist">
+						<li>
+							<span class="check-icon">1</span>
+							<div>
+								<strong>Match your table energy</strong>
+								Your play style helps us surface groups that lean story-first, tactical, casual, or exploratory.
+							</div>
+						</li>
+						<li>
+							<span class="check-icon">2</span>
+							<div>
+								<strong>Make your profile recognizable</strong>
+								Even a short bio and favorite class gives other players an easy opening to connect.
+							</div>
+						</li>
+						<li>
+							<span class="check-icon">3</span>
+							<div>
+								<strong>Keep it quick</strong>
+								This setup takes about a minute, and you can refine it later once you are settled in.
+							</div>
+						</li>
+					</ul>
+				</div>
+
+				<div class="steps" aria-label="Onboarding steps">
+					<span class="step-pill current">Choose style</span>
+					<span class="step-pill">Add profile</span>
+					<span class="step-pill">Meet players</span>
+				</div>
+			</aside>
+
+			<section class="panel">
+				<div class="panel-head">
+					<div>
+						<p class="eyebrow">Step 1 of 3</p>
+						<h2>Build your adventurer card</h2>
+						<p>
+							Start with the way you like to play. Then fill in a few details so other players know who is joining the campaign.
+						</p>
+					</div>
+					<div class="meter" aria-label="Completion progress">
+						<strong>60%</strong>
+						<span>profile readiness</span>
+					</div>
+				</div>
+
+				<form>
+					<section class="section" aria-labelledby="play-style-heading">
+						<div class="section-header">
+							<div>
+								<p class="section-label">Preferred play style</p>
+								<p id="play-style-heading" class="profile-note">Choose the style that feels most like you at the table.</p>
+							</div>
+						</div>
+
+						<div class="style-grid">
+							<label class="style-option">
+								<input type="radio" name="play-style" value="story-first" checked>
+								<span class="style-card">
+									<span class="style-topline">
+										<span>
+											<span class="style-title">Story-First Roleplayer</span>
+										</span>
+										<span class="style-mark" aria-hidden="true">🎭</span>
+									</span>
+									<p>You care most about character arcs, table chemistry, and memorable scenes.</p>
+									<span class="style-meta">Narrative, improv, character-driven</span>
+								</span>
+							</label>
+
+							<label class="style-option">
+								<input type="radio" name="play-style" value="tactical">
+								<span class="style-card">
+									<span class="style-topline">
+										<span>
+											<span class="style-title">Tactical Strategist</span>
+										</span>
+										<span class="style-mark" aria-hidden="true">♞</span>
+									</span>
+									<p>You enjoy clever combat, strong party roles, and squeezing value out of every turn.</p>
+									<span class="style-meta">Combat, builds, encounter mastery</span>
+								</span>
+							</label>
+
+							<label class="style-option">
+								<input type="radio" name="play-style" value="explorer">
+								<span class="style-card">
+									<span class="style-topline">
+										<span>
+											<span class="style-title">Explorer and Lore Seeker</span>
+										</span>
+										<span class="style-mark" aria-hidden="true">🗺</span>
+									</span>
+									<p>You love worldbuilding, strange ruins, rumors, maps, and discovering what hides off the path.</p>
+									<span class="style-meta">Discovery, setting depth, wonder</span>
+								</span>
+							</label>
+
+							<label class="style-option">
+								<input type="radio" name="play-style" value="casual">
+								<span class="style-card">
+									<span class="style-topline">
+										<span>
+											<span class="style-title">Casual Tavern Regular</span>
+										</span>
+										<span class="style-mark" aria-hidden="true">🍻</span>
+									</span>
+									<p>You want a relaxed group, good vibes, and a consistent game night more than any one play doctrine.</p>
+									<span class="style-meta">Friendly, flexible, low pressure</span>
+								</span>
+							</label>
+						</div>
+					</section>
+
+					<section class="section" aria-labelledby="profile-heading">
+						<div class="section-header">
+							<div>
+								<p class="section-label">Brief profile</p>
+								<p id="profile-heading" class="profile-note">A few details go a long way. Players are more likely to message profiles that feel human.</p>
+							</div>
+						</div>
+
+						<div class="profile-grid">
+							<div class="field">
+								<label for="display-name">Display name</label>
+								<input id="display-name" name="display-name" type="text" placeholder="Aria of Greyharbor">
+							</div>
+
+							<div class="field">
+								<label for="pronouns">Pronouns <span class="hint">optional</span></label>
+								<input id="pronouns" name="pronouns" type="text" placeholder="she/her, they/them">
+							</div>
+
+							<div class="field">
+								<label for="favorite-class">Favorite class</label>
+								<select id="favorite-class" name="favorite-class">
+									<option selected>Choose one</option>
+									<option>Barbarian</option>
+									<option>Bard</option>
+									<option>Cleric</option>
+									<option>Druid</option>
+									<option>Fighter</option>
+									<option>Monk</option>
+									<option>Paladin</option>
+									<option>Ranger</option>
+									<option>Rogue</option>
+									<option>Sorcerer</option>
+									<option>Warlock</option>
+									<option>Wizard</option>
+								</select>
+							</div>
+
+							<div class="field">
+								<label for="campaign-vibe">Preferred campaign vibe</label>
+								<input id="campaign-vibe" name="campaign-vibe" type="text" placeholder="Gothic mystery, cozy fantasy, grim survival">
+							</div>
+
+							<div class="field-wide">
+								<label for="bio">One-paragraph intro</label>
+								<textarea id="bio" name="bio" placeholder="I love collaborative storytelling, suspicious taverns, and playing support characters who make the rest of the party shine."></textarea>
+							</div>
+						</div>
+
+						<div class="nudges" aria-label="Profile completion tips">
+							<div class="nudge">
+								<strong>Good profiles get more invites</strong>
+								Mention the tone you enjoy and what kind of group feels fun to you.
+							</div>
+							<div class="nudge">
+								<strong>Keep it easy to scan</strong>
+								One or two concrete details is enough. Think useful, not exhaustive.
+							</div>
+						</div>
+					</section>
+
+					<div class="actions">
+						<p class="microcopy">
+							You can change your play style and profile details later. The goal here is a strong first impression, not a perfect character sheet.
+						</p>
+
+						<div class="button-row">
+							<button type="button" class="btn-ghost">Skip for now</button>
+							<button type="submit" class="btn-primary-quest">Continue to the tavern</button>
+						</div>
+					</div>
+				</form>
+			</section>
+		</section>
+	</main>
+</body>
+</html>
