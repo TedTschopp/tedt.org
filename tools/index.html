@@ -45,6 +45,18 @@ no_toc: true
             font-weight: 500;
             padding: 0.45rem 0.7rem;
         }
+        .tools-index .tools-page-tag:hover,
+        .tools-index .tools-page-tag:focus-visible {
+            background: rgba(var(--bs-body-color-rgb), 0.06);
+            border-color: rgba(var(--bs-primary-rgb), 0.35);
+            color: var(--bs-body-color);
+        }
+        .tools-index .tools-page-tag.is-active {
+            background: rgba(var(--bs-primary-rgb), 0.12);
+            border-color: rgba(var(--bs-primary-rgb), 0.45);
+            color: var(--bs-primary-text-emphasis, var(--bs-primary));
+        }
+        .tools-index .tools-reset-filter[hidden] { display: none !important; }
         .tools-index .tool-meta-row {
             margin-top: auto;
             padding-top: 0.75rem;
@@ -72,10 +84,20 @@ no_toc: true
 
     {% if all_tags.size > 0 %}
     <section class="mb-4" aria-label="Tool tags">
-        <h2 class="h4 mb-3">Tags</h2>
-        <div class="d-flex flex-wrap gap-2">
+        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-3">
+            <h2 class="h4 mb-0">Tags</h2>
+            <button type="button" class="btn btn-sm btn-outline-secondary tools-reset-filter" id="tools-reset-filter" hidden>
+                Reset filter
+            </button>
+        </div>
+        <div class="d-flex flex-wrap gap-2" id="tools-tag-filters" role="group" aria-label="Filter tools by tag">
             {% for tag in all_tags %}
-            <span class="badge rounded-pill tools-page-tag">{{ tag }}</span>
+            <button
+                type="button"
+                class="badge rounded-pill tools-page-tag"
+                data-tool-filter="{{ tag | slugify }}"
+                data-tool-filter-label="{{ tag | escape }}"
+                aria-pressed="false">{{ tag }}</button>
             {% endfor %}
         </div>
     </section>
@@ -100,6 +122,9 @@ no_toc: true
     </section>
 
     <div class="visually-hidden" aria-live="polite" id="tool-sort-status"></div>
+    <div class="alert alert-warning mt-4" id="tools-no-results" hidden role="status">
+        No tools match the selected tag filter.
+    </div>
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="tools-card-grid">
         {% for tool in tools %}
@@ -115,7 +140,8 @@ no_toc: true
         <div class="col tool-card-column"
              data-title="{{ tool.title | downcase | escape }}"
              data-updated="{{ tool.last_modified | default: tool.date | date: '%s' }}"
-             data-published="{{ tool.date | date: '%s' }}">
+               data-published="{{ tool.date | date: '%s' }}"
+               data-tags="{% if tool.tags %}{% for tag in tool.tags %}{{ tag | slugify }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endif %}">
             <div class="card h-100">
                 <a href="{{ tool.url | relative_url }}" class="tool-thumb-wrap card-img-top d-block">
                     {% if hero_image != "" %}
@@ -187,8 +213,13 @@ no_toc: true
             const sortSelect = document.getElementById('tool-sort-select');
             const sortStatus = document.getElementById('tool-sort-status');
             const toolsGrid = document.getElementById('tools-card-grid');
+            const filterButtons = Array.from(document.querySelectorAll('[data-tool-filter]'));
+            const resetFilterButton = document.getElementById('tools-reset-filter');
+            const noResultsMessage = document.getElementById('tools-no-results');
             const sortStorageKey = 'tedt-tools-sort';
+            const filterStorageKey = 'tedt-tools-filter';
             const validSortModes = ['updated', 'published', 'alphabetical'];
+            let currentFilter = null;
 
             if (!sortSelect || !sortStatus || !toolsGrid) {
                 return;
@@ -198,6 +229,17 @@ no_toc: true
 
             function normalizeSortMode(sortMode) {
                 return validSortModes.includes(sortMode) ? sortMode : 'updated';
+            }
+
+            function normalizeFilter(filterValue) {
+                if (!filterValue) {
+                    return null;
+                }
+
+                const normalizedValue = String(filterValue).trim().toLowerCase();
+                return filterButtons.some(function(button) {
+                    return button.dataset.toolFilter === normalizedValue;
+                }) ? normalizedValue : null;
             }
 
             function loadInitialSortMode() {
@@ -212,6 +254,21 @@ no_toc: true
                     return normalizeSortMode(window.localStorage.getItem(sortStorageKey));
                 } catch (error) {
                     return 'updated';
+                }
+            }
+
+            function loadInitialFilter() {
+                const url = new URL(window.location.href);
+                const urlFilter = normalizeFilter(url.searchParams.get('tag'));
+
+                if (url.searchParams.has('tag')) {
+                    return urlFilter;
+                }
+
+                try {
+                    return normalizeFilter(window.localStorage.getItem(filterStorageKey));
+                } catch (error) {
+                    return null;
                 }
             }
 
@@ -234,12 +291,58 @@ no_toc: true
                 }
             }
 
+            function persistFilter(filterValue) {
+                const normalizedFilter = normalizeFilter(filterValue);
+                const url = new URL(window.location.href);
+
+                if (normalizedFilter) {
+                    url.searchParams.set('tag', normalizedFilter);
+                } else {
+                    url.searchParams.delete('tag');
+                }
+
+                window.history.replaceState({}, '', url);
+
+                try {
+                    if (normalizedFilter) {
+                        window.localStorage.setItem(filterStorageKey, normalizedFilter);
+                    } else {
+                        window.localStorage.removeItem(filterStorageKey);
+                    }
+                } catch (error) {
+                    // Ignore storage failures so filtering still works.
+                }
+            }
+
+            function updateFilterUi(filterValue) {
+                filterButtons.forEach(function(button) {
+                    const isActive = button.dataset.toolFilter === filterValue;
+                    button.classList.toggle('is-active', isActive);
+                    button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+                });
+
+                if (resetFilterButton) {
+                    resetFilterButton.hidden = !filterValue;
+                }
+            }
+
+            function cardMatchesFilter(card, filterValue) {
+                if (!filterValue) {
+                    return true;
+                }
+
+                const tagValues = (card.dataset.tags || '').split('|').filter(Boolean);
+                return tagValues.includes(filterValue);
+            }
+
             function compareNumbersDescending(first, second) {
                 return second - first;
             }
 
-            function sortCards(sortMode) {
-                const cards = [...originalCards];
+            function applySortAndFilter(sortMode, filterValue) {
+                const cards = originalCards.filter(function(card) {
+                    return cardMatchesFilter(card, filterValue);
+                });
 
                 cards.sort(function(cardA, cardB) {
                     if (sortMode === 'alphabetical') {
@@ -276,30 +379,68 @@ no_toc: true
                 });
 
                 cards.forEach(function(card) {
+                    card.hidden = false;
                     toolsGrid.appendChild(card);
                 });
+
+                originalCards.forEach(function(card) {
+                    if (!cards.includes(card)) {
+                        card.hidden = true;
+                    }
+                });
+
+                if (noResultsMessage) {
+                    noResultsMessage.hidden = cards.length !== 0;
+                }
 
                 const readableMode = {
                     updated: 'last updated',
                     published: 'publish date',
                     alphabetical: 'alphabetically'
                 };
+                const activeFilterButton = filterButtons.find(function(button) {
+                    return button.dataset.toolFilter === filterValue;
+                });
+                const filterSuffix = activeFilterButton ? ` Filtered by ${activeFilterButton.dataset.toolFilterLabel}.` : '';
 
-                sortStatus.textContent = `${cards.length} tools sorted by ${readableMode[sortMode] || 'last updated'}.`;
+                sortStatus.textContent = `${cards.length} tools sorted by ${readableMode[sortMode] || 'last updated'}.${filterSuffix}`;
             }
 
             const initialSortMode = loadInitialSortMode();
+            const initialFilter = loadInitialFilter();
+            currentFilter = initialFilter;
             sortSelect.value = initialSortMode;
+            updateFilterUi(currentFilter);
 
             sortSelect.addEventListener('change', function(event) {
                 const selectedSortMode = normalizeSortMode(event.target.value);
                 sortSelect.value = selectedSortMode;
                 persistSortMode(selectedSortMode);
-                sortCards(selectedSortMode);
+                applySortAndFilter(selectedSortMode, currentFilter);
             });
 
+            filterButtons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    const nextFilter = button.dataset.toolFilter === currentFilter ? null : button.dataset.toolFilter;
+                    currentFilter = nextFilter;
+                    updateFilterUi(currentFilter);
+                    persistFilter(currentFilter);
+                    applySortAndFilter(sortSelect.value, currentFilter);
+                });
+            });
+
+            if (resetFilterButton) {
+                resetFilterButton.addEventListener('click', function() {
+                    currentFilter = null;
+                    updateFilterUi(currentFilter);
+                    persistFilter(currentFilter);
+                    applySortAndFilter(sortSelect.value, currentFilter);
+                });
+            }
+
             persistSortMode(initialSortMode);
-            sortCards(initialSortMode);
+            persistFilter(initialFilter);
+            applySortAndFilter(initialSortMode, initialFilter);
         });
     </script>
 </div>
