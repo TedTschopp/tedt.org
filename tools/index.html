@@ -11,6 +11,7 @@ no_toc: true
         .tools-index .tool-thumb-wrap { aspect-ratio: 16 / 9; overflow: hidden; background: rgba(var(--bs-body-color-rgb), 0.04); }
         .tools-index .tool-thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
         .tools-index .tool-summary { min-height: 4.5rem; }
+        .tools-index .tools-index-controls { max-width: 22rem; }
     </style>
     <p class="lead">
         A catalog of the tools, experiments, and little software toys I’ve built.
@@ -20,9 +21,28 @@ no_toc: true
     {% assign others = site.tools | where_exp: "t", "t.featured != true" | sort: "last_modified" | reverse %}
     {% assign tools = featured | concat: others %}
 
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    <section aria-label="Tool sort controls" class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-4">
+        <p class="small text-body-secondary mb-0">
+            Sort the catalog by last update, original publish date, or title.
+        </p>
+        <div class="tools-index-controls ms-md-auto">
+            <label class="form-label mb-1" for="tool-sort-select">Sort tools</label>
+            <select class="form-select" id="tool-sort-select" aria-describedby="tool-sort-status">
+                <option value="updated">Last updated</option>
+                <option value="published">Publish date</option>
+                <option value="alphabetical">Alphabetical</option>
+            </select>
+        </div>
+    </section>
+
+    <div class="visually-hidden" aria-live="polite" id="tool-sort-status"></div>
+
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="tools-card-grid">
         {% for tool in tools %}
-        <div class="col">
+        <div class="col tool-card-column"
+             data-title="{{ tool.title | downcase | escape }}"
+             data-updated="{{ tool.last_modified | default: tool.date | date: '%s' }}"
+             data-published="{{ tool.date | date: '%s' }}">
             <div class="card h-100">
                 {% assign thumb = tool.image | default: tool.hero_image %}
                 <a href="{{ tool.url | relative_url }}" class="tool-thumb-wrap card-img-top d-block">
@@ -111,4 +131,125 @@ no_toc: true
         {% endfor %}
     </div>
     {% endif %}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sortSelect = document.getElementById('tool-sort-select');
+            const sortStatus = document.getElementById('tool-sort-status');
+            const toolsGrid = document.getElementById('tools-card-grid');
+            const sortStorageKey = 'tedt-tools-sort';
+            const validSortModes = ['updated', 'published', 'alphabetical'];
+
+            if (!sortSelect || !sortStatus || !toolsGrid) {
+                return;
+            }
+
+            const originalCards = Array.from(toolsGrid.querySelectorAll('.tool-card-column'));
+
+            function normalizeSortMode(sortMode) {
+                return validSortModes.includes(sortMode) ? sortMode : 'updated';
+            }
+
+            function loadInitialSortMode() {
+                const url = new URL(window.location.href);
+                const urlSortMode = normalizeSortMode(url.searchParams.get('sort'));
+
+                if (url.searchParams.has('sort')) {
+                    return urlSortMode;
+                }
+
+                try {
+                    return normalizeSortMode(window.localStorage.getItem(sortStorageKey));
+                } catch (error) {
+                    return 'updated';
+                }
+            }
+
+            function persistSortMode(sortMode) {
+                const normalizedSortMode = normalizeSortMode(sortMode);
+                const url = new URL(window.location.href);
+
+                if (normalizedSortMode === 'updated') {
+                    url.searchParams.delete('sort');
+                } else {
+                    url.searchParams.set('sort', normalizedSortMode);
+                }
+
+                window.history.replaceState({}, '', url);
+
+                try {
+                    window.localStorage.setItem(sortStorageKey, normalizedSortMode);
+                } catch (error) {
+                    // Ignore storage failures so sort still works in restrictive browsers.
+                }
+            }
+
+            function compareNumbersDescending(first, second) {
+                return second - first;
+            }
+
+            function sortCards(sortMode) {
+                const cards = [...originalCards];
+
+                cards.sort(function(cardA, cardB) {
+                    if (sortMode === 'alphabetical') {
+                        return cardA.dataset.title.localeCompare(cardB.dataset.title, undefined, {
+                            numeric: true,
+                            sensitivity: 'base'
+                        });
+                    }
+
+                    if (sortMode === 'published') {
+                        const publishedComparison = compareNumbersDescending(
+                            Number(cardA.dataset.published || 0),
+                            Number(cardB.dataset.published || 0)
+                        );
+
+                        if (publishedComparison !== 0) {
+                            return publishedComparison;
+                        }
+                    }
+
+                    const updatedComparison = compareNumbersDescending(
+                        Number(cardA.dataset.updated || 0),
+                        Number(cardB.dataset.updated || 0)
+                    );
+
+                    if (updatedComparison !== 0) {
+                        return updatedComparison;
+                    }
+
+                    return cardA.dataset.title.localeCompare(cardB.dataset.title, undefined, {
+                        numeric: true,
+                        sensitivity: 'base'
+                    });
+                });
+
+                cards.forEach(function(card) {
+                    toolsGrid.appendChild(card);
+                });
+
+                const readableMode = {
+                    updated: 'last updated',
+                    published: 'publish date',
+                    alphabetical: 'alphabetically'
+                };
+
+                sortStatus.textContent = `${cards.length} tools sorted by ${readableMode[sortMode] || 'last updated'}.`;
+            }
+
+            const initialSortMode = loadInitialSortMode();
+            sortSelect.value = initialSortMode;
+
+            sortSelect.addEventListener('change', function(event) {
+                const selectedSortMode = normalizeSortMode(event.target.value);
+                sortSelect.value = selectedSortMode;
+                persistSortMode(selectedSortMode);
+                sortCards(selectedSortMode);
+            });
+
+            persistSortMode(initialSortMode);
+            sortCards(initialSortMode);
+        });
+    </script>
 </div>
