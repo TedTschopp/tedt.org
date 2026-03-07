@@ -8,8 +8,23 @@ no_toc: true
 <div class="container my-4 tools-index">
     <style>
         .tools-index .muted-note { color: var(--bs-secondary-color); }
-        .tools-index .tool-thumb-wrap { aspect-ratio: 16 / 9; overflow: hidden; background: rgba(var(--bs-body-color-rgb), 0.04); }
-        .tools-index .tool-thumb-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .tools-index .tool-thumb-wrap {
+            aspect-ratio: 16 / 9;
+            overflow: hidden;
+            background:
+                linear-gradient(180deg, rgba(var(--bs-body-color-rgb), 0.04), rgba(var(--bs-body-color-rgb), 0.08));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0.75rem;
+        }
+        .tools-index .tool-thumb-wrap img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            display: block;
+        }
         .tools-index .tool-card-link { color: inherit; text-decoration: none; }
         .tools-index .tool-card-link:hover { color: inherit; }
         .tools-index .tool-summary {
