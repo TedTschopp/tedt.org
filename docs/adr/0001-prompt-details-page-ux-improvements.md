@@ -89,8 +89,8 @@ We will implement comprehensive UX and accessibility improvements to the prompt 
 ### Files to be Modified
 
 1. `_layouts/prompt-details.html` - Main layout improvements
-2. `_includes/prompt-variables-form.html` - Form UX enhancements  
-3. `_includes/prompt-variables-styles.html` - CSS improvements and responsive design
+2. `_includes/prompts/prompt-variables-form.html` - Form UX enhancements  
+3. `_includes/prompts/prompt-variables-styles.html` - CSS improvements and responsive design
 4. Create new test files in `/tests/` directory
 
 ### Testing Strategy

@@ -7,7 +7,7 @@ Context: Multiple overlapping mechanisms existed for category styling: legacy pe
 Decision:
 
 1. Introduce a single semantic wrapper element `<span class="category-theme" data-category="Raw Name" data-cat="canonical-slug">` around category labels everywhere (via include `category-label.html`).
-2. Maintain a palette + font + shadow + metadata registry (`_data/category_registry.yml`) keyed by canonical slug; Liquid includes (`utility/category-label.html`, `utility/category-theme-inline-style.html`) set CSS custom properties on the wrapper directly at build time.
+2. Maintain a palette + font + shadow + metadata registry (`_data/category_registry.yml`) keyed by canonical slug; Liquid includes (`category/category-label.html`, `category/category-theme-inline-style.html`) set CSS custom properties on the wrapper directly at build time.
 3. Derive raw → canonical mapping from each entry's `raw_names` array within `category_registry.yml` (no separate alias file).
 4. Simplify layout: remove duplicate theme debug include branches and replace hard-coded `data-bs-theme="dark"` with early init script honoring cookie + system preference.
 5. Defer aggressive removal of legacy class selectors; keep a bridged section (commented) until templates are fully purged of legacy markup.

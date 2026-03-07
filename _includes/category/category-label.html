@@ -48,7 +48,7 @@
 {% endif %}
 {% assign entry = registry[__canonical] %}
 {% assign label_text = include.text_override | default: entry.label | default: entry.title | default: raw_category %}
-{%- capture _theme_style -%}{% include utility/category-theme-inline-style.html entry=entry %}{%- endcapture -%}
+{%- capture _theme_style -%}{% include category/category-theme-inline-style.html entry=entry %}{%- endcapture -%}
 {% assign wrapper_style = _theme_style | strip %}
 {%- comment -%} Optional: disable legacy CSS class (which may impose fixed colors) for full registry variable control {%- endcomment -%}
 {% assign use_legacy = include.legacy_class | default: 'true' %}

@@ -1,9 +1,9 @@
 <!-- Wrap any category block with .category-theme and data-category -->
-{% capture __stub_slug_raw %}{% include utility/map-category-to-registry.html key='DCC' %}{% endcapture %}
+{% capture __stub_slug_raw %}{% include category/map-category-to-registry.html key='DCC' %}{% endcapture %}
 {% assign __stub_slug = __stub_slug_raw | strip %}
 {% if __stub_slug == '' %}{% assign __stub_slug = 'DCC' | slugify %}{% endif %}
 {% assign __stub_entry = site.data.category_registry[__stub_slug] %}
-{% capture __stub_style %}{% include utility/category-theme-inline-style.html entry=__stub_entry %}{% endcapture %}
+{% capture __stub_style %}{% include category/category-theme-inline-style.html entry=__stub_entry %}{% endcapture %}
 {% assign __stub_style = __stub_style | strip %}
 <article class="category-theme" data-category="DCC" data-cat="{{ __stub_slug }}">
   <header>
@@ -29,11 +29,11 @@
 </article>
 {%- comment -%} Inline styles omitted in stub to keep the sample lint-friendly. Real usage adds style="{{ __stub_style }}" to the wrapper. {%- endcomment -%}
 
-{% capture __stub_lotr_slug_raw %}{% include utility/map-category-to-registry.html key='Middle-eartH' %}{% endcapture %}
+{% capture __stub_lotr_slug_raw %}{% include category/map-category-to-registry.html key='Middle-eartH' %}{% endcapture %}
 {% assign __stub_lotr_slug = __stub_lotr_slug_raw | strip %}
 {% if __stub_lotr_slug == '' %}{% assign __stub_lotr_slug = 'Middle-eartH' | slugify %}{% endif %}
 {% assign __stub_lotr_entry = site.data.category_registry[__stub_lotr_slug] %}
-{% capture __stub_lotr_style %}{% include utility/category-theme-inline-style.html entry=__stub_lotr_entry %}{% endcapture %}
+{% capture __stub_lotr_style %}{% include category/category-theme-inline-style.html entry=__stub_lotr_entry %}{% endcapture %}
 {% assign __stub_lotr_style = __stub_lotr_style | strip %}
 <article class="category-theme" data-category="Middle-eartH" data-cat="{{ __stub_lotr_slug }}">
   <h2 class="card-title"><span class="category-title LotR">Middle-earth</span></h2>
@@ -41,11 +41,11 @@
 </article>
 {%- comment -%} Inline style example: {{ __stub_lotr_style }} {%- endcomment -%}
 
-{% capture __stub_pw_slug_raw %}{% include utility/map-category-to-registry.html key='Personal Writing' %}{% endcapture %}
+{% capture __stub_pw_slug_raw %}{% include category/map-category-to-registry.html key='Personal Writing' %}{% endcapture %}
 {% assign __stub_pw_slug = __stub_pw_slug_raw | strip %}
 {% if __stub_pw_slug == '' %}{% assign __stub_pw_slug = 'Personal Writing' | slugify %}{% endif %}
 {% assign __stub_pw_entry = site.data.category_registry[__stub_pw_slug] %}
-{% capture __stub_pw_style %}{% include utility/category-theme-inline-style.html entry=__stub_pw_entry %}{% endcapture %}
+{% capture __stub_pw_style %}{% include category/category-theme-inline-style.html entry=__stub_pw_entry %}{% endcapture %}
 {% assign __stub_pw_style = __stub_pw_style | strip %}
 <article class="category-theme" data-category="Personal Writing" data-cat="{{ __stub_pw_slug }}">
   <h2 class="card-title"><span class="category-title Personal-Writing-Post">A Note on Craft</span></h2>

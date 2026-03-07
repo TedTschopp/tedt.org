@@ -1,6 +1,6 @@
 {%- comment -%}
 Emit the canonical registry slug (or blank) matching an incoming category key.
-Usage: {% capture slug %}{% include utility/map-category-to-registry.html key=cat_key %}{% endcapture %}
+Usage: {% capture slug %}{% include category/map-category-to-registry.html key=cat_key %}{% endcapture %}
 {%- endcomment -%}
 {%- assign incoming = key | to_s | strip -%}
 {%- assign incoming_norm = incoming | downcase -%}

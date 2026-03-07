@@ -18,13 +18,13 @@ Unify all category visual treatments under a single, data-driven theming system 
 
 ### Phase 1 (In Progress)
 
-- Replace any hard-coded category headings in templates with `{% include utility/category-label.html %}`.
+- Replace any hard-coded category headings in templates with `{% include category/category-label.html %}`.
 - Verify no regressions in dark mode / reduced motion.
 - Collect console summary counts to ensure all labels wrapped.
 
 ### Phase 2
 
-- Emit CSS custom properties directly in Liquid (`utility/category-theme-inline-style.html`) so wrappers are fully styled at build time.
+- Emit CSS custom properties directly in Liquid (`category/category-theme-inline-style.html`) so wrappers are fully styled at build time.
 - Remove runtime legacy wrapping path once templates migrated (no JS dependency remains).
 - Prune unreferenced legacy font class selectors from `logo-and-company-fonts.css` (keep only bridge rules still needed).
 

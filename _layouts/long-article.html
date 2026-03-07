@@ -178,7 +178,7 @@
                                                 {%- comment -%} TOC header (no image) with inline show/hide toggle. {%- endcomment -%}
                                                 <div class="card-body pt-3 pb-2 ps-4 pe-4">
                                                     <div class="d-flex align-items-center justify-content-between gap-3">
-                                                        {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
+                                                        {% capture __toc_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
                                                         {% assign __toc_slug = __toc_slug | strip %}
                                                         {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
                                                         {% assign __toc_entry = site.data.category_registry[__toc_slug] %}

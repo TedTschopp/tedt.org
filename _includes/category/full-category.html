@@ -1,6 +1,6 @@
 {%- comment -%}
   Unified category link w/ count using category_registry.yml
-  Usage (example - pseudo): include utility/full-category.html category=pair[0] category_obj=pair[1] render_number=true
+  Usage (example - pseudo): include category/full-category.html category=pair[0] category_obj=pair[1] render_number=true
   (Deliberately shown without Liquid tag braces to avoid parser issues.)
   Params:
     category (string) - raw name, variant, or canonical slug
@@ -45,4 +45,4 @@
 {%- else -%}
   {%- assign __href = '/category/' | append: canonical | append: '/' -%}
 {%- endif -%}
-<a style="text-decoration: none; font-size: x-large;{% if entry.inline_style and entry.inline_style != '' %} {{ entry.inline_style }}{% endif %}" class="{{klass}}" href="{{site.url}}{{ __href }}">{% include utility/category-emoji.html category=display %} {{ display }}{%- if render_count and include.category_obj -%} ({{ include.category_obj.size }}){%- endif -%}</a>
+<a style="text-decoration: none; font-size: x-large;{% if entry.inline_style and entry.inline_style != '' %} {{ entry.inline_style }}{% endif %}" class="{{klass}}" href="{{site.url}}{{ __href }}">{% include category/category-emoji.html category=display %} {{ display }}{%- if render_count and include.category_obj -%} ({{ include.category_obj.size }}){%- endif -%}</a>

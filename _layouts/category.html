@@ -47,7 +47,7 @@
                 <!-- Blog Post -->
                 <main class="h-entry" role="main">
                     <!-- Title -->
-                    {% capture __cat_slug %}{% include utility/map-category-to-registry.html key=page.title %}{% endcapture %}
+                    {% capture __cat_slug %}{% include category/map-category-to-registry.html key=page.title %}{% endcapture %}
                     {% assign __cat_slug = __cat_slug | strip %}
                     {% if __cat_slug == '' %}{% assign __cat_slug = page.title | slugify %}{% endif %}
                     {%- comment -%} Fallback: if mapping failed and registry lacks this slug but a registry title matches page.title, adopt that slug {%- endcomment -%}
@@ -72,11 +72,11 @@
                       {% assign __cat_href = '/category/' | append: __cat_slug | append: '/' %}
                     {% endif %}
                     {% if __cat_entry %}
-                      {% capture _title_html %}{% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}{% endcapture %}
-                      {% include utility/category-palette-apply.html entry=__cat_entry slug=__cat_slug raw=page.title title_html=_title_html title_tag='div' title_class='p-name category-title-wrapper' wrapper_class='category-hero category-hero-page' %}
+                      {% capture _title_html %}{% include category/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}{% endcapture %}
+                      {% include category/category-palette-apply.html entry=__cat_entry slug=__cat_slug raw=page.title title_html=_title_html title_tag='div' title_class='p-name category-title-wrapper' wrapper_class='category-hero category-hero-page' %}
                     {% else %}
                       <h1 class="p-name">
-                        {% include utility/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}
+                        {% include category/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}
                       </h1>
                     {% endif %}
                     {%- comment -%} Subtitle: prefer registry entry subtitle, fallback to page.subtitle {%- endcomment -%}
@@ -98,7 +98,7 @@
                     {%- endcomment -%}
                     {% assign category = __cat_slug %}
                     {% assign registry_entry = __cat_entry %}
-                    {%- capture __category_wrapper_style -%}{% include utility/category-theme-inline-style.html entry=registry_entry %}{%- endcapture -%}
+                    {%- capture __category_wrapper_style -%}{% include category/category-theme-inline-style.html entry=registry_entry %}{%- endcapture -%}
                     {% assign __category_wrapper_style = __category_wrapper_style | strip %}
                     {% if registry_entry and registry_entry.image %}
                       {% assign image_path = registry_entry.image %}
@@ -325,7 +325,7 @@
                           {% assign cat_items = cat_items | push: cat_entry %}
                         {% endfor %}
                         {% assign cat_items = cat_items | safe_sort | sort_natural %}
-                        <ul class="list-unstyled" aria-label="All site categories">{% for item in cat_items %}{% assign parts = item | split: '||' %}{% assign slug = parts[0] %}{% assign label = parts[1] %}{% assign reg_entry = site.data.category_registry[slug] %}{% assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] %}{% if posts_arr == nil or posts_arr == empty %}{% if reg_entry.raw_names %}{% for variant in reg_entry.raw_names %}{% if site.categories[variant] and site.categories[variant] != empty %}{% assign posts_arr = site.categories[variant] %}{% break %}{% endif %}{% endfor %}{% endif %}{% endif %}{% assign count = posts_arr.size | default: 0 %}{% capture badge_text %}{{ label }} - {{ count }}{% endcapture %}{% if reg_entry.category_home_page %}{% assign _href = reg_entry.category_home_page %}{% else %}{% assign _href = '/category/' | append: slug | append: '/' %}{% endif %}<li class="mb-1">{% include utility/category-label.html category=slug href=_href kind='badge' legacy_class=false class_extra='text-decoration-none w-100' wrapper_class_extra='no-underline full-width-badge' text_override=badge_text %}</li>{% endfor %}</ul>
+                        <ul class="list-unstyled" aria-label="All site categories">{% for item in cat_items %}{% assign parts = item | split: '||' %}{% assign slug = parts[0] %}{% assign label = parts[1] %}{% assign reg_entry = site.data.category_registry[slug] %}{% assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] %}{% if posts_arr == nil or posts_arr == empty %}{% if reg_entry.raw_names %}{% for variant in reg_entry.raw_names %}{% if site.categories[variant] and site.categories[variant] != empty %}{% assign posts_arr = site.categories[variant] %}{% break %}{% endif %}{% endfor %}{% endif %}{% endif %}{% assign count = posts_arr.size | default: 0 %}{% capture badge_text %}{{ label }} - {{ count }}{% endcapture %}{% if reg_entry.category_home_page %}{% assign _href = reg_entry.category_home_page %}{% else %}{% assign _href = '/category/' | append: slug | append: '/' %}{% endif %}<li class="mb-1">{% include category/category-label.html category=slug href=_href kind='badge' legacy_class=false class_extra='text-decoration-none w-100' wrapper_class_extra='no-underline full-width-badge' text_override=badge_text %}</li>{% endfor %}</ul>
 
                       </div>
                 </div>

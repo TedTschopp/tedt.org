@@ -167,7 +167,7 @@
                                                 {%- comment -%} TOC header (no image) with inline show/hide toggle. {%- endcomment -%}
                                                 <div class="card-body pt-3 pb-2 ps-4 pe-4">
                                                     <div class="d-flex align-items-center justify-content-between gap-3">
-                                                        {% capture __toc_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
+                                                        {% capture __toc_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
                                                         {% assign __toc_slug = __toc_slug | strip %}
                                                         {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
                                                         {% assign __toc_entry = site.data.category_registry[__toc_slug] %}
@@ -235,7 +235,7 @@
                                             <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/{{ image }}" alt="{{category}}" loading="lazy">
                                             <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
                                                 <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
-                                                {% capture __card_slug %}{% include utility/map-category-to-registry.html key=category %}{% endcapture %}
+                                                {% capture __card_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
                                                 {% assign __card_slug = __card_slug | strip %}
                                                 {% if __card_slug == '' %}{% assign __card_slug = category | slugify %}{% endif %}
                                                 {% assign __card_entry = site.data.category_registry[__card_slug] %}
@@ -244,7 +244,7 @@
                                                 {% else %}
                                                     {% assign __card_href = '/category/' | append: __card_slug | append: '/' %}
                                                 {% endif %}
-                                                <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" href="{{ site.url }}{{ __card_href }}"><span class="p-category">{{category}}</span> {% include utility/category-emoji.html category=category %}</a></p>
+                                                <p class="card-title h3" style="z-index: 2; position: relative;"><a class="text-decoration-none" href="{{ site.url }}{{ __card_href }}"><span class="p-category">{{category}}</span> {% include category/category-emoji.html category=category %}</a></p>
                                             </div>
                                         </div>
                                     </div>

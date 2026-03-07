@@ -17,7 +17,7 @@
   {%- assign _title_class = include.title_class | default: 'post-title' -%}
   {%- assign _subtitle_tag = include.subtitle_tag | default: 'p' -%}
   {%- assign _subtitle_class = include.subtitle_class | default: 'post-subtitle' -%}
-  {%- capture _wrapper_style %}{% include utility/category-theme-inline-style.html entry=_e %}{% endcapture %}
+  {%- capture _wrapper_style %}{% include category/category-theme-inline-style.html entry=_e %}{% endcapture %}
   {% assign _wrapper_style = _wrapper_style | strip %}
   {% assign _slug = include.slug | default: _e.slug | default: '' %}
   {% if _slug == '' and include.category %}

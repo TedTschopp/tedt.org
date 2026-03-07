@@ -218,7 +218,7 @@ When including files in layouts or posts, use the full path:
 {% include content/post-preview.html %}
 
 <!-- Utility functions -->
-{% include utility/category-emoji.html category="Technology" %}
+{% include category/category-emoji.html category="Technology" %}
 {% include utility/fuzzy-date.html %}
 
 <!-- SEO and metadata -->
@@ -265,7 +265,7 @@ For a complete mapping of old to new paths, see the `includes-path-mapping.md` f
 {% include content/next-and-previous.html %}
 
 <!-- Utilities -->
-{% include utility/category-emoji.html category="Technology" %}
+{% include category/category-emoji.html category="Technology" %}
 {% include utility/calculate-variables.html %}
 ```
 
