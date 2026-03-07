@@ -10,7 +10,7 @@ date_time = datetime.fromtimestamp(datetime.now().timestamp()) # Fix and Merge w
 
 todays_date = date.today()
 
-in_file_path='/Users/tedtschopp/Developer/tschopp.net/_data/GammaWorldv12.json' # Change me to pull directly in from Google Sheets at somepoint!
+in_file_path='/Users/tedtschopp/Developer/tedt.org/_data/GammaWorldv12.json' # Change me to pull directly in from Google Sheets at somepoint!
 
 a = 1
 b = 2

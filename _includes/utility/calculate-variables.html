@@ -5,6 +5,24 @@
 <!-- strip HTML Content and empty spaces out of the pages content -->
 {% assign stripped-content = page.content | strip_html | strip %} 
 
+{% assign micropub_post_title = '' %}
+{% if page.layout == 'micropubpost' %}
+  {% assign micropub_checkin_name = '' %}
+  {% if page.mf-checkin and page.mf-checkin[0] and page.mf-checkin[0].properties and page.mf-checkin[0].properties.name and page.mf-checkin[0].properties.name[0] %}
+    {% assign micropub_checkin_name = page.mf-checkin[0].properties.name[0] | strip %}
+  {% endif %}
+
+  {% if micropub_checkin_name != '' %}
+    {% assign micropub_post_title = 'Checked Into ' | append: micropub_checkin_name %}
+  {% elsif stripped-content != '' %}
+    {% assign micropub_post_title = stripped-content | truncatewords: 12, '' %}
+  {% elsif page.mf-photo and page.mf-photo != empty %}
+    {% assign micropub_post_title = 'Photo Post' %}
+  {% else %}
+    {% assign micropub_post_title = 'Social Post' %}
+  {% endif %}
+{% endif %}
+
 {% if page.title == null or page.title == empty %}
   {% assign page.title = "Your Custom Title Here" %}
 {% endif %}

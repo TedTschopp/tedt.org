@@ -5,8 +5,8 @@
 {% assign this_page = page %}
 {% assign page_layout = this_page.layout %}
 {% if this_page.title == null or this_page.title == empty or this_page.title == '' %}
-  {% if page_layout == 'micropubpost' and this_page.mf-checkin and this_page.mf-checkin[0] %}
-    {% assign this_page_title = 'Checked Into ' | append: this_page.mf-checkin[0].properties.name[0] %}
+  {% if page_layout == 'micropubpost' and micropub_post_title != '' %}
+    {% assign this_page_title = micropub_post_title %}
   {% else %}
     {% assign this_page_title = site.title | default: 'Title: NA' %}
   {% endif %}
@@ -28,7 +28,11 @@
 
 
 {% comment %} Compute meta description precedence: page.summary > page.seo-description > page['seo-description'] > page.description > site.description; then fallback to generated excerpt/content if still blank. {% endcomment %}
-{% assign meta_description = page.summary | default: page.seo-description | default: page['seo-description'] | default: page.description | default: site.description | to_s | strip %}
+{% if page_layout == 'micropubpost' %}
+  {% assign meta_description = page.summary | default: page.seo-description | default: page['seo-description'] | default: page.description | default: stripped-content | default: micropub_post_title | default: site.description | to_s | strip %}
+{% else %}
+  {% assign meta_description = page.summary | default: page.seo-description | default: page['seo-description'] | default: page.description | default: site.description | to_s | strip %}
+{% endif %}
 {% if meta_description == '' %}
   {% comment %}Fallback: derive from excerpt/content when explicit description absent.{% endcomment %}
   {% assign raw_excerpt = page.excerpt | default: page.content %}
@@ -86,7 +90,7 @@
   {% endif %}
 
 {% comment %} Open Graph logic unified {% endcomment %}
-{% assign raw_page_image = page.image %}
+{% assign raw_page_image = page.image | default: page.mf-photo[0] %}
 {% if raw_page_image %}
   {% if raw_page_image contains '://' %}
     {% assign og_image_url = raw_page_image %}
@@ -147,7 +151,7 @@ Description precedence: page.summary > page.seo-description > page.description >
 -%}
 <!-- DIAG twitter: raw {{ twitter_description | escape }} | stripped {{ twitter_description_sanitized | escape }} -->
 <meta name="twitter:description" content="{{ twitter_description_sanitized | strip | truncate:300 | escape }}">
-{% assign twitter_raw_img = page.image | default: site.title_image %}
+{% assign twitter_raw_img = page.image | default: page.mf-photo[0] | default: site.title_image %}
 {% if twitter_raw_img %}
   {% if twitter_raw_img contains '://' %}
     {% assign twitter_image_url = twitter_raw_img %}
@@ -266,7 +270,7 @@ If it's the homepage treat as WebSite only; else add Article object.
     <!-- Color of the status bar -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <!-- Web App Name for the Shortcut -->
-    <meta name="apple-mobile-web-app-title"            content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="apple-mobile-web-app-title"            content="{{ this_page_title }}">
     <!-- Do Not Detect Phone Numbers -->
     <meta name="format-detection"                      content="telephone=no">
 

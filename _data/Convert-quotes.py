@@ -10,7 +10,7 @@ date_time = datetime.fromtimestamp(datetime.now().timestamp()) # Fix and Merge w
 
 todays_date = date.today()
 
-in_file_path='/Users/tedtschopp/Developer/tschopp.net/_data/Quotebook.json' # Change me to pull directly in from Google Sheets at somepoint!
+in_file_path='/Users/tedtschopp/Developer/tedt.org/_data/Quotebook.json' # Change me to pull directly in from Google Sheets at somepoint!
 
 def left(s, amount):
     return s[:amount]
@@ -60,7 +60,7 @@ with open(in_file_path,'r') as in_json_file:
             yaml.dump(json_obj, out_yaml_file)
             out_yaml_file.write("id: "+str(i + 21000 - 1)+"\n")  # id
             out_yaml_file.write(""+"\n")
-            out_yaml_file.write("layout: quotes"+"\n")
+            out_yaml_file.write("layout: quote"+"\n")
             out_yaml_file.write("categories:"+"\n")
             out_yaml_file.write("- Quotes"+"\n")
             out_yaml_file.write("date: "+str(date_time)+"\n")

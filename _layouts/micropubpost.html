@@ -36,7 +36,7 @@
     <!-- Legacy Browser Redirect & Google Tag Manager -->
     {% include layout/top-of-body.html %}
 
-    {% include layout/bootstrap4-navigation.html %}
+    {% include layout/top-nav-bar.html %}
 
 
 
@@ -50,7 +50,8 @@
 
                 <main class="h-entry" role="main">
                   <!-- Title -->
-                  <h1 class="p-name lead"><a href="{{page.mf-syndication}}"> Checked into {{page.mf-checkin[0].properties.name}}</a></h1>
+                  {% assign micropub_permalink = page.mf-syndication[0] | default: page.url | relative_url %}
+                  <h1 class="p-name lead"><a href="{{ micropub_permalink }}">{{ micropub_post_title }}</a></h1>
 
                   <p class="lead">{% include utility/author-byline.html page=page %}</p>
 
