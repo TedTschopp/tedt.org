@@ -59,6 +59,10 @@
         ".vscode": false,
         ".well-known": false
     },
+    "files.associations": {
+        "_layouts/**/*.html": "liquid",
+        "_includes/**/*.html": "liquid"
+    },
 
     "terminal.integrated.env.osx": {
         "PATH": "/Users/tedtschopp/.local/bin:/opt/homebrew/bin:/usr/local/bin:${env:PATH}"
