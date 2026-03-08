@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "TTRPG Module Builder"
 subtitle: "Tabletop RPG Content Generation Tools"

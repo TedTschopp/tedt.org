@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Architecture Requirements Analyst - ISO/IEC/IEEE 29148:2018 SRS Generator"
 subtitle: "Convert Meeting Transcripts to Structured Requirements Specifications"

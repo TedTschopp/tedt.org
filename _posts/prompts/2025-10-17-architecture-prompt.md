@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Architecture Prompt"
 subtitle: "Enterprise Architecture and Requirements Engineering"

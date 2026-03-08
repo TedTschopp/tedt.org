@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Business Business Skills Prompts"
 subtitle: "Strategic Business Planning and Analysis"

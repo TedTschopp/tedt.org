@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Architecture Product Requirements Document (PRD) for Power Platform"
 subtitle: "Enterprise Architecture and Requirements Engineering"

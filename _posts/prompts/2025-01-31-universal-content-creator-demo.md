@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 title: Universal Content Creator - Variable Types Demo
 subtitle: A comprehensive demonstration of all variable input types
 description: This prompt demonstrates all supported variable types including text,

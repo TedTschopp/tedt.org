@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Architecture ABB SBB UBB Builder"
 subtitle: "Enterprise Architecture and Requirements Engineering"

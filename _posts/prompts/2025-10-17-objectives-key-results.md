@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Business Objectives Key Results"
 subtitle: "Strategic Business Planning and Analysis"

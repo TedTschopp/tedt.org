@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 title: "Simple Blog Post Generator"
 subtitle: "Basic example with essential variables"
 description: "A straightforward blog post generator demonstrating basic variable functionality."

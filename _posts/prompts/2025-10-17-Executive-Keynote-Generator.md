@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Executive Keynote Generator"
 subtitle: "AI-Powered Content Generation Framework"

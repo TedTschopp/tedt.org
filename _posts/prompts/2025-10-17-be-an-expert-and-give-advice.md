@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Communications Be an Expert and Give Advice"
 subtitle: "Professional Content Creation Assistant"

@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Sora Prompt"
 subtitle: "AI-Powered Content Generation Framework"

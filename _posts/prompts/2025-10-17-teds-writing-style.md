@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Communications [Ted's Writing Style]"
 subtitle: "Professional Content Creation Assistant"

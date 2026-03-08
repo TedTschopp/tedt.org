@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Risk Assessment for IT"
 subtitle: "Corporate Risk Simulation and Assessment"

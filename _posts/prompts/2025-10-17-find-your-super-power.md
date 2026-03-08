@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Self Improvement Find your super power"
 subtitle: "AI-Powered Content Generation Framework"

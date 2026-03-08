@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 title: Academic Content Critique Template
 subtitle: A comprehensive framework for scholarly paper analysis and evaluation
 description: A structured prompt template for critiquing academic papers, articles,

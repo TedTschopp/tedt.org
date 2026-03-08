@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Communications Tiered Messaging Framework"
 subtitle: "Professional Content Creation Assistant"

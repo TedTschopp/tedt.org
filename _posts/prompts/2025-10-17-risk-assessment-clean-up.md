@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Risk Assessment clean up"
 subtitle: "AI-Powered Content Generation Framework"

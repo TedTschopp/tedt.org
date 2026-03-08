@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Communications expert novelist"
 subtitle: "Professional Content Creation Assistant"

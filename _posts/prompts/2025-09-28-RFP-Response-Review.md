@@ -1,6 +1,7 @@
 ---
 
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: RFP Response Evaluation Prompt
 subtitle: Structured workflow for analyzing, scoring, and critiquing vendor RFP responses

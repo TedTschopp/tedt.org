@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Automation Architecture Designer"
 subtitle: "Enterprise Architecture and Requirements Engineering"

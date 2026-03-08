@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Business Lean Six Sigma Analysis"
 subtitle: "Strategic Business Planning and Analysis"

@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Work In Progress: Technology Architecture Generator"
 subtitle: "Solution Architecture"

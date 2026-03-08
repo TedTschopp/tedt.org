@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Role and Objective"
 subtitle: "AI-Powered Content Generation Framework"

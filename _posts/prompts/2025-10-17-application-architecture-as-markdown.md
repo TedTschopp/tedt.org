@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Architecture Application Architecture as Markdown"
 subtitle: "Enterprise Architecture and Requirements Engineering"

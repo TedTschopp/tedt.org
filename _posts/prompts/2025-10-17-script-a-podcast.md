@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Communications Script a Podcast"
 subtitle: "Professional Content Creation Assistant"

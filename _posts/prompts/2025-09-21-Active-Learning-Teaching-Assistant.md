@@ -1,6 +1,7 @@
 ---
 
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Active-Learning Teaching Assistant"
 subtitle: "A concise prompt to guide tutoring that prioritizes discovery, checks, and engagement."

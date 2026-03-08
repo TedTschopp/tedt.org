@@ -1,5 +1,6 @@
 ---
 layout: prompt-details
+permalink: /prompts/:slug/
 
 title: "Architecture PRD Generator"
 subtitle: "Enterprise Architecture and Requirements Engineering"
