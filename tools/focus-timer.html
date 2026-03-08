@@ -242,7 +242,7 @@
     .panel-card {
       border: 1px solid var(--timer-panel-border);
       background: var(--timer-panel-bg);
-      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
       overflow: hidden;
     }
 
@@ -271,10 +271,12 @@
       color: var(--timer-text-soft);
       font-size: 0.85rem;
       font-weight: 500;
+    }
+
     .mono {
       font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     }
-    
+
     kbd {
       display: inline-block;
       padding: 0.15rem 0.4rem;
@@ -284,35 +286,37 @@
       background: var(--bs-tertiary-bg);
       color: var(--bs-secondary-color);
     }
-    }
 
     .hero-badge strong,
     .metric-chip strong,
-    
-    .small {
-      font-size: 0.85rem;
-    }
     .mini-chip strong {
       color: var(--timer-text-strong);
       font-weight: 650;
     }
 
-    .display-card {
-      position: relative;
-        background: rgba(3, 7, 18, 0.82);
-      border: 1px solid var(--timer-display-border);
-      border-radius: var(--timer-display-radius);
-      padding: 1rem;
+    .small {
+      font-size: 0.85rem;
     }
 
-    .display-card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background:
-        radial-gradient(circle at 50% 10%, rgba(var(--timer-accent-rgb), 0.14), transparent 26%),
-        linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 34%);
-      pointer-events: none;
+    .section-label {
+      display: block;
+      margin-bottom: 0.45rem;
+      font-size: 0.84rem;
+      color: var(--timer-text-soft);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .section-stack {
+      display: grid;
+      gap: 1rem;
+    }
+
+    .display-card {
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      padding: 0;
     }
 
     .display-header,
@@ -355,7 +359,7 @@
       font-size: 0.85rem;
       border-top: 1px solid var(--bs-border-color);
       background: var(--bs-tertiary-bg);
-      border-radius: 0 0 0.75rem 0.75rem;
+      border-radius: 0 0 0.375rem 0.375rem;
     }
     
     .status-bar .counts {
@@ -455,8 +459,12 @@
     .preset-grid,
     .mode-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 0.75rem;
+    }
+
+    .compact-grid {
+      grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
     }
 
     .style-card,
@@ -466,7 +474,7 @@
     .insight-card {
       border: 1px solid var(--bs-border-color);
       background: rgba(255, 255, 255, 0.02);
-      border-radius: 0.9rem;
+      border-radius: 0.75rem;
       padding: 0.9rem;
       transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
     }
@@ -602,7 +610,7 @@
       padding: 0.8rem 0.9rem;
       border: 1px solid rgba(255, 255, 255, 0.08);
       background: rgba(255, 255, 255, 0.03);
-      border-radius: 0.85rem;
+      border-radius: 0.75rem;
     }
 
     .toggle-row .form-check-input {
@@ -667,13 +675,17 @@
 
     .builder-note,
     .status-banner {
-      border-radius: 0.8rem;
+      border-radius: 0.75rem;
       border: 1px solid rgba(var(--timer-accent-rgb), 0.18);
       background: rgba(var(--timer-accent-rgb), 0.08);
       color: #daf5ff;
       padding: 0.85rem 0.95rem;
       font-size: 0.9rem;
       line-height: 1.6;
+    }
+
+    .queue-block {
+      margin-top: 1rem;
     }
 
     .insight-grid {
@@ -871,15 +883,12 @@
       <span class="text-body-secondary small">Client-side only.</span>
     </div>
 
-    <div class="row g-3 mb-4">
-      <div class="col-12 col-lg-7">
-        <section class="card panel-card h-100" aria-label="Timer display and controls">
+    <div class="row g-3">
+      <div class="col-12">
+        <section class="card panel-card" aria-label="Timer display and queue">
           <div class="card-header d-flex justify-content-between align-items-center gap-2 flex-wrap">
-            <div>
-              <strong>Timer</strong>
-              <p class="mb-0">The active phase and its remaining time.</p>
-            </div>
-            <span id="displayModePill" class="timer-output-meta">Preset Queue</span>
+            <strong>Timer</strong>
+            <span id="displayModePill" class="text-body-secondary small">Preset Queue</span>
           </div>
           <div class="card-body">
             <div class="display-card mb-3">
@@ -914,85 +923,35 @@
                 <span class="mini-chip"><strong id="cycleLabel">1 / 4</strong> cycle</span>
               </div>
             </div>
-          </div>
-        </section>
-      </div>
 
-      <div class="col-12 col-lg-5">
-        <section class="card panel-card h-100" aria-labelledby="modeHeading">
-          <div class="card-header">
-            <div class="panel-head">
-              <div>
-                <h2 id="modeHeading" class="h5 mb-0">Mode</h2>
-                <p class="mb-0">Switch between queue mode, one countdown, or a stopwatch.</p>
+            <div class="queue-block">
+              <div class="d-flex justify-content-between align-items-center gap-2 flex-wrap mb-3">
+                <label id="queueHeading" class="section-label mb-0" for="queueList">Queue preview</label>
+                <span class="text-body-secondary small">Current run</span>
               </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <div id="modeGrid" class="mode-grid mb-3">
-              <button type="button" class="mode-card is-active" data-mode="preset-queue">
-                <h3>Preset Queue</h3>
-                <p>Work and break steps assembled from a productivity pattern.</p>
-              </button>
-              <button type="button" class="mode-card" data-mode="custom-countdown">
-                <h3>Custom Countdown</h3>
-                <p>One countdown with your own target duration and label.</p>
-              </button>
-              <button type="button" class="mode-card" data-mode="stopwatch">
-                <h3>Stopwatch</h3>
-                <p>Count upward for open-ended timing without a preset end.</p>
-              </button>
+              <div id="queueList" class="timeline-list" aria-live="polite"></div>
             </div>
 
-            <div class="builder-note mb-3" id="builderNote">
-              Queue duration: 1h 45m total across 4 focus sessions and 4 breaks.
-            </div>
-
-            <div class="tool-toolbar">
-              <span class="metric-chip"><strong id="selectedPresetName">Classic Pomodoro</strong> preset</span>
-              <span class="metric-chip"><strong id="selectedStyleName">Mono Grid</strong> style</span>
+            <div class="status-bar mt-3">
+              <span class="text-body-secondary">Focus <strong id="focusTotalValue">100m</strong> · Break <strong id="breakTotalValue">20m</strong></span>
+              <span class="counts"><strong id="runShapeValue">4 rounds</strong></span>
             </div>
           </div>
         </section>
       </div>
-    </div>
 
-    <div class="row g-3 mb-4">
       <div class="col-12 col-lg-7">
-        <section class="card panel-card h-100" aria-labelledby="presetHeading">
+        <section class="card panel-card h-100" aria-labelledby="setupHeading">
           <div class="card-header d-flex justify-content-between align-items-center gap-2 flex-wrap">
-            <div>
-              <strong id="presetHeading">Productivity Presets</strong>
-              <p class="mb-0">Common rhythms for focus, studying, writing, and short-burst work.</p>
+            <strong id="setupHeading">Setup</strong>
+            <span class="text-body-secondary small">Presets / custom durations</span>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label id="presetHeading" class="section-label" for="presetGrid">Productivity presets</label>
+              <div id="presetGrid" class="preset-grid"></div>
             </div>
-          </div>
-          <div class="card-body">
-            <div id="presetGrid" class="preset-grid"></div>
-          </div>
-        </section>
-      </div>
 
-      <div class="col-12 col-lg-5">
-        <section class="card panel-card h-100" aria-labelledby="styleHeading">
-          <div class="card-header">
-            <strong id="styleHeading">Number Styles</strong>
-            <p class="mb-0">Different visual treatments for the timer digits.</p>
-          </div>
-          <div class="card-body">
-            <div id="styleGrid" class="style-grid"></div>
-          </div>
-        </section>
-      </div>
-    </div>
-
-    <div class="row g-3 mb-4">
-      <div class="col-12 col-lg-7">
-        <section class="card panel-card h-100" aria-labelledby="builderHeading">
-          <div class="card-header">
-            <strong id="builderHeading">Session Builder</strong>
-            <p class="mb-0">Edit the queue durations, labels, theme, countdown target, and behavior.</p>
-          </div>
-          <div class="card-body">
             <div class="settings-grid mb-3">
               <div class="field-block">
                 <label for="workMinutesInput">Focus minutes</label>
@@ -1015,17 +974,9 @@
                 <input id="customLabelInput" type="text" maxlength="48" value="Focus Block">
               </div>
               <div class="field-block">
-                <label for="themeSelect">Color theme</label>
-                <select id="themeSelect">
-                  <option value="canvas-signal">Signal Blue</option>
-                  <option value="sunset-grid">Sunset Grid</option>
-                  <option value="forest-breath">Forest Breath</option>
-                  <option value="paper-lantern">Paper Lantern</option>
-                </select>
+                <label for="countdownLabelInput">Countdown label</label>
+                <input id="countdownLabelInput" type="text" maxlength="48" value="Countdown">
               </div>
-            </div>
-
-            <div class="settings-grid mb-3">
               <div class="field-block">
                 <label for="countdownMinutesInput">Custom countdown minutes</label>
                 <input id="countdownMinutesInput" type="number" min="1" max="1440" step="1" value="15">
@@ -1034,78 +985,93 @@
                 <label for="countdownSecondsInput">Custom countdown seconds</label>
                 <input id="countdownSecondsInput" type="number" min="0" max="59" step="1" value="0">
               </div>
-              <div class="field-block">
-                <label for="countdownLabelInput">Countdown label</label>
-                <input id="countdownLabelInput" type="text" maxlength="48" value="Countdown">
-              </div>
-              <div class="field-block">
-                <label for="soundSelect">Completion sound</label>
-                <select id="soundSelect">
-                  <option value="soft-chime">Soft chime</option>
-                  <option value="double-ping">Double ping</option>
-                  <option value="bright-bell">Bright bell</option>
-                </select>
-              </div>
             </div>
 
-            <div class="toggle-row mb-3">
-              <div>
-                <div class="fw-semibold">Auto-start next step</div>
-                <div class="muted-note">Useful for hands-off work and break cycling.</div>
-              </div>
-              <div class="form-check form-switch mb-0">
-                <input id="autoAdvanceToggle" class="form-check-input" type="checkbox" aria-label="Auto-start next step" checked>
-              </div>
-            </div>
-
-            <div class="toggle-row mb-0">
-              <div>
-                <div class="fw-semibold">Announce phase changes</div>
-                <div class="muted-note">Posts screen-reader and status updates when the step changes.</div>
-              </div>
-              <div class="form-check form-switch mb-0">
-                <input id="announceToggle" class="form-check-input" type="checkbox" aria-label="Announce phase changes" checked>
-              </div>
+            <div class="status-bar">
+              <span class="text-body-secondary">Selected preset: <strong id="selectedPresetName">Classic Pomodoro</strong></span>
+              <span class="counts"><strong id="selectedStyleName">Mono Grid</strong> style · <strong id="queueDurationLabel">1h 45m</strong></span>
             </div>
           </div>
         </section>
       </div>
 
       <div class="col-12 col-lg-5">
-        <section class="card panel-card h-100" aria-labelledby="queueHeading">
+        <section class="card panel-card h-100" aria-labelledby="optionsHeading">
           <div class="card-header d-flex justify-content-between align-items-center gap-2 flex-wrap">
-            <div>
-              <strong id="queueHeading">Queue Preview</strong>
-              <p class="mb-0">The active timer walks this sequence from top to bottom.</p>
-            </div>
-            <span class="mini-chip"><strong id="queueDurationLabel">1h 45m</strong> total</span>
+            <strong id="optionsHeading">Options</strong>
+            <span class="text-body-secondary small">Timer behavior</span>
           </div>
           <div class="card-body">
-            <div id="queueList" class="timeline-list" aria-live="polite"></div>
+            <div class="section-stack">
+              <div>
+                <label id="modeHeading" class="section-label" for="modeGrid">Mode</label>
+                <div id="modeGrid" class="mode-grid compact-grid">
+                  <button type="button" class="mode-card is-active" data-mode="preset-queue">
+                    <h3>Preset Queue</h3>
+                    <p>Work and break steps assembled from a productivity pattern.</p>
+                  </button>
+                  <button type="button" class="mode-card" data-mode="custom-countdown">
+                    <h3>Custom Countdown</h3>
+                    <p>One countdown with your own target duration and label.</p>
+                  </button>
+                </div>
+              </div>
+
+              <div>
+                <label id="styleHeading" class="section-label" for="styleGrid">Number styles</label>
+                <div id="styleGrid" class="style-grid compact-grid"></div>
+              </div>
+
+              <div class="settings-grid mb-0">
+                <div class="field-block">
+                  <label for="themeSelect">Theme</label>
+                  <select id="themeSelect">
+                    <option value="canvas-signal">Signal Blue</option>
+                    <option value="sunset-grid">Sunset Grid</option>
+                    <option value="forest-breath">Forest Breath</option>
+                    <option value="paper-lantern">Paper Lantern</option>
+                  </select>
+                </div>
+                <div class="field-block">
+                  <label for="soundSelect">Completion sound</label>
+                  <select id="soundSelect">
+                    <option value="soft-chime">Soft chime</option>
+                    <option value="double-ping">Double ping</option>
+                    <option value="bright-bell">Bright bell</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="toggle-row">
+                <div>
+                  <div class="fw-semibold">Auto-start next step</div>
+                  <div class="muted-note">Useful for hands-off work and break cycling.</div>
+                </div>
+                <div class="form-check form-switch mb-0">
+                  <input id="autoAdvanceToggle" class="form-check-input" type="checkbox" aria-label="Auto-start next step" checked>
+                </div>
+              </div>
+
+              <div class="toggle-row">
+                <div>
+                  <div class="fw-semibold">Announce phase changes</div>
+                  <div class="muted-note">Post status updates as the queue advances.</div>
+                </div>
+                <div class="form-check form-switch mb-0">
+                  <input id="announceToggle" class="form-check-input" type="checkbox" aria-label="Announce phase changes" checked>
+                </div>
+              </div>
+
+              <div class="builder-note mb-0" id="builderNote">
+                Queue duration: 1h 45m total across 4 focus sessions and 4 breaks.
+              </div>
+            </div>
           </div>
         </section>
       </div>
     </div>
 
-    <div class="insight-grid mb-4">
-      <article class="insight-card">
-        <h3>Session totals</h3>
-        <div id="focusTotalValue" class="stat-value">100m</div>
-        <p>Total planned focus time in the active queue.</p>
-      </article>
-      <article class="insight-card">
-        <h3>Break load</h3>
-        <div id="breakTotalValue" class="stat-value">20m</div>
-        <p>Total planned recovery time across the current run.</p>
-      </article>
-      <article class="insight-card">
-        <h3>Run shape</h3>
-        <div id="runShapeValue" class="stat-value">4 rounds</div>
-        <p>How many focus blocks are currently stacked into the queue.</p>
-      </article>
-    </div>
-
-    <div class="alert alert-secondary mb-0">
+    <div class="alert alert-secondary mt-3 mb-0">
       <strong>About this tool.</strong>
       Everything runs in your browser. Presets, style, theme, and builder values are remembered locally.
     </div>
@@ -1207,6 +1173,18 @@
           longBreakMinutes: 5,
           rounds: 4,
           tags: ['activation', 'start small']
+        },
+        {
+          id: 'stopwatch',
+          name: 'Stopwatch',
+          description: 'Open-ended count-up timing without a fixed endpoint.',
+          label: 'Stopwatch',
+          workMinutes: 0,
+          shortBreakMinutes: 0,
+          longBreakMinutes: 0,
+          rounds: 1,
+          tags: ['open ended', 'count up'],
+          kind: 'stopwatch'
         }
       ];
 
@@ -1322,6 +1300,11 @@
       }
 
       function buildPresetQueue(config) {
+        const selectedPreset = getSelectedPreset();
+        if (selectedPreset.kind === 'stopwatch') {
+          return buildStopwatchQueue();
+        }
+
         const steps = [];
         const rounds = clamp(config.rounds, 1, 12, 4);
 
@@ -1354,7 +1337,7 @@
       }
 
       function buildCustomCountdownQueue() {
-        return [{
+        const steps = [{
           type: 'countdown',
           label: (appState.customValues.countdownLabel || 'Countdown').trim() || 'Countdown',
           roundIndex: 1,
@@ -1363,6 +1346,8 @@
             clamp(appState.customValues.countdownMinutes, 0, 1440, 15) * 60 * 1000 +
             clamp(appState.customValues.countdownSeconds, 0, 59, 0) * 1000
         }].filter(step => step.durationMs > 0);
+
+        return steps;
       }
 
       function buildStopwatchQueue() {
@@ -1378,10 +1363,8 @@
       function rebuildQueue(resetPlayback = true) {
         if (appState.mode === 'preset-queue') {
           appState.queue = buildPresetQueue(appState.customValues);
-        } else if (appState.mode === 'custom-countdown') {
-          appState.queue = buildCustomCountdownQueue();
         } else {
-          appState.queue = buildStopwatchQueue();
+          appState.queue = buildCustomCountdownQueue();
         }
 
         if (!appState.queue.length) {
@@ -1519,8 +1502,7 @@
 
         const labelMap = {
           'preset-queue': 'Preset Queue',
-          'custom-countdown': 'Custom Countdown',
-          'stopwatch': 'Stopwatch'
+          'custom-countdown': 'Custom Countdown'
         };
 
         els.displayModePill.textContent = labelMap[appState.mode];
@@ -1544,9 +1526,9 @@
               </div>
             </div>
             <div class="preset-meta">
-              <span>${preset.workMinutes}m focus</span>
-              <span>${preset.shortBreakMinutes}m break</span>
-              <span>${preset.rounds} rounds</span>
+              ${preset.kind === 'stopwatch'
+                ? '<span>No limit</span><span>Count up</span><span>1 step</span>'
+                : `<span>${preset.workMinutes}m focus</span><span>${preset.shortBreakMinutes}m break</span><span>${preset.rounds} rounds</span>`}
             </div>
           `;
           els.presetGrid.appendChild(button);
@@ -1585,20 +1567,26 @@
           if (index === appState.currentStepIndex) {
             item.classList.add('is-current');
           }
+          const roundText = step.type === 'stopwatch'
+            ? 'Open step'
+            : `Round ${step.roundIndex} of ${step.roundCount}`;
           item.innerHTML = `
             <div class="queue-step-label">Step ${index + 1}</div>
             <h3>${step.label}</h3>
-            <p>${step.type === 'focus' ? 'Focus interval' : step.type === 'stopwatch' ? 'Open-ended count up' : 'Recovery interval'}</p>
+            <p>${step.type === 'focus' ? 'Focus interval' : step.type === 'countdown' ? 'Countdown interval' : step.type === 'stopwatch' ? 'Open-ended count up' : 'Recovery interval'}</p>
             <div class="queue-meta">
               <span>${step.type === 'stopwatch' ? 'No limit' : formatCompactDuration(step.durationMs)}</span>
-              <span>Round ${step.roundIndex} of ${step.roundCount}</span>
+              <span>${roundText}</span>
               <span>${step.type.replace('-', ' ')}</span>
             </div>
           `;
           els.queueList.appendChild(item);
         });
 
-        els.queueDurationLabel.textContent = appState.mode === 'stopwatch' ? 'Open ended' : formatCompactDuration(getTotalQueueMs());
+        const hasOnlyStopwatch = appState.queue.length === 1 && appState.queue[0].type === 'stopwatch';
+        els.queueDurationLabel.textContent = hasOnlyStopwatch
+          ? 'Open ended'
+          : formatCompactDuration(getTotalQueueMs());
       }
 
       function applyTheme() {
@@ -1635,18 +1623,34 @@
         const focusTotalMs = getFocusTotalMs();
         const breakTotalMs = getBreakTotalMs();
         const focusSteps = appState.queue.filter(step => step.type === 'focus').length;
+        const hasOnlyStopwatch = appState.queue.length === 1 && appState.queue[0].type === 'stopwatch';
         els.focusTotalValue.textContent = focusTotalMs ? formatCompactDuration(focusTotalMs) : '0m';
         els.breakTotalValue.textContent = breakTotalMs ? formatCompactDuration(breakTotalMs) : '0m';
-        els.runShapeValue.textContent = appState.mode === 'stopwatch' ? 'Open timer' : `${focusSteps || 1} ${focusSteps === 1 ? 'round' : 'rounds'}`;
+        if (hasOnlyStopwatch) {
+          els.runShapeValue.textContent = 'Open timer';
+          return;
+        }
+        if (appState.mode === 'custom-countdown') {
+          els.runShapeValue.textContent = '1 countdown';
+          return;
+        }
+        els.runShapeValue.textContent = `${focusSteps || 1} ${focusSteps === 1 ? 'round' : 'rounds'}`;
       }
 
       function renderBuilderSummary() {
         const focusSteps = appState.queue.filter(step => step.type === 'focus').length;
         const breakSteps = appState.queue.filter(step => step.type === 'short-break' || step.type === 'long-break').length;
-        const totalLabel = appState.mode === 'stopwatch' ? 'No fixed duration' : formatCompactDuration(getTotalQueueMs());
-        els.builderNote.textContent = appState.mode === 'stopwatch'
-          ? 'Stopwatch mode has no queue endpoint. It counts upward until you pause or reset it.'
-          : `Queue duration: ${totalLabel} total across ${focusSteps || 1} ${focusSteps === 1 ? 'focus session' : 'focus sessions'} and ${breakSteps} ${breakSteps === 1 ? 'break' : 'breaks'}.`;
+        const hasOnlyStopwatch = appState.queue.length === 1 && appState.queue[0].type === 'stopwatch';
+        const totalLabel = formatCompactDuration(getTotalQueueMs());
+        if (hasOnlyStopwatch) {
+          els.builderNote.textContent = 'Stopwatch preset selected. It counts upward until you pause or reset it.';
+          return;
+        }
+        if (appState.mode === 'custom-countdown') {
+          els.builderNote.textContent = `Countdown duration: ${totalLabel}.`;
+          return;
+        }
+        els.builderNote.textContent = `Queue duration: ${totalLabel} total across ${focusSteps || 1} ${focusSteps === 1 ? 'focus session' : 'focus sessions'} and ${breakSteps} ${breakSteps === 1 ? 'break' : 'breaks'}.`;
       }
 
       function renderDisplay() {
@@ -1660,9 +1664,11 @@
           : appState.remainingMs / 1000;
 
         els.phaseName.textContent = currentStep.label;
-        els.phaseContext.textContent = appState.mode === 'stopwatch'
+        els.phaseContext.textContent = currentStep.type === 'stopwatch'
           ? 'Open-ended timing'
-          : `Round ${currentStep.roundIndex} of ${currentStep.roundCount}`;
+          : appState.mode === 'custom-countdown'
+            ? `Step ${appState.currentStepIndex + 1} of ${appState.queue.length}`
+            : `Round ${currentStep.roundIndex} of ${currentStep.roundCount}`;
         els.timeDisplay.textContent = formatClock(secondsForDisplay, secondsForDisplay >= 3600 || currentStep.type === 'stopwatch');
         els.elapsedLabel.textContent = formatClock(elapsedMs / 1000, elapsedMs >= 3600 * 1000);
         els.remainingLabel.textContent = currentStep.type === 'stopwatch'
@@ -1916,11 +1922,7 @@
         appState.autoAdvance = els.autoAdvanceToggle.checked;
         appState.announce = els.announceToggle.checked;
 
-        if (appState.mode === 'preset-queue' || appState.mode === 'custom-countdown') {
-          rebuildQueue(true);
-        } else {
-          renderAll();
-        }
+        rebuildQueue(true);
       }
 
       function wireEvents() {
@@ -2007,6 +2009,9 @@
       }
 
       loadState();
+      if (appState.mode !== 'preset-queue' && appState.mode !== 'custom-countdown') {
+        appState.mode = 'preset-queue';
+      }
       if (!presets.some(preset => preset.id === appState.presetId)) {
         appState.presetId = presets[0].id;
       }
