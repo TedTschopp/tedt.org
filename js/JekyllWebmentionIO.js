@@ -485,31 +485,43 @@
     }
   }
 
-  // Synchromous XHR proxied through whateverorigin.org
+  // Read page HTML directly when the browser can access it; fail closed otherwise.
   function readWebPage( uri, callback )
   {
-      if ( 'XMLHttpRequest' in window )
+      if ( 'fetch' in window && 'URL' in window )
       {
-        var XHR = new XMLHttpRequest();
         readWebPage = function( uri, callback ){
-          var done = false;
-          uri = '//whateverorigin.org/get?url=' + encodeURIComponent( uri );
-          XHR.onreadystatechange = function() {
-            if ( this.readyState == 4 && ! done ) {
-              done = true;
-              callback( XHR.responseText );
-            }
-          };
-          XHR.onabort = function() {
-            if ( ! done )
+          var url;
+
+          try
+          {
+            url = new URL( uri, window.location.href );
+          }
+          catch ( error )
+          {
+            callback( false );
+            return;
+          }
+
+          window.fetch( url.href, {
+            method: 'GET',
+            mode: url.origin == window.location.origin ? 'same-origin' : 'cors',
+            credentials: 'omit',
+            redirect: 'follow'
+          } )
+          .then(function( response ){
+            if ( ! response.ok )
             {
-              done = true;
-              callback( false );
+              throw new Error( 'Unable to read remote page' );
             }
-          };
-          XHR.onerror = XHR.onabort;
-          XHR.open( 'GET', uri );
-          XHR.send( null );
+            return response.text();
+          })
+          .then(function( html ){
+            callback( html );
+          })
+          .catch(function(){
+            callback( false );
+          });
         };
       }
       else
