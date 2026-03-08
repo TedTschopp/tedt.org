@@ -77,7 +77,8 @@
 
 {%- else -%}
   {%- comment -%} No author specified - fall back to site default {%- endcomment -%}
-  {%- assign resolved_authors = resolved_authors | push: site.author -%}
+  {%- assign _default_author = site.authors.tschopp | default: site.author -%}
+  {%- assign resolved_authors = resolved_authors | push: _default_author -%}
 {%- endif -%}
 
 {%- assign resolved_authors_count = resolved_authors.size -%}

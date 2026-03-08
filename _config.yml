@@ -45,23 +45,52 @@ keywords:
 # Permalink 
 permalink: /:title/
 
-# First Name / Given Name / Common Name
-givenname: Ted
+# Canonical personal/profile metadata. Legacy top-level keys and author maps
+# below alias these values for compatibility until template cleanup work lands.
+profile:
+  name: &profile_name Ted Tschopp
+  url: &profile_url https://tedt.org/
+  avatar: &profile_avatar https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+  givenname: &profile_givenname Ted
+  familyname: &profile_familyname Tschopp
+  jobtitle: &profile_jobtitle Enterprise Architect
+  othernames: &profile_othernames Þeodor Tʃopp | टेड चप | Фёдор Чоп | تد شُپ | Թեդ Չոպպ | Ted Çop | டெட் சாப் | טעד טשאָפּ | Τεντ Τσοπ | 테드 촙 | 特德·察普 | テッド・チョッパ | ტედ ჩოპი | เท็ด ชอพ | ເທດ ຊອບ | ടെഡ് ചോപ്പ് | টেড চপ | ཏེཌ་ ཅོཔ། | ቴድ ቾፕ | ᏖᏗ ᏦᏇ | ᛏᛖᛞ ᛏᛋᚲᛟᛈᛈ | 𐌀𐌄𐌃 𐌕𐌔𐌂𐌏𐌐𐌐 | Ⱅⰵⰴ ⱌⱁⱂⱂ | ܬܝܕ ܟܘܦ | ᠲᠡᠳᠡᠳ ᠴᠣᠫ | ᑌᑎ ᒍᐳᐱ | ꕚꔳ ꗍꖛ | ߕߋߘ ߞߐߔߔ | 𐔓𐔖𐔆 𐔓𐔀𐔚𐔚 | 𐎚𐎄𐎆 𐎚𐎌𐎒𐎒 | 𐎄𐎓𐎆 𐎚𐎔𐎒𐎒 | 𐤕𐤄𐤃 𐤕𐤔𐤐𐤐 | 𐤕𐤃𐤄 𐤕𐤔𐤏𐤐 | 𐎚𐎄𐎆 𐎚𐎘𐎔𐎔 | 𒋼𒁺𒁍 𒋼𒊭𒉺𒉺 | 𓏏𓂧𓂝 𓏏𓊃𓍿𓊪 | ⲧⲉⲇ ⲧϣⲟⲡⲡ | 𐌕𐌄𐌃 𐌕𐌔𐌎𐌐𐌐 | 𐤈𐤃𐤄 𐤈𐤔𐤐𐤐 | 𐌕𐌄𐌃 𐌕𐌔𐌏𐌐𐌐 | 𐌕𐌄𐌃 𐌕𐌔𐌐𐌐 | 𐎄𐎕𐎆 𐎚𐎑𐎔𐎔 | 𐔓𐔖𐔆 𐔓𐔀𐔚𐔚 | 𐀳𐀂𐀅 𐀳𐀴𐀞 | 𐱃𐰀𐰓 𐱃𐰴𐰯 | 𑀢𑁂𑀤𑁆 𑀘𑁄𑀧𑁆 | 𐨟𐨂𐨡 𐨖𐨎𐨿 | 𐦚𐦱𐦟 𐦚𐦷𐦣 | 𐭓𐭐𐭃 𐭓𐭱𐭕𐭕 | 𐭲𐭩𐭣 𐭲𐭱𐭯𐭯 | ᚈᚓᚇ ᚈᚄᚉᚑᚚᚚ | 𒋼𒁺𒁍 𒋼𒊭𒉺𒉺 | ᛏᛖᛞ ᛏᛋᚲᛟᛈᛈ | تيد تشوب | ટેડ ચોક્પ | ਟੇਡ ਚੋਪ | ಟೆಡ್ ಚೊಪ್ | ටෙඩ් චොප් | တက် ချော့ပ် | តេដ ឆប | ꦠꦺꦢ꧀ ꦕꦺꦴꦥ꧀ | ᬢᭂᬤ᭄ ᬘᭀᬧ᭄ | ᜆᜒᜇ᜔ ᜆ᜔ᜐᜓᜉ᜔ | ᏖᏗ ᏣᏊ | ꄊꄮ ꍏꀠ | ଟେଡ୍ ଚୋପ୍ | ⵜⴻⴷ ⵛⵓⵒ | 𐐓𐐯𐐼 𐐟𐐙𐐱𐐹 | 𐑑𐑧𐑛 𐑗𐑪𐑐 | 𐘳𐘂𐘅 𐘳𐘴𐘞 | 𐠔𐠁𐠊 𐠔𐠷𐠡 | 𐊗𐊁𐊅 𐊗𐊐𐊓 | 𐊴𐊭𐊺 𐊴𐋄𐊸 | 𐢞𐢉𐢅 𐢞𐢝𐢘 | ࠕࠄࠃ ࠕࠔࠐࠐ | 𐫤𐫏𐫝 𐫤𐫘𐫖 | ꡈꡦ ꡐꡡꡌ | ꯇꯦꯗ ꯆꯣꯄ | ꨓꨯꨕ ꨌꨱꨚ | ᨲᩮᨯ᩠ ᨩᩮᩫ᩠ | ꪔꫀꪒ ꪊꪮꪚ | ᯖᯩᯑ᯲ ᯙᯬᯇ᯲ | ꥆꥍꤴ ꥓ꥏꥒ | ᨈᨙᨉᨛ ᨌᨚᨄᨛ | ᮒᮨᮓ᮪ ᮎᮧᮕ᮪ | ᜦᜒᜇ᜴ ᜰᜳᜉ᜴ | ᝆᝒᝇ᝔ ᝌᝓᝉ᝔ | ꠔꠦꠖ ꠌꠥꠙ | 𑂞𑂵𑂠 𑂒𑂷𑂣 | 𑆠𑆼𑆢𑇀 𑆖𑆾𑆥𑇀 | 𑚔𑚵𑚖 𑚏𑚴𑚞 | 𑲌𑲹𑲏 𑱰𑲿𑱱 | 𑊢𑋐𑊦 𑊓𑋒𑊪 | 𑈋𑈸𑈍𑈴 𑈑𑈺𑈞𑈴 | 𑅐𑅬𑅒 𑅘𑅺𑅛 | 𑘝𑘿𑘟 𑘓𑘽𑘨 | 𑜔𑜦𑜕 𑜒𑜩𑜞 | 𑣕𑣈𑣙 𑣌𑣏𑣗 | 𞠔𞠀𞠙 𞠌𞠁𞠖 | 𑫎𑫟𑫒 𑫏𑫝𑫐 | 𐓰𐒰𐓈 𐓍𐒷𐓄 | 𞤚𞤫𞤣 𞤷𞤮𞥄 | 𖫐𖫪𖫓 𖫗𖫩𖫞 | 𛰙𛱎𛰣 𛲄𛱖𛱐 |  
+  biography: &profile_biography
+    - I am the enterprise architect at Southern California Edison (SCE), serving over 20 million people across 430 cities and 50,000 square miles. In my role, I offer strategic guidance on all software and products developed in IT to executives, senior leadership, and business stakeholders, drawing on my 25 years of experience at SCE.
+    - Before joining Edison, I owned a business featured in Wired Magazine.  I founded the largest J.R.R. Tolkien community website. Earlier, I worked in market research for the automotive industry.
+    - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
+  email: &profile_email ted@tschopp.org
+  phonenumber: &profile_phonenumber 
+  locality: &profile_locality Los Angeles
+  region: &profile_region California
+  country: &profile_country USA
+  # Update site-level social handles here first. Legacy top-level keys below
+  # are compatibility aliases and should not become the primary edit path.
+  social:
+    keybaseio_username: &profile_keybaseio_username tedtschopp
+    twitter_username: &profile_twitter_username TedTschopp
+    github_username: &profile_github_username TedTschopp
+    linkedin_username: &profile_linkedin_username tedtschopp
+    facebook_username: &profile_facebook_username ted.tschopp
+    google_username: &profile_google_username TedTschopp
+    youtube_username: &profile_youtube_username TedTschopp
+    pinterest_username: &profile_pinterest_username TedTschopp
+    reddit_username: &profile_reddit_username tedtschopp
+    instagram_username: &profile_instagram_username tedtschopp
+    quora_username: &profile_quora_username Ted-Tschopp
+    indiewebcamp_username: &profile_indiewebcamp_username Www.tedt.org
+    mastodon_username: &profile_mastodon_username TedT@twit.social
+    threads_username: &profile_threads_username TedTschopp@threads.net
+    fediverse_creators: &profile_fediverse_creators
+      - TedT@twit.social
+      - Ted@tschopp.net
 
-#Family Name
-familyname: Tschopp
-
-# job title
-jobtitle: Enterprise Architect
-
-#Other Names
-othernames: Þeodor Tʃopp | टेड चप | Фёдор Чоп | تد شُپ | Թեդ Չոպպ | Ted Çop | டெட் சாப் | טעד טשאָפּ | Τεντ Τσοπ | 테드 촙 | 特德·察普 | テッド・チョッパ | ტედ ჩოპი | เท็ด ชอพ | ເທດ ຊອບ | ടെഡ് ചോപ്പ് | টেড চপ | ཏེཌ་ ཅོཔ། | ቴድ ቾፕ | ᏖᏗ ᏦᏇ | ᛏᛖᛞ ᛏᛋᚲᛟᛈᛈ | 𐌀𐌄𐌃 𐌕𐌔𐌂𐌏𐌐𐌐 | Ⱅⰵⰴ ⱌⱁⱂⱂ | ܬܝܕ ܟܘܦ | ᠲᠡᠳᠡᠳ ᠴᠣᠫ | ᑌᑎ ᒍᐳᐱ | ꕚꔳ ꗍꖛ | ߕߋߘ ߞߐߔߔ | 𐔓𐔖𐔆 𐔓𐔀𐔚𐔚 | 𐎚𐎄𐎆 𐎚𐎌𐎒𐎒 | 𐎄𐎓𐎆 𐎚𐎔𐎒𐎒 | 𐤕𐤄𐤃 𐤕𐤔𐤐𐤐 | 𐤕𐤃𐤄 𐤕𐤔𐤏𐤐 | 𐎚𐎄𐎆 𐎚𐎘𐎔𐎔 | 𒋼𒁺𒁍 𒋼𒊭𒉺𒉺 | 𓏏𓂧𓂝 𓏏𓊃𓍿𓊪 | ⲧⲉⲇ ⲧϣⲟⲡⲡ | 𐌕𐌄𐌃 𐌕𐌔𐌎𐌐𐌐 | 𐤈𐤃𐤄 𐤈𐤔𐤐𐤐 | 𐌕𐌄𐌃 𐌕𐌔𐌏𐌐𐌐 | 𐌕𐌄𐌃 𐌕𐌔𐌐𐌐 | 𐎄𐎕𐎆 𐎚𐎑𐎔𐎔 | 𐔓𐔖𐔆 𐔓𐔀𐔚𐔚 | 𐀳𐀂𐀅 𐀳𐀴𐀞 | 𐱃𐰀𐰓 𐱃𐰴𐰯 | 𑀢𑁂𑀤𑁆 𑀘𑁄𑀧𑁆 | 𐨟𐨂𐨡 𐨖𐨎𐨿 | 𐦚𐦱𐦟 𐦚𐦷𐦣 | 𐭓𐭐𐭃 𐭓𐭱𐭕𐭕 | 𐭲𐭩𐭣 𐭲𐭱𐭯𐭯 | ᚈᚓᚇ ᚈᚄᚉᚑᚚᚚ | 𒋼𒁺𒁍 𒋼𒊭𒉺𒉺 | ᛏᛖᛞ ᛏᛋᚲᛟᛈᛈ | تيد تشوب | ટેડ ચોક્પ | ਟੇਡ ਚੋਪ | ಟೆಡ್ ಚೊಪ್ | ටෙඩ් චොප් | တက် ချော့ပ် | តេដ ឆប | ꦠꦺꦢ꧀ ꦕꦺꦴꦥ꧀ | ᬢᭂᬤ᭄ ᬘᭀᬧ᭄ | ᜆᜒᜇ᜔ ᜆ᜔ᜐᜓᜉ᜔ | ᏖᏗ ᏣᏊ | ꄊꄮ ꍏꀠ | ଟେଡ୍ ଚୋପ୍ | ⵜⴻⴷ ⵛⵓⵒ | 𐐓𐐯𐐼 𐐟𐐙𐐱𐐹 | 𐑑𐑧𐑛 𐑗𐑪𐑐 | 𐘳𐘂𐘅 𐘳𐘴𐘞 | 𐠔𐠁𐠊 𐠔𐠷𐠡 | 𐊗𐊁𐊅 𐊗𐊐𐊓 | 𐊴𐊭𐊺 𐊴𐋄𐊸 | 𐢞𐢉𐢅 𐢞𐢝𐢘 | ࠕࠄࠃ ࠕࠔࠐࠐ | 𐫤𐫏𐫝 𐫤𐫘𐫖 | ꡈꡦ ꡐꡡꡌ | ꯇꯦꯗ ꯆꯣꯄ | ꨓꨯꨕ ꨌꨱꨚ | ᨲᩮᨯ᩠ ᨩᩮᩫ᩠ | ꪔꫀꪒ ꪊꪮꪚ | ᯖᯩᯑ᯲ ᯙᯬᯇ᯲ | ꥆꥍꤴ ꥓ꥏꥒ | ᨈᨙᨉᨛ ᨌᨚᨄᨛ | ᮒᮨᮓ᮪ ᮎᮧᮕ᮪ | ᜦᜒᜇ᜴ ᜰᜳᜉ᜴ | ᝆᝒᝇ᝔ ᝌᝓᝉ᝔ | ꠔꠦꠖ ꠌꠥꠙ | 𑂞𑂵𑂠 𑂒𑂷𑂣 | 𑆠𑆼𑆢𑇀 𑆖𑆾𑆥𑇀 | 𑚔𑚵𑚖 𑚏𑚴𑚞 | 𑲌𑲹𑲏 𑱰𑲿𑱱 | 𑊢𑋐𑊦 𑊓𑋒𑊪 | 𑈋𑈸𑈍𑈴 𑈑𑈺𑈞𑈴 | 𑅐𑅬𑅒 𑅘𑅺𑅛 | 𑘝𑘿𑘟 𑘓𑘽𑘨 | 𑜔𑜦𑜕 𑜒𑜩𑜞 | 𑣕𑣈𑣙 𑣌𑣏𑣗 | 𞠔𞠀𞠙 𞠌𞠁𞠖 | 𑫎𑫟𑫒 𑫏𑫝𑫐 | 𐓰𐒰𐓈 𐓍𐒷𐓄 | 𞤚𞤫𞤣 𞤷𞤮𞥄 | 𖫐𖫪𖫓 𖫗𖫩𖫞 | 𛰙𛱎𛰣 𛲄𛱖𛱐 |  
-
-#Biography 
-biography:
-- I am the enterprise architect at Southern California Edison (SCE), serving over 20 million people across 430 cities and 50,000 square miles. In my role, I offer strategic guidance on all software and products developed in IT to executives, senior leadership, and business stakeholders, drawing on my 25 years of experience at SCE.
-- Before joining Edison, I owned a business featured in Wired Magazine.  I founded the largest J.R.R. Tolkien community website. Earlier, I worked in market research for the automotive industry.
-- I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
+# Legacy top-level aliases kept for compatibility with current layouts/includes.
+givenname: *profile_givenname
+familyname: *profile_familyname
+jobtitle: *profile_jobtitle
+othernames: *profile_othernames
+biography: *profile_biography
 
 # The Logo of the site
 logo: https://tedt.org/img/Site-Logo.webp
@@ -78,9 +107,9 @@ subtitle: Exploring the Theology of the Digital Age Through Creativity, Ethics, 
 name: Ted Tschopp's Homepage
 
 #Locality
-locality: Los Angeles
-region: California
-country: USA
+locality: *profile_locality
+region: *profile_region
+country: *profile_country
 
 timezone: America/Los_Angeles
 
@@ -151,82 +180,54 @@ defaults:
 # Or use {% include utility/resolve-authors.html page=page %} for multi-author
 # =============================================================================
 authors:
-  tschopp:
-    name: Ted Tschopp
-    url: https://tedt.org/
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-    givenname: Ted
-    familyname: Tschopp
-    othernames: Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
-    biography:
-    - I am the enterprise architect focused on the IT portfolio, Product Engineering, and Product Development at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with the IT portfolio and how we Engineer and Construct solutions for our business partners. I have been at SCE for over 20 years.
-    - Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I was the Director of Technical Services for a market research company focused on the automotive industry.
-    - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
-    email: ted@tschopp.org
-    phonenumber:
-    keybaseio_username: tedtschopp
-    twitter_username: TedTschopp
-    github_username: TedTschopp
-    linkedin_username: tedtschopp
-    facebook_username: ted.tschopp
-    google_username: TedTschopp
-    youtube_username: TedTschopp
-    pinterest_username: TedTschopp
-    reddit_username: tedtschopp
-    instagram_username: tedtschopp
-    quora_username: Ted-Tschopp
-    indiewebcamp_username: Www.tedt.org
-    mastodon_username: TedT@twit.social
-    threads_username: tedtschopp
+  tschopp: &primary_author
+    name: *profile_name
+    url: *profile_url
+    avatar: *profile_avatar
+    givenname: *profile_givenname
+    familyname: *profile_familyname
+    othernames: *profile_othernames
+    biography: *profile_biography
+    email: *profile_email
+    phonenumber: *profile_phonenumber
+    keybaseio_username: *profile_keybaseio_username
+    twitter_username: *profile_twitter_username
+    twitter: *profile_twitter_username
+    github_username: *profile_github_username
+    linkedin_username: *profile_linkedin_username
+    facebook_username: *profile_facebook_username
+    google_username: *profile_google_username
+    youtube_username: *profile_youtube_username
+    pinterest_username: *profile_pinterest_username
+    reddit_username: *profile_reddit_username
+    instagram_username: *profile_instagram_username
+    quora_username: *profile_quora_username
+    indiewebcamp_username: *profile_indiewebcamp_username
+    mastodon_username: *profile_mastodon_username
+    threads_username: *profile_threads_username
 
   copilot:
     name: GitHub Copilot
     url: https://github.com/features/copilot
     avatar: https://github.githubassets.com/images/modules/site/copilot/copilot.png
 
-author:
-  name: Ted Tschopp
-  url: https://tedt.org/
-  avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
-  givenname: Ted
-  familyname: Tschopp
-  othernames: Þeodor Tʃopp | टेड चप | Фёдор Тшёп | تِد چاپ | Թէտ Չըփ | Ted Çeöp | தெட் சுப்
-  biography:
-  - I am the enterprise technology architect focused on digital and automation portfolios at Southern California Edison(SCE), one of the United States' largest investor-owned utilities with a service territory of over 50,000 square miles consisting of 430 cities and home to nearly 14 million people. In this role I am responsible for providing major stake holders, executives, and senior management with strategic and actionable guidance focusing on the maturity and technical issues and risks associated with Web, Mobile, Social, and Automation ecosystems. I have been at SCE for over a decade.
-  - Before working at Edison, I owned my own business which was featured in Wired Magazine. I founded the largest community website focused on the works of J.R.R. Tolkien. Prior to this I worked in for a market research company focusing on the automotive industry.
-  - I love working in technology as it provides me with the opportunity to watch the future unfold. Some of the things I have worked on were considered science-fiction when I was in school. This means I get to work on hard problems with brilliant people using complex and cool tools.
-  email: ted@tschopp.org
-  phonenumber:
-  keybaseio_username: tedtschopp
-  twitter_username: TedTschopp
-  github_username: TedTschopp
-  linkedin_username: tedtschopp
-  facebook_username: ted.tschopp
-  google_username: TedTschopp
-  youtube_username: TedTschopp
-  pinterest_username: TedTschopp
-  reddit_username: tedtschopp
-  instagram_username: tedtschopp
-  quora_username: Ted-Tschopp
-  indiewebcamp_username: Www.tedt.org
-  mastodon_username: TedT@twit.social
-  threads_username: tedtschopp
+author: *primary_author
 #  google_username: TedTschopp
 
-email: ted@tschopp.org
-phonenumber:
-indiewebcamp_username: Www.tedt.org # Done
-github_username: TedTschopp # Done
-quora_username: Ted-Tschopp # Done
-pinterest_username: TedTschopp # Done
-youtube_username: TedTschopp # done
-linkedin_username: tedtschopp # Done
-facebook_username: ted.tschopp # Done
-reddit_username: tedtschopp # Done
-twitter_username: TedTschopp # Done
-threads_username: TedTschopp@threads.net # Done
-mastodon_username: TedT@twit.social # Done
-instagram_username: tedtschopp # Done
+email: *profile_email
+phonenumber: *profile_phonenumber
+indiewebcamp_username: *profile_indiewebcamp_username # Done
+github_username: *profile_github_username # Done
+quora_username: *profile_quora_username # Done
+pinterest_username: *profile_pinterest_username # Done
+youtube_username: *profile_youtube_username # done
+linkedin_username: *profile_linkedin_username # Done
+facebook_username: *profile_facebook_username # Done
+reddit_username: *profile_reddit_username # Done
+twitter_username: *profile_twitter_username # Done
+threads_username: *profile_threads_username # Done
+mastodon_username: *profile_mastodon_username # Done
+instagram_username: *profile_instagram_username # Done
 foursquare: //foursquare.com/tedtschopp # Done
 goodreads: //www.goodreads.com/TedTschopp # Done
 instagram: www.instagram.com/tedtschopp/ # Done
@@ -237,7 +238,7 @@ tumblr: https://www.tumblr.com/blog/tedtschopp # Done
 vimeo: //vimeo.com/tedtschop # Done
 xboxlive: https://account.xbox.com/en-us/profile?gamertag=TheoTheSilly # Done
 Steam: //steamcommunity.com/id/theothesilly/ # Done
-keybaseio_username: tedtschopp # Done  
+keybaseio_username: *profile_keybaseio_username # Done  
 
 fitbit: //www.fitbit.com/user/242JHZ
 runkeeper: //runkeeper.com/user/TedTschopp

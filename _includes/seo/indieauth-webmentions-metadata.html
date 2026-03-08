@@ -1,65 +1,66 @@
+    {% assign site_profile_social = site.profile.social %}
     <!-- IndieAuth.com -->
-    {% if site.github_username or
-          site.linkedin_username or
-          site.twitter_username or
-          site.facebook_username or
-          site.google_username or
-          site.youtube_username or
-          site.pinterest_username or
-          site.reddit_username or
-          site.instagram_username or
-          site.quora_username or
-          site.indiewebcamp_username or
-          site.keybaseio_username
+    {% if site_profile_social.github_username or
+          site_profile_social.linkedin_username or
+          site_profile_social.twitter_username or
+          site_profile_social.facebook_username or
+          site_profile_social.google_username or
+          site_profile_social.youtube_username or
+          site_profile_social.pinterest_username or
+          site_profile_social.reddit_username or
+          site_profile_social.instagram_username or
+          site_profile_social.quora_username or
+          site_profile_social.indiewebcamp_username or
+          site_profile_social.keybaseio_username
           %}
 
-            {% if site.keybaseio_username %}
-              <link href="https://keybase.io/{{ site.keybaseio_username }}" rel="me">
+            {% if site_profile_social.keybaseio_username %}
+              <link href="https://keybase.io/{{ site_profile_social.keybaseio_username }}" rel="me">
             {% else %}
             {% endif %}
 
-            {% if site.github_username %}
-                <link href="https://github.com/{{ site.github_username }}/" rel="me">
+            {% if site_profile_social.github_username %}
+                <link href="https://github.com/{{ site_profile_social.github_username }}/" rel="me">
             {% else %}
             {% endif %}
-            {% if site.linkedin_username %}
-                <link href="https://www.linkedin.com/in/{{ site.linkedin_username }}/" rel="me">
+            {% if site_profile_social.linkedin_username %}
+                <link href="https://www.linkedin.com/in/{{ site_profile_social.linkedin_username }}/" rel="me">
             {% else %}
             {% endif %}
-            {% if site.twitter_username %}
-                <link href="https://twitter.com/{{ site.twitter_username }}" rel="me">
+            {% if site_profile_social.twitter_username %}
+                <link href="https://twitter.com/{{ site_profile_social.twitter_username }}" rel="me">
             {% else %}
             {% endif %}
-            {% if site.facebook_username %}
-                <link href="https://www.facebook.com/{{ site.facebook_username }}" rel="me">
+            {% if site_profile_social.facebook_username %}
+                <link href="https://www.facebook.com/{{ site_profile_social.facebook_username }}" rel="me">
             {% else %}
             {% endif %}
-            {% if site.google_username %}
-                <link href="https://plus.google.com/u/0/+{{ site.google_username }}" rel="me">
+            {% if site_profile_social.google_username %}
+                <link href="https://plus.google.com/u/0/+{{ site_profile_social.google_username }}" rel="me">
             {% else %}
             {% endif %}
-            {% if site.youtube_username %}
-                <link href="https://www.youtube.com/user/{{ site.youtube_username }}/" rel="me">
+            {% if site_profile_social.youtube_username %}
+                <link href="https://www.youtube.com/user/{{ site_profile_social.youtube_username }}/" rel="me">
             {% else %}
             {% endif %}
-            {% if site.pinterest_username %}
-                <link href="https://www.pinterest.com/{{ site.pinterest_username }}/" rel="me">
+            {% if site_profile_social.pinterest_username %}
+                <link href="https://www.pinterest.com/{{ site_profile_social.pinterest_username }}/" rel="me">
             {% else %}
             {% endif %}
-            {% if site.reddit_username %}
-                <link href="https://www.reddit.com/user/{{ site.reddit_username }}/" rel="me">
+            {% if site_profile_social.reddit_username %}
+                <link href="https://www.reddit.com/user/{{ site_profile_social.reddit_username }}/" rel="me">
             {% else %}
             {% endif %}
-            {% if site.instagram_username %}
-                <link href="https://www.instagram.com/{{ site.instagram_username }}/" rel="me">
+            {% if site_profile_social.instagram_username %}
+                <link href="https://www.instagram.com/{{ site_profile_social.instagram_username }}/" rel="me">
             {% else %}
             {% endif %}
-            {% if site.quora_username %}
-                <link href="https://www.quora.com/profile/{{ site.quora_username }}/" rel="me">
+            {% if site_profile_social.quora_username %}
+                <link href="https://www.quora.com/profile/{{ site_profile_social.quora_username }}/" rel="me">
             {% else %}
             {% endif %}
-            {% if site.indiewebcamp_username %}
-                <link href="https://indieweb.org/User:{{ site.indiewebcamp_username }}/" rel="me">
+            {% if site_profile_social.indiewebcamp_username %}
+                <link href="https://indieweb.org/User:{{ site_profile_social.indiewebcamp_username }}/" rel="me">
             {% else %}
             {% endif %}
     {% endif %}

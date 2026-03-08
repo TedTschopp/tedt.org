@@ -13,10 +13,13 @@
 {% else %}
   {% assign this_page_title = this_page.title %}
 {% endif %}
+{% assign site_profile = site.profile %}
+{% assign site_profile_social = site_profile.social %}
+{% assign site_profile_name = site_profile.name | default: site.author.name | default: site.title %}
 
 	<title>{{ this_page_title }}</title>
   <!-- TODO: Add Multiple Authors -->
-  <meta name="author" content="{{ site.givenname }} {{ site.familyname }}">
+  <meta name="author" content="{{ site_profile_name }}">
   <link rel="author" href="{{site.url}}/humans.txt">
   <link rel="copyright" href="{{site.url}}/Copyright/">
   {% capture canonical_url_safe %}{% include utility/safe-absolute-url.html url=page.url %}{% endcapture %}
@@ -24,9 +27,13 @@
   <link rel="canonical" href="{{ canonical_url_safe }}" />
 
   <!-- Mastodon Meta Data-->
-  <!-- TODO: move to configuration _config.yml once you figure out multiple accounts.  -->
-  <meta name="fediverse:creator" content="@TedT@twit.social">
-  <meta name="fediverse:creator" content="@Ted@tschopp.net">
+  {% if site_profile_social.fediverse_creators %}
+    {% for fediverse_creator in site_profile_social.fediverse_creators %}
+  <meta name="fediverse:creator" content="@{{ fediverse_creator }}">
+    {% endfor %}
+  {% elsif site_profile_social.mastodon_username %}
+  <meta name="fediverse:creator" content="@{{ site_profile_social.mastodon_username }}">
+  {% endif %}
 
 
 {% comment %} Compute meta description precedence: page.summary > page.seo-description > page['seo-description'] > page.description > site.description; then fallback to generated excerpt/content if still blank. {% endcomment %}
@@ -136,11 +143,11 @@ Order: site, creator, title, description, image, url.
 Description precedence: page.summary > page.seo-description > page.description > site.description
 {%- endcomment -%}
 {% assign twitter_description = page.summary | default: meta_description_clean_300 %}
-<meta name="twitter:site" content="@{{ site.twitter_username }}">
+<meta name="twitter:site" content="@{{ site_profile_social.twitter_username }}">
 {% if page.author and page.author.twitter %}
   <meta name="twitter:creator" content="@{{ page.author.twitter }}">
-{% elsif site.author and site.author.twitter %}
-  <meta name="twitter:creator" content="@{{ site.author.twitter }}">
+{% elsif site.author and site.author.twitter_username %}
+  <meta name="twitter:creator" content="@{{ site.author.twitter_username }}">
 {% endif %}
 <meta name="twitter:title" content="{{ this_page_title }}">
 {%- assign twitter_description_sanitized = twitter_description
@@ -221,14 +228,14 @@ If it's the homepage treat as WebSite only; else add Article object.
   "url": "{{ home-page-url }}",
   "name": "{{ site.title | escape }}",
   "description": {{ meta_description_attr_300 | jsonify }},
-  "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"}
+  "publisher": {"@type":"Person","name":"{{ site_profile_name }}"}
   {% else %}
   "@graph": [
     {
       "@type": "WebSite",
       "url": "{{ home-page-url }}",
       "name": "{{ site.title | escape }}",
-      "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"}
+      "publisher": {"@type":"Person","name":"{{ site_profile_name }}"}
     },
     {
       "@type": "Article",
@@ -238,8 +245,8 @@ If it's the homepage treat as WebSite only; else add Article object.
       {% if og_image_url %}"image": ["{{ og_image_url }}"],{% endif %}
       {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
       {% if page.update %}"dateModified": "{{ page.update | date_to_xmlschema }}",{% endif %}
-      "author": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"},
-      "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"},
+      "author": {"@type":"Person","name":"{{ site_profile_name }}"},
+      "publisher": {"@type":"Person","name":"{{ site_profile_name }}"},
       {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }}, {% endif %}
       {% if page.categories %}"articleSection": {{ page.categories | first | jsonify }},{% endif %}
       "mainEntityOfPage": {"@type":"WebPage","@id":"{{ canonical_url_safe }}"}
