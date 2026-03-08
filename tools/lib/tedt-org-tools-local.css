@@ -1,0 +1,12 @@
+/* Local file fallback for standalone /tools pages opened via file://.
+   Mirrors the shared HTTP entrypoint, but points at on-disk assets that exist
+   in the repository without requiring Jekyll compilation. */
+
+@import url("../../css/bootstrap.css");
+@import url("../../css/shared-fonts.css");
+@import url("../../css/logo-and-company-fonts.css");
+
+.Dohring-watermark::before { background-image: url("../../img/home/logo-Dohring.webp"); }
+.TORC-watermark::before    { background-image: url("../../img/home/logo-TORC.webp"); }
+.SCE-watermark::before     { background-image: url("../../img/home/logo-SCE.webp"); }
+.Tschopp-watermark::before { background-image: url("../../img/home/logo-Tschopp.webp"); }
