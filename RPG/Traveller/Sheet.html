@@ -223,7 +223,7 @@
                     <label for='roll3-edu'>EDU</label>
                     <input id='roll3-soc' type='radio' name='attr_charmancer_roll3_assignment' value='base-Social'/>
                     <label for='roll3-soc'>SOC</label>
-                    <span>
+                </span>
             </div> <!-- sheet-charmancer_stat-panel -->
             <div class='sheet-charmancer_stat-panel'>
                 <input type='text' name='attr_charmancer_roll4'/>
@@ -240,7 +240,7 @@
                     <label for='roll4-edu'>EDU</label>
                     <input id='roll4-soc' type='radio' name='attr_charmancer_roll4_assignment' value='base-Social'/>
                     <label for='roll4-soc'>SOC</label>
-                    <span>
+                </span>
             </div> <!-- sheet-charmancer_stat-panel -->
             <div class='sheet-charmancer_stat-panel'>
                 <input type='text' name='attr_charmancer_roll5'/>
@@ -257,7 +257,7 @@
                     <label for='roll5-edu'>EDU</label>
                     <input id='roll5-soc' type='radio' name='attr_charmancer_roll5_assignment' value='base-Social'/>
                     <label for='roll5-soc'>SOC</label>
-                    <span>
+                </span>
             </div> <!-- sheet-charmancer_stat-panel -->
             <div class='sheet-charmancer_stat-panel'>
                 <input type='text' name='attr_charmancer_roll6'/>
@@ -274,7 +274,7 @@
                     <label for='roll6-edu'>EDU</label>
                     <input id='roll6-soc' type='radio' name='attr_charmancer_roll6_assignment' value='base-Social' checked/>
                     <label for='roll6-soc'>SOC</label>
-                    <span>
+                </span>
             </div> <!-- sheet-charmancer_stat-panel -->
         </div> <!-- 'sheet-charmancer_stats-content -->
 
@@ -5067,10 +5067,14 @@
                     <td colspan="4">{{weapon}}</td>
                 </tr>
                 <!-- {{#rollhasboon}} -->
-                <td colspan="4">Rolling with BOON</td>
+                <tr>
+                    <td colspan="4">Rolling with BOON</td>
+                </tr>
                 <!-- {{/rollhasboon}} -->
                 <!-- {{#rollhasbane}} -->
-                <td colspan="4">Rolling with BANE</td>
+                <tr>
+                    <td colspan="4">Rolling with BANE</td>
+                </tr>
                 <!-- {{/rollhasbane}} -->
                 <tr>
                     <td colspan="4">Attack: {{roll}} Effect: [{{computed::effect}}]</td>

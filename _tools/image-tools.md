@@ -15,7 +15,7 @@ tech:
 links:
   live: "/tools/image-tools.html"
   repo: null
-  docs: "/Image-Tools-Design-and-Security/"
+  docs: "/tools/image-tools.html"
   download: null
 image: "/img/2026-02/image-tools-hero.webp"
 hero_image: "/img/2026-02/image-tools-hero.webp"
@@ -28,7 +28,7 @@ features:
   - "Background remove (experimental)"
   - "SVG sanitize + preview sandbox"
   - "SVG → Raster export"
-  - "Raster → SVG wrapper (embeds the image in an <image> tag)"
+  - "Raster → SVG wrapper (embeds the image in an &lt;image&gt; tag)"
   - "Shareable links + local saved state"
   - "Offline support after first load (service worker)"
 license: "MIT"

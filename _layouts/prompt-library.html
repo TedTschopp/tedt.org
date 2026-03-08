@@ -618,15 +618,15 @@ redirect_from:
         <nav class="mt-4" aria-label="Prompt pagination">
             <ul class="pagination justify-content-center">
                 <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    <a class="page-link" href="{{ '/prompts/' | relative_url }}" tabindex="-1" aria-disabled="true">Previous</a>
                 </li>
                 <li class="page-item active" aria-current="page">
-                    <a class="page-link" href="#">1</a>
+                    <a class="page-link" href="{{ '/prompts/' | relative_url }}">1</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="{{ '/prompts/' | relative_url }}?page=2">2</a></li>
+                <li class="page-item"><a class="page-link" href="{{ '/prompts/' | relative_url }}?page=3">3</a></li>
                 <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link" href="{{ '/prompts/' | relative_url }}?page=2">Next</a>
                 </li>
             </ul>
         </nav>
@@ -1228,11 +1228,13 @@ redirect_from:
             
             // Clear existing pagination
             paginationContainer.innerHTML = '';
+            const promptLibraryHref = '{{ "/prompts/" | relative_url }}';
 
             // Previous button
             const prevLi = document.createElement('li');
             prevLi.className = `page-item ${currentPage === 1 ? 'disabled' : ''}`;
-            prevLi.innerHTML = `<a class="page-link" href="#" ${currentPage === 1 ? 'tabindex="-1" aria-disabled="true"' : ''}>Previous</a>`;
+            const previousHref = currentPage > 1 ? `${promptLibraryHref}?page=${currentPage - 1}` : promptLibraryHref;
+            prevLi.innerHTML = `<a class="page-link" href="${previousHref}" ${currentPage === 1 ? 'tabindex="-1" aria-disabled="true"' : ''}>Previous</a>`;
             if (currentPage > 1) {
                 prevLi.addEventListener('click', (e) => {
                     e.preventDefault();
@@ -1248,7 +1250,8 @@ redirect_from:
             for (let i = startPage; i <= endPage; i++) {
                 const pageLi = document.createElement('li');
                 pageLi.className = `page-item ${i === currentPage ? 'active' : ''}`;
-                pageLi.innerHTML = `<a class="page-link" href="#" ${i === currentPage ? 'aria-current="page"' : ''}>${i}</a>`;
+                const pageHref = i === 1 ? promptLibraryHref : `${promptLibraryHref}?page=${i}`;
+                pageLi.innerHTML = `<a class="page-link" href="${pageHref}" ${i === currentPage ? 'aria-current="page"' : ''}>${i}</a>`;
                 
                 if (i !== currentPage) {
                     pageLi.addEventListener('click', (e) => {
@@ -1262,7 +1265,8 @@ redirect_from:
             // Next button
             const nextLi = document.createElement('li');
             nextLi.className = `page-item ${currentPage === totalPages || totalPages === 0 ? 'disabled' : ''}`;
-            nextLi.innerHTML = `<a class="page-link" href="#">Next</a>`;
+            const nextHref = currentPage < totalPages && totalPages > 0 ? `${promptLibraryHref}?page=${currentPage + 1}` : promptLibraryHref;
+            nextLi.innerHTML = `<a class="page-link" href="${nextHref}">Next</a>`;
             if (currentPage < totalPages && totalPages > 0) {
                 nextLi.addEventListener('click', (e) => {
                     e.preventDefault();
