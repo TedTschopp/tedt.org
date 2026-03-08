@@ -1,3 +1,6 @@
+---
+layout: null
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,11 +91,15 @@
 	<!-- JavaScript -->
 	<script src="mastodon-timeline.js"></script>
 	<script>
+		{% assign mastodon_handle = site.profile.social.mastodon_username | default: '' %}
+		{% assign mastodon_handle_parts = mastodon_handle | split: '@' %}
+		{% assign mastodon_profile_name = mastodon_handle_parts | first | default: site.mastodon_comments.username %}
+		{% assign mastodon_instance_host = mastodon_handle_parts[1] | default: site.mastodon_comments.host %}
 		const myTimeline = new MastodonTimeline({
-			instanceUrl: "https://twit.social",
+			instanceUrl: "https://{{ mastodon_instance_host }}",
 			timelineType: "profile",
-			userId: "109286944787814808",
-			profileName: "@tedt",
+			userId: "{{ site.profile.social.mastodon_user_id }}",
+			profileName: "@{{ mastodon_profile_name }}",
 		});
 	</script>
 </body>

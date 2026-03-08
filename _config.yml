@@ -45,8 +45,15 @@ keywords:
 # Permalink 
 permalink: /:title/
 
-# Canonical personal/profile metadata. Legacy top-level keys and author maps
-# below alias these values for compatibility until template cleanup work lands.
+# Canonical personal/profile metadata.
+#
+# Hierarchy:
+# - `profile` is the primary site identity/profile record.
+# - `authors` is the canonical author registry used by posts, feeds, and author resolution.
+# - `author` remains a compatibility alias for layouts/includes that still expect `site.author`.
+#
+# Avoid adding new top-level personal or social keys when the same value belongs
+# in `profile` or `authors`.
 profile:
   name: &profile_name Ted Tschopp
   url: &profile_url https://tedt.org/
@@ -66,6 +73,12 @@ profile:
   country: &profile_country USA
   # Update site-level social handles here first. Legacy top-level keys below
   # are compatibility aliases and should not become the primary edit path.
+  #
+  # Maintenance note:
+  # - Update `profile.social` when the public profile/account changes.
+  # - Keep `mastodon_comments` separate below; it controls the account/host
+  #   used for syndicated post comment threads and may differ from the public
+  #   profile handle.
   social:
     keybaseio_username: &profile_keybaseio_username tedtschopp
     twitter_username: &profile_twitter_username TedTschopp
@@ -80,17 +93,11 @@ profile:
     quora_username: &profile_quora_username Ted-Tschopp
     indiewebcamp_username: &profile_indiewebcamp_username Www.tedt.org
     mastodon_username: &profile_mastodon_username TedT@twit.social
+    mastodon_user_id: &profile_mastodon_user_id 109286944787814808
     threads_username: &profile_threads_username TedTschopp@threads.net
     fediverse_creators: &profile_fediverse_creators
       - TedT@twit.social
       - Ted@tschopp.net
-
-# Legacy top-level aliases kept for compatibility with current layouts/includes.
-givenname: *profile_givenname
-familyname: *profile_familyname
-jobtitle: *profile_jobtitle
-othernames: *profile_othernames
-biography: *profile_biography
 
 # The Logo of the site
 logo: https://tedt.org/img/Site-Logo.webp
@@ -105,11 +112,6 @@ subtitle: Exploring the Theology of the Digital Age Through Creativity, Ethics, 
 
 # Site's name
 name: Ted Tschopp's Homepage
-
-#Locality
-locality: *profile_locality
-region: *profile_region
-country: *profile_country
 
 timezone: America/Los_Angeles
 
@@ -141,6 +143,8 @@ wlinks:
   title: Anchor
 
 # Mastodon Settings for Comments
+# This is intentionally separate from `profile.social.mastodon_username`.
+# Comments render against the account that hosts the syndicated post thread.
 
 mastodon_comments:
   host: tschopp.net
@@ -196,6 +200,7 @@ authors:
   tschopp: &primary_author
     name: *profile_name
     url: *profile_url
+    uri: *profile_url
     avatar: *profile_avatar
     givenname: *profile_givenname
     familyname: *profile_familyname
@@ -217,6 +222,7 @@ authors:
     quora_username: *profile_quora_username
     indiewebcamp_username: *profile_indiewebcamp_username
     mastodon_username: *profile_mastodon_username
+    mastodon_user_id: *profile_mastodon_user_id
     threads_username: *profile_threads_username
 
   copilot:
@@ -224,38 +230,8 @@ authors:
     url: https://github.com/features/copilot
     avatar: https://github.githubassets.com/images/modules/site/copilot/copilot.png
 
+# Compatibility alias for legacy templates/includes that still read `site.author`.
 author: *primary_author
-#  google_username: TedTschopp
-
-email: *profile_email
-phonenumber: *profile_phonenumber
-indiewebcamp_username: *profile_indiewebcamp_username # Done
-github_username: *profile_github_username # Done
-quora_username: *profile_quora_username # Done
-pinterest_username: *profile_pinterest_username # Done
-youtube_username: *profile_youtube_username # done
-linkedin_username: *profile_linkedin_username # Done
-facebook_username: *profile_facebook_username # Done
-reddit_username: *profile_reddit_username # Done
-twitter_username: *profile_twitter_username # Done
-threads_username: *profile_threads_username # Done
-mastodon_username: *profile_mastodon_username # Done
-instagram_username: *profile_instagram_username # Done
-foursquare: //foursquare.com/tedtschopp # Done
-goodreads: //www.goodreads.com/TedTschopp # Done
-instagram: www.instagram.com/tedtschopp/ # Done
-meetup: //www.meetup.com/members/45846/ # Done
-soundcloud: //soundcloud.com/ted-tschopp # Done
-twitch: https://www.twitch.tv/tedtschopp # Done
-tumblr: https://www.tumblr.com/blog/tedtschopp # Done
-vimeo: //vimeo.com/tedtschop # Done
-xboxlive: https://account.xbox.com/en-us/profile?gamertag=TheoTheSilly # Done
-Steam: //steamcommunity.com/id/theothesilly/ # Done
-keybaseio_username: *profile_keybaseio_username # Done  
-
-fitbit: //www.fitbit.com/user/242JHZ
-runkeeper: //runkeeper.com/user/TedTschopp
-angellist: tedtschopp
 
 # SOCIAL MEDIA
 # IF YOU DON'T WANT TO USE ANY OF THE FOLLOWING, JUST LEAVE THE URL BLANK
