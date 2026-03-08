@@ -84,6 +84,16 @@ def item_signature(item)
   ].map(&:to_s).join("\n"))
 end
 
+def item_identity_signature(item)
+  Digest::SHA256.hexdigest([
+    item['title'],
+    item['summary'],
+    item['content_excerpt'],
+    item['content_length'],
+    item['image']
+  ].map(&:to_s).join("\n"))
+end
+
 def build_snapshot(path, ignore_fields)
   feed = normalize_value(load_json(path), ignore_fields)
   ordered_items = Array(feed['items'])
@@ -149,6 +159,28 @@ def compare_snapshots(baseline, current, config)
   current_map = item_map(current)
   baseline_keys = baseline_map.keys
   current_keys = current_map.keys
+  added_keys = current_keys - baseline_keys
+  removed_keys = baseline_keys - current_keys
+
+  added_by_identity = added_keys.group_by { |key| item_identity_signature(current_map[key]) }
+  removed_by_identity = removed_keys.group_by { |key| item_identity_signature(baseline_map[key]) }
+
+  rekeyed_pairs = []
+  (added_by_identity.keys & removed_by_identity.keys).each do |identity|
+    before_keys = removed_by_identity.fetch(identity, []).dup.sort
+    after_keys = added_by_identity.fetch(identity, []).dup.sort
+    pair_count = [before_keys.length, after_keys.length].min
+    pair_count.times do
+      before_key = before_keys.shift
+      after_key = after_keys.shift
+      next if before_key.nil? || after_key.nil?
+
+      removed_keys.delete(before_key)
+      added_keys.delete(after_key)
+      rekeyed_pairs << [before_key, after_key]
+    end
+  end
+
   common_keys = baseline_keys & current_keys
 
   title_changes = []
@@ -194,6 +226,16 @@ def compare_snapshots(baseline, current, config)
     end
   end
 
+  rekeyed_pairs.each do |before_key, after_key|
+    before_item = baseline_map[before_key]
+    after_item = current_map[after_key]
+    url_changes << {
+      key: before_key,
+      before: before_item['url'],
+      after: after_item['url']
+    }
+  end
+
   metadata_changes = (baseline.fetch('metadata', {}).keys | current.fetch('metadata', {}).keys).sort.filter_map do |key|
     before_value = baseline.fetch('metadata', {})[key]
     after_value = current.fetch('metadata', {})[key]
@@ -221,8 +263,8 @@ def compare_snapshots(baseline, current, config)
   end
 
   {
-    added_items: current_keys - baseline_keys,
-    removed_items: baseline_keys - current_keys,
+    added_items: added_keys,
+    removed_items: removed_keys,
     title_changes: title_changes,
     url_changes: url_changes,
     image_changes: image_changes,
