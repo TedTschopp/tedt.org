@@ -85,16 +85,16 @@
                     <div class="card-body p-0 m-0">
                         <div class="row w-100 p-0 m-0">
                             <div class="col-1 pt-2 d-flex align-items-center justify-content-center avatar" style="max-width: 4.5em;">
-                                <a rel="external nofollow" href="" class="avatar-link authorLink">
+                                <a rel="external nofollow" href="" class="avatar-link authorLink" aria-label="View author profile" title="View author profile">
                                     <img class="m-1 avatarImg avatar" alt="Avatar Image for this user" style="height: 2.5em;" src="/img/home/default-profile-image.webp">
                                 </a>
                             </div>
                             <div class="col-6"> 
-                                <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
+                                <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank" aria-label="View author profile" title="View author profile"><span class="displayNameSpan"></span></a></p>
                                 <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
                             </div>
                             <div class="col-5 createdAt"> 
-                                <p class="card-title p-3 m-0 text-end"><a href="" target="_blank" class="createdAtLink"></a></p>
+                                <p class="card-title p-3 m-0 text-end"><a href="" target="_blank" class="createdAtLink" aria-label="View post on Mastodon" title="View post on Mastodon"></a></p>
                             </div>
                         </div>
                     </div>
@@ -196,16 +196,16 @@
                                     <div class="card-body p-0 m-0">
                                         <div class="row w-100 p-0 m-0">
                                             <div class="col-1 pt-2 d-flex align-items-center justify-content-center avatar" style="max-width: 4.5em;">
-                                                <a rel="external nofollow" href="" class="avatar-link authorLink">
+                                                <a rel="external nofollow" href="" class="avatar-link authorLink" aria-label="View author profile" title="View author profile">
                                                     <img class="m-1 avatarImg avatar" alt="Avatar Image for this user" style="height: 2.5em;" src="/img/home/default-profile-image.webp">
                                                 </a>
                                             </div>                                                
                                             <div class="col-6"> 
-                                                <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank"><span class="displayNameSpan"></span></a></p>
+                                                <p class="text-start p-0 m-0 displayName"><a href="" class="displayNameLink authorLink" target="_blank" aria-label="View author profile" title="View author profile"><span class="displayNameSpan"></span></a></p>
                                                 <p class="text-start p-0 m-0 "><span class="userNameSpan"></span><span class="instanceNameSpan"></span></p>
                                             </div>
                                             <div class="col-5 createdAt"> 
-                                                <p class="card-title p-3 m-0 text-end"><a href="" target="_blank" class="createdAtLink"></a></p>
+                                                <p class="card-title p-3 m-0 text-end"><a href="" target="_blank" class="createdAtLink" aria-label="View post on Mastodon" title="View post on Mastodon"></a></p>
                                             </div>
                                         </div>
                                     </div>
@@ -894,8 +894,33 @@
                     viewOnMastodonBtn.href = postUrl;
                 }
 
+                this.updatePostAccessibleLabels(postElement, postData);
+
                 // Initialize reply visibility state
                 this.updateReplyButtonStates(postElement, true);
+            }
+
+            updatePostAccessibleLabels(postElement, postData) {
+                const displayName = (postData.account && postData.account.display_name) || (postData.account && postData.account.username) || 'author';
+                const profileLabel = `View profile for ${displayName}`;
+                const postLabel = `View post by ${displayName} on Mastodon`;
+
+                postElement.querySelectorAll('.authorLink').forEach((link) => {
+                    link.setAttribute('aria-label', profileLabel);
+                    link.setAttribute('title', profileLabel);
+                });
+
+                const createdAtLink = postElement.querySelector('.createdAtLink');
+                if (createdAtLink) {
+                    createdAtLink.setAttribute('aria-label', postLabel);
+                    createdAtLink.setAttribute('title', postLabel);
+                }
+
+                const viewOnMastodonBtn = postElement.querySelector('.view-on-mastodon-btn');
+                if (viewOnMastodonBtn) {
+                    viewOnMastodonBtn.setAttribute('aria-label', postLabel);
+                    viewOnMastodonBtn.setAttribute('title', postLabel);
+                }
             }
 
             /**

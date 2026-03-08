@@ -1,0 +1,7 @@
+{% assign __input_url = include.url | default: '' | strip %}
+{% if __input_url == '' %}
+{% elsif __input_url contains '://' or __input_url contains '//' %}
+  {{ __input_url }}
+{% else %}
+  {{ __input_url | relative_url | absolute_url }}
+{% endif %}

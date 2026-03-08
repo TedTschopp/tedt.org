@@ -19,7 +19,9 @@
   <meta name="author" content="{{ site.givenname }} {{ site.familyname }}">
   <link rel="author" href="{{site.url}}/humans.txt">
   <link rel="copyright" href="{{site.url}}/Copyright/">
-  <link rel="canonical" href="{{ page.url | relative_url | absolute_url }}" />
+  {% capture canonical_url_safe %}{% include utility/safe-absolute-url.html url=page.url %}{% endcapture %}
+  {% assign canonical_url_safe = canonical_url_safe | strip %}
+  <link rel="canonical" href="{{ canonical_url_safe }}" />
 
   <!-- Mastodon Meta Data-->
   <!-- TODO: move to configuration _config.yml once you figure out multiple accounts.  -->
@@ -63,15 +65,13 @@
 {%- endcomment -%}
 {%- comment -%}Initial quote stripping (straight quotes only) expanded to handle curly quotes and &quot; entities for stubborn parse errors{%- endcomment -%}
 {% assign meta_description_attr_160 = meta_description_clean_160
-  | replace: '"', ''
-  | replace: '“', ''
-  | replace: '”', ''
-  | replace: '&quot;', '' %}
+  | replace: '&quot;', '"'
+  | replace: '&#34;', '"'
+  | strip %}
 {% assign meta_description_attr_300 = meta_description_clean_300
-  | replace: '"', ''
-  | replace: '“', ''
-  | replace: '”', ''
-  | replace: '&quot;', '' %}
+  | replace: '&quot;', '"'
+  | replace: '&#34;', '"'
+  | strip %}
 <!-- DIAG meta160: {{ meta_description_clean_160 | escape }} | stripped: {{ meta_description_attr_160 | escape }} -->
 <!-- DIAG meta300: {{ meta_description_clean_300 | escape }} | stripped: {{ meta_description_attr_300 | escape }} -->
 <meta name="description" content="{{ meta_description_attr_160 | escape }}">
@@ -124,7 +124,7 @@
   <meta property="og:title" content="{{ this_page_title }} - {{ site.name }}">
   <meta property="og:description" content="{{ meta_description_attr_300 | escape }}"><!-- desc-sanitizer-v2 -->
   <meta property="og:type" content="article">
-  <meta property="og:url" content="{{ page.url | relative_url | absolute_url }}">
+  <meta property="og:url" content="{{ canonical_url_safe }}">
 {% endif %}
 <meta property="og:locale" content="en_US">
 {% if site.facebook_app_id %}<meta property="fb:app_id" content="{{ site.facebook_app_id }}">{% endif %}
@@ -144,10 +144,9 @@ Description precedence: page.summary > page.seo-description > page.description >
 {% endif %}
 <meta name="twitter:title" content="{{ this_page_title }}">
 {%- assign twitter_description_sanitized = twitter_description
-  | replace: '"', ''
-  | replace: '“', ''
-  | replace: '”', ''
-  | replace: '&quot;', ''
+  | replace: '&quot;', '"'
+  | replace: '&#34;', '"'
+  | strip
 -%}
 <!-- DIAG twitter: raw {{ twitter_description | escape }} | stripped {{ twitter_description_sanitized | escape }} -->
 <meta name="twitter:description" content="{{ twitter_description_sanitized | strip | truncate:300 | escape }}">
@@ -166,7 +165,7 @@ Description precedence: page.summary > page.seo-description > page.description >
   <meta name="twitter:image" content="{{ twitter_image_url }}">
   <meta name="twitter:image:alt" content="{{ page['image-alt'] | default: site['title-image-alt'] | default: this_page_title | escape }}">
 {% endif %}
-{% if page.url %}<meta name="twitter:url" content="{{ page.url | relative_url | absolute_url }}">{% endif %}
+{% if page.url %}<meta name="twitter:url" content="{{ canonical_url_safe }}">{% endif %}
 
 {%- comment -%}
 Article-specific meta (Open Graph): published, modified, section, tags.
@@ -208,7 +207,8 @@ If it's the homepage treat as WebSite only; else add Article object.
       "@type": "ListItem",
       "position": 1,
       "name": {{ first_cat | jsonify }},
-      "item": "{{ site.url }}{{ _crumb_href }}"
+      {% capture breadcrumb_item_url %}{% include utility/safe-absolute-url.html url=_crumb_href %}{% endcapture %}
+      "item": "{{ breadcrumb_item_url | strip }}"
     }
   {% endcapture %}
   {% assign breadcrumb_position = breadcrumb_position | plus: 1 %}
@@ -234,7 +234,7 @@ If it's the homepage treat as WebSite only; else add Article object.
       "@type": "Article",
       "headline": {{ this_page_title | jsonify }},
   "description": {{ meta_description_attr_300 | jsonify }},
-      "url": "{{ page.url | relative_url | absolute_url }}",
+      "url": "{{ canonical_url_safe }}",
       {% if og_image_url %}"image": ["{{ og_image_url }}"],{% endif %}
       {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
       {% if page.update %}"dateModified": "{{ page.update | date_to_xmlschema }}",{% endif %}
@@ -242,7 +242,7 @@ If it's the homepage treat as WebSite only; else add Article object.
       "publisher": {"@type":"Person","name":"{{ site.givenname }} {{ site.familyname }}"},
       {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }}, {% endif %}
       {% if page.categories %}"articleSection": {{ page.categories | first | jsonify }},{% endif %}
-      "mainEntityOfPage": {"@type":"WebPage","@id":"{{ page.url | relative_url | absolute_url }}"}
+      "mainEntityOfPage": {"@type":"WebPage","@id":"{{ canonical_url_safe }}"}
     }
     {% if breadcrumb_items != '' %},
     {

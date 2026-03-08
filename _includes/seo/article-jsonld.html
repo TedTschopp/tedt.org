@@ -4,9 +4,10 @@
   Supports both legacy single 'author' and new 'authors' array format.
 {%- endcomment -%}
 {%- assign article_image = image_URL | default: page.image | default: site.featured-image -%}
-{%- if article_image and article_image contains 'http' == false -%}
-  {%- assign article_image = site.url | append: '/' | append: article_image | replace: '//', '/' -%}
-{%- endif -%}
+{%- capture article_page_url -%}{%- include utility/safe-absolute-url.html url=page.url -%}{%- endcapture -%}
+{%- assign article_page_url = article_page_url | strip -%}
+{%- capture article_image_safe -%}{%- include utility/safe-absolute-url.html url=article_image -%}{%- endcapture -%}
+{%- assign article_image = article_image_safe | strip -%}
 {%- assign publish_date = page.date | date_to_xmlschema -%}
 {%- assign modified_date = page.last_modified_at | default: page.date | date_to_xmlschema -%}
 
@@ -48,7 +49,7 @@
   "@type": "BlogPosting",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "{{ site.url }}{{ page.url }}"
+    "@id": "{{ article_page_url }}"
   },
   "headline": {{ page.title | jsonify }},
   {% if page.subtitle %}"alternativeHeadline": {{ page.subtitle | jsonify }}, {% endif %}
