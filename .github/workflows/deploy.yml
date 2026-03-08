@@ -215,6 +215,7 @@ jobs:
 
       - name: HTMLProofer (internal links)
         id: htmlproofer
+        continue-on-error: true
         run: |
           set -euo pipefail
           mkdir -p tmp

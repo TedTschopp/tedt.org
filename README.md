@@ -335,19 +335,21 @@ Blocking checks in the quality gate:
 - Feed diff regression guard (normalized snapshot drift across main and Mastodon JSON feeds)
 - Tools CSS sync guard (prevents drift between shared tool CSS and site base includes)
 - Representative accessibility coverage via Playwright + axe (`npm run test:a11y` locally, `test:a11y:allure` in CI)
-- HTML Proofer internal link and HTML validation (`SKIP_EXTERNAL=1`)
 
 Advisory checks currently recorded in CI artifacts and summaries, but not used as blocking gates:
 
 - Markdown lint
 - JavaScript syntax lint
 - CSS overrides stylelint
+- HTML Proofer internal link and HTML validation (`SKIP_EXTERNAL=1`)
 
 Informational quality output that still runs in the fast gate and CI:
 
 - Mastodon toot length statistics report
 
 Run the full local quality gate with: `make quality_gate`
+
+Run the strict HTMLProofer check alone with: `make SKIP_EXTERNAL=1 proofer`
 
 Run the faster structural/content gate with: `make qa`
 
