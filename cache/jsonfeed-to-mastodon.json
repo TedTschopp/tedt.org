@@ -3763,5 +3763,29 @@
       "https://tschopp.net/users/Ted/statuses/116059322740820027"
     ],
     "lastTootTimestamp": 1770924724542
+  },
+  "https://tedt.org/prompts/product-requirements-document-prd-template-3/": {
+    "id": "/prompts/product-requirements-document-prd-template-3/",
+    "title": "Architecture Product Requirements Document (PRD) Template 3",
+    "summary": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting.",
+    "content_text": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting. https://tedt.org/prompts/product-requirements-document-prd-template-3/",
+    "url": "https://tedt.org/prompts/product-requirements-document-prd-template-3/",
+    "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.png",
+    "tags": [
+      "Product Management",
+      "Requirements Engineering",
+      "Documentation"
+    ],
+    "date_published": "2025-12-07T00:00:00-08:00",
+    "date_modified": "2025-12-07T00:00:00-08:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116194137116757951"
+    ],
+    "lastTootTimestamp": 1772981828653
   }
 }
