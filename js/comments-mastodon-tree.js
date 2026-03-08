@@ -586,7 +586,11 @@
                 ge("userNameSpan").innerHTML = "@" + arr.account.username;
                 ge("instanceNameSpan").innerHTML = "@" + instanceName;
                 ge("createdAtLink").innerHTML = timeSince(arr.created_at);
-                ge("createdAtLink").href = "#url=" + arr.url; // blog
+                if (arr.url) {
+                    ge("createdAtLink").href = arr.url;
+                } else {
+                    ge("createdAtLink").removeAttribute("href");
+                }
                 var links = displayToot.getElementsByClassName("authorLink");
                 for (var n = 0; n < links.length; n++) {
                     links[n].href = arr.account.url;
