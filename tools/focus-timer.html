@@ -1,0 +1,2026 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer Studio</title>
+  <meta name="description" content="A client-side countdown timer and stopwatch with productivity presets, timer queues, visual themes, and multiple number-display styles.">
+  <link rel="canonical" href="https://tedt.org/tools/focus-timer.html">
+
+  <meta property="og:title" content="Focus Timer Studio">
+  <meta property="og:description" content="Countdown timer and stopwatch with productivity presets, round queues, and multiple number-display styles.">
+  <meta property="og:url" content="https://tedt.org/tools/focus-timer.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Focus Timer Studio">
+  <meta name="twitter:description" content="Countdown timer and stopwatch with productivity presets, round queues, and multiple number-display styles.">
+
+  <link rel="icon" href="../favicon.ico" sizes="any">
+  <style>
+    :root {
+      --bs-body-bg: #0f1724;
+      --bs-body-color: #eef4fb;
+      --bs-secondary-color: rgba(238, 244, 251, 0.68);
+      --bs-border-color: rgba(255, 255, 255, 0.12);
+      --bs-tertiary-bg: rgba(255, 255, 255, 0.045);
+      --bs-primary: #7dd3fc;
+      --timer-shell-max: 1120px;
+      --timer-panel-border: rgba(255, 255, 255, 0.14);
+      --timer-panel-bg: var(--bs-body-bg);
+      --timer-display-bg: linear-gradient(180deg, rgba(11, 19, 32, 0.96), rgba(18, 30, 47, 0.92));
+      --timer-display-border: rgba(255, 255, 255, 0.09);
+      --timer-accent: #7dd3fc;
+      --timer-accent-strong: #38bdf8;
+      --timer-accent-rgb: 56, 189, 248;
+      --timer-text-strong: var(--bs-body-color);
+      --timer-text-soft: var(--bs-secondary-color);
+      --timer-progress: 0deg;
+      --timer-font-stack: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --timer-letter-spacing: -0.08em;
+      --timer-text-transform: none;
+      --timer-number-shadow: 0 10px 24px rgba(56, 189, 248, 0.14);
+      --timer-number-stroke: transparent;
+      --timer-digit-weight: 720;
+      --timer-display-radius: 1rem;
+      --timer-chip-bg: var(--bs-tertiary-bg);
+      --timer-chip-border: var(--bs-border-color);
+        --timer-body-bg: #0f1724;
+    }
+
+    body {
+      margin: 0;
+      background: var(--timer-body-bg);
+      color: var(--timer-text-strong);
+      font-family: "Avenir Next", "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+      line-height: 1.5;
+    }
+
+    .app-wrap {
+      max-width: var(--timer-shell-max);
+    }
+
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: min(calc(100% - 2rem), var(--timer-shell-max));
+      margin: 0 auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: -0.5rem;
+      margin-right: -0.5rem;
+    }
+
+    .row > [class*="col-"] {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .col-12 {
+      width: 100%;
+    }
+
+    .g-3 {
+      row-gap: 1rem;
+    }
+
+    .py-4 {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+
+    .py-2 {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .mb-0 {
+      margin-bottom: 0 !important;
+    }
+
+    .mb-1 {
+      margin-bottom: 0.25rem !important;
+    }
+
+    .mb-3 {
+      margin-bottom: 1rem !important;
+    }
+
+    .mb-4 {
+      margin-bottom: 1.5rem !important;
+    }
+
+    .mt-3 {
+      margin-top: 1rem !important;
+    }
+
+    .h2,
+    .h5 {
+      margin: 0;
+      font-weight: 700;
+      line-height: 1.1;
+    }
+
+    .h2 {
+      font-size: clamp(1.9rem, 1.3rem + 1.5vw, 2.55rem);
+    }
+
+    .h5 {
+      font-size: 1.05rem;
+    }
+
+    .text-body-secondary {
+      color: var(--bs-secondary-color);
+    }
+
+    .alert {
+      border-radius: 0.8rem;
+      border: 1px solid var(--bs-border-color);
+      padding: 0.85rem 1rem;
+    }
+
+    .alert-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--bs-body-color);
+    }
+
+    .card {
+      border-radius: 1rem;
+    }
+
+    .card-body,
+    .card-header {
+      padding: 1rem;
+    }
+
+    .h-100 {
+      height: 100%;
+    }
+
+    .d-flex {
+      display: flex;
+    }
+
+    .justify-content-between {
+      justify-content: space-between;
+    }
+
+    .align-items-center {
+      align-items: center;
+    }
+
+    .gap-2 {
+      gap: 0.5rem;
+    }
+
+    .flex-wrap {
+      flex-wrap: wrap;
+    }
+
+    .fw-semibold {
+      font-weight: 600;
+    }
+
+    .btn {
+      appearance: none;
+      border: 1px solid var(--bs-border-color);
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--bs-body-color);
+      cursor: pointer;
+      font: inherit;
+      transition: background 140ms ease, border-color 140ms ease, transform 140ms ease;
+    }
+
+    .btn:hover,
+    .btn:focus-visible {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: rgba(255, 255, 255, 0.22);
+      outline: none;
+    }
+
+    .btn-sm {
+      font-size: 0.9rem;
+    }
+
+    .btn-outline-secondary,
+    .btn-outline-light {
+      background: rgba(255, 255, 255, 0.03);
+    }
+
+    .form-check {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .form-switch .form-check-input {
+      appearance: none;
+      position: relative;
+    }
+
+    @media (min-width: 992px) {
+      .col-lg-7 {
+        width: 58.333333%;
+      }
+
+      .col-lg-5 {
+        width: 41.666667%;
+      }
+    }
+
+    .muted-note {
+      color: var(--timer-text-soft);
+      font-size: 0.9rem;
+    }
+
+    .panel-card {
+      border: 1px solid var(--timer-panel-border);
+      background: var(--timer-panel-bg);
+      box-shadow: 0 18px 42px rgba(0, 0, 0, 0.18);
+      overflow: hidden;
+    }
+
+    .panel-card .card-header {
+      background: var(--bs-tertiary-bg);
+      border-bottom: 1px solid var(--bs-border-color);
+    }
+
+    .tool-toolbar {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-badge,
+    .metric-chip,
+    .mini-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      padding: 0.45rem 0.72rem;
+      border-radius: 999px;
+      border: 1px solid var(--timer-chip-border);
+      background: var(--timer-chip-bg);
+      color: var(--timer-text-soft);
+      font-size: 0.85rem;
+      font-weight: 500;
+    .mono {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    }
+    
+    kbd {
+      display: inline-block;
+      padding: 0.15rem 0.4rem;
+      font-size: 0.78rem;
+      border-radius: 0.25rem;
+      border: 1px solid var(--bs-border-color);
+      background: var(--bs-tertiary-bg);
+      color: var(--bs-secondary-color);
+    }
+    }
+
+    .hero-badge strong,
+    .metric-chip strong,
+    
+    .small {
+      font-size: 0.85rem;
+    }
+    .mini-chip strong {
+      color: var(--timer-text-strong);
+      font-weight: 650;
+    }
+
+    .display-card {
+      position: relative;
+        background: rgba(3, 7, 18, 0.82);
+      border: 1px solid var(--timer-display-border);
+      border-radius: var(--timer-display-radius);
+      padding: 1rem;
+    }
+
+    .display-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 50% 10%, rgba(var(--timer-accent-rgb), 0.14), transparent 26%),
+        linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent 34%);
+      pointer-events: none;
+    }
+
+    .display-header,
+    .control-row,
+    .display-footer,
+    .panel-head,
+    .preset-card-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .panel-head p,
+    .card-header p {
+      margin: 0.2rem 0 0;
+      color: var(--timer-text-soft);
+      font-size: 0.88rem;
+    }
+
+    .display-header {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 0.75rem;
+    }
+    .timer-tile {
+      background: rgba(4, 10, 20, 0.72);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 0.75rem;
+      padding: 1rem;
+    }
+    
+    .status-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.4rem 0.75rem;
+      font-size: 0.85rem;
+      border-top: 1px solid var(--bs-border-color);
+      background: var(--bs-tertiary-bg);
+      border-radius: 0 0 0.75rem 0.75rem;
+    }
+    
+    .status-bar .counts {
+      color: var(--bs-secondary-color);
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .display-shell {
+      position: relative;
+      width: min(100%, 24rem);
+      aspect-ratio: 1 / 1;
+      margin: 0 auto;
+      display: grid;
+      place-items: center;
+    }
+
+    .progress-ring {
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background:
+        radial-gradient(circle, rgba(3, 7, 18, 0.14) 0 52%, transparent 53%),
+        conic-gradient(from -90deg, rgba(var(--timer-accent-rgb), 0.96) 0deg var(--timer-progress), rgba(255, 255, 255, 0.08) var(--timer-progress) 360deg);
+      box-shadow:
+        inset 0 0 0 1px rgba(255, 255, 255, 0.08),
+          0 6px 18px rgba(var(--timer-accent-rgb), 0.08);
+      transition: background 200ms linear, box-shadow 220ms ease;
+    }
+
+    .display-core {
+      position: relative;
+      z-index: 1;
+      width: 76%;
+      height: 76%;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(3, 7, 18, 0.82);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1.35rem;
+      text-align: center;
+        box-shadow: inset 0 0 16px rgba(255, 255, 255, 0.02);
+    }
+
+    .phase-label {
+      font-size: 0.82rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--timer-text-soft);
+      margin-bottom: 0.45rem;
+    }
+
+    .time-display {
+      margin: 0;
+      font-family: var(--timer-font-stack);
+      font-size: clamp(3rem, 1.55rem + 4.8vw, 5.6rem);
+      line-height: 0.9;
+      letter-spacing: var(--timer-letter-spacing);
+      font-weight: var(--timer-digit-weight);
+      color: var(--timer-text-strong);
+      text-transform: var(--timer-text-transform);
+      text-shadow: var(--timer-number-shadow);
+      -webkit-text-stroke: 1px var(--timer-number-stroke);
+      font-variant-numeric: tabular-nums lining-nums;
+    }
+
+    .time-caption {
+      margin-top: 0.7rem;
+      color: var(--timer-text-soft);
+      font-size: 0.88rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .display-mode-pill {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.35rem 0.7rem;
+      border-radius: 999px;
+      background: rgba(var(--timer-accent-rgb), 0.14);
+      color: #dcf5ff;
+      border: 1px solid rgba(var(--timer-accent-rgb), 0.26);
+      font-size: 0.76rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+      .timer-output-meta {
+        color: var(--timer-text-soft);
+        font-size: 0.85rem;
+      }
+
+    .style-grid,
+    .preset-grid,
+    .mode-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .style-card,
+    .preset-card,
+    .mode-card,
+    .queue-item,
+    .insight-card {
+      border: 1px solid var(--bs-border-color);
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 0.9rem;
+      padding: 0.9rem;
+      transition: transform 160ms ease, border-color 160ms ease, background 160ms ease, box-shadow 160ms ease;
+    }
+
+    .style-card,
+    .preset-card,
+    .mode-card {
+      width: 100%;
+      text-align: left;
+      color: inherit;
+      cursor: pointer;
+    }
+
+    .style-card:hover,
+    .style-card:focus-visible,
+    .preset-card:hover,
+    .preset-card:focus-visible,
+    .mode-card:hover,
+    .mode-card:focus-visible,
+    .queue-item.is-active {
+      border-color: rgba(var(--timer-accent-rgb), 0.4);
+      background: rgba(var(--timer-accent-rgb), 0.08);
+      box-shadow: 0 8px 20px rgba(var(--timer-accent-rgb), 0.08);
+    }
+
+    .style-card.is-active,
+    .preset-card.is-active,
+    .mode-card.is-active {
+      border-color: rgba(var(--timer-accent-rgb), 0.52);
+      background: rgba(var(--timer-accent-rgb), 0.14);
+      box-shadow: 0 10px 24px rgba(var(--timer-accent-rgb), 0.1);
+    }
+
+    .style-preview {
+      margin: 0 0 0.45rem;
+      font-size: 1.7rem;
+      line-height: 0.95;
+      font-variant-numeric: tabular-nums;
+      color: var(--timer-text-strong);
+    }
+
+    .style-card p,
+    .preset-card p,
+    .mode-card p,
+    .queue-item p,
+    .insight-card p {
+      margin: 0;
+      color: var(--timer-text-soft);
+      font-size: 0.88rem;
+      line-height: 1.55;
+    }
+
+    .style-card h3,
+    .preset-card h3,
+    .mode-card h3,
+    .queue-item h3,
+    .insight-card h3,
+    .panel-head h2 {
+      margin: 0 0 0.32rem;
+      font-size: 0.98rem;
+      font-weight: 650;
+    }
+
+    .preset-card .preset-meta,
+    .queue-meta,
+    .inline-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-top: 0.65rem;
+    }
+
+    .preset-meta span,
+    .queue-meta span,
+    .inline-stats span {
+      display: inline-flex;
+      align-items: center;
+      padding: 0.24rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.04);
+      font-size: 0.76rem;
+      color: var(--timer-text-soft);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .settings-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.8rem;
+    }
+
+    .field-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .field-block label {
+      font-size: 0.84rem;
+      color: var(--timer-text-soft);
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    .field-block input,
+    .field-block select {
+      width: 100%;
+      border-radius: 0.65rem;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(8, 14, 24, 0.82);
+      color: var(--timer-text-strong);
+      padding: 0.62rem 0.75rem;
+      font-size: 0.95rem;
+    }
+
+    .field-block input:focus,
+    .field-block select:focus,
+    .btn:focus-visible,
+    .style-card:focus-visible,
+    .preset-card:focus-visible,
+    .mode-card:focus-visible {
+      outline: 2px solid rgba(var(--timer-accent-rgb), 0.62);
+      outline-offset: 2px;
+      box-shadow: none;
+    }
+
+    .toggle-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.8rem 0.9rem;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 0.85rem;
+    }
+
+    .toggle-row .form-check-input {
+      width: 2.6rem;
+      height: 1.45rem;
+      margin-top: 0;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-color: rgba(255, 255, 255, 0.14);
+    }
+
+    .toggle-row .form-check-input:checked {
+      background-color: rgba(var(--timer-accent-rgb), 0.95);
+      border-color: rgba(var(--timer-accent-rgb), 0.95);
+    }
+
+    .control-row .btn,
+    .secondary-actions .btn,
+    .tool-toolbar .btn {
+      border-radius: 0.65rem;
+      padding: 0.62rem 0.95rem;
+      font-weight: 650;
+      letter-spacing: 0.01em;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, rgba(var(--timer-accent-rgb), 0.95), rgba(14, 165, 233, 0.95));
+      border-color: transparent;
+      color: #02131b;
+      box-shadow: 0 10px 24px rgba(var(--timer-accent-rgb), 0.2);
+    }
+
+    .btn-primary:hover,
+    .btn-primary:focus-visible {
+      background: linear-gradient(135deg, rgba(var(--timer-accent-rgb), 1), rgba(6, 182, 212, 1));
+      color: #041118;
+    }
+
+    .btn-outline-secondary,
+    .btn-outline-light,
+    .btn-outline-danger {
+      border-width: 1px;
+    }
+
+    .timeline-list {
+      display: grid;
+      gap: 0.75rem;
+    }
+
+    .queue-item.is-current {
+      border-color: rgba(var(--timer-accent-rgb), 0.56);
+      background: rgba(var(--timer-accent-rgb), 0.12);
+    }
+
+    .queue-step-label {
+      font-size: 0.75rem;
+      color: var(--timer-text-soft);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.3rem;
+    }
+
+    .builder-note,
+    .status-banner {
+      border-radius: 0.8rem;
+      border: 1px solid rgba(var(--timer-accent-rgb), 0.18);
+      background: rgba(var(--timer-accent-rgb), 0.08);
+      color: #daf5ff;
+      padding: 0.85rem 0.95rem;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+
+    .insight-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    .stat-value {
+      font-size: 1.4rem;
+      font-weight: 720;
+      letter-spacing: -0.04em;
+      color: var(--timer-text-strong);
+      margin-bottom: 0.15rem;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .theme-canvas-signal {
+      --timer-accent-rgb: 56, 189, 248;
+      --timer-display-bg: linear-gradient(180deg, rgba(11, 19, 32, 0.96), rgba(18, 30, 47, 0.92));
+      --timer-body-bg:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.1), transparent 28%),
+        linear-gradient(180deg, #07111d 0%, #0b1726 100%);
+    }
+
+    .theme-sunset-grid {
+      --timer-accent-rgb: 251, 113, 133;
+      --timer-display-bg: linear-gradient(180deg, rgba(40, 12, 21, 0.95), rgba(88, 29, 44, 0.88));
+      --timer-body-bg:
+        radial-gradient(circle at top left, rgba(245, 158, 11, 0.1), transparent 28%),
+        linear-gradient(180deg, #18070f 0%, #2a101b 100%);
+    }
+
+    .theme-forest-breath {
+      --timer-accent-rgb: 74, 222, 128;
+      --timer-display-bg: linear-gradient(180deg, rgba(7, 28, 17, 0.96), rgba(14, 54, 32, 0.9));
+      --timer-body-bg:
+        radial-gradient(circle at top left, rgba(74, 222, 128, 0.1), transparent 28%),
+        linear-gradient(180deg, #06140d 0%, #0a1e14 100%);
+    }
+
+    .theme-paper-lantern {
+      --timer-accent-rgb: 250, 204, 21;
+      --timer-display-bg: linear-gradient(180deg, rgba(58, 44, 12, 0.9), rgba(103, 76, 18, 0.82));
+      --timer-body-bg:
+        radial-gradient(circle at top left, rgba(250, 204, 21, 0.1), transparent 28%),
+        linear-gradient(180deg, #1e1705 0%, #2b2108 100%);
+    }
+
+    .display-style-mono-grid {
+      --timer-font-stack: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      --timer-letter-spacing: -0.08em;
+      --timer-number-shadow: 0 10px 40px rgba(var(--timer-accent-rgb), 0.18);
+      --timer-digit-weight: 720;
+    }
+
+    .display-style-slab-deck {
+      --timer-font-stack: Rockwell, "Roboto Slab", "Lucida Bright", Georgia, serif;
+      --timer-letter-spacing: -0.05em;
+      --timer-digit-weight: 760;
+      --timer-number-shadow: 0 14px 42px rgba(0, 0, 0, 0.28);
+    }
+
+    .display-style-round-sans {
+      --timer-font-stack: "Avenir Next", "Segoe UI", "Trebuchet MS", sans-serif;
+      --timer-letter-spacing: -0.06em;
+      --timer-digit-weight: 700;
+      --timer-number-shadow: 0 12px 38px rgba(var(--timer-accent-rgb), 0.2);
+    }
+
+    .display-style-led-glow {
+      --timer-font-stack: "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+      --timer-letter-spacing: 0.02em;
+      --timer-digit-weight: 760;
+      --timer-number-shadow:
+        0 0 12px rgba(var(--timer-accent-rgb), 0.8),
+        0 0 28px rgba(var(--timer-accent-rgb), 0.42),
+        0 0 52px rgba(var(--timer-accent-rgb), 0.18);
+    }
+
+    .display-style-outline-arch {
+      --timer-font-stack: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      --timer-letter-spacing: -0.03em;
+      --timer-digit-weight: 780;
+      --timer-number-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
+      --timer-number-stroke: rgba(var(--timer-accent-rgb), 0.75);
+    }
+
+    .display-style-quiet-serif {
+      --timer-font-stack: Charter, Iowan Old Style, Palatino Linotype, Book Antiqua, Georgia, serif;
+      --timer-letter-spacing: -0.04em;
+      --timer-digit-weight: 680;
+      --timer-number-shadow: 0 8px 28px rgba(0, 0, 0, 0.22);
+    }
+
+    .display-style-compressed-board {
+      --timer-font-stack: "Arial Narrow", "Avenir Next Condensed", sans-serif;
+      --timer-letter-spacing: -0.02em;
+      --timer-text-transform: uppercase;
+      --timer-digit-weight: 760;
+      --timer-number-shadow: 0 10px 28px rgba(0, 0, 0, 0.24);
+    }
+
+    .style-card[data-style="mono-grid"] .style-preview {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      letter-spacing: -0.08em;
+    }
+
+    .style-card[data-style="slab-deck"] .style-preview {
+      font-family: Rockwell, "Roboto Slab", Georgia, serif;
+      letter-spacing: -0.05em;
+    }
+
+    .style-card[data-style="round-sans"] .style-preview {
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      letter-spacing: -0.06em;
+    }
+
+    .style-card[data-style="led-glow"] .style-preview {
+      font-family: "SFMono-Regular", Menlo, Monaco, Consolas, monospace;
+      letter-spacing: 0.02em;
+      text-shadow:
+        0 0 10px rgba(var(--timer-accent-rgb), 0.82),
+        0 0 20px rgba(var(--timer-accent-rgb), 0.42);
+    }
+
+    .style-card[data-style="outline-arch"] .style-preview {
+      font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+      -webkit-text-stroke: 1px rgba(var(--timer-accent-rgb), 0.72);
+      color: transparent;
+    }
+
+    .style-card[data-style="quiet-serif"] .style-preview {
+      font-family: Charter, Georgia, serif;
+      letter-spacing: -0.04em;
+    }
+
+    .style-card[data-style="compressed-board"] .style-preview {
+      font-family: "Arial Narrow", "Avenir Next Condensed", sans-serif;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .sr-only-live {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 991.98px) {
+      .display-shell {
+        width: min(100%, 22rem);
+      }
+
+      .insight-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .settings-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .time-display {
+        font-size: clamp(2.7rem, 1.8rem + 8vw, 4.8rem);
+      }
+    }
+  </style>
+</head>
+<body class="theme-canvas-signal display-style-mono-grid">
+  <main class="container app-wrap py-4">
+    <div class="mb-3">
+      <h1 class="h2 mb-1">Focus Timer Studio <span class="text-body-secondary h5">— Countdown + Stopwatch</span></h1>
+      <p class="mb-0 muted-note">Preset work/break cycles, custom countdowns, and a stopwatch in one browser-only tool. Press <kbd>Space</kbd> to start or pause.</p>
+    </div>
+
+    <div id="topStatus" class="alert alert-secondary py-2" role="status" aria-live="polite">
+      Ready. Choose a preset, then press Start.
+    </div>
+
+    <div class="d-flex align-items-center gap-2 mb-3 flex-wrap">
+      <button id="startPauseBtn" type="button" class="btn btn-primary">Start</button>
+      <button id="resetBtn" type="button" class="btn btn-outline-light">Reset</button>
+      <button id="skipBtn" type="button" class="btn btn-outline-secondary">Skip Step</button>
+      <button id="restartQueueBtn" type="button" class="btn btn-outline-secondary">Restart Queue</button>
+      <button id="addMinuteBtn" type="button" class="btn btn-outline-secondary btn-sm">+1 min</button>
+      <button id="minusMinuteBtn" type="button" class="btn btn-outline-secondary btn-sm">-1 min</button>
+      <span class="text-body-secondary small">Client-side only.</span>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-12 col-lg-7">
+        <section class="card panel-card h-100" aria-label="Timer display and controls">
+          <div class="card-header d-flex justify-content-between align-items-center gap-2 flex-wrap">
+            <div>
+              <strong>Timer</strong>
+              <p class="mb-0">The active phase and its remaining time.</p>
+            </div>
+            <span id="displayModePill" class="timer-output-meta">Preset Queue</span>
+          </div>
+          <div class="card-body">
+            <div class="display-card mb-3">
+              <div class="display-header">
+                <div>
+                  <div class="phase-label">Current phase</div>
+                  <div id="phaseName" class="h5 mb-0">Focus Block</div>
+                </div>
+              </div>
+
+              <div class="timer-tile">
+                <div class="display-shell" aria-live="off">
+                  <div class="progress-ring" id="progressRing" aria-hidden="true"></div>
+                  <div class="display-core">
+                    <p id="phaseContext" class="phase-label mb-2">Round 1 of 4</p>
+                    <p id="timeDisplay" class="time-display mono" aria-label="Timer value">25:00</p>
+                    <p id="timeCaption" class="time-caption">Ends at 10:25 AM</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="status-bar">
+              <span class="text-body-secondary">Auto-updates while the timer runs.</span>
+              <span class="counts"><strong id="queueSummary">4 steps</strong> · <strong id="sessionSummary">25m focus</strong> · <strong id="themeSummary">Signal Blue</strong></span>
+            </div>
+
+            <div class="display-footer mt-3">
+              <div class="tool-toolbar">
+                <span class="mini-chip"><strong id="elapsedLabel">00:00</strong> elapsed</span>
+                <span class="mini-chip"><strong id="remainingLabel">25:00</strong> remaining</span>
+                <span class="mini-chip"><strong id="cycleLabel">1 / 4</strong> cycle</span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <section class="card panel-card h-100" aria-labelledby="modeHeading">
+          <div class="card-header">
+            <div class="panel-head">
+              <div>
+                <h2 id="modeHeading" class="h5 mb-0">Mode</h2>
+                <p class="mb-0">Switch between queue mode, one countdown, or a stopwatch.</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div id="modeGrid" class="mode-grid mb-3">
+              <button type="button" class="mode-card is-active" data-mode="preset-queue">
+                <h3>Preset Queue</h3>
+                <p>Work and break steps assembled from a productivity pattern.</p>
+              </button>
+              <button type="button" class="mode-card" data-mode="custom-countdown">
+                <h3>Custom Countdown</h3>
+                <p>One countdown with your own target duration and label.</p>
+              </button>
+              <button type="button" class="mode-card" data-mode="stopwatch">
+                <h3>Stopwatch</h3>
+                <p>Count upward for open-ended timing without a preset end.</p>
+              </button>
+            </div>
+
+            <div class="builder-note mb-3" id="builderNote">
+              Queue duration: 1h 45m total across 4 focus sessions and 4 breaks.
+            </div>
+
+            <div class="tool-toolbar">
+              <span class="metric-chip"><strong id="selectedPresetName">Classic Pomodoro</strong> preset</span>
+              <span class="metric-chip"><strong id="selectedStyleName">Mono Grid</strong> style</span>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-12 col-lg-7">
+        <section class="card panel-card h-100" aria-labelledby="presetHeading">
+          <div class="card-header d-flex justify-content-between align-items-center gap-2 flex-wrap">
+            <div>
+              <strong id="presetHeading">Productivity Presets</strong>
+              <p class="mb-0">Common rhythms for focus, studying, writing, and short-burst work.</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <div id="presetGrid" class="preset-grid"></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <section class="card panel-card h-100" aria-labelledby="styleHeading">
+          <div class="card-header">
+            <strong id="styleHeading">Number Styles</strong>
+            <p class="mb-0">Different visual treatments for the timer digits.</p>
+          </div>
+          <div class="card-body">
+            <div id="styleGrid" class="style-grid"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-12 col-lg-7">
+        <section class="card panel-card h-100" aria-labelledby="builderHeading">
+          <div class="card-header">
+            <strong id="builderHeading">Session Builder</strong>
+            <p class="mb-0">Edit the queue durations, labels, theme, countdown target, and behavior.</p>
+          </div>
+          <div class="card-body">
+            <div class="settings-grid mb-3">
+              <div class="field-block">
+                <label for="workMinutesInput">Focus minutes</label>
+                <input id="workMinutesInput" type="number" min="1" max="240" step="1" value="25">
+              </div>
+              <div class="field-block">
+                <label for="shortBreakInput">Short break</label>
+                <input id="shortBreakInput" type="number" min="0" max="120" step="1" value="5">
+              </div>
+              <div class="field-block">
+                <label for="longBreakInput">Long break</label>
+                <input id="longBreakInput" type="number" min="0" max="180" step="1" value="15">
+              </div>
+              <div class="field-block">
+                <label for="roundsInput">Rounds</label>
+                <input id="roundsInput" type="number" min="1" max="12" step="1" value="4">
+              </div>
+              <div class="field-block">
+                <label for="customLabelInput">Session label</label>
+                <input id="customLabelInput" type="text" maxlength="48" value="Focus Block">
+              </div>
+              <div class="field-block">
+                <label for="themeSelect">Color theme</label>
+                <select id="themeSelect">
+                  <option value="canvas-signal">Signal Blue</option>
+                  <option value="sunset-grid">Sunset Grid</option>
+                  <option value="forest-breath">Forest Breath</option>
+                  <option value="paper-lantern">Paper Lantern</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="settings-grid mb-3">
+              <div class="field-block">
+                <label for="countdownMinutesInput">Custom countdown minutes</label>
+                <input id="countdownMinutesInput" type="number" min="1" max="1440" step="1" value="15">
+              </div>
+              <div class="field-block">
+                <label for="countdownSecondsInput">Custom countdown seconds</label>
+                <input id="countdownSecondsInput" type="number" min="0" max="59" step="1" value="0">
+              </div>
+              <div class="field-block">
+                <label for="countdownLabelInput">Countdown label</label>
+                <input id="countdownLabelInput" type="text" maxlength="48" value="Countdown">
+              </div>
+              <div class="field-block">
+                <label for="soundSelect">Completion sound</label>
+                <select id="soundSelect">
+                  <option value="soft-chime">Soft chime</option>
+                  <option value="double-ping">Double ping</option>
+                  <option value="bright-bell">Bright bell</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="toggle-row mb-3">
+              <div>
+                <div class="fw-semibold">Auto-start next step</div>
+                <div class="muted-note">Useful for hands-off work and break cycling.</div>
+              </div>
+              <div class="form-check form-switch mb-0">
+                <input id="autoAdvanceToggle" class="form-check-input" type="checkbox" aria-label="Auto-start next step" checked>
+              </div>
+            </div>
+
+            <div class="toggle-row mb-0">
+              <div>
+                <div class="fw-semibold">Announce phase changes</div>
+                <div class="muted-note">Posts screen-reader and status updates when the step changes.</div>
+              </div>
+              <div class="form-check form-switch mb-0">
+                <input id="announceToggle" class="form-check-input" type="checkbox" aria-label="Announce phase changes" checked>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="col-12 col-lg-5">
+        <section class="card panel-card h-100" aria-labelledby="queueHeading">
+          <div class="card-header d-flex justify-content-between align-items-center gap-2 flex-wrap">
+            <div>
+              <strong id="queueHeading">Queue Preview</strong>
+              <p class="mb-0">The active timer walks this sequence from top to bottom.</p>
+            </div>
+            <span class="mini-chip"><strong id="queueDurationLabel">1h 45m</strong> total</span>
+          </div>
+          <div class="card-body">
+            <div id="queueList" class="timeline-list" aria-live="polite"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="insight-grid mb-4">
+      <article class="insight-card">
+        <h3>Session totals</h3>
+        <div id="focusTotalValue" class="stat-value">100m</div>
+        <p>Total planned focus time in the active queue.</p>
+      </article>
+      <article class="insight-card">
+        <h3>Break load</h3>
+        <div id="breakTotalValue" class="stat-value">20m</div>
+        <p>Total planned recovery time across the current run.</p>
+      </article>
+      <article class="insight-card">
+        <h3>Run shape</h3>
+        <div id="runShapeValue" class="stat-value">4 rounds</div>
+        <p>How many focus blocks are currently stacked into the queue.</p>
+      </article>
+    </div>
+
+    <div class="alert alert-secondary mb-0">
+      <strong>About this tool.</strong>
+      Everything runs in your browser. Presets, style, theme, and builder values are remembered locally.
+    </div>
+
+    <div id="screenReaderStatus" class="sr-only-live" aria-live="polite"></div>
+  </main>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const STORAGE_KEY = 'tedt-focus-timer-studio';
+
+      const presets = [
+        {
+          id: 'classic-pomodoro',
+          name: 'Classic Pomodoro',
+          description: 'The standard 25 minute focus cycle with short breaks and a longer reset at the end.',
+          label: 'Focus Block',
+          workMinutes: 25,
+          shortBreakMinutes: 5,
+          longBreakMinutes: 15,
+          rounds: 4,
+          tags: ['25/5', 'balanced', 'default']
+        },
+        {
+          id: 'deep-work-45',
+          name: 'Deep Work 45/15',
+          description: 'Longer focus blocks for writing, analysis, and design work where context switching is expensive.',
+          label: 'Deep Work',
+          workMinutes: 45,
+          shortBreakMinutes: 15,
+          longBreakMinutes: 20,
+          rounds: 3,
+          tags: ['deep work', 'maker time']
+        },
+        {
+          id: 'ultradian-90',
+          name: 'Ultradian 90/20',
+          description: 'A full 90 minute push followed by a meaningful break.',
+          label: 'Ultradian Session',
+          workMinutes: 90,
+          shortBreakMinutes: 20,
+          longBreakMinutes: 20,
+          rounds: 2,
+          tags: ['90/20', 'strategic']
+        },
+        {
+          id: 'fifty-two-seventeen',
+          name: '52 / 17 Rhythm',
+          description: 'A common productivity cadence for sustained output without grinding too long.',
+          label: '52 Minute Sprint',
+          workMinutes: 52,
+          shortBreakMinutes: 17,
+          longBreakMinutes: 17,
+          rounds: 3,
+          tags: ['52/17', 'structured']
+        },
+        {
+          id: 'adhd-sprint',
+          name: 'ADHD Sprint 15/3',
+          description: 'Short, frequent resets for people who need faster reward loops.',
+          label: 'Sprint',
+          workMinutes: 15,
+          shortBreakMinutes: 3,
+          longBreakMinutes: 10,
+          rounds: 6,
+          tags: ['short bursts', 'fast reset']
+        },
+        {
+          id: 'writer-fifty',
+          name: 'Writer 50/10',
+          description: 'A clean cadence for drafting, editing, and research-heavy writing sessions.',
+          label: 'Writing Block',
+          workMinutes: 50,
+          shortBreakMinutes: 10,
+          longBreakMinutes: 20,
+          rounds: 3,
+          tags: ['writing', 'editing']
+        },
+        {
+          id: 'study-thirty',
+          name: 'Study Drill 30/5',
+          description: 'A steady study rhythm that keeps repetition work from dragging.',
+          label: 'Study Round',
+          workMinutes: 30,
+          shortBreakMinutes: 5,
+          longBreakMinutes: 15,
+          rounds: 4,
+          tags: ['study', 'exam prep']
+        },
+        {
+          id: 'ten-minute-launch',
+          name: '10 Minute Launch',
+          description: 'A tiny starting ramp for when the real objective is just getting moving.',
+          label: 'Launch Window',
+          workMinutes: 10,
+          shortBreakMinutes: 2,
+          longBreakMinutes: 5,
+          rounds: 4,
+          tags: ['activation', 'start small']
+        }
+      ];
+
+      const styles = [
+        { id: 'mono-grid', name: 'Mono Grid', description: 'Precise and compact.', sample: '25:00' },
+        { id: 'slab-deck', name: 'Slab Deck', description: 'Heavy editorial numerals.', sample: '45:15' },
+        { id: 'round-sans', name: 'Round Sans', description: 'Friendly and modern.', sample: '52:17' },
+        { id: 'led-glow', name: 'LED Glow', description: 'Bright, clock-like, and loud.', sample: '90:20' },
+        { id: 'outline-arch', name: 'Outline Arch', description: 'Posterish, bold, architectural.', sample: '30:05' },
+        { id: 'quiet-serif', name: 'Quiet Serif', description: 'Calmer reading-room feel.', sample: '50:10' },
+        { id: 'compressed-board', name: 'Compressed Board', description: 'Concise scoreboard energy.', sample: '15:03' }
+      ];
+
+      const themes = {
+        'canvas-signal': 'Signal Blue',
+        'sunset-grid': 'Sunset Grid',
+        'forest-breath': 'Forest Breath',
+        'paper-lantern': 'Paper Lantern'
+      };
+
+      const appState = {
+        mode: 'preset-queue',
+        presetId: presets[0].id,
+        styleId: styles[0].id,
+        themeId: 'canvas-signal',
+        soundId: 'soft-chime',
+        customValues: {
+          workMinutes: 25,
+          shortBreakMinutes: 5,
+          longBreakMinutes: 15,
+          rounds: 4,
+          label: 'Focus Block',
+          countdownMinutes: 15,
+          countdownSeconds: 0,
+          countdownLabel: 'Countdown'
+        },
+        autoAdvance: true,
+        announce: true,
+        queue: [],
+        currentStepIndex: 0,
+        remainingMs: 25 * 60 * 1000,
+        originalStepMs: 25 * 60 * 1000,
+        stopwatchElapsedMs: 0,
+        sessionStartedAt: null,
+        stepStartedAt: null,
+        running: false,
+        lastTickAt: null,
+        completionCount: 0,
+        timerHandle: null
+      };
+
+      const els = {
+        body: document.body,
+        topStatus: document.getElementById('topStatus'),
+        queueSummary: document.getElementById('queueSummary'),
+        sessionSummary: document.getElementById('sessionSummary'),
+        themeSummary: document.getElementById('themeSummary'),
+        phaseName: document.getElementById('phaseName'),
+        phaseContext: document.getElementById('phaseContext'),
+        timeDisplay: document.getElementById('timeDisplay'),
+        timeCaption: document.getElementById('timeCaption'),
+        displayModePill: document.getElementById('displayModePill'),
+        progressRing: document.getElementById('progressRing'),
+        elapsedLabel: document.getElementById('elapsedLabel'),
+        remainingLabel: document.getElementById('remainingLabel'),
+        cycleLabel: document.getElementById('cycleLabel'),
+        startPauseBtn: document.getElementById('startPauseBtn'),
+        resetBtn: document.getElementById('resetBtn'),
+        skipBtn: document.getElementById('skipBtn'),
+        restartQueueBtn: document.getElementById('restartQueueBtn'),
+        addMinuteBtn: document.getElementById('addMinuteBtn'),
+        minusMinuteBtn: document.getElementById('minusMinuteBtn'),
+        modeGrid: document.getElementById('modeGrid'),
+        presetGrid: document.getElementById('presetGrid'),
+        selectedPresetName: document.getElementById('selectedPresetName'),
+        workMinutesInput: document.getElementById('workMinutesInput'),
+        shortBreakInput: document.getElementById('shortBreakInput'),
+        longBreakInput: document.getElementById('longBreakInput'),
+        roundsInput: document.getElementById('roundsInput'),
+        customLabelInput: document.getElementById('customLabelInput'),
+        themeSelect: document.getElementById('themeSelect'),
+        countdownMinutesInput: document.getElementById('countdownMinutesInput'),
+        countdownSecondsInput: document.getElementById('countdownSecondsInput'),
+        countdownLabelInput: document.getElementById('countdownLabelInput'),
+        soundSelect: document.getElementById('soundSelect'),
+        autoAdvanceToggle: document.getElementById('autoAdvanceToggle'),
+        announceToggle: document.getElementById('announceToggle'),
+        builderNote: document.getElementById('builderNote'),
+        queueList: document.getElementById('queueList'),
+        queueDurationLabel: document.getElementById('queueDurationLabel'),
+        styleGrid: document.getElementById('styleGrid'),
+        selectedStyleName: document.getElementById('selectedStyleName'),
+        focusTotalValue: document.getElementById('focusTotalValue'),
+        breakTotalValue: document.getElementById('breakTotalValue'),
+        runShapeValue: document.getElementById('runShapeValue'),
+        screenReaderStatus: document.getElementById('screenReaderStatus')
+      };
+
+      function clamp(value, min, max, fallback) {
+        const numeric = Number(value);
+        if (!Number.isFinite(numeric)) {
+          return fallback;
+        }
+        return Math.min(max, Math.max(min, numeric));
+      }
+
+      function getSelectedPreset() {
+        return presets.find(preset => preset.id === appState.presetId) || presets[0];
+      }
+
+      function getSelectedStyle() {
+        return styles.find(style => style.id === appState.styleId) || styles[0];
+      }
+
+      function buildPresetQueue(config) {
+        const steps = [];
+        const rounds = clamp(config.rounds, 1, 12, 4);
+
+        for (let roundIndex = 1; roundIndex <= rounds; roundIndex += 1) {
+          steps.push({
+            type: 'focus',
+            label: config.label || 'Focus Block',
+            roundIndex,
+            roundCount: rounds,
+            durationMs: clamp(config.workMinutes, 1, 240, 25) * 60 * 1000
+          });
+
+          const isFinalRound = roundIndex === rounds;
+          const breakMinutes = isFinalRound
+            ? clamp(config.longBreakMinutes, 0, 180, 15)
+            : clamp(config.shortBreakMinutes, 0, 120, 5);
+
+          if (breakMinutes > 0) {
+            steps.push({
+              type: isFinalRound ? 'long-break' : 'short-break',
+              label: isFinalRound ? 'Long Break' : 'Short Break',
+              roundIndex,
+              roundCount: rounds,
+              durationMs: breakMinutes * 60 * 1000
+            });
+          }
+        }
+
+        return steps;
+      }
+
+      function buildCustomCountdownQueue() {
+        return [{
+          type: 'countdown',
+          label: (appState.customValues.countdownLabel || 'Countdown').trim() || 'Countdown',
+          roundIndex: 1,
+          roundCount: 1,
+          durationMs:
+            clamp(appState.customValues.countdownMinutes, 0, 1440, 15) * 60 * 1000 +
+            clamp(appState.customValues.countdownSeconds, 0, 59, 0) * 1000
+        }].filter(step => step.durationMs > 0);
+      }
+
+      function buildStopwatchQueue() {
+        return [{
+          type: 'stopwatch',
+          label: 'Stopwatch',
+          roundIndex: 1,
+          roundCount: 1,
+          durationMs: null
+        }];
+      }
+
+      function rebuildQueue(resetPlayback = true) {
+        if (appState.mode === 'preset-queue') {
+          appState.queue = buildPresetQueue(appState.customValues);
+        } else if (appState.mode === 'custom-countdown') {
+          appState.queue = buildCustomCountdownQueue();
+        } else {
+          appState.queue = buildStopwatchQueue();
+        }
+
+        if (!appState.queue.length) {
+          appState.queue = [{
+            type: 'countdown',
+            label: 'Countdown',
+            roundIndex: 1,
+            roundCount: 1,
+            durationMs: 60 * 1000
+          }];
+        }
+
+        if (resetPlayback) {
+          appState.currentStepIndex = 0;
+          const firstStep = appState.queue[0];
+          appState.originalStepMs = firstStep.durationMs || 0;
+          appState.remainingMs = firstStep.durationMs || 0;
+          appState.stopwatchElapsedMs = 0;
+          appState.sessionStartedAt = null;
+          appState.stepStartedAt = null;
+          appState.lastTickAt = null;
+          appState.running = false;
+        }
+
+        renderAll();
+      }
+
+      function saveState() {
+        const snapshot = {
+          mode: appState.mode,
+          presetId: appState.presetId,
+          styleId: appState.styleId,
+          themeId: appState.themeId,
+          soundId: appState.soundId,
+          customValues: appState.customValues,
+          autoAdvance: appState.autoAdvance,
+          announce: appState.announce
+        };
+
+        try {
+          localStorage.setItem(STORAGE_KEY, JSON.stringify(snapshot));
+        } catch (error) {
+          // Ignore storage failures; the tool still works without persistence.
+        }
+      }
+
+      function loadState() {
+        try {
+          const rawValue = localStorage.getItem(STORAGE_KEY);
+          if (!rawValue) {
+            return;
+          }
+          const parsed = JSON.parse(rawValue);
+          if (parsed.mode) {
+            appState.mode = parsed.mode;
+          }
+          if (parsed.presetId) {
+            appState.presetId = parsed.presetId;
+          }
+          if (parsed.styleId) {
+            appState.styleId = parsed.styleId;
+          }
+          if (parsed.themeId) {
+            appState.themeId = parsed.themeId;
+          }
+          if (parsed.soundId) {
+            appState.soundId = parsed.soundId;
+          }
+          if (parsed.customValues && typeof parsed.customValues === 'object') {
+            appState.customValues = { ...appState.customValues, ...parsed.customValues };
+          }
+          if (typeof parsed.autoAdvance === 'boolean') {
+            appState.autoAdvance = parsed.autoAdvance;
+          }
+          if (typeof parsed.announce === 'boolean') {
+            appState.announce = parsed.announce;
+          }
+        } catch (error) {
+          // Ignore bad local data and continue with defaults.
+        }
+      }
+
+      function formatClock(totalSeconds, includeHours = false) {
+        const safeSeconds = Math.max(0, Math.floor(totalSeconds));
+        const hours = Math.floor(safeSeconds / 3600);
+        const minutes = Math.floor((safeSeconds % 3600) / 60);
+        const seconds = safeSeconds % 60;
+
+        if (includeHours || hours > 0) {
+          return `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+
+        return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+      }
+
+      function formatCompactDuration(totalMs) {
+        const totalMinutes = Math.round(totalMs / 60000);
+        const hours = Math.floor(totalMinutes / 60);
+        const minutes = totalMinutes % 60;
+        if (hours > 0 && minutes > 0) {
+          return `${hours}h ${minutes}m`;
+        }
+        if (hours > 0) {
+          return `${hours}h`;
+        }
+        return `${minutes}m`;
+      }
+
+      function getCurrentStep() {
+        return appState.queue[appState.currentStepIndex] || appState.queue[0];
+      }
+
+      function getTotalQueueMs() {
+        return appState.queue.reduce((sum, step) => sum + (step.durationMs || 0), 0);
+      }
+
+      function getFocusTotalMs() {
+        return appState.queue
+          .filter(step => step.type === 'focus')
+          .reduce((sum, step) => sum + (step.durationMs || 0), 0);
+      }
+
+      function getBreakTotalMs() {
+        return appState.queue
+          .filter(step => step.type === 'short-break' || step.type === 'long-break')
+          .reduce((sum, step) => sum + (step.durationMs || 0), 0);
+      }
+
+      function renderModeCards() {
+        els.modeGrid.querySelectorAll('.mode-card').forEach(button => {
+          const isActive = button.dataset.mode === appState.mode;
+          button.classList.toggle('is-active', isActive);
+          button.setAttribute('aria-pressed', String(isActive));
+        });
+
+        const labelMap = {
+          'preset-queue': 'Preset Queue',
+          'custom-countdown': 'Custom Countdown',
+          'stopwatch': 'Stopwatch'
+        };
+
+        els.displayModePill.textContent = labelMap[appState.mode];
+      }
+
+      function renderPresetCards() {
+        els.presetGrid.innerHTML = '';
+        presets.forEach(preset => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'preset-card';
+          button.dataset.presetId = preset.id;
+          if (preset.id === appState.presetId) {
+            button.classList.add('is-active');
+          }
+          button.innerHTML = `
+            <div class="preset-card-head">
+              <div>
+                <h3>${preset.name}</h3>
+                <p>${preset.description}</p>
+              </div>
+            </div>
+            <div class="preset-meta">
+              <span>${preset.workMinutes}m focus</span>
+              <span>${preset.shortBreakMinutes}m break</span>
+              <span>${preset.rounds} rounds</span>
+            </div>
+          `;
+          els.presetGrid.appendChild(button);
+        });
+
+        els.selectedPresetName.textContent = getSelectedPreset().name;
+      }
+
+      function renderStyleCards() {
+        els.styleGrid.innerHTML = '';
+        styles.forEach(style => {
+          const button = document.createElement('button');
+          button.type = 'button';
+          button.className = 'style-card';
+          button.dataset.style = style.id;
+          if (style.id === appState.styleId) {
+            button.classList.add('is-active');
+          }
+          button.innerHTML = `
+            <div class="style-preview">${style.sample}</div>
+            <h3>${style.name}</h3>
+            <p>${style.description}</p>
+          `;
+          els.styleGrid.appendChild(button);
+        });
+
+        els.selectedStyleName.textContent = getSelectedStyle().name;
+      }
+
+      function renderQueue() {
+        els.queueList.innerHTML = '';
+
+        appState.queue.forEach((step, index) => {
+          const item = document.createElement('article');
+          item.className = 'queue-item';
+          if (index === appState.currentStepIndex) {
+            item.classList.add('is-current');
+          }
+          item.innerHTML = `
+            <div class="queue-step-label">Step ${index + 1}</div>
+            <h3>${step.label}</h3>
+            <p>${step.type === 'focus' ? 'Focus interval' : step.type === 'stopwatch' ? 'Open-ended count up' : 'Recovery interval'}</p>
+            <div class="queue-meta">
+              <span>${step.type === 'stopwatch' ? 'No limit' : formatCompactDuration(step.durationMs)}</span>
+              <span>Round ${step.roundIndex} of ${step.roundCount}</span>
+              <span>${step.type.replace('-', ' ')}</span>
+            </div>
+          `;
+          els.queueList.appendChild(item);
+        });
+
+        els.queueDurationLabel.textContent = appState.mode === 'stopwatch' ? 'Open ended' : formatCompactDuration(getTotalQueueMs());
+      }
+
+      function applyTheme() {
+        Object.keys(themes).forEach(themeId => {
+          els.body.classList.remove(`theme-${themeId}`);
+        });
+        els.body.classList.add(`theme-${appState.themeId}`);
+        els.themeSummary.textContent = themes[appState.themeId];
+      }
+
+      function applyStyle() {
+        styles.forEach(style => {
+          els.body.classList.remove(`display-style-${style.id}`);
+        });
+        els.body.classList.add(`display-style-${appState.styleId}`);
+      }
+
+      function syncInputs() {
+        els.workMinutesInput.value = appState.customValues.workMinutes;
+        els.shortBreakInput.value = appState.customValues.shortBreakMinutes;
+        els.longBreakInput.value = appState.customValues.longBreakMinutes;
+        els.roundsInput.value = appState.customValues.rounds;
+        els.customLabelInput.value = appState.customValues.label;
+        els.countdownMinutesInput.value = appState.customValues.countdownMinutes;
+        els.countdownSecondsInput.value = appState.customValues.countdownSeconds;
+        els.countdownLabelInput.value = appState.customValues.countdownLabel;
+        els.themeSelect.value = appState.themeId;
+        els.soundSelect.value = appState.soundId;
+        els.autoAdvanceToggle.checked = appState.autoAdvance;
+        els.announceToggle.checked = appState.announce;
+      }
+
+      function renderInsights() {
+        const focusTotalMs = getFocusTotalMs();
+        const breakTotalMs = getBreakTotalMs();
+        const focusSteps = appState.queue.filter(step => step.type === 'focus').length;
+        els.focusTotalValue.textContent = focusTotalMs ? formatCompactDuration(focusTotalMs) : '0m';
+        els.breakTotalValue.textContent = breakTotalMs ? formatCompactDuration(breakTotalMs) : '0m';
+        els.runShapeValue.textContent = appState.mode === 'stopwatch' ? 'Open timer' : `${focusSteps || 1} ${focusSteps === 1 ? 'round' : 'rounds'}`;
+      }
+
+      function renderBuilderSummary() {
+        const focusSteps = appState.queue.filter(step => step.type === 'focus').length;
+        const breakSteps = appState.queue.filter(step => step.type === 'short-break' || step.type === 'long-break').length;
+        const totalLabel = appState.mode === 'stopwatch' ? 'No fixed duration' : formatCompactDuration(getTotalQueueMs());
+        els.builderNote.textContent = appState.mode === 'stopwatch'
+          ? 'Stopwatch mode has no queue endpoint. It counts upward until you pause or reset it.'
+          : `Queue duration: ${totalLabel} total across ${focusSteps || 1} ${focusSteps === 1 ? 'focus session' : 'focus sessions'} and ${breakSteps} ${breakSteps === 1 ? 'break' : 'breaks'}.`;
+      }
+
+      function renderDisplay() {
+        const currentStep = getCurrentStep();
+        const elapsedMs = currentStep.type === 'stopwatch'
+          ? appState.stopwatchElapsedMs
+          : Math.max(0, (appState.originalStepMs || 0) - appState.remainingMs);
+
+        const secondsForDisplay = currentStep.type === 'stopwatch'
+          ? appState.stopwatchElapsedMs / 1000
+          : appState.remainingMs / 1000;
+
+        els.phaseName.textContent = currentStep.label;
+        els.phaseContext.textContent = appState.mode === 'stopwatch'
+          ? 'Open-ended timing'
+          : `Round ${currentStep.roundIndex} of ${currentStep.roundCount}`;
+        els.timeDisplay.textContent = formatClock(secondsForDisplay, secondsForDisplay >= 3600 || currentStep.type === 'stopwatch');
+        els.elapsedLabel.textContent = formatClock(elapsedMs / 1000, elapsedMs >= 3600 * 1000);
+        els.remainingLabel.textContent = currentStep.type === 'stopwatch'
+          ? '∞'
+          : formatClock(appState.remainingMs / 1000, appState.remainingMs >= 3600 * 1000);
+        els.cycleLabel.textContent = `${Math.min(appState.currentStepIndex + 1, appState.queue.length)} / ${appState.queue.length}`;
+
+        if (currentStep.type === 'stopwatch') {
+          els.progressRing.style.setProperty('--timer-progress', '18deg');
+          els.timeCaption.textContent = 'No end time in stopwatch mode';
+        } else {
+          const progressRatio = appState.originalStepMs > 0
+            ? Math.min(1, Math.max(0, elapsedMs / appState.originalStepMs))
+            : 0;
+          els.progressRing.style.setProperty('--timer-progress', `${progressRatio * 360}deg`);
+          const estimatedEnd = new Date(Date.now() + appState.remainingMs);
+          els.timeCaption.textContent = `Ends at ${estimatedEnd.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}`;
+        }
+
+        const queueSteps = appState.queue.length;
+        els.queueSummary.textContent = queueSteps === 1 ? '1 step' : `${queueSteps} steps`;
+        els.sessionSummary.textContent = currentStep.type === 'stopwatch'
+          ? 'Stopwatch running'
+          : `${formatCompactDuration(currentStep.durationMs || 0)} ${currentStep.label.toLowerCase()}`;
+
+        els.startPauseBtn.textContent = appState.running ? 'Pause' : (currentStep.type === 'stopwatch' && appState.stopwatchElapsedMs > 0 ? 'Resume' : 'Start');
+      }
+
+      function renderStatus(text) {
+        els.topStatus.textContent = text;
+        if (appState.announce) {
+          els.screenReaderStatus.textContent = text;
+        }
+      }
+
+      function renderAll() {
+        renderModeCards();
+        renderPresetCards();
+        renderStyleCards();
+        renderQueue();
+        renderInsights();
+        renderBuilderSummary();
+        renderDisplay();
+        applyTheme();
+        applyStyle();
+        syncInputs();
+        saveState();
+      }
+
+      function stopTimerLoop() {
+        if (appState.timerHandle) {
+          window.clearInterval(appState.timerHandle);
+          appState.timerHandle = null;
+        }
+      }
+
+      function playCompletionTone() {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (!AudioContextClass) {
+          return;
+        }
+
+        const audioContext = new AudioContextClass();
+        const presetsBySound = {
+          'soft-chime': [523.25, 659.25],
+          'double-ping': [659.25, 659.25, 783.99],
+          'bright-bell': [783.99, 987.77, 1318.51]
+        };
+        const notes = presetsBySound[appState.soundId] || presetsBySound['soft-chime'];
+
+        let noteStart = audioContext.currentTime;
+        notes.forEach((frequency, index) => {
+          const oscillator = audioContext.createOscillator();
+          const gainNode = audioContext.createGain();
+          oscillator.type = index === 0 ? 'sine' : 'triangle';
+          oscillator.frequency.value = frequency;
+          gainNode.gain.setValueAtTime(0.0001, noteStart);
+          gainNode.gain.exponentialRampToValueAtTime(0.12, noteStart + 0.01);
+          gainNode.gain.exponentialRampToValueAtTime(0.0001, noteStart + 0.26);
+          oscillator.connect(gainNode);
+          gainNode.connect(audioContext.destination);
+          oscillator.start(noteStart);
+          oscillator.stop(noteStart + 0.28);
+          noteStart += 0.14;
+        });
+
+        window.setTimeout(() => {
+          audioContext.close().catch(() => {});
+        }, 1200);
+      }
+
+      function advanceToStep(nextIndex) {
+        const targetIndex = nextIndex;
+        if (targetIndex >= appState.queue.length) {
+          stopTimerLoop();
+          appState.running = false;
+          appState.currentStepIndex = appState.queue.length - 1;
+          const finalStep = getCurrentStep();
+          if (finalStep && finalStep.type !== 'stopwatch') {
+            appState.remainingMs = 0;
+          }
+          renderStatus('Queue complete. Nice work.');
+          renderDisplay();
+          saveState();
+          return;
+        }
+
+        appState.currentStepIndex = targetIndex;
+        const step = getCurrentStep();
+        appState.originalStepMs = step.durationMs || 0;
+        appState.remainingMs = step.durationMs || 0;
+        appState.stopwatchElapsedMs = 0;
+        appState.stepStartedAt = Date.now();
+        appState.lastTickAt = Date.now();
+        renderStatus(`Now running: ${step.label}.`);
+        renderAll();
+      }
+
+      function resetCurrentMode() {
+        stopTimerLoop();
+        appState.running = false;
+        appState.currentStepIndex = 0;
+        appState.sessionStartedAt = null;
+        appState.lastTickAt = null;
+        appState.stepStartedAt = null;
+        const firstStep = getCurrentStep();
+        appState.originalStepMs = firstStep.durationMs || 0;
+        appState.remainingMs = firstStep.durationMs || 0;
+        appState.stopwatchElapsedMs = 0;
+        renderStatus('Timer reset.');
+        renderAll();
+      }
+
+      function tick() {
+        const now = Date.now();
+        const currentStep = getCurrentStep();
+        const deltaMs = appState.lastTickAt ? now - appState.lastTickAt : 0;
+        appState.lastTickAt = now;
+
+        if (currentStep.type === 'stopwatch') {
+          appState.stopwatchElapsedMs += deltaMs;
+          renderDisplay();
+          return;
+        }
+
+        appState.remainingMs = Math.max(0, appState.remainingMs - deltaMs);
+        renderDisplay();
+
+        if (appState.remainingMs <= 0) {
+          playCompletionTone();
+          appState.completionCount += 1;
+          if (appState.autoAdvance) {
+            advanceToStep(appState.currentStepIndex + 1);
+          } else {
+            stopTimerLoop();
+            appState.running = false;
+            renderStatus(`${currentStep.label} complete. Start again when you are ready.`);
+            renderAll();
+          }
+        }
+      }
+
+      function startTimer() {
+        if (appState.running) {
+          return;
+        }
+
+        const currentStep = getCurrentStep();
+        if (!appState.sessionStartedAt) {
+          appState.sessionStartedAt = Date.now();
+        }
+        if (!appState.stepStartedAt) {
+          appState.stepStartedAt = Date.now();
+        }
+        appState.running = true;
+        appState.lastTickAt = Date.now();
+        stopTimerLoop();
+        appState.timerHandle = window.setInterval(tick, 100);
+        renderStatus(`Running ${currentStep.label}.`);
+        renderAll();
+      }
+
+      function pauseTimer() {
+        if (!appState.running) {
+          return;
+        }
+        stopTimerLoop();
+        appState.running = false;
+        renderStatus('Paused.');
+        renderAll();
+      }
+
+      function toggleTimer() {
+        if (appState.running) {
+          pauseTimer();
+        } else {
+          startTimer();
+        }
+      }
+
+      function adjustCurrentTime(deltaMinutes) {
+        const currentStep = getCurrentStep();
+        if (currentStep.type === 'stopwatch') {
+          appState.stopwatchElapsedMs = Math.max(0, appState.stopwatchElapsedMs + deltaMinutes * 60 * 1000);
+        } else {
+          const deltaMs = deltaMinutes * 60 * 1000;
+          appState.remainingMs = Math.max(0, appState.remainingMs + deltaMs);
+          appState.originalStepMs = Math.max(60 * 1000, appState.originalStepMs + deltaMs);
+        }
+        renderAll();
+      }
+
+      function handleModeChange(modeId) {
+        if (!modeId || modeId === appState.mode) {
+          return;
+        }
+        appState.mode = modeId;
+        rebuildQueue(true);
+        renderStatus(`Mode changed to ${modeId.replace('-', ' ')}.`);
+      }
+
+      function applyPreset(presetId) {
+        const preset = presets.find(candidate => candidate.id === presetId);
+        if (!preset) {
+          return;
+        }
+        appState.presetId = preset.id;
+        appState.customValues.workMinutes = preset.workMinutes;
+        appState.customValues.shortBreakMinutes = preset.shortBreakMinutes;
+        appState.customValues.longBreakMinutes = preset.longBreakMinutes;
+        appState.customValues.rounds = preset.rounds;
+        appState.customValues.label = preset.label;
+        if (appState.mode !== 'preset-queue') {
+          appState.mode = 'preset-queue';
+        }
+        rebuildQueue(true);
+        renderStatus(`Preset loaded: ${preset.name}.`);
+      }
+
+      function handleBuilderInput() {
+        appState.customValues.workMinutes = clamp(els.workMinutesInput.value, 1, 240, 25);
+        appState.customValues.shortBreakMinutes = clamp(els.shortBreakInput.value, 0, 120, 5);
+        appState.customValues.longBreakMinutes = clamp(els.longBreakInput.value, 0, 180, 15);
+        appState.customValues.rounds = clamp(els.roundsInput.value, 1, 12, 4);
+        appState.customValues.label = els.customLabelInput.value.trim().slice(0, 48) || 'Focus Block';
+        appState.customValues.countdownMinutes = clamp(els.countdownMinutesInput.value, 0, 1440, 15);
+        appState.customValues.countdownSeconds = clamp(els.countdownSecondsInput.value, 0, 59, 0);
+        appState.customValues.countdownLabel = els.countdownLabelInput.value.trim().slice(0, 48) || 'Countdown';
+        appState.themeId = els.themeSelect.value;
+        appState.soundId = els.soundSelect.value;
+        appState.autoAdvance = els.autoAdvanceToggle.checked;
+        appState.announce = els.announceToggle.checked;
+
+        if (appState.mode === 'preset-queue' || appState.mode === 'custom-countdown') {
+          rebuildQueue(true);
+        } else {
+          renderAll();
+        }
+      }
+
+      function wireEvents() {
+        els.modeGrid.addEventListener('click', event => {
+          const button = event.target.closest('.mode-card');
+          if (!button) {
+            return;
+          }
+          handleModeChange(button.dataset.mode);
+        });
+
+        els.presetGrid.addEventListener('click', event => {
+          const button = event.target.closest('.preset-card');
+          if (!button) {
+            return;
+          }
+          applyPreset(button.dataset.presetId);
+        });
+
+        els.styleGrid.addEventListener('click', event => {
+          const button = event.target.closest('.style-card');
+          if (!button) {
+            return;
+          }
+          appState.styleId = button.dataset.style;
+          renderStatus(`Display style changed to ${getSelectedStyle().name}.`);
+          renderAll();
+        });
+
+        [
+          els.workMinutesInput,
+          els.shortBreakInput,
+          els.longBreakInput,
+          els.roundsInput,
+          els.customLabelInput,
+          els.themeSelect,
+          els.countdownMinutesInput,
+          els.countdownSecondsInput,
+          els.countdownLabelInput,
+          els.soundSelect,
+          els.autoAdvanceToggle,
+          els.announceToggle
+        ].forEach(input => {
+          input.addEventListener('input', handleBuilderInput);
+          input.addEventListener('change', handleBuilderInput);
+        });
+
+        els.startPauseBtn.addEventListener('click', toggleTimer);
+        els.resetBtn.addEventListener('click', resetCurrentMode);
+        els.skipBtn.addEventListener('click', () => {
+          pauseTimer();
+          advanceToStep(appState.currentStepIndex + 1);
+        });
+        els.restartQueueBtn.addEventListener('click', () => {
+          resetCurrentMode();
+          renderStatus('Queue restarted from the beginning.');
+        });
+        els.addMinuteBtn.addEventListener('click', () => adjustCurrentTime(1));
+        els.minusMinuteBtn.addEventListener('click', () => adjustCurrentTime(-1));
+
+        document.addEventListener('keydown', event => {
+          const activeTag = document.activeElement && document.activeElement.tagName;
+          const isTypingContext = activeTag === 'INPUT' || activeTag === 'TEXTAREA' || activeTag === 'SELECT';
+
+          if (event.code === 'Space' && !isTypingContext) {
+            event.preventDefault();
+            toggleTimer();
+          }
+          if ((event.key === 'r' || event.key === 'R') && !isTypingContext) {
+            event.preventDefault();
+            resetCurrentMode();
+          }
+          if ((event.key === 'n' || event.key === 'N') && !isTypingContext) {
+            event.preventDefault();
+            pauseTimer();
+            advanceToStep(appState.currentStepIndex + 1);
+          }
+        });
+
+        window.addEventListener('beforeunload', () => {
+          stopTimerLoop();
+          saveState();
+        });
+      }
+
+      loadState();
+      if (!presets.some(preset => preset.id === appState.presetId)) {
+        appState.presetId = presets[0].id;
+      }
+      if (!styles.some(style => style.id === appState.styleId)) {
+        appState.styleId = styles[0].id;
+      }
+      if (!Object.prototype.hasOwnProperty.call(themes, appState.themeId)) {
+        appState.themeId = 'canvas-signal';
+      }
+
+      rebuildQueue(true);
+      wireEvents();
+      renderStatus('Ready. Choose a preset, then press Start.');
+    })();
+  </script>
+</body>
+</html>

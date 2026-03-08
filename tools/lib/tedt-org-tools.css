@@ -7,6 +7,6 @@
        tests/check_tools_css_sync.rb
 */
 
-@import url("/css/bootstrap-build.css");
-@import url("/css/shared-fonts.css");
-@import url("/css/logo-and-company-fonts.css");
+@import url("../../css/bootstrap-build.css");
+@import url("../../css/shared-fonts.css");
+@import url("../../css/logo-and-company-fonts.css");
