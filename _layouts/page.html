@@ -49,9 +49,20 @@
                 <!-- Page Content -->
                 <main role="main">
                     <div class="py-4">
-                        <h1 class="mb-4">{{ page.title }}</h1>
-                        {% if page.description %}
-                            <p class="lead">{{ page.description }}</p>
+                        {% assign __page_primary_category = page.category | default: page.categories[0] | default: '' | to_s | strip %}
+                        {% if __page_primary_category != '' %}
+                            {% capture __page_slug %}{% include category/map-category-to-registry.html key=__page_primary_category %}{% endcapture %}
+                            {% assign __page_slug = __page_slug | strip %}
+                            {% if __page_slug == '' %}{% assign __page_slug = __page_primary_category | slugify %}{% endif %}
+                            {% assign __page_entry = site.data.category_registry[__page_slug] %}
+                        {% endif %}
+                        {% if __page_entry %}
+                            {% include category/category-palette-apply.html entry=__page_entry slug=__page_slug raw=__page_primary_category title=page.title subtitle=page.description wrapper_class='page-hero category-theme mb-4' title_tag='h1' title_class='mb-2' subtitle_tag='p' subtitle_class='lead mb-0' %}
+                        {% else %}
+                            <h1 class="mb-4">{{ page.title }}</h1>
+                            {% if page.description %}
+                                <p class="lead">{{ page.description }}</p>
+                            {% endif %}
                         {% endif %}
                         {{ content }}
                     </div>

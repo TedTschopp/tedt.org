@@ -1,0 +1,16 @@
+{%- assign __img_credits_title = include.image_credits_title | default: image_credits_title | default: 'Unknown' | strip -%}
+{%- assign __img_credits = include.image_credits | default: image_credits | default: 'Unknown' | strip -%}
+{%- assign __img_credits_href = include.image_credits_url | default: image_credits_URL | default: '' | strip -%}
+{%- assign __img_credits_href_first2 = __img_credits_href | slice: 0, 2 -%}
+{%- assign __img_artist_href = include.image_credits_artist_url | default: image_credits_artist_URL | default: '' | strip -%}
+{%- assign __img_artist_href_first2 = __img_artist_href | slice: 0, 2 -%}
+{%- if __img_credits_href != '' and (__img_credits_href contains '://' or __img_credits_href_first2 == '//') -%}
+  <cite><a target="_blank" rel="noopener noreferrer" href="{{ __img_credits_href | escape }}">{{ __img_credits_title | escape }}</a></cite>:&nbsp;an image by
+{%- else -%}
+  <cite>{{ __img_credits_title | escape }}</cite>:&nbsp;an image by
+{%- endif -%}
+{%- if __img_artist_href != '' and (__img_artist_href contains '://' or __img_artist_href_first2 == '//') -%}
+  <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_blank" class="url fn n" href="{{ __img_artist_href | escape }}">{{ __img_credits | escape }}</a></address></span>
+{%- else -%}
+  {{ __img_credits | escape }}
+{%- endif -%}

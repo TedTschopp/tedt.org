@@ -93,7 +93,7 @@ profile:
     quora_username: &profile_quora_username Ted-Tschopp
     indiewebcamp_username: &profile_indiewebcamp_username Www.tedt.org
     mastodon_username: &profile_mastodon_username TedT@twit.social
-    mastodon_user_id: &profile_mastodon_user_id 109286944787814808
+    mastodon_user_id: &profile_mastodon_user_id 109286944787814820
     threads_username: &profile_threads_username TedTschopp@threads.net
     fediverse_creators: &profile_fediverse_creators
       - TedT@twit.social

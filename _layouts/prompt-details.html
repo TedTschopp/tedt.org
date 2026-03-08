@@ -73,31 +73,7 @@
                                         {% endif %}
                                     </div>
                                     <div class="small image-credits">
-                                        {%- assign __prompt_img_credits_href = image_credits_URL | default: '' | strip -%}
-                                        {%- assign __prompt_img_credits_href_first2 = __prompt_img_credits_href | slice: 0, 2 -%}
-                                        {% if __prompt_img_credits_href != '' %}
-                                            {% if __prompt_img_credits_href contains '://' or __prompt_img_credits_href_first2 == '//' %}
-                                                <cite><a target="_new" href="{{ image_credits_URL }}">{{ image_credits_title }}</a></cite>:&nbsp;an image by
-                                            {% else %}
-                                                <cite>{{image_credits_title}}</cite>:&nbsp;an image by
-                                            {% endif %}
-                                        {% else %}
-                                            <cite>{{image_credits_title}}</cite>:&nbsp;an image by
-                                        {% endif %}
-                                        {%- assign __prompt_img_artist_href = image_credits_artist_URL | default: '' | strip -%}
-                                        {%- assign __prompt_img_artist_href_first2 = __prompt_img_artist_href | slice: 0, 2 -%}
-                                        {% if __prompt_img_artist_href != '' %}
-                                            {% if __prompt_img_artist_href contains '://' or __prompt_img_artist_href_first2 == '//' %}
-                                                {%- assign __prompt_img_credit_href = image_credits_artist_URL | strip -%}
-                                                {%- if __prompt_img_credit_href != '' -%}
-                                                <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_blank" class="url fn n" href="{{ __prompt_img_credit_href | escape }}">{{ image_credits | escape }}</a></address></span>
-                                                {%- endif -%}
-                                            {% else %}
-                                                {{ image_credits }}
-                                            {% endif %}
-                                        {% else %}
-                                            {{ image_credits }}
-                                        {% endif %}
+                                        {% include utility/render-image-credit.html %}
                                     </div>
                                 </div>
                             </div>

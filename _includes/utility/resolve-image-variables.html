@@ -1,6 +1,17 @@
 {%- assign __image_item = include.item | default: page -%}
-{%- assign __primary_image_raw = __image_item.image | default: include.image | default: '' | strip -%}
-{%- assign __fallback_image_raw = include.fallback_image | default: site.featured-image | default: '/img/No-Image-Provided.png' | strip -%}
+{%- assign __image_field = __image_item.image | default: include.image -%}
+{%- if __image_field.path -%}
+  {%- assign __primary_image_raw = __image_field.path | strip -%}
+{%- else -%}
+  {%- assign __primary_image_raw = __image_field | default: '' | strip -%}
+{%- endif -%}
+{%- assign __allow_fallback = include.allow_fallback | default: true -%}
+{%- assign __allow_fallback_normalized = __allow_fallback | jsonify | downcase -%}
+{%- if include.allow_fallback == false or __allow_fallback_normalized == 'false' or __allow_fallback_normalized == '0' -%}
+  {%- assign __fallback_image_raw = '' -%}
+{%- else -%}
+  {%- assign __fallback_image_raw = include.fallback_image | default: site.featured-image | default: '/img/No-Image-Provided.png' | strip -%}
+{%- endif -%}
 {%- assign image_has_explicit_source = false -%}
 {%- if __primary_image_raw != '' -%}
   {%- assign image_has_explicit_source = true -%}
@@ -8,9 +19,13 @@
 {%- assign __resolved_image_raw = __primary_image_raw | default: __fallback_image_raw | strip -%}
 {%- capture __resolved_image_url -%}{%- include utility/safe-absolute-url.html url=__resolved_image_raw -%}{%- endcapture -%}
 {%- assign image_URL = __resolved_image_url | strip -%}
+{%- assign image_has_resolved_source = false -%}
+{%- if image_URL != '' -%}
+  {%- assign image_has_resolved_source = true -%}
+{%- endif -%}
 
-{%- assign image_alt = __image_item['image-alt'] | default: __image_item['image-description'] | default: __image_item.title | default: include.fallback_alt | default: site.title | strip -%}
+{%- assign image_alt = __image_item['image-alt'] | default: __image_item['image-description'] | default: __image_item.title | default: include.fallback_alt | default: site['title-image-alt'] | default: site.title | strip -%}
 {%- assign image_credits_title = __image_item['image-credits-title'] | default: __image_item['image-title'] | default: include.fallback_credits_title | default: 'Unknown' | strip -%}
-{%- assign image_credits = __image_item['image-credits-artist'] | default: __image_item['image-artist'] | default: include.fallback_credits | default: site.author.name | default: 'Unknown' | strip -%}
-{%- assign image_credits_artist_URL = __image_item['image-credits-artist-URL'] | default: __image_item['image-artist-URL'] | default: include.fallback_credits_artist_url | default: site.author.url | strip -%}
+{%- assign image_credits = __image_item['image-credits-artist'] | default: __image_item['image-artist'] | default: include.fallback_credits | default: site.profile.name | default: site.author.name | default: 'Unknown' | strip -%}
+{%- assign image_credits_artist_URL = __image_item['image-credits-artist-URL'] | default: __image_item['image-artist-URL'] | default: include.fallback_credits_artist_url | default: site.profile.url | default: site.author.url | strip -%}
 {%- assign image_credits_URL = __image_item['image-credits-URL'] | default: __image_item['image-URL'] | default: include.fallback_credits_url | strip -%}

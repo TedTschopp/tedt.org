@@ -51,7 +51,19 @@
                 <main class="h-entry" role="main">
                   <!-- Title -->
                   {% assign micropub_permalink = page.mf-syndication[0] | default: page.url | relative_url %}
-                  <h1 class="p-name lead"><a href="{{ micropub_permalink }}">{{ micropub_post_title }}</a></h1>
+                  {% assign __micropub_primary_category = page.category | default: page.categories[0] | default: '' | to_s | strip %}
+                  {% if __micropub_primary_category != '' %}
+                    {% capture __micropub_slug %}{% include category/map-category-to-registry.html key=__micropub_primary_category %}{% endcapture %}
+                    {% assign __micropub_slug = __micropub_slug | strip %}
+                    {% if __micropub_slug == '' %}{% assign __micropub_slug = __micropub_primary_category | slugify %}{% endif %}
+                    {% assign __micropub_entry = site.data.category_registry[__micropub_slug] %}
+                  {% endif %}
+                  {% if __micropub_entry %}
+                    {% capture __micropub_title_html %}<a href="{{ micropub_permalink }}">{{ micropub_post_title }}</a>{% endcapture %}
+                    {% include category/category-palette-apply.html entry=__micropub_entry slug=__micropub_slug raw=__micropub_primary_category title_html=__micropub_title_html wrapper_class='micropub-hero category-theme no-underline mb-2' title_tag='h1' title_class='p-name lead mb-0' %}
+                  {% else %}
+                    <h1 class="p-name lead"><a href="{{ micropub_permalink }}">{{ micropub_post_title }}</a></h1>
+                  {% endif %}
 
                   <p class="lead">{% include utility/author-byline.html page=page %}</p>
 

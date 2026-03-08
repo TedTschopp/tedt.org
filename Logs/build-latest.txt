@@ -9,67 +9,67 @@ Build Process Summary:
 | PHASE    |    TIME |
 +----------+---------+
 | RESET    |  0.0003 |
-| READ     |  1.1801 |
-| GENERATE |  0.0277 |
-| RENDER   | 20.4136 |
-| CLEANUP  |  0.1078 |
-| WRITE    |  1.9371 |
+| READ     |  1.1621 |
+| GENERATE |  0.0268 |
+| RENDER   | 19.4233 |
+| CLEANUP  |  0.1176 |
+| WRITE    |  1.6643 |
  
 
 Site Render Stats: 
 
 | Filename                                               | Count |      Bytes |   Time |
 +--------------------------------------------------------+-------+------------+--------+
-| _layouts/gammaworld.html                               |   699 | 148088.13K | 13.736 |
-| _layouts/category.html                                 |    39 |  13094.31K |  1.855 |
-| _includes/layout/footer.html                           |  1058 |  41586.43K |  1.392 |
-| _layouts/post.html                                     |   156 |  30344.84K |  1.305 |
-| _includes/category/map-category-to-registry.html       |  2416 |      2.36K |  0.947 |
-| _includes/seo/meta-data-seo.html                       |  1065 |   8328.73K |  0.918 |
-| _layouts/prompt-details.html                           |    57 |  21966.07K |  0.629 |
-| _includes/layout/top-nav-bar.html                      |   365 |   5528.47K |  0.519 |
-| _layouts/quote.html                                    |    67 |   7046.94K |  0.432 |
-| _layouts/default.html                                  |     2 |    528.55K |  0.422 |
-| _includes/category/category-label.html                 |  1165 |    861.00K |  0.411 |
-| _includes/homepage/carousel.html                       |     2 |    179.03K |  0.386 |
-| _includes/utility/calculate-variables.html             |  1066 |    400.79K |  0.352 |
-| _includes/category/category-theme-inline-style.html    |  2008 |   1241.64K |  0.164 |
-| _includes/utility/safe-absolute-url.html               |  5684 |    280.17K |  0.149 |
-| _includes/category/category-palette-apply.html         |   804 |    889.83K |  0.148 |
-| _includes/utility/resolve-image-variables.html         |  1136 |      0.00K |  0.113 |
-| _layouts/long-article.html                             |    24 |   2971.00K |  0.106 |
-| _includes/category/category-emoji.html                 |   408 |     40.68K |  0.095 |
+| _layouts/gammaworld.html                               |   699 | 148088.78K | 13.467 |
+| _layouts/category.html                                 |    39 |  13196.82K |  2.346 |
+| _includes/layout/footer.html                           |  1058 |  41586.43K |  1.374 |
+| _layouts/post.html                                     |   156 |  30326.10K |  1.250 |
+| _includes/category/map-category-to-registry.html       |  2417 |      2.36K |  0.950 |
+| _includes/seo/meta-data-seo.html                       |  1065 |   8328.73K |  0.912 |
+| _layouts/prompt-details.html                           |    57 |  21958.00K |  0.646 |
+| _includes/layout/top-nav-bar.html                      |   365 |   5528.47K |  0.510 |
+| _includes/utility/resolve-image-variables.html         |  4499 |      0.00K |  0.488 |
+| _layouts/default.html                                  |     2 |    526.41K |  0.448 |
+| _layouts/quote.html                                    |    67 |   7046.94K |  0.425 |
+| _includes/category/category-label.html                 |  1165 |    861.00K |  0.423 |
+| _includes/homepage/carousel.html                       |     2 |    177.64K |  0.404 |
+| _includes/utility/calculate-variables.html             |  1066 |    400.79K |  0.330 |
+| _includes/utility/safe-absolute-url.html               |  9047 |    288.72K |  0.173 |
+| _includes/category/category-theme-inline-style.html    |  2009 |   1242.02K |  0.163 |
+| _includes/category/category-palette-apply.html         |   805 |    890.46K |  0.135 |
+| _layouts/long-article.html                             |    24 |   2964.65K |  0.115 |
+| _includes/category/category-emoji.html                 |   408 |     40.68K |  0.090 |
 | _includes/content/next-and-previous.html               |   247 |    407.85K |  0.087 |
-| _includes/assets/scripts.html                          |  1065 |   4338.00K |  0.072 |
+| _includes/assets/scripts.html                          |  1065 |   4338.00K |  0.075 |
 | _includes/assets/all-css-includes.html                 |  1065 |  14445.83K |  0.066 |
-| _includes/utility/stage-badge.html                     |  1095 |    299.41K |  0.063 |
-| _includes/seo/indieauth-webmentions-metadata.html      |  1065 |   1967.75K |  0.055 |
-| _includes/seo/article-jsonld.html                      |   185 |    201.19K |  0.046 |
-| _includes/assets/js-bottom-of-body.html                |  1065 |  13345.63K |  0.046 |
+| _includes/utility/stage-badge.html                     |  1095 |    299.41K |  0.062 |
+| _includes/seo/indieauth-webmentions-metadata.html      |  1065 |   1967.75K |  0.057 |
+| _includes/assets/js-bottom-of-body.html                |  1065 |  13345.63K |  0.041 |
+| _includes/seo/article-jsonld.html                      |   185 |    201.19K |  0.038 |
 | _posts/RPG Posts/2023-07-22-The-Right-Set-of-Skills.md |     1 |    446.30K |  0.034 |
-| _layouts/prompt-library.html                           |     1 |   2134.14K |  0.032 |
-| _includes/analytics/google-analytics.html              |  1065 |    435.78K |  0.028 |
-| _layouts/folklore-story.html                           |     5 |    593.24K |  0.026 |
-| atom.xml                                               |     1 |    544.70K |  0.025 |
-| _layouts/page.html                                     |     5 |    592.50K |  0.023 |
-| _posts/Blog Posts/2026-01-12-Color-Chart-Pan-Zoom.md   |     1 |      2.38K |  0.022 |
-| sitemap.xml                                            |     1 |    182.40K |  0.022 |
-| feed.json                                              |     1 |    905.26K |  0.021 |
-| _includes/utility/author-byline.html                   |   156 |     58.81K |  0.020 |
-| _layouts/reveal-integrated.html                        |     6 |    404.20K |  0.016 |
-| _layouts/tool.html                                     |    23 |    126.72K |  0.015 |
-| _includes/social/comments-mastodon-tree.html           |   114 |   9523.12K |  0.014 |
-| _includes/utility/resolve-authors.html                 |   156 |      0.00K |  0.012 |
-| _includes/assets/js-bootstrap.html                     |  1065 |   1210.61K |  0.010 |
-| _includes/feeds/feeds.html                             |  1065 |    340.09K |  0.010 |
-| _includes/social/comments-webmentions.html             |  1047 |   1810.59K |  0.008 |
+| _includes/analytics/google-analytics.html              |  1065 |    435.78K |  0.031 |
+| _layouts/prompt-library.html                           |     1 |   2134.14K |  0.031 |
+| _layouts/folklore-story.html                           |     5 |    593.24K |  0.027 |
+| atom.xml                                               |     1 |    544.70K |  0.026 |
+| _posts/Blog Posts/2026-01-12-Color-Chart-Pan-Zoom.md   |     1 |      2.38K |  0.024 |
+| feed.json                                              |     1 |    905.26K |  0.024 |
+| sitemap.xml                                            |     1 |    182.48K |  0.022 |
+| _layouts/page.html                                     |     5 |    593.55K |  0.020 |
+| _layouts/reveal-integrated.html                        |     6 |    404.20K |  0.017 |
+| _layouts/tool.html                                     |    23 |    126.71K |  0.016 |
+| _includes/utility/author-byline.html                   |   156 |     58.81K |  0.013 |
+| _includes/utility/render-image-credit.html             |   237 |     64.60K |  0.011 |
+| _includes/feeds/feeds.html                             |  1065 |    340.09K |  0.009 |
+| tools/index.html                                       |     1 |     90.04K |  0.009 |
 | _layouts/folklore-location.html                        |     1 |    130.80K |  0.008 |
+| _includes/social/comments-webmentions.html             |  1047 |   1810.59K |  0.007 |
 | _layouts/folklore-entity.html                          |     1 |    126.45K |  0.007 |
 | folklore/themes.html                                   |     1 |     49.35K |  0.006 |
+| _includes/assets/js-bootstrap.html                     |  1065 |   1210.61K |  0.006 |
+| _includes/social/comments-mastodon-tree.html           |   114 |   9524.79K |  0.005 |
 | _layouts/folklore-index.html                           |     1 |    113.89K |  0.005 |
-| tools/index.html                                       |     1 |     90.04K |  0.005 |
-| slides/index.html                                      |     1 |     11.76K |  0.005 |
-| rss.xml                                                |     1 |     12.01K |  0.004 |
+| _includes/utility/resolve-authors.html                 |   156 |      0.00K |  0.005 |
+| feed-mastodon.json                                     |     1 |     15.79K |  0.005 |
  
-                    done in 23.678 seconds.
+                    done in 22.403 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
