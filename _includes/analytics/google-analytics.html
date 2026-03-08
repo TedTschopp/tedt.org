@@ -1,9 +1,12 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ELB3BGW9TQ"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-ELB3BGW9TQ');
-</script>
+{% assign analytics_config = site.analytics %}
+{% assign analytics_ga4 = analytics_config.ga4 %}
+{% if analytics_config.enabled and analytics_config.provider == 'ga4' and analytics_ga4.measurement_id %}
+<!-- Main-site analytics baseline: minimal GA4 with privacy-hardened defaults. -->
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ analytics_ga4.measurement_id }}"></script>
+<script defer src="{{ '/js/main-site-analytics.js' | relative_url }}"
+        data-enabled="true"
+        data-ga-measurement-id="{{ analytics_ga4.measurement_id }}"
+        data-track-outbound-links="{{ analytics_ga4.track_outbound_links }}"
+        data-track-file-downloads="{{ analytics_ga4.track_file_downloads }}"
+        data-track-search="{{ analytics_ga4.track_search }}"></script>
+{% endif %}

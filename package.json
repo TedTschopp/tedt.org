@@ -5,6 +5,8 @@
   "description": "Playwright + axe-core a11y audits for tedt.org",
   "scripts": {
     "test:a11y": "playwright test tests/a11y --reporter=list",
+    "test:a11y:baseline": "playwright test tests/a11y/site-baseline.spec.ts --reporter=list",
+    "test:a11y:strict": "A11Y_FAIL_ON_VIOLATIONS=1 playwright test tests/a11y --reporter=list",
     "test:a11y:allure": "node scripts/run-playwright-a11y-allure.mjs",
     "allure:clean": "node scripts/clean-allure.mjs",
     "allure:generate": "npx allure generate reports/allure/allure-results -o reports/allure/latest --clean",

@@ -163,6 +163,10 @@ jobs:
           bundle config set --local path 'vendor/bundle'
           bundle install --jobs 4
 
+      - name: Repository guard
+        run: |
+          make repo_guard
+
       - name: Run a11y tests (Allure)
         id: a11y
         continue-on-error: true

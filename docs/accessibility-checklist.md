@@ -52,8 +52,11 @@ Use this list before publishing significant layout or component changes.
 Run (example):
 
 ```bash
+npm run test:a11y:baseline
 npx lighthouse http://localhost:4000 --only-categories=accessibility,seo,best-practices,performance
 ```
+
+Representative page coverage and latest baseline findings are documented in [docs/accessibility-baseline.md](accessibility-baseline.md).
 
 ---
 Generated {{ "now" | date: "%Y-%m-%d" }}.

@@ -1,0 +1,38 @@
+# Existing tracked exceptions. Keep this list narrow and explicit.
+.playwright-mcp/article-full-page.png
+Logs/htmlproofer/2025-09-06T23-06-54-HTML Logging.txt
+Logs/htmlproofer/2025-09-06T23-19-01-HTML Logging.txt
+RPG/MCC-GW/images/Gamma World Module Covers - 1000.png
+RPG/MCC-GW/images/GammaWorldHeaderEdited.psd
+RPG/MCC-GW/media/MindKeepCropped.psd
+RPG/MCC-GW/media/MindKeepFull.png
+RPG/MCC-GW/media/MindKeepFull.psd
+RPG/images/8081_earthbump10k.jpg
+RPG/images/8081_earthmap10k.jpg
+RPG/images/U4/32x32x24/charset.psd
+RPG/images/U4/32x32x24/shapes.psd
+RPG/images/U4/32x32x24/xu4-assets/abacus.psd
+RPG/images/U4/32x32x24/xu4-assets/animate.psd
+RPG/images/U4/32x32x24/xu4-assets/codex.psd
+RPG/images/U4/32x32x24/xu4-assets/gem.psd
+RPG/images/U4/32x32x24/xu4-assets/start.psd
+RPG/images/U4/32x32x24/xu4-assets/title.psd
+_data-to-be-developed/Swiss-Folklore-Work-in-Progress/swiss_folktales.json
+_data-to-be-developed/swiss-stories.json
+img/2013-06/illuminated.png
+img/2013-10/pieter0251.png
+img/2013-10/pieter0832.png
+img/2013-10/pieter119.png
+img/2013-10/pieter154.png
+img/2014-05/internettrends2014-052814-pdf-140528064345-phpapp02.pdf
+img/2016-06/img_3511-animation.gif
+img/categories/home-hero-images/hero-lake.mp4
+img/categories/home.mp4
+img/home/Full/a-man-drawing-market-research-on-a-piece-of-wall.psd
+img/printing-press-hannes-wolf-unsplash.jpg
+img/printing-press-hannes-wolf-unsplash.webp
+media/audio/Making-AI-Adoption-Predictable-and-Boring-on-Purpose.m4a
+media/audio/Winning-the-Intelligence-Inversion.m4a
+media/files/GenAI-Cost-Mode.dat
+media/files/ITIL-Foundation-ITIL-4-Edition-Print.pdf
+tools/lib/webperl/emperl.data

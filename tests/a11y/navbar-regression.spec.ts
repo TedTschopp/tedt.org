@@ -9,7 +9,7 @@ const pages = [
   '/',
   '/prompts/',
   // Prompt pages use /prompts/:slug/ per _config.yml defaults
-  '/prompts/active-learning-teaching-assistant/',
+  '/prompts/business-case-and-requirements-assistant/',
 ];
 
 // Selectors based on existing markup

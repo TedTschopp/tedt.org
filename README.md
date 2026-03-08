@@ -180,7 +180,7 @@ _includes/
 
 | Directory    | Purpose                                 | Example Files                                 |
 |--------------|-----------------------------------------|-----------------------------------------------|
-| `analytics/` | Third-party tracking and analytics      | Google Analytics, Facebook Pixel, Clarity     |
+| `analytics/` | Third-party tracking and analytics      | Main-site GA4 baseline, archived legacy snippets |
 | `assets/`    | CSS, JS dependencies, and asset loading | Bootstrap, jQuery, Font Awesome               |
 | `content/`   | Content display, navigation, formatting | Figure displays, post previews, progress bars |
 | `feeds/`     | RSS, JSON feeds, syndication            | RSS feeds, JSON feeds                         |
@@ -192,6 +192,17 @@ _includes/
 | `social/`    | Social media integration                | Comments, webmentions, sharing                |
 | `themes/`    | Reusable template components            | Post grids, pagination, navigation            |
 | `utility/`   | Helper functions and tools              | Date formatting, text processing              |
+
+### Analytics Baseline
+
+The main site now uses one baseline analytics path configured in `_config.yml` under `analytics`.
+
+- Provider: GA4
+- Scope: pageviews plus outbound-link, file-download, and search events
+- Explicitly excluded: session replay and ad-personalization features
+- Operational rule: if your deployment requires prior consent for analytics, set `site.analytics.enabled` to `false` until a consent flow exists
+
+The runtime wiring lives in `_includes/analytics/google-analytics.html` and `js/main-site-analytics.js`.
 
 ### Naming Conventions
 
@@ -310,6 +321,7 @@ To run the site locally:
 
 Automated validations run on every push via the Site CI workflow (badge above):
 
+- Repository guard (blocked `vendor/` bundles, blocked binary extensions, oversized tracked files unless explicitly allowlisted)
 - Build & date normalization
 - Legacy key guard (blocks reintroduction of removed config keys)
 - Feed integrity (primary JSON feed absolute URLs)
@@ -319,6 +331,8 @@ Automated validations run on every push via the Site CI workflow (badge above):
 - HTML Proofer (links, images, basic HTML correctness)
 
 Run locally with: `make qa`
+
+Run the repository hygiene guard alone with: `make repo_guard`
 
 ## GitHub Workflows Overview
 

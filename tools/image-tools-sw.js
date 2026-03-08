@@ -16,7 +16,7 @@ const PRECACHE_URLS = [
   "./image-tools.html",
   "./image-tools/image-tools.css",
   "./image-tools/image-tools.js",
-  "../css/consolidated-fonts.css",
+  "../css/shared-fonts.css",
 ];
 
 self.addEventListener("install", (event) => {

@@ -1,4 +1,6 @@
 
+    {% include security/content-security-policy.html %}
+
     {% include utility/color-scheme-head.html %}
 
     <!-- Font Awesome CDN (primary icon set). Local fallback removed per request; restore by uncommenting include below if ever needed. -->
@@ -11,14 +13,15 @@
             Enforced by: tests/check_tools_css_sync.rb -->
     <link rel="stylesheet" type="text/css" href="{{ '/css/bootstrap-build.css' | relative_url }}">
 
-    <!-- Fonts: Consolidate all Fonts here -->
-    <link rel="stylesheet" type="text/css" href="{{ '/css/consolidated-fonts.css' | relative_url }}">
+    <!-- Shared fonts: keep the sitewide bundle lean; decorative fonts load conditionally below. -->
+    <link rel="stylesheet" type="text/css" href="{{ '/css/shared-fonts.css' | relative_url }}">
 
     <!-- Logos: Consolidate all Logo Fonts here -->
     <link rel="stylesheet" type="text/css" href="{{ '/css/logo-and-company-fonts.css' | relative_url }}">
 
     <!-- Custom CSS -->
     {% if full-page-url == home-page-url %}
+        <link rel="stylesheet" type="text/css" href="{{ '/css/homepage-display-fonts.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/main-landing-page.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/timeline.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/Link-Tree.css' | relative_url }}"> 
@@ -74,6 +77,7 @@
             }
         </style>
     {% else %}    
+        <link rel="stylesheet" type="text/css" href="{{ '/css/content-decorative-fonts.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/blog-post.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/solarized-dark.css' | relative_url }}" >
         <link rel="stylesheet" type="text/css" href="{{ '/css/comments-Mastodon.css' | relative_url }}">

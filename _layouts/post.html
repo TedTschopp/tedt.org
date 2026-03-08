@@ -51,73 +51,7 @@
                 <main class="h-entry" role="main">
 
                     <div class="card h-100 no-padding">
-                        {% if page.image %}
-                            {% if page.image-alt %}
-                                {% assign image_alt = page.image-alt %}
-                            {% elsif page.image-description %}
-                                {% assign image_alt = page.image-description %}
-                            {% else %}
-                                {% assign image_alt = page.title %}
-                            {% endif %}
-
-                            {% if page.image-credits-title %}
-                                {% assign image_credits_title = page.image-credits-title %}
-                            {% elsif page.image-title %}
-                                {% assign image_credits_title = page.image-title %}
-                            {% else %}
-                                {% assign image_credits_title = "Unknown" %}
-                            {% endif %}
-
-                            {% if page.image-credits-artist %}
-                                {% assign image_credits = page.image-credits-artist %}
-                            {% elsif page.image-artist %}
-                                {% assign image_credits = page.image-artist %}
-                            {% else %}
-                                {% assign image_credits = "Unknown" %}
-                            {% endif %}
-
-                            {% if page.image-credits-artist-URL %}
-                                {% assign image_credits_artist_URL = page.image-credits-artist-URL %}
-                            {% elsif page.image-artist-URL %}
-                                {% assign image_credits_artist_URL = page.image-artist-URL %}
-                            {% endif %}
-
-                            {% if page.image-credits-URL %}
-                                {% assign image_credits_URL = page.image-credits-URL %}
-                            {% elsif page.image-URL %}
-                                {% assign image_credits_URL = page.image-URL %}
-                            {% endif %}
-
-                            {% assign _image_raw = page.image | strip %}
-                            {% assign _image_first = _image_raw | slice: 0, 1 %}
-                            {% assign _image_first2 = _image_raw | slice: 0, 2 %}
-                            {% if _image_raw contains '://' or _image_first2 == '//' %}
-                                {% assign image_URL = _image_raw %}
-                            {% elsif _image_first == "/" %}
-                                {% assign image_URL = site.url | append: _image_raw %}
-                            {% else %}
-                                {% assign image_URL = site.url | append: "/" | append: _image_raw %}
-                            {% endif %}
-                        {% else %}
-                            {% if site.featured-image %}
-                                {% assign _image_raw = site.featured-image | strip %}
-                                {% assign _image_first = _image_raw | slice: 0, 1 %}
-                                {% assign _image_first2 = _image_raw | slice: 0, 2 %}
-                                {% if _image_raw contains '://' or _image_first2 == '//' %}
-                                    {% assign image_URL = _image_raw %}
-                                {% elsif _image_first == "/" %}
-                                    {% assign image_URL = site.url | append: _image_raw %}
-                                {% else %}
-                                    {% assign image_URL = site.url | append: "/" | append: _image_raw %}
-                                {% endif %}
-                            {% else %}
-                                {% assign image_URL = site.url | append: "/img/No-Image-Provided.png" %}
-                            {% endif %}
-                            {% assign image_alt = "A man walks through a forest along a path. The mood is tranquil, reflective, spiritually uplifting with a hint of poetic longing::2, painting, oil on canvas, impasto.  The brushwork has rich textures, earthy palette with luminous highlights" %}
-                            {% assign image_credits_title = 'In Search of an Image - "No Image Associated with this article"' %}
-                            {% assign image_credits = "Ted Tschopp" %}
-                            {% assign image_credits_artist_URL = "https://tedt.org/" %}
-                        {% endif %}
+                        {% include utility/resolve-image-variables.html item=page fallback_alt=page.title fallback_credits_title='In Search of an Image - "No Image Associated with this article"' fallback_credits=site.author.name fallback_credits_artist_url=site.author.url %}
                         <div class="card h-100">
                             <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"> <!-- hero image intentionally eager -->
                             <div class="card-body pt-3 pb-3 ps-4 pe-4">

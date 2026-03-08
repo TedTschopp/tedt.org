@@ -1,0 +1,112 @@
+/* Decorative/editorial fonts used on non-homepage article and RPG surfaces.
+   These stay off the shared critical path while preserving legacy post styling. */
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fondamento:ital@0;1&family=IM+Fell+DW+Pica:ital@0;1&family=Lovers+Quarrel&family=UnifrakturMaguntia&display=swap');
+
+@font-face {
+  font-family: 'Checkbook';
+  src: url('/fonts/CHECKBK0.woff2') format('woff2'),
+       url('/fonts/CHECKBK0.woff') format('woff'),
+       url('/fonts/CHECKBK0.otf') format('opentype'),
+       url('/fonts/CHECKBK0.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana Library Hand';
+  src: url('/fonts/DanaLibraryHand-Regular.woff2') format('woff2'),
+       url('/fonts/DanaLibraryHand-Regular.otf') format('opentype'),
+       url('/fonts/DanaLibraryHand-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana Library Hand';
+  src: url('/fonts/DanaLibraryHand-Bold.woff2') format('woff2'),
+       url('/fonts/DanaLibraryHand-Bold.otf') format('opentype'),
+       url('/fonts/DanaLibraryHand-Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana Library Hand';
+  src: url('/fonts/DanaLibraryHand-Italic.woff2') format('woff2'),
+       url('/fonts/DanaLibraryHand-Italic.otf') format('opentype'),
+       url('/fonts/DanaLibraryHand-Italic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Dana Library Hand';
+  src: url('/fonts/DanaLibraryHand-BoldItalic.woff2') format('woff2'),
+       url('/fonts/DanaLibraryHand-BoldItalic.otf') format('opentype'),
+       url('/fonts/DanaLibraryHand-BoldItalic.ttf') format('truetype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IrwinAllen';
+  src: url('/fonts/IrwinAllen.woff2') format('woff2'),
+       url('/fonts/IrwinAllen.woff') format('woff'),
+       url('/fonts/IrwinAllen.otf') format('opentype'),
+       url('/fonts/IrwinAllen.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lp1_regular';
+  src: url('/fonts/lp1-regular-webfont.woff') format('woff'),
+       url('/fonts/lp1-regular-webfont.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'lowwe';
+  src: url('/fonts/lowwe.woff2') format('woff2'),
+       url('/fonts/lowwe.woff') format('woff'),
+       url('/fonts/lowwe.otf') format('opentype'),
+       url('/fonts/lowwe.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'coelnische_current_fraktur';
+  src: url('/fonts/COELCF__.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AntiquarianScribe';
+  src: url('/fonts/AntiquarianScribe.woff') format('woff'),
+       url('/fonts/AntiquarianScribe.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'TerraIgnota';
+  src: url('/fonts/TerraIgnota.woff') format('woff'),
+       url('/fonts/TerraIgnota.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}

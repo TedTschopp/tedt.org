@@ -1,0 +1,6 @@
+/* Shared font bundle for sitewide tedt.org surfaces.
+   Keep this focused on fonts referenced across the global layout, bootstrap theme,
+   code blocks, and shared category/logo styling. Decorative/editorial fonts live
+   in conditional bundles to avoid paying their cost on every page. */
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans&family=Fira+Code:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Titillium+Web:ital,wght@0,200..900;1,200..700&display=swap');

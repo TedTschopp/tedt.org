@@ -1,0 +1,77 @@
+/* Homepage-only display fonts.
+   These power the large landing-page headings and do not need to be part of the
+   sitewide shared bundle. */
+
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+@font-face {
+  font-family: 'Manuka';
+  src: url('/fonts/Manuka/Manuka-Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manuka';
+  src: url('/fonts/Manuka/Manuka-Medium.otf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manuka';
+  src: url('/fonts/Manuka/Manuka-Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ManukaCondensed';
+  src: url('/fonts/ManukaCondensed/ManukaCondensed-Regular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ManukaCondensed';
+  src: url('/fonts/ManukaCondensed/ManukaCondensed-Medium.otf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'ManukaCondensed';
+  src: url('/fonts/ManukaCondensed/ManukaCondensed-Bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('/fonts/OptimaNova/OptimaNovaLTProRegular.otf') format('opentype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('/fonts/OptimaNova/OptimaNovaLTProMedium.otf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Optima';
+  src: url('/fonts/OptimaNova/OptimaNovaLTProBold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

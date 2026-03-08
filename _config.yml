@@ -118,6 +118,19 @@ pinterest_domain_verify: 98d8bdfab96a340e5a4f03f7a4303f0e
 google_custom_search: 003027838407468454148:ddtovg0fltc
 facebook_app_id: 1939132006351436
 
+analytics:
+  enabled: true
+  provider: ga4
+  ga4:
+    measurement_id: G-ELB3BGW9TQ
+    track_outbound_links: true
+    track_file_downloads: true
+    track_search: true
+  privacy:
+    session_replay: false
+    advertising_features: false
+    note: "If your deployment requires prior consent for analytics, disable site.analytics.enabled until a consent flow exists."
+
 # Build Settings
 sass:
   sass_dir: _sass

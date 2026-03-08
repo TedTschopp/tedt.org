@@ -12,7 +12,7 @@ TOOLS_ENTRYPOINT = REPO_ROOT.join('tools/lib/tedt-org-tools.css')
 #   _includes/assets/all-css-includes.html
 REQUIRED_CSS_PATHS = [
   '/css/bootstrap-build.css',
-  '/css/consolidated-fonts.css',
+  '/css/shared-fonts.css',
   '/css/logo-and-company-fonts.css'
 ].freeze
 

@@ -1,0 +1,11 @@
+max_warn_kb: 2048
+max_fail_kb: 5120
+blocked_paths:
+  - vendor/bundle
+  - vendor/ruby
+blocked_extensions:
+  - .psd
+  - .ai
+largest_files_report_count: 10
+warning_report_count: 25
+allowlist_file: .ci/allowed-large-files.txt
