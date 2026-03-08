@@ -17,12 +17,12 @@ links:
   repo: null
   docs: null
   download: null
-image: "/img/2026-03/focus-timer-workspace.png"
-hero_image: "/img/2026-03/focus-timer-workspace.png"
+image: "/img/2026-03/focus-timer-workspace.webp"
+hero_image: "/img/2026-03/focus-timer-hero.webp"
 screenshots:
-  - "/img/2026-03/focus-timer-workspace.png"
-  - "/img/2026-03/focus-timer-presets-and-styles.png"
-  - "/img/2026-03/focus-timer-builder-and-queue.png"
+  - "/img/2026-03/focus-timer-workspace.webp"
+  - "/img/2026-03/focus-timer-presets-and-styles.webp"
+  - "/img/2026-03/focus-timer-builder-and-queue.webp"
 features:
   - "Preset queues for Pomodoro, deep work, 52/17, ADHD sprint, study, writing, and ultradian rhythms"
   - "Three modes: preset queue, custom countdown, and stopwatch"
@@ -64,11 +64,11 @@ It combines three use cases in one browser-only workspace:
 
 ## Screenshots
 
-![Focus Timer Studio workspace](/img/2026-03/focus-timer-workspace.png)
+![Focus Timer Studio workspace](/img/2026-03/focus-timer-workspace.webp)
 
-![Focus Timer Studio presets and styles](/img/2026-03/focus-timer-presets-and-styles.png)
+![Focus Timer Studio presets and styles](/img/2026-03/focus-timer-presets-and-styles.webp)
 
-![Focus Timer Studio builder and queue](/img/2026-03/focus-timer-builder-and-queue.png)
+![Focus Timer Studio builder and queue](/img/2026-03/focus-timer-builder-and-queue.webp)
 
 ## Notes
 
