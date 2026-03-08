@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'jekyll', '~> 4.3.2'
 gem 'jekyll-redirect-from'
-gem 'ffi', '= 1.16.3' # Downgraded: newer 1.17.x builds unavailable on CI; 1.16.3 widely present
+gem 'ffi', '1.17.2' # Downgraded: newer 1.17.x builds unavailable on CI; 1.16.3 widely present
 
 # ---------------------------------------------------------------------------
 # Security: enforce minimum patched versions for transitive dependencies
