@@ -54,7 +54,8 @@
                          {% if __primary_category %}
                               {% capture __slug %}{% include category/map-category-to-registry.html key=__primary_category %}{% endcapture %}
                               {% assign __slug = __slug | strip %}
-                              {% if __slug == '' %}{% assign __slug = __primary_category | slugify %}{% endif %}
+                              {% assign __primary_category_text = __primary_category | to_s | strip %}
+                              {% if __slug == '' and __primary_category_text != '' %}{% assign __slug = __primary_category_text | slugify %}{% endif %}
                               {% assign __entry = site.data.category_registry[__slug] %}
                          {% endif %}
                          {% if __entry %}
@@ -92,7 +93,11 @@
                          {%- assign base_raw = page.creature_name_index | strip -%}
                          {%- assign cand_original = base_raw -%}
                          {%- assign cand_downcase = base_raw | downcase | replace: ' ', '-' | replace: "'", '' | replace: '’', '' -%}
-                         {%- assign cand_slug = base_raw | slugify -%}
+                         {%- if base_raw != '' -%}
+                              {%- assign cand_slug = base_raw | slugify -%}
+                         {%- else -%}
+                              {%- assign cand_slug = '' -%}
+                         {%- endif -%}
                          {%- assign candidate_string = cand_original | append: '||' | append: cand_downcase | append: '||' | append: cand_slug -%}
                          {%- assign candidate_list = candidate_string | split: '||' | uniq -%}
                          {%- assign found_image = '' -%}

@@ -67,18 +67,26 @@
                                 <div class="small text-body-secondary image-credits">
                                     {%- assign __img_credits_href = image_credits_URL | default: '' | strip -%}
                                     {%- assign __img_credits_href_first2 = __img_credits_href | slice: 0, 2 -%}
-                                    {% if __img_credits_href != '' and (__img_credits_href contains '://' or __img_credits_href_first2 == '//') %}
-                                        <cite><a target="_new" href="{{ image_credits_URL }}">{{ image_credits_title }}</a></cite>:&nbsp;an image by
+                                    {% if __img_credits_href != '' %}
+                                        {% if __img_credits_href contains '://' or __img_credits_href_first2 == '//' %}
+                                            <cite><a target="_new" href="{{ image_credits_URL }}">{{ image_credits_title }}</a></cite>:&nbsp;an image by
+                                        {% else %}
+                                            <cite>{{ image_credits_title }}</cite>:&nbsp;an image by
+                                        {% endif %}
                                     {% else %}
                                         <cite>{{ image_credits_title }}</cite>:&nbsp;an image by
                                     {% endif %}
                                     {%- assign __img_artist_href = image_credits_artist_URL | default: '' | strip -%}
                                     {%- assign __img_artist_href_first2 = __img_artist_href | slice: 0, 2 -%}
-                                    {% if __img_artist_href != '' and (__img_artist_href contains '://' or __img_artist_href_first2 == '//') %}
-                                        {%- assign __img_credit_href = image_credits_artist_URL | strip -%}
-                                        {%- if __img_credit_href != '' -%}
-                                        <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_blank" class="url fn n" href="{{ __img_credit_href | escape }}">{{ image_credits | escape }}</a></address></span>
-                                        {%- endif -%}
+                                    {% if __img_artist_href != '' %}
+                                        {% if __img_artist_href contains '://' or __img_artist_href_first2 == '//' %}
+                                            {%- assign __img_credit_href = image_credits_artist_URL | strip -%}
+                                            {%- if __img_credit_href != '' -%}
+                                            <span class="vcard"><address style="display:inline;" class="author"><a rel="author" target="_blank" class="url fn n" href="{{ __img_credit_href | escape }}">{{ image_credits | escape }}</a></address></span>
+                                            {%- endif -%}
+                                        {% else %}
+                                            {{ image_credits }}
+                                        {% endif %}
                                     {% else %}
                                         {{ image_credits }}
                                     {% endif %}
@@ -103,7 +111,8 @@
                                                     <div class="d-flex align-items-center justify-content-between gap-3">
                                                         {% capture __toc_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
                                                         {% assign __toc_slug = __toc_slug | strip %}
-                                                        {% if __toc_slug == '' %}{% assign __toc_slug = category | slugify %}{% endif %}
+                                                        {% assign __toc_category_text = category | to_s | strip %}
+                                                        {% if __toc_slug == '' and __toc_category_text != '' %}{% assign __toc_slug = __toc_category_text | slugify %}{% endif %}
                                                         {% assign __toc_entry = site.data.category_registry[__toc_slug] %}
                                                         {% if __toc_entry and __toc_entry.category_home_page %}
                                                             {% assign __toc_href = __toc_entry.category_home_page %}
@@ -160,7 +169,9 @@
                             {% assign categories = page.categories %}
                             {% for category in categories %}
 
-                                {% assign clean_category = category | downcase | slugify %}
+                                {% assign __category_text = category | to_s | strip %}
+                                {% if __category_text == '' %}{% continue %}{% endif %}
+                                {% assign clean_category = __category_text | downcase | slugify %}
                                 {% assign image = clean_category | append: ".webp" %}
                                 {% assign file_name_of_category = clean_category | append: ".html" %}
                                 <div class="card h-100">
@@ -171,7 +182,7 @@
                                                 <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
                                                 {% capture __card_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
                                                 {% assign __card_slug = __card_slug | strip %}
-                                                {% if __card_slug == '' %}{% assign __card_slug = category | slugify %}{% endif %}
+                                                {% if __card_slug == '' %}{% assign __card_slug = __category_text | slugify %}{% endif %}
                                                 {% assign __card_entry = site.data.category_registry[__card_slug] %}
                                                 {% if __card_entry and __card_entry.category_home_page %}
                                                     {% assign __card_href = __card_entry.category_home_page %}

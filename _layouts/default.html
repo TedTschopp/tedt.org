@@ -411,7 +411,8 @@
                   {% endif %}
                   {% assign previous_tag = tag %}
 
-                  <a name="{{ post.title | slugify}}" style="scroll-margin-top: 76px;"></a>
+                  {% assign __post_anchor_title = post.title | to_s | strip %}
+                  <a name="{% if __post_anchor_title != '' %}{{ __post_anchor_title | slugify }}{% endif %}" style="scroll-margin-top: 76px;"></a>
                   <div class="card mb-3">
                     <div class="row g-0 align-items-center">
                       {% include utility/resolve-image-variables.html item=post fallback_alt=post.title %}

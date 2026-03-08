@@ -29,7 +29,7 @@
     {% endif %}
   {% endfor %}
 {% endif %}
-{% if canonical == nil %}{% assign canonical = raw | slugify %}{% endif %}
+{% if canonical == nil and raw != '' %}{% assign canonical = raw | slugify %}{% endif %}
 {% assign entry = registry[canonical] %}
 {% assign display = entry.label | default: entry.title | default: raw %}
 {% assign klass = entry.class | default: canonical %}

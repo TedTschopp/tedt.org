@@ -1,0 +1,14 @@
+max_removed_items: 0
+max_added_items: 5
+max_title_delta: 0
+max_url_delta: 0
+max_image_delta: 0
+max_signature_delta: 0
+max_metadata_delta: 0
+max_order_delta: 0
+max_items_over_content_length_change_pct: 0
+max_content_length_change_pct: 10
+top_diff_count: 5
+ignore_fields:
+- date_published
+- date_modified

@@ -1,8 +1,9 @@
-name: Deploy Site (Jekyll)
+name: Site Quality + Deploy
 
 on:
   push:
     branches: [ main ]
+  pull_request:
   workflow_dispatch:
 
 permissions:
@@ -167,6 +168,10 @@ jobs:
         run: |
           make repo_guard
 
+      - name: Normalize generated dates
+        run: |
+          make normalize
+
       - name: Run a11y tests (Allure)
         id: a11y
         continue-on-error: true
@@ -191,6 +196,37 @@ jobs:
             exit 1;
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
+
+      - name: Feed integrity check
+        run: |
+          make feed_check
+
+      - name: Legacy key guard
+        run: |
+          make legacy_check
+
+      - name: Mastodon feed validation
+        run: |
+          make validate_mastodon
+
+      - name: Feed diff regression guard
+        run: |
+          make feed_diff
+
+      - name: HTMLProofer (internal links)
+        id: htmlproofer
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --root-dir ./_site --check-html --allow-missing-href 2>&1 | tee tmp/htmlproofer.txt
+
+      - name: Mastodon feed length report
+        run: |
+          make length_report
+
+      - name: Tools CSS sync guard
+        run: |
+          make tools_css_sync_check
 
       - name: Capture GitHub Actions errors/warnings (Allure)
         if: always()
@@ -245,8 +281,15 @@ jobs:
         run: |
           npm run allure:generate
 
-      - name: Copy Allure report into site output
+      - name: Upload HTMLProofer log
         if: always()
+        uses: actions/upload-artifact@v6
+        with:
+          name: htmlproofer-log
+          path: tmp/htmlproofer.txt
+
+      - name: Copy Allure report into site output
+        if: always() && github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           mkdir -p _site/reports/allure
           rm -rf _site/reports/allure/latest || true
@@ -267,21 +310,24 @@ jobs:
         run: |
           echo "## Quality (Allure)" >> $GITHUB_STEP_SUMMARY
           echo "- A11y outcome: ${{ steps.a11y.outcome }}" >> $GITHUB_STEP_SUMMARY
+          echo "- HTMLProofer outcome: ${{ steps.htmlproofer.outcome }}" >> $GITHUB_STEP_SUMMARY
           echo "- Markdown outcome: ${{ steps.mdlint.outcome }}" >> $GITHUB_STEP_SUMMARY
           echo "- JS syntax outcome: ${{ steps.jslint.outcome }}" >> $GITHUB_STEP_SUMMARY
           echo "- Published path in deployed site: /reports/allure/latest/index.html" >> $GITHUB_STEP_SUMMARY
       - name: Post-build artifact size summary
-        if: success()
+        if: success() && github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           du -sh _site || true
           find _site -maxdepth 2 -type d -print | head -n 40
       - name: Upload artifact
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v4
         with:
           path: _site
   deploy:
     runs-on: ubuntu-latest
     needs: build
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

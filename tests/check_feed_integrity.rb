@@ -4,7 +4,7 @@ require 'uri'
 require 'yaml'
 
 ROOT = File.expand_path('..', __dir__)
-site_config = YAML.load_file(File.join(ROOT, '_config.yml'))
+site_config = YAML.load_file(File.join(ROOT, '_config.yml'), aliases: true)
 site_url = site_config['url']&.sub(/\/$/, '')
 
 main_feed = File.join(ROOT, '_site', 'feed.json')

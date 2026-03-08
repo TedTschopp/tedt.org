@@ -442,18 +442,22 @@ redirect_from:
                 {% assign all_tags = "" | split: "," %}
                 {% for post in prompt_posts %}
                     {% for tag in post.tags %}
-                        {% unless all_tags contains tag %}
-                            {% assign all_tags = all_tags | push: tag %}
+                        {% assign __tag_value = tag | to_s | strip %}
+                        {% if __tag_value == '' %}{% continue %}{% endif %}
+                        {% unless all_tags contains __tag_value %}
+                            {% assign all_tags = all_tags | push: __tag_value %}
                         {% endunless %}
                     {% endfor %}
                 {% endfor %}
                 
                 {% assign sorted_tags = all_tags | safe_sort %}
                 {% for tag in sorted_tags %}
+                    {% assign __tag_value = tag | to_s | strip %}
+                    {% if __tag_value == '' %}{% continue %}{% endif %}
                     <button class="btn btn-outline-secondary btn-toggle flex-fill" 
                             style="min-width: 140px;" 
                             aria-pressed="false" 
-                            data-filter="{{ tag | downcase | slugify }}">{{ tag }}</button>
+                            data-filter="{{ __tag_value | downcase | slugify }}">{{ __tag_value }}</button>
                 {% endfor %}
                 
                 <button class="btn btn-outline-secondary flex-fill" 
@@ -474,12 +478,46 @@ redirect_from:
                 <!-- Dynamic Jekyll Prompt Cards -->
                 {% assign prompt_posts = site.posts | where: "categories", "Prompts" | slice: 0, 240 %}
                 {% for post in prompt_posts %}
-                <div class="col" data-tags="{{ post.tags | join: ',' | downcase | slugify }}" 
-                     data-keywords="{{ post.keywords | join: ',' | downcase | slugify }}"
-                     data-tags-raw="{{ post.tags | join: '|' | escape }}"
-                     data-keywords-raw="{{ post.keywords | join: '|' | escape }}"
+                                {% assign __post_clean_tags = '' | split: ',' %}
+                                {% if post.tags %}
+                                    {% for raw_tag in post.tags %}
+                                        {% assign __tag_value = raw_tag | to_s | strip %}
+                                        {% if __tag_value == '' %}{% continue %}{% endif %}
+                                        {% assign __post_clean_tags = __post_clean_tags | push: __tag_value %}
+                                    {% endfor %}
+                                {% endif %}
+                                {% assign __post_clean_keywords = '' | split: ',' %}
+                                {% if post.keywords %}
+                                    {% for raw_keyword in post.keywords %}
+                                        {% assign __keyword_value = raw_keyword | to_s | strip %}
+                                        {% if __keyword_value == '' %}{% continue %}{% endif %}
+                                        {% assign __post_clean_keywords = __post_clean_keywords | push: __keyword_value %}
+                                    {% endfor %}
+                                {% endif %}
+                                {% assign __post_tags_joined = __post_clean_tags | join: ',' | downcase %}
+                                {% assign __post_keywords_joined = __post_clean_keywords | join: ',' | downcase %}
+                                {% if __post_tags_joined != '' %}
+                                    {% assign __post_tags_slug = __post_tags_joined | slugify %}
+                                {% else %}
+                                    {% assign __post_tags_slug = '' %}
+                                {% endif %}
+                                {% if __post_keywords_joined != '' %}
+                                    {% assign __post_keywords_slug = __post_keywords_joined | slugify %}
+                                {% else %}
+                                    {% assign __post_keywords_slug = '' %}
+                                {% endif %}
+                                {% assign __post_title_text = post.title | to_s | strip %}
+                                {% if __post_title_text != '' %}
+                                    {% assign __post_title_slug = __post_title_text | downcase | slugify %}
+                                {% else %}
+                                    {% assign __post_title_slug = '' %}
+                                {% endif %}
+                                <div class="col" data-tags="{{ __post_tags_slug }}" 
+                                         data-keywords="{{ __post_keywords_slug }}"
+                     data-tags-raw="{{ __post_clean_tags | join: '|' | escape }}"
+                     data-keywords-raw="{{ __post_clean_keywords | join: '|' | escape }}"
                      data-date="{{ post.date | date: '%Y%m%d' }}" 
-                     data-title="{{ post.title | downcase | slugify }}"
+                     data-title="{{ __post_title_slug }}"
                      data-likes="0"
                      data-prompt-content="{% if post.prompt_content %}{{ post.prompt_content | escape }}{% else %}{{ post.content | escape }}{% endif %}"
                      data-variables="{% if post.variables %}{{ post.variables | jsonify | escape }}{% else %}[]{% endif %}">
@@ -510,11 +548,13 @@ redirect_from:
                                         {% if post.tags %}
                                             {% assign sorted_tags = post.tags | safe_sort %}
                                             {% for tag in sorted_tags %}
+                                                {% assign __tag_value = tag | to_s | strip %}
+                                                {% if __tag_value == '' %}{% continue %}{% endif %}
                                                 <button class="badge bg-primary tag-filter-btn" 
-                                                        title="Filter by {{ tag }}"
-                                                        data-tag="{{ tag | downcase | slugify }}"
+                                                        title="Filter by {{ __tag_value }}"
+                                                        data-tag="{{ __tag_value | downcase | slugify }}"
                                                         style="cursor: pointer; border: none;">
-                                                    <i class="fa-solid fa-tag" aria-hidden="true"></i> {{ tag }}
+                                                    <i class="fa-solid fa-tag" aria-hidden="true"></i> {{ __tag_value }}
                                                 </button>
                                             {% endfor %}
                                         {% endif %}
@@ -1156,8 +1196,8 @@ redirect_from:
                 const tagsAttr = card.getAttribute('data-tags') || '';
                 if (tagsAttr) {
                     // data-tags may be a single slug or hyphen-joined string from slugify on join
-                    // We split on commas then hyphens only if original tags were joined — but existing code
-                    // sets `data-tags="{{ post.tags | join: ',' | downcase | slugify }}"` which slugifies
+                    // We split on commas then hyphens only if original tags were joined — but legacy code
+                    // previously stored a slugified joined tag string in the data-tags attribute, which
                     // the whole joined string. This can collapse boundaries. For better fidelity we keep
                     // a substring presence check approach below when filtering earlier; here we just add
                     // the entire attribute string which is acceptable for coarse-grained matching.

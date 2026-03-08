@@ -9,7 +9,11 @@
 {%- if __input == '' -%}{% comment %} nothing to render {% endcomment %}{% endif %}
 {%- assign registry = site.data.category_registry -%}
 {%- assign found_slug = nil -%}
-{%- assign input_slug = __input | slugify -%}
+{%- if __input != '' -%}
+  {%- assign input_slug = __input | slugify -%}
+{%- else -%}
+  {%- assign input_slug = '' -%}
+{%- endif -%}
 {%- if registry[input_slug] and input_slug != '' -%}
   {%- assign found_slug = input_slug -%}
 {%- else -%}

@@ -1,7 +1,8 @@
         {% assign count = 0 %}
             {% assign count = count | plus: 1 %}
             {% assign mod = count | modulo: 2 %}
-                <a name="{{ post.title | slugify}}"></a>
+                {% assign __post_anchor_title = post.title | to_s | strip %}
+                <a name="{% if __post_anchor_title != '' %}{{ __post_anchor_title | slugify }}{% endif %}"></a>
                 {% if mod != 1 %}<!-- odd -->
                 <div class="content-section-a">
                 {% else %}

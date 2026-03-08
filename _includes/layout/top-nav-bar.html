@@ -91,20 +91,26 @@
                           {%- endif -%}
 
                           {%- if tag == 'Resume' -%}
+                            {%- assign __post_anchor_title = post.title | to_s | strip -%}
+                            {%- if __post_anchor_title != '' -%}
+                              {%- assign __post_anchor_slug = __post_anchor_title | slugify -%}
+                            {%- else -%}
+                              {%- assign __post_anchor_slug = '' -%}
+                            {%- endif -%}
                             {%- if new_company -%}
                               <li><hr class="dropdown-divider"></li>
                             {%- endif -%}
 
                             {%- if watermark != "no-watermark" -%}
                               <li>
-                                <a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="text-decoration-thickness: 1px;">
+                                <a class="dropdown-item" href="{{ site.url }}/#{% if __post_anchor_slug != '' %}{{ __post_anchor_slug }}{% endif %}" style="text-decoration-thickness: 1px;">
                                   <img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo for {{watermark}}" style="height: 1.5em;">
                                   - {{ this-post-title }}
                                 </a>
                               </li>
                             {%- else -%}
                               <li>
-                                <a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="text-decoration-thickness: 1px;">
+                                <a class="dropdown-item" href="{{ site.url }}/#{% if __post_anchor_slug != '' %}{{ __post_anchor_slug }}{% endif %}" style="text-decoration-thickness: 1px;">
                                   {{ this-post-title }}
                                 </a>
                               </li>
@@ -144,20 +150,26 @@
 
                           {%- if tag == 'Project' -%}
                             {%- assign this-post-title = post.title -%}
+                            {%- assign __post_anchor_title = post.title | to_s | strip -%}
+                            {%- if __post_anchor_title != '' -%}
+                              {%- assign __post_anchor_slug = __post_anchor_title | slugify -%}
+                            {%- else -%}
+                              {%- assign __post_anchor_slug = '' -%}
+                            {%- endif -%}
                             {%- if new_company and first_entry != true -%}
                               <li><hr class="dropdown-divider"></li>
                             {%- endif -%}
 
                             {%- if watermark != "no-watermark" -%}
                               <li>
-                                <a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="text-decoration-thickness: 1px;">
+                                <a class="dropdown-item" href="{{ site.url }}/#{% if __post_anchor_slug != '' %}{{ __post_anchor_slug }}{% endif %}" style="text-decoration-thickness: 1px;">
                                   <img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo for {{watermark}}" style="height: 1.5em;">
                                   - {{ this-post-title }}
                                 </a>
                               </li>
                             {%- else -%}
                               <li>
-                                <a class="dropdown-item" href="{{ site.url }}/#{{ post.title | slugify}}" style="text-decoration-thickness: 1px;">
+                                <a class="dropdown-item" href="{{ site.url }}/#{% if __post_anchor_slug != '' %}{{ __post_anchor_slug }}{% endif %}" style="text-decoration-thickness: 1px;">
                                   {{ this-post-title }}
                                 </a>
                               </li>

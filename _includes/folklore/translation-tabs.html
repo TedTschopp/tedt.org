@@ -9,7 +9,12 @@
   - confidence_score, confidence_level, confidence_rationale
 {%- endcomment -%}
 
-{%- assign tab_id = include.story_id | slugify -%}
+{%- assign __story_id_text = include.story_id | to_s | strip -%}
+{%- if __story_id_text != '' -%}
+  {%- assign tab_id = __story_id_text | slugify -%}
+{%- else -%}
+  {%- assign tab_id = 'story' -%}
+{%- endif -%}
 
 <div class="folklore-translations mb-4">
   <ul class="nav nav-tabs" id="translation-tabs-{{ tab_id }}" role="tablist">

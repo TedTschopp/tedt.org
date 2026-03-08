@@ -22,8 +22,12 @@
   {% assign __canonical = raw_category %}
 {% else %}
   {%- comment -%} Try slugified key early to catch 'Role Playing Games' -> 'role-playing-games' {%- endcomment -%}
-  {% assign slug_try = raw_category | slugify %}
-  {% if registry[slug_try] %}
+  {% if raw_category != '' %}
+    {% assign slug_try = raw_category | slugify %}
+  {% else %}
+    {% assign slug_try = '' %}
+  {% endif %}
+  {% if slug_try != '' and registry[slug_try] %}
     {% assign __canonical = slug_try %}
   {% else %}
   {%- comment -%} Search raw_names arrays case-insensitively {%- endcomment -%}
@@ -43,7 +47,7 @@
   {% endfor %}
   {% endif %}
 {% endif %}
-{% if __canonical == nil %}
+{% if __canonical == nil and raw_category != '' %}
   {% assign __canonical = raw_category | slugify %}
 {% endif %}
 {% assign entry = registry[__canonical] %}
@@ -71,7 +75,7 @@
   {% assign element = include.as | default: 'span' %}
 {% endif %}
 {% assign inline_style = entry.inline_style %}
-<span class="category-theme{% if include.wrapper_class_extra %} {{ include.wrapper_class_extra }}{% endif %}" data-category="{{ raw_category | escape }}" data-cat="{{ __canonical }}"{% if wrapper_style != '' %} style="{{ wrapper_style }}"{% endif %}>
+<span class="category-theme{% if include.wrapper_class_extra %} {{ include.wrapper_class_extra }}{% endif %}" data-category="{{ raw_category | escape }}" data-cat="{{ __canonical | default: '' }}"{% if wrapper_style != '' %} style="{{ wrapper_style }}"{% endif %}>
   <{{element}} {% if include.href and include.href != '' %}href="{{ include.href }}"{% endif %} class="{{ class_to_add }}{% if include.class_extra %} {{ include.class_extra }}{% endif %}"{% if inline_style and inline_style != '' %} style="{{ inline_style }}"{% endif %}>{{ label_text }}</{{element}}>
 </span>{% if include.debug %}<!-- 
      

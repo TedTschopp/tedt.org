@@ -1,0 +1,167 @@
+{
+  "source": "feed-mastodon.json",
+  "metadata": {
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "description": "Technology, theology, and creativity converge in this insightful exploration by Ted Tschopp, who navigates the intricate relationship between these topics in the digital age. From dissecting how technology is reshaping religious practices and ethics to sharing cutting-edge trends in UI/UX design, collaboration tools, and digital storytelling, the author provides a multifaceted analysis. Written with a unique and engaging blend of humor, reflection, and curiosity, this work invites readers to ponder and discuss these connections, offering a contemplative lens on modern innovation and cultural evolution.",
+    "expired": false,
+    "favicon": "https://tedt.org/favicon.ico",
+    "feed_url": "https://tedt.org/feed-mastodon.json",
+    "home_page_url": "https://tedt.org/",
+    "icon": "https://tedt.org/img/apple-touch-icon-144x144.webp",
+    "title": "Ted Tschopp (Mastodon Lite)",
+    "version": "https://jsonfeed.org/version/1"
+  },
+  "item_count": 12,
+  "item_order": [
+    "/An-Introduction-to-OpenClaw/",
+    "/Agents-Dont-Click/",
+    "/Reprint-The-Death-of-Software/",
+    "/Color-Chart-Pan-Zoom/",
+    "/The-Pancake-Protocol/",
+    "/Make-AI-Boring/",
+    "/How-to-Communicate-in-a-World-of-AI/",
+    "/prompts/product-requirements-document-prd-template-3/",
+    "/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/",
+    "/Winning-the-Intelligence-Inversion/",
+    "/When-the-Machines-Dont-Sleep/",
+    "/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/"
+  ],
+  "items": [
+    {
+      "key": "/Agents-Dont-Click/",
+      "id": "/Agents-Dont-Click/",
+      "url": "https://tedt.org/Agents-Dont-Click/",
+      "title": "Agents Don’t Click",
+      "summary": "A thesis about the next platform shift: agentic workflows move interaction from human-first UIs to tool calls, policy and auditability — turning many screens into generated receipts and approval gates.",
+      "content_excerpt": "A thesis about the next platform shift: agentic workflows move interaction from human-first UIs to tool calls, policy and auditability — turning many screens into generated receipts and approval gates. https://tedt.org/Agents-Dont-Click/",
+      "content_length": 237,
+      "image": "https://tedt.org/img/2026-01/Agentic-Office.webp",
+      "diff_hash": "b4c6e5905d6179a25cc71dbb1a28da18549f40f17adf4a3f8da54a288dcdb21e"
+    },
+    {
+      "key": "/An-Introduction-to-OpenClaw/",
+      "id": "/An-Introduction-to-OpenClaw/",
+      "url": "https://tedt.org/An-Introduction-to-OpenClaw/",
+      "title": "An Introduction to OpenClaw",
+      "summary": "OpenClaw and Moltbook show how AI is moving from drafting text to taking action. The shift brings real productivity gains—and a new class of security and compliance risk most organizations are not ready for.",
+      "content_excerpt": "OpenClaw and Moltbook show how AI is moving from drafting text to taking action. The shift brings real productivity gains—and a new class of security and compliance risk most organizations are not ready for. https://tedt.org/An-Introduction",
+      "content_length": 253,
+      "image": "https://tedt.org/img/AI/Clawbots-on-Moltbook.webp",
+      "diff_hash": "f0629505c6dcf5b73b3986da5fd67bbd0450be28ddea4c6d4247be622153de2f"
+    },
+    {
+      "key": "/Color-Chart-Pan-Zoom/",
+      "id": "/Color-Chart-Pan-Zoom/",
+      "url": "https://tedt.org/Color-Chart-Pan-Zoom/",
+      "title": "A Color Chart You Can Move Around",
+      "summary": "A small documentation post for the Color Chart tool on tedt.org: how to pan, how to zoom, and how to feed it your own palette from the URL.",
+      "content_excerpt": "A small documentation post for the Color Chart tool on tedt.org: how to pan, how to zoom, and how to feed it your own palette from the URL. https://tedt.org/Color-Chart-Pan-Zoom/",
+      "content_length": 178,
+      "image": "https://tedt.org/img/2026-01/color-tool.webp",
+      "diff_hash": "70ed5ea96892c2b6294e30143359ea388bae78f1fd81880c4ec8ca5ab081e337"
+    },
+    {
+      "key": "/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/",
+      "id": "/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/",
+      "url": "https://tedt.org/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/",
+      "title": "From Guesswork to Geometry: How We Measured the Mind",
+      "summary": "This year’s AGI Definition Project maps machine cognition across ten human‑style domains, replacing metaphors with measurement. GPT‑5’s 58% score shows rapid but uneven progress.",
+      "content_excerpt": "This year’s AGI Definition Project maps machine cognition across ten human‑style domains, replacing metaphors with measurement. GPT‑5’s 58% score shows rapid but uneven progress. https://tedt.org/From-Guesswork-to-Geometry-How-We-Measured-t",
+      "content_length": 248,
+      "image": "https://tedt.org/img/2025-10/From-Guesswork-to-Geometry.webp",
+      "diff_hash": "fd68960cb64e8fa97b02f3b17a7a28d8254e4789edda918b15076662246eb0a2"
+    },
+    {
+      "key": "/How-to-Communicate-in-a-World-of-AI/",
+      "id": "/How-to-Communicate-in-a-World-of-AI/",
+      "url": "https://tedt.org/How-to-Communicate-in-a-World-of-AI/",
+      "title": "How to Communicate in a World of AI",
+      "summary": "AI accelerates drafting and execution, shifting the bottleneck to clear intent. Specifications—goals, constraints, and tests—turn prompts into repeatable quality.",
+      "content_excerpt": "AI accelerates drafting and execution, shifting the bottleneck to clear intent. Specifications—goals, constraints, and tests—turn prompts into repeatable quality. https://tedt.org/How-to-Communicate-in-a-World-of-AI/",
+      "content_length": 216,
+      "image": "https://tedt.org/img/2025-12/Specification-Thinking-team-drafting-a-six-bullet.webp",
+      "diff_hash": "07cb5ef734d54c483770c9630301f4bf5a990d2e3b885876f89a3538340c911b"
+    },
+    {
+      "key": "/Make-AI-Boring/",
+      "id": "/Make-AI-Boring/",
+      "url": "https://tedt.org/Make-AI-Boring/",
+      "title": "Making AI Boring on Purpose",
+      "summary": "AI doesn’t create discipline—it amplifies what already exists. To get predictable cost, trustworthy outcomes, and sustainable speed, organizations must lead with value, design for quality, and only then pursue scale.",
+      "content_excerpt": "AI doesn’t create discipline—it amplifies what already exists. To get predictable cost, trustworthy outcomes, and sustainable speed, organizations must lead with value, design for quality, and only then pursue scale. https://tedt.org/Make-A",
+      "content_length": 249,
+      "image": "https://tedt.org/img/AI/Make-AI-Boring.webp",
+      "diff_hash": "efc0f53cd67c1859b95a661f7e097381d35071ac166c25e2a9406a61c624f3a5"
+    },
+    {
+      "key": "/Reprint-The-Death-of-Software/",
+      "id": "/Reprint-The-Death-of-Software/",
+      "url": "https://tedt.org/Reprint-The-Death-of-Software/",
+      "title": "REPRINT: The Death of Software 2.0",
+      "summary": "Using the memory hierarchy as an analogy, this essay argues that AI agents will become the fast, non-persistent layer for information work—while durable systems of record (data, state, APIs) become the true value layer.",
+      "content_excerpt": "Using the memory hierarchy as an analogy, this essay argues that AI agents will become the fast, non-persistent layer for information work—while durable systems of record (data, state, APIs) become the true value layer. https://tedt.org/Rep",
+      "content_length": 267,
+      "image": "https://tedt.org/img/2026-01/Memory-vs-Software.webp",
+      "diff_hash": "04f26433b1cbb5e7e235ea8b7cb4b3825c3c362d74963ca1166670d474c4ef9e"
+    },
+    {
+      "key": "/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/",
+      "id": "/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/",
+      "url": "https://tedt.org/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/",
+      "title": "2025 Reprint – Top Consultancies Freeze Pay as AI Reshapes Pyramid Model",
+      "summary": "AI-driven productivity gains are prompting leading consultancies to freeze starting salaries, cut graduate hiring and reconsider the classic pyramid model. Firms are shifting toward mid-career specialists and new organisational structures as automation erodes demand for junior analysts.",
+      "content_excerpt": "AI-driven productivity gains are prompting leading consultancies to freeze starting salaries, cut graduate hiring and reconsider the classic pyramid model. Firms are shifting toward mid-career specialists and new organisational structures a",
+      "content_length": 371,
+      "image": "https://tedt.org/img/Financial-Times-Paper.webp",
+      "diff_hash": "a47c7faa652b67a0599980712944b3eba860d019e225f04c1cf430c27fe62814"
+    },
+    {
+      "key": "/The-Pancake-Protocol/",
+      "id": "/The-Pancake-Protocol/",
+      "url": "https://tedt.org/The-Pancake-Protocol/",
+      "title": "The Pancake Protocol: an Agentic Kitchen",
+      "summary": "A kitchen metaphor for the standards behind agentic AI systems. MCP provides the plumbing for tools and context, while agents and skills make work repeatable with guardrails.",
+      "content_excerpt": "A kitchen metaphor for the standards behind agentic AI systems. MCP provides the plumbing for tools and context, while agents and skills make work repeatable with guardrails. https://tedt.org/The-Pancake-Protocol/",
+      "content_length": 213,
+      "image": "https://tedt.org/img/AI/The-Pancake-Protocol.webp",
+      "diff_hash": "f9cb9cb21c62de2e943240e8b4e3bea57df3c94e7a71bb6e4c13fbd8aafb9ead"
+    },
+    {
+      "key": "/When-the-Machines-Dont-Sleep/",
+      "id": "/When-the-Machines-Dont-Sleep/",
+      "url": "https://tedt.org/When-the-Machines-Dont-Sleep/",
+      "title": "When the Machines Don’t Sleep",
+      "summary": "AI-only companies are arriving faster than most realize. As machines learn to work without rest, leaders must prepare to compete, partner, and preserve what makes our work—and humanity—enduring.",
+      "content_excerpt": "AI-only companies are arriving faster than most realize. As machines learn to work without rest, leaders must prepare to compete, partner, and preserve what makes our work—and humanity—enduring. https://tedt.org/When-the-Machines-Dont-Sleep",
+      "content_length": 241,
+      "image": "https://tedt.org/img/2025-10/When-the-Machines-Dont-Sleep.webp",
+      "diff_hash": "aaf6c2ddbecf89167cad425101d626344ccae51689c3eadda46533fc7849a72f"
+    },
+    {
+      "key": "/Winning-the-Intelligence-Inversion/",
+      "id": "/Winning-the-Intelligence-Inversion/",
+      "url": "https://tedt.org/Winning-the-Intelligence-Inversion/",
+      "title": "Winning the Intelligence Inversion",
+      "summary": "Over the next 1,000 days, AI stops being a science project and becomes core infrastructure. Cognitive work—drafting, support, claims, coding—will often be cheaper and faster from agents than from adding people. The bottleneck for large enterprises shifts from headcount to compute, verification, and…",
+      "content_excerpt": "Over the next 1,000 days, AI stops being a science project and becomes core infrastructure. Cognitive work—drafting, support, claims, coding—will often be cheaper and faster from agents than from adding people. The bottleneck for large ente",
+      "content_length": 453,
+      "image": "https://tedt.org/img/2025-11/The-Intelligence-Inversion-3.webp",
+      "diff_hash": "67b073593f62f59270eeba5deaf9f614925b1cc2b91409819305df8db28882e8"
+    },
+    {
+      "key": "/prompts/product-requirements-document-prd-template-3/",
+      "id": "/prompts/product-requirements-document-prd-template-3/",
+      "url": "https://tedt.org/prompts/product-requirements-document-prd-template-3/",
+      "title": "Architecture Product Requirements Document (PRD) Template 3",
+      "summary": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting.",
+      "content_excerpt": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting. https://tedt.org/prompts/product-requirements-document-prd-template-3/",
+      "content_length": 219,
+      "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.png",
+      "diff_hash": "8d812eb480fabd75193de4954051bb46e2a183c86dc5257aa270e434f917095d"
+    }
+  ]
+}

@@ -158,15 +158,17 @@
                   <nav class="mb-4" aria-label="Location type navigation">
                     <div class="d-flex flex-wrap gap-2">
                       {% for type in location_types %}
+                        {% assign __location_type_text = type | to_s | strip %}
+                        {% if __location_type_text == '' %}{% continue %}{% endif %}
                         {% assign type_count = 0 %}
                         {% for loc_pair in site.data.folklore.locations %}
-                          {% if loc_pair[1].location_type == type %}
+                          {% if loc_pair[1].location_type == __location_type_text %}
                             {% assign type_count = type_count | plus: 1 %}
                           {% endif %}
                         {% endfor %}
                         {% if type_count > 0 %}
-                        <a href="#type-{{ type | slugify }}" class="btn btn-sm btn-outline-secondary">
-                          {%- case type -%}
+                        <a href="#type-{{ __location_type_text | slugify }}" class="btn btn-sm btn-outline-secondary">
+                          {%- case __location_type_text -%}
                             {%- when 'Mountain' -%}🏔️
                             {%- when 'Valley' -%}🏞️
                             {%- when 'River' -%}🌊
@@ -177,7 +179,7 @@
                             {%- when 'Pass/Ridge' -%}⛰️
                             {%- else -%}📍
                           {%- endcase -%}
-                          {{ type }} ({{ type_count }})
+                          {{ __location_type_text }} ({{ type_count }})
                         </a>
                         {% endif %}
                       {% endfor %}
@@ -186,17 +188,19 @@
 
                   {%- comment -%} List by type {%- endcomment -%}
                   {% for type in location_types %}
+                    {% assign __location_type_text = type | to_s | strip %}
+                    {% if __location_type_text == '' %}{% continue %}{% endif %}
                     {% assign locations_of_type = "" | split: "" %}
                     {% for loc_pair in site.data.folklore.locations %}
-                      {% if loc_pair[1].location_type == type %}
+                      {% if loc_pair[1].location_type == __location_type_text %}
                         {% assign locations_of_type = locations_of_type | push: loc_pair %}
                       {% endif %}
                     {% endfor %}
                     
                     {% if locations_of_type.size > 0 %}
-                    <section id="type-{{ type | slugify }}" class="mb-5">
+                    <section id="type-{{ __location_type_text | slugify }}" class="mb-5">
                       <h2 class="h4 mb-3 border-bottom pb-2">
-                        {%- case type -%}
+                        {%- case __location_type_text -%}
                           {%- when 'Mountain' -%}🏔️
                           {%- when 'Valley' -%}🏞️
                           {%- when 'River' -%}🌊

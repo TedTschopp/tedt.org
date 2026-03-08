@@ -3,7 +3,7 @@ I need some help translating a folktale from Swiss German into English.  I need 
 ---
 layout: post
 
-title: 
+title: "Folklore Translation Template"
 subtitle:
 quote:
 excerpt: 

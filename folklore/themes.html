@@ -56,10 +56,12 @@ permalink: /folklore/themes/
             <h2 class="h4 border-bottom pb-2">📚 Story Types</h2>
             <div class="row">
               {% for myth_type in all_myth_types %}
+              {% assign __myth_type_text = myth_type | to_s | strip %}
+              {% if __myth_type_text == '' %}{% continue %}{% endif %}
               <div class="col-md-4 col-lg-3 mb-3">
-                <div class="card h-100" id="type-{{ myth_type | slugify }}">
+                <div class="card h-100" id="type-{{ __myth_type_text | slugify }}">
                   <div class="card-body">
-                    <h3 class="h6">{{ myth_type }}</h3>
+                    <h3 class="h6">{{ __myth_type_text }}</h3>
                     <ul class="list-unstyled small mb-0">
                       {% for story_pair in site.data.folklore.stories %}
                         {% assign story_id = story_pair[0] %}
@@ -84,10 +86,12 @@ permalink: /folklore/themes/
             <p class="text-body-secondary">The main narrative and symbolic focus of each story.</p>
             <div class="row">
               {% for theme in all_primary_themes %}
+              {% assign __primary_theme_text = theme | to_s | strip %}
+              {% if __primary_theme_text == '' %}{% continue %}{% endif %}
               <div class="col-md-4 col-lg-3 mb-3">
-                <div class="card h-100" id="primary-{{ theme | slugify }}">
+                <div class="card h-100" id="primary-{{ __primary_theme_text | slugify }}">
                   <div class="card-header">
-                    <h3 class="h6 mb-0">{{ theme }}</h3>
+                    <h3 class="h6 mb-0">{{ __primary_theme_text }}</h3>
                   </div>
                   <div class="card-body">
                     <ul class="list-unstyled small mb-0">
@@ -114,35 +118,39 @@ permalink: /folklore/themes/
             <p class="text-body-secondary">Supporting motifs, character types, and narrative elements.</p>
             <div class="d-flex flex-wrap gap-2">
               {% for theme in all_secondary_themes %}
+                {% assign __secondary_theme_text = theme | to_s | strip %}
+                {% if __secondary_theme_text == '' %}{% continue %}{% endif %}
                 {% assign theme_count = 0 %}
                 {% for story_pair in site.data.folklore.stories %}
-                  {% if story_pair[1].myth_classification.secondary_themes contains theme %}
+                  {% if story_pair[1].myth_classification.secondary_themes contains __secondary_theme_text %}
                     {% assign theme_count = theme_count | plus: 1 %}
                   {% endif %}
                 {% endfor %}
-                <a href="#secondary-{{ theme | slugify }}" 
+                <a href="#secondary-{{ __secondary_theme_text | slugify }}" 
                    class="badge bg-info text-dark text-decoration-none"
                    data-bs-toggle="collapse"
                    role="button"
                    aria-expanded="false">
-                  {{ theme }} ({{ theme_count }})
+                  {{ __secondary_theme_text }} ({{ theme_count }})
                 </a>
               {% endfor %}
             </div>
             
             <div class="mt-4">
               {% for theme in all_secondary_themes %}
-              <div class="collapse mb-3" id="secondary-{{ theme | slugify }}">
+              {% assign __secondary_theme_text = theme | to_s | strip %}
+              {% if __secondary_theme_text == '' %}{% continue %}{% endif %}
+              <div class="collapse mb-3" id="secondary-{{ __secondary_theme_text | slugify }}">
                 <div class="card">
                   <div class="card-header">
-                    <h3 class="h6 mb-0">{{ theme }}</h3>
+                    <h3 class="h6 mb-0">{{ __secondary_theme_text }}</h3>
                   </div>
                   <div class="card-body">
                     <ul class="list-unstyled small mb-0 row">
                       {% for story_pair in site.data.folklore.stories %}
                         {% assign story_id = story_pair[0] %}
                         {% assign story = story_pair[1] %}
-                        {% if story.myth_classification.secondary_themes contains theme %}
+                        {% if story.myth_classification.secondary_themes contains __secondary_theme_text %}
                         <li class="col-md-6">
                           <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title }}</a>
                           <span class="text-body-secondary">— {{ story.author }}</span>

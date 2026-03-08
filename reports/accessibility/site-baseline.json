@@ -14,7 +14,7 @@
           ".col:nth-child(1) > .h-100.card > .py-0.card-footer.h-100 > .container:nth-child(1) > .align-items-stretch.row > .rounded-0.px-0.card > .g-0.row > .col-md-8 > .card-body > h5 > a",
           ".col:nth-child(1) > .h-100.card > .py-0.card-footer.h-100 > .container:nth-child(2) > .align-items-stretch.row > .rounded-0.px-0.card > .g-0.row > .col-md-8 > .card-body > h5 > a",
           ".col:nth-child(1) > .h-100.card > .py-0.card-footer.h-100 > .container:nth-child(3) > .align-items-stretch.row > .rounded-0.px-0.card > .g-0.row > .col-md-8 > .card-body > h5 > a",
-          ".Folklore",
+          "#folklore > .category-theme[data-category=\"folklore\"][data-cat=\"folklore\"] > .Folklore.category-title[href$=\"folklore/\"]",
           ".col:nth-child(2) > .h-100.card > .py-0.card-footer.h-100 > .container:nth-child(1) > .align-items-stretch.row > .rounded-0.px-0.card > .g-0.row > .col-md-8 > .card-body > h5 > a"
         ]
       }

@@ -55,7 +55,8 @@
                   {% if __primary_category %}
                     {% capture __slug %}{% include category/map-category-to-registry.html key=__primary_category %}{% endcapture %}
                     {% assign __slug = __slug | strip %}
-                    {% if __slug == '' %}{% assign __slug = __primary_category | slugify %}{% endif %}
+                    {% assign __primary_category_text = __primary_category | to_s | strip %}
+                    {% if __slug == '' and __primary_category_text != '' %}{% assign __slug = __primary_category_text | slugify %}{% endif %}
                     {% assign __entry = site.data.category_registry[__slug] %}
                   {% endif %}
                     {% if __entry %}
@@ -111,7 +112,7 @@
                       {% capture thiscategory %}{{ category | strip }}{% endcapture %}
                       {% capture __slug %}{% include category/map-category-to-registry.html key=thiscategory %}{% endcapture %}
                       {% assign __slug = __slug | strip %}
-                      {% if __slug == '' %}{% assign __slug = thiscategory | slugify %}{% endif %}
+                      {% if __slug == '' and thiscategory != '' %}{% assign __slug = thiscategory | slugify %}{% endif %}
                       {% assign __entry = site.data.category_registry[__slug] %}
                       {% if __entry and __entry.category_home_page %}
                         {% assign __href = __entry.category_home_page %}
@@ -145,7 +146,8 @@
               {% for category in sidebar_cats %}
                 {% capture __s_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
                 {% assign __s_slug = __s_slug | strip %}
-                {% if __s_slug == '' %}{% assign __s_slug = category | slugify %}{% endif %}
+                {% assign __sidebar_category_text = category | to_s | strip %}
+                {% if __s_slug == '' and __sidebar_category_text != '' %}{% assign __s_slug = __sidebar_category_text | slugify %}{% endif %}
                 {% assign __s_entry = site.data.category_registry[__s_slug] %}
                 {% if __s_entry and __s_entry.category_home_page %}
                   {% assign __s_href = __s_entry.category_home_page %}

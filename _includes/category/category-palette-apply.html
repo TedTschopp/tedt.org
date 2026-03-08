@@ -20,7 +20,7 @@
   {%- capture _wrapper_style %}{% include category/category-theme-inline-style.html entry=_e %}{% endcapture %}
   {% assign _wrapper_style = _wrapper_style | strip %}
   {% assign _slug = include.slug | default: _e.slug | default: '' %}
-  {% if _slug == '' and include.category %}
+  {% if _slug == '' and include.category and include.category != '' %}
     {% assign _slug = include.category | slugify %}
   {% endif %}
   {% assign _raw = include.raw | default: include.category | default: _e.label | default: _e.title %}

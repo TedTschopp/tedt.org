@@ -319,33 +319,51 @@ To run the site locally:
 
 ## Quality Gates
 
-Automated validations run on every push via the Site CI workflow (badge above):
+The repository now has one authoritative quality gate:
+
+- Local full gate: `make quality_gate`
+- Local fast gate: `make qa`
+- CI gate: `.github/workflows/deploy.yml` (`Site Quality + Deploy`)
+
+Blocking checks in the quality gate:
 
 - Repository guard (blocked `vendor/` bundles, blocked binary extensions, oversized tracked files unless explicitly allowlisted)
 - Build & date normalization
 - Legacy key guard (blocks reintroduction of removed config keys)
 - Feed integrity (primary JSON feed absolute URLs)
 - Mastodon feed validation (structure, length ≤ 480 chars, absolute links)
-- Mastodon toot length statistics report (non-blocking metrics)
-- Image path audit (flags path anomalies)
-- HTML Proofer (links, images, basic HTML correctness)
+- Feed diff regression guard (normalized snapshot drift across main and Mastodon JSON feeds)
+- Tools CSS sync guard (prevents drift between shared tool CSS and site base includes)
+- Representative accessibility coverage via Playwright + axe (`npm run test:a11y` locally, `test:a11y:allure` in CI)
+- HTML Proofer internal link and HTML validation (`SKIP_EXTERNAL=1`)
 
-Run locally with: `make qa`
+Advisory checks currently recorded in CI artifacts and summaries, but not used as blocking gates:
+
+- Markdown lint
+- JavaScript syntax lint
+- CSS overrides stylelint
+
+Informational quality output that still runs in the fast gate and CI:
+
+- Mastodon toot length statistics report
+
+Run the full local quality gate with: `make quality_gate`
+
+Run the faster structural/content gate with: `make qa`
 
 Run the repository hygiene guard alone with: `make repo_guard`
 
+Refresh committed feed snapshots after an intentional feed-shape change with: `ruby tests/diff_feeds.rb --refresh`
+
 ## GitHub Workflows Overview
 
-Current active workflows (legacy files removed / stubbed):
+Current active workflows:
 
-| Workflow               | File                        | Triggers                               | Purpose                                                    |
-|------------------------|-----------------------------|----------------------------------------|------------------------------------------------------------|
-| Site CI                | `site-ci.yml`               | push, PR, weekly schedule              | Build, security audit, HTML Proofer, feed & sitemap checks |
-| Deploy to GitHub Pages | `deploy-pages.yml`          | workflow_run (Site CI success), manual | Deterministic deploy only after green CI                   |
-| Mastodon Backfill      | `mastodon-backfill.yml`     | schedule (q2h), manual                 | Batch or manual backfill of missing toot IDs               |
-| Mastodon Feed Publish  | `mastodon-feed-publish.yml` | push (main), 6h schedule, manual       | Post newest site entry to Mastodon                         |
-| Mastodon Dedupe        | `mastodon-dedupe.yml`       | daily schedule, manual                 | Scan & (optionally) delete duplicate toots                 |
-| Docs (Markdown & TOC)  | `docs-markdown-toc.yml`     | push, PR (markdown paths), manual      | Markdown lint + README heading change-aware TOC drift check|
+| Workflow                | File                           | Triggers                      | Purpose                                                                |
+|-------------------------|--------------------------------|-------------------------------|------------------------------------------------------------------------|
+| Site Quality + Deploy   | `deploy.yml`                   | push to `main`, PR, manual    | Canonical quality gate, Allure artifacts, and Pages deploy on `main`   |
+| Mastodon Feed Publish   | `mastodon-feed.yml`            | push to `main`, 6h, manual    | Post newest site entry to Mastodon and sync toot metadata              |
+| Purge Actions Caches    | `purge-actions-caches.yml`     | manual                        | Clean up stale GitHub Actions caches                                   |
 
 Composite actions (DRY helpers) under `.github/actions/`:
 
@@ -355,7 +373,7 @@ Composite actions (DRY helpers) under `.github/actions/`:
 | masto-cache-prep         | `.github/actions/masto-cache-prep/`         | Normalize mastodon cache & sync front matter preview/live |
 | masto-update-frontmatter | `.github/actions/masto-update-frontmatter/` | Resolve canonical path & update toot ID in markdown       |
 
-Deprecated legacy workflow files were retained only as inert stubs (no triggers) to avoid accidental reactivation; they can be fully removed in a future cleanup once all badges / references are confirmed updated.
+The older standalone HTMLProofer workflow was removed after its checks were folded into `deploy.yml` so there is only one source of truth for quality status.
 
 ## Front Matter Feature Flags
 

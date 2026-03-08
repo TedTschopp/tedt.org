@@ -47,12 +47,13 @@
                 <!-- Blog Post -->
                 <main class="h-entry" role="main">
                     <!-- Title -->
-                    {% capture __cat_slug %}{% include category/map-category-to-registry.html key=page.title %}{% endcapture %}
+                    {% assign __cat_source = page.category | default: page.title | default: '' | to_s | strip %}
+                    {% capture __cat_slug %}{% include category/map-category-to-registry.html key=__cat_source %}{% endcapture %}
                     {% assign __cat_slug = __cat_slug | strip %}
-                    {% if __cat_slug == '' %}{% assign __cat_slug = page.title | slugify %}{% endif %}
+                    {% if __cat_slug == '' and __cat_source != '' %}{% assign __cat_slug = __cat_source | slugify %}{% endif %}
                     {%- comment -%} Fallback: if mapping failed and registry lacks this slug but a registry title matches page.title, adopt that slug {%- endcomment -%}
-                    {% if site.data.category_registry[__cat_slug] == nil %}
-                      {% assign __title_norm = page.title | downcase %}
+                    {% if __cat_slug != '' and site.data.category_registry[__cat_slug] == nil %}
+                      {% assign __title_norm = __cat_source | downcase %}
                       {% for pair in site.data.category_registry %}
                         {% assign _slug = pair[0] %}
                         {% assign _entry = pair[1] %}
@@ -68,16 +69,20 @@
                     {% assign __cat_entry = site.data.category_registry[__cat_slug] %}
                     {% if __cat_entry and __cat_entry.category_home_page %}
                       {% assign __cat_href = __cat_entry.category_home_page %}
-                    {% else %}
+                    {% elsif __cat_slug != '' %}
                       {% assign __cat_href = '/category/' | append: __cat_slug | append: '/' %}
+                    {% else %}
+                      {% assign __cat_href = '' %}
                     {% endif %}
                     {% if __cat_entry %}
                       {% capture _title_html %}{% include category/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}{% endcapture %}
                       {% include category/category-palette-apply.html entry=__cat_entry slug=__cat_slug raw=page.title title_html=_title_html title_tag='div' title_class='p-name category-title-wrapper' wrapper_class='category-hero category-hero-page' %}
-                    {% else %}
+                    {% elsif __cat_slug != '' %}
                       <h1 class="p-name">
                         {% include category/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}
                       </h1>
+                    {% else %}
+                      <h1 class="p-name">{{ __cat_source | default: 'Category' | escape }}</h1>
                     {% endif %}
                     {%- comment -%} Subtitle: prefer registry entry subtitle, fallback to page.subtitle {%- endcomment -%}
                     {% assign _subtitle = '' %}
@@ -172,35 +177,36 @@
                         Fallback: if we somehow didn't resolve via site.categories (rare), scan posts
                         using the same matching rules as the homepage carousel.
                       {%- endcomment -%}
-                      {% if (posts_arr == nil or posts_arr == empty) and registry_entry %}
-                        {% assign __scan = site.posts | safe_sort: 'date' | reverse %}
-                        {% for p in __scan %}
-                          {% assign post_match = false %}
-                          {% if p.categories %}
-                            {% if registry_entry.title and p.categories contains registry_entry.title %}
-                              {% assign post_match = true %}
-                            {% endif %}
-                            {% if post_match == false and category and p.categories contains category %}
-                              {% assign post_match = true %}
-                            {% endif %}
-                            {% if post_match == false and registry_entry.raw_names %}
-                              {% if registry_entry.raw_names.first %}
-                                {% for rn in registry_entry.raw_names %}
-                                  {% if p.categories contains rn %}{% assign post_match = true %}{% break %}{% endif %}
-                                {% endfor %}
-                              {% else %}
-                                {% if p.categories contains registry_entry.raw_names %}{% assign post_match = true %}{% endif %}
+                      {% if posts_arr == nil or posts_arr == empty %}
+                        {% if registry_entry %}
+                          {% assign __scan = site.posts | safe_sort: 'date' | reverse %}
+                          {% for p in __scan %}
+                            {% assign post_match = false %}
+                            {% if p.categories %}
+                              {% if registry_entry.title and p.categories contains registry_entry.title %}
+                                {% assign post_match = true %}
+                              {% endif %}
+                              {% if post_match == false and category and p.categories contains category %}
+                                {% assign post_match = true %}
+                              {% endif %}
+                              {% if post_match == false and registry_entry.raw_names %}
+                                {% if registry_entry.raw_names.first %}
+                                  {% for rn in registry_entry.raw_names %}
+                                    {% if p.categories contains rn %}{% assign post_match = true %}{% break %}{% endif %}
+                                  {% endfor %}
+                                {% else %}
+                                  {% if p.categories contains registry_entry.raw_names %}{% assign post_match = true %}{% endif %}
+                                {% endif %}
                               {% endif %}
                             {% endif %}
-                          {% endif %}
-                          {% unless post_match %}{% continue %}{% endunless %}
-                          {% if __seen_urls contains p.url %}{% continue %}{% endif %}
-                          {% assign __seen_urls = __seen_urls | push: p.url %}
-                          {% assign posts_arr = posts_arr | push: p %}
-                        {% endfor %}
+                            {% unless post_match %}{% continue %}{% endunless %}
+                            {% if __seen_urls contains p.url %}{% continue %}{% endif %}
+                            {% assign __seen_urls = __seen_urls | push: p.url %}
+                            {% assign posts_arr = posts_arr | push: p %}
+                          {% endfor %}
+                        {% endif %}
                       {% endif %}
-                      <ol class="list-unstyled" aria-label="Posts in category {{ page.category }}">
-                        {% for post in posts_arr %}
+                      <ol class="list-unstyled" aria-label="Posts in category {{ page.category }}">{%- for post in posts_arr -%}
                         <li class="list-item-custom">
                               <div class="container">
                                 <div class="row align-items-stretch">
@@ -245,7 +251,7 @@
                                 </div>
                               </div>
                             </li>
-                        {% endfor %}
+                        {%- endfor -%}
                       </ol>                    
                       </span>
 
@@ -282,7 +288,33 @@
                           {% assign cat_items = cat_items | push: cat_entry %}
                         {% endfor %}
                         {% assign cat_items = cat_items | safe_sort | sort_natural %}
-                        <ul class="list-unstyled" aria-label="All site categories">{% for item in cat_items %}{% assign parts = item | split: '||' %}{% assign slug = parts[0] %}{% assign label = parts[1] %}{% assign reg_entry = site.data.category_registry[slug] %}{% assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] %}{% if posts_arr == nil or posts_arr == empty %}{% if reg_entry.raw_names %}{% for variant in reg_entry.raw_names %}{% if site.categories[variant] and site.categories[variant] != empty %}{% assign posts_arr = site.categories[variant] %}{% break %}{% endif %}{% endfor %}{% endif %}{% endif %}{% assign count = posts_arr.size | default: 0 %}{% capture badge_text %}{{ label }} - {{ count }}{% endcapture %}{% if reg_entry.category_home_page %}{% assign _href = reg_entry.category_home_page %}{% else %}{% assign _href = '/category/' | append: slug | append: '/' %}{% endif %}<li class="mb-1">{% include category/category-label.html category=slug href=_href kind='badge' legacy_class=false class_extra='text-decoration-none w-100' wrapper_class_extra='no-underline full-width-badge' text_override=badge_text %}</li>{% endfor %}</ul>
+                        <ul class="list-unstyled" aria-label="All site categories">{%- for item in cat_items -%}
+                            {% assign parts = item | split: '||' %}
+                            {% assign slug = parts[0] | strip %}
+                            {% assign label = parts[1] | strip %}
+                            {% if slug == '' %}{% continue %}{% endif %}
+                            {% assign reg_entry = site.data.category_registry[slug] %}
+                            {% assign posts_arr = site.categories[label] | default: site.categories[reg_entry.title] | default: site.categories[slug] %}
+                            {% if posts_arr == nil or posts_arr == empty %}
+                              {% if reg_entry.raw_names %}
+                                {% for variant in reg_entry.raw_names %}
+                                  {% if site.categories[variant] and site.categories[variant] != empty %}
+                                    {% assign posts_arr = site.categories[variant] %}
+                                    {% break %}
+                                  {% endif %}
+                                {% endfor %}
+                              {% endif %}
+                            {% endif %}
+                            {% assign count = posts_arr.size | default: 0 %}
+                            {% capture badge_text %}{{ label }} - {{ count }}{% endcapture %}
+                            {% if reg_entry.category_home_page %}
+                              {% assign _href = reg_entry.category_home_page %}
+                            {% else %}
+                              {% assign _href = '/category/' | append: slug | append: '/' %}
+                            {% endif %}
+                            <li class="mb-1">{% include category/category-label.html category=slug href=_href kind='badge' legacy_class=false class_extra='text-decoration-none w-100' wrapper_class_extra='no-underline full-width-badge' text_override=badge_text %}</li>
+                          {%- endfor -%}
+                        </ul>
 
                       </div>
                 </div>

@@ -5,7 +5,7 @@ This is my Blog Template for AI
 ---
 layout: post
 
-title: ""
+title: "Blog Front End Template for AI"
 subtitle: ""
 quote: ""
 excerpt: ""

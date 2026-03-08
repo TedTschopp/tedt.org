@@ -1,34 +1,68 @@
-# Continuous Integration / Automation Simplified
+# Continuous Integration / Quality Gate
 
-This repository uses a minimal GitHub Actions setup focused on two concerns:
+This repository now uses one authoritative CI quality workflow and one supporting social publishing workflow:
 
-1. Deploy the Jekyll site to GitHub Pages
-2. Publish new feed items to Mastodon on a schedule or push
+1. `deploy.yml` is the source of truth for the site's quality gate and deployment.
+2. `mastodon-feed.yml` handles scheduled or push-driven Mastodon publishing.
 
 ---
 
-## 1. Deployment Workflow (`deploy.yml`)
+## 1. Site Quality + Deploy (`deploy.yml`)
 
 Triggers:
 
 - `push` to `main`
+- `pull_request`
 - Manual `workflow_dispatch`
 
 Responsibilities:
 
-- Install Ruby & bundle dependencies (cached)
-- Run a production Jekyll build
-- Upload `_site` as a Pages artifact and deploy via `actions/deploy-pages`
+- Install Node, Playwright, Ruby, and bundle dependencies
+- Record advisory lint results in Allure artifacts (`lint:md`, `lint:js`, `lint:css:overrides`)
+- Run the blocking structural checks that back `make qa`
+- Run representative accessibility coverage via Playwright + axe
+- Run HTMLProofer for internal links / basic HTML validation
+- Publish Allure and HTMLProofer artifacts for triage
+- Upload `_site` and deploy to GitHub Pages on successful pushes to `main`
+
+Blocking checks:
+
+- `make repo_guard`
+- `make normalize`
+- Jekyll production build
+- `make legacy_check`
+- `make feed_check`
+- `make validate_mastodon`
+- `make feed_diff`
+- `make tools_css_sync_check`
+- `npm run test:a11y:allure`
+- `SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --root-dir ./_site --check-html --allow-missing-href`
+
+Advisory checks:
+
+- Markdown lint
+- JavaScript syntax lint
+- CSS overrides stylelint
+
+Deployment behavior:
+
+- Pull requests run the quality job only.
+- Pushes to `main` run the same quality gate and then deploy if it passes.
 
 Environment / Permissions:
 
-- `pages: write` & `id-token: write` for OIDC-based deployment
+- `pages: write` and `id-token: write` support GitHub Pages deployment on `main`
 - Concurrency protects against overlapping deployments (`deploy-pages` group)
 
-Toggle points:
+Local parity:
 
-- To enable profiling locally, run `JEKYLL_ENV=production bundle exec jekyll build --profile`
-- Add HTML link checking later if desired (recommend a separate optional job)
+- `make qa` for the fast structural/content gate
+- `make quality_gate` for the full local gate (`make qa` + a11y + HTMLProofer)
+- `ruby tests/diff_feeds.rb --refresh` when intentionally updating feed baselines
+
+Informational output emitted during the gate:
+
+- `make length_report` publishes Mastodon length distribution data for visibility
 
 ---
 
@@ -59,30 +93,14 @@ Optional Improvements (not currently enabled):
 
 ---
 
-## Adding Back Validation (If Needed Later)
+## Why There Is No Separate Validation Workflow
 
-If you decide to reintroduce validation (HTML Proofer, feed integrity, security audit):
+The repository previously had a standalone HTMLProofer workflow. That duplication made it harder to answer a simple question: which workflow is the real quality gate?
 
-- Create a new `validate.yml` triggered on PRs & scheduled.
-- Keep deployment workflow lean to avoid blocking deploys on flaky external link checks.
+The answer is now explicit:
 
-Example skeleton snippet:
-
-```yaml
-name: Validate
-on: [pull_request]
-jobs:
-  check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.2'
-          bundler-cache: true
-      - run: bundle exec jekyll build --quiet
-      - run: bundle exec htmlproofer ./_site --allow-missing-href || true
-```
+- `deploy.yml` is the authoritative quality workflow.
+- Supporting workflows should exist only when they serve a distinct operational purpose, such as social publishing or cache maintenance.
 
 ---
 
@@ -91,24 +109,19 @@ jobs:
 - If a deployment gets stuck or cancelled by a new push, GitHub Pages uses the latest successful artifact.
 - To force a rebuild without code changes, use the "Run workflow" button (manual dispatch) or commit an empty change: `git commit --allow-empty -m 'chore: trigger deploy'`.
 - The Mastodon workflow will no-op (skip) if your decision script indicates the latest item was already posted.
+- External link checking remains intentionally excluded from the blocking gate to avoid flaky deploy blockers.
 
 ---
 
-## Housekeeping
+## Artifacts and Triage
 
-Removed legacy workflows:
+On each CI run, the workflow publishes:
 
-- Complex CI validation, security audit, dedupe/backfill Mastodon routines, multi-step heartbeat instrumentation.
+- Allure results and generated report
+- HTMLProofer log artifact
+- GitHub Actions log-derived diagnostics
 
-This keeps maintenance low while preserving core automation.
-
----
-
-## Next Steps (Optional)
-
-- Add status badges for Deploy & Mastodon workflows to `README.md`.
-- Add a lightweight test job for `_code/` scripts (Python static checks) if script complexity grows.
-- Consider Dependabot for gem & action updates.
+This keeps failure triage attached to the same workflow that produced the verdict.
 
 ---
 
