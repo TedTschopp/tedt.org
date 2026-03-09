@@ -78,8 +78,14 @@ cognitive-biases:
   related_comparisons:
   - fallacies-vs-biases
   - biases-vs-heuristics
+  - projection-bias-vs-false-consensus-effect
+  - in-group-bias-vs-outgroup-homogeneity-bias
+  - just-world-hypothesis-vs-fundamental-attribution-error
   practice_quizzes:
   - confidence-reality-check
+  - expanding-the-map
+  - fairness-and-first-impressions
+  - decisions-under-uncertainty
   quick_examples:
   - title: Favorite theory filter
     summary: Someone collects every clue for their idea and explains away the clues against it.
@@ -112,6 +118,7 @@ heuristics:
   - base-rate-neglect-vs-availability-heuristic
   practice_quizzes:
   - messy-stories-and-numbers
+  - decisions-under-uncertainty
   quick_examples:
   - title: One dramatic story
     summary: A single vivid example makes a risk feel huge.
@@ -246,6 +253,7 @@ decision-traps:
   practice_quizzes:
   - five-quick-calls
   - social-reading-check
+  - decisions-under-uncertainty
   quick_examples:
   - title: Bad Subscription Trap
     summary: Someone keeps paying for a service they do not use because they already paid for months.
@@ -276,8 +284,12 @@ social-perception-errors:
   related_comparisons:
   - halo-effect-vs-social-proof-bias
   - groupthink-vs-social-proof-bias
+  - in-group-bias-vs-outgroup-homogeneity-bias
+  - just-world-hypothesis-vs-fundamental-attribution-error
   practice_quizzes:
   - social-reading-check
+  - expanding-the-map
+  - fairness-and-first-impressions
   quick_examples:
   - title: Loud room effect
     summary: A few loud voices make it seem like everyone agrees.
@@ -304,8 +316,12 @@ narrative-errors:
   - outcome-bias
   related_comparisons:
   - hindsight-bias-vs-narrative-fallacy
+  - outcome-bias-vs-hindsight-bias
+  - outcome-bias-vs-narrative-fallacy
   practice_quizzes:
   - messy-stories-and-numbers
+  - expanding-the-map
+  - decisions-under-uncertainty
   quick_examples:
   - title: Perfect hindsight story
     summary: After the game ends, every choice suddenly looks easy to predict.
@@ -335,8 +351,11 @@ metacognitive-illusions:
   - illusion-of-control
   related_comparisons:
   - overconfidence-vs-illusion-of-explanatory-depth
+  - illusion-of-knowledge-vs-fluency-illusion
   practice_quizzes:
   - confidence-reality-check
+  - expanding-the-map
+  - decisions-under-uncertainty
   quick_examples:
   - title: Easy explanation illusion
     summary: Something sounds simple until you try to explain each step out loud.
