@@ -128,8 +128,11 @@ analytics:
     track_outbound_links: true
     track_file_downloads: true
     track_search: true
+  clarity:
+    enabled: true
+    project_id: seaw3hrzdz
   privacy:
-    session_replay: false
+    session_replay: true
     advertising_features: false
     note: "If your deployment requires prior consent for analytics, disable site.analytics.enabled until a consent flow exists."
 
