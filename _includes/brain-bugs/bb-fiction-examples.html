@@ -1,0 +1,9 @@
+<div class="bb-story-grid">
+  {% for example in include.examples %}
+    <div class="bb-card h-100">
+      <p class="bb-subtitle mb-2">{{ example.source }}</p>
+      <p class="mb-2">{{ example.summary }}</p>
+      <p class="bb-muted mb-0">{{ example.why_it_fits }}</p>
+    </div>
+  {% endfor %}
+</div>

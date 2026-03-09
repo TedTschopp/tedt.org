@@ -1,0 +1,47 @@
+---
+layout: bb-default
+---
+<section class="container py-4 py-lg-5">
+  {% include brain-bugs/bb-breadcrumbs.html %}
+  <article class="bb-surface p-4 p-lg-5">
+    <p class="bb-eyebrow mb-2">Practice</p>
+    <h1 class="bb-page-title mb-3">{{ page.title }}</h1>
+    <p class="fs-4 mb-4">{{ page.instructions }}</p>
+    <div class="bb-search-results" id="bb-practice-questions">
+      {% for question in page.questions %}
+        {% include brain-bugs/bb-practice-question.html question=question index=forloop.index0 %}
+      {% endfor %}
+    </div>
+  </article>
+</section>
+<script>
+  document.addEventListener('click', function (event) {
+    var button = event.target.closest('[data-bb-practice-option]');
+    if (!button) {
+      return;
+    }
+
+    var card = button.closest('[data-bb-practice-card]');
+    if (!card) {
+      return;
+    }
+
+    var answer = Number(card.getAttribute('data-answer-index'));
+    var choice = Number(button.getAttribute('data-choice-index'));
+    var options = card.querySelectorAll('[data-bb-practice-option]');
+    var feedback = card.querySelector('[data-bb-feedback]');
+
+    options.forEach(function (option, index) {
+      option.classList.remove('is-correct', 'is-wrong');
+      if (index === answer) {
+        option.classList.add('is-correct');
+      }
+      if (index === choice && choice !== answer) {
+        option.classList.add('is-wrong');
+      }
+    });
+
+    feedback.classList.remove('bb-hidden');
+    feedback.querySelector('[data-bb-feedback-state]').textContent = choice === answer ? 'Correct.' : 'Not quite.';
+  });
+</script>

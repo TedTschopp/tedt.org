@@ -1,0 +1,31 @@
+{% assign bb_site = site.data['bb-site'] %}
+<header class="bb-site-header">
+  <nav class="navbar navbar-expand-lg" aria-label="Brain Bugs main navigation">
+    <div class="container py-2">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="{{ '/tools/Brain-Bugs/' | relative_url }}">
+        <span class="bb-brand-mark" aria-hidden="true"><i class="fa-solid fa-bug"></i></span>
+        <span>
+          <strong class="bb-brand-title d-block h3 mb-0">{{ bb_site.brand }}</strong>
+          <span class="bb-muted small">{{ bb_site.tagline }}</span>
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bb-nav" aria-controls="bb-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="bb-nav">
+        <ul class="navbar-nav ms-auto mb-3 mb-lg-0 gap-lg-3 align-items-lg-center">
+          {% for item in bb_site.nav %}
+            <li class="nav-item">
+              <a class="bb-nav-link" href="{{ item.url | relative_url }}">{{ item.label }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+        <form class="d-flex gap-2 ms-lg-3" action="{{ '/tools/Brain-Bugs/search/' | relative_url }}" method="get" role="search">
+          <label class="visually-hidden" for="bb-search">Search Brain Bugs</label>
+          <input class="bb-search-input form-control" id="bb-search" type="search" name="q" placeholder="Search bugs, aliases, or examples">
+          <button class="bb-search-submit" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+</header>

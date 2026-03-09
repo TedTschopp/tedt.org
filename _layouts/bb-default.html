@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8">
+    {% include utility/calculate-variables.html %}
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    {% include seo/meta-data-seo.html %}
+    {% include pwa/pwa-header-includes.html %}
+    {% include feeds/feeds.html %}
+    {% include assets/all-css-includes.html %}
+    <link rel="stylesheet" href="{{ '/css/brain-bugs.css' | relative_url }}">
+    {% include assets/scripts.html %}
+  </head>
+  <body class="bb-body">
+    {% include brain-bugs/bb-site-header.html %}
+    <main id="main-content" class="bb-shell">
+      {{ content }}
+    </main>
+    {% include brain-bugs/bb-site-footer.html %}
+    {% include layout/footer.html %}
+  </body>
+</html>

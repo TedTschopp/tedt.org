@@ -1,0 +1,23 @@
+---
+layout: bb-page
+title: Topics
+lead: Browse the main families of thinking traps and start with the ones that matter most to you.
+description: Category hub for Brain Bugs topics.
+permalink: /tools/Brain-Bugs/topics/
+---
+<section class="mb-4">
+  <h2 class="bb-section-title h2 mb-3">Browse topics</h2>
+  {% include brain-bugs/bb-topic-grid.html %}
+</section>
+
+<section>
+  <h2 class="bb-section-title h2 mb-3">Guided learning paths</h2>
+  <div class="bb-path-grid">
+    {% for path in site.data['bb-site'].learning_paths %}
+      <div class="bb-card h-100">
+        <h3 class="bb-card-title h4 mb-2">{{ path.title }}</h3>
+        <p class="mb-0">{{ path.summary }}</p>
+      </div>
+    {% endfor %}
+  </div>
+</section>

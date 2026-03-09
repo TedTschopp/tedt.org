@@ -1,0 +1,57 @@
+---
+layout: bb-default
+---
+{% assign left = site.data['bb-categories'][page.left_slug] %}
+{% assign right = site.data['bb-categories'][page.right_slug] %}
+<section class="container py-4 py-lg-5">
+  {% include brain-bugs/bb-breadcrumbs.html %}
+  <article class="bb-surface p-4 p-lg-5">
+    <p class="bb-eyebrow mb-2">Comparison</p>
+    <h1 class="bb-page-title mb-3">{{ page.title }}</h1>
+    <div class="bb-feature-box mb-4">
+      <h2 class="bb-card-title h3 mb-2">Main difference in one sentence</h2>
+      <p class="mb-0">{{ page.main_difference }}</p>
+    </div>
+    <div class="bb-comparison-grid mb-4">
+      <div class="bb-card h-100">
+        <h2 class="bb-card-title h3 mb-2">{{ left.simple_title }}</h2>
+        <p class="bb-subtitle">{{ left.technical_title }}</p>
+        <p class="mb-0">{{ page.left_summary }}</p>
+      </div>
+      <div class="bb-card h-100">
+        <h2 class="bb-card-title h3 mb-2">{{ right.simple_title }}</h2>
+        <p class="bb-subtitle">{{ right.technical_title }}</p>
+        <p class="mb-0">{{ page.right_summary }}</p>
+      </div>
+    </div>
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Example where people confuse them</h2>
+      <div class="bb-card">
+        <p class="mb-0">{{ page.confusion_example }}</p>
+      </div>
+    </section>
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Quick memory trick</h2>
+      <div class="bb-card">
+        <p class="mb-0">{{ page.memory_trick }}</p>
+      </div>
+    </section>
+    <section>
+      <h2 class="bb-section-title h2 mb-3">Keep learning</h2>
+      <div class="d-flex flex-wrap gap-2">
+        {% for slug in page.full_page_links %}
+          {% assign match = nil %}
+          {% for candidate in site.bb_topics %}
+            {% if candidate.slug == slug %}
+              {% assign match = candidate %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if match %}
+            <a class="bb-chip" href="{{ match.url | relative_url }}">{{ match.title }}</a>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  </article>
+</section>

@@ -1,0 +1,344 @@
+.bb-body {
+  --bb-ink: #162226;
+  --bb-paper: #fffaf2;
+  --bb-muted: #66777d;
+  --bb-border: rgba(16, 34, 38, 0.12);
+  --bb-accent: #ff7a59;
+  --bb-accent-deep: #d24d29;
+  --bb-accent-soft: #ffe2d6;
+  --bb-sky: #d9f0ff;
+  --bb-leaf: #d8f3d7;
+  --bb-sun: #fff0b8;
+  --bb-shadow: 0 20px 45px rgba(27, 46, 51, 0.12);
+  background:
+    radial-gradient(circle at top left, rgba(255, 122, 89, 0.18), transparent 28%),
+    radial-gradient(circle at top right, rgba(119, 197, 255, 0.18), transparent 24%),
+    linear-gradient(180deg, #fffdf9 0%, #fff7ef 100%);
+  color: var(--bb-ink);
+}
+
+.bb-body main {
+  min-height: 60vh;
+}
+
+.bb-shell {
+  position: relative;
+}
+
+.bb-brand-title,
+.bb-hero-title,
+.bb-section-title,
+.bb-card-title,
+.bb-page-title {
+  font-family: "Sofia Sans Extra Condensed", "Avenir Next Condensed", "Helvetica Neue", sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.bb-site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1030;
+  backdrop-filter: blur(14px);
+  background: rgba(255, 250, 242, 0.92);
+  border-bottom: 1px solid var(--bb-border);
+}
+
+.bb-brand-mark {
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.85rem;
+  display: inline-grid;
+  place-items: center;
+  background: linear-gradient(135deg, #ff9c55, #ff5f5d);
+  color: #fff;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.bb-nav-link {
+  color: var(--bb-ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.bb-nav-link:hover,
+.bb-nav-link:focus {
+  color: var(--bb-accent-deep);
+}
+
+.bb-search-input {
+  border-radius: 999px;
+  border: 1px solid rgba(16, 34, 38, 0.18);
+  padding: 0.75rem 1rem;
+}
+
+.bb-search-input:focus,
+.bb-search-submit:focus,
+.bb-cta-button:focus,
+.bb-card-link:focus,
+.bb-chip:focus,
+.bb-link-tile:focus {
+  outline: 3px solid rgba(255, 122, 89, 0.35);
+  outline-offset: 2px;
+}
+
+.bb-search-submit,
+.bb-cta-button {
+  border: 0;
+  border-radius: 999px;
+  padding: 0.8rem 1.2rem;
+  font-weight: 700;
+}
+
+.bb-search-submit,
+.bb-cta-button-primary {
+  background: var(--bb-accent);
+  color: #fff;
+}
+
+.bb-cta-button-secondary {
+  background: #fff;
+  color: var(--bb-ink);
+  border: 1px solid var(--bb-border);
+}
+
+.bb-hero {
+  padding: 4rem 0 2rem;
+}
+
+.bb-hero-panel,
+.bb-card,
+.bb-surface,
+.bb-feature-box,
+.bb-practice-card {
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--bb-border);
+  border-radius: 1.5rem;
+  box-shadow: var(--bb-shadow);
+}
+
+.bb-hero-panel {
+  overflow: hidden;
+}
+
+.bb-hero-copy {
+  padding: 2rem;
+}
+
+.bb-hero-title {
+  font-size: clamp(3rem, 8vw, 5.9rem);
+  line-height: 0.92;
+  margin-bottom: 1rem;
+}
+
+.bb-page-title {
+  font-size: clamp(2.5rem, 6vw, 4.6rem);
+  line-height: 0.95;
+}
+
+.bb-hero-kicker,
+.bb-subtitle,
+.bb-eyebrow {
+  color: var(--bb-accent-deep);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+}
+
+.bb-hero-art {
+  min-height: 100%;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.85), transparent 18%),
+    linear-gradient(145deg, #ffd36b 0%, #ff8d5e 44%, #73d0ff 100%);
+  color: #122730;
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+  align-content: center;
+}
+
+.bb-bug-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: rgba(255, 255, 255, 0.72);
+  border-radius: 999px;
+  padding: 0.45rem 0.8rem;
+  font-weight: 700;
+}
+
+.bb-section {
+  padding: 1rem 0 2rem;
+}
+
+.bb-section-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 0.96;
+}
+
+.bb-card,
+.bb-feature-box,
+.bb-link-tile,
+.bb-glossary-row {
+  padding: 1.35rem;
+}
+
+.bb-topic-card {
+  height: 100%;
+}
+
+.bb-card-link,
+.bb-link-tile {
+  color: inherit;
+  text-decoration: none;
+}
+
+.bb-card-link:hover,
+.bb-link-tile:hover {
+  transform: translateY(-2px);
+}
+
+.bb-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.3rem 0.75rem;
+  background: var(--bb-accent-soft);
+  color: var(--bb-accent-deep);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.bb-feature-box {
+  border-left: 8px solid var(--bb-accent);
+}
+
+.bb-warning-list li::marker {
+  color: var(--bb-accent-deep);
+}
+
+.bb-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.bb-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.bb-badge-classrooms { background: var(--bb-sky); }
+.bb-badge-business { background: var(--bb-sun); }
+.bb-badge-life { background: var(--bb-leaf); }
+.bb-badge-fiction { background: #efe3ff; }
+
+.bb-definition-box {
+  padding: 1rem 1.2rem;
+  border-radius: 1.2rem;
+  background: #102226;
+  color: #fff;
+}
+
+.bb-breadcrumbs ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  color: var(--bb-muted);
+}
+
+.bb-breadcrumbs a {
+  color: var(--bb-muted);
+}
+
+.bb-comparison-grid,
+.bb-topic-grid,
+.bb-path-grid,
+.bb-example-grid,
+.bb-story-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.bb-topic-grid,
+.bb-example-grid,
+.bb-story-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.bb-path-grid,
+.bb-comparison-grid {
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.bb-quick-compare {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.bb-search-results {
+  display: grid;
+  gap: 1rem;
+}
+
+.bb-result-count {
+  color: var(--bb-muted);
+}
+
+.bb-hidden {
+  display: none;
+}
+
+.bb-mini-practice-answer {
+  background: #f5f7f7;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.bb-practice-option {
+  width: 100%;
+  text-align: left;
+  padding: 0.9rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid var(--bb-border);
+  background: #fff;
+}
+
+.bb-practice-option.is-correct {
+  border-color: #2f7d4f;
+  background: #e5f6e8;
+}
+
+.bb-practice-option.is-wrong {
+  border-color: #b4492e;
+  background: #ffe9e0;
+}
+
+.bb-footer-band {
+  padding: 2rem 0 1rem;
+}
+
+.bb-muted {
+  color: var(--bb-muted);
+}
+
+@media (max-width: 991.98px) {
+  .bb-site-header .navbar-collapse {
+    padding-top: 1rem;
+  }
+
+  .bb-hero {
+    padding-top: 2rem;
+  }
+}

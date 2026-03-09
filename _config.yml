@@ -159,6 +159,21 @@ collections:
   tools:
     output: true
     permalink: /tools/:name/
+  bb_topics:
+    output: true
+    permalink: /tools/Brain-Bugs/topics/:name/
+  bb_errors:
+    output: true
+    permalink: /tools/Brain-Bugs/errors/:name/
+  bb_compare:
+    output: true
+    permalink: /tools/Brain-Bugs/compare/:name/
+  bb_practice:
+    output: true
+    permalink: /tools/Brain-Bugs/practice/quizzes/:name/
+  bb_stories:
+    output: true
+    permalink: /tools/Brain-Bugs/stories/:name/
 
 # Defaults for different types of posts
 defaults:
@@ -172,6 +187,36 @@ defaults:
     type: tools
   values:
     layout: tool
+    no_toc: true
+- scope:
+    path: ""
+    type: bb_topics
+  values:
+    layout: bb-category
+    no_toc: true
+- scope:
+    path: ""
+    type: bb_errors
+  values:
+    layout: bb-error
+    no_toc: true
+- scope:
+    path: ""
+    type: bb_compare
+  values:
+    layout: bb-compare
+    no_toc: true
+- scope:
+    path: ""
+    type: bb_practice
+  values:
+    layout: bb-practice
+    no_toc: true
+- scope:
+    path: ""
+    type: bb_stories
+  values:
+    layout: bb-page
     no_toc: true
 
 # =============================================================================

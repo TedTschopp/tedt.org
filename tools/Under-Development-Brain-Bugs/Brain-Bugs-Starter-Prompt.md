@@ -1,4 +1,3 @@
-````md
 # Website Implementation Brief: Brain Bugs
 
 ## 1) Project goal
@@ -751,19 +750,18 @@ Good source pools:
 
 Preferred stack:
 
-* Next.js
-* TypeScript
-* MDX or JSON content layer
-* static generation for error pages
-* lightweight client-side interactivity for quizzes and filters
-
-If another stack is used, keep:
-
-* the same route structure
-* the same structured content model
-* reusable templates
-* scalable generation from content files
-
+* Make this a Static site built with a static site generator Jekyll.
+* Build the "homepage" here:
+  /Users/tedtschopp/Developer/tedt.org/tools/Brain-Bugs/
+* Make sure the incluides, templates and data files are reusable and scalable to generate all the category and error pages from the same content model.
+* Use the same content model and templates to generate the comparison pages, practice pages, and Stories hub pages.
+* Use the same route structure as outlined in the brief.
+* Make sure the includes, templates and data files all start with bb- to avoid confusion with other projects.
+* Use the same content model and templates to generate the glossary entries from the same error data files, so that every error page has a matching glossary entry.
+* Use Jekyll's built-in support for markdown content files, data files, and reusable includes and layouts to build the site.
+* Use Jekyll's collection feature to manage the error pages and category pages, so that new pages can be added by simply adding new markdown files with the correct frontmatter.
+* Use Jekyll's Liquid templating language to create reusable components and templates that can be used across the site, ensuring consistency and scalability.
+ 
 This is a content-first system. It should scale from dozens to hundreds of error pages without redesigning the site.
 
 ---
@@ -902,5 +900,3 @@ Do not make the tone academic.
 Do not skip the classroom, business, real-life, or fiction sections.
 Do not remove the Featured Examples sections.
 Build for clarity, scanning, and learning.
-
-```

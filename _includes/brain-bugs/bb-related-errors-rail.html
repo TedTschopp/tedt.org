@@ -1,0 +1,14 @@
+<div class="bb-example-grid">
+  {% for slug in include.slugs %}
+    {% assign match = nil %}
+    {% for candidate in site.bb_errors %}
+      {% if candidate.slug == slug %}
+        {% assign match = candidate %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if match %}
+      {% include brain-bugs/bb-error-card.html error=match %}
+    {% endif %}
+  {% endfor %}
+</div>

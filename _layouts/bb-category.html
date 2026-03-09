@@ -1,0 +1,124 @@
+---
+layout: bb-default
+---
+{% assign category = site.data['bb-categories'][page.slug] %}
+<section class="container py-4 py-lg-5">
+  {% include brain-bugs/bb-breadcrumbs.html %}
+  <div class="bb-surface p-4 p-lg-5">
+    <p class="bb-eyebrow mb-2">{{ category.technical_title }}</p>
+    <h1 class="bb-page-title mb-3">{{ category.simple_title }}</h1>
+    <p class="fs-4 mb-4">{{ category.intro }}</p>
+
+    <div class="row g-4 mb-4">
+      <div class="col-12 col-lg-7">
+        <div class="bb-card h-100">
+          <h2 class="bb-card-title h3 mb-3">Why this category matters</h2>
+          <p class="mb-0">{{ category.why_it_matters }}</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="bb-card h-100">
+          <h2 class="bb-card-title h3 mb-3">How it differs</h2>
+          <ul class="mb-0">
+            {% for item in category.nearby_categories %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Featured Examples</h2>
+      <div class="bb-example-grid">
+        {% for slug in category.featured_errors %}
+          {% assign match = nil %}
+          {% for candidate in site.bb_errors %}
+            {% if candidate.slug == slug %}
+              {% assign match = candidate %}
+              {% break %}
+            {% endif %}
+          {% endfor %}
+          {% if match %}
+            {% include brain-bugs/bb-error-card.html error=match %}
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <div class="row g-4 mb-4">
+      <div class="col-12 col-lg-6">
+        <div class="bb-card h-100">
+          <h2 class="bb-card-title h3 mb-3">Common warning signs</h2>
+          <ul class="bb-warning-list mb-0">
+            {% for signal in category.common_signals %}
+              <li>{{ signal }}</li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="bb-card h-100">
+          <h2 class="bb-card-title h3 mb-3">Beginner-friendly starting points</h2>
+          <ul class="mb-0">
+            {% for slug in category.beginner_errors %}
+              {% assign starter = nil %}
+              {% for candidate in site.bb_errors %}
+                {% if candidate.slug == slug %}
+                  {% assign starter = candidate %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+              {% if starter %}
+                <li><a href="{{ starter.url | relative_url }}">{{ starter.simple_title }}</a> — {{ starter.technical_title }}</li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Quick examples</h2>
+      <div class="bb-comparison-grid">
+        {% for example in category.quick_examples %}
+          <div class="bb-card h-100">
+            <h3 class="bb-card-title h4 mb-2">{{ example.title }}</h3>
+            <p class="mb-0">{{ example.summary }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="mb-0">
+      <div class="row g-4 align-items-start">
+        <div class="col-12 col-lg-7">
+          <div class="bb-card h-100">
+            <h2 class="bb-card-title h3 mb-3">Practice this topic</h2>
+            <p class="mb-3">Use a short quiz to check whether you can tell this category apart from nearby thinking traps.</p>
+            <a class="bb-chip" href="{{ '/tools/Brain-Bugs/practice/quizzes/five-quick-calls/' | relative_url }}">Try the sample quiz</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-5">
+          <div class="bb-card h-100">
+            <h2 class="bb-card-title h3 mb-3">Related comparison pages</h2>
+            <ul class="mb-0">
+              {% for slug in category.related_comparisons %}
+                {% assign comparison = nil %}
+                {% for candidate in site.bb_compare %}
+                  {% if candidate.slug == slug %}
+                    {% assign comparison = candidate %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+                {% if comparison %}
+                  <li><a href="{{ comparison.url | relative_url }}">{{ comparison.title }}</a></li>
+                {% endif %}
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

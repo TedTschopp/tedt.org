@@ -1,0 +1,74 @@
+---
+layout: bb-page
+title: Search
+lead: Search by simple title, technical term, alias, or the kind of sentence you heard.
+description: Search Brain Bugs lessons and topics.
+permalink: /tools/Brain-Bugs/search/
+---
+<div class="mb-4">
+  <label class="visually-hidden" for="bb-search-page">Search Brain Bugs</label>
+  <input class="bb-search-input form-control" id="bb-search-page" type="search" placeholder="Try: attacking the person, everyone agrees, sunk cost">
+</div>
+<p class="bb-result-count mb-4" id="bb-search-count">Type to search.</p>
+<div class="bb-search-results" id="bb-search-results"></div>
+
+<script>
+  var bbSearchIndex = [
+    {% for error in site.bb_errors %}
+      {
+        type: 'error',
+        title: {{ error.simple_title | jsonify }},
+        subtitle: {{ error.technical_title | jsonify }},
+        text: {{ error.simple_title | append: ' ' | append: error.technical_title | append: ' ' | append: error.one_line_definition | append: ' ' | append: error.aliases | join: ' ' | append: ' ' | append: error.search_phrases | join: ' ' | jsonify }},
+        url: {{ error.url | jsonify }}
+      }{% unless forloop.last and site.data['bb-site'].topic_order.size == 0 %},{% endunless %}
+    {% endfor %}
+    {% for slug in site.data['bb-site'].topic_order %}
+      {% assign category = site.data['bb-categories'][slug] %}
+      {
+        type: 'topic',
+        title: {{ category.simple_title | jsonify }},
+        subtitle: {{ category.technical_title | jsonify }},
+        text: {{ category.simple_title | append: ' ' | append: category.technical_title | append: ' ' | append: category.intro | jsonify }},
+        url: {{ '/tools/Brain-Bugs/topics/' | append: slug | append: '/' | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ];
+
+  var searchInput = document.getElementById('bb-search-page');
+  var countNode = document.getElementById('bb-search-count');
+  var resultsNode = document.getElementById('bb-search-results');
+  var initialQuery = new URLSearchParams(window.location.search).get('q') || '';
+  searchInput.value = initialQuery;
+
+  function renderSearchResults(query) {
+    var normalized = query.trim().toLowerCase();
+    resultsNode.innerHTML = '';
+
+    if (!normalized) {
+      countNode.textContent = 'Type to search.';
+      return;
+    }
+
+    var matches = bbSearchIndex.filter(function (item) {
+      return item.text.toLowerCase().indexOf(normalized) !== -1;
+    });
+
+    countNode.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' for “' + query + '”.';
+
+    matches.forEach(function (item) {
+      var article = document.createElement('article');
+      article.className = 'bb-card';
+      article.innerHTML = '<p class="bb-subtitle mb-2">' + item.subtitle + '</p>' +
+        '<h2 class="bb-card-title h4 mb-2"><a href="' + item.url + '">' + item.title + '</a></h2>' +
+        '<p class="mb-0 bb-muted">' + (item.type === 'error' ? 'Lesson' : 'Topic') + '</p>';
+      resultsNode.appendChild(article);
+    });
+  }
+
+  searchInput.addEventListener('input', function () {
+    renderSearchResults(searchInput.value);
+  });
+
+  renderSearchResults(initialQuery);
+</script>

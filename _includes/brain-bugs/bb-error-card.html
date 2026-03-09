@@ -1,0 +1,8 @@
+{% assign category = site.data['bb-categories'][include.error.primary_category] %}
+<article class="bb-card h-100">
+  <p class="bb-subtitle mb-2">{{ include.error.technical_title }}</p>
+  <h3 class="bb-card-title h4 mb-2">{{ include.error.simple_title }}</h3>
+  <p class="mb-2 bb-muted">{{ category.simple_title }}</p>
+  <p class="mb-3">{{ include.error.featured_example.summary | truncate: 140 }}</p>
+  <a class="bb-chip" href="{{ include.error.url | relative_url }}">Learn this bug</a>
+</article>

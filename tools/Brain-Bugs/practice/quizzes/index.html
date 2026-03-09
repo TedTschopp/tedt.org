@@ -1,0 +1,18 @@
+---
+layout: bb-page
+title: Quizzes
+lead: Start with one sample quiz built from the first six Brain Bugs lessons.
+description: Brain Bugs practice quizzes.
+permalink: /tools/Brain-Bugs/practice/quizzes/
+---
+<section>
+  <div class="bb-example-grid">
+    {% for quiz in site.bb_practice %}
+      <div class="bb-card h-100">
+        <h2 class="bb-card-title h4 mb-2">{{ quiz.title }}</h2>
+        <p class="mb-3">{{ quiz.instructions }}</p>
+        <a class="bb-chip" href="{{ quiz.url | relative_url }}">Open quiz</a>
+      </div>
+    {% endfor %}
+  </div>
+</section>

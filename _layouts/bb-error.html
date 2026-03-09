@@ -1,0 +1,100 @@
+---
+layout: bb-default
+---
+{% assign category = site.data['bb-categories'][page.primary_category] %}
+<section class="container py-4 py-lg-5">
+  {% include brain-bugs/bb-breadcrumbs.html %}
+  <article class="bb-surface p-4 p-lg-5">
+    <header class="mb-4">
+      <p class="bb-eyebrow mb-2">{{ category.simple_title }} — {{ category.technical_title }}</p>
+      <h1 class="bb-page-title mb-2">{{ page.simple_title }}</h1>
+      <p class="bb-subtitle mb-3">{{ page.technical_title }}</p>
+      {% include brain-bugs/bb-definition-box.html definition=page.one_line_definition %}
+    </header>
+
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">In plain English</h2>
+      <p class="mb-0">{{ page.plain_english }}</p>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Featured Example</h2>
+      {% include brain-bugs/bb-featured-example-card.html title=page.featured_example.title summary=page.featured_example.summary %}
+    </section>
+
+    {% include brain-bugs/bb-sound-like-section.html title='What this sounds like in Classrooms' badge='Classrooms' badge_class='bb-badge-classrooms' items=page.sounds_like_classrooms %}
+    {% include brain-bugs/bb-sound-like-section.html title='What this sounds like in Business' badge='Business' badge_class='bb-badge-business' items=page.sounds_like_business %}
+    {% include brain-bugs/bb-sound-like-section.html title='What this sounds like in Real Life' badge='Real Life' badge_class='bb-badge-life' items=page.sounds_like_real_life %}
+
+    <section class="mb-4">
+      <div class="bb-badge-row mb-3">
+        <span class="bb-badge bb-badge-fiction">Fiction</span>
+      </div>
+      <h2 class="bb-section-title h2 mb-3">Examples from Literature or Fiction</h2>
+      {% include brain-bugs/bb-fiction-examples.html examples=page.fiction_examples %}
+    </section>
+
+    <div class="row g-4 mb-4">
+      <div class="col-12 col-lg-6">
+        <div class="bb-card h-100">
+          <h2 class="bb-card-title h3 mb-3">Why people fall for it</h2>
+          <p class="mb-0">{{ page.why_it_happens }}</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="bb-card h-100">
+          <h2 class="bb-card-title h3 mb-3">How to spot it</h2>
+          {% include brain-bugs/bb-warning-signs.html items=page.warning_signs %}
+        </div>
+      </div>
+    </div>
+
+    <section class="mb-4">
+      {% include brain-bugs/bb-response-tips.html items=page.response_tips %}
+    </section>
+
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Common confusion</h2>
+      <div class="bb-card">
+        <p class="mb-3">People mix this up with:</p>
+        <div class="d-flex flex-wrap gap-2">
+          {% for slug in page.confused_with %}
+            {% assign match = nil %}
+            {% for candidate in site.bb_errors %}
+              {% if candidate.slug == slug %}
+                {% assign match = candidate %}
+                {% break %}
+              {% endif %}
+            {% endfor %}
+            {% if match %}
+              <a class="bb-chip" href="{{ match.url | relative_url }}">{{ match.simple_title }}</a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Mini practice</h2>
+      <div class="bb-practice-card p-4">
+        <p class="mb-3"><strong>Question:</strong> {{ page.mini_practice.question }}</p>
+        <div class="bb-mini-practice-answer">
+          <p class="mb-2"><strong>Answer:</strong> {{ page.mini_practice.answer }}</p>
+          <p class="mb-0">{{ page.mini_practice.explanation }}</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <div class="bb-feature-box">
+        <h2 class="bb-card-title h3 mb-2">Remember this</h2>
+        <p class="mb-0">{{ page.remember_this }}</p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="bb-section-title h2 mb-3">Related Brain Bugs</h2>
+      {% include brain-bugs/bb-related-errors-rail.html slugs=page.related_errors %}
+    </section>
+  </article>
+</section>

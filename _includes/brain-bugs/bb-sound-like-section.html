@@ -1,0 +1,13 @@
+<section class="mb-4">
+  <div class="bb-badge-row mb-3">
+    <span class="bb-badge {{ include.badge_class }}">{{ include.badge }}</span>
+  </div>
+  <h2 class="bb-section-title h2 mb-3">{{ include.title }}</h2>
+  <div class="bb-card">
+    <ul class="mb-0">
+      {% for item in include.items %}
+        <li>{{ item }}</li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

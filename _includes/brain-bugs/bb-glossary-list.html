@@ -1,0 +1,24 @@
+{% assign errors = site.bb_errors | sort: 'simple_title' %}
+<div class="bb-search-results">
+  {% for error in errors %}
+    <article class="bb-glossary-row bb-card">
+      <div class="d-flex flex-column flex-lg-row justify-content-between gap-3">
+        <div>
+          <h2 class="bb-card-title h4 mb-1"><a href="{{ error.url | relative_url }}">{{ error.simple_title }}</a></h2>
+          <p class="bb-subtitle mb-2">{{ error.technical_title }}</p>
+          <p class="mb-0">{{ error.glossary_definition }}</p>
+        </div>
+        {% if error.aliases %}
+          <div>
+            <p class="bb-subtitle mb-2">Also called</p>
+            <div class="d-flex flex-wrap gap-2">
+              {% for alias in error.aliases %}
+                <span class="bb-chip">{{ alias }}</span>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      </div>
+    </article>
+  {% endfor %}
+</div>

@@ -1,0 +1,7 @@
+{% assign bb_site = site.data['bb-site'] %}
+<div class="bb-topic-grid">
+  {% for slug in bb_site.topic_order %}
+    {% assign category = site.data['bb-categories'][slug] %}
+    {% include brain-bugs/bb-category-card.html slug=slug category=category %}
+  {% endfor %}
+</div>

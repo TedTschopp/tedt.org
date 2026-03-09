@@ -1,0 +1,75 @@
+brand: Brain Bugs
+tagline: Spot the bugs in how we think
+hero_title: Spot the bugs in bad reasoning before they steer you wrong.
+hero_summary: Brain Bugs teaches thinking traps in plain English, with simple examples from class, work, stories, and daily life.
+hero_pills:
+- Logical fallacies
+- Brain shortcuts
+- Persuasion tricks
+- Number mistakes
+- Decision traps
+hero_panels:
+- label: Learn fast
+  title: See the pattern
+  summary: Start with a short definition, then jump into a scene that sounds like real life.
+- label: Stay practical
+  title: Know what to say next
+  summary: Each lesson ends with warning signs, better responses, and a mini practice check.
+nav:
+- label: Home
+  url: /tools/Brain-Bugs/
+- label: Start Here
+  url: /tools/Brain-Bugs/start-here/
+- label: Topics
+  url: /tools/Brain-Bugs/topics/
+- label: Practice
+  url: /tools/Brain-Bugs/practice/
+- label: Stories
+  url: /tools/Brain-Bugs/stories/
+- label: Real Life
+  url: /tools/Brain-Bugs/real-life/
+- label: Glossary
+  url: /tools/Brain-Bugs/glossary/
+- label: About
+  url: /tools/Brain-Bugs/about/
+topic_order:
+- logical-fallacies
+- cognitive-biases
+- heuristics
+- cognitive-distortions
+- rhetorical-manipulation
+- statistical-errors
+- decision-traps
+- social-perception-errors
+- narrative-errors
+- metacognitive-illusions
+home_paths:
+- title: Learn the basics
+  summary: Start with the biggest differences between a fallacy, a bias, and a shortcut.
+  url: /tools/Brain-Bugs/start-here/
+- title: Browse topics
+  summary: Jump straight to argument mistakes, decision traps, or number mistakes.
+  url: /tools/Brain-Bugs/topics/
+- title: Practice spotting bugs
+  summary: Use quick scenarios with instant feedback.
+  url: /tools/Brain-Bugs/practice/
+- title: See stories and real-life examples
+  summary: Watch Brain Bugs show up in myths, class debates, meetings, and daily choices.
+  url: /tools/Brain-Bugs/stories/
+quick_comparisons:
+- title: Fallacies vs Biases
+  summary: A fallacy is a mistake in the argument. A bias is a tilt in how the mind judges the facts.
+  url: /tools/Brain-Bugs/compare/fallacies-vs-biases/
+- title: Biases vs Heuristics
+  summary: A bias bends judgment in a direction. A heuristic is a quick rule of thumb that can help or mislead.
+  url: /tools/Brain-Bugs/compare/fallacies-vs-biases/
+- title: Sunk Cost vs Escalation of Commitment
+  summary: Sunk cost is sticking with a bad choice because of past cost. Escalation adds more and more to save face.
+  url: /tools/Brain-Bugs/errors/sunk-cost-fallacy/
+learning_paths:
+- title: Spot bad arguments
+  summary: Learn to catch personal attacks, weak rewrites, false either-or claims, and crowd pressure.
+- title: Understand brain shortcuts
+  summary: Notice how the mind grabs the most comfortable, familiar, or recent answer.
+- title: Make better decisions
+  summary: Slow down when cost, stress, and overload start steering the choice.

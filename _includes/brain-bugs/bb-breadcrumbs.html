@@ -1,0 +1,72 @@
+{% assign crumbs = page.bb_breadcrumbs %}
+{% if crumbs == nil %}
+  {% assign crumbs = '' | split: '' %}
+  {% assign crumbs = crumbs | push: '{"label":"Home","url":"/tools/Brain-Bugs/"}' %}
+  {% if page.collection == 'bb_topics' %}
+    {% assign crumbs = crumbs | push: '{"label":"Topics","url":"/tools/Brain-Bugs/topics/"}' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.collection == 'bb_errors' %}
+    {% assign category = site.data['bb-categories'][page.primary_category] %}
+    {% assign crumbs = crumbs | push: '{"label":"Topics","url":"/tools/Brain-Bugs/topics/"}' %}
+    {% if category %}
+      {% assign category_link = '{"label":"' | append: category.simple_title | append: '","url":"/tools/Brain-Bugs/topics/' | append: page.primary_category | append: '/"}' %}
+      {% assign crumbs = crumbs | push: category_link %}
+    {% endif %}
+    {% assign crumbs = crumbs | push: page.simple_title %}
+  {% elsif page.collection == 'bb_compare' %}
+    {% assign crumbs = crumbs | push: '{"label":"Compare","url":"/tools/Brain-Bugs/compare/fallacies-vs-biases/"}' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.collection == 'bb_practice' %}
+    {% assign crumbs = crumbs | push: '{"label":"Practice","url":"/tools/Brain-Bugs/practice/"}' %}
+    {% assign crumbs = crumbs | push: '{"label":"Quizzes","url":"/tools/Brain-Bugs/practice/quizzes/"}' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.url == '/tools/Brain-Bugs/start-here/' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.url == '/tools/Brain-Bugs/topics/' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.url == '/tools/Brain-Bugs/practice/' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.url == '/tools/Brain-Bugs/stories/' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.url == '/tools/Brain-Bugs/glossary/' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.url == '/tools/Brain-Bugs/about/' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.url == '/tools/Brain-Bugs/search/' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.url contains '/tools/Brain-Bugs/real-life/' %}
+    {% assign crumbs = crumbs | push: '{"label":"Real Life","url":"/tools/Brain-Bugs/real-life/"}' %}
+    {% unless page.url == '/tools/Brain-Bugs/real-life/' %}
+      {% assign crumbs = crumbs | push: page.title %}
+    {% endunless %}
+  {% endif %}
+{% endif %}
+
+{% if crumbs and crumbs.size > 0 %}
+  <nav class="bb-breadcrumbs mb-4" aria-label="Breadcrumb">
+    <div class="d-flex flex-wrap gap-2 align-items-center">
+      {% for crumb in crumbs %}
+        <span>
+          {% if crumb contains 'label' and crumb contains 'url' %}
+            {% assign crumb_bits = crumb | remove: '{' | remove: '}' | remove: '"' | split: ',' %}
+            {% assign crumb_label = '' %}
+            {% assign crumb_url = '' %}
+            {% for bit in crumb_bits %}
+              {% assign pair = bit | split: ':' %}
+              {% assign key = pair[0] | strip %}
+              {% assign value = pair[1] | strip %}
+              {% if key == 'label' %}{% assign crumb_label = value %}{% endif %}
+              {% if key == 'url' %}{% assign crumb_url = value %}{% endif %}
+            {% endfor %}
+            <a href="{{ crumb_url | relative_url }}">{{ crumb_label }}</a>
+          {% else %}
+            <span aria-current="page">{{ crumb }}</span>
+          {% endif %}
+        </span>
+        {% unless forloop.last %}
+          <span aria-hidden="true">/</span>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </nav>
+{% endif %}

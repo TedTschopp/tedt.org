@@ -1,0 +1,32 @@
+{% assign bb_site = site.data['bb-site'] %}
+<div class="bb-hero-panel">
+  <div class="row g-0 align-items-stretch">
+    <div class="col-12 col-lg-7">
+      <div class="bb-hero-copy">
+        <p class="bb-hero-kicker">{{ bb_site.brand }}</p>
+        <h1 class="bb-hero-title">{{ bb_site.hero_title }}</h1>
+        <p class="fs-4 mb-4">{{ bb_site.hero_summary }}</p>
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <a class="bb-cta-button bb-cta-button-primary text-decoration-none" href="{{ '/tools/Brain-Bugs/start-here/' | relative_url }}">Start Here</a>
+          <a class="bb-cta-button bb-cta-button-secondary text-decoration-none" href="{{ '/tools/Brain-Bugs/practice/' | relative_url }}">Try Practice</a>
+        </div>
+        <div class="d-flex flex-wrap gap-2">
+          {% for pill in bb_site.hero_pills %}
+            <span class="bb-bug-pill">{{ pill }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="col-12 col-lg-5">
+      <div class="bb-hero-art h-100">
+        {% for panel in bb_site.hero_panels %}
+          <div class="bb-card">
+            <p class="bb-subtitle mb-2">{{ panel.label }}</p>
+            <h2 class="bb-card-title h3 mb-2">{{ panel.title }}</h2>
+            <p class="mb-0">{{ panel.summary }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

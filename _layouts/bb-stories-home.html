@@ -1,0 +1,51 @@
+---
+layout: bb-default
+---
+{% assign featured_story_errors = site.bb_errors | where: 'featured', true %}
+<section class="container py-4 py-lg-5">
+  {% include brain-bugs/bb-breadcrumbs.html %}
+  <article class="bb-surface p-4 p-lg-5">
+    <p class="bb-eyebrow mb-2">Stories</p>
+    <h1 class="bb-page-title mb-3">{{ page.title }}</h1>
+    <p class="fs-4 mb-4">{{ page.lead }}</p>
+
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Browse by story source</h2>
+      <div class="bb-story-grid">
+        {% for source in page.story_sources %}
+          <div class="bb-card h-100">
+            <h3 class="bb-card-title h4 mb-2">{{ source.title }}</h3>
+            <p class="mb-0">{{ source.summary }}</p>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Browse by error</h2>
+      <div class="bb-example-grid">
+        {% for error in featured_story_errors limit: 6 %}
+          {% include brain-bugs/bb-error-card.html error=error %}
+        {% endfor %}
+      </div>
+    </section>
+
+    <section>
+      <h2 class="bb-section-title h2 mb-3">Featured story examples</h2>
+      <div class="bb-story-grid">
+        {% for error in featured_story_errors limit: 4 %}
+          {% assign fiction = error.fiction_examples | first %}
+          {% if fiction %}
+            <div class="bb-card h-100">
+              <p class="bb-subtitle mb-2">{{ fiction.source }}</p>
+              <h3 class="bb-card-title h4 mb-2">{{ error.simple_title }}</h3>
+              <p class="mb-2">{{ fiction.summary }}</p>
+              <p class="bb-muted mb-3">{{ fiction.why_it_fits }}</p>
+              <a class="bb-chip" href="{{ error.url | relative_url }}">Go to the full lesson</a>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </section>
+  </article>
+</section>

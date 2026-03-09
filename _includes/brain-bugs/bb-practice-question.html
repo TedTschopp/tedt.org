@@ -1,0 +1,14 @@
+<section class="bb-practice-card p-4" data-bb-practice-card data-answer-index="{{ include.question.answer_index }}">
+  <p class="bb-subtitle mb-2">Question {{ include.index | plus: 1 }}</p>
+  <h2 class="bb-card-title h4 mb-3">{{ include.question.prompt }}</h2>
+  <div class="d-grid gap-2 mb-3">
+    {% for option in include.question.options %}
+      <button class="bb-practice-option" type="button" data-bb-practice-option data-choice-index="{{ forloop.index0 }}">{{ option }}</button>
+    {% endfor %}
+  </div>
+  <div class="bb-mini-practice-answer bb-hidden" data-bb-feedback>
+    <p class="mb-2"><strong data-bb-feedback-state>Answer checked.</strong></p>
+    <p class="mb-2">{{ include.question.explanation }}</p>
+    <a class="bb-chip" href="{{ include.question.link | relative_url }}">Read the full lesson</a>
+  </div>
+</section>

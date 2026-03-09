@@ -1,0 +1,96 @@
+---
+layout: bb-default
+---
+{% assign bb_site = site.data['bb-site'] %}
+<section class="bb-hero">
+  <div class="container">
+    {% include brain-bugs/bb-hero-block.html %}
+  </div>
+</section>
+
+<section class="bb-section">
+  <div class="container">
+    <div class="row g-4 align-items-start">
+      <div class="col-12 col-lg-7">
+        <div class="bb-surface p-4 p-lg-5 h-100">
+          <p class="bb-eyebrow mb-2">What Is A Brain Bug?</p>
+          <h2 class="bb-section-title mb-3">A Brain Bug is a common way thinking can go off track.</h2>
+          <p class="mb-3">Sometimes we jump to a fast answer. Sometimes we defend our side too hard. Sometimes we hear a clever line and miss the weak logic hiding inside it.</p>
+          <p class="mb-0">Brain Bugs makes those mistakes easier to see. It gives you plain words, short examples, and calm ways to respond.</p>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="bb-surface p-4 p-lg-5 h-100">
+          <p class="bb-eyebrow mb-2">Choose Your Path</p>
+          <div class="bb-path-grid">
+            {% for path in bb_site.home_paths %}
+              <a class="bb-link-tile bb-card-link" href="{{ path.url | relative_url }}">
+                <h3 class="bb-card-title h4 mb-2">{{ path.title }}</h3>
+                <p class="mb-0 bb-muted">{{ path.summary }}</p>
+              </a>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bb-section">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-3">
+      <div>
+        <p class="bb-eyebrow mb-2">Topics</p>
+        <h2 class="bb-section-title mb-0">Start with the kind of bug you want to spot.</h2>
+      </div>
+      <a class="bb-chip" href="{{ '/tools/Brain-Bugs/topics/' | relative_url }}">Browse all topics</a>
+    </div>
+    {% include brain-bugs/bb-topic-grid.html %}
+  </div>
+</section>
+
+<section class="bb-section">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-3">
+      <div>
+        <p class="bb-eyebrow mb-2">Featured Examples</p>
+        <h2 class="bb-section-title mb-0">Small scenes that make the idea click fast.</h2>
+      </div>
+      <a class="bb-chip" href="{{ '/tools/Brain-Bugs/glossary/' | relative_url }}">Open the glossary</a>
+    </div>
+    <div class="bb-example-grid">
+      {% assign featured_errors = site.bb_errors | where: 'featured', true | sort: 'simple_title' %}
+      {% for error in featured_errors limit: 6 %}
+        {% include brain-bugs/bb-error-card.html error=error %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="bb-section">
+  <div class="container">
+    <p class="bb-eyebrow mb-2">Quick Comparisons</p>
+    <h2 class="bb-section-title mb-3">Learn the difference that matters first.</h2>
+    <div class="bb-quick-compare">
+      {% for comparison in site.data['bb-site'].quick_comparisons %}
+        {% include brain-bugs/bb-comparison-card.html comparison=comparison %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="bb-section pb-5">
+  <div class="container">
+    <div class="bb-surface p-4 p-lg-5 d-lg-flex justify-content-between align-items-center gap-4">
+      <div>
+        <p class="bb-eyebrow mb-2">Practice</p>
+        <h2 class="bb-section-title mb-2">Try a few examples and see if you can spot the bug.</h2>
+        <p class="mb-0 bb-muted">Short questions. Instant feedback. Links back to the full lessons.</p>
+      </div>
+      <div class="d-flex flex-wrap gap-2 mt-3 mt-lg-0">
+        <a class="bb-cta-button bb-cta-button-primary text-decoration-none" href="{{ '/tools/Brain-Bugs/practice/' | relative_url }}">Try Practice</a>
+        <a class="bb-cta-button bb-cta-button-secondary text-decoration-none" href="{{ '/tools/Brain-Bugs/practice/quizzes/five-quick-calls/' | relative_url }}">Open the sample quiz</a>
+      </div>
+    </div>
+  </div>
+</section>

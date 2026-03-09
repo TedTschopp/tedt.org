@@ -1,0 +1,207 @@
+logical-fallacies:
+  simple_title: Argument Mistakes
+  technical_title: Logical Fallacies
+  card_summary: Mistakes in how a claim is argued, not just what someone believes.
+  intro: Logical fallacies are argument mistakes. They sound convincing at first, but the reasoning underneath is weak.
+  why_it_matters: If you can spot a fallacy, you can pull the talk back to the real point instead of getting dragged into noise.
+  nearby_categories:
+  - Fallacies are problems in the argument itself.
+  - Biases are problems in how the mind leans or filters information.
+  - Rhetorical tricks may use a fallacy on purpose to steer emotions.
+  common_signals:
+  - The speaker avoids the real claim.
+  - The argument attacks a person instead of the idea.
+  - The choice is framed as only two paths when more exist.
+  - The crowd is treated like proof.
+  featured_errors:
+  - ad-hominem
+  - straw-man
+  - bandwagon-fallacy
+  beginner_errors:
+  - ad-hominem
+  - straw-man
+  - bandwagon-fallacy
+  related_comparisons:
+  - fallacies-vs-biases
+  quick_examples:
+  - title: Debate club dodge
+    summary: A student ignores the evidence and says the other speaker is too annoying to trust.
+  - title: Team meeting shortcut
+    summary: A manager says the whole team must pick plan A because everyone seems excited right now.
+cognitive-biases:
+  simple_title: Brain Shortcuts That Tilt Judgment
+  technical_title: Cognitive Biases
+  card_summary: Mental habits that bend what we notice, remember, or trust.
+  intro: Cognitive biases are patterns that tilt judgment. They can make us notice friendly evidence and skip warning signs.
+  why_it_matters: When you know the tilt, you can slow down and check what facts you are skipping.
+  nearby_categories:
+  - Biases tilt judgment.
+  - Heuristics are quick rules of thumb that may or may not hurt.
+  - Distortions often show up in self-talk and emotion.
+  common_signals:
+  - You only notice proof for the story you already like.
+  - First numbers or first impressions stick too hard.
+  - New evidence changes less than it should.
+  featured_errors:
+  - confirmation-bias
+  beginner_errors:
+  - confirmation-bias
+  related_comparisons:
+  - fallacies-vs-biases
+  quick_examples:
+  - title: Favorite theory filter
+    summary: Someone collects every clue for their idea and explains away the clues against it.
+heuristics:
+  simple_title: Fast Rules Of Thumb
+  technical_title: Heuristics
+  card_summary: Quick mental shortcuts that help us move fast but sometimes mislead us.
+  intro: Heuristics are fast rules of thumb. They are not always bad, but they can make rare events feel common or simple stories feel true.
+  why_it_matters: A quick shortcut can help under pressure, but you need to know when to slow down and double-check.
+  nearby_categories:
+  - Heuristics can be useful.
+  - Biases are the tilted outcomes that often come from shortcuts.
+  - Statistical errors happen when a shortcut ignores the numbers.
+  common_signals:
+  - A vivid example feels stronger than the data.
+  - Familiar things seem safer or better.
+  featured_errors: []
+  beginner_errors: []
+  related_comparisons:
+  - fallacies-vs-biases
+  quick_examples:
+  - title: One dramatic story
+    summary: A single vivid example makes a risk feel huge.
+cognitive-distortions:
+  simple_title: Thought Distortions
+  technical_title: Cognitive Distortions
+  card_summary: Patterns of self-talk that twist a situation into something harsher or more extreme.
+  intro: Cognitive distortions are thought patterns that bend reality inside your own mind. They often sound absolute, personal, or hopeless.
+  why_it_matters: When your inner story gets distorted, your emotions and choices can slide with it.
+  nearby_categories:
+  - Distortions often live inside self-talk.
+  - Fallacies usually show up in arguments.
+  - Biases tilt judgment about the world at large.
+  common_signals:
+  - Words like always, never, everyone, and no one.
+  - Big feelings treated as proof.
+  - One mistake turned into a full identity.
+  featured_errors:
+  - black-and-white-thinking
+  beginner_errors:
+  - black-and-white-thinking
+  related_comparisons:
+  - fallacies-vs-biases
+  quick_examples:
+  - title: One bad grade
+    summary: A student gets one low score and decides they are just dumb.
+rhetorical-manipulation:
+  simple_title: Persuasion Tricks
+  technical_title: Rhetorical Manipulation
+  card_summary: Language moves meant to steer feelings, pressure a crowd, or muddy the real issue.
+  intro: Persuasion tricks use tone, pressure, or confusion to move people without doing the hard work of clear reasoning.
+  why_it_matters: If you can name the trick, it loses some of its power over the room.
+  nearby_categories:
+  - Rhetorical tricks may include fallacies.
+  - The goal is often control, not clarity.
+  common_signals:
+  - Strong feelings with thin evidence.
+  - Rapid-fire claims with no time to check them.
+  featured_errors: []
+  beginner_errors: []
+  related_comparisons: []
+  quick_examples:
+  - title: Loaded pitch
+    summary: The wording pushes you before the facts arrive.
+statistical-errors:
+  simple_title: Number Mistakes
+  technical_title: Statistical and Probability Errors
+  card_summary: Errors that come from weak samples, broken comparisons, or bad guesses about chance.
+  intro: Number mistakes happen when people skip base rates, trust tiny samples, or confuse patterns with proof.
+  why_it_matters: Better reasoning with numbers keeps you from overreacting to luck, streaks, and flashy charts.
+  nearby_categories:
+  - These errors focus on evidence and probability.
+  - Heuristics often feed them when people guess too fast.
+  common_signals:
+  - A tiny sample is treated like a law.
+  - Two things happen together and are called cause and effect.
+  featured_errors: []
+  beginner_errors: []
+  related_comparisons: []
+  quick_examples:
+  - title: Three coin flips
+    summary: A short streak gets treated like a reliable pattern.
+decision-traps:
+  simple_title: Decision Traps
+  technical_title: Decision-Making Traps
+  card_summary: Mistakes that keep us stuck, rushed, or too invested in a weak choice.
+  intro: Decision traps show up when effort, stress, pride, or too many options start steering the choice instead of the goal.
+  why_it_matters: Spotting the trap early helps you stop pouring more time, money, and energy into a bad path.
+  nearby_categories:
+  - Decision traps focus on action and commitment.
+  - Biases may feed them, but the result is usually a bad next move.
+  common_signals:
+  - Past cost is treated like a reason to keep going.
+  - Planning stays optimistic even after repeated misses.
+  - Too many choices lead to delay or sloppy picks.
+  featured_errors:
+  - sunk-cost-fallacy
+  beginner_errors:
+  - sunk-cost-fallacy
+  related_comparisons: []
+  quick_examples:
+  - title: Bad subscription trap
+    summary: Someone keeps paying for a service they do not use because they already paid for months.
+social-perception-errors:
+  simple_title: People Mistakes
+  technical_title: Social Perception Errors
+  card_summary: Errors in how we read groups, motives, status, and what other people know or believe.
+  intro: People mistakes happen when we guess too fast about motives, groups, or what a crowd means.
+  why_it_matters: Better social judgment makes teams, classrooms, and families less unfair.
+  nearby_categories:
+  - These errors focus on people and groups.
+  - Biases may help cause them, but the main mistake is social judgment.
+  common_signals:
+  - One person stands in for a whole group.
+  - The crowd is treated like a reliable guide.
+  featured_errors: []
+  beginner_errors: []
+  related_comparisons: []
+  quick_examples:
+  - title: Loud room effect
+    summary: A few loud voices make it seem like everyone agrees.
+narrative-errors:
+  simple_title: Story Traps
+  technical_title: Narrative and Meaning Errors
+  card_summary: Mistakes caused by our need for neat stories, clear causes, and tidy endings.
+  intro: Story traps happen when the mind turns a messy world into a neat tale that feels good but explains too much.
+  why_it_matters: A clean story can hide luck, complexity, and what nobody knew at the time.
+  nearby_categories:
+  - Story traps organize events after the fact.
+  - Statistical errors look at the numbers behind those events.
+  common_signals:
+  - The ending makes the earlier choices seem obvious.
+  - A neat story replaces missing evidence.
+  featured_errors: []
+  beginner_errors: []
+  related_comparisons: []
+  quick_examples:
+  - title: Perfect hindsight story
+    summary: After the game ends, every choice suddenly looks easy to predict.
+metacognitive-illusions:
+  simple_title: Self-Knowledge Traps
+  technical_title: Metacognitive Illusions
+  card_summary: Mistakes in how well we think we know, understand, or control a situation.
+  intro: Self-knowledge traps fool us about our own understanding. We may feel clear, certain, or in control long before that is true.
+  why_it_matters: When false confidence grows, questions stop and blind spots get bigger.
+  nearby_categories:
+  - These errors focus on your sense of knowing.
+  - Biases focus more on what information gets favored.
+  common_signals:
+  - Things feel easy, so they seem fully understood.
+  - Confidence rises faster than evidence.
+  featured_errors: []
+  beginner_errors: []
+  related_comparisons: []
+  quick_examples:
+  - title: Easy explanation illusion
+    summary: Something sounds simple until you try to explain each step out loud.
