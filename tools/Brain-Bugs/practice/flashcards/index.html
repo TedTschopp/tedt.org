@@ -1,8 +1,39 @@
 ---
 layout: bb-page
 title: Flashcards
-lead: Flashcards are planned next. The first version will be generated from the same error data used by the glossary and lesson pages.
+lead: Flip through core Brain Bugs and train the simple title, technical term, and key takeaway together.
 description: Brain Bugs flashcards roadmap.
 permalink: /tools/Brain-Bugs/practice/flashcards/
 ---
-<p>The content model is already set up for flashcards. Each lesson has a simple title, technical title, one-line definition, and related links, which makes this route easy to expand next.</p>
+<p class="mb-4">Tap a card to flip it. Use these as quick memory reps before a quiz or after reading a lesson.</p>
+
+<div class="bb-example-grid" id="bb-flashcards">
+	{% assign flashcards = site.bb_errors | sort: 'simple_title' %}
+	{% for error in flashcards limit: 12 %}
+		<button class="bb-card text-start h-100" type="button" data-bb-flashcard>
+			<span class="bb-flashcard-front">
+				<p class="bb-subtitle mb-2">{{ error.technical_title }}</p>
+				<h2 class="bb-card-title h4 mb-2">{{ error.simple_title }}</h2>
+				<p class="mb-0 bb-muted">Tap to reveal the quick meaning.</p>
+			</span>
+			<span class="bb-flashcard-back bb-hidden">
+				<p class="bb-subtitle mb-2">Remember this</p>
+				<p class="mb-2">{{ error.one_line_definition }}</p>
+				<p class="mb-3 bb-muted">{{ error.remember_this }}</p>
+				<span class="bb-chip">{{ error.technical_title }}</span>
+			</span>
+		</button>
+	{% endfor %}
+</div>
+
+<script>
+	document.addEventListener('click', function (event) {
+		var card = event.target.closest('[data-bb-flashcard]');
+		if (!card) {
+			return;
+		}
+
+		card.querySelector('.bb-flashcard-front').classList.toggle('bb-hidden');
+		card.querySelector('.bb-flashcard-back').classList.toggle('bb-hidden');
+	});
+</script>

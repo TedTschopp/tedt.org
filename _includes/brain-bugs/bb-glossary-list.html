@@ -1,7 +1,7 @@
 {% assign errors = site.bb_errors | sort: 'simple_title' %}
 <div class="bb-search-results">
   {% for error in errors %}
-    <article class="bb-glossary-row bb-card">
+    <article class="bb-glossary-row bb-card" data-bb-glossary-item data-bb-search-text="{{ error.simple_title | append: ' ' | append: error.technical_title | append: ' ' | append: error.glossary_definition | append: ' ' | append: error.aliases | join: ' ' | downcase | escape }}">
       <div class="d-flex flex-column flex-lg-row justify-content-between gap-3">
         <div>
           <h2 class="bb-card-title h4 mb-1"><a href="{{ error.url | relative_url }}">{{ error.simple_title }}</a></h2>

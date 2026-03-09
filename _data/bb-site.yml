@@ -62,10 +62,10 @@ quick_comparisons:
   url: /tools/Brain-Bugs/compare/fallacies-vs-biases/
 - title: Biases vs Heuristics
   summary: A bias bends judgment in a direction. A heuristic is a quick rule of thumb that can help or mislead.
-  url: /tools/Brain-Bugs/compare/fallacies-vs-biases/
+  url: /tools/Brain-Bugs/compare/biases-vs-heuristics/
 - title: Sunk Cost vs Escalation of Commitment
   summary: Sunk cost is sticking with a bad choice because of past cost. Escalation adds more and more to save face.
-  url: /tools/Brain-Bugs/errors/sunk-cost-fallacy/
+  url: /tools/Brain-Bugs/compare/sunk-cost-vs-escalation-of-commitment/
 learning_paths:
 - title: Spot bad arguments
   summary: Learn to catch personal attacks, weak rewrites, false either-or claims, and crowd pressure.

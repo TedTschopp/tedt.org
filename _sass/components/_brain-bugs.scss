@@ -38,6 +38,7 @@
   position: sticky;
   top: 0;
   z-index: 1030;
+  -webkit-backdrop-filter: blur(14px);
   backdrop-filter: blur(14px);
   background: rgba(255, 250, 242, 0.92);
   border-bottom: 1px solid var(--bb-border);
@@ -183,6 +184,12 @@
   padding: 1.35rem;
 }
 
+.bb-card button,
+button.bb-card {
+  border: 1px solid var(--bb-border);
+  background: rgba(255, 255, 255, 0.88);
+}
+
 .bb-topic-card {
   height: 100%;
 }
@@ -298,6 +305,11 @@
 
 .bb-hidden {
   display: none;
+}
+
+.bb-flashcard-front,
+.bb-flashcard-back {
+  display: block;
 }
 
 .bb-mini-practice-answer {

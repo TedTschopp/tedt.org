@@ -7,6 +7,36 @@ layout: bb-default
     <p class="bb-eyebrow mb-2">Glossary</p>
     <h1 class="bb-page-title mb-3">{{ page.title }}</h1>
     <p class="fs-4 mb-4">{{ page.lead }}</p>
+    <div class="mb-4">
+      <label class="visually-hidden" for="bb-glossary-search">Search glossary</label>
+      <input class="bb-search-input form-control" id="bb-glossary-search" type="search" placeholder="Search titles, aliases, or definitions">
+      <p class="bb-result-count mt-3 mb-0" id="bb-glossary-count">Showing all entries.</p>
+    </div>
     {% include brain-bugs/bb-glossary-list.html %}
   </article>
 </section>
+<script>
+  (function () {
+    var input = document.getElementById('bb-glossary-search');
+    var count = document.getElementById('bb-glossary-count');
+    var items = Array.prototype.slice.call(document.querySelectorAll('[data-bb-glossary-item]'));
+
+    function filterGlossary() {
+      var query = input.value.trim().toLowerCase();
+      var visible = 0;
+
+      items.forEach(function (item) {
+        var haystack = item.getAttribute('data-bb-search-text') || '';
+        var match = !query || haystack.indexOf(query) !== -1;
+        item.classList.toggle('bb-hidden', !match);
+        if (match) {
+          visible += 1;
+        }
+      });
+
+      count.textContent = query ? visible + ' matching entr' + (visible === 1 ? 'y.' : 'ies.') : 'Showing all entries.';
+    }
+
+    input.addEventListener('input', filterGlossary);
+  }());
+</script>

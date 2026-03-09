@@ -44,10 +44,15 @@ cognitive-biases:
   - New evidence changes less than it should.
   featured_errors:
   - confirmation-bias
+  - anchoring-bias
+  - loss-aversion
   beginner_errors:
   - confirmation-bias
+  - anchoring-bias
+  - framing-effect
   related_comparisons:
   - fallacies-vs-biases
+  - biases-vs-heuristics
   quick_examples:
   - title: Favorite theory filter
     summary: Someone collects every clue for their idea and explains away the clues against it.
@@ -64,10 +69,12 @@ heuristics:
   common_signals:
   - A vivid example feels stronger than the data.
   - Familiar things seem safer or better.
-  featured_errors: []
-  beginner_errors: []
+  featured_errors:
+  - availability-heuristic
+  beginner_errors:
+  - availability-heuristic
   related_comparisons:
-  - fallacies-vs-biases
+  - biases-vs-heuristics
   quick_examples:
   - title: One dramatic story
     summary: A single vivid example makes a risk feel huge.
@@ -108,7 +115,8 @@ rhetorical-manipulation:
   - Rapid-fire claims with no time to check them.
   featured_errors: []
   beginner_errors: []
-  related_comparisons: []
+  related_comparisons:
+  - fallacies-vs-biases
   quick_examples:
   - title: Loaded pitch
     summary: The wording pushes you before the facts arrive.
@@ -124,8 +132,12 @@ statistical-errors:
   common_signals:
   - A tiny sample is treated like a law.
   - Two things happen together and are called cause and effect.
-  featured_errors: []
-  beginner_errors: []
+  featured_errors:
+  - base-rate-neglect
+  - correlation-vs-causation
+  beginner_errors:
+  - correlation-vs-causation
+  - base-rate-neglect
   related_comparisons: []
   quick_examples:
   - title: Three coin flips
@@ -145,9 +157,13 @@ decision-traps:
   - Too many choices lead to delay or sloppy picks.
   featured_errors:
   - sunk-cost-fallacy
+  - planning-fallacy
+  - groupthink
   beginner_errors:
   - sunk-cost-fallacy
-  related_comparisons: []
+  - planning-fallacy
+  related_comparisons:
+  - sunk-cost-vs-escalation-of-commitment
   quick_examples:
   - title: Bad subscription trap
     summary: Someone keeps paying for a service they do not use because they already paid for months.
@@ -163,8 +179,10 @@ social-perception-errors:
   common_signals:
   - One person stands in for a whole group.
   - The crowd is treated like a reliable guide.
-  featured_errors: []
-  beginner_errors: []
+  featured_errors:
+  - social-proof-bias
+  beginner_errors:
+  - social-proof-bias
   related_comparisons: []
   quick_examples:
   - title: Loud room effect
@@ -181,8 +199,10 @@ narrative-errors:
   common_signals:
   - The ending makes the earlier choices seem obvious.
   - A neat story replaces missing evidence.
-  featured_errors: []
-  beginner_errors: []
+  featured_errors:
+  - hindsight-bias
+  beginner_errors:
+  - hindsight-bias
   related_comparisons: []
   quick_examples:
   - title: Perfect hindsight story
