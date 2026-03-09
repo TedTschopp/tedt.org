@@ -32,7 +32,7 @@ logical-fallacies:
   - title: Team meeting shortcut
     summary: A manager says the whole team must pick plan A because everyone seems excited right now.
 cognitive-biases:
-  simple_title: Brain Shortcuts That Tilt Judgment
+  simple_title: Brain Shortcuts that Tilt Judgment
   technical_title: Cognitive Biases
   card_summary: Mental habits that bend what we notice, remember, or trust.
   intro: Cognitive biases are patterns that tilt judgment. They can make us notice friendly evidence and skip warning signs.
@@ -62,7 +62,7 @@ cognitive-biases:
   - title: Favorite theory filter
     summary: Someone collects every clue for their idea and explains away the clues against it.
 heuristics:
-  simple_title: Fast Rules Of Thumb
+  simple_title: Fast Rules of Thumb
   technical_title: Heuristics
   card_summary: Quick mental shortcuts that help us move fast but sometimes mislead us.
   intro: Heuristics are fast rules of thumb. They are not always bad, but they can make rare events feel common or simple stories feel true.
@@ -148,7 +148,7 @@ rhetorical-manipulation:
     summary: The wording pushes you before the facts arrive.
 statistical-errors:
   simple_title: Number Mistakes
-  technical_title: Statistical and Probability Errors
+  technical_title: Statistical & Probability Errors
   card_summary: Errors that come from weak samples, broken comparisons, or bad guesses about chance.
   intro: Number mistakes happen when people skip base rates, trust tiny samples, or confuse patterns with proof.
   why_it_matters: Better reasoning with numbers keeps you from overreacting to luck, streaks, and flashy charts.
@@ -198,7 +198,7 @@ decision-traps:
   - five-quick-calls
   - social-reading-check
   quick_examples:
-  - title: Bad subscription trap
+  - title: Bad Subscription Trap
     summary: Someone keeps paying for a service they do not use because they already paid for months.
 social-perception-errors:
   simple_title: People Mistakes
@@ -229,7 +229,7 @@ social-perception-errors:
     summary: A few loud voices make it seem like everyone agrees.
 narrative-errors:
   simple_title: Story Traps
-  technical_title: Narrative and Meaning Errors
+  technical_title: Narrative & Meaning Errors
   card_summary: Mistakes caused by our need for neat stories, clear causes, and tidy endings.
   intro: Story traps happen when the mind turns a messy world into a neat tale that feels good but explains too much.
   why_it_matters: A clean story can hide luck, complexity, and what nobody knew at the time.

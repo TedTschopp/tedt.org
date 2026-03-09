@@ -222,7 +222,7 @@ Sections in this order:
 ## B) Start Here page template
 
 Sections:
-1. What Brain Bugs are
+1. What Brain Bugs Are
 2. The easiest differences to learn first
 3. Why everyone gets them sometimes
 4. Beginner learning path

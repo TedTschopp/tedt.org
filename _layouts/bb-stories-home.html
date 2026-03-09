@@ -10,7 +10,7 @@ layout: bb-default
     <p class="fs-4 mb-4">{{ page.lead }}</p>
 
     <section class="mb-4">
-      <h2 class="bb-section-title h2 mb-3">Browse by story source</h2>
+      <h2 class="bb-section-title h2 mb-3">Browse by Story Source</h2>
       <div class="bb-story-grid">
         {% for source in page.story_sources %}
           <div class="bb-card h-100">
@@ -22,7 +22,7 @@ layout: bb-default
     </section>
 
     <section class="mb-4">
-      <h2 class="bb-section-title h2 mb-3">Browse by error</h2>
+      <h2 class="bb-section-title h2 mb-3">Browse by Error</h2>
       <div class="bb-example-grid">
         {% for error in featured_story_errors limit: 6 %}
           {% include brain-bugs/bb-error-card.html error=error %}
@@ -31,7 +31,7 @@ layout: bb-default
     </section>
 
     <section>
-      <h2 class="bb-section-title h2 mb-3">Featured story examples</h2>
+      <h2 class="bb-section-title h2 mb-3">Featured Story Examples</h2>
       <div class="bb-story-grid">
         {% for error in featured_story_errors limit: 4 %}
           {% assign fiction = error.fiction_examples | first %}

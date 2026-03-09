@@ -13,7 +13,7 @@ layout: bb-default
     </header>
 
     <section class="mb-4">
-      <h2 class="bb-section-title h2 mb-3">In plain English</h2>
+      <h2 class="bb-section-title h2 mb-3">In Plain English</h2>
       <p class="mb-0">{{ page.plain_english }}</p>
     </section>
 
@@ -37,13 +37,13 @@ layout: bb-default
     <div class="row g-4 mb-4">
       <div class="col-12 col-lg-6">
         <div class="bb-card h-100">
-          <h2 class="bb-card-title h3 mb-3">Why people fall for it</h2>
+          <h2 class="bb-card-title h3 mb-3">Why People Fall for It</h2>
           <p class="mb-0">{{ page.why_it_happens }}</p>
         </div>
       </div>
       <div class="col-12 col-lg-6">
         <div class="bb-card h-100">
-          <h2 class="bb-card-title h3 mb-3">How to spot it</h2>
+          <h2 class="bb-card-title h3 mb-3">How to Spot It</h2>
           {% include brain-bugs/bb-warning-signs.html items=page.warning_signs %}
         </div>
       </div>
@@ -54,7 +54,7 @@ layout: bb-default
     </section>
 
     <section class="mb-4">
-      <h2 class="bb-section-title h2 mb-3">Common confusion</h2>
+      <h2 class="bb-section-title h2 mb-3">Common Confusion</h2>
       <div class="bb-card">
         <p class="mb-3">People mix this up with:</p>
         <div class="d-flex flex-wrap gap-2">
@@ -76,13 +76,13 @@ layout: bb-default
 
     {% if category.related_comparisons and category.related_comparisons.size > 0 %}
       <section class="mb-4">
-        <h2 class="bb-section-title h2 mb-3">Compare nearby ideas</h2>
+        <h2 class="bb-section-title h2 mb-3">Compare Nearby Ideas</h2>
         <div class="bb-comparison-grid">
           {% for compare_slug in category.related_comparisons %}
             {% assign comparison = site.bb_compare | where: 'slug', compare_slug | first %}
             {% if comparison %}
               <article class="bb-card h-100">
-                <p class="bb-subtitle mb-2">Quick comparison</p>
+                <p class="bb-subtitle mb-2">Quick Comparison</p>
                 <h3 class="bb-card-title h4 mb-2"><a href="{{ comparison.url | relative_url }}">{{ comparison.title }}</a></h3>
                 <p class="mb-0">{{ comparison.main_difference }}</p>
               </article>
@@ -93,7 +93,7 @@ layout: bb-default
     {% endif %}
 
     <section class="mb-4">
-      <h2 class="bb-section-title h2 mb-3">Mini practice</h2>
+      <h2 class="bb-section-title h2 mb-3">Mini Practice</h2>
       <div class="bb-practice-card p-4">
         <p class="mb-3"><strong>Question:</strong> {{ page.mini_practice.question }}</p>
         <div class="bb-mini-practice-answer">
@@ -105,7 +105,7 @@ layout: bb-default
 
     <section class="mb-4">
       <div class="bb-feature-box">
-        <h2 class="bb-card-title h3 mb-2">Remember this</h2>
+        <h2 class="bb-card-title h3 mb-2">Remember This</h2>
         <p class="mb-0">{{ page.remember_this }}</p>
       </div>
     </section>

@@ -44,6 +44,10 @@
   border-bottom: 1px solid var(--bb-border);
 }
 
+.bb-site-header .container {
+  gap: 1rem;
+}
+
 .bb-site-header .navbar-brand {
   color: var(--bb-ink);
   -webkit-text-fill-color: var(--bb-ink);
@@ -85,6 +89,38 @@
   opacity: 1;
 }
 
+.bb-site-header .navbar-toggler {
+  border: 1px solid rgba(16, 34, 38, 0.16);
+  border-radius: 999px;
+  padding: 0.5rem 0.85rem;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.bb-site-header .navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 122, 89, 0.2);
+}
+
+.bb-site-nav-panel {
+  align-items: center;
+}
+
+.bb-site-header .navbar-nav {
+  gap: 1.25rem;
+}
+
+.bb-site-header .nav-item,
+.bb-site-header .bb-nav-link {
+  white-space: nowrap;
+}
+
+.bb-site-search {
+  align-items: center;
+}
+
+.bb-site-search .bb-search-input {
+  min-width: 15rem;
+}
+
 .bb-nav-link {
   color: var(--bb-ink);
   font-weight: 600;
@@ -114,8 +150,17 @@
   min-width: 16rem;
   border-radius: 999px;
   border: 1px solid rgba(16, 34, 38, 0.18);
-  padding: 0.75rem 1rem;
-  background: #fff;
+  padding: 0.75rem 2.9rem 0.75rem 1rem;
+  background-color: #fff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='none' stroke='%23162226' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.75' d='m3 6 5 5 5-5'/%3E%3C/svg%3E");
+  background-position: right 1rem center;
+  background-repeat: no-repeat;
+  background-size: 0.95rem;
+  color: var(--bb-ink);
+  -webkit-text-fill-color: var(--bb-ink);
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
 }
 
 .bb-search-input:focus,
@@ -436,5 +481,50 @@ button.bb-card {
 
   .bb-hero {
     padding-top: 2rem;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .bb-site-nav-panel {
+    margin-top: 0.75rem;
+    padding: 1rem;
+    border: 1px solid rgba(16, 34, 38, 0.12);
+    border-radius: 1.25rem;
+    background: rgba(255, 250, 242, 0.98);
+    box-shadow: var(--bb-shadow);
+  }
+
+  .bb-site-header .navbar-nav {
+    gap: 0.2rem;
+    align-items: stretch;
+  }
+
+  .bb-site-header .nav-item {
+    width: 100%;
+  }
+
+  .bb-site-header .bb-nav-link {
+    display: block;
+    padding: 0.65rem 0;
+  }
+
+  .bb-site-search {
+    width: 100%;
+    margin-top: 0.75rem;
+  }
+
+  .bb-site-search .bb-search-input {
+    min-width: 0;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .bb-site-nav-panel {
+    gap: 1.25rem;
+  }
+
+  .bb-site-search {
+    flex: 0 1 21rem;
   }
 }

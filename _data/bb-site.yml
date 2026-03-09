@@ -1,18 +1,18 @@
 brand: Brain Bugs
-tagline: Spot the bugs in how we think
-hero_title: Spot the bugs in bad reasoning before they steer you wrong.
+tagline: Spot the Bugs in How We Think
+hero_title: Spot the Bugs in Bad Reasoning Before They Steer You Wrong.
 hero_summary: Brain Bugs teaches thinking traps in plain English, with simple examples from class, work, stories, and daily life.
 hero_pills:
-- Logical fallacies
-- Brain shortcuts
-- Persuasion tricks
-- Number mistakes
-- Decision traps
+- Logical Fallacies
+- Brain Shortcuts
+- Persuasion Tricks
+- Number Mistakes
+- Decision Traps
 hero_panels:
-- label: Learn fast
+- label: Learn Fast
   title: See the pattern
   summary: Start with a short definition, then jump into a scene that sounds like real life.
-- label: Stay practical
+- label: Stay Practical
   title: Know what to say next
   summary: Each lesson ends with warning signs, better responses, and a mini practice check.
 nav:
@@ -46,16 +46,16 @@ topic_order:
 - narrative-errors
 - metacognitive-illusions
 home_paths:
-- title: Learn the basics
+- title: Learn the Basics
   summary: Start with the biggest differences between a fallacy, a bias, and a shortcut.
   url: /tools/Brain-Bugs/start-here/
-- title: Browse topics
+- title: Browse Topics
   summary: Jump straight to argument mistakes, decision traps, or number mistakes.
   url: /tools/Brain-Bugs/topics/
-- title: Practice spotting bugs
+- title: Practice Spotting Bugs
   summary: Use quick scenarios with instant feedback.
   url: /tools/Brain-Bugs/practice/
-- title: See stories and real-life examples
+- title: See Stories and Real-Life Examples
   summary: Watch Brain Bugs show up in myths, class debates, meetings, and daily choices.
   url: /tools/Brain-Bugs/stories/
 quick_comparisons:
@@ -78,17 +78,17 @@ quick_comparisons:
   summary: One skips the background odds. The other lets a vivid example feel more common than it is.
   url: /tools/Brain-Bugs/compare/base-rate-neglect-vs-availability-heuristic/
 learning_paths:
-- title: Spot bad arguments
+- title: Spot Bad Arguments
   summary: Learn to catch personal attacks, weak rewrites, false either-or claims, and crowd pressure.
   topic_url: /tools/Brain-Bugs/topics/logical-fallacies/
   compare_url: /tools/Brain-Bugs/compare/fallacies-vs-biases/
   practice_url: /tools/Brain-Bugs/practice/quizzes/five-quick-calls/
-- title: Understand brain shortcuts
+- title: Understand Brain Shortcuts
   summary: Notice how the mind grabs the most comfortable, familiar, or recent answer.
   topic_url: /tools/Brain-Bugs/topics/heuristics/
   compare_url: /tools/Brain-Bugs/compare/biases-vs-heuristics/
   practice_url: /tools/Brain-Bugs/practice/quizzes/messy-stories-and-numbers/
-- title: Make better decisions
+- title: Make Better Decisions
   summary: Slow down when cost, stress, and overload start steering the choice.
   topic_url: /tools/Brain-Bugs/topics/decision-traps/
   compare_url: /tools/Brain-Bugs/compare/sunk-cost-vs-escalation-of-commitment/

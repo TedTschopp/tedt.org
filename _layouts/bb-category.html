@@ -22,15 +22,15 @@ layout: bb-default
     <div class="row g-4 mb-4">
       <div class="col-12 col-lg-7">
         <div class="bb-card h-100">
-          <h2 class="bb-card-title h3 mb-3">Why this category matters</h2>
+          <h2 class="bb-card-title h3 mb-3">Why this Category Matters</h2>
           <p class="mb-0">{{ category.why_it_matters }}</p>
         </div>
       </div>
       <div class="col-12 col-lg-5">
         <div class="bb-card h-100">
-          <h2 class="bb-card-title h3 mb-3">Inside this topic</h2>
+          <h2 class="bb-card-title h3 mb-3">Inside this Topic</h2>
           <p class="mb-3">{{ category_errors.size }} lesson pages{% if category.related_comparisons %} and {{ category.related_comparisons.size }} comparison links{% endif %} currently live in this section.</p>
-          <h3 class="bb-card-title h5 mb-2">How it differs</h3>
+          <h3 class="bb-card-title h5 mb-2">How it Differs</h3>
           <div class="bb-stack-list mb-0">
             {% for item in category.nearby_categories %}
               <p class="mb-2">{{ item }}</p>
@@ -70,7 +70,7 @@ layout: bb-default
     <div class="row g-4 mb-4">
       <div class="col-12 col-lg-6">
         <div class="bb-card h-100">
-          <h2 class="bb-card-title h3 mb-3">Common warning signs</h2>
+          <h2 class="bb-card-title h3 mb-3">Common Warning Signs</h2>
           <div class="bb-stack-list bb-warning-list mb-0">
             {% for signal in category.common_signals %}
               <p class="mb-2">{{ signal }}</p>
@@ -80,7 +80,7 @@ layout: bb-default
       </div>
       <div class="col-12 col-lg-6">
         <div class="bb-card h-100">
-          <h2 class="bb-card-title h3 mb-3">Beginner-friendly starting points</h2>
+          <h2 class="bb-card-title h3 mb-3">Beginner-Friendly Starting Points</h2>
           <div class="bb-stack-list mb-0">
             {% for slug in category.beginner_errors %}
               {% assign starter = nil %}
@@ -100,7 +100,7 @@ layout: bb-default
     </div>
 
     <section class="mb-4">
-      <h2 class="bb-section-title h2 mb-3">Quick examples</h2>
+      <h2 class="bb-section-title h2 mb-3">Quick Examples</h2>
       <div class="bb-comparison-grid">
         {% for example in category.quick_examples %}
           <div class="bb-card h-100">
@@ -115,7 +115,7 @@ layout: bb-default
       <div class="row g-4 align-items-start">
         <div class="col-12 col-lg-7">
           <div class="bb-card h-100">
-            <h2 class="bb-card-title h3 mb-3">Practice this topic</h2>
+            <h2 class="bb-card-title h3 mb-3">Practice this Topic</h2>
             <p class="mb-3">Use a short quiz or drill to check whether you can tell this category apart from nearby thinking traps.</p>
             <div class="d-flex flex-wrap gap-2">
               {% if category_quizzes.size > 0 %}
@@ -131,7 +131,7 @@ layout: bb-default
         </div>
         <div class="col-12 col-lg-5">
           <div class="bb-card h-100">
-            <h2 class="bb-card-title h3 mb-3">Related comparison pages</h2>
+            <h2 class="bb-card-title h3 mb-3">Related Comparison Pages</h2>
             <div class="bb-stack-list mb-0">
               {% for slug in category.related_comparisons %}
                 {% assign comparison = nil %}
