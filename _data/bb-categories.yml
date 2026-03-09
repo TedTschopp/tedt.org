@@ -129,6 +129,7 @@ rhetorical-manipulation:
   related_comparisons:
   - fallacies-vs-biases
   - whataboutism-vs-tu-quoque
+  - appeal-to-emotion-vs-loaded-language
   quick_examples:
   - title: Loaded pitch
     summary: The wording pushes you before the facts arrive.
@@ -198,7 +199,8 @@ social-perception-errors:
   beginner_errors:
   - social-proof-bias
   - halo-effect
-  related_comparisons: []
+  related_comparisons:
+  - halo-effect-vs-social-proof-bias
   quick_examples:
   - title: Loud room effect
     summary: A few loud voices make it seem like everyone agrees.
@@ -220,7 +222,8 @@ narrative-errors:
   beginner_errors:
   - hindsight-bias
   - narrative-fallacy
-  related_comparisons: []
+  related_comparisons:
+  - hindsight-bias-vs-narrative-fallacy
   quick_examples:
   - title: Perfect hindsight story
     summary: After the game ends, every choice suddenly looks easy to predict.
