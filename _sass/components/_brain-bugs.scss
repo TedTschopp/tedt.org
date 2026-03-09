@@ -21,6 +21,7 @@
     radial-gradient(circle at top right, rgba(119, 197, 255, 0.18), transparent 24%),
     linear-gradient(180deg, #fffdf9 0%, #fff7ef 100%);
   color: var(--bb-ink);
+  color-scheme: light;
 }
 
 [data-bs-theme="dark"] .bb-body {
@@ -46,6 +47,7 @@
     radial-gradient(circle at top right, rgba(119, 197, 255, 0.12), transparent 24%),
     linear-gradient(180deg, #121b20 0%, #0c1317 100%);
   color: var(--bb-ink);
+  color-scheme: dark;
 }
 
 .bb-body main {
@@ -421,6 +423,10 @@ button.bb-card {
 .bb-badge-business { background: var(--bb-sun); }
 .bb-badge-life { background: var(--bb-leaf); }
 .bb-badge-fiction { background: #efe3ff; }
+
+[data-bs-theme="dark"] .bb-badge-fiction {
+  background: rgba(187, 143, 255, 0.2);
+}
 
 .bb-definition-box {
   padding: 1rem 1.2rem;
