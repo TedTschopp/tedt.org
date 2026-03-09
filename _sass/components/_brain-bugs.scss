@@ -5,6 +5,7 @@
   --bb-border: rgba(16, 34, 38, 0.12);
   --bb-accent: #ff7a59;
   --bb-accent-deep: #d24d29;
+  --bb-accent-contrast: #162226;
   --bb-accent-soft: #ffe2d6;
   --bb-sky: #d9f0ff;
   --bb-leaf: #d8f3d7;
@@ -31,6 +32,7 @@
   --bb-border: rgba(231, 238, 241, 0.14);
   --bb-accent: #ff8a67;
   --bb-accent-deep: #ffc0ab;
+  --bb-accent-contrast: #162226;
   --bb-accent-soft: rgba(255, 138, 103, 0.18);
   --bb-sky: rgba(110, 188, 255, 0.18);
   --bb-leaf: rgba(110, 221, 162, 0.17);
@@ -175,6 +177,8 @@
 
 .bb-site-header .nav-item,
 .bb-site-header .bb-nav-link {
+  color: var(--bb-ink) !important;
+  -webkit-text-fill-color: var(--bb-ink) !important;
   white-space: nowrap;
 }
 
@@ -186,6 +190,13 @@
 
 .bb-site-search {
   align-items: center;
+  color: var(--bb-ink) !important;
+  -webkit-text-fill-color: var(--bb-ink) !important;
+}
+
+.bb-site-search label {
+  color: var(--bb-ink) !important;
+  -webkit-text-fill-color: var(--bb-ink) !important;
 }
 
 .bb-site-search .bb-search-input {
@@ -266,7 +277,8 @@
 .bb-search-submit,
 .bb-cta-button-primary {
   background: var(--bb-accent);
-  color: #fff;
+  color: var(--bb-accent-contrast);
+  -webkit-text-fill-color: var(--bb-accent-contrast);
 }
 
 .bb-cta-button-secondary {
@@ -331,6 +343,18 @@
   align-content: center;
 }
 
+[data-bs-theme="dark"] .bb-hero-art {
+  color: var(--bb-ink);
+}
+
+.bb-hero-art .bb-card,
+.bb-hero-art .bb-card-title,
+.bb-hero-art .bb-subtitle,
+.bb-hero-art p {
+  color: var(--bb-ink);
+  -webkit-text-fill-color: var(--bb-ink);
+}
+
 .bb-bug-pill {
   display: inline-flex;
   align-items: center;
@@ -359,6 +383,7 @@
 .bb-link-tile,
 .bb-glossary-row {
   padding: 1.35rem;
+  color: var(--bb-ink);
 }
 
 .bb-card button,
@@ -586,9 +611,9 @@ button.bb-card {
   .bb-site-nav-panel {
     margin-top: 0.75rem;
     padding: 1rem;
-    border: 1px solid rgba(16, 34, 38, 0.12);
+    border: 1px solid var(--bb-border);
     border-radius: 1.25rem;
-    background: rgba(255, 250, 242, 0.98);
+    background: var(--bb-panel);
     box-shadow: var(--bb-shadow);
   }
 
