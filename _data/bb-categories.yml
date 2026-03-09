@@ -71,8 +71,10 @@ heuristics:
   - Familiar things seem safer or better.
   featured_errors:
   - availability-heuristic
+  - familiarity-heuristic
   beginner_errors:
   - availability-heuristic
+  - familiarity-heuristic
   related_comparisons:
   - biases-vs-heuristics
   quick_examples:
@@ -94,8 +96,10 @@ cognitive-distortions:
   - One mistake turned into a full identity.
   featured_errors:
   - black-and-white-thinking
+  - emotional-reasoning
   beginner_errors:
   - black-and-white-thinking
+  - emotional-reasoning
   related_comparisons:
   - fallacies-vs-biases
   quick_examples:
@@ -189,8 +193,11 @@ social-perception-errors:
   - The crowd is treated like a reliable guide.
   featured_errors:
   - social-proof-bias
+  - halo-effect
+  - fundamental-attribution-error
   beginner_errors:
   - social-proof-bias
+  - halo-effect
   related_comparisons: []
   quick_examples:
   - title: Loud room effect
@@ -209,8 +216,10 @@ narrative-errors:
   - A neat story replaces missing evidence.
   featured_errors:
   - hindsight-bias
+  - narrative-fallacy
   beginner_errors:
   - hindsight-bias
+  - narrative-fallacy
   related_comparisons: []
   quick_examples:
   - title: Perfect hindsight story
