@@ -23,6 +23,9 @@ logical-fallacies:
   - bandwagon-fallacy
   related_comparisons:
   - fallacies-vs-biases
+  practice_quizzes:
+  - five-quick-calls
+  - rhetorical-pressure-check
   quick_examples:
   - title: Debate club dodge
     summary: A student ignores the evidence and says the other speaker is too annoying to trust.
@@ -53,6 +56,8 @@ cognitive-biases:
   related_comparisons:
   - fallacies-vs-biases
   - biases-vs-heuristics
+  practice_quizzes:
+  - confidence-reality-check
   quick_examples:
   - title: Favorite theory filter
     summary: Someone collects every clue for their idea and explains away the clues against it.
@@ -78,6 +83,8 @@ heuristics:
   related_comparisons:
   - biases-vs-heuristics
   - base-rate-neglect-vs-availability-heuristic
+  practice_quizzes:
+  - messy-stories-and-numbers
   quick_examples:
   - title: One dramatic story
     summary: A single vivid example makes a risk feel huge.
@@ -103,6 +110,9 @@ cognitive-distortions:
   - emotional-reasoning
   related_comparisons:
   - fallacies-vs-biases
+  practice_quizzes:
+  - five-quick-calls
+  - confidence-reality-check
   quick_examples:
   - title: One bad grade
     summary: A student gets one low score and decides they are just dumb.
@@ -131,6 +141,8 @@ rhetorical-manipulation:
   - fallacies-vs-biases
   - whataboutism-vs-tu-quoque
   - appeal-to-emotion-vs-loaded-language
+  practice_quizzes:
+  - rhetorical-pressure-check
   quick_examples:
   - title: Loaded pitch
     summary: The wording pushes you before the facts arrive.
@@ -154,6 +166,8 @@ statistical-errors:
   - base-rate-neglect
   related_comparisons:
   - base-rate-neglect-vs-availability-heuristic
+  practice_quizzes:
+  - messy-stories-and-numbers
   quick_examples:
   - title: Three coin flips
     summary: A short streak gets treated like a reliable pattern.
@@ -180,6 +194,9 @@ decision-traps:
   related_comparisons:
   - sunk-cost-vs-escalation-of-commitment
   - groupthink-vs-social-proof-bias
+  practice_quizzes:
+  - five-quick-calls
+  - social-reading-check
   quick_examples:
   - title: Bad subscription trap
     summary: Someone keeps paying for a service they do not use because they already paid for months.
@@ -205,6 +222,8 @@ social-perception-errors:
   related_comparisons:
   - halo-effect-vs-social-proof-bias
   - groupthink-vs-social-proof-bias
+  practice_quizzes:
+  - social-reading-check
   quick_examples:
   - title: Loud room effect
     summary: A few loud voices make it seem like everyone agrees.
@@ -228,6 +247,8 @@ narrative-errors:
   - narrative-fallacy
   related_comparisons:
   - hindsight-bias-vs-narrative-fallacy
+  practice_quizzes:
+  - messy-stories-and-numbers
   quick_examples:
   - title: Perfect hindsight story
     summary: After the game ends, every choice suddenly looks easy to predict.
@@ -251,6 +272,8 @@ metacognitive-illusions:
   - illusion-of-explanatory-depth
   related_comparisons:
   - overconfidence-vs-illusion-of-explanatory-depth
+  practice_quizzes:
+  - confidence-reality-check
   quick_examples:
   - title: Easy explanation illusion
     summary: Something sounds simple until you try to explain each step out loud.

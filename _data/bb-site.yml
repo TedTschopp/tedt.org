@@ -68,10 +68,28 @@ quick_comparisons:
 - title: Sunk Cost vs Escalation of Commitment
   summary: Sunk cost is sticking with a bad choice because of past cost. Escalation adds more and more to save face.
   url: /tools/Brain-Bugs/compare/sunk-cost-vs-escalation-of-commitment/
+- title: Appeal to Emotion vs Loaded Language
+  summary: One uses feeling as proof. The other uses hot wording to frame the issue before proof is tested.
+  url: /tools/Brain-Bugs/compare/appeal-to-emotion-vs-loaded-language/
+- title: Hindsight Bias vs Narrative Fallacy
+  summary: One makes the ending feel obvious after the fact. The other turns messy reality into a neat story.
+  url: /tools/Brain-Bugs/compare/hindsight-bias-vs-narrative-fallacy/
+- title: Base Rate Neglect vs Availability Heuristic
+  summary: One skips the background odds. The other lets a vivid example feel more common than it is.
+  url: /tools/Brain-Bugs/compare/base-rate-neglect-vs-availability-heuristic/
 learning_paths:
 - title: Spot bad arguments
   summary: Learn to catch personal attacks, weak rewrites, false either-or claims, and crowd pressure.
+  topic_url: /tools/Brain-Bugs/topics/logical-fallacies/
+  compare_url: /tools/Brain-Bugs/compare/fallacies-vs-biases/
+  practice_url: /tools/Brain-Bugs/practice/quizzes/five-quick-calls/
 - title: Understand brain shortcuts
   summary: Notice how the mind grabs the most comfortable, familiar, or recent answer.
+  topic_url: /tools/Brain-Bugs/topics/heuristics/
+  compare_url: /tools/Brain-Bugs/compare/biases-vs-heuristics/
+  practice_url: /tools/Brain-Bugs/practice/quizzes/messy-stories-and-numbers/
 - title: Make better decisions
   summary: Slow down when cost, stress, and overload start steering the choice.
+  topic_url: /tools/Brain-Bugs/topics/decision-traps/
+  compare_url: /tools/Brain-Bugs/compare/sunk-cost-vs-escalation-of-commitment/
+  practice_url: /tools/Brain-Bugs/practice/scenario-lab/

@@ -2,6 +2,16 @@
 layout: bb-default
 ---
 {% assign category = site.data['bb-categories'][page.slug] %}
+{% assign category_errors = site.bb_errors | where: 'primary_category', page.slug | sort: 'simple_title' %}
+{% assign category_quizzes = '' | split: '' %}
+{% if category.practice_quizzes %}
+  {% for quiz_slug in category.practice_quizzes %}
+    {% assign quiz_match = site.bb_practice | where: 'slug', quiz_slug | first %}
+    {% if quiz_match %}
+      {% assign category_quizzes = category_quizzes | push: quiz_match %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
 <section class="container py-4 py-lg-5">
   {% include brain-bugs/bb-breadcrumbs.html %}
   <div class="bb-surface p-4 p-lg-5">
@@ -18,12 +28,14 @@ layout: bb-default
       </div>
       <div class="col-12 col-lg-5">
         <div class="bb-card h-100">
-          <h2 class="bb-card-title h3 mb-3">How it differs</h2>
-          <ul class="mb-0">
+          <h2 class="bb-card-title h3 mb-3">Inside this topic</h2>
+          <p class="mb-3">{{ category_errors.size }} lesson pages{% if category.related_comparisons %} and {{ category.related_comparisons.size }} comparison links{% endif %} currently live in this section.</p>
+          <h3 class="bb-card-title h5 mb-2">How it differs</h3>
+          <div class="bb-stack-list mb-0">
             {% for item in category.nearby_categories %}
-              <li>{{ item }}</li>
+              <p class="mb-2">{{ item }}</p>
             {% endfor %}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -46,21 +58,30 @@ layout: bb-default
       </div>
     </section>
 
+    <section class="mb-4">
+      <h2 class="bb-section-title h2 mb-3">Browse this topic</h2>
+      <div class="bb-example-grid">
+        {% for item in category_errors %}
+          {% include brain-bugs/bb-error-card.html error=item %}
+        {% endfor %}
+      </div>
+    </section>
+
     <div class="row g-4 mb-4">
       <div class="col-12 col-lg-6">
         <div class="bb-card h-100">
           <h2 class="bb-card-title h3 mb-3">Common warning signs</h2>
-          <ul class="bb-warning-list mb-0">
+          <div class="bb-stack-list bb-warning-list mb-0">
             {% for signal in category.common_signals %}
-              <li>{{ signal }}</li>
+              <p class="mb-2">{{ signal }}</p>
             {% endfor %}
-          </ul>
+          </div>
         </div>
       </div>
       <div class="col-12 col-lg-6">
         <div class="bb-card h-100">
           <h2 class="bb-card-title h3 mb-3">Beginner-friendly starting points</h2>
-          <ul class="mb-0">
+          <div class="bb-stack-list mb-0">
             {% for slug in category.beginner_errors %}
               {% assign starter = nil %}
               {% for candidate in site.bb_errors %}
@@ -70,10 +91,10 @@ layout: bb-default
                 {% endif %}
               {% endfor %}
               {% if starter %}
-                <li><a href="{{ starter.url | relative_url }}">{{ starter.simple_title }}</a> — {{ starter.technical_title }}</li>
+                <p class="mb-2"><a href="{{ starter.url | relative_url }}">{{ starter.simple_title }}</a> — {{ starter.technical_title }}</p>
               {% endif %}
             {% endfor %}
-          </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -95,14 +116,23 @@ layout: bb-default
         <div class="col-12 col-lg-7">
           <div class="bb-card h-100">
             <h2 class="bb-card-title h3 mb-3">Practice this topic</h2>
-            <p class="mb-3">Use a short quiz to check whether you can tell this category apart from nearby thinking traps.</p>
-            <a class="bb-chip" href="{{ '/tools/Brain-Bugs/practice/quizzes/five-quick-calls/' | relative_url }}">Try the sample quiz</a>
+            <p class="mb-3">Use a short quiz or drill to check whether you can tell this category apart from nearby thinking traps.</p>
+            <div class="d-flex flex-wrap gap-2">
+              {% if category_quizzes.size > 0 %}
+                {% for quiz in category_quizzes %}
+                  <a class="bb-chip" href="{{ quiz.url | relative_url }}">{{ quiz.title }}</a>
+                {% endfor %}
+              {% else %}
+                <a class="bb-chip" href="{{ '/tools/Brain-Bugs/practice/quizzes/' | relative_url }}">Browse quiz sets</a>
+              {% endif %}
+              <a class="bb-chip" href="{{ '/tools/Brain-Bugs/practice/flashcards/' | relative_url }}">Use flashcards</a>
+            </div>
           </div>
         </div>
         <div class="col-12 col-lg-5">
           <div class="bb-card h-100">
             <h2 class="bb-card-title h3 mb-3">Related comparison pages</h2>
-            <ul class="mb-0">
+            <div class="bb-stack-list mb-0">
               {% for slug in category.related_comparisons %}
                 {% assign comparison = nil %}
                 {% for candidate in site.bb_compare %}
@@ -112,10 +142,10 @@ layout: bb-default
                   {% endif %}
                 {% endfor %}
                 {% if comparison %}
-                  <li><a href="{{ comparison.url | relative_url }}">{{ comparison.title }}</a></li>
+                  <p class="mb-2"><a href="{{ comparison.url | relative_url }}">{{ comparison.title }}</a></p>
                 {% endif %}
               {% endfor %}
-            </ul>
+            </div>
           </div>
         </div>
       </div>

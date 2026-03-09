@@ -2,6 +2,13 @@
 <div class="bb-topic-grid">
   {% for slug in bb_site.topic_order %}
     {% assign category = site.data['bb-categories'][slug] %}
-    {% include brain-bugs/bb-category-card.html slug=slug category=category %}
+    {% assign error_count = site.bb_errors | where: 'primary_category', slug | size %}
+    {% assign comparison_count = 0 %}
+    {% for comparison in site.bb_compare %}
+      {% if comparison.left_slug == slug or comparison.right_slug == slug %}
+        {% assign comparison_count = comparison_count | plus: 1 %}
+      {% endif %}
+    {% endfor %}
+    {% include brain-bugs/bb-category-card.html slug=slug category=category error_count=error_count comparison_count=comparison_count %}
   {% endfor %}
 </div>

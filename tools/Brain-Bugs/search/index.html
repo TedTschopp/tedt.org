@@ -13,6 +13,35 @@ permalink: /tools/Brain-Bugs/search/
 <div class="bb-search-results" id="bb-search-results"></div>
 
 <script>
+  var bbSearchStopWords = {
+    a: true,
+    an: true,
+    and: true,
+    are: true,
+    by: true,
+    do: true,
+    for: true,
+    how: true,
+    i: true,
+    if: true,
+    in: true,
+    is: true,
+    it: true,
+    of: true,
+    on: true,
+    or: true,
+    so: true,
+    the: true,
+    to: true,
+    too: true,
+    we: true,
+    what: true,
+    when: true,
+    why: true,
+    you: true,
+    your: true
+  };
+
   var bbSearchIndex = [
     {% for error in site.bb_errors %}
       {
@@ -55,26 +84,57 @@ permalink: /tools/Brain-Bugs/search/
   var initialQuery = new URLSearchParams(window.location.search).get('q') || '';
   searchInput.value = initialQuery;
 
-  function scoreItem(item, normalized) {
+  function normalizeWords(normalized) {
+    return normalized.split(/\s+/).filter(Boolean);
+  }
+
+  function significantWords(words) {
+    return words.filter(function (word) {
+      return word.length > 2 && !bbSearchStopWords[word];
+    });
+  }
+
+  function countWordMatches(text, words) {
+    var seen = {};
+    var matches = 0;
+
+    words.forEach(function (word) {
+      if (!seen[word] && text.indexOf(word) !== -1) {
+        seen[word] = true;
+        matches += 1;
+      }
+    });
+
+    return matches;
+  }
+
+  function evaluateItem(item, normalized) {
     var title = item.title.toLowerCase();
     var subtitle = (item.subtitle || '').toLowerCase();
     var text = item.text.toLowerCase();
-    var words = normalized.split(/\s+/).filter(Boolean);
+    var words = normalizeWords(normalized);
+    var importantWords = significantWords(words);
+    var exactTitleMatch = title === normalized || subtitle === normalized;
+    var titleStartsWith = title.indexOf(normalized) === 0;
+    var phraseInTitle = title.indexOf(normalized) !== -1;
+    var phraseInSubtitle = subtitle.indexOf(normalized) !== -1;
+    var phraseInText = text.indexOf(normalized) !== -1;
+    var matchedImportantWords = countWordMatches(text, importantWords);
     var score = 0;
 
-    if (title === normalized || subtitle === normalized) {
+    if (exactTitleMatch) {
       score += 120;
     }
-    if (title.indexOf(normalized) === 0) {
+    if (titleStartsWith) {
       score += 70;
     }
-    if (title.indexOf(normalized) !== -1) {
+    if (phraseInTitle) {
       score += 45;
     }
-    if (subtitle.indexOf(normalized) !== -1) {
+    if (phraseInSubtitle) {
       score += 25;
     }
-    if (text.indexOf(normalized) !== -1) {
+    if (phraseInText) {
       score += 20;
     }
 
@@ -90,7 +150,65 @@ permalink: /tools/Brain-Bugs/search/
       }
     });
 
-    return score;
+    return {
+      item: item,
+      score: score,
+      phraseMatch: exactTitleMatch || titleStartsWith || phraseInTitle || phraseInSubtitle || phraseInText,
+      importantWordCount: importantWords.length,
+      matchedImportantWords: matchedImportantWords
+    };
+  }
+
+  function shouldIncludeMatch(result) {
+    if (result.score <= 0) {
+      return false;
+    }
+
+    if (result.phraseMatch) {
+      return true;
+    }
+
+    if (result.importantWordCount === 0) {
+      return false;
+    }
+
+    if (result.importantWordCount === 1) {
+      return result.matchedImportantWords === 1;
+    }
+
+    return result.matchedImportantWords >= 2;
+  }
+
+  function buildResultCard(item) {
+    var article = document.createElement('article');
+    var subtitle = document.createElement('p');
+    var title = document.createElement('h2');
+    var link = document.createElement('a');
+    var summary = document.createElement('p');
+    var type = document.createElement('p');
+
+    article.className = 'bb-card';
+
+    subtitle.className = 'bb-subtitle mb-2';
+    subtitle.textContent = item.subtitle;
+
+    title.className = 'bb-card-title h4 mb-2';
+    link.href = item.url;
+    link.textContent = item.title;
+    title.appendChild(link);
+
+    summary.className = 'mb-2';
+    summary.textContent = item.summary;
+
+    type.className = 'mb-0 bb-muted';
+    type.textContent = item.type === 'error' ? 'Lesson' : item.type === 'compare' ? 'Comparison' : 'Topic';
+
+    article.appendChild(subtitle);
+    article.appendChild(title);
+    article.appendChild(summary);
+    article.appendChild(type);
+
+    return article;
   }
 
   function renderSearchResults(query) {
@@ -103,15 +221,15 @@ permalink: /tools/Brain-Bugs/search/
     }
 
     var matches = bbSearchIndex.map(function (item) {
-      return {
-        item: item,
-        score: scoreItem(item, normalized)
-      };
+      return evaluateItem(item, normalized);
     }).filter(function (entry) {
-      return entry.score > 0;
+      return shouldIncludeMatch(entry);
     }).sort(function (left, right) {
       if (right.score !== left.score) {
         return right.score - left.score;
+      }
+      if (right.matchedImportantWords !== left.matchedImportantWords) {
+        return right.matchedImportantWords - left.matchedImportantWords;
       }
       return left.item.title.localeCompare(right.item.title);
     }).slice(0, 24).map(function (entry) {
@@ -126,13 +244,7 @@ permalink: /tools/Brain-Bugs/search/
     countNode.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' for “' + query + '”.';
 
     matches.forEach(function (item) {
-      var article = document.createElement('article');
-      article.className = 'bb-card';
-      article.innerHTML = '<p class="bb-subtitle mb-2">' + item.subtitle + '</p>' +
-        '<h2 class="bb-card-title h4 mb-2"><a href="' + item.url + '">' + item.title + '</a></h2>' +
-        '<p class="mb-2">' + item.summary + '</p>' +
-        '<p class="mb-0 bb-muted">' + (item.type === 'error' ? 'Lesson' : item.type === 'compare' ? 'Comparison' : 'Topic') + '</p>';
-      resultsNode.appendChild(article);
+      resultsNode.appendChild(buildResultCard(item));
     });
   }
 

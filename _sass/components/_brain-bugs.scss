@@ -289,7 +289,8 @@ button.bb-card {
 .bb-topic-grid,
 .bb-path-grid,
 .bb-example-grid,
-.bb-story-grid {
+.bb-story-grid,
+.bb-stats-grid {
   display: grid;
   gap: 1rem;
 }
@@ -301,7 +302,8 @@ button.bb-card {
 }
 
 .bb-path-grid,
-.bb-comparison-grid {
+.bb-comparison-grid,
+.bb-stats-grid {
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
@@ -318,6 +320,10 @@ button.bb-card {
 
 .bb-result-count {
   color: var(--bb-muted);
+}
+
+.bb-stack-list p:last-child {
+  margin-bottom: 0;
 }
 
 .bb-hidden {
@@ -344,28 +350,36 @@ button.bb-card {
 }
 
 .bb-practice-option {
+  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
+  display: block;
   text-align: left;
   padding: 0.9rem 1rem;
   border-radius: 1rem;
   border: 1px solid var(--bb-border);
   background: #fff;
   color: var(--bb-ink);
+  -webkit-text-fill-color: var(--bb-ink);
+  font-family: inherit;
   font-size: 1.15rem;
   font-weight: 500;
   line-height: 1.35;
+  white-space: normal;
 }
 
 .bb-practice-option.is-correct {
   border-color: #2f7d4f;
   background: #e5f6e8;
   color: #163c25;
+  -webkit-text-fill-color: #163c25;
 }
 
 .bb-practice-option.is-wrong {
   border-color: #b4492e;
   background: #ffe9e0;
   color: #6f2415;
+  -webkit-text-fill-color: #6f2415;
 }
 
 .bb-practice-option:hover {

@@ -17,7 +17,9 @@
 {% assign site_profile_social = site_profile.social %}
 {% assign site_profile_name = site_profile.name | default: site.author.name | default: site.title %}
 
-	<title>{{ this_page_title }}</title>
+{% unless include.skip_title %}
+  <title>{{ this_page_title }}</title>
+{% endunless %}
   <!-- TODO: Add Multiple Authors -->
   <meta name="author" content="{{ site_profile_name }}">
   <link rel="author" href="{{site.url}}/humans.txt">

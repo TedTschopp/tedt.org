@@ -10,6 +10,24 @@ layout: bb-default
 
 <section class="bb-section">
   <div class="container">
+    <div class="bb-stats-grid mb-4">
+      <div class="bb-card">
+        <p class="bb-eyebrow mb-2">Library</p>
+        <h2 class="bb-card-title h3 mb-2">{{ site.bb_errors.size }} lesson pages</h2>
+        <p class="mb-0 bb-muted">Short, plain-English explanations with examples, warning signs, and better responses.</p>
+      </div>
+      <div class="bb-card">
+        <p class="bb-eyebrow mb-2">Compare</p>
+        <h2 class="bb-card-title h3 mb-2">{{ site.bb_compare.size }} side-by-side guides</h2>
+        <p class="mb-0 bb-muted">Quick difference pages for the bugs people confuse most often.</p>
+      </div>
+      <div class="bb-card">
+        <p class="bb-eyebrow mb-2">Practice</p>
+        <h2 class="bb-card-title h3 mb-2">{{ site.bb_practice.size }} quiz sets</h2>
+        <p class="mb-0 bb-muted">Recognition drills, flashcards, spot-the-bug prompts, and longer scenario work.</p>
+      </div>
+    </div>
+
     <div class="row g-4 align-items-start">
       <div class="col-12 col-lg-7">
         <div class="bb-surface p-4 p-lg-5 h-100">
@@ -40,6 +58,31 @@ layout: bb-default
   <div class="container">
     <div class="d-flex justify-content-between align-items-end mb-3">
       <div>
+        <p class="bb-eyebrow mb-2">Learning Paths</p>
+        <h2 class="bb-section-title mb-0">Follow a path instead of wandering the library.</h2>
+      </div>
+      <a class="bb-chip" href="{{ '/tools/Brain-Bugs/practice/' | relative_url }}">Open all practice modes</a>
+    </div>
+    <div class="bb-path-grid">
+      {% for path in bb_site.learning_paths %}
+        <div class="bb-card h-100">
+          <h3 class="bb-card-title h4 mb-2">{{ path.title }}</h3>
+          <p class="mb-3">{{ path.summary }}</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="bb-chip" href="{{ path.topic_url | relative_url }}">Start with topic</a>
+            <a class="bb-chip" href="{{ path.compare_url | relative_url }}">See a comparison</a>
+            <a class="bb-chip" href="{{ path.practice_url | relative_url }}">Practice it</a>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="bb-section">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-end mb-3">
+      <div>
         <p class="bb-eyebrow mb-2">Topics</p>
         <h2 class="bb-section-title mb-0">Start with the kind of bug you want to spot.</h2>
       </div>
@@ -60,7 +103,7 @@ layout: bb-default
     </div>
     <div class="bb-example-grid">
       {% assign featured_errors = site.bb_errors | where: 'featured', true | sort: 'simple_title' %}
-      {% for error in featured_errors limit: 6 %}
+      {% for error in featured_errors limit: 8 %}
         {% include brain-bugs/bb-error-card.html error=error %}
       {% endfor %}
     </div>
@@ -72,7 +115,7 @@ layout: bb-default
     <p class="bb-eyebrow mb-2">Quick Comparisons</p>
     <h2 class="bb-section-title mb-3">Learn the difference that matters first.</h2>
     <div class="bb-quick-compare">
-      {% for comparison in site.data['bb-site'].quick_comparisons %}
+      {% for comparison in site.data['bb-site'].quick_comparisons limit: 6 %}
         {% include brain-bugs/bb-comparison-card.html comparison=comparison %}
       {% endfor %}
     </div>
@@ -89,7 +132,7 @@ layout: bb-default
       </div>
       <div class="d-flex flex-wrap gap-2 mt-3 mt-lg-0">
         <a class="bb-cta-button bb-cta-button-primary text-decoration-none" href="{{ '/tools/Brain-Bugs/practice/' | relative_url }}">Try Practice</a>
-        <a class="bb-cta-button bb-cta-button-secondary text-decoration-none" href="{{ '/tools/Brain-Bugs/practice/quizzes/five-quick-calls/' | relative_url }}">Open the sample quiz</a>
+        <a class="bb-cta-button bb-cta-button-secondary text-decoration-none" href="{{ '/tools/Brain-Bugs/practice/quizzes/' | relative_url }}">Browse quiz sets</a>
       </div>
     </div>
   </div>
