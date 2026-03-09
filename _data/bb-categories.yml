@@ -54,10 +54,18 @@ cognitive-biases:
   - confirmation-bias
   - anchoring-bias
   - loss-aversion
+  - dunning-kruger-effect
+  - survivorship-bias
+  - status-quo-bias
+  - self-serving-bias
+  - optimism-bias
   beginner_errors:
   - confirmation-bias
   - anchoring-bias
   - framing-effect
+  - dunning-kruger-effect
+  - survivorship-bias
+  - status-quo-bias
   related_comparisons:
   - fallacies-vs-biases
   - biases-vs-heuristics
@@ -248,9 +256,14 @@ social-perception-errors:
   - social-proof-bias
   - halo-effect
   - fundamental-attribution-error
+  - stereotyping
+  - authority-bias
+  - conformity-bias
   beginner_errors:
   - social-proof-bias
   - halo-effect
+  - stereotyping
+  - authority-bias
   related_comparisons:
   - halo-effect-vs-social-proof-bias
   - groupthink-vs-social-proof-bias
