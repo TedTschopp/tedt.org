@@ -77,6 +77,7 @@ heuristics:
   - familiarity-heuristic
   related_comparisons:
   - biases-vs-heuristics
+  - base-rate-neglect-vs-availability-heuristic
   quick_examples:
   - title: One dramatic story
     summary: A single vivid example makes a risk feel huge.
@@ -151,7 +152,8 @@ statistical-errors:
   beginner_errors:
   - correlation-vs-causation
   - base-rate-neglect
-  related_comparisons: []
+  related_comparisons:
+  - base-rate-neglect-vs-availability-heuristic
   quick_examples:
   - title: Three coin flips
     summary: A short streak gets treated like a reliable pattern.
@@ -177,6 +179,7 @@ decision-traps:
   - planning-fallacy
   related_comparisons:
   - sunk-cost-vs-escalation-of-commitment
+  - groupthink-vs-social-proof-bias
   quick_examples:
   - title: Bad subscription trap
     summary: Someone keeps paying for a service they do not use because they already paid for months.
@@ -201,6 +204,7 @@ social-perception-errors:
   - halo-effect
   related_comparisons:
   - halo-effect-vs-social-proof-bias
+  - groupthink-vs-social-proof-bias
   quick_examples:
   - title: Loud room effect
     summary: A few loud voices make it seem like everyone agrees.

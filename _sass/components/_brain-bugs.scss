@@ -333,6 +333,14 @@ button.bb-card {
   background: #f5f7f7;
   border-radius: 1rem;
   padding: 1rem;
+  color: var(--bb-ink);
+}
+
+.bb-practice-card .bb-card-title {
+  font-family: "Avenir Next", "Helvetica Neue", sans-serif;
+  letter-spacing: -0.015em;
+  line-height: 1.25;
+  font-size: clamp(1.2rem, 2vw, 1.6rem);
 }
 
 .bb-practice-option {
@@ -342,16 +350,31 @@ button.bb-card {
   border-radius: 1rem;
   border: 1px solid var(--bb-border);
   background: #fff;
+  color: var(--bb-ink);
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.35;
 }
 
 .bb-practice-option.is-correct {
   border-color: #2f7d4f;
   background: #e5f6e8;
+  color: #163c25;
 }
 
 .bb-practice-option.is-wrong {
   border-color: #b4492e;
   background: #ffe9e0;
+  color: #6f2415;
+}
+
+.bb-practice-option:hover {
+  border-color: rgba(16, 34, 38, 0.28);
+}
+
+.bb-practice-option:focus {
+  outline: 3px solid rgba(255, 122, 89, 0.35);
+  outline-offset: 2px;
 }
 
 .bb-footer-band {
