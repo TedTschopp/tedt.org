@@ -22,6 +22,8 @@ nav:
   url: /tools/Brain-Bugs/start-here/
 - label: Topics
   url: /tools/Brain-Bugs/topics/
+- label: Compare
+  url: /tools/Brain-Bugs/compare/
 - label: Practice
   url: /tools/Brain-Bugs/practice/
 - label: Stories

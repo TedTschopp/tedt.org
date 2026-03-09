@@ -72,7 +72,24 @@
   padding: 0.75rem 1rem;
 }
 
+.bb-filter-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bb-filter-select {
+  min-width: 16rem;
+  border-radius: 999px;
+  border: 1px solid rgba(16, 34, 38, 0.18);
+  padding: 0.75rem 1rem;
+  background: #fff;
+}
+
 .bb-search-input:focus,
+.bb-filter-select:focus,
 .bb-search-submit:focus,
 .bb-cta-button:focus,
 .bb-card-link:focus,

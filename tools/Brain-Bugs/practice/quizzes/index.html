@@ -1,13 +1,14 @@
 ---
 layout: bb-page
 title: Quizzes
-lead: Start with one sample quiz built from the first six Brain Bugs lessons.
+lead: Use short quiz sets to check recognition across argument mistakes, persuasion tricks, and self-knowledge traps.
 description: Brain Bugs practice quizzes.
 permalink: /tools/Brain-Bugs/practice/quizzes/
 ---
 <section>
   <div class="bb-example-grid">
-    {% for quiz in site.bb_practice %}
+    {% assign quizzes = site.bb_practice | sort: 'title' %}
+    {% for quiz in quizzes %}
       <div class="bb-card h-100">
         <h2 class="bb-card-title h4 mb-2">{{ quiz.title }}</h2>
         <p class="mb-3">{{ quiz.instructions }}</p>

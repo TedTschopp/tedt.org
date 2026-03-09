@@ -1,0 +1,30 @@
+---
+layout: bb-page
+title: Compare
+lead: Some Brain Bugs look similar on the surface. These quick comparison pages help separate them cleanly.
+description: Compare related Brain Bugs and see the main difference fast.
+permalink: /tools/Brain-Bugs/compare/
+---
+<section class="mb-4">
+  <h2 class="bb-section-title h2 mb-3">Why compare pages matter</h2>
+  <p class="mb-0">Confusion slows learning. These pages put two close ideas side by side, show the one-line difference, and link you back to the bigger topic pages.</p>
+</section>
+
+<section>
+  <div class="bb-comparison-grid">
+    {% assign comparisons = site.bb_compare | sort: 'title' %}
+    {% for comparison in comparisons %}
+      {% assign left = site.data['bb-categories'][comparison.left_slug] %}
+      {% assign right = site.data['bb-categories'][comparison.right_slug] %}
+      <article class="bb-card h-100">
+        <p class="bb-subtitle mb-2">Quick comparison</p>
+        <h2 class="bb-card-title h4 mb-2"><a href="{{ comparison.url | relative_url }}">{{ comparison.title }}</a></h2>
+        <p class="mb-3">{{ comparison.main_difference }}</p>
+        <div class="d-flex flex-wrap gap-2">
+          {% if left %}<span class="bb-chip">{{ left.simple_title }}</span>{% endif %}
+          {% if right %}<span class="bb-chip">{{ right.simple_title }}</span>{% endif %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>

@@ -14,7 +14,7 @@
     {% endif %}
     {% assign crumbs = crumbs | push: page.simple_title %}
   {% elsif page.collection == 'bb_compare' %}
-    {% assign crumbs = crumbs | push: '{"label":"Compare","url":"/tools/Brain-Bugs/compare/fallacies-vs-biases/"}' %}
+    {% assign crumbs = crumbs | push: '{"label":"Compare","url":"/tools/Brain-Bugs/compare/"}' %}
     {% assign crumbs = crumbs | push: page.title %}
   {% elsif page.collection == 'bb_practice' %}
     {% assign crumbs = crumbs | push: '{"label":"Practice","url":"/tools/Brain-Bugs/practice/"}' %}
@@ -23,6 +23,8 @@
   {% elsif page.url == '/tools/Brain-Bugs/start-here/' %}
     {% assign crumbs = crumbs | push: page.title %}
   {% elsif page.url == '/tools/Brain-Bugs/topics/' %}
+    {% assign crumbs = crumbs | push: page.title %}
+  {% elsif page.url == '/tools/Brain-Bugs/compare/' %}
     {% assign crumbs = crumbs | push: page.title %}
   {% elsif page.url == '/tools/Brain-Bugs/practice/' %}
     {% assign crumbs = crumbs | push: page.title %}

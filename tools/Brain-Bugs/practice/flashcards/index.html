@@ -7,10 +7,26 @@ permalink: /tools/Brain-Bugs/practice/flashcards/
 ---
 <p class="mb-4">Tap a card to flip it. Use these as quick memory reps before a quiz or after reading a lesson.</p>
 
+<div class="bb-filter-row mb-4">
+	<div>
+		<label class="visually-hidden" for="bb-flashcard-filter">Filter flashcards by topic</label>
+		<select class="bb-filter-select" id="bb-flashcard-filter">
+			<option value="all">All topics</option>
+			{% for slug in site.data['bb-site'].topic_order %}
+				{% assign category = site.data['bb-categories'][slug] %}
+				{% if category %}
+					<option value="{{ slug }}">{{ category.simple_title }}</option>
+				{% endif %}
+			{% endfor %}
+		</select>
+	</div>
+	<p class="bb-result-count mb-0" id="bb-flashcard-count">Showing all flashcards.</p>
+</div>
+
 <div class="bb-example-grid" id="bb-flashcards">
 	{% assign flashcards = site.bb_errors | sort: 'simple_title' %}
 	{% for error in flashcards limit: 12 %}
-		<button class="bb-card text-start h-100" type="button" data-bb-flashcard>
+		<button class="bb-card text-start h-100" type="button" data-bb-flashcard data-bb-category="{{ error.primary_category }}">
 			<span class="bb-flashcard-front">
 				<p class="bb-subtitle mb-2">{{ error.technical_title }}</p>
 				<h2 class="bb-card-title h4 mb-2">{{ error.simple_title }}</h2>
@@ -27,6 +43,30 @@ permalink: /tools/Brain-Bugs/practice/flashcards/
 </div>
 
 <script>
+	var flashcardFilter = document.getElementById('bb-flashcard-filter');
+	var flashcardCount = document.getElementById('bb-flashcard-count');
+	var flashcardCards = Array.prototype.slice.call(document.querySelectorAll('[data-bb-flashcard]'));
+
+	function filterFlashcards() {
+		var selected = flashcardFilter.value;
+		var visible = 0;
+
+		flashcardCards.forEach(function (card) {
+			var match = selected === 'all' || card.getAttribute('data-bb-category') === selected;
+			card.classList.toggle('bb-hidden', !match);
+			if (match) {
+				visible += 1;
+			}
+		});
+
+		flashcardCount.textContent = selected === 'all'
+			? 'Showing all flashcards.'
+			: 'Showing ' + visible + ' flashcard' + (visible === 1 ? '' : 's') + ' in this topic.';
+	}
+
+	flashcardFilter.addEventListener('change', filterFlashcards);
+	filterFlashcards();
+
 	document.addEventListener('click', function (event) {
 		var card = event.target.closest('[data-bb-flashcard]');
 		if (!card) {

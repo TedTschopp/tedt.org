@@ -19,9 +19,10 @@ permalink: /tools/Brain-Bugs/search/
         type: 'error',
         title: {{ error.simple_title | jsonify }},
         subtitle: {{ error.technical_title | jsonify }},
+        summary: {{ error.one_line_definition | jsonify }},
         text: {{ error.simple_title | append: ' ' | append: error.technical_title | append: ' ' | append: error.one_line_definition | append: ' ' | append: error.aliases | join: ' ' | append: ' ' | append: error.search_phrases | join: ' ' | jsonify }},
         url: {{ error.url | jsonify }}
-      }{% unless forloop.last and site.data['bb-site'].topic_order.size == 0 %},{% endunless %}
+      },
     {% endfor %}
     {% for slug in site.data['bb-site'].topic_order %}
       {% assign category = site.data['bb-categories'][slug] %}
@@ -29,8 +30,21 @@ permalink: /tools/Brain-Bugs/search/
         type: 'topic',
         title: {{ category.simple_title | jsonify }},
         subtitle: {{ category.technical_title | jsonify }},
+        summary: {{ category.intro | jsonify }},
         text: {{ category.simple_title | append: ' ' | append: category.technical_title | append: ' ' | append: category.intro | jsonify }},
         url: {{ '/tools/Brain-Bugs/topics/' | append: slug | append: '/' | jsonify }}
+      },
+    {% endfor %}
+    {% for item in site.bb_compare %}
+      {% assign left = site.data['bb-categories'][item.left_slug] %}
+      {% assign right = site.data['bb-categories'][item.right_slug] %}
+      {
+        type: 'compare',
+        title: {{ item.title | jsonify }},
+        subtitle: 'Comparison',
+        summary: {{ item.main_difference | jsonify }},
+        text: {{ item.title | append: ' ' | append: item.main_difference | append: ' ' | append: item.left_summary | append: ' ' | append: item.right_summary | append: ' ' | append: left.simple_title | append: ' ' | append: right.simple_title | jsonify }},
+        url: {{ item.url | jsonify }}
       }{% unless forloop.last %},{% endunless %}
     {% endfor %}
   ];
@@ -41,6 +55,44 @@ permalink: /tools/Brain-Bugs/search/
   var initialQuery = new URLSearchParams(window.location.search).get('q') || '';
   searchInput.value = initialQuery;
 
+  function scoreItem(item, normalized) {
+    var title = item.title.toLowerCase();
+    var subtitle = (item.subtitle || '').toLowerCase();
+    var text = item.text.toLowerCase();
+    var words = normalized.split(/\s+/).filter(Boolean);
+    var score = 0;
+
+    if (title === normalized || subtitle === normalized) {
+      score += 120;
+    }
+    if (title.indexOf(normalized) === 0) {
+      score += 70;
+    }
+    if (title.indexOf(normalized) !== -1) {
+      score += 45;
+    }
+    if (subtitle.indexOf(normalized) !== -1) {
+      score += 25;
+    }
+    if (text.indexOf(normalized) !== -1) {
+      score += 20;
+    }
+
+    words.forEach(function (word) {
+      if (title.indexOf(word) !== -1) {
+        score += 10;
+      }
+      if (subtitle.indexOf(word) !== -1) {
+        score += 6;
+      }
+      if (text.indexOf(word) !== -1) {
+        score += 2;
+      }
+    });
+
+    return score;
+  }
+
   function renderSearchResults(query) {
     var normalized = query.trim().toLowerCase();
     resultsNode.innerHTML = '';
@@ -50,9 +102,26 @@ permalink: /tools/Brain-Bugs/search/
       return;
     }
 
-    var matches = bbSearchIndex.filter(function (item) {
-      return item.text.toLowerCase().indexOf(normalized) !== -1;
+    var matches = bbSearchIndex.map(function (item) {
+      return {
+        item: item,
+        score: scoreItem(item, normalized)
+      };
+    }).filter(function (entry) {
+      return entry.score > 0;
+    }).sort(function (left, right) {
+      if (right.score !== left.score) {
+        return right.score - left.score;
+      }
+      return left.item.title.localeCompare(right.item.title);
+    }).slice(0, 24).map(function (entry) {
+      return entry.item;
     });
+
+    if (!matches.length) {
+      countNode.textContent = 'No results for “' + query + '”. Try a simpler title, alias, or phrase.';
+      return;
+    }
 
     countNode.textContent = matches.length + ' result' + (matches.length === 1 ? '' : 's') + ' for “' + query + '”.';
 
@@ -61,7 +130,8 @@ permalink: /tools/Brain-Bugs/search/
       article.className = 'bb-card';
       article.innerHTML = '<p class="bb-subtitle mb-2">' + item.subtitle + '</p>' +
         '<h2 class="bb-card-title h4 mb-2"><a href="' + item.url + '">' + item.title + '</a></h2>' +
-        '<p class="mb-0 bb-muted">' + (item.type === 'error' ? 'Lesson' : 'Topic') + '</p>';
+        '<p class="mb-2">' + item.summary + '</p>' +
+        '<p class="mb-0 bb-muted">' + (item.type === 'error' ? 'Lesson' : item.type === 'compare' ? 'Comparison' : 'Topic') + '</p>';
       resultsNode.appendChild(article);
     });
   }

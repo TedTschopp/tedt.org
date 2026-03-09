@@ -1,0 +1,28 @@
+scenario_lab:
+- title: The late project meeting
+  setup: A team asks why a release is late. The lead says the project cannot stop now because too much money has already been spent. When a teammate raises a concern, the lead says she just wants attention. The room goes quiet and nobody pushes back.
+  bugs:
+  - slug: sunk-cost-fallacy
+    why: Past cost is being used to justify a future decision.
+  - slug: ad-hominem
+    why: The teammate is attacked instead of answered.
+  - slug: groupthink
+    why: The room stops testing the plan once social pressure takes over.
+- title: The school rumor
+  setup: A rumor spreads online. Students say it must be true because everyone is reposting it. One dramatic story is repeated again and again. When someone questions it, they are told they must be on the other side.
+  bugs:
+  - slug: bandwagon-fallacy
+    why: Crowd agreement is being used as proof.
+  - slug: availability-heuristic
+    why: One vivid story is being mistaken for the broader pattern.
+  - slug: false-dilemma
+    why: Doubt is being reframed as disloyalty to the group.
+- title: The home repair decision
+  setup: A family gets one very high repair quote first and keeps comparing everything to it. They tell themselves the whole job will be done in one afternoon. After it drags out, they say the delays were obvious all along.
+  bugs:
+  - slug: anchoring-bias
+    why: The first number is setting the frame for every later judgment.
+  - slug: planning-fallacy
+    why: The time estimate is unrealistically optimistic.
+  - slug: hindsight-bias
+    why: Once things go badly, the outcome suddenly feels obvious in retrospect.

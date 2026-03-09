@@ -113,10 +113,18 @@ rhetorical-manipulation:
   common_signals:
   - Strong feelings with thin evidence.
   - Rapid-fire claims with no time to check them.
-  featured_errors: []
-  beginner_errors: []
+  featured_errors:
+  - loaded-language
+  - whataboutism
+  - appeal-to-emotion
+  - tu-quoque
+  beginner_errors:
+  - loaded-language
+  - whataboutism
+  - appeal-to-emotion
   related_comparisons:
   - fallacies-vs-biases
+  - whataboutism-vs-tu-quoque
   quick_examples:
   - title: Loaded pitch
     summary: The wording pushes you before the facts arrive.
@@ -219,9 +227,14 @@ metacognitive-illusions:
   common_signals:
   - Things feel easy, so they seem fully understood.
   - Confidence rises faster than evidence.
-  featured_errors: []
-  beginner_errors: []
-  related_comparisons: []
+  featured_errors:
+  - overconfidence-effect
+  - illusion-of-explanatory-depth
+  beginner_errors:
+  - overconfidence-effect
+  - illusion-of-explanatory-depth
+  related_comparisons:
+  - overconfidence-vs-illusion-of-explanatory-depth
   quick_examples:
   - title: Easy explanation illusion
     summary: Something sounds simple until you try to explain each step out loud.
