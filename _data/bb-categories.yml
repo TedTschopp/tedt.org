@@ -17,10 +17,15 @@ logical-fallacies:
   - ad-hominem
   - straw-man
   - bandwagon-fallacy
+  - false-cause
+  - hasty-generalization
+  - slippery-slope
   beginner_errors:
   - ad-hominem
   - straw-man
   - bandwagon-fallacy
+  - false-cause
+  - slippery-slope
   related_comparisons:
   - fallacies-vs-biases
   practice_quizzes:
@@ -77,9 +82,14 @@ heuristics:
   featured_errors:
   - availability-heuristic
   - familiarity-heuristic
+  - representativeness-heuristic
+  - affect-heuristic
+  - scarcity-heuristic
   beginner_errors:
   - availability-heuristic
   - familiarity-heuristic
+  - representativeness-heuristic
+  - scarcity-heuristic
   related_comparisons:
   - biases-vs-heuristics
   - base-rate-neglect-vs-availability-heuristic
@@ -105,9 +115,15 @@ cognitive-distortions:
   featured_errors:
   - black-and-white-thinking
   - emotional-reasoning
+  - catastrophizing
+  - mind-reading
+  - overgeneralization
+  - personalization
   beginner_errors:
   - black-and-white-thinking
   - emotional-reasoning
+  - catastrophizing
+  - overgeneralization
   related_comparisons:
   - fallacies-vs-biases
   practice_quizzes:
@@ -133,10 +149,15 @@ rhetorical-manipulation:
   - whataboutism
   - appeal-to-emotion
   - tu-quoque
+  - appeal-to-fear
+  - moving-the-goalposts
+  - gish-gallop
   beginner_errors:
   - loaded-language
   - whataboutism
   - appeal-to-emotion
+  - appeal-to-fear
+  - appeal-to-pity
   related_comparisons:
   - fallacies-vs-biases
   - whataboutism-vs-tu-quoque
@@ -161,9 +182,15 @@ statistical-errors:
   featured_errors:
   - base-rate-neglect
   - correlation-vs-causation
+  - law-of-small-numbers
+  - regression-to-the-mean
+  - texas-sharpshooter-fallacy
+  - gamblers-fallacy
   beginner_errors:
   - correlation-vs-causation
   - base-rate-neglect
+  - law-of-small-numbers
+  - gamblers-fallacy
   related_comparisons:
   - base-rate-neglect-vs-availability-heuristic
   practice_quizzes:
@@ -188,9 +215,14 @@ decision-traps:
   - sunk-cost-fallacy
   - planning-fallacy
   - groupthink
+  - escalation-of-commitment
+  - decision-fatigue
+  - choice-overload
   beginner_errors:
   - sunk-cost-fallacy
   - planning-fallacy
+  - decision-fatigue
+  - choice-overload
   related_comparisons:
   - sunk-cost-vs-escalation-of-commitment
   - groupthink-vs-social-proof-bias

@@ -13,13 +13,29 @@ layout: bb-default
       <h2 class="bb-section-title h2 mb-3">Browse by Story Source</h2>
       <div class="bb-story-grid">
         {% for source in page.story_sources %}
-          <div class="bb-card h-100">
+          <a class="bb-link-tile bb-card-link h-100" href="{{ source.url | relative_url }}">
             <h3 class="bb-card-title h4 mb-2">{{ source.title }}</h3>
             <p class="mb-0">{{ source.summary }}</p>
-          </div>
+          </a>
         {% endfor %}
       </div>
     </section>
+
+    {% assign story_guides = site.bb_stories | sort: 'title' %}
+    {% if story_guides.size > 0 %}
+      <section class="mb-4">
+        <h2 class="bb-section-title h2 mb-3">Story Guides</h2>
+        <div class="bb-story-grid">
+          {% for story in story_guides %}
+            <a class="bb-link-tile bb-card-link h-100" href="{{ story.url | relative_url }}">
+              <p class="bb-subtitle mb-2">{{ story.story_family }}</p>
+              <h3 class="bb-card-title h4 mb-2">{{ story.title }}</h3>
+              <p class="mb-0">{{ story.lead }}</p>
+            </a>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
 
     <section class="mb-4">
       <h2 class="bb-section-title h2 mb-3">Browse by Error</h2>

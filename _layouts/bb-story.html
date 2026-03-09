@@ -1,0 +1,104 @@
+---
+layout: bb-default
+---
+<section class="container py-4 py-lg-5">
+  {% include brain-bugs/bb-breadcrumbs.html %}
+  <article class="bb-surface p-4 p-lg-5">
+    <p class="bb-eyebrow mb-2">Stories</p>
+    <h1 class="bb-page-title mb-3">{{ page.title }}</h1>
+    <p class="fs-4 mb-4">{{ page.lead }}</p>
+
+    {% if page.why_this_source %}
+      <section class="mb-4">
+        <div class="bb-card h-100">
+          <h2 class="bb-card-title h3 mb-3">Why This Story Source Helps</h2>
+          <p class="mb-0">{{ page.why_this_source }}</p>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.notice_points and page.notice_points.size > 0 %}
+      <section class="mb-4">
+        <h2 class="bb-section-title h2 mb-3">What to Notice</h2>
+        <div class="bb-card h-100">
+          <div class="bb-stack-list bb-warning-list mb-0">
+            {% for point in page.notice_points %}
+              <p class="mb-2">{{ point }}</p>
+            {% endfor %}
+          </div>
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.story_spotlights and page.story_spotlights.size > 0 %}
+      <section class="mb-4">
+        <h2 class="bb-section-title h2 mb-3">Featured Story Examples</h2>
+        <div class="bb-story-grid">
+          {% for spotlight in page.story_spotlights %}
+            <article class="bb-card h-100">
+              <p class="bb-subtitle mb-2">{{ spotlight.source }}</p>
+              <h3 class="bb-card-title h4 mb-2">{{ spotlight.title }}</h3>
+              <p class="mb-2">{{ spotlight.summary }}</p>
+              <p class="bb-muted mb-3">{{ spotlight.why_it_matters }}</p>
+              {% if spotlight.errors and spotlight.errors.size > 0 %}
+                <div class="d-flex flex-wrap gap-2">
+                  {% for slug in spotlight.errors %}
+                    {% assign match = site.bb_errors | where: 'slug', slug | first %}
+                    {% if match %}
+                      <a class="bb-chip" href="{{ match.url | relative_url }}">{{ match.simple_title }}</a>
+                    {% endif %}
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </article>
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    {% if page.featured_errors and page.featured_errors.size > 0 %}
+      <section class="mb-4">
+        <h2 class="bb-section-title h2 mb-3">Brain Bugs to Study with This Source</h2>
+        <div class="bb-example-grid">
+          {% for slug in page.featured_errors %}
+            {% assign error = site.bb_errors | where: 'slug', slug | first %}
+            {% if error %}
+              {% include brain-bugs/bb-error-card.html error=error %}
+            {% endif %}
+          {% endfor %}
+        </div>
+      </section>
+    {% endif %}
+
+    <div class="row g-4">
+      <div class="col-12 col-lg-7">
+        <div class="bb-card h-100">
+          <h2 class="bb-card-title h3 mb-3">Keep Learning</h2>
+          <p class="mb-3">Move from story scenes back to the full lesson pages, then test yourself with short practice.</p>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="bb-chip" href="{{ '/tools/Brain-Bugs/stories/' | relative_url }}">All story guides</a>
+            <a class="bb-chip" href="{{ '/tools/Brain-Bugs/practice/spot-the-bug/' | relative_url }}">Spot the Bug</a>
+            <a class="bb-chip" href="{{ '/tools/Brain-Bugs/practice/flashcards/' | relative_url }}">Flashcards</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="bb-card h-100">
+          <h2 class="bb-card-title h3 mb-3">Related Comparisons</h2>
+          <div class="bb-stack-list mb-0">
+            {% if page.related_comparisons and page.related_comparisons.size > 0 %}
+              {% for slug in page.related_comparisons %}
+                {% assign comparison = site.bb_compare | where: 'slug', slug | first %}
+                {% if comparison %}
+                  <p class="mb-2"><a href="{{ comparison.url | relative_url }}">{{ comparison.title }}</a></p>
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              <p class="mb-0">Use the comparison pages when two nearby ideas start to blur together.</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </article>
+</section>

@@ -261,15 +261,15 @@ Every error page must use this exact teaching structure.
    - one strong scenario that makes the idea click fast
    - format as a highlighted card or quote-style mini story
 
-5. **What this sounds like in Classrooms**
+5. **What This Sounds Like in Classrooms**
    - 2 to 4 short example lines
    - examples from teachers, students, assignments, group projects, debates, homework, or school discussions
 
-6. **What this sounds like in Business**
+6. **What This Sounds Like in Business**
    - 2 to 4 short example lines
    - examples from meetings, leadership, hiring, planning, sales, team conflict, roadmaps, or office politics
 
-7. **What this sounds like in Real Life**
+7. **What This Sounds Like in Real Life**
    - 2 to 4 short example lines
    - examples from family, shopping, social media, friendship, sports, health, or everyday decisions
 
@@ -359,9 +359,9 @@ Do not skip these. Every error page must include all of them:
 - one-line definition
 - plain-English explanation
 - Featured Example
-- What this sounds like in Classrooms
-- What this sounds like in Business
-- What this sounds like in Real Life
+- What This Sounds Like in Classrooms
+- What This Sounds Like in Business
+- What This Sounds Like in Real Life
 - Examples from Literature or Fiction
 - why people fall for it
 - how to spot it
@@ -860,9 +860,9 @@ The build is successful if:
    * simple definition
    * plain-English explanation
    * Featured Example
-   * What this sounds like in Classrooms
-   * What this sounds like in Business
-   * What this sounds like in Real Life
+   * What This Sounds Like in Classrooms
+   * What This Sounds Like in Business
+   * What This Sounds Like in Real Life
    * Examples from Literature or Fiction
    * warning signs
    * response tips
