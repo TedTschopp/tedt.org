@@ -59,6 +59,13 @@ cognitive-biases:
   - status-quo-bias
   - self-serving-bias
   - optimism-bias
+  - in-group-bias
+  - negativity-bias
+  - projection-bias
+  - illusory-correlation
+  - moral-licensing
+  - just-world-hypothesis
+  - false-consensus-effect
   beginner_errors:
   - confirmation-bias
   - anchoring-bias
@@ -66,6 +73,8 @@ cognitive-biases:
   - dunning-kruger-effect
   - survivorship-bias
   - status-quo-bias
+  - negativity-bias
+  - false-consensus-effect
   related_comparisons:
   - fallacies-vs-biases
   - biases-vs-heuristics
@@ -287,9 +296,12 @@ narrative-errors:
   featured_errors:
   - hindsight-bias
   - narrative-fallacy
+  - outcome-bias
+  - patternicity
   beginner_errors:
   - hindsight-bias
   - narrative-fallacy
+  - outcome-bias
   related_comparisons:
   - hindsight-bias-vs-narrative-fallacy
   practice_quizzes:
@@ -312,9 +324,15 @@ metacognitive-illusions:
   featured_errors:
   - overconfidence-effect
   - illusion-of-explanatory-depth
+  - illusion-of-knowledge
+  - illusion-of-control
+  - curse-of-knowledge
+  - fluency-illusion
   beginner_errors:
   - overconfidence-effect
   - illusion-of-explanatory-depth
+  - illusion-of-knowledge
+  - illusion-of-control
   related_comparisons:
   - overconfidence-vs-illusion-of-explanatory-depth
   practice_quizzes:
