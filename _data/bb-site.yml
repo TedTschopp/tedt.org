@@ -10,10 +10,10 @@ hero_pills:
 - Decision Traps
 hero_panels:
 - label: Learn Fast
-  title: See the pattern
+  title: See the Pattern
   summary: Start with a short definition, then jump into a scene that sounds like real life.
 - label: Stay Practical
-  title: Know what to say next
+  title: Know What to Say Next
   summary: Each lesson ends with warning signs, better responses, and a mini practice check.
 nav:
 - label: Home

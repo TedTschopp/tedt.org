@@ -94,10 +94,28 @@
   border-radius: 999px;
   padding: 0.5rem 0.85rem;
   background: rgba(255, 255, 255, 0.7);
+  color: var(--bb-ink);
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .bb-site-header .navbar-toggler:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 122, 89, 0.2);
+}
+
+.bb-site-header .navbar-toggler-icon {
+  width: 1.45rem;
+  height: 1.45rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23162226' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.4' d='M5 8h20M5 15h20M5 22h20'/%3E%3C/svg%3E");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  opacity: 1;
+}
+
+.bb-site-header .navbar-toggler[aria-expanded="true"] {
+  background: #fff;
+  border-color: rgba(255, 122, 89, 0.45);
 }
 
 .bb-site-nav-panel {
