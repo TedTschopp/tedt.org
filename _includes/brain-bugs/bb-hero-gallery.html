@@ -1,0 +1,77 @@
+{% assign hero_images = page.image_set | default: empty %}
+{% if hero_images and hero_images.size > 0 %}
+  {% assign selected_image = hero_images | first %}
+  <div class="bb-hero-gallery" data-bb-hero-gallery>
+    <figure class="bb-hero-figure mb-0">
+      <div class="bb-hero-figure-frame">
+        <img
+          class="bb-hero-figure-image"
+          src="{{ selected_image.image | relative_url }}"
+          alt="{{ selected_image['image-alt'] | escape }}"
+          loading="eager"
+          decoding="async"
+          data-bb-hero-gallery-image>
+      </div>
+      <figcaption class="bb-hero-figure-caption">
+        <p class="bb-subtitle mb-2" data-bb-hero-gallery-label>{{ selected_image.label | default: selected_image.slot | replace: 'hero-', '' | replace: '-', ' ' }}</p>
+        <h2 class="bb-card-title h3 mb-2" data-bb-hero-gallery-title>{{ selected_image['image-title'] }}</h2>
+        <p class="mb-0" data-bb-hero-gallery-description>{{ selected_image['image-description'] }}</p>
+      </figcaption>
+    </figure>
+
+    {% if hero_images.size > 1 %}
+      <div class="bb-hero-gallery-controls" aria-label="Choose a Brain Bugs homepage scene">
+        {% for option in hero_images %}
+          {% assign option_label = option.label | default: option.slot | replace: 'hero-', '' | replace: '-', ' ' %}
+          <button
+            type="button"
+            class="bb-hero-gallery-thumb{% if forloop.first %} is-active{% endif %}"
+            {% if forloop.first %}aria-pressed="true"{% else %}aria-pressed="false"{% endif %}
+            data-bb-hero-gallery-option
+            data-image-src="{{ option.image | relative_url }}"
+            data-image-alt="{{ option['image-alt'] | escape }}"
+            data-image-label="{{ option_label | escape }}"
+            data-image-title="{{ option['image-title'] | escape }}"
+            data-image-description="{{ option['image-description'] | escape }}">
+            <img src="{{ option.image | relative_url }}" alt="" aria-hidden="true" loading="lazy" decoding="async">
+            <span class="bb-hero-gallery-thumb-label" aria-hidden="true">{{ option_label }}</span>
+            <span class="visually-hidden">Show scene: {{ option_label }}</span>
+          </button>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+
+  <script>
+    (function() {
+      var gallery = document.querySelector('[data-bb-hero-gallery]');
+      if (!gallery) {
+        return;
+      }
+
+      var image = gallery.querySelector('[data-bb-hero-gallery-image]');
+      var label = gallery.querySelector('[data-bb-hero-gallery-label]');
+      var title = gallery.querySelector('[data-bb-hero-gallery-title]');
+      var description = gallery.querySelector('[data-bb-hero-gallery-description]');
+      var options = gallery.querySelectorAll('[data-bb-hero-gallery-option]');
+
+      options.forEach(function(option) {
+        option.addEventListener('click', function() {
+          options.forEach(function(button) {
+            button.classList.remove('is-active');
+            button.setAttribute('aria-pressed', 'false');
+          });
+
+          option.classList.add('is-active');
+          option.setAttribute('aria-pressed', 'true');
+
+          image.src = option.getAttribute('data-image-src');
+          image.alt = option.getAttribute('data-image-alt');
+          label.textContent = option.getAttribute('data-image-label');
+          title.textContent = option.getAttribute('data-image-title');
+          description.textContent = option.getAttribute('data-image-description');
+        });
+      });
+    })();
+  </script>
+{% endif %}

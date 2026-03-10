@@ -19,13 +19,16 @@
     </div>
     <div class="col-12 col-lg-5">
       <div class="bb-hero-art h-100">
-        {% for panel in bb_site.hero_panels %}
-          <div class="bb-card">
-            <p class="bb-subtitle mb-2">{{ panel.label }}</p>
-            <h2 class="bb-card-title h3 mb-2">{{ panel.title }}</h2>
-            <p class="mb-0">{{ panel.summary }}</p>
-          </div>
-        {% endfor %}
+        {% include brain-bugs/bb-hero-gallery.html %}
+        <div class="bb-hero-panel-grid">
+          {% for panel in bb_site.hero_panels %}
+            <div class="bb-card">
+              <p class="bb-subtitle mb-2">{{ panel.label }}</p>
+              <h2 class="bb-card-title h3 mb-2">{{ panel.title }}</h2>
+              <p class="mb-0">{{ panel.summary }}</p>
+            </div>
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
