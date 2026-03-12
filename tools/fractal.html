@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mandelbrot Deep Zoom</title>
+<meta name="description" content="Interactive Mandelbrot explorer with WebGL rendering, smooth pan and zoom, and double-float emulation for deeper fractal navigation.">
+<link rel="canonical" href="https://tedt.org/tools/fractal.html">
+<link rel="icon" href="../favicon.ico" sizes="any">
+<style>
+  html, body { margin: 0; overflow: hidden; background: black; }
+  canvas { display: block; cursor: crosshair; }
+  #hud {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background: rgba(0,0,0,0.7);
+    padding: 10px 14px;
+    font-family: monospace;
+    font-size: 13px;
+    color: #ccc;
+    line-height: 1.5;
+    border-radius: 4px;
+    pointer-events: none;
+    white-space: pre;
+  }
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="hud">Scroll to zoom · Drag to pan · Dbl-click zoom in · Dbl-right-click zoom out</div>
+<script>
+"use strict";
+
+// ═══════════════════════════════════════════════════════════════════════
+//  Mandelbrot with Double-Float Emulation
+//  Each number represented as (hi, lo) pair of float32s for ~14-digit precision
+//  Extends usable zoom from ~1e-7 to ~1e-14 — all in the shader, no CPU orbit
+// ═══════════════════════════════════════════════════════════════════════
+
+const canvas = document.getElementById("c");
+const gl = canvas.getContext("webgl");
+const hud = document.getElementById("hud");
+
+if (!gl) {
+  document.body.style.cssText = "color:white;padding:2em;font-family:sans-serif";
+  document.body.textContent = "WebGL is not supported by your browser.";
+  throw new Error("WebGL not available");
+}
+
+function resize() {
+  canvas.width = innerWidth;
+  canvas.height = innerHeight;
+  gl.viewport(0, 0, canvas.width, canvas.height);
+}
+window.addEventListener("resize", resize);
+resize();
+
+const GLSL_MAX_LOOP = 4096;
+
+const vertexSrc = `
+attribute vec2 position;
+void main() { gl_Position = vec4(position, 0.0, 1.0); }
+`;
+
+// ─────────────────────────────────────────────────────────────────────
+//  Fragment shader with Dekker/Kahan double-float arithmetic
+//  Each "double-float" is a vec2 where x = high part, y = low part
+//  Effective precision: ~48 mantissa bits (~14 decimal digits)
+// ─────────────────────────────────────────────────────────────────────
+const fragmentSrc = `
+precision highp float;
+uniform vec2 u_resolution;
+uniform vec2 u_center_hi;    // center high parts (x, y)
+uniform vec2 u_center_lo;    // center low parts (x, y)
+uniform float u_scale;
+uniform float u_maxIter;
+
+// ── Quick-Two-Sum: requires |a| >= |b| ──
+vec2 qts(float a, float b) {
+  float s = a + b;
+  float e = b - (s - a);
+  return vec2(s, e);
+}
+
+// ── Two-Sum: no ordering requirement ──
+vec2 ts(float a, float b) {
+  float s = a + b;
+  float v = s - a;
+  float e = (a - (s - v)) + (b - v);
+  return vec2(s, e);
+}
+
+// ── Double-float add ──
+vec2 df_add(vec2 a, vec2 b) {
+  vec2 s = ts(a.x, b.x);
+  s.y += a.y + b.y;
+  return qts(s.x, s.y);
+}
+
+// ── Double-float subtract ──
+vec2 df_sub(vec2 a, vec2 b) {
+  return df_add(a, vec2(-b.x, -b.y));
+}
+
+// ── Veltkamp split (split float into two 12-bit halves) ──
+vec2 vsplit(float a) {
+  float c = 4097.0 * a;    // (2^12 + 1) * a
+  float ah = c - (c - a);
+  float al = a - ah;
+  return vec2(ah, al);
+}
+
+// ── Two-Product: exact a*b = (p, e) ──
+vec2 tp(float a, float b) {
+  float p = a * b;
+  vec2 sa = vsplit(a);
+  vec2 sb = vsplit(b);
+  float e = ((sa.x * sb.x - p) + sa.x * sb.y + sa.y * sb.x) + sa.y * sb.y;
+  return vec2(p, e);
+}
+
+// ── Double-float multiply ──
+vec2 df_mul(vec2 a, vec2 b) {
+  vec2 p = tp(a.x, b.x);
+  p.y += a.x * b.y + a.y * b.x;
+  return qts(p.x, p.y);
+}
+
+void main() {
+  vec2 uv = (gl_FragCoord.xy / u_resolution - 0.5)
+           * vec2(u_resolution.x / u_resolution.y, 1.0);
+
+  // Build c = center + uv * scale  (in double-float)
+  // The pixel offset is small enough that single-float is fine for uv*scale
+  float px = uv.x * u_scale;
+  float py = uv.y * u_scale;
+
+  // c_real = center_hi.x + center_lo.x + px
+  vec2 cr = df_add(vec2(u_center_hi.x, u_center_lo.x), vec2(px, 0.0));
+  // c_imag = center_hi.y + center_lo.y + py
+  vec2 ci = df_add(vec2(u_center_hi.y, u_center_lo.y), vec2(py, 0.0));
+
+  // Mandelbrot iteration in double-float: z = z² + c
+  vec2 zr = vec2(0.0, 0.0);
+  vec2 zi = vec2(0.0, 0.0);
+  float iter = 0.0;
+
+  for (float n = 0.0; n < ${GLSL_MAX_LOOP}.0; n += 1.0) {
+    if (n >= u_maxIter) break;
+
+    // zr² and zi²
+    vec2 zr2 = df_mul(zr, zr);
+    vec2 zi2 = df_mul(zi, zi);
+
+    // Escape check: |z|² > 256 (use hi parts, sufficient for comparison)
+    float mag2 = zr2.x + zi2.x;
+    if (mag2 > 256.0) {
+      // Smooth iteration count
+      float smoothI = n - log2(log2(mag2)) + 4.0;
+      float t = smoothI * 0.05;
+      vec3 col = 0.5 + 0.5 * cos(6.2831853 * (t + vec3(0.0, 0.33, 0.67)));
+      gl_FragColor = vec4(col, 1.0);
+      return;
+    }
+
+    // new_zi = 2 * zr * zi + ci
+    vec2 zri = df_mul(zr, zi);
+    vec2 two_zri = df_add(zri, zri);   // 2 * zr * zi
+    vec2 new_zi = df_add(two_zri, ci);
+
+    // new_zr = zr² - zi² + cr
+    vec2 new_zr = df_add(df_sub(zr2, zi2), cr);
+
+    zr = new_zr;
+    zi = new_zi;
+    iter = n;
+  }
+
+  // Interior → black
+  gl_FragColor = vec4(0.0, 0.0, 0.0, 1.0);
+}
+`;
+
+function compile(type, src) {
+  const s = gl.createShader(type);
+  gl.shaderSource(s, src);
+  gl.compileShader(s);
+  if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
+    console.error(gl.getShaderInfoLog(s));
+    throw new Error("Shader compile failed");
+  }
+  return s;
+}
+
+const program = gl.createProgram();
+gl.attachShader(program, compile(gl.VERTEX_SHADER, vertexSrc));
+gl.attachShader(program, compile(gl.FRAGMENT_SHADER, fragmentSrc));
+gl.linkProgram(program);
+if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+  console.error(gl.getProgramInfoLog(program));
+  throw new Error("Program link failed");
+}
+gl.useProgram(program);
+
+const buf = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+gl.bufferData(gl.ARRAY_BUFFER,
+  new Float32Array([-1,-1, 1,-1, -1,1, -1,1, 1,-1, 1,1]),
+  gl.STATIC_DRAW);
+const posLoc = gl.getAttribLocation(program, "position");
+gl.enableVertexAttribArray(posLoc);
+gl.vertexAttribPointer(posLoc, 2, gl.FLOAT, false, 0, 0);
+
+const uResolution = gl.getUniformLocation(program, "u_resolution");
+const uCenterHi   = gl.getUniformLocation(program, "u_center_hi");
+const uCenterLo   = gl.getUniformLocation(program, "u_center_lo");
+const uScale      = gl.getUniformLocation(program, "u_scale");
+const uMaxIter    = gl.getUniformLocation(program, "u_maxIter");
+
+// ═══════════════════════════════════════════════════════════════════════
+//  State — center as JS double (53-bit mantissa ≈ 15 decimal digits)
+//  Split into float32 hi + lo parts when uploading to GPU
+// ═══════════════════════════════════════════════════════════════════════
+let centerX = -0.5, centerY = 0, scale = 3;
+let targetX = centerX, targetY = centerY, targetScale = scale;
+
+function computeMaxIter(s) {
+  return Math.min(GLSL_MAX_LOOP, Math.max(200, 200 + Math.floor(-120 * Math.log10(s))));
+}
+
+// Split a JS double into two float32 values: hi captures ~7 digits, lo captures ~7 more
+function splitToFloat32(x) {
+  const hi = Math.fround(x);
+  const lo = Math.fround(x - hi);
+  return [hi, lo];
+}
+
+// ─────────────────────────────────────────────────────────────────────
+//  Navigation helpers
+// ─────────────────────────────────────────────────────────────────────
+
+function screenToComplex(sx, sy, cx, cy, s) {
+  const w = canvas.width, h = canvas.height;
+  const aspect = w / h;
+  return [(sx / w - 0.5) * s * aspect + cx, (0.5 - sy / h) * s + cy];
+}
+
+function screenOffset(sx, sy, s) {
+  const w = canvas.width, h = canvas.height;
+  const aspect = w / h;
+  return [(sx / w - 0.5) * s * aspect, (0.5 - sy / h) * s];
+}
+
+// ─────────────────────────────────────────────────────────────────────
+//  Input Handlers
+// ─────────────────────────────────────────────────────────────────────
+
+let wasDrag = false;
+let clickTimer = null;
+
+canvas.addEventListener("click", e => {
+  if (wasDrag) return;
+  if (clickTimer) clearTimeout(clickTimer);
+  clickTimer = setTimeout(() => {
+    clickTimer = null;
+    const [clickX, clickY] = screenToComplex(e.clientX, e.clientY, centerX, centerY, scale);
+    if (e.shiftKey) {
+      targetScale = scale * 2.0;
+      const [offX, offY] = screenOffset(e.clientX, e.clientY, targetScale);
+      targetX = clickX - offX;
+      targetY = clickY - offY;
+    } else {
+      targetX = clickX;
+      targetY = clickY;
+    }
+  }, 250);
+});
+
+canvas.addEventListener("dblclick", e => {
+  if (clickTimer) { clearTimeout(clickTimer); clickTimer = null; }
+  const [clickX, clickY] = screenToComplex(e.clientX, e.clientY, centerX, centerY, scale);
+  targetScale = scale * 0.5;
+  const [offX, offY] = screenOffset(e.clientX, e.clientY, targetScale);
+  targetX = clickX - offX;
+  targetY = clickY - offY;
+});
+
+canvas.addEventListener("contextmenu", e => e.preventDefault());
+
+let rightClickTimer = null;
+canvas.addEventListener("mousedown", e => {
+  if (e.button === 2) {
+    if (rightClickTimer) {
+      clearTimeout(rightClickTimer);
+      rightClickTimer = null;
+      const [clickX, clickY] = screenToComplex(e.clientX, e.clientY, centerX, centerY, scale);
+      targetScale = scale * 2.0;
+      const [offX, offY] = screenOffset(e.clientX, e.clientY, targetScale);
+      targetX = clickX - offX;
+      targetY = clickY - offY;
+    } else {
+      rightClickTimer = setTimeout(() => { rightClickTimer = null; }, 400);
+    }
+  }
+});
+
+canvas.addEventListener("wheel", e => {
+  e.preventDefault();
+  const factor = e.deltaY > 0 ? 1.15 : 1 / 1.15;
+  const [clickX, clickY] = screenToComplex(e.clientX, e.clientY, centerX, centerY, scale);
+  targetScale = scale * factor;
+  const [offX, offY] = screenOffset(e.clientX, e.clientY, targetScale);
+  targetX = clickX - offX;
+  targetY = clickY - offY;
+}, { passive: false });
+
+const DRAG_THRESHOLD = 4;
+let dragging = false, dragStartX, dragStartY, dragCX, dragCY;
+canvas.addEventListener("mousedown", e => {
+  if (e.button !== 0) return;
+  dragging = true;
+  wasDrag = false;
+  dragStartX = e.clientX;
+  dragStartY = e.clientY;
+  dragCX = centerX;
+  dragCY = centerY;
+});
+window.addEventListener("mousemove", e => {
+  if (!dragging) return;
+  if (Math.abs(e.clientX - dragStartX) > DRAG_THRESHOLD ||
+      Math.abs(e.clientY - dragStartY) > DRAG_THRESHOLD) wasDrag = true;
+  if (!wasDrag) return;
+  const w = canvas.width, h = canvas.height;
+  const aspect = w / h;
+  targetX = dragCX - (e.clientX - dragStartX) / w * scale * aspect;
+  targetY = dragCY + (e.clientY - dragStartY) / h * scale;
+  centerX = targetX;
+  centerY = targetY;
+});
+window.addEventListener("mouseup", () => { dragging = false; });
+
+// ─────────────────────────────────────────────────────────────────────
+//  Render Loop
+// ─────────────────────────────────────────────────────────────────────
+let lastTime = performance.now();
+
+function loop(now) {
+  const dt = (now - lastTime) / 1000;
+  lastTime = now;
+  const k = 1.0 - Math.exp(-8 * dt);
+
+  centerX += (targetX - centerX) * k;
+  centerY += (targetY - centerY) * k;
+  scale   += (targetScale - scale) * k;
+
+  const maxIter = computeMaxIter(scale);
+
+  // Split JS double center into float32 hi+lo for the shader
+  const [cxHi, cxLo] = splitToFloat32(centerX);
+  const [cyHi, cyLo] = splitToFloat32(centerY);
+
+  gl.uniform2f(uResolution, canvas.width, canvas.height);
+  gl.uniform2f(uCenterHi, cxHi, cyHi);
+  gl.uniform2f(uCenterLo, cxLo, cyLo);
+  gl.uniform1f(uScale, scale);
+  gl.uniform1f(uMaxIter, maxIter);
+
+  gl.clear(gl.COLOR_BUFFER_BIT);
+  gl.drawArrays(gl.TRIANGLES, 0, 6);
+
+  const depth = -Math.log10(scale);
+  hud.textContent =
+    `Center: ${centerX.toPrecision(15)}, ${centerY.toPrecision(15)}\n` +
+    `Scale:  ${scale.toExponential(4)}   Depth: ${depth.toFixed(1)}   Iter: ${maxIter}\n` +
+    `Mode:   Double-float emulation (~14 digit precision)`;
+
+  requestAnimationFrame(loop);
+}
+requestAnimationFrame(loop);
+</script>
+</body>
+</html>
