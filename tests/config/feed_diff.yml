@@ -1,5 +1,6 @@
 max_removed_items: 0
 max_added_items: 5
+allow_rolling_window_evictions: true
 max_title_delta: 0
 max_url_delta: 0
 max_image_delta: 0

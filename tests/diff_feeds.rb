@@ -154,6 +154,25 @@ def clip(text, limit = 90)
   normalized[0, limit - 3] + '...'
 end
 
+def detect_rolling_window_evictions(baseline, current, added_keys, removed_keys)
+  return [] if added_keys.empty? || removed_keys.empty?
+  return [] unless baseline.fetch('item_count', 0).to_i == current.fetch('item_count', 0).to_i
+
+  baseline_order = baseline.fetch('item_order', [])
+  current_order = current.fetch('item_order', [])
+  added_in_order = current_order.select { |key| added_keys.include?(key) }
+  removed_in_order = baseline_order.select { |key| removed_keys.include?(key) }
+
+  return [] unless current_order.first(added_in_order.length) == added_in_order
+  return [] unless baseline_order.last(removed_in_order.length) == removed_in_order
+
+  preserved_baseline = baseline_order.reject { |key| removed_keys.include?(key) }
+  preserved_current = current_order.reject { |key| added_keys.include?(key) }
+  return [] unless preserved_baseline == preserved_current
+
+  removed_in_order
+end
+
 def compare_snapshots(baseline, current, config)
   baseline_map = item_map(baseline)
   current_map = item_map(current)
@@ -262,9 +281,18 @@ def compare_snapshots(baseline, current, config)
     end
   end
 
+  tolerated_removed_items = if config.fetch('allow_rolling_window_evictions', true)
+                              detect_rolling_window_evictions(baseline, current, added_keys, removed_keys)
+                            else
+                              []
+                            end
+  effective_removed_items = removed_keys - tolerated_removed_items
+
   {
     added_items: added_keys,
     removed_items: removed_keys,
+    tolerated_removed_items: tolerated_removed_items,
+    effective_removed_items: effective_removed_items,
     title_changes: title_changes,
     url_changes: url_changes,
     image_changes: image_changes,
@@ -279,7 +307,9 @@ end
 def metric_summary(diff)
   {
     'added_items' => diff[:added_items].length,
-    'removed_items' => diff[:removed_items].length,
+    'removed_items' => diff[:effective_removed_items].length,
+    'raw_removed_items' => diff[:removed_items].length,
+    'tolerated_removed_items' => diff[:tolerated_removed_items].length,
     'title_changes' => diff[:title_changes].length,
     'url_changes' => diff[:url_changes].length,
     'image_changes' => diff[:image_changes].length,
@@ -305,6 +335,7 @@ def violation_list(metrics, config)
 
   metrics.filter_map do |name, count|
     max = thresholds[name]
+    next if max.nil?
     next unless count > max
 
     "#{name}=#{count} exceeds #{max}"
@@ -398,7 +429,10 @@ FEEDS.each do |feed|
 
   puts "Feed diff report: #{feed[:label]}"
   puts " - added items: #{metrics['added_items']}"
-  puts " - removed items: #{metrics['removed_items']}"
+  puts " - removed items: #{metrics['raw_removed_items']}"
+  if metrics['tolerated_removed_items'].positive?
+    puts " - tolerated rolling-window evictions: #{metrics['tolerated_removed_items']}"
+  end
   puts " - title changes: #{metrics['title_changes']}"
   puts " - url changes: #{metrics['url_changes']}"
   puts " - image changes: #{metrics['image_changes']}"

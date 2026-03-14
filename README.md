@@ -355,7 +355,7 @@ Run the faster structural/content gate with: `make qa`
 
 Run the repository hygiene guard alone with: `make repo_guard`
 
-Refresh committed feed snapshots after an intentional feed-shape change with: `ruby tests/diff_feeds.rb --refresh`
+Refresh committed feed snapshots after an intentional feed format or baseline change with: `ruby tests/diff_feeds.rb --refresh`
 
 ## GitHub Workflows Overview
 

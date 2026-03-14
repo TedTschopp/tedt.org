@@ -58,7 +58,7 @@ Local parity:
 
 - `make qa` for the fast structural/content gate
 - `make quality_gate` for the full local gate (`make qa` + a11y + HTMLProofer)
-- `ruby tests/diff_feeds.rb --refresh` when intentionally updating feed baselines
+- `ruby tests/diff_feeds.rb --refresh` when intentionally updating feed baselines after feed format or baseline-policy changes
 
 Informational output emitted during the gate:
 
