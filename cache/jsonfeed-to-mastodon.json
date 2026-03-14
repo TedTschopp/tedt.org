@@ -3787,5 +3787,36 @@
       "https://tschopp.net/users/Ted/statuses/116194137116757951"
     ],
     "lastTootTimestamp": 1772981828653
+  },
+  "https://tedt.org/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/": {
+    "id": "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
+    "title": "The Lab That Keeps Working After You Go to Bed",
+    "summary": "Karpathy's autoresearch offers a concrete glimpse of a new pattern: tightly bounded AI systems that keep running disciplined experiments after the human goes to bed. Through an old Swiss legend, this piece explores what changes when machines take over the repetitive middle of discovery.",
+    "content_text": "Karpathy's autoresearch offers a concrete glimpse of a new pattern: tightly bounded AI systems that keep running disciplined experiments after the human goes to bed. Through an old Swiss legend, this piece explores what changes when machines take over the repetitive middle of discovery. https://tedt.org/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
+    "url": "https://tedt.org/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
+    "image": "https://tedt.org/img/2026-03/midnight-forge.webp",
+    "tags": [
+      "autoresearch",
+      "andrej karpathy",
+      "ai research",
+      "agentic ai",
+      "automation",
+      "knowledge work",
+      "swiss folklore",
+      "experimentation",
+      "human in the loop",
+      "machine optimization"
+    ],
+    "date_published": "2026-03-13T09:00:00-07:00",
+    "date_modified": "2026-03-13T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116224829627760846"
+    ],
+    "lastTootTimestamp": 1773450159229
   }
 }
