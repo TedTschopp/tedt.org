@@ -23,7 +23,7 @@ bullets:
 - The real human role shifts from doing every step to defining goals, guardrails, and valid measures of success.
 - Faster optimization increases the importance of choosing the right target and keeping the measuring stick honest.
 
-description: "A Swiss folk tale and Andrej Karpathy's autoresearch project point to the same emerging reality: machines can now carry the repetitive middle of discovery long after the human has stepped away. The opportunity is real, but so is the need for sharper human judgment about goals, guardrails, and what should be optimized."
+description: "A Swiss folk tale and Andrej Karpathy's autoresearch project point to the same emerging reality: machines can now do the repetitive work that takes place in the middle of discovery long after the human has stepped away. The opportunity is real, but so is the need for sharper human judgment about goals, guardrails, and what should be optimized."
 
 seo-description: "Karpathy's autoresearch project shows how AI can automate disciplined experimentation overnight. Framed through a Swiss legend, this essay explores what that means for research, knowledge work, and human responsibility."
 
@@ -63,7 +63,7 @@ image: /img/2026-03/midnight-forge.webp
 image-alt: "A blacksmith works inside a forge, forging weapons in a glowing workshop that evokes the midnight helper from Swiss folklore."
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
-image-description: "A blacksmith scene set inside a hollowed-out tree, lit by forge light and framed to suggest craft continuing deep into the night. The image supports the essay's link between Swiss folklore and modern AI systems that keep working after the human steps away."
+image-description: "A blacksmith scene, lit by forge light and framed to suggest craft continuing deep into the night. The image supports the essay's link between Swiss folklore and modern AI systems that keep working after the human steps away."
 image-title: "A Blacksmith Making Weapons"
 image_width: 1456
 image_height: 816
