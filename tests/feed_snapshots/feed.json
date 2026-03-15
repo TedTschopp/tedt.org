@@ -17,6 +17,7 @@
   },
   "item_count": 36,
   "item_order": [
+    "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
     "/An-Introduction-to-OpenClaw/",
     "/Agents-Dont-Click/",
     "/Reprint-The-Death-of-Software/",
@@ -51,8 +52,7 @@
     "/prompts/objectives-key-results/",
     "/prompts/module-format/",
     "/prompts/module-builder/",
-    "/prompts/microsoft-power-automate-systems-architect/",
-    "/prompts/lean-six-sigma-analysis/"
+    "/prompts/microsoft-power-automate-systems-architect/"
   ],
   "items": [
     {
@@ -144,6 +144,17 @@
       "diff_hash": "17fc59a018bab150eb8035bd6d1256da5e6b15127b6660acf5e5fcaab318cf1f"
     },
     {
+      "key": "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
+      "id": "https://tedt.org/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
+      "url": "https://tedt.org/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
+      "title": "The Lab That Keeps Working After You Go to Bed",
+      "summary": "Karpathy's autoresearch offers a concrete glimpse of a new pattern: tightly bounded AI systems that keep running disciplined experiments after the human goes to bed. Through an old Swiss legend, this piece explores what changes when machines take over the repetitive middle of discovery.",
+      "content_excerpt": "There is a certain kind of tired that does not come from lifting something heavy, but from trying to understand something stubborn. You change one thing. You test it. You wait. You read the result. Then you do it again. By the end of the ni",
+      "content_length": 6610,
+      "image": "/img/2026-03/midnight-forge.webp",
+      "diff_hash": "3f505200e15c0676f517e2d2156813bd1ee583a33ff3697a03a903a83d7ee137"
+    },
+    {
       "key": "/The-Pancake-Protocol/",
       "id": "https://tedt.org/The-Pancake-Protocol/",
       "url": "https://tedt.org/The-Pancake-Protocol/",
@@ -175,17 +186,6 @@
       "content_length": 199240,
       "image": "/img/2025-11/The-Intelligence-Inversion-3.webp",
       "diff_hash": "b682f588087eeb715956774a77e02736954626ff7ce2bb5cba2b07db8c8ead31"
-    },
-    {
-      "key": "/prompts/lean-six-sigma-analysis/",
-      "id": "https://tedt.org/prompts/lean-six-sigma-analysis/",
-      "url": "https://tedt.org/prompts/lean-six-sigma-analysis/",
-      "title": "Business Lean Six Sigma Analysis",
-      "summary": "A specialized prompt for business lean six sigma analysis with advanced AI capabilities and structured output formatting.",
-      "content_excerpt": "This prompt is designed for professional business lean six sigma analysis prompt designed for high-quality content generation and structured analysis.How to Use This Prompt Copy the prompt from the prompt content section above Customize var",
-      "content_length": 1386,
-      "image": null,
-      "diff_hash": "be58538423eae113aedd01a06bf4daf71cbbe50503c80246c2ed22fb129d6745"
     },
     {
       "key": "/prompts/microsoft-power-automate-systems-architect/",

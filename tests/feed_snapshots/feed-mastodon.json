@@ -17,6 +17,7 @@
   },
   "item_count": 12,
   "item_order": [
+    "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
     "/An-Introduction-to-OpenClaw/",
     "/Agents-Dont-Click/",
     "/Reprint-The-Death-of-Software/",
@@ -27,8 +28,7 @@
     "/prompts/product-requirements-document-prd-template-3/",
     "/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/",
     "/Winning-the-Intelligence-Inversion/",
-    "/When-the-Machines-Dont-Sleep/",
-    "/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/"
+    "/When-the-Machines-Dont-Sleep/"
   ],
   "items": [
     {
@@ -63,17 +63,6 @@
       "content_length": 178,
       "image": "https://tedt.org/img/2026-01/color-tool.webp",
       "diff_hash": "70ed5ea96892c2b6294e30143359ea388bae78f1fd81880c4ec8ca5ab081e337"
-    },
-    {
-      "key": "/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/",
-      "id": "/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/",
-      "url": "https://tedt.org/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/",
-      "title": "From Guesswork to Geometry: How We Measured the Mind",
-      "summary": "This year’s AGI Definition Project maps machine cognition across ten human‑style domains, replacing metaphors with measurement. GPT‑5’s 58% score shows rapid but uneven progress.",
-      "content_excerpt": "This year’s AGI Definition Project maps machine cognition across ten human‑style domains, replacing metaphors with measurement. GPT‑5’s 58% score shows rapid but uneven progress. https://tedt.org/From-Guesswork-to-Geometry-How-We-Measured-t",
-      "content_length": 248,
-      "image": "https://tedt.org/img/2025-10/From-Guesswork-to-Geometry.webp",
-      "diff_hash": "fd68960cb64e8fa97b02f3b17a7a28d8254e4789edda918b15076662246eb0a2"
     },
     {
       "key": "/How-to-Communicate-in-a-World-of-AI/",
@@ -118,6 +107,17 @@
       "content_length": 371,
       "image": "https://tedt.org/img/Financial-Times-Paper.webp",
       "diff_hash": "a47c7faa652b67a0599980712944b3eba860d019e225f04c1cf430c27fe62814"
+    },
+    {
+      "key": "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
+      "id": "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
+      "url": "https://tedt.org/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
+      "title": "The Lab That Keeps Working After You Go to Bed",
+      "summary": "Karpathy's autoresearch offers a concrete glimpse of a new pattern: tightly bounded AI systems that keep running disciplined experiments after the human goes to bed. Through an old Swiss legend, this piece explores what changes when machines take over the repetitive middle of discovery.",
+      "content_excerpt": "Karpathy's autoresearch offers a concrete glimpse of a new pattern: tightly bounded AI systems that keep running disciplined experiments after the human goes to bed. Through an old Swiss legend, this piece explores what changes when machine",
+      "content_length": 352,
+      "image": "https://tedt.org/img/2026-03/midnight-forge.webp",
+      "diff_hash": "1686b85b2eac6031043f2827f8775bc514f7b75287f20175238bd132fd209196"
     },
     {
       "key": "/The-Pancake-Protocol/",
