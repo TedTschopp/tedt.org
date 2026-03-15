@@ -50,7 +50,7 @@ keywords:
 - why prompting is not enough
 - legacy software and AI
 
-image: /img/2026-03/Legacy-Software.webp
+image: /img/categories/home-hero-images/hero-hardware.webp
 image-alt: "A close view of a vintage computer console with a beige keyboard, built-in screen, and dense control panels full of switches, buttons, and status lights."
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
@@ -225,22 +225,21 @@ It is the thing that turns AI from a parlor trick into leverage. The thing that 
 
 Here is what I have learned from building these agents, using them, and watching other people struggle with them: the people who get the most out of AI are rarely the people with the most jargon. They are the people who know how to bring the problem into the room.
 
-They can explain where they are.</br>
-They can explain what they are trying to do.</br>
-They can show what they are seeing.</br>
-They can name the constraints.</br>
-They can say what success looks like.</br>
-
-And when the first answer is not quite right, they know how to add context and keep moving.
+They can explain where they are.<br>
+They can explain what they are trying to do.<br>
+They can show what they are seeing.<br>
+They can name the constraints.<br>
+They can say what success looks like.<br>
+And when the first answer is not quite right, they know how to add context and keep moving.<br>
 
 That matters because sometimes the agent can do the task itself. It can research, compare, summarize, write, analyze, draft, debug, and plan. Other times it cannot directly do the work because the work still lives in your body, your tools, your permissions, or the physical world. But even then, it can still move things forward, if you know how to bring it close enough to the problem.
 
-A screenshot.</br>
-A photo.</br>
-A spreadsheet.</br>
-A rough draft.</br>
-An error message.</br>
-A sentence that says, "Here is what I tried, and here is where I am stuck."</br>
+A screenshot.<br>
+A photo.<br>
+A spreadsheet.<br>
+A rough draft.<br>
+An error message.<br>
+A sentence that says, "Here is what I tried, and here is where I am stuck."<br>
 
 That is often the difference between frustration and leverage.
 
@@ -264,10 +263,10 @@ And here is the trick.
 
 This may not be a new skill at all.
 
-It is what makes good marriages work.</br>
-What makes good teams work.</br>
-What makes good leaders work.</br>
-What makes good friendships work.</br>
+It is what makes good marriages work.<br>
+What makes good teams work.<br>
+What makes good leaders work.<br>
+What makes good friendships work.<br>
 
 The one skill you need to be successful with AI?
 
