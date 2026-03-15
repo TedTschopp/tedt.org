@@ -1,0 +1,36 @@
+name: DUSD Lunch Menu Calendar
+
+on:
+  schedule:
+    - cron: '15 15 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh-calendar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Setup Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r _code/dusd_lunch_menu_requirements.txt
+
+      - name: Build DUSD lunch calendar
+        run: |
+          python _code/build_dusd_lunch_calendar.py --output dusd-lunch-menu.ics
+
+      - name: Commit calendar update
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore: refresh DUSD lunch calendar"
+          file_pattern: dusd-lunch-menu.ics
