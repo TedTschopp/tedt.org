@@ -100,8 +100,18 @@
           // New segmented control (Show/Hide) in navbar
           const toggleGroup = document.getElementById('tocVisibilityToggle');
           if(toggleGroup){
+            const toggleContainer = toggleGroup.closest('[data-toc-visibility-container]');
             const showBtn = toggleGroup.querySelector('button[data-toc-visibility="show"]');
             const hideBtn = toggleGroup.querySelector('button[data-toc-visibility="hide"]');
+
+            if(toggleContainer){
+              toggleContainer.hidden = !!disabled;
+              if(disabled){
+                toggleContainer.style.display = 'none';
+              } else {
+                toggleContainer.style.removeProperty('display');
+              }
+            }
 
             setDisabled(showBtn, !!disabled);
             setDisabled(hideBtn, !!disabled);
