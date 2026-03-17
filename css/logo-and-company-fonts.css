@@ -2,6 +2,28 @@
 /* Watermark logo overlays                                                     */
 /* ========================================================================== */
 
+@font-face {
+  font-family:"tschopp-housemark-optimum";
+  src:url('/fonts/tschopp-housemark-optimum.woff2') format('woff2'),
+      url('/fonts/tschopp-housemark-optimum.woff') format('woff'),
+      url('/fonts/tschopp-housemark-optimum.ttf') format('truetype');
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+}
+
+.icon-tschopp-housemark-optimum::before {
+  content:'\54';
+  font-family:"tschopp-housemark-optimum";
+  font-style:normal;
+  font-weight:normal;
+  display:inline-block;
+  line-height:1;
+  text-rendering:optimizeLegibility;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
 .Dohring-watermark,
 .TORC-watermark,
 .SCE-watermark,
@@ -357,6 +379,25 @@ footer.bd-footer .fnp-name,
 footer.bd-footer .p-note .mb-2 {
   color:var(--footer-heading) !important;
   font-weight:600;
+}
+
+footer.bd-footer .footer-profile-details {
+  margin-top:.75rem;
+  text-align:center;
+}
+
+footer.bd-footer .footer-profile-details li {
+  margin-bottom:.45rem;
+  color:var(--footer-muted);
+}
+
+footer.bd-footer .footer-profile-label {
+  display:block;
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--footer-muted);
 }
 
 footer.bd-footer a {

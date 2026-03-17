@@ -1,5 +1,7 @@
 <!-- Footer -->
   {% assign site_profile = site.profile %}
+  {% assign profile_social = site_profile.social %}
+  {% assign mastodon_parts = profile_social.mastodon_username | split: '@' %}
   <footer class="bd-footer py-4 py-md-5 mt-5">
   <div class="container py-4 py-md-5 px-4 px-md-3 h-card vcard" id="hcard-{{ site_profile.givenname }}-{{ site_profile.familyname }}">
           <div class="row">
@@ -27,6 +29,34 @@
                     <span class="p-region">{{ site_profile.region }}</span>, 
                     <span class="p-country-name">{{ site_profile.country }}</span>
                   </p>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-auto">
+                  <ul class="list-unstyled small footer-profile-details mb-0">
+                    <li>
+                      <span class="footer-profile-label">Website</span>
+                      <a href="{{ site_profile.url }}" class="u-url" rel="me">{{ site_profile.url | replace: 'https://', '' | replace: 'http://', '' }}</a>
+                    </li>
+                    {% if site_profile.email %}
+                      <li>
+                        <span class="footer-profile-label">Email</span>
+                        <a href="mailto:{{ site_profile.email }}" class="u-email">{{ site_profile.email }}</a>
+                      </li>
+                    {% endif %}
+                    {% if mastodon_parts.size > 1 %}
+                      <li>
+                        <span class="footer-profile-label">Fediverse</span>
+                        <a href="https://{{ mastodon_parts[1] }}/@{{ mastodon_parts[0] }}" rel="me">@{{ profile_social.mastodon_username }}</a>
+                      </li>
+                    {% endif %}
+                    {% if site_profile.phonenumber %}
+                      <li>
+                        <span class="footer-profile-label">Phone</span>
+                        <a href="tel:{{ site_profile.phonenumber | replace: ' ', '' }}" class="p-tel">{{ site_profile.phonenumber }}</a>
+                      </li>
+                    {% endif %}
+                  </ul>
                 </div>
               </div>
             </div>
