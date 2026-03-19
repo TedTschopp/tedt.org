@@ -133,7 +133,7 @@ In 1474, a sentence was passed by the Senate of Basel[^5], in which a rooster wa
 
 ---
 
-> ###### As noted by: T. Tschopp
+> ## As noted by: T. Tschopp
 > 
 > ### General Information
 > - **Title**: The Rooster and the Basilisk Egg of 1474
@@ -147,7 +147,7 @@ In 1474, a sentence was passed by the Senate of Basel[^5], in which a rooster wa
 > 2. **Judicial Involvement**: Free Boys hold a court and decide to burn the rooster and the egg.
 > 3. **Public Event**: The burning takes place in the presence of a large crowd from both the city and countryside.
 > 4. **Community Beliefs**: A seven-year-old rooster's egg, incubated by a snake known as Coluber or by sunlight, can give birth to a basilisk.
->   
+>
 > ### Beliefs about the Basilisk
 > - **Physical Characteristics**: Half rooster, half snake
 > - **Size**: Small (only a few spans in length)
@@ -157,7 +157,7 @@ In 1474, a sentence was passed by the Senate of Basel[^5], in which a rooster wa
 >   - Causes vegetation to wither
 >   - Deadly poison that can even travel through a lance
 > - **Weakness**: Dies instantly upon seeing its own reflection
->   
+>
 > ### Cultural Context
 > - **August** Is an interesting time for the event to take place.  Things are normally born in the spring.  This is almost at harvest time.
 > - **Gender Bending** Is this a reference to paganism or a reference to satanism in the form of inversion.  Interesting that religion pays no part in this telling.

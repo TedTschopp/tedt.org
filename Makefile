@@ -1,4 +1,4 @@
-.PHONY: build normalize validate_mastodon feed_check feed_diff legacy_check length_report proofer proofer_advisory a11y_check qa quality_gate all clean gw-export gw-diff docs-toc check-toc repo_guard
+.PHONY: build normalize validate_mastodon feed_check feed_diff legacy_check length_report recent_cache_check proofer proofer_advisory a11y_check qa quality_gate all clean gw-export gw-diff docs-toc check-toc repo_guard
 
 repo_guard:
 	ruby tests/repo_guard.rb
@@ -27,6 +27,9 @@ legacy_check:
 length_report:
 	ruby tests/report_mastodon_feed_lengths.rb
 
+recent_cache_check:
+	ruby tests/check_recent_by_category_cache.rb
+
 proofer:
 	bundle exec htmlproofer ./_site --check-html --allow-missing-href $(if $(SKIP_EXTERNAL),--disable-external,)
 
@@ -37,7 +40,7 @@ proofer_advisory:
 a11y_check:
 	npm run test:a11y
 
-qa: repo_guard normalize build legacy_check feed_check validate_mastodon feed_diff length_report tools_css_sync_check
+qa: repo_guard normalize build legacy_check feed_check validate_mastodon feed_diff length_report recent_cache_check tools_css_sync_check
 
 quality_gate: qa a11y_check
 	$(MAKE) SKIP_EXTERNAL=1 proofer_advisory

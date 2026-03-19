@@ -96,11 +96,51 @@ jobs:
         if: steps.guard.outputs.should_post != 'true'
         run: |
           echo "Skipping: latest item already posted"
+
+      - name: Sync mastodon ids from cache
+        id: sync_frontmatter
+        if: always()
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          python3 _code/sync_masto_ids_from_cache.py --write --gha 2>&1 | tee tmp/sync-masto-ids.txt
+
+      - name: Guard Mastodon workflow mutations
+        id: masto_mutation_guard
+        if: always()
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          git diff --name-only > tmp/mastodon-changed-files.txt || true
+
+          if [ ! -s tmp/mastodon-changed-files.txt ]; then
+            {
+              echo "has_changes=false"
+              echo "file_pattern="
+            } >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+
+          UNEXPECTED=$(grep -Ev '^(cache/.+\.json|_posts/.+\.md)$' tmp/mastodon-changed-files.txt || true)
+          if [ -n "$UNEXPECTED" ]; then
+            echo "Unexpected file mutations detected during Mastodon workflow:" >&2
+            echo "$UNEXPECTED" >&2
+            exit 1
+          fi
+
+          {
+            echo "has_changes=true"
+            echo "file_pattern<<EOF"
+            cat tmp/mastodon-changed-files.txt
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Commit mastodon cache/front matter (if changed)
+        if: steps.masto_mutation_guard.outputs.has_changes == 'true'
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: "chore: update Mastodon cache/front matter"
-          file_pattern: cache/*.json _posts/**/*.md
+          file_pattern: ${{ steps.masto_mutation_guard.outputs.file_pattern }}
 
       - name: Capture GitHub Actions errors/warnings (Allure)
         if: always()

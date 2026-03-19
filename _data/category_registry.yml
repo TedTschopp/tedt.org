@@ -218,9 +218,9 @@ folklore:
     end: "#f59e0b"
     fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
     titleStyle: italic
-    titleColorLight: "#f59e0b"
+    titleColorLight: "#b45309"
     titleColorDark: "#92400e"
-    titleHoverColorLight: "#f59e0b"
+    titleHoverColorLight: "#b45309"
     titleHoverColorDark: "#92400e"
     titleWeight: 500
   category_home_page: /category/folklore/

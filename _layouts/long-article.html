@@ -37,6 +37,19 @@
                 {% if page.mermaid == true or page.mermaid == 'true' %}
                     {% include assets/mermaid.html %}
                 {% endif %}
+        <style>
+            #table-of-contents-card .btn-outline-secondary {
+                --bs-btn-color: var(--bs-primary-text-emphasis);
+                --bs-btn-border-color: var(--bs-primary-text-emphasis);
+                --bs-btn-hover-color: var(--bs-white);
+                --bs-btn-hover-bg: var(--bs-primary);
+                --bs-btn-hover-border-color: var(--bs-primary);
+                --bs-btn-active-color: var(--bs-white);
+                --bs-btn-active-bg: var(--bs-primary-text-emphasis);
+                --bs-btn-active-border-color: var(--bs-primary-text-emphasis);
+                --bs-btn-focus-shadow-rgb: var(--bs-primary-rgb);
+            }
+        </style>
   </head>
     <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
     {%- comment -%} Removed skip link per user request. (Previously: a11y shortcut 'Skip to content'). {%- endcomment -%}

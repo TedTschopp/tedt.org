@@ -8,7 +8,12 @@
 # Defaults to 50 if not set.
 #
 # Exposes to Liquid:
-#   site.recent_by_category["Some Category"] -> Array<Post> newest first (already sorted / truncated)
+#   site.recent_by_category["some-slug"] -> Array<Post> newest first
+#   site.recent_by_category["Human Title"] -> same array when registry metadata exists
+#   site.recent_by_category["Legacy Alias"] -> same array when raw_names define aliases
+#
+# Registry-aware alias expansion keeps homepage/category templates on the fast path even when
+# older posts still use legacy category spellings.
 #
 module Jekyll
   class CategoryRecentIndex < Jekyll::Generator
@@ -17,7 +22,8 @@ module Jekyll
 
     def generate(site)
       limit = resolve_limit(site)
-      map = Hash.new { |h, k| h[k] = [] }
+      canonical_map = Hash.new { |h, k| h[k] = [] }
+      alias_map = build_alias_map(site)
 
       if ENV['CATEGORY_INDEX_PROBE'] == '1'
         rss = `ps -o rss= -p #{Process.pid}`.to_i
@@ -27,16 +33,21 @@ module Jekyll
       # Collect posts per category
       site.posts.docs.each do |doc|
         Array(doc.data['categories']).each do |cat|
-          map[cat] << doc
+          category_name = cat.to_s.strip
+          next if category_name.empty?
+
+          canonical_key = alias_map[normalize_key(category_name)] || category_name
+          canonical_map[canonical_key] << doc unless canonical_map[canonical_key].include?(doc)
         end
       end
 
       # Sort descending by date and truncate
-      map.each do |cat, arr|
+      canonical_map.each do |cat, arr|
         sorted = arr.sort_by { |d| d.date || Time.at(0) }.reverse!
-        map[cat] = sorted.first(limit)
+        canonical_map[cat] = sorted.first(limit)
       end
 
+      map = expand_alias_entries(site, canonical_map)
       site.config['recent_by_category'] = map
 
       if ENV['CATEGORY_INDEX_PROBE'] == '1'
@@ -56,6 +67,51 @@ module Jekyll
       cfg = site.config['recent_by_category_limit']
       env = ENV['RECENT_BY_CATEGORY_LIMIT']
       (env || cfg || 50).to_i
+    end
+
+    def build_alias_map(site)
+      registry = site.data['category_registry'] || {}
+      aliases = {}
+
+      registry.each do |slug, entry|
+        canonical_slug = slug.to_s.strip
+        next if canonical_slug.empty?
+
+        [canonical_slug, entry['title'], *Array(entry['raw_names'])].compact.each do |name|
+          normalized = normalize_key(name)
+          next if normalized.empty?
+
+          aliases[normalized] = canonical_slug
+        end
+      end
+
+      aliases
+    end
+
+    def expand_alias_entries(site, canonical_map)
+      expanded = canonical_map.dup
+      registry = site.data['category_registry'] || {}
+
+      registry.each do |slug, entry|
+        canonical_slug = slug.to_s.strip
+        next if canonical_slug.empty?
+
+        posts = canonical_map[canonical_slug]
+        next if posts.nil? || posts.empty?
+
+        [canonical_slug, entry['title'], *Array(entry['raw_names'])].compact.each do |name|
+          alias_name = name.to_s.strip
+          next if alias_name.empty?
+
+          expanded[alias_name] = posts
+        end
+      end
+
+      expanded
+    end
+
+    def normalize_key(value)
+      value.to_s.strip.downcase
     end
   end
 end

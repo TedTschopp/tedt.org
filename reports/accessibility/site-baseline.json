@@ -2,65 +2,20 @@
   {
     "label": "Homepage",
     "route": "/",
-    "blockingViolationCount": 10,
-    "blockingViolations": [
-      {
-        "id": "color-contrast",
-        "impact": "serious",
-        "help": "Elements must meet minimum color contrast ratio thresholds",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
-        "affectedNodes": 10,
-        "targets": [
-          ".col:nth-child(1) > .h-100.card > .py-0.card-footer.h-100 > .container:nth-child(1) > .align-items-stretch.row > .rounded-0.px-0.card > .g-0.row > .col-md-8 > .card-body > h5 > a",
-          ".col:nth-child(1) > .h-100.card > .py-0.card-footer.h-100 > .container:nth-child(2) > .align-items-stretch.row > .rounded-0.px-0.card > .g-0.row > .col-md-8 > .card-body > h5 > a",
-          ".col:nth-child(1) > .h-100.card > .py-0.card-footer.h-100 > .container:nth-child(3) > .align-items-stretch.row > .rounded-0.px-0.card > .g-0.row > .col-md-8 > .card-body > h5 > a",
-          "#folklore > .category-theme[data-category=\"folklore\"][data-cat=\"folklore\"] > .Folklore.category-title[href$=\"folklore/\"]",
-          ".col:nth-child(2) > .h-100.card > .py-0.card-footer.h-100 > .container:nth-child(1) > .align-items-stretch.row > .rounded-0.px-0.card > .g-0.row > .col-md-8 > .card-body > h5 > a"
-        ]
-      }
-    ]
+    "blockingViolationCount": 0,
+    "blockingViolations": []
   },
   {
     "label": "Prompt Library",
     "route": "/prompts/",
-    "blockingViolationCount": 74,
-    "blockingViolations": [
-      {
-        "id": "color-contrast",
-        "impact": "serious",
-        "help": "Elements must meet minimum color contrast ratio thresholds",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
-        "affectedNodes": 74,
-        "targets": [
-          "#toggle-tags",
-          "#toggle-keywords",
-          "button[data-filter-value=\"ai-simulation\"]",
-          "button[data-filter-value=\"gherkin\"]",
-          ".btn-keyword[data-filter-value=\"iso-standards\"][data-filter-type=\"keyword\"]"
-        ]
-      }
-    ]
+    "blockingViolationCount": 0,
+    "blockingViolations": []
   },
   {
     "label": "Prompt Details",
     "route": "/prompts/business-case-and-requirements-assistant/",
-    "blockingViolationCount": 41,
-    "blockingViolations": [
-      {
-        "id": "color-contrast",
-        "impact": "serious",
-        "help": "Elements must meet minimum color contrast ratio thresholds",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
-        "affectedNodes": 41,
-        "targets": [
-          ".col:nth-child(1) > .card.h-100 > .card-body > a > h5",
-          ".col:nth-child(2) > .card.h-100 > .card-body > a > h5",
-          ".col:nth-child(3) > .card.h-100 > .card-body > a > h5",
-          ".col:nth-child(4) > .card.h-100 > .card-body > a > h5",
-          ".col:nth-child(5) > .card.h-100 > .card-body > a > h5"
-        ]
-      }
-    ]
+    "blockingViolationCount": 0,
+    "blockingViolations": []
   },
   {
     "label": "Profile",
@@ -71,52 +26,13 @@
   {
     "label": "Category Archive",
     "route": "/category/Prompts.html",
-    "blockingViolationCount": 1,
-    "blockingViolations": [
-      {
-        "id": "color-contrast",
-        "impact": "serious",
-        "help": "Elements must meet minimum color contrast ratio thresholds",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
-        "affectedNodes": 1,
-        "targets": [
-          "p"
-        ]
-      }
-    ]
+    "blockingViolationCount": 0,
+    "blockingViolations": []
   },
   {
     "label": "Long-form Article",
     "route": "/Swiss-Folklore/The-Basilisk-Egg/",
-    "blockingViolationCount": 25,
-    "blockingViolations": [
-      {
-        "id": "color-contrast",
-        "impact": "serious",
-        "help": "Elements must meet minimum color contrast ratio thresholds",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=playwright",
-        "affectedNodes": 21,
-        "targets": [
-          ".p-author",
-          "a[target=\"_new\"]",
-          ".fn",
-          "#btnToggleTocInline",
-          "a[href$=\"#the-basilisk-egg\"]"
-        ]
-      },
-      {
-        "id": "list",
-        "impact": "serious",
-        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/list?application=playwright",
-        "affectedNodes": 4,
-        "targets": [
-          "li:nth-child(3) > ol",
-          "li:nth-child(3) > ol > ol",
-          "li:nth-child(3) > ol > ol > ol",
-          "li:nth-child(3) > ol > ol > ol > ol"
-        ]
-      }
-    ]
+    "blockingViolationCount": 0,
+    "blockingViolations": []
   }
 ]

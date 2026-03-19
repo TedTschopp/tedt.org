@@ -1,10 +1,9 @@
 # TedT.org
 
-[![Site CI](https://github.com/TedTschopp/tedt.org/actions/workflows/site-ci.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/site-ci.yml)
-[![Deploy](https://github.com/TedTschopp/tedt.org/actions/workflows/deploy-pages.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/deploy-pages.yml)
-[![Mastodon Backfill](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-backfill.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-backfill.yml)
-[![Mastodon Feed Publish](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed-publish.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed-publish.yml)
-[![Mastodon Dedupe](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-dedupe.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-dedupe.yml)
+[![Site Quality + Deploy](https://github.com/TedTschopp/tedt.org/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/deploy.yml)
+[![Feed to Mastodon](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed.yml)
+[![DUSD Lunch Menu Calendar](https://github.com/TedTschopp/tedt.org/actions/workflows/dusd-lunch-menu.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/dusd-lunch-menu.yml)
+[![Purge Actions Caches](https://github.com/TedTschopp/tedt.org/actions/workflows/purge-actions-caches.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/purge-actions-caches.yml)
 
 Welcome to the repository for my personal homepage, [TedT.org](https://tedt.org). This site is a collection of my projects, writings, and interests, built using Jekyll and various open-source tools.
 
@@ -52,6 +51,7 @@ Key technologies and architectural decisions powering the site:
 ### Quality & Security
 
 - HTML Proofer and feed integrity checks in CI.
+- `recent_by_category` cache validation guards the homepage/category fast path against registry alias drift.
 - Memory probe & optional periodic GC (env gated) for diagnostics ([ADR 0008](docs/adr/0008-memory-probe-and-caching.md)).
 - `ffi` pinned to 1.16.3 for stability ([ADR 0009](docs/adr/0009-ffi-downgrade-stability-and-upgrade-path.md)) until upgrade conditions met.
 
@@ -364,8 +364,9 @@ Current active workflows:
 | Workflow                | File                           | Triggers                      | Purpose                                                                |
 |-------------------------|--------------------------------|-------------------------------|------------------------------------------------------------------------|
 | Site Quality + Deploy   | `deploy.yml`                   | push to `main`, PR, manual    | Canonical quality gate, Allure artifacts, and Pages deploy on `main`   |
-| Mastodon Feed Publish   | `mastodon-feed.yml`            | push to `main`, 6h, manual    | Post newest site entry to Mastodon and sync toot metadata              |
-| Purge Actions Caches    | `purge-actions-caches.yml`     | manual                        | Clean up stale GitHub Actions caches                                   |
+| Feed to Mastodon        | `mastodon-feed.yml`            | push to `main`, every 6h, manual | Post newest site entry to Mastodon and sync toot metadata           |
+| DUSD Lunch Menu Calendar| `dusd-lunch-menu.yml`          | daily, manual                 | Rebuild and commit the district lunch calendar ICS file                |
+| Purge Actions Caches    | `purge-actions-caches.yml`     | weekly, manual                | Clean up stale GitHub Actions caches                                   |
 
 Composite actions (DRY helpers) under `.github/actions/`:
 

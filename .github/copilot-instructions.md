@@ -133,16 +133,15 @@ Proposed (for awareness, not yet binding): 0004 Prompt Library Integration, 0005
 
 ### 17. `recent_by_category` Cache Maintenance
 Purpose: Speed homepage & carousel rendering by avoiding repeated global scans when selecting recent posts per category.
-Location: Stored in `_config.yml` (or generated plugin structure) as a hash keyed by category slug.
+Location: Generated at build time by `_plugins/category_recent_index.rb` and exposed to Liquid as `site.recent_by_category` / `site.config.recent_by_category`.
 Refresh Situations:
-* Adding many posts that should immediately appear on the homepage but are absent due to stale cache.
-* Changing category slug / alias logic in `category_registry.yml`.
+* Changing category slug, title, or alias logic in `category_registry.yml`.
 * Modifying selection heuristics (e.g., filtering out new layouts or categories).
 Refresh Method:
-1. Remove or comment the existing `recent_by_category` block in `_config.yml` (or run a dedicated script if present).
-2. Run a full clean build: `rm -rf _site && bundle exec jekyll build` (or CI task). A plugin or script (see ADR 0008) repopulates cached data if implemented; otherwise consider adding a helper script under `_code/` to regenerate deterministically.
-3. Commit regenerated cache only if deterministic and stable; otherwise leave empty to force runtime computation (trade-off: slower builds vs. clarity).
-Verification: Ensure homepage blog & carousel display expected new posts (no placeholders, at least up to 3 genuine items per category when available).
+1. Run a clean build: `rm -rf _site && bundle exec jekyll build` (or the CI/task equivalent).
+2. Run `ruby tests/check_recent_by_category_cache.rb` or `make qa` to verify registry slug/title/alias keys resolve to the expected newest-first post lists.
+3. If the check fails, fix the registry aliases or generator logic rather than hand-editing `_config.yml`; the cache is not persisted there.
+Verification: Ensure homepage blog & carousel display expected new posts and that the cache check passes without falling back to stale assumptions about `_config.yml` state.
 
 ### 18. CI Failure Triage Order
 When CI fails, debug in the following priority sequence:
@@ -244,8 +243,9 @@ make all                                 # Full validation including HTML Proofe
    - Builds with heartbeat monitoring (prevents timeout)
    - Ruby 3.2 with platform locking
    - Uploads artifact and deploys to GitHub Pages
-2. `mastodon-feed.yml` - Automated social posting
-3. `docs-markdown-toc.yml` - README TOC validation
+2. `mastodon-feed.yml` - Automated social posting and toot metadata sync
+3. `dusd-lunch-menu.yml` - Scheduled refresh of the district lunch calendar ICS export
+4. `purge-actions-caches.yml` - Scheduled/manual GitHub Actions cache cleanup
 
 **Testing Categories:**
 * Feed integrity: `ruby tests/check_feed_integrity.rb`
