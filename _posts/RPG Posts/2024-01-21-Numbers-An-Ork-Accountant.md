@@ -31,9 +31,9 @@ tags:
 keywords: ''
 location:
   name: Bradbury, CA
-coordinates:
-  latitude: 34.147
-  longitude: -117.9709
+  coordinates:
+    latitude: 34.147
+    longitude: -117.9709
 image: /img/2024-01/cyberpunk_club_outside_in_Los_Angeles.webp
 image-alt: Exterior of a cyberpunk nightclub in Los Angeles, lit by neon signs, wet
   reflective streets, futuristic cityscape backdrop

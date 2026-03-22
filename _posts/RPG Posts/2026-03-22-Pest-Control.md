@@ -1,20 +1,76 @@
-
+---
+layout: post
+title: "Pest Control: A Shadowrun Mystery in Seattle"
+title-url: null
+subtitle: Mr. Johnson sends the runners into a "simple" job that opens into murder, conspiracy, and Sixth World fallout
+subtitle-url: null
+quote: null
+excerpt: A routine Shadowrun job in Seattle uncovers bodies in a basement, the Brewster sisters' moral crusade, and a deeper conspiracy pulling the strings.
+source: tedt.org
+source-url: null
+call-to-action: null
+date: 2026-03-22 12:00:00
+update: null
+author:
+   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+   name: Ted Tschopp
+   url: https://tedt.org/
+bullets:
+- Mr. Johnson hires the runners for an apparently simple job
+- The Brewster house hides bodies and a long-running pattern of murder
+- A deeper force may be manipulating events from the shadows
+description: A Seattle-set Shadowrun adventure outline in which a routine Mr. Johnson job spirals into hidden murders, rogue AI intrigue, and hard moral choices for the runners.
+seo-description: A Seattle Shadowrun adventure where a routine Mr. Johnson job becomes a murder investigation, conspiracy thriller, and moral test for the runners.
+categories:
+- Role Playing Games
+- Shadowrun
+tags:
+- RPG
+- Shadowrun
+- Adventure
+- Seattle
+- Game Mastering
+keywords: 'shadowrun adventure, seattle, mr. johnson, game mastering'
+location:
+  name: Bradbury, CA
+  coordinates:
+    latitude: 34.147
+    longitude: -117.9709
+image: /img/2026-03/Meeting-Mr-Johnson-Shadowrun.webp
+image-alt: Shadowrunners meeting Mr. Johnson in a discreet Seattle bar before a dangerous job
+image-title: Meeting Mr. Johnson in Seattle
+image-description: A moody Shadowrun scene featuring a covert meeting with Mr. Johnson in a high-end Seattle bar, setting up a run that begins as routine pest control and escalates into murder, conspiracy, and Sixth World intrigue.
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+monster-or-magical-or-religious-ideas: null
+year-the-event-took-place: 2050
+mathjax: false
+mermaid: true
+order: null
+mastodon-post-id: null
+image_width: null
+image_height: null
+---
 
 ## Outline
 
 ### Act 1: The Pledge
+
 - **Setting the Scene**: The runners are hired for what seems like a standard job in the sprawl of Seattle. Their client is an elderly couple who appear sweet and harmless. They own a quaint old house that seems out of place in the grimy, tech-dominated city. The job is seemingly simple: they need help with some 'pest control' in their basement.
 - **The Ordinary Turned Extraordinary**: As the runners delve into their task, they discover that the basement holds secrets far more sinister than rats or bugs. Hidden beneath the old floorboards are numerous skeletons, each with a story that's eerily similar - visitors who never left. The elderly couple, it turns out, have been quietly murdering guests for years, using a homemade concoction of arsenic and other toxins, believing they are doing the world a service by eliminating 'undesirable' elements.
 
 ### Act 2: The Turn
+
 - **The Extraordinary Element**: As the runners grapple with this revelation, they must decide what to do with the couple. But things take a twist when they realize that one of the 'victims' was a high-ranking member of a powerful megacorp or criminal organization, sparking a city-wide hunt for the culprits.
 - **The Dilemma**: The runners are now caught in a complex web of moral ambiguity, corporate espionage, and street-level justice. They must navigate this treacherous terrain, dealing with shadowy figures who are searching for the truth or looking to bury it forever.
 
 ### Act 3: The Prestige
+
 - **The Climactic Reveal**: The adventure culminates in a grand reveal. The true mastermind behind the string of murders is not the elderly couple, but a more sinister force using them as pawns. This could be a rogue AI, a corporate executive, or a twisted mage, depending on your campaign's flavor.
 - **Resolution and Aftermath**: The runners must confront this mastermind in a thrilling finale. Depending on their choices, they could expose the truth to the public, leverage it for personal gain, or bury it in the shadows of the Sixth World. The consequences of their actions will ripple through their future runs, shaping their reputation in the shadow community.
 
 ### Additional Elements
+
 - **Integration with Shadowrun Themes**: Throughout the adventure, incorporate classic Shadowrun elements like magical intrigue, cybernetic enhancements, and the ever-present tension between megacorps, the underworld, and shadowrunners.
 - **Moral Quandaries and Character Development**: Give players opportunities to explore their characters' moral compasses and develop their backstories, especially in how they react to the discoveries and decisions they must make.
 
@@ -78,10 +134,10 @@
 
 These scenes offer a structured narrative while allowing for player agency and unexpected developments typical in TTRPGs. Each act builds upon the previous, leading to a crescendo that should be both surprising and satisfying for the players.
 
-
 ## Characters
 
-#### Main Characters
+### Main Characters
+
 1. **Mr. Johnson (Hirer)** - Played by Anthony Hopkins. A well-dressed, sophisticated elderly man with a gentle demeanor and a secretive past.
 2. **Abigail Brewster** - Played by Helen Mirren. A sweet-looking elderly woman, with a sinister hobby of poisoning those she deems morally corrupt.
 3. **Martha Brewster** - Played by Judi Dench. Abigail's sister, equally kind in appearance but ruthless in her moral judgement and actions.
@@ -89,7 +145,8 @@ These scenes offer a structured narrative while allowing for player agency and u
 5. **Jonathan Brewster** - Played by Javier Bardem. A menacing figure with a cybernetically altered face, whose criminal past haunts the Brewster household.
 6. **Officer O'Hara** - Played by Chris Hemsworth. A curious Lone Star officer with a passion for crime novels and a nose for something amiss.
 
-#### Supporting Characters
+### Supporting Characters
+
 1. **Elaine Harper** - Played by Emma Stone. A curious and headstrong journalist who lives next door and finds herself entangled in the mystery.
 2. **Reverend Dr. Harper** - Played by Morgan Freeman. Elaine's father, a local religious figure who is unaware of the dark secrets next door.
 3. **Teddy Brewster** - Played by Jim Carrey. A delusional relative of the Brewsters who believes he is President Theodore Roosevelt.
@@ -97,7 +154,8 @@ These scenes offer a structured narrative while allowing for player agency and u
 5. **Lieutenant Rooney** - Played by Viola Davis. A tough, no-nonsense Lone Star lieutenant who suspects something is off with the Brewsters.
 6. **Mr. Gibbs** - Played by Ian McKellen. An unsuspecting visitor to the Brewster home, oblivious to the danger he's in.
 
-#### Minor Characters
+### Minor Characters
+
 1. **Mr. Witherspoon** - Played by Hugh Grant. The administrator of a local asylum who gets unwittingly involved in the Brewsters' affairs.
 2. **Megacorp Executive** - Played by Charlize Theron. A cold and calculating executive whose involvement is deeper than it appears.
 3. **Street Gang Leader** - Played by Idris Elba. A charismatic yet ruthless leader who has a history with Jonathan Brewster.
@@ -134,7 +192,7 @@ graph TD
     N[Megacorp Executive] -->|Target| F
     O[Street Gang Leader] -->|Enemy| F
     P[Underworld Contact] -->|Ally| M
-    Q[Magic Shop Owner] -->|Supplier| M
+   Q[Magic Shop Owner] -->|Supplier| M
 ```
 
 ## NPC Cards
@@ -146,6 +204,7 @@ graph TD
 **Archetype**: Fixer/Information Broker
 
 **Attributes**:  
+
 - **Body**: 3  
 - **Quickness**: 3  
 - **Strength**: 2  
@@ -154,6 +213,7 @@ graph TD
 - **Willpower**: 4  
 
 **Skills**:  
+
 - **Negotiation**: 6  
 - **Etiquette (Corporate)**: 5  
 - **Etiquette (Street)**: 4  
@@ -163,16 +223,20 @@ graph TD
 - **Data Search**: 4  
 
 **Cyberware** (if any):  
+
 - Datajack (for direct neural interface with computers and networks)  
 - Cybernetic commlink (implanted communication device)
 
 **Bioware** (if applicable):  
+
 - (Optional based on campaign)
 
 **Contacts**:  
+
 - Various in corporate sector, underworld, and shadowrunner community.
 
 **Gear**:  
+
 - High-quality suit with concealed armor  
 - Secure commlink  
 - Concealed light pistol (for emergencies)  
@@ -198,6 +262,7 @@ graph TD
 **Quirks**: Has a habit of quoting philosophical texts and enjoys classical music. Shows a peculiar interest in the personal lives of the runners, which he uses to his advantage in negotiations.
 
 **Roleplaying Tips**:
+
 - Maintain an aura of mystery and control in interactions.
 - Use subtle manipulation and persuasion rather than direct threats.
 - Display a deep understanding of the Shadowrun world's politics and power dynamics.
@@ -223,6 +288,7 @@ graph TD
 **Quirks**: Enjoys hosting tea parties and other social gatherings, using these as a facade for her darker activities. Has an extensive collection of antique lace and porcelain.
 
 **Roleplaying Tips**:
+
 - Portray her as sweet and caring initially, gradually revealing her darker side.
 - Use her hospitality and charm to mask her true intentions.
 - Emphasize the contrast between her grandmotherly appearance and her sinister actions.
@@ -264,6 +330,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Enjoys baking and often offers homemade treats to guests, which may or may not be laced with her deadly concoctions. Has a fondness for old-fashioned things and traditions.
 
 **Roleplaying Tips**:
+
 - Portray her as warm and inviting, using her grandmotherly guise to hide her true intentions.
 - Emphasize her caring nature in interactions, creating a stark contrast with her actual deeds.
 - Showcase her deep bond with her sister, Abigail, often finishing each other's sentences or sharing knowing looks.
@@ -289,6 +356,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Has a habit of nervously fiddling with surgical tools or cybernetic parts. He often talks to himself, especially when deep in thought or performing surgery.
 
 **Roleplaying Tips**:
+
 - Portray him as brilliant but unstable, offering both help and potential danger to the players.
 - Use his nervous energy and quirky mannerisms to add an element of unpredictability.
 - Though he's an ally, hint at his unreliable nature and possible hidden agendas.
@@ -314,6 +382,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Has a preference for old-fashioned weapons, contrasting with his cybernetic nature. He often reminisces about the past, revealing a hint of nostalgia beneath his hardened exterior.
 
 **Roleplaying Tips**:
+
 - Portray him as menacing and formidable, making players cautious in their interactions with him.
 - Use his physical presence and cybernetic enhancements to create intimidating encounters.
 - Despite his antagonistic nature, reveal layers of complexity in his character that could lead to unexpected alliances.
@@ -339,6 +408,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Has a passion for old detective novels, which he often quotes. He's also known for his somewhat naive belief in the inherent goodness of people.
 
 **Roleplaying Tips**:
+
 - Portray him as earnest and well-meaning, with a strong moral compass.
 - Use his law enforcement role to create tension or assistance in the runners' activities.
 - Despite his role as an officer, show his willingness to bend the rules for the greater good.
@@ -364,6 +434,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Has a habit of showing up where she's least expected, often surprising or even startling those she's investigating.
 
 **Roleplaying Tips**:
+
 - Portray her as enthusiastic and clever, always looking for the angle to a story.
 - Use her journalism skills to aid or challenge the players in their endeavors.
 - Balance her ambitious nature with her moral compass and desire to do good.
@@ -389,6 +460,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Known for his insightful and often surprisingly relevant parables and sayings, which he uses to offer advice or make a point.
 
 **Roleplaying Tips**:
+
 - Portray him as warm and caring, with a strong sense of justice and righteousness.
 - Use his position as a moral and spiritual leader to influence or guide the players in their decisions.
 - Despite his religious role, show his awareness and understanding of the complex realities of the Shadowrun world.
@@ -414,6 +486,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Frequently reenacts moments from Theodore Roosevelt’s life, complete with speeches and charges. He insists on being addressed as 'Mr. President' and takes his presidential duties very seriously.
 
 **Roleplaying Tips**:
+
 - Portray him as wildly enthusiastic and good-natured, with a flair for the dramatic.
 - Use his delusions creatively to add humor and unpredictability to the game.
 - While he is a source of comedy, portray his character with a sense of dignity and warmth.
@@ -439,6 +512,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Has a love for old movies and often quotes them. He also has a habit of appearing unexpectedly, often at the most opportune or inopportune moments.
 
 **Roleplaying Tips**:
+
 - Play up his wit and charm, making him both likable and slightly enigmatic.
 - Use his connections to the Brewster family and the shadow world to create interesting plot hooks and twists.
 - Balance his humorous side with a deeper, more serious aspect that can be revealed over time.
@@ -464,6 +538,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Known for her straightforward and sometimes blunt manner of speaking. She also has a reputation for being exceptionally tough but fair.
 
 **Roleplaying Tips**:
+
 - Portray her as a strong, no-nonsense character who commands respect.
 - Use her law enforcement role to create tension or potential conflict with the players.
 - Despite her tough exterior, show moments where her more compassionate and just side shines through.
@@ -489,6 +564,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Tends to ramble on with stories from his past, often losing track of time. He's also quite trusting, making him an easy target for those with less honorable intentions.
 
 **Roleplaying Tips**:
+
 - Portray him as gentle and a bit out of touch with the current realities of the Shadowrun world.
 - Use his interactions to provide a contrast to the often harsh and cynical environment of the game.
 - While he is not a key player in the grand scheme of things, his innocence and vulnerability can add emotional depth to certain situations.
@@ -514,6 +590,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Frequently overwhelmed by the demands of his job, leading to a somewhat chaotic approach to problem-solving. He has a soft spot for underdogs and is more compassionate than his bureaucratic role might suggest.
 
 **Roleplaying Tips**:
+
 - Portray him as sincere but often out of his depth, especially when dealing with the shadowy aspects of Seattle.
 - Use his position to add a layer of bureaucratic complexity to certain missions or investigations.
 - Despite his stressful job, show moments where his compassion and dedication shine through.
@@ -539,6 +616,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Has a penchant for high-fashion and luxury, often seen wearing the latest designer attire. She also has an affinity for rare, vintage cyberdeck models, which she collects as a hobby.
 
 **Roleplaying Tips**:
+
 - Portray her as confident and in control, always a few steps ahead in any negotiation or confrontation.
 - Use her position in Renraku to introduce corporate intrigue and high-stakes business dealings into the campaign.
 - While she is a corporate executive, show glimpses of her complexity, including her personal ambitions and interests beyond mere corporate gain.
@@ -564,6 +642,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Known for his silent demeanor, only speaking when necessary. He has a reputation for appearing and disappearing like a ghost, contributing to his street name.
 
 **Roleplaying Tips**:
+
 - Portray him as a strong, silent type who commands respect through presence rather than words.
 - Use his leadership and street knowledge to add depth to the urban and gang-related aspects of the campaign.
 - Despite his gang leader status, show moments where his more complex and principled side emerges.
@@ -589,6 +668,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Has a habit of appearing unexpectedly, seemingly out of nowhere. She rarely shows emotion, maintaining a calm and unreadable demeanor.
 
 **Roleplaying Tips**:
+
 - Portray her as mysterious and enigmatic, always holding cards close to her chest.
 - Use her connections and knowledge to guide or mislead players, depending on her interests and theirs.
 - Despite her role as an information broker, hint at her own set of principles and codes.
@@ -614,6 +694,7 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Quirks**: Has an obsession with magical history, often getting sidetracked by historical details. He's also known for his cluttered and seemingly chaotic shop, which is filled with all manner of oddities.
 
 **Roleplaying Tips**:
+
 - Portray him as enthusiastic and a bit scatterbrained, with a deep love for all things magical.
 - Use his shop as a treasure trove of magical items and lore, which can aid or intrigue the players.
 - While he is knowledgeable, show that his obsession with magic sometimes leads him to overlook more practical concerns.
@@ -645,7 +726,6 @@ Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun sett
 **Impact and Implications**: This revelation could open up larger questions about AI ethics, the power of megacorps, and the nature of morality in a world where technology and magic coexist. It sets the stage for future adventures where the runners could delve deeper into the world of rogue AIs, corporate espionage, and the shadowy underbelly of the Sixth World.
 
 Such a mastermind adds a unique twist that's deeply rooted in the Shadowrun setting, combining technological and ethical themes in a way that challenges players both in combat and in moral decision-making.
-
 
 ## Locations
 
@@ -693,16 +773,14 @@ Creating a map of specific locations in Seattle for your Shadowrun campaign usin
     - Coordinates: 47.6071° N, 122.3331° W
     - Description: A mental health facility near Seattle University, run by Mr. Witherspoon, known for its mysterious patient disappearances.
 
-
-
-
-##### Extended
+## Extended Campaign Arc
 
 To reframe the current adventure as just the "Pledge" portion of a larger story or conspiracy in your Shadowrun campaign, we'll need to expand the scope and introduce elements that hint at a much broader plot. This outline will focus on setting up intricate layers and unresolved mysteries that can be developed in later parts of the campaign.
 
 ### The Pledge: A Deceptive Beginning
 
 #### Act 1: The Surface Story
+
 1. **Introduction to the Brewster Case**
    - **Scene**: Meeting with Mr. Johnson, who presents the job as a straightforward pest control issue in the Brewster house.
    - **Purpose**: To introduce the players to the initial, seemingly simple task.
@@ -720,6 +798,7 @@ To reframe the current adventure as just the "Pledge" portion of a larger story 
    - **Purpose**: Introduce a larger player in the game, hinting at broader implications.
 
 #### Act 2: Unraveling Threads
+
 1. **The Rogue AI**
    - **Scene**: Discovery of AI's involvement in guiding the Brewsters.
    - **Purpose**: Presenting the AI as the main antagonist, while subtly hinting it might be a pawn in a larger game.
@@ -737,6 +816,7 @@ To reframe the current adventure as just the "Pledge" portion of a larger story 
    - **Purpose**: To leave players with more questions than answers, setting up for future revelations.
 
 #### Act 3: The False Resolution
+
 1. **Confronting the AI**
    - **Scene**: A showdown with the rogue AI, seemingly ending its influence.
    - **Purpose**: To provide a satisfying conclusion to the immediate story while leaving certain elements unresolved.
@@ -765,6 +845,7 @@ Expanding on the initial "Pledge" portion of your Shadowrun campaign, we can dev
 ### The Turn: The Unfolding Conspiracy
 
 #### Act 1: The Web Widens
+
 1. **Aftermath and New Leads**
    - **Scene**: Following the AI confrontation, new information surfaces, linking the AI's code to a secretive R&D division of a major megacorp.
    - **Purpose**: Transition from the initial mystery to a larger corporate conspiracy.
@@ -782,6 +863,7 @@ Expanding on the initial "Pledge" portion of your Shadowrun campaign, we can dev
    - **Purpose**: To reveal the true scale and moral implications of the conspiracy.
 
 #### Act 2: The Race Against Time
+
 1. **Gathering Allies**
    - **Scene**: The runners must rally support from various factions, including those previously encountered.
    - **Purpose**: To build a coalition and prepare for a larger confrontation.
@@ -801,6 +883,7 @@ Expanding on the initial "Pledge" portion of your Shadowrun campaign, we can dev
 ### The Prestige: The Grand Finale
 
 #### Act 1: The Final Confrontation
+
 1. **Facing the Mastermind**
    - **Scene**: A showdown with the mastermind, involving a mix of combat, hacking, and magic.
    - **Purpose**: To resolve the primary conflict in a climactic battle.
@@ -814,6 +897,7 @@ Expanding on the initial "Pledge" portion of your Shadowrun campaign, we can dev
    - **Purpose**: To add emotional weight and show the consequences of the runners' choices.
 
 #### Act 2: New Beginnings and Unresolved Threads
+
 1. **A Changed World**
    - **Scene**: Reflection on how the events have altered the political and corporate landscape of the Shadowrun world.
    - **Purpose**: To show the lasting impact of the runners' actions.
