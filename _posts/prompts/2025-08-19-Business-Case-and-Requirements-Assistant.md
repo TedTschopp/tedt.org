@@ -11,7 +11,6 @@ tags:
   - Product Management
   - Planning
   - Business Strategy
-mastodon-post-id: null
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
@@ -517,6 +516,7 @@ prompt_content: |
   - **Recommendation:** Suggest specific corrective actions.
   - **Priority:** Critical, High, Medium, Low.
   - **Estimation Time To Fix:** Number of hours it commonly takes to address this shortcoming and which team members should be working on addressing these short comings.
+mastodon-post-id: 115108567613293915
 ---
 
 The Business Case & Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART user stories or system requirements. It also bakes in rigorous acceptance criteria plus fit‑for‑purpose verification and validation approaches so stakeholders can sign off with confidence.

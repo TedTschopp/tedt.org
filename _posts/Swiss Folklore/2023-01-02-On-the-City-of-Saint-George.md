@@ -60,6 +60,7 @@ mathjax: null
 order: null
 image_width: 1200
 image_height: 728
+mastodon-post-id: 110924710196764929
 ---
 > <ins>Legends of the Canton St. Gallen</ins>
 > 
