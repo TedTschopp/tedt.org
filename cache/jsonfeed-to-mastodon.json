@@ -3825,7 +3825,7 @@
     "summary": "Many people still want AI to behave like a slightly better version of the software they already know. This essay argues that the real shift is not better menus or smarter dashboards, but a move toward AI as the front door to work itself.",
     "content_text": "Many people still want AI to behave like a slightly better version of the software they already know. This essay argues that the real shift is not better menus or smarter dashboards, but a move toward AI as the front door to work itself. https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
     "url": "https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
-    "image": "https://tedt.org/img/categories/home-hero-images/hero-hardware.webp",
+    "image": "https://tedt.org/img/2026-03/Legacy-Software.webp",
     "tags": [
       "ai agents",
       "artificial intelligence",
@@ -3880,5 +3880,37 @@
       "https://tschopp.net/users/Ted/statuses/116270392547855145"
     ],
     "lastTootTimestamp": 1774145394187
+  },
+  "https://tedt.org/Why-AI-Needs-a-Harness/": {
+    "id": "/Why-AI-Needs-a-Harness/",
+    "title": "Why AI Needs a Harness",
+    "summary": "The real shift in AI is not the chatbot itself, but the harness around it: the tools, memory, guardrails, feedback loops, and permissions that turn a fluent model into a system that can do real work.",
+    "content_text": "The real shift in AI is not the chatbot itself, but the harness around it: the tools, memory, guardrails, feedback loops, and permissions that turn a fluent model into a system that can do real work. https://tedt.org/Why-AI-Needs-a-Harness/",
+    "url": "https://tedt.org/Why-AI-Needs-a-Harness/",
+    "image": "https://tedt.org/img/2026-03/AI-Agent-Harness.webp",
+    "tags": [
+      "ai agents",
+      "ai agent harness",
+      "chatbots",
+      "agentic systems",
+      "ai architecture",
+      "enterprise ai",
+      "governance",
+      "auditability",
+      "human in the loop",
+      "tool use",
+      "software architecture"
+    ],
+    "date_published": "2026-03-21T09:00:00-07:00",
+    "date_modified": "2026-03-21T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116270836600542156"
+    ],
+    "lastTootTimestamp": 1774152169929
   }
 }
