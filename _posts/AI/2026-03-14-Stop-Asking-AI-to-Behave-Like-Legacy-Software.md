@@ -50,7 +50,7 @@ keywords:
 - why prompting is not enough
 - legacy software and AI
 
-image: /img/categories/home-hero-images/hero-hardware.webp
+image: "/img/2026-03/Legacy-Software.webp"
 image-alt: "A close view of a vintage computer console with a beige keyboard, built-in screen, and dense control panels full of switches, buttons, and status lights."
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"
