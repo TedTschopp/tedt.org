@@ -54,6 +54,7 @@ mathjax: null
 order: null
 image_width: 1024
 image_height: 1024
+mastodon-post-id: 110924710196764929
 ---
 > <ins>**The Swiss Book of Legends**</ins>
 >

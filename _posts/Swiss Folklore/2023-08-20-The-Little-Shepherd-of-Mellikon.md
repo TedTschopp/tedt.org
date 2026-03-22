@@ -78,6 +78,7 @@ mathjax: null
 order: null
 image_width: 1456
 image_height: 816
+mastodon-post-id: 110924710196764929
 ---
 > <ins>Swiss Legends from Aargau, Volume 1, Page 293</ins>
 > 
