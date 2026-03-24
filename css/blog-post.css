@@ -1,6 +1,6 @@
 /* No longer uses Bootstrap here */
 
-footer {
+footer:not(.bd-footer) {
     margin: 50px 0;
 }
 

@@ -1,129 +1,112 @@
 <!-- Footer -->
-  {% assign site_profile = site.profile %}
-  {% assign profile_social = site_profile.social %}
-  {% assign mastodon_parts = profile_social.mastodon_username | split: '@' %}
-  <footer class="bd-footer py-4 py-md-5 mt-5">
-  <div class="container py-4 py-md-5 px-4 px-md-3 h-card vcard" id="hcard-{{ site_profile.givenname }}-{{ site_profile.familyname }}">
-          <div class="row">
-            <div class="col col-lg-3 mb-3">
-              <div class="row justify-content-center">
-                <div class="col-auto">
-                  <img src="{{ site_profile.avatar }}" class="rounded-circle img-thumbnail intro-image-avatar photo u-photo" alt="Photo of {{ site_profile.givenname }} {{ site_profile.familyname }}">
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-auto">
-                  <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none u-url u-uid"  href="{{ site_profile.url }}" rel="me">
-                    <p class="h4"><span class="fs-5 fnp-name"><span class="p-given-name">{{ site_profile.givenname }}</span> <span class="p-family-name">{{ site_profile.familyname }}</span></span></p>
-                  </a>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-auto">
-                  <p class="h5 p-job-title">{{ site_profile.jobtitle }}</p>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-auto">
-                  <p class="h5 p-job-title"><span class="p-locality">{{ site_profile.locality }}</span>,
-                    <span class="p-region">{{ site_profile.region }}</span>, 
-                    <span class="p-country-name">{{ site_profile.country }}</span>
-                  </p>
-                </div>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-auto">
-                  <ul class="list-unstyled small footer-profile-details mb-0">
-                    <li>
-                      <span class="footer-profile-label">Website</span>
-                      <a href="{{ site_profile.url }}" class="u-url" rel="me">{{ site_profile.url | replace: 'https://', '' | replace: 'http://', '' }}</a>
-                    </li>
-                    {% if site_profile.email %}
-                      <li>
-                        <span class="footer-profile-label">Email</span>
-                        <a href="mailto:{{ site_profile.email }}" class="u-email">{{ site_profile.email }}</a>
-                      </li>
-                    {% endif %}
-                    {% if mastodon_parts.size > 1 %}
-                      <li>
-                        <span class="footer-profile-label">Fediverse</span>
-                        <a href="https://{{ mastodon_parts[1] }}/@{{ mastodon_parts[0] }}" rel="me">@{{ profile_social.mastodon_username }}</a>
-                      </li>
-                    {% endif %}
-                    {% if site_profile.phonenumber %}
-                      <li>
-                        <span class="footer-profile-label">Phone</span>
-                        <a href="tel:{{ site_profile.phonenumber | replace: ' ', '' }}" class="p-tel">{{ site_profile.phonenumber }}</a>
-                      </li>
-                    {% endif %}
-                  </ul>
-                </div>
-              </div>
-            </div>
+{% assign site_profile = site.profile %}
+{% assign profile_social = site_profile.social | default: empty %}
+{% assign profile_name = site_profile.name | default: site.title %}
+{% assign profile_url = site_profile.url | default: site.url %}
+{% assign profile_avatar = site_profile.avatar | default: site.logo %}
+{% assign profile_id = profile_name | slugify %}
+{% assign profile_email = site_profile.email | default: '' %}
+{% assign profile_phone = site_profile.phonenumber | default: '' %}
+{% assign mastodon_parts = profile_social.mastodon_username | default: '' | split: '@' %}
+{% assign categories = "" | split: "," %}
+{% for link in site.links %}
+  {% unless categories contains link.Category %}
+    {% assign categories = categories | push: link.Category %}
+  {% endunless %}
+{% endfor %}
+<footer class="bd-footer py-4 py-md-5 mt-5">
+  <div class="container footer-shell py-4 py-md-5 px-4 px-md-3 h-card vcard" id="hcard-{{ profile_id }}">
+    <div class="row g-4 g-xl-5 align-items-start footer-main-row">
+      <div class="col-12 col-lg-4 col-xl-3">
+        <section class="footer-profile-card text-center text-lg-start">
+          <div class="footer-avatar-wrap mb-3">
+            <img src="{{ profile_avatar }}" class="footer-avatar rounded-circle img-thumbnail intro-image-avatar photo u-photo" alt="Photo of {{ profile_name }}">
           </div>
-          <div class="row">
-            <div class="col-lg-3 mb-3">
-              <ul class="list-unstyled small p-note">
-                {% for paragraphs in site_profile.biography %}{% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}<li class="mb-2">{{paragraph}}</li>{% endfor %}
-                <li class="display-1 d-flex justify-content-center" role="presentation" aria-hidden="true"><i class="icon-tschopp-housemark-optimum"></i></li>
-              </ul>
-            </div>
-            <div class="col-lg-8 offset-lg-1 mb-3">
-              <div class="row justify-content-end">
-                {% assign categories = "" | split: "," %}
-                {% for link in site.links %}
-                  {% unless categories contains link.Category %}
-                    {% assign categories = categories | push: link.Category %}
-                  {% endunless %}
-                {% endfor %}
-                
-                {% for Category in categories %}
-                  {% if forloop.first %}
-                    <div class="col-12 col-sm-6 col-md-4 mb-3 h-100 ">
-                  {% else %}
-                    <div class="col-12 col-sm-6 col-md-4 mb-3 h-100 ">
-                  {% endif %}
-                  <p class="h5">{{ Category }}</p>
-                    <ul class="list-unstyled">
-                    {% for link in site.links %}
-                      {% if link.Category == Category %}
-                        <li class="mb-2">
-                          <a href="{{ link.URL }}{% if link.Username %}/{{link.Username}}{%endif%}"
-                            rel="me"
-                            class="u-url footer-link">
-                            {% assign brand_color = link.Color %}
-                            {% if link.Type == "emoji" %}
-                              <span class="footer-link-icon"{% if brand_color %} style="--footer-link-icon-color: {{ brand_color }}; color: var(--footer-link-icon-color);"{% endif %} aria-hidden="true">{{ link.Icon-Class }}</span>
-                            {% elsif link.Type == "fontawesome" %}
-                              <span class="footer-link-icon"{% if brand_color %} style="--footer-link-icon-color: {{ brand_color }}; color: var(--footer-link-icon-color);"{% endif %} aria-hidden="true">
-                                <i class="{{ link.Icon-Class }} fa-lg fa-fw"></i>
-                              </span>
-                            {% endif %}
-                            <span class="footer-link-text">{{ link.Name }}</span>
-                          </a>
-                        </li>
-                      {% endif %}
-                    {% endfor %}
-                  </ul>
-                  </div>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3 mb-3 h-100 text-center text-lg-left my-auto">
-              <ul class="list-inline mb-2">
-                <li class="list-inline-item"><a href="{{ site.url }}/About/">About</a></li>
-                <li class="list-inline-item">&sdot;</li>
-                <li class="list-inline-item"><a href="{{ site.url }}/Terms-of-Use/">Terms of Use</a></li>
-                <li class="list-inline-item">&sdot;</li>
-                <li class="list-inline-item"><a href="{{ site.url }}/Privacy-Policy/">Privacy Policy</a></li>
-              </ul>
-            </div>
+          <a class="footer-name-link d-inline-flex align-items-center justify-content-center justify-content-lg-start mb-2 text-decoration-none u-url u-uid" href="{{ profile_url }}" rel="me">
+            <span class="h4 mb-0 fs-5 fnp-name">
+              <span class="p-given-name">{{ site_profile.givenname }}</span>
+              <span class="p-family-name">{{ site_profile.familyname }}</span>
+            </span>
+          </a>
+          {% if site_profile.jobtitle %}
+            <p class="h5 p-job-title mb-1">{{ site_profile.jobtitle }}</p>
+          {% endif %}
+          {% if site_profile.locality or site_profile.region or site_profile.country %}
+            <p class="h5 footer-location mb-0">
+              {% if site_profile.locality %}<span class="p-locality">{{ site_profile.locality }}</span>{% endif %}
+              {% if site_profile.region %}{% if site_profile.locality %}, {% endif %}<span class="p-region">{{ site_profile.region }}</span>{% endif %}
+              {% if site_profile.country %}{% if site_profile.locality or site_profile.region %}, {% endif %}<span class="p-country-name">{{ site_profile.country }}</span>{% endif %}
+            </p>
+          {% endif %}
+          <ul class="list-unstyled small footer-profile-details mb-0"><li>
+              <span class="footer-profile-label">Website</span>
+              <a href="{{ profile_url }}" class="u-url" rel="me">{{ profile_url | replace: 'https://', '' | replace: 'http://', '' }}</a>
+            </li>{% if profile_email != '' %}<li>
+                <span class="footer-profile-label">Email</span>
+                <a href="mailto:{{ profile_email }}" class="u-email">{{ profile_email }}</a>
+              </li>{% endif %}{% if mastodon_parts.size > 1 %}<li>
+                <span class="footer-profile-label">Fediverse</span>
+                <a href="https://{{ mastodon_parts[1] }}/@{{ mastodon_parts[0] }}" rel="me">@{{ profile_social.mastodon_username }}</a>
+              </li>{% endif %}{% if profile_phone != '' %}<li>
+                <span class="footer-profile-label">Phone</span>
+                <a href="tel:{{ profile_phone | replace: ' ', '' }}" class="p-tel">{{ profile_phone }}</a>
+              </li>{% endif %}</ul>
+        </section>
+      </div>
 
-            <div class="col-lg-8 h-100 text-center text-lg-right my-auto">
-              <p class="text-muted small mb-4 mb-lg-0">Copyright &copy; Ted Tschopp 2003 - <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
+      <div class="col-12 col-lg-8 col-xl-9">
+        <div class="row g-4 g-xl-5 align-items-start">
+          <div class="col-12 col-xl-4">
+            <section class="footer-bio-block h-100">
+              <p class="h5 footer-section-title">About Ted</p>
+              <ul class="list-unstyled small p-note footer-bio-list mb-0">{%- for paragraphs in site_profile.biography -%}{% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}<li>{{ paragraph }}</li>{%- endfor -%}<li class="display-1 d-flex justify-content-center justify-content-xl-start footer-housemark" role="presentation" aria-hidden="true"><i class="icon-tschopp-housemark-optimum"></i></li></ul>
+            </section>
+          </div>
+
+          <div class="col-12 col-xl-8">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4 footer-link-groups">
+              {% for Category in categories %}
+                <div class="col footer-link-group">
+                  <section>
+                    <p class="h5 footer-section-title">{{ Category }}</p>
+                    <ul class="list-unstyled mb-0">{%- for link in site.links -%}{%- if link.Category == Category -%}<li class="mb-2">
+                            <a href="{{ link.URL }}{% if link.Username %}/{{ link.Username }}{% endif %}"
+                              rel="me"
+                              class="u-url footer-link">
+                              {% assign brand_color = link.Color %}
+                              {% if link.Type == "emoji" %}
+                                <span class="footer-link-icon"{% if brand_color %} style="--footer-link-icon-color: {{ brand_color }}; color: var(--footer-link-icon-color);"{% endif %} aria-hidden="true">{{ link.Icon-Class }}</span>
+                              {% elsif link.Type == "fontawesome" %}
+                                <span class="footer-link-icon"{% if brand_color %} style="--footer-link-icon-color: {{ brand_color }}; color: var(--footer-link-icon-color);"{% endif %} aria-hidden="true">
+                                  <i class="{{ link.Icon-Class }} fa-lg fa-fw"></i>
+                                </span>
+                              {% endif %}
+                              <span class="footer-link-text">{{ link.Name }}</span>
+                            </a>
+                          </li>{%- endif -%}{%- endfor -%}</ul>
+                  </section>
+                </div>
+              {% endfor %}
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+
+    <div class="row footer-meta-row align-items-center gy-3">
+      <div class="col-12 col-lg-5 text-center text-lg-start">
+        <ul class="list-inline footer-meta-links mb-0">
+          <li class="list-inline-item"><a href="{{ site.url }}/About/">About</a></li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item"><a href="{{ site.url }}/Terms-of-Use/">Terms of Use</a></li>
+          <li class="list-inline-item">&sdot;</li>
+          <li class="list-inline-item"><a href="{{ site.url }}/Privacy-Policy/">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="col-12 col-lg-7 text-center text-lg-end">
+        <p class="text-muted small mb-0">Copyright &copy; Ted Tschopp 2003 - <script>document.write(new Date().getFullYear())</script>. All Rights Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>

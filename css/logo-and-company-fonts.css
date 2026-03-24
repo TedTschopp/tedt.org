@@ -352,12 +352,49 @@ footer.bd-footer {
   --footer-link:#38bdf8;
   --footer-link-hover:#0ea5e9;
   --footer-divider:#94a3b8;
+  margin:0 !important;
   background-color:var(--footer-bg) !important;
   color:var(--footer-text);
+  border-top:1px solid rgba(148,163,184,.16);
 }
 
 footer.bd-footer .container {
   color:inherit;
+}
+
+footer.bd-footer .footer-shell {
+  color:inherit;
+}
+
+footer.bd-footer .footer-main-row {
+  row-gap:2rem;
+}
+
+footer.bd-footer .footer-profile-card {
+  max-width:22rem;
+  margin:0 auto;
+}
+
+footer.bd-footer .footer-avatar-wrap {
+  display:flex;
+  justify-content:center;
+}
+
+footer.bd-footer .footer-avatar {
+  width:8rem;
+  height:8rem;
+  object-fit:cover;
+}
+
+footer.bd-footer .footer-name-link {
+  color:var(--footer-heading);
+  text-decoration:none;
+}
+
+footer.bd-footer .footer-name-link:hover,
+footer.bd-footer .footer-name-link:focus-visible {
+  color:var(--footer-link-hover);
+  text-decoration:none;
 }
 
 footer.bd-footer p,
@@ -381,13 +418,20 @@ footer.bd-footer .p-note .mb-2 {
   font-weight:600;
 }
 
+footer.bd-footer .footer-location {
+  color:var(--footer-muted) !important;
+  font-size:1rem;
+}
+
 footer.bd-footer .footer-profile-details {
-  margin-top:.75rem;
+  margin-top:1rem;
+  display:grid;
+  gap:.65rem;
   text-align:center;
 }
 
 footer.bd-footer .footer-profile-details li {
-  margin-bottom:.45rem;
+  margin-bottom:0;
   color:var(--footer-muted);
 }
 
@@ -398,6 +442,29 @@ footer.bd-footer .footer-profile-label {
   letter-spacing:.08em;
   text-transform:uppercase;
   color:var(--footer-muted);
+}
+
+footer.bd-footer .footer-section-title {
+  margin-bottom:1rem;
+}
+
+footer.bd-footer .footer-bio-list {
+  display:grid;
+  gap:.8rem;
+}
+
+footer.bd-footer .footer-bio-list li {
+  margin-bottom:0;
+}
+
+footer.bd-footer .footer-housemark {
+  margin-top:.5rem;
+  margin-bottom:0;
+}
+
+footer.bd-footer .footer-link-groups,
+footer.bd-footer .footer-link-group {
+  min-width:0;
 }
 
 footer.bd-footer a {
@@ -415,7 +482,7 @@ footer.bd-footer a:focus-visible {
 
 footer.bd-footer .footer-link {
   display:inline-flex;
-  align-items:center;
+  align-items:flex-start;
   gap:.55rem;
   color:var(--footer-link);
   text-decoration:none;
@@ -436,6 +503,7 @@ footer.bd-footer .footer-link-icon i {
 
 footer.bd-footer .footer-link-text {
   color:var(--footer-link);
+  overflow-wrap:anywhere;
 }
 
 footer.bd-footer .footer-link:hover,
@@ -461,6 +529,30 @@ footer.bd-footer .list-inline-item a:focus-visible {
 footer.bd-footer .display-1,
 footer.bd-footer .icon-tschopp-housemark-optimum {
   color:var(--footer-heading);
+}
+
+footer.bd-footer .footer-meta-row {
+  margin-top:2.5rem;
+  padding-top:1.5rem;
+  border-top:1px solid rgba(148,163,184,.16);
+}
+
+footer.bd-footer .footer-meta-links {
+  margin-bottom:0;
+}
+
+@media (min-width:992px) {
+  footer.bd-footer .footer-profile-card {
+    margin:0;
+  }
+
+  footer.bd-footer .footer-avatar-wrap {
+    justify-content:flex-start;
+  }
+
+  footer.bd-footer .footer-profile-details {
+    text-align:left;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
