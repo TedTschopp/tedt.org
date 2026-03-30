@@ -77,9 +77,10 @@ jobs:
       - name: Decide if we should post
         id: guard
         run: |
-          python3 _code/should_post_latest.py > guard.json || true
-          echo "Guard output:" && cat guard.json || true
-          SHOULD=$(python3 -c "import json;print(json.load(open('guard.json')).get('should_post','false'))" || echo false)
+          mkdir -p tmp
+          python3 _code/should_post_latest.py > tmp/guard.json || true
+          echo "Guard output:" && cat tmp/guard.json || true
+          SHOULD=$(python3 -c "import json;print(json.load(open('tmp/guard.json')).get('should_post','false'))" || echo false)
           echo "should_post=$SHOULD" >> $GITHUB_OUTPUT
       - name: Post new items
         if: steps.guard.outputs.should_post == 'true'

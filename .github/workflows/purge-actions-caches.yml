@@ -44,14 +44,24 @@ jobs:
             core.info(`Cutoff (older than): ${cutoff.toISOString()}`);
             core.info(`Dry run: ${dryRun}`);
 
-            // Paginate through all caches
-            const pages = await github.paginate(
-              github.request,
-              'GET /repos/{owner}/{repo}/actions/caches',
-              { owner, repo, per_page: 100 }
-            );
+            // Paginate explicitly because the actions/caches endpoint returns
+            // items under `actions_caches`, not as a plain top-level array.
+            const allCaches = [];
+            for (let page = 1; ; page += 1) {
+              const response = await github.request('GET /repos/{owner}/{repo}/actions/caches', {
+                owner,
+                repo,
+                per_page: 100,
+                page,
+              });
 
-            const allCaches = Array.isArray(pages) ? pages : (pages.actions_caches || []);
+              const pageCaches = response?.data?.actions_caches || [];
+              allCaches.push(...pageCaches);
+              if (pageCaches.length < 100) {
+                break;
+              }
+            }
+
             core.info(`Total caches found: ${allCaches.length}`);
 
             const toDelete = [];
