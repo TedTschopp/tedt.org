@@ -74,7 +74,8 @@
           <div class="card-body">
             <label for="zipFile" class="form-label">ZIP Archive</label>
             <input id="zipFile" class="form-control" type="file" accept=".zip,application/zip">
-            <p class="muted-note mt-2 mb-0">All analysis happens in your browser. ZIP processing uses JSZip loaded on demand.</p>
+            <p class="muted-note mt-2 mb-1">All analysis happens in your browser. ZIP processing uses JSZip loaded on demand.</p>
+            <p class="muted-note mb-0">For repo-to-repo comparison, build a filtered archive from tracked files instead of zipping the whole workspace: <span class="mono">python3 scripts/build-sloc-comparison-zip.py</span>. That emits <span class="mono">.tmp/timeline-source-footprint.zip</span>. PowerShell and Bicep files from that comparison ZIP are currently reported as unmapped here rather than counted.</p>
             <button id="analyzeZipBtn" class="btn btn-primary mt-3">Analyze ZIP</button>
           </div>
         </div>
