@@ -3912,5 +3912,54 @@
       "https://tschopp.net/users/Ted/statuses/116270836600542156"
     ],
     "lastTootTimestamp": 1774152169929
+  },
+  "https://tedt.org/Pest-Control/": {
+    "id": "/Pest-Control/",
+    "title": "Pest Control: A Shadowrun Mystery in Seattle",
+    "summary": "A routine Shadowrun job in Seattle uncovers bodies in a basement, the Brewster sisters' moral crusade, and a deeper conspiracy pulling the strings.",
+    "content_text": "A routine Shadowrun job in Seattle uncovers bodies in a basement, the Brewster sisters' moral crusade, and a deeper conspiracy pulling the strings. https://tedt.org/Pest-Control/",
+    "url": "https://tedt.org/Pest-Control/",
+    "image": "https://tedt.org/img/2026-03/Meeting-Mr-Johnson-Shadowrun.webp",
+    "tags": [
+      "RPG",
+      "Shadowrun",
+      "Adventure",
+      "Seattle",
+      "Game Mastering"
+    ],
+    "date_published": "2026-03-22T05:00:00-07:00",
+    "date_modified": "2026-03-22T05:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116315571539334175"
+    ],
+    "lastTootTimestamp": 1774834770931
+  },
+  "https://tedt.org/Black-Rain-Delivery/": {
+    "id": "/Black-Rain-Delivery/",
+    "title": "Black Rain Delivery",
+    "summary": "A Shadowrun delivery run under blackened skies forces the runners to protect a convoy, survive toxic rain, and decide what the cargo is really worth.",
+    "content_text": "A Shadowrun delivery run under blackened skies forces the runners to protect a convoy, survive toxic rain, and decide what the cargo is really worth. https://tedt.org/Black-Rain-Delivery/",
+    "url": "https://tedt.org/Black-Rain-Delivery/",
+    "image": "https://tedt.org/img/2026-03/Black-Rain-Convoy.webp",
+    "tags": [
+      "RPG",
+      "Shadowrun",
+      "Adventure",
+      "Seattle",
+      "Game Mastering"
+    ],
+    "date_published": "2026-03-22T05:00:00-07:00",
+    "date_modified": "2026-03-22T05:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
   }
 }
