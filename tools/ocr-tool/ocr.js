@@ -40,6 +40,7 @@ const elements = {
   chooseBtn: document.getElementById('ocrChooseBtn'),
   exampleBtn: document.getElementById('ocrExampleBtn'),
   clearBtn: document.getElementById('ocrClearBtn'),
+  downloadFullBtn: document.getElementById('ocrDownloadFullBtn'),
   copyFullBtn: document.getElementById('ocrCopyFullBtn'),
   fileInput: document.getElementById('ocrFileInput'),
   dropZone: document.getElementById('ocrDropZone'),
@@ -81,6 +82,7 @@ function setBusy(isBusy) {
   elements.chooseBtn.disabled = isBusy;
   elements.exampleBtn.disabled = isBusy;
   elements.clearBtn.disabled = isBusy && state.renderedItems.length === 0;
+  elements.downloadFullBtn.disabled = isBusy || !elements.fullDocument.value.trim();
   elements.copyFullBtn.disabled = isBusy || !elements.fullDocument.value.trim();
   elements.languageSelect.disabled = isBusy;
   elements.dropZone.classList.toggle('is-busy', isBusy);
@@ -130,19 +132,58 @@ function clearResults() {
   setProgress(0, 0, 'Idle');
   updateSourceMeta('', 0);
   setStatus('Ready.');
+  elements.downloadFullBtn.disabled = true;
   elements.copyFullBtn.disabled = true;
   elements.fileInput.value = '';
 }
 
-function updateFullDocument() {
-  const content = state.renderedItems
+function getRenderedTextSegments() {
+  return state.renderedItems
     .map((item) => item.textarea.value.trim())
-    .filter(Boolean)
-    .join('\n\n');
+    .filter(Boolean);
+}
+
+function buildFullDocumentText({ flattenPageBreaks = false } = {}) {
+  const segments = getRenderedTextSegments();
+  if (segments.length === 0) {
+    return '';
+  }
+
+  if (!flattenPageBreaks) {
+    return segments.join('\n\n');
+  }
+
+  return segments.reduce((combined, segment) => {
+    if (!combined) {
+      return segment;
+    }
+
+    const previousChar = combined.slice(-1);
+    const nextChar = segment.charAt(0);
+    const shouldFuseWord = previousChar === '-';
+    const separator = shouldFuseWord || /[\s\n]/.test(previousChar) || /[\s\n]/.test(nextChar) ? '' : ' ';
+    return `${combined}${shouldFuseWord ? '' : separator}${segment}`;
+  }, '');
+}
+
+function updateFullDocument() {
+  const content = buildFullDocumentText();
 
   elements.fullDocument.value = content;
   elements.fullDocumentSection.hidden = content.length === 0;
+  elements.downloadFullBtn.disabled = state.busy || content.length === 0;
   elements.copyFullBtn.disabled = state.busy || content.length === 0;
+}
+
+function buildDownloadFilename() {
+  const baseName = (state.currentSourceName || 'ocr-output')
+    .replace(/\.[a-z0-9]+$/i, '')
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+  return `${baseName || 'ocr-output'}-full-text.txt`;
 }
 
 function autosizeTextarea(textarea) {
@@ -409,6 +450,23 @@ async function copyFullDocument() {
   }
 }
 
+function downloadFullDocument() {
+  const text = buildFullDocumentText({ flattenPageBreaks: true }).trim();
+  if (!text) {
+    return;
+  }
+
+  const downloadUrl = URL.createObjectURL(new Blob([`${text}\n`], { type: 'text/plain;charset=utf-8' }));
+  const link = document.createElement('a');
+  link.href = downloadUrl;
+  link.download = buildDownloadFilename();
+  document.body.appendChild(link);
+  link.click();
+  link.remove();
+  setTimeout(() => URL.revokeObjectURL(downloadUrl), 0);
+  setStatus('Downloaded full OCR text as a continuous .txt file.', 'success');
+}
+
 function handleDrop(event) {
   event.preventDefault();
   elements.dropZone.classList.remove('is-drag-over');
@@ -449,6 +507,7 @@ function bindEvents() {
   elements.chooseBtn.addEventListener('click', () => elements.fileInput.click());
   elements.exampleBtn.addEventListener('click', loadExamplePdf);
   elements.clearBtn.addEventListener('click', clearResults);
+  elements.downloadFullBtn.addEventListener('click', downloadFullDocument);
   elements.copyFullBtn.addEventListener('click', copyFullDocument);
   elements.fileInput.addEventListener('change', (event) => {
     const file = event.target.files?.[0];
