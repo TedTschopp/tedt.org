@@ -22,6 +22,7 @@ import sys
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
+from urllib.parse import unquote, urljoin, urlparse
 from urllib.error import HTTPError, URLError
 from urllib.request import Request, urlopen
 
@@ -37,6 +38,7 @@ BASE_URL_TEMPLATE = (
     "https://www.schoolnutritionandfitness.com/schools/"
     "dusd_1401100214572158/menus/Elementary_Menu_-_{month}_{year}_-_Lunch.pdf"
 )
+MENUS_PAGE_URL = "https://www.schoolnutritionandfitness.com/index.php?sid=1401100214572158&page=menus"
 CALENDAR_NAME = "DUSD Elementary Lunch Menu"
 CALENDAR_DESCRIPTION = (
     "Daily elementary lunch menus published by Duarte Unified School District."
@@ -46,6 +48,11 @@ USER_AGENT = (
     "+https://tedt.org/)"
 )
 DAY_PREFIX_RE = re.compile(r"^(\d{1,2})(?:\s+|$)")
+HREF_RE = re.compile(r'href=["\']([^"\']+)["\']', re.IGNORECASE)
+MONTH_YEAR_RE = re.compile(
+    r"(january|february|march|april|may|june|july|august|september|october|november|december)[\s_-]+(\d{4})",
+    re.IGNORECASE,
+)
 
 
 @dataclass(frozen=True)
@@ -85,8 +92,27 @@ def iter_months(start_year: int, end_year: int) -> Iterable[tuple[int, int]]:
             yield year, month
 
 
-def build_menu_url(year: int, month: int) -> str:
-    return BASE_URL_TEMPLATE.format(month=calendar.month_name[month].upper(), year=year)
+def build_menu_urls(year: int, month: int) -> list[str]:
+    month_name = calendar.month_name[month]
+    return [
+        BASE_URL_TEMPLATE.format(month=month_name, year=year),
+        BASE_URL_TEMPLATE.format(month=month_name.upper(), year=year),
+        BASE_URL_TEMPLATE.replace("menus/Elementary", "menus/_Elementary").format(
+            month=month_name.upper(), year=year
+        ),
+    ]
+
+
+def fetch_text(url: str) -> str | None:
+    request = Request(url, headers={"User-Agent": USER_AGENT})
+    try:
+        with urlopen(request, timeout=60) as response:
+            if response.status != 200:
+                return None
+            charset = response.headers.get_content_charset() or "utf-8"
+            return response.read().decode(charset, errors="replace")
+    except (HTTPError, URLError):
+        return None
 
 
 def fetch_pdf(url: str) -> bytes | None:
@@ -103,6 +129,48 @@ def fetch_pdf(url: str) -> bytes | None:
         raise
     except URLError:
         return None
+
+
+def is_elementary_lunch_menu_url(url: str) -> bool:
+    filename = Path(unquote(urlparse(url).path)).name.lower()
+    return "elementary" in filename and "lunch.pdf" in filename and "breakfast" not in filename
+
+
+def parse_menu_year_month(url: str) -> tuple[int, int] | None:
+    filename = Path(unquote(urlparse(url).path)).name
+    match = MONTH_YEAR_RE.search(filename)
+    if not match:
+        return None
+
+    month_name = match.group(1).title()
+    try:
+        month = list(calendar.month_name).index(month_name)
+    except ValueError:
+        return None
+    return int(match.group(2)), month
+
+
+def discover_menu_urls(start_year: int, end_year: int) -> list[tuple[int, int, str]]:
+    html = fetch_text(MENUS_PAGE_URL)
+    if not html:
+        return []
+
+    discovered: dict[tuple[int, int], str] = {}
+    for match in HREF_RE.finditer(html):
+        url = urljoin(MENUS_PAGE_URL, match.group(1).replace("&amp;", "&"))
+        if not is_elementary_lunch_menu_url(url):
+            continue
+
+        parsed = parse_menu_year_month(url)
+        if parsed is None:
+            continue
+
+        year, month = parsed
+        if not (start_year <= year <= end_year):
+            continue
+        discovered[(year, month)] = url
+
+    return [(year, month, url) for (year, month), url in sorted(discovered.items())]
 
 
 def normalize_line(text: str) -> str:
@@ -233,13 +301,23 @@ def render_ics(entries: list[MenuEntry]) -> str:
 
 def collect_entries(start_year: int, end_year: int) -> list[MenuEntry]:
     entries_by_date: dict[dt.date, MenuEntry] = {}
-    for year, month in iter_months(start_year, end_year):
-        source_url = build_menu_url(year, month)
-        pdf_bytes = fetch_pdf(source_url)
-        if pdf_bytes is None:
-            continue
-        for entry in parse_pdf_menu(pdf_bytes, year, month, source_url):
-            entries_by_date[entry.date] = entry
+    discovered_urls = discover_menu_urls(start_year, end_year)
+    if discovered_urls:
+        for year, month, source_url in discovered_urls:
+            pdf_bytes = fetch_pdf(source_url)
+            if pdf_bytes is None:
+                continue
+            for entry in parse_pdf_menu(pdf_bytes, year, month, source_url):
+                entries_by_date[entry.date] = entry
+    else:
+        for year, month in iter_months(start_year, end_year):
+            for source_url in build_menu_urls(year, month):
+                pdf_bytes = fetch_pdf(source_url)
+                if pdf_bytes is None:
+                    continue
+                for entry in parse_pdf_menu(pdf_bytes, year, month, source_url):
+                    entries_by_date[entry.date] = entry
+                break
     return sorted(entries_by_date.values(), key=lambda entry: entry.date)
 
 
