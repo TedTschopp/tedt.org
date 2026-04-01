@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser OCR Workspace</title>
+  <meta name="description" content="Extract text from PDFs and images entirely in your browser using local PDF.js and Tesseract assets.">
+  <link rel="canonical" href="https://tedt.org/tools/ocr.html">
+
+  <meta property="og:title" content="Browser OCR Workspace">
+  <meta property="og:description" content="Client-side OCR for PDFs and images with local PDF.js and Tesseract assets.">
+  <meta property="og:url" content="https://tedt.org/tools/ocr.html">
+  <meta property="og:type" content="website">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Browser OCR Workspace">
+  <meta name="twitter:description" content="Client-side OCR for PDFs and images with local PDF.js and Tesseract assets.">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/webp" href="/img/favicon-196x196.webp" sizes="196x196">
+  <script>(function(){var s=document.createElement('script');s.src=location.protocol==='file:'?'file://'+location.pathname.split('/tools/')[0]+'/tools/lib/tedt-org-tools-loader.js':'/tools/lib/tedt-org-tools-loader.js';document.head.appendChild(s);}());</script>
+  <link rel="stylesheet" href="./ocr-tool/ocr.css">
+  <script src="./ocr-tool/vendor/tesseract/tesseract.min.js"></script>
+</head>
+<body>
+  <main class="container py-4 ocr-app" data-ocr-app>
+    <header class="ocr-hero card border-0 mb-4">
+      <div class="card-body">
+        <div class="d-flex flex-column flex-xl-row justify-content-between gap-4">
+          <div>
+            <p class="ocr-kicker mb-2">Tool Workspace</p>
+            <h1 class="display-6 mb-3">Browser OCR Workspace</h1>
+            <p class="lead mb-3">
+              Run OCR against PDFs and images without sending files to a server.
+              PDF pages render locally with PDF.js, then OCR runs through Tesseract in your browser.
+            </p>
+            <div class="d-flex flex-wrap gap-2">
+              <span class="badge rounded-pill text-bg-primary">Client-side only</span>
+              <span class="badge rounded-pill text-bg-secondary">PDF + JPG + PNG + GIF + pasted images</span>
+              <span class="badge rounded-pill text-bg-secondary" id="languagePackBadge">25 local language packs</span>
+            </div>
+          </div>
+          <div class="ocr-hero-note">
+            <h2 class="h5 mb-2">Runtime note</h2>
+            <p class="mb-0 text-body-secondary">
+              The tool loads local OCR assets from this repo. It should work on the published site and over
+              <span class="mono">http://localhost</span>. Some browsers may block worker startup from
+              <span class="mono">file://</span>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="row g-4 align-items-start">
+      <div class="col-12 col-xl-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong>Input</strong>
+            <span class="text-body-secondary small">Upload, drop, paste</span>
+          </div>
+          <div class="card-body">
+            <div class="mb-3">
+              <label class="form-label" for="ocrLanguage">Language pack</label>
+              <select id="ocrLanguage" class="form-select" aria-describedby="ocrLanguageHelp"></select>
+              <div id="ocrLanguageHelp" class="form-text">
+                Local traineddata packs only. More packs can be added to
+                <span class="mono">tools/ocr-tool/languages/</span>.
+              </div>
+            </div>
+
+            <div class="d-grid gap-2 d-sm-flex mb-3">
+              <button id="ocrChooseBtn" type="button" class="btn btn-primary flex-fill">Choose file</button>
+              <button id="ocrExampleBtn" type="button" class="btn btn-outline-secondary flex-fill">Load example PDF</button>
+              <button id="ocrClearBtn" type="button" class="btn btn-outline-danger flex-fill">Clear</button>
+            </div>
+
+            <input id="ocrFileInput" class="visually-hidden" type="file" accept=".pdf,.jpg,.jpeg,.png,.gif,application/pdf,image/*" aria-label="Choose a PDF or image file for OCR" title="Choose a PDF or image file for OCR">
+
+            <div id="ocrDropZone" class="ocr-drop-zone" tabindex="0" role="button" aria-label="Drop a PDF or image here or press Enter to choose a file">
+              <div class="ocr-drop-zone__inner">
+                <div class="ocr-drop-zone__title">Drop a PDF or image here</div>
+                <div class="ocr-drop-zone__subtitle">or click / press Enter to choose a file</div>
+                <div class="ocr-drop-zone__caption">Paste an image from the clipboard anywhere on the page.</div>
+              </div>
+            </div>
+
+            <div class="small text-body-secondary mt-3">
+              Example flow: drop a scanned PDF, watch each page render below, then copy the full extracted document.
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong>Job Status</strong>
+            <span id="ocrProgressLabel" class="text-body-secondary small">Idle</span>
+          </div>
+          <div class="card-body">
+            <div id="ocrStatus" class="alert alert-secondary mb-3" role="status" aria-live="polite">Ready.</div>
+            <div class="ocr-progress-shell mb-3" aria-hidden="true">
+              <div id="ocrProgressBar" class="ocr-progress-bar"></div>
+            </div>
+            <dl class="row mb-0 small">
+              <dt class="col-6 text-body-secondary">Current source</dt>
+              <dd class="col-6 text-end" id="ocrSourceLabel">None</dd>
+              <dt class="col-6 text-body-secondary">Pages / images</dt>
+              <dd class="col-6 text-end" id="ocrCountLabel">0</dd>
+              <dt class="col-6 text-body-secondary">OCR language</dt>
+              <dd class="col-6 text-end" id="ocrSelectedLanguageLabel">English</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-header">
+            <strong>Attribution</strong>
+          </div>
+          <div class="card-body text-body-secondary small">
+            <p>
+              OCR runtime: Apache-2.0 Tesseract.js and Tesseract.js Core.
+            </p>
+            <p>
+              PDF rendering: Apache-2.0 PDF.js.
+            </p>
+            <p class="mb-0">
+              Language data is served from local copies of Tesseract traineddata files stored in this repo.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-xl-8">
+        <section id="ocrFullDocumentSection" class="card shadow-sm mb-4" hidden>
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong>Full document</strong>
+            <button id="ocrCopyFullBtn" type="button" class="btn btn-sm btn-outline-secondary">Copy text</button>
+          </div>
+          <div class="card-body">
+            <label class="visually-hidden" for="ocrFullDocument">Full OCR text</label>
+            <textarea id="ocrFullDocument" class="form-control mono ocr-full-document" readonly placeholder="OCR output will appear here..."></textarea>
+          </div>
+        </section>
+
+        <section class="card shadow-sm">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <strong>Pages and Images</strong>
+            <span id="ocrResultsMeta" class="text-body-secondary small">No pages rendered yet</span>
+          </div>
+          <div class="card-body">
+            <div id="ocrEmptyState" class="ocr-empty-state">
+              <h2 class="h5">Nothing processed yet</h2>
+              <p class="mb-0 text-body-secondary">
+                Choose a file, load the example PDF, or paste an image to begin.
+              </p>
+            </div>
+            <div id="ocrResults" class="ocr-results"></div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="./ocr-tool/ocr.js"></script>
+</body>
+</html>

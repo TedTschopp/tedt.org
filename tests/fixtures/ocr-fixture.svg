@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360" role="img" aria-label="OCR fixture image">
+  <rect width="900" height="360" fill="#ffffff" />
+  <rect x="24" y="24" width="852" height="312" rx="18" fill="#ffffff" stroke="#0f172a" stroke-width="6" />
+  <text
+    x="450"
+    y="205"
+    text-anchor="middle"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="168"
+    font-weight="700"
+    letter-spacing="10"
+    fill="#111827"
+  >OCR</text>
+</svg>

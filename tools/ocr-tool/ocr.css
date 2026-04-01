@@ -1,0 +1,194 @@
+:root {
+  --ocr-accent: #e86027;
+  --ocr-accent-soft: rgba(232, 96, 39, 0.15);
+  --ocr-cool: #00a9e0;
+  --ocr-paper: rgba(248, 246, 240, 0.06);
+  --ocr-shell: min(1320px, calc(100vw - 2rem));
+}
+
+body {
+  background:
+    radial-gradient(circle at top right, rgba(0, 169, 224, 0.12), transparent 28%),
+    radial-gradient(circle at left center, rgba(232, 96, 39, 0.12), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+}
+
+.ocr-app {
+  max-width: var(--ocr-shell);
+}
+
+.ocr-hero {
+  background:
+    linear-gradient(135deg, rgba(0, 68, 111, 0.9), rgba(16, 24, 32, 0.98) 45%, rgba(111, 26, 7, 0.9)),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 3rem rgba(7, 9, 15, 0.28);
+}
+
+.ocr-kicker {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.ocr-hero-note {
+  max-width: 24rem;
+  padding: 1rem 1.1rem;
+  background: rgba(7, 9, 15, 0.28);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
+.mono {
+  font-family: "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.ocr-drop-zone {
+  border: 2px dashed rgba(232, 96, 39, 0.42);
+  border-radius: 1rem;
+  min-height: 12rem;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  text-align: center;
+  background:
+    linear-gradient(135deg, rgba(232, 96, 39, 0.09), rgba(0, 169, 224, 0.08)),
+    rgba(255, 255, 255, 0.02);
+  transition: transform 180ms ease, border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  cursor: pointer;
+}
+
+.ocr-drop-zone:hover,
+.ocr-drop-zone:focus-visible,
+.ocr-drop-zone.is-drag-over {
+  transform: translateY(-2px);
+  border-color: rgba(0, 169, 224, 0.7);
+  background:
+    linear-gradient(135deg, rgba(232, 96, 39, 0.16), rgba(0, 169, 224, 0.18)),
+    rgba(255, 255, 255, 0.03);
+  box-shadow: 0 1rem 2rem rgba(7, 9, 15, 0.18);
+}
+
+.ocr-drop-zone.is-busy {
+  cursor: progress;
+  opacity: 0.78;
+}
+
+.ocr-drop-zone__title {
+  font-size: clamp(1.1rem, 0.95rem + 0.65vw, 1.45rem);
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.ocr-drop-zone__subtitle,
+.ocr-drop-zone__caption {
+  color: var(--bs-secondary-color);
+}
+
+.ocr-drop-zone__caption {
+  margin-top: 0.75rem;
+  font-size: 0.9rem;
+}
+
+.ocr-progress-shell {
+  width: 100%;
+  height: 0.7rem;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.ocr-progress-bar {
+  width: 0%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--ocr-accent), var(--ocr-cool));
+  transition: width 180ms ease;
+}
+
+.ocr-full-document {
+  min-height: 22rem;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.ocr-empty-state {
+  border: 1px dashed rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.ocr-results {
+  display: grid;
+  gap: 1rem;
+}
+
+.ocr-result-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.ocr-result-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.ocr-result-grid {
+  display: grid;
+  grid-template-columns: minmax(240px, 38%) minmax(0, 1fr);
+  gap: 0;
+}
+
+.ocr-preview-shell {
+  padding: 1rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(7, 9, 15, 0.22);
+}
+
+.ocr-preview-shell img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  background: white;
+}
+
+.ocr-text-shell {
+  padding: 1rem;
+}
+
+.ocr-text-shell textarea {
+  width: 100%;
+  min-height: 14rem;
+  resize: vertical;
+  line-height: 1.5;
+}
+
+.ocr-page-meta {
+  font-size: 0.84rem;
+  color: var(--bs-secondary-color);
+}
+
+@media (max-width: 991.98px) {
+  .ocr-result-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ocr-preview-shell {
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  }
+}
