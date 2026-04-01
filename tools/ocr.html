@@ -37,15 +37,15 @@
             <div class="d-flex flex-wrap gap-2">
               <span class="badge rounded-pill text-bg-primary">Client-side only</span>
               <span class="badge rounded-pill text-bg-secondary">PDF + JPG + PNG + GIF + pasted images</span>
-              <span class="badge rounded-pill text-bg-secondary" id="languagePackBadge">25 local language packs</span>
+              <span class="badge rounded-pill text-bg-secondary" id="languagePackBadge">25 on-demand language packs</span>
             </div>
           </div>
           <div class="ocr-hero-note">
             <h2 class="h5 mb-2">Runtime note</h2>
             <p class="mb-0 text-body-secondary">
-              The tool loads local OCR assets from this repo. It should work on the published site and over
-              <span class="mono">http://localhost</span>. Some browsers may block worker startup from
-              <span class="mono">file://</span>.
+              The tool loads local PDF and OCR runtime assets from this repo, then fetches language data on demand and
+              caches it in your browser. It works best on the published site or over <span class="mono">http://localhost</span>.
+              Some browsers may block worker startup from <span class="mono">file://</span>.
             </p>
           </div>
         </div>
@@ -64,8 +64,8 @@
               <label class="form-label" for="ocrLanguage">Language pack</label>
               <select id="ocrLanguage" class="form-select" aria-describedby="ocrLanguageHelp"></select>
               <div id="ocrLanguageHelp" class="form-text">
-                Local traineddata packs only. More packs can be added to
-                <span class="mono">tools/ocr-tool/languages/</span>.
+                Language data is downloaded on demand from the public Tesseract.js language package CDN and then cached
+                in your browser for reuse.
               </div>
             </div>
 
@@ -124,7 +124,7 @@
               PDF rendering: Apache-2.0 PDF.js.
             </p>
             <p class="mb-0">
-              Language data is served from local copies of Tesseract traineddata files stored in this repo.
+              Language data is fetched on demand from the public Tesseract.js language package CDN and cached locally in the browser.
             </p>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import * as pdfjsLib from './vendor/pdfjs/pdf.min.mjs';
 
-const LOCAL_LANGUAGE_PACKS = [
+const AVAILABLE_LANGUAGE_PACKS = [
   { code: 'eng', label: 'English' },
   { code: 'spa', label: 'Spanish' },
   { code: 'fra', label: 'French' },
@@ -94,12 +94,12 @@ function updateSourceMeta(name, count = 0) {
 }
 
 function getLanguageLabel(code) {
-  return LOCAL_LANGUAGE_PACKS.find((entry) => entry.code === code)?.label || code;
+  return AVAILABLE_LANGUAGE_PACKS.find((entry) => entry.code === code)?.label || code;
 }
 
 function populateLanguages() {
   elements.languageSelect.innerHTML = '';
-  for (const language of LOCAL_LANGUAGE_PACKS) {
+  for (const language of AVAILABLE_LANGUAGE_PACKS) {
     const option = document.createElement('option');
     option.value = language.code;
     option.textContent = language.label;
@@ -108,7 +108,7 @@ function populateLanguages() {
     }
     elements.languageSelect.appendChild(option);
   }
-  elements.languagePackBadge.textContent = `${LOCAL_LANGUAGE_PACKS.length} local language packs`;
+  elements.languagePackBadge.textContent = `${AVAILABLE_LANGUAGE_PACKS.length} on-demand language packs`;
   elements.selectedLanguageLabel.textContent = getLanguageLabel(state.currentLanguage);
 }
 
@@ -218,7 +218,7 @@ async function ensureWorker(languageCode) {
   state.worker = await window.Tesseract.createWorker(languageCode, 1, {
     workerPath: new URL('./vendor/tesseract/worker.min.js', import.meta.url).href,
     corePath: new URL('./vendor/tesseract-core/', import.meta.url).href,
-    langPath: new URL('./languages/', import.meta.url).href,
+    cacheMethod: 'write',
     logger(message) {
       if (!state.busy) {
         return;
