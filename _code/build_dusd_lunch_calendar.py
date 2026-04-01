@@ -35,7 +35,7 @@ except ImportError as exc:  # pragma: no cover
 
 BASE_URL_TEMPLATE = (
     "https://www.schoolnutritionandfitness.com/schools/"
-    "dusd_1401100214572158/menus/_Elementary_Menu_-_{month}_{year}_-_Lunch.pdf"
+    "dusd_1401100214572158/menus/Elementary_Menu_-_{month}_{year}_-_Lunch.pdf"
 )
 CALENDAR_NAME = "DUSD Elementary Lunch Menu"
 CALENDAR_DESCRIPTION = (
