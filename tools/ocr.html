@@ -32,7 +32,7 @@
             <h1 class="display-6 mb-3">Browser OCR Workspace</h1>
             <p class="lead mb-3">
               Run OCR against PDFs and images without sending files to a server.
-              PDF pages render locally with PDF.js, then OCR runs through Tesseract in your browser.
+              PDF pages render locally with PDF.js, then OCR runs in your browser.
             </p>
             <div class="d-flex flex-wrap gap-2">
               <span class="badge rounded-pill text-bg-primary">Client-side only</span>
@@ -64,7 +64,7 @@
               <label class="form-label" for="ocrLanguage">Language pack</label>
               <select id="ocrLanguage" class="form-select" aria-describedby="ocrLanguageHelp"></select>
               <div id="ocrLanguageHelp" class="form-text">
-                Language data is downloaded on demand from the public Tesseract.js language package CDN and then cached
+                Language data is downloaded on demand and cached
                 in your browser for reuse.
               </div>
             </div>
@@ -117,14 +117,8 @@
             <strong>Attribution</strong>
           </div>
           <div class="card-body text-body-secondary small">
-            <p>
-              OCR runtime: Apache-2.0 Tesseract.js and Tesseract.js Core.
-            </p>
-            <p>
-              PDF rendering: Apache-2.0 PDF.js.
-            </p>
             <p class="mb-0">
-              Language data is fetched on demand from the public Tesseract.js language package CDN and cached locally in the browser.
+              Language data is fetched on demand and cached locally in the browser.
             </p>
           </div>
         </div>
