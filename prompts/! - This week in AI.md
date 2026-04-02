@@ -50,9 +50,13 @@ Normalize dates:
 
 4) DEDUPLICATE & QUALITY FILTER
 - Deduplicate by URL/title. Prefer fuller, authoritative sources.
+- Load URL and check content for relevance and credibility. Exclude items that are:
+  - Not enterprise-focused
+  - Clickbait or from questionable sources
+  - Irrelevant or off-topic content
 - Prioritize credible, primary news. Avoid clickbait or questionable sources.
 
-5) RANK & SELECT
+1) RANK & SELECT
 - Aim for 8–12 primary items, or fewer if not enough pass filtering.
 - Rank: enterprise impact, novelty, next steps for enterprises, global interest, and West Coast relevance (never stated directly).
 
@@ -70,8 +74,8 @@ A) Header
 - Subtitle: 1 sentence capturing the week’s theme from a California view.
 
 B) TL;DR
-- A single paragraph of 2 - 3 sentences summarizing key themes.
-- 3–5 executive-focused action bullets, ≤18 words each.
+- A single paragraph of 2 - 3 sentences summarizing key themes, trends, and implications for enterprises.  Do not invent details or extrapolate beyond the included news. Focus on actionable insights for enterprise leaders and employees.
+- 3–5 executive-focused action bullets, ≤25 words each.
 
 C) Main Sections For each item include:
 - Brief, rewritten headline
@@ -104,5 +108,5 @@ OUTPUT CONSTRAINTS
 - No process notes, hidden reasoning, or tool output.
 - Keep content skimmable: short paragraphs, bullets, and clear headers.
 
-JSON / RSS FEED URL: 
+JSON / RSS FEED URL(S): 
 https://rss.tedt.org/ai_rss_feed.json
