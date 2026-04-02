@@ -110,4 +110,4 @@ OUTPUT CONSTRAINTS
 
 JSON / RSS FEED URL(S): 
 https://rss.tedt.org/ai_rss_feed.json
- https://rss.tedt.org/aggregated_wes_ai_news.json
+https://rss.tedt.org/aggregated_wes_ai_news.json
