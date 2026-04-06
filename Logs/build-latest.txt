@@ -9,67 +9,67 @@ Build Process Summary:
 | PHASE    |    TIME |
 +----------+---------+
 | RESET    |  0.0003 |
-| READ     |  2.1262 |
-| GENERATE |  0.2611 |
-| RENDER   | 19.1676 |
-| CLEANUP  |  0.1264 |
-| WRITE    |  2.9148 |
+| READ     |  2.0784 |
+| GENERATE |  0.2603 |
+| RENDER   | 19.5956 |
+| CLEANUP  |  0.1225 |
+| WRITE    |  3.5624 |
  
 
 Site Render Stats: 
 
 | Filename                                               | Count |      Bytes |   Time |
 +--------------------------------------------------------+-------+------------+--------+
-| _layouts/gammaworld.html                               |   699 | 150564.12K | 13.026 |
-| _layouts/category.html                                 |    39 |  13376.05K |  2.214 |
-| _includes/layout/footer.html                           |  1066 |  44779.29K |  1.406 |
-| _layouts/post.html                                     |   161 |  32144.64K |  1.310 |
-| _includes/category/map-category-to-registry.html       |  2440 |      2.38K |  0.950 |
-| _includes/seo/meta-data-seo.html                       |  1212 |   9445.90K |  0.950 |
-| _layouts/prompt-details.html                           |    57 |  22246.69K |  0.628 |
-| _includes/layout/top-nav-bar.html                      |   372 |   5645.39K |  0.518 |
-| _layouts/quote.html                                    |    67 |   7369.79K |  0.473 |
-| _includes/utility/resolve-image-variables.html         |  4510 |      0.00K |  0.459 |
-| _includes/category/category-label.html                 |  1159 |    855.53K |  0.381 |
-| _includes/utility/calculate-variables.html             |  1213 |    456.06K |  0.362 |
-| _layouts/default.html                                  |     2 |    499.46K |  0.346 |
-| _includes/homepage/carousel.html                       |     2 |    142.87K |  0.310 |
-| _includes/utility/safe-absolute-url.html               |  9518 |    311.86K |  0.183 |
-| _includes/category/category-theme-inline-style.html    |  2003 |   1238.11K |  0.144 |
-| _layouts/bb-default.html                               |   140 |   7984.24K |  0.132 |
-| _includes/category/category-palette-apply.html         |   805 |    890.46K |  0.127 |
-| _layouts/long-article.html                             |    26 |   3293.96K |  0.123 |
-| _includes/assets/scripts.html                          |  1212 |   5400.74K |  0.112 |
-| _layouts/bb-error.html                                 |    83 |   1239.54K |  0.112 |
-| _includes/category/category-emoji.html                 |   421 |     42.21K |  0.095 |
-| _includes/content/next-and-previous.html               |   254 |    419.26K |  0.091 |
-| _includes/assets/all-css-includes.html                 |  1212 |  16543.67K |  0.074 |
-| _includes/utility/stage-badge.html                     |  1116 |    305.16K |  0.063 |
-| _includes/seo/indieauth-webmentions-metadata.html      |  1072 |   1980.69K |  0.063 |
-| _includes/assets/js-bottom-of-body.html                |  1212 |  15636.16K |  0.049 |
-| _includes/brain-bugs/bb-related-errors-rail.html       |    83 |    252.14K |  0.043 |
-| _includes/seo/article-jsonld.html                      |   192 |    208.33K |  0.040 |
-| _posts/RPG Posts/2023-07-22-The-Right-Set-of-Skills.md |     1 |    446.30K |  0.037 |
-| _posts/Blog Posts/2026-01-12-Color-Chart-Pan-Zoom.md   |     1 |      2.38K |  0.034 |
-| _layouts/prompt-library.html                           |     1 |   2138.45K |  0.033 |
-| _layouts/bb-category.html                              |    10 |    269.53K |  0.033 |
-| _includes/analytics/google-analytics.html              |  1212 |    495.93K |  0.032 |
-| _layouts/folklore-story.html                           |     5 |    611.10K |  0.027 |
-| feed.json                                              |     1 |   1227.09K |  0.025 |
-| sitemap.xml                                            |     1 |    207.55K |  0.025 |
-| _includes/brain-bugs/bb-breadcrumbs.html               |   139 |    122.32K |  0.022 |
-| _includes/analytics/clarity.html                       |  1212 |    458.05K |  0.021 |
-| atom.xml                                               |     1 |    318.13K |  0.021 |
-| _layouts/page.html                                     |     5 |    619.22K |  0.020 |
-| _layouts/reveal-integrated.html                        |     6 |    409.43K |  0.016 |
-| _layouts/tool.html                                     |    25 |    140.13K |  0.016 |
+| _layouts/gammaworld.html                               |   699 | 142033.36K | 12.364 |
+| _layouts/category.html                                 |    39 |  12906.59K |  2.178 |
+| _layouts/post.html                                     |   162 |  30306.74K |  1.326 |
+| _includes/layout/footer.html                           |  1068 |  31829.32K |  1.267 |
+| _includes/seo/meta-data-seo.html                       |  1214 |   9461.66K |  0.909 |
+| _includes/category/map-category-to-registry.html       |  2445 |      2.39K |  0.905 |
+| _layouts/prompt-details.html                           |    57 |  21551.37K |  0.600 |
+| _includes/layout/top-nav-bar.html                      |   374 |   5675.74K |  0.488 |
+| _includes/utility/resolve-image-variables.html         |  4515 |      0.00K |  0.454 |
+| _layouts/quote.html                                    |    67 |   6552.12K |  0.414 |
+| _includes/category/category-label.html                 |  1159 |    855.53K |  0.376 |
+| _includes/utility/calculate-variables.html             |  1215 |    456.81K |  0.357 |
+| _layouts/default.html                                  |     2 |    473.81K |  0.329 |
+| _includes/homepage/carousel.html                       |     2 |    142.04K |  0.269 |
+| _includes/utility/safe-absolute-url.html               |  9534 |    312.99K |  0.182 |
+| _includes/category/category-theme-inline-style.html    |  2003 |   1238.11K |  0.140 |
+| _layouts/bb-default.html                               |   140 |   7984.24K |  0.133 |
+| _includes/category/category-palette-apply.html         |   805 |    890.46K |  0.122 |
+| _layouts/long-article.html                             |    27 |   3077.78K |  0.119 |
+| _layouts/bb-error.html                                 |    83 |   1239.54K |  0.109 |
+| _includes/category/category-emoji.html                 |   424 |     42.44K |  0.108 |
+| _includes/assets/scripts.html                          |  1214 |   5409.65K |  0.104 |
+| _includes/content/next-and-previous.html               |   256 |    422.54K |  0.089 |
+| _includes/assets/all-css-includes.html                 |  1214 |  16570.97K |  0.071 |
+| _includes/utility/stage-badge.html                     |  1122 |    306.80K |  0.059 |
+| _includes/seo/indieauth-webmentions-metadata.html      |  1074 |   1984.38K |  0.055 |
+| _includes/seo/article-jsonld.html                      |   194 |    210.31K |  0.046 |
+| _includes/assets/js-bottom-of-body.html                |  1214 |  15661.96K |  0.043 |
+| _includes/brain-bugs/bb-related-errors-rail.html       |    83 |    252.14K |  0.042 |
+| _layouts/bb-category.html                              |    10 |    269.53K |  0.031 |
+| _includes/analytics/google-analytics.html              |  1214 |    496.74K |  0.031 |
+| _posts/RPG Posts/2023-07-22-The-Right-Set-of-Skills.md |     1 |    446.30K |  0.029 |
+| _posts/Blog Posts/2026-01-12-Color-Chart-Pan-Zoom.md   |     1 |      2.38K |  0.028 |
+| _layouts/prompt-library.html                           |     1 |   2126.25K |  0.027 |
+| feed.json                                              |     1 |   1248.87K |  0.027 |
+| _layouts/folklore-story.html                           |     5 |    550.08K |  0.026 |
+| sitemap.xml                                            |     1 |    207.88K |  0.023 |
+| _includes/brain-bugs/bb-breadcrumbs.html               |   139 |    122.32K |  0.021 |
+| _includes/analytics/clarity.html                       |  1214 |    458.81K |  0.020 |
+| atom.xml                                               |     1 |    322.00K |  0.019 |
+| _layouts/page.html                                     |     5 |    561.63K |  0.019 |
+| _layouts/reveal-integrated.html                        |     6 |    409.43K |  0.017 |
+| _layouts/tool.html                                     |    26 |    146.42K |  0.015 |
 | _includes/brain-bugs/bb-error-card.html                |   450 |    202.29K |  0.015 |
-| _includes/utility/author-byline.html                   |   161 |     60.69K |  0.013 |
-| _includes/utility/render-image-credit.html             |   244 |     66.25K |  0.011 |
-| _includes/feeds/feeds.html                             |  1212 |    387.04K |  0.010 |
-| _includes/brain-bugs/bb-site-header.html               |   140 |    307.21K |  0.010 |
-| _includes/assets/js-bootstrap.html                     |  1212 |   1377.70K |  0.008 |
-| _layouts/folklore-location.html                        |     1 |    134.37K |  0.008 |
+| _includes/utility/author-byline.html                   |   162 |     61.07K |  0.014 |
+| _includes/feeds/feeds.html                             |  1214 |    387.67K |  0.010 |
+| _includes/brain-bugs/bb-site-header.html               |   140 |    307.21K |  0.009 |
+| _includes/utility/render-image-credit.html             |   246 |     66.76K |  0.009 |
+| _layouts/folklore-location.html                        |     1 |    122.17K |  0.007 |
+| _includes/social/comments-webmentions.html             |  1056 |   1826.04K |  0.006 |
  
-                    done in 24.607 seconds.
+                    done in 25.627 seconds.
  Auto-regeneration: disabled. Use --watch to enable.
