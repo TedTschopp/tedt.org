@@ -3964,5 +3964,37 @@
       "https://tschopp.net/users/Ted/statuses/116315815249182525"
     ],
     "lastTootTimestamp": 1774838489599
+  },
+  "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/": {
+    "id": "/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+    "title": "Before You Reach for AI, Ask What Job Needs Doing",
+    "summary": "Before you choose a chatbot, an AI agent, or workflow automation, define the job to be done. The real decision is whether the friction is uncertainty, manual effort, or both.",
+    "content_text": "Before you choose a chatbot, an AI agent, or workflow automation, define the job to be done. The real decision is whether the friction is uncertainty, manual effort, or both. https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+    "url": "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+    "image": "https://tedt.org/img/2026-04/before-you-reach-for-ai-ask-what-job-needs-doing.webp",
+    "tags": [
+      "jobs to be done",
+      "chatbot vs agent",
+      "ai agents",
+      "chatbots",
+      "enterprise ai",
+      "workflow automation",
+      "agentic workflows",
+      "employee self-service",
+      "ai strategy",
+      "operating model",
+      "enterprise architecture"
+    ],
+    "date_published": "2026-04-05T09:00:00-07:00",
+    "date_modified": "2026-04-05T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116355454737780225"
+    ],
+    "lastTootTimestamp": 1775443340235
   }
 }
