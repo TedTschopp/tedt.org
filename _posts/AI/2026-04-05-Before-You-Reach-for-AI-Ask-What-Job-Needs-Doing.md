@@ -30,7 +30,6 @@ seo-description: "How do you choose between a chatbot and an AI agent? Start wit
 
 categories:
 - AI
-- Business
 - Opinion
 
 tags:

@@ -29,7 +29,6 @@ seo-description: "What does IT become in an enterprise where AI is assumed? This
 
 categories:
 - AI
-- Business
 - Opinion
 
 tags:
@@ -61,7 +60,10 @@ location:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/2026-04/From-Workshop-to-Platform-The-Industrialization-of-AI-Driven-IT.webp
+
+
+
+image: "/img/2026-04/From-Workshop-to-Platform-The-Industrialization-of-AI-Driven-IT.webp"
 image-alt: "Split illustration showing a traditional workshop with manual crafting on one side and a modern digital office with standardized computer workstations on the other, representing the shift from handcrafted work to scalable, technology-driven operations."
 image-artist: ""
 image-artist-URL: ""
