@@ -23,6 +23,7 @@ description: Explore the concept of Bespreekbaarheid, a Dutch term that encourag
 seo-description: null
 categories:
 - Computers
+- Business
 - Communications
 tags: null
 keywords: Bespreekbaarheid, IT Organizations, Open Dialogue, Transparency, Innovation,

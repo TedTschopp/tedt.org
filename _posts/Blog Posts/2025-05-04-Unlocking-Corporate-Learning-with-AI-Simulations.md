@@ -37,6 +37,7 @@ seo-description: Discover how to use AI simulations for corporate training. Lear
   scenarios for business skills.
 categories:
 - Artificial Intelligence
+- Business
 - Opinion
 - Projects
 tags:

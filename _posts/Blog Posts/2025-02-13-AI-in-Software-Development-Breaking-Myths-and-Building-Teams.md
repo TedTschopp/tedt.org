@@ -32,6 +32,7 @@ seo-description: "AI coding tools like GitHub Copilot aren\u2019t just about spe
   \ dynamics, not replacing developers."
 categories:
 - Computers
+- Business
 - Opinion
 - Philosophy
 - Projects

@@ -37,6 +37,7 @@ seo-description: Discover how GPT-4.5 is quietly revolutionizing the workplace. 
   and empathy.
 categories:
 - Artificial Intelligence
+- Business
 - Opinion
 tags:
 - GPT-4.5
