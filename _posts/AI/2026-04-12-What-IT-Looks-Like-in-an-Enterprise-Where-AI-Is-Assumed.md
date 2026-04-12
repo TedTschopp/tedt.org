@@ -67,8 +67,8 @@ image-artist: ""
 image-artist-URL: ""
 image-description: "A conceptual split-scene illustration showing the evolution of work from handcrafted, manual production to scaled, platform-driven operations. On the left, a warm-toned workshop represents traditional, hands-on creation—individual effort, bespoke solutions, and localized control. On the right, a cool-toned modern office depicts a digitally enabled environment with standardized workstations, automation, and interconnected systems. The visual contrast highlights the transition from artisanal development to industrialized, platform-based delivery—mirroring the shift toward AI-enabled, business-led development at scale."
 image-title: "From Workshop to Platform: The Industrialization of AI-Driven IT"
-image_width: 1456 
-image_height:  816
+image_width: 1456
+image_height: 816
 
 mastodon-post-id:
 

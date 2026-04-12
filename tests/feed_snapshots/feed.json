@@ -17,6 +17,12 @@
   },
   "item_count": 36,
   "item_order": [
+    "/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+    "/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+    "/Pest-Control/",
+    "/Black-Rain-Delivery/",
+    "/Why-AI-Needs-a-Harness/",
+    "/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
     "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
     "/An-Introduction-to-OpenClaw/",
     "/Agents-Dont-Click/",
@@ -46,13 +52,7 @@
     "/prompts/product-requirements-document-prd-template/",
     "/prompts/product-requirements-document-prd-template-4/",
     "/prompts/product-requirements-document-prd-template-2/",
-    "/prompts/product-requirements-document-prd-for-power-platform/",
-    "/prompts/prd-generator/",
-    "/prompts/prd-agent/",
-    "/prompts/objectives-key-results/",
-    "/prompts/module-format/",
-    "/prompts/module-builder/",
-    "/prompts/microsoft-power-automate-systems-architect/"
+    "/prompts/product-requirements-document-prd-for-power-platform/"
   ],
   "items": [
     {
@@ -76,6 +76,28 @@
       "content_length": 9776,
       "image": "/img/AI/Clawbots-on-Moltbook.webp",
       "diff_hash": "a3ca6240feee67d997f94d8e68ba82d5350d01e7f03ba0a4c9bfee8a60fd30dc"
+    },
+    {
+      "key": "/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+      "id": "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+      "url": "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+      "title": "Before You Reach for AI, Ask What Job Needs Doing",
+      "summary": "Before you choose a chatbot, an AI agent, or workflow automation, define the job to be done. The real decision is whether the friction is uncertainty, manual effort, or both.",
+      "content_excerpt": "Some of the clearest lessons about work do not arrive at work. They show up atthe kitchen counter on a Tuesday night, when our 10-year-old twin girls are bothtalking at once, our 12-year-old son is looking for a signed form, and somewhereun",
+      "content_length": 11291,
+      "image": "/img/2026-04/before-you-reach-for-ai-ask-what-job-needs-doing.webp",
+      "diff_hash": "f7a319f60a2df4b11ac85459fbdb3a0c881bf8f752c747aee273e1c5bc1c1171"
+    },
+    {
+      "key": "/Black-Rain-Delivery/",
+      "id": "https://tedt.org/Black-Rain-Delivery/",
+      "url": "https://tedt.org/Black-Rain-Delivery/",
+      "title": "Black Rain Delivery",
+      "summary": "A Shadowrun delivery run under blackened skies forces the runners to protect a convoy, survive toxic rain, and decide what the cargo is really worth.",
+      "content_excerpt": "BLACK RAIN DELIVERYFour battered haulers. Four unstable coffins. One jungle road. The job onlygets easier if you stop caring who survives.Design Brief (Recap) Tone &amp; run type: Cinematic, high-tension delivery run under relentlesspressur",
+      "content_length": 59919,
+      "image": "/img/2026-03/Black-Rain-Convoy.webp",
+      "diff_hash": "934ef5b0c306214c4dff9609700639fc3f9444d4def46c54743c8a137dbd9374"
     },
     {
       "key": "/Color-Chart-Pan-Zoom/",
@@ -122,6 +144,17 @@
       "diff_hash": "f520aa3c38fc700837238435571cdb624897125ba8a56fee01682eadf503723c"
     },
     {
+      "key": "/Pest-Control/",
+      "id": "https://tedt.org/Pest-Control/",
+      "url": "https://tedt.org/Pest-Control/",
+      "title": "Pest Control: A Shadowrun Mystery in Seattle",
+      "summary": "A routine Shadowrun job in Seattle uncovers bodies in a basement, the Brewster sisters' moral crusade, and a deeper conspiracy pulling the strings.",
+      "content_excerpt": "OutlineAct 1: The Pledge Setting the Scene: The runners are hired for what seems like a standard job in the sprawl of Seattle. Their client is an elderly couple who appear sweet and harmless. They own a quaint old house that seems out of pl",
+      "content_length": 59254,
+      "image": "/img/2026-03/Meeting-Mr-Johnson-Shadowrun.webp",
+      "diff_hash": "477004359ec1f0bc19eef778e661b1312e2ffc76a3ff25e23cb22d106c0a01de"
+    },
+    {
       "key": "/Reprint-The-Death-of-Software/",
       "id": "https://tedt.org/Reprint-The-Death-of-Software/",
       "url": "https://tedt.org/Reprint-The-Death-of-Software/",
@@ -142,6 +175,17 @@
       "content_length": 6233,
       "image": "/img/Financial-Times-Paper.webp",
       "diff_hash": "17fc59a018bab150eb8035bd6d1256da5e6b15127b6660acf5e5fcaab318cf1f"
+    },
+    {
+      "key": "/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
+      "id": "https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
+      "url": "https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
+      "title": "Stop Asking AI to Behave Like Legacy Software",
+      "summary": "Many people still want AI to behave like a slightly better version of the software they already know. This essay argues that the real shift is not better menus or smarter dashboards, but a move toward AI as the front door to work itself.",
+      "content_excerpt": "Over the last couple of years, I have built a growing set of AI agents and prompts to help me with different parts of my job. Over the last few months, something changed. Those agents became useful enough that coworkers started asking me fo",
+      "content_length": 11494,
+      "image": "/img/2026-03/Legacy-Software.webp",
+      "diff_hash": "8b701c8e09b67d1a9357d09fc95c880352d173e47ea3e038ed6eecca1bc1dfac"
     },
     {
       "key": "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
@@ -166,6 +210,17 @@
       "diff_hash": "2cacf3dbcfaba38c7e03e123f7832f54e450e4b88bf5148d6dc4374d6a93500a"
     },
     {
+      "key": "/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+      "id": "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+      "url": "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+      "title": "What IT Looks Like in an Enterprise Where AI Is Assumed",
+      "summary": "In an enterprise where AI is assumed, IT should not remain the sole builder of every solution. Its larger job is to build the factory system: the shared platforms, standards, guardrails, and production gates that let many teams move fast without breaking trust.",
+      "content_excerpt": "No global car company asks each manufacturing plant to invent its own production system.One plant may build a subcompact for one market, while another plant builds a sedan for an entirely different market somewhere else. Local matters. Loca",
+      "content_length": 11402,
+      "image": "/img/2026-04/From-Workshop-to-Platform-The-Industrialization-of-AI-Driven-IT.webp",
+      "diff_hash": "082dfd64dbea33b661259e3283afc32d2386d671c926c33183a01db8e0720c2a"
+    },
+    {
       "key": "/When-the-Machines-Dont-Sleep/",
       "id": "https://tedt.org/When-the-Machines-Dont-Sleep/",
       "url": "https://tedt.org/When-the-Machines-Dont-Sleep/",
@@ -177,6 +232,17 @@
       "diff_hash": "2e8bea6da470d659e18a17221b6cbd1dc9f12d32a9854c827c1e4f50ca4507aa"
     },
     {
+      "key": "/Why-AI-Needs-a-Harness/",
+      "id": "https://tedt.org/Why-AI-Needs-a-Harness/",
+      "url": "https://tedt.org/Why-AI-Needs-a-Harness/",
+      "title": "Why AI Needs a Harness",
+      "summary": "The real shift in AI is not the chatbot itself, but the harness around it: the tools, memory, guardrails, feedback loops, and permissions that turn a fluent model into a system that can do real work.",
+      "content_excerpt": "A few nights ago, after the house had finally gone quiet, I sat at my desk in my home office with a computer, a discarded Dr. Pepper Zero can from earlier in the day, and the kind of problem that always seems smaller in daylight than it doe",
+      "content_length": 16272,
+      "image": "/img/2026-03/AI-Agent-Harness.webp",
+      "diff_hash": "bf3fa2e0fcb86e4b8fb7b6a977d541b3aa049c55e4c9606d0d9cdcabe92a1c1b"
+    },
+    {
       "key": "/Winning-the-Intelligence-Inversion/",
       "id": "https://tedt.org/Winning-the-Intelligence-Inversion/",
       "url": "https://tedt.org/Winning-the-Intelligence-Inversion/",
@@ -186,72 +252,6 @@
       "content_length": 199240,
       "image": "/img/2025-11/The-Intelligence-Inversion-3.webp",
       "diff_hash": "b682f588087eeb715956774a77e02736954626ff7ce2bb5cba2b07db8c8ead31"
-    },
-    {
-      "key": "/prompts/microsoft-power-automate-systems-architect/",
-      "id": "https://tedt.org/prompts/microsoft-power-automate-systems-architect/",
-      "url": "https://tedt.org/prompts/microsoft-power-automate-systems-architect/",
-      "title": "Architecture Microsoft Power Automate Systems Architect",
-      "summary": "A specialized prompt for architecture microsoft power automate systems architect with advanced AI capabilities and structured output formatting.",
-      "content_excerpt": "This prompt is designed for professional architecture microsoft power automate systems architect prompt designed for high-quality content generation and structured analysis.How to Use This Prompt Copy the prompt from the prompt content sect",
-      "content_length": 1421,
-      "image": "/img/prompts/architecture-product-requirements-document.png",
-      "diff_hash": "962df23bf909a9322bc03ec685fa99f76a73cd5b269b14dfe6de6157385e4391"
-    },
-    {
-      "key": "/prompts/module-builder/",
-      "id": "https://tedt.org/prompts/module-builder/",
-      "url": "https://tedt.org/prompts/module-builder/",
-      "title": "TTRPG Module Builder",
-      "summary": "A specialized prompt for ttrpg module builder with advanced AI capabilities and structured output formatting.",
-      "content_excerpt": "This prompt is designed for professional ttrpg module builder prompt designed for high-quality content generation and structured analysis.How to Use This Prompt Copy the prompt from the prompt content section above Customize variables if an",
-      "content_length": 1380,
-      "image": "/img/prompts/TTRPG-Opening-Scene.png",
-      "diff_hash": "b5f2aa29af56bf02fcf723050d9f44f783b7442f76149214614cbcabd592e644"
-    },
-    {
-      "key": "/prompts/module-format/",
-      "id": "https://tedt.org/prompts/module-format/",
-      "url": "https://tedt.org/prompts/module-format/",
-      "title": "TTRPG Module Format",
-      "summary": "A specialized prompt for ttrpg module format with advanced AI capabilities and structured output formatting.",
-      "content_excerpt": "This prompt is designed for professional ttrpg module format prompt designed for high-quality content generation and structured analysis.How to Use This Prompt Copy the prompt from the prompt content section above Customize variables if any",
-      "content_length": 1367,
-      "image": "/img/prompts/TTRPG-Opening-Scene.png",
-      "diff_hash": "604d855184b32aa8409cab5ee449a7fe3a1786bfb3cbcba86246160fd19dc256"
-    },
-    {
-      "key": "/prompts/objectives-key-results/",
-      "id": "https://tedt.org/prompts/objectives-key-results/",
-      "url": "https://tedt.org/prompts/objectives-key-results/",
-      "title": "Business Objectives Key Results",
-      "summary": "A specialized prompt for business objectives key results with advanced AI capabilities and structured output formatting.",
-      "content_excerpt": "This prompt is designed for professional business objectives key results prompt designed for high-quality content generation and structured analysis.How to Use This Prompt Copy the prompt from the prompt content section above Customize vari",
-      "content_length": 1391,
-      "image": null,
-      "diff_hash": "254ada01c0357cf6ef852d3021e8ac75ec1d8419789bf87926d7c10f235f1735"
-    },
-    {
-      "key": "/prompts/prd-agent/",
-      "id": "https://tedt.org/prompts/prd-agent/",
-      "url": "https://tedt.org/prompts/prd-agent/",
-      "title": "Architecture PRD Agent",
-      "summary": "A specialized prompt for architecture prd agent with advanced AI capabilities and structured output formatting.",
-      "content_excerpt": "This prompt is designed for professional architecture prd agent prompt designed for high-quality content generation and structured analysis.How to Use This Prompt Copy the prompt from the prompt content section above Customize variables if ",
-      "content_length": 1383,
-      "image": null,
-      "diff_hash": "9e44b615046f138eabce0bd34b7f5337dd5dd3c0ce3a68b97cd5e19d90ed9775"
-    },
-    {
-      "key": "/prompts/prd-generator/",
-      "id": "https://tedt.org/prompts/prd-generator/",
-      "url": "https://tedt.org/prompts/prd-generator/",
-      "title": "Architecture PRD Generator",
-      "summary": "A specialized prompt for architecture prd generator with advanced AI capabilities and structured output formatting.",
-      "content_excerpt": "This prompt is designed for professional architecture prd generator prompt designed for high-quality content generation and structured analysis.How to Use This Prompt Copy the prompt from the prompt content section above Customize variables",
-      "content_length": 1385,
-      "image": null,
-      "diff_hash": "cf2c314afef5b3ecdf08a7c8c222a12cb1de1e25164fd88b6ce7a33a5b98d2c0"
     },
     {
       "key": "/prompts/product-requirements-document-prd-for-power-platform/",

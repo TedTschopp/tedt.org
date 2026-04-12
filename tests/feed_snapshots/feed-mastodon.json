@@ -17,18 +17,18 @@
   },
   "item_count": 12,
   "item_order": [
+    "/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+    "/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+    "/Pest-Control/",
+    "/Black-Rain-Delivery/",
+    "/Why-AI-Needs-a-Harness/",
+    "/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
     "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
     "/An-Introduction-to-OpenClaw/",
     "/Agents-Dont-Click/",
     "/Reprint-The-Death-of-Software/",
     "/Color-Chart-Pan-Zoom/",
-    "/The-Pancake-Protocol/",
-    "/Make-AI-Boring/",
-    "/How-to-Communicate-in-a-World-of-AI/",
-    "/prompts/product-requirements-document-prd-template-3/",
-    "/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/",
-    "/Winning-the-Intelligence-Inversion/",
-    "/When-the-Machines-Dont-Sleep/"
+    "/The-Pancake-Protocol/"
   ],
   "items": [
     {
@@ -54,6 +54,28 @@
       "diff_hash": "f0629505c6dcf5b73b3986da5fd67bbd0450be28ddea4c6d4247be622153de2f"
     },
     {
+      "key": "/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+      "id": "/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+      "url": "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/",
+      "title": "Before You Reach for AI, Ask What Job Needs Doing",
+      "summary": "Before you choose a chatbot, an AI agent, or workflow automation, define the job to be done. The real decision is whether the friction is uncertainty, manual effort, or both.",
+      "content_excerpt": "Before you choose a chatbot, an AI agent, or workflow automation, define the job to be done. The real decision is whether the friction is uncertainty, manual effort, or both. https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing",
+      "content_length": 241,
+      "image": "https://tedt.org/img/2026-04/before-you-reach-for-ai-ask-what-job-needs-doing.webp",
+      "diff_hash": "5b86d0f4f73d8307db2f07e9cf30768ca36d28080ca11b2b802790a7a394f354"
+    },
+    {
+      "key": "/Black-Rain-Delivery/",
+      "id": "/Black-Rain-Delivery/",
+      "url": "https://tedt.org/Black-Rain-Delivery/",
+      "title": "Black Rain Delivery",
+      "summary": "A Shadowrun delivery run under blackened skies forces the runners to protect a convoy, survive toxic rain, and decide what the cargo is really worth.",
+      "content_excerpt": "A Shadowrun delivery run under blackened skies forces the runners to protect a convoy, survive toxic rain, and decide what the cargo is really worth. https://tedt.org/Black-Rain-Delivery/",
+      "content_length": 187,
+      "image": "https://tedt.org/img/2026-03/Black-Rain-Convoy.webp",
+      "diff_hash": "881f09ff25932fa4c71c6fc3a4df45d2a9b8d87a844fd7c32a65c5dbcd6eba12"
+    },
+    {
       "key": "/Color-Chart-Pan-Zoom/",
       "id": "/Color-Chart-Pan-Zoom/",
       "url": "https://tedt.org/Color-Chart-Pan-Zoom/",
@@ -65,26 +87,15 @@
       "diff_hash": "70ed5ea96892c2b6294e30143359ea388bae78f1fd81880c4ec8ca5ab081e337"
     },
     {
-      "key": "/How-to-Communicate-in-a-World-of-AI/",
-      "id": "/How-to-Communicate-in-a-World-of-AI/",
-      "url": "https://tedt.org/How-to-Communicate-in-a-World-of-AI/",
-      "title": "How to Communicate in a World of AI",
-      "summary": "AI accelerates drafting and execution, shifting the bottleneck to clear intent. Specifications—goals, constraints, and tests—turn prompts into repeatable quality.",
-      "content_excerpt": "AI accelerates drafting and execution, shifting the bottleneck to clear intent. Specifications—goals, constraints, and tests—turn prompts into repeatable quality. https://tedt.org/How-to-Communicate-in-a-World-of-AI/",
-      "content_length": 216,
-      "image": "https://tedt.org/img/2025-12/Specification-Thinking-team-drafting-a-six-bullet.webp",
-      "diff_hash": "07cb5ef734d54c483770c9630301f4bf5a990d2e3b885876f89a3538340c911b"
-    },
-    {
-      "key": "/Make-AI-Boring/",
-      "id": "/Make-AI-Boring/",
-      "url": "https://tedt.org/Make-AI-Boring/",
-      "title": "Making AI Boring on Purpose",
-      "summary": "AI doesn’t create discipline—it amplifies what already exists. To get predictable cost, trustworthy outcomes, and sustainable speed, organizations must lead with value, design for quality, and only then pursue scale.",
-      "content_excerpt": "AI doesn’t create discipline—it amplifies what already exists. To get predictable cost, trustworthy outcomes, and sustainable speed, organizations must lead with value, design for quality, and only then pursue scale. https://tedt.org/Make-A",
-      "content_length": 249,
-      "image": "https://tedt.org/img/AI/Make-AI-Boring.webp",
-      "diff_hash": "efc0f53cd67c1859b95a661f7e097381d35071ac166c25e2a9406a61c624f3a5"
+      "key": "/Pest-Control/",
+      "id": "/Pest-Control/",
+      "url": "https://tedt.org/Pest-Control/",
+      "title": "Pest Control: A Shadowrun Mystery in Seattle",
+      "summary": "A routine Shadowrun job in Seattle uncovers bodies in a basement, the Brewster sisters' moral crusade, and a deeper conspiracy pulling the strings.",
+      "content_excerpt": "A routine Shadowrun job in Seattle uncovers bodies in a basement, the Brewster sisters' moral crusade, and a deeper conspiracy pulling the strings. https://tedt.org/Pest-Control/",
+      "content_length": 178,
+      "image": "https://tedt.org/img/2026-03/Meeting-Mr-Johnson-Shadowrun.webp",
+      "diff_hash": "a62e081439dd09f10f8dd0b8fb66e83649ecdad1a4bfeba43c57fcd929d23c4d"
     },
     {
       "key": "/Reprint-The-Death-of-Software/",
@@ -98,15 +109,15 @@
       "diff_hash": "04f26433b1cbb5e7e235ea8b7cb4b3825c3c362d74963ca1166670d474c4ef9e"
     },
     {
-      "key": "/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/",
-      "id": "/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/",
-      "url": "https://tedt.org/Reprint-Top-Consultancies-Freeze-Pay-as-AI-Reshapes-Pyramid-Model/",
-      "title": "2025 Reprint – Top Consultancies Freeze Pay as AI Reshapes Pyramid Model",
-      "summary": "AI-driven productivity gains are prompting leading consultancies to freeze starting salaries, cut graduate hiring and reconsider the classic pyramid model. Firms are shifting toward mid-career specialists and new organisational structures as automation erodes demand for junior analysts.",
-      "content_excerpt": "AI-driven productivity gains are prompting leading consultancies to freeze starting salaries, cut graduate hiring and reconsider the classic pyramid model. Firms are shifting toward mid-career specialists and new organisational structures a",
-      "content_length": 371,
-      "image": "https://tedt.org/img/Financial-Times-Paper.webp",
-      "diff_hash": "a47c7faa652b67a0599980712944b3eba860d019e225f04c1cf430c27fe62814"
+      "key": "/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
+      "id": "/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
+      "url": "https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/",
+      "title": "Stop Asking AI to Behave Like Legacy Software",
+      "summary": "Many people still want AI to behave like a slightly better version of the software they already know. This essay argues that the real shift is not better menus or smarter dashboards, but a move toward AI as the front door to work itself.",
+      "content_excerpt": "Many people still want AI to behave like a slightly better version of the software they already know. This essay argues that the real shift is not better menus or smarter dashboards, but a move toward AI as the front door to work itself. ht",
+      "content_length": 301,
+      "image": "https://tedt.org/img/2026-03/Legacy-Software.webp",
+      "diff_hash": "9ae90b33bda8ec1204d0b285c031dc0a9c0881a7569b4583591fe7ceec663c03"
     },
     {
       "key": "/The-Lab-That-Keeps-Working-After-You-Go-to-Bed/",
@@ -131,37 +142,26 @@
       "diff_hash": "f9cb9cb21c62de2e943240e8b4e3bea57df3c94e7a71bb6e4c13fbd8aafb9ead"
     },
     {
-      "key": "/When-the-Machines-Dont-Sleep/",
-      "id": "/When-the-Machines-Dont-Sleep/",
-      "url": "https://tedt.org/When-the-Machines-Dont-Sleep/",
-      "title": "When the Machines Don’t Sleep",
-      "summary": "AI-only companies are arriving faster than most realize. As machines learn to work without rest, leaders must prepare to compete, partner, and preserve what makes our work—and humanity—enduring.",
-      "content_excerpt": "AI-only companies are arriving faster than most realize. As machines learn to work without rest, leaders must prepare to compete, partner, and preserve what makes our work—and humanity—enduring. https://tedt.org/When-the-Machines-Dont-Sleep",
-      "content_length": 241,
-      "image": "https://tedt.org/img/2025-10/When-the-Machines-Dont-Sleep.webp",
-      "diff_hash": "aaf6c2ddbecf89167cad425101d626344ccae51689c3eadda46533fc7849a72f"
+      "key": "/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+      "id": "/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+      "url": "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+      "title": "What IT Looks Like in an Enterprise Where AI Is Assumed",
+      "summary": "In an enterprise where AI is assumed, IT should not remain the sole builder of every solution. Its larger job is to build the factory system: the shared platforms, standards, guardrails, and production gates that let many teams move fast without breaking trust.",
+      "content_excerpt": "In an enterprise where AI is assumed, IT should not remain the sole builder of every solution. Its larger job is to build the factory system: the shared platforms, standards, guardrails, and production gates that let many teams move fast wi",
+      "content_length": 335,
+      "image": "https://tedt.org/img/2026-04/From-Workshop-to-Platform-The-Industrialization-of-AI-Driven-IT.webp",
+      "diff_hash": "5a6befb915f9514df94a5707210c4be7051f92ce2ab9b37a654abd1718d356dc"
     },
     {
-      "key": "/Winning-the-Intelligence-Inversion/",
-      "id": "/Winning-the-Intelligence-Inversion/",
-      "url": "https://tedt.org/Winning-the-Intelligence-Inversion/",
-      "title": "Winning the Intelligence Inversion",
-      "summary": "Over the next 1,000 days, AI stops being a science project and becomes core infrastructure. Cognitive work—drafting, support, claims, coding—will often be cheaper and faster from agents than from adding people. The bottleneck for large enterprises shifts from headcount to compute, verification, and…",
-      "content_excerpt": "Over the next 1,000 days, AI stops being a science project and becomes core infrastructure. Cognitive work—drafting, support, claims, coding—will often be cheaper and faster from agents than from adding people. The bottleneck for large ente",
-      "content_length": 453,
-      "image": "https://tedt.org/img/2025-11/The-Intelligence-Inversion-3.webp",
-      "diff_hash": "67b073593f62f59270eeba5deaf9f614925b1cc2b91409819305df8db28882e8"
-    },
-    {
-      "key": "/prompts/product-requirements-document-prd-template-3/",
-      "id": "/prompts/product-requirements-document-prd-template-3/",
-      "url": "https://tedt.org/prompts/product-requirements-document-prd-template-3/",
-      "title": "Architecture Product Requirements Document (PRD) Template 3",
-      "summary": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting.",
-      "content_excerpt": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting. https://tedt.org/prompts/product-requirements-document-prd-template-3/",
-      "content_length": 219,
-      "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.png",
-      "diff_hash": "8d812eb480fabd75193de4954051bb46e2a183c86dc5257aa270e434f917095d"
+      "key": "/Why-AI-Needs-a-Harness/",
+      "id": "/Why-AI-Needs-a-Harness/",
+      "url": "https://tedt.org/Why-AI-Needs-a-Harness/",
+      "title": "Why AI Needs a Harness",
+      "summary": "The real shift in AI is not the chatbot itself, but the harness around it: the tools, memory, guardrails, feedback loops, and permissions that turn a fluent model into a system that can do real work.",
+      "content_excerpt": "The real shift in AI is not the chatbot itself, but the harness around it: the tools, memory, guardrails, feedback loops, and permissions that turn a fluent model into a system that can do real work. https://tedt.org/Why-AI-Needs-a-Harness/",
+      "content_length": 240,
+      "image": "https://tedt.org/img/2026-03/AI-Agent-Harness.webp",
+      "diff_hash": "9061b44cdecff7de782dc30aa4ec82cefd4ab8698b43f53bd0ab18134a1263e2"
     }
   ]
 }
