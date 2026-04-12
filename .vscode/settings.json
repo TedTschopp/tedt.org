@@ -74,7 +74,11 @@
         "test": true,
         "gh": true,
         "git remote": true,
-        "pushd": true
+        "pushd": true,
+        "/^ruby -e 'require \"yaml\"; require \"set\"; data = YAML\\.load_file\\(\"_data/category_registry\\.yml\"\\); fonts = Set\\.new; data\\.each_value do \\|entry\\| p = entry\\[\"palette\"\\] \\|\\| \\{\\}; next unless p\\[\"fontTitle\"\\]; first = p\\[\"fontTitle\"\\]\\.scan\\(/\"\\(\\[\\^\"\\]\\+\\)\"\\|\\\\b\\(\\[\\^,\\]\\+\\)\\(\\?=,\\|\\$\\)/\\)\\.map \\{ \\|a,b\\| a\\.to_s\\.empty\\? \\? b\\.to_s : a\\.to_s \\}\\.map\\(&:strip\\)\\.reject\\(&:empty\\?\\)\\.first; fonts << first if first; end; puts fonts\\.to_a\\.sort'$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
     }
 
 }

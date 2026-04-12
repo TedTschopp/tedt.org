@@ -1,7 +1,9 @@
 /* Decorative/editorial fonts used on non-homepage article and RPG surfaces.
-   These stay off the shared critical path while preserving legacy post styling. */
+  Keep Google imports and local @font-face declarations in sync with
+  _data/category_registry.yml palette.fontTitle values used by category pages.
+  Validated by tests/check_category_title_fonts.rb. */
 
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fondamento:ital@0;1&family=IM+Fell+DW+Pica:ital@0;1&family=Lovers+Quarrel&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Bangers&family=Cardo&family=Cedarville+Cursive&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Fondamento:ital@0;1&family=Fredericka+the+Great&family=IBM+Plex+Sans:wght@400;500;600;700&family=IM+Fell+DW+Pica:ital@0;1&family=Kalam:wght@400;700&family=Libre+Baskerville:wght@400;700&family=Limelight&family=Lovers+Quarrel&family=MedievalSharp&family=Playfair+Display:wght@400;700&family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Source+Sans+Pro:wght@400;700&family=Space+Grotesk:wght@400;600;700&family=UnifrakturMaguntia&display=swap');
 
 @font-face {
   font-family: 'Checkbook';
