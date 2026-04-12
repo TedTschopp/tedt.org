@@ -3996,5 +3996,37 @@
       "https://tschopp.net/users/Ted/statuses/116355454737780225"
     ],
     "lastTootTimestamp": 1775443340235
+  },
+  "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/": {
+    "id": "/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+    "title": "What IT Looks Like in an Enterprise Where AI Is Assumed",
+    "summary": "In an enterprise where AI is assumed, IT should not remain the sole builder of every solution. Its larger job is to build the factory system: the shared platforms, standards, guardrails, and production gates that let many teams move fast without breaking trust.",
+    "content_text": "In an enterprise where AI is assumed, IT should not remain the sole builder of every solution. Its larger job is to build the factory system: the shared platforms, standards, guardrails, and production gates that let many teams move fast without breaking trust. https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+    "url": "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/",
+    "image": "https://tedt.org/img/2026-04/From-Workshop-to-Platform-The-Industrialization-of-AI-Driven-IT.webp",
+    "tags": [
+      "enterprise ai",
+      "IT operating model",
+      "central engineering",
+      "platform engineering",
+      "governance",
+      "paved roads",
+      "federated delivery",
+      "digital factory",
+      "data science",
+      "portfolio management",
+      "trust"
+    ],
+    "date_published": "2026-04-12T09:00:00-07:00",
+    "date_modified": "2026-04-12T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116393301406639620"
+    ],
+    "lastTootTimestamp": 1776020834534
   }
 }
