@@ -29,6 +29,7 @@ seo-description: "In 2026, tool mastery won’t secure your career. Enterprise t
 
 categories:
   - AI
+  - Business
   - Computers
   - Philosophy
   - Opinion

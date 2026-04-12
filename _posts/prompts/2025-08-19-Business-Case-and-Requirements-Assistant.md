@@ -6,6 +6,7 @@ description: "A rigorous, step-by-step Agile coaching prompt that transforms vag
 permalink: /prompts/business-case-and-requirements-assistant/
 categories:
   - Prompts
+   - Business
 tags:
   - Requirements Engineering
   - Product Management

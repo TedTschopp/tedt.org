@@ -30,7 +30,8 @@ seo-description: "Master business objectives key results with this comprehensive
 
 categories:
 - Prompts
-    - Opinion
+- Business
+- Opinion
 
 tags: 
     - Business Strategy

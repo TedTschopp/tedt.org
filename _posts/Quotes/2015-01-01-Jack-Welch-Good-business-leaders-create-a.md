@@ -26,6 +26,7 @@ seo-description: "Jack Welch in *Harvard Business Review* highlights that strong
 
 categories:
 - Quotes
+- Business
 tags:
 - jack welch
 - leadership

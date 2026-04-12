@@ -30,7 +30,8 @@ seo-description: "Master business lean six sigma analysis with this comprehensiv
 
 categories:
 - Prompts
-    - Opinion
+- Business
+- Opinion
 
 tags: 
     - Business Strategy

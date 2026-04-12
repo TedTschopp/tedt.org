@@ -29,6 +29,7 @@ seo-description: "What does IT become in an enterprise where AI is assumed? This
 
 categories:
 - AI
+- Business
 - Opinion
 
 tags:

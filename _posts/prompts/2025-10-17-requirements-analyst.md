@@ -30,6 +30,7 @@ seo-description: "Transform meeting transcripts into professional system require
 
 categories:
     - Prompts
+    - Business
     - Projects
 
 tags: 

@@ -27,6 +27,7 @@ seo-description: "AI‑centric utility strategy: opinionated platforms, edge‑t
 
 categories:
   - "AI"
+  - "Business"
   - "Computers"
   - "Opinion"
   - "Science"

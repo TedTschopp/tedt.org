@@ -30,6 +30,7 @@ seo-description: "Master architecture business architecture as markdown with thi
 
 categories:
 - Prompts
+- Business
 - Projects
 
 tags: 

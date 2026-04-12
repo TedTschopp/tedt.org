@@ -30,6 +30,7 @@ seo-description: "Master architecture business requirements builder with this co
 
 categories:
 - Prompts
+- Business
 - Projects
 
 tags: 

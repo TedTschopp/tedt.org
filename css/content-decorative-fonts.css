@@ -15,6 +15,98 @@
 }
 
 @font-face {
+  font-family: 'Bestiary';
+  src: url('/fonts/Animal-Kingdom.otf') format('opentype'),
+       url('/fonts/Animal-Kingdom.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Duvall';
+  src: url('/fonts/DuvallSmallCaps.woff2') format('woff2'),
+       url('/fonts/DuvallSmallCaps.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shadowrun';
+  src: url('/fonts/Shadowrun-std-medium.otf') format('opentype');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shadowrun';
+  src: url('/fonts/Shadowrun-std-bold.otf') format('opentype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shadowrun';
+  src: url('/fonts/Shadowrun-std-italic.otf') format('opentype');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Shadowrun';
+  src: url('/fonts/Shadowrun-std-bold-italic.otf') format('opentype');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Quentin';
+  src: url('/fonts/QUENCRG_.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Souvenir Demi';
+  src: url('/fonts/Souvenir Demi.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Egyptienne MN Condensed Bold';
+  src: url('/fonts/Egyptienne MN Condensed Bold.otf') format('opentype'),
+       url('/fonts/Egyptienne MN Condensed Bold.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Ringbearer';
+  src: url('/fonts/RINGM___.otf') format('opentype'),
+       url('/fonts/RINGM___.TTF') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PalmPilot';
+  src: url('/fonts/PalmPilot-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Dana Library Hand';
   src: url('/fonts/DanaLibraryHand-Regular.woff2') format('woff2'),
        url('/fonts/DanaLibraryHand-Regular.otf') format('opentype'),

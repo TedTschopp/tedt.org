@@ -30,6 +30,7 @@ seo-description: "Master architecture product requirements document (prd) templa
 
 categories:
 - Prompts
+- Business
 - Projects
 
 tags: 

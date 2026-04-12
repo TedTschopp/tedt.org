@@ -35,6 +35,7 @@ seo-description: Learn how AI prompt engineering transforms messy meeting transc
   and quality feedback.
 categories:
 - Artificial Intelligence
+- Business
 - Computers
 - Opinion
 tags:

@@ -25,6 +25,7 @@ seo-description: "Bill Gates reminds us that success is a poor teacher, creating
 
 categories:
 - Quotes
+- Business
 tags:
 - bill gates
 - success

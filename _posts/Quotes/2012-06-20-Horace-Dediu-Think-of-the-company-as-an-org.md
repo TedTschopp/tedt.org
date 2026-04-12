@@ -20,6 +20,7 @@ description: "Horace Dediu compares companies to organisms, showing how internal
 seo-description: "Horace Dediu describes corporate antibodies—forces inside organizations that resist and destroy disruptive innovation as if it were a pathogen."
 categories:
     - Quotes
+    - Business
 tags:
     - horace dediu
     - corporate antibodies

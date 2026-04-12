@@ -30,6 +30,7 @@ seo-description: "Why enterprise AI must prioritize value, quality, and standard
 
 categories:
 - AI
+- Business
 - Opinion
 - Projects
 

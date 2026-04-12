@@ -30,7 +30,8 @@ seo-description: "Master business business skills prompts with this comprehensiv
 
 categories:
 - Prompts
-    - Opinion
+- Business
+- Opinion
 
 tags: 
     - Business Strategy

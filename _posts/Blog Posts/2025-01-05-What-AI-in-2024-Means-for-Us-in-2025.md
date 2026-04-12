@@ -33,6 +33,7 @@ seo-description: Learn how AI breakthroughs in 2024 impact utility operations in
   implementation strategies.
 categories:
 - Artificial Intelligence
+- Business
 - Opinion
 tags:
 - utility AI

@@ -90,6 +90,28 @@ books:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
+business:
+  title: Business
+  raw_names: [ "Business", "business" ]
+  class: Business
+  emoji: "💼"
+  subtitle: "Strategy, leadership, and the operating realities of modern organizations"
+  description: "Essays and reflections on business strategy, leadership, organizational design, execution, and the practical constraints that shape outcomes."
+  image: /img/categories/business.webp
+  palette:
+    start: "#0f766e"
+    end: "#d97706"
+    fontTitle: '"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+    titleColorLight: "#d97706"
+    titleColorDark: "#0f766e"
+    titleHoverColorLight: "#d97706"
+    titleHoverColorDark: "#0f766e"
+    titleWeight: 700
+  category_home_page: /category/business/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
 communications:
   title: Communications
   raw_names: [ "Communications", "Collaboration", "Collaborations" ]

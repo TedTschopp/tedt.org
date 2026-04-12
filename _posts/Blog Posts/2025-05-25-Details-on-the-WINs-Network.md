@@ -35,6 +35,7 @@ seo-description: 'Learn the WINS framework for AI strategy: categorize workflows
   matrix analysis and utility industry examples.'
 categories:
 - Artificial Intelligence
+- Business
 - Opinion
 - Projects
 tags:

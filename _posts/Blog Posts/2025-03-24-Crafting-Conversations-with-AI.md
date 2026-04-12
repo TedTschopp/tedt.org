@@ -36,6 +36,7 @@ seo-description: Master AI prompt engineering for enterprise architecture. Learn
   reviews.
 categories:
 - Artificial Intelligence
+- Business
 - Projects
 tags:
 - prompt engineering

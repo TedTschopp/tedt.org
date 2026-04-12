@@ -29,6 +29,7 @@ seo-description: "As AI makes cognition cheap, the real advantage moves to compu
 
 categories:
 - AI
+- Business
 - Opinion
 
 tags:

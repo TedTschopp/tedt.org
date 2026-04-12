@@ -25,6 +25,7 @@ seo-description: Discover how the future of AI in utilities depends on empowerin
 categories:
   - Computers
   - Artificial Intelligence
+  - Business
   - Opinion
   - Science
 tags: AI, Utilities, IT, Leadership, Technology, 2024
