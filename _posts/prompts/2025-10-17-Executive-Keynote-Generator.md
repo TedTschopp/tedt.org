@@ -30,7 +30,8 @@ seo-description: "Master prompt for executive keynote speeches with this compreh
 
 categories:
 - Prompts
-    - AI
+- Business
+- AI
 
 tags: 
     - Content Creation

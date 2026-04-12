@@ -30,6 +30,7 @@ seo-description: "Master test analyst with this comprehensive AI prompt featurin
 
 categories:
 - Prompts
+- Business
 - Projects
 
 tags: 

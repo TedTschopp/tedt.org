@@ -30,6 +30,7 @@ seo-description: "Master architecture prd generator with this comprehensive AI p
 
 categories:
 - Prompts
+- Business
 - Projects
 
 tags: 
