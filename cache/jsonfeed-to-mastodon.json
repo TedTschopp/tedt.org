@@ -4028,5 +4028,37 @@
       "https://tschopp.net/users/Ted/statuses/116393301406639620"
     ],
     "lastTootTimestamp": 1776020834534
+  },
+  "https://tedt.org/A-Quick-AI-Training-Plan-You-Can-Reuse/": {
+    "id": "/A-Quick-AI-Training-Plan-You-Can-Reuse/",
+    "title": "A Practical AI Training Plan Across OpenAI, Anthropic, and Microsoft/GitHub",
+    "summary": "A friend and former colleague asked for a quick AI training plan. This post shares a practical path with curated resources from OpenAI, Anthropic, and Microsoft/GitHub, plus a clear learning order.",
+    "content_text": "A friend and former colleague asked for a quick AI training plan. This post shares a practical path with curated resources from OpenAI, Anthropic, and Microsoft/GitHub, plus a clear learning order. https://tedt.org/A-Quick-AI-Training-Plan-You-Can-Reuse/",
+    "url": "https://tedt.org/A-Quick-AI-Training-Plan-You-Can-Reuse/",
+    "image": "https://tedt.org/img/2026-04/classrooms.webp",
+    "tags": [
+      "ai training plan",
+      "ai upskilling",
+      "ai learning path",
+      "openai academy",
+      "anthropic claude",
+      "microsoft ai for beginners",
+      "github models",
+      "prompt engineering",
+      "agents sdk",
+      "semantic kernel",
+      "mcp"
+    ],
+    "date_published": "2026-04-14T00:00:00-07:00",
+    "date_modified": "2026-04-14T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116404674148864833"
+    ],
+    "lastTootTimestamp": 1776194368818
   }
 }
