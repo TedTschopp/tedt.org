@@ -1,0 +1,521 @@
+<style>
+  :root {
+    --story-red: #7a0c14;
+    --story-red-bright: #a61e22;
+    --story-black: #111111;
+    --story-steel: #6e7378;
+    --story-steel-dark: #4e5257;
+    --story-bronze: #8a6a2b;
+    --story-gold: #d6a63a;
+    --story-gold-bright: #f0c14b;
+    --story-ivory: #f0e7d8;
+    --story-ash: #d8c9a3;
+    --story-ember: #b64a1a;
+  }
+
+  .layout-page body {
+    background:
+      radial-gradient(circle at top, rgba(182, 74, 26, 0.24), transparent 34%),
+      radial-gradient(circle at 85% 18%, rgba(240, 193, 75, 0.08), transparent 24%),
+      linear-gradient(180deg, #0b0b0c 0%, #15080b 40%, #090909 100%);
+    color: var(--story-ivory);
+  }
+
+  .layout-page #content-column main > .py-4 {
+    position: relative;
+  }
+
+  .layout-page #content-column main > .py-4 > h1.mb-4 {
+    margin-bottom: 0.65rem !important;
+    font-family: "Egyptienne MN Condensed Bold", "Cinzel Decorative", serif;
+    font-size: clamp(3.25rem, 8vw, 6.2rem);
+    font-weight: 700;
+    line-height: 0.95;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--story-gold-bright);
+    text-shadow: 0 0 24px rgba(240, 193, 75, 0.14), 0 6px 24px rgba(0, 0, 0, 0.75);
+  }
+
+  .layout-page #content-column main > .py-4 > p.lead {
+    max-width: 48rem;
+    margin-bottom: 1.9rem !important;
+    color: var(--story-ash);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.2rem, 2.7vw, 1.75rem);
+    line-height: 1.2;
+  }
+
+  .layout-page .container > hr {
+    border-color: rgba(214, 166, 58, 0.3);
+    opacity: 1;
+  }
+
+  .klingon-story-page {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .klingon-story-shell {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(1.15rem, 3vw, 2rem);
+    border: 1px solid rgba(214, 166, 58, 0.38);
+    background:
+      linear-gradient(145deg, rgba(17, 17, 17, 0.97), rgba(28, 10, 14, 0.93)),
+      linear-gradient(180deg, rgba(122, 12, 20, 0.16), transparent 35%);
+    box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(240, 231, 216, 0.05);
+  }
+
+  .klingon-story-shell::before,
+  .klingon-story-shell::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  .klingon-story-shell::before {
+    background:
+      linear-gradient(120deg, transparent 0 12%, rgba(214, 166, 58, 0.08) 12% 13%, transparent 13% 87%, rgba(214, 166, 58, 0.08) 87% 88%, transparent 88% 100%),
+      linear-gradient(0deg, transparent 0 6%, rgba(122, 12, 20, 0.24) 6% 8%, transparent 8% 92%, rgba(122, 12, 20, 0.24) 92% 94%, transparent 94% 100%);
+    mix-blend-mode: screen;
+    opacity: 0.7;
+  }
+
+  .klingon-story-shell::after {
+    inset: 1rem;
+    border: 1px solid rgba(110, 115, 120, 0.2);
+    clip-path: polygon(0 0, calc(100% - 1.6rem) 0, 100% 1.6rem, 100% 100%, 1.6rem 100%, 0 calc(100% - 1.6rem));
+  }
+
+  .story-banner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(7rem, 10rem);
+    gap: 1.5rem;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(214, 166, 58, 0.2);
+  }
+
+  .story-kicker {
+    margin: 0 0 0.75rem;
+    color: var(--story-gold);
+    font-family: "Duvall", "IBM Plex Sans", sans-serif;
+    font-size: 0.92rem;
+    letter-spacing: 0.24em;
+    text-transform: uppercase;
+  }
+
+  .story-invocation {
+    max-width: 38rem;
+    margin: 0;
+    color: var(--story-ivory);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.35rem, 2.7vw, 2.15rem);
+    line-height: 1.15;
+  }
+
+  .story-seal {
+    position: relative;
+    justify-self: end;
+    width: clamp(7rem, 18vw, 10rem);
+    aspect-ratio: 1;
+    border: 1px solid rgba(214, 166, 58, 0.38);
+    background:
+      radial-gradient(circle at 50% 30%, rgba(240, 193, 75, 0.24), transparent 24%),
+      linear-gradient(180deg, rgba(166, 30, 34, 0.5), rgba(17, 17, 17, 0.92));
+    box-shadow: inset 0 0 18px rgba(240, 193, 75, 0.12), 0 10px 24px rgba(0, 0, 0, 0.45);
+    clip-path: polygon(20% 0, 80% 0, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0 80%, 0 20%);
+  }
+
+  .story-seal::before,
+  .story-seal::after,
+  .story-seal span {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform-origin: center;
+  }
+
+  .story-seal::before {
+    width: 66%;
+    height: 10%;
+    background: linear-gradient(90deg, transparent, var(--story-gold), transparent);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  .story-seal::after {
+    width: 10%;
+    height: 66%;
+    background: linear-gradient(180deg, transparent, var(--story-gold), transparent);
+    transform: translate(-50%, -50%);
+  }
+
+  .story-seal span:nth-child(1) {
+    width: 72%;
+    height: 8%;
+    background: linear-gradient(90deg, transparent, rgba(240, 193, 75, 0.9), transparent);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+
+  .story-seal span:nth-child(2) {
+    width: 72%;
+    height: 8%;
+    background: linear-gradient(90deg, transparent, rgba(240, 193, 75, 0.9), transparent);
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+
+  .story-seal span:nth-child(3) {
+    width: 22%;
+    aspect-ratio: 1;
+    border: 2px solid rgba(240, 193, 75, 0.85);
+    transform: translate(-50%, -50%) rotate(45deg);
+    box-shadow: 0 0 18px rgba(240, 193, 75, 0.18);
+  }
+
+  .story-ledger {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin: 0 0 1.75rem;
+    padding: 0;
+  }
+
+  .story-ledger div {
+    padding: 0.95rem 1rem;
+    border: 1px solid rgba(110, 115, 120, 0.34);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0));
+  }
+
+  .story-ledger dt {
+    margin: 0 0 0.3rem;
+    color: var(--story-gold);
+    font-family: "Duvall", "IBM Plex Sans", sans-serif;
+    font-size: 0.78rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .story-ledger dd {
+    margin: 0;
+    color: var(--story-ivory);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: 1.1rem;
+  }
+
+  .story-rail {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 0 0 2rem;
+  }
+
+  .story-rail a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3.1rem;
+    padding: 0.65rem 0.95rem;
+    border: 1px solid rgba(214, 166, 58, 0.34);
+    color: var(--story-ash);
+    text-decoration: none;
+    font-family: "Duvall", "IBM Plex Sans", sans-serif;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    background: rgba(255, 255, 255, 0.02);
+    transition: transform 180ms ease, border-color 180ms ease, color 180ms ease, background-color 180ms ease;
+  }
+
+  .story-rail a:hover,
+  .story-rail a:focus-visible {
+    color: var(--story-gold-bright);
+    border-color: rgba(240, 193, 75, 0.8);
+    background: rgba(166, 30, 34, 0.28);
+    transform: translateY(-2px);
+  }
+
+  .story-section {
+    position: relative;
+    padding: 1.55rem 0 0;
+    scroll-margin-top: 6rem;
+  }
+
+  .story-section + .story-section {
+    margin-top: 1.1rem;
+  }
+
+  .story-section::before {
+    content: "";
+    display: block;
+    width: 8.25rem;
+    height: 0.45rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(90deg, var(--story-red-bright), var(--story-gold-bright), transparent);
+    clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
+  }
+
+  .story-section h2 {
+    margin-bottom: 0.45rem;
+    color: var(--story-gold-bright);
+    font-family: "Egyptienne MN Condensed Bold", "Libre Baskerville", serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: 0.08em;
+    line-height: 0.95;
+    text-transform: uppercase;
+  }
+
+  .chapter-mark {
+    margin: 0 0 0.55rem;
+    color: var(--story-gold);
+    font-family: "Duvall", "IBM Plex Sans", sans-serif;
+    font-size: 0.84rem;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+  }
+
+  .story-section p,
+  .story-oath,
+  .story-ending {
+    max-width: 46rem;
+    margin: 0 0 1.15rem;
+    color: var(--story-ivory);
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+    line-height: 1.62;
+  }
+
+  .story-opening::first-letter {
+    float: left;
+    margin: 0.12em 0.16em 0 0;
+    color: var(--story-gold-bright);
+    font-family: "Egyptienne MN Condensed Bold", "Libre Baskerville", serif;
+    font-size: 4.2em;
+    line-height: 0.8;
+  }
+
+  .story-oath {
+    position: relative;
+    margin: 1.6rem 0;
+    padding: 1.25rem 1.3rem 1.15rem 1.45rem;
+    border-left: 3px solid var(--story-gold);
+    background: linear-gradient(90deg, rgba(166, 30, 34, 0.28), rgba(255, 255, 255, 0.02));
+    box-shadow: inset 0 0 0 1px rgba(214, 166, 58, 0.12);
+  }
+
+  .story-oath strong {
+    color: var(--story-gold-bright);
+    font-family: "Duvall", "IBM Plex Sans", sans-serif;
+    font-size: 0.9rem;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+
+  .story-ending {
+    margin-top: 1.75rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(214, 166, 58, 0.22);
+    color: var(--story-ash);
+  }
+
+  .story-ending em {
+    color: var(--story-gold-bright);
+    font-style: normal;
+  }
+
+  .story-footer-note {
+    margin-top: 1.4rem;
+    color: rgba(240, 231, 216, 0.72);
+    font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0.92rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .story-seal,
+  .story-rail a,
+  .story-section::before {
+    will-change: transform;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .story-seal {
+      animation: story-seal-pulse 7s ease-in-out infinite;
+    }
+
+    .story-rail a {
+      animation: story-rail-rise 600ms ease both;
+    }
+
+    .story-rail a:nth-child(2) {
+      animation-delay: 70ms;
+    }
+
+    .story-rail a:nth-child(3) {
+      animation-delay: 140ms;
+    }
+
+    .story-rail a:nth-child(4) {
+      animation-delay: 210ms;
+    }
+
+    .story-rail a:nth-child(5) {
+      animation-delay: 280ms;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .story-seal,
+    .story-rail a {
+      animation: none !important;
+      transition: none !important;
+    }
+  }
+
+  @keyframes story-seal-pulse {
+    0%,
+    100% {
+      transform: translateY(0);
+      box-shadow: inset 0 0 18px rgba(240, 193, 75, 0.12), 0 10px 24px rgba(0, 0, 0, 0.45);
+    }
+
+    50% {
+      transform: translateY(-3px);
+      box-shadow: inset 0 0 24px rgba(240, 193, 75, 0.18), 0 16px 28px rgba(0, 0, 0, 0.48);
+    }
+  }
+
+  @keyframes story-rail-rise {
+    from {
+      opacity: 0;
+      transform: translateY(0.45rem);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media (max-width: 900px) {
+    .story-banner {
+      grid-template-columns: 1fr;
+    }
+
+    .story-seal {
+      justify-self: start;
+    }
+
+    .story-ledger {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 680px) {
+    .klingon-story-shell {
+      padding: 1rem;
+    }
+
+    .layout-page #content-column main > .py-4 > h1.mb-4 {
+      letter-spacing: 0.08em;
+    }
+
+    .story-section p,
+    .story-oath,
+    .story-ending {
+      font-size: 1.16rem;
+    }
+
+    .story-opening::first-letter {
+      font-size: 3.5em;
+    }
+  }
+</style>
+
+<article class="klingon-story-page" aria-label="Fantasy story">
+  <div class="klingon-story-shell">
+    <header class="story-banner">
+      <div>
+        <p class="story-kicker">Imperial Chronicle // Ash Archive</p>
+        <p class="story-invocation">"A crown without witnesses is only polished theft."</p>
+      </div>
+      <div class="story-seal" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </header>
+
+    <dl class="story-ledger">
+      <div>
+        <dt>Claimant</dt>
+        <dd>Rhaeva of House Khelar</dd>
+      </div>
+      <div>
+        <dt>Seat Contested</dt>
+        <dd>The Ember Court of Vorath Hold</dd>
+      </div>
+      <div>
+        <dt>Sign in the Sky</dt>
+        <dd>The forty-first return of the Blood Comet</dd>
+      </div>
+    </dl>
+
+    <nav class="story-rail" aria-label="Story chapters">
+      <a href="#chapter-1">Gate</a>
+      <a href="#chapter-2">Vault</a>
+      <a href="#chapter-3">Bridge</a>
+      <a href="#chapter-4">Court</a>
+      <a href="#epilogue">Crown</a>
+    </nav>
+
+    <section class="story-section" id="chapter-1">
+      <p class="chapter-mark">Chapter I // The Gate Beneath the Red Star</p>
+      <h2>The Comet Returns</h2>
+      <p class="story-opening">When the Blood Comet rose above Vorath Hold, the old fortress looked less like stone than a wound cut into the mountain. Its towers carried black banners stiff with frost. Its iron braziers burned red enough to stain the snow beneath them. Far below, the road climbed in switchbacks through the cliffs, and on that road rode Rhaeva of House Khelar, the last daughter of a line that had once forged crowns from fallen stars.</p>
+      <p>She did not ride with a train of knights or with musicians to flatter her return. She came with a wolf-gray horse, a travel cloak crusted in frozen ash, and a strip of black iron hanging at her throat on a leather cord. The iron was no ornament. It was the key her mother had pressed into her palm on the night House Khelar was broken, when Regent Malrec sealed the Ember Vault, took the throne for himself, and hung the house-banners of the dead from his own hall like hunting trophies.</p>
+      <p>At the final gate, the ward-captain lowered his spear and peered through the storm. He knew her face. Everyone who had lived long enough knew some version of it. Khelar blood marked its children plainly: the high cheekbones, the dark eyes that held a furnace-light even in grief, the look of people who listened before they struck. "Turn back," he told her. "Malrec keeps no welcome for ghosts." Rhaeva drew the iron key from her neck and held it toward the brazier flame until it glowed like a coal. "Then tell your regent," she said, "that a ghost has come to count the living."</p>
+    </section>
+
+    <section class="story-section" id="chapter-2">
+      <p class="chapter-mark">Chapter II // The Vault Road</p>
+      <h2>The Iron Orchard</h2>
+      <p>The old laws of Vorath Hold were cruel, but they were not confused. Any claimant of the Ember Court had the right to descend into the mountain on the night of the comet and ask judgment of the forge below. Malrec could not forbid it without naming himself a thief before every noble house. So he smiled from his black chair, lifted two fingers in mock blessing, and allowed her to pass. The court laughed when she went beneath the mountain alone. Their laughter followed her only as far as the first door.</p>
+      <p>Beyond it lay the Iron Orchard, where the smith-kings of elder days had planted trees of dark metal in beds of volcanic glass. Their branches were heavy with blade-fruit: not steel leaves, but full-grown knives, hooked sabers, and long narrow war-spears hanging from black limbs like frozen harvest. Red fire moved in the roots beneath the glass. Shadows walked between the trunks. These were the oath-keepers of Khelar, burned into memory so the vault would never open for the unworthy.</p>
+      <p>They did not ask Rhaeva for her blood. Blood can be stolen. They asked for names. She stood among the iron trees while the shades circled her and spoke every fallen banner of her house: Tovan who died at the North Steps, Mael the Shield-Breaker, little Sira who carried water to the walls and never fled, old Mother Khez whose hands shook until a hammer touched them. She named them without hurry, one after another, until the orchard grew still. Then a single branch bowed toward her. From it she took a sword of star-dark metal, plain in shape, unjeweled, its edge dim as if sleeping. When she closed her hand around the grip, heat ran through her bones. The blade was waking, and it remembered whose voice had called the dead correctly.</p>
+      <aside class="story-oath">
+        <strong>Forge Oath</strong><br>
+        Honor was not mercy in Vorath Hold. Honor was memory sharpened until even kings bled when they tried to step over the truth.
+      </aside>
+      <p>At the orchard's far end she found the second door already open. Malrec had sent champions after her. He had no intention of trusting old law further than it served him. Their boot marks scored the ash, and the torch-smoke ahead tasted of fresh arrogance. Rhaeva set the star-sword against her shoulder and followed.</p>
+    </section>
+
+    <section class="story-section" id="chapter-3">
+      <p class="chapter-mark">Chapter III // The Place of Falling Sparks</p>
+      <h2>The Bridge of Teeth</h2>
+      <p>The bridge crossed a volcanic chasm on ribs of pale stone. In the furnace-glow below, the ribs looked like the jaw of some buried beast yawning up at the world. Malrec's three champions waited at the center, cloaked in scaled mail, each carrying a hooked axe and a shield faced with the stolen bronze sigil of House Khelar. That was the kind of insult the regent preferred: not the clean insult of murder, but the lingering insult of wearing another family's dead as decoration.</p>
+      <p>Rhaeva did not offer parley. The first champion rushed with a roar, expecting weight to decide the matter. She stepped aside and laid the sleeping star-sword against the seam of his gorget. The blade woke further. It bit not only flesh but heat. Steam burst from the wound. The second champion came low, axe sweeping for her legs, and she answered with the pommel to his mouth and a cut that opened shield, arm, and pride together. The third fought more carefully. He circled. He tested. He saw too late that the bridge itself favored her, narrow and merciless, stripping war down to footwork and will. When he slipped on his fellow's blood, she drove him to one knee and left him breathing long enough to carry a message back to the court.</p>
+      <p>"Tell Malrec," she said, pressing the edge under his jaw until his fear trembled against the steel, "that I am coming with all the names he tried to bury." Then she kicked his shield into the fire below. The stolen sigil spun once in the red light and vanished like a lie finally spoken aloud.</p>
+    </section>
+
+    <section class="story-section" id="chapter-4">
+      <p class="chapter-mark">Chapter IV // Judgment</p>
+      <h2>The Ember Court</h2>
+      <p>The throne hall of Vorath Hold had once been built for rulers who understood proportion. The throne itself was smaller than the fire behind it, and the fire was smaller than the mountain, and the mountain was smaller than the sky. Malrec understood none of that. He had widened the dais, raised the chair, gilded the walls, and chained the house-banners of defeated rivals from pillar to pillar until the room looked like a butcher's market dressed for a festival. Yet even in all that vanity, the old forge at the back of the hall still breathed through the floor grates, and the red comet still shone through the open roof vent above the throne. The ancient witnesses were present. That was enough.</p>
+      <p>Rhaeva came through the bronze doors with ash on her boots and the star-sword in her hand. The court fell silent, not because they loved courage, but because they recognized legitimacy when it walked in armed. Malrec rose slowly. He wore a crown hammered from fused medals and broken signet-rings. House Khelar's bronze mark had been bent into its front arch. "You have had your spectacle," he said. "Kneel, and I may let your line end with dignity." Rhaeva looked up at the crown, then at the banners, then at the nobles who had taught themselves to call theft stability. "A throne kept by fear is only a chair with better masonry," she answered. "If you claim the court is yours, let the forge hear you prove it."</p>
+      <p>The duel began without another word. Malrec fought with a great curved blade and the confidence of a man who had survived too many lesser enemies. He was powerful. He drove her back across the black tiles. He opened her sleeve and drew blood from her shoulder. But he had learned war as accumulation. More gold. More men. More walls. Rhaeva had learned war as subtraction. One breath. One angle. One truth that remained after all cowardice had been burned away. Each time his sword met hers, the star-metal stole a little more heat from his blade and fed on the living furnace under the court. By the time they reached the edge of the dais, Malrec's weapon was smoking in his hands.</p>
+      <p>He lunged in fury. She stepped inside the arc, broke his crown with the guard of her sword, and struck once across the chest. The cut was not wide, but it was enough. He fell against the throne and stared at the pieces of stolen sigils rolling from his brow onto the steps below. For a heartbeat no one moved. Then Rhaeva stooped, gathered the broken front arch of the crown, and cast it into the forge-grate. "The dead are not ornaments," she said, and her voice carried to the furthest wall. "Let any house that disagrees come forward and say so beneath the comet." No one did.</p>
+    </section>
+
+    <section class="story-section" id="epilogue">
+      <p class="chapter-mark">Epilogue // The Weight of a True Crown</p>
+      <h2>What the Fire Chose</h2>
+      <p>Rhaeva did not take Malrec's chair immediately. She took the broken medals, the melted signet-rings, and every stolen badge she could gather from the floor, and she fed them to the forge. The hall watched in a silence sharper than prayer. When the metal softened, she reached into the heat with the black iron key still hanging at her throat. The key dissolved first. Then the molten bronze and gold rose around it, not in the high cruel shape Malrec had favored, but in a lower circlet of darkened metal lined with ember-red veins. It was heavy. It was scarred. It looked less like treasure than responsibility.</p>
+      <p>Only then did she sit. She did not smile. House Khelar had never mistaken victory for comfort. She ordered the banners of the murdered houses taken down and returned. She reopened the lower armories to the clans who had been disarmed to keep them meek. She named the ward-captain at the gate before the whole court and spared him because he had spoken honestly when it might have cost him his head. Mercy, she decided, would not be softness. It would be discipline with memory still attached.</p>
+      <p class="story-ending">Near dawn, the Blood Comet began to sink behind the western range. Its red tail burned across the snowfields, across the black towers, across the newly opened hall of the forge. From the battlements the people saw a different banner lifted above Vorath Hold: not Malrec's gilded boast, but the old device of House Khelar, restored in iron, bronze, and red. They knelt because the mountain had judged. They knelt because the dead had been heard. And they knelt because some rulers arrive wrapped in silk, while others arrive carrying a blade that remembers fire. <em>Those are the ones empires fear and follow.</em></p>
+      <p class="story-footer-note">Recorded in the Ash Archive on the night the comet passed west.</p>
+    </section>
+  </div>
+</article>
