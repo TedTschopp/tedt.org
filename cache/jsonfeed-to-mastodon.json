@@ -4060,5 +4060,36 @@
       "https://tschopp.net/users/Ted/statuses/116404674148864833"
     ],
     "lastTootTimestamp": 1776194368818
+  },
+  "https://tedt.org/When-Output-Becomes-Abundant/": {
+    "id": "/When-Output-Becomes-Abundant/",
+    "title": "When Output Becomes Abundant",
+    "summary": "AI can draft, code, summarize, and analyze faster than ever. That does not eliminate human value. It shifts value toward framing the problem, distilling options, aligning stakeholders, and turning abundant output into coordinated action.",
+    "content_text": "AI can draft, code, summarize, and analyze faster than ever. That does not eliminate human value. It shifts value toward framing the problem, distilling options, aligning stakeholders, and turning abundant output into coordinated action. https://tedt.org/When-Output-Becomes-Abundant/",
+    "url": "https://tedt.org/When-Output-Becomes-Abundant/",
+    "image": "https://tedt.org/img/2026-04/The-Work-of-the-Mill.webp",
+    "tags": [
+      "AI acceleration",
+      "future of work",
+      "enterprise AI",
+      "judgment",
+      "stakeholder alignment",
+      "trust",
+      "knowledge work",
+      "change management",
+      "decision making",
+      "orchestration"
+    ],
+    "date_published": "2026-04-18T09:00:00-07:00",
+    "date_modified": "2026-04-18T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116427225716909147"
+    ],
+    "lastTootTimestamp": 1776538478429
   }
 }
