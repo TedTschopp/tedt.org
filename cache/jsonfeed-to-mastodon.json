@@ -4091,5 +4091,37 @@
       "https://tschopp.net/users/Ted/statuses/116427225716909147"
     ],
     "lastTootTimestamp": 1776538478429
+  },
+  "https://tedt.org/The-Map-Is-Not-the-Decision/": {
+    "id": "/The-Map-Is-Not-the-Decision/",
+    "title": "The Map Is Not the Decision",
+    "summary": "A polished AI artifact can feel like a decision system, especially when it arrives as a map, dashboard, or executive summary. But without provenance, assumptions, proxy discipline, and clear decision boundaries, it is only a performance.",
+    "content_text": "A polished AI artifact can feel like a decision system, especially when it arrives as a map, dashboard, or executive summary. But without provenance, assumptions, proxy discipline, and clear decision boundaries, it is only a performance. https://tedt.org/The-Map-Is-Not-the-Decision/",
+    "url": "https://tedt.org/The-Map-Is-Not-the-Decision/",
+    "image": "https://tedt.org/img/2026-04/The-Map-Is-Not-the-Decision-No-Text.webp",
+    "tags": [
+      "enterprise ai",
+      "ai governance",
+      "provenance",
+      "decision support",
+      "data center siting",
+      "geospatial analytics",
+      "reproducibility",
+      "proxy data",
+      "operating model",
+      "risk management",
+      "trust"
+    ],
+    "date_published": "2026-04-26T09:00:00-07:00",
+    "date_modified": "2026-04-26T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116473964601861250"
+    ],
+    "lastTootTimestamp": 1777251657213
   }
 }
