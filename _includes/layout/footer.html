@@ -1,12 +1,20 @@
 <!-- Footer -->
-{% assign site_profile = site.profile %}
-{% assign profile_social = site_profile.social | default: empty %}
-{% assign profile_name = site_profile.name | default: site.title %}
-{% assign profile_url = site_profile.url | default: site.url %}
-{% assign profile_avatar = site_profile.avatar | default: site.logo %}
+{% assign author_profile = site.author | default: site.authors.tschopp | default: empty %}
+{% assign site_profile = site.profile | default: author_profile %}
+{% assign profile_social = site_profile.social | default: author_profile.social | default: site_profile | default: author_profile | default: empty %}
+{% assign profile_name = site_profile.name | default: author_profile.name | default: site.title %}
+{% assign profile_url = site_profile.url | default: site_profile.uri | default: author_profile.url | default: author_profile.uri | default: site.url %}
+{% assign profile_avatar = site_profile.avatar | default: author_profile.avatar | default: site.logo %}
 {% assign profile_id = profile_name | slugify %}
-{% assign profile_email = site_profile.email | default: '' %}
-{% assign profile_phone = site_profile.phonenumber | default: '' %}
+{% assign profile_givenname = site_profile.givenname | default: author_profile.givenname | default: '' %}
+{% assign profile_familyname = site_profile.familyname | default: author_profile.familyname | default: '' %}
+{% assign profile_jobtitle = site_profile.jobtitle | default: author_profile.jobtitle | default: '' %}
+{% assign profile_locality = site_profile.locality | default: author_profile.locality | default: '' %}
+{% assign profile_region = site_profile.region | default: author_profile.region | default: '' %}
+{% assign profile_country = site_profile.country | default: author_profile.country | default: '' %}
+{% assign profile_biography = site_profile.biography | default: author_profile.biography | default: empty %}
+{% assign profile_email = site_profile.email | default: author_profile.email | default: '' %}
+{% assign profile_phone = site_profile.phonenumber | default: author_profile.phonenumber | default: '' %}
 {% assign mastodon_parts = profile_social.mastodon_username | default: '' | split: '@' %}
 {% assign categories = "" | split: "," %}
 {% for link in site.links %}
@@ -24,18 +32,22 @@
           </div>
           <a class="footer-name-link d-inline-flex align-items-center justify-content-center justify-content-lg-start mb-2 text-decoration-none u-url u-uid" href="{{ profile_url }}" rel="me">
             <span class="h4 mb-0 fs-5 fnp-name">
-              <span class="p-given-name">{{ site_profile.givenname }}</span>
-              <span class="p-family-name">{{ site_profile.familyname }}</span>
+              {% if profile_givenname != '' or profile_familyname != '' %}
+                <span class="p-given-name">{{ profile_givenname }}</span>
+                <span class="p-family-name">{{ profile_familyname }}</span>
+              {% else %}
+                {{ profile_name }}
+              {% endif %}
             </span>
           </a>
-          {% if site_profile.jobtitle %}
-            <p class="h5 p-job-title mb-1">{{ site_profile.jobtitle }}</p>
+          {% if profile_jobtitle != '' %}
+            <p class="h5 p-job-title mb-1">{{ profile_jobtitle }}</p>
           {% endif %}
-          {% if site_profile.locality or site_profile.region or site_profile.country %}
+          {% if profile_locality != '' or profile_region != '' or profile_country != '' %}
             <p class="h5 footer-location mb-0">
-              {% if site_profile.locality %}<span class="p-locality">{{ site_profile.locality }}</span>{% endif %}
-              {% if site_profile.region %}{% if site_profile.locality %}, {% endif %}<span class="p-region">{{ site_profile.region }}</span>{% endif %}
-              {% if site_profile.country %}{% if site_profile.locality or site_profile.region %}, {% endif %}<span class="p-country-name">{{ site_profile.country }}</span>{% endif %}
+              {% if profile_locality != '' %}<span class="p-locality">{{ profile_locality }}</span>{% endif %}
+              {% if profile_region != '' %}{% if profile_locality != '' %}, {% endif %}<span class="p-region">{{ profile_region }}</span>{% endif %}
+              {% if profile_country != '' %}{% if profile_locality != '' or profile_region != '' %}, {% endif %}<span class="p-country-name">{{ profile_country }}</span>{% endif %}
             </p>
           {% endif %}
           <ul class="list-unstyled small footer-profile-details mb-0"><li>
@@ -59,7 +71,7 @@
           <div class="col-12 col-xl-4">
             <section class="footer-bio-block h-100">
               <p class="h5 footer-section-title">About Ted</p>
-              <ul class="list-unstyled small p-note footer-bio-list mb-0">{%- for paragraphs in site_profile.biography -%}{% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}<li>{{ paragraph }}</li>{%- endfor -%}<li class="display-1 d-flex justify-content-center justify-content-xl-start footer-housemark" role="presentation" aria-hidden="true"><i class="icon-tschopp-housemark-optimum"></i></li></ul>
+              <ul class="list-unstyled small p-note footer-bio-list mb-0">{%- for paragraphs in profile_biography -%}{% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}<li>{{ paragraph }}</li>{%- endfor -%}<li class="display-1 d-flex justify-content-center justify-content-xl-start footer-housemark" role="presentation" aria-hidden="true"><i class="icon-tschopp-housemark-optimum"></i></li></ul>
             </section>
           </div>
 
