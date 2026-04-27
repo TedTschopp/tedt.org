@@ -328,13 +328,13 @@ links:
   Color: '#FFDD00'
   Category: 'Support Me'
   # Ko-Fi
-- Name: Ko-<wbr>Fi
-  URL: 'https://ko-fi.com'
-  Username: tedtschopp
-  Type: fontawesome
-  Icon-Class: fa-solid fa-mug-saucer
-  Color: '#FF6433'
-  Category: 'Support Me'
+  # - Name: Ko-<wbr>Fi
+  #   URL: 'https://ko-fi.com'
+  #   Username: tedtschopp
+  #   Type: fontawesome
+  #   Icon-Class: fa-solid fa-mug-saucer
+  #   Color: '#FF6433'
+  #   Category: 'Support Me'
   # Meetup
 - Name: Meetup
   URL: 'https://www.meetup.com/members/'

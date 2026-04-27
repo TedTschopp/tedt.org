@@ -492,13 +492,18 @@ footer.bd-footer .footer-link-icon {
   display:inline-flex;
   align-items:center;
   justify-content:center;
+  flex:0 0 1.75rem;
+  height:1.6em;
   min-width:1.75rem;
+  line-height:1;
   color:var(--footer-link-icon-color, var(--footer-link-hover));
   text-decoration:none;
 }
 
 footer.bd-footer .footer-link-icon i {
   color:inherit;
+  display:block;
+  line-height:1;
 }
 
 footer.bd-footer .footer-link-text {
