@@ -85,15 +85,15 @@ safe-outputs:
           required: true
           type: string
         executive_summary:
-          description: "The newsletter TL;DR in Markdown."
+          description: "The newsletter TL;DR in Markdown. Do not include a TL;DR heading; the page template supplies it."
           required: true
           type: string
         report_markdown:
-          description: "The full newsletter body in Markdown. Use headings, bullets, and Markdown links to original sources."
+          description: "The full newsletter body after the TL;DR and before Editor's Notes. Use only ##-#### headings, paragraphs, bullets, numbered lists, bold text, inline code, blockquotes, horizontal rules, images, and Markdown links. Do not use top-level # headings, Markdown pipe tables, single-asterisk italics, or raw HTML."
           required: true
           type: string
         source_notes:
-          description: "Markdown list of editor's notes, feed counts, source constraints, unavailable data, and assumptions."
+          description: "Markdown bullet list of editor's notes, feed counts, source constraints, unavailable data, and assumptions. Do not include an Editor's Notes heading; the page template supplies it. Do not use Markdown pipe tables."
           required: true
           type: string
       steps:
@@ -163,14 +163,25 @@ You are running inside GitHub Agentic Workflows. Treat this as a governed publis
 
 Read `prompts/! - Yesterday in AI.md` from the checked-out repository and follow it as the editorial contract. Use `cat 'prompts/! - Yesterday in AI.md'` before fetching feed data so the repository prompt remains the source of truth.
 
+## Renderer Constraints
+
+The publisher renders a constrained Markdown subset only: `##`-`####` headings, paragraphs, unordered lists, numbered lists, links, inline code, bold text, blockquotes, horizontal rules, and images.
+
+- Do not use top-level `#` headings. The `title` field supplies the page `<h1>`.
+- Do not repeat the newsletter title inside `report_markdown`.
+- Do not include a `## TL;DR` heading in `executive_summary`; the page template supplies it.
+- Do not include a `## Editor's Notes` heading in `source_notes`; the page template supplies it.
+- Do not use Markdown pipe tables, single-asterisk italics, or raw HTML. These will not publish as intended.
+- For comparisons, counts, source notes, and quick hits, use bullets or numbered lists with labeled fields instead.
+
 ## Safe Output Contract
 
 Call `publish_yesterday_in_ai` with:
 
 - `title`: short title, normally `Yesterday in Enterprise AI - YYYY-MM-DD` using the Pacific Time date.
-- `executive_summary`: the TL;DR section in Markdown.
-- `report_markdown`: the full newsletter body in Markdown.
-- `source_notes`: the Editor's Notes section in Markdown, including feed counts and assumptions.
+- `executive_summary`: the TL;DR content in Markdown, without a TL;DR heading.
+- `report_markdown`: the full newsletter body in Markdown, starting with a `##` section heading such as `## Big Moves`; do not start with `#`.
+- `source_notes`: the Editor's Notes content in Markdown bullet-list form, including feed counts and assumptions, without an Editor's Notes heading.
 
 Use Markdown links for source URLs. Use HTTPS source URLs only. Do not emit raw HTML.
 

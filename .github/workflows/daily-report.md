@@ -51,11 +51,11 @@ safe-outputs:
           required: true
           type: string
         report_markdown:
-          description: "The full daily report body in Markdown. Use headings, bullets, and cited source links."
+          description: "The full daily report body in Markdown. Use headings, bullets, numbered lists, code spans, and cited source links. Do not use Markdown pipe tables; they are not rendered as tables."
           required: true
           type: string
         source_notes:
-          description: "Markdown list of sources, constraints, unavailable data, and assumptions."
+          description: "Markdown bullet list of sources, constraints, unavailable data, and assumptions. Do not use Markdown pipe tables."
           required: true
           type: string
       steps:
@@ -130,6 +130,8 @@ Include:
 
 Use Ted's preferred style: direct, structured, pragmatic, and explicit about tradeoffs. Label assumptions as `[ASSUMPTION]`.
 
+Renderer constraint: the publisher renders a constrained Markdown subset only: `##`-`####` headings, paragraphs, unordered lists, numbered lists, links, inline code, bold text, blockquotes, horizontal rules, and images. Do not use Markdown pipe tables. They will publish as plain paragraphs, not HTML tables. For commits, PRs, risk registers, or comparisons, use short subsections or bullet lists with labeled fields instead.
+
 ## Safe Output Contract
 
 Call `publish_daily_report` with:
@@ -137,7 +139,9 @@ Call `publish_daily_report` with:
 - `title`: short title, normally `Daily Report - YYYY-MM-DD`.
 - `executive_summary`: concise Markdown summary.
 - `report_markdown`: full Markdown report body.
-- `source_notes`: Markdown list of sources, constraints, unavailable data, and assumptions.
+- `source_notes`: Markdown bullet list of sources, constraints, unavailable data, and assumptions.
+
+All Markdown fields must stay inside the supported renderer subset. Do not use pipe-table syntax such as `| Column | Column |`; use bullets or numbered lists instead.
 
 If no meaningful repository activity is available, still publish a short report that says so plainly and explains what data was checked.
 
