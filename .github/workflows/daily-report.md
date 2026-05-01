@@ -38,6 +38,7 @@ safe-outputs:
       description: "Publish the validated daily report to Daily-Report/index.html. Call this exactly once when the report is ready."
       runs-on: ubuntu-latest
       permissions:
+        actions: write
         contents: write
       output: "Daily report published to Daily-Report/index.html"
       inputs:
@@ -76,9 +77,11 @@ safe-outputs:
             test -s Daily-Report/index.html
             python3 tests/_code/test_publish_daily_report_from_aw.py
         - name: Commit daily report update
+          id: commit_report
           run: |
             if [ -z "$(git status --porcelain -- Daily-Report/index.html)" ]; then
               echo "Daily report unchanged; nothing to commit."
+              echo "changed=false" >> "$GITHUB_OUTPUT"
               exit 0
             fi
 
@@ -87,6 +90,13 @@ safe-outputs:
             git add Daily-Report/index.html
             git commit -m "chore: refresh daily report"
             git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+        - name: Trigger site deploy
+          if: steps.commit_report.outputs.changed == 'true'
+          env:
+            GH_TOKEN: ${{ github.token }}
+          run: |
+            gh workflow run deploy.yml --ref main
 ---
 
 # Daily Report
