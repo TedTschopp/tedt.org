@@ -161,7 +161,7 @@ You are running inside GitHub Agentic Workflows. Treat this as a governed publis
 
 ## Source Prompt
 
-{{#runtime-import prompts/! - Yesterday in AI.md}}
+Read `prompts/! - Yesterday in AI.md` from the checked-out repository and follow it as the editorial contract. Use `cat 'prompts/! - Yesterday in AI.md'` before fetching feed data so the repository prompt remains the source of truth.
 
 ## Safe Output Contract
 
