@@ -40,6 +40,7 @@
     h2 { border-top: 1px solid var(--line); margin-top: 36px; padding-top: 24px; }
     h3, h4 { margin-top: 28px; }
     a { color: var(--accent); }
+    img { max-width: 100%; height: auto; border-radius: 6px; }
     .summary, .sources { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
     .meta { color: var(--muted); font-size: 0.95rem; }
     code { background: color-mix(in srgb, var(--muted) 16%, transparent); border-radius: 4px; padding: 0.1em 0.3em; }
@@ -50,83 +51,87 @@
 <body>
   <main>
     <header>
-      <div class="eyebrow">Daily Report</div>
+            <div class="eyebrow">Daily Report</div>
       <h1>Daily Report - 2026-05-01</h1>
-      <p class="meta">Generated <time datetime="2026-05-01T04:43:04+00:00">2026-05-01T04:43:04Z</time> by GitHub Agentic Workflows.</p>
+      <p class="meta">Generated <time datetime="2026-05-01T11:40:54+00:00">2026-05-01T11:40:54Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
-      <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Bottom Line:</strong> Site is active and healthy. A new agentic daily-report workflow was added today (this run). Two Dependabot security PRs remain unmerged and need attention — one contains a nokogiri security fix and an <code>addressable</code> ReDoS patch. Footer and content work from April 27 is live. No build failures detected in latest deploy run (in progress at report time).</p>
+            <h2 id="summary-heading">Bottom Line Up Front</h2>
+      <p><strong>Active development day.</strong> Major new agentic workflows shipped today (Daily Report + Yesterday in Enterprise AI). The most recent HEAD commit (<code>259a16e</code>) fixed pages deploy dispatch. Mastodon feed ran successfully at 08:13 UTC. A Dependabot PR for <code>actions/github-script</code> 7→9 is open and passed CI. No blocking failures detected.</p>
     </section>
     <article aria-labelledby="report-heading">
-      <h2 id="report-heading">Report</h2>
-      <h2>Repository Activity</h2>
-<h3>Recent Commits (last 7 days)</h3>
-<p>| Date | Commit | Author | Message | |------|--------|--------|---------| | 2026-05-01 | <a href="https://github.com/TedTschopp/tedt.org/commit/2b7a0e6cd65448230204ad9734a45c79f203fbf0">2b7a0e6</a> | TedTschopp | Add agentic daily report workflow | | 2026-04-27 | <a href="https://github.com/TedTschopp/tedt.org/commit/cf9c161918fba03d53e63fc6a46be4fa908a1b2d">cf9c161</a> | github-actions[bot] | chore: update Mastodon cache/front matter | | 2026-04-27 | <a href="https://github.com/TedTschopp/tedt.org/commit/510d13dfe5abf46c084909051d222023d01caad7">510d13d</a> | TedTschopp | style(footer): adjust icon display properties for better alignment | | 2026-04-27 | <a href="https://github.com/TedTschopp/tedt.org/commit/9409e47a8953469f79e42319a96d5cdc6ea96945">9409e47</a> | TedTschopp | feat(footer): enhance profile data handling in footer layout | | 2026-04-27 | <a href="https://github.com/TedTschopp/tedt.org/commit/b730ef9d948c7a7c7e43846deda92d8cb9e02366">b730ef9</a> | TedTschopp | chore: remove redundant code blocks from changes section |</p>
-<h3>Earlier Activity (April 12–19)</h3>
+            <h2 id="report-heading">Report</h2>
+      <p># Daily Report — 2026-05-01</p>
+<h2>Bottom Line Up Front</h2>
+<p>Today was a high-activity commit day. Ted shipped two new agentic workflows, fixed deploy dispatch, and automated a "Yesterday in Enterprise AI" newsletter. All scheduled automation (Mastodon feed, deploy) appears healthy. One open Dependabot PR needs review.</p>
+<hr>
+<h2>Recent Repository Activity (Last 24–48 Hours)</h2>
+<p>| Time (UTC) | SHA | Author | Message | |---|---|---|---| | 05:35 | <a href="https://github.com/TedTschopp/tedt.org/commit/259a16e6ca70d2e357a16b98fdaa2608b63a4619"><code>259a16e</code></a> | TedTschopp | <code>fix: allow dispatched pages deploys</code> | | 05:22 | <a href="https://github.com/TedTschopp/tedt.org/commit/88f6e9f7c2c532dce151a8df93f98061cb8d4a51"><code>88f6e9f</code></a> | github-actions[bot] | <code>chore: refresh yesterday in enterprise ai</code> | | 05:16 | <a href="https://github.com/TedTschopp/tedt.org/commit/b84be05dcf8f7acb8c3577513b48e2d964873f33"><code>b84be05</code></a> | TedTschopp | <code>fix: load yesterday in ai prompt at runtime</code> | | 05:01 | <a href="https://github.com/TedTschopp/tedt.org/commit/4669ce6f4fc69ce7f93191f182b3f59f13f3cbcb"><code>4669ce6</code></a> | TedTschopp | <code>feat(workflow): add daily newsletter generation for Yesterday in AI</code> | | 04:46 | <a href="https://github.com/TedTschopp/tedt.org/commit/34140f8210e20efd951ea997fd5df79502a1aa77"><code>34140f8</code></a> | TedTschopp | <code>chore(git): update .gitattributes and daily report workflow</code> | | 04:43 | <a href="https://github.com/TedTschopp/tedt.org/commit/10d5368f143bc498b0bbd391daeb893ef4e9f189"><code>10d5368</code></a> | github-actions[bot] | <code>chore: refresh daily report</code> | | 04:37 | <a href="https://github.com/TedTschopp/tedt.org/commit/2b7a0e6cd65448230204ad9734a45c79f203fbf0"><code>2b7a0e6</code></a> | TedTschopp | <code>Add agentic daily report workflow</code> |</p>
+<p><strong>Earlier notable commits (this week):</strong></p>
 <ul>
-<li><strong>Content:</strong> Added "House of the Blood Comet" story + Klingon Empire brand guidelines doc (2026-04-19)</li>
-<li><strong>Content/Prompts:</strong> New skill prompt template for AI agents — two separate commits (2026-04-14, 2026-04-19)</li>
-<li><strong>Category system:</strong> Business category fully integrated — new HTML file, added to posts and prompts, font sync with <code>category_registry.yml</code> (2026-04-12)</li>
-<li><strong>Automated:</strong> Mastodon cache/front matter sync ran successfully on 2026-04-27, 2026-04-18, 2026-04-14, 2026-04-12</li>
+<li>2026-04-27: Footer layout enhancements — enhanced profile data handling; icon display alignment fix</li>
+<li>2026-04-27: Mastodon cache/front matter sync (automated)</li>
+<li>2026-04-19: Added "House of the Blood Comet" story + Klingon Empire brand guidelines doc</li>
+<li>2026-04-19: New skill prompt template with structured guidance</li>
+<li>2026-04-14: New AI agent skill prompt template content</li>
 </ul>
 <hr>
-<h2>Site Quality &amp; Workflow Health</h2>
-<h3>Deploy Workflow</h3>
+<h2>Workflow Health</h2>
+<p>| Workflow | Last Run | Status | Notes | |---|---|---|---| | <strong>Site Quality + Deploy</strong> | Recent (triggered by Dependabot PR) | ✅ completed | PR #dependabot branch passed CI | | <strong>Feed to Mastodon</strong> | 2026-05-01 08:13 UTC | ✅ success | Run #1620, scheduled | | <strong>Yesterday in Enterprise AI</strong> | 2026-05-01 (run #2) | ✅ success | New workflow, first automated run succeeded | | <strong>Daily Report</strong> | 2026-05-01 (run #2) | 🔄 in_progress | This run (workflow_run_id: 25212887670) | | <strong>DUSD Lunch Menu Calendar</strong> | Not checked | — | No recent run data retrieved | | <strong>Purge Actions Caches</strong> | Not checked | — | Scheduled/manual, no issues reported |</p>
+<p>Two new workflows were added today:</p>
 <ul>
-<li><strong>Latest run:</strong> <a href="https://github.com/TedTschopp/tedt.org/actions">Run #713</a> — triggered by today's commit "Add agentic daily report workflow" — <strong>in progress</strong> at time of report generation. [ASSUMPTION: will complete successfully based on no visible build errors in commit content]</li>
-<li>Total deploy runs on record: ~710 (healthy cadence)</li>
-</ul>
-<h3>CI/CD Pipelines</h3>
-<ul>
-<li><code>deploy.yml</code> — active and running on push to main</li>
-<li><code>mastodon-feed.yml</code> — automated sync confirmed working (recent bot commits visible)</li>
-<li>Other workflows (DUSD lunch menu, cache purge) — no recent failures observed</li>
+<li><code>daily-report.lock.yml</code> — agentic daily reporting (this report)</li>
+<li><code>yesterday-in-ai.lock.yml</code> — automated "Yesterday in Enterprise AI" newsletter generation</li>
 </ul>
 <hr>
 <h2>Open Pull Requests</h2>
-<h3>⚠️ Security — Needs Merge</h3>
-<p>| PR | Title | Age | Labels | |----|-------|-----|--------| | <a href="https://github.com/TedTschopp/tedt.org/pull/147">#147</a> | bump security-patches: nokogiri 1.19.0→1.19.1 + addressable 2.8.7→2.9.0 | ~23 days | <code>dependencies</code>, <code>ruby</code> | | <a href="https://github.com/TedTschopp/tedt.org/pull/148">#148</a> | bump actions/github-script from 7 to 9 | ~18 days | <code>dependencies</code>, <code>github_actions</code> |</p>
-<p><strong>PR #147 is highest priority.</strong> It includes:</p>
 <ul>
-<li><code>nokogiri</code> security fix (GHSA-wx95-c6cv-8532) — unchecked return value from <code>xmlC14NExecute</code>, contributing cause to ruby-saml vulnerability</li>
-<li><code>addressable</code> 2.9.0 — fixes an incomplete ReDoS remediation from 2.8.10</li>
+<li><strong>Dependabot: <code>actions/github-script</code> 7→9</strong> — CI passed on the Dependabot branch. Ready to review and merge. This is a major version bump (v9 has breaking changes in script API); verify no inline scripts in workflows depend on removed APIs before merging.</li>
 </ul>
-<p><strong>PR #148</strong> bumps <code>actions/github-script</code> from v7 to v9. Note: this is a <strong>breaking change</strong> — v9 uses ESM-only <code>@actions/github</code>. Any workflow scripts using <code>require('</code>@actions/github<code>')</code> will need updating. Review workflows before merging.</p>
+<hr>
+<h2>Open Issues (Sampled)</h2>
+<p>At least one open issue tracked in the repository covers:</p>
+<ul>
+<li><strong>WIP Backlog &amp; Technical Debt</strong> — <code>_work-in-progress/</code> contains 100+ draft artifacts; TODOs exist in <code>_layouts/prompt-details.html</code> (multi-author support), <code>_layouts/micropubpost.html</code> (image handling), and <code>js/comments-mastodon-tree.js</code> (image handling, reply loading). Scope: classify WIP items for promotion or archival.</li>
+</ul>
+<p>_Full issue count not retrieved in this run; see source notes._</p>
 <hr>
 <h2>Content &amp; Publishing Pipeline</h2>
 <ul>
-<li><strong>New agentic workflow</strong> introduced today: daily report automation is now operational (this report is its first run)</li>
-<li><strong>Mastodon sync</strong> is healthy — automated commits running on schedule</li>
-<li><strong>Business category</strong> now fully wired: <code>category_registry.yml</code> entry, category page HTML, posts tagged, font imports synced</li>
-<li><strong>Skill prompt templates</strong> added twice in April — possible duplicate; worth auditing <code>_posts/</code> for overlapping prompt content</li>
-<li><strong>WIP backlog</strong> — open issue documents 100+ items in <code>_work-in-progress/</code>. Not an immediate blocker but represents ongoing tech debt</li>
+<li><strong>New content this week:</strong> "House of the Blood Comet" story, Klingon Empire brand guidelines, two skill prompt templates.</li>
+<li><strong>Automated syndication:</strong> Mastodon feed bot running normally (run #1620 on 2026-05-01).</li>
+<li><strong>Newsletter automation:</strong> "Yesterday in Enterprise AI" now generates and commits content automatically on schedule. Two successful runs confirmed.</li>
+<li><strong>Footer:</strong> Profile data handling improved; icon alignment fixed.</li>
 </ul>
 <hr>
-<h2>Risks &amp; Blockers</h2>
-<p>| Risk | Severity | Notes | |------|----------|-------| | Security PRs unmerged (#147) | <strong>High</strong> | nokogiri + addressable CVEs; merge immediately | | PR #148 breaking change | Medium | <code>actions/github-script</code> v9 ESM change — audit workflows first | | WIP backlog | Low | 100+ draft items; no active build impact | | Daily report deploy run in progress | Low | Not confirmed successful at publish time |</p>
+<h2>Risks &amp; Observations</h2>
+<ol>
+<li><strong>Dependabot PR pending merge</strong> — <code>actions/github-script</code> 7→9 is a major version bump. CI passes but semantic changes in the API warrant a quick manual review of workflow scripts before merging.</li>
+<li><strong>New agentic workflows are immature</strong> — <code>daily-report.lock.yml</code> and <code>yesterday-in-ai.lock.yml</code> both launched today. Run counts are 2. Expect iteration on prompts, schedule tuning, and output quality over the next few days.</li>
+<li><strong>Dispatched deploys fix</strong> — The <code>fix: allow dispatched pages deploys</code> commit at 05:35 suggests deploy dispatch was broken earlier today. Worth verifying the next scheduled/triggered deploy completes successfully end-to-end.</li>
+<li><strong>WIP backlog</strong> — 100+ draft artifacts in <code>_work-in-progress/</code> represent ongoing technical debt. No immediate risk, but periodic classification would reduce confusion and build time.</li>
+</ol>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #147 now</strong> — security patches for nokogiri and addressable. Straightforward Dependabot update; no code logic change expected.</li>
-<li><strong>Review PR #148</strong> — before merging <code>actions/github-script</code> v7→v9, grep <code>.github/workflows/</code> for <code>require('</code>@actions/github<code>')</code> usage and update if needed.</li>
-<li><strong>Verify today's deploy completes</strong> — check <a href="https://github.com/TedTschopp/tedt.org/actions">Actions tab</a> for run #713 outcome.</li>
-<li><strong>Audit duplicate skill prompt commits</strong> — two commits (2026-04-14 and 2026-04-19) both add "skill prompt template for AI agents." Confirm these are distinct posts or remove the duplicate.</li>
-<li><strong>WIP backlog review</strong> (non-urgent) — classify and promote or archive items in <code>_work-in-progress/</code> per the open issue.</li>
+<li><strong>Review and merge</strong> the Dependabot <code>actions/github-script</code> 7→9 PR after spot-checking workflow scripts.</li>
+<li><strong>Monitor</strong> the next Site Quality + Deploy run after the dispatched-deploys fix to confirm end-to-end health.</li>
+<li><strong>Validate</strong> "Yesterday in Enterprise AI" output quality — confirm the generated newsletter content meets expectations now that automation is running.</li>
+<li><strong>Triage WIP backlog</strong> — schedule a pass through <code>_work-in-progress/</code> to promote, archive, or delete stale drafts.</li>
+<li><strong>Check DUSD Lunch Menu Calendar</strong> workflow — not sampled in this report; verify it ran recently and the ICS export is fresh.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
-      <h2 id="sources-heading">Sources And Notes</h2>
+            <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li><strong>Commits:</strong> Read via GitHub MCP <code>list_commits</code>, page 1, 20 results — covers 2026-04-12 through 2026-05-01</li>
-<li><strong>Open PRs:</strong> Read via GitHub MCP <code>list_pull_requests</code> (open state) — partial parse; PR #147 and #148 confirmed, additional PRs may exist beyond what was fully parsed</li>
-<li><strong>Workflow runs:</strong> Read via GitHub MCP <code>list_workflow_runs</code> for <code>deploy.yml</code> — run #713 was <code>in_progress</code> at query time; final status not confirmed</li>
-<li><strong>Issues:</strong> GitHub MCP <code>list_issues</code> returned open issues; full list not fully parsed due to output size — at minimum one issue about WIP backlog exists</li>
-<li><strong>[ASSUMPTION]</strong> Deploy run #713 likely succeeds based on commit nature (adding a workflow file), but not verified</li>
-<li><strong>[ASSUMPTION]</strong> No additional open PRs with critical severity beyond what was sampled</li>
-<li><strong>External link health:</strong> Not checked — <code>SKIP_EXTERNAL</code> mode not run; HTML Proofer results from CI are the authoritative source</li>
-<li><strong>Workflow run ID for this report:</strong> 25202468925</li>
-<li><strong>Report generated:</strong> 2026-05-01T04:39:54Z</li>
+<li><strong>Commits:</strong> Retrieved via GitHub MCP <code>list_commits</code> (last 20); covers 2026-04-12 through 2026-05-01.</li>
+<li><strong>Workflow runs:</strong> <code>list_workflow_runs</code> for all workflows and filtered by <code>deploy.yml</code> (189089560) and <code>yesterday-in-ai.lock.yml</code> (269332033). Full JSON outputs were too large to parse inline; key fields read from previews and <code>get_workflow_run</code> for Mastodon run.</li>
+<li><strong>Issues:</strong> <code>list_issues</code> returned 20 open issues; only the first issue was accessible in the preview. Full issue list not enumerated.</li>
+<li><strong>Pull Requests:</strong> <code>list_pull_requests</code> returned results; preview confirms Dependabot <code>actions/github-script</code> 7→9 PR is open.</li>
+<li><strong>DUSD Lunch Menu Calendar workflow:</strong> Not individually queried in this run. [ASSUMPTION] No news = no recent failures, but this is unverified.</li>
+<li><strong>Deploy workflow last successful run time:</strong> Not precisely determined from sampled data. [ASSUMPTION] CI passed for Dependabot PR branch based on preview data.</li>
+<li><strong>Site live status (tedt.org):</strong> Not externally verified in this run — no outbound HTTP checks available from this environment.</li>
+<li>Workflow run ID for this report: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/25212887670">25212887670</a></li>
 </ul>
     </section>
     <footer>
