@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Report - 2026-05-01 | TedT.org</title>
+  <meta name="robots" content="noindex, follow">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f6f4ef;
+      --fg: #20242a;
+      --muted: #5f6670;
+      --line: #d8d2c7;
+      --panel: #ffffff;
+      --accent: #1f6feb;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111418;
+        --fg: #eef1f5;
+        --muted: #aab2bd;
+        --line: #30363d;
+        --panel: #171b21;
+        --accent: #79c0ff;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    main { max-width: 960px; margin: 0 auto; padding: 48px 20px 64px; }
+    header { border-bottom: 1px solid var(--line); margin-bottom: 32px; padding-bottom: 24px; }
+    .eyebrow { color: var(--muted); font-size: 0.9rem; letter-spacing: 0; text-transform: uppercase; }
+    h1 { font-size: clamp(2rem, 5vw, 3.5rem); line-height: 1.1; margin: 8px 0 12px; }
+    h2 { border-top: 1px solid var(--line); margin-top: 36px; padding-top: 24px; }
+    h3, h4 { margin-top: 28px; }
+    a { color: var(--accent); }
+    .summary, .sources { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }
+    .meta { color: var(--muted); font-size: 0.95rem; }
+    code { background: color-mix(in srgb, var(--muted) 16%, transparent); border-radius: 4px; padding: 0.1em 0.3em; }
+    blockquote { border-left: 4px solid var(--line); margin-left: 0; padding-left: 16px; color: var(--muted); }
+    footer { border-top: 1px solid var(--line); color: var(--muted); margin-top: 40px; padding-top: 20px; }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="eyebrow">Daily Report</div>
+      <h1>Daily Report - 2026-05-01</h1>
+      <p class="meta">Generated <time datetime="2026-05-01T04:43:04+00:00">2026-05-01T04:43:04Z</time> by GitHub Agentic Workflows.</p>
+    </header>
+    <section class="summary" aria-labelledby="summary-heading">
+      <h2 id="summary-heading">Bottom Line Up Front</h2>
+      <p><strong>Bottom Line:</strong> Site is active and healthy. A new agentic daily-report workflow was added today (this run). Two Dependabot security PRs remain unmerged and need attention — one contains a nokogiri security fix and an <code>addressable</code> ReDoS patch. Footer and content work from April 27 is live. No build failures detected in latest deploy run (in progress at report time).</p>
+    </section>
+    <article aria-labelledby="report-heading">
+      <h2 id="report-heading">Report</h2>
+      <h2>Repository Activity</h2>
+<h3>Recent Commits (last 7 days)</h3>
+<p>| Date | Commit | Author | Message | |------|--------|--------|---------| | 2026-05-01 | <a href="https://github.com/TedTschopp/tedt.org/commit/2b7a0e6cd65448230204ad9734a45c79f203fbf0">2b7a0e6</a> | TedTschopp | Add agentic daily report workflow | | 2026-04-27 | <a href="https://github.com/TedTschopp/tedt.org/commit/cf9c161918fba03d53e63fc6a46be4fa908a1b2d">cf9c161</a> | github-actions[bot] | chore: update Mastodon cache/front matter | | 2026-04-27 | <a href="https://github.com/TedTschopp/tedt.org/commit/510d13dfe5abf46c084909051d222023d01caad7">510d13d</a> | TedTschopp | style(footer): adjust icon display properties for better alignment | | 2026-04-27 | <a href="https://github.com/TedTschopp/tedt.org/commit/9409e47a8953469f79e42319a96d5cdc6ea96945">9409e47</a> | TedTschopp | feat(footer): enhance profile data handling in footer layout | | 2026-04-27 | <a href="https://github.com/TedTschopp/tedt.org/commit/b730ef9d948c7a7c7e43846deda92d8cb9e02366">b730ef9</a> | TedTschopp | chore: remove redundant code blocks from changes section |</p>
+<h3>Earlier Activity (April 12–19)</h3>
+<ul>
+<li><strong>Content:</strong> Added "House of the Blood Comet" story + Klingon Empire brand guidelines doc (2026-04-19)</li>
+<li><strong>Content/Prompts:</strong> New skill prompt template for AI agents — two separate commits (2026-04-14, 2026-04-19)</li>
+<li><strong>Category system:</strong> Business category fully integrated — new HTML file, added to posts and prompts, font sync with <code>category_registry.yml</code> (2026-04-12)</li>
+<li><strong>Automated:</strong> Mastodon cache/front matter sync ran successfully on 2026-04-27, 2026-04-18, 2026-04-14, 2026-04-12</li>
+</ul>
+<hr>
+<h2>Site Quality &amp; Workflow Health</h2>
+<h3>Deploy Workflow</h3>
+<ul>
+<li><strong>Latest run:</strong> <a href="https://github.com/TedTschopp/tedt.org/actions">Run #713</a> — triggered by today's commit "Add agentic daily report workflow" — <strong>in progress</strong> at time of report generation. [ASSUMPTION: will complete successfully based on no visible build errors in commit content]</li>
+<li>Total deploy runs on record: ~710 (healthy cadence)</li>
+</ul>
+<h3>CI/CD Pipelines</h3>
+<ul>
+<li><code>deploy.yml</code> — active and running on push to main</li>
+<li><code>mastodon-feed.yml</code> — automated sync confirmed working (recent bot commits visible)</li>
+<li>Other workflows (DUSD lunch menu, cache purge) — no recent failures observed</li>
+</ul>
+<hr>
+<h2>Open Pull Requests</h2>
+<h3>⚠️ Security — Needs Merge</h3>
+<p>| PR | Title | Age | Labels | |----|-------|-----|--------| | <a href="https://github.com/TedTschopp/tedt.org/pull/147">#147</a> | bump security-patches: nokogiri 1.19.0→1.19.1 + addressable 2.8.7→2.9.0 | ~23 days | <code>dependencies</code>, <code>ruby</code> | | <a href="https://github.com/TedTschopp/tedt.org/pull/148">#148</a> | bump actions/github-script from 7 to 9 | ~18 days | <code>dependencies</code>, <code>github_actions</code> |</p>
+<p><strong>PR #147 is highest priority.</strong> It includes:</p>
+<ul>
+<li><code>nokogiri</code> security fix (GHSA-wx95-c6cv-8532) — unchecked return value from <code>xmlC14NExecute</code>, contributing cause to ruby-saml vulnerability</li>
+<li><code>addressable</code> 2.9.0 — fixes an incomplete ReDoS remediation from 2.8.10</li>
+</ul>
+<p><strong>PR #148</strong> bumps <code>actions/github-script</code> from v7 to v9. Note: this is a <strong>breaking change</strong> — v9 uses ESM-only <code>@actions/github</code>. Any workflow scripts using <code>require('</code>@actions/github<code>')</code> will need updating. Review workflows before merging.</p>
+<hr>
+<h2>Content &amp; Publishing Pipeline</h2>
+<ul>
+<li><strong>New agentic workflow</strong> introduced today: daily report automation is now operational (this report is its first run)</li>
+<li><strong>Mastodon sync</strong> is healthy — automated commits running on schedule</li>
+<li><strong>Business category</strong> now fully wired: <code>category_registry.yml</code> entry, category page HTML, posts tagged, font imports synced</li>
+<li><strong>Skill prompt templates</strong> added twice in April — possible duplicate; worth auditing <code>_posts/</code> for overlapping prompt content</li>
+<li><strong>WIP backlog</strong> — open issue documents 100+ items in <code>_work-in-progress/</code>. Not an immediate blocker but represents ongoing tech debt</li>
+</ul>
+<hr>
+<h2>Risks &amp; Blockers</h2>
+<p>| Risk | Severity | Notes | |------|----------|-------| | Security PRs unmerged (#147) | <strong>High</strong> | nokogiri + addressable CVEs; merge immediately | | PR #148 breaking change | Medium | <code>actions/github-script</code> v9 ESM change — audit workflows first | | WIP backlog | Low | 100+ draft items; no active build impact | | Daily report deploy run in progress | Low | Not confirmed successful at publish time |</p>
+<hr>
+<h2>Recommended Next Actions</h2>
+<ol>
+<li><strong>Merge PR #147 now</strong> — security patches for nokogiri and addressable. Straightforward Dependabot update; no code logic change expected.</li>
+<li><strong>Review PR #148</strong> — before merging <code>actions/github-script</code> v7→v9, grep <code>.github/workflows/</code> for <code>require('</code>@actions/github<code>')</code> usage and update if needed.</li>
+<li><strong>Verify today's deploy completes</strong> — check <a href="https://github.com/TedTschopp/tedt.org/actions">Actions tab</a> for run #713 outcome.</li>
+<li><strong>Audit duplicate skill prompt commits</strong> — two commits (2026-04-14 and 2026-04-19) both add "skill prompt template for AI agents." Confirm these are distinct posts or remove the duplicate.</li>
+<li><strong>WIP backlog review</strong> (non-urgent) — classify and promote or archive items in <code>_work-in-progress/</code> per the open issue.</li>
+</ol>
+    </article>
+    <section class="sources" aria-labelledby="sources-heading">
+      <h2 id="sources-heading">Sources And Notes</h2>
+      <ul>
+<li><strong>Commits:</strong> Read via GitHub MCP <code>list_commits</code>, page 1, 20 results — covers 2026-04-12 through 2026-05-01</li>
+<li><strong>Open PRs:</strong> Read via GitHub MCP <code>list_pull_requests</code> (open state) — partial parse; PR #147 and #148 confirmed, additional PRs may exist beyond what was fully parsed</li>
+<li><strong>Workflow runs:</strong> Read via GitHub MCP <code>list_workflow_runs</code> for <code>deploy.yml</code> — run #713 was <code>in_progress</code> at query time; final status not confirmed</li>
+<li><strong>Issues:</strong> GitHub MCP <code>list_issues</code> returned open issues; full list not fully parsed due to output size — at minimum one issue about WIP backlog exists</li>
+<li><strong>[ASSUMPTION]</strong> Deploy run #713 likely succeeds based on commit nature (adding a workflow file), but not verified</li>
+<li><strong>[ASSUMPTION]</strong> No additional open PRs with critical severity beyond what was sampled</li>
+<li><strong>External link health:</strong> Not checked — <code>SKIP_EXTERNAL</code> mode not run; HTML Proofer results from CI are the authoritative source</li>
+<li><strong>Workflow run ID for this report:</strong> 25202468925</li>
+<li><strong>Report generated:</strong> 2026-05-01T04:39:54Z</li>
+</ul>
+    </section>
+    <footer>
+      <p>This page is generated from a constrained gh-aw safe output. The agent proposes report content; a deterministic renderer writes the HTML.</p>
+      <p><a href="/">Return to TedT.org</a></p>
+    </footer>
+  </main>
+</body>
+</html>
