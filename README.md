@@ -4,6 +4,7 @@
 [![Feed to Mastodon](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed.yml)
 [![DUSD Lunch Menu Calendar](https://github.com/TedTschopp/tedt.org/actions/workflows/dusd-lunch-menu.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/dusd-lunch-menu.yml)
 [![Daily Report](https://github.com/TedTschopp/tedt.org/actions/workflows/daily-report.lock.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/daily-report.lock.yml)
+[![Yesterday in Enterprise AI](https://github.com/TedTschopp/tedt.org/actions/workflows/yesterday-in-ai.lock.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/yesterday-in-ai.lock.yml)
 [![Purge Actions Caches](https://github.com/TedTschopp/tedt.org/actions/workflows/purge-actions-caches.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/purge-actions-caches.yml)
 
 Welcome to the repository for my personal homepage, [TedT.org](https://tedt.org). This site is a collection of my projects, writings, and interests, built using Jekyll and various open-source tools.
@@ -368,6 +369,7 @@ Current active workflows:
 | Feed to Mastodon        | `mastodon-feed.yml`            | push to `main`, every 6h, manual | Post newest site entry to Mastodon and sync toot metadata           |
 | DUSD Lunch Menu Calendar| `dusd-lunch-menu.yml`          | daily, manual                 | Rebuild and commit the district lunch calendar ICS file                |
 | Daily Report            | `daily-report.md` / `daily-report.lock.yml` | daily, manual | Use GitHub Agentic Workflows to publish `/Daily-Report/index.html` through a constrained safe output |
+| Yesterday in Enterprise AI | `yesterday-in-ai.md` / `yesterday-in-ai.lock.yml` | daily around 6 a.m. PT, manual | Use GitHub Agentic Workflows to publish `/Daily-Report/AI/index.html` from `prompts/! - Yesterday in AI.md` |
 | Purge Actions Caches    | `purge-actions-caches.yml`     | weekly, manual                | Clean up stale GitHub Actions caches                                   |
 
 Composite actions (DRY helpers) under `.github/actions/`:

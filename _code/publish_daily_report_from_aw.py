@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
-"""Render the gh-aw daily report safe output into Daily-Report/index.html.
+"""Render a gh-aw report safe output into static HTML.
 
 Usage:
   python3 _code/publish_daily_report_from_aw.py \
     --agent-output "$GH_AW_AGENT_OUTPUT" \
     --output Daily-Report/index.html
 
-The agentic workflow supplies a single publish_daily_report item. This script
-validates that item, escapes model-controlled content, renders a small Markdown
-subset, and writes a static HTML page for GitHub Pages/Jekyll to copy through.
+The agentic workflow supplies a single report item. This script validates that
+item, escapes model-controlled content, renders a small Markdown subset, and
+writes a static HTML page for GitHub Pages/Jekyll to copy through.
 """
 from __future__ import annotations
 
@@ -26,7 +26,7 @@ from urllib.parse import urlparse
 ITEM_TYPE = "publish_daily_report"
 MAX_FIELD_CHARS = 120_000
 
-LINK_RE = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)")
+IMAGE_OR_LINK_RE = re.compile(r"(!?)\[([^\]]*)\]\(([^)\s]+)\)")
 ORDERED_ITEM_RE = re.compile(r"^\d+[.)]\s+(.*)$")
 UNORDERED_ITEM_RE = re.compile(r"^[-*]\s+(.*)$")
 
@@ -42,6 +42,31 @@ def parse_args() -> argparse.Namespace:
         "--output",
         default="Daily-Report/index.html",
         help="Destination HTML file.",
+    )
+    parser.add_argument(
+        "--item-type",
+        default=ITEM_TYPE,
+        help="Expected gh-aw safe-output item type.",
+    )
+    parser.add_argument(
+        "--eyebrow",
+        default="Daily Report",
+        help="Small label displayed above the page title.",
+    )
+    parser.add_argument(
+        "--summary-heading",
+        default="Bottom Line Up Front",
+        help="Heading for the executive summary section.",
+    )
+    parser.add_argument(
+        "--report-heading",
+        default="Report",
+        help="Heading for the main report section.",
+    )
+    parser.add_argument(
+        "--sources-heading",
+        default="Sources And Notes",
+        help="Heading for the source notes section.",
     )
     return parser.parse_args()
 
@@ -60,7 +85,7 @@ def require_text(item: dict[str, Any], key: str) -> str:
     return value.strip()
 
 
-def load_report_item(agent_output_path: Path) -> dict[str, Any]:
+def load_report_item(agent_output_path: Path, item_type: str) -> dict[str, Any]:
     if not agent_output_path.is_file():
         fail(f"Agent output file not found: {agent_output_path}")
 
@@ -73,9 +98,9 @@ def load_report_item(agent_output_path: Path) -> dict[str, Any]:
     if not isinstance(items, list):
         fail("Agent output JSON must contain an items array")
 
-    report_items = [item for item in items if isinstance(item, dict) and item.get("type") == ITEM_TYPE]
+    report_items = [item for item in items if isinstance(item, dict) and item.get("type") == item_type]
     if len(report_items) != 1:
-        fail(f"Expected exactly one {ITEM_TYPE} item, found {len(report_items)}")
+        fail(f"Expected exactly one {item_type} item, found {len(report_items)}")
 
     return report_items[0]
 
@@ -101,14 +126,19 @@ def format_text_segment(text: str) -> str:
 def render_inline(text: str) -> str:
     rendered: list[str] = []
     position = 0
-    for match in LINK_RE.finditer(text):
+    for match in IMAGE_OR_LINK_RE.finditer(text):
         rendered.append(format_text_segment(text[position : match.start()]))
-        label = format_text_segment(match.group(1))
-        url = match.group(2).strip()
-        if is_allowed_url(url):
-            rendered.append(f'<a href="{html.escape(url, quote=True)}">{label}</a>')
+        is_image = bool(match.group(1))
+        label = match.group(2).strip()
+        url = match.group(3).strip()
+        if is_allowed_url(url) and is_image:
+            rendered.append(
+                f'<img src="{html.escape(url, quote=True)}" alt="{html.escape(label, quote=True)}" loading="lazy">'
+            )
+        elif is_allowed_url(url):
+            rendered.append(f'<a href="{html.escape(url, quote=True)}">{format_text_segment(label)}</a>')
         else:
-            rendered.append(label)
+            rendered.append(format_text_segment(label))
         position = match.end()
     rendered.append(format_text_segment(text[position:]))
     return "".join(rendered)
@@ -188,7 +218,14 @@ def render_markdown(markdown: str) -> str:
     return "\n".join(parts)
 
 
-def build_html(item: dict[str, Any]) -> str:
+def build_html(
+    item: dict[str, Any],
+    *,
+    eyebrow: str,
+    summary_heading: str,
+    report_heading: str,
+    sources_heading: str,
+) -> str:
     title = require_text(item, "title")
     executive_summary = require_text(item, "executive_summary")
     report_markdown = require_text(item, "report_markdown")
@@ -197,6 +234,10 @@ def build_html(item: dict[str, Any]) -> str:
     generated_label = generated_at.replace("+00:00", "Z")
 
     page_title = html.escape(title, quote=False)
+    eyebrow_html = html.escape(eyebrow, quote=False)
+    summary_heading_html = html.escape(summary_heading, quote=False)
+    report_heading_html = html.escape(report_heading, quote=False)
+    sources_heading_html = html.escape(sources_heading, quote=False)
     summary_html = render_markdown(executive_summary)
     report_html = render_markdown(report_markdown)
     sources_html = render_markdown(source_notes)
@@ -243,6 +284,7 @@ def build_html(item: dict[str, Any]) -> str:
     h2 {{ border-top: 1px solid var(--line); margin-top: 36px; padding-top: 24px; }}
     h3, h4 {{ margin-top: 28px; }}
     a {{ color: var(--accent); }}
+    img {{ max-width: 100%; height: auto; border-radius: 6px; }}
     .summary, .sources {{ background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 20px; }}
     .meta {{ color: var(--muted); font-size: 0.95rem; }}
     code {{ background: color-mix(in srgb, var(--muted) 16%, transparent); border-radius: 4px; padding: 0.1em 0.3em; }}
@@ -253,20 +295,20 @@ def build_html(item: dict[str, Any]) -> str:
 <body>
   <main>
     <header>
-      <div class="eyebrow">Daily Report</div>
+            <div class="eyebrow">{eyebrow_html}</div>
       <h1>{page_title}</h1>
       <p class="meta">Generated <time datetime="{generated_at}">{generated_label}</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
-      <h2 id="summary-heading">Bottom Line Up Front</h2>
+            <h2 id="summary-heading">{summary_heading_html}</h2>
       {summary_html}
     </section>
     <article aria-labelledby="report-heading">
-      <h2 id="report-heading">Report</h2>
+            <h2 id="report-heading">{report_heading_html}</h2>
       {report_html}
     </article>
     <section class="sources" aria-labelledby="sources-heading">
-      <h2 id="sources-heading">Sources And Notes</h2>
+            <h2 id="sources-heading">{sources_heading_html}</h2>
       {sources_html}
     </section>
     <footer>
@@ -293,8 +335,14 @@ def main() -> None:
 
     agent_output_path = Path(args.agent_output)
     output_path = Path(args.output)
-    report_item = load_report_item(agent_output_path)
-    rendered = build_html(report_item)
+    report_item = load_report_item(agent_output_path, args.item_type)
+    rendered = build_html(
+        report_item,
+        eyebrow=args.eyebrow,
+        summary_heading=args.summary_heading,
+        report_heading=args.report_heading,
+        sources_heading=args.sources_heading,
+    )
 
     output_path.parent.mkdir(parents=True, exist_ok=True)
     output_path.write_text(rendered, encoding="utf-8")
