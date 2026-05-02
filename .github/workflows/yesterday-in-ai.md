@@ -28,47 +28,74 @@ tools:
 safe-outputs:
   allowed-domains:
     - default-safe-outputs
+    - a16z.news
+    - aisnakeoil.com
+    - aisnakeoil.substack.com
+    - aiweekly.co
+    - algolia.com
     - allenai.org
+    - anthropic.com
     - archive.is
     - archive.md
+    - arstechnica.com
+    - artificialintelligence-news.com
     - arxiv.org
     - aws.amazon.com
+    - bain.com
     - blog.cloudflare.com
     - blog.eladgil.com
     - blog.google
+    - blog.samaltman.com
     - claude.com
     - cloud.google.com
     - cursor.com
+    - deepmind.com
     - deepmind.google
     - developers.openai.com
+    - export.arxiv.org
+    - feed.infoq.com
+    - feeds.arstechnica.com
+    - futurism.com
+    - glean.com
     - hbr.org
+    - hn.algolia.com
+    - hnrss.org
     - huggingface.co
+    - ibm.com
+    - infoworld.com
     - jsonfeed.org
+    - kimi.com
+    - langchain.com
+    - magazine.sebastianraschka.com
+    - marktechpost.com
+    - mckinsey.com
     - mistral.ai
+    - natural20.com
     - news.google.com
+    - nvidia.com
+    - nytimes.com
+    - oneusefulthing.org
+    - oneusefulthing.substack.com
     - openai.com
     - poolside.ai
+    - reddit.com
     - rss.tedt.org
+    - salesforce.com
+    - sciencedaily.com
     - simonwillison.net
     - slack.engineering
     - techcrunch.com
+    - technologyreview.com
+    - techrepublic.com
     - tedt.org
+    - the-decoder.com
+    - theverge.com
     - venturebeat.com
-    - www.a16z.news
-    - www.anthropic.com
-    - www.bain.com
-    - www.glean.com
-    - www.ibm.com
-    - www.kimi.com
-    - www.langchain.com
-    - www.mckinsey.com
-    - www.nvidia.com
-    - www.nytimes.com
-    - www.salesforce.com
-    - www.technologyreview.com
-    - www.theverge.com
-    - www.viksnewsletter.com
+    - viksnewsletter.com
+    - wired.com
+    - x.ai
     - x.com
+    - zdnet.com
   max-bot-mentions: 1
   allowed-github-references: []
   jobs:
