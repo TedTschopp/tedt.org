@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-05-02 | TedT.org</title>
+  <title>Daily Report - 2026-05-03 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,172 +52,111 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-05-02</h1>
-      <p class="meta">Generated <time datetime="2026-05-02T11:17:20+00:00">2026-05-02T11:17:20Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-05-03</h1>
+      <p class="meta">Generated <time datetime="2026-05-03T11:15:42+00:00">2026-05-03T11:15:42Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Bottom line:</strong> High-velocity day on 2026-05-01. Two new agentic workflows launched — <strong>Daily Report</strong> and <strong>Yesterday in AI</strong> — with several same-day fix iterations. Automated pipelines (DUSD lunch calendar, Mastodon sync, CodeQL) are all green. One open Dependabot PR needs review. No deployment failures detected. Backlog of open issues is stable; top items are well-known and non-blocking.</p>
+      <p><strong>Site is healthy.</strong> Active development week focused on new agentic workflow infrastructure (Daily Report, Yesterday in AI newsletter). Two Dependabot security PRs remain open and unmerged — the nokogiri security patch in particular warrants prompt review. No build failures detected. Automated jobs (DUSD lunch calendar, Mastodon sync, cache purge) running normally.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Summary</h2>
-<p>Report date: <strong>2026-05-02</strong>. Repository: <a href="https://github.com/TedTschopp/tedt.org">TedTschopp/tedt.org</a>.</p>
-<p>All automated pipelines are healthy. The biggest activity is the introduction of two new agentic workflows on May 1, both of which iterated quickly through fixes on launch day. No failed runs were detected in the sampled window.</p>
+      <h2>Bottom Line Up Front</h2>
+<p>The site is in good shape. The most significant activity this week was the introduction of two new agentic workflows: the <strong>Daily Report</strong> (this report) and the <strong>Yesterday in AI</strong> newsletter generator. Both landed May 1 and are now running on schedule. Two Dependabot security PRs (#147, #148) have been open for 3–4 weeks and should be merged.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Commits — 2026-05-01 to 2026-05-02</h3>
+<h3>Human Commits (last 7 days)</h3>
 <ul>
-<li><strong><code>df3d5bb</code></strong> — <code>chore: refresh DUSD lunch calendar</code> (2026-05-01 16:11, github-actions[bot])</li>
+<li><strong>2026-05-02</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/d9c22679c54e73817bcec9a930985638911cd7ff"><code>chore: update allowed domains for newsletter sources</code></a> — Expanded permitted domains for the Yesterday in AI newsletter content pipeline.</li>
+<li><strong>2026-05-01</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/0090bbd9eb313c1c7f1f166b656e2694bc1bb1a8"><code>fix(workflows): update metadata and descriptions for daily report and yesterday in AI</code></a> — Workflow polish pass after initial landing.</li>
+<li><strong>2026-05-01</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/259a16e6ca70d2e357a16b98fdaa2608b63a4619"><code>fix: allow dispatched pages deploys</code></a> — CI fix to unblock manual deploy triggers.</li>
+<li><strong>2026-05-01</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/b84be05dcf8f7acb8c3577513b48e2d964873f33"><code>fix: load yesterday in ai prompt at runtime</code></a> — Runtime loading fix for new newsletter prompt.</li>
+<li><strong>2026-05-01</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/4669ce6f4fc69ce7f93191f182b3f59f13f3cbcb"><code>feat(workflow): add daily newsletter generation for Yesterday in AI</code></a> — New scheduled workflow generating AI news digest.</li>
+<li><strong>2026-05-01</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/34140f8210e20efd951ea997fd5df79502a1aa77"><code>chore(git): update .gitattributes and daily report workflow</code></a> — gitattributes tuning + report workflow improvements.</li>
+<li><strong>2026-05-01</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/2b7a0e6cd65448230204ad9734a45c79f203fbf0"><code>Add agentic daily report workflow</code></a> — This report's workflow introduced.</li>
+<li><strong>2026-04-27</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/9409e47a8953469f79e42319a96d5cdc6ea96945"><code>feat(footer): enhance profile data handling in footer layout</code></a> — Footer data model improvements.</li>
+<li><strong>2026-04-27</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/510d13dfe5abf46c084909051d222023d01caad7"><code>style(footer): adjust icon display properties for better alignment</code></a> — Footer icon alignment fix.</li>
+<li><strong>2026-04-19</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/8c0d2b45e0515c7ca036c3e477b7526bb0d4258e"><code>content(skill): create new skill prompt template</code></a> — New structured prompt template added to skills library.</li>
 </ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/df3d5bbf73e5f9ef436c074c8b8ada0a48057b2c">View</a></p>
+<h3>Automated Commits (last 7 days)</h3>
 <ul>
-<li><strong><code>2f6ffe4</code></strong> — <code>chore: refresh yesterday in enterprise ai</code> (2026-05-01 14:11, github-actions[bot])</li>
+<li>Daily Report refreshed: 2026-05-02, 2026-05-01 (×2), 2026-05-01 (pre-agentic)</li>
+<li>Yesterday in AI refreshed: 2026-05-02, 2026-05-01 (×2)</li>
+<li>DUSD Lunch Calendar refreshed: 2026-05-01</li>
+<li>Mastodon cache/front matter updated: 2026-04-27</li>
 </ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/2f6ffe48b5b7ab7bb1d9d3f0459f5568ce85ad61">View</a></p>
-<ul>
-<li><strong><code>0090bbd</code></strong> — <code>fix(workflows): update metadata and descriptions for daily report and yesterday in AI</code> (2026-05-01 11:58, TedTschopp)</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/0090bbd9eb313c1c7f1f166b656e2694bc1bb1a8">View</a></p>
-<ul>
-<li><strong><code>259a16e</code></strong> — <code>fix: allow dispatched pages deploys</code> (2026-05-01 05:35, TedTschopp)</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/259a16e6ca70d2e357a16b98fdaa2608b63a4619">View</a></p>
-<ul>
-<li><strong><code>b84be05</code></strong> — <code>fix: load yesterday in ai prompt at runtime</code> (2026-05-01 05:16, TedTschopp)</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/b84be05dcf8f7acb8c3577513b48e2d964873f33">View</a></p>
-<ul>
-<li><strong><code>4669ce6</code></strong> — <code>feat(workflow): add daily newsletter generation for Yesterday in AI</code> (2026-05-01 05:01, TedTschopp)</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/4669ce6f4fc69ce7f93191f182b3f59f13f3cbcb">View</a></p>
-<ul>
-<li><strong><code>34140f8</code></strong> — <code>chore(git): update .gitattributes and daily report workflow for improved handling</code> (2026-05-01 04:46, TedTschopp)</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/34140f8210e20efd951ea997fd5df79502a1aa77">View</a></p>
-<ul>
-<li><strong><code>2b7a0e6</code></strong> — <code>Add agentic daily report workflow</code> (2026-05-01 04:37, TedTschopp)</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/2b7a0e6cd65448230204ad9734a45c79f203fbf0">View</a></p>
-<h3>Earlier context (2026-04-27)</h3>
-<ul>
-<li><strong><code>510d13d</code></strong> — <code>style(footer): adjust icon display properties for better alignment</code></li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/510d13dfe5abf46c084909051d222023d01caad7">View</a></p>
-<ul>
-<li><strong><code>9409e47</code></strong> — <code>feat(footer): enhance profile data handling in footer layout</code></li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/9409e47a8953469f79e42319a96d5cdc6ea96945">View</a></p>
-<ul>
-<li><strong><code>cf9c161</code></strong> — <code>chore: update Mastodon cache/front matter</code> (Mastodon sync bot)</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/cf9c161918fba03d53e63fc6a46be4fa908a1b2d">View</a></p>
 <hr>
-<h2>Site Quality and Workflow Health</h2>
-<h3>Workflow Runs</h3>
+<h2>Workflow Health</h2>
+<h3>Runs Observed</h3>
 <ul>
-<li><strong>Daily Report</strong> — Run #3, <code>in_progress</code> as of report time (2026-05-02T11:11Z). This is the current run.</li>
+<li><strong>Daily Report</strong> (run #4, id 25277549875) — <code>in_progress</code> at time of data collection. This is the current run.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/25277549875">View run</a></li>
+<li><strong>Purge Actions Caches</strong> (run #33) — <code>completed / success</code> (2026-05-03 08:06 UTC)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/25273859939">View run</a></li>
 </ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/actions/runs/25250594911">View run</a></p>
+<h3>Pipeline Notes</h3>
 <ul>
-<li><strong>CodeQL Scheduled Scan</strong> — <code>completed / success</code> (2026-05-02T08:41Z). No security issues flagged.</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/actions/runs/25248114722">View run</a></p>
-<ul>
-<li><strong>DUSD Lunch Calendar</strong> — Auto-refresh fired successfully on 2026-05-01.</li>
-</ul>
-<ul>
-<li><strong>Mastodon Feed Sync</strong> — Ran successfully on 2026-04-27, updating cache and front matter.</li>
-</ul>
-<p>No failed runs were observed in the sampled workflow history.</p>
-<hr>
-<h2>Content and Publishing Pipeline</h2>
-<h3>New Agentic Workflows (Launched 2026-05-01)</h3>
-<p>Two new scheduled agentic workflows are now active:</p>
-<p><strong>1. Daily Report</strong> (<code>daily-report.lock.yml</code>)</p>
-<ul>
-<li>Publishes a daily status report to <code>Daily-Report/index.html</code>.</li>
-<li>Run #3 is currently in progress (this report).</li>
-<li>Launch day required two fix commits: <code>.gitattributes</code> adjustments and workflow metadata cleanup.</li>
-</ul>
-<p><strong>2. Yesterday in AI</strong> (enterprise AI newsletter)</p>
-<ul>
-<li>Generates a daily newsletter summarizing AI news.</li>
-<li>Prompt is now loaded at runtime (not baked into the workflow file) — improves maintainability.</li>
-<li>Dispatched Pages deploy fix (<code>259a16e</code>) was required to unblock workflow-triggered site rebuilds.</li>
-<li>Successfully produced auto-commits on 2026-05-01 05:22 and 14:11.</li>
-</ul>
-<h3>Footer Improvements (2026-04-27)</h3>
-<ul>
-<li>Enhanced profile data handling in footer layout.</li>
-<li>Fixed icon display alignment.</li>
+<li>The <code>fix: allow dispatched pages deploys</code> commit on May 1 suggests there was a brief deploy trigger issue. Appears resolved.</li>
+<li>Yesterday in AI and Daily Report workflows both landed within the same 24-hour window on May 1 — worth monitoring for any scheduling conflicts or resource contention on the runner.</li>
 </ul>
 <hr>
 <h2>Open Pull Requests</h2>
-<p><strong>PR #148</strong> — <code>build(deps): bump actions/github-script from 7 to 9</code></p>
+<h3>⚠️ Security Patches — Needs Merge</h3>
+<p><strong>PR #147</strong> — <a href="https://github.com/TedTschopp/tedt.org/pull/147"><code>build(deps): bump security-patches group (nokogiri + addressable)</code></a></p>
 <ul>
-<li>Author: dependabot[bot]</li>
-<li>Opened: 2026-04-13</li>
-<li>Labels: <code>dependencies</code>, <code>github_actions</code></li>
-<li>Status: Open, not merged. Last updated 2026-05-01.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/pull/148">View PR</a></li>
-<li><strong>Note:</strong> <code>actions/github-script</code> v9 has a breaking change — <code>require('</code>@actions/github<code>')</code> no longer works in scripts. Review any existing workflow scripts that use this pattern before merging.</li>
+<li><strong>nokogiri</strong> 1.19.0 → 1.19.1: Addresses unchecked return value from <code>xmlC14NExecute</code> (GHSA-wx95-c6cv-8532, contributing factor to ruby-saml vuln).</li>
+<li><strong>addressable</strong> 2.8.7 → 2.9.0: Fixes incomplete ReDoS remediation in <code>Addressable::Template#match</code>.</li>
+<li>Open since 2026-04-08. No blocking reason observed. <strong>Merge promptly.</strong></li>
+</ul>
+<p><strong>PR #148</strong> — <a href="https://github.com/TedTschopp/tedt.org/pull/148"><code>build(deps): bump actions/github-script from 7 to 9</code></a></p>
+<ul>
+<li>Breaking change: <code>require('</code>@actions/github<code>')</code> no longer works in scripts; use injected <code>getOctokit</code> instead.</li>
+<li>Open since 2026-04-13. Needs workflow script review before merge to catch any <code>require('</code>@actions/github<code>')</code> patterns.</li>
 </ul>
 <hr>
-<h2>Open Issues (Top)</h2>
-<p><strong>Issue #144</strong> — Triage <code>_work-in-progress</code> backlog and resolve user-facing TODO hotspots</p>
+<h2>Open Issues — Status Snapshot</h2>
 <ul>
-<li>Opened: 2026-03-19. No recent activity.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/144">View issue</a></li>
+<li><strong>#144</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/144">Triage <code>_work-in-progress</code> backlog</a> — Open since 2026-03-19. 100+ WIP items unclassified. No recent activity. Low urgency but increasing maintenance drag.</li>
+<li><strong>#142</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/142">Harden Mastodon automation and mutation safety</a> — Open since 2026-03-19, updated 2026-04-27. 1 comment. Mastodon sync ran successfully last week.</li>
+<li><strong>#88</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/88">Image Optimization Audit</a> — P2. No recent movement.</li>
+<li><strong>#86</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/86">Prompt Details UX gaps</a> — P2. 3 comments. ADR 0001 tracks this.</li>
+<li><strong>#75</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/75">Prompt tag archive pages</a> — P2. Related to ADR 0004 (Proposed, not yet Accepted).</li>
 </ul>
-<p><strong>Issue #142</strong> — Harden Mastodon automation and mutation safety</p>
+<hr>
+<h2>Content &amp; Publishing Pipeline</h2>
 <ul>
-<li>Opened: 2026-03-19. Has 1 comment. Last updated 2026-04-27.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/142">View issue</a></li>
-</ul>
-<p><strong>Issue #88</strong> — Image Optimization Audit: Size, Alt Text, Dimension and Format Checks</p>
-<ul>
-<li>Opened: 2025-08-09. Has 1 comment. Last updated 2026-04-27.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/88">View issue</a></li>
-</ul>
-<p><strong>Issue #86</strong> — Prompt Details: Clean Up Remaining UX Gaps and Empty Series Section</p>
-<ul>
-<li>Opened: 2025-08-01. Has 3 comments. Last updated 2026-04-27.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/86">View issue</a></li>
-</ul>
-<p><strong>Issue #75</strong> — Prompts: Add Dedicated Tag Archive Pages</p>
-<ul>
-<li>Opened: 2025-07-24. Has 1 comment. Last updated 2026-04-27.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/75">View issue</a></li>
+<li>Yesterday in AI newsletter is now auto-publishing on schedule. The May 2 commit (<code>chore: update allowed domains for newsletter sources</code>) indicates active tuning of source domain allowlists.</li>
+<li>DUSD Lunch Calendar refreshed on schedule May 1.</li>
+<li>Mastodon sync last ran April 27 — no anomalies noted.</li>
+<li>New skill prompt template added April 19; available in the prompts library.</li>
 </ul>
 <hr>
 <h2>Risks and Blockers</h2>
 <ul>
-<li><strong>PR #148 breaking change risk:</strong> <code>actions/github-script</code> v9 drops <code>require('</code>@actions/github<code>')</code> support. Audit all workflow scripts for this pattern before merging. The new <code>getOctokit</code> injection should replace it.</li>
-<li><strong><code>_work-in-progress</code> backlog drag (Issue #144):</strong> 100+ WIP items remain unclassified. No active work observed. Low risk but ongoing maintenance cost.</li>
-<li><strong>Mastodon mutation safety (Issue #142):</strong> Auto-commit flows for cache and front matter have no documented rollback path. Acceptable short-term but worth addressing before any bulk backfill operations.</li>
+<li><strong>Security PRs aging</strong> — PR #147 (security patch) has been open 25 days. No architectural blockers. Merge it.</li>
+<li><strong>PR #148 requires review</strong> — The <code>actions/github-script</code> v7→v9 upgrade has breaking API changes. Before merging, audit all workflows that use <code>github-script</code> for <code>require('</code>@actions/github<code>')</code> patterns.</li>
+<li><strong>Yesterday in AI domain allowlist</strong> — Rapidly iterating (two domain-related commits in two days). If allowlist logic is too permissive or too restrictive it may silently drop or include low-quality sources. No validation layer for source quality is visible.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Review and merge PR #148</strong> after auditing workflow scripts for <code>require('</code>@actions/github<code>')</code> usage. The upgrade to v9 brings useful <code>getOctokit</code> injection.</li>
-<li><strong>Monitor the Yesterday in AI workflow</strong> over the next few days to confirm it runs cleanly on schedule and the runtime prompt load is stable.</li>
-<li><strong>Verify dispatched Pages deploy</strong> (<code>259a16e</code>) works end-to-end — confirm the Yesterday in AI workflow triggers a successful site rebuild after committing its output.</li>
-<li><strong>Triage Issue #142</strong> (Mastodon safety): document the recovery path for bad cache/front matter updates before any next bulk Mastodon operation.</li>
-<li><strong>Consider scheduling time for Issue #144</strong> (_work-in-progress backlog): even a single pass to delete clearly stale items would reduce noise.</li>
+<li><strong>Merge PR #147</strong> — Security patches for nokogiri and addressable. No workflow changes needed. Highest priority.</li>
+<li><strong>Review and merge PR #148</strong> — Audit <code>.github/workflows/</code> for <code>require('</code>@actions/github<code>')</code> before merging. The new <code>getOctokit</code> injected API is the replacement.</li>
+<li><strong>Monitor Yesterday in AI</strong> for a few more runs to confirm output quality and domain allowlist stability.</li>
+<li><strong>Triage issue #144</strong> — Schedule a 30-minute pass on <code>_work-in-progress/</code>. Even rough classification (promote / archive / delete) reduces maintenance surface area.</li>
+<li><strong>Validate Mastodon sync</strong> — Issue #142 has been open since March; a brief audit of mutation safeguards would close it cleanly.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li><strong>Commits:</strong> Sourced from <code>github-list_commits</code> tool, most recent 20 commits on <code>main</code> branch as of 2026-05-02T11:13Z.</li>
-<li><strong>Workflow runs:</strong> Sourced from <code>github-actions_list</code> (list_workflow_runs), 10 most recent runs. Run #3 of Daily Report was <code>in_progress</code> at time of data collection — this is the current run producing this report.</li>
-<li><strong>Issues:</strong> Sourced from <code>github-list_issues</code>, first page of open issues, as of 2026-05-02T11:13Z. Full issue count not retrieved; only first page shown.</li>
-<li><strong>Pull requests:</strong> Sourced from <code>github-list_pull_requests</code> (open PRs). First PR shown is PR #148; full list not exhaustively reviewed beyond first entries.</li>
-<li><strong>CodeQL:</strong> Run status confirmed as <code>success</code> from workflow run data.</li>
-<li><strong>[ASSUMPTION]:</strong> No deploy workflow run for the site was visible in the top 10 most recent runs beyond the two listed — inferred that no deploy failures occurred in the sampled window, but full deploy history was not audited.</li>
-<li><strong>[ASSUMPTION]:</strong> The <code>Yesterday in AI</code> workflow is assumed to run on a schedule; its exact cron schedule was not separately verified from workflow YAML.</li>
-<li>**Unavailable (redacted) Full open issue count, closed PR/issue activity, HTML Proofer results, build timing metrics, and Mastodon feed validation were not retrieved in this run.</li>
+<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — last 20 commits on <code>main</code> branch retrieved.</li>
+<li>Workflow runs: <a href="https://github.com/TedTschopp/tedt.org/actions"><code>github-actions_list</code></a> — top 10 runs retrieved; current Daily Report run (<code>in_progress</code>) is run #4 of the new workflow.</li>
+<li>Open issues: <a href="https://github.com/TedTschopp/tedt.org/issues"><code>github-list_issues</code></a> — first 15 open issues retrieved, ordered by default (most recently updated first).</li>
+<li>Open PRs: <a href="https://github.com/TedTschopp/tedt.org/pulls"><code>github-list_pull_requests</code></a> — first page retrieved; at least 2 open Dependabot PRs confirmed (#147, #148).</li>
+<li>Build/deploy workflow run status not independently verified beyond the Purge Caches run. [ASSUMPTION] site build is healthy based on absence of failure commits or revert commits in recent history.</li>
+<li>[ASSUMPTION] No site build failures in recent days based on clean commit log (no <code>revert</code> or <code>fix: build</code> commits aside from the dispatched-deploy fix on May 1).</li>
+<li>The Daily Report workflow (this run) is <code>in_progress</code> at data collection time; its own conclusion is not reflected in this report.</li>
 </ul>
     </section>
     <footer>
