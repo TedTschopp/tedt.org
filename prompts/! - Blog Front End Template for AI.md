@@ -1,7 +1,6 @@
 
 This is my Blog Template for AI
 
-
 ---
 layout: post
 
@@ -13,29 +12,29 @@ source: "Original Content"
 source-url: ""
 call-to-action: ""
 
-date: 
+date:
 update:
 author:
-    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    avatar: //secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
-    url: https://tedt.org/
+    url: //tedt.org/
 
 bullets:
-    - 
-    - 
-    - 
-    - 
-    - 
+    -
+    -
+    -
+    -
+    -
 
 description: ""
 
 seo-description: ""
 
-categories: 
-    - {"AI" | "Bestiary" | "Books" | "Communications" | "Computers" | "Dungeon Crawl Classics" | "Dungeons & Dragons" | "ᚠᛟᛚᚲ ᛚᛟᚱᛖ - Folklore" | "Gamma World" | "GURPS" | "Home" | "Maps" | "Middle-eartH" | "Mobile" | "Monsters" | "Movies" | "Mutant Crawl Classics" | "Opinion" | "Personal Writing " | "Philosophy" | "Projects " | "Quotes" | "Religion" | "Reprint" | "Role Playing Games" | "Science" | "Shadowrun" | "The Märchen Engine"} # Pick alll that apply from this list 
+categories:
+    - {"AI" | "Bestiary" | "Books" | "Business" | "Communications" | "Computers" | "Dungeon Crawl Classics" | "Dungeons & Dragons" | "ᚠᛟᛚᚲ ᛚᛟᚱᛖ - Folklore" | "Gamma World" | "GURPS" | "Home" | "Maps" | "Middle-eartH" | "Mobile" | "Monsters" | "Movies" | "Mutant Crawl Classics" | "Opinion" | "Personal Writing " | "Philosophy" | "Projects " | "Quotes" | "Religion" | "Reprint" | "Role Playing Games" | "Science" | "Shadowrun" | "The Märchen Engine"} # Pick alll that apply from this list
 
-tags: 
-keywords: 
+tags:
+keywords:
 
 location:
     name: Bradbury, CA
@@ -43,20 +42,20 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: 
+image:
 image-alt: ""
 image-artist: "Ted Tschopp"
-image-artist-URL: "https://tedt.org/"
+image-artist-URL: "//tedt.org/"
 image-credits: "Ted Tschopp"
-image-credits-URL: "https://tedt.org/"
+image-credits-URL: "//tedt.org/"
 image-credits-artist: "Ted Tschopp"
-image-credits-artist-URL: "https://tedt.org/"
+image-credits-artist-URL: "//tedt.org/"
 image-credits-title: ""
 image-description: ""
 image-title: ""
-image_width: 
-image_height: 
+image_width:
+image_height:
 
-mastodon-post-id: 
+mastodon-post-id:
 
 ---
