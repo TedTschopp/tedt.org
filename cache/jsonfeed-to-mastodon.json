@@ -4123,5 +4123,38 @@
       "https://tschopp.net/users/Ted/statuses/116473964601861250"
     ],
     "lastTootTimestamp": 1777251657213
+  },
+  "https://tedt.org/MCPs-2026-Roadmap/": {
+    "id": "/MCPs-2026-Roadmap/",
+    "title": "MCP's 2026 Roadmap: From Agent Integration Standard to Production Connectivity Layer",
+    "summary": "The Model Context Protocol is entering a new phase. Its 2026 roadmap points toward stateless transport, server discovery, long-running tasks, enterprise authentication, triggers, streaming, skills, extensions, SDK improvements, and smarter client patterns for production agentic systems.",
+    "content_text": "The Model Context Protocol is entering a new phase. Its 2026 roadmap points toward stateless transport, server discovery, long-running tasks, enterprise authentication, triggers, streaming, skills, extensions, SDK improvements, and smarter client patterns for production agentic systems. https://tedt.org/MCPs-2026-Roadmap/",
+    "url": "https://tedt.org/MCPs-2026-Roadmap/",
+    "image": "https://tedt.org/img/2026-05/MCP-Roadmap.webp",
+    "tags": [
+      "model context protocol",
+      "mcp",
+      "ai agents",
+      "agentic systems",
+      "enterprise ai",
+      "ai architecture",
+      "tool use",
+      "server discovery",
+      "enterprise authentication",
+      "streaming results",
+      "mcp apps",
+      "software architecture"
+    ],
+    "date_published": "2026-05-03T09:00:00-07:00",
+    "date_modified": "2026-05-03T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116513905845138554"
+    ],
+    "lastTootTimestamp": 1777861112220
   }
 }
