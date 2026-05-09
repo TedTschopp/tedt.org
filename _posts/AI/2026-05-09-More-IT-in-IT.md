@@ -73,6 +73,14 @@ image-title: "More IT in IT"
 image_width: 1672
 image_height: 941
 
+video:
+  provider: youtube
+  id: "5VYs_RqSfuA"
+  label: "Video Summary"
+  title: "More IT in IT video summary"
+  description: "Watch More IT in IT."
+  aspect: "16x9"
+
 mastodon-post-id:
 ---
 
@@ -83,9 +91,6 @@ This one wants to be big.
 The chorus should be big, anthemic, and singable: wide power chords, crashing cymbals, and a melody that feels both defiant and hopeful. Think executive town hall meets late-night server room, with the emotional sweep of classic rock and the polish of contemporary production. The bridge pulls back into a reflective half-time feel before exploding into a soaring guitar solo.
 
 Vocally, it should be passionate but grounded: part warning, part invitation. The core sound celebrates innovation while insisting that craft, architecture, security, and accountability still matter.
-
-
-{% include components/video-player.html id="5VYs_RqSfuA" label="Video Summary" description="Watch *More IT in IT*." %}
 
 ## Lyrics
 

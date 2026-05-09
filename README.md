@@ -32,7 +32,7 @@ Key technologies and architectural decisions powering the site:
 
 - Markdown posts under `_posts/` (includes slide decks under `_posts/Slides/` per [ADR 0012](docs/adr/0012-posts-based-slides.md)).
 - Unified category theming / registry ([ADR 0006](docs/adr/0006-carousel-registry-driven-accessibility.md) & [ADR 0007](docs/adr/0007-category-theming-unification.md)) via `_data/category_registry.yml`.
-- Front matter feature flags: `no_toc` ([ADR 0010](docs/adr/0010-no-toc-front-matter-flag.md)), `mermaid` ([ADR 0011](docs/adr/0011-mermaid-front-matter-flag.md)).
+- Front matter feature flags: `no_toc` ([ADR 0010](docs/adr/0010-no-toc-front-matter-flag.md)), `mermaid` ([ADR 0011](docs/adr/0011-mermaid-front-matter-flag.md)); article video metadata via `video`.
 
 ### Presentation & Styling
 
@@ -119,6 +119,7 @@ Override check for emergency commits with `SKIP_TOC=1 git commit -m "..."`.
    10. [Quality Gates](#quality-gates)
    11. [GitHub Workflows Overview](#github-workflows-overview)
    12. [Front Matter Feature Flags](#front-matter-feature-flags)
+      - [Article Video Front Matter](#article-video-front-matter)
       - [Slide Deck Front Matter (Canonical Path posts-slides)](#slide-deck-front-matter-canonical-path-posts-slides)
       - [Slide Index Behavior](#slide-index-behavior)
       - [Slide Includes](#slide-includes)
@@ -408,6 +409,35 @@ Notes:
 - Future flags (candidate): `charts`, `diagram-libs`, `math` (currently always included) may adopt the same pattern.
 
 See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural implications of these flags.
+
+## Article Video Front Matter
+
+Posts may specify a primary article video in front matter. The post and long-article layouts render the video in the article hero position. The normal `image` fields are still required for summaries, feeds, social previews, category cards, and fallback rendering.
+
+Currently supported provider: `youtube`.
+
+| Key                 | Required | Type   | Purpose                                                      |
+|---------------------|----------|--------|--------------------------------------------------------------|
+| `video.provider`    | no       | string | Video provider. Defaults to `youtube`.                       |
+| `video.id`          | yes      | string | YouTube video ID.                                            |
+| `video.label`       | no       | string | Human-readable video type, such as `Video Summary`.          |
+| `video.title`       | no       | string | Accessible iframe title. Defaults to the post title.         |
+| `video.description` | no       | string | Short helper text rendered below the embedded player.        |
+| `video.aspect`      | no       | string | Bootstrap ratio suffix such as `16x9`, `21x9`, `4x3`, `1x1`. |
+
+Example:
+
+```yaml
+image: "/img/2026-05/example.webp"
+image-alt: "Static image used in summaries and social previews."
+video:
+   provider: youtube
+   id: "5VYs_RqSfuA"
+   label: "Video Summary"
+   title: "More IT in IT video summary"
+   description: "Watch More IT in IT."
+   aspect: "16x9"
+```
 
 ### Slide Deck Front Matter (Canonical Path posts-slides)
 

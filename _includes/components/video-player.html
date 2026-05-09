@@ -4,23 +4,34 @@ Usage: {% include components/video-player.html id="xr65j6C2KyU" label="Video" de
 Parameters:
   - id: YouTube video ID (required)
   - label: Badge text (optional, defaults to "Video")
+  - title: iframe title (optional, defaults to "YouTube video player")
   - description: Helper text below player (optional)
-  - aspect: Aspect ratio (optional, defaults to "16by9", options: "16by9", "4by3", "21by9", "1by1")
+  - aspect: Aspect ratio (optional, defaults to "16x9", options: "16x9", "4x3", "21x9", "1x1")
+  - class: Outer wrapper classes (optional)
+  - body_class: Inner wrapper classes (optional)
+  - description_wrapper_class: Description wrapper classes (optional)
 {% endcomment %}
 {% assign video_label = include.label | default: "Video" %}
-{% assign video_aspect = include.aspect | default: "16x9" %}
-<div class="video-player-alert alert alert-light m-0 p-0 mb-3">
-<div class="card-body py-3">
+{% assign video_title = include.title | default: "YouTube video player" %}
+{% assign video_aspect = include.aspect | default: "16x9" | replace: ':', 'x' | replace: 'by', 'x' %}
+{% assign video_container_class = include.class | default: "video-player-alert alert alert-light m-0 p-0 mb-3" %}
+{% assign video_body_class = include.body_class | default: "card-body py-3" %}
+{% assign video_description_wrapper_class = include.description_wrapper_class | default: "mt-2" %}
+{% assign video_description = include.description | default: "" %}
+<div class="{{ video_container_class }}">
+<div class="{{ video_body_class }}">
 {% comment %}
 <div class="mb-2">
 <span class="badge bg-danger rounded-pill px-3 py-2"><i class="bi bi-youtube me-1"></i> {{ video_label }}</span>
 </div>
 {% endcomment %}
 <div class="ratio ratio-{{ video_aspect }}">
-<iframe src="https://www.youtube.com/embed/{{ include.id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+<iframe src="https://www.youtube.com/embed/{{ include.id }}" title="{{ video_title | escape }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
 </div>
-<div class="mt-2">
-{% if include.description %}<p class="text-muted small mb-0"><i class="bi bi-info-circle me-1"></i> {{ include.description }}</p>{% endif %}
+{% if video_description != '' %}
+<div class="{{ video_description_wrapper_class }}">
+<p class="text-muted small mb-0"><i class="bi bi-info-circle me-1"></i> {{ video_description }}</p>
 </div>
+{% endif %}
 </div>
 </div>

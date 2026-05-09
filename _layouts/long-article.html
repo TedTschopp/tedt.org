@@ -65,8 +65,13 @@
 
                     <div class="card h-100 no-padding">
                         {% include utility/resolve-image-variables.html item=page fallback_alt=page.title fallback_credits_title='In Search of an Image - "No Image Associated with this article"' fallback_credits=site.author.name fallback_credits_artist_url=site.author.url %}
+                        {% include utility/resolve-video-variables.html item=page %}
                         <div class="card rounded-bottom-0 h-100">
-                            <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"><!-- hero image intentionally eager -->
+                            {% if video_has_resolved_source %}
+                                {% include components/video-player.html id=video_id label=video_label title=video_title description=video_description aspect=video_aspect class="video-player-alert article-hero-video m-0 p-0 border-0 rounded-bottom-0 bg-body" body_class="p-0" description_wrapper_class="px-3 py-2" %}
+                            {% else %}
+                                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"><!-- hero image intentionally eager -->
+                            {% endif %}
                             <div class="card-body pt-3 pb-3 ps-4 pe-4">
                                 <div class="post-hero mb-2">
                                     <h1 class="p-name card-title post-title mb-1">{{ page.title }}</h1>
@@ -85,9 +90,11 @@
                                                 loading="lazy" alt="{{ site.author.name | escape }} avatar"> {{site.author.name}}</a></span>
                                     {% endif %}
                                 </div>
-                                <div class="small text-body-secondary image-credits">
-                                    {% include utility/render-image-credit.html %}
-                                </div>
+                                {% unless video_has_resolved_source %}
+                                    <div class="small text-body-secondary image-credits">
+                                        {% include utility/render-image-credit.html %}
+                                    </div>
+                                {% endunless %}
                             </div>
                         </div>
                         <div class="card-body rounded-top-0 p-0 h-100">

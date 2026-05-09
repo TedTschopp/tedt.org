@@ -1,0 +1,14 @@
+{%- assign __video_item = include.item | default: page -%}
+{%- assign __video_field = __video_item.video -%}
+
+{%- assign video_provider = __video_field.provider | default: __video_item['video-provider'] | default: 'youtube' | downcase | strip -%}
+{%- assign video_id = __video_field.id | default: __video_field.youtube_id | default: __video_field['youtube-id'] | default: __video_item['video-id'] | default: __video_item.youtube_id | default: __video_item['youtube-id'] | default: '' | strip -%}
+{%- assign video_label = __video_field.label | default: __video_item['video-label'] | default: 'Video' | strip -%}
+{%- assign video_title = __video_field.title | default: __video_item['video-title'] | default: __video_item.title | default: 'Video player' | strip -%}
+{%- assign video_description = __video_field.description | default: __video_item['video-description'] | default: '' | strip -%}
+{%- assign video_aspect = __video_field.aspect | default: __video_item['video-aspect'] | default: '16x9' | replace: ':', 'x' | replace: 'by', 'x' | strip -%}
+
+{%- assign video_has_resolved_source = false -%}
+{%- if video_provider == 'youtube' and video_id != '' -%}
+  {%- assign video_has_resolved_source = true -%}
+{%- endif -%}
