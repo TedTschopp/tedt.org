@@ -286,10 +286,14 @@ def compare_snapshots(baseline, current, config)
                             else
                               []
                             end
+  tolerated_added_items = tolerated_removed_items.empty? ? [] : added_keys
+  effective_added_items = added_keys - tolerated_added_items
   effective_removed_items = removed_keys - tolerated_removed_items
 
   {
     added_items: added_keys,
+    tolerated_added_items: tolerated_added_items,
+    effective_added_items: effective_added_items,
     removed_items: removed_keys,
     tolerated_removed_items: tolerated_removed_items,
     effective_removed_items: effective_removed_items,
@@ -306,7 +310,9 @@ end
 
 def metric_summary(diff)
   {
-    'added_items' => diff[:added_items].length,
+    'added_items' => diff[:effective_added_items].length,
+    'raw_added_items' => diff[:added_items].length,
+    'tolerated_added_items' => diff[:tolerated_added_items].length,
     'removed_items' => diff[:effective_removed_items].length,
     'raw_removed_items' => diff[:removed_items].length,
     'tolerated_removed_items' => diff[:tolerated_removed_items].length,
@@ -428,7 +434,10 @@ FEEDS.each do |feed|
   examples = diff_examples(diff, config.fetch('top_diff_count', 5).to_i)
 
   puts "Feed diff report: #{feed[:label]}"
-  puts " - added items: #{metrics['added_items']}"
+  puts " - added items: #{metrics['raw_added_items']}"
+  if metrics['tolerated_added_items'].positive?
+    puts " - tolerated rolling-window additions: #{metrics['tolerated_added_items']}"
+  end
   puts " - removed items: #{metrics['raw_removed_items']}"
   if metrics['tolerated_removed_items'].positive?
     puts " - tolerated rolling-window evictions: #{metrics['tolerated_removed_items']}"
