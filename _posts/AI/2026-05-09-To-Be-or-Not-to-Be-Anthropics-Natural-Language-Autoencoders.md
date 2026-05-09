@@ -228,4 +228,4 @@ But sometimes, to understand what really happened, you need to look backstage.
 
 ---
 
-The above is based on a paper published by Anthropic on May 7, 2026, titled "Natural Language Autoencoders: A Method for Interpreting Hidden Model Activations". https://transformer-circuits.pub/2026/nla/index.html#introduction
+The above is based on a paper published by Anthropic on May 7, 2026, titled ["Natural Language Autoencoders: A Method for Interpreting Hidden Model Activations"](https://transformer-circuits.pub/2026/nla/index.html#introduction).
