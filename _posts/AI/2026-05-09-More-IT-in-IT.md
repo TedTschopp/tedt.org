@@ -85,7 +85,7 @@ The chorus should be big, anthemic, and singable: wide power chords, crashing cy
 Vocally, it should be passionate but grounded: part warning, part invitation. The core sound celebrates innovation while insisting that craft, architecture, security, and accountability still matter.
 
 
-{% include components/video-player.html id="W1s_Oy2zyN0" label="Video Summary" description="Watch *More IT in IT*." %}
+{% include components/video-player.html id="5VYs_RqSfuA" label="Video Summary" description="Watch *More IT in IT*." %}
 
 ## Lyrics
 

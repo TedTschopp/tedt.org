@@ -29,8 +29,6 @@ seo-description: "What are Anthropic's Natural Language Autoencoders? This post 
 
 categories:
 - AI
-- Computers
-- Opinion
 
 tags:
 - ai interpretability
