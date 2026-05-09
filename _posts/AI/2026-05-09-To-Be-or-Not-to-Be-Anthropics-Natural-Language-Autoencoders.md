@@ -225,3 +225,7 @@ They give researchers a possible way to translate some of the AI's hidden number
 The final answer still matters. The words on the screen still matter.
 
 But sometimes, to understand what really happened, you need to look backstage.
+
+---
+
+The above is based on a paper published by Anthropic on May 7, 2026, titled "Natural Language Autoencoders: A Method for Interpreting Hidden Model Activations". https://transformer-circuits.pub/2026/nla/index.html#introduction
