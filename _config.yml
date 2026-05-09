@@ -13,6 +13,14 @@ exclude:
 # Exclude temp worktrees (may contain non-Jekyll sources like Bootstrap's site)
 - tmp/**
 
+# Exclude CI/runtime artifacts and test sources from the public Pages output.
+- Logs/**
+- tests/**
+- test-results/**
+- .allure/**
+- reports/allure/allure-results/**
+- bootstrap-5.3.2.tgz
+
 # Enable explicit kramdown + MathJax processing
 markdown: kramdown
 kramdown:

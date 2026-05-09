@@ -17,10 +17,10 @@ Triggers:
 
 Responsibilities:
 
-- Install Node, Playwright, Ruby, and bundle dependencies
+- Install Node, Playwright, Ruby, and bundle dependencies using CI caches where possible
 - Record advisory lint results in Allure artifacts (`lint:md`, `lint:js`, `lint:css:overrides`)
 - Run the blocking structural checks that back `make qa`
-- Run representative accessibility coverage via Playwright + axe
+- Build Jekyll once, then run representative accessibility coverage against the generated `_site` output via Playwright + axe
 - Run HTMLProofer for internal links / basic HTML validation
 - Publish Allure and HTMLProofer artifacts for triage
 - Upload `_site` and deploy to GitHub Pages on successful pushes to `main`
@@ -36,7 +36,7 @@ Blocking checks:
 - `make feed_diff`
 - `make tools_css_sync_check`
 - `npm run test:a11y:allure`
-- `SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --root-dir ./_site --check-html --allow-missing-href`
+- `bundle exec htmlproofer ./_site --root-dir ./_site --check-html --allow-missing-href --disable-external`
 
 Advisory checks:
 
@@ -109,6 +109,7 @@ The answer is now explicit:
 - If a deployment gets stuck or cancelled by a new push, GitHub Pages uses the latest successful artifact.
 - To force a rebuild without code changes, use the "Run workflow" button (manual dispatch) or commit an empty change: `git commit --allow-empty -m 'chore: trigger deploy'`.
 - The Mastodon workflow will no-op (skip) if your decision script indicates the latest item was already posted.
+- Pull request runs cancel older in-progress runs for the same ref to avoid spending runner time on superseded commits.
 - External link checking remains intentionally excluded from the blocking gate to avoid flaky deploy blockers.
 
 ---
@@ -119,7 +120,7 @@ On each CI run, the workflow publishes:
 
 - Allure results and generated report
 - HTMLProofer log artifact
-- GitHub Actions log-derived diagnostics
+- GitHub Actions log-derived diagnostics when the job fails
 
 This keeps failure triage attached to the same workflow that produced the verdict.
 

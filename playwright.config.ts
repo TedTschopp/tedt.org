@@ -1,6 +1,17 @@
 import { defineConfig, devices } from '@playwright/test';
 
 const reporter: any[] = [['list']];
+const skipWebServer = process.env.PLAYWRIGHT_SKIP_WEB_SERVER === '1';
+const reuseExistingServer = process.env.PLAYWRIGHT_REUSE_EXISTING_SERVER === '1' || !process.env.CI;
+
+const webServer = skipWebServer
+  ? undefined
+  : {
+      command: 'JEKYLL_ENV=production bundle exec jekyll serve --no-watch --port 4000 --host 127.0.0.1',
+      port: 4000,
+      timeout: 120_000,
+      reuseExistingServer
+    };
 
 if (process.env.PLAYWRIGHT_ALLURE === '1') {
   reporter.push([
@@ -21,12 +32,7 @@ export default defineConfig({
     trace: 'off'
   },
   reporter,
-  webServer: {
-    command: 'JEKYLL_ENV=production bundle exec jekyll serve --no-watch --port 4000 --host 127.0.0.1',
-    port: 4000,
-    timeout: 120_000,
-    reuseExistingServer: !process.env.CI
-  },
+  ...(webServer ? { webServer } : {}),
   projects: [
     {
       name: 'chromium',
