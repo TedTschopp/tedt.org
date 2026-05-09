@@ -4156,5 +4156,38 @@
       "https://tschopp.net/users/Ted/statuses/116513905845138554"
     ],
     "lastTootTimestamp": 1777861112220
+  },
+  "https://tedt.org/More-IT-in-IT/": {
+    "id": "/More-IT-in-IT/",
+    "title": "More IT in IT",
+    "summary": "A song lyric about technology moving faster than governance, and why innovation still needs craft, architecture, security, and accountability.",
+    "content_text": "A song lyric about technology moving faster than governance, and why innovation still needs craft, architecture, security, and accountability. https://tedt.org/More-IT-in-IT/",
+    "url": "https://tedt.org/More-IT-in-IT/",
+    "image": "https://tedt.org/img/2026-05/More%20IT%20in%20IT.webp",
+    "tags": [
+      "ai",
+      "citizen-development",
+      "low-code",
+      "governance",
+      "security",
+      "architecture",
+      "enterprise-it",
+      "software-craft",
+      "observability",
+      "accountability",
+      "song-lyrics",
+      "creative-writing"
+    ],
+    "date_published": "2026-05-09T09:00:00-07:00",
+    "date_modified": "2026-05-09T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116545771671834940"
+    ],
+    "lastTootTimestamp": 1778347346164
   }
 }
