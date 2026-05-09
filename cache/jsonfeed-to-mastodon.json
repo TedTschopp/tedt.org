@@ -4189,5 +4189,38 @@
       "https://tschopp.net/users/Ted/statuses/116545771671834940"
     ],
     "lastTootTimestamp": 1778347346164
+  },
+  "https://tedt.org/To-Be-or-Not-to-Be-Anthropics-Natural-Language-Autoencoders/": {
+    "id": "/To-Be-or-Not-to-Be-Anthropics-Natural-Language-Autoencoders/",
+    "title": "To Be or Not to Be: Anthropic's Natural Language Autoencoders",
+    "summary": "Anthropic's Natural Language Autoencoders try to translate some hidden activity inside Claude into ordinary language, giving researchers a cautious way to inspect what a model may be noticing, planning, or considering before it speaks.",
+    "content_text": "Anthropic's Natural Language Autoencoders try to translate some hidden activity inside Claude into ordinary language, giving researchers a cautious way to inspect what a model may be noticing, planning, or considering before it speaks. https://tedt.org/To-Be-or-Not-to-Be-Anthropics-Natural-Language-Autoencoders/",
+    "url": "https://tedt.org/To-Be-or-Not-to-Be-Anthropics-Natural-Language-Autoencoders/",
+    "image": "https://tedt.org/img/2026-05/Anthropic-Eval.webp",
+    "tags": [
+      "ai interpretability",
+      "anthropic",
+      "claude",
+      "natural language autoencoders",
+      "nlas",
+      "mechanistic interpretability",
+      "ai safety",
+      "model activations",
+      "activation vectors",
+      "test awareness",
+      "hidden motivations",
+      "transformer circuits"
+    ],
+    "date_published": "2026-05-09T10:00:00-07:00",
+    "date_modified": "2026-05-09T10:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116546012251896563"
+    ],
+    "lastTootTimestamp": 1778351017107
   }
 }
