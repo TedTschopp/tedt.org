@@ -76,15 +76,13 @@ mastodon-post-id:
 
 ---
 
-Picture a school play.
+My son attends the Duarte Performing Arts School. He had to do a stage performance a couple weeks back.  Everyone in the family attended.
 
-The parents are sitting in folding chairs. The lights come up. A child walks to the front of the stage, says their line, and everyone in the audience hears the final result.
+The parents are sitting in folding chairs. The lights come up. The kids walk onto the stage, and everyone starts their performance.  While the audience finally gets to hear the final results of all the practice, they do not see everything that happened.
 
-But the audience does not see everything that happened before that line.
+They do not see the teacher crouched behind the curtain, silently pointing to the next spot on the floor. They do not see the stage manager waving from the side. They do not hear the whispered reminder from another student. They do not see the child glance at each other looking for a prompt to help them suddenly remember what comes next.
 
-They do not see the teacher crouched behind the curtain, silently pointing to the next spot on the floor. They do not see the stage manager waving from the side. They do not hear the whispered reminder from another student. They do not see the child glance at the painted cardboard tree and suddenly remember what comes next.
-
-From the audience's point of view, there is only the spoken line.
+From the audience's point of view, there is only the performance.
 
 But backstage, there was a whole chain of little signals that helped produce it.
 
@@ -198,9 +196,9 @@ In normal-person terms: **Anthropic is building a translator for Claude's intern
 
 ## All the World's a Stage?
 
-Now return to the school play.
+Now return to the school performance.
 
-Imagine something strange happens on stage. A child skips a line, walks to the wrong side, or says something that was not in the script.
+Imagine something strange happens on stage. A child misses a set, forgets their lines, walks to the wrong side, or says something that was not in the script.
 
 If all you have is the final performance, you can guess what happened. Maybe the child forgot. Maybe they panicked. Maybe someone gave them the wrong cue. Maybe they noticed something in the room that changed what they did.
 
