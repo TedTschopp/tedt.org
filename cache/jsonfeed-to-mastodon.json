@@ -4222,5 +4222,33 @@
       "https://tschopp.net/users/Ted/statuses/116546012251896563"
     ],
     "lastTootTimestamp": 1778351017107
+  },
+  "https://tedt.org/Euclids-Algorithm-in-Ada/": {
+    "id": "/Euclids-Algorithm-in-Ada/",
+    "title": "Euclid's Algorithm in Ada",
+    "summary": "A cleaned-up Ada version of an old CS 140 greatest common divisor assignment, with a short reflection on what Euclid's algorithm teaches about structure, scope, and clarity.",
+    "content_text": "A cleaned-up Ada version of an old CS 140 greatest common divisor assignment, with a short reflection on what Euclid's algorithm teaches about structure, scope, and clarity. https://tedt.org/Euclids-Algorithm-in-Ada/",
+    "url": "https://tedt.org/Euclids-Algorithm-in-Ada/",
+    "image": "https://tedt.org/img/2026-05/Euclids-algorithm.webp",
+    "tags": [
+      "Ada,",
+      "programming,",
+      "computer",
+      "science,",
+      "algorithms,",
+      "Euclid,",
+      "GCD"
+    ],
+    "date_published": "2026-05-11T01:00:00-07:00",
+    "date_modified": "2026-05-11T01:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116560715526121926"
+    ],
+    "lastTootTimestamp": 1778575371288
   }
 }
