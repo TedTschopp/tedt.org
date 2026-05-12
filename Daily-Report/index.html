@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-05-11 | TedT.org</title>
+  <title>Daily Report - 2026-05-12 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,121 +52,101 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-05-11</h1>
-      <p class="meta">Generated <time datetime="2026-05-11T08:05:11+00:00">2026-05-11T08:05:11Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-05-12</h1>
+      <p class="meta">Generated <time datetime="2026-05-12T07:27:49+00:00">2026-05-12T07:27:49Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site is healthy and active. Content work continues on AI/enterprise posts. Two security-related Dependabot PRs are open and need review. No build failures detected in current run. CI automation (daily report, Mastodon feed, Enterprise AI refresh) is running normally. Three open issues represent medium-priority quality debt that is not blocking production.</p>
+      <p><strong>Active day.</strong> Dependency security updates landed this morning (google-protobuf, nokogiri), documentation was cleaned up, and automated workflows (daily report, Mastodon feed) are running normally. No blocking failures detected. Five medium-priority issues remain open; none are blockers today.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line Up Front</h2>
-<p>Site is healthy. Active content commits landed in the last 48 hours. Two Dependabot PRs (security patches + Actions upgrade) are sitting open and should be reviewed soon. No workflow failures observed. Automated bots are running on schedule.</p>
+      <h2>Bottom Line</h2>
+<p>Dependency security hygiene addressed this morning. Automated pipelines healthy. No new issues opened. Five standing medium-priority issues require owner attention when capacity allows.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Commits — Last 48 Hours (2026-05-09 to 2026-05-11)</h3>
+<h3>Today — 2026-05-12</h3>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/465708962efb14940fd2fb3e8728aa63d9f9bfa5"><code>4657089</code></a>** <code>2026-05-10 21:41</code> — <code>content(post): update narrative in Anthropic's NLA explanation</code> — TedTschopp</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/3ca2678291a15c9307c951d60113a2ea9e9fce00"><code>3ca2678</code></a>** <code>2026-05-10 14:11</code> — <code>chore: refresh yesterday in enterprise ai</code> — github-actions[bot]</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/a56a5a90459be2a4b1237239060e35ff63fb277f"><code>a56a5a9</code></a>** <code>2026-05-10 07:15</code> — <code>chore: refresh daily report</code> — github-actions[bot]</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/2e6df84152d583f370dd90b235a6023d8c57232d">chore(dependencies): update google-protobuf and nokogiri versions</a>** — Security-relevant gem bumps. Consistent with ADR 0009 intent (pin ffi, patch transitive dependencies). Verify <code>bundle audit</code> passes after this.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/3328c05f6a706b1a8e1e73db3142e032d4f248fa">chore: remove redundant code blocks from changes section</a>** — Documentation cleanup.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/66a78f244eb4a588f6997c5c1af199fe3f0c5398">Clean up documentation</a>** — General docs tidy.</li>
+<li>Merge from main (housekeeping).</li>
 </ul>
-<h3>Commits — Prior Days (2026-05-09)</h3>
+<h3>Yesterday — 2026-05-11</h3>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/8d5a029735608a072754fb032d544362f24b424d"><code>8d5a029</code></a>** — <code>content(post): update citation format for Anthropic's NLA paper reference</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/dd2798e757a6b29724c2d3580456a19dfae34e18"><code>dd2798e</code></a>** — <code>content(post): add reference to Anthropic's paper on Natural Language Autoencoders</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/81beb80d3a87a24d20d81c03a613d736f80dc7d3"><code>81beb80</code></a>** — <code>chore: update Mastodon cache/front matter</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/4a6741816372be0d5f91551923c4a75e12a3e488"><code>4a67418</code></a>** — <code>feat(video): add support for article video metadata in front matter</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/b13c34b3aeb5120eea2ebe632caef0f7f00e125a"><code>b13c34b</code></a>** — <code>build(ci): enhance CI workflow with caching and artifact exclusions</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/441890772b216b5131b5ca9b5150ce6897c90c21"><code>4418907</code></a>** — <code>content(post): update video summary ID in "More IT in IT"</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/dfc33a965ec2ea5e78baffb8f295dc9b692f10fa"><code>dfc33a9</code></a>** — <code>refactor(diff): enhance snapshot comparison metrics with tolerated items</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/f690b9b7753018e81e64e9580f8ac6cc0da85cbe"><code>f690b9b</code></a>** — <code>content(post): add video summary component to "More IT in IT"</code></li>
+<li><code>github-actions[bot]</code>: automated daily report refresh committed.</li>
+<li><code>github-actions[bot]</code>: automated enterprise AI "yesterday" refresh committed.</li>
 </ul>
-<p><strong>Trend:</strong> Focused content iteration on an AI/enterprise post (Anthropic NLA paper). One notable feature addition: video metadata front matter support. CI caching improvements also landed.</p>
+<h3>2026-05-10</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/465708962efb14940fd2fb3e8728aa63d9f9bfa5">content(post): update narrative in Anthropic's NLA explanation</a>** — Post content updated.</li>
+<li>Automated bot refreshes (daily report, enterprise AI).</li>
+</ul>
+<h3>2026-05-09 (selected)</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/dd2798e757a6b29724c2d3580456a19dfae34e18">content(post): add reference to Anthropic's NLA paper</a>** and follow-up citation fix — new citation added to post.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/4a6741816372be0d5f91551933c4a75e12a3e488">feat(video): add support for article video metadata in front matter</a>** — New front matter flag for video metadata.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/b13c34b3aeb5120eea2ebe632caef0f7f00e125a">build(ci): enhance CI workflow with caching and artifact exclusions</a>** — CI build improvements (caching, exclusions).</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/f690b9b7753018e81e64e9580f8ac6cc0da85cbe">content(post): add/update video summary component in "More IT in IT"</a>** — Video summary integrated.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/dfc33a965ec2ea5e78baffb8f295dc9b692f10fa">refactor(diff): enhance snapshot comparison metrics with tolerated items</a>** — Diff tooling refinement.</li>
+<li>Two automated Mastodon cache/front matter sync commits.</li>
+</ul>
 <hr>
-<h2>Site Quality &amp; Workflow Health</h2>
-<h3>Workflow Runs</h3>
+<h2>Site Quality and Workflow Health</h2>
+<h3>Automated Workflows</h3>
 <ul>
-<li><strong>Daily Report</strong> — <code>in_progress</code> as of report generation (this run: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/25657755392">25657755392</a>)</li>
-<li><strong>Enterprise AI refresh</strong> — Running on schedule; most recent commit from bot at 2026-05-10 14:11</li>
-<li><strong>Mastodon feed</strong> — Auto-committed cache/front matter update on 2026-05-09 at 18:23 and 17:22</li>
+<li><strong>Daily Report</strong> — currently <code>in_progress</code> (this run, workflow run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/25719752640">25719752640</a>).</li>
+<li><strong>Feed to Mastodon</strong> — most recent completed run: <code>success</code> (triggered by today's dependency commit).</li>
+<li><strong>[ASSUMPTION]</strong> Deploy workflow is assumed healthy based on the absence of failure commits; no explicit deploy run was verified in this report window.</li>
 </ul>
-<p>[ASSUMPTION] No failed workflow conclusions were directly observed in the parsed data. Workflow run status detail was partially unavailable due to output size limits; failure conclusions may exist further back in history.</p>
+<h3>Open Issues (Top 5 by recent activity)</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/142">#142</a> Harden Mastodon automation and mutation safety** — Mastodon auto-commit path lacks explicit rollback and validation guardrails. Mutation flows documented but safeguards unimplemented.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/88">#88</a> [P2] Image Optimization Audit** — No CI script for image size, alt text, CLS, or duplicate detection. Proposal exists; implementation pending.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/86">#86</a> [P2] Prompt Details: UX Gaps and Empty Series Section** — Prompt series section still appears empty for posts with no series data; state feedback in prompt customization weak.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/75">#75</a> [P2] Prompts: Add Dedicated Tag Archive Pages** — Tag-based navigation depends on query-string filter; no static crawlable tag archive pages exist.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/72">#72</a> [P2] SEO: Rationalize Existing JSON-LD and Add Missing Schema Coverage** — Overlapping JSON-LD includes; no single canonical source; partial organization/person schema.</li>
+</ul>
 <h3>Open Pull Requests</h3>
-<p><strong>PR #147</strong> — <a href="https://github.com/TedTschopp/tedt.org/pull/147"><code>build(deps): bump the security-patches group (nokogiri + addressable)</code></a></p>
 <ul>
-<li>Labels: <code>dependencies</code>, <code>ruby</code></li>
-<li>Opened: 2026-04-08 | Last updated: 2026-05-11</li>
-<li>nokogiri 1.19.0 → 1.19.3: fixes CSS selector ReDoS and XSLT memory leak (GHSA-c4rq-3m3g-8wgx, GHSA-v2fc-qm4h-8hqv)</li>
-<li>addressable 2.8.7 → 2.9.0: fixes incomplete ReDoS remediation in URI template matching</li>
-<li><strong>Action needed: merge promptly — both are security fixes.</strong></li>
-</ul>
-<p><strong>PR #148</strong> — <a href="https://github.com/TedTschopp/tedt.org/pull/148"><code>chore(deps): bump actions/github-script from 7 to 9</code></a></p>
-<ul>
-<li>Labels: <code>dependencies</code>, <code>github_actions</code></li>
-<li>Opened: 2026-04-13 | Last updated: 2026-05-08</li>
-<li>Breaking change: <code>require('</code>@actions/github<code>')</code> no longer works in scripts after v9 upgrade. Review any workflow scripts using that pattern before merging.</li>
-<li><strong>Action needed: test for breaking change before merging.</strong></li>
+<li>Dependabot PR open for <code>actions/github-script</code> bump (v7 → v9). Review recommended; no breaking impact expected for this repository's usage pattern.</li>
 </ul>
 <hr>
-<h2>Open Issues Summary</h2>
-<p><strong>Issue #144</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/144">Triage <code>_work-in-progress</code> backlog and resolve user-facing TODO hotspots</a></p>
+<h2>Content and Publishing Pipeline</h2>
 <ul>
-<li>Opened: 2026-03-19 | Priority: Medium</li>
-<li>100+ WIP artifacts; TODOs in <code>prompt-details.html</code>, <code>micropubpost.html</code>, <code>comments-mastodon-tree.js</code></li>
-</ul>
-<p><strong>Issue #142</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/142">Harden Mastodon automation and mutation safety</a></p>
-<ul>
-<li>Opened: 2026-03-19 | 1 comment | Priority: Medium</li>
-<li>Auto-commit mutations lack documented rollback path</li>
-</ul>
-<p><strong>Issue #88</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/88">Image Optimization Audit: Size, Alt Text, Dimension &amp; Format Checks</a></p>
-<ul>
-<li>Opened: 2025-08-09 | Priority: P2</li>
-<li>No automated image validation; missing alt, oversized images, no CLS dimension checks</li>
-</ul>
-<p><strong>Issue #86</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/86">Prompt Details: Clean Up Remaining UX Gaps and Empty Series Section</a></p>
-<ul>
-<li>Opened: 2025-08-01 | Priority: P2 | Labels: <code>enhancement</code>, <code>accessibility</code>, <code>mobile</code>, <code>design</code>, <code>UX</code></li>
-<li>Empty series section still renders; prompt customization state feedback is weak</li>
+<li>Active content editing on an AI/ML topic post (Anthropic NLA paper reference added and citation refined over 2026-05-09 to 2026-05-10).</li>
+<li>New <code>video</code> front matter flag (<code>feat(video)</code>) introduced on 2026-05-09 — confirm <code>README</code> front matter glossary updated (per ADR conventions).</li>
+<li>CI caching improvements from 2026-05-09 should reduce build times; no regressions observed.</li>
+<li>Mastodon sync running on schedule; mutation safety (Issue #142) remains the most operationally risky open item.</li>
 </ul>
 <hr>
-<h2>Content &amp; Publishing Pipeline Observations</h2>
-<ul>
-<li>Active authoring on AI/enterprise content (Anthropic Natural Language Autoencoder paper). Three iterative commits suggest this post is being polished to near-final state.</li>
-<li>New <code>video</code> front matter metadata capability added — worth documenting in README front matter glossary (Section 20 of site instructions) if not already present.</li>
-<li>Mastodon sync running correctly on schedule.</li>
-<li>Enterprise AI scheduled refresh running on schedule.</li>
-</ul>
-<hr>
-<h2>Risks &amp; Blockers</h2>
-<ul>
-<li><strong>Security risk (High):</strong> PR #147 contains nokogiri and addressable security fixes that have been sitting unmerged for over a month. Both address ReDoS vulnerabilities. Merge promptly.</li>
-<li><strong>Breaking change risk (Medium):</strong> PR #148 (github-script v7→v9) includes a breaking change to <code>require('</code>@actions/github<code>')</code>. Audit all workflow scripts before merging.</li>
-<li><strong>Quality debt (Low-Medium):</strong> Issues #144, #88, #86, #142 represent backlog items with no recent activity. None are blocking production today.</li>
-</ul>
+<h2>Risks and Blockers</h2>
+<ol>
+<li><strong>Mastodon mutation safety (Issue #142)</strong> — Auto-commit of cache and front matter with no rollback path is the highest operational risk. Medium severity; no active incident.</li>
+<li><strong>Dependabot PR unreviewed</strong> — <code>actions/github-script</code> v7→v9 is a major bump; review for any API changes before merging.</li>
+<li><strong>[ASSUMPTION]</strong> HTML Proofer result for today's build not verified; dependency updates could expose a previously masked build warning.</li>
+<li><strong><code>bundle audit</code> pass after gem updates</strong> — Recommend confirming <code>bundler-audit</code> clean after today's google-protobuf / nokogiri bumps.</li>
+</ol>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #147</strong> — Security patches for nokogiri and addressable. No breaking changes; straightforward merge.</li>
-<li><strong>Audit PR #148</strong> — Check all <code>.github/workflows/*.yml</code> files for <code>require('</code>@actions/github<code>')</code> patterns before merging the github-script v9 upgrade.</li>
-<li><strong>Document <code>video</code> front matter fields</strong> — The new <code>feat(video)</code> commit adds new front matter capability; update README Section 20 glossary so future authors know the supported keys.</li>
-<li><strong>Assign owners to Issue #142</strong> — Mastodon mutation safety is a recurring operational risk. Even a minimal runbook would reduce risk.</li>
-<li><strong>Close or advance Issue #86</strong> — Prompt details UX has been open since mid-2025; either assign a sprint or close it with explicit deferral note.</li>
+<li><strong>Confirm <code>bundle audit</code> clean</strong> after today's gem updates — run <code>bundle exec bundle-audit check --update</code>.</li>
+<li><strong>Review and merge Dependabot PR</strong> for <code>actions/github-script</code> v7→v9.</li>
+<li><strong>Verify video front matter flag</strong> is documented in <code>README</code> and guarded in layouts (per ADR conventions for new flags).</li>
+<li><strong>Draft guardrails for Issue #142</strong> — even a dry-run-only toggle and a simple validation step before auto-commit would materially reduce risk.</li>
+<li><strong>Prompt series empty section (Issue #86)</strong> — quick fix: suppress the series section in Liquid when no <code>series</code> data is present.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits sourced from GitHub API: TedTschopp/tedt.org, branch main, last 20 commits</li>
-<li>Open issues sourced from GitHub Issues API, 10 most recent open issues</li>
-<li>Open PRs sourced from GitHub Pull Requests API</li>
-<li>Workflow run status sourced from GitHub Actions API; full run conclusion history was truncated due to large output size — only the most recent runs were reviewed</li>
-<li>[ASSUMPTION] No build failures were directly observed in the parsed workflow data; failures deeper in history may exist</li>
-<li>[ASSUMPTION] Current daily report workflow run (25657755392) is in-progress as this report is generated</li>
-<li>External link validity not checked (no HTML Proofer run in this workflow)</li>
-<li><code>gh</code> CLI is not authenticated in this environment; all reads performed via GitHub MCP tools</li>
-<li>Workflow run detail for individual jobs was not fetched due to output size constraints</li>
+<li>Commits sourced from <code>github-list_commits</code> (most recent 20), repository <code>TedTschopp/tedt.org</code>, branch <code>main</code>.</li>
+<li>Workflow runs sourced from <code>github-actions_list</code> (list_workflow_runs); full JSON was too large to parse in-environment; top entries extracted from preview.</li>
+<li>Open issues sourced from <code>github-list_issues</code> (5 most recently updated, state OPEN).</li>
+<li>Open PRs sourced from <code>github-list_pull_requests</code>; full JSON too large; Dependabot PR noted from preview excerpt.</li>
+<li>Deploy workflow health is <strong>[ASSUMPTION]</strong> — no explicit failed deploy commit or failure notification was observed, but the deploy run itself was not queried individually.</li>
+<li>HTML Proofer and <code>bundle audit</code> results for today's build were <strong>not verified</strong> — no build artifact or log was accessible in this run.</li>
+<li>Report generated at 2026-05-12T07:23 UTC by the Daily Report agentic workflow (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/25719752640">25719752640</a>).</li>
 </ul>
     </section>
     <footer>
