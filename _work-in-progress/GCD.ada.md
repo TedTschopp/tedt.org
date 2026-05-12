@@ -1,5 +1,6 @@
+```ada
 ------------------------------------------------------------------------------------------------------------------------------
--- CS 245
+-- CS 140 - Introduction to Computer Science
 -- Assignment 1
 -- Student Name: Ted Tschopp
 -- Professor: Doctor Bell
@@ -57,3 +58,4 @@ begin
    Put_Line("GCD is: " & Integer'Image(GCD(A, B)));                        -- Display result with formatting
 
 end Main;
+```
