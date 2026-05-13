@@ -43,7 +43,7 @@ image_height: 941
 
 mastodon-post-id: null
 ---
-_**Bottom Line Up Front:** This is a cleaned-up version of an old CS 140 assignment: compute the greatest common divisor of two positive integers using Euclid's algorithm. It is small code, but it still teaches the fundamentals that matter: name the work clearly, isolate the algorithm, validate input, control scope, and make the program's behavior visible._
+_**Bottom Line Up Front:** This is a cleaned-up version of an old CS 140 assignment: compute the greatest common divisor of two positive integers using Euclid's algorithm._
 
 Some programs are interesting because they are large. This one is interesting because it is small, and because I got a 70% on it.  Can you spot the problems? Can you see how to make it better?
 

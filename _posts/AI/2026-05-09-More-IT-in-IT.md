@@ -84,8 +84,6 @@ video:
 mastodon-post-id:
 ---
 
-This one wants to be big.
-
 *More IT in IT* is written as an arena rock ballad with a slow-burning emotional build. The verses begin with clean electric guitar, light piano, and restrained drums, giving the lyrics room to tell the story of technology moving faster than governance. As the pre-chorus rises, the rhythm section tightens and backing vocals add urgency, creating the feeling of a team rallying before the chorus lands.
 
 The chorus should be big, anthemic, and singable: wide power chords, crashing cymbals, and a melody that feels both defiant and hopeful. Think executive town hall meets late-night server room, with the emotional sweep of classic rock and the polish of contemporary production. The bridge pulls back into a reflective half-time feel before exploding into a soaring guitar solo.
