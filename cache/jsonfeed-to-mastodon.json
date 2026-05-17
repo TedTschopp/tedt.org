@@ -4250,5 +4250,36 @@
       "https://tschopp.net/users/Ted/statuses/116560715526121926"
     ],
     "lastTootTimestamp": 1778575371288
+  },
+  "https://tedt.org/Dont-Build-Her-Another-Chatbot/": {
+    "id": "/Dont-Build-Her-Another-Chatbot/",
+    "title": "Don’t Build Her Another Chatbot",
+    "summary": "The durable opportunity for agentic AI is not another chatbot. It is unfinished work: bounded workflows with business objects, rules, approvals, exceptions, and measurable outcomes.",
+    "content_text": "The durable opportunity for agentic AI is not another chatbot. It is unfinished work: bounded workflows with business objects, rules, approvals, exceptions, and measurable outcomes. https://tedt.org/Dont-Build-Her-Another-Chatbot/",
+    "url": "https://tedt.org/Dont-Build-Her-Another-Chatbot/",
+    "image": "https://tedt.org/img/2026-05/Linda.webp",
+    "tags": [
+      "ai agents",
+      "agentic workflows",
+      "chatbots",
+      "enterprise ai",
+      "workflow automation",
+      "business process",
+      "finance",
+      "governance",
+      "operating model",
+      "human in the loop"
+    ],
+    "date_published": "2026-05-16T09:00:00-07:00",
+    "date_modified": "2026-05-16T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116587828652998957"
+    ],
+    "lastTootTimestamp": 1778989084754
   }
 }
