@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-05-17 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-05-18 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,70 +52,76 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-05-17</h1>
-      <p class="meta">Generated <time datetime="2026-05-17T14:13:40+00:00">2026-05-17T14:13:40Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-05-18</h1>
+      <p class="meta">Generated <time datetime="2026-05-18T16:10:29+00:00">2026-05-18T16:10:29Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>For the third consecutive edition, both configured feed sources returned zero items within the required 24–36 hour editorial window. The feeds have been stalled at May 11, 2026 — now six days behind today's date. Enterprise teams should consult primary sources directly until the aggregation pipeline is restored.</p>
-<p><strong>Action bullets for leaders:</strong></p>
+      <p>For the fourth consecutive edition, live feed data could not be retrieved — this time due to a network firewall blocking outbound HTTP requests inside the GitHub Agentic Workflow runner. The configured feed sources at <code>rss.tedt.org</code> were unreachable. Enterprise teams should consult primary sources directly until the pipeline and runner network access are restored.</p>
+<p><strong>Action bullets:</strong></p>
 <ul>
-<li>Treat this as a confirmed pipeline failure: feeds have not refreshed since May 11 and have missed three newsletter cycles.</li>
-<li>Monitor primary sources directly: <a href="https://www.theverge.com/ai-artificial-intelligence">The Verge AI</a>, <a href="https://the-decoder.com/">The Decoder</a>, <a href="https://www.technologyreview.com/topic/artificial-intelligence/">MIT Technology Review AI</a>, and Reuters Technology</li>
-<li>Legal and compliance teams should check for AI liability case developments — the ChatGPT FSU shooting lawsuit may have had filings since May 11.</li>
-<li>Security operations teams should check for updates on Google's AI-assisted zero-day detection disclosure from last week.</li>
-<li>Procurement and infrastructure teams tracking Cerebras and competing AI hardware vendors should watch for post-IPO pricing and availability announcements.</li>
+<li>Feed retrieval is blocked at the runner network layer, not just a feed lag — this is a new failure mode requiring infrastructure review.</li>
+<li>Consult primary sources directly: <a href="https://www.theverge.com/ai-artificial-intelligence">The Verge AI</a>, <a href="https://the-decoder.com/">The Decoder</a>, <a href="https://www.technologyreview.com/topic/artificial-intelligence/">MIT Technology Review AI</a>, Reuters Technology, and Bloomberg Technology.</li>
+<li>Security teams: follow up on any AI-assisted threat detection disclosures from Google and Microsoft from the past week.</li>
+<li>Legal and compliance teams: check for EU AI Act enforcement updates and any court developments in pending AI liability cases.</li>
+<li>Infrastructure teams: verify that the newsletter aggregation job has network egress permissions in the runner configuration.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Status: Six-Day Lag — Third Consecutive Empty Edition</h2>
-<p>Both configured feed sources — <code>rss.tedt.org/ai_rss_feed.json</code> and <code>rss.tedt.org/aggregated_wes_ai_news.json</code> — were fetched successfully today, Sunday, May 17, 2026. Neither contains items published after <strong>May 11, 2026, at 4:29 p.m. UTC</strong> (9:29 a.m. PDT).</p>
-<p>The editorial window requires items published on or after <strong>May 15, 2026 at 7:10 p.m. PDT</strong>. The feeds are now <strong>six days behind</strong> the publication date and have missed three consecutive newsletter cycles (May 15, May 16, and today, May 17).</p>
-<p>This is no longer a transient delay. A six-day stall that persists through a weekend is consistent with a broken aggregation job, an upstream API key expiration, or a configuration change at the feed origin. Until the pipeline is repaired, this newsletter cannot provide curated, verified enterprise AI news.</p>
-<h3>What to Read Instead Today</h3>
-<p>The following primary sources publish enterprise-relevant AI coverage that the feed would normally surface. None of these links are verified active as of this edition, but all have been reliable historically:</p>
+      <h2>Feed Unavailable — Network Access Blocked</h2>
+<p>Today's edition could not retrieve live content. Both configured feed sources were unreachable due to a network firewall blocking outbound HTTP requests inside the GitHub Agentic Workflow runner environment.</p>
 <ul>
-<li>**<a href="https://www.theverge.com/ai-artificial-intelligence">The Verge — AI</a>** — Consumer and enterprise AI product coverage with strong sourcing.</li>
-<li>**<a href="https://the-decoder.com/">The Decoder</a>** — Deep-dive AI industry coverage, particularly strong on model releases and enterprise deployments.</li>
-<li>**<a href="https://www.technologyreview.com/topic/artificial-intelligence/">MIT Technology Review — AI</a>** — Research-adjacent policy and capability analysis.</li>
-<li>**Reuters Technology — Breaking news on AI deals, regulation, and litigation.</li>
-<li>**Bloomberg Technology — Financial and strategic moves by major AI vendors.</li>
-<li>**<a href="https://arstechnica.com/ai/">Ars Technica — AI</a>** — Technical accuracy with enterprise-relevant depth.</li>
+<li><strong>Feed 1:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — connection refused (network policy)</li>
+<li><strong>Feed 2:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — connection refused (network policy)</li>
 </ul>
-<h3>Context From the Last Confirmed Coverage (May 11, 2026)</h3>
-<p>These items appeared in earlier editions. No new developments have been confirmed from the feed since then, but they remain open threads worth monitoring:</p>
+<p>This is a distinct failure from the six-day feed lag documented in the May 15–17 editions. The feeds may or may not have refreshed; the runner simply could not reach them.</p>
+<hr>
+<h3>What to Monitor Today</h3>
+<p>While this edition cannot deliver curated news, the following threads from prior confirmed coverage (through May 11, 2026) remain open and worth checking on your own:</p>
 <ul>
-<li><strong>OpenAI's DeployCo subsidiary</strong> — launched to help enterprises integrate AI into workflows. Watch for partnership announcements, contract structures, and pricing.</li>
-<li><strong>Google AI-assisted zero-day response</strong> — Google disclosed that internal AI tooling detected and stopped an exploit before weaponization. Security operations teams should audit their own detection coverage.</li>
-<li><strong>ChatGPT FSU shooting lawsuit</strong> — A lawsuit alleges ChatGPT provided tactical guidance to a mass shooter. Compliance teams should review acceptable-use policies and liability frameworks for any AI-enabled customer-facing tools.</li>
-<li><strong>Cerebras IPO</strong> — The AI hardware company raised its IPO price range. Infrastructure and procurement teams should monitor post-IPO enterprise pricing signals.</li>
-<li><strong>OpenAI $10 billion private-equity joint venture</strong> — Another OpenAI structural change. Enterprise buyers should assess whether this affects contract terms, pricing leverage, or vendor stability.</li>
-<li><strong>Data center energy intensity</strong> — One researcher estimated new data center builds are equivalent to 23 nuclear bombs per day in energy output terms. Sustainability teams should incorporate AI infrastructure energy into carbon accounting.</li>
-</ul>
-<h3>Looking Ahead</h3>
-<ul>
-<li>If the feed lag persists into Monday, May 18, the aggregation system should be escalated for repair — not monitored further.</li>
-<li>The OpenAI v. Musk trial was still active as of May 11. Any verdict or settlement has governance implications for enterprises using OpenAI products under current terms.</li>
-<li>EU AI Act enforcement deadlines continue to approach. European operations teams should confirm compliance readiness regardless of feed coverage gaps.</li>
-<li>Monday typically brings a significant volume of enterprise AI announcements from vendors staging news for the week. Expect the backlog to be substantial once the pipeline recovers.</li>
+<li><strong>OpenAI restructuring</strong> — The $10 billion private-equity joint venture and the ongoing OpenAI v. Musk trial both have direct implications for enterprise contract terms and vendor governance.</li>
+<li><strong>AI liability litigation</strong> — The ChatGPT FSU shooting lawsuit and similar cases are shaping how courts interpret acceptable-use policies. Compliance teams should track any new filings or rulings.</li>
+<li><strong>EU AI Act enforcement</strong> — Prohibited-practices deadlines passed in February 2026. High-risk system compliance timelines continue to run. European operations teams should confirm readiness.</li>
+<li><strong>AI hardware competition</strong> — Cerebras post-IPO pricing signals are worth monitoring for infrastructure procurement planning.</li>
+<li><strong>Energy and sustainability</strong> — AI data center energy intensity is increasingly a board-level ESG concern. Sustainability teams should ensure AI infrastructure is represented in carbon accounting.</li>
 </ul>
 <hr>
-<p>Six days is a long time in the AI industry — long enough for product launches, regulatory filings, and market moves that this newsletter cannot yet see. That's not a comfortable place to be, and it's worth saying plainly. The sources are out there, active, and worth your attention directly. This newsletter will return to its normal format as soon as the feeds do. Until then, stay curious, stay primary, and check back tomorrow.</p>
+<h3>Primary Sources for Today's Enterprise AI News</h3>
+<p>These sources have been reliable for enterprise-relevant AI coverage:</p>
+<ul>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence">The Verge — AI section</a></li>
+<li><a href="https://the-decoder.com/">The Decoder</a></li>
+<li><a href="https://www.technologyreview.com/topic/artificial-intelligence/">MIT Technology Review — AI</a></li>
+<li><a href="https://arstechnica.com/ai/">Ars Technica — AI</a></li>
+<li>Reuters Technology</li>
+<li>Bloomberg Technology</li>
+<li><a href="https://venturebeat.com/category/ai/">VentureBeat — AI</a></li>
+</ul>
+<hr>
+<h3>Looking Ahead</h3>
+<ul>
+<li>The runner network configuration should be reviewed to restore outbound feed access before the next scheduled run.</li>
+<li>If the feed aggregation pipeline at <code>rss.tedt.org</code> has also stalled, both issues — runner access and feed freshness — need to be resolved in sequence.</li>
+<li>Once feeds are restored, back-filling this period's notable items (May 12–18) would give enterprise readers useful continuity.</li>
+</ul>
+<hr>
+<h3>Sign-Off</h3>
+<p>Even on a quiet Monday — quiet here in the newsletter, anyway, if not out there in the world — the pace of enterprise AI doesn't stop. Somewhere right now, a product team is shipping a feature they weren't sure was possible six months ago, a compliance officer is writing a policy for a technology that didn't exist when the policy framework was designed, and an IT team is figuring out what "responsible AI deployment" actually means in practice. That's the real story of enterprise AI: not just the announcements, but the daily work of integration, governance, and judgment.</p>
+<p>We'll be back tomorrow with live coverage — network willing. Stay grounded, stay curious, and take care of yourselves and your teams.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>items_fetched_count:</strong> 80 total (50 from <code>ai_rss_feed.json</code>, 30 from <code>aggregated_wes_ai_news.json</code>)</li>
+<li><strong>items_fetched_count:</strong> 0 (network blocked — outbound HTTP requests refused by runner firewall policy)</li>
 <li><strong>items_within_24_36_hours_count:</strong> 0</li>
 <li><strong>items_deduplicated_count:</strong> 0</li>
-<li><strong>items_published_count:</strong> 0 qualifying items; newsletter published as a status/resource edition</li>
-<li><strong>editorial_window:</strong> May 15, 2026, 7:10 p.m. PDT → May 17, 2026, 7:10 a.m. PDT</li>
-<li><strong>most_recent_feed_item:</strong> May 11, 2026, at 4:29 p.m. UTC (9:29 a.m. PDT) — six days behind publication date</li>
-<li><strong>consecutive_empty_editions:</strong> 3 (May 15, May 16, May 17)</li>
-<li><strong>excluded_items_summary:</strong> All 80 items excluded as older than 36 hours; most recent item predates the window by approximately 5.75 days</li>
-<li><strong>feed_health_assessment:</strong> Both feeds appear to have a systemic aggregation failure; pattern inconsistent with normal weekend publishing lulls</li>
-<li><strong>assumption:</strong> No items were suppressed for duplication; all 80 items were outside the editorial window entirely</li>
+<li><strong>items_published_count:</strong> 0</li>
+<li><strong>Feed URLs attempted:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> and <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
+<li><strong>Failure mode:</strong> Runner network firewall blocked all outbound HTTP/HTTPS requests — distinct from the six-day feed lag documented in prior editions (May 15–17, 2026)</li>
+<li><strong>Prior newsletter checked:</strong> <code>Daily-Report/AI/index.html</code> read successfully; last edition was 2026-05-17, also an empty/feed-lag edition</li>
+<li><strong>No items were duplicated or suppressed</strong> — no qualifying content was available to evaluate</li>
+<li><strong>Recommendation:</strong> Review GitHub Actions runner network egress permissions; also verify <code>rss.tedt.org</code> feed freshness independently once runner access is restored</li>
 </ul>
     </section>
     <footer>
