@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-05-19 | TedT.org</title>
+  <title>Daily Report - 2026-05-20 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,104 +52,117 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-05-19</h1>
-      <p class="meta">Generated <time datetime="2026-05-19T08:07:27+00:00">2026-05-19T08:07:27Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-05-20</h1>
+      <p class="meta">Generated <time datetime="2026-05-20T08:05:22+00:00">2026-05-20T08:05:22Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site automation is healthy and running on schedule. Two new content posts were added by Ted on 2026-05-17 ("Buy vs Build" and a "This Week in AI" entry). A Dependabot security PR is open and awaiting merge (<code>addressable</code> ReDoS fix). Three long-standing open issues remain unaddressed. No build failures detected in recent workflow runs.</p>
+      <p>Site automation is running normally. Daily cadence commits (report refresh, Enterprise AI refresh, Mastodon sync) are all landing on schedule. The most recent human commit added a "Buy vs Build" post and a new "This Week in AI" entry on 2026-05-17. A Dependabot security PR for <code>addressable</code> is awaiting merge. Four open issues are aging without movement — the Mastodon mutation safety issue and the WIP backlog triage are the most operationally relevant.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line</h2>
-<p>Site is operational. Automated pipelines (daily report, Enterprise AI refresh, Mastodon sync) are firing correctly. One security PR needs attention. Content velocity is low but consistent.</p>
+<p>Automated pipelines are healthy and running on schedule. No build failures detected in the recent run window. One pending security-patch PR (<code>addressable</code> bump) should be merged promptly. Four open issues are accumulating without traction; the Mastodon automation hardening issue (#142) carries the most operational risk.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
 <h3>Human Commits (last 7 days)</h3>
 <ul>
-<li><strong>2026-05-17</strong> — <code>Buy vs Build and new This week in AI</code></li>
+<li><strong>2026-05-17</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/5b1af8e3301da059413d41d26a108e30de7a3408"><code>Buy vs Build and new This week in AI</code></a> by TedTschopp</li>
+<li>New content post: Buy vs Build framing, plus an "Enterprise AI" weekly entry.</li>
+<li><strong>2026-05-17</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/3946b224a2d494b6d7f1c594e62758686530568c"><code>chore: update Mastodon cache/front matter</code></a> — automated Mastodon sync ran successfully.</li>
+<li><strong>2026-05-16</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/11c5ccc2fbb1fc0332f9dc30baf0b49971f52801"><code>chore: remove redundant code blocks from changes section</code></a> — minor cleanup in a post.</li>
 </ul>
-<p>Ted pushed two new content pieces. Merged from local branch. <a href="https://github.com/TedTschopp/tedt.org/commit/5b1af8e3301da059413d41d26a108e30de7a3408">Commit</a></p>
-<ul>
-<li><strong>2026-05-16</strong> — <code>chore: remove redundant code blocks from changes section</code></li>
-</ul>
-<p>Minor template/content cleanup. <a href="https://github.com/TedTschopp/tedt.org/commit/11c5ccc2fbb1fc0332f9dc30baf0b49971f52801">Commit</a></p>
-<ul>
-<li><strong>2026-05-13</strong> — <code>content(blog): remove redundant line from Euclid's Algorithm post</code></li>
-</ul>
-<p>Small editorial fix. <a href="https://github.com/TedTschopp/tedt.org/commit/9ab1d6eba4305f124db27f7717d97dfefa84eaaa">Commit</a></p>
 <h3>Automated Commits (last 7 days)</h3>
+<p>Daily cadence automation is running cleanly:</p>
 <ul>
-<li>Daily report refresh running each morning (~07:00–08:35 UTC). ✅</li>
-<li>Enterprise AI "yesterday" refresh running each afternoon (~14:00–16:10 UTC). ✅</li>
-<li>Mastodon cache / front matter sync ran 2026-05-17 at 03:38 UTC. ✅</li>
+<li><code>chore: refresh daily report</code> — firing each morning (2026-05-19, 18, 17, 16...)</li>
+<li><code>chore: refresh yesterday in enterprise ai</code> — firing each afternoon (2026-05-19, 18, 17, 16...)</li>
+<li><code>chore: update Mastodon cache/front matter</code> — Mastodon sync ran on 2026-05-17</li>
 </ul>
+<p>No skipped or failed automated commits observed.</p>
 <hr>
 <h2>Workflow Health</h2>
+<h3>Workflow Runs (most recent)</h3>
 <ul>
-<li><strong>Daily Report workflow</strong> — currently <code>in_progress</code> (this run). <a href="https://github.com/TedTschopp/tedt.org/actions/runs/26084298420">Run #20</a></li>
-<li>All recent automation commits landed without merge conflicts.</li>
-<li>No failed workflow conclusions visible in top-10 run list.</li>
-<li>Total workflow run history: 7,257 runs across all workflows.</li>
+<li><strong>Daily Report</strong> — <code>in_progress</code>, run #21, started 2026-05-20T07:59Z — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/26149473500">run link</a></li>
+<li>This is the current run generating this report.</li>
+<li><strong>Feed to Mastodon</strong> — <code>completed / success</code>, run #1715, 2026-05-20T03:43Z → finished in ~65 seconds.</li>
+<li>Mastodon syndication is healthy.</li>
 </ul>
+<h3>Notable Pattern</h3>
+<p>Automated workflows have been executing consistently at their scheduled times across all observed days. No failures or retries were visible in the top-10 runs.</p>
 <hr>
 <h2>Open Pull Requests</h2>
-<h3>Security</h3>
+<h3>Dependabot Security Patch</h3>
 <ul>
-<li><strong>Dependabot — <code>addressable</code> 2.8.7 → 2.9.0</strong> (open, awaiting merge)</li>
-<li>Fixes a ReDoS vulnerability in <code>Addressable::Template#match</code> (incomplete fix from 2.8.10 now fully resolved in 2.9.0).</li>
-<li>This is a <code>security-patches</code> group bump. Low risk to merge.</li>
-<li><strong>Recommended action: merge promptly.</strong></li>
+<li><strong>PR: <code>addressable</code> 2.8.7 → 2.9.0</strong> — security-patches group, targeting <code>main</code></li>
+<li>Base SHA: <code>204a229636ad32ecbf7fa9aa2b99481b5867c2ec</code></li>
+<li><code>addressable</code> is a transitive dependency. This is a patch-level bump; risk of breakage is low.</li>
+<li><strong>Action needed:</strong> Review and merge promptly. Leaving security PRs open increases exposure window.</li>
+</ul>
+<p>[ASSUMPTION] Additional open PRs likely exist (the PR list was large); only the most recent security PR was inspected in detail.</p>
+<hr>
+<h2>Open Issues</h2>
+<h3>High Priority / Operational Risk</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/142">#142</a> — Harden Mastodon automation and mutation safety**</li>
+<li>Opened 2026-03-19, last updated 2026-04-27. 1 comment.</li>
+<li>The Mastodon workflow auto-commits cache and front matter changes without documented guardrails or rollback path.</li>
+<li>Risk: Silent metadata drift if the workflow misbehaves. No dry-run-by-default enforcement at the workflow level.</li>
+<li>Recommended action: Draft the mutation safety checklist and wire a dry-run gate into CI before the next Mastodon backfill run.</li>
+</ul>
+<h3>Medium Priority / Maintenance Drag</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/144">#144</a> — Triage <code>_work-in-progress</code> backlog and resolve user-facing TODO hotspots**</li>
+<li>Opened 2026-03-19. No movement.</li>
+<li>100+ draft artifacts in <code>_work-in-progress/</code>, plus TODOs in <code>prompt-details.html</code>, <code>micropubpost.html</code>, and <code>comments-mastodon-tree.js</code>.</li>
+<li>Recommended action: Block 30 minutes to categorize WIP artifacts (promote, archive, delete, defer).</li>
+</ul>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/88">#88</a> — Image Optimization Audit**</li>
+<li>Opened 2025-08-09, last updated 2026-04-27.</li>
+<li>Detailed implementation plan already written in the issue. Blocked only by effort.</li>
+</ul>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/86">#86</a> — Prompt Details: Clean Up Remaining UX Gaps**</li>
+<li>Opened 2025-08-01, 3 comments, last updated 2026-04-27.</li>
+<li>Remaining: empty series section display, prompt customization state feedback, mobile polish.</li>
 </ul>
 <hr>
-<h2>Open Issues (selected)</h2>
+<h2>Content &amp; Publishing Pipeline</h2>
 <ul>
-<li><strong>#144</strong> — Triage <code>_work-in-progress</code> backlog and resolve user-facing TODO hotspots _(opened 2026-03-19, no recent activity)_</li>
-<li>100+ draft artifacts in <code>_work-in-progress/</code>; user-facing TODOs in <code>prompt-details.html</code>, <code>micropubpost.html</code>, and Mastodon comments JS.</li>
-</ul>
-<ul>
-<li><strong>#142</strong> — Harden Mastodon automation and mutation safety _(opened 2026-03-19, 1 comment)_</li>
-<li>Auto-commit workflows mutate front matter without strong rollback or dry-run guarantees. Related to the running Mastodon sync commit pattern above.</li>
-</ul>
-<ul>
-<li><strong>Image Optimization Audit</strong> _(open, medium priority)_</li>
-<li>Missing <code>alt</code> text, uncompressed images, no width/height attributes on some images, CLS risk.</li>
+<li>The "Enterprise AI" section has a daily refresh automation running reliably.</li>
+<li>Content cadence: TedTschopp pushed substantive content on 2026-05-17 (Buy vs Build + weekly AI entry).</li>
+<li>No front matter parse failures or raw-layout escapes were observed in the commit log.</li>
+<li>Mastodon syndication appears current as of 2026-05-20T03:44Z.</li>
 </ul>
 <hr>
-<h2>Content &amp; Publishing Pipeline Observations</h2>
+<h2>Risks and Blockers</h2>
 <ul>
-<li>Two posts published this week: AI strategy content ("Buy vs Build") and a recurring "This Week in AI" entry.</li>
-<li>Enterprise AI section is receiving daily automated refreshes — this pipeline is active and consistent.</li>
-<li>Mastodon syndication sync is running on schedule.</li>
-<li>No content errors or feed failures observed from commit messages.</li>
-</ul>
-<hr>
-<h2>Risks &amp; Blockers</h2>
-<ul>
-<li><strong>Medium risk:</strong> <code>addressable</code> ReDoS vulnerability open in a Dependabot PR. Not yet merged. No active exploit path through a static site build, but merging closes the advisory cleanly.</li>
-<li><strong>Low risk:</strong> Mastodon auto-commit workflow (Issue #142) writes front matter without documented rollback. No incidents observed, but the pattern is fragile at scale.</li>
-<li><strong>Maintenance drag:</strong> <code>_work-in-progress/</code> backlog (Issue #144) continues to grow without triage. This increases build surface area and reduces clarity for future contributors.</li>
+<li><strong>Medium risk</strong> — Dependabot PR for <code>addressable</code> is unmerged. Should be merged within 1–2 days.</li>
+<li><strong>Medium risk</strong> — Mastodon mutation flow (issue #142) lacks documented guardrails. Low probability of incident but high impact if cache becomes corrupted.</li>
+<li><strong>Low risk</strong> — WIP backlog (issue #144) creates surface area ambiguity but does not affect live site rendering.</li>
+<li><strong>Low risk</strong> — Image audit (issue #88) is fully scoped but unstarted; no immediate site impact.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge the <code>addressable</code> Dependabot PR</strong> — straightforward security patch, no API changes that affect the build.</li>
-<li><strong>Review Issue #142</strong> — document or implement a dry-run/rollback gate on the Mastodon front matter mutation workflow before the cache diverges from actual toot IDs.</li>
-<li><strong>Schedule a WIP triage pass</strong> — even a 30-minute sweep of <code>_work-in-progress/</code> to tag items as promote/archive/delete would reduce maintenance surface.</li>
-<li><strong>Image audit</strong> — run <code>ruby tests/check_image_alt_text.rb</code> locally and address the highest-visibility missing alt text entries.</li>
+<li><strong>Merge the <code>addressable</code> Dependabot security PR</strong> — low-risk, high-value hygiene step.</li>
+<li><strong>Draft mutation safety checklist for issue #142</strong> — at minimum, document the expected dry-run and rollback path even without code changes.</li>
+<li><strong>Spend 30 minutes on WIP triage (issue #144)</strong> — categorize at least the top 10 artifacts to reduce ambiguity.</li>
+<li><strong>No action needed on workflows</strong> — automation is healthy; no intervention required.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commit history from GitHub API, last 20 commits on <code>main</code> branch</li>
-<li>Workflow run list from GitHub Actions API (top 10 of 7,257 total runs)</li>
-<li>Open issues read from GitHub Issues API (top 10 open)</li>
-<li>Open PRs read from GitHub Pull Requests API</li>
-<li>Workflow run conclusions inferred from available status fields; no individual job logs fetched</li>
-<li>[ASSUMPTION] No build failures: based on absence of failed/cancelled conclusions in top-10 runs; older runs not inspected</li>
-<li>External link health not checked (HTML Proofer output not available in this run)</li>
-<li>Feed integrity test results not available (tests not executed in this workflow)</li>
+<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — last 20 commits on <code>main</code>, retrieved 2026-05-20.</li>
+<li>Issues: <a href="https://github.com/TedTschopp/tedt.org/issues"><code>github-list_issues</code></a> — open issues, first page (10 results), retrieved 2026-05-20.</li>
+<li>Pull requests: <a href="https://github.com/TedTschopp/tedt.org/pulls"><code>github-list_pull_requests</code></a> — open PRs, first page retrieved 2026-05-20. Full PR list was large (125 KB); only most recent PR was fully inspected. [ASSUMPTION] Other open PRs may exist beyond what was reviewed.</li>
+<li>Workflow runs: <a href="https://github.com/TedTschopp/tedt.org/actions"><code>github-actions_list</code></a> — top 10 recent runs retrieved 2026-05-20. Only run names, status, and timestamps were parsed; individual job logs were not retrieved.</li>
+<li>[ASSUMPTION] No site build failures are assumed because no failed <code>deploy</code> or <code>build</code> workflow runs appeared in the top 10 results, but the full run history was not exhaustively checked.</li>
+<li>The current Daily Report workflow run (#26149473500) was <code>in_progress</code> at report generation time; no conclusion was available.</li>
+<li>HTML Proofer results, feed integrity, and alt-text audit outputs were not available — no recent test artifacts were retrieved.</li>
 </ul>
     </section>
     <footer>
