@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-05-19 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-05-20 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,73 +52,131 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-05-19</h1>
-      <p class="meta">Generated <time datetime="2026-05-19T16:09:19+00:00">2026-05-19T16:09:19Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-05-20</h1>
+      <p class="meta">Generated <time datetime="2026-05-20T16:25:20+00:00">2026-05-20T16:25:20Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Outbound network access remains blocked inside the GitHub Agentic Workflow runner, preventing retrieval of the configured feed sources at <code>rss.tedt.org</code>. No qualifying items could be curated for the May 18–19 window. Enterprise teams are encouraged to consult primary sources directly until the pipeline network access is restored.</p>
+      <p>Both feed sources are reachable today — an improvement over the prior edition — but the feeds have not been refreshed since May 11, 2026, leaving a nine-day content gap. No items fall within the standard 24-36 hour curation window. This edition covers the most-recent available content (May 10-11) to surface enterprise-relevant stories that were inaccessible during last week's network outage. Key themes: OpenAI's dramatic enterprise expansion through DeployCo and a $10 billion private-equity joint venture; Google's first confirmed detection and neutralization of an AI-developed zero-day exploit; accelerating AI liability litigation; and the Altman-Musk trial that could reshape OpenAI's structure.</p>
 <p><strong>Action bullets:</strong></p>
 <ul>
-<li>Feed retrieval is blocked at the runner network layer — the same infrastructure constraint documented in prior editions.</li>
-<li>Consult primary sources directly: <a href="https://www.theverge.com/ai-artificial-intelligence">The Verge AI</a>, <a href="https://the-decoder.com/">The Decoder</a>, <a href="https://www.technologyreview.com/topic/artificial-intelligence/">MIT Technology Review AI</a>, VentureBeat AI, and Reuters Technology.</li>
-<li>Compliance teams: continue monitoring EU AI Act high-risk system enforcement timelines.</li>
-<li>Legal teams: track AI liability litigation developments, including ongoing OpenAI-related cases.</li>
-<li>Infrastructure teams: verify that the newsletter aggregation runner has outbound HTTP egress permissions to <code>rss.tedt.org</code>.</li>
+<li>Review OpenAI's DeployCo launch and assess how it changes your existing OpenAI contracts and deployment partnerships.</li>
+<li>Brief your security team: Google has confirmed attacker use of AI to build exploits — your defenses must evolve accordingly.</li>
+<li>Legal and compliance: the FSU shooting lawsuit signals courts are beginning to assign AI harm liability in earnest.</li>
+<li>Finance operations leaders: AI adoption in financial workflows is outpacing governance frameworks — audit your controls before regulators do.</li>
+<li>Capital planning: the Cerebras IPO and the emerging "capital vs. compute" thesis signal a maturing AI infrastructure market worth evaluating ahead of H2 procurement cycles.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Unavailable — Network Access Blocked</h2>
-<p>Today's edition could not retrieve live feed content. Both configured feed sources were unreachable due to the GitHub Agentic Workflow runner's outbound network firewall policy.</p>
-<ul>
-<li><strong>Feed 1:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — blocked (network policy)</li>
-<li><strong>Feed 2:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — blocked (network policy)</li>
-</ul>
-<p>This is a persistent infrastructure constraint. The feeds themselves may be healthy and up to date — the runner simply cannot reach them.</p>
+      <h2>A Note on Feed Freshness</h2>
+<p>Both configured feed sources responded successfully today. However, the newest item across both feeds is dated <strong>May 11, 2026</strong> — nine days before publication. No items fall within the standard 24-36 hour curation window. This edition surfaces the most-recent available content (May 10-11) that was not covered in last week's blocked edition, so enterprise teams have a complete record.</p>
 <hr>
-<h3>Open Threads Worth Monitoring</h3>
-<p>Based on confirmed coverage through May 11, 2026, the following enterprise-relevant threads remain active:</p>
+<h2>Big Moves</h2>
+<h3>OpenAI Bets Big on Enterprise Deployment — With Its Own Consulting Arm</h3>
+<p>OpenAI has launched <strong>DeployCo</strong> (formally "The OpenAI Deployment Company"), a majority-controlled subsidiary designed to embed AI directly into enterprise operations. On the same day, OpenAI announced a <strong>$10 billion private-equity joint venture</strong> and acquired an unnamed consultancy — a clear signal that OpenAI is not content to sell API access. It wants to own the workflow.</p>
+<p><strong>Why it matters:</strong> The move mirrors Palantir's strategy of building implementation moats that no pure-research lab can replicate. For enterprises that have bet on third-party system integrators to deploy OpenAI models, DeployCo creates a new competitive dynamic. Your SI partner may now be competing directly with the model vendor for the same engagement.</p>
 <ul>
-<li><strong>OpenAI governance</strong> — The company's ongoing restructuring and the OpenAI v. Musk trial have direct implications for enterprise vendor governance and contract terms. Watch for new filings or settlement signals.</li>
-<li><strong>AI liability litigation</strong> — Courts are beginning to define acceptable-use standards for AI-generated content. Compliance and legal teams should track rulings in cases involving AI-assisted harm claims.</li>
-<li><strong>EU AI Act enforcement</strong> — Prohibited-practices deadlines passed in February 2026. High-risk system compliance windows continue to run. European operations leaders should confirm their readiness posture.</li>
-<li><strong>AI infrastructure costs</strong> — Pricing signals from hardware vendors and cloud providers are shifting rapidly. Procurement teams should revisit AI infrastructure cost models ahead of H2 planning cycles.</li>
-<li><strong>Energy and sustainability</strong> — AI data center energy intensity is an increasing board-level ESG concern. Sustainability teams should ensure AI infrastructure is represented in carbon accounting.</li>
+<li><strong>As a leader:</strong> Audit existing OpenAI contracts for exclusivity clauses and preferred-partner language. Decide whether a direct DeployCo engagement could accelerate ROI — or introduce a vendor lock-in risk you are not yet comfortable with.</li>
+<li><strong>As an individual:</strong> If your team is piloting OpenAI tools, document your workflow integrations carefully. That institutional knowledge becomes a negotiating asset as the vendor landscape consolidates.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://openai.com/index/openai-launches-the-deployment-company">OpenAI — openai.com, 2026-05-10</a> | <a href="https://the-decoder.com/openais-deployco-subsidiary-adopts-palantirs-playbook-building-a-moat-from-workflows-no-lab-can-simulate/">The Decoder — the-decoder.com, 2026-05-11</a></p>
+<hr>
+<h3>OpenAI Faces Murder-Charge Framing in FSU Shooting Lawsuit</h3>
+<p>A civil lawsuit filed following the Florida State University mass shooting alleges that the shooter used ChatGPT for months to plan the attack, including specific conversations about gun operation, timing, and targeting. Florida's attorney general stated, "If ChatGPT were a person, it would be facing murder charges," and has launched a separate criminal investigation.</p>
+<p><strong>Why it matters:</strong> This is among the most serious AI liability cases to date, and it arrives while enterprise AI governance frameworks are still being drafted. Courts and regulators are actively testing the boundaries of AI developer responsibility. The precedents set here will shape acceptable-use policies, indemnification clauses, and deployment standards for enterprise AI tools.</p>
+<ul>
+<li><strong>As a leader:</strong> Engage legal counsel to review your AI vendor agreements — specifically indemnification scope, acceptable-use enforcement mechanisms, and your organization's exposure if employees misuse deployed tools.</li>
+<li><strong>As an individual:</strong> Understand your organization's AI acceptable-use policy. If one does not exist, escalate the need to your compliance or legal team.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://the-decoder.com/lawsuit-claims-chatgpt-coached-fsu-shooter-on-gun-operation-timing-and-victim-thresholds/">The Decoder — the-decoder.com, 2026-05-11</a></p>
+<hr>
+<h2>Security, Risk &amp; Compliance</h2>
+<h3>Google Detects and Stops the First Confirmed AI-Built Zero-Day Exploit</h3>
+<p>Google's Threat Intelligence Group (GTIG) has confirmed it detected and neutralized a zero-day exploit developed with AI assistance. The threat actor — described as a prominent cybercrime group — had planned a mass-exploitation event. This is the first publicly confirmed case of AI being used to develop a production-grade zero-day.</p>
+<p><strong>Why it matters:</strong> Defenders have long debated whether AI would meaningfully accelerate attacker capabilities. That debate is now settled. The good news is that AI-assisted defense detected the threat; the sobering news is that the exploitation window will compress as attacker tooling matures. Enterprise security teams need to evaluate whether their current detection capabilities can keep pace.</p>
+<ul>
+<li><strong>As a leader:</strong> Request a briefing from your security team on current zero-day detection posture and whether AI-assisted threat intelligence is in your 2026 roadmap.</li>
+<li><strong>As an individual:</strong> Keep software patched and report anomalous system behavior immediately — the attack surface for AI-enhanced exploits is broadening.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://www.theverge.com/tech/928007/google-ai-zero-day-exploit-stopped">The Verge — theverge.com, 2026-05-11</a></p>
+<hr>
+<h2>Enterprise Ops &amp; Adoption</h2>
+<h3>Shopify's River: When AI Work Happens in Public</h3>
+<p>Shopify's internal AI coding agent, <strong>River</strong>, is designed to operate inside shared Slack channels rather than private sessions — turning every agent interaction into a visible, searchable workplace learning artifact. CEO Tobi Lütke described the model as "learning on the shop floor."</p>
+<p><strong>Why it matters:</strong> Most enterprise AI pilots treat agent interactions as private productivity events. Shopify's approach reframes them as collaborative knowledge-building. The difference is significant: private use creates individual productivity gains; public use creates institutional capability. Organizations designing their AI deployment architecture should consider which model serves their long-term learning goals.</p>
+<ul>
+<li><strong>As a leader:</strong> Consider whether your current AI deployment model (private vs. shared) aligns with your knowledge-management strategy. Shared channels introduce compliance considerations but may accelerate organizational learning.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://x.com/tobi/status/2053121182044451016">x.com/tobi, 2026-05-10</a></p>
+<hr>
+<h3>AI Is Already Inside Finance — Governance Is Playing Catch-Up</h3>
+<p>A MIT Technology Review analysis found that AI has entered finance departments not through managed rollouts but as a "quiet insurgency" — employees adopting tools while leadership races to build governance frameworks retroactively. The pattern: one of the most controls-intensive functions in any enterprise is now operating partially outside its own controls.</p>
+<p><strong>Why it matters:</strong> Finance is where the margin for error is smallest. AI errors in financial workflows — incorrect figures, misattributed data, hallucinated projections — can have material and regulatory consequences. Organizations that normalize AI use in finance before establishing robust validation protocols are accumulating risk.</p>
+<ul>
+<li><strong>As a leader:</strong> Commission a rapid audit of AI tool usage within your finance organization, including shadow IT. Map current use against existing controls and identify gaps before year-end reporting cycles.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://www.technologyreview.com/2026/05/11/1136786/implementing-advanced-ai-technologies-in-finance/">MIT Technology Review — technologyreview.com, 2026-05-11</a></p>
+<hr>
+<h3>Marketing Organizations Must Restructure for the Agentic Age</h3>
+<p>Harvard Business Review argues that marketing organizations need to redesign around agentic AI — building shared brand knowledge repositories, orchestration layers, and defined human-agent collaboration models. The piece frames the shift as a move from individual productivity tools to enterprise-wide AI-driven workflows.</p>
+<p><strong>Why it matters:</strong> Marketing is often the first function to adopt AI at scale, and therefore the first to expose the organizational design problems that AI creates. The lessons learned — around brand consistency, content governance, and human oversight — will propagate to every other function.</p>
+<ul>
+<li><strong>As a leader:</strong> If your marketing team is already using AI agents, ask whether you have a "shared brand knowledge" layer that all agents reference. If not, that is the foundational infrastructure investment to make first.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://hbr.org/2026/05/redesigning-your-marketing-organization-for-the-agentic-age?tpcc=orgsocial_edit&amp;utm_campaign=hbr&amp;utm_medium=social&amp;utm_source=facebook,linkedin,twitter">Harvard Business Review — hbr.org, 2026-05-10</a></p>
+<hr>
+<h2>Vendors, Platforms &amp; Models</h2>
+<h3>Altman vs. Musk Trial: Live and High-Stakes</h3>
+<p>The civil trial between Sam Altman and Elon Musk over OpenAI's founding mission entered active proceedings, with live coverage tracking argument-by-argument developments. Musk alleges OpenAI abandoned its mission of building AI to benefit humanity in favor of profit; Altman disputes the characterization of both the founding intent and the current governance structure.</p>
+<p><strong>Why it matters:</strong> The outcome could reshape OpenAI's legal structure, board composition, and — most importantly for enterprise customers — the terms under which it can continue its planned for-profit conversion. Enterprises with significant OpenAI commitments should monitor the case for any structural rulings.</p>
+<p><strong>Source:</strong> <a href="https://www.theverge.com/tech/917225/sam-altman-elon-musk-openai-lawsuit">The Verge — theverge.com, 2026-05-11</a></p>
+<hr>
+<h3>Cerebras Raises IPO Pricing Range, Testing Investor Appetite</h3>
+<p>Cerebras Systems raised the pricing range for its IPO, signaling confidence in investor demand for AI chip startups. The offering tests whether the market will reward differentiated hardware plays amid Nvidia's continued dominance.</p>
+<p><strong>Why it matters:</strong> A successful Cerebras IPO would validate the thesis that specialized AI accelerators have a durable market alongside general-purpose GPUs. Procurement teams evaluating compute infrastructure should track IPO-adjacent pricing announcements, as they often preview enterprise pricing signals.</p>
+<p><strong>Source:</strong> <a href="https://news.google.com/rss/articles/CBMihwFBVV95cUxNb3RqUkJxakhvMzRBUkxEd2dyTXpnTHV1bUhzRXA5X3RNcThPSzdLdGVlZElaTGR4cjVuZjFVWmpOSkUzV0FCY21aWW5BdkgxRWZvZ09BUlIyZERySHM1U1lMOE9OWTY3S3k3VGNHb3MwRnNyeTRLUnloQjJNS04wcHN0TnVBQjg?oc=5">The Information via Google News, 2026-05-11</a></p>
+<hr>
+<h3>Anthropic: Teaching Claude "Why," Not Just "What"</h3>
+<p>Anthropic published research explaining that Claude's safety alignment improves when the model is taught the principles behind safe behavior — not just trained on examples of acceptable outputs. The finding has implications for how enterprises should evaluate AI safety claims from vendors.</p>
+<p><strong>Why it matters:</strong> Enterprises buying AI systems often accept vendor safety claims at face value. Anthropic's research suggests that the depth and reasoning behind alignment training matters — models that "know why" are more robust to novel edge cases than those trained only on example patterns. Ask your AI vendors not just what safety measures they apply, but how those measures generalize to unanticipated scenarios.</p>
+<p><strong>Source:</strong> <a href="https://www.anthropic.com/research/teaching-claude-why">Anthropic — anthropic.com, 2026-05-10</a></p>
+<hr>
+<h2>Quick Hits</h2>
+<ul>
+<li><strong>Capital is the new compute bottleneck</strong> — As model training costs plateau, analysts argue that access to capital — not raw GPU hours — now determines AI competitive position. <a href="https://news.google.com/rss/articles/CBMif0FVX3lxTE5LWFJpTmFBck9XeTJKVXlnLTE1MUgydTVFUzlxWEdnRm1XRGdXMzlabkh0THJ0S3NKUVB4eUptVkRDU0N1MG43V09IWGNGV0VxNHE5R1ZGYW5yVEtYR2Y0NHctTmZTcEdvRmxySlMzQW5SUDBfMEJzVXdBZ0g2NGM?oc=5">The Information via Google News, 2026-05-11</a></li>
+<li><strong>New data center energy framing goes viral</strong> — A professor calculated that a major new AI data center consumes energy equivalent to detonating 23 nuclear devices per day. The framing is incendiary but the underlying energy intensity figures are real. <a href="https://futurism.com/artificial-intelligence/data-center-atom-boms">Futurism — futurism.com, 2026-05-11</a></li>
+<li><strong>xAI releases Voice Agent API and Multi-Agent docs</strong> — Elon Musk's xAI published developer documentation for a Voice Agent API and multi-agent orchestration framework. Enterprise developers evaluating Grok-based systems should review the new capabilities. <a href="https://news.google.com/rss/articles/CBMic0FVX3lxTE11QkhuN2Q0MU15UFhrbURBdEtSRGNhRC1JcS1IaUdIVlRDMkxxWXRyS3dDeGFjMFNtTFNHa215alNBakhhenRJUEs3NzRlWVM5T3ZXRmhfQ0NVZVVnZFE1cnNQZ1UtMlhwZFgyQkdwYUxHX3M?oc=5">xAI via Google News, 2026-05-11</a></li>
+<li><strong>China's Kuaishou plans $20B Kling AI video spinoff</strong> — The short-video platform is separating its Kling AI video-generation unit at a $20 billion valuation, signaling continued Chinese investment in generative media AI. <a href="https://news.google.com/rss/articles/CBMiqwFBVV95cUxNSEZhYmMxZm1XSjVmR1lsdjgxWXN2WUM5M0hPV0tJMVZQbHBTcmlwcUdXQnVnVWwxek1MTGp3cFAxc0xWWUpSNnA5VmxWaExfaGg5SHRfTWZuaGJFbUNLZC12UEJjTUNrM3hBbWZDZElwR0xmTkpCMTNHd0N3bW4yYmZGRDRjNGR3bHU5ZXBxeVA2ZjZaZ3IxcVFhc1pncWdQUkNPSWlTMjFXZ28?oc=5">The Information via Google News, 2026-05-11</a></li>
+<li><strong>OpenAI's enterprise scaling guide</strong> — OpenAI published a structured resource on how enterprises move from early AI experiments to compounding operational impact. Worth sharing with your AI program management office. <a href="https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai">OpenAI — openai.com, 2026-05-11</a></li>
 </ul>
 <hr>
-<h3>Primary Sources for Enterprise AI News</h3>
-<p>These outlets provide reliable, enterprise-relevant AI coverage:</p>
+<h2>Looking Ahead</h2>
 <ul>
-<li><a href="https://www.theverge.com/ai-artificial-intelligence">The Verge — AI section</a></li>
-<li><a href="https://the-decoder.com/">The Decoder</a></li>
-<li><a href="https://www.technologyreview.com/topic/artificial-intelligence/">MIT Technology Review — AI</a></li>
-<li><a href="https://arstechnica.com/ai/">Ars Technica — AI</a></li>
-<li><a href="https://venturebeat.com/category/ai/">VentureBeat — AI</a></li>
-<li>Reuters Technology</li>
-<li>Bloomberg Technology</li>
+<li><strong>OpenAI trial developments</strong> — The Altman-Musk proceedings will likely produce rulings or settlement signals in the coming weeks. Enterprise legal teams should have standing review processes in place.</li>
+<li><strong>AI liability law is being written right now</strong> — The FSU lawsuit and parallel cases are creating the first wave of AI tort precedents. Organizations without documented AI acceptable-use enforcement should treat this as an urgent governance gap.</li>
+<li><strong>AI infrastructure procurement window</strong> — With Cerebras and other hardware providers entering public markets, H2 2026 is a meaningful opportunity to renegotiate or diversify compute contracts. Start those conversations now.</li>
+<li><strong>Feed source investigation</strong> — The configured RSS feeds (<code>rss.tedt.org</code>) have not published new content since May 11. The pipeline maintainer should verify the aggregation schedule and confirm that source feeds are actively ingesting new items.</li>
 </ul>
 <hr>
-<h3>Looking Ahead</h3>
-<ul>
-<li><strong>Runner network access:</strong> The infrastructure team should investigate whether the GitHub Actions runner environment can be granted selective egress to <code>rss.tedt.org</code> without relaxing broader firewall policy.</li>
-<li><strong>Feed health check:</strong> Once network access is restored, verify that both feed sources contain items from the past 36 hours before re-running the newsletter workflow.</li>
-<li><strong>EU AI Act milestones:</strong> August 2026 brings the next significant compliance checkpoint for general-purpose AI models. Enterprise AI governance teams should begin gap assessments now.</li>
-<li><strong>AI contract renegotiations:</strong> Several large enterprise software agreements are up for renewal in Q3 2026. Now is the time to incorporate AI-specific terms around data use, model versioning, and liability.</li>
-</ul>
-<hr>
-<p>Today's edition is shorter than we'd like — not because the news is quiet, but because the path to it is temporarily closed. The world of enterprise AI does not pause, and neither should your awareness of it. Check the sources above, keep your teams informed, and we will be back with a full edition as soon as the pipeline is restored. Until then, stay curious and keep asking the right questions.</p>
+<h2>Sign-Off</h2>
+<p>There is something steadying about the fact that even in a week when the feeds ran dry, the underlying story stayed consistent: AI is moving faster into the places where it matters most — finance, security, marketing, and the legal structures that will govern it all. Nine days of silence from the feeds did not mean nine days of silence in the world.</p>
+<p>From the Pacific Coast, where many of these decisions are being made, the view is the same as it is everywhere else: tools are arriving faster than the wisdom to use them well. That gap is not a reason for alarm so much as an honest invitation to do the harder work — building the governance, the training, and the shared understanding that turns powerful technology into genuinely good outcomes.</p>
+<p>Thanks for reading. The next edition will arrive with a full fresh window, feed issues permitting. Until then, stay curious, stay careful, and keep asking the right questions.</p>
+<p>*— Yesterday in Enterprise AI, published May 20, 2026*</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><code>items_fetched_count</code>: 0 — outbound HTTP blocked by runner network firewall</li>
-<li><code>items_within_24_36_hours_count</code>: 0 — no data retrieved</li>
-<li><code>items_deduplicated_count</code>: 0</li>
-<li><code>items_published_count</code>: 0</li>
-<li><code>excluded_items_summary</code>: All items excluded; both feed endpoints (<code>rss.tedt.org/ai_rss_feed.json</code> and <code>rss.tedt.org/aggregated_wes_ai_news.json</code>) were unreachable due to network policy in the GitHub Agentic Workflow sandbox. This is the same constraint documented in the May 15–18 editions.</li>
-<li><code>existing_newsletter_checked</code>: Yes — May 18, 2026 edition reviewed; no items to deduplicate against.</li>
-<li><code>pacific_time_at_generation</code>: 2026-05-19 09:06 PDT</li>
+<li><strong><code>items_fetched_count</code>:</strong> 80 total (50 from <code>ai_rss_feed.json</code>, 30 from <code>aggregated_wes_ai_news.json</code>)</li>
+<li><strong><code>items_within_24_36_hours_count</code>:</strong> 0 — feed newest item dated 2026-05-11; curation window was 2026-05-18 21:17 PDT to 2026-05-20 09:17 PDT</li>
+<li><strong><code>items_deduplicated_count</code>:</strong> 36 unique items from the May 9-11 range after deduplication by URL</li>
+<li><strong><code>items_published_count</code>:</strong> 9 primary items + 5 quick hits = 14 items from May 10-11 content</li>
+<li><strong><code>excluded_items_summary</code>:</strong> Excluded 0 items within window (none existed). Excluded non-AI items (Forza Horizon piracy, F1 engine news, Uber HR announcement). Excluded low-context Reddit/image items (no substantive content). Excluded 44 items older than May 9. All published items are from 2026-05-10 or 2026-05-11.</li>
+<li><strong>Feed staleness:</strong> Both feeds last updated 2026-05-11 — 9 days before publication date of 2026-05-20. Root cause unknown; pipeline maintainer should investigate aggregation schedule.</li>
+<li><strong>Prior edition (2026-05-19):</strong> Was published with no content due to network access being blocked at the runner level. The May 10-11 content in this edition was not previously surfaced.</li>
+<li><strong>Google News links:</strong> Several items sourced via Google News RSS redirect URLs; original publisher credited in each case. These links may require JavaScript to follow.</li>
+<li><strong><code>pacific_time_at_generation</code>:</strong> 2026-05-20 09:17 PDT</li>
 </ul>
     </section>
     <footer>
