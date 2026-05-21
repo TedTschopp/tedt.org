@@ -72,6 +72,16 @@ image-description: "Album art for “2 A.M. in the Understructure,” a gritty h
 image_width: 1672
 image_height: 941
 
+
+video:
+  provider: youtube
+  id: "tWAstH-jhKQ"
+  label: "Video Summary"
+  title: "Two A.M. in the Understructure video summary"
+  description: "Watch Two A.M. in the Understructure."
+  aspect: "16x9"
+
+
 mastodon-post-id:
 ---
 
