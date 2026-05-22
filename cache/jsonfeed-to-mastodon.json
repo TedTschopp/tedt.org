@@ -4281,5 +4281,38 @@
       "https://tschopp.net/users/Ted/statuses/116587828652998957"
     ],
     "lastTootTimestamp": 1778989084754
+  },
+  "https://tedt.org/Two-AM-in-the-Understructure/": {
+    "id": "/Two-AM-in-the-Understructure/",
+    "title": "Two A.M. in the Understructure",
+    "summary": "A song lyric told in character voices — operations engineer, citizen builder, vibe engineer — about the invisible labor that keeps enterprise systems standing when the city sleeps.",
+    "content_text": "A song lyric told in character voices — operations engineer, citizen builder, vibe engineer — about the invisible labor that keeps enterprise systems standing when the city sleeps. https://tedt.org/Two-AM-in-the-Understructure/",
+    "url": "https://tedt.org/Two-AM-in-the-Understructure/",
+    "image": "https://tedt.org/img/2026-05/Two-AM.webp",
+    "tags": [
+      "operations",
+      "night-shift",
+      "enterprise-it",
+      "shadow-it",
+      "citizen-development",
+      "observability",
+      "governance",
+      "software-craft",
+      "accountability",
+      "song-lyrics",
+      "creative-writing",
+      "vibe-coding"
+    ],
+    "date_published": "2026-05-20T09:00:00-07:00",
+    "date_modified": "2026-05-20T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116610547571934669"
+    ],
+    "lastTootTimestamp": 1779335748016
   }
 }
