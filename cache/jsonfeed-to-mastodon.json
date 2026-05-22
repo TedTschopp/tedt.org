@@ -4314,5 +4314,38 @@
       "https://tschopp.net/users/Ted/statuses/116610547571934669"
     ],
     "lastTootTimestamp": 1779335748016
+  },
+  "https://tedt.org/Ticket-in-the-Queue/": {
+    "id": "/Ticket-in-the-Queue/",
+    "title": "Ticket in the Queue",
+    "summary": "A witty, character-driven song lyric told through a citizen builder, business ensemble, and distant IT voices about urgency, process friction, and the need for guardrails with speed.",
+    "content_text": "A witty, character-driven song lyric told through a citizen builder, business ensemble, and distant IT voices about urgency, process friction, and the need for guardrails with speed. https://tedt.org/Ticket-in-the-Queue/",
+    "url": "https://tedt.org/Ticket-in-the-Queue/",
+    "image": "https://tedt.org/img/2026-05/Ticket-in-the-Queue.webp",
+    "tags": [
+      "citizen-development",
+      "shadow-it",
+      "enterprise-it",
+      "backlog",
+      "workflow",
+      "governance",
+      "software-craft",
+      "operations",
+      "collaboration",
+      "song-lyrics",
+      "creative-writing",
+      "musical-theater"
+    ],
+    "date_published": "2026-05-21T09:00:00-07:00",
+    "date_modified": "2026-05-21T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116616195144699720"
+    ],
+    "lastTootTimestamp": 1779421923078
   }
 }
