@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-05-23 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-05-24 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,104 +52,138 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-05-23</h1>
-      <p class="meta">Generated <time datetime="2026-05-23T14:17:51+00:00">2026-05-23T14:17:51Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-05-24</h1>
+      <p class="meta">Generated <time datetime="2026-05-24T14:16:13+00:00">2026-05-24T14:16:13Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Search is quietly changing shape, AI security programs are maturing in public view, and the gap between AI hype and enterprise reality is widening. From Google's redefinition of what "search" even means, to Anthropic's new public vulnerability dashboard, to hard data showing Grok barely registers in federal procurement—Friday, May 22, was a day that rewarded careful observers over headline chasers.</p>
+      <p>Anthropic's AI is heading deeper into the intelligence community even as the Pentagon raised supply-chain red flags, California's governor moved to cushion AI-driven job losses, and Google's Gemini showed just how fast multimodal capabilities are advancing. Saturday, May 24, is a day where national-security contracts, workforce policy, and model capability converged in ways that should be on every enterprise leader's radar.</p>
 <p><strong>Action bullets:</strong></p>
 <ul>
-<li>Review your organization's reliance on Google Search–driven traffic; AI Overviews are changing what users see and click.</li>
-<li>Add Anthropic's new vulnerability disclosure dashboard to your security monitoring rotation.</li>
-<li>Audit any pending AI vendor contracts for inflated ARR claims before signing.</li>
-<li>Assess whether your voice AI policies cover synthetic reconstruction of employees' or customers' voices.</li>
-<li>Request a government-use audit if you are evaluating xAI/Grok for enterprise or public-sector use.</li>
+<li>Review your vendor AI supply-chain risk posture; the Anthropic/Pentagon situation shows government customers face different standards than commercial ones.</li>
+<li>Track California's new AI job-displacement executive order; it signals the policy direction other states are likely to follow.</li>
+<li>Evaluate whether Google Gemini's anything-to-anything capabilities change your multimodal AI roadmap.</li>
+<li>Note that AI-driven compute cost reduction (70% via AutoTTS) may shift your build-vs-buy calculus sooner than expected.</li>
+<li>Communicate proactively with employees about AI and job security; fear is rising, and silence from leadership makes it worse.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
       <h2>Big Moves</h2>
-<h3>Google CEO Sundar Pichai Quietly Redefines What "Search" Is</h3>
-<p>Google CEO Sundar Pichai is now describing links and sources as merely a "part" of search—not its foundation. The Decoder noted the shift is deliberate: new features keep users inside the Google ecosystem, and the company is transitioning from a traffic distributor into what amounts to an AI-powered publisher that controls which sources surface and which disappear.</p>
-<p>For enterprises that depend on content marketing, SEO pipelines, or inbound traffic from Google, this is a structural change worth taking seriously. The web's original bargain—write great content and Google sends you visitors—is being renegotiated without a public announcement.</p>
-<p><strong>What should I do as a leader?</strong> Convene your digital marketing, content, and product teams to audit how much of your inbound pipeline depends on organic Google traffic. Diversify toward direct channels, newsletters, and owned audiences before the shift accelerates.</p>
-<p><strong>What should I do?</strong> If your role involves content creation or SEO, begin tracking referral traffic changes in Google Search Console now and document the baseline before further AI Overview rollouts.</p>
-<p>Source: The Decoder, 2026-05-23 — <a href="https://the-decoder.com/google-ceo-pichai-now-calls-links-a-part-of-search-redefining-the-webs-role-in-its-own-product/">the-decoder.com/google-ceo-pichai-now-calls-links-a-part-of-search-redefining-the-webs-role-in-its-own-product/</a></p>
+<h3>Anthropic Caught Between the Pentagon and the NSA</h3>
+<p>The White House and Anthropic are reportedly near a deal to supply Claude to spy agencies—including the NSA—even as the Pentagon has flagged Anthropic as a "supply chain risk." The tension stems partly from a previously reported "any lawful use" clause and partly from real hardware constraints: intelligence agencies lack Nvidia's latest Grace Blackwell chips, and Anthropic's classified "Mythos" model reportedly runs on older hardware.</p>
+<p><strong>Why it matters:</strong> Enterprise procurement and legal teams should watch this closely. When a major AI vendor is simultaneously pursuing classified government contracts and being tagged as a supply-chain risk by a separate part of the same government, it creates downstream uncertainty for any regulated industry customer—finance, defense contractors, healthcare—that must vet its own AI suppliers.</p>
+<ul>
+<li><strong>What should I do as a leader?</strong> Add AI vendor supply-chain risk to your next vendor review cycle. Ask your AI partners whether they have classified government contracts and what contractual constraints those may impose on the commercial product roadmap.</li>
+<li><strong>What should I do?</strong> If you work in a regulated industry, flag this story to your legal and procurement contacts. The "any lawful use" question is not settled.</li>
+</ul>
+<p>Source: <a href="https://the-decoder.com/anthropic-may-keep-supplying-claude-to-the-nsa-despite-being-flagged-as-a-supply-chain-risk-by-the-pentagon/">The Decoder, 2026-05-24</a></p>
 <hr>
-<h3>Anthropic Launches Project Glasswing &amp; Public Vulnerability Dashboard</h3>
-<p>Anthropic published an initial update on Project Glasswing, a coordinated vulnerability disclosure (CVD) initiative, alongside a public-facing disclosure dashboard and a growing ledger of CVEs it has responsibly reported to open-source maintainers. Recent disclosures include vulnerabilities in nginx, CraftCMS, Ghost, libyang, jq, and gitoxide—everyday infrastructure pieces that appear inside enterprise software stacks. The company also published new Exploit Evals documentation describing how it tests whether Claude could assist in generating working exploits.</p>
-<p>This matters for enterprise security teams on two levels. First, it shows that AI labs are now active participants in the broader software security ecosystem—not just consumers of it. Second, any organization running the affected open-source components should check whether they have patched against the listed CVEs.</p>
-<p><strong>What should I do as a leader?</strong> Direct your security operations center to bookmark <a href="https://red.anthropic.com">red.anthropic.com</a> and subscribe to its disclosure feed. Add AI-vendor CVD pages to your threat intelligence rotation.</p>
-<p><strong>What should I do?</strong> If you manage infrastructure using nginx, Ghost, or CraftCMS, cross-reference the Anthropic disclosure ledger against your current patch levels.</p>
-<p>Source: Anthropic Red / Project Glasswing, 2026-05-22 — <a href="https://red.anthropic.com">red.anthropic.com</a></p>
-<hr>
-<h2>Enterprise Ops &amp; Adoption</h2>
-<h3>Figure AI Logs 200 Hours of Autonomous Package Handling</h3>
-<p>Figure AI reported that its humanoid robots have now completed 200 hours—roughly eight continuous days—of uninterrupted package handling in a warehouse environment. The milestone is modest in absolute terms, but it signals that bipedal robotics is moving from demo loops to measured operational uptime in logistics settings.</p>
-<p>For operations and supply-chain leaders, the more meaningful signal is the metric itself: measuring robot uptime in hours rather than cycles is how you move toward shift-based deployment planning. The gap between pilot and production is closing faster in physical AI than in software AI.</p>
-<p><strong>What should I do as a leader?</strong> If your organization runs distribution or fulfillment centers, request a briefing from your robotics vendors on their current uptime benchmarks and compare to Figure's public claim. Set internal targets for a 2027 pilot evaluation.</p>
-<p>Source: Reddit/Figure AI, 2026-05-22 — v.redd.it/wahhkuk0jn2h1</p>
-<hr>
-<h3>xAI Adds Custom Voice Feature to Grok</h3>
-<p>xAI quietly released Custom Voices documentation for its Grok platform, indicating that developers can now configure voice personas for Grok-powered applications. The move follows similar features from OpenAI and ElevenLabs and positions xAI to compete in enterprise voice-AI workflows—call centers, IVR systems, internal voice assistants.</p>
-<p>The timing is notable given data (see Vendors section below) suggesting Grok has struggled with enterprise and government adoption. Custom voice APIs could help the platform carve out a narrower but defensible niche in voice-specific use cases.</p>
-<p><strong>What should I do as a leader?</strong> If your team is evaluating voice AI vendors, include xAI's Custom Voices in the scorecard alongside ElevenLabs, OpenAI TTS, and Google WaveNet. Ask for enterprise SLA documentation before committing.</p>
-<p>Source: xAI Docs, 2026-05-22 — <a href="https://docs.x.ai">docs.x.ai</a></p>
-<hr>
-<h2>Security, Risk &amp; Compliance</h2>
-<h3>AI Reconstructed Dead Pilots' Voices—and Forced the NTSB to React</h3>
-<p>Researchers used AI to reconstruct cockpit voice recordings from spectrogram images—essentially rebuilding audio from a visual representation of sound—and published their findings from National Transportation Safety Board docket records. The NTSB responded by temporarily blocking public access to its entire online docket system to assess the exposure.</p>
-<p>The enterprise implication runs wider than aviation safety. If a spectrogram image posted in a public docket is enough to reconstruct a voice, organizations need to reconsider what constitutes sensitive audio data. Meeting recordings, call-center logs, and even compressed voicemail archives may contain latent voice-reconstruction potential that current data-governance policies do not address.</p>
-<p><strong>What should I do as a leader?</strong> Commission a review of your organization's voice-data retention and disposal policies. Ensure data governance frameworks explicitly classify audio recordings—and their visual representations—as sensitive personal information requiring deletion schedules.</p>
-<p><strong>What should I do?</strong> Be cautious about publishing any audio, spectrogram images, or voice-related metadata in public or semi-public repositories and bug trackers.</p>
-<p>Source: TechCrunch, 2026-05-22 — <a href="https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/">techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/</a></p>
+<h3>California Governor Newsom Signs AI Job-Displacement Order</h3>
+<p>Governor Gavin Newsom signed an executive order directing state agencies to study and address AI-driven job displacement. The order tasks agencies with assessing which roles are most at risk, developing retraining pathways, and reporting back on policy options.</p>
+<p><strong>Why it matters:</strong> California remains the de facto bellwether for U.S. labor policy at the intersection of tech. When Sacramento moves, other states, the EU, and multinational HRs pay attention. Enterprises with large California workforces—or large California customer bases—should expect formal disclosure and mitigation requirements to follow within 18 to 24 months.</p>
+<ul>
+<li><strong>What should I do as a leader?</strong> Begin or accelerate internal workforce impact assessments now, before regulatory deadlines arrive. Proactive analysis is far less disruptive than reactive compliance.</li>
+<li><strong>What should I do?</strong> If your role involves repetitive data processing, document review, or customer intake, ask your manager what the team's AI adoption roadmap looks like over the next year.</li>
+</ul>
+<p>Source: The Hill, 2026-05-24</p>
 <hr>
 <h2>Vendors, Platforms &amp; Models</h2>
-<h3>Grok Barely Appears in Federal AI Procurement Records</h3>
-<p>A Reuters analysis of federal records found that xAI's Grok chatbot appeared in almost no government AI usage filings for the prior year. The Verge covered the report with the pointed observation that widespread adoption of Grok remains largely aspiration rather than reality—despite Elon Musk's aggressive promotion of the platform across X and xAI's communications.</p>
-<p>For enterprise technology evaluators, this is a useful data point: government procurement records are an imperfect but real signal of enterprise-grade trust. Products that clear federal information security requirements tend to see commercial enterprise deals follow. The absence of Grok from those records is not a disqualifier, but it is a meaningful gap for any procurement team to probe.</p>
-<p><strong>What should I do as a leader?</strong> If xAI is on your AI vendor shortlist, request FedRAMP authorization status documentation and ask xAI directly about its federal client list. Compare to OpenAI, Google, and Anthropic timelines for obtaining equivalent authorizations.</p>
-<p>Source: The Verge, 2026-05-22 — <a href="https://www.theverge.com/ai-artificial-intelligence/936219/elon-stop-trying-to-make-grok-happen">theverge.com/ai-artificial-intelligence/936219/elon-stop-trying-to-make-grok-happen</a></p>
+<h3>Google Gemini Goes Anything-to-Anything</h3>
+<p>Google's Gemini Omni model has shown hands-on capability generating realistic video and audio transformations from nearly any input modality—text, image, video, audio. A Verge hands-on describes experimenting with deepfake-style video synthesis, noting how accessible and fast the capability has become.</p>
+<p><strong>Why it matters:</strong> Multimodal AI is leaving the demo phase. The same capability that makes Gemini useful for enterprise media production, training content, and customer experience also raises immediate questions about synthetic media in internal communications, recruiting, and brand safety. Legal and communications teams should update their acceptable-use policies to address AI-generated video and audio explicitly.</p>
+<ul>
+<li><strong>What should I do as a leader?</strong> Assign your legal or compliance team to audit your current acceptable-use policy for AI-generated media. "Text only" policies are now inadequate.</li>
+<li><strong>What should I do?</strong> Be cautious about accepting video or audio as sole evidence of any event or instruction, especially in financial or contractual contexts.</li>
+</ul>
+<p>Source: <a href="https://www.theverge.com/tech/936507/gemini-omni-hands-on-deepfake-ai-video">The Verge, 2026-05-23</a></p>
 <hr>
-<h3>Inflated ARR Metrics Are Becoming the New Vanity Stat for AI Startups</h3>
-<p>TechCrunch reported that some AI startups—and their investors—are knowingly stretching the definition of Annual Recurring Revenue when speaking publicly. Tactics include counting one-time pilots as recurring, treating compute credits as revenue, and annualizing single-month spikes. Venture capitalists are described as fully aware and often complicit.</p>
-<p>For enterprise procurement teams and CIOs evaluating AI vendors, this is a due-diligence flag. ARR figures cited in press releases and pitch decks during commercial negotiations may not reflect contract-backed revenue. The gap matters: a vendor in financial distress mid-contract is a continuity risk.</p>
-<p><strong>What should I do as a leader?</strong> Require AI vendors to provide audited revenue figures or third-party attestations before signing contracts above your organization's materiality threshold. Treat claimed ARR as a starting point for negotiation, not a validation of stability.</p>
-<p>Source: TechCrunch, 2026-05-22 — <a href="https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/">techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/</a></p>
+<h3>OpenAI and Nvidia Adopt Google's SynthID Watermarking</h3>
+<p>Both OpenAI and Nvidia are integrating Google's SynthID technology to watermark AI-generated content. SynthID embeds imperceptible signals in text, images, audio, and video that allow the originating system to be identified after the fact.</p>
+<p><strong>Why it matters:</strong> Watermarking is quickly becoming table stakes for enterprise AI governance. If major vendors are standardizing on a common watermarking layer, procurement teams should begin asking whether their current AI tools support provenance tracking. Regulators in the EU and several U.S. states are already moving toward mandatory disclosure of AI-generated content.</p>
+<ul>
+<li><strong>What should I do as a leader?</strong> Add "AI content provenance and watermarking" to your next AI governance checklist. Ask vendors whether their outputs are watermark-compatible.</li>
+</ul>
+<p>Source: Firethering, 2026-05-24</p>
+<hr>
+<h3>xAI Abandons Solar—Doubles Down on Natural Gas and Orbital Data Centers</h3>
+<p>TechCrunch reports that Elon Musk's xAI has moved entirely away from solar power and is instead building AI infrastructure on natural gas, while SpaceX pursues orbital data centers. This marks a sharp departure from the "solar-electric economy" Musk promoted for years.</p>
+<p><strong>Why it matters:</strong> Enterprise sustainability teams tracking Scope 3 emissions will need to reconsider any AI vendor whose infrastructure runs on fossil fuel power. For companies with published net-zero commitments, the energy source of your AI compute is no longer an abstraction—it is a supply-chain emissions question.</p>
+<ul>
+<li><strong>What should I do as a leader?</strong> Ask your AI vendors for their data center energy mix disclosures. Update your Scope 3 emissions models to account for AI workload growth.</li>
+</ul>
+<p>Source: <a href="https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/">TechCrunch, 2026-05-23</a></p>
+<hr>
+<h2>Research &amp; Capabilities</h2>
+<h3>Claude Code Discovers Novel AI Algorithms—for $4</h3>
+<p>Researchers from UMD, Google, Meta, and other institutions used a framework called AutoTTS to let Claude Code autonomously search for better AI reasoning control algorithms. The agent found an approach that cuts compute by roughly 70% compared to standard self-consistency methods while maintaining the same accuracy. The entire research run cost approximately $4.</p>
+<p><strong>Why it matters:</strong> This is a meaningful signal that AI systems are beginning to meaningfully accelerate AI research itself—not just assist it. The $4 cost figure is striking. For enterprise AI teams evaluating when to move from "AI-assisted development" to "AI-automated research," the timeline may be shorter than many planning documents assume.</p>
+<ul>
+<li><strong>What should I do as a leader?</strong> Start tracking papers and projects where AI agents are used to discover rather than just implement. This category of capability will shift cost and timeline assumptions for internal R&amp;D.</li>
+</ul>
+<p>Source: <a href="https://the-decoder.com/researchers-let-claude-code-discover-ai-scaling-algorithms-that-humans-probably-wouldnt-have-designed/">The Decoder, 2026-05-24</a></p>
+<hr>
+<h2>Enterprise Ops &amp; Adoption</h2>
+<h3>IBM and Ferrari Redefine Fan Engagement with AI</h3>
+<p>IBM and Scuderia Ferrari HP partnered to deploy AI-driven personalization tools that create individualized fan experiences at Formula 1 races. The use case spans real-time data analysis, multilingual engagement, and fan journey orchestration.</p>
+<p><strong>Why it matters:</strong> This partnership is a useful enterprise template: a well-established technology vendor (IBM) brings AI infrastructure to a global brand (Ferrari) to deepen customer relationships at scale. For enterprises in sports, entertainment, hospitality, or retail, the pattern—proprietary event data plus AI personalization plus multilingual reach—is replicable.</p>
+<ul>
+<li><strong>What should I do as a leader?</strong> If your enterprise touches large-event or live-experience customer journeys, this is a strong reference case for your next AI-for-CX business case.</li>
+</ul>
+<p>Source: <a href="https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/">TechCrunch, 2026-05-23</a></p>
+<hr>
+<h3>China Losing the LLM Race But Eyeing Broader AI Victory</h3>
+<p>An ex-Tencent AI lead told the South China Morning Post that China is behind in the large language model race but believes it can still win in AI overall by focusing on applications, hardware alternatives, and domain-specific deployment.</p>
+<p><strong>Why it matters:</strong> Enterprises with global operations, suppliers, or customers in China should track this framing. Chinese AI development is not converging on a single Western platform—it is diverging, which means enterprise interoperability, data localization, and regulatory compliance strategies may need to account for genuinely different AI ecosystems by region.</p>
+<p>Source: South China Morning Post, 2026-05-24</p>
+<hr>
+<h2>Policy &amp; Regulation</h2>
+<h3>AI Workforce Fear Is Real—and Employers Need to Respond</h3>
+<p>Both RTÉ and Karen Hao (via YouTube) published accounts of widespread worker anxiety about AI-driven job loss in big tech. The RTÉ analysis documents "big fears" across the tech sector; Hao's reporting frames the emerging AI labor economy as creating a "desperate base of workers" without full-time employment security.</p>
+<p><strong>Why it matters:</strong> Leadership silence on AI and jobs is itself a message—and not a reassuring one. Enterprises that are proactively communicating their AI workforce strategy are seeing better retention and morale outcomes than those leaving employees to find answers in press coverage.</p>
+<ul>
+<li><strong>What should I do as a leader?</strong> Schedule an all-hands or team meeting to discuss your organization's AI adoption plans and what they mean for roles. Silence breeds anxiety; honesty builds trust.</li>
+<li><strong>What should I do?</strong> It is reasonable to ask your manager directly: "How is our team thinking about AI and headcount over the next year?" A good manager should have an honest answer.</li>
+</ul>
+<p>Sources: RTÉ News, 2026-05-24 | YouTube / Karen Hao, 2026-05-24</p>
 <hr>
 <h2>Quick Hits</h2>
 <ul>
-<li><strong>Google AI Overviews breaks searching for "disregard"</strong> — The word triggered a chatbot-style response loop instead of a normal AI summary, briefly making the term unsearchable. Google addressed it the same day. <a href="https://www.theverge.com/tech/936176/google-ai-overviews-search-disregard">theverge.com/tech/936176/google-ai-overviews-search-disregard</a></li>
-<li><strong>Steve Wozniak tells graduates they have "actual intelligence"</strong> — Apple co-founder used his commencement address to remind students that human creativity and judgment are the competitive advantage AI cannot replicate. businessinsider.com/steve-wozniak-apple-ai-graduation-speech-2026-5</li>
-<li><strong>SpaceX files S-1 at a $1.75 trillion target valuation</strong> — The filing cites a $28 trillion total addressable market and a pay package tied to establishing a Mars colony. For enterprise tech investors, the document's 36 pages of risk factors alone are worth a read. <a href="https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/">techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/</a></li>
+<li><strong>ShannonBase launches a lightweight semantic layer for enterprise AI SQL</strong> — Medium, 2026-05-24</li>
+<li><strong>"Write as little code as possible": a discipline for AI-assisted development</strong> — Age of Product, 2026-05-24</li>
+<li><strong>Greg Brockman on the 72 hours that almost killed OpenAI</strong> — Farnam Street / The Knowledge Project, 2026-05-24</li>
+<li><strong>A maintainability ratchet for AI-assisted Python code</strong> — kayhan.dev, 2026-05-24</li>
+<li><strong>The anatomy of AI power in 2026: a framework for understanding where leverage sits</strong> — Wayne Research, 2026-05-24</li>
+<li><strong>Local LLMs perform better when prompted to ask clarifying questions first</strong> — XDA Developers, 2026-05-23</li>
+<li><strong>How AI is redefining software engineering roles and workflows</strong> — adlrocha.substack.com, 2026-05-24</li>
 </ul>
 <hr>
 <h2>Looking Ahead</h2>
 <ul>
-<li><strong>AI search reliability</strong> is becoming a boardroom topic: Google's Overviews bugs and Pichai's redefinition of links suggest enterprise teams should build a 90-day review of search-dependent workflows into Q3 planning.</li>
-<li><strong>Voice AI governance</strong> is an emerging gap: the NTSB spectrogram incident suggests most enterprises need to extend data classification policies to cover audio formats before regulators require it.</li>
-<li><strong>AI vendor financial due diligence</strong> will likely become a formal procurement requirement in 2026 as inflated ARR practices attract scrutiny from auditors and procurement officers.</li>
-<li><strong>Physical AI uptime benchmarks</strong> (see Figure AI) will start appearing in RFPs for logistics and fulfillment contracts within the next 12–18 months; now is the time to define your internal evaluation criteria.</li>
+<li><strong>Government AI contracting will tighten.</strong> The Anthropic/NSA situation will not be the last time a commercial AI vendor faces conflicting signals from different parts of a government customer. Enterprise legal teams should begin drafting AI vendor classification frameworks now.</li>
+<li><strong>AI content provenance is becoming a compliance issue.</strong> With SynthID adoption spreading across OpenAI and Nvidia, expect watermarking requirements to appear in RFPs and regulatory guidance within 12 months.</li>
+<li><strong>California's AI job-displacement order is a policy preview.</strong> Watch for draft legislation in Q3 2026 that may require employers to disclose AI use to affected workers—a requirement that would affect HR systems, job descriptions, and communications strategy across every California employer.</li>
+<li><strong>Multimodal AI is outpacing policy.</strong> Gemini Omni's anything-to-anything capability means synthetic media governance can no longer wait for a perfect regulatory framework. Enterprises need internal standards now.</li>
 </ul>
 <hr>
 <h2>Sign-off</h2>
-<p>The best days in enterprise AI aren't the ones full of announcements—they're the ones where careful reading reveals what's actually changing beneath the surface. Friday handed us one of those days: a search giant quietly rewriting its own contract with the web, a safety board caught flat-footed by a voice reconstruction trick, and a growing reminder that vendor claims deserve the same scrutiny as any other financial statement.</p>
-<p>Take a moment this weekend to share one item from today's edition with a colleague who doesn't follow this space closely. The gap between those who understand what AI is actually doing to enterprise operations and those who don't is widening faster than most organizations realize—and awareness is its own form of competitive advantage.</p>
-<p>See you Monday. Stay curious, stay grounded, and trust the work.</p>
+<p>There is a kind of tension that runs through this Saturday's news—between ambition and accountability, between capability and consequence. AI is being trusted with national secrets, given authority to redesign algorithms, and handed the keys to brand relationships at one of the world's most iconic sports franchises. That is genuinely remarkable progress, and it deserves to be named as such.</p>
+<p>And yet the same day brings a California governor signing an order because workers are afraid, and a tech-labor reporter documenting a "desperate base" left behind by the very productivity gains being celebrated. Both things are true at once. That is the honest condition of enterprise AI in May 2026.</p>
+<p>Wherever you are reading this—Pacific coast or otherwise—the work of bridging those two realities belongs to leaders at every level. Have a good weekend, and come Monday, be the person on your team who brings honest answers instead of comfortable silence.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li>Feed 1: <code>https://rss.tedt.org/ai_rss_feed.json</code> — reachable, 50 items total</li>
-<li>Feed 2: <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — reachable, 30 items total</li>
-<li>Combined total fetched: 80 items across both feeds</li>
-<li>Items within 36-hour window (since 2026-05-21 19:14 PT): 28</li>
-<li>Items deduplicated (removed duplicate "Creators of Grok" entries and Google News redirect URLs for identical stories): 20 unique items</li>
-<li>Items published in newsletter: 8 primary + 3 quick hits = 11 total</li>
-<li>Excluded items summary: 9 items excluded — Anthropic Red individual CVE disclosure pages (ANT-2026-* IDs for junrar, gitoxide, nginx, jq, libyang, CraftCMS, Ghost) were consolidated into the Project Glasswing section rather than listed individually; the "Disclosure ledger" and "Coordinated vulnerability disclosure dashboard" pages were also consolidated there; "Tech Elite real estate broker" item from The Information excluded as not enterprise AI relevant; Google disco-ball icon story excluded as consumer/UI feature with no enterprise AI relevance</li>
-<li>No items from today's feeds overlapped with the previous newsletter (2026-05-22 edition covered different stories)</li>
-<li>Date used for newsletter: 2026-05-23 (Pacific Daylight Time, generation time 07:14 PDT)</li>
+<li><strong>items_fetched_count:</strong> 30 (aggregated_wes_ai_news.json) + 50 (ai_rss_feed.json) = 80 total</li>
+<li><strong>items_within_36_hour_window:</strong> 30 (all from aggregated_wes_ai_news.json; ai_rss_feed.json most recent items dated 2026-05-11, outside the 36-hour window)</li>
+<li><strong>items_deduplicated:</strong> 2 removed (Anthropic/NSA story appeared as both a The Decoder article and a Google News RSS link; kept the direct source)</li>
+<li><strong>items_excluded_not_enterprise_relevant:</strong> 6 removed (Show HN: TapToyPia, "20 Great Books for Summer 2026," protein/dark proteome research, LLM learning path GitHub, semantic extractor GitHub, crypto Washington command center)</li>
+<li><strong>items_excluded_no_content_or_thin:</strong> 4 items had empty content_text fields and insufficient title context for enterprise framing</li>
+<li><strong>items_published_count:</strong> 10 primary items + 7 quick hits = 17 total</li>
+<li><strong>window:</strong> 2026-05-22 19:12 PT to 2026-05-24 07:12 PT (36-hour window)</li>
+<li><strong>ai_rss_feed.json note:</strong> All 50 items dated 2026-05-11 or earlier; none qualified for inclusion</li>
+<li><strong>previous newsletter check:</strong> Reviewed 2026-05-23 edition; no duplicate URLs found in this edition's selections</li>
+<li><strong>Google News RSS links:</strong> Two items used Google News redirect URLs; replaced with direct source URLs where the canonical destination was identifiable from content_text</li>
 </ul>
     </section>
     <footer>
