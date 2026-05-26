@@ -63,7 +63,7 @@
                 <!-- Blog Post -->
                 {% capture __article_class %}{{ page.article_class | default: '' }}{% endcapture %}
                 {% assign __article_class = __article_class | strip %}
-                <main class="h-entry{% if __article_class != '' %} {{ __article_class | escape }}{% endif %}" role="main">
+                <main class="h-entry" role="main">
 
                     <div class="card h-100 no-padding">
                         {% include utility/resolve-image-variables.html item=page fallback_alt=page.title fallback_credits_title='In Search of an Image - "No Image Associated with this article"' fallback_credits=site.author.name fallback_credits_artist_url=site.author.url %}
@@ -99,7 +99,7 @@
                                 {% endunless %}
                             </div>
                         </div>
-                        <div class="card-body rounded-top-0 p-0 h-100">
+                        <div class="card-body rounded-top-0 p-0 h-100{% if __article_class != '' %} {{ __article_class | escape }}{% endif %}">
                            
                             <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
 
