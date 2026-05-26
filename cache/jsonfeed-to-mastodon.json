@@ -4347,5 +4347,35 @@
       "https://tschopp.net/users/Ted/statuses/116616195144699720"
     ],
     "lastTootTimestamp": 1779421923078
+  },
+  "https://tedt.org/AI-Is-a-People-Change/": {
+    "id": "/AI-Is-a-People-Change/",
+    "title": "AI Is a People Change, Not Just a Technology Change",
+    "summary": "Most AI programs stall for the same reason: they are framed as technology projects instead of people changes. Durable adoption requires role clarity, trust design, workflow ownership, and measurable behavior change.",
+    "content_text": "Most AI programs stall for the same reason: they are framed as technology projects instead of people changes. Durable adoption requires role clarity, trust design, workflow ownership, and measurable behavior change. https://tedt.org/AI-Is-a-People-Change/",
+    "url": "https://tedt.org/AI-Is-a-People-Change/",
+    "image": "https://tedt.org/img/2026-05/AI-Is-a-People-Change.webp",
+    "tags": [
+      "ai adoption",
+      "change management",
+      "operating model",
+      "enterprise ai",
+      "workflow design",
+      "governance",
+      "human in the loop",
+      "organizational design",
+      "leadership"
+    ],
+    "date_published": "2026-05-24T09:00:00-07:00",
+    "date_modified": "2026-05-24T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116631168897533089"
+    ],
+    "lastTootTimestamp": 1779650404403
   }
 }
