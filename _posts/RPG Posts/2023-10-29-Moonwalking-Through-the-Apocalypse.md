@@ -39,10 +39,10 @@ keywords:
 - TTRPG
 - Post-Apocalyptic
 location:
-  name: Bradbury, CA
-coordinates:
-  latitude: 34.147
-  longitude: -117.9709
+   name: Bradbury, CA
+   coordinates:
+      latitude: 34.147
+      longitude: -117.9709
 image: /img/2023-10/Michael-JX Moonwalking Through the Apocalypse.webp
 image-alt: The imposing figure of Michael-JX in a barren wasteland
 image-title: 'Michael-JX: Moonwalking Through the Apocalypse'

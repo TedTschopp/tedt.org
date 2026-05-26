@@ -20,10 +20,10 @@ tags:
 keywords: Hexcrawl, wilderness exploration, referee procedures, emergent play, mapping
   discipline, encounter design
 location:
-  name: Bradbury, CA
-coordinates:
-  latitude: 34.147
-  longitude: -117.9709
+    name: Bradbury, CA
+    coordinates:
+        latitude: 34.147
+        longitude: -117.9709
 image: /img/2025-08/hex-map-seeded-frontier.webp
 image-alt: A weathered campaign hex map with rivers, ridges, ruins, and colored exploration
   annotations

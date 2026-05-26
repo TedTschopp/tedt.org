@@ -44,10 +44,10 @@ tags:
   - Worldbuilding
 keywords: Märchen Engine, RPG setting guide, Alpine folklore, tabletop roleplaying, game master worldbuilding
 location:
-  name: Bradbury, CA
-coordinates:
-  latitude: 34.147
-  longitude: -117.9709
+    name: Bradbury, CA
+    coordinates:
+        latitude: 34.147
+        longitude: -117.9709
 image: /img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.webp
 image-alt: A serene Alpine valley with green slopes and mountain light, suitable for a folklore-rich tabletop roleplaying setting
 image-title: Alpine Valley for The Small Alpine Mirror

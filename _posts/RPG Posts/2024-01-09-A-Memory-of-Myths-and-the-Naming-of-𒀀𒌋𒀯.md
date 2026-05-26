@@ -28,10 +28,10 @@ tags:
 keywords: ""
 
 location:
-    name: Bradbury, CA
-coordinates:
-    latitude: 34.1470
-    longitude: -117.9709
+  name: Bradbury, CA
+  coordinates:
+      latitude: 34.1470
+      longitude: -117.9709
 
 
 image: https://tedt.org/img/2024-01/Aeon - Memory of Myths.webp
