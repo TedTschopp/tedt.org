@@ -42,6 +42,7 @@ $success: rgba(0, 179, 57, 1);
 $warning: rgba(242, 188, 87, 1);
 $danger: rgba(249, 0, 65, 1);
 
+$gm: $success;
 $accent1: rgba(0, 123, 255, 1);
 $accent2: rgba(242, 188, 87, 1);
 $accent3: rgba(111, 26, 7, 1);
@@ -51,6 +52,7 @@ $theme-colors: (
   "primary": $primary,
   "secondary": $secondary,
   "success": $success,
+  "GM": $gm,
   "info": $info,
   "accent1": $accent1,
   "accent2": $accent2,
@@ -64,12 +66,15 @@ $theme-colors: (
 $accent1-text-emphasis: shade-color($accent1, 60%);
 $accent2-text-emphasis: shade-color($accent2, 60%);
 $accent3-text-emphasis: shade-color($accent3, 60%);
+$gm-text-emphasis: shade-color($gm, 60%);
 $accent1-bg-subtle: tint-color($accent1, 80%);
 $accent2-bg-subtle: tint-color($accent2, 80%);
 $accent3-bg-subtle: tint-color($accent3, 80%);
+$gm-bg-subtle: tint-color($gm, 80%);
 $accent1-border-subtle: tint-color($accent1, 60%);
 $accent2-border-subtle: tint-color($accent2, 60%);
 $accent3-border-subtle: tint-color($accent3, 60%);
+$gm-border-subtle: tint-color($gm, 60%);
 
 // ----------------------------------------------------------------------------
 // Feature toggles

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Small Alpine Mirror
+title: Alpine Folklore and Frontier Law for The Märchen Engine
 title-url: null
 subtitle: >-
   Being notes for a newly arrived priest concerning the valleys, roads, peoples,
@@ -50,9 +50,9 @@ location:
         longitude: -117.9709
 image: /img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.webp
 image-alt: A serene Alpine valley with green slopes and mountain light, suitable for a folklore-rich tabletop roleplaying setting
-image-title: Alpine Valley for The Small Alpine Mirror
+image-title: Alpine Valley for Alpine Folklore and Frontier Law
 image-description: >-
-  A verdant Alpine valley scene used to frame The Small Alpine Mirror as a
+  A verdant Alpine valley scene used to frame Alpine Folklore and Frontier Law as a
   folklore-rich Märchen Engine sourcebook for priests, referees, and players
   traveling through the high country.
 image-credits-artist: Ted Tschopp
@@ -86,7 +86,7 @@ Read, therefore, with charity. The Alpine folk are not ignorant; despite what yo
 
 ## Concerning the Crownlands
 
-The people of the valleys live beneath many roofs of authority. There is the roof of the house, the roof of the church, the roof of the guildhall, the roof of the castle, and above them all the invisible roof of the crown. To a child, the emperor is a face on a coin. To a taxman, he is a seal. To a soldier, he is a banner. To a condemned man, he is a name spoken before the rope is drawn.
+The people of the valleys live beneath many roofs of authority. There is the roof of the house, the roof of the church, the roof of the guildhall, the roof of the castle, and above them all the invisible roof of the crown.[^1][^2] To a child, the emperor is a face on a coin. To a taxman, he is a seal. To a soldier, he is a banner. To a condemned man, he is a name spoken before the rope is drawn.
 
 Yet the crown is not only distant majesty. It arrives by hoof, bell, wax, ink, debt, levy, and command. Here, a decree may cross a mountain pass more slowly than a rumor, but when it arrives, it may change the fate of a valley.
 
@@ -112,7 +112,7 @@ You will hear the phrase, “The road has spoken.” This means news has arrived
 
 ### The Broken Border
 
-Many of the high valleys shelter families who did not begin there. Some fled war. Some fled famine. Some fled a lord whose name is no longer spoken except in curses. Some were soldiers who laid down their arms and married into the village. Some are the children of prisoners, camp followers, scouts, deserters, or rescued captives.
+Many of the high valleys shelter families who did not begin there.[^3] Some fled war. Some fled famine. Some fled a lord whose name is no longer spoken except in curses. Some were soldiers who laid down their arms and married into the village. Some are the children of prisoners, camp followers, scouts, deserters, or rescued captives.
 
 A border leaves marks after the fighting passes. A grandfather may still sleep with his boots near the bed. A wedding song may contain a marching tune. A village may keep two cemeteries though no one says why.
 
@@ -122,7 +122,7 @@ Deal gently with such people. They may appear stubborn, but often they are guard
 
 ### The Plague of Black Bells
 
-There was a sickness in the time of our grandparents, though each valley names it differently. Some call it the Black Bells, because bells rang so often that folk began to hate their sound. Some call it the Closed Door. Some call it the Year Without Weddings.
+There was a sickness in the time of our grandparents, though each valley names it differently.[^4] Some call it the Black Bells, because bells rang so often that folk began to hate their sound. Some call it the Closed Door. Some call it the Year Without Weddings.
 
 The sickness did not visit every place in the same manner. In one village it emptied houses. In another it left survivors changed in temper, skin, voice, or appetite. Some villages burned bedding, some burned barns, and a few burned people before they were dead. Such matters are confessed rarely and remembered always.
 
@@ -172,7 +172,7 @@ When invited to bless a vineyard or cellar, go. Such blessings are taken serious
 
 ### The Eastern Wind Carries War
 
-When men speak of the eastern wind, they often mean more than weather. They mean riders, banners, horse markets, border towers, old raids, new taxes, and rumors of armies crossing fields no local eye has seen.
+When men speak of the eastern wind, they often mean more than weather.[^5] They mean riders, banners, horse markets, border towers, old raids, new taxes, and rumors of armies crossing fields no local eye has seen.
 
 A child may know war first as a song. Then as a lame veteran. Then as a missing uncle. Then as a requisition order nailed to the church door. The wise listen early, when war is still only a change in the price of oats.
 
@@ -200,7 +200,7 @@ A mine is not a hole. It is a bargain with darkness. A spring is not water alone
 
 ### Salt Is White Gold
 
-Salt is life made mineral. It keeps meat through winter, seasons soup, preserves cheese, pays debts, fills wagons, and gives value to valleys otherwise too steep for grain. Men have killed for silver and gold, but families survive by salt.
+Salt is life made mineral. It keeps meat through winter, seasons soup, preserves cheese, pays debts, fills wagons, and gives value to valleys otherwise too steep for grain. Men have killed for silver and gold, but families survive by salt.[^6]
 
 A salt mine is wealth beneath danger. The miners descend before dawn with lamps and prayers. They joke loudly because silence below the earth is too full. They know salt purifies, preserves, and stings. For this reason, salt is used in blessings, oaths, thresholds, and funerals.
 
@@ -220,7 +220,7 @@ Counsel no one to swear on sky-iron lightly. A man may break an ordinary promise
 
 ### The Bells Hold Back the Mountains
 
-The bells of the high country do more than mark the hour. They call Mass, warn of fire, announce death, drive off storms, settle cattle, frighten wolves, guide travelers in fog, and remind the mountains that men still dwell below.
+The bells of the high country do more than mark the hour. They call Mass, warn of fire, announce death, drive off storms, settle cattle, frighten wolves, guide travelers in fog, and remind the mountains that men still dwell below.[^7]
 
 Some bells are famous. They have names, histories, grudges, and tones known by every child in the valley. A cracked bell is mourned. A stolen bell is an outrage. A bell that rings by itself is discussed for generations.
 
@@ -290,7 +290,7 @@ If a lost person comes back from a cave well-fed, dry, and speaking strangely, d
 
 ### The Glacier Keeps Accounts
 
-The glacier is the coldest archive in the Crownlands. It preserves what fire, rot, guilt, and forgetfulness would destroy. Men lost in storms, bells dragged upward, wagons, rings, bones, tools, saints’ relics, and murder weapons may all return from the ice.
+The glacier is the coldest archive in the Crownlands. It preserves what fire, rot, guilt, and forgetfulness would destroy.[^8] Men lost in storms, bells dragged upward, wagons, rings, bones, tools, saints’ relics, and murder weapons may all return from the ice.
 
 The people say the glacier keeps accounts. It releases what is owed when payment comes due. A body emerging after a century is not called accident but reckoning.
 
@@ -308,7 +308,7 @@ The wise do not ask, “Is the past gone?” The past is never gone here. It is 
 
 ### The Roman Roads Remain
 
-The old straight roads are among the strangest works of men now dust. They cross bog, forest, pasture, and slope with stubborn confidence, as if hills were arguments already answered. Their stones are taken for church walls, hearths, bridges, and grave markers.
+The old straight roads are among the strangest works of men now dust.[^9] They cross bog, forest, pasture, and slope with stubborn confidence, as if hills were arguments already answered. Their stones are taken for church walls, hearths, bridges, and grave markers.
 
 Some milestones still show letters few can read. Others turn in the night. The people use such roads when convenient and avoid them when they seem too eager.
 
@@ -358,7 +358,7 @@ Should the glacier reveal streets, close them if you can. No city sleeps beneath
 
 ### Charlemagne Slept Here
 
-The old king under the mountain is claimed by many valleys and denied by none with confidence. He sits, they say, at a stone table with his knights. His beard grows through the rock. Ravens circle until the appointed hour.
+The old king under the mountain is claimed by many valleys and denied by none with confidence.[^10] He sits, they say, at a stone table with his knights. His beard grows through the rock. Ravens circle until the appointed hour.
 
 This story comforts the wronged. One day, justice will wake. Yet sleeping justice is a dangerous hope. If such a king rose, he might bless the poor, break the proud, or demand every old oath be fulfilled in blood.
 
@@ -378,7 +378,7 @@ Do not let boys dig in star-tombs for trinkets. A grave opened under the wrong s
 
 ### The Abbey Libraries Hide Older Truths
 
-Abbey libraries are not quiet because nothing happens there. They are quiet because too much has happened and been bound in leather. Beneath psalms lie erased treaties, old charms, family genealogies, maps of forbidden roads, plague lists, trial records, and names no one now pronounces.
+Abbey libraries are not quiet because nothing happens there. They are quiet because too much has happened and been bound in leather.[^12] Beneath psalms lie erased treaties, old charms, family genealogies, maps of forbidden roads, plague lists, trial records, and names no one now pronounces.
 
 A novice with a knife and lamp can uncover more danger from one scraped page than a mercenary with a sword from ten battlefields.
 
@@ -426,7 +426,7 @@ In a hamlet, do not ask in public what should be asked over bread.
 
 ### The Market Towns Bind Us
 
-The market town is where valleys meet without admitting dependence. Here the herder, miner, brewer, widow, clerk, smith, monk, soldier, and thief all stand under the same awnings.
+The market town is where valleys meet without admitting dependence. Here the herder, miner, brewer, widow, clerk, smith, monk, soldier, and thief all stand under the same awnings.[^13]
 
 Market law is swift because trade cannot wait upon long sermons. Bad measures, false coin, spoiled grain, and unpaid debts are judged harshly. A reputation lost on market day may not be recovered for years.
 
@@ -436,7 +436,7 @@ A priest in a market town hears more truth in tavern scraps than in official pet
 
 ### The Abbeys Keep the Light
 
-Abbeys are storehouses of bread, wine, medicine, letters, relics, discipline, and secrets. They feed the hungry in winter and lend seed in spring. They teach boys letters and girls accounts when wiser abbots permit it. They preserve books no noble could read and lands no peasant could defend.
+Abbeys are storehouses of bread, wine, medicine, letters, relics, discipline, and secrets. They feed the hungry in winter and lend seed in spring. They teach boys letters and girls accounts when wiser abbots permit it. They preserve books no noble could read and lands no peasant could defend.[^15]
 
 The people love an abbey that feeds them and fear an abbey that records them. A monk with a ledger may outlast a lord with a sword.
 
@@ -446,7 +446,7 @@ When you visit an abbey, be courteous to the cellarer, the infirmarian, and the 
 
 ### The High Pastures Are Another World
 
-In summer the cattle climb, and with them go herders, bells, dogs, songs, cheeses, flirtations, storms, and freedoms not permitted below. The high pastures are not lawless, but their laws are older and lighter-footed.
+In summer the cattle climb, and with them go herders, bells, dogs, songs, cheeses, flirtations, storms, and freedoms not permitted below.[^16] The high pastures are not lawless, but their laws are older and lighter-footed.
 
 What occurs above the tree line may not be discussed in the valley except by custom. A returned herder with white hair, a new song, or a fear of milk should not be mocked.
 
@@ -476,7 +476,7 @@ If something dreadful happens in a river town, ask who benefits from the current
 
 ### The Free Cities Are Proud
 
-A free city loves its charter like a knight loves his sword. Its citizens point to seals, privileges, walls, towers, guild rights, and old exemptions as if reciting a litany.
+A free city loves its charter like a knight loves his sword.[^14][^17] Its citizens point to seals, privileges, walls, towers, guild rights, and old exemptions as if reciting a litany.
 
 Such cities are often bold, clever, vain, generous, and litigious. They may defy a noble with ink and hire soldiers by supper. Their councils speak of liberty while poor apprentices sleep under benches.
 
@@ -518,13 +518,13 @@ When four authorities claim the same prisoner, corpse, field, bell, or relic, lo
 
 ## Concerning Lords and Law
 
-Law in the mountains is not a single road. It is a braided river: imperial decree, village custom, noble right, guild contract, church judgment, widow’s claim, ordeal, oath, and memory. A newcomer who asks, “What is the law?” will be answered, “Whose law?”
+Law in the mountains is not a single road. It is a braided river: imperial decree, village custom, noble right, guild contract, church judgment, widow’s claim, ordeal, oath, and memory.[^18] A newcomer who asks, “What is the law?” will be answered, “Whose law?”
 
 Do not despair. This confusion is also a kind of order. It has preserved many valleys longer than cleaner systems would have done.
 
 ### The Linden Court Rules
 
-Many villages hold judgment beneath a linden tree. Beneath its shade, debts are named, marriages disputed, inheritances divided, insults measured, and crimes remembered aloud. The tree is not furniture. It is witness.
+Many villages hold judgment beneath a linden tree.[^19] Beneath its shade, debts are named, marriages disputed, inheritances divided, insults measured, and crimes remembered aloud. The tree is not furniture. It is witness.
 
 People trust such courts because everyone sees who speaks and who looks away. The leaves have heard more truth than many judges.
 
@@ -574,7 +574,7 @@ If a dispute concerns the high places, do not rely only on documents. Ask the sh
 
 ### The Guilds Govern by Contract
 
-Guild law is made of ink, seal, apprenticeship, reputation, price, and punishment. Brewers, smiths, carters, masons, miners, weavers, and salt-workers each guard their mysteries. A guild can feed a widow, train an orphan, ruin a cheat, and starve a town by closing its hands.
+Guild law is made of ink, seal, apprenticeship, reputation, price, and punishment.[^13] Brewers, smiths, carters, masons, miners, weavers, and salt-workers each guard their mysteries. A guild can feed a widow, train an orphan, ruin a cheat, and starve a town by closing its hands.
 
 The people complain of guilds and rely on them. A bad loaf, cracked wheel, false measure, or weak beam is not only poor work; it is an offense against the order of trade.
 
@@ -692,7 +692,7 @@ When a castle asks the parish for men or stores, write down the request. Hunger 
 
 ### The Hussars Ride the Marches
 
-The light riders of the marches live by speed, horseflesh, courage, and terrible news. They appear at dawn, vanish at noon, and return after dark with blood on the saddle and laughter in their mouths.
+The light riders of the marches live by speed, horseflesh, courage, and terrible news.[^20] They appear at dawn, vanish at noon, and return after dark with blood on the saddle and laughter in their mouths.
 
 Children admire them. Mothers worry when daughters do. Old men count their horses and remember wars.
 
@@ -734,7 +734,7 @@ The danger is forgetting the terms. A bargain without memory becomes a trap with
 
 ## Concerning Mysticism
 
-The high country has two attitudes toward magic: it denies it in daylight and prepares for it at dusk. Men scoff at charms while carrying them. Women condemn witches while tying protective knots. Scholars mock omens and then consult calendars before travel.
+The high country has two attitudes toward magic: it denies it in daylight and prepares for it at dusk.[^21] Men scoff at charms while carrying them. Women condemn witches while tying protective knots. Scholars mock omens and then consult calendars before travel.
 
 Do not be hasty in naming all such matters superstition. Many are foolish. Some are sinful. A few are true enough to bury the careless.
 
@@ -770,7 +770,7 @@ If a place is offended, repair manners before searching for monsters.
 
 ### Táltos Dreamers Walk the Sky
 
-Certain children are born marked: with extra bone, strange teeth, a caul, a bright patch of hair, too-wise eyes, or dreams that frighten adults. Such a one may be called táltos by those who know the eastern songs.
+Certain children are born marked: with extra bone, strange teeth, a caul, a bright patch of hair, too-wise eyes, or dreams that frighten adults. Such a one may be called táltos by those who know the eastern songs.[^22]
 
 These dreamers are believed to ride storms, fight unseen battles, speak with the dead, heal, curse, or bear warnings meant for the whole valley. Their gift is seldom comfortable.
 
@@ -810,7 +810,7 @@ In confession, listen when someone says, “It has come upon our house again.”
 
 ### Masks Let Spirits In
 
-Festival masks are carved with care because they are not mere disguises. A mask gives permission: to frighten, mock, bless, punish, dance, howl, demand, and become other for one night.
+Festival masks are carved with care because they are not mere disguises.[^23] A mask gives permission: to frighten, mock, bless, punish, dance, howl, demand, and become other for one night.
 
 The danger is that a well-made mask may continue the work after the wearer is gone. Some masks remember faces. Some prefer not to be stored.
 
@@ -842,13 +842,13 @@ When magic returns, so do old debts. Wonders are not decorations. They are summo
 
 ## Concerning Faith
 
-Faith in the mountains is not only doctrine. It is calendar, bread, birth, burial, feast, fasting, marriage, oath, work, medicine, and the rhythm by which the year is made bearable. A priest here will be asked to bless cows, bridges, babies, rifles, seeds, wells, tools, boats, masks, storm candles, and men who do not intend to forgive their enemies.
+Faith in the mountains is not only doctrine.[^24] It is calendar, bread, birth, burial, feast, fasting, marriage, oath, work, medicine, and the rhythm by which the year is made bearable. A priest here will be asked to bless cows, bridges, babies, rifles, seeds, wells, tools, boats, masks, storm candles, and men who do not intend to forgive their enemies.
 
 Guide them gently. The people are not empty vessels. They arrive already full of prayers.
 
 ### Bells, Saints, and Relics Protect Us
 
-Many villages trust their bells, saints, and relics as one trusts walls. A saint’s finger may guard a bridge. A bell may scatter storm. A painted martyr may be asked to protect cattle. A relic may travel through fields before sowing.
+Many villages trust their bells, saints, and relics as one trusts walls.[^25] A saint’s finger may guard a bridge. A bell may scatter storm. A painted martyr may be asked to protect cattle. A relic may travel through fields before sowing.
 
 These customs are not theater to the people. They have seen too many seasons turn on blessing, accident, and memory.
 
@@ -908,7 +908,7 @@ Do not mock a strange saint. Strange guardians may guard strange doors.
 
 ### Pilgrimage Holds the World Together
 
-Pilgrimage roads bind the mountains more surely than many laws. The lame, guilty, grateful, curious, desperate, and devout walk together toward shrines, springs, black Madonnas, skull chapels, thorn altars, and high crosses.
+Pilgrimage roads bind the mountains more surely than many laws.[^26] The lame, guilty, grateful, curious, desperate, and devout walk together toward shrines, springs, black Madonnas, skull chapels, thorn altars, and high crosses.
 
 Pilgrims carry songs, lice, miracles, forged badges, news, disease, repentance, and trouble. Still, the road is holy because it teaches dependence.
 
@@ -950,7 +950,7 @@ A priest must be shepherd, not torchbearer. Some fires purify. Others merely bur
 
 ## Concerning the Hidden Folk
 
-The Hidden Folk are not one nation, species, court, or doctrine. They are the ones under the hill, above the pasture, behind the waterfall, within the hearth, beneath the mine, beside the cradle, across the lake, and inside old agreements. Some are beautiful, some small, some vast, some helpful, some cruel, many exact.
+The Hidden Folk are not one nation, species, court, or doctrine.[^23] They are the ones under the hill, above the pasture, behind the waterfall, within the hearth, beneath the mine, beside the cradle, across the lake, and inside old agreements. Some are beautiful, some small, some vast, some helpful, some cruel, many exact.
 
 The safest sentence regarding them is this: they keep accounts differently than men.
 
@@ -1058,7 +1058,7 @@ If the last of any hidden court offers a gift, beware refusing too quickly. It m
 
 ## Concerning Beasts
 
-The high country has beasts enough without invention: wolves, bears, boar, eagles, lynx, snakes, hunger, and weather. Yet the people also speak of creatures that do not fit tidy books: tatzelwurms, lindworms, griffins, lake serpents, omen birds, black dogs, and beasts that remember being human.
+The high country has beasts enough without invention: wolves, bears, boar, eagles, lynx, snakes, hunger, and weather. Yet the people also speak of creatures that do not fit tidy books: tatzelwurms, lindworms, griffins, lake serpents, omen birds, black dogs, and beasts that remember being human.[^27][^28]
 
 A priest need not believe every tale. He should know which ones alter behavior.
 
@@ -1094,7 +1094,7 @@ If called to bless a dragon-hunt, ask what the dragon holds. The answer may save
 
 ### Omen Beasts Guide Fate
 
-White stags, black goats, golden eagles, storm horses, and the great Turul are not hunted lightly. When such a beast appears, people ask who saw it first, where it looked, whether it crossed water, and what it carried.
+White stags, black goats, golden eagles, storm horses, and the great Turul are not hunted lightly.[^11] When such a beast appears, people ask who saw it first, where it looked, whether it crossed water, and what it carried.
 
 An omen beast turns ordinary life into story. A shepherd may become a founder. A child may be marked. A soldier may refuse battle because the bird flew against him.
 
@@ -1166,7 +1166,7 @@ If a monster leaves gifts at one door, ask what human promise survives beneath t
 
 ## Concerning Horrors
 
-Horror in the Alps wears many coats: winter, hunger, guilt, masks, plague, law, mirrors, old roads, the unburied dead, and men who prefer monsters to confession. Fear here is not childish. Fear is sometimes the oldest form of wisdom.
+Horror in the Alps wears many coats: winter, hunger, guilt, masks, plague, law, mirrors, old roads, the unburied dead, and men who prefer monsters to confession.[^23][^29] Fear here is not childish. Fear is sometimes the oldest form of wisdom.
 
 But wisdom can curdle. The priest must learn when to calm fear and when to obey it.
 
@@ -1202,7 +1202,7 @@ If one walks from the ice, offer warmth but not promises. The cold dead often as
 
 ### Night Spirits Feed Quietly
 
-There are spirits that do not break doors. They enter by dream, loneliness, debt, desire, chimney smoke, milk steam, or a whispered bargain made half-asleep. They bring wealth, beauty, relief, or revenge, and feed on years, health, memory, or breath.
+There are spirits that do not break doors.[^30] They enter by dream, loneliness, debt, desire, chimney smoke, milk steam, or a whispered bargain made half-asleep. They bring wealth, beauty, relief, or revenge, and feed on years, health, memory, or breath.
 
 Their victims are often ashamed. A man who invited ruin for one night of comfort may hide the wound until his children pay.
 
@@ -1212,7 +1212,7 @@ In such cases, confession must be gentle or it will not come at all.
 
 ### The Wild Hunt Crosses the Sky
 
-On certain nights horns sound over the ridges and hounds cry where no road runs. The Wild Hunt passes with dead riders, smoke horses, antlered kings, lost soldiers, and souls pursued for reasons hidden from the living.
+On certain nights horns sound over the ridges and hounds cry where no road runs. The Wild Hunt passes with dead riders, smoke horses, antlered kings, lost soldiers, and souls pursued for reasons hidden from the living.[^29]
 
 People bar doors, cover fires, and do not answer knocking. Yet sometimes the hunted begs shelter, and mercy becomes dangerous.
 
@@ -1285,3 +1285,36 @@ Who remembers the old rule?
 Who profits if the rule is broken?
 
 In the Alpine country, history is not past. It is buried, frozen, sung, sealed, carved, rung, and waiting.
+
+---
+
+[^1]: [Holy Roman Empire | Definition, History, Maps, & ...](https://www.britannica.com/place/Holy-Roman-Empire)
+[^2]: [Austria-Hungary | History, Definition, Map, & Facts](https://www.britannica.com/place/Austria-Hungary)
+[^3]: [Hungary - Partition, Habsburgs, Revolution](https://www.britannica.com/place/Hungary/The-period-of-partition)
+[^4]: [Black Death | Plague, Death Toll, Definition, Cause ...](https://www.britannica.com/event/Black-Death)
+[^5]: [Ottoman Empire - Suleyman I, Expansion, Legacy](https://www.britannica.com/place/Ottoman-Empire/Suleyman-I)
+[^6]: [Hallstatt-Dachstein / Salzkammergut Cultural Landscape](https://whc.unesco.org/en/list/806/)
+[^7]: ["I call the people." Church bells in fourteenth-century ...](https://www.sciencedirect.com/science/article/abs/pii/S0304418111000121)
+[^8]: [Glaciers](https://nsidc.org/learn/parts-cryosphere/glaciers)
+[^9]: [Noricum | Celtic culture, Roman province, Alps](https://www.britannica.com/place/Noricum)
+[^10]: [Holy Roman Empire summary](https://www.britannica.com/summary/Holy-Roman-Empire)
+[^11]: [Turul](https://en.wikipedia.org/wiki/Turul)
+[^12]: [Education - Medieval, Monastic, Literacy](https://www.britannica.com/topic/education/Europe-in-the-Middle-Ages)
+[^13]: [Guild | Trade Associations & Their Role in Medieval Europe](https://www.britannica.com/topic/guild-trade-association)
+[^14]: [Commune | Medieval Europe, Historical Significance ...](https://www.britannica.com/topic/commune-medieval-Western-Europe)
+[^15]: [Monasticism in Western Medieval Europe](https://www.metmuseum.org/essays/monasticism-in-western-medieval-europe)
+[^16]: [Transhumance – sheep drive in the Ötztal Alps](https://www.unesco.at/en/culture/intangible-cultural-heritage/inventory/element/transhumance-migratory-herding-of-sheep-in-the-oetztal-alps)
+[^17]: [Imperial city | Holy Roman Empire History & Culture](https://www.britannica.com/topic/imperial-city-Holy-Roman-Empire)
+[^18]: [Germanic law | Origins, Principles & Development](https://www.britannica.com/topic/Germanic-law)
+[^19]: [Gerichtslinde](https://en.wikipedia.org/wiki/Gerichtslinde)
+[^20]: [Hussar | Prussian, Napoleonic, Light Cavalry](https://www.britannica.com/topic/hussar)
+[^21]: [The Middle Ages - Christianity](https://www.britannica.com/topic/Christianity/The-Middle-Ages)
+[^22]: [Táltos](https://en.wikipedia.org/wiki/T%C3%A1ltos)
+[^23]: [Krampus | Definition, St. Nicholas, Christmas, History, & Facts](https://www.britannica.com/topic/Krampus)
+[^24]: [Middle Ages | Definition, Dates, Characteristics, & Facts](https://www.britannica.com/event/Middle-Ages)
+[^25]: [Christianity - Relics, Saints, Worship](https://www.britannica.com/topic/Christianity/Relics-and-saints)
+[^26]: [Pilgrimage | Meaning, Examples, Religions, Places, & Sites](https://www.britannica.com/topic/pilgrimage-religion)
+[^27]: [Tatzelwurm](https://en.wikipedia.org/wiki/Tatzelwurm)
+[^28]: [Wolpertinger](https://en.wikipedia.org/wiki/Wolpertinger)
+[^29]: [Wild Hunt](https://en.wikipedia.org/wiki/Wild_Hunt)
+[^30]: [Lidérc](https://en.wikipedia.org/wiki/Lid%C3%A9rc)

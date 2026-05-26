@@ -60,6 +60,7 @@
 @import "helpers/hidden"; // site utility used for JS-driven visibility toggles
 @import "components/nav-stage-badge"; // alpha/beta/gamma stage indicators in nav
 @import "components/slides-filter"; // client-side category filter utilities
+@import "overrides-alerts";
 @import "overrides-prompts";
 @import "overrides-slides"; // slide card preview fallback styles
 @import "overrides-navbar"; // site-specific navbar sizing/alignment (must remain last so it wins)
