@@ -246,6 +246,69 @@ figcaption {
 	color: #8b0000;
 }
 
+.small-alpine-mirror-page {
+	--shire-post-display-font: 'IM Fell English', 'Cormorant Garamond', Georgia, serif;
+	--shire-post-ledger-font: 'Dana Library Hand', 'Architects Daughter', cursive;
+	--shire-post-italic-font: 'Old Man Eloquent', cursive;
+}
+
+.article .small-alpine-mirror-page h1,
+.article .small-alpine-mirror-page h2,
+.article .small-alpine-mirror-page h3,
+.article .small-alpine-mirror-page h4,
+.article .small-alpine-mirror-page h5,
+.article .small-alpine-mirror-page h6,
+.small-alpine-mirror-page h1,
+.small-alpine-mirror-page h2,
+.small-alpine-mirror-page h3,
+.small-alpine-mirror-page h4,
+.small-alpine-mirror-page h5,
+.small-alpine-mirror-page h6 {
+	font-family: var(--shire-post-display-font);
+	font-weight: 400;
+	font-feature-settings: "liga", "dlig";
+	letter-spacing: 0.01em;
+}
+
+.article .small-alpine-mirror-page,
+.small-alpine-mirror-page {
+	font-family: var(--shire-post-ledger-font);
+	font-size: 1.35rem;
+	line-height: 1.6;
+	font-feature-settings: "liga", "dlig", "onum";
+}
+
+.article .small-alpine-mirror-page table,
+.article .small-alpine-mirror-page th,
+.article .small-alpine-mirror-page td,
+.small-alpine-mirror-page table,
+.small-alpine-mirror-page th,
+.small-alpine-mirror-page td {
+	font-family: var(--shire-post-ledger-font);
+	font-size: 1rem;
+	line-height: 1.45;
+}
+
+.article .small-alpine-mirror-page em,
+.article .small-alpine-mirror-page i,
+.article .small-alpine-mirror-page cite,
+.small-alpine-mirror-page em,
+.small-alpine-mirror-page i,
+.small-alpine-mirror-page cite {
+	font-family: var(--shire-post-italic-font);
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1.2em;
+	line-height: 1;
+}
+
+.article .small-alpine-mirror-page strong em,
+.article .small-alpine-mirror-page em strong,
+.small-alpine-mirror-page strong em,
+.small-alpine-mirror-page em strong {
+	font-weight: 700;
+}
+
 
 .reference sup a {
 	color: #8b0000;

@@ -83,7 +83,7 @@ And yet that is why this story is worth studying and understading.
 
 The story is not simply that artificial intelligence is coming for jobs. That is too blunt, too easy, and too lazy. The real story is that AI is rearranging the inside of companies—the hidden beams, the hallways, the wiring behind the walls, the places most people never see unless something breaks.
 
-To say it again: AI change is not mainly a technology change.
+To say it again: AI change is not a technology change.
 
 It is a people change.
 
