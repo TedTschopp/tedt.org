@@ -4377,5 +4377,33 @@
       "https://tschopp.net/users/Ted/statuses/116631168897533089"
     ],
     "lastTootTimestamp": 1779650404403
+  },
+  "https://tedt.org/The-Small-Alpine-Mirror/": {
+    "id": "/The-Small-Alpine-Mirror/",
+    "title": "The Small Alpine Mirror",
+    "summary": "A Märchen Engine setting guide to Alpine crownlands, salt, iron, abbeys, hidden folk, beasts, and horrors, with story prompts for tabletop play.",
+    "content_text": "A Märchen Engine setting guide to Alpine crownlands, salt, iron, abbeys, hidden folk, beasts, and horrors, with story prompts for tabletop play. https://tedt.org/The-Small-Alpine-Mirror/",
+    "url": "https://tedt.org/The-Small-Alpine-Mirror/",
+    "image": "https://tedt.org/img/Swiss/An_illustration_of_a_serene_and_verdant_Alpine_valley.webp",
+    "tags": [
+      "RPG",
+      "TTRPG",
+      "The Märchen Engine",
+      "Folklore",
+      "Alpine Folklore",
+      "Game Mastering",
+      "Worldbuilding"
+    ],
+    "date_published": "2026-05-25T05:00:00-07:00",
+    "date_modified": "2026-05-25T05:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116640289894581298"
+    ],
+    "lastTootTimestamp": 1779789579798
   }
 }
