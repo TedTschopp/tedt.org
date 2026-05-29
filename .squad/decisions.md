@@ -376,6 +376,83 @@ Magic Items have excellent GM guidance; Social Combat minimal; Bastion D&D-ified
 
 ---
 
+### 10. Märchen Engine Content Status Assessment — May 2026
+
+**Date:** 2026-05-28T21:06:46.885-07:00  
+**Owner:** Aragorn (Lead / Product Owner)  
+**Type:** content-publication-readiness  
+**Status:** active
+
+I am establishing the authoritative assessment of Märchen Engine publication readiness and sequencing strategy. Key findings:
+
+#### Verdict
+- **Published intro:** Ready now (minor edit)
+- **Tier 1 subsystems (Magic Items, Nemesis, Social Combat):** Ready with 1–2 hour polish per piece + worked examples
+- **System-wide publication:** NOT READY without structural work
+
+#### Blocking Issues (Must Fix Before Publishing Coherent Game Line)
+
+1. **Character Creation (unpublished)** — No onramp for players; blocks all subsystems
+2. **System Architecture Overview (missing)** — No integration narrative; subsystems feel isolated
+3. **Series metadata (absent)** — Posts won't form discoverable collections
+4. **Campaign proof-of-concept (missing)** — No evidence that systems work together
+
+#### Mechanical Grounding Gaps
+
+- **Magical Schools:** Beautiful but unmechanical; needs Casting Framework section
+- **Morality Aspects:** Philosophical but rules-invisible; needs Mechanical Hooks section
+- **Bastion Rules:** D&D-ified; needs Märchen flavor pass or native rewrite
+
+#### Sequencing Strategy
+
+**Phase 1 (This Week): Unblock Publishing**
+- Write Character Creation chapter (~2–3 hours)
+- Write System Architecture Overview (~2–2.5 hours)
+- Add front-matter series metadata to all subsystems
+
+**Phase 2 (Week 2): Build Reader Confidence**
+- Publish Tier 1 subsystems (Magic Items, Nemesis, Social Combat) with worked examples
+- Publish Character Creation (series_step: 2)
+- Publish System Architecture Overview (series_step: 1)
+
+**Phase 3 (Week 3): Mechanical Completion**
+- Add Casting Framework; publish Magical Schools
+- Add Moral Mechanics; publish Morality Aspects
+- Publish Game Rules 4D8 with worked example
+
+**Phase 4 (Week 4): Proof of Concept**
+- Publish Unified Campaign Example (3,000 words, 6–12 session arc)
+- This proves all systems interlock
+
+**Post-Launch:** Setting modules, advanced subsystems, supplements
+
+#### High-Leverage Moves (Next 5–7 Days)
+
+1. Formalize Character Creation (prerequisite for all subsystems)
+2. Write System Architecture Overview (proves coherence)
+3. Add series metadata to 4 Tier 1 subsystems
+4. Publish 1–2 Tier 1 pieces as proof-of-concept
+
+#### Deliverable
+
+- **Report created:** `MARCHEN-ENGINE-CONTENT-STATUS-REPORT.md`
+- **Format:** Decision-oriented, actionable, file-by-file assessment
+- **Includes:** Executive summary, current state, working pieces, gaps, publishability scorecard, priority roadmap, specific sequencing strategy
+
+#### Team Impact
+
+- **Bilbo (Editorial):** Use report as quality gate for WIP publishing. Before moving docs to `_posts/`, ensure they pass "mechanical clarity" test: Could a GM actually run this?
+- **Elrond (Information Architect):** Coordinate front-matter standardization, series metadata, and reading order once Character Creation + System Architecture Overview are complete.
+- **Ted (Author):** Make three decisions this week: (1) scope (complete RPG vs. modular toolkit?), (2) commit to Character Creation, (3) choose System Architecture style.
+
+#### Deferred / Out-of-Scope
+
+- Integration of Bastion Rules with moral framework (defer to decision; option to rewrite or replace)
+- Setting modules (Light of Life, Alpine Mirror) — post-launch supplements after core rules stabilize
+- Generic advice pieces without Märchen hooks — archive or expand
+
+---
+
 ## Governance
 
 - All meaningful changes require team consensus

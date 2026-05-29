@@ -23,3 +23,21 @@
 **Cross-Team Consensus:** Tag infrastructure (#183) is universal forcing function; enables downstream discovery, filtering, attribution, automation, SEO  
 **Next Phase:** Faramir lead on tag infrastructure implementation (Issue #183); coordinate with Aragorn on tranche activation timeline  
 **Output:** Orchestration log 2026-05-29T03:23:52Z-faramir.md; decisions.md consolidated
+
+---
+
+## 2026-05-29T04:06:46Z – Märchen Engine Publishing Strategy Coordination (Decision #9)
+
+**Role:** Taxonomy & Search  
+**Directive:** New Taxonomy for TTRPG Subsystems  
+
+### Handoff
+- **From:** Elrond (Information Architect) - Decision #9
+- **Your Action:** Introduce new taxonomy for Märchen Engine
+  - New taxonomy: `Subsystem Type` (core, optional, setting-specific)
+  - Tag/metadata support to distinguish core mechanics from optional subsystems
+- **Coordination:** With Aragorn on RPG schema expansion (issue #181)
+  - Account for Märchen Engine's `Story Thread Rank`, `Bond`, `Nemesis Tier` mechanics
+  - Front matter extensions needed
+
+**Status:** ⏳ Awaiting design decision on subsystem classification levels
