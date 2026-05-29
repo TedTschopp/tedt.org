@@ -690,3 +690,699 @@ This review was driven by regression risk mitigation. Two validation systems cur
 *Delivery: Review artifact created at `/Users/tedtschopp/.copilot/session-state/5e7192b1-a46b-4398-9a32-3fd93e7a9e24/files/code-review/samwise-review.md`*
 
 
+# Decision: Content Review Consolidation — May 2026
+
+**Date:** 2026-05-28T19:53:42.576-07:00  
+**Author:** Aragorn (Lead / Product Owner)  
+**Type:** backlog-management  
+**Status:** complete
+
+## Context
+
+Three specialist content reviews (Bilbo, Elrond, Faramir) produced 24 findings spanning editorial quality, information architecture, and content discovery. Task was to dedupe against 26 existing open issues, consolidate overlapping findings, and create a concise actionable backlog.
+
+## Decision
+
+Applied the following consolidation strategy:
+
+1. **Merge overlapping findings** — Related findings from different reviewers combined into single issues when they address the same content infrastructure (e.g., excerpt strategy + pillar pages)
+
+2. **Fold into existing issues** — Findings that extend scope of existing tracked work referenced via comments rather than new issues (e.g., image-alt gap added to #171)
+
+3. **Preserve domain separation** — Findings affecting distinct content types kept as separate issues (e.g., quotes #179 vs. slides #182)
+
+4. **Priority alignment** — All content findings assigned P2; no P1 content blockers (escalation recommended for #171)
+
+## Outcome
+
+| Metric | Count |
+|--------|-------|
+| New issues created | 9 |
+| Existing issues expanded | 1 |
+| Duplicates avoided | 7 |
+| Findings consolidated | 15 |
+
+**Tracker issue #163 updated with grouped summary of all 9 new issues.**
+
+## Issues Created
+
+- #178 — SEO pillar pages and excerpt strategy (P2)
+- #179 — Quote thematic curation (P2)
+- #180 — README editorial guide (P2)
+- #181 — RPG schema unification (P2)
+- #182 — Slides gallery (P2)
+- #183 — Tagging model standardization (P2)
+- #184 — Prompt series adoption (P2)
+- #185 — Related posts infrastructure (P2)
+- #186 — Category landing page enhancements (P2)
+
+## Rationale
+
+Goal was **high-signal, minimal duplication**. The consolidation approach:
+- Reduces cognitive overhead for assignees (one issue, complete scope)
+- Enables parallel work on independent infrastructure (tags, series, related posts)
+- Preserves traceability from reviewer findings to issue acceptance criteria
+- Keeps backlog focused on actionable work, not fragmented observations
+
+## Escalation Recommendation
+
+Issue #171 (front matter validation) should be escalated from P2 to P1:
+- 699 posts (69% of all images) missing `image-alt`
+- WCAG 2.1 Level A non-compliance
+- SEO penalty risk for indexed content
+- Bulk of gap is Gamma World creatures; #181 (schema unification) enables remediation
+# Follow-Up Audit Synthesis: Priority Decision
+
+**Date:** 2026-05-28T20:09:45.997-07:00  
+**Author:** Aragorn (Lead / Product Owner)  
+**Type:** prioritization  
+**Status:** active  
+**Distribution:** Squad leads, Engineering, Content Editor  
+
+---
+
+## Decision: Activate Three-Move Tranche Immediately
+
+### Situation
+Three specialist audits (Analytics/Automation, Discovery/Navigation, AI-SEO/Metadata) converge on identical bottleneck: **metadata infrastructure gaps (tags 31%, related 0%, series 5%) block every downstream feature.** Audits identify 24 findings across automation, discovery, and SEO lanes; all map to existing backlog issues #178–#186.
+
+### Key Findings (Consensus)
+- **Tag infrastructure #183** is a forcing function: unblocks filtering, clouds, discovery, attribution, and automation pipelines
+- **Related-posts field #185** is immediate UX win: visible to readers; breaks content silos
+- **Series adoption pilot #184** is proof-of-concept: motivates investment in editorial CLI
+
+All three are prerequisites for medium-term work (slides gallery, category enhancements, pillar pages).
+
+### Decision
+**Activate three-move tranche for immediate execution** (week 1–3):
+1. Tag infrastructure audit + plugin + archive pages (3–4 hrs) → Unblocks discovery, filtering, attribution
+2. Related-posts field + sidebar card + seed data (2–3 hrs) → Breaks silos, bridges collections
+3. Series adoption pilot + automation consolidation (2–3 hrs) → Proof-of-concept
+
+**Defer everything else** to tier 2 (slides gallery, category pages, consent banner) and tier 3 (pillar pages, schema expansion) until metadata model stabilizes.
+
+### Rationale
+- **Data-driven:** All three audits independently recommend tag + related + series as critical blockers
+- **Low risk:** Reuses existing patterns (templates, plugins, scripts already established)
+- **Unblocking:** Clears path for 100+ posts of follow-on work
+- **Team-ready:** Issues already created and consolidated; no scope ambiguity
+
+### Acceptance Criteria
+- [ ] Tag index plugin generates; 50+ posts tagged; `/tag/{slug}/` pages render
+- [ ] Related-posts include created; 5+ high-traffic posts link manually; docs updated
+- [ ] Series metadata populated on 5–10 prompts; prompt-details navigation functional; curation playbook documented
+- [ ] Editorial CLI or consolidated script demonstrates metadata gap detection
+- [ ] CI validation gates enabled (image-alt, feed integrity)
+
+### Risks & Mitigations
+| Risk | Mitigation |
+|------|-----------|
+| Series adoption feels empty if only 5–10 populated | Highlight proof-of-concept on Prompt Library page; document curation playbook |
+| Tagging audit fatigue (1,000+ posts) | Start with top 50–100 by traffic; automation fills gaps; accept "good enough" |
+| Related-posts maintenance burden (manual curation) | Seed high-traffic posts; automation can infer via tags in future; not every post needs field |
+
+### Timeline
+- **Week 1:** Tag infrastructure (infrastructure + audit)
+- **Week 2:** Related-posts field (templates + curation seed)
+- **Week 3:** Series pilot + automation consolidation (proof-of-concept + editorial CLI)
+
+### Next Steps
+1. **Engineering:** Coordinate tag index + related-posts includes + automation consolidation roadmap
+2. **Content Editor:** Prepare tagging audit scope (top 50–100 by traffic); curation guide for series
+3. **QA:** Define acceptance criteria for tag display, related-posts rendering, series navigation
+4. **Product:** Track progress via GitHub project board; escalate blocking dependencies
+
+---
+
+**Authority:** Aragorn (Lead / Product Owner)  
+**Approved:** 2026-05-28T20:09:45.997-07:00  
+**Distribution:** Ted Tschopp, Squad leads
+---
+author: Bilbo (Editorial Writer)
+date: 2026-05-28T19:53:42.576-07:00
+status: pending_decision
+---
+
+# Decision Inbox: Content-Market Fit Strategy – Homepage Coverage Scope
+
+## Context
+
+During editorial review, found that homepage content filtering **intentionally excludes**:
+- Quotes (separate carousel)
+- Folklore, Bestiary, RPG Posts (niche categories)
+- Prompts (different layout)
+- Slides (different layout)
+
+This keeps homepage focused on **Blog + Folklore carousel**, but **siloes high-value niche assets** from casual discovery.
+
+## The Question
+
+**Should homepage surface more niche content (RPG design, folklore, prompts), or keep current focused scope?**
+
+### Option A: Keep Focused (Current)
+**Pros:**
+- Clean, fast homepage (fewer cards to render).
+- Blog posts are primary discovery entry point.
+- Niche content has dedicated pages; users can find via search/navigation.
+
+**Cons:**
+- RPG design essays (transferable to business strategy) buried.
+- Prompt library (solves real work problems) undiscovered.
+- Missed cross-pollination (blog post on "systems thinking" could link to Gamma World encounter using similar patterns).
+
+### Option B: Add Thematic Bridges
+**Approach:** Don't add more homepage cards, but **add "Related Resources" sections** to blog posts and create **cross-collection landing pages**.
+
+**Pros:**
+- Homepage stays clean; internal linking does the work.
+- Users organically discover niche assets while reading related posts.
+- SEO improves (more internal link equity).
+- Better content-market fit (readers understand depth of your expertise).
+
+**Cons:**
+- Requires tagging + cross-linking infrastructure (small lift).
+- More editorial curation needed per post.
+
+### Option C: Add Niche Carousel Hint
+**Approach:** Add small "Explore More" section on homepage (e.g., "Also in this collection: RPG Design, Folklore, Prompts") with light cards or dropdown.
+
+**Pros:**
+- Signals content breadth without cluttering homepage.
+- Users know assets exist.
+- Builds traffic to niche sections.
+
+**Cons:**
+- Homepage becomes busier; design trade-off.
+- Requires updated design/layout.
+
+## Recommendation (Editorial perspective)
+
+**Option B + small Option C** — Keep homepage clean, but:
+1. Build content bridges (related resources, cross-links).
+2. Create 1–2 pillar pages linking thematic clusters (e.g., "/guides/systems-thinking/").
+3. Add subtle "Explore More" hint on homepage (optional).
+
+**Rationale:** Your niche content is **genuinely valuable and unique** — RPG design teaches systems thinking, prompts solve real problems. Burying them wastes SEO + discovery opportunity. Light internal linking does the work without cluttering UI.
+
+## Decision Owner
+
+**Ted** — This is a content strategy call. Recommend a 15-min sync to confirm approach before ticketing infrastructure work.
+
+## Waiting For
+
+- [ ] Ted's decision on homepage scope
+- [ ] Confirmation on Option A/B/C preference
+- [ ] Direction on pillar page priorities (which 2–3 clusters to pilot first?)
+---
+Date: 2026-05-28T19:53:42.576-07:00
+Agent: Elrond (Information Architect)
+Type: Content Model & IA Audit
+Status: Complete (awaiting team prioritization)
+---
+
+# Content Architecture Review Decision Record
+
+## Decision: Eight structural content IA issues identified and documented for backlog
+
+### Context
+Performed read-only content model audit spanning 1,009 posts across 14 categories. Systematic analysis of front matter conventions, taxonomy alignment, metadata completeness, and series/workflow structure.
+
+### Issues Identified (Priority Order)
+
+**P1 (Urgent):**
+1. **Specialized content schema fragmentation** — Gamma World creatures (699 posts) use incompatible front matter; blocks scalability
+2. **Image accessibility & SEO gap** — 699 posts missing image-alt; escalate existing #171 from P2 to P1
+
+**P2 (Near-term):**
+3. Prompt series adoption <5% (only 3 of 56 prompts)
+4. Tag metadata inconsistency (36% missing/null/empty)
+5. Homepage distribution skew (69% specialized content)
+6. Category case normalization & description/excerpt canonical model
+7. Missing content pillars & topic clustering for SEO/discovery
+
+### Rationale for Decisions
+
+**Why P1 for specialized schema:**
+- Blocks clean information architecture
+- 69% of site content affected
+- Will compound with each new specialized collection (books, NPCs, etc.)
+
+**Why escalate image-alt to P1:**
+- WCAG 2.1 Level A compliance issue
+- 699 posts non-compliant
+- Affects search indexing and assistive technology users
+
+**Why P2 for adoption issues:**
+- High-value but not blocking (infrastructure already in place)
+- Can be driven through content governance and template polishing
+- Lower severity than schema/compliance issues
+
+### Implications
+
+**For templates/render:**
+- Homepage carousel must account for distribution skew
+- Schema handling needs to support both standard + specialized fields
+- Feed/syndication logic must handle dual metadata schemas
+
+**For content governance:**
+- Need clear guidelines on when series/tags are mandatory vs. optional
+- Tagging standards should be documented in README
+- New categories should follow established casing conventions
+
+**For future scaling:**
+- Topic pillars & clustering enable buyer-stage alignment (awareness/consideration/decision)
+- Structured pillar pages improve AI SEO discoverability
+- Hub-and-spoke architecture supports cross-category discovery
+
+### No Conflicts with Accepted ADRs
+All findings align with:
+- ADR 0002 (Dynamic Prompt Series) — calls for higher adoption
+- ADR 0006/0007 (Category theming & registry) — calls for slug consistency
+- ADR 0008 (Memory probe & caching) — topic clustering informs future cache strategies
+
+### Next Steps
+1. Route findings to backlog prioritization
+2. Team to assess resource requirements for P1 schema redesign
+3. Coordinate with Galadriel (templates) on homepage filtering
+4. Schedule content strategy review for pillar definitions
+
+**Artifact:** `/content-review/elrond-review.md` (8 findings with evidence, severity, and suggested issues)
+# Decision: AI-SEO & Metadata-Automation Audit Findings
+
+**Date:** 2026-05-28T20:09:45.997-07:00  
+**Agent:** Elrond (Information Architect)  
+**Status:** Recommended for Aragorn Review & Backlog Prioritization
+
+---
+
+## Context
+
+Conducted structured-data and metadata-automation audit covering:
+- JSON-LD schema coverage (BlogPosting, WebSite, BreadcrumbList present; specialized schemas missing)
+- Meta tag completeness (OG, Twitter, canonical, author signals present; image metadata sparse)
+- Front matter consistency (no validation; 69% of posts missing image-alt, 36% missing tags)
+- Feed & bot discoverability (robots.txt + llms.txt present but minimal; feeds lack structured metadata)
+- Automation opportunities (image dimensions, mastodon-post-id backfill, excerpt generation)
+
+Full audit: `/followup-audit/elrond-ai-seo.md`
+
+---
+
+## Key Findings
+
+### Strengths
+- ✅ Solid foundational SEO (OG, Twitter, canonical, description, keywords)
+- ✅ JSON-LD ArticlePosting on post pages with author & date signals
+- ✅ Indieweb integration (rel="me" links, WebMention, IndieAuth)
+- ✅ Mastodon integration infrastructure (211 posts linked; scripts in place)
+
+### Gaps (High Impact)
+- ❌ No specialized JSON-LD for Prompts (CreativeWork), Slides (Presentation), Quotes (FAQPage), Collections (ItemList)
+- ❌ No front-matter validation plugin; metadata inconsistency silent
+- ❌ Image alt-text: 699 posts (69%) missing (P1 risk per Aragorn #171)
+- ❌ Image dimensions: ~0% of posts have OG image_width/image_height
+- ❌ Collection discoverability: Prompts, Slides, Bestiary not discoverable as structured collections
+- ❌ Author schema: /profile/ page lacks Person JSON-LD; author URLs not canonical in schema
+
+---
+
+## Recommended Decisions
+
+### Decision 1: Prioritize Front Matter Validation Plugin
+**Rationale:** Unblocks metadata backfill; enables targeted audits; breaks silent inconsistency.  
+**Action:** Create `_plugins/validate-front-matter.rb` (estimated 1–2 hours). Warn on missing image-alt (if image present), missing excerpt (if >1000 words), missing tags. Emit summary report at build end.  
+**Aligns with:** Issues #171 (image-alt P1), #183 (tagging), #178 (excerpts).
+
+### Decision 2: Run Batch Image Dimensions Script Next
+**Rationale:** Quick win (1–2 hours); fixes OG image sizing for social shares immediately.  
+**Action:** Create `_code/py/generate_image_dimensions.py`; scans all posts, populates image_width/image_height.  
+**Aligns with:** Issue #88 (image optimization); OG metadata completeness.
+
+### Decision 3: Implement Person Schema on /profile/ Page
+**Rationale:** Establishes author canonical entity; supports Knowledge Graph.  
+**Action:** Add Person JSON-LD to profile layout; include email, social URLs (from site.profile_social), bio.  
+**Estimated Effort:** 30 min.
+
+### Decision 4: Phase Specialized Content-Type Schemas
+**Rationale:** Unlock AI discovery for specialized content; align with ADRs.  
+**Phase 1 (High Value):**
+- CreativeWork schema for Prompts (aligns with ADR 0002 series adoption; Issue #184)
+- Collection schema for content discovery (Prompts, Slides, Quotes index)
+
+**Phase 2 (Medium Value):**
+- Presentation schema for Slides (currently invisible)
+- FAQPage schema for Quotes (enables featured snippets)
+
+**Phase 3 (Lower Value):**
+- Dataset schema for Bestiary (niche; defer)
+
+**Estimated Effort per Schema:** 2–4 hours.
+
+### Decision 5: Expand llms.txt with Structured Content Index
+**Rationale:** Helps AI systems navigate content structure; low effort.  
+**Action:** Add sections: Collections (Prompts, Slides, Quotes), Categories, Structured Data, Feeds (with topic hints).  
+**Estimated Effort:** 30 min.
+
+---
+
+## Impact Summary
+
+| Decision | Effort | Impact | Dependencies |
+|----------|--------|--------|--------------|
+| Front Matter Validation | 1–2 hrs | 🟢 Very High | None |
+| Image Dimensions Script | 1–2 hrs | 🟢 High | None |
+| Person Schema on /profile/ | 30 min | 🟢 High | None |
+| Specialized Content Schemas | 10–15 hrs (phased) | 🔵 Medium–High | Validation plugin (enables batch backfill) |
+| llms.txt Expansion | 30 min | 🔵 Medium | None |
+
+**Total Phased Effort:** ~15–20 hours (5–6 week sprint at 3–4 hrs/week).
+
+---
+
+## Alignment with Aragorn's Consolidated Issues
+
+- **Issue #178** (SEO & discoverability): Structured data directly addresses excerpt/pillar page / metadata strategy.
+- **Issue #181** (RPG schema): Dataset schema for Bestiary provides unification path.
+- **Issue #183** (Tagging model): Front matter validation surfaces tagging gaps; feeds adoption.
+- **Issue #184** (Series adoption): CreativeWork schema for Prompts enables series discovery.
+- **Issue #185** (Related posts): Collection schema enables post-to-collection linking.
+
+---
+
+## Recommended Backlog Order
+
+1. **Front Matter Validation Plugin** (1–2 hrs) — Unblocks all metadata work
+2. **Image Dimensions Script** (1–2 hrs) — Quick win; improves OG metadata
+3. **Person Schema on /profile/** (30 min) — Author entity canonicalization
+4. **CreativeWork for Prompts** (3–4 hrs) — Aligns with ADR 0002; high value
+5. **Collection/ItemList Schema** (4–5 hrs) — Content discovery infrastructure
+6. **Presentation Schema for Slides** (2–3 hrs) — Unlock Slides discoverability
+7. **FAQPage for Quotes** (2–3 hrs) — Featured snippet enablement
+8. **Metadata Backfill Pipeline** (4–6 hrs) — Automate image-alt, excerpt, mastodon-post-id population
+
+---
+
+## Questions for Aragorn / Team
+
+1. Should front matter validation warnings block build, or only log?
+2. For mastodon-post-id backfill: acceptable to auto-generate during build, or prefer manual review per post?
+3. Priority: Author entity canonicalization (Person schema) vs. Specialized content schemas?
+4. Should image-alt backfill be AI-generated or manual?
+
+---
+
+**Next Steps:** Aragorn to review, prioritize in backlog, and assign to Galadriel (Templates) and/or engineer for phased implementation.
+
+---
+
+*Audit authored by Elrond; recorded 2026-05-28T20:09:45.997-07:00*
+---
+date: 2026-05-28T19:53:42.576-07:00
+owner: Faramir (Search & Discovery)
+topic: Content discovery audit findings & prioritization
+status: inbox
+---
+
+# Content Discovery Audit Findings & Prioritization
+
+## Key Insight
+1,009 posts across 27 categories have **high fragmentation and low interconnection**. Gamma World dominance (69%) is masking content discovery for the remaining 30%. Tags are underutilized (30% adoption), related-content infrastructure doesn't exist, and internal linking is sparse (27% of posts). Search discovery is missing entirely.
+
+## Critical Issues to Address
+
+### P1: Gamma World Content Dominance + No Related-Post Infrastructure
+**Impact:** High-volume category (699 posts) may suppress visibility of research/blog content. Users landing on a Gamma World post have no thematic navigation to related content.
+
+**Recommendation:**
+- Weight category carousel and recent-post caching to balance display
+- Build related-content template (sidebar or footer) with automatic or manual suggestions
+- Consider Gamma World sub-categorization (e.g., "Creatures," "Locations") if organizational depth warrants
+
+### P2: Tags Severely Underutilized + No Tag Archive Pages
+**Impact:** Only 308/1009 posts (30.5%) are tagged. Zero tag archive or tag cloud pages exist. Content remains siloed; users cannot navigate by topic or skill.
+
+**Recommendation:**
+- Expand issue #75 ("Prompts: Add Dedicated Tag Archive Pages") to cover all tags, not just prompts
+- Create tag archive pages: `/tags/`, `/tags/{tag-name}/`, tag cloud on category landing pages
+- Tag audit & bulk tagging campaign for priority clusters (AI, prompts, business)
+
+### P2: Series Field Adoption ~0%
+**Impact:** Despite ADR 0002 architecture, only 3 posts use the series field. Multi-step workflows (prompt series, content sequences) cannot be navigated.
+
+**Recommendation:**
+- Audit ADR 0002 templates for bugs
+- Populate 5 natural series candidates in prompts as pilots
+- Wire series list/index into prompt-library page
+
+### P2: Sparse Internal Linking (73% of Posts Have None)
+**Impact:** 730 posts lack thematic links to related content. Content silos isolate users; search engine link equity isn't distributed across topic clusters.
+
+**Recommendation:**
+- Content graph audit: identify 5–10 priority clusters (AI, Business, Leadership, Theology)
+- Manual linking campaign for cluster posts: each should reference 2–4 related posts
+- Create inline linking guideline ("see also," "related," "next step in this topic")
+
+### P2: Category Landing Pages Have Minimal Navigation Value
+**Impact:** 41 category pages exist but are redirect stubs with no secondary CTAs. Visitors see recent posts but no related categories, tag cloud, or depth indicators.
+
+**Recommendation:**
+- Add "Related Categories" cross-links (from registry)
+- Add tag cloud for each category (top 10 tags + post count)
+- Add metadata row: "N posts | M tags | Last updated [date]"
+- Breadcrumb: Home > Category > Tags
+
+### P2: No Site-Wide Search
+**Impact:** Issue #70 exists but is unfunded. 1,009 posts become undiscoverable except via category/carousel browsing.
+
+**Recommendation:**
+- Choose search tool: Algolia, DuckDuckGo, or custom JSON feed + search page
+- Scope: search widget in top-nav + floating button, results page, JSON feed generation
+- Integrate with #72 (JSON-LD schema) for search engine discovery
+
+## Dependencies & Sequencing
+
+1. **Immediate (Week 1–2):**
+   - Expand #75 to all-tags audit + archives
+   - Populate series pilots (5 prompts)
+   - Start content graph audit (top 5 clusters)
+
+2. **Follow-on (Week 3–4):**
+   - Finalize related-posts template
+   - Deploy tag archives + category enhancements
+   - Begin bulk tagging campaign
+
+3. **Strategic (Week 4+):**
+   - Internal linking editorial campaign
+   - Search tool selection & implementation (#70)
+   - Consider Gamma World sub-categorization
+
+## Team Notes
+- These findings are read-only observations; no code changes are recommended without Engineering/Editorial alignment.
+- Existing issues (#70, #75) should be expanded, not duplicated.
+- Content pillar strategy (ADR 0008 cache precomputation) may already reduce some query costs; coordinate with caching decisions.
+
+# Discovery Infrastructure Decisions — Faramir
+
+**Date:** 2026-05-28T20:09:45.997-07:00  
+**Author:** Faramir (Search & Discovery Engineer)  
+**Status:** recorded (not yet team reviewed)
+
+## Key Findings
+
+### Current Discovery State
+- **Strong surfaces:** Homepage carousel (caching, category theming), category pages, next/previous cards
+- **Critical gaps:** Tag-based discovery (0% visibility), content silos (Prompts/Slides isolated), related-posts infrastructure absent
+- **Adoption crisis:** Series metadata 5.4% (3 of 56 prompts), tag coverage 30.5% but 0% discoverability, related links 0%
+
+### Friction Points
+1. **Topic Isolation:** Reader cannot browse by tag; category exhaustion → dead end
+2. **Series Abandonment:** 94% of prompts appear broken (no series metadata)
+3. **Collection Silos:** Homepage carousel hardcoded to exclude Prompts and Slides (by design, but prevents discovery)
+4. **Chronological Drift:** Next/previous links are purely chronological, breaking narrative threads
+5. **Tag Metadata Waste:** Tags exist in 360+ posts but are invisible to readers
+
+## Recommended Decision
+
+### Immediate Action (Issue #183, #184, #185)
+
+**D1: Enforce Tag Infrastructure as Discovery Foundation**
+- Populate `tags:` front-matter on 50–100 high-traffic posts
+- Build `/tag/{slug}/` archive pages + tag-to-posts index in plugins
+- Timeline: 1–2 weeks
+- Unlocks: filtering, tag clouds, related-content inference
+
+**D2: Add Related-Posts Field + Sidebar Card**
+- Schema: `related: [post-slug-1, post-slug-2, ...]`
+- Render card in post sidebar below categories
+- Manual curation initially; can be inferred later via shared tags
+- Timeline: 3–4 days
+- Impact: breaks silos immediately
+
+**D3: Pilot Series Adoption**
+- Audit 56 Prompts; populate `series` metadata for 5–10 multi-part workflows
+- Update Prompt Library landing to highlight series section
+- Timeline: 1–2 days
+- Impact: series feature becomes visible; motivates adoption
+
+### Medium-Term (4–6 weeks)
+- Extend homepage carousel to include Prompts and Slides (currently excluded)
+- Add tag clouds to category pages (issue #186)
+- Build Slides gallery landing page (issue #182)
+
+### Longer-Term (strategic)
+- Pillar pages / topic hubs (issue #178) — requires tags + related posts first
+- Thematic series navigation beyond prompts
+- Cross-collection series discovery
+
+## Rationale
+
+**Why not more immediate?**
+- Tag infrastructure must come first; it enables all downstream features (tag filtering, clouds, related-posts inference)
+- Related-posts field is manual curation at first (sustainable; avoids complexity)
+- Series adoption is a curator task, not technical work
+
+**Why this order?**
+1. Tags = foundational; no other feature can fully leverage them until infrastructure exists
+2. Related posts = low technical risk; high editorial control
+3. Series adoption = immediate ROI (5–10 series unblock narrative discovery)
+4. Carousel extension = safe once tags/related are ready
+
+**Alignment with ADRs:**
+- ADR 0008 (caching): Tag index can follow same pattern as `recent_by_category`
+- ADR 0006 (carousel): Extend filter logic to include cross-collections with feature flag
+- No new ADRs needed; decisions are refinements within existing architecture
+
+## Open Questions for Team Review
+
+1. **Tag Governance:** Should all posts have tags eventually? Or just curated sets? (Propose: start with 50–100 high-traffic, then scale)
+2. **Related-Posts Maintenance:** Should curation be manual (sustainable) or auto-inferred via shared tags? (Propose: manual for 6 months, then explore inference)
+3. **Carousel Composition:** When extending to include Prompts/Slides, what proportion? Alternating? Separate carousel rows? (Propose: alternate rows, with feature flag for easy rollback)
+4. **Series Scope:** Prompts only, or expand to blog post series later? (Propose: Prompts first; blog series can follow if infrastructure proves robust)
+
+## Next Steps
+
+1. **Aragorn**: Review this decision note; approve or suggest modifications
+2. **Bilbo**: Audit Prompts for multi-part workflows; flag candidates for series adoption
+3. **Elrond**: Confirm tag schema and front-matter patterns; align with any planned taxonomy work
+4. **Faramir**: Once approved, begin tag infrastructure work (issue #183 implementation)
+# Decision: Analytics & Editorial Automation Audit (May 28, 2026)
+
+**Date:** 2026-05-28T20:09:45.997-07:00  
+**Agent:** Gandalf (Automation & Integration Engineer)  
+**Status:** Audit complete; recommendations staged for team review  
+**Related Issues:** Aragorn #178, #183, #184, #185; #158, #142 (tracked)
+
+---
+
+## Context
+
+Gandalf conducted a comprehensive audit of analytics tracking surfaces and editorial automation pipelines to identify gaps, quick wins, and strategic opportunities.
+
+**Driving Questions:**
+1. What analytics/tracking surfaces exist in the site?
+2. Is current tracking sufficient to make content decisions about discovery, traffic, engagement, conversion?
+3. What attribution gaps or consent/privacy constraints block better measurement?
+4. Which automation opportunities could reduce editorial debt (metadata/excerpts/tags/alt text)?
+5. What are the highest-leverage next steps?
+
+---
+
+## Key Findings
+
+### Analytics Lane
+- **Current State:** GA4 + Clarity active; basic event tracking (search, downloads, outbound links) enabled.
+- **Strengths:** Privacy-hardened defaults (anonymize IP, no ad signals); localhost suppression; modular config flags.
+- **Gaps:**
+  - No content category classification → can't slice traffic by Prompts/Gamma World/etc.
+  - No scroll depth or engagement timing → can't assess "hook early" vs "sustained" content.
+  - No conversion goals → can't measure newsletter signups, RPG tool usage, etc.
+  - Feed analytics dark → no measurement of JSON Feed / Mastodon post CTR.
+  - No internal link attribution → can't measure cross-content discovery paths.
+  - **Consent compliance gap:** No banner; assumes implied consent (GDPR/CCPA exposure if EU/CA audience).
+
+### Editorial Automation Lane
+- **Current State:** 5 working scripts + validation test suite; scattered across `_code/` and `tests/`.
+- **Strengths:** Dry-run gates on Mastodon posting; YAML schema validation; tag heuristics; feed integrity checks.
+- **Gaps:**
+  - Automation isolated (no unified CLI) → hard to run coherent metadata operations.
+  - **Validation not in CI** → image-alt, image-paths, feed integrity tests run locally but don't block deployment.
+  - Massive metadata debt per Aragorn review (1,009 posts analyzed):
+    - Excerpt: 29.1% coverage (714 posts missing)
+    - Tags: 30.5% coverage (369 posts missing/null)
+    - Image-alt: 30.5% coverage (699 posts; **a11y + SEO risk**)
+    - Internal links: 0% (730 posts with zero refs)
+    - Series adoption: 5.4% (only 3 of 56 prompts)
+  - **Blocker:** Tag automation (`add_prompt_tags.py`) only touches `/prompts/` dir; inconsistent with standardization goal (Aragorn #183).
+
+---
+
+## Recommendations
+
+### Tier 1: This Sprint (Enable Blocking)
+1. **Enable CI validation** (30 min)
+   - Wrap `tests/check_image_alt_text.rb`, `check_image_paths.rb`, `check_feed_integrity.rb` in GitHub Actions.
+   - Fail CI if image-alt coverage < 90% or feed malformed.
+   - **Impact:** Block deployment of ALT text gaps; unblock SEO/a11y risk mitigation.
+
+2. **Add GA4 category dimension** (30 min)
+   - Modify `main-site-analytics.js` to extract and dispatch `post_category` custom dimension.
+   - **Impact:** Unblock "which categories drive traffic?" analysis.
+
+### Tier 2: Next Sprint (Consolidate Automation)
+3. **Consolidate tag automation** (1 hour)
+   - Expand `add_prompt_tags.py` scope from `/prompts/` → `_posts/` + all collections.
+   - Add `--dry-run` output to `make qa` for pre-commit validation.
+   - **Impact:** Reduce manual tagging debt; unblock tag filtering / tag cloud (Aragorn #183).
+
+4. **Stub excerpt auto-generation** (1 hour)
+   - Add Liquid filter to auto-generate excerpts from first 150 chars (strip HTML).
+   - Use in `<meta name="description">` + frontmatter fallback.
+   - **Impact:** Improve SEO meta descriptions without bulk front-matter edits.
+
+5. **Build unified editorial CLI** (3 hours)
+   - Create `_code/editorial-cli.py` with subcommands: `validate`, `enrich`, `audit`.
+   - Consolidate `add_prompt_tags.py`, `validate_prompts_yaml.py`, audit scripts.
+   - Output: YAML + JSON report (coverage %, gap trends, recommendations).
+   - **Impact:** Centralize metadata operations; enable team dashboard; unblock Aragorn issues #178, #183, #185.
+
+### Tier 3: Roadmap (Attribution & Observability)
+6. **Attribution model: content discovery tracking** (2 hours)
+   - Add GA4 events for "discovery source" (category carousel, category page, search, etc.).
+   - **Impact:** Answer "how does each discovery surface drive engagement?"
+
+7. **Mastodon metadata auto-generation** (1.5 hours)
+   - Extend `backfill_masto_posts.py` to auto-generate post descriptions from excerpt or content.
+   - **Impact:** Improve social card quality; reduce manual metadata burden.
+
+8. **Metadata health observability** (3–4 hours)
+   - Extend editorial CLI audit mode to output Prometheus metrics.
+   - **Impact:** Make metadata health visible to team; enable data-driven prioritization.
+
+9. **Consent modernization** (4–6 hours, aligned with team privacy policy)
+   - Implement cookie banner; add `site.analytics.consent_required` flag.
+   - Switch to GA4 "Consent Mode" for GDPR/CCPA compliance.
+
+---
+
+## No New Infrastructure Required
+- All recommendations reuse existing patterns: GA4 custom dimensions, Jekyll plugins, Python scripts, Mastodon API, Liquid filters.
+- No new languages, dependencies, or deployment targets.
+
+---
+
+## Dependencies & Coordination
+- **Aragorn:** Coordinate on content priorities (issues #178, #183, #184, #185 — all unblocked by Tier 2 work).
+- **Gimli:** Coordinate on CI/deployment (enable validation gates, lock metadata defaults).
+- **Full audit document:** `.copilot/session-state/.../files/followup-audit/gandalf-analytics.md`
+
+---
+
+## Decision
+**Recommend:** Proceed with Tier 1 + Tier 2 sequencing. Tier 1 enables quick risk mitigation; Tier 2 unblocks content discovery + SEO efforts. Tier 3 is strategic roadmap (no blockers; nice-to-have).
+
+**Next Step:** Aragorn / Gimli review; sequencing decision by sprint planning.
+
+---
+
+**Prepared by:** Gandalf (Automation & Integration Engineer)  
+**Date:** 2026-05-28T20:09:45.997-07:00

@@ -31,3 +31,67 @@
 ### Next Step
 Await team triage and prioritization of recommendations.
 
+---
+
+## Analytics & Editorial Automation Audit — May 28, 2026
+
+**Date:** 2026-05-28T20:09:45.997-07:00  
+**Scope:** Analytics tracking surfaces + editorial metadata automation  
+**Output:** `.copilot/session-state/.../files/followup-audit/gandalf-analytics.md`
+
+### Key Findings
+
+**Analytics:**
+- GA4 + Clarity instrumentation in place but lacks content classification (no category dimension).
+- Search/outbound/download tracking enabled; no scroll depth or conversion goals.
+- Feed analytics dark (no measurement of JSON Feed / Mastodon post performance).
+- Consent compliance gap: no banner; assumes implied consent.
+
+**Editorial Automation:**
+- 5 working automation scripts (tagging, Mastodon backfill, validation) scattered across `_code/`.
+- Validation suite (image alt, feeds, paths) exists but **not enforced in CI**.
+- Massive metadata gaps per Aragorn review: excerpt (29%), tags (31%), image-alt (31%), internal links (0%).
+- **Blocker:** 699 posts without alt text; accessibility + SEO risk.
+
+**Automation Opportunities:**
+- Consolidate tag automation into unified metadata CLI.
+- Auto-generate excerpts from content + tags from categories.
+- Detect related posts by tag overlap (unblock Aragorn #185).
+- Add GA4 custom dimension for `post_category` (unblock discovery analysis).
+
+### Quick Wins (This Sprint)
+1. Enable CI validation gates (30 min) — Block alt-text gaps on deployment.
+2. Add GA4 category dimension (30 min) — Unblock discovery analysis.
+3. Consolidate tag automation (1 hour) — Reduce manual tagging debt.
+4. Stub excerpt auto-generation (1 hour) — Improve SEO meta descriptions.
+
+### Medium-Term Infrastructure
+1. Build unified editorial CLI with subcommands (validate, enrich, audit) — 3 hours.
+2. Mastodon metadata auto-generation — 1.5 hours.
+3. Attribution model: content discovery tracking — 2 hours.
+4. Metadata health observability (Prometheus metrics export) — 3–4 hours.
+
+### Strategic Recommendations
+- Tier 1 (this sprint): CI validation + GA4 category dimension.
+- Tier 2 (next sprint): Unified editorial CLI + excerpt/tag consolidation.
+- Tier 3 (roadmap): Attribution, observability, consent modernization.
+
+### Coordination Notes
+- Coordinate with Aragorn on content priorities (issues #178, #183, #184, #185).
+- Coordinate with Gimli on CI/deployment sequencing (enable validation gates).
+- No new infrastructure or dependencies required; reuses existing patterns.
+
+### Repository Evidence
+- Analytics: `_config.yml` (131–146), `js/main-site-analytics.js`, `_includes/analytics/`, `.github/workflows/mastodon-feed.yml`
+- Automation: `_code/add_prompt_tags.py`, `_code/backfill_masto_posts.py`, `_code/validate_prompts_yaml.py`, etc.
+- Validation: `tests/check_image_alt_text.rb`, `tests/check_feed_integrity.rb` (not in CI yet).
+- Content audit: Aragorn issue summary (1,009 posts, 9 new issues, metric deltas)
+
+## 2026-05-29: Scribe Inbox Consolidation & Cross-Team Synthesis
+
+**Role:** Team audits merged into `.squad/decisions.md`; orchestration log recorded; cross-team alignment synthesized  
+**Input:** Gandalf (automation/analytics audit), Faramir (discovery audit), Elrond (AI-SEO/metadata audit)  
+**Output:** Consolidated decision records; 4 orchestration logs; Aragorn priority synthesis  
+**Key Alignment:** All three audits independently converge on metadata infrastructure (tags, related-posts, series) as critical bottleneck  
+**Next Steps:** Aragorn activates "three-move tranche" for immediate execution (tag infra → related-posts → series pilot)
+
