@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-05-28 | TedT.org</title>
+  <title>Daily Report - 2026-05-29 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,137 +52,109 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-05-28</h1>
-      <p class="meta">Generated <time datetime="2026-05-28T08:20:05+00:00">2026-05-28T08:20:05Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-05-29</h1>
+      <p class="meta">Generated <time datetime="2026-05-29T08:18:31+00:00">2026-05-29T08:18:31Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site is healthy and actively maintained. Deploy and Mastodon sync workflows are passing. Ted pushed several substantive changes on May 26 including a new blog post, GM theme styling, and layout fixes. No blocking failures. One Dependabot security PR is open and ready for review.</p>
+      <p><strong>High-activity day driven by AI squad operations.</strong> Thirteen new issues filed from a full-team code review, four Dependabot PRs merged, new CI workflows added, and the Märchen Engine editorial review produced two pending decisions. Site deploy is green (run #812, success). The P0 Node.js 20→24 Actions migration (#176) has a hard deadline of June 2 — it needs immediate action.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line</h2>
-<p>Site pipelines are green. TedTschopp pushed a cluster of improvements on May 26 — a new blog post, GM theme colors, <code>article_class</code> layout fix, and reference formatting cleanup. Automated workflows (daily report, Mastodon sync, enterprise AI refresh) are all running on schedule. One Dependabot security patch PR (#addressable 2.8.7 → 2.9.0) remains open and should be merged.</p>
+      <h2>Bottom Line Up Front</h2>
+<p>Today was dominated by squad agent orchestration: a full-team code review was completed, 13 new backlog issues were filed, 4 Dependabot dependency PRs were merged, and new CI workflow infrastructure was added. The site itself is building and deploying cleanly. The most urgent item is <strong>P0 issue #176</strong> (Node.js 20→24 Actions migration) with a hard deadline of June 2, 2026.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Commits — Last 5 Days (May 24–28, 2026)</h3>
-<p><strong>May 27</strong></p>
+<h3>Commits — 2026-05-29</h3>
 <ul>
-<li><code>chore: refresh yesterday in enterprise ai</code> — bot automation, scheduled run</li>
-<li><code>chore: refresh daily report</code> — bot, daily report pipeline</li>
-</ul>
-<p><strong>May 26 — Active development day</strong></p>
-<ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/7a024fcea4832b0df443dd0de34f13602f7ac201"><code>content(post): update reference formatting for clarity and consistency</code></a> — TedTschopp, post cleanup</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/f95852c71813d129c06d3d0293afd140f0819a8a"><code>move article_class from main to card-body div</code></a> — TedTschopp, layout fix; moves CSS class to semantically correct element</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/9c4695124d6bab04cb4a71b151ef5a0020bf0bab"><code>feat(styles): add GM theme colors and alert overrides for responsiveness</code></a> — TedTschopp, new SCSS theme colors for GM content</li>
-<li><code>chore: update Mastodon cache/front matter</code> — bot, sync</li>
-<li><code>chore(dependencies): update Gemfile.lock and fix location formatting in posts</code> — TedTschopp, dependency hygiene</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/57c9bab438291e0c854e15b0e4fd6c8b6fc4781a"><code>A Blog post</code></a> — TedTschopp, new content published</li>
-</ul>
-<p><strong>May 25</strong></p>
-<ul>
-<li><code>chore: refresh yesterday in enterprise ai</code> — bot</li>
-<li><code>chore: refresh daily report</code> — bot</li>
-</ul>
-<p><strong>May 24</strong></p>
-<ul>
-<li><code>chore: update Mastodon cache/front matter</code> — bot sync</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/62a6d94f3c969557e6ee72f2ba9d8864e58c3dff"><code>chore: remove redundant code blocks from changes section</code></a> — TedTschopp, content cleanup</li>
+<li><strong><code>a260e927</code></strong> — Merge branch 'main' _(04:15 UTC)_</li>
+<li><strong><code>1c509dd6</code></strong> — <code>feat(workflows)</code>: Add squad issue assignment, label enforcement, triage, preview validation, promotion, release, and sync-squad-labels workflows _(04:14 UTC)_</li>
+<li><strong><code>96bceec5</code></strong> — Märchen Engine decision inbox merged; agent coordination updated (Decision #10 added) _(03:49 UTC)_</li>
+<li><strong><code>503e0f95</code></strong> — Scribe: Consolidate Märchen Engine review — Decisions #8 (Bilbo editorial gaps) and #9 (Elrond publishing strategy) both now <strong>awaiting-decision</strong> _(03:26 UTC)_</li>
+<li><strong><code>8053ef59</code></strong> — Scribe: Squad inbox consolidated (8 files merged); three-move tranche (tags → related-posts → series) flagged as ready _(03:26 UTC)_</li>
+<li><strong><code>0a8bb5ea</code></strong> — Scribe: Code review orchestration complete — 35 findings distilled into 13 new issues + 2 expanded existing issues, 12 consolidated with backlog _(02:24 UTC)_</li>
+<li><strong><code>67b4c5b7</code></strong> — Scribe: Squad roster exported as portable YAML (squad-roster-export.yaml, 9.6 KB) _(00:35 UTC)_</li>
+<li><strong><code>9f0119bc</code></strong> — Scribe: PR #139 diagnosed as stale branch (not broken artifact); recommended close and recreate fresh _(00:20 UTC)_</li>
+<li><strong><code>1d37f407</code></strong> — Scribe: PR merge/close orchestration — merged #149, #148, #146, #145; closed stale PRs #126–#134 _(00:05 UTC)_</li>
+<li><strong><code>5906a046</code></strong> — Scribe: PR review decisions consolidated; P0 urgency flagged for Node.js 24 readiness _(00:03 UTC)_</li>
+<li><strong><code>4fecbe51</code></strong> — dependabot: bump <code>flatted</code> 3.3.3 → 3.4.2 in npm_and_yarn group (#145) _(merged)_</li>
+<li><strong><code>972dce33</code></strong> — dependabot: bump <code>actions/github-script</code> v7 → v9 (#148) _(merged)_</li>
+<li><strong><code>cd658ab0</code></strong> — dependabot: bump <code>addressable</code> 2.8.7 → 2.9.0 (security patch, #149) _(merged)_</li>
+<li><strong><code>9dfc1ec0</code></strong> — dependabot: bump <code>actions/deploy-pages</code> v4 → v5 (#146) _(merged)_</li>
 </ul>
 <hr>
-<h2>Workflow Health</h2>
-<p><strong>Site Quality + Deploy</strong> (<code>deploy.yml</code>)</p>
+<h2>Site Quality and Workflow Health</h2>
+<h3>CI/CD Pipelines</h3>
 <ul>
-<li>Status: <strong>success</strong> on latest run (run #804)</li>
-<li>Triggered by: <code>workflow_dispatch</code></li>
-<li>Head SHA: <code>2631caa</code> (May 27 refresh commit)</li>
+<li><strong>Site Quality + Deploy</strong> (deploy.yml) — Run #812: <strong>✅ success</strong> on head <code>a260e927</code></li>
+<li><strong>Feed to Mastodon</strong> (mastodon-feed.yml) — Run #1765: <strong>✅ success</strong></li>
+<li><strong>Daily Report</strong> — Run #30: currently in progress (this run)</li>
 </ul>
-<p><strong>Feed to Mastodon</strong> (<code>mastodon-feed.yml</code>)</p>
+<h3>Open Pull Requests</h3>
 <ul>
-<li>Status: <strong>success</strong> on latest run (run #1756)</li>
-<li>Triggered by: schedule</li>
-<li>Mastodon sync is operating normally</li>
-</ul>
-<p><strong>Daily Report</strong> — this run is <code>in_progress</code> (run #29, current workflow)</p>
-<p>All three primary automation pipelines appear healthy.</p>
-<hr>
-<h2>Open Pull Requests</h2>
-<p><strong>Dependabot — Security Patch</strong></p>
-<ul>
-<li>PR title: Bump <code>addressable</code> from 2.8.7 to 2.9.0 (security-patches group)</li>
-<li>Base: <code>main</code></li>
-<li>Status: open, awaiting merge</li>
-<li><strong>Recommended action: merge.</strong> <code>addressable</code> is a transitive dependency; this is a routine security bump.</li>
+<li><strong>PR #164</strong> — <code>chore(ci): bump actions/upload-artifact from v6 to v7</code> _(created 2026-05-29, supersedes stale PR #139)_ — <strong>Needs review and merge.</strong> Affects deploy.yml and mastodon-feed.yml artifact upload steps.</li>
+<li><strong>PR #137</strong> (draft) — <code>Potential fix for code scanning alert #295: DOM text reinterpreted as HTML</code> _(open since 2026-01-27)_ — XSS fix for <code>top-nav-bar.html</code> <code>data-href</code> navigation. Still unmerged after 4 months. <strong>Security risk; should be promoted or formally triaged.</strong></li>
 </ul>
 <hr>
-<h2>Open Issues (Top 5 by Recent Activity)</h2>
-<p><strong>#142</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/142">Harden Mastodon automation and mutation safety</a></p>
+<h2>Backlog Observations</h2>
+<h3>P0 — Immediate Action Required</h3>
 <ul>
-<li>Mastodon auto-commit workflow lacks explicit rollback/dry-run guardrails in documentation</li>
-<li>Updated: 2026-04-27 | Priority: medium-high</li>
+<li><strong>#176</strong> <code>[P0] Update GitHub Actions workflows from Node.js 20 to Node.js 24</code> — Hard deadline before <strong>June 2, 2026</strong>. Node.js 20 is deprecated in Actions. This is the highest-priority item on the backlog right now.</li>
 </ul>
-<p><strong>#88</strong> — [P2] Image Optimization Audit: Size, Alt Text, Dimension &amp; Format Checks</p>
+<h3>P1/P2 — Recently Filed (from code review, 2026-05-29)</h3>
+<p>All three squad audits (Aragorn, Galadriel, Faramir) converged on <strong>#183</strong> (tag infrastructure) as a critical blocker for related-posts and series features.</p>
 <ul>
-<li>No automated CI check for oversized images, missing alt text, or format issues</li>
-<li>Implementation plan defined; needs a script + Makefile target</li>
+<li><strong>#183</strong> <code>[P2] Standardize tagging model: enforce coverage and build site-wide tag infrastructure</code> — <strong>Consensus critical path item.</strong> Unblocks #184 (series adoption) and #185 (related-posts bridges).</li>
+<li><strong>#185</strong> <code>[P2] Build cross-collection content bridges and related-posts infrastructure</code></li>
+<li><strong>#184</strong> <code>[P2] Drive prompt series adoption: audit and populate series metadata</code></li>
+<li><strong>#186</strong> <code>[P2] Enhance category landing pages: related categories, tag clouds, depth indicators</code></li>
+<li><strong>#182</strong> <code>[P2] Create slide gallery with topic filtering and deck browser</code></li>
+<li><strong>#181</strong> <code>[P2] Unify RPG/fantasy content schema and build SEO landing pages</code></li>
+<li><strong>#180</strong> <code>[P2] Add content contributor guide to README</code></li>
+<li><strong>#179</strong> <code>[P2] Curate quotes with thematic tags and personal context</code></li>
+<li><strong>#178</strong> <code>[P2] SEO &amp; discoverability: strengthen excerpts, descriptions, pillar hub pages</code></li>
+<li><strong>#177</strong> <code>[P2] Performance: Rationalize CSS and Font Asset Loading</code></li>
+<li><strong>#171</strong> <code>[P2] Add front matter validation: required fields (image/image-alt, category slugs, date format)</code></li>
+<li><strong>#163</strong> <code>tracker: May 2026 repo audit remediation backlog</code> — Master tracker issue; keep updated as P2s progress.</li>
 </ul>
-<p><strong>#86</strong> — [P2] Prompt Details: Clean Up Remaining UX Gaps and Empty Series Section</p>
+<h3>Märchen Engine Decisions Awaiting Ted's Input</h3>
+<p>Two decisions are formally blocked on Ted's direction:</p>
 <ul>
-<li>Empty series section still showing; state feedback gaps in customization flow</li>
-<li>Labels: enhancement, accessibility, mobile, UX</li>
-</ul>
-<p><strong>#75</strong> — [P2] Prompts: Add Dedicated Tag Archive Pages</p>
-<ul>
-<li>Tag badges are clickable but no static crawlable <code>/prompts/tags/{tag}/</code> pages exist</li>
-<li>Labels: enhancement, feature-request, tag-navigation</li>
-</ul>
-<p><strong>#72</strong> — [P2] SEO: Rationalize Existing JSON-LD and Add Missing Schema Coverage</p>
-<ul>
-<li>JSON-LD emitted from multiple overlapping includes; no canonical single path</li>
-<li>Labels: SEO, schema, structured-data</li>
-</ul>
-<hr>
-<h2>Content &amp; Publishing Pipeline Observations</h2>
-<ul>
-<li>The <code>article_class</code> fix (moving from <code>&lt;main&gt;</code> to <code>.card-body</code>) is a semantic correctness improvement; worth verifying visually on the live site.</li>
-<li>GM theme colors added — these likely support RPG/GameMaster content rendering; confirm palette entries are registered in <code>category_registry.yml</code> if they map to a category.</li>
-<li>Mastodon sync is running but Issue #142 (mutation safety) remains unresolved. The current flow auto-commits changes without a documented rollback path — low urgency, but worth addressing before any bulk sync operation.</li>
-<li>Automated daily report and enterprise AI refresh bots are running on schedule without failures.</li>
+<li><strong>Decision #8</strong> (Bilbo): Publication timeline, book structure, Bastion rules integration, WIP folder cleanup. Estimated effort: 8–10 hours priority work.</li>
+<li><strong>Decision #9</strong> (Elrond): Complete RPG vs. modular toolkit, character creation extraction, publishing order, unified glossary, campaign example scope, referee support standardization. Estimated effort: 12–18 hours full MVP; 2–3 weeks at steady pace.</li>
 </ul>
 <hr>
 <h2>Risks and Blockers</h2>
-<p><strong>Low risk — actionable:</strong></p>
 <ul>
-<li>Dependabot <code>addressable</code> PR open; no known exploit but should be merged to stay current.</li>
-<li>Issue #142 mutation safety gap is a documentation/process risk, not an immediate breakage.</li>
-</ul>
-<p><strong>Watch items:</strong></p>
-<ul>
-<li>No HTML Proofer run data available in this report. [ASSUMPTION] The successful deploy implies internal links passed, but this is not confirmed directly.</li>
-<li>GM theme colors introduced — if any are referenced in category palette definitions without matching registry entries, carousel theming may silently fall back.</li>
+<li><strong>P0 Hard Deadline (June 2):</strong> Issue #176 (Node.js 20→24) must be completed before GitHub deprecates Node.js 20 in Actions runners. No CI buffer if this slips.</li>
+<li><strong>Security PR #137 Stale:</strong> The DOM XSS fix draft has been open since January. Either merge it or close it with a documented decision. Leaving it open without action is technical debt.</li>
+<li><strong>PR #164 Pending:</strong> The upload-artifact v6→v7 bump is a clean, low-risk change. Merge it to close out the Actions upgrade work.</li>
+<li><strong>Märchen Engine Decisions Blocked:</strong> Decisions #8 and #9 are formally awaiting-decision. The editorial and publishing pipeline cannot advance until Ted provides direction.</li>
+<li><strong>Tag Infrastructure (#183):</strong> All three squad audits independently identified this as a blocker. Starting here unblocks the largest cluster of P2 work.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge the <code>addressable</code> Dependabot PR</strong> — routine security bump, no blockers.</li>
-<li><strong>Verify GM theme colors</strong> — confirm new SCSS palette tokens align with <code>category_registry.yml</code> entries or are scoped to a specific layout (not a category palette key).</li>
-<li><strong>Audit <code>article_class</code> change on live site</strong> — visually confirm card rendering is correct post-move.</li>
-<li><strong>Address Issue #142</strong> — document dry-run and rollback expectations for the Mastodon mutation workflow before the next bulk sync.</li>
-<li><strong>Prioritize Issue #88</strong> — image audit script would provide compounding quality value across all future content pushes.</li>
+<li><strong>Merge PR #164</strong> (upload-artifact v6→v7) — low risk, closes out Actions upgrade work started today.</li>
+<li><strong>Prioritize issue #176</strong> (Node.js 20→24) — hard June 2 deadline. Assign immediately.</li>
+<li><strong>Review PR #137</strong> (XSS fix, draft) — either promote it to ready or close with rationale.</li>
+<li><strong>Make Märchen Engine decisions #8 and #9</strong> — unblocks editorial pipeline.</li>
+<li><strong>Start issue #183</strong> (tag infrastructure) — squad consensus critical path; unblocks #184 and #185.</li>
+<li>Run <code>bundle exec jekyll build</code> locally after any workflow changes to verify internal link integrity before next deploy.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — last 20 commits retrieved, covering May 24–27 2026</li>
-<li>Issues: <code>github-list_issues</code> — top 5 open issues by <code>UPDATED_AT DESC</code></li>
-<li>Pull Requests: <code>github-list_pull_requests</code> — open PRs retrieved; only Dependabot security PR present in top results</li>
-<li>Workflow runs: <code>github-actions_list</code> for <code>deploy.yml</code> (run #804) and <code>mastodon-feed.yml</code> (run #1756) — both concluded <code>success</code></li>
-<li>HTML Proofer results not directly available in this report; deploy success inferred from workflow conclusion [ASSUMPTION]</li>
-<li>GM theme colors purpose inferred from commit message; category registry alignment not verified in this run [ASSUMPTION]</li>
-<li>Daily Report workflow run #29 is <code>in_progress</code> at time of this report (this run)</li>
-<li><code>gh</code> CLI is not authenticated in this environment; all GitHub reads performed via GitHub MCP tools</li>
+<li><strong>Commits</strong>: Read via GitHub MCP <code>list_commits</code> for TedTschopp/tedt.org, since 2026-05-25, perPage 15.</li>
+<li><strong>Workflow runs</strong>: Read via GitHub MCP <code>list_workflow_runs</code> for deploy.yml and all workflows; preview parsed from first 500 chars of large response (full JSON was 382–385 KB and could not be fully parsed in this environment).</li>
+<li><strong>Issues</strong>: Read via GitHub MCP <code>list_issues</code> (OPEN, ordered by UPDATED_AT DESC, perPage 15); titles extracted via grep on saved output.</li>
+<li><strong>Pull requests</strong>: Read via GitHub MCP <code>list_pull_requests</code> (open state).</li>
+<li><strong>Workflow run conclusions</strong>: Only the first completed run preview was visible (Site Quality + Deploy #812 = success, Feed to Mastodon #1765 = success) due to large output file constraints. Other runs not individually verified.</li>
+<li><strong>[ASSUMPTION]</strong>: Märchen Engine Decision details (#8, #9) sourced from commit messages only; full decision document not read.</li>
+<li><strong>[ASSUMPTION]</strong>: Issue priority labels (P0/P2/P3) taken directly from issue titles as filed; no independent severity assessment performed.</li>
+<li><strong>Unavailable</strong>: External link check status, HTML Proofer results, Allure test reports — not accessible in this run.</li>
+<li><strong>Workflow run link</strong>: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/26626146267">Run #26626146267</a></li>
 </ul>
     </section>
     <footer>
