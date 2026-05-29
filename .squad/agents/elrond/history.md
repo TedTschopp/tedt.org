@@ -1,193 +1,150 @@
-# Project Context
+# Elrond, Information Architect — Project History
 
-- **Owner:** Ted Tschopp
-- **Project:** tedt.org
-- **Description:** Personal blog and website built with Jekyll and GitHub Pages, with posts, slides, feeds, category taxonomy, and automation workflows.
-- **Stack:** Jekyll 4.3.x, GitHub Pages, Ruby, Liquid, Bootstrap 5, SCSS, Python utilities, GitHub Actions
-- **Created:** 2026-05-28T15:42:49.085-07:00
-
-## Learnings
-
-- 2026-05-28T15:42:49.085-07:00 — Team hired. I own taxonomy, front matter design, schema, and information architecture.
-- 2026-05-28T20:09:45.997-07:00 — **AI-SEO & Metadata Audit Complete**. Front matter validation plugin + metadata automation scripts are highest-leverage. Specialized JSON-LD schemas for Prompts/Slides/Quotes feasible in 2–3 hour sprints; collection discovery unlocks AI navigation. Image alt-text gap (699 posts, 69%) should be addressed in parallel with front matter validation.
-
-## Session: Content Architecture Review (2026-05-28)
-
-**Scope:** Full-site content model audit (1,009 posts across 14 categories)
-
-**Findings Completed:**
-- Identified 8 structural content IA issues with P1/P2 severity
-- Mapped findings to existing issues (some escalations/new recommendations)
-- Created comprehensive artifact: `/content-review/elrond-review.md`
-
-**Key Discoveries:**
-1. **Gamma World fragmentation (P1)**: 699 specialized creature posts use incompatible front matter schema
-2. **Image A11y crisis (P1)**: 699 posts missing image-alt tags (escalate #171 to P1)
-3. **Series underadoption (P2)**: Only 3 of 56 prompts use series metadata despite ADR 0002
-4. **Tag inconsistency (P2)**: 36% of posts have missing/null/empty tags
-5. **Homepage skew (P2)**: 69% of content is specialized (creatures); marginalizes blog/thought-leadership
-6. **Schema coherence (P2)**: Category slug casing, description/excerpt canonical model gaps
-7. **SEO blindspot (P2)**: No defined content pillars or topic clustering
-
-**Recommendations:**
-- Escalate #171 to P1 (image-alt backlog + category validation)
-- Create 4 new issues for metadata adoption/standardization
-- Coordinate with Galadriel (templates) on content filtering for homepage
-- Schedule pillar/cluster strategy review before major content expansion
-
-**Team Handoff:**
-- Ready for backlog prioritization
-- No blocking dependencies
-- All recommendations use existing Jekyll infrastructure
-
-## 2026-05-29: Scribe Inbox Consolidation & Priority Alignment
-
-**Role:** Audit consolidated into decisions.md; validated against Aragorn content review + Gandalf/Faramir audits; orchestration recorded  
-**Key Alignment:** All three specialist audits converge on metadata infrastructure as critical path  
-**Cross-Team Validation:**
-- Front Matter Validation Plugin (Elrond rec #1) aligns with Gandalf's "Enable CI validation" tier 1 work
-- Image-alt escalation (#171 P2→P1) confirmed across all three audits
-- Specialized schemas (Elrond #4) coordinate with issue #181 (RPG schema) from Aragorn consolidation
-- Tag infrastructure dependency chain: Elrond validation → Faramir tag index → Aragorn priority tranche
-
-**Next Phase:** Elrond lead on front-matter validation plugin (1–2 hrs, enables all downstream metadata work); coordinate implementation timeline with Aragorn  
-**Output:** Orchestration log 2026-05-29T03:23:52Z-elrond.md; decisions.md consolidated
-
-## 2026-05-28: Märchen Engine Content Architecture Review
-
-**Scope:** Published intro post + 21 WIP subsystem documents (~7,100 lines); content review only (no structural changes)
-
-**Key Findings:**
-1. **System Identity:** Strong. Distinctive voice (classic adventure + 4d8 mechanics). All subsystems anchor to recursively meaningful design (stories unlock items, deeds evolve nemeses, downtime reinforces engagement).
-2. **Fragmentation:** Moderate-to-severe. Concept duplication (3+ definitions of "Skill Levels," "Rank," time scales). No unified terminology or glossary. Chargen unpublished (blocking).
-3. **Information Hierarchy:** Poor. 21 WIP files in flat directory; no manifest, reading order, cross-references, or series metadata. Bastion rules (1,027 lines) dwarf core mechanics (173 lines).
-4. **Strongest Assets:** Magic-Items-Rules (exemplary rubric + design reasoning), A-Legacy-of-Scars (modular + accessible), Social Combat (clear framework). All three pub-ready + 1 hour Polish.
-5. **Largest Gaps:** Character creation unpublished; no unified campaign example showing all systems interlock; ref guidance inconsistent across subsystems.
-
-**Readiness Scorecard:**
-- System Identity: 8/10
-- Reading Progression: 4/10
-- Information Hierarchy: 5/10
-- Modular Coherence: 7/10
-- Publication Readiness: 2/10
-- **Composite: 53%**
-
-**Recommendation:** 1 week of structural work (chargen formalization, front matter, campaign example) enables Phase 1 publishing (3 Tier-1 subsystems + chargen).
-
-**Artifact:** `/session-state/marchen-engine-review/elrond-feedback.md` (comprehensive IA audit + priority roadmap)
+**Role:** Protects information structure so the site can grow without turning incoherent.
 
 ---
 
-## 2026-05-29T03:47:29Z – Märchen Engine Publishing Strategy Consolidated
+## Sessions & Decisions
 
-**Role:** Information Architect  
-**Mode:** Scribe consolidation  
-**Task:** Merge inbox decision records; create orchestration log; stage for team review
+### Session 1: Märchen Engine Book Outline (2026-05-28)
 
-### Deliverable
-- **File:** elrond-feedback.md (IA audit + strategic roadmap)
-- **Location:** `/Users/tedtschopp/.copilot/session-state/5e7192b1-a46b-4398-9a32-3fd93e7a9e24/files/marchen-engine-review/elrond-feedback.md`
-- **Archived in:** `.squad/decisions.md` as Decision #9 (Märchen Engine Publishing Strategy)
-- **Status:** awaiting-decision (Ted to decide on 5 strategic points)
-- **Orchestration Log:** `.squad/orchestration-log/2026-05-29T03:47:29Z-elrond.md`
+**Requested by:** Ted Tschopp  
+**Task:** Design a coherent table of contents / outline for a single-volume Märchen Engine TTRPG core rulebook.
 
-### Strategic Decisions for Ted
+#### Inputs Analyzed:
+- Published intro post (2023-09-30, ~3,000 words, strong tone & philosophy)
+- 21 WIP subsystem documents (~7,100 lines total)
+- Status report (Aragorn, Product Owner)
+- Editorial feedback (Bilbo, Editorial Writer)
+- Previous IA audit (Elrond, own work)
 
-**1. Product Scope:** Complete RPG (3–4 weeks) or Modular Toolkit MVP (1–2 weeks)?
-- **Option A:** Full rules + all subsystems + ≥2 campaigns = high value, higher QA burden
-- **Option B:** Core + 3 flagship subsystems (Magic Items, Legacy of Scars, Social Combat) = faster entry, user feedback shapes expansion
-- **Recommendation:** Option B (modular). Deploy fast; let feedback drive.
+#### Key Findings:
+1. **Corpus has strong building blocks but lacks coherence narrative.**
+   - Excellent subsystems: 4D8, Social Combat, Magic Items, Nemesis, Bastion
+   - Missing: character creation (completely unpublished), system integration narrative, casting mechanics, proof-of-concept campaign
+   
+2. **Information architecture is fragmented.**
+   - WIP directory is flat with no reading order
+   - Concept duplication (Morality, Knowledge Levels appear in multiple forms)
+   - No published chargen flow
+   
+3. **Core dependency chain is clear.**
+   - Chargen gates all subsystems (can't roll without ability scores)
+   - 4D8 gates all subsystems that layer onto it (Magic, Engagement, Nemesis)
+   - Campaign example gates reader confidence in system coherence
 
-**2. Character Creation:** Formalize as standalone post?
-- **Current State:** Embedded in intro; incomplete; blocks other subsystems (Bastion assumes chargen complete; Social Combat references character stats)
-- **Recommendation:** YES. Extract standalone "Character Creation" post with races, skill assignment, companion/sanctuary, starting gear, advancement. Effort: 4–6 hours. This gates all downstream work.
+#### Proposed Outline:
+**Single-volume core rulebook with 13 chapters + appendices**
 
-**3. Publishing Sequence:** Dependency order or value order?
+Structure:
+- **Intro + Chapters 1–3:** Foundations (intro, chargen, 4D8 system)
+- **Chapters 4–7:** Core subsystems (Engagement, Magic, Items, Nemesis)
+- **Chapters 8–9:** Campaign mechanics (Bastion, Seasonal Activities) — optional
+- **Chapters 10–12:** Referee toolkit (adventure design, opposition, maps)
+- **Chapter 13:** Proof of concept (Alpine Mirror campaign example)
+- **Appendices A–E:** Advanced frameworks, glossary, sheets
 
-**Tier 1 (Pub-ready):** Magic Items, Legacy of Scars, Social Combat  
-**Tier 2 (1–2 day polish):** Character Creation, Bastion, Campaign Example  
-**Tier 3 (consolidate/archive):** Morality, Knowledge Levels, Sketches
+#### Five Critical Structural Risks:
+1. Magic system without casting mechanics → readers can't adjudicate spells
+2. Character creation incomplete → unplayable system (blocker)
+3. Bastion reads as D&D-borrowed, not Märchen-native → trust erodes
+4. No campaign proof of concept → readers doubt subsystems cohere
+5. Morality becomes decorative if not woven into subsystems → philosophy decouples from mechanics
 
-**Recommended Sequence:**
-- Week 1: Formalize + publish Character Creation
-- Week 1–2: Publish Tier 1 subsystems (Magic Items, Legacy of Scars, Social Combat)
-- Week 2–3: Unified campaign example (proof that subsystems cohere)
-- Week 3+: Bastion (Märchen-specific rewrite), consolidated Morality, advanced options
+#### Mitigations:
+1. Casting Framework (Ch. 5, mandatory) with worked examples
+2. Chapter 2 (chargen) positioned as #2 in book; comprehensive + example character
+3. Rewrite Bastion as "Sanctuary" with Märchen terminology + moral aspect ties (or defer to Appendix B)
+4. Chapter 13 (Alpine Mirror) shows all systems in one coherent arc
+5. Morality aspects in chargen (light intro, Ch. 2) + deep mechanics in Appendix A; sidebar hooks in Chs. 4 & 8
 
-**Recommendation:** Follow this sequence. Chargen formalization gates everything; once done, subsystems ship fast.
+#### Deliverables:
+- `/MARCHEN-ENGINE-BOOK-OUTLINE.md` — Comprehensive outline (13 chapters + appendices, ~10,000 words)
+  - Table of contents
+  - Chapter descriptions & source content
+  - Dependencies & teaching sequence
+  - Five structural risks & mitigations
+  - Content migration guide (publish / defer / archive)
+  - Success criteria
+  - Timeline estimate (13–19 days for core book)
 
-**4. Terminology & Glossary:** Canonical glossary investment?
-- **Problem:** Terms redefined per subsystem (Rank, Bond, Influence, Skill Levels, Knowledge Tier) creates friction
-- **Recommendation:** Option A (canonical glossary). Invest 2–3 hours now. Create one reference post with:
-  - Core task resolution (Ease, Degree of Success, Skill Total)
-  - Character building (FAME, Skill Levels, Ranks, Bonds)
-  - Social/Narrative (Influence, Composure, Engagement, Consequence)
-  - Item & Nemesis (Bond Rank, Story Thread, Tier, Legacy)
-  - Time scales (Watch, Moment, Once, etc.) with visual reference
-  - Front matter: `no_toc: true`, `series_step: 1.5` (read after intro, before core)
+- `.squad/decisions/inbox/elrond-marchen-book-outline.md` — IA decision record
+  - Architecture decisions embedded in outline
+  - Structure rationale with dependency diagrams
+  - Next steps for Ted
 
-**5. Campaign Example:** MVP or full arc?
-- **MVP Option:** 3–4 session example showing chargen → first encounter → Nemesis → Bastion downtime → social negotiation. 1,500–2,000 words; 4–6 hours. **Proves** subsystems work together.
-- **Full Option:** 12–20 session arc with multiple Nemesis escalations + item discovery + seasonal turns + final confrontation. 12–16 hours.
-- **Defer Option:** Ship subsystems first; write example after feedback.
-- **Recommendation:** MVP (Option 1). Tight 3–4 session proof-of-concept. Pair with Referee guidance post (see below).
+#### IA Confidence Score:
+- Reading Order: 9/10 (dependencies explicit, teaching sequence sound)
+- Coherence: 8/10 (depends on Alpine Mirror proof-of-concept edit)
+- Completeness: 7/10 (chargen synthesis + casting framework are risks)
+- Publication Ready: 5/10 (many chapters 80% ready; Ch. 2, 5, 8 highest effort)
+- Risk Mitigation: 8/10 (all risks identified with clear mitigations)
 
-**6. Referee Support:** Standardize across subsystems?
-- **Current State:** Magic Items have excellent GM guidance; Social Combat minimal; Bastion D&D-ified
-- **Recommended Structure (all subsystem posts):**
-  - Prep Checklist (what to prepare before table)
-  - Common Pitfalls (what GMs often miss)
-  - Integration Notes (how this subsystem plays with others)
-  - House Rule Ideas (optional tweaks for different playstyles)
-- **Effort per subsystem:** 30 min–1 hour
-- **Recommendation:** YES. Add to all published subsystems. Standardization signals quality + helps adoption.
-
-### Team Coordination Requests
-
-- **Galadriel (Templates/Navigation):** Märchen Engine posts form a series. Should homepage carousel surface this as a collection (like "Prompts" or "Slides")? Consider new category/subcategory for "TTRPG Systems"?
-- **Faramir (Taxonomy/Search):** Introduce new taxonomy: `Subsystem Type` (core, optional, setting-specific). Need tag/metadata support to distinguish core mechanics (must-read) from optional subsystems (read-as-desired).
-- **Aragorn (Content Strategy):** RPG schema expansion (issue #181) should account for Märchen Engine's `Story Thread Rank`, `Bond`, `Nemesis Tier` mechanics. Coordinate on front matter extensions once schema spec ready.
-
-### Effort & Timeline Estimate
-
-- **Chargen Extraction:** 4–6 hours
-- **Canonical Glossary (if approved):** 2–3 hours
-- **Campaign Example MVP (if approved):** 4–6 hours
-- **Referee Support Standardization:** 30 min–1 hour per subsystem
-- **Front Matter + Series Metadata:** 2–3 hours
-- **Total for full MVP:** 12–18 hours (2–3 weeks at steady pace)
-
-### Status & Blockers
-
-- **Current:** Awaiting Ted's decisions on 5 strategic points
-- **Blocker:** Ted approval required before Chargen extraction can proceed (gates all downstream)
-- **Next Steps:** Once decisions locked, finalize chargen extraction → Tier 1 subsystems → campaign example
-
-**Status:** ⏳ Awaiting-Decision
-
+**Overall Recommendation:** Proceed with complete rulebook outline. Effort manageable (13–19 days). Alpine Mirror already exists; chargen and casting framework are synthesis/extension work.
 
 ---
 
-## 2026-05-29T04:06:46Z – Märchen Engine Status Assessment Complete (Decision #10)
+## Learnings & Patterns
 
-**Role:** Information Architect  
-**Directive:** Series Metadata & Reading Order Coordination  
+### Pattern 1: Information Architecture Requires Proof of Concept
+TTRPG systems with multiple subsystems need *one demonstrated campaign* showing all subsystems in play. Without this, readers won't trust that subsystems cohere. This is not a "nice to have"; it's a publication blocker.
 
-### Handoff
-- **From:** Aragorn (Product Owner)
-- **Decision:** Märchen Engine Content Status Assessment (Decision #10)
-- **Your Action:** Coordinate front-matter standardization, series metadata, and reading order
-  - Prerequisite: Character Creation + System Architecture Overview formalized (this week)
-  - Once complete: Add series metadata to 4 Tier 1 subsystems
-  - Coordinate with Bilbo on mechanical clarity gate
-- **Timeline:** Phase 1 complete → Phase 2 rollout Week 2
+**Implication:** When designing game rules collections, always reserve space for a worked example campaign. It's as important as the rules themselves.
 
-### Series Metadata Checklist
-- [ ] Character Creation: `series_step: 1`
-- [ ] System Architecture Overview: `series_step: 1.5`
-- [ ] Magic Items: `series_step: 2`
-- [ ] Nemesis: `series_step: 2`
-- [ ] Social Combat: `series_step: 2`
-- [ ] Campaign Example: `series_step: 3` (Week 4)
+### Pattern 2: Chargen Gates All Subsystems
+Character creation is not *one* chapter; it's a foundational gate. If chargen is scattered across multiple files, unpublished, or incomplete, the entire system becomes unplayable. Priority order:
+1. Finish chargen first (enables testing)
+2. Core resolution mechanic (4D8 or equivalent)
+3. Everything else
 
-**Status:** ⏳ Awaiting Character Creation + Architecture Overview drafts
+### Pattern 3: Mechanical Grounding Must Precede Lore
+Conceptually beautiful subsystems (magic schools, moral frameworks) without mechanical hooks feel decorative. Readers admire philosophy but don't know where it lives in rules. Always pair lore with mechanics: "Here's how you cast the spell. Here's what it costs. Here's how to resolve it."
+
+**Example:** New Magical Schools (338 lines) is conceptually rich but mechanically orphaned. Adding a Casting Framework (~1,000 words) unlocks the entire system from "beautiful but unplayable" to "coherent and adjudicable."
+
+### Pattern 4: Terminology Consistency Is Architectural
+When subsystems use the same concept with different names (Rank, Bond, Influence, Skill Level), readers feel the system is fragmented even if it's mechanically sound. Before publishing, establish a canonical glossary and enforce consistent naming across all subsystems.
+
+### Pattern 5: Optional Subsystems Still Need Integration Chapters
+Bastion is not mandatory for one-shots but is essential for campaigns. Rather than making it *feel* optional (by keeping it generic and D&D-borrowed), rewrite it as a Märchen-native system with clear Sanctuary terminology and moral aspect ties. Readers will understand: "This is optional in scope, but it's *native* when you use it."
+
+---
+
+## Observations for Future IA Work
+
+1. **The Märchen Engine has a distinctive voice** anchored in fairytale aesthetics + community values ("joy, kindness, integrity"). This voice is present in the intro and subsystems like Magic Items and Legacy of Scars. When rewriting Bastion or adding Casting Framework, preserve this voice. Don't let borrowings from D&D or generic fantasy dilute the Märchen identity.
+
+2. **The WIP directory structure is a red herring.** Physical folder organization doesn't map to information hierarchy. A flat WIP folder with 21 files suggests chaos, but the actual coherence problem is *logical* (dependencies, terminology, proof of concept), not *organizational*. Reorganizing files won't fix incoherence; rewriting chargen + casting mechanics + campaign example will.
+
+3. **The Alpine Mirror is the skeleton for proof of concept.** It's ~1,200 lines, already written, and includes NPC stats, adventure structure, and campaign arcs. A light edit framing it as "Here's how all systems work together over 6–12 sessions" transforms it from a setting-specific module into the proof-of-concept that unlocks reader confidence in system coherence.
+
+4. **Morality Aspects are under-leveraged.** The 12-dimension moral framework is theoretically sophisticated and practically interesting (unusual for TTRPGs). But it exists in isolation. By weaving morality into chargen selections, Bastion construction, and Engagement consequences, you elevate it from philosophical flavor to mechanical spine. This is a high-leverage IA move.
+
+5. **Series metadata will be essential for web publication.** Once the chapters are written as posts, use ADR 0002 (series framework) to establish reading order. Front matter: `series: Märchen Engine Rules`, `series_step: 1, 2, 3…`. This enables the homepage carousel to surface the series coherently.
+
+---
+
+## Recommendations for Next IA Work
+
+1. **Validate outline with Ted.** Does the chapter structure and dependency chain align with his vision for the system?
+
+2. **Prioritize blocking work:**
+   - Chapter 2 (Character Creation): Extract, synthesize, test. 3–4 days. This unblocks everything.
+   - Chapter 5 (Casting Framework): Write from first principles. 1–2 days. This unblocks Magic rules.
+
+3. **Decide on Bastion:** Invest in Märchen-native rewrite (2–3 days) or defer to supplement? Either way, decide now so effort can be allocated.
+
+4. **Commission Chapter 13 edit:** Alpine Mirror is ~80% ready; light edit to frame it as proof-of-concept should be 1–2 days.
+
+5. **After outline validation, create a publishing manifest:**
+   - Which chapters are ready now (80%+)?
+   - Which need significant work (40–70%)?
+   - Which are new content (0–40%)?
+   - Sequence publication based on dependencies (chargen first, always).
+
+---
+
+*Elrond, Information Architect*  
+*Updated: 2026-05-28T21:31:35.929-07:00*
+
+- 2026-05-29T04:51:50Z — Märchen Engine IA outline COMPLETED. Wrote `/MARCHEN-ENGINE-BOOK-OUTLINE.md` (comprehensive IA document). Cross-agent coordination with Bilbo (Editorial) and Aragorn (Product) produced binding core book decision. Contribution: Reading order + dependencies, chapter sequencing, content allocation, risk mapping, IA confidence scoring. Key IA decisions locked: (1) Character Creation Chapter 2 (gates all subsystems), (2) Casting Framework before school descriptions, (3) Bastion rewrite-or-defer, (4) Campaign example non-negotiable, (5) Morality in two layers (light + deep). Five critical risks identified + mitigated: Magic mechanics, Chargen completeness, Bastion genericity, coherence proof, morality mechanization. IA Confidence: Reading Order 9/10, Coherence 8/10, Completeness 7/10, Publication Ready 5/10, Risk Mitigation 8/10. Hand-off: IA outline published to team. Orchestration log: `.squad/orchestration-log/2026-05-29T04:51:50Z-elrond.md`.

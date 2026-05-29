@@ -1599,3 +1599,218 @@ Gandalf conducted a comprehensive audit of analytics tracking surfaces and edito
 
 **Prepared by:** Gandalf (Automation & Integration Engineer)  
 **Date:** 2026-05-28T20:09:45.997-07:00
+
+### 11. Märchen Engine Book Outline — Information Architecture Decision
+
+**Date:** 2026-05-28T21:31:35.929-07:00  
+**Decision Owner:** Elrond (Information Architect)  
+**Status:** Proposed (awaiting Ted's validation)  
+**Artifacts:**
+- `/MARCHEN-ENGINE-BOOK-OUTLINE.md` (comprehensive outline & rationale)
+- Input: `MARCHEN-ENGINE-CONTENT-STATUS-REPORT.md`, feedback from Bilbo & Elrond, corpus analysis
+
+---
+
+## The Decision
+
+**Publish the Märchen Engine as a single-volume core rulebook**, not as scattered subsystem modules.
+
+This decision implies:
+- **Complete, coherent arc:** Intro → Chargen → Core Mechanics → Subsystems → Campaign Example → Reference
+- **Reading order explicit:** Chapters teach in dependency order (chargen before subsystems, 4D8 before magic, etc.)
+- **Proof of concept required:** Chapter 13 (campaign example) demonstrates all systems working together
+- **Effort investment:** 13–19 days of focused structural work
+- **Market signal:** "This is a finished, playable game system" vs. "This is a modular toolkit growing as we go"
+
+### Key Architecture Decisions Embedded in Outline
+
+#### 1. **Character Creation Must Be Chapter 2** (Not Scattered)
+- **Why:** If chargen is incomplete or fragmented, readers cannot create characters. This is a blocker.
+- **IA Impact:** Chargen gates all subsequent chapters. Move it early and make it comprehensive.
+- **Implementation:** Synthesize Chapter 2 from intro post hints + Bastion rules + Magic schools + Morality Aspects.
+
+#### 2. **Three Realms Magic Needs Casting Framework BEFORE School Descriptions**
+- **Why:** Without casting mechanics (how you roll, what it costs, time, abuse prevention), lore is decorative, not playable.
+- **IA Impact:** Chapter 5 structure: [Casting Framework] → [Three Realms Conceptual Layer] → [Nine Schools with examples] → [Spell Lists].
+- **NEW CONTENT:** ~1,000 words (casting framework + worked examples).
+
+#### 3. **Bastion Rules Should Be Rewritten or Deferred**
+- **Why:** Current rules read as D&D-borrowed, not Märchen-native. Risk: "Märchen is D&D with a prettier intro."
+- **IA Impact:** Either invest in rewrite (terminology: Sanctuary → Bastion, add moral aspect ties), or move to Appendix B (advanced rules).
+- **Current Recommendation:** Defer; ship core game without Bastion in the critical path. Mark Chapter 8 as optional for campaigns.
+
+#### 4. **Campaign Example (Chapter 13) Is Non-Negotiable**
+- **Why:** Without proof that all subsystems cohere in one arc, readers won't trust system coherence.
+- **IA Impact:** Alpine Mirror (~1,228 lines) is nearly ready; lightly edit to show Nemesis + Items + Magic + Engagement in play.
+- **Success Metric:** After reading Chapter 13, a reader feels confident system is unified, not fragmented.
+
+#### 5. **Morality Aspects Go in Chargen (Light) + Appendix A (Deep)**
+- **Why:** Introducing in Chapter 2 signals importance; deferring mechanics to Appendix A avoids overwhelming new readers.
+- **IA Impact:** Chapter 2 includes "select 3 core aspects"; Appendix A explores 12-dimension framework + consequence mechanics.
+- **Balance:** Players feel morality *mattering* from start, but advanced detail is available if desired.
+
+#### 6. **Appendices Separate "Reference/Advanced" from "Must Understand"**
+- **Why:** Glossary, creature stats, variant rules, full spell lists don't block core gameplay.
+- **IA Impact:** A speed-reader can skim chapters 1–3 + 13 in 2 hours; appendices add depth without bloat.
+
+---
+
+### Five Critical Structural Risks (& Mitigations)
+
+**Risk 1: Magic Without Mechanics** — If casting rules are vague or missing, GMs can't adjudicate spellcasting. Mitigation: Casting Framework (Ch. 5, mandatory section) + worked examples for each school.
+
+**Risk 2: Chargen Incomplete or Weak** — Readers can't create characters; system feels unfinished. Mitigation: Chapter 2 comprehensive (ability scores, aspects, items, example); must be #2 in book.
+
+**Risk 3: Bastion Feels Generic (D&D-Borrowed)** — Readers think system is derivative; trust erodes. Mitigation: Rewrite with Märchen terminology (Sanctuary) + moral aspect ties, or defer to Appendix B.
+
+**Risk 4: No Coherence Proof** — With 10+ subsystems and no example, readers doubt systems work together. Mitigation: Chapter 13 (Alpine Mirror campaign) shows all systems in one arc; non-negotiable.
+
+**Risk 5: Morality Becomes Flavor** — If moral aspects are introduced late or in isolation, they feel decorative. Mitigation: Introduce in chargen (Chapter 2, light); deep mechanics in Appendix A (optional). Sidebars in Chapters 4, 8 showing mechanical tie-ins.
+
+---
+
+### IA Confidence Score
+
+| Dimension | Score | Notes |
+|-----------|-------|-------|
+| Reading Order | 9/10 | Dependencies explicit; teaching sequence sound. |
+| Coherence | 8/10 | Proof of concept (Ch. 13) is key risk. If Alpine Mirror edit works, coherence proven. |
+| Completeness | 7/10 | Chargen synthesis + Casting Framework are unknowns; assuming they fit. |
+| Publication Ready | 5/10 | Many chapters 80% ready; Chapter 2 + 5 + 8 are highest effort. |
+| Risk Mitigation | 8/10 | Five risks identified + mitigations clear. |
+
+**Overall IA Recommendation:** **Proceed with complete rulebook outline.** Effort is manageable (13–19 days); payoff is a coherent, publishable system. Alpine Mirror already exists; chargen and casting framework are synthesis/extension work, not invention.
+
+*Elrond, Information Architect*  
+*Märchen Engine Coherence Initiative*
+
+---
+
+### 12. Aragorn Decision: Märchen Engine TTRPG Book Outline
+
+**Date:** 2026-05-28T21:31:35.929-07:00  
+**Decision Owner:** Aragorn (Product Owner)  
+**Status:** LOCKED (Binding for core book publication)  
+**Scope:** Canonical structure, chapter mapping, risk mitigation, publication timeline
+
+---
+
+## Decision Summary
+
+The Märchen Engine has **strong, distinctive mechanics** (4D8 task resolution, Moral Aspects, Nemesis progression, Magic Items, Social Engagement) but **fragmented architecture**—WIP documents exist as isolated subsystems with no unified campaign proof-of-concept. 
+
+I have synthesized editorial feedback from Bilbo (mechanics, content quality) and Elrond (information architecture, publication strategy) into a **canonical, decision-ready core book outline** that:
+
+1. **Chains reading progression:** Part I (Foundations) → Part II (Three Pillars) → Part III (Systems & Depth) → Part IV (Running the Game)
+2. **Locks 12 chapters + 6 appendices** as the core book scope
+3. **Maps all WIP files to chapters** and identifies which pieces are ready vs. blockcap
+4. **Surfaces 8 editorial risks** with concrete mitigation (Casting Framework, Character Creation consolidation, campaign example, etc.)
+5. **Sets a 3-week publication timeline** (Phase 1: Editorial Unblocking, Phase 2: Proof of Concept, Phase 3: Polish & Publish)
+6. **Defers high-value supplements** to post-launch (Light of Life campaign, Small-Alpine-Mirror setting, Advanced Options)
+
+## Binding Decisions
+
+### 1. **Core Book Scope is LOCKED**
+
+**Chapters:**
+- **Part I:** Ch. 1 (Welcome), Ch. 2 (Character Creation), Ch. 3 (4D8 Core Resolution)
+- **Part II:** Ch. 4 (Physical Combat), Ch. 5 (Social Engagement), Ch. 6 (Magic & Magical Schools)
+- **Part III:** Ch. 7 (Moral Aspects), Ch. 8 (Nemesis & Legacy), Ch. 9 (Magic Items), Ch. 10 (Sanctuary & Downtime)
+- **Part IV:** Ch. 11 (Game Mastering), Ch. 12 (Adventure Structure & Campaigns)
+- **Appendices A–F:** Glossary, Spell Lists, Item Templates, Nemesis Worksheet, Sanctuary Economy, Index
+
+**Target:** ~240 pages (hard stop to prevent scope creep).
+
+**Out of Core Book (defer to supplements):**
+- The Light of Life (6–10 session campaign module)
+- The Small-Alpine-Mirror (regional setting guide)
+- Advanced gear subsystems (Natural Weapons, etc.)
+- Optional rules variants (Levels of Knowledge, Escalation/De-escalation, etc.)
+
+### 2. **Three Blockcap Items (Must Exist Before Ship)**
+
+**Blockcap 1: Casting Framework (Chapter 6 — Currently MISSING)**
+- Problem: WIP file on Magical Schools is beautiful but unmechanical. Readers can't adjudicate casting at table.
+- Deliverable: "How to Cast a Spell" section with 3–5 worked examples (simple spell, complex spell, abuse case), difficulty/resource matrix, time costs, integration with 4D8 core resolution.
+- Effort: 2–3 hours. 
+- **No core book ships without this.**
+
+**Blockcap 2: Character Creation Consolidation (Chapter 2 — Currently SCATTERED)**
+- Problem: Ability scores, moral aspects, tradition selection, derived stats scattered across intro + WIP. New players can't make characters from any single source.
+- Deliverable: Self-contained chapter that pulls together ability names/ranges, distribution methods, moral aspects selection, tradition options, starting resources, and one worked example (blank sheet → complete character).
+- Effort: 3–4 hours.
+- **No core book ships without this.**
+
+**Blockcap 3: 12-Session Campaign Example (Chapter 12 — Currently MISSING)**
+- Problem: Chapters describe running campaigns and subsystems in isolation. Readers don't know how Nemesis, Sanctuary, Magic Items, Moral Aspects interlock.
+- Deliverable: One fully worked example showing 6–12 sessions where all systems interact: character creation → first moral choice → Nemesis rank escalation → Engagement subplot → Sanctuary activity → climactic confrontation → epilogue.
+- Effort: 6–8 hours (highest-effort blockcap item; also highest marketing value).
+- **This proves all subsystems cohere. No core book ships without this.**
+
+### 3. **WIP File Status & Chapter Mapping is BINDING**
+
+All WIP files have been classified as:
+- ✅ **Ready** (publish with light edit): Ch. 1, Ch. 3, Ch. 5, Ch. 8, Ch. 9, Ch. 12 (post-rewrite)
+- 🟡 **Needs Work** (1–3 hours): Ch. 2, Ch. 4, Ch. 7, Ch. 10, Ch. 11, Appendices A–F
+- 🔴 **Blockcap** (must exist): Casting Framework (Ch. 6), Character Creation (Ch. 2), Campaign Example (Ch. 12)
+
+File-to-chapter mapping is explicit in the outline (see "File Mapping" section). This prevents authors from treating WIP as unstructured dumping ground.
+
+### 4. **Eight Editorial Risks Are IDENTIFIED with MITIGATION**
+
+All 8 documented with concrete mitigation and effort estimates.
+
+### 5. **Publication Timeline is BINDING**
+
+**Phase 1 (Week 1): Editorial Unblocking** — 14 hours
+- Write Casting Framework (3 hrs)
+- Consolidate Character Creation (4 hrs)
+- Rewrite Sanctuary rules (5 hrs)
+- Standardize terminology (2 hrs)
+
+**Phase 2 (Week 2): Proof of Concept** — 13 hours
+- Write 12-session campaign example (6 hrs)
+- Add integration sidebars to Chapters 6–8 (3 hrs)
+- Finalize Chapters 11–12 (4 hrs)
+
+**Phase 3 (Week 3): Polish & Publish** — 10 hours
+- Editorial pass on all chapters (4 hrs)
+- Finalize Appendices (3 hrs)
+- Proofread + index + cover design (3 hrs)
+
+**Total Effort: 3–4 weeks for publication-ready core book.**
+
+### 6. **Success Criteria Are BINDING**
+
+Core book ships when:
+1. A new **player** can read Chapter 2 and make a complete character in 15 minutes.
+2. A new **GM** can read Chapters 11–12 and run a 6-session campaign without rules questions.
+3. A **reader** finishes the book with no mechanical gaps or orphaned subsystems.
+4. System **feels cohesive**, not modular. Märchen DNA evident in every chapter.
+
+## How to Activate This Decision
+
+1. **Publish to repo:** `/MARCHEN-ENGINE-TTRPG-BOOK-OUTLINE.md` ✅ (done)
+2. **Announce to team:** Share outline with Bilbo, Elrond, any contributors
+3. **Lock Chapter Mapping:** No WIP file should be moved or renamed without updating the outline
+4. **Weekly Checkins:** Blockcap items → Phase → Completion % during team standups
+5. **Escalation Path:** If any blockcap item slips, escalate to Aragorn immediately (decision owner)
+
+---
+
+## Reversibility
+
+This decision is **highly reversible**:
+- If scope changes (e.g., "include Levels of Knowledge in core book"), update the outline and replan Phase 1.
+- If timeline slips, adjust Phase 2/3 dates but keep blockcap items fixed.
+- If an author disagrees with chapter mapping, open the outline and debate before starting work.
+
+The outline is a **living document**. It's binding on scope and timeline, but flexible on implementation.
+
+---
+
+**Decision Owner:** Aragorn  
+**Authority:** Product Owner (owns scope, priorities, final decisions)  
+**Status:** LOCKED (Binding until next major decision on Märchen Engine publication)  
+**Next Review:** Completion of Phase 1 (Editorial Unblocking) — estimated 2026-06-04
+
