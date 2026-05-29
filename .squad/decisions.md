@@ -91,6 +91,155 @@
 
 ---
 
+### 4. Backlog Restructure — May 2026
+
+**Date:** 2026-05-28T16:22:10.035-07:00  
+**Author:** Aragorn (Lead / Product Owner)  
+**Type:** backlog-management  
+**Status:** complete
+
+## What Was Done
+
+Performed a full GitHub issue backlog audit and restructure for TedTschopp/tedt.org.
+
+### Milestones Created
+- **2026-Q2: Critical Fixes** (milestone #3) — P0/P1 items, due 2026-06-30
+- **2026-Q3: Site Health** (milestone #2) — P2/P3 items, due 2026-09-30
+
+### Labels Created
+- `P0`, `P1`, `P2`, `P3` — priority tiers
+- `mastodon`, `governance`, `git-hygiene`, `audit-2026-05`, `ci-cd` — domain/tracking labels
+
+### New Issues Created (13 total from May 2026 audit)
+
+**P0 — 2026-Q2: Critical Fixes**
+- #150 Update GitHub Actions from Node.js 20 → 24 (deadline June 2)
+- #151 Fix `<img>` no-src Liquid defect (234 pages)
+- #152 Reduce GitHub Pages artifact below 1 GB (currently 1.16 GB)
+
+**P1 — 2026-Q2: Critical Fixes**
+- #153 Fix YAML Date constant crashes in Ruby test harness (1,009 posts invisible)
+- #154 Fix 588 broken Monster Manual image paths
+- #155 Update feed snapshot baselines (5 removed items)
+- #156 Fix 11 broken internal asset links + 2 broken script refs
+- #157 Enforce CI quality gates (remove continue-on-error) — depends on #151 #154 #155 #156
+
+**P2 — 2026-Q3: Site Health**
+- #158 Remove 36 .bak files from git
+- #159 Commit .squad/ governance artifacts to git
+- #160 Accept ADR 0004 (Prompt Library — implemented, docs debt)
+- #161 Resolve ADR 0005 (Hex Overlay — accept or reject)
+
+**P3 — 2026-Q3: Site Health**
+- #162 Mastodon backfill: syndicate ~800 posts (depends on #142)
+
+---
+
+### 5. PR Review & Triage — May 28, 2026
+
+**Reviewer:** Aragorn (Lead/Product Owner)  
+**Date:** 2026-05-28T16:48:29.411-07:00  
+**Context:** 13 open PRs spanning security patches, dependency bumps, action updates, and security fixes. P0 blocker: Node.js 20 deprecation (June 2).
+
+#### TEAM-APPROVABLE (Merge now)
+
+**PR #149** — addressable 2.8.7 → 2.9.0 (security patch)
+- Status: MERGEABLE, CLEAN, build SUCCESS
+- Risk: None
+- Action: Merge. No dependencies; security improvement.
+
+**PR #148** — actions/github-script 7 → 9
+- Status: MERGEABLE, CLEAN, build SUCCESS
+- Risk: None. Action v7 → v9 is stable; widely adopted.
+- Action: Merge. Critical for June 2 deadline.
+
+**PR #146** — actions/deploy-pages 4 → 5
+- Status: MERGEABLE, CLEAN, build SUCCESS
+- Risk: None. Standard action upgrade; proven compatible.
+- Action: Merge. Critical for June 2 deadline.
+
+**PR #145** — flatted 3.3.3 → 3.4.2
+- Status: MERGEABLE, CLEAN, build SUCCESS
+- Risk: None. Patch within compatible range.
+- Action: Merge.
+
+**PR #137** — Fix CodeQL alert 295 (DOM text reinterpreted as HTML)
+- Status: MERGEABLE, CLEAN, draft PR, all CodeQL checks SUCCESS
+- Risk: Low. Fix validates URLs before navigation; prevents javascript: and data: schemes.
+- Action: Team approval pending draft author sign-off. Ted should confirm intent; fix is sound and ready.
+
+#### HUMAN FULL REVIEW
+
+**PR #139** — actions/upload-artifact 6 → 7
+- Status: MERGEABLE, UNSTABLE, build FAILURE (Mar 8, 2026)
+- Risk: Build failure is old (2.5 months) and likely caused by state of main, not PR #139 itself. However, failure needs investigation before merge.
+- Action: Rebase to current main and retry. If passes, merge. If not, investigate root cause.
+- Urgency: HIGH — Critical P0 for Node.js 24 compatibility.
+
+#### CLOSE (Stale / Conflicting / Architectural Violation)
+
+**PR #126** — ffi 1.16.3 → 1.17.2
+- Violates ADR 0009 explicit pin. Current main explicitly re-pinned ffi to `= 1.16.3`.
+- Action: CLOSE. If ffi needs bumping, require new ADR justifying the change.
+
+**PR #134, #133, #132** — bundler-audit, google-protobuf, sass-embedded
+- Status: CONFLICTING, DIRTY (6 months old)
+- Action: CLOSE. Stale. Dependabot will recreate fresh.
+
+**PR #131** — html-proofer 3.19.4 → 5.1.1
+- Status: CONFLICTING, DIRTY (6 months old)
+- Issue: Major version change with breaking API; 3,457 existing failures need fixing first.
+- Action: CLOSE as stale. Track as deliberate P2/P3 migration work item, not a routine bump.
+
+**PR #130** — actions/checkout 5 → 6
+- Status: CONFLICTING, DIRTY (6 months old)
+- Issue: Stale, critical for Node.js 24 compatibility. Needs recreation.
+- Action: CLOSE. File new quick-PR for June 2 deadline.
+
+**PR #129** — actions/setup-node 4 → 6
+- Status: CONFLICTING, DIRTY (6 months old)
+- Issue: Stale, critical for Node.js 24 compatibility. Needs recreation.
+- Action: CLOSE URGENTLY. File new quick-PR for June 2 deadline.
+
+---
+
+### 6. Authoritative PR Verdict — May 28, 2026
+
+**Date:** 2026-05-28T16:48:29.411-07:00  
+**Author:** Aragorn (Lead / Product Owner) — Reconciliation of Samwise, Gimli, Boromir  
+**Type:** pr-verdict-final  
+**Status:** active
+
+Final team call reconciliation:
+- **TEAM-APPROVABLE now:** #149, #148, #146, #145
+- **HUMAN FULL REVIEW:** #139, #137
+- **CLOSE:** #134, #133, #132, #131, #130, #129, #126
+- **Key rationale:** #129 and #130 should be closed and recreated urgently for current workflow updates; #131 should close because it is a dirty major-version migration; #126 should close due ADR 0009; #137 is technically sound but still draft and needs Ted's gate; #139 has unstable/failing CI and needs rebase or recreation before approval
+
+---
+
+### 7. Editorial Decision: Issue Template System Uplift
+
+**Date:** 2026-05-28T16:22:10.035-07:00  
+**Author:** Bilbo (Editorial Writer)  
+**Type:** editorial-decision  
+**Status:** complete
+
+Replaced two existing catch-all issue templates with purpose-specific system:
+
+| File | Purpose |
+|------|---------|
+| `UX-Issue.yml` | UX Enhancement (complete rewrite) |
+| `full-featured-template.yml` | Bug Report (repurposed from generic catch-all) |
+| `content-task.yml` | Content-layer work (new) |
+| `architecture-task.yml` | ADR proposals and ratification (new) |
+| `infrastructure-task.yml` | CI, deps, artifact size, GitHub Actions (new) |
+| `config.yml` | Disables blank issues; adds ADR Index and Decisions Log as contact links (new) |
+
+All 6 YAML files validated and parse without error. Acceptance criteria required on all templates. Priority scale aligned to audit P0–P3. ADR traceability on all forms. `blank_issues_enabled: false`.
+
+---
+
 ## Governance
 
 - All meaningful changes require team consensus

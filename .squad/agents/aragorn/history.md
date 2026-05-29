@@ -10,3 +10,11 @@
 
 - 2026-05-28T15:42:49.085-07:00 — Team hired. I own scope, decisions, and final review for tedt.org work.
 - 2026-05-28T23:11:34Z — Audit report merged into `.squad/decisions.md`. Three P0 blockers identified: Node.js 24 CI deprecation (June 2), 1.16 GB artifact (>1 GB limit), `<img>` no-src template defect (234 pages). Prioritized plan spans quick wins (QW1–QW9 this week), medium-term work (MT1–MT9 this sprint), and strategic improvements (ST1–ST6 this quarter).
+
+## 2026-05-28: PR Review Consolidation (Scribe)
+
+**Role:** Lead triage of 13 open PRs; backlog restructure; authoritative final verdict  
+**Output:** Decisions merged into `.squad/decisions.md`; classified PRs into team-approvable, human-review, close categories  
+**Key Decision:** Close #129, #130 (stale, critical for June 2 Node.js 24 deadline) and recreate; merge #149, #148, #146, #145 immediately  
+**Team Verdict:** 4 approvable, 2 human review, 7 close  
+
