@@ -245,3 +245,52 @@ All 6 YAML files validated and parse without error. Acceptance criteria required
 - All meaningful changes require team consensus
 - Document architectural decisions here
 - Keep history focused on work, decisions focused on direction
+# Decision: Create Portable Squad Roster Export
+
+**Date:** 2026-05-28T17:31:39.169-07:00  
+**Actor:** Bilbo (Editorial Writer)  
+**Status:** ✅ Executed
+
+## Request
+Ted Tschopp requested a single portable roster file that could be used elsewhere—human-readable, factual, and complete.
+
+## What Was Done
+Created `squad-roster-export.yaml` (9.6 KB) containing:
+- **Top-level metadata**: project, generated_at, requested_by, source_files, universe
+- **All 13 roster members**: 11 active agents (Aragorn, Galadriel, Arwen, Gandalf, Samwise, Boromir, Gimli, Bilbo, Elrond, Legolas, Faramir) plus Scribe and Ralph
+- **Per-member details**: name, emoji, role, status badge, charter path, primary domains/ownership, routing notes
+- **Project context**: owner, stack, creation date
+- **Work routing table**: canonical mapping of work types to owners
+- **Orchestration rules**: team coordination principles (eager spawn, Scribe always background, etc.)
+
+## Why This Format
+YAML was chosen for:
+- Human readability (structured, comment-friendly, portable)
+- Machine reusability (parses cleanly in Python, Ruby, Go, shell)
+- Single-file simplicity (no dependencies, no nested calls needed to assemble roster)
+- Durable storage (version-controllable if needed later)
+
+## Sources & Accuracy
+- **team.md**: roster table, member names, roles, status, charter paths
+- **routing.md**: work type assignments, routing rules, issue label conventions
+- **registry.json**: casting data (persistent names, universe, creation date, status)
+- **charter.md files**: domain ownership, work style, boundaries, responsibilities
+- No data was invented; missing fields were left unspecified rather than guessed
+
+## Location
+`/Users/tedtschopp/.copilot/session-state/5e7192b1-a46b-4398-9a32-3fd93e7a9e24/files/squad-roster-export.yaml`
+
+## Reusability Pattern
+This export can be:
+- Imported into external team documentation
+- Parsed by automation (Python/Ruby dict, JSON conversion, shell scripts)
+- Shared across systems as a portable reference
+- Updated by re-running the extraction process if roster changes
+
+Future exports can follow the same structure and sourcing discipline.
+
+## Decision Notes
+- Emojis assigned based on role/domain (e.g., Bilbo → ✍️, Gimli → 🚀, Scribe → 📋)
+- Status badges preserve team.md notation (✅ Active, 📋 Silent, 🔄 Monitor)
+- All routing notes extracted verbatim or paraphrased from routing.md routing table
+- Decision records reference this export for permanent roster snapshot
