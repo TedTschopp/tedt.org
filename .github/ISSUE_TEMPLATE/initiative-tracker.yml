@@ -1,0 +1,95 @@
+name: Initiative / Tracker
+description: Coordinate a multi-issue effort, backlog slice, or audit remediation stream with explicit sequencing and child issues.
+title: "tracker: <initiative title>"
+labels: ["governance", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for **parent issues** that coordinate multiple child issues.
+        Keep the tracker outcome-focused and link every child issue explicitly.
+
+  - type: input
+    id: outcome
+    attributes:
+      label: Outcome
+      description: What should be true when this initiative is complete?
+      placeholder: "The May 2026 audit backlog is sequenced, linked, and reduced to a single coherent remediation queue."
+    validations:
+      required: true
+
+  - type: textarea
+    id: why-now
+    attributes:
+      label: Why Now
+      description: Why does this initiative matter now? Include deadlines, user impact, or operational risk.
+      placeholder: "Node.js 20 deprecation and hidden CI quality failures make this backlog slice time-sensitive."
+    validations:
+      required: true
+
+  - type: textarea
+    id: in-scope
+    attributes:
+      label: In Scope
+      placeholder: |
+        - Create or retain the right child issues
+        - Sequence work by blockers and deadlines
+        - Close or supersede duplicates
+    validations:
+      required: true
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      placeholder: |
+        - Solving every child issue directly in this tracker
+        - Work unrelated to this backlog slice
+
+  - type: textarea
+    id: child-issues
+    attributes:
+      label: Child Issues
+      description: List every child issue or candidate issue in priority order.
+      placeholder: |
+        - [ ] #150
+        - [ ] #151
+        - [ ] #152
+    validations:
+      required: true
+
+  - type: input
+    id: blocked-by
+    attributes:
+      label: Blocked By
+      description: Issues, ADRs, or external deadlines gating this initiative.
+      placeholder: "#142, ADR 0008"
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issues or PRs
+      placeholder: "#67, #88, #144"
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Done Definition
+      description: What conditions must be satisfied before this tracker can close?
+      placeholder: |
+        - [ ] All child issues exist and are linked
+        - [ ] Priority order and blockers are explicit
+        - [ ] Duplicates are closed or superseded with comments
+        - [ ] Remaining backlog is intentional and current
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight Check
+      options:
+        - label: I searched existing issues/ADRs and linked overlaps above
+          required: true
+        - label: I listed the child issues that define this initiative
+          required: true

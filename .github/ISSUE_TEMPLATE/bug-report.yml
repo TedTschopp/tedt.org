@@ -1,0 +1,167 @@
+name: Bug Report
+description: Report a defect — template failure, broken link, CI error, accessibility violation, or build regression.
+title: "bug: <short description>"
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for **observable defects**: things that are broken, wrong, or failing.
+        For UX improvements use **UX Enhancement**. For CI/infra work use **Infrastructure Task**.
+
+  - type: dropdown
+    id: bug-type
+    attributes:
+      label: Bug Type
+      description: What kind of defect is this?
+      options:
+        - Template / Liquid defect
+        - Broken internal link or anchor
+        - Broken image or missing asset
+        - CI / build failure
+        - Accessibility violation
+        - Performance regression
+        - Feed or syndication error
+        - Ruby test failure
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: affected-url
+    attributes:
+      label: Affected URL or File Path
+      description: The live URL or source file path where the defect occurs.
+      placeholder: "e.g. https://tedt.org/some-post/ or _includes/homepage/carousel.html"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Production (tedt.org)
+        - CI (GitHub Actions)
+        - Local build
+        - Unknown
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What is broken? Be specific and objective.
+      placeholder: "The <img> tag renders with no src attribute on all Monster Manual post pages, causing 234 broken images in HTMLProofer output."
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to Reproduce
+      placeholder: |
+        1. Run `bundle exec jekyll build`
+        2. Open `_site/some-post/index.html`
+        3. Inspect the `<img>` tag — src attribute is empty
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      placeholder: "Images render with correct src paths; HTMLProofer reports 0 broken image links."
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      placeholder: "234 `<img>` tags have empty src attributes; HTMLProofer reports 234 failures masked by `continue-on-error: true`."
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence (Logs / Screenshots)
+      description: Paste CI log excerpts, HTMLProofer output, or attach screenshots.
+      render: shell
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Use the audit scale — P0 blocks this week, P3 is ongoing hygiene.
+      options:
+        - "P0 — Blocks deployment or causes data loss (act this week)"
+        - "P1 — Major UX or CI breakage (act this sprint)"
+        - "P2 — Quality debt (act this quarter)"
+        - "P3 — Ongoing hygiene (best-effort)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: When is this bug resolved? Be precise and checkable.
+      placeholder: |
+        - [ ] `bundle exec jekyll build` completes with 0 Liquid errors
+        - [ ] HTMLProofer reports 0 broken image src attributes for affected pages
+        - [ ] CI pipeline passes green end-to-end
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Traceability
+        Link this issue into the backlog on purpose so dependencies and rollups stay visible.
+
+  - type: input
+    id: parent-issue
+    attributes:
+      label: Parent / Tracker Issue
+      description: The umbrella issue, initiative, or audit tracker this belongs to.
+      placeholder: "#163"
+
+  - type: input
+    id: blocked-by
+    attributes:
+      label: Blocked By
+      description: Issues, ADRs, or preconditions that must land first.
+      placeholder: "#151, ADR 0012"
+
+  - type: input
+    id: blocks
+    attributes:
+      label: Blocks
+      description: Downstream issues or workstreams waiting on this fix.
+      placeholder: "#157"
+
+  - type: input
+    id: adr-ref
+    attributes:
+      label: ADR / Audit Reference
+      description: Link to a related ADR or the audit finding that surfaced this bug.
+      placeholder: "e.g. ADR 0008, Samwise quality scan MT1"
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issues or PRs
+      placeholder: "#123, #456"
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight Check
+      options:
+        - label: I searched existing issues/ADRs and linked overlaps above
+          required: true
+        - label: I captured blockers or confirmed this work stands alone
+          required: true

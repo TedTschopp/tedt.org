@@ -1,0 +1,28 @@
+{
+  "universe_usage_history": [
+    {
+      "universe": "Middle-earth",
+      "assignment_id": "middle-earth-20260528t154249-0700",
+      "used_at": "2026-05-28T15:42:49.085-07:00"
+    }
+  ],
+  "assignment_cast_snapshots": {
+    "middle-earth-20260528t154249-0700": {
+      "universe": "Middle-earth",
+      "agents": {
+        "lead": "Aragorn",
+        "site-architect": "Galadriel",
+        "frontend-dev": "Arwen",
+        "automation-integration-engineer": "Gandalf",
+        "quality-steward": "Samwise",
+        "security-privacy-steward": "Boromir",
+        "release-devops-steward": "Gimli",
+        "editorial-writer": "Bilbo",
+        "information-architect": "Elrond",
+        "performance-media-optimizer": "Legolas",
+        "search-discovery-engineer": "Faramir"
+      },
+      "created_at": "2026-05-28T15:42:49.085-07:00"
+    }
+  }
+}

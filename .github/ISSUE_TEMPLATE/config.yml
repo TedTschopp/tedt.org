@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Open Backlog
+    url: https://github.com/TedTschopp/tedt.org/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+    about: Review the active issue backlog before opening a new issue.
+  - name: Audit 2026 Backlog
+    url: https://github.com/TedTschopp/tedt.org/issues?q=is%3Aissue+is%3Aopen+label%3Aaudit-2026-05
+    about: Review the May 2026 audit remediation slice and link follow-on work to the right parent issue.
+  - name: ADR Index
+    url: https://github.com/TedTschopp/tedt.org/blob/main/docs/adr/0000-index.md
+    about: Review accepted architectural decisions before opening an Architecture Task.
+  - name: Team Decisions Log
+    url: https://github.com/TedTschopp/tedt.org/blob/main/.squad/decisions.md
+    about: Review the active audit findings and team direction before opening any issue.

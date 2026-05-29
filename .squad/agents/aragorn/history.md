@@ -10,6 +10,7 @@
 
 - 2026-05-28T15:42:49.085-07:00 — Team hired. I own scope, decisions, and final review for tedt.org work.
 - 2026-05-28T23:11:34Z — Audit report merged into `.squad/decisions.md`. Three P0 blockers identified: Node.js 24 CI deprecation (June 2), 1.16 GB artifact (>1 GB limit), `<img>` no-src template defect (234 pages). Prioritized plan spans quick wins (QW1–QW9 this week), medium-term work (MT1–MT9 this sprint), and strategic improvements (ST1–ST6 this quarter).
+- 2026-05-28T21:06:46.885-07:00 — Märchen Engine content status assessment. Key finding: strong mechanics + distinctive identity, but fragmented architecture. Blocking issues: (1) Character Creation unpublished, (2) System Architecture Overview missing, (3) no series metadata, (4) no unified campaign example. Tier 1 subsystems (Magic Items, Nemesis, Social Combat) ready with 1–2 hour polish each. Mechanical gaps: Magical Schools (needs Casting Framework), Morality Aspects (needs Mechanical Hooks), Bastion (needs Märchen flavor). Sequencing: Phase 1 (this week) unblock with Character Creation + System Architecture. Phase 2 (week 2) publish Tier 1 subsystems. Phase 3 (week 3) mechanical polish. Phase 4 (week 4) unified campaign example. Report at `/MARCHEN-ENGINE-CONTENT-STATUS-REPORT.md`.
 
 ## 2026-05-28: PR Review Consolidation (Scribe)
 

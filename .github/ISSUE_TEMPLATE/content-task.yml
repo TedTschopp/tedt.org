@@ -1,0 +1,131 @@
+name: Content Task
+description: Track a content operation — new post, front-matter fix, category update, Mastodon backfill, image audit, or cleanup.
+title: "content: <short description>"
+labels: ["content", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for **content-layer work**: fixing front matter, updating categories, auditing images,
+        running Mastodon backfill, removing `.bak` files, or fixing permalinks and redirects.
+
+  - type: dropdown
+    id: content-type
+    attributes:
+      label: Task Type
+      options:
+        - New post or draft
+        - Front matter fix (single post)
+        - Front matter fix (batch)
+        - Category update (registry or slug)
+        - Image / alt-text audit
+        - Mastodon backfill
+        - Feed update or snapshot refresh
+        - Remove .bak / stale files
+        - Permalink or redirect fix
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-paths
+    attributes:
+      label: Affected Posts or Paths
+      description: List file paths, URL slugs, or glob patterns involved.
+      placeholder: |
+        - `_posts/Folklore/**` (image-alt audit)
+        - `_posts/Monster-Manual/*.md` (front matter image path fix)
+        - All posts missing `mastodon-post-id` (~800 files)
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What needs to happen and why?
+      placeholder: "~800 posts are missing `mastodon-post-id`. Run backfill script with `--since 2024-01-01 --limit 50` to begin systematic syndication. Prioritize posts from 2024 onward."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Precise, checkable conditions that define "done."
+      placeholder: |
+        - [ ] All targeted posts have valid `mastodon-post-id` front matter
+        - [ ] `ruby tests/validate_mastodon_feed.rb` passes
+        - [ ] No duplicate toots created (verified with `_code/dedupe_masto_statuses.py`)
+        - [ ] `bundle exec jekyll build` passes with no new warnings
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Traceability
+        Link this content work to the parent initiative and capture any sequencing constraints.
+
+  - type: input
+    id: parent-issue
+    attributes:
+      label: Parent / Tracker Issue
+      description: The umbrella issue, initiative, or audit tracker this task belongs to.
+      placeholder: "#163"
+
+  - type: input
+    id: blocked-by
+    attributes:
+      label: Blocked By
+      description: Issues, approvals, or preconditions that must happen first.
+      placeholder: "#142"
+
+  - type: input
+    id: blocks
+    attributes:
+      label: Blocks
+      description: Downstream issues or publication steps waiting on this task.
+      placeholder: "#162"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      options:
+        - "P0 — Production content broken (act this week)"
+        - "P1 — Affects feeds or syndication (act this sprint)"
+        - "P2 — Hygiene or completeness (this quarter)"
+        - "P3 — Ongoing / best-effort"
+    validations:
+      required: true
+
+  - type: input
+    id: script-or-tool
+    attributes:
+      label: Script or Tool
+      description: Which script or test validates or performs this task?
+      placeholder: "e.g. _code/backfill_masto_posts.py --write, ruby tests/check_image_alt_text.rb"
+
+  - type: input
+    id: adr-ref
+    attributes:
+      label: ADR Reference
+      description: If this relates to an architectural decision, link it here.
+      placeholder: "e.g. ADR 0006 — Category Carousel Registry"
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issues or PRs
+      placeholder: "#123, #456"
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight Check
+      options:
+        - label: I searched existing issues/ADRs and linked overlaps above
+          required: true
+        - label: I captured blockers or confirmed this work stands alone
+          required: true

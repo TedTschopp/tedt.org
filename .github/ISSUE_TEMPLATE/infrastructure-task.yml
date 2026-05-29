@@ -1,0 +1,147 @@
+name: Infrastructure / CI Task
+description: Track CI workflow updates, dependency upgrades, artifact size fixes, GitHub Actions version pins, or build pipeline changes.
+title: "infra: <short description>"
+labels: ["infrastructure", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for **build, CI, dependency, and deployment work**.
+        For site-visible defects, use **Bug Report**. For content operations, use **Content Task**.
+
+  - type: dropdown
+    id: infra-type
+    attributes:
+      label: Task Type
+      options:
+        - GitHub Actions version update
+        - Ruby gem upgrade or security pin
+        - Artifact size reduction
+        - CI gate enforcement
+        - Build performance improvement
+        - Test harness fix
+        - Deploy workflow change
+        - Cache or plugin update
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current State
+      description: What is the current configuration, version, or condition? Quote specific numbers where possible.
+      placeholder: "GitHub Actions `actions/upload-pages-artifact` uses Node.js 20, which GitHub will deprecate on 2026-06-02. The CI pipeline will fail unless updated to v3 (Node.js 24)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: target-state
+    attributes:
+      label: Target State
+      description: What should the end state look like? Be specific about versions, thresholds, or configurations.
+      placeholder: "All actions pinned to versions using Node.js 24 runtime. CI completes without Node.js deprecation warnings. Artifact size stays under 1 GB."
+    validations:
+      required: true
+
+  - type: textarea
+    id: affected-files
+    attributes:
+      label: Affected Files or Workflows
+      placeholder: |
+        - `.github/workflows/deploy.yml` — update `actions/upload-pages-artifact` to v3
+        - `.github/workflows/mastodon-feed.yml` — update `actions/checkout` to v4
+        - `Gemfile` — bump `ffi` pin if CVE requires it
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: P0 has a hard deadline; P3 is preventive hygiene.
+      options:
+        - "P0 — Deadline-bound or blocks deployment (act this week)"
+        - "P1 — Degrades CI reliability (act this sprint)"
+        - "P2 — Technical debt (act this quarter)"
+        - "P3 — Preventive hygiene (ongoing)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: risk
+    attributes:
+      label: Risk Assessment
+      placeholder: |
+        - Risk: Upgrading `actions/upload-pages-artifact` may require a matching `actions/deploy-pages` version bump.
+        - Mitigation: Test in a branch build before merging to main.
+        - Rollback: Revert both action versions atomically if CI breaks.
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Precise, checkable conditions that define "done."
+      placeholder: |
+        - [ ] CI pipeline completes green on `main`
+        - [ ] No Node.js deprecation warnings in workflow logs
+        - [ ] `bundler-audit` passes (no known CVEs introduced)
+        - [ ] GitHub Pages artifact remains under 1 GB post-change
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Traceability
+        Link infra work to its parent tracker and record upstream/downstream dependencies.
+
+  - type: input
+    id: parent-issue
+    attributes:
+      label: Parent / Tracker Issue
+      description: The umbrella issue, initiative, or audit tracker this task belongs to.
+      placeholder: "#163"
+
+  - type: input
+    id: blocked-by
+    attributes:
+      label: Blocked By
+      description: Issues, approvals, or preconditions that must happen first.
+      placeholder: "#151, #152"
+
+  - type: input
+    id: blocks
+    attributes:
+      label: Blocks
+      description: Downstream issues or workstreams waiting on this infrastructure task.
+      placeholder: "#157"
+
+  - type: input
+    id: adr-ref
+    attributes:
+      label: ADR Reference
+      description: Related ADR if applicable (e.g. ADR 0009 for the ffi stability pin).
+      placeholder: "ADR 0009 — ffi Downgrade Stability"
+
+  - type: input
+    id: deadline
+    attributes:
+      label: Hard Deadline (if any)
+      placeholder: "e.g. 2026-06-02 (Node.js 20 deprecation)"
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issues or PRs
+      placeholder: "#123, #456"
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight Check
+      options:
+        - label: I searched existing issues/ADRs and linked overlaps above
+          required: true
+        - label: I captured blockers or confirmed this work stands alone
+          required: true

@@ -1,0 +1,135 @@
+name: Architecture Task / ADR Proposal
+description: Propose a new ADR, track an in-flight decision, or request ratification of an existing proposed ADR.
+title: "adr: <descriptive title>"
+labels: ["architecture", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to **propose, track, or ratify** an Architecture Decision Record.
+        Before opening, check the [ADR Index](https://github.com/TedTschopp/tedt.org/blob/main/docs/adr/0000-index.md)
+        to confirm no existing ADR covers this ground.
+
+  - type: dropdown
+    id: adr-action
+    attributes:
+      label: Action
+      options:
+        - Propose new ADR
+        - Ratify existing Proposed ADR
+        - Amend or supersede existing ADR
+        - Deprecate / close ADR
+    validations:
+      required: true
+
+  - type: input
+    id: adr-number
+    attributes:
+      label: ADR Number
+      description: For new ADRs, use the next available number from the index (e.g. 0013). For existing ones, enter the current number.
+      placeholder: "e.g. ADR 0013"
+
+  - type: input
+    id: adr-title
+    attributes:
+      label: ADR Title
+      placeholder: "e.g. Decompose default.html into named sub-includes"
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem Statement
+      description: What force or constraint requires a decision? Quantify scale or risk where possible.
+      placeholder: "`default.html` has grown to 630 lines. Template changes risk unintended regressions across all page types. Decomposition into named sub-includes would reduce blast radius and improve readability."
+    validations:
+      required: true
+
+  - type: textarea
+    id: decision-brief
+    attributes:
+      label: Proposed Decision (Brief)
+      description: One or two sentences stating the recommended direction.
+      placeholder: "Extract logical sections (head, nav, hero, main-content, footer) from default.html into dedicated `_includes/layout/*.html` partials, invoked by name."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      placeholder: |
+        - Keep monolithic layout (rejected: maintenance risk grows with every template change)
+        - Full layout rewrite (rejected: too broad; risk of regressions across all page types)
+
+  - type: textarea
+    id: consequences
+    attributes:
+      label: Known Consequences or Risks
+      placeholder: |
+        - Positive: smaller change surface per template edit; easier contributor onboarding
+        - Negative: more file hops when tracing rendering logic end-to-end
+        - Neutral: no functional change to rendered HTML output
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: What does "done" look like for this ADR?
+      placeholder: |
+        - [ ] ADR document drafted in `docs/adr/NNNN-*.md` using the ADR template
+        - [ ] Status set to Proposed; linked in ADR index (`docs/adr/0000-index.md`)
+        - [ ] At least one review comment or approval recorded
+        - [ ] Implementation tracked in a follow-on issue or PR
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Traceability
+        Tie the decision record to the initiative, dependency chain, and implementation backlog.
+
+  - type: input
+    id: parent-issue
+    attributes:
+      label: Parent / Tracker Issue
+      description: The umbrella issue, initiative, or audit tracker this ADR work belongs to.
+      placeholder: "#163"
+
+  - type: input
+    id: blocked-by
+    attributes:
+      label: Blocked By
+      description: ADRs, issues, or decisions that must happen first.
+      placeholder: "ADR 0008, #67"
+
+  - type: input
+    id: blocks
+    attributes:
+      label: Blocks
+      description: Follow-on issues, ADRs, or implementation work waiting on this decision.
+      placeholder: "#160, #161"
+
+  - type: input
+    id: related-adrs
+    attributes:
+      label: Related ADRs
+      placeholder: "ADR 0007, ADR 0008"
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issues or PRs
+      placeholder: "#123, #456"
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight Check
+      options:
+        - label: I searched existing ADRs/issues and linked overlaps above
+          required: true
+        - label: I captured blockers or confirmed this decision stands alone
+          required: true

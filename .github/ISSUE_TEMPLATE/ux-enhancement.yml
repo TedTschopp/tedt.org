@@ -1,0 +1,147 @@
+name: UX Enhancement
+description: Propose or track a user-experience improvement — visual, accessibility, readability, or interaction design.
+title: "ux: <short title>"
+labels: ["UX", "enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for **intentional improvements** to how the site looks, reads, or behaves for visitors.
+        For broken behavior, use the **Bug Report** template instead.
+
+  - type: dropdown
+    id: ux-type
+    attributes:
+      label: Enhancement Type
+      options:
+        - Visual / Layout
+        - Typography / Readability
+        - Accessibility (a11y)
+        - Navigation / Information Architecture
+        - Mobile / Responsive
+        - Interaction / Animation
+        - SEO / Meta copy
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: component
+    attributes:
+      label: Component or Page
+      description: Which component, layout, or page does this affect?
+      placeholder: "e.g. _includes/homepage/carousel.html, _layouts/post.html, category pages"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      description: "Format: As a [visitor type], I want [what], so that [benefit]."
+      placeholder: "As a mobile reader, I want line lengths to stay under 80 characters, so that I can read without horizontal scanning."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-state
+    attributes:
+      label: Current State
+      description: Describe the current behavior or appearance. Screenshots welcome (drag to attach).
+      placeholder: "Font size is 14px on mobile, line-height is tight, and prose containers exceed 80ch on wide viewports."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed Change
+      description: What should change? Reference SCSS variables, component names, or layout files if known.
+      placeholder: "Raise base font to 16px in `_sass/_base.scss`, cap `.prose` max-width at 72ch, increase line-height to 1.6."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Precise, checkable conditions that define "done."
+      placeholder: |
+        - [ ] Prose line length stays between 60–80ch at all viewport widths
+        - [ ] Base font ≥ 16px on mobile; passes WCAG AA contrast ratio
+        - [ ] No SCSS regressions in other layout contexts
+        - [ ] `bundle exec jekyll build` passes; HTMLProofer reports no new failures
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ### Traceability
+        Link this enhancement to its parent work and note any sequencing constraints.
+
+  - type: input
+    id: parent-issue
+    attributes:
+      label: Parent / Tracker Issue
+      description: The umbrella issue, initiative, or audit tracker this belongs to.
+      placeholder: "#163"
+
+  - type: input
+    id: blocked-by
+    attributes:
+      label: Blocked By
+      description: Issues, ADRs, or preconditions that must land first.
+      placeholder: "#67, ADR 0007"
+
+  - type: input
+    id: blocks
+    attributes:
+      label: Blocks
+      description: Downstream issues or workstreams waiting on this enhancement.
+      placeholder: "#88"
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: Use the audit scale — P0 this week, P3 is best-effort polish.
+      options:
+        - "P0 — Accessibility blocker or legal risk"
+        - "P1 — Significant reader-experience degradation (act this sprint)"
+        - "P2 — Noticeable improvement, low risk (this quarter)"
+        - "P3 — Nice-to-have polish (best-effort)"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: adr-needed
+    attributes:
+      label: ADR Required?
+      description: Does this change affect architecture, introduce a new pattern, or touch shared design tokens?
+      options:
+        - label: "Yes — I will open or reference an ADR"
+        - label: "No — this is a localized style or copy change"
+
+  - type: input
+    id: adr-ref
+    attributes:
+      label: ADR Reference
+      description: Link to a related or proposed ADR if applicable.
+      placeholder: "e.g. ADR 0007 — Category Theming Unification"
+
+  - type: input
+    id: related-issues
+    attributes:
+      label: Related Issues or PRs
+      placeholder: "#123, #456"
+
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Pre-flight Check
+      options:
+        - label: I searched existing issues/ADRs and linked overlaps above
+          required: true
+        - label: I captured blockers or confirmed this work stands alone
+          required: true
