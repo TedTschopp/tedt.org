@@ -240,6 +240,142 @@ All 6 YAML files validated and parse without error. Acceptance criteria required
 
 ---
 
+### 8. Märchen Engine Content Review — Editorial Findings
+
+**Date:** 2026-05-28T20:41:20.012-07:00  
+**Author:** Bilbo (Editorial Writer)  
+**Type:** content-review  
+**Status:** awaiting-decision
+
+**Summary:** Completed editorial review of the Märchen Engine (1 published post + 18 WIP docs). The system has a **strong, differentiated identity** (fairness-centric, innovative mechanics, three-realm magic) but the **WIP corpus lacks integration narrative**. The published intro is publication-ready (with minor edits); most WIP pieces need structural work before they cohere.
+
+**Key Strengths:**
+- Published intro balances accessibility with depth; warm and inclusive tone
+- 4D8 system mechanically elegant and ties to human aspects
+- Three-Realms magic system conceptually coherent and ambitious
+- Morality aspects theoretically grounded
+- Social Combat ("Engagement") is a full subsystem, not a skin
+
+**Blocking Issues (P1):**
+1. **No system integration narrative** — WIP files read as isolated modules. Needs: System Architecture Overview document
+2. **No character creation process** — Players can't make a character from existing material. Needs: Character Creation chapter
+
+**High-Priority Issues (P2):**
+3. Inconsistent terminology and voice across documents
+4. Magical Schools lack mechanical grounding — beautiful concepts but no casting rolls, resources, or time costs defined
+5. Moral Aspects lack mechanical hooks — philosophical but not playable
+6. Bastion Rules appear D&D-copied; no Märchen DNA
+7. Incomplete / draft content scattered in WIP folder
+
+**Readiness Ranking:**
+- Published Intro: ✅ Minor edits (~30 min)
+- 4D8 System: ⚠️ Add 1 example (~1 hr)
+- Engagement / Social Combat: ⚠️ Integration note + example (~1.5 hrs)
+- Magical Schools: ⚠️ Casting framework (~3 hrs)
+- Morality Aspects: ⚠️ Mechanical hooks (~2 hrs)
+- Adventure Structure: ❌ Rewrite or cut (~4 hrs)
+- Bastion Rules: ❌ Replace or integrate (~4 hrs)
+- Incomplete docs: ❌ Move to drafts or complete (~2 hrs)
+
+**Decisions Needed (For Ted):**
+1. **Publication Timeline:** Will Märchen Engine be published as a complete book, or as incremental blog posts?
+2. **Book Structure:** Should Character Creation be a dedicated chapter, or woven into the intro?
+3. **Bastion Integration:** Keep, replace, or integrate Bastion rules with moral/realm mechanics?
+4. **WIP Folder Cleanup:** Should incomplete docs be moved to `_drafts/`, marked with `[INCOMPLETE]` prefix, or deleted?
+
+**Recommended Next Steps:**
+- Write System Architecture Overview (3–4 hrs) — unblocks everything
+- Write Character Creation chapter (2–3 hrs)
+- Add Casting Framework to Magical Schools (2–3 hrs)
+- Establish Märchen Style Guide + standardize terminology (2–3 hrs)
+- Migrate incomplete docs; mark stubs (1–2 hrs)
+
+**Full Artifact:** `/Users/tedtschopp/.copilot/session-state/5e7192b1-a46b-4398-9a32-3fd93e7a9e24/files/marchen-engine-review/bilbo-feedback.md`
+
+---
+
+### 9. Märchen Engine Publishing Strategy
+
+**Date:** 2026-05-28T20:41:20.012-07:00  
+**Author:** Elrond (Information Architect)  
+**Type:** strategic-decision  
+**Status:** awaiting-decision
+
+**Summary:** IA audit complete on Märchen Engine corpus (1 published intro + 21 WIP subsystem docs). Strong mechanics, fragmented information architecture. Publishing requires structural work before content ships.
+
+**Key Decision Points for Ted:**
+
+**1. Product Scope: Complete RPG vs. Modular Toolkit?**
+
+**Option A: Complete Game (3–4 weeks)** — Ship full rules: core mechanics, all subsystems, ≥2 example campaigns. Benefit: high perceived value, one-stop-shop. Risk: higher QA burden, requires coordinating all subsystems.
+
+**Option B: Modular Toolkit (1–2 weeks MVP)** — Ship core mechanics + 2–3 flagship subsystems (Magic Items, Social Combat, Legacy of Scars). Benefit: faster market entry, lower QA friction. Risk: may dilute perceived completeness.
+
+**Recommendation:** Option B (modular). Deploy fast; let user feedback shape expansion.
+
+**2. Character Creation: Extract, Formalize, or Defer?**
+
+Currently embedded in published intro; not comprehensive. Blocking dependencies: Bastion rules assume character creation complete; Social Combat references character stats.
+
+**Recommendation:** YES. Extract & publish standalone "Character Creation" post with races, skill assignment, companion/sanctuary selection, starting gear, advancement hooks. Effort: 4–6 hours.
+
+**3. Publishing Order: Dependency vs. Value?**
+
+**Tier 1 (Pub-ready):** Magic Items, Legacy of Scars, Social Combat
+**Tier 2 (1–2 day polish):** Character Creation, Bastion, Campaign Example
+**Tier 3 (consolidate/archive):** Morality, Knowledge Levels, Sketches
+
+**Recommended Sequence:**
+- Week 1: Formalize + publish Character Creation
+- Week 1–2: Publish Magic Items, Legacy of Scars, Social Combat
+- Week 2–3: Unified campaign example
+- Week 3+: Bastion rules (rewritten for Märchen), consolidated Morality, advanced options
+
+**Recommendation:** Follow Recommended Sequence. Chargen formalization gates all subsystems; once done, ship fast.
+
+**4. Terminology & Glossary: Unify or Accept Variance?**
+
+Terms redefined per subsystem (Rank, Bond, Influence, Skill Levels, Knowledge Tier). Creates friction for readers.
+
+**Recommendation:** Option A (canonical glossary). Invest 2–3 hours now. Include: core task resolution, character building, social/narrative, item & nemesis, time scales. Link each definition to subsystem post where formalized. Front matter: `no_toc: true`, `series_step: 1.5`.
+
+**5. Campaign Example: MVP or Full Arc?**
+
+Current "Light of Life" is excellent but doesn't show subsystem integration.
+
+**Recommendation:** Option A (MVP). 3–4 session example showing chargen → first encounter → Nemesis introduced → Bastion downtime → social negotiation. 1,500–2,000 words; 4–6 hours. **Proves** Nemesis + Bastion + Magic Items work together.
+
+**6. Referee Support: Standardize or Keep Subsystem-Specific?**
+
+Magic Items have excellent GM guidance; Social Combat minimal; Bastion D&D-ified.
+
+**Recommended structure (all subsystem posts):**
+- Prep Checklist
+- Common Pitfalls
+- Integration Notes
+- House Rule Ideas
+
+**Recommendation:** YES. Add to all published subsystem posts. Effort per subsystem: 30 min–1 hour. Standardization signals quality + helps adoption.
+
+**Team Coordination Notes:**
+
+- **Galadriel (Templates/Navigation):** Märchen Engine posts form a series. Homepage carousel should surface as collection (like "Prompts" or "Slides"). Consider new category/subcategory for "TTRPG Systems"?
+- **Faramir (Taxonomy/Search):** Introduce new taxonomy: `Subsystem Type` (core, optional, setting-specific). Tag/metadata support to distinguish core mechanics from optional subsystems.
+- **Aragorn (Content Strategy):** RPG schema expansion (issue #181) should account for Märchen Engine's `Story Thread Rank`, `Bond`, `Nemesis Tier` mechanics. Coordinate on front matter extensions.
+
+**Ted to Decide:**
+1. Choose product scope: Complete RPG or Modular Toolkit?
+2. Approve publishing sequence or customize?
+3. Confirm glossary investment: spend 2–3 hours now?
+4. Commit to campaign example: Option A (MVP 4–6 hrs) or Option C (defer)?
+5. Referee support: Add standardized GM guidance to all subsystem posts?
+
+**Effort Estimate:** 12–18 hours for full MVP publication (chargen + Tier 1 subsystems + campaign example + glossary). Can be accomplished in 2–3 weeks at steady pace.
+
+**Full Artifact:** `/Users/tedtschopp/.copilot/session-state/5e7192b1-a46b-4398-9a32-3fd93e7a9e24/files/marchen-engine-review/elrond-feedback.md`
+
+---
+
 ## Governance
 
 - All meaningful changes require team consensus
