@@ -26,3 +26,10 @@
 **Left open (2):** #137, #139 (retained for future review)  
 **Rationale:** ADR 0009 constraint preserved (ffi 1.16.3 pinned); stale dirty workflow/dependency PRs retired cleanly so fresh replacements can be raised against current main.
 
+## 2026-05-29: PR #139 Run Diagnosis (Gimli → Scribe)
+
+**Operation:** Investigated GitHub Actions run 22814405550 / job 66177001501 for PR #139 (`actions/upload-artifact` v6 → v7 bump).  
+**Finding:** PR branch is stale and branch-diverged from current main. Secondary failures surface from repo drift, not from the artifact action bump itself.  
+**Recommendation:** Close PR #139 and recreate the bump fresh against current main before re-reviewing.  
+**Status:** Handoff to Scribe for archival and team logging.
+
