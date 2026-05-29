@@ -18,3 +18,18 @@
 **Key Decision:** Close #129, #130 (stale, critical for June 2 Node.js 24 deadline) and recreate; merge #149, #148, #146, #145 immediately  
 **Team Verdict:** 4 approvable, 2 human review, 7 close  
 
+## 2026-05-28: Code Review Consolidation
+
+**Role:** Consolidate 6 specialist code reviews into actionable GitHub issues  
+**Input:** Galadriel (architecture), Arwen (frontend), Gandalf (automation), Samwise (quality), Boromir (security), Legolas (performance)  
+**Output:** 12 new issues created (#165–#177), 2 existing issues expanded (#150, #66), summary posted to tracker #163  
+
+**Key Decisions:**
+- Prompt layout decomposition: merged Galadriel + Arwen findings into single issue #166
+- Mastodon component refactor: merged Arwen's styles + tree findings into single issue #167
+- Mixed GH Actions versions: folded into existing #150 (Node.js 24 migration)
+- Font Awesome subsetting + inline CSS: folded into existing #66 (CSS rationalization)
+- 12 findings already covered by existing issues—no duplicates created
+
+**Net Result:** Concise backlog with 1 P1, 9 P2, 2 P3 new issues. All findings traceable from reviewer → issue → acceptance criteria.
+
