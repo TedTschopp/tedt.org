@@ -18,3 +18,11 @@
 **Critical:** PR #129 (setup-node) is highest-priority action — feeds June 2 deadline  
 **Consolidated:** Output merged into decisions.md  
 
+## 2026-05-29: PR State Changes (Ted Tschopp → Gimli)
+
+**Operation:** GitHub PR merge & close per merge-readiness assessment  
+**Merged (4):** #149, #148, #146, #145 (approved PRs)  
+**Closed (7):** #126, #129, #130, #131, #132, #133, #134 (stale/dirty, rationale comments added)  
+**Left open (2):** #137, #139 (retained for future review)  
+**Rationale:** ADR 0009 constraint preserved (ffi 1.16.3 pinned); stale dirty workflow/dependency PRs retired cleanly so fresh replacements can be raised against current main.
+
