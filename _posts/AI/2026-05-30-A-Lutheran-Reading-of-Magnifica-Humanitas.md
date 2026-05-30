@@ -83,22 +83,22 @@ _Magnifica Humanitas_ is framed around a question that belongs at the center of 
 
 The document uses the contrast between Babel and Jerusalem to examine technology, power, dignity, social doctrine, work, truth, freedom, war, peace, and the limits of machine intelligence. That is fertile ground for Lutheran reflection. A Lutheran reading can affirm much of the document's critique of technocratic idolatry, its defense of creaturely limits, its concern for the vulnerable, and its insistence that machines cannot become moral subjects.
 
-At the same time, the points of caution matter. LCMS theology receives these themes through Scripture, the Lutheran Confessions, the distinction between Law and Gospel, the doctrine of vocation, the two kingdoms, and a different account of ecclesial authority, sacramental theology, and Marian devotion.
+At the same time, the points of caution matter. Lutheran theology receives these themes through Scripture, the Lutheran Confessions, the distinction between Law and Gospel, the doctrine of vocation, the two kingdoms, and a different account of ecclesial authority, sacramental theology, and Marian devotion.
 
-The table below is an interpretive commentary matrix. It is not an official LCMS position statement. The score is a reading aid: a way to make agreement, disagreement, and caution explicit paragraph by paragraph.
+The table below is an interpretive commentary matrix. It is not an official Lutheran position statement. The score is a reading aid: a way to make agreement, disagreement, and caution explicit paragraph by paragraph.
 
 ## How to Read the Scores
 
 | Score Range | Interpretation |
 | --- | --- |
-| 85 to 100 | Strong agreement: core Lutheran/LCMS alignment with little or no caveat. |
+| 85 to 100 | Strong agreement: core Lutheran alignment with little or no caveat. |
 | 65 to 84 | Substantial agreement: broadly Lutheran reception with some confessional or prudential framing. |
 | 40 to 64 | Mixed or qualified agreement: real agreement, but with significant Lutheran caution. |
-| 1 to 39 | Limited agreement: some shared concern, but the dominant framing is difficult for LCMS theology. |
+| 1 to 39 | Limited agreement: some shared concern, but the dominant framing is difficult for Lutheran theology. |
 | 0 | Neutral or not materially addressed. |
 | -1 to -39 | Limited disagreement: the concern may be understandable, but the theological framing is weak. |
 | -40 to -64 | Significant disagreement: substantial conflict with Lutheran theology or confessional boundaries. |
-| -65 to -100 | Severe disagreement: direct conflict with LCMS doctrine or practice. |
+| -65 to -100 | Severe disagreement: direct conflict with Lutheran doctrine or practice. |
 {: .table .table-striped .table-hover}
 
 ## Commentary Matrix
