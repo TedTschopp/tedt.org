@@ -2,9 +2,9 @@
 layout: long-article
 
 title: "A Lutheran Reading of Magnifica Humanitas"
-subtitle: "An LCMS-oriented commentary matrix on AI, human dignity, technology, power, and Christian anthropology."
+subtitle: "A Lutheran oriented commentary matrix on AI, human dignity, technology, power, and Christian anthropology."
 quote: "The question is not whether AI can be useful. The question is what vision of the human person is being built into the tools, institutions, and habits that now shape public life."
-excerpt: "A paragraph-by-paragraph Lutheran and LCMS-oriented commentary on Magnifica Humanitas, examining AI, human dignity, technology, social doctrine, power, vocation, and the limits of machine intelligence."
+excerpt: "A paragraph-by-paragraph Lutheran and Lutheran oriented commentary on Magnifica Humanitas, examining AI, human dignity, technology, social doctrine, power, vocation, and the limits of machine intelligence."
 source: "Original Commentary"
 source-url: "https://www.vatican.va/content/leo-xiv/en/encyclicals/documents/20260515-magnifica-humanitas.html"
 call-to-action: "Discuss this on Mastodon"
@@ -20,12 +20,12 @@ author:
 bullets:
   - Magnifica Humanitas offers a theological frame for AI, human dignity, technology, power, and the common good.
   - A Lutheran reading strongly affirms the critique of Babel, technocratic idolatry, dehumanization, and machine moral agency.
-  - LCMS cautions appear where Roman Catholic social doctrine, Marian devotion, ecclesiology, or sacramental theology diverge from Lutheran confession.
-  - The score is interpretive, not an official LCMS position, and should be read as a tool for theological comparison.
+  - Lutheran theology cautions appear where Roman Catholic social doctrine, Marian devotion, ecclesiology, or sacramental theology diverge from Lutheran confession.
+  - The score is interpretive, not an official Lutheran position, and should be read as a tool for theological comparison.
   - The strongest alignment appears around creatureliness, vocation, human limits, family, work, truth, and the moral responsibility of AI builders.
 
-description: "A Lutheran and LCMS-oriented commentary matrix on Magnifica Humanitas, AI, human dignity, vocation, technology, and Christian anthropology."
-seo-description: "A paragraph-by-paragraph Lutheran and LCMS commentary on Magnifica Humanitas, artificial intelligence, human dignity, technology, vocation, and social doctrine."
+description: "A Lutheran commentary matrix on Magnifica Humanitas, AI, human dignity, vocation, technology, and Christian anthropology."
+seo-description: "A paragraph-by-paragraph Lutheran commentary on Magnifica Humanitas, artificial intelligence, human dignity, technology, vocation, and social doctrine."
 
 categories:
   - AI
@@ -35,7 +35,6 @@ categories:
 tags:
   - Magnifica Humanitas
   - Lutheran Theology
-  - LCMS
   - Artificial Intelligence
   - AI Ethics
   - Christian Anthropology
@@ -46,7 +45,7 @@ tags:
 
 keywords:
   - Magnifica Humanitas Lutheran commentary
-  - LCMS AI ethics
+  - Lutheran AI ethics
   - Lutheran AI theology
   - Christian anthropology and AI
   - AI human dignity
@@ -251,7 +250,9 @@ _Magnifica Humanitas_ is framed around a question that belongs at the center of 
 
 The document uses the contrast between Babel and Jerusalem to examine technology, power, dignity, social doctrine, work, truth, freedom, war, peace, and the limits of machine intelligence. That is fertile ground for Lutheran reflection. A Lutheran reading can affirm much of the document's critique of technocratic idolatry, its defense of creaturely limits, its concern for the vulnerable, and its insistence that machines cannot become moral subjects.
 
-At the same time, the points of caution matter. Lutheran theology receives these themes through Scripture, the Lutheran Confessions, the distinction between Law and Gospel, the doctrine of vocation, the two kingdoms, and a different account of ecclesial authority, sacramental theology, and Marian devotion.
+At the same time, the points of caution matter. Lutheran theology receives these themes through Scripture, the distinction between Law and Gospel, the doctrine of vocation, the two kingdoms, and a different account of ecclesial authority, sacramental theology, and Marian devotion.  
+
+It should be noted that these points of caution are the traditional Lutheran responses to Roman Catholic theology, not a critique of the document itself.  When traditional Catholic teaching appears, it is noted, however those points are not a part of the primary argument made by the Pope.  The principal argument made by the pope relies on common ground both Lutherans and Catholics share.  These places of common ground include creatureliness, vocation, human limits, family, work, truth, and the moral responsibility of AI builders.
 
 The table below is an interpretive commentary matrix. It is not an official Lutheran position statement. The score is a reading aid: a way to make agreement, disagreement, and caution explicit paragraph by paragraph.
 
