@@ -4436,5 +4436,36 @@
       "https://tschopp.net/users/Ted/statuses/116661488181718686"
     ],
     "lastTootTimestamp": 1780113039984
+  },
+  "https://tedt.org/A-Lutheran-Reading-of-Magnifica-Humanitas/": {
+    "id": "/A-Lutheran-Reading-of-Magnifica-Humanitas/",
+    "title": "A Lutheran Reading of Magnifica Humanitas",
+    "summary": "A paragraph-by-paragraph Lutheran and LCMS-oriented commentary on Magnifica Humanitas, examining AI, human dignity, technology, social doctrine, power, vocation, and the limits of machine intelligence.",
+    "content_text": "A paragraph-by-paragraph Lutheran and LCMS-oriented commentary on Magnifica Humanitas, examining AI, human dignity, technology, social doctrine, power, vocation, and the limits of machine intelligence. https://tedt.org/A-Lutheran-Reading-of-Magnifica-Humanitas/",
+    "url": "https://tedt.org/A-Lutheran-Reading-of-Magnifica-Humanitas/",
+    "image": "https://tedt.org/img/2026-05/Sacred-ruins-under-a-futuristic-sky.webp",
+    "tags": [
+      "Magnifica Humanitas",
+      "Lutheran Theology",
+      "LCMS",
+      "Artificial Intelligence",
+      "AI Ethics",
+      "Christian Anthropology",
+      "Human Dignity",
+      "Vocation",
+      "Technology Ethics",
+      "Social Doctrine"
+    ],
+    "date_published": "2026-05-30T09:00:00-07:00",
+    "date_modified": "2026-05-30T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116665313115769329"
+    ],
+    "lastTootTimestamp": 1780171403832
   }
 }
