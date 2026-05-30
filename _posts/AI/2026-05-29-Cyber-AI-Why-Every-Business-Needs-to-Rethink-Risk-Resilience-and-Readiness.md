@@ -166,6 +166,7 @@ High-value defensive use cases may include:
 | Fraud and abuse detection | Pattern recognition, behavioral anomaly detection, case summarization          |
 |           Data governance | Sensitive data discovery, classification support, policy mapping               |
 |                Compliance | Control mapping, evidence collection, audit preparation                        |
+{: .table .table-striped .table-hover}
 
 However, AI must be used carefully. A poorly governed AI capability can create new risks: data leakage, over-permissioned automation, hallucinated outputs, weak auditability, inappropriate reliance, privacy exposure, and unclear accountability.
 
@@ -189,6 +190,7 @@ This means businesses need to ask practical readiness questions before scaling A
 |          Governance | Who approves AI use cases, models, data sources, and automations?     |
 | Workforce readiness | Do employees know how to use, challenge, and verify AI outputs?       |
 | Operational support | Can the AI-enabled process be maintained, audited, and improved?      |
+{: .table .table-striped .table-hover}
 
 A business that is not ready for AI from a data, governance, and architecture perspective may still be able to experiment. But experimentation is not the same as production readiness.
 
@@ -226,6 +228,7 @@ The point is not to claim that every business should already have perfect answer
 |                                                   “We can add AI once we buy the tool.” | AI readiness depends on data readiness, architecture readiness, governance readiness, workforce readiness, and operational readiness.                                   |
 |                                                  “Humans are always the safe fallback.” | Humans are only a safe fallback if they remain trained, informed, empowered, and practiced enough to intervene under pressure.                                          |
 |                                                  “Cybersecurity can manage this alone.” | Cyber + AI requires a cross-functional operating model involving security, technology, data, legal, compliance, procurement, risk, operations, and business leadership. |
+{: .table .table-striped .table-hover}
 
 ## What Business Leaders Should Do Now
 
