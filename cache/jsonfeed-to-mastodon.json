@@ -4380,7 +4380,7 @@
   },
   "https://tedt.org/The-Small-Alpine-Mirror/": {
     "id": "/The-Small-Alpine-Mirror/",
-    "title": "The Small Alpine Mirror",
+    "title": "Alpine Folklore and Frontier Law for The Märchen Engine",
     "summary": "A Märchen Engine setting guide to Alpine crownlands, salt, iron, abbeys, hidden folk, beasts, and horrors, with story prompts for tabletop play.",
     "content_text": "A Märchen Engine setting guide to Alpine crownlands, salt, iron, abbeys, hidden folk, beasts, and horrors, with story prompts for tabletop play. https://tedt.org/The-Small-Alpine-Mirror/",
     "url": "https://tedt.org/The-Small-Alpine-Mirror/",
@@ -4405,5 +4405,36 @@
       "https://tschopp.net/users/Ted/statuses/116640289894581298"
     ],
     "lastTootTimestamp": 1779789579798
+  },
+  "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/": {
+    "id": "/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/",
+    "title": "Cyber+AI: Why Every Business Needs to Rethink Risk, Resilience, and Readiness",
+    "summary": "Cybersecurity and AI are now inseparable business concerns. Organizations need to rethink risk, resilience, governance, vendor exposure, data readiness, and workforce design for an AI-enabled threat environment.",
+    "content_text": "Cybersecurity and AI are now inseparable business concerns. Organizations need to rethink risk, resilience, governance, vendor exposure, data readiness, and workforce design for an AI-enabled threat environment. https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/",
+    "url": "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/",
+    "image": "https://tedt.org/img/2026-05/Chat+AI.webp",
+    "tags": [
+      "Cyber AI",
+      "Cybersecurity",
+      "AI Security",
+      "Risk Management",
+      "Operational Resilience",
+      "AI Governance",
+      "Vendor Risk",
+      "Data Governance",
+      "Incident Response",
+      "Operating Model"
+    ],
+    "date_published": "2026-05-29T09:00:00-07:00",
+    "date_modified": "2026-05-29T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116661488181718686"
+    ],
+    "lastTootTimestamp": 1780113039984
   }
 }
