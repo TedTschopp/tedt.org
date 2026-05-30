@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: long-article
 
 title: "A Lutheran Reading of Magnifica Humanitas"
 subtitle: "An LCMS-oriented commentary matrix on AI, human dignity, technology, power, and Christian anthropology."
@@ -77,7 +77,7 @@ no_toc: true
 mastodon-post-id: null
 ---
 
-# A Lutheran Reading of Magnifica Humanitas
+## Executive Summary
 
 _Magnifica Humanitas_ is framed around a question that belongs at the center of every serious AI conversation: what kind of humanity are we building toward?
 
