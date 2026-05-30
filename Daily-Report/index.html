@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-05-29 | TedT.org</title>
+  <title>Daily Report - 2026-05-30 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,109 +52,136 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-05-29</h1>
-      <p class="meta">Generated <time datetime="2026-05-29T08:18:31+00:00">2026-05-29T08:18:31Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-05-30</h1>
+      <p class="meta">Generated <time datetime="2026-05-30T07:30:05+00:00">2026-05-30T07:30:05Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>High-activity day driven by AI squad operations.</strong> Thirteen new issues filed from a full-team code review, four Dependabot PRs merged, new CI workflows added, and the Märchen Engine editorial review produced two pending decisions. Site deploy is green (run #812, success). The P0 Node.js 20→24 Actions migration (#176) has a hard deadline of June 2 — it needs immediate action.</p>
+      <p><strong>Green CI, active content publishing, open PRs need attention.</strong> Site Quality + Deploy and Feed to Mastodon workflows both passed on the latest push. Two content posts were published today including a new Cyber+AI risk article. One actionable PR (#164, upload-artifact v7) is ready to merge. A security draft PR (#137) and a substantial open issues backlog (P0–P2 audit items) require prioritization.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line Up Front</h2>
-<p>Today was dominated by squad agent orchestration: a full-team code review was completed, 13 new backlog issues were filed, 4 Dependabot dependency PRs were merged, and new CI workflow infrastructure was added. The site itself is building and deploying cleanly. The most urgent item is <strong>P0 issue #176</strong> (Node.js 20→24 Actions migration) with a hard deadline of June 2, 2026.</p>
+<p>CI is green. Two new content posts published to main in the last 24 hours. Mastodon sync is running. One PR is merge-ready. A known security alert (DOM-based open redirect, PR #137) remains in draft. The open issues backlog carries P0-level items with hard deadlines (Node.js 20 deprecation, GitHub Pages artifact over 1 GB).</p>
 <hr>
-<h2>Recent Repository Activity</h2>
-<h3>Commits — 2026-05-29</h3>
+<h2>Recent Repository Activity (2026-05-29 – 2026-05-30)</h2>
+<h3>Commits to <code>main</code></h3>
 <ul>
-<li><strong><code>a260e927</code></strong> — Merge branch 'main' _(04:15 UTC)_</li>
-<li><strong><code>1c509dd6</code></strong> — <code>feat(workflows)</code>: Add squad issue assignment, label enforcement, triage, preview validation, promotion, release, and sync-squad-labels workflows _(04:14 UTC)_</li>
-<li><strong><code>96bceec5</code></strong> — Märchen Engine decision inbox merged; agent coordination updated (Decision #10 added) _(03:49 UTC)_</li>
-<li><strong><code>503e0f95</code></strong> — Scribe: Consolidate Märchen Engine review — Decisions #8 (Bilbo editorial gaps) and #9 (Elrond publishing strategy) both now <strong>awaiting-decision</strong> _(03:26 UTC)_</li>
-<li><strong><code>8053ef59</code></strong> — Scribe: Squad inbox consolidated (8 files merged); three-move tranche (tags → related-posts → series) flagged as ready _(03:26 UTC)_</li>
-<li><strong><code>0a8bb5ea</code></strong> — Scribe: Code review orchestration complete — 35 findings distilled into 13 new issues + 2 expanded existing issues, 12 consolidated with backlog _(02:24 UTC)_</li>
-<li><strong><code>67b4c5b7</code></strong> — Scribe: Squad roster exported as portable YAML (squad-roster-export.yaml, 9.6 KB) _(00:35 UTC)_</li>
-<li><strong><code>9f0119bc</code></strong> — Scribe: PR #139 diagnosed as stale branch (not broken artifact); recommended close and recreate fresh _(00:20 UTC)_</li>
-<li><strong><code>1d37f407</code></strong> — Scribe: PR merge/close orchestration — merged #149, #148, #146, #145; closed stale PRs #126–#134 _(00:05 UTC)_</li>
-<li><strong><code>5906a046</code></strong> — Scribe: PR review decisions consolidated; P0 urgency flagged for Node.js 24 readiness _(00:03 UTC)_</li>
-<li><strong><code>4fecbe51</code></strong> — dependabot: bump <code>flatted</code> 3.3.3 → 3.4.2 in npm_and_yarn group (#145) _(merged)_</li>
-<li><strong><code>972dce33</code></strong> — dependabot: bump <code>actions/github-script</code> v7 → v9 (#148) _(merged)_</li>
-<li><strong><code>cd658ab0</code></strong> — dependabot: bump <code>addressable</code> 2.8.7 → 2.9.0 (security patch, #149) _(merged)_</li>
-<li><strong><code>9dfc1ec0</code></strong> — dependabot: bump <code>actions/deploy-pages</code> v4 → v5 (#146) _(merged)_</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/2045d8e3567431200279b3b6740e3f878447501d"><code>2045d8e</code></a>** — <code>chore: update Mastodon cache/front matter</code> — 2026-05-30 03:50 UTC — github-actions[bot]</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/909fb8aa1168188bda8c595ff83a26f988b60a32"><code>909fb8a</code></a>** — <code>content(post): update tables for better readability in AI risk article</code> — 2026-05-30 03:49 UTC — Ted Tschopp</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/28a042d4b2a46f08d94aa9f51b2f91312a9a50d4"><code>28a042d</code></a>** — <code>Cyber+AI: Why Every Business Needs to Rethink Risk, Resilience, and Readiness</code> — 2026-05-30 03:32 UTC — Ted Tschopp (new article published)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/2532b58ca0eaf904e0b9509273149f4d0401e183"><code>2532b58</code></a>** — <code>The Squad Checkin that I missed</code> — 2026-05-29 17:11 UTC — Ted Tschopp</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/2f55d6773a4ca1eb5d3c4369b1bd845aaccc7bdd"><code>2f55d67</code></a>** — <code>chore: refresh yesterday in enterprise ai</code> — 2026-05-29 16:35 UTC — github-actions[bot]</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/98832adc61522a6c5bbad454f36915faa3bfaf12"><code>98832ad</code></a>** — <code>chore: refresh daily report</code> — 2026-05-29 08:18 UTC — github-actions[bot]</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/a260e92755572608926e5feea7465e1408c3a8a4"><code>a260e92</code></a>** — <code>Merge branch 'main'</code> — 2026-05-29 04:15 UTC — Ted Tschopp</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/1c509dd62456a341e1454322744fbb9457c35223"><code>1c509dd</code></a>** — <code>feat(workflows): add squad issue assignment, label enforcement, and triage workflows</code> — 2026-05-29 04:14 UTC — Ted Tschopp (new CI workflows)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/96bceec51f4d240f365e23a876d2716666f1a627"><code>96bceec</code></a>** — <code>Merge Märchen Engine decision inbox &amp; update agent coordination</code> — 2026-05-29 04:13 UTC — Ted Tschopp</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/503e0f95452fbcb7088e08ce082ba19a33655fdb"><code>503e0f9</code></a>** — <code>Scribe: Consolidate Märchen Engine review decisions (8 &amp; 9)</code> — 2026-05-29 03:49 UTC — Ted Tschopp</li>
 </ul>
 <hr>
-<h2>Site Quality and Workflow Health</h2>
-<h3>CI/CD Pipelines</h3>
+<h2>Workflow Health</h2>
+<h3>Site Quality + Deploy</h3>
 <ul>
-<li><strong>Site Quality + Deploy</strong> (deploy.yml) — Run #812: <strong>✅ success</strong> on head <code>a260e927</code></li>
-<li><strong>Feed to Mastodon</strong> (mastodon-feed.yml) — Run #1765: <strong>✅ success</strong></li>
-<li><strong>Daily Report</strong> — Run #30: currently in progress (this run)</li>
+<li><strong>Run #817</strong> — <code>success</code> — triggered by <code>content(post): update tables for better readability in AI risk article</code> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/26673712246">View run</a></li>
+<li><strong>Run #816</strong> — <code>success</code> — triggered by new Cyber+AI article commit — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/26673356002">View run</a></li>
 </ul>
-<h3>Open Pull Requests</h3>
+<p>Both recent deploys succeeded. Build time ~8 minutes per run (03:49:45 → 03:57:50 UTC).</p>
+<h3>Feed to Mastodon</h3>
 <ul>
-<li><strong>PR #164</strong> — <code>chore(ci): bump actions/upload-artifact from v6 to v7</code> _(created 2026-05-29, supersedes stale PR #139)_ — <strong>Needs review and merge.</strong> Affects deploy.yml and mastodon-feed.yml artifact upload steps.</li>
-<li><strong>PR #137</strong> (draft) — <code>Potential fix for code scanning alert #295: DOM text reinterpreted as HTML</code> _(open since 2026-01-27)_ — XSS fix for <code>top-nav-bar.html</code> <code>data-href</code> navigation. Still unmerged after 4 months. <strong>Security risk; should be promoted or formally triaged.</strong></li>
+<li><strong>Run #1772</strong> — <code>success</code> — triggered alongside run #817 — latest push synced without errors.</li>
+</ul>
+<h3>Daily Report (this run)</h3>
+<ul>
+<li><strong>Run #31</strong> — <code>in_progress</code> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/26677996763">workflow run 26677996763</a></li>
 </ul>
 <hr>
-<h2>Backlog Observations</h2>
-<h3>P0 — Immediate Action Required</h3>
+<h2>Open Pull Requests</h2>
+<h3>PR #164 — Ready to Merge</h3>
 <ul>
-<li><strong>#176</strong> <code>[P0] Update GitHub Actions workflows from Node.js 20 to Node.js 24</code> — Hard deadline before <strong>June 2, 2026</strong>. Node.js 20 is deprecated in Actions. This is the highest-priority item on the backlog right now.</li>
+<li><strong>Title:</strong> <code>chore(ci): bump actions/upload-artifact from v6 to v7</code></li>
+<li><strong>Branch:</strong> <code>gimli/150-upload-artifact-v7</code> → <code>main</code></li>
+<li><strong>Created:</strong> 2026-05-29</li>
+<li><strong>Status:</strong> Open, not draft</li>
+<li><strong>Supersedes:</strong> PR #139 (stale/diverged)</li>
+<li><strong>Impact:</strong> Updates <code>deploy.yml</code> and <code>mastodon-feed.yml</code> to upload-artifact@v7. Routine maintenance.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/164">View PR #164</a>**</li>
 </ul>
-<h3>P1/P2 — Recently Filed (from code review, 2026-05-29)</h3>
-<p>All three squad audits (Aragorn, Galadriel, Faramir) converged on <strong>#183</strong> (tag infrastructure) as a critical blocker for related-posts and series features.</p>
+<h3>PR #137 — Security Draft, Needs Decision</h3>
 <ul>
-<li><strong>#183</strong> <code>[P2] Standardize tagging model: enforce coverage and build site-wide tag infrastructure</code> — <strong>Consensus critical path item.</strong> Unblocks #184 (series adoption) and #185 (related-posts bridges).</li>
-<li><strong>#185</strong> <code>[P2] Build cross-collection content bridges and related-posts infrastructure</code></li>
-<li><strong>#184</strong> <code>[P2] Drive prompt series adoption: audit and populate series metadata</code></li>
-<li><strong>#186</strong> <code>[P2] Enhance category landing pages: related categories, tag clouds, depth indicators</code></li>
-<li><strong>#182</strong> <code>[P2] Create slide gallery with topic filtering and deck browser</code></li>
-<li><strong>#181</strong> <code>[P2] Unify RPG/fantasy content schema and build SEO landing pages</code></li>
-<li><strong>#180</strong> <code>[P2] Add content contributor guide to README</code></li>
-<li><strong>#179</strong> <code>[P2] Curate quotes with thematic tags and personal context</code></li>
-<li><strong>#178</strong> <code>[P2] SEO &amp; discoverability: strengthen excerpts, descriptions, pillar hub pages</code></li>
-<li><strong>#177</strong> <code>[P2] Performance: Rationalize CSS and Font Asset Loading</code></li>
-<li><strong>#171</strong> <code>[P2] Add front matter validation: required fields (image/image-alt, category slugs, date format)</code></li>
-<li><strong>#163</strong> <code>tracker: May 2026 repo audit remediation backlog</code> — Master tracker issue; keep updated as P2s progress.</li>
+<li><strong>Title:</strong> <code>Potential fix for code scanning alert no. 295: DOM text reinterpreted as HTML</code></li>
+<li><strong>Status:</strong> Draft, open since 2026-01-27</li>
+<li><strong>Risk:</strong> Addresses an unvalidated <code>window.location</code> assignment using <code>data-href</code> in <code>_includes/layout/top-nav-bar.html</code>. Protocol check fix is minimal and well-scoped.</li>
+<li><strong>Action needed:</strong> Review and promote from draft, or close if addressed another way.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/137">View PR #137</a>**</li>
 </ul>
-<h3>Märchen Engine Decisions Awaiting Ted's Input</h3>
-<p>Two decisions are formally blocked on Ted's direction:</p>
+<hr>
+<h2>Open Issues Backlog Summary</h2>
+<p>The May 2026 audit backlog (tracked in one coordinator issue) identifies these open items:</p>
+<h3>P0 — Hard deadlines / site-breaking</h3>
 <ul>
-<li><strong>Decision #8</strong> (Bilbo): Publication timeline, book structure, Bastion rules integration, WIP folder cleanup. Estimated effort: 8–10 hours priority work.</li>
-<li><strong>Decision #9</strong> (Elrond): Complete RPG vs. modular toolkit, character creation extraction, publishing order, unified glossary, campaign example scope, referee support standardization. Estimated effort: 12–18 hours full MVP; 2–3 weeks at steady pace.</li>
+<li><strong>#150</strong> — Update GitHub Actions workflows from Node.js 20 to Node.js 24 (deprecation deadline)</li>
+<li><strong>#151</strong> — Fix <code>&lt;img&gt;</code> elements with missing <code>src</code> attribute in rendered HTML (234 pages affected)</li>
+<li><strong>#152</strong> — Reduce GitHub Pages artifact size below 1 GB limit (currently 1.16 GB)</li>
+</ul>
+<h3>P1 — Quality / correctness</h3>
+<ul>
+<li><strong>#153</strong> — Fix YAML Date constant crashes in Ruby test harness (1,009 posts invisible in tests)</li>
+<li><strong>#154</strong> — Fix 588 broken Monster Manual image paths</li>
+<li><strong>#155</strong> — Update feed snapshot baselines (5 removed items causing diff failures)</li>
+<li><strong>#156</strong> — Fix 11 broken internal asset links and 2 broken script references</li>
+<li><strong>#157</strong> — Enforce CI quality gates: remove <code>continue-on-error</code> from HTMLProofer and a11y steps</li>
+</ul>
+<h3>P2 / P3 — Debt and backlog</h3>
+<ul>
+<li><strong>#158</strong> — Remove 36 <code>.bak</code> files from git</li>
+<li><strong>#159</strong> — Commit <code>.squad/</code> governance artifacts to version control</li>
+<li><strong>#160</strong> — Accept ADR 0004 (Prompt Library Integration — implemented, docs debt)</li>
+<li><strong>#161</strong> — Resolve ADR 0005 (Multi-Scale Hex Overlay Visualization — accept or reject)</li>
+<li><strong>#162</strong> — Mastodon backfill: ~800 posts without <code>mastodon-post-id</code></li>
+</ul>
+<hr>
+<h2>Content &amp; Publishing Pipeline</h2>
+<ul>
+<li><strong>New article published today:</strong> "Cyber+AI: Why Every Business Needs to Rethink Risk, Resilience, and Readiness" — pushed directly to main, deployed successfully.</li>
+<li><strong>Table readability update</strong> applied to the AI risk article in a follow-up commit.</li>
+<li><strong>Mastodon cache/front matter</strong> auto-updated by <code>github-actions[bot]</code> following the deploy — syndication pipeline functioning.</li>
+<li><strong>Märchen Engine (TTRPG project):</strong> Two formal decisions recorded (Editorial review #8, Publishing strategy #9) with effort estimates. Multiple decisions await Ted's input: publication timeline, book structure, product scope (complete RPG vs. modular toolkit), chargen extraction, publishing order.</li>
+<li><strong>Squad workflows:</strong> New GitHub Actions added for squad issue assignment, label enforcement, and triage.</li>
 </ul>
 <hr>
 <h2>Risks and Blockers</h2>
 <ul>
-<li><strong>P0 Hard Deadline (June 2):</strong> Issue #176 (Node.js 20→24) must be completed before GitHub deprecates Node.js 20 in Actions runners. No CI buffer if this slips.</li>
-<li><strong>Security PR #137 Stale:</strong> The DOM XSS fix draft has been open since January. Either merge it or close it with a documented decision. Leaving it open without action is technical debt.</li>
-<li><strong>PR #164 Pending:</strong> The upload-artifact v6→v7 bump is a clean, low-risk change. Merge it to close out the Actions upgrade work.</li>
-<li><strong>Märchen Engine Decisions Blocked:</strong> Decisions #8 and #9 are formally awaiting-decision. The editorial and publishing pipeline cannot advance until Ted provides direction.</li>
-<li><strong>Tag Infrastructure (#183):</strong> All three squad audits independently identified this as a blocker. Starting here unblocks the largest cluster of P2 work.</li>
+<li><strong>RISK: Node.js 20 deprecation (#150)</strong> — Hard deadline from GitHub. Needs action before the deprecated runner is removed.</li>
+<li><strong>RISK: GitHub Pages artifact over limit (#152)</strong> — At 1.16 GB against a 1 GB limit. A build size regression could silently block deploy.</li>
+<li><strong>RISK: 234 pages with missing <code>&lt;img src&gt;</code> (#151)</strong> — Active rendering defect visible to real users.</li>
+<li><strong>RISK: PR #137 stale for 4 months</strong> — A known security alert has a draft fix sitting unreviewed. Low complexity to resolve.</li>
+<li><strong>RISK: <code>continue-on-error</code> masking failures (#157)</strong> — CI may report green while HTML Proofer or a11y checks are failing silently.</li>
+<li><strong>OBSERVATION: 588 broken Monster Manual image paths (#154)</strong> — Content section with systemic broken images.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #164</strong> (upload-artifact v6→v7) — low risk, closes out Actions upgrade work started today.</li>
-<li><strong>Prioritize issue #176</strong> (Node.js 20→24) — hard June 2 deadline. Assign immediately.</li>
-<li><strong>Review PR #137</strong> (XSS fix, draft) — either promote it to ready or close with rationale.</li>
-<li><strong>Make Märchen Engine decisions #8 and #9</strong> — unblocks editorial pipeline.</li>
-<li><strong>Start issue #183</strong> (tag infrastructure) — squad consensus critical path; unblocks #184 and #185.</li>
-<li>Run <code>bundle exec jekyll build</code> locally after any workflow changes to verify internal link integrity before next deploy.</li>
+<li><strong>Merge PR #164</strong> — Low risk, addresses a known action deprecation, CI is green.</li>
+<li><strong>Review and merge PR #137</strong> — The security fix is minimal and well-described. Promote from draft or explicitly close with a documented reason.</li>
+<li><strong>Prioritize #150 (Node.js 20 → 24)</strong> — This has a hard external deadline; schedule before end of June.</li>
+<li><strong>Investigate artifact size (#152)</strong> — Run a build with artifact size tracking to identify what's grown beyond 1 GB.</li>
+<li><strong>Remove <code>continue-on-error</code> (#157)</strong> — Restoring CI signal integrity should precede any quality metrics work.</li>
+<li><strong>Make Märchen Engine decisions</strong> — Decisions #8 and #9 are awaiting Ted's input. Estimated 2–3 weeks total work at steady pace once direction is set.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li><strong>Commits</strong>: Read via GitHub MCP <code>list_commits</code> for TedTschopp/tedt.org, since 2026-05-25, perPage 15.</li>
-<li><strong>Workflow runs</strong>: Read via GitHub MCP <code>list_workflow_runs</code> for deploy.yml and all workflows; preview parsed from first 500 chars of large response (full JSON was 382–385 KB and could not be fully parsed in this environment).</li>
-<li><strong>Issues</strong>: Read via GitHub MCP <code>list_issues</code> (OPEN, ordered by UPDATED_AT DESC, perPage 15); titles extracted via grep on saved output.</li>
-<li><strong>Pull requests</strong>: Read via GitHub MCP <code>list_pull_requests</code> (open state).</li>
-<li><strong>Workflow run conclusions</strong>: Only the first completed run preview was visible (Site Quality + Deploy #812 = success, Feed to Mastodon #1765 = success) due to large output file constraints. Other runs not individually verified.</li>
-<li><strong>[ASSUMPTION]</strong>: Märchen Engine Decision details (#8, #9) sourced from commit messages only; full decision document not read.</li>
-<li><strong>[ASSUMPTION]</strong>: Issue priority labels (P0/P2/P3) taken directly from issue titles as filed; no independent severity assessment performed.</li>
-<li><strong>Unavailable</strong>: External link check status, HTML Proofer results, Allure test reports — not accessible in this run.</li>
-<li><strong>Workflow run link</strong>: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/26626146267">Run #26626146267</a></li>
+<li>Commits sourced from GitHub API <code>list_commits</code> (since 2026-05-28), <code>tedt.org</code> repo, <code>main</code> branch.</li>
+<li>Workflow run data sourced from <code>list_workflow_runs</code> for <code>deploy.yml</code> and <code>mastodon-feed.yml</code>. Most recent completed runs confirmed <code>success</code>.</li>
+<li>Open issues sourced from <code>list_issues</code> (state: OPEN, ordered by UPDATED_AT DESC). Issue body of the May 2026 audit coordinator issue used as the backlog source of record.</li>
+<li>Open PR list sourced from <code>list_pull_requests</code> (state: open).</li>
+<li>Workflow run counts (total 814 deploy runs, 1772 Mastodon runs) confirmed via API metadata.</li>
+<li>Daily Report workflow run ID 26677996763 was <code>in_progress</code> at time of report generation.</li>
+<li>[ASSUMPTION] Build times estimated from <code>created_at</code> / <code>updated_at</code> timestamps on workflow runs; actual build-step timing not inspected.</li>
+<li>[ASSUMPTION] "~800 posts without mastodon-post-id" figure taken verbatim from issue #162 body; not independently verified.</li>
+<li>External link health, HTML Proofer results, memory probe data, and artifact size not directly inspected in this run — CI workflow logs not fetched.</li>
+<li><code>gh</code> CLI is not authenticated in this environment; all reads used GitHub MCP tools.</li>
 </ul>
     </section>
     <footer>
