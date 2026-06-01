@@ -341,7 +341,7 @@ jobs:
           find _site -maxdepth 2 -type d -print | head -n 40
       - name: Upload artifact
         if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
   deploy:
