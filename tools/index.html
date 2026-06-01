@@ -1,492 +1,851 @@
 ---
-layout: page
+layout: null
 title: Tools
 permalink: /tools/
 no_toc: true
 ---
-
-<div class="container my-4 tools-index">
-    <style>
-        .tools-index .muted-note { color: var(--bs-secondary-color); }
-        .tools-index .tool-thumb-wrap {
-            aspect-ratio: 16 / 9;
-            overflow: hidden;
-            background:
-                linear-gradient(180deg, rgba(var(--bs-body-color-rgb), 0.04), rgba(var(--bs-body-color-rgb), 0.08));
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 0.75rem;
-        }
-        .tools-index .tool-thumb-wrap img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: center;
-            display: block;
-            transform: scale(1);
-            transition: transform 220ms ease, filter 220ms ease;
-        }
-        .tools-index .tool-card-link { color: inherit; text-decoration: none; }
-        .tools-index .tool-card-link:hover { color: inherit; }
-        .tools-index .tool-summary {
-            min-height: calc(1.5em * 5);
-            max-height: calc(1.5em * 5);
-            overflow: hidden;
-            display: -webkit-box;
-            -webkit-box-orient: vertical;
-            -webkit-line-clamp: 5;
-            line-clamp: 5;
-            line-height: 1.5;
-        }
-        .tools-index .tools-index-controls { max-width: 22rem; }
-        .tools-index .tools-page-tag {
-            background: transparent;
-            border: 1px solid rgba(var(--bs-body-color-rgb), 0.2);
-            color: var(--bs-body-color);
-            font-weight: 500;
-            padding: 0.45rem 0.7rem;
-        }
-        .tools-index .tools-page-tag:hover,
-        .tools-index .tools-page-tag:focus-visible {
-            background: rgba(var(--bs-body-color-rgb), 0.06);
-            border-color: rgba(var(--bs-primary-rgb), 0.35);
-            color: var(--bs-body-color);
-        }
-        .tools-index .tools-page-tag.is-active {
-            background: rgba(var(--bs-primary-rgb), 0.12);
-            border-color: rgba(var(--bs-primary-rgb), 0.45);
-            color: var(--bs-primary-text-emphasis, var(--bs-primary));
-        }
-        .tools-index .tools-reset-filter[hidden] { display: none !important; }
-        .tools-index .tool-meta-row {
-            margin-top: auto;
-            padding-top: 0.75rem;
-        }
-        .tools-index .tool-meta-badge {
-            background: rgba(var(--bs-primary-rgb), 0.12);
-            border: 1px solid rgba(var(--bs-primary-rgb), 0.22);
-            color: var(--bs-primary-text-emphasis, var(--bs-primary));
-            font-weight: 600;
-        }
-        .tools-index .tool-card {
-            position: relative;
-            transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
-        }
-        .tools-index .tool-card::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            border-radius: inherit;
-            box-shadow: inset 0 0 0 1px transparent;
-            transition: box-shadow 180ms ease;
-            pointer-events: none;
-        }
-        .tools-index .tool-card:hover,
-        .tools-index .tool-card:focus-within {
-            transform: translateY(-3px);
-            box-shadow: 0 1rem 2.25rem rgba(15, 23, 42, 0.12);
-            border-color: rgba(var(--bs-primary-rgb), 0.35);
-        }
-        .tools-index .tool-card:hover::after,
-        .tools-index .tool-card:focus-within::after {
-            box-shadow: inset 0 0 0 1px rgba(var(--bs-primary-rgb), 0.25);
-        }
-        .tools-index .tool-card:hover .tool-thumb-wrap img,
-        .tools-index .tool-card:focus-within .tool-thumb-wrap img {
-            transform: scale(1.035);
-            filter: saturate(1.04);
-        }
-        .tools-index .tool-card .stretched-link:focus-visible {
-            outline: none;
-        }
-        .tools-index .tool-card .stretched-link:focus-visible ~ .tool-summary,
-        .tools-index .tool-card:focus-within .tool-summary {
-            color: var(--bs-primary-text-emphasis, var(--bs-primary));
-        }
-        .tools-index .tool-card-footer,
-        .tools-index .tool-card-footer .btn-group {
-            position: relative;
-            z-index: 1;
-        }
-    </style>
-    <p class="lead">
-        A catalog of the tools, experiments, and little software toys I’ve built.
-    </p>
-
-    {% assign all_tags = "" | split: "" %}
-    {% for tool in site.tools %}
-    {% if tool.tags %}
+{% assign all_tags = "" | split: "" %}
+{% for tool in site.tools %}
+  {% if tool.tags %}
     {% for tag in tool.tags %}
-    {% assign all_tags = all_tags | push: tag %}
+      {% assign all_tags = all_tags | push: tag %}
     {% endfor %}
-    {% endif %}
-    {% endfor %}
-    {% assign all_tags = all_tags | uniq | sort %}
+  {% endif %}
+{% endfor %}
+{% assign all_tags = all_tags | uniq | sort %}
+{% assign featured = site.tools | where: "featured", true | sort: "title" %}
+{% assign others = site.tools | where_exp: "item", "item.featured != true" | sort: "last_modified" | reverse %}
+{% assign tools = featured | concat: others %}
+{% assign tool_count = tools | size %}
+{% assign live_tool_count = 0 %}
+{% assign active_tool_count = 0 %}
+{% for tool in tools %}
+  {% if tool.links.live %}{% assign live_tool_count = live_tool_count | plus: 1 %}{% endif %}
+  {% if tool.status == 'active' %}{% assign active_tool_count = active_tool_count | plus: 1 %}{% endif %}
+{% endfor %}
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ted's Tools | {{ site.title }}</title>
+  <meta name="description" content="Client-side tools and browser utilities from Ted Tschopp. Filter the catalog by tag, status, or update date.">
+  <link rel="canonical" href="{{ '/tools/' | absolute_url }}">
+  <meta property="og:title" content="Ted's Tools">
+  <meta property="og:description" content="Client-side tools and browser utilities from Ted Tschopp.">
+  <meta property="og:url" content="{{ '/tools/' | absolute_url }}">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ted's Tools">
+  <meta name="twitter:description" content="Client-side tools and browser utilities from Ted Tschopp.">
+  <link rel="icon" href="{{ '/tools/assets/logo/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="alternate icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="stylesheet" href="{{ '/tools/colors_and_type.css' | relative_url }}">
+  <style>
+    .tt-page {
+      min-height: 100vh;
+      background: var(--bg);
+      color: var(--fg);
+    }
 
-    {% if all_tags.size > 0 %}
-    <section class="mb-4" aria-label="Tool tags">
-        <div class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-3">
-            <h2 class="h4 mb-0">Tags</h2>
-            <button type="button" class="btn btn-sm btn-outline-secondary tools-reset-filter" id="tools-reset-filter" hidden>
-                Reset filter
-            </button>
+    .tt-shell {
+      max-width: var(--tool-max);
+      margin: 0 auto;
+      padding: var(--s-7) var(--safe-padding) var(--s-9);
+    }
+
+    .tt-topbar,
+    .tt-links,
+    .tt-meta,
+    .tt-tags,
+    .tt-actions,
+    .tt-chip-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: var(--s-2);
+    }
+
+    .tt-topbar {
+      justify-content: space-between;
+      gap: var(--s-4);
+      margin-bottom: var(--s-7);
+    }
+
+    .tt-brand {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-3);
+      min-width: 0;
+      color: var(--fg);
+      border-bottom: 0;
+    }
+
+    .tt-brand:hover {
+      color: var(--fg-strong);
+      border-bottom-color: transparent;
+    }
+
+    .tt-markbox {
+      inline-size: calc(var(--s-7) + var(--s-2));
+      block-size: calc(var(--s-7) + var(--s-2));
+      display: grid;
+      place-items: center;
+      flex: 0 0 auto;
+      background: var(--bg-card);
+      border: var(--border);
+      border-radius: var(--r-3);
+      box-shadow: var(--shadow-inset);
+      color: var(--fg-strong);
+      font-family: var(--font-display);
+      font-size: var(--fs-h3);
+      font-weight: var(--fw-black);
+      letter-spacing: var(--tracking-tight);
+      line-height: 1;
+    }
+
+    .tt-markbox span {
+      color: var(--copper);
+    }
+
+    .tt-wordmark {
+      font-family: var(--font-display);
+      font-size: var(--fs-h3);
+      font-weight: var(--fw-black);
+      letter-spacing: var(--tracking-tight);
+      white-space: nowrap;
+    }
+
+    .tt-wordmark mark {
+      padding: 0 var(--s-1);
+      background: var(--bg-mark);
+      border-radius: var(--r-1);
+      color: var(--fg-strong);
+    }
+
+    .tt-links {
+      justify-content: flex-end;
+    }
+
+    .tt-links a {
+      color: var(--fg-2);
+      font-size: var(--fs-small);
+      font-weight: var(--fw-medium);
+    }
+
+    .tt-head {
+      margin-bottom: var(--s-5);
+    }
+
+    .tt-head .t-tool-title {
+      display: flex;
+    }
+
+    .tt-meta {
+      margin-top: var(--s-4);
+      color: var(--fg-muted);
+      font-family: var(--font-mono);
+      font-size: var(--fs-small);
+    }
+
+    .tt-banner,
+    .tt-about {
+      padding: var(--s-3) var(--s-4);
+      border: var(--bw-1) solid var(--ready-border);
+      border-radius: var(--r-2);
+      background: var(--ready-bg);
+      color: var(--ready);
+      font-family: var(--font-body);
+      font-size: var(--fs-small);
+      line-height: var(--lh-normal);
+    }
+
+    .tt-banner {
+      margin: var(--s-5) 0;
+    }
+
+    .tt-banner-warn {
+      border-color: var(--warn-border);
+      background: var(--warn-bg);
+      color: var(--warn);
+    }
+
+    .tt-banner[hidden],
+    .tt-row[hidden] {
+      display: none !important;
+    }
+
+    .tt-layout {
+      display: grid;
+      grid-template-columns: minmax(16rem, 20rem) minmax(0, 1fr);
+      gap: var(--s-4);
+      align-items: start;
+    }
+
+    .tt-panel {
+      overflow: hidden;
+      background: var(--bg-card);
+      border: var(--border);
+      border-radius: var(--r-3);
+      box-shadow: var(--shadow-inset);
+    }
+
+    .tt-panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--s-3);
+      padding: var(--s-3) var(--s-5);
+      border-bottom: var(--border-soft);
+    }
+
+    .tt-panel-title {
+      color: var(--fg-strong);
+      font-size: var(--fs-h3);
+      font-weight: var(--fw-semibold);
+      line-height: var(--lh-snug);
+    }
+
+    .tt-panel-meta {
+      color: var(--fg-muted);
+      font-size: var(--fs-small);
+      line-height: var(--lh-normal);
+      white-space: nowrap;
+    }
+
+    .tt-panel-body {
+      display: grid;
+      gap: var(--s-5);
+      padding: var(--s-5);
+    }
+
+    .tt-stat-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: var(--s-2);
+    }
+
+    .tt-stat {
+      padding: var(--s-3);
+      background: var(--bg-inset);
+      border: var(--border-soft);
+      border-radius: var(--r-2);
+    }
+
+    .tt-stat-label {
+      color: var(--fg-muted);
+      font-size: var(--fs-eyebrow);
+      font-weight: var(--fw-medium);
+      letter-spacing: var(--tracking-eyebrow);
+      line-height: var(--lh-normal);
+      text-transform: uppercase;
+    }
+
+    .tt-stat-value {
+      margin-top: var(--s-1);
+      color: var(--fg-strong);
+      font-family: var(--font-mono);
+      font-size: var(--fs-h2);
+      font-weight: var(--fw-semibold);
+      line-height: var(--lh-tight);
+    }
+
+    .tt-field {
+      display: grid;
+      gap: var(--s-2);
+    }
+
+    .tt-label {
+      color: var(--fg);
+      font-size: var(--fs-small);
+      font-weight: var(--fw-medium);
+      line-height: var(--lh-normal);
+    }
+
+    .tt-hint {
+      margin: 0;
+      color: var(--fg-muted);
+      font-size: var(--fs-small);
+      line-height: var(--lh-normal);
+    }
+
+    .tt-select {
+      width: 100%;
+      padding: var(--s-2) var(--s-3);
+      color: var(--fg);
+      background: var(--bg-inset);
+      border: var(--border);
+      border-radius: var(--r-2);
+      font-family: var(--font-body);
+      font-size: var(--fs-small);
+      line-height: var(--lh-normal);
+    }
+
+    .tt-select:focus-visible,
+    .tt-chip:focus-visible,
+    .tt-btn:focus-visible,
+    .tt-row:focus-within {
+      outline: none;
+      box-shadow: var(--shadow-focus);
+    }
+
+    .tt-chip,
+    .tt-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--r-2);
+      cursor: pointer;
+      font-family: var(--font-body);
+      font-size: var(--fs-small);
+      font-weight: var(--fw-medium);
+      line-height: var(--lh-normal);
+      transition: background var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out);
+    }
+
+    .tt-chip:active,
+    .tt-btn:active {
+      transform: translateY(var(--s-1));
+    }
+
+    .tt-chip {
+      padding: var(--s-1) var(--s-3);
+      background: transparent;
+      border: var(--border);
+      border-radius: var(--r-pill);
+      color: var(--fg-2);
+    }
+
+    .tt-chip:hover {
+      background: var(--bg-hover);
+      color: var(--fg);
+    }
+
+    .tt-chip.is-active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--fg-on-accent);
+    }
+
+    .tt-btn {
+      gap: var(--s-2);
+      padding: var(--s-2) var(--s-4);
+      border: var(--bw-1) solid transparent;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .tt-btn-primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--fg-on-accent);
+    }
+
+    .tt-btn-primary:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent-hover);
+      color: var(--fg-on-accent);
+    }
+
+    .tt-btn-secondary {
+      background: transparent;
+      border-color: var(--copper);
+      color: var(--copper);
+    }
+
+    .tt-btn-secondary:hover {
+      background: var(--copper-tint);
+      color: var(--copper-hover);
+    }
+
+    .tt-btn-ghost {
+      background: transparent;
+      border-color: transparent;
+      color: var(--link);
+    }
+
+    .tt-btn-ghost:hover {
+      background: var(--bg-hover);
+      color: var(--link-hover);
+    }
+
+    .tt-list {
+      display: grid;
+    }
+
+    .tt-row {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: var(--s-5);
+      padding: var(--s-5);
+      border-bottom: var(--border-soft);
+      transition: background var(--dur-fast) var(--ease-out);
+    }
+
+    .tt-row:last-child {
+      border-bottom: 0;
+    }
+
+    .tt-row:hover {
+      background: var(--bg-hover);
+    }
+
+    .tt-row-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s-2);
+      color: var(--fg-muted);
+      font-family: var(--font-mono);
+      font-size: var(--fs-micro);
+      line-height: var(--lh-normal);
+      text-transform: lowercase;
+    }
+
+    .tt-status {
+      color: var(--ready);
+    }
+
+    .tt-status[data-status="active"] {
+      color: var(--success);
+    }
+
+    .tt-status[data-status="prototype"] {
+      color: var(--warn);
+    }
+
+    .tt-status[data-status="archived"] {
+      color: var(--fg-muted);
+    }
+
+    .tt-row-title {
+      margin: var(--s-2) 0;
+      font-family: var(--font-body);
+      font-size: var(--fs-h3);
+      font-weight: var(--fw-semibold);
+      line-height: var(--lh-snug);
+    }
+
+    .tt-row-title a {
+      color: var(--fg-strong);
+    }
+
+    .tt-summary {
+      max-width: 72ch;
+      margin: 0;
+      color: var(--fg-2);
+      font-size: var(--fs-body);
+      line-height: var(--lh-normal);
+    }
+
+    .tt-tags {
+      margin-top: var(--s-4);
+    }
+
+    .tt-tag {
+      padding: var(--s-1) var(--s-2);
+      color: var(--fg-muted);
+      border: var(--border-soft);
+      border-radius: var(--r-pill);
+      font-size: var(--fs-micro);
+      line-height: var(--lh-normal);
+    }
+
+    .tt-actions {
+      align-items: flex-start;
+      justify-content: flex-end;
+    }
+
+    .tt-about {
+      margin-top: var(--s-7);
+    }
+
+    .tt-about strong {
+      color: var(--ready);
+      font-weight: var(--fw-bold);
+    }
+
+    .tt-sr-only {
+      position: absolute;
+      inline-size: 0.0625rem;
+      block-size: 0.0625rem;
+      padding: 0;
+      margin: -0.0625rem;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @media (max-width: 62rem) {
+      .tt-shell {
+        padding: var(--s-6) var(--gutter) var(--s-8);
+      }
+
+      .tt-layout {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 42rem) {
+      .tt-topbar,
+      .tt-row {
+        align-items: stretch;
+        grid-template-columns: 1fr;
+      }
+
+      .tt-topbar {
+        flex-direction: column;
+      }
+
+      .tt-links,
+      .tt-actions {
+        justify-content: flex-start;
+      }
+
+      .tt-head .t-tool-title {
+        font-size: var(--fs-h1);
+      }
+
+      .tt-stat-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body class="tt-page">
+  <main class="tt-shell" role="main">
+    <nav class="tt-topbar" aria-label="Tools navigation">
+      <a class="tt-brand" href="{{ '/tools/' | relative_url }}" aria-label="Ted's Tools home">
+        <span class="tt-markbox" aria-hidden="true">tt<span>.</span></span>
+        <span class="tt-wordmark">Ted's <mark>Tools</mark></span>
+      </a>
+      <div class="tt-links">
+        <a href="{{ '/' | relative_url }}">tedt.org</a>
+        <a href="{{ '/prompts/' | relative_url }}">Prompts</a>
+      </div>
+    </nav>
+
+    <header class="tt-head">
+      <h1 class="t-tool-title">Ted's <mark>Tools</mark></h1>
+      <p class="t-tagline">Client-side utilities for text, code, images, maps, and small experiments. Open a tool. Work in your browser.</p>
+      <div class="tt-meta" aria-label="Catalog summary">
+        <span>{{ tool_count }} tools</span>
+        <span aria-hidden="true">·</span>
+        <span>{{ live_tool_count }} runnable</span>
+        <span aria-hidden="true">·</span>
+        <span>{{ all_tags.size }} tags</span>
+      </div>
+    </header>
+
+    <div id="tools-top-status" class="tt-banner" role="status" aria-live="polite">Ready — {{ tool_count }} tools indexed. Client-side entries run in your browser.</div>
+
+    <div class="tt-layout">
+      <aside class="tt-panel" aria-labelledby="tools-controls-title">
+        <div class="tt-panel-head">
+          <span id="tools-controls-title" class="tt-panel-title">Browse</span>
+          <span class="tt-panel-meta">Filter and sort</span>
         </div>
-        <div class="d-flex flex-wrap gap-2" id="tools-tag-filters" role="group" aria-label="Filter tools by tag">
-            {% for tag in all_tags %}
-            <button
-                type="button"
-                class="badge rounded-pill tools-page-tag"
-                data-tool-filter="{{ tag | slugify }}"
-                data-tool-filter-label="{{ tag | escape }}"
-                aria-pressed="false">{{ tag }}</button>
-            {% endfor %}
-        </div>
-    </section>
-    {% endif %}
-
-    {% assign featured = site.tools | where: "featured", true | sort: "title" %}
-    {% assign others = site.tools | where_exp: "t", "t.featured != true" | sort: "last_modified" | reverse %}
-    {% assign tools = featured | concat: others %}
-
-    <section aria-label="Tool sort controls" class="d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-3 mb-4">
-        <p class="small text-body-secondary mb-0">
-            Sort the catalog by last update, original publish date, or title.
-        </p>
-        <div class="tools-index-controls ms-md-auto">
-            <label class="form-label mb-1" for="tool-sort-select">Sort tools</label>
-            <select class="form-select" id="tool-sort-select" aria-describedby="tool-sort-status">
-                <option value="updated">Last updated</option>
-                <option value="published">Publish date</option>
-                <option value="alphabetical">Alphabetical</option>
-            </select>
-        </div>
-    </section>
-
-    <div class="visually-hidden" aria-live="polite" id="tool-sort-status"></div>
-    <div class="alert alert-warning mt-4" id="tools-no-results" hidden role="status">
-        No tools match the selected tag filter.
-    </div>
-
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4" id="tools-card-grid">
-        {% for tool in tools %}
-        {% assign thumb = tool.image | default: tool.hero_image %}
-        {% assign hero_image = thumb | to_s | strip %}
-        {% if hero_image == "" %}
-            {% assign fallback_404_images = site.static_files | where_exp: "f", "f.path contains '/img/404/'" | where_exp: "f", "f.extname == '.webp'" %}
-            {% assign fallback_404_image = fallback_404_images | sample %}
-            {% if fallback_404_image %}
-                {% assign hero_image = fallback_404_image.path %}
-            {% endif %}
-        {% endif %}
-        {% assign card_target = tool.url | relative_url %}
-        {% assign card_target_is_live = false %}
-        {% if tool.links.live %}
-            {% assign card_target = tool.links.live %}
-            {% assign card_target_is_live = true %}
-        {% endif %}
-        <div class="col tool-card-column"
-             data-title="{{ tool.title | downcase | escape }}"
-             data-updated="{{ tool.last_modified | default: tool.date | date: '%s' }}"
-               data-published="{{ tool.date | date: '%s' }}"
-               data-tags="{% if tool.tags %}{% for tag in tool.tags %}{{ tag | slugify }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endif %}">
-            <div class="card h-100 tool-card">
-                <div class="tool-thumb-wrap card-img-top d-block">
-                    {% if hero_image != "" %}
-                    <img src="{{ hero_image | relative_url }}" alt="{{ tool.title }} thumbnail">
-                    {% else %}
-                    <div class="h-100 d-flex align-items-center justify-content-center muted-note">No preview image</div>
-                    {% endif %}
-                </div>
-
-                <div class="card-body d-flex flex-column">
-                    <h2 class="h5 card-title mb-2">
-                        <a href="{{ card_target }}" class="stretched-link text-decoration-none"{% if card_target_is_live %} target="_blank" rel="noopener"{% endif %}>
-                            {{ tool.title }}
-                        </a>
-                    </h2>
-
-                    {% if tool.summary %}
-                    <p class="card-text tool-summary mb-0">{{ tool.summary }}</p>
-                    {% else %}
-                    <p class="card-text tool-summary mb-0">
-                        {{ tool.content | strip_html | truncate: 160 }}
-                    </p>
-                    {% endif %}
-
-                    <div class="d-flex flex-wrap gap-1 align-items-center tool-meta-row">
-                        {% if tool.status %}
-                        <span class="badge rounded-pill tool-meta-badge">{{ tool.status | upcase }}</span>
-                        {% endif %}
-                        {% if tool.tool_type %}
-                        <span class="badge rounded-pill tool-meta-badge">{{ tool.tool_type | downcase }}</span>
-                        {% endif %}
-                    </div>
-                </div>
-
-                <div class="card-footer d-flex justify-content-between align-items-center gap-2 tool-card-footer">
-                    <small class="text-body-secondary">
-                        {% if tool.last_modified %}
-                        Updated {{ tool.last_modified | date: "%b %-d, %Y" }}
-                        {% elsif tool.date %}
-                        {{ tool.date | date: "%b %-d, %Y" }}
-                        {% endif %}
-                    </small>
-
-                    <div class="btn-group">
-                        {% if tool.links.live %}
-                        <a class="btn btn-sm btn-primary" href="{{ tool.links.live }}" target="_blank" rel="noopener">
-                            Live
-                        </a>
-                        {% endif %}
-                        {% if tool.links.repo %}
-                        <a class="btn btn-sm btn-outline-secondary" href="{{ tool.links.repo }}" target="_blank" rel="noopener">
-                            Code
-                        </a>
-                        {% endif %}
-                        <a class="btn btn-sm btn-outline-secondary" href="{{ tool.url | relative_url }}">
-                            Details
-                        </a>
-                    </div>
-                </div>
+        <div class="tt-panel-body">
+          <div class="tt-stat-grid" aria-label="Tool counts">
+            <div class="tt-stat">
+              <div class="tt-stat-label">Total</div>
+              <div class="tt-stat-value">{{ tool_count }}</div>
             </div>
+            <div class="tt-stat">
+              <div class="tt-stat-label">Live</div>
+              <div class="tt-stat-value">{{ live_tool_count }}</div>
+            </div>
+            <div class="tt-stat">
+              <div class="tt-stat-label">Active</div>
+              <div class="tt-stat-value">{{ active_tool_count }}</div>
+            </div>
+          </div>
+
+          <div class="tt-field">
+            <label class="tt-label" for="tool-sort-select">Sort tools</label>
+            <select class="tt-select" id="tool-sort-select" aria-describedby="tool-sort-status">
+              <option value="updated">Last updated</option>
+              <option value="published">Publish date</option>
+              <option value="alphabetical">Alphabetical</option>
+            </select>
+          </div>
+
+          {% if all_tags.size > 0 %}
+          <div class="tt-field" aria-label="Tool tags">
+            <div class="tt-panel-meta">Tags</div>
+            <div class="tt-chip-row" id="tools-tag-filters" role="group" aria-label="Filter tools by tag">
+              {% for tag in all_tags %}
+              <button type="button" class="tt-chip" data-tool-filter="{{ tag | slugify }}" data-tool-filter-label="{{ tag | escape }}" aria-pressed="false">{{ tag }}</button>
+              {% endfor %}
+            </div>
+          </div>
+          <div>
+            <button type="button" class="tt-btn tt-btn-secondary" id="tools-reset-filter" hidden>Reset filter</button>
+          </div>
+          {% endif %}
+
+          <p class="tt-hint">All entries are static catalog records. Each live tool states its own browser-only boundary.</p>
         </div>
-        {% endfor %}
+      </aside>
+
+      <section class="tt-panel" aria-labelledby="tools-catalog-title">
+        <div class="tt-panel-head">
+          <span id="tools-catalog-title" class="tt-panel-title">Catalog</span>
+          <span id="tools-catalog-meta" class="tt-panel-meta">{{ tool_count }} shown</span>
+        </div>
+        <div class="tt-banner tt-banner-warn" id="tools-no-results" hidden role="status">No tools match the selected tag filter.</div>
+        <div class="tt-sr-only" aria-live="polite" id="tool-sort-status"></div>
+
+        <div class="tt-list" id="tools-card-grid">
+          {% for tool in tools %}
+          {% assign card_target = tool.url | relative_url %}
+          {% assign live_url = tool.links.live | default: '' | strip %}
+          {% assign live_is_external = false %}
+          {% if live_url contains '://' %}{% assign live_is_external = true %}{% endif %}
+          {% if live_url != '' %}
+            {% if live_is_external %}
+              {% assign card_target = live_url %}
+            {% else %}
+              {% assign card_target = live_url | relative_url %}
+            {% endif %}
+          {% endif %}
+          {% assign tool_status = tool.status | default: 'listed' | downcase %}
+          {% assign tool_type = tool.tool_type | default: 'tool' | downcase %}
+          <article class="tt-row" data-title="{{ tool.title | downcase | escape }}" data-updated="{{ tool.last_modified | default: tool.date | date: '%s' }}" data-published="{{ tool.date | date: '%s' }}" data-tags="{% if tool.tags %}{% for tag in tool.tags %}{{ tag | slugify }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endif %}">
+            <div>
+              <div class="tt-row-meta">
+                <span class="tt-status" data-status="{{ tool_status }}">{{ tool_status }}</span>
+                <span aria-hidden="true">·</span>
+                <span>{{ tool_type }}</span>
+                {% if tool.last_modified %}
+                <span aria-hidden="true">·</span>
+                <span>updated {{ tool.last_modified | date: "%Y-%m-%d" }}</span>
+                {% elsif tool.date %}
+                <span aria-hidden="true">·</span>
+                <span>published {{ tool.date | date: "%Y-%m-%d" }}</span>
+                {% endif %}
+              </div>
+
+              <h2 class="tt-row-title"><a href="{{ card_target }}"{% if live_url != '' and live_is_external %} target="_blank" rel="noopener"{% endif %}>{{ tool.title }}</a></h2>
+              {% if tool.summary %}
+              <p class="tt-summary">{{ tool.summary }}</p>
+              {% else %}
+              <p class="tt-summary">{{ tool.content | strip_html | truncate: 160 }}</p>
+              {% endif %}
+
+              {% if tool.tags %}
+              <div class="tt-tags" aria-label="{{ tool.title | escape }} tags">
+                {% for tag in tool.tags limit: 5 %}<span class="tt-tag">{{ tag }}</span>{% endfor %}
+                {% if tool.tags.size > 5 %}<span class="tt-tag">+{{ tool.tags.size | minus: 5 }}</span>{% endif %}
+              </div>
+              {% endif %}
+            </div>
+
+            <div class="tt-actions" aria-label="{{ tool.title | escape }} actions">
+              {% if live_url != '' %}<a class="tt-btn tt-btn-primary" href="{{ card_target }}"{% if live_is_external %} target="_blank" rel="noopener"{% endif %}>Open</a>{% endif %}
+              <a class="tt-btn tt-btn-secondary" href="{{ tool.url | relative_url }}">Details</a>
+              {% if tool.links.repo %}<a class="tt-btn tt-btn-ghost" href="{{ tool.links.repo }}" target="_blank" rel="noopener">Code</a>{% endif %}
+            </div>
+          </article>
+          {% endfor %}
+        </div>
+      </section>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const sortSelect = document.getElementById('tool-sort-select');
-            const sortStatus = document.getElementById('tool-sort-status');
-            const toolsGrid = document.getElementById('tools-card-grid');
-            const filterButtons = Array.from(document.querySelectorAll('[data-tool-filter]'));
-            const resetFilterButton = document.getElementById('tools-reset-filter');
-            const noResultsMessage = document.getElementById('tools-no-results');
-            const sortStorageKey = 'tedt-tools-sort';
-            const filterStorageKey = 'tedt-tools-filter';
-            const validSortModes = ['updated', 'published', 'alphabetical'];
-            let currentFilter = null;
+    <footer class="tt-about"><strong>About Ted's Tools.</strong> These utilities are small, focused, and browser-first. Some are polished. Some are prototypes. The catalog stays honest about the difference.</footer>
+  </main>
 
-            if (!sortSelect || !sortStatus || !toolsGrid) {
-                return;
-            }
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const sortSelect = document.getElementById('tool-sort-select');
+      const sortStatus = document.getElementById('tool-sort-status');
+      const toolsGrid = document.getElementById('tools-card-grid');
+      const catalogMeta = document.getElementById('tools-catalog-meta');
+      const topStatus = document.getElementById('tools-top-status');
+      const filterButtons = Array.from(document.querySelectorAll('[data-tool-filter]'));
+      const resetFilterButton = document.getElementById('tools-reset-filter');
+      const noResultsMessage = document.getElementById('tools-no-results');
+      const sortStorageKey = 'tedt-tools-sort';
+      const filterStorageKey = 'tedt-tools-filter';
+      const validSortModes = ['updated', 'published', 'alphabetical'];
+      let currentFilter = null;
 
-            const originalCards = Array.from(toolsGrid.querySelectorAll('.tool-card-column'));
+      if (!sortSelect || !sortStatus || !toolsGrid) return;
 
-            function normalizeSortMode(sortMode) {
-                return validSortModes.includes(sortMode) ? sortMode : 'updated';
-            }
+      const originalCards = Array.from(toolsGrid.querySelectorAll('.tt-row'));
 
-            function normalizeFilter(filterValue) {
-                if (!filterValue) {
-                    return null;
-                }
+      function normalizeSortMode(sortMode) {
+        return validSortModes.includes(sortMode) ? sortMode : 'updated';
+      }
 
-                const normalizedValue = String(filterValue).trim().toLowerCase();
-                return filterButtons.some(function(button) {
-                    return button.dataset.toolFilter === normalizedValue;
-                }) ? normalizedValue : null;
-            }
+      function normalizeFilter(filterValue) {
+        if (!filterValue) return null;
+        const normalizedValue = String(filterValue).trim().toLowerCase();
+        return filterButtons.some(function(button) {
+          return button.dataset.toolFilter === normalizedValue;
+        }) ? normalizedValue : null;
+      }
 
-            function loadInitialSortMode() {
-                const url = new URL(window.location.href);
-                const urlSortMode = normalizeSortMode(url.searchParams.get('sort'));
+      function loadInitialSortMode() {
+        const url = new URL(window.location.href);
+        const urlSortMode = normalizeSortMode(url.searchParams.get('sort'));
+        if (url.searchParams.has('sort')) return urlSortMode;
+        try {
+          return normalizeSortMode(window.localStorage.getItem(sortStorageKey));
+        } catch (error) {
+          return 'updated';
+        }
+      }
 
-                if (url.searchParams.has('sort')) {
-                    return urlSortMode;
-                }
+      function loadInitialFilter() {
+        const url = new URL(window.location.href);
+        const urlFilter = normalizeFilter(url.searchParams.get('tag'));
+        if (url.searchParams.has('tag')) return urlFilter;
+        try {
+          return normalizeFilter(window.localStorage.getItem(filterStorageKey));
+        } catch (error) {
+          return null;
+        }
+      }
 
-                try {
-                    return normalizeSortMode(window.localStorage.getItem(sortStorageKey));
-                } catch (error) {
-                    return 'updated';
-                }
-            }
+      function persistSortMode(sortMode) {
+        const normalizedSortMode = normalizeSortMode(sortMode);
+        const url = new URL(window.location.href);
+        if (normalizedSortMode === 'updated') {
+          url.searchParams.delete('sort');
+        } else {
+          url.searchParams.set('sort', normalizedSortMode);
+        }
+        window.history.replaceState({}, '', url);
+        try {
+          window.localStorage.setItem(sortStorageKey, normalizedSortMode);
+        } catch (error) {
+          // Sort remains usable when local storage is unavailable.
+        }
+      }
 
-            function loadInitialFilter() {
-                const url = new URL(window.location.href);
-                const urlFilter = normalizeFilter(url.searchParams.get('tag'));
+      function persistFilter(filterValue) {
+        const normalizedFilter = normalizeFilter(filterValue);
+        const url = new URL(window.location.href);
+        if (normalizedFilter) {
+          url.searchParams.set('tag', normalizedFilter);
+        } else {
+          url.searchParams.delete('tag');
+        }
+        window.history.replaceState({}, '', url);
+        try {
+          if (normalizedFilter) {
+            window.localStorage.setItem(filterStorageKey, normalizedFilter);
+          } else {
+            window.localStorage.removeItem(filterStorageKey);
+          }
+        } catch (error) {
+          // Filtering remains usable when local storage is unavailable.
+        }
+      }
 
-                if (url.searchParams.has('tag')) {
-                    return urlFilter;
-                }
-
-                try {
-                    return normalizeFilter(window.localStorage.getItem(filterStorageKey));
-                } catch (error) {
-                    return null;
-                }
-            }
-
-            function persistSortMode(sortMode) {
-                const normalizedSortMode = normalizeSortMode(sortMode);
-                const url = new URL(window.location.href);
-
-                if (normalizedSortMode === 'updated') {
-                    url.searchParams.delete('sort');
-                } else {
-                    url.searchParams.set('sort', normalizedSortMode);
-                }
-
-                window.history.replaceState({}, '', url);
-
-                try {
-                    window.localStorage.setItem(sortStorageKey, normalizedSortMode);
-                } catch (error) {
-                    // Ignore storage failures so sort still works in restrictive browsers.
-                }
-            }
-
-            function persistFilter(filterValue) {
-                const normalizedFilter = normalizeFilter(filterValue);
-                const url = new URL(window.location.href);
-
-                if (normalizedFilter) {
-                    url.searchParams.set('tag', normalizedFilter);
-                } else {
-                    url.searchParams.delete('tag');
-                }
-
-                window.history.replaceState({}, '', url);
-
-                try {
-                    if (normalizedFilter) {
-                        window.localStorage.setItem(filterStorageKey, normalizedFilter);
-                    } else {
-                        window.localStorage.removeItem(filterStorageKey);
-                    }
-                } catch (error) {
-                    // Ignore storage failures so filtering still works.
-                }
-            }
-
-            function updateFilterUi(filterValue) {
-                filterButtons.forEach(function(button) {
-                    const isActive = button.dataset.toolFilter === filterValue;
-                    button.classList.toggle('is-active', isActive);
-                    button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
-                });
-
-                if (resetFilterButton) {
-                    resetFilterButton.hidden = !filterValue;
-                }
-            }
-
-            function cardMatchesFilter(card, filterValue) {
-                if (!filterValue) {
-                    return true;
-                }
-
-                const tagValues = (card.dataset.tags || '').split('|').filter(Boolean);
-                return tagValues.includes(filterValue);
-            }
-
-            function compareNumbersDescending(first, second) {
-                return second - first;
-            }
-
-            function applySortAndFilter(sortMode, filterValue) {
-                const cards = originalCards.filter(function(card) {
-                    return cardMatchesFilter(card, filterValue);
-                });
-
-                cards.sort(function(cardA, cardB) {
-                    if (sortMode === 'alphabetical') {
-                        return cardA.dataset.title.localeCompare(cardB.dataset.title, undefined, {
-                            numeric: true,
-                            sensitivity: 'base'
-                        });
-                    }
-
-                    if (sortMode === 'published') {
-                        const publishedComparison = compareNumbersDescending(
-                            Number(cardA.dataset.published || 0),
-                            Number(cardB.dataset.published || 0)
-                        );
-
-                        if (publishedComparison !== 0) {
-                            return publishedComparison;
-                        }
-                    }
-
-                    const updatedComparison = compareNumbersDescending(
-                        Number(cardA.dataset.updated || 0),
-                        Number(cardB.dataset.updated || 0)
-                    );
-
-                    if (updatedComparison !== 0) {
-                        return updatedComparison;
-                    }
-
-                    return cardA.dataset.title.localeCompare(cardB.dataset.title, undefined, {
-                        numeric: true,
-                        sensitivity: 'base'
-                    });
-                });
-
-                cards.forEach(function(card) {
-                    card.hidden = false;
-                    toolsGrid.appendChild(card);
-                });
-
-                originalCards.forEach(function(card) {
-                    if (!cards.includes(card)) {
-                        card.hidden = true;
-                    }
-                });
-
-                if (noResultsMessage) {
-                    noResultsMessage.hidden = cards.length !== 0;
-                }
-
-                const readableMode = {
-                    updated: 'last updated',
-                    published: 'publish date',
-                    alphabetical: 'alphabetically'
-                };
-                const activeFilterButton = filterButtons.find(function(button) {
-                    return button.dataset.toolFilter === filterValue;
-                });
-                const filterSuffix = activeFilterButton ? ` Filtered by ${activeFilterButton.dataset.toolFilterLabel}.` : '';
-
-                sortStatus.textContent = `${cards.length} tools sorted by ${readableMode[sortMode] || 'last updated'}.${filterSuffix}`;
-            }
-
-            const initialSortMode = loadInitialSortMode();
-            const initialFilter = loadInitialFilter();
-            currentFilter = initialFilter;
-            sortSelect.value = initialSortMode;
-            updateFilterUi(currentFilter);
-
-            sortSelect.addEventListener('change', function(event) {
-                const selectedSortMode = normalizeSortMode(event.target.value);
-                sortSelect.value = selectedSortMode;
-                persistSortMode(selectedSortMode);
-                applySortAndFilter(selectedSortMode, currentFilter);
-            });
-
-            filterButtons.forEach(function(button) {
-                button.addEventListener('click', function() {
-                    const nextFilter = button.dataset.toolFilter === currentFilter ? null : button.dataset.toolFilter;
-                    currentFilter = nextFilter;
-                    updateFilterUi(currentFilter);
-                    persistFilter(currentFilter);
-                    applySortAndFilter(sortSelect.value, currentFilter);
-                });
-            });
-
-            if (resetFilterButton) {
-                resetFilterButton.addEventListener('click', function() {
-                    currentFilter = null;
-                    updateFilterUi(currentFilter);
-                    persistFilter(currentFilter);
-                    applySortAndFilter(sortSelect.value, currentFilter);
-                });
-            }
-
-            persistSortMode(initialSortMode);
-            persistFilter(initialFilter);
-            applySortAndFilter(initialSortMode, initialFilter);
+      function updateFilterUi(filterValue) {
+        filterButtons.forEach(function(button) {
+          const isActive = button.dataset.toolFilter === filterValue;
+          button.classList.toggle('is-active', isActive);
+          button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
         });
-    </script>
-</div>
+        if (resetFilterButton) resetFilterButton.hidden = !filterValue;
+      }
+
+      function cardMatchesFilter(card, filterValue) {
+        if (!filterValue) return true;
+        return (card.dataset.tags || '').split('|').filter(Boolean).includes(filterValue);
+      }
+
+      function compareNumbersDescending(first, second) {
+        return second - first;
+      }
+
+      function updateStatus(cards, sortMode, filterValue) {
+        const readableMode = {
+          updated: 'last updated',
+          published: 'publish date',
+          alphabetical: 'alphabetically'
+        };
+        const activeFilterButton = filterButtons.find(function(button) {
+          return button.dataset.toolFilter === filterValue;
+        });
+        const filterSuffix = activeFilterButton ? ` Filtered by ${activeFilterButton.dataset.toolFilterLabel}.` : '';
+        const countLabel = `${cards.length} ${cards.length === 1 ? 'tool' : 'tools'}`;
+        sortStatus.textContent = `${countLabel} sorted by ${readableMode[sortMode] || 'last updated'}.${filterSuffix}`;
+        if (catalogMeta) catalogMeta.textContent = `${cards.length} shown`;
+        if (topStatus) topStatus.textContent = `Ready — ${countLabel} shown.${filterSuffix || ' Client-side entries run in your browser.'}`;
+      }
+
+      function applySortAndFilter(sortMode, filterValue) {
+        const cards = originalCards.filter(function(card) {
+          return cardMatchesFilter(card, filterValue);
+        });
+
+        cards.sort(function(cardA, cardB) {
+          if (sortMode === 'alphabetical') {
+            return cardA.dataset.title.localeCompare(cardB.dataset.title, undefined, { numeric: true, sensitivity: 'base' });
+          }
+
+          if (sortMode === 'published') {
+            const publishedComparison = compareNumbersDescending(Number(cardA.dataset.published || 0), Number(cardB.dataset.published || 0));
+            if (publishedComparison !== 0) return publishedComparison;
+          }
+
+          const updatedComparison = compareNumbersDescending(Number(cardA.dataset.updated || 0), Number(cardB.dataset.updated || 0));
+          if (updatedComparison !== 0) return updatedComparison;
+
+          return cardA.dataset.title.localeCompare(cardB.dataset.title, undefined, { numeric: true, sensitivity: 'base' });
+        });
+
+        const visibleCards = new Set(cards);
+        cards.forEach(function(card) {
+          card.hidden = false;
+          toolsGrid.appendChild(card);
+        });
+        originalCards.forEach(function(card) {
+          if (!visibleCards.has(card)) card.hidden = true;
+        });
+        if (noResultsMessage) noResultsMessage.hidden = cards.length !== 0;
+        updateStatus(cards, sortMode, filterValue);
+      }
+
+      const initialSortMode = loadInitialSortMode();
+      const initialFilter = loadInitialFilter();
+      currentFilter = initialFilter;
+      sortSelect.value = initialSortMode;
+      updateFilterUi(currentFilter);
+
+      sortSelect.addEventListener('change', function(event) {
+        const selectedSortMode = normalizeSortMode(event.target.value);
+        sortSelect.value = selectedSortMode;
+        persistSortMode(selectedSortMode);
+        applySortAndFilter(selectedSortMode, currentFilter);
+      });
+
+      filterButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+          currentFilter = button.dataset.toolFilter === currentFilter ? null : button.dataset.toolFilter;
+          updateFilterUi(currentFilter);
+          persistFilter(currentFilter);
+          applySortAndFilter(sortSelect.value, currentFilter);
+        });
+      });
+
+      if (resetFilterButton) {
+        resetFilterButton.addEventListener('click', function() {
+          currentFilter = null;
+          updateFilterUi(currentFilter);
+          persistFilter(currentFilter);
+          applySortAndFilter(sortSelect.value, currentFilter);
+        });
+      }
+
+      persistSortMode(initialSortMode);
+      persistFilter(initialFilter);
+      applySortAndFilter(initialSortMode, initialFilter);
+    });
+  </script>
+</body>
+</html>
