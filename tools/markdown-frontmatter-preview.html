@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Markdown Front Matter Preview</title>
-  <meta name="description" content="Paste Markdown with YAML front matter, edit it live, and preview both the YAML and rendered content side by side.">
+  <title>Markdown Front Matter Preview and HTML to Markdown Converter</title>
+  <meta name="description" content="Paste Markdown with YAML front matter, edit it live, convert HTML to Markdown, and preview both the YAML and rendered content side by side.">
   <link rel="canonical" href="https://tedt.org/tools/markdown-frontmatter-preview.html">
 
-  <meta property="og:title" content="Markdown Front Matter Preview">
-  <meta property="og:description" content="Paste Markdown with YAML front matter, edit it live, and preview both the YAML and rendered content side by side.">
+  <meta property="og:title" content="Markdown Front Matter Preview and HTML to Markdown Converter">
+  <meta property="og:description" content="Paste Markdown with YAML front matter, edit it live, convert HTML to Markdown, and preview both the YAML and rendered content side by side.">
   <meta property="og:url" content="https://tedt.org/tools/markdown-frontmatter-preview.html">
   <meta property="og:type" content="website">
 
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Markdown Front Matter Preview">
-  <meta name="twitter:description" content="Paste Markdown with YAML front matter, edit it live, and preview both the YAML and rendered content side by side.">
+  <meta name="twitter:title" content="Markdown Front Matter Preview and HTML to Markdown Converter">
+  <meta name="twitter:description" content="Paste Markdown with YAML front matter, edit it live, convert HTML to Markdown, and preview both the YAML and rendered content side by side.">
 
   <link rel="icon" href="../favicon.ico" sizes="any">
   <link rel="icon" type="image/webp" href="../img/favicon-196x196.webp" sizes="196x196">
@@ -55,6 +55,20 @@
       align-items: center;
       flex-wrap: wrap;
       margin-bottom: 1rem;
+    }
+
+    .toolbar-divider {
+      width: 1px;
+      align-self: stretch;
+      min-height: 2.1rem;
+      background: var(--tool-border-contrast);
+    }
+
+    .converter-actions {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+      flex-wrap: wrap;
     }
 
     .status-pill {
@@ -528,12 +542,17 @@
 <body>
   <main class="container app-shell py-4">
     <div class="mb-3">
-      <h1 class="h2 mb-1">Markdown Front Matter Preview <span class="text-body-secondary h5">— YAML + Markdown Workspace</span></h1>
-      <p class="mb-0 muted-note">Paste a full content blob with YAML front matter, edit the source live, and inspect the parsed metadata above the rendered Markdown.</p>
+      <h1 class="h2 mb-1">Markdown Front Matter Preview <span class="text-body-secondary h5">— YAML + HTML-to-Markdown Workspace</span></h1>
+      <p class="mb-0 muted-note">Paste a full content blob with YAML front matter, edit the source live, convert HTML when needed, and inspect the parsed metadata above the rendered Markdown.</p>
     </div>
 
     <div class="toolbar">
       <button id="sampleBtn" type="button" class="btn btn-primary">Load sample</button>
+      <div class="toolbar-divider d-none d-sm-block" aria-hidden="true"></div>
+      <div class="converter-actions" aria-label="HTML conversion actions">
+        <button id="convertHtmlBtn" type="button" class="btn btn-outline-primary">Convert HTML</button>
+        <button id="copyMarkdownBtn" type="button" class="btn btn-outline-secondary">Copy Markdown</button>
+      </div>
       <span class="status-pill"><strong id="frontMatterStatus">Front matter detected</strong><span id="lineStats">0 lines</span></span>
       <span class="status-pill"><strong id="yamlStatus">YAML ready</strong><span id="renderStats">0 chars</span></span>
     </div>
@@ -543,7 +562,7 @@
         <div class="panel-header">
           <div>
             <h2 class="panel-title">Source</h2>
-            <p class="panel-subtitle">Edit the full source, including front matter fences.</p>
+            <p class="panel-subtitle">Edit Markdown, or paste HTML and convert it.</p>
           </div>
           <div id="editorMeta" class="meta-inline">Live preview enabled</div>
         </div>
@@ -560,7 +579,7 @@
               <h3 id="rawTextTitle">Raw Text</h3>
               <span id="rawTextMeta" class="meta-inline">0 lines</span>
             </div>
-            <label class="visually-hidden" for="sourceInput">Markdown with YAML front matter</label>
+            <label class="visually-hidden" for="sourceInput">Markdown or HTML with YAML front matter</label>
             <textarea id="sourceInput" class="editor-area" spellcheck="false" autocomplete="off" autocorrect="off"></textarea>
           </div>
         </div>
@@ -614,6 +633,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/js-yaml@4.1.0/dist/js-yaml.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/turndown@7.2.0/dist/turndown.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/turndown-plugin-gfm@1.0.2/dist/turndown-plugin-gfm.js"></script>
   <script>
     (() => {
       'use strict';
@@ -672,6 +693,8 @@ mermaid: false
 
       const sourceInput = document.getElementById('sourceInput');
       const sampleBtn = document.getElementById('sampleBtn');
+      const convertHtmlBtn = document.getElementById('convertHtmlBtn');
+      const copyMarkdownBtn = document.getElementById('copyMarkdownBtn');
       const sourceCopyBtn = document.getElementById('sourceCopyBtn');
       const sourcePasteBtn = document.getElementById('sourcePasteBtn');
       const sourceClearBtn = document.getElementById('sourceClearBtn');
@@ -765,6 +788,37 @@ mermaid: false
         mangle: false
       });
 
+      const turndownService = window.TurndownService ? new window.TurndownService({
+        headingStyle: 'atx',
+        hr: '---',
+        bulletListMarker: '-',
+        codeBlockStyle: 'fenced',
+        emDelimiter: '*',
+        strongDelimiter: '**',
+        linkStyle: 'inlined'
+      }) : null;
+
+      if (turndownService) {
+        if (window.turndownPluginGfm && typeof window.turndownPluginGfm.gfm === 'function') {
+          turndownService.use(window.turndownPluginGfm.gfm);
+        }
+
+        turndownService.remove(['script', 'style', 'noscript', 'template', 'meta', 'link']);
+        turndownService.addRule('fencedCodeBlockWithLanguage', {
+          filter(node) {
+            return node.nodeName === 'PRE' && node.firstChild && node.firstChild.nodeName === 'CODE';
+          },
+          replacement(content, node) {
+            const codeNode = node.firstChild;
+            const className = codeNode.getAttribute('class') || '';
+            const languageMatch = className.match(/(?:language|lang)-([^\s]+)/);
+            const language = languageMatch ? languageMatch[1] : '';
+            const code = codeNode.textContent.replace(/\n$/, '');
+            return `\n\n\`\`\`${language}\n${code}\n\`\`\`\n\n`;
+          }
+        });
+      }
+
       function loadInitialDocument() {
         try {
           const saved = window.localStorage.getItem(STORAGE_KEY);
@@ -851,6 +905,70 @@ mermaid: false
           markdown: lines.slice(closingIndex + 1).join('\n'),
           error: ''
         };
+      }
+
+      function getMarkdownBodyFromSource() {
+        const split = splitFrontMatter(sourceInput.value);
+        return split.error ? '' : split.markdown;
+      }
+
+      function normalizeHtmlForMarkdown(htmlText) {
+        const parser = new DOMParser();
+        const documentValue = parser.parseFromString(htmlText, 'text/html');
+        const bodyHtml = documentValue.body ? documentValue.body.innerHTML.trim() : '';
+        return bodyHtml || htmlText;
+      }
+
+      function normalizeConvertedMarkdown(markdownText) {
+        return markdownText
+          .replace(/[ \t]+\n/g, '\n')
+          .replace(/\n{4,}/g, '\n\n\n')
+          .trim();
+      }
+
+      function convertHtmlFragmentToMarkdown(htmlText) {
+        if (!turndownService) {
+          throw new Error('The HTML converter library did not load.');
+        }
+
+        return normalizeConvertedMarkdown(turndownService.turndown(normalizeHtmlForMarkdown(htmlText)));
+      }
+
+      function rebuildSourceWithMarkdown(split, markdownText) {
+        if (!split.hasFrontMatter) {
+          return markdownText;
+        }
+
+        const yamlBlock = split.yaml.trimEnd();
+        const yamlSource = yamlBlock ? `${yamlBlock}\n` : '';
+        return `---\n${yamlSource}---\n\n${markdownText}`;
+      }
+
+      function convertSourceHtmlToMarkdown() {
+        const split = splitFrontMatter(sourceInput.value);
+
+        if (split.error) {
+          parseStatus.textContent = 'Close the YAML front matter fence before converting HTML.';
+          return;
+        }
+
+        const sourceHtml = split.hasFrontMatter ? split.markdown.trim() : sourceInput.value.trim();
+        if (!sourceHtml) {
+          parseStatus.textContent = 'There is no HTML to convert.';
+          return;
+        }
+
+        try {
+          const markdownText = convertHtmlFragmentToMarkdown(sourceHtml);
+          sourceInput.value = rebuildSourceWithMarkdown(split, markdownText);
+          updatePreview();
+          sourceInput.focus();
+          parseStatus.textContent = split.hasFrontMatter
+            ? 'HTML body converted to Markdown and front matter preserved.'
+            : 'HTML converted to Markdown.';
+        } catch (error) {
+          parseStatus.textContent = error.message || 'HTML conversion failed.';
+        }
       }
 
       function valueToMarkup(value) {
@@ -973,6 +1091,22 @@ mermaid: false
           parseStatus.textContent = 'Source copied to the clipboard.';
         } catch (error) {
           parseStatus.textContent = 'Clipboard copy failed in this browser context.';
+        }
+      }
+
+      async function copyMarkdownToClipboard() {
+        const markdownText = getMarkdownBodyFromSource().trim();
+
+        if (!markdownText) {
+          parseStatus.textContent = 'There is no Markdown body to copy.';
+          return;
+        }
+
+        try {
+          await navigator.clipboard.writeText(markdownText);
+          parseStatus.textContent = 'Markdown body copied to the clipboard.';
+        } catch (error) {
+          parseStatus.textContent = 'Markdown copy failed in this browser context.';
         }
       }
 
@@ -1159,6 +1293,14 @@ mermaid: false
         sourceInput.value = SAMPLE_DOCUMENT;
         updatePreview();
         sourceInput.focus();
+      });
+
+      convertHtmlBtn.addEventListener('click', () => {
+        convertSourceHtmlToMarkdown();
+      });
+
+      copyMarkdownBtn.addEventListener('click', () => {
+        copyMarkdownToClipboard();
       });
 
       sourceCopyBtn.addEventListener('click', () => {
