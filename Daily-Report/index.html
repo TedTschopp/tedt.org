@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-06-12 | TedT.org</title>
+  <title>Daily Report - 2026-06-13 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,138 +52,120 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-06-12</h1>
-      <p class="meta">Generated <time datetime="2026-06-12T08:51:35+00:00">2026-06-12T08:51:35Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-06-13</h1>
+      <p class="meta">Generated <time datetime="2026-06-13T08:08:34+00:00">2026-06-13T08:08:34Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Automation is healthy; human activity has stalled.</strong> The last human commit was June 2 (Mastodon cache sync). Since then, the repo has been running entirely on scheduled bots — daily report and enterprise AI refresh commits, Mastodon feed posts. Four Dependabot PRs are sitting unreviewed, one of which carries a breaking API change (<code>actions/github-script</code> v7→v9). Eighteen open P2/P3 issues from the May 2026 audit remain untouched. Site pipeline is green; content quality, discoverability, and compliance work is accumulating debt.</p>
+      <p><strong>All clear on pipeline health.</strong> Automated workflows are running on schedule with no failures detected. No human commits in the past 10 days — only bot-driven content refreshes. Four Dependabot PRs sit unmerged (dependencies, GitHub Actions). A large P2/P3 issue backlog from the May 2026 audit (20+ open issues) remains untouched. No deployment failures observed.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line Up Front</h2>
-<p>The site is operationally healthy — automated workflows are running and succeeding — but has entered a period of maintenance drift. No human-authored commits landed in the past 10 days. Four Dependabot PRs are pending, one carries a breaking change requiring workflow validation before merge. Eighteen issues from the May 2026 audit are unstarted after two weeks, spanning privacy, accessibility, content discoverability, and CI reliability.</p>
+      <h2>Bottom Line</h2>
+<p>Site automation is healthy. Mastodon feed sync ran successfully earlier today. The current Daily Report workflow (this run) is <code>in_progress</code>. No human-authored commits have landed in approximately 10 days — the repo is running on autopilot via scheduled bots. Four Dependabot PRs need attention; the <code>gh-aw-actions</code> bump is over a week old. A 20+ issue backlog from the May audit is accumulating age with no assignees and no activity.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Commits (June 2–12, 2026)</h3>
-<p>All commits since June 2 are fully automated. Pattern repeats daily:</p>
+<h3>Commits (last 10 days, 2026-06-03 to 2026-06-13)</h3>
+<p>All commits are by <code>github-actions[bot]</code>. No human-authored commits in this window.</p>
 <ul>
-<li><strong><code>chore: refresh daily report</code></strong> — scheduled bot, runs once per morning</li>
-<li><strong><code>chore: refresh yesterday in enterprise ai</code></strong> — scheduled bot, runs once per afternoon</li>
+<li><strong>2026-06-12 16:07 UTC</strong> — <code>chore: refresh yesterday in enterprise ai</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/1f25b3afafd35673ef75abc3310be0c37598d243"><code>1f25b3a</code></a></li>
+<li><strong>2026-06-12 08:51 UTC</strong> — <code>chore: refresh daily report</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/7af60ce466dcf755853ef821386841121e2ff17c"><code>7af60ce</code></a></li>
+<li><strong>2026-06-11 16:54 UTC</strong> — <code>chore: refresh yesterday in enterprise ai</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/db911c0176e927c6837f0535a4df2206775c13fb"><code>db911c0</code></a></li>
+<li><strong>2026-06-11 09:04 UTC</strong> — <code>chore: refresh daily report</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/10f7e0faed66167ef36032f454f3df56ba20f158"><code>10f7e0f</code></a></li>
+<li><strong>2026-06-10 16:40 UTC</strong> — <code>chore: refresh yesterday in enterprise ai</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/af1e3967501b6d034bd1118dc1701f6d469f66f1"><code>af1e396</code></a></li>
+<li><strong>2026-06-10 08:39 UTC</strong> — <code>chore: refresh daily report</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/8bc1aeee2241596644bdfdc8d0fb04c3da287878"><code>8bc1aee</code></a></li>
+<li><strong>2026-06-09 15:57 UTC</strong> — <code>chore: refresh yesterday in enterprise ai</code></li>
+<li><strong>2026-06-09 08:12 UTC</strong> — <code>chore: refresh daily report</code></li>
+<li><strong>2026-06-08, 06, 07, 05, 04, 03</strong> — same two-commit daily pattern continues</li>
 </ul>
-<p>The last human-authored commit:</p>
-<ul>
-<li><strong>June 2, 2026</strong> — <code>chore: update Mastodon cache/front matter</code> by TedTschopp (<a href="https://github.com/TedTschopp/tedt.org/commit/2f672de696750bffd002339a7f8469d479c830ab">db911c0</a>)</li>
-</ul>
-<p>No feature work, content additions, or issue fixes landed in the past 10 days.</p>
-<hr>
-<h2>Open Pull Requests</h2>
-<p>All four open PRs are Dependabot dependency bumps, all unreviewed.</p>
-<h3>PR #197 — <code>github/gh-aw-actions</code> 0.71.5 → 0.78.3</h3>
-<ul>
-<li><strong>Risk:</strong> Low. Internal agentic-workflow action sync. Seven minor version bumps.</li>
-<li><strong>Created:</strong> June 8, 2026</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/pull/197">PR link</a></li>
-</ul>
-<h3>PR #196 — <code>actions/cache</code> 4 → 5</h3>
-<ul>
-<li><strong>Risk:</strong> Low-medium. v5 requires Actions Runner ≥ 2.327.1 (uses Node.js 24 runtime). Verify runner version before merging.</li>
-<li><strong>Created:</strong> June 1, 2026</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/pull/196">PR link</a></li>
-</ul>
-<h3>PR #195 — <code>actions/github-script</code> 7 → 9 ⚠️ Breaking change</h3>
-<ul>
-<li><strong>Risk:</strong> High. v9 is ESM-only. <code>require('</code>@actions/github<code>')</code> no longer works. Any workflow script using <code>const { ... } = require('</code>@actions/github<code>')</code> will fail at runtime. Review all workflow <code>script:</code> blocks before merging.</li>
-<li><strong>Created:</strong> June 1, 2026</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/pull/195">PR link</a></li>
-</ul>
-<h3>PR #194 — <code>actions/upload-pages-artifact</code> 4 → 5</h3>
-<ul>
-<li><strong>Risk:</strong> Low. Minor artifact upload runner update; includes hidden-files support.</li>
-<li><strong>Created:</strong> June 1, 2026</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/pull/194">PR link</a></li>
-</ul>
+<p><strong>Pattern:</strong> Two automated commits per day, every day — morning daily report refresh, afternoon enterprise AI content refresh. This is steady-state and expected.</p>
 <hr>
 <h2>Workflow Health</h2>
-<h3>Confirmed Green (June 11–12, 2026)</h3>
+<h3>Workflows run on 2026-06-13</h3>
 <ul>
-<li><strong>Feed to Mastodon</strong> — Run #1842 succeeded June 12, 04:09 UTC (<a href="https://github.com/TedTschopp/tedt.org/actions/runs/27393863178">run</a>)</li>
-<li><strong>Feed to Mastodon</strong> — Run #1841 succeeded June 11, 20:24 UTC (<a href="https://github.com/TedTschopp/tedt.org/actions/runs/27375107104">run</a>)</li>
-<li><strong>Daily Report</strong> — Run #43 completed June 11, 09:04 UTC</li>
-<li><strong>Daily Report</strong> — Run #44 (this run) started June 12, 08:44 UTC — in progress</li>
+<li><strong>Daily Report</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27461039040">#27461039040</a>) — <code>in_progress</code> at report generation time. Run #45. Triggered by <code>schedule</code>.</li>
+<li><strong>Feed to Mastodon</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27455847200">#27455847200</a>) — <code>completed</code> / <strong>success</strong>. Run #1846. Completed at 03:57 UTC. Mastodon sync is healthy.</li>
 </ul>
-<h3>Not Confirmed</h3>
+<h3>Notable observation</h3>
+<p>The <code>Feed to Mastodon</code> workflow has reached run #1846 — indicating consistent daily execution for a long period. No failures visible in the most recent runs reviewed.</p>
+<hr>
+<h2>Open Pull Requests</h2>
+<p>All 4 open PRs are Dependabot dependency bumps. None are human-authored. All target <code>main</code>. None have been reviewed or merged.</p>
 <ul>
-<li>Last successful <strong>site deploy</strong> run: not independently verified in this report cycle. [ASSUMPTION] Deploy is healthy given automated bot commits are landing on <code>main</code> without conflict.</li>
-<li>No failed workflows observed in the recent completed runs sampled.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/197">PR #197</a>** — <code>build(deps): bump github/gh-aw-actions from 0.71.5 to 0.78.3</code> — opened 2026-06-08 — labels: <code>dependencies</code>, <code>github_actions</code></li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/196">PR #196</a>** — <code>build(deps): bump actions/cache from 4 to 5</code> — opened 2026-06-01 — labels: <code>dependencies</code>, <code>github_actions</code></li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/195">PR #195</a>** — <code>build(deps): bump actions/github-script from 7 to 9</code> — opened 2026-06-01 — labels: <code>dependencies</code>, <code>github_actions</code></li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/194">PR #194</a>** — <code>build(deps): bump actions/upload-pages-artifact from 4 to 5</code> — opened 2026-06-01 — labels: <code>dependencies</code>, <code>github_actions</code></li>
+</ul>
+<p><strong>Note on PR #195:</strong> <code>actions/github-script</code> v9 is a <strong>breaking change</strong> — <code>require('</code>@actions/github<code>')</code> no longer works in scripts. Any workflow using that pattern must be audited before merging.</p>
+<hr>
+<h2>Open Issues — Backlog Snapshot</h2>
+<p>All 20 issues shown are from the <code>audit-2026-05</code> batch, created 2026-05-29 by TedTschopp. None have been assigned, closed, or commented on (except #171 has 1 comment). Age: ~15 days with no progress.</p>
+<h3>P2 Issues (action required, not urgent)</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a>** — Enhance category landing pages: related categories, tag clouds, depth indicators</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a>** — Build cross-collection content bridges and related-posts infrastructure</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a>** — Drive prompt series adoption: audit and populate series metadata</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/183">#183</a>** — Standardize tagging model: enforce coverage and build site-wide tag infrastructure</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/182">#182</a>** — Create slide gallery with topic filtering and deck browser</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/181">#181</a>** — Unify RPG/fantasy content schema and build SEO landing pages</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/180">#180</a>** — Add content contributor guide to README (tone, structure, categories)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/179">#179</a>** — Curate quotes with thematic tags and personal context</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/178">#178</a>** — SEO and discoverability: strengthen excerpts, descriptions, and create pillar hub pages</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/175">#175</a>** — Add Service Worker offline fallback for hero media cache misses</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/174">#174</a>** — Docs: Document COPILOT_ASSIGN_TOKEN secret requirements</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/173">#173</a>** — Privacy: Implement cookie consent banner before analytics load</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/172">#172</a>** — Expand a11y test coverage: form labeling, ARIA live regions, carousel keyboard nav</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/171">#171</a>** — Add front matter validation: required fields</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/170">#170</a>** — Extract Allure history restore: dedicated helper + retry backoff</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/169">#169</a>** — Mastodon workflow preflight: dry-run validation + token scope check</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/168">#168</a>** — Add <code>rel="noopener noreferrer"</code> to all external <code>target="_blank"</code> links</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/167">#167</a>** — Extract Mastodon comments component: styles to SCSS, tree to sub-includes</li>
+</ul>
+<h3>P3 Issues (low priority, good-housekeeping)</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/177">#177</a>** — Document and organize <code>_code/</code> utility scripts</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/176">#176</a>** — Standardize Python script entry points with <code>main()</code> guards</li>
 </ul>
 <hr>
-<h2>Open Issues — May 2026 Audit Backlog</h2>
-<p>All 18+ issues below were created May 29, 2026 and remain unstarted. Grouped by impact area.</p>
-<h3>Privacy / Security (act first)</h3>
+<h2>Content Pipeline Observations</h2>
 <ul>
-<li><strong>#173 [P2]</strong> — Privacy: Implement cookie consent banner before analytics load. GA4 + Microsoft Clarity with session replay are active with no consent gate. GDPR/CCPA risk.</li>
-<li><strong>#168 [P2]</strong> — Add <code>rel="noopener noreferrer"</code> to all <code>target="_blank"</code> links. Affects <code>_includes/personal/h-card.html</code> and <code>comments-mastodon-tree.html</code> (4+ instances).</li>
-</ul>
-<h3>CI / Automation Reliability</h3>
-<ul>
-<li><strong>#174 [P2]</strong> — Document <code>COPILOT_ASSIGN_TOKEN</code> secret requirements. <code>squad-issue-assign.yml</code> has no fallback; silent failure path.</li>
-<li><strong>#170 [P2]</strong> — Extract Allure history restore to a dedicated retry-capable script. Inline Python in bash with <code>continue-on-error: true</code> silently loses test history.</li>
-<li><strong>#169 [P2]</strong> — Mastodon workflow preflight: dry-run validation + token scope check. Sync runs <code>--write</code> unconditionally without pre-validation.</li>
-</ul>
-<h3>Accessibility / Testing</h3>
-<ul>
-<li><strong>#172 [P2]</strong> — Expand a11y test coverage: form labeling, ARIA live regions, carousel keyboard nav.</li>
-<li><strong>#171 [P2]</strong> — Add front matter validation: <code>image-alt</code> when <code>image</code> present, category slug validation, ISO 8601 date format. Has 1 existing comment.</li>
-</ul>
-<h3>Content Discoverability / SEO</h3>
-<ul>
-<li><strong>#186 [P2]</strong> — Enhance category landing pages with related categories, tag clouds, depth indicators.</li>
-<li><strong>#185 [P2]</strong> — Build cross-collection content bridges and related-posts infrastructure.</li>
-<li><strong>#184 [P2]</strong> — Drive prompt series adoption (only 3 of 56 prompts have <code>series:</code> metadata).</li>
-<li><strong>#183 [P2]</strong> — Standardize tagging: only 30.5% of posts have tags; build tag archive pages.</li>
-<li><strong>#182 [P2]</strong> — Create slide gallery with topic filtering (9 decks discoverable only by direct URL).</li>
-<li><strong>#181 [P2]</strong> — Unify RPG/fantasy content schema and build SEO landing pages for Gamma World/Bestiary.</li>
-<li><strong>#180 [P2]</strong> — Add content contributor guide to README (tone, structure, category usage).</li>
-<li><strong>#179 [P2]</strong> — Curate quotes with thematic tags and personal context.</li>
-<li><strong>#178 [P2]</strong> — SEO discoverability: strengthen excerpts and descriptions; create 3-5 pillar hub pages.</li>
-</ul>
-<h3>Code Quality / Documentation</h3>
-<ul>
-<li><strong>#177 [P3]</strong> — Document and organize <code>_code/</code> utility scripts (16+ prompt scripts, 8+ Mastodon/feed utilities, none documented).</li>
-<li><strong>#176 [P3]</strong> — Standardize Python script entry points with <code>__main__</code> guards (~20 scripts still missing).</li>
-<li><strong>#167 [P2]</strong> — Extract Mastodon comments component: 1,748-line include needs styles moved to SCSS and tree split into sub-includes.</li>
+<li>The "enterprise AI" content refresh runs daily in the afternoon (~16:00 UTC). This commit refreshes content in the <code>_posts/</code> tree related to AI topics. The cadence is consistent.</li>
+<li>No new posts or content changes from TedTschopp directly in the observed window.</li>
+<li>Mastodon syndication (run #1846) is operating normally.</li>
 </ul>
 <hr>
 <h2>Risks and Blockers</h2>
-<ul>
-<li><strong>Consent compliance gap</strong> (#173): Analytics + session replay running without consent. Partial mitigation: disable <code>session_replay: true</code> in <code>_config.yml</code> until consent flow is built.</li>
-<li><strong>Breaking PR sitting unreviewed</strong> (#195): <code>actions/github-script</code> v7→v9 is ESM-only. If merged without audit, workflow scripts using <code>require()</code> will fail at runtime.</li>
-<li><strong>Audit debt aging</strong>: 18 issues are 2 weeks old with no triage or assignment. Without explicit scheduling, this will continue to age.</li>
-<li><strong>No new content in 10 days</strong>: No blog posts, RPG entries, or folklore content since June 2. Site is static from a content perspective.</li>
-</ul>
+<h3>Risk: Dependabot PRs aging</h3>
+<p>4 PRs open for 5–13 days without review. The <code>actions/github-script</code> v7→v9 bump (PR #195) introduces breaking API changes — any workflow using <code>require('</code>@actions/github<code>')</code> patterns will fail if merged without audit.</p>
+<p><strong>Recommendation:</strong> Review and test PR #195 carefully before merging. PRs #194, #196, #197 appear lower risk but should be addressed to keep the dependency surface current.</p>
+<h3>Risk: Issue backlog stalling</h3>
+<p>20 P2/P3 issues from the May audit have no assignees, no comments (except one), and no milestones. Without triaging and prioritizing, the audit findings will decay into noise.</p>
+<p><strong>Recommendation:</strong> Pick 2–3 high-leverage issues to address in the next sprint. Suggested first targets: #168 (low effort, security hygiene), #173 (privacy compliance, blocks session replay), #171 (CI quality gate).</p>
+<h3>Risk: No human commits in 10 days</h3>
+<p>All commits are bot-generated. This may be intentional (vacation, focus elsewhere) but is worth noting. If the site depends on fresh human content for engagement, the pipeline is sustaining but not growing.</p>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Audit #195 before merging</strong> — review all <code>script:</code> blocks in <code>.github/workflows/*.yml</code> for <code>require('</code>@actions/github<code>')</code> usage. Port to v9 ESM pattern or use <code>getOctokit</code> factory before merging.</li>
-<li><strong>Merge #194 and #196</strong> — lower-risk bumps; review runner version compatibility for <code>actions/cache</code> v5.</li>
-<li><strong>Merge #197</strong> — <code>gh-aw-actions</code> is routine sync; low risk.</li>
-<li><strong>Triage #173 immediately</strong> — disable session replay in <code>_config.yml</code> as a quick partial mitigation while the consent banner is built.</li>
-<li><strong>Assign and schedule top P2 issues</strong> — recommend picking 2-3 from the CI reliability group first (#170, #171, #169) since they protect data integrity.</li>
-<li><strong>Publish new content</strong> — no posts in 10 days; homepage recency signals are stale.</li>
+<li><strong>Triage Dependabot PRs</strong> — especially audit PR #195 (<code>actions/github-script</code> v9 breaking changes) before merging. Check workflows for <code>require('</code>@actions/github<code>')</code> patterns.</li>
+<li><strong>Address PR #197</strong> (<code>gh-aw-actions</code> 0.71.5 → 0.78.3) — this is the newest and most likely to be safe; merge to unblock the CI action version drift.</li>
+<li><strong>Privacy: #173</strong> — Analytics and session replay run without consent. Even a simple localStorage-gated banner would satisfy the config's own warning. Highest compliance risk in the backlog.</li>
+<li><strong>Security quick win: #168</strong> — Adding <code>rel="noopener noreferrer"</code> to external links is a ~30-minute fix with zero functional risk.</li>
+<li><strong>Prioritize audit backlog</strong> — Assign milestones or labels like <code>sprint-next</code> to the top 5 issues so they don't stagnate past the 30-day mark.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li><strong>Commits</strong>: Fetched via GitHub MCP <code>list_commits</code>, last 20 commits on <code>main</code>, as of 2026-06-12T08:46Z</li>
-<li><strong>Pull Requests</strong>: Fetched via GitHub MCP <code>list_pull_requests</code> (open state). First 20 results reviewed; 4 open Dependabot PRs confirmed. Additional PRs may exist beyond the first 4 shown.</li>
-<li><strong>Issues</strong>: Fetched via GitHub MCP <code>list_issues</code> (open state, first 20). All 18 issues reviewed are from <code>audit-2026-05</code> label batch. Older open issues may exist and are not covered in this report.</li>
-<li><strong>Workflow Runs</strong>: Fetched via GitHub Actions MCP <code>list_workflow_runs</code>, completed filter, first 20 runs sampled. Full run history is 7,483+ total runs.</li>
-<li><strong>Site deploy status</strong>: Not independently verified. The last confirmed deploy artifact is inferred from the bot commits landing cleanly on <code>main</code>. [ASSUMPTION] Deploy is healthy.</li>
-<li><strong>Issue #163 (parent tracker)</strong>: Referenced by audit issues but not individually reviewed in this report.</li>
-<li><strong>Bash execution restricted</strong>: Tool output parsing was done via <code>view</code> on temp files; no shell JSON parsing was available.</li>
-<li><strong>Current workflow run ID</strong>: 27405008379 (this Daily Report, run #44, in-progress at report generation time)</li>
+<li><strong>Commits:</strong> Retrieved via GitHub API (<code>list_commits</code>, 20 most recent). All in the <code>main</code> branch.</li>
+<li><strong>Pull Requests:</strong> Retrieved via GitHub API (<code>list_pull_requests</code>, state: open). Full list confirmed — 4 open PRs, all Dependabot.</li>
+<li><strong>Issues:</strong> Retrieved via GitHub API (<code>list_issues</code>, state: OPEN, first 20 returned). All are from the <code>audit-2026-05</code> labeling batch. There may be additional open issues beyond the 20 shown; pagination was not exhausted.</li>
+<li><strong>Workflow Runs:</strong> Retrieved via GitHub API (<code>list_workflow_runs</code>, 15 most recent). The Daily Report run shown as <code>in_progress</code> is this current execution.</li>
+<li><strong>No build logs reviewed:</strong> Build success/failure for the Jekyll site deploy was not confirmed because the deploy workflow was not in the top 15 runs at pull time. [ASSUMPTION] Site deploy is healthy given no failure signals in available data.</li>
+<li><strong>No Playwright or HTML Proofer output available</strong> in this run — static analysis of link integrity was not performed.</li>
+<li><strong>Mastodon token scope</strong> not validated — token health inferred from successful Feed to Mastodon run #1846.</li>
+<li><strong>Issue count:</strong> The total number of open issues is higher than the 20 shown. The 20 retrieved are sorted by default (likely most recently updated). Additional open issues from earlier audits or other sources may exist.</li>
+<li>Report generated: 2026-06-13T08:02 UTC.</li>
 </ul>
     </section>
     <footer>
