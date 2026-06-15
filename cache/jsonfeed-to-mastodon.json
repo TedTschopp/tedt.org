@@ -4502,5 +4502,33 @@
       "https://tschopp.net/users/Ted/statuses/116682490597688571"
     ],
     "lastTootTimestamp": 1780433511393
+  },
+  "https://tedt.org/AI-Value-Stream/": {
+    "id": "/AI-Value-Stream/",
+    "title": "The AI Value Stream: Why the System Matters More Than the Model",
+    "summary": "The biggest mistake people are making about AI is asking who has the best model. The better question is: who owns the system where AI actually becomes useful?",
+    "content_text": "The biggest mistake people are making about AI is asking who has the best model. The better question is: who owns the system where AI actually becomes useful? https://tedt.org/AI-Value-Stream/",
+    "url": "https://tedt.org/AI-Value-Stream/",
+    "image": "https://tedt.org/img/2026-06/IT-Value-Stream.webp",
+    "tags": [
+      "AI value chain",
+      "agent harness",
+      "trusted surface",
+      "platform strategy",
+      "AI infrastructure",
+      "AI economics",
+      "agentic AI"
+    ],
+    "date_published": "2026-06-14T00:00:00-07:00",
+    "date_modified": "2026-06-14T00:00:00-07:00",
+    "author": {
+      "avatar": "//secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "//tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116750152042156672"
+    ],
+    "lastTootTimestamp": 1781465943129
   }
 }
