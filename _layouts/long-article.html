@@ -70,7 +70,7 @@
                         {% include utility/resolve-video-variables.html item=page %}
                         <div class="card rounded-bottom-0 h-100">
                             {% if video_has_resolved_source %}
-                                {% include components/video-player.html id=video_id label=video_label title=video_title description=video_description aspect=video_aspect class="video-player-alert article-hero-video m-0 p-0 border-0 rounded-bottom-0 bg-body" body_class="p-0" description_wrapper_class="px-3 py-2" %}
+                                {% include components/video-player.html provider=video_provider id=video_id src=video_source type=video_type poster=video_poster label=video_label title=video_title description=video_description aspect=video_aspect class="video-player-alert article-hero-video m-0 p-0 border-0 rounded-bottom-0 bg-body" body_class="p-0" description_wrapper_class="px-3 py-2" %}
                             {% else %}
                                 <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"><!-- hero image intentionally eager -->
                             {% endif %}

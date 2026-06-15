@@ -1,8 +1,14 @@
 {% comment %}
-Video Player Component (YouTube)
-Usage: {% include components/video-player.html id="xr65j6C2KyU" label="Video" description="Watch a summary of this article." %}
+Video Player Component
+Usage:
+  YouTube: {% include components/video-player.html provider="youtube" id="xr65j6C2KyU" label="Video" description="Watch a summary of this article." %}
+  File: {% include components/video-player.html provider="github" src="https://github.com/user-attachments/assets/example" poster="/img/example.webp" %}
 Parameters:
   - id: YouTube video ID (required)
+  - provider: Video provider (optional, defaults to "youtube"; supports "youtube", "github", "file")
+  - src: HTML5 video source URL for non-YouTube providers
+  - type: HTML5 video MIME type (optional, defaults to "video/mp4")
+  - poster: Poster image for HTML5 video
   - label: Badge text (optional, defaults to "Video")
   - title: iframe title (optional, defaults to "YouTube video player")
   - description: Helper text below player (optional)
@@ -11,6 +17,7 @@ Parameters:
   - body_class: Inner wrapper classes (optional)
   - description_wrapper_class: Description wrapper classes (optional)
 {% endcomment %}
+{% assign video_provider = include.provider | default: "youtube" | downcase | strip %}
 {% assign video_label = include.label | default: "Video" %}
 {% assign video_title = include.title | default: "YouTube video player" %}
 {% assign video_aspect = include.aspect | default: "16x9" | replace: ':', 'x' | replace: 'by', 'x' %}
@@ -18,6 +25,23 @@ Parameters:
 {% assign video_body_class = include.body_class | default: "card-body py-3" %}
 {% assign video_description_wrapper_class = include.description_wrapper_class | default: "mt-2" %}
 {% assign video_description = include.description | default: "" %}
+{% assign video_source = include.src | default: include.url | default: "" | strip %}
+{% assign video_type = include.type | default: "video/mp4" | strip %}
+{% assign video_poster = include.poster | default: "" | strip %}
+{% if video_source != "" and video_source contains "://" %}
+  {% assign video_source_url = video_source %}
+{% elsif video_source != "" %}
+  {% assign video_source_url = video_source | relative_url %}
+{% else %}
+  {% assign video_source_url = "" %}
+{% endif %}
+{% if video_poster != "" and video_poster contains "://" %}
+  {% assign video_poster_url = video_poster %}
+{% elsif video_poster != "" %}
+  {% assign video_poster_url = video_poster | relative_url %}
+{% else %}
+  {% assign video_poster_url = "" %}
+{% endif %}
 <div class="{{ video_container_class }}">
 <div class="{{ video_body_class }}">
 {% comment %}
@@ -26,7 +50,14 @@ Parameters:
 </div>
 {% endcomment %}
 <div class="ratio ratio-{{ video_aspect }}">
+{% if video_provider == "youtube" %}
 <iframe src="https://www.youtube.com/embed/{{ include.id }}" title="{{ video_title | escape }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen loading="lazy"></iframe>
+{% else %}
+<video class="w-100 h-100" controls preload="metadata" playsinline{% if video_poster_url != "" %} poster="{{ video_poster_url | escape }}"{% endif %} title="{{ video_title | escape }}">
+  <source src="{{ video_source_url | escape }}" type="{{ video_type | escape }}">
+  Your browser does not support the video tag.
+</video>
+{% endif %}
 </div>
 {% if video_description != '' %}
 <div class="{{ video_description_wrapper_class }}">

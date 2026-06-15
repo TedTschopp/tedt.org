@@ -3,6 +3,9 @@
 
 {%- assign video_provider = __video_field.provider | default: __video_item['video-provider'] | default: 'youtube' | downcase | strip -%}
 {%- assign video_id = __video_field.id | default: __video_field.youtube_id | default: __video_field['youtube-id'] | default: __video_item['video-id'] | default: __video_item.youtube_id | default: __video_item['youtube-id'] | default: '' | strip -%}
+{%- assign video_source = __video_field.url | default: __video_field.src | default: __video_field.source | default: __video_item['video-url'] | default: __video_item['video-src'] | default: '' | strip -%}
+{%- assign video_type = __video_field.type | default: __video_item['video-type'] | default: 'video/mp4' | strip -%}
+{%- assign video_poster = __video_field.poster | default: __video_item['video-poster'] | default: image_URL | default: '' | strip -%}
 {%- assign video_label = __video_field.label | default: __video_item['video-label'] | default: 'Video' | strip -%}
 {%- assign video_title = __video_field.title | default: __video_item['video-title'] | default: __video_item.title | default: 'Video player' | strip -%}
 {%- assign video_description = __video_field.description | default: __video_item['video-description'] | default: '' | strip -%}
@@ -10,5 +13,7 @@
 
 {%- assign video_has_resolved_source = false -%}
 {%- if video_provider == 'youtube' and video_id != '' -%}
+  {%- assign video_has_resolved_source = true -%}
+{%- elsif video_source != '' -%}
   {%- assign video_has_resolved_source = true -%}
 {%- endif -%}
