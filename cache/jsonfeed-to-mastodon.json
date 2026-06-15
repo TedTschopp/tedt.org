@@ -4530,5 +4530,38 @@
       "https://tschopp.net/users/Ted/statuses/116750152042156672"
     ],
     "lastTootTimestamp": 1781465943129
+  },
+  "https://tedt.org/AI-Engineer-Coach/": {
+    "id": "/AI-Engineer-Coach/",
+    "title": "AI Engineer Coach: A VS Code Extension for Measuring How You Work With AI",
+    "summary": "AI Engineer Coach is a VS Code extension that reads local AI coding session logs and turns them into a practical feedback loop: usage patterns, anti-patterns, output, context health, token usage, and cost signals.",
+    "content_text": "AI Engineer Coach is a VS Code extension that reads local AI coding session logs and turns them into a practical feedback loop: usage patterns, anti-patterns, output, context health, token usage, and cost signals. https://tedt.org/AI-Engineer-Coach/",
+    "url": "https://tedt.org/AI-Engineer-Coach/",
+    "image": "https://tedt.org/img/2026-06/ai-engineer-coach-burndown-video-frame.webp",
+    "tags": [
+      "ai-engineer-coach",
+      "vs-code",
+      "github-copilot",
+      "codex",
+      "claude-code",
+      "opencode",
+      "ai-coding",
+      "agentic-engineering",
+      "developer-productivity",
+      "ai-costs",
+      "token-usage",
+      "context-engineering"
+    ],
+    "date_published": "2026-06-15T09:00:00-07:00",
+    "date_modified": "2026-06-15T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116756121342881336"
+    ],
+    "lastTootTimestamp": 1781557027409
   }
 }
