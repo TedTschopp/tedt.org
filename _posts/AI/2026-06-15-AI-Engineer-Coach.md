@@ -30,8 +30,6 @@ seo-description: "Download and install AI Engineer Coach, a VS Code extension th
 categories:
 - AI
 - Computers
-- Programming
-- Productivity
 
 tags:
 - ai-engineer-coach
