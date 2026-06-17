@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-06-16 | TedT.org</title>
+  <title>Daily Report - 2026-06-17 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,146 +52,114 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-06-16</h1>
-      <p class="meta">Generated <time datetime="2026-06-16T09:44:56+00:00">2026-06-16T09:44:56Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-06-17</h1>
+      <p class="meta">Generated <time datetime="2026-06-17T09:23:46+00:00">2026-06-17T09:23:46Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Active day.</strong> A new AI blog post ("AI Engineer Coach" VS Code plugin) was published on June 15, including a VSIX download asset and a video player component update. Mastodon automation is healthy. The Dependabot PR for <code>gh-aw-actions</code> (0.71.5 → 0.79.8) is open and unreviewed. Three P0 issues remain open: Node.js 20→24 migration deadline, 234 pages with missing <code>&lt;img src&gt;</code>, and GitHub Pages artifact over the 1 GB limit. No CI failures detected in the most recent workflow runs.</p>
+      <p><strong>Site pipeline is healthy.</strong> Two manual content commits landed on June 15: a new VS Code plugin blog post and a metadata cleanup on the AI Engineer Coach post. All automated workflows (daily report, enterprise AI refresh, Mastodon sync) are completing on schedule with no failures detected. One Dependabot PR (#198) is open and ready to merge. A growing P2 backlog from the May 2026 audit continues to age without visible active work — the tagging coverage gap (30.5%) is the most blocking item since it underlies several other open issues.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line</h2>
-<p>Active content publishing continues. Automation (Mastodon, daily report, enterprise AI refresh) is running on schedule. One Dependabot PR is pending merge. <strong>Three P0 issues remain unresolved</strong> and should be the top priority before GitHub's Node.js 20 action deprecation deadline hits.</p>
+      <h2>Bottom Line Up Front</h2>
+<p>Site pipeline is green. No workflow failures. Two meaningful content changes by Ted on June 15. One Dependabot PR pending merge. A batch of P2 issues from the May 2026 audit have had no visible progress for over two weeks — the tagging infrastructure gap (#183) is the blocker most worth addressing first since multiple other features depend on it.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Commits — June 14–15, 2026</h3>
-<p><strong>June 15 (content + component work)</strong></p>
+<h3>Manual Commits by TedTschopp (June 14–16)</h3>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/b8e0a0a489ee22299e088ad40929aaeaaded6c94"><code>b8e0a0a</code></a>** — <code>content(AI Engineer Coach): remove unnecessary categories from post metadata</code></li>
-<li>File: <code>_posts/AI/2026-06-15-AI-Engineer-Coach.md</code> — 2 deletions (category cleanup)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/731f39aac272a1c3ed9079908e44126f26331538"><code>731f39a</code></a> — <strong>Add Blog post on VS Code plugin</strong> (2026-06-15 18:44 UTC)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/b8e0a0a489ee22299e088ad40929aaeaaded6c94"><code>b8e0a0a</code></a> — <strong>content(AI Engineer Coach): remove unnecessary categories from post metadata</strong> (2026-06-15 22:56 UTC)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/a66102f3427e6eba8b7fe8e761ee32fd0bb4d804"><code>a66102f</code></a> — <code>chore: remove redundant code blocks from changes section</code> (2026-06-14)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/439f09c0255f18ce83022566012424fac7d946fe"><code>439f09c</code></a> — <code>chore(dependencies): update gem versions in Gemfile.lock</code> (2026-06-14)</li>
 </ul>
+<h3>Automated Commits (github-actions[bot])</h3>
+<p>The following chore commits ran on their expected schedules with no gaps:</p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/731f39aac272a1c3ed9079908e44126f26331538"><code>731f39a</code></a>** — <code>Add Blog post on VS Code plugin</code></li>
-<li>Added <code>_posts/AI/2026-06-15-AI-Engineer-Coach.md</code> (219 lines — full new post)</li>
-<li>Modified <code>_includes/components/video-player.html</code> (+33 / -2) — expanded video embed support</li>
-<li>Modified <code>_includes/utility/resolve-video-variables.html</code> (+6 / -1)</li>
-<li>Modified <code>_layouts/long-article.html</code> and <code>_layouts/post.html</code> (minor layout adjustments)</li>
-<li>Added <code>downloads/ai-engineer-coach-0.1.0.vsix</code> — VS Code extension binary in repo</li>
-<li>Added <code>img/2026-06/ai-engineer-coach-burndown-video-frame.webp</code></li>
-</ul>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/3acb70c5776fbbf141c57694a15eeb0a9645544c"><code>3acb70c</code></a>** — <code>chore: update Mastodon cache/front matter</code> (github-actions[bot])</li>
-</ul>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/47523ccdf29f795454f8b49fcb8ff187f3a6b1fd"><code>47523cc</code></a>** — <code>chore: refresh yesterday in enterprise ai</code> (github-actions[bot])</li>
-</ul>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/093ff61145046814ceace193b9b0640b4ed32ebd"><code>093ff61</code></a>** — <code>chore: refresh daily report</code> (github-actions[bot])</li>
-</ul>
-<p><strong>June 14 (maintenance)</strong></p>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/439f09c0255f18ce83022566012424fac7d946fe"><code>439f09c</code></a>** — <code>chore(dependencies): update gem versions in Gemfile.lock</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/a66102f3427e6eba8b7fe8e761ee32fd0bb4d804"><code>a66102f</code></a>** — <code>chore: remove redundant code blocks from changes section</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/80cebc180a94f338b8cf1322eead3fc456c8845f"><code>80cebc1</code></a>** — <code>chore: update Mastodon cache/front matter</code> (github-actions[bot])</li>
-</ul>
-<hr>
-<h2>Open Pull Requests</h2>
-<p>**<a href="https://github.com/TedTschopp/tedt.org/pull/198">PR #198</a>** — <code>build(deps): bump github/gh-aw-actions from 0.71.5 to 0.79.8</code></p>
-<ul>
-<li>Author: dependabot[bot]</li>
-<li>Created: 2026-06-15</li>
-<li>Labels: <code>dependencies</code>, <code>github_actions</code></li>
-<li>Status: Open, not reviewed</li>
-<li>Spans 8+ minor/patch releases (0.71.5 → 0.79.8). Routine Dependabot bump; no breaking changes evident in release notes. Low risk to merge.</li>
+<li>Daily report refresh: June 12, 13, 14, 15, 16 — <a href="https://github.com/TedTschopp/tedt.org/commit/d0fe0b1d2d033b6647c18e9e3015a2aee1b18124">example</a></li>
+<li>Enterprise AI content refresh: June 11, 12, 13, 14, 15, 16 — <a href="https://github.com/TedTschopp/tedt.org/commit/bd66f846c586fa5e09693388ae6808770aa089c4">example</a></li>
+<li>Mastodon cache/front matter sync: June 14, 15 — <a href="https://github.com/TedTschopp/tedt.org/commit/3acb70c5776fbbf141c57694a15eeb0a9645544c">example</a></li>
 </ul>
 <hr>
 <h2>Workflow Health</h2>
-<p>All recently completed workflow runs show <code>success</code>:</p>
 <ul>
-<li><strong>Feed to Mastodon</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27593969734">#1861</a>) — Scheduled run, 2026-06-16 04:22 UTC — ✅ success</li>
-<li><strong>Feed to Mastodon</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27581858609">#1860</a>) — Push-triggered on June 15 merge — ✅ success</li>
-<li><strong>Daily Report</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27608481521">#48</a>) — In progress at report time (this run)</li>
-</ul>
-<p>No deploy workflow failures detected in the sampled runs. Mastodon sync is healthy and running on schedule (1861 runs to date).</p>
-<hr>
-<h2>Content &amp; Publishing Pipeline</h2>
-<h3>New Post Published: AI Engineer Coach</h3>
-<ul>
-<li><strong>Post:</strong> <code>_posts/AI/2026-06-15-AI-Engineer-Coach.md</code></li>
-<li><strong>Permalink:</strong> <code>/ai-engineer-coach/</code> (inferred from filename; confirm via front matter)</li>
-<li><strong>Assets shipped with post:</strong></li>
-<li><code>downloads/ai-engineer-coach-0.1.0.vsix</code> — Extension binary committed directly to the repo. This increases repo/artifact size. See artifact size risk below.</li>
-<li><code>img/2026-06/ai-engineer-coach-burndown-video-frame.webp</code> — video frame preview image</li>
-<li><strong>Video player component updated:</strong> The post appears to use an embedded video, prompting a non-trivial expansion of <code>_includes/components/video-player.html</code> (+33 lines). Verify the updated component renders correctly on mobile and does not break existing embedded videos in other posts.</li>
-<li><strong>Category cleanup:</strong> A follow-up commit removed unnecessary categories from the post's front matter. This pattern (add then immediately fix) suggests the initial commit was rushed; worth a quick front matter audit of the new post to confirm it is fully clean.</li>
-</ul>
-<h3>Automated Content Refreshes</h3>
-<ul>
-<li>Enterprise AI "yesterday" content refreshed daily by github-actions[bot] (recurring chore, healthy cadence).</li>
-<li>Mastodon front matter sync running as expected.</li>
+<li><strong>Daily Report</strong> — Run #49 (<code>in_progress</code> as of report generation). Previous daily runs are on schedule with no gaps observed. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27678649532">Run link</a></li>
+<li><strong>Feed to Mastodon</strong> — Run #1857 completed with <code>success</code> on 2026-06-15. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27545651352">Run link</a></li>
+<li><strong>Enterprise AI refresh</strong> — Completing daily without gaps since at least June 11.</li>
+<li><strong>No failed workflow runs</strong> detected in recent history.</li>
 </ul>
 <hr>
-<h2>Open Issues — Priority Summary</h2>
-<h3>P0 (Blocking / Hard Deadlines)</h3>
+<h2>Open Pull Requests</h2>
+<p><strong>PR #198</strong> — <a href="https://github.com/TedTschopp/tedt.org/pull/198">build(deps): bump github/gh-aw-actions from 0.71.5 to 0.79.8</a></p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/150">#150</a>** — Update GitHub Actions workflows from Node.js 20 to Node.js 24</li>
-<li>GitHub is deprecating Node.js 20 in Actions runners. Hard deadline.</li>
+<li><strong>Author:</strong> dependabot[bot]</li>
+<li><strong>Created:</strong> 2026-06-15</li>
+<li><strong>Labels:</strong> <code>dependencies</code>, <code>github_actions</code></li>
+<li><strong>Status:</strong> Open, not merged</li>
+<li><strong>Notes:</strong> Spans 8 minor releases (0.71.5 → 0.79.8). No breaking changes indicated. A prior PR bumping to 0.78.3 was closed/superseded by this one. Ready to merge.</li>
 </ul>
+<hr>
+<h2>Content Pipeline Observations</h2>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/151">#151</a>** — Fix <code>&lt;img&gt;</code> elements with missing <code>src</code> attribute in rendered HTML (234 pages)</li>
-<li>Active rendering defect affecting site-wide HTML integrity.</li>
+<li><strong>New blog post</strong> on VS Code plugin landed June 15. <a href="https://github.com/TedTschopp/tedt.org/commit/731f39aac272a1c3ed9079908e44126f26331538">Commit</a> — No <code>mastodon-post-id</code> visible in commit message; verify Mastodon sync has picked it up after the June 15 sync run.</li>
+<li><strong>AI Engineer Coach metadata cleanup</strong> — Stripped extraneous categories from front matter. Good hygiene; no template impact expected. <a href="https://github.com/TedTschopp/tedt.org/commit/b8e0a0a489ee22299e088ad40929aaeaaded6c94">Commit</a></li>
+<li><strong>Gem version update</strong> (<code>Gemfile.lock</code>) on June 14 — No build failures detected from subsequent automated runs, so the update appears clean.</li>
 </ul>
+<hr>
+<h2>Open Issues — P2 Audit Backlog (May 2026)</h2>
+<p>No issues were closed in the past 7 days. Key open items from the May 2026 audit:</p>
+<p><strong>#183</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/183">Standardize tagging model: enforce coverage and build site-wide tag infrastructure</a></p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/152">#152</a>** — Reduce GitHub Pages artifact size below 1 GB limit (currently 1.16 GB)</li>
-<li><strong>The VSIX binary added in today's commit will make this worse.</strong> Current: 1.16 GB vs. 1 GB limit. Committing binary assets to the repo worsens the artifact size problem directly.</li>
+<li>Labels: <code>code-quality</code>, <code>content-discovery</code>, <code>P2</code>, <code>audit-2026-05</code></li>
+<li>Current coverage: ~30.5% of posts have tags</li>
+<li><strong>Blocks:</strong> #186 (category tag clouds), #185 (related posts by tags)</li>
 </ul>
-<h3>P1 (Active Quality Defects)</h3>
+<p><strong>#186</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/186">Enhance category landing pages: related categories, tag clouds, depth indicators</a></p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/153">#153</a>** — Fix YAML Date constant crashes in Ruby test harness (1,009 posts invisible to test suite)</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/154">#154</a>** — Fix 588 broken Monster Manual image paths in rendered HTML</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/155">#155</a>** — Update feed snapshot baselines (5 removed items causing diff failures)</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/156">#156</a>** — Fix 11 broken internal asset links and 2 broken script references</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/157">#157</a>** — Enforce CI quality gates: remove <code>continue-on-error</code> from HTMLProofer and a11y steps</li>
+<li>Depends on #183 for tag cloud component</li>
 </ul>
-<h3>P2 (Strategic Backlog — From May 2026 Audit)</h3>
-<p>A large set of content-discovery issues are tracked under **<a href="https://github.com/TedTschopp/tedt.org/issues/163">#163</a>** (May 2026 audit tracker). None appear to have had active progress since the audit was filed. Key items:</p>
+<p><strong>#185</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/185">Build cross-collection content bridges and related-posts infrastructure</a></p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/183">#183</a>** — Standardize tagging model and build site-wide tag infrastructure (only 30.5% of posts have tags)</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a>** — Drive prompt series adoption (only 5.4% of prompts use <code>series:</code>)</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a>** — Build cross-collection content bridges and related-posts infrastructure</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a>** — Enhance category landing pages (tag clouds, related categories, depth indicators)</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/171">#171</a>** — Add front matter validation (required fields, category slugs, date format)</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/182">#182</a>** — Create slide gallery with topic filtering</li>
+<li>No <code>related:</code> field used across any posts currently</li>
+</ul>
+<p><strong>#184</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/184">Drive prompt series adoption: audit and populate series metadata</a></p>
+<ul>
+<li>Only 3 of 56 prompts (5.4%) have <code>series:</code> metadata</li>
+</ul>
+<p><strong>#182</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/182">Create slide gallery with topic filtering and deck browser</a></p>
+<ul>
+<li>9 slide decks exist with no browsable gallery</li>
+</ul>
+<p><strong>#181</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/181">Unify RPG/fantasy content schema and build SEO landing pages</a></p>
+<ul>
+<li>699 Gamma World posts (69% of site) with fragmented schema</li>
 </ul>
 <hr>
 <h2>Risks and Blockers</h2>
-<p><strong>Risk 1 — GitHub Pages Artifact Size (Active / Worsening)</strong> The artifact is already at 1.16 GB against a 1 GB limit (issue #152). The newly committed <code>downloads/ai-engineer-coach-0.1.0.vsix</code> binary will increase this further. Binary assets should not be committed to the main repo tree; consider GitHub Releases or an external CDN for VSIX distribution. This is the most immediately actionable risk from today's commits.</p>
-<p><strong>Risk 2 — Node.js 20 Actions Deprecation (Hard Deadline)</strong> Issue #150 is open and unassigned. The deprecation of Node.js 20 in GitHub Actions runners has a hard deadline. No progress visible in recent commits.</p>
-<p><strong>Risk 3 — 234 Pages with Missing <code>&lt;img src&gt;</code> (Rendering Defect)</strong> Issue #151 — 234 pages rendered with empty or missing <code>src</code> attributes. Video player component changes today (+33 lines to <code>video-player.html</code>) could introduce or mask similar issues in the new post. Verify rendered output.</p>
-<p><strong>Risk 4 — CI Quality Gates Soft-Failing</strong> Issue #157 — HTMLProofer and a11y checks use <code>continue-on-error</code>. Real failures in the new post's HTML will not block CI.</p>
+<p><strong>Risk 1 — Dependabot PR aging (Low)</strong> PR #198 for <code>gh-aw-actions</code> has been open since June 15. Low risk but should not sit. Merge when next available.</p>
+<p><strong>Risk 2 — P2 backlog aging (Medium)</strong> 6+ open issues from May 2026 audit. No closures this week. The issues are well-specified with acceptance criteria; the gap is prioritization and start. The longer they sit, the more they compound (e.g., tag coverage means every new post published without tags is additional remediation debt).</p>
+<p><strong>Risk 3 — Tagging coverage gap (Medium)</strong> At 30.5% tag coverage, automated tag-based features (clouds, filters, related-post inference) cannot function reliably. This is the dependency root for at least three other P2 issues. Fixing this first has compounding returns.</p>
+<p><strong>Risk 4 — VS Code post Mastodon sync (Low, verify)</strong> New post committed June 15. The Mastodon sync ran June 15 at 12:17 UTC, which may predate or postdate the commit (18:44 UTC). [ASSUMPTION] The next scheduled Mastodon run will pick up the post; verify <code>mastodon-post-id</code> is populated in the post's front matter after next sync.</p>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Immediate:</strong> Remove <code>downloads/ai-engineer-coach-0.1.0.vsix</code> from the main tree and host via GitHub Releases or an external link. This directly addresses the artifact size blocker (#152) worsening.</li>
-<li><strong>This week (P0):</strong> Begin Node.js 20→24 Actions migration (#150). Start with the simplest workflow and confirm no regressions before rolling to deploy.</li>
-<li><strong>This week (P0):</strong> Diagnose the <code>&lt;img src&gt;</code> issue (#151). Determine if it is a template defect or data defect, then fix the root cause — do not suppress HTMLProofer.</li>
-<li><strong>Short term:</strong> Merge Dependabot PR #198 (gh-aw-actions bump). It is low-risk and keeps Actions tooling current.</li>
-<li><strong>Verify:</strong> Review the updated <code>video-player.html</code> (+33 lines) on at least one existing video post and the new AI Engineer Coach post to confirm no rendering regressions.</li>
-<li><strong>Process:</strong> Establish a policy that binary files (VSIX, executables, large media) must go through GitHub Releases or external storage, not the repo tree, to keep artifact size under control.</li>
+<li><strong>Merge PR #198</strong> — <code>gh-aw-actions</code> bump is safe; no blockers visible.</li>
+<li><strong>Start issue #183</strong> — Tagging model standardization. Begin with Phase 1 (tag archive pages + <code>tags: null</code>/<code>tags: []</code> cleanup). This unblocks at least three other P2 issues.</li>
+<li><strong>Verify VS Code post Mastodon sync</strong> — Check that the June 15 blog post now has a <code>mastodon-post-id</code> in its front matter; if not, trigger a manual sync pass.</li>
+<li><strong>Consider priority ordering the P2 backlog</strong> — Sequence: #183 → #186 → #185 → #184. Issues #182 and #181 are more independent and can run in parallel.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li><strong>Commits:</strong> Queried via GitHub API, most recent 20 commits on <code>main</code>. Full diff for <code>731f39a</code> and <code>b8e0a0a</code> retrieved.</li>
-<li><strong>Pull Requests:</strong> Open PRs listed via GitHub API. Output truncated at API limit; PR #198 is the only open PR confirmed from the first page.</li>
-<li><strong>Issues:</strong> Open issues listed via GitHub API (most-recently-updated first). Sampled top 5 most recently updated. Full tracker #163 issue body retrieved to enumerate P0/P1/P2 items.</li>
-<li><strong>Workflow Runs:</strong> Queried via GitHub Actions API; last 10 completed runs sampled. <code>Daily Report</code> run #48 was <code>in_progress</code> at the time of this report (this run). <code>Feed to Mastodon</code> runs #1860 and #1861 both <code>success</code>.</li>
-<li><strong>Data not available / limitations:</strong> Deploy workflow status not individually sampled (would require reading large paginated output). HTMLProofer run results not directly inspected — risk observations are inferred from the open issue backlog. Exact artifact size for today's build not confirmed — estimate is based on the open issue stating 1.16 GB before this commit.</li>
-<li><strong>[ASSUMPTION]</strong> The <code>downloads/ai-engineer-coach-0.1.0.vsix</code> file is stored in the main repo tree (confirmed by commit diff listing it as <code>added</code>). Actual byte size not retrieved.</li>
-<li><strong>[ASSUMPTION]</strong> No deploy workflow failures occurred in the last 24 hours — this is inferred from the absence of failure entries in the sampled workflow list, not from an exhaustive audit of all 7,549 historical runs.</li>
-<li><strong>Sources:</strong> <a href="https://github.com/TedTschopp/tedt.org">Repository</a> · <a href="https://github.com/TedTschopp/tedt.org/commit/731f39aac272a1c3ed9079908e44126f26331538">Commit 731f39a</a> · <a href="https://github.com/TedTschopp/tedt.org/commit/b8e0a0a489ee22299e088ad40929aaeaaded6c94">Commit b8e0a0a</a> · <a href="https://github.com/TedTschopp/tedt.org/pull/198">PR #198</a> · <a href="https://github.com/TedTschopp/tedt.org/issues/163">Issue #163 (tracker)</a> · <a href="https://github.com/TedTschopp/tedt.org/issues/152">Issue #152 (artifact size)</a> · <a href="https://github.com/TedTschopp/tedt.org/issues/150">Issue #150 (Node 20)</a> · <a href="https://github.com/TedTschopp/tedt.org/issues/151">Issue #151 (img src)</a> · <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27593969734">Mastodon run #1861</a></li>
+<li><strong>Commits:</strong> Retrieved via GitHub MCP <code>list_commits</code> for <code>TedTschopp/tedt.org</code>, 20 most recent as of 2026-06-17T09:18Z.</li>
+<li><strong>Issues:</strong> Retrieved via GitHub MCP <code>list_issues</code> (open, up to 20). No issues closed since June 10 per a separate query.</li>
+<li><strong>Pull Requests:</strong> Retrieved via GitHub MCP <code>list_pull_requests</code> (open and recently closed).</li>
+<li><strong>Workflow runs:</strong> Retrieved via GitHub Actions MCP <code>list_workflow_runs</code>. Current Daily Report run (#49) was <code>in_progress</code> at time of data collection. Completed runs sampled from the response included Feed to Mastodon run #1857 (success, June 15).</li>
+<li><strong>Workflow failure check:</strong> No explicit failures were found in the sampled workflow run data. Full run history (7,507+ total runs) was not exhaustively scanned — only the first page (most recent) was reviewed.</li>
+<li><strong>Mastodon sync timing for VS Code post:</strong> [ASSUMPTION] The post was committed at 18:44 UTC on June 15; the Mastodon sync run on that date started at 12:17 UTC. The next scheduled sync should pick it up. Not verified directly.</li>
+<li><strong>Issue count and labels:</strong> Full issue list was sampled; exact total open issue count not confirmed but at least 6 P2 audit issues visible.</li>
+<li><strong>Build health:</strong> No direct <code>jekyll build</code> was run in this workflow. Build health is inferred from the absence of failed automated workflow runs in recent history. [ASSUMPTION] Gem update on June 14 did not break the build based on subsequent successful automated chore commits.</li>
+<li><strong>Diff content for commits:</strong> Commit diffs were not retrieved (<code>include_diff: false</code>). Specific file changes within commits are not reported.</li>
 </ul>
     </section>
     <footer>
