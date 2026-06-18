@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-06-17 | TedT.org</title>
+  <title>Daily Report - 2026-06-18 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,114 +52,146 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-06-17</h1>
-      <p class="meta">Generated <time datetime="2026-06-17T09:23:46+00:00">2026-06-17T09:23:46Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-06-18</h1>
+      <p class="meta">Generated <time datetime="2026-06-18T09:05:10+00:00">2026-06-18T09:05:10Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Site pipeline is healthy.</strong> Two manual content commits landed on June 15: a new VS Code plugin blog post and a metadata cleanup on the AI Engineer Coach post. All automated workflows (daily report, enterprise AI refresh, Mastodon sync) are completing on schedule with no failures detected. One Dependabot PR (#198) is open and ready to merge. A growing P2 backlog from the May 2026 audit continues to age without visible active work — the tagging coverage gap (30.5%) is the most blocking item since it underlies several other open issues.</p>
+      <p>Site is live and healthy. Last deploy (run #894) succeeded on 2026-06-17. All scheduled workflows — Mastodon feed, Daily Report, Yesterday in Enterprise AI — are running clean. Two manual content commits landed on June 15 (new VS Code plugin blog post; AI Engineer Coach category cleanup). Three Dependabot PRs are aging unmerged, including one (<code>ffi</code> 1.16.3 → 1.17.4) that directly conflicts with ADR 0009. A large batch of 15+ P2/P3 issues from the May 2026 site audit remains untouched. No blockers to normal publishing operations today.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line Up Front</h2>
-<p>Site pipeline is green. No workflow failures. Two meaningful content changes by Ted on June 15. One Dependabot PR pending merge. A batch of P2 issues from the May 2026 audit have had no visible progress for over two weeks — the tagging infrastructure gap (#183) is the blocker most worth addressing first since multiple other features depend on it.</p>
+      <h2>Bottom Line</h2>
+<p>Site is healthy. Deploy pipeline is green. Mastodon sync is running. No incidents in the last 48 hours. The main maintenance risk is an aging Dependabot PR that conflicts with ADR 0009 (<code>ffi</code> pin), plus a growing backlog of May-2026 audit issues.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Manual Commits by TedTschopp (June 14–16)</h3>
+<h3>Human Commits (June 14–15)</h3>
 <ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/731f39aac272a1c3ed9079908e44126f26331538"><code>731f39a</code></a> — <strong>Add Blog post on VS Code plugin</strong> (2026-06-15 18:44 UTC)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/b8e0a0a489ee22299e088ad40929aaeaaded6c94"><code>b8e0a0a</code></a> — <strong>content(AI Engineer Coach): remove unnecessary categories from post metadata</strong> (2026-06-15 22:56 UTC)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/a66102f3427e6eba8b7fe8e761ee32fd0bb4d804"><code>a66102f</code></a> — <code>chore: remove redundant code blocks from changes section</code> (2026-06-14)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/439f09c0255f18ce83022566012424fac7d946fe"><code>439f09c</code></a> — <code>chore(dependencies): update gem versions in Gemfile.lock</code> (2026-06-14)</li>
+<li><strong>2026-06-15</strong> — <code>content(AI Engineer Coach): remove unnecessary categories from post metadata</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/b8e0a0a489ee22299e088ad40929aaeaaded6c94">commit b8e0a0a</a>) — TedTschopp</li>
+<li><strong>2026-06-15</strong> — <code>Add Blog post on VS Code plugin</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/731f39aac272a1c3ed9079908e44126f26331538">commit 731f39a</a>) — TedTschopp</li>
+<li><strong>2026-06-15</strong> — <code>chore: update Mastodon cache/front matter</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/3acb70c5776fbbf141c57694a15eeb0a9645544c">commit 3acb70c</a>) — automated Mastodon sync</li>
+<li><strong>2026-06-14</strong> — <code>chore(dependencies): update gem versions in Gemfile.lock</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/439f09c0255f18ce83022566012424fac7d946fe">commit 439f09c</a>) — TedTschopp</li>
+<li><strong>2026-06-14</strong> — <code>chore: remove redundant code blocks from changes section</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/a66102f3427e6eba8b7fe8e761ee32fd0bb4d804">commit a66102f</a>) — TedTschopp</li>
 </ul>
-<h3>Automated Commits (github-actions[bot])</h3>
-<p>The following chore commits ran on their expected schedules with no gaps:</p>
+<h3>Automated Commits (June 14–17)</h3>
+<p>Routine scheduled writes from bots:</p>
 <ul>
-<li>Daily report refresh: June 12, 13, 14, 15, 16 — <a href="https://github.com/TedTschopp/tedt.org/commit/d0fe0b1d2d033b6647c18e9e3015a2aee1b18124">example</a></li>
-<li>Enterprise AI content refresh: June 11, 12, 13, 14, 15, 16 — <a href="https://github.com/TedTschopp/tedt.org/commit/bd66f846c586fa5e09693388ae6808770aa089c4">example</a></li>
-<li>Mastodon cache/front matter sync: June 14, 15 — <a href="https://github.com/TedTschopp/tedt.org/commit/3acb70c5776fbbf141c57694a15eeb0a9645544c">example</a></li>
+<li><code>chore: refresh yesterday in enterprise ai</code> — ran 2026-06-17T16:42, 2026-06-16T17:53, 2026-06-15T17:59, 2026-06-14T15:04, 2026-06-13T15:06, 2026-06-12T16:07</li>
+<li><code>chore: refresh daily report</code> — ran 2026-06-17T09:23, 2026-06-16T09:44, 2026-06-15T10:48, 2026-06-14T08:35</li>
 </ul>
+<p>All automation running on expected cadence.</p>
 <hr>
 <h2>Workflow Health</h2>
+<h3>Site Quality + Deploy</h3>
 <ul>
-<li><strong>Daily Report</strong> — Run #49 (<code>in_progress</code> as of report generation). Previous daily runs are on schedule with no gaps observed. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27678649532">Run link</a></li>
-<li><strong>Feed to Mastodon</strong> — Run #1857 completed with <code>success</code> on 2026-06-15. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/27545651352">Run link</a></li>
-<li><strong>Enterprise AI refresh</strong> — Completing daily without gaps since at least June 11.</li>
-<li><strong>No failed workflow runs</strong> detected in recent history.</li>
+<li><strong>Run #894</strong> — ✅ success — 2026-06-17T16:42–17:03 (<a href="https://github.com/TedTschopp/tedt.org/actions/runs/27704849837">view run</a>)</li>
+<li><strong>Run #893</strong> — ✅ success — 2026-06-17T09:23–09:33 (<a href="https://github.com/TedTschopp/tedt.org/actions/runs/27679056314">view run</a>)</li>
+<li>Total successful deploys to date: <strong>894</strong></li>
+</ul>
+<h3>Feed to Mastodon</h3>
+<ul>
+<li><strong>Run #1869</strong> — ✅ success — 2026-06-18T04:08–04:10 (<a href="https://github.com/TedTschopp/tedt.org/actions/runs/27736070563">view run</a>)</li>
+<li><strong>Run #1868</strong> — ✅ success — 2026-06-17T20:13–20:14 (<a href="https://github.com/TedTschopp/tedt.org/actions/runs/27716813153">view run</a>)</li>
+</ul>
+<h3>Daily Report</h3>
+<ul>
+<li><strong>Run #50</strong> — 🔄 in progress (current run) — 2026-06-18T08:58 (<a href="https://github.com/TedTschopp/tedt.org/actions/runs/27748428972">view run</a>)</li>
+</ul>
+<h3>Other Active Workflows (13 total)</h3>
+<ul>
+<li>CodeQL, Copilot coding agent, Dependabot Updates — active, no failures observed</li>
+<li>Squad Heartbeat (Ralph), Squad Issue Assign, Squad Triage, Sync Squad Labels — active (added 2026-05-29)</li>
+<li>DUSD Lunch Menu Calendar, Purge Actions Caches — scheduled, no failure data available for this report</li>
 </ul>
 <hr>
 <h2>Open Pull Requests</h2>
-<p><strong>PR #198</strong> — <a href="https://github.com/TedTschopp/tedt.org/pull/198">build(deps): bump github/gh-aw-actions from 0.71.5 to 0.79.8</a></p>
+<p>All open PRs are Dependabot dependency bumps. No human-authored PRs are open.</p>
+<h3>PR #198 — <code>build(deps): bump github/gh-aw-actions from 0.71.5 to 0.79.8</code></h3>
 <ul>
-<li><strong>Author:</strong> dependabot[bot]</li>
-<li><strong>Created:</strong> 2026-06-15</li>
-<li><strong>Labels:</strong> <code>dependencies</code>, <code>github_actions</code></li>
+<li><strong>Opened:</strong> 2026-06-15</li>
+<li><strong>Labels:</strong> dependencies, github_actions</li>
 <li><strong>Status:</strong> Open, not merged</li>
-<li><strong>Notes:</strong> Spans 8 minor releases (0.71.5 → 0.79.8). No breaking changes indicated. A prior PR bumping to 0.78.3 was closed/superseded by this one. Ready to merge.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/198">View PR #198</a></li>
+<li>Covers 8 minor/patch releases (v0.71.5 → v0.79.8). No blocking concern identified.</li>
+</ul>
+<h3>PR #196 — <code>build(deps): bump actions/cache from 4 to 5</code></h3>
+<ul>
+<li><strong>Opened:</strong> 2026-06-01 (17 days old)</li>
+<li><strong>Labels:</strong> dependencies, github_actions</li>
+<li><strong>Status:</strong> Open, not merged</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/196">View PR #196</a></li>
+<li><strong>Note:</strong> <code>actions/cache@v5</code> requires Node.js 24 runtime and runner version ≥ 2.327.1. Verify runner meets minimum version before merging.</li>
+</ul>
+<h3>PR #188 — <code>build(deps): bump ffi from 1.16.3 to 1.17.4</code></h3>
+<ul>
+<li><strong>Opened:</strong> Prior to June 14 (updated 2026-06-14)</li>
+<li><strong>Labels:</strong> dependencies, ruby</li>
+<li><strong>Status:</strong> Open, not merged</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/188">View PR #188</a></li>
+<li>⚠️ <strong>ADR 0009 Conflict:</strong> ADR 0009 explicitly pins <code>ffi</code> at <code>1.16.3</code> for build stability. Merging this PR would override that pin. Requires an explicit ADR 0009 review before merging.</li>
 </ul>
 <hr>
-<h2>Content Pipeline Observations</h2>
+<h2>Open Issues Backlog</h2>
+<p>The bulk of open issues originate from the May 2026 site audit (<code>audit-2026-05</code> label). No issues appear to have been closed since the audit.</p>
+<h3>Priority 2 (P2) — Selected Issues</h3>
 <ul>
-<li><strong>New blog post</strong> on VS Code plugin landed June 15. <a href="https://github.com/TedTschopp/tedt.org/commit/731f39aac272a1c3ed9079908e44126f26331538">Commit</a> — No <code>mastodon-post-id</code> visible in commit message; verify Mastodon sync has picked it up after the June 15 sync run.</li>
-<li><strong>AI Engineer Coach metadata cleanup</strong> — Stripped extraneous categories from front matter. Good hygiene; no template impact expected. <a href="https://github.com/TedTschopp/tedt.org/commit/b8e0a0a489ee22299e088ad40929aaeaaded6c94">Commit</a></li>
-<li><strong>Gem version update</strong> (<code>Gemfile.lock</code>) on June 14 — No build failures detected from subsequent automated runs, so the update appears clean.</li>
+<li><strong>#186</strong> — [P2] Enhance category landing pages: related categories, tag clouds, depth indicators</li>
+<li><strong>#185</strong> — [P2] Build cross-collection content bridges and related-posts infrastructure</li>
+<li><strong>#184</strong> — [P2] Drive prompt series adoption: audit and populate series metadata</li>
+<li><strong>#183</strong> — [P2] Standardize tagging model: enforce coverage and build site-wide tag infrastructure</li>
+<li><strong>#182</strong> — [P2] Create slide gallery with topic filtering and deck browser</li>
+<li><strong>#181</strong> — [P2] Unify RPG/fantasy content schema and build SEO landing pages</li>
+<li><strong>#180</strong> — [P2] Add content contributor guide to README</li>
+<li><strong>#179</strong> — [P2] Curate quotes with thematic tags and personal context</li>
+<li><strong>#178</strong> — [P2] SEO and discoverability: strengthen excerpts, descriptions, and create pillar hub pages</li>
+<li><strong>#175</strong> — [P2] Add Service Worker offline fallback for hero media cache misses</li>
+<li><strong>#174</strong> — [P2] Docs: Document COPILOT_ASSIGN_TOKEN secret requirements</li>
+<li><strong>#173</strong> — [P2] Privacy: Implement cookie consent banner before analytics load</li>
+</ul>
+<h3>Priority 3 (P3) Issues</h3>
+<ul>
+<li><strong>#177</strong> — [P3] Document and organize <code>_code/</code> utility scripts</li>
+<li><strong>#176</strong> — [P3] Standardize Python script entry points with <code>main()</code> guards</li>
 </ul>
 <hr>
-<h2>Open Issues — P2 Audit Backlog (May 2026)</h2>
-<p>No issues were closed in the past 7 days. Key open items from the May 2026 audit:</p>
-<p><strong>#183</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/183">Standardize tagging model: enforce coverage and build site-wide tag infrastructure</a></p>
+<h2>Risks and Observations</h2>
+<h3>⚠️ Risk: ffi Dependabot PR conflicts with ADR 0009</h3>
+<p>PR #188 proposes bumping <code>ffi</code> from 1.16.3 to 1.17.4. ADR 0009 explicitly pins this version for stability until the Ruby baseline is uplifted. The PR has been open and updated recently, suggesting automated Dependabot rebasing is occurring. Do not auto-merge without reviewing ADR 0009.</p>
+<h3>⚠️ Risk: Cookie consent / analytics compliance gap</h3>
+<p>Issue #173 documents that GA4 and Microsoft Clarity are both active with session replay enabled, but there is no consent banner. The <code>_config.yml</code> itself warns: *"If your deployment requires prior consent for analytics, disable <code>site.analytics.enabled</code> until a consent flow exists."* This is an unresolved compliance risk.</p>
+<h3>⚠️ Observation: Audit backlog has no recent progress</h3>
+<p>15+ P2/P3 issues opened 2026-05-29 show no updates. The most impactful near-term ones based on site architecture:</p>
 <ul>
-<li>Labels: <code>code-quality</code>, <code>content-discovery</code>, <code>P2</code>, <code>audit-2026-05</code></li>
-<li>Current coverage: ~30.5% of posts have tags</li>
-<li><strong>Blocks:</strong> #186 (category tag clouds), #185 (related posts by tags)</li>
+<li><strong>#175</strong> (service worker offline fallback) — low effort, described as "high UX impact"</li>
+<li><strong>#174</strong> (COPILOT_ASSIGN_TOKEN docs) — Squad workflows are now active; undocumented token creates a silent failure path</li>
+<li><strong>#173</strong> (cookie consent) — compliance risk</li>
 </ul>
-<p><strong>#186</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/186">Enhance category landing pages: related categories, tag clouds, depth indicators</a></p>
-<ul>
-<li>Depends on #183 for tag cloud component</li>
-</ul>
-<p><strong>#185</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/185">Build cross-collection content bridges and related-posts infrastructure</a></p>
-<ul>
-<li>No <code>related:</code> field used across any posts currently</li>
-</ul>
-<p><strong>#184</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/184">Drive prompt series adoption: audit and populate series metadata</a></p>
-<ul>
-<li>Only 3 of 56 prompts (5.4%) have <code>series:</code> metadata</li>
-</ul>
-<p><strong>#182</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/182">Create slide gallery with topic filtering and deck browser</a></p>
-<ul>
-<li>9 slide decks exist with no browsable gallery</li>
-</ul>
-<p><strong>#181</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/181">Unify RPG/fantasy content schema and build SEO landing pages</a></p>
-<ul>
-<li>699 Gamma World posts (69% of site) with fragmented schema</li>
-</ul>
-<hr>
-<h2>Risks and Blockers</h2>
-<p><strong>Risk 1 — Dependabot PR aging (Low)</strong> PR #198 for <code>gh-aw-actions</code> has been open since June 15. Low risk but should not sit. Merge when next available.</p>
-<p><strong>Risk 2 — P2 backlog aging (Medium)</strong> 6+ open issues from May 2026 audit. No closures this week. The issues are well-specified with acceptance criteria; the gap is prioritization and start. The longer they sit, the more they compound (e.g., tag coverage means every new post published without tags is additional remediation debt).</p>
-<p><strong>Risk 3 — Tagging coverage gap (Medium)</strong> At 30.5% tag coverage, automated tag-based features (clouds, filters, related-post inference) cannot function reliably. This is the dependency root for at least three other P2 issues. Fixing this first has compounding returns.</p>
-<p><strong>Risk 4 — VS Code post Mastodon sync (Low, verify)</strong> New post committed June 15. The Mastodon sync ran June 15 at 12:17 UTC, which may predate or postdate the commit (18:44 UTC). [ASSUMPTION] The next scheduled Mastodon run will pick up the post; verify <code>mastodon-post-id</code> is populated in the post's front matter after next sync.</p>
+<h3>i️ Observation: No deploy yet today (2026-06-18)</h3>
+<p>The last deploy (#894) ran on June 17. A new deploy will be triggered once the current Daily Report commit lands (expected shortly after this report publishes).</p>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #198</strong> — <code>gh-aw-actions</code> bump is safe; no blockers visible.</li>
-<li><strong>Start issue #183</strong> — Tagging model standardization. Begin with Phase 1 (tag archive pages + <code>tags: null</code>/<code>tags: []</code> cleanup). This unblocks at least three other P2 issues.</li>
-<li><strong>Verify VS Code post Mastodon sync</strong> — Check that the June 15 blog post now has a <code>mastodon-post-id</code> in its front matter; if not, trigger a manual sync pass.</li>
-<li><strong>Consider priority ordering the P2 backlog</strong> — Sequence: #183 → #186 → #185 → #184. Issues #182 and #181 are more independent and can run in parallel.</li>
+<li><strong>Review PR #188</strong> (<code>ffi</code> bump) before Dependabot rebases further. Either close with a comment referencing ADR 0009, or update ADR 0009 if Ruby baseline is ready for an uplift.</li>
+<li><strong>Merge PR #198</strong> (<code>gh-aw-actions</code> bump) — appears low risk with no breaking changes flagged.</li>
+<li><strong>Verify runner version for PR #196</strong> (<code>actions/cache</code> v4→v5) — confirm runner ≥ 2.327.1 before merging.</li>
+<li><strong>Prioritize issue #175</strong> (service worker offline fallback) — small scope, high UX value, self-contained.</li>
+<li><strong>Address issue #174</strong> (COPILOT_ASSIGN_TOKEN docs) — Squad workflows are now active and the inconsistent fallback behavior between <code>squad-heartbeat.yml</code> and <code>squad-issue-assign.yml</code> is an active risk.</li>
+<li><strong>Assess issue #173</strong> (cookie consent) — or at minimum disable <code>session_replay: true</code> as the partial mitigation the issue itself recommends.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li><strong>Commits:</strong> Retrieved via GitHub MCP <code>list_commits</code> for <code>TedTschopp/tedt.org</code>, 20 most recent as of 2026-06-17T09:18Z.</li>
-<li><strong>Issues:</strong> Retrieved via GitHub MCP <code>list_issues</code> (open, up to 20). No issues closed since June 10 per a separate query.</li>
-<li><strong>Pull Requests:</strong> Retrieved via GitHub MCP <code>list_pull_requests</code> (open and recently closed).</li>
-<li><strong>Workflow runs:</strong> Retrieved via GitHub Actions MCP <code>list_workflow_runs</code>. Current Daily Report run (#49) was <code>in_progress</code> at time of data collection. Completed runs sampled from the response included Feed to Mastodon run #1857 (success, June 15).</li>
-<li><strong>Workflow failure check:</strong> No explicit failures were found in the sampled workflow run data. Full run history (7,507+ total runs) was not exhaustively scanned — only the first page (most recent) was reviewed.</li>
-<li><strong>Mastodon sync timing for VS Code post:</strong> [ASSUMPTION] The post was committed at 18:44 UTC on June 15; the Mastodon sync run on that date started at 12:17 UTC. The next scheduled sync should pick it up. Not verified directly.</li>
-<li><strong>Issue count and labels:</strong> Full issue list was sampled; exact total open issue count not confirmed but at least 6 P2 audit issues visible.</li>
-<li><strong>Build health:</strong> No direct <code>jekyll build</code> was run in this workflow. Build health is inferred from the absence of failed automated workflow runs in recent history. [ASSUMPTION] Gem update on June 14 did not break the build based on subsequent successful automated chore commits.</li>
-<li><strong>Diff content for commits:</strong> Commit diffs were not retrieved (<code>include_diff: false</code>). Specific file changes within commits are not reported.</li>
+<li><strong>Commits:</strong> Read from <code>TedTschopp/tedt.org</code> main branch, latest 20 commits.</li>
+<li><strong>Pull Requests:</strong> Read via GitHub MCP, open PRs only, page 1 (10 results).</li>
+<li><strong>Issues:</strong> Read via GitHub MCP, open issues only, page 1 (15 results). All 15 results returned were from the <code>audit-2026-05</code> batch (May 2026). Older issues not reviewed in this report.</li>
+<li><strong>Workflow Runs:</strong> Read via GitHub MCP list_workflow_runs (all) and filtered by <code>deploy.yml</code>. Most recent 10 deploy runs reviewed.</li>
+<li><strong>Workflows:</strong> All 13 active workflows enumerated. Individual run history not checked for Squad workflows, CodeQL, DUSD Lunch Menu, or Purge Caches beyond what appeared in the all-runs list.</li>
+<li><strong>[ASSUMPTION]:</strong> No deploy failures have occurred since the deploy workflow was last observed passing. Absence of failure is inferred from the completed/success conclusions on the two most recently returned deploy runs. A full failure-only run query was not performed.</li>
+<li><strong>[ASSUMPTION]:</strong> Issue count is a lower bound. The GitHub MCP returned 15 open issues on page 1; the full backlog size is not enumerated here.</li>
+<li><strong>[ASSUMPTION]:</strong> The <code>ffi</code> ADR 0009 constraint is still intended to be active, based on the documented pin in the repository instructions. No evidence was found that ADR 0009 was rescinded.</li>
+<li><strong>Data not available:</strong> HTML Proofer output, build time metrics, memory probe output, external link error counts. These require a live build run and were not accessible via read-only GitHub API tools.</li>
+<li><strong>Current workflow run:</strong> This Daily Report is run #50 (in progress as of report generation time).</li>
 </ul>
     </section>
     <footer>
