@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-06-22 | TedT.org</title>
+  <title>Daily Report - 2026-06-23 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,138 +52,163 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-06-22</h1>
-      <p class="meta">Generated <time datetime="2026-06-22T10:25:37+00:00">2026-06-22T10:25:37Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-06-23</h1>
+      <p class="meta">Generated <time datetime="2026-06-23T08:08:52+00:00">2026-06-23T08:08:52Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Bottom line:</strong> CI is healthy, Dependabot opened 3 PRs today including a security patch for nokogiri. Ted added a new Märchen Engine RPG design document directly to the <code>RPG/</code> directory (not a Jekyll post). Automated chores (daily report, Enterprise AI refresh) are running on schedule. A large backlog of P2 discovery and SEO issues from the May 2026 audit remains untouched. The nokogiri security PR (#199) should be reviewed and merged promptly.</p>
+      <p><strong>Site is healthy.</strong> Latest deploy succeeded (run #909, ~9 min build). All automated workflows (Mastodon feed, daily report, enterprise AI refresh) are running on schedule. Active content work: The σ System RPG document added to The Märchin Engine project. Backlog concern: 20+ open P2 issues from the May 2026 audit remain unaddressed, including a P2 privacy compliance gap (cookie consent for GA4 + Clarity). Three Dependabot PRs are pending merge, two opened yesterday.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Recent Repository Activity</h2>
-<h3>Commits — Last 7 Days</h3>
-<p><strong>June 21, 2026</strong></p>
-<ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/238bba3586865c3d6dc19ba66a61c49f12a7b2d2"><code>238bba3</code></a> — <strong>Create The-σ-System.html</strong> (Ted Tschopp, 17:24 UTC)</li>
-<li>Added <code>RPG/The-Märchin-Engine/The-σ-System.html</code> — 186 lines of new RPG system design content</li>
-<li>Note: this is a raw HTML file placed in a <code>RPG/</code> directory, not a Jekyll <code>_posts/</code> entry. It will not appear in feeds, the category carousel, or Mastodon syndication unless later converted to a post.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/dd27da1221a77bde42f3e62171f64b8e53b64b29"><code>dd27da1</code></a> — chore: refresh yesterday in enterprise ai (github-actions[bot], 15:14 UTC)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/3b928004285e0f720e1429cae47453fe7cc783a9"><code>3b92800</code></a> — chore: refresh daily report (github-actions[bot], 08:49 UTC)</li>
-</ul>
-<p><strong>June 20, 2026</strong></p>
-<ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/2b3dcc4f0ce38cf15f4eec1f734014bf1f77a4b8"><code>2b3dcc4</code></a> — chore: refresh yesterday in enterprise ai (github-actions[bot])</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/ca25fc925cd7688de7932f49c5bf13cc3d7e3095"><code>ca25fc9</code></a> — chore: refresh daily report (github-actions[bot])</li>
-</ul>
-<p><strong>June 15–19, 2026</strong></p>
-<ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/b8e0a0a489ee22299e088ad40929aaeaaded6c94"><code>b8e0a0a</code></a> — content(AI Engineer Coach): remove unnecessary categories from post metadata (Ted Tschopp)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/3acb70c5776fbbf141c57694a15eeb0a9645544c"><code>3acb70c</code></a> — chore: update Mastodon cache/front matter (github-actions[bot] on behalf of Ted)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/731f39aac272a1c3ed9079908e44126f26331538"><code>731f39a</code></a> — Add Blog post on VS Code plugin (Ted Tschopp, June 15)</li>
-</ul>
+      <h2>Bottom Line</h2>
+<p>Site is green. Deploy pipeline is healthy. The notable work in the past 48 hours is a new RPG document for The Märchin Engine project (The σ System). The May 2026 audit backlog (20+ open P2/P3 issues) is aging without progress — the highest-priority items to address are cookie consent compliance (#173) and the pending Dependabot PRs.</p>
 <hr>
-<h2>Open Pull Requests</h2>
-<p><strong>3 PRs opened today (June 22) by Dependabot:</strong></p>
-<p><strong>PR #199 — ⚠️ Security: bump nokogiri from 1.19.3 to 1.19.4</strong></p>
+<h2>Recent Repository Activity</h2>
+<h3>Commits (last 48 hours)</h3>
+<p><strong>2026-06-22 18:42 UTC — Ted Tschopp</strong></p>
 <ul>
-<li>URL: https://github.com/TedTschopp/tedt.org/pull/199</li>
-<li>Labels: dependencies, ruby</li>
-<li>Fixes 8 CVEs (all rated Low–Medium): invalid memory reads, use-after-free scenarios in XPathContext, <code>Attr#value=</code>, <code>Document#root=</code>, <code>Document#encoding=</code>; NPE on uninitialized nodes; JRuby SSRF/XXE schema bypass (CVE-2020-26247 mitigation); out-of-bounds read in <code>NodeSet#[]</code>.</li>
-<li><strong>Recommend merging promptly</strong> — all issues are security-related even if low severity.</li>
+<li>"Update The σ System" — modified <code>RPG/The-Märchin-Engine/The-σ-System.html</code> (4 lines changed)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/420169673d3c5d39eba3013580fac4a5ab9fd654">commit 420169</a></li>
 </ul>
-<p><strong>PR #200 — bump github/gh-aw-actions from 0.71.5 to 0.80.8</strong></p>
+<p><strong>2026-06-22 18:42 UTC — Ted Tschopp</strong></p>
 <ul>
-<li>URL: https://github.com/TedTschopp/tedt.org/pull/200</li>
-<li>Labels: dependencies, github_actions</li>
-<li>Minor version update to the GitHub Agentic Workflows actions runtime.</li>
-<li>CI passed (Site Quality + Deploy run #905, success).</li>
+<li>"Merge branch 'main'" — merge commit finalizing the above</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/60b69134fce2d2202d64926424fdee2ab6b736df">commit 60b691</a></li>
 </ul>
-<p><strong>PR #201 — bump actions/checkout from 4 to 7</strong></p>
+<p><strong>2026-06-22 17:33 UTC — github-actions[bot]</strong></p>
 <ul>
-<li>URL: https://github.com/TedTschopp/tedt.org/pull/201</li>
-<li>Labels: dependencies, github_actions</li>
-<li>Major version bump. Includes ESM module upgrade, new fork PR checkout security controls, dependency refreshes.</li>
-<li>CI passed (Site Quality + Deploy run #906, success).</li>
+<li>"chore: refresh yesterday in enterprise ai" — scheduled automated content update</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/6d26a7384bf490fb83bcc2e1d194c6e53c898fe0">commit 6d26a7</a></li>
 </ul>
+<p><strong>2026-06-22 10:25 UTC — github-actions[bot]</strong></p>
+<ul>
+<li>"chore: refresh daily report" — daily automated publish</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/92dc73981062a1948e716742323943169f84a609">commit 92dc73</a></li>
+</ul>
+<p><strong>2026-06-21 17:24 UTC — Ted Tschopp</strong></p>
+<ul>
+<li>"Create The-σ-System.html" — added 186-line document to <code>RPG/The-Märchin-Engine/</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/238bba3586865c3d6dc19ba66a61c49f12a7b2d2">commit 238bba</a></li>
+</ul>
+<h3>Content Note</h3>
+<p>The σ System is a new RPG document for The Märchin Engine project, added and revised over two consecutive days. This is the only hand-authored content change in the window. The <code>enterprise AI</code> refresh is a recurring automated commit (daily cadence confirmed across the 20-commit history).</p>
 <hr>
 <h2>Workflow Health</h2>
-<p><strong>Currently running:</strong></p>
+<p><strong>Site Quality + Deploy</strong></p>
 <ul>
-<li>Daily Report workflow (run #54) — in progress as of report generation (2026-06-22T10:19 UTC)</li>
-<li>URL: https://github.com/TedTschopp/tedt.org/actions/runs/27945780681</li>
+<li>Run #909 — <strong>✅ success</strong></li>
+<li>Triggered by push on 2026-06-22 18:42 UTC, completed 18:51 UTC (~9 min)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/27975755990">Run link</a></li>
 </ul>
-<p><strong>Recent completed runs:</strong></p>
+<p><strong>Feed to Mastodon</strong></p>
 <ul>
-<li>Site Quality + Deploy, run #906 — <strong>success</strong> — triggered by PR #201 (actions/checkout bump)</li>
-<li>URL: https://github.com/TedTschopp/tedt.org/actions/runs/27933857087</li>
-<li>Site Quality + Deploy, run #905 — <strong>success</strong> — triggered by PR #200 (gh-aw-actions bump)</li>
-<li>URL: https://github.com/TedTschopp/tedt.org/actions/runs/27933848204</li>
+<li>Run #1891 — <strong>✅ success</strong></li>
+<li>Ran 2026-06-23 03:41–03:43 UTC (scheduled, ~70 sec)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/28000562705">Run link</a></li>
 </ul>
-<p>Automated chore workflows (daily report refresh, Enterprise AI content refresh) are executing on schedule every weekday with no visible failures.</p>
+<p><strong>Daily Report</strong></p>
+<ul>
+<li>Run #55 — <strong>🔄 in_progress</strong> (this run)</li>
+<li>Started 2026-06-23 08:01 UTC</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/28011450731">Run link</a></li>
+</ul>
+<p>No workflow failures observed in the recent run window.</p>
 <hr>
-<h2>Content &amp; Publishing Pipeline</h2>
-<p><strong>New content this week:</strong></p>
+<h2>Open Pull Requests</h2>
+<p><strong>3 open PRs, all Dependabot dependency bumps:</strong></p>
 <ul>
-<li>Blog post: VS Code plugin (June 15, added to <code>_posts/</code>)</li>
-<li>RPG design document: <code>RPG/The-Märchin-Engine/The-σ-System.html</code> (June 21) — raw HTML, not a Jekyll post</li>
+<li><strong>#201</strong> — <code>build(deps): bump actions/checkout from 4 to 7</code> — opened 2026-06-22</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/201">PR link</a></li>
+<li>Labels: <code>dependencies</code>, <code>github_actions</code></li>
 </ul>
-<p><strong>Mastodon sync:</strong> Ran June 15 (<code>chore: update Mastodon cache/front matter</code>). No visible failures in recent commits.</p>
-<p><strong>Content metadata maintenance:</strong> Ted cleaned up category metadata on the "AI Engineer Coach" post (June 15 commit).</p>
+<ul>
+<li><strong>#200</strong> — <code>build(deps): bump github/gh-aw-actions from 0.71.5 to 0.80.8</code> — opened 2026-06-22</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/200">PR link</a></li>
+<li>Labels: <code>dependencies</code>, <code>github_actions</code></li>
+</ul>
+<ul>
+<li><strong>#196</strong> — <code>build(deps): bump actions/cache from 4 to 5</code> — opened 2026-06-01 (aging 22 days)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/196">PR link</a></li>
+<li>Labels: <code>dependencies</code>, <code>github_actions</code></li>
+</ul>
+<p>All three are unreviewed/unmerged. #196 is the oldest and most stale.</p>
 <hr>
-<h2>Open Issue Backlog — Highlights</h2>
-<p>All high-priority issues below are P2 from the May 2026 audit (#163 tracker). None show activity since creation date.</p>
-<p><strong>UX / Content Discovery:</strong></p>
+<h2>Open Issues Overview</h2>
+<p>All 20 visible open issues carry the <code>audit-2026-05</code> label and were filed 2026-05-29 as part of the May 2026 site audit. None have shown activity since filing. They are grouped below by risk profile.</p>
+<h3>Compliance / Security (address first)</h3>
 <ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a> — Enhance category landing pages: related categories, tag clouds, depth indicators</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a> — Cross-collection content bridges and related-posts infrastructure</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a> — Drive prompt series adoption (only 3 of 56 prompts have <code>series:</code> metadata)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/183">#183</a> — Standardize tagging: only 30.5% of posts have tags; build site-wide tag infrastructure</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/182">#182</a> — Create slide gallery with topic filtering and deck browser</li>
+<li><strong>#173</strong> <code>[P2]</code> Privacy: Implement cookie consent banner before analytics load — GA4 + Microsoft Clarity with <code>session_replay: true</code> load unconditionally; no consent mechanism exists. This is the highest-priority unaddressed compliance risk.</li>
+<li><strong>#168</strong> <code>[P2]</code> Add <code>rel="noopener noreferrer"</code> to external <code>target="_blank"</code> links — 5 confirmed instances across <code>_includes/</code></li>
 </ul>
-<p><strong>SEO &amp; Architecture:</strong></p>
+<h3>CI/CD and Automation Reliability</h3>
 <ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/181">#181</a> — Unify RPG/fantasy content schema and build SEO landing pages (699 Gamma World posts, inconsistent front matter)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/178">#178</a> — Strengthen excerpts, descriptions, and create pillar hub pages</li>
+<li><strong>#174</strong> <code>[P2]</code> Document <code>COPILOT_ASSIGN_TOKEN</code> secret requirements — inconsistent fallback between workflows</li>
+<li><strong>#170</strong> <code>[P2]</code> Extract Allure history restore: dedicated helper + retry backoff</li>
+<li><strong>#169</strong> <code>[P2]</code> Mastodon workflow preflight: dry-run validation + token scope check</li>
 </ul>
-<p><strong>Documentation &amp; Code Quality:</strong></p>
+<h3>UX and Content Discovery</h3>
 <ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/180">#180</a> — Add content contributor guide to README</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/179">#179</a> — Curate quotes with thematic tags and personal context</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/177">#177</a> — Document <code>_code/</code> utility scripts (P3)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/176">#176</a> — Standardize Python script entry points (P3)</li>
+<li><strong>#175</strong> <code>[P2]</code> Service Worker offline fallback for hero media cache misses</li>
+<li><strong>#186</strong> <code>[P2]</code> Enhance category landing pages (related categories, tag clouds, depth indicators)</li>
+<li><strong>#185</strong> <code>[P2]</code> Cross-collection content bridges and related-posts infrastructure</li>
+<li><strong>#184</strong> <code>[P2]</code> Prompt series adoption: audit and populate series metadata</li>
+<li><strong>#183</strong> <code>[P2]</code> Standardize site-wide tagging model and build tag archive infrastructure</li>
+<li><strong>#182</strong> <code>[P2]</code> Create slide gallery with topic filtering and deck browser</li>
+<li><strong>#181</strong> <code>[P2]</code> Unify RPG/fantasy content schema and build SEO landing pages</li>
+<li><strong>#180</strong> <code>[P2]</code> Add content contributor guide to README</li>
+<li><strong>#179</strong> <code>[P2]</code> Curate quotes with thematic tags and personal context</li>
+<li><strong>#178</strong> <code>[P2]</code> SEO: strengthen excerpts, descriptions, and create pillar hub pages</li>
 </ul>
-<p><strong>PWA / Performance:</strong></p>
+<h3>Code Quality and Testing</h3>
 <ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/175">#175</a> — Add service worker offline fallback for hero media cache misses</li>
+<li><strong>#172</strong> <code>[P2]</code> Expand a11y test coverage (form labeling, ARIA live regions, carousel keyboard nav)</li>
+<li><strong>#171</strong> <code>[P2]</code> Add front matter validation (image/image-alt, category slugs, date format)</li>
+<li><strong>#167</strong> <code>[P2]</code> Extract Mastodon comments component: styles to SCSS, tree to sub-includes</li>
+</ul>
+<h3>Documentation and Code Organization</h3>
+<ul>
+<li><strong>#177</strong> <code>[P3]</code> Document and organize <code>_code/</code> utility scripts</li>
+<li><strong>#176</strong> <code>[P3]</code> Standardize Python script entry points with <code>main()</code> guards</li>
 </ul>
 <hr>
-<h2>Risks &amp; Observations</h2>
-<p><strong>⚠️ Security:</strong> PR #199 (nokogiri 1.19.4) patches 8 CVEs. Build passes. Merge when convenient — no urgency given all ratings are Low or one Medium, but do not let it sit for weeks.</p>
-<p><strong>⚠️ Content classification gap:</strong> <code>RPG/The-Märchin-Engine/The-σ-System.html</code> added as a raw HTML file outside <code>_posts/</code>. It will not appear in Jekyll's post pipeline, feeds, sitemap, or Mastodon syndication. If this is intended as published content, convert it to a <code>_posts/RPG/</code> Markdown file with proper front matter. If it is a static asset or reference document, this is fine as-is but should be confirmed intentional.</p>
-<p><strong>Observation — Major PR pending:</strong> PR #201 bumps <code>actions/checkout</code> from v4 to v7 (3 major versions). This includes ESM module changes and new fork PR security controls. CI passes, but a human spot-check of the workflow behavior is reasonable before merging.</p>
-<p><strong>Observation — Issue backlog aging:</strong> All open P2 issues were filed 2026-05-29 and show no activity since. This is roughly 3.5 weeks of backlog drift. If the May audit was meant to drive Q2 work, these items are at risk of slipping to Q3 without prioritization.</p>
+<h2>Risks and Observations</h2>
+<p><strong>Risk 1 — Privacy compliance (#173)</strong> GA4 and Microsoft Clarity with session replay are loading without user consent. GDPR/ePrivacy and CCPA may apply depending on audience geography. This is a P2 issue filed 25 days ago with no progress. Partial mitigation: disable <code>session_replay: true</code> in <code>_config.yml</code> until a consent banner is implemented.</p>
+<p><strong>Risk 2 — Stale Dependabot PRs</strong> Three open PRs with no review. #196 (actions/cache 4→5) is 22 days old. Unmerged dependency bumps allow CI runner action versions to drift and delay security patches.</p>
+<p><strong>Risk 3 — May audit backlog aging</strong> 20+ P2 issues filed 2026-05-29 have had zero commits addressing them in 25 days. No milestone or assignee is set on any of them, making it hard to predict when they will be addressed.</p>
+<p><strong>Observation — RPG content activity</strong> The σ System document suggests active work on The Märchin Engine RPG project. This is outside the main Jekyll post pipeline (it lives in <code>RPG/</code> rather than <code>_posts/</code>) so it does not affect feed or category indexes.</p>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #199</strong> (nokogiri 1.19.4 security patch) — CI is green, no Gemfile conflict expected.</li>
-<li><strong>Review and merge PR #200 and PR #201</strong> — both pass CI, incremental risk.</li>
-<li><strong>Decide: convert <code>The-σ-System.html</code> to a Jekyll post</strong> or document that it is intentionally a raw HTML reference artifact.</li>
-<li><strong>Pick one P2 issue</strong> from the May audit backlog and assign it for this sprint — #183 (tagging infrastructure) or #175 (service worker fallback) are low-effort entry points.</li>
-<li><strong>Check <code>recent_by_category</code> cache</strong> if Gamma World or RPG post metadata is being cleaned up (issue #181 work when it starts will affect this cache).</li>
+<li><strong>Merge Dependabot PRs</strong> — all three are safe GitHub Actions version bumps. Review and merge #196, #200, and #201.</li>
+</ol>
+<ol>
+<li><strong>Quick-win security hygiene (#168)</strong> — add <code>rel="noopener noreferrer"</code> to 5 external <code>target="_blank"</code> links. Small scope, no layout risk.</li>
+</ol>
+<ol>
+<li><strong>Partial privacy mitigation (#173)</strong> — disable <code>session_replay: true</code> in <code>_config.yml</code> as a stopgap until a consent banner is built. Reduces compliance exposure with a 1-line change.</li>
+</ol>
+<ol>
+<li><strong>Service worker offline fallback (#175)</strong> — scope is <code>sw.js:54–70</code>. Low effort, direct UX improvement for offline/slow users.</li>
+</ol>
+<ol>
+<li><strong>Prioritize audit backlog</strong> — assign owners or milestones to the May audit issues. At current pace (0 issues addressed in 25 days), the backlog will continue to grow stale. Pick one P2 to close per week.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li><strong>Commits:</strong> Retrieved via GitHub API, last 20 commits on <code>main</code> branch as of 2026-06-22T10:21 UTC.</li>
-<li><strong>Pull Requests:</strong> Open PRs listed via GitHub API. PR body content inspected for #199, #200, #201.</li>
-<li><strong>Workflow runs:</strong> Retrieved most recent 15 completed runs and the current in-progress daily report run.</li>
-<li><strong>Issues:</strong> Retrieved 20 open issues, ordered by most recently updated. All visible issues were from the May 2026 audit batch; no more recent issues appeared.</li>
-<li><strong>Commit detail:</strong> Inspected the HEAD commit (<code>238bba3</code>) for file changes to determine content type of new RPG file.</li>
-<li>**Unavailable (redacted) HTML Proofer run results, Jekyll build time/memory probe output, Mastodon toot count or feed status, external link health, and recent deploy artifact status were not retrieved. Build pass/fail was inferred from the "Site Quality + Deploy" workflow conclusion fields.</li>
-<li><strong>[ASSUMPTION]:</strong> The three Dependabot PRs opened today (#199–#201) have not been reviewed or approved by Ted yet. This is inferred from PR creation timestamps (06:06–06:25 UTC) and no merge commits appearing in the commit list.</li>
-<li><strong>[ASSUMPTION]:</strong> <code>The-σ-System.html</code> is new content authored by Ted based on commit authorship. Its placement outside <code>_posts/</code> is noted as an observation, not a confirmed error.</li>
+<li>Commit history: queried via GitHub API, last 20 commits on <code>main</code> as of 2026-06-23 08:03 UTC</li>
+<li>Workflow runs: queried via GitHub Actions API; all-workflows list and deploy.yml-filtered list</li>
+<li>Issues: queried open issues, first 20 results (default sort); total open issue count not confirmed — there may be more open issues beyond #167</li>
+<li>Pull requests: queried open PRs, first page visible (3 confirmed open Dependabot PRs); additional older PRs may exist beyond those shown</li>
+<li>Deploy run #909 duration (~9 min) inferred from <code>created_at</code> and <code>updated_at</code> timestamps</li>
+<li>The Mastodon feed run conclusion (<code>success</code>) is confirmed from workflow run data</li>
+<li>No HTML Proofer failure details available — only overall workflow conclusion (success) observed</li>
+<li>[ASSUMPTION] The "enterprise AI" automated commits are a scheduled content refresh; the specific file being updated was not inspected</li>
+<li>[ASSUMPTION] Issue count of "20+" is a lower bound; the open issues API returned 20 results on the first page and there are likely more</li>
+<li>External link health and HTML Proofer internal/external results not inspected independently — only overall workflow success confirmed</li>
+<li>This daily report run (#55) was in-progress at report compilation time</li>
 </ul>
     </section>
     <footer>
