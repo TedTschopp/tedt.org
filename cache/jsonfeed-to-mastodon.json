@@ -4563,5 +4563,41 @@
       "https://tschopp.net/users/Ted/statuses/116756121342881336"
     ],
     "lastTootTimestamp": 1781557027409
+  },
+  "https://tedt.org/Prompt-Me-a-Palace/": {
+    "id": "/Prompt-Me-a-Palace/",
+    "title": "Prompt Me a Palace",
+    "summary": "A hip-hop musical-theater song lyric about AI builders, agent workflows, prototype magic, system overload, and why speed needs architecture, security, data, operations, and IT to last.",
+    "content_text": "A hip-hop musical-theater song lyric about AI builders, agent workflows, prototype magic, system overload, and why speed needs architecture, security, data, operations, and IT to last. https://tedt.org/Prompt-Me-a-Palace/",
+    "url": "https://tedt.org/Prompt-Me-a-Palace/",
+    "image": "https://tedt.org/img/2026-06/Prompt-Me-a-Palace.webp",
+    "tags": [
+      "ai",
+      "ai-agents",
+      "vibe-coding",
+      "prompt-engineering",
+      "citizen-development",
+      "workflow",
+      "enterprise-it",
+      "governance",
+      "architecture",
+      "security",
+      "data-governance",
+      "operations",
+      "song-lyrics",
+      "creative-writing",
+      "musical-theater"
+    ],
+    "date_published": "2026-06-25T00:00:00-07:00",
+    "date_modified": "2026-06-25T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116811617412050640"
+    ],
+    "lastTootTimestamp": 1782403830282
   }
 }
