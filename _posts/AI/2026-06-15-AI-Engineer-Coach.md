@@ -101,15 +101,15 @@ It is not trying to be another coding assistant. It is trying to be the mirror n
 
 ## Download
 
-I packaged the current local build as a VSIX so coworkers can try it directly:
+I packaged the current local build as a VSIX so coworkers can try it directly. This package was rebuilt after syncing with the latest Microsoft upstream changes:
 
 [Download AI Engineer Coach 0.1.0 VSIX](/downloads/ai-engineer-coach-0.1.0.vsix)
 
 File details:
 
 - File: `ai-engineer-coach-0.1.0.vsix`
-- Size: about 3.1 MB
-- SHA-256: `fb2661cd444ff7a48a773807cc5e71bf2a66f26944fc00c0d9bb2aff32b602ab`
+- Size: about 3.35 MB
+- SHA-256: `27d1ccf352558c698872874ccdd3136d8f89af858c99d29ac85d6031aeed8a1e`
 - Source repo: [TedTschopp/AI-Engineering-Coach](https://github.com/TedTschopp/AI-Engineering-Coach)
 
 To install it:
