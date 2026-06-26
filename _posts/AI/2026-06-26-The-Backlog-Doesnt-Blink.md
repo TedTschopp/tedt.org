@@ -292,7 +292,7 @@ because the need was still alive.
 We know the queue made strangers<br>
 of the people we should know.<br>
 We know a ticket number<br>
-is a terrible place to grow.
+is a terrible place to go.
 
 So don't hide the spark from us.<br>
 Don't build alone in blue.<br>
