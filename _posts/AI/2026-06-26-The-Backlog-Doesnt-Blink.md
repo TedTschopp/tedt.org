@@ -353,12 +353,3 @@ Bring more IT in IT.
 
 Request received.<br>
 Priority high.<br>
-Business critical.<br>
-Reason why.
-
-### Data Steward, from the next scene
-
-Then why does "status" live<br>
-in seventeen places?
-
-### Blackout
