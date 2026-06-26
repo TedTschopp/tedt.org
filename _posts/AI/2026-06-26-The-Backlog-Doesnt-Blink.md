@@ -2,7 +2,7 @@
 layout: post
 
 title: "The Backlog Doesn't Blink"
-subtitle: "A tense hip-hop musical-theater response number about IT delivery, queue pressure, and the people carrying enterprise risk"
+subtitle: "A tense musical-theater response number about IT delivery, queue pressure, and the people carrying enterprise risk"
 quote: "We are not the wall. We are not the curse."
 excerpt: "A tense, emotionally grounded hip-hop musical-theater song lyric about IT delivery teams, backlog pressure, risk, compliance, legacy systems, QA, security, and the human load behind every queue."
 source: "Original Content"
@@ -91,7 +91,7 @@ video:
 mastodon-post-id:
 ---
 
-*The Backlog Doesn't Blink* is a tense, emotionally grounded hip-hop musical-theater response number for the IT Delivery Team. The music should feel like pressure accumulating: steady kick, clipped hi-hats, low piano pulses, orchestral stabs, and subtle machine-room textures.
+*The Backlog Doesn't Blink* is a tense, emotionally grounded musical-theater response number for the IT Delivery Team. The music should feel like pressure accumulating: steady kick, clipped hi-hats, low piano pulses, orchestral stabs, and subtle machine-room textures.
 
 Vocals begin controlled and procedural, almost like ticket intake language, then grow more human and urgent as the team reveals the weight behind the queue. Different IT roles trade sharp rap verses: delivery, integration, compliance, security, QA, legacy, and product ownership.
 
