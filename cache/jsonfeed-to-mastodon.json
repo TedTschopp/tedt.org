@@ -4637,5 +4637,44 @@
       "https://tschopp.net/users/Ted/statuses/116817700903126238"
     ],
     "lastTootTimestamp": 1782496656954
+  },
+  "https://tedt.org/The-Backlog-Doesnt-Blink/": {
+    "id": "/The-Backlog-Doesnt-Blink/",
+    "title": "The Backlog Doesn't Blink",
+    "summary": "A tense, emotionally grounded hip-hop musical-theater song lyric about IT delivery teams, backlog pressure, risk, compliance, legacy systems, QA, security, and the human load behind every queue.",
+    "content_text": "A tense, emotionally grounded hip-hop musical-theater song lyric about IT delivery teams, backlog pressure, risk, compliance, legacy systems, QA, security, and the human load behind every queue. https://tedt.org/The-Backlog-Doesnt-Blink/",
+    "url": "https://tedt.org/The-Backlog-Doesnt-Blink/",
+    "image": "https://tedt.org/img/2026-06/The-Backlog-Doesnt-Blink.webp",
+    "tags": [
+      "enterprise-it",
+      "it-delivery",
+      "backlog",
+      "governance",
+      "citizen-development",
+      "shadow-it",
+      "integration",
+      "compliance",
+      "security",
+      "qa",
+      "legacy-systems",
+      "product-ownership",
+      "operations",
+      "risk-management",
+      "resilience",
+      "song-lyrics",
+      "creative-writing",
+      "musical-theater"
+    ],
+    "date_published": "2026-06-26T00:05:00-07:00",
+    "date_modified": "2026-06-26T00:05:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116818145701715471"
+    ],
+    "lastTootTimestamp": 1782503444019
   }
 }
