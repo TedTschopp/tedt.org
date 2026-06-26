@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-06-25 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-06-26 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,157 +52,144 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-06-25</h1>
-      <p class="meta">Generated <time datetime="2026-06-25T15:44:53+00:00">2026-06-25T15:44:53Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-06-26</h1>
+      <p class="meta">Generated <time datetime="2026-06-26T15:28:42+00:00">2026-06-26T15:28:42Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>OpenAI revealed its first custom inference chip (Jalapeño), Google baked autonomous computer control into Gemini 3.5 Flash, and Qualcomm made dual moves — announcing a data center processor and agreeing to acquire AI software startup Modular for nearly $4 billion. Enterprises are grappling with the practical realities of scaling AI: token budgets are bursting, governance gaps are widening, and more than 300 local moratoriums are threatening the physical infrastructure that AI depends on.</p>
+      <p>The U.S. government intervened directly in AI model deployment — compelling OpenAI to release GPT-5.6 only to government-approved partners on a case-by-case basis. Anthropic alleged that Alibaba illicitly extracted Claude's capabilities, setting the stage for a landmark AI intellectual property case. And Ford's admission that AI quality automation fell short — forcing the rehiring of experienced engineers — echoes a growing enterprise lesson: institutional knowledge is not so easily automated away.</p>
 <ul>
-<li>OpenAI's Jalapeño chip, built with Broadcom, targets inference cost reduction — monitor vendor pricing shifts over the next 12–18 months.</li>
-<li>Google's Gemini 3.5 Flash can now operate computers autonomously; review your agentic AI security policies now.</li>
-<li>Enterprises are enforcing AI token budgets; implement model-tier guidelines before costs compound.</li>
-<li>A congressional staffer AI-drafting controversy signals the need for formal AI-disclosure policies in document workflows.</li>
-<li>300+ U.S. data center bans could restrict AI compute capacity; factor location risk into infrastructure planning.</li>
+<li><strong>GPT-5.6 access is now government-rationed:</strong> begin documenting your enterprise AI use-case register before approval gatekeeping becomes standard practice.</li>
+<li><strong>Review AI vendor billing controls now:</strong> Anthropic customers are discovering unexpected API charges.</li>
+<li><strong>Amazon's $13B India infrastructure commitment</strong> signals long-term regional AI capacity — factor this into your global cloud strategy.</li>
+<li><strong>Open-source supply chain risk is accelerating:</strong> the Linux Foundation's Akrites coalition warns that AI-powered attacks on foundational software are coming.</li>
+<li><strong>AI + human oversight is a partnership, not a trade-off:</strong> Ford's quality reversal is a template for reviewing where you have automated away expert judgment.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
       <h2>Big Moves</h2>
-<h3>OpenAI's First Custom Chip Is Here — and It's Called Jalapeño</h3>
-<p>OpenAI has unveiled Jalapeño, its first in-house AI inference processor, built in partnership with Broadcom. The chip is an ASIC (Application-Specific Integrated Circuit) designed specifically for the unique demands of OpenAI's inference systems — the layer of the stack you interact with every time you use ChatGPT.</p>
-<p>For years, AI companies have rented compute from Nvidia. A proprietary chip shifts the cost structure fundamentally. Jalapeño signals that OpenAI is serious about long-term margin control, and that will ripple into pricing for enterprise customers. If inference costs drop — even gradually — the economics of large-scale AI deployments improve, but it also means OpenAI becomes less dependent on, and potentially more competitive with, its cloud partners.</p>
-<p><strong>What should I do as a leader?</strong> Track your enterprise AI cost baselines now. As vendors move to custom silicon, expect pricing shifts — potentially downward for inference-heavy workloads — over the next 12–18 months. Locking in long-term contracts before that clarity arrives may not serve you.</p>
-<p><strong>Sources:</strong> <a href="https://techcrunch.com/2026/06/24/openai-unveils-its-first-custom-chip-built-by-broadcom/">TechCrunch</a>, <a href="https://www.theverge.com/ai-artificial-intelligence/955939/openai-reveals-its-first-ai-processor-jalapeno">The Verge</a> — June 24, 2026</p>
+<h3>The White House Steps Into OpenAI's Release Schedule</h3>
+<p>OpenAI is releasing its newest model — GPT-5.6 — only to a select group of partners, with access approved "customer by customer" at the request of the Trump administration. CEO Sam Altman confirmed the restriction in a company Q&amp;A, describing GPT-5.6 as "not a preferred long-term model" while acknowledging the unprecedented government involvement in a commercial AI rollout.</p>
+<p>This is the first time the federal government has inserted itself directly into the release pipeline of a major frontier model, and it will not be the last. For enterprise AI teams, the implications are practical: access to cutting-edge models may increasingly depend on your organization's sector, risk profile, and vendor relationship depth — not just a credit card. Healthcare, defense, and financial services firms already operating under federal contracts may find themselves advantaged in early-access queues.</p>
+<p><strong>What should I do as a leader?</strong> Build and maintain a documented AI vendor relationship and use-case register. As government approval processes formalize, enterprises that can demonstrate responsible deployment practices will be better positioned for early model access.</p>
+<p><strong>What should I do?</strong> If your organization depends on GPT-5-class models for production workflows, clarify your vendor contract tier and whether it includes access to new model versions on general release.</p>
+<p><strong>Sources:</strong> <a href="https://www.theverge.com/ai-artificial-intelligence/957372/openai-will-delay-gpt-5-6-after-trump-administration-request">The Verge</a> | <a href="https://techcrunch.com/2026/06/25/the-white-house-is-asking-openai-to-slow-roll-the-release-of-its-new-model-over-safety-concerns/">TechCrunch</a> | <a href="https://the-decoder.com/openais-gpt-5-6-rollout-now-requires-us-government-approval-on-a-customer-by-customer-basis/">The Decoder</a> — June 25–26, 2026</p>
 <hr>
-<h3>Google Embeds Computer Control Directly Into Gemini 3.5 Flash</h3>
-<p>Google has integrated "Computer Use" directly into Gemini 3.5 Flash, giving the model the ability to see and operate computers, browsers, and mobile devices on its own. On the OSWorld benchmark — a standard test for autonomous desktop control — it scores 78.4, putting it on par with GPT-5.5. Developers can use the Gemini API to build agents for software testing, office automation, and similar workflows.</p>
-<p>Computer use is the gateway to fully autonomous software agents. When an AI can see your screen, navigate graphical interfaces, fill forms, and trigger workflows without a dedicated API integration, it opens the door to automating tasks that previously required custom development. That is a compelling capability — and a new attack surface.</p>
-<p><strong>What should I do as a leader?</strong> If your security and compliance teams have not reviewed agentic AI policies, computer use capabilities make that review urgent. The potential for unintended data access expands significantly when an AI model can operate software directly, outside of any structured API boundary.</p>
-<p><strong>What should I do?</strong> If you are a developer, the Gemini API now allows you to build agents for browser-based and desktop automation tasks without specialized wrappers or virtual machine tooling.</p>
-<p><strong>Sources:</strong> <a href="https://the-decoder.com/google-bakes-computer-control-directly-into-gemini-3-5-flash-letting-the-model-see-and-operate-your-screen/">The Decoder</a>, <a href="https://deepmind.google/blog/introducing-computer-use-in-gemini-3-5-flash/">Google DeepMind</a> — June 24–25, 2026</p>
+<h3>Anthropic Alleges Alibaba Illicitly Extracted Claude's Capabilities</h3>
+<p>Anthropic filed a legal claim alleging that Alibaba used unauthorized methods to extract the learned capabilities of Claude — a process known as model distillation, which can effectively copy an AI model's intelligence by using its outputs as training data for another system. Reuters reported the case, which is the first major AI intellectual property claim targeting a Chinese technology giant.</p>
+<p>The legal and strategic stakes are high on multiple fronts. If courts affirm that AI model outputs carry enforceable IP protections beyond traditional copyright, the landscape for fine-tuning and building on top of major AI vendors shifts dramatically. For enterprise teams building AI products using outputs from ChatGPT, Claude, or Gemini, terms-of-service compliance — particularly around training and distillation restrictions — needs legal review now, before enforcement actions set the precedent.</p>
+<p><strong>What should I do as a leader?</strong> Escalate a review of your AI vendor terms of service to legal and compliance. Specifically assess restrictions around using model outputs to train other models, build synthetic datasets, or fine-tune competing systems. This case will not be the last.</p>
+<p><strong>Sources:</strong> Reuters — June 24, 2026</p>
 <hr>
-<h3>Qualcomm Makes Dual Moves Into AI Infrastructure</h3>
-<p>Qualcomm agreed to acquire AI software infrastructure startup Modular for nearly $4 billion, the same week it announced the Dragonfly C1000 — a new processor targeting the data center market and the company's first foray into server-grade AI silicon. Qualcomm has historically dominated mobile and edge chips; this week marks a deliberate push to challenge Nvidia and AMD in the inference market.</p>
-<p>For enterprises evaluating AI infrastructure, the competitive field is meaningfully wider than it was six months ago. New entrants — Qualcomm, SambaNova, Cerebras, and others — are competing on inference price and performance in ways that benefit buyers who are willing to diversify beyond the dominant platforms.</p>
-<p><strong>Sources:</strong> <a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxPYzNxTHhjY3ZHSEtZUk1yTVRvbHBHOHpYX3VnSW02WXFGOHlkdW50U2l5OWdRS3pkcXdrUjlVcU5vM0FpbkYtSy0xMXNJa081Sm1iekdoQWpUZkFBVkJHM3FvYjRSX0NTbVZuUExrVEJ3RFFLSU4zYmlpbVB3cW5OQXV5WjlzX2xJeXRsc2ZDUWNOWlpK?oc=5">The Information via Google News</a>, <a href="https://the-decoder.com/qualcomm-enters-the-data-center-market-with-its-own-processor/">The Decoder</a> — June 24–25, 2026</p>
-<hr>
-<h2>Enterprise Ops &amp; Adoption</h2>
-<h3>OpenAI: Agents Are Transforming Work, Not Just Speeding It Up</h3>
-<p>A new OpenAI research paper documents how AI agents are changing the nature of enterprise work — enabling longer, more complex task sequences and expanding productivity across roles. The paper focuses on multi-step autonomous workflows rather than simple prompt-and-response exchanges.</p>
-<p>The shift from "AI assistant" to "AI agent" is consequential for enterprise planning. Agents handle workflows, not queries. That means the ROI calculation changes, and so does the oversight model. Organizations that have measured AI productivity on single-task completion will need new frameworks as they deploy agents into multi-step processes.</p>
-<p><strong>What should I do as a leader?</strong> Map your high-volume, multi-step workflows. Agent-ready processes — ones where the sequence of steps is repeatable and outcomes are verifiable — are your near-term opportunity. Budget for agent orchestration tooling and meaningful human oversight in the same line item.</p>
-<p><strong>Source:</strong> <a href="https://openai.com/index/how-agents-are-transforming-work">OpenAI</a> — June 24, 2026</p>
-<hr>
-<h3>The Token Budget Crisis: Enterprises Are Rationing AI Use</h3>
-<p>Companies are discovering that giving employees access to AI tools without usage guardrails leads to runaway spending. The pattern is consistent: employees default to powerful, expensive models for routine tasks that a simpler tool would handle adequately. Enterprises are now implementing hard token limits — a practice that wasn't on most IT governance roadmaps a year ago.</p>
-<p>The story of enterprise AI adoption is frequently one of enthusiasm outpacing governance. A single complex query to a GPT-4 class model can cost significantly more than its simpler alternatives. Without usage policies, costs scale non-linearly with adoption — and the finance team eventually notices.</p>
-<p><strong>What should I do as a leader?</strong> Establish model-tier guidelines: lightweight models for lookups and drafts, more capable (and expensive) models for complex reasoning tasks. Pair this with usage monitoring and a feedback loop so employees understand the tradeoff they are making.</p>
-<p><strong>What should I do?</strong> Before reaching for the most powerful model available, ask whether the task actually requires heavy reasoning. Most do not.</p>
-<p><strong>Source:</strong> <a href="https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks/">TechCrunch</a> — June 24, 2026</p>
-<hr>
-<h3>AI Hasn't Killed Engineering Jobs — It's Making Them More Valuable</h3>
-<p>New data from SignalFire shows that while AI dominates the layoff narrative, engineering roles are making up a larger share of new hires, not a smaller one. Engineers appear to be the most resilient occupational category in today's technology labor market.</p>
-<p>The narrative that AI eliminates engineering has driven real anxiety in many enterprises. The emerging evidence points the other direction: AI amplifies what skilled engineers can produce, creating demand for people who know how to use it well. This has concrete implications for hiring strategy, retention, and reskilling investments.</p>
-<p><strong>What should I do as a leader?</strong> Invest in AI-augmented engineering capability — training, tooling, and workflow redesign — rather than planning headcount reduction. The productivity leverage effect is real, but it requires engineers who know how to apply it.</p>
-<p><strong>Source:</strong> <a href="https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/">TechCrunch</a> — June 24, 2026</p>
+<h3>Amazon Bets $13 Billion on India's AI Future</h3>
+<p>Amazon announced a fresh $13 billion investment in AI infrastructure in India — expanding data center capacity and cloud services in one of the world's fastest-growing digital economies. The commitment accelerates a race among global hyperscalers to establish AI infrastructure presence in high-growth markets before local and regional alternatives emerge.</p>
+<p>India is becoming more than an engineering talent hub — it is evolving into a strategic AI delivery region. The combination of deepening cloud infrastructure, a large and technically skilled workforce, and an emerging regulatory environment makes it a compelling location for enterprise AI development, testing, and regional deployment. This investment signals AWS's view that India is a multi-decade AI story.</p>
+<p><strong>What should I do as a leader?</strong> If your enterprise operates across the Asia-Pacific region, revisit your cloud infrastructure strategy. Regional AI infrastructure is expanding faster than most roadmaps anticipated, and capacity that was once exclusive to U.S. and European regions is becoming available closer to local operations.</p>
+<p><strong>Sources:</strong> <a href="https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/">TechCrunch</a> — June 25, 2026</p>
 <hr>
 <h2>Security, Risk &amp; Compliance</h2>
-<h3>Meta's AI Moderation Rollout Is Moving Too Fast, Employees Say</h3>
-<p>Meta has already replaced roughly half of all human content moderation requests with large language models and aims to increase that figure to more than 90% for certain content types by year's end. Internal employees are raising concerns that the pace of rollout outstrips the reliability of the underlying AI.</p>
-<p>Content moderation is a high-stakes, high-liability function. When AI makes errors here — false positives, missed harm, or culturally uninformed decisions — the consequences can be regulatory, reputational, and legal. The internal dissent at Meta is worth watching, because the same governance tensions exist in any enterprise deploying AI for compliance-adjacent decisions.</p>
-<p><strong>What should I do as a leader?</strong> Before deploying AI in any moderation, compliance, or high-stakes decision workflow, define your acceptable error rate and your escalation path. Automation without a human review override creates exposure that legal teams tend to discover after the fact.</p>
-<p><strong>Source:</strong> <a href="https://the-decoder.com/meta-employees-warn-ai-moderation-rollout-is-too-fast/">The Decoder</a> — June 25, 2026</p>
+<h3>20 Tech Giants Launch Akrites to Harden Open Source Before AI Attacks Arrive</h3>
+<p>The Linux Foundation and approximately 20 major technology companies — including AI labs and global banks — launched Akrites, a coordinated initiative to identify and remediate vulnerabilities in widely used open-source software before AI-powered exploit tools can weaponize them at scale. The coalition reflects broad industry recognition that the threat model for foundational software is about to get significantly more dangerous.</p>
+<p>As AI tools lower the cost and complexity of generating working exploits, the open-source layer beneath enterprise technology stacks becomes a higher-value and higher-risk target. Akrites represents an early effort to get ahead of that shift. For enterprise security teams, the meaningful signal is this: the threat timeline is shorter than it was a year ago, and AI-assisted vulnerability discovery is already being used offensively.</p>
+<p><strong>What should I do as a leader?</strong> Add open-source dependency risk to your next security review. Ask your teams whether your software composition analysis tooling integrates with industry remediation initiatives. Waiting for an AI-assisted zero-day to force the conversation is not the right timing.</p>
+<p><strong>Sources:</strong> <a href="https://the-decoder.com/linux-foundation-and-20-tech-giants-launch-akrites-to-fix-open-source-flaws-before-ai-powered-attacks-hit/">The Decoder</a> — June 26, 2026</p>
 <hr>
-<h3>British Police AI Prediction: When the Model Can't Be Trusted</h3>
-<p>A WIRED investigation reveals the inside story of a UK regional police force's experiment with AI-powered predictive analytics. Some results, the investigation found, could not be trusted — a finding that highlights the persistent gap between AI capability and real-world reliability in law enforcement and risk-assessment applications.</p>
-<p>For enterprise leaders, the lesson is transferable. AI outputs in risk-assessment, resource-allocation, or compliance workflows need robust validation before driving decisions. "The model said so" is not a defensible audit trail, and it is especially not one in regulated industries.</p>
-<p><strong>Source:</strong> <a href="https://www.wired.com/story/british-police-built-a-sprawling-crime-prediction-machine-some-results-couldnt-be-trusted/">WIRED</a> — June 25, 2026</p>
+<h3>Anthropic Customers Are Finding Unexpected Billing Charges</h3>
+<p>An AI billing auditing firm reported to The Information that Anthropic enterprise customers are discovering errant API charges — costs that do not match expected usage. The pattern points to a recurring challenge: as AI API usage expands across teams, integrations, and automated pipelines, billing visibility rarely keeps pace.</p>
+<p>Cloud AI APIs operate on consumption pricing with limited native alerting. When usage is distributed across dozens of teams and embedded in multiple applications, billing surprises are nearly inevitable without proactive controls in place. This is not a failure unique to Anthropic — it is a structural gap in how enterprises govern AI spending today.</p>
+<p><strong>What should I do as a leader?</strong> Implement cost anomaly alerts on all AI API spending. Require teams to tag API calls by department, project, and use case. A unified AI usage dashboard is not a luxury — it is foundational financial governance for the model era.</p>
+<p><strong>Sources:</strong> <a href="https://news.google.com/rss/articles/CBMitgFBVV95cUxNQjFfZ01qdk1FOHJIaHIyNldvNVoxSWN2TEZBT28tZWY2Nnd5ZUFPQUlLVlVtQ3hubGpYdlpTQkpQT3h6TlN4TUlJRm4xLVBKSjlkUjRFcmI3YkhWbVF3OXFlSUJFVU5SVnFNUUpfUWdRNGUxQ2J0RmZBRzdwbC1nUDh6VEU3Zl9DTVA1Q0NrYzlJMUF1bGtpdTltX1hhTmxfSFRTcTVPR2NnVVdQMTFKdVpLRkVfdw?oc=5">The Information</a> — June 25, 2026</p>
 <hr>
-<h3>Congresswoman Denies AI Drafted Her Defense Bill Amendment</h3>
-<p>Rep. Anna Paulina Luna (R-FL) issued a public denial after screenshots circulated suggesting her staff used Anthropic's Claude to draft an amendment to a major U.S. defense funding bill. Luna acknowledged AI was used for "spellcheck" but denied the tool was used to write the bill text itself.</p>
-<p>Whether or not the denial is accurate, the episode illustrates how visible AI-assisted drafting has become — and how quickly it becomes a political liability. For enterprises, this is a direct preview of the governance challenge ahead: when AI assists in drafting contracts, policies, or compliance documents, organizations need clear disclosure policies and audit trails before they need them in a crisis.</p>
-<p><strong>What should I do as a leader?</strong> Establish and communicate an AI-disclosure policy for high-stakes documents. Define the difference between "AI-assisted" and "AI-drafted," and set appropriate human review standards for each category.</p>
-<p><strong>Source:</strong> <a href="https://www.theverge.com/policy/956394/florida-anna-paulina-luna-anthropic-claude">The Verge</a> — June 24, 2026</p>
+<h2>Enterprise Ops &amp; Adoption</h2>
+<h3>Ford's AI Quality Automation Stumbled — So It Hired the Experts Back</h3>
+<p>Ford publicly acknowledged what many manufacturers have quietly experienced: AI-driven automation in quality inspection produced errors, and the fix was to bring back experienced human inspectors — the "gray beard" engineers who had been replaced or retired. The course correction helped Ford reclaim the No. 1 JD Power initial quality ranking among mainstream automakers.</p>
+<p>The lesson is not that AI automation fails. It is that institutional knowledge — accumulated over years of hands-on work — is difficult to replicate quickly, and the cost of getting it wrong in manufacturing is immediate. Enterprises deploying AI in quality, compliance, or oversight roles should treat experienced human judgment as a complement to automation, not a casualty of it.</p>
+<p><strong>What should I do as a leader?</strong> Audit AI deployments where quality, compliance, or safety outcomes are being measured. Are you tracking human expert override rates? Are you preserving the institutional knowledge that the system was trained to replicate? Ford's correction is a preview of the adjustment many enterprises will eventually make.</p>
+<p><strong>Sources:</strong> Bloomberg | <a href="https://www.theverge.com/transportation/956316/ford-quality-jd-power-ranking-ai-automated-mistakes">The Verge</a> — June 25, 2026</p>
+<hr>
+<h3>TSMC's Chip Packaging Bottleneck Is Now an AI Supply Chain Problem</h3>
+<p>A New York Times investigation found that advanced chip packaging — the specialized manufacturing process that stacks and connects memory with processors in AI accelerators — has become a critical chokepoint in the AI compute supply chain. TSMC, which controls a dominant share of this capacity, is operating near limits, with queues stretching beyond 18 months for some configurations.</p>
+<p>Chip packaging has been the quiet constraint beneath the AI hardware shortage story. As demand for AI accelerators grows, the bottleneck is not just chip fabrication — it is the specialized assembly process that transforms finished chips into the high-bandwidth memory stacks that large language models depend on. Enterprises planning major AI infrastructure investments should factor packaging lead times into their planning, not just GPU availability.</p>
+<p><strong>What should I do as a leader?</strong> Get specific lead-time commitments from your cloud and infrastructure vendors, not just headline availability figures. The supply chain risk at the packaging layer is real and may affect AI scaling timelines over the next 12–24 months.</p>
+<p><strong>Sources:</strong> <a href="https://www.nytimes.com/2026/06/26/technology/ai-advanced-chip-packaging-tsmc.html">The New York Times</a> — June 26, 2026</p>
 <hr>
 <h2>Vendors, Platforms &amp; Models</h2>
-<h3>Figma Goes Full-Stack at Config 2026</h3>
-<p>At its annual Config conference, Figma announced a reimagined canvas optimized for full-stack development, new AI motion graphics and shader tools, a new code layer, support for animations, and the ability to create custom plugins using AI. The announcements blur the line further between design and engineering workflows.</p>
-<p>Figma has steadily expanded from a design tool to a design-and-development platform. Enterprises using Figma for product development should assess how these new AI-assisted capabilities fit into their design system governance — especially as AI-generated components enter shared component libraries.</p>
-<p><strong>What should I do?</strong> If you are in product or UX roles, explore the new AI-assisted animation and shader tools. They can meaningfully reduce time-to-prototype and are worth a hands-on evaluation before your next sprint planning.</p>
-<p><strong>Sources:</strong> <a href="https://www.theverge.com/tech/955831/figma-code-design-tools-config-2026-announcements">The Verge</a>, <a href="https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/">TechCrunch</a> — June 24, 2026</p>
+<h3>Anthropic's Claude Is Gaining on ChatGPT Among Paying Users</h3>
+<p>New data shows that paid AI consumers have been steadily migrating from ChatGPT to Anthropic's Claude. While OpenAI maintains a commanding overall user base, Claude's share of paying users is growing faster — a signal that experienced users who have gone deepest into AI workflows are finding Claude better suited to their needs.</p>
+<p>Consumer adoption patterns have historically anticipated enterprise AI platform choices, particularly among developer and knowledge-worker segments. If Claude is winning on quality and trust with paying users, enterprise procurement decisions may follow. The dual-vendor strategy — maintaining both OpenAI and Anthropic contracts — is looking increasingly prudent for enterprises that want flexibility as the competitive landscape continues to shift.</p>
+<p><strong>Sources:</strong> <a href="https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/">TechCrunch</a> — June 25, 2026</p>
 <hr>
-<h2>Policy &amp; Regulation</h2>
-<h3>300+ Local Bans Are Threatening the U.S. Data Center Boom</h3>
-<p>More than 300 local bans and moratoriums on data center construction have been filed or passed across the United States. The wave of local resistance — driven by concerns about water use, noise, property values, and electrical grid strain — is materializing into zoning action that threatens the physical infrastructure AI depends on.</p>
-<p>AI's power and land demands are real and growing. For enterprises planning private or on-premise AI infrastructure, or assessing cloud vendor reliability, the geographic distribution of data centers is now a supply chain risk variable, not just a latency consideration.</p>
-<p><strong>What should I do as a leader?</strong> In your next cloud and infrastructure negotiations, ask vendors directly about their data center distribution strategy and how they are managing local regulatory risk. Concentration in regions with active moratoriums is a business continuity exposure.</p>
-<p><strong>Source:</strong> <a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxNejlJTzItQW5TYVNXUjJTRmhuUm52OUxCc2hHYVpOYTBITWJYM2ZsZVJUM1IySzBFVHJYenZOaURnNjBGSzlEV3g0MXRxZ3lBXy1xTF93YjFURWdHbUtFZzk0Zm8wV0w0bFU4bTJrX3JNYi1CaEJuNV9UQ25MdV9USG9DbldJX0d5bHZjVTB3VjR1enpDbXlWVFcwZ3BxZ2s?oc=5">The Information via Google News</a> — June 24, 2026</p>
+<h3>Adobe Acquires Topaz Labs, Bringing AI Image Enhancement Into Creative Cloud</h3>
+<p>Adobe confirmed it is acquiring Topaz Labs, maker of widely used AI-powered image and video enhancement tools. The deal brings industry-leading upscaling, noise reduction, and sharpening AI into the Creative Cloud ecosystem, where Adobe plans to integrate them across Photoshop, Premiere, and related applications.</p>
+<p>For enterprises with significant creative, marketing, or media production workflows, this means best-in-class AI image enhancement will soon be available within existing Adobe licenses — without maintaining separate tooling or vendor contracts. It also reinforces Adobe's position that integrated workflow AI beats standalone point solutions for professional users.</p>
+<p><strong>Sources:</strong> <a href="https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/">TechCrunch</a> — June 25, 2026</p>
 <hr>
-<h3>Europe Pushes Back on Washington's Chip Export Controls</h3>
-<p>European companies — led by ASML CEO Christophe Fouquet — are pushing back on U.S. efforts to extend semiconductor export restrictions to older-generation deep ultraviolet (DUV) tools. These are machines ASML has been shipping to China for roughly a decade. The proposed MATCH Act would now put them off-limits.</p>
-<p>If export controls tighten further, the global semiconductor supply chain will fragment more sharply. Enterprises with significant operations in Europe or Asia, or with dependencies on overseas hardware manufacturing, should monitor this — chip supply chain disruptions cascade into compute availability, hardware procurement timelines, and vendor stability.</p>
-<p><strong>Source:</strong> <a href="https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/">TechCrunch</a> — June 24, 2026</p>
-<hr>
-<h3>The $27 Million AI Proxy War Ends in a Draw</h3>
-<p>The congressional primary in New York's 12th District — where AI-backed Super PACs spent a combined $27 million backing competing candidates — closed without a decisive AI-powered win. Challenger Alex Bores, heavily backed by the tech industry, lost to Micah Lasher, who will replace Rep. Jerry Nadler.</p>
-<p>AI industry money in U.S. congressional races is no longer a speculative risk. The candidates who shape AI regulation are now, themselves, shaped by AI-backed political spending. The relationship between AI industry investment and AI policy outcomes is a dynamic that enterprise government affairs teams should begin modeling explicitly.</p>
-<p><strong>Source:</strong> <a href="https://www.theverge.com/ai-artificial-intelligence/956263/alex-bores-new-york-12th-district-congressional-primary-results">The Verge</a> — June 24, 2026</p>
+<h3>O'Reilly Maps the Complete AI Agent Stack for Enterprise Teams</h3>
+<p>O'Reilly published a comprehensive six-layer framework for building production-ready AI agents, covering orchestration, memory, tools, evaluation, deployment, and governance. The guide is aimed at practitioners moving from LLM experimentation to operational systems at enterprise scale.</p>
+<p>For teams evaluating or building agentic systems, this framework serves as both vocabulary and a gap analysis tool. It surfaces where proprietary platforms, open-source tooling, and custom development intersect — and where enterprises are most likely to need to build rather than buy. It is one of the more practically structured overviews of the agent landscape published in 2026.</p>
+<p><strong>What should I do?</strong> Use this framework as a reference before your next agent architecture review or build-vs.-buy evaluation. It is more useful for cross-system planning than most vendor documentation.</p>
+<p><strong>Sources:</strong> O'Reilly Radar — June 25, 2026</p>
 <hr>
 <h2>Quick Hits</h2>
 <ul>
-<li><strong>Google keeps bleeding top AI talent</strong> — Jonas Adler and Alexander Pritzel are leaving Google for Anthropic, continuing a trend that saw Noam Shazeer and John Jumper depart for rivals. <a href="https://the-decoder.com/google-keeps-losing-top-ai-researchers-to-rivals/">The Decoder</a> / <a href="https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/">TechCrunch</a></li>
+<li><strong>Patronus AI raises $50M</strong> to build simulated digital environments for stress-testing AI agents — addressing the pre-deployment evaluation gap as enterprise agent deployments accelerate. — <a href="https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/">TechCrunch</a></li>
 </ul>
 <ul>
-<li><strong>SambaNova eyes $10B valuation</strong> — Intel-backed AI chip firm SambaNova is reportedly seeking a new funding round that would quintuple its current valuation. Enterprises evaluating on-premise inference hardware have more options. <a href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxPMV9JNkRQbEtxZlBKMkFWZW5FOWRQeWhoWHlUc3ZkUVZ1MnFDZU1DRnVBZ0lzTldpQUFnTi15RFBZaGFVSWFFODFQRFZtdW5VVFR6Z05wT196LXdERkgtWjU5OGQ0Y0pjcWRCS0U1Rk9hdjZHQ0xDRktEdjhnaDA2RmRmT0F3bHRodjNoendmSklBM01lbjBlWE1sSi1Td3RhemVJZmNqMDNmdw?oc=5">The Information via Google News</a></li>
+<li><strong>Google is overhauling its AI coding team</strong> amid an internal struggle to close the gap with Anthropic's Claude in developer tools — a significant shake-up at one of the most-watched AI players. — <a href="https://news.google.com/rss/articles/CBMirwFBVV95cUxQMHp2aWdfbjFNSFFROHdvbVlwYS1KSlZNUVduYXhjTVJEZVY1V1RFWlVjRXhaQ0JPOFJPaEtZaGZjamtLZDhGWFF4UXpsZGdpdjZDdzlqd1l1bzNKTnE5cHJjTDVMZk8tYWZDV2RMRmI5WDhjX2F6V29QV0RPaG9zc3ZXNHVrNnVDOXl5Y21RaXpESlFKSG5KcGcxTDJ1NW5VRmRhZzBVVjNyQTg2bkRR?oc=5">The Information</a></li>
 </ul>
 <ul>
-<li><strong>Agility Robotics plans SPAC at $2.5B</strong> — The humanoid robotics company spun out of Oregon State University in 2015 expects to generate $620 million in proceeds. <a href="https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/">TechCrunch</a></li>
+<li><strong>Databricks' former AI chief</strong> claims a new image-generation technique can reduce AI's power consumption by 1,000x — an ambitious claim that, if even partially validated, would reshape the economics of AI infrastructure. — <a href="https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/">TechCrunch</a></li>
 </ul>
 <ul>
-<li><strong>Trase raises $107M to accelerate enterprise AI adoption</strong> — The startup targets large-firm AI implementation, a category that continues to attract significant venture investment. <a href="https://news.google.com/rss/articles/CBMioAFBVV95cUxOdXJhUzRtM3J2WWJMeWM1Nl9rYm5WUXpYZkZ2SjZabDFaSVhrakpiMlZ5WGxGNVBSSk5SamhDQnlBUnB3a2NQN0trZjcwdUNpR0xpalI1S1hsWW85aWVxYXJ5cFIzb0NORFFDRTZmU1RkQUY3M3VvNFRuME1fZHdSRWFaTkRCTVBCMmxOZWlUbWpNM1owRkVQM2d5dFhaRFpF?oc=5">The Information via Google News</a></li>
+<li><strong>General Intuition raises $320M</strong> on a $2.3 billion valuation, betting that millions of hours of video game data can teach AI agents something closer to human intuition for real-world task performance. — <a href="https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/">TechCrunch</a></li>
 </ul>
 <ul>
-<li><strong>Cerebras stock drops after first earnings</strong> — The AI chipmaker forecast a narrower gross margin in its core business on its first post-IPO earnings call, alarming investors. <a href="https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/">TechCrunch</a></li>
+<li><strong>Google is taking a tough stance in AI content licensing talks</strong> with major publishers — declining terms that news organizations consider minimally acceptable, per The Information. — <a href="https://news.google.com/rss/articles/CBMipgFBVV95cUxQY3dGbTlKTzFBZjFDTUJPTnQ4by1iWXp2MUh5UWQtdnJ6NUNFZTBZU0hyMGlZdmV6NEtrMGZ6TG96TGE2aURBNnViOHhJdzVkWlg5cV9lN0pyZVBvQUpXaWo0a2R5UzVsemMwSzBINXdIdzRoYTItT0VNaGlTcjRRSGRKVnpZeEtsT3ZhRGpZUVpyS2lSWWtMVzhxdGpoMEhaZVl4d3VB?oc=5">The Information</a></li>
 </ul>
 <ul>
-<li><strong>Memory chip profits surge at Micron</strong> — Revenue quadrupled year-over-year to $41.45 billion as the AI-driven memory crunch pays off for U.S. manufacturers; net profit rose to $28.2 billion from $1.88 billion. <a href="https://techcrunch.com/2026/06/24/the-memory-chip-crunch-is-paying-off-for-this-u-s-company/">TechCrunch</a></li>
+<li><strong>NHTSA proposed removing the brake pedal requirement</strong> for autonomous vehicles — a regulatory signal that could clear meaningful path for fully driverless commercial fleet deployment. — <a href="https://news.google.com/rss/articles/CBMiowFBVV95cUxPM09RVmlPR1ZBRWlWV3NWcTlMSXowak1KcUw5ZDhreVZVUElrS1dUdVRpdTcwX1h0T2poY1l2cmRUcjZkNFZ2NklhaVJaRE16alBySENjcDdEYjNPRUJjdU5BdnN1NjBoeVd3VWZuYjExRk5WVHEtRTctcWw3VU9XSF9Jakh2ZExhSHg1RW5XYmVSZmF2TWhTS1B1Rzd5ZTVUUFg4?oc=5">The Information</a></li>
 </ul>
 <ul>
-<li><strong>Facebook revives Creator Studio as AI companion</strong> — The page-management tool, shuttered in 2023, is back as a standalone AI-powered app for creators, with Facebook's recently launched AI creator assistant built in. <a href="https://www.theverge.com/tech/956668/meta-facebook-creator-studio-ai-app-relaunch">The Verge</a></li>
+<li><strong>MIT Technology Review profiles AI's back-of-house retail transformation</strong> — the biggest AI changes in retail are happening in search ranking, inventory decisions, and pricing, not in consumer-facing chatbots. — <a href="https://www.technologyreview.com/2026/06/25/1137848/repositioning-retail-for-the-ai-era/">MIT Technology Review</a></li>
 </ul>
 <ul>
-<li><strong>Former Infosys CEO launches AI services startup</strong> — Vishal Sikka's new venture, backed by Mayfield and Aramco Ventures, aims to challenge the traditional IT services model with an AI-native approach. <a href="https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/">TechCrunch</a></li>
+<li><strong>Anthropic launched Claude Code: Foundations</strong> — a structured learning path for developers building production AI systems with Claude Code, providing an official starting point for enterprise engineering teams. — <a href="https://news.google.com/rss/articles/CBMiakFVX3lxTFBMS1I0TVlaZVd3Q0o1VWw1LWk2MGNoX1VBX3JUY0hqM29abnJBU1FaVU5rajd0Tlh5ZUNQYkU3RW5laXNJelFYOU9NTzlkNXJWejc3Rzc5YjBTT0ZKRHpKZnB1RlFwRGxtMVE?oc=5">Anthropic</a></li>
 </ul>
 <hr>
 <h2>Looking Ahead</h2>
 <ul>
-<li>OpenAI's Jalapeño chip will face its first real test in inference deployments over the coming months. Watch for pricing announcements that signal how quickly the cost reduction reaches enterprise customers — and whether it triggers competitive responses from Google and Microsoft.</li>
-<li>Google's computer use capability in Gemini 3.5 Flash sets a new baseline for agentic automation. Expect announcements from other major vendors at upcoming developer conferences, along with the first wave of security guidance from enterprise risk teams.</li>
-<li>The U.S. data center moratorium wave will likely surface in congressional hearings this summer, potentially intersecting with AI energy and infrastructure policy. Enterprises planning physical AI infrastructure should build a 12–24 month permitting risk buffer into their timelines.</li>
-<li>AI governance is moving from optional to operational. Token budgets, AI-disclosure policies for documents, and moderation oversight frameworks are the new frontier. Organizations without these in place are running a governance debt that will compound.</li>
+<li><strong>GPT-5.6 access may become stratified by sector and relationship.</strong> If government-gated model releases become the pattern for frontier AI, enterprises with documented responsible-use practices and existing vendor partnerships will have structural advantages. Start building that record now.</li>
+</ul>
+<ul>
+<li><strong>Open-source AI security is the next enterprise frontier.</strong> Akrites signals that the industry is treating AI-accelerated vulnerability exploitation as an imminent threat — not a future scenario. Enterprises that audit and harden software supply chains before this attack pattern matures will be ahead of the recovery curve.</li>
+</ul>
+<ul>
+<li><strong>AI billing governance is becoming a real cost center.</strong> With Anthropic charge anomalies making headlines and API usage sprawling across teams and tools, dedicated AI cost governance — automated alerting, usage tagging, budget gates — is moving from nice-to-have to operational necessity.</li>
+</ul>
+<ul>
+<li><strong>Infrastructure supply chain risk deserves a line in your risk register.</strong> Between TSMC packaging constraints and ongoing geopolitical friction over chip exports, the physical layer of AI computing is showing meaningful fragility. Factoring this into infrastructure planning now avoids delivery surprises later.</li>
 </ul>
 <hr>
 <h2>Sign-off</h2>
-<p>Something notable happened yesterday: the world's leading AI company unveiled a chip named after a pepper, and a 300-dollar congressional campaign became a $27 million test case for AI money in democracy. If that combination doesn't capture the simultaneously earnest and slightly surreal pace of this moment, nothing does.</p>
-<p>The AI transformation isn't a single announcement or a single election. It is a thousand small pivots happening in parallel — infrastructure being rebuilt, jobs being re-sorted, lawmakers scrambling to keep pace, and individual workers learning to ask better questions of their tools. That is not a crisis. It is the normal texture of a significant technology transition, which is both harder and more interesting than any single headline suggests.</p>
-<p>Stay grounded, stay curious, and remember: the organizations navigating this well are the ones building governance alongside capability. We'll see you tomorrow.</p>
-<p>— Yesterday in Enterprise AI</p>
+<p>Yesterday reminded us that the arc of enterprise AI bends toward accountability — sometimes gently, sometimes with the blunt force of a government directive or a court filing. The White House stepping into OpenAI's release schedule and Ford quietly rehiring the engineers it once displaced are, at their heart, the same story: there are things that institutions and humans have not yet figured out how to delegate, and recognizing that honestly is not weakness — it is discernment.</p>
+<p>From the chip packaging lines of Taiwan to the data centers rising across India, the infrastructure of tomorrow's AI is being built today. The organizations that invest alongside it — thoughtfully, with governance structures that match the capability — will be the ones who look back and say they were ready.</p>
+<p>Thanks for reading. Keep building carefully, and keep the humans in the loop.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li>Feed 1 (<code>ai_rss_feed.json</code>): 50 items fetched; 0 items fell within the 24–36 hour window (June 23, 8:34 PM PDT to June 25, 8:34 AM PDT) — all were timestamped June 23 at approximately 10:00 AM PDT and were already covered in the June 24 edition.</li>
-<li>Feed 2 (<code>aggregated_wes_ai_news.json</code>): 30 items fetched; all 30 fell within the window.</li>
-<li>Combined totals: 80 items fetched, 30 within window.</li>
-<li>items_fetched_count: 80</li>
-<li>items_within_24_36_hours_count: 30</li>
-<li>items_deduplicated_count: 7 (OpenAI chip 2 sources → 1 story; Google Gemini computer use 2 sources → 1 story; Figma Config 2 sources → 1 story; Google AI researcher departures 2 sources → combined mention)</li>
-<li>items_excluded_for_relevance: 3 ("Hidden Open Thread 439.5" — not enterprise relevant; "Explore the markets with Interactive Brokers and Grok" — marketing promotion; "What's a Bet on Kalshi Really Worth?" — financial speculation, not enterprise AI)</li>
-<li>items_published_count: 20 (12 main stories + 8 Quick Hits)</li>
-<li>The Alex Bores story appeared in the June 24 edition as a preview of the race; today's coverage is the confirmed election result — a new development and a new angle.</li>
-<li>Several items from The Information are linked via Google News redirect URLs; those articles are behind a paywall and the redirect links are the only canonical URLs available in the feed.</li>
-<li>Window calculation: NOW_PT = June 25, 2026, 8:34 AM PDT; WINDOW_START = June 23, 2026, 8:34 PM PDT (36-hour lookback used to capture full "yesterday" coverage).</li>
+<li><strong>items_fetched_count:</strong> 80 (50 items from <code>ai_rss_feed.json</code> primary feed; 30 items from <code>aggregated_wes_ai_news.json</code> secondary feed)</li>
+<li><strong>items_within_36_hour_window_count:</strong> 28 (6 from primary feed dated June 25, 2026 at midnight UTC; 22 from secondary feed with precise timestamps between June 25, 2026 03:16 UTC and June 26, 2026 15:16 UTC)</li>
+<li><strong>items_outside_strict_window_but_included:</strong> 2 — the Anthropic-Alibaba Reuters story (June 24, 2026 19:48 UTC, approximately 43 hours before generation, not covered in the previous newsletter) and primary feed items timestamped at midnight UTC June 25 (technically 39+ hours before generation, but representing June 25 content)</li>
+<li><strong>items_deduplicated_count:</strong> 5 (GPT-5.6 delay story appeared in 4 sources consolidated into one entry; Ford story appeared in 2 sources consolidated into one entry)</li>
+<li><strong>items_excluded_already_covered:</strong> 17 items covered in the June 25, 2026 newsletter (OpenAI Jalapeño chip, Gemini 3.5 Flash computer use, Qualcomm/Modular, OpenAI agents paper, token budget crisis, AI engineering jobs, Meta moderation rollout, British police AI, Florida staffer/Claude, Figma updates, Europe chip war, Google researcher departures, Agility Robotics SPAC, Cerebras stock, memory chip crunch, Meta Creator Studio, Infosys startup)</li>
+<li><strong>items_excluded_promotional_or_off_topic:</strong> 3 (TechCrunch Founder Summit promotional item, Bumble dating app sale, Windows-Copilot-API GitHub project — consumer-focused)</li>
+<li><strong>items_published_count:</strong> 18 (10 primary stories + 8 Quick Hits)</li>
+<li><strong>previous_newsletter_checked:</strong> Yes — <code>Daily-Report/AI/index.html</code> dated June 25, 2026 was reviewed to avoid repeating items</li>
+<li><strong>feed_access:</strong> Primary feed fetched successfully via Python <code>urllib</code>; shell <code>curl</code> was blocked by network policy. Both JSON feeds resolved correctly.</li>
+<li><strong>date_filtering_note:</strong> Pacific Daylight Time (PDT, UTC−7) used throughout. Generation time: June 26, 2026 08:16 PDT (15:16 UTC). Window start: June 25, 2026 03:16 UTC (36-hour lookback). Primary feed date-only timestamps (midnight UTC) treated as June 25 content per editorial judgment.</li>
+<li><strong>sources_not_accessible:</strong> No NYT paywall articles were fetched beyond headline/URL; The Information articles accessed only through Google News proxy links. Content summaries based on headlines and available descriptions only.</li>
 </ul>
     </section>
     <footer>
