@@ -4599,5 +4599,43 @@
       "https://tschopp.net/users/Ted/statuses/116811617412050640"
     ],
     "lastTootTimestamp": 1782403830282
+  },
+  "https://tedt.org/Shadow-App-Serenade/": {
+    "id": "/Shadow-App-Serenade/",
+    "title": "Shadow App Serenade",
+    "summary": "A sly, syncopated hip-hop musical-theater song lyric about citizen builders, shadow apps, hidden automations, business-critical workarounds, and the operational question underneath every clever fix.",
+    "content_text": "A sly, syncopated hip-hop musical-theater song lyric about citizen builders, shadow apps, hidden automations, business-critical workarounds, and the operational question underneath every clever fix. https://tedt.org/Shadow-App-Serenade/",
+    "url": "https://tedt.org/Shadow-App-Serenade/",
+    "image": "https://tedt.org/img/2026-06/Shadow-App-Serenade.webp",
+    "tags": [
+      "citizen-development",
+      "shadow-it",
+      "shadow-apps",
+      "enterprise-it",
+      "governance",
+      "low-code",
+      "workflow",
+      "automation",
+      "spreadsheets",
+      "dashboards",
+      "bots",
+      "operations",
+      "supportability",
+      "resilience",
+      "song-lyrics",
+      "creative-writing",
+      "musical-theater"
+    ],
+    "date_published": "2026-06-26T00:00:00-07:00",
+    "date_modified": "2026-06-26T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116817700903126238"
+    ],
+    "lastTootTimestamp": 1782496656954
   }
 }
