@@ -4676,5 +4676,34 @@
       "https://tschopp.net/users/Ted/statuses/116818145701715471"
     ],
     "lastTootTimestamp": 1782503444019
+  },
+  "https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/": {
+    "id": "/Customizing-Copilots-Thinking-Messages-in-VS-Code/",
+    "title": "Customizing Copilot's Thinking Messages in VS Code",
+    "summary": "VS Code lets you customize the short thinking messages shown while GitHub Copilot works. Here is how to replace the default agent status phrases with a custom list in your own voice.",
+    "content_text": "VS Code lets you customize the short thinking messages shown while GitHub Copilot works. Here is how to replace the default agent status phrases with a custom list in your own voice. https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/",
+    "url": "https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/",
+    "image": "https://tedt.org/img/2026-06/Middle-Earth-Panorama.webp",
+    "tags": [
+      "github-copilot",
+      "vs-code",
+      "visual-studio-code",
+      "ai-coding",
+      "developer-experience",
+      "agentic-engineering",
+      "settings-json",
+      "workflow-design"
+    ],
+    "date_published": "2026-06-26T00:00:00-07:00",
+    "date_modified": "2026-06-26T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116819979589567799"
+    ],
+    "lastTootTimestamp": 1782531426936
   }
 }
