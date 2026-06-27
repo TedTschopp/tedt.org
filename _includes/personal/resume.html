@@ -2,10 +2,11 @@
   <div id="contacts">
     <h3 class="underlined">{{locale.summary}}</h3>
     <div class="row">
-      {% if resume.basics.website %}
+      {% assign resume_url = resume.basics.url | default: resume.basics.website %}
+      {% if resume_url %}
         <div class="website col-sm-4">
           <strong>{{locale.website}}</strong>
-          <a href="{{resume.basics.website}}">{{resume.basics.website}}</a>
+          <a href="{{resume_url}}">{{resume_url}}</a>
         </div>
       {% endif %}
       {% if resume.basics.email %}
@@ -27,10 +28,11 @@
       <p>{{resume.basics.summary}}</p>
     </div>
   {% endif %}
-  {% if resume.basics.profiles != empty %}
+  {% assign resume_profiles = resume.profiles | default: resume.basics.profiles %}
+  {% if resume_profiles != empty %}
     <section id="profiles">
       <div class="row">
-        {% for profile in resume.basics.profiles %}
+        {% for profile in resume_profiles %}
           <div class="col-sm-4">
             {% if profile.network %}
               <strong class="network">
@@ -57,11 +59,13 @@
   <section id="work">
     <h3 class="underlined">{{locale.work}}</h3>
     {% for work in resume.work %}
+    {% assign work_name = work.name | default: work.company %}
+    {% assign work_url = work.url | default: work.website %}
     <div class="entry">
-      {% if work.company %}
-      <section id="{{ work.company | append: '-' | append: forloop.index | slugify }}">
+      {% if work_name %}
+      <section id="{{ work_name | append: '-' | append: forloop.index | slugify }}">
         <h4 class="title">
-          {{work.company}}
+          {{work_name}}
           <span class="date">
             {% if work.startDate %}
             <span class="start-date">
@@ -82,9 +86,9 @@
       </section>
       {% endif %}
 
-      {% if work.website %}
+      {% if work_url %}
       <div class="website">
-        <a href="{{work.website}}">{{work.website}}</a>
+        <a href="{{work_url}}">{{work_url}}</a>
       </div>
       {% endif %}
 
@@ -96,8 +100,16 @@
 
       {% if work.summary %}
       <div class="summary">
-        <p>{{work.summary}}</p>
+        {{ work.summary | markdownify }}
       </div>
+      {% endif %}
+
+      {% if work.keywords != empty %}
+      <ul class="keywords">
+        {% for keyword in work.keywords %}
+        <li>{{keyword}}</li>
+        {% endfor %}
+      </ul>
       {% endif %}
 
       {% if work.highlights != empty %}
@@ -112,24 +124,27 @@
   </section>
 {% endif %}
 
-{% if resume.volunteer != empty %}
+{% assign resume_projects = resume.projects | default: resume.volunteer %}
+{% if resume_projects != empty %}
   <section id="projects">
     <h3 class="underlined">{{locale.projects}}</h3>
-    {% for volunteer in resume.volunteer %}
+    {% for project in resume_projects %}
+    {% assign project_name = project.name | default: project.organization %}
+    {% assign project_url = project.url | default: project.website %}
     <div class="entry">
-      {% if volunteer.organization %}
-      <section id="{{ volunteer.organization | slugify }}">
+      {% if project_name %}
+      <section id="{{ project_name | slugify }}">
         <h4 class="title">
-          {{volunteer.organization}}
+          {{project_name}}
           <span class="date">
-            {% if volunteer.startDate %}
+            {% if project.startDate %}
             <span class="start-date">
-              {{ volunteer.startDate | date: "%B %Y" }} -
+              {{ project.startDate | date: "%B %Y" }} -
             </span>
             {% endif %}
-            {% if volunteer.endDate %}
+            {% if project.endDate %}
             <span class="end-date">
-              {{ volunteer.endDate | date: "%B %Y" }}
+              {{ project.endDate | date: "%B %Y" }}
             </span>
             {% else %}
             <span class="end-date">
@@ -141,27 +156,35 @@
       </section>
       {% endif %}
 
-      {% if volunteer.website %}
+      {% if project_url %}
       <div class="website">
-        <a href="{{volunteer.website}}">{{volunteer.website}}</a>
+        <a href="{{project_url}}">{{project_url}}</a>
       </div>
       {% endif %}
 
-      {% if volunteer.position %}
+      {% if project.position or project.description %}
       <div class="subtitle">
-        {{volunteer.position}}
+        {{ project.position | default: project.description }}
       </div>
       {% endif %}
 
-      {% if volunteer.summary %}
+      {% if project.summary %}
       <div class="summary">
-        <p>{{volunteer.summary}}</p>
+        {{ project.summary | markdownify }}
       </div>
       {% endif %}
 
-      {% if volunteer.highlights != empty %}
+      {% if project.keywords != empty %}
+      <ul class="keywords">
+        {% for keyword in project.keywords %}
+        <li>{{keyword}}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+
+      {% if project.highlights != empty %}
       <ul class="highlights">
-        {% for highlight in volunteer.highlights %}
+        {% for highlight in project.highlights %}
         <li>{{highlight}}</li>
         {% endfor %}
       </ul>
@@ -203,8 +226,9 @@
 
       {% if education.area %}
       <div class="subtitle">
-        {% if education.studyType %}
-        {{education.studyType}},
+        {% assign education_degree = education.degree | default: education.studyType %}
+        {% if education_degree %}
+        {{education_degree}},
         {% endif %}
         {{education.area}}
       </div>
@@ -212,8 +236,9 @@
 
       {% if education.courses != empty %}
       <p>
-        {% if education.studyType %}
-        <strong> {{education.studyType}}: </strong>
+        {% assign education_degree = education.degree | default: education.studyType %}
+        {% if education_degree %}
+        <strong> {{education_degree}}: </strong>
         {% else %}
         <strong> Courses: </strong>
         {% endif %}
@@ -311,9 +336,10 @@
   <h3 class="underlined">{{locale.references}}</h3>
   {% for reference in resume.references %}
   <div class="item">
-    {% if reference.reference %}
+    {% assign reference_summary = reference.summary | default: reference.reference %}
+    {% if reference_summary %}
     <blockquote class="reference">
-      {{reference.reference}}
+      {{reference_summary}}
     </blockquote>
     {% endif %}
     {% if reference.name %}
@@ -321,17 +347,9 @@
       — {{reference.name}}
     </div>
     {% endif %}
-    {% if reference.date or reference.relationship or reference.headline %}
+    {% if reference.relationship %}
     <div class="reference-meta">
-      {% if reference.date %}
-      <span class="date">{{ reference.date | date: "%B %-d, %Y" }}</span>
-      {% endif %}
-      {% if reference.relationship %}
       <span class="relationship">{{ reference.relationship }}</span>
-      {% endif %}
-      {% if reference.headline %}
-      <span class="headline">{{ reference.headline }}</span>
-      {% endif %}
     </div>
     {% endif %}
   </div>

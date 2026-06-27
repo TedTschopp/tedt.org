@@ -1,0 +1,201 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yamlresume.dev/schemas/v0.13.0/schema.json",
+  "title": "YAMLResume v0.13.0 Local Schema",
+  "type": "object",
+  "required": ["content"],
+  "additionalProperties": false,
+  "properties": {
+    "content": {
+      "type": "object",
+      "required": ["basics", "education"],
+      "additionalProperties": false,
+      "properties": {
+        "basics": {
+          "type": "object",
+          "required": ["name"],
+          "additionalProperties": false,
+          "properties": {
+            "name": { "type": "string", "minLength": 2, "maxLength": 128 },
+            "email": { "type": ["string", "null"], "format": "email" },
+            "headline": { "type": ["string", "null"], "minLength": 2, "maxLength": 128 },
+            "phone": { "type": ["string", "null"] },
+            "summary": { "$ref": "#/$defs/nullableSummary" },
+            "url": { "$ref": "#/$defs/url" }
+          }
+        },
+        "education": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["area", "institution", "degree", "startDate"],
+            "additionalProperties": false,
+            "properties": {
+              "area": { "type": "string", "minLength": 2, "maxLength": 64 },
+              "institution": { "type": "string", "minLength": 2, "maxLength": 128 },
+              "degree": { "enum": ["Middle School", "High School", "Diploma", "Associate", "Bachelor", "Master", "Doctor"] },
+              "startDate": { "$ref": "#/$defs/dateString" },
+              "courses": { "$ref": "#/$defs/keywords" },
+              "endDate": { "$ref": "#/$defs/nullableDateString" },
+              "summary": { "$ref": "#/$defs/nullableSummary" },
+              "score": { "type": ["string", "null"], "minLength": 2, "maxLength": 32 },
+              "url": { "$ref": "#/$defs/url" }
+            }
+          }
+        },
+        "location": {
+          "type": ["object", "null"],
+          "required": ["city"],
+          "additionalProperties": false,
+          "properties": {
+            "city": { "type": "string", "minLength": 2, "maxLength": 64 },
+            "address": { "type": ["string", "null"], "minLength": 4, "maxLength": 256 },
+            "country": { "type": ["string", "null"] },
+            "postalCode": { "type": ["string", "null"], "minLength": 2, "maxLength": 16 },
+            "region": { "type": ["string", "null"], "minLength": 2, "maxLength": 64 }
+          }
+        },
+        "profiles": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "object",
+            "required": ["network", "username"],
+            "additionalProperties": false,
+            "properties": {
+              "network": {
+                "enum": ["Behance", "Dribbble", "Facebook", "GitHub", "Gitlab", "Instagram", "Line", "LinkedIn", "Medium", "Pinterest", "Reddit", "Snapchat", "Stack Overflow", "Telegram", "TikTok", "Twitch", "Twitter", "Vimeo", "Weibo", "WeChat", "WhatsApp", "YouTube", "Zhihu"]
+              },
+              "username": { "type": "string", "minLength": 2, "maxLength": 64 },
+              "url": { "$ref": "#/$defs/url" }
+            }
+          }
+        },
+        "work": {
+          "type": ["array", "null"],
+          "items": { "$ref": "#/$defs/workItem" }
+        },
+        "projects": {
+          "type": ["array", "null"],
+          "items": { "$ref": "#/$defs/projectItem" }
+        },
+        "skills": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "object",
+            "required": ["level", "name"],
+            "additionalProperties": false,
+            "properties": {
+              "level": { "enum": ["Novice", "Beginner", "Intermediate", "Advanced", "Expert", "Master"] },
+              "name": { "type": "string", "minLength": 2, "maxLength": 128 },
+              "keywords": { "$ref": "#/$defs/keywords" }
+            }
+          }
+        },
+        "interests": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "object",
+            "required": ["name"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "minLength": 2, "maxLength": 128 },
+              "keywords": { "$ref": "#/$defs/keywords" }
+            }
+          }
+        },
+        "references": {
+          "type": ["array", "null"],
+          "items": {
+            "type": "object",
+            "required": ["name", "summary"],
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string", "minLength": 2, "maxLength": 128 },
+              "summary": { "$ref": "#/$defs/summary" },
+              "email": { "type": ["string", "null"], "format": "email" },
+              "phone": { "type": ["string", "null"] },
+              "relationship": { "type": ["string", "null"], "minLength": 2, "maxLength": 128 }
+            }
+          }
+        },
+        "awards": { "type": ["array", "null"] },
+        "certificates": { "type": ["array", "null"] },
+        "languages": { "type": ["array", "null"] },
+        "publications": { "type": ["array", "null"] },
+        "volunteer": { "type": ["array", "null"] }
+      }
+    },
+    "locale": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "properties": {
+        "language": { "enum": ["en", "zh-hans", "zh-hant-hk", "zh-hant-tw", "es", "fr", "no", "nl", "ja", "de", "id", "pt-br", null] }
+      }
+    },
+    "layouts": {
+      "type": ["array", "null"],
+      "items": {
+        "type": "object",
+        "required": ["engine"],
+        "additionalProperties": false,
+        "properties": {
+          "engine": { "enum": ["docx", "html", "latex", "markdown"] },
+          "sections": {
+            "type": ["object", "null"],
+            "additionalProperties": false,
+            "properties": {
+              "order": {
+                "type": ["array", "null"],
+                "items": { "enum": ["basics", "education", "work", "volunteer", "awards", "certificates", "publications", "skills", "languages", "interests", "references", "projects"] }
+              },
+              "aliases": { "type": ["object", "null"] }
+            }
+          },
+          "page": { "type": ["object", "null"] },
+          "template": { "type": ["string", "null"] },
+          "typography": { "type": ["object", "null"] },
+          "advanced": { "type": ["object", "null"] }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "dateString": { "type": "string", "minLength": 4, "maxLength": 32 },
+    "nullableDateString": { "type": ["string", "null"], "minLength": 4, "maxLength": 32 },
+    "summary": { "type": "string", "minLength": 16, "maxLength": 1024 },
+    "nullableSummary": { "type": ["string", "null"], "minLength": 16, "maxLength": 1024 },
+    "url": { "type": ["string", "null"], "format": "uri", "maxLength": 256 },
+    "keywords": {
+      "type": ["array", "null"],
+      "items": { "type": "string", "minLength": 1, "maxLength": 32 }
+    },
+    "workItem": {
+      "type": "object",
+      "required": ["name", "position", "startDate", "summary"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 2, "maxLength": 128 },
+        "position": { "type": "string", "minLength": 2, "maxLength": 64 },
+        "startDate": { "$ref": "#/$defs/dateString" },
+        "summary": { "$ref": "#/$defs/summary" },
+        "endDate": { "$ref": "#/$defs/nullableDateString" },
+        "keywords": { "$ref": "#/$defs/keywords" },
+        "url": { "$ref": "#/$defs/url" }
+      }
+    },
+    "projectItem": {
+      "type": "object",
+      "required": ["name", "startDate", "summary"],
+      "additionalProperties": false,
+      "properties": {
+        "name": { "type": "string", "minLength": 2, "maxLength": 128 },
+        "startDate": { "$ref": "#/$defs/dateString" },
+        "summary": { "$ref": "#/$defs/summary" },
+        "description": { "type": ["string", "null"], "minLength": 4, "maxLength": 128 },
+        "endDate": { "$ref": "#/$defs/nullableDateString" },
+        "keywords": { "$ref": "#/$defs/keywords" },
+        "url": { "$ref": "#/$defs/url" }
+      }
+    }
+  }
+}
