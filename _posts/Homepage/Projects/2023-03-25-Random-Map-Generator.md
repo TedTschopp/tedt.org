@@ -29,7 +29,6 @@ seo-description: This bot Uses Gary Gygax's DMG Appendix B Random Wilderness Ter
   various biomes.
 categories:
 - Projects
-- Home
 tags: Project
 keywords: null
 location:

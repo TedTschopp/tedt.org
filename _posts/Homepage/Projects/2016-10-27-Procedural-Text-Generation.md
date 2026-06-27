@@ -23,7 +23,6 @@ description: "An application that generates text using procedural methods. \n"
 seo-description: An application that generates text using procedural methods.
 categories:
 - Projects
-- Home
 tags: Project
 keywords: null
 location:

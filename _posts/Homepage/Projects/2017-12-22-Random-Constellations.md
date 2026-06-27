@@ -30,7 +30,6 @@ seo-description: An application I threw together to output a bunch of Procedural
   generated star constellations.
 categories:
 - Projects
-- Home
 tags: Project
 keywords: Twitter and Mastodon Bots, JavaScript and HTML
 location:

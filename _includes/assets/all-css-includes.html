@@ -20,7 +20,14 @@
     <link rel="stylesheet" type="text/css" href="{{ '/css/logo-and-company-fonts.css' | relative_url }}">
 
     <!-- Custom CSS -->
+    {% assign use_homepage_design = false %}
     {% if full-page-url == home-page-url %}
+        {% assign use_homepage_design = true %}
+    {% endif %}
+    {% if page.homepage_design == true or page.homepage_design == 'true' %}
+        {% assign use_homepage_design = true %}
+    {% endif %}
+    {% if use_homepage_design %}
         <link rel="stylesheet" type="text/css" href="{{ '/css/homepage-display-fonts.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/main-landing-page.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/timeline.css' | relative_url }}">
