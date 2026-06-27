@@ -1,0 +1,360 @@
+basics:
+  name: Ted Tschopp
+  label: Senior Enterprise Architect
+  website: https://tedt.org/
+  email: ted@tschopp.org
+  phone: null
+  location:
+    city: Los Angeles
+    region: California
+    countryCode: US
+  summary: >-
+    I am a Senior Enterprise Architect based in Los Angeles, working at the
+    intersection of enterprise architecture, artificial intelligence, software
+    strategy, and digital automation. At Southern California Edison, I help shape
+    architecture strategy for AI, software, and enterprise products that support
+    one of the nation's largest electric utilities. My work sits where strategy
+    meets execution: platforms, guardrails, operating models, governance, risk,
+    developer experience, and the practical realities of making ambitious
+    technology useful, resilient, and sustainable inside a large organization.
+  profiles:
+    - network: GitHub
+      username: TedTschopp
+      url: https://github.com/TedTschopp
+    - network: LinkedIn
+      username: Ted Tschopp
+      url: https://www.linkedin.com/in/tedtschopp/
+    - network: Mastodon
+      username: TedT@twit.social
+      url: https://twit.social/@TedT
+    - network: X
+      username: TedTschopp
+      url: https://twitter.com/TedTschopp
+work:
+  - company: Southern California Edison
+    position: Enterprise Architect, Artificial Intelligence & Software
+    startDate: 2020-01-01
+    endDate: null
+    summary: >-
+      I am the Enterprise Architect for AI & Software. I provide strategic
+      architecture leadership for SCE's AI and software portfolios, shaping
+      strategy, roadmaps, and frameworks for 500+ enterprise products. Align
+      innovation with business outcomes, resilience, and regulatory expectations.
+    highlights:
+      - "AI Strategic Leadership: Built and executed an enterprise AI strategy, enabling cross-functional adoption and measurable business outcomes."
+      - "AI Governance & Standards: Partnered with Legal, Information Governance, the AI CoE, and industry groups to establish AI governance frameworks and coding standards, embedding compliance, trust, and accountability across initiatives."
+      - "Enterprise Automation: Designed a desktop automation framework that deployed 300+ virtual employees, reducing manual workloads, slashing error rates, and unlocking enterprise-wide productivity and engagement gains."
+      - "AI-Driven IT Ops: Pioneered the shift from reactive IT operations to LLM-enabled AIOps. Automated telemetry analysis, incident correlation, and response, accelerating resolution times, reducing overhead, and setting a new standard of service resilience."
+      - "Business-Led Development: Architect and process owner for SCE's first sanctioned business-partner development program since 1997, enabling 100+ developers to build and manage over 1,000 applications. This program democratized software creation, expanded innovation capacity, and established guardrails that balanced agility with enterprise compliance."
+  - company: Southern California Edison
+    position: Process Manager for Engineering and Build Process
+    startDate: 2020-01-01
+    endDate: null
+    summary: >-
+      I oversee the end-to-end management and governance of Solutions Engineering
+      and Build processes, serving as a key advisor for process improvement and
+      best practices.
+    highlights:
+      - "Strategically extended the use of source control mechanisms from compliance-focused products to encompass all company offerings, enhancing code consistency and facilitating more efficient development cycles across the enterprise."
+      - "Formulated and led the implementation of a DevOps strategy, unifying software development and IT operations to enhance collaboration and accelerate time-to-market for new product features."
+      - "Championed a cultural shift within the organization by introducing and promoting Agile methodologies, fostering a more collaborative and adaptive work environment to better respond to business needs."
+      - "Attained Lean Six Sigma certification and leveraged it to conduct quarterly Kaizens, strategically refining the build and engineering processes to eliminate waste and enhance value to the business."
+      - "Established and enforced coding standards and secure coding practices across the development teams, elevating code quality and reducing vulnerabilities to fortify the company's software products."
+  - company: Southern California Edison
+    position: Senior Solution Architect for SCE.com
+    startDate: 2010-01-01
+    endDate: 2020-01-01
+    summary: >-
+      I served as the technical team lead and the single point of contact for
+      technical accountability on SCE's eCommerce channel, overseeing the project
+      from concept through completion.
+    highlights:
+      - "Reduced third-party vendor costs by 50% to deliver SCE's first mobile app for iPhone and Android."
+      - "Cut costs of the SCE.com rebranding project from $13MM to under $1MM by implementing agile methodologies."
+      - "Represented SCE's digital and web interests in the UNITE group and IBM Digital Experience Customer Advisory Council."
+      - "Increased user satisfaction ratings by 20 index points through a mobile-first strategy."
+      - "Supported business case development for a $70MM capital program."
+      - "Supported business case development for a $25MM capital program."
+      - "Drove a 40% increase in self-service transaction growth."
+      - "Boosted mobile page views by 1000%, reaching 40% of total site traffic."
+      - "Improved turn-on/off service transactions by 75% while reducing manual order processing by 70%."
+      - "Led the development of user privacy, security, and identity management upgrades."
+  - company: Southern California Edison
+    position: Practice Lead - SAP Portal / Web
+    startDate: 2004-09-01
+    endDate: 2010-01-01
+    summary: >-
+      Served as a senior leader overseeing both SAP Portal and Web Development
+      teams at SCE, with combined responsibility for more than 40 professionals
+      in specialized domains.
+    highlights:
+      - "Led a dedicated team of over 10 SAP Portal Developers, focusing on the development and maintenance of SCE's SAP Portal with specialized expertise in SAP HCM and EAM."
+      - "Acted as the Practice Lead for a community of over 30 web developers, responsible for the development and ongoing maintenance of SCE's enterprise-level websites."
+      - "Orchestrated the decommissioning of 150 legacy business applications, enhancing operational efficiency and resource optimization."
+      - "Engineered a data center routing solution at the Edison International level, collaborating with stakeholders from Edison International companies and SCE."
+      - "Spearheaded the rebranding of the corporate intranet and Edison.com website, aligning both with organizational changes and earning accolades from the Web Marketing Association and The American Business Awards."
+      - "Presented on behalf of SCE at the NetWeaver Portal/BI Conference, sharing valuable insights into SCE's SOA integration practices."
+      - "Acted as an annual judge for the Cal Poly CIS ITC web design competition, representing SCE and contributing to the broader web development community."
+  - company: The One Ring - Tolkien Online
+    position: Founder and CTO
+    startDate: 1999-04-01
+    endDate: 2004-09-01
+    summary: >-
+      Founded and operated a leading website dedicated to J.R.R. Tolkien and The
+      Lord of the Rings, gaining notable recognition in the media landscape.
+    highlights:
+      - "Garnered media coverage from outlets including the Los Angeles Times, CNN, and The Guardian UK, establishing the website as an authoritative source in the field."
+      - "Featured in an extensive interview in the September 2001 issue of Wired Magazine, amplifying the site's reputation and reach."
+      - "Achieved a top 10,000 ranking on Alexa, underlining the website's popularity and impact in its niche."
+  - company: The Dohring Company
+    position: Director of Technical Services
+    startDate: 1994-02-01
+    endDate: 1999-05-01
+    summary: >-
+      Directed a multifaceted team overseeing market research, surveys, and call
+      center operations targeting both customer and competitor landscapes.
+    highlights:
+      - "Spearheaded the transition from Microsoft Word for DOS 5.1 to Windows 95 and Microsoft Office 95, modernizing the company's software infrastructure."
+      - "Innovated a product and market research report by synthesizing geospatial data and survey findings using Microsoft Word and MapInfo."
+      - "Elevated team productivity by 24% without increasing headcount through process refinements, targeted training, and advanced software tools."
+volunteer:
+  - organization: Corporate Intranet Redesign
+    position: Solution Engineer, Database Administrator, and Developer
+    website: /career/#corporate-intranet-redesign
+    summary: >-
+      Updated SCE's corporate intranet with new branding, templates, menuing
+      systems, AJAX, RSS, and improvements to the employee directory and paging
+      system.
+    highlights:
+      - "Developed a refreshed home page and seven templates incorporating the Building the Future branding while bridging the existing ERP Portal solution and previous company branding."
+      - "Integrated HTML, XML, RSS, AJAX, and Perl with Netscape Web Server and Sybase database technologies to improve interaction and accessibility."
+      - "Implemented an AJAX RSS reader, content wells for portlets, and overhauled two of the company's most frequently used internal applications."
+  - organization: Edison.com Redesign - Corporate Website
+    position: Architect, Solution Engineer, Database Administrator, and Developer
+    website: /career/#edison-com-redesign-corporate-website
+    summary: >-
+      Redesigned Edison International's public corporate website with Corporate
+      Communications, Investor Relations, and an external design firm.
+    highlights:
+      - "Led a collaborative redesign to modernize Edison International's web presence while honoring the company's century-long history as a California utility service provider."
+      - "Overhauled the site's content structure and backend CMS so templates functioned across five distinct servers with unique domain names and assets."
+      - "Used ASP, MSSQL, Microsoft Site Server, Windows 2003, HTML, RSS, Flash, XML, and JavaScript on a project recognized with three awards."
+  - organization: MyEdison.com - Corporate Portal
+    position: Solution Engineer and Developer
+    website: /career/#myedison-com-corporate-portal
+    summary: >-
+      Integrated internal web platforms into a unified corporate portal connected
+      to the corporate directory and Factiva news/reporting capabilities.
+    highlights:
+      - "Spearheaded integration of internal web platforms into a unified corporate portal."
+      - "Adapted the project through vendor and ERP strategy shifts while keeping alignment with organizational technology standards."
+      - "Worked with Plumtree, C#, B.NET, and J2EE on a portal that reached 500 users at its peak."
+  - organization: Edison International Portal - Corporate Portal
+    position: Architect, Solution Engineer, and Developer
+    website: /career/#edison-international-portal-corporate-portal
+    summary: >-
+      Created a corporate portal that consolidated internal websites and portal
+      initiatives, with SAP integration as the core architectural requirement.
+    highlights:
+      - "Initiated a project to consolidate internal websites and previous portal initiatives into a corporate portal."
+      - "Used SAP Portal, Java, XHTMLB, and HTMLB to build a cohesive portal aligned with operational needs."
+      - "Ensured the project met its main business objective of integrating seamlessly with SAP systems."
+  - organization: Edison SmartConnect
+    position: Web Portal Architect
+    website: /career/#edison-smartconnect
+    summary: >-
+      Led web portal architecture for SCE's Edison SmartConnect project, which
+      supported installation of more than 5 million smart meters across a
+      50,000-square-mile service territory.
+    highlights:
+      - "Led web portal architectural design for SCE's $1.6 billion Edison SmartConnect Project, enabling real-time electricity tracking and two-way communication for residential and small-business customers."
+      - "Directed web technology integration using HTML, Flash, XML, and JavaScript to improve customer interactions and digital accessibility."
+      - "Pioneered customer experience improvements in energy management, service transfers, and future smart home and business technology integration."
+education: []
+skills:
+  - name: Enterprise AI and Architecture
+    keywords:
+      - AI strategy
+      - Enterprise architecture
+      - Governance
+      - Platform strategy
+      - Operating models
+      - Guardrails
+  - name: Software Strategy and Delivery
+    keywords:
+      - Software strategy
+      - Developer experience
+      - Source control
+      - Secure coding standards
+      - DevOps
+  - name: Digital Automation
+    keywords:
+      - AIOps
+      - Business-led development
+      - Process improvement
+      - Lean Six Sigma
+      - Virtual employees
+  - name: Web and Product Engineering
+    keywords:
+      - Web architecture
+      - Mobile-first strategy
+      - Customer experience
+      - SAP Portal
+      - Corporate portals
+  - name: Storytelling and Systems Thinking
+    keywords:
+      - Technical writing
+      - Digital storytelling
+      - Community building
+      - Procedural generation
+languages: []
+interests:
+  - name: Writing and Systems Thinking
+    keywords:
+      - Enterprise AI
+      - Storytelling
+      - Theology
+      - Folklore
+      - Role-playing games
+references:
+  - name: Christopher Hurney
+    headline: >-
+      I help organizations and teams reduce delivery bottlenecks, improve flow,
+      and modernize product delivery during digital and AI transformations,
+      leveraging lean / agile principles and technical excellence.
+    source: LinkedIn
+    date: "2023-05-04"
+    relationship: Ted was senior to Christopher but did not manage Christopher directly.
+    visibility: All LinkedIn members
+    visible: true
+    reference: >-
+      As an agile coach entering an engagement with a large corporation, you are
+      often curious, even concerned, about whether or not there will be anyone
+      within the organization with empathy for the types of change we intend to
+      explore. With Ted I found such an empath. Ted has one of the highest acumen
+      I've encountered when it comes to topics such as code craftsmanship, highly
+      collaborative coding techniques, DevOps, waste mitigation, and just
+      generally helping bring about change that aligns with agile values, lean
+      and agile principles, not for the sake of just doing things to do things,
+      but to better equip the organization to create value for its customers.
+      Endeavors that allow me to collaborate with Ted are the highlight of my
+      agile coaching engagement at Southern California Edison.
+  - name: Karen Agg
+    headline: Retired Senior Project Manager/Certified Scrum Master
+    source: LinkedIn
+    date: "2013-02-01"
+    relationship: Karen worked with Ted on the same team.
+    visibility: All LinkedIn members
+    visible: false
+    reference: >-
+      Ted and I have been colleagues for 10+ years. Over the years we have worked
+      in the same group and different groups. Our most recent opportunity to work
+      together was a project to create the first mobile website/app for SCE,
+      which was a big success. What impresses me most about Ted is his ability to
+      take complex architectural concepts and explain them so anyone can
+      understand. Ted is a forward thinker and strives to create a solution to
+      satisfy the business need now and scale for the future. Ted is great to
+      work with. I highly recommend Ted.
+  - name: Greg Goldasich
+    headline: Retired
+    source: LinkedIn
+    date: "2013-01-31"
+    relationship: Greg was senior to Ted but did not manage Ted directly.
+    visibility: All LinkedIn members
+    visible: true
+    reference: >-
+      Ted is very collaborative by nature, effective in meeting his commitments
+      and consistently drives to improve work/product quality. He actively
+      engages with team members, managers and clients to deliver on his
+      commitments. Ted openly and actively seeks out feedback on his approach and
+      effectiveness. He is by nature curious and this pushes him to improve his
+      technical knowledge and drive his work forward.
+  - name: Mike de la Hoz
+    headline: Conceptualizing, monetizing, and bringing to life digital consumer experiences is my passion.
+    source: LinkedIn
+    date: "2013-01-31"
+    relationship: Mike worked with Ted but on different teams.
+    visibility: All LinkedIn members
+    visible: true
+    reference: >-
+      I've worked with Ted on several digital projects at Southern California
+      Edison. I find him to be intrinsically curious and his thirst for knowledge
+      drives him to always find a better way to deliver product. When Ted
+      provides system design and architecture advice and recommendations, you can
+      bank on him thoroughly doing his research to come up with a sound
+      conclusion. He's a good business partner and collaborator always seeking to
+      do the right thing.
+  - name: Michael Jackson
+    headline: Former Information Technology Manager at Vision Aircraft Records (Retired)
+    source: LinkedIn
+    date: "2013-01-17"
+    relationship: Michael worked with Ted but on different teams.
+    visibility: All LinkedIn members
+    visible: false
+    reference: >-
+      I have known Ted for many years at Southern California Edison, and admire
+      his expertise and broad knowledge of numerous technologies. While technical
+      skills are his specialty, Ted is also very down to earth, open, friendly
+      and approachable. He is an excellent public speaker, and comfortable
+      leading meetings on technology topics. A top-notch Webmaster, developer and
+      collaboration SME with great people skills! Ted would be a superb asset to
+      any company!
+  - name: Kristina Quick
+    headline: Principal Manager - Microsoft Security Engineering
+    source: LinkedIn
+    date: "2013-01-08"
+    relationship: Kristina worked with Ted but on different teams.
+    visibility: All LinkedIn members
+    visible: false
+    reference: Ted's dedication and investment in this program made it a huge success!
+  - name: Kristina Quick
+    headline: Principal Manager - Microsoft Security Engineering
+    source: LinkedIn
+    date: "2013-01-08"
+    relationship: Kristina worked with Ted on the same team.
+    visibility: All LinkedIn members
+    visible: true
+    reference: Ted's positivity, collaboration, and expert technical knowledge is part of what made this team successful.
+  - name: Kristina Quick
+    headline: Principal Manager - Microsoft Security Engineering
+    source: LinkedIn
+    date: "2013-01-08"
+    relationship: Kristina worked with Ted on the same team.
+    visibility: All LinkedIn members
+    visible: false
+    reference: Ted is a great team player and understands technology from all aspects. He is an asset to any team.
+  - name: Situ Ramaswamy
+    headline: Senior Director, Energy and Utilities at HCL Technologies
+    source: LinkedIn
+    date: "2013-01-07"
+    relationship: Situ managed Ted directly.
+    visibility: All LinkedIn members
+    visible: true
+    reference: >-
+      Ted keeps up with more technologies than most of the technologists I have
+      worked with, and brought an excellent mix of superior technical skills and
+      great teamwork to all his assignments. One of the things that I found most
+      gratifying was to see Ted's growth as an architect and technical leader
+      through the significant programs he worked on over the years.
+  - name: Kevin Liao
+    headline: Founder and CEO at KLNK
+    source: LinkedIn
+    date: "2011-07-31"
+    relationship: Ted was senior to Kevin but did not manage Kevin directly.
+    visibility: All LinkedIn members
+    visible: true
+    reference: >-
+      A futurist who is able to analyze and predict both short and long term
+      industry landscape changes, Ted is forward thinking and a blast to work
+      with. I also highly recommend subscribing to his RSS feed where he curates
+      insightful articles of all subjects.
+  - name: Gabriela Garcia
+    headline: Webmaster
+    source: LinkedIn
+    date: "2006-02-24"
+    relationship: Gabriela was Ted's client.
+    visibility: All LinkedIn members
+    visible: false
+    reference: >-
+      One of the best and brightest at Edison. If you have Ted on your team, you
+      know your project will get done on time and the way you want it.

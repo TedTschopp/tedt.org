@@ -2,7 +2,7 @@ Below is an **agent-ready execution plan** you can hand to an AI coding agent fo
 
 The goal is to make **TedT.org match the stronger positioning from your GitHub profile**: enterprise architecture, AI adoption, digital automation, platform shape, guardrails, operating models, and “strategy meets execution.” Your GitHub profile is currently the best expression of that brand: it describes you as a Senior Enterprise Architect focused on “enterprise-scale digital automation” and “the practical realities of adopting AI in large organizations,” including platform shape, guardrails, operating models, and the “work between the work.” It also has the excellent framing that ambitious technology must “survive contact with reality.” ([GitHub][1])
 
-TedT.org currently has multiple places using older or broader positioning. The `/profile/` page still uses the older “I am the enterprise architect at Southern California Edison…” bio and the simple title “Enterprise Architect.” ([Ted Tschopp's Homepage][2]) The same old bio appears in repeated author/footer-style blocks on category pages. ([Ted Tschopp's Homepage][3]) The About page still frames the site around “technology, theology, and creativity” and says you have spent “over a decade” navigating digital and automation landscapes, which conflicts with the “25+ years at SCE” and “30+ years in IT” positioning. ([Ted Tschopp's Homepage][4]) The homepage Career section already contains stronger current-role substance, including the AI & Software role, 500+ enterprise products, AI governance, automation, AIOps, and business-led development enabling 100+ developers and 1,000+ applications. ([Ted Tschopp's Homepage][5])
+TedT.org currently has multiple places using older or broader positioning. The `/profile/` page still uses the older “I am the enterprise architect at Southern California Edison…” bio and the simple title “Enterprise Architect.” ([Ted Tschopp's Homepage][2]) The same old bio appears in repeated author/footer-style blocks on category pages. ([Ted Tschopp's Homepage][3]) The About page still frames the site around “technology, theology, and creativity” and says you have spent “over a decade” navigating digital and automation landscapes, which conflicts with the “25+ years at SCE” and “30+ years in IT” positioning. ([Ted Tschopp's Homepage][4]) The Resume/Career material has now been moved out of the homepage to `https://tedt.org/career/`; that page contains the stronger current-role substance, including the AI & Software role, 500+ enterprise products, AI governance, automation, AIOps, and business-led development enabling 100+ developers and 1,000+ applications. ([Ted Tschopp's Homepage][5])
 
 ---
 
@@ -54,7 +54,7 @@ The AI agent should first identify the exact source files that produce:
 
 * `/profile/`
 * `/About/`
-* the homepage hero and Career section
+* the homepage hero and `/career/` Resume/Career page
 * the repeated author/profile card shown on category and post pages
 * SEO metadata, Open Graph descriptions, and any `llms.txt`/`humans.txt` identity summaries
 * navigation links
@@ -65,8 +65,10 @@ Likely areas to inspect:
 profile/
 About/
 index.html
+career.html
 _data/
 _includes/personal/
+_includes/personal/career-projects.html
 _includes/layout/
 _includes/seo/
 _layouts/
@@ -116,6 +118,8 @@ git grep -n "Exploring the Intersection of Tech, Theology, and Imagination"
 git grep -n "Enterprise Architect"
 git grep -n "About Ted"
 git grep -n "Some of the things I have worked on were considered science-fiction"
+git grep -n "permalink: /career/"
+git grep -n "personal/career-projects"
 ```
 
 Purpose:
@@ -124,9 +128,10 @@ Purpose:
 * Find every instance of inconsistent tenure language.
 * Find the reusable profile/author-card data source.
 * Find page-specific content that should be rewritten.
+* Find the `/career/` source files now responsible for Resume/Career cards and project history.
 * Avoid editing only rendered pages while leaving the real data source stale.
 
-Expected result: old copy probably appears in a profile source file and a reusable include or data file. If multiple hard-coded duplicates exist, consolidate to a single data source if practical.
+Expected result: old copy probably appears in a profile source file and a reusable include or data file. The Resume/Career material should resolve to `career.html`, `_includes/personal/career-projects.html`, and the relevant `_posts/Homepage/Resume/` entries. If multiple hard-coded duplicates exist, consolidate to a single data source if practical.
 
 ---
 
@@ -276,7 +281,7 @@ Acceptance criteria:
 
 # 9. Update the homepage hero and site intro
 
-The homepage currently has a broad blog heading around “Exploring the Intersection of Tech, Theology, and Imagination,” while the stronger professional story is buried lower in the Career section. ([Ted Tschopp's Homepage][7]) The homepage should make the professional identity obvious within the first few seconds.
+The homepage currently has a broad blog heading around “Exploring the Intersection of Tech, Theology, and Imagination,” while the stronger professional story now lives on the dedicated `/career/` page. ([Ted Tschopp's Homepage][7]) The homepage should make the professional identity obvious within the first few seconds and then route visitors to `/career/` for the full Resume/Career narrative.
 
 Recommended homepage hero:
 
@@ -307,20 +312,21 @@ Acceptance criteria:
 * The first major homepage text contains “enterprise architecture,” “AI,” and “strategy meets execution” or “between strategy and execution.”
 * The older “technology, theology, and imagination” phrase can remain as a secondary theme, not the primary positioning.
 * The homepage links to the new Start Here page.
+* The homepage links to `/career/` for Resume/Career details, without reintroducing the old homepage Career card section.
 
 ---
 
-# 10. Update the Career section
+# 10. Update the `/career/` Resume and Career page
 
-The homepage Career section already has strong substance: the current role says Enterprise Architect for AI & Software, mentions 500+ enterprise products, AI strategy, governance, automation, AIOps, and business-led development. ([Ted Tschopp's Homepage][5]) The main issue is the intro sentence saying “over a decade,” which should be replaced.
+The Resume/Career material now lives at `https://tedt.org/career/`, with source content in `career.html`, `_includes/personal/career-projects.html`, and the relevant `_posts/Homepage/Resume/` entries. Do not move this content back onto the homepage. The `/career/` page already has strong substance: the current role says Enterprise Architect for AI & Software, mentions 500+ enterprise products, AI strategy, governance, automation, AIOps, and business-led development. ([Ted Tschopp's Homepage][5]) The main issue is the intro sentence saying “over a decade,” which should be replaced and aligned to the new positioning.
 
-Replace the Career intro with:
+Replace the `/career/` Career intro with:
 
 ```markdown
 As a Senior Enterprise Architect at Southern California Edison, I draw on **30+ years in IT** and **25+ years at SCE** to help large organizations navigate complex technology change. My current work focuses on enterprise AI adoption, software strategy, digital automation, governance, platforms, guardrails, and operating models — the practical work of turning ambitious technology into useful, resilient, and sustainable capability.
 ```
 
-Then lightly revise the current role description to reduce repetition and align with the GitHub-led language:
+Then lightly revise the current Resume entry for the current role to reduce repetition and align with the GitHub-led language:
 
 ```markdown
 I am the Enterprise Architect for Artificial Intelligence & Software. I provide strategic architecture leadership for SCE’s AI and software portfolios, shaping strategy, roadmaps, standards, and frameworks for 500+ enterprise products. My work connects innovation with business outcomes, resilience, regulatory expectations, governance, and practical delivery.
@@ -339,8 +345,10 @@ Keep the existing accomplishment bullets if they are accurate, but standardize f
 Acceptance criteria:
 
 * No active page uses “over a decade” to describe Ted’s professional experience.
-* Career intro uses “30+ years in IT” and “25+ years at SCE.”
+* `/career/` uses “30+ years in IT” and “25+ years at SCE.”
 * Current role language includes AI, software, platforms, guardrails, operating models, governance, and enterprise products.
+* The homepage does not reintroduce the Resume/Career card section.
+* Career navigation points to `/career/`, and dropdown anchors resolve on that page.
 
 ---
 
@@ -496,6 +504,7 @@ _config.yml
 Acceptance criteria:
 
 * The Start Here page is reachable from the main site chrome.
+* The Career/Resume page remains reachable from the main site chrome at `/career/`.
 * Existing nav links remain intact.
 * Mobile nav still works.
 
@@ -545,10 +554,18 @@ Use:
 A curated guide to Ted Tschopp’s writing on enterprise AI adoption, software strategy, digital automation, governance, platforms, operating models, and storytelling.
 ```
 
+## Career page description
+
+Use:
+
+```text
+Career history and selected projects from Ted Tschopp, a Senior Enterprise Architect focused on enterprise AI adoption, software strategy, digital automation, governance, platforms, guardrails, and operating models.
+```
+
 Acceptance criteria:
 
 * Homepage Open Graph/Twitter card description matches the new positioning.
-* `/profile/`, `/About/`, and `/Start-Here/` have specific descriptions.
+* `/profile/`, `/About/`, `/Start-Here/`, and `/career/` have specific descriptions.
 * No page description uses the stale “over a decade” language.
 * Existing SEO include logic is not broken.
 
@@ -677,6 +694,7 @@ After local build, review these pages in browser:
 /
  /profile/
  /About/
+ /career/
  /Start-Here/
  /category/ai/
  /category/business/
@@ -689,6 +707,7 @@ Check:
 
 * The author card shows the new short bio.
 * The homepage opens with the new professional positioning.
+* `/career/` contains the Resume/Career cards and selected projects that were removed from the homepage.
 * `/profile/` has the full updated bio.
 * `/About/` preserves the broader site identity without diluting the professional message.
 * `/Start-Here/` links work.
@@ -743,6 +762,7 @@ This PR refreshes TedT.org’s professional positioning to align with the strong
 - Updated profile and reusable author bio copy
 - Rewrote About page to better balance professional focus and broader creative interests
 - Updated homepage hero/intro messaging
+- Updated `/career/` as the canonical Resume/Career page and kept that content off the homepage
 - Reconciled tenure language to “30+ years in IT” and “25+ years at SCE”
 - Added a Start Here page for enterprise AI, architecture, and digital automation writing
 - Updated SEO descriptions and identity summaries where applicable
@@ -755,7 +775,7 @@ This PR refreshes TedT.org’s professional positioning to align with the strong
 - [ ] `make SKIP_EXTERNAL=1 proofer`
 - [ ] `make quality_gate`
 - [ ] Confirmed old bio text no longer appears in active source files
-- [ ] Reviewed `/`, `/profile/`, `/About/`, `/Start-Here/`, and key category pages
+- [ ] Reviewed `/`, `/profile/`, `/About/`, `/career/`, `/Start-Here/`, and key category pages
 ```
 
 ---
@@ -768,7 +788,7 @@ The work is complete when:
 2. `/profile/` clearly says who Ted is now: Senior Enterprise Architect, enterprise AI, software strategy, digital automation, strategy meets execution.
 3. `/About/` explains the whole site without making the professional identity feel secondary.
 4. The homepage first impression matches the GitHub profile’s stronger positioning.
-5. The Career section uses consistent tenure language: **30+ years in IT** and **25+ years at SCE**.
+5. `/career/` is the canonical Resume/Career page, and it uses consistent tenure language: **30+ years in IT** and **25+ years at SCE**.
 6. A new `/Start-Here/` page gives professional visitors a guided path into the AI/architecture writing.
 7. SEO/social descriptions are updated.
 8. The author card is short, modern, and not overloaded.
@@ -793,8 +813,10 @@ First, search the repository for stale identity copy:
 - "technology, theology, and creativity"
 - "Exploring the Intersection of Tech, Theology, and Imagination"
 - "About Ted"
+- "permalink: /career/"
+- "personal/career-projects"
 
-Find the source files that control /profile/, /About/, the homepage, author/profile cards, SEO metadata, navigation, llms.txt, and humans.txt.
+Find the source files that control /profile/, /About/, /career/, the homepage, author/profile cards, SEO metadata, navigation, llms.txt, and humans.txt.
 
 Use this canonical positioning:
 
@@ -804,8 +826,8 @@ Make these changes:
 1. Update the reusable author/profile card to use "Senior Enterprise Architect" and a shorter bio focused on enterprise architecture, AI, software strategy, digital automation, governance, storytelling, and making technology useful at scale.
 2. Rewrite /profile/ using the full new bio, including 25+ years at SCE, the architecture-as-livable-systems idea, the Wired/Tolkien/market-research background, and the personal views disclaimer.
 3. Rewrite /About/ so the site is framed first around enterprise AI, architecture, software strategy, digital automation, and storytelling, while still preserving theology, folklore, role-playing games, creativity, and personal interests.
-4. Update the homepage hero/intro so the first impression is: "Enterprise architecture, AI, and the practical work between strategy and execution."
-5. Update the Career intro to say "30+ years in IT" and "25+ years at SCE" instead of "over a decade."
+4. Update the homepage hero/intro so the first impression is: "Enterprise architecture, AI, and the practical work between strategy and execution." Link the homepage to /career/ for Resume/Career details, but do not move the Resume/Career cards back onto the homepage.
+5. Update the /career/ Resume/Career intro to say "30+ years in IT" and "25+ years at SCE" instead of "over a decade," and align the current role entry with enterprise AI, software strategy, governance, platforms, guardrails, and operating models.
 6. Add a new /Start-Here/ page titled "Start Here: Enterprise AI, Architecture, and Digital Automation" with curated links to major AI/architecture posts.
 7. Add a Start Here link to navigation if the site has a primary nav.
 8. Update SEO descriptions, Open Graph/Twitter descriptions, llms.txt, and humans.txt where applicable.
@@ -820,7 +842,8 @@ After editing, run:
 Then verify:
 - the old bio text no longer appears in active source files
 - "over a decade" is not used for Ted’s current professional experience
-- /profile/, /About/, /Start-Here/, the homepage, and category pages render correctly
+- /profile/, /About/, /career/, /Start-Here/, the homepage, and category pages render correctly
+- /career/ contains the Resume/Career cards and selected projects, while the homepage does not reintroduce that old card section
 - author cards and mobile layouts are not broken
 
 Create a PR titled:

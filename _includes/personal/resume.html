@@ -59,7 +59,7 @@
     {% for work in resume.work %}
     <div class="entry">
       {% if work.company %}
-      <section id="{{work.company}}">
+      <section id="{{ work.company | append: '-' | append: forloop.index | slugify }}">
         <h4 class="title">
           {{work.company}}
           <span class="date">
@@ -82,7 +82,7 @@
       </section>
       {% endif %}
 
-      {% if website %}
+      {% if work.website %}
       <div class="website">
         <a href="{{work.website}}">{{work.website}}</a>
       </div>
@@ -118,7 +118,7 @@
     {% for volunteer in resume.volunteer %}
     <div class="entry">
       {% if volunteer.organization %}
-      <section id="{{volunteer.organization}}">
+      <section id="{{ volunteer.organization | slugify }}">
         <h4 class="title">
           {{volunteer.organization}}
           <span class="date">
@@ -141,7 +141,7 @@
       </section>
       {% endif %}
 
-      {% if website %}
+      {% if volunteer.website %}
       <div class="website">
         <a href="{{volunteer.website}}">{{volunteer.website}}</a>
       </div>
@@ -177,7 +177,7 @@
     {% for education in resume.education %}
     <div class="entry">
       {% if education.institution %}
-      <section id="{{education.institution}}">
+      <section id="{{ education.institution | slugify }}">
         <div class="title">
           <h4> {{education.institution}}
             <span class="date">
@@ -217,9 +217,8 @@
         {% else %}
         <strong> Courses: </strong>
         {% endif %}
-        {{courses | join:', '}}
+        {{ education.courses | join:', ' }}
         </p>
-      </ul>
       {% endif %}
 
       {% if education.dissertation %}
@@ -320,6 +319,19 @@
     {% if reference.name %}
     <div class="name">
       — {{reference.name}}
+    </div>
+    {% endif %}
+    {% if reference.date or reference.relationship or reference.headline %}
+    <div class="reference-meta">
+      {% if reference.date %}
+      <span class="date">{{ reference.date | date: "%B %-d, %Y" }}</span>
+      {% endif %}
+      {% if reference.relationship %}
+      <span class="relationship">{{ reference.relationship }}</span>
+      {% endif %}
+      {% if reference.headline %}
+      <span class="headline">{{ reference.headline }}</span>
+      {% endif %}
     </div>
     {% endif %}
   </div>
