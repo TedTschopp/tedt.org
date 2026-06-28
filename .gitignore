@@ -277,6 +277,14 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+.venv/
+venv/
+env/
+myenv/
+**/.venv/
+**/venv/
+**/env/
+**/myenv/
 
 # Cake - Uncomment if you are using it
 # tools/**
@@ -309,6 +317,10 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
+Logs/
+.playwright-mcp/
+.allure/
+bootstrap-*.tgz
 
 # Ruby / Bundler (local installs & caches)
 vendor/bundle/
