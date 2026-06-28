@@ -71,7 +71,13 @@
           <div class="col-12 col-xl-4">
             <section class="footer-bio-block h-100">
               <p class="h5 footer-section-title">About Ted</p>
-              <ul class="list-unstyled small p-note footer-bio-list mb-0">{%- for paragraphs in profile_biography -%}{% capture paragraph %}{{ paragraphs | strip }}{% endcapture %}<li>{{ paragraph }}</li>{%- endfor -%}<li class="display-1 d-flex justify-content-center justify-content-xl-start footer-housemark" role="presentation" aria-hidden="true"><i class="icon-tschopp-housemark-optimum"></i></li></ul>
+              <ul class="list-unstyled small p-note footer-bio-list mb-0">
+                {%- for biography_paragraph in profile_biography -%}
+                  {% capture rendered_biography %}{{ biography_paragraph | strip | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endcapture %}
+                  <li>{{ rendered_biography }}</li>
+                {%- endfor -%}
+                <li class="display-1 d-flex justify-content-center justify-content-xl-start footer-housemark" role="presentation" aria-hidden="true"><i class="icon-tschopp-housemark-optimum"></i></li>
+              </ul>
             </section>
           </div>
 
