@@ -8,7 +8,7 @@ GEM
       bundler (>= 1.2.0)
       thor (~> 1.0)
     colorator (1.1.0)
-    concurrent-ruby (1.3.5)
+    concurrent-ruby (1.3.7)
     em-websocket (0.5.3)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0)
