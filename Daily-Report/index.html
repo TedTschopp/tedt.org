@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-06-29 | TedT.org</title>
+  <title>Daily Report - 2026-06-30 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,123 +52,153 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-06-29</h1>
-      <p class="meta">Generated <time datetime="2026-06-29T09:20:12+00:00">2026-06-29T09:20:12Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-06-30</h1>
+      <p class="meta">Generated <time datetime="2026-06-30T08:12:02+00:00">2026-06-30T08:12:02Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Site is healthy and active.</strong> The past 48 hours saw a focused burst of profile and resume work — new career page, restructured resume, updated bio, and a new "Start Here" navigation page. One security-patch PR is open and build-green, awaiting merge. The five long-running P2 discovery issues from the May audit remain unstarted. No build failures detected on main.</p>
+      <p><strong>Site is healthy and building.</strong> The last deploy (<code>Site Quality + Deploy</code> run #947) completed successfully on 2026-06-29. The past 72 hours were dominated by a significant content and identity overhaul — resume, career, profile, about, and a new Start Here page — followed by cleanup commits and a new profile-rendering test. <strong>Action required:</strong> Security PR #203 (<code>concurrent-ruby</code> 1.3.5 → 1.3.7, three CVEs) needs review and merge. Ten Dependabot PRs have been accumulating since late May with no merges recorded.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line Up Front</h2>
-<p>Site is in good shape. Main branch builds pass. Mastodon sync and daily report automation are both running. One Dependabot security PR (#203) passed CI and needs a merge decision — it fixes 3 CVEs in <code>concurrent-ruby</code>. The profile/resume/branding refactor that began June 27 is largely complete. Five P2 content-discovery issues from the May audit are still open and unassigned.</p>
+      <h2>Bottom Line</h2>
+<p>Site is live and passing CI. The last 72 hours were unusually active: a major content identity refresh landed on 2026-06-27, followed by cleanup and test additions on 2026-06-28. Automation (daily report, Enterprise AI refresh, Mastodon sync) is running as expected. The primary risk is a growing Dependabot backlog — most urgently a security update for <code>concurrent-ruby</code> carrying three CVEs.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>June 28 Commits</h3>
+<h3>Commits — Last 72 Hours (2026-06-27 through 2026-06-29)</h3>
+<p><strong>2026-06-29</strong></p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/2654c8625a988b26ff71b4a2dd79b828847a9a4d"><code>2654c86</code></a>** — <code>log cleanup</code> (Ted Tschopp, 16:27 UTC)</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/f914bf4917f5bd038d69e40a819726117a2d5950"><code>f914bf4</code></a>** — <code>Removed Brain Bugs</code> (15:12 UTC) — content removal; details not confirmed from commit message alone</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/e49c1828d326ca437017e2c8b372767286ae4bd6"><code>e49c182</code></a>** — <code>feat(tests): add profile rendering check for biography HTML output</code> + <code>content(footer): update biography rendering in footer layout</code> (14:34 UTC) — new test coverage for the profile/bio section; footer biography rendering updated</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/57607a8b785981067d301edf2f2dd5edacd94684"><code>57607a8</code></a>** — <code>chore: refresh daily report</code> (github-actions[bot], 08:08 UTC) — automated daily report published successfully</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/77d297861c9ae6a70e9ea79680a4d2898bf8461e"><code>77d2978</code></a> <code>chore: refresh yesterday in enterprise ai</code> — scheduled bot automation</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/e7cfbd106a3fe926e81333b6e0f5645f29a7713b"><code>e7cfbd1</code></a> <code>chore: refresh daily report</code> — scheduled bot automation</li>
 </ul>
-<h3>June 27 Commits — Profile &amp; Resume Refactor</h3>
-<p>This was the main work day. Multiple commits constitute a coordinated branding and positioning update:</p>
+<p><strong>2026-06-28</strong></p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/fce709d273f90f4506f8079a95916c58a50604ea"><code>fce709d</code></a><strong> — Large omnibus commit touching: bio update to reflect AI and digital automation focus; resume career description revision; homepage messaging update (enterprise architecture + AI strategy); About page rewrite; new </strong>Start Here** page added for guided navigation; <code>_config.yml</code> SEO metadata and social descriptions updated for consistency</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/e3c3e97d663a5e0324c6df6425afb951feef8134"><code>e3c3e97</code></a>** — <code>feat(resume): add structured resume data and HTML template</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/0c038846ec1fd746271f195561c30ea5887c0944"><code>0c03884</code></a>** — <code>feat(career): add career and projects section with detailed content</code> + CSS bullet styling improvements + navigation links updated to point to new career section</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/925fa578c64e92f2c7eef68bf4f211b8ed5bd8ed"><code>925fa57</code></a>** — <code>content(resume): update summary and work experience details for clarity</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/4fb5e7a1805fdbd5091c3758be61e82eb9be4d95"><code>4fb5e7a</code></a>** — <code>content(resume): update resume structure and content for clarity and consistency</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/19f7527e8202d9d329f27fa344d2318e53498afa"><code>19f7527</code></a>** — <code>docs(commit-guidelines): clarify usage of specific nouns and verbs</code> — contributor docs update</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/89fb4aaf7e3c95dbc96261c50456c497122ddc40"><code>89fb4aa</code></a>** — <code>Adding Post about Customizing Copilot Thinking Phrases</code> — new blog post</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/42f3032c3c625e3136e0537ff9bad7684b05bec5"><code>42f3032</code></a>** — <code>chore(dependencies): update Gemfile.lock with new versions and dependencies</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/2654c8625a988b26ff71b4a2dd79b828847a9a4d"><code>2654c86</code></a> <code>log cleanup</code> — housekeeping</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/f914bf4917f5bd038d69e40a819726117a2d5950"><code>f914bf4</code></a> <code>Removed Brain Bugs</code> — content fix/removal</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/e49c1828d326ca437017e2c8b372767286ae4bd6"><code>e49c182</code></a> <code>feat(tests): add profile rendering check for biography HTML output</code> + <code>content(footer): update biography rendering in footer layout</code> — new test coverage and footer fix</li>
 </ul>
-<h3>Automated Activity (June 27)</h3>
+<p><strong>2026-06-27 — Major content sprint by TedTschopp</strong></p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/571d4b9c45028544ab9845809ec43daeb1a97bfe"><code>571d4b9</code></a>** — <code>chore: refresh yesterday in enterprise ai</code> (github-actions[bot])</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/f404c4449e7888662563c41d0b8af2dad4f7fdb0"><code>f404c44</code></a>** — <code>chore: update Mastodon cache/front matter</code> (github-actions[bot]) — Mastodon sync ran successfully</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/4fb5e7a1805fdbd5091c3758be61e82eb9be4d95"><code>4fb5e7a</code></a> <code>content(resume): update resume structure and content for clarity and consistency</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/925fa578c64e92f2c7eef68bf4f211b8ed5bd8ed"><code>925fa57</code></a> <code>content(resume): update summary and work experience details for clarity</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/e3c3e97d663a5e0324c6df6425afb951feef8134"><code>e3c3e97</code></a> <code>feat(resume): add structured resume data and HTML template</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/0c038846ec1fd746271f195561c30ea5887c0944"><code>0c03884</code></a> <code>feat(career): add career and projects section with detailed content</code> + <code>style(css): enhance post bullet styling</code> + <code>fix(layout): update navigation links to career section</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/19f7527e8202d9d329f27fa344d2318e53498afa"><code>19f7527</code></a> <code>docs(commit-guidelines): clarify usage of specific nouns and verbs in commit messages</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/fce709d273f90f4506f8079a95916c58a50604ea"><code>fce709d</code></a> Large multi-scope commit: <code>content(profile/resume/home/about/start-here/config)</code> — updated bio to reflect current AI/enterprise architecture focus, revised homepage messaging, rewrote About page, added new Start Here page, updated SEO metadata site-wide</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/f404c4449e7888662563c41d0b8af2dad4f7fdb0"><code>f404c44</code></a> <code>chore: update Mastodon cache/front matter</code> — Mastodon sync automation</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/42f3032c3c625e3136e0537ff9bad7684b05bec5"><code>42f3032</code></a> <code>chore(dependencies): update Gemfile.lock with new versions and dependencies</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/89fb4aaf7e3c95dbc96261c50456c497122ddc40"><code>89fb4aa</code></a> <code>Adding Post about Customizing Copilot Thinking Phrases</code> — new blog post</li>
 </ul>
-<hr>
-<h2>Open Pull Requests</h2>
-<h3>PR #203 — Security Patch: <code>concurrent-ruby</code> 1.3.5 → 1.3.7</h3>
+<p><strong>2026-06-26</strong></p>
 <ul>
-<li><strong>Author:</strong> dependabot[bot]</li>
-<li><strong>Opened:</strong> 2026-06-27</li>
-<li><strong>Build:</strong> ✅ Site Quality + Deploy passed (<a href="https://github.com/TedTschopp/tedt.org/actions/runs/28352097803">run 28352097803</a>)</li>
-<li><strong>CVEs fixed:</strong></li>
-<li><code>GHSA-h8w8-99g7-qmvj</code> — <code>AtomicReference#update</code> livelock with <code>Float::NAN</code></li>
-<li><code>GHSA-wv3x-4vxv-whpp</code> — <code>ReentrantReadWriteLock</code> read-count overflow grants write lock without exclusivity</li>
-<li><code>GHSA-6wx8-w4f5-wwcr</code> — <code>ReadWriteLock</code> allows wrong-thread write release</li>
-<li><strong>Severity:</strong> Low (upstream characterization) — but three CVEs in a concurrency primitive warrants prompt merge</li>
-<li><strong>Link:</strong> <a href="https://github.com/TedTschopp/tedt.org/pull/203">PR #203</a></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/f817a8650a7701f42326f04cd9734e45d139f706"><code>f817a86</code></a> <code>content(post): remove unnecessary lines from "The Backlog Doesn't Blink"</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/4c22c012be271ae1f22ec1d09dc275fb2d487375"><code>4c22c01</code></a> <code>content(post): update lyric fix</code></li>
 </ul>
 <hr>
 <h2>Workflow Health</h2>
+<p><strong>Site Quality + Deploy</strong></p>
 <ul>
-<li><strong>Site Quality + Deploy</strong> (last completed run on PR #203): ✅ success — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28352097803">run 28352097803</a>, completed 2026-06-29T06:13</li>
-<li><strong>Daily Report</strong> (this run): 🔄 in_progress — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28361350396">run 28361350396</a></li>
-<li><strong>Mastodon Sync:</strong> ✅ ran successfully on 2026-06-27 (automated commit <code>f404c44</code>)</li>
-<li><strong>Main branch last commit:</strong> <code>2654c86</code> — 2026-06-28T16:27 UTC (<code>log cleanup</code>)</li>
-<li><strong>Last main-branch deploy result:</strong> Not directly confirmed from available data. [ASSUMPTION] Deploy succeeded given no failures visible and recent history of successful runs.</li>
+<li>Run #947 — completed <strong>success</strong> on 2026-06-29 at 16:54 UTC</li>
+<li>Triggered by <code>workflow_dispatch</code> (manual or automation-triggered after bot commit)</li>
+<li>URL: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28388017952">Run #947</a></li>
+</ul>
+<p><strong>Daily Report</strong></p>
+<ul>
+<li>Run #62 — <strong>in progress</strong> (this run), started 2026-06-30 08:04 UTC</li>
+<li>URL: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28429632283">Run #62</a></li>
+</ul>
+<p><strong>Feed to Mastodon</strong></p>
+<ul>
+<li>Last observed run: completed <strong>success</strong> on 2026-06-29</li>
+<li>Mastodon cache/front matter sync automation is running normally</li>
+</ul>
+<p><strong>Enterprise AI Refresh</strong></p>
+<ul>
+<li>Scheduled bot automation running daily; last commit 2026-06-29</li>
 </ul>
 <hr>
-<h2>Open Issues — P2 Backlog (May 2026 Audit)</h2>
-<p>These five issues were opened 2026-05-29 and remain unassigned and unstarted:</p>
+<h2>Open Pull Requests — Dependabot Backlog</h2>
+<p>Ten Dependabot PRs are currently open. None have been merged in the observed window. The oldest date to 2026-05-29.</p>
+<p><strong>Security — Needs Merge</strong></p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a>** — Enhance category landing pages: related categories, tag clouds, depth indicators</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a>** — Build cross-collection content bridges and related-posts infrastructure</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a>** — Drive prompt series adoption: audit and populate series metadata</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/183">#183</a>** — Standardize tagging model: enforce coverage and build site-wide tag infrastructure</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/182">#182</a>** — Create slide gallery with topic filtering and deck browser</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/203">#203</a>: <code>concurrent-ruby</code> 1.3.5 → 1.3.7 (security-patches group)</li>
+<li>Fixes CVE-2026-54904 (<code>AtomicReference#update</code> livelock on <code>Float::NAN</code>)</li>
+<li>Fixes CVE-2026-54905 (<code>ReentrantReadWriteLock</code> read-count overflow grants write lock without exclusivity)</li>
+<li>Fixes CVE-2026-54906 (<code>ReadWriteLock</code> allows wrong-thread write release and stray read-release counter corruption)</li>
+<li>Created 2026-06-27 — <strong>merge this first</strong></li>
 </ul>
-<p>All are labeled <code>P2</code>, <code>content-discovery</code>, <code>audit-2026-05</code>. None have assignees or active PRs. The profile/resume work done this week is separate from this backlog.</p>
-<hr>
-<h2>Content Pipeline Observations</h2>
+<p><strong>GitHub Actions Upgrades</strong></p>
 <ul>
-<li><strong>New "Start Here" page</strong> added — this is a meaningful navigation aid for new readers and aligns with the repositioning toward enterprise architecture and AI strategy writing.</li>
-<li><strong>New blog post</strong> on Customizing Copilot Thinking Phrases — on-brand for current positioning.</li>
-<li><strong>Biography and footer rendering</strong> improved — the new test (<code>feat(tests): profile rendering check</code>) gives some regression protection here.</li>
-<li><strong>"Brain Bugs" content removed</strong> — no additional context available from the commit message alone.</li>
-<li>Mastodon sync automation continues running correctly — cache and front matter updated June 27.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/201">#201</a>: <code>actions/checkout</code> 4 → 7 (3 major versions; verify compatibility before merging)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/200">#200</a>: <code>github/gh-aw-actions</code> 0.71.5 → 0.80.8</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/196">#196</a>: <code>actions/cache</code> 4 → 5</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/195">#195</a>: <code>actions/github-script</code> 7 → 9</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/194">#194</a>: <code>actions/upload-pages-artifact</code> 4 → 5</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/164">#164</a>: <code>actions/upload-artifact</code> v6 → v7 (oldest open PR, created 2026-05-29)</li>
+</ul>
+<p><strong>Gem Upgrades — Evaluate Carefully</strong></p>
+<ul>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/192">#192</a>: <code>html-proofer</code> 3.19.4 → 5.2.1 — major version jump; CLI interface and configuration may have breaking changes. Test locally before merging.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/188">#188</a>: <code>ffi</code> 1.16.3 → 1.17.4 — <strong>conflicts with ADR 0009</strong>, which pins <code>ffi</code> at 1.16.3 for build stability. Do not merge without re-evaluating ADR 0009.</li>
+</ul>
+<p><strong>Frontend/NPM</strong></p>
+<ul>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/187">#187</a>: npm_and_yarn group (3 packages) — created 2026-06-01</li>
+</ul>
+<hr>
+<h2>Open Issues — Selected P2 Backlog</h2>
+<p>Ten or more P2 issues are open, most created during a May 2026 audit. None appear to have been closed in this reporting window. Representative items:</p>
+<ul>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a>: Enhance category landing pages (related categories, tag clouds, depth indicators)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a>: Cross-collection content bridges and related-posts infrastructure</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a>: Drive prompt series adoption (series metadata audit)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/183">#183</a>: Standardize tagging model and build site-wide tag infrastructure</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/182">#182</a>: Create slide gallery with topic filtering and deck browser</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/178">#178</a>: SEO &amp; discoverability — excerpts, descriptions, pillar hub pages</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/177">#177</a>: Document and organize <code>_code/</code> utility scripts</li>
+</ul>
+<hr>
+<h2>Content &amp; Publishing Observations</h2>
+<ul>
+<li>The 2026-06-27 sprint was a <strong>site identity refresh</strong>: new structured resume data, new career/projects page, updated profile bio emphasizing AI and enterprise architecture, rewritten About page, and a new Start Here page. SEO metadata (<code>_config.yml</code>) was updated for consistency.</li>
+<li>A new post on <strong>Customizing Copilot Thinking Phrases</strong> was added 2026-06-27.</li>
+<li>The <code>feat(tests): add profile rendering check</code> commit (2026-06-28) adds test coverage for biography HTML output — good signal that the team is starting to extend the test suite.</li>
+<li><code>Removed Brain Bugs</code> (2026-06-28): unclear what content was removed; no issue reference visible in the commit message. [ASSUMPTION: this was draft or broken content cleanup.]</li>
+<li>The <code>chore: refresh yesterday in enterprise ai</code> automation fires daily, suggesting a scheduled content refresh pipeline for an Enterprise AI section.</li>
 </ul>
 <hr>
 <h2>Risks and Blockers</h2>
-<ul>
-<li><strong>Security PR #203 is open and un-merged.</strong> Build is green. Three CVEs in <code>concurrent-ruby</code> are low severity but a concurrency primitive. Merge when convenient; no blocking concern for the site build, but leave it open too long and it will drift.</li>
-<li><strong>P2 discovery issues are now 31 days old</strong> with no movement. These are systemic improvements (tagging, category pages, related posts, prompt series, slide gallery) that improve discoverability of the ~1,000 posts on the site. Each is self-contained. Worth picking one to start.</li>
-<li><strong>No confirmed last main-branch deploy status</strong> from workflow data visible here. [ASSUMPTION] pipeline is healthy; check the Actions tab directly if unsure.</li>
-<li>The omnibus commit <code>fce709d</code> (June 27) touched many files simultaneously — bio, resume, homepage, about, start-here, config. Regression check on those pages is advisable if anything looks odd.</li>
-</ul>
+<p><strong>High — Merge <code>concurrent-ruby</code> security PR #203 now.</strong> Three CVEs with confirmed severity. No blockers to merging; it's a security-patches group PR.</p>
+<p><strong>Medium — ffi upgrade PR #188 conflicts with ADR 0009.</strong> ADR 0009 explicitly pins <code>ffi</code> to 1.16.3. Before merging #188, evaluate whether the stability reason for the pin still applies. Document the decision as an ADR update or rejection note.</p>
+<p><strong>Medium — html-proofer major version jump (PR #192) may break CI.</strong> Version 5.x has breaking CLI and config changes from 3.x. Test locally with <code>SKIP_EXTERNAL=1</code> before merging. This PR is one month old with no action.</p>
+<p><strong>Medium — actions/checkout 4 → 7 (PR #201) is a 3-major-version skip.</strong> Verify the workflow does not rely on any deprecated behavior from checkout v4/5/6.</p>
+<p><strong>Low — Dependabot backlog growing.</strong> 10 open dependency PRs, oldest from 2026-05-29. Consider a weekly triage cadence.</p>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #203</strong> — security patch, build is green, low risk.</li>
-<li><strong>Spot-check the June 27 omni-commit pages:</strong> <code>/</code> (homepage), <code>/about/</code>, <code>/resume/</code>, <code>/career/</code>, <code>/start-here/</code> — confirm rendering is correct after the coordinated rebrand.</li>
-<li><strong>Pick one P2 issue to start.</strong> Issue #183 (tagging infrastructure) is the foundation others depend on; issue #182 (slide gallery) is the most self-contained and visible win.</li>
-<li><strong>Verify the "Removed Brain Bugs" commit (<code>f914bf4</code>)</strong> — confirm it removed the intended content and didn't accidentally break any cross-references or category pages.</li>
+<li><strong>Merge PR #203</strong> (<code>concurrent-ruby</code> security fix) — no evaluation needed; clear security win.</li>
+<li><strong>Evaluate PR #188</strong> (<code>ffi</code> upgrade) against ADR 0009 — either update the ADR or close the PR with a comment.</li>
+<li><strong>Test PR #192</strong> (<code>html-proofer</code> 5.x) locally; merge or close with documented reason.</li>
+<li><strong>Triage remaining actions PRs</strong> (#201, #200, #196, #195, #194, #164) in a single session — most are low-risk major-version bumps for standard actions.</li>
+<li><strong>Backlog prioritization</strong>: The 2026-05-29 P2 issue batch (10+ issues) has no active work tracked. Consider assigning one issue to the current sprint — #185 (cross-collection bridges) or #178 (SEO/discoverability) would leverage the new Start Here page.</li>
+<li><strong>Document <code>Removed Brain Bugs</code> commit</strong> — add an issue or commit reference so future maintainers know what was removed and why.</li>
 </ol>
-<hr>
-<h2>Automated Activity Summary</h2>
-<ul>
-<li>Daily report: running (this execution)</li>
-<li>Mastodon sync: ✅ ran 2026-06-27</li>
-<li>"refresh yesterday in enterprise ai": ✅ ran 2026-06-27</li>
-<li>Dependabot: active, produced PR #203 on 2026-06-27</li>
-</ul>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: GitHub API <code>GET /repos/TedTschopp/tedt.org/commits</code>, last 20 results — <a href="https://github.com/TedTschopp/tedt.org/commits/main">view on GitHub</a></li>
-<li>Pull requests: GitHub API <code>GET /repos/TedTschopp/tedt.org/pulls?state=open</code>, first 10 — <a href="https://github.com/TedTschopp/tedt.org/pulls">view on GitHub</a></li>
-<li>Issues: GitHub API (GraphQL), open issues, first page — <a href="https://github.com/TedTschopp/tedt.org/issues">view on GitHub</a></li>
-<li>Workflow runs: GitHub API <code>GET /repos/TedTschopp/tedt.org/actions/runs</code>, most recent 15 — <a href="https://github.com/TedTschopp/tedt.org/actions">view on GitHub</a></li>
-<li>Report generated at: 2026-06-29T09:15 UTC (run #61 of daily-report workflow)</li>
-<li>[ASSUMPTION] Main branch last deploy succeeded — no deploy run for main branch was visible in the top 15 workflow results (most recent run on main was the in-progress daily report; most recent completed deploy run was for PR #203 branch). Direct confirmation requires checking the Actions tab.</li>
-<li>Bash execution blocked by environment policy — raw JSON files parsed using the <code>view</code> tool with manual reading of truncated output.</li>
-<li>Issue pagination cursor was invalid; only the first page of issues (10 results) was retrieved. Additional open issues may exist beyond the P2 backlog shown.</li>
-<li>Commit message <code>Removed Brain Bugs</code> is too terse to confirm scope without inspecting the diff; no file-level data retrieved for that commit.</li>
+<li><strong>Commits</strong>: Queried via GitHub MCP <code>list_commits</code>, last 20 commits, branch <code>main</code> as of 2026-06-30T08:06Z. Covers commits from 2026-06-26 through 2026-06-29.</li>
+<li><strong>Pull Requests</strong>: Queried via GitHub MCP <code>list_pull_requests</code> (state: open, 10 per page). 10 open PRs returned; all are Dependabot or automation PRs.</li>
+<li><strong>Issues</strong>: Queried via GitHub MCP <code>list_issues</code> (state: OPEN, 10 per page). 10 open issues returned, all P2 from a 2026-05-29 audit.</li>
+<li><strong>Workflow Runs</strong>: Queried <code>list_workflow_runs</code> (all events) and <code>get_workflow_run</code> for the latest deploy run ID 28388017952.</li>
+<li><strong>Deploy run #947</strong>: Confirmed <code>status: completed</code>, <code>conclusion: success</code>, completed 2026-06-29T16:54:40Z. Source: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28388017952">GitHub Actions</a>.</li>
+<li><strong>Daily report run #62</strong>: Confirmed <code>status: in_progress</code> at report generation time (this is the currently executing workflow). Source: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28429632283">GitHub Actions</a>.</li>
+<li><strong>Mastodon feed</strong>: Observed <code>status: completed, conclusion: success</code> in workflow run listing; exact run URL not extracted due to output size limits.</li>
+<li><strong>CVE identifiers</strong> (CVE-2026-54904, CVE-2026-54905, CVE-2026-54906): Sourced from PR #203 body text as returned by GitHub MCP. Not independently verified against NVD.</li>
+<li>[ASSUMPTION]: <code>Removed Brain Bugs</code> commit content/scope not inspectable without reading diff; assumed to be content cleanup based on commit message.</li>
+<li>[ASSUMPTION]: <code>chore: refresh yesterday in enterprise ai</code> is a scheduled automation based on recurrence pattern (observed 2026-06-27, 2026-06-29). Exact workflow not identified in this run.</li>
+<li><strong>Older workflow runs and closed PRs/issues</strong>: Not retrieved due to large output file size limits in this environment. Only the most recent page (10-20 items) of each resource type was examined.</li>
+<li><strong>No HTML Proofer results</strong> available directly — test results are embedded in CI job logs which were not fetched. Deploy conclusion <code>success</code> implies proofer passed for the last deploy.</li>
 </ul>
     </section>
     <footer>
