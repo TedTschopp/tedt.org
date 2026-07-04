@@ -4705,5 +4705,90 @@
       "https://tschopp.net/users/Ted/statuses/116819979589567799"
     ],
     "lastTootTimestamp": 1782531426936
+  },
+  "https://tedt.org/The-Orion-Accord-and-the-Artemis-Working-Group/": {
+    "id": "/The-Orion-Accord-and-the-Artemis-Working-Group/",
+    "title": "The Orion Accord and the Artemis Working Group",
+    "summary": "A Traveller faction and campaign framework built around the Orion Accord, a criminal constitution of frontier predators, and the Artemis Working Group, an Imperial intelligence task force created to dismantle the ecosystem that lets Orion hunt.",
+    "content_text": "A Traveller faction and campaign framework built around the Orion Accord, a criminal constitution of frontier predators, and the Artemis Working Group, an Imperial intelligence task force created to dismantle the ecosystem that lets Orion hunt. https://tedt.org/The-Orion-Accord-and-the-Artemis-Working-Group/",
+    "url": "https://tedt.org/The-Orion-Accord-and-the-Artemis-Working-Group/",
+    "image": "https://tedt.org/img/2026-07/orion-and-artemis.webp",
+    "tags": [
+      "RPG",
+      "TTRPG",
+      "Traveller",
+      "Campaign Design",
+      "Worldbuilding",
+      "Factions",
+      "Game Mastering",
+      "Space Opera",
+      "Frontier Intrigue",
+      "Mythic Structure"
+    ],
+    "date_published": "2026-07-04T00:00:00-07:00",
+    "date_modified": "2026-07-04T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116863407154090102"
+    ],
+    "lastTootTimestamp": 1783194079012
+  },
+  "https://tedt.org/House-Ventara-of-Alell-and-the-Caerleon-March/": {
+    "id": "/House-Ventara-of-Alell-and-the-Caerleon-March/",
+    "title": "House Ventara of Alell and the Caerleon March",
+    "summary": "A Traveller noble house profile for House Ventara of Alell and the Caerleon March: a ducal family of bioengineering, conservation law, noble bloodlines, black medical infrastructure, Orion Accord ties, and the scandal of Aurelius Holst.",
+    "content_text": "A Traveller noble house profile for House Ventara of Alell and the Caerleon March: a ducal family of bioengineering, conservation law, noble bloodlines, black medical infrastructure, Orion Accord ties, and the scandal of Aurelius Holst. https://tedt.org/House-Ventara-of-Alell-and-the-Caerleon-March/",
+    "url": "https://tedt.org/House-Ventara-of-Alell-and-the-Caerleon-March/",
+    "image": "https://tedt.org/img/2026-07/house-ventara.webp",
+    "tags": [
+      "RPG",
+      "TTRPG",
+      "Traveller",
+      "Campaign Design",
+      "Worldbuilding",
+      "Noble Houses",
+      "Factions",
+      "Game Mastering",
+      "Space Opera",
+      "Frontier Intrigue",
+      "Orion Accord"
+    ],
+    "date_published": "2026-07-04T00:00:00-07:00",
+    "date_modified": "2026-07-04T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
+  },
+  "https://tedt.org/UGS-1-Unicode-Glyph-Variant-Steganography/": {
+    "id": "/UGS-1-Unicode-Glyph-Variant-Steganography/",
+    "title": "UGS-1: Unicode Glyph-Variant Steganography, Version 1.1",
+    "summary": "UGS-1 is a compact technical specification for embedding framed byte payloads in visible text by replacing selected Latin characters with visually similar Unicode homoglyphs. It defines security constraints, non-goals, Unicode handling rules, framing, validation, capacity, APIs, and detector guidan…",
+    "content_text": "UGS-1 is a compact technical specification for embedding framed byte payloads in visible text by replacing selected Latin characters with visually similar Unicode homoglyphs. It defines security constraints, non-goals, Unicode handling rules, framing, validation, capacity, APIs, and detector guidance. https://tedt.org/UGS-1-Unicode-Glyph-Variant-Steganography/",
+    "url": "https://tedt.org/UGS-1-Unicode-Glyph-Variant-Steganography/",
+    "tags": [
+      "unicode",
+      "steganography",
+      "homoglyphs",
+      "confusables",
+      "text encoding",
+      "security",
+      "specifications",
+      "crc16"
+    ],
+    "date_published": "2026-07-04T00:00:00-07:00",
+    "date_modified": "2026-07-04T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
   }
 }
