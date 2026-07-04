@@ -61,15 +61,15 @@ no_toc: true
 ---
 # House Ventara of Alell and the Caerleon March
 
-**Formal house name:** House Ventara
-**Ancestral seat:** Alell, Spinward Marches 1706
-**Current active domain:** The Caerleon March, Ruie, Spinward Marches 1905
-**Current head:** **Lady Ysabel Ventara**
-**House rank:** Ducal family, with subsector-scale Imperial standing
-**Public vocation:** Bioengineering, xenobiology, conservation law, agricultural genetics, disease control, military medicine, and rare animal DNA research
-**Secret vocation:** Biological laundering, illegal gene-line custody, black medical infrastructure, noble identity manipulation, and Orion Accord arbitration support
-**Public motto:** *We Keep What Lives*
-**Private Ventaran maxim:** *The keeper knows which gates are real.*
+**Formal house name:** House Ventara</br>
+**Ancestral seat:** Alell, Spinward Marches 1706</br>
+**Current active domain:** The Caerleon March, Ruie, Spinward Marches 1905</br>
+**Current head:** **Lady Ysabel Ventara**</br>
+**House rank:** Ducal family, with subsector-scale Imperial standing</br>
+**Public vocation:** Bioengineering, xenobiology, conservation law, agricultural genetics, disease control, military medicine, and rare animal DNA research</br>
+**Secret vocation:** Biological laundering, illegal gene-line custody, black medical infrastructure, noble identity manipulation, and Orion Accord arbitration support</br>
+**Public motto:** *We Keep What Lives*</br>
+**Private Ventaran maxim:** *The keeper knows which gates are real.*</br>
 **Orion phrase known to the inner house:** *The hunter belongs to no king.* The Accord’s darker internal version is *All worlds are hunting grounds*. 
 
 House Ventara is an old Imperial noble family built on a contradiction. Publicly, it is a ducal house of science, stewardship, and lawful biological administration. Privately, it is one of the aristocratic pillars that helped give the Orion Accord respectability, money, laboratories, medical cover, and access to noble bloodlines.
@@ -136,7 +136,7 @@ To Orion, they are a confession.
 
 # The Crest of House Ventara
 
-The existing crest still works beautifully, but its meaning must now be read on two levels: the **public Imperial reading** and the **private Orion reading**.
+![House Ventara Coat of Arms](/img/2026-07/house-ventara-Coat-of-Arms.webp)
 
 ## Working blazon
 

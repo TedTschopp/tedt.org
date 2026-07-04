@@ -29,7 +29,6 @@ seo-description: "UGS-1 is a Unicode glyph-variant steganography specification t
 
 categories:
 - Computers
-- Blog Posts
 
 tags:
 - unicode
@@ -58,6 +57,15 @@ location:
   coordinates:
     latitude: 34.1470
     longitude: -117.9709
+
+image: /img/2026-07/UGS-1.webp
+image-alt: "Technical infographic for UGS-1 Unicode Glyph-Variant Steganography, showing Latin and Cyrillic homoglyph code points, visible text, glyph-variant text, protocol layers, and hidden payload bits."
+image-title: "UGS-1 Unicode Glyph-Variant Steganography"
+image-description: "A dark blue technical infographic explaining UGS-1 Unicode glyph-variant steganography with Latin and Cyrillic small letter A examples, ordinary and glyph-variant text rows, visible and hidden layers, protocol markers, and encoded payload bits."
+image-credits-artist: Ted Tschopp
+image-credits-artist-URL: https://tedt.org/
+image_width: 1672
+image_height: 941
 
 mastodon-post-id:
 

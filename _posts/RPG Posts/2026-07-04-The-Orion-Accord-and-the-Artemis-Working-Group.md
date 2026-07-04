@@ -73,7 +73,7 @@ The central mythic tension is this:
 
 **Artemis** is the divine huntress: patient, precise, austere, protective of wild places and vulnerable people. She is both hunter and guardian. She does not merely kill prey; she maintains the boundary between predator and world.
 
-So in your setting:
+So in this setting:
 
 **The Orion Accord** sees itself as the natural aristocracy of the frontier: hunters, predators, smugglers, brokers, pirates, patrons, and killers who know that civilization is just a temporary agreement between people with enough force to matter.
 
