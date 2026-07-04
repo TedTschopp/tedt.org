@@ -63,7 +63,6 @@ mathjax: false
 mermaid: false
 order: null
 mastodon-post-id: null
-no_toc: true
 ---
 # Mythic Frame
 

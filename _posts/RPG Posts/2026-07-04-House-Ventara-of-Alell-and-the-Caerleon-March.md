@@ -57,7 +57,6 @@ mathjax: false
 mermaid: false
 order: null
 mastodon-post-id: null
-no_toc: true
 ---
 # House Ventara of Alell and the Caerleon March
 
