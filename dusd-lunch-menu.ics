@@ -7,343 +7,369 @@ X-WR-CALNAME:DUSD Elementary Lunch Menu
 X-WR-CALDESC:Daily elementary lunch menus published by Duarte Unified Schoo
  l District.
 BEGIN:VEVENT
-UID:dusd-lunch-e628be7b34b0020a@tedt.org
-DTSTAMP:20260501T120000Z
-DTSTART;VALUE=DATE:20260501
-DTEND;VALUE=DATE:20260502
-SUMMARY:BBQ Rib on a Bun
-DESCRIPTION:Lunch: BBQ Rib on a Bun\nDate: 2026-05-01\n\nMenu details:\n- B
- BQ Rib on a Bun\n- Or\n- Chalupas\n- Mixed Fruit\n- Celery/Apio\n- Peas/Ch
- icharos\n- 6-8 Option:\n- Mini Corn Dogs\n\nSource PDF: https://www.school
- nutritionandfitness.com/schools/dusd_1401100214572158/menus/Elementary_Men
- u_-_May_2026_-_Lunch.pdf
+UID:dusd-lunch-0b816e9b934f2403@tedt.org
+DTSTAMP:20260701T120000Z
+DTSTART;VALUE=DATE:20260701
+DTEND;VALUE=DATE:20260702
+SUMMARY:Chicken Leg with Dinner Roll
+DESCRIPTION:Lunch: Chicken Leg with Dinner Roll\nDate: 2026-07-01\n\nMenu d
+ etails:\n- Chicken Leg with Dinner Roll\n- Pierna de Pollo con Pan\n- Frui
+ t Juice\n- Jugo de Fruta\n- Broccoli\n- Potato Wedges\n- Papas\n\nSource P
+ DF: https://www.schoolnutritionandfitness.com/schools/dusd_140110021457215
+ 8/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-7846663cd540d074@tedt.org
-DTSTAMP:20260504T120000Z
-DTSTART;VALUE=DATE:20260504
-DTEND;VALUE=DATE:20260505
-SUMMARY:Chicken Patty on a Bun
-DESCRIPTION:Lunch: Chicken Patty on a Bun\nDate: 2026-05-04\n\nMenu details
- :\n- Chicken Patty on a Bun\n- Sandwich de Pollo con Pan\n- Or\n- Chili Do
- gs\n- Apples/Manzana\n- Carrots/Zanahorias\n- Black Beans\n- 6-8 Option\n-
-  Wild Mike’s cheese Bites\n\nSource PDF: https://www.schoolnutritionandfit
- ness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_May_2026_-_
- Lunch.pdf
+UID:dusd-lunch-d83c8c59fc1a7202@tedt.org
+DTSTAMP:20260702T120000Z
+DTSTART;VALUE=DATE:20260702
+DTEND;VALUE=DATE:20260703
+SUMMARY:WG Turkey Pepperoni
+DESCRIPTION:Lunch: WG Turkey Pepperoni\nDate: 2026-07-02\n\nMenu details:\n
+ - WG Turkey Pepperoni\n- Stuffed Sandwich\n- Apples\n- Manzanas\n- Zuchinn
+ i\n- Corn\n- Maiz\n\nSource PDF: https://www.schoolnutritionandfitness.com
+ /schools/dusd_1401100214572158/menus/Elementary_Menu_-_July_2026_(Summer)_
+ -_Lunch.pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-59d5546e13405213@tedt.org
-DTSTAMP:20260505T120000Z
-DTSTART;VALUE=DATE:20260505
-DTEND;VALUE=DATE:20260506
-SUMMARY:Special Chicken Nuggets w/Rice
-DESCRIPTION:Lunch: Special Chicken Nuggets w/Rice\nDate: 2026-05-05\n\nMenu
-  details:\n- Special Chicken Nuggets w/Rice\n- Or\n- Green Chile Cheese Ta
- males\n- Mango Icee\n- Mixed Vegetabls\n- Celery/apio\n- 6-8 Option\n- Dor
- ito Crazy Taco Salad\n- Birthday Cookie Day!\n\nSource PDF: https://www.sc
- hoolnutritionandfitness.com/schools/dusd_1401100214572158/menus/Elementary
- _Menu_-_May_2026_-_Lunch.pdf
+UID:dusd-lunch-53db137a557c1e87@tedt.org
+DTSTAMP:20260703T120000Z
+DTSTART;VALUE=DATE:20260703
+DTEND;VALUE=DATE:20260704
+SUMMARY:No Meal Service
+DESCRIPTION:Lunch: No Meal Service\nDate: 2026-07-03\n\nMenu details:\n- No
+  Meal Service\n- Legal Holiday!\n\nSource PDF: https://www.schoolnutrition
+ andfitness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_July_
+ 2026_(Summer)_-_Lunch.pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-9c18c2431408cc1a@tedt.org
-DTSTAMP:20260506T120000Z
-DTSTART;VALUE=DATE:20260506
-DTEND;VALUE=DATE:20260507
-SUMMARY:Pasta with Meatsauce
-DESCRIPTION:Lunch: Pasta with Meatsauce\nDate: 2026-05-06\n\nMenu details:\
- n- Pasta with Meatsauce\n- Or\n- Bean & Cheese Burrito\n- Raisins\n- Carro
- ts/Zanahorias\n- Corn\n- 6-8 Option\n- Calzone\n\nSource PDF: https://www.
+UID:dusd-lunch-0bf798b7171c41c8@tedt.org
+DTSTAMP:20260706T120000Z
+DTSTART;VALUE=DATE:20260706
+DTEND;VALUE=DATE:20260707
+SUMMARY:Mini Twin
+DESCRIPTION:Lunch: Mini Twin\nDate: 2026-07-06\n\nMenu details:\n- Mini Twi
+ n\n- Cheeseburgers\n- Tangerines\n- Tangerinas\n- Green Salad\n- Ensalada\
+ n- Green Beans\n- Frijoles Verdes\n\nSource PDF: https://www.schoolnutriti
+ onandfitness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_Jul
+ y_2026_(Summer)_-_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-7aa6ba68d865d2bd@tedt.org
+DTSTAMP:20260707T120000Z
+DTSTART;VALUE=DATE:20260707
+DTEND;VALUE=DATE:20260708
+SUMMARY:Dorito Crazy Taco Salad
+DESCRIPTION:Lunch: Dorito Crazy Taco Salad\nDate: 2026-07-07\n\nMenu detail
+ s:\n- Dorito Crazy Taco Salad\n- Ensalada de Taco Loco Dorito\n- Apples\n-
+  Manzanas\n- Broccoli\n- Carrots\n- Zanahorias\n\nSource PDF: https://www.
  schoolnutritionandfitness.com/schools/dusd_1401100214572158/menus/Elementa
- ry_Menu_-_May_2026_-_Lunch.pdf
+ ry_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-d3a5ffad38fec6ab@tedt.org
-DTSTAMP:20260507T120000Z
-DTSTART;VALUE=DATE:20260507
-DTEND;VALUE=DATE:20260508
+UID:dusd-lunch-2296a610efdbe6e4@tedt.org
+DTSTAMP:20260708T120000Z
+DTSTART;VALUE=DATE:20260708
+DTEND;VALUE=DATE:20260709
+SUMMARY:Sub Sandwich
+DESCRIPTION:Lunch: Sub Sandwich\nDate: 2026-07-08\n\nMenu details:\n- Sub S
+ andwich\n- Sandwich de Pavo y Queso\n- Grapes\n- Uvas\n- Romaine w/Cherry 
+ Tomatoes\n- Ensalada con Tomate\n- Black Beans\n- Frijoles Negros\n\nSourc
+ e PDF: https://www.schoolnutritionandfitness.com/schools/dusd_140110021457
+ 2158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-e80880240fc65b54@tedt.org
+DTSTAMP:20260709T120000Z
+DTSTART;VALUE=DATE:20260709
+DTEND;VALUE=DATE:20260710
 SUMMARY:Teriyaki Beef Dunkers with Rice
-DESCRIPTION:Lunch: Teriyaki Beef Dunkers with Rice\nDate: 2026-05-07\n\nMen
+DESCRIPTION:Lunch: Teriyaki Beef Dunkers with Rice\nDate: 2026-07-09\n\nMen
  u details:\n- Teriyaki Beef Dunkers with Rice\n- Pepitas de Carne con Arro
- s\n- Or\n- Chicken Veg Egg Rolls\n- Fruit Cup\n- Refried Beans\n- Oven Fri
- es\n- 6-8 Option\n- Chef Salad\n\nSource PDF: https://www.schoolnutritiona
- ndfitness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_May_20
- 26_-_Lunch.pdf
+ z\n- Tangerines\n- Mandarinas\n- Cucumber\n- Pepino\n- Corn\n- Maiz\n\nSou
+ rce PDF: https://www.schoolnutritionandfitness.com/schools/dusd_1401100214
+ 572158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-a9fd1a078dc0c150@tedt.org
-DTSTAMP:20260508T120000Z
-DTSTART;VALUE=DATE:20260508
-DTEND;VALUE=DATE:20260509
-SUMMARY:Chicken Taquitos
-DESCRIPTION:Lunch: Chicken Taquitos\nDate: 2026-05-08\n\nMenu details:\n- C
- hicken Taquitos\n- Or\n- Big Daddy Hot Pocket\n- Apples/Manzana\n- Green B
- eans\n- Green Salas/Ensalada\n- 6-8 Option\n- Grilled Cheese\n\nSource PDF
- : https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158/
- menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+UID:dusd-lunch-cceb6a7efd4421f6@tedt.org
+DTSTAMP:20260710T120000Z
+DTSTART;VALUE=DATE:20260710
+DTEND;VALUE=DATE:20260711
+SUMMARY:Cheese Stick
+DESCRIPTION:Lunch: Cheese Stick\nDate: 2026-07-10\n\nMenu details:\n- Chees
+ e Stick\n- Apples\n- Manzanas\n- Black Beans\n- Frijoles Negros\n- Carrots
+ \n- Zanahorias\n\nSource PDF: https://www.schoolnutritionandfitness.com/sc
+ hools/dusd_1401100214572158/menus/Elementary_Menu_-_July_2026_(Summer)_-_L
+ unch.pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-eb1fd1e84cdf0eb8@tedt.org
-DTSTAMP:20260511T120000Z
-DTSTART;VALUE=DATE:20260511
-DTEND;VALUE=DATE:20260512
-SUMMARY:Galazy Pizza
-DESCRIPTION:Lunch: Galazy Pizza\nDate: 2026-05-11\n\nMenu details:\n- Galaz
- y Pizza\n- Pizza de Galaxia\n- Or\n- Mini Twin Cheeseburgers\n- Oranges/Na
- ranjas\n- Green Salad/Ensalada\n- Green Beans\n- 6-8 Option:\n- Cheese Sti
- cks\n\nSource PDF: https://www.schoolnutritionandfitness.com/schools/dusd_
- 1401100214572158/menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-9c44696b88a29c25@tedt.org
-DTSTAMP:20260512T120000Z
-DTSTART;VALUE=DATE:20260512
-DTEND;VALUE=DATE:20260513
+UID:dusd-lunch-eb5c47e022fa7288@tedt.org
+DTSTAMP:20260713T120000Z
+DTSTART;VALUE=DATE:20260713
+DTEND;VALUE=DATE:20260714
 SUMMARY:Crispy Tacos
-DESCRIPTION:Lunch: Crispy Tacos\nDate: 2026-05-12\n\nMenu details:\n- Crisp
- y Tacos\n- Or\n- Cheese Quesadilla\n- Bananas\n- Corn/Maiz\n- Carrots/Zana
- horias\n- 6-8 Option\n- Sub Sandwich\n\nSource PDF: https://www.schoolnutr
- itionandfitness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_
- May_2026_-_Lunch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-fe0de26a85ae74f7@tedt.org
-DTSTAMP:20260513T120000Z
-DTSTART;VALUE=DATE:20260513
-DTEND;VALUE=DATE:20260514
-SUMMARY:Oven Baked Chicken w/Roll
-DESCRIPTION:Lunch: Oven Baked Chicken w/Roll\nDate: 2026-05-13\n\nMenu deta
- ils:\n- Oven Baked Chicken w/Roll\n- Pollo de Horno con Pan\n- Or\n- Grill
- ed Cheese\n- Tangerines/Tangerinas\n- Green Salad/Ensalada\n- Refried Bean
- s\n- 6-8 Option:\n- Pepperoni\n- Pinwheels\n\nSource PDF: https://www.scho
- olnutritionandfitness.com/schools/dusd_1401100214572158/menus/Elementary_M
- enu_-_May_2026_-_Lunch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-179ed2d513941340@tedt.org
-DTSTAMP:20260514T120000Z
-DTSTART;VALUE=DATE:20260514
-DTEND;VALUE=DATE:20260515
-SUMMARY:Chicken Sandwich
-DESCRIPTION:Lunch: Chicken Sandwich\nDate: 2026-05-14\n\nMenu details:\n- C
- hicken Sandwich\n- Or\n- Cheesy Nachos\n- Kiwis\n- Carrots/Zanahorias\n- M
- ixed Vegetable\n- 6-8 Option:\n- Beef Chalupa\n\nSource PDF: https://www.s
- choolnutritionandfitness.com/schools/dusd_1401100214572158/menus/Elementar
- y_Menu_-_May_2026_-_Lunch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-b75ade5adb53a06f@tedt.org
-DTSTAMP:20260515T120000Z
-DTSTART;VALUE=DATE:20260515
-DTEND;VALUE=DATE:20260516
-SUMMARY:BBQ Rib on a Bun
-DESCRIPTION:Lunch: BBQ Rib on a Bun\nDate: 2026-05-15\n\nMenu details:\n- B
- BQ Rib on a Bun\n- Or\n- Chalupas\n- Mixed Fruit\n- Celery/Apio\n- Peas/Ch
- icharos\n- 6-8 Option:\n- Mini Corn Dogs\n\nSource PDF: https://www.school
- nutritionandfitness.com/schools/dusd_1401100214572158/menus/Elementary_Men
- u_-_May_2026_-_Lunch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-62206960b6625a89@tedt.org
-DTSTAMP:20260518T120000Z
-DTSTART;VALUE=DATE:20260518
-DTEND;VALUE=DATE:20260519
-SUMMARY:Chicken Patty on a Bun
-DESCRIPTION:Lunch: Chicken Patty on a Bun\nDate: 2026-05-18\n\nMenu details
- :\n- Chicken Patty on a Bun\n- Sandwich de Pollo con Pan\n- Or\n- Chili Do
- gs\n- Apples/Manzana\n- Carrots/Zanahorias\n- Black Beans\n- 6-8 Option\n-
-  Wild Mike’s Cheese Bites\n\nSource PDF: https://www.schoolnutritionandfit
- ness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_May_2026_-_
- Lunch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-9dde19622ff36bff@tedt.org
-DTSTAMP:20260519T120000Z
-DTSTART;VALUE=DATE:20260519
-DTEND;VALUE=DATE:20260520
-SUMMARY:Chicken Nuggets w/Rice
-DESCRIPTION:Lunch: Chicken Nuggets w/Rice\nDate: 2026-05-19\n\nMenu details
- :\n- Chicken Nuggets w/Rice\n- Pepitas de Pollo con Arroz\n- Or\n- Dorito 
- Crazy Taco Salad\n- Juice 4 oz\n- Mixed Vegetabls\n- Celery/apio\n- 6-8 Op
- tion\n- Mini Corn Dogs\n\nSource PDF: https://www.schoolnutritionandfitnes
- s.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_May_2026_-_Lun
- ch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-630cf699061bf866@tedt.org
-DTSTAMP:20260520T120000Z
-DTSTART;VALUE=DATE:20260520
-DTEND;VALUE=DATE:20260521
-SUMMARY:Pasta with Meatsauce
-DESCRIPTION:Lunch: Pasta with Meatsauce\nDate: 2026-05-20\n\nMenu details:\
- n- Pasta with Meatsauce\n- Or\n- Bean & Cheese Burrito\n- Raisins\n- Carro
- ts/Zanahorias\n- Corn\n- 6-8 Option\n- Calzone\n\nSource PDF: https://www.
- schoolnutritionandfitness.com/schools/dusd_1401100214572158/menus/Elementa
- ry_Menu_-_May_2026_-_Lunch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-66535cebb6e7aaa1@tedt.org
-DTSTAMP:20260521T120000Z
-DTSTART;VALUE=DATE:20260521
-DTEND;VALUE=DATE:20260522
-SUMMARY:Teriyaki Beef Dunkers with Rice
-DESCRIPTION:Lunch: Teriyaki Beef Dunkers with Rice\nDate: 2026-05-21\n\nMen
- u details:\n- Teriyaki Beef Dunkers with Rice\n- Pepitas de Carne con Arro
- s\n- Or\n- Chicken Veg Egg Rolls\n- Fruit Cup\n- Refried Beans\n- Oven Fri
- es\n- 6-8 Option\n- Cher Salad\n\nSource PDF: https://www.schoolnutritiona
- ndfitness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_May_20
- 26_-_Lunch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-a2b8b62a7f5def47@tedt.org
-DTSTAMP:20260522T120000Z
-DTSTART;VALUE=DATE:20260522
-DTEND;VALUE=DATE:20260523
-SUMMARY:Chicken Taquitos
-DESCRIPTION:Lunch: Chicken Taquitos\nDate: 2026-05-22\n\nMenu details:\n- C
- hicken Taquitos\n- Or\n- Big Daddy Hot Pocket\n- Apples/Manzana\n- Green B
- eans\n- Green Salas/Ensalada\n- 6-8 Option\n- Grilled Cheese\n\nSource PDF
- : https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158/
- menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
-STATUS:CONFIRMED
-TRANSP:TRANSPARENT
-END:VEVENT
-BEGIN:VEVENT
-UID:dusd-lunch-c2e10541d3f0b70d@tedt.org
-DTSTAMP:20260525T120000Z
-DTSTART;VALUE=DATE:20260525
-DTEND;VALUE=DATE:20260526
-SUMMARY:Memorial Day
-DESCRIPTION:Lunch: Memorial Day\nDate: 2026-05-25\n\nMenu details:\n- Memor
- ial Day\n- No School\n\nSource PDF: https://www.schoolnutritionandfitness.
- com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_May_2026_-_Lunch
+DESCRIPTION:Lunch: Crispy Tacos\nDate: 2026-07-13\n\nMenu details:\n- Crisp
+ y Tacos\n- Mixed Fruit\n- Fruta Mixta\n- Cucumber\n- Pepino\n- Carrots\n- 
+ Zanahorias\n\nSource PDF: https://www.schoolnutritionandfitness.com/school
+ s/dusd_1401100214572158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch
  .pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-7e04a4bfc52be2a0@tedt.org
-DTSTAMP:20260526T120000Z
-DTSTART;VALUE=DATE:20260526
-DTEND;VALUE=DATE:20260527
+UID:dusd-lunch-7d004ee5e908a7f1@tedt.org
+DTSTAMP:20260714T120000Z
+DTSTART;VALUE=DATE:20260714
+DTEND;VALUE=DATE:20260715
+SUMMARY:Cheesy Nachos
+DESCRIPTION:Lunch: Cheesy Nachos\nDate: 2026-07-14\n\nMenu details:\n- Chee
+ sy Nachos\n- Oranges\n- Naranjas\n- Refried Beans\n- Frijoles Resfriado\n-
+  Corn\n- Maiz\n\nSource PDF: https://www.schoolnutritionandfitness.com/sch
+ ools/dusd_1401100214572158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lu
+ nch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-d50f520c3613c919@tedt.org
+DTSTAMP:20260715T120000Z
+DTSTART;VALUE=DATE:20260715
+DTEND;VALUE=DATE:20260716
+SUMMARY:Chicken Leg with Dinner Roll
+DESCRIPTION:Lunch: Chicken Leg with Dinner Roll\nDate: 2026-07-15\n\nMenu d
+ etails:\n- Chicken Leg with Dinner Roll\n- Pierna de Pollo con Pan\n- Frui
+ t Juice\n- Jugo de Fruta\n- Broccoli\n- Potato Wedges\n- Papas\n\nSource P
+ DF: https://www.schoolnutritionandfitness.com/schools/dusd_140110021457215
+ 8/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-9782fd618a5604e5@tedt.org
+DTSTAMP:20260716T120000Z
+DTSTART;VALUE=DATE:20260716
+DTEND;VALUE=DATE:20260717
+SUMMARY:WG Turkey Pepperoni
+DESCRIPTION:Lunch: WG Turkey Pepperoni\nDate: 2026-07-16\n\nMenu details:\n
+ - WG Turkey Pepperoni\n- Stuffed Sandwich\n- Apples\n- Manzanas\n- Zuchinn
+ i\n- Corn\n- Maiz\n\nSource PDF: https://www.schoolnutritionandfitness.com
+ /schools/dusd_1401100214572158/menus/Elementary_Menu_-_July_2026_(Summer)_
+ -_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-d94e40b59530e528@tedt.org
+DTSTAMP:20260717T120000Z
+DTSTART;VALUE=DATE:20260717
+DTEND;VALUE=DATE:20260718
+SUMMARY:Chicken Nuggets with Rice
+DESCRIPTION:Lunch: Chicken Nuggets with Rice\nDate: 2026-07-17\n\nMenu deta
+ ils:\n- Chicken Nuggets with Rice\n- Pepitas de Pollo con Arroz\n- Oranges
+ \n- Naranjas\n- Green Salad\n- Ensalada\n- Carrots\n- Zanahorias\n\nSource
+  PDF: https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572
+ 158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-3cd19cceb7fe5db5@tedt.org
+DTSTAMP:20260720T120000Z
+DTSTART;VALUE=DATE:20260720
+DTEND;VALUE=DATE:20260721
+SUMMARY:Mini Twin
+DESCRIPTION:Lunch: Mini Twin\nDate: 2026-07-20\n\nMenu details:\n- Mini Twi
+ n\n- Cheeseburgers\n- Tangerines\n- Tangerinas\n- Green Salad\n- Ensalada\
+ n- Green Beans\n- Frijoles Verdes\n\nSource PDF: https://www.schoolnutriti
+ onandfitness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_Jul
+ y_2026_(Summer)_-_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-687e18c4ee470ab5@tedt.org
+DTSTAMP:20260721T120000Z
+DTSTART;VALUE=DATE:20260721
+DTEND;VALUE=DATE:20260722
+SUMMARY:Dorito Crazy Taco Salad
+DESCRIPTION:Lunch: Dorito Crazy Taco Salad\nDate: 2026-07-21\n\nMenu detail
+ s:\n- Dorito Crazy Taco Salad\n- Ensalada de Taco Loco Dorito\n- Apples\n-
+  Manzanas\n- Broccoli\n- Carrots\n- Zanahorias\n\nSource PDF: https://www.
+ schoolnutritionandfitness.com/schools/dusd_1401100214572158/menus/Elementa
+ ry_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-39fbac9e8a09a0fd@tedt.org
+DTSTAMP:20260722T120000Z
+DTSTART;VALUE=DATE:20260722
+DTEND;VALUE=DATE:20260723
+SUMMARY:Sub Sandwich
+DESCRIPTION:Lunch: Sub Sandwich\nDate: 2026-07-22\n\nMenu details:\n- Sub S
+ andwich\n- Sandwich de Pavo y Queso\n- Grapes\n- Uvas\n- Romaine w/Cherry 
+ Tomatoes\n- Ensalada con Tomate\n- Black Beans\n- Frijoles Negros\n\nSourc
+ e PDF: https://www.schoolnutritionandfitness.com/schools/dusd_140110021457
+ 2158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-91504ad907ff1f4f@tedt.org
+DTSTAMP:20260723T120000Z
+DTSTART;VALUE=DATE:20260723
+DTEND;VALUE=DATE:20260724
+SUMMARY:Teriyaki Beef Dunkers with Rice
+DESCRIPTION:Lunch: Teriyaki Beef Dunkers with Rice\nDate: 2026-07-23\n\nMen
+ u details:\n- Teriyaki Beef Dunkers with Rice\n- Pepitas de Carne con Arro
+ z\n- Tangerines\n- Mandarinas\n- Cucumber\n- Pepino\n- Corn\n- Maiz\n\nSou
+ rce PDF: https://www.schoolnutritionandfitness.com/schools/dusd_1401100214
+ 572158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-6187f2fff76c62fc@tedt.org
+DTSTAMP:20260724T120000Z
+DTSTART;VALUE=DATE:20260724
+DTEND;VALUE=DATE:20260725
+SUMMARY:Cheese Stick
+DESCRIPTION:Lunch: Cheese Stick\nDate: 2026-07-24\n\nMenu details:\n- Chees
+ e Stick\n- Apples\n- Manzanas\n- Black Beans\n- Frijoles Negros\n- Carrots
+ \n- Zanahorias\n\nSource PDF: https://www.schoolnutritionandfitness.com/sc
+ hools/dusd_1401100214572158/menus/Elementary_Menu_-_July_2026_(Summer)_-_L
+ unch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-8e0f1682629178d7@tedt.org
+DTSTAMP:20260727T120000Z
+DTSTART;VALUE=DATE:20260727
+DTEND;VALUE=DATE:20260728
 SUMMARY:Crispy Tacos
-DESCRIPTION:Lunch: Crispy Tacos\nDate: 2026-05-26\n\nMenu details:\n- Crisp
- y Tacos\n- Or\n- Cheese Quesadilla\n- Kiwis\n- Tater Tots\n- Carrots/Zanah
- orias\n- 6-8 Option\n- Sub Sandwich\n\nSource PDF: https://www.schoolnutri
- tionandfitness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-_M
- ay_2026_-_Lunch.pdf
+DESCRIPTION:Lunch: Crispy Tacos\nDate: 2026-07-27\n\nMenu details:\n- Crisp
+ y Tacos\n- Mixed Fruit\n- Fruta Mixta\n- Cucumber\n- Pepino\n- Carrots\n- 
+ Zanahorias\n\nSource PDF: https://www.schoolnutritionandfitness.com/school
+ s/dusd_1401100214572158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch
+ .pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-a991df759c1e45e3@tedt.org
-DTSTAMP:20260527T120000Z
-DTSTART;VALUE=DATE:20260527
-DTEND;VALUE=DATE:20260528
-SUMMARY:Oven Baked Chicken w/Roll
-DESCRIPTION:Lunch: Oven Baked Chicken w/Roll\nDate: 2026-05-27\n\nMenu deta
- ils:\n- Oven Baked Chicken w/Roll\n- Pollo de Horno con Pan\n- Or\n- Grill
- ed Cheese\n- Tangerines/Tangerinas\n- Green Salad/Ensalada\n- Refried Bean
- s\n- 6-8 Option:\n- Pepperoni\n- Pinwheels\n\nSource PDF: https://www.scho
- olnutritionandfitness.com/schools/dusd_1401100214572158/menus/Elementary_M
- enu_-_May_2026_-_Lunch.pdf
+UID:dusd-lunch-497d9b8ddad84082@tedt.org
+DTSTAMP:20260728T120000Z
+DTSTART;VALUE=DATE:20260728
+DTEND;VALUE=DATE:20260729
+SUMMARY:Cheesy Nachos
+DESCRIPTION:Lunch: Cheesy Nachos\nDate: 2026-07-28\n\nMenu details:\n- Chee
+ sy Nachos\n- Oranges\n- Naranjas\n- Refried Beans\n- Frijoles Resfriado\n-
+  Corn\n- Maiz\n\nSource PDF: https://www.schoolnutritionandfitness.com/sch
+ ools/dusd_1401100214572158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lu
+ nch.pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-e95babc53e1b828e@tedt.org
-DTSTAMP:20260528T120000Z
-DTSTART;VALUE=DATE:20260528
-DTEND;VALUE=DATE:20260529
-SUMMARY:Manager’s Choice
-DESCRIPTION:Lunch: Manager’s Choice\nDate: 2026-05-28\n\nMenu details:\n- M
- anager’s Choice\n- Fruit\n- Vegetable\n\nSource PDF: https://www.schoolnut
- ritionandfitness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-
- _May_2026_-_Lunch.pdf
+UID:dusd-lunch-4215cbee0375da51@tedt.org
+DTSTAMP:20260729T120000Z
+DTSTART;VALUE=DATE:20260729
+DTEND;VALUE=DATE:20260730
+SUMMARY:Chicken Leg with Dinner Roll
+DESCRIPTION:Lunch: Chicken Leg with Dinner Roll\nDate: 2026-07-29\n\nMenu d
+ etails:\n- Chicken Leg with Dinner Roll\n- Pierna de Pollo con Pan\n- Frui
+ t Juice\n- Jugo de Fruta\n- Broccoli\n- Potato Wedges\n- Papas\n\nSource P
+ DF: https://www.schoolnutritionandfitness.com/schools/dusd_140110021457215
+ 8/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
-UID:dusd-lunch-67e87b45995f6bd9@tedt.org
-DTSTAMP:20260529T120000Z
-DTSTART;VALUE=DATE:20260529
-DTEND;VALUE=DATE:20260530
-SUMMARY:Manager’s Choice
-DESCRIPTION:Lunch: Manager’s Choice\nDate: 2026-05-29\n\nMenu details:\n- M
- anager’s Choice\n- Fruit\n- Vegetable\n\nSource PDF: https://www.schoolnut
- ritionandfitness.com/schools/dusd_1401100214572158/menus/Elementary_Menu_-
- _May_2026_-_Lunch.pdf
+UID:dusd-lunch-78c8538cc0ca5003@tedt.org
+DTSTAMP:20260730T120000Z
+DTSTART;VALUE=DATE:20260730
+DTEND;VALUE=DATE:20260731
+SUMMARY:WG Turkey Pepperoni
+DESCRIPTION:Lunch: WG Turkey Pepperoni\nDate: 2026-07-30\n\nMenu details:\n
+ - WG Turkey Pepperoni\n- Stuffed Sandwich\n- Apples\n- Manzanas\n- Zuchinn
+ i\n- Corn\n- Maiz\n\nSource PDF: https://www.schoolnutritionandfitness.com
+ /schools/dusd_1401100214572158/menus/Elementary_Menu_-_July_2026_(Summer)_
+ -_Lunch.pdf
 URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
- /menus/Elementary_Menu_-_May_2026_-_Lunch.pdf
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+STATUS:CONFIRMED
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:dusd-lunch-8d8a1dbc26bf6075@tedt.org
+DTSTAMP:20260731T120000Z
+DTSTART;VALUE=DATE:20260731
+DTEND;VALUE=DATE:20260801
+SUMMARY:Chicken Nuggets with Rice
+DESCRIPTION:Lunch: Chicken Nuggets with Rice\nDate: 2026-07-31\n\nMenu deta
+ ils:\n- Chicken Nuggets with Rice\n- Pepitas de Pollo con Arroz\n- Oranges
+ \n- Naranjas\n- Green Salad\n- Ensalada\n- Carrots\n- Zanahorias\n\nSource
+  PDF: https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572
+ 158/menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
+URL:https://www.schoolnutritionandfitness.com/schools/dusd_1401100214572158
+ /menus/Elementary_Menu_-_July_2026_(Summer)_-_Lunch.pdf
 STATUS:CONFIRMED
 TRANSP:TRANSPARENT
 END:VEVENT
