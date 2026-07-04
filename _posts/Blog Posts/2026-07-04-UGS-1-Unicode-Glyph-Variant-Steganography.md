@@ -911,21 +911,97 @@ A robust implementation SHOULD also:
 
 ---
 
-## 20. References
+## 20. Prior Art and Related Work — Informative
 
-```text
-Unicode Security Mechanisms
-https://www.unicode.org/reports/tr39/
+### 20.1 Scope of This Section
 
-Unicode Normalization Forms
-https://www.unicode.org/reports/tr15/
+UGS-1 does **not** claim novelty over the broad idea of hiding information in text by using Unicode look-alikes, invisible characters, or whitespace variants. Prior work exists in Unicode security, IDN homograph attacks, text watermarking, Unicode homoglyph substitution, Unicode space-character hiding, and zero-width-character steganography. The purpose of UGS-1 is narrower: it defines a **small, deterministic, interoperable profile** with a fixed homoglyph table, a byte-oriented frame, a length field, versioning, CRC validation, strict decoding, scan decoding, and explicit capacity/error behavior.
 
-General Punctuation
-https://www.unicode.org/charts/nameslist/n_2000.html
+This section is a non-exhaustive prior-art and related-work note, not a legal patent-clearance opinion.
 
-Unicode Core Specification, Special Areas and Format Characters
-https://www.unicode.org/versions/Unicode16.0.0/core-spec/chapter-23/
+### 20.2 Unicode Visual Confusability and Homograph Security
 
-Unicode Ideographic Variation Database
-https://www.unicode.org/reports/tr37/
-```
+Unicode visual confusability is a well-documented security issue. Unicode Technical Report #36 describes visual spoofing as relying on different Unicode strings whose appearance in common fonts and screen sizes is close enough that users can mistake one for another. It also notes that Internationalized Domain Names increase opportunities for visual spoofing because the usable character repertoire is much larger than ASCII. ([Unicode][1])
+
+Unicode Technical Standard #39 defines mechanisms for detecting visually confusable strings. It defines skeleton-based confusable detection, classifies confusables as single-script, mixed-script, or whole-script, and gives the canonical example of `paypal` versus `pаypаl`, where the second string contains U+0430 CYRILLIC SMALL LETTER A. ([Unicode][2])
+
+The IDN homograph attack literature predates UGS-1 by decades. Gabrilovich and Gontmakher’s 2002 “The Homograph Attack” framed character resemblance as a security problem rather than merely a typographic nuisance, and discussed non-Latin substitutions that could make domain names appear authentic while resolving differently.  Later measurement work on IDN homographs describes Unicode homoglyphs as visually similar characters that can be abused to create spoofing domains, and notes that Gabrilovich and Gontmakher demonstrated an IDN homograph using Russian letters in 2002. ([arXiv][3])
+
+UGS-1 intentionally uses the same underlying property—different code points with similar glyphs—but for a framed steganographic/watermarking channel rather than for identifiers or domain-name spoofing. Implementations SHOULD NOT use UGS-1 inside security-sensitive identifiers such as domains, usernames, package names, certificates, executable filenames, payment addresses, or login prompts.
+
+### 20.3 Homoglyph-Based Text Watermarking and Steganography
+
+Academic work has already proposed Unicode homoglyph substitution for text watermarking. Rizzo, Bertini, and Montesi’s 2016 paper, “Content-preserving Text Watermarking through Unicode Homoglyph Substitution,” proposes a text watermarking technique based on substituting homoglyph characters for Latin symbols, using alternative Unicode symbols to preserve visual indistinguishability and text length. ([ResearchGate][4])
+
+Follow-on work on fine-grain text watermarking uses homoglyph substitution for Latin symbols and whitespaces to protect small portions of text, while preserving visual indistinguishability and length. That work explicitly treats text watermarking as difficult because text has low embedding capacity and limited safe transformation space. ([Manara][5])
+
+Hosmani, Bhat, and Chandrasekaran’s “Dual Stage Text Steganography Using Unicode Homoglyphs” is another direct related work. Its abstract describes a text steganography approach combining space manipulation, linguistic translation, and Unicode homoglyphs, implemented in Python. ([ResearchGate][6])
+
+There are also practical implementations. The `stegtext` project describes hiding text inside text by replacing ASCII characters with visually similar Unicode homoglyphs. Its documentation gives the same basic bit model used by UGS-1: leaving an eligible character unchanged can represent `0`, while swapping it with a visually identical homoglyph can represent `1`; it also notes that characters with multiple homoglyphs can encode more than one bit. ([GitHub][7])
+
+UGS-1 differs from these systems by deliberately choosing a conservative **one-bit-per-character** profile, a fixed mandatory table, a binary frame, a magic value, version and flags fields, a 24-bit payload length, CRC-16 validation, and specified decoder error behavior.
+
+### 20.4 Unicode Whitespace, Zero-Width, and Invisible-Character Channels
+
+Unicode text hiding is not limited to homoglyph substitution. UniSpaCh, published in 2012, uses Unicode space characters inserted into inter-word, inter-sentence, end-of-line, and paragraph spacing to encode external information in Microsoft Word documents, while aiming to improve imperceptibility and embedding efficiency. ([ScienceDirect][8])
+
+More recent whitespace-replacement watermarking work similarly hides byte-encoded sequences in unformatted text by substituting conventional whitespace with visually similar Unicode spaces. The 2025 HICSS paper by Hellmeier, Qarawlus, Norkowski, and Howar reports a proof-of-concept multiplatform implementation and evaluates robustness, capacity, and visibility. ([ResearchGate][9])
+
+Zero-width-character steganography is another established related family. The 330k Unicode steganography tool exposes text and binary encode/decode APIs and uses characters such as U+200C, U+200D, U+202C, and U+FEFF, while noting that U+200B may be deleted by Gmail in browser-sent mail. ([330k][10]) StegCloak is a JavaScript steganography tool that hides secrets inside text using special invisible Unicode characters, with optional compression, AES-256-CTR encryption, and HMAC integrity. ([GitHub][11])
+
+UGS-1’s primary H1 profile is therefore best understood as a **homoglyph profile**, not a general Unicode steganography invention. The optional Z1 profile belongs to the older zero-width/invisible-character family and should be treated as more fragile in copy/paste, email, messaging, search indexing, normalization, and security-filtering pipelines.
+
+### 20.5 Normalization, Sanitization, and Defensive Detection
+
+Unicode normalization is directly relevant to UGS-1 robustness. Unicode Standard Annex #15 defines normalization forms so equivalent strings can have unique binary representations; any process that normalizes, folds, transliterates, maps confusables, removes default-ignorable characters, or enforces a restricted character repertoire can alter or destroy a Unicode steganographic channel. ([Unicode][12])
+
+Defensive systems can detect or neutralize UGS-1-like channels by using Unicode confusable data, skeleton mappings, mixed-script detection, or explicit canonicalization of known homoglyph pairs. Unicode Technical Standard #39 provides the standard basis for confusable detection and includes mappings such as Cyrillic small es to Latin `c`. ([Unicode][2])
+
+A UGS-1 implementation SHOULD therefore include reveal and strip tooling. Reveal tooling helps auditors see code-point substitutions; strip tooling replaces UGS-1 one-variants with their Latin zero-variants, preserving visible text while removing the hidden channel.
+
+### 20.6 UGS-1 Positioning
+
+UGS-1 should be positioned as an **interoperability profile** for a known class of Unicode text steganography and watermarking techniques. It standardizes one conservative way to frame, embed, decode, validate, and strip a hidden byte payload using Unicode homoglyph variants.
+
+UGS-1 is not encryption. It does not provide confidentiality unless the payload is encrypted before embedding. It is also not robust against determined sanitization, paraphrasing, transliteration, OCR, Unicode confusable canonicalization, or manual replacement of suspicious non-Latin code points.
+
+Appropriate uses include controlled watermarking experiments, puzzles, protocol demonstrations, document-provenance research, educational security examples, and defensive testing. Inappropriate uses include spoofing identifiers, phishing, bypassing safety filters, hiding executable instructions, concealing policy-violating content, or impersonating trusted parties.
+
+### 20.7 Informative References
+
+**[UTR36]** Unicode Consortium, *Unicode Technical Report #36: Unicode Security Considerations*. Discusses visual spoofing, confusable strings, and IDN-related security risks. ([Unicode][1])
+
+**[UTS39]** Unicode Consortium, *Unicode Technical Standard #39: Unicode Security Mechanisms*. Defines confusable detection, skeleton mappings, mixed-script confusables, and related data files. ([Unicode][2])
+
+**[UAX15]** Unicode Consortium, *Unicode Standard Annex #15: Unicode Normalization Forms*. Defines normalization forms and explains how equivalent Unicode strings can be represented consistently. ([Unicode][12])
+
+**[Gabrilovich2002]** Evgeniy Gabrilovich and Alex Gontmakher, *The Homograph Attack*, Communications of the ACM, 2002. Early security treatment of visually confusable characters in domain-name spoofing. 
+
+**[Rizzo2016]** Stefano Giovanni Rizzo, Flavio Bertini, and Danilo Montesi, *Content-preserving Text Watermarking through Unicode Homoglyph Substitution*, IDEAS 2016. Proposes watermarking through Unicode homoglyph substitution for Latin symbols. ([ResearchGate][4])
+
+**[Rizzo2019]** Rizzo et al., *Fine-grain watermarking for intellectual property protection*, EURASIP Journal on Information Security, 2019. Extends homoglyph/whitespace substitution for fine-grained document watermarking. ([Manara][5])
+
+**[Hosmani2015]** Sachin Hosmani, H. G. Rama Bhat, and K. Chandrasekaran, *Dual Stage Text Steganography Using Unicode Homoglyphs*, 2015. Combines space manipulation, linguistic translation, and Unicode homoglyphs. ([ResearchGate][6])
+
+**[UniSpaCh2012]** Lip Yee Por, Koksheik Wong, and Kok Onn Chee, *UniSpaCh: A text-based data hiding method using Unicode space characters*, Journal of Systems and Software, 2012. Uses Unicode space characters for text-based data hiding. ([ScienceDirect][8])
+
+**[Hellmeier2025]** Hellmeier, Qarawlus, Norkowski, and Howar, *A Hidden Digital Text Watermarking Method Using Unicode Whitespace Replacement*, HICSS 2025. Replaces conventional whitespace with visually similar Unicode spaces to hide byte-encoded data. ([ResearchGate][9])
+
+**[stegtext]** `btimby/stegtext`, practical Unicode homoglyph steganography implementation using ASCII-to-homoglyph character swaps. ([GitHub][7])
+
+**[StegCloak]** `KuroLabs/stegcloak`, practical zero-width Unicode steganography implementation with compression, encryption, and integrity options. ([GitHub][11])
+
+**[330kUnicodeStego]** 330k Unicode Steganography with Zero-Width Characters, browser-based zero-width text/binary encoder and decoder. ([330k][10])
+
+[1]: https://www.unicode.org/reports/tr36/tr36-10.html "UTR #36: Unicode Security Considerations"
+[2]: https://www.unicode.org/reports/tr39/ "UTS #39: Unicode Security Mechanisms"
+[3]: https://arxiv.org/pdf/1909.07539 "ShamFinder: An Automated Frameworkfor Detecting IDN Homographs"
+[4]: https://www.researchgate.net/publication/308044170_Content-preserving_Text_Watermarking_through_Unicode_Homoglyph_Substitution "Content-preserving Text Watermarking through Unicode Homoglyph Substitution | Request PDF"
+[5]: https://manara.qnl.qa/articles/journal_contribution/Fine-grain_watermarking_for_intellectual_property_protection/25904404 "Item - Fine-grain watermarking for intellectual property protection - Figshare"
+[6]: https://www.researchgate.net/publication/300555812_Dual_Stage_Text_Steganography_Using_Unicode_Homoglyphs "Dual Stage Text Steganography Using Unicode Homoglyphs"
+[7]: https://github.com/btimby/stegtext "GitHub - btimby/stegtext: Steganography · GitHub"
+[8]: https://www.sciencedirect.com/science/article/abs/pii/S0164121211003177?utm_source=chatgpt.com "UniSpaCh: A text-based data hiding method using Unicode ..."
+[9]: https://www.researchgate.net/publication/388026221_A_Hidden_Digital_Text_Watermarking_Method_Using_Unicode_Whitespace_Replacement "(PDF) A Hidden Digital Text Watermarking Method Using Unicode Whitespace Replacement"
+[10]: https://330k.github.io/misc_tools/unicode_steganography.html "Unicode Steganography with Zero-Width Characters"
+[11]: https://github.com/kurolabs/stegcloak "GitHub - KuroLabs/stegcloak: Hide secrets with invisible characters in plain text securely using passwords ‍♂️⭐ · GitHub"
+[12]: https://www.unicode.org/reports/tr15/ "UAX #15: Unicode Normalization Forms"
