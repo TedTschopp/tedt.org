@@ -4764,7 +4764,10 @@
       "name": "Ted Tschopp",
       "url": "https://tedt.org/"
     },
-    "toots": []
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116865270436240424"
+    ],
+    "lastTootTimestamp": 1783222510424
   },
   "https://tedt.org/UGS-1-Unicode-Glyph-Variant-Steganography/": {
     "id": "/UGS-1-Unicode-Glyph-Variant-Steganography/",
@@ -4772,6 +4775,7 @@
     "summary": "UGS-1 is a compact technical specification for embedding framed byte payloads in visible text by replacing selected Latin characters with visually similar Unicode homoglyphs. It defines security constraints, non-goals, Unicode handling rules, framing, validation, capacity, APIs, and detector guidan…",
     "content_text": "UGS-1 is a compact technical specification for embedding framed byte payloads in visible text by replacing selected Latin characters with visually similar Unicode homoglyphs. It defines security constraints, non-goals, Unicode handling rules, framing, validation, capacity, APIs, and detector guidance. https://tedt.org/UGS-1-Unicode-Glyph-Variant-Steganography/",
     "url": "https://tedt.org/UGS-1-Unicode-Glyph-Variant-Steganography/",
+    "image": "https://tedt.org/img/2026-07/UGS-1.webp",
     "tags": [
       "unicode",
       "steganography",
