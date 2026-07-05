@@ -4797,5 +4797,32 @@
       "https://tschopp.net/users/Ted/statuses/116865546388404084"
     ],
     "lastTootTimestamp": 1783226721103
+  },
+  "https://tedt.org/TheOneRing-com-Legacy-Archive/": {
+    "id": "/TheOneRing-com-Legacy-Archive/",
+    "title": "TheOneRing.com Legacy Archive",
+    "summary": "A personal, noncommercial historical archive preserving selected TheOneRing.com-era articles, essays, news items, and community writing.",
+    "content_text": "A personal, noncommercial historical archive preserving selected TheOneRing.com-era articles, essays, news items, and community writing. https://tedt.org/TheOneRing-com-Legacy-Archive/",
+    "url": "https://tedt.org/TheOneRing-com-Legacy-Archive/",
+    "tags": [
+      "theonering",
+      "theonering-com",
+      "tolkien",
+      "fandom",
+      "legacy-archive",
+      "internet-history",
+      "fan-sites"
+    ],
+    "date_published": "2026-07-05T00:00:00-07:00",
+    "date_modified": "2026-07-05T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116868054336649343"
+    ],
+    "lastTootTimestamp": 1783264989402
   }
 }
