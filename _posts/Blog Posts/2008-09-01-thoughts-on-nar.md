@@ -36,8 +36,8 @@ location:
 coordinates:
   latitude: 34.02455
   longitude: -117.767693
-image: null
-image-alt: null
+image: /img/2008-09/narrative-fallacy-black-swan.webp
+image-alt: Open book, black swan silhouette, index cards, and red thread
 image-artist: null
 image-artist-URL: null
 image-credits: null

@@ -33,8 +33,8 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
+image: /img/2007-01/web-services-architecture.webp
+image-alt: Enterprise workstation with connected monitors and architecture diagrams
 image-artist: null
 image-artist-URL: null
 image-credits: null

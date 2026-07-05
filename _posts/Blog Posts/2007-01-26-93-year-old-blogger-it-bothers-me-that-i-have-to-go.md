@@ -27,8 +27,8 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
+image: /img/2007-01/elder-blogger-computer.webp
+image-alt: Elderly hands typing at a home computer beside family photos
 image-artist: null
 image-artist-URL: null
 image-credits: null

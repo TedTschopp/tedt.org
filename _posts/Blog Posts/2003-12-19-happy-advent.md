@@ -35,8 +35,8 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
+image: /img/2003-12/advent-theme-park-candlelight.webp
+image-alt: Rainy theme park path with Christmas lights and a candlelight procession
 image-artist: null
 image-artist-URL: null
 image-description: null

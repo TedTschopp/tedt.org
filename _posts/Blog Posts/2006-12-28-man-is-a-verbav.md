@@ -32,8 +32,8 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
+image: /img/2006-12/word-eater-identity-symbols.webp
+image-alt: Open books, a candle, and handwritten symbols on a reading desk
 image-artist: null
 image-artist-URL: null
 image-description: An image of a person engrossed in reading a large book, with symbolic

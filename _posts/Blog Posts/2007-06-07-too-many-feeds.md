@@ -33,8 +33,8 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
+image: /img/2007-06/rss-feed-overload.webp
+image-alt: Desktop feed reader overloaded with folders and feed cards
 image-artist: null
 image-artist-URL: null
 image-credits: null
