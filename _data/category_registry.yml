@@ -709,7 +709,7 @@ theonering-com-legacy-archive:
   raw_names: [ "TheOneRing.com Legacy Archive", "theonering", "TheOneRing", "THEONERING" ]
   class: TheOneRingLegacyArchive
   emoji: "💍"
-  subtitle: "Preserving the early web history of TheOneRing.com, Tolkien fandom, community, and online mythmaking."
+  subtitle: "Preserving the early web history of online fandom."
   description: "A personal, noncommercial legacy archive preserving TheOneRing.com-era posts, documents, fan culture, and early web history connected to Tolkien fandom, online communities, and the making of modern digital fandom. This archive is historical in nature and is not affiliated with the current TheOneRing.com."
   image: /img/categories/TheOneRing.webp
   palette:
