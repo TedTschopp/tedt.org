@@ -25,6 +25,7 @@ seo-description: "Martin Luther called music a noble art, never to be used merel
 
 categories:
 - Quotes
+- Music
 tags:
 - martin luther
 - music

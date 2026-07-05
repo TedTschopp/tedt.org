@@ -31,6 +31,7 @@ categories:
 - AI
 - Computers
 - Communications
+- Music
 - Opinion
 
 tags:

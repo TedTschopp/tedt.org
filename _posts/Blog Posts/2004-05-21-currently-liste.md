@@ -22,6 +22,7 @@ description: Learn how to integrate iTunes with TypePad using a program that upd
 seo-description: null
 categories:
 - Computers
+- Music
 tags: null
 keywords: iTunes, TypePad, Integration, Music, Syncing, Playlists, Latest Tunes, Guide,
   Tutorial
