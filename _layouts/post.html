@@ -170,18 +170,22 @@
                                 {% assign __category_text = category | to_s | strip %}
                                 {% if __category_text == '' %}{% continue %}{% endif %}
                                 {% assign clean_category = __category_text | downcase | slugify %}
-                                {% assign image = clean_category | append: ".webp" %}
+                                {% capture __card_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
+                                {% assign __card_slug = __card_slug | strip %}
+                                {% if __card_slug == '' %}{% assign __card_slug = __category_text | slugify %}{% endif %}
+                                {% assign __card_entry = site.data.category_registry[__card_slug] %}
+                                {% if __card_entry and __card_entry.image %}
+                                    {% assign image_src = __card_entry.image %}
+                                {% else %}
+                                    {% assign image_src = '/img/categories/' | append: clean_category | append: '.webp' %}
+                                {% endif %}
                                 {% assign file_name_of_category = clean_category | append: ".html" %}
                                 <div class="card h-100">
                                     <div class="col-12">
                                         <div class="card h-100 position-relative">
-                                            <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/{{ image }}" alt="{{category}}" loading="lazy">
+                                            <img class="card-img-top w-100 d-block" src="{{ image_src | absolute_url }}" alt="{{category}}" loading="lazy">
                                             <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
                                                 <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
-                                                {% capture __card_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
-                                                {% assign __card_slug = __card_slug | strip %}
-                                                {% if __card_slug == '' %}{% assign __card_slug = __category_text | slugify %}{% endif %}
-                                                {% assign __card_entry = site.data.category_registry[__card_slug] %}
                                                 {% if __card_entry and __card_entry.category_home_page %}
                                                     {% assign __card_href = __card_entry.category_home_page %}
                                                 {% else %}

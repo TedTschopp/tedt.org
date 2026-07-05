@@ -704,6 +704,28 @@ shadowrun:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
+theonering-com-legacy-archive:
+  title: TheOneRing.com Legacy Archive
+  raw_names: [ "TheOneRing.com Legacy Archive", "theonering", "TheOneRing", "THEONERING" ]
+  class: TheOneRingLegacyArchive
+  emoji: "💍"
+  subtitle: "Preserving the early web history of TheOneRing.com, Tolkien fandom, community, and online mythmaking."
+  description: "A personal, noncommercial legacy archive preserving TheOneRing.com-era posts, documents, fan culture, and early web history connected to Tolkien fandom, online communities, and the making of modern digital fandom. This archive is historical in nature and is not affiliated with the current TheOneRing.com."
+  image: /img/categories/TheOneRing.webp
+  palette:
+    start: "#F4E7C5"
+    end: "#1F3B2D"
+    fontTitle: '"Ringbearer",serif'
+    titleColorLight: "#173B2A"
+    titleColorDark: "#F6E7C1"
+    titleHoverColorLight: "#8A641C"
+    titleHoverColorDark: "#D9B55A"
+    titleWeight: 500
+  category_home_page: /TheOneRing-LegacyArchive/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
 # Utility Designs
 
 home:
