@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-07-04 | TedT.org</title>
+  <title>Daily Report - 2026-07-05 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,134 +52,150 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-07-04</h1>
-      <p class="meta">Generated <time datetime="2026-07-04T07:26:32+00:00">2026-07-04T07:26:32Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-07-05</h1>
+      <p class="meta">Generated <time datetime="2026-07-05T07:48:37+00:00">2026-07-05T07:48:37Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>🚨 Deploy failure on 2026-07-03 — site artifact exceeded GitHub Pages 1 GB limit.</strong> The afternoon deploy triggered by the "enterprise AI" refresh commit failed; artifact was ~1.24 GB. The morning deploy (from the daily report commit) succeeded. Mastodon feed sync is healthy. Three security-patch PRs and one major dependency PR are waiting for review. No manual content commits in the last 24 hours — the repo is in a steady automated-chore rhythm over the US Independence Day holiday.</p>
+      <p><strong>Active development day on July 4–5.</strong> Ted published new original research (Unicode Glyph-Variant Steganography spec), added a Music category, and improved image alt text across multiple posts. Site deployed successfully on run attempt 3 — the retry pattern is a yellow flag. Three Dependabot PRs are aging (8–13 days), including one carrying 3 Low-severity CVEs in <code>concurrent-ruby</code> that should be merged promptly. The open issue backlog remains static at ~20+ P2 items from the May 2026 audit with no recent activity.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line</h2>
-<p>The deploy workflow ran twice on 2026-07-03. The morning run (#954) succeeded. The afternoon run (#955), triggered by the automated <code>chore: refresh yesterday in enterprise ai</code> commit, <strong>failed</strong> because the generated artifact hit ~1.24 GB — above the 1 GB GitHub Pages hard limit. The live site reflects the morning deploy. No content has been lost, but any changes in the afternoon enterprise-AI refresh are not published.</p>
+      <h2>Bottom Line Up Front</h2>
+<p>Active content and maintenance day. Site is live and healthy. One security-adjacent Dependabot PR needs attention. Deploy needed 3 attempts — worth investigating if it repeats. No blockers to normal publishing.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Manual Commits — TedTschopp (last 7 days)</h3>
+<h3>Commits — 2026-07-04 to 2026-07-05</h3>
+<p><strong>Content and features (Ted Tschopp):</strong></p>
 <ul>
-<li><strong>2026-06-30</strong> — <code>chore: refresh DUSD lunch calendar</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/3aee62f60bbe692baf26e0e54db8afb0788874cb">3aee62f</a>) — Automated lunch-menu ICS export refreshed.</li>
-<li><strong>2026-06-28</strong> — <code>log cleanup</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/2654c8625a988b26ff71b4a2dd79b828847a9a4d">2654c86</a>) — Maintenance cleanup.</li>
-<li><strong>2026-06-28</strong> — <code>Removed Brain Bugs</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/f914bf4917f5bd038d69e40a819726117a2d5950">f914bf4</a>) — Content removal.</li>
-<li><strong>2026-06-28</strong> — <code>feat(tests): add profile rendering check for biography HTML output</code> + <code>content(footer): update biography rendering in footer layout</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/e49c1828d326ca437017e2c8b372767286ae4bd6">e49c182</a>) — Added a test for biography rendering; updated footer layout.</li>
-<li><strong>2026-06-27</strong> — Multiple resume/career commits:</li>
-<li><code>feat(career): add career and projects section with detailed content</code> + nav fix + CSS (<a href="https://github.com/TedTschopp/tedt.org/commit/0c038846ec1fd746271f195561c30ea5887c0944">0c03884</a>)</li>
-<li><code>feat(resume): add structured resume data and HTML template</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/e3c3e97d663a5e0324c6df6425afb951feef8134">e3c3e97</a>)</li>
-<li><code>content(resume): update summary and work experience details</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/925fa578c64e92f2c7eef68bf4f211b8ed5bd8ed">925fa57</a>)</li>
-<li><code>content(resume): update resume structure and content for clarity</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/4fb5e7a1805fdbd5091c3758be61e82eb9be4d95">4fb5e7a</a>)</li>
-<li><code>docs(commit-guidelines): clarify usage of specific nouns and verbs</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/19f7527e8202d9d329f27fa344d2318e53498afa">19f7527</a>)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/28ac81ce4744ab1ee7dc2f39f5d976ef4d17208e">28ac81ce</a>** <code>content(posts): update images and alt text for multiple blog posts</code> — 2026-07-05 06:11 UTC. Accessibility sweep touching image alt fields across several posts.</li>
 </ul>
-<h3>Automated Commits (last 48 hours)</h3>
 <ul>
-<li><strong>2026-07-03 15:15</strong> — <code>chore: refresh yesterday in enterprise ai</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/4de23d4f2255af9d2095d29d60eb96cc596659b3">4de23d4</a>) — Triggered the <strong>failed</strong> afternoon deploy.</li>
-<li><strong>2026-07-03 07:50</strong> — <code>chore: refresh daily report</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/67beb959fe0cff0b8c3ef123f0c9f148ed7d2505">67beb95</a>) — Triggered the <strong>successful</strong> morning deploy.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/664dd6c0c2c87a42a404a0576f477a81a3de57e1">664dd6c0</a>** <code>Update Gemfile.lock</code> — 2026-07-05 04:48 UTC. Likely follow-on to category or dependency change.</li>
+</ul>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/570ec9161a9f3fe8386d6edf6a1636dc0e971b6e">570ec916</a>** <code>chore: update AI Engineer Coach VSIX file and metadata</code> — 2026-07-05 04:43 UTC. VS Code extension artifact stored in repo updated.</li>
+</ul>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/ca467a983a5fedb844296cd719997d6a4f3fffbb">ca467a98</a>** <code>feat(category): add music category with associated metadata and images</code> — 2026-07-05 04:27 UTC. New category entry in <code>category_registry.yml</code> expanding site taxonomy.</li>
+</ul>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/dbc6198a7869d6e5e37f47959edf8832024ce7da">dbc6198a</a>** <code>feat(image): replace placeholder images with local SVG fallback</code> — 2026-07-04 19:49 UTC. Eliminates external image dependencies; improves build reliability and link-check hygiene.</li>
+</ul>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/b09b5818f971464213126064d8fc2c98d7fa5497">b09b5818</a>** <code>content(posts): expand prior art and related work section in UGS-1 specification</code> — 2026-07-04 19:58 UTC.</li>
+</ul>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/142d5be807c05a840af5ada699892d9e534e0e26">142d5be8</a>** <code>content(posts): update UGS-1 specification with images and descriptions</code> — 2026-07-04 19:40 UTC.</li>
+</ul>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/aa5d08e583ebcb2bd8a50293dc0b8b75616425f4">aa5d08e5</a>** <code>content(UGS-1): add Unicode Glyph-Variant Steganography specification</code> — 2026-07-04 19:14 UTC. New original research post. Three commits over ~45 minutes indicate active iterative writing and refinement of this piece.</li>
+</ul>
+<p><strong>Automated (github-actions[bot]):</strong></p>
+<ul>
+<li>Three <code>chore: update Mastodon cache/front matter</code> runs (July 4–5) — Mastodon sync pipeline running normally.</li>
+<li><code>chore: refresh yesterday in enterprise ai</code> — July 4, 3, 2. Daily content refresh running.</li>
+<li><code>chore: refresh daily report</code> — July 4, 3. Daily report pipeline running.</li>
 </ul>
 <hr>
 <h2>Site Quality and Workflow Health</h2>
-<h3>CI / Workflow Status</h3>
-<p><strong>Site Quality + Deploy</strong> — <code>deploy.yml</code></p>
+<h3>Site Quality + Deploy</h3>
 <ul>
-<li>Run #954 — <strong>✅ success</strong> — triggered 2026-07-03T07:50Z — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28646510957">view run</a></li>
-<li>Run #955 — <strong>❌ failure</strong> — triggered 2026-07-03T15:15Z — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28669225317">view run</a></li>
-<li><strong>Root cause:</strong> Artifact size 1,242,807,970 bytes (~1.24 GB) exceeds the 1 GB GitHub Pages limit.</li>
-<li>Log warning: <code>Uploaded artifact size of 1242807970 bytes exceeds the allowed size of 1 GB. Deployment might fail.</code></li>
-<li>Log error: <code>Deployment failed, try again later.</code></li>
+<li><strong>Run #965</strong> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28731633149">View run</a></li>
+<li>Status: <strong>completed / success</strong></li>
+<li>Triggered by: push of commit <code>28ac81ce</code> (<code>content(posts): update images and alt text</code>)</li>
+<li><strong>Run attempt: 3</strong> — The deploy required 3 attempts before succeeding. This is a yellow flag. A one-time transient failure (GitHub Pages artifact timing, network hiccup) is common, but if this pattern repeats on the next push it warrants investigation into the deploy workflow for flakiness.</li>
 </ul>
-<p><strong>Feed to Mastodon</strong> — <code>mastodon-feed.yml</code></p>
+<h3>Daily Report</h3>
 <ul>
-<li>Run #1952 — <strong>✅ success</strong> — 2026-07-04T03:18Z — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28693307119">view run</a></li>
-<li>Run #1951 — <strong>✅ success</strong> — 2026-07-03T19:24Z — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28679689612">view run</a></li>
+<li><strong>Run #67</strong> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28733668451">View run</a></li>
+<li>Status: in progress at report time (this run).</li>
 </ul>
-<p><strong>Daily Report</strong> — <code>daily-report.lock.yml</code></p>
+<h3>Mastodon Feed Sync</h3>
+<p>Running normally based on three automated commits in the last 24 hours. No errors surfaced in commit messages.</p>
+<hr>
+<h2>Open Pull Requests</h2>
+<p>Three open Dependabot PRs, all aging without review.</p>
+<h3>PR #203 — Security update (priority: merge soon)</h3>
 <ul>
-<li>Run #66 — <code>in_progress</code> — triggered 2026-07-04T07:19Z (this run) — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28698925389">view run</a></li>
+<li>Title: <code>chore(deps): bump concurrent-ruby from 1.3.5 to 1.3.7</code></li>
+<li>Link: <a href="https://github.com/TedTschopp/tedt.org/pull/203">#203</a></li>
+<li>Open since: 2026-06-27 (8 days)</li>
+<li>Contains 3 CVEs (all rated Low severity):</li>
+<li>CVE-2026-54904: <code>AtomicReference#update</code> livelock on <code>Float::NAN</code></li>
+<li>CVE-2026-54905: <code>ReentrantReadWriteLock</code> read-count overflow grants write lock incorrectly</li>
+<li>CVE-2026-54906: <code>ReadWriteLock</code> wrong-thread write release and counter corruption</li>
+<li>Recommendation: <strong>Merge.</strong> Low severity but the fixes are available and the PR is trivial.</li>
 </ul>
-<h3>Open Pull Requests</h3>
-<p><strong>Security / Dependency PRs — awaiting review:</strong></p>
+<h3>PR #201 — GitHub Actions major version bump</h3>
 <ul>
-<li><strong>#203</strong> — <code>chore(deps): bump concurrent-ruby 1.3.5 → 1.3.7</code> — <a href="https://github.com/TedTschopp/tedt.org/pull/203">view PR</a> — <strong>Priority: HIGH.</strong> This release patches 3 CVEs: CVE-2026-54904 (AtomicReference livelock), CVE-2026-54905 (ReadWriteLock overflow), CVE-2026-54906 (ReadWriteLock wrong-thread release). Created 2026-06-27.</li>
-<li><strong>#201</strong> — <code>build(deps): bump actions/checkout 4 → 7</code> — <a href="https://github.com/TedTschopp/tedt.org/pull/201">view PR</a> — GitHub Actions major version bump.</li>
-<li><strong>#200</strong> — <code>build(deps): bump github/gh-aw-actions 0.71.5 → 0.80.8</code> — <a href="https://github.com/TedTschopp/tedt.org/pull/200">view PR</a> — GitHub Agentic Workflow action upgrade.</li>
-<li><strong>#196</strong> — <code>build(deps): bump actions/cache 4 → 5</code> — <a href="https://github.com/TedTschopp/tedt.org/pull/196">view PR</a> — Created 2026-06-01; stale.</li>
+<li>Title: <code>build(deps): bump actions/checkout from 4 to 7</code></li>
+<li>Link: <a href="https://github.com/TedTschopp/tedt.org/pull/201">#201</a></li>
+<li>Open since: 2026-06-22 (13 days)</li>
+<li>v7 is a major version; includes security hardening for <code>pull_request_target</code> fork checkout. Review workflows before merging to confirm no behavior change.</li>
 </ul>
-<h3>Open Issues (Backlog Snapshot — <code>P2 / audit-2026-05</code>)</h3>
-<p>All open issues currently visible are from the 2026-05 audit pass. None are critical blockers.</p>
+<h3>PR #200 — GitHub Actions dependency</h3>
 <ul>
-<li><strong>#186</strong> — Enhance category landing pages (related categories, tag clouds, depth indicators)</li>
-<li><strong>#185</strong> — Build cross-collection content bridges and related-posts infrastructure</li>
-<li><strong>#184</strong> — Drive prompt series adoption: audit and populate series metadata</li>
-<li><strong>#183</strong> — Standardize tagging model: enforce coverage and build site-wide tag infrastructure</li>
-<li><strong>#182</strong> — Create slide gallery with topic filtering</li>
-<li><strong>#181</strong> — Unify RPG/fantasy content schema and build SEO landing pages</li>
+<li>Title: <code>build(deps): bump github/gh-aw-actions from 0.71.5 to 0.80.8</code></li>
+<li>Link: <a href="https://github.com/TedTschopp/tedt.org/pull/200">#200</a></li>
+<li>Open since: 2026-06-22 (13 days)</li>
+<li>Minor versioning; lower risk. Can batch with PR #201.</li>
 </ul>
 <hr>
-<h2>Content and Publishing Pipeline Observations</h2>
+<h2>Content and Publishing Pipeline</h2>
+<h3>UGS-1 Specification</h3>
+<p>The Unicode Glyph-Variant Steganography (UGS-1) specification is the most significant new content this cycle. Four commits across ~45 minutes on July 4 (initial publish, image/description update, prior art expansion) indicate iterative refinement. The post appears ready for live consumption given the successful deploy.</p>
+<h3>Music Category Addition</h3>
+<p>A new <code>music</code> category was added to <code>category_registry.yml</code> with images. This will appear in the homepage carousel and category pages. Verify that the carousel renders correctly and that the category has enough posts to populate the recent-posts display (minimum 1 real post; carousel should not show empty state).</p>
+<h3>Image Alt Text Sweep</h3>
+<p>The July 5 commit touched multiple posts for alt text improvements. This directly addresses accessibility and is consistent with ADR 0001 (Prompt Details UX &amp; Accessibility). No issues expected, but if HTML Proofer runs are available, validate that no <code>alt</code> attributes were inadvertently cleared.</p>
+<h3>SVG Fallback Images</h3>
+<p>Replacing external placeholder images with local SVGs eliminates a class of potential HTML Proofer external-link failures and improves build stability.</p>
+<hr>
+<h2>Open Issue Backlog</h2>
+<p>All open issues are P2 items from the May 2026 audit (<code>audit-2026-05</code> label). No issues were opened or closed in the last 48 hours. The backlog is static.</p>
+<p><strong>Selected open issues:</strong></p>
 <ul>
-<li>The week of 2026-06-27 saw a burst of structural work: new <code>career.html</code> page, structured resume data, biography footer rendering, and a new test for biography HTML output. This is the most notable developer-driven feature push in the recent window.</li>
-<li>Automated pipelines (daily report, enterprise AI refresh, lunch menu, Mastodon feed) are all firing on schedule. The only issue is the artifact size causing deploy failures on the enterprise AI refresh commit cycle.</li>
-<li>No new post content appears to have been added this week. Site is in a maintenance and tooling phase.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a>: Enhance category landing pages (related categories, tag clouds, depth indicators)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a>: Cross-collection content bridges and related-posts infrastructure</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a>: Drive prompt series adoption (only 3 of 56 prompts have <code>series:</code> metadata)</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/183">#183</a>: Standardize tagging model — only 30.5% of posts have tags</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/182">#182</a>: Create slide gallery with topic filtering</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/181">#181</a>: Unify RPG/fantasy content schema</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/180">#180</a>: Add content contributor guide to README</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/issues/179">#179</a>: Curate quotes with thematic tags and personal context</li>
 </ul>
 <hr>
 <h2>Risks and Blockers</h2>
-<p><strong>🔴 Critical — Artifact Size Over GitHub Pages 1 GB Limit</strong></p>
 <ul>
-<li>The site build artifact is consistently hitting ~1.24 GB, which exceeds GitHub Pages' 1 GB deployment limit.</li>
-<li>The enterprise AI refresh commit triggers a deploy each time; that deploy now fails reliably.</li>
-<li>The morning daily report deploy still succeeds — suggesting the artifact size is borderline and depends on small file-count deltas.</li>
-<li>If left unaddressed, any deploy triggered by the enterprise AI commit will silently fail, leaving the site stale between morning deploys.</li>
-<li>Likely cause: accumulated media assets, RPG content images, or output from the enterprise AI section expanding the <code>_site/</code> output.</li>
-</ul>
-<p><strong>🟡 Medium — concurrent-ruby CVE Exposure (PR #203)</strong></p>
-<ul>
-<li>Three CVEs patched in <code>concurrent-ruby</code> 1.3.7 are unmerged. Severity is Low per upstream, but patch is available and ready.</li>
-</ul>
-<p><strong>🟡 Medium — Stale Dependabot PRs</strong></p>
-<ul>
-<li>PR #196 (<code>actions/cache 4 → 5</code>) has been open since 2026-06-01. Merging it resolves known security advisories in the cache action.</li>
-<li>PRs #200 and #201 are also pending major version bumps. The <code>actions/checkout v7</code> update includes a security fix for fork PR checkout on <code>pull_request_target</code>.</li>
+<li><strong>Deploy retry pattern</strong> (yellow): Run #965 needed 3 attempts. Not a blocker today but watch the next deploy.</li>
+<li><strong>Dependabot PR aging</strong>: PR #203 carries real CVEs; 8 days open without merge is modest but unresolved risk.</li>
+<li><strong>Music category population</strong>: New category visible in carousel. Ensure it has posts assigned or is set <code>hide_from_carousel: true</code> in <code>category_registry.yml</code> until content exists.</li>
+<li><strong>Issue backlog stagnation</strong>: 20+ P2 items unworked since May 2026. No active blockers, but content discovery and tagging debt will compound over time.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Investigate and fix artifact size bloat.</strong> Run <code>bundle exec jekyll build</code> locally, then measure <code>du -sh _site/</code>. Identify the largest contributors (likely <code>img/</code>, <code>media/</code>, or enterprise AI generated content). Consider image compression, moving large assets to a CDN, or excluding large static directories from the Pages artifact. Target getting artifact below 900 MB for headroom. See ADR 0008 for build performance patterns.</li>
-</ol>
-<ol>
-<li><strong>Merge PR #203</strong> (<code>concurrent-ruby</code> security patch). It is a patch-level bump with 3 CVEs fixed — low risk, high value.</li>
-</ol>
-<ol>
-<li><strong>Review and merge PR #201</strong> (<code>actions/checkout v4 → v7</code>) and <strong>PR #196</strong> (<code>actions/cache v4 → v5</code>). These are overdue action updates with security improvements.</li>
-</ol>
-<ol>
-<li><strong>Monitor the enterprise AI refresh workflow.</strong> After fixing artifact size, trigger a manual <code>workflow_dispatch</code> on <code>deploy.yml</code> to confirm clean deploys on the current HEAD.</li>
-</ol>
-<ol>
-<li><strong>Backlog triage.</strong> The P2 issues from the 2026-05 audit are still unaddressed. Issue #183 (tagging infrastructure) is a prerequisite for #186 (category page tag clouds) — consider making it the next sprint target once the deploy blocker is resolved.</li>
+<li><strong>Merge PR #203</strong> (<code>concurrent-ruby</code> CVE fix) — low effort, clear benefit.</li>
+<li><strong>Investigate deploy retry</strong> — check the two failed attempts on run #965 for error messages. Confirm the next deploy succeeds on attempt 1.</li>
+<li><strong>Verify music category</strong> — confirm at least one post is assigned the music category, or hide from carousel until populated.</li>
+<li><strong>Review PR #201 / #200</strong> — batch review both GitHub Actions Dependabot PRs; merge together if CI passes.</li>
+<li><strong>Pick one P2 issue from the May backlog</strong> — <code>#184</code> (prompt series) or <code>#183</code> (tagging) are good starting points since they are data-only changes (front matter metadata) with no template risk.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li><strong>Commits:</strong> Queried via GitHub MCP <code>list_commits</code> (20 most recent) on <code>TedTschopp/tedt.org</code> main branch.</li>
-<li><strong>Issues:</strong> Queried via GitHub MCP <code>list_issues</code> (open state, 20 results). All visible open issues were from the 2026-05 audit batch (P2 priority). Total open issue count not retrieved — full count may be higher.</li>
-<li><strong>Pull Requests:</strong> Queried via GitHub MCP <code>list_pull_requests</code> (open state). Reviewed first 4 open PRs. Additional open PRs may exist beyond the visible window but were not individually inspected.</li>
-<li><strong>Workflow Runs (all workflows):</strong> Queried via GitHub MCP <code>list_workflow_runs</code>. Retrieved most recent 15 runs across all workflows.</li>
-<li><strong>Workflow Runs (deploy.yml):</strong> Queried via GitHub MCP <code>list_workflow_runs</code> filtered to <code>deploy.yml</code>. Confirmed run #955 failure and run #954 success.</li>
-<li><strong>Failed Job Logs:</strong> Retrieved via GitHub MCP <code>get_job_logs</code> for run 28669225317 (deploy #955). Failure cause confirmed: artifact size 1.24 GB exceeds 1 GB limit.</li>
-<li><strong>Deploy failure confirmed via log</strong> — no guesswork on root cause.</li>
-<li><strong>[ASSUMPTION]</strong> The daily report deploy (run #954, morning) succeeded before the enterprise AI commit landed. Pattern suggests the enterprise AI content expansion is what tips the artifact over 1 GB.</li>
-<li><strong>[ASSUMPTION]</strong> No new human-authored post content is present this week — only automated chore commits observed in recent 72 hours.</li>
-<li><strong>External link health, HTML Proofer results, and memory probe data</strong> are not available in this report — no recent CI artifact output was retrieved.</li>
-<li><strong>Total open issue count</strong> was not retrieved; only the most-recently-updated 20 open issues were read. More may exist.</li>
-<li><strong>Report date:</strong> 2026-07-04 (US Independence Day holiday). No manual developer activity expected today.</li>
+<li>Commits: GitHub API, <code>TedTschopp/tedt.org</code>, <code>main</code> branch, last 20 commits as of 2026-07-05T07:43Z</li>
+<li>Pull requests: GitHub API, all open PRs in <code>TedTschopp/tedt.org</code></li>
+<li>Issues: GitHub API, open issues, first 20 results ordered by most recent</li>
+<li>Workflow runs: GitHub API, <code>list_workflow_runs</code>, last 15 runs across all workflows</li>
+<li>Deploy run attempt count (3) comes directly from <code>run_attempt</code> field in the workflow run API response</li>
+<li>CVE identifiers (CVE-2026-54904, CVE-2026-54905, CVE-2026-54906) sourced from Dependabot PR #203 body</li>
+<li>Issue counts (20+ P2 items from May audit) are a lower bound; only first 20 issues were loaded</li>
+<li>Music category population status is [ASSUMPTION] — whether posts are assigned is not verified from commits alone; only the registry entry addition was confirmed</li>
+<li>No build logs were inspected; deploy success/failure detail beyond attempt count is not available in this run</li>
+<li>Daily Report workflow run #67 is the current run producing this report (in progress at generation time)</li>
 </ul>
     </section>
     <footer>
