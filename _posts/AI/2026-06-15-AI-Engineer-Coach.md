@@ -10,7 +10,7 @@ source-url: "https://github.com/TedTschopp/AI-Engineering-Coach"
 call-to-action: "Download the VSIX and try it in VS Code."
 
 date: 2026-06-15 09:00:00 -0700
-update: 2026-06-15 09:00:00 -0700
+update: 2026-07-04 21:42:21 -0700
 
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -109,8 +109,8 @@ File details:
 
 - File: `ai-engineer-coach-0.1.0.vsix`
 - Size: about 3.35 MB
-- SHA-256: `27d1ccf352558c698872874ccdd3136d8f89af858c99d29ac85d6031aeed8a1e`
-- Source repo: [TedTschopp/AI-Engineering-Coach](https://github.com/TedTschopp/AI-Engineering-Coach)
+- SHA-256: `984fe02b67a64f7a27d8de94758de8cd4c6bdeecdf9b83e0597f0b7c19693989`
+- Source commit: `c521482` on [TedTschopp/AI-Engineering-Coach](https://github.com/TedTschopp/AI-Engineering-Coach)
 
 To install it:
 
