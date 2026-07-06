@@ -143,6 +143,8 @@ Override check for emergency commits with `SKIP_TOC=1 git commit -m "..."`.
 
 The repository is organized as follows:
 
+For the maintained path ownership standard, generated-file policy, and repo guard expectations, see [Repository Structure Standard](docs/repo-structure.md).
+
 - `_code/` - Custom Python scripts for content management.
 - `_data/` - Structured data used across the site.
 - `_includes/` - Reusable HTML components for the site (see [Include Standards](#include-standards) below).

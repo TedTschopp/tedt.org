@@ -14,6 +14,20 @@ max_warn_bytes = Integer(config.fetch('max_warn_kb')) * 1024
 max_fail_bytes = Integer(config.fetch('max_fail_kb')) * 1024
 blocked_paths = Array(config['blocked_paths']).map(&:to_s)
 blocked_extensions = Array(config['blocked_extensions']).map { |value| value.to_s.downcase }
+blocked_file_patterns = Array(config['blocked_file_patterns']).map do |entry|
+  case entry
+  when Hash
+    {
+      pattern: Regexp.new(entry.fetch('pattern').to_s),
+      description: entry.fetch('description', entry.fetch('pattern').to_s)
+    }
+  else
+    {
+      pattern: Regexp.new(entry.to_s),
+      description: entry.to_s
+    }
+  end
+end
 largest_files_report_count = Integer(config.fetch('largest_files_report_count', 10))
 warning_report_count = Integer(config.fetch('warning_report_count', 25))
 allowlist_path = ROOT.join(config.fetch('allowlist_file'))
@@ -70,6 +84,12 @@ files.each do |relative_path|
 
   if blocked_extensions.include?(ext) && !allowlisted
     failures << "blocked extension: #{relative_path} uses #{ext}"
+  end
+
+  blocked_file_pattern = blocked_file_patterns.find { |rule| relative_path.match?(rule[:pattern]) }
+
+  if blocked_file_pattern && !allowlisted
+    failures << "blocked file pattern: #{relative_path} matches #{blocked_file_pattern[:description]}"
   end
 
   if size > max_fail_bytes && !allowlisted

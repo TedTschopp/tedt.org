@@ -1,4 +1,6 @@
 # Existing tracked exceptions. Keep this list narrow and explicit.
+# This allowlist covers both large-file exceptions and historical repo-structure
+# exceptions enforced by tests/repo_guard.rb.
 .playwright-mcp/article-full-page.png
 Logs/htmlproofer/2025-09-06T23-06-54-HTML Logging.txt
 Logs/htmlproofer/2025-09-06T23-19-01-HTML Logging.txt
@@ -36,3 +38,48 @@ media/audio/Winning-the-Intelligence-Inversion.m4a
 media/files/GenAI-Cost-Mode.dat
 media/files/ITIL-Foundation-ITIL-4-Edition-Print.pdf
 tools/lib/webperl/emperl.data
+
+# Historical backup/shadow files. Do not add new entries; delete or migrate these
+# when the legacy references are no longer needed.
+RPG/MCC-GW/images/GammaWorldHeaderEdited-old.png
+RPG/MCC-GW/images/GammaWorldHeaderEdited-old.webp
+RPG/js/world backup.js
+_includes/analytics/drift.html.bak-20260307
+_includes/analytics/facebook-analytics.html.bak-20260307
+_includes/analytics/mailchimp.html.bak-20260307
+_includes/assets/js-fontawesome.html.bak-20260307
+_includes/content/link-tree.html.bak-20260307
+_includes/content/progress.html.bak-20260307
+_includes/gaming/creatures.html.bak-20260307
+_includes/gaming/gamma-world-error-messages.html.bak-20260307
+_includes/gaming/mcc-creatures.html.bak-20260307
+_includes/social/comments-mastodon.html.bak-20260307
+_includes/social/comments.html.bak-20260307
+_includes/social/embed-twitter.html.bak-20260307
+_includes/themes/advertising.html.bak-20260307
+_includes/themes/breadcrumbs.html.bak-20260307
+_includes/themes/browser-upgrade.html.bak-20260307
+_includes/themes/collection-pagination.html.bak-20260307
+_includes/themes/image-credit.html.bak-20260307
+_includes/themes/latest-posts-grid.html.bak-20260307
+_includes/themes/latest-posts-list.html.bak-20260307
+_includes/themes/open-graph.html.bak-20260307
+_includes/themes/page-author.html.bak-20260307
+_includes/themes/page-meta.html.bak-20260307
+_includes/themes/pagination.html.bak-20260307
+_includes/themes/post-grid.html.bak-20260307
+_includes/themes/post-list-bullets.html.bak-20260307
+_includes/themes/post-list.html.bak-20260307
+_includes/themes/scroll-cue.html.bak-20260307
+_includes/themes/share-this.html.bak-20260307
+_includes/utility/expand-abbreviations.html.bak-20260307
+_includes/utility/title-case.html.bak-20260307
+_layouts/MCC-GW.html.bak-20260307
+_layouts/all-categories.html.bak-20260307
+_layouts/quotes.html.bak-20260307
+_layouts/scouting.html.bak-20260307
+_layouts/simple.html.bak-20260307
+_layouts/slide-library.html.bak-20260307
+css/logo-and-company-fonts-old.css
+img/home/Folklore-old.jpg
+img/home/Folklore-old.webp
