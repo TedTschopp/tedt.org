@@ -460,6 +460,34 @@ footer.bd-footer .footer-bio-list li {
 footer.bd-footer .footer-housemark {
   margin-top:.5rem;
   margin-bottom:0;
+  width:100%;
+}
+
+footer.bd-footer .footer-housemark-image {
+  display:block;
+  height:1em;
+  width:auto;
+  max-width:100%;
+}
+
+footer.bd-footer .footer-housemark-dark {
+  display:none;
+}
+
+[data-bs-theme="light"] footer.bd-footer .footer-housemark-light {
+  display:block;
+}
+
+[data-bs-theme="light"] footer.bd-footer .footer-housemark-dark {
+  display:none;
+}
+
+[data-bs-theme="dark"] footer.bd-footer .footer-housemark-light {
+  display:none;
+}
+
+[data-bs-theme="dark"] footer.bd-footer .footer-housemark-dark {
+  display:block;
 }
 
 footer.bd-footer .footer-link-groups,
@@ -568,6 +596,14 @@ footer.bd-footer .footer-meta-links {
     --footer-link:#60a5fa;
     --footer-link-hover:#93c5fd;
     --footer-divider:#94a3b8;
+  }
+
+  footer.bd-footer .footer-housemark-light {
+    display:none;
+  }
+
+  footer.bd-footer .footer-housemark-dark {
+    display:block;
   }
 }
 
