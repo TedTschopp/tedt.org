@@ -4824,5 +4824,36 @@
       "https://tschopp.net/users/Ted/statuses/116868054336649343"
     ],
     "lastTootTimestamp": 1783264989402
+  },
+  "https://tedt.org/Beyond-the-Light-Bulb/": {
+    "id": "/Beyond-the-Light-Bulb/",
+    "title": "Beyond the Light Bulb: The Executive Work of AI Adoption",
+    "summary": "Enterprise AI will not create durable value through license rollouts alone. The real work is redesigning value streams, evidence, governance, roles, and decision loops so AI can safely take on more responsibility.",
+    "content_text": "Enterprise AI will not create durable value through license rollouts alone. The real work is redesigning value streams, evidence, governance, roles, and decision loops so AI can safely take on more responsibility. https://tedt.org/Beyond-the-Light-Bulb/",
+    "url": "https://tedt.org/Beyond-the-Light-Bulb/",
+    "image": "https://tedt.org/img/2026-07/Beyond-the-light-bulb.webp",
+    "tags": [
+      "ai adoption",
+      "enterprise ai",
+      "operating model",
+      "ai maturity",
+      "governed autonomy",
+      "decision loops",
+      "value streams",
+      "ai governance",
+      "executive leadership",
+      "digital transformation"
+    ],
+    "date_published": "2026-07-05T07:00:00-07:00",
+    "date_modified": "2026-07-05T07:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116873769362401118"
+    ],
+    "lastTootTimestamp": 1783352193732
   }
 }
