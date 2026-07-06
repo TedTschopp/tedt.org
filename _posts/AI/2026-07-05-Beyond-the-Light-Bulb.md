@@ -300,7 +300,7 @@ Like building a campfire, the order matters. You do not start with the biggest l
 
 AI adoption works the same way.  Leadership must build the conditions that allow it to become useful heat.
 
-## 1. Stop Measuring Adoption by Licenses
+### 1. Stop Measuring Adoption by Licenses
 
 License activation is not transformation. Prompt volume is not transformation. Pilot count is not transformation.
 
@@ -314,7 +314,7 @@ The question is not: **How many people are using AI?**
 
 The question is: **Which business outcomes are improving because AI changed how work actually moves?**
 
-## 2. Map AI Maturity by Value Stream
+### 2. Map AI Maturity by Value Stream
 
 Do not declare, “We are at Level 3,” or “We are AI-native.”
 
@@ -326,7 +326,7 @@ Some compliance workflows may need to remain at Level 1 because the cost of fals
 
 This creates an honest mapthat keep leaders from pretending the house is finished when the foundation is still curing.
 
-## 3. Choose the Right Early Candidates
+### 3. Choose the Right Early Candidates
 
 AI works best early where the work is high-volume, repeatable, coordination-heavy, and governed by clear but distributed rules.
 
@@ -346,7 +346,7 @@ The goal is not to impress the room with a dramatic demo.
 
 The goal is to build confidence that survives production.
 
-## 4. Build Specifications Before Autonomy
+### 4. Build Specifications Before Autonomy
 
 At low maturity, prompting is survivable because humans remain close to the work.
 
@@ -386,7 +386,7 @@ The is what this looks like.  AI software tests are business rules, controls, re
 
 Not by trusting the machine more. By making the work clearer.  And if you don't have standard business rules, controls, reconciliations, approvals, validation checks, policy checks, outcome measures, customer journeys, regulatory examples, exception paths, and failure simulations, you cannot safely scale AI autonomy.  Thankfully though the one thing you do have is a list of things to do and a team to do them with.  That is enough to get started.
 
-## 5. Design Evidence Before Work Starts
+### 5. Design Evidence Before Work Starts
 
 In traditional workflows, review often happens after the work is produced.
 
@@ -414,7 +414,7 @@ Executives must insist on every process having quality built into them by having
 
 Not evidence as decoration.  Not evidence as a screenshot pasted into a ticket.  Evidence as part of the operating system.
 
-## 6. Redesign Roles Around Judgment
+### 6. Redesign Roles Around Judgment
 
 AI does not simply eliminate work.  It changes what valuable work looks like.
 
