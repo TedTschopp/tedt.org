@@ -33,6 +33,7 @@ categories:
 - Computers
 - Communications
 - Opinion
+- Enterprise Architecture
 
 tags:
 - agentic-systems

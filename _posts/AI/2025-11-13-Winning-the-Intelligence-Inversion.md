@@ -31,6 +31,8 @@ categories:
 - AI
 - Business
 - Opinion
+- Enterprise Architecture
+- Leadership
 
 tags:
 - enterprise ai

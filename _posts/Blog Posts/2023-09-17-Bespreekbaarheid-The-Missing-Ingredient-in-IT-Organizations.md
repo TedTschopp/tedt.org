@@ -25,6 +25,7 @@ categories:
 - Computers
 - Business
 - Communications
+- Leadership
 tags: null
 keywords: Bespreekbaarheid, IT Organizations, Open Dialogue, Transparency, Innovation,
   Problem-Solving, Workplace Culture, Team Trust, Communication, Employee Satisfaction

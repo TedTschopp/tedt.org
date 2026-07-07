@@ -33,6 +33,7 @@ categories:
   - Computers
   - Philosophy
   - Opinion
+  - Enterprise Architecture
 
 tags:
   - ai

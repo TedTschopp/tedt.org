@@ -32,6 +32,8 @@ categories:
   - Philosophy
   - Opinion
   - Projects
+  - Enterprise Architecture
+  - Leadership
 tags:
   - ai-only firms
   - agentic ai

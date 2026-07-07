@@ -32,6 +32,8 @@ categories:
   - Business
   - Computers
   - Opinion
+  - Enterprise Architecture
+  - Leadership
 
 tags:
   - Cyber AI

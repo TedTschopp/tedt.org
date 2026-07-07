@@ -32,6 +32,7 @@ categories:
 - Business
 - Leadership
 - Opinion
+- Enterprise Architecture
 
 tags:
 - ai adoption

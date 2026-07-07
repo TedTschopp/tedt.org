@@ -41,6 +41,7 @@ categories:
 - Artificial Intelligence
 - Opinion
 - Personal Writing
+- Leadership
 tags:
 - Cub Scouts
 - Arrow of Light

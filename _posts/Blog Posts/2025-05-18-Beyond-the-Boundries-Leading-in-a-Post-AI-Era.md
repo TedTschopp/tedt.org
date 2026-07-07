@@ -40,6 +40,7 @@ categories:
 - Opinion
 - Philosophy
 - Personal Writing
+- Leadership
 tags:
 - post-AI leadership
 - WINS framework
