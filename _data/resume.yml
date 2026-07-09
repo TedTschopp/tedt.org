@@ -21,6 +21,9 @@ content:
   - network: Twitter
     username: TedTschopp
     url: https://twitter.com/TedTschopp
+  - network: Suno
+    username: '@tedtschopp'
+    url: https://suno.com/@tedtschopp
   education: []
   work:
   - name: Southern California Edison

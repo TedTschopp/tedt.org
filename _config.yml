@@ -466,6 +466,13 @@ links:
   Type: fontawesome
   Icon-Class: fa-brands fa-soundcloud
   Category: 'Creative'
+  # SUNO
+- Name: Suno
+  URL: https://suno.com
+  Username: '@tedtschopp'
+  Type: fontawesome
+  Icon-Class: fa-solid fa-music
+  Category: 'Creative'
   # Midjourney
 - Name: Mid<wbr>journey
   URL: https://www.midjourney.com/app/users/074b5e95-1e8a-465f-9a7f-921e11670eb5/
