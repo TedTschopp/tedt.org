@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-07-09 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-07-10 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,85 +52,97 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-07-09</h1>
-      <p class="meta">Generated <time datetime="2026-07-09T15:54:42+00:00">2026-07-09T15:54:42Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-07-10</h1>
+      <p class="meta">Generated <time datetime="2026-07-10T15:24:05+00:00">2026-07-10T15:24:05Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>The day's coverage surfaces a structural tension that's been building beneath every AI deployment announcement: the gap between the organizations that talk about AI transformation and the ones that measure it. A major workforce survey shows enterprises are quietly developing two distinct AI cultures under the same roof — one energized, one anxious. DoorDash demonstrates what it actually looks like to build trust in AI through measurement, not momentum. Lilian Weng, formerly of OpenAI, makes the case that competitive advantage has already moved from models to orchestration. And Anthropic's interpretability research takes a step toward showing, not just claiming, how its models reason.</p>
-<p><strong>Action items for this edition:</strong></p>
+      <p>AI moved fast on Wednesday — Anthropic expanded Claude's autonomous reach to mobile and web, Meta unveiled next-generation media generation, and Databricks reimagined the data pipeline with agents at the center. The common thread: the shift from AI as a tool to AI as an active participant in enterprise workflows is accelerating, and the organizational and infrastructure choices made now will determine competitive position into 2027.</p>
+<p><strong>Action bullets:</strong></p>
 <ul>
-<li>Map workforce AI sentiment now — the divide between confident and anxious employees is becoming a talent retention risk, not just a change management nuisance.</li>
-<li>Build evaluation infrastructure before expanding AI in engineering, audit, or quality workflows; DoorDash's DashBench model is replicable.</li>
-<li>Shift AI investment strategy toward orchestration and evaluation systems, not just model access — the compounding advantage lives there.</li>
-<li>Add interpretability and reasoning transparency to AI vendor evaluation criteria; Anthropic's global workspace research is an early benchmark.</li>
-<li>Begin auditing chatbot-style enterprise tools for ambient AI readiness; the interface shift is already under way.</li>
+<li><strong>Evaluate Claude Cowork for enterprise remote-agent use cases</strong> before third-party automation vendors fill the gap.</li>
+<li><strong>Assess Meta's Muse models</strong> for content and creative workflows; governance guardrails are needed before wide rollout.</li>
+<li><strong>Review your data engineering stack</strong> against Databricks Lakeflow's agentic pipeline model — ETL is changing fundamentally.</li>
+<li><strong>Study Schneider Electric's LLMOps blueprint</strong> as a repeatable enterprise pattern for AI observability and governance.</li>
+<li><strong>Benchmark AI coding assistants</strong> using cost-performance data from Cognition's SWE-1.7 before renewing model contracts.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
       <h2>Big Moves</h2>
-<h3>A Workforce Splitting in Two — and It Is a Management Problem</h3>
-<p>A survey from Lenny's Newsletter examines how generative AI is reshaping the technology workforce, and the headline finding is less about capability than culture: organizations are developing two distinct internal groups in parallel — employees who feel empowered and productive with AI, and those experiencing anxiety, burnout, and genuine fear of displacement.</p>
-<p><strong>Why it matters:</strong> The divide is not simply a training problem. It reflects deeper organizational dynamics around psychological safety, role clarity, and leadership communication. Left unmanaged, it becomes a talent retention and performance risk, particularly as AI adoption accelerates in the second half of 2026. Enterprises that treat AI transformation as a technology deployment rather than a people program are likely to see the anxious cohort either disengage or leave.</p>
-<p><strong>What should I do as a leader?</strong> Audit workforce AI sentiment across your teams — not just adoption rates. Identify where anxiety is concentrated and build targeted enablement programs. Clear messaging on what AI augments, rather than what it replaces, is not optional at this stage.</p>
-<p><strong>What should I do?</strong> If AI adoption feels overwhelming, pursue structured training proactively. Early adopters in this survey reported the largest productivity gains, but they also had access to deliberate onboarding — not just tool access.</p>
-<p><strong>Source:</strong> (Lenny's Newsletter, 2026-07-07) — lennysnewsletter.com/p/how-tech-workers-are-feeling-in-2026</p>
+<h3>Claude Goes Mobile — and Keeps Working While You Sleep</h3>
+<p>Anthropic announced that Claude Cowork is expanding to web and mobile, enabling AI agents to continue executing tasks remotely across devices even when a user's computer is offline. Persistent sessions, scheduled tasks, and cloud-based execution are now part of the package.</p>
+<p><strong>Why it matters:</strong> This is a meaningful shift from AI as a desktop productivity layer to AI as a persistent enterprise worker. For organizations already running Claude in knowledge-work, coding, or research workflows, the implications are operational: agents can now run overnight, across time zones, and on mobile approval flows without requiring a connected endpoint. The security and data governance questions this raises — particularly around persistent session credentials, data residency, and access scope — are not trivial and should not be deferred.</p>
+<p><strong>What should I do as a leader?</strong> Establish a clear policy for AI persistent-session use before broad adoption. Define what data agents may access during unattended execution, and ensure your identity and access management controls extend to agent sessions.</p>
+<p><strong>What should I do?</strong> If you are using Claude for multi-step research or drafting workflows, evaluate whether persistent mobile sessions would close gaps in your current process — and review what permissions any agent would hold in your name.</p>
+<p><strong>Source:</strong> (Anthropic / Claude Blog, 2026-07-08) — <a href="https://claude.com/blog/cowork-web-mobile">claude.com/blog/cowork-web-mobile</a></p>
 <hr>
-<h3>The Real Competitive Edge Is the Layer Around the Model</h3>
-<p>Lilian Weng — former VP of Research at OpenAI — published a detailed essay arguing that harness engineering, the orchestration layer that wraps and coordinates large language models through workflows, memory, sub-agents, and evaluation loops, has become the primary mechanism for building self-improving AI systems. The foundation model itself is increasingly commoditized; what differentiates enterprise AI capability is the infrastructure built around it.</p>
-<p><strong>Why it matters:</strong> This is a strategic reframe with direct procurement and investment implications. Enterprises that have spent 2025 acquiring model access without investing in evaluation and orchestration infrastructure are renting capability rather than building it. The organizations that will compound advantage over the next 18 months are those that treat orchestration architecture as a core engineering discipline, not a vendor-optional feature.</p>
-<p><strong>What should I do as a leader?</strong> Shift at least a portion of AI investment away from model access licenses and toward orchestration infrastructure, evaluation systems, and the engineering teams who can build and sustain them. Ask your AI program leads how your current systems improve themselves over time — and be direct about expecting an answer.</p>
-<p><strong>Source:</strong> (Lilian Weng's Blog, 2026-07-07) — lilianweng.github.io/posts/2026-07-04-harness/</p>
+<h3>Meta's Muse Models Bring Agentic Media Generation to Scale</h3>
+<p>Meta introduced Muse Image and previewed Muse Video — next-generation generative AI media models featuring agentic image generation, self-refinement, multi-reference editing, and direct integration across Instagram, WhatsApp, and Meta AI. The models are designed to act on creative intent iteratively, not just respond to a single prompt.</p>
+<p><strong>Why it matters:</strong> For enterprises in marketing, media, advertising, or creative production, agentic media generation at platform scale changes cost and speed assumptions significantly. More immediately, Meta's integration of these capabilities directly into consumer platforms means the volume of AI-generated visual content reaching your customers, employees, and markets is about to increase sharply. Authenticity standards, content provenance policies, and vendor use terms all need review.</p>
+<p><strong>What should I do as a leader?</strong> Update your organization's AI content policy to address AI-generated media provenance — especially for regulated industries. Evaluate Muse-class capabilities as part of any current creative workflow RFP.</p>
+<p><strong>What should I do?</strong> Start familiarizing yourself with content attribution and disclosure norms for AI-generated media in your professional context. What is acceptable in your industry or role may be shifting faster than internal guidelines reflect.</p>
+<p><strong>Source:</strong> (Meta AI Blog, 2026-07-08) — ai.meta.com/blog/introducing-muse-image-muse-video-msl</p>
 <hr>
 <h2>Enterprise Ops &amp; Adoption</h2>
-<h3>DoorDash's Practical Blueprint for Trusting AI in Code Review</h3>
-<p>DoorDash published a detailed case study on how it built DashBench — an internal AI evaluation framework that uses historical pull requests to benchmark AI code reviewers across multiple quality metrics and model combinations. Rather than relying on vendor benchmarks or team intuition, DoorDash created measurement infrastructure to answer a specific operational question: is this AI reviewer actually trustworthy in our codebase?</p>
-<p><strong>Why it matters:</strong> The DashBench approach — real historical test cases, multi-model comparison, continuous benchmarking — is directly replicable for any enterprise deploying AI in engineering, audit, legal review, or quality assurance workflows. The insight driving it applies broadly: AI trust is not a feeling, it is a measurement problem. Enterprises that skip this step are accumulating unmanaged risk alongside their productivity gains.</p>
-<p><strong>What should I do as a leader?</strong> Before expanding AI code review or AI-assisted quality processes, invest in evaluation infrastructure. A tool without a measurement framework is a tool you cannot manage, govern, or defend in an audit.</p>
-<p><strong>What should I do?</strong> If your team is adopting AI code review, help establish baseline quality metrics now. Waiting until deployment matures makes it far harder to detect when performance drifts.</p>
-<p><strong>Source:</strong> (DoorDash Engineering Blog, 2026-07-07) — careersatdoordash.com/blog/how-we-learned-to-trust-our-ai-code-reviewer-at-doordash/</p>
+<h3>Schneider Electric's LLMOps Blueprint Is Required Reading</h3>
+<p>LangChain published a detailed case study on how Schneider Electric — a global industrial enterprise — built production-scale LLMOps using LangSmith, focusing on AI observability, evaluation pipelines, deployment governance, and ongoing production monitoring across diverse AI applications.</p>
+<p><strong>Why it matters:</strong> Enterprise LLMOps is still young, and credible large-scale case studies from non-tech-sector companies are rare. Schneider Electric's approach — instrument everything, evaluate continuously, govern deployments structurally — is directly applicable to manufacturing, energy, utilities, and any enterprise running AI in operations-critical contexts. The operational rigor here is the kind of pattern that compliance teams, AI program leads, and platform architects should be adapting, not merely noting.</p>
+<p><strong>What should I do as a leader?</strong> Use this case study as a benchmark for your current AI observability maturity. If you cannot answer "how do we know our AI is performing as expected in production right now," this is the starting point.</p>
+<p><strong>What should I do?</strong> If you are on a team deploying AI applications, advocate for LLMOps tooling from day one — not as an afterthought. The cost of retrofitting observability into a deployed system is significantly higher than building it in.</p>
+<p><strong>Source:</strong> (LangChain Blog, 2026-07-08) — <a href="https://www.langchain.com/blog/how-schneider-electric-built-their-llmops-foundations-at-enterprise-scale-with-langsmith">langchain.com/blog/how-schneider-electric-built-their-llmops-foundations-at-enterprise-scale-with-langsmith</a></p>
 <hr>
-<h2>Research &amp; Capabilities</h2>
-<h3>Anthropic Finds Evidence for How LLMs Actually Reason</h3>
-<p>Anthropic published research introducing evidence for what it calls a "global workspace" — referred to as J-space — inside large language models: an internal representational space that appears to support planning, multi-step reasoning, and more controllable model behavior. The findings come from interpretability research, and Anthropic also released an interactive presentation to make the concepts accessible to non-researchers.</p>
-<p><strong>Why it matters:</strong> Interpretability has moved from a theoretical aspiration to a vendor evaluation criterion. For enterprises, understanding whether and how a model reasons — rather than just pattern-matches — has direct implications for deploying AI in workflows where errors carry compliance, financial, or reputational consequences. Research like this makes it possible to ask more specific questions of AI vendors about hallucination reduction and reasoning reliability, rather than accepting blanket safety claims.</p>
-<p><strong>What should I do as a leader?</strong> Add reasoning transparency and interpretability evidence to your AI vendor evaluation framework. Ask vendors specifically how their models handle multi-step reasoning and uncertainty — not just whether they have an AI safety team.</p>
-<p><strong>Source:</strong> (Anthropic, 2026-07-07) — <a href="https://www.anthropic.com/research/global-workspace">anthropic.com/research/global-workspace</a></p>
+<h3>Databricks Lakeflow Puts Agents at the Center of Data Engineering</h3>
+<p>Databricks introduced Lakeflow, an agentic data engineering platform designed to modernize traditional ETL pipelines by using AI agents to automate data ingestion, transformation, orchestration, and management across enterprise data environments.</p>
+<p><strong>Why it matters:</strong> ETL pipelines are foundational infrastructure in nearly every enterprise, and they are also chronically under-resourced and difficult to maintain. Agentic orchestration of data workflows — if it delivers on the promise — could dramatically reduce the manual overhead of pipeline management while increasing responsiveness to schema changes, data quality issues, and new source ingestion. For data and platform engineering teams, this is a category-level shift worth a hands-on evaluation, not just an analyst note.</p>
+<p><strong>What should I do as a leader?</strong> Add Lakeflow to your data platform evaluation roadmap for Q3. Data engineering backlogs are a common bottleneck for analytics and AI initiatives; agentic tooling that reduces manual pipeline work deserves direct investment attention.</p>
+<p><strong>Source:</strong> (Databricks Blog, 2026-07-08) — databricks.com/blog/lakeflow-new-era-agentic-data-engineering</p>
+<hr>
+<h2>Vendors, Platforms &amp; Models</h2>
+<h3>SWE-1.7: Competitive Coding Intelligence at Sharply Lower Cost</h3>
+<p>Cognition introduced SWE-1.7, a software engineering model targeting frontier-level coding performance at a fraction of the inference cost of current top-tier models. The efficiency gains come from reinforcement learning optimizations and model training techniques designed specifically for software engineering tasks.</p>
+<p><strong>Why it matters:</strong> Cost has become a legitimate barrier to scaling AI-assisted development in large engineering organizations. A model that delivers competitive coding results at substantially lower inference cost changes the build-versus-buy calculus for enterprise AI coding platforms and opens the door to broader deployment across mid-tier and junior developer workflows, not just staff engineers.</p>
+<p><strong>What should I do as a leader?</strong> Include SWE-1.7 in your next AI coding assistant benchmark cycle. If your current deployment is cost-constrained, the efficiency case may justify a transition evaluation sooner.</p>
+<p><strong>Source:</strong> (Cognition Blog, 2026-07-08) — cognition.com/blog/swe-1-7</p>
+<hr>
+<h3>Mistral Robostral Navigate: Visual-Only Robot Navigation</h3>
+<p>Mistral introduced Robostral Navigate, a robotics navigation system capable of operating using only RGB camera input and synthetic training data — no expensive sensor stacks or world models required.</p>
+<p><strong>Why it matters:</strong> Enterprises investing in physical automation, warehouse robotics, or facilities management technology should pay attention to the cost implications. Removing proprietary sensor stacks from the navigation equation reduces hardware cost and simplifies deployment significantly. The use of synthetic training data also opens new pathways for domain customization without large real-world data collection programs.</p>
+<p><strong>Source:</strong> (Mistral AI, 2026-07-08) — <a href="https://mistral.ai/news/robostral-navigate/">mistral.ai/news/robostral-navigate</a></p>
 <hr>
 <h2>Quick Hits</h2>
 <ul>
-<li><strong>The chatbot interface may be approaching its end</strong> — Rubric Labs argues ambient AI, inline transformations, and AI embedded directly in workflows are replacing standalone chat interfaces. Enterprise leaders evaluating internal AI tools should assess ambient integration capability, not just chatbot quality. rubriclabs.com/blog/challenging-the-chatbot</li>
-<li><strong>Reducing AI output loops in agentic pipelines</strong> — Liquid AI published research on Final Token Preference Optimization (FTPO), a technique to reduce repetitive "doom loops" in LLM outputs by addressing synthetic training data failure modes. Specialized, but worth flagging for teams running fine-tuned models in production agentic workflows. liquid.ai/blog/antidoom</li>
+<li><strong>AI chatbot interfaces are being displaced by ambient, embedded AI experiences</strong> — Rubric Labs argues traditional chatbot UX is giving way to inline transformations and context-native AI. rubriclabs.com/blog/challenging-the-chatbot</li>
+<li><strong>Liquid AI introduces FTPO to reduce LLM repetition failures</strong> — Final Token Preference Optimization targets "doom loops" in model outputs caused by synthetic training data artifacts. liquid.ai/blog/antidoom</li>
 </ul>
 <hr>
 <h2>Looking Ahead</h2>
 <ul>
-<li>As the workforce AI sentiment gap widens, talent strategy is likely to become a top-five enterprise AI risk item by year-end 2026. Organizations without structured AI onboarding programs for hesitant employees will feel it in retention data before they see it in AI program metrics.</li>
-<li>Orchestration and evaluation infrastructure is the next major enterprise AI procurement category. Organizations currently evaluating only foundation models are one architectural cycle behind.</li>
-<li>Anthropic's interpretability research may begin to appear in vendor safety documentation and regulatory filings by Q4 2026 — worth monitoring for procurement and legal teams.</li>
-<li>Ambient AI interfaces are already replacing discrete chatbots in leading productivity tools. Enterprise IT and product leaders should begin auditing internal deployments for interface architecture, not just functionality.</li>
+<li><strong>Persistent AI agents will require enterprise-grade identity governance.</strong> Claude Cowork's mobile expansion is an early signal; prepare session and access policy frameworks before adoption scales.</li>
+<li><strong>LLMOps maturity will separate AI leaders from laggards in H2 2026.</strong> The Schneider Electric case demonstrates what production-grade AI looks like at enterprise scale — use it as a gap analysis tool.</li>
+<li><strong>Data platform strategy needs an agentic audit.</strong> With Lakeflow launching, assess whether your current ETL architecture is compatible with or competitive against agentic pipeline automation.</li>
+<li><strong>Cost-performance benchmarking for AI coding tools should run quarterly.</strong> The SWE-1.7 release is a signal that the efficiency frontier is moving faster than annual procurement cycles can track.</li>
 </ul>
 <hr>
-<h2>Sign-off</h2>
-<p>Every now and then, a week's news resolves into a single coherent message. This one did. From the workforce split to DoorDash's evaluation framework to Weng's orchestration argument — the throughline is the same: enterprise AI is no longer primarily a procurement decision. It is a management discipline. The tools are available. The question is whether the organizational infrastructure to use them well is being built alongside them.</p>
-<p>There is something genuinely encouraging in that framing. It moves the conversation away from "which model" and toward "what do we actually know about how this is working" — which is a much more answerable question, and a much more honest one.</p>
-<p>Thanks for reading. Take good care of the people on your teams this week. The anxious ones especially.</p>
+<h2>Sign-Off</h2>
+<p>Wednesday's news was a reminder that the pace of enterprise AI is not slowing down for anyone's planning calendar. Whether it is agents that keep working while you sleep, media models that create at scale, or data pipelines that manage themselves, the infrastructure of enterprise work is quietly but decisively changing — and organizations that are thoughtful about governance today will have a significant advantage when scale arrives tomorrow.</p>
+<p>The good news is that the roadmap is becoming clearer, not murkier. Patterns like Schneider Electric's LLMOps approach and DoorDash's evaluation frameworks are real blueprints, not aspirational concepts. The work ahead is less about discovering what to do and more about finding the organizational will to do it consistently.</p>
+<p>From the Pacific coast to wherever you are reading this — stay curious, stay deliberate, and keep building things worth building.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>Feed 1</strong> (<code>ai_rss_feed.json</code>): 50 items fetched successfully.</li>
-<li><strong>Feed 2</strong> (<code>aggregated_wes_ai_news.json</code>): HTTP 404 — feed unavailable; 0 items from this source.</li>
-<li><strong>Strict 36-hour window:</strong> 2026-07-07 20:50 PDT to 2026-07-09 08:50 PDT — 0 items fell within this range.</li>
-<li><strong>Extended window applied:</strong> The feed publishes daily batches at midnight UTC (5 p.m. PT). The most recent batch is timestamped 2026-07-07 17:00 PDT, approximately 39.8 hours before generation time. These 6 items are new (not covered in the July 7 or July 8 newsletters) and represent the only unprocessed current content in the feed. The editorial window was extended to include this batch with this note.</li>
-<li><strong>Items from July 7 batch (newly eligible):</strong> 6 items.</li>
-<li><strong>Items excluded as already covered in July 8 newsletter:</strong> 10 items (July 5–6 PDT batch: WSJ token spend, Stanford HAI, Tencent Hy3, AWS bilingual NER, Expedia Spark SQL, Generative Skill Composition, Ramp jobs impact, BCG AI divide, Elena Verna confidence theater, Inscribe document fraud).</li>
-<li><strong>Items excluded as already covered in July 7 newsletter:</strong> 2 items (Field Guide to Fable, HBR "How People Are Really Using AI in 2026").</li>
-<li><strong>Items from July 1 batch:</strong> 6 items — excluded as outside the 36-hour window (8+ days old per generation time). Titles: Learning to Replicate Expert Judgment in Financial Tasks, The Twilight of the Chatbots, Your Talent Strategy Has to Keep Up with Your AI Transformation, Morgan Stanley cut reconciliation job, Why Three AI Labs Suddenly Started Building Scientific Infrastructure, How Omio Is Building the Future of Conversational Travel.</li>
-<li><strong>Items published as main sections:</strong> 4 (Lenny's workforce survey, Weng harness engineering, DoorDash DashBench, Anthropic global workspace).</li>
-<li><strong>Items published as Quick Hits:</strong> 2 (Rubric Labs chatbot, Liquid AI FTPO).</li>
-<li><strong>Generation time:</strong> 2026-07-09 08:50 PDT.</li>
+<li>Feed 1 (<code>https://rss.tedt.org/ai_rss_feed.json</code>): 50 items fetched; 12 items within the extended 72-hour window (July 7–8, 2026 PDT). The feed's most recent items are dated 2026-07-08 17:00 PDT; no items exist between July 8 17:00 PDT and the generation time of July 10 08:20 PDT, indicating the feed has not been refreshed since July 8.</li>
+<li>Feed 2 (<code>https://rss.tedt.org/aggregated_wes_ai_news.json</code>): HTTP 404 — unavailable at time of generation.</li>
+<li>The 24–36 hour strict window (July 8 20:20 PDT to July 10 08:20 PDT) produced 0 qualifying items. The window was extended to 72 hours to surface the most recent available content from July 7–8, 2026.</li>
+<li>Excluded from this issue (covered in the July 9 newsletter): "How Tech Workers Are Feeling in 2026" (Lenny's Newsletter), "Harness Engineering for Self-Improvement" (Lilian Weng), "How We Learned to Trust Our AI Code Reviewer at DoorDash," and "A Global Workspace in Language Models" (Anthropic research).</li>
+<li>Items fetched: 50 (feed 1 only)</li>
+<li>Items within 72-hour window: 12</li>
+<li>Items excluded as previously covered: 4</li>
+<li>Items published (main sections): 5</li>
+<li>Items published (Quick Hits): 2</li>
+<li>Total published: 7</li>
+<li>Excluded items summary: 4 items previously covered in the 2026-07-09 newsletter; 38 items older than 72 hours.</li>
 </ul>
     </section>
     <footer>
