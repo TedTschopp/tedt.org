@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-07-10 | TedT.org</title>
+  <title>Daily Report - 2026-07-11 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,96 +52,114 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-07-10</h1>
-      <p class="meta">Generated <time datetime="2026-07-10T08:02:47+00:00">2026-07-10T08:02:47Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-07-11</h1>
+      <p class="meta">Generated <time datetime="2026-07-11T06:36:00+00:00">2026-07-11T06:36:00Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site is healthy and active. Automated pipelines (deploy, Mastodon sync, daily report) are all running successfully. Ted shipped two meaningful feature pushes this week: new Enterprise Architecture and Leadership categories with registry images, and a new article on AI adoption and operating model transitions. One Dependabot security PR is open and needs review. No build failures detected in recent workflow runs.</p>
+      <p>Site is healthy. Automated pipelines (Mastodon feed, daily report, Enterprise AI refresh) are running on schedule. One open security PR needs merging (<code>concurrent-ruby</code> 1.3.5 → 1.3.7, three CVEs). No content published by Ted in the last 24 hours. The issue backlog remains stable with content discovery work queued but not yet started.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line</h2>
-<p>Site is operating normally. No failures in deploy, Mastodon sync, or feed pipelines. Ted made substantive content and category changes on July 6–7. Automated bots are refreshing content daily. One open security-patch PR awaits merge.</p>
+      <h2>Bottom Line Up Front</h2>
+<p>Site is operating normally. Automation is healthy. One security PR is sitting open and should be merged promptly. No human-authored content commits in the last ~18 hours. The active issue queue continues to grow with P2 content-discovery work but no blockers on the main publishing path.</p>
 <hr>
-<h2>Recent Commits (July 6–9, 2026)</h2>
-<p><strong>July 9</strong></p>
+<h2>Recent Repository Activity</h2>
+<h3>Commits (last 7 days)</h3>
+<p><strong>2026-07-10</strong></p>
 <ul>
-<li><code>chore: refresh yesterday in enterprise ai</code> — bot automation, daily content refresh (<a href="https://github.com/TedTschopp/tedt.org/commit/432c5d3d97bcc33c7f56d2527e7f3b3418df8f3a">432c5d3</a>)</li>
-<li><code>chore: refresh daily report</code> — scheduled bot run (<a href="https://github.com/TedTschopp/tedt.org/commit/6e63dfd86819f2ac64ec24cddcff5393b59ed820">6e63dfd</a>)</li>
+<li><code>chore: refresh yesterday in enterprise ai</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/79424069171c8983ea062103d5929627f02f24cb">79424069</a> — automated bot commit</li>
 </ul>
-<p><strong>July 7</strong></p>
+<p><strong>2026-07-10</strong></p>
 <ul>
-<li><code>feat(categories): add Enterprise Architecture and Leadership categories to multiple posts</code> — retroactively tagged existing posts with new categories (<a href="https://github.com/TedTschopp/tedt.org/commit/2232c8b81fd3a6cb9cfb3ce04171ada91f8b8ca0">2232c8b</a>)</li>
-<li><code>feat(categories): add enterprise architecture and leadership categories with images</code> — added new category registry entries with images (<a href="https://github.com/TedTschopp/tedt.org/commit/9350fd055093489dc3845fb483a96db0d0ff83ee">9350fd0</a>)</li>
+<li><code>chore: refresh daily report</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/b0169a62b72c08883289e9165b6ba71f5ffd61f4">b0169a62</a> — automated bot commit</li>
 </ul>
-<p><strong>July 6</strong></p>
+<p><strong>2026-07-09</strong></p>
 <ul>
-<li><code>feat(repo-guard): enhance file pattern blocking and update documentation</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/f624b877f5d367dae7dc6a8d7698a9e619cf20a4">f624b87</a>)</li>
-<li><code>style(footer): simplify housemark image display for improved clarity</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/7cb596a62e1649c679de0e92a1ceaf2861ad94b4">7cb596a</a>)</li>
-<li><code>feat(footer): update housemark images for improved visual presentation</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/a56d0ea1b4ebb17e49a787f3afb4346c54754f2d">a56d0ea</a>)</li>
-<li><code>feat(images): add new family mark images for enhanced content</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/874378fe134fdfe4df958d471f31912e4946fba7">874378f</a>)</li>
-<li><code>chore: update Mastodon cache/front matter</code> — bot sync (<a href="https://github.com/TedTschopp/tedt.org/commit/ac09d97196178c56201eac2e089831c839a08ee8">ac09d97</a>)</li>
-<li><code>content(article): update section headers for clarity in AI adoption post</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/b0ad357eb3f3709ef493cb936dce578d161a06d6">b0ad357</a>)</li>
-<li><code>chore(posts): remove outdated article on AI adoption</code> — cleaned up superseded draft (<a href="https://github.com/TedTschopp/tedt.org/commit/7c3b008b0194bf3e4e1e3843c85c4cdb0bf3c3cc">7c3b008</a>)</li>
-<li><code>content(blog): publish new article on AI adoption and operating models</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/bb3a98e8eef00316f4709253c62891ec858aa969">bb3a98e</a>)</li>
-<li><code>feat(article): add new article on AI adoption and operating model transition</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/78bc27c19541aaf5de79887878a0d52d149d87e5">78bc27c</a>)</li>
+<li><code>chore: refresh yesterday in enterprise ai</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/432c5d3d97bcc33c7f56d2527e7f3b3418df8f3a">432c5d3d</a> — automated</li>
+<li><code>chore: refresh daily report</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/6e63dfd86819f2ac64ec24cddcff5393b59ed820">6e63dfd8</a> — automated</li>
 </ul>
+<p><strong>2026-07-08</strong></p>
+<ul>
+<li><code>chore: refresh yesterday in enterprise ai</code> — automated</li>
+<li><code>chore: refresh daily report</code> — automated</li>
+</ul>
+<p><strong>2026-07-07</strong></p>
+<ul>
+<li><code>feat(categories): add Enterprise Architecture and Leadership categories to multiple posts</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/2232c8b81fd3a6cb9cfb3ce04171ada91f8b8ca0">2232c8b8</a> — TedTschopp</li>
+<li><code>feat(categories): add enterprise architecture and leadership categories with images</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/9350fd055093489dc3845fb483a96db0d0ff83ee">9350fd05</a> — TedTschopp</li>
+<li><code>feat(repo-guard): enhance file pattern blocking and update documentation</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/f624b877f5d367dae7dc6a8d7698a9e619cf20a4">f624b877</a> — TedTschopp</li>
+</ul>
+<p><strong>2026-07-06</strong></p>
+<ul>
+<li><code>style(footer): simplify housemark image display</code> — TedTschopp</li>
+<li><code>feat(footer): update housemark images for improved visual presentation</code> — TedTschopp</li>
+<li><code>feat(images): add new family mark images</code> — TedTschopp</li>
+<li><code>content(article): update section headers for clarity in AI adoption post</code> — TedTschopp</li>
+<li><code>chore(posts): remove outdated article on AI adoption</code> + <code>content(blog): publish new article on AI adoption and operating models</code> — TedTschopp</li>
+<li><code>chore: update Mastodon cache/front matter</code> — automated</li>
+</ul>
+<p><strong>Observation:</strong> July 6–7 saw the most human activity — new categories (Enterprise Architecture and Leadership), footer visual polish, and a replacement AI adoption article. Since July 7 all commits are automated maintenance.</p>
 <hr>
 <h2>Workflow Health</h2>
-<ul>
-<li><strong>Site Quality + Deploy</strong> — ✅ Success (run #988, <code>deploy.yml</code>, completed July 9)</li>
-<li><strong>Feed to Mastodon</strong> — ✅ Success (run #1997, completed 2026-07-10 03:28 UTC)</li>
-<li><strong>Daily Report</strong> — ▶️ In Progress (this run, #72, <code>daily-report.lock.yml</code>)</li>
-</ul>
-<p>All three primary automated workflows are operating normally.</p>
+<p><strong>Daily Report</strong> — run #73, <code>in_progress</code> as of report time (this run). Scheduled, triggering normally.</p>
+<p><strong>Feed to Mastodon</strong> — run #2001, <code>completed / success</code> on 2026-07-11 at 02:45 UTC. Pipeline is healthy.</p>
+<p><strong>Enterprise AI refresh</strong> — running daily, last commit 2026-07-10 15:24 UTC. Healthy.</p>
+<p>[ASSUMPTION] Deploy and HTMLProofer workflow run statuses not separately verified in this report; overall build health is inferred from the fact that automated commits are landing cleanly on <code>main</code>.</p>
 <hr>
 <h2>Open Pull Requests</h2>
-<p><strong>Dependabot Security Patch — <code>concurrent-ruby</code> 1.3.5 → 1.3.7</strong></p>
+<h3>PR #203 — Security patch: <code>concurrent-ruby</code> 1.3.5 → 1.3.7</h3>
 <ul>
-<li>Bumps <code>concurrent-ruby</code> in the security-patches group.</li>
-<li>This is a transitive dependency relevant to Ruby build stability.</li>
-<li><strong>Action required:</strong> Review and merge. Low risk; patch-level security fix.</li>
+<li><strong>URL:</strong> <a href="https://github.com/TedTschopp/tedt.org/pull/203">https://github.com/TedTschopp/tedt.org/pull/203</a></li>
+<li><strong>Author:</strong> Dependabot</li>
+<li><strong>Labels:</strong> <code>dependencies</code>, <code>ruby</code></li>
+<li><strong>Created:</strong> 2026-06-27</li>
+<li><strong>Why it matters:</strong> This release fixes three CVEs — <code>CVE-2026-54904</code> (<code>AtomicReference#update</code> livelock), <code>CVE-2026-54905</code> (<code>ReentrantReadWriteLock</code> read-count overflow), <code>CVE-2026-54906</code> (<code>ReadWriteLock</code> wrong-thread write release). All rated Low severity but upgrading is recommended by upstream.</li>
+<li><strong>Action:</strong> Review and merge. No breaking changes expected.</li>
 </ul>
 <hr>
-<h2>Open Issues</h2>
-<p>At least one open issue visible: <strong>Category landing page enrichment</strong> — 41 category pages are minimal redirect stubs with no secondary discovery features (related categories, tag clouds, post counts, breadcrumbs). This is a medium-effort UX improvement, not a blocking defect.</p>
-<hr>
-<h2>Content &amp; Publishing Pipeline</h2>
+<h2>Open Issues Snapshot (P2 content-discovery backlog)</h2>
+<p>The following are recent open issues, all created 2026-05-29, labeled <code>P2</code>, <code>audit-2026-05</code>:</p>
 <ul>
-<li>New article published July 6: AI adoption and operating model transition. Article was iterated same-day (outdated draft removed, section headers clarified).</li>
-<li>New categories added July 7: <strong>Enterprise Architecture</strong> and <strong>Leadership</strong> — registry entries created with images, and existing posts retroactively tagged. This will expand homepage carousel and category pages.</li>
-<li>Daily Enterprise AI content refresh is running on schedule (bot commits each day at ~15:00–16:00 UTC).</li>
-<li>Mastodon sync appears healthy; front matter was updated July 6 alongside the new article.</li>
+<li><strong>#186</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/186">Enhance category landing pages: related categories, tag clouds, depth indicators</a></li>
+<li>41 category pages are minimal stubs. Scope: related categories, tag cloud, breadcrumbs, depth indicators.</li>
+<li>Blocked by #183 (tagging infrastructure) for tag cloud component.</li>
 </ul>
-<hr>
-<h2>Risks and Observations</h2>
 <ul>
-<li><strong>Dependabot PR unmerged</strong> — security patch for <code>concurrent-ruby</code> is sitting open. Should be merged promptly.</li>
-<li><strong>Category registry expansion</strong> — adding Enterprise Architecture and Leadership categories is substantive. Verify the <code>recent_by_category</code> cache rebuilds cleanly on next deploy and that the carousel reflects the new categories with real posts surfaced. [ASSUMPTION: deploy ran after the category commits; verify in next build logs if carousel is not displaying as expected.]</li>
-<li><strong>No human-authored commits since July 7</strong> — bot activity only on July 8–9. Normal for a weekend pattern; no concern unless it continues mid-week.</li>
+<li><strong>#185</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/185">Build cross-collection content bridges and related-posts infrastructure</a></li>
+<li>69% of content (Gamma World) hidden from homepage discovery. No <code>related:</code> field in use. Scope: related-posts footer, cross-collection landing pages.</li>
+</ul>
+<ul>
+<li><strong>#184</strong> — <a href="https://github.com/TedTschopp/tedt.org/issues/184">Drive prompt series adoption: audit and populate series metadata</a></li>
+<li>Only 3 of 56 prompts (5.4%) have <code>series:</code> metadata. Series feature nearly non-functional.</li>
+</ul>
+<p>None of these issues appear to be actively in progress.</p>
+<hr>
+<h2>Risks and Blockers</h2>
+<ul>
+<li><strong>Security PR aging:</strong> PR #203 has been open since 2026-06-27 (14 days). Low-severity CVEs but worth resolving.</li>
+<li><strong>Content discovery debt:</strong> Issues #184–#186 represent queued but unstarted P2 work. No blocker, but the backlog is growing without corresponding throughput.</li>
+<li><strong>No human commits since July 7:</strong> Not a problem by itself, but worth noting if Ted expects content to be live from any in-progress drafts.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge the <code>concurrent-ruby</code> Dependabot PR</strong> — low-risk security patch, no expected breakage.</li>
-<li><strong>Verify carousel shows new categories</strong> — load homepage and confirm Enterprise Architecture and Leadership appear with real posts (not empty stubs).</li>
-<li><strong>Category page enrichment issue</strong> — consider scheduling work on the 41 stub category pages per the open issue; this is a discovery and engagement improvement.</li>
-<li><strong>Monitor next deploy run</strong> — confirm <code>recent_by_category</code> cache is populated correctly after new category additions.</li>
+<li><strong>Merge PR #203</strong> — <code>concurrent-ruby</code> security patch. Dependabot has done the work; it just needs approval and merge.</li>
+<li><strong>Start one P2 issue</strong> — #184 (prompt series metadata) is the lowest-risk entry point: pure front matter / data work with no template changes required.</li>
+<li><strong>Verify deploy pipeline</strong> — Spot-check that the most recent site deployment reflects the July 7 category additions cleanly.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits sourced from <a href="https://github.com/TedTschopp/tedt.org/commits/main">TedTschopp/tedt.org commits API</a>, last 20 commits retrieved.</li>
-<li>Workflow run data from GitHub Actions API; full run list was truncated (377 KB response); key runs extracted from preview and targeted <code>get_workflow_run</code> calls.</li>
-<li>Deploy workflow (deploy.yml) most recent completed run: #988, success.</li>
-<li>Mastodon feed workflow most recent completed run: #1997, success (2026-07-10 03:28 UTC).</li>
-<li>Open PRs: one Dependabot security-patch PR visible (concurrent-ruby); full PR list was in a truncated 132 KB response — only one PR was confirmed from the preview. [ASSUMPTION: There may be additional open PRs not surfaced here.]</li>
-<li>Open issues: one issue partially visible (category landing page enrichment); full issue list was in a 21 KB truncated response. [ASSUMPTION: There may be additional open issues not surfaced.]</li>
-<li>No direct build logs reviewed; workflow conclusions inferred from API status fields.</li>
-<li>Daily Report workflow run #72 was in-progress at report generation time (this run).</li>
-<li>Report generated: 2026-07-10T07:58 UTC.</li>
+<li>Commits: GitHub API <code>list_commits</code>, last 20 on <code>main</code> branch, verified</li>
+<li>Workflow runs: GitHub Actions API <code>list_workflow_runs</code>, top 10 results; Daily Report run #73 was <code>in_progress</code> at report generation time (this is expected — it is the current run)</li>
+<li>Issues: GitHub API <code>list_issues</code>, state=OPEN, first page (10 results)</li>
+<li>Pull requests: GitHub API <code>list_pull_requests</code>, state=open; PR #203 details read from response</li>
+<li>[ASSUMPTION] Full issue list not paginated; only first 10 open issues reviewed</li>
+<li>[ASSUMPTION] Deploy workflow health inferred from successful automated commits landing on main; not directly verified from a completed deploy run in this report</li>
+<li>Workflow run count <code>7806 total_count</code> is the all-time total across all workflows, not a quality signal</li>
+<li>No external link checks performed; HTML Proofer results not available in this run</li>
 </ul>
     </section>
     <footer>
