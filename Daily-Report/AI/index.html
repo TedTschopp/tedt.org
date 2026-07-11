@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-07-07 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-07-11 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,147 +52,58 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-07-07</h1>
-      <p class="meta">Generated <time datetime="2026-07-07T15:49:06+00:00">2026-07-07T15:49:06Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-07-11</h1>
+      <p class="meta">Generated <time datetime="2026-07-11T14:12:11+00:00">2026-07-11T14:12:11Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Microsoft's 4,800-person layoff marks another structural AI-driven restructuring signal, even as new research across more than 21,000 U.S. companies shows that the firms investing most in AI grew employment by 10%. Apollo's chief economist warns that productivity gains outside tech—in healthcare, banking, and pharmaceuticals—may take years, not months, complicating many enterprise ROI cases. New reporting reframes last week's JADEPUFFER ransomware story: the "autonomous" attack still required a human to choose the target, configure infrastructure, and supply stolen credentials—pointing security teams back toward credential fundamentals rather than exotic agentic defenses.</p>
+      <p>Feed retrieval was unavailable for this edition. The sandbox network firewall blocked outbound requests to <code>rss.tedt.org</code>, preventing ingestion of the AI news feeds required to produce today's newsletter. No items from the July 10–11 window could be evaluated or published.</p>
+<p><strong>Action bullets:</strong></p>
 <ul>
-<li>Recalibrate AI ROI timelines in regulated industries; Apollo data suggests a 3-to-5-year horizon for meaningful productivity gains outside tech.</li>
-<li>Issue guidance on Google's updated privacy settings—a change now routes more employee data to AI training without explicit opt-in.</li>
-<li>Credential hygiene and access controls remain the critical defense; JADEPUFFER needed human credential access to execute.</li>
-<li>Map AI platform choices against geographic risk as U.S. and Chinese AI ecosystems diverge into incompatible stacks.</li>
-<li>Use L'Oreal, Nestle, and Mondelez as benchmarks—AI in R&amp;D is compressing product development timelines for CPG leaders.</li>
+<li><strong>Check the feed endpoints</strong> (<code>rss.tedt.org/ai_rss_feed.json</code> and <code>rss.tedt.org/aggregated_wes_ai_news.json</code>) to confirm they are reachable from the publishing environment.</li>
+<li><strong>Review GitHub Actions network policies</strong> to determine whether outbound HTTPS to <code>rss.tedt.org</code> requires an allowlist entry.</li>
+<li><strong>Monitor the July 10 edition</strong> (published yesterday) for any items that should carry forward if feeds become available today.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Big Moves</h2>
-<h3>Microsoft Cuts 4,800 Roles—AI Efficiency Cited Again</h3>
-<p>Microsoft laid off approximately 4,800 employees on Monday—roughly 2.1% of its global workforce—with Xbox and commercial sales absorbing the deepest cuts. The company has cited AI-driven efficiency among the reasons for workforce reductions this year, continuing a pattern that TechCrunch is tracking across major tech companies naming AI as a stated factor in a running list published this week.</p>
-<p><strong>Why it matters:</strong> This is the second significant Microsoft workforce reduction in 2026 and it follows the same logic: AI tools are expanding productivity capacity without equivalent headcount growth. When an enterprise of Microsoft's scale frames reductions this way, it sets a reference point for every board asking "where are your efficiency gains?" Teams that can demonstrate measurable AI-enabled output per headcount are building competitive insulation; those that cannot are increasingly exposed as planning cycles arrive.</p>
+      <h2>Feed Unavailable — Edition Pending</h2>
+<p>This edition of <strong>Yesterday in Enterprise AI</strong> could not be generated for <strong>Friday, July 11, 2026</strong>.</p>
+<p>The automated workflow attempted to retrieve the following feed URLs and received a network-level permission denial for both:</p>
 <ul>
-<li><strong>What should I do as a leader?</strong> Build a documented case for your team's AI-enabled productivity before the next headcount review. If AI tools are compressing hours or cycles, capture it in numbers now.</li>
-<li><strong>What should I do?</strong> Especially in commercial sales and technology operations, proactively demonstrating AI fluency through measurable output—not just tool familiarity—can be a meaningful career differentiator.</li>
+<li><code>https://rss.tedt.org/ai_rss_feed.json</code></li>
+<li><code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
 </ul>
-<p>Source: TechCrunch, 2026-07-06 — <a href="https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/">techcrunch.com</a></p>
+<p>The sandbox environment's outbound network firewall blocked the requests before any data was returned. Without feed content, no items could be filtered, ranked, or written up in accordance with the editorial contract.</p>
+<h3>What Was Attempted</h3>
+<p>The workflow followed the standard operating model:</p>
+<ol>
+<li>Read the editorial contract from <code>prompts/! - Yesterday in AI.md</code></li>
+<li>Determined current Pacific Time: <strong>07:09 a.m. PDT, July 11, 2026</strong></li>
+<li>Calculated the 24–36 hour lookback window: <strong>July 9–10, 2026 (PDT)</strong></li>
+<li>Confirmed the most recent prior edition was dated <strong>2026-07-10</strong></li>
+<li>Attempted feed retrieval — blocked at both endpoints</li>
+</ol>
+<h3>What This Means</h3>
+<p>No enterprise AI news items for the July 9–10 window have been evaluated, deduplicated, or published in this edition. The July 10 edition remains the most recent complete newsletter on record.</p>
+<h3>Recommended Fix</h3>
+<p>If outbound HTTPS to <code>rss.tedt.org</code> is intended to be permitted in the publishing runner, an allowlist entry or network policy exception will be needed. Once the network constraint is resolved, the workflow should self-correct on the next scheduled run.</p>
 <hr>
-<h3>JADEPUFFER Update: The "Autonomous" Ransomware Attack Still Needed a Human</h3>
-<p>New reporting adds important nuance to last week's JADEPUFFER ransomware story: while an AI agent executed the technical steps of the attack autonomously and at machine speed, a human still chose the victim, configured the infrastructure, and supplied the stolen credentials that made entry possible. This was not an unsupervised attack from start to finish.</p>
-<p><strong>Why it matters:</strong> The distinction reshapes how enterprises should prioritize defensive investment. The threat is real—agentic AI executing cyberattacks at machine speed is genuinely new—but the entry point was still human-enabled credential theft. Organizations that redirect budget from credential hygiene and access controls toward exotic agentic threat defenses are addressing the headline rather than the root cause. The fundamentals remain the highest-ROI defensive layer, even as autonomous threat techniques continue to mature.</p>
-<ul>
-<li><strong>What should I do as a leader?</strong> Commission a prompt review of privileged account controls and lateral movement detection. Don't let the "agentic" framing move budget away from credential lifecycle management—that's still the highest-return security investment.</li>
-<li><strong>What should I do?</strong> Report any unusual account access notifications to your security team immediately, and use strong, unique credentials across every enterprise system you access.</li>
-</ul>
-<p>Source: TechCrunch, 2026-07-06 — <a href="https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/">techcrunch.com</a></p>
-<hr>
-<h2>Enterprise Ops &amp; Adoption</h2>
-<h3>The Firms Investing Most in AI Are Hiring More—Not Fewer</h3>
-<p>New large-scale research tracking more than 21,000 U.S. companies found that organizations with the largest generative AI investments increased employment by roughly 10%, including growth in entry-level roles. The data, compiled via Ramp's corporate spending platform, directly challenges the prevailing assumption that AI adoption immediately reduces headcount.</p>
-<p><strong>Why it matters:</strong> For enterprise leaders managing workforce strategy alongside AI investments, this research provides a data-driven counterpoint to the anxiety narrative that AI equals job cuts. The pattern—AI investment paired with workforce expansion—suggests that organizations capturing genuine productivity gains are growing into new capacity rather than simply automating existing roles away. The important caveat: this is correlation at the firm level. Individual functions and teams will still face restructuring even inside growing organizations, and the data should not be used as blanket reassurance.</p>
-<ul>
-<li><strong>What should I do as a leader?</strong> Where your strategy genuinely supports workforce growth, this research backs a "grow the pie" message to your team. Use it, but back it up with specifics from your own roadmap.</li>
-</ul>
-<p>Source: Ramp, 2026-07-06 — ramp.com</p>
-<hr>
-<h3>L'Oreal, Nestle, and Mondelez Are Using AI to Compress Product Development</h3>
-<p>Consumer goods companies L'Oreal, Mondelez, and Nestle are deploying AI across R&amp;D and product development workflows. L'Oreal has applied AI in its laboratories for four years, using it to shorten development cycles and surface new applications for ingredients already in its existing portfolio—compressing timelines that previously required costly reformulation work.</p>
-<p><strong>Why it matters:</strong> These are not pilot programs at the edges of innovation. CPG companies at this scale are running production AI inside core development pipelines, and the competitive advantage in product speed-to-market is beginning to compound. Enterprises in manufacturing, consumer products, and life sciences that haven't begun scoping similar programs face a widening capability gap—one that won't close quickly once competitors have years of institutional learning built up ahead of them.</p>
-<ul>
-<li><strong>What should I do as a leader?</strong> Map where AI could compress cycle time in your product or service development pipeline. R&amp;D and formulation are consistently underdiscussed AI use cases outside the technology industry.</li>
-</ul>
-<p>Source: AI News, 2026-07-07 — <a href="https://www.artificialintelligence-news.com/news/ai-product-development-loreal-mondelez-nestle/">artificialintelligence-news.com</a></p>
-<hr>
-<h3>Alberta's Government Is Using Claude to Hunt and Fix Cybersecurity Vulnerabilities</h3>
-<p>The Government of Alberta has deployed Anthropic's Claude to identify and remediate cybersecurity vulnerabilities across its systems, marking one of the more prominent public-sector deployments of LLM-assisted security operations published to date.</p>
-<p><strong>Why it matters:</strong> Government entities operating AI for active security work—not just advisory analysis—signals that LLM-assisted vulnerability management is crossing into production operations. For enterprise security teams, this case study is a practical template for evaluating AI-assisted penetration testing, patch prioritization, and posture reporting. The public-sector context also suggests these patterns will eventually face regulatory standardization, giving early adopters a shaping role in how standards are written.</p>
-<ul>
-<li><strong>What should I do as a leader?</strong> Ask your CISO whether your vulnerability management program has evaluated LLM assistance as a workflow layer. If not, Alberta's published case is a concrete starting point for building the evaluation brief.</li>
-</ul>
-<p>Source: Anthropic, 2026-07-06</p>
-<hr>
-<h2>Security, Risk &amp; Compliance</h2>
-<h3>Google Updated Its Privacy Settings—and It's Training AI on More of Your Data</h3>
-<p>A TechCrunch report flags a recent change to Google's privacy settings that now allows the company to store more user data—including images, files, and audio and video recordings—to train its AI models. Users who have not explicitly reviewed and opted out of the new setting are contributing more data to Google's training pipeline than before.</p>
-<p><strong>Why it matters:</strong> Employees using Google Workspace and personal accounts for work-related activity may be routing sensitive or proprietary information to Google's AI training pipeline without explicit organizational consent. In regulated industries—finance, healthcare, legal—this creates a compliance exposure that most acceptable-use policies haven't yet addressed. The opt-out steps are available and straightforward, but employees won't take them without clear guidance.</p>
-<ul>
-<li><strong>What should I do as a leader?</strong> Issue clear guidance to employees about this change and assess whether your acceptable-use policies address AI training data contributions from employee-managed accounts. This is a low-cost governance action with real risk-mitigation value.</li>
-<li><strong>What should I do?</strong> Review and update your Google privacy settings via your Google Account under Data &amp; Privacy. The steps take less than five minutes.</li>
-</ul>
-<p>Source: TechCrunch, 2026-07-06 — <a href="https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out/">techcrunch.com</a></p>
-<hr>
-<h2>Policy &amp; Economic Outlook</h2>
-<h3>Apollo Economist: AI Profits Outside Tech Will Take Far Longer Than Wall Street Expects</h3>
-<p>Apollo chief economist Torsten Slok is warning investors that AI-driven productivity gains will materialize much more slowly outside the technology sector than current valuations assume. In regulated industries like healthcare, banking, and pharmaceuticals, process overhauls and privacy requirements could delay meaningful AI-driven margin improvements by years, not quarters. If that lag stretches to five years instead of five months, many AI-sector stock valuations face painful recalibration.</p>
-<p><strong>Why it matters:</strong> Most enterprise AI business cases are built on productivity dividends within 12 to 24 months. Slok's analysis—grounded in sector-specific institutional friction rather than technology limitations—suggests those timelines are materially optimistic for organizations operating under heavy regulatory and process constraints. CFOs and business unit leaders building AI investment cases in these sectors should stress-test assumptions against a 3-to-5-year horizon before presenting to boards that are tracking AI investment as a near-term competitive signal.</p>
-<ul>
-<li><strong>What should I do as a leader?</strong> Build regulatory compliance and process reengineering timelines into your AI ROI models, not just technology deployment timelines. A business case that ignores institutional friction is a business case that will miss expectations.</li>
-</ul>
-<p>Source: The Decoder, 2026-07-07 — <a href="https://the-decoder.com/apollo-economist-warns-ai-profit-gains-outside-tech-could-take-well-beyond-what-wall-street-expects/">the-decoder.com</a></p>
-<hr>
-<h3>BCG: The U.S. and China Are Building Two Separate AI Worlds</h3>
-<p>A BCG analysis documents the deepening divergence between U.S. and Chinese AI development paths. The United States is concentrating investment in frontier models and compute infrastructure; China is prioritizing efficient deployment, domestic hardware, and cost-optimized AI at scale. The divergence is no longer just a geopolitical observation—it is creating technology stacks that are increasingly incompatible in practice.</p>
-<p><strong>Why it matters:</strong> For multinational enterprises selecting AI infrastructure, cloud platforms, and models, this divergence creates long-term architectural risk. Tools and models developed in one ecosystem may not be interoperable—or permissible—in markets where the other ecosystem dominates. Global technology and legal teams that haven't mapped AI platform choices against geographic assumptions are building on foundations that may not hold across their entire operating footprint.</p>
-<ul>
-<li><strong>What should I do as a leader?</strong> Ask your enterprise architecture team to produce a brief assessment of where current AI platform choices create geographic dependency risk. It's a low-cost analysis that avoids expensive course corrections later.</li>
-</ul>
-<p>Source: BCG, 2026-07-06 — bcg.com</p>
-<hr>
-<h2>Vendors, Platforms &amp; Models</h2>
-<h3>Anthropic's $19 Billion Data Center Deal Signals Compute Is Now Infrastructure</h3>
-<p>TeraWulf, a data center operator repurposing capacity from bitcoin mining for AI workloads, saw its shares surge after announcing a major infrastructure commitment with Anthropic reportedly valued at $19 billion. The deal signals Anthropic's aggressive long-term build-out of dedicated inference and training capacity outside standard hyperscaler arrangements.</p>
-<p><strong>Why it matters:</strong> Frontier AI compute is being treated as long-term physical infrastructure investment—comparable to power grids or telecommunications networks—not a variable cloud expense. When a leading AI lab commits at this scale with a repurposed mining company, it reshapes expectations for cloud pricing stability and capacity allocation. Enterprises building AI cost models on current cloud pricing assumptions should monitor how large long-term infrastructure commitments by labs affect hyperscaler availability and spot-market dynamics over time.</p>
-<p>Source: The Information, 2026-07-06</p>
-<hr>
-<h3>Vercel CEO: Separating Models From Agents Is a Production Engineering Imperative</h3>
-<p>Vercel CEO Guillermo Rauch argues in a TechCrunch interview that enterprises optimizing AI for production must treat models and agents as separable layers. As inference costs become a major budget line, organizations that default to a single model for entire agent workflows are leaving significant price/performance gains unrealized.</p>
-<p><strong>Why it matters:</strong> Most enterprise agent deployments still run on single-model architectures, often because they were designed for ease of initial deployment rather than production optimization. As agent workloads scale and inference spend becomes board-visible, the ability to swap best-fit models per task—without rebuilding the underlying agent architecture—will define competitive cost structures in AI-intensive operations. Teams building agent infrastructure today should design for model flexibility from the start, not retrofit it later at higher cost.</p>
-<ul>
-<li><strong>What should I do as a leader?</strong> Ask your AI platform team whether your agent architectures allow model substitution without a full rebuild. Lock-in at the model layer is the next cost engineering problem that will arrive uninvited.</li>
-</ul>
-<p>Source: TechCrunch, 2026-07-06 — <a href="https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/">techcrunch.com</a></p>
-<hr>
-<h2>Quick Hits</h2>
-<ul>
-<li><strong>HBR: How People Are Really Using AI in 2026</strong> — A longitudinal analysis shows rising LLM reliance for productivity, emotional support, and emerging agentic workflows—a useful baseline for enterprise AI adoption benchmarking. — <a href="https://hbr.org/2026/06/how-people-are-really-using-ai-in-2026">hbr.org</a></li>
-<li><strong>xAI Releases 21 New Grok Voices</strong> — xAI has added 21 voice options to Grok, expanding expressive range for voice-enabled enterprise and consumer applications built on the platform. — x.ai</li>
-<li><strong>SK Hynix U.S. IPO Arriving This Week</strong> — The South Korean memory maker is completing its U.S. listing this week; HBM memory demand from AI data centers underpins the valuation story. — <a href="https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/">techcrunch.com</a></li>
-<li><strong>Reddit Uses LLMs to Fight the Spam LLMs Created</strong> — Reddit is deploying language models to detect and remove AI-generated bot content, a dynamic that will repeat across every major platform as AI-generated spam outpaces traditional filters. — <a href="https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created/">techcrunch.com</a></li>
-<li><strong>Your $300 Stake in OpenAI</strong> — MIT Technology Review examines Sam Altman's promise that Americans will share in AI-generated wealth, and what that commitment actually amounts to in practice. — <a href="https://www.technologyreview.com/2026/07/06/1140176/your-familys-300-stake-in-openai/">technologyreview.com</a></li>
-<li><strong>Siri Gets Personalization Controls in iOS 27 Beta</strong> — Apple is adding pace and expressivity adjustments to Siri as part of a broader generative AI rebuild—a leading indicator of where consumer AI voice expectations are heading for enterprise assistants. — <a href="https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/">techcrunch.com</a></li>
-<li><strong>Practical Field Guide to Production AI Agents</strong> — Anthropic's Thariq published a framework for identifying the known unknowns and unknown unknowns that most commonly derail production agent deployments—valuable reading for teams moving from pilot to production. — <a href="https://x.com/trq212/status/2073100352921215386">x.com</a></li>
-</ul>
-<hr>
-<h2>Looking Ahead</h2>
-<ul>
-<li><strong>Recalibrate AI ROI assumptions for regulated industries now.</strong> Apollo's chief economist is warning that healthcare, banking, and pharma should expect years—not months—of runway before AI delivers margin gains. If your business case doesn't reflect institutional friction, revise it before a board does.</li>
-<li><strong>Don't deprioritize credential fundamentals in favor of agentic threat defenses.</strong> JADEPUFFER needed human setup to execute. Your highest-ROI security investment is still identity hygiene and access controls, not specialized autonomous threat tooling.</li>
-<li><strong>Model-agent separation is the next AI cost engineering conversation.</strong> Build model flexibility into agent architectures now. Retrofitting it later, once workloads are at scale and inference spend is locked, will be far more expensive.</li>
-<li><strong>Microsoft's restructuring pattern is a boardroom benchmark.</strong> Expect more AI-cited workforce announcements through year-end. Teams that have documented AI productivity gains will navigate those conversations with stronger footing than those that haven't.</li>
-</ul>
-<hr>
-<h2>Sign-Off</h2>
-<p>The story this week isn't really about any single headline—it's about calibration. Whether it's recalibrating ROI timelines in regulated industries, or recalibrating how truly "autonomous" last week's ransomware story actually was, the work of enterprise AI leadership increasingly requires holding complexity steadily and adjusting without drama.</p>
-<p>That kind of equanimity is harder to build than any technical skill, and rarer. The organizations that develop it—teams that can hold both the genuine promise and the honest constraints of AI at the same time—will make better decisions in the years ahead than those chasing pure momentum or retreating into pure skepticism.</p>
-<p>Stay grounded this week. Check one assumption, update one number, and share one honest thing with a colleague that helps them see the landscape more clearly. That's the real competitive edge.</p>
+<p>_The July 10 edition is still available and covers Claude's mobile expansion, Meta's Muse models, Databricks Lakeflow, Schneider Electric's LLMOps case study, and more._</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>Feed 1:</strong> https://rss.tedt.org/ai_rss_feed.json — 50 items fetched</li>
-<li><strong>Feed 2:</strong> https://rss.tedt.org/aggregated_wes_ai_news.json — 30 items fetched</li>
-<li><strong>Total items fetched:</strong> 80</li>
-<li><strong>Items within 24-36 hour window (2026-07-06 00:00 PDT through 2026-07-07 08:34 PDT):</strong> 37 (6 from Feed 1 dated July 6; 7 from Feed 2 dated July 7; 24 from Feed 2 dated July 6)</li>
-<li><strong>Items excluded as previously covered in the July 6, 2026 newsletter:</strong> 16 — Amazon Mechanical Turk sunset, JADEPUFFER primary story (The Decoder), Tom Tunguz AI spend breakeven analysis, Compressor V2 token reduction, PNAS math learning study, Fabraix prompt injection survey, Alibaba/ByteDance feature pause, China AI companion regulations, GPT-5.6 Sol Ultra Codex, Tesla Robotaxi Miami, Unitree Robotics production scale, sqlite-utils 4.0rc3, wealthy AI-first schools, SK Hynix planned IPO (now updated as new development), Sakana Chat translation, Google Founding Fathers ad</li>
-<li><strong>Items excluded as outside enterprise AI scope or insufficient content:</strong> 10 — SpaceX executive political donation, YC CEO viral social post, Erling Haaland World Cup AI content, British space longevity lab, Wall Street chip financing (no AI angle), SoftBank/Thrive Holdings investment (insufficient detail), Mercor funding round (insufficient detail), Silicon Valley reindustrialization feature (not AI-specific), John Collison profile (no content available), Microsoft Gaming Retreat (no AI angle)</li>
-<li><strong>Items deduplicated across feeds:</strong> 2 (JADEPUFFER story appeared in both feeds; China AI divide theme overlapped with prior newsletter's regulatory coverage)</li>
-<li><strong>Items published:</strong> 17 total — 10 main items across 5 sections + 7 quick hits</li>
-<li><strong>Note:</strong> TeraWulf/Anthropic $19B deal — source is The Information; no direct public URL available from feed aggregation.</li>
-<li><strong>Note:</strong> Government of Alberta/Anthropic case study sourced via Google News aggregation; direct URL unavailable.</li>
-<li><strong>Note:</strong> xAI Grok voices announcement sourced via Google News aggregation; direct URL unavailable.</li>
-<li><strong>Note:</strong> Feeds fetched via Python urllib (curl restricted by network firewall in this environment).</li>
-<li><strong>Date filter applied:</strong> 2026-07-06 00:00 PDT through 2026-07-07 08:34 PDT (24-36 hour window as of generation time).</li>
+<li><strong>items_fetched_count:</strong> 0 (network blocked)</li>
+<li><strong>items_within_24_36_hours_count:</strong> 0</li>
+<li><strong>items_deduplicated_count:</strong> 0</li>
+<li><strong>items_published_count:</strong> 0</li>
+<li><strong>Feed endpoints attempted:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code>, <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
+<li><strong>Failure reason:</strong> Outbound HTTPS requests denied by sandbox network firewall; both endpoints returned "Permission denied and could not request permission from user"</li>
+<li><strong>Pacific Time at generation:</strong> 07:09 a.m. PDT, July 11, 2026</li>
+<li><strong>Lookback window:</strong> July 9–10, 2026 (PDT)</li>
+<li><strong>Prior edition date:</strong> 2026-07-10 (no duplicate-check possible without feed data)</li>
+<li><strong>Assumption:</strong> No items from July 9–10 are carried forward; the July 10 edition remains current</li>
 </ul>
     </section>
     <footer>
