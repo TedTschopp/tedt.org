@@ -4855,5 +4855,36 @@
       "https://tschopp.net/users/Ted/statuses/116873769362401118"
     ],
     "lastTootTimestamp": 1783352193732
+  },
+  "https://tedt.org/The-Next-AI-Model-Wave-Has-Already-Been-Funded/": {
+    "id": "/The-Next-AI-Model-Wave-Has-Already-Been-Funded/",
+    "title": "The Next AI Model Wave Has Already Been Funded",
+    "summary": "The next AI model wave is more likely to arrive as a continuous sequence of model-family upgrades, agent-focused releases, faster inference tiers, open-weight systems, and production refinements than as one dramatic naming moment.",
+    "content_text": "The next AI model wave is more likely to arrive as a continuous sequence of model-family upgrades, agent-focused releases, faster inference tiers, open-weight systems, and production refinements than as one dramatic naming moment. https://tedt.org/The-Next-AI-Model-Wave-Has-Already-Been-Funded/",
+    "url": "https://tedt.org/The-Next-AI-Model-Wave-Has-Already-Been-Funded/",
+    "image": "https://tedt.org/img/2026-07/Next-AI-Model-Wave.webp",
+    "tags": [
+      "ai models",
+      "frontier models",
+      "enterprise ai",
+      "ai agents",
+      "model garden",
+      "open weights",
+      "ai governance",
+      "model evaluation",
+      "hyperscaler capex",
+      "autonomous systems"
+    ],
+    "date_published": "2026-07-11T09:00:00-07:00",
+    "date_modified": "2026-07-11T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116903488035681265"
+    ],
+    "lastTootTimestamp": 1783805664713
   }
 }
