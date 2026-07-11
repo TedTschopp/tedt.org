@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-07-10 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-07-11 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,97 +52,58 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-07-10</h1>
-      <p class="meta">Generated <time datetime="2026-07-10T15:24:05+00:00">2026-07-10T15:24:05Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-07-11</h1>
+      <p class="meta">Generated <time datetime="2026-07-11T14:12:11+00:00">2026-07-11T14:12:11Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>AI moved fast on Wednesday — Anthropic expanded Claude's autonomous reach to mobile and web, Meta unveiled next-generation media generation, and Databricks reimagined the data pipeline with agents at the center. The common thread: the shift from AI as a tool to AI as an active participant in enterprise workflows is accelerating, and the organizational and infrastructure choices made now will determine competitive position into 2027.</p>
+      <p>Feed retrieval was unavailable for this edition. The sandbox network firewall blocked outbound requests to <code>rss.tedt.org</code>, preventing ingestion of the AI news feeds required to produce today's newsletter. No items from the July 10–11 window could be evaluated or published.</p>
 <p><strong>Action bullets:</strong></p>
 <ul>
-<li><strong>Evaluate Claude Cowork for enterprise remote-agent use cases</strong> before third-party automation vendors fill the gap.</li>
-<li><strong>Assess Meta's Muse models</strong> for content and creative workflows; governance guardrails are needed before wide rollout.</li>
-<li><strong>Review your data engineering stack</strong> against Databricks Lakeflow's agentic pipeline model — ETL is changing fundamentally.</li>
-<li><strong>Study Schneider Electric's LLMOps blueprint</strong> as a repeatable enterprise pattern for AI observability and governance.</li>
-<li><strong>Benchmark AI coding assistants</strong> using cost-performance data from Cognition's SWE-1.7 before renewing model contracts.</li>
+<li><strong>Check the feed endpoints</strong> (<code>rss.tedt.org/ai_rss_feed.json</code> and <code>rss.tedt.org/aggregated_wes_ai_news.json</code>) to confirm they are reachable from the publishing environment.</li>
+<li><strong>Review GitHub Actions network policies</strong> to determine whether outbound HTTPS to <code>rss.tedt.org</code> requires an allowlist entry.</li>
+<li><strong>Monitor the July 10 edition</strong> (published yesterday) for any items that should carry forward if feeds become available today.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Big Moves</h2>
-<h3>Claude Goes Mobile — and Keeps Working While You Sleep</h3>
-<p>Anthropic announced that Claude Cowork is expanding to web and mobile, enabling AI agents to continue executing tasks remotely across devices even when a user's computer is offline. Persistent sessions, scheduled tasks, and cloud-based execution are now part of the package.</p>
-<p><strong>Why it matters:</strong> This is a meaningful shift from AI as a desktop productivity layer to AI as a persistent enterprise worker. For organizations already running Claude in knowledge-work, coding, or research workflows, the implications are operational: agents can now run overnight, across time zones, and on mobile approval flows without requiring a connected endpoint. The security and data governance questions this raises — particularly around persistent session credentials, data residency, and access scope — are not trivial and should not be deferred.</p>
-<p><strong>What should I do as a leader?</strong> Establish a clear policy for AI persistent-session use before broad adoption. Define what data agents may access during unattended execution, and ensure your identity and access management controls extend to agent sessions.</p>
-<p><strong>What should I do?</strong> If you are using Claude for multi-step research or drafting workflows, evaluate whether persistent mobile sessions would close gaps in your current process — and review what permissions any agent would hold in your name.</p>
-<p><strong>Source:</strong> (Anthropic / Claude Blog, 2026-07-08) — <a href="https://claude.com/blog/cowork-web-mobile">claude.com/blog/cowork-web-mobile</a></p>
-<hr>
-<h3>Meta's Muse Models Bring Agentic Media Generation to Scale</h3>
-<p>Meta introduced Muse Image and previewed Muse Video — next-generation generative AI media models featuring agentic image generation, self-refinement, multi-reference editing, and direct integration across Instagram, WhatsApp, and Meta AI. The models are designed to act on creative intent iteratively, not just respond to a single prompt.</p>
-<p><strong>Why it matters:</strong> For enterprises in marketing, media, advertising, or creative production, agentic media generation at platform scale changes cost and speed assumptions significantly. More immediately, Meta's integration of these capabilities directly into consumer platforms means the volume of AI-generated visual content reaching your customers, employees, and markets is about to increase sharply. Authenticity standards, content provenance policies, and vendor use terms all need review.</p>
-<p><strong>What should I do as a leader?</strong> Update your organization's AI content policy to address AI-generated media provenance — especially for regulated industries. Evaluate Muse-class capabilities as part of any current creative workflow RFP.</p>
-<p><strong>What should I do?</strong> Start familiarizing yourself with content attribution and disclosure norms for AI-generated media in your professional context. What is acceptable in your industry or role may be shifting faster than internal guidelines reflect.</p>
-<p><strong>Source:</strong> (Meta AI Blog, 2026-07-08) — ai.meta.com/blog/introducing-muse-image-muse-video-msl</p>
-<hr>
-<h2>Enterprise Ops &amp; Adoption</h2>
-<h3>Schneider Electric's LLMOps Blueprint Is Required Reading</h3>
-<p>LangChain published a detailed case study on how Schneider Electric — a global industrial enterprise — built production-scale LLMOps using LangSmith, focusing on AI observability, evaluation pipelines, deployment governance, and ongoing production monitoring across diverse AI applications.</p>
-<p><strong>Why it matters:</strong> Enterprise LLMOps is still young, and credible large-scale case studies from non-tech-sector companies are rare. Schneider Electric's approach — instrument everything, evaluate continuously, govern deployments structurally — is directly applicable to manufacturing, energy, utilities, and any enterprise running AI in operations-critical contexts. The operational rigor here is the kind of pattern that compliance teams, AI program leads, and platform architects should be adapting, not merely noting.</p>
-<p><strong>What should I do as a leader?</strong> Use this case study as a benchmark for your current AI observability maturity. If you cannot answer "how do we know our AI is performing as expected in production right now," this is the starting point.</p>
-<p><strong>What should I do?</strong> If you are on a team deploying AI applications, advocate for LLMOps tooling from day one — not as an afterthought. The cost of retrofitting observability into a deployed system is significantly higher than building it in.</p>
-<p><strong>Source:</strong> (LangChain Blog, 2026-07-08) — <a href="https://www.langchain.com/blog/how-schneider-electric-built-their-llmops-foundations-at-enterprise-scale-with-langsmith">langchain.com/blog/how-schneider-electric-built-their-llmops-foundations-at-enterprise-scale-with-langsmith</a></p>
-<hr>
-<h3>Databricks Lakeflow Puts Agents at the Center of Data Engineering</h3>
-<p>Databricks introduced Lakeflow, an agentic data engineering platform designed to modernize traditional ETL pipelines by using AI agents to automate data ingestion, transformation, orchestration, and management across enterprise data environments.</p>
-<p><strong>Why it matters:</strong> ETL pipelines are foundational infrastructure in nearly every enterprise, and they are also chronically under-resourced and difficult to maintain. Agentic orchestration of data workflows — if it delivers on the promise — could dramatically reduce the manual overhead of pipeline management while increasing responsiveness to schema changes, data quality issues, and new source ingestion. For data and platform engineering teams, this is a category-level shift worth a hands-on evaluation, not just an analyst note.</p>
-<p><strong>What should I do as a leader?</strong> Add Lakeflow to your data platform evaluation roadmap for Q3. Data engineering backlogs are a common bottleneck for analytics and AI initiatives; agentic tooling that reduces manual pipeline work deserves direct investment attention.</p>
-<p><strong>Source:</strong> (Databricks Blog, 2026-07-08) — databricks.com/blog/lakeflow-new-era-agentic-data-engineering</p>
-<hr>
-<h2>Vendors, Platforms &amp; Models</h2>
-<h3>SWE-1.7: Competitive Coding Intelligence at Sharply Lower Cost</h3>
-<p>Cognition introduced SWE-1.7, a software engineering model targeting frontier-level coding performance at a fraction of the inference cost of current top-tier models. The efficiency gains come from reinforcement learning optimizations and model training techniques designed specifically for software engineering tasks.</p>
-<p><strong>Why it matters:</strong> Cost has become a legitimate barrier to scaling AI-assisted development in large engineering organizations. A model that delivers competitive coding results at substantially lower inference cost changes the build-versus-buy calculus for enterprise AI coding platforms and opens the door to broader deployment across mid-tier and junior developer workflows, not just staff engineers.</p>
-<p><strong>What should I do as a leader?</strong> Include SWE-1.7 in your next AI coding assistant benchmark cycle. If your current deployment is cost-constrained, the efficiency case may justify a transition evaluation sooner.</p>
-<p><strong>Source:</strong> (Cognition Blog, 2026-07-08) — cognition.com/blog/swe-1-7</p>
-<hr>
-<h3>Mistral Robostral Navigate: Visual-Only Robot Navigation</h3>
-<p>Mistral introduced Robostral Navigate, a robotics navigation system capable of operating using only RGB camera input and synthetic training data — no expensive sensor stacks or world models required.</p>
-<p><strong>Why it matters:</strong> Enterprises investing in physical automation, warehouse robotics, or facilities management technology should pay attention to the cost implications. Removing proprietary sensor stacks from the navigation equation reduces hardware cost and simplifies deployment significantly. The use of synthetic training data also opens new pathways for domain customization without large real-world data collection programs.</p>
-<p><strong>Source:</strong> (Mistral AI, 2026-07-08) — <a href="https://mistral.ai/news/robostral-navigate/">mistral.ai/news/robostral-navigate</a></p>
-<hr>
-<h2>Quick Hits</h2>
+      <h2>Feed Unavailable — Edition Pending</h2>
+<p>This edition of <strong>Yesterday in Enterprise AI</strong> could not be generated for <strong>Friday, July 11, 2026</strong>.</p>
+<p>The automated workflow attempted to retrieve the following feed URLs and received a network-level permission denial for both:</p>
 <ul>
-<li><strong>AI chatbot interfaces are being displaced by ambient, embedded AI experiences</strong> — Rubric Labs argues traditional chatbot UX is giving way to inline transformations and context-native AI. rubriclabs.com/blog/challenging-the-chatbot</li>
-<li><strong>Liquid AI introduces FTPO to reduce LLM repetition failures</strong> — Final Token Preference Optimization targets "doom loops" in model outputs caused by synthetic training data artifacts. liquid.ai/blog/antidoom</li>
+<li><code>https://rss.tedt.org/ai_rss_feed.json</code></li>
+<li><code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
 </ul>
+<p>The sandbox environment's outbound network firewall blocked the requests before any data was returned. Without feed content, no items could be filtered, ranked, or written up in accordance with the editorial contract.</p>
+<h3>What Was Attempted</h3>
+<p>The workflow followed the standard operating model:</p>
+<ol>
+<li>Read the editorial contract from <code>prompts/! - Yesterday in AI.md</code></li>
+<li>Determined current Pacific Time: <strong>07:09 a.m. PDT, July 11, 2026</strong></li>
+<li>Calculated the 24–36 hour lookback window: <strong>July 9–10, 2026 (PDT)</strong></li>
+<li>Confirmed the most recent prior edition was dated <strong>2026-07-10</strong></li>
+<li>Attempted feed retrieval — blocked at both endpoints</li>
+</ol>
+<h3>What This Means</h3>
+<p>No enterprise AI news items for the July 9–10 window have been evaluated, deduplicated, or published in this edition. The July 10 edition remains the most recent complete newsletter on record.</p>
+<h3>Recommended Fix</h3>
+<p>If outbound HTTPS to <code>rss.tedt.org</code> is intended to be permitted in the publishing runner, an allowlist entry or network policy exception will be needed. Once the network constraint is resolved, the workflow should self-correct on the next scheduled run.</p>
 <hr>
-<h2>Looking Ahead</h2>
-<ul>
-<li><strong>Persistent AI agents will require enterprise-grade identity governance.</strong> Claude Cowork's mobile expansion is an early signal; prepare session and access policy frameworks before adoption scales.</li>
-<li><strong>LLMOps maturity will separate AI leaders from laggards in H2 2026.</strong> The Schneider Electric case demonstrates what production-grade AI looks like at enterprise scale — use it as a gap analysis tool.</li>
-<li><strong>Data platform strategy needs an agentic audit.</strong> With Lakeflow launching, assess whether your current ETL architecture is compatible with or competitive against agentic pipeline automation.</li>
-<li><strong>Cost-performance benchmarking for AI coding tools should run quarterly.</strong> The SWE-1.7 release is a signal that the efficiency frontier is moving faster than annual procurement cycles can track.</li>
-</ul>
-<hr>
-<h2>Sign-Off</h2>
-<p>Wednesday's news was a reminder that the pace of enterprise AI is not slowing down for anyone's planning calendar. Whether it is agents that keep working while you sleep, media models that create at scale, or data pipelines that manage themselves, the infrastructure of enterprise work is quietly but decisively changing — and organizations that are thoughtful about governance today will have a significant advantage when scale arrives tomorrow.</p>
-<p>The good news is that the roadmap is becoming clearer, not murkier. Patterns like Schneider Electric's LLMOps approach and DoorDash's evaluation frameworks are real blueprints, not aspirational concepts. The work ahead is less about discovering what to do and more about finding the organizational will to do it consistently.</p>
-<p>From the Pacific coast to wherever you are reading this — stay curious, stay deliberate, and keep building things worth building.</p>
+<p>_The July 10 edition is still available and covers Claude's mobile expansion, Meta's Muse models, Databricks Lakeflow, Schneider Electric's LLMOps case study, and more._</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li>Feed 1 (<code>https://rss.tedt.org/ai_rss_feed.json</code>): 50 items fetched; 12 items within the extended 72-hour window (July 7–8, 2026 PDT). The feed's most recent items are dated 2026-07-08 17:00 PDT; no items exist between July 8 17:00 PDT and the generation time of July 10 08:20 PDT, indicating the feed has not been refreshed since July 8.</li>
-<li>Feed 2 (<code>https://rss.tedt.org/aggregated_wes_ai_news.json</code>): HTTP 404 — unavailable at time of generation.</li>
-<li>The 24–36 hour strict window (July 8 20:20 PDT to July 10 08:20 PDT) produced 0 qualifying items. The window was extended to 72 hours to surface the most recent available content from July 7–8, 2026.</li>
-<li>Excluded from this issue (covered in the July 9 newsletter): "How Tech Workers Are Feeling in 2026" (Lenny's Newsletter), "Harness Engineering for Self-Improvement" (Lilian Weng), "How We Learned to Trust Our AI Code Reviewer at DoorDash," and "A Global Workspace in Language Models" (Anthropic research).</li>
-<li>Items fetched: 50 (feed 1 only)</li>
-<li>Items within 72-hour window: 12</li>
-<li>Items excluded as previously covered: 4</li>
-<li>Items published (main sections): 5</li>
-<li>Items published (Quick Hits): 2</li>
-<li>Total published: 7</li>
-<li>Excluded items summary: 4 items previously covered in the 2026-07-09 newsletter; 38 items older than 72 hours.</li>
+<li><strong>items_fetched_count:</strong> 0 (network blocked)</li>
+<li><strong>items_within_24_36_hours_count:</strong> 0</li>
+<li><strong>items_deduplicated_count:</strong> 0</li>
+<li><strong>items_published_count:</strong> 0</li>
+<li><strong>Feed endpoints attempted:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code>, <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
+<li><strong>Failure reason:</strong> Outbound HTTPS requests denied by sandbox network firewall; both endpoints returned "Permission denied and could not request permission from user"</li>
+<li><strong>Pacific Time at generation:</strong> 07:09 a.m. PDT, July 11, 2026</li>
+<li><strong>Lookback window:</strong> July 9–10, 2026 (PDT)</li>
+<li><strong>Prior edition date:</strong> 2026-07-10 (no duplicate-check possible without feed data)</li>
+<li><strong>Assumption:</strong> No items from July 9–10 are carried forward; the July 10 edition remains current</li>
 </ul>
     </section>
     <footer>
