@@ -123,7 +123,7 @@ enterprise-architecture:
   palette:
     start: "#00446F"
     end: "#00A9E0"
-    fontTitle: '"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+    fontTitle: ' "Sofia Sans Extra Condensed", "Optima", "ManukaCondensed", "Manuka", "Helvetica Neue", Helvetica, Arial, sans-serif;'
     titleColorLight: "#00446F"
     titleColorDark: "#00A9E0"
     titleHoverColorLight: "#00446F"
