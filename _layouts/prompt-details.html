@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prompt: {{page.title}}</title>
 
     {% include utility/calculate-variables.html %}
     
@@ -53,7 +52,7 @@
                 <div class="card h-100 no-padding">
                     {% include utility/resolve-image-variables.html item=page fallback_alt=page.title fallback_credits_title='In Search of an Image - "No Image Associated with this article"' fallback_credits=site.author.name fallback_credits_artist_url=site.author.url %}
                     <div class="card h-100 position-relative">
-                        <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}">
+                        {% include utility/responsive-image.html src=image_URL alt=image_alt class="card-img-top w-100 d-block" sizes="(min-width: 1200px) 1110px, 100vw" lcp=true %}
                         <!-- hero image intentionally eager -->
                         <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 pe-2 ps-2">
                             <div class="wcag-glow aaa mb-2" style="--pad-x:0.75em; --pad-y:0.4em;">
@@ -65,12 +64,7 @@
                                         {% endif %}
                                     </div>
                                     <div class="small mb-1">
-                                        <!-- Author TODO: Fix this to be dynamic for more than one author. -->
-                                        {% if page.author.name %}
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ page.author.name | escape }} avatar">{{page.author.name}}</a></span>
-                                        {% else %}
-                                            <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo" loading="lazy" alt="{{ site.author.name | escape }} avatar">{{site.author.name}}</a></span>
-                                        {% endif %}
+                                        <span class="card-text">{% include utility/content-credits.html page=page %}</span>
                                     </div>
                                     <div class="small image-credits">
                                         {% include utility/render-image-credit.html %}
@@ -82,7 +76,8 @@
                 </div>
             </div>
             <div class="card-body">
-                <div class="card-text mb-3">{{ content }}</div>
+                {% assign __prompt_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                <div class="card-text mb-3">{{ __prompt_content | lazy_images_except_first }}</div>
                 
                 <div class="w-100 mb-3">
                     {% for tag in page.tags %}

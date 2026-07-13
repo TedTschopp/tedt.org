@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1984-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Stewart Brand

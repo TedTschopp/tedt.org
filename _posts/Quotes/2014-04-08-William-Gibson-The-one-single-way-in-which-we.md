@@ -58,7 +58,5 @@ year-the-event-took-place: 2014
 mathjax: 
 
 order: 
-redirect_from:
-  - /William-Gibson-The-one-single-way-in-which-we/
 ---
 The one single way in which we can choose to not get old: by choosing not to be militant nativists of the era in which we first got laid.

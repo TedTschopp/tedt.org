@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/The_Weight_of_Glory_and_Other_Address
 call-to-action: ''
 
 date: 1941-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2026-01-03T20:30:33-08:00"
 update:
 author:
     name: C.S. Lewis

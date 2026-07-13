@@ -60,7 +60,5 @@ year-the-event-took-place: 1870s
 mathjax: 
 
 order: 
-redirect_from:
-  - /Al-Swearengen-Announcing-your-plans-is-a-goo/
 ---
 Announcing your plans is a good way to hear God laugh.

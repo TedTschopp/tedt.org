@@ -59,7 +59,5 @@ year-the-event-took-place: 2009
 mathjax: 
 
 order: 
-redirect_from:
-  - /Eric-Shinseki-If-you-don't-like-change-you'/
 ---
 If you don’t like change, you’re going to like irrelevance even less.

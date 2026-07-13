@@ -16,6 +16,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1928-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Stephen Vincent Benét
@@ -62,8 +64,6 @@ year-the-event-took-place: 1928
 mathjax: 
 
 order: 
-redirect_from:
-  - /Stephen-Vincent-Benet-If-you-take-a-flat-map-And-mov/
 ---
 If you take a flat map \
 And move wooden blocks upon it strategically, \

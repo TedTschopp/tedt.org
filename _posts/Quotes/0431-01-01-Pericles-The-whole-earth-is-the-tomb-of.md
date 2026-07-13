@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/History_of_the_Peloponnesian_War'
 call-to-action: ''
 
 date: 0431-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 original-date: -431
 update:
 author:
@@ -60,7 +62,5 @@ year-the-event-took-place: -431
 mathjax: 
 
 order: 
-redirect_from:
-  - /Pericles-The-whole-earth-is-the-tomb-of/
 ---
 The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other mens lives.

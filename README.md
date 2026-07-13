@@ -412,6 +412,29 @@ Notes:
 
 See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural implications of these flags.
 
+## Responsive WebP Images
+
+Local WebP sources under `img/` and `RPG/` remain the canonical originals. Run
+the local generator after adding or changing one of those files:
+
+```bash
+python3 _code/py/generate_responsive_images.py
+python3 _code/py/generate_responsive_images.py --check
+```
+
+The generator uses Pillow and `cwebp` to create 480, 768, 1200, and 1456 pixel
+variants without upscaling. Generated files live under
+`img/generated/responsive/`; `_data/responsive_images.json` records intrinsic
+dimensions and all available candidates. Templates should render images through
+`_includes/utility/responsive-image.html`. Set `lcp=true` only for the one image
+expected to be the page's LCP element; all other images default to lazy loading.
+
+After building, validate rendered sitemap pages with:
+
+```bash
+ruby tests/check_responsive_images.rb _site
+```
+
 ## Article Video Front Matter
 
 Posts may specify a primary article video in front matter. The post and long-article layouts render the video in the article hero position. The normal `image` fields are still required for summaries, feeds, social previews, category cards, and fallback rendering.

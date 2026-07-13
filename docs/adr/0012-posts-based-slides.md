@@ -2,6 +2,8 @@
 Date: 2025-11-03
 Status: Accepted
 Decision Type: Content Architecture Simplification
+sitemap: false
+robots: "noindex, follow"
 ---
 
 # ADR 0012: Posts-Based Slide Deck Architecture (Deprecate `slides` Collection)

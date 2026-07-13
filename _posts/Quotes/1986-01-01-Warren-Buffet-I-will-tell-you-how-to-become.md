@@ -12,6 +12,8 @@ source-url: 'https://www.berkshirehathaway.com/letters/1986.html'
 call-to-action: ''
 
 date: 1986-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Warren Buffett
@@ -59,7 +61,5 @@ year-the-event-took-place: 1986
 mathjax: 
 
 order: 
-redirect_from:
-  - /Warren-Buffet-I-will-tell-you-how-to-become/
 ---
 I will tell you how to become rich. Close the doors. Be fearful when others are greedy. Be greedy when others are fearful.

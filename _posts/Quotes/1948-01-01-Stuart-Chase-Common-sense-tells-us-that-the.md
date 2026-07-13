@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1948-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Stuart Chase
@@ -58,7 +60,5 @@ year-the-event-took-place: 1948
 mathjax: 
 
 order: 
-redirect_from:
-  - /Stuart-Chase-Common-sense-tells-us-that-the/
 ---
 Common sense tells us that the world is flat, that the sun goes around the earth, that heavy bodies always fall faster than light bodies, that boats made of iron will sink.

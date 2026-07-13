@@ -65,7 +65,7 @@
                     <h1 class="p-name lead"><a href="{{ micropub_permalink }}">{{ micropub_post_title }}</a></h1>
                   {% endif %}
 
-                  <p class="lead">{% include utility/author-byline.html page=page %}</p>
+                  <p class="lead">{% include utility/content-credits.html page=page %}</p>
 
                   <hr>
 
@@ -195,7 +195,8 @@
                   <!-- Post Content -->
 
                   <div id="toc"></div>  
-                  <span class="e-content">{{ content }}</span>
+                  {% assign __micropub_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                  <span class="e-content">{{ __micropub_content | lazy_images_except_first }}</span>
                   <hr>
                   {% endif %}
                 </main>

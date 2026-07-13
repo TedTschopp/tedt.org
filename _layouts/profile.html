@@ -30,6 +30,14 @@
 
   </head>
   <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    {% include layout/top-nav-bar.html %}
+
+    <main class="container py-4" role="main">
+      <h1>{{ page.title | default: "Ted Tschopp's Profile" }}</h1>
+      {% assign __profile_content = content | markdownify | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+      {{ __profile_content }}
+    </main>
+
     {% include layout/footer.html %}
 
   <!-- Bootstrap core JavaScript -->

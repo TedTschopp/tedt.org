@@ -59,8 +59,6 @@ year-the-event-took-place: 2011
 mathjax: 
 
 order: 
-redirect_from:
-  - /Charlie-Brooker-and-Konnie-Huq-I-havent-got-a-speech-I-didn/
 ---
 "I haven't got a speech I didn't plan words I didn't even try to, I just knew I had to get here, to stand here and I knew I wanted you to listen, to really listen. Not just pull a face like you're listening like you do the rest of the time, a face that you're feeling instead of processing.
 

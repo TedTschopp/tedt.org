@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1938-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Dorothy Sayers
@@ -60,8 +62,6 @@ year-the-event-took-place: 1938
 mathjax: 
 
 order: 
-redirect_from:
-  - /Dorthy-Sayers-We-are-constantly-assured-that/
 ---
 "We are constantly assured that the churches are empty because preachers insist too much upon doctrine — ‘dull dogma,’ as people call it. The fact is the precise opposite. It is the neglect of dogma that makes for dullness. The Christian faith is the most exciting drama that ever staggered the imagination of man — and the dogma is the drama.
   

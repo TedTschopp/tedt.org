@@ -195,6 +195,12 @@ jobs:
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
 
+      - name: Responsive images and editorial credits
+        run: |
+          set -euo pipefail
+          bundle exec ruby tests/check_responsive_images.rb _site
+          bundle exec ruby tests/check_content_credits.rb _site
+
       - name: Run a11y tests (Allure)
         id: a11y
         continue-on-error: true

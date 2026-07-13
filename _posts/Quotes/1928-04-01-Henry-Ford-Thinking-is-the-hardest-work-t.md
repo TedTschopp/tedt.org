@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1928-04-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 original-date: 1928-04
 update:
 author:
@@ -58,7 +60,5 @@ year-the-event-took-place: 1928
 mathjax: 
 
 order: 
-redirect_from:
-  - /Henry-Ford-Thinking-is-the-hardest-work-t/
 ---
 Thinking is the hardest work there is, which is probably the reason why so few engage in it.

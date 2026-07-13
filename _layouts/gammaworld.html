@@ -3,7 +3,6 @@
 
 <head>
      <meta charset="utf-8">
-     <title>{% if page.title and page.title != '' %}{{ page.title | escape }} – {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
      {% include utility/calculate-variables.html %}
      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
      <meta name="HandheldFriendly" content="True">
@@ -121,9 +120,8 @@
                          <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
                                    <figure class="w-100 overflow-hidden">
                                         {%- if creature_image != '' -%}
-                                             <img class="img-fluid rounded shadow" src="{{ creature_image }}"
-                                                  id="jscii-element-image" alt="{{ page['image-alt'] | default: page.title | default: 'Gamma World creature illustration' }}"
-                                                  loading="lazy">
+                                             {% assign _creature_alt = page['image-alt'] | default: page.title | default: 'Gamma World creature illustration' %}
+                                             {% include utility/responsive-image.html src=creature_image id="jscii-element-image" alt=_creature_alt class="img-fluid rounded shadow" sizes="(min-width: 992px) 33vw, 100vw" %}
                                              <pre class="overflow-hidden" id="ascii-container-image" aria-hidden="true"></pre>
                                              <figcaption class="visually-hidden">{{ page.title | default: "Creature image" }}</figcaption>
                                         {%- else -%}

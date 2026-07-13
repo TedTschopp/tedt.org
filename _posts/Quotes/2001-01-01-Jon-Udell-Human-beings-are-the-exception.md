@@ -12,6 +12,8 @@ source-url: 'https://www.infoworld.com/article/2673038/beyond-interactive-voice-
 call-to-action: ''
 
 date: 2001-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Jon Udell
@@ -59,7 +61,5 @@ year-the-event-took-place: 2001
 mathjax: 
 
 order: 
-redirect_from:
-  - /Jon-Udell-Human-beings-are-the-exception/
 ---
 Human beings are the exception handlers in all workflows.

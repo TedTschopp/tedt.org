@@ -59,8 +59,6 @@ year-the-event-took-place: 2007
 mathjax: 
 
 order: 
-redirect_from:
-  - /Edward-Castronova-Anyone-who-sees-a-hurricane-co/
 ---
 "Anyone who sees a hurricane coming should warn others. I see a hurricane coming.
 

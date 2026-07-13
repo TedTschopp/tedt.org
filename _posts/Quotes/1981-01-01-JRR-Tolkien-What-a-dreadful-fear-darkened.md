@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/The_Letters_of_J._R._R._Tolkien'
 call-to-action: ''
 
 date: 1981-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: J.R.R. Tolkien

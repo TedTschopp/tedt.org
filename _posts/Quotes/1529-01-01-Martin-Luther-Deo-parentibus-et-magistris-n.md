@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1529-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Martin Luther
@@ -59,7 +61,5 @@ year-the-event-took-place: 1529
 mathjax: 
 
 order: 
-redirect_from:
-  - /Martin-Luther-Deo-parentibus-et-magistris-n/
 ---
 Deo, parentibus et magistris non potest satis gratiae rependi. – To God, to parents, and to teachers we can never render sufficient gratitude and compensation.

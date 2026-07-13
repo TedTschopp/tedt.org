@@ -64,7 +64,7 @@ permalink: /:title/
 # in `profile` or `authors`.
 profile:
   name: &profile_name Ted Tschopp
-  url: &profile_url https://tedt.org/
+  url: &profile_url https://tedt.org/profile/
   avatar: &profile_avatar https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   givenname: &profile_givenname Ted
   familyname: &profile_familyname Tschopp

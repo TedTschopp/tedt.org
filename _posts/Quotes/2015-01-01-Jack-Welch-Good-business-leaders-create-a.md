@@ -61,7 +61,5 @@ year-the-event-took-place: 2015
 mathjax: 
 
 order: 
-redirect_from:
-  - /Jack-Welch-Good-business-leaders-create-a/
 ---
 Good business leaders create a vision, articulate the vision, passionately own the vision, and relentlessly drive it to completion.

@@ -104,7 +104,9 @@
                             {%- if watermark != "no-watermark" -%}
                               <li>
                                 <a class="dropdown-item" href="{{ site.url }}/career/#{% if __post_anchor_slug != '' %}{{ __post_anchor_slug }}{% endif %}" style="text-decoration-thickness: 1px;">
-                                  <img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo for {{watermark}}" style="height: 1.5em;">
+                                  {% assign _watermark_image = '/img/home/logo-' | append: watermark | append: '.webp' %}
+                                  {% capture _watermark_alt %}Company logo for {{ watermark }}{% endcapture %}
+                                  {% include utility/responsive-image.html src=_watermark_image alt=_watermark_alt style="height: 1.5em; width: auto;" sizes="24px" %}
                                   - {{ this-post-title }}
                                 </a>
                               </li>
@@ -163,7 +165,9 @@
                             {%- if watermark != "no-watermark" -%}
                               <li>
                                 <a class="dropdown-item" href="{{ site.url }}/career/#{% if __post_anchor_slug != '' %}{{ __post_anchor_slug }}{% endif %}" style="text-decoration-thickness: 1px;">
-                                  <img src="/img/home/logo-{{watermark}}.webp" alt="Company Logo for {{watermark}}" style="height: 1.5em;">
+                                  {% assign _watermark_image = '/img/home/logo-' | append: watermark | append: '.webp' %}
+                                  {% capture _watermark_alt %}Company logo for {{ watermark }}{% endcapture %}
+                                  {% include utility/responsive-image.html src=_watermark_image alt=_watermark_alt style="height: 1.5em; width: auto;" sizes="24px" %}
                                   - {{ this-post-title }}
                                 </a>
                               </li>
@@ -263,4 +267,3 @@
               });
             })();
           </script>
-

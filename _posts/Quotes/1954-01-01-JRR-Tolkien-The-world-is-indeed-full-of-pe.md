@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/The_Fellowship_of_the_Ring'
 call-to-action: ''
 
 date: 1954-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: J.R.R. Tolkien

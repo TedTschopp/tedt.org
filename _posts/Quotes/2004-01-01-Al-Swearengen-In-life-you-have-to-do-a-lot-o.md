@@ -51,7 +51,5 @@ monster-or-magical-or-religious-ideas: ""
 year-the-event-took-place: 1870s
 mathjax: false
 order: ""
-redirect_from:
-    - /Al-Swearengen-In-life-you-have-to-do-a-lot-o/
 ---
 In life you have to do a lot of things you don't fucking want to do. Many times, that's what the fuck life is... one vile fucking task after another.

@@ -59,8 +59,6 @@ year-the-event-took-place: 2018
 mathjax: 
 
 order: 
-redirect_from:
-  - /Kevin-Kelly-Anything-you-buy-you-must-m/
 ---
 * A vacation plus a disaster equals an adventure.
 * A worthy goal for a year is to learn enough about a subject so that you can't believe how ignorant you were a year earlier.

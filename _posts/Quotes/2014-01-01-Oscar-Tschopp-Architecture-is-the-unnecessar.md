@@ -58,7 +58,5 @@ year-the-event-took-place: 2014
 mathjax: 
 
 order: 
-redirect_from:
-  - /Oscar-Tschopp-Architecture-is-the-unnecessar/
 ---
 Architecture is the unnecessary design elements of a structure that make it livable and sustainable.

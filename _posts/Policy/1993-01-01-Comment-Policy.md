@@ -12,6 +12,8 @@ source-url:
 call-to-action:
 
 date: 1993-01-01 08:41:00+00:00
+web_published_at: "2017-12-19T13:21:13-08:00"
+web_modified_at: "2025-07-26T11:17:39-07:00"
 update:
 author:
     name: Ted Tschopp
@@ -108,4 +110,4 @@ If you didn’t write it, or haven’t properly cited the article you’re quoti
 
 **English Only**
 
-I speak english and the tools I use speak english.  I am not trying to be mean or imperialistic, I am being realisitc.  I can't help you if you don't use english. 
+I speak english and the tools I use speak english.  I am not trying to be mean or imperialistic, I am being realisitc.  I can't help you if you don't use english.

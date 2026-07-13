@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/The_Road_Ahead_(Gates_book)'
 call-to-action: ''
 
 date: 1995-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2026-04-12T16:27:49-07:00"
 update:
 author:
     name: Bill Gates

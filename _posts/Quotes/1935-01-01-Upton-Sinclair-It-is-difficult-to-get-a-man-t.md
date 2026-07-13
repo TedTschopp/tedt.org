@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1935-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Upton Sinclair
@@ -58,7 +60,5 @@ year-the-event-took-place: 1935
 mathjax: 
 
 order: 
-redirect_from:
-  - /Upton-Sinclair-It-is-difficult-to-get-a-man-t/
 ---
 It is difficult to get a man to understand something, when his salary depends upon his not understanding it!

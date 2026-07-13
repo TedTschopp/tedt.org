@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1974-06-10
+web_published_at: "2023-04-23T11:49:17-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Ray Bradbury
@@ -59,8 +61,6 @@ year-the-event-took-place: 1974
 mathjax: 
 
 order: 
-redirect_from:
-  - /Ray-Bradbury-Good-luck-and-stop-judging-at/
 ---
 June 10, 1974
 

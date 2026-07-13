@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/Invictus'
 call-to-action: ''
 
 date: 1875-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: William Ernest Henley
@@ -59,8 +61,6 @@ year-the-event-took-place: 1875
 mathjax: 
 
 order: 
-redirect_from:
-  - /William-Ernest-Henley-Out-of-the-night-that-covers-m/
 ---
 Out of the night that covers me,\
   Black as the pit from pole to pole,\

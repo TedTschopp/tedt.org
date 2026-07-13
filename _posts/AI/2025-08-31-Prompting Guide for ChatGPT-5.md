@@ -74,8 +74,6 @@ image_width: 1456
 image_height: 816
 mastodon-post-id: ""
 
-redirect_from:
-  - /Prompting-Guide-for-ChatGPT-5/
 
 ---
 > Why this works: GPT-5 is a *router* model that can think, browse, code, write, and orchestrate tools. Results improve dramatically when you **set the dials** (reasoning + verbosity), **name the tools**, and **force a quality loop**. OpenAI’s own guides and product notes back this approach. ([OpenAI Cookbook][1], [OpenAI Platform][2], [OpenAI][3])

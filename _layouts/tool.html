@@ -77,7 +77,9 @@ layout: long-article
     {% if hero_image != "" %}
     <figure class="mb-4">
         <div class="ratio ratio-3x1 rounded overflow-hidden">
-            <img src="{{ hero_image | relative_url }}" class="w-100 h-100 object-fit-cover" alt="{{ page.title }} hero image">
+            {% assign _tool_hero_url = hero_image | relative_url %}
+            {% capture _tool_hero_alt %}{{ page.title }} hero image{% endcapture %}
+            {% include utility/responsive-image.html src=_tool_hero_url alt=_tool_hero_alt class="w-100 h-100 object-fit-cover" sizes="(min-width: 1200px) 1110px, 100vw" lcp=true %}
         </div>
     </figure>
     {% endif %}
@@ -86,7 +88,8 @@ layout: long-article
         <div class="row g-4">
             <div class="col-12 col-lg-7">
                 <div class="tool-content">
-                    {{ content }}
+                    {% assign __tool_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                    {{ __tool_content | lazy_images_except_first }}
                 </div>
             </div>
 
@@ -145,7 +148,9 @@ layout: long-article
             {% for shot in page.screenshots %}
             <div class="col">
                 <a href="{{ shot | relative_url }}">
-                    <img src="{{ shot | relative_url }}" class="img-fluid rounded border" alt="{{ page.title }} screenshot {{ forloop.index }}">
+                    {% assign _tool_shot_url = shot | relative_url %}
+                    {% capture _tool_shot_alt %}{{ page.title }} screenshot {{ forloop.index }}{% endcapture %}
+                    {% include utility/responsive-image.html src=_tool_shot_url alt=_tool_shot_alt class="img-fluid rounded border" sizes="(min-width: 992px) 40vw, 100vw" %}
                 </a>
             </div>
             {% endfor %}

@@ -8,8 +8,6 @@ layout: none
 
     {% include utility/calculate-variables.html %}
     
-    <title>{{ page.title | escape }} – {{ site.title }}</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -38,16 +36,19 @@ layout: none
 
 <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
     {% include layout/top-nav-bar.html %}
+
+    <h1 class="visually-hidden">{{ page.title }}</h1>
     
     <div class="reveal-container">
         <div class="reveal">
             <div class="slides">
+            {% assign __slide_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
             {% if page.markdown %}
             <section data-markdown data-separator="^\n---\n" data-separator-vertical="^\n--\n" data-charset="utf-8">
-                <textarea data-template aria-label="Slide markdown template source" title="Slide markdown template source">{{ content | strip }}</textarea>
+                <textarea data-template aria-label="Slide markdown template source" title="Slide markdown template source">{{ __slide_content | lazy_images_except_first | strip }}</textarea>
             </section>
             {% else %}
-            {{ content }}
+            {{ __slide_content | lazy_images_except_first }}
             {% endif %}
             </div>
         </div>
@@ -155,6 +156,15 @@ layout: none
                     center: true,
                     hashOneBasedIndex: false,
                     ready: () => {
+                        // The deck has one document-level H1 above; slide titles begin at H2.
+                        document.querySelectorAll('.reveal .slides h1').forEach(heading => {
+                            const replacement = document.createElement('h2');
+                            for (const attribute of heading.attributes) {
+                                replacement.setAttribute(attribute.name, attribute.value);
+                            }
+                            while (heading.firstChild) replacement.appendChild(heading.firstChild);
+                            heading.replaceWith(replacement);
+                        });
                         processMermaid();
                         if (Reveal.getIndices().h !== 0 || Reveal.getIndices().v !== 0) {
                             Reveal.slide(0,0);

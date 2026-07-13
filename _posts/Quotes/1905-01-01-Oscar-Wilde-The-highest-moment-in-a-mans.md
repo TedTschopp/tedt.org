@@ -10,6 +10,8 @@ source: "De Profundis"
 source-url: "https://en.wikipedia.org/wiki/De_Profundis_(letter)"
 call-to-action: ""
 date: 1905-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-31T17:31:55-07:00"
 update: ""
 author:
     name: "Oscar Wilde"
@@ -49,7 +51,5 @@ monster-or-magical-or-religious-ideas: "confession, guilt, repentance"
 year-the-event-took-place: 1905
 mathjax: false
 order: ""
-redirect_from:
-    - /Oscar-Wilde-The-highest-moment-in-a-mans/
 ---
 The highest moment in a man's career may be the hour when he kneels in the dust and beats upon his breast and tells all the sins of his life.

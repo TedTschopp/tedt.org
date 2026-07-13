@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1967-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Eric Hoffer
@@ -59,7 +61,5 @@ year-the-event-took-place: 1967
 mathjax: 
 
 order: 
-redirect_from:
-  - /Eric-Hoffer-Every-great-cause-begins-as-a/
 ---
 Every great cause begins as a movement, becomes a business, and eventually degenerates into a racket.

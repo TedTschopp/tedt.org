@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/The_Home_and_the_World'
 call-to-action: ''
 
 date: 1916-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Rabindranath Tagore
@@ -59,7 +61,5 @@ year-the-event-took-place: 1916
 mathjax: 
 
 order: 
-redirect_from:
-  - /Rabindranath-Tagore-I-am-willing-to-serve-my-count/
 ---
 I am willing to serve my country, but my worship I reserve for that which is far greater than my country. To worship my country as a god is to bring a curse upon it.

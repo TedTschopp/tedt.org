@@ -39,8 +39,10 @@ layout: null
                             "mime_type": "{{ post.enclosure_type }}",
                             "size_in_bytes": "{{ post.enclosure_length }}"
                         }],{% endif %}
-            "date_published": "{{ post.date | date_to_xmlschema }}",
-            "date_modified": "{{ post.date | date_to_xmlschema }}",
+            {%- assign post_published_at = post.web_published_at | default: post.date -%}
+            {%- assign post_modified_at = post.web_modified_at | default: post.last_modified_at | default: post.update | default: post.updated | default: post_published_at -%}
+            "date_published": "{{ post_published_at | date_to_xmlschema }}",
+            "date_modified": "{{ post_modified_at | date_to_xmlschema }}",
             {%- comment -%} Multi-author resolution: supports both legacy 'author' and new 'authors' array {%- endcomment -%}
             {%- assign _feed_authors = "" | split: "" -%}
             {%- if post.authors and post.authors.size > 0 -%}

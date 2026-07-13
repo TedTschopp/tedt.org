@@ -8,6 +8,8 @@ source: "Wired Magazine"
 source-url: "https://www.wired.com/2001/10/lotr/"
 call-to-action: "Discuss on Mastodon"
 date: 2001-10-01
+web_published_at: "2025-08-31T15:42:00-07:00"
+web_modified_at: "2025-09-04T17:07:49-07:00"
 update: 2001-10-01
 author:
   avatar: https://upload.wikimedia.org/wikipedia/commons/c/c1/Erik_Davis_on_Rebel_Wisdom.jpg

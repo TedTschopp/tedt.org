@@ -690,7 +690,9 @@ no_toc: true
           <article class="tt-row{% if tool_image == '' %} tt-row-no-preview{% endif %}" data-title="{{ tool.title | downcase | escape }}" data-updated="{{ tool.last_modified | default: tool.date | date: '%s' }}" data-published="{{ tool.date | date: '%s' }}" data-tags="{% if tool.tags %}{% for tag in tool.tags %}{{ tag | slugify }}{% unless forloop.last %}|{% endunless %}{% endfor %}{% endif %}">
             {% if tool_image != '' %}
             <a class="tt-preview" href="{{ card_target }}" aria-label="Open {{ tool.title | escape }} preview"{% if live_url != '' and live_is_external %} target="_blank" rel="noopener"{% endif %}>
-              <img src="{{ tool_image_url }}" alt="{{ tool.title | escape }} preview" loading="lazy" decoding="async" onerror="this.closest('.tt-row').classList.add('tt-row-no-preview'); this.closest('.tt-preview').hidden = true;">
+              {% capture _tool_preview_alt %}{{ tool.title }} preview{% endcapture %}
+              {% capture _tool_preview_attributes %}onerror="this.closest('.tt-row').classList.add('tt-row-no-preview'); this.closest('.tt-preview').hidden = true;"{% endcapture %}
+              {% include utility/responsive-image.html src=tool_image_url alt=_tool_preview_alt sizes="(min-width: 992px) 320px, 100vw" extra_attributes=_tool_preview_attributes %}
             </a>
             {% endif %}
 

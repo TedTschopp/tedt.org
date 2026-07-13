@@ -8,7 +8,6 @@ redirect_from:
 <html lang="en" data-bs-theme="light">
 <head>
     <meta charset="utf-8">
-    <title>Prompt Library – Curated AI Prompts Collection</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     {% include utility/calculate-variables.html %}
@@ -385,15 +384,15 @@ redirect_from:
         <section class="showcase position-relative">
             <div class="g-0 w-100 container-fluid">
                 <div class="w-100 position-relative">
-                    <img src="{{ '/img/categories/prompt_library.webp' | relative_url }}" class="img-fluid w-100 h-100"
-                        alt="Library of Lost Prompts" loading="lazy">
+                    {% assign _prompt_library_hero = '/img/categories/prompt_library.webp' | relative_url %}
+                    {% include utility/responsive-image.html src=_prompt_library_hero class="img-fluid w-100 h-100" alt="Library of Lost Prompts" sizes="100vw" lcp=true %}
                 </div>
             </div>
         </section>
     </header>
 
     <main class="container my-4" id="main-content" role="main">
-        <h2 class="visually-hidden">AI Prompt Library Search and Browse</h2>
+        <h1 class="visually-hidden">{{ page.title | default: 'AI Prompt Library' }}</h1>
         <!-- Search Bar and Sort Dropdown -->
         <section aria-label="Filter and Sort Controls" class="mb-3">
             <div class="d-flex flex-column flex-md-row gap-2 w-100">
@@ -542,7 +541,8 @@ redirect_from:
                         <a href="{{ post.url | relative_url }}" class="text-decoration-none" aria-label="View prompt details for {{ post.title }}">
                             <div class="position-relative">
                                 <div class="ratio ratio-3x1 rounded-top overflow-hidden prompt-card-image">
-                                    <img class="card-img-top w-100 h-100 d-block img-fluid" src="{{ image_URL | relative_url }}" alt="{{ image_alt | escape }}" loading="lazy" decoding="async">
+                                    {% assign _prompt_image_url = image_URL | relative_url %}
+                                    {% include utility/responsive-image.html src=_prompt_image_url alt=image_alt class="card-img-top w-100 h-100 d-block img-fluid" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw" %}
                                 </div>
                             </div>
                         </a>

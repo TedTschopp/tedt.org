@@ -12,6 +12,8 @@ source-url: 'https://www.ccel.org/ccel/luther/tabletalk.v.xliv.html'
 call-to-action: ''
 
 date: 1566-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Martin Luther
@@ -59,7 +61,5 @@ year-the-event-took-place: 1566
 mathjax: 
 
 order: 
-redirect_from:
-  - /Martin-Luther-Our-Lord-God-deals-with-countr/
 ---
 Our Lord God deals with countries and cities, as I do with an old hedge-stick, when it displeases me; I pluck it up and burn it, and stick another in its stead.

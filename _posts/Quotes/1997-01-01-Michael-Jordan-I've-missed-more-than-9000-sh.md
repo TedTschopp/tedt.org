@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1997-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Michael Jordan
@@ -60,7 +62,5 @@ year-the-event-took-place: 1997
 mathjax: 
 
 order: 
-redirect_from:
-  - /Michael-Jordan-I've-missed-more-than-9000-sh/
 ---
 I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times, I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.
