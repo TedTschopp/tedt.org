@@ -1,0 +1,40 @@
+{%- assign __topic_cluster_key = page.topic_cluster | to_s | strip -%}
+{%- assign __topic_cluster = site.data.topic_clusters[__topic_cluster_key] -%}
+
+{%- if __topic_cluster -%}
+  <div class="topic-cluster-hub">
+    <p class="lead">{{ __topic_cluster.intro }}</p>
+
+    {%- for __topic_section in __topic_cluster.sections -%}
+      <section class="topic-cluster-section mt-5" aria-labelledby="topic-section-{{ __topic_cluster_key }}-{{ forloop.index }}">
+        <h2 id="topic-section-{{ __topic_cluster_key }}-{{ forloop.index }}">{{ __topic_section.title }}</h2>
+        <p>{{ __topic_section.description }}</p>
+
+        <div class="list-group">
+          {%- for __topic_item in __topic_section.posts -%}
+            {%- assign __topic_post = site.posts | where: 'relative_path', __topic_item.path | first -%}
+            {%- if __topic_post -%}
+              <article class="list-group-item list-group-item-action py-3">
+                <h3 class="h4 mb-1"><a href="{{ __topic_post.url | relative_url }}">{{ __topic_post.title }}</a></h3>
+                {%- assign __topic_summary = __topic_post.summary | default: __topic_post['seo-description'] | default: __topic_post.description | default: __topic_post.excerpt -%}
+                {%- if __topic_summary -%}
+                  <p class="mb-1">{{ __topic_summary | strip_html | strip_newlines | truncatewords: 35 }}</p>
+                {%- endif -%}
+                {%- assign __topic_published = __topic_post.web_published_at | default: __topic_post.date -%}
+                {%- if __topic_published -%}
+                  <p class="small text-body-secondary mb-0">Published <time datetime="{{ __topic_published | date_to_xmlschema }}">{{ __topic_published | date: '%B %-d, %Y' }}</time></p>
+                {%- endif -%}
+              </article>
+            {%- else -%}
+              <!-- Topic cluster source not found: {{ __topic_item.path }} -->
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </section>
+    {%- endfor -%}
+
+    <p class="mt-5 mb-0"><a href="{{ '/topics/' | relative_url }}">Explore all enterprise AI and architecture topics</a></p>
+  </div>
+{%- else -%}
+  <p class="alert alert-warning">This topic cluster is not configured.</p>
+{%- endif -%}

@@ -135,6 +135,7 @@
                                     <div class="article e-content position-relative" id="main_content">
                                         {% assign __article_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
                                         {{ __article_content | lazy_images_except_first }}
+                                        {% include content/topic-cluster-related.html page=page %}
                                     </div>
                                 </div>
                             {%- comment -%}

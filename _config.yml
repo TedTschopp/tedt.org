@@ -82,6 +82,29 @@ profile:
   locality: &profile_locality Los Angeles
   region: &profile_region California
   country: &profile_country USA
+  # Stable public identity links used by the Person JSON-LD node. Keep this
+  # deliberately narrower than the full footer link list: sameAs should point
+  # only to profiles that identify the same person.
+  same_as: &profile_same_as
+    - https://www.linkedin.com/in/tedtschopp
+    - https://github.com/TedTschopp
+    - https://twit.social/@TedT
+    - https://bsky.app/profile/tedt.org
+    - https://twitter.com/TedTschopp
+    - https://www.youtube.com/channel/UC4Q8pXroTVyXrIxg2u82pwg
+  knows_about: &profile_knows_about
+    - Enterprise architecture
+    - Enterprise artificial intelligence
+    - AI governance
+    - Software and platform strategy
+    - Digital automation
+    - Technology-enabled organizational change
+    - Digital communities and storytelling
+    - Swiss folklore
+    - Tabletop role-playing game design
+  works_for: &profile_works_for
+    name: Southern California Edison
+    url: https://www.sce.com/
   # Update site-level social handles here first. Legacy top-level keys below
   # are compatibility aliases and should not become the primary edit path.
   #
@@ -238,6 +261,9 @@ authors:
     mastodon_username: *profile_mastodon_username
     mastodon_user_id: *profile_mastodon_user_id
     threads_username: *profile_threads_username
+    same_as: *profile_same_as
+    knows_about: *profile_knows_about
+    works_for: *profile_works_for
 
   copilot:
     name: GitHub Copilot

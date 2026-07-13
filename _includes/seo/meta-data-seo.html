@@ -26,7 +26,14 @@
   appends the site brand once. The home page keeps its intentionally unique
   title rather than receiving a redundant suffix.
 {% endcomment %}
-{% assign seo_title_base = this_page_title | strip_html | strip_newlines | strip %}
+{% comment %}
+  An explicit SEO title changes only browser/search/social metadata. Layouts
+  continue to render page.title as the visible H1. Support both the preferred
+  snake_case key and the legacy hyphenated spelling.
+{% endcomment %}
+{% assign seo_title_override = this_page.seo_title | default: this_page['seo-title'] | to_s | strip %}
+{% assign seo_title_source = seo_title_override | default: this_page_title %}
+{% assign seo_title_base = seo_title_source | strip_html | strip_newlines | strip %}
 {% if page_layout == 'category' %}
   {% unless seo_title_base contains 'Articles' %}
     {% assign seo_title_base = seo_title_base | append: ' Articles' %}
@@ -323,6 +330,20 @@ disconnected schema blocks that were previously emitted by article layouts.
   {% assign is_blog_post = true %}
 {% endif %}
 
+{%- comment -%}
+Role-aware article schema:
+- A quote page is authored/curated as a webpage by the site owner; the quoted
+  person is the creator of the Quotation that is the page's main entity.
+- A reprint retains its source author(s); the site owner is its editor/curator.
+This mirrors the visible role labels emitted by quote.html and
+utility/content-credits.html instead of flattening every person into author.
+{%- endcomment -%}
+{% assign is_quote_page = false %}
+{% if page_layout == 'quote' %}{% assign is_quote_page = true %}{% endif %}
+{% assign schema_category_names = page.categories | join: '|' | downcase %}
+{% assign is_reprint_page = false %}
+{% if schema_category_names contains 'reprint' %}{% assign is_reprint_page = true %}{% endif %}
+
 {% capture person_profile_url %}{% include utility/safe-absolute-url.html url='/profile/' %}{% endcapture %}
 {% assign person_profile_url = person_profile_url | strip %}
 {% assign person_id = home-page-url | append: '#person' %}
@@ -394,7 +415,14 @@ disconnected schema blocks that were previously emitted by article layouts.
       "image": {{ site_profile.avatar | jsonify }}{% endif %}{% if site_profile.givenname %},
       "givenName": {{ site_profile.givenname | jsonify }}{% endif %}{% if site_profile.familyname %},
       "familyName": {{ site_profile.familyname | jsonify }}{% endif %}{% if site_profile.jobtitle %},
-      "jobTitle": {{ site_profile.jobtitle | jsonify }}{% endif %}
+      "jobTitle": {{ site_profile.jobtitle | jsonify }}{% endif %}{% if site_profile.same_as and site_profile.same_as != empty %},
+      "sameAs": {{ site_profile.same_as | jsonify }}{% endif %}{% if site_profile.knows_about and site_profile.knows_about != empty %},
+      "knowsAbout": {{ site_profile.knows_about | jsonify }}{% endif %}{% if site_profile.works_for and site_profile.works_for.name %},
+      "worksFor": {
+        "@type": "Organization",
+        "name": {{ site_profile.works_for.name | jsonify }}{% if site_profile.works_for.url %},
+        "url": {{ site_profile.works_for.url | jsonify }}{% endif %}
+      }{% endif %}
     },
     {
       "@type": "WebSite",
@@ -454,6 +482,9 @@ disconnected schema blocks that were previously emitted by article layouts.
       {% if published_date_source %}"datePublished": {{ published_date_source | date_to_xmlschema | jsonify }},{% endif %}
       {% if modified_date_source %}"dateModified": {{ modified_date_source | date_to_xmlschema | jsonify }},{% endif %}
       "author": [
+        {% if is_quote_page %}
+          { "@id": {{ person_id | jsonify }} }
+        {% else %}
         {% for schema_author in schema_authors %}
           {% if schema_author.name %}
             {% assign schema_author_name = schema_author.name %}
@@ -475,7 +506,65 @@ disconnected schema blocks that were previously emitted by article layouts.
           }
           {% endif %}{% unless forloop.last %},{% endunless %}
         {% endfor %}
+        {% endif %}
       ],
+      {% if is_quote_page or is_reprint_page %}
+      "editor": { "@id": {{ person_id | jsonify }} },
+      {% endif %}
+      {% if is_quote_page %}
+      {% if page.source or page['source-url'] %}
+      "citation": {
+        "@type": "CreativeWork"{% if page.source %},
+        "name": {{ page.source | jsonify }}{% endif %}{% if page['source-url'] %},
+        "url": {{ page['source-url'] | jsonify }}{% endif %}
+      },
+      {% endif %}
+      "mainEntity": {
+        "@type": "Quotation",
+        "text": {{ page.quote | default: page.content | strip_html | strip_newlines | strip | jsonify }},
+        "creator": [
+          {% for schema_author in schema_authors %}
+            {% if schema_author.name %}
+              {% assign schema_quote_creator_name = schema_author.name %}
+              {% assign schema_quote_creator_url = schema_author.url | default: schema_author.uri %}
+              {% assign schema_quote_creator_image = schema_author.avatar | default: schema_author.image %}
+            {% else %}
+              {% assign schema_quote_creator_name = schema_author %}
+              {% assign schema_quote_creator_url = '' %}
+              {% assign schema_quote_creator_image = '' %}
+            {% endif %}
+            {
+              "@type": "Person",
+              "name": {{ schema_quote_creator_name | jsonify }}{% if schema_quote_creator_url %},
+              "url": {{ schema_quote_creator_url | absolute_url | jsonify }}{% endif %}{% if schema_quote_creator_image %},
+              "image": {{ schema_quote_creator_image | absolute_url | jsonify }}{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      },
+      {% elsif is_reprint_page %}
+      "isBasedOn": {
+        "@type": "CreativeWork"{% if page['source-url'] %},
+        "url": {{ page['source-url'] | jsonify }}{% endif %}{% if page.source %},
+        "publisher": { "@type": "Organization", "name": {{ page.source | jsonify }} }{% endif %},
+        "author": [
+          {% for schema_author in schema_authors %}
+            {% if schema_author.name %}
+              {% assign schema_source_author_name = schema_author.name %}
+              {% assign schema_source_author_url = schema_author.url | default: schema_author.uri %}
+            {% else %}
+              {% assign schema_source_author_name = schema_author %}
+              {% assign schema_source_author_url = '' %}
+            {% endif %}
+            {
+              "@type": "Person",
+              "name": {{ schema_source_author_name | jsonify }}{% if schema_source_author_url %},
+              "url": {{ schema_source_author_url | absolute_url | jsonify }}{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      },
+      {% endif %}
       "publisher": { "@id": {{ person_id | jsonify }} },
       "isPartOf": { "@id": {{ website_id | jsonify }} },
       {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }},{% endif %}

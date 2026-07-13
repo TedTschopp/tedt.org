@@ -1,0 +1,41 @@
+---
+layout: page
+title: Enterprise AI and Architecture Topic Guides
+description: Curated reading paths through Ted Tschopp's writing on enterprise AI strategy, governance, architecture, agentic systems, software delivery, utilities, cybersecurity, and resilience.
+permalink: /topics/
+web_published_at: "2026-07-12T12:00:00-07:00"
+web_modified_at: "2026-07-12T12:00:00-07:00"
+image: /img/categories/artificial-intelligence.webp
+image-alt: Artificial intelligence topic guides from Ted Tschopp
+image_width: 1904
+image_height: 640
+---
+
+<p>These guides organize related essays into durable reading paths. Each pillar starts with a practical question, then connects strategy, architecture, governance, delivery, and operations through existing articles.</p>
+
+<div class="row row-cols-1 row-cols-lg-2 g-4 mt-2">
+  {%- assign topic_clusters_sorted = site.data.topic_clusters | sort -%}
+  {%- assign topic_ordered_keys = '' | split: '' -%}
+  {%- for topic_pair in site.data.topic_clusters -%}
+    {%- assign topic_order_key = topic_pair[1].order | prepend: '000' | slice: -3, 3 | append: '|' | append: topic_pair[0] -%}
+    {%- assign topic_ordered_keys = topic_ordered_keys | push: topic_order_key -%}
+  {%- endfor -%}
+  {%- assign topic_ordered_keys = topic_ordered_keys | sort -%}
+  {%- for topic_ordered_key in topic_ordered_keys -%}
+    {%- assign topic_key = topic_ordered_key | split: '|' | last -%}
+    {%- assign topic_cluster = site.data.topic_clusters[topic_key] -%}
+    {%- assign topic_post_count = 0 -%}
+    {%- for topic_section in topic_cluster.sections -%}
+      {%- assign topic_post_count = topic_post_count | plus: topic_section.posts.size -%}
+    {%- endfor -%}
+    <div class="col">
+      <article class="card h-100">
+        <div class="card-body">
+          <h2 class="h3 card-title"><a href="{{ topic_cluster.permalink | relative_url }}">{{ topic_cluster.title }}</a></h2>
+          <p class="card-text">{{ topic_cluster.description }}</p>
+          <p class="small text-body-secondary mb-0">{{ topic_post_count }} curated articles</p>
+        </div>
+      </article>
+    </div>
+  {%- endfor -%}
+</div>

@@ -1,0 +1,169 @@
+# Curated enterprise AI and enterprise architecture topic clusters.
+#
+# Membership uses each post's Jekyll `relative_path` instead of a hard-coded URL.
+# That lets layouts resolve the current canonical URL when permalinks evolve.
+# Keep each post in the section that best explains why it belongs in the cluster.
+
+enterprise-ai-strategy:
+  order: 10
+  title: Enterprise AI Strategy and Operating Models
+  short_title: Enterprise AI Strategy
+  permalink: /topics/enterprise-ai-strategy/
+  description: A practical guide to AI adoption, operating models, leadership, workforce change, and the systems required to turn experiments into durable enterprise value.
+  intro: Enterprise AI becomes useful when leadership, governance, platforms, delivery teams, and day-to-day work reinforce one another. These essays move from executive intent to operating mechanisms and measurable adoption.
+  sections:
+    - title: Start with the operating model
+      description: Frame AI as an enterprise capability rather than a collection of disconnected tools.
+      posts:
+        - path: _posts/AI/2026-07-05-Beyond-the-Light-Bulb.md
+        - path: _posts/AI/2026-04-12-What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed.md
+        - path: _posts/AI/2026-01-04-Make-AI-Boring.md
+    - title: Align people, work, and leadership
+      description: Connect adoption to organizational design, judgment, learning, and changes in how work flows.
+      posts:
+        - path: _posts/AI/2026-05-24-AI-Is-a-People-Change.md
+        - path: _posts/AI/2026-04-18-When-Output-Becomes-Abundant.md
+        - path: _posts/Blog Posts/2025-05-18-Beyond-the-Boundries-Leading-in-a-Post-AI-Era.md
+    - title: Translate strategy into value
+      description: Use repeatable frameworks and economic reasoning to choose where AI belongs and how it should scale.
+      posts:
+        - path: _posts/AI/2025-11-13-Winning-the-Intelligence-Inversion.md
+        - path: _posts/Blog Posts/2025-05-25-Details-on-the-WINs-Network.md
+        - path: _posts/Blog Posts/2025-01-05-What-AI-in-2024-Means-for-Us-in-2025.md
+
+ai-governance-risk-evaluation:
+  order: 20
+  title: AI Governance, Risk, and Evaluation
+  short_title: AI Governance and Risk
+  permalink: /topics/ai-governance-risk-evaluation/
+  description: Essays on trustworthy AI decisions, evaluation, security, provenance, controls, and the governance practices that make enterprise AI accountable.
+  intro: Governance works best when it is built into decisions and delivery rather than added as a final checkpoint. This collection covers evidence, evaluation, guardrails, security, and the operating responsibilities behind trustworthy AI.
+  sections:
+    - title: Govern decisions and evidence
+      description: Make provenance, reproducibility, evaluation, and human judgment visible in consequential AI work.
+      posts:
+        - path: _posts/AI/2026-04-26-The-Map-Is-Not-the-Decision.md
+        - path: _posts/AI/2025-10-19-From-Guesswork-to-Geometry-How-We-Measured-the-Mind.md
+        - path: _posts/AI/2025-12-31-How-to-Communicate-in-a-World-of-AI.md
+    - title: Engineer guardrails into systems
+      description: Treat controls, auditability, and human oversight as parts of the architecture.
+      posts:
+        - path: _posts/AI/2026-03-21-Why-AI-Needs-a-Harness.md
+        - path: _posts/AI/2026-05-29-Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness.md
+        - path: _posts/AI/2026-02-01-An-Introduction-to-OpenClaw.md
+    - title: Manage changing models and capabilities
+      description: Evaluate model choices, autonomy, and risk as the market and technical frontier move.
+      posts:
+        - path: _posts/AI/2026-07-11-The-Next-AI-Model-Wave-Has-Already-Been-Funded.md
+        - path: _posts/AI/2025-09-28-The-Lighthouse-and-the-New-Lens.md
+        - path: _posts/AI/2026-05-09-To-Be-or-Not-to-Be-Anthropics-Natural-Language-Autoencoders.md
+
+enterprise-architecture-for-ai:
+  order: 30
+  title: Enterprise Architecture for AI
+  short_title: AI Enterprise Architecture
+  permalink: /topics/enterprise-architecture-for-ai/
+  description: Architecture guidance for AI platforms, value streams, integration, agent harnesses, paved roads, and the durable enterprise systems around models.
+  intro: Models are only one layer of an enterprise AI capability. These articles examine the surrounding value stream, platform, integration, governance, and operating architecture that make AI dependable at scale.
+  sections:
+    - title: See the whole AI system
+      description: Map the value stream and the architectural layers between a model and a trusted business outcome.
+      posts:
+        - path: _posts/AI/2026-06-14-AI -Value-Stream.md
+        - path: _posts/AI/2026-03-21-Why-AI-Needs-a-Harness.md
+        - path: _posts/AI/2026-04-12-What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed.md
+    - title: Design integration and interaction
+      description: Choose the right boundaries for agents, tools, workflows, APIs, and human decisions.
+      posts:
+        - path: _posts/AI/2026-05-03-MCPs-2026-Roadmap.md
+        - path: _posts/AI/2026-04-05-Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing.md
+        - path: _posts/AI/2026-01-18-Agents-Dont-Click.md
+    - title: Build durable enterprise foundations
+      description: Connect platform engineering and systems thinking to reliability, strategy, and long-lived organizational capability.
+      posts:
+        - path: _posts/Blog Posts/2025-08-28-From-Industrial-Age-Utility-to AI-Centric-Utility.md
+        - path: _posts/AI/2025-09-07-The-Skill-That-Outgrows-the-Tool.md
+        - path: _posts/Blog Posts/2025-06-29-Rooted-In-Resilience.md
+
+agentic-systems:
+  order: 40
+  title: Agentic Systems and AI Agents
+  short_title: Agentic Systems
+  permalink: /topics/agentic-systems/
+  description: A systems-oriented guide to AI agents, tool use, workflows, interfaces, autonomy, orchestration, and the guardrails required for production agentic systems.
+  intro: "Agents change software boundaries: they act through tools, cross systems, and make decisions over time. These essays explain the progression from models to agents and the architecture needed to make agentic behavior useful and governable."
+  sections:
+    - title: Understand the agentic shift
+      description: Distinguish models, chatbots, workflows, and agents before selecting an implementation pattern.
+      posts:
+        - path: _posts/AI/2026-04-05-Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing.md
+        - path: _posts/AI/2026-03-14-Stop-Asking-AI-to-Behave-Like-Legacy-Software.md
+        - path: _posts/AI/2026-05-16-Dont-Build-Her-Another-Chatbot.md
+    - title: Design tools and interaction boundaries
+      description: Give agents explicit tools, context, permissions, and interfaces that support reliable work.
+      posts:
+        - path: _posts/AI/2026-01-18-Agents-Dont-Click.md
+        - path: _posts/AI/2026-01-12-The-Pancake-Protocol.md
+        - path: _posts/AI/2026-05-03-MCPs-2026-Roadmap.md
+    - title: Operate agents responsibly
+      description: Combine harnesses, review, experimentation, and engineering discipline as autonomy increases.
+      posts:
+        - path: _posts/AI/2026-03-21-Why-AI-Needs-a-Harness.md
+        - path: _posts/AI/2026-03-13-The-Lab-That-Keeps-Working-After-You-Go-to-Bed.md
+        - path: _posts/AI/2025-09-22-Gold-Medals-and-Paved-Roads.md
+        - path: _posts/Blog Posts/2025-01-19-Superagents-The-Next-Big-Leap-in-Technology.md
+
+ai-native-software-delivery:
+  order: 50
+  title: AI-Native Software Delivery
+  short_title: AI-Native Delivery
+  permalink: /topics/ai-native-software-delivery/
+  description: Practical writing on AI-assisted engineering, agentic coding, developer experience, citizen development, delivery governance, and sustainable software operations.
+  intro: AI can accelerate software output without automatically improving software delivery. This collection focuses on engineering practice, feedback, paved roads, ownership, and the operational disciplines that turn fast creation into maintainable systems.
+  sections:
+    - title: Improve the engineering loop
+      description: Use measurement, feedback, and developer experience to make AI-assisted work more deliberate.
+      posts:
+        - path: _posts/AI/2026-06-15-AI-Engineer-Coach.md
+        - path: _posts/AI/2026-06-26-Customizing-Copilots-Thinking-Messages-in-VS-Code.md
+        - path: _posts/AI/2025-09-22-Gold-Medals-and-Paved-Roads.md
+    - title: Organize AI-assisted delivery
+      description: Reconsider team design, communication, and the relationship between professional and citizen development.
+      posts:
+        - path: _posts/Blog Posts/2025-02-13-AI-in-Software-Development-Breaking-Myths-and-Building-Teams.md
+        - path: _posts/AI/2025-12-31-How-to-Communicate-in-a-World-of-AI.md
+        - path: _posts/AI/2026-05-09-More-IT-in-IT.md
+    - title: Carry speed into operations
+      description: Keep ownership, architecture, security, and supportability attached to rapidly produced software.
+      posts:
+        - path: _posts/AI/2026-06-02-Build-It-Ship-It.md
+        - path: _posts/AI/2026-05-21-Ticket-in-the-Queue.md
+        - path: _posts/AI/2026-06-26-The-Backlog-Doesnt-Blink.md
+        - path: _posts/AI/2026-06-25-Prompt-Me-a-Palace.md
+
+ai-utilities-cyber-resilience:
+  order: 60
+  title: AI for Utilities, Cybersecurity, and Resilience
+  short_title: AI for Utilities and Resilience
+  permalink: /topics/ai-utilities-cyber-resilience/
+  description: A focused collection on AI in electric utilities, grid operations, cybersecurity, on-premises models, enterprise resilience, and critical-infrastructure governance.
+  intro: Critical infrastructure makes the tradeoffs around AI concrete. These articles connect grid and field use cases with architecture, cyber risk, operational resilience, model deployment, and accountable enterprise adoption.
+  sections:
+    - title: Understand the utility transition
+      description: Connect AI strategy to grid operations, field work, infrastructure, and enterprise transformation.
+      posts:
+        - path: _posts/Blog Posts/2025-08-28-From-Industrial-Age-Utility-to AI-Centric-Utility.md
+        - path: _posts/Blog Posts/2025-01-13-Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry.md
+        - path: _posts/AI/2025-09-14-Guardrails-and-Gigawatts.md
+    - title: Engineer resilience and control
+      description: Treat cybersecurity, vendor risk, data governance, and operating responsibility as one resilience problem.
+      posts:
+        - path: _posts/AI/2026-05-29-Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness.md
+        - path: _posts/Blog Posts/2025-06-29-Rooted-In-Resilience.md
+        - path: _posts/AI/2026-06-14-AI -Value-Stream.md
+    - title: Choose models for constrained environments
+      description: Evaluate deployment, knowledge, safety, and adoption choices in utility-specific settings.
+      posts:
+        - path: _posts/Blog Posts/2025-08-10-OpenAIs-GPT-OSS-Explained.md
+        - path: _posts/Blog Posts/2025-08-10-The-Mentor-In-The-Machine.md
+        - path: _posts/Blog Posts/2025-01-05-What-AI-in-2024-Means-for-Us-in-2025.md

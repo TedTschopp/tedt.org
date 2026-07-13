@@ -81,6 +81,13 @@ rescue URI::InvalidURIError
   nil
 end
 
+def absolute_https_url?(value)
+  uri = URI.parse(value.to_s)
+  uri.is_a?(URI::HTTPS) && !uri.host.to_s.empty? && !value.to_s.match?(/[[:space:]]/)
+rescue URI::InvalidURIError
+  false
+end
+
 def suggested_asset_path(page_url)
   path = normalized_path(page_url)
   slug = path.sub(%r{\A/}, "").sub(%r{/\z}, "")
@@ -131,6 +138,8 @@ urls.each do |url|
 
   if image_url.empty?
     reason = image_node ? "blank og:image" : "missing og:image"
+  elsif !absolute_https_url?(image_url)
+    reason = "invalid og:image URL"
   elsif generic_paths.include?(image_path.downcase)
     reason = "generic site logo fallback"
   else
