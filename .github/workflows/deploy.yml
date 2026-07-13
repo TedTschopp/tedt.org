@@ -200,6 +200,7 @@ jobs:
           set -euo pipefail
           bundle exec ruby tests/check_responsive_images.rb _site
           bundle exec ruby tests/check_content_credits.rb _site
+          bundle exec ruby tests/check_quote_portraits.rb _site
 
       - name: Run a11y tests (Allure)
         id: a11y

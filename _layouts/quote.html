@@ -44,7 +44,16 @@
         <div class="col-12 col-lg-9 col-xxl-9" id="content-column">
           <main class="h-entry" role="main">
             <article class="card h-100 no-padding">
+              {% include utility/resolve-image-variables.html item=page allow_fallback=false %}
+              {% if image_has_explicit_source %}
+                {% include utility/responsive-image.html src=image_URL alt=image_alt class="card-img-top w-100 d-block" sizes="(min-width: 1400px) 960px, (min-width: 992px) 75vw, 100vw" lcp=true %}
+              {% endif %}
               <div class="card-body pt-3 p-4 h-100">
+                {% if image_has_explicit_source %}
+                  <div class="small text-body-secondary image-credits mb-3">
+                    {% include utility/render-image-credit.html %}
+                  </div>
+                {% endif %}
                 {%- comment -%} Title & meta {%- endcomment -%}
                 <header class="mb-3">
                   {% assign __primary_category = page.categories | first %}
