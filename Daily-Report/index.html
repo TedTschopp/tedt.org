@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-07-12 | TedT.org</title>
+  <title>Daily Report - 2026-07-13 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,125 +52,116 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-07-12</h1>
-      <p class="meta">Generated <time datetime="2026-07-12T07:14:37+00:00">2026-07-12T07:14:37Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-07-13</h1>
+      <p class="meta">Generated <time datetime="2026-07-13T07:51:11+00:00">2026-07-13T07:51:11Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site is healthy and active. Yesterday (July 11) saw a new AI-focused article published, Open Graph/Twitter card image improvements, and automated Mastodon sync. Automated workflows (daily report, enterprise AI refresh) are running on schedule. One open Dependabot security PR for <code>concurrent-ruby</code> needs merging. One open issue tracks a known gap in category landing page depth/discovery. No build failures detected.</p>
+      <p><strong>Site is healthy and active.</strong> Four commits landed on <code>main</code> today from Ted including SEO cleanup, feed fixes, a new quote-portrait script, and a category registry font-stack update. Two Dependabot PRs are open and awaiting merge (both passed CI). No build failures. Several open P2 content-discovery issues remain unaddressed from the May 2026 audit.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line Up Front</h2>
-<p>Site is in good shape. Content publishing, social syndication, and automation workflows are all functioning. The main actionable item is merging the open Dependabot security patch for <code>concurrent-ruby</code>. Category landing page depth (open issue) remains a longer-term content quality opportunity.</p>
+<p>Site is healthy. Four developer commits hit <code>main</code> today (2026-07-13) before 02:00 UTC. Automated workflows are running normally. Two Dependabot dependency PRs are open and have passed the Site Quality + Deploy CI check — they are safe to merge. No open incidents or broken builds.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Commits — July 11, 2026</h3>
+<h3>Commits on 2026-07-13 (today, UTC)</h3>
 <ul>
-<li><strong>feat(post): add new article on AI model trends and forecasts</strong> — Ted Tschopp, 21:17 UTC</li>
+<li><strong><code>8e33b16</code></strong> — <code>feat(scripts)</code>: Add script to apply quote portrait front matter metadata; <code>feat(tests)</code>: Implement checks for quote portrait metadata integrity. <a href="https://github.com/TedTschopp/tedt.org/commit/8e33b16ccce9ddd767589e17e977a0634119a210">View commit</a></li>
+<li><strong><code>240a82c</code></strong> — <code>style(category_registry)</code>: Update font stack for enterprise architecture category. <a href="https://github.com/TedTschopp/tedt.org/commit/240a82c727a75380886e3a403abb4fef38839e3c">View commit</a></li>
+<li><strong><code>31eea4a</code></strong> — <code>content(feed)</code>: Update author URL to point to profile page. <a href="https://github.com/TedTschopp/tedt.org/commit/31eea4ae95d1505788a757223f3153cddf64f8e0">View commit</a></li>
+<li><strong><code>831d439</code></strong> — Clean up SEO problems. <a href="https://github.com/TedTschopp/tedt.org/commit/831d4392c54958e68599af5119df6bdcb639ba68">View commit</a></li>
 </ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/5b3f0d563d48734afbfac9a6fe62dbfa0231ef42">Commit 5b3f0d5</a> New content in the AI category covering model trends and forecasts.</p>
+<h3>Commits on 2026-07-12 (yesterday)</h3>
 <ul>
-<li><strong>feat(meta): update Open Graph and Twitter card images for better sharing</strong> — Ted Tschopp, 21:33 UTC</li>
+<li><strong><code>327a715</code></strong> — <code>chore (bot)</code>: Refresh "yesterday in enterprise ai" automated content update. <a href="https://github.com/TedTschopp/tedt.org/commit/327a7153fd4f8cdf3e6ee0f7bbdd0d1fc5157d11">View commit</a></li>
 </ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/59bf2906e3dac51eb3b5493cb92ae30caede30c6">Commit 59bf290</a> Improves social sharing previews across the site.</p>
+<h3>Commits on 2026-07-11</h3>
 <ul>
-<li><strong>feat(media): add new Substation.usd file for media assets</strong> — Ted Tschopp, 20:53 UTC</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/e56b35ee7502f9f88df780f7676eca09beb37628">Commit e56b35e</a> New USD media asset added; likely supports 3D/AR content pipeline.</p>
-<ul>
-<li><strong>chore: update Mastodon cache/front matter</strong> — github-actions[bot], 21:34 UTC</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/7231e280fc2dbbc57af7a3d54a5c91d63d94a00f">Commit 7231e28</a> Automated Mastodon sync completed successfully after the new post was published.</p>
-<ul>
-<li><strong>chore: refresh yesterday in enterprise ai</strong> — github-actions[bot], 14:12 UTC</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/4efee35b34617d171f345c6b13d26bf59775c2ed">Commit 4efee35</a> Scheduled enterprise AI content refresh ran as expected.</p>
-<h3>Commits — July 7–10, 2026</h3>
-<ul>
-<li><strong>feat(social): add Suno profile to resume and config</strong> — July 9</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/cfd33cb39cad82aa6aba87cc40954e6c3e6a1ec6">Commit cfd33cb</a> Suno music profile linked from resume and site config.</p>
-<ul>
-<li><strong>feat(categories): add Enterprise Architecture and Leadership categories</strong> — July 7 (two commits)</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/2232c8b81fd3a6cb9cfb3ce04171ada91f8b8ca0">Commit 2232c8b</a> · <a href="https://github.com/TedTschopp/tedt.org/commit/9350fd055093489dc3845fb483a96db0d0ff83ee">Commit 9350fd0</a> Two new categories with registry entries and category images; multiple posts tagged.</p>
-<ul>
-<li><strong>feat(repo-guard): enhance file pattern blocking and update docs</strong> — July 6</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/f624b877f5d367dae7dc6a8d7698a9e619cf20a4">Commit f624b87</a> Tighter file-pattern security controls in the repo guard configuration.</p>
-<ul>
-<li><strong>style(footer): simplify housemark image display</strong> — July 6</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/commit/7cb596a62e1649c679de0e92a1ceaf2861ad94b4">Commit 7cb596a</a> Minor footer visual cleanup.</p>
-<hr>
-<h2>Workflow Health</h2>
-<ul>
-<li><strong>Daily Report</strong> (run #74): Currently in progress as of report generation. Previous daily report runs have completed successfully on schedule.</li>
-</ul>
-<p><a href="https://github.com/TedTschopp/tedt.org/actions/runs/29183638093">Workflow Run 29183638093</a></p>
-<ul>
-<li><strong>Enterprise AI Refresh</strong>: Automated refresh commits are appearing daily as expected (July 7, 8, 9, 10, 11). Pipeline is healthy.</li>
-</ul>
-<ul>
-<li><strong>Mastodon Sync</strong>: Bot commits confirm successful post-publish sync after the July 11 article was pushed.</li>
-</ul>
-<ul>
-<li><strong>Automated commit cadence</strong> looks regular with no gaps, suggesting CI/CD and scheduled workflows are all operational. [ASSUMPTION: No build failure data was directly inspected for this report; status inferred from successful automated commits landing on main.]</li>
+<li><strong><code>7231e28</code></strong> — <code>chore (bot)</code>: Update Mastodon cache/front matter.</li>
+<li><strong><code>59bf290</code></strong> — <code>feat(meta)</code>: Update Open Graph and Twitter card images for better sharing. <a href="https://github.com/TedTschopp/tedt.org/commit/59bf2906e3dac51eb3b5493cb92ae30caede30c6">View commit</a></li>
+<li><strong><code>5b3f0d5</code></strong> — <code>feat(post)</code>: Add new article on AI model trends and forecasts. <a href="https://github.com/TedTschopp/tedt.org/commit/5b3f0d563d48734afbfac9a6fe62dbfa0231ef42">View commit</a></li>
+<li><strong><code>e56b35e</code></strong> — <code>feat(media)</code>: Add new <code>Substation.usd</code> file for media assets.</li>
 </ul>
 <hr>
 <h2>Open Pull Requests</h2>
+<h3>PR #205 — <code>chore(deps): bump sass-embedded from 1.97.1 to 1.101.0</code></h3>
 <ul>
-<li><strong>Dependabot: Bump <code>concurrent-ruby</code> from 1.3.5 to 1.3.7 (security patch)</strong></li>
+<li><strong>Author:</strong> dependabot[bot]</li>
+<li><strong>Status:</strong> Open, not merged</li>
+<li><strong>CI result:</strong> Site Quality + Deploy passed ✅</li>
+<li><strong>Labels:</strong> dependencies, ruby</li>
+<li><strong>Created:</strong> 2026-07-13</li>
+<li><strong>Action needed:</strong> Safe to merge. Minor version bump (1.97.1 → 1.101.0). <a href="https://github.com/TedTschopp/tedt.org/pull/205">View PR #205</a></li>
 </ul>
-<p>This is a <code>security-patches</code> group update. Merging is recommended promptly — it is a low-risk gem update with no expected breaking changes.</p>
+<h3>PR #204 — <code>chore(deps): bump google-protobuf from 4.33.2 to 4.35.1</code></h3>
 <ul>
-<li>Additional PRs may be open. Full PR list was not fully parsed due to data size; the Dependabot patch is confirmed open based on data preview.</li>
-</ul>
-<hr>
-<h2>Open Issues</h2>
-<ul>
-<li><strong>Category landing pages are minimal stubs</strong> — no related category navigation, tag clouds, content depth indicators, or breadcrumbs. 41 category pages exist but provide limited discovery value beyond a flat post list.</li>
-</ul>
-<p>This is a known, documented gap. Not a blocker; a medium-term content quality and UX improvement opportunity.</p>
-<hr>
-<h2>Content &amp; Publishing Pipeline Observations</h2>
-<ul>
-<li>The new AI model trends article published cleanly with automated Mastodon syndication confirming end-to-end pipeline health.</li>
-<li>Open Graph/Twitter card image updates should improve social sharing across posts — a meaningful SEO/engagement improvement.</li>
-<li>Two new categories (Enterprise Architecture, Leadership) were added with full registry entries and images. Verify these appear correctly in the homepage carousel and that <code>recent_by_category</code> cache reflects them after the next clean build.</li>
-<li>The new USD media asset (<code>Substation.usd</code>) is in the repo. Confirm that no Jekyll build issues arise from <code>.usd</code> file types if they are placed within the site source tree rather than excluded.</li>
+<li><strong>Author:</strong> dependabot[bot]</li>
+<li><strong>Status:</strong> Open, not merged</li>
+<li><strong>Labels:</strong> dependencies, ruby</li>
+<li><strong>Created:</strong> 2026-07-13</li>
+<li><strong>Action needed:</strong> Review and merge. <code>google-protobuf</code> is conditionally pinned in the Gemfile (ADR 0009 pattern); verify pin logic still valid after this bump. <a href="https://github.com/TedTschopp/tedt.org/pull/204">View PR #204</a></li>
 </ul>
 <hr>
-<h2>Risks and Recommended Actions</h2>
-<p><strong>Priority 1 — Merge Dependabot security PR</strong></p>
+<h2>Workflow Health</h2>
+<h3>Active right now</h3>
 <ul>
-<li><code>concurrent-ruby</code> 1.3.5 → 1.3.7 security patch. Merge it.</li>
+<li><strong>Daily Report</strong> (run #75) — <code>in_progress</code> as of report generation. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29233106952">View run</a></li>
 </ul>
-<p><strong>Priority 2 — Verify new categories in carousel</strong></p>
+<h3>Recent completed runs</h3>
 <ul>
-<li>Enterprise Architecture and Leadership categories were added July 7. Confirm both appear in homepage carousel with correct palette, images, and recent post data. Run a local <code>make qa</code> if not already done post-merge.</li>
+<li><strong>Site Quality + Deploy</strong> on PR #205 — <code>success</code> (completed 2026-07-13T06:13). Build and HTML Proofer passed against the sass-embedded bump branch.</li>
+<li>Automated daily "enterprise ai refresh" and "daily report" chore runs executing on schedule as expected.</li>
 </ul>
-<p><strong>Priority 3 — Check USD asset handling</strong></p>
+<hr>
+<h2>Content &amp; Publishing Pipeline</h2>
 <ul>
-<li>Confirm <code>Substation.usd</code> in media assets is either excluded from Jekyll build or safely handled. USD files are large and binary; they should not be accidentally inlined into site builds.</li>
+<li><strong>New post published:</strong> AI model trends and forecasts article added 2026-07-11.</li>
+<li><strong>Social sync:</strong> Mastodon front matter cache updated 2026-07-11 by automated workflow.</li>
+<li><strong>Feed fix:</strong> Author URL corrected to point to profile page (31eea4a) — this propagates to RSS/JSON feed subscribers.</li>
+<li><strong>SEO cleanup:</strong> Unspecified SEO fixes committed (831d439). No detail in commit message; review may be warranted to confirm scope.</li>
+<li><strong>Quote portrait tooling:</strong> New script added to apply portrait front matter metadata to quotes posts, with accompanying integrity test. Indicates active work on the Quotes collection quality.</li>
+<li><strong>Enterprise architecture category:</strong> Font stack updated in <code>category_registry.yml</code>.</li>
+<li><strong>USD media asset:</strong> <code>Substation.usd</code> added under <code>media/</code>. No template changes seen — likely a staged asset for a future post.</li>
 </ul>
-<p><strong>Ongoing — Category landing pages</strong></p>
+<hr>
+<h2>Open Issues Snapshot (notable, from P2 audit-2026-05)</h2>
+<p>These are not blocking current operations but represent planned backlog:</p>
 <ul>
-<li>The open issue on category page depth is a good candidate for a focused sprint. The registry-driven architecture already supports richer landing pages.</li>
+<li><strong>#186</strong> — [P2] Enhance category landing pages: related categories, tag clouds, depth indicators. 41 category pages are minimal stubs.</li>
+<li><strong>#185</strong> — [P2] Build cross-collection content bridges and related-posts infrastructure. Zero posts use <code>related:</code> field; 73% have no internal links.</li>
+<li><strong>#184</strong> — [P2] Drive prompt series adoption: only 3 of 56 prompts have <code>series:</code> metadata despite ADR 0002 architecture being live.</li>
 </ul>
+<hr>
+<h2>Risks and Observations</h2>
+<ul>
+<li><strong><code>google-protobuf</code> bump (PR #204):</strong> The Gemfile conditionally enforces patched versions of <code>google-protobuf</code> on Ruby &gt;=3.1 (per ADR 0009 pattern). The bump to 4.35.1 should be reviewed to confirm the conditional logic in the Gemfile is still valid and no version constraint conflicts arise before merging.</li>
+<li><strong>SEO commit message vague:</strong> Commit <code>831d439</code> is titled "Clean up SEO problems" with no detail. If this touched <code>_includes/head.html</code> or meta templates, a brief post-hoc review is prudent to confirm nothing broke structured data or canonical tags.</li>
+<li><strong><code>Substation.usd</code> asset:</strong> Large USD files can meaningfully increase repo size and build artifact size. Confirm this is intentional and appropriately sized.</li>
+</ul>
+<hr>
+<h2>Recommended Next Actions</h2>
+<ol>
+<li><strong>Merge PR #205</strong> (<code>sass-embedded</code> bump) — CI is green, no risk.</li>
+<li><strong>Review and merge PR #204</strong> (<code>google-protobuf</code> bump) — validate Gemfile conditional pin still holds.</li>
+<li><strong>Review SEO commit <code>831d439</code></strong> — confirm scope and that no meta regressions were introduced.</li>
+<li><strong>Verify <code>Substation.usd</code></strong> — confirm intentional addition and acceptable file size for repo/build.</li>
+<li><strong>Backlog:</strong> Consider scheduling one P2 issue from the audit-2026-05 milestone (start with #186 — category page depth indicators, highest-value for discovery).</li>
+</ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: Retrieved via GitHub MCP <code>list_commits</code>, 20 most recent commits on <code>main</code> as of 2026-07-12T07:11 UTC</li>
-<li>Issues: Retrieved via GitHub MCP <code>list_issues</code> (open state). Full issue list not fully parsed due to large payload; top issue confirmed from preview data.</li>
-<li>Pull Requests: Retrieved via GitHub MCP <code>list_pull_requests</code> (open). Full list not fully parsed due to large payload (132 KB); Dependabot <code>concurrent-ruby</code> PR confirmed from preview.</li>
-<li>Workflow Runs: Retrieved via GitHub Actions MCP <code>list_workflow_runs</code>. Full parse blocked by payload size; top run (Daily Report #74, in_progress) confirmed from preview.</li>
-<li>[ASSUMPTION] Build health inferred from successful automated bot commits landing on <code>main</code> — no direct inspection of build logs or HTML Proofer output was performed in this run.</li>
-<li>[ASSUMPTION] PR merge status not confirmed — only open state verified from list.</li>
-<li>Bash execution was blocked by environment security policy; all data extracted from MCP tool responses only.</li>
-<li>Workflow run ID for this report: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29183638093">29183638093</a></li>
+<li>Commits sourced from GitHub API (<code>list_commits</code>, default branch <code>main</code>, 20 most recent).</li>
+<li>Pull requests sourced from GitHub API (<code>list_pull_requests</code>, state: open).</li>
+<li>Workflow runs sourced from GitHub API (<code>list_workflow_runs</code>, 15 most recent).</li>
+<li>Open issues sourced from GitHub API (<code>list_issues</code>, state: OPEN, 10 most recent).</li>
+<li>CI result for PR #205 confirmed via workflow run #29228065645 (conclusion: success).</li>
+<li>Daily Report workflow run #29233106952 was <code>in_progress</code> at time of report generation; outcome not yet available.</li>
+<li>PR #204 (<code>google-protobuf</code>) CI run status was not individually confirmed in this run — [ASSUMPTION] assumed opened at same time as PR #205 based on similar timestamps; verify independently.</li>
+<li>Issue count and P2 label details from first page of open issues only; additional open issues may exist beyond the top 10 returned.</li>
+<li>No build logs inspected for today's <code>main</code> branch commits; build status inferred from absence of visible failure runs.</li>
+<li>External link check results not available; HTML Proofer internal-only results visible only via CI job logs not fetched in this report.</li>
 </ul>
     </section>
     <footer>
