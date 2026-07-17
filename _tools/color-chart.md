@@ -1,11 +1,11 @@
 ---
 title: "Color Chart"
-summary: "Fullscreen palette explorer with pan/zoom, contrast readouts, and URL-driven palettes."
+summary: "Fullscreen palette explorer with pan/zoom, contrast readouts, URL-driven palettes, and source image extraction."
 subtitle: "Pannable/zoomable color palette explorer"
 status: active
 tool_type: webapp
 date: 2026-01-12
-last_modified: 2026-01-12
+last_modified: 2026-07-17
 featured: true
 tags: [color, ui, javascript, accessibility, tools, css]
 tech:
@@ -25,6 +25,7 @@ screenshots:
 features:
   - "Pan/zoom navigation (mouse/trackpad/keyboard + on-screen controls)"
   - "URL-driven palettes via ?c="
+  - "Palette extraction from readable URLs, uploaded images, and pasted screenshots"
   - "Swatch metadata (RGB/HSL/CMYK) + contrast cues"
 license: "MIT"
 ---
@@ -33,7 +34,8 @@ license: "MIT"
 
 Color Chart is a fullscreen palette explorer: it turns one or more base colors
 into a grid of related shades, then lets you *move around the chart* (pan and
-zoom) to evaluate the palette as a system.
+zoom) to evaluate the palette as a system. It can also extract a starting
+palette from browser-readable URLs, uploaded images, or pasted screenshots.
 
 ## How to use it
 
@@ -42,6 +44,8 @@ zoom) to evaluate the palette as a system.
 - **Zoom:** mouse wheel / trackpad scroll, or `+` / `-` (or the on-screen
   `+` / `−` buttons)
 - **Reset:** `0` (or the reset button)
+- **Extract from source:** enter a readable URL, upload an image, or paste a
+  screenshot into the tool.
 
 ## URL palettes (`?c=`)
 
@@ -53,5 +57,7 @@ You can generate a chart from a specific palette without editing the tool:
 ## Notes
 
 - Full usage docs live here: [A Color Chart You Can Move Around](/Color-Chart-Pan-Zoom/)
+- Arbitrary websites may block direct browser analysis. In that case, paste or
+  upload a screenshot; no backend proxy is used.
 - The tool is intentionally self-contained (single HTML file) so it can be
   copied/modified easily.

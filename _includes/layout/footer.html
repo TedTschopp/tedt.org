@@ -76,8 +76,8 @@
                   {% capture rendered_biography %}{{ biography_paragraph | strip | markdownify | remove: '<p>' | remove: '</p>' | strip }}{% endcapture %}
                   <li>{{ rendered_biography }}</li>
                 {%- endfor -%}
-                <li class="display-1 d-flex justify-content-center footer-housemark" role="presentation" aria-hidden="true">
-                  <img src="{{ '/img/familymark/Family-White-Brush-Calligraphy-3.png' | relative_url }}" alt="" class="footer-housemark-image" loading="lazy" decoding="async">
+                <li class="display-1 d-flex justify-content-center footer-housemark">
+                  <img src="{{ '/img/familymark/Family-White-Brush-Calligraphy-3.png' | relative_url }}" alt="Tschopp family mark" class="footer-housemark-image" loading="lazy" decoding="async">
                 </li>
               </ul>
             </section>

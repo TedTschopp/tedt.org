@@ -67,6 +67,8 @@
             padding: 10px;
             box-sizing: border-box;
             width: min(460px, calc(100vw - 28px));
+            max-height: calc(100vh - 28px);
+            overflow: auto;
             border-radius: 14px;
             background: rgba(var(--bs-dark-rgb), 0.72);
             border: 1px solid rgba(var(--bs-secondary-rgb), 0.35);
@@ -77,7 +79,8 @@
 
         #controls button,
         #fontSelect,
-        #loadLocalFonts {
+        #loadLocalFonts,
+        #sourceUrlInput {
             height: 44px;
             appearance: none;
             border: 1px solid rgba(var(--bs-secondary-rgb), 0.55);
@@ -92,6 +95,11 @@
             min-width: 0;
         }
 
+        #sourceUrlInput {
+            font-weight: 600;
+            cursor: text;
+        }
+
         #controls button {
             font-size: 18px;
             font-weight: 600;
@@ -102,7 +110,8 @@
 
         #controls button:hover,
         #fontSelect:hover,
-        #loadLocalFonts:hover {
+        #loadLocalFonts:hover,
+        #sourceUrlInput:hover {
             background: rgba(var(--bs-body-bg-rgb), 1);
             border-color: rgba(var(--bs-primary-rgb), 0.6);
         }
@@ -116,7 +125,9 @@
         #fontSelect:focus-visible,
         #loadLocalFonts:focus-visible,
         #addColorBtn:focus-visible,
-        #saveUrlBtn:focus-visible {
+        #saveUrlBtn:focus-visible,
+        #sourceUrlInput:focus-visible,
+        #sourceDropZone:focus-visible {
             outline: 2px solid rgba(var(--bs-primary-rgb), 0.7);
             outline-offset: 1px;
         }
@@ -150,7 +161,8 @@
             gap: 8px;
         }
 
-        #colorsPanelTitle {
+        #colorsPanelTitle,
+        #sourcePanelTitle {
             font-size: 12px;
             font-weight: 750;
             color: var(--bs-body-color);
@@ -234,9 +246,73 @@
         }
 
         #controls #addColorBtn,
-        #controls #saveUrlBtn {
+        #controls #saveUrlBtn,
+        #controls #analyzeSourceUrlBtn,
+        #controls #uploadSourceImageBtn {
             font-size: 13px;
             font-weight: 650;
+        }
+
+        #sourcePanel {
+            grid-column: 1 / -1;
+            display: grid;
+            gap: 8px;
+            padding-top: 2px;
+        }
+
+        #sourceButtons {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 8px;
+        }
+
+        #sourceDropZone {
+            min-height: 48px;
+            display: grid;
+            place-items: center;
+            padding: 8px 10px;
+            border-radius: 12px;
+            border: 1px dashed rgba(var(--bs-primary-rgb), 0.55);
+            background: rgba(var(--bs-body-bg-rgb), 0.55);
+            color: var(--bs-body-color);
+            font-size: 12px;
+            font-weight: 650;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        #sourceDropZone.is-over {
+            background: rgba(var(--bs-primary-rgb), 0.16);
+            border-color: rgba(var(--bs-primary-rgb), 0.9);
+        }
+
+        #sourceStatus {
+            padding: 8px 10px;
+            border-radius: 12px;
+            background: rgba(var(--bs-info-rgb), 0.14);
+            border: 1px solid rgba(var(--bs-info-rgb), 0.38);
+            color: var(--bs-info-text-emphasis);
+            font-size: 12px;
+            line-height: 1.25;
+            white-space: pre-line;
+        }
+
+        #sourceStatus[data-state="success"] {
+            background: rgba(var(--bs-success-rgb), 0.14);
+            border-color: rgba(var(--bs-success-rgb), 0.4);
+            color: var(--bs-success-text-emphasis);
+        }
+
+        #sourceStatus[data-state="warning"] {
+            background: rgba(var(--bs-warning-rgb), 0.14);
+            border-color: rgba(var(--bs-warning-rgb), 0.45);
+            color: var(--bs-warning-text-emphasis);
+        }
+
+        #sourceStatus[data-state="error"] {
+            background: rgba(var(--bs-danger-rgb), 0.14);
+            border-color: rgba(var(--bs-danger-rgb), 0.45);
+            color: var(--bs-danger-text-emphasis);
         }
 
         #status {
@@ -315,6 +391,18 @@
             <button id="saveUrlBtn" type="button">Save URL</button>
         </div>
 
+        <div id="sourcePanel" aria-label="Source palette extractor">
+            <div id="sourcePanelTitle">Extract from source</div>
+            <input id="sourceUrlInput" type="url" aria-label="Analyze website or image URL" placeholder="https://example.com or image URL" autocomplete="url">
+            <div id="sourceButtons">
+                <button id="analyzeSourceUrlBtn" type="button">Analyze URL</button>
+                <button id="uploadSourceImageBtn" type="button">Upload image</button>
+            </div>
+            <input id="sourceImageInput" type="file" accept="image/*" aria-label="Upload screenshot or image" hidden>
+            <div id="sourceDropZone" role="button" tabindex="0" aria-label="Drop or paste screenshot/image for palette extraction">Drop or paste screenshot/image</div>
+            <div id="sourceStatus" aria-live="polite">URL analysis works when the target allows browser access. Upload or paste a screenshot for any site.</div>
+        </div>
+
         <div id="actionMessage" aria-live="polite"></div>
         <div id="status" aria-live="polite"></div>
     </div>
@@ -332,8 +420,18 @@
         const saveUrlBtnEl = document.getElementById('saveUrlBtn');
         const actionMessageEl = document.getElementById('actionMessage');
 
+        const sourceUrlInputEl = document.getElementById('sourceUrlInput');
+        const analyzeSourceUrlBtnEl = document.getElementById('analyzeSourceUrlBtn');
+        const uploadSourceImageBtnEl = document.getElementById('uploadSourceImageBtn');
+        const sourceImageInputEl = document.getElementById('sourceImageInput');
+        const sourceDropZoneEl = document.getElementById('sourceDropZone');
+        const sourceStatusEl = document.getElementById('sourceStatus');
+
         const DEFAULT_SWATCH_FONT = 'sans-serif';
         const SWATCH_FONT_STORAGE_KEY = 'tedt_color_chart_swatch_font';
+        const SOURCE_FETCH_TIMEOUT_MS = 8000;
+        const MAX_EXTRACTED_COLORS = 12;
+        const MAX_REMOTE_IMAGE_CANDIDATES = 5;
 
         const fontCatalog = [
             // Browser-generic defaults (defined by the user agent)
@@ -1010,6 +1108,46 @@
 
         let activeColors = initialColors.map(c => ({ hex: normalizeHex6(c.hex) }));
 
+        function normalizePaletteColors(colors) {
+            const seen = new Set();
+            const normalized = [];
+            for (const color of colors || []) {
+                const raw = typeof color === 'string' ? color : color?.hex;
+                const hex = normalizeHex6(raw);
+                if (hex === '#000000' && !/^#?0{6}$/i.test(String(raw || ''))) continue;
+                if (seen.has(hex)) continue;
+                seen.add(hex);
+                normalized.push({ hex });
+                if (normalized.length >= MAX_EXTRACTED_COLORS) break;
+            }
+            return normalized;
+        }
+
+        function setSourceStatus(text, state = 'info') {
+            if (!sourceStatusEl) return;
+            sourceStatusEl.textContent = String(text || '');
+            sourceStatusEl.dataset.state = state;
+        }
+
+        function setSourceBusy(isBusy) {
+            [sourceUrlInputEl, analyzeSourceUrlBtnEl, uploadSourceImageBtnEl, sourceImageInputEl].forEach((el) => {
+                if (el) el.disabled = !!isBusy;
+            });
+            if (sourceDropZoneEl) sourceDropZoneEl.setAttribute('aria-busy', isBusy ? 'true' : 'false');
+        }
+
+        function setActiveColorsFromPalette(colors, sourceLabel) {
+            const normalized = normalizePaletteColors(colors);
+            if (normalized.length === 0) throw new Error('No readable colors were found.');
+            activeColors = normalized;
+            preservePresetC = false;
+            updateUrlFromActiveColors();
+            renderColorsOverlay();
+            scheduleRenderChart();
+            const label = sourceLabel ? ` from ${sourceLabel}` : '';
+            setSourceStatus(`Extracted ${normalized.length} colors${label}.`, 'success');
+        }
+
         function setQueryParamCaseInsensitive(params, targetKey, value) {
             const lower = String(targetKey).toLowerCase();
             for (const key of Array.from(params.keys())) {
@@ -1214,6 +1352,428 @@
             const response = await fetch(`https://api.color.pizza/v1/${hexColor.substring(1)}`);
             const data = await response.json();
             return data.colors[0].name;
+        }
+
+        function rgbToHex(red, green, blue) {
+            return tinycolor({ r: red, g: green, b: blue }).toHexString().toUpperCase();
+        }
+
+        function makeColorCandidate(hex, weight, source, firstSeen) {
+            const normalized = normalizeHex6(hex);
+            const tiny = tinycolor(normalized);
+            if (!tiny.isValid()) return null;
+            return {
+                hex: normalized,
+                weight: Number(weight) || 1,
+                source: source || 'unknown',
+                firstSeen: Number.isFinite(firstSeen) ? firstSeen : 0,
+            };
+        }
+
+        function addColorCandidate(candidates, value, weight = 1, source = 'unknown') {
+            const tiny = tinycolor(String(value || '').trim());
+            if (!tiny.isValid() || tiny.getAlpha() < 0.4) return;
+            const candidate = makeColorCandidate(tiny.toHexString(), weight, source, candidates.length);
+            if (candidate) candidates.push(candidate);
+        }
+
+        function extractColorCandidatesFromCssText(cssText, weight = 1, source = 'css') {
+            const text = String(cssText || '');
+            const candidates = [];
+            const patterns = [
+                /#[0-9a-f]{3,8}\b/gi,
+                /rgba?\([^)]*\)/gi,
+                /hsla?\([^)]*\)/gi,
+            ];
+
+            for (const pattern of patterns) {
+                const matches = text.match(pattern) || [];
+                for (const match of matches) addColorCandidate(candidates, match, weight, source);
+            }
+
+            return candidates;
+        }
+
+        function colorDistance(hexA, hexB) {
+            const a = tinycolor(hexA).toRgb();
+            const b = tinycolor(hexB).toRgb();
+            return Math.sqrt(
+                Math.pow(a.r - b.r, 2) +
+                Math.pow(a.g - b.g, 2) +
+                Math.pow(a.b - b.b, 2)
+            );
+        }
+
+        function mergeAndRankPaletteCandidates(candidates, limit = MAX_EXTRACTED_COLORS) {
+            const groups = [];
+            for (const candidate of candidates || []) {
+                if (!candidate || !tinycolor(candidate.hex).isValid()) continue;
+                const hsl = tinycolor(candidate.hex).toHsl();
+                const saturationBoost = 1 + (hsl.s * 0.55);
+                const contrastBoost = (hsl.l > 0.08 && hsl.l < 0.94) ? 1.08 : 0.82;
+                const neutralMateriality = (hsl.s < 0.08 && candidate.weight < 12) ? 0.72 : 1;
+                const score = candidate.weight * saturationBoost * contrastBoost * neutralMateriality;
+                const existing = groups.find(group => colorDistance(group.hex, candidate.hex) < 22);
+                if (existing) {
+                    existing.score += score;
+                    existing.weight += candidate.weight;
+                    existing.firstSeen = Math.min(existing.firstSeen, candidate.firstSeen);
+                    if (score > existing.bestScore) {
+                        existing.hex = candidate.hex;
+                        existing.bestScore = score;
+                    }
+                } else {
+                    groups.push({
+                        hex: candidate.hex,
+                        score,
+                        bestScore: score,
+                        weight: candidate.weight,
+                        firstSeen: candidate.firstSeen,
+                    });
+                }
+            }
+
+            groups.sort((a, b) => {
+                const scoreDiff = b.score - a.score;
+                if (Math.abs(scoreDiff) > 0.001) return scoreDiff;
+                return a.firstSeen - b.firstSeen;
+            });
+
+            return groups.slice(0, limit).map(group => group.hex);
+        }
+
+        async function loadImageElementFromBlob(blob) {
+            const objectUrl = URL.createObjectURL(blob);
+            try {
+                const image = new Image();
+                await new Promise((resolve, reject) => {
+                    image.onload = () => resolve(undefined);
+                    image.onerror = () => reject(new Error('Could not load image pixels.'));
+                    image.src = objectUrl;
+                });
+                return image;
+            } finally {
+                window.setTimeout(() => URL.revokeObjectURL(objectUrl), 0);
+            }
+        }
+
+        async function extractPaletteFromImageElement(image, sourceWeight = 1) {
+            const naturalWidth = image.naturalWidth || image.width;
+            const naturalHeight = image.naturalHeight || image.height;
+            if (!naturalWidth || !naturalHeight) throw new Error('Image has no readable dimensions.');
+
+            const maxSide = 180;
+            const scale = Math.min(1, maxSide / Math.max(naturalWidth, naturalHeight));
+            const width = Math.max(1, Math.round(naturalWidth * scale));
+            const height = Math.max(1, Math.round(naturalHeight * scale));
+            const canvas = document.createElement('canvas');
+            canvas.width = width;
+            canvas.height = height;
+            const context = canvas.getContext('2d', { willReadFrequently: true });
+            if (!context) throw new Error('Canvas is unavailable.');
+            context.drawImage(image, 0, 0, width, height);
+
+            let data;
+            try {
+                data = context.getImageData(0, 0, width, height).data;
+            } catch {
+                throw new Error('Browser security blocked direct pixel analysis. Upload or paste a screenshot/image instead.');
+            }
+
+            const buckets = new Map();
+            const step = Math.max(1, Math.floor(Math.sqrt((width * height) / 9000)));
+            let firstSeen = 0;
+            for (let y = 0; y < height; y += step) {
+                for (let x = 0; x < width; x += step) {
+                    const offset = (y * width + x) * 4;
+                    const alpha = data[offset + 3];
+                    if (alpha < 128) continue;
+                    const red = data[offset];
+                    const green = data[offset + 1];
+                    const blue = data[offset + 2];
+                    const key = `${red >> 4},${green >> 4},${blue >> 4}`;
+                    const bucket = buckets.get(key) || { r: 0, g: 0, b: 0, count: 0, firstSeen: firstSeen++ };
+                    bucket.r += red;
+                    bucket.g += green;
+                    bucket.b += blue;
+                    bucket.count += 1;
+                    buckets.set(key, bucket);
+                }
+            }
+
+            const candidates = [];
+            for (const bucket of buckets.values()) {
+                if (bucket.count < 2 && buckets.size > 8) continue;
+                const red = Math.round(bucket.r / bucket.count);
+                const green = Math.round(bucket.g / bucket.count);
+                const blue = Math.round(bucket.b / bucket.count);
+                const candidate = makeColorCandidate(rgbToHex(red, green, blue), bucket.count * sourceWeight, 'image', bucket.firstSeen);
+                if (candidate) candidates.push(candidate);
+            }
+
+            return mergeAndRankPaletteCandidates(candidates);
+        }
+
+        async function extractPaletteFromImageBlob(blob) {
+            const image = await loadImageElementFromBlob(blob);
+            return extractPaletteFromImageElement(image, 1.4);
+        }
+
+        function isImageType(type) {
+            return /^image\//i.test(String(type || ''));
+        }
+
+        function looksLikeImageUrl(url) {
+            return /\.(?:png|jpe?g|gif|webp|svg|bmp|ico)(?:[?#]|$)/i.test(String(url || ''));
+        }
+
+        async function fetchWithTimeout(url, options = {}) {
+            const controller = new AbortController();
+            const timeout = window.setTimeout(() => controller.abort(), SOURCE_FETCH_TIMEOUT_MS);
+            try {
+                const response = await fetch(url, { ...options, signal: controller.signal });
+                if (!response.ok) throw new Error(`HTTP ${response.status}`);
+                return response;
+            } finally {
+                window.clearTimeout(timeout);
+            }
+        }
+
+        function resolveSourceUrl(value, baseUrl) {
+            try {
+                const url = new URL(String(value || '').trim(), baseUrl || window.location.href);
+                if (!['http:', 'https:'].includes(url.protocol)) return null;
+                return url.href;
+            } catch {
+                return null;
+            }
+        }
+
+        function collectDocumentColorCandidates(doc) {
+            const candidates = [];
+            const metaSelectors = [
+                'meta[name="theme-color"]',
+                'meta[name="msapplication-TileColor"]',
+                'meta[name="apple-mobile-web-app-status-bar-style"]',
+            ];
+            for (const selector of metaSelectors) {
+                doc.querySelectorAll(selector).forEach((el) => {
+                    addColorCandidate(candidates, el.getAttribute('content'), 24, 'meta');
+                });
+            }
+
+            doc.querySelectorAll('[style]').forEach((el) => {
+                candidates.push(...extractColorCandidatesFromCssText(el.getAttribute('style') || '', 2.5, 'inline-style'));
+            });
+            doc.querySelectorAll('style').forEach((el) => {
+                candidates.push(...extractColorCandidatesFromCssText(el.textContent || '', 1.8, 'style-block'));
+            });
+
+            return candidates;
+        }
+
+        function collectLinkedSourceUrls(doc, pageUrl) {
+            const cssUrls = Array.from(doc.querySelectorAll('link[rel~="stylesheet"][href]'))
+                .map(el => resolveSourceUrl(el.getAttribute('href'), pageUrl))
+                .filter(Boolean)
+                .slice(0, 6);
+
+            const manifestUrls = Array.from(doc.querySelectorAll('link[rel="manifest"][href]'))
+                .map(el => resolveSourceUrl(el.getAttribute('href'), pageUrl))
+                .filter(Boolean)
+                .slice(0, 2);
+
+            const imageSelectors = [
+                'link[rel~="icon"][href]',
+                'link[rel="apple-touch-icon"][href]',
+                'meta[property="og:image"][content]',
+                'meta[name="twitter:image"][content]',
+            ];
+            const imageUrls = [];
+            for (const selector of imageSelectors) {
+                doc.querySelectorAll(selector).forEach((el) => {
+                    const raw = el.getAttribute('href') || el.getAttribute('content');
+                    const resolved = resolveSourceUrl(raw, pageUrl);
+                    if (resolved && !imageUrls.includes(resolved)) imageUrls.push(resolved);
+                });
+            }
+
+            return { cssUrls, manifestUrls, imageUrls: imageUrls.slice(0, MAX_REMOTE_IMAGE_CANDIDATES) };
+        }
+
+        async function analyzeImageUrl(url) {
+            const response = await fetchWithTimeout(url, { credentials: 'omit' });
+            const contentType = response.headers.get('content-type') || '';
+            if (!isImageType(contentType) && !looksLikeImageUrl(url)) throw new Error('URL did not return a readable image.');
+            const blob = await response.blob();
+            if (!isImageType(blob.type) && !looksLikeImageUrl(url)) throw new Error('URL did not return a readable image.');
+            return extractPaletteFromImageBlob(blob);
+        }
+
+        async function analyzeHtmlUrl(url) {
+            const response = await fetchWithTimeout(url, { credentials: 'omit' });
+            const contentType = response.headers.get('content-type') || '';
+            if (isImageType(contentType)) {
+                const blob = await response.blob();
+                return extractPaletteFromImageBlob(blob);
+            }
+            const html = await response.text();
+            const doc = new DOMParser().parseFromString(html.slice(0, 900000), 'text/html');
+            const candidates = collectDocumentColorCandidates(doc);
+            const linked = collectLinkedSourceUrls(doc, url);
+
+            for (const cssUrl of linked.cssUrls) {
+                try {
+                    const cssResponse = await fetchWithTimeout(cssUrl, { credentials: 'omit' });
+                    const cssText = await cssResponse.text();
+                    candidates.push(...extractColorCandidatesFromCssText(cssText.slice(0, 350000), 1.2, 'stylesheet'));
+                } catch {
+                    // Cross-origin stylesheets are often blocked; continue with readable sources.
+                }
+            }
+
+            for (const manifestUrl of linked.manifestUrls) {
+                try {
+                    const manifestResponse = await fetchWithTimeout(manifestUrl, { credentials: 'omit' });
+                    const manifest = await manifestResponse.json();
+                    addColorCandidate(candidates, manifest.theme_color, 22, 'manifest');
+                    addColorCandidate(candidates, manifest.background_color, 14, 'manifest');
+                } catch {
+                    // Ignore blocked or invalid manifests.
+                }
+            }
+
+            for (const imageUrl of linked.imageUrls) {
+                try {
+                    const imageColors = await analyzeImageUrl(imageUrl);
+                    imageColors.forEach((hex, index) => {
+                        const candidate = makeColorCandidate(hex, 16 - index, 'linked-image', candidates.length + index);
+                        if (candidate) candidates.push(candidate);
+                    });
+                } catch {
+                    // Ignore blocked linked images.
+                }
+            }
+
+            return mergeAndRankPaletteCandidates(candidates);
+        }
+
+        async function analyzeSourceUrl(rawUrl) {
+            const url = resolveSourceUrl(rawUrl, window.location.href);
+            if (!url) throw new Error('Enter a valid http(s) website or image URL.');
+            if (looksLikeImageUrl(url)) {
+                try {
+                    return await analyzeImageUrl(url);
+                } catch {
+                    // Some image-looking URLs are routed through HTML; try document parsing before failing.
+                }
+            }
+            return analyzeHtmlUrl(url);
+        }
+
+        async function handleAnalyzeSourceUrl() {
+            const rawUrl = sourceUrlInputEl ? sourceUrlInputEl.value : '';
+            setSourceBusy(true);
+            setSourceStatus('Analyzing URL…', 'info');
+            try {
+                const colors = await analyzeSourceUrl(rawUrl);
+                const sourceName = new URL(rawUrl, window.location.href).hostname || 'URL';
+                setActiveColorsFromPalette(colors, sourceName);
+            } catch (error) {
+                const message = String(error?.message || error || 'Unable to analyze URL.');
+                const blocked = /failed|network|cors|security|load|abort|http/i.test(message);
+                setSourceStatus(blocked
+                    ? 'Browser security blocked direct analysis. Upload or paste a screenshot/image instead.'
+                    : message,
+                    blocked ? 'warning' : 'error');
+            } finally {
+                setSourceBusy(false);
+            }
+        }
+
+        async function setSourceImageFromFile(file) {
+            if (!(file instanceof File) || !isImageType(file.type)) throw new Error('Choose an image file or paste a screenshot.');
+            const colors = await extractPaletteFromImageBlob(file);
+            setActiveColorsFromPalette(colors, file.name || 'image');
+        }
+
+        async function handleSourceImageFile(file) {
+            setSourceBusy(true);
+            setSourceStatus('Reading image…', 'info');
+            try {
+                await setSourceImageFromFile(file);
+            } catch (error) {
+                setSourceStatus(String(error?.message || error || 'Unable to read image.'), 'error');
+            } finally {
+                setSourceBusy(false);
+            }
+        }
+
+        function setupSourceExtractionControls() {
+            if (analyzeSourceUrlBtnEl) {
+                analyzeSourceUrlBtnEl.addEventListener('click', () => {
+                    void handleAnalyzeSourceUrl();
+                });
+            }
+
+            if (sourceUrlInputEl) {
+                sourceUrlInputEl.addEventListener('keydown', (event) => {
+                    if (event.key !== 'Enter') return;
+                    event.preventDefault();
+                    void handleAnalyzeSourceUrl();
+                });
+            }
+
+            if (uploadSourceImageBtnEl && sourceImageInputEl) {
+                uploadSourceImageBtnEl.addEventListener('click', () => sourceImageInputEl.click());
+                sourceImageInputEl.addEventListener('change', () => {
+                    const file = sourceImageInputEl.files && sourceImageInputEl.files[0];
+                    if (file) void handleSourceImageFile(file);
+                    sourceImageInputEl.value = '';
+                });
+            }
+
+            if (sourceDropZoneEl) {
+                sourceDropZoneEl.addEventListener('click', () => sourceImageInputEl?.click());
+                sourceDropZoneEl.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        sourceImageInputEl?.click();
+                    }
+                });
+                sourceDropZoneEl.addEventListener('dragenter', (event) => {
+                    event.preventDefault();
+                    sourceDropZoneEl.classList.add('is-over');
+                });
+                sourceDropZoneEl.addEventListener('dragover', (event) => {
+                    event.preventDefault();
+                    sourceDropZoneEl.classList.add('is-over');
+                });
+                sourceDropZoneEl.addEventListener('dragleave', (event) => {
+                    event.preventDefault();
+                    const related = event.relatedTarget;
+                    if (related && sourceDropZoneEl.contains(related)) return;
+                    sourceDropZoneEl.classList.remove('is-over');
+                });
+                sourceDropZoneEl.addEventListener('drop', (event) => {
+                    event.preventDefault();
+                    sourceDropZoneEl.classList.remove('is-over');
+                    const file = event.dataTransfer && event.dataTransfer.files && event.dataTransfer.files[0];
+                    if (file) void handleSourceImageFile(file);
+                });
+            }
+
+            window.addEventListener('paste', (event) => {
+                if (event.target && event.target.closest && event.target.closest('input, textarea, select')) return;
+                const items = event.clipboardData && Array.from(event.clipboardData.items || []);
+                if (!items || items.length === 0) return;
+                const imageItem = items.find(item => isImageType(item.type));
+                if (!imageItem) return;
+                const file = imageItem.getAsFile();
+                if (!file) return;
+                event.preventDefault();
+                void handleSourceImageFile(file);
+            });
         }
 
         const colorShades = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950'];
@@ -1422,6 +1982,7 @@
         }
 
         applyTransform();
+        setupSourceExtractionControls();
         renderColorsOverlay();
         if (addColorBtnEl) {
             addColorBtnEl.addEventListener('click', () => {

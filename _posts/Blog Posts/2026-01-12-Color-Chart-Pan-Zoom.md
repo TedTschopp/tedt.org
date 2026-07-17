@@ -10,7 +10,7 @@ source-url: ""
 call-to-action: "Open the tool and explore your palette"
 
 date: 2026-01-12 09:00:00 -0800
-update: 2026-01-12 09:00:00 -0800
+update: 2026-07-17 09:00:00 -0800
 
 author:
   avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
@@ -22,6 +22,7 @@ bullets:
   - On-screen controls (arrows, zoom, reset, center).
   - Mouse/trackpad and keyboard shortcuts for fast navigation.
   - URL-driven palettes via `?c=`.
+  - Palette extraction from readable URLs, uploaded images, and pasted screenshots.
 
 description: "Documentation for the tedt.org Color Chart tool: a fullscreen, pannable, zoomable palette explorer with URL-driven inputs."
 seo-description: "How to use the tedt.org Color Chart tool: pan/zoom controls, keyboard shortcuts, and URL palette parameters."
@@ -122,6 +123,17 @@ Notes:
 - You can include `#` or omit it (the tool will add it when it’s clearly a hex value).
 - 3-digit hex values (like `#0af`) are expanded to 6-digit (`#00aaff`).
 - 8-digit hex values (`#RRGGBBAA`) are accepted; how the alpha channel affects the rendered swatch depends on browser + color parsing.
+
+## Extracting a palette from a website or image
+
+The tool now has an **Extract from source** panel. You can enter a website or image URL, upload an image, or paste a screenshot.
+
+The static version is intentionally honest about browser security:
+
+- Direct URL analysis works when the target allows browser access to its HTML, CSS, manifest, icons, or image pixels.
+- Direct image URL analysis works when the image can be fetched and read by the browser.
+- Uploading or pasting a screenshot works for any site because the pixels are local to your browser.
+- There is no backend proxy. If a site blocks browser access, the tool leaves your current palette intact and asks you to upload or paste a screenshot instead.
 
 ## A small (honest) note about network calls
 
