@@ -10,7 +10,7 @@ source-url: ""
 call-to-action: "Open the tool and explore your palette"
 
 date: 2026-01-12 09:00:00 -0800
-update: 2026-07-17 09:00:00 -0800
+update: 2026-07-18 09:00:00 -0800
 
 author:
   avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g"
@@ -23,9 +23,10 @@ bullets:
   - Mouse/trackpad and keyboard shortcuts for fast navigation.
   - URL-driven palettes via `?c=`.
   - Palette extraction from readable URLs, uploaded images, and pasted screenshots.
+  - Workbench tools for contrast, tokens, roles, audits, themes, comparisons, harmonies, previews, and image sampling.
 
-description: "Documentation for the tedt.org Color Chart tool: a fullscreen, pannable, zoomable palette explorer with URL-driven inputs."
-seo-description: "How to use the tedt.org Color Chart tool: pan/zoom controls, keyboard shortcuts, and URL palette parameters."
+description: "Documentation for the tedt.org Color Chart tool: a fullscreen, pannable, zoomable palette workbench with URL-driven inputs and analysis tools."
+seo-description: "How to use the tedt.org Color Chart tool: pan/zoom controls, URL palettes, contrast matrix, token export, semantic roles, and palette previews."
 
 categories:
   - Computers
@@ -76,7 +77,7 @@ Think of it like a map: the screen is your viewport, and the chart is a larger w
 
 ## What the tool does
 
-Given one or more base colors, the tool generates a grid of shades and supporting metadata (RGB/HSL/CMYK and contrast information) so you can evaluate a palette as a system, not as a collection of isolated swatches.
+Given one or more base colors, the tool generates a grid of shades and supporting metadata (RGB/HSL/CMYK and contrast information) so you can evaluate a palette as a system, not as a collection of isolated swatches. The workbench adds decision tools for accessibility, export, semantic roles, theme suggestions, palette comparisons, harmony generation, color-vision simulation, UI previews, and manual image sampling.
 
 ## Pan and zoom (three ways)
 
@@ -135,6 +136,21 @@ The static version is intentionally honest about browser security:
 - Uploading or pasting a screenshot works for any site because the pixels are local to your browser.
 - There is no backend proxy. If a site blocks browser access, the tool leaves your current palette intact and asks you to upload or paste a screenshot instead.
 
+## Analysis workbench
+
+The workbench turns the chart from a viewer into a decision surface:
+
+- **Contrast Matrix:** checks generated shade pairings and labels AA, AAA, large-text, or failing combinations.
+- **Tokens:** exports the current shade system as CSS variables, JSON tokens, SCSS maps, Tailwind colors, or Bootstrap-oriented variables.
+- **Roles:** maps shades to semantic UI roles such as primary, accent, background, surface, text, border, danger, warning, success, and focus.
+- **Audit:** flags contrast, near-duplicate colors, missing neutrals, and other palette risks.
+- **Themes:** proposes light and dark theme pairings from the semantic roles.
+- **Compare:** compares another palette against the active palette and reports nearest matches.
+- **Harmony:** generates complementary, analogous, triadic, tetradic, split-complement, and monochrome palettes from a base color.
+- **Vision:** approximates common color-vision simulations and grayscale views.
+- **Preview:** renders common UI pieces using the semantic roles.
+- **Image Picker:** lets you sample colors manually from an uploaded, pasted, or dropped image.
+
 ## A small (honest) note about network calls
 
 Some metadata (like human-friendly color names) may rely on an external lookup. If you’re offline, or if a third-party service is slow, the chart still renders — but names may be missing or delayed.
@@ -147,4 +163,4 @@ When a chart can move, you stop fighting the tool.
 
 And once you stop fighting the tool, you can do the real work: noticing what the palette is actually saying.
 
-If you want, I can also add a tiny “Help” overlay directly inside the tool (a quick legend for controls and the `?c=` parameter), so you don’t have to remember any of this next time.
+The goal is simple: a palette should be easy to inspect, but also easy to decide with.

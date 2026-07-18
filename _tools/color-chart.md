@@ -1,11 +1,11 @@
 ---
 title: "Color Chart"
-summary: "Fullscreen palette explorer with pan/zoom, contrast readouts, URL-driven palettes, and source image extraction."
+summary: "Fullscreen palette workbench with pan/zoom, contrast matrix, token export, semantic roles, audits, previews, and source image extraction."
 subtitle: "Pannable/zoomable color palette explorer"
 status: active
 tool_type: webapp
 date: 2026-01-12
-last_modified: 2026-07-17
+last_modified: 2026-07-18
 featured: true
 tags: [color, ui, javascript, accessibility, tools, css]
 tech:
@@ -27,15 +27,19 @@ features:
   - "URL-driven palettes via ?c="
   - "Palette extraction from readable URLs, uploaded images, and pasted screenshots"
   - "Swatch metadata (RGB/HSL/CMYK) + contrast cues"
+  - "Workbench contrast matrix for shade pair accessibility checks"
+  - "Design token exports for CSS, JSON, SCSS, Tailwind, and Bootstrap"
+  - "Semantic role mapping, palette audit, theme suggestions, comparison, harmony, color-vision simulation, UI preview, and manual image sampling"
 license: "MIT"
 ---
 
 ## What it does
 
-Color Chart is a fullscreen palette explorer: it turns one or more base colors
+Color Chart is a fullscreen palette workbench: it turns one or more base colors
 into a grid of related shades, then lets you *move around the chart* (pan and
 zoom) to evaluate the palette as a system. It can also extract a starting
-palette from browser-readable URLs, uploaded images, or pasted screenshots.
+palette from browser-readable URLs, uploaded images, or pasted screenshots, then
+audit, compare, export, and preview the palette in common UI contexts.
 
 ## How to use it
 
@@ -46,6 +50,9 @@ palette from browser-readable URLs, uploaded images, or pasted screenshots.
 - **Reset:** `0` (or the reset button)
 - **Extract from source:** enter a readable URL, upload an image, or paste a
   screenshot into the tool.
+- **Use the workbench:** check shade-pair contrast, export tokens, map semantic
+  roles, audit the palette, build themes, compare palettes, generate harmonies,
+  preview color-vision simulations, test UI components, or sample image regions.
 
 ## URL palettes (`?c=`)
 

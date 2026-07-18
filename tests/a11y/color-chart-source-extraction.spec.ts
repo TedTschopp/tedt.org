@@ -19,8 +19,9 @@ consoleErrorsFixture.describe('Color chart source extraction', () => {
     await stubColorNameApi(page);
     await page.goto(`${BASE}/tools/color-chart.html?c=teds`, { waitUntil: 'domcontentloaded' });
 
-    await expect(page.locator('.color-box')).toHaveCount(121);
-    await expect(page.getByLabel('Color list')).toContainText('#101820');
+    await expect(page.locator('.color-box')).toHaveCount(77);
+    await expect(page.getByLabel('Color list')).toContainText('#0EA6CC');
+    await expect(page.getByLabel('Color list')).toContainText('#00B339');
     expect(consoleErrors, 'Color chart should render the existing teds palette without console errors').toHaveLength(0);
   });
 
@@ -106,5 +107,72 @@ consoleErrorsFixture.describe('Color chart source extraction', () => {
       textColor: '#FFFFFF',
     });
     expect(consoleErrors, 'Color analysis helpers should not create console errors').toHaveLength(0);
+  });
+
+  consoleErrorsFixture('renders an accessible contrast matrix in the workbench', async ({ page, consoleErrors }) => {
+    await stubColorNameApi(page);
+    await page.goto(`${BASE}/tools/color-chart.html?c=000000,ffffff`, { waitUntil: 'domcontentloaded' });
+
+    await expect(page.getByRole('region', { name: 'Analysis workbench' })).toBeVisible();
+    await expect(page.getByRole('tab', { name: 'Contrast Matrix' })).toHaveAttribute('aria-selected', 'true');
+    await expect(page.getByLabel('Contrast matrix summary')).toContainText('22 shades');
+    await expect(page.getByLabel('Contrast matrix table')).toContainText('21.00:1');
+    await expect(page.getByLabel('Contrast matrix table')).toContainText('AAA');
+    expect(consoleErrors, 'Contrast Matrix should not create console errors').toHaveLength(0);
+  });
+
+  consoleErrorsFixture('renders the full analysis workbench toolset', async ({ page, consoleErrors }) => {
+    await stubColorNameApi(page);
+    await page.goto(`${BASE}/tools/color-chart.html?c=0EA6CC,C73A28,FFFFFF,000000`, { waitUntil: 'domcontentloaded' });
+
+    const tabNames = [
+      'Contrast Matrix',
+      'Tokens',
+      'Roles',
+      'Audit',
+      'Themes',
+      'Compare',
+      'Harmony',
+      'Vision',
+      'Preview',
+      'Image Picker',
+    ];
+
+    for (const name of tabNames) {
+      await expect(page.getByRole('tab', { name })).toBeVisible();
+    }
+
+    await page.getByRole('tab', { name: 'Tokens' }).click();
+    await expect(page.getByLabel('Token export output')).toHaveValue(/--color-1-500: #C73A28;/);
+
+    await page.getByRole('tab', { name: 'Roles' }).click();
+    await expect(page.getByLabel('Semantic role mapper')).toContainText('primary');
+    await expect(page.getByLabel('Semantic role mapper')).toContainText('background');
+
+    await page.getByRole('tab', { name: 'Audit' }).click();
+    await expect(page.getByLabel('Palette audit results')).toContainText('Palette audit');
+
+    await page.getByRole('tab', { name: 'Themes' }).click();
+    await expect(page.getByLabel('Theme builder results')).toContainText('Light theme');
+    await expect(page.getByLabel('Theme builder results')).toContainText('Dark theme');
+
+    await page.getByRole('tab', { name: 'Compare' }).click();
+    await page.getByLabel('Comparison palette input').fill('#0EA6CC, #FF0000');
+    await expect(page.getByLabel('Palette comparison results')).toContainText('Nearest match');
+    await expect(page.getByLabel('Palette comparison results')).toContainText('#FF0000');
+
+    await page.getByRole('tab', { name: 'Harmony' }).click();
+    await expect(page.getByLabel('Harmony generator results')).toContainText('Harmony preview');
+
+    await page.getByRole('tab', { name: 'Vision' }).click();
+    await expect(page.getByLabel('Color vision simulation')).toContainText('Deuteranopia');
+
+    await page.getByRole('tab', { name: 'Preview' }).click();
+    await expect(page.getByLabel('UI preview board')).toContainText('Sample Button');
+
+    await page.getByRole('tab', { name: 'Image Picker' }).click();
+    await expect(page.getByLabel('Image palette region picker')).toContainText('Upload, paste, or drop an image');
+
+    expect(consoleErrors, 'Full workbench should not create console errors').toHaveLength(0);
   });
 });
