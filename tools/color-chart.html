@@ -432,6 +432,7 @@
         const SOURCE_FETCH_TIMEOUT_MS = 8000;
         const MAX_EXTRACTED_COLORS = 12;
         const MAX_REMOTE_IMAGE_CANDIDATES = 5;
+        const colorShades = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950'];
         const SHADE_DEDUPE_DISTANCE_BY_SHADE = {
             50: 16,
             100: 20,
@@ -1137,6 +1138,67 @@
             };
         }
 
+        function getColorMetrics(hex) {
+            const normalizedHex = normalizeHex6(hex);
+            const rgb = tinycolor(normalizedHex).toRgb();
+            const hls = tinycolor(normalizedHex).toHsl();
+            return {
+                hex: normalizedHex,
+                rgb: { r: rgb.r, g: rgb.g, b: rgb.b },
+                hls: {
+                    h: Math.round(hls.h),
+                    s: Math.round(hls.s * 100),
+                    l: Math.round(hls.l * 100),
+                },
+                cmyk: convertRgbToCmyk(rgb.r, rgb.g, rgb.b),
+            };
+        }
+
+        function getContrastReport(foregroundHex, backgroundHex) {
+            const foreground = getColorMetrics(foregroundHex);
+            const background = getColorMetrics(backgroundHex);
+            const ratio = parseFloat(calculateContrastRatio(
+                [foreground.rgb.r, foreground.rgb.g, foreground.rgb.b],
+                [background.rgb.r, background.rgb.g, background.rgb.b]
+            ));
+            return {
+                foregroundHex: foreground.hex,
+                backgroundHex: background.hex,
+                ratio,
+                aaLarge: ratio >= 3,
+                aaNormal: ratio >= 4.5,
+                aaaLarge: ratio >= 4.5,
+                aaaNormal: ratio >= 7,
+            };
+        }
+
+        function getReadableTextColor(backgroundHex) {
+            const whiteContrast = getContrastReport('#FFFFFF', backgroundHex).ratio;
+            const blackContrast = getContrastReport('#000000', backgroundHex).ratio;
+            return whiteContrast >= blackContrast ? '#FFFFFF' : '#000000';
+        }
+
+        function getPaletteShadeRecords(colors) {
+            const records = [];
+            for (const color of colors || []) {
+                const raw = typeof color === 'string' ? color : color?.hex;
+                const baseHex = normalizeHex6(raw);
+                const shades = getShadeColors(baseHex);
+                for (const shade of colorShades) {
+                    const shadeHex = normalizeHex6(shades[shade]);
+                    records.push({
+                        baseHex,
+                        shade,
+                        ...getColorMetrics(shadeHex),
+                        textColor: getReadableTextColor(shadeHex),
+                        contrastWithWhite: getContrastReport('#FFFFFF', shadeHex).ratio,
+                        contrastWithBlack: getContrastReport('#000000', shadeHex).ratio,
+                    });
+                }
+            }
+            return records;
+        }
+
         function isSimilarToKeptColorShade(hex, keptColors) {
             for (const keptColor of keptColors) {
                 const shadeColors = getShadeColors(keptColor.hex);
@@ -1244,11 +1306,11 @@
         }
 
         function getDerivedColorMeta(color) {
-            const rgb = tinycolor(color.hex).toRgb();
+            const metrics = getColorMetrics(color.hex);
             return {
-                rgb,
-                hls: tinycolor(color.hex).toHsl(),
-                cmyk: convertRgbToCmyk(rgb.r, rgb.g, rgb.b),
+                rgb: metrics.rgb,
+                hls: tinycolor(metrics.hex).toHsl(),
+                cmyk: metrics.cmyk,
             };
         }
 
@@ -1381,11 +1443,12 @@
             const magenta = 1 - green / 255;
             const yellow = 1 - blue / 255;
             const black = Math.min(cyan, magenta, yellow);
+            if (black >= 1) return [0, 0, 0, 100];
             return [
-                ((cyan - black) / (1 - black) * 100).toFixed(0),
-                ((magenta - black) / (1 - black) * 100).toFixed(0),
-                ((yellow - black) / (1 - black) * 100).toFixed(0),
-                (black * 100).toFixed(0),
+                Math.round((cyan - black) / (1 - black) * 100),
+                Math.round((magenta - black) / (1 - black) * 100),
+                Math.round((yellow - black) / (1 - black) * 100),
+                Math.round(black * 100),
             ];
         }
 
@@ -1816,8 +1879,6 @@
                 void handleSourceImageFile(file);
             });
         }
-
-        const colorShades = ['50', '100', '200', '300', '400', '500', '600', '700', '800', '900', '950'];
 
         async function generateColorChart({ center = false } = {}) {
             const chartContainer = document.createElement('div');

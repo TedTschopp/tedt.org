@@ -70,4 +70,41 @@ consoleErrorsFixture.describe('Color chart source extraction', () => {
     await expect(page.getByLabel('Color list')).toContainText('#101820');
     await expect(page.locator('.color-box')).toHaveCount(11);
   });
+
+  consoleErrorsFixture('exposes reusable color analysis primitives for the workbench', async ({ page, consoleErrors }) => {
+    await stubColorNameApi(page);
+    await page.goto(`${BASE}/tools/color-chart.html?c=000000,ffffff`, { waitUntil: 'domcontentloaded' });
+
+    const analysis = await page.evaluate(() => {
+      const blackOnWhite = getContrastReport('#000000', '#ffffff');
+      const blackMetrics = getColorMetrics('#000000');
+      const whiteMetrics = getColorMetrics('#ffffff');
+      const shadeRecords = getPaletteShadeRecords([{ hex: '#000000' }, { hex: '#ffffff' }]);
+
+      return {
+        blackOnWhite,
+        blackText: getReadableTextColor('#000000'),
+        whiteText: getReadableTextColor('#ffffff'),
+        blackMetrics,
+        whiteMetrics,
+        shadeRecordCount: shadeRecords.length,
+        firstShadeRecord: shadeRecords[0],
+      };
+    });
+
+    expect(analysis.blackOnWhite.ratio).toBeCloseTo(21, 2);
+    expect(analysis.blackOnWhite.aaNormal).toBe(true);
+    expect(analysis.blackOnWhite.aaaNormal).toBe(true);
+    expect(analysis.blackText).toBe('#FFFFFF');
+    expect(analysis.whiteText).toBe('#000000');
+    expect(analysis.blackMetrics.cmyk).toEqual([0, 0, 0, 100]);
+    expect(analysis.whiteMetrics.cmyk).toEqual([0, 0, 0, 0]);
+    expect(analysis.shadeRecordCount).toBe(22);
+    expect(analysis.firstShadeRecord).toMatchObject({
+      baseHex: '#000000',
+      shade: '50',
+      textColor: '#FFFFFF',
+    });
+    expect(consoleErrors, 'Color analysis helpers should not create console errors').toHaveLength(0);
+  });
 });
