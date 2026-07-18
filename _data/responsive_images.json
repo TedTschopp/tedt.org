@@ -6475,6 +6475,39 @@
       ],
       "width": 1456
     },
+    "/img/2026-07/Chasing-the-Red-Queen.webp": {
+      "height": 941,
+      "source_sha256": "8df4b10435105cbbd596f371ded45b3195f1407258d02d9055f874ad3321f418",
+      "src": "/img/2026-07/Chasing-the-Red-Queen.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-07/Chasing-the-Red-Queen--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-07/Chasing-the-Red-Queen--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-07/Chasing-the-Red-Queen--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-07/Chasing-the-Red-Queen--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-07/Chasing-the-Red-Queen.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/2026-07/Next-AI-Model-Wave.webp": {
       "height": 941,
       "source_sha256": "9438d4b45f63d2cefef1b7ff8a974ef4ec5e3232df8809a34a211f3d9be66aa9",
