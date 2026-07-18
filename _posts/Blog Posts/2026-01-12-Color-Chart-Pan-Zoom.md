@@ -23,7 +23,7 @@ bullets:
   - Mouse/trackpad and keyboard shortcuts for fast navigation.
   - URL-driven palettes via `?c=`.
   - Palette extraction from readable URLs, uploaded images, and pasted screenshots.
-  - Workbench tools for contrast, tokens, roles, audits, themes, comparisons, harmonies, previews, and image sampling.
+  - Workbench tools for contrast, tokens, mode-aware roles, audits, themes, comparisons, previews, and image sampling.
 
 description: "Documentation for the tedt.org Color Chart tool: a fullscreen, pannable, zoomable palette workbench with URL-driven inputs and analysis tools."
 seo-description: "How to use the tedt.org Color Chart tool: pan/zoom controls, URL palettes, contrast matrix, token export, semantic roles, and palette previews."
@@ -77,7 +77,7 @@ Think of it like a map: the screen is your viewport, and the chart is a larger w
 
 ## What the tool does
 
-Given one or more base colors, the tool generates a grid of shades and supporting metadata (RGB/HSL/CMYK and contrast information) so you can evaluate a palette as a system, not as a collection of isolated swatches. The workbench adds decision tools for accessibility, export, semantic roles, theme suggestions, palette comparisons, harmony generation, color-vision simulation, UI previews, and manual image sampling.
+Given one or more base colors, the tool generates a grid of shades and supporting metadata (RGB/HSL/CMYK and contrast information) so you can evaluate a palette as a system, not as a collection of isolated swatches. The workbench adds decision tools for accessibility, export, semantic roles, theme suggestions, palette comparisons, color-vision simulation, dual-mode UI previews, and manual image sampling.
 
 ## Pan and zoom (three ways)
 
@@ -142,13 +142,12 @@ The workbench turns the chart from a viewer into a decision surface:
 
 - **Contrast Matrix:** checks generated shade pairings and labels AA, AAA, large-text, or failing combinations.
 - **Tokens:** exports the current shade system as CSS variables, JSON tokens, SCSS maps, Tailwind colors, or Bootstrap-oriented variables.
-- **Roles:** maps shades to semantic UI roles such as primary, accent, background, surface, text, border, danger, warning, success, and focus.
+- **Roles:** maps shades to semantic UI roles. Brand/status/focus roles are shared, while background, surface, text, and border are set separately for light and dark modes.
 - **Audit:** flags contrast, near-duplicate colors, missing neutrals, and other palette risks.
 - **Themes:** proposes light and dark theme pairings from the semantic roles.
 - **Compare:** compares another palette against the active palette and reports nearest matches.
-- **Harmony:** generates complementary, analogous, triadic, tetradic, split-complement, and monochrome palettes from a base color.
 - **Vision:** approximates common color-vision simulations and grayscale views.
-- **Preview:** renders common UI pieces using the semantic roles.
+- **Preview:** renders common UI pieces in both Light Mode and Dark Mode using the semantic roles.
 - **Image Picker:** lets you sample colors manually from an uploaded, pasted, or dropped image.
 
 ## A small (honest) note about network calls

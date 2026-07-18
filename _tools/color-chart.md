@@ -29,7 +29,8 @@ features:
   - "Swatch metadata (RGB/HSL/CMYK) + contrast cues"
   - "Workbench contrast matrix for shade pair accessibility checks"
   - "Design token exports for CSS, JSON, SCSS, Tailwind, and Bootstrap"
-  - "Semantic role mapping, palette audit, theme suggestions, comparison, harmony, color-vision simulation, UI preview, and manual image sampling"
+  - "Semantic role mapping with shared brand/status roles and separate light/dark surface roles"
+  - "Palette audit, theme suggestions, comparison, color-vision simulation, dual-mode UI preview, and manual image sampling"
 license: "MIT"
 ---
 
@@ -51,8 +52,8 @@ audit, compare, export, and preview the palette in common UI contexts.
 - **Extract from source:** enter a readable URL, upload an image, or paste a
   screenshot into the tool.
 - **Use the workbench:** check shade-pair contrast, export tokens, map semantic
-  roles, audit the palette, build themes, compare palettes, generate harmonies,
-  preview color-vision simulations, test UI components, or sample image regions.
+  roles, audit the palette, build themes, compare palettes, preview color-vision
+  simulations, test light/dark UI components, or sample image regions.
 
 ## URL palettes (`?c=`)
 

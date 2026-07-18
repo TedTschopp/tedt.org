@@ -110,12 +110,8 @@ body.is-panning {
 #addColorBtn:focus-visible,
 #saveUrlBtn:focus-visible,
 #copyTokensBtn:focus-visible,
-#appendHarmonyBtn:focus-visible,
-#replaceHarmonyBtn:focus-visible,
 #addSampledColorBtn:focus-visible,
 #tokenFormatSelect:focus-visible,
-#harmonyBaseSelect:focus-visible,
-#harmonyModeSelect:focus-visible,
 #comparePaletteInput:focus-visible,
 .roleSelect:focus-visible,
 .workbenchTab:focus-visible,
@@ -383,8 +379,6 @@ body.is-panning {
 
 .toolTextArea,
 #tokenFormatSelect,
-#harmonyBaseSelect,
-#harmonyModeSelect,
 .roleSelect {
     appearance: none;
     border: 1px solid rgba(var(--bs-secondary-rgb), 0.55);
@@ -413,7 +407,7 @@ body.is-panning {
 .roleSwatch,
 .miniSwatch,
 .visionSwatch,
-.harmonySwatch {
+.previewSwatch {
     width: 28px;
     height: 28px;
     border-radius: 8px;
@@ -421,7 +415,6 @@ body.is-panning {
 }
 
 .swatchStrip,
-.harmonyStrip,
 .visionStrip {
     display: flex;
     flex-wrap: wrap;
@@ -441,6 +434,16 @@ body.is-panning {
 .themeCard,
 .previewBoard {
     display: grid;
+    gap: 8px;
+}
+
+.roleSection {
+    gap: 6px;
+}
+
+.previewModeGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 8px;
 }
 

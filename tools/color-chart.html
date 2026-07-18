@@ -71,7 +71,6 @@
                 <button id="auditTab" class="workbenchTab" type="button" role="tab" aria-selected="false" aria-controls="auditPanel" data-workbench-tab="audit">Audit</button>
                 <button id="themesTab" class="workbenchTab" type="button" role="tab" aria-selected="false" aria-controls="themesPanel" data-workbench-tab="themes">Themes</button>
                 <button id="compareTab" class="workbenchTab" type="button" role="tab" aria-selected="false" aria-controls="comparePanel" data-workbench-tab="compare">Compare</button>
-                <button id="harmonyTab" class="workbenchTab" type="button" role="tab" aria-selected="false" aria-controls="harmonyPanel" data-workbench-tab="harmony">Harmony</button>
                 <button id="visionTab" class="workbenchTab" type="button" role="tab" aria-selected="false" aria-controls="visionPanel" data-workbench-tab="vision">Vision</button>
                 <button id="previewTab" class="workbenchTab" type="button" role="tab" aria-selected="false" aria-controls="previewPanel" data-workbench-tab="preview">Preview</button>
                 <button id="imagePickerTab" class="workbenchTab" type="button" role="tab" aria-selected="false" aria-controls="imagePickerPanel" data-workbench-tab="imagePicker">Image Picker</button>
@@ -105,22 +104,6 @@
             <div id="comparePanel" class="workbenchView" role="tabpanel" aria-labelledby="compareTab" data-workbench-panel="compare" hidden>
                 <textarea id="comparePaletteInput" class="toolTextArea" aria-label="Comparison palette input" placeholder="#0EA6CC, #C73A28, #FFFFFF"></textarea>
                 <div id="paletteCompareResults" class="workbenchStack" aria-label="Palette comparison results"></div>
-            </div>
-            <div id="harmonyPanel" class="workbenchView" role="tabpanel" aria-labelledby="harmonyTab" data-workbench-panel="harmony" hidden>
-                <div class="workbenchGrid">
-                    <select id="harmonyBaseSelect" aria-label="Harmony base color"></select>
-                    <select id="harmonyModeSelect" aria-label="Harmony mode">
-                        <option value="complementary">Complementary</option>
-                        <option value="analogous">Analogous</option>
-                        <option value="triadic">Triadic</option>
-                        <option value="tetradic">Tetradic</option>
-                        <option value="split">Split-complement</option>
-                        <option value="monochrome">Monochrome</option>
-                    </select>
-                    <button id="appendHarmonyBtn" type="button">Append harmony</button>
-                    <button id="replaceHarmonyBtn" type="button">Replace palette</button>
-                </div>
-                <div id="harmonyGeneratorResults" class="workbenchStack" aria-label="Harmony generator results"></div>
             </div>
             <div id="visionPanel" class="workbenchView" role="tabpanel" aria-labelledby="visionTab" data-workbench-panel="vision" hidden>
                 <div id="visionSimulationOutput" class="workbenchStack" aria-label="Color vision simulation"></div>

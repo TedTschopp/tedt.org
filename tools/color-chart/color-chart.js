@@ -30,11 +30,6 @@ const paletteAuditResultsEl = document.getElementById('paletteAuditResults');
 const themeBuilderResultsEl = document.getElementById('themeBuilderResults');
 const comparePaletteInputEl = document.getElementById('comparePaletteInput');
 const paletteCompareResultsEl = document.getElementById('paletteCompareResults');
-const harmonyBaseSelectEl = document.getElementById('harmonyBaseSelect');
-const harmonyModeSelectEl = document.getElementById('harmonyModeSelect');
-const appendHarmonyBtnEl = document.getElementById('appendHarmonyBtn');
-const replaceHarmonyBtnEl = document.getElementById('replaceHarmonyBtn');
-const harmonyGeneratorResultsEl = document.getElementById('harmonyGeneratorResults');
 const visionSimulationOutputEl = document.getElementById('visionSimulationOutput');
 const uiPreviewBoardEl = document.getElementById('uiPreviewBoard');
 const imageSamplerCanvasEl = document.getElementById('imageSamplerCanvas');
@@ -62,16 +57,16 @@ const SHADE_DEDUPE_DISTANCE_BY_SHADE = {
     950: 16,
 };
 const SEMANTIC_ROLE_DEFINITIONS = [
-    { key: 'primary', label: 'primary' },
-    { key: 'accent', label: 'accent' },
-    { key: 'background', label: 'background' },
-    { key: 'surface', label: 'surface' },
-    { key: 'text', label: 'text' },
-    { key: 'border', label: 'border' },
-    { key: 'danger', label: 'danger' },
-    { key: 'warning', label: 'warning' },
-    { key: 'success', label: 'success' },
-    { key: 'focus', label: 'focus' },
+    { key: 'primary', label: 'primary', scope: 'shared' },
+    { key: 'accent', label: 'accent', scope: 'shared' },
+    { key: 'danger', label: 'danger', scope: 'shared' },
+    { key: 'warning', label: 'warning', scope: 'shared' },
+    { key: 'success', label: 'success', scope: 'shared' },
+    { key: 'focus', label: 'focus', scope: 'shared' },
+    { key: 'background', label: 'background', scope: 'mode' },
+    { key: 'surface', label: 'surface', scope: 'mode' },
+    { key: 'text', label: 'text', scope: 'mode' },
+    { key: 'border', label: 'border', scope: 'mode' },
 ];
 const VISION_SIMULATIONS = [
     { name: 'Protanopia', matrix: [[0.567, 0.433, 0], [0.558, 0.442, 0], [0, 0.242, 0.758]] },
@@ -766,8 +761,7 @@ function normalizeHex6(hex) {
 
 let activeColors = initialColors.map(c => ({ hex: normalizeHex6(c.hex) }));
 let activeWorkbenchTab = 'contrastMatrix';
-let semanticRoleAssignments = {};
-let latestHarmonyColors = [];
+let semanticRoleAssignments = { shared: {}, light: {}, dark: {} };
 let latestSampledHex = null;
 const imageSamplerState = {
     image: null,
@@ -987,17 +981,29 @@ function formatDesignTokens(format) {
         return ['module.exports = {', '  theme: {', '    extend: {', '      colors: {', ...grouped, '      }', '    }', '  }', '};'].join('\n');
     }
     if (format === 'bootstrap') {
-        const roleColors = getResolvedRoleColors();
+        const lightRoles = getResolvedRoleColors('light');
+        const darkRoles = getResolvedRoleColors('dark');
         return [
             ':root {',
-            `  --bs-primary: ${roleColors.primary?.hex || entries[5]?.hex || '#000000'};`,
-            `  --bs-secondary: ${roleColors.accent?.hex || entries[16]?.hex || '#6c757d'};`,
-            `  --bs-body-bg: ${roleColors.background?.hex || '#ffffff'};`,
-            `  --bs-body-color: ${roleColors.text?.hex || '#000000'};`,
-            `  --bs-border-color: ${roleColors.border?.hex || '#dee2e6'};`,
-            `  --bs-danger: ${roleColors.danger?.hex || '#dc3545'};`,
-            `  --bs-warning: ${roleColors.warning?.hex || '#ffc107'};`,
-            `  --bs-success: ${roleColors.success?.hex || '#198754'};`,
+            `  --bs-primary: ${lightRoles.primary?.hex || entries[5]?.hex || '#000000'};`,
+            `  --bs-secondary: ${lightRoles.accent?.hex || entries[16]?.hex || '#6c757d'};`,
+            `  --bs-body-bg: ${lightRoles.background?.hex || '#ffffff'};`,
+            `  --bs-body-color: ${lightRoles.text?.hex || '#000000'};`,
+            `  --bs-border-color: ${lightRoles.border?.hex || '#dee2e6'};`,
+            `  --bs-danger: ${lightRoles.danger?.hex || '#dc3545'};`,
+            `  --bs-warning: ${lightRoles.warning?.hex || '#ffc107'};`,
+            `  --bs-success: ${lightRoles.success?.hex || '#198754'};`,
+            '}',
+            '',
+            '[data-bs-theme="dark"] {',
+            `  --bs-primary: ${darkRoles.primary?.hex || lightRoles.primary?.hex || '#0d6efd'};`,
+            `  --bs-secondary: ${darkRoles.accent?.hex || lightRoles.accent?.hex || '#6c757d'};`,
+            `  --bs-body-bg: ${darkRoles.background?.hex || '#000000'};`,
+            `  --bs-body-color: ${darkRoles.text?.hex || '#ffffff'};`,
+            `  --bs-border-color: ${darkRoles.border?.hex || '#495057'};`,
+            `  --bs-danger: ${darkRoles.danger?.hex || lightRoles.danger?.hex || '#dc3545'};`,
+            `  --bs-warning: ${darkRoles.warning?.hex || lightRoles.warning?.hex || '#ffc107'};`,
+            `  --bs-success: ${darkRoles.success?.hex || lightRoles.success?.hex || '#198754'};`,
             '}',
         ].join('\n');
     }
@@ -1020,34 +1026,105 @@ function ensureSemanticRoleAssignments() {
     const sortedByLightness = [...records].sort((a, b) => a.hls.l - b.hls.l);
     const darkest = sortedByLightness[0];
     const lightest = sortedByLightness[sortedByLightness.length - 1];
-    const defaults = {
+    semanticRoleAssignments.shared ||= {};
+    semanticRoleAssignments.light ||= {};
+    semanticRoleAssignments.dark ||= {};
+    const sharedDefaults = {
         primary: findBestRecord(records, r => r.baseHex === normalizeHex6(activeColors[0]?.hex) && r.shade === '500'),
         accent: findBestRecord(records, r => r.baseHex === normalizeHex6(activeColors[1]?.hex) && r.shade === '500', 1),
-        background: lightest,
-        surface: findBestRecord(records, r => r.shade === '50' && r.hls.l >= 70, records.length - 1),
-        text: darkest,
-        border: findBestRecord(records, r => r.shade === '200', Math.min(2, records.length - 1)),
         danger: findBestRecord(records, r => r.hls.h <= 25 || r.hls.h >= 340, 0),
         warning: findBestRecord(records, r => r.hls.h >= 30 && r.hls.h <= 65, 0),
         success: findBestRecord(records, r => r.hls.h >= 95 && r.hls.h <= 155, 0),
         focus: findBestRecord(records, r => r.shade === '500', 0),
     };
+    const lightDefaults = {
+        background: lightest,
+        surface: findBestRecord(records, r => r.shade === '50' && r.hls.l >= 70, records.length - 1),
+        text: darkest,
+        border: findBestRecord(records, r => r.shade === '200', Math.min(2, records.length - 1)),
+    };
+    const darkDefaults = {
+        background: darkest,
+        surface: findBestRecord(records, r => r.shade === '900' || r.shade === '950', 0),
+        text: lightest,
+        border: findBestRecord(records, r => r.shade === '700' || r.shade === '800', 0),
+    };
     for (const role of SEMANTIC_ROLE_DEFINITIONS) {
-        if (!semanticRoleAssignments[role.key] || !recordKeys.has(semanticRoleAssignments[role.key])) {
-            semanticRoleAssignments[role.key] = getRecordKey(defaults[role.key] || records[0]);
+        if (role.scope === 'shared') {
+            if (!semanticRoleAssignments.shared[role.key] || !recordKeys.has(semanticRoleAssignments.shared[role.key])) {
+                semanticRoleAssignments.shared[role.key] = getRecordKey(sharedDefaults[role.key] || records[0]);
+            }
+        } else {
+            if (!semanticRoleAssignments.light[role.key] || !recordKeys.has(semanticRoleAssignments.light[role.key])) {
+                semanticRoleAssignments.light[role.key] = getRecordKey(lightDefaults[role.key] || records[0]);
+            }
+            if (!semanticRoleAssignments.dark[role.key] || !recordKeys.has(semanticRoleAssignments.dark[role.key])) {
+                semanticRoleAssignments.dark[role.key] = getRecordKey(darkDefaults[role.key] || records[0]);
+            }
         }
     }
 }
 
-function getResolvedRoleColors() {
+function getResolvedRoleColors(mode = 'light') {
     const records = getActiveShadeRecords();
     ensureSemanticRoleAssignments();
     const byKey = Object.fromEntries(records.map(record => [getRecordKey(record), record]));
     const resolved = {};
     for (const role of SEMANTIC_ROLE_DEFINITIONS) {
-        resolved[role.key] = byKey[semanticRoleAssignments[role.key]] || records[0];
+        const key = role.scope === 'shared'
+            ? semanticRoleAssignments.shared[role.key]
+            : semanticRoleAssignments[mode]?.[role.key];
+        resolved[role.key] = byKey[key] || records[0];
     }
     return resolved;
+}
+
+function createRoleSelect(role, scope, records) {
+    const assignmentBucket = scope === 'shared' ? semanticRoleAssignments.shared : semanticRoleAssignments[scope];
+    const selectedKey = assignmentBucket?.[role.key];
+    const selectedRecord = records.find(record => getRecordKey(record) === selectedKey) || records[0];
+    const rowEl = document.createElement('div');
+    rowEl.className = 'roleRow';
+
+    const labelEl = document.createElement('label');
+    labelEl.setAttribute('for', `role-${scope}-${role.key}`);
+    labelEl.textContent = role.label;
+
+    const swatchEl = document.createElement('div');
+    swatchEl.className = 'roleSwatch';
+    swatchEl.style.backgroundColor = selectedRecord?.hex || '#000000';
+
+    const selectEl = document.createElement('select');
+    selectEl.className = 'roleSelect';
+    selectEl.id = `role-${scope}-${role.key}`;
+    selectEl.setAttribute('aria-label', scope === 'shared' ? `${role.label} role color` : `${scope} ${role.label} role color`);
+    for (const record of records) {
+        const optionEl = document.createElement('option');
+        optionEl.value = getRecordKey(record);
+        optionEl.textContent = `${getShadeDisplayName(record)} ${record.hex}`;
+        if (optionEl.value === selectedKey) optionEl.selected = true;
+        selectEl.appendChild(optionEl);
+    }
+    selectEl.addEventListener('change', () => {
+        assignmentBucket[role.key] = selectEl.value;
+        renderWorkbench();
+    });
+
+    rowEl.appendChild(labelEl);
+    rowEl.appendChild(swatchEl);
+    rowEl.appendChild(selectEl);
+    return rowEl;
+}
+
+function appendRoleSection(title, roles, scope, records) {
+    const sectionEl = document.createElement('div');
+    sectionEl.className = 'workbenchStack roleSection';
+    const titleEl = document.createElement('div');
+    titleEl.className = 'workbenchCard';
+    titleEl.innerHTML = `<strong>${title}</strong>`;
+    sectionEl.appendChild(titleEl);
+    for (const role of roles) sectionEl.appendChild(createRoleSelect(role, scope, records));
+    roleMapperOutputEl.appendChild(sectionEl);
 }
 
 function renderRoleMapper() {
@@ -1055,41 +1132,11 @@ function renderRoleMapper() {
     const records = getActiveShadeRecords();
     ensureSemanticRoleAssignments();
     roleMapperOutputEl.innerHTML = '';
-    for (const role of SEMANTIC_ROLE_DEFINITIONS) {
-        const selectedKey = semanticRoleAssignments[role.key];
-        const selectedRecord = records.find(record => getRecordKey(record) === selectedKey) || records[0];
-        const rowEl = document.createElement('div');
-        rowEl.className = 'roleRow';
-
-        const labelEl = document.createElement('label');
-        labelEl.setAttribute('for', `role-${role.key}`);
-        labelEl.textContent = role.label;
-
-        const swatchEl = document.createElement('div');
-        swatchEl.className = 'roleSwatch';
-        swatchEl.style.backgroundColor = selectedRecord?.hex || '#000000';
-
-        const selectEl = document.createElement('select');
-        selectEl.className = 'roleSelect';
-        selectEl.id = `role-${role.key}`;
-        selectEl.setAttribute('aria-label', `${role.label} role color`);
-        for (const record of records) {
-            const optionEl = document.createElement('option');
-            optionEl.value = getRecordKey(record);
-            optionEl.textContent = `${getShadeDisplayName(record)} ${record.hex}`;
-            if (optionEl.value === selectedKey) optionEl.selected = true;
-            selectEl.appendChild(optionEl);
-        }
-        selectEl.addEventListener('change', () => {
-            semanticRoleAssignments[role.key] = selectEl.value;
-            renderWorkbench();
-        });
-
-        rowEl.appendChild(labelEl);
-        rowEl.appendChild(swatchEl);
-        rowEl.appendChild(selectEl);
-        roleMapperOutputEl.appendChild(rowEl);
-    }
+    const sharedRoles = SEMANTIC_ROLE_DEFINITIONS.filter(role => role.scope === 'shared');
+    const modeRoles = SEMANTIC_ROLE_DEFINITIONS.filter(role => role.scope === 'mode');
+    appendRoleSection('Shared roles', sharedRoles, 'shared', records);
+    appendRoleSection('Light mode roles', modeRoles, 'light', records);
+    appendRoleSection('Dark mode roles', modeRoles, 'dark', records);
 }
 
 function addAuditFinding(container, state, title, text) {
@@ -1103,19 +1150,28 @@ function addAuditFinding(container, state, title, text) {
 function renderPaletteAudit() {
     if (!paletteAuditResultsEl) return;
     const records = getActiveShadeRecords();
-    const roles = getResolvedRoleColors();
+    const lightRoles = getResolvedRoleColors('light');
+    const darkRoles = getResolvedRoleColors('dark');
     paletteAuditResultsEl.innerHTML = '';
     addAuditFinding(paletteAuditResultsEl, 'success', 'Palette audit', `${activeColors.length} base colors and ${records.length} generated shades available.`);
 
-    const bodyContrast = getContrastReport(roles.text?.hex || '#000000', roles.background?.hex || '#ffffff');
+    const lightBodyContrast = getContrastReport(lightRoles.text?.hex || '#000000', lightRoles.background?.hex || '#ffffff');
     addAuditFinding(
         paletteAuditResultsEl,
-        bodyContrast.aaNormal ? 'success' : 'warning',
-        'Text on background',
-        `${bodyContrast.ratio.toFixed(2)}:1 (${getContrastBadgeLabel(bodyContrast)})`
+        lightBodyContrast.aaNormal ? 'success' : 'warning',
+        'Light text on background',
+        `${lightBodyContrast.ratio.toFixed(2)}:1 (${getContrastBadgeLabel(lightBodyContrast)})`
     );
 
-    const primaryContrast = getContrastReport(roles.background?.hex || '#ffffff', roles.primary?.hex || '#000000');
+    const darkBodyContrast = getContrastReport(darkRoles.text?.hex || '#ffffff', darkRoles.background?.hex || '#000000');
+    addAuditFinding(
+        paletteAuditResultsEl,
+        darkBodyContrast.aaNormal ? 'success' : 'warning',
+        'Dark text on background',
+        `${darkBodyContrast.ratio.toFixed(2)}:1 (${getContrastBadgeLabel(darkBodyContrast)})`
+    );
+
+    const primaryContrast = getContrastReport(lightRoles.background?.hex || '#ffffff', lightRoles.primary?.hex || '#000000');
     addAuditFinding(
         paletteAuditResultsEl,
         primaryContrast.aaNormal ? 'success' : 'warning',
@@ -1147,21 +1203,22 @@ function renderPaletteAudit() {
 
 function renderThemeBuilder() {
     if (!themeBuilderResultsEl) return;
-    const roles = getResolvedRoleColors();
+    const lightRoles = getResolvedRoleColors('light');
+    const darkRoles = getResolvedRoleColors('dark');
     const themes = [
         {
             name: 'Light theme',
-            background: roles.background?.hex || '#ffffff',
-            surface: roles.surface?.hex || '#f8f9fa',
-            text: roles.text?.hex || '#000000',
-            accent: roles.primary?.hex || '#0d6efd',
+            background: lightRoles.background?.hex || '#ffffff',
+            surface: lightRoles.surface?.hex || '#f8f9fa',
+            text: lightRoles.text?.hex || '#000000',
+            accent: lightRoles.primary?.hex || '#0d6efd',
         },
         {
             name: 'Dark theme',
-            background: roles.text?.hex || '#000000',
-            surface: roles.primary?.hex || '#101820',
-            text: roles.background?.hex || '#ffffff',
-            accent: roles.accent?.hex || '#0d6efd',
+            background: darkRoles.background?.hex || '#000000',
+            surface: darkRoles.surface?.hex || '#101820',
+            text: darkRoles.text?.hex || '#ffffff',
+            accent: darkRoles.accent?.hex || '#0d6efd',
         },
     ];
 
@@ -1216,55 +1273,6 @@ function renderPaletteCompare() {
     }
 }
 
-function normalizeHue(hue) {
-    return ((hue % 360) + 360) % 360;
-}
-
-function hslToHex(h, s, l) {
-    return tinycolor({ h: normalizeHue(h), s, l }).toHexString().toUpperCase();
-}
-
-function getHarmonyColors(baseHex, mode) {
-    const hsl = tinycolor(baseHex).toHsl();
-    if (mode === 'analogous') return [hslToHex(hsl.h - 30, hsl.s, hsl.l), normalizeHex6(baseHex), hslToHex(hsl.h + 30, hsl.s, hsl.l)];
-    if (mode === 'triadic') return [normalizeHex6(baseHex), hslToHex(hsl.h + 120, hsl.s, hsl.l), hslToHex(hsl.h + 240, hsl.s, hsl.l)];
-    if (mode === 'tetradic') return [normalizeHex6(baseHex), hslToHex(hsl.h + 90, hsl.s, hsl.l), hslToHex(hsl.h + 180, hsl.s, hsl.l), hslToHex(hsl.h + 270, hsl.s, hsl.l)];
-    if (mode === 'split') return [normalizeHex6(baseHex), hslToHex(hsl.h + 150, hsl.s, hsl.l), hslToHex(hsl.h + 210, hsl.s, hsl.l)];
-    if (mode === 'monochrome') return [20, 35, 50, 65, 80].map(lightness => hslToHex(hsl.h, hsl.s, lightness / 100));
-    return [normalizeHex6(baseHex), hslToHex(hsl.h + 180, hsl.s, hsl.l)];
-}
-
-function renderHarmonyGenerator() {
-    if (!harmonyBaseSelectEl || !harmonyModeSelectEl || !harmonyGeneratorResultsEl) return;
-    const currentBase = harmonyBaseSelectEl.value || normalizeHex6(activeColors[0]?.hex);
-    harmonyBaseSelectEl.innerHTML = '';
-    activeColors.forEach((color, index) => {
-        const optionEl = document.createElement('option');
-        optionEl.value = normalizeHex6(color.hex);
-        optionEl.textContent = `Color ${index + 1}: ${normalizeHex6(color.hex)}`;
-        if (optionEl.value === currentBase) optionEl.selected = true;
-        harmonyBaseSelectEl.appendChild(optionEl);
-    });
-    const baseHex = harmonyBaseSelectEl.value || normalizeHex6(activeColors[0]?.hex);
-    latestHarmonyColors = getHarmonyColors(baseHex, harmonyModeSelectEl.value || 'complementary');
-    harmonyGeneratorResultsEl.innerHTML = '';
-    const headerEl = document.createElement('div');
-    headerEl.className = 'workbenchCard';
-    headerEl.textContent = `Harmony preview: ${latestHarmonyColors.join(', ')}`;
-    harmonyGeneratorResultsEl.appendChild(headerEl);
-    const stripEl = document.createElement('div');
-    stripEl.className = 'harmonyStrip';
-    for (const hex of latestHarmonyColors) {
-        const swatchEl = document.createElement('span');
-        swatchEl.className = 'harmonySwatch';
-        swatchEl.dataset.harmonyColor = hex;
-        swatchEl.title = hex;
-        swatchEl.style.backgroundColor = hex;
-        stripEl.appendChild(swatchEl);
-    }
-    harmonyGeneratorResultsEl.appendChild(stripEl);
-}
-
 function applyColorVisionMatrix(hex, matrix) {
     const rgb = tinycolor(hex).toRgb();
     const transformed = matrix.map(row => Math.round(row[0] * rgb.r + row[1] * rgb.g + row[2] * rgb.b));
@@ -1295,30 +1303,38 @@ function renderVisionSimulation() {
 
 function renderUiPreviewBoard() {
     if (!uiPreviewBoardEl) return;
-    const roles = getResolvedRoleColors();
-    const background = roles.background?.hex || '#ffffff';
-    const surface = roles.surface?.hex || '#f8f9fa';
-    const text = roles.text?.hex || '#000000';
-    const primary = roles.primary?.hex || '#0d6efd';
-    const accent = roles.accent?.hex || '#6610f2';
-    const border = roles.border?.hex || '#dee2e6';
-    const primaryText = getReadableTextColor(primary);
+    const modes = [
+        { label: 'Light Mode', roles: getResolvedRoleColors('light') },
+        { label: 'Dark Mode', roles: getResolvedRoleColors('dark') },
+    ];
     uiPreviewBoardEl.innerHTML = '';
-    const boardEl = document.createElement('div');
-    boardEl.className = 'previewBoard';
-    boardEl.style.background = background;
-    boardEl.style.color = text;
-    boardEl.style.borderColor = border;
-    boardEl.innerHTML = `<strong>UI Preview Board</strong><span>Semantic roles applied to common controls.</span>`;
-    const controlsEl = document.createElement('div');
-    controlsEl.className = 'previewControls';
-    controlsEl.innerHTML = `
-        <span class="previewButton" style="background:${primary};color:${primaryText};border-color:${primary};">Sample Button</span>
-        <span class="previewBadge" style="background:${accent};color:${getReadableTextColor(accent)};">Badge</span>
-        <span class="previewButton" style="background:${surface};color:${text};border-color:${border};">Secondary</span>
-    `;
-    boardEl.appendChild(controlsEl);
-    uiPreviewBoardEl.appendChild(boardEl);
+    const wrapperEl = document.createElement('div');
+    wrapperEl.className = 'previewModeGrid';
+    for (const mode of modes) {
+        const background = mode.roles.background?.hex || '#ffffff';
+        const surface = mode.roles.surface?.hex || '#f8f9fa';
+        const text = mode.roles.text?.hex || '#000000';
+        const primary = mode.roles.primary?.hex || '#0d6efd';
+        const accent = mode.roles.accent?.hex || '#6610f2';
+        const border = mode.roles.border?.hex || '#dee2e6';
+        const primaryText = getReadableTextColor(primary);
+        const boardEl = document.createElement('div');
+        boardEl.className = 'previewBoard';
+        boardEl.style.background = background;
+        boardEl.style.color = text;
+        boardEl.style.borderColor = border;
+        boardEl.innerHTML = `<strong>${mode.label}</strong><span>Semantic roles applied to common controls.</span>`;
+        const controlsEl = document.createElement('div');
+        controlsEl.className = 'previewControls';
+        controlsEl.innerHTML = `
+            <span class="previewButton" style="background:${primary};color:${primaryText};border-color:${primary};">Sample Button</span>
+            <span class="previewBadge" style="background:${accent};color:${getReadableTextColor(accent)};">Badge</span>
+            <span class="previewButton" style="background:${surface};color:${text};border-color:${border};">Secondary</span>
+        `;
+        boardEl.appendChild(controlsEl);
+        wrapperEl.appendChild(boardEl);
+    }
+    uiPreviewBoardEl.appendChild(wrapperEl);
 }
 
 function renderImagePicker() {
@@ -1350,7 +1366,6 @@ function renderWorkbench() {
     renderPaletteAudit();
     renderThemeBuilder();
     renderPaletteCompare();
-    renderHarmonyGenerator();
     renderVisionSimulation();
     renderUiPreviewBoard();
     renderImagePicker();
@@ -2016,19 +2031,6 @@ function handleImageSamplerClick(event) {
     renderImagePicker();
 }
 
-function applyHarmonyColors(mode) {
-    if (latestHarmonyColors.length === 0) return;
-    const nextColors = mode === 'replace'
-        ? latestHarmonyColors.map(hex => ({ hex }))
-        : [...activeColors, ...latestHarmonyColors.map(hex => ({ hex }))];
-    activeColors = normalizePaletteColors(nextColors);
-    preservePresetC = false;
-    updateUrlFromActiveColors();
-    renderColorsOverlay();
-    renderWorkbench();
-    scheduleRenderChart();
-}
-
 function addSampledColorToPalette() {
     if (!latestSampledHex) {
         showActionMessage('Sample a color from the image first.');
@@ -2058,10 +2060,6 @@ function setupWorkbenchControls() {
         });
     }
     if (comparePaletteInputEl) comparePaletteInputEl.addEventListener('input', renderPaletteCompare);
-    if (harmonyBaseSelectEl) harmonyBaseSelectEl.addEventListener('change', renderHarmonyGenerator);
-    if (harmonyModeSelectEl) harmonyModeSelectEl.addEventListener('change', renderHarmonyGenerator);
-    if (appendHarmonyBtnEl) appendHarmonyBtnEl.addEventListener('click', () => applyHarmonyColors('append'));
-    if (replaceHarmonyBtnEl) replaceHarmonyBtnEl.addEventListener('click', () => applyHarmonyColors('replace'));
     if (imageSamplerCanvasEl) imageSamplerCanvasEl.addEventListener('click', handleImageSamplerClick);
     if (addSampledColorBtnEl) addSampledColorBtnEl.addEventListener('click', addSampledColorToPalette);
 }

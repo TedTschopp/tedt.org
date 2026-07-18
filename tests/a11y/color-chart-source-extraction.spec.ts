@@ -132,7 +132,6 @@ consoleErrorsFixture.describe('Color chart source extraction', () => {
       'Audit',
       'Themes',
       'Compare',
-      'Harmony',
       'Vision',
       'Preview',
       'Image Picker',
@@ -141,13 +140,18 @@ consoleErrorsFixture.describe('Color chart source extraction', () => {
     for (const name of tabNames) {
       await expect(page.getByRole('tab', { name })).toBeVisible();
     }
+    await expect(page.getByRole('tab', { name: 'Harmony' })).toHaveCount(0);
 
     await page.getByRole('tab', { name: 'Tokens' }).click();
     await expect(page.getByLabel('Token export output')).toHaveValue(/--color-1-500: #C73A28;/);
 
     await page.getByRole('tab', { name: 'Roles' }).click();
     await expect(page.getByLabel('Semantic role mapper')).toContainText('primary');
-    await expect(page.getByLabel('Semantic role mapper')).toContainText('background');
+    await expect(page.getByLabel('Semantic role mapper')).toContainText('Shared roles');
+    await expect(page.getByLabel('Semantic role mapper')).toContainText('Light mode roles');
+    await expect(page.getByLabel('Semantic role mapper')).toContainText('Dark mode roles');
+    await expect(page.getByLabel('light background role color')).toBeVisible();
+    await expect(page.getByLabel('dark background role color')).toBeVisible();
 
     await page.getByRole('tab', { name: 'Audit' }).click();
     await expect(page.getByLabel('Palette audit results')).toContainText('Palette audit');
@@ -161,14 +165,13 @@ consoleErrorsFixture.describe('Color chart source extraction', () => {
     await expect(page.getByLabel('Palette comparison results')).toContainText('Nearest match');
     await expect(page.getByLabel('Palette comparison results')).toContainText('#FF0000');
 
-    await page.getByRole('tab', { name: 'Harmony' }).click();
-    await expect(page.getByLabel('Harmony generator results')).toContainText('Harmony preview');
-
     await page.getByRole('tab', { name: 'Vision' }).click();
     await expect(page.getByLabel('Color vision simulation')).toContainText('Deuteranopia');
 
     await page.getByRole('tab', { name: 'Preview' }).click();
     await expect(page.getByLabel('UI preview board')).toContainText('Sample Button');
+    await expect(page.getByLabel('UI preview board')).toContainText('Light Mode');
+    await expect(page.getByLabel('UI preview board')).toContainText('Dark Mode');
 
     await page.getByRole('tab', { name: 'Image Picker' }).click();
     await expect(page.getByLabel('Image palette region picker')).toContainText('Upload, paste, or drop an image');
