@@ -1031,17 +1031,27 @@
                 const decodedColorParameter = decodeURIComponent(colorParameter.trim().toLowerCase());
                 if (decodedColorParameter === 'ted' || decodedColorParameter === 'teds') {
                     return [
-                        { hex: '#b1b3b3' },
-                        { hex: '#101820' },
-                        { hex: '#00446f' },
-                        { hex: '#e86027' },
-                        { hex: '#00a9e0' },
-                        { hex: '#007bff' },
-                        { hex: '#f2bc57' },
-                        { hex: '#6f1a07' },
-                        { hex: '#00b339' },
-                        { hex: '#f2bc57' },
-                        { hex: '#f90041' },
+                        // Tedt.org/s old colors
+                        //  { hex: '#b1b3b3' },
+                        //  { hex: '#101820' },
+                        //  { hex: '#00446f' },
+                        //  { hex: '#e86027' },
+                        //  { hex: '#00a9e0' },
+                        //  { hex: '#007bff' },
+                        //  { hex: '#f2bc57' },
+                        //  { hex: '#6f1a07' },
+                        //  { hex: '#00b339' },
+                        //  { hex: '#f2bc57' },
+                        //  { hex: '#f90041' },
+
+                        { hex: '#0EA6CC' },
+                        { hex: '#C73A28' },
+                        { hex: '#E66626' },
+                        { hex: '#FBAA5A' },
+                        { hex: '#1A89C7' },
+                        { hex: '#B73858' },
+                        { hex: '#00B339' }
+
                     ];
                 }
                 // Accept # and non-# hex colors, 3, 6, or 8 digits
