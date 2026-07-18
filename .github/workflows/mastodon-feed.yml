@@ -1,7 +1,9 @@
 name: Feed to Mastodon
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Site Quality + Deploy"]
+    types: [completed]
     branches: [ main ]
   schedule:
     - cron: '0 */6 * * *'
@@ -13,6 +15,7 @@ permissions:
 
 jobs:
   post-feed:
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -82,11 +85,41 @@ jobs:
           echo "Guard output:" && cat tmp/guard.json || true
           SHOULD=$(python3 -c "import json;print(json.load(open('tmp/guard.json')).get('should_post','false'))" || echo false)
           echo "should_post=$SHOULD" >> $GITHUB_OUTPUT
+      - name: Setup Ruby
+        if: steps.guard.outputs.should_post == 'true'
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Build and serve local Mastodon feed
+        if: steps.guard.outputs.should_post == 'true'
+        env:
+          JEKYLL_ENV: production
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          bundle exec jekyll build --quiet
+          bundle exec ruby tests/validate_mastodon_feed.rb
+
+          python3 -m http.server 4000 --bind 127.0.0.1 --directory _site > tmp/mastodon-feed-server.log 2>&1 &
+          echo "$!" > tmp/mastodon-feed-server.pid
+
+          for _ in {1..30}; do
+            if curl -fsS http://127.0.0.1:4000/feed-mastodon.json -o tmp/feed-mastodon-smoke.json; then
+              ruby -rjson -e 'JSON.parse(File.read("tmp/feed-mastodon-smoke.json"))'
+              exit 0
+            fi
+            sleep 1
+          done
+
+          echo "Timed out waiting for local Mastodon feed server" >&2
+          cat tmp/mastodon-feed-server.log >&2 || true
+          exit 1
       - name: Post new items
         if: steps.guard.outputs.should_post == 'true'
         uses: nhoizey/github-action-feed-to-mastodon@v2
         with:
-          feedUrl: "https://tedt.org/feed-mastodon.json"
+          feedUrl: "http://127.0.0.1:4000/feed-mastodon.json"
           mastodonInstance: "https://tschopp.net"
           mastodonToken: ${{ secrets.MASTODON_TOKEN }}
           ignoreFirstRun: false
