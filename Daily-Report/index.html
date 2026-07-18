@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-07-17 | TedT.org</title>
+  <title>Daily Report - 2026-07-18 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,144 +52,108 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-07-17</h1>
-      <p class="meta">Generated <time datetime="2026-07-17T06:38:49+00:00">2026-07-17T06:38:49Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-07-18</h1>
+      <p class="meta">Generated <time datetime="2026-07-18T06:31:10+00:00">2026-07-18T06:31:10Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Repository is healthy. Automated pipelines are running normally. The last significant manual push (2026-07-13) added SEO quality regression tests, topic cluster hub pages, quote portrait tooling, and a new content post. No deploy failures detected. One open Dependabot PR (<code>sass-embedded</code> bump) and several open issues (category page enhancements, SEO improvements) are awaiting attention. Recommended focus: review and merge the Dependabot PR, and begin scoping the category landing page enrichment work.</p>
+      <p>Active development on 2026-07-17: color-chart source palette extraction added and SEO/structured data test infrastructure landed on 2026-07-13. Automated workflows (Mastodon feed, daily report) are healthy. One open Dependabot PR for <code>sass-embedded</code> 1.101.0 needs review. The May 2026 audit tracker (#163) has multiple P0–P2 items still open, including artifact size over the 1 GB limit and a Node.js 20 deprecation deadline.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line</h2>
-<p>Site pipelines are healthy and automated chores are running on schedule. The last substantive human-authored commit batch landed on 2026-07-13 with significant SEO tooling and content additions. No failures in the recent workflow runs reviewed. One open Dependabot PR needs a merge decision.</p>
+<p>Repository is active and automated pipelines are running cleanly. One human-authored feature landed yesterday. The May 2026 audit backlog (#163) contains unresolved P0 items that carry hard deadlines (GitHub Actions Node.js 20 deprecation; GitHub Pages artifact over 1 GB limit). These should be prioritized before they become blocking.</p>
 <hr>
-<h2>Recent Repository Activity</h2>
-<h3>Human Commits (2026-07-11 – 2026-07-13)</h3>
+<h2>Recent Commits (Last 7 Days)</h2>
+<p><strong>2026-07-17</strong></p>
 <ul>
-<li><strong>feat(post): add new article on AI model trends and forecasts</strong> — <code>5b3f0d5</code> (2026-07-11)</li>
+<li><strong>feat(color-chart): implement source palette extraction from URLs and images</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/949a802b821bfba100df78af9d51114b2772b46c">949a802</a> by TedTschopp. New capability to extract color palettes from external URLs and images, expanding the color-chart tooling.</li>
+<li>Merge branch <code>main</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/6746d977b4a0b5f38fc560e23bf346815b0e73cc">6746d97</a> by TedTschopp.</li>
+<li><code>chore: refresh yesterday in enterprise ai</code> — automated bot commit.</li>
+<li><code>chore: refresh daily report</code> — automated bot commit.</li>
 </ul>
-<p>New content post covering AI model trends. Paired with Open Graph / Twitter card image improvements in the same session.</p>
+<p><strong>2026-07-13–14</strong></p>
 <ul>
-<li><strong>feat(meta): update Open Graph and Twitter card images for better sharing</strong> — <code>59bf290</code> (2026-07-11)</li>
+<li><code>chore: refresh yesterday in enterprise ai</code> — automated bot (multiple days).</li>
+<li><strong>feat: add orchestral arrangement for traditional Swiss folk music</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/7862d6c12a9ad6312d5e20083c0da504ac2c7904">7862d6c</a> by TedTschopp. New content post.</li>
+<li><strong>Add SEO quality regression tests and structured data validation</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/cc42eb7490bc642c521b145393d2095fcfbf9f89">cc42eb7</a> by TedTschopp. Introduced <code>check_seo_quality_regressions.rb</code>, <code>check_seo_title_override.rb</code>, <code>check_structured_data_roles.rb</code>, <code>check_topic_clusters.rb</code>, <code>seo_quality.yml</code>, topic hub pages under <code>/topics/</code>, and search-console CSV sample data.</li>
+<li><strong>feat(scripts): add script to apply quote portrait front matter metadata</strong> and <strong>implement checks for quote portrait metadata integrity</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/8e33b16ccce9ddd767589e17e977a0634119a210">8e33b16</a>.</li>
+<li><strong>style(category_registry): update font stack for enterprise architecture</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/240a82c727a75380886e3a403abb4fef38839e3c">240a82c</a>.</li>
+<li><strong>content(feed): update author URL to point to profile page</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/31eea4ae95d1505788a757223f3153cddf64f8e0">31eea4a</a>.</li>
+<li><strong>Clean up SEO problems</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/831d4392c54958e68599af5119df6bdcb639ba68">831d439</a>.</li>
 </ul>
-<p>Improves social sharing previews for posts.</p>
-<ul>
-<li><strong>chore: update Mastodon cache/front matter</strong> — <code>7231e28</code> (2026-07-11)</li>
-</ul>
-<p>Automated Mastodon sync updated toot IDs and front matter in posts.</p>
-<ul>
-<li><strong>Clean up SEO problems</strong> — <code>831d439</code> (2026-07-13)</li>
-</ul>
-<p>Batch SEO cleanup across site content.</p>
-<ul>
-<li><strong>content(feed): update author URL to point to profile page</strong> — <code>31eea4a</code> (2026-07-13)</li>
-</ul>
-<p>Feed author link now points to the profile page.</p>
-<ul>
-<li><strong>style(category_registry): update font stack for enterprise architecture</strong> — <code>240a82c</code> (2026-07-13)</li>
-</ul>
-<p>Visual update to the Enterprise Architecture category palette.</p>
-<ul>
-<li><strong>feat(scripts): add script to apply quote portrait front matter metadata / feat(tests): implement checks for quote portrait metadata integrity</strong> — <code>8e33b16</code> (2026-07-13)</li>
-</ul>
-<p>New tooling to stamp portrait metadata onto Quote posts and validate it.</p>
-<ul>
-<li><strong>Add SEO quality regression tests and structured data validation</strong> — <code>cc42eb7</code> (2026-07-13)</li>
-</ul>
-<p>Large commit introducing:</p>
-<ul>
-<li><code>check_seo_quality_regressions.rb</code> — validates SEO metrics against budgets</li>
-<li><code>check_seo_title_override.rb</code> — validates Liquid SEO title precedence</li>
-<li><code>check_structured_data_roles.rb</code> — verifies structured data schemas</li>
-<li><code>check_topic_clusters.rb</code> — validates topic cluster article linking</li>
-<li><code>seo_quality.yml</code> — budget thresholds and allowlisted URLs</li>
-<li><code>search-console-pages.csv</code> — sample data for SEO analysis</li>
-<li>Multiple topic hub pages under <code>/topics/</code> with structured metadata</li>
-<li><code>topics/index.html</code> — curated reading paths overview</li>
-</ul>
-<ul>
-<li><strong>feat: add orchestral arrangement for traditional Swiss folk music</strong> — <code>7862d6c</code> (2026-07-13)</li>
-</ul>
-<p>New content post.</p>
-<h3>Automated Chore Commits (2026-07-14 – 2026-07-16)</h3>
-<ul>
-<li>Daily <code>chore: refresh yesterday in enterprise ai</code> — runs each afternoon (bot)</li>
-<li>Daily <code>chore: refresh daily report</code> — runs each morning (bot)</li>
-</ul>
-<p>Both cadences are firing correctly with no gaps observed in the last 72 hours.</p>
 <hr>
 <h2>Workflow Health</h2>
-<h3>Site Quality + Deploy</h3>
 <ul>
-<li><strong>Last completed run:</strong> <code>#1013</code> — <code>success</code> (triggered via <code>workflow_dispatch</code>)</li>
-<li>Head SHA at deploy: <code>bb3274f</code> (latest on <code>main</code>)</li>
-<li>No failures in most-recent run reviewed.</li>
-</ul>
-<h3>Feed to Mastodon</h3>
-<ul>
-<li><strong>Last completed run:</strong> <code>success</code> (scheduled, run <code>#2034</code>)</li>
-<li>Mastodon sync is operating normally.</li>
-</ul>
-<h3>Daily Report</h3>
-<ul>
-<li><strong>Current run:</strong> <code>#79</code> — <code>in_progress</code> (this run)</li>
-<li>Previous runs show consistent scheduling with no gaps.</li>
+<li><strong>Daily Report</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29633965967">#80</a>): <code>in_progress</code> — this current run generating this report.</li>
+<li><strong>Feed to Mastodon</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29627326452">#2039</a>): <code>completed / success</code> — 2026-07-18 02:35 UTC.</li>
+<li>No failed workflow conclusions observed in the most recent completed runs.</li>
 </ul>
 <hr>
 <h2>Open Pull Requests</h2>
-<h3>Dependabot: sass-embedded 1.97.1 → 1.101.0</h3>
 <ul>
-<li>Bumps <code>sass-embedded</code> (Ruby gem) across 4 minor/patch releases.</li>
-<li>No blockers apparent from the PR body; standard Dependabot dependency update.</li>
-<li><strong>Action needed:</strong> Review and merge, or confirm compatibility with ADR 0009 (ffi pin) and current Ruby version.</li>
-</ul>
-<p>Additional open PRs exist (output truncated); at least one other Dependabot PR was visible in the data.</p>
-<hr>
-<h2>Open Issues (Sample)</h2>
-<h3>Category Landing Page Enrichment</h3>
-<ul>
-<li><strong>Problem:</strong> 41 category landing pages are minimal redirect stubs with no secondary discovery features (related categories nav, tag cloud, content depth indicators, breadcrumbs).</li>
-<li><strong>Impact:</strong> Limits user discovery paths and engagement depth.</li>
-<li><strong>Status:</strong> Open, no PR linked yet.</li>
-<li><strong>Alignment:</strong> ADR 0006 (Registry-Driven Carousel) and ADR 0007 (Category Theming) provide the data foundation; implementation would extend <code>_layouts/</code> and possibly <code>_includes/</code>.</li>
+<li><strong>Dependabot: Bump <code>sass-embedded</code> from 1.97.1 to 1.101.0</strong> — open against <code>main</code>. This is a routine dependency update for the SCSS compiler. Review for compatibility with the existing <code>ffi</code> pin (ADR 0009) before merging.</li>
 </ul>
 <hr>
-<h2>Content &amp; Publishing Pipeline Observations</h2>
+<h2>Open Issues — Backlog Status</h2>
+<p><strong>Tracker issue #163</strong> (May 2026 repo audit) remains the primary backlog. Key items by priority:</p>
+<h3>P0 (Hard deadlines)</h3>
 <ul>
-<li>The Enterprise AI "yesterday refresh" automation is running daily and committing updated content — pipeline healthy.</li>
-<li>The new <code>/topics/</code> hub pages added 2026-07-13 represent a significant SEO investment. Verify these pages are being indexed and that <code>check_topic_clusters.rb</code> passes cleanly in CI.</li>
-<li>Quote portrait metadata tooling is new; run <code>check_quote_portrait_metadata_integrity.rb</code> (or equivalent) against the full <code>_posts/</code> set to surface any pre-existing gaps before they accumulate.</li>
-<li>Social card images were updated 2026-07-11; spot-check a few posts in a link previewer (Twitter/X card validator, Facebook debugger) to confirm the images render correctly.</li>
+<li><strong>#150</strong> Update GitHub Actions workflows from Node.js 20 to Node.js 24 — deprecation deadline approaching.</li>
+<li><strong>#151</strong> Fix <code>&lt;img&gt;</code> elements with missing <code>src</code> attribute in rendered HTML (234 pages).</li>
+<li><strong>#152</strong> Reduce GitHub Pages artifact size below 1 GB limit — currently at 1.16 GB.</li>
+</ul>
+<h3>P1</h3>
+<ul>
+<li><strong>#153</strong> Fix YAML Date constant crashes in Ruby test harness (1,009 posts invisible).</li>
+<li><strong>#154</strong> Fix 588 broken Monster Manual image paths.</li>
+<li><strong>#155</strong> Update feed snapshot baselines.</li>
+<li><strong>#156</strong> Fix 11 broken internal asset links and 2 broken script references.</li>
+<li><strong>#157</strong> Enforce CI quality gates: remove <code>continue-on-error</code> from HTMLProofer and a11y steps.</li>
+</ul>
+<h3>P2 (Active open issues)</h3>
+<ul>
+<li><strong>#171</strong> Add front matter validation (image/image-alt, category slugs, date format).</li>
+<li><strong>#184</strong> Drive prompt series adoption: audit and populate series metadata.</li>
+<li><strong>#185</strong> Build cross-collection content bridges and related-posts infrastructure.</li>
+<li><strong>#186</strong> Enhance category landing pages: related categories, tag clouds, depth indicators.</li>
 </ul>
 <hr>
-<h2>Risks and Blockers</h2>
+<h2>Content &amp; Publishing Pipeline</h2>
 <ul>
-<li><strong>Dependabot PRs aging:</strong> The <code>sass-embedded</code> PR is open; if Dependabot stacks additional version bumps, merge conflicts become more likely. Merge promptly.</li>
-<li><strong>Topic cluster test coverage:</strong> <code>check_topic_clusters.rb</code> is new and untested in production CI. Confirm it is wired into <code>make qa</code> or <code>make all</code> and that it passes. [ASSUMPTION: it is not yet in CI; verify before relying on it as a gate.]</li>
-<li><strong>Category page issue unscoped:</strong> No PR or milestone is linked to the category landing page enrichment issue. Risk of indefinite drift.</li>
-<li><strong>Open PR count unknown:</strong> PR list was truncated; additional open PRs may exist that were not reviewed.</li>
+<li>Automated Mastodon syndication is running on schedule and succeeding.</li>
+<li>Daily enterprise AI content refresh is running on schedule (bot commits each day).</li>
+<li>New content added: Swiss folk music orchestral arrangement (2026-07-13). New topic hub pages under <code>/topics/</code> with structured metadata added in the SEO quality regression commit.</li>
+<li>SEO/structured data test infrastructure is newly in place — validate it passes cleanly in next full build.</li>
+</ul>
+<hr>
+<h2>Risks &amp; Blockers</h2>
+<ul>
+<li><strong>P0 — Artifact size</strong>: At 1.16 GB, the GitHub Pages artifact exceeds the 1 GB limit. This is a hard blocker for deploy if GitHub enforces the limit. Track #152 immediately.</li>
+<li><strong>P0 — Node.js 20 deprecation</strong>: GitHub Actions deprecation of Node.js 20 runners will fail CI. Track #150.</li>
+<li><strong>P1 — 1,009 posts invisible to test harness</strong> (#153): YAML Date constant crashes mean test coverage is misleadingly low. Any metric derived from test runs underrepresents actual site scope.</li>
+<li><strong>Dependabot PR open</strong>: <code>sass-embedded</code> update should not be left open indefinitely; SCSS regressions are possible if it ages.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge or triage</strong> the <code>sass-embedded</code> Dependabot PR. Check for any conflict with the <code>ffi 1.16.3</code> pin (ADR 0009).</li>
-<li><strong>Wire new test scripts into CI</strong> — specifically <code>check_topic_clusters.rb</code>, <code>check_seo_quality_regressions.rb</code>, and <code>check_quote_portrait_metadata_integrity.rb</code> — so they gate deploys, not just run locally.</li>
-<li><strong>Spot-check social card images</strong> on at least two recently updated posts using Open Graph debuggers.</li>
-<li><strong>Scope the category landing page issue</strong> with a milestone or linked PR to prevent indefinite backlog drift.</li>
-<li><strong>Review full open PR list</strong> — the API response was truncated; do a manual sweep for any stale or conflicting PRs.</li>
+<li><strong>Address #152</strong> (artifact size) — identify largest contributors (<code>_site/</code> bloat, cached media) and prune. This has the highest deploy risk.</li>
+<li><strong>Address #150</strong> (Node.js 20 → 24 migration in Actions YAML) — low-effort, time-sensitive.</li>
+<li><strong>Review and merge Dependabot PR</strong> for <code>sass-embedded</code> after confirming no SCSS breakage.</li>
+<li><strong>Run new SEO regression tests</strong> (<code>check_seo_quality_regressions.rb</code>, <code>check_structured_data_roles.rb</code>) locally to confirm they pass against <code>main</code> before adding to CI.</li>
+<li><strong>Fix #153</strong> (YAML Date crashes in test harness) to restore accurate test coverage across all posts.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — last 20 commits reviewed, covering 2026-07-11 through 2026-07-16.</li>
-<li>Workflow runs: <a href="https://github.com/TedTschopp/tedt.org/actions"><code>list_workflow_runs</code></a> — completed runs for <code>deploy.yml</code> and <code>mastodon-feed.yml</code> reviewed; current Daily Report run (#79) is in-progress.</li>
-<li>Issues: GitHub Issues API — partial list reviewed; full count not confirmed due to output truncation.</li>
-<li>Pull Requests: GitHub PR search — at least one Dependabot PR (<code>sass-embedded</code>) confirmed open; full open PR list was truncated and not fully reviewed.</li>
-<li>No HTML Proofer output, local build logs, or feed integrity check output was available in this run.</li>
-<li>[ASSUMPTION] New test scripts (<code>check_topic_clusters.rb</code>, etc.) are not yet gated in CI — this was inferred from the commit message context; not verified by reviewing <code>.github/workflows/deploy.yml</code> contents.</li>
-<li>Report date: 2026-07-17T06:34 UTC.</li>
+<li>Commits: GitHub API via <code>github-list_commits</code> tool, <code>main</code> branch, last 20 commits as of 2026-07-18T06:27Z.</li>
+<li>Workflow runs: GitHub API via <code>github-actions_list</code> tool; current run (29633965967) is <code>in_progress</code> (this report generation run). Most recent completed workflow run checked: Feed to Mastodon #2039 (success).</li>
+<li>Issues: GitHub API via <code>github-list_issues</code>; top 5 open issues by updated_at. Full backlog under tracker #163 read from issue body.</li>
+<li>Pull requests: GitHub API via <code>github-list_pull_requests</code>; open PRs only. Dependabot PR body inspected for package name/version.</li>
+<li>Workflow run conclusions for the deploy workflow (not checked this run): full workflow run list was available but too large to parse programmatically without bash execution. [ASSUMPTION] No deploy failures are assumed based on the absence of bot failure commits in recent history.</li>
+<li>No external monitoring data (uptime, page speed, Lighthouse) available — not stored in this repository.</li>
+<li>Issue priority labels and P0/P1/P2 designations taken directly from GitHub issue labels and #163 body text.</li>
 </ul>
     </section>
     <footer>
