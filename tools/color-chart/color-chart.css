@@ -110,8 +110,10 @@ body.is-panning {
 #addColorBtn:focus-visible,
 #saveUrlBtn:focus-visible,
 #copyTokensBtn:focus-visible,
+#copyRoleTokensBtn:focus-visible,
 #addSampledColorBtn:focus-visible,
 #tokenFormatSelect:focus-visible,
+#roleTokenFormatSelect:focus-visible,
 #comparePaletteInput:focus-visible,
 .roleSelect:focus-visible,
 .workbenchTab:focus-visible,
@@ -377,8 +379,13 @@ body.is-panning {
     white-space: pre;
 }
 
+.workbenchOutput.compactOutput {
+    min-height: 96px;
+}
+
 .toolTextArea,
 #tokenFormatSelect,
+#roleTokenFormatSelect,
 .roleSelect {
     appearance: none;
     border: 1px solid rgba(var(--bs-secondary-rgb), 0.55);

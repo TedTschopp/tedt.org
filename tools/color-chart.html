@@ -93,6 +93,17 @@
                 <textarea id="tokenExportOutput" class="workbenchOutput" aria-label="Token export output" readonly></textarea>
             </div>
             <div id="rolesPanel" class="workbenchView" role="tabpanel" aria-labelledby="rolesTab" data-workbench-panel="roles" hidden>
+                <div class="workbenchGrid">
+                    <select id="roleTokenFormatSelect" aria-label="Role token export format">
+                        <option value="css">CSS variables</option>
+                        <option value="json">JSON tokens</option>
+                        <option value="scss">SCSS map</option>
+                        <option value="tailwind">Tailwind colors</option>
+                        <option value="bootstrap">Bootstrap variables</option>
+                    </select>
+                    <button id="copyRoleTokensBtn" type="button">Copy role tokens</button>
+                </div>
+                <textarea id="roleTokenExportOutput" class="workbenchOutput compactOutput" aria-label="Semantic role token output" readonly></textarea>
                 <div id="roleMapperOutput" class="workbenchStack" aria-label="Semantic role mapper"></div>
             </div>
             <div id="auditPanel" class="workbenchView" role="tabpanel" aria-labelledby="auditTab" data-workbench-panel="audit" hidden>

@@ -25,6 +25,9 @@ const workbenchPanelEls = Array.from(document.querySelectorAll('[data-workbench-
 const tokenFormatSelectEl = document.getElementById('tokenFormatSelect');
 const tokenExportOutputEl = document.getElementById('tokenExportOutput');
 const copyTokensBtnEl = document.getElementById('copyTokensBtn');
+const roleTokenFormatSelectEl = document.getElementById('roleTokenFormatSelect');
+const roleTokenExportOutputEl = document.getElementById('roleTokenExportOutput');
+const copyRoleTokensBtnEl = document.getElementById('copyRoleTokensBtn');
 const roleMapperOutputEl = document.getElementById('roleMapperOutput');
 const paletteAuditResultsEl = document.getElementById('paletteAuditResults');
 const themeBuilderResultsEl = document.getElementById('themeBuilderResults');
@@ -763,6 +766,7 @@ let activeColors = initialColors.map(c => ({ hex: normalizeHex6(c.hex) }));
 let activeWorkbenchTab = 'contrastMatrix';
 let semanticRoleAssignments = { shared: {}, light: {}, dark: {} };
 let latestSampledHex = null;
+let webMcpToolsRegistered = false;
 const imageSamplerState = {
     image: null,
     label: '',
@@ -1015,6 +1019,41 @@ function renderTokenExporter() {
     tokenExportOutputEl.value = formatDesignTokens(tokenFormatSelectEl.value || 'css');
 }
 
+function formatRoleTokens(format) {
+    const roles = getRoleAssignmentsSnapshot().resolved;
+    const flatEntries = [];
+    for (const [scope, roleMap] of Object.entries({ shared: roles.light, light: roles.light, dark: roles.dark })) {
+        for (const role of SEMANTIC_ROLE_DEFINITIONS) {
+            if (scope === 'shared' && role.scope !== 'shared') continue;
+            if (scope !== 'shared' && role.scope !== 'mode') continue;
+            const record = roleMap[role.key];
+            if (!record) continue;
+            flatEntries.push({ scope, role: role.key, hex: record.hex });
+        }
+    }
+    if (format === 'json') {
+        const tokens = { shared: {}, light: {}, dark: {} };
+        for (const entry of flatEntries) tokens[entry.scope][entry.role] = { value: entry.hex, type: 'color' };
+        return JSON.stringify(tokens, null, 2);
+    }
+    if (format === 'scss') {
+        return ['$semantic-colors: (', ...flatEntries.map(entry => `  "${entry.scope}-${entry.role}": ${entry.hex},`), ');'].join('\n');
+    }
+    if (format === 'tailwind') {
+        const lines = ['module.exports = {', '  theme: {', '    extend: {', '      colors: {'];
+        for (const entry of flatEntries) lines.push(`        '${entry.scope}-${entry.role}': '${entry.hex}',`);
+        lines.push('      }', '    }', '  }', '};');
+        return lines.join('\n');
+    }
+    if (format === 'bootstrap') return formatDesignTokens('bootstrap');
+    return [':root {', ...flatEntries.map(entry => `  --role-${entry.scope}-${entry.role}: ${entry.hex};`), '}'].join('\n');
+}
+
+function renderRoleTokenExporter() {
+    if (!roleTokenExportOutputEl || !roleTokenFormatSelectEl) return;
+    roleTokenExportOutputEl.value = formatRoleTokens(roleTokenFormatSelectEl.value || 'css');
+}
+
 function findBestRecord(records, predicate, fallbackIndex = 0) {
     return records.find(predicate) || records[fallbackIndex] || records[0];
 }
@@ -1079,6 +1118,30 @@ function getResolvedRoleColors(mode = 'light') {
     return resolved;
 }
 
+function getCachedColorName(hex) {
+    return colorNameCache.get(normalizeHex6(hex)) || normalizeHex6(hex);
+}
+
+function formatRoleOptionLabel(record, colorName = getCachedColorName(record.hex)) {
+    return `■ ${colorName} - RGB ${record.rgb.r}, ${record.rgb.g}, ${record.rgb.b} - t${record.shade}`;
+}
+
+function applyRoleOptionStyles(optionEl, record) {
+    optionEl.style.backgroundColor = record.hex;
+    optionEl.style.color = record.textColor;
+    optionEl.title = `${record.hex} - RGB ${record.rgb.r}, ${record.rgb.g}, ${record.rgb.b} - t${record.shade}`;
+}
+
+function hydrateRoleSelectOptionNames(selectEl, records) {
+    records.forEach((record, index) => {
+        void getColorName(record.hex).then((name) => {
+            const optionEl = selectEl.options[index];
+            if (!optionEl || optionEl.value !== getRecordKey(record)) return;
+            optionEl.textContent = formatRoleOptionLabel(record, name);
+        });
+    });
+}
+
 function createRoleSelect(role, scope, records) {
     const assignmentBucket = scope === 'shared' ? semanticRoleAssignments.shared : semanticRoleAssignments[scope];
     const selectedKey = assignmentBucket?.[role.key];
@@ -1101,10 +1164,12 @@ function createRoleSelect(role, scope, records) {
     for (const record of records) {
         const optionEl = document.createElement('option');
         optionEl.value = getRecordKey(record);
-        optionEl.textContent = `${getShadeDisplayName(record)} ${record.hex}`;
+        optionEl.textContent = formatRoleOptionLabel(record);
+        applyRoleOptionStyles(optionEl, record);
         if (optionEl.value === selectedKey) optionEl.selected = true;
         selectEl.appendChild(optionEl);
     }
+    hydrateRoleSelectOptionNames(selectEl, records);
     selectEl.addEventListener('change', () => {
         assignmentBucket[role.key] = selectEl.value;
         renderWorkbench();
@@ -1363,6 +1428,7 @@ function renderWorkbench() {
     renderContrastMatrix();
     renderTokenExporter();
     renderRoleMapper();
+    renderRoleTokenExporter();
     renderPaletteAudit();
     renderThemeBuilder();
     renderPaletteCompare();
@@ -1370,6 +1436,264 @@ function renderWorkbench() {
     renderUiPreviewBoard();
     renderImagePicker();
     setActiveWorkbenchTab(activeWorkbenchTab);
+}
+
+function getInputColors(input) {
+    if (!input || input.colors === undefined) return activeColors.map(color => ({ hex: normalizeHex6(color.hex) }));
+    if (Array.isArray(input.colors)) return normalizePaletteColors(input.colors);
+    if (typeof input.colors === 'string') return normalizePaletteColors(parsePaletteText(input.colors));
+    return [];
+}
+
+function getRoleAssignmentsSnapshot() {
+    ensureSemanticRoleAssignments();
+    return {
+        shared: { ...semanticRoleAssignments.shared },
+        light: { ...semanticRoleAssignments.light },
+        dark: { ...semanticRoleAssignments.dark },
+        resolved: {
+            light: getResolvedRoleColors('light'),
+            dark: getResolvedRoleColors('dark'),
+        },
+    };
+}
+
+function getPaletteAuditSnapshot(colors = activeColors) {
+    const records = getPaletteShadeRecords(colors);
+    const lightRoles = getResolvedRoleColors('light');
+    const darkRoles = getResolvedRoleColors('dark');
+    let nearDuplicateCount = 0;
+    for (let i = 0; i < colors.length; i++) {
+        for (let j = i + 1; j < colors.length; j++) {
+            if (colorDistance(colors[i].hex, colors[j].hex) < 30) nearDuplicateCount += 1;
+        }
+    }
+    return {
+        baseColorCount: colors.length,
+        shadeCount: records.length,
+        neutralShadeCount: records.filter(record => record.hls.s <= 12).length,
+        nearDuplicateBaseColorPairs: nearDuplicateCount,
+        lightBodyContrast: getContrastReport(lightRoles.text?.hex || '#000000', lightRoles.background?.hex || '#ffffff'),
+        darkBodyContrast: getContrastReport(darkRoles.text?.hex || '#ffffff', darkRoles.background?.hex || '#000000'),
+    };
+}
+
+function getPaletteComparisonSnapshot(colors) {
+    const comparison = normalizePaletteColors(colors);
+    return comparison.map(color => {
+        const nearest = activeColors
+            .map(active => ({ hex: normalizeHex6(active.hex), distance: colorDistance(color.hex, active.hex) }))
+            .sort((a, b) => a.distance - b.distance)[0];
+        return {
+            hex: color.hex,
+            nearestMatch: nearest?.hex || null,
+            rgbDistance: nearest ? Math.round(nearest.distance) : null,
+        };
+    });
+}
+
+function buildShareUrlForColors(colors) {
+    const url = new URL(window.location.href);
+    const params = new URLSearchParams(url.search);
+    const hexList = colors
+        .map(color => normalizeHex6(color.hex))
+        .map(hex => hex.replace('#', ''))
+        .join(',');
+    setQueryParamCaseInsensitive(params, 'c', hexList);
+    url.search = params.toString();
+    return url.href;
+}
+
+function setActiveColorsFromWebMcp(colors) {
+    const normalized = normalizePaletteColors(colors);
+    if (normalized.length === 0) throw new Error('Provide at least one valid hex color.');
+    activeColors = normalized;
+    preservePresetC = false;
+    updateUrlFromActiveColors();
+    renderColorsOverlay();
+    renderWorkbench();
+    scheduleRenderChart();
+    return {
+        colors: activeColors.map(color => normalizeHex6(color.hex)),
+        url: window.location.href,
+    };
+}
+
+function setRoleAssignmentFromWebMcp(input = {}) {
+    const scope = input.scope === 'dark' ? 'dark' : input.scope === 'shared' ? 'shared' : 'light';
+    const role = String(input.role || '').trim();
+    const roleDefinition = SEMANTIC_ROLE_DEFINITIONS.find(definition => definition.key === role);
+    if (!roleDefinition) throw new Error('Unknown semantic role.');
+    if ((roleDefinition.scope === 'shared') !== (scope === 'shared')) throw new Error('Role scope does not match the role definition.');
+    const records = getActiveShadeRecords();
+    const targetHex = normalizeHex6(input.hex || input.color || '');
+    const requestedShade = input.shade ? String(input.shade) : null;
+    const selected = records.find(record => record.hex === targetHex && (!requestedShade || record.shade === requestedShade))
+        || records.find(record => record.hex === targetHex)
+        || records[0];
+    if (!selected) throw new Error('No palette colors available.');
+    ensureSemanticRoleAssignments();
+    const bucket = scope === 'shared' ? semanticRoleAssignments.shared : semanticRoleAssignments[scope];
+    bucket[role] = getRecordKey(selected);
+    renderWorkbench();
+    return { scope, role, assigned: selected };
+}
+
+function registerColorChartWebMcpTools() {
+    if (webMcpToolsRegistered) return;
+    const modelContext = document.modelContext;
+    if (!modelContext || typeof modelContext.registerTool !== 'function') return;
+    webMcpToolsRegistered = true;
+
+    const colorListSchema = {
+        type: 'object',
+        properties: {
+            colors: {
+                oneOf: [
+                    { type: 'array', items: { type: 'string' } },
+                    { type: 'string' },
+                ],
+                description: 'Hex colors as an array or comma-separated string.',
+            },
+        },
+    };
+    const tools = [
+        {
+            name: 'color_chart.get_palette',
+            title: 'Get Color Chart Palette',
+            description: 'Returns the current Color Chart palette, generated shade records, semantic role assignments, and share URL.',
+            inputSchema: { type: 'object', properties: {} },
+            annotations: { readOnlyHint: true },
+            execute: async () => ({
+                colors: activeColors.map(color => normalizeHex6(color.hex)),
+                shadeRecords: getActiveShadeRecords(),
+                roles: getRoleAssignmentsSnapshot(),
+                url: window.location.href,
+            }),
+        },
+        {
+            name: 'color_chart.set_palette',
+            title: 'Set Color Chart Palette',
+            description: 'Sets the active Color Chart palette from hex colors and updates the chart, workbench, and URL.',
+            inputSchema: { ...colorListSchema, required: ['colors'] },
+            annotations: { readOnlyHint: false },
+            execute: async (input) => setActiveColorsFromWebMcp(getInputColors(input)),
+        },
+        {
+            name: 'color_chart.generate_shades',
+            title: 'Generate Color Shades',
+            description: 'Generates the Color Chart 50 through 950 shade records for supplied hex colors.',
+            inputSchema: { ...colorListSchema, required: ['colors'] },
+            annotations: { readOnlyHint: true },
+            execute: async (input) => ({ records: getPaletteShadeRecords(getInputColors(input)) }),
+        },
+        {
+            name: 'color_chart.get_color_metadata',
+            title: 'Get Color Metadata',
+            description: 'Returns normalized hex, RGB, HLS, and CMYK metadata for supplied colors.',
+            inputSchema: { ...colorListSchema, required: ['colors'] },
+            annotations: { readOnlyHint: true },
+            execute: async (input) => ({ colors: getInputColors(input).map(color => getColorMetrics(color.hex)) }),
+        },
+        {
+            name: 'color_chart.calculate_contrast',
+            title: 'Calculate Color Contrast',
+            description: 'Calculates WCAG contrast between a foreground color and a background color.',
+            inputSchema: {
+                type: 'object',
+                properties: {
+                    foregroundHex: { type: 'string' },
+                    backgroundHex: { type: 'string' },
+                },
+                required: ['foregroundHex', 'backgroundHex'],
+            },
+            annotations: { readOnlyHint: true },
+            execute: async (input) => getContrastReport(input.foregroundHex, input.backgroundHex),
+        },
+        {
+            name: 'color_chart.normalize_palette',
+            title: 'Normalize Color Palette',
+            description: 'Normalizes, validates, and deduplicates supplied colors using the Color Chart palette rules.',
+            inputSchema: { ...colorListSchema, required: ['colors'] },
+            annotations: { readOnlyHint: true },
+            execute: async (input) => ({ colors: getInputColors(input).map(color => color.hex) }),
+        },
+        {
+            name: 'color_chart.export_tokens',
+            title: 'Export Color Tokens',
+            description: 'Exports the current palette as CSS variables, JSON tokens, SCSS map, Tailwind colors, or Bootstrap variables.',
+            inputSchema: {
+                type: 'object',
+                properties: {
+                    format: { type: 'string', enum: ['css', 'json', 'scss', 'tailwind', 'bootstrap'] },
+                },
+            },
+            annotations: { readOnlyHint: true },
+            execute: async (input = {}) => ({ format: input.format || 'css', value: formatDesignTokens(input.format || 'css') }),
+        },
+        {
+            name: 'color_chart.compare_palette',
+            title: 'Compare Palette',
+            description: 'Compares supplied colors to the active palette and returns nearest active-palette matches.',
+            inputSchema: { ...colorListSchema, required: ['colors'] },
+            annotations: { readOnlyHint: true },
+            execute: async (input) => ({ comparisons: getPaletteComparisonSnapshot(getInputColors(input)) }),
+        },
+        {
+            name: 'color_chart.audit_palette',
+            title: 'Audit Color Palette',
+            description: 'Returns palette audit signals for base colors, generated shades, neutrals, near duplicates, and light/dark role contrast.',
+            inputSchema: colorListSchema,
+            annotations: { readOnlyHint: true },
+            execute: async (input = {}) => ({ audit: getPaletteAuditSnapshot(getInputColors(input)) }),
+        },
+        {
+            name: 'color_chart.extract_colors_from_css',
+            title: 'Extract Colors From CSS',
+            description: 'Extracts and ranks color candidates from supplied CSS text using the Color Chart extraction rules.',
+            inputSchema: {
+                type: 'object',
+                properties: {
+                    cssText: { type: 'string', maxLength: 50000 },
+                },
+                required: ['cssText'],
+            },
+            annotations: { readOnlyHint: true },
+            execute: async (input) => ({ colors: mergeAndRankPaletteCandidates(extractColorCandidatesFromCssText(String(input.cssText || '').slice(0, 50000))) }),
+        },
+        {
+            name: 'color_chart.build_share_url',
+            title: 'Build Color Chart Share URL',
+            description: 'Builds a shareable Color Chart URL for supplied colors or the current active palette.',
+            inputSchema: colorListSchema,
+            annotations: { readOnlyHint: true },
+            execute: async (input = {}) => ({ url: buildShareUrlForColors(getInputColors(input)) }),
+        },
+        {
+            name: 'color_chart.set_role_assignment',
+            title: 'Set Semantic Role Assignment',
+            description: 'Assigns a current palette shade to a shared, light-mode, or dark-mode semantic role and refreshes the workbench.',
+            inputSchema: {
+                type: 'object',
+                properties: {
+                    scope: { type: 'string', enum: ['shared', 'light', 'dark'] },
+                    role: { type: 'string' },
+                    hex: { type: 'string' },
+                    shade: { type: 'string' },
+                },
+                required: ['scope', 'role', 'hex'],
+            },
+            annotations: { readOnlyHint: false },
+            execute: async (input) => setRoleAssignmentFromWebMcp(input),
+        },
+    ];
+    for (const tool of tools) void modelContext.registerTool(tool).catch(() => {});
+    window.colorChartWebMcpTools = tools.map(tool => ({
+        name: tool.name,
+        title: tool.title,
+        description: tool.description,
+        readOnlyHint: !!tool.annotations?.readOnlyHint,
+    }));
 }
 
 function isSimilarToKeptColorShade(hex, keptColors) {
@@ -2059,6 +2383,17 @@ function setupWorkbenchControls() {
             }
         });
     }
+    if (roleTokenFormatSelectEl) roleTokenFormatSelectEl.addEventListener('change', renderRoleTokenExporter);
+    if (copyRoleTokensBtnEl) {
+        copyRoleTokensBtnEl.addEventListener('click', async () => {
+            try {
+                await copyTextToClipboard(roleTokenExportOutputEl?.value || '');
+                showActionMessage('Copied role tokens to clipboard.');
+            } catch {
+                showActionMessage('Could not copy role tokens (clipboard unavailable).');
+            }
+        });
+    }
     if (comparePaletteInputEl) comparePaletteInputEl.addEventListener('input', renderPaletteCompare);
     if (imageSamplerCanvasEl) imageSamplerCanvasEl.addEventListener('click', handleImageSamplerClick);
     if (addSampledColorBtnEl) addSampledColorBtnEl.addEventListener('click', addSampledColorToPalette);
@@ -2327,6 +2662,7 @@ setupSourceExtractionControls();
 setupWorkbenchControls();
 renderColorsOverlay();
 renderWorkbench();
+registerColorChartWebMcpTools();
 if (addColorBtnEl) {
     addColorBtnEl.addEventListener('click', () => {
         activeColors.push({ hex: '#808080' });

@@ -1,6 +1,6 @@
 ---
 title: "Color Chart"
-summary: "Fullscreen palette workbench with pan/zoom, contrast matrix, token export, semantic roles, audits, previews, and source image extraction."
+summary: "Fullscreen palette workbench with pan/zoom, contrast matrix, token export, WebMCP tools, semantic roles, audits, previews, and source image extraction."
 subtitle: "Pannable/zoomable color palette explorer"
 status: active
 tool_type: webapp
@@ -29,8 +29,9 @@ features:
   - "Swatch metadata (RGB/HSL/CMYK) + contrast cues"
   - "Workbench contrast matrix for shade pair accessibility checks"
   - "Design token exports for CSS, JSON, SCSS, Tailwind, and Bootstrap"
-  - "Semantic role mapping with shared brand/status roles and separate light/dark surface roles"
+  - "Semantic role mapping with color-rich role dropdowns, role token export, shared brand/status roles, and separate light/dark surface roles"
   - "Palette audit, theme suggestions, comparison, color-vision simulation, dual-mode UI preview, and manual image sampling"
+  - "WebMCP tool registration for browser agents that expose document.modelContext"
 license: "MIT"
 ---
 
@@ -41,6 +42,9 @@ into a grid of related shades, then lets you *move around the chart* (pan and
 zoom) to evaluate the palette as a system. It can also extract a starting
 palette from browser-readable URLs, uploaded images, or pasted screenshots, then
 audit, compare, export, and preview the palette in common UI contexts.
+When a browser or browser agent exposes the draft WebMCP `document.modelContext`
+API, the page also registers read-only and state-changing palette tools for
+agent workflows.
 
 ## How to use it
 
@@ -54,6 +58,9 @@ audit, compare, export, and preview the palette in common UI contexts.
 - **Use the workbench:** check shade-pair contrast, export tokens, map semantic
   roles, audit the palette, build themes, compare palettes, preview color-vision
   simulations, test light/dark UI components, or sample image regions.
+- **Use WebMCP:** in supporting browser agents, call registered Color Chart tools
+  for palette metadata, contrast, shade generation, token export, comparison,
+  auditing, share URL creation, palette updates, and role assignment.
 
 ## URL palettes (`?c=`)
 

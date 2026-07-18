@@ -1,10 +1,14 @@
 import { expect } from '@playwright/test';
+import type { Page, Route } from '@playwright/test';
 import { consoleErrorsFixture } from './helpers/console';
+
+declare const process: { env: Record<string, string | undefined> };
+declare const Buffer: { from(input: string): Uint8Array };
 
 const BASE = process.env.PROD_BASE || 'http://127.0.0.1:4000';
 
-async function stubColorNameApi(page) {
-  await page.route('https://api.color.pizza/**', async route => {
+async function stubColorNameApi(page: Page) {
+  await page.route('https://api.color.pizza/**', async (route: Route) => {
     const requestUrl = new URL(route.request().url());
     const hex = requestUrl.pathname.split('/').filter(Boolean).pop() || '000000';
     await route.fulfill({
@@ -15,6 +19,27 @@ async function stubColorNameApi(page) {
 }
 
 consoleErrorsFixture.describe('Color chart source extraction', () => {
+  async function installWebMcpStub(page: Page) {
+    await page.addInitScript(() => {
+      const tools: any[] = [];
+      const modelContext = {
+        registerTool: async (tool: any) => {
+          tools.push(tool);
+        },
+      };
+      Object.defineProperty(window, '__colorChartWebMcpTools', {
+        configurable: true,
+        value: tools,
+      });
+      Object.defineProperty(Document.prototype, 'modelContext', {
+        configurable: true,
+        get() {
+          return modelContext;
+        },
+      });
+    });
+  }
+
   consoleErrorsFixture('keeps existing URL palette rendering intact', async ({ page, consoleErrors }) => {
     await stubColorNameApi(page);
     await page.goto(`${BASE}/tools/color-chart.html?c=teds`, { waitUntil: 'domcontentloaded' });
@@ -152,6 +177,12 @@ consoleErrorsFixture.describe('Color chart source extraction', () => {
     await expect(page.getByLabel('Semantic role mapper')).toContainText('Dark mode roles');
     await expect(page.getByLabel('light background role color')).toBeVisible();
     await expect(page.getByLabel('dark background role color')).toBeVisible();
+    await expect(page.getByLabel('Semantic role token output')).toHaveValue(/--role-light-background:/);
+    await expect(page.getByRole('button', { name: 'Copy role tokens' })).toBeVisible();
+    const roleOptionText = await page.getByLabel('light background role color').evaluate((select: HTMLSelectElement) => select.options[0].textContent || '');
+    expect(roleOptionText).toContain('■');
+    expect(roleOptionText).toContain('RGB');
+    expect(roleOptionText).toMatch(/t\d+/);
 
     await page.getByRole('tab', { name: 'Audit' }).click();
     await expect(page.getByLabel('Palette audit results')).toContainText('Palette audit');
@@ -177,5 +208,52 @@ consoleErrorsFixture.describe('Color chart source extraction', () => {
     await expect(page.getByLabel('Image palette region picker')).toContainText('Upload, paste, or drop an image');
 
     expect(consoleErrors, 'Full workbench should not create console errors').toHaveLength(0);
+  });
+
+  consoleErrorsFixture('registers WebMCP tools when document.modelContext is available', async ({ page, consoleErrors }) => {
+    await installWebMcpStub(page);
+    await stubColorNameApi(page);
+    await page.goto(`${BASE}/tools/color-chart.html?c=000000,ffffff`, { waitUntil: 'domcontentloaded' });
+
+    await page.waitForFunction(() => (window as any).__colorChartWebMcpTools?.length >= 8);
+    const result = await page.evaluate(async () => {
+      const tools = (window as any).__colorChartWebMcpTools as any[];
+      const names = tools.map(tool => tool.name).sort();
+      const contrast = await tools.find(tool => tool.name === 'color_chart.calculate_contrast').execute({
+        foregroundHex: '#000000',
+        backgroundHex: '#FFFFFF',
+      });
+      const shades = await tools.find(tool => tool.name === 'color_chart.generate_shades').execute({
+        colors: ['#000000'],
+      });
+      const setPalette = await tools.find(tool => tool.name === 'color_chart.set_palette').execute({
+        colors: ['#0EA6CC', '#FFFFFF'],
+      });
+      return {
+        names,
+        contrast,
+        shadeCount: shades.records.length,
+        setPalette,
+        colorListText: document.getElementById('colorsList')?.textContent || '',
+      };
+    });
+
+    expect(result.names).toEqual(expect.arrayContaining([
+      'color_chart.audit_palette',
+      'color_chart.build_share_url',
+      'color_chart.calculate_contrast',
+      'color_chart.compare_palette',
+      'color_chart.export_tokens',
+      'color_chart.generate_shades',
+      'color_chart.get_color_metadata',
+      'color_chart.get_palette',
+      'color_chart.normalize_palette',
+      'color_chart.set_palette',
+    ]));
+    expect(result.contrast.ratio).toBeCloseTo(21, 2);
+    expect(result.shadeCount).toBe(11);
+    expect(result.setPalette.colors).toEqual(['#0EA6CC', '#FFFFFF']);
+    expect(result.colorListText).toContain('#0EA6CC');
+    expect(consoleErrors, 'WebMCP registration should not create console errors').toHaveLength(0);
   });
 });

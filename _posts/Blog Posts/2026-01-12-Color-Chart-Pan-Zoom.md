@@ -24,9 +24,10 @@ bullets:
   - URL-driven palettes via `?c=`.
   - Palette extraction from readable URLs, uploaded images, and pasted screenshots.
   - Workbench tools for contrast, tokens, mode-aware roles, audits, themes, comparisons, previews, and image sampling.
+  - WebMCP tools for browser agents that expose `document.modelContext`.
 
-description: "Documentation for the tedt.org Color Chart tool: a fullscreen, pannable, zoomable palette workbench with URL-driven inputs and analysis tools."
-seo-description: "How to use the tedt.org Color Chart tool: pan/zoom controls, URL palettes, contrast matrix, token export, semantic roles, and palette previews."
+description: "Documentation for the tedt.org Color Chart tool: a fullscreen, pannable, zoomable palette workbench with URL-driven inputs, WebMCP hooks, and analysis tools."
+seo-description: "How to use the tedt.org Color Chart tool: pan/zoom controls, URL palettes, contrast matrix, WebMCP tools, token export, semantic roles, and palette previews."
 
 categories:
   - Computers
@@ -77,7 +78,7 @@ Think of it like a map: the screen is your viewport, and the chart is a larger w
 
 ## What the tool does
 
-Given one or more base colors, the tool generates a grid of shades and supporting metadata (RGB/HSL/CMYK and contrast information) so you can evaluate a palette as a system, not as a collection of isolated swatches. The workbench adds decision tools for accessibility, export, semantic roles, theme suggestions, palette comparisons, color-vision simulation, dual-mode UI previews, and manual image sampling.
+Given one or more base colors, the tool generates a grid of shades and supporting metadata (RGB/HSL/CMYK and contrast information) so you can evaluate a palette as a system, not as a collection of isolated swatches. The workbench adds decision tools for accessibility, export, semantic roles, theme suggestions, palette comparisons, color-vision simulation, dual-mode UI previews, and manual image sampling. In browsers or browser agents that support the draft WebMCP API, the page also registers palette tools through `document.modelContext`.
 
 ## Pan and zoom (three ways)
 
@@ -142,13 +143,34 @@ The workbench turns the chart from a viewer into a decision surface:
 
 - **Contrast Matrix:** checks generated shade pairings and labels AA, AAA, large-text, or failing combinations.
 - **Tokens:** exports the current shade system as CSS variables, JSON tokens, SCSS maps, Tailwind colors, or Bootstrap-oriented variables.
-- **Roles:** maps shades to semantic UI roles. Brand/status/focus roles are shared, while background, surface, text, and border are set separately for light and dark modes.
+- **Roles:** maps shades to semantic UI roles. Role dropdowns show a color patch, color name, RGB value, and tint value; the panel also exports role tokens. Brand/status/focus roles are shared, while background, surface, text, and border are set separately for light and dark modes.
 - **Audit:** flags contrast, near-duplicate colors, missing neutrals, and other palette risks.
 - **Themes:** proposes light and dark theme pairings from the semantic roles.
 - **Compare:** compares another palette against the active palette and reports nearest matches.
 - **Vision:** approximates common color-vision simulations and grayscale views.
 - **Preview:** renders common UI pieces in both Light Mode and Dark Mode using the semantic roles.
 - **Image Picker:** lets you sample colors manually from an uploaded, pasted, or dropped image.
+
+## WebMCP tools
+
+The page registers WebMCP tools when the browser exposes the draft `document.modelContext.registerTool()` API. These tools let a browser agent inspect or update the same palette state the UI uses.
+
+The registered tools cover:
+
+- getting the current palette, generated shades, semantic roles, and share URL
+- setting the active palette
+- generating shade records for supplied colors
+- returning color metadata
+- calculating contrast
+- normalizing and deduplicating palettes
+- exporting tokens
+- comparing palettes
+- auditing the active palette
+- extracting colors from CSS text
+- building share URLs
+- assigning semantic roles
+
+If the browser does not support WebMCP, the page continues to behave normally; the tools simply are not registered.
 
 ## A small (honest) note about network calls
 
