@@ -432,6 +432,19 @@
         const SOURCE_FETCH_TIMEOUT_MS = 8000;
         const MAX_EXTRACTED_COLORS = 12;
         const MAX_REMOTE_IMAGE_CANDIDATES = 5;
+        const SHADE_DEDUPE_DISTANCE_BY_SHADE = {
+            50: 16,
+            100: 20,
+            200: 24,
+            300: 28,
+            400: 30,
+            500: 30,
+            600: 30,
+            700: 28,
+            800: 24,
+            900: 20,
+            950: 16,
+        };
 
         const fontCatalog = [
             // Browser-generic defaults (defined by the user agent)
@@ -1108,6 +1121,33 @@
 
         let activeColors = initialColors.map(c => ({ hex: normalizeHex6(c.hex) }));
 
+        function getShadeColors(hex) {
+            return {
+                50: tinycolor(hex).clone().lighten(45).toHexString(),
+                100: tinycolor(hex).clone().lighten(40).toHexString(),
+                200: tinycolor(hex).clone().lighten(30).toHexString(),
+                300: tinycolor(hex).clone().lighten(20).toHexString(),
+                400: tinycolor(hex).clone().lighten(10).toHexString(),
+                500: tinycolor(hex).toHexString(),
+                600: tinycolor(hex).clone().darken(10).toHexString(),
+                700: tinycolor(hex).clone().darken(20).toHexString(),
+                800: tinycolor(hex).clone().darken(30).toHexString(),
+                900: tinycolor(hex).clone().darken(40).toHexString(),
+                950: tinycolor(hex).clone().darken(45).toHexString(),
+            };
+        }
+
+        function isSimilarToKeptColorShade(hex, keptColors) {
+            for (const keptColor of keptColors) {
+                const shadeColors = getShadeColors(keptColor.hex);
+                for (const [shade, shadeHex] of Object.entries(shadeColors)) {
+                    const distance = SHADE_DEDUPE_DISTANCE_BY_SHADE[shade] || 24;
+                    if (colorDistance(hex, shadeHex) <= distance) return true;
+                }
+            }
+            return false;
+        }
+
         function normalizePaletteColors(colors) {
             const seen = new Set();
             const normalized = [];
@@ -1116,6 +1156,7 @@
                 const hex = normalizeHex6(raw);
                 if (hex === '#000000' && !/^#?0{6}$/i.test(String(raw || ''))) continue;
                 if (seen.has(hex)) continue;
+                if (isSimilarToKeptColorShade(hex, normalized)) continue;
                 seen.add(hex);
                 normalized.push({ hex });
                 if (normalized.length >= MAX_EXTRACTED_COLORS) break;
@@ -1833,19 +1874,7 @@
                 const shadeBoxes = colorShades.map(async (shade, index) => {
                     const colorBox = document.createElement('div');
                     colorBox.className = 'color-box';
-                    const shadeColors = {
-                        50: tinycolor(color.hex).clone().lighten(45).toHexString(),
-                        100: tinycolor(color.hex).clone().lighten(40).toHexString(),
-                        200: tinycolor(color.hex).clone().lighten(30).toHexString(),
-                        300: tinycolor(color.hex).clone().lighten(20).toHexString(),
-                        400: tinycolor(color.hex).clone().lighten(10).toHexString(),
-                        500: tinycolor(color.hex).toHexString(),
-                        600: tinycolor(color.hex).clone().darken(10).toHexString(),
-                        700: tinycolor(color.hex).clone().darken(20).toHexString(),
-                        800: tinycolor(color.hex).clone().darken(30).toHexString(),
-                        900: tinycolor(color.hex).clone().darken(40).toHexString(),
-                        950: tinycolor(color.hex).clone().darken(45).toHexString(),
-                    };
+                    const shadeColors = getShadeColors(color.hex);
                     colorBox.style.backgroundColor = shadeColors[shade];
                     colorBox.style.borderRadius = '8px';
                     colorBox.style.display = 'flex';
