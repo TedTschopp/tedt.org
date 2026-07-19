@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-07-18 | TedT.org</title>
+  <title>Daily Report - 2026-07-19 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,108 +52,119 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-07-18</h1>
-      <p class="meta">Generated <time datetime="2026-07-18T06:31:10+00:00">2026-07-18T06:31:10Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-07-19</h1>
+      <p class="meta">Generated <time datetime="2026-07-19T07:07:32+00:00">2026-07-19T07:07:32Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Active development on 2026-07-17: color-chart source palette extraction added and SEO/structured data test infrastructure landed on 2026-07-13. Automated workflows (Mastodon feed, daily report) are healthy. One open Dependabot PR for <code>sass-embedded</code> 1.101.0 needs review. The May 2026 audit tracker (#163) has multiple P0–P2 items still open, including artifact size over the 1 GB limit and a Node.js 20 deprecation deadline.</p>
+      <p><strong>Site is healthy and actively developing.</strong> A new article on the "Red Queen problem in enterprise AI" was published yesterday. Significant color-chart tooling work is ongoing (6+ commits in 48 hours). Automated workflows (Mastodon sync, daily report, CodeQL) are all passing. 13 open dependency-bump PRs need attention, notably <code>sass-embedded</code>, <code>google-protobuf</code>, and a major <code>html-proofer</code> v3→v5 upgrade. <code>ffi</code> pin (ADR 0009) has a pending bump PR — hold until intentional. 10+ open P2/P3 issues represent the active backlog.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line</h2>
-<p>Repository is active and automated pipelines are running cleanly. One human-authored feature landed yesterday. The May 2026 audit backlog (#163) contains unresolved P0 items that carry hard deadlines (GitHub Actions Node.js 20 deprecation; GitHub Pages artifact over 1 GB limit). These should be prioritized before they become blocking.</p>
+<p>Site is healthy. New content published. Automated pipelines running cleanly. Main action items are the dependency PR queue and the <code>ffi</code> pin decision.</p>
 <hr>
-<h2>Recent Commits (Last 7 Days)</h2>
-<p><strong>2026-07-17</strong></p>
+<h2>Recent Repository Activity</h2>
+<h3>Commits — Last 48 Hours (2026-07-18 to 2026-07-19)</h3>
 <ul>
-<li><strong>feat(color-chart): implement source palette extraction from URLs and images</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/949a802b821bfba100df78af9d51114b2772b46c">949a802</a> by TedTschopp. New capability to extract color palettes from external URLs and images, expanding the color-chart tooling.</li>
-<li>Merge branch <code>main</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/6746d977b4a0b5f38fc560e23bf346815b0e73cc">6746d97</a> by TedTschopp.</li>
-<li><code>chore: refresh yesterday in enterprise ai</code> — automated bot commit.</li>
-<li><code>chore: refresh daily report</code> — automated bot commit.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/598d0df2158b2b244df9dbf9e7b7e6b2ee228820"><code>598d0df</code></a>** <code>chore: update Mastodon cache/front matter</code> — 2026-07-19 02:51 UTC (github-actions[bot])</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/de703ed076c2e9fb0658d3e7abda001189c5e311"><code>de703ed</code></a>** <code>chore: remove empty code change entries from changes log</code> — 2026-07-18 19:34 UTC</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/6cd8829e2437951b378120292ec418d1a84d8fe6"><code>6cd8829</code></a>** <code>feat(post): add new article on the Red Queen problem in enterprise AI</code> + image assets — 2026-07-18 19:20 UTC</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/19a76162caa7cfce7dbb603621070d0770dedd8e"><code>19a7616</code></a>** <code>feat(color-chart): add WebMCP tools for enhanced palette management and role token export</code> — 2026-07-18 17:57 UTC</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/cb3f7a5a723018a2153e83982cef821048462f54"><code>cb3f7a5</code></a>** <code>refactor(color-chart): remove harmony feature and update role mapping for light/dark modes</code> — 2026-07-18 17:19 UTC</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/70714713a0d2f63b2ff4de01a1f997af29844056"><code>7071471</code></a>** <code>feat(color-chart): update color palette for improved aesthetics</code> — 2026-07-18 16:19 UTC</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/1f152d2cd3065b0e84085eec6b7d317b6637f130"><code>1f152d2</code></a>** <code>feat(color-chart): add color analysis functions and tests for shade records</code> — 2026-07-18 16:16 UTC</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/4959ab2ffe315b682c4599ea007a282363c1590f"><code>4959ab2</code></a>** <code>feat(color-chart): add shade color extraction and deduplication logic</code> — 2026-07-18 15:58 UTC</li>
 </ul>
-<p><strong>2026-07-13–14</strong></p>
-<ul>
-<li><code>chore: refresh yesterday in enterprise ai</code> — automated bot (multiple days).</li>
-<li><strong>feat: add orchestral arrangement for traditional Swiss folk music</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/7862d6c12a9ad6312d5e20083c0da504ac2c7904">7862d6c</a> by TedTschopp. New content post.</li>
-<li><strong>Add SEO quality regression tests and structured data validation</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/cc42eb7490bc642c521b145393d2095fcfbf9f89">cc42eb7</a> by TedTschopp. Introduced <code>check_seo_quality_regressions.rb</code>, <code>check_seo_title_override.rb</code>, <code>check_structured_data_roles.rb</code>, <code>check_topic_clusters.rb</code>, <code>seo_quality.yml</code>, topic hub pages under <code>/topics/</code>, and search-console CSV sample data.</li>
-<li><strong>feat(scripts): add script to apply quote portrait front matter metadata</strong> and <strong>implement checks for quote portrait metadata integrity</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/8e33b16ccce9ddd767589e17e977a0634119a210">8e33b16</a>.</li>
-<li><strong>style(category_registry): update font stack for enterprise architecture</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/240a82c727a75380886e3a403abb4fef38839e3c">240a82c</a>.</li>
-<li><strong>content(feed): update author URL to point to profile page</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/31eea4ae95d1505788a757223f3153cddf64f8e0">31eea4a</a>.</li>
-<li><strong>Clean up SEO problems</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/831d4392c54958e68599af5119df6bdcb639ba68">831d439</a>.</li>
-</ul>
+<p><strong>Pattern:</strong> Heavy color-chart tooling iteration (6 commits in ~2 hours on 2026-07-18). One new content article. One automated Mastodon sync commit.</p>
 <hr>
 <h2>Workflow Health</h2>
+<p>All recent workflow runs are passing:</p>
 <ul>
-<li><strong>Daily Report</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29633965967">#80</a>): <code>in_progress</code> — this current run generating this report.</li>
-<li><strong>Feed to Mastodon</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29627326452">#2039</a>): <code>completed / success</code> — 2026-07-18 02:35 UTC.</li>
-<li>No failed workflow conclusions observed in the most recent completed runs.</li>
+<li><strong>Daily Report</strong> — <code>in_progress</code> (this run, #81)</li>
+<li><strong>Push on main / CodeQL</strong> — <code>completed: success</code> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29670844588">run 29670844588</a></li>
+<li><strong>Feed to Mastodon</strong> — <code>completed: success</code> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29670812197">run 29670812197</a></li>
+<li><strong>Enterprise AI refresh</strong> — automated daily chore commits running on schedule</li>
 </ul>
+<p>No failures detected in the last 48 hours.</p>
 <hr>
 <h2>Open Pull Requests</h2>
+<p><strong>13 open PRs</strong> — all appear to be automated dependency bumps. None are feature PRs.</p>
+<h3>Dependency bumps awaiting review:</h3>
 <ul>
-<li><strong>Dependabot: Bump <code>sass-embedded</code> from 1.97.1 to 1.101.0</strong> — open against <code>main</code>. This is a routine dependency update for the SCSS compiler. Review for compatibility with the existing <code>ffi</code> pin (ADR 0009) before merging.</li>
+<li><strong>#205</strong> <code>sass-embedded</code> 1.97.1 → 1.101.0</li>
+<li><strong>#204</strong> <code>google-protobuf</code> 4.33.2 → 4.35.1</li>
+<li><strong>#203</strong> <code>concurrent-ruby</code> 1.3.5 → 1.3.7 (security-patches group)</li>
+<li><strong>#201</strong> <code>actions/checkout</code> v4 → v7</li>
+<li><strong>#200</strong> <code>github/gh-aw-actions</code> 0.71.5 → 0.80.8</li>
+<li><strong>#196</strong> <code>actions/cache</code> v4 → v5</li>
+<li><strong>#195</strong> <code>actions/github-script</code> v7 → v9</li>
+<li><strong>#194</strong> <code>actions/upload-pages-artifact</code> v4 → v5</li>
+<li><strong>#192</strong> <code>html-proofer</code> 3.19.4 → 5.2.1 (<strong>major version bump — breaking changes likely</strong>)</li>
+<li><strong>#188</strong> <code>ffi</code> 1.16.3 → 1.17.4 (<strong>ADR 0009 pin — do not merge without deliberate review</strong>)</li>
+<li><strong>#187</strong> npm/yarn group update (3 packages)</li>
+<li><strong>#164</strong> <code>actions/upload-artifact</code> v6 → v7</li>
+<li><strong>#137</strong> Code scanning fix: DOM text reinterpreted as HTML</li>
+</ul>
+<h3>Risk flags on open PRs:</h3>
+<ul>
+<li><code>html-proofer</code> v3 → v5 (#192) is a major version with changed CLI interface. Test locally before merging.</li>
+<li><code>ffi</code> (#188) is explicitly pinned at 1.16.3 per ADR 0009 for build stability. Do not auto-merge.</li>
+<li><code>actions/checkout</code> v4 → v7 (#201) is a 3-major-version jump — review changelog.</li>
 </ul>
 <hr>
-<h2>Open Issues — Backlog Status</h2>
-<p><strong>Tracker issue #163</strong> (May 2026 repo audit) remains the primary backlog. Key items by priority:</p>
-<h3>P0 (Hard deadlines)</h3>
+<h2>Open Issues Backlog</h2>
+<p><strong>10 open issues visible</strong> (all P2 or P3 enhancements):</p>
 <ul>
-<li><strong>#150</strong> Update GitHub Actions workflows from Node.js 20 to Node.js 24 — deprecation deadline approaching.</li>
-<li><strong>#151</strong> Fix <code>&lt;img&gt;</code> elements with missing <code>src</code> attribute in rendered HTML (234 pages).</li>
-<li><strong>#152</strong> Reduce GitHub Pages artifact size below 1 GB limit — currently at 1.16 GB.</li>
+<li><strong>#186</strong> [P2] Enhance category landing pages: related categories, tag clouds, depth indicators</li>
+<li><strong>#185</strong> [P2] Build cross-collection content bridges and related-posts infrastructure</li>
+<li><strong>#184</strong> [P2] Drive prompt series adoption: audit and populate series metadata</li>
+<li><strong>#183</strong> [P2] Standardize tagging model: enforce coverage and build site-wide tag infrastructure</li>
+<li><strong>#182</strong> [P2] Create slide gallery with topic filtering and deck browser</li>
+<li><strong>#181</strong> [P2] Unify RPG/fantasy content schema and build SEO landing pages</li>
+<li><strong>#180</strong> [P2] Add content contributor guide to README (tone, structure, categories)</li>
+<li><strong>#179</strong> [P2] Curate quotes with thematic tags and personal context</li>
+<li><strong>#178</strong> [P2] SEO &amp; discoverability: strengthen excerpts, descriptions, and create pillar hub pages</li>
+<li><strong>#177</strong> [P3] Document and organize <code>_code/</code> utility scripts</li>
 </ul>
-<h3>P1</h3>
-<ul>
-<li><strong>#153</strong> Fix YAML Date constant crashes in Ruby test harness (1,009 posts invisible).</li>
-<li><strong>#154</strong> Fix 588 broken Monster Manual image paths.</li>
-<li><strong>#155</strong> Update feed snapshot baselines.</li>
-<li><strong>#156</strong> Fix 11 broken internal asset links and 2 broken script references.</li>
-<li><strong>#157</strong> Enforce CI quality gates: remove <code>continue-on-error</code> from HTMLProofer and a11y steps.</li>
-</ul>
-<h3>P2 (Active open issues)</h3>
-<ul>
-<li><strong>#171</strong> Add front matter validation (image/image-alt, category slugs, date format).</li>
-<li><strong>#184</strong> Drive prompt series adoption: audit and populate series metadata.</li>
-<li><strong>#185</strong> Build cross-collection content bridges and related-posts infrastructure.</li>
-<li><strong>#186</strong> Enhance category landing pages: related categories, tag clouds, depth indicators.</li>
-</ul>
+<p>No P1/blocker issues open.</p>
 <hr>
 <h2>Content &amp; Publishing Pipeline</h2>
 <ul>
-<li>Automated Mastodon syndication is running on schedule and succeeding.</li>
-<li>Daily enterprise AI content refresh is running on schedule (bot commits each day).</li>
-<li>New content added: Swiss folk music orchestral arrangement (2026-07-13). New topic hub pages under <code>/topics/</code> with structured metadata added in the SEO quality regression commit.</li>
-<li>SEO/structured data test infrastructure is newly in place — validate it passes cleanly in next full build.</li>
+<li><strong>New article published:</strong> "Chasing the Red Queen" — on the Red Queen problem in enterprise AI, with companion image assets. This aligns with the Enterprise AI category and will be syndicated to Mastodon via automated workflow.</li>
+<li><strong>Mastodon sync:</strong> Running cleanly. Front matter cache updated overnight.</li>
+<li><strong>Daily chore automation:</strong> "refresh yesterday in enterprise ai" commits are running on schedule, indicating the enterprise AI aggregation script is healthy.</li>
 </ul>
 <hr>
-<h2>Risks &amp; Blockers</h2>
+<h2>Risks and Observations</h2>
 <ul>
-<li><strong>P0 — Artifact size</strong>: At 1.16 GB, the GitHub Pages artifact exceeds the 1 GB limit. This is a hard blocker for deploy if GitHub enforces the limit. Track #152 immediately.</li>
-<li><strong>P0 — Node.js 20 deprecation</strong>: GitHub Actions deprecation of Node.js 20 runners will fail CI. Track #150.</li>
-<li><strong>P1 — 1,009 posts invisible to test harness</strong> (#153): YAML Date constant crashes mean test coverage is misleadingly low. Any metric derived from test runs underrepresents actual site scope.</li>
-<li><strong>Dependabot PR open</strong>: <code>sass-embedded</code> update should not be left open indefinitely; SCSS regressions are possible if it ages.</li>
+<li><strong>Color-chart tooling burst:</strong> 6 commits in 2 hours suggest active experimental iteration. No corresponding tests or documentation visible in commit messages. If this is an in-progress feature, consider a feature branch to avoid cluttering <code>main</code> history.</li>
+<li><strong>Dependency PR debt:</strong> 13 open Dependabot/Renovate PRs is a significant queue. The <code>html-proofer</code> major version bump is the highest-risk item. The <code>ffi</code> pin must be handled manually.</li>
+<li><strong>Issue #183 (tagging) blocks #186 (category pages):</strong> Tag cloud work on category pages depends on tagging infrastructure. Sequence these carefully.</li>
+<li><strong>No P1 blockers.</strong> Site is deploying and content is publishing normally.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Address #152</strong> (artifact size) — identify largest contributors (<code>_site/</code> bloat, cached media) and prune. This has the highest deploy risk.</li>
-<li><strong>Address #150</strong> (Node.js 20 → 24 migration in Actions YAML) — low-effort, time-sensitive.</li>
-<li><strong>Review and merge Dependabot PR</strong> for <code>sass-embedded</code> after confirming no SCSS breakage.</li>
-<li><strong>Run new SEO regression tests</strong> (<code>check_seo_quality_regressions.rb</code>, <code>check_structured_data_roles.rb</code>) locally to confirm they pass against <code>main</code> before adding to CI.</li>
-<li><strong>Fix #153</strong> (YAML Date crashes in test harness) to restore accurate test coverage across all posts.</li>
+<li><strong>Review and merge safe dependency PRs first:</strong> Start with <code>concurrent-ruby</code> (#203, security patch), then Actions bumps (#196, #195, #194, #201).</li>
+<li><strong>Plan <code>html-proofer</code> v3→v5 migration (#192):</strong> Run locally with <code>SKIP_EXTERNAL=1</code> to identify breaking changes before merging.</li>
+<li><strong>Hold <code>ffi</code> PR (#188):</strong> Do not merge without intentional ADR 0009 revisit and local build validation on Ruby 3.2.</li>
+<li><strong>Consolidate color-chart commits:</strong> If the color-chart tooling is still in flux, consider a feature branch or squash strategy to keep <code>main</code> commit history clean.</li>
+<li><strong>Prioritize #183 (tagging) as prerequisite</strong> before tackling #186 (category landing pages).</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: GitHub API via <code>github-list_commits</code> tool, <code>main</code> branch, last 20 commits as of 2026-07-18T06:27Z.</li>
-<li>Workflow runs: GitHub API via <code>github-actions_list</code> tool; current run (29633965967) is <code>in_progress</code> (this report generation run). Most recent completed workflow run checked: Feed to Mastodon #2039 (success).</li>
-<li>Issues: GitHub API via <code>github-list_issues</code>; top 5 open issues by updated_at. Full backlog under tracker #163 read from issue body.</li>
-<li>Pull requests: GitHub API via <code>github-list_pull_requests</code>; open PRs only. Dependabot PR body inspected for package name/version.</li>
-<li>Workflow run conclusions for the deploy workflow (not checked this run): full workflow run list was available but too large to parse programmatically without bash execution. [ASSUMPTION] No deploy failures are assumed based on the absence of bot failure commits in recent history.</li>
-<li>No external monitoring data (uptime, page speed, Lighthouse) available — not stored in this repository.</li>
-<li>Issue priority labels and P0/P1/P2 designations taken directly from GitHub issue labels and #163 body text.</li>
+<li>Commits: retrieved via GitHub API, most recent 20 commits on <code>main</code> branch</li>
+<li>Issues: retrieved open issues, showing 10 results (may not be exhaustive if more pages exist)</li>
+<li>Pull requests: retrieved open PRs; 13 found; titles and numbers confirmed from API response</li>
+<li>Workflow runs: retrieved from GitHub Actions API; confirmed recent run statuses</li>
+<li>No build artifact inspection performed (no local build run in this workflow)</li>
+<li>No HTML Proofer output available for this report cycle</li>
+<li><code>ffi</code> ADR 0009 referenced from repository AGENTS.MD / custom instructions — not re-read from <code>/docs/adr/</code> during this run [ASSUMPTION: pin still in effect]</li>
+<li>Issue dependency sequencing (#183 → #186) inferred from issue body text, not from a formal dependency graph</li>
+<li>Daily Report workflow run ID: 29677415152 (this run, <code>in_progress</code> at report time)</li>
 </ul>
     </section>
     <footer>
