@@ -42,8 +42,6 @@ image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: https://tedt.org/
 ---
 
-## Running to Stay Put: The Red Queen Problem in Enterprise AI
-
 As an enterprise architect, I am used to target states. We describe the present and choose a destination. Then we plan the transitions between them. AI makes that habit uncomfortable. A target architecture approved this quarter can look dated before the funding clears. A vendor changes its model. A software product adds the feature we planned to build. A competitor cuts the time required to serve a customer. Employees adopt a different tool on their own.
 
 The Red Queen explains this pattern.
@@ -78,7 +76,7 @@ Large enterprises are good at funding small projects to with a visible sponsor a
 
 So as ideas pile up and the use-case register overflows. Each entry can make sense on its own and in the world of yesterday.  But across the portfolio, teams duplicate model gateways, retrieval stores, prompt libraries, and evaluation code. Business units buy overlapping assistants. The organization pays several times for similar capabilities and still lacks a common way to measure them; are customers who pay the company money getting their needs met, are coordination costs minimized, and can leadership manage with flexibility?
 
-McKinsey's 2025 survey illustrates the problem. Thirty-nine percent of respondents attributed some enterprise Earnings Before Interest and Taxes(EBIT) effect to AI, and most of that group put the effect below 5 percent. The same research found a strong association between business impact and fundamental workflow redesign.[^5] The financial effect appears when the process changes to assume AI from the very beginning.
+McKinsey's 2025 survey illustrates the problem. Thirty-nine percent of respondents attributed some enterprise Earnings Before Interest and Taxes (EBIT) effect to AI, and most of that group put the effect below 5 percent. The same research found a strong association between business impact and fundamental workflow redesign.[^5] The financial effect appears when the process changes to assume AI from the very beginning.
 
 Governance often carries the same mentality. A committee approves a use case at a point in time. After deployment, the model version changes, the system instructions change, source content changes, and the tool gains access to another action. The original approval assumed one set of risks but never considered about how each underlying subsystem would change each month.
 
