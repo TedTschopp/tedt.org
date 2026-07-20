@@ -4553,7 +4553,7 @@
       "context-engineering"
     ],
     "date_published": "2026-06-15T09:00:00-07:00",
-    "date_modified": "2026-06-15T09:00:00-07:00",
+    "date_modified": "2026-07-04T21:42:21-07:00",
     "author": {
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
       "name": "Ted Tschopp",
@@ -4886,5 +4886,34 @@
       "https://tschopp.net/users/Ted/statuses/116903488035681265"
     ],
     "lastTootTimestamp": 1783805664713
+  },
+  "https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/": {
+    "id": "/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
+    "title": "Running to Stay Put",
+    "summary": "Running to Stay Put: The Red Queen Problem in Enterprise AI",
+    "content_text": "Running to Stay Put: The Red Queen Problem in Enterprise AI https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
+    "url": "https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
+    "image": "https://tedt.org/img/2026-07/Chasing-the-Red-Queen.webp",
+    "tags": [
+      "enterprise ai",
+      "red queen syndrome",
+      "ai governance",
+      "ai operating model",
+      "ai portfolio management",
+      "workflow redesign",
+      "ai agents",
+      "model evaluation"
+    ],
+    "date_published": "2026-07-18T00:00:00-07:00",
+    "date_modified": "2026-07-18T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116944370729732145"
+    ],
+    "lastTootTimestamp": 1784429485127
   }
 }
