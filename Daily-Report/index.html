@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-07-20 | TedT.org</title>
+  <title>Daily Report - 2026-07-21 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,94 +52,134 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-07-20</h1>
-      <p class="meta">Generated <time datetime="2026-07-20T07:43:51+00:00">2026-07-20T07:43:51Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-07-21</h1>
+      <p class="meta">Generated <time datetime="2026-07-21T06:51:27+00:00">2026-07-21T06:51:27Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site is healthy. One new article published ("Red Queen problem in enterprise AI"). Active color-chart tooling work continues across multiple commits. Automation pipelines (daily report, Mastodon sync, enterprise AI refresh) all firing normally. Two dependabot security PRs need review and merge. No build failures detected on main.</p>
+      <p><strong>Site is healthy and active.</strong> Content was published and refined on July 18–20 (new "Red Queen" AI article, color-chart tooling work). Automated workflows (Mastodon sync, daily report) are running cleanly. No deployment failures. Open PRs include an unmerged security fix (draft) and two housekeeping items. The May 2026 audit backlog (tracker #163) has several unresolved P0/P1 items that still need attention: Node.js deprecation, artifact size, broken image paths, and YAML crashes in the test harness.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line Up Front</h2>
-<p>Site is operational. Content pipeline active. Two dependabot security PRs are open and passing CI — they should be merged. No failures on main branch. Automated workflows (daily report, Mastodon sync, enterprise AI refresh) all running on schedule.</p>
+<p>Site is publishing normally. A new AI post was added and refined on July 18–20. Color-chart tooling received several iterative commits. Automated workflows are healthy. No deployment failures observed in the most recent runs. The most pressing risks are the unresolved May 2026 audit P0/P1 issues in tracker <a href="https://github.com/TedTschopp/tedt.org/issues/163">#163</a>.</p>
 <hr>
-<h2>Recent Repository Activity</h2>
-<h3>New Content Published</h3>
+<h2>Recent Repository Activity (July 18–21, 2026)</h2>
+<h3>Content</h3>
 <ul>
-<li><strong>New Article (2026-07-18):</strong> "Chasing the Red Queen" — article on the Red Queen problem in enterprise AI, with matching image assets added.</li>
-<li>Commit: <a href="https://github.com/TedTschopp/tedt.org/commit/6cd8829e2437951b378120292ec418d1a84d8fe6"><code>6cd8829</code></a></li>
+<li><strong>New post: "Red Queen problem in enterprise AI"</strong> — Added 2026-07-18, with image assets. Text updated for clarity and formatting on 2026-07-20.</li>
+<li>Commit: <a href="https://github.com/TedTschopp/tedt.org/commit/6cd8829e2437951b378120292ec418d1a84d8fe6"><code>6cd8829</code></a> — <code>feat(post): add new article on the Red Queen problem in enterprise AI</code></li>
+<li>Commit: <a href="https://github.com/TedTschopp/tedt.org/commit/9d1d18e008313b912bb8d861703c85ecbffca48e"><code>9d1d18e</code></a> — <code>content(AI): update text for clarity and formatting in Red Queen problem post</code></li>
 </ul>
-<h3>Color Chart Tooling — Active Development Streak</h3>
-<p>Several commits over 2026-07-17 through 2026-07-18 show sustained work on a color-chart tool:</p>
+<h3>Tooling</h3>
 <ul>
-<li><strong>2026-07-17:</strong> Source palette extraction from URLs and images (<a href="https://github.com/TedTschopp/tedt.org/commit/949a802b821bfba100df78af9d51114b2772b46c"><code>949a802</code></a>)</li>
-<li><strong>2026-07-18:</strong> Shade color extraction and deduplication logic (<a href="https://github.com/TedTschopp/tedt.org/commit/4959ab2ffe315b682c4599ea007a282363c1590f"><code>4959ab2</code></a>)</li>
-<li><strong>2026-07-18:</strong> Color analysis functions and tests for shade records (<a href="https://github.com/TedTschopp/tedt.org/commit/1f152d2cd3065b0e84085eec6b7d317b6637f130"><code>1f152d2</code></a>)</li>
-<li><strong>2026-07-18:</strong> Updated color palette for improved aesthetics (<a href="https://github.com/TedTschopp/tedt.org/commit/70714713a0d2f63b2ff4de01a1f997af29844056"><code>7071471</code></a>)</li>
-<li><strong>2026-07-18:</strong> Removed harmony feature; updated role mapping for light/dark modes (<a href="https://github.com/TedTschopp/tedt.org/commit/cb3f7a5a723018a2153e83982cef821048462f54"><code>cb3f7a5</code></a>)</li>
-<li><strong>2026-07-18:</strong> Added WebMCP tools for enhanced palette management and role token export (<a href="https://github.com/TedTschopp/tedt.org/commit/19a76162caa7cfce7dbb603621070d0770dedd8e"><code>19a7616</code></a>)</li>
+<li><strong>Color-chart tooling (multiple commits, 2026-07-18):</strong></li>
+<li>Added shade color extraction and deduplication logic</li>
+<li>Added color analysis functions and tests for shade records</li>
+<li>Updated color palette for improved aesthetics</li>
+<li>Refactored: removed harmony feature, updated role mapping for light/dark modes</li>
+<li>Added WebMCP tools for enhanced palette management and role token export</li>
+<li>Cleaned empty code change entries from changes log</li>
 </ul>
-<p>This is an active feature area — likely feeding into the site's theming system (ADR 0007). No regressions visible from commit messages.</p>
-<h3>Housekeeping</h3>
 <ul>
-<li>Commit history cleaned up (empty code-change sections removed) on 2026-07-18: <a href="https://github.com/TedTschopp/tedt.org/commit/de703ed076c2e9fb0658d3e7abda001189c5e311"><code>de703ed</code></a>, <a href="https://github.com/TedTschopp/tedt.org/commit/8f23a3158dfae408c400c5be348c214ae726468d"><code>8f23a31</code></a></li>
+<li><strong>AI Engineer Coach VSIX</strong> — Updated download artifact (2026-07-20).</li>
+</ul>
+<h3>Automation</h3>
+<ul>
+<li>Mastodon cache/front matter updated via GitHub Actions (2026-07-19).</li>
+<li>"Refresh yesterday in enterprise ai" automated commit ran on 2026-07-18, 2026-07-19, 2026-07-20.</li>
+<li>Daily report refreshed on 2026-07-18, 2026-07-19.</li>
 </ul>
 <hr>
-<h2>Automated Pipeline Health</h2>
-<p>All scheduled automation appears healthy:</p>
+<h2>Workflow Health</h2>
+<h3>Recent Runs</h3>
 <ul>
-<li><strong>Daily Report:</strong> Refreshed on 2026-07-19 at 07:07 UTC (<a href="https://github.com/TedTschopp/tedt.org/commit/253e667bfb6b50a4226084ffae38589911c88a67"><code>253e667</code></a>); current run (this report) in progress.</li>
-<li><strong>Enterprise AI Refresh:</strong> Ran 2026-07-19 at 14:14 UTC (<a href="https://github.com/TedTschopp/tedt.org/commit/65a0df2783d8df7429bf111ae40f21f03bdd9a43"><code>65a0df2</code></a>) — consistent daily cadence over the past week.</li>
-<li><strong>Mastodon Cache / Front Matter Sync:</strong> Ran 2026-07-19 at 02:51 UTC (<a href="https://github.com/TedTschopp/tedt.org/commit/598d0df2158b2b244df9dbf9e7b7e6b2ee228820"><code>598d0df</code></a>).</li>
+<li><strong>Daily Report</strong> (run #83, 2026-07-21 06:44 UTC) — <code>in_progress</code> (this run).</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/29808001801">View run</a></li>
+</ul>
+<ul>
+<li><strong>Feed to Mastodon</strong> (run #2060, 2026-07-21 02:47 UTC) — <code>completed / success</code>.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/29796762417">View run</a></li>
+</ul>
+<ul>
+<li>No failed workflow runs observed in the most recent batch. [ASSUMPTION: Only the top 8 runs were inspected; older runs not reviewed.]</li>
 </ul>
 <hr>
 <h2>Open Pull Requests</h2>
-<p>Two open Dependabot security PRs, both passing CI:</p>
 <ul>
-<li><strong>PR #203</strong> — <code>concurrent-ruby</code> 1.3.5 → 1.3.7 (security-patches group)</li>
-<li>Status: CI passed (deploy run #1029 succeeded)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/29720772416">View run</a></li>
+<li><strong>PR #164</strong> — <code>chore(ci): bump actions/upload-artifact from v6 to v7</code> (2026-05-29, not draft). Ready to merge; supersedes stale PR #139. Addresses artifact upload workflows in deploy and mastodon-feed.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/164">View PR</a></li>
 </ul>
 <ul>
-<li><strong>Dependabot PR for <code>sass-embedded</code></strong> — 1.97.1 → 1.101.0</li>
-<li>Status: visible in PR list (CI result not separately verified)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/pulls">View PRs</a></li>
+<li><strong>PR #137</strong> — <code>Potential fix for code scanning alert no. 295: DOM text reinterpreted as HTML</code> (2026-01-27, <strong>draft</strong>). Security fix for <code>data-href</code> navigation in <code>_includes/layout/top-nav-bar.html</code>. Copilot Autofix suggestion; needs review before merge.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/137">View PR</a></li>
 </ul>
-<p>Both are routine Dependabot bumps. Review and merge PR #203 first since it's a direct security patch.</p>
-<hr>
-<h2>Open Issues</h2>
-<p>At least one open issue is tracked (full issue list partially available):</p>
 <ul>
-<li>Category landing pages are minimal redirect stubs — no related-category navigation, no tag clouds, no content depth indicators. This is a known UX gap affecting discovery paths. Not blocking anything currently.</li>
+<li>Additional older PRs exist (Dependabot and others). Full list not enumerated here; focus on the two above as most actionable.</li>
 </ul>
 <hr>
-<h2>Risks and Observations</h2>
+<h2>Open Issues — Audit Backlog Summary</h2>
+<p>Active tracker: <a href="https://github.com/TedTschopp/tedt.org/issues/163">#163 — May 2026 repo audit remediation backlog</a></p>
+<h3>P0 (Immediate)</h3>
 <ul>
-<li><strong>Color-chart tooling velocity is high</strong> — 6 commits in one day. No obvious risk to site stability, but if these changes feed into <code>_data/category_registry.yml</code> palettes or <code>_sass/</code> tokens, ensure a clean build + HTML Proofer pass before the next deploy to main. [ASSUMPTION: These commits are to a tools or XP subdirectory, not live CSS/SASS, based on commit message scope <code>(color-chart)</code>.]</li>
-<li><strong>Dependabot PRs accumulating</strong> — two open now. Worth establishing a regular merge cadence to avoid security drift.</li>
-<li><strong>No confirmed deploy run status for main</strong> — the most recent completed deploy run visible was triggered by a PR branch (Dependabot), not a push to main. The main-branch deploy health is inferred healthy from the absence of failures, not directly confirmed.</li>
+<li><strong>#150</strong> — Update GitHub Actions workflows from Node.js 20 to Node.js 24. Hard deadline from GitHub deprecation.</li>
+<li><strong>#151</strong> — Fix <code>&lt;img&gt;</code> elements with missing <code>src</code> attribute in rendered HTML (234 pages).</li>
+<li><strong>#152</strong> — Reduce GitHub Pages artifact size below 1 GB limit (currently 1.16 GB).</li>
+</ul>
+<h3>P1</h3>
+<ul>
+<li><strong>#153</strong> — Fix YAML Date constant crashes in Ruby test harness (1,009 posts invisible to tests).</li>
+<li><strong>#154</strong> — Fix 588 broken Monster Manual image paths in rendered HTML.</li>
+<li><strong>#155</strong> — Update feed snapshot baselines (5 removed items causing diff failures).</li>
+<li><strong>#156</strong> — Fix 11 broken internal asset links and 2 broken script references.</li>
+<li><strong>#157</strong> — Enforce CI quality gates: remove <code>continue-on-error</code> from HTMLProofer and a11y steps.</li>
+</ul>
+<h3>P2 (Strategic / Backlog)</h3>
+<ul>
+<li><strong>#171</strong> — Add front matter validation (image/image-alt, category slugs, date format).</li>
+<li><strong>#186</strong> — Enhance category landing pages (related categories, tag clouds, depth indicators).</li>
+<li><strong>#185</strong> — Build cross-collection content bridges and related-posts infrastructure.</li>
+<li><strong>#184</strong> — Drive prompt series adoption: audit and populate series metadata.</li>
+</ul>
+<hr>
+<h2>Content &amp; Publishing Pipeline Observations</h2>
+<ul>
+<li>The Mastodon sync workflow is running reliably and committing front matter updates automatically.</li>
+<li>The "enterprise AI yesterday" automated refresh is running on schedule.</li>
+<li>The new Red Queen post went from creation to editorial polish in two days — normal cadence.</li>
+<li>Color-chart tooling received significant iterative work in a single day (July 18). The changes are committed directly to <code>main</code> with no PR review. This is consistent with the repo's direct-commit pattern for tooling work.</li>
+</ul>
+<hr>
+<h2>Risks and Blockers</h2>
+<ul>
+<li><strong>Node.js 20 deprecation (#150)</strong>: Hard deadline. No PR open yet. Action required.</li>
+<li><strong>GitHub Pages artifact over 1 GB (#152)</strong>: Deployment could start failing without warning once GitHub enforces the limit.</li>
+<li><strong>YAML test harness crashes (#153)</strong>: 1,009 posts are invisible to the Ruby test suite. Test coverage is significantly understated.</li>
+<li><strong>Draft security PR #137 stale since January 2026</strong>: The <code>data-href</code> DOM navigation vulnerability is unaddressed for 6 months. Should be reviewed and either merged or superseded.</li>
+<li><strong>PR #164 (upload-artifact v6 → v7) unmerged since May 2026</strong>: Low-risk change, but has been open 7+ weeks with no action.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #203</strong> (<code>concurrent-ruby</code> security patch) — CI already passed.</li>
-<li><strong>Review and merge <code>sass-embedded</code> Dependabot PR</strong> — check for any breaking API changes given the major version jump (1.97 → 1.101).</li>
-<li><strong>Verify main-branch deploy</strong> — confirm the most recent push to main completed successfully (verify in GitHub Actions deploy.yml run history filtered to <code>main</code> branch).</li>
-<li><strong>Color-chart feature:</strong> if the palette/role-token work is ready for site integration, run <code>MEM_PROBE=1 bundle exec jekyll build</code> locally to verify no memory regressions before merging.</li>
-<li><strong>Category page UX issue</strong> — low urgency but worth scheduling. Consider a small include enhancement per the open issue's documented gap.</li>
+<li><strong>Merge PR #164</strong> (<code>actions/upload-artifact</code> v6 → v7). Low risk, high value.</li>
+<li><strong>Open a PR for #150</strong> (Node.js 20 → 24 in CI workflows). Hard deadline item.</li>
+<li><strong>Review draft PR #137</strong> (security fix for <code>data-href</code>). Determine whether to merge, close, or rewrite.</li>
+<li><strong>Address artifact size (#152)</strong> before deployment starts failing. Investigate what is inflating the artifact (possibly redundant assets, <code>.bak</code> files from #158).</li>
+<li><strong>Fix YAML test harness crashes (#153)</strong> to restore accurate test coverage.</li>
+<li>Continue content cadence — Red Queen post is live and syndication is running.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: queried via GitHub API, last 20 commits on <code>main</code> branch as of 2026-07-20T07:39 UTC</li>
-<li>Workflow runs: <code>deploy.yml</code> run #1029 details confirmed via <code>get_workflow_run</code> API call; full run list truncated (output too large for inline parsing without bash)</li>
-<li>Open issues: partial preview only — full issue list was too large to parse without bash tool (unavailable in this environment); at least one issue confirmed from preview</li>
-<li>Open PRs: two Dependabot PRs confirmed from preview; full PR detail list was too large to parse inline; PR #203 CI status confirmed from workflow run data</li>
-<li>[ASSUMPTION] <code>color-chart</code> commits are scoped to a non-deployed tools directory and do not directly modify live SCSS or category registry — based solely on commit message scope prefixes</li>
-<li>[ASSUMPTION] Main-branch deploys are healthy; no failure evidence found, but no direct confirmation of the most recent main-branch deploy run result due to output size constraints</li>
-<li>Daily Report workflow run ID: 29725222016 (this report's own run, currently in progress)</li>
+<li>Commits: Retrieved last 20 commits from <code>main</code> branch via GitHub MCP tools (2026-07-18 to 2026-07-21).</li>
+<li>Workflow runs: Retrieved most recent 8 runs across all workflows. Total run count in repo is 7,984. Only the most recent runs were inspected; no historical failure rate analysis was performed.</li>
+<li>Pull requests: Retrieved 5 most-recently-updated open PRs. Additional PRs (Dependabot dependency bumps) exist but were not individually enumerated.</li>
+<li>Issues: Retrieved 10 most-recently-updated open issues. Full issue list not reviewed; tracker #163 used as the authoritative P0–P2 backlog summary.</li>
+<li>[ASSUMPTION] The "Daily Report" workflow run #83 (this run) is in-progress at report generation time; its conclusion is not yet known.</li>
+<li>[ASSUMPTION] No deployment failures were observed in the visible run window, but older runs were not checked.</li>
+<li>External link validation, HTML Proofer results, and build logs were not available (no completed deploy run in the inspected window).</li>
+<li>Source links: <a href="https://github.com/TedTschopp/tedt.org">Repo</a> · <a href="https://github.com/TedTschopp/tedt.org/issues/163">Tracker #163</a> · <a href="https://github.com/TedTschopp/tedt.org/pull/164">PR #164</a> · <a href="https://github.com/TedTschopp/tedt.org/pull/137">PR #137</a> · <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29796762417">Mastodon run</a></li>
 </ul>
     </section>
     <footer>
