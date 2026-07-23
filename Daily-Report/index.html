@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-07-22 | TedT.org</title>
+  <title>Daily Report - 2026-07-23 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,111 +52,129 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-07-22</h1>
-      <p class="meta">Generated <time datetime="2026-07-22T07:10:30+00:00">2026-07-22T07:10:30Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-07-23</h1>
+      <p class="meta">Generated <time datetime="2026-07-23T06:49:11+00:00">2026-07-23T06:49:11Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site is healthy and active. The past four days saw a significant burst of manual commits from Ted: a new AI post on the "Red Queen problem," content edits for clarity, a color-chart tooling overhaul, a Mastodon workflow improvement, and a VSIX download update. Automated workflows (daily report refresh, Enterprise AI refresh, Feed to Mastodon) are all running on schedule and succeeding. No build failures or blockers detected.</p>
+      <p>Site is healthy and automations are running normally. The last 5 days saw one substantive content update (Red Queen / Enterprise AI post), a Mastodon feed workflow improvement, and ongoing color-chart tooling work. <strong>13 Dependabot PRs are open and unmerged</strong>, including a security patch (<code>concurrent-ruby</code>) and an <code>ffi</code> upgrade that conflicts with ADR 0009. The P2 issue backlog has grown to at least 10 open items with no recent closures. No build failures detected in completed runs.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line Up Front</h2>
-<p>Site is healthy. Automated pipelines are green. Four days of active manual commits include a new published article, content edits, color-chart tooling work, and a Mastodon workflow fix. No open blockers or failing builds detected.</p>
-<hr>
-<h2>Recent Repository Activity</h2>
-<h3>Manual Commits by TedTschopp (2026-07-18 – 2026-07-20)</h3>
-<p><strong>2026-07-20</strong></p>
+      <h2>Repository Activity — Past 7 Days</h2>
+<h3>Human Commits (TedTschopp)</h3>
 <ul>
-<li><strong>content(AI):</strong> Update text for clarity and formatting in the Red Queen problem post — <a href="https://github.com/TedTschopp/tedt.org/commit/9d1d18e008313b912bb8d861703c85ecbffca48e">commit 9d1d18e</a></li>
-<li><strong>chore:</strong> Update AI Engineer Coach VSIX download — <a href="https://github.com/TedTschopp/tedt.org/commit/e2887fbf56ccb49cb2638240a995107fe030d535">commit e2887fb</a></li>
-<li>Merge branch <code>main</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/6ddef9654044b8e1fd16c5a76daeb67818d2ff3e">commit 6ddef96</a></li>
-</ul>
-<p><strong>2026-07-19</strong></p>
-<ul>
-<li><strong>chore:</strong> Update Mastodon cache/front matter (automated via Mastodon sync workflow) — <a href="https://github.com/TedTschopp/tedt.org/commit/598d0df2158b2b244df9dbf9e7b7e6b2ee228820">commit 598d0df</a></li>
-</ul>
-<p><strong>2026-07-18</strong> — heaviest commit day</p>
-<ul>
-<li><strong>feat(post):</strong> New article — "Chasing the Red Queen: the Red Queen problem in enterprise AI" + image assets — <a href="https://github.com/TedTschopp/tedt.org/commit/6cd8829e2437951b378120292ec418d1a84d8fe6">commit 6cd8829</a></li>
-<li><strong>feat(mastodon-feed):</strong> Update workflow to post feed conditionally and add Ruby setup — <a href="https://github.com/TedTschopp/tedt.org/commit/e5a55e19ba56f3b6e58e7b2aa0b61951d07ae374">commit e5a55e1</a></li>
-<li><strong>feat(color-chart):</strong> Add WebMCP tools for enhanced palette management and role token export — <a href="https://github.com/TedTschopp/tedt.org/commit/19a76162caa7cfce7dbb603621070d0770dedd8e">commit 19a7616</a></li>
-<li><strong>refactor(color-chart):</strong> Remove harmony feature; update light/dark role mapping — <a href="https://github.com/TedTschopp/tedt.org/commit/cb3f7a5a723018a2153e83982cef821048462f54">commit cb3f7a5</a></li>
-<li><strong>feat(color-chart):</strong> Update color palette for improved aesthetics — <a href="https://github.com/TedTschopp/tedt.org/commit/70714713a0d2f63b2ff4de01a1f997af29844056">commit 7071471</a></li>
-<li><strong>feat(color-chart):</strong> Add color analysis functions and tests for shade records — <a href="https://github.com/TedTschopp/tedt.org/commit/1f152d2cd3065b0e84085eec6b7d317b6637f130">commit 1f152d2</a></li>
-<li><strong>feat(color-chart):</strong> Add shade color extraction and deduplication logic — <a href="https://github.com/TedTschopp/tedt.org/commit/4959ab2ffe315b682c4599ea007a282363c1590f">commit 4959ab2</a></li>
-<li><strong>chore:</strong> Remove empty code change sections from commit history (×2 commits)</li>
+<li><strong>2026-07-20</strong> — <code>content(AI): update text for clarity and formatting in Red Queen problem post</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/9d1d18e008313b912bb8d861703c85ecbffca48e">3e04e09 parent → 9d1d18e</a>: Editorial cleanup on the "Chasing the Red Queen" article.</li>
+<li><strong>2026-07-20</strong> — <code>chore: update AI Engineer Coach VSIX download</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/e2887fbf56ccb49cb2638240a995107fe030d535">e2887fb</a>: Updated the downloadable VSIX artifact link.</li>
+<li><strong>2026-07-18</strong> — <code>feat(post): add new article on the Red Queen problem in enterprise AI + image assets</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/6cd8829e2437951b378120292ec418d1a84d8fe6">6cd8829</a>: New longform post with accompanying <code>.webp</code> hero images published.</li>
+<li><strong>2026-07-18</strong> — <code>feat(mastodon-feed): update workflow to post feed conditionally and add Ruby setup</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/e5a55e19ba56f3b6e58e7b2aa0b61951d07ae374">e5a55e1</a>: Mastodon posting workflow now gates on feed changes; Ruby setup step added.</li>
+<li><strong>2026-07-18</strong> — <code>feat(color-chart): add WebMCP tools for enhanced palette management and role token export</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/19a76162caa7cfce7dbb603621070d0770dedd8e">19a7616</a></li>
+<li><strong>2026-07-18</strong> — <code>refactor(color-chart): remove harmony feature and update role mapping for light/dark modes</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/cb3f7a5a723018a2153e83982cef821048462f54">cb3f7a5</a></li>
+<li><strong>2026-07-18</strong> — <code>feat(color-chart): update color palette for improved aesthetics</code> + <code>add color analysis functions and tests</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/70714713a0d2f63b2ff4de01a1f997af29844056">7071471</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/1f152d2cd3065b0e84085eec6b7d317b6637f130">1f152d2</a></li>
 </ul>
 <h3>Automated Commits (github-actions[bot])</h3>
+<p>Routine automation running on schedule with no anomalies:</p>
 <ul>
-<li><strong>2026-07-21:</strong> <code>chore: refresh yesterday in enterprise ai</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/d541a715b4109981131e1b8178fc9814f912778c">commit d541a71</a></li>
-<li><strong>2026-07-21:</strong> <code>chore: refresh daily report</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/cf2f9105e233a66b3aef7151976cf8bd6aa0dec1">commit cf2f910</a></li>
-<li><strong>2026-07-20:</strong> <code>chore: refresh yesterday in enterprise ai</code></li>
-<li><strong>2026-07-20:</strong> <code>chore: refresh daily report</code></li>
-<li><strong>2026-07-19:</strong> <code>chore: refresh yesterday in enterprise ai</code></li>
-<li><strong>2026-07-19:</strong> <code>chore: refresh daily report</code></li>
+<li>Daily report refresh: 2026-07-20, 2026-07-21, 2026-07-22</li>
+<li>Enterprise AI "yesterday" refresh: 2026-07-20, 2026-07-21, 2026-07-22</li>
+<li>Mastodon cache/front matter sync: 2026-07-19</li>
 </ul>
-<p>All automated commits landed cleanly on <code>main</code> with no merge conflicts.</p>
 <hr>
-<h2>Site Quality &amp; Workflow Health</h2>
-<h3>Workflow Runs (current)</h3>
+<h2>Workflow Health</h2>
 <ul>
-<li><strong>Daily Report</strong> (run #84): In progress — this current run — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29898902297">workflow run 29898902297</a></li>
-<li><strong>Feed to Mastodon</strong> (run #2064): Completed — <strong>success</strong> — last run on 2026-07-22 morning</li>
+<li><strong>Daily Report</strong> (this run): in_progress — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/29985935501">run 29985935501</a></li>
+<li><strong>Feed to Mastodon</strong>: latest completed run — <code>success</code></li>
+<li>No failed workflow runs observed in the most recent completed batch.</li>
+<li>[ASSUMPTION] Deploy workflow succeeded; no explicit failed deploy run was surfaced in the sample.</li>
 </ul>
-<h3>Pipeline Observations</h3>
+<hr>
+<h2>Open Pull Requests — 13 Total</h2>
+<p>All are unmerged. Grouped by type:</p>
+<h3>Security / Stability</h3>
 <ul>
-<li>Daily report and Enterprise AI refresh workflows are running on schedule; no missed runs observed in the commit history.</li>
-<li>Mastodon workflow received a meaningful improvement on 2026-07-18: conditional posting logic added with Ruby setup step. This suggests the prior workflow may have been posting unconditionally or failing silently on some runs.</li>
-<li>The Mastodon front-matter cache/sync commit on 2026-07-19 indicates the new workflow fired successfully and synced toot IDs back to post front matter.</li>
+<li><strong>#203</strong> — <code>concurrent-ruby</code> security patch (1.3.5 → 1.3.7) — <strong>merge candidate</strong></li>
+<li><strong>#137</strong> — Fix for DOM text reinterpreted as HTML (code scanning alert #295) — longstanding, needs review</li>
+</ul>
+<h3>Dependency Upgrades (Ruby / Gems)</h3>
+<ul>
+<li><strong>#205</strong> — <code>sass-embedded</code> 1.97.1 → 1.101.0</li>
+<li><strong>#204</strong> — <code>google-protobuf</code> 4.33.2 → 4.35.1</li>
+<li><strong>#192</strong> — <code>html-proofer</code> 3.19.4 → 5.2.1 (major version bump; may require test updates)</li>
+<li><strong>#188</strong> — <code>ffi</code> 1.16.3 → 1.17.4 ⚠️ <strong>Blocked by ADR 0009</strong> — pin must not be changed without explicit stability review</li>
+</ul>
+<h3>GitHub Actions Version Bumps</h3>
+<ul>
+<li><strong>#201</strong> — <code>actions/checkout</code> 4 → 7</li>
+<li><strong>#200</strong> — <code>github/gh-aw-actions</code> 0.71.5 → 0.80.8</li>
+<li><strong>#196</strong> — <code>actions/cache</code> 4 → 5</li>
+<li><strong>#195</strong> — <code>actions/github-script</code> 7 → 9</li>
+<li><strong>#194</strong> — <code>actions/upload-pages-artifact</code> 4 → 5</li>
+<li><strong>#164</strong> — <code>actions/upload-artifact</code> v6 → v7</li>
+</ul>
+<h3>npm / Yarn</h3>
+<ul>
+<li><strong>#187</strong> — npm/yarn group update (3 packages)</li>
+</ul>
+<hr>
+<h2>Open Issues — Backlog Snapshot</h2>
+<p>All P2/P3 items; none show recent activity or closure. Selected:</p>
+<ul>
+<li><strong>#186</strong> — Enhance category landing pages (related categories, tag clouds, depth indicators)</li>
+<li><strong>#185</strong> — Cross-collection content bridges and related-posts infrastructure</li>
+<li><strong>#184</strong> — Drive prompt series adoption: audit and populate series metadata</li>
+<li><strong>#183</strong> — Standardize tagging model and build site-wide tag infrastructure</li>
+<li><strong>#182</strong> — Create slide gallery with topic filtering and deck browser</li>
+<li><strong>#181</strong> — Unify RPG/fantasy content schema and build SEO landing pages</li>
+<li><strong>#180</strong> — Add content contributor guide to README</li>
+<li><strong>#179</strong> — Curate quotes with thematic tags and personal context</li>
+<li><strong>#178</strong> — SEO &amp; discoverability: strengthen excerpts, descriptions, pillar hub pages</li>
+<li><strong>#177</strong> — Document and organize <code>_code/</code> utility scripts</li>
 </ul>
 <hr>
 <h2>Content &amp; Publishing Pipeline</h2>
-<h3>New Content</h3>
 <ul>
-<li><strong>"Chasing the Red Queen"</strong> — new AI post added 2026-07-18, with image assets. Edits for clarity committed 2026-07-20. This is the most recent original article.</li>
-</ul>
-<h3>Tooling</h3>
-<ul>
-<li><strong>Color-chart</strong> received significant work: shade extraction, deduplication, analysis functions, light/dark role mapping, palette aesthetics, and WebMCP tool integration across 6 commits. This appears to be a developer-facing palette management utility, not a user-facing change.</li>
-<li><strong>AI Engineer Coach VSIX</strong> download updated — likely a file path or version bump for a linked extension artifact.</li>
+<li>New article published: <strong>"Chasing the Red Queen"</strong> on the enterprise AI acceleration problem. Clarifying edits applied the following day. Image assets included.</li>
+<li>Mastodon workflow updated to post conditionally — reduces unnecessary API calls when feed hasn't changed.</li>
+<li>Color-chart tooling received multiple commits on 2026-07-18 (WebMCP integration, palette analysis, harmony feature removed). This is a developer-facing tool, not rendered site content.</li>
+<li>Automated "yesterday in enterprise AI" refresh appears to be a scheduled content aggregation task running daily at ~14:43 UTC.</li>
 </ul>
 <hr>
-<h2>Open Issues (Sample)</h2>
-<p>Open issues backlog includes long-standing content discovery improvements. No new issues were observed in the recent activity window.</p>
+<h2>Risks and Blockers</h2>
 <ul>
-<li><strong>[#186]</strong> [P2] Enhance category landing pages: related categories, tag clouds, depth indicators — open since 2026-05-29</li>
-<li>Multiple other open issues visible in the backlog (full count not fetched — see source notes).</li>
-</ul>
-<hr>
-<h2>Risks, Blockers &amp; Observations</h2>
-<ul>
-<li><strong>No blockers identified.</strong> Build pipeline is green based on workflow run evidence.</li>
-<li><strong>Mastodon workflow change (2026-07-18):</strong> The conditional posting update is a positive reliability improvement, but should be monitored over the next few runs to confirm no regressions in toot backfill behavior.</li>
-<li><strong>Color-chart tooling accumulation:</strong> Six color-chart commits in a single day suggests an iterative exploratory session. Worth reviewing whether the harmony feature removal (refactor commit) was intentional and documented, since the feature is now absent.</li>
-<li><strong>Category landing pages (issue #186):</strong> Remains unaddressed. If discovery is a content goal, this is the clearest open improvement item.</li>
+<li><strong>ffi PR #188</strong> — Dependabot proposes upgrading <code>ffi</code> from the pinned 1.16.3 to 1.17.4. ADR 0009 explicitly pins this for build stability. Do not merge without running a full local build and verifying no native extension breakage on Ruby 3.2.</li>
+<li><strong>html-proofer major bump (#192)</strong> — 3.x → 5.x is a significant API change. Existing CI commands and Makefile targets may need updates before merging.</li>
+<li><strong>Security PR #137</strong> is the oldest open PR and addresses a real code scanning alert (DOM XSS). It has been open without merge. Should be reviewed and either merged or closed with explanation.</li>
+<li><strong>P2 backlog</strong> — 10+ issues with no recent closures. No risk today, but without triage priority drift could accumulate.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Monitor Mastodon workflow</strong> over the next 2–3 scheduled runs to confirm conditional posting behaves correctly after the 2026-07-18 change.</li>
-<li><strong>Review color-chart harmony removal</strong> — confirm it was intentional and that any downstream palette consumers aren't broken.</li>
-<li><strong>Progress issue #186</strong> (category landing pages) if content discoverability is a current priority.</li>
-<li><strong>No immediate build fixes required</strong> — site appears healthy.</li>
+<li><strong>Merge #203</strong> (<code>concurrent-ruby</code> security patch) — low risk, targeted.</li>
+<li><strong>Review and merge or close #137</strong> — security alert fix, longstanding.</li>
+<li><strong>Evaluate #188</strong> (<code>ffi</code> upgrade) against ADR 0009 before acting. If upgraded, run <code>bundle exec jekyll build</code> on Ruby 3.2 to confirm stability, then update ADR 0009 status.</li>
+<li><strong>Batch-merge low-risk Actions version bumps</strong> (#201, #196, #195, #194, #164, #200) — these are CI tooling only and typically safe together.</li>
+<li><strong>Triage #192</strong> (<code>html-proofer</code> major bump) — read changelog, update Makefile/CI flags if needed, then merge.</li>
+<li><strong>Pick one P2 issue</strong> to close this sprint. #180 (contributor guide) or #177 (<code>_code/</code> docs) are low-effort documentation tasks.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: Fetched last 20 commits from <code>main</code> branch via GitHub MCP tool (covers 2026-07-18 to 2026-07-22).</li>
-<li>Workflow runs: Fetched most recent 10 runs (all statuses) and most recent 10 completed runs via GitHub MCP tool.</li>
-<li>Issues: Fetched open issues (first page, up to 20); full issue count and closed issues not retrieved.</li>
-<li>Pull requests: Not fetched — no PRs were visible in recent commit activity, so omitted to keep report concise. [ASSUMPTION: no open PRs requiring action.]</li>
-<li>Workflow run details (job-level logs): Not retrieved — summary status (success/in_progress) used only.</li>
-<li>External link health and HTML Proofer results: Not available in this run — would require a local build.</li>
-<li>Daily Report workflow run 29898902297 is the current run generating this report; its conclusion is not yet known at publish time.</li>
-<li><code>Feed to Mastodon</code> run #2064 conclusion reported as <code>success</code> from the completed-runs query preview.</li>
-<li>Open issue list is partial (first 20 of unknown total). Issue #186 cited as representative of the known backlog.</li>
+<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — last 20 commits retrieved, covers 2026-07-16 through 2026-07-22.</li>
+<li>Workflow runs: <a href="https://github.com/TedTschopp/tedt.org/actions"><code>github-actions_list</code></a> — top 8–10 most recent runs sampled; full run history not parsed (output too large for inline processing in sandbox).</li>
+<li>Issues: <a href="https://github.com/TedTschopp/tedt.org/issues"><code>github-list_issues</code></a> — first 10 open issues retrieved; total count not verified.</li>
+<li>Pull requests: <a href="https://github.com/TedTschopp/tedt.org/pulls"><code>github-list_pull_requests</code></a> — first page of open PRs retrieved.</li>
+<li>[ASSUMPTION] Deploy workflow succeeded; no failed deploy run was explicitly surfaced in sampled workflow data.</li>
+<li>[ASSUMPTION] "yesterday in enterprise AI" refresh commits reflect a scheduled content aggregation automation (not manually verified).</li>
+<li>Bash tool was unavailable in this environment; large JSON outputs were parsed using grep on saved temp files.</li>
+<li>ADR 0009 (<code>ffi</code> pin) referenced from repository instructions, not re-read from <code>/docs/adr/</code> in this run.</li>
 </ul>
     </section>
     <footer>
