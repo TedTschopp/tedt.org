@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-07-21 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-07-22 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,84 +52,87 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-07-21</h1>
-      <p class="meta">Generated <time datetime="2026-07-22T14:43:25+00:00">2026-07-22T14:43:25Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-07-22</h1>
+      <p class="meta">Generated <time datetime="2026-07-23T14:59:02+00:00">2026-07-23T14:59:02Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>AI cost governance is becoming an executive imperative as model access commoditizes and enterprise budgets strain under unpredictable consumption pricing. Netflix's production LLM stack makes compliance-by-design real, NVIDIA pushes intelligence to the edge for physical operations, and the free-model debate forces a strategic rethink of vendor dependencies.</p>
+      <p>Tuesday brought a focused cluster of enterprise AI stories: Google expanded its efficient model lineup with three new Gemini Flash variants purpose-built for agentic, high-volume, and cybersecurity workloads, while Sakana AI's Fugu-Cyber demonstrated autonomous AI reaching state-of-the-art on real cybersecurity benchmarks. Meanwhile, Harvard Business Review offered a clear framework for using AI without eroding human reasoning, and a legal-tech case study showed what 60 days faster settlement timelines actually look like in a regulated vertical.</p>
 <p><strong>Act now:</strong></p>
 <ul>
-<li>Assign an AI FinOps owner and build cost-visibility dashboards before agentic workloads scale.</li>
-<li>Evaluate constrained-decoding capabilities from your model provider for regulatory compliance.</li>
-<li>Revisit multi-year AI vendor contracts in light of the accelerating open-source model market.</li>
-<li>Add edge AI readiness to infrastructure planning if physical systems or automation is on your roadmap.</li>
-<li>Pilot a planning/execution model split in agent workflows to manage cost without sacrificing quality.</li>
+<li>Stop defaulting to frontier models for every task; audit workloads for cost/speed routing opportunities.</li>
+<li>Include cybersecurity-specific AI models in your SecOps evaluation pipeline before autonomous tooling arrives uninvited.</li>
+<li>Introduce Socratic AI prompting practices to keep human judgment sharp as AI adoption deepens.</li>
+<li>Review legal and compliance workflows for AI acceleration gains similar to Eve Legal's settlement case.</li>
+<li>Track open-weight model releases (Poolside, others) as credible alternatives to proprietary APIs.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
       <h2>Big Moves</h2>
-<h3>Free AI Models Are an Inevitable Market Force</h3>
-<p>A widely circulated analysis argues that high margins on proprietary AI models make open-source disruption structurally inevitable — and that governments should resist shielding incumbent vendors from competition. The counter-argument, that national-security concerns, IP enforcement, audit requirements, and domestic open-source investment still favor proprietary models, is given less weight in the piece but deserves board-level consideration.</p>
-<p><strong>Why it matters:</strong> If frontier-grade AI capability approaches free, the strategic moat shifts from model access to deployment expertise, proprietary data, and integration depth. Enterprises with multi-year commitments to a single proprietary provider face real vendor-dependency risk. The debate also touches on domestic AI investment and the national-security implications of ceding frontier capabilities to foreign open-source ecosystems.</p>
-<p><strong>What should I do as a leader?</strong> Revisit AI vendor dependency assumptions. If your strategy relies on one proprietary model provider, begin mapping credible alternatives and factor open-source trajectory into procurement decisions.</p>
-<p><strong>What should I do?</strong> Capable free models mean evaluation, fine-tuning, and deployment skills matter more than ever. Invest in those skills now.</p>
-<p>Source: archive.is, 2026-07-21 — <a href="https://archive.`is/Op6Mv#selection`-231.0-231.68">Powerful AI models are being given away for free</a></p>
+<h3>Google Launches Three New Gemini Flash Models for Enterprise Workloads</h3>
+<p>Google announced Gemini 3.6 Flash, Gemini 3.5 Flash-Lite, and Gemini 3.5 Flash Cyber — three additions to its efficient LLM lineup aimed squarely at the enterprise use cases where frontier model performance is often overkill: high-volume throughput, agentic pipelines, and cybersecurity tooling.</p>
+<p><strong>Why it matters:</strong> The proliferation of task-specialized models is accelerating. Enterprises that deploy a single flagship model across all workloads are paying a premium for reasoning power they frequently do not need. These releases formalize Google's push to offer cost/speed optimized models alongside its frontier offerings — and the dedicated Cyber variant signals that security workflows are now a first-class category in commercial model development. Expect Microsoft, Anthropic, and others to follow with similar specialized tiers.</p>
+<p><strong>What should I do as a leader?</strong> Commission a workload audit in Q3. Map AI tasks by required reasoning depth, latency tolerance, and volume. Routing the right tasks to leaner models can materially reduce cost and improve response time — without quality loss on appropriate tasks.</p>
+<p><strong>What should I do?</strong> If you are building internal automations or agent workflows, ask your platform team which model tier is powering each task. Defaulting to the largest model available is wasteful and can slow iterative development.</p>
+<p>Source: Google Blog, 2026-07-21 — <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/">Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber</a></p>
 <hr>
-<h3>The CIO's New Job: AI FinOps at Scale</h3>
-<p>McKinsey is direct: AI programs routinely blow past their budgets, and most organizations still lack the governance frameworks to manage it. The prescription is AI FinOps — applying financial-operations discipline to model consumption, unpredictable usage pricing, and the growing number of teams spinning up AI workloads independently.</p>
-<p><strong>Why it matters:</strong> The combination of consumption-based pricing, expanding model options, and agentic workflows that run autonomously at scale makes AI spending a genuine governance risk. Without unit economics, demand governance, and per-team accountability, finance and IT will collide when the bills arrive. This is the operational layer most enterprises skipped in the rush to deploy.</p>
-<p><strong>What should I do as a leader?</strong> Stand up AI cost-visibility dashboards now, assign clear ownership, and establish usage thresholds per team — before agentic workloads scale further and create unbudgeted exposure.</p>
-<p><strong>What should I do?</strong> Understand how your AI tool usage is measured and charged back. Invisible consumption becomes a budget surprise and, in some organizations, a compliance finding.</p>
-<p>Source: McKinsey QuantumBlack, 2026-07-21 — <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-cost-of-intelligence-how-cios-can-manage-ai-demand-at-scale">The cost of intelligence: How CIOs can manage AI demand at scale</a></p>
+<h3>Sakana AI's Fugu-Cyber Reaches State-of-the-Art on Real Cybersecurity Benchmarks</h3>
+<p>Sakana AI released Fugu-Cyber, an orchestrated AI model designed for real-world cybersecurity tasks. It achieves state-of-the-art results on published security benchmarks using model orchestration rather than raw parameter scale — combining multiple models for task decomposition, execution, and verification.</p>
+<p><strong>Why it matters:</strong> Cybersecurity is rapidly becoming the leading enterprise deployment for agentic AI, precisely because the domain has clear benchmarks, measurable outcomes, and high-stakes consequences that force rigorous evaluation. A model that autonomously reasons through offensive and defensive security tasks is no longer a research artifact — it is approaching operational tooling. For enterprise security teams, this signals both an opportunity (AI-assisted threat analysis, vulnerability triage) and a risk (adversaries gaining access to the same tools).</p>
+<p><strong>What should I do as a leader?</strong> Add AI-native cybersecurity tooling to your SecOps roadmap evaluation. Ask vendors about transparent benchmark methodology — not marketing claims. And brief your CISO on agentic security AI now, before it arrives in procurement requests without proper vetting.</p>
+<p><strong>What should I do?</strong> If you work in security, start building familiarity with AI-assisted workflows. Understanding how orchestrated models approach attack chains will matter increasingly in the next 12 months.</p>
+<p>Source: Sakana AI, 2026-07-21 — Introducing Fugu-Cyber</p>
 <hr>
 <h2>Enterprise Ops &amp; Adoption</h2>
-<h3>Netflix Shows What Serious Production LLM Infrastructure Looks Like</h3>
-<p>Netflix published a detailed technical account of its internal LLM-serving stack, including its use of constrained decoding — a technique that enforces output requirements directly during token generation, not as a post-processing filter. The result is compliance baked into the model's output path rather than layered on top.</p>
-<p><strong>Why it matters:</strong> For regulated industries, this is compliance-by-design: outputs are structurally constrained before they ever leave the model. The architecture also makes the full operational cost of in-house AI honest: custom infrastructure, reliability engineering, and ongoing cost management at scale. For most enterprises, this benchmark clarifies the real tradeoff between full ownership and managed APIs — and raises the question of which outputs in your organization genuinely require this level of control.</p>
-<p><strong>What should I do as a leader?</strong> Assess your AI governance stack against this standard. If your AI outputs carry regulatory, legal, or safety obligations, investigate constrained-decoding or structured-output capabilities from your model provider — and decide where you need to own the stack.</p>
-<p>Source: Netflix Technology Blog, 2026-07-21 — In-House LLM Serving at Netflix</p>
+<h3>HBR: Design AI Systems That Keep Human Judgment Sharp</h3>
+<p>Harvard Business Review published a framework for deploying AI in ways that strengthen rather than erode human reasoning. The central technique: configure AI systems to surface conflicting hypotheses from the same data rather than presenting a single confident answer, forcing users to engage critically rather than accept the first output.</p>
+<p><strong>Why it matters:</strong> The risk of cognitive atrophy from over-reliance on AI is a real organizational concern — particularly in knowledge-intensive roles like strategy, legal, finance, and risk management. Most enterprises are deploying AI to accelerate output, but few have considered how to preserve the analytical judgment that makes that output trustworthy. The Socratic prompting model described here is low-cost to implement and directly addresses the confirmation-bias risk that surfaces when teams treat AI output as ground truth.</p>
+<p><strong>What should I do as a leader?</strong> Build a prompting standard for your team that requires AI tools to surface alternatives and counterarguments, not just recommended answers. Include this in your AI use-policy or training materials.</p>
+<p><strong>What should I do?</strong> Before accepting any AI-generated analysis, ask the tool: "What are three plausible alternative interpretations of this data?" That single habit reduces confirmation bias and keeps your own reasoning sharp.</p>
+<p>Source: Harvard Business Review, 2026-07-21 — <a href="https://hbr.org/2026/07/design-ai-systems-that-actually-strengthen-human-reasoning">Design AI Systems That Actually Strengthen Human Reasoning</a></p>
+<hr>
+<h3>Eve Legal Cuts Case Settlement Time by 60 Days with Claude</h3>
+<p>Anthropic published a case study on Eve Legal, a startup building AI-assisted workflows for plaintiff law firms. Using Claude embedded in legal-specific pipelines, Eve Legal's clients are settling cases roughly 60 days faster — a meaningful competitive advantage in a profession where case cycle time directly affects firm revenue and client outcomes.</p>
+<p><strong>Why it matters:</strong> Legal is one of the most document-intensive, deadline-driven, and risk-sensitive verticals in any enterprise. This case study is notable not for the AI capability itself but for the deployment model: Eve Legal embeds forward-engineering teams that tailor AI workflows closely to operational realities, rather than dropping in a generic chatbot. That embedded model is a repeatable pattern for any compliance, legal, or operations function considering vertical AI adoption.</p>
+<p><strong>What should I do as a leader?</strong> If your legal or compliance function is evaluating AI, prioritize solutions with embedded implementation support and measurable cycle-time outcomes over general-purpose tools. Ask vendors for case studies with specific, auditable business metrics.</p>
+<p><strong>What should I do?</strong> If you are in a document-heavy role, ask whether there is a vertical AI solution purpose-built for your workflow. Generic tools rarely match the ROI of purpose-built ones.</p>
+<p>Source: Anthropic, 2026-07-21 — <a href="https://claude.com/customers/eve-legal">Eve Legal helps plaintiff law firms settle cases 60 days faster with Claude</a></p>
 <hr>
 <h2>Vendors, Platforms &amp; Models</h2>
-<h3>NVIDIA Brings World Models to the Edge with Cosmos 3 Edge</h3>
-<p>NVIDIA's Cosmos 3 Edge runs on Jetson Thor hardware, combining autoregressive reasoning with diffusion-based prediction so robots can interpret sensor data and anticipate next possible states — locally, without a cloud round-trip. The model is designed for physical AI systems that must operate with low latency and intermittent connectivity.</p>
-<p><strong>Why it matters:</strong> Physical AI — robotics, industrial automation, autonomous vehicles — is the next major frontier for enterprise AI investment. Edge-capable world models eliminate the latency and connectivity dependencies that make cloud-only approaches impractical for systems that move in the real world. Organizations building or acquiring physical-AI capabilities now have a deployable hardware-software reference point from NVIDIA's ecosystem.</p>
-<p><strong>What should I do as a leader?</strong> If your operations include physical systems, manufacturing, or automation roadmaps, add edge AI readiness to infrastructure planning conversations in 2026.</p>
-<p>Source: NVIDIA via Hugging Face, 2026-07-21 — <a href="https://huggingface.co/blog/nvidia/cosmos3edge">Introducing Cosmos 3 Edge</a></p>
-<hr>
-<h2>Research &amp; Capabilities</h2>
 <h3>Quick Hits</h3>
 <ul>
-<li><strong>Agentic World Models</strong> — A technical synthesis examines research on AI agents that can predict how actions affect software environments, a foundational building block for more reliable autonomous agents. Early-stage and most relevant to researchers and foundation-model developers today. — Read more</li>
+<li><strong>Poolside Laguna S 2.1</strong> — Poolside released Laguna S 2.1, an open-weight model that continues the trend of alternatives closing the gap on frontier capabilities. Key architectural insight: performance gains now come from mixture-of-experts design and inference strategies, not just raw compute. Worth watching for procurement diversification. — <a href="https://poolside.ai/blog/introducing-laguna-s-2-1">poolside.ai</a></li>
 </ul>
 <ul>
-<li><strong>Cursor's Agent Swarm Experiment</strong> — Cursor coordinated AI agents to recreate SQLite from documentation, comparing model combinations, output quality, and execution cost. Using stronger models for planning and cheaper models for implementation showed promise, though results are model-specific and variables are not fully controlled. Points toward practical architecture patterns worth monitoring. — <a href="https://cursor.com/blog/agent-swarm-model-economics">Read more</a></li>
+<li><strong>Ramp's LLM Routing Research</strong> — Ramp published a deep-dive on Thompson Sampling for cost-efficient model routing, using online learning to improve model selection over time. Highly technical, but the underlying problem — automatically routing each request to the most cost-effective model that meets quality requirements — is one every large AI deployment will need to solve. — builders.ramp.com</li>
 </ul>
 <hr>
 <h2>Looking Ahead</h2>
 <ul>
-<li><strong>AI FinOps</strong> will become a standard CIO deliverable by Q4; consider piloting a cost-allocation model for AI tools in Q3 before agentic workloads create unbudgeted exposure.</li>
-<li><strong>Open-source model capability</strong> will continue to accelerate; prepare procurement and legal teams for new questions around IP, audit trails, and open-weights licensing.</li>
-<li><strong>Edge AI hardware</strong> (Jetson Thor class) is approaching production readiness; begin infrastructure and security assessments if robotics or physical-automation is on your roadmap.</li>
-<li><strong>Constrained-decoding and structured-output patterns</strong> are moving from research to production; review your AI output compliance architecture before scaling agentic workflows that interact with regulated data.</li>
+<li><strong>Model routing and tiering</strong> will become a standard enterprise AI ops capability; allocate engineering time in Q3 to design tiered model pipelines before cost pressure forces reactive choices.</li>
+<li><strong>Cybersecurity AI tooling</strong> is moving from research to procurement catalogs; prepare vendor evaluation frameworks for AI-native SecOps tools before Q4 budget cycles.</li>
+<li><strong>Legal and compliance AI</strong> is maturing beyond chatbots into embedded workflow tools with measurable business outcomes; include ROI benchmarks in any legal-tech evaluation now underway.</li>
+<li><strong>Open-weight models</strong> from Poolside, Mistral, and others will continue closing capability gaps; factor them into your 2027 AI vendor strategy and intellectual-property reviews.</li>
 </ul>
 <hr>
-<p>That is the view from Tuesday, July 22, looking back at a Monday that was quieter in volume but not in consequence. Cost governance, production infrastructure, and the commoditization of intelligence are the conversations that will shape enterprise AI strategy for the next two years — and they reward early preparation over reactive catch-up. Wherever your team sits on the adoption curve, building durable, accountable AI programs is good work worth doing carefully. Take care of yourselves and each other, and we will see you tomorrow.</p>
+<p>Wednesday brings the week's second half, and Tuesday gave enterprise AI teams plenty to work with — from leaner, specialized models to AI that sharpens rather than shortcuts human judgment. The pace is real, and so is the opportunity to build deliberately rather than reactively. Whether you lead a global security team or work a document-heavy workflow solo, there is something here that touches your day. Stay curious, stay discerning, and take the time today to ask one hard question of your AI tools. See you tomorrow.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
 <li>Feed 1 (rss.tedt.org/ai_rss_feed.json): 50 items fetched</li>
-<li>Feed 2 (rss.tedt.org/aggregated_wes_ai_news.json): 0 items — returned HTTP 404</li>
-<li>Date window applied: July 21–22, 2026 UTC (corresponding to "yesterday" in Pacific Time, July 21, 2026 PDT)</li>
+<li>Feed 2 (rss.tedt.org/aggregated_wes_ai_news.json): 0 items — returned HTTP 404 (same as prior issue)</li>
+<li>Date window applied: July 21, 2026 12:00 PDT to July 23, 2026 00:00 PDT (36-hour window covering "yesterday" in Pacific Time)</li>
 <li>Items within window: 6</li>
-<li>Items deduplicated against previous 7-day newsletter history: 0 removed (prior issue covered July 20 UTC items; no overlap)</li>
+<li>Items deduplicated against prior 7-day newsletter history: 0 removed (prior issue, July 22, covered July 21 UTC items from a different feed batch; no URL overlap detected)</li>
 <li>Items published: 4 main stories + 2 quick hits = 6 total</li>
-<li>Items excluded as older than window: 44 (dated July 20 UTC and earlier)</li>
-<li>Feed 2 returned a 404 error; only Feed 1 contributed to this issue</li>
-<li>All feed items used verbatim summaries from the feed's <code>content_text</code> field; no external article fetching was performed</li>
-<li>Pacific Time at generation: 2026-07-22 07:39 PDT</li>
+<li>Items excluded as older than window: 44</li>
+<li>All 6 in-window items carried a timestamp of 2026-07-21 17:00 PDT; no intra-day ordering available</li>
+<li>Items marked <code>[ * ]</code> in feed (editor-flagged priority) were used for main stories; items marked <code>[ ~ ]</code> (lower priority) were used as Quick Hits</li>
+<li>Feed 2 returned HTTP 404; only Feed 1 contributed to this issue</li>
+<li>All summaries drawn from feed <code>content_text</code> fields; no external article fetching was performed</li>
+<li>Pacific Time at generation: 2026-07-23 07:54 PDT</li>
 </ul>
     </section>
     <footer>
