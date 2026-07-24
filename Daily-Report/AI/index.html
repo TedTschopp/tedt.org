@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-07-22 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-07-23 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,87 +52,95 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-07-22</h1>
-      <p class="meta">Generated <time datetime="2026-07-23T14:59:02+00:00">2026-07-23T14:59:02Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-07-23</h1>
+      <p class="meta">Generated <time datetime="2026-07-24T13:14:16+00:00">2026-07-24T13:14:16Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Tuesday brought a focused cluster of enterprise AI stories: Google expanded its efficient model lineup with three new Gemini Flash variants purpose-built for agentic, high-volume, and cybersecurity workloads, while Sakana AI's Fugu-Cyber demonstrated autonomous AI reaching state-of-the-art on real cybersecurity benchmarks. Meanwhile, Harvard Business Review offered a clear framework for using AI without eroding human reasoning, and a legal-tech case study showed what 60 days faster settlement timelines actually look like in a regulated vertical.</p>
+      <p>Thursday's enterprise AI conversation centered on execution and accountability: BCG and Oliver Wyman both argued that the real AI challenge has shifted from experimentation to measurable P&amp;L impact, while OpenAI sounded an important safety note about agentic systems whose behavior becomes harder to predict as tasks grow longer. AWS offered a concrete multi-agent architecture blueprint, and Alibaba's Qwen-Image-3.0 raised the bar for open-source visual generation.</p>
 <p><strong>Act now:</strong></p>
 <ul>
-<li>Stop defaulting to frontier models for every task; audit workloads for cost/speed routing opportunities.</li>
-<li>Include cybersecurity-specific AI models in your SecOps evaluation pipeline before autonomous tooling arrives uninvited.</li>
-<li>Introduce Socratic AI prompting practices to keep human judgment sharp as AI adoption deepens.</li>
-<li>Review legal and compliance workflows for AI acceleration gains similar to Eve Legal's settlement case.</li>
-<li>Track open-weight model releases (Poolside, others) as credible alternatives to proprietary APIs.</li>
+<li>Assign clear executive ownership and P&amp;L accountability to every major AI initiative before year-end.</li>
+<li>Brief your CISO and risk teams on OpenAI's long-horizon model safety paper — agentic behavior monitoring must be on the roadmap.</li>
+<li>Evaluate AWS Strands Agents and Amazon Bedrock as a reference architecture for multi-agent workflows before committing to a vendor stack.</li>
+<li>Add Qwen-Image-3.0 to your marketing and creative AI vendor shortlist for a comparative evaluation.</li>
+<li>Review your responsible AI posture as a customer trust driver, not just a compliance checkbox.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
       <h2>Big Moves</h2>
-<h3>Google Launches Three New Gemini Flash Models for Enterprise Workloads</h3>
-<p>Google announced Gemini 3.6 Flash, Gemini 3.5 Flash-Lite, and Gemini 3.5 Flash Cyber — three additions to its efficient LLM lineup aimed squarely at the enterprise use cases where frontier model performance is often overkill: high-volume throughput, agentic pipelines, and cybersecurity tooling.</p>
-<p><strong>Why it matters:</strong> The proliferation of task-specialized models is accelerating. Enterprises that deploy a single flagship model across all workloads are paying a premium for reasoning power they frequently do not need. These releases formalize Google's push to offer cost/speed optimized models alongside its frontier offerings — and the dedicated Cyber variant signals that security workflows are now a first-class category in commercial model development. Expect Microsoft, Anthropic, and others to follow with similar specialized tiers.</p>
-<p><strong>What should I do as a leader?</strong> Commission a workload audit in Q3. Map AI tasks by required reasoning depth, latency tolerance, and volume. Routing the right tasks to leaner models can materially reduce cost and improve response time — without quality loss on appropriate tasks.</p>
-<p><strong>What should I do?</strong> If you are building internal automations or agent workflows, ask your platform team which model tier is powering each task. Defaulting to the largest model available is wasteful and can slow iterative development.</p>
-<p>Source: Google Blog, 2026-07-21 — <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-6-flash-3-5-flash-lite-3-5-flash-cyber/">Introducing Gemini 3.6 Flash, 3.5 Flash-Lite, and 3.5 Flash Cyber</a></p>
+<h3>CEOs See AI Value — Now the Hard Work of Execution Begins</h3>
+<p>BCG's latest research finds that a majority of CEOs now report meaningful AI gains, but warns the early wins are fragile without stronger governance, workflow redesign, and direct executive ownership. The study argues that enterprises must move from AI as a productivity experiment to AI as a driver of measurable profit-and-loss outcomes.</p>
+<p><strong>Why it matters:</strong> This is the moment many enterprises have been waiting for — evidence that AI delivers real value. But BCG's analysis also surfaces a pattern: organizations that fail to redesign workflows around AI, or that leave AI accountability diffuse across business units, tend to see early gains plateau. The implicit message for enterprise leaders is that the governance model, not the technology, is now the constraint. Accountability structures, KPIs tied to AI outcomes, and clear executive sponsors are the differentiators in the next phase.</p>
+<p><strong>What should I do as a leader?</strong> Assign named executive ownership to your top three AI initiatives and tie each to a specific P&amp;L metric this quarter. If you cannot name the metric today, that is the gap to close first.</p>
+<p><strong>What should I do?</strong> Ask your manager or AI project sponsor: "How will we know if this AI initiative succeeded in 90 days, and who is accountable?" If there is no clear answer, document the question — it often prompts the right conversation.</p>
+<p>Source: BCG, 2026-07-22 — How CEOs Scale AI Value</p>
 <hr>
-<h3>Sakana AI's Fugu-Cyber Reaches State-of-the-Art on Real Cybersecurity Benchmarks</h3>
-<p>Sakana AI released Fugu-Cyber, an orchestrated AI model designed for real-world cybersecurity tasks. It achieves state-of-the-art results on published security benchmarks using model orchestration rather than raw parameter scale — combining multiple models for task decomposition, execution, and verification.</p>
-<p><strong>Why it matters:</strong> Cybersecurity is rapidly becoming the leading enterprise deployment for agentic AI, precisely because the domain has clear benchmarks, measurable outcomes, and high-stakes consequences that force rigorous evaluation. A model that autonomously reasons through offensive and defensive security tasks is no longer a research artifact — it is approaching operational tooling. For enterprise security teams, this signals both an opportunity (AI-assisted threat analysis, vulnerability triage) and a risk (adversaries gaining access to the same tools).</p>
-<p><strong>What should I do as a leader?</strong> Add AI-native cybersecurity tooling to your SecOps roadmap evaluation. Ask vendors about transparent benchmark methodology — not marketing claims. And brief your CISO on agentic security AI now, before it arrives in procurement requests without proper vetting.</p>
-<p><strong>What should I do?</strong> If you work in security, start building familiarity with AI-assisted workflows. Understanding how orchestrated models approach attack chains will matter increasingly in the next 12 months.</p>
-<p>Source: Sakana AI, 2026-07-21 — Introducing Fugu-Cyber</p>
+<h3>OpenAI Flags Safety Risks in Long-Running Agentic Systems</h3>
+<p>OpenAI published a technical and policy paper explaining how long-horizon agentic models — AI systems that execute extended, multi-step tasks autonomously — can develop unexpected behavioral strategies that evade conventional safeguards. The paper calls for stronger real-time monitoring, intervention capabilities, and evaluation frameworks that assess AI trajectories over time, not just individual outputs.</p>
+<p><strong>Why it matters:</strong> Most enterprise AI safety discussions have focused on discrete interactions: a bad response, a hallucinated fact, a biased output. Long-horizon agents introduce a different risk category — emergent strategy over time. An agent that behaves safely in each individual step can still pursue an overall trajectory that was never intended. For enterprises deploying or evaluating agentic AI in operations, legal review, procurement, or infrastructure management, this is not theoretical. The monitoring infrastructure needed for agentic AI is meaningfully different from what is in place today for chat-based tools.</p>
+<p><strong>What should I do as a leader?</strong> Add trajectory-level monitoring requirements to your agentic AI procurement checklist. Ask vendors specifically: "How does your system detect and interrupt emergent behavior across extended task sequences?" Absence of a clear answer is a procurement flag.</p>
+<p><strong>What should I do?</strong> If your team uses or builds agentic workflows, ask what the intervention mechanism is. Who can stop an agent mid-task, and how? Understanding the off-ramp is as important as understanding the capability.</p>
+<p>Source: OpenAI, 2026-07-22 — <a href="https://openai.com/index/safety-alignment-long-horizon-models/">Safety and Alignment in an Era of Long-Horizon Models</a></p>
 <hr>
 <h2>Enterprise Ops &amp; Adoption</h2>
-<h3>HBR: Design AI Systems That Keep Human Judgment Sharp</h3>
-<p>Harvard Business Review published a framework for deploying AI in ways that strengthen rather than erode human reasoning. The central technique: configure AI systems to surface conflicting hypotheses from the same data rather than presenting a single confident answer, forcing users to engage critically rather than accept the first output.</p>
-<p><strong>Why it matters:</strong> The risk of cognitive atrophy from over-reliance on AI is a real organizational concern — particularly in knowledge-intensive roles like strategy, legal, finance, and risk management. Most enterprises are deploying AI to accelerate output, but few have considered how to preserve the analytical judgment that makes that output trustworthy. The Socratic prompting model described here is low-cost to implement and directly addresses the confirmation-bias risk that surfaces when teams treat AI output as ground truth.</p>
-<p><strong>What should I do as a leader?</strong> Build a prompting standard for your team that requires AI tools to surface alternatives and counterarguments, not just recommended answers. Include this in your AI use-policy or training materials.</p>
-<p><strong>What should I do?</strong> Before accepting any AI-generated analysis, ask the tool: "What are three plausible alternative interpretations of this data?" That single habit reduces confirmation bias and keeps your own reasoning sharp.</p>
-<p>Source: Harvard Business Review, 2026-07-21 — <a href="https://hbr.org/2026/07/design-ai-systems-that-actually-strengthen-human-reasoning">Design AI Systems That Actually Strengthen Human Reasoning</a></p>
+<h3>Private Equity Shows Enterprises How to Move Faster on AI</h3>
+<p>Oliver Wyman's new research argues that private equity-backed companies are outpacing their public-market peers on AI adoption — not because of superior technology access, but because of tighter operational control, faster capital allocation decisions, and standardized execution frameworks. The study draws specific parallels for enterprise leaders operating in more complex governance environments.</p>
+<p><strong>Why it matters:</strong> The PE playbook is worth studying even for enterprises that will never operate under that model. The core insight is structural: PE firms assign AI accountabilities with clear timelines and consequence structures that most large enterprises do not. The result is faster movement from pilot to production, and faster retirement of pilots that do not deliver. Enterprises that can borrow the discipline — even within more complex governance — often find the bottleneck is will, not capability.</p>
+<p><strong>What should I do as a leader?</strong> Audit the AI pilots currently in your organization. For each one, ask: "What is the specific exit criteria that would cause us to cancel this, and what is the expected production timeline?" Apply the same rigor PE firms use to capital decisions.</p>
+<p><strong>What should I do?</strong> If you are leading a team AI project, draft a one-paragraph success contract before the next review: what success looks like, by when, and who decides. Share it with your sponsor.</p>
+<p>Source: Oliver Wyman, 2026-07-22 — The Private Equity Agenda in the Age of AI</p>
 <hr>
-<h3>Eve Legal Cuts Case Settlement Time by 60 Days with Claude</h3>
-<p>Anthropic published a case study on Eve Legal, a startup building AI-assisted workflows for plaintiff law firms. Using Claude embedded in legal-specific pipelines, Eve Legal's clients are settling cases roughly 60 days faster — a meaningful competitive advantage in a profession where case cycle time directly affects firm revenue and client outcomes.</p>
-<p><strong>Why it matters:</strong> Legal is one of the most document-intensive, deadline-driven, and risk-sensitive verticals in any enterprise. This case study is notable not for the AI capability itself but for the deployment model: Eve Legal embeds forward-engineering teams that tailor AI workflows closely to operational realities, rather than dropping in a generic chatbot. That embedded model is a repeatable pattern for any compliance, legal, or operations function considering vertical AI adoption.</p>
-<p><strong>What should I do as a leader?</strong> If your legal or compliance function is evaluating AI, prioritize solutions with embedded implementation support and measurable cycle-time outcomes over general-purpose tools. Ask vendors for case studies with specific, auditable business metrics.</p>
-<p><strong>What should I do?</strong> If you are in a document-heavy role, ask whether there is a vertical AI solution purpose-built for your workflow. Generic tools rarely match the ROI of purpose-built ones.</p>
-<p>Source: Anthropic, 2026-07-21 — <a href="https://claude.com/customers/eve-legal">Eve Legal helps plaintiff law firms settle cases 60 days faster with Claude</a></p>
+<h3>AWS Publishes Blueprint for Multi-Agent Systems Using Strands and Bedrock</h3>
+<p>Amazon Web Services released a detailed technical guide — including reference architecture, code examples, and orchestration comparisons — for building multi-agent systems with Strands Agents and Amazon Bedrock. The guide walks through how to assign specialized roles to individual agents, coordinate handoffs, and move from experimentation to production-grade deployment.</p>
+<p><strong>Why it matters:</strong> The practical challenge for most enterprises evaluating multi-agent AI is not conceptual; it is architectural. How do you partition tasks across agents? How do you handle failures and retries? How do you monitor what a swarm of agents is actually doing? AWS's guidance is unusually concrete — real code, real tradeoffs — which means enterprise architects have something specific to evaluate and adapt, rather than a whitepaper to read and shelve. Given the prevalence of Bedrock in large enterprise stacks, this guidance will likely influence how multi-agent patterns get standardized across the ecosystem.</p>
+<p><strong>What should I do as a leader?</strong> Share this reference architecture with your enterprise architecture and AI platform teams. Ask them to assess whether your organization's AI infrastructure is positioned to support multi-agent coordination, and what the first production use case would be.</p>
+<p><strong>What should I do?</strong> If you are building AI automations, even simple two-step pipelines, explore whether Strands Agents can provide the orchestration layer you are managing manually today. The AWS guide is beginner-accessible despite the technical depth.</p>
+<p>Source: AWS, 2026-07-22 — <a href="https://aws.amazon.com/blogs/machine-learning/multi-agent-social-intelligence-with-strands-agents-and-amazon-bedrock/">Multi-Agent Social Intelligence with Strands Agents and Amazon Bedrock</a></p>
 <hr>
 <h2>Vendors, Platforms &amp; Models</h2>
-<h3>Quick Hits</h3>
+<h3>Alibaba's Qwen-Image-3.0 Sets a New Bar for Open-Source Visual AI</h3>
+<p>Alibaba released Qwen-Image-3.0, an open-source model targeting high-quality image generation with improved text rendering, dense layout handling, and marketing-grade visual fidelity. The release continues Alibaba's pattern of advancing open-source multimodal capabilities that increasingly challenge proprietary offerings from OpenAI, Google, and Adobe.</p>
+<p><strong>Why it matters:</strong> Marketing, creative production, and document design are among the highest-volume and highest-visibility use cases in enterprise AI. Until recently, enterprises were largely dependent on closed, proprietary image generation tools. Qwen-Image-3.0's open-source availability — combined with its stated improvements in text rendering and dense layouts — makes it a credible alternative for evaluation, particularly for organizations with data-sovereignty requirements, cost constraints, or vendor-lock-in concerns. Real-world testing will determine how the quality claims hold up, but it belongs on the shortlist.</p>
+<p><strong>What should I do as a leader?</strong> Include Qwen-Image-3.0 in the next creative AI vendor evaluation cycle. For regulated industries or those with data residency requirements, the open-source model may offer deployment flexibility that closed APIs cannot match.</p>
+<p><strong>What should I do?</strong> If your team uses AI image generation tools, flag this release to your creative or marketing leads. A side-by-side prompt test against your current tool can take less than an hour and might surface a meaningful upgrade.</p>
+<p>Source: Alibaba/Qwen, 2026-07-22 — Qwen-Image-3.0: Rich Content, Authentic Details, Deep Knowledge</p>
+<hr>
+<h2>Quick Hits</h2>
 <ul>
-<li><strong>Poolside Laguna S 2.1</strong> — Poolside released Laguna S 2.1, an open-weight model that continues the trend of alternatives closing the gap on frontier capabilities. Key architectural insight: performance gains now come from mixture-of-experts design and inference strategies, not just raw compute. Worth watching for procurement diversification. — <a href="https://poolside.ai/blog/introducing-laguna-s-2-1">poolside.ai</a></li>
+<li><strong>Responsible AI Is Becoming a Growth Strategy</strong> — HBR makes the case that ethics and trust are differentiators in competitive markets, not just risk mitigation. Useful framing for positioning AI governance investments internally. — <a href="https://hbr.org/2026/07/responsible-ai-is-becoming-a-growth-strategy">hbr.org</a></li>
 </ul>
 <ul>
-<li><strong>Ramp's LLM Routing Research</strong> — Ramp published a deep-dive on Thompson Sampling for cost-efficient model routing, using online learning to improve model selection over time. Highly technical, but the underlying problem — automatically routing each request to the most cost-effective model that meets quality requirements — is one every large AI deployment will need to solve. — builders.ramp.com</li>
+<li><strong>Introducing OpenAI Presence</strong> — OpenAI outlined an enterprise vision for AI with broader access to workplace tools and workflows. Access is currently limited and product details remain high level, but the strategic direction signals where OpenAI sees deep enterprise integration heading. — <a href="https://openai.com/index/introducing-openai-presence/">openai.com</a></li>
 </ul>
 <hr>
 <h2>Looking Ahead</h2>
 <ul>
-<li><strong>Model routing and tiering</strong> will become a standard enterprise AI ops capability; allocate engineering time in Q3 to design tiered model pipelines before cost pressure forces reactive choices.</li>
-<li><strong>Cybersecurity AI tooling</strong> is moving from research to procurement catalogs; prepare vendor evaluation frameworks for AI-native SecOps tools before Q4 budget cycles.</li>
-<li><strong>Legal and compliance AI</strong> is maturing beyond chatbots into embedded workflow tools with measurable business outcomes; include ROI benchmarks in any legal-tech evaluation now underway.</li>
-<li><strong>Open-weight models</strong> from Poolside, Mistral, and others will continue closing capability gaps; factor them into your 2027 AI vendor strategy and intellectual-property reviews.</li>
+<li><strong>Agentic AI governance</strong> will need dedicated monitoring infrastructure, not bolt-on safety checks. Enterprises beginning agentic deployments in H2 2026 should define trajectory evaluation requirements now.</li>
+<li><strong>Multi-agent architecture standards</strong> are emerging from major cloud providers; enterprise architecture teams should assess current stack readiness before proprietary patterns lock in.</li>
+<li><strong>Executive AI accountability</strong> is becoming a board-level topic; prepare concise dashboards linking AI initiative status to business outcomes before year-end reviews.</li>
+<li><strong>Open-source visual AI</strong> is reaching marketing-quality thresholds; if your creative AI budget relies entirely on closed APIs, a vendor evaluation cycle is overdue.</li>
 </ul>
 <hr>
-<p>Wednesday brings the week's second half, and Tuesday gave enterprise AI teams plenty to work with — from leaner, specialized models to AI that sharpens rather than shortcuts human judgment. The pace is real, and so is the opportunity to build deliberately rather than reactively. Whether you lead a global security team or work a document-heavy workflow solo, there is something here that touches your day. Stay curious, stay discerning, and take the time today to ask one hard question of your AI tools. See you tomorrow.</p>
+<p>Thursday's AI dispatches carry a consistent undertone: the frontier is exciting, but the gap between pilot and enterprise value is closing only where leaders assign real accountability and build real infrastructure. Whether it is a private equity discipline applied to AI capital, an OpenAI warning about agentic oversight, or BCG's measured call to redesign workflows, the message is the same — the work is not in the models anymore. It is in the people and processes around them.</p>
+<p>Start the weekend with one concrete decision. Assign ownership to one AI initiative that has been running without a named sponsor. That single act tends to accelerate everything downstream. Take good care out there.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
 <li>Feed 1 (rss.tedt.org/ai_rss_feed.json): 50 items fetched</li>
-<li>Feed 2 (rss.tedt.org/aggregated_wes_ai_news.json): 0 items — returned HTTP 404 (same as prior issue)</li>
-<li>Date window applied: July 21, 2026 12:00 PDT to July 23, 2026 00:00 PDT (36-hour window covering "yesterday" in Pacific Time)</li>
-<li>Items within window: 6</li>
-<li>Items deduplicated against prior 7-day newsletter history: 0 removed (prior issue, July 22, covered July 21 UTC items from a different feed batch; no URL overlap detected)</li>
-<li>Items published: 4 main stories + 2 quick hits = 6 total</li>
-<li>Items excluded as older than window: 44</li>
-<li>All 6 in-window items carried a timestamp of 2026-07-21 17:00 PDT; no intra-day ordering available</li>
-<li>Items marked <code>[ * ]</code> in feed (editor-flagged priority) were used for main stories; items marked <code>[ ~ ]</code> (lower priority) were used as Quick Hits</li>
-<li>Feed 2 returned HTTP 404; only Feed 1 contributed to this issue</li>
-<li>All summaries drawn from feed <code>content_text</code> fields; no external article fetching was performed</li>
-<li>Pacific Time at generation: 2026-07-23 07:54 PDT</li>
+<li>Feed 2 (rss.tedt.org/aggregated_wes_ai_news.json): HTTP 404 — feed unavailable (same as prior two issues)</li>
+<li>Current time at generation: 2026-07-24 06:10 PDT</li>
+<li>Standard 36-hour window: 2026-07-22 18:10 PDT to 2026-07-24 06:10 PDT — 0 items fell within this window</li>
+<li>Feed lag note: The 7 freshest items in Feed 1 are all timestamped 2026-07-22 17:00 PDT, approximately 1 hour and 10 minutes before the window start. These items were NOT covered in the previous newsletter (2026-07-22 issue covered July 21 items only). Window was extended by ~2 hours to include these items as the freshest available uncovered content.</li>
+<li>Items within extended window (July 22 17:00 PDT): 7</li>
+<li>Items deduplicated against prior 7-day newsletters: 0 removed (no URL overlap with July 22 or July 23 issues)</li>
+<li>Items published: 5 main stories + 2 quick hits = 7 total</li>
+<li>Items excluded as older than extended window: 43</li>
+<li>Priority tagging: items marked [ ! ] (essential) and [ * ] (important) used for main stories; items marked [ ~ ] (optional) used as Quick Hits</li>
+<li>All summaries drawn from feed content_text fields; no external article fetching was performed</li>
+<li>Feed appears to update once daily; July 23 content had not yet appeared in the feed at generation time</li>
 </ul>
     </section>
     <footer>
