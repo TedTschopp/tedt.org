@@ -10,7 +10,7 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 
-description: "An AI-driven IT factory is where those arguments become an operating model."
+description: "The IT Adaptive Factory maps six levels of AI-driven software delivery, from autocomplete to governed autonomy, and the bottlenecks and controls at each stage."
 
 categories:
   - AI
