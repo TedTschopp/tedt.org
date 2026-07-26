@@ -44,9 +44,9 @@ image-credits-artist-URL: https://tedt.org/
 
 ## A Letter to the Artisanal Software Craftsman
 
-Less then a decade ago, a Software Developer is a programmer who creates software through direct, personal engagement with the code. Their craft lies in the accumulated judgment, taste, discipline, and care they bring to the work: understanding the problem, shaping the architecture, writing each implementation, and refining the result through deliberate inspection. They still use the technology of programming languages, development environments, compilers, debuggers, libraries, frameworks, and automation—but retain human authorship and comprehension as the central means of production.
+Less then a decade ago, a Software Developer was a programmer who created software through direct, personal engagement with the code. Their craft lies in the accumulated judgment, taste, discipline, and care they bring to the work: understanding the problem, shaping the architecture, writing each implementation, and refining the result through deliberate inspection. They still use the technology of programming languages, development environments, compilers, debuggers, libraries, frameworks, and automation—but retain human authorship and comprehension as the central means of production.
 
-Their technique in using this technology (those words are related) is the repeatable practice through which that craft is expressed: decomposition, abstraction, test-driven development, code review, refactoring, debugging, performance analysis, and careful use of documentation. The master craftsman embodies a production philosophy in which quality depends on the developer’s cultivated skill. Like other artisans, they value control, traceability, and intimate knowledge of the finished work.
+Their technique in using this technology (yes, those words are related) is the repeatable practice through which that craft is expressed: decomposition, abstraction, test-driven development, code review, refactoring, debugging, performance analysis, and careful use of documentation. The master craftsman embodies a production philosophy in which quality depends on the developer’s cultivated skill. Like other artisans, they value control, traceability, and intimate knowledge of the finished work.
 
 ## Technology
 
@@ -54,9 +54,9 @@ The term technology is related to the term technique, by technique I mean a deli
 
 Today we most readily recognize technique in activities with visible physical performance: a pianist’s touch, a painter’s brushwork, a surgeon’s incision, an athlete’s movement, or a programmer’s approach to decomposing a problem. But technique also shapes less visible forms of work. There are techniques for listening without becoming defensive, asking questions that expose assumptions, structuring a meeting, calming a frightened child, diagnosing an incident, writing a useful prompt, reviewing a decision, transferring knowledge, and introducing organizational change. Even governance has technique: the sequence in which evidence is presented, the way exceptions are framed, and the design of feedback loops can determine whether governance improves decisions or merely slows them down. Technique is therefore not confined to the hand. It can be social, intellectual, emotional, organizational, or computational.
 
-## Craft
+## Craftsman
 
-The term craftman, is related related to the term craft, and by craft I mean the disciplined ability to make something work well in the real world; not merely possessing knowledge, following instructions, or producing an object by hand. The word comes from the Old English *cræft*, which originally meant power, strength, or might. Its meaning expanded to include skill, dexterity, art, science, talent, and eventually a trade requiring specialized ability. Craft was therefore never limited to quaint handiwork. It described human capability: knowledge made practical, judgment developed through experience, and the power to turn intention into a reliable result.
+The term craftsman, is related related to the term craft, and by craft I mean the disciplined ability to make something work well in the real world; not merely possessing knowledge, following instructions, or producing an object by hand. The word comes from the Old English *cræft*, which originally meant power, strength, or might. Its meaning expanded to include skill, dexterity, art, science, talent, and eventually a trade requiring specialized ability. Craft was therefore never limited to quaint handiwork. It described human capability: knowledge made practical, judgment developed through experience, and the power to turn intention into a reliable result.
 
 That older meaning remains hidden inside many of the ways we use the word today. Craft can mean the practiced skill of a carpenter, writer, engineer, or performer; the collective members of a profession; the careful construction of an argument or strategy; and even the cunning required to achieve something indirectly. It also appears in *statecraft*, *tradecraft*, *stagecraft*, *witchcraft*, *watercraft*, *aircraft*, and *spacecraft*. These uses may seem unrelated, but each concerns the knowledgeable exercise of power within a particular medium—wood, language, politics, intelligence, perception, water, air, or space. Even modern labels such as “craft beer” invoke a promise that judgment, care, identity, and deliberate choices remain visible in the result.
 
@@ -76,7 +76,7 @@ No one should be expected to trust generated work blindly. AI should be question
 
 The truth is that a developer who categorically refuses to work with AI will increasingly resemble an engineer who refuses a compiler, a PC as opposed to a mainframe, a modern programming language as opposed to C or Assembly, source control as opposed to folder, automated testing as opposed to an independent testing team, or continuous integration and deployment as opposed to manual deployment. That person may still be talented. They may still produce excellent code. Their experience may remain enormously valuable. But an enterprise cannot base its future operating model on a method that does not scale with the growing volume, speed, and complexity of change.
 
-## Craft and Technique
+## Craft & Technique
 
 Today I think many people confuse technique with craft. They see the steps and the tools and assume that following them is sufficient. But true mastery requires understanding the principles behind the methods and knowing when and how to apply them wisely.
 
@@ -84,7 +84,7 @@ Craft and technique do align, but they are not identical. Technique or technolog
 
 In modern time technology advances technique by automating many things.  Computers may learn, generate, and execute many techniques, but craft remains visible in the framing of the problem, the selection of methods, the evaluation of results, and responsibility for consequences. Technique makes capable action repeatable; craft makes that action intelligent.
 
-## A Path Forward
+## A Path Forward for the Artisanal Software Craftsman
 
 A profession does not preserve its dignity by preserving its bottlenecks.
 
