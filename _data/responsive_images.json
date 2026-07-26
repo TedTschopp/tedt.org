@@ -6447,6 +6447,72 @@
       ],
       "width": 1672
     },
+    "/img/2026-07/AI-driven-IT-Factory.webp": {
+      "height": 941,
+      "source_sha256": "fd16d6f18b6b57bd65fe889a4faadc8d93b1c5c7f4655139b1c7ddb3491cad30",
+      "src": "/img/2026-07/AI-driven-IT-Factory.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-07/AI-driven-IT-Factory--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-07/AI-driven-IT-Factory--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-07/AI-driven-IT-Factory--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-07/AI-driven-IT-Factory--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-07/AI-driven-IT-Factory.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/2026-07/Artisanal-Software-Craftsman.webp": {
+      "height": 941,
+      "source_sha256": "80b633231520f6558b25323be474bcf054f4a01e82e6f4fd4a1582e92bab0c99",
+      "src": "/img/2026-07/Artisanal-Software-Craftsman.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-07/Artisanal-Software-Craftsman--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-07/Artisanal-Software-Craftsman--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-07/Artisanal-Software-Craftsman--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-07/Artisanal-Software-Craftsman--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-07/Artisanal-Software-Craftsman.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/2026-07/Beyond-the-light-bulb.webp": {
       "height": 816,
       "source_sha256": "3b14ae4c06c19d5e847c4835346506de4340ae681e1233e31c6a01f749548de1",
