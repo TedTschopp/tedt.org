@@ -39,7 +39,6 @@ image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: https://tedt.org/
 ---
 
-
 ## How an AI-driven IT Factory Grows Up
 
 Overnight an automated system that is scanning all your code for security problems identifies a newly disclosed vulnerability.  The artificial intelligence system immediately generates a fix, opens a pull request, and notifies the relevant team members.  This patch, which addresses the vulnerability, is ready for review before anyone has had their morning coffee.
