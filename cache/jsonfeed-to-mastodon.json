@@ -4890,8 +4890,8 @@
   "https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/": {
     "id": "/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
     "title": "Running to Stay Put",
-    "summary": "Running to Stay Put: The Red Queen Problem in Enterprise AI",
-    "content_text": "Running to Stay Put: The Red Queen Problem in Enterprise AI https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
+    "summary": "As an enterprise architect, I am used to target states. We describe the present and choose a destination. Then we plan the transitions between them. AI makes that habit uncomfortable. A target architecture approved this quarter can look dated before the funding clears. A vendor changes its model. A…",
+    "content_text": "As an enterprise architect, I am used to target states. We describe the present and choose a destination. Then we plan the transitions between them. AI makes that habit uncomfortable. A target architecture approved this quarter can look dated before the funding clears. A vendor changes its model. A software product adds the feature we planned to build. A competitor cuts the time required to serve… https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
     "url": "https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
     "image": "https://tedt.org/img/2026-07/Chasing-the-Red-Queen.webp",
     "tags": [
@@ -4915,5 +4915,60 @@
       "https://tschopp.net/users/Ted/statuses/116944370729732145"
     ],
     "lastTootTimestamp": 1784429485127
+  },
+  "https://tedt.org/The-IT-Adaptive-Factory/": {
+    "id": "/The-IT-Adaptive-Factory/",
+    "title": "The IT Adaptive Factory",
+    "summary": "How an AI-driven IT Factory Grows Up",
+    "content_text": "How an AI-driven IT Factory Grows Up https://tedt.org/The-IT-Adaptive-Factory/",
+    "url": "https://tedt.org/The-IT-Adaptive-Factory/",
+    "image": "https://tedt.org/img/2026-07/AI-driven-IT-Factory.webp",
+    "tags": [
+      "ai-driven software development",
+      "adaptive IT factory",
+      "AI maturity model",
+      "software engineering",
+      "technical debt",
+      "operating model",
+      "engineering leadership",
+      "AI governance"
+    ],
+    "date_published": "2026-07-26T00:00:00-07:00",
+    "date_modified": "2026-07-26T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116989172624787195"
+    ],
+    "lastTootTimestamp": 1785113107765
+  },
+  "https://tedt.org/A-letter-to-the-Artisanal-Software-Craftsman/": {
+    "id": "/A-letter-to-the-Artisanal-Software-Craftsman/",
+    "title": "A Letter to the Artisanal Software Craftsman",
+    "summary": "A Letter to the Artisanal Software Craftsman",
+    "content_text": "A Letter to the Artisanal Software Craftsman https://tedt.org/A-letter-to-the-Artisanal-Software-Craftsman/",
+    "url": "https://tedt.org/A-letter-to-the-Artisanal-Software-Craftsman/",
+    "image": "https://tedt.org/img/2026-07/Artisanal-Software-Craftsman.webp",
+    "tags": [
+      "software craftsmanship",
+      "artisanal software development",
+      "AI-assisted development",
+      "software engineering",
+      "industrialization",
+      "operating model",
+      "engineering leadership",
+      "automation"
+    ],
+    "date_published": "2026-07-26T00:00:00-07:00",
+    "date_modified": "2026-07-26T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": []
   }
 }
