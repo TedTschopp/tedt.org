@@ -56,7 +56,7 @@ posts.each do |post_path|
   standalone += 1
   fail_check("#{relative_post} must set format: standalone-html") unless metadata["format"] == "standalone-html"
 
-  %w[deck_url deck_sha256 slide_count].each do |key|
+  %w[deck_url deck_sha256 slide_count image image-alt image_width image_height].each do |key|
     value = metadata[key]
     fail_check("#{relative_post} is missing #{key}") if value.nil? || value.to_s.strip.empty?
   end
@@ -68,6 +68,27 @@ posts.each do |post_path|
 
   deck_path = File.join(ROOT, deck_url.delete_prefix("/"), "index.html")
   fail_check("#{relative_post} points to missing #{deck_path.delete_prefix("#{ROOT}/")}") unless File.file?(deck_path)
+
+  image_url = metadata["image"].to_s
+  expected_image_url = "#{deck_url}slide-preview.png"
+  unless image_url == expected_image_url
+    fail_check("#{relative_post} image must be #{expected_image_url.inspect}")
+  end
+  image_path = File.join(ROOT, image_url.delete_prefix("/"))
+  fail_check("#{relative_post} points to missing #{image_path.delete_prefix("#{ROOT}/")}") unless File.file?(image_path)
+  image = File.binread(image_path)
+  unless image.start_with?("\x89PNG\r\n\x1A\n".b) && image.bytesize >= 24
+    fail_check("#{image_path.delete_prefix("#{ROOT}/")} must be a PNG")
+  end
+  actual_width, actual_height = image.byteslice(16, 8).unpack("NN")
+  declared_width = Integer(metadata["image_width"], exception: false)
+  declared_height = Integer(metadata["image_height"], exception: false)
+  unless [declared_width, declared_height] == [actual_width, actual_height]
+    fail_check(
+      "#{image_path.delete_prefix("#{ROOT}/")} is #{actual_width}x#{actual_height}, " \
+      "metadata declares #{declared_width}x#{declared_height}"
+    )
+  end
 
   deck = File.binread(deck_path)
   relative_deck = deck_path.delete_prefix("#{ROOT}/")
@@ -106,7 +127,20 @@ posts.each do |post_path|
     fail_check("#{relative_deck} is missing #{label}") unless deck.match?(pattern)
   end
 
-  if deck.match?(/<(?:script|link)\b[^>]+(?:src|href)=["']https?:/i)
+  absolute_image_url = "https://tedt.org#{image_url}"
+  social_image_markers = {
+    "Open Graph preview" => /<meta property="og:image" content="#{Regexp.escape(absolute_image_url)}">/,
+    "X preview" => /<meta name="twitter:image" content="#{Regexp.escape(absolute_image_url)}">/,
+    "preview width" => /<meta property="og:image:width" content="#{actual_width}">/,
+    "preview height" => /<meta property="og:image:height" content="#{actual_height}">/,
+    "large social card" => /<meta name="twitter:card" content="summary_large_image">/
+  }
+  social_image_markers.each do |label, pattern|
+    fail_check("#{relative_deck} is missing #{label}") unless deck.match?(pattern)
+  end
+
+  if deck.match?(/<script\b[^>]+src=["']https?:/i) ||
+     deck.match?(/<link\b[^>]+rel=["']stylesheet["'][^>]+href=["']https?:/i)
     fail_check("#{relative_deck} has an external script or stylesheet dependency")
   end
 end
@@ -117,5 +151,6 @@ index = File.read(File.join(ROOT, "slides", "index.html"))
 fail_check("slides/index.html must discover _posts/Slides posts") unless index.include?("_posts/Slides/")
 fail_check("slides/index.html must not reference site.slides") if index.include?("site.slides")
 fail_check("slides/index.html must expose searchable deck cards") unless index.include?("data-slides-grid")
+fail_check("slides/index.html must render each deck image") unless index.include?("slide.image")
 
 puts "Slide deck check passed: #{published} published posts, #{standalone} standalone HTML deck."
