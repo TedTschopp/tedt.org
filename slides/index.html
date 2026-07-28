@@ -5,117 +5,115 @@ permalink: /slides/
 redirect_from:
   - /category/slides/
   - /category/slides.html
-description: "Explore interactive, PowerPoint-style slide decks built with Reveal.js and integrated with the tedt.org theme."
+description: "Explore self-contained, interactive slide decks on AI strategy, architecture, governance, and leadership."
 ---
 
-{% include slides/filter-controls.html %}
-<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
-
-{%- comment -%}
-  Slide deck discovery (canonical storage = `_posts/Slides/`).
-  Simplified logic: directly filter `site.posts` by `relative_path` containing `_posts/Slides/`.
-  Ordering: date descending (fallback to title only if date absent).
-  No collection fallback retained; reintroducing a collection would require intentional template update.
-  Performance: single filtered pass then sort; no nested global scans.
-{%- endcomment -%}
 {%- assign ordered_slides = site.posts | where_exp: 'p', "p.relative_path contains '_posts/Slides/'" | sort: 'date' | reverse -%}
 {%- assign deck_count = ordered_slides | size -%}
-{%- for slide in ordered_slides -%}
-  {%- assign topics_attr = '' -%}
-  {%- if slide.topics and slide.topics.size > 0 -%}
-    {%- assign topics_attr = slide.topics | join: ',' -%}
-  {%- endif -%}
-  <div class="col" data-topics="{{ topics_attr }}">
-    <div class="card h-100 shadow-sm border-0">
-      {%- comment -%}
-        Aspect Ratio Handling:
-        Default to 16:9 unless deck front matter specifies:
-          * aspect_ratio: '4x3' | '16x10' | custom string matching Bootstrap ratio utility pattern
-          * image_width & image_height numeric values (e.g., width: 1200, height: 800)
-        If image_width & image_height provided, compute a simplified ratio bucket:
-          - 4:3 if (image_width/image_height) within 1.30..1.36
-          - 16:10 if within 1.55..1.63
-          - 16:9 if within 1.75..1.80
-          - else fallback to 16x9 for card display (prevents explosion of custom classes)
-        NOTE: Bootstrap ratio utilities only support fixed set (e.g., ratio-16x9, ratio-4x3).
-        Authors wanting pixel-perfect preview should set `aspect_ratio` directly.
-      {%- endcomment -%}
-      {%- assign ratio_class = 'ratio-16x9' -%}
-      {%- if slide.aspect_ratio -%}
-        {%- assign ratio_candidate = slide.aspect_ratio | replace: ':', 'x' | downcase -%}
-        {%- if ratio_candidate == '4x3' or ratio_candidate == '16x10' or ratio_candidate == '16x9' -%}
-          {%- assign ratio_class = 'ratio-' | append: ratio_candidate -%}
-        {%- endif -%}
-      {%- elsif slide.image_width and slide.image_height -%}
-        {%- assign w = slide.image_width | plus: 0 -%}
-        {%- assign h = slide.image_height | plus: 0 -%}
-        {%- if h > 0 -%}
-          {%- comment -%}
-            Liquid `divided_by` performs integer division; 1280/720 would yield 1 instead of ~1.777...
-            Workaround: scale numerator before dividing to preserve 3 decimal precision as integer.
-            ratio_scaled ≈ actual_ratio * 1000. Comparison windows adjusted accordingly:
-              4:3   ~1333 → window 1330..1360
-              16:10 ~1600 → window 1550..1630
-              16:9  ~1777 → window 1750..1805
-          {%- endcomment -%}
-          {%- assign scaled_w = w | times: 1000 -%}
-          {%- assign ratio_scaled = scaled_w | divided_by: h -%}
-          {%- if ratio_scaled > 1330 and ratio_scaled < 1360 -%}
-            {%- assign ratio_class = 'ratio-4x3' -%}
-          {%- elsif ratio_scaled > 1550 and ratio_scaled < 1630 -%}
-            {%- assign ratio_class = 'ratio-16x10' -%}
-          {%- elsif ratio_scaled > 1750 and ratio_scaled < 1805 -%}
-            {%- assign ratio_class = 'ratio-16x9' -%}
-          {%- endif -%}
-        {%- endif -%}
+
+<div class="slides-library">
+  <div class="slides-library-intro">
+    <p class="slides-library-eyebrow">Presentation library</p>
+    <p>
+      Open a deck to use its built-in keyboard, touch, thumbnail, notes,
+      fullscreen, and print controls.
+    </p>
+    <dl class="slides-library-summary" aria-label="Presentation library summary">
+      <div>
+        <dt>{{ deck_count }}</dt>
+        <dd>Published decks</dd>
+      </div>
+      <div>
+        <dt>Static</dt>
+        <dd>No app or data tier</dd>
+      </div>
+      <div>
+        <dt>Portable</dt>
+        <dd>Open in any modern browser</dd>
+      </div>
+    </dl>
+  </div>
+
+  {% include slides/filter-controls.html %}
+
+  <div class="slides-library-grid" data-slides-grid>
+    {%- for slide in ordered_slides -%}
+      {%- capture topics_attr -%}
+        {%- for topic in slide.topics -%}{{ topic | slugify }}{%- unless forloop.last -%}|{%- endunless -%}{%- endfor -%}
+      {%- endcapture -%}
+      {%- capture search_attr -%}
+        {{ slide.title }} {{ slide.description }} {{ slide.topics | join: ' ' }}
+      {%- endcapture -%}
+      {%- assign is_static_deck = false -%}
+      {%- if slide.layout == 'slide-deck' and slide.format == 'standalone-html' -%}
+        {%- assign is_static_deck = true -%}
       {%- endif -%}
-      <div class="ratio {{ ratio_class }}">
-        {%- if slide.image -%}
-            <img src="{{ slide.image }}" class="card-img-top" alt="{{ slide.image-alt | default: slide.title | escape }}" loading="lazy">
 
-            <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark bg-opacity-50 pe-none" aria-hidden="true"></div>
-            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 pe-none" aria-hidden="true">
-              <div class="h5 mb-1 text-white">{{ slide.title | escape }}</div>
-              {%- if slide.description -%}
-                <div class="small text-white">{{ slide.description | escape }}</div>
-              {%- endif -%}
-            </div>
-        {%- else -%}
-          <div class="w-100 h-100 bg-dark bg-opacity-50 pe-none" aria-hidden="true"></div>
-          <div class="position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center p-3 pe-none" aria-hidden="true">
-            <div class="h5 mb-1 text-white">{{ slide.title | escape }}</div>
-            {%- if slide.description -%}
-              <div class="small text-white">{{ slide.description | escape }}</div>
-            {%- endif -%}
+      <article
+        class="slides-library-card"
+        data-slide-card
+        data-topics="{{ topics_attr | strip | escape }}"
+        data-search="{{ search_attr | strip | escape }}"
+        style="--deck-accent: {{ slide.accent_color | default: '#59636f' | escape }}"
+      >
+        <a class="slides-library-card-link" href="{{ slide.url | relative_url }}">
+          <div class="slides-library-preview">
+            {% if slide.image %}
+              {% capture slide_image_alt %}Preview artwork for {{ slide.title }}{% endcapture %}
+              <img
+                src="{{ slide.image | relative_url }}"
+                alt="{{ slide.image-alt | default: slide_image_alt | strip | escape }}"
+                loading="lazy"
+              >
+              <span class="slides-library-preview-shade" aria-hidden="true"></span>
+            {% else %}
+              <span class="slides-library-preview-grid" aria-hidden="true"></span>
+              <span class="slides-library-preview-kicker">
+                {% if is_static_deck %}Static HTML{% else %}Legacy Reveal{% endif %}
+              </span>
+              <strong>{{ slide.title | escape }}</strong>
+              <span class="slides-library-preview-index" aria-hidden="true">
+                {% if slide.slide_count %}{{ slide.slide_count }}{% else %}→{% endif %}
+              </span>
+            {% endif %}
           </div>
-        {%- endif -%}
-      </div>
-      <div class="card-body">
-        <h5 class="card-title"><a class="stretched-link" href="{{ slide.url | relative_url }}">{{ slide.title }}</a></h5>
-        {% if slide.description %}
-          <p class="card-text text-muted small">{{ slide.description }}</p>
-        {% else %}
-          <p class="card-text text-muted small">View interactive slides →</p>
-        {% endif %}
-        {%- if slide.last_modified and slide.last_modified != slide.date -%}
-          <p class="card-text mb-1 small"><span class="badge text-bg-info">Updated {{ slide.last_modified | date: '%Y-%m-%d' }}</span></p>
-        {%- endif -%}
-          {% if slide.topics and slide.topics.size > 0 %}
-            <p class="card-text mt-2 mb-0 small">
-              {% for t in slide.topics %}<span class="badge text-bg-secondary me-1">{{ t }}</span>{% endfor %}
-            </p>
-          {% endif %}
-      </div>
-    </div>
-  </div>
-{%- endfor -%}
 
-{%- if deck_count == 0 -%}
-  <div class="col">
-    <div class="alert alert-secondary w-100" role="status">
-      <strong>No presentations published yet.</strong> Slide decks will appear here once added.
-    </div>
-  </div>
-{%- endif -%}
+          <div class="slides-library-card-body">
+            <div class="slides-library-card-meta">
+              <span>{% if is_static_deck %}Web presentation{% else %}Interactive presentation{% endif %}</span>
+              {% if slide.slide_count %}
+                <span>{{ slide.slide_count }} slides</span>
+              {% endif %}
+            </div>
+            <h2>{{ slide.title | escape }}</h2>
+            <p>{{ slide.description | default: 'Open the interactive presentation.' | escape }}</p>
 
+            {% if slide.topics and slide.topics.size > 0 %}
+              <ul class="slides-library-topics" aria-label="Topics">
+                {% for topic in slide.topics %}
+                  <li>{{ topic | escape }}</li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+
+            <span class="slides-library-open">
+              Open presentation <span aria-hidden="true">→</span>
+            </span>
+          </div>
+        </a>
+      </article>
+    {%- endfor -%}
+  </div>
+
+  <div class="slides-library-empty" data-slides-empty hidden>
+    <h2>No presentations match</h2>
+    <p>Try a different search term or clear the selected topics.</p>
+  </div>
+
+  {% if deck_count == 0 %}
+    <div class="slides-library-empty" role="status">
+      <h2>No presentations published yet</h2>
+      <p>Presentations will appear here when their metadata posts are published.</p>
+    </div>
+  {% endif %}
 </div>

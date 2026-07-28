@@ -42,7 +42,7 @@
   {% unless seo_title_base contains 'Tool' %}
     {% assign seo_title_base = seo_title_base | append: ' Tool' %}
   {% endunless %}
-{% elsif page_layout == 'reveal-integrated' %}
+{% elsif page_layout == 'reveal-integrated' or page_layout == 'slide-deck' %}
   {% unless seo_title_base contains 'Presentation' %}
     {% assign seo_title_base = seo_title_base | append: ' Presentation' %}
   {% endunless %}
@@ -326,7 +326,7 @@ disconnected schema blocks that were previously emitted by article layouts.
 {% if page_layout == 'tool' %}{% assign is_tool_page = true %}{% endif %}
 
 {% assign is_blog_post = false %}
-{% if page.collection == 'posts' or page_layout == 'post' or page_layout == 'long-article' or page_layout == 'quote' or page_layout == 'prompt-details' or page_layout == 'micropubpost' or page_layout == 'reveal-integrated' %}
+{% if page.collection == 'posts' or page_layout == 'post' or page_layout == 'long-article' or page_layout == 'quote' or page_layout == 'prompt-details' or page_layout == 'micropubpost' or page_layout == 'reveal-integrated' or page_layout == 'slide-deck' %}
   {% assign is_blog_post = true %}
 {% endif %}
 

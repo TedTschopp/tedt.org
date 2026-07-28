@@ -1,98 +1,481 @@
-/* Slide card preview fallback
-   Purpose: Provide a readable miniature rendering of the first slide when no explicit slide.image
-   is defined in a Reveal.js deck's front matter. Keeps typography compact and prevents large media
-   from overflowing cards. */
+// Standalone HTML presentation pages and the posts-based presentation library.
+// Deck content itself lives in an iframe and remains isolated from site styles.
 
-.slide-card-preview {
-  --slide-preview-scale: .85;
+html.layout-slide-deck,
+html.layout-slide-deck body {
+  height: 100%;
+}
+
+body.slide-deck-page {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr);
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: #0d0f0e;
+  color: #f8f7f3;
+}
+
+.slide-deck-skip-link {
+  position: fixed;
+  z-index: 100;
+  top: .75rem;
+  left: .75rem;
+  padding: .65rem .9rem;
+  border-radius: .25rem;
+  background: #fff;
+  color: #111;
+}
+
+.slide-deck-sitebar {
   position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: minmax(9rem, 1fr) minmax(0, 2fr) minmax(9rem, 1fr);
+  align-items: center;
+  gap: 1rem;
+  min-height: 4.25rem;
+  padding: .7rem clamp(.8rem, 2vw, 1.5rem);
+  border-bottom: 1px solid rgba(255, 255, 255, .14);
+  background: #151816;
+  box-shadow: 0 .4rem 1.4rem rgba(0, 0, 0, .25);
+}
+
+.slide-deck-back,
+.slide-deck-open {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  width: fit-content;
+  min-height: 2.75rem;
+  padding: .55rem .75rem;
+  border: 1px solid rgba(255, 255, 255, .22);
+  border-radius: .35rem;
+  color: #f8f7f3;
+  font-size: .875rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.slide-deck-open {
+  justify-self: end;
+  background: #f8f7f3;
+  color: #151816;
+}
+
+.slide-deck-back:hover,
+.slide-deck-back:focus-visible {
+  border-color: rgba(255, 255, 255, .6);
+  background: rgba(255, 255, 255, .08);
+  color: #fff;
+}
+
+.slide-deck-open:hover,
+.slide-deck-open:focus-visible {
+  background: #fff;
+  color: #000;
+}
+
+.slide-deck-back:focus-visible,
+.slide-deck-open:focus-visible {
+  outline: 3px solid #ff765f;
+  outline-offset: 2px;
+}
+
+.slide-deck-identity {
+  min-width: 0;
+  text-align: center;
+}
+
+.slide-deck-identity h1,
+.slide-deck-identity p {
+  overflow: hidden;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.slide-deck-identity h1 {
+  color: #fff;
+  font-size: clamp(.95rem, 1.6vw, 1.2rem);
+  font-weight: 750;
+  letter-spacing: -.01em;
+}
+
+.slide-deck-identity p {
+  margin-top: .15rem;
+  color: #abb0ac;
+  font-size: .72rem;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.slide-deck-open-short {
+  display: none;
+}
+
+.slide-deck-stage {
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  overflow: hidden;
+  background: #0d0f0e;
+}
+
+.slide-deck-frame {
+  display: block;
   width: 100%;
   height: 100%;
+  border: 0;
+  background: #0d0f0e;
+}
+
+.slide-deck-fallback,
+.slide-deck-missing {
+  margin: 2rem;
+  padding: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, .2);
+  background: #151816;
+  color: #f8f7f3;
+}
+
+.slide-deck-missing {
+  width: calc(100% - 2rem);
+  max-width: 36rem;
+  margin: clamp(1rem, 8vh, 5rem) auto;
+}
+
+.slide-deck-fallback a,
+.slide-deck-missing a {
+  color: #ff9d8d;
+}
+
+.slides-library {
+  --slides-ink: var(--bs-body-color);
+  --slides-muted: var(--bs-secondary-color);
+  --slides-line: var(--bs-border-color);
+  --slides-panel: var(--bs-tertiary-bg);
+  margin-top: 1.25rem;
+}
+
+.slides-library-intro {
+  position: relative;
   overflow: hidden;
-  padding: .75rem .85rem .9rem;
-  background: linear-gradient(135deg, var(--bs-body-bg) 0%, var(--bs-body-bg-alt, #111) 100%);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: .25rem;
-  font-size: .75rem; /* compact */
-  line-height: 1.15;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  margin-bottom: 1.5rem;
+  padding: clamp(1.25rem, 3vw, 2.25rem);
+  border: 1px solid var(--slides-line);
+  border-radius: .85rem;
+  background:
+    linear-gradient(120deg, rgba(240, 68, 46, .14), transparent 42%),
+    var(--slides-panel);
 }
 
-/* Ensure the Bootstrap ratio wrapper inside slide cards behaves consistently. The .ratio > *
-  rule already sets position:absolute; here we guarantee object-fit for images and constrain
-  preview div to full area. */
-.card .ratio { background:#000; border-radius:.25rem .25rem 0 0; overflow:hidden; }
-.card .ratio > img.card-img-top { object-fit:cover; width:100%; height:100%; }
-.card .ratio > .slide-card-preview { position:absolute; inset:0; padding:.75rem .9rem .9rem; }
-
-/* Cross-browser stability (Edge/Safari):
-   Some browsers were collapsing the ratio container height in listing cards, causing the
-   preview overlay to appear as a thin strip. We reinforce the sizing here instead of
-   relying solely on Bootstrap's ::before padding hack, while keeping compatibility.
-   - Explicit position:relative (in case prior cascade interferes)
-   - aspect-ratio declaration for modern browsers
-   - padding-top fallback to preserve space if aspect-ratio unsupported / overridden
-   NOTE: Keep selectors scoped under .card to avoid unintended global overrides. */
-.card .ratio { position:relative; display:block; }
-.card .ratio.ratio-16x9 { aspect-ratio:16/9; padding-top:56.25%; }
-.card .ratio.ratio-4x3 { aspect-ratio:4/3; padding-top:75%; }
-.card .ratio.ratio-16x10 { aspect-ratio:16/10; padding-top:62.5%; }
-
-/* Ensure absolutely positioned preview obeys new ratio sizing and improves readability */
-.card .ratio > .slide-card-preview { 
-  display:flex; flex-direction:column; justify-content:flex-start; 
-  font-size:.75rem; line-height:1.15; 
-  color: var(--bs-body-color);
-}
-
-/* Provide a minimum height so the card body doesn't jump when content varies. */
-.card .ratio.ratio-16x9 { min-height:0; }
-
-.slide-card-preview h1,
-.slide-card-preview h2,
-.slide-card-preview h3,
-.slide-card-preview h4 { 
-  font-size: 1rem;
-  margin: 0 0 .4rem 0;
-  line-height: 1.1;
-}
-
-.slide-card-preview p { margin: 0 0 .4rem 0; }
-.slide-card-preview ul { margin: 0 0 .4rem 1.1rem; padding:0; }
-.slide-card-preview li { margin-bottom: .2rem; }
-
-/* Avoid Mermaid blocks or code blocks expanding card; hide if present in first slide */
-.slide-card-preview .mermaid,
-.slide-card-preview pre { display:none !important; }
-
-/* Subtle overlay gradient to hint interactivity */
-.slide-card-preview::after {
-  content: '';
+.slides-library-intro::after {
   position: absolute;
-  inset: 0;
-  /* Slightly lighten gradient for improved text legibility in dark theme */
-  background: linear-gradient(to bottom, rgba(0,0,0,0) 55%, rgba(0,0,0,.35));
+  top: -5rem;
+  right: -4rem;
+  width: 15rem;
+  height: 15rem;
+  border: 1px solid rgba(240, 68, 46, .3);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 2rem rgba(240, 68, 46, .04),
+    0 0 0 4rem rgba(240, 68, 46, .025);
+  content: "";
   pointer-events: none;
 }
 
-/* Headings inside preview: limit overflow and prevent layout shift */
-.slide-card-preview h1,
-.slide-card-preview h2,
-.slide-card-preview h3,
-.slide-card-preview h4 { 
-  overflow:hidden; text-overflow:ellipsis; white-space:nowrap;
-  max-width:100%;
+.slides-library-eyebrow {
+  margin: 0 0 .5rem;
+  color: #e75642;
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
 }
 
-/* Prevent long lists from pushing beyond preview; allow vertical scroll if needed */
-.slide-card-preview { overscroll-behavior:contain; }
+.slides-library-intro > p:not(.slides-library-eyebrow) {
+  position: relative;
+  z-index: 1;
+  max-width: 46rem;
+  margin: 0;
+  font-size: clamp(1rem, 2vw, 1.22rem);
+  line-height: 1.55;
+}
 
-/* Reveal deck layout sizing
-  We keep Reveal.js' default themes, but still need explicit container sizing because
-  the site navbar is fixed-top and removed from normal flow.
-  Scope to slide pages only (html.layout-reveal) to avoid affecting the rest of the site. */
-html.layout-reveal body { padding-top: 70px; }
-html.layout-reveal .reveal-container { height: calc(100vh - 70px); }
-html.layout-reveal .reveal { width: 100%; height: 100%; margin: 0; }
+.slides-library-summary {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  max-width: 48rem;
+  margin: 1.5rem 0 0;
+}
+
+.slides-library-summary div {
+  padding-left: .8rem;
+  border-left: 3px solid #e75642;
+}
+
+.slides-library-summary dt {
+  font-size: 1.1rem;
+  font-weight: 800;
+}
+
+.slides-library-summary dd {
+  margin: .1rem 0 0;
+  color: var(--slides-muted);
+  font-size: .78rem;
+}
+
+.slides-library-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1.25rem;
+}
+
+.slides-library-card {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--slides-line);
+  border-radius: .85rem;
+  background: var(--bs-body-bg);
+  box-shadow: 0 .45rem 1.4rem rgba(0, 0, 0, .08);
+  transition: border-color .18s ease, box-shadow .18s ease, transform .18s ease;
+}
+
+.slides-library-card[hidden] {
+  display: none;
+}
+
+.slides-library-card:hover {
+  border-color: color-mix(in srgb, var(--deck-accent) 65%, var(--slides-line));
+  box-shadow: 0 .9rem 2rem rgba(0, 0, 0, .16);
+  transform: translateY(-.18rem);
+}
+
+.slides-library-card-link {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  color: inherit;
+  text-decoration: none;
+}
+
+.slides-library-card-link:focus-visible {
+  outline: 3px solid var(--deck-accent);
+  outline-offset: -4px;
+}
+
+.slides-library-preview {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: clamp(1rem, 4vw, 1.5rem);
+  background:
+    radial-gradient(circle at 78% 22%, color-mix(in srgb, var(--deck-accent) 45%, transparent), transparent 30%),
+    linear-gradient(135deg, #111512, #252c27);
+  color: #fff;
+}
+
+.slides-library-preview::before {
+  position: absolute;
+  inset: 0 auto 0 0;
+  width: .42rem;
+  background: var(--deck-accent);
+  content: "";
+}
+
+.slides-library-preview img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.slides-library-preview-shade {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 35%, rgba(0, 0, 0, .62));
+}
+
+.slides-library-preview-grid {
+  position: absolute;
+  inset: 0;
+  opacity: .18;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .22) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .22) 1px, transparent 1px);
+  background-size: 1.6rem 1.6rem;
+}
+
+.slides-library-preview-kicker,
+.slides-library-preview strong,
+.slides-library-preview-index {
+  position: relative;
+  z-index: 1;
+}
+
+.slides-library-preview-kicker {
+  margin-bottom: .55rem;
+  color: #d4d9d5;
+  font-size: .67rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.slides-library-preview strong {
+  max-width: 82%;
+  font-size: clamp(1.05rem, 2.6vw, 1.5rem);
+  line-height: 1.08;
+}
+
+.slides-library-preview-index {
+  position: absolute;
+  right: 1.1rem;
+  bottom: .7rem;
+  color: rgba(255, 255, 255, .22);
+  font-size: clamp(3rem, 8vw, 5.4rem);
+  font-weight: 800;
+  line-height: 1;
+}
+
+.slides-library-card-body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 1.2rem;
+}
+
+.slides-library-card-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-bottom: .65rem;
+  color: var(--slides-muted);
+  font-size: .7rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.slides-library-card h2 {
+  margin: 0;
+  color: var(--slides-ink);
+  font-size: 1.24rem;
+  line-height: 1.22;
+}
+
+.slides-library-card p {
+  margin: .65rem 0 1rem;
+  color: var(--slides-muted);
+  font-size: .9rem;
+  line-height: 1.5;
+}
+
+.slides-library-topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .4rem;
+  margin: auto 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slides-library-topics li {
+  padding: .22rem .48rem;
+  border: 1px solid var(--slides-line);
+  border-radius: 999px;
+  color: var(--slides-muted);
+  font-size: .68rem;
+}
+
+.slides-library-open {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  margin-top: 1rem;
+  color: var(--slides-ink);
+  font-size: .85rem;
+  font-weight: 800;
+}
+
+.slides-library-empty {
+  margin-top: 1.5rem;
+  padding: 2rem;
+  border: 1px dashed var(--slides-line);
+  border-radius: .75rem;
+  text-align: center;
+}
+
+.slides-library-empty[hidden] {
+  display: none;
+}
+
+.slides-library-empty h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 700px) {
+  .slide-deck-sitebar {
+    grid-template-columns: auto minmax(0, 1fr) auto;
+    gap: .5rem;
+    min-height: 3.6rem;
+    padding: .45rem .55rem;
+  }
+
+  .slide-deck-back,
+  .slide-deck-open {
+    min-height: 2.6rem;
+    padding: .5rem .65rem;
+  }
+
+  .slide-deck-back span:last-child,
+  .slide-deck-open-long,
+  .slide-deck-identity p {
+    display: none;
+  }
+
+  .slide-deck-open-short {
+    display: inline;
+  }
+
+  .slides-library-summary {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slides-library-card {
+    transition: none;
+  }
+
+  .slides-library-card:hover {
+    transform: none;
+  }
+}
+
+@media print {
+  body.slide-deck-page {
+    display: block;
+    overflow: visible;
+  }
+
+  .slide-deck-sitebar,
+  .slide-deck-skip-link {
+    display: none !important;
+  }
+
+  .slide-deck-stage,
+  .slide-deck-frame {
+    width: 100%;
+    height: 100vh;
+  }
+}

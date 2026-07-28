@@ -56,11 +56,12 @@
 // scss-docs-end import-stack
 
 /* Site-specific overrides (keep last so they win) */
-// Slides: use Reveal.js default themes (no custom slide design system CSS)
+// Presentation library and standalone HTML deck shell.
+// Reveal.js remains a compatibility layout for already-published decks.
 @import "helpers/hidden"; // site utility used for JS-driven visibility toggles
 @import "components/nav-stage-badge"; // alpha/beta/gamma stage indicators in nav
-@import "components/slides-filter"; // client-side category filter utilities
+@import "components/slides-filter"; // presentation search and topic controls
 @import "overrides-alerts";
 @import "overrides-prompts";
-@import "overrides-slides"; // slide card preview fallback styles
+@import "overrides-slides"; // presentation library cards and deck shell
 @import "overrides-navbar"; // site-specific navbar sizing/alignment (must remain last so it wins)
