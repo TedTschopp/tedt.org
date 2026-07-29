@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-07-28 | TedT.org</title>
+  <title>Daily Report - 2026-07-29 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,110 +52,112 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-07-28</h1>
-      <p class="meta">Generated <time datetime="2026-07-28T05:33:15+00:00">2026-07-28T05:33:15Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-07-29</h1>
+      <p class="meta">Generated <time datetime="2026-07-29T05:37:41+00:00">2026-07-29T05:37:41Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Site is healthy and actively evolving.</strong> The most recent deploy succeeded. Ted pushed 9+ commits in the last 24 hours focused on slides infrastructure improvements and two new AI-themed content posts. One <strong>security PR (#203)</strong> for <code>concurrent-ruby</code> (3 CVEs, Low severity) has been open since 2026-06-27 and needs review. A sass-embedded upgrade PR (#206) is also pending. No build failures observed.</p>
+      <p><strong>Active development day.</strong> Significant slide deck work landed July 28 (enhanced presentation, metadata, removal of outdated decks, first-slide preview images). Two new AI-theme blog posts were added and iterated (artisanal software craftsmanship + AI-driven IT factory), with dependency updates (<code>bigdecimal</code>, <code>google-protobuf</code>) also shipped. Mastodon sync and daily report automation are running normally. Two Dependabot PRs await merge—one is a <strong>security patch</strong> (<code>concurrent-ruby</code> 1.3.5 → 1.3.7, three CVEs). Open issue backlog is healthy but largely unaddressed P2 content-discovery work.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line Up Front</h2>
-<p>Site is live and deploying cleanly. Active development this period was split between slides system improvements (preview thumbnails, metadata, deck cleanup) and new AI-themed content posts. Two Dependabot PRs are open—one security-tagged. Automated workflows (Mastodon sync, daily report, enterprise AI content refresh) are all running normally.</p>
+<p>July 28–29 was a productive day focused on the slides system and AI-content publishing. Core automation (Mastodon feed, daily report) is green. One security Dependabot PR needs attention. The P2 content-discovery issue cluster (tag infrastructure, category enhancements, cross-collection bridges) continues to accumulate without active work.</p>
 <hr>
-<h2>Recent Commits (2026-07-27 – 2026-07-28)</h2>
-<p>Ordered newest first.</p>
+<h2>Recent Commits (July 26–28)</h2>
+<p><strong>July 28</strong></p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/61bbdaaf854d8b80f6e1849d7ada4679c56ec669"><code>61bbdaa</code></a>** <code>more fixes to images</code> — 2026-07-28 04:25 UTC</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/1e283434d761db1913bdadfeebb46716c4fa4901"><code>1e28343</code></a>** <code>Use first slide for presentation previews</code> — 2026-07-28 03:17 UTC</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/c356c136f0c9b3d1c9d3ba38756f385b8d90f325"><code>c356c13</code></a>** <code>update slides with metadata</code> — 2026-07-28 02:43 UTC</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/0ad3b32ec54e310ed39a1558313151b8d28cbdeb"><code>0ad3b32</code></a>** <code>chore(slides): remove outdated slide decks for AI strategy and implementation</code> — 2026-07-28 02:24 UTC</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/724b95605678526afbe45999149d3d4e122d48b7"><code>724b956</code></a>** <code>feat(slides): enhance slide deck presentation and add validation checks</code> — 2026-07-28 02:06 UTC</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/870d9a83ebc5e49a7f15fa80dc912d70b4393254"><code>870d9a8</code></a>** <code>chore: refresh yesterday in enterprise ai</code> _(bot)_ — 2026-07-27 13:39 UTC</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/dd13beab3585a9d96ed3874e3c40e541382ef007"><code>dd13bea</code></a>** <code>chore: update Mastodon cache/front matter</code> _(bot)_ — 2026-07-27 07:16 UTC</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/09acb3139a64738d1e4b6ceb27c82b0a5895d50d"><code>09acb31</code></a>** <code>content(posts): refine language and improve clarity in AI craftsmanship article</code> — 2026-07-27 00:09 UTC</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/6c42aa86256d4da193515b2dcc84870198b2af8a"><code>6c42aa8</code></a>** <code>content(posts): correct repetition in definition of craftsman</code> — 2026-07-27 00:01 UTC</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/5a17689ca763b5865b3d145bf283abe845497717"><code>5a17689</code></a>** — chore: update Mastodon cache/front matter _(github-actions[bot], automated)_</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/51cf47659fb737f757e18bcefb2893bf4e2dfe22"><code>51cf476</code></a>** — chore: refresh daily report _(automated)_</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/61bbdaaf854d8b80f6e1849d7ada4679c56ec669"><code>61bbdaa</code></a>** — more fixes to images</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/1e283434d761db1913bdadfeebb46716c4fa4901"><code>1e28343</code></a>** — Use first slide for presentation previews</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/c356c136f0c9b3d1c9d3ba38756f385b8d90f325"><code>c356c13</code></a>** — update slides with metadata</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/0ad3b32ec54e310ed39a1558313151b8d28cbdeb"><code>0ad3b32</code></a>** — chore(slides): remove outdated slide decks for AI strategy and implementation</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/724b95605678526afbe45999149d3d4e122d48b7"><code>724b956</code></a>** — feat(slides): enhance slide deck presentation and add validation checks</li>
 </ul>
-<h3>Earlier this period (2026-07-26)</h3>
+<p><strong>July 27</strong></p>
 <ul>
-<li><code>content(posts)</code>: Updated descriptions, titles, and clarity for AI craftsmanship and IT Adaptive Factory articles (multiple passes)</li>
-<li><code>feat(images)</code>: Added responsive images for AI-Driven IT Factory and Artisanal Software Craftsman posts</li>
-<li><code>feat(posts)</code>: Added two new articles — _Artisanal Software Craftsmanship_ and _AI-Driven IT Factory_</li>
-<li><code>chore(dependencies)</code>: Updated <code>bigdecimal</code> and <code>google-protobuf</code> versions</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/870d9a83ebc5e49a7f15fa80dc912d70b4393254"><code>870d9a8</code></a>** — chore: refresh yesterday in enterprise ai _(automated)_</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/dd13beab3585a9d96ed3874e3c40e541382ef007"><code>dd13bea</code></a>** — chore: update Mastodon cache/front matter _(automated)_</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/09acb3139a64738d1e4b6ceb27c82b0a5895d50d"><code>09acb31</code></a>** — content(posts): refine language and improve clarity in AI craftsmanship article</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/6c42aa86256d4da193515b2dcc84870198b2af8a"><code>6c42aa8</code></a>** — content(posts): correct repetition in definition of craftsman</li>
+</ul>
+<p><strong>July 26</strong></p>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/0580ce2d2dcf666904fe4c62dd5c55a760196358"><code>0580ce2</code></a>** — content(posts): update description for The IT Adaptive Factory article</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/b497bd99eb077424ca29d9ffa58f75e406286520"><code>b497bd9</code></a>** — content(posts): update language and improve clarity in AI craftsmanship article</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/68006c6c8679b2496fea59ffa229fcb685fbac0d"><code>68006c6</code></a>** — content(posts): update titles and enhance content in AI-related articles</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/4883fdfd6f9a58dcb298ccc2da4e56f838fa7129"><code>4883fdf</code></a>** — feat(images): add responsive images for AI-driven IT Factory and Artisanal Software Craftsman</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/4eada83ebdef9eabbdf3f42a3a20e19ca3ae7de3"><code>4eada83</code></a>** — chore(dependencies): update bigdecimal and google-protobuf versions</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/03cef52c7d739ba2df14c8dc90f9a16c5b28029c"><code>03cef52</code></a>** — feat(posts): add new articles on artisanal software craftsmanship and AI-driven IT factory</li>
 </ul>
 <hr>
 <h2>Workflow Health</h2>
 <ul>
-<li><strong>Site Quality + Deploy</strong> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30328722186">Run #1061</a> — <strong>✅ success</strong> — triggered by <code>more fixes to images</code> commit (2026-07-28 04:25 UTC)</li>
-<li><strong>Daily Report</strong> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30331670974">Run #90</a> — ⏳ in progress (current run)</li>
-<li><strong>Mastodon Feed Sync</strong> — Running via scheduled bot commits; two <code>chore: update Mastodon cache/front matter</code> commits landed in the last 24 hours — appears healthy</li>
+<li><strong>Daily Report</strong> — run #91, <code>in_progress</code> at report time. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30425325685">View run</a></li>
+<li><strong>Feed to Mastodon</strong> — run #2092, <code>completed / success</code> (2026-07-29 00:37–00:39 UTC). <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30411683561">View run</a></li>
+<li>No failed workflow runs observed in the most recent batch.</li>
 </ul>
 <hr>
 <h2>Open Pull Requests</h2>
-<h3>⚠️ Security — PR #203 (open since 2026-06-27, 31 days old)</h3>
+<h3>Security — Needs Merge</h3>
 <ul>
-<li><strong>Title:</strong> <code>chore(deps): bump concurrent-ruby from 1.3.5 to 1.3.7 in the security-patches group</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/203">Link</a>**</li>
-<li>Fixes 3 CVEs in <code>concurrent-ruby</code> v1.3.7 (all rated <strong>Low severity</strong>):</li>
-<li><code>CVE-2026-54904</code> — <code>AtomicReference#update</code> livelock on <code>Float::NAN</code></li>
-<li><code>CVE-2026-54905</code> — <code>ReentrantReadWriteLock</code> read-count overflow</li>
-<li><code>CVE-2026-54906</code> — <code>ReadWriteLock</code> wrong-thread write release</li>
-<li>Low severity but has been sitting for over a month. Worth merging.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/203">PR #203</a>** — <code>chore(deps): bump concurrent-ruby from 1.3.5 to 1.3.7</code> (security-patches group)</li>
+<li>Fixes three CVEs: CVE-2026-54904, CVE-2026-54905, CVE-2026-54906 (all Low severity per upstream, but patched)</li>
+<li>Open since 2026-06-27. <strong>This is a security update — recommend merging promptly.</strong></li>
 </ul>
-<h3>Dependency Upgrade — PR #206 (open since 2026-07-27)</h3>
+<h3>Dependency Updates — Review and Merge</h3>
 <ul>
-<li><strong>Title:</strong> <code>chore(deps): bump sass-embedded from 1.97.1 to 1.102.0</code></li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/206">Link</a>**</li>
-<li>Dependabot PR; no security advisory. Bumps 5 minor versions. Review for any SCSS compatibility issues before merging.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/206">PR #206</a>** — <code>chore(deps): bump sass-embedded from 1.97.1 to 1.102.0</code></li>
+<li>Opened 2026-07-27. Routine Sass toolchain update; review for any SCSS behavior changes before merging.</li>
 </ul>
+<hr>
+<h2>Open Issues (Selected P2 Backlog)</h2>
+<p>All issues below are labeled <code>P2 / audit-2026-05</code>. None have had recent activity.</p>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a>** — Enhance category landing pages: related categories, tag clouds, depth indicators</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a>** — Build cross-collection content bridges and related-posts infrastructure</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a>** — Drive prompt series adoption: audit and populate series metadata</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/183">#183</a>** — Standardize tagging model: enforce coverage and build site-wide tag infrastructure</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/182">#182</a>** — Create slide gallery with topic filtering and deck browser</li>
+</ul>
+<blockquote>Note: #182 (slide gallery) is the most immediately relevant given July 28 slide deck work. The groundwork (metadata, first-slide previews) was laid; the gallery page itself is still an open issue.</blockquote>
 <hr>
 <h2>Content &amp; Publishing Observations</h2>
 <ul>
-<li>Two new AI-themed posts went through multiple polish commits over 2026-07-26/27 — signals active editorial refinement, which is healthy. Image paths were iterated on as well (<code>more fixes to images</code>), so verify the live post previews render correctly on the published site.</li>
-<li>Slides system improvements: outdated AI strategy decks were removed, metadata updated, and first-slide preview thumbnails are now used. Aligns with ADR 0012/0013 patterns for <code>standalone-html</code> and <code>reveal-integrated</code> decks.</li>
-<li>Enterprise AI content had a scheduled bot refresh (<code>chore: refresh yesterday in enterprise ai</code>) — automated pipeline is functioning.</li>
+<li><strong>New posts published:</strong> Two AI-theme articles landed — "Artisanal Software Craftsman" and "AI-Driven IT Factory" — with multiple rounds of copy iteration (language clarity, description updates, image additions). Both are now in stable state.</li>
+<li><strong>Slides system:</strong> Outdated decks removed; remaining decks enriched with metadata; first-slide previews implemented. This directly addresses the quality bar needed before building the slide gallery (#182).</li>
+<li><strong>Mastodon sync</strong> is operating normally on its automated schedule.</li>
 </ul>
 <hr>
-<h2>Open Issues (Sample)</h2>
+<h2>Risks and Blockers</h2>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a>** \[P2\] Enhance category landing pages: related categories, tag clouds, depth indicators — open</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a>** \[P2\] Build cross-collection content bridges and related-posts infrastructure — open</li>
+<li><strong>Security PR #203 is 32 days old.</strong> Three <code>concurrent-ruby</code> CVEs remain unpatched in the deployed gem lockfile. Low severity upstream, but this should be closed.</li>
+<li><strong>Sass-embedded jump of 4 minor versions</strong> (1.97.1 → 1.102.0) in PR #206 warrants a local build check before merge to confirm no SCSS deprecation warnings become errors.</li>
+<li><strong>P2 content-discovery backlog</strong> (issues #182–#186) continues to grow stale. No P1 blockers present, but this work improves site engagement and SEO.</li>
+<li><strong>Slide gallery (#182)</strong> is now unblocked by the July 28 metadata work. Good candidate for next active sprint.</li>
 </ul>
-<p>Both are backlog P2 items; no movement in this period.</p>
 <hr>
-<h2>Risks &amp; Recommended Actions</h2>
-<h3>Immediate</h3>
+<h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #203</strong> (<code>concurrent-ruby</code> security patch). Low severity but 31 days old. No reason to delay further.</li>
-<li><strong>Verify new AI post images</strong> render correctly in production — <code>more fixes to images</code> was the final commit before deploy; confirm post preview thumbnails and hero images load as expected.</li>
+<li><strong>Merge PR #203</strong> (<code>concurrent-ruby</code> security patch) — no code changes needed, purely a lockfile update.</li>
+<li><strong>Review and merge PR #206</strong> (<code>sass-embedded</code>) after confirming build passes locally.</li>
+<li><strong>Start slide gallery work</strong> (#182) — metadata and preview infrastructure is in place; the gallery layout is the remaining piece.</li>
+<li><strong>Triage #183</strong> (tagging infrastructure) — tag coverage is a prerequisite for several other discovery features (#186 tag cloud, #185 related posts).</li>
+<li>Consider marking daily-report run #91 complete and verifying the published output renders correctly after this automation run.</li>
 </ol>
-<h3>Near-term</h3>
-<ol>
-<li><strong>Review PR #206</strong> (<code>sass-embedded</code> 1.97.1 → 1.102.0). Check for any SCSS compilation warnings or breaking changes in the build log before merging.</li>
-<li><strong>P2 issues #185 and #186</strong> remain unaddressed. If content discovery is a priority, consider scheduling one of these.</li>
-</ol>
-<hr>
-<h2>Automated Activity Summary</h2>
-<ul>
-<li>Mastodon sync: active (2 bot commits in 24 hours)</li>
-<li>Enterprise AI content refresh: active (1 bot commit)</li>
-<li>Daily report: active (this run)</li>
-</ul>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commit data from GitHub API: <a href="https://github.com/TedTschopp/tedt.org"><code>TedTschopp/tedt.org</code></a>, last 20 commits as of report time.</li>
-<li>Workflow run data: GitHub Actions API, 10 most recent runs.</li>
-<li>Pull request data: GitHub API, open PRs only.</li>
-<li>Issue data: GitHub API, open issues, most recent 10.</li>
-<li><code>gh</code> CLI not authenticated; all reads via GitHub MCP tools.</li>
-<li>Workflow build logs not inspected directly; health inferred from <code>conclusion: success</code> in run metadata.</li>
-<li>No external link check data available for this report run.</li>
-<li>[ASSUMPTION] Mastodon sync health inferred from presence of bot commits, not from direct API validation of toot delivery.</li>
-<li>[ASSUMPTION] Slides deck validation test (<code>ruby tests/check_slide_decks.rb</code>) outcome not directly verified in this report; success assumed based on clean deploy.</li>
-<li>Report date/time: 2026-07-28T05:29 UTC.</li>
+<li>Commit history: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — last 20 commits as of 2026-07-29T05:33Z</li>
+<li>Workflow runs: GitHub Actions API — most recent 10 runs; daily report run #91 was <code>in_progress</code> at query time</li>
+<li>Open issues: GitHub Issues API — first page of open issues (ordered by default); 5 issues shown are a sample of the P2 backlog</li>
+<li>Open PRs: GitHub Pull Requests API — first page of open PRs; two Dependabot PRs shown</li>
+<li>No HTML Proofer output available (build not run in this agent context); build health inferred from workflow run conclusions only</li>
+<li>No <code>make qa</code> or local build was executed; no SCSS deprecation warnings were verified for PR #206</li>
+<li>Issue counts and full backlog size not enumerated — only first-page results reviewed</li>
+<li>[ASSUMPTION] The <code>Feed to Mastodon</code> run #2092 completing successfully means no new posts were left unsynced; actual toot count not verified</li>
 </ul>
     </section>
     <footer>
