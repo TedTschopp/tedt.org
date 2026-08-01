@@ -318,7 +318,7 @@ disconnected schema blocks that were previously emitted by article layouts.
 {% if page_layout == 'profile' or page.url == '/profile/' %}{% assign is_profile_page = true %}{% endif %}
 
 {% assign is_collection_page = false %}
-{% if page_layout == 'category' or page_layout == 'prompt-library' or page.url == '/slides/' %}
+{% if page_layout == 'category' or page_layout == 'prompt-library' or page.url == '/slides/' or page.url == '/assessments/' %}
   {% assign is_collection_page = true %}
 {% endif %}
 

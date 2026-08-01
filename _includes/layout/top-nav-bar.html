@@ -14,7 +14,7 @@
             {%- assign sorted_homepage = empty -%}
           {%- endif -%}
 
-          <nav class="navbar navbar-expand-lg {{ __nav_position_class }} bg-dark navbar-dark" role="navigation" aria-label="Primary">
+          <nav class="navbar navbar-expand-xl {{ __nav_position_class }} bg-dark navbar-dark" role="navigation" aria-label="Primary">
             {%- comment -%}
               Standardized navbar item sizing: ensure all top-level nav links & icon buttons share consistent 44px height,
               vertical centering, and baseline alignment. This improves visual rhythm and accessible hit target size.
@@ -193,10 +193,24 @@
                       data-href="{{ site.url }}/tools/"
                       style="text-decoration-thickness: 1px;"
                       aria-label="Go to Tools page">
-                      Tools {% include utility/stage-badge.html stage="beta" %}
+                      Tools
                     </button>
                     <noscript>
-                      <a href="{{ site.url }}/tools/" class="visually-hidden" title="{{ site.data.stages.beta.tooltip }}">Tools</a>
+                      <a href="{{ site.url }}/tools/" class="visually-hidden">Tools</a>
+                    </noscript>
+                  </div>
+
+                  <div class="nav-item" role="listitem">
+                    <button
+                      type="button"
+                      class="nav-link mx-2 menu-item btn btn-link p-0 border-0 js-nav-button"
+                      data-href="{{ site.url }}/assessments/"
+                      style="text-decoration-thickness: 1px;"
+                      aria-label="Go to Assessments page">
+                      Assessments
+                    </button>
+                    <noscript>
+                      <a href="{{ site.url }}/assessments/" class="visually-hidden">Assessments</a>
                     </noscript>
                   </div>
 
@@ -208,10 +222,10 @@
                       data-href="{{ site.url }}/slides/"
                       style="text-decoration-thickness: 1px;"
                       aria-label="Go to Presentations page">
-                      Presentations {% include utility/stage-badge.html stage="beta" %}
+                      Presentations
                     </button>
                     <noscript>
-                      <a href="{{ site.url }}/slides/" class="visually-hidden" title="{{ site.data.stages.beta.tooltip }}">Presentations</a>
+                      <a href="{{ site.url }}/slides/" class="visually-hidden">Presentations</a>
                     </noscript>
                   </div>
 
@@ -222,10 +236,10 @@
                       data-href="{{ site.url }}/prompts/"
                       style="text-decoration-thickness: 1px;"
                       aria-label="Go to Prompts page">
-                      Prompts {% include utility/stage-badge.html stage="gamma" %}
+                      Prompts
                     </button>
                     <noscript>
-                      <a href="{{ site.url }}/prompts/" class="visually-hidden" title="{{ site.data.stages.gamma.tooltip }}">Prompts</a>
+                      <a href="{{ site.url }}/prompts/" class="visually-hidden">Prompts</a>
                     </noscript>
                   </div>
 

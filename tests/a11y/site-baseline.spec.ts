@@ -28,6 +28,8 @@ const representativePages: RepresentativePage[] = [
   { label: 'Homepage', route: '/' },
   { label: 'Prompt Library', route: '/prompts/' },
   { label: 'Prompt Details', route: '/prompts/business-case-and-requirements-assistant/' },
+  { label: 'Assessment Library', route: '/assessments/' },
+  { label: 'AI Maturity Assessment', route: '/assessments/ai-coding-maturity-assessment/' },
   { label: 'Profile', route: '/profile/' },
   { label: 'Category Archive', route: '/category/Prompts.html' },
   { label: 'Long-form Article', route: '/Swiss-Folklore/The-Basilisk-Egg/' }

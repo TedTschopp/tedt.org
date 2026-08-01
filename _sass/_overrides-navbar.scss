@@ -8,15 +8,15 @@
 /* Responsive toggler visibility & stacking context ----------------------------------
   Issue: Toggler appearing when it shouldn't (on large viewports) and collapsed menu
   content rendering beneath hero/article imagery. Fix by:
-  1. For viewports >= lg: hide the .navbar-toggler (Bootstrap's .navbar-expand-lg should do this, but
+  1. For viewports >= xl: hide the .navbar-toggler (Bootstrap's .navbar-expand-xl should do this, but
     explicit rule added because custom overrides earlier may have altered default display logic).
   2. Ensure the collapsing container gains a higher stacking context and isn't occluded by positioned
     article media. Use position:relative + z-index and an elevated z-index on the open .show state.
   3. Provide a subtle background & box-shadow on mobile expanded menu to separate from underlying imagery.
 */
 
-@media (min-width: 992px) { /* lg breakpoint */
-  .navbar.navbar-expand-lg .navbar-toggler { display: none !important; }
+@media (min-width: 1200px) { /* xl breakpoint */
+  .navbar.navbar-expand-xl .navbar-toggler { display: none !important; }
 }
 
 /* Use a CSS variable for nav height for easy tuning */
