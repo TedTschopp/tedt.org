@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-07-31 | TedT.org</title>
+  <title>Daily Report - 2026-08-01 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,164 +52,103 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-07-31</h1>
-      <p class="meta">Generated <time datetime="2026-07-31T05:47:19+00:00">2026-07-31T05:47:19Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-01</h1>
+      <p class="meta">Generated <time datetime="2026-08-01T05:40:43+00:00">2026-08-01T05:40:43Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site automation is running normally. Automated workflows (Mastodon feed sync, daily report, Enterprise AI refresh) are all succeeding. Ted committed a focused slides refactor on 2026-07-28 — removing outdated decks, updating metadata, and switching to first-slide previews. Two Dependabot PRs are pending review, including a <strong>security-critical</strong> <code>concurrent-ruby</code> bump covering three CVEs. The May 2026 audit backlog (tracker #163) has 12+ open items unaddressed, including a GitHub Pages artifact over the 1 GB limit and 234 pages with missing <code>src</code> on <code>&lt;img&gt;</code> elements.</p>
+      <p>Site pipeline is healthy. The most notable manual activity this week was a slide deck publication ("Principles of Effective Architecture") and a multi-commit slide infrastructure overhaul on 2026-07-28. Automated workflows (Mastodon feed sync, daily report, CodeQL) are all succeeding. At least one Dependabot PR (<code>sass-embedded</code> bump) is open and awaiting review. No build failures detected in recent runs. Several open discovery/UX issues (#186 and related) remain unaddressed but are not blocking deployment.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line Up Front</h2>
-<p>Automation is healthy. Human attention is needed on: (1) two Dependabot PRs — one security-critical, (2) the unresolved P0 audit items from #163, and (3) ongoing slides-system work from this week's commits.</p>
+      <h2>Bottom Line</h2>
+<p>Site is building and deploying normally. Automation is running clean. Two areas need human attention: the pending <code>sass-embedded</code> Dependabot PR, and a backlog of open P2 UX issues around content discovery that have been open since May.</p>
 <hr>
-<h2>Recent Repository Activity (last 5 days)</h2>
-<h3>Commits by Ted Tschopp — 2026-07-28</h3>
+<h2>Recent Repository Activity</h2>
+<h3>Manual Commits (last 5 days)</h3>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/724b95605678526afbe45999149d3d4e122d48b7">feat(slides): enhance slide deck presentation and add validation checks</a>**</li>
-</ul>
-<p>Improved slide deck rendering, added validation. This is the largest change of the week.</p>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/0ad3b32ec54e310ed39a1558313151b8d28cbdeb">chore(slides): remove outdated slide decks for AI strategy and implementation</a>**</li>
-</ul>
-<p>Pruned stale decks. Good hygiene per ADR 0012/0013.</p>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/c356c136f0c9b3d1c9d3ba38756f385b8d90f325">update slides with metadata</a>** — Front matter additions.</li>
+<li><strong>2026-07-31 23:04</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/69129d292719524f39519409433bf81451509fc7">Publish Principles of Effective Architecture deck</a> — Ted Tschopp</li>
+<li>New slide deck added to <code>_posts/Slides/</code></li>
 </ul>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/1e283434d761db1913bdadfeebb46716c4fa4901">Use first slide for presentation previews</a>** — Preview thumbnail now pulls from slide 1.</li>
+<li><strong>2026-07-28</strong> — Slide infrastructure overhaul (4 commits):</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/724b95605678526afbe45999149d3d4e122d48b7"><code>feat(slides): enhance slide deck presentation and add validation checks</code></a></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/0ad3b32ec54e310ed39a1558313151b8d28cbdeb"><code>chore(slides): remove outdated slide decks for AI strategy and implementation</code></a></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/c356c136f0c9b3d1c9d3ba38756f385b8d90f325"><code>update slides with metadata</code></a></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/1e283434d761db1913bdadfeebb46716c4fa4901"><code>Use first slide for presentation previews</code></a></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/61bbdaaf854d8b80f6e1849d7ada4679c56ec669"><code>more fixes to images</code></a></li>
 </ul>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/61bbdaaf854d8b80f6e1849d7ada4679c56ec669">more fixes to images</a>**</li>
+<li><strong>2026-07-27 00:09</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/09acb3139a64738d1e4b6ceb27c82b0a5895d50d"><code>content(posts): refine language and improve clarity in AI craftsmanship article</code></a> — Ted Tschopp</li>
 </ul>
-<h3>Commits by Ted Tschopp — 2026-07-26 / 2026-07-27</h3>
+<h3>Automated Commits (last 5 days)</h3>
+<p>These are expected, routine bot-generated commits:</p>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/09acb3139a64738d1e4b6ceb27c82b0a5895d50d">content(posts): refine language and improve clarity in AI craftsmanship article</a>** — Editorial polish.</li>
-</ul>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/6c42aa86256d4da193515b2dcc84870198b2af8a">content(posts): correct repetition in definition of craftsman</a>**</li>
-</ul>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/b497bd99eb077424ca29d9ffa58f75e406286520">content(posts): update language and improve clarity in AI craftsmanship article</a>**</li>
-</ul>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/68006c6c8679b2496fea59ffa229fcb685fbac0d">content(posts): update titles and enhance content in AI-related articles</a>**</li>
-</ul>
-<ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/0580ce2d2dcf666904fe4c62dd5c55a760196358">content(posts): update description for The IT Adaptive Factory article</a>**</li>
-</ul>
-<h3>Automated commits (github-actions[bot])</h3>
-<ul>
-<li>Daily report refreshed: 2026-07-29, 2026-07-30</li>
-<li>Enterprise AI content refreshed: 2026-07-29, 2026-07-30</li>
-<li>Mastodon cache/front matter synced: 2026-07-27, 2026-07-28</li>
+<li>Daily Mastodon cache/front matter updates (2026-08-01, 2026-07-28, 2026-07-27 ×2)</li>
+<li>Daily report refreshes (2026-07-31, 2026-07-30, 2026-07-29, 2026-07-28, 2026-07-27)</li>
+<li>"Refresh yesterday in enterprise ai" content updates (2026-07-31, 2026-07-30, 2026-07-29, 2026-07-27)</li>
 </ul>
 <hr>
 <h2>Workflow Health</h2>
+<h3>Currently Running</h3>
 <ul>
-<li><strong>Feed to Mastodon</strong> — <code>success</code> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30594261934">Run #2100</a> (2026-07-31 00:41 UTC)</li>
-<li><strong>Feed to Mastodon</strong> — <code>success</code> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30570921523">Run #2099</a> (2026-07-30 18:33 UTC)</li>
-<li><strong>Daily Report</strong> — <code>in_progress</code> — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30607408402">Run #93</a> (this run, 2026-07-31 05:41 UTC)</li>
+<li><strong>Daily Report</strong> (run #94) — <code>in_progress</code> as of 2026-08-01T05:34Z — this is the current run producing this report.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/30686095172">Run link</a></li>
 </ul>
-<p>All scheduled workflows that have completed in the last 48 hours show <code>success</code>. No failures detected.</p>
+<h3>Recent Completed Runs</h3>
+<ul>
+<li><strong>Push on main (CodeQL)</strong> — <code>success</code> — completed 2026-08-01T00:46Z on commit <code>93d5bb2</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/30676247140">Run link</a></li>
+<li><strong>Feed to Mastodon</strong> — <code>success</code> — completed 2026-08-01T00:43Z on commit <code>69129d2</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/30676145706">Run link</a></li>
+</ul>
+<p>No workflow failures detected in the most recent runs checked.</p>
 <hr>
 <h2>Open Pull Requests</h2>
-<h3>PR #203 — Security (MERGE RECOMMENDED)</h3>
+<p>At least one Dependabot PR is open:</p>
 <ul>
-<li><strong>Title:</strong> <code>chore(deps): bump concurrent-ruby from 1.3.5 to 1.3.7 in the security-patches group</code></li>
-<li><strong>Link:</strong> <a href="https://github.com/TedTschopp/tedt.org/pull/203">PR #203</a></li>
-<li><strong>Author:</strong> dependabot[bot] — Created 2026-06-27</li>
-<li><strong>Labels:</strong> dependencies, ruby</li>
-<li><strong>Why it matters:</strong> Patches <strong>3 CVEs</strong> in <code>concurrent-ruby</code>:</li>
-<li>CVE-2026-54904 — <code>AtomicReference#update</code> livelock on <code>Float::NAN</code></li>
-<li>CVE-2026-54905 — <code>ReentrantReadWriteLock</code> read-count overflow grants write lock without exclusivity</li>
-<li>CVE-2026-54906 — <code>ReadWriteLock</code> allows wrong-thread write release and counter corruption</li>
-<li><strong>Action:</strong> Merge at next available opportunity.</li>
-</ul>
-<h3>PR #206 — Dependency Upgrade</h3>
-<ul>
-<li><strong>Title:</strong> <code>chore(deps): bump sass-embedded from 1.97.1 to 1.102.0</code></li>
-<li><strong>Link:</strong> <a href="https://github.com/TedTschopp/tedt.org/pull/206">PR #206</a></li>
-<li><strong>Author:</strong> dependabot[bot] — Created 2026-07-27</li>
-<li><strong>Labels:</strong> dependencies, ruby</li>
-<li><strong>Why it matters:</strong> Major version bump for the SCSS compiler. Low risk but should be validated against a build before merging. No security advisory attached.</li>
-<li><strong>Action:</strong> Test build, then merge.</li>
+<li><strong><code>sass-embedded</code> 1.97.1 → 1.102.0</strong> — Bumps the SCSS compiler host gem across ~5 minor versions. This is a direct Gemfile dependency. Review for breaking changes (color-space handling changes noted in the commits, specifically <code>gamma 2.40 for display-referred rec2020</code>). Low risk for this site's SCSS but should be reviewed before merging.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pulls">PR link</a></li>
 </ul>
 <hr>
-<h2>Open Issues Summary</h2>
-<h3>Tracker: May 2026 Audit Remediation — <a href="https://github.com/TedTschopp/tedt.org/issues/163">Issue #163</a></h3>
-<p>This tracker covers critical and quality issues from the May 2026 audit. Many items remain open.</p>
-<p><strong>P0 (blocking / deadline-driven):</strong></p>
+<h2>Open Issues (Selected)</h2>
+<h3>Content Discovery Backlog</h3>
 <ul>
-<li><code>#150</code> — Update GitHub Actions workflows from Node.js 20 to Node.js 24 (hard deprecation deadline)</li>
-<li><code>#151</code> — Fix <code>&lt;img&gt;</code> elements with missing <code>src</code> attribute (234 pages affected)</li>
-<li><code>#152</code> — Reduce GitHub Pages artifact size below 1 GB (currently ~1.16 GB)</li>
+<li><strong>[#186] [P2] Enhance category landing pages</strong> — Category pages are minimal redirect stubs. No related categories, tag clouds, breadcrumbs, or depth indicators. 41 affected pages. Open since 2026-05-29.</li>
+<li>Depends on #183 (tagging infrastructure) and #178 (pillar pages).</li>
 </ul>
-<p><strong>P1:</strong></p>
 <ul>
-<li><code>#153</code> — Fix YAML Date constant crashes in Ruby test harness (1,009 posts invisible to tests)</li>
-<li><code>#154</code> — Fix 588 broken Monster Manual image paths</li>
-<li><code>#155</code> — Update feed snapshot baselines (5 removed items causing diff failures)</li>
-<li><code>#156</code> — Fix 11 broken internal asset links and 2 broken script references</li>
-<li><code>#157</code> — Enforce CI quality gates: remove <code>continue-on-error</code> from HTMLProofer and a11y steps</li>
+<li><strong>Content silos / related posts</strong> — No cross-linking between blog essays, RPG design, and prompts on related themes. 69% of content is Gamma World material hidden from main discovery paths. Zero posts use a manual <code>related:</code> field. Open since May 2026 per issue data.</li>
 </ul>
-<p><strong>P2 / Strategic:</strong></p>
-<ul>
-<li><code>#158</code> — Remove 36 <code>.bak</code> files from git</li>
-<li><code>#159</code> — Commit <code>.squad/</code> governance artifacts to version control</li>
-<li><code>#160</code> — Accept ADR 0004: Prompt Library Integration (implemented but undocumented)</li>
-<li><code>#161</code> — Resolve ADR 0005: Multi-Scale Hex Overlay</li>
-<li><code>#162</code> — Mastodon backfill: ~800 posts without <code>mastodon-post-id</code></li>
-</ul>
-<p><strong>Other notable open issues:</strong></p>
-<ul>
-<li><code>#171</code> — [P2] Add front matter validation (image/image-alt, category slugs, date format)</li>
-<li><code>#186</code> — [P2] Enhance category landing pages with related categories and tag clouds</li>
-<li><code>#185</code> — [P2] Build cross-collection content bridges and related-posts infrastructure</li>
-<li><code>#184</code> — [P2] Drive prompt series adoption (currently only 3 of 56 prompts have <code>series:</code> metadata)</li>
-</ul>
-<hr>
-<h2>Content &amp; Publishing Pipeline</h2>
-<ul>
-<li>Active content work this week focused on AI craftsmanship posts and The IT Adaptive Factory article — multiple rounds of editorial improvement.</li>
-<li>Slides system received its most significant update in recent history: outdated decks removed, metadata updated, first-slide previews implemented. Validate the slides index page renders correctly.</li>
-<li>Mastodon syndication is running on schedule. The ~800-post backfill (#162) remains an open, unscheduled task.</li>
-</ul>
+<p>These are P2 issues that do not block deployment but reduce reader engagement. They have been open roughly 2 months with no visible progress.</p>
 <hr>
 <h2>Risks and Blockers</h2>
 <ul>
-<li><strong>Security:</strong> PR #203 (<code>concurrent-ruby</code> CVEs) has been open since 2026-06-27. This should have been merged already.</li>
-<li><strong>GitHub Pages size:</strong> Artifact at ~1.16 GB exceeds the 1 GB limit (#152). Risk of deployment failure if size grows further.</li>
-<li><strong>CI quality gate masking:</strong> <code>continue-on-error</code> on HTMLProofer and a11y steps (#157) means failures are invisible in CI. The 234 pages with missing <code>&lt;img src&gt;</code> (#151) and 588 broken image paths (#154) may already be failing silently.</li>
-<li><strong>Node.js 20 deprecation (#150):</strong> Hard deadline in GitHub Actions. If workflows are still on Node 20, check the deprecation timeline immediately.</li>
-<li><strong>Test harness blindspot:</strong> 1,009 posts invisible to Ruby tests due to YAML Date crashes (#153). Test results cannot be trusted until this is fixed.</li>
+<li><strong><code>sass-embedded</code> PR unreviewed</strong> — Moderate risk if merged without testing locally. Color handling changes in newer sass versions could affect gradient rendering in <code>category_registry.yml</code> palette definitions.</li>
+<li><strong>Content discovery debt accumulating</strong> — The category-enhancement issues (#186, related) continue to age. No current blocker, but the longer they sit, the more the site's 41 category landing pages underserve readers.</li>
+<li><strong>Slide deck removals on 2026-07-28</strong> — Outdated AI strategy/implementation decks were removed. [ASSUMPTION] These were intentional housekeeping by Ted; no broken links have been flagged, but HTML Proofer should confirm no dangling internal links remain.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #203 immediately</strong> — three security CVEs, low merge risk for a static site.</li>
-<li><strong>Address #150</strong> — check Node.js 20 deprecation date; likely imminent.</li>
-<li><strong>Fix #152 (artifact size)</strong> before the next deployment fails.</li>
-<li><strong><code>Fix #157</code> (CI gates)</strong> — remove <code>continue-on-error</code> so failures are visible.</li>
-<li><strong>Review slides changes</strong> from 2026-07-28 — validate the slides index and first-slide preview feature work as expected in a local build.</li>
-<li><strong>Merge PR #206</strong> after a local build confirms no SCSS regressions from <code>sass-embedded</code> v1.102.0.</li>
+<li><strong>Review and merge (or close) the <code>sass-embedded</code> Dependabot PR</strong> after a local <code>bundle exec jekyll build</code> test.</li>
+<li><strong>Run HTML Proofer internally</strong> (<code>SKIP_EXTERNAL=1</code>) to verify the slide deck removals from 2026-07-28 did not leave broken internal links.</li>
+<li><strong>Triage issue #186</strong> — either schedule it or close it if the category landing page enhancement is out of scope for the near term.</li>
+<li><strong>Verify the new "Principles of Effective Architecture" deck</strong> renders correctly at its permalink and appears in the slides catalog.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: Read from GitHub API, last 20 commits on <code>main</code> branch as of 2026-07-31T05:41Z</li>
-<li>Workflow runs: Read from GitHub Actions API, most recent completed runs</li>
-<li>Issues: Read from GitHub Issues API, open issues ordered by update date (top 10)</li>
-<li>Pull requests: Read from GitHub Pull Requests API, all open PRs</li>
-<li>Current Daily Report workflow run ID: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30607408402">30607408402</a> — this is the run producing this report</li>
-<li>Full workflow run list not parsed beyond the first visible records due to large payload (377 KB); summary is based on the top entries</li>
-<li>Issue list limited to top 10 by updated_at; additional open issues may exist beyond those shown</li>
-<li>Deploy workflow (<code>deploy.yml</code>) run status not individually confirmed for this period — Mastodon and Daily Report runs confirmed healthy</li>
-<li>No build log or HTMLProofer output was inspected; quality gate status is inferred from known open issues only</li>
-<li>[ASSUMPTION] The P0 audit items (#150–#152) remain open and unresolved based on issue state at query time</li>
-<li>[ASSUMPTION] <code>sass-embedded</code> PR #206 does not carry a security advisory (none shown in PR body)</li>
+<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — last 20 commits on <code>main</code> as of 2026-08-01T05:36Z.</li>
+<li>Workflow runs: <code>github-actions_list</code> (list_workflow_runs) — most recent completed and in-progress runs. Full run history is 8,065 total runs; only the most recent page was inspected.</li>
+<li>Open issues: <code>github-list_issues</code> (state: OPEN, perPage: 10). Full issue count not enumerated; only the first page was read.</li>
+<li>Open PRs: <code>github-list_pull_requests</code> (state: open). Full PR list not enumerated; only the first page was parsed visually.</li>
+<li>Workflow conclusion details for runs older than the current page were not retrieved.</li>
+<li>No build logs or HTML Proofer output were accessed; pass/fail status is based on workflow <code>conclusion</code> field only.</li>
+<li>[ASSUMPTION] Slide deck removals on 2026-07-28 were intentional housekeeping. No issue or PR was linked to those commits.</li>
+<li>[ASSUMPTION] The "refresh yesterday in enterprise ai" bot commits relate to a scheduled content update workflow; the specific workflow was not identified by name in the runs checked.</li>
+<li>Issue numbers for the content-silos issue were not definitively extracted from the truncated issue list; the body content was read directly from the raw output.</li>
 </ul>
     </section>
     <footer>
