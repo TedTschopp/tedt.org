@@ -1,0 +1,24 @@
+- slug: ai-coding-maturity-assessment
+  order: 10
+  title: "AI Maturity Assessment for Your Team"
+  eyebrow: "AI Engineering"
+  version: "1.0"
+  stage: beta
+  kind: "Team Maturity Assessment"
+  description: "Assess a software team’s AI coding maturity across Levels 0–5, validate the evidence, and get a People, Process, and Technology plan to reach Level 4."
+  permalink: /assessments/ai-coding-maturity-assessment/
+  image: /assessments/ai-coding-maturity-assessment/ai-coding-maturity-assessment-social.png
+  image_alt: "AI Maturity Assessment for Your Team from TedT.org, with a six-step path representing Levels 0 through 5 and guidance to measure capability, identify blockers and plan the move to Level 4."
+  image_width: 1200
+  image_height: 630
+  scope: "One team, product or value stream, workload class, risk class, and evidence window"
+  privacy: "Responses stay in the browser unless the participant exports them; the assessment does not send responses to a server."
+  measures:
+    - value: "7"
+      label: "Operating Axes"
+    - value: "50"
+      label: "Capability Ratings"
+    - value: "31"
+      label: "Control Criteria"
+  published_at: "2026-08-01T15:16:19-07:00"
+  modified_at: "2026-08-01T15:16:19-07:00"
