@@ -4854,7 +4854,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
             gate.passCriteria,
             actions.map((action) => `${action.deliverable}: ${action.doneWhen}`),
           ]),
-          assessorNote: state.gateEvidence[gate.id]?.trim() || "",
+          assessorNote: "",
         });
       });
 
@@ -4991,7 +4991,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
                 <div><dt>Accountable Human Role</dt><dd><p>${escapeHtml(item.accountableHumanRole)}</p></dd></div>
                 ${item.collaboratingRoles?.length ? `<div><dt>Collaborating Roles</dt><dd><p>${escapeHtml(item.collaboratingRoles.join("; "))}</p></dd></div>` : ""}
                 <div><dt>Evidence That the Blocker Is Removed</dt><dd>${renderTextList(item.closureEvidence)}</dd></div>
-                ${item.assessorNote ? `<div><dt>Assessor Note</dt><dd><p data-results-assessor-note="${escapeHtml(safeId(item.id))}"></p></dd></div>` : ""}
+                ${item.type === "gate" ? `<div data-results-assessor-note-container="${escapeHtml(safeId(item.id))}" hidden><dt>Assessor Note</dt><dd><p data-results-assessor-note="${escapeHtml(safeId(item.id))}"></p></dd></div>` : ""}
               </dl>
             </article>
           </li>
@@ -5367,14 +5367,12 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
       node.textContent = scopeValues[node.dataset.resultsScope] || "";
     });
 
-    const { blockers } = buildImmediateBlockers(scoreAssessment(), state.meta.targetLevel);
-    const assessorNotes = new Map(
-      blockers
-        .filter((item) => item.assessorNote)
-        .map((item) => [safeId(item.id), item.assessorNote]),
-    );
     elements.panel.querySelectorAll("[data-results-assessor-note]").forEach((node) => {
-      node.textContent = assessorNotes.get(node.dataset.resultsAssessorNote) || "";
+      const gateId = node.dataset.resultsAssessorNote;
+      const note = state.gateEvidence[gateId]?.trim() || "";
+      node.textContent = note;
+      const container = node.closest("[data-results-assessor-note-container]");
+      if (container) container.hidden = !note;
     });
   }
 
