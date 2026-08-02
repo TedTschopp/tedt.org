@@ -5117,5 +5117,36 @@
       "https://tschopp.net/users/Ted/statuses/117017477845703285"
     ],
     "lastTootTimestamp": 1785545011224
+  },
+  "https://tedt.org/How-Much-Work-Can-Your-AI-Safely-Own/": {
+    "id": "/How-Much-Work-Can-Your-AI-Safely-Own/",
+    "title": "How Much Work Can Your AI Safely Own?",
+    "summary": "Software delivery is only the first example. The same Levels 0–5 apply across enterprise value streams when leaders separate observed behavior, capability, control evidence and authorized AI responsibility.",
+    "content_text": "Software delivery is only the first example. The same Levels 0–5 apply across enterprise value streams when leaders separate observed behavior, capability, control evidence and authorized AI responsibility. https://tedt.org/How-Much-Work-Can-Your-AI-Safely-Own/",
+    "url": "https://tedt.org/How-Much-Work-Can-Your-AI-Safely-Own/",
+    "image": "https://tedt.org/img/2026-08/Enterprise-AI-Maturity.webp",
+    "tags": [
+      "enterprise AI",
+      "AI maturity",
+      "value streams",
+      "operating model",
+      "governed autonomy",
+      "AI governance",
+      "business process automation",
+      "organizational change",
+      "AI assessment",
+      "responsible AI"
+    ],
+    "date_published": "2026-08-01T00:00:00-07:00",
+    "date_modified": "2026-08-01T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117027314569023518"
+    ],
+    "lastTootTimestamp": 1785695107631
   }
 }
