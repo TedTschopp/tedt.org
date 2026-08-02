@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-01 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-02 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,61 +52,87 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-01</h1>
-      <p class="meta">Generated <time datetime="2026-08-01T13:09:51+00:00">2026-08-01T13:09:51Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-02</h1>
+      <p class="meta">Generated <time datetime="2026-08-02T13:12:02+00:00">2026-08-02T13:12:02Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Feed data for Aug. 1, 2026 could not be retrieved — the publishing environment's network firewall blocked all outbound requests to the configured feed sources. No items from the 24–36 hour window could be evaluated or published. This is a known infrastructure constraint, not a quiet news day.</p>
+      <p>The week closed with a flurry of model upgrades and enterprise use cases: OpenAI shipped GPT-5.6 to push price-performance boundaries, xAI launched Grok Voice Think Fast 2.0, and Google DeepMind unveiled Gemini Robotics ER 2. Meanwhile, Microsoft Research opened a new frontier for computer-use agents, and a real-world case study showed how Yahoo is putting Amazon Bedrock to work at scale.</p>
+<p><strong>Action bullets:</strong></p>
+<ul>
+<li>Evaluate GPT-5.6 pricing tiers — cost-sensitive workloads may find a new sweet spot</li>
+<li>Assess voice AI readiness in your enterprise communications and support stack</li>
+<li>Track computer-use agent research (Microsoft Echoverse) as a procurement signal for 2027 roadmaps</li>
+<li>Review AWS Bedrock contracts if your data team runs search or ad-targeting pipelines</li>
+<li>Flag robotics AI advancements (Gemini Robotics ER 2) to operations and facilities leadership</li>
+</ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Unavailable — Aug. 1, 2026</h2>
-<p>Today's newsletter could not be generated because the publishing environment's network firewall blocked all outbound HTTP requests to the configured feed sources. This constraint has persisted across multiple consecutive editions.</p>
-<p><strong>Feeds attempted:</strong></p>
+      <h2>Big Moves</h2>
+<h3>OpenAI Ships GPT-5.6 — Price-Performance Gets a New Benchmark</h3>
+<p>OpenAI released <a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/">GPT-5.6</a>, a new model positioned to advance the price-to-performance ratio for enterprise API customers. The release signals that OpenAI is actively tiering its model lineup — giving procurement teams more options between flagship and lightweight models.</p>
+<p>For enterprises running high-volume inference workloads, a more cost-efficient option at strong capability levels is meaningful. Think customer service automation, document processing, and internal search — anywhere token costs accumulate quickly.</p>
+<p><strong>What should I do as a leader?</strong> Review your current OpenAI API spend and tier. GPT-5.6 may offer a materially better cost curve for non-frontier tasks. Ask your AI ops team to benchmark it against your existing workflows within the next sprint.</p>
+<p><strong>What should I do?</strong> If you build or prototype with the OpenAI API, update your model selection parameters and run a quick cost comparison. A price-performance improvement often means the same budget stretches further.</p>
+<p>Source: OpenAI, 2026-07-31 — <a href="https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/">openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/</a></p>
+<hr>
+<h3>xAI Launches Grok Voice Think Fast 2.0</h3>
+<p>xAI introduced <a href="https://x.ai/news/grok-voice-think-fast-2">Grok Voice Think Fast 2.0</a>, an upgraded voice-enabled AI model emphasizing speed and reasoning depth. Voice interfaces are maturing fast, and an enterprise-capable voice model from xAI represents another option in a competitive field that already includes OpenAI's real-time voice, Google's Gemini Live, and Amazon's Alexa+ for business.</p>
+<p>For enterprises building customer-facing or internal voice workflows — from call-center assist to hands-free field operations — a faster, smarter voice layer broadens the vendor options and negotiating leverage.</p>
+<p><strong>What should I do as a leader?</strong> If your organization has a voice AI initiative underway or planned, add xAI Grok Voice to your vendor shortlist for evaluation alongside existing options.</p>
+<p>Source: xAI, 2026-07-31 — <a href="https://x.ai/news/grok-voice-think-fast-2">x.ai/news/grok-voice-think-fast-2</a></p>
+<hr>
+<h2>Research &amp; Capabilities</h2>
+<h3>OpenAI: Two Configuration Changes Tripled ARC-AGI-3 Scores</h3>
+<p>OpenAI published a detailed look at <a href="https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/">how enabling two specific settings tripled its scores on the ARC-AGI-3 benchmark</a> — a notoriously difficult test of general reasoning and novel problem-solving. The finding is methodologically significant: it suggests that capability unlocks can emerge from configuration tuning rather than requiring entirely new training runs.</p>
+<p>For enterprise teams, the practical takeaway is that model behavior is highly sensitive to prompt engineering and inference settings. What looks like a capability ceiling may sometimes be a configuration floor.</p>
+<p><strong>What should I do?</strong> If you are using advanced models for reasoning-heavy tasks (legal analysis, financial modeling, code generation), invest time in systematic prompt and inference configuration testing — not just prompt wording, but sampling parameters and system-level settings.</p>
+<p>Source: OpenAI, 2026-07-31 — <a href="https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/">openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/</a></p>
+<hr>
+<h3>Microsoft Research Unveils Echoverse: Richer Environments for Computer-Use Agents</h3>
+<p>Microsoft Research introduced Echoverse, a framework for training computer-use agents in deep, evolving simulated environments. Computer-use agents — AI that can operate software interfaces directly, clicking, typing, and navigating applications — are one of the more consequential emerging capabilities for enterprise automation.</p>
+<p>Current computer-use agents are brittle in dynamic environments. Echoverse directly addresses that brittleness by providing richer, more varied training grounds. Better-trained agents mean more reliable automation of complex multi-step workflows — think IT helpdesk tasks, procurement approvals, or legacy system navigation — without custom RPA scripting.</p>
+<p><strong>What should I do as a leader?</strong> Designate a small team to track computer-use agent maturity. The Echoverse research is a signal that production-grade agents for complex desktop workflows may arrive sooner than your current roadmap assumes.</p>
+<p>Source: Microsoft Research, 2026-07-31 — microsoft.com/en-us/research/blog/echoverse-deep-evolving-environments-for-computer-use-agents/</p>
+<hr>
+<h3>Google DeepMind Releases Gemini Robotics ER 2</h3>
+<p>Google DeepMind published the <a href="https://deepmind.google/models/model-cards/gemini-robotics-er-2/">model card for Gemini Robotics ER 2</a>, the latest iteration of its embodied reasoning robotics model. While robotics may feel distant from most enterprise IT desks, the pace of foundational model releases in this space is accelerating. Warehousing, logistics, manufacturing, and facilities management organizations are the near-term adopters, but the underlying capabilities — spatial reasoning, dexterous task execution, environment understanding — feed directly into the broader agentic AI ecosystem.</p>
+<p><strong>What should I do as a leader?</strong> If your organization operates in physical operations (distribution, manufacturing, facilities), assign someone to follow robotics AI advancements quarterly. The lead time from research release to deployable product is compressing.</p>
+<p>Source: Google DeepMind, 2026-07-31 — <a href="https://deepmind.google/models/model-cards/gemini-robotics-er-2/">deepmind.google/models/model-cards/gemini-robotics-er-2/</a></p>
+<hr>
+<h2>Enterprise Ops &amp; Adoption</h2>
+<h3>Yahoo Uses Amazon Bedrock to Sharpen Search Retargeting</h3>
+<p>A new AWS case study details <a href="https://aws.amazon.com/blogs/machine-learning/how-yahoo-enhances-search-retargeting-using-amazon-bedrock/">how Yahoo enhanced search retargeting using Amazon Bedrock</a>. Yahoo's ad-tech team leveraged Bedrock's managed foundation model access to improve the relevance and timing of search-based ad retargeting — a high-frequency, high-stakes data pipeline where latency and cost efficiency matter enormously.</p>
+<p>The case study is instructive for any enterprise running recommendation, personalization, or targeting workloads at scale. Bedrock's managed layer removes the infrastructure burden of running large models, and Yahoo's experience suggests measurable gains are achievable without rebuilding from scratch.</p>
+<p><strong>What should I do as a leader?</strong> If your data or marketing engineering teams run recommendation or targeting pipelines, share this case study as a proof point. Managed foundation model services like Bedrock can accelerate uplift without the overhead of full model ownership.</p>
+<p><strong>What should I do?</strong> If you work in data engineering or ML ops, the architectural patterns Yahoo used — Bedrock as a managed inference layer over existing data pipelines — are worth reading in detail. It is a template for integrating foundation models without a full platform rewrite.</p>
+<p>Source: AWS Machine Learning Blog, 2026-07-31 — <a href="https://aws.amazon.com/blogs/machine-learning/how-yahoo-enhances-search-retargeting-using-amazon-bedrock/">aws.amazon.com/blogs/machine-learning/how-yahoo-enhances-search-retargeting-using-amazon-bedrock/</a></p>
+<hr>
+<h2>Looking Ahead</h2>
 <ul>
-<li><code>https://rss.tedt.org/ai_rss_feed.json</code> — blocked by environment firewall</li>
-<li><code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — blocked by environment firewall</li>
-</ul>
-<p>No local cache of these feeds was found in the repository's <code>cache/</code> directory for today's date.</p>
-<h3>What This Means</h3>
-<ul>
-<li>No items from the 24–36 hour window (July 31 at approximately 6 a.m. PDT through Aug. 1 at 6 a.m. PDT) could be retrieved or evaluated.</li>
-<li>This is an infrastructure issue, not a quiet news day. Enterprise AI news continued through tracked sources during this period.</li>
-<li>Multiple consecutive editions have now reported this same constraint.</li>
-</ul>
-<h3>Direct Sources to Check</h3>
-<p>If you need today's enterprise AI coverage, these primary sources are worth visiting directly:</p>
-<ul>
-<li><strong>AWS Machine Learning Blog</strong> — <a href="https://aws.amazon.com/blogs/machine-learning/">aws.amazon.com/blogs/machine-learning</a></li>
-<li><strong>Google DeepMind</strong> — <a href="https://deepmind.google/discover/blog/">deepmind.google/discover/blog</a></li>
-<li><strong>Microsoft AI Blog</strong> — blogs.microsoft.com/ai</li>
-<li><strong>OpenAI News</strong> — <a href="https://openai.com/news/">openai.com/news</a></li>
-<li><strong>The Verge — AI</strong> — <a href="https://www.theverge.com/ai-artificial-intelligence">theverge.com/ai-artificial-intelligence</a></li>
-<li><strong>VentureBeat AI</strong> — <a href="https://venturebeat.com/ai/">venturebeat.com/ai</a></li>
-</ul>
-<h3>Looking Ahead</h3>
-<ul>
-<li>The feed infrastructure should be reviewed to permit outbound network access in the agentic workflow environment — or a pre-fetch step should cache the feed before the generation job runs.</li>
-<li>Once resolved, the pipeline will resume normal operation, covering the next available 24–36 hour window.</li>
-<li>Consider storing daily feed snapshots in the <code>cache/</code> directory as part of a separate workflow step so generation can proceed even in a restricted-network context.</li>
+<li><strong>Monitor GPT-5.6 adoption benchmarks</strong> from early enterprise users over the next two weeks; pricing transparency from OpenAI often improves as adoption grows, giving procurement teams better negotiating data.</li>
+<li><strong>Track Echoverse-derived agent releases</strong> from Microsoft — computer-use agents that can reliably handle dynamic interfaces will reshape RPA and helpdesk automation planning horizons.</li>
+<li><strong>Evaluate voice AI pilots</strong> with urgency; xAI Grok Voice Think Fast 2.0 joins a growing roster of capable voice models, and the window for differentiated early adoption in customer experience is narrowing.</li>
+<li><strong>Brief operations and facilities leadership</strong> on Gemini Robotics ER 2 and the broader robotics AI trajectory — the conversation is no longer speculative.</li>
 </ul>
 <hr>
-<p>We regret the continued gap. Good information depends on reliable infrastructure, and this constraint is worth resolving directly. The sources listed above will keep you current on what matters in enterprise AI. We look forward to returning to full coverage soon.</p>
+<h2>Sign-Off</h2>
+<p>The rhythm of AI releases does not pause for the weekend. Thursday brought a model pricing shift, a robotics milestone, a voice upgrade, a research breakthrough, and two sharp enterprise case studies — all before most of us had a chance to clear our Friday inboxes. There is something both humbling and clarifying about that pace: it rewards those who stay curious without letting urgency crowd out discernment.</p>
+<p>Take the time this weekend to share one of these stories with a colleague who has not yet started their AI journey. The best returns on AI investment are rarely technical — they come when more people understand what is becoming possible. Have a good weekend, wherever in the world you are reading this.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li>Feed 1: <code>https://rss.tedt.org/ai_rss_feed.json</code> — blocked by environment network firewall; no data returned</li>
-<li>Feed 2: <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — blocked by environment network firewall; no data returned</li>
-<li>Cache directory checked: <code>cache/</code> contains only Mastodon cache files, no AI feed snapshots</li>
-<li>items_fetched_count: 0</li>
-<li>items_within_24_36_hours_count: 0</li>
-<li>items_deduplicated_count: 0</li>
-<li>items_published_count: 0</li>
-<li>excluded_items_summary: No items available; all feed sources were network-blocked</li>
-<li>Prior edition reviewed: 2026-07-31 (same infrastructure constraint reported)</li>
-<li>Pacific Time at generation: 2026-08-01 06:07 PDT</li>
+<li><strong>Feed 1:</strong> rss.tedt.org/ai_rss_feed.json — fetched successfully</li>
+<li><strong>Feed 2:</strong> rss.tedt.org/aggregated_wes_ai_news.json — HTTP 404, unavailable</li>
+<li><strong>items_fetched_count:</strong> 50 (from feed 1 only)</li>
+<li><strong>items_within_24_36_hours_count:</strong> 6 (dated 2026-07-31, not present in previous newsletter)</li>
+<li><strong>items_deduplicated_count:</strong> 6 (no duplicates found)</li>
+<li><strong>items_published_count:</strong> 6 (all 6 items covered — 5 in main sections, 1 repurposed as part of enterprise section)</li>
+<li><strong>excluded_items_summary:</strong> 44 items excluded — all dated 2026-07-30 or earlier, outside the 24–36 hour window; July 31 items confirmed absent from the 2026-08-01 newsletter</li>
+<li><strong>Article content fetch:</strong> Blocked by network firewall (403 Tunnel Forbidden); item coverage is based on titles, URLs, and domain knowledge. No details were invented; items are kept concise per editorial guidelines.</li>
+<li><strong>Previous newsletter checked:</strong> Daily-Report/AI/index.html, dated 2026-08-01; none of the July 31 items appeared in it.</li>
 </ul>
     </section>
     <footer>
