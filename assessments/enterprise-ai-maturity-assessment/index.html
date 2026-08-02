@@ -4991,7 +4991,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
                 <div><dt>Accountable Human Role</dt><dd><p>${escapeHtml(item.accountableHumanRole)}</p></dd></div>
                 ${item.collaboratingRoles?.length ? `<div><dt>Collaborating Roles</dt><dd><p>${escapeHtml(item.collaboratingRoles.join("; "))}</p></dd></div>` : ""}
                 <div><dt>Evidence That the Blocker Is Removed</dt><dd>${renderTextList(item.closureEvidence)}</dd></div>
-                ${item.assessorNote ? `<div><dt>Assessor Note</dt><dd><p>${escapeHtml(item.assessorNote)}</p></dd></div>` : ""}
+                ${item.assessorNote ? `<div><dt>Assessor Note</dt><dd><p data-results-assessor-note="${escapeHtml(safeId(item.id))}"></p></dd></div>` : ""}
               </dl>
             </article>
           </li>
@@ -5200,7 +5200,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
           <p class="panel__kicker">Stage 5 · Evidence-Based Result</p>
           <span class="results-status${complete ? " is-complete" : ""}">${escapeHtml(statusText)}</span>
           <h2 id="panel-heading" tabindex="-1">${escapeHtml(resultHeading)}</h2>
-          <p class="panel__intro">${escapeHtml(selectedProfile.name)} · ${escapeHtml(state.meta.team || "Business unit or team not named")} · ${escapeHtml(state.meta.product || "Process, product, service or outcome not named")} · ${escapeHtml(state.meta.workload || "Work class not named")}</p>
+          <p class="panel__intro"><span data-results-scope="value-stream"></span> · <span data-results-scope="team"></span> · <span data-results-scope="product"></span> · <span data-results-scope="workload"></span></p>
         </header>
 
         <div class="results-planning field">
@@ -5356,12 +5356,37 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
     `;
   }
 
+  function hydrateResultsText() {
+    const scopeValues = {
+      "value-stream": selectedProfile.name,
+      team: state.meta.team || "Business unit or team not named",
+      product: state.meta.product || "Process, product, service or outcome not named",
+      workload: state.meta.workload || "Work class not named",
+    };
+    elements.panel.querySelectorAll("[data-results-scope]").forEach((node) => {
+      node.textContent = scopeValues[node.dataset.resultsScope] || "";
+    });
+
+    const { blockers } = buildImmediateBlockers(scoreAssessment(), state.meta.targetLevel);
+    const assessorNotes = new Map(
+      blockers
+        .filter((item) => item.assessorNote)
+        .map((item) => [safeId(item.id), item.assessorNote]),
+    );
+    elements.panel.querySelectorAll("[data-results-assessor-note]").forEach((node) => {
+      node.textContent = assessorNotes.get(node.dataset.resultsAssessorNote) || "";
+    });
+  }
+
   function renderPanel() {
     const panel = activePanelDefinition();
     if (panel.id === "context") elements.panel.innerHTML = renderContextPanel();
     else if (panel.id === "placement") elements.panel.innerHTML = renderPlacementPanel();
     else if (panel.id === "gates") elements.panel.innerHTML = renderGatesPanel();
-    else if (panel.id === "results") elements.panel.innerHTML = renderResultsPanel();
+    else if (panel.id === "results") {
+      elements.panel.innerHTML = renderResultsPanel();
+      hydrateResultsText();
+    }
     else elements.panel.innerHTML = renderDimensionPanel(dimensionById[panel.id]);
     clearErrors();
   }
