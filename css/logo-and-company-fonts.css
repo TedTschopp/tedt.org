@@ -460,6 +460,14 @@ footer.bd-footer .footer-bio-list li {
 footer.bd-footer .footer-housemark {
   margin-top:.5rem;
   margin-bottom:0;
+  width:100%;
+}
+
+footer.bd-footer .footer-housemark-image {
+  display:block;
+  height:1em;
+  width:auto;
+  max-width:100%;
 }
 
 footer.bd-footer .footer-link-groups,

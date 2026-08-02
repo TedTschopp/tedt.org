@@ -31,6 +31,8 @@ categories:
   - AI
   - Opinion
   - Philosophy
+  - Enterprise Architecture
+  - Leadership
 tags:
   - ai
   - enterprise

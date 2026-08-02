@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/Invictus'
 call-to-action: ''
 
 date: 1875-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: William Ernest Henley
@@ -41,17 +43,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/william-ernest-henley.webp"
+image-alt: "AI-generated photorealistic editorial portrait of William Ernest Henley."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of William Ernest Henley; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of William Ernest Henley; presented as an illustration rather than a documentary photograph."
+image-title: "William Ernest Henley — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: fate, resilience
 year-the-event-took-place: 1875
@@ -59,8 +63,6 @@ year-the-event-took-place: 1875
 mathjax: 
 
 order: 
-redirect_from:
-  - /William-Ernest-Henley-Out-of-the-night-that-covers-m/
 ---
 Out of the night that covers me,\
   Black as the pit from pole to pole,\

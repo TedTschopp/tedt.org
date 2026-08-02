@@ -5,8 +5,6 @@
 
     {% include utility/calculate-variables.html %}
     
-    <title>{{ page.title }} | {{ site.title }}</title>
-
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -64,7 +62,8 @@
                                 <p class="lead">{{ page.description }}</p>
                             {% endif %}
                         {% endif %}
-                        {{ content }}
+                        {% assign __page_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                        {{ __page_content | lazy_images_except_first }}
                     </div>
                 </main>
             </div>

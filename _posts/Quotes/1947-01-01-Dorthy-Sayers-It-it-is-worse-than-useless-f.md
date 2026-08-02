@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1947-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Dorothy Sayers
@@ -41,17 +43,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/dorothy-sayers.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Dorothy Sayers."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Dorothy Sayers; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Dorothy Sayers; presented as an illustration rather than a documentary photograph."
+image-title: "Dorothy Sayers — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: christianity, morality, theology
 year-the-event-took-place: 1947
@@ -59,7 +63,5 @@ year-the-event-took-place: 1947
 mathjax: 
 
 order: 
-redirect_from:
-  - /Dorthy-Sayers-It-it-is-worse-than-useless-f/
 ---
 It it is worse than useless for Christians to talk about the importance of Christian morality, unless they are prepared to take their stand upon the fundamentals of Christian theology. It is a lie to say that dogma does not matter; it matters enormously. It is fatal to let people suppose that Christianity is only a mode of feeling; it is vitally necessary to insist that it is first and foremost a rational explanation of the universe. It is hopeless to offer Christianity as a vaguely idealistic aspiration of a simple and consoling kind; it is, on the contrary, a hard, tough, exacting, and complex doctrine, steeped in a drastic and incompromising realism. And it is fatal to imagine that everybody knows quite well what Christianity is and needs only a little encouragement to practice it. The brutal fact is that in this Christian country not one person in a hundred has the faintest notion what the Church teaches about God or man or society or the person of Jesus Christ….  …Theologically this country is at present is in a state of utter chaos established in the name of religious toleration and rapidly degenerating into flight from reason and the death of hope.

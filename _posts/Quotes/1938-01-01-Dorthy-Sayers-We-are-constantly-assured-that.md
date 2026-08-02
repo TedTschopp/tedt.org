@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1938-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Dorothy Sayers
@@ -42,17 +44,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/dorothy-sayers.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Dorothy Sayers."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Dorothy Sayers; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Dorothy Sayers; presented as an illustration rather than a documentary photograph."
+image-title: "Dorothy Sayers — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: christianity, jesus christ, dogma
 year-the-event-took-place: 1938
@@ -60,8 +64,6 @@ year-the-event-took-place: 1938
 mathjax: 
 
 order: 
-redirect_from:
-  - /Dorthy-Sayers-We-are-constantly-assured-that/
 ---
 "We are constantly assured that the churches are empty because preachers insist too much upon doctrine — ‘dull dogma,’ as people call it. The fact is the precise opposite. It is the neglect of dogma that makes for dullness. The Christian faith is the most exciting drama that ever staggered the imagination of man — and the dogma is the drama.
   

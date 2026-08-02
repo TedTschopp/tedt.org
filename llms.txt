@@ -11,6 +11,8 @@ Notes:
 - [Homepage](https://tedt.org/): Recent writing and featured sections.
 - [Profile](https://tedt.org/profile/): Biography and key links.
 - [AI Prompt Library](https://tedt.org/prompts/): Curated prompt collection.
+- [Assessments](https://tedt.org/assessments/): Evidence-led self-assessments and decision-support resources.
+- [AI Maturity Assessment for Your Team](https://tedt.org/assessments/ai-coding-maturity-assessment/): Assess a software team's AI coding maturity across Levels 0–5.
 
 ## Feeds
 

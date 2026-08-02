@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/If—'
 call-to-action: ''
 
 date: 1910-01-01
+web_published_at: "2023-04-23T11:49:17-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Rudyard Kipling
@@ -41,17 +43,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/rudyard-kipling.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Rudyard Kipling."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Rudyard Kipling; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Rudyard Kipling; presented as an illustration rather than a documentary photograph."
+image-title: "Rudyard Kipling — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: resilience, humility, perseverance
 year-the-event-took-place: 1910
@@ -59,8 +63,6 @@ year-the-event-took-place: 1910
 mathjax: 
 
 order: 
-redirect_from:
-  - /Rudyard-Kipling-If-you-can-keep-your-head-when/
 ---
 "If you can keep your head when all about you\
     Are losing theirs and blaming it on you,\

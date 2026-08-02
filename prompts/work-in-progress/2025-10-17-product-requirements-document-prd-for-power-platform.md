@@ -1,5 +1,7 @@
 ---
 layout: prompt-details
+sitemap: false
+robots: "noindex, follow"
 
 title: "Architecture Product Requirements Document (PRD) for Power Platform"
 subtitle: "Enterprise Architecture and Requirements Engineering"

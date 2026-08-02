@@ -39,7 +39,8 @@ Accessibility / robustness improvements:
       {%- assign _alt_final = _alt_final | strip -%}
       <!-- ALT-DEBUG alt:[{{ _alt | truncate: 60 }}] final:[{{ _alt_final | truncate: 60 }}] -->
       {%- if include.url and include.url != '' -%}<a href="{{ include.url }}">{%- endif -%}
-         <img src="{{ include.file }}" class="img-fluid img-thumbnail figure-img float-end" alt="{{ _alt_final }}" data-alt-original="{{ _alt }}"/>
+         {% capture _figure_extra_attributes %}data-alt-original="{{ _alt | escape }}"{% endcapture %}
+         {% include utility/responsive-image.html src=include.file alt=_alt_final class="img-fluid img-thumbnail figure-img float-end" sizes="(min-width: 992px) 50vw, 100vw" extra_attributes=_figure_extra_attributes %}
       {%- if include.url and include.url != '' -%}</a>{%- endif -%}
       {%- if include.caption and include.caption != '' -%}
          <figcaption class="figure-caption">{{ include.caption }}</figcaption>

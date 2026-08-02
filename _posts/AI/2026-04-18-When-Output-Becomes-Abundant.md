@@ -31,6 +31,7 @@ categories:
 - AI
 - Business
 - Opinion
+- Leadership
 
 tags:
 - AI acceleration

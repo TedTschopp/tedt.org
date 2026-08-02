@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-06-26 | TedT.org</title>
+  <title>Daily Report - 2026-08-01 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,118 +52,103 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-06-26</h1>
-      <p class="meta">Generated <time datetime="2026-06-26T08:12:15+00:00">2026-06-26T08:12:15Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-01</h1>
+      <p class="meta">Generated <time datetime="2026-08-01T05:40:43+00:00">2026-08-01T05:40:43Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site is healthy. The last deploy (run #918) succeeded on 2026-06-25 after Ted's manual push to update the AI Engineer Coach VSIX download link. Mastodon feed sync is running cleanly (run #1905 succeeded this morning). Daily automation (daily report, enterprise AI refresh) is firing normally. One open Dependabot security PR needs review: nokogiri 1.19.3 → 1.19.4. A large backlog of P2/P3 issues from the May 2026 audit remains open with no in-progress work visible. Recommend triaging and scheduling at least one audit issue this week.</p>
+      <p>Site pipeline is healthy. The most notable manual activity this week was a slide deck publication ("Principles of Effective Architecture") and a multi-commit slide infrastructure overhaul on 2026-07-28. Automated workflows (Mastodon feed sync, daily report, CodeQL) are all succeeding. At least one Dependabot PR (<code>sass-embedded</code> bump) is open and awaiting review. No build failures detected in recent runs. Several open discovery/UX issues (#186 and related) remain unaddressed but are not blocking deployment.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line</h2>
-<p>Site is live, automation is green, no build failures in recent history. One open security PR (Dependabot, nokogiri patch) requires a merge decision. The May 2026 audit generated 12+ open issues — none appear to be in active development.</p>
+<p>Site is building and deploying normally. Automation is running clean. Two areas need human attention: the pending <code>sass-embedded</code> Dependabot PR, and a backlog of open P2 UX issues around content discovery that have been open since May.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Human Commits (past 7 days)</h3>
+<h3>Manual Commits (last 5 days)</h3>
 <ul>
-<li><strong>2026-06-25</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/45c8014ef3f98f31edb744737a92760d4d614145"><code>Update AI Engineer Coach VSIX download</code></a> — Ted updated a download link in the tools/downloads section.</li>
-<li><strong>2026-06-25</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/c72348743079f9897ef7d80a68c43430c323ca26"><code>prompt me a palace song post</code></a> — New content post added.</li>
-<li><strong>2026-06-22</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/420169673d3c5d39eba3013580fac4a5ab9fd654"><code>Update The σ System</code></a> — Update to an existing post about the σ System.</li>
-<li><strong>2026-06-21</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/238bba3586865c3d6dc19ba66a61c49f12a7b2d2"><code>Create The-σ-System.html</code></a> — New post created.</li>
+<li><strong>2026-07-31 23:04</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/69129d292719524f39519409433bf81451509fc7">Publish Principles of Effective Architecture deck</a> — Ted Tschopp</li>
+<li>New slide deck added to <code>_posts/Slides/</code></li>
 </ul>
-<h3>Automated Commits (routine, expected)</h3>
 <ul>
-<li>Daily report refreshes: every morning at ~08:00 UTC (running since at least 2026-06-19).</li>
-<li>Enterprise AI "yesterday" refreshes: daily at ~15:00–16:00 UTC.</li>
-<li>Mastodon cache/front matter update: 2026-06-25 16:10 UTC by github-actions bot.</li>
+<li><strong>2026-07-28</strong> — Slide infrastructure overhaul (4 commits):</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/724b95605678526afbe45999149d3d4e122d48b7"><code>feat(slides): enhance slide deck presentation and add validation checks</code></a></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/0ad3b32ec54e310ed39a1558313151b8d28cbdeb"><code>chore(slides): remove outdated slide decks for AI strategy and implementation</code></a></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/c356c136f0c9b3d1c9d3ba38756f385b8d90f325"><code>update slides with metadata</code></a></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/1e283434d761db1913bdadfeebb46716c4fa4901"><code>Use first slide for presentation previews</code></a></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/61bbdaaf854d8b80f6e1849d7ada4679c56ec669"><code>more fixes to images</code></a></li>
 </ul>
-<p>These automated commits are normal and expected.</p>
+<ul>
+<li><strong>2026-07-27 00:09</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/09acb3139a64738d1e4b6ceb27c82b0a5895d50d"><code>content(posts): refine language and improve clarity in AI craftsmanship article</code></a> — Ted Tschopp</li>
+</ul>
+<h3>Automated Commits (last 5 days)</h3>
+<p>These are expected, routine bot-generated commits:</p>
+<ul>
+<li>Daily Mastodon cache/front matter updates (2026-08-01, 2026-07-28, 2026-07-27 ×2)</li>
+<li>Daily report refreshes (2026-07-31, 2026-07-30, 2026-07-29, 2026-07-28, 2026-07-27)</li>
+<li>"Refresh yesterday in enterprise ai" content updates (2026-07-31, 2026-07-30, 2026-07-29, 2026-07-27)</li>
+</ul>
 <hr>
 <h2>Workflow Health</h2>
-<h3>Site Quality + Deploy</h3>
+<h3>Currently Running</h3>
 <ul>
-<li><strong>Most recent run</strong>: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28183887584">Run #918</a> — <strong>success</strong> ✅</li>
-<li>Triggered by: push <code>Update AI Engineer Coach VSIX download</code> on 2026-06-25.</li>
-<li>No recent deploy failures observed.</li>
+<li><strong>Daily Report</strong> (run #94) — <code>in_progress</code> as of 2026-08-01T05:34Z — this is the current run producing this report.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/30686095172">Run link</a></li>
 </ul>
-<h3>Feed to Mastodon</h3>
+<h3>Recent Completed Runs</h3>
 <ul>
-<li><strong>Most recent run</strong>: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28216007352">Run #1905</a> — <strong>success</strong> ✅ (2026-06-26 03:53 UTC)</li>
-<li>Previous run #1904 also succeeded on 2026-06-25 20:02 UTC.</li>
-<li>Mastodon pipeline is running at the expected cadence with no failures.</li>
+<li><strong>Push on main (CodeQL)</strong> — <code>success</code> — completed 2026-08-01T00:46Z on commit <code>93d5bb2</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/30676247140">Run link</a></li>
+<li><strong>Feed to Mastodon</strong> — <code>success</code> — completed 2026-08-01T00:43Z on commit <code>69129d2</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/actions/runs/30676145706">Run link</a></li>
 </ul>
-<h3>Daily Report</h3>
-<ul>
-<li><strong>Current run</strong>: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/28225531713">Run #58</a> — in progress (this run).</li>
-</ul>
+<p>No workflow failures detected in the most recent runs checked.</p>
 <hr>
 <h2>Open Pull Requests</h2>
-<h3>Dependabot Security PR (open, needs attention)</h3>
+<p>At least one Dependabot PR is open:</p>
 <ul>
-<li><strong>Bumps the security-patches group</strong>: <code>nokogiri</code> 1.19.3 → 1.19.4 and <code>concurrent-ruby</code> bump.</li>
-<li>This is a security patch PR. Per ADR 0009, <code>ffi</code> is pinned and <code>nokogiri</code> patching is conditional on Ruby baseline — verify the Gemfile conditional logic still holds before merging.</li>
-<li>No other open PRs noted; Dependabot is the only active PR author.</li>
+<li><strong><code>sass-embedded</code> 1.97.1 → 1.102.0</strong> — Bumps the SCSS compiler host gem across ~5 minor versions. This is a direct Gemfile dependency. Review for breaking changes (color-space handling changes noted in the commits, specifically <code>gamma 2.40 for display-referred rec2020</code>). Low risk for this site's SCSS but should be reviewed before merging.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pulls">PR link</a></li>
 </ul>
 <hr>
-<h2>Open Issues (Backlog from May 2026 Audit)</h2>
-<p>All issues below carry the <code>audit-2026-05</code> label and were filed 2026-05-29. None appear to have had recent activity or assignees.</p>
-<p><strong>P2 issues (higher priority):</strong></p>
+<h2>Open Issues (Selected)</h2>
+<h3>Content Discovery Backlog</h3>
 <ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a> — Enhance category landing pages: related categories, tag clouds, depth indicators</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a> — Build cross-collection content bridges and related-posts infrastructure</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a> — Drive prompt series adoption: audit and populate series metadata</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/183">#183</a> — Standardize tagging model: enforce coverage and build site-wide tag infrastructure</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/182">#182</a> — Create slide gallery with topic filtering and deck browser</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/181">#181</a> — Unify RPG/fantasy content schema and build SEO landing pages</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/180">#180</a> — Add content contributor guide to README</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/179">#179</a> — Curate quotes with thematic tags and personal context</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/178">#178</a> — SEO &amp; discoverability: strengthen excerpts, descriptions, and create pillar hub pages</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/175">#175</a> — Add Service Worker offline fallback for hero media cache misses</li>
+<li><strong>[#186] [P2] Enhance category landing pages</strong> — Category pages are minimal redirect stubs. No related categories, tag clouds, breadcrumbs, or depth indicators. 41 affected pages. Open since 2026-05-29.</li>
+<li>Depends on #183 (tagging infrastructure) and #178 (pillar pages).</li>
 </ul>
-<p><strong>P3 issues (lower priority):</strong></p>
 <ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/177">#177</a> — Document and organize <code>_code/</code> utility scripts</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/issues/176">#176</a> — Standardize Python script entry points with <code>main()</code> guards</li>
+<li><strong>Content silos / related posts</strong> — No cross-linking between blog essays, RPG design, and prompts on related themes. 69% of content is Gamma World material hidden from main discovery paths. Zero posts use a manual <code>related:</code> field. Open since May 2026 per issue data.</li>
 </ul>
-<hr>
-<h2>Content &amp; Publishing Pipeline Observations</h2>
-<ul>
-<li>Two new content items published this week: a "palace song" post and a new/updated σ System page.</li>
-<li>The <code>_posts/Slides/</code> deck count is 9 per Issue #182; no new deck was added this period.</li>
-<li>Automated Mastodon syndication is healthy; cache/front matter updates running daily.</li>
-<li>No front matter parse errors or build warnings visible from commit messages or workflow status.</li>
-</ul>
+<p>These are P2 issues that do not block deployment but reduce reader engagement. They have been open roughly 2 months with no visible progress.</p>
 <hr>
 <h2>Risks and Blockers</h2>
-<p><strong>Security PR aging</strong>: The Dependabot PR for nokogiri is open. Leaving security patches unmerged is a mild risk — assess and merge or defer with documented reason.</p>
-<p><strong>Audit backlog accumulating</strong>: 12+ issues from May 2026 with no visible assignment or milestones. Risk of the backlog growing stale. No in-progress issues visible.</p>
-<p><strong>Service Worker offline fallback</strong> (#175): A known UX gap with offline/slow connectivity — hero media can fail silently. Low effort, high impact per the issue.</p>
-<p><strong>Tagging coverage</strong> (#183): Only 30.5% of posts have tags, blocking tag-based filtering and cross-category discovery. This is a prerequisite for several other P2 issues (#186 tag cloud, #185 cross-linking).</p>
+<ul>
+<li><strong><code>sass-embedded</code> PR unreviewed</strong> — Moderate risk if merged without testing locally. Color handling changes in newer sass versions could affect gradient rendering in <code>category_registry.yml</code> palette definitions.</li>
+<li><strong>Content discovery debt accumulating</strong> — The category-enhancement issues (#186, related) continue to age. No current blocker, but the longer they sit, the more the site's 41 category landing pages underserve readers.</li>
+<li><strong>Slide deck removals on 2026-07-28</strong> — Outdated AI strategy/implementation decks were removed. [ASSUMPTION] These were intentional housekeeping by Ted; no broken links have been flagged, but HTML Proofer should confirm no dangling internal links remain.</li>
+</ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Review and merge</strong> the open Dependabot security PR (nokogiri 1.19.4). Confirm Gemfile conditional logic is intact.</li>
-<li><strong>Triage the audit backlog</strong>: Assign milestones or a sprint target to at least 2–3 P2 issues. Suggested first picks: #175 (SW fallback, low effort) and #182 (slide gallery, clear scope).</li>
-<li><strong>Service Worker fallback</strong> (#175): A few-line fix in <code>sw.js</code> — good candidate for a quick win this week.</li>
-<li><strong>Tagging infrastructure</strong> (#183): Foundational work that unlocks #186 and #185 — schedule as a structured sprint item.</li>
-<li><strong>Content contributor guide</strong> (#180): Documentation-only change, no build risk, good contribution for a focused writing session.</li>
+<li><strong>Review and merge (or close) the <code>sass-embedded</code> Dependabot PR</strong> after a local <code>bundle exec jekyll build</code> test.</li>
+<li><strong>Run HTML Proofer internally</strong> (<code>SKIP_EXTERNAL=1</code>) to verify the slide deck removals from 2026-07-28 did not leave broken internal links.</li>
+<li><strong>Triage issue #186</strong> — either schedule it or close it if the category landing page enhancement is out of scope for the near term.</li>
+<li><strong>Verify the new "Principles of Effective Architecture" deck</strong> renders correctly at its permalink and appears in the slides catalog.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits sourced from <code>github-list_commits</code> API, last 20 commits on <code>main</code> branch.</li>
-<li>Issues sourced from <code>github-list_issues</code> API, state=OPEN, up to 20 results. Total open issue count not retrieved — only 20 shown.</li>
-<li>Pull requests sourced from <code>github-list_pull_requests</code> API, state=open. Full PR body only partially parsed; Dependabot PR title inferred from preview text (nokogiri + concurrent-ruby security-patches group).</li>
-<li>Workflow runs sourced from <code>github-actions_list</code> for all runs and specifically for <code>deploy.yml</code>. Deploy run #918 confirmed success via preview text; full run details not fetched individually.</li>
-<li>Feed to Mastodon run #1905 status confirmed as <code>completed</code> / <code>success</code> from raw run data.</li>
-<li>Daily Report run #58 (this run, ID 28225531713) status was <code>in_progress</code> at query time — expected, as this report is being generated within it.</li>
-<li>Site build health beyond latest deploy not checked (HTML Proofer output unavailable without running locally).</li>
-<li>No closed PRs or recently merged PRs were fetched; merge activity this week not confirmed.</li>
-<li>Issue count beyond 20 not fetched; total open issue count unknown.</li>
-<li>[ASSUMPTION] All <code>audit-2026-05</code> issues are unassigned and idle based on <code>updated_at</code> dates matching <code>created_at</code> (2026-05-29) and no visible PR references linking to them in the PR list preview.</li>
-<li>Workflow runs for <code>mastodon-feed.yml</code>, <code>dusd-lunch-menu.yml</code>, and <code>purge-actions-caches.yml</code> not individually checked beyond top-level run list.</li>
+<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — last 20 commits on <code>main</code> as of 2026-08-01T05:36Z.</li>
+<li>Workflow runs: <code>github-actions_list</code> (list_workflow_runs) — most recent completed and in-progress runs. Full run history is 8,065 total runs; only the most recent page was inspected.</li>
+<li>Open issues: <code>github-list_issues</code> (state: OPEN, perPage: 10). Full issue count not enumerated; only the first page was read.</li>
+<li>Open PRs: <code>github-list_pull_requests</code> (state: open). Full PR list not enumerated; only the first page was parsed visually.</li>
+<li>Workflow conclusion details for runs older than the current page were not retrieved.</li>
+<li>No build logs or HTML Proofer output were accessed; pass/fail status is based on workflow <code>conclusion</code> field only.</li>
+<li>[ASSUMPTION] Slide deck removals on 2026-07-28 were intentional housekeeping. No issue or PR was linked to those commits.</li>
+<li>[ASSUMPTION] The "refresh yesterday in enterprise ai" bot commits relate to a scheduled content update workflow; the specific workflow was not identified by name in the runs checked.</li>
+<li>Issue numbers for the content-silos issue were not definitively extracted from the truncated issue list; the body content was read directly from the raw output.</li>
 </ul>
     </section>
     <footer>

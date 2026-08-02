@@ -1,0 +1,57 @@
+# Prevent SEO quality from regressing while known content debt is remediated.
+# Budgets may be lowered when fixes land; do not increase them to make CI pass.
+snippet_quality:
+  title_minimum: 30
+  title_maximum: 65
+  description_minimum: 70
+  description_maximum: 170
+  budgets:
+    short_titles: 31
+    long_titles: 120
+    short_descriptions: 13
+    long_descriptions: 0
+    duplicate_title_groups: 0
+    duplicate_description_groups: 23
+    missing_sitemap_lastmods: 52
+  allowlisted_url_prefixes:
+    # Bestiary records intentionally use terse entity names and stat summaries.
+    short_titles:
+      - /Gamma-World-Bestiary/
+    short_descriptions:
+      - /Gamma-World-Bestiary/
+
+# Legacy bestiary records that currently name unpublished source illustrations.
+# New missing social assets are never allowed, and entries should be removed as
+# the corresponding images or corrected front matter are supplied.
+allowed_missing_og_assets:
+  - /Gamma-World-Bestiary/Albilope.html
+  - /Gamma-World-Bestiary/Bee-Folk-Bumbles.html
+  - /Gamma-World-Bestiary/Blackuns-Attercop.html
+  - /Gamma-World-Bestiary/Climbing-Crescent-Deer-Albilope.html
+  - /Gamma-World-Bestiary/Cloud-Worms-Blight.html
+  - /Gamma-World-Bestiary/Crusty-Uns-Crustean.html
+  - /Gamma-World-Bestiary/Dragon-Bugs-Arn.html
+  - /Gamma-World-Bestiary/Flitters-Buzzbirds.html
+  - /Gamma-World-Bestiary/Flying-Rippers-Cal-Then.html
+  - /Gamma-World-Bestiary/Gamma-Moths-Blaash.html
+  - /Gamma-World-Bestiary/Purple-Pygmies-Dagmits.html
+  - /Gamma-World-Bestiary/Rammers-Blade-Whale.html
+  - /Gamma-World-Bestiary/Red-Deaths-Blood-Bird.html
+  - /Gamma-World-Bestiary/Sweetpads-Ber-Lep.html
+  - /Gamma-World-Bestiary/Wandering-Blackuns-Attercop-Abulare.html
+
+# Full-document legacy utilities are tracked explicitly so any new omission
+# fails CI. Remove paths here as those pages adopt the shared metadata include.
+allowed_missing_canonicals:
+  - /tools/mastodon/
+  - /RPG/teds/stories/
+allowed_missing_og_metadata:
+  - /tools/mastodon/
+  - /tools/
+  - /RPG/teds/stories/
+allowed_missing_structured_data:
+  - /tools/mastodon/
+  - /tools/
+  - /RPG/teds/stories/
+allowed_invalid_og_urls:
+  - /A-Memory-of-Myths-and-the-Naming-of-%F0%92%80%80%F0%92%8C%8B%F0%92%80%AF/

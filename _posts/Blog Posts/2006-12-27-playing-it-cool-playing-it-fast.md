@@ -20,6 +20,7 @@ description: null
 seo-description: null
 categories:
 - Computers
+- Music
 tags: null
 keywords: null
 location:
@@ -27,8 +28,8 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
+image: /img/2006-12/tempo-based-music-library.webp
+image-alt: White laptop music library with headphones and tempo visualizations
 image-artist: null
 image-artist-URL: null
 image-description: null

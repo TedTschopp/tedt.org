@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark" class="layout-slide-deck">
+  <head>
+    <meta charset="utf-8">
+
+    {% include utility/calculate-variables.html %}
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    {% include seo/indieauth-webmentions-metadata.html %}
+    {% include seo/meta-data-seo.html %}
+    {% include pwa/pwa-header-includes.html %}
+    {% include feeds/feeds.html %}
+    {% include assets/all-css-includes.html %}
+    {% include assets/scripts.html %}
+  </head>
+  <body class="slide-deck-page">
+    <a class="visually-hidden-focusable slide-deck-skip-link" href="#presentation">
+      Skip to presentation
+    </a>
+
+    <header class="slide-deck-sitebar">
+      <a class="slide-deck-back" href="{{ '/slides/' | relative_url }}" aria-label="Back to all presentations">
+        <span aria-hidden="true">←</span>
+        <span>Presentations</span>
+      </a>
+
+      <div class="slide-deck-identity">
+        <h1>{{ page.title | escape }}</h1>
+        <p>
+          {% if page.slide_count %}
+            {{ page.slide_count }} slides
+          {% else %}
+            Interactive presentation
+          {% endif %}
+          {% if page.format_label %} · {{ page.format_label | escape }}{% endif %}
+        </p>
+      </div>
+
+      {% if page.deck_url %}
+        <a
+          class="slide-deck-open"
+          href="{{ page.deck_url | relative_url }}"
+          target="_blank"
+          rel="noopener"
+        >
+          <span class="slide-deck-open-long">Open presentation</span>
+          <span class="slide-deck-open-short">Open</span>
+          <span aria-hidden="true">↗</span>
+        </a>
+      {% endif %}
+    </header>
+
+    <main class="slide-deck-stage" id="presentation">
+      {% if page.deck_url %}
+        <iframe
+          class="slide-deck-frame"
+          src="{{ page.deck_url | relative_url }}"
+          title="{{ page.title | escape }} presentation"
+          loading="eager"
+          allow="fullscreen"
+          allowfullscreen
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+        <noscript>
+          <p class="slide-deck-fallback">
+            JavaScript is required for the presentation controls.
+            <a href="{{ page.deck_url | relative_url }}">Open the static presentation</a>.
+          </p>
+        </noscript>
+      {% else %}
+        <section class="slide-deck-missing" role="alert">
+          <h2>Presentation unavailable</h2>
+          <p>This deck does not have a static presentation file configured.</p>
+          <a href="{{ '/slides/' | relative_url }}">Return to all presentations</a>
+        </section>
+      {% endif %}
+    </main>
+  </body>
+</html>

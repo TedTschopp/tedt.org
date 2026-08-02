@@ -1,0 +1,64 @@
+{%- comment -%}
+  Crawlable, editorially curated pillar and sibling links for topic-cluster posts.
+  Membership lives in `_data/topic_clusters.yml`; no article prose is rewritten.
+{%- endcomment -%}
+{%- assign __topic_current_page = include.page | default: page -%}
+{%- assign __topic_current_path = __topic_current_page.relative_path | default: __topic_current_page.path | to_s | strip -%}
+{%- assign __topic_match_count = 0 -%}
+
+{%- for __topic_pair in site.data.topic_clusters -%}
+  {%- assign __topic_cluster = __topic_pair[1] -%}
+  {%- assign __topic_cluster_matches = false -%}
+  {%- for __topic_section in __topic_cluster.sections -%}
+    {%- for __topic_item in __topic_section.posts -%}
+      {%- if __topic_item.path == __topic_current_path -%}
+        {%- assign __topic_cluster_matches = true -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
+  {%- if __topic_cluster_matches -%}
+    {%- assign __topic_match_count = __topic_match_count | plus: 1 -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- if __topic_match_count > 0 -%}
+  <aside class="topic-cluster-related card mt-5" aria-labelledby="topic-cluster-related-heading">
+    <div class="card-body">
+      <h2 id="topic-cluster-related-heading" class="h3">Explore related enterprise AI topics</h2>
+      <p class="text-body-secondary">Continue with the curated topic guide and closely related essays.</p>
+
+      {%- for __topic_pair in site.data.topic_clusters -%}
+        {%- assign __topic_cluster = __topic_pair[1] -%}
+        {%- assign __topic_cluster_matches = false -%}
+        {%- for __topic_section in __topic_cluster.sections -%}
+          {%- for __topic_item in __topic_section.posts -%}
+            {%- if __topic_item.path == __topic_current_path -%}
+              {%- assign __topic_cluster_matches = true -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endfor -%}
+
+        {%- if __topic_cluster_matches -%}
+          <section class="topic-cluster-membership{% unless forloop.last %} mb-4{% endunless %}" aria-labelledby="topic-cluster-{{ __topic_pair[0] }}">
+            <h3 id="topic-cluster-{{ __topic_pair[0] }}" class="h4 mb-1"><a href="{{ __topic_cluster.permalink | relative_url }}">{{ __topic_cluster.title }}</a></h3>
+            <p class="small mb-2">{{ __topic_cluster.description }}</p>
+            <ul class="mb-0">
+              {%- assign __topic_related_count = 0 -%}
+              {%- for __topic_section in __topic_cluster.sections -%}
+                {%- for __topic_item in __topic_section.posts -%}
+                  {%- if __topic_related_count < 4 and __topic_item.path != __topic_current_path -%}
+                    {%- assign __topic_related_post = site.posts | where: 'relative_path', __topic_item.path | first -%}
+                    {%- if __topic_related_post -%}
+                      <li><a href="{{ __topic_related_post.url | relative_url }}">{{ __topic_related_post.title }}</a></li>
+                      {%- assign __topic_related_count = __topic_related_count | plus: 1 -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- endfor -%}
+            </ul>
+          </section>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </aside>
+{%- endif -%}

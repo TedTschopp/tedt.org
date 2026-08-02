@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/Citizenship_in_a_Republic'
 call-to-action: ''
 
 date: 1910-04-23
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Theodore Roosevelt
@@ -41,17 +43,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/theodore-roosevelt.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Theodore Roosevelt."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Theodore Roosevelt; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Theodore Roosevelt; presented as an illustration rather than a documentary photograph."
+image-title: "Theodore Roosevelt — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: courage, perseverance
 year-the-event-took-place: 1910
@@ -59,7 +63,5 @@ year-the-event-took-place: 1910
 mathjax: 
 
 order: 
-redirect_from:
-  - /Theodore-Roosevelt-It-is-not-the-critic-who-count/
 ---
 It is not the critic who counts; not the man who points out how the strong man stumbles, or where the doer of deeds could have done them better. The credit belongs to the man who is actually in the arena, whose face is marred by dust and sweat and blood; who strives valiantly; who errs, who comes short again and again, because there is no effort without error and shortcoming; but who does actually strive to do the deeds; who knows great enthusiasms, the great devotions; who spends himself in a worthy cause; who at the best knows in the end the triumph of high achievement, and who at the worst, if he fails, at least fails while daring greatly, so that his place shall never be with those cold and timid souls who neither know victory nor defeat.

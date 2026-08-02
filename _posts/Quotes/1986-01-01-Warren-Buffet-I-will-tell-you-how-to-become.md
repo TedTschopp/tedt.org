@@ -12,6 +12,8 @@ source-url: 'https://www.berkshirehathaway.com/letters/1986.html'
 call-to-action: ''
 
 date: 1986-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Warren Buffett
@@ -41,17 +43,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/warren-buffett.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Warren Buffett."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Warren Buffett; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Warren Buffett; presented as an illustration rather than a documentary photograph."
+image-title: "Warren Buffett — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: fear, greed
 year-the-event-took-place: 1986
@@ -59,7 +63,5 @@ year-the-event-took-place: 1986
 mathjax: 
 
 order: 
-redirect_from:
-  - /Warren-Buffet-I-will-tell-you-how-to-become/
 ---
 I will tell you how to become rich. Close the doors. Be fearful when others are greedy. Be greedy when others are fearful.

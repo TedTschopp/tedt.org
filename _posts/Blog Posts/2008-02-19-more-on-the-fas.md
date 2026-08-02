@@ -31,8 +31,8 @@ location:
 coordinates:
   latitude: 34.02455
   longitude: -117.767693
-image: null
-image-alt: null
+image: /img/2008-02/fasting-free-will-choice.webp
+image-alt: Tea on an office desk with untouched snacks in the background
 image-artist: null
 image-artist-URL: null
 image-credits: null

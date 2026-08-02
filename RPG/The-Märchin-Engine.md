@@ -1,12 +1,13 @@
 ---
-title: "Three‑Layer Plot Library (Scene → Episode → Meta)"
+layout: page
+title: "The Märchin Engine — GM Guide to the Web Plot Library"
+description: "A complete three‑layer plot library with scene clocks, thresholds, episode arcs, meta hooks, seeds for seven genres, and scores."
 date: 2025-09-13
 tags: ["TTRPG", "GM Tools", "Clocks", "Plot Design"]
 summary: "A complete three‑layer plot library with scene clocks, thresholds, episode arcs, meta hooks, seeds for 7 genres, and scores."
 ---
 
-
-# The Märchin Engine — GM Guide to the Web Plot Library
+<span id="the-märchin-engine--gm-guide-to-the-web-plot-library"></span>
 
 1. [The Märchin Engine — GM Guide to the Web Plot Library](#the-märchin-engine--gm-guide-to-the-web-plot-library)
    1. [0) What this webpage is (and why it’s useful)](#0-what-this-webpage-is-and-why-its-useful)

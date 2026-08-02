@@ -112,6 +112,50 @@ business:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
+enterprise-architecture:
+  title: Enterprise Architecture
+  raw_names: [ "Enterprise Architecture", "Enterprise Archtiecture", "Enterprise-Architecture", "enterprise architecture" ]
+  class: Enterprise-Architecture
+  emoji: "🏛️"
+  subtitle: "Strategy, governance, and the architecture of durable enterprise systems"
+  description: "Essays and analysis on enterprise architecture, technology strategy, governance, platform thinking, and the operating models that turn intent into durable systems."
+  image: /img/categories/enterprise-architecture.webp
+  palette:
+    start: "#00446F"
+    end: "#00A9E0"
+    fontTitle: ' "Sofia Sans Extra Condensed", "Optima", "ManukaCondensed", "Manuka", "Helvetica Neue", Helvetica, Arial, sans-serif;'
+    titleColorLight: "#00446F"
+    titleColorDark: "#00A9E0"
+    titleHoverColorLight: "#00446F"
+    titleHoverColorDark: "#00A9E0"
+    titleWeight: 800
+  category_home_page: /category/enterprise-architecture/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
+leadership:
+  title: Leadership
+  raw_names: [ "Leadership", "leadership", "Technology Leadership" ]
+  class: Leadership
+  emoji: "🧭"
+  subtitle: "Judgment, accountability, and execution under real-world constraints"
+  description: "Essays and reflections on leadership, decision-making, communication, organizational design, execution discipline, and the human work of making change hold."
+  image: /img/categories/leadership.webp
+  palette:
+    start: "#0f766e"
+    end: "#F2BC57"
+    fontTitle: '"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif'
+    titleColorLight: "#0f766e"
+    titleColorDark: "#F2BC57"
+    titleHoverColorLight: "#0f766e"
+    titleHoverColorDark: "#F2BC57"
+    titleWeight: 800
+  category_home_page: /category/leadership/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
 communications:
   title: Communications
   raw_names: [ "Communications", "Collaboration", "Collaborations" ]
@@ -431,6 +475,28 @@ movies:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
+music:
+  title: Music
+  raw_names: [ "Music", "music" ]
+  class: Music
+  emoji: "🎵"
+  subtitle: "Songs, Soundtracks, and the Shape of Feeling"
+  description: "Reflections on music, songcraft, soundtracks, and the way sound carries memory, meaning, and imagination."
+  image: /img/categories/music.webp
+  palette:
+    start: "#0f766e"
+    end: "#e11d48"
+    fontTitle: '"Libre Baskerville", Baskerville, Georgia, serif'
+    titleColorLight: "#e11d48"
+    titleColorDark: "#0f766e"
+    titleHoverColorLight: "#e11d48"
+    titleHoverColorDark: "#0f766e"
+    titleWeight: 500
+  category_home_page: /category/music/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "vertical-align: middle;"
+
 mutant-crawl-classics:
   title: Mutant Crawl Classics
   raw_names: [ "Mutant Crawl Classics", "MCC" ]
@@ -681,6 +747,30 @@ shadowrun:
   hide_from_carousel: false
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
+
+theonering-com-legacy-archive:
+  title: TheOneRing.com Legacy Archive
+  raw_names: [ "TheOneRing.com Legacy Archive", "theonering", "TheOneRing", "THEONERING" ]
+  label: "TheOneRing.com legacy archivE"
+  class: TheOneRingLegacyArchive
+  emoji: "💍"
+  subtitle: "Preserving the early web history of TheOneRing.com, Tolkien fandom, community, and online mythmaking."
+  description: "A personal, noncommercial legacy archive preserving TheOneRing.com-era posts, documents, fan culture, and early web history connected to Tolkien fandom, online communities, and the making of modern digital fandom. This archive is historical in nature and is not affiliated with the current TheOneRing.com."
+  image: /img/categories/TheOneRing.webp
+  palette:
+    start: "#F4E7C5"
+    end: "#1F3B2D"
+    fontTitle: '"Ringbearer",serif'
+    titleColorLight: "#173B2A"
+    titleColorDark: "#F6E7C1"
+    titleHoverColorLight: "#8A641C"
+    titleHoverColorDark: "#D9B55A"
+    titleWeight: 500
+    titleSize: clamp(1rem, 0.55rem + 1.4vw, 2rem)
+  category_home_page: /TheOneRing-LegacyArchive/
+  hide_from_carousel: false
+  hide_from_category_list: false
+  inline_style: "white-space: nowrap; vertical-align: middle;"
 
 # Utility Designs
 

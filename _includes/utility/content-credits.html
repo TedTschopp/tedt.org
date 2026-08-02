@@ -1,0 +1,27 @@
+{%- comment -%}
+  Visible content-role credits.
+
+  Original pages identify their author. Reprints identify the source author(s)
+  separately from Ted Tschopp's editorial/curatorial role. This prevents the
+  republisher from being presented as the source author while retaining useful
+  h-card markup for the actual author record.
+
+  Usage: {% include utility/content-credits.html page=page %}
+{%- endcomment -%}
+
+{%- assign _credit_page = include.page | default: page -%}
+{%- assign _credit_categories = _credit_page.categories | join: '|' | downcase -%}
+{%- assign _credit_is_reprint = false -%}
+{%- if _credit_categories contains 'reprint' -%}
+  {%- assign _credit_is_reprint = true -%}
+{%- endif -%}
+
+<span class="content-credits">
+  {%- if _credit_is_reprint -%}
+    <span class="content-credit content-credit-source-author">Source author: {% include utility/author-byline.html page=_credit_page prefix="" %}</span>
+    <span aria-hidden="true"> · </span>
+    <span class="content-credit content-credit-editor">Editor and curator: <a class="p-editor h-card" href="{{ '/profile/' | relative_url }}">{{ site.profile.name | default: 'Ted Tschopp' }}</a></span>
+  {%- else -%}
+    <span class="content-credit content-credit-author">Author: {% include utility/author-byline.html page=_credit_page prefix="" %}</span>
+  {%- endif -%}
+</span>

@@ -1,10 +1,15 @@
-<!-- PWA Code -->
-    <!-- <link rel="manifest" href="manifest.webmanifest">
-    <meta name="theme-color" content="#222222"> --> 
-    <script>
-      if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('/sw.js').catch(err => console.log('SW registration failed', err));
-        });
-      }
-    </script>
+{% comment %}
+  This include is shared by several layouts, but the hero-media worker belongs
+  only to the homepage. Its root scope is unavoidable because the homepage is
+  served from `/`; sw.js therefore also ignores fetches from non-homepage pages.
+{% endcomment %}
+{% if page.url == '/' %}
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('/sw.js', { scope: '/' })
+          .catch(err => console.warn('Homepage service-worker registration failed', err));
+      });
+    }
+  </script>
+{% endif %}

@@ -143,6 +143,8 @@ Override check for emergency commits with `SKIP_TOC=1 git commit -m "..."`.
 
 The repository is organized as follows:
 
+For the maintained path ownership standard, generated-file policy, and repo guard expectations, see [Repository Structure Standard](docs/repo-structure.md).
+
 - `_code/` - Custom Python scripts for content management.
 - `_data/` - Structured data used across the site.
 - `_includes/` - Reusable HTML components for the site (see [Include Standards](#include-standards) below).
@@ -410,6 +412,29 @@ Notes:
 
 See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural implications of these flags.
 
+## Responsive WebP Images
+
+Local WebP sources under `img/` and `RPG/` remain the canonical originals. Run
+the local generator after adding or changing one of those files:
+
+```bash
+python3 _code/py/generate_responsive_images.py
+python3 _code/py/generate_responsive_images.py --check
+```
+
+The generator uses Pillow and `cwebp` to create 480, 768, 1200, and 1456 pixel
+variants without upscaling. Generated files live under
+`img/generated/responsive/`; `_data/responsive_images.json` records intrinsic
+dimensions and all available candidates. Templates should render images through
+`_includes/utility/responsive-image.html`. Set `lcp=true` only for the one image
+expected to be the page's LCP element; all other images default to lazy loading.
+
+After building, validate rendered sitemap pages with:
+
+```bash
+ruby tests/check_responsive_images.rb _site
+```
+
 ## Article Video Front Matter
 
 Posts may specify a primary article video in front matter. The post and long-article layouts render the video in the article hero position. The normal `image` fields are still required for summaries, feeds, social previews, category cards, and fallback rendering.
@@ -439,42 +464,54 @@ video:
    aspect: "16x9"
 ```
 
-### Slide Deck Front Matter (Canonical Path posts-slides)
+### Slide Deck Front Matter (Standalone HTML Default)
 
-Slide decks are regular posts stored under the subdirectory `_posts/Slides/` (not a separate Jekyll collection). This keeps them in existing feed/archive flows and avoids maintaining a parallel collection. Historical references to a `slides` collection remain in templates only as a graceful fallback if a collection is reintroduced later.
+Slide discovery remains posts-based: every deck has a metadata post under
+`_posts/Slides/`, and templates never reference a `slides` collection. New decks
+use a self-contained HTML artifact stored unchanged at
+`slides/decks/{slug}/index.html`. See
+[ADR 0013](docs/adr/0013-standalone-html-slide-decks.md).
 
-| Key             | Required    | Type          | Purpose                                                                                                                                                          |
-|-----------------|-------------|---------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `layout`        | yes         | string        | Should be `reveal-integrated` for Reveal.js decks.                                                                                                               |
-| `title`         | yes         | string        | Deck display title. Used for card title & page `<title>`.                                                                                                        |
-| `permalink`     | yes         | string        | Canonical path (e.g. `/slides/ai-strategy/`).                                                                                                                    |
-| `date`          | yes         | date          | Primary ordering key (descending). Creation / publish date.                                                                                                      |
-| `last_modified` | no          | date          | If present and different from `date`, an "Updated" badge displays on card.                                                                                       |
-| `description`   | recommended | string        | Short summary (card text, SEO fallback). Keep ≤160 chars.                                                                                                        |
-| `image`         | optional    | path          | Thumbnail image. If absent, preview HTML or first section fragment is used.                                                                                      |
-| `preview_html`  | optional    | HTML string   | Explicit mini-preview markup for card (sanitized by reveal index transforms). Overrides fragment extraction.                                                     |
-| `topics`        | optional    | array[string] | Lightweight categorical tags for filter UI (client‑side).                                                                                                        |
-| `aspect_ratio`  | optional    | string        | One of `16:9`, `16:10`, `4:3` (or custom handled class) for preview container ratio. Defaults to `16:9`.                                                         |
-| `deck-style`    | optional    | string        | High-level palette / tone hint applied as `deck-style-{value}` class to `<body>` (e.g. `light`, `dark`, `accent`). Enables global theming without inline styles. |
-| `canonical`     | optional    | url           | Canonical URL override when consolidating duplicate archetype decks.                                                                                             |
-| `redirect_from` | optional    | array[string] | Legacy paths for automatic redirection (if plugin / config supports).                                                                                            |
+| Key             | Required | Type          | Purpose |
+|-----------------|----------|---------------|---------|
+| `layout`        | yes      | string        | Use `slide-deck` for new standalone HTML presentations. |
+| `title`         | yes      | string        | Deck title used by the catalog, wrapper page, and SEO. |
+| `permalink`     | yes      | string        | Stable wrapper URL: `/slides/{slug}/`. |
+| `date`          | yes      | date          | Catalog ordering date. |
+| `description`   | yes      | string        | Plain-language catalog and SEO summary. |
+| `format`        | yes      | string        | Use `standalone-html`. |
+| `deck_url`      | yes      | path          | Static artifact URL: `/slides/decks/{slug}/`. |
+| `deck_sha256`   | yes      | string        | SHA-256 of the reviewed HTML artifact. |
+| `slide_count`   | yes      | integer       | Number of `.web-slide` articles in the artifact. |
+| `topics`        | no       | array[string] | Searchable topic filters on `/slides/`. |
+| `format_label`  | no       | string        | Short human-readable format name. |
+| `accent_color`  | no       | CSS color     | Catalog preview accent; defaults to neutral gray. |
+| `image`         | no       | path          | Optional catalog thumbnail. The full deck is never loaded on the catalog. |
+| `aspect_ratio`  | no       | string        | Presentation aspect ratio, normally `16:9`. |
 
 Example:
 
 ```yaml
 ---
-layout: reveal-integrated
-title: "AI Strategy 2026"
-permalink: /slides/ai-strategy/
-date: 2025-01-15
-last_modified: 2025-02-05
-description: "Strategic roadmap outlining AI architecture, governance, and capability build through 2026."
-topics: [strategy, architecture, governance]
-image: /img/categories/artificial-intelligence.webp
-preview_html: "<div class='preview-fragment'><h3>AI Strategy 2026</h3><p>Roadmap, architecture & governance pillars.</p></div>"
+layout: slide-deck
+title: "AI Strategy Discussion Starters"
+permalink: /slides/ai-strategy-discussion-starters/
+date: 2026-07-27
+description: "Seven facilitated prompts for an AI strategy discussion."
+topics: [ai, strategy, governance, leadership]
+format: standalone-html
+format_label: Static HTML
+deck_url: /slides/decks/ai-strategy-discussion-starters/
+deck_sha256: b6d78f18455f3c8f9700e9cee7f2718a760f5dd25407619181322d916354af49
+slide_count: 7
 aspect_ratio: 16:9
+accent_color: "#f0442e"
 ---
 ```
+
+Copy the exporter-produced HTML without adding front matter or changing its
+contents. Then run `ruby tests/check_slide_decks.rb` and
+`bundle exec jekyll build`.
 
 ### Slide Index Behavior
 
@@ -482,14 +519,17 @@ The `/slides/` page:
 
 1. Filters `site.posts` for paths containing `_posts/Slides/` (canonical storage for decks).
 2. Sorts decks by `date` descending.
-3. Chooses preview in priority order: `image` → `preview_html` → first `<section>` fragment.
-4. Shows an Updated badge if `last_modified` exists and differs from `date`.
-5. Generates topic badges from each deck's `topics` array (toggle buttons built by `_includes/slides/filter-controls.html`).
-6. Computes aspect ratio class (`ratio-16x9` etc.) based on `aspect_ratio` or heuristics.
-7. Avoids placeholder content entirely; cards render only real decks.
+3. Renders an optional image or a metadata-only branded preview; it never loads full deck iframes.
+4. Provides title/description/topic search and accessible topic toggle buttons.
+5. Labels standalone HTML decks separately from legacy Reveal decks.
+6. Shows slide counts when declared.
+7. Keeps every card visible and usable when JavaScript is unavailable.
 
 
-### Slide Includes
+### Legacy Reveal Includes
+
+The following helpers apply only to existing `reveal-integrated` decks. Do not
+use them when publishing new standalone HTML artifacts.
 
 | Include               | Path                                          | Purpose                                                                                       |
 |-----------------------|-----------------------------------------------|-----------------------------------------------------------------------------------------------|
@@ -504,20 +544,26 @@ Usage:
 {% include slides/section-break.html title="Strategic Pillars" subtitle="Capability Deep Dive" kicker="Enablement Path" %}
 ```
 
-### Client-Side Topic Filtering
+### Client-Side Search and Topic Filtering
 
-The filter bar builds toggle buttons from the union of `topics` across all decks in `_posts/Slides/`. Selecting none (or pressing "All") shows every deck; selecting one or more shows decks containing at least one selected topic. Accessible states are managed via `aria-pressed`.
+The catalog builds topic buttons from all published posts under `_posts/Slides/`.
+Search matches title, description, and topics. Selecting none (or pressing
+"All") shows every deck; selecting topics uses an ANY match. Accessible states
+use `aria-pressed`, results are announced in a polite live region, and cards use
+the native `hidden` attribute.
 
-### Styling Utilities for Decks
+### Legacy Reveal Styling Utilities
 
-Swiss / archetype styles extracted into `_sass/components/_slides-archetypes.scss`:
+These utilities remain for existing Reveal content only. Swiss / archetype styles extracted into `_sass/components/_slides-archetypes.scss`:
 `title-slide`, `columns`, `highlight-box`, `.bar` utility. These keep deck files lean and reusable across multiple presentations.
 
 When adding new deck-specific structural styles, prefer extending this partial instead of inline `<style>` blocks.
 
-### Global Slides Theme
+### Legacy Reveal Global Theme
 
-The unified visual language for all Reveal.js decks is defined in `_sass/components/_slides-theme.scss` (imported in `bootstrap.scss` after archetype utilities). It centralizes:
+The following theme documentation applies only to existing Reveal.js decks. New
+standalone HTML artifacts own their CSS inside the exported document. The
+legacy theme is defined in `_sass/components/_slides-theme.scss`:
 
 - Palette CSS variables (`--slides-*`) for light/dark surfaces and accents.
 - Responsive heading scale (`h1`/`h2`/`h3`) tuned to viewport width.
@@ -588,7 +634,7 @@ To avoid universal `min-height:100vh` (which conflicts with the layout's header 
 
 This keeps decks from introducing scrollbars while still supporting intentional full-height hero or data visualization panels.
 
-### Archetype Classes & Usage
+### Legacy Reveal Archetype Classes & Usage
 
 Archetype-specific structural classes (defined in `_sass/components/_slides-archetypes.scss`) standardize styling for architecture & solution taxonomy slides:
 
@@ -635,7 +681,7 @@ Example snippet:
 
 Use these classes instead of inline `style="background-color: …"` attributes to keep decks maintainable and consistent.
 
-### Deck Style Front Matter
+### Legacy Reveal Deck Style Front Matter
 
 Add `deck-style: light` (or `dark`, `accent`) to a deck front matter to automatically attach `deck-style-{value}` as a `<body>` class in the `reveal-integrated` layout. Extend `_sass/components/_slides-theme.scss` with selectors like:
 

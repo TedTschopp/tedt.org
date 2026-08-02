@@ -27,7 +27,6 @@ seo-description: An application of the Procedural Text Generation system to crea
   a new game for you to play every hour.
 categories:
 - Projects
-- Home
 tags: Project
 keywords: null
 location:

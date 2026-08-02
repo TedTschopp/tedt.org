@@ -10,6 +10,8 @@ source: "De Profundis"
 source-url: "https://en.wikipedia.org/wiki/De_Profundis_(letter)"
 call-to-action: ""
 date: 1905-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-31T17:31:55-07:00"
 update: ""
 author:
     name: "Oscar Wilde"
@@ -34,22 +36,22 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
-image: ""
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/oscar-wilde.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Oscar Wilde."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Oscar Wilde; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Oscar Wilde; presented as an illustration rather than a documentary photograph."
+image-title: "Oscar Wilde — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 monster-or-magical-or-religious-ideas: "confession, guilt, repentance"
 year-the-event-took-place: 1905
 mathjax: false
 order: ""
-redirect_from:
-    - /Oscar-Wilde-The-highest-moment-in-a-mans/
 ---
 The highest moment in a man's career may be the hour when he kneels in the dust and beats upon his breast and tells all the sins of his life.

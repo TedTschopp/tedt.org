@@ -50,8 +50,9 @@ image_height: 1000
 ---
 I am the Enterprise Architect for AI & Software.  I provide strategic architecture leadership for SCE’s AI and software portfolios, shaping strategy, roadmaps, and frameworks for 500+ enterprise products. Align innovation with business outcomes, resilience, and regulatory expectations.
 
-- AI Strategic Leadership: Built and executed an enterprise AI strategy, enabling cross-functional adoption and measurable business outcomes.
-- AI Governance & Standards: Partnered with Legal, Information Governance, the AI CoE, and industry groups to establish AI governance frameworks and coding standards, embedding compliance, trust, and accountability across initiatives.
-- Enterprise Automation: Designed a desktop automation framework that deployed 300+ virtual employees, reducing manual workloads, slashing error rates, and unlocking enterprise-wide productivity and engagement gains.
-- AI-Driven IT Ops: Pioneered the shift from reactive IT operations to LLM-enabled AIOps. Automated telemetry analysis, incident correlation, and response, accelerating resolution times, reducing overhead, and setting a new standard of service resilience.
-- Business-Led Development: Architect and process owner for SCE’s first sanctioned business-partner development program since 1997, enabling 100+ developers to build and manage over 1,000 applications. This program democratized software creation, expanded innovation capacity, and established guardrails that balanced agility with enterprise compliance.
+- Provide enterprise architecture leadership for AI and software portfolios, shaping strategy, roadmaps, standards, and frameworks across 500+ enterprise products.
+- Help large-organization AI adoption move from experimentation to durable capability through platform strategy, guardrails, governance, operating models, measurement, and delivery patterns.
+- Partner with Legal, Information Governance, AI Center of Excellence, security, technology teams, and business stakeholders to embed trust, accountability, compliance, and responsible AI practices into enterprise initiatives.
+- Architected and supported enterprise automation capabilities, including desktop automation and AI-enabled operations patterns that reduce manual work, improve resilience, and create measurable business value.
+- Architect and process owner for a sanctioned business-led development program enabling 100+ developers to build and manage 1,000+ applications within enterprise guardrails.
+- Translate emerging technologies into practical enterprise patterns: integration, observability, platform design, support models, risk controls, developer experience, and adoption paths.

@@ -30,12 +30,13 @@ seo-description: "AI makes drafting faster, but clarity becomes scarce. Learn sp
 
 categories:
 # Choose from this fixed list; use exact spelling/casing/spaces (including any trailing spaces):
-# AI | Bestiary | Books | Communications | Computers | Dungeon Crawl Classics | Dungeons & Dragons | ᚠᛟᛚᚲ ᛚᛟᚱᛖ - Folklore | Gamma World | GURPS | Home | Maps | Middle-eartH | Mobile | Monsters | Movies | Mutant Crawl Classics | Opinion | Personal Writing  | Philosophy | Projects  | Quotes | Religion | Reprint | Role Playing Games | Science | Shadowrun | The Märchen Engine
+# AI | Bestiary | Books | Communications | Computers | Dungeon Crawl Classics | Dungeons & Dragons | Enterprise Architecture | Leadership | ᚠᛟᛚᚲ ᛚᛟᚱᛖ - Folklore | Gamma World | GURPS | Home | Maps | Middle-eartH | Mobile | Monsters | Movies | Mutant Crawl Classics | Opinion | Personal Writing  | Philosophy | Projects  | Quotes | Religion | Reprint | Role Playing Games | Science | Shadowrun | The Märchen Engine
 - AI
 - Communications
 - Computers
 - Opinion
 - Philosophy
+- Leadership
 
 tags:
 - ai

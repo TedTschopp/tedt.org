@@ -12,6 +12,8 @@ source-url: 'https://money.cnn.com/magazines/fortune/fortune_archive/2000/01/24/
 call-to-action: ''
 
 date: 2000-01-24
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Steve Jobs
@@ -41,17 +43,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/steve-jobs.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Steve Jobs."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Steve Jobs; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Steve Jobs; presented as an illustration rather than a documentary photograph."
+image-title: "Steve Jobs — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: design, creativity
 year-the-event-took-place: 2000
@@ -59,7 +63,5 @@ year-the-event-took-place: 2000
 mathjax: 
 
 order: 
-redirect_from:
-  - /Steve-Jobs-In-most-peoples-vocabularies/
 ---
 We don’t have good language to talk about this kind of thing.  In most people’s vocabularies, design means veneer. It’s interior decorating. It’s the fabric of the curtains and the sofa. But to me, nothing could be further from the meaning of design. Design is the fundamental soul of a man-made creation that ends up expressing itself in successive outer layers of the product or service. The iMac is not just the color or translucence or the shape of the shell. The essence of the iMac is to be the finest possible consumer computer in which each element plays together. ... That is the furthest thing from veneer. It was at the core of the product the day we started. This is what customers pay us for — to sweat all these details so it’s easy and pleasant for them to use our computers. We’re supposed to be really good at this. That doesn’t mean we don’t listen to customers, but it’s hard for them to tell you what they want when they’ve never seen anything remotely like it.  Take desktop video editing. I never got one request from someone who wanted to edit movies on his computer. Yet now that people see it, they say, "Oh my God, that's great!”

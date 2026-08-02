@@ -35,6 +35,7 @@ seo-description: Learn from Sam Altman's AI insights for energy sector leadershi
 categories:
 - Artificial Intelligence
 - Opinion
+- Leadership
 tags:
 - Sam Altman
 - energy sector

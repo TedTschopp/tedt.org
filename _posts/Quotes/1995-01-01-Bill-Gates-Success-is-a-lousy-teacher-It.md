@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/The_Road_Ahead_(Gates_book)'
 call-to-action: ''
 
 date: 1995-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2026-04-12T16:27:49-07:00"
 update:
 author:
     name: Bill Gates
@@ -43,17 +45,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/bill-gates.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Bill Gates."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Bill Gates; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Bill Gates; presented as an illustration rather than a documentary photograph."
+image-title: "Bill Gates — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: 
 year-the-event-took-place: 1995

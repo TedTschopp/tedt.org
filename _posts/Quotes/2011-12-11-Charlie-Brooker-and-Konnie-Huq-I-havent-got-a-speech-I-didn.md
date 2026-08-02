@@ -41,17 +41,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/charlie-brooker-and-konnie-huq.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Charlie Brooker and Konnie Huq."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Charlie Brooker and Konnie Huq; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Charlie Brooker and Konnie Huq; presented as an illustration rather than a documentary photograph."
+image-title: "Charlie Brooker and Konnie Huq — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: dystopia, consumerism, commodification
 year-the-event-took-place: 2011
@@ -59,8 +61,6 @@ year-the-event-took-place: 2011
 mathjax: 
 
 order: 
-redirect_from:
-  - /Charlie-Brooker-and-Konnie-Huq-I-havent-got-a-speech-I-didn/
 ---
 "I haven't got a speech I didn't plan words I didn't even try to, I just knew I had to get here, to stand here and I knew I wanted you to listen, to really listen. Not just pull a face like you're listening like you do the rest of the time, a face that you're feeling instead of processing.
 

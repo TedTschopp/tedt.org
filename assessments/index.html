@@ -1,0 +1,103 @@
+---
+layout: page
+title: "Assessments"
+seo_title: "AI and Software Delivery Assessments"
+description: "Evidence-led assessments of Product Team practices, practitioner skills, and AI workflow controls for a defined software workload."
+permalink: /assessments/
+web_published_at: "2026-08-01T15:16:19-07:00"
+web_modified_at: "2026-08-01T15:16:19-07:00"
+last_modified: "2026-08-01T15:16:19-07:00"
+image: /assessments/ai-coding-maturity-assessment/ai-coding-maturity-assessment-social.png
+image-alt: "AI Maturity Assessment for Your Team from TedT.org, with a six-step path representing Levels 0 through 5 and guidance to measure capability, identify blockers and plan the move to Level 4."
+image_width: 1200
+image_height: 630
+---
+
+{%- assign assessments = site.data.assessments | sort: "order" -%}
+{%- assign assessment_count = assessments | size -%}
+
+<div class="assessments-library">
+  <header class="assessments-library-intro">
+    <p class="assessments-library-eyebrow">Assessment Library</p>
+    <p class="assessments-library-lede">
+      Use each assessment on one defined workload. Review recurring Product Team practices,
+      demonstrated practitioner skills, and records from the AI agent workflow before deciding what to change.
+    </p>
+    <dl class="assessments-library-summary" aria-label="Assessment library summary">
+      <div>
+        <dt>{{ assessment_count }}</dt>
+        <dd>Published {% if assessment_count == 1 %}Assessment{% else %}Assessments{% endif %}</dd>
+      </div>
+      <div>
+        <dt>Private</dt>
+        <dd>Responses Stay in Your Browser</dd>
+      </div>
+      <div>
+        <dt>Portable</dt>
+        <dd>Export and Resume Your Work</dd>
+      </div>
+    </dl>
+  </header>
+
+  {% if assessment_count > 0 %}
+    <div class="assessments-library-grid">
+      {%- for assessment in assessments -%}
+        <article class="assessments-library-card">
+          <a class="assessments-library-card-link" href="{{ assessment.permalink | relative_url }}">
+            <div class="assessments-library-preview">
+              <img
+                src="{{ assessment.image | relative_url }}"
+                alt="{{ assessment.image_alt | escape }}"
+                width="{{ assessment.image_width }}"
+                height="{{ assessment.image_height }}"
+                loading="{% if forloop.first %}eager{% else %}lazy{% endif %}"
+                decoding="async"
+              >
+            </div>
+
+            <div class="assessments-library-card-body">
+              <div class="assessments-library-card-meta">
+                <span>{{ assessment.eyebrow | escape }}</span>
+                <span>{{ assessment.kind | escape }}</span>
+                <span class="assessments-library-stage">{{ assessment.stage | capitalize }} · v{{ assessment.version }}</span>
+              </div>
+
+              <h2>{{ assessment.title | escape }}</h2>
+              <p>{{ assessment.description | escape }}</p>
+
+              <dl class="assessments-library-measures" aria-label="What this assessment covers">
+                {%- for measure in assessment.measures -%}
+                  <div>
+                    <dt>{{ measure.value | escape }}</dt>
+                    <dd>{{ measure.label | escape }}</dd>
+                  </div>
+                {%- endfor -%}
+              </dl>
+
+              <dl class="assessments-library-details">
+                <div>
+                  <dt>Scope</dt>
+                  <dd>{{ assessment.scope | escape }}</dd>
+                </div>
+                <div>
+                  <dt>Privacy</dt>
+                  <dd>{{ assessment.privacy | escape }}</dd>
+                </div>
+              </dl>
+
+              <div class="assessments-library-card-footer">
+                <span class="assessments-library-updated">Updated {{ assessment.modified_at | date: "%B %-d, %Y" }}</span>
+                <span class="assessments-library-open">Open Assessment <span aria-hidden="true">→</span></span>
+              </div>
+            </div>
+          </a>
+        </article>
+      {%- endfor -%}
+    </div>
+  {% else %}
+    <div class="assessments-library-empty" role="status">
+      <h2>No Assessments Published Yet</h2>
+      <p>Assessments will appear here after their evidence model and release checks are complete.</p>
+    </div>
+  {% endif %}
+</div>

@@ -16,6 +16,15 @@ CATEGORY_FONT_BUNDLES = [
   REPO_ROOT.join('css/content-decorative-fonts.css')
 ].freeze
 
+# The homepage carousel can render every visible category title, so it must have
+# the same category title fonts available in addition to homepage display fonts.
+HOMEPAGE_FONT_BUNDLES = [
+  REPO_ROOT.join('css/shared-fonts.css'),
+  REPO_ROOT.join('css/logo-and-company-fonts.css'),
+  REPO_ROOT.join('css/content-decorative-fonts.css'),
+  REPO_ROOT.join('css/homepage-display-fonts.css')
+].freeze
+
 SYSTEM_OR_GENERIC_FAMILIES = Set.new([
   'Arial',
   'Arial Black',
@@ -84,6 +93,8 @@ end
 fail_with("Missing file: #{REGISTRY_PATH}") unless REGISTRY_PATH.file?
 
 missing_bundles = CATEGORY_FONT_BUNDLES.reject(&:file?)
+missing_bundles += HOMEPAGE_FONT_BUNDLES.reject(&:file?)
+missing_bundles.uniq!
 unless missing_bundles.empty?
   fail_with("Missing category font bundle(s): #{missing_bundles.join(', ')}")
 end
@@ -96,7 +107,14 @@ end
 
 registry = YAML.load_file(REGISTRY_PATH, aliases: true)
 
+homepage_available_families = HOMEPAGE_FONT_BUNDLES.each_with_object(Set.new) do |path, families|
+  css_text = path.read
+  families.merge(extract_imported_families(css_text))
+  families.merge(extract_font_face_families(css_text))
+end
+
 missing_registry_fonts = []
+missing_homepage_fonts = []
 
 registry.each do |slug, entry|
   palette = entry.fetch('palette', {})
@@ -115,6 +133,25 @@ registry.each do |slug, entry|
   }
 end
 
+registry.each do |slug, entry|
+  next if entry['hide_from_carousel'] == true || entry['hide_from_carousel'] == 'true'
+
+  palette = entry.fetch('palette', {})
+  font_stack = palette['fontTitle']
+  next if font_stack.nil? || font_stack.strip.empty?
+
+  primary_family = primary_font_family(font_stack)
+  next if primary_family.nil? || SYSTEM_OR_GENERIC_FAMILIES.include?(primary_family)
+  next if homepage_available_families.include?(primary_family)
+
+  missing_homepage_fonts << {
+    slug: slug,
+    title: entry['title'] || slug,
+    family: primary_family,
+    page: entry['category_home_page'] || "/category/#{slug}/"
+  }
+end
+
 unless missing_registry_fonts.empty?
   warn 'ERROR: category_registry title fonts missing from category page bundles:'
   missing_registry_fonts.sort_by { |entry| [entry[:family], entry[:slug]] }.each do |entry|
@@ -123,4 +160,12 @@ unless missing_registry_fonts.empty?
   exit(1)
 end
 
-puts 'OK: category title fonts referenced in category_registry are available in category page CSS bundles.'
+unless missing_homepage_fonts.empty?
+  warn 'ERROR: visible homepage carousel category title fonts missing from homepage CSS bundles:'
+  missing_homepage_fonts.sort_by { |entry| [entry[:family], entry[:slug]] }.each do |entry|
+    warn(" - #{entry[:slug]} (#{entry[:title]}): #{entry[:family]} -> #{entry[:page]}")
+  end
+  exit(1)
+end
+
+puts 'OK: category title fonts referenced in category_registry are available in category page and homepage CSS bundles.'

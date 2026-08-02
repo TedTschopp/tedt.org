@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1982-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Tom Shippey
@@ -41,17 +43,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/tom-shippey.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Tom Shippey."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Tom Shippey; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Tom Shippey; presented as an illustration rather than a documentary photograph."
+image-title: "Tom Shippey — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: courage, ragnarok, northern myth
 year-the-event-took-place: 1982
@@ -59,7 +63,5 @@ year-the-event-took-place: 1982
 mathjax: 
 
 order: 
-redirect_from:
-  - /Tom-Shippy-A-major-goal-of-The-Lord-of-Th/
 ---
 A major goal of The Lord of The Rings was to dramatise that 'theory of courage' which Tolkien had said was the 'great contribution' to humanity of the old literature of the North. The central figure of that theory was Ragnarok - the day when gods and men would fight evil and the giants, and inevitably be defeated. Its great statement was that defeat was no refutation. The right side remains right even if it has no ultimate hope at all. In a sense this Northern mythology asks more of men, even makes more of them, than does Christianity, for it offers them no heaven, no salvation, no reward for virtue other than the somber satisfaction of having done what is right.

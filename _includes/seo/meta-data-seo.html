@@ -4,6 +4,9 @@
 
 {% assign this_page = page %}
 {% assign page_layout = this_page.layout %}
+{% assign site_brand = site.title | default: site.name | default: 'Ted Tschopp' | to_s | strip %}
+{% assign seo_is_home = false %}
+{% if page.url == '/' %}{% assign seo_is_home = true %}{% endif %}
 {% if this_page.title == null or this_page.title == empty or this_page.title == '' %}
   {% if page_layout == 'micropubpost' and micropub_post_title != '' %}
     {% assign this_page_title = micropub_post_title %}
@@ -17,8 +20,45 @@
 {% assign site_profile_social = site_profile.social %}
 {% assign site_profile_name = site_profile.name | default: site.author.name | default: site.title %}
 
+{% comment %}
+  Keep the visible page title separate from the browser/search-result title.
+  The shared SEO include owns the latter, adds useful page-type context, and
+  appends the site brand once. The home page keeps its intentionally unique
+  title rather than receiving a redundant suffix.
+{% endcomment %}
+{% comment %}
+  An explicit SEO title changes only browser/search/social metadata. Layouts
+  continue to render page.title as the visible H1. Support both the preferred
+  snake_case key and the legacy hyphenated spelling.
+{% endcomment %}
+{% assign seo_title_override = this_page.seo_title | default: this_page['seo-title'] | to_s | strip %}
+{% assign seo_title_source = seo_title_override | default: this_page_title %}
+{% assign seo_title_base = seo_title_source | strip_html | strip_newlines | strip %}
+{% if page_layout == 'category' %}
+  {% unless seo_title_base contains 'Articles' %}
+    {% assign seo_title_base = seo_title_base | append: ' Articles' %}
+  {% endunless %}
+{% elsif page_layout == 'tool' %}
+  {% unless seo_title_base contains 'Tool' %}
+    {% assign seo_title_base = seo_title_base | append: ' Tool' %}
+  {% endunless %}
+{% elsif page_layout == 'reveal-integrated' or page_layout == 'slide-deck' %}
+  {% unless seo_title_base contains 'Presentation' %}
+    {% assign seo_title_base = seo_title_base | append: ' Presentation' %}
+  {% endunless %}
+{% elsif page_layout == 'prompt-details' %}
+  {% unless seo_title_base contains 'Prompt' %}
+    {% assign seo_title_base = seo_title_base | append: ' AI Prompt' %}
+  {% endunless %}
+{% endif %}
+{% if seo_is_home or seo_title_base contains site_brand %}
+  {% assign seo_document_title = seo_title_base %}
+{% else %}
+  {% assign seo_document_title = seo_title_base | append: ' | ' | append: site_brand %}
+{% endif %}
+
 {% unless include.skip_title %}
-  <title>{{ this_page_title }}</title>
+  <title>{{ seo_document_title | escape }}</title>
 {% endunless %}
   <!-- TODO: Add Multiple Authors -->
   <meta name="author" content="{{ site_profile_name }}">
@@ -27,6 +67,25 @@
   {% capture canonical_url_safe %}{% include utility/safe-absolute-url.html url=page.url %}{% endcapture %}
   {% assign canonical_url_safe = canonical_url_safe | strip %}
   <link rel="canonical" href="{{ canonical_url_safe }}" />
+
+{% comment %}Honor explicit crawl directives while ensuring page.noindex cannot be overridden accidentally.{% endcomment %}
+{% assign robots_directives = page.robots | join: ', ' | to_s | strip %}
+{% assign noindex_requested = false %}
+{% if page.noindex == true or page.noindex == 'true' or page.noindex == 1 or page.noindex == '1' %}
+  {% assign noindex_requested = true %}
+{% endif %}
+{% if noindex_requested %}
+  {% unless robots_directives contains 'noindex' %}
+    {% if robots_directives == '' %}
+      {% assign robots_directives = 'noindex, follow' %}
+    {% else %}
+      {% assign robots_directives = 'noindex, ' | append: robots_directives %}
+    {% endif %}
+  {% endunless %}
+{% endif %}
+{% if robots_directives != '' %}
+  <meta name="robots" content="{{ robots_directives | escape }}">
+{% endif %}
 
   <!-- Mastodon Meta Data-->
   {% if site_profile_social.fediverse_creators %}
@@ -38,16 +97,71 @@
   {% endif %}
 
 
-{% comment %} Compute meta description precedence: page.summary > page.seo-description > page['seo-description'] > page.description > site.description; then fallback to generated excerpt/content if still blank. {% endcomment %}
-{% if page_layout == 'micropubpost' %}
-  {% assign meta_description = page.summary | default: page.seo-description | default: page['seo-description'] | default: page.description | default: stripped-content | default: micropub_post_title | default: site.description | to_s | strip %}
-{% else %}
-  {% assign meta_description = page.summary | default: page.seo-description | default: page['seo-description'] | default: page.description | default: site.description | to_s | strip %}
+{% comment %}
+  Resolve the current category once so a category-registry description can be
+  used before generic excerpts. This keeps category search snippets specific.
+{% endcomment %}
+{% assign seo_category_entry = nil %}
+{% capture seo_category_lookup_output %}
+{% if page_layout == 'category' %}
+  {% assign seo_category_source = page.category | default: page.title | to_s | strip %}
+  {% assign seo_category_source_normalized = seo_category_source | downcase %}
+  {% for seo_category_pair in site.data.category_registry %}
+    {% assign seo_category_candidate_slug = seo_category_pair[0] | to_s | strip %}
+    {% assign seo_category_candidate = seo_category_pair[1] %}
+    {% assign seo_category_candidate_title = seo_category_candidate.title | default: '' | to_s | strip | downcase %}
+    {% if page.url == seo_category_candidate.category_home_page or seo_category_source_normalized == seo_category_candidate_slug or seo_category_source_normalized == seo_category_candidate_title %}
+      {% assign seo_category_entry = seo_category_candidate %}
+      {% break %}
+    {% endif %}
+    {% for seo_category_raw_name in seo_category_candidate.raw_names %}
+      {% assign seo_category_raw_name_normalized = seo_category_raw_name | to_s | strip | downcase %}
+      {% if seo_category_source_normalized == seo_category_raw_name_normalized %}
+        {% assign seo_category_entry = seo_category_candidate %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% if seo_category_entry %}{% break %}{% endif %}
+  {% endfor %}
+{% endif %}
+{% endcapture %}
+
+{% comment %}
+  Description precedence:
+  1. explicit page summary / SEO description / description
+  2. category-registry description on category pages
+  3. page excerpt or content
+  4. a page-aware generated summary when a non-home page has no prose
+  5. the site description (home-page or final safety fallback only)
+{% endcomment %}
+{% assign meta_description = page.summary | default: page['seo-description'] | default: page.seo_description | default: page.description | to_s | strip %}
+{% if meta_description == '' %}
+  {% assign meta_description = seo_category_entry.description | default: '' | to_s | strip %}
+{% endif %}
+{% if meta_description == '' and seo_is_home %}
+  {% assign meta_description = site.description | default: '' | to_s | strip %}
 {% endif %}
 {% if meta_description == '' %}
-  {% comment %}Fallback: derive from excerpt/content when explicit description absent.{% endcomment %}
-  {% assign raw_excerpt = page.excerpt | default: page.content %}
-  {% assign meta_description = raw_excerpt | strip_html | replace:'\n',' ' | replace:'\r',' ' %}
+  {% if page_layout == 'micropubpost' %}
+    {% assign raw_excerpt = stripped-content | default: page.excerpt | default: page.content | default: micropub_post_title %}
+  {% else %}
+    {% assign raw_excerpt = page.excerpt | default: page.content | default: page.quotation | default: page.new_description | default: page.description_output %}
+  {% endif %}
+  {% assign meta_description = raw_excerpt | strip_html | strip_newlines | strip %}
+{% endif %}
+{% if meta_description == '' and seo_is_home == false %}
+  {% if page_layout == 'profile' %}
+    {% capture meta_description %}Learn about {{ site_profile_name }}{% if site_profile.jobtitle %}, {{ site_profile.jobtitle }}{% endif %}, including professional work, interests, projects, and ways to connect.{% endcapture %}
+  {% elsif page.categories and page.categories != empty %}
+    {% assign seo_primary_category = page.categories | first %}
+    {% capture meta_description %}Explore {{ seo_title_base }}, a {{ seo_primary_category }} reference from {{ site_brand }}.{% endcapture %}
+  {% else %}
+    {% capture meta_description %}Explore {{ seo_title_base }} with notes, references, and resources from {{ site_brand }}.{% endcapture %}
+  {% endif %}
+  {% assign meta_description = meta_description | strip %}
+{% endif %}
+{% if meta_description == '' %}
+  {% assign meta_description = site.description | default: site.subtitle | default: site_brand | to_s | strip %}
 {% endif %}
 {% comment %}
   Normalize description once (collapse whitespace, limit runaway length) then reuse.
@@ -55,7 +169,7 @@
   - meta_description_clean_300 for OG / Twitter
   Escaping done at point-of-use (attribute context) via | escape.
 {% endcomment %}
-{% capture _md_work %}{{ meta_description | strip_html | replace:'\n',' ' | replace:'\r',' ' | replace:'  ',' ' | replace:'  ',' ' | strip }}{% endcapture %}
+{% capture _md_work %}{{ meta_description | strip_html | strip_newlines | replace:'  ',' ' | replace:'  ',' ' | strip }}{% endcapture %}
 {% assign meta_description_clean = _md_work | truncate: 500 %}
 {% assign meta_description_clean_160 = meta_description_clean | truncate:160 %}
 {% assign meta_description_clean_300 = meta_description_clean | truncate:300 %}
@@ -81,8 +195,6 @@
   | replace: '&quot;', '"'
   | replace: '&#34;', '"'
   | strip %}
-<!-- DIAG meta160: {{ meta_description_clean_160 | escape }} | stripped: {{ meta_description_attr_160 | escape }} -->
-<!-- DIAG meta300: {{ meta_description_clean_300 | escape }} | stripped: {{ meta_description_attr_300 | escape }} -->
 <meta name="description" content="{{ meta_description_attr_160 | escape }}">
 <meta name="abstract" content="{{ site.name }}">
 
@@ -124,13 +236,13 @@
 {% endif %}
 <meta property="og:site_name" content="{{ site.name }}">
 {% if full-page-url == home-page-url %}
-  <meta property="og:title" content="{{ this_page_title }}">
+  <meta property="og:title" content="{{ seo_document_title | escape }}">
   {%- comment -%}Use pre-sanitized description variant to ensure any quotes in site.description are safely encoded just like other pages.{%- endcomment -%}
   <meta property="og:description" content="{{ meta_description_attr_300 | escape }}"><!-- desc-sanitizer-v2 -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="{{ home-page-url }}">
 {% else %}
-  <meta property="og:title" content="{{ this_page_title }} - {{ site.name }}">
+  <meta property="og:title" content="{{ seo_document_title | escape }}">
   <meta property="og:description" content="{{ meta_description_attr_300 | escape }}"><!-- desc-sanitizer-v2 -->
   <meta property="og:type" content="article">
   <meta property="og:url" content="{{ canonical_url_safe }}">
@@ -151,13 +263,12 @@ Description precedence: page.summary > page.seo-description > page.description >
 {% elsif site.author and site.author.twitter_username %}
   <meta name="twitter:creator" content="@{{ site.author.twitter_username }}">
 {% endif %}
-<meta name="twitter:title" content="{{ this_page_title }}">
+<meta name="twitter:title" content="{{ seo_document_title | escape }}">
 {%- assign twitter_description_sanitized = twitter_description
   | replace: '&quot;', '"'
   | replace: '&#34;', '"'
   | strip
 -%}
-<!-- DIAG twitter: raw {{ twitter_description | escape }} | stripped {{ twitter_description_sanitized | escape }} -->
 <meta name="twitter:description" content="{{ twitter_description_sanitized | strip | truncate:300 | escape }}">
 {% assign twitter_raw_img = page.image | default: page.mf-photo[0] | default: site.title_image %}
 {% if twitter_raw_img %}
@@ -179,11 +290,13 @@ Description precedence: page.summary > page.seo-description > page.description >
 {%- comment -%}
 Article-specific meta (Open Graph): published, modified, section, tags.
 {%- endcomment -%}
-{% if page.date %}
-  <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+{% assign published_date_source = page.web_published_at | default: page.date %}
+{% assign modified_date_source = page.web_modified_at | default: page.last_modified_at | default: page.last_modified | default: page.update | default: page.date %}
+{% if published_date_source %}
+  <meta property="article:published_time" content="{{ published_date_source | date_to_xmlschema }}">
 {% endif %}
-{% if page.update %}
-  <meta property="article:modified_time" content="{{ page.update | date_to_xmlschema }}">
+{% if modified_date_source %}
+  <meta property="article:modified_time" content="{{ modified_date_source | date_to_xmlschema }}">
 {% endif %}
 {% if page.categories %}
   {% assign primary_section = page.categories | first %}
@@ -194,74 +307,311 @@ Article-specific meta (Open Graph): published, modified, section, tags.
 {% endif %}
 
 {%- comment -%}
-JSON-LD Article / WebSite structured data.
-If it's the homepage treat as WebSite only; else add Article object.
+One page-aware JSON-LD graph is emitted for every rendered page. Keeping the
+site identity nodes here gives them stable IDs and avoids the duplicate,
+disconnected schema blocks that were previously emitted by article layouts.
 {%- endcomment -%}
-{% assign is_home = full-page-url == home-page-url %}
-{% assign breadcrumb_position = 1 %}
-{% assign breadcrumb_items = '' %}
-{% if page.categories and page.categories != empty %}
-  {% assign first_cat = page.categories | first %}
-  {% capture _crumb_slug %}{% include category/map-category-to-registry.html key=first_cat %}{% endcapture %}
-  {% assign _crumb_slug = _crumb_slug | strip %}
-  {% assign __first_cat_text = first_cat | to_s | strip %}
-  {% if _crumb_slug == '' and __first_cat_text != '' %}{% assign _crumb_slug = __first_cat_text | slugify %}{% endif %}
-  {% assign _crumb_entry = site.data.category_registry[_crumb_slug] %}
-  {% if _crumb_entry and _crumb_entry.category_home_page %}
-    {% assign _crumb_href = _crumb_entry.category_home_page %}
-  {% else %}
-    {% assign _crumb_href = '/category/' | append: _crumb_slug | append: '/' %}
-  {% endif %}
-  {% capture breadcrumb_items %}
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": {{ first_cat | jsonify }},
-      {% capture breadcrumb_item_url %}{% include utility/safe-absolute-url.html url=_crumb_href %}{% endcapture %}
-      "item": "{{ breadcrumb_item_url | strip }}"
-    }
-  {% endcapture %}
-  {% assign breadcrumb_position = breadcrumb_position | plus: 1 %}
+{% assign is_home = false %}
+{% if page.url == '/' or canonical_url_safe == home-page-url %}{% assign is_home = true %}{% endif %}
+
+{% assign is_profile_page = false %}
+{% if page_layout == 'profile' or page.url == '/profile/' %}{% assign is_profile_page = true %}{% endif %}
+
+{% assign is_collection_page = false %}
+{% if page_layout == 'category' or page_layout == 'prompt-library' or page.url == '/slides/' or page.url == '/assessments/' %}
+  {% assign is_collection_page = true %}
 {% endif %}
+
+{% assign is_tool_page = false %}
+{% if page_layout == 'tool' %}{% assign is_tool_page = true %}{% endif %}
+
+{% assign is_blog_post = false %}
+{% if page.collection == 'posts' or page_layout == 'post' or page_layout == 'long-article' or page_layout == 'quote' or page_layout == 'prompt-details' or page_layout == 'micropubpost' or page_layout == 'reveal-integrated' or page_layout == 'slide-deck' %}
+  {% assign is_blog_post = true %}
+{% endif %}
+
+{%- comment -%}
+Role-aware article schema:
+- A quote page is authored/curated as a webpage by the site owner; the quoted
+  person is the creator of the Quotation that is the page's main entity.
+- A reprint retains its source author(s); the site owner is its editor/curator.
+This mirrors the visible role labels emitted by quote.html and
+utility/content-credits.html instead of flattening every person into author.
+{%- endcomment -%}
+{% assign is_quote_page = false %}
+{% if page_layout == 'quote' %}{% assign is_quote_page = true %}{% endif %}
+{% assign schema_category_names = page.categories | join: '|' | downcase %}
+{% assign is_reprint_page = false %}
+{% if schema_category_names contains 'reprint' %}{% assign is_reprint_page = true %}{% endif %}
+
+{% capture person_profile_url %}{% include utility/safe-absolute-url.html url='/profile/' %}{% endcapture %}
+{% assign person_profile_url = person_profile_url | strip %}
+{% assign person_id = home-page-url | append: '#person' %}
+{% assign website_id = home-page-url | append: '#website' %}
+{% assign page_entity_id = canonical_url_safe | append: '#webpage' %}
+{% assign breadcrumb_id = canonical_url_safe | append: '#breadcrumb' %}
+
+{%- comment -%}Resolve the post's author records from inline objects or site.authors keys.{%- endcomment -%}
+{% assign schema_authors = '' | split: '' %}
+{% if page.authors and page.authors != empty %}
+  {% for schema_author_input in page.authors %}
+    {% if schema_author_input.name %}
+      {% assign schema_authors = schema_authors | push: schema_author_input %}
+    {% elsif site.authors[schema_author_input] %}
+      {% assign schema_author_record = site.authors[schema_author_input] %}
+      {% assign schema_authors = schema_authors | push: schema_author_record %}
+    {% elsif schema_author_input != empty %}
+      {% assign schema_authors = schema_authors | push: schema_author_input %}
+    {% endif %}
+  {% endfor %}
+{% elsif page.author and page.author != empty %}
+  {% if page.author.name %}
+    {% assign schema_authors = schema_authors | push: page.author %}
+  {% elsif site.authors[page.author] %}
+    {% assign schema_author_record = site.authors[page.author] %}
+    {% assign schema_authors = schema_authors | push: schema_author_record %}
+  {% else %}
+    {% assign schema_authors = schema_authors | push: page.author %}
+  {% endif %}
+{% endif %}
+{% if schema_authors == empty %}
+  {% assign schema_authors = schema_authors | push: site.author %}
+{% endif %}
+
+{%- comment -%}Use the first registered category for a middle breadcrumb when it has a distinct landing page.{%- endcomment -%}
+{% assign has_category_breadcrumb = false %}
+{% if page.categories and page.categories != empty %}
+  {% assign schema_first_category = page.categories | first %}
+  {% capture schema_category_slug %}{% include category/map-category-to-registry.html key=schema_first_category %}{% endcapture %}
+  {% assign schema_category_slug = schema_category_slug | strip %}
+  {% assign schema_first_category_text = schema_first_category | to_s | strip %}
+  {% if schema_category_slug == '' and schema_first_category_text != '' %}
+    {% assign schema_category_slug = schema_first_category_text | slugify %}
+  {% endif %}
+  {% assign schema_category_entry = site.data.category_registry[schema_category_slug] %}
+  {% if schema_category_entry and schema_category_entry.category_home_page %}
+    {% assign schema_category_path = schema_category_entry.category_home_page %}
+  {% elsif schema_category_slug != '' %}
+    {% assign schema_category_path = '/category/' | append: schema_category_slug | append: '/' %}
+  {% endif %}
+  {% if schema_category_path %}
+    {% capture schema_category_url %}{% include utility/safe-absolute-url.html url=schema_category_path %}{% endcapture %}
+    {% assign schema_category_url = schema_category_url | strip %}
+    {% if schema_category_url != '' and schema_category_url != canonical_url_safe %}
+      {% assign has_category_breadcrumb = true %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  {% if is_home %}
-  "@type": "WebSite",
-  "url": "{{ home-page-url }}",
-  "name": "{{ site.title | escape }}",
-  "description": {{ meta_description_attr_300 | jsonify }},
-  "publisher": {"@type":"Person","name":"{{ site_profile_name }}"}
-  {% else %}
   "@graph": [
     {
-      "@type": "WebSite",
-      "url": "{{ home-page-url }}",
-      "name": "{{ site.title | escape }}",
-      "publisher": {"@type":"Person","name":"{{ site_profile_name }}"}
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "name": {{ site_profile_name | jsonify }},
+      "url": {{ person_profile_url | jsonify }}{% if site_profile.avatar %},
+      "image": {{ site_profile.avatar | jsonify }}{% endif %}{% if site_profile.givenname %},
+      "givenName": {{ site_profile.givenname | jsonify }}{% endif %}{% if site_profile.familyname %},
+      "familyName": {{ site_profile.familyname | jsonify }}{% endif %}{% if site_profile.jobtitle %},
+      "jobTitle": {{ site_profile.jobtitle | jsonify }}{% endif %}{% if site_profile.same_as and site_profile.same_as != empty %},
+      "sameAs": {{ site_profile.same_as | jsonify }}{% endif %}{% if site_profile.knows_about and site_profile.knows_about != empty %},
+      "knowsAbout": {{ site_profile.knows_about | jsonify }}{% endif %}{% if site_profile.works_for and site_profile.works_for.name %},
+      "worksFor": {
+        "@type": "Organization",
+        "name": {{ site_profile.works_for.name | jsonify }}{% if site_profile.works_for.url %},
+        "url": {{ site_profile.works_for.url | jsonify }}{% endif %}
+      }{% endif %}
     },
     {
-      "@type": "Article",
+      "@type": "WebSite",
+      "@id": {{ website_id | jsonify }},
+      "url": {{ home-page-url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | strip_html | strip_newlines | jsonify }},
+      "publisher": { "@id": {{ person_id | jsonify }} }
+    }{% unless is_home %},
+    {% if is_profile_page %}
+    {
+      "@type": "ProfilePage",
+      "@id": {{ page_entity_id | jsonify }},
+      "url": {{ canonical_url_safe | jsonify }},
+      "name": {{ this_page_title | jsonify }},
+      "description": {{ meta_description_attr_300 | jsonify }},
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      "mainEntity": { "@id": {{ person_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "breadcrumb": { "@id": {{ breadcrumb_id | jsonify }} }
+    },
+    {% elsif is_collection_page %}
+    {
+      "@type": "CollectionPage",
+      "@id": {{ page_entity_id | jsonify }},
+      "url": {{ canonical_url_safe | jsonify }},
+      "name": {{ this_page_title | jsonify }},
+      "description": {{ meta_description_attr_300 | jsonify }},
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "breadcrumb": { "@id": {{ breadcrumb_id | jsonify }} }
+    },
+    {% elsif is_tool_page %}
+    {
+      "@type": "WebApplication",
+      "@id": {{ page_entity_id | jsonify }},
+      "url": {{ canonical_url_safe | jsonify }},
+      "name": {{ this_page_title | jsonify }},
+      "description": {{ meta_description_attr_300 | jsonify }},
+      "applicationCategory": {{ page.tool_type | default: 'WebApplication' | jsonify }},
+      "operatingSystem": "Any",
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      {% if og_image_url %}"image": {{ og_image_url | jsonify }},{% endif %}
+      "breadcrumb": { "@id": {{ breadcrumb_id | jsonify }} }
+    },
+    {% elsif is_blog_post %}
+    {
+      "@type": "BlogPosting",
+      "@id": {{ canonical_url_safe | append: '#article' | jsonify }},
+      "url": {{ canonical_url_safe | jsonify }},
+      "mainEntityOfPage": { "@type": "WebPage", "@id": {{ page_entity_id | jsonify }} },
       "headline": {{ this_page_title | jsonify }},
-  "description": {{ meta_description_attr_300 | jsonify }},
-      "url": "{{ canonical_url_safe }}",
-      {% if og_image_url %}"image": ["{{ og_image_url }}"],{% endif %}
-      {% if page.date %}"datePublished": "{{ page.date | date_to_xmlschema }}",{% endif %}
-      {% if page.update %}"dateModified": "{{ page.update | date_to_xmlschema }}",{% endif %}
-      "author": {"@type":"Person","name":"{{ site_profile_name }}"},
-      "publisher": {"@type":"Person","name":"{{ site_profile_name }}"},
-      {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }}, {% endif %}
+      "description": {{ meta_description_attr_300 | jsonify }},
+      {% if page.subtitle %}"alternativeHeadline": {{ page.subtitle | jsonify }},{% endif %}
+      {% if og_image_url %}"image": [{{ og_image_url | jsonify }}],{% endif %}
+      {% if published_date_source %}"datePublished": {{ published_date_source | date_to_xmlschema | jsonify }},{% endif %}
+      {% if modified_date_source %}"dateModified": {{ modified_date_source | date_to_xmlschema | jsonify }},{% endif %}
+      "author": [
+        {% if is_quote_page %}
+          { "@id": {{ person_id | jsonify }} }
+        {% else %}
+        {% for schema_author in schema_authors %}
+          {% if schema_author.name %}
+            {% assign schema_author_name = schema_author.name %}
+            {% assign schema_author_url = schema_author.url | default: schema_author.uri %}
+            {% assign schema_author_image = schema_author.avatar | default: schema_author.image %}
+          {% else %}
+            {% assign schema_author_name = schema_author %}
+            {% assign schema_author_url = '' %}
+            {% assign schema_author_image = '' %}
+          {% endif %}
+          {% if schema_author_name == site_profile_name %}
+          { "@id": {{ person_id | jsonify }} }
+          {% else %}
+          {
+            "@type": "Person",
+            "name": {{ schema_author_name | jsonify }}{% if schema_author_url %},
+            "url": {{ schema_author_url | absolute_url | jsonify }}{% endif %}{% if schema_author_image %},
+            "image": {{ schema_author_image | absolute_url | jsonify }}{% endif %}
+          }
+          {% endif %}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+        {% endif %}
+      ],
+      {% if is_quote_page or is_reprint_page %}
+      "editor": { "@id": {{ person_id | jsonify }} },
+      {% endif %}
+      {% if is_quote_page %}
+      {% if page.source or page['source-url'] %}
+      "citation": {
+        "@type": "CreativeWork"{% if page.source %},
+        "name": {{ page.source | jsonify }}{% endif %}{% if page['source-url'] %},
+        "url": {{ page['source-url'] | jsonify }}{% endif %}
+      },
+      {% endif %}
+      "mainEntity": {
+        "@type": "Quotation",
+        "text": {{ page.quote | default: page.content | strip_html | strip_newlines | strip | jsonify }},
+        "creator": [
+          {% for schema_author in schema_authors %}
+            {% if schema_author.name %}
+              {% assign schema_quote_creator_name = schema_author.name %}
+              {% assign schema_quote_creator_url = schema_author.url | default: schema_author.uri %}
+              {% assign schema_quote_creator_image = schema_author.avatar | default: schema_author.image %}
+            {% else %}
+              {% assign schema_quote_creator_name = schema_author %}
+              {% assign schema_quote_creator_url = '' %}
+              {% assign schema_quote_creator_image = '' %}
+            {% endif %}
+            {
+              "@type": "Person",
+              "name": {{ schema_quote_creator_name | jsonify }}{% if schema_quote_creator_url %},
+              "url": {{ schema_quote_creator_url | absolute_url | jsonify }}{% endif %}{% if schema_quote_creator_image %},
+              "image": {{ schema_quote_creator_image | absolute_url | jsonify }}{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      },
+      {% elsif is_reprint_page %}
+      "isBasedOn": {
+        "@type": "CreativeWork"{% if page['source-url'] %},
+        "url": {{ page['source-url'] | jsonify }}{% endif %}{% if page.source %},
+        "publisher": { "@type": "Organization", "name": {{ page.source | jsonify }} }{% endif %},
+        "author": [
+          {% for schema_author in schema_authors %}
+            {% if schema_author.name %}
+              {% assign schema_source_author_name = schema_author.name %}
+              {% assign schema_source_author_url = schema_author.url | default: schema_author.uri %}
+            {% else %}
+              {% assign schema_source_author_name = schema_author %}
+              {% assign schema_source_author_url = '' %}
+            {% endif %}
+            {
+              "@type": "Person",
+              "name": {{ schema_source_author_name | jsonify }}{% if schema_source_author_url %},
+              "url": {{ schema_source_author_url | absolute_url | jsonify }}{% endif %}
+            }{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        ]
+      },
+      {% endif %}
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      {% if page.tags %}"keywords": {{ page.tags | join: ', ' | jsonify }},{% endif %}
       {% if page.categories %}"articleSection": {{ page.categories | first | jsonify }},{% endif %}
-      "mainEntityOfPage": {"@type":"WebPage","@id":"{{ canonical_url_safe }}"}
-    }
-    {% if breadcrumb_items != '' %},
+      "breadcrumb": { "@id": {{ breadcrumb_id | jsonify }} }
+    },
+    {% else %}
+    {
+      "@type": "WebPage",
+      "@id": {{ page_entity_id | jsonify }},
+      "url": {{ canonical_url_safe | jsonify }},
+      "name": {{ this_page_title | jsonify }},
+      "description": {{ meta_description_attr_300 | jsonify }},
+      "isPartOf": { "@id": {{ website_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      {% if og_image_url %}"primaryImageOfPage": { "@type": "ImageObject", "url": {{ og_image_url | jsonify }} },{% endif %}
+      "breadcrumb": { "@id": {{ breadcrumb_id | jsonify }} }
+    },
+    {% endif %}
     {
       "@type": "BreadcrumbList",
-      "itemListElement": [ {{ breadcrumb_items }} ]
+      "@id": {{ breadcrumb_id | jsonify }},
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": {{ home-page-url | jsonify }}
+        },
+        {% if has_category_breadcrumb %}
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ schema_first_category | jsonify }},
+          "item": {{ schema_category_url | jsonify }}
+        },
+        {% endif %}
+        {
+          "@type": "ListItem",
+          "position": {% if has_category_breadcrumb %}3{% else %}2{% endif %},
+          "name": {{ this_page_title | jsonify }},
+          "item": {{ canonical_url_safe | jsonify }}
+        }
+      ]
     }
-    {% endif %}
+    {% endunless %}
   ]
-  {% endif %}
 }
 </script>
 
@@ -280,7 +630,7 @@ If it's the homepage treat as WebSite only; else add Article object.
     <!-- Color of the status bar -->
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <!-- Web App Name for the Shortcut -->
-    <meta name="apple-mobile-web-app-title"            content="{{ this_page_title }}">
+    <meta name="apple-mobile-web-app-title"            content="{{ this_page_title | escape }}">
     <!-- Do Not Detect Phone Numbers -->
     <meta name="format-detection"                      content="telephone=no">
 
@@ -444,9 +794,7 @@ If it's the homepage treat as WebSite only; else add Article object.
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
 {% endif %}
 
-<script type="application/ld+json">
-  {{ seo_tag.json_ld | jsonify }}
-</script>
+JSON-LD output is centralized in the active page-aware graph above.
 
 <!-- End Jekyll SEO tag -->
 {% endcomment %}

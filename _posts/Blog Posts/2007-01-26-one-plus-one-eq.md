@@ -31,8 +31,8 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
+image: /img/2007-01/standards-beauty-truth.webp
+image-alt: Study table with measuring tools, a mirror, books, and a scale
 image-artist: null
 image-artist-URL: null
 image-credits: null

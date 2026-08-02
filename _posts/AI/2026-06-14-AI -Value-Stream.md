@@ -32,6 +32,7 @@ categories:
     - "Business"
     - "Opinion"
     - "Philosophy"
+    - "Enterprise Architecture"
 
 tags:
     - "AI value chain"

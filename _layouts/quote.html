@@ -33,11 +33,7 @@
       {% assign __q_words = __q_plain | split: ' ' %}
       {% assign __q_snip = __q_words | slice: 0, 6 | join: ' ' %}
       {% assign __derived_title = page.author | append: ': "' | append: __q_snip | append: '…"' %}
-      <title>{{ __derived_title | escape }}</title>
     {% endunless %}
-    {% if page.title %}
-      <title>{{ page.title | escape }}</title>
-    {% endif %}
   </head>
   <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
   {%- comment -%} Removed skip link per user request. {%- endcomment -%}
@@ -48,7 +44,16 @@
         <div class="col-12 col-lg-9 col-xxl-9" id="content-column">
           <main class="h-entry" role="main">
             <article class="card h-100 no-padding">
+              {% include utility/resolve-image-variables.html item=page allow_fallback=false %}
+              {% if image_has_explicit_source %}
+                {% include utility/responsive-image.html src=image_URL alt=image_alt class="card-img-top w-100 d-block" sizes="(min-width: 1400px) 960px, (min-width: 992px) 75vw, 100vw" lcp=true %}
+              {% endif %}
               <div class="card-body pt-3 p-4 h-100">
+                {% if image_has_explicit_source %}
+                  <div class="small text-body-secondary image-credits mb-3">
+                    {% include utility/render-image-credit.html %}
+                  </div>
+                {% endif %}
                 {%- comment -%} Title & meta {%- endcomment -%}
                 <header class="mb-3">
                   {% assign __primary_category = page.categories | first %}
@@ -72,10 +77,21 @@
                       <h1 class="p-name card-title">{{ __derived_title }}</h1>
                     {% endif %}
                   {% endif %}
+                  {% assign __web_published = page.web_published_at | default: page.date %}
+                  {% assign __web_modified = page.web_modified_at | default: page.last_modified_at | default: page.update | default: page.updated %}
                   <p class="card-subtitle text-muted mb-2">
-                    <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
-                    {% if page.updated %}
-                      (updated <time datetime="{{ page.updated | date_to_xmlschema }}">{{ page.updated | date: "%B %d, %Y" }}</time>)
+                    Published <time class="dt-published" datetime="{{ __web_published | date_to_xmlschema }}">{{ __web_published | date: "%B %d, %Y" }}</time>
+                    {% if page.web_published_at %}
+                      <span class="ms-2">Source date:
+                        {% if page.original-date %}
+                          {{ page.original-date }}
+                        {% else %}
+                          <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %d, %Y" }}</time>
+                        {% endif %}
+                      </span>
+                    {% endif %}
+                    {% if __web_modified and __web_modified != __web_published %}
+                      <span class="ms-2">Website updated <time class="dt-updated" datetime="{{ __web_modified | date_to_xmlschema }}">{{ __web_modified | date: "%B %d, %Y" }}</time></span>
                     {% endif %}
                   </p>
                   {% if page.source-url and page.source %}
@@ -87,17 +103,36 @@
 
                 {%- comment -%} Quote block {%- endcomment -%}
                 {% assign __quote_text = page.quote | default: page.content %}
+                {% if page.author.name %}
+                  {% assign __quote_author_name = page.author.name %}
+                  {% assign __quote_author_url = page.author.url | default: page.author.uri %}
+                {% elsif site.authors[page.author] %}
+                  {% assign __quote_author_record = site.authors[page.author] %}
+                  {% assign __quote_author_name = __quote_author_record.name %}
+                  {% assign __quote_author_url = __quote_author_record.url | default: __quote_author_record.uri %}
+                {% else %}
+                  {% assign __quote_author_name = page.author | default: 'Unknown' %}
+                  {% assign __quote_author_url = nil %}
+                {% endif %}
                 <figure class="mb-4">
                   <blockquote class="blockquote fs-4">{{ __quote_text | markdownify }}</blockquote>
                   <figcaption class="blockquote-footer mt-2">
-                    <span class="p-author h-card">{{ page.author | default: 'Unknown' }}</span>
+                    <span class="quote-source-author">Quote by
+                      <cite>{% if __quote_author_url %}<a href="{{ __quote_author_url }}">{{ __quote_author_name }}</a>{% else %}{{ __quote_author_name }}{% endif %}</cite>
+                    </span>
                     {% if page.tags and page.tags != '' %}<span class="ms-2">• {{ page.tags }}</span>{% endif %}
                   </figcaption>
                 </figure>
 
+                <p class="small text-body-secondary content-credits">
+                  <span class="content-credit content-credit-curator">Curated by <a class="p-curator h-card" href="{{ '/profile/' | relative_url }}">{{ site.profile.name | default: 'Ted Tschopp' }}</a></span>
+                  {% if page.source %}<span aria-hidden="true"> · </span><span>Source: {{ page.source }}</span>{% endif %}
+                </p>
+
                 {%- if page.content and page.content != '' and page.content != page.quote -%}
                   <div class="mt-4 e-content" id="main_content">
-                    {{ page.content }}
+                    {% assign __quote_content = page.content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                    {{ __quote_content | lazy_images_except_first }}
                   </div>
                 {%- else -%}
                   <div id="main_content"></div>

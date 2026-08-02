@@ -41,17 +41,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/clay-christensen.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Clay Christensen."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Clay Christensen; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Clay Christensen; presented as an illustration rather than a documentary photograph."
+image-title: "Clay Christensen — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: flight, theory, best practices
 year-the-event-took-place: 2012
@@ -59,7 +61,5 @@ year-the-event-took-place: 2012
 mathjax: 
 
 order: 
-redirect_from:
-  - /Clay-Christensen-When-our-early-aviators-looked/
 ---
 When our early aviators looked at the world’s “best practice” fliers birds they saw two things almost all these had in common: wings and feathers. So, they strapped on wings and feathers, climbed to the top of cathedral spires, jumped off and flapped hard. It rarely worked out well.

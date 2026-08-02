@@ -20,6 +20,8 @@ source-url: null
 call-to-action: null
 company: Dohring
 date: 1994-02-01 07:11:42-07:00
+web_published_at: "2023-10-30T17:15:02-07:00"
+web_modified_at: "2026-01-03T20:30:33-08:00"
 update: null
 start-date: February 1994
 stop-date: May 1999

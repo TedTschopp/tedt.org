@@ -33,6 +33,8 @@ categories:
 - Business
 - Opinion
 - Projects
+- Enterprise Architecture
+- Leadership
 
 tags:
 - ai strategy

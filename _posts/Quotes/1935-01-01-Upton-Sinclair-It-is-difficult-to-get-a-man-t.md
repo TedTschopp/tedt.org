@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1935-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Upton Sinclair
@@ -40,17 +42,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/upton-sinclair.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Upton Sinclair."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Upton Sinclair; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Upton Sinclair; presented as an illustration rather than a documentary photograph."
+image-title: "Upton Sinclair — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: self-interest, corruption
 year-the-event-took-place: 1935
@@ -58,7 +62,5 @@ year-the-event-took-place: 1935
 mathjax: 
 
 order: 
-redirect_from:
-  - /Upton-Sinclair-It-is-difficult-to-get-a-man-t/
 ---
 It is difficult to get a man to understand something, when his salary depends upon his not understanding it!

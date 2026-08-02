@@ -25,7 +25,6 @@
 
     <!-- Scripts that need to be at the end of the header -->
     {% include assets/scripts.html %}
-    {% include seo/article-jsonld.html %}
 
     <style>
       .folklore-story-text {
@@ -82,16 +81,21 @@
               {% endif %}
 
               <div class="card rounded-bottom-0 h-100">
-                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}">
+                {% include utility/responsive-image.html src=image_URL alt=image_alt class="card-img-top w-100 d-block" sizes="(min-width: 1200px) 1110px, 100vw" lcp=true %}
                 <div class="card-body pt-3 pb-3 ps-4 pe-4">
                   <div class="post-hero mb-2">
                     <h1 class="p-name card-title post-title mb-1">{{ page.title | default: story.title }}</h1>
                     {% if story.author %}
                     <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">
-                      by {{ story.author }}
+                      Source author: {{ story.author }}
                     </p>
                     {% endif %}
                   </div>
+                  <p class="small text-body-secondary mb-2 content-credits">
+                    <span class="content-credit content-credit-translation-editor">Translator and curator: <a class="p-translator h-card" href="{{ '/profile/' | relative_url }}">{{ site.profile.name | default: 'Ted Tschopp' }}</a></span>
+                    <span aria-hidden="true"> · </span>
+                    <a href="{{ '/profile/#translation-and-folklore-disclosure' | relative_url }}">Translation disclosure</a>
+                  </p>
                   <div class="small text-body-secondary mb-1">
                     <span class="badge bg-secondary me-1">{{ story.myth_classification.myth_type }}</span>
                     <span class="badge bg-info text-dark me-1">{{ story.original_language }}</span>
@@ -145,7 +149,8 @@
                 {%- comment -%} Any additional page content {%- endcomment -%}
                 {% if content and content != '' %}
                 <div class="e-content mt-4">
-                  {{ content }}
+                  {% assign __folklore_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                  {{ __folklore_content | lazy_images_except_first }}
                 </div>
                 {% endif %}
 

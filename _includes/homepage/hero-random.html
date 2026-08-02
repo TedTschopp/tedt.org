@@ -14,6 +14,12 @@
         id="hero-img" 
         class="img-fluid w-100 h-100"
         alt="Homepage hero" 
+        width="1904"
+        height="640"
+        sizes="100vw"
+        loading="eager"
+        decoding="async"
+        fetchpriority="high"
         style="opacity:0; transition: opacity 0.6s ease-in-out;"
         src="data:image/gif;base64,R0lGODlhAQABAAAAACw=">
       <video 
@@ -43,13 +49,20 @@
   const HERO_FOLDER = '/img/categories/home-hero-images';
   const chosen = HERO_VARIANTS[Math.floor(Math.random()*HERO_VARIANTS.length)];
   const imgSrcWebp = `${HERO_FOLDER}/${chosen.base}.webp`;
+  const imgSrcsetWebp = [480, 768, 1200, 1456].map(width =>
+    `${HERO_FOLDER.replace('/img/', '/img/generated/responsive/')}/${chosen.base}--${width}w.webp ${width}w`
+  ).concat(`${imgSrcWebp} 1904w`).join(', ');
   const videoSrcMp4 = `${HERO_FOLDER}/${chosen.base}.mp4`;
   const altText = chosen.alt || (function(file){ try { let core=file.replace(/^hero-/,'').replace(/-/g,' '); return core.charAt(0).toUpperCase()+core.slice(1)+' (hero image)'; } catch(_){ return 'Homepage hero image'; } })(chosen.base);
   // Preload chosen hero image before swapping to avoid placeholder flash
   const preload = new Image();
+  preload.srcset = imgSrcsetWebp;
+  preload.sizes = '100vw';
   preload.onload = function(){
     heroImg.alt = altText;
     heroImg.src = preload.src;
+    heroImg.srcset = preload.srcset;
+    heroImg.sizes = preload.sizes;
     requestAnimationFrame(()=> { heroImg.style.opacity='1'; });
   };
   preload.src = imgSrcWebp;

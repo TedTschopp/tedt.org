@@ -22,6 +22,7 @@ description: Learn how to integrate iTunes with TypePad using a program that upd
 seo-description: null
 categories:
 - Computers
+- Music
 tags: null
 keywords: iTunes, TypePad, Integration, Music, Syncing, Playlists, Latest Tunes, Guide,
   Tutorial
@@ -30,8 +31,8 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
+image: /img/2004-05/itunes-typepad-integration.webp
+image-alt: Early 2000s desktop showing music and blog windows on an office desk
 image-artist: null
 image-artist-URL: null
 image-description: null

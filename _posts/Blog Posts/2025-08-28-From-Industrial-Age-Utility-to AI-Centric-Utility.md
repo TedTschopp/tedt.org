@@ -31,6 +31,8 @@ categories:
   - "Computers"
   - "Opinion"
   - "Science"
+  - "Enterprise Architecture"
+  - "Leadership"
 
 tags:
   - "enterprise-architecture"

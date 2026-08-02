@@ -3,7 +3,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title | default: "Test Page" }} - {{ site.title }}</title>
+    {% include utility/calculate-variables.html %}
+    {% include seo/meta-data-seo.html %}
     
     <!-- Bootstrap CSS for basic styling -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -98,7 +99,8 @@
         </div>
         
         <div class="test-content">
-            {{ content }}
+            {% assign __test_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+            {{ __test_content }}
         </div>
         
         <div class="debug-info mt-4">

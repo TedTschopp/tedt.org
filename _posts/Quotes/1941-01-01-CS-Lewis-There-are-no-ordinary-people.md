@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/The_Weight_of_Glory_and_Other_Address
 call-to-action: ''
 
 date: 1941-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2026-01-03T20:30:33-08:00"
 update:
 author:
     name: C.S. Lewis
@@ -41,17 +43,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/cs-lewis.webp"
+image-alt: "AI-generated photorealistic editorial portrait of C. S. Lewis."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of C. S. Lewis; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of C. S. Lewis; presented as an illustration rather than a documentary photograph."
+image-title: "C. S. Lewis — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: immortality, eternal souls, christianity
 year-the-event-took-place: 1941

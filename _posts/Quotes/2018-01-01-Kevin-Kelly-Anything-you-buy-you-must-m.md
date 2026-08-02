@@ -41,17 +41,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/kevin-kelly.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Kevin Kelly."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Kevin Kelly; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Kevin Kelly; presented as an illustration rather than a documentary photograph."
+image-title: "Kevin Kelly — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: learning, curiosity, growth
 year-the-event-took-place: 2018
@@ -59,8 +61,6 @@ year-the-event-took-place: 2018
 mathjax: 
 
 order: 
-redirect_from:
-  - /Kevin-Kelly-Anything-you-buy-you-must-m/
 ---
 * A vacation plus a disaster equals an adventure.
 * A worthy goal for a year is to learn enough about a subject so that you can't believe how ignorant you were a year earlier.

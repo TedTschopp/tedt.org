@@ -26,7 +26,6 @@
 
     <!-- Scripts that need to be at the end of the header -->
         {% include assets/scripts.html %}
-        {% include seo/article-jsonld.html %}
         {% capture __math_flag %}{{ page.math | default: '' }}{% endcapture %}
         {% capture __mathjax_flag %}{{ page.mathjax | default: '' }}{% endcapture %}
         {% assign __math_flag = __math_flag | strip | downcase %}
@@ -72,25 +71,19 @@
                             {% if video_has_resolved_source %}
                                 {% include components/video-player.html provider=video_provider id=video_id src=video_source type=video_type poster=video_poster label=video_label title=video_title description=video_description aspect=video_aspect class="video-player-alert article-hero-video m-0 p-0 border-0 rounded-bottom-0 bg-body" body_class="p-0" description_wrapper_class="px-3 py-2" %}
                             {% else %}
-                                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"><!-- hero image intentionally eager -->
+                                {% include utility/responsive-image.html src=image_URL alt=image_alt class="card-img-top w-100 d-block" sizes="(min-width: 1400px) 960px, (min-width: 992px) 75vw, 100vw" lcp=true %}
                             {% endif %}
                             <div class="card-body pt-3 pb-3 ps-4 pe-4">
+                                {% unless page.layout == 'tool' %}
                                 <div class="post-hero mb-2">
                                     <h1 class="p-name card-title post-title mb-1">{{ page.title }}</h1>
                                     {% if page.subtitle %}
                                     <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">{{ page.subtitle }}</p>
                                     {% endif %}
                                 </div>
+                                {% endunless %}
                                 <div class="small text-body-secondary mb-1">
-                                    {% if page.author.name %}
-                                    <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ page.author.url }}"><img
-                                                src="{{page.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo"
-                                                loading="lazy" alt="{{ page.author.name | escape }} avatar"> {{page.author.name}}</a></span>
-                                    {% else %}
-                                    <span class="card-text">written by <a rel="author" class="p-author h-card" href="{{ site.author.url }}"><img
-                                                src="{{site.author.avatar}}" style="height: 1.2em;" class="img-fluid align-self-center u-photo"
-                                                loading="lazy" alt="{{ site.author.name | escape }} avatar"> {{site.author.name}}</a></span>
-                                    {% endif %}
+                                    <span class="card-text">{% include utility/content-credits.html page=page %}</span>
                                 </div>
                                 {% unless video_has_resolved_source %}
                                     <div class="small text-body-secondary image-credits">
@@ -142,7 +135,13 @@
                                         </aside>
                                     {% endunless %}
                                     <div class="article rounded-top-0 e-content position-relative" id="main_content">
-                                        {{ content | lazy_images_except_first }}
+                                        {% if page.layout == 'tool' %}
+                                            {{ content | lazy_images_except_first }}
+                                        {% else %}
+                                            {% assign __article_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                                            {{ __article_content | lazy_images_except_first }}
+                                        {% endif %}
+                                        {% include content/topic-cluster-related.html page=page %}
                                     </div>
                                 </div>
                             {%- comment -%}

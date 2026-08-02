@@ -9,13 +9,20 @@
     - avatar_size: CSS class or size (default: uses u-photo)
     - separator: text between multiple authors (default: " and ")
     - prefix: text before authors (default: "by ")
+
+  The canonical site author always links to /profile/, even when legacy front
+  matter still points at the home page.
 {%- endcomment -%}
 
 {%- include utility/resolve-authors.html page=include.page -%}
 
 {%- assign _show_avatar = include.show_avatar | default: true -%}
 {%- assign _separator = include.separator | default: " and " -%}
-{%- assign _prefix = include.prefix | default: "by " -%}
+{%- if include.prefix == nil -%}
+  {%- assign _prefix = "by " -%}
+{%- else -%}
+  {%- assign _prefix = include.prefix -%}
+{%- endif -%}
 
 {%- if resolved_authors_count > 0 -%}
 <span class="author-byline">{{ _prefix }}{%- for _author in resolved_authors -%}
@@ -29,6 +36,10 @@
     {%- assign _name = _author -%}
     {%- assign _url = nil -%}
     {%- assign _avatar = nil -%}
+  {%- endif -%}
+
+  {%- if _name == site.profile.name -%}
+    {%- assign _url = '/profile/' | relative_url -%}
   {%- endif -%}
   
   {%- if _url -%}

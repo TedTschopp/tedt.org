@@ -26,7 +26,6 @@
 
     <!-- Scripts that need to be at the end of the header -->
         {% include assets/scripts.html %}
-        {% include seo/article-jsonld.html %}
         {% capture __math_flag %}{{ page.math | default: '' }}{% endcapture %}
         {% capture __mathjax_flag %}{{ page.mathjax | default: '' }}{% endcapture %}
         {% assign __math_flag = __math_flag | strip | downcase %}
@@ -72,7 +71,7 @@
                             {% if video_has_resolved_source %}
                                 {% include components/video-player.html provider=video_provider id=video_id src=video_source type=video_type poster=video_poster label=video_label title=video_title description=video_description aspect=video_aspect class="video-player-alert article-hero-video m-0 p-0 border-0 rounded-bottom-0 bg-body" body_class="p-0" description_wrapper_class="px-3 py-2" %}
                             {% else %}
-                                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ image_alt | escape }}"> <!-- hero image intentionally eager -->
+                                {% include utility/responsive-image.html src=image_URL alt=image_alt class="card-img-top w-100 d-block" sizes="(min-width: 1400px) 960px, (min-width: 992px) 75vw, 100vw" lcp=true %}
                             {% endif %}
                             <div class="card-body pt-3 pb-3 ps-4 pe-4">
                                 <div class="post-hero mb-2">
@@ -82,7 +81,7 @@
                                     {% endif %}
                                 </div>
                                 <div class="small text-body-secondary mb-1">
-                                    <span class="card-text">written {% include utility/author-byline.html page=page prefix="" %}</span>
+                                    <span class="card-text">{% include utility/content-credits.html page=page %}</span>
                                 </div>
                                 {% unless video_has_resolved_source %}
                                     <div class="small text-body-secondary image-credits">
@@ -134,7 +133,9 @@
                                         </aside>
                                     {% endunless %}
                                     <div class="article e-content position-relative" id="main_content">
-                                        {{ content | lazy_images_except_first }}
+                                        {% assign __article_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                                        {{ __article_content | lazy_images_except_first }}
+                                        {% include content/topic-cluster-related.html page=page %}
                                     </div>
                                 </div>
                             {%- comment -%}
@@ -170,18 +171,23 @@
                                 {% assign __category_text = category | to_s | strip %}
                                 {% if __category_text == '' %}{% continue %}{% endif %}
                                 {% assign clean_category = __category_text | downcase | slugify %}
-                                {% assign image = clean_category | append: ".webp" %}
+                                {% capture __card_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
+                                {% assign __card_slug = __card_slug | strip %}
+                                {% if __card_slug == '' %}{% assign __card_slug = __category_text | slugify %}{% endif %}
+                                {% assign __card_entry = site.data.category_registry[__card_slug] %}
+                                {% if __card_entry and __card_entry.image %}
+                                    {% assign image_src = __card_entry.image %}
+                                {% else %}
+                                    {% assign image_src = '/img/categories/' | append: clean_category | append: '.webp' %}
+                                {% endif %}
                                 {% assign file_name_of_category = clean_category | append: ".html" %}
                                 <div class="card h-100">
                                     <div class="col-12">
                                         <div class="card h-100 position-relative">
-                                            <img class="card-img-top w-100 d-block" src="{{ site.url }}/img/categories/{{ image }}" alt="{{category}}" loading="lazy">
+                                            {% assign _category_image_url = image_src | absolute_url %}
+                                            {% include utility/responsive-image.html src=_category_image_url alt=category class="card-img-top w-100 d-block" sizes="(min-width: 992px) 25vw, 100vw" %}
                                             <div class="card-img-overlay d-flex flex-column align-items-start justify-content-end p-0 ps-2">
                                                 <div class="position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); z-index: 1;" ></div>
-                                                {% capture __card_slug %}{% include category/map-category-to-registry.html key=category %}{% endcapture %}
-                                                {% assign __card_slug = __card_slug | strip %}
-                                                {% if __card_slug == '' %}{% assign __card_slug = __category_text | slugify %}{% endif %}
-                                                {% assign __card_entry = site.data.category_registry[__card_slug] %}
                                                 {% if __card_entry and __card_entry.category_home_page %}
                                                     {% assign __card_href = __card_entry.category_home_page %}
                                                 {% else %}

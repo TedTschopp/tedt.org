@@ -8,34 +8,62 @@ sitemap:
   <?xml-stylesheet type="text/xsl" href="{{ "/sitemap.xsl" | absolute_url }}"?>
 {% endif %}
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  {% assign collections = site.collections | where_exp:'collection','collection.output != false' %}
-  {% for collection in collections %}
-    {% assign docs = collection.docs | where_exp:'doc','doc.sitemap != false' %}
-    {% for doc in docs %}
+  {%- comment -%}
+    Only emit canonical, indexable HTML documents. jekyll-redirect-from creates
+    synthetic pages with redirect metadata; those aliases must never be search
+    discovery URLs. Work-in-progress and operational backfill pages are also
+    deliberately kept out even when they remain publicly reachable.
+  {%- endcomment -%}
+  {%- assign collections = site.collections | where_exp: 'collection', 'collection.output != false' -%}
+  {%- for collection in collections -%}
+    {%- for doc in collection.docs -%}
+      {%- assign source_path = doc.relative_path | default: doc.path | downcase -%}
+      {%- assign output_path = doc.url | downcase -%}
+      {%- assign include_in_sitemap = true -%}
+
+      {%- if doc.sitemap == false or doc.redirect_to or doc.noindex == true or doc.robots contains 'noindex' -%}
+        {%- assign include_in_sitemap = false -%}
+      {%- elsif source_path contains '_work-in-progress/' or source_path contains '/work-in-progress/' or output_path contains '/work-in-progress/' -%}
+        {%- assign include_in_sitemap = false -%}
+      {%- elsif source_path contains 'backfill' or output_path contains 'backfill' -%}
+        {%- assign include_in_sitemap = false -%}
+      {%- endif -%}
+
+      {%- if include_in_sitemap -%}
+        {%- assign modified_at = doc.web_modified_at | default: doc.last_modified_at | default: doc.last_modified | default: doc.update | default: doc.date -%}
       <url>
         <loc>{{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
-        {% if doc.last_modified_at or doc.date %}
-          <lastmod>{{ doc.last_modified_at | default: doc.date | date_to_xmlschema }}</lastmod>
-        {% endif %}
+        {%- if modified_at %}
+          <lastmod>{{ modified_at | date_to_xmlschema }}</lastmod>
+        {%- endif %}
       </url>
-    {% endfor %}
-  {% endfor %}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endfor -%}
 
-  {% assign pages = site.html_pages | where_exp:'doc','doc.sitemap != false' | where_exp:'doc','doc.url != "/404.html"' %}
-  {% for page in pages %}
-    <url>
-      <loc>{{ page.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
-      {% if page.last_modified_at %}
-        <lastmod>{{ page.last_modified_at | date_to_xmlschema }}</lastmod>
-      {% endif %}
-    </url>
-  {% endfor %}
+  {%- for doc in site.html_pages -%}
+    {%- assign source_path = doc.relative_path | default: doc.path | downcase -%}
+    {%- assign output_path = doc.url | downcase -%}
+    {%- assign include_in_sitemap = true -%}
 
-  {% assign static_files = page.static_files | where_exp:'page','page.sitemap != false' | where_exp:'page','page.name != "404.html"' %}
-  {% for file in static_files %}
+    {%- if doc.sitemap == false or doc.redirect_to or doc.noindex == true or doc.robots contains 'noindex' -%}
+      {%- assign include_in_sitemap = false -%}
+    {%- elsif output_path == '/404.html' or output_path == '/404/' -%}
+      {%- assign include_in_sitemap = false -%}
+    {%- elsif source_path contains '_work-in-progress/' or source_path contains '/work-in-progress/' or output_path contains '/work-in-progress/' -%}
+      {%- assign include_in_sitemap = false -%}
+    {%- elsif source_path contains 'backfill' or output_path contains 'backfill' -%}
+      {%- assign include_in_sitemap = false -%}
+    {%- endif -%}
+
+    {%- if include_in_sitemap -%}
+      {%- assign modified_at = doc.web_modified_at | default: doc.last_modified_at | default: doc.last_modified | default: doc.update | default: doc.date -%}
     <url>
-      <loc>{{ file.path | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
-      <lastmod>{{ file.modified_time | date_to_xmlschema }}</lastmod>
+      <loc>{{ doc.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
+      {%- if modified_at %}
+        <lastmod>{{ modified_at | date_to_xmlschema }}</lastmod>
+      {%- endif %}
     </url>
-  {% endfor %}
+    {%- endif -%}
+  {%- endfor -%}
 </urlset>

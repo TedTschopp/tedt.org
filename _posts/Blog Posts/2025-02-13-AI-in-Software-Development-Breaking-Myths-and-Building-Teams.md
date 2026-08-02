@@ -38,6 +38,7 @@ categories:
 - Projects
 - Science
 - Artificial Intelligence
+- Leadership
 tags: AI in Software Development, GitHub Copilot, Low-Code vs. Pro Dev, Software Teams,
   AI Collaboration, Technology Leadership
 keywords: AI in coding, GitHub Copilot impact, Low-code vs pro-code, AI in software

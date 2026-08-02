@@ -38,7 +38,8 @@
               {% endif %}
 
               <div class="card rounded-bottom-0 h-100">
-                <img class="card-img-top w-100 d-block" src="{{ image_URL }}" alt="{{ page.title | default: 'Swiss Folklore Stories' | escape }}">
+                {% assign _folklore_index_alt = page.title | default: 'Swiss Folklore Stories' %}
+                {% include utility/responsive-image.html src=image_URL alt=_folklore_index_alt class="card-img-top w-100 d-block" sizes="(min-width: 1200px) 1110px, 100vw" lcp=true %}
                 <div class="card-body pt-3 pb-3 ps-4 pe-4">
                   <div class="post-hero mb-2">
                     <h1 class="card-title post-title mb-1">{{ page.title | default: "📚 Swiss Folklore Collection" }}</h1>
@@ -160,7 +161,8 @@
                   {% endfor %}
                 </div>
 
-                {{ content }}
+                {% assign __folklore_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
+                {{ __folklore_content | lazy_images_except_first }}
 
               </div>
             </article>

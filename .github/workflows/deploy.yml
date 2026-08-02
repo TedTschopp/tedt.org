@@ -21,7 +21,7 @@ jobs:
     timeout-minutes: 30
     steps:
       - name: Checkout
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -34,7 +34,7 @@ jobs:
           npm ci --no-audit --no-fund
 
       - name: Cache Playwright browsers
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: ~/.cache/ms-playwright
           key: ${{ runner.os }}-playwright-${{ hashFiles('package-lock.json') }}
@@ -195,6 +195,24 @@ jobs:
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
 
+      - name: Responsive images and editorial credits
+        run: |
+          set -euo pipefail
+          bundle exec ruby tests/check_responsive_images.rb _site
+          bundle exec ruby tests/check_content_credits.rb _site
+          bundle exec ruby tests/check_quote_portraits.rb _site
+
+      - name: SEO regression gates
+        run: |
+          set -euo pipefail
+          bundle exec ruby tests/check_sitemap_freshness.rb _site/sitemap.xml
+          bundle exec ruby tests/check_page_seo_structure.rb _site
+          bundle exec ruby tests/check_seo_quality_regressions.rb _site
+          bundle exec ruby tests/check_structured_data_roles.rb _site
+          bundle exec ruby tests/check_seo_title_override.rb
+          bundle exec ruby tests/check_topic_clusters.rb _site
+          bundle exec ruby tests/check_search_console_analyzer.rb
+
       - name: Run a11y tests (Allure)
         id: a11y
         continue-on-error: true
@@ -303,7 +321,7 @@ jobs:
 
       - name: Upload HTMLProofer log
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: htmlproofer-log
           path: tmp/htmlproofer.txt
@@ -318,7 +336,7 @@ jobs:
 
       - name: Upload Allure report artifact
         if: always()
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: allure-report
           path: |
@@ -341,7 +359,7 @@ jobs:
           find _site -maxdepth 2 -type d -print | head -n 40
       - name: Upload artifact
         if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site
   deploy:

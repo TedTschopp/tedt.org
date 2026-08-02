@@ -38,6 +38,7 @@ categories:
 - Artificial Intelligence
 - Business
 - Projects
+- Enterprise Architecture
 tags:
 - prompt engineering
 - enterprise architecture

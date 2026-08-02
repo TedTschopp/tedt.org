@@ -12,6 +12,8 @@ source-url: ''
 call-to-action: ''
 
 date: 1997-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 update:
 author:
     name: Michael Jordan
@@ -42,17 +44,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/michael-jordan.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Michael Jordan."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Michael Jordan; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Michael Jordan; presented as an illustration rather than a documentary photograph."
+image-title: "Michael Jordan — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: perseverance, resilience
 year-the-event-took-place: 1997
@@ -60,7 +64,5 @@ year-the-event-took-place: 1997
 mathjax: 
 
 order: 
-redirect_from:
-  - /Michael-Jordan-I've-missed-more-than-9000-sh/
 ---
 I’ve missed more than 9000 shots in my career. I’ve lost almost 300 games. 26 times, I’ve been trusted to take the game winning shot and missed. I’ve failed over and over and over again in my life. And that is why I succeed.

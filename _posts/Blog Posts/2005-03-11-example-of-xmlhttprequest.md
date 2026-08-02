@@ -36,8 +36,8 @@ location:
 coordinates:
   latitude: 34.099024
   longitude: -118.069288
-image: null
-image-alt: null
+image: /img/2005-03/xmlhttprequest-example.webp
+image-alt: Corporate desk monitor with abstract web request diagrams and a notebook
 image-artist: null
 image-artist-URL: null
 image-description: null

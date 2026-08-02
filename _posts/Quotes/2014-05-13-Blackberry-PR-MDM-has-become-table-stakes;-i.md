@@ -42,17 +42,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/blackberry-2014.webp"
+image-alt: "Historical BlackBerry wordmark and dotted-B logo in black on a white background."
+image-artist: "Research In Motion"
+image-artist-URL: "https://www.blackberry.com/"
+image-credits: "Historical BlackBerry logo, introduced in 2004 and in use during 2014. Public-domain simple geometry; trademark rights may apply."
+image-credits-URL: "https://commons.wikimedia.org/wiki/File:Blackberry_Logo.svg"
+image-credits-artist: "Research In Motion"
+image-credits-artist-URL: "https://commons.wikimedia.org/wiki/File:Blackberry_Logo.svg"
+image-credits-title: "Historical BlackBerry logo used during 2014"
+image-description: "The historical BlackBerry company wordmark and dotted-B symbol used during the period of the quoted press release."
+image-title: "BlackBerry wordmark used in 2014"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: 
 year-the-event-took-place: 2013

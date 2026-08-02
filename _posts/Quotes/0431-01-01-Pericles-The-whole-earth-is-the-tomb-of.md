@@ -12,6 +12,8 @@ source-url: 'https://en.wikipedia.org/wiki/History_of_the_Peloponnesian_War'
 call-to-action: ''
 
 date: 0431-01-01
+web_published_at: "2025-08-30T19:29:57-07:00"
+web_modified_at: "2025-08-30T19:29:57-07:00"
 original-date: -431
 update:
 author:
@@ -42,17 +44,19 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image:
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/pericles.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Pericles."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Pericles; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Pericles; presented as an illustration rather than a documentary photograph."
+image-title: "Pericles — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 
 monster-or-magical-or-religious-ideas: heroism, legacy, memory
 year-the-event-took-place: -431
@@ -60,7 +64,5 @@ year-the-event-took-place: -431
 mathjax: 
 
 order: 
-redirect_from:
-  - /Pericles-The-whole-earth-is-the-tomb-of/
 ---
 The whole earth is the tomb of heroic men and their story is not given only on stone over their clay but abides everywhere without visible symbol woven into the stuff of other mens lives.

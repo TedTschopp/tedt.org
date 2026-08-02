@@ -36,22 +36,22 @@ location:
 coordinates:
     latitude: 34.1470
     longitude: -117.9709
-image: ""
-image-alt: ""
-image-artist: ""
-image-artist-URL: ""
-image-credits: ""
-image-credits-URL: ""
-image-credits-artist: ""
-image-credits-artist-URL: ""
-image-credits-title: ""
-image-description: ""
-image-title: ""
+image: "/img/quotes/authors/al-swearengen.webp"
+image-alt: "AI-generated photorealistic editorial portrait of Al Swearengen."
+image-artist: "Ted Tschopp with OpenAI image generation"
+image-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits: "AI-generated editorial portrait; not a documentary photograph."
+image-credits-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-artist: "Ted Tschopp with OpenAI image generation"
+image-credits-artist-URL: "https://tedt.org/profile/#ai-assistance-disclosure"
+image-credits-title: "AI-generated editorial portrait of Al Swearengen; not a documentary photograph"
+image-description: "An AI-generated photorealistic editorial portrait of Al Swearengen; presented as an illustration rather than a documentary photograph."
+image-title: "Al Swearengen — AI-generated editorial portrait"
+image_width: 1456
+image_height: 816
 monster-or-magical-or-religious-ideas: ""
 year-the-event-took-place: 1870s
 mathjax: false
 order: ""
-redirect_from:
-    - /Al-Swearengen-In-life-you-have-to-do-a-lot-o/
 ---
 In life you have to do a lot of things you don't fucking want to do. Many times, that's what the fuck life is... one vile fucking task after another.

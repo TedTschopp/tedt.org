@@ -17,7 +17,7 @@
 	{% endif %}
 
 	{% if page.previous.image == null or page.previous.image == empty or page.previous.image == '' %}
-		{% assign previous_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
+		{% assign previous_image = "/img/post-navigation-placeholder.svg" %}
 	{% else %}
 		{% assign previous_image_raw = page.previous.image | strip %}
 		{% assign previous_image_first = previous_image_raw | slice: 0, 1 %}
@@ -58,7 +58,7 @@
 	{% endif %}
 
 	{% if page.next.image == null or page.next.image == empty or page.next.image == '' %}
-		{% assign next_image = "https://via.placeholder.com/1456%E2%80%8Ax%E2%80%8A816" %}
+		{% assign next_image = "/img/post-navigation-placeholder.svg" %}
 	{% else %}
 		{% assign next_image_raw = page.next.image | strip %}
 		{% assign next_image_first = next_image_raw | slice: 0, 1 %}
@@ -95,7 +95,7 @@
 							
 							<div class="row g-0 h-100">
 								<div class="col-md-4">
-									<img src="{{ previous_image }}" class="img-fluid rounded-start" alt="...">
+									{% include utility/responsive-image.html src=previous_image alt="Previous article image" class="img-fluid rounded-start" sizes="(min-width: 768px) 25vw, 50vw" %}
 								</div>
 								<div class="col-md-8">
 									<div class="card-body">
@@ -123,7 +123,7 @@
 									</div>
 								</div>
 								<div class="col-md-4">
-									<img src="{{ next_image }}" class="img-fluid rounded-start" alt="...">
+									{% include utility/responsive-image.html src=next_image alt="Next article image" class="img-fluid rounded-start" sizes="(min-width: 768px) 25vw, 50vw" %}
 								</div>
 							</div>
 
@@ -134,4 +134,3 @@
 		</div>
 	</section>
   </div>
-

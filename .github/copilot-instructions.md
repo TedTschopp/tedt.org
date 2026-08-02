@@ -266,24 +266,33 @@ FORCE_PERIODIC_GC=1 bundle exec jekyll build
 SKIP_EXTERNAL=1 bundle exec htmlproofer ./_site --check-html --allow-missing-href
 ```
 
-### 24. Slides & Reveal.js Integration
+### 24. Standalone HTML Slides
 
 **Critical: No separate `slides` collection.** All slide decks are posts in `_posts/Slides/`:
-* Use `layout: reveal-integrated` in front matter
+* Use `layout: slide-deck` for new DeckWeaver-style standalone HTML exports
 * Set explicit `permalink: /slides/{slug}/`
 * Filter templates check `relative_path` containing `_posts/Slides/`
 * Never reference `site.slides` - it doesn't exist (legacy approach deprecated per ADR 0012)
+* Store the unchanged artifact at `slides/decks/{slug}/index.html`
+* Set `format: standalone-html`, `deck_url`, `deck_sha256`, and `slide_count`
+* Keep `reveal-integrated` only for already-published legacy decks (ADR 0013)
 
 **Slide-specific front matter:**
 * `topics`: Array for client-side filtering
-* `preview_html`: Custom card preview (overrides auto-extraction)
+* `deck_url`: URL of the self-contained HTML artifact
+* `deck_sha256`: Integrity checksum for the reviewed artifact
+* `slide_count`: Declared number of slides
 * `aspect_ratio`: One of `16:9`, `16:10`, `4:3`
-* `deck-style`: Palette variant (`light`, `dark`, `accent-blue`, `accent-orange`, `accent-gold`)
+* `accent_color`: Catalog preview accent
+* `image`: Optional catalog thumbnail
 
 **Styling locations:**
-* Global theme: `_sass/components/_slides-theme.scss`
-* Archetypes (reusable patterns): `_sass/components/_slides-archetypes.scss`
-* Slide includes: `_includes/slides/` (section-break, filter-controls, architecture-metadata, meta-footer)
+* Presentation wrapper and catalog: `_sass/_overrides-slides.scss`
+* Search/topic filters: `_sass/components/_slides-filter.scss`
+* The exported deck owns its internal CSS and JavaScript
+
+Run `ruby tests/check_slide_decks.rb` and `bundle exec jekyll build` after
+adding or replacing a deck.
 
 ### 25. Mastodon Integration Patterns
 

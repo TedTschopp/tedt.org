@@ -2,8 +2,6 @@
 <html lang="en" data-bs-theme="dark">
   <head>
     <meta charset="utf-8">
-  <title>{{ page.title | escape }} - {{ site.title }}</title>
-
     {% include utility/calculate-variables.html %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -76,7 +74,7 @@
                     {% endif %}
                     {% if __cat_entry %}
                       {% capture _title_html %}{% include category/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}{% endcapture %}
-                      {% include category/category-palette-apply.html entry=__cat_entry slug=__cat_slug raw=page.title title_html=_title_html title_tag='div' title_class='p-name category-title-wrapper' wrapper_class='category-hero category-hero-page' %}
+                      {% include category/category-palette-apply.html entry=__cat_entry slug=__cat_slug raw=page.title title_html=_title_html title_tag='h1' title_class='p-name category-title-wrapper' wrapper_class='category-hero category-hero-page' %}
                     {% elsif __cat_slug != '' %}
                       <h1 class="p-name">
                         {% include category/category-label.html category=__cat_slug href=__cat_href kind='title' class_extra='text-decoration-none' wrapper_class_extra='category-page-head' legacy_class=false %}
@@ -113,7 +111,7 @@
                     {% assign __category_image_alt = registry_entry.title | default: page.category %}
                     {% include utility/resolve-image-variables.html item=registry_entry image=image_path fallback_image='/img/categories/default.webp' fallback_alt=__category_image_alt %}
             <figure class="category-theme" data-category="{{ registry_entry.title | default: page.category }}" data-cat="{{ category }}"{% if __category_wrapper_style != '' %} style="{{ __category_wrapper_style }}"{% endif %}>
-            <img class="img-responsive img-thumbnail" src="{{ image_URL }}" alt="{{ image_alt | escape }}">
+            {% include utility/responsive-image.html src=image_URL alt=image_alt class="img-responsive img-thumbnail" sizes="(min-width: 1200px) 1110px, 100vw" lcp=true %}
           </figure>
                     <!-- Determine description: prefer registry entry, fall back to page.description, then excerpt, then stripped content -->
                     {% if registry_entry and registry_entry.description %}
@@ -219,8 +217,7 @@
                                     <div class="card rounded-0 px-0">
                                       <div class="row g-0">
                                         <div class="col-md-4">
-                                          <img src="{{ image_URL }}" alt="{{ image_alt | escape }}" class="img-fluid rounded-start"
-                                            style="width: 100%; height: 100%; object-fit: cover;" loading="lazy">
+                                          {% include utility/responsive-image.html src=image_URL alt=image_alt class="img-fluid rounded-start" style="width: 100%; height: 100%; object-fit: cover;" sizes="(min-width: 768px) 33vw, 100vw" %}
                                         </div>
                                         <div class="col-md-8">
                                           <div class="card-body">
@@ -336,9 +333,6 @@
 
   </body>
 </html>
-
-
-
 
 
 

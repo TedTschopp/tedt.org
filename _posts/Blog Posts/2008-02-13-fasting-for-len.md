@@ -33,8 +33,8 @@ location:
 coordinates:
   latitude: 34.02455
   longitude: -117.767693
-image: null
-image-alt: null
+image: /img/2008-02/lenten-fast-tea-journal.webp
+image-alt: Tea, juice, smoothie, and empty plate on a reflective desk
 image-artist: null
 image-artist-URL: null
 image-credits: null

@@ -64,6 +64,11 @@
         "_layouts/**/*.html": "liquid",
         "_includes/**/*.html": "liquid"
     },
+    "yaml.schemas": {
+        "./.vscode/yamlresume-v0.13.0.schema.json": [
+            "_data/resume.yml"
+        ]
+    },
 
     "terminal.integrated.env.osx": {
         "PATH": "/Users/tedtschopp/.local/bin:/opt/homebrew/bin:/usr/local/bin:${env:PATH}"

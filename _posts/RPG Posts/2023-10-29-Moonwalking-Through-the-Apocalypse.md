@@ -28,6 +28,7 @@ categories:
 - Role Playing Games
 - Gamma World
 - Mutant Crawl Classics
+- Music
 tags:
 - RPG
 - Game Mechanics

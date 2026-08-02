@@ -4553,7 +4553,7 @@
       "context-engineering"
     ],
     "date_published": "2026-06-15T09:00:00-07:00",
-    "date_modified": "2026-06-15T09:00:00-07:00",
+    "date_modified": "2026-07-04T21:42:21-07:00",
     "author": {
       "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
       "name": "Ted Tschopp",
@@ -4676,5 +4676,446 @@
       "https://tschopp.net/users/Ted/statuses/116818145701715471"
     ],
     "lastTootTimestamp": 1782503444019
+  },
+  "https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/": {
+    "id": "/Customizing-Copilots-Thinking-Messages-in-VS-Code/",
+    "title": "Customizing Copilot's Thinking Messages in VS Code",
+    "summary": "VS Code lets you customize the short thinking messages shown while GitHub Copilot works. Here is how to replace the default agent status phrases with a custom list in your own voice.",
+    "content_text": "VS Code lets you customize the short thinking messages shown while GitHub Copilot works. Here is how to replace the default agent status phrases with a custom list in your own voice. https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/",
+    "url": "https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/",
+    "image": "https://tedt.org/img/2026-06/Middle-Earth-Panorama.webp",
+    "tags": [
+      "github-copilot",
+      "vs-code",
+      "visual-studio-code",
+      "ai-coding",
+      "developer-experience",
+      "agentic-engineering",
+      "settings-json",
+      "workflow-design"
+    ],
+    "date_published": "2026-06-26T00:00:00-07:00",
+    "date_modified": "2026-06-26T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116819979589567799"
+    ],
+    "lastTootTimestamp": 1782531426936
+  },
+  "https://tedt.org/The-Orion-Accord-and-the-Artemis-Working-Group/": {
+    "id": "/The-Orion-Accord-and-the-Artemis-Working-Group/",
+    "title": "The Orion Accord and the Artemis Working Group",
+    "summary": "A Traveller faction and campaign framework built around the Orion Accord, a criminal constitution of frontier predators, and the Artemis Working Group, an Imperial intelligence task force created to dismantle the ecosystem that lets Orion hunt.",
+    "content_text": "A Traveller faction and campaign framework built around the Orion Accord, a criminal constitution of frontier predators, and the Artemis Working Group, an Imperial intelligence task force created to dismantle the ecosystem that lets Orion hunt. https://tedt.org/The-Orion-Accord-and-the-Artemis-Working-Group/",
+    "url": "https://tedt.org/The-Orion-Accord-and-the-Artemis-Working-Group/",
+    "image": "https://tedt.org/img/2026-07/orion-and-artemis.webp",
+    "tags": [
+      "RPG",
+      "TTRPG",
+      "Traveller",
+      "Campaign Design",
+      "Worldbuilding",
+      "Factions",
+      "Game Mastering",
+      "Space Opera",
+      "Frontier Intrigue",
+      "Mythic Structure"
+    ],
+    "date_published": "2026-07-04T00:00:00-07:00",
+    "date_modified": "2026-07-04T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116863407154090102"
+    ],
+    "lastTootTimestamp": 1783194079012
+  },
+  "https://tedt.org/House-Ventara-of-Alell-and-the-Caerleon-March/": {
+    "id": "/House-Ventara-of-Alell-and-the-Caerleon-March/",
+    "title": "House Ventara of Alell and the Caerleon March",
+    "summary": "A Traveller noble house profile for House Ventara of Alell and the Caerleon March: a ducal family of bioengineering, conservation law, noble bloodlines, black medical infrastructure, Orion Accord ties, and the scandal of Aurelius Holst.",
+    "content_text": "A Traveller noble house profile for House Ventara of Alell and the Caerleon March: a ducal family of bioengineering, conservation law, noble bloodlines, black medical infrastructure, Orion Accord ties, and the scandal of Aurelius Holst. https://tedt.org/House-Ventara-of-Alell-and-the-Caerleon-March/",
+    "url": "https://tedt.org/House-Ventara-of-Alell-and-the-Caerleon-March/",
+    "image": "https://tedt.org/img/2026-07/house-ventara.webp",
+    "tags": [
+      "RPG",
+      "TTRPG",
+      "Traveller",
+      "Campaign Design",
+      "Worldbuilding",
+      "Noble Houses",
+      "Factions",
+      "Game Mastering",
+      "Space Opera",
+      "Frontier Intrigue",
+      "Orion Accord"
+    ],
+    "date_published": "2026-07-04T00:00:00-07:00",
+    "date_modified": "2026-07-04T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116865270436240424"
+    ],
+    "lastTootTimestamp": 1783222510424
+  },
+  "https://tedt.org/UGS-1-Unicode-Glyph-Variant-Steganography/": {
+    "id": "/UGS-1-Unicode-Glyph-Variant-Steganography/",
+    "title": "UGS-1: Unicode Glyph-Variant Steganography, Version 1.1",
+    "summary": "UGS-1 is a compact technical specification for embedding framed byte payloads in visible text by replacing selected Latin characters with visually similar Unicode homoglyphs. It defines security constraints, non-goals, Unicode handling rules, framing, validation, capacity, APIs, and detector guidan…",
+    "content_text": "UGS-1 is a compact technical specification for embedding framed byte payloads in visible text by replacing selected Latin characters with visually similar Unicode homoglyphs. It defines security constraints, non-goals, Unicode handling rules, framing, validation, capacity, APIs, and detector guidance. https://tedt.org/UGS-1-Unicode-Glyph-Variant-Steganography/",
+    "url": "https://tedt.org/UGS-1-Unicode-Glyph-Variant-Steganography/",
+    "image": "https://tedt.org/img/2026-07/UGS-1.webp",
+    "tags": [
+      "unicode",
+      "steganography",
+      "homoglyphs",
+      "confusables",
+      "text encoding",
+      "security",
+      "specifications",
+      "crc16"
+    ],
+    "date_published": "2026-07-04T00:00:00-07:00",
+    "date_modified": "2026-07-04T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116865546388404084"
+    ],
+    "lastTootTimestamp": 1783226721103
+  },
+  "https://tedt.org/TheOneRing-com-Legacy-Archive/": {
+    "id": "/TheOneRing-com-Legacy-Archive/",
+    "title": "TheOneRing.com Legacy Archive",
+    "summary": "A personal, noncommercial historical archive preserving selected TheOneRing.com-era articles, essays, news items, and community writing.",
+    "content_text": "A personal, noncommercial historical archive preserving selected TheOneRing.com-era articles, essays, news items, and community writing. https://tedt.org/TheOneRing-com-Legacy-Archive/",
+    "url": "https://tedt.org/TheOneRing-com-Legacy-Archive/",
+    "tags": [
+      "theonering",
+      "theonering-com",
+      "tolkien",
+      "fandom",
+      "legacy-archive",
+      "internet-history",
+      "fan-sites"
+    ],
+    "date_published": "2026-07-05T00:00:00-07:00",
+    "date_modified": "2026-07-05T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116868054336649343"
+    ],
+    "lastTootTimestamp": 1783264989402
+  },
+  "https://tedt.org/Beyond-the-Light-Bulb/": {
+    "id": "/Beyond-the-Light-Bulb/",
+    "title": "Beyond the Light Bulb: The Executive Work of AI Adoption",
+    "summary": "Enterprise AI will not create durable value through license rollouts alone. The real work is redesigning value streams, evidence, governance, roles, and decision loops so AI can safely take on more responsibility.",
+    "content_text": "Enterprise AI will not create durable value through license rollouts alone. The real work is redesigning value streams, evidence, governance, roles, and decision loops so AI can safely take on more responsibility. https://tedt.org/Beyond-the-Light-Bulb/",
+    "url": "https://tedt.org/Beyond-the-Light-Bulb/",
+    "image": "https://tedt.org/img/2026-07/Beyond-the-light-bulb.webp",
+    "tags": [
+      "ai adoption",
+      "enterprise ai",
+      "operating model",
+      "ai maturity",
+      "governed autonomy",
+      "decision loops",
+      "value streams",
+      "ai governance",
+      "executive leadership",
+      "digital transformation"
+    ],
+    "date_published": "2026-07-05T07:00:00-07:00",
+    "date_modified": "2026-07-05T07:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116873769362401118"
+    ],
+    "lastTootTimestamp": 1783352193732
+  },
+  "https://tedt.org/The-Next-AI-Model-Wave-Has-Already-Been-Funded/": {
+    "id": "/The-Next-AI-Model-Wave-Has-Already-Been-Funded/",
+    "title": "The Next AI Model Wave Has Already Been Funded",
+    "summary": "The next AI model wave is more likely to arrive as a continuous sequence of model-family upgrades, agent-focused releases, faster inference tiers, open-weight systems, and production refinements than as one dramatic naming moment.",
+    "content_text": "The next AI model wave is more likely to arrive as a continuous sequence of model-family upgrades, agent-focused releases, faster inference tiers, open-weight systems, and production refinements than as one dramatic naming moment. https://tedt.org/The-Next-AI-Model-Wave-Has-Already-Been-Funded/",
+    "url": "https://tedt.org/The-Next-AI-Model-Wave-Has-Already-Been-Funded/",
+    "image": "https://tedt.org/img/2026-07/Next-AI-Model-Wave.webp",
+    "tags": [
+      "ai models",
+      "frontier models",
+      "enterprise ai",
+      "ai agents",
+      "model garden",
+      "open weights",
+      "ai governance",
+      "model evaluation",
+      "hyperscaler capex",
+      "autonomous systems"
+    ],
+    "date_published": "2026-07-11T09:00:00-07:00",
+    "date_modified": "2026-07-11T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116903488035681265"
+    ],
+    "lastTootTimestamp": 1783805664713
+  },
+  "https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/": {
+    "id": "/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
+    "title": "Running to Stay Put",
+    "summary": "As an enterprise architect, I am used to target states. We describe the present and choose a destination. Then we plan the transitions between them. AI makes that habit uncomfortable. A target architecture approved this quarter can look dated before the funding clears. A vendor changes its model. A…",
+    "content_text": "As an enterprise architect, I am used to target states. We describe the present and choose a destination. Then we plan the transitions between them. AI makes that habit uncomfortable. A target architecture approved this quarter can look dated before the funding clears. A vendor changes its model. A software product adds the feature we planned to build. A competitor cuts the time required to serve… https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
+    "url": "https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/",
+    "image": "https://tedt.org/img/2026-07/Chasing-the-Red-Queen.webp",
+    "tags": [
+      "enterprise ai",
+      "red queen syndrome",
+      "ai governance",
+      "ai operating model",
+      "ai portfolio management",
+      "workflow redesign",
+      "ai agents",
+      "model evaluation"
+    ],
+    "date_published": "2026-07-18T00:00:00-07:00",
+    "date_modified": "2026-07-18T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116944370729732145"
+    ],
+    "lastTootTimestamp": 1784429485127
+  },
+  "https://tedt.org/The-IT-Adaptive-Factory/": {
+    "id": "/The-IT-Adaptive-Factory/",
+    "title": "The IT Adaptive Factory",
+    "summary": "How an AI-driven IT Factory Grows Up",
+    "content_text": "How an AI-driven IT Factory Grows Up https://tedt.org/The-IT-Adaptive-Factory/",
+    "url": "https://tedt.org/The-IT-Adaptive-Factory/",
+    "image": "https://tedt.org/img/2026-07/AI-driven-IT-Factory.webp",
+    "tags": [
+      "ai-driven software development",
+      "adaptive IT factory",
+      "AI maturity model",
+      "software engineering",
+      "technical debt",
+      "operating model",
+      "engineering leadership",
+      "AI governance"
+    ],
+    "date_published": "2026-07-26T00:00:00-07:00",
+    "date_modified": "2026-07-26T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116989172624787195"
+    ],
+    "lastTootTimestamp": 1785113107765
+  },
+  "https://tedt.org/A-letter-to-the-Artisanal-Software-Craftsman/": {
+    "id": "/A-letter-to-the-Artisanal-Software-Craftsman/",
+    "title": "A Letter to the Artisanal Software Craftsman",
+    "summary": "A Letter to the Artisanal Software Craftsman",
+    "content_text": "A Letter to the Artisanal Software Craftsman https://tedt.org/A-letter-to-the-Artisanal-Software-Craftsman/",
+    "url": "https://tedt.org/A-letter-to-the-Artisanal-Software-Craftsman/",
+    "image": "https://tedt.org/img/2026-07/Artisanal-Software-Craftsman.webp",
+    "tags": [
+      "software craftsmanship",
+      "artisanal software development",
+      "AI-assisted development",
+      "software engineering",
+      "industrialization",
+      "operating model",
+      "engineering leadership",
+      "automation"
+    ],
+    "date_published": "2026-07-26T00:00:00-07:00",
+    "date_modified": "2026-07-26T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116990712379435945"
+    ],
+    "lastTootTimestamp": 1785136602567
+  },
+  "https://tedt.org/slides/ai-strategy-discussion-starters/": {
+    "id": "/slides/ai-strategy-discussion-starters/",
+    "title": "AI Strategy Discussion Starters",
+    "summary": "",
+    "content_text": "https://tedt.org/slides/ai-strategy-discussion-starters/",
+    "url": "https://tedt.org/slides/ai-strategy-discussion-starters/",
+    "image": "https://tedt.org/slides/decks/ai-strategy-discussion-starters/slide-preview.png",
+    "date_published": "2026-07-27T00:00:00-07:00",
+    "date_modified": "2026-07-27T00:00:00-07:00",
+    "author": {
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/profile/",
+      "uri": "https://tedt.org/profile/",
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "givenname": "Ted",
+      "familyname": "Tschopp",
+      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Чоп | تد شُپ | Թեդ Չոպպ | Ted Çop | டெட் சாப் | טעד טשאָפּ | Τεντ Τσοπ | 테드 촙 | 特德·察普 | テッド・チョッパ | ტედ ჩოპი | เท็ด ชอพ | ເທດ ຊອບ | ടെഡ് ചോപ്പ് | টেড চপ | ཏེཌ་ ཅོཔ། | ቴድ ቾፕ | ᏖᏗ ᏦᏇ | ᛏᛖᛞ ᛏᛋᚲᛟᛈᛈ | 𐌀𐌄𐌃 𐌕𐌔𐌂𐌏𐌐𐌐 | Ⱅⰵⰴ ⱌⱁⱂⱂ | ܬܝܕ ܟܘܦ | ᠲᠡᠳᠡᠳ ᠴᠣᠫ | ᑌᑎ ᒍᐳᐱ | ꕚꔳ ꗍꖛ | ߕߋߘ ߞߐߔߔ | 𐔓𐔖𐔆 𐔓𐔀𐔚𐔚 | 𐎚𐎄𐎆 𐎚𐎌𐎒𐎒 | 𐎄𐎓𐎆 𐎚𐎔𐎒𐎒 | 𐤕𐤄𐤃 𐤕𐤔𐤐𐤐 | 𐤕𐤃𐤄 𐤕𐤔𐤏𐤐 | 𐎚𐎄𐎆 𐎚𐎘𐎔𐎔 | 𒋼𒁺𒁍 𒋼𒊭𒉺𒉺 | 𓏏𓂧𓂝 𓏏𓊃𓍿𓊪 | ⲧⲉⲇ ⲧϣⲟⲡⲡ | 𐌕𐌄𐌃 𐌕𐌔𐌎𐌐𐌐 | 𐤈𐤃𐤄 𐤈𐤔𐤐𐤐 | 𐌕𐌄𐌃 𐌕𐌔𐌏𐌐𐌐 | 𐌕𐌄𐌃 𐌕𐌔𐌐𐌐 | 𐎄𐎕𐎆 𐎚𐎑𐎔𐎔 | 𐔓𐔖𐔆 𐔓𐔀𐔚𐔚 | 𐀳𐀂𐀅 𐀳𐀴𐀞 | 𐱃𐰀𐰓 𐱃𐰴𐰯 | 𑀢𑁂𑀤𑁆 𑀘𑁄𑀧𑁆 | 𐨟𐨂𐨡 𐨖𐨎𐨿 | 𐦚𐦱𐦟 𐦚𐦷𐦣 | 𐭓𐭐𐭃 𐭓𐭱𐭕𐭕 | 𐭲𐭩𐭣 𐭲𐭱𐭯𐭯 | ᚈᚓᚇ ᚈᚄᚉᚑᚚᚚ | 𒋼𒁺𒁍 𒋼𒊭𒉺𒉺 | ᛏᛖᛞ ᛏᛋᚲᛟᛈᛈ | تيد تشوب | ટેડ ચોક્પ | ਟੇਡ ਚੋਪ | ಟೆಡ್ ಚೊಪ್ | ටෙඩ් චොප් | တက် ချော့ပ် | តេដ ឆប | ꦠꦺꦢ꧀ ꦕꦺꦴꦥ꧀ | ᬢᭂᬤ᭄ ᬘᭀᬧ᭄ | ᜆᜒᜇ᜔ ᜆ᜔ᜐᜓᜉ᜔ | ᏖᏗ ᏣᏊ | ꄊꄮ ꍏꀠ | ଟେଡ୍ ଚୋପ୍ | ⵜⴻⴷ ⵛⵓⵒ | 𐐓𐐯𐐼 𐐟𐐙𐐱𐐹 | 𐑑𐑧𐑛 𐑗𐑪𐑐 | 𐘳𐘂𐘅 𐘳𐘴𐘞 | 𐠔𐠁𐠊 𐠔𐠷𐠡 | 𐊗𐊁𐊅 𐊗𐊐𐊓 | 𐊴𐊭𐊺 𐊴𐋄𐊸 | 𐢞𐢉𐢅 𐢞𐢝𐢘 | ࠕࠄࠃ ࠕࠔࠐࠐ | 𐫤𐫏𐫝 𐫤𐫘𐫖 | ꡈꡦ ꡐꡡꡌ | ꯇꯦꯗ ꯆꯣꯄ | ꨓꨯꨕ ꨌꨱꨚ | ᨲᩮᨯ᩠ ᨩᩮᩫ᩠ | ꪔꫀꪒ ꪊꪮꪚ | ᯖᯩᯑ᯲ ᯙᯬᯇ᯲ | ꥆꥍꤴ ꥓ꥏꥒ | ᨈᨙᨉᨛ ᨌᨚᨄᨛ | ᮒᮨᮓ᮪ ᮎᮧᮕ᮪ | ᜦᜒᜇ᜴ ᜰᜳᜉ᜴ | ᝆᝒᝇ᝔ ᝌᝓᝉ᝔ | ꠔꠦꠖ ꠌꠥꠙ | 𑂞𑂵𑂠 𑂒𑂷𑂣 | 𑆠𑆼𑆢𑇀 𑆖𑆾𑆥𑇀 | 𑚔𑚵𑚖 𑚏𑚴𑚞 | 𑲌𑲹𑲏 𑱰𑲿𑱱 | 𑊢𑋐𑊦 𑊓𑋒𑊪 | 𑈋𑈸𑈍𑈴 𑈑𑈺𑈞𑈴 | 𑅐𑅬𑅒 𑅘𑅺𑅛 | 𑘝𑘿𑘟 𑘓𑘽𑘨 | 𑜔𑜦𑜕 𑜒𑜩𑜞 | 𑣕𑣈𑣙 𑣌𑣏𑣗 | 𞠔𞠀𞠙 𞠌𞠁𞠖 | 𑫎𑫟𑫒 𑫏𑫝𑫐 | 𐓰𐒰𐓈 𐓍𐒷𐓄 | 𞤚𞤫𞤣 𞤷𞤮𞥄 | 𖫐𖫪𖫓 𖫗𖫩𖫞 | 𛰙𛱎𛰣 𛲄𛱖𛱐 |  ",
+      "biography": [
+        "I'm **Ted Tschopp**, a Senior Enterprise Architect based in Los Angeles, working at the intersection of **enterprise architecture, artificial intelligence, software strategy, and digital automation**.",
+        "At **Southern California Edison**, I help shape the architecture strategy for AI, software, and enterprise products that support one of the nation’s largest electric utilities. My work sits where **strategy meets execution**: platforms, guardrails, operating models, governance, risk, developer experience, and the practical realities of making ambitious technology useful, resilient, and sustainable inside a large organization.",
+        "I've spent **25+ years at SCE** helping teams navigate complex technology change. The part of enterprise architecture I care about most is not the diagram. It is the design discipline that makes systems usable, governable, sustainable, and welcoming for the people who depend on them and the teams who build them.",
+        "Before joining Edison, I owned a business featured in *Wired Magazine*, founded one of the largest J.R.R. Tolkien community websites, and worked in automotive market research. That mix of technology, storytelling, community-building, and analysis still shapes how I think about systems today.",
+        "I love working in technology because it lets me watch the future arrive in real time. Some of the things I have worked on were science fiction when I was in school. Now they are platform problems, governance problems, people problems, and architecture problems — which is where the interesting work begins.",
+        "Unless otherwise stated, everything here reflects my own views."
+      ],
+      "email": "ted@tschopp.org",
+      "phonenumber": null,
+      "keybaseio_username": "tedtschopp",
+      "twitter_username": "TedTschopp",
+      "twitter": "TedTschopp",
+      "github_username": "TedTschopp",
+      "linkedin_username": "tedtschopp",
+      "facebook_username": "ted.tschopp",
+      "google_username": "TedTschopp",
+      "youtube_username": "TedTschopp",
+      "pinterest_username": "TedTschopp",
+      "reddit_username": "tedtschopp",
+      "instagram_username": "tedtschopp",
+      "quora_username": "Ted-Tschopp",
+      "indiewebcamp_username": "Www.tedt.org",
+      "mastodon_username": "TedT@twit.social",
+      "mastodon_user_id": 109286944787814820,
+      "threads_username": "TedTschopp@threads.net",
+      "same_as": [
+        "https://www.linkedin.com/in/tedtschopp",
+        "https://github.com/TedTschopp",
+        "https://twit.social/@TedT",
+        "https://bsky.app/profile/tedt.org",
+        "https://twitter.com/TedTschopp",
+        "https://www.youtube.com/channel/UC4Q8pXroTVyXrIxg2u82pwg"
+      ],
+      "knows_about": [
+        "Enterprise architecture",
+        "Enterprise artificial intelligence",
+        "AI governance",
+        "Software and platform strategy",
+        "Digital automation",
+        "Technology-enabled organizational change",
+        "Digital communities and storytelling",
+        "Swiss folklore",
+        "Tabletop role-playing game design"
+      ],
+      "works_for": {
+        "name": "Southern California Edison",
+        "url": "https://www.sce.com/"
+      }
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/116996306407333822"
+    ],
+    "lastTootTimestamp": 1785221960709
+  },
+  "https://tedt.org/slides/principles-of-effective-architecture/": {
+    "id": "/slides/principles-of-effective-architecture/",
+    "title": "Principles of Effective Architecture",
+    "summary": "",
+    "content_text": "https://tedt.org/slides/principles-of-effective-architecture/",
+    "url": "https://tedt.org/slides/principles-of-effective-architecture/",
+    "image": "https://tedt.org/slides/decks/principles-of-effective-architecture/slide-preview.png",
+    "date_published": "2026-07-31T00:00:00-07:00",
+    "date_modified": "2026-07-31T00:00:00-07:00",
+    "author": {
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/profile/",
+      "uri": "https://tedt.org/profile/",
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "givenname": "Ted",
+      "familyname": "Tschopp",
+      "othernames": "Þeodor Tʃopp | टेड चप | Фёдор Чоп | تد شُپ | Թեդ Չոպպ | Ted Çop | டெட் சாப் | טעד טשאָפּ | Τεντ Τσοπ | 테드 촙 | 特德·察普 | テッド・チョッパ | ტედ ჩოპი | เท็ด ชอพ | ເທດ ຊອບ | ടെഡ് ചോപ്പ് | টেড চপ | ཏེཌ་ ཅོཔ། | ቴድ ቾፕ | ᏖᏗ ᏦᏇ | ᛏᛖᛞ ᛏᛋᚲᛟᛈᛈ | 𐌀𐌄𐌃 𐌕𐌔𐌂𐌏𐌐𐌐 | Ⱅⰵⰴ ⱌⱁⱂⱂ | ܬܝܕ ܟܘܦ | ᠲᠡᠳᠡᠳ ᠴᠣᠫ | ᑌᑎ ᒍᐳᐱ | ꕚꔳ ꗍꖛ | ߕߋߘ ߞߐߔߔ | 𐔓𐔖𐔆 𐔓𐔀𐔚𐔚 | 𐎚𐎄𐎆 𐎚𐎌𐎒𐎒 | 𐎄𐎓𐎆 𐎚𐎔𐎒𐎒 | 𐤕𐤄𐤃 𐤕𐤔𐤐𐤐 | 𐤕𐤃𐤄 𐤕𐤔𐤏𐤐 | 𐎚𐎄𐎆 𐎚𐎘𐎔𐎔 | 𒋼𒁺𒁍 𒋼𒊭𒉺𒉺 | 𓏏𓂧𓂝 𓏏𓊃𓍿𓊪 | ⲧⲉⲇ ⲧϣⲟⲡⲡ | 𐌕𐌄𐌃 𐌕𐌔𐌎𐌐𐌐 | 𐤈𐤃𐤄 𐤈𐤔𐤐𐤐 | 𐌕𐌄𐌃 𐌕𐌔𐌏𐌐𐌐 | 𐌕𐌄𐌃 𐌕𐌔𐌐𐌐 | 𐎄𐎕𐎆 𐎚𐎑𐎔𐎔 | 𐔓𐔖𐔆 𐔓𐔀𐔚𐔚 | 𐀳𐀂𐀅 𐀳𐀴𐀞 | 𐱃𐰀𐰓 𐱃𐰴𐰯 | 𑀢𑁂𑀤𑁆 𑀘𑁄𑀧𑁆 | 𐨟𐨂𐨡 𐨖𐨎𐨿 | 𐦚𐦱𐦟 𐦚𐦷𐦣 | 𐭓𐭐𐭃 𐭓𐭱𐭕𐭕 | 𐭲𐭩𐭣 𐭲𐭱𐭯𐭯 | ᚈᚓᚇ ᚈᚄᚉᚑᚚᚚ | 𒋼𒁺𒁍 𒋼𒊭𒉺𒉺 | ᛏᛖᛞ ᛏᛋᚲᛟᛈᛈ | تيد تشوب | ટેડ ચોક્પ | ਟੇਡ ਚੋਪ | ಟೆಡ್ ಚೊಪ್ | ටෙඩ් චොප් | တက် ချော့ပ် | តេដ ឆប | ꦠꦺꦢ꧀ ꦕꦺꦴꦥ꧀ | ᬢᭂᬤ᭄ ᬘᭀᬧ᭄ | ᜆᜒᜇ᜔ ᜆ᜔ᜐᜓᜉ᜔ | ᏖᏗ ᏣᏊ | ꄊꄮ ꍏꀠ | ଟେଡ୍ ଚୋପ୍ | ⵜⴻⴷ ⵛⵓⵒ | 𐐓𐐯𐐼 𐐟𐐙𐐱𐐹 | 𐑑𐑧𐑛 𐑗𐑪𐑐 | 𐘳𐘂𐘅 𐘳𐘴𐘞 | 𐠔𐠁𐠊 𐠔𐠷𐠡 | 𐊗𐊁𐊅 𐊗𐊐𐊓 | 𐊴𐊭𐊺 𐊴𐋄𐊸 | 𐢞𐢉𐢅 𐢞𐢝𐢘 | ࠕࠄࠃ ࠕࠔࠐࠐ | 𐫤𐫏𐫝 𐫤𐫘𐫖 | ꡈꡦ ꡐꡡꡌ | ꯇꯦꯗ ꯆꯣꯄ | ꨓꨯꨕ ꨌꨱꨚ | ᨲᩮᨯ᩠ ᨩᩮᩫ᩠ | ꪔꫀꪒ ꪊꪮꪚ | ᯖᯩᯑ᯲ ᯙᯬᯇ᯲ | ꥆꥍꤴ ꥓ꥏꥒ | ᨈᨙᨉᨛ ᨌᨚᨄᨛ | ᮒᮨᮓ᮪ ᮎᮧᮕ᮪ | ᜦᜒᜇ᜴ ᜰᜳᜉ᜴ | ᝆᝒᝇ᝔ ᝌᝓᝉ᝔ | ꠔꠦꠖ ꠌꠥꠙ | 𑂞𑂵𑂠 𑂒𑂷𑂣 | 𑆠𑆼𑆢𑇀 𑆖𑆾𑆥𑇀 | 𑚔𑚵𑚖 𑚏𑚴𑚞 | 𑲌𑲹𑲏 𑱰𑲿𑱱 | 𑊢𑋐𑊦 𑊓𑋒𑊪 | 𑈋𑈸𑈍𑈴 𑈑𑈺𑈞𑈴 | 𑅐𑅬𑅒 𑅘𑅺𑅛 | 𑘝𑘿𑘟 𑘓𑘽𑘨 | 𑜔𑜦𑜕 𑜒𑜩𑜞 | 𑣕𑣈𑣙 𑣌𑣏𑣗 | 𞠔𞠀𞠙 𞠌𞠁𞠖 | 𑫎𑫟𑫒 𑫏𑫝𑫐 | 𐓰𐒰𐓈 𐓍𐒷𐓄 | 𞤚𞤫𞤣 𞤷𞤮𞥄 | 𖫐𖫪𖫓 𖫗𖫩𖫞 | 𛰙𛱎𛰣 𛲄𛱖𛱐 |  ",
+      "biography": [
+        "I'm **Ted Tschopp**, a Senior Enterprise Architect based in Los Angeles, working at the intersection of **enterprise architecture, artificial intelligence, software strategy, and digital automation**.",
+        "At **Southern California Edison**, I help shape the architecture strategy for AI, software, and enterprise products that support one of the nation’s largest electric utilities. My work sits where **strategy meets execution**: platforms, guardrails, operating models, governance, risk, developer experience, and the practical realities of making ambitious technology useful, resilient, and sustainable inside a large organization.",
+        "I've spent **25+ years at SCE** helping teams navigate complex technology change. The part of enterprise architecture I care about most is not the diagram. It is the design discipline that makes systems usable, governable, sustainable, and welcoming for the people who depend on them and the teams who build them.",
+        "Before joining Edison, I owned a business featured in *Wired Magazine*, founded one of the largest J.R.R. Tolkien community websites, and worked in automotive market research. That mix of technology, storytelling, community-building, and analysis still shapes how I think about systems today.",
+        "I love working in technology because it lets me watch the future arrive in real time. Some of the things I have worked on were science fiction when I was in school. Now they are platform problems, governance problems, people problems, and architecture problems — which is where the interesting work begins.",
+        "Unless otherwise stated, everything here reflects my own views."
+      ],
+      "email": "ted@tschopp.org",
+      "phonenumber": null,
+      "keybaseio_username": "tedtschopp",
+      "twitter_username": "TedTschopp",
+      "twitter": "TedTschopp",
+      "github_username": "TedTschopp",
+      "linkedin_username": "tedtschopp",
+      "facebook_username": "ted.tschopp",
+      "google_username": "TedTschopp",
+      "youtube_username": "TedTschopp",
+      "pinterest_username": "TedTschopp",
+      "reddit_username": "tedtschopp",
+      "instagram_username": "tedtschopp",
+      "quora_username": "Ted-Tschopp",
+      "indiewebcamp_username": "Www.tedt.org",
+      "mastodon_username": "TedT@twit.social",
+      "mastodon_user_id": 109286944787814820,
+      "threads_username": "TedTschopp@threads.net",
+      "same_as": [
+        "https://www.linkedin.com/in/tedtschopp",
+        "https://github.com/TedTschopp",
+        "https://twit.social/@TedT",
+        "https://bsky.app/profile/tedt.org",
+        "https://twitter.com/TedTschopp",
+        "https://www.youtube.com/channel/UC4Q8pXroTVyXrIxg2u82pwg"
+      ],
+      "knows_about": [
+        "Enterprise architecture",
+        "Enterprise artificial intelligence",
+        "AI governance",
+        "Software and platform strategy",
+        "Digital automation",
+        "Technology-enabled organizational change",
+        "Digital communities and storytelling",
+        "Swiss folklore",
+        "Tabletop role-playing game design"
+      ],
+      "works_for": {
+        "name": "Southern California Edison",
+        "url": "https://www.sce.com/"
+      }
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117017477845703285"
+    ],
+    "lastTootTimestamp": 1785545011224
   }
 }

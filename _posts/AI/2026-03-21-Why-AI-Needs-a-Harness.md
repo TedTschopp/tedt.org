@@ -32,6 +32,7 @@ categories:
 - AI
 - Computers
 - Opinion
+- Enterprise Architecture
 
 tags:
 - ai agents

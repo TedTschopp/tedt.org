@@ -9,6 +9,7 @@ layout: null
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Stories of Switzerland</title>
+    <meta name="description" content="A collection of Swiss stories, folklore, and source notes curated by Ted Tschopp.">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="{{ site.url }}/css/gamma-world-cards.css" rel="stylesheet">
 
@@ -35,7 +36,8 @@ layout: null
             <td id="paper_printarea" class="tech-v">
                 <p><a href="{{ site.url }}/RPG/MCC-GW/">Back</a></p>
                 <figure>
-                    <img style="width: 100%; mix-blend-mode: multiply;" class="img-responsive img-thumbnail" src="{{ site.url }}/RPG/MCC-GW/images/GammaWorldHeaderEdited.webp" alt="Gamma World header art" id="jscii-element-image">
+                    {% assign _stories_header = site.url | append: '/RPG/MCC-GW/images/GammaWorldHeaderEdited.webp' %}
+                    {% include utility/responsive-image.html src=_stories_header alt="Gamma World header art" id="jscii-element-image" class="img-responsive img-thumbnail" style="width: 100%; mix-blend-mode: multiply;" sizes="100vw" lcp=true %}
                     <pre id="ascii-container-image"></pre>
                     <figcaption>Stories of Switzerland</figcaption>
                 </figure>
