@@ -12,10 +12,12 @@ const pages = [
   '/prompts/business-case-and-requirements-assistant/',
   '/assessments/',
   '/assessments/ai-coding-maturity-assessment/',
+  '/assessments/enterprise-ai-maturity-assessment/',
 ];
 const responsiveAssessmentPages = [
   '/assessments/',
   '/assessments/ai-coding-maturity-assessment/',
+  '/assessments/enterprise-ai-maturity-assessment/',
 ];
 
 // Selectors based on existing markup

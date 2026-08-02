@@ -22,3 +22,30 @@
       label: "Control Criteria"
   published_at: "2026-08-01T15:16:19-07:00"
   modified_at: "2026-08-01T18:14:42-07:00"
+
+- slug: enterprise-ai-maturity-assessment
+  order: 20
+  title: "Enterprise AI Maturity Assessment for Your Value Stream"
+  eyebrow: "Enterprise AI"
+  version: "2.0"
+  stage: beta
+  kind: "Enterprise Value-Stream Maturity Assessment"
+  description: "Assess how safely AI can own work in a major enterprise value stream, validate the evidence across Levels 0–5, and get a People, Process and Technology action plan."
+  permalink: /assessments/enterprise-ai-maturity-assessment/
+  image: /assessments/enterprise-ai-maturity-assessment/enterprise-ai-maturity-assessment-social.png
+  image_alt: "Enterprise AI Maturity Assessment from TedT.org with a six-step path for Levels 0 through 5 and guidance tailored to a selected value stream."
+  image_width: 1200
+  image_height: 630
+  scope: "One enterprise value stream, business unit or team, qualified work class, risk tier and evidence window"
+  privacy: "Responses stay in the browser unless the participant exports them; the assessment does not send responses to a server."
+  measures:
+    - value: "29"
+      label: "Enterprise Value Streams"
+    - value: "7"
+      label: "Operating Axes"
+    - value: "50"
+      label: "Capability Ratings"
+    - value: "31"
+      label: "Control Criteria"
+  published_at: "2026-08-01T20:41:23-07:00"
+  modified_at: "2026-08-01T20:41:23-07:00"

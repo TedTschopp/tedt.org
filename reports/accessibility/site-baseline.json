@@ -45,6 +45,12 @@
     "blockingViolations": []
   },
   {
+    "label": "Enterprise AI Maturity Assessment",
+    "route": "/assessments/enterprise-ai-maturity-assessment/",
+    "blockingViolationCount": 0,
+    "blockingViolations": []
+  },
+  {
     "label": "Profile",
     "route": "/profile/",
     "blockingViolationCount": 0,
