@@ -2,8 +2,8 @@
 layout: null
 permalink: /assessments/ai-coding-maturity-assessment/
 web_published_at: "2026-08-01T15:16:19-07:00"
-web_modified_at: "2026-08-01T15:16:19-07:00"
-last_modified: "2026-08-01T15:16:19-07:00"
+web_modified_at: "2026-08-01T18:14:42-07:00"
+last_modified: "2026-08-01T18:14:42-07:00"
 ---
 <!doctype html>
 <html lang="en" prefix="og: https://ogp.me/ns#" data-bs-theme="light" data-color-scheme="auto">
@@ -2284,6 +2284,13 @@ progress::-moz-progress-bar {
   font-size: .88rem;
 }
 
+.plan-category__subheading {
+  margin: 1rem 0 .65rem;
+  font-family: var(--font-sans);
+  font-size: .92rem;
+  font-weight: 800;
+}
+
 .leadership-brief {
   margin: 1rem 0;
   padding: 1rem;
@@ -2392,6 +2399,32 @@ progress::-moz-progress-bar {
   font-size: var(--font-size-min);
 }
 
+.later-roadmap {
+  margin-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.later-roadmap > summary {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+  color: var(--link-color);
+  cursor: pointer;
+  font-size: .9rem;
+  font-weight: 800;
+}
+
+.later-roadmap__body {
+  padding-top: .25rem;
+}
+
+.later-roadmap__body > p {
+  max-width: 82ch;
+  margin: 0 0 .75rem;
+  color: var(--text-muted);
+  font-size: .88rem;
+}
+
 .result-note {
   margin-top: 1rem;
   padding: 1rem;
@@ -2440,6 +2473,11 @@ progress::-moz-progress-bar {
 .results-table tbody th {
   color: var(--text-body);
   font-weight: 750;
+}
+
+.results-table .is-target-row th,
+.results-table .is-target-row td {
+  background: var(--surface-soft);
 }
 
 .roles-details > summary {
@@ -3873,10 +3911,22 @@ progress::-moz-progress-bar {
 
     const entryGatePass = {};
     const cumulativeGatePass = {};
+    const cumulativeControlSummary = {};
     for (let level = 1; level <= 5; level += 1) {
       entryGatePass[level] = gateIdsByLevel[level].every((gateId) => normalizedGates[gateId] === "pass");
       cumulativeGatePass[level] = entryGatePass[level]
         && (level === 1 || cumulativeGatePass[level - 1]);
+      const cumulativeIds = DATA.advancementGates
+        .filter((gate) => gate.entryLevel <= level)
+        .map((gate) => gate.id);
+      cumulativeControlSummary[level] = {
+        required: cumulativeIds.length,
+        demonstrated: cumulativeIds.filter((gateId) => normalizedGates[gateId] === "pass").length,
+        partial: cumulativeIds.filter((gateId) => normalizedGates[gateId] === "partial").length,
+        notDemonstrated: cumulativeIds.filter((gateId) => normalizedGates[gateId] === "fail").length,
+        notAssessed: cumulativeIds.filter((gateId) => normalizedGates[gateId] === "not-assessed").length,
+        authorized: cumulativeGatePass[level],
+      };
     }
 
     const dimensionsMeet = (level) => DATA.dimensions.every((dimension) => {
@@ -3900,7 +3950,9 @@ progress::-moz-progress-bar {
           break;
         }
       }
-      if (validatedLevel === null) validatedLevel = 0;
+      const levelOneBaseEligible = observedLevel >= 1
+        && capabilityNumerator >= THRESHOLDS[1].capabilityIndex * 25;
+      if (validatedLevel === null && !levelOneBaseEligible) validatedLevel = 0;
     }
 
     return {
@@ -3919,8 +3971,10 @@ progress::-moz-progress-bar {
       normalizedGates,
       entryGatePass,
       cumulativeGatePass,
+      cumulativeControlSummary,
       validatedLevel,
-      minimumTargetMet: validatedLevel === null ? null : validatedLevel >= 4,
+      validationEstablished: coreComplete && validatedLevel !== null,
+      minimumTargetMet: coreComplete ? validatedLevel !== null && validatedLevel >= 4 : null,
     };
   }
 
@@ -4192,6 +4246,17 @@ progress::-moz-progress-bar {
     return dimension.keyControlDimension ? 90 : 80;
   }
 
+  function targetAuthorizationStatus(result, targetLevel) {
+    if (!result.coreComplete) return "incomplete";
+    if (result.validatedLevel === null) return "control-validation-not-established";
+    if (result.validatedLevel >= targetLevel) return "authorized";
+    return "not-authorized";
+  }
+
+  function controlStatusLabel(status) {
+    return GATE_SURVEY_LABELS[status] || "Not Assessed";
+  }
+
   function relatedTransitionActions(gateId) {
     return (REPORT_GUIDANCE.gateActionIds?.[gateId] || [])
       .map((actionId) => transitionActionById[actionId])
@@ -4199,10 +4264,13 @@ progress::-moz-progress-bar {
   }
 
   function buildImmediateBlockers(result, targetLevel) {
-    if (!result.coreComplete || result.validatedLevel === null) return { nextLevel: null, blockers: [] };
-    if (result.validatedLevel >= targetLevel) return { nextLevel: null, blockers: [] };
+    if (!result.coreComplete) return { nextLevel: null, blockers: [] };
+    if (result.validatedLevel !== null && result.validatedLevel >= targetLevel) {
+      return { nextLevel: null, blockers: [] };
+    }
 
-    const nextLevel = Math.min(result.validatedLevel + 1, targetLevel);
+    const validationBaseLevel = result.validatedLevel ?? 0;
+    const nextLevel = Math.min(validationBaseLevel + 1, targetLevel);
     const blockers = [];
 
     DATA.placementAxes.forEach((axis) => {
@@ -4288,6 +4356,11 @@ progress::-moz-progress-bar {
         const evidenceFirst = status === "not-assessed"
           ? [`Assign an evidence owner. Review the records listed below before deciding whether a new control must be built.`]
           : [];
+        const completionApproach = status === "partial"
+          ? ["Preserve the portions that already operate. Identify the missing, outdated, or inconsistent elements and close only those gaps."]
+          : status === "fail"
+            ? ["Establish the missing control, assign its accountable human owner, and test it on representative work."]
+            : [];
         const guidanceRoles = guidance.requiredRoles || [];
         const accountableHumanRole = actions[0]?.accountableHumanRole || guidanceRoles[0] || "Named Human Control Owner";
         const collaboratingRoles = uniqueStrings([
@@ -4306,7 +4379,12 @@ progress::-moz-progress-bar {
           verify: guidance.verify || [gate.passCriteria],
           removalActions: uniqueStrings([
             evidenceFirst,
-            actions.length ? actions.map((action) => `${action.id}: ${action.action}`) : [gate.blockingAction],
+            completionApproach,
+            actions.length
+              ? actions.map((action) => status === "partial"
+                ? `Complete and evidence the remaining work for ${action.id}: ${action.action}`
+                : `${action.id}: ${action.action}`)
+              : [gate.blockingAction],
           ]),
           accountableHumanRole,
           collaboratingRoles,
@@ -4373,17 +4451,20 @@ progress::-moz-progress-bar {
   }
 
   function buildPathActions(validatedLevel, targetLevel) {
-    if (validatedLevel === null || validatedLevel >= targetLevel) return [];
+    const validationBaseLevel = validatedLevel ?? 0;
+    if (validationBaseLevel >= targetLevel) return [];
     return DATA.transitionActions.filter((action) => {
       const [fromLevel, toLevel] = action.transition.split(" -> ").map(Number);
-      return fromLevel >= validatedLevel && toLevel <= targetLevel;
+      return fromLevel >= validationBaseLevel && toLevel <= targetLevel;
     });
   }
 
-  function buildExecutiveActionPlan(pathActions, capabilityActions) {
+  function buildExecutiveActionPlan(pathActions, capabilityActions, nextLevel) {
     const groups = Object.fromEntries(ACTION_CATEGORY_ORDER.map((category) => [category, {
       category,
       programActions: [],
+      immediateProgramActions: [],
+      roadmapActions: [],
       capabilityActions: [],
       remainingCapabilityCount: 0,
     }]));
@@ -4392,15 +4473,23 @@ progress::-moz-progress-bar {
       const relatedGateIds = Object.entries(REPORT_GUIDANCE.gateActionIds || {})
         .filter(([, actionIds]) => actionIds.includes(action.id))
         .map(([gateId]) => gateId);
-      groups[action.category].programActions.push({
+      const relatedStatuses = relatedGateIds.map((gateId) => state.gates[gateId] || "not-assessed");
+      const statusPriority = ["fail", "partial", "not-assessed", "pass"];
+      const assessmentStatus = statusPriority.find((status) => relatedStatuses.includes(status)) || null;
+      const enrichedAction = {
         ...action,
         kind: "program",
         relatedGateIds,
+        assessmentStatus,
         proofRequired: uniqueStrings([
           action.doneWhen,
           relatedGateIds.map((gateId) => gateById[gateId]?.passCriteria),
         ]),
-      });
+      };
+      groups[action.category].programActions.push(enrichedAction);
+      const [, toLevel] = action.transition.split(" -> ").map(Number);
+      if (toLevel === nextLevel) groups[action.category].immediateProgramActions.push(enrichedAction);
+      else groups[action.category].roadmapActions.push(enrichedAction);
     });
 
     ACTION_CATEGORY_ORDER.forEach((category) => {
@@ -4450,6 +4539,22 @@ progress::-moz-progress-bar {
     `;
   }
 
+  function programActionFinding(item) {
+    if (item.assessmentStatus === "partial") {
+      return "Related controls are partly demonstrated. Preserve what already works, then close the missing operating or evidence requirements.";
+    }
+    if (item.assessmentStatus === "fail") {
+      return "A related control is not demonstrated. Establish and test the required practice before requesting authorization.";
+    }
+    if (item.assessmentStatus === "not-assessed") {
+      return "Related controls have not been assessed. Verify existing evidence before funding new work.";
+    }
+    if (item.assessmentStatus === "pass") {
+      return "Related controls are demonstrated. Confirm that the action deliverable remains current before treating this work as complete.";
+    }
+    return "This roadmap action is not mapped to a scored control. Confirm its need during transition planning.";
+  }
+
   function renderPlanActionCard(item, targetLevel) {
     if (item.kind === "capability") {
       return `
@@ -4478,6 +4583,7 @@ progress::-moz-progress-bar {
         ${renderActorScope(item.actorScope, "", true)}
         <dl class="plan-action-card__details">
           <div><dt>Path Step</dt><dd>Level ${escapeHtml(item.transition.replace(" -> ", " to Level "))} · ${escapeHtml(item.phase)}</dd></div>
+          <div><dt>Assessment Finding</dt><dd>${escapeHtml(programActionFinding(item))}</dd></div>
           <div><dt>Accountable Human Role</dt><dd>${escapeHtml(item.accountableHumanRole)}</dd></div>
           ${item.collaboratorRoles.length ? `<div><dt>Collaborating Roles</dt><dd>${escapeHtml(item.collaboratorRoles.join("; "))}</dd></div>` : ""}
           <div><dt>Expected Artifact</dt><dd>${escapeHtml(item.deliverable)}</dd></div>
@@ -4488,15 +4594,17 @@ progress::-moz-progress-bar {
     `;
   }
 
-  function renderExecutiveActionPlan(plan, targetLevel) {
+  function renderExecutiveActionPlan(plan, targetLevel, nextLevel) {
     const targetPlan = REPORT_GUIDANCE.levelPlans?.[String(targetLevel)] || {};
+    const immediatePlan = REPORT_GUIDANCE.levelPlans?.[String(nextLevel || targetLevel)] || targetPlan;
     return `
       <div class="executive-action-plan">
         ${ACTION_CATEGORY_ORDER.map((category, index) => {
           const group = plan[category];
           const categoryGuidance = REPORT_GUIDANCE.actionCategories?.[category] || {};
           const levelGuidance = targetPlan[category] || {};
-          const allItems = [...group.programActions, ...group.capabilityActions];
+          const immediateGuidance = immediatePlan[category] || levelGuidance;
+          const immediateItems = [...group.immediateProgramActions, ...group.capabilityActions];
           return `
             <section class="plan-category plan-category--${category}" aria-labelledby="plan-${category}-title">
               <header class="plan-category__header">
@@ -4507,17 +4615,30 @@ progress::-moz-progress-bar {
                 </div>
               </header>
               <div class="leadership-brief">
-                <p><strong>Level ${targetLevel} Objective.</strong> ${escapeHtml(levelGuidance.objective || "Maintain clear ownership and evidence for this part of the operating model.")}</p>
-                <h5>What Leaders Should Do</h5>
-                ${renderTextList(levelGuidance.leaderActions || [categoryGuidance.leaderDirection], true)}
-                <p><strong>Evidence Leaders Should Expect.</strong> ${escapeHtml(levelGuidance.evidence || "Named owners, completed work, and retained operating evidence.")}</p>
+                <p><strong>${nextLevel ? `Immediate Level ${nextLevel} Objective` : `Level ${targetLevel} Objective`}.</strong> ${escapeHtml(immediateGuidance.objective || "Maintain clear ownership and evidence for this part of the operating model.")}</p>
+                <h5>What Leaders Should Do Now</h5>
+                ${renderTextList(immediateGuidance.leaderActions || [categoryGuidance.leaderDirection], true)}
+                <p><strong>Evidence Leaders Should Expect Now.</strong> ${escapeHtml(immediateGuidance.evidence || "Named owners, completed work, and retained operating evidence.")}</p>
               </div>
-              ${allItems.length ? `
+              <h5 class="plan-category__subheading">Immediate Priorities${nextLevel ? ` · Level ${nextLevel}` : ""}</h5>
+              ${immediateItems.length ? `
                 <ul class="plan-action-list">
-                  ${allItems.map((item) => renderPlanActionCard(item, targetLevel)).join("")}
+                  ${immediateItems.map((item) => renderPlanActionCard(item, nextLevel || targetLevel)).join("")}
                 </ul>
-              ` : `<p class="plan-category__empty">No additional assessment-specific action is listed in this category. Continue the leadership practices above.</p>`}
+              ` : `<p class="plan-category__empty">No additional immediate action is listed in this category. Continue the leadership practices above.</p>`}
               ${group.remainingCapabilityCount ? `<p class="plan-category__more">${group.remainingCapabilityCount} additional capability ${group.remainingCapabilityCount === 1 ? "gap is" : "gaps are"} documented in the blocker section.</p>` : ""}
+              ${group.roadmapActions.length ? `
+                <details class="later-roadmap">
+                  <summary>Later Roadmap to Level ${targetLevel} · ${group.roadmapActions.length} ${group.roadmapActions.length === 1 ? "Action" : "Actions"}</summary>
+                  <div class="later-roadmap__body">
+                    <p><strong>Target-Level Direction.</strong> ${escapeHtml(levelGuidance.objective || "Prepare the later transition only after the immediate controls are demonstrated.")}</p>
+                    <p>These are sequencing dependencies, not current assignments. Reassess them after the immediate transition is control-validated.</p>
+                    <ul class="plan-action-list">
+                      ${group.roadmapActions.map((item) => renderPlanActionCard(item, targetLevel)).join("")}
+                    </ul>
+                  </div>
+                </details>
+              ` : ""}
             </section>
           `;
         }).join("")}
@@ -4590,27 +4711,34 @@ progress::-moz-progress-bar {
     const targetLevel = state.meta.targetLevel;
     const targetReached = result.validatedLevel !== null && result.validatedLevel >= targetLevel;
     const { nextLevel, blockers } = buildImmediateBlockers(result, targetLevel);
-    const capabilityActions = buildCapabilityActions(result, targetLevel);
+    const capabilityActions = buildCapabilityActions(result, nextLevel || targetLevel);
     const pathActions = buildPathActions(result.validatedLevel, targetLevel);
-    const executiveActionPlan = buildExecutiveActionPlan(pathActions, capabilityActions);
+    const executiveActionPlan = buildExecutiveActionPlan(pathActions, capabilityActions, nextLevel);
     const statusText = "Assessment Complete";
-    const validatedLabel = result.validatedLevel === null ? "Not assessed" : `Level ${result.validatedLevel}`;
+    const validatedLabel = result.validatedLevel === null ? "Not Established" : `Level ${result.validatedLevel}`;
     const observedLabel = result.observedLevel === null ? "Incomplete" : `Level ${result.observedLevel}`;
     const capabilityLabel = result.capabilityIndex === null ? "Incomplete" : result.capabilityIndex.toFixed(1);
-    const targetLabel = result.validatedLevel === null ? "Pending" : targetReached ? "Met" : "Not yet";
-    const activeLevel = result.validatedLevel ?? 0;
+    const targetLabel = targetReached ? "Authorized" : "Not Authorized";
+    const activeLevel = result.validatedLevel ?? result.observedLevel ?? 0;
     const activeDefinition = DATA.levels[activeLevel];
     const actionLevel = targetLevel;
+    const targetControlSummary = result.cumulativeControlSummary[targetLevel];
+    const authorizationStatus = targetAuthorizationStatus(result, targetLevel);
+    const resultHeading = result.validatedLevel === null
+      ? `${observedLabel} Behavior Is Observed; Control Validation Is Not Established`
+      : `Your Control-Validated Result Is ${validatedLabel}`;
     const planScope = targetReached
       ? `Sustain Level ${targetLevel}`
-      : `Level ${result.validatedLevel} to Level ${targetLevel}`;
+      : result.validatedLevel === null
+        ? `Control validation not established · Roadmap to Level ${targetLevel}`
+        : `Level ${result.validatedLevel} to Level ${targetLevel}`;
 
     return `
       <section class="panel" data-panel="results" aria-labelledby="panel-heading">
         <header class="panel__header">
           <p class="panel__kicker">Stage 5 · Evidence-Based Result</p>
           <span class="results-status${complete ? " is-complete" : ""}">${escapeHtml(statusText)}</span>
-          <h2 id="panel-heading" tabindex="-1">Your Validated Result Is ${validatedLabel}</h2>
+          <h2 id="panel-heading" tabindex="-1">${escapeHtml(resultHeading)}</h2>
           <p class="panel__intro">${escapeHtml(state.meta.team || "This team")} · ${escapeHtml(state.meta.product || "Product not named")} · ${escapeHtml(state.meta.workload || "Workload class not named")}</p>
         </header>
 
@@ -4634,20 +4762,21 @@ progress::-moz-progress-bar {
             <span class="metric-card__detail">${result.capabilityComplete ? "Weighted 0–100" : `${result.capabilityAnswered}/50 rated`}</span>
           </article>
           <article class="metric-card">
-            <span class="metric-card__label">Validated Level</span>
+            <span class="metric-card__label">Control-Validated Level</span>
             <span class="metric-card__value">${validatedLabel}</span>
-            <span class="metric-card__detail">${result.gatesPassed}/31 gates passed · ${result.gatesAssessed}/31 assessed</span>
+            <span class="metric-card__detail">${targetControlSummary.demonstrated}/${targetControlSummary.required} cumulative controls demonstrated through Level ${targetLevel}</span>
           </article>
           <article class="metric-card metric-card--milestone">
             <span class="metric-card__label">Target · Level ${targetLevel}</span>
             <span class="metric-card__value">${targetLabel}</span>
-            <span class="metric-card__detail">${targetReached ? "Maintain controls and reassess" : "Complete the requirements for the next level"}</span>
+            <span class="metric-card__detail">${targetReached ? "Maintain controls and reassess" : `${targetControlSummary.partial} partly demonstrated · close the next cumulative control set first`}</span>
           </article>
         </div>
 
         <div class="result-note">
-          <strong>${escapeHtml(activeDefinition.label)}.</strong>
+          <strong>Observed ${observedLabel} · ${escapeHtml(activeDefinition.label)}.</strong>
           ${escapeHtml(activeDefinition.dominantBehavior)} Human role: ${escapeHtml(activeDefinition.humanRole)}. Review locus: ${escapeHtml(activeDefinition.humanReviewLocus)}.
+          ${authorizationStatus === "control-validation-not-established" ? " The operating behavior and capability threshold do not establish authorization without demonstrated cumulative controls." : ""}
         </div>
 
         <section class="result-section" aria-labelledby="dimensions-title">
@@ -4678,19 +4807,18 @@ progress::-moz-progress-bar {
 
         <section class="result-section" aria-labelledby="gates-title">
           <div class="result-section__heading">
-            <h3 id="gates-title">Cumulative Gate Status</h3>
-            <p>Only exact Pass counts toward validation.</p>
+            <h3 id="gates-title">Cumulative Control Status</h3>
+            <p>Only Demonstrated authorizes a control. Partly Demonstrated records progress without granting authorization.</p>
           </div>
-          <div class="table-wrap" role="region" aria-label="Advancement gate status table" tabindex="0">
+          <div class="table-wrap" role="region" aria-label="Cumulative control status table" tabindex="0">
             <table class="results-table">
-              <caption>Advancement Gate Pass Status by Entry Level</caption>
-              <thead><tr><th scope="col">Entry Level</th><th scope="col">Passed</th><th scope="col">Required</th><th scope="col">Cumulative Status</th></tr></thead>
+              <caption>Cumulative Control Evidence Through Each Level</caption>
+              <thead><tr><th scope="col">Through Level</th><th scope="col">Demonstrated</th><th scope="col">Partly Demonstrated</th><th scope="col">Not Demonstrated</th><th scope="col">Not Assessed</th><th scope="col">Required</th><th scope="col">Authorization Status</th></tr></thead>
               <tbody>
                 ${[1, 2, 3, 4, 5].map((level) => {
-                  const ids = gateIdsByLevel[level];
-                  const passed = ids.filter((id) => state.gates[id] === "pass").length;
-                  const cumulative = result.cumulativeGatePass[level] ? "PASS" : "NOT READY";
-                  return `<tr><th scope="row">Level ${level}</th><td>${passed}</td><td>${ids.length}</td><td><span class="status-chip status-chip--${result.cumulativeGatePass[level] ? "pass" : "not-ready"}">${cumulative}</span></td></tr>`;
+                  const summary = result.cumulativeControlSummary[level];
+                  const cumulative = summary.authorized ? "AUTHORIZED" : "NOT AUTHORIZED";
+                  return `<tr${level === targetLevel ? " class=\"is-target-row\"" : ""}><th scope="row">Level ${level}${level === targetLevel ? " · Target" : ""}</th><td>${summary.demonstrated}</td><td>${summary.partial}</td><td>${summary.notDemonstrated}</td><td>${summary.notAssessed}</td><td>${summary.required}</td><td><span class="status-chip status-chip--${summary.authorized ? "pass" : "not-ready"}">${cumulative}</span></td></tr>`;
                 }).join("")}
               </tbody>
             </table>
@@ -4700,7 +4828,7 @@ progress::-moz-progress-bar {
         <section class="result-section" aria-labelledby="blockers-title">
           <div class="result-section__heading">
             <h3 id="blockers-title">${targetReached ? `Level ${targetLevel} Target Reached` : nextLevel ? `What Blocks Level ${nextLevel}` : "What Remains Unanswered"}</h3>
-            <p>${targetReached ? "Validated for this workload class." : "Meet these requirements before assessing the next level."}</p>
+            <p>${targetReached ? "Control-validated for this workload class." : "Close these immediate requirements first. Later transitions remain roadmap work."}</p>
           </div>
           ${renderExecutiveBlockers(blockers, targetReached
             ? `The selected Level ${targetLevel} target is validated. Keep the evidence window current and requalify after material model, tool, architecture, or risk changes.`
@@ -4710,12 +4838,12 @@ progress::-moz-progress-bar {
         <section class="result-section" aria-labelledby="actions-title">
           <div class="result-section__heading">
             <h3 id="actions-title">People, Process, and Technology Action Plan</h3>
-            <p>${escapeHtml(planScope)} · Program actions retain their original sequence and dependencies</p>
+            <p>${escapeHtml(planScope)} · Immediate priorities are separated from later roadmap work</p>
           </div>
           <div class="result-note result-note--executive">
-            This plan is written for the leaders who fund, staff, authorize, and review the work. Start with the blockers for Level ${nextLevel || targetLevel}. Then complete the program actions in sequence. Assessment priorities identify the lowest-rated practices that need direct attention.
+            This plan is written for the leaders who fund, staff, authorize, and review the work. Start with the blockers and immediate priorities for Level ${nextLevel || targetLevel}. Later transitions are sequencing guidance, not current assignments.
           </div>
-          ${renderExecutiveActionPlan(executiveActionPlan, targetLevel)}
+          ${renderExecutiveActionPlan(executiveActionPlan, targetLevel, nextLevel)}
         </section>
 
         <section class="result-section" aria-labelledby="roles-title">
@@ -5042,9 +5170,9 @@ progress::-moz-progress-bar {
     if (complete) {
       const targetLevel = state.meta.targetLevel;
       const { nextLevel, blockers } = buildImmediateBlockers(result, targetLevel);
-      const capabilityActions = buildCapabilityActions(result, targetLevel);
+      const capabilityActions = buildCapabilityActions(result, nextLevel || targetLevel);
       const pathActions = buildPathActions(result.validatedLevel, targetLevel);
-      const plan = buildExecutiveActionPlan(pathActions, capabilityActions);
+      const plan = buildExecutiveActionPlan(pathActions, capabilityActions, nextLevel);
       const targetPlan = REPORT_GUIDANCE.levelPlans?.[String(targetLevel)] || {};
       recommendations = {
         guidanceVersion: REPORT_GUIDANCE.version,
@@ -5056,6 +5184,8 @@ progress::-moz-progress-bar {
           title: REPORT_GUIDANCE.actionCategories?.[category]?.title || category,
           leadershipBrief: targetPlan[category] || null,
           programActions: plan[category].programActions,
+          immediateProgramActions: plan[category].immediateProgramActions,
+          laterRoadmapActions: plan[category].roadmapActions,
           capabilityActions: plan[category].capabilityActions,
           additionalCapabilityGapsDocumentedInBlockers: plan[category].remainingCapabilityCount,
         })),
@@ -5134,6 +5264,9 @@ progress::-moz-progress-bar {
         profileAverage: result.profileAverage,
         capabilityIndex: result.capabilityIndex,
         validatedLevel: result.validatedLevel,
+        controlValidatedLevel: result.validatedLevel,
+        validationEstablished: result.validationEstablished,
+        targetAuthorizationStatus: targetAuthorizationStatus(result, state.meta.targetLevel),
         minimumLevel4TargetMet: result.minimumTargetMet,
         selectedTargetLevel: state.meta.targetLevel,
         gatesPassed: result.gatesPassed,
@@ -5141,6 +5274,7 @@ progress::-moz-progress-bar {
         dimensionScores: result.dimensionScores,
         entryGatePass: result.entryGatePass,
         cumulativeGatePass: result.cumulativeGatePass,
+        cumulativeControlSummary: result.cumulativeControlSummary,
       } : {
         status: "withheld-until-complete",
         answered: result.axisAnswered + result.capabilityAnswered + result.gatesAssessed,
@@ -5437,15 +5571,17 @@ progress::-moz-progress-bar {
 
   async function copySummary() {
     const result = scoreAssessment();
+    const targetSummary = result.cumulativeControlSummary[state.meta.targetLevel];
     const text = [
       "AI Maturity Assessment for Your Team",
       `${state.meta.team || "Team not named"} · ${state.meta.product || "Product not named"}`,
       `Workload: ${state.meta.workload || "Not named"}`,
       `Observed pattern: ${result.observedLevel === null ? "Incomplete" : `Level ${result.observedLevel}`}`,
       `Capability index: ${result.capabilityIndex === null ? "Incomplete" : result.capabilityIndex.toFixed(1)}`,
-      `Validated level: ${result.validatedLevel === null ? "Not assessed" : `Level ${result.validatedLevel}`}`,
-      `Gates: ${result.gatesPassed}/31 passed; ${result.gatesAssessed}/31 assessed`,
+      `Control-validated level: ${result.validatedLevel === null ? "Not established" : `Level ${result.validatedLevel}`}`,
+      `Controls through Level ${state.meta.targetLevel}: ${targetSummary.demonstrated} ${controlStatusLabel("pass")}; ${targetSummary.partial} ${controlStatusLabel("partial")}; ${targetSummary.notDemonstrated} ${controlStatusLabel("fail")}; ${targetSummary.notAssessed} ${controlStatusLabel("not-assessed")}`,
       `Selected target: Level ${state.meta.targetLevel}`,
+      `Target authorization: ${targetSummary.authorized ? "Authorized" : "Not authorized"}`,
       "Result is scoped to this workload class and is a decision aid, not a certification.",
     ].join("\n");
     try {
