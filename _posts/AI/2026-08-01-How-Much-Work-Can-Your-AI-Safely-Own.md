@@ -105,6 +105,8 @@ Calling it a factory describes a method of work explicit enough to observe, test
 | Release approval               | Business authority to act                                                               | Who may accept the outcome and under what limit?                       |
 | Deployment and production      | Action inside the operating value stream                                                | What people, records, money, customers or physical systems can change? |
 | Rollback and incident response | Containment, reversal, correction and recovery                                          | Can the organization stop and recover before harm spreads?             |
+{: .table .table-striped .table-bordered .table-hover }
+
 
 Each part of the modern enterprise has its own names for the same mechanism.
 
