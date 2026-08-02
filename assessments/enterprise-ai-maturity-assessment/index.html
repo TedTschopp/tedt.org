@@ -3956,9 +3956,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
       evidenceWindow: EVIDENCE_WINDOWS.has(meta.evidenceWindow)
         ? meta.evidenceWindow
         : "Last 8–12 weeks",
-      targetLevel: Number.isInteger(meta.targetLevel) && meta.targetLevel >= 1 && meta.targetLevel <= 5
-        ? meta.targetLevel
-        : DATA.defaultTargetLevel,
+      targetLevel: normalizedTargetLevel(meta.targetLevel) ?? DATA.defaultTargetLevel,
       notes: text(meta.notes),
     };
 
@@ -4209,6 +4207,17 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
 
   function isScore(value) {
     return VALID_SCORES.has(value);
+  }
+
+  function normalizedTargetLevel(value) {
+    switch (value) {
+      case 1: return 1;
+      case 2: return 2;
+      case 3: return 3;
+      case 4: return 4;
+      case 5: return 5;
+      default: return null;
+    }
   }
 
   function isPlainObject(value) {
@@ -5114,7 +5123,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
         <summary>Show Role Expectations and Decision Boundaries</summary>
         <div class="table-wrap" role="region" aria-label="Role coverage table" tabindex="0">
           <table class="results-table">
-            <caption>Role Coverage for Level ${level || state.meta.targetLevel}</caption>
+            <caption>Role Coverage for Level ${escapeHtml(level || state.meta.targetLevel)}</caption>
             <thead><tr><th scope="col">Role</th><th scope="col">Expected Contribution</th><th scope="col">Decision Boundary</th></tr></thead>
             <tbody>
               ${DATA.roles.map((role) => `
@@ -5638,7 +5647,9 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
   function handleFieldInput(target) {
     let rerenderResult = false;
     if (target.name && Object.hasOwn(state.meta, target.name)) {
-      state.meta[target.name] = target.name === "targetLevel" ? Number(target.value) : target.value;
+      state.meta[target.name] = target.name === "targetLevel"
+        ? normalizedTargetLevel(Number(target.value)) ?? DATA.defaultTargetLevel
+        : target.value;
       if (target.name === "riskTier") refreshRiskTierDisplay();
       if (target.name === "targetLevel" && activePanelDefinition().id === "results") rerenderResult = true;
     } else if (target.name?.startsWith("axis-")) {
@@ -5993,6 +6004,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
 
     const scope = payload.scope;
     const imported = createDefaultState(descriptor.valueStreamId);
+    const importedTargetLevel = normalizedTargetLevel(scope.targetLevel);
     imported.assessmentId = presentation.assessmentId;
     imported.createdAt = presentation.createdAt;
     imported.meta = {
@@ -6006,7 +6018,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
         "Three release cycles": "Three complete operating cycles",
         "Sustained multi-release window": "Sustained cross-cycle window",
       }[scope.evidenceWindow] || scope.evidenceWindow) : scope.evidenceWindow,
-      targetLevel: scope.targetLevel,
+      targetLevel: importedTargetLevel,
       notes: requireString(scope.notes, "Assessment notes"),
     };
     if (!RISK_TIERS.some((tier) => tier.name === imported.meta.riskTier)) {
@@ -6015,9 +6027,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
     if (!EVIDENCE_WINDOWS.has(imported.meta.evidenceWindow)) {
       throw new Error("The evidence window is not valid for this assessment version.");
     }
-    if (!Number.isInteger(imported.meta.targetLevel)
-      || imported.meta.targetLevel < 1
-      || imported.meta.targetLevel > 5) {
+    if (importedTargetLevel === null) {
       throw new Error("The selected target level is invalid.");
     }
 
