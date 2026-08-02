@@ -167,6 +167,10 @@ jobs:
         run: |
           make repo_guard
 
+      - name: Bootstrap extension checks
+        run: |
+          make call_to_action_alert_check
+
       - name: Normalize generated dates
         run: |
           make normalize

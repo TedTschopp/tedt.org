@@ -132,6 +132,13 @@ AI can help recover that knowledge. It can compare records, trace decisions, sum
 
 You cannot safely automate a process the organization cannot explain and verify. The assessment should show whether the work is eligible, bounded and owned, whether the AI workflow has the right context, whether a qualified person can understand what is being proposed, whether the evidence proves the intended result and who may accept the outcome and under what limit.
 
+> **Assess One Defined Value Stream**
+>
+> Separate observed behavior, demonstrated capability, validated controls and authorized AI responsibility, then turn the gaps into People, Process and Technology actions.
+>
+> [Take the Enterprise AI Maturity Assessment][9]{: .btn .btn-primary }
+{: .alert .alert-call-to-action }
+
 ## The Six Levels Outside IT
 
 The model I talked about last week used software-oriented names such as coding intern, junior developer and dark factory. The enterprise model keeps the same progression and applies local names, owners, and actors names more directly.
@@ -299,6 +306,7 @@ Use it with the people who do the work, the people who own the outcome and the p
 > Separate observed behavior, demonstrated capability, validated controls and authorized AI responsibility, then turn the gaps into People, Process and Technology actions.
 >
 > [Take the Enterprise AI Maturity Assessment][9]{: .btn .btn-primary }
+{: .alert .alert-call-to-action }
 
 ## A Factory That Can Explain Itself
 

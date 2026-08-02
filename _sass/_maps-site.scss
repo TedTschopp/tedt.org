@@ -6,6 +6,7 @@
 $theme-colors-text: (
   "primary": $primary-text-emphasis,
   "secondary": $secondary-text-emphasis,
+  "call-to-action": $call-to-action-text-emphasis,
   "success": $success-text-emphasis,
   "GM": $gm-text-emphasis,
   "info": $info-text-emphasis,
@@ -21,6 +22,7 @@ $theme-colors-text: (
 $theme-colors-bg-subtle: (
   "primary": $primary-bg-subtle,
   "secondary": $secondary-bg-subtle,
+  "call-to-action": $call-to-action-bg-subtle,
   "success": $success-bg-subtle,
   "GM": $gm-bg-subtle,
   "info": $info-bg-subtle,
@@ -36,6 +38,7 @@ $theme-colors-bg-subtle: (
 $theme-colors-border-subtle: (
   "primary": $primary-border-subtle,
   "secondary": $secondary-border-subtle,
+  "call-to-action": $call-to-action-border-subtle,
   "success": $success-border-subtle,
   "GM": $gm-border-subtle,
   "info": $info-border-subtle,
@@ -48,10 +51,15 @@ $theme-colors-border-subtle: (
   "dark": $dark-border-subtle,
 );
 
+$theme-colors-text-dark: null;
+$theme-colors-bg-subtle-dark: null;
+$theme-colors-border-subtle-dark: null;
+
 @if $enable-dark-mode {
   $theme-colors-text-dark: (
     "primary": $primary-text-emphasis-dark,
     "secondary": $secondary-text-emphasis-dark,
+    "call-to-action": $call-to-action-text-emphasis-dark,
     "success": $success-text-emphasis-dark,
     "GM": $gm-text-emphasis-dark,
     "info": $info-text-emphasis-dark,
@@ -67,6 +75,7 @@ $theme-colors-border-subtle: (
   $theme-colors-bg-subtle-dark: (
     "primary": $primary-bg-subtle-dark,
     "secondary": $secondary-bg-subtle-dark,
+    "call-to-action": $call-to-action-bg-subtle-dark,
     "success": $success-bg-subtle-dark,
     "GM": $gm-bg-subtle-dark,
     "info": $info-bg-subtle-dark,
@@ -82,6 +91,7 @@ $theme-colors-border-subtle: (
   $theme-colors-border-subtle-dark: (
     "primary": $primary-border-subtle-dark,
     "secondary": $secondary-border-subtle-dark,
+    "call-to-action": $call-to-action-border-subtle-dark,
     "success": $success-border-subtle-dark,
     "GM": $gm-border-subtle-dark,
     "info": $info-border-subtle-dark,

@@ -7,15 +7,18 @@ $accent1-text-emphasis-dark: tint-color($accent1, 40%);
 $accent2-text-emphasis-dark: tint-color($accent2, 40%);
 $accent3-text-emphasis-dark: tint-color($accent3, 40%);
 $gm-text-emphasis-dark: tint-color($gm, 40%);
+$call-to-action-text-emphasis-dark: tint-color($call-to-action, 40%);
 
 $accent1-bg-subtle-dark: shade-color($accent1, 80%);
 $accent2-bg-subtle-dark: shade-color($accent2, 80%);
 $accent3-bg-subtle-dark: shade-color($accent3, 80%);
 $gm-bg-subtle-dark: shade-color($gm, 80%);
+$call-to-action-bg-subtle-dark: shade-color($call-to-action, 80%);
 
 $accent1-border-subtle-dark: shade-color($accent1, 40%);
 $accent2-border-subtle-dark: shade-color($accent2, 40%);
 $accent3-border-subtle-dark: shade-color($accent3, 40%);
 $gm-border-subtle-dark: shade-color($gm, 40%);
+$call-to-action-border-subtle-dark: shade-color($call-to-action, 40%);
 
 $link-color-dark: tint-color($accent1, 40%);
