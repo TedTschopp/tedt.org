@@ -6734,6 +6734,39 @@
       ],
       "width": 1672
     },
+    "/img/2026-08/Enterprise-AI-Maturity.webp": {
+      "height": 941,
+      "source_sha256": "b9611f6802e175929a70a74af8c6dba4104bb505b7e302190f6d531de6e80b20",
+      "src": "/img/2026-08/Enterprise-AI-Maturity.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-08/Enterprise-AI-Maturity--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-08/Enterprise-AI-Maturity--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-08/Enterprise-AI-Maturity--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-08/Enterprise-AI-Maturity--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-08/Enterprise-AI-Maturity.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/404.webp": {
       "height": 1216,
       "source_sha256": "2e780cc9206d48fc8cd998b19a3671764a39138f318498d10f3d8baacc656cf6",

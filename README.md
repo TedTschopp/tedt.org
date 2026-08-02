@@ -418,9 +418,14 @@ Local WebP sources under `img/` and `RPG/` remain the canonical originals. Run
 the local generator after adding or changing one of those files:
 
 ```bash
-python3 _code/py/generate_responsive_images.py
-python3 _code/py/generate_responsive_images.py --check
+python3 _code/py/generate_responsive_images.py --ensure-post-images
+python3 _code/py/generate_responsive_images.py --check-post-images
 ```
+
+These post-scoped commands inspect images referenced by `_posts/` and generate
+only missing, changed, or incomplete image sets. CI runs this incremental repair
+before Jekyll. The unscoped generator and `--check` mode remain available when
+the entire responsive-image library intentionally needs to be rebuilt.
 
 The generator uses Pillow and `cwebp` to create 480, 768, 1200, and 1456 pixel
 variants without upscaling. Generated files live under

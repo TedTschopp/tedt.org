@@ -171,6 +171,19 @@ jobs:
         run: |
           make normalize
 
+      - name: Ensure responsive images for posts
+        run: |
+          set -euo pipefail
+          if python3 _code/py/generate_responsive_images.py --check-post-images; then
+            exit 0
+          fi
+
+          echo "[responsive-images] Repairing only missing or stale images referenced by posts."
+          sudo apt-get update
+          sudo apt-get install --yes python3-pil webp
+          python3 _code/py/generate_responsive_images.py --ensure-post-images
+          python3 _code/py/generate_responsive_images.py --check-post-images
+
       - name: Build with Jekyll
         env:
           JEKYLL_ENV: production

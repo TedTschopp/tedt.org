@@ -294,6 +294,12 @@ I built the [Enterprise AI Maturity Assessment for Your Value Stream][9] to make
 
 Use it with the people who do the work, the people who own the outcome and the people who independently challenge or verify it, including risk, compliance, audit, legal or safety partners where they are needed. Their disagreements are useful. They show where the operating model still depends on assumptions.
 
+> **Assess one defined value stream**
+>
+> Separate observed behavior, demonstrated capability, validated controls and authorized AI responsibility, then turn the gaps into People, Process and Technology actions.
+>
+> [Take the Enterprise AI Maturity Assessment][9]{: .btn .btn-primary }
+
 ## A Factory That Can Explain Itself
 
 Return to that Monday morning.
