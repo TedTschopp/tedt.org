@@ -5178,7 +5178,7 @@ const BASE_DATA = {"id":"enterprise-ai-maturity-assessment","schemaVersion":"2.0
       `;
     }
 
-    const targetLevel = state.meta.targetLevel;
+    const targetLevel = normalizedTargetLevel(state.meta.targetLevel) ?? DATA.defaultTargetLevel;
     const targetReached = result.validatedLevel !== null && result.validatedLevel >= targetLevel;
     const { nextLevel, blockers } = buildImmediateBlockers(result, targetLevel);
     const capabilityActions = buildCapabilityActions(result, nextLevel || targetLevel);
