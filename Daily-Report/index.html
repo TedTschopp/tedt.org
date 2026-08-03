@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-08-02 | TedT.org</title>
+  <title>Daily Report - 2026-08-03 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,90 +52,118 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-08-02</h1>
-      <p class="meta">Generated <time datetime="2026-08-02T05:40:03+00:00">2026-08-02T05:40:03Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-03</h1>
+      <p class="meta">Generated <time datetime="2026-08-03T05:48:39+00:00">2026-08-03T05:48:39Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Bottom line:</strong> High-activity day. A major new feature (Enterprise AI Maturity Assessment V2) shipped to production alongside a large batch of dependency security updates. The site is healthy, CI is green, and one long-open draft security PR remains unmerged.</p>
+      <p><strong>Active day.</strong> 17 commits merged to <code>main</code> on Aug 1–2, covering a new post, the Enterprise AI Maturity Assessment V2, responsive image generation, a batch of Dependabot security and dependency upgrades, and several CI/workflow improvements. All recent workflow runs are green. One risk: <code>ffi</code> was bumped to 1.17.4, breaking the ADR 0009 stability pin at 1.16.3—verify this was intentional. One open draft PR (#137) for a DOM-navigation security fix awaits review.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Recent Repository Activity</h2>
-<h3>Feature Work</h3>
-<p><strong>Enterprise AI Maturity Assessment V2</strong> — merged and deployed today via PR #211.</p>
+      <h2>Bottom Line Up Front</h2>
+<p>High commit velocity over the past 24 hours. New content published, significant dependency hygiene applied (Nokogiri security patch, html-proofer major bump, JS security releases), and responsive image generation added. Workflows are healthy. One dependency decision (ffi upgrade) conflicts with a documented ADR and needs confirmation.</p>
+<hr>
+<h2>Recent Repository Activity</h2>
+<h3>New Content Published</h3>
 <ul>
-<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commit/89e444c9ee1963cbf0b5efbb897413615a3b8ae0"><code>89e444c</code></a> (publish), <a href="https://github.com/TedTschopp/tedt.org/commit/fc7947f25dc1f95410b9abba76155e7927c92154"><code>fc7947f</code></a> (scoring fix)</li>
-<li>Changes included: hardened results rendering, separated assessor notes from HTML, constrained target levels, canonicalized targets before rendering.</li>
-<li>An AI maturity assessment *library* was also added in <a href="https://github.com/TedTschopp/tedt.org/commit/828f0853b7139bc54837bfc127035e433755cc3d"><code>828f085</code></a> (PR #207).</li>
+<li><strong>"How Much Work Can Your AI Safely Own?"</strong> — New article added with associated images. Committed 2026-08-02T15:40Z.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/75872cfea2d67dc14e6990ac3d87dd3f55ebb3dc">Commit 75872cf</a></li>
+<li><strong>Enterprise AI Maturity Assessment V2</strong> — Published via PR #211 (merged 2026-08-02T04:26Z). Includes hardened results rendering, separated assessor notes from HTML, constrained target levels, and canonicalized assessment targets.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/89e444c9ee1963cbf0b5efbb897413615a3b8ae0">Commit 89e444c</a></li>
+<li><strong>AI Maturity Assessment scoring fix</strong> — PR #210 merged earlier same day.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/fc7947f25dc1f95410b9abba76155e7927c92154">Commit fc7947f</a></li>
+<li><strong>AI maturity levels table styling</strong> — Style polish applied 2026-08-02T23:46Z.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/255ffc50b2c95592daebf580f1b0d2504a54f51a">Commit 255ffc5</a></li>
 </ul>
-<p><strong>Principles of Effective Architecture slide deck</strong> — published 2026-07-31 at <a href="https://github.com/TedTschopp/tedt.org/commit/69129d292719524f39519409433bf81451509fc7"><code>69129d2</code></a>.</p>
-<hr>
-<h3>Dependency &amp; CI Maintenance (2026-08-01 to 2026-08-02)</h3>
-<p>All of the following landed on <code>main</code> in a concentrated batch merge window:</p>
+<h3>Infrastructure Changes</h3>
 <ul>
-<li><strong>html-proofer 3.19.4 → 5.2.1</strong> (major version bump, PR #192) — coordinated with Copilot SWE agent.</li>
-<li><strong>ffi 1.16.3 → 1.17.4</strong> (PR #188) — supersedes the ADR 0009 pin; the temporary pin can now be revisited.</li>
-<li><strong>nokogiri 1.19.0 → 1.19.4</strong> (PR #208) — security release.</li>
-<li><strong>fast-uri + postcss + nanoid</strong> security releases (PR #209).</li>
-<li><strong>sass-embedded 1.97.1 → 1.102.0</strong> (PR #206).</li>
-<li><strong>concurrent-ruby 1.3.5 → 1.3.7</strong> (PR #203, security group).</li>
-<li><strong>actions/checkout v4 → v7</strong> (PR #201).</li>
-<li><strong>actions/upload-pages-artifact v4 → v5</strong> (PR #194).</li>
-<li><strong>actions/upload-artifact v6 → v7</strong> (PR #164).</li>
-<li><strong>actions/github-script v7 → v9</strong> (PR #195).</li>
-<li><strong>actions/cache v4 → v5</strong> (PR #196).</li>
-<li><strong>github/gh-aw-actions → 0.80.8</strong> (PR #200, daily-report workflow lock).</li>
+<li><strong>Responsive image generation</strong> — Added for posts; README updated.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/902d6d4d8e444febb2cc2bc714494416ebd97824">Commit 902d6d4</a></li>
+<li><strong>CTA alert check</strong> — Added to deployment workflow.</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/e950a5e1597c7630178f23bafc9a05ba324433dc">Commit e950a5e</a></li>
 </ul>
-<hr>
-<h3>Automated Operational Commits</h3>
+<h3>Dependency Updates (Dependabot + Copilot-assisted)</h3>
 <ul>
-<li><code>chore: refresh yesterday in enterprise ai</code> — automated, 2026-08-01 and 2026-07-31.</li>
-<li><code>chore: refresh daily report</code> — automated, 2026-08-01.</li>
-<li><code>chore: update Mastodon cache/front matter</code> — automated, 2026-08-01.</li>
+<li><strong>Nokogiri 1.19.0 → 1.19.4</strong> (security fix) — <a href="https://github.com/TedTschopp/tedt.org/commit/3585e4eea5f05fc4d9e4f47a947816ca41501db4">Commit 3585e4e</a></li>
+<li><strong>fast-uri, postcss, nanoid</strong> security releases — <a href="https://github.com/TedTschopp/tedt.org/commit/a4aa039ff2594ef1f0afbd07df0c043825446426">Commit a4aa039</a></li>
+<li><strong>html-proofer 3.19.4 → 5.2.1</strong> (major version bump, Copilot-assisted) — <a href="https://github.com/TedTschopp/tedt.org/commit/43e6ec4a73c8ab8480ba107fed5de077a3e01286">Commit 43e6ec4</a></li>
+<li><strong>ffi 1.16.3 → 1.17.4</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/b168884714c5edd6989cfd0216182694fc887220">Commit b168884</a> ⚠️ See Risks.</li>
+<li><strong>github/gh-aw-actions → 0.80.8</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/1b3291608dacd9b2500bc10a73bf4912c3809ab6">Commit 1b32916</a></li>
+<li><strong>actions/cache v4 → v5</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/5aa6edb9877f58e374d16db1c69af9b2c9d9593e">Commit 5aa6edb</a></li>
+<li><strong>actions/github-script v7 → v9</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/b4c30cdc0a47edd09bc8d5aacea25aee0b08ccb4">Commit b4c30cd</a></li>
+<li><strong>actions/upload-pages-artifact v4 → v5</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/46764b539b958ab490aaa839043ed3a9e6a1f7d3">Commit 46764b5</a></li>
+<li><strong>actions/upload-artifact v6 → v7</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/7f5be9decdbad5918fd40feecb616a40702ab068">Commit 7f5be9d</a></li>
 </ul>
-<hr>
-<h2>Site Quality &amp; Workflow Health</h2>
-<p><strong>Deploy workflow</strong> (<code>Site Quality + Deploy</code>, run #1096): <code>completed</code> / <strong>success</strong>, triggered by the Enterprise AI Maturity Assessment V2 merge.</p>
-<p>The html-proofer major version upgrade (3.x → 5.x) landed successfully. CLI interface and configuration options changed significantly between these versions — worth validating that all existing CI invocation flags are still compatible.</p>
-<hr>
-<h2>Open Issues (selected)</h2>
+<h3>Automated Bot Activity</h3>
 <ul>
-<li><strong>Category pages enhancement</strong> — 41 category landing pages are minimal stubs; no related navigation, tag clouds, or content depth indicators. Active open issue.</li>
+<li><strong>Mastodon cache/front matter update</strong> — 2026-08-02T18:25Z.</li>
+<li><strong>Enterprise AI daily content refresh</strong> — 2026-08-02T13:12Z.</li>
+<li><strong>Daily report refresh</strong> — 2026-08-02T05:40Z.</li>
 </ul>
 <hr>
-<h2>Open Pull Requests</h2>
+<h2>Site Quality and Workflow Health</h2>
+<h3>Workflow Status</h3>
 <ul>
-<li><strong>PR #137</strong> (draft): _"Potential fix for code scanning alert no. 295: DOM text reinterpreted as HTML"_ — open since 2026-01-27, draft state. Addresses a <code>window.location</code> navigation sink in <code>_includes/layout/top-nav-bar.html</code> where <code>data-href</code> is assigned without protocol validation.</li>
-<li><strong>Recommendation:</strong> Review and merge or close. This is a genuine XSS-class risk. The fix is small and the PR has been open for six months.</li>
+<li><strong>Feed to Mastodon</strong> — ✅ Completed successfully 2026-08-03T00:41Z. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30775079310">Run 30775079310</a></li>
+<li><strong>CodeQL / Push on main</strong> — ✅ Completed successfully 2026-08-02T23:46Z. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30772948734">Run 30772948734</a></li>
+<li><strong>Daily Report</strong> — 🔄 In progress (this run). <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30787837050">Run 30787837050</a></li>
+</ul>
+<p>No failed workflow runs observed in recent history.</p>
+<h3>Open Pull Requests</h3>
+<ul>
+<li><strong>#137</strong> — "Potential fix for code scanning alert no. 295: DOM text reinterpreted as HTML" — <strong>DRAFT</strong>, open since 2026-01-27. Proposes validating <code>data-href</code> attribute before assigning to <code>window.location</code> in <code>_includes/layout/top-nav-bar.html</code>. Low urgency (draft, old), but the underlying code scanning alert (XSS risk) is real and should eventually be addressed.</li>
 </ul>
 <hr>
-<h2>Risks &amp; Observations</h2>
+<h2>Content and Publishing Pipeline</h2>
 <ul>
-<li><strong>ffi pin (ADR 0009) is now superseded.</strong> ffi was pinned to 1.16.3 for stability; it is now at 1.17.4. Review ADR 0009 and consider marking it superseded to avoid confusion.</li>
-<li><strong>html-proofer v5 compatibility.</strong> The major upgrade changes CLI flags. If any local <code>make</code> targets or CI steps pass flags removed in v5, they will silently fail or error. Run <code>make qa</code> locally to confirm.</li>
-<li><strong>PR #137 (security, draft, 6 months old).</strong> The DOM-to-navigation sink is a real code scanning alert. It should not stay unresolved indefinitely.</li>
-<li><strong>Category page depth.</strong> The open issue on minimal category stubs is an ongoing UX gap — no blocking impact but worth scheduling.</li>
+<li>Active content publishing day. Two substantial pieces shipped: the new blog article and the V2 AI Maturity Assessment.</li>
+<li>The html-proofer major version bump (3.x → 5.x) changes CLI flags and behavior. Verify that existing local build task ("Clean build + HTMLProofer (internal)") and CI invocations use the correct v5 flags. A mismatch could silently skip checks or produce false failures.</li>
+<li>Responsive image generation is a new pipeline step—confirm it handles all existing posts gracefully and that missing images don't break the build.</li>
+<li>Mastodon sync ran successfully overnight; front matter updates committed.</li>
 </ul>
+<hr>
+<h2>Open Issues Snapshot</h2>
+<p>Notable open issues (P2 priority, discovery/UX theme):</p>
+<ul>
+<li><strong>#186</strong> — Enhance category landing pages with related categories, tag clouds, breadcrumbs, depth indicators. Labels: <code>content-discovery</code>, <code>UX</code>, <code>P2</code>.</li>
+<li><strong>#185</strong> — Build cross-collection content bridges and related-posts infrastructure. Labels: <code>content-discovery</code>, <code>UX</code>, <code>P2</code>.</li>
+</ul>
+<p>These are backlog items; no active blockers on either.</p>
+<hr>
+<h2>Risks and Blockers</h2>
+<h3>⚠️ ffi ADR Conflict</h3>
+<p><strong>ADR 0009</strong> pins <code>ffi</code> to <code>1.16.3</code> for build stability (avoiding Ruby ecosystem compatibility issues). Dependabot merged a bump to <code>1.17.4</code>. This is a minor-version increment and may be safe, but it directly conflicts with the documented pin. Verify:</p>
+<ol>
+<li>Confirm build succeeds locally on Ruby 3.2 with ffi 1.17.4.</li>
+<li>If stable, update ADR 0009 to reflect the new baseline.</li>
+<li>If not stable, revert and add a Dependabot ignore rule to prevent future bumps.</li>
+</ol>
+<h3>⚠️ html-proofer 3.x → 5.x Major Bump</h3>
+<p>This is a major version upgrade. The CLI interface changed significantly between 3.x and 5.x (e.g., flag renames, Ruby API changes). The local build task and CI commands should be audited to confirm they use correct v5 syntax. A broken invocation would cause HTML link checks to silently pass or always fail.</p>
+<h3>🔒 Open Security PR (#137) Aging in Draft</h3>
+<p>The DOM text reinterpreted as HTML alert (code scanning #295) has a Copilot Autofix draft open since January 2026—7 months. Even as a low-severity XSS vector, it should be reviewed and either merged or explicitly closed.</p>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge or close PR #137.</strong> The security fix is small and well-described. Six months as a draft is too long for a code scanning alert.</li>
-<li><strong>Validate html-proofer v5 compatibility</strong> by running <code>make all</code> or <code>SKIP_EXTERNAL=1 bundle exec htmlproofer</code> locally and confirming no flag regressions.</li>
-<li><strong>Revisit ADR 0009</strong> — the ffi pin no longer matches the live Gemfile. Update the ADR status to <code>superseded</code>.</li>
-<li><strong>Schedule category page enhancement work</strong> (the open issue) — even a small improvement to category stubs improves discovery.</li>
+<li><strong>Verify ffi 1.17.4 build stability</strong> and update or close ADR 0009 accordingly.</li>
+<li><strong>Audit html-proofer v5 CLI usage</strong> in CI and local VS Code tasks. Fix any flag renames.</li>
+<li><strong>Review responsive image generation</strong> on a representative post to confirm no build regressions.</li>
+<li><strong>Triage PR #137</strong> — merge the security fix or explicitly close the PR with a documented reason.</li>
+<li><strong>Verify Mastodon sync output</strong> from last night's run—spot-check that new posts have <code>mastodon-post-id</code> front matter updated as expected.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commit data: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — top 20 commits as of 2026-08-02T05:36Z.</li>
-<li>Workflow run data: <code>github-actions_list</code> for <code>deploy.yml</code> and general runs. Full run JSON was too large to parse inline; summary drawn from preview fragments.</li>
-<li>Issues: <code>github-list_issues</code> (open), top results. Full list truncated by tool output size; only partial issue data reviewed.</li>
-<li>Pull requests: <code>github-list_pull_requests</code> (open) — one PR returned (#137, draft).</li>
-<li>[ASSUMPTION] The deploy run #1096 conclusion of <code>success</code> was inferred from the preview fragment of the workflow run JSON.</li>
-<li>External link check status, HTML Proofer v5 flag compatibility, and Mastodon feed health were <strong>not</strong> independently verified in this run.</li>
-<li>No direct site content audit (feed integrity, image alt text) was performed.</li>
+<li><strong>Commits</strong>: GitHub MCP <code>list_commits</code> on <code>TedTschopp/tedt.org</code>, <code>main</code> branch, last 20 commits as of 2026-08-03T05:42Z.</li>
+<li><strong>Workflow runs</strong>: GitHub MCP <code>list_workflow_runs</code> (all + completed filter), last 15 runs.</li>
+<li><strong>Open issues</strong>: GitHub MCP <code>list_issues</code> (state: OPEN), first 10 results.</li>
+<li><strong>Open PRs</strong>: GitHub MCP <code>list_pull_requests</code> (state: open).</li>
+<li><strong>Workflow conclusions</strong>: Extracted from raw JSON output; CodeQL and Mastodon runs confirmed <code>"conclusion":"success"</code>. Deploy workflow run status not directly confirmed in this data window—[ASSUMPTION] deploy succeeded given no failure signals and Mastodon sync ran cleanly post-push.</li>
+<li><strong>ADR 0009 reference</strong>: From site working instructions in agent context (not re-read from file this run).</li>
+<li><strong>Issue body excerpts</strong>: Parsed from raw JSON; labels and titles confirmed. Only first 2 issues shown in detail; full issue list contains more open items not enumerated here.</li>
+<li><strong>html-proofer v3→v5 risk</strong>: Known breaking change based on project knowledge; not independently verified by reading CI YAML this run—[ASSUMPTION] CI was not yet audited for v5 flag compatibility.</li>
 </ul>
     </section>
     <footer>
