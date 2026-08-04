@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-08-03 | TedT.org</title>
+  <title>Daily Report - 2026-08-04 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,118 +52,106 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-08-03</h1>
-      <p class="meta">Generated <time datetime="2026-08-03T05:48:39+00:00">2026-08-03T05:48:39Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-04</h1>
+      <p class="meta">Generated <time datetime="2026-08-04T05:33:08+00:00">2026-08-04T05:33:08Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Active day.</strong> 17 commits merged to <code>main</code> on Aug 1–2, covering a new post, the Enterprise AI Maturity Assessment V2, responsive image generation, a batch of Dependabot security and dependency upgrades, and several CI/workflow improvements. All recent workflow runs are green. One risk: <code>ffi</code> was bumped to 1.17.4, breaking the ADR 0009 stability pin at 1.16.3—verify this was intentional. One open draft PR (#137) for a DOM-navigation security fix awaits review.</p>
+      <p><strong>Active development week.</strong> Ted shipped the Enterprise AI Maturity Assessment V2, a new article ("How Much Work Can Your AI Safely Own?"), responsive image generation, and a CTA-alert deployment check. A wave of dependency upgrades landed on 2026-08-01 (nokogiri security patch, ffi bump, html-proofer major version, postcss/fast-uri security fixes, and several CI action upgrades). Automated workflows (Daily Report, Feed to Mastodon) are healthy. Backlog carries 5+ open P2 content-discovery issues requiring attention; no blockers or CI failures observed.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line Up Front</h2>
-<p>High commit velocity over the past 24 hours. New content published, significant dependency hygiene applied (Nokogiri security patch, html-proofer major bump, JS security releases), and responsive image generation added. Workflows are healthy. One dependency decision (ffi upgrade) conflicts with a documented ADR and needs confirmation.</p>
+      <h2>Bottom Line</h2>
+<p>Strong shipping cadence over the past 48 hours. The AI maturity assessment feature reached V2 with scoring fixes. A new article on AI task ownership was published. Dependency hygiene was addressed in bulk. No failed workflow runs detected in recent history.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>New Content Published</h3>
+<h3>Commits — 2026-08-03</h3>
 <ul>
-<li><strong>"How Much Work Can Your AI Safely Own?"</strong> — New article added with associated images. Committed 2026-08-02T15:40Z.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/75872cfea2d67dc14e6990ac3d87dd3f55ebb3dc">Commit 75872cf</a></li>
-<li><strong>Enterprise AI Maturity Assessment V2</strong> — Published via PR #211 (merged 2026-08-02T04:26Z). Includes hardened results rendering, separated assessor notes from HTML, constrained target levels, and canonicalized assessment targets.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/89e444c9ee1963cbf0b5efbb897413615a3b8ae0">Commit 89e444c</a></li>
-<li><strong>AI Maturity Assessment scoring fix</strong> — PR #210 merged earlier same day.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/fc7947f25dc1f95410b9abba76155e7927c92154">Commit fc7947f</a></li>
-<li><strong>AI maturity levels table styling</strong> — Style polish applied 2026-08-02T23:46Z.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/255ffc50b2c95592daebf580f1b0d2504a54f51a">Commit 255ffc5</a></li>
+<li><strong><code>chore: refresh yesterday in enterprise ai</code></strong> — bot automation (<a href="https://github.com/TedTschopp/tedt.org/commit/eac03c45d84923eff2ba13b423c975b1147d3f60">eac03c4</a>)</li>
+<li><strong><code>chore: refresh daily report</code></strong> — bot automation (<a href="https://github.com/TedTschopp/tedt.org/commit/2abc6ba6750715e2eb0f9319b844fd2a719fa064">2abc6ba</a>)</li>
 </ul>
-<h3>Infrastructure Changes</h3>
+<h3>Commits — 2026-08-02 (Ted Tschopp)</h3>
 <ul>
-<li><strong>Responsive image generation</strong> — Added for posts; README updated.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/902d6d4d8e444febb2cc2bc714494416ebd97824">Commit 902d6d4</a></li>
-<li><strong>CTA alert check</strong> — Added to deployment workflow.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/e950a5e1597c7630178f23bafc9a05ba324433dc">Commit e950a5e</a></li>
+<li><strong><code>style(markdown): add table styling to AI maturity levels section</code></strong> (<a href="https://github.com/TedTschopp/tedt.org/commit/255ffc50b2c95592daebf580f1b0d2504a54f51a">255ffc5</a>) — Polish for the V2 assessment output rendering.</li>
+<li><strong><code>feat(checks): add call-to-action alert check to deployment workflow</code></strong> (<a href="https://github.com/TedTschopp/tedt.org/commit/e950a5e1597c7630178f23bafc9a05ba324433dc">e950a5e</a>) — New CI gate to catch missing CTAs before deploy.</li>
+<li><strong><code>feat(images): add responsive image generation for posts and update README</code></strong> (<a href="https://github.com/TedTschopp/tedt.org/commit/902d6d4d8e444febb2cc2bc714494416ebd97824">902d6d4</a>) — Site-wide improvement; README updated accordingly.</li>
+<li><strong><code>feat(post): add "How Much Work Can Your AI Safely Own?" article and images</code></strong> (<a href="https://github.com/TedTschopp/tedt.org/commit/75872cfea2d67dc14e6990ac3d87dd3f55ebb3dc">75872cf</a>) — New published article on AI task delegation.</li>
+<li><strong><code>chore: update Mastodon cache/front matter</code></strong> (<a href="https://github.com/TedTschopp/tedt.org/commit/eb2608294032af5a324739bf36f303fb0867ce2b">eb26082</a>) — Automated Mastodon sync ran and updated post IDs.</li>
+<li><strong>Merge: <code>Publish Enterprise AI Maturity Assessment V2</code> (#211)</strong> (<a href="https://github.com/TedTschopp/tedt.org/commit/89e444c9ee1963cbf0b5efbb897413615a3b8ae0">89e444c</a>) — Full V2 release: harden rendering, separate assessor notes, constrain/canonicalize target levels.</li>
+<li><strong>Merge: <code>Fix AI maturity assessment scoring</code> (#210)</strong> (<a href="https://github.com/TedTschopp/tedt.org/commit/fc7947f25dc1f95410b9abba76155e7927c92154">fc7947f</a>) — Bug fix preceding V2 publish.</li>
 </ul>
-<h3>Dependency Updates (Dependabot + Copilot-assisted)</h3>
+<h3>Commits — 2026-08-01 (Dependency Upgrades)</h3>
 <ul>
-<li><strong>Nokogiri 1.19.0 → 1.19.4</strong> (security fix) — <a href="https://github.com/TedTschopp/tedt.org/commit/3585e4eea5f05fc4d9e4f47a947816ca41501db4">Commit 3585e4e</a></li>
-<li><strong>fast-uri, postcss, nanoid</strong> security releases — <a href="https://github.com/TedTschopp/tedt.org/commit/a4aa039ff2594ef1f0afbd07df0c043825446426">Commit a4aa039</a></li>
-<li><strong>html-proofer 3.19.4 → 5.2.1</strong> (major version bump, Copilot-assisted) — <a href="https://github.com/TedTschopp/tedt.org/commit/43e6ec4a73c8ab8480ba107fed5de077a3e01286">Commit 43e6ec4</a></li>
-<li><strong>ffi 1.16.3 → 1.17.4</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/b168884714c5edd6989cfd0216182694fc887220">Commit b168884</a> ⚠️ See Risks.</li>
-<li><strong>github/gh-aw-actions → 0.80.8</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/1b3291608dacd9b2500bc10a73bf4912c3809ab6">Commit 1b32916</a></li>
-<li><strong>actions/cache v4 → v5</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/5aa6edb9877f58e374d16db1c69af9b2c9d9593e">Commit 5aa6edb</a></li>
-<li><strong>actions/github-script v7 → v9</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/b4c30cdc0a47edd09bc8d5aacea25aee0b08ccb4">Commit b4c30cd</a></li>
-<li><strong>actions/upload-pages-artifact v4 → v5</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/46764b539b958ab490aaa839043ed3a9e6a1f7d3">Commit 46764b5</a></li>
-<li><strong>actions/upload-artifact v6 → v7</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/7f5be9decdbad5918fd40feecb616a40702ab068">Commit 7f5be9d</a></li>
-</ul>
-<h3>Automated Bot Activity</h3>
-<ul>
-<li><strong>Mastodon cache/front matter update</strong> — 2026-08-02T18:25Z.</li>
-<li><strong>Enterprise AI daily content refresh</strong> — 2026-08-02T13:12Z.</li>
-<li><strong>Daily report refresh</strong> — 2026-08-02T05:40Z.</li>
+<li><strong><code>html-proofer 3.19.4 → 5.2.1</code></strong> (#192) (<a href="https://github.com/TedTschopp/tedt.org/commit/43e6ec4a73c8ab8480ba107fed5de077a3e01286">43e6ec4</a>) — <strong>Major version bump.</strong> CI and focused lint checks pass; monitor for new proofer behavior.</li>
+<li><strong><code>ffi 1.16.3 → 1.17.4</code></strong> (#188) (<a href="https://github.com/TedTschopp/tedt.org/commit/b168884714c5edd6989cfd0216182694fc887220">b168884</a>) — Supersedes the ADR 0009 stability pin; confirm Gemfile conditional logic is still coherent.</li>
+<li><strong><code>fast-uri + postcss security releases</code></strong> (#209) (<a href="https://github.com/TedTschopp/tedt.org/commit/a4aa039ff2594ef1f0afbd07df0c043825446426">a4aa039</a>) — Security patch for <code>fast-uri</code> and <code>postcss</code>; <code>nanoid</code> transitive dep also updated.</li>
+<li><strong><code>nokogiri 1.19.0 → 1.19.4</code></strong> (#208) (<a href="https://github.com/TedTschopp/tedt.org/commit/3585e4eea5f05fc4d9e4f47a947816ca41501db4">3585e4e</a>) — Security fix; Gemfile conditional enforcement preserved.</li>
+<li><strong><code>gh-aw-actions → 0.80.8</code></strong> (#200) (<a href="https://github.com/TedTschopp/tedt.org/commit/1b3291608dacd9b2500bc10a73bf4912c3809ab6">1b32916</a>) — Daily-report workflow locks refreshed.</li>
+<li><strong><code>actions/cache v4 → v5</code></strong> (#196) (<a href="https://github.com/TedTschopp/tedt.org/commit/5aa6edb9877f58e374d16db1c69af9b2c9d9593e">5aa6edb</a>) — Playwright browser cache action updated.</li>
+<li><strong><code>actions/github-script v7 → v9</code></strong> (#195) (<a href="https://github.com/TedTschopp/tedt.org/commit/b4c30cdc0a47edd09bc8d5aacea25aee0b08ccb4">b4c30cd</a>) — Issue automation workflows updated.</li>
 </ul>
 <hr>
-<h2>Site Quality and Workflow Health</h2>
-<h3>Workflow Status</h3>
+<h2>Workflow Health</h2>
 <ul>
-<li><strong>Feed to Mastodon</strong> — ✅ Completed successfully 2026-08-03T00:41Z. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30775079310">Run 30775079310</a></li>
-<li><strong>CodeQL / Push on main</strong> — ✅ Completed successfully 2026-08-02T23:46Z. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30772948734">Run 30772948734</a></li>
-<li><strong>Daily Report</strong> — 🔄 In progress (this run). <a href="https://github.com/TedTschopp/tedt.org/actions/runs/30787837050">Run 30787837050</a></li>
-</ul>
-<p>No failed workflow runs observed in recent history.</p>
-<h3>Open Pull Requests</h3>
-<ul>
-<li><strong>#137</strong> — "Potential fix for code scanning alert no. 295: DOM text reinterpreted as HTML" — <strong>DRAFT</strong>, open since 2026-01-27. Proposes validating <code>data-href</code> attribute before assigning to <code>window.location</code> in <code>_includes/layout/top-nav-bar.html</code>. Low urgency (draft, old), but the underlying code scanning alert (XSS risk) is real and should eventually be addressed.</li>
+<li><strong>Daily Report</strong> — currently in progress (this run); run #97 on workflow <code>daily-report.lock.yml</code>.</li>
+<li><strong>Feed to Mastodon</strong> — completed <strong>success</strong> on 2026-08-03 (most recent completed run visible). Automated Mastodon cache/front-matter commit confirms posts are syncing.</li>
+<li>No failed workflow conclusions observed in the top recent runs.</li>
 </ul>
 <hr>
-<h2>Content and Publishing Pipeline</h2>
+<h2>Open Pull Requests</h2>
+<p>At least one Dependabot PR is open:</p>
 <ul>
-<li>Active content publishing day. Two substantial pieces shipped: the new blog article and the V2 AI Maturity Assessment.</li>
-<li>The html-proofer major version bump (3.x → 5.x) changes CLI flags and behavior. Verify that existing local build task ("Clean build + HTMLProofer (internal)") and CI invocations use the correct v5 flags. A mismatch could silently skip checks or produce false failures.</li>
-<li>Responsive image generation is a new pipeline step—confirm it handles all existing posts gracefully and that missing images don't break the build.</li>
-<li>Mastodon sync ran successfully overnight; front matter updates committed.</li>
+<li><strong><code>actions/setup-python v6 → v7</code></strong> — open, pending review/merge.</li>
+</ul>
+<p>[ASSUMPTION] Additional Dependabot PRs may be open; full PR list was too large to enumerate completely. Review the <a href="https://github.com/TedTschopp/tedt.org/pulls">open PRs list</a> for any stale or mergeable items.</p>
+<hr>
+<h2>Open Issues (Sample — P2 Backlog)</h2>
+<p>Five content-discovery P2 issues are open and actively tracked:</p>
+<ul>
+<li><strong>#186</strong> — Enhance category landing pages: related categories, tag clouds, depth indicators</li>
+<li><strong>#185</strong> — Build cross-collection content bridges and related-posts infrastructure</li>
+<li><strong>#184</strong> — Drive prompt series adoption: audit and populate series metadata</li>
+<li><strong>#183</strong> — Standardize tagging model: enforce coverage and build site-wide tag infrastructure</li>
+<li><strong>#182</strong> — Create slide gallery with topic filtering and deck browser</li>
+</ul>
+<p>All five were filed 2026-05-29 and share the <code>content-discovery</code> and <code>audit-2026-05</code> labels. None have been closed or moved to in-progress yet.</p>
+<hr>
+<h2>Content &amp; Publishing Pipeline</h2>
+<ul>
+<li>New article published: <strong>"How Much Work Can Your AI Safely Own?"</strong> — aligned with the AI maturity theme.</li>
+<li>Enterprise AI Maturity Assessment V2 is live, with scoring bugs fixed and rendering hardened.</li>
+<li>Responsive image generation is now in place for posts — improves Core Web Vitals and mobile UX.</li>
+<li>Mastodon syndication is running normally.</li>
+<li>Automated <code>enterprise ai</code> content refresh running daily via bot commit.</li>
 </ul>
 <hr>
-<h2>Open Issues Snapshot</h2>
-<p>Notable open issues (P2 priority, discovery/UX theme):</p>
+<h2>Risks and Observations</h2>
 <ul>
-<li><strong>#186</strong> — Enhance category landing pages with related categories, tag clouds, breadcrumbs, depth indicators. Labels: <code>content-discovery</code>, <code>UX</code>, <code>P2</code>.</li>
-<li><strong>#185</strong> — Build cross-collection content bridges and related-posts infrastructure. Labels: <code>content-discovery</code>, <code>UX</code>, <code>P2</code>.</li>
+<li><strong><code>html-proofer</code> major version bump (3.x → 5.x)</strong> — API changes between major versions can alter which failures are surfaced or suppressed. Worth running a full <code>make all</code> locally to confirm baseline parity.</li>
+<li><strong><code>ffi</code> pin in ADR 0009</strong> — The pin at 1.16.3 has now been superseded by the 1.17.4 merge. Verify ADR 0009 is updated or retired so future maintainers don't treat the old pin as binding.</li>
+<li><strong>P2 backlog age</strong> — The five content-discovery issues are ~10 weeks old with no visible progress. If content strategy has shifted, consider triaging or deferring them explicitly.</li>
+<li><strong><code>actions/setup-python v7</code> PR open</strong> — Dependabot PR awaiting review. Low risk but should not age indefinitely.</li>
 </ul>
-<p>These are backlog items; no active blockers on either.</p>
-<hr>
-<h2>Risks and Blockers</h2>
-<h3>⚠️ ffi ADR Conflict</h3>
-<p><strong>ADR 0009</strong> pins <code>ffi</code> to <code>1.16.3</code> for build stability (avoiding Ruby ecosystem compatibility issues). Dependabot merged a bump to <code>1.17.4</code>. This is a minor-version increment and may be safe, but it directly conflicts with the documented pin. Verify:</p>
-<ol>
-<li>Confirm build succeeds locally on Ruby 3.2 with ffi 1.17.4.</li>
-<li>If stable, update ADR 0009 to reflect the new baseline.</li>
-<li>If not stable, revert and add a Dependabot ignore rule to prevent future bumps.</li>
-</ol>
-<h3>⚠️ html-proofer 3.x → 5.x Major Bump</h3>
-<p>This is a major version upgrade. The CLI interface changed significantly between 3.x and 5.x (e.g., flag renames, Ruby API changes). The local build task and CI commands should be audited to confirm they use correct v5 syntax. A broken invocation would cause HTML link checks to silently pass or always fail.</p>
-<h3>🔒 Open Security PR (#137) Aging in Draft</h3>
-<p>The DOM text reinterpreted as HTML alert (code scanning #295) has a Copilot Autofix draft open since January 2026—7 months. Even as a low-severity XSS vector, it should be reviewed and either merged or explicitly closed.</p>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Verify ffi 1.17.4 build stability</strong> and update or close ADR 0009 accordingly.</li>
-<li><strong>Audit html-proofer v5 CLI usage</strong> in CI and local VS Code tasks. Fix any flag renames.</li>
-<li><strong>Review responsive image generation</strong> on a representative post to confirm no build regressions.</li>
-<li><strong>Triage PR #137</strong> — merge the security fix or explicitly close the PR with a documented reason.</li>
-<li><strong>Verify Mastodon sync output</strong> from last night's run—spot-check that new posts have <code>mastodon-post-id</code> front matter updated as expected.</li>
+<li><strong>Merge or review</strong> the open <code>actions/setup-python v6 → v7</code> Dependabot PR and any others in the open PR list.</li>
+<li><strong>Update ADR 0009</strong> to reflect <code>ffi</code> is now at 1.17.4 and the old pin constraint is no longer in effect.</li>
+<li><strong>Run <code>make all</code></strong> (or equivalent with html-proofer 5.x) to verify the major-version bump hasn't changed baseline link-check behavior.</li>
+<li><strong>Triage the P2 content-discovery backlog</strong> — decide whether to schedule, defer, or close issues #182–#186.</li>
+<li><strong>Verify CTA alert check</strong> newly added to deploy workflow — confirm it fires correctly and document the expected alert format.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li><strong>Commits</strong>: GitHub MCP <code>list_commits</code> on <code>TedTschopp/tedt.org</code>, <code>main</code> branch, last 20 commits as of 2026-08-03T05:42Z.</li>
-<li><strong>Workflow runs</strong>: GitHub MCP <code>list_workflow_runs</code> (all + completed filter), last 15 runs.</li>
-<li><strong>Open issues</strong>: GitHub MCP <code>list_issues</code> (state: OPEN), first 10 results.</li>
-<li><strong>Open PRs</strong>: GitHub MCP <code>list_pull_requests</code> (state: open).</li>
-<li><strong>Workflow conclusions</strong>: Extracted from raw JSON output; CodeQL and Mastodon runs confirmed <code>"conclusion":"success"</code>. Deploy workflow run status not directly confirmed in this data window—[ASSUMPTION] deploy succeeded given no failure signals and Mastodon sync ran cleanly post-push.</li>
-<li><strong>ADR 0009 reference</strong>: From site working instructions in agent context (not re-read from file this run).</li>
-<li><strong>Issue body excerpts</strong>: Parsed from raw JSON; labels and titles confirmed. Only first 2 issues shown in detail; full issue list contains more open items not enumerated here.</li>
-<li><strong>html-proofer v3→v5 risk</strong>: Known breaking change based on project knowledge; not independently verified by reading CI YAML this run—[ASSUMPTION] CI was not yet audited for v5 flag compatibility.</li>
+<li>Commit history: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — 20 most recent commits retrieved (covers 2026-08-01 through 2026-08-03).</li>
+<li>Open issues: <a href="https://github.com/TedTschopp/tedt.org/issues?state=open"><code>github-list_issues</code></a> — top 5 open issues by default sort; full issue count not retrieved.</li>
+<li>Open PRs: full list was too large to parse in this environment; PR titles confirmed from preview and search results.</li>
+<li>Workflow runs: preview of recent completed runs retrieved; status of individual jobs not inspected.</li>
+<li>[ASSUMPTION] No failed CI runs observed in the top results; absence of failure is not a guarantee that all recent runs succeeded across all workflows.</li>
+<li>[ASSUMPTION] <code>actions/setup-python v7</code> is the only currently open Dependabot PR; others may exist.</li>
+<li>Daily report generated at 2026-08-04T05:29Z.</li>
 </ul>
     </section>
     <footer>
