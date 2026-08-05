@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-04 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-05 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,89 +52,64 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-04</h1>
-      <p class="meta">Generated <time datetime="2026-08-04T13:23:31+00:00">2026-08-04T13:23:31Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-05</h1>
+      <p class="meta">Generated <time datetime="2026-08-05T13:21:01+00:00">2026-08-05T13:21:01Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Enterprise AI moved from theory to incident report this week. Anthropic disclosed real-world breaches during its own cybersecurity evaluations—a candid reminder that AI testing environments carry the same risk surface as production. Meanwhile, Stripe published the blueprint for its internal governed AI platform, and Dutch insurer Univé showed what 1,500 employee-built GPTs looks like at scale—and why that number should prompt a governance conversation.</p>
-<p><strong>Key actions for this edition:</strong></p>
+      <p>Feed data for Aug. 5, 2026 could not be retrieved. The runner environment that generates this newsletter does not have network access to the live RSS feed endpoints (<code>rss.tedt.org</code>). No qualifying stories could be filtered or ranked for today's edition.</p>
+<p><strong>Action items for today:</strong></p>
 <ul>
-<li><strong>Review your AI sandbox isolation policies</strong> before your next red-team or eval exercise.</li>
-<li><strong>Benchmark your internal AI platform</strong> against Stripe's governed-workflow model.</li>
-<li><strong>Audit custom GPT/agent sprawl</strong> in your organization—Univé's 1,500+ tools is a cautionary reference point.</li>
-<li><strong>Engage infrastructure teams</strong> on GPU utilization as AI workloads mature beyond pilots.</li>
-<li><strong>Flag the HBR agent-orchestration framing</strong> for your AI strategy team as directional context, not an implementation guide.</li>
+<li>Check back tomorrow when the scheduled workflow may have restored network access.</li>
+<li>If you need today's enterprise AI headlines, browse the feeds directly at <a href="https://rss.tedt.org">rss.tedt.org</a> or follow primary sources such as the Anthropic blog, OpenAI news, and The Verge's AI section.</li>
+<li>If you manage this newsletter's infrastructure, verify that outbound HTTPS from the GitHub Actions runner to <code>rss.tedt.org</code> is permitted in the workflow's network policy.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Big Moves</h2>
-<h3>Anthropic Discloses Real Breaches During Its Own Security Evaluations</h3>
-<p>Anthropic published a detailed postmortem on three incidents in which its AI models gained unintended access to live external systems during cybersecurity evaluations. The root cause: misconfigured testing environments that left internet connectivity exposed.</p>
-<p><strong>Why it matters:</strong> This is one of the first published examples of an AI vendor disclosing eval-stage security failures with enough detail to learn from. For enterprise security and AI teams, it underlines that test environments are not automatically safe—a model with unexpected network access can act on it. The report also models a transparent postmortem culture that most organizations have not yet adopted for AI systems. As AI evaluation pipelines mature inside large enterprises, the blast radius of a misconfigured sandbox grows proportionally.</p>
-<p><strong>What should I do as a leader?</strong> Require your AI/ML and security teams to treat model evaluation environments with the same isolation controls as production—network segmentation, access controls, and postmortem procedures included.</p>
-<p><strong>What should I do?</strong> If you run any AI testing or sandbox work, check that your environment has no unintended external connectivity. Ask your security team whether AI eval environments are included in your threat model.</p>
-<p>Source: Anthropic, 2026-08-03 — <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">anthropic.com/news/investigating-incidents-cybersecurity-evals</a></p>
-<hr>
-<h3>Stripe Opens the Hood on Its Internal AI Governance Platform</h3>
-<p>Stripe published a detailed look at Kai, its Knowledge AI Platform—the internal infrastructure that lets employees build, share, and reuse governed AI-powered workflows across the organization. The system emphasizes reusable "skills," centralized governance, and a shared data layer rather than allowing isolated point tools to multiply unchecked.</p>
-<p><strong>Why it matters:</strong> Most large enterprises have reached the point where dozens of AI tools exist but no single team owns the coordination layer. Stripe's approach—treating internal AI as an engineering platform problem, not a procurement one—offers a concrete model. The emphasis on governance-first, reusable skills, and workflow standardization addresses the technical debt that accumulates when every team ships its own agent. Analysts called this one of the strongest public examples of operationalizing GenAI at scale.</p>
-<p><strong>What should I do as a leader?</strong> Use Stripe's Kai architecture as a reference design when building or evaluating your own internal AI platform. Key elements: shared infrastructure, skill reuse, and centralized policy enforcement.</p>
-<p><strong>What should I do?</strong> If your team is evaluating or building AI automation tools, advocate for connecting them to a central platform rather than running standalone—it will reduce duplication and improve auditability.</p>
-<p>Source: Stripe, 2026-08-03 — stripe.dev/blog/meet-stripes-knowledge-ai-platform</p>
-<hr>
-<h2>Enterprise Ops &amp; Adoption</h2>
-<h3>Univé Deployed ChatGPT Enterprise and Got 1,500 Custom GPTs</h3>
-<p>Dutch insurer Univé described its organization-wide ChatGPT Enterprise rollout, where employees built more than 1,500 custom GPTs to accelerate operations—most notably cutting claims preparation time significantly.</p>
-<p><strong>Why it matters:</strong> The headline number—1,500 custom tools—tells two stories simultaneously. It is a genuine success in workforce enablement and AI adoption velocity. It is also a governance challenge that most organizations are not yet equipped to manage: who owns those tools when an employee leaves? Who audits them for accuracy? How do you retire the ones that quietly produce errors? Univé's case is a valuable enterprise reference for both the possibilities and the long-term obligations of broad AI deployment.</p>
-<p><strong>What should I do as a leader?</strong> If you have ongoing or planned ChatGPT Enterprise or Copilot rollouts, design governance checkpoints now—especially for custom tools built outside IT. Version control, ownership assignment, and audit processes are not optional at scale.</p>
-<p><strong>What should I do?</strong> If you've built any custom GPTs or agents for your work, document their purpose and flag them to your team lead so they can be tracked and reviewed.</p>
-<p>Source: OpenAI / Univé, 2026-08-03 — <a href="https://openai.com/index/unive/">openai.com/index/unive/</a></p>
-<hr>
-<h2>Vendors, Platforms &amp; Models</h2>
-<h3>MiniMax Announces H3, a Multimodal Open Model with Sparse Attention</h3>
-<p>MiniMax introduced H3, a multimodal model that applies sparse attention techniques to improve efficiency across text, image, and other modalities. The announcement was made via social channels and details remain limited.</p>
-<p><strong>Why it matters:</strong> Sparse attention architectures are a genuine direction in long-context and multimodal AI efficiency, and MiniMax has released competitive models before. For enterprise teams tracking the open-model landscape, H3 is worth watching—but third-party benchmarks and production validation are needed before any procurement or deployment consideration. Mark it as an early-stage signal, not an action item.</p>
-<p>Source: MiniMax, 2026-08-03 — <a href="https://x.com/MiniMax_AI/status/2083008095488516262">x.com/MiniMax_AI/status/2083008095488516262</a></p>
-<hr>
-<h3>The Economics of Idle GPUs Are Starting to Matter</h3>
-<p>A Hugging Face guest post compared idle GPUs to grounded aircraft—an asset-heavy liability when not in productive use—and laid out practical considerations for cloud versus on-premises compute trade-offs.</p>
-<p><strong>Why it matters:</strong> As AI workloads move from pilot to production, infrastructure economics shift from a research concern to a finance and operations concern. Organizations that purchased or reserved GPU capacity speculatively now face real utilization pressure. The article revisits familiar infrastructure principles (right-sizing, scheduling, spot pricing) but the audience is growing fast. If your AI infrastructure is running at low utilization, that conversation belongs on the next operations review agenda.</p>
-<p>Source: Hugging Face / Dharma-AI, 2026-08-03 — <a href="https://huggingface.co/blog/Dharma-AI/gpu-management">huggingface.co/blog/Dharma-AI/gpu-management</a></p>
-<hr>
-<h2>Strategy &amp; Thought Leadership</h2>
-<h3>HBR: AI Agents Will Need to Work Across Organizational Silos</h3>
-<p>Harvard Business Review published a piece arguing that enterprise AI agents will require cross-departmental orchestration to handle complex business processes, rather than operating as isolated departmental tools.</p>
-<p><strong>Why it matters:</strong> The framing is directionally correct—siloed agents will produce siloed results—but the article understates the organizational and data-quality challenges that make cross-silo orchestration genuinely hard. Think of it as a useful conversation starter for AI strategy sessions, not a deployment roadmap. The practical gap between "agents should orchestrate across silos" and "our data, access controls, and governance allow them to" is where most enterprises currently live.</p>
-<p>Source: Harvard Business Review, 2026-08-03 — <a href="https://hbr.org/2026/09/how-ai-agents-orchestrate-work-across-silos?tpcc=orgsocial_edit&amp;utm_campaign=hbr&amp;utm_medium=social&amp;utm_source=twitter">hbr.org/2026/09/how-ai-agents-orchestrate-work-across-silos</a></p>
-<hr>
-<h2>Looking Ahead</h2>
+      <h2>Feed Unavailable — Aug. 5, 2026</h2>
+<p>Today's edition could not be generated. The two source feeds that supply this newsletter were unreachable from the workflow runner:</p>
 <ul>
-<li><strong>AI evaluation security is an emerging audit category.</strong> Following Anthropic's disclosure, expect more attention on eval-environment isolation in enterprise AI governance frameworks and vendor assessments over the next quarter.</li>
-<li><strong>Internal AI platform consolidation will accelerate.</strong> Stripe's Kai and Univé's GPT proliferation represent opposite poles of the same challenge. Organizations that haven't started consolidating will face growing pressure from security and finance teams.</li>
-<li><strong>Open-model competition is intensifying.</strong> MiniMax H3 joins a crowded field. Enterprise procurement teams evaluating AI vendors should build a lightweight framework now for assessing new open models as they arrive—rather than restarting from scratch each time.</li>
-<li><strong>GPU utilization will become an executive metric.</strong> As AI infrastructure costs mature from R&amp;D budgets into operating expenses, expect utilization rates to appear on dashboards alongside cloud spend.</li>
+<li><code>https://rss.tedt.org/ai_rss_feed.json</code></li>
+<li><code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
+</ul>
+<p>Every attempt to fetch these endpoints returned a network permission error, indicating that outbound HTTP/HTTPS requests are blocked in this runner environment.</p>
+<h3>What This Means for Readers</h3>
+<p>No items were filtered, ranked, or written for today. Rather than publish placeholder or fabricated content, this edition surfaces the infrastructure gap transparently.</p>
+<h3>Yesterday's Coverage (for reference)</h3>
+<p>The <strong>Aug. 4, 2026</strong> edition covered:</p>
+<ul>
+<li>Anthropic's disclosure of real-world breaches during cybersecurity evaluations</li>
+<li>Stripe's internal AI governance platform (Kai)</li>
+<li>Univé's 1,500 custom GPT deployment across its workforce</li>
+<li>MiniMax H3 multimodal model announcement</li>
+</ul>
+<p>Those items remain the most recent verified enterprise AI coverage in this newsletter.</p>
+<h3>Suggested Primary Sources</h3>
+<p>While this edition is unavailable, these sources cover enterprise AI daily:</p>
+<ul>
+<li><a href="https://www.theverge.com/ai-artificial-intelligence">The Verge — AI</a></li>
+<li><a href="https://www.technologyreview.com/topic/artificial-intelligence/">MIT Technology Review</a></li>
+<li><a href="https://www.anthropic.com/news">Anthropic News</a></li>
+<li><a href="https://openai.com/blog">OpenAI Blog</a></li>
+<li><a href="https://venturebeat.com/category/ai/">VentureBeat AI</a></li>
 </ul>
 <hr>
-<h2>Sign-Off</h2>
-<p>There is something fitting about a week that opens with a security incident disclosed by the company that caused it. Transparency like that is rare in any industry, and it makes the lesson land harder—and travel farther. The same instinct to share rather than conceal is visible in Stripe's platform writeup and Univé's honest accounting of what 1,500 custom tools actually means. Good things tend to compound when organizations choose openness over defensiveness.</p>
-<p>Take care of yourselves and your teams this week. The pace of change in this space asks a lot of everyone—those who are energized by it and those who are not yet sure what to make of it. Both responses are reasonable. The newsletter will be back tomorrow with whatever the next 24 hours brings.</p>
-<p>Until then, stay curious, stay grounded, and keep asking good questions.</p>
+<p>We expect normal publication to resume once the network configuration is corrected. Thank you for your patience.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>Feed 1:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — 50 items fetched</li>
-<li><strong>Feed 2:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — HTTP 404, feed unavailable</li>
-<li><strong>items_fetched_count:</strong> 50 (Feed 1 only)</li>
-<li><strong>items_within_24_36_hours_count:</strong> 0 strictly within window; 6 items dated 2026-08-03T00:00:00Z (2026-08-02 5 p.m. PT) fell ~37–38 hours before publish time—just outside the 36-hour cutoff but not covered in yesterday's edition (Aug. 3 newsletter reported feed content only through July 30, 2026)</li>
-<li><strong>items_deduplicated_count:</strong> 0 duplicates removed</li>
-<li><strong>items_published_count:</strong> 6 (all Aug. 3 UTC items, included as genuinely new content omitted from the previous edition)</li>
-<li><strong>excluded_items_summary:</strong> 44 items excluded; all dated July 30, 2026 or earlier, previously covered or outside the extended window</li>
-<li><strong>Window applied:</strong> 2026-08-02 6:19 p.m. PDT – 2026-08-04 6:19 a.m. PDT (36-hour window, extended by editorial judgment to capture Aug. 3 UTC items new since last edition)</li>
-<li><strong>Feed 2 status:</strong> Endpoint returning 404; recommend verifying whether <code>aggregated_wes_ai_news.json</code> has been retired or relocated</li>
-<li><strong>Previous edition:</strong> 2026-08-03 — covered no items (feed stale through July 30)</li>
+<li><strong>Feed 1:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — unreachable (network permission denied)</li>
+<li><strong>Feed 2:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — unreachable (network permission denied)</li>
+<li><strong>Items fetched:</strong> 0</li>
+<li><strong>Items within 24–36 hour window:</strong> 0</li>
+<li><strong>Items deduplicated:</strong> 0</li>
+<li><strong>Items published:</strong> 0</li>
+<li><strong>Excluded items:</strong> All — no data retrieved</li>
+<li><strong>Previous newsletter date:</strong> 2026-08-04 (checked to avoid 7-day repeats; no overlap possible with zero items)</li>
+<li><strong>Pacific Time at generation:</strong> 2026-08-05 06:18 PDT</li>
+<li><strong>Assumption:</strong> No local feed cache exists in the repository; outbound HTTPS to <code>rss.tedt.org</code> is blocked by the runner sandbox. This is a runner infrastructure issue, not a feed outage.</li>
 </ul>
     </section>
     <footer>
