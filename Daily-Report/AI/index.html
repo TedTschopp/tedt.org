@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-06 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-07 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,62 +52,108 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-06</h1>
-      <p class="meta">Generated <time datetime="2026-08-06T13:19:14+00:00">2026-08-06T13:19:14Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-07</h1>
+      <p class="meta">Generated <time datetime="2026-08-07T13:12:12+00:00">2026-08-07T13:12:12Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Feed data for Aug. 6, 2026 could not be retrieved. The runner environment that generates this newsletter does not have outbound network access to the live RSS feed endpoints at <code>rss.tedt.org</code>. No qualifying stories could be filtered or ranked for today's edition.</p>
-<p><strong>Action items:</strong></p>
+      <p>Enterprise AI conversations this week converged on three uncomfortable truths: organizational friction between AI and IT teams may be a bigger barrier to adoption than any technology gap; AI token spending is rising faster than the frameworks to measure its return; and LLM security demands a fundamentally broader threat model than most enterprises have built. Meanwhile, Alibaba's Qwen3.8-Max and Microsoft's Orchard framework signal that the open-weight frontier is advancing rapidly.</p>
+<p><strong>Key actions:</strong></p>
 <ul>
-<li>Check back tomorrow when network access may be restored.</li>
-<li>Browse feeds directly at <a href="https://rss.tedt.org">rss.tedt.org</a> or primary sources such as the Anthropic blog, OpenAI news, and VentureBeat AI for today's enterprise AI headlines.</li>
-<li>If you manage this newsletter's infrastructure, verify that outbound HTTPS from the GitHub Actions runner to <code>rss.tedt.org</code> is permitted in the workflow's network policy.</li>
+<li><strong>Audit AI-IT alignment</strong> — identify governance and ownership gaps before they become delivery bottlenecks.</li>
+<li><strong>Establish token-cost tracking</strong> — treat AI inference spend as a variable operating expense with its own reporting line.</li>
+<li><strong>Broaden your LLM security posture</strong> — move beyond guardrails to cover prompt injection, agent tool misuse, and data exposure.</li>
+<li><strong>Evaluate open-weight models</strong> — Qwen3.8-Max and Mistral Shieldstral expand the viable on-premises stack.</li>
+<li><strong>Plan for agent observability</strong> — telemetry from AI agents needs the same data-residency controls as production workloads.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Unavailable — Aug. 6, 2026</h2>
-<p>Today's edition could not be generated. The two source feeds that supply this newsletter were unreachable from the workflow runner:</p>
+      <h2>Big Moves</h2>
+<h3>The AI-IT Rift Is a Leadership Problem, Not a Technology One</h3>
+<p>A new Harvard Business Review piece examines the growing structural tension inside enterprises scaling generative AI—governance gaps, unclear ownership over security and infrastructure, and competing priorities between innovation-focused AI teams and risk-conscious IT departments.</p>
+<p><strong>Why it matters:</strong> Organizational misalignment is one of the most underappreciated blockers to AI value realization. As enterprises push AI from pilot to production, IT and AI teams without a common operating model create compounding delays, security gaps, and budget friction—especially acute in regulated industries.</p>
+<p><strong>What should I do as a leader?</strong> Convene a joint AI-IT working group to align on ownership, escalation paths, and shared success metrics before the next major deployment.</p>
+<p><strong>What should I do?</strong> Document your team's dependencies on the other side of this divide and share them proactively—don't wait for a crisis to surface the gaps.</p>
+<p>Source: Harvard Business Review, 2026-07-31 — <a href="https://hbr.org/2026/07/ai-and-it-teams-often-clash-but-they-dont-have-to?ab=HP-topics-text-4">AI and IT Teams Often Clash. But They Don't Have To.</a></p>
+<hr>
+<h3>What Are Enterprises Actually Getting for Their AI Spend?</h3>
+<p>Token consumption is rising and budgets are following, but measurable ROI remains elusive, according to a New York Times investigation. The piece frames AI inference costs as a variable operating expense—not a fixed software license—and asks whether enterprises have the financial frameworks to manage that shift.</p>
+<p><strong>Why it matters:</strong> Without clear attribution of AI spend to business outcomes, finance teams will eventually push back. Poorly instrumented AI programs will be first on the chopping block.</p>
+<p><strong>What should I do as a leader?</strong> Work with finance and engineering to establish token-cost attribution by team or product line—before consumption becomes a line-item surprise.</p>
+<p>Source: The New York Times, 2026-08-03 — <a href="https://www.nytimes.com/2026/08/03/business/economy/ai-spending-tokenomics.html?unlocked_article_code=1.2lA.UvT2.lIdP5STTTwGc&amp;smid=url-share">What Are Companies Getting for All That A.I. Spending?</a></p>
+<hr>
+<h2>Security, Risk &amp; Compliance</h2>
+<h3>LLM Security Needs a Full Threat Model — Not Just Guardrails</h3>
+<p>A detailed technical guide from ByteByteGo lays out the complete threat surface for LLM-based applications: prompt injection, agent tool misuse, data exfiltration via model outputs, insecure retrieval pipelines, and cross-agent trust exploitation.</p>
+<p><strong>Why it matters:</strong> As enterprises deploy AI agents with tool access—web browsing, code execution, database queries—the security perimeter expands significantly. A prompt injection attack that causes an agent to exfiltrate data is not a content policy failure; it's an access control failure.</p>
+<p><strong>What should I do as a leader?</strong> Require a threat model review for any AI agent that has access to internal systems, APIs, or sensitive data.</p>
+<p>Source: ByteByteGo, 2026-08-04 — LLM Security Basics: The Full Threat Model</p>
+<hr>
+<h3>Mistral Releases Shieldstral — Open-Weight Safety Classifier</h3>
+<p>Mistral AI released Shieldstral, a lightweight open-weight multimodal safety classifier that wraps around LLMs to filter unsafe inputs and outputs, with support for customizable moderation policies.</p>
+<p><strong>Why it matters:</strong> Shieldstral's open-weight approach enables on-premises moderation—useful for data-residency requirements and organizations uncomfortable sending sensitive content to third-party moderation APIs.</p>
+<p>Source: Mistral AI, 2026-08-04 — <a href="https://mistral.ai/news/shieldstral/">Introducing Shieldstral</a></p>
+<hr>
+<h2>Enterprise Ops &amp; Adoption</h2>
+<h3>Formula 1 Cuts Data Processing from Weeks to Minutes with Agentic AI</h3>
+<p>AWS published a case study on how Formula 1 uses agentic AI to transform customer data operations. Tasks requiring weeks of manual work now complete in minutes. The implementation emphasizes least-privilege permissions, audit trails, encrypted credentials, and human-in-the-loop checkpoints.</p>
+<p><strong>Why it matters:</strong> The governance-first approach here is directly transferable to enterprise data operations, customer service automation, and compliance reporting. Measurable throughput gains are achievable when access controls and auditability are built in from the start.</p>
+<p><strong>What should I do as a leader?</strong> Identify one high-volume, rules-based data workflow and design an agentic pilot using the same access-control and audit-trail discipline F1 applied.</p>
+<p>Source: AWS Machine Learning Blog, 2026-08-04 — <a href="https://aws.amazon.com/blogs/machine-learning/from-weeks-to-minutes-how-formula-1-uses-agentic-ai-on-aws-to-accelerate-data-operations/">From Weeks to Minutes: How Formula 1 Uses Agentic AI on AWS</a></p>
+<hr>
+<h3>AI Agent Telemetry: Who Owns the Data Trail Your Agents Leave?</h3>
+<p>Groundcover raised new funding around a pointed thesis: AI agent telemetry—traces, memory, evaluation data—should never leave your enterprise cloud.</p>
+<p><strong>Why it matters:</strong> Every AI agent interaction produces a trace. That telemetry is operationally critical for debugging and compliance—and potentially sensitive if it contains customer data or proprietary business logic. Enterprises routing this to third-party observability platforms may be creating data-residency risks they haven't fully assessed.</p>
+<p><strong>What should I do as a leader?</strong> Audit where your AI agent telemetry data currently flows and whether it falls under your data classification and residency policies.</p>
+<p>Source: VentureBeat, 2026-08-03 — <a href="https://venturebeat.com/data/how-is-your-enterprise-tracking-ai-agent-telemetry-groundcover-thinks-it-should-never-leave-your-cloud">How Is Your Enterprise Tracking AI Agent Telemetry?</a></p>
+<hr>
+<h2>Vendors, Platforms &amp; Models</h2>
+<h3>Microsoft Research Releases Orchard: Open Framework for Agentic AI</h3>
+<p>Microsoft Research published Orchard, an open framework separating agent training from execution. It includes three reference implementations: Orchard-SWE (software engineering), Orchard-GUI (browser automation), and Orchard-Claw (personal assistant tasks), each showing measurable performance gains.</p>
+<p><strong>Why it matters:</strong> Training AI agents in realistic simulated environments before production deployment is a core unsolved challenge. Orchard's domain-specific recipes give enterprise teams verifiable performance baselines before deployment.</p>
+<p><strong>What should I do as a leader?</strong> Review Orchard for teams building internal AI agents, particularly for software engineering automation and process workflows.</p>
+<p>Source: Microsoft Research, 2026-08-03 — Orchard: An Open Framework for Scalable Agentic AI</p>
+<hr>
+<h3>Alibaba's Qwen3.8-Max Sets a New Bar for Open-Weight Models</h3>
+<p>Alibaba unveiled Qwen3.8-Max, a 2.4-trillion-parameter model optimized for long-horizon coding and agentic workflows. API access is available immediately; open weights to follow.</p>
+<p><strong>Why it matters:</strong> For enterprises with data-sovereignty constraints or cost sensitivity, Qwen3.8-Max is a meaningful alternative to U.S.-hosted proprietary APIs for code-heavy and agentic use cases.</p>
+<p><strong>What should I do as a leader?</strong> Add Qwen3.8-Max to your model evaluation shortlist, especially if your organization faces residency requirements or is approaching a contract renewal.</p>
+<p>Source: Alibaba Qwen, 2026-08-03 — Qwen3.8-Max: A New Bar for Coding and Cowork</p>
+<hr>
+<h2>Quick Hits</h2>
 <ul>
-<li><code>https://rss.tedt.org/ai_rss_feed.json</code></li>
-<li><code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
-</ul>
-<p>Every attempt to fetch these endpoints returned a network permission error, indicating that outbound HTTPS requests are blocked in this runner environment.</p>
-<h3>What This Means for Readers</h3>
-<p>No items were filtered, ranked, or written for today. Rather than publish placeholder or fabricated content, this edition surfaces the infrastructure gap transparently — the same issue that affected yesterday's Aug. 5 edition.</p>
-<h3>Previous Coverage (for reference)</h3>
-<p>The <strong>Aug. 5, 2026</strong> edition also reported a feed outage. The last successfully published stories covered in <strong>Aug. 4, 2026</strong> included:</p>
-<ul>
-<li>Anthropic's disclosure of real-world breaches during cybersecurity evaluations</li>
-<li>Stripe's internal AI governance platform (Kai)</li>
-<li>Univé's 1,500 custom GPT deployment across its workforce</li>
-<li>MiniMax H3 multimodal model announcement</li>
-</ul>
-<h3>Suggested Primary Sources</h3>
-<p>While this edition is unavailable, these sources cover enterprise AI daily:</p>
-<ul>
-<li><a href="https://www.theverge.com/ai-artificial-intelligence">The Verge — AI</a></li>
-<li><a href="https://www.technologyreview.com/topic/artificial-intelligence/">MIT Technology Review</a></li>
-<li><a href="https://www.anthropic.com/news">Anthropic News</a></li>
-<li><a href="https://openai.com/blog">OpenAI Blog</a></li>
-<li><a href="https://venturebeat.com/category/ai/">VentureBeat AI</a></li>
+<li><strong>Multi-model database AI</strong> — Couchbase details a multi-model routing architecture for natural language database queries using Amazon Bedrock. <a href="https://aws.amazon.com/blogs/machine-learning/how-couchbase-built-a-multi-model-ai-architecture-for-capella-iq-with-amazon-bedrock/">Read more</a></li>
+<li><strong>OpenAI voice AI engineering</strong> — OpenAI details stateful inference and prompt-caching behind its low-latency voice AI, useful for teams building real-time conversational applications. <a href="https://openai.com/index/continuous-voice-interaction-with-gpt-live/?utm_source=tldrai">Read more</a></li>
+<li><strong>AI-assisted mathematics</strong> — OpenAI highlights ten advances in mathematics produced through human-AI collaboration, demonstrating accelerating AI-assisted scientific discovery. <a href="https://openai.com/index/ten-advances-in-mathematics/">Read more</a></li>
 </ul>
 <hr>
-<p>We expect normal publication to resume once the network configuration is corrected. The newsletter is designed to publish transparently rather than fabricate content, so days with blocked network access will show this notice rather than an empty or invented report. Thank you for your patience.</p>
+<h2>Looking Ahead</h2>
+<ul>
+<li><strong>AI-IT alignment will define 2026 delivery timelines</strong> — schedule the difficult cross-functional conversation before year-end planning locks.</li>
+<li><strong>Token-cost accounting is becoming a CFO issue</strong> — build internal reporting infrastructure before finance asks for it.</li>
+<li><strong>Open-weight frontier models are closing the gap</strong> — run a structured evaluation cycle before your next proprietary contract renewal.</li>
+<li><strong>Agent security frameworks are lagging deployment speed</strong> — formalize threat modeling and least-privilege access controls before incidents occur.</li>
+</ul>
+<hr>
+<h2>Until Tomorrow</h2>
+<p>The pace of enterprise AI can feel relentless — new models, new frameworks, new spending debates, new security threats, all arriving faster than most organizations can absorb. That's not a reason for paralysis; it's a reason for discipline. The enterprises navigating this well are building durable foundations: clear governance, honest cost accounting, and security models that match the actual risk surface.</p>
+<p>Wherever you're reading this — San Francisco, Singapore, Stuttgart, or somewhere between — the fundamentals apply. Build carefully, deploy thoughtfully, and keep asking whether what you're measuring actually reflects the value you're creating.</p>
+<p>— *Yesterday in Enterprise AI*</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>Feed 1:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — unreachable (network permission denied)</li>
-<li><strong>Feed 2:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — unreachable (network permission denied)</li>
-<li><strong>items_fetched_count:</strong> 0</li>
-<li><strong>items_within_24_36_hours_count:</strong> 0</li>
-<li><strong>items_deduplicated_count:</strong> 0</li>
-<li><strong>items_published_count:</strong> 0</li>
-<li><strong>excluded_items_summary:</strong> No items could be fetched. Outbound HTTPS blocked in runner sandbox. This is the second consecutive day (Aug. 5 and Aug. 6, 2026) with the same outage.</li>
-<li><strong>date_pt:</strong> 2026-08-06 (Pacific Time)</li>
-<li><strong>existing_newsletter_checked:</strong> Yes — Aug. 5, 2026 edition reviewed; also reported a feed outage. No deduplication required.</li>
+<li><strong>Feed 1</strong> (<code>ai_rss_feed.json</code>): 50 items fetched; most recent item dated 2026-08-04 (Pacific Time). No items fell within the strict 24-36 hour window from the Aug. 7, 2026 generation time.</li>
+<li><strong>Feed 2</strong> (<code>aggregated_wes_ai_news.json</code>): HTTP 404 — feed unavailable.</li>
+<li><strong>Prior newsletter</strong> (2026-08-06): Published with a "Feed Unavailable" notice; no items were covered in the prior edition, so Aug. 3-4 items have not been previously published.</li>
+<li><strong>Items fetched:</strong> 50 (Feed 1); 0 (Feed 2 unavailable)</li>
+<li><strong>Items within strict 24-36 hour window:</strong> 0 (feed is 3 days behind generation date)</li>
+<li><strong>Items in extended window (Aug. 3-4, most recent available, not covered prior):</strong> 12</li>
+<li><strong>Items after deduplication and quality filtering:</strong> 10</li>
+<li><strong>Items published as primary stories:</strong> 7</li>
+<li><strong>Items published as Quick Hits:</strong> 3</li>
+<li><strong>Excluded:</strong> 38 items older than Aug. 3 as outside usable date range.</li>
 </ul>
     </section>
     <footer>
