@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-08-06 | TedT.org</title>
+  <title>Daily Report - 2026-08-07 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,112 +52,103 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-08-06</h1>
-      <p class="meta">Generated <time datetime="2026-08-06T05:34:00+00:00">2026-08-06T05:34:00Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-07</h1>
+      <p class="meta">Generated <time datetime="2026-08-07T05:08:22+00:00">2026-08-07T05:08:22Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Automation pipelines are healthy. Ted shipped significant content and infrastructure in the last four days: the Enterprise AI Maturity Assessment V2, a new post on AI delegation, responsive image generation, a CTA alert check in deploy, and a major dependency cleanup (html-proofer major bump, ffi update). Five Dependabot PRs are open and waiting for review. No deployment failures detected. The site's discovery infrastructure backlog (category pages, related-posts, tagging) remains the primary long-term work area.</p>
+      <p>Automated pipelines are healthy. Manual engineering activity on 2026-08-02 was substantial: AI maturity assessment v2 shipped, responsive image generation added, a new article published, and a CTA alert check wired into the deploy workflow. Since then, only scheduled automation commits have landed. The May 2026 audit backlog (#163) has multiple open P0 and P1 items — Node.js 20 deprecation, oversized artifact, and broken image <code>src</code> attributes — that have not been closed. No PRs are open. Recommended focus: clear P0 blockers before the Node.js 20 hard deadline.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line</h2>
-<p>Active development week. Ted delivered two substantial features (AI maturity assessment V2 + responsive image generation), automated content refresh continues reliably, and dependency hygiene was addressed via two major version bumps. Five Dependabot PRs are pending. No build failures in recent workflow history.</p>
+      <h2>Site &amp; Pipeline Status</h2>
+<p>Automated workflows are running normally. The most recent completed <code>Feed to Mastodon</code> run succeeded. Daily report and Enterprise AI content refresh commits have landed on schedule every day this week.</p>
+<p>No open pull requests are currently visible.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Commits (2026-08-02 – 2026-08-06)</h3>
-<p><strong>Human commits by TedTschopp:</strong></p>
+<h3>2026-08-06</h3>
 <ul>
-<li><strong>2026-08-05</strong> – <code>chore: refresh yesterday in enterprise ai</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/bf96cfee850ee2a41246c68edd7ec77c71cf9fde">bf96cfc</a>) — Automated content refresh for the Enterprise AI section.</li>
-<li><strong>2026-08-02</strong> – <code>style(markdown): add table styling to AI maturity levels section</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/255ffc50b2c95592daebf580f1b0d2504a54f51a">255ffc5</a>) — Visual polish on maturity assessment output.</li>
-<li><strong>2026-08-02</strong> – <code>feat(checks): add call-to-action alert check to deployment workflow</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/e950a5e1597c7630178f23bafc9a05ba324433dc">e950a5e</a>) — Added a new quality gate to catch missing CTAs during deploy.</li>
-<li><strong>2026-08-02</strong> – <code>feat(images): add responsive image generation for posts and update README</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/902d6d4d8e444febb2cc2bc714494416ebd97824">902d6d4</a>) — New infrastructure for generating responsive images; README updated.</li>
-<li><strong>2026-08-02</strong> – <code>feat(post): add "How Much Work Can Your AI Safely Own?" article and images</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/75872cfea2d67dc14e6990ac3d87dd3f55ebb3dc">75872cf</a>) — New long-form post published.</li>
+<li><strong>Bot:</strong> <code>chore: refresh yesterday in enterprise ai</code> — scheduled content update</li>
+<li><strong>Bot:</strong> <code>chore: refresh daily report</code> — automated daily report publish</li>
 </ul>
-<p><strong>Merged PRs (merged 2026-08-02):</strong></p>
+<h3>2026-08-05</h3>
 <ul>
-<li><strong>PR #211</strong> – Publish Enterprise AI Maturity Assessment V2 (<a href="https://github.com/TedTschopp/tedt.org/commit/89e444c9ee1963cbf0b5efbb897413615a3b8ae0">89e444c</a>) — Multi-commit feature: hardened rendering, separated assessor notes, constrained target levels, canonicalized assessment targets.</li>
-<li><strong>PR #210</strong> – Fix AI maturity assessment scoring (<a href="https://github.com/TedTschopp/tedt.org/commit/fc7947f25dc1f95410b9abba76155e7927c92154">fc7947f</a>) — Bug fix preceding V2 publish.</li>
-<li><strong>PR #192</strong> – Bump <code>html-proofer</code> from 3.19.4 to 5.2.1 (<a href="https://github.com/TedTschopp/tedt.org/commit/43e6ec4a73c8ab8480ba107fed5de077a3e01286">43e6ec4</a>) — Major version bump; required Copilot co-authoring to land.</li>
-<li><strong>PR #188</strong> – Bump <code>ffi</code> from 1.16.3 to 1.17.4 (<a href="https://github.com/TedTschopp/tedt.org/commit/b168884714c5edd6989cfd0216182694fc887220">b168884</a>) — ADR 0009 stability pin lifted; ffi now at 1.17.4.</li>
+<li><strong>Bot:</strong> <code>chore: refresh yesterday in enterprise ai</code></li>
+<li><strong>Bot:</strong> <code>chore: refresh daily report</code></li>
 </ul>
-<p><strong>Automated commits (github-actions[bot]):</strong></p>
+<h3>2026-08-04</h3>
 <ul>
-<li>Daily report refresh (each morning ~05:30 UTC) — running reliably.</li>
-<li>Enterprise AI section content refresh (each day ~13:20 UTC) — running reliably.</li>
-<li>Mastodon cache / front matter sync (2026-08-02) — completed.</li>
-<li>DUSD lunch calendar refresh (2026-08-04) — completed.</li>
+<li><strong>TedTschopp:</strong> <code>chore: refresh DUSD lunch calendar</code> — ICS calendar updated</li>
+<li><strong>Bot:</strong> <code>chore: refresh yesterday in enterprise ai</code></li>
+<li><strong>Bot:</strong> <code>chore: refresh daily report</code></li>
 </ul>
-<hr>
-<h2>Workflow Health</h2>
-<p><strong>Recent workflow runs (last 24h):</strong></p>
+<h3>2026-08-03</h3>
 <ul>
-<li><strong>Daily Report</strong> (run #99) — <code>in_progress</code> as of report time; this is the current run. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31074228064">View</a></li>
-<li><strong>Feed to Mastodon</strong> (run #2124) — <code>success</code> (completed 2026-08-06 00:36 UTC). <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31060128897">View</a></li>
+<li><strong>Bot:</strong> <code>chore: refresh yesterday in enterprise ai</code></li>
+<li><strong>Bot:</strong> <code>chore: refresh daily report</code></li>
 </ul>
-<p>No concluded failure conclusions found in the most recent runs examined. Automation cadence is consistent.</p>
-<hr>
-<h2>Dependency &amp; Security</h2>
-<h3>Open Dependabot PRs (all created 2026-08-03)</h3>
+<h3>2026-08-02 — Significant Engineering Activity</h3>
 <ul>
-<li><strong>PR #216</strong> – <code>actions/setup-python</code> 6 → 7</li>
-<li><strong>PR #215</strong> – <code>actions/cache</code> 5 → 6</li>
-<li><strong>PR #214</strong> – <code>actions/checkout</code> 7.0.0 → 7.0.1</li>
-<li><strong>PR #213</strong> – <code>github/gh-aw-actions/setup</code> 0.80.8 → 0.84.1</li>
-<li><strong>PR #212</strong> – <code>actions/setup-node</code> 4 → 7</li>
-</ul>
-<p>All five are GitHub Actions version bumps, low blast radius. Review and merge in batch when convenient.</p>
-<p><strong>Note on <code>ffi</code>:</strong> ADR 0009 pinned <code>ffi</code> at 1.16.3. PR #188 bumped it to 1.17.4. Verify that the Gemfile conditional logic (Ruby &gt;=3.1 security constraints) still passes with the new version on CI before treating this as fully resolved.</p>
-<h3>Long-open security PR</h3>
-<ul>
-<li><strong>PR #137</strong> (opened 2026-01-27) – Potential fix for code scanning alert: DOM text reinterpreted as HTML. Still open. This is now 6+ months old; worth triaging whether the alert is still active or if it can be closed.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/89e444c9ee1963cbf0b5efbb897413615a3b8ae0">PR #211</a>:** Publish Enterprise AI Maturity Assessment V2 — hardened results rendering, separated assessor notes from HTML, constrained and canonicalized target levels</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/fc7947f25dc1f95410b9abba76155e7927c92154">PR #210</a>:** Fix AI maturity assessment scoring</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/75872cfea2d67dc14e6990ac3d87dd3f55ebb3dc">feat</a>:** Add new article — "How Much Work Can Your AI Safely Own?"</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/902d6d4d8e444febb2cc2bc714494416ebd97824">feat</a>:** Add responsive image generation for posts and update README</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/e950a5e1597c7630178f23bafc9a05ba324433dc">feat</a>:** Add call-to-action alert check to deployment workflow</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/255ffc50b2c95592daebf580f1b0d2504a54f51a">style</a>:** Add table styling to AI maturity levels section</li>
+<li><strong>Bot:</strong> Mastodon cache and front matter sync</li>
 </ul>
 <hr>
-<h2>Content &amp; Publishing Pipeline</h2>
+<h2>Open Issues — Audit Backlog</h2>
+<p>Tracker <a href="https://github.com/TedTschopp/tedt.org/issues/163">#163</a> (May 2026 Repo Audit) is the master list. Status as of today:</p>
+<h3>P0 — Blocking / Hard Deadlines</h3>
 <ul>
-<li>New post <strong>"How Much Work Can Your AI Safely Own?"</strong> published 2026-08-02.</li>
-<li>Enterprise AI Maturity Assessment V2 live with hardened rendering and target canonicalization.</li>
-<li>Responsive image generation feature merged; README updated. Watch for build-time performance impact on wide loops (per ADR 0008).</li>
-<li>Mastodon sync ran successfully 2026-08-02; no reported gaps.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/150">#150</a><strong> Update GitHub Actions workflows from Node.js 20 to Node.js 24 — </strong>hard deprecation deadline**</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/151">#151</a>** Fix <code>&lt;img&gt;</code> elements with missing <code>src</code> attribute (234 pages affected)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/152">#152</a>** Reduce GitHub Pages artifact size below 1 GB (currently 1.16 GB — over limit)</li>
+</ul>
+<h3>P1</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/153">#153</a>** Fix YAML Date constant crashes in Ruby test harness (1,009 posts invisible to tests)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/154">#154</a>** Fix 588 broken Monster Manual image paths</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/155">#155</a>** Update feed snapshot baselines (5 removed items causing diff failures)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/156">#156</a>** Fix 11 broken internal asset links and 2 broken script references</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/157">#157</a>** Enforce CI quality gates: remove <code>continue-on-error</code> from HTMLProofer and a11y steps</li>
+</ul>
+<h3>P2 (Selected)</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/171">#171</a>** Add front matter validation (image/image-alt, category slugs, date format)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a>** Enhance category landing pages with related categories, tag clouds, depth indicators</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a>** Build cross-collection content bridges and related-posts infrastructure</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a>** Drive prompt series adoption (only 3 of 56 prompts have <code>series:</code> metadata)</li>
 </ul>
 <hr>
-<h2>Open Issues Backlog (Selected)</h2>
-<p><strong>Discovery / UX (P2 — audit-2026-05 label):</strong></p>
+<h2>Risks and Blockers</h2>
 <ul>
-<li><strong>#186</strong> – Enhance category landing pages (related categories, tag clouds, depth indicators, breadcrumbs). Depends on #183 (tagging infrastructure).</li>
-<li><strong>#185</strong> – Build cross-collection content bridges and related-posts infrastructure. Depends on #70 (search) and #178 (pillar pages).</li>
-</ul>
-<p>These issues represent the main remaining content-experience gap: 41 category pages are minimal stubs, and 73% of posts lack internal links.</p>
-<hr>
-<h2>Risks &amp; Blockers</h2>
-<ul>
-<li><strong><code>ffi</code> pin lifted without explicit ADR update</strong> — ADR 0009 documented the 1.16.3 pin for stability. The bump to 1.17.4 in PR #188 should be followed by an ADR 0009 amendment or supersession note so the record stays accurate.</li>
-<li><strong>html-proofer major bump (3.x → 5.x)</strong> — API surface changed significantly. If any internal test scripts call <code>html-proofer</code> programmatically (vs. CLI), verify they still work against v5.</li>
-<li><strong>PR #137 aging</strong> — DOM XSS-class alert open for 6 months. Either fix or explicitly close with documented rationale.</li>
-<li><strong>Responsive image generation + performance</strong> — New image generation pipeline introduced without explicit memory probe run noted in commit history. [ASSUMPTION] Build time and memory usage have not been profiled yet; recommend a <code>MEM_PROBE=1</code> build pass.</li>
+<li><strong>Node.js 20 deprecation (#150):</strong> GitHub Actions will stop supporting Node.js 20 runners. This is a hard deadline with no known date confirmed in this report, but it should be treated as imminent. No progress commits observed since the issue was filed.</li>
+<li><strong>Artifact size (#152):</strong> At 1.16 GB against a 1 GB limit, deploys are at risk of failing if the artifact grows further. Responsive image generation (added 2026-08-02) may push this higher — monitor closely.</li>
+<li><strong>234 pages with missing <code>img src</code> (#151):</strong> This affects rendered HTML integrity and accessibility. CI masks this because HTMLProofer runs with <code>continue-on-error</code>.</li>
+<li><strong>1,009 posts invisible to the Ruby test harness (#153):</strong> Test coverage is severely understated; quality signals are unreliable until this is fixed.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge Dependabot PRs #212–#216</strong> — all are low-risk Actions version bumps. Batch merge to keep CI tooling current.</li>
-<li><strong>Triage PR #137</strong> — decide fix-or-close on the DOM text reinterpretation alert; it's blocking security posture clarity.</li>
-<li><strong>Amend or supersede ADR 0009</strong> — document that the ffi pin has been lifted and under what conditions it can be re-applied.</li>
-<li><strong>Run <code>MEM_PROBE=1</code> build</strong> — baseline memory footprint with the new responsive image generation pipeline in place.</li>
-<li><strong>Begin #183 (tagging infrastructure)</strong> — it's a prerequisite for #186 (enhanced category pages), which is the highest-impact discovery improvement in the backlog.</li>
+<li><strong>Close #150 first.</strong> Upgrade workflows to Node.js 24 actions — low risk, high urgency.</li>
+<li><strong>Measure artifact size impact</strong> of the 2026-08-02 responsive image generation change. If it pushed over 1 GB by more than a few MB, prioritize #152 immediately.</li>
+<li><strong><code>Fix #153</code> (YAML Date crashes)</strong> to restore test harness visibility over 1,009 posts before starting any content quality work.</li>
+<li><strong>Remove <code>continue-on-error</code> (#157)</strong> from HTMLProofer and a11y steps so #151 and similar regressions surface as build failures, not silent passes.</li>
+<li>After P0/P1 are clear, assign a sprint to category landing page enhancements (#186) and content bridging (#185) — both are high-value UX improvements with clear acceptance criteria already written.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commit history: <a href="https://github.com/TedTschopp/tedt.org/commits/main"><code>github-list_commits</code></a> — 20 most recent commits examined.</li>
-<li>Workflow runs: <a href="https://github.com/TedTschopp/tedt.org/actions"><code>github-actions_list</code></a> — most recent 10 runs examined; full run history contains 8,175 total runs.</li>
-<li>Open issues: <a href="https://github.com/TedTschopp/tedt.org/issues"><code>github-list_issues</code></a> — up to 20 open issues examined; issues #185 and #186 used as representative backlog samples.</li>
-<li>Open PRs: <a href="https://github.com/TedTschopp/tedt.org/pulls"><code>github-list_pull_requests</code></a> — all open PRs examined (6 total as of report time).</li>
-<li>Report generated: 2026-08-06T05:30 UTC.</li>
-<li>Workflow run for this report: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31074228064">run #99</a> (in progress at time of data collection).</li>
-<li>[ASSUMPTION] No deployment failure data was available from the most recent runs; absence of <code>failure</code> conclusions in the top 10 runs is treated as healthy signal, not a guarantee.</li>
-<li>[ASSUMPTION] <code>MEM_PROBE=1</code> build has not been run against the responsive image pipeline; this is inferred from commit messages, not confirmed via CI log inspection.</li>
-<li>External site availability (tedt.org uptime) was not checked — no tool available for external HTTP probing in this workflow.</li>
+<li>Commits sourced from GitHub API: TedTschopp/tedt.org, main branch, last 20 commits</li>
+<li>Workflow runs sourced from GitHub Actions API (most recent 10 completed runs); <code>Feed to Mastodon</code> confirmed success; current run is <code>Daily Report</code> (this run, in progress)</li>
+<li>Open issues sourced from GitHub Issues API, sorted by updated_at DESC, top 5 shown; full backlog visible in tracker #163</li>
+<li>Pull requests: GitHub API returned data but parsing was constrained; no open PRs were evident in the preview</li>
+<li>[ASSUMPTION] P0/P1 issues in tracker #163 are still open with no resolution commits observed in the commit log reviewed</li>
+<li>[ASSUMPTION] Artifact size has not been measured in this run; 1.16 GB figure is from the original issue description (#152) and may have changed</li>
+<li>Bash tool was unavailable for JSON parsing; workflow run details were read from API previews only</li>
 </ul>
     </section>
     <footer>
