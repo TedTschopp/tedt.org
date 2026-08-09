@@ -5148,5 +5148,38 @@
       "https://tschopp.net/users/Ted/statuses/117027314569023518"
     ],
     "lastTootTimestamp": 1785695107631
+  },
+  "https://tedt.org/The-Sandbox-Was-Not-the-Boundary/": {
+    "id": "/The-Sandbox-Was-Not-the-Boundary/",
+    "title": "The Sandbox Was Not the Boundary",
+    "summary": "The OpenAI–Hugging Face incident shows why an agent's boundary must include proxy services, persistent state, task-failure behavior, and the authority to restart after an incident.",
+    "content_text": "The OpenAI–Hugging Face incident shows why an agent's boundary must include proxy services, persistent state, task-failure behavior, and the authority to restart after an incident. https://tedt.org/The-Sandbox-Was-Not-the-Boundary/",
+    "url": "https://tedt.org/The-Sandbox-Was-Not-the-Boundary/",
+    "image": "https://tedt.org/img/2026-08/sandbox-boundary-hero-04-cross-run-shared-state.webp",
+    "tags": [
+      "agentic AI",
+      "AI security",
+      "cybersecurity",
+      "AI agents",
+      "sandboxing",
+      "indirect internet access",
+      "Artifactory",
+      "server-side request forgery",
+      "incident response",
+      "model lineage",
+      "AI governance",
+      "automation controls"
+    ],
+    "date_published": "2026-08-08T09:00:00-07:00",
+    "date_modified": "2026-08-08T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117062700714525226"
+    ],
+    "lastTootTimestamp": 1786235057415
   }
 }
