@@ -81,6 +81,7 @@ mastodon-post-id: null
 ---
 
 > **Source note:** This essay draws from first-party disclosures by OpenAI and Hugging Face and an August 2026 Black Hat USA presentation by OpenAI researchers Eric Wallace and Michael Dalton. Their reconstruction was preliminary, the investigation remained open, and the speakers said a fuller postmortem would follow. The chronology below should be read with that boundary in mind.
+{: .alert .alert-call-to-action }
 
 In computing, a sandbox is a controlled workspace where software can act, but only with the files, tools, and connections it has been given. Think of it as a locked room built for experimentation. An AI agent may use everything placed inside, but it should not be able to wander into the rest of the building or reach the internet. That is the idea, anyway. The trouble begins when some small service  still connects the room to the world outside.
 
