@@ -4,6 +4,7 @@
   const LIBRARY_STORAGE_KEY = "traveller-characters-v2";
   const LEGACY_STORAGE_KEY = "traveller-character";
   const LIBRARY_VERSION = 2;
+  const DRAFT_OPTION_ATTRIBUTE = "data-character-draft-option";
   const CHARACTERISTIC_KEYS = [
     "str",
     "dex",
@@ -19,6 +20,42 @@
     "std",
     "wlt",
   ];
+  const DRAFT_DEFAULTS = Object.freeze({
+    trainingSkillName: "",
+    trainingSpecialization: "",
+    trainingWeeksSpent: "1",
+    trainingWeeksTotal: "8",
+    skillSearch: "",
+    specializationField: "",
+    skillLevel: "0",
+    educationType: "",
+    educationYears: "4",
+    educationOutcome: "Graduate",
+    educationBenefits: "",
+    careerName: "",
+    careerAssignment: "",
+    careerPromotions: "0",
+    careerYears: "4",
+    careerRank: "",
+    careerBenefits: "",
+    weaponName: "",
+    weaponTL: "",
+    weaponDamage: "",
+    weaponRange: "",
+    weaponWeight: "",
+    weaponMagazine: "",
+    armorName: "",
+    armorRating: "",
+    armorTL: "",
+    armorRadiation: "",
+    augmentType: "",
+    augmentTL: "",
+    augmentImprovement: "",
+    equipmentName: "",
+    equipmentTL: "",
+    equipmentMass: "",
+    equipmentCost: "",
+  });
 
   let activeCharacterId = null;
   let cleanCharacterSnapshot = null;
@@ -315,6 +352,15 @@
     element.value = value === undefined || value === null ? fallback : value;
   }
 
+  function captureTransientDrafts() {
+    return Object.fromEntries(
+      Object.entries(DRAFT_DEFAULTS).map(([id, fallback]) => [
+        id,
+        valueOf(id, fallback),
+      ])
+    );
+  }
+
   function tableRows(containerId) {
     const container = document.getElementById(containerId);
     return container ? Array.from(container.querySelectorAll("tr")) : [];
@@ -344,6 +390,7 @@
       homeworldUWP: valueOf("homeworldUWP"),
       rads: valueOf("rads", "0"),
       upp: valueOf("upp"),
+      drafts: captureTransientDrafts(),
       preCareerOptions: tableRows("education-container").map((row) => {
         const cells = row.querySelectorAll("td");
         return {
@@ -692,53 +739,95 @@
     });
   }
 
-  function resetTransientInputs() {
-    const defaults = {
-      trainingSkillName: "",
-      trainingSpecialization: "",
-      trainingWeeksSpent: "1",
-      trainingWeeksTotal: "8",
-      skillSearch: "",
-      specializationField: "",
-      skillLevel: "0",
-      educationYears: "4",
-      educationBenefits: "",
-      careerPromotions: "0",
-      careerYears: "4",
-      careerRank: "",
-      careerBenefits: "",
-      weaponName: "",
-      weaponTL: "",
-      weaponDamage: "",
-      weaponRange: "",
-      weaponWeight: "",
-      weaponMagazine: "",
-      armorName: "",
-      armorRating: "",
-      armorTL: "",
-      armorRadiation: "",
-      augmentType: "",
-      augmentTL: "",
-      augmentImprovement: "",
-      equipmentName: "",
-      equipmentTL: "",
-      equipmentMass: "",
-      equipmentCost: "",
-    };
+  function draftValue(drafts, id) {
+    const value = drafts[id];
+    return value === undefined || value === null ? DRAFT_DEFAULTS[id] : value;
+  }
 
-    Object.entries(defaults).forEach(([id, value]) => setValue(id, value));
-    ["educationType", "educationOutcome", "careerName", "careerAssignment"].forEach(
-      (id) => {
-        const select = document.getElementById(id);
-        if (select) select.selectedIndex = 0;
+  function setSelectValue(id, value, fallback = "") {
+    const select = document.getElementById(id);
+    if (!select) return;
+
+    Array.from(select.options).forEach((option) => {
+      if (option.hasAttribute(DRAFT_OPTION_ATTRIBUTE)) option.remove();
+    });
+
+    const selectedValue = String(
+      value === undefined || value === null ? fallback : value
+    );
+    if (
+      selectedValue &&
+      !Array.from(select.options).some((option) => option.value === selectedValue)
+    ) {
+      const option = document.createElement("option");
+      option.value = selectedValue;
+      option.textContent = selectedValue;
+      option.setAttribute(DRAFT_OPTION_ATTRIBUTE, "true");
+      select.add(option);
+    }
+    select.value = selectedValue;
+  }
+
+  function rebuildCareerAssignmentOptions(careerName) {
+    setSelectValue("careerName", careerName, DRAFT_DEFAULTS.careerName);
+
+    const assignment = document.getElementById("careerAssignment");
+    if (!assignment) return;
+
+    if (typeof window.updateAssignments === "function") {
+      window.updateAssignments();
+      return;
+    }
+
+    const prompt = document.createElement("option");
+    prompt.value = "";
+    prompt.textContent = "Select Assignment...";
+    assignment.replaceChildren(prompt);
+  }
+
+  function resetTransientInputs(savedDrafts) {
+    const drafts = isRecord(savedDrafts) ? savedDrafts : {};
+
+    Object.keys(DRAFT_DEFAULTS).forEach((id) => {
+      if (
+        id === "educationType" ||
+        id === "educationOutcome" ||
+        id === "careerName" ||
+        id === "careerAssignment" ||
+        id === "careerRank"
+      ) {
+        return;
       }
+      setValue(id, draftValue(drafts, id), DRAFT_DEFAULTS[id]);
+    });
+
+    setSelectValue(
+      "educationType",
+      draftValue(drafts, "educationType"),
+      DRAFT_DEFAULTS.educationType
+    );
+    setSelectValue(
+      "educationOutcome",
+      draftValue(drafts, "educationOutcome"),
+      DRAFT_DEFAULTS.educationOutcome
+    );
+    rebuildCareerAssignmentOptions(draftValue(drafts, "careerName"));
+    setSelectValue(
+      "careerAssignment",
+      draftValue(drafts, "careerAssignment"),
+      DRAFT_DEFAULTS.careerAssignment
+    );
+    setValue(
+      "careerRank",
+      draftValue(drafts, "careerRank"),
+      DRAFT_DEFAULTS.careerRank
     );
   }
 
   function applyCharacterData(character) {
     const data = isRecord(character) ? character : {};
     clearDynamicSections();
-    resetTransientInputs();
+    resetTransientInputs(data.drafts);
 
     setValue("charName", data.charName);
     setValue("species", data.species, "Human");
@@ -976,6 +1065,10 @@
       !isRecord(character.characteristics)
     ) {
       throw new Error("The characteristics section is not valid character data.");
+    }
+
+    if (character.drafts !== undefined && !isRecord(character.drafts)) {
+      throw new Error("The drafts section is not valid character data.");
     }
 
     return character;
