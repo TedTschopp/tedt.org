@@ -76,6 +76,50 @@
             <h1>TRAVELLER 2ND EDITION</h1>
         </div>
 
+        <section class="character-library no-print" id="character-library-manager"
+            aria-labelledby="character-library-heading">
+            <h2 class="section-header character-library-heading" id="character-library-heading">
+                SAVED CHARACTERS
+            </h2>
+
+            <div class="character-library-panel">
+                <div class="character-library-toolbar">
+                    <div class="character-library-select">
+                        <label for="saved-character-select" class="form-label">Saved character</label>
+                        <select class="form-select" id="saved-character-select"
+                            aria-describedby="character-library-help character-library-status">
+                            <option value="">No saved characters yet</option>
+                        </select>
+                    </div>
+
+                    <div class="character-library-actions" role="group" aria-label="Selected character actions">
+                        <button class="btn library-btn library-btn-outline" id="load-character-button" type="button"
+                            onclick="loadCharacter()" disabled>Load Selected</button>
+                        <button class="btn library-btn library-btn-danger" id="delete-character-button" type="button"
+                            onclick="deleteCharacter()" disabled>Delete Selected</button>
+                    </div>
+                </div>
+
+                <div class="character-library-current">
+                    <p id="current-character-status">Current sheet: New character</p>
+                    <div class="character-library-actions" role="group" aria-label="Current sheet actions">
+                        <button class="btn library-btn library-btn-outline" type="button"
+                            onclick="newCharacter()">New Character</button>
+                        <button class="btn library-btn library-btn-primary" type="button"
+                            onclick="saveCharacter()">Save Character</button>
+                        <button class="btn library-btn library-btn-outline" type="button"
+                            onclick="saveCharacterAsNew()">Save as New</button>
+                    </div>
+                </div>
+
+                <p class="character-library-help" id="character-library-help">
+                    Characters are stored only in this browser on this device.
+                </p>
+                <p class="character-library-message" id="character-library-status" role="status"
+                    aria-live="polite" aria-atomic="true"></p>
+            </div>
+        </section>
+
         <!-- Dice Roller - MOVED FROM BOTTOM -->
         <div class="section-header no-print">
             DICE ROLLER
@@ -835,13 +879,10 @@
         <!-- Print Button -->
         <div class="row no-print">
             <div class="col-md-12 text-center">
-                <button class="btn dice-btn" onclick="window.print()">Print Character Sheet</button>
-                <button class="btn btn-secondary" onclick="saveCharacter()">Save Character</button>
-                <button class="btn btn-secondary" onclick="loadCharacter()">Load Character</button>
-                <button class="btn btn-danger" onclick="resetCharacter()">Reset Sheet</button>
-                <button class="btn btn-info" onclick="exportCharacter()">Export Character</button>
-                <button class="btn btn-info" onclick="importCharacter()">Import Character</button>
-                <button class="btn btn-danger" onclick="deleteCharacter()">Delete Saved Character</button>
+                <button class="btn dice-btn" type="button" onclick="window.print()">Print Character Sheet</button>
+                <button class="btn btn-danger" type="button" onclick="newCharacter()">New Character</button>
+                <button class="btn btn-info" type="button" onclick="exportCharacter()">Export Current Character</button>
+                <button class="btn btn-info" type="button" onclick="importCharacter()">Import Character</button>
             </div>
         </div>
 
@@ -854,6 +895,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/Traveller-Character-Sheet-Data.js"></script>
     <script src="js/Character-Sheet.js"></script>
+    <script src="js/Character-Library.js"></script>
 </body>
 
 </html>
