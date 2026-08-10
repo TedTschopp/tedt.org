@@ -1,11 +1,11 @@
 ---
 title: "Traveller Character Sheet"
-summary: "Interactive character sheet for Mongoose Traveller 2E with dice, save/load, and export."
+summary: "Interactive character sheet for Mongoose Traveller 2E with dice, multi-character save/load, and export."
 subtitle: "Mongoose Traveller 2E character management"
 status: maintained
 tool_type: webapp
 date: 2025-02-27
-last_modified: 2026-01-02
+last_modified: 2026-08-10
 featured: false
 tags: [rpg, traveller, character-sheet, sci-fi, javascript, tools]
 tech:
@@ -24,8 +24,8 @@ screenshots:
 features:
   - "Built-in dice roller (tasks + target numbers)"
   - "Print-friendly layout"
-  - "Save/load and reset"
-  - "Export/import character data"
+  - "Save and load multiple characters in this browser"
+  - "Export/import character data, including original-format exports"
 license: null
 ---
 
@@ -38,7 +38,9 @@ printable copy.
 ## How to use it
 
 - Open: [Traveller Character Sheet](/RPG/Traveller/Character-Sheet.html)
-- Fill in character data, then use the actions row to print/save/export
+- Fill in character data, then use Saved Characters at the top to save, load,
+  or switch characters
+- Use the actions row at the bottom to print, export, or import a character
 
 ## Notes
 

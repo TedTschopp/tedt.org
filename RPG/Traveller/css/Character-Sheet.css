@@ -112,6 +112,160 @@
             letter-spacing: 0.5px;
             border-left: 4px solid var(--traveller-tertiary);
         }
+
+        .character-library-heading {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 1rem;
+        }
+
+        .character-library-panel {
+            padding: 16px;
+            border: 1px solid var(--traveller-border);
+            border-top: 0;
+            border-radius: 0 0 3px 3px;
+            background-color: var(--traveller-secondary);
+        }
+
+        .character-library-toolbar,
+        .character-library-current {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 16px;
+        }
+
+        .character-library-select {
+            flex: 1 1 320px;
+        }
+
+        .character-library-select .form-label {
+            margin-bottom: 6px;
+        }
+
+        .character-library-current {
+            align-items: center;
+            margin-top: 14px;
+            padding-top: 14px;
+            border-top: 1px solid var(--traveller-border);
+        }
+
+        .character-library-current p {
+            margin: 0;
+            font-family: var(--font-ui);
+            font-weight: 500;
+        }
+
+        .character-library-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .library-btn {
+            min-height: 44px;
+            padding: 9px 14px;
+            border-width: 2px;
+            border-radius: 3px;
+            font-family: var(--font-ui);
+            font-weight: 700;
+        }
+
+        .library-btn-primary {
+            color: var(--traveller-text-on-dark);
+            background-color: var(--traveller-primary);
+            border-color: var(--traveller-primary);
+        }
+
+        .library-btn-primary:hover,
+        .library-btn-primary:focus-visible {
+            color: var(--traveller-text-on-dark);
+            background-color: var(--traveller-tertiary);
+            border-color: var(--traveller-tertiary);
+        }
+
+        .library-btn-outline {
+            color: var(--traveller-primary);
+            background-color: var(--traveller-content-bg);
+            border-color: var(--traveller-primary);
+        }
+
+        .library-btn-outline:hover,
+        .library-btn-outline:focus-visible {
+            color: var(--traveller-text-on-dark);
+            background-color: var(--traveller-primary);
+            border-color: var(--traveller-primary);
+        }
+
+        .library-btn-danger {
+            color: var(--traveller-text-on-dark);
+            background-color: var(--traveller-tertiary);
+            border-color: var(--traveller-tertiary);
+        }
+
+        .library-btn-danger:hover,
+        .library-btn-danger:focus-visible {
+            color: var(--traveller-text-on-dark);
+            background-color: #700000;
+            border-color: #700000;
+        }
+
+        .library-btn:disabled {
+            color: #595959;
+            background-color: #e5e5e5;
+            border-color: #a8a8a8;
+            opacity: 1;
+            cursor: not-allowed;
+        }
+
+        .character-library-help,
+        .character-library-message {
+            margin: 10px 0 0;
+            font-family: var(--font-secondary);
+            font-size: 0.875rem;
+        }
+
+        .character-library-help {
+            color: #595959;
+        }
+
+        .character-library-message {
+            min-height: 1.4em;
+            color: var(--traveller-text-on-light);
+            font-weight: 500;
+        }
+
+        .character-library-message.is-error {
+            color: #8b0000;
+        }
+
+        @media (max-width: 767.98px) {
+            .character-library-toolbar,
+            .character-library-current {
+                align-items: stretch;
+                flex-direction: column;
+            }
+
+            .character-library-select {
+                flex-basis: auto;
+                width: 100%;
+            }
+
+            .character-library-actions {
+                width: 100%;
+            }
+
+            .character-library-actions .library-btn {
+                flex: 1 1 160px;
+            }
+        }
+
+        @media (max-width: 479.98px) {
+            .character-library-actions .library-btn {
+                flex-basis: 100%;
+                width: 100%;
+            }
+        }
         
         .skill-item, .equipment-item, .weapon-item {
             display: flex;
