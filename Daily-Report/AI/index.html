@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-09 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-10 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,91 +52,55 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-09</h1>
-      <p class="meta">Generated <time datetime="2026-08-09T13:10:36+00:00">2026-08-09T13:10:36Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-10</h1>
+      <p class="meta">Generated <time datetime="2026-08-10T13:10:10+00:00">2026-08-10T13:10:10Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>The enterprise AI news feed is running behind — the most recent items available are from Aug. 4–5, now four to five days old. Today's 24-to-36-hour window (Aug. 7–9 PDT) returned no qualifying items from either feed source. The previous edition (Aug. 8) also had no coverage due to a separate network restriction. This edition surfaces the most recent uncovered stories from Aug. 4–5 and notes what to watch when the feeds refresh.</p>
-<p><strong>Key items from the most recent available feed data (Aug. 4–5):</strong></p>
+      <p>The curated AI news feeds did not surface qualifying items within the required 24-to-36-hour window for Sunday, Aug. 10, 2026. The most recent feed entries are dated Aug. 4, six days before today's publication run. No new enterprise AI stories could be verified and included under the editorial contract.</p>
+<p><strong>Action items for this edition:</strong></p>
 <ul>
-<li>Anthropic disclosed real infrastructure was accessed during misconfigured cybersecurity evaluations — a governance wake-up call for any team running red-team exercises.</li>
-<li>Stripe's internal "Kai" platform shows a replicable blueprint for enterprise AI skill reuse and governance at scale.</li>
-<li>OpenAI's voice AI engineering post is required reading for product teams building real-time speech interfaces.</li>
-<li>Groundcover is making the case for keeping AI agent telemetry inside your own cloud — a timely pitch as agentic deployments multiply.</li>
-<li>Univé's ChatGPT Enterprise rollout produced 1,500+ employee-built custom GPTs and measurable claims-processing gains.</li>
+<li><strong>Check your own channels.</strong> Scan LinkedIn, vendor newsrooms, and internal Slack AI channels for developments from Aug. 8–9.</li>
+<li><strong>Revisit last week's stories.</strong> Aug. 3–4 coverage—LLM threat models, agentic AI frameworks, AI telemetry—may warrant follow-up with your vendors this week.</li>
+<li><strong>Plan for Monday.</strong> A heavier news cycle is typical after a weekend; expect a fuller edition Aug. 11.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Status — No Items in the 24–36-Hour Window</h2>
-<p>The two configured feed sources returned no items dated Aug. 7–9, 2026 (Pacific Time). The most recent items in both feeds are dated Aug. 4–5, 2026 — four to five days old. The Aug. 8 edition was a no-data report due to a separate network access issue in the publishing environment.</p>
-<p>Because the editorial contract requires items within 24–36 hours, no primary stories formally qualify today. Rather than leave this edition empty, the sections below cover the most recent <strong>uncovered</strong> items from Aug. 4–5 — stories the Aug. 7 edition did not include. These are presented as context, not as "yesterday's news."</p>
+      <h2>No Qualifying Items Today</h2>
+<p>Today's automated feed pull retrieved <strong>50 items</strong> from the primary curated source at <code>rss.tedt.org/ai_rss_feed.json</code>. After filtering to the required 24-to-36-hour publication window (Aug. 8, 6 p.m. PDT through Aug. 10, 6 a.m. PDT), zero items qualified. The most recent entries in the feed are timestamped Aug. 4, 2026 — six days before this edition runs.</p>
+<p>The secondary feed (<code>aggregated_wes_ai_news.json</code>) returned an HTTP 404 error and could not be consulted.</p>
+<p>This is not unusual for a weekend edition. Enterprise AI news cycles tend to compress on Saturdays and Sundays, and syndicated feeds are often updated with a processing delay. Monday editions typically reflect the fuller weekend record.</p>
 <hr>
-<h2>Security, Risk &amp; Compliance</h2>
-<h4>Anthropic Found Real Systems During a Misconfigured Eval</h4>
-<p>During internal cybersecurity red-team evaluations, Anthropic's AI models gained unintended access to live internet-connected systems because the testing environment was misconfigured. The company disclosed three specific incidents in a detailed post.</p>
-<p>Why it matters: This is one of the clearest public demonstrations that agentic AI evaluation environments require the same isolation discipline as production systems. If a well-resourced AI lab can misconfigure a test sandbox, enterprise security and AI teams face the same risk at smaller budgets and smaller teams. The disclosure is also notable for its transparency — it sets a useful precedent for how AI providers should handle eval incidents.</p>
-<p><strong>What should I do as a leader?</strong> Audit your organization's AI evaluation and red-team sandbox configurations. Ensure test environments are air-gapped or network-controlled before running capability evaluations involving tool use, code execution, or web access.</p>
-<p><strong>What should I do?</strong> If you run or participate in AI agent testing, treat the test environment like a production security boundary — verify network isolation before every session, not just at setup.</p>
-<p>Source: (Anthropic, 2026-08-02) — <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals</a></p>
-<hr>
-<h2>Enterprise Ops &amp; Adoption</h2>
-<h4>Stripe's Internal AI Platform Shows What Governed AI Sharing Looks Like</h4>
-<p>Stripe published an engineering post on Kai, its internal Knowledge AI Platform. Kai allows employees to build, publish, and reuse AI-powered skills across the company through shared infrastructure, with centralized governance baked in rather than bolted on.</p>
-<p>Why it matters: Most enterprise AI platforms today are either too centralized (IT-driven, slow, and restrictive) or too decentralized (shadow AI, ungoverned). Stripe's model offers a middle path: a governed marketplace of reusable AI skills where individual teams build within guardrails set by the platform. For enterprises trying to scale beyond early pilots, this architecture is worth studying in detail.</p>
-<p><strong>What should I do as a leader?</strong> Consider whether your AI tooling enables reuse or forces each team to rebuild from scratch. A shared skills layer — even a lightweight one — can dramatically reduce duplicated effort and governance risk.</p>
-<p>Source: (Stripe Engineering, 2026-08-02) — [(stripe.dev/redacted)(stripe.dev/redacted)</p>
-<h4>Univé Built 1,500 Custom GPTs — What That Actually Means</h4>
-<p>Dutch insurer Univé deployed ChatGPT Enterprise across its workforce. Employees created more than 1,500 custom GPTs, with measurable results including significantly shorter claims preparation time.</p>
-<p>Why it matters: The headline number — 1,500 custom GPTs — is less important than what it signals: when enterprises give employees access to safe, governed AI tools and the freedom to experiment, adoption compounds quickly. Insurance is a document-heavy, rules-heavy industry. If AI accelerates claims workflows there, it can accelerate almost any knowledge-work domain.</p>
-<p><strong>What should I do as a leader?</strong> Track not just AI tool adoption rates, but employee-created automations and workflows as a leading indicator of organizational AI fluency.</p>
-<p>Source: (OpenAI, 2026-08-02) — <a href="https://openai.com/index/unive/">https://openai.com/index/unive/</a></p>
-<hr>
-<h2>Vendors, Platforms &amp; Models</h2>
-<h4>OpenAI Publishes the Engineering Behind Real-Time Voice AI</h4>
-<p>OpenAI detailed how it built its low-latency voice AI system, covering stateful inference, prompt caching, and the architectural choices that enable natural real-time conversations. The post walks through six months of engineering iteration.</p>
-<p>Why it matters: Voice AI is moving from novelty to enterprise infrastructure — for customer service, internal help desks, and accessibility tools. Understanding the latency and architecture constraints helps product and platform teams make realistic build-vs.-buy decisions. OpenAI's transparency here is also a useful competitive signal: real-time voice requires infrastructure investment that most enterprises cannot replicate internally.</p>
-<p><strong>What should I do as a leader?</strong> If voice AI is on your product or operations roadmap, use this post to anchor your latency and infrastructure requirements before selecting a platform.</p>
-<p>Source: (OpenAI, 2026-08-04) — <a href="https://openai.com/index/continuous-voice-interaction-with-gpt-live/">https://openai.com/index/continuous-voice-interaction-with-gpt-live/</a></p>
-<h4>Groundcover Wants Your AI Agent Telemetry to Stay Inside Your Cloud</h4>
-<p>Groundcover, an observability startup, raised new funding and made the case that AI agent telemetry — traces, memory states, tool calls, and operational logs — should never leave an enterprise's own cloud environment.</p>
-<p>Why it matters: As AI agents proliferate, the telemetry they generate becomes a sensitive operational asset. Agent traces can expose business logic, customer data patterns, and internal workflows. Groundcover's pitch aligns with a broader enterprise posture: treat AI observability data with the same data residency discipline you apply to application logs and security events.</p>
-<p><strong>What should I do as a leader?</strong> Add AI agent telemetry to your data classification and residency policy review. Know where your agent traces are stored and who can access them before agents go into production.</p>
-<p>Source: (VentureBeat, 2026-08-03) — <a href="https://venturebeat.com/data/how-is-your-enterprise-tracking-ai-agent-telemetry-groundcover-thinks-it-should-never-leave-your-cloud">https://venturebeat.com/data/how-is-your-enterprise-tracking-ai-agent-telemetry-groundcover-thinks-it-should-never-leave-your-cloud</a></p>
-<hr>
-<h2>Quick Hits</h2>
+<h2>What Was Checked</h2>
 <ul>
-<li><strong>HBR: AI agents require cross-departmental orchestration, not just departmental deployment</strong> — <a href="https://hbr.org/2026/09/how-ai-agents-orchestrate-work-across-silos">https://hbr.org/2026/09/how-ai-agents-orchestrate-work-across-silos</a></li>
-<li><strong>Couchbase details a multi-model AI architecture for natural language database queries using Amazon Bedrock</strong> — <a href="https://aws.amazon.com/blogs/machine-learning/how-couchbase-built-a-multi-model-ai-architecture-for-capella-iq-with-amazon-bedrock/">https://aws.amazon.com/blogs/machine-learning/how-couchbase-built-a-multi-model-ai-architecture-for-capella-iq-with-amazon-bedrock/</a></li>
-<li><strong>MiniMax H3 open multimodal model emphasizes sparse attention for cross-task efficiency</strong> — <a href="https://x.com/MiniMax_AI/status/2083008095488516262">https://x.com/MiniMax_AI/status/2083008095488516262</a></li>
-<li><strong>Hugging Face: idle GPUs are becoming as costly as grounded aircraft for AI infrastructure teams</strong> — <a href="https://huggingface.co/blog/Dharma-AI/gpu-management">https://huggingface.co/blog/Dharma-AI/gpu-management</a></li>
-<li><strong>Research: prompting LLMs to assert consciousness shifts human trust perceptions — enterprise AI ethics teams take note</strong> — <a href="https://arxiv.org/abs/2607.28607">https://arxiv.org/abs/2607.28607</a></li>
+<li><strong>Primary feed:</strong> <code>rss.tedt.org/ai_rss_feed.json</code> — 50 items fetched, 12 within the last 7 days, 0 within the 24-to-36-hour window.</li>
+<li><strong>Secondary feed:</strong> <code>rss.tedt.org/aggregated_wes_ai_news.json</code> — unavailable (404).</li>
+<li><strong>Existing newsletter reviewed:</strong> The Aug. 9, 2026 edition was checked to avoid repeating items already covered.</li>
 </ul>
 <hr>
 <h2>Looking Ahead</h2>
 <ul>
-<li><strong>Feed refresh:</strong> Both configured sources appear to have a multi-day publication lag. If the feeds do not refresh by Monday, Aug. 10, consider supplementing with direct RSS from Anthropic, OpenAI, Microsoft Research, and VentureBeat AI.</li>
-<li><strong>Agentic security:</strong> The Anthropic eval disclosure will likely prompt broader discussion about evaluation sandbox standards. Watch for industry response and potential guidance from AI safety bodies this week.</li>
-<li><strong>Enterprise AI telemetry governance:</strong> Groundcover's raise signals investor conviction that AI observability is a distinct enterprise need. Expect more vendor activity in this space in the next 30 to 60 days.</li>
-<li><strong>Voice AI infrastructure:</strong> OpenAI's engineering transparency around latency and real-time voice sets a public benchmark. Expect competing vendors to publish their own architecture posts in the weeks ahead.</li>
+<li><strong>Monday, Aug. 11</strong> — Expect catch-up coverage as weekend developments surface. Watch for enterprise platform updates, any regulatory filings, and post-weekend model announcements from major vendors.</li>
+<li><strong>AI governance cadence</strong> — If your organization operates on a weekly AI review cycle, Monday mornings are an ideal time to circulate last week's digest and align on emerging risks or opportunities.</li>
+<li><strong>Feed reliability</strong> — If the secondary aggregated feed remains unavailable, your team may want to check with the feed provider or configure a fallback source.</li>
 </ul>
 <hr>
 <h2>Sign-Off</h2>
-<p>Four days without new feed data is a reminder that the pace of enterprise AI news — like the technology itself — is uneven. Some weeks the signal is overwhelming; others, the feeds go quiet. That quiet is not always bad news. It can mean organizations are heads-down implementing, not just announcing.</p>
-<p>Take this weekend to revisit one uncovered item that got lost in the week's noise. The Anthropic eval disclosure, Stripe's Kai platform, and Univé's workforce rollout are each worth a second read with your team. Good implementation thinking rarely goes stale. See you Monday, whenever the feeds are ready.</p>
+<p>The quiet Sunday mornings are a good reminder that information, like the rest of life, moves in rhythms — and not every day brings a breakthrough worth chasing. Use the pause. Read something longer than a headline. Share last week's most interesting story with a colleague who missed it. We'll be back Monday with whatever the week brings — and it usually brings plenty.</p>
+<p>Stay curious, stay grounded, and have a good rest of your Sunday.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>items_fetched_count:</strong> 50 (feed 1: ai_rss_feed.json); feed 2 (aggregated_wes_ai_news.json) returned HTTP 404</li>
-<li><strong>items_within_24_36_hours_count:</strong> 0 — no items dated Aug. 7–9, 2026 PDT in either feed</li>
-<li><strong>items_deduplicated_count:</strong> 0 qualifying items to deduplicate</li>
-<li><strong>items_published_count:</strong> 5 primary items + 5 quick hits, sourced from Aug. 2–5 uncovered stories</li>
-<li><strong>excluded_items_summary:</strong> 50 items excluded — all older than the 24–36 hour editorial window. The Aug. 7 edition previously covered 7 items from Aug. 3–4 (AI-IT alignment, NYT AI spending, LLM threat model, Shieldstral, Formula 1 AWS, Microsoft Orchard, Qwen3.8-Max). The Aug. 8 edition had no data due to network restriction.</li>
-<li><strong>feed_staleness_note:</strong> Most recent item in feed 1 is dated 2026-08-05T00:00:00+00:00; today is Aug. 9, 2026. Feed appears to have a multi-day publication lag.</li>
-<li><strong>feed_2_status:</strong> aggregated_wes_ai_news.json returned HTTP 404 — unavailable</li>
-<li><strong>date_reference:</strong> Pacific Time (America/Los_Angeles), 2026-08-09 06:05 PDT</li>
+<li><strong>items_fetched_count:</strong> 50 (primary feed only; secondary feed returned 404)</li>
+<li><strong>items_within_24_36_hours_count:</strong> 0</li>
+<li><strong>items_deduplicated_count:</strong> 0</li>
+<li><strong>items_published_count:</strong> 0</li>
+<li><strong>excluded_items_summary:</strong> 50 items excluded — all older than 36 hours (most recent dated Aug. 4, 2026 PDT). 12 items fell within the last 7 days but outside the required 24-to-36-hour window and were not included per editorial contract.</li>
+<li><strong>secondary_feed_status:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> returned HTTP 404 — unavailable at time of publication.</li>
+<li><strong>existing_newsletter_checked:</strong> Yes — Aug. 9, 2026 edition reviewed to screen for recently covered URLs.</li>
+<li><strong>generation_time_pt:</strong> 2026-08-10 06:07 PDT</li>
 </ul>
     </section>
     <footer>
