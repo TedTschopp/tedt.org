@@ -13,6 +13,16 @@ function getCareerDiscipline(careerName) {
   }
 }
 
+// Escape user-controlled values before inserting them into HTML text or quoted attributes.
+function escapeHtml(value) {
+  return String(value ?? "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 // Define core functions before they are used
 
 // Update the DM (Dice Modifier) based on characteristic value
@@ -282,6 +292,7 @@ function updateExistingSkill(skillName, specialization, level) {
     ) {
       const input = skillItems[i].querySelector("input");
       input.value = level;
+      input.dispatchEvent(new Event("input", { bubbles: true }));
       return true;
     }
   }
@@ -309,17 +320,17 @@ function addSingleSkill(skillName, specialization, skillLevel) {
 
   // Store both skill name and specialization separately for data handling
   skillDiv.innerHTML = `
-                <span class="skill-name" data-skill="${skillName}" data-specialization="${
-    specialization || ""
+                <span class="skill-name" data-skill="${escapeHtml(skillName)}" data-specialization="${
+    escapeHtml(specialization || "")
   }">
-                    ${skillName}${
+                    ${escapeHtml(skillName)}${
     specialization
-      ? ` <span class="skill-specialization">(${specialization})</span>`
+      ? ` <span class="skill-specialization">(${escapeHtml(specialization)})</span>`
       : ""
   }
                 </span>
                 <div class="d-flex align-items-center">
-                    <input type="number" class="form-control form-control-sm mx-2" value="${skillLevel}" min="0" style="width: 60px;">
+                    <input type="number" class="form-control form-control-sm mx-2" value="${escapeHtml(skillLevel)}" min="0" style="width: 60px;" aria-label="${escapeHtml(skillName || "Skill")} level">
                     <button class="btn btn-remove no-print" onclick="this.parentElement.parentElement.remove()">×</button>
                 </div>
             `;
@@ -434,10 +445,10 @@ function addEducation() {
   const educationContainer = document.getElementById("education-container");
   const row = document.createElement("tr");
   row.innerHTML = `
-                <td data-type="${educationType}">${educationType}</td>
-                <td data-years="${educationYears}">${educationYears}</td>
-                <td data-outcome="${educationOutcome}">${educationOutcome}</td>
-                <td data-benefits="${educationBenefits}">${educationBenefits}</td>
+                <td data-type="${escapeHtml(educationType)}">${escapeHtml(educationType)}</td>
+                <td data-years="${escapeHtml(educationYears)}">${escapeHtml(educationYears)}</td>
+                <td data-outcome="${escapeHtml(educationOutcome)}">${escapeHtml(educationOutcome)}</td>
+                <td data-benefits="${escapeHtml(educationBenefits)}">${escapeHtml(educationBenefits)}</td>
                 <td class="no-print">
                     <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateEducationButtons(); updateTotalYears();">×</button>
                 </td>
@@ -1162,12 +1173,12 @@ function addCareer() {
   const careersContainer = document.getElementById("careers-container");
   const row = document.createElement("tr");
   row.innerHTML = `
-                <td data-career="${careerName}">${careerName}</td>
-                <td data-assignment="${careerAssignment}">${careerAssignment}</td>
-                <td data-promotions="${careerPromotions}">${careerPromotions}</td>
-                <td data-years="${careerYears}">${careerYears}</td>
-                <td data-rank="${careerRank}">${careerRank}</td>
-                <td data-benefits="${careerBenefits}">${careerBenefits}</td>
+                <td data-career="${escapeHtml(careerName)}">${escapeHtml(careerName)}</td>
+                <td data-assignment="${escapeHtml(careerAssignment)}">${escapeHtml(careerAssignment)}</td>
+                <td data-promotions="${escapeHtml(careerPromotions)}">${escapeHtml(careerPromotions)}</td>
+                <td data-years="${escapeHtml(careerYears)}">${escapeHtml(careerYears)}</td>
+                <td data-rank="${escapeHtml(careerRank)}">${escapeHtml(careerRank)}</td>
+                <td data-benefits="${escapeHtml(careerBenefits)}">${escapeHtml(careerBenefits)}</td>
                 <td class="no-print">
                     <button class="btn btn-remove" onclick="this.closest('tr').remove(); updateTotalYears();">×</button>
                 </td>
@@ -1285,13 +1296,13 @@ function addWeapon() {
   const weaponsContainer = document.getElementById("weapons-container");
   const row = document.createElement("tr");
   row.innerHTML = `
-                <td>${weaponName}</td>
-                <td>${weaponTL || "-"}</td>
-                <td><input type="text" class="form-control form-control-sm" placeholder="Skill"></td>
-                <td>${weaponDamage || "-"}</td>
-                <td>${weaponRange || "-"}</td>
-                <td>${weaponWeight || "-"}</td>
-                <td>${weaponMagazine || "-"}</td>
+                <td>${escapeHtml(weaponName)}</td>
+                <td>${escapeHtml(weaponTL || "-")}</td>
+                <td><input type="text" class="form-control form-control-sm" placeholder="Skill" aria-label="${escapeHtml(weaponName || "Weapon")} skill"></td>
+                <td>${escapeHtml(weaponDamage || "-")}</td>
+                <td>${escapeHtml(weaponRange || "-")}</td>
+                <td>${escapeHtml(weaponWeight || "-")}</td>
+                <td>${escapeHtml(weaponMagazine || "-")}</td>
                 <td class="no-print">
                     <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
                 </td>
@@ -1323,10 +1334,10 @@ function addArmor() {
   const armorContainer = document.getElementById("armor-container");
   const row = document.createElement("tr");
   row.innerHTML = `
-                <td>${armorName}</td>
-                <td>${armorRating || "0"}</td>
-                <td>${armorTL || "-"}</td>
-                <td>${armorRadiation || "-"}</td>
+                <td>${escapeHtml(armorName)}</td>
+                <td>${escapeHtml(armorRating || "0")}</td>
+                <td>${escapeHtml(armorTL || "-")}</td>
+                <td>${escapeHtml(armorRadiation || "-")}</td>
                 <td class="no-print">
                     <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
                 </td>
@@ -1356,10 +1367,10 @@ function addEquipment() {
   const equipmentContainer = document.getElementById("equipment-container");
   const row = document.createElement("tr");
   row.innerHTML = `
-                <td>${equipmentName}</td>
-                <td>${equipmentTL || "-"}</td>
-                <td>${equipmentMass || "0"}</td>
-                <td>${equipmentCost || "0"}</td>
+                <td>${escapeHtml(equipmentName)}</td>
+                <td>${escapeHtml(equipmentTL || "-")}</td>
+                <td>${escapeHtml(equipmentMass || "0")}</td>
+                <td>${escapeHtml(equipmentCost || "0")}</td>
                 <td class="no-print">
                     <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
                 </td>
@@ -1713,10 +1724,10 @@ function addTrainingSkill() {
   const trainingContainer = document.getElementById("training-skills-container");
   const row = document.createElement("tr");
   row.innerHTML = `
-    <td data-skill="${skillName}">${skillName}</td>
-    <td data-specialization="${specialization}">${specialization || "-"}</td>
-    <td data-weeks-spent="${weeksSpent}">${weeksSpent}</td>
-    <td data-weeks-total="${weeksTotal}">${weeksTotal}</td>
+    <td data-skill="${escapeHtml(skillName)}">${escapeHtml(skillName)}</td>
+    <td data-specialization="${escapeHtml(specialization)}">${escapeHtml(specialization || "-")}</td>
+    <td data-weeks-spent="${escapeHtml(weeksSpent)}">${escapeHtml(weeksSpent)}</td>
+    <td data-weeks-total="${escapeHtml(weeksTotal)}">${escapeHtml(weeksTotal)}</td>
     <td class="no-print">
       <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
       <button class="btn btn-secondary btn-sm ml-2" onclick="completeTraining(this)">Complete</button>
@@ -2548,9 +2559,9 @@ function addAugment() {
   const augmentsContainer = document.getElementById("augments-container");
   const row = document.createElement("tr");
   row.innerHTML = `
-    <td>${augmentType}</td>
-    <td>${augmentTL || "-"}</td>
-    <td>${augmentImprovement || "-"}</td>
+    <td>${escapeHtml(augmentType)}</td>
+    <td>${escapeHtml(augmentTL || "-")}</td>
+    <td>${escapeHtml(augmentImprovement || "-")}</td>
     <td class="no-print">
       <button class="btn btn-remove" onclick="this.closest('tr').remove()">×</button>
     </td>
