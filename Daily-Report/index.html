@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-08-10 | TedT.org</title>
+  <title>Daily Report - 2026-08-11 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,104 +52,111 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-08-10</h1>
-      <p class="meta">Generated <time datetime="2026-08-10T05:05:18+00:00">2026-08-10T05:05:18Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-11</h1>
+      <p class="meta">Generated <time datetime="2026-08-11T04:56:56+00:00">2026-08-11T04:56:56Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Site is healthy and active.</strong> One new post published yesterday (AI agent containment and incident response), Mastodon sync ran successfully, and all automated daily jobs (enterprise AI refresh, daily report) are firing on schedule. No build failures detected. Open issue backlog is stable with P2 content-discovery work queued but not blocking.</p>
+      <p><strong>Active development day on August 10.</strong> Two feature PRs for the Traveller RPG character sheet were merged within hours of each other: multi-character library support (PR #217) and draft-persistence hardening (PR #218). Automated chores (daily report refresh, Enterprise AI refresh) are running on schedule. One open Dependabot PR (#216) needs review. No build failures detected in the workflow run list. Content pipeline is healthy with recent posts merged and Mastodon sync current.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Bottom Line</h2>
-<p>Site is operational and content is flowing. TedTschopp published a new post on <strong>2026-08-09</strong> covering AI agent containment and incident response, with responsive images. Mastodon sync picked it up automatically. Automated chore jobs ran on all days in the review window without failure. No open PRs or blocking issues were found.</p>
+      <h2>Bottom Line Up Front</h2>
+<p>Two significant Traveller RPG tool PRs merged on August 10. Automated scheduled jobs are green. One Dependabot PR is pending. No blocking issues identified.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Author Commits — 2026-08-09</h3>
+<h3>Merged Pull Requests (August 10)</h3>
+<p><strong>PR #218 – fix(traveller): persist drafts and harden row builders</strong></p>
 <ul>
-<li><strong><code>feat(post): add new article on AI agent containment and incident response</code></strong></li>
+<li>Merged: 2026-08-10 at 17:04 UTC</li>
 <li>Author: TedTschopp</li>
-<li>Also added responsive images for the new article in the same session</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/28d7c3e734e53629fffa0a9d41625abcedf9419d">Commit 28d7c3e</a></li>
+<li>Saves and restores all 34 unfinished Add-form draft fields per character</li>
+<li>Marks programmatic skill-level updates as unsaved</li>
+<li>Preserves compatible custom select values without leaking between characters</li>
+<li>Adds accessible names to newly created skill and weapon inputs</li>
+<li>Escapes user-controlled draft values before legacy row-builder HTML insertion</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/218">PR link</a></li>
 </ul>
+<p><strong>PR #217 – feat(traveller): add multi-character library</strong></p>
 <ul>
-<li><strong><code>content(post): add source note for OpenAI and Hugging Face incident</code></strong></li>
+<li>Merged: 2026-08-10 at 16:24 UTC</li>
 <li>Author: TedTschopp</li>
-<li>Follow-up amendment to the new post, adding source attribution</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/76ba18b377c83078fdab8c6fbf13fe227358d738">Commit 76ba18b</a></li>
+<li>Adds a responsive Saved Characters manager to the Traveller character sheet</li>
+<li>Stores multiple characters in a versioned browser-local collection</li>
+<li>Copies and reconciles the original <code>traveller-character</code> record without destroying it</li>
+<li>Preserves original direct-character JSON format for export and import compatibility</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/217">PR link</a></li>
 </ul>
-<h3>Automated Bot Commits — Last 7 Days</h3>
-<p>All chore jobs fired daily without gaps:</p>
+<h3>Recent Human Commits (August 9–10)</h3>
 <ul>
-<li><code>chore: refresh yesterday in enterprise ai</code> — runs daily ~13:00 UTC</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/c7e61c01f9d850b5070e2128a3b05fd199573471">2026-08-09</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/190482e123289821555bac3ce9585cd7d22d0fbe">2026-08-08</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/3d489fd6ef7e9e44dcc9a56900fc0518bdc5c132">2026-08-07</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/d823333135389ba760875d4bfee4922aa0051a6c">2026-08-06</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/bf96cfee850ee2a41246c68edd7ec77c71cf9fde">2026-08-05</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/78e943196c52127b5cc904dba1ec86f5ccecb7f9">2026-08-04</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/eac03c45d84923eff2ba13b423c975b1147d3f60">2026-08-03</a></li>
+<li><strong>2026-08-09</strong> – <code>content(post): add new article on AI agent containment and incident response</code> with responsive images</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/28d7c3e734e53629fffa0a9d41625abcedf9419d">Commit</a></li>
+<li><strong>2026-08-09</strong> – <code>content(post): add source note for OpenAI and Hugging Face incident</code></li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/76ba18b377c83078fdab8c6fbf13fe227358d738">Commit</a></li>
+<li><strong>2026-08-09</strong> – <code>chore: update Mastodon cache/front matter</code> (automated via github-actions[bot])</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/commit/023a2fcc47c1bc7216d356d4f9b85c80e20d4497">Commit</a></li>
 </ul>
+<h3>Automated Chores (On Schedule)</h3>
 <ul>
-<li><code>chore: refresh daily report</code> — runs daily ~04:00–05:00 UTC</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/2af64ad35876f4d7d9f1ec6e2b2ecad72f217266">2026-08-09</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/52ddde0719197e9567a74cfedf2403d47dab654d">2026-08-08</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/a8675020475e880815536465ba1948211bf05bd8">2026-08-07</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/3159db484085d131fb15d6d5d5c23383df61f92b">2026-08-06</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/944694f99e9443c8410fc84c404ada9485d9db31">2026-08-05</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/b8f9badc2fd11a2c71eb3ffd3c4f8a415ab8d43f">2026-08-04</a>, <a href="https://github.com/TedTschopp/tedt.org/commit/2abc6ba6750715e2eb0f9319b844fd2a719fa064">2026-08-03</a></li>
-</ul>
-<ul>
-<li><code>chore: update Mastodon cache/front matter</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/023a2fcc47c1bc7216d356d4f9b85c80e20d4497">2026-08-09</a></li>
-<li>Mastodon sync triggered and completed for yesterday's new post</li>
-</ul>
-<ul>
-<li><code>chore: refresh DUSD lunch calendar</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/a35d323533543f0596c27c9a0338b1929e4c8cac">2026-08-04</a></li>
-<li>ICS calendar refresh ran on schedule</li>
+<li>Daily report refresh: running consistently each morning UTC</li>
+<li>Enterprise AI section refresh: running each afternoon UTC</li>
+<li>Mastodon cache/front matter sync: fired on August 9</li>
 </ul>
 <hr>
-<h2>Workflow Health</h2>
-<p><strong>Daily Report workflow (run #103):</strong> <code>in_progress</code> as of report generation — this run.</p>
-<p><strong>Pattern:</strong> All automated workflows (<code>enterprise-ai</code> refresh, daily report, Mastodon sync, DUSD lunch) have committed without gaps for every day in the review window. No failed runs were detected in the visible workflow history.</p>
-<hr>
-<h2>Open Issues — Backlog Summary</h2>
-<p>No blocking issues. The open issue list contains a stable P2 backlog of content-discovery improvements:</p>
+<h2>Open Pull Requests</h2>
+<p><strong>PR #216 – chore(deps): bump actions/setup-python from 6 to 7</strong> (Dependabot)</p>
 <ul>
-<li><strong>#186</strong> <code>[P2]</code> Enhance category landing pages: related categories, tag clouds, depth indicators</li>
-<li>Labels: <code>content-discovery</code>, <code>UX</code>, <code>P2</code>, <code>audit-2026-05</code></li>
-<li>Scope: extend <code>_layouts/category.html</code> — depends on #183 (tagging) and #178 (pillar pages)</li>
+<li>Opened: 2026-08-03</li>
+<li>Author: dependabot[bot]</li>
+<li>Labels: <code>dependencies</code>, <code>github_actions</code></li>
+<li>Upgrade from v6 to v7, includes ESM migration and dependency updates</li>
+<li><a href="https://github.com/TedTschopp/tedt.org/pull/216">PR link</a></li>
+<li><strong>Action needed:</strong> Review and merge or explicitly ignore this major version bump</li>
 </ul>
-<ul>
-<li><strong>#185</strong> <code>[P2]</code> Build cross-collection content bridges and related-posts infrastructure</li>
-<li>Labels: <code>content-discovery</code>, <code>UX</code>, <code>P2</code>, <code>audit-2026-05</code></li>
-<li>Scope: <code>related:</code> front matter field, related-posts footer, thematic landing pages</li>
-</ul>
-<ul>
-<li><strong>#184</strong> <code>[P2]</code> Drive prompt series adoption: audit and populate series metadata</li>
-<li>Labels: <code>content-discovery</code>, <code>P2</code>, <code>audit-2026-05</code></li>
-<li>Scope: Only 3 of 56 prompts have <code>series:</code> metadata; ADR 0002 adoption near-zero</li>
-</ul>
-<p>All three are <code>audit-2026-05</code> items — queued for longer-horizon improvement, not urgent.</p>
 <hr>
-<h2>Content &amp; Publishing Pipeline</h2>
-<p><strong>New content:</strong> One substantive post added on 2026-08-09 covering AI agent containment and incident response. Responsive images included. Source attribution amended in a follow-up commit on the same day. Mastodon syndication ran within hours.</p>
-<p><strong>Enterprise AI section:</strong> Automated daily refresh continues to commit updated "yesterday in enterprise ai" content, maintaining the AI news cadence without manual intervention.</p>
-<p><strong>Prompt library:</strong> Series metadata adoption remains low (#184). Worth a focused effort if prompt discovery is a priority.</p>
-<hr>
-<h2>Risks and Observations</h2>
+<h2>Site Quality and Workflow Health</h2>
 <ul>
-<li><strong>No P0/P1 issues</strong> in the open list. Site appears stable.</li>
-<li><strong>Category pages are thin stubs</strong> (#186 open since May 2026). If SEO or category-level engagement is a priority, this is the highest-leverage improvement available.</li>
-<li><strong>Prompt series adoption at 5.4%</strong> (#184). ADR 0002 infrastructure exists but the content metadata doesn't match — series navigation shows empty sections on prompt-detail pages. Low effort to fix incrementally.</li>
-<li><strong>[ASSUMPTION]</strong> No HTML Proofer build logs were accessible in this run. Build health is inferred from the absence of failed workflow commits, not from a direct Proofer report.</li>
+<li>Current workflow run (Daily Report #104) is <code>in_progress</code> at time of report generation — this run itself.</li>
+<li>No failed or errored workflow runs visible in the most recent 10 runs.</li>
+<li>Automated chores (daily report, Enterprise AI refresh, Mastodon sync) are all firing as scheduled.</li>
+<li>Both Traveller PRs included validation steps: <code>bundle exec jekyll build</code>, <code>node --check</code>, scoped HTMLProofer, and axe accessibility audits. Zero reported violations.</li>
+</ul>
+<hr>
+<h2>Content and Publishing Pipeline</h2>
+<ul>
+<li>New article published on August 9: <strong>AI agent containment and incident response</strong> (with responsive images and a Mastodon source note).</li>
+<li>Mastodon front matter sync ran and committed on August 9, indicating social syndication is active.</li>
+<li>Traveller character sheet tool has received substantial new capability: multi-character management is now live.</li>
+</ul>
+<hr>
+<h2>Open Issues (Sampling)</h2>
+<p>At least one open issue exists related to <strong>category landing page enrichment</strong> (41 category pages described as minimal redirect stubs lacking related-category navigation, tag clouds, content depth indicators, and breadcrumbs). This is a discovery/engagement improvement, not a blocker.</p>
+<hr>
+<h2>Risks and Blockers</h2>
+<ul>
+<li><strong>Low risk:</strong> PR #216 (Dependabot <code>actions/setup-python</code> v6 → v7) has been open since August 3. It is a major version bump. Review sooner rather than later to avoid drift.</li>
+<li><strong>No blocking failures</strong> detected in the workflow runs checked.</li>
+<li><strong>[ASSUMPTION]</strong> Build artifact deployment is assumed healthy given no failed workflow runs in the sampled list; full deploy workflow status was not individually confirmed.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Pick up #184</strong> (prompt series metadata) — isolated, low-risk, and unblocks in-app series navigation with no template changes needed.</li>
-<li><strong>Review #186</strong> (category pages) — <code>_layouts/category.html</code> enhancement would improve SEO footprint with minimal risk.</li>
-<li><strong>Monitor</strong> automated chore jobs; all nominal, no action needed today.</li>
-<li><strong>Consider</strong> running <code>make qa</code> locally after the AI agent containment post to verify feed integrity picks up the new content correctly.</li>
+<li><strong>Review and merge PR #216</strong> (Dependabot <code>actions/setup-python</code> bump). It has been open 8 days.</li>
+<li><strong>Confirm the new Traveller multi-character library</strong> works end-to-end in a real browser session. The PR testing was thorough but local-storage behavior can surface edge cases post-merge.</li>
+<li><strong>Consider addressing the category landing page issue</strong> — 41 thin stubs are a low-effort, high-discovery-value improvement opportunity per the open issue.</li>
+<li><strong>Continue content publication cadence</strong> — the AI agent containment article is a strong topical piece; ensure it is properly syndicated to Mastodon if not already done.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commit data: GitHub MCP <code>list_commits</code> (TedTschopp/tedt.org, last 20 commits as of 2026-08-10T05:00 UTC)</li>
-<li>Issue data: GitHub MCP <code>list_issues</code> (open issues, page 1, 10 results) — full backlog not enumerated; only first page reviewed</li>
-<li>Workflow run data: GitHub MCP <code>list_workflow_runs</code> (10 most recent runs across all workflows)</li>
-<li>No HTML Proofer build logs reviewed; build health inferred from absence of error commits in the automated job history [ASSUMPTION]</li>
-<li>No PR data reviewed; no open PRs were surfaced in the workflow run context</li>
-<li>Daily Report workflow run #103 (ID: 31357173041) is the current run generating this report</li>
+<li>Commits sourced from <a href="https://github.com/TedTschopp/tedt.org/commits/main">TedTschopp/tedt.org commits</a>, most recent 20 entries</li>
+<li>Pull request data from GitHub API (closed and open PRs, most recent 5 each)</li>
+<li>Workflow run list: most recent 10 runs from <code>list_workflow_runs</code> — full status detail not individually confirmed for each run</li>
+<li>Open issues: sampled from GitHub API; full issue list not exhaustively reviewed</li>
+<li>Workflow run #31459787425 is this Daily Report run itself (in_progress at generation time)</li>
+<li>[ASSUMPTION] Build deployment health inferred from absence of failure status in sampled workflow runs; not independently verified via deploy artifact logs</li>
+<li>External link health (HTMLProofer external) not checked — no tool access to build output</li>
 </ul>
     </section>
     <footer>
