@@ -4,7 +4,7 @@ title: "The Sandbox Was Not the Boundary"
 permalink: /slides/the-sandbox-was-not-the-boundary/
 date: 2026-08-13
 categories: [Slides]
-description: "What the incident exposed about software delivery and defense."
+description: "A 27-slide reconstruction of what the OpenAI-Hugging Face incident exposed about vulnerability response, software delivery, and evidence-based defense."
 image: /slides/decks/the-sandbox-was-not-the-boundary/slide-preview.png
 image-alt: "Title slide for The Sandbox Was Not the Boundary"
 image_width: 1200
