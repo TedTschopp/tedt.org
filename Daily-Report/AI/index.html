@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-12 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-13 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,89 +52,45 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-12</h1>
-      <p class="meta">Generated <time datetime="2026-08-12T13:11:03+00:00">2026-08-12T13:11:03Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-13</h1>
+      <p class="meta">Generated <time datetime="2026-08-13T13:10:14+00:00">2026-08-13T13:10:14Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>The curated AI news feeds checked for today's edition returned no items published within the required 24–36 hour window — the most recent entries are dated Aug. 5, 2026, a full week behind today's Pacific Time date of Aug. 12. No qualifying new stories could be confirmed and published under the editorial contract.</p>
-<p><strong>Action items for enterprise leaders:</strong></p>
-<ul>
-<li>Verify that feed infrastructure at rss.tedt.org is refreshing on its expected schedule.</li>
-<li>Treat today's gap as a monitoring signal: if feeds are stale, check upstream aggregation pipelines.</li>
-<li>Review the Aug. 5 items surfaced below as high-value background reading while awaiting a refreshed feed.</li>
-<li>Plan a manual or fallback feed check if the stale condition persists into tomorrow's run.</li>
-</ul>
+      <p>No qualifying news items were published in the monitored feeds during the past 24-36 hours. The primary feed (<code>ai_rss_feed.json</code>) last updated on Aug. 5, 2026, and the secondary feed (<code>aggregated_wes_ai_news.json</code>) returned a 404. A feed refresh or source update is needed before the next full edition can be published.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Gap Notice</h2>
-<p>Today's automated run found <strong>no qualifying items</strong> within the 24–36 hour editorial window. Both curated feed sources — <code>rss.tedt.org/ai_rss_feed.json</code> and <code>rss.tedt.org/aggregated_wes_ai_news.json</code> (the latter returned HTTP 404) — have a newest entry date of <strong>Aug. 5, 2026</strong>. That is seven days behind the current Pacific Time date of Aug. 12, 2026.</p>
-<p>This is a feed infrastructure issue, not an absence of enterprise AI news in the world. The newsletter will resume its normal format as soon as the upstream aggregation pipeline delivers fresh items.</p>
-<hr>
-<h2>Background Reading: Highlights From the Last Available Batch (Aug. 5, 2026)</h2>
-<p>These items were the most recent in the feed and passed the editorial quality bar. They are offered here as useful context — not as "yesterday's" news.</p>
-<h3>LLM Security: A Practical Threat Model for Enterprise Teams</h3>
-<p>A detailed guide from ByteByteGo maps the full threat surface for large language model applications, covering prompt injection, agent security, data exposure, tool misuse, and architectural attack vectors. The key insight for enterprise security teams is that guardrails alone are insufficient — security must be designed into the entire orchestration stack from the start.</p>
-<p><strong>What should I do as a leader?</strong> Commission a gap review of your current AI security posture against this threat model before deploying the next wave of AI agents.</p>
-<p><strong>What should I do?</strong> If you work in security or AI engineering, read the full guide and map its attack categories against your team's active deployments.</p>
-<p>Source: ByteByteGo, 2026-08-05 — [(blog.bytebytego.com/redacted)(blog.bytebytego.com/redacted)</p>
-<hr>
-<h3>AI and IT Teams Don't Have to Fight</h3>
-<p>Harvard Business Review examines why AI teams and traditional IT organizations clash as enterprises scale generative AI — governance gaps, security ownership disputes, and blurred accountability for operations. The article argues that organizational conflict, not the technology itself, is the primary blocker to successful enterprise AI adoption.</p>
-<p><strong>What should I do as a leader?</strong> Establish a formal AI-IT collaboration model now: define who owns security reviews, data access approvals, and production incident response for AI systems before the next major rollout.</p>
-<p>Source: Harvard Business Review, 2026-08-05 — <a href="https://hbr.org/2026/07/ai-and-it-teams-often-clash-but-they-dont-have-to">https://hbr.org/2026/07/ai-and-it-teams-often-clash-but-they-dont-have-to</a></p>
-<hr>
-<h3>Formula 1's Agentic AI Playbook on AWS</h3>
-<p>Formula 1 reduced data operations from weeks to minutes using agentic AI on AWS. Beyond the headline speed gain, the case study is notable for its implementation discipline: least-privilege permissions, audit trails, encrypted credential management, and rollback strategies were all built in from the start.</p>
-<p><strong>What should I do as a leader?</strong> Use F1's checklist — permissions, auditing, secrets management, rollback — as a readiness gate before your own agentic AI deployments go to production.</p>
-<p>Source: AWS Machine Learning Blog, 2026-08-05 — <a href="https://aws.amazon.com/blogs/machine-learning/from-weeks-to-minutes-how-formula-1-uses-agentic-ai-on-aws-to-accelerate-data-operations/">https://aws.amazon.com/blogs/machine-learning/from-weeks-to-minutes-how-formula-1-uses-agentic-ai-on-aws-to-accelerate-data-operations/</a></p>
-<hr>
-<h3>Mistral Releases Shieldstral: A Lightweight Safety Classifier</h3>
-<p>Mistral introduced Shieldstral, a multimodal safety classifier designed to filter unsafe inputs and outputs around LLMs. It is open-weight and supports customizable moderation policies, giving enterprises more control over content filtering without relying solely on a model's built-in guardrails.</p>
-<p><strong>What should I do as a leader?</strong> Evaluate Shieldstral as a modular safety layer, especially for deployments where built-in model guardrails have proved inconsistent or where your organization needs auditable, configurable content policies.</p>
-<p>Source: Mistral AI, 2026-08-05 — <a href="https://mistral.ai/news/shieldstral/">https://mistral.ai/news/shieldstral/</a></p>
-<hr>
-<h3>What Is AI Spending Actually Buying?</h3>
-<p>The New York Times reports on a growing enterprise tension: token consumption is climbing steeply, but measuring return on investment remains elusive. Finance and operations leaders are beginning to demand accountability frameworks as AI budget lines grow from experiments to line items.</p>
-<p><strong>What should I do as a leader?</strong> If you don't already have a token-cost tracking dashboard and an ROI measurement framework for AI workloads, make that a Q3 priority.</p>
-<p>Source: The New York Times, 2026-08-04 — <a href="https://www.nytimes.com/2026/08/03/business/economy/ai-spending-tokenomics.html">https://www.nytimes.com/2026/08/03/business/economy/ai-spending-tokenomics.html</a></p>
-<hr>
-<h2>Quick Hits (Aug. 3–5, 2026)</h2>
+      <h2>Feed Status: No Items in Window</h2>
+<p>As of <strong>Thursday, Aug. 13, 2026 — 6 a.m. PDT</strong>, no articles in the monitored AI news feeds fall within the required 24-36 hour publishing window (since roughly 6 p.m. Tuesday, Aug. 11).</p>
+<p>The primary feed (<code>rss.tedt.org/ai_rss_feed.json</code>) contains 50 items, with the most recent dated <strong>Aug. 5, 2026</strong> — more than a week before this edition's generation time. The secondary aggregated feed (<code>rss.tedt.org/aggregated_wes_ai_news.json</code>) returned an HTTP 404 and could not be retrieved.</p>
+<h3>What This Means</h3>
 <ul>
-<li><strong>Microsoft Research's Orchard framework</strong> separates agent training from deployment, enabling safer pre-production testing for enterprise AI agents. — [(www.microsoft.com/redacted)(www.microsoft.com/redacted)</li>
-<li><strong>Anthropic disclosed</strong> three cybersecurity evaluation incidents in which AI models accessed real systems via misconfigured test environments — a cautionary tale for any team running AI evals. — <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals">https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals</a></li>
-<li><strong>Stripe's internal Knowledge AI Platform (Kai)</strong> enables employees to build, govern, and reuse AI workflows securely across the organization — a model worth studying for enterprises designing internal AI platforms. — [(stripe.dev/redacted)(stripe.dev/redacted)</li>
-<li><strong>Groundcover raised funding</strong> focused on AI agent telemetry and observability kept within the customer's own cloud — addressing a real gap as enterprises struggle to monitor agentic workloads. — <a href="https://venturebeat.com/data/how-is-your-enterprise-tracking-ai-agent-telemetry-groundcover-thinks-it-should-never-leave-your-cloud">https://venturebeat.com/data/how-is-your-enterprise-tracking-ai-agent-telemetry-groundcover-thinks-it-should-never-leave-your-cloud</a></li>
-<li><strong>Alibaba released Qwen3.8-Max</strong>, a 2.4-trillion-parameter model built for long-horizon coding and agentic workflows, available via API immediately. — [(qwen.ai/redacted)(qwen.ai/redacted)</li>
-<li><strong>Univé deployed ChatGPT Enterprise</strong> across its workforce, leading to over 1,500 employee-built custom GPTs and measurable operational gains in insurance claims processing. — <a href="https://openai.com/index/unive/">https://openai.com/index/unive/</a></li>
+<li><strong>The feeds may be delayed or misconfigured.</strong> A one-week lag in the primary feed suggests either a curation backlog or a pipeline interruption upstream.</li>
+<li><strong>No items from the past 7 days were found</strong>, so there is nothing to deduplicate against the Aug. 12 edition either.</li>
+<li><strong>The Aug. 12 edition</strong> (the previous publication) drew from the same Aug. 4-5 items, meaning enterprise readers have already seen those stories if they read yesterday's issue.</li>
+</ul>
+<h3>Next Steps for the Editorial Team</h3>
+<ul>
+<li>Verify that the RSS pipeline feeding <code>ai_rss_feed.json</code> is running and ingesting new items.</li>
+<li>Confirm the correct URL for <code>aggregated_wes_ai_news.json</code> and restore availability.</li>
+<li>Once feeds refresh, the next scheduled run will pick up new items automatically.</li>
 </ul>
 <hr>
-<h2>Looking Ahead</h2>
-<ul>
-<li><strong>Feed health check:</strong> If rss.tedt.org does not return items from Aug. 11–12 in tomorrow's run, escalate the aggregation pipeline issue to the site owner.</li>
-<li><strong>AI security posture:</strong> The convergence of the ByteByteGo threat model guide, Anthropic's eval incidents, and Mistral's Shieldstral release signals a maturing enterprise security conversation around AI agents — expect policy and procurement requirements to follow.</li>
-<li><strong>AI spend accountability:</strong> As token costs become a visible budget line, teams should expect finance partners to ask for ROI models; getting ahead of that conversation now will smooth Q4 planning cycles.</li>
-<li><strong>Agentic AI readiness:</strong> The F1 and Microsoft Orchard items both point toward the same next step: enterprises need pre-production testing environments and operational runbooks for AI agents before broad deployment.</li>
-</ul>
-<hr>
-<h2>Sign-off</h2>
-<p>Some mornings the feed runs dry — and that is not entirely a bad thing. It is a reminder that the infrastructure behind good information is as important as the information itself. The stories above are worth your time even if they are a week old; the best ones rarely expire quickly.</p>
-<p>We will be back tomorrow with a full edition if the feeds recover on schedule. Until then, the questions raised in today's background reading — who owns AI security, how do you measure ROI, what does a safe agentic deployment look like — are worth a conversation with your team before the next wave of announcements arrives.</p>
-<p>Stay grounded, stay curious, and take good care of the people around you.</p>
+<p><strong>This edition will be republished automatically</strong> once new qualifying items are available in the monitored feeds. No manual intervention is required beyond restoring feed health.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li>Feed 1 (<code>rss.tedt.org/ai_rss_feed.json</code>): fetched successfully; 50 total items; 0 items within the 24–36 hour window (Aug. 10–12, 2026 PDT); most recent item date: 2026-08-05.</li>
-<li>Feed 2 (<code>rss.tedt.org/aggregated_wes_ai_news.json</code>): HTTP 404 — feed URL not found; 0 items available.</li>
-<li><code>items_fetched_count</code>: 50 (feed 1 only)</li>
-<li><code>items_within_24_36_hours_count</code>: 0</li>
-<li><code>items_deduplicated_count</code>: 0</li>
-<li><code>items_published_count</code>: 0 qualifying; 6 background / quick-hit items surfaced from Aug. 3–5 batch as supplementary context</li>
-<li><code>excluded_items_summary</code>: All 50 feed-1 items excluded as older than 36 hours from the Aug. 12, 2026 PDT generation time; 5 items from Aug. 5 selected as highest-value background reading under editorial discretion.</li>
-<li>Previous newsletter date: 2026-08-11 (confirmed from <code>Daily-Report/AI/index.html</code>); no deduplication required given zero qualifying fresh items.</li>
-<li>Assumption: The 7-day feed lag reflects an upstream aggregation pipeline delay, not an absence of enterprise AI news.</li>
+<li><strong>Feed 1:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — 50 items fetched; 0 items within the 24-36 hour window (Aug. 11 6 p.m. PDT – Aug. 13 6 a.m. PDT); most recent item dated Aug. 5, 2026</li>
+<li><strong>Feed 2:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — HTTP 404, unavailable</li>
+<li><strong>items_fetched_count:</strong> 50 (Feed 1 only)</li>
+<li><strong>items_within_24_36_hours_count:</strong> 0</li>
+<li><strong>items_deduplicated_count:</strong> 0</li>
+<li><strong>items_published_count:</strong> 0</li>
+<li><strong>excluded_items_summary:</strong> All 50 items excluded; dated Aug. 4-5, 2026 — more than 7 days before generation time</li>
+<li><strong>Previous edition:</strong> Aug. 12, 2026 — already covered items from the same Aug. 4-5 date range</li>
+<li><strong>Generation time:</strong> Aug. 13, 2026, 6:07 a.m. PDT</li>
 </ul>
     </section>
     <footer>
