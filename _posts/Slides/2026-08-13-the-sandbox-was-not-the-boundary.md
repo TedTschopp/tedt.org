@@ -18,7 +18,7 @@ topics:
 format: standalone-html
 format_label: Static HTML
 deck_url: /slides/decks/the-sandbox-was-not-the-boundary/
-deck_sha256: 16a927b73212f999f2a9939b974c5ed2a870b7c5b7454a7991dccf3994bd6a5d
+deck_sha256: dcce8126961967cd2c10ca0957d91714abc05aea6a647bd85fa8252e846d34bf
 slide_count: 27
 aspect_ratio: 16:9
 accent_color: "#f0442e"
