@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-08-13 | TedT.org</title>
+  <title>Daily Report - 2026-08-14 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,94 +52,121 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-08-13</h1>
-      <p class="meta">Generated <time datetime="2026-08-13T05:08:08+00:00">2026-08-13T05:08:08Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-14</h1>
+      <p class="meta">Generated <time datetime="2026-08-14T05:08:37+00:00">2026-08-14T05:08:37Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Site is healthy.</strong> Automated workflows are running normally. The last two days saw active Traveller tool development (two PRs merged) and a new AI safety article published. A Dependabot security PR (#219) for <code>linkify-it</code> and <code>markdown-it</code> is open and should be merged promptly — it fixes DoS vulnerabilities. The backlog of P2 content-discovery issues (tag infrastructure, category pages, prompt series, slide gallery) remains unactioned since the May 2026 audit.</p>
+      <p>Active development day on 2026-08-13. Ted published a new presentation slide deck ("The Sandbox Was Not the Boundary"), made three follow-up polish commits, and the Mastodon feed sync ran successfully. Two Dependabot PRs (#215, #219) remain open and unreviewed — one includes security-relevant dependency fixes. No CI failures detected in recent completed runs. Daily automation (reports, Enterprise AI refresh, Mastodon sync) is operating normally.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line</h2>
-<p>Site is healthy and all automated pipelines are functioning. Human commits this week are focused on the Traveller character sheet tool. One security-relevant dependency PR needs attention. Backlog of P2 UX/discovery issues from the May 2026 audit has not been touched since creation.</p>
+<p>Active development day (2026-08-13). A new standalone slide deck was merged and polished. Automated workflows are healthy. Two Dependabot PRs have been sitting open for 11+ days and need attention — one carries security-relevant fixes.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>Human Commits (Aug 9–12)</h3>
+<h3>Human commits — 2026-08-13</h3>
 <ul>
-<li><strong>2026-08-12</strong> — Bot: <code>chore: refresh yesterday in enterprise ai</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/79d688138bad00479cf88d034fd7da393904f14e">commit</a>)</li>
-<li><strong>2026-08-10</strong> — Merge PR #218: <code>fix(traveller): persist drafts and harden row builders</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/56d976a62073486b1ddc45c81e30129626afaae9">commit</a>)</li>
-<li>Fixes draft persistence in the Traveller character sheet; hardens row builders</li>
-<li><strong>2026-08-10</strong> — Merge PR #217: <code>Add multi-character library to Traveller sheet</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/426f6f18860098ca940d796bf44e1d6b5e1b3c15">commit</a>)</li>
-<li>New feature: multiple saved characters in the Traveller tool</li>
-<li><strong>2026-08-09</strong> — <code>content(post): add source note for OpenAI and Hugging Face incident</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/76ba18b377c83078fdab8c6fbf13fe227358d738">commit</a>)</li>
-<li><strong>2026-08-09</strong> — <code>feat(post): add new article on AI agent containment and incident response</code> + responsive images (<a href="https://github.com/TedTschopp/tedt.org/commit/28d7c3e734e53629fffa0a9d41625abcedf9419d">commit</a>)</li>
-<li><strong>2026-08-09</strong> — <code>chore: update Mastodon cache/front matter</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/023a2fcc47c1bc7216d356d4f9b85c80e20d4497">commit</a>)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/a26b4998cfdc6414192e41e614425c64a04c1d36">Fix game day statement in presentation</a>** (18:41 UTC) — Ted Tschopp. Final polish on the new slide deck.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/996cb0a49c51d6395304ffcf26994cc383621565">Fix presentation SEO description</a>** (18:13 UTC) — Ted Tschopp. Front matter SEO fix for the new presentation post.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/ee62a064ad9a4e8039731a44646d872c8df936f2">Merge presentation deck into main</a>** (17:26 UTC) — Ted Tschopp. Merged the new deck branch.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/0427d7c74508510acd16a8f2fa874e419ecb6303">feat(slide): add slide preview image for "the sandbox was not the boundary"</a>** (16:36 UTC) — Ted Tschopp. Preview image added per slides ADR pattern.</li>
 </ul>
-<h3>Automated Bot Commits (routine)</h3>
-<p>Daily report refresh and enterprise AI "yesterday" refresh are running on schedule every day.</p>
+<h3>Human commits — 2026-08-10</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/56d976a62073486b1ddc45c81e30129626afaae9">Merge PR #218 — fix(traveller): persist drafts and harden row builders</a>** — Fixes draft persistence in the Traveller character sheet tool.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/commit/426f6f18860098ca940d796bf44e1d6b5e1b3c15">Merge PR #217 — feat(traveller): add multi-character library</a>** — New multi-character storage feature for the Traveller RPG sheet.</li>
+</ul>
+<h3>Automated commits (recent)</h3>
+<ul>
+<li><strong>chore: update Mastodon cache/front matter</strong> (2026-08-13 18:22 UTC) — Mastodon sync bot ran after Ted's push.</li>
+<li><strong>chore: refresh yesterday in enterprise ai</strong> — Runs daily at ~13:10 UTC; firing correctly on 2026-08-09 through 2026-08-13.</li>
+<li><strong>chore: refresh daily report</strong> — Runs daily at ~05:00 UTC; firing correctly on 2026-08-09 through 2026-08-13.</li>
+</ul>
 <hr>
 <h2>Workflow Health</h2>
+<h3>Completed runs (most recent)</h3>
 <ul>
-<li><strong>Daily Report</strong> — run #106, currently <code>in_progress</code> (this run). <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31668981048">View run</a></li>
-<li><strong>Feed to Mastodon</strong> — run #2152, <code>completed / success</code> on 2026-08-13 at 00:28 UTC. <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31654515513">View run</a></li>
-<li>No workflow failures observed in the most recent runs visible.</li>
+<li><strong>Feed to Mastodon</strong> (run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31757470190">#2156</a>) — <code>completed / success</code> — 2026-08-14 00:28 UTC. Ran on head commit <code>a26b499</code> (the deck polish commit). Duration ~2.5 minutes. ✅</li>
+<li><strong>Daily Report</strong> (run #107, this run) — <code>in_progress</code> at report generation time. ✅</li>
 </ul>
+<h3>No failures detected</h3>
+<p>All checked completed workflow runs returned <code>success</code>. No failed or cancelled runs were observed in the most recent page of results.</p>
 <hr>
 <h2>Open Pull Requests</h2>
-<h3>PR #219 — Dependabot: <code>linkify-it</code> 5.0.0 → 5.0.2, <code>markdown-it</code> 14.1.0 → 14.3.0</h3>
+<h3>PR #219 — Dependabot: bump <code>linkify-it</code> 5.0.0→5.0.2 and <code>markdown-it</code> 14.1.0→14.3.0</h3>
 <ul>
-<li><strong>Status:</strong> Open, not merged. Created 2026-08-11.</li>
-<li><strong>Security impact:</strong> <code>linkify-it</code> 5.0.1 fixed a DoS in fuzzy link/email search; 5.0.2 fixed a DoS in <code>(redacted) links (user name length restriction). </code>markdown-it` 14.2.0 included these fixes transitively plus a smartquotes performance fix.</li>
-<li><strong>Recommendation:</strong> Merge promptly. These are security patches, not breaking changes.</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/pull/219">View PR #219</a></li>
+<li><strong>URL:</strong> https://github.com/TedTschopp/tedt.org/pull/219</li>
+<li><strong>Opened:</strong> 2026-08-11</li>
+<li><strong>Age:</strong> 3 days open</li>
+<li><strong>Labels:</strong> <code>dependencies</code>, <code>javascript</code></li>
+<li><strong>Author:</strong> dependabot[bot]</li>
+<li><strong>Security relevance:</strong> <code>linkify-it</code> 5.0.2 fixes two DoS vectors in <code>(redacted) link parsing and fuzzy link search. </code>markdown-it` 14.2 fixed a smartquotes performance DoS. <strong>These are security fixes — merge promptly.</strong></li>
+<li><strong>Risk:</strong> Low — 2-file change, lock file update only.</li>
+</ul>
+<h3>PR #215 — Dependabot: bump <code>actions/cache</code> from 5 to 6</h3>
+<ul>
+<li><strong>URL:</strong> https://github.com/TedTschopp/tedt.org/pull/215</li>
+<li><strong>Opened:</strong> 2026-08-03</li>
+<li><strong>Age:</strong> 11 days open</li>
+<li><strong>Labels:</strong> <code>dependencies</code>, <code>github_actions</code></li>
+<li><strong>Author:</strong> dependabot[bot]</li>
+<li><strong>Note:</strong> <code>actions/cache</code> v6 is a major version bump (ESM migration). Review for workflow compatibility before merging — not a drop-in like v5→v5.x.</li>
 </ul>
 <hr>
-<h2>Open Issues — Backlog Snapshot</h2>
-<p>The following P2 issues were created during the May 2026 audit and remain unaddressed:</p>
+<h2>Open Issues (selected)</h2>
+<p>The issue backlog includes strategic work items. Notable open items visible from the recent list:</p>
 <ul>
-<li><strong>#186</strong> — [P2] Enhance category landing pages: related categories, tag clouds, depth indicators</li>
-<li><strong>#185</strong> — [P2] Build cross-collection content bridges and related-posts infrastructure</li>
-<li><strong>#184</strong> — [P2] Drive prompt series adoption: audit and populate series metadata</li>
-<li><strong>#183</strong> — [P2] Standardize tagging model: enforce coverage and build site-wide tag infrastructure</li>
-<li><strong>#182</strong> — [P2] Create slide gallery with topic filtering and deck browser</li>
+<li><strong>Category landing pages lack secondary discovery</strong> — 41 category pages are minimal stubs with no related-categories nav, tag clouds, or depth indicators.</li>
+<li><strong>May 2026 audit backlog</strong> — GitHub Actions Node.js 20 deprecation hard deadline, GitHub Pages artifact over 1 GB limit, CI quality-masking issues, and rendering/asset defects. These are prioritized blockers.</li>
 </ul>
-<p>All labeled <code>audit-2026-05</code>, <code>content-discovery</code>, <code>P2</code>. None show updates since creation. These are well-scoped and the site architecture supports most of them without major surgery.</p>
 <hr>
-<h2>Content &amp; Publishing Pipeline</h2>
+<h2>Content Pipeline Observations</h2>
 <ul>
-<li>New article on AI agent containment published 2026-08-09, with responsive images and a Mastodon source note follow-up. The Mastodon cache/front matter update committed the same day confirms syndication is working.</li>
-<li>The enterprise AI "yesterday" refresh is committing daily, indicating that scheduled content refresh workflow is active.</li>
-<li>No draft or front matter parse issues observed in the recent commit log.</li>
+<li>New slide deck published: <strong>"The Sandbox Was Not the Boundary"</strong> — standalone HTML export using the <code>slide-deck</code> layout pattern per ADR 0012/0013. Three polish commits in under two hours suggest active preparation for a talk or presentation.</li>
+<li>Traveller RPG tool received two feature PRs last week (draft persistence + multi-character library), both merged cleanly.</li>
+<li>Mastodon sync is firing on schedule and syncing front matter after pushes.</li>
+<li>Enterprise AI post refresh is running daily as expected.</li>
 </ul>
 <hr>
 <h2>Risks and Blockers</h2>
+<h3>High priority</h3>
 <ul>
-<li><strong>Security risk (low-medium):</strong> PR #219 (<code>linkify-it</code> DoS fix) is sitting unmerged. If this site processes user-submitted Markdown, this is higher priority; for static site rendering it is lower priority, but the fix is clean and low-risk. Merge it.</li>
-<li><strong>Backlog accumulation:</strong> 5+ P2 issues open since late May with no activity. Not a blocker today, but the discovery/navigation gaps they describe are real. Tag infrastructure (#183) is a dependency for tag cloud (#186) — sequence matters if work starts.</li>
-<li><strong>No blocking issues or CI failures identified.</strong></li>
+<li><strong>Security: PR #219 unmerged</strong> — <code>linkify-it</code> and <code>markdown-it</code> DoS fixes are 3 days old. Merge this PR.</li>
+</ul>
+<h3>Medium priority</h3>
+<ul>
+<li><strong>PR #215 stale</strong> — <code>actions/cache</code> v5→v6 is 11 days open. v6 is an ESM migration; test before merging but don't defer indefinitely.</li>
+<li><strong>GitHub Pages artifact size</strong> — Open issue notes artifact is over the 1 GB GitHub Pages limit. This is a hard deployment risk if it grows further.</li>
+<li><strong>Node.js 20 deprecation deadline</strong> — Open issue notes hard deadline for GitHub Actions Node.js 20 migration. Track and action before enforcement date.</li>
+</ul>
+<h3>Low priority</h3>
+<ul>
+<li><strong>Category page discovery gap</strong> — Noted in open issues; no current PR addressing it.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge PR #219</strong> — security patch for <code>linkify-it</code> DoS; no breaking changes.</li>
-<li><strong>Triage P2 backlog</strong> — pick one to start: #183 (tag infrastructure) unlocks #186 (category pages) and #185 (cross-collection bridges). Doing #183 first is the right sequence.</li>
-<li><strong>Slide gallery (#182)</strong> is self-contained and could be a quick win — 9 decks already exist, the filter JS already exists, needs a gallery page.</li>
-<li><strong>No immediate site health actions needed</strong> — all automated workflows nominal.</li>
+<li><strong>Merge PR #219</strong> — Security fixes in <code>linkify-it</code> and <code>markdown-it</code>. Low risk, straightforward merge.</li>
+<li><strong>Review and test PR #215</strong> — <code>actions/cache</code> v6 major version bump; validate CI workflows are ESM-compatible before merging.</li>
+<li><strong>Check artifact size</strong> — Run a production build and measure <code>_site/</code> size. If over 1 GB, identify and remove large binary assets or slide deck exports.</li>
+<li><strong>Audit Node.js 20 usage in workflows</strong> — Identify which workflow steps use Node 20 and plan upgrades before the GitHub deprecation enforcement date.</li>
+<li><strong>Continue slide deck work</strong> — If the presentation is upcoming, verify the deployed deck renders correctly at its permalink.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commits/main">TedTschopp/tedt.org commit history</a>, last 20 commits retrieved</li>
-<li>Workflow runs: GitHub Actions API, most recent 10 runs across all workflows</li>
-<li>Open issues: GitHub Issues API, first 10 open issues (ordered by default/updated)</li>
-<li>Open PRs: GitHub Pull Requests API, open state</li>
-<li>[ASSUMPTION] No failed workflow runs were observed in the sample; the full 8,239 run history was not exhaustively checked</li>
-<li>[ASSUMPTION] The P2 issues listed are a sample of the first 10 open issues returned; there may be additional open issues not reviewed</li>
-<li>Daily Report workflow run #106 was <code>in_progress</code> at time of data collection — this is the current run generating this report</li>
-<li>External link health, HTML Proofer results, and build artifact details were not available in this run</li>
-<li>Issue counts and full backlog size beyond top 10 were not retrieved</li>
+<li><strong>Commits:</strong> Read from <code>TedTschopp/tedt.org</code> default branch, last 20 commits via GitHub MCP list_commits.</li>
+<li><strong>Workflow runs:</strong> Read from GitHub Actions list_workflow_runs (completed filter) and get_workflow_run for run 31757470190.</li>
+<li><strong>Pull requests:</strong> Read via github-pull_request_read for PR #219 and PR #215; list_pull_requests for open PRs.</li>
+<li><strong>Issues:</strong> Read via github-list_issues (open, sorted by updated_at). Full issue titles not enumerated due to output size limits; content summarized from previews.</li>
+<li><strong>Workflow run count:</strong> Total run count reported as 8,253–8,257 (slight variance across two API calls reflecting runs completing during data collection).</li>
+<li><strong>Daily Report run #107</strong> was <code>in_progress</code> at the time of data collection — conclusion not yet available; reported as in-progress.</li>
+<li>[ASSUMPTION] No failed workflow runs were observed in the sampled result set. The full run history (8,000+ runs) was not exhaustively scanned; failures outside the first page of results would not be captured.</li>
+<li>[ASSUMPTION] Open issue numbers and titles inferred from list preview output; full issue bodies not read for all items.</li>
+<li><strong>External link health, HTML Proofer results, and build artifact size</strong> were not directly observable in this workflow run — these require a local build.</li>
+<li><code>gh</code> CLI is not authenticated in this environment; all reads used GitHub MCP tools.</li>
 </ul>
     </section>
     <footer>
