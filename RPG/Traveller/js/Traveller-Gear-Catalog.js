@@ -60,6 +60,12 @@
     "no_additional_threshold",
     "no_restrictions",
   ]);
+  const DIRECT_LAW_LEVEL_RULE_STATUSES = new Set([
+    "named_threshold",
+    "no_restrictions",
+    "direct_item_exception",
+  ]);
+  const DIRECT_LEGAL_CATEGORY_RULE_STATUSES = new Set(["named_examples"]);
   const LEGAL_CATEGORY_VALUES = new Set([
     "category_1",
     "category_2",
@@ -78,11 +84,32 @@
     prohibited: "Prohibited",
     undetermined: "Undetermined",
   });
+  const TECH_LEVEL_FALLBACK_LABELS = Object.freeze([
+    "Simple tools",
+    "Metalworking",
+    "Renaissance science",
+    "Steam industry",
+    "Mature industry",
+    "Electrification",
+    "Fission and early spaceflight",
+    "Reliable orbital flight",
+    "Interplanetary travel",
+    "Gravity control and early jump",
+    "Common interstellar travel",
+    "Early true AI",
+    "Advanced terraforming",
+    "Battle dress and advanced engineering",
+    "Portable fusion",
+    "High stellar technology",
+  ]);
+  const HIGH_TECH_LEVEL_FALLBACK_LABEL = "Beyond described milestones";
   const detailShardCache = new Map();
   let catalog = null;
   let manifestDocument = null;
   let manifestPromise = null;
+  let techLevelReference = null;
   let lawLevelReference = null;
+  let legalCategoryReference = null;
   let initializationPromise = null;
   let lockerState = null;
 
@@ -119,10 +146,23 @@
       const unknownOption = Array.from(select.options).find(
         (option) => option.value === "unknown"
       );
+      const anyOption = Array.from(select.options).find(
+        (option) => option.value === "any"
+      );
+      if (anyOption) anyOption.textContent = "Any Tech Level — no technology cutoff";
+      if (unknownOption) {
+        unknownOption.textContent =
+          "Unknown or variable TL — not TL0; no usable recorded value";
+      }
       for (let techLevel = 0; techLevel <= 21; techLevel += 1) {
         const option = document.createElement("option");
         option.value = `max:${techLevel}`;
-        option.textContent = `Up to TL ${techLevel}`;
+        option.textContent = techLevelOptionText(
+          techLevel,
+          techLevel <= 15
+            ? TECH_LEVEL_FALLBACK_LABELS[techLevel]
+            : HIGH_TECH_LEVEL_FALLBACK_LABEL
+        );
         select.insertBefore(option, unknownOption || null);
       }
       select.dataset.populated = "true";
@@ -130,7 +170,10 @@
   }
 
   function parseTechLevel(value) {
-    const normalized = stringValue(value).trim().replace(/[–—]/g, "-");
+    const normalized = stringValue(value)
+      .trim()
+      .replace(/[–—]/g, "-")
+      .replace(/^TL\s*/i, "");
     let match = normalized.match(/^(\d+)$/);
     if (match) {
       return { minimum: Number.parseInt(match[1], 10), maximum: null };
@@ -270,6 +313,7 @@
       title,
       pages: uniqueStrings(pages.map((page) => stringValue(page).trim())),
       pageBasis: firstString(value.pageBasis, value.page_basis),
+      referenceType: firstString(value.referenceType, value.reference_type),
     };
   }
 
@@ -279,12 +323,30 @@
     return value.reduce((references, rawReference) => {
       const reference = normalizeSourceReference(rawReference);
       if (!reference) return references;
-      const key = `${reference.title}|${reference.pages.join(",")}|${reference.pageBasis}`;
+      const key = `${reference.title}|${reference.pages.join(",")}|${reference.pageBasis}|${reference.referenceType}`;
       if (seen.has(key)) return references;
       seen.add(key);
       references.push(reference);
       return references;
     }, []);
+  }
+
+  function normalizeExamples(value) {
+    if (!Array.isArray(value)) return [];
+    return uniqueStrings(
+      value.map((example) =>
+        isRecord(example)
+          ? firstString(
+              example.displayName,
+              example.display_name,
+              example.name,
+              example.title,
+              example.label,
+              example.description
+            )
+          : firstString(example)
+      )
+    );
   }
 
   function normalizeLawLevelReference(value) {
@@ -304,6 +366,7 @@
         const guidance = isRecord(rawGuidance[kind]) ? rawGuidance[kind] : {};
         guidanceByKind[kind] = {
           ruleStatus: firstString(guidance.ruleStatus, guidance.rule_status),
+          shortLabel: firstString(guidance.shortLabel, guidance.short_label),
           description: firstString(guidance.description),
           sourceReferences: normalizeSourceReferences(
             guidance.sourceReferences || guidance.source_references
@@ -327,10 +390,192 @@
         value.undeterminedDescription,
         value.undetermined_description
       ),
+      undeterminedShortLabel: firstString(
+        value.undeterminedShortLabel,
+        value.undetermined_short_label
+      ),
       sourceReferences: normalizeSourceReferences(
         value.sourceReferences || value.source_references
       ),
       levels,
+    };
+  }
+
+  function normalizeTechLevelReference(value) {
+    if (!isRecord(value)) return null;
+    const rawLevels = Array.isArray(value.levels) ? value.levels : [];
+    const levels = rawLevels.reduce((normalizedLevels, rawLevel) => {
+      if (!isRecord(rawLevel)) return normalizedLevels;
+      const numericValue = Number.parseInt(firstString(rawLevel.value), 10);
+      if (!Number.isInteger(numericValue) || numericValue < 0 || numericValue > 15) {
+        return normalizedLevels;
+      }
+      normalizedLevels.push({
+        value: numericValue,
+        band: firstString(rawLevel.band),
+        title: firstString(rawLevel.title, `Tech Level ${numericValue}`),
+        shortLabel: firstString(rawLevel.shortLabel, rawLevel.short_label),
+        summary: firstString(rawLevel.summary),
+        sourceReferences: normalizeSourceReferences(
+          rawLevel.sourceReferences || rawLevel.source_references
+        ),
+      });
+      return normalizedLevels;
+    }, []);
+
+    const rawHigherLevels = isRecord(value.higherLevels)
+      ? value.higherLevels
+      : isRecord(value.higher_levels)
+        ? value.higher_levels
+        : {};
+    const higherMinimum = Number.parseInt(
+      firstString(rawHigherLevels.minimum, "16"),
+      10
+    );
+    const higherLevels = {
+      minimum:
+        Number.isInteger(higherMinimum) && higherMinimum >= 16
+          ? higherMinimum
+          : 16,
+      band: firstString(rawHigherLevels.band),
+      title: firstString(rawHigherLevels.title, "Tech Level 16+"),
+      shortLabel: firstString(
+        rawHigherLevels.shortLabel,
+        rawHigherLevels.short_label
+      ),
+      summary: firstString(rawHigherLevels.summary),
+      sourceReferences: normalizeSourceReferences(
+        rawHigherLevels.sourceReferences || rawHigherLevels.source_references
+      ),
+    };
+
+    const rawGuidance = isRecord(value.guidanceByKind)
+      ? value.guidanceByKind
+      : isRecord(value.guidance_by_kind)
+        ? value.guidance_by_kind
+        : {};
+    const guidanceByKind = {};
+    Object.keys(SECTION_LABELS).forEach((kind) => {
+      const guidance = isRecord(rawGuidance[kind]) ? rawGuidance[kind] : {};
+      guidanceByKind[kind] = {
+        valueRole: firstString(guidance.valueRole, guidance.value_role),
+        description: firstString(guidance.description),
+        sourceReferences: normalizeSourceReferences(
+          guidance.sourceReferences || guidance.source_references
+        ),
+      };
+    });
+
+    const description = firstString(value.description);
+    if (!description && levels.length === 0 && !higherLevels.summary) return null;
+    return {
+      rulesContext: firstString(value.rulesContext, value.rules_context),
+      valueSemantics: firstString(value.valueSemantics, value.value_semantics),
+      description,
+      filterSemantics: firstString(value.filterSemantics, value.filter_semantics),
+      unknownDescription: firstString(
+        value.unknownDescription,
+        value.unknown_description
+      ),
+      unknownShortLabel: firstString(
+        value.unknownShortLabel,
+        value.unknown_short_label
+      ),
+      levels,
+      higherLevels,
+      guidanceByKind,
+      sourceReferences: normalizeSourceReferences(
+        value.sourceReferences || value.source_references
+      ),
+      notes: firstString(value.notes),
+    };
+  }
+
+  function normalizeLegalCategoryReference(value) {
+    if (!isRecord(value)) return null;
+    const rawCategories = Array.isArray(value.categories) ? value.categories : [];
+    const categories = rawCategories.reduce((normalizedCategories, rawCategory) => {
+      if (!isRecord(rawCategory)) return normalizedCategories;
+      const categoryValue = normalizeLegalCategory(rawCategory.value);
+      if (categoryValue === "undetermined") return normalizedCategories;
+      const ordinal = Number.parseInt(firstString(rawCategory.ordinal), 10);
+      if (!Number.isInteger(ordinal)) return normalizedCategories;
+
+      const rawGuidance = isRecord(rawCategory.guidanceByKind)
+        ? rawCategory.guidanceByKind
+        : isRecord(rawCategory.guidance_by_kind)
+          ? rawCategory.guidance_by_kind
+          : {};
+      const guidanceByKind = {};
+      Object.keys(SECTION_LABELS).forEach((kind) => {
+        const guidance = isRecord(rawGuidance[kind]) ? rawGuidance[kind] : {};
+        guidanceByKind[kind] = {
+          ruleStatus: firstString(guidance.ruleStatus, guidance.rule_status),
+          shortLabel: firstString(guidance.shortLabel, guidance.short_label),
+          description: firstString(guidance.description),
+          examples: normalizeExamples(guidance.examples),
+          sourceReferences: normalizeSourceReferences(
+            guidance.sourceReferences || guidance.source_references
+          ),
+        };
+      });
+
+      const rawPriceMultiplier = isRecord(rawCategory.priceMultiplier)
+        ? rawCategory.priceMultiplier
+        : isRecord(rawCategory.price_multiplier)
+          ? rawCategory.price_multiplier
+          : {};
+      normalizedCategories.push({
+        value: categoryValue,
+        ordinal,
+        title: firstString(rawCategory.title),
+        shortLabel: firstString(rawCategory.shortLabel, rawCategory.short_label),
+        summary: firstString(rawCategory.summary),
+        description: firstString(rawCategory.description),
+        priceMultiplier: {
+          kind: firstString(rawPriceMultiplier.kind),
+          value: firstString(rawPriceMultiplier.value),
+          shortLabel: firstString(
+            rawPriceMultiplier.shortLabel,
+            rawPriceMultiplier.short_label
+          ),
+        },
+        guidanceByKind,
+        sourceReferences: normalizeSourceReferences(
+          rawCategory.sourceReferences || rawCategory.source_references
+        ),
+      });
+      return normalizedCategories;
+    }, []);
+
+    if (categories.length === 0) return null;
+    categories.sort((left, right) => left.ordinal - right.ordinal);
+    return {
+      rulesContext: firstString(value.rulesContext, value.rules_context),
+      valueSemantics: firstString(value.valueSemantics, value.value_semantics),
+      description: firstString(value.description),
+      filterSemantics: firstString(
+        value.filterSemantics,
+        value.filter_semantics
+      ),
+      contextNotice: firstString(value.contextNotice, value.context_notice),
+      blackMarketDescription: firstString(
+        value.blackMarketDescription,
+        value.black_market_description
+      ),
+      categories,
+      undeterminedShortLabel: firstString(
+        value.undeterminedShortLabel,
+        value.undetermined_short_label
+      ),
+      undeterminedDescription: firstString(
+        value.undeterminedDescription,
+        value.undetermined_description
+      ),
+      sourceReferences: normalizeSourceReferences(
+        value.sourceReferences || value.source_references
+      ),
+      notes: firstString(value.notes),
     };
   }
 
@@ -460,6 +705,13 @@
       raw.description
     );
     const rulesSummary = firstString(raw.rulesSummary, raw.rules_summary);
+    const techLevelDescription = firstString(
+      raw.techLevelDescription,
+      raw.tech_level_description
+    );
+    const techLevelSourceReferences = normalizeSourceReferences(
+      raw.techLevelSourceReferences || raw.tech_level_source_references
+    );
     const lawLevelDescription = firstString(
       raw.lawLevelDescription,
       raw.law_level_description
@@ -525,6 +777,8 @@
       statLine,
       descriptionSummary,
       rulesSummary,
+      techLevelDescription,
+      techLevelSourceReferences,
       lawLevelDescription,
       lawLevelSourceReferences,
       sourceReferences,
@@ -577,8 +831,14 @@
       );
     }
 
+    techLevelReference = normalizeTechLevelReference(
+      manifest.techLevelReference || manifest.tech_level_reference
+    );
     lawLevelReference = normalizeLawLevelReference(
       manifest.lawLevelReference || manifest.law_level_reference
+    );
+    legalCategoryReference = normalizeLegalCategoryReference(
+      manifest.legalCategoryReference || manifest.legal_category_reference
     );
     return { manifest, manifestUrl, schemaVersion };
   }
@@ -589,7 +849,9 @@
     manifestPromise = loadManifestDocument()
       .then((document) => {
         manifestDocument = document;
+        updateAllTechLevelHelp();
         updateAllLawLevelHelp();
+        updateAllLegalCategoryHelp();
         return document;
       })
       .catch((error) => {
@@ -712,6 +974,10 @@
       rawDetail.lawLevelSourceReferences ||
         rawDetail.law_level_source_references
     );
+    const detailTechLevelReferences = normalizeSourceReferences(
+      rawDetail.techLevelSourceReferences ||
+        rawDetail.tech_level_source_references
+    );
     const requiredSkillStatus = firstString(
       rawDetail.requiredSkillStatus,
       rawDetail.required_skill_status,
@@ -739,6 +1005,15 @@
         rawDetail.rules_summary,
         item.rulesSummary
       ),
+      techLevelDescription: firstString(
+        rawDetail.techLevelDescription,
+        rawDetail.tech_level_description,
+        item.techLevelDescription
+      ),
+      techLevelSourceReferences:
+        detailTechLevelReferences.length > 0
+          ? detailTechLevelReferences
+          : item.techLevelSourceReferences,
       lawLevelDescription: firstString(
         rawDetail.lawLevelDescription,
         rawDetail.law_level_description,
@@ -888,6 +1163,25 @@
     );
     const reviewReasons = createElement("ul", "gear-locker-review-reasons");
     reviewNotice.append(reviewBadge, reviewReasons);
+    const techLevelDisclosure = document.createElement("details");
+    techLevelDisclosure.className = "gear-locker-tech-level-disclosure";
+    const techLevelSummary = createElement(
+      "summary",
+      "",
+      "Tech Level: definition and source"
+    );
+    const techLevelBody = createElement("div", "gear-locker-tech-level-body");
+    const techLevelDescription = createElement(
+      "p",
+      "gear-locker-detail-copy gear-locker-tech-level-copy"
+    );
+    const techLevelReferences = createElement(
+      "ul",
+      "gear-locker-reference-list gear-locker-tech-level-references"
+    );
+    techLevelReferences.setAttribute("aria-label", "Tech Level references");
+    techLevelBody.append(techLevelDescription, techLevelReferences);
+    techLevelDisclosure.append(techLevelSummary, techLevelBody);
     const descriptionHeading = createElement("h4", "", "Description");
     const description = createElement("p", "gear-locker-detail-copy");
     const rulesHeading = createElement("h4", "", "How to use it");
@@ -955,6 +1249,7 @@
 
     detailContent.append(
       reviewNotice,
+      techLevelDisclosure,
       descriptionHeading,
       description,
       rulesHeading,
@@ -1014,6 +1309,10 @@
       detailContent,
       reviewNotice,
       reviewReasons,
+      techLevelDisclosure,
+      techLevelSummary,
+      techLevelDescription,
+      techLevelReferences,
       description,
       rules,
       lawLevelDescription,
@@ -1398,6 +1697,292 @@
     return `${reference.title}, ${reference.pages.length === 1 ? pagePrefix : pluralPrefix} ${reference.pages.join(", ")}`;
   }
 
+  function techLevelGuidance(kind, filterValue) {
+    if (!techLevelReference) return null;
+    const normalizedKind = normalizeKind(kind);
+    const normalizedFilter = normalizedTechLevelFilter(filterValue);
+    if (!normalizedKind) return null;
+
+    const kindGuidance = techLevelReference.guidanceByKind[normalizedKind] || {};
+    const kindDescription = firstString(
+      kindGuidance.description,
+      stringValue(kindGuidance.valueRole).replaceAll("_", " ")
+    );
+    let summary = "Tech Level (TL): what the rating means";
+    let title = `Tech Level (TL) · ${SECTION_TITLES[normalizedKind]}`;
+    let description = techLevelReference.description;
+    let levelDescription = "";
+    let levelReferences = [];
+
+    if (normalizedFilter === "unknown") {
+      summary = "What “Unknown or variable TL” includes";
+      title = `Unknown or variable TL · ${SECTION_TITLES[normalizedKind]}`;
+      description = firstString(
+        techLevelReference.unknownDescription,
+        techLevelReference.description
+      );
+    } else if (normalizedFilter.startsWith("max:")) {
+      const maximum = Number.parseInt(normalizedFilter.slice(4), 10);
+      const level =
+        maximum >= techLevelReference.higherLevels.minimum
+          ? techLevelReference.higherLevels
+          : techLevelReference.levels.find(
+              (candidate) => candidate.value === maximum
+            );
+      summary = `What “Up to TL ${maximum}” includes`;
+      const band =
+        level &&
+        firstString(
+          level.title,
+          stringValue(level.band).replaceAll("_", " ")
+        );
+      title = `Up to TL ${maximum}${band ? ` · ${band}` : ""}`;
+      levelDescription = firstString(level && level.summary);
+      levelReferences = level ? level.sourceReferences : [];
+    }
+
+    const kindReferenceKeys = new Set(
+      Object.values(techLevelReference.guidanceByKind).flatMap((guidance) =>
+        guidance.sourceReferences.map(
+          (reference) =>
+            `${reference.title}|${reference.pages.join(",")}|${reference.pageBasis}`
+        )
+      )
+    );
+    const globalReferences = techLevelReference.sourceReferences.filter(
+      (reference) => {
+        const referenceType = reference.referenceType.toLocaleLowerCase();
+        if (referenceType.includes("kind")) return false;
+        if (
+          referenceType.includes("tech_level") &&
+          (referenceType.includes("scale") || referenceType.includes("world")) &&
+          !referenceType.includes("kind")
+        ) {
+          return true;
+        }
+        const evidenceKey = `${reference.title}|${reference.pages.join(",")}|${reference.pageBasis}`;
+        return !kindReferenceKeys.has(evidenceKey);
+      }
+    );
+    const sourceReferences = [
+      ...globalReferences,
+      ...levelReferences,
+      ...(Array.isArray(kindGuidance.sourceReferences)
+        ? kindGuidance.sourceReferences
+        : []),
+    ];
+    return {
+      summary,
+      title,
+      description,
+      levelDescription,
+      filterDescription: techLevelReference.filterSemantics,
+      kindDescription,
+      sourceReferences,
+    };
+  }
+
+  function renderTechLevelHelp(panel) {
+    if (!(panel instanceof HTMLDetailsElement)) return;
+    const kind = normalizeKind(panel.dataset.gearAddPanel);
+    const select = panel.querySelector("[data-gear-filter-tl]");
+    const help = panel.querySelector("[data-gear-tech-level-help]");
+    if (
+      !(select instanceof HTMLSelectElement) ||
+      !(help instanceof HTMLElement)
+    ) {
+      return;
+    }
+    const guidance = techLevelGuidance(kind, select.value);
+    if (!guidance) {
+      if (manifestDocument) {
+        help.textContent =
+          "This catalog version does not include book-backed Tech Level guidance. Maximum Tech Level still compares a safely parsed recorded TL, or the lower bound of a minimum/range expression; check the selected item's rulebook reference.";
+        help.classList.remove("is-error");
+      }
+      return;
+    }
+
+    const title = createElement(
+      "strong",
+      "gear-tech-level-help-title",
+      guidance.title
+    );
+    const description = createElement(
+      "span",
+      "gear-tech-level-help-copy",
+      guidance.description
+    );
+    const levelDescription = createElement(
+      "span",
+      "gear-tech-level-help-copy",
+      guidance.levelDescription
+    );
+    levelDescription.hidden = !guidance.levelDescription;
+    const filter = createElement(
+      "span",
+      "gear-tech-level-help-filter",
+      guidance.filterDescription
+        ? `Filter meaning: ${guidance.filterDescription}`
+        : ""
+    );
+    filter.hidden = !guidance.filterDescription;
+    const kindDescription = createElement(
+      "span",
+      "gear-tech-level-help-kind",
+      guidance.kindDescription
+        ? `${SECTION_TITLES[kind]}: ${guidance.kindDescription}`
+        : ""
+    );
+    kindDescription.hidden = !guidance.kindDescription;
+    const sourceText = uniqueStrings(
+      guidance.sourceReferences.map((reference) => formatReference(reference))
+    ).join("; ");
+    const source = createElement(
+      "span",
+      "gear-tech-level-help-source",
+      sourceText
+        ? `Book references: ${sourceText}.`
+        : "No book reference is available for this Tech Level guidance."
+    );
+    help.replaceChildren(
+      title,
+      description,
+      levelDescription,
+      filter,
+      kindDescription,
+      source
+    );
+    help.classList.remove("is-error");
+  }
+
+  function updateAllTechLevelHelp() {
+    updateAllTechLevelOptionLabels();
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      renderTechLevelHelp(panel);
+    });
+  }
+
+  function techLevelOptionText(value, shortLabel) {
+    const conciseLabel = firstString(shortLabel)
+      .replace(/[.!?]+$/, "")
+      .replace(
+        /^(?:up\s+to\s+)?(?:tech\s+level|TL)\s*\d+\+?\s*[\u2014\u2013:;-]\s*/i,
+        ""
+      );
+    return conciseLabel
+      ? `Up to TL ${value} — ${conciseLabel}`
+      : `Up to TL ${value} — source-recorded technology cutoff`;
+  }
+
+  function updateAllTechLevelOptionLabels() {
+    if (!techLevelReference) return;
+    document.querySelectorAll("[data-gear-filter-tl]").forEach((select) => {
+      if (!(select instanceof HTMLSelectElement)) return;
+      techLevelReference.levels.forEach((level) => {
+        const option = Array.from(select.options).find(
+          (candidate) => candidate.value === `max:${level.value}`
+        );
+        if (option) {
+          option.textContent = techLevelOptionText(
+            level.value,
+            firstString(level.shortLabel, level.title)
+          );
+        }
+      });
+
+      for (
+        let value = techLevelReference.higherLevels.minimum;
+        value <= 21;
+        value += 1
+      ) {
+        const option = Array.from(select.options).find(
+          (candidate) => candidate.value === `max:${value}`
+        );
+        if (option) {
+          option.textContent = techLevelOptionText(
+            value,
+            firstString(
+              techLevelReference.higherLevels.shortLabel,
+              techLevelReference.higherLevels.title
+            )
+          );
+        }
+      }
+
+      const unknown = Array.from(select.options).find(
+        (option) => option.value === "unknown"
+      );
+      const unknownLabel = firstString(techLevelReference.unknownShortLabel);
+      if (unknown && unknownLabel) {
+        const conciseLabel = unknownLabel.replace(/[.!?]+$/, "");
+        const explanation = conciseLabel.replace(
+          /^unknown(?:\s+or\s+variable)?(?:\s+(?:tech\s+level|TL))?\s*[\u2014\u2013:;-]\s*/i,
+          ""
+        );
+        const descriptiveLabel =
+          explanation !== conciseLabel || !/^unknown/i.test(conciseLabel)
+            ? `Unknown or variable TL${explanation ? ` — ${explanation}` : ""}`
+            : conciseLabel;
+        unknown.textContent = /not\s+TL\s*0/i.test(descriptiveLabel)
+          ? descriptiveLabel
+          : `${descriptiveLabel.replace(/[.!?]+$/, "")} — not TL0`;
+      }
+    });
+  }
+
+  function requestTechLevelHelp(panel) {
+    if (!(panel instanceof HTMLDetailsElement)) return;
+    const help = panel.querySelector("[data-gear-tech-level-help]");
+    if (techLevelReference || manifestDocument) {
+      renderTechLevelHelp(panel);
+      return;
+    }
+    if (help instanceof HTMLElement) {
+      help.setAttribute("aria-busy", "true");
+      help.classList.remove("is-error");
+    }
+    ensureManifest()
+      .then(() => {
+        if (help instanceof HTMLElement) help.setAttribute("aria-busy", "false");
+        renderTechLevelHelp(panel);
+      })
+      .catch((error) => {
+        if (!(help instanceof HTMLElement)) return;
+        help.setAttribute("aria-busy", "false");
+        help.textContent = `Book-backed Tech Level guidance is unavailable right now. ${help.dataset.fallbackText || "Maximum Tech Level remains a technology cutoff using a safely parsed recorded TL or range lower bound."} ${error.message}`;
+        help.classList.add("is-error");
+      });
+  }
+
+  function initializeTechLevelHelp() {
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      if (!(panel instanceof HTMLDetailsElement) || panel.dataset.techHelpReady === "true") {
+        return;
+      }
+      const select = panel.querySelector("[data-gear-filter-tl]");
+      const help = panel.querySelector("[data-gear-tech-level-help]");
+      if (
+        !(select instanceof HTMLSelectElement) ||
+        !(help instanceof HTMLElement)
+      ) {
+        return;
+      }
+      panel.dataset.techHelpReady = "true";
+      if (!help.dataset.fallbackText) {
+        help.dataset.fallbackText = help.textContent.trim();
+      }
+      select.addEventListener("change", () => {
+        if (techLevelReference || manifestDocument) renderTechLevelHelp(panel);
+        else if (panel.open) requestTechLevelHelp(panel);
+      });
+      panel.addEventListener("toggle", () => {
+        if (panel.open) requestTechLevelHelp(panel);
+      });
+      if (panel.open) requestTechLevelHelp(panel);
+    });
+  }
+
   function lawLevelGuidance(kind, value) {
     if (!lawLevelReference) return null;
     const normalizedKind = normalizeKind(kind);
@@ -1405,13 +1990,22 @@
     if (!normalizedKind) return null;
 
     if (normalizedValue === "any") {
+      const kindGuidance = lawLevelReference.levels
+        .map((level) => level.guidanceByKind[normalizedKind])
+        .find((guidance) => guidance && guidance.ruleStatus === "outside_global_table");
       return {
-        title: `How Law Level filtering works · ${SECTION_TITLES[normalizedKind]}`,
-        description:
-          lawLevelReference.description ||
-          "Choose a first restricted Law Level to narrow the catalog.",
+        title: `All Law Level classifications · ${SECTION_TITLES[normalizedKind]}`,
+        description: [
+          `Any restriction level leaves the exact ${SECTION_LABELS[normalizedKind]} classification unfiltered.`,
+          kindGuidance && kindGuidance.description,
+          !kindGuidance && lawLevelReference.description,
+        ]
+          .filter(Boolean)
+          .join(" "),
         sourceReferences: [],
-        sourceNote: "Choose a specific Law Level to see kind-specific book references.",
+        sourceNote:
+          "Choose a specific classification to see its kind-specific book references.",
+        neighbors: null,
       };
     }
 
@@ -1423,6 +2017,8 @@
           "No exact source-backed first restriction level is assigned; check the item and world rules.",
         sourceReferences: [],
         sourceNote: "No threshold citation applies to an undetermined classification.",
+        neighbors: [],
+        neighborNoneMessage: `No neighboring source examples apply to an undetermined ${SECTION_LABELS[normalizedKind]} classification.`,
       };
     }
 
@@ -1441,6 +2037,10 @@
       ? guidance.sourceReferences
       : [];
     const sourceReferences = guidanceReferences;
+    const levelIndex = lawLevelReference.levels.indexOf(level);
+    const neighbors = DIRECT_LAW_LEVEL_RULE_STATUSES.has(ruleStatus)
+      ? null
+      : nearestLawLevelGuidance(normalizedKind, levelIndex);
     return {
       title: `Law Level ${level.value} · ${SECTION_TITLES[normalizedKind]}`,
       description: `${firstString(guidance && guidance.description, level.summary)}${cumulativeNote}`,
@@ -1449,7 +2049,82 @@
         sourceReferences.length > 0
           ? ""
           : `This catalog version does not provide a kind-specific book reference for ${SECTION_TITLES[normalizedKind].toLocaleLowerCase()} guidance.`,
+      neighbors,
+      neighborNoneMessage: `No neighboring source examples are available for ${SECTION_TITLES[normalizedKind].toLocaleLowerCase()}.`,
     };
+  }
+
+  function nearestLawLevelGuidance(kind, selectedIndex) {
+    const neighbors = [];
+    const findNeighbor = (step, direction) => {
+      for (
+        let index = selectedIndex + step;
+        index >= 0 && index < lawLevelReference.levels.length;
+        index += step
+      ) {
+        const level = lawLevelReference.levels[index];
+        const guidance = level.guidanceByKind[kind];
+        if (
+          guidance &&
+          DIRECT_LAW_LEVEL_RULE_STATUSES.has(guidance.ruleStatus)
+        ) {
+          neighbors.push({
+            direction,
+            distance: Math.abs(index - selectedIndex),
+            unit: "level",
+            label: lawLevelOptionText(
+              level.value,
+              firstString(guidance.shortLabel, guidance.description)
+            ),
+          });
+          return;
+        }
+      }
+    };
+    findNeighbor(-1, "Lower");
+    findNeighbor(1, "Higher");
+    return neighbors;
+  }
+
+  function renderNeighborContext(guidance) {
+    if (!Array.isArray(guidance.neighbors)) return null;
+    if (guidance.neighbors.length === 0) {
+      return createElement(
+        "span",
+        "gear-filter-neighbor-note",
+        guidance.neighborNoneMessage || "No neighboring source examples are available."
+      );
+    }
+
+    const container = createElement("span", "gear-filter-neighbors");
+    container.appendChild(
+      createElement("strong", "gear-filter-neighbors-title", "Nearest sourced examples")
+    );
+    guidance.neighbors.forEach((neighbor) => {
+      const unit =
+        neighbor.distance === 1
+          ? neighbor.unit
+          : neighbor.unit === "category"
+            ? "categories"
+            : `${neighbor.unit}s`;
+      container.appendChild(
+        createElement(
+          "span",
+          "gear-filter-neighbor",
+          `${neighbor.direction} (${neighbor.distance} ${unit} away): ${neighbor.label}`
+        )
+      );
+    });
+    if (guidance.contextNotice) {
+      container.appendChild(
+        createElement(
+          "span",
+          "gear-filter-neighbor-context",
+          guidance.contextNotice
+        )
+      );
+    }
+    return container;
   }
 
   function renderLawLevelHelp(panel) {
@@ -1484,13 +2159,58 @@
         ? `Book references: ${sourceText}.`
         : guidance.sourceNote || "No book reference is available."
     );
-    help.replaceChildren(title, description, source);
+    const neighbors = renderNeighborContext(guidance);
+    help.replaceChildren(
+      ...[title, description, neighbors, source].filter(Boolean)
+    );
     help.classList.remove("is-error");
   }
 
   function updateAllLawLevelHelp() {
+    updateAllLawLevelOptionLabels();
     document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
       renderLawLevelHelp(panel);
+    });
+  }
+
+  function lawLevelOptionText(value, shortLabel) {
+    const conciseLabel = firstString(shortLabel).replace(/[.!?]+$/, "");
+    if (!conciseLabel) return "";
+    if (/^(?:law\s+)?level\s+\d|^9\+\s*[\u2014\u2013-]/i.test(conciseLabel)) {
+      return conciseLabel;
+    }
+    const prefix = value === "9+" ? "9+" : `Level ${value}`;
+    return `${prefix} — ${conciseLabel}`;
+  }
+
+  function updateAllLawLevelOptionLabels() {
+    if (!lawLevelReference) return;
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      if (!(panel instanceof HTMLDetailsElement)) return;
+      const kind = normalizeKind(panel.dataset.gearAddPanel);
+      const select = panel.querySelector("[data-gear-filter-law-level]");
+      if (!kind || !(select instanceof HTMLSelectElement)) return;
+
+      lawLevelReference.levels.forEach((level) => {
+        const option = Array.from(select.options).find(
+          (candidate) => candidate.value === level.value
+        );
+        const guidance = level.guidanceByKind[kind];
+        const label = guidance && lawLevelOptionText(level.value, guidance.shortLabel);
+        if (option && label) option.textContent = label;
+      });
+
+      const undetermined = Array.from(select.options).find(
+        (option) => option.value === "undetermined"
+      );
+      const undeterminedLabel = lawLevelReference.undeterminedShortLabel;
+      if (undetermined && undeterminedLabel) {
+        undetermined.textContent = /^undetermined\s*[\u2014\u2013-]/i.test(
+          undeterminedLabel
+        )
+          ? undeterminedLabel
+          : `Undetermined — ${undeterminedLabel.replace(/[.!?]+$/, "")}`;
+      }
     });
   }
 
@@ -1502,14 +2222,18 @@
       return;
     }
     if (help instanceof HTMLElement) {
-      help.textContent = "Loading book-backed Law Level guidance…";
+      help.setAttribute("aria-busy", "true");
       help.classList.remove("is-error");
     }
     ensureManifest()
-      .then(() => renderLawLevelHelp(panel))
+      .then(() => {
+        if (help instanceof HTMLElement) help.setAttribute("aria-busy", "false");
+        renderLawLevelHelp(panel);
+      })
       .catch((error) => {
         if (!(help instanceof HTMLElement)) return;
-        help.textContent = `Law Level guidance is unavailable right now. Check the item and world rules. ${error.message}`;
+        help.setAttribute("aria-busy", "false");
+        help.textContent = `Book-backed Law Level guidance is unavailable right now. ${help.dataset.fallbackText || "Filter only exact source-recorded classifications and check the item and world's rules."} ${error.message}`;
         help.classList.add("is-error");
       });
   }
@@ -1522,6 +2246,10 @@
       const select = panel.querySelector("[data-gear-filter-law-level]");
       if (!(select instanceof HTMLSelectElement)) return;
       panel.dataset.lawHelpReady = "true";
+      const help = panel.querySelector("[data-gear-law-level-help]");
+      if (help instanceof HTMLElement && !help.dataset.fallbackText) {
+        help.dataset.fallbackText = help.textContent.trim();
+      }
       select.addEventListener("change", () => {
         if (lawLevelReference) renderLawLevelHelp(panel);
         else if (panel.open) requestLawLevelHelp(panel);
@@ -1530,6 +2258,337 @@
         if (panel.open) requestLawLevelHelp(panel);
       });
       if (panel.open) requestLawLevelHelp(panel);
+    });
+  }
+
+  function legalCategoryOptionText(category) {
+    if (!category) return "";
+    let conciseLabel = firstString(
+      category.shortLabel,
+      category.title,
+      LEGAL_CATEGORY_LABELS[category.value]
+    ).replace(/[.!?]+$/, "");
+    if (!conciseLabel) return LEGAL_CATEGORY_LABELS[category.value] || "";
+    if (category.value === "prohibited") {
+      if (/^prohibited$/i.test(conciseLabel)) return "Prohibited";
+      conciseLabel = conciseLabel.replace(
+        /^prohibited(?:\s*[\u2014\u2013:;-]\s*|\s+)/i,
+        ""
+      );
+      return conciseLabel ? `Prohibited — ${conciseLabel}` : "Prohibited";
+    }
+    const categoryNumber = category.value.replace("category_", "");
+    conciseLabel = conciseLabel.replace(
+      /^category\s+[1-5]\s*[\u2014\u2013:;-]\s*/i,
+      ""
+    );
+    return `Category ${categoryNumber} — ${conciseLabel}`;
+  }
+
+  function nearestLegalCategoryGuidance(kind, selectedCategory) {
+    const selectedIndex = legalCategoryReference.categories.indexOf(selectedCategory);
+    const neighbors = [];
+    const findNeighbor = (step, direction) => {
+      for (
+        let index = selectedIndex + step;
+        index >= 0 && index < legalCategoryReference.categories.length;
+        index += step
+      ) {
+        const category = legalCategoryReference.categories[index];
+        const guidance = category.guidanceByKind[kind];
+        if (
+          guidance &&
+          DIRECT_LEGAL_CATEGORY_RULE_STATUSES.has(guidance.ruleStatus)
+        ) {
+          const categoryLabel = legalCategoryOptionText(category);
+          const guidanceLabel = firstString(guidance.shortLabel);
+          neighbors.push({
+            direction,
+            distance: Math.abs(category.ordinal - selectedCategory.ordinal),
+            unit: "category",
+            label:
+              guidanceLabel &&
+              !categoryLabel.toLocaleLowerCase().includes(
+                guidanceLabel.toLocaleLowerCase()
+              )
+                ? `${categoryLabel} · ${guidanceLabel}`
+                : categoryLabel,
+          });
+          return;
+        }
+      }
+    };
+    findNeighbor(-1, "Lower");
+    findNeighbor(1, "Higher");
+    return neighbors;
+  }
+
+  function legalCategoryGuidance(kind, value) {
+    if (!legalCategoryReference) return null;
+    const normalizedKind = normalizeKind(kind);
+    const normalizedValue = normalizedLegalCategoryFilter(value);
+    if (!normalizedKind) return null;
+
+    if (normalizedValue === "any") {
+      return {
+        title: `All Legal Categories · ${SECTION_TITLES[normalizedKind]}`,
+        description: uniqueStrings([
+          `Any legal category leaves the exact ${SECTION_LABELS[normalizedKind]} classification unfiltered.`,
+          legalCategoryReference.description,
+        ]).join(" "),
+        filterDescription: legalCategoryReference.filterSemantics,
+        priceDescription: "",
+        blackMarketDescription: "",
+        contextNotice: "",
+        examples: [],
+        sourceReferences: legalCategoryReference.sourceReferences,
+        sourceNote:
+          "Choose a specific category to see its kind-specific examples and references.",
+        neighbors: null,
+      };
+    }
+
+    if (normalizedValue === "undetermined") {
+      return {
+        title: `Undetermined Legal Category · ${SECTION_TITLES[normalizedKind]}`,
+        description:
+          legalCategoryReference.undeterminedDescription ||
+          "No exact source-backed legal category is assigned; undetermined does not mean unrestricted or available.",
+        filterDescription: legalCategoryReference.filterSemantics,
+        priceDescription: "",
+        blackMarketDescription: "",
+        contextNotice: "",
+        examples: [],
+        sourceReferences: [],
+        sourceNote: "No category citation applies to an undetermined classification.",
+        neighbors: [],
+        neighborNoneMessage: `No neighboring source examples apply to an undetermined ${SECTION_LABELS[normalizedKind]} classification.`,
+      };
+    }
+
+    const category = legalCategoryReference.categories.find(
+      (candidate) => candidate.value === normalizedValue
+    );
+    if (!category) return null;
+    const guidance = category.guidanceByKind[normalizedKind] || {
+      ruleStatus: "",
+      shortLabel: "",
+      description: "",
+      examples: [],
+      sourceReferences: [],
+    };
+    const ruleStatus = firstString(guidance.ruleStatus);
+    const direct = DIRECT_LEGAL_CATEGORY_RULE_STATUSES.has(ruleStatus);
+    const priceDescription = firstString(
+      category.priceMultiplier.shortLabel,
+      category.priceMultiplier.value
+        ? `${category.priceMultiplier.kind === "minimum" ? "At least " : ""}×${category.priceMultiplier.value}`
+        : ""
+    );
+    const neighbors = direct
+      ? null
+      : nearestLegalCategoryGuidance(normalizedKind, category);
+    return {
+      title: `${legalCategoryOptionText(category)} · ${SECTION_TITLES[normalizedKind]}`,
+      description: uniqueStrings([
+        firstString(category.description, category.summary),
+        guidance.description,
+      ]).join(" "),
+      filterDescription: legalCategoryReference.filterSemantics,
+      priceDescription,
+      blackMarketDescription: priceDescription
+        ? legalCategoryReference.blackMarketDescription
+        : "",
+      contextNotice:
+        Array.isArray(neighbors) && neighbors.length > 0
+          ? legalCategoryReference.contextNotice
+          : "",
+      examples: direct ? guidance.examples : [],
+      sourceReferences: [
+        ...category.sourceReferences,
+        ...guidance.sourceReferences,
+      ],
+      sourceNote:
+        guidance.sourceReferences.length > 0 || category.sourceReferences.length > 0
+          ? ""
+          : `This catalog version does not provide a kind-specific reference for ${SECTION_TITLES[normalizedKind].toLocaleLowerCase()} in this category.`,
+      neighbors,
+      neighborNoneMessage: `No neighboring source examples are available for ${SECTION_TITLES[normalizedKind].toLocaleLowerCase()}.`,
+    };
+  }
+
+  function renderLegalCategoryHelp(panel) {
+    if (!(panel instanceof HTMLDetailsElement)) return;
+    const kind = normalizeKind(panel.dataset.gearAddPanel);
+    const select = panel.querySelector("[data-gear-filter-legal-category]");
+    const help = panel.querySelector("[data-gear-legal-category-help]");
+    if (!(select instanceof HTMLSelectElement) || !(help instanceof HTMLElement)) return;
+    const guidance = legalCategoryGuidance(kind, select.value);
+    if (!guidance) {
+      if (manifestDocument) {
+        help.textContent =
+          "This catalog version does not include book-backed Legal Category guidance. The filter still matches exact source-recorded category values; check the selected item's references.";
+        help.classList.remove("is-error");
+      }
+      return;
+    }
+
+    const title = createElement(
+      "strong",
+      "gear-legal-category-help-title",
+      guidance.title
+    );
+    const description = createElement(
+      "span",
+      "gear-legal-category-help-copy",
+      guidance.description
+    );
+    const filter = createElement(
+      "span",
+      "gear-legal-category-help-filter",
+      guidance.filterDescription
+        ? `Filter meaning: ${guidance.filterDescription}`
+        : ""
+    );
+    filter.hidden = !guidance.filterDescription;
+    const price = createElement(
+      "span",
+      "gear-legal-category-help-price",
+      guidance.priceDescription
+        ? `Black-market price: ${guidance.priceDescription}`
+        : ""
+    );
+    price.hidden = !guidance.priceDescription;
+    const blackMarketDescription = createElement(
+      "span",
+      "gear-legal-category-help-copy",
+      guidance.blackMarketDescription
+    );
+    blackMarketDescription.hidden = !guidance.blackMarketDescription;
+
+    const examples = createElement("span", "gear-legal-category-help-copy");
+    if (guidance.examples.length > 0) {
+      examples.appendChild(createElement("strong", "", "Named examples:"));
+      const list = createElement("ul", "gear-legal-category-help-examples");
+      guidance.examples.forEach((example) => {
+        list.appendChild(createElement("li", "", example));
+      });
+      examples.appendChild(list);
+    } else {
+      examples.hidden = true;
+    }
+
+    const neighbors = renderNeighborContext(guidance);
+    const sourceText = uniqueStrings(
+      guidance.sourceReferences.map((reference) => formatReference(reference))
+    ).join("; ");
+    const source = createElement(
+      "span",
+      "gear-legal-category-help-source",
+      sourceText
+        ? `Book references: ${sourceText}.`
+        : guidance.sourceNote || "No book reference is available."
+    );
+    help.replaceChildren(
+      ...[
+        title,
+        description,
+        filter,
+        price,
+        blackMarketDescription,
+        examples,
+        neighbors,
+        source,
+      ].filter(Boolean)
+    );
+    help.classList.remove("is-error");
+  }
+
+  function updateAllLegalCategoryHelp() {
+    updateAllLegalCategoryOptionLabels();
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      renderLegalCategoryHelp(panel);
+    });
+  }
+
+  function updateAllLegalCategoryOptionLabels() {
+    if (!legalCategoryReference) return;
+    document.querySelectorAll("[data-gear-filter-legal-category]").forEach((select) => {
+      if (!(select instanceof HTMLSelectElement)) return;
+      const any = Array.from(select.options).find(
+        (option) => option.value === "any"
+      );
+      if (any) any.textContent = "Any Legal Category — no category filter";
+      legalCategoryReference.categories.forEach((category) => {
+        const option = Array.from(select.options).find(
+          (candidate) => candidate.value === category.value
+        );
+        if (option) option.textContent = legalCategoryOptionText(category);
+      });
+      const undetermined = Array.from(select.options).find(
+        (option) => option.value === "undetermined"
+      );
+      const undeterminedLabel = legalCategoryReference.undeterminedShortLabel;
+      if (undetermined && undeterminedLabel) {
+        undetermined.textContent = /^undetermined\b/i.test(undeterminedLabel)
+          ? undeterminedLabel
+          : `Undetermined — ${undeterminedLabel.replace(/[.!?]+$/, "")}`;
+      }
+    });
+  }
+
+  function requestLegalCategoryHelp(panel) {
+    if (!(panel instanceof HTMLDetailsElement)) return;
+    const help = panel.querySelector("[data-gear-legal-category-help]");
+    if (legalCategoryReference || manifestDocument) {
+      renderLegalCategoryHelp(panel);
+      return;
+    }
+    if (help instanceof HTMLElement) {
+      help.setAttribute("aria-busy", "true");
+      help.classList.remove("is-error");
+    }
+    ensureManifest()
+      .then(() => {
+        if (help instanceof HTMLElement) help.setAttribute("aria-busy", "false");
+        renderLegalCategoryHelp(panel);
+      })
+      .catch((error) => {
+        if (!(help instanceof HTMLElement)) return;
+        help.setAttribute("aria-busy", "false");
+        help.textContent = `Book-backed Legal Category guidance is unavailable right now. ${help.dataset.fallbackText || "The filter still matches exact source-recorded category values."} ${error.message}`;
+        help.classList.add("is-error");
+      });
+  }
+
+  function initializeLegalCategoryHelp() {
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      if (
+        !(panel instanceof HTMLDetailsElement) ||
+        panel.dataset.legalHelpReady === "true"
+      ) {
+        return;
+      }
+      const select = panel.querySelector("[data-gear-filter-legal-category]");
+      const help = panel.querySelector("[data-gear-legal-category-help]");
+      if (!(select instanceof HTMLSelectElement) || !(help instanceof HTMLElement)) {
+        return;
+      }
+      panel.dataset.legalHelpReady = "true";
+      if (!help.dataset.fallbackText) {
+        help.dataset.fallbackText = help.textContent.trim();
+      }
+      select.addEventListener("change", () => {
+        if (legalCategoryReference || manifestDocument) {
+          renderLegalCategoryHelp(panel);
+        } else if (panel.open) {
+          requestLegalCategoryHelp(panel);
+        }
+      });
+      panel.addEventListener("toggle", () => {
+        if (panel.open) requestLegalCategoryHelp(panel);
+      });
+      if (panel.open) requestLegalCategoryHelp(panel);
     });
   }
 
@@ -1544,6 +2603,50 @@
     return guidance
       ? `The exact item explanation is unavailable. General guidance: ${guidance.description}`
       : "No exact Law Level explanation is available. Check the cited rulebook entry and the world's local rules.";
+  }
+
+  function techLevelDetailSummary(item) {
+    const recordedValue = firstString(item && item.sheet && item.sheet.tl).replace(
+      /^TL\s*/i,
+      ""
+    );
+    return parseTechLevel(recordedValue)
+      ? `Tech Level: TL ${recordedValue} — definition and source`
+      : "Tech Level: unknown or variable — definition and source";
+  }
+
+  function fallbackTechLevelDescription(item) {
+    const recordedValue = firstString(item && item.sheet && item.sheet.tl).replace(
+      /^TL\s*/i,
+      ""
+    );
+    const parsed = parseTechLevel(recordedValue);
+    if (!techLevelReference) {
+      return parsed
+        ? `No exact Tech Level explanation is available in this catalog version. This record lists TL ${recordedValue} as a source-recorded technology rating; exact meaning can vary by gear or equipment type. Check the cited item rulebook for context.`
+        : "No exact Tech Level explanation is available in this catalog version, and no usable source-recorded technology rating is available. Unknown is not TL0 and does not imply legality or availability.";
+    }
+    if (!parsed) {
+      return firstString(
+        techLevelReference.unknownDescription,
+        "No usable TL is recorded. Unknown is not TL0 and does not imply legality or availability."
+      );
+    }
+
+    const level =
+      parsed.minimum >= techLevelReference.higherLevels.minimum
+        ? techLevelReference.higherLevels
+        : techLevelReference.levels.find(
+            (candidate) => candidate.value === parsed.minimum
+          );
+    const kindGuidance = techLevelReference.guidanceByKind[item.kind] || {};
+    const generalGuidance = uniqueStrings([
+      firstString(level && level.summary),
+      firstString(kindGuidance.description),
+    ]).join(" ");
+    return generalGuidance
+      ? `The exact item explanation is unavailable. General guidance for recorded TL ${recordedValue}: ${generalGuidance}`
+      : `The exact item explanation is unavailable. This record lists TL ${recordedValue}; check the cited item rulebook for context.`;
   }
 
   function setStatus(state, message, isError = false) {
@@ -1602,6 +2705,11 @@
       .filter(Boolean)
       .join(" · ");
     renderReviewNotice(state, item);
+    state.techLevelSummary.textContent = techLevelDetailSummary(item);
+    state.techLevelDescription.textContent = loading
+      ? "Loading the exact Tech Level explanation…"
+      : item.techLevelDescription || fallbackTechLevelDescription(item);
+    state.techLevelReferences.replaceChildren();
     state.description.textContent = loading
       ? "Loading the condensed description…"
       : item.descriptionSummary || "No condensed description is available. See the cited rulebook entry.";
@@ -1615,12 +2723,30 @@
     state.references.replaceChildren();
 
     if (loading) {
+      state.techLevelReferences.appendChild(
+        createElement("li", "", "Loading Tech Level references…")
+      );
       state.lawLevelReferences.appendChild(
         createElement("li", "", "Loading Law Level references…")
       );
       const reference = createElement("li", "", "Loading rulebook references…");
       state.references.appendChild(reference);
     } else {
+      if (item.techLevelSourceReferences.length === 0) {
+        state.techLevelReferences.appendChild(
+          createElement(
+            "li",
+            "",
+            "No separate Tech Level reference is available for this record."
+          )
+        );
+      } else {
+        item.techLevelSourceReferences.forEach((source) => {
+          state.techLevelReferences.appendChild(
+            createElement("li", "", formatReference(source))
+          );
+        });
+      }
       if (item.lawLevelSourceReferences.length === 0) {
         state.lawLevelReferences.appendChild(
           createElement(
@@ -1711,6 +2837,7 @@
       variants: catalog.itemsByItemId.get(item.itemId) || [item],
     };
     state.selectedItem = item;
+    state.techLevelDisclosure.open = false;
     state.editingRow = options.editingRow || null;
     setEditingControls(state, Boolean(state.editingRow));
     const savedState = isRecord(options.savedState) ? options.savedState : {};
@@ -1981,7 +3108,9 @@
   function initialize() {
     if (lockerState) return lockerState;
     populateTechLevelFilters();
+    initializeTechLevelHelp();
     initializeLawLevelHelp();
+    initializeLegalCategoryHelp();
     const root = document.querySelector("[data-gear-catalog-locker]");
     if (!root) return null;
     lockerState = createLocker(root);
