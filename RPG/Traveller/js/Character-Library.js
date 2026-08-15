@@ -373,6 +373,63 @@
       : cell.textContent.trim();
   }
 
+  function stringValue(value, fallback = "") {
+    return value === undefined || value === null ? fallback : String(value);
+  }
+
+  function normalizeGearState(value) {
+    const state = isRecord(value) ? value : {};
+    const parsedQuantity = Number.parseInt(state.quantity, 10);
+    return {
+      quantity:
+        Number.isFinite(parsedQuantity) && parsedQuantity > 0
+          ? parsedQuantity
+          : 1,
+      equipped: state.equipped === true || state.equipped === "true",
+      notes: stringValue(state.notes),
+    };
+  }
+
+  function normalizeCatalogRef(value) {
+    if (!isRecord(value)) return null;
+
+    const itemId = stringValue(value.itemId || value.item_id).trim();
+    if (!itemId) return null;
+
+    return {
+      schemaVersion: stringValue(
+        value.schemaVersion || value.schema_version
+      ).trim(),
+      catalogVersion: stringValue(
+        value.catalogVersion || value.catalog_version
+      ).trim(),
+      itemId,
+      definitionId: stringValue(
+        value.definitionId || value.definition_id
+      ).trim(),
+      variantId: stringValue(value.variantId || value.variant_id).trim(),
+    };
+  }
+
+  function gearExtensionFromRow(row) {
+    if (!row || !row.dataset.catalogItemId) return {};
+
+    return {
+      catalogRef: {
+        schemaVersion: row.dataset.catalogSchemaVersion || "",
+        catalogVersion: row.dataset.catalogVersion || "",
+        itemId: row.dataset.catalogItemId,
+        definitionId: row.dataset.catalogDefinitionId || "",
+        variantId: row.dataset.catalogVariantId || "",
+      },
+      state: normalizeGearState({
+        quantity: row.dataset.gearQuantity,
+        equipped: row.dataset.gearEquipped,
+        notes: row.dataset.gearNotes,
+      }),
+    };
+  }
+
   function captureCharacterData() {
     const characteristics = {};
     CHARACTERISTIC_KEYS.forEach((key) => {
@@ -436,39 +493,43 @@
         const cells = row.querySelectorAll("td");
         const skill = cells[2] ? cells[2].querySelector("input") : null;
         return {
-          name: cellValue(cells[0]),
+          name: cellValue(cells[0], "data-value"),
           tl: cellValue(cells[1]),
           skill: skill ? skill.value : "",
           damage: cellValue(cells[3]),
           range: cellValue(cells[4]),
           weight: cellValue(cells[5]),
           magazine: cellValue(cells[6]),
+          ...gearExtensionFromRow(row),
         };
       }),
       armor: tableRows("armor-container").map((row) => {
         const cells = row.querySelectorAll("td");
         return {
-          name: cellValue(cells[0]),
+          name: cellValue(cells[0], "data-value"),
           rating: cellValue(cells[1]),
           tl: cellValue(cells[2]),
           radiation: cellValue(cells[3]),
+          ...gearExtensionFromRow(row),
         };
       }),
       augments: tableRows("augments-container").map((row) => {
         const cells = row.querySelectorAll("td");
         return {
-          type: cellValue(cells[0]),
+          type: cellValue(cells[0], "data-value"),
           tl: cellValue(cells[1]),
           improvement: cellValue(cells[2]),
+          ...gearExtensionFromRow(row),
         };
       }),
       equipment: tableRows("equipment-container").map((row) => {
         const cells = row.querySelectorAll("td");
         return {
-          name: cellValue(cells[0]),
+          name: cellValue(cells[0], "data-value"),
           tl: cellValue(cells[1]),
           mass: cellValue(cells[2]),
           cost: cellValue(cells[3]),
+          ...gearExtensionFromRow(row),
         };
       }),
       trainingSkills: tableRows("training-skills-container").map((row) => {
@@ -513,6 +574,79 @@
     return cell;
   }
 
+  function setGearRowMetadata(row, gear) {
+    const catalogRef = normalizeCatalogRef(gear && gear.catalogRef);
+    if (!catalogRef) return null;
+
+    const state = normalizeGearState(gear.state);
+    row.classList.add("catalog-gear-row");
+    row.dataset.catalogSchemaVersion = catalogRef.schemaVersion;
+    row.dataset.catalogVersion = catalogRef.catalogVersion;
+    row.dataset.catalogItemId = catalogRef.itemId;
+    row.dataset.catalogDefinitionId = catalogRef.definitionId;
+    row.dataset.catalogVariantId = catalogRef.variantId;
+    row.dataset.gearQuantity = String(state.quantity);
+    row.dataset.gearEquipped = String(state.equipped);
+    row.dataset.gearNotes = state.notes;
+    return { catalogRef, state };
+  }
+
+  function renderGearStateIndicator(cell, state) {
+    if (!cell) return;
+    const existing = cell.querySelector(".gear-row-state");
+    if (existing) existing.remove();
+
+    const labels = [];
+    if (state.quantity !== 1) labels.push(`Quantity ${state.quantity}`);
+    if (state.equipped) labels.push("Equipped");
+    if (state.notes) labels.push("Notes");
+    if (labels.length === 0) return;
+
+    const indicator = document.createElement("span");
+    indicator.className = "gear-row-state";
+    indicator.textContent = labels.join(" · ");
+    cell.appendChild(indicator);
+  }
+
+  function appendGearActions(row, label, section, gear) {
+    const actions = appendRemoveAction(row, label);
+    const metadata = setGearRowMetadata(row, gear);
+    if (!metadata) return actions;
+
+    actions.classList.add("gear-row-actions");
+    renderGearStateIndicator(row.querySelector("td"), metadata.state);
+
+    const details = document.createElement("button");
+    details.type = "button";
+    details.className = "gear-details-button";
+    details.textContent = "Details";
+    details.setAttribute("aria-label", `View and edit ${label.replace(/^Remove /, "")}`);
+    details.setAttribute("aria-controls", `${section}-gear-catalog-detail`);
+    details.addEventListener("click", () => {
+      if (
+        window.TravellerGearCatalog &&
+        typeof window.TravellerGearCatalog.openSavedItem === "function"
+      ) {
+        window.TravellerGearCatalog.openSavedItem(section, row);
+      } else {
+        setLibraryMessage("The gear catalog is not available right now.", true);
+      }
+    });
+    actions.prepend(details);
+    return actions;
+  }
+
+  function updateGearRowState(row, value) {
+    if (!row || !row.dataset.catalogItemId) return null;
+    const state = normalizeGearState(value);
+    row.dataset.gearQuantity = String(state.quantity);
+    row.dataset.gearEquipped = String(state.equipped);
+    row.dataset.gearNotes = state.notes;
+    renderGearStateIndicator(row.querySelector("td"), state);
+    updateCurrentCharacterStatus();
+    return state;
+  }
+
   function clearDynamicSections() {
     [
       "education-container",
@@ -527,6 +661,13 @@
       const container = document.getElementById(id);
       if (container) container.replaceChildren();
     });
+
+    if (
+      window.TravellerGearCatalog &&
+      typeof window.TravellerGearCatalog.resetSavedItemEditors === "function"
+    ) {
+      window.TravellerGearCatalog.resetSavedItemEditors();
+    }
   }
 
   function renderEducation(character) {
@@ -640,7 +781,7 @@
 
     character.weapons.forEach((weapon) => {
       const row = document.createElement("tr");
-      appendCell(row, weapon.name);
+      appendCell(row, weapon.name, "data-value");
       appendCell(row, weapon.tl || "-");
       const skillCell = document.createElement("td");
       const skill = document.createElement("input");
@@ -655,7 +796,12 @@
       appendCell(row, weapon.range || "-");
       appendCell(row, weapon.weight || "-");
       appendCell(row, weapon.magazine || "-");
-      appendRemoveAction(row, `Remove ${weapon.name || "weapon"}`);
+      appendGearActions(
+        row,
+        `Remove ${weapon.name || "weapon"}`,
+        "weapon",
+        weapon
+      );
       container.appendChild(row);
     });
   }
@@ -666,11 +812,16 @@
 
     character.armor.forEach((armor) => {
       const row = document.createElement("tr");
-      appendCell(row, armor.name);
+      appendCell(row, armor.name, "data-value");
       appendCell(row, armor.rating);
       appendCell(row, armor.tl);
       appendCell(row, armor.radiation);
-      appendRemoveAction(row, `Remove ${armor.name || "armor"}`);
+      appendGearActions(
+        row,
+        `Remove ${armor.name || "armor"}`,
+        "armour",
+        armor
+      );
       container.appendChild(row);
     });
   }
@@ -681,10 +832,15 @@
 
     character.augments.forEach((augment) => {
       const row = document.createElement("tr");
-      appendCell(row, augment.type);
+      appendCell(row, augment.type, "data-value");
       appendCell(row, augment.tl);
       appendCell(row, augment.improvement);
-      appendRemoveAction(row, `Remove ${augment.type || "augment"}`);
+      appendGearActions(
+        row,
+        `Remove ${augment.type || "augment"}`,
+        "augment",
+        augment
+      );
       container.appendChild(row);
     });
   }
@@ -695,13 +851,44 @@
 
     character.equipment.forEach((equipment) => {
       const row = document.createElement("tr");
-      appendCell(row, equipment.name);
+      appendCell(row, equipment.name, "data-value");
       appendCell(row, equipment.tl);
       appendCell(row, equipment.mass);
       appendCell(row, equipment.cost);
-      appendRemoveAction(row, `Remove ${equipment.name || "equipment"}`);
+      appendGearActions(
+        row,
+        `Remove ${equipment.name || "equipment"}`,
+        "equipment",
+        equipment
+      );
       container.appendChild(row);
     });
+  }
+
+  function addGearItem(section, gear) {
+    if (!isRecord(gear)) {
+      throw new Error("The selected catalog item is not valid gear data.");
+    }
+
+    switch (section) {
+      case "weapon":
+        renderWeapons({ weapons: [gear] });
+        break;
+      case "armour":
+        renderArmor({ armor: [gear] });
+        break;
+      case "augment":
+        renderAugments({ augments: [gear] });
+        break;
+      case "equipment":
+        renderEquipment({ equipment: [gear] });
+        break;
+      default:
+        throw new Error(`The ${section || "unknown"} gear section is not supported.`);
+    }
+
+    updateCurrentCharacterStatus();
+    return gear;
   }
 
   function renderTrainingSkills(character) {
@@ -1060,6 +1247,36 @@
       }
     });
 
+    ["weapons", "armor", "augments", "equipment"].forEach((field) => {
+      if (!Array.isArray(character[field])) return;
+      character[field].forEach((entry) => {
+        if (entry.catalogRef !== undefined && !isRecord(entry.catalogRef)) {
+          throw new Error(`The ${field} catalog reference is not valid character data.`);
+        }
+        if (isRecord(entry.catalogRef)) {
+          [
+            "schemaVersion",
+            "catalogVersion",
+            "itemId",
+            "definitionId",
+            "variantId",
+          ].forEach((key) => {
+            if (
+              entry.catalogRef[key] !== undefined &&
+              typeof entry.catalogRef[key] !== "string"
+            ) {
+              throw new Error(
+                `The ${field} catalog ${key} is not valid character data.`
+              );
+            }
+          });
+        }
+        if (entry.state !== undefined && !isRecord(entry.state)) {
+          throw new Error(`The ${field} item state is not valid character data.`);
+        }
+      });
+    });
+
     if (
       character.characteristics !== undefined &&
       !isRecord(character.characteristics)
@@ -1189,6 +1406,9 @@
     captureCharacterData,
     applyCharacterData,
     importedCharacter,
+    addGearItem,
+    gearMetadataFromRow: gearExtensionFromRow,
+    updateGearRowState,
   });
 
   document.addEventListener("DOMContentLoaded", initializeCharacterLibrary);
