@@ -60,6 +60,7 @@ const techLevelReference = {
       value,
       band: range.band,
       title: range.title,
+      shortLabel: `${range.title} capability`,
       summary: `TL ${value} sits in the ${range.title} band.`,
       sourceReferences: techLevelSourceReferences
     };
@@ -67,10 +68,12 @@ const techLevelReference = {
   higherLevels: {
     minimum: 16,
     title: 'Advanced',
+    shortLabel: 'Advanced or post-mainstream capability',
     summary: 'Advanced technology beyond mainstream Third Imperium science, with no theoretical upper limit.',
     sourceReferences: techLevelSourceReferences
   },
   unknownDescription: 'No usable TL is recorded. Unknown is not TL0 and does not imply legality or availability.',
+  unknownShortLabel: 'Unknown or variable TL — no usable recorded value',
   guidanceByKind: {
     weapon: {
       valueRole: 'first_appearance',
@@ -161,7 +164,9 @@ const lawLevelReference = {
           sourceReferences: guidanceSources.weapon
         },
         armour: {
-          ruleStatus: 'named_threshold',
+          ruleStatus: index === 6 || index === 7
+            ? 'no_additional_threshold'
+            : 'named_threshold',
           shortLabel: armourLawLevelLabels[index],
           description: value === '4'
             ? 'Cloth armour first becomes restricted.'
@@ -175,7 +180,7 @@ const lawLevelReference = {
           sourceReferences: guidanceSources.augment
         },
         equipment: {
-          ruleStatus: 'outside_global_table',
+          ruleStatus: value === '4' ? 'direct_item_exception' : 'outside_global_table',
           shortLabel: value === '4'
             ? 'Intrusion software exception; otherwise check item rules'
             : 'No general equipment threshold; check item rules',
@@ -190,6 +195,112 @@ const lawLevelReference = {
   undeterminedDescription: 'No exact source-backed first restriction level is assigned; undetermined does not mean legal.',
   undeterminedShortLabel: 'No exact source-backed level',
   sourceReferences: rootLawLevelSources
+};
+
+const legalCategoryRootSources = [
+  { title: 'Central Supply Catalogue', pages: [10], pageBasis: 'printed' }
+];
+
+const legalCategorySpecs = [
+  { value: 'category_1', ordinal: 1, title: 'Unrestricted', shortLabel: 'Unrestricted general access', multiplier: 'Standard price' },
+  { value: 'category_2', ordinal: 2, title: 'Civilian Use', shortLabel: 'Category 2 — Licensed civilian access', multiplier: 'Standard price' },
+  { value: 'category_3', ordinal: 3, title: 'Paramilitary Use', shortLabel: 'Paramilitary controls', multiplier: 'Twice standard price' },
+  { value: 'category_4', ordinal: 4, title: 'Military Use', shortLabel: 'Military controls', multiplier: 'Five times standard price' },
+  { value: 'category_5', ordinal: 5, title: 'Restricted Military Use', shortLabel: 'Restricted military controls', multiplier: 'Ten times standard price' },
+  { value: 'prohibited', ordinal: 6, title: 'Prohibited', shortLabel: 'Prohibited — Trade and possession barred', multiplier: 'No legal market price' }
+] as const;
+
+const directLegalCategories = {
+  weapon: new Set(['category_1', 'category_3', 'category_5']),
+  armour: new Set(['category_3']),
+  augment: new Set<string>(),
+  equipment: new Set(['category_2', 'prohibited'])
+} as const;
+
+const legalKindExamples = {
+  weapon: {
+    category_1: ['Sporting weapon'],
+    category_3: ['Submachine gun'],
+    category_5: ['Plasma rifle']
+  },
+  armour: {
+    category_3: ['Cloth armor']
+  },
+  augment: {},
+  equipment: {
+    category_2: ['Intrusion toolkit'],
+    prohibited: ['Planetary doomsday trigger']
+  }
+} as const;
+
+const legalKindShortLabels = {
+  weapon: {
+    category_1: 'Sporting arms examples',
+    category_3: 'Paramilitary weapon examples',
+    category_5: 'Restricted military weapon examples'
+  },
+  armour: {
+    category_3: 'Paramilitary armor examples'
+  },
+  augment: {},
+  equipment: {
+    category_2: 'Civilian equipment examples',
+    prohibited: 'Prohibited equipment examples'
+  }
+} as const;
+
+const legalKindSourcePages = {
+  weapon: 101,
+  armour: 102,
+  augment: 104,
+  equipment: 103
+} as const;
+
+const legalCategoryReference = {
+  rulesContext: 'Central Supply Catalogue legality categories and named examples.',
+  valueSemantics: 'source_recorded_access_category',
+  description: 'Legal Categories describe source-recorded access controls and do not guarantee local availability.',
+  filterSemantics: 'The Legal Category filter is an exact catalog match and does not infer a local ruling.',
+  contextNotice: 'Nearby examples are source-list context only; they do not fill the selected category, classify an item, or determine legality.',
+  blackMarketDescription: 'The multiplier applies to a black-market purchase after an item is found; it is not a base-price or lawful-sale modifier.',
+  categories: legalCategorySpecs.map(spec => {
+    const guidanceByKind = Object.fromEntries(
+      (['weapon', 'armour', 'augment', 'equipment'] as const).map(kind => {
+        const direct = (directLegalCategories[kind] as ReadonlySet<string>).has(spec.value);
+        const examples = direct
+          ? ((legalKindExamples[kind] as Record<string, string[]>)[spec.value] || [])
+          : [];
+        const shortLabel = direct
+          ? ((legalKindShortLabels[kind] as Record<string, string>)[spec.value] || '')
+          : `No named ${kind === 'armour' ? 'armor' : kind} examples`;
+        return [kind, {
+          ruleStatus: direct ? 'named_examples' : 'no_named_examples',
+          shortLabel,
+          description: direct
+            ? `${shortLabel} are named for this category.`
+            : `The source does not name a ${kind === 'armour' ? 'armor' : kind} example in this category.`,
+          examples,
+          sourceReferences: direct
+            ? [{ title: 'Central Supply Catalogue', pages: [legalKindSourcePages[kind]], pageBasis: 'printed' }]
+            : []
+        }];
+      })
+    );
+    return {
+      ...spec,
+      summary: `${spec.title} is the source's category ${spec.ordinal} classification.`,
+      description: `${spec.title} applies the source's category ${spec.ordinal} access rules.`,
+      priceMultiplier: { kind: 'catalog_price', value: String(spec.ordinal), shortLabel: spec.multiplier },
+      guidanceByKind,
+      sourceReferences: [
+        { title: 'Central Supply Catalogue', pages: [20 + spec.ordinal], pageBasis: 'printed' }
+      ]
+    };
+  }),
+  undeterminedShortLabel: 'No exact source-backed category',
+  undeterminedDescription: 'No exact source-backed legal category is assigned; undetermined does not mean unrestricted or available.',
+  sourceReferences: legalCategoryRootSources,
+  notes: 'Apply exact item and local world rules where they are more specific.'
 };
 
 const indexItems: CatalogFixtureItem[] = [
@@ -403,6 +514,7 @@ async function routeCatalog(
     perGuidanceSources?: boolean;
     schemaVersion?: string;
     includeTechLevelReference?: boolean;
+    includeLegalCategoryReference?: boolean;
     includeExactTechLevel?: boolean;
   } = {}
 ) {
@@ -424,6 +536,9 @@ async function routeCatalog(
   };
   if (options.includeTechLevelReference !== false) {
     manifest.techLevelReference = techLevelReference;
+  }
+  if (options.includeLegalCategoryReference !== false) {
+    manifest.legalCategoryReference = legalCategoryReference;
   }
   const routedDetailItems = options.includeExactTechLevel === false
     ? detailItems.map(item => {
@@ -495,7 +610,7 @@ test.describe('Traveller gear catalog', () => {
     expect(tablesComeFirst).toBe(true);
   });
 
-  test('explains Tech Level in a closed, kind-specific Add-filter disclosure', async ({ page }) => {
+  test('explains Tech Level in an always-visible, kind-specific Add-filter panel', async ({ page }) => {
     await routeCatalog(page);
     await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
 
@@ -521,37 +636,45 @@ test.describe('Traveller gear catalog', () => {
     for (const kind of ['weapon', 'armour', 'augment', 'equipment'] as const) {
       const panel = await openAddPanel(page, kind);
       const help = panel.locator('[data-gear-tech-level-help]');
-      const body = panel.locator('[data-gear-tech-level-help-body]');
-      await expect(help).not.toHaveAttribute('open', '');
-      await expect(body).not.toBeVisible();
-      await help.locator(':scope > summary').click();
-      await expect(body).toContainText('not a legality rating');
-      await expect(body).toContainText('technology cutoff, not a guaranteed shopping list');
-      await expect(body).toContainText(expectedGuidance[kind]);
-      await expect(body).toContainText('Core Rulebook, pp. 5, 6, 226');
-      await expect(body).toContainText(expectedCitation[kind]);
+      const techSelect = panel.getByLabel('Maximum Tech Level');
+      await expect(help).toBeVisible();
+      await expect(techSelect).toHaveAttribute('aria-describedby', await help.getAttribute('id') || '');
+      await expect(help).toContainText('not a legality rating');
+      await expect(help).toContainText('technology cutoff, not a guaranteed shopping list');
+      await expect(help).toContainText(expectedGuidance[kind]);
+      await expect(help).toContainText('Core Rulebook, pp. 5, 6, 226');
+      await expect(help).toContainText(expectedCitation[kind]);
       for (const citation of excludedKindCitations[kind]) {
-        await expect(body).not.toContainText(citation);
+        await expect(help).not.toContainText(citation);
       }
     }
 
     const weaponPanel = gearAddPanel(page, 'weapon');
     const help = weaponPanel.locator('[data-gear-tech-level-help]');
-    const body = weaponPanel.locator('[data-gear-tech-level-help-body]');
+    const techSelect = weaponPanel.getByLabel('Maximum Tech Level');
+    await expect(techSelect.locator('option[value="max:9"]')).toHaveText(
+      'Up to TL 9 — Pre-Stellar capability'
+    );
+    await expect(techSelect.locator('option[value="max:16"]')).toHaveText(
+      'Up to TL 16 — Advanced or post-mainstream capability'
+    );
+    await expect(techSelect.locator('option[value="max:21"]')).toHaveText(
+      'Up to TL 21 — Advanced or post-mainstream capability'
+    );
+    await expect(techSelect.locator('option[value="unknown"]')).toContainText('not TL0');
     await weaponPanel.getByLabel('Maximum Tech Level').selectOption('max:9');
-    await expect(help.locator(':scope > summary')).toHaveText('What “Up to TL 9” includes');
-    await expect(body).toContainText('Up to TL 9 · Pre-Stellar');
-    await expect(body).toContainText('TL 9 sits in the Pre-Stellar band.');
+    await expect(help).toContainText('Up to TL 9 · Pre-Stellar');
+    await expect(help).toContainText('TL 9 sits in the Pre-Stellar band.');
 
     await weaponPanel.getByLabel('Maximum Tech Level').selectOption('max:16');
-    await expect(body).toContainText('Advanced technology beyond mainstream Third Imperium science');
+    await expect(help).toContainText('Advanced technology beyond mainstream Third Imperium science');
     await weaponPanel.getByLabel('Maximum Tech Level').selectOption('max:21');
-    await expect(help.locator(':scope > summary')).toHaveText('What “Up to TL 21” includes');
-    await expect(body).toContainText('Advanced technology beyond mainstream Third Imperium science');
+    await expect(help).toContainText('Up to TL 21 · Advanced');
+    await expect(help).toContainText('Advanced technology beyond mainstream Third Imperium science');
 
     await weaponPanel.getByLabel('Maximum Tech Level').selectOption('unknown');
-    await expect(help.locator(':scope > summary')).toHaveText('What “Unknown or variable TL” includes');
-    await expect(body).toContainText('Unknown is not TL0 and does not imply legality or availability.');
+    await expect(help).toContainText('Unknown or variable TL · Weapons');
+    await expect(help).toContainText('Unknown is not TL0 and does not imply legality or availability.');
 
     const indexLoaded = await page.evaluate(() =>
       performance.getEntriesByType('resource').some(entry => entry.name.includes('gear-catalog/index.json'))
@@ -572,16 +695,21 @@ test.describe('Traveller gear catalog', () => {
     await routeCatalog(page, {
       schemaVersion: '1.2.0',
       includeTechLevelReference: false,
+      includeLegalCategoryReference: false,
       includeExactTechLevel: false
     });
     await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
 
     const panel = await openAddPanel(page, 'weapon');
     const help = panel.locator('[data-gear-tech-level-help]');
-    await help.locator(':scope > summary').click();
     await expect(help).toContainText('does not include book-backed Tech Level guidance');
     await expect(help).toContainText('safely parsed recorded TL');
     await expect(help).toContainText('lower bound of a minimum/range expression');
+    const legalHelp = panel.locator('[data-gear-legal-category-help]');
+    await expect(legalHelp).toContainText(
+      'does not include book-backed Legal Category guidance'
+    );
+    await expect(legalHelp).toContainText('matches exact source-recorded category values');
 
     await panel.getByRole('button', { name: 'Choose a weapon from the catalog' }).click();
     const locker = page.locator('#gear-locker');
@@ -681,6 +809,120 @@ test.describe('Traveller gear catalog', () => {
     }
   });
 
+  test('shows source-status neighbors for Law Level and Legal Category gaps', async ({ page }) => {
+    await routeCatalog(page);
+    await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
+
+    const armourPanel = await openAddPanel(page, 'armour');
+    await armourPanel.getByLabel('First restricted Law Level').selectOption('6');
+    const armourLawHelp = armourPanel.locator('[data-gear-law-level-help]');
+    await expect(armourLawHelp).toContainText('Nearest sourced examples');
+    await expect(armourLawHelp).toContainText('Lower (1 level away): Level 5 — Mesh armour');
+    await expect(armourLawHelp).toContainText('Higher (2 levels away): Level 8 — All visible armour');
+    await expect(armourLawHelp).not.toContainText('assault weapons');
+
+    const equipmentPanel = await openAddPanel(page, 'equipment');
+    await equipmentPanel.getByLabel('First restricted Law Level').selectOption('3');
+    const equipmentLawHelp = equipmentPanel.locator('[data-gear-law-level-help]');
+    await expect(equipmentLawHelp).toContainText(
+      'Higher (1 level away): Level 4 — Intrusion software exception; otherwise check item rules'
+    );
+    await expect(equipmentLawHelp).not.toContainText('Lower (');
+
+    const augmentPanel = await openAddPanel(page, 'augment');
+    await augmentPanel.getByLabel('First restricted Law Level').selectOption('4');
+    await expect(augmentPanel.locator('[data-gear-law-level-help]')).toContainText(
+      'No neighboring source examples are available for augments.'
+    );
+
+    const weaponPanel = await openAddPanel(page, 'weapon');
+    const weaponCategory = weaponPanel.getByLabel('Legal category');
+    await expect(weaponCategory.locator('option[value="category_2"]')).toHaveText(
+      'Category 2 — Licensed civilian access'
+    );
+    await expect(weaponCategory.locator('option[value="prohibited"]')).toHaveText(
+      'Prohibited — Trade and possession barred'
+    );
+    await expect(weaponCategory.locator('option[value="undetermined"]')).toHaveText(
+      'Undetermined — No exact source-backed category'
+    );
+    await weaponCategory.selectOption('category_2');
+    const weaponLegalHelp = weaponPanel.locator('[data-gear-legal-category-help]');
+    await expect(weaponLegalHelp).toContainText('Nearest sourced examples');
+    await expect(weaponLegalHelp).toContainText(
+      'Lower (1 category away): Category 1 — Unrestricted general access · Sporting arms examples'
+    );
+    await expect(weaponLegalHelp).toContainText(
+      'Higher (1 category away): Category 3 — Paramilitary controls · Paramilitary weapon examples'
+    );
+    await expect(weaponLegalHelp).toContainText(
+      'Nearby examples are source-list context only; they do not fill the selected category, classify an item, or determine legality.'
+    );
+    await expect(weaponLegalHelp).not.toContainText('Cloth armor');
+
+    await armourPanel.getByLabel('Legal category').selectOption('category_2');
+    const armourLegalHelp = armourPanel.locator('[data-gear-legal-category-help]');
+    await expect(armourLegalHelp).toContainText(
+      'Higher (1 category away): Category 3 — Paramilitary controls · Paramilitary armor examples'
+    );
+    await expect(armourLegalHelp).not.toContainText('Lower (');
+    await expect(armourLegalHelp).not.toContainText(/weapon|sporting arms|submachine/i);
+
+    await augmentPanel.getByLabel('Legal category').selectOption('category_2');
+    await expect(augmentPanel.locator('[data-gear-legal-category-help]')).toContainText(
+      'No neighboring source examples are available for augments.'
+    );
+
+    await equipmentPanel.getByLabel('Legal category').selectOption('category_2');
+    const equipmentLegalHelp = equipmentPanel.locator('[data-gear-legal-category-help]');
+    await expect(equipmentLegalHelp).toContainText('Civilian Use applies the source\'s category 2 access rules.');
+    await expect(equipmentLegalHelp).toContainText('Named examples:');
+    await expect(equipmentLegalHelp).toContainText('Intrusion toolkit');
+    await expect(equipmentLegalHelp).toContainText('Black-market price: Standard price');
+    await expect(equipmentLegalHelp).toContainText(
+      'black-market purchase after an item is found; it is not a base-price or lawful-sale modifier'
+    );
+    await expect(equipmentLegalHelp).not.toContainText('Price guidance');
+    await expect(equipmentLegalHelp).not.toContainText(
+      /Central Supply Catalogue, p\. 10(?:[.;]|$)/
+    );
+    await expect(equipmentLegalHelp).toContainText('Central Supply Catalogue, p. 22');
+    await expect(equipmentLegalHelp).toContainText('Central Supply Catalogue, p. 103');
+    await expect(equipmentLegalHelp).not.toContainText('Central Supply Catalogue, p. 101');
+    await expect(equipmentLegalHelp).not.toContainText('Central Supply Catalogue, p. 102');
+
+    const indexLoaded = await page.evaluate(() =>
+      performance.getEntriesByType('resource').some(entry => entry.name.includes('gear-catalog/index.json'))
+    );
+    expect(indexLoaded).toBe(false);
+  });
+
+  test('aligns filter help on desktop and uses natural, overflow-free mobile height', async ({ page }) => {
+    await routeCatalog(page);
+    await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
+    const panel = await openAddPanel(page, 'weapon');
+    await panel.getByLabel('Maximum Tech Level').selectOption('max:9');
+    await panel.getByLabel('First restricted Law Level').selectOption('6');
+    await panel.getByLabel('Legal category').selectOption('category_2');
+    const desktopHeights = await panel.locator('.gear-filter-help').evaluateAll(elements =>
+      elements.map(element => Math.round(element.getBoundingClientRect().height))
+    );
+    expect(new Set(desktopHeights).size).toBe(1);
+
+    await page.setViewportSize({ width: 390, height: 844 });
+    const mobileLayout = await panel.evaluate(element => {
+      const helpPanels = Array.from(element.querySelectorAll<HTMLElement>('.gear-filter-help'));
+      return {
+        heights: helpPanels.map(help => Math.round(help.getBoundingClientRect().height)),
+        minHeights: helpPanels.map(help => getComputedStyle(help).minHeight),
+        overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth
+      };
+    });
+    expect(mobileLayout.minHeights.every(value => value === '0px')).toBe(true);
+    expect(new Set(mobileLayout.heights).size).toBeGreaterThan(1);
+    expect(mobileLayout.overflow).toBe(false);
+  });
+
   test('lazy-loads and resolves the generated public catalog assets', async ({ page }) => {
     await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
     const indexLoadedBeforeOpen = await page.evaluate(() =>
@@ -690,6 +932,62 @@ test.describe('Traveller gear catalog', () => {
 
     const locker = page.locator('#gear-locker');
     const weaponPanel = await openAddPanel(page, 'weapon');
+    const generatedTechFilter = weaponPanel.getByLabel('Maximum Tech Level');
+    await expect(generatedTechFilter.locator('option[value="max:9"]')).toHaveText(
+      'Up to TL 9 — Gravity control and early jump'
+    );
+    await expect(generatedTechFilter.locator('option[value="max:16"]')).toHaveText(
+      'Up to TL 16 — Beyond described milestones'
+    );
+    await expect(generatedTechFilter.locator('option[value="max:21"]')).toHaveText(
+      'Up to TL 21 — Beyond described milestones'
+    );
+    await expect(generatedTechFilter.locator('option[value="unknown"]')).toHaveText(
+      'Unknown or variable TL — Check item source — not TL0'
+    );
+    const generatedLegalFilter = weaponPanel.getByLabel('Legal category');
+    const generatedLegalLabels = {
+      category_1: 'Category 1 — Unrestricted where local law permits',
+      category_2: 'Category 2 — Civilian use; permit or safety training',
+      category_3: 'Category 3 — Paramilitary use; skill and suitable need',
+      category_4: 'Category 4 — Military use; accredited employment',
+      category_5: 'Category 5 — Restricted military use; qualified units or personnel',
+      prohibited: 'Prohibited — Exceptional permits are rarely granted'
+    } as const;
+    for (const [value, label] of Object.entries(generatedLegalLabels)) {
+      await expect(generatedLegalFilter.locator(`option[value="${value}"]`)).toHaveText(label);
+    }
+    const generatedLegalOptionText = await generatedLegalFilter.locator('option').allTextContents();
+    expect(generatedLegalOptionText.join(' ')).not.toMatch(/Category [1-5] — Category [1-5]|Prohibited — Prohibited/i);
+    await generatedLegalFilter.selectOption('category_2');
+    const generatedLegalHelp = weaponPanel.locator('[data-gear-legal-category-help]');
+    await expect(generatedLegalHelp).toContainText('Named examples:');
+    await expect(generatedLegalHelp).toContainText('Semi-automatic rifles');
+    await expect(generatedLegalHelp).toContainText('Black-market price: ×3');
+    await expect(generatedLegalHelp).toContainText(
+      'black-market purchase after an item is found; it is not a base-price or lawful-sale modifier'
+    );
+    await expect(generatedLegalHelp).not.toContainText('Price guidance');
+    await expect(generatedLegalHelp).toContainText('Central Supply Catalogue, p. 5');
+    await expect(generatedLegalHelp).not.toContainText('Central Supply Catalogue, pp. 5, 6');
+    await expect(generatedLegalHelp).not.toContainText('Central Supply Catalogue, p. 6');
+    await generatedLegalFilter.selectOption('prohibited');
+    await expect(generatedLegalHelp).toContainText('Black-market price: At least ×20');
+    await expect(generatedLegalHelp).toContainText(
+      'black-market purchase after an item is found; it is not a base-price or lawful-sale modifier'
+    );
+    await generatedLegalFilter.selectOption('any');
+
+    const generatedArmourPanel = await openAddPanel(page, 'armour');
+    await generatedArmourPanel.getByLabel('Legal category').selectOption('category_1');
+    const generatedArmourLegalHelp = generatedArmourPanel.locator(
+      '[data-gear-legal-category-help]'
+    );
+    await expect(generatedArmourLegalHelp).toContainText(
+      'Higher (2 categories away): Category 3 — Paramilitary use; skill and suitable need · Cloth and flak'
+    );
+    await expect(generatedArmourLegalHelp).not.toContainText('categorys');
+
     await weaponPanel.getByRole('button', { name: 'Choose a weapon from the catalog' }).click();
     await expect(locker).toBeVisible();
     await expect(locker.getByRole('status')).toContainText('1869 catalog variants loaded');
@@ -737,15 +1035,11 @@ test.describe('Traveller gear catalog', () => {
 
     const weaponPanel = await openAddPanel(page, 'weapon');
     const techHelp = weaponPanel.locator('[data-gear-tech-level-help]');
-    await techHelp.locator(':scope > summary').click();
-    await expect(weaponPanel.locator('[data-gear-tech-level-help-body]')).toContainText(
-      'technology cutoff'
-    );
+    await expect(techHelp).toContainText('technology cutoff');
     const addPanelFitsViewport = await page.evaluate(() =>
       document.documentElement.scrollWidth <= document.documentElement.clientWidth
     );
     expect(addPanelFitsViewport).toBe(true);
-    await techHelp.locator(':scope > summary').click();
     const browse = weaponPanel.getByRole('button', { name: 'Choose a weapon from the catalog' });
     const locker = page.locator('#gear-locker');
     await browse.click();
@@ -901,15 +1195,11 @@ test.describe('Traveller gear catalog', () => {
 
     const weaponPanel = await openAddPanel(page, 'weapon');
     const mobileTechHelp = weaponPanel.locator('[data-gear-tech-level-help]');
-    await mobileTechHelp.locator(':scope > summary').click();
-    await expect(weaponPanel.locator('[data-gear-tech-level-help-body]')).toContainText(
-      'technology cutoff'
-    );
+    await expect(mobileTechHelp).toContainText('technology cutoff');
     const addPanelFitsMobileViewport = await page.evaluate(() =>
       document.documentElement.scrollWidth <= document.documentElement.clientWidth
     );
     expect(addPanelFitsMobileViewport).toBe(true);
-    await mobileTechHelp.locator(':scope > summary').click();
     const browse = weaponPanel.getByRole('button', { name: 'Choose a weapon from the catalog' });
     const locker = page.locator('#gear-locker');
     await browse.click();
@@ -945,13 +1235,36 @@ test.describe('Traveller gear catalog', () => {
 
     const locker = page.locator('#gear-locker');
     const equipmentPanel = await openAddPanel(page, 'equipment');
+    const techHelp = equipmentPanel.locator('[data-gear-tech-level-help]');
     const lawHelp = equipmentPanel.locator('[data-gear-law-level-help]');
+    const legalHelp = equipmentPanel.locator('[data-gear-legal-category-help]');
+    await expect(techHelp).toContainText('Book-backed Tech Level guidance is unavailable');
+    await expect(techHelp).toContainText('safely parsed recorded TL or range lower bound');
     await expect(lawHelp).toContainText('Book-backed Law Level guidance is unavailable');
     await expect(lawHelp).toContainText('no blanket numeric ladder for general equipment');
     await expect(lawHelp).not.toContainText('Open this Add control');
+    await expect(legalHelp).toContainText('Book-backed Legal Category guidance is unavailable');
+    await expect(legalHelp).toContainText('matches exact source-recorded category values');
+    await expect(techHelp).not.toContainText(/open this|load book-backed/i);
+    await expect(legalHelp).not.toContainText(/open this|load book-backed/i);
+    await expect(
+      equipmentPanel.getByLabel('Maximum Tech Level').locator('option[value="max:9"]')
+    ).toHaveText('Up to TL 9 — Gravity control and early jump');
+    await expect(
+      equipmentPanel.getByLabel('Maximum Tech Level').locator('option[value="max:16"]')
+    ).toHaveText('Up to TL 16 — Beyond described milestones');
+    await expect(
+      equipmentPanel.getByLabel('Maximum Tech Level').locator('option[value="unknown"]')
+    ).toContainText('not TL0');
     await expect(
       equipmentPanel.getByLabel('First restricted Law Level').locator('option[value="4"]')
     ).toHaveText('Level 4 — Intrusion software exception; otherwise check item rules');
+    await expect(
+      equipmentPanel.getByLabel('Legal category').locator('option[value="category_2"]')
+    ).toHaveText('Category 2 — Civilian use; permit or safety training');
+    await expect(
+      equipmentPanel.getByLabel('Legal category').locator('option[value="prohibited"]')
+    ).toHaveText('Prohibited — Exceptional permits are rarely granted');
     await equipmentPanel.getByRole('button', { name: 'Choose equipment from the catalog' }).click();
     await expect(locker.getByRole('status')).toContainText('could not be loaded');
     await locker.getByRole('button', { name: 'Done' }).click();

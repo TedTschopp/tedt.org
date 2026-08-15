@@ -658,10 +658,10 @@
             gap: 8px;
         }
 
-        .gear-catalog-tech-filter,
-        .gear-catalog-law-filter {
+        .gear-catalog-filter {
             display: grid;
-            align-content: start;
+            grid-template-rows: auto 1fr;
+            align-content: stretch;
             min-width: 0;
         }
 
@@ -682,72 +682,8 @@
             min-height: 44px;
         }
 
-        .gear-tech-level-help {
-            margin-top: 4px;
-        }
-
-        .gear-tech-level-help > summary {
-            min-height: 30px;
-            padding: 5px 1px;
-            color: #565656;
-            cursor: pointer;
-            font-family: var(--font-ui);
-            font-size: 0.7rem;
-            font-weight: 700;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-        }
-
-        .gear-tech-level-help > summary:hover,
-        .gear-tech-level-help > summary:focus-visible {
-            color: var(--traveller-tertiary);
-        }
-
-        .gear-tech-level-help-body {
-            margin-top: 3px;
-            padding: 8px 9px;
-            border-left: 3px solid var(--traveller-tertiary);
-            background: var(--traveller-content-bg);
-            color: #3f3f3f;
-            font-family: var(--font-secondary);
-            font-size: 0.72rem;
-            font-weight: 400;
-            line-height: 1.35;
-        }
-
-        .gear-tech-level-help-title,
-        .gear-tech-level-help-copy,
-        .gear-tech-level-help-filter,
-        .gear-tech-level-help-kind,
-        .gear-tech-level-help-source {
-            display: block;
-        }
-
-        .gear-tech-level-help-title {
-            color: var(--traveller-primary);
-            font-family: var(--font-ui);
-            font-weight: 700;
-        }
-
-        .gear-tech-level-help-copy,
-        .gear-tech-level-help-filter,
-        .gear-tech-level-help-kind {
-            margin-top: 4px;
-        }
-
-        .gear-tech-level-help-source {
-            margin-top: 5px;
-            color: #595959;
-            font-size: 0.68rem;
-        }
-
-        .gear-tech-level-help.is-error .gear-tech-level-help-body {
-            border-left-color: #9a6700;
-            background: #fff3cd;
-            color: #4d3400;
-        }
-
-        .gear-law-level-help {
+        .gear-filter-help {
+            min-height: 154px;
             margin-top: 7px;
             padding: 8px 9px;
             border-left: 3px solid var(--traveller-tertiary);
@@ -757,31 +693,90 @@
             font-size: 0.72rem;
             font-weight: 400;
             line-height: 1.35;
+            overflow-wrap: anywhere;
         }
 
+        .gear-tech-level-help-title,
+        .gear-tech-level-help-copy,
+        .gear-tech-level-help-filter,
+        .gear-tech-level-help-kind,
+        .gear-tech-level-help-source,
         .gear-law-level-help-title,
         .gear-law-level-help-copy,
-        .gear-law-level-help-source {
+        .gear-law-level-help-source,
+        .gear-legal-category-help-title,
+        .gear-legal-category-help-copy,
+        .gear-legal-category-help-filter,
+        .gear-legal-category-help-price,
+        .gear-legal-category-help-source,
+        .gear-filter-neighbors,
+        .gear-filter-neighbor-note {
             display: block;
         }
 
-        .gear-law-level-help-title {
+        .gear-tech-level-help-title,
+        .gear-law-level-help-title,
+        .gear-legal-category-help-title {
             color: var(--traveller-primary);
             font-family: var(--font-ui);
             font-weight: 700;
         }
 
-        .gear-law-level-help-copy {
-            margin-top: 3px;
+        .gear-tech-level-help-copy,
+        .gear-tech-level-help-filter,
+        .gear-tech-level-help-kind,
+        .gear-law-level-help-copy,
+        .gear-legal-category-help-copy,
+        .gear-legal-category-help-filter,
+        .gear-legal-category-help-price {
+            margin-top: 4px;
         }
 
-        .gear-law-level-help-source {
-            margin-top: 4px;
+        .gear-tech-level-help-source,
+        .gear-law-level-help-source,
+        .gear-legal-category-help-source {
+            margin-top: 5px;
             color: #595959;
             font-size: 0.68rem;
         }
 
-        .gear-law-level-help.is-error {
+        .gear-legal-category-help-examples {
+            margin: 4px 0 0;
+            padding-left: 17px;
+        }
+
+        .gear-filter-neighbors,
+        .gear-filter-neighbor-note {
+            margin-top: 6px;
+            padding-top: 5px;
+            border-top: 1px solid var(--traveller-border);
+            color: #4f4f4f;
+            font-size: 0.69rem;
+        }
+
+        .gear-filter-neighbors-title {
+            display: block;
+            margin-bottom: 2px;
+            color: var(--traveller-primary);
+            font-family: var(--font-ui);
+            font-weight: 700;
+        }
+
+        .gear-filter-neighbor {
+            display: block;
+            margin-top: 2px;
+        }
+
+        .gear-filter-neighbor-context {
+            display: block;
+            margin-top: 5px;
+            color: #595959;
+            font-style: italic;
+        }
+
+        .gear-tech-level-help.is-error,
+        .gear-law-level-help.is-error,
+        .gear-legal-category-help.is-error {
             border-left-color: #9a6700;
             background: #fff3cd;
             color: #4d3400;
@@ -1544,6 +1539,15 @@
 
             .gear-catalog-filter-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .gear-catalog-filter {
+                grid-template-rows: auto auto;
+                align-content: start;
+            }
+
+            .gear-filter-help {
+                min-height: 0;
             }
 
             .gear-locker {

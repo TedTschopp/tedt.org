@@ -648,22 +648,21 @@
                     <fieldset class="gear-catalog-filters">
                         <legend>Catalog filters</legend>
                         <div class="gear-catalog-filter-grid">
-                            <div class="gear-catalog-tech-filter">
+                            <div class="gear-catalog-filter gear-catalog-tech-filter">
                                 <label for="weaponCatalogTechLevel">
                                     <span>Maximum Tech Level</span>
-                                    <select class="form-control" id="weaponCatalogTechLevel" data-gear-filter-tl>
+                                    <select class="form-control" id="weaponCatalogTechLevel" data-gear-filter-tl
+                                        aria-describedby="weaponCatalogTechLevelHelp">
                                         <option value="any">Any Tech Level</option>
                                         <option value="unknown">Unknown or variable TL only</option>
                                     </select>
                                 </label>
-                                <details class="gear-tech-level-help" data-gear-tech-level-help>
-                                    <summary data-gear-tech-level-help-summary>Tech Level (TL): what the rating means</summary>
-                                    <div class="gear-tech-level-help-body" data-gear-tech-level-help-body aria-live="polite">
-                                        Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. For weapons, it generally marks when that version first appears.
-                                    </div>
-                                </details>
+                                <div class="gear-filter-help gear-tech-level-help" id="weaponCatalogTechLevelHelp" data-gear-tech-level-help
+                                    data-gear-tech-level-help-body aria-live="polite">
+                                    Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. For weapons, it generally marks when that version first appears.
+                                </div>
                             </div>
-                            <div class="gear-catalog-law-filter">
+                            <div class="gear-catalog-filter gear-catalog-law-filter">
                                 <label for="weaponCatalogLawLevel">
                                     <span>First restricted Law Level</span>
                                     <select class="form-control" id="weaponCatalogLawLevel" data-gear-filter-law-level
@@ -682,24 +681,31 @@
                                         <option value="undetermined">Undetermined — No exact source-backed weapon level</option>
                                     </select>
                                 </label>
-                                <div class="gear-law-level-help" id="weaponCatalogLawLevelHelp"
+                                <div class="gear-filter-help gear-law-level-help" id="weaponCatalogLawLevelHelp"
                                     data-gear-law-level-help aria-live="polite">
                                     Any restriction level leaves weapon classifications unfiltered. Choose a level to review the weapon classes first restricted there.
                                 </div>
                             </div>
-                            <label for="weaponCatalogLegalCategory">
-                                <span>Legal category</span>
-                                <select class="form-control" id="weaponCatalogLegalCategory" data-gear-filter-legal-category>
-                                    <option value="any">Any legal category</option>
-                                    <option value="category_1">Category 1 — Unrestricted</option>
-                                    <option value="category_2">Category 2 — Civilian Use</option>
-                                    <option value="category_3">Category 3 — Paramilitary Use</option>
-                                    <option value="category_4">Category 4 — Military Use</option>
-                                    <option value="category_5">Category 5 — Restricted Military Use</option>
-                                    <option value="prohibited">Prohibited</option>
-                                    <option value="undetermined">Undetermined</option>
-                                </select>
-                            </label>
+                            <div class="gear-catalog-filter gear-catalog-legal-filter">
+                                <label for="weaponCatalogLegalCategory">
+                                    <span>Legal category</span>
+                                    <select class="form-control" id="weaponCatalogLegalCategory" data-gear-filter-legal-category
+                                        aria-describedby="weaponCatalogLegalCategoryHelp">
+                                        <option value="any">Any Legal Category — no category filter</option>
+                                        <option value="category_1">Category 1 — Unrestricted where local law permits</option>
+                                        <option value="category_2">Category 2 — Civilian use; permit or safety training</option>
+                                        <option value="category_3">Category 3 — Paramilitary use; skill and suitable need</option>
+                                        <option value="category_4">Category 4 — Military use; accredited employment</option>
+                                        <option value="category_5">Category 5 — Restricted military use; qualified units or personnel</option>
+                                        <option value="prohibited">Prohibited — Exceptional permits are rarely granted</option>
+                                        <option value="undetermined">Undetermined — no source-backed category</option>
+                                    </select>
+                                </label>
+                                <div class="gear-filter-help gear-legal-category-help" id="weaponCatalogLegalCategoryHelp"
+                                    data-gear-legal-category-help aria-live="polite">
+                                    Any legal category leaves weapon classifications unfiltered. The filter matches exact source-recorded category values. Categories describe access controls, not guaranteed availability on a particular world.
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
                     <div class="gear-catalog-launch-actions">
@@ -758,22 +764,21 @@
                     <fieldset class="gear-catalog-filters">
                         <legend>Catalog filters</legend>
                         <div class="gear-catalog-filter-grid">
-                            <div class="gear-catalog-tech-filter">
+                            <div class="gear-catalog-filter gear-catalog-tech-filter">
                                 <label for="armorCatalogTechLevel">
                                     <span>Maximum Tech Level</span>
-                                    <select class="form-control" id="armorCatalogTechLevel" data-gear-filter-tl>
+                                    <select class="form-control" id="armorCatalogTechLevel" data-gear-filter-tl
+                                        aria-describedby="armorCatalogTechLevelHelp">
                                         <option value="any">Any Tech Level</option>
                                         <option value="unknown">Unknown or variable TL only</option>
                                     </select>
                                 </label>
-                                <details class="gear-tech-level-help" data-gear-tech-level-help>
-                                    <summary data-gear-tech-level-help-summary>Tech Level (TL): what the rating means</summary>
-                                    <div class="gear-tech-level-help-body" data-gear-tech-level-help-body aria-live="polite">
-                                        Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. For armor, it records the source-listed technology rating for that version.
-                                    </div>
-                                </details>
+                                <div class="gear-filter-help gear-tech-level-help" id="armorCatalogTechLevelHelp" data-gear-tech-level-help
+                                    data-gear-tech-level-help-body aria-live="polite">
+                                    Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. For armor, it records the source-listed technology rating for that version.
+                                </div>
                             </div>
-                            <div class="gear-catalog-law-filter">
+                            <div class="gear-catalog-filter gear-catalog-law-filter">
                                 <label for="armorCatalogLawLevel">
                                     <span>First restricted Law Level</span>
                                     <select class="form-control" id="armorCatalogLawLevel" data-gear-filter-law-level
@@ -792,24 +797,31 @@
                                         <option value="undetermined">Undetermined — No exact source-backed armour level</option>
                                     </select>
                                 </label>
-                                <div class="gear-law-level-help" id="armorCatalogLawLevelHelp"
+                                <div class="gear-filter-help gear-law-level-help" id="armorCatalogLawLevelHelp"
                                     data-gear-law-level-help aria-live="polite">
                                     Any restriction level leaves armour classifications unfiltered. Choose a level to review the armour classes first restricted there.
                                 </div>
                             </div>
-                            <label for="armorCatalogLegalCategory">
-                                <span>Legal category</span>
-                                <select class="form-control" id="armorCatalogLegalCategory" data-gear-filter-legal-category>
-                                    <option value="any">Any legal category</option>
-                                    <option value="category_1">Category 1 — Unrestricted</option>
-                                    <option value="category_2">Category 2 — Civilian Use</option>
-                                    <option value="category_3">Category 3 — Paramilitary Use</option>
-                                    <option value="category_4">Category 4 — Military Use</option>
-                                    <option value="category_5">Category 5 — Restricted Military Use</option>
-                                    <option value="prohibited">Prohibited</option>
-                                    <option value="undetermined">Undetermined</option>
-                                </select>
-                            </label>
+                            <div class="gear-catalog-filter gear-catalog-legal-filter">
+                                <label for="armorCatalogLegalCategory">
+                                    <span>Legal category</span>
+                                    <select class="form-control" id="armorCatalogLegalCategory" data-gear-filter-legal-category
+                                        aria-describedby="armorCatalogLegalCategoryHelp">
+                                        <option value="any">Any Legal Category — no category filter</option>
+                                        <option value="category_1">Category 1 — Unrestricted where local law permits</option>
+                                        <option value="category_2">Category 2 — Civilian use; permit or safety training</option>
+                                        <option value="category_3">Category 3 — Paramilitary use; skill and suitable need</option>
+                                        <option value="category_4">Category 4 — Military use; accredited employment</option>
+                                        <option value="category_5">Category 5 — Restricted military use; qualified units or personnel</option>
+                                        <option value="prohibited">Prohibited — Exceptional permits are rarely granted</option>
+                                        <option value="undetermined">Undetermined — no source-backed category</option>
+                                    </select>
+                                </label>
+                                <div class="gear-filter-help gear-legal-category-help" id="armorCatalogLegalCategoryHelp"
+                                    data-gear-legal-category-help aria-live="polite">
+                                    Any legal category leaves armor classifications unfiltered. The filter matches exact source-recorded category values. Categories describe access controls, not guaranteed availability on a particular world.
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
                     <div class="gear-catalog-launch-actions">
@@ -862,22 +874,21 @@
                     <fieldset class="gear-catalog-filters">
                         <legend>Catalog filters</legend>
                         <div class="gear-catalog-filter-grid">
-                            <div class="gear-catalog-tech-filter">
+                            <div class="gear-catalog-filter gear-catalog-tech-filter">
                                 <label for="augmentCatalogTechLevel">
                                     <span>Maximum Tech Level</span>
-                                    <select class="form-control" id="augmentCatalogTechLevel" data-gear-filter-tl>
+                                    <select class="form-control" id="augmentCatalogTechLevel" data-gear-filter-tl
+                                        aria-describedby="augmentCatalogTechLevelHelp">
                                         <option value="any">Any Tech Level</option>
                                         <option value="unknown">Unknown or variable TL only</option>
                                     </select>
                                 </label>
-                                <details class="gear-tech-level-help" data-gear-tech-level-help>
-                                    <summary data-gear-tech-level-help-summary>Tech Level (TL): what the rating means</summary>
-                                    <div class="gear-tech-level-help-body" data-gear-tech-level-help-body aria-live="polite">
-                                        Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. For augments, use the source-listed rating and exact medical rules together.
-                                    </div>
-                                </details>
+                                <div class="gear-filter-help gear-tech-level-help" id="augmentCatalogTechLevelHelp" data-gear-tech-level-help
+                                    data-gear-tech-level-help-body aria-live="polite">
+                                    Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. For augments, use the source-listed rating and exact medical rules together.
+                                </div>
                             </div>
-                            <div class="gear-catalog-law-filter">
+                            <div class="gear-catalog-filter gear-catalog-law-filter">
                                 <label for="augmentCatalogLawLevel">
                                     <span>First restricted Law Level</span>
                                     <select class="form-control" id="augmentCatalogLawLevel" data-gear-filter-law-level
@@ -896,24 +907,31 @@
                                         <option value="undetermined">Undetermined — No exact source-backed augment level</option>
                                     </select>
                                 </label>
-                                <div class="gear-law-level-help" id="augmentCatalogLawLevelHelp"
+                                <div class="gear-filter-help gear-law-level-help" id="augmentCatalogLawLevelHelp"
                                     data-gear-law-level-help aria-live="polite">
                                     The Core table has no blanket numeric ladder for augments. Filter only exact classifications and check the selected item and world's rules.
                                 </div>
                             </div>
-                            <label for="augmentCatalogLegalCategory">
-                                <span>Legal category</span>
-                                <select class="form-control" id="augmentCatalogLegalCategory" data-gear-filter-legal-category>
-                                    <option value="any">Any legal category</option>
-                                    <option value="category_1">Category 1 — Unrestricted</option>
-                                    <option value="category_2">Category 2 — Civilian Use</option>
-                                    <option value="category_3">Category 3 — Paramilitary Use</option>
-                                    <option value="category_4">Category 4 — Military Use</option>
-                                    <option value="category_5">Category 5 — Restricted Military Use</option>
-                                    <option value="prohibited">Prohibited</option>
-                                    <option value="undetermined">Undetermined</option>
-                                </select>
-                            </label>
+                            <div class="gear-catalog-filter gear-catalog-legal-filter">
+                                <label for="augmentCatalogLegalCategory">
+                                    <span>Legal category</span>
+                                    <select class="form-control" id="augmentCatalogLegalCategory" data-gear-filter-legal-category
+                                        aria-describedby="augmentCatalogLegalCategoryHelp">
+                                        <option value="any">Any Legal Category — no category filter</option>
+                                        <option value="category_1">Category 1 — Unrestricted where local law permits</option>
+                                        <option value="category_2">Category 2 — Civilian use; permit or safety training</option>
+                                        <option value="category_3">Category 3 — Paramilitary use; skill and suitable need</option>
+                                        <option value="category_4">Category 4 — Military use; accredited employment</option>
+                                        <option value="category_5">Category 5 — Restricted military use; qualified units or personnel</option>
+                                        <option value="prohibited">Prohibited — Exceptional permits are rarely granted</option>
+                                        <option value="undetermined">Undetermined — no source-backed category</option>
+                                    </select>
+                                </label>
+                                <div class="gear-filter-help gear-legal-category-help" id="augmentCatalogLegalCategoryHelp"
+                                    data-gear-legal-category-help aria-live="polite">
+                                    Any legal category leaves augment classifications unfiltered. The filter matches exact source-recorded category values. Categories describe access controls, not guaranteed availability on a particular world.
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
                     <div class="gear-catalog-launch-actions">
@@ -965,22 +983,21 @@
                     <fieldset class="gear-catalog-filters">
                         <legend>Catalog filters</legend>
                         <div class="gear-catalog-filter-grid">
-                            <div class="gear-catalog-tech-filter">
+                            <div class="gear-catalog-filter gear-catalog-tech-filter">
                                 <label for="equipmentCatalogTechLevel">
                                     <span>Maximum Tech Level</span>
-                                    <select class="form-control" id="equipmentCatalogTechLevel" data-gear-filter-tl>
+                                    <select class="form-control" id="equipmentCatalogTechLevel" data-gear-filter-tl
+                                        aria-describedby="equipmentCatalogTechLevelHelp">
                                         <option value="any">Any Tech Level</option>
                                         <option value="unknown">Unknown or variable TL only</option>
                                     </select>
                                 </label>
-                                <details class="gear-tech-level-help" data-gear-tech-level-help>
-                                    <summary data-gear-tech-level-help-summary>Tech Level (TL): what the rating means</summary>
-                                    <div class="gear-tech-level-help-body" data-gear-tech-level-help-body aria-live="polite">
-                                        Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. Exact meaning can vary by equipment subtype; use the item-specific explanation.
-                                    </div>
-                                </details>
+                                <div class="gear-filter-help gear-tech-level-help" id="equipmentCatalogTechLevelHelp" data-gear-tech-level-help
+                                    data-gear-tech-level-help-body aria-live="polite">
+                                    Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. Exact meaning can vary by equipment subtype; use the item-specific explanation.
+                                </div>
                             </div>
-                            <div class="gear-catalog-law-filter">
+                            <div class="gear-catalog-filter gear-catalog-law-filter">
                                 <label for="equipmentCatalogLawLevel">
                                     <span>First restricted Law Level</span>
                                     <select class="form-control" id="equipmentCatalogLawLevel" data-gear-filter-law-level
@@ -999,24 +1016,31 @@
                                         <option value="undetermined">Undetermined — No exact source-backed equipment level</option>
                                     </select>
                                 </label>
-                                <div class="gear-law-level-help" id="equipmentCatalogLawLevelHelp"
+                                <div class="gear-filter-help gear-law-level-help" id="equipmentCatalogLawLevelHelp"
                                     data-gear-law-level-help aria-live="polite">
                                     The Core table has no blanket numeric ladder for general equipment. Filter only exact classifications and check the selected item's rules.
                                 </div>
                             </div>
-                            <label for="equipmentCatalogLegalCategory">
-                                <span>Legal category</span>
-                                <select class="form-control" id="equipmentCatalogLegalCategory" data-gear-filter-legal-category>
-                                    <option value="any">Any legal category</option>
-                                    <option value="category_1">Category 1 — Unrestricted</option>
-                                    <option value="category_2">Category 2 — Civilian Use</option>
-                                    <option value="category_3">Category 3 — Paramilitary Use</option>
-                                    <option value="category_4">Category 4 — Military Use</option>
-                                    <option value="category_5">Category 5 — Restricted Military Use</option>
-                                    <option value="prohibited">Prohibited</option>
-                                    <option value="undetermined">Undetermined</option>
-                                </select>
-                            </label>
+                            <div class="gear-catalog-filter gear-catalog-legal-filter">
+                                <label for="equipmentCatalogLegalCategory">
+                                    <span>Legal category</span>
+                                    <select class="form-control" id="equipmentCatalogLegalCategory" data-gear-filter-legal-category
+                                        aria-describedby="equipmentCatalogLegalCategoryHelp">
+                                        <option value="any">Any Legal Category — no category filter</option>
+                                        <option value="category_1">Category 1 — Unrestricted where local law permits</option>
+                                        <option value="category_2">Category 2 — Civilian use; permit or safety training</option>
+                                        <option value="category_3">Category 3 — Paramilitary use; skill and suitable need</option>
+                                        <option value="category_4">Category 4 — Military use; accredited employment</option>
+                                        <option value="category_5">Category 5 — Restricted military use; qualified units or personnel</option>
+                                        <option value="prohibited">Prohibited — Exceptional permits are rarely granted</option>
+                                        <option value="undetermined">Undetermined — no source-backed category</option>
+                                    </select>
+                                </label>
+                                <div class="gear-filter-help gear-legal-category-help" id="equipmentCatalogLegalCategoryHelp"
+                                    data-gear-legal-category-help aria-live="polite">
+                                    Any legal category leaves equipment classifications unfiltered. The filter matches exact source-recorded category values. Categories describe access controls, not guaranteed availability on a particular world.
+                                </div>
+                            </div>
                         </div>
                     </fieldset>
                     <div class="gear-catalog-launch-actions">
