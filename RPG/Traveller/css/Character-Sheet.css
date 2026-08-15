@@ -658,6 +658,12 @@
             gap: 8px;
         }
 
+        .gear-catalog-law-filter {
+            display: grid;
+            align-content: start;
+            min-width: 0;
+        }
+
         .gear-catalog-filter-grid label {
             display: grid;
             gap: 4px;
@@ -673,6 +679,46 @@
             width: 100%;
             min-width: 0;
             min-height: 44px;
+        }
+
+        .gear-law-level-help {
+            margin-top: 7px;
+            padding: 8px 9px;
+            border-left: 3px solid var(--traveller-tertiary);
+            background: var(--traveller-content-bg);
+            color: #3f3f3f;
+            font-family: var(--font-secondary);
+            font-size: 0.72rem;
+            font-weight: 400;
+            line-height: 1.35;
+        }
+
+        .gear-law-level-help-title,
+        .gear-law-level-help-copy,
+        .gear-law-level-help-source {
+            display: block;
+        }
+
+        .gear-law-level-help-title {
+            color: var(--traveller-primary);
+            font-family: var(--font-ui);
+            font-weight: 700;
+        }
+
+        .gear-law-level-help-copy {
+            margin-top: 3px;
+        }
+
+        .gear-law-level-help-source {
+            margin-top: 4px;
+            color: #595959;
+            font-size: 0.68rem;
+        }
+
+        .gear-law-level-help.is-error {
+            border-left-color: #9a6700;
+            background: #fff3cd;
+            color: #4d3400;
         }
 
         .gear-catalog-launch-actions {
@@ -1229,6 +1275,17 @@
         .gear-locker-detail-copy {
             margin: 4px 0 0;
             white-space: pre-line;
+        }
+
+        .gear-locker-law-level-copy {
+            padding: 8px 10px;
+            border-left: 4px solid var(--traveller-tertiary);
+            background: var(--traveller-secondary);
+        }
+
+        .gear-locker-law-level-references {
+            color: #4f4f4f;
+            font-size: 0.75rem;
         }
 
         .gear-locker-reference-list {
