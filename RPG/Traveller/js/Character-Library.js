@@ -621,7 +621,7 @@
     details.className = "gear-details-button";
     details.textContent = "Details";
     details.setAttribute("aria-label", `View and edit ${label.replace(/^Remove /, "")}`);
-    details.setAttribute("aria-controls", `${section}-gear-catalog-detail`);
+    details.setAttribute("aria-controls", "gear-locker-detail");
     details.addEventListener("click", () => {
       if (
         window.TravellerGearCatalog &&
