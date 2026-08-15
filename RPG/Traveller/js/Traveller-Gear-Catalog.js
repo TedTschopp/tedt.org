@@ -82,6 +82,7 @@
   let catalog = null;
   let manifestDocument = null;
   let manifestPromise = null;
+  let techLevelReference = null;
   let lawLevelReference = null;
   let initializationPromise = null;
   let lockerState = null;
@@ -130,7 +131,10 @@
   }
 
   function parseTechLevel(value) {
-    const normalized = stringValue(value).trim().replace(/[–—]/g, "-");
+    const normalized = stringValue(value)
+      .trim()
+      .replace(/[–—]/g, "-")
+      .replace(/^TL\s*/i, "");
     let match = normalized.match(/^(\d+)$/);
     if (match) {
       return { minimum: Number.parseInt(match[1], 10), maximum: null };
@@ -270,6 +274,7 @@
       title,
       pages: uniqueStrings(pages.map((page) => stringValue(page).trim())),
       pageBasis: firstString(value.pageBasis, value.page_basis),
+      referenceType: firstString(value.referenceType, value.reference_type),
     };
   }
 
@@ -279,7 +284,7 @@
     return value.reduce((references, rawReference) => {
       const reference = normalizeSourceReference(rawReference);
       if (!reference) return references;
-      const key = `${reference.title}|${reference.pages.join(",")}|${reference.pageBasis}`;
+      const key = `${reference.title}|${reference.pages.join(",")}|${reference.pageBasis}|${reference.referenceType}`;
       if (seen.has(key)) return references;
       seen.add(key);
       references.push(reference);
@@ -304,6 +309,7 @@
         const guidance = isRecord(rawGuidance[kind]) ? rawGuidance[kind] : {};
         guidanceByKind[kind] = {
           ruleStatus: firstString(guidance.ruleStatus, guidance.rule_status),
+          shortLabel: firstString(guidance.shortLabel, guidance.short_label),
           description: firstString(guidance.description),
           sourceReferences: normalizeSourceReferences(
             guidance.sourceReferences || guidance.source_references
@@ -327,10 +333,95 @@
         value.undeterminedDescription,
         value.undetermined_description
       ),
+      undeterminedShortLabel: firstString(
+        value.undeterminedShortLabel,
+        value.undetermined_short_label
+      ),
       sourceReferences: normalizeSourceReferences(
         value.sourceReferences || value.source_references
       ),
       levels,
+    };
+  }
+
+  function normalizeTechLevelReference(value) {
+    if (!isRecord(value)) return null;
+    const rawLevels = Array.isArray(value.levels) ? value.levels : [];
+    const levels = rawLevels.reduce((normalizedLevels, rawLevel) => {
+      if (!isRecord(rawLevel)) return normalizedLevels;
+      const numericValue = Number.parseInt(firstString(rawLevel.value), 10);
+      if (!Number.isInteger(numericValue) || numericValue < 0 || numericValue > 15) {
+        return normalizedLevels;
+      }
+      normalizedLevels.push({
+        value: numericValue,
+        band: firstString(rawLevel.band),
+        title: firstString(rawLevel.title, `Tech Level ${numericValue}`),
+        summary: firstString(rawLevel.summary),
+        sourceReferences: normalizeSourceReferences(
+          rawLevel.sourceReferences || rawLevel.source_references
+        ),
+      });
+      return normalizedLevels;
+    }, []);
+
+    const rawHigherLevels = isRecord(value.higherLevels)
+      ? value.higherLevels
+      : isRecord(value.higher_levels)
+        ? value.higher_levels
+        : {};
+    const higherMinimum = Number.parseInt(
+      firstString(rawHigherLevels.minimum, "16"),
+      10
+    );
+    const higherLevels = {
+      minimum:
+        Number.isInteger(higherMinimum) && higherMinimum >= 16
+          ? higherMinimum
+          : 16,
+      band: firstString(rawHigherLevels.band),
+      title: firstString(rawHigherLevels.title, "Tech Level 16+"),
+      summary: firstString(rawHigherLevels.summary),
+      sourceReferences: normalizeSourceReferences(
+        rawHigherLevels.sourceReferences || rawHigherLevels.source_references
+      ),
+    };
+
+    const rawGuidance = isRecord(value.guidanceByKind)
+      ? value.guidanceByKind
+      : isRecord(value.guidance_by_kind)
+        ? value.guidance_by_kind
+        : {};
+    const guidanceByKind = {};
+    Object.keys(SECTION_LABELS).forEach((kind) => {
+      const guidance = isRecord(rawGuidance[kind]) ? rawGuidance[kind] : {};
+      guidanceByKind[kind] = {
+        valueRole: firstString(guidance.valueRole, guidance.value_role),
+        description: firstString(guidance.description),
+        sourceReferences: normalizeSourceReferences(
+          guidance.sourceReferences || guidance.source_references
+        ),
+      };
+    });
+
+    const description = firstString(value.description);
+    if (!description && levels.length === 0 && !higherLevels.summary) return null;
+    return {
+      rulesContext: firstString(value.rulesContext, value.rules_context),
+      valueSemantics: firstString(value.valueSemantics, value.value_semantics),
+      description,
+      filterSemantics: firstString(value.filterSemantics, value.filter_semantics),
+      unknownDescription: firstString(
+        value.unknownDescription,
+        value.unknown_description
+      ),
+      levels,
+      higherLevels,
+      guidanceByKind,
+      sourceReferences: normalizeSourceReferences(
+        value.sourceReferences || value.source_references
+      ),
+      notes: firstString(value.notes),
     };
   }
 
@@ -460,6 +551,13 @@
       raw.description
     );
     const rulesSummary = firstString(raw.rulesSummary, raw.rules_summary);
+    const techLevelDescription = firstString(
+      raw.techLevelDescription,
+      raw.tech_level_description
+    );
+    const techLevelSourceReferences = normalizeSourceReferences(
+      raw.techLevelSourceReferences || raw.tech_level_source_references
+    );
     const lawLevelDescription = firstString(
       raw.lawLevelDescription,
       raw.law_level_description
@@ -525,6 +623,8 @@
       statLine,
       descriptionSummary,
       rulesSummary,
+      techLevelDescription,
+      techLevelSourceReferences,
       lawLevelDescription,
       lawLevelSourceReferences,
       sourceReferences,
@@ -577,6 +677,9 @@
       );
     }
 
+    techLevelReference = normalizeTechLevelReference(
+      manifest.techLevelReference || manifest.tech_level_reference
+    );
     lawLevelReference = normalizeLawLevelReference(
       manifest.lawLevelReference || manifest.law_level_reference
     );
@@ -589,6 +692,7 @@
     manifestPromise = loadManifestDocument()
       .then((document) => {
         manifestDocument = document;
+        updateAllTechLevelHelp();
         updateAllLawLevelHelp();
         return document;
       })
@@ -712,6 +816,10 @@
       rawDetail.lawLevelSourceReferences ||
         rawDetail.law_level_source_references
     );
+    const detailTechLevelReferences = normalizeSourceReferences(
+      rawDetail.techLevelSourceReferences ||
+        rawDetail.tech_level_source_references
+    );
     const requiredSkillStatus = firstString(
       rawDetail.requiredSkillStatus,
       rawDetail.required_skill_status,
@@ -739,6 +847,15 @@
         rawDetail.rules_summary,
         item.rulesSummary
       ),
+      techLevelDescription: firstString(
+        rawDetail.techLevelDescription,
+        rawDetail.tech_level_description,
+        item.techLevelDescription
+      ),
+      techLevelSourceReferences:
+        detailTechLevelReferences.length > 0
+          ? detailTechLevelReferences
+          : item.techLevelSourceReferences,
       lawLevelDescription: firstString(
         rawDetail.lawLevelDescription,
         rawDetail.law_level_description,
@@ -888,6 +1005,25 @@
     );
     const reviewReasons = createElement("ul", "gear-locker-review-reasons");
     reviewNotice.append(reviewBadge, reviewReasons);
+    const techLevelDisclosure = document.createElement("details");
+    techLevelDisclosure.className = "gear-locker-tech-level-disclosure";
+    const techLevelSummary = createElement(
+      "summary",
+      "",
+      "Tech Level: definition and source"
+    );
+    const techLevelBody = createElement("div", "gear-locker-tech-level-body");
+    const techLevelDescription = createElement(
+      "p",
+      "gear-locker-detail-copy gear-locker-tech-level-copy"
+    );
+    const techLevelReferences = createElement(
+      "ul",
+      "gear-locker-reference-list gear-locker-tech-level-references"
+    );
+    techLevelReferences.setAttribute("aria-label", "Tech Level references");
+    techLevelBody.append(techLevelDescription, techLevelReferences);
+    techLevelDisclosure.append(techLevelSummary, techLevelBody);
     const descriptionHeading = createElement("h4", "", "Description");
     const description = createElement("p", "gear-locker-detail-copy");
     const rulesHeading = createElement("h4", "", "How to use it");
@@ -955,6 +1091,7 @@
 
     detailContent.append(
       reviewNotice,
+      techLevelDisclosure,
       descriptionHeading,
       description,
       rulesHeading,
@@ -1014,6 +1151,10 @@
       detailContent,
       reviewNotice,
       reviewReasons,
+      techLevelDisclosure,
+      techLevelSummary,
+      techLevelDescription,
+      techLevelReferences,
       description,
       rules,
       lawLevelDescription,
@@ -1398,6 +1539,236 @@
     return `${reference.title}, ${reference.pages.length === 1 ? pagePrefix : pluralPrefix} ${reference.pages.join(", ")}`;
   }
 
+  function techLevelGuidance(kind, filterValue) {
+    if (!techLevelReference) return null;
+    const normalizedKind = normalizeKind(kind);
+    const normalizedFilter = normalizedTechLevelFilter(filterValue);
+    if (!normalizedKind) return null;
+
+    const kindGuidance = techLevelReference.guidanceByKind[normalizedKind] || {};
+    const kindDescription = firstString(
+      kindGuidance.description,
+      stringValue(kindGuidance.valueRole).replaceAll("_", " ")
+    );
+    let summary = "Tech Level (TL): what the rating means";
+    let title = `Tech Level (TL) · ${SECTION_TITLES[normalizedKind]}`;
+    let description = techLevelReference.description;
+    let levelDescription = "";
+    let levelReferences = [];
+
+    if (normalizedFilter === "unknown") {
+      summary = "What “Unknown or variable TL” includes";
+      title = `Unknown or variable TL · ${SECTION_TITLES[normalizedKind]}`;
+      description = firstString(
+        techLevelReference.unknownDescription,
+        techLevelReference.description
+      );
+    } else if (normalizedFilter.startsWith("max:")) {
+      const maximum = Number.parseInt(normalizedFilter.slice(4), 10);
+      const level =
+        maximum >= techLevelReference.higherLevels.minimum
+          ? techLevelReference.higherLevels
+          : techLevelReference.levels.find(
+              (candidate) => candidate.value === maximum
+            );
+      summary = `What “Up to TL ${maximum}” includes`;
+      const band =
+        level &&
+        firstString(
+          level.title,
+          stringValue(level.band).replaceAll("_", " ")
+        );
+      title = `Up to TL ${maximum}${band ? ` · ${band}` : ""}`;
+      levelDescription = firstString(level && level.summary);
+      levelReferences = level ? level.sourceReferences : [];
+    }
+
+    const kindReferenceKeys = new Set(
+      Object.values(techLevelReference.guidanceByKind).flatMap((guidance) =>
+        guidance.sourceReferences.map(
+          (reference) =>
+            `${reference.title}|${reference.pages.join(",")}|${reference.pageBasis}`
+        )
+      )
+    );
+    const globalReferences = techLevelReference.sourceReferences.filter(
+      (reference) => {
+        const referenceType = reference.referenceType.toLocaleLowerCase();
+        if (referenceType.includes("kind")) return false;
+        if (
+          referenceType.includes("tech_level") &&
+          (referenceType.includes("scale") || referenceType.includes("world")) &&
+          !referenceType.includes("kind")
+        ) {
+          return true;
+        }
+        const evidenceKey = `${reference.title}|${reference.pages.join(",")}|${reference.pageBasis}`;
+        return !kindReferenceKeys.has(evidenceKey);
+      }
+    );
+    const sourceReferences = [
+      ...globalReferences,
+      ...levelReferences,
+      ...(Array.isArray(kindGuidance.sourceReferences)
+        ? kindGuidance.sourceReferences
+        : []),
+    ];
+    return {
+      summary,
+      title,
+      description,
+      levelDescription,
+      filterDescription: techLevelReference.filterSemantics,
+      kindDescription,
+      sourceReferences,
+    };
+  }
+
+  function renderTechLevelHelp(panel) {
+    if (!(panel instanceof HTMLDetailsElement)) return;
+    const kind = normalizeKind(panel.dataset.gearAddPanel);
+    const select = panel.querySelector("[data-gear-filter-tl]");
+    const disclosure = panel.querySelector("[data-gear-tech-level-help]");
+    const summary = panel.querySelector("[data-gear-tech-level-help-summary]");
+    const body = panel.querySelector("[data-gear-tech-level-help-body]");
+    if (
+      !(select instanceof HTMLSelectElement) ||
+      !(disclosure instanceof HTMLDetailsElement) ||
+      !(summary instanceof HTMLElement) ||
+      !(body instanceof HTMLElement)
+    ) {
+      return;
+    }
+    const guidance = techLevelGuidance(kind, select.value);
+    if (!guidance) {
+      if (manifestDocument) {
+        summary.textContent = "Tech Level (TL): what the rating means";
+        body.textContent =
+          "This catalog version does not include book-backed Tech Level guidance. Maximum Tech Level still compares a safely parsed recorded TL, or the lower bound of a minimum/range expression; check the selected item's rulebook reference.";
+        disclosure.classList.remove("is-error");
+      }
+      return;
+    }
+
+    summary.textContent = guidance.summary;
+    const title = createElement(
+      "strong",
+      "gear-tech-level-help-title",
+      guidance.title
+    );
+    const description = createElement(
+      "span",
+      "gear-tech-level-help-copy",
+      guidance.description
+    );
+    const levelDescription = createElement(
+      "span",
+      "gear-tech-level-help-copy",
+      guidance.levelDescription
+    );
+    levelDescription.hidden = !guidance.levelDescription;
+    const filter = createElement(
+      "span",
+      "gear-tech-level-help-filter",
+      guidance.filterDescription
+        ? `Filter meaning: ${guidance.filterDescription}`
+        : ""
+    );
+    filter.hidden = !guidance.filterDescription;
+    const kindDescription = createElement(
+      "span",
+      "gear-tech-level-help-kind",
+      guidance.kindDescription
+        ? `${SECTION_TITLES[kind]}: ${guidance.kindDescription}`
+        : ""
+    );
+    kindDescription.hidden = !guidance.kindDescription;
+    const sourceText = uniqueStrings(
+      guidance.sourceReferences.map((reference) => formatReference(reference))
+    ).join("; ");
+    const source = createElement(
+      "span",
+      "gear-tech-level-help-source",
+      sourceText
+        ? `Book references: ${sourceText}.`
+        : "No book reference is available for this Tech Level guidance."
+    );
+    body.replaceChildren(
+      title,
+      description,
+      levelDescription,
+      filter,
+      kindDescription,
+      source
+    );
+    disclosure.classList.remove("is-error");
+  }
+
+  function updateAllTechLevelHelp() {
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      renderTechLevelHelp(panel);
+    });
+  }
+
+  function requestTechLevelHelp(panel) {
+    if (!(panel instanceof HTMLDetailsElement)) return;
+    const disclosure = panel.querySelector("[data-gear-tech-level-help]");
+    const body = panel.querySelector("[data-gear-tech-level-help-body]");
+    if (techLevelReference || manifestDocument) {
+      renderTechLevelHelp(panel);
+      return;
+    }
+    if (body instanceof HTMLElement) body.setAttribute("aria-busy", "true");
+    if (disclosure instanceof HTMLDetailsElement) {
+      disclosure.classList.remove("is-error");
+    }
+    ensureManifest()
+      .then(() => {
+        if (body instanceof HTMLElement) body.setAttribute("aria-busy", "false");
+        renderTechLevelHelp(panel);
+      })
+      .catch((error) => {
+        if (!(body instanceof HTMLElement)) return;
+        body.setAttribute("aria-busy", "false");
+        body.textContent = `Book-backed Tech Level guidance is unavailable right now. ${body.dataset.fallbackText || "Maximum Tech Level remains a technology cutoff using a safely parsed recorded TL or range lower bound."} ${error.message}`;
+        if (disclosure instanceof HTMLDetailsElement) {
+          disclosure.classList.add("is-error");
+        }
+      });
+  }
+
+  function initializeTechLevelHelp() {
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      if (!(panel instanceof HTMLDetailsElement) || panel.dataset.techHelpReady === "true") {
+        return;
+      }
+      const select = panel.querySelector("[data-gear-filter-tl]");
+      const disclosure = panel.querySelector("[data-gear-tech-level-help]");
+      if (
+        !(select instanceof HTMLSelectElement) ||
+        !(disclosure instanceof HTMLDetailsElement)
+      ) {
+        return;
+      }
+      panel.dataset.techHelpReady = "true";
+      const body = panel.querySelector("[data-gear-tech-level-help-body]");
+      if (body instanceof HTMLElement && !body.dataset.fallbackText) {
+        body.dataset.fallbackText = body.textContent.trim();
+      }
+      select.addEventListener("change", () => {
+        if (techLevelReference || manifestDocument) renderTechLevelHelp(panel);
+        else if (panel.open) requestTechLevelHelp(panel);
+      });
+      disclosure.addEventListener("toggle", () => {
+        if (disclosure.open) requestTechLevelHelp(panel);
+      });
+      panel.addEventListener("toggle", () => {
+        if (panel.open) requestTechLevelHelp(panel);
+      });
+      if (panel.open) requestTechLevelHelp(panel);
+    });
+  }
+
   function lawLevelGuidance(kind, value) {
     if (!lawLevelReference) return null;
     const normalizedKind = normalizeKind(kind);
@@ -1405,13 +1776,21 @@
     if (!normalizedKind) return null;
 
     if (normalizedValue === "any") {
+      const kindGuidance = lawLevelReference.levels
+        .map((level) => level.guidanceByKind[normalizedKind])
+        .find((guidance) => guidance && guidance.ruleStatus === "outside_global_table");
       return {
-        title: `How Law Level filtering works · ${SECTION_TITLES[normalizedKind]}`,
-        description:
-          lawLevelReference.description ||
-          "Choose a first restricted Law Level to narrow the catalog.",
+        title: `All Law Level classifications · ${SECTION_TITLES[normalizedKind]}`,
+        description: [
+          `Any restriction level leaves the exact ${SECTION_LABELS[normalizedKind]} classification unfiltered.`,
+          kindGuidance && kindGuidance.description,
+          !kindGuidance && lawLevelReference.description,
+        ]
+          .filter(Boolean)
+          .join(" "),
         sourceReferences: [],
-        sourceNote: "Choose a specific Law Level to see kind-specific book references.",
+        sourceNote:
+          "Choose a specific classification to see its kind-specific book references.",
       };
     }
 
@@ -1489,8 +1868,50 @@
   }
 
   function updateAllLawLevelHelp() {
+    updateAllLawLevelOptionLabels();
     document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
       renderLawLevelHelp(panel);
+    });
+  }
+
+  function lawLevelOptionText(value, shortLabel) {
+    const conciseLabel = firstString(shortLabel).replace(/[.!?]+$/, "");
+    if (!conciseLabel) return "";
+    if (/^(?:law\s+)?level\s+\d|^9\+\s*[\u2014\u2013-]/i.test(conciseLabel)) {
+      return conciseLabel;
+    }
+    const prefix = value === "9+" ? "9+" : `Level ${value}`;
+    return `${prefix} — ${conciseLabel}`;
+  }
+
+  function updateAllLawLevelOptionLabels() {
+    if (!lawLevelReference) return;
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      if (!(panel instanceof HTMLDetailsElement)) return;
+      const kind = normalizeKind(panel.dataset.gearAddPanel);
+      const select = panel.querySelector("[data-gear-filter-law-level]");
+      if (!kind || !(select instanceof HTMLSelectElement)) return;
+
+      lawLevelReference.levels.forEach((level) => {
+        const option = Array.from(select.options).find(
+          (candidate) => candidate.value === level.value
+        );
+        const guidance = level.guidanceByKind[kind];
+        const label = guidance && lawLevelOptionText(level.value, guidance.shortLabel);
+        if (option && label) option.textContent = label;
+      });
+
+      const undetermined = Array.from(select.options).find(
+        (option) => option.value === "undetermined"
+      );
+      const undeterminedLabel = lawLevelReference.undeterminedShortLabel;
+      if (undetermined && undeterminedLabel) {
+        undetermined.textContent = /^undetermined\s*[\u2014\u2013-]/i.test(
+          undeterminedLabel
+        )
+          ? undeterminedLabel
+          : `Undetermined — ${undeterminedLabel.replace(/[.!?]+$/, "")}`;
+      }
     });
   }
 
@@ -1502,14 +1923,18 @@
       return;
     }
     if (help instanceof HTMLElement) {
-      help.textContent = "Loading book-backed Law Level guidance…";
+      help.setAttribute("aria-busy", "true");
       help.classList.remove("is-error");
     }
     ensureManifest()
-      .then(() => renderLawLevelHelp(panel))
+      .then(() => {
+        if (help instanceof HTMLElement) help.setAttribute("aria-busy", "false");
+        renderLawLevelHelp(panel);
+      })
       .catch((error) => {
         if (!(help instanceof HTMLElement)) return;
-        help.textContent = `Law Level guidance is unavailable right now. Check the item and world rules. ${error.message}`;
+        help.setAttribute("aria-busy", "false");
+        help.textContent = `Book-backed Law Level guidance is unavailable right now. ${help.dataset.fallbackText || "Filter only exact source-recorded classifications and check the item and world's rules."} ${error.message}`;
         help.classList.add("is-error");
       });
   }
@@ -1522,6 +1947,10 @@
       const select = panel.querySelector("[data-gear-filter-law-level]");
       if (!(select instanceof HTMLSelectElement)) return;
       panel.dataset.lawHelpReady = "true";
+      const help = panel.querySelector("[data-gear-law-level-help]");
+      if (help instanceof HTMLElement && !help.dataset.fallbackText) {
+        help.dataset.fallbackText = help.textContent.trim();
+      }
       select.addEventListener("change", () => {
         if (lawLevelReference) renderLawLevelHelp(panel);
         else if (panel.open) requestLawLevelHelp(panel);
@@ -1544,6 +1973,50 @@
     return guidance
       ? `The exact item explanation is unavailable. General guidance: ${guidance.description}`
       : "No exact Law Level explanation is available. Check the cited rulebook entry and the world's local rules.";
+  }
+
+  function techLevelDetailSummary(item) {
+    const recordedValue = firstString(item && item.sheet && item.sheet.tl).replace(
+      /^TL\s*/i,
+      ""
+    );
+    return parseTechLevel(recordedValue)
+      ? `Tech Level: TL ${recordedValue} — definition and source`
+      : "Tech Level: unknown or variable — definition and source";
+  }
+
+  function fallbackTechLevelDescription(item) {
+    const recordedValue = firstString(item && item.sheet && item.sheet.tl).replace(
+      /^TL\s*/i,
+      ""
+    );
+    const parsed = parseTechLevel(recordedValue);
+    if (!techLevelReference) {
+      return parsed
+        ? `No exact Tech Level explanation is available in this catalog version. This record lists TL ${recordedValue} as a source-recorded technology rating; exact meaning can vary by gear or equipment type. Check the cited item rulebook for context.`
+        : "No exact Tech Level explanation is available in this catalog version, and no usable source-recorded technology rating is available. Unknown is not TL0 and does not imply legality or availability.";
+    }
+    if (!parsed) {
+      return firstString(
+        techLevelReference.unknownDescription,
+        "No usable TL is recorded. Unknown is not TL0 and does not imply legality or availability."
+      );
+    }
+
+    const level =
+      parsed.minimum >= techLevelReference.higherLevels.minimum
+        ? techLevelReference.higherLevels
+        : techLevelReference.levels.find(
+            (candidate) => candidate.value === parsed.minimum
+          );
+    const kindGuidance = techLevelReference.guidanceByKind[item.kind] || {};
+    const generalGuidance = uniqueStrings([
+      firstString(level && level.summary),
+      firstString(kindGuidance.description),
+    ]).join(" ");
+    return generalGuidance
+      ? `The exact item explanation is unavailable. General guidance for recorded TL ${recordedValue}: ${generalGuidance}`
+      : `The exact item explanation is unavailable. This record lists TL ${recordedValue}; check the cited item rulebook for context.`;
   }
 
   function setStatus(state, message, isError = false) {
@@ -1602,6 +2075,11 @@
       .filter(Boolean)
       .join(" · ");
     renderReviewNotice(state, item);
+    state.techLevelSummary.textContent = techLevelDetailSummary(item);
+    state.techLevelDescription.textContent = loading
+      ? "Loading the exact Tech Level explanation…"
+      : item.techLevelDescription || fallbackTechLevelDescription(item);
+    state.techLevelReferences.replaceChildren();
     state.description.textContent = loading
       ? "Loading the condensed description…"
       : item.descriptionSummary || "No condensed description is available. See the cited rulebook entry.";
@@ -1615,12 +2093,30 @@
     state.references.replaceChildren();
 
     if (loading) {
+      state.techLevelReferences.appendChild(
+        createElement("li", "", "Loading Tech Level references…")
+      );
       state.lawLevelReferences.appendChild(
         createElement("li", "", "Loading Law Level references…")
       );
       const reference = createElement("li", "", "Loading rulebook references…");
       state.references.appendChild(reference);
     } else {
+      if (item.techLevelSourceReferences.length === 0) {
+        state.techLevelReferences.appendChild(
+          createElement(
+            "li",
+            "",
+            "No separate Tech Level reference is available for this record."
+          )
+        );
+      } else {
+        item.techLevelSourceReferences.forEach((source) => {
+          state.techLevelReferences.appendChild(
+            createElement("li", "", formatReference(source))
+          );
+        });
+      }
       if (item.lawLevelSourceReferences.length === 0) {
         state.lawLevelReferences.appendChild(
           createElement(
@@ -1711,6 +2207,7 @@
       variants: catalog.itemsByItemId.get(item.itemId) || [item],
     };
     state.selectedItem = item;
+    state.techLevelDisclosure.open = false;
     state.editingRow = options.editingRow || null;
     setEditingControls(state, Boolean(state.editingRow));
     const savedState = isRecord(options.savedState) ? options.savedState : {};
@@ -1981,6 +2478,7 @@
   function initialize() {
     if (lockerState) return lockerState;
     populateTechLevelFilters();
+    initializeTechLevelHelp();
     initializeLawLevelHelp();
     const root = document.querySelector("[data-gear-catalog-locker]");
     if (!root) return null;

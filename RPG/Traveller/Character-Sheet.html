@@ -648,35 +648,43 @@
                     <fieldset class="gear-catalog-filters">
                         <legend>Catalog filters</legend>
                         <div class="gear-catalog-filter-grid">
-                            <label for="weaponCatalogTechLevel">
-                                <span>Maximum Tech Level</span>
-                                <select class="form-control" id="weaponCatalogTechLevel" data-gear-filter-tl>
-                                    <option value="any">Any Tech Level</option>
-                                    <option value="unknown">Unknown or variable TL only</option>
-                                </select>
-                            </label>
+                            <div class="gear-catalog-tech-filter">
+                                <label for="weaponCatalogTechLevel">
+                                    <span>Maximum Tech Level</span>
+                                    <select class="form-control" id="weaponCatalogTechLevel" data-gear-filter-tl>
+                                        <option value="any">Any Tech Level</option>
+                                        <option value="unknown">Unknown or variable TL only</option>
+                                    </select>
+                                </label>
+                                <details class="gear-tech-level-help" data-gear-tech-level-help>
+                                    <summary data-gear-tech-level-help-summary>Tech Level (TL): what the rating means</summary>
+                                    <div class="gear-tech-level-help-body" data-gear-tech-level-help-body aria-live="polite">
+                                        Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. For weapons, it generally marks when that version first appears.
+                                    </div>
+                                </details>
+                            </div>
                             <div class="gear-catalog-law-filter">
                                 <label for="weaponCatalogLawLevel">
                                     <span>First restricted Law Level</span>
                                     <select class="form-control" id="weaponCatalogLawLevel" data-gear-filter-law-level
                                         aria-describedby="weaponCatalogLawLevelHelp">
-                                        <option value="any">Any restriction level</option>
-                                        <option value="0">Law Level 0</option>
-                                        <option value="1">Law Level 1</option>
-                                        <option value="2">Law Level 2</option>
-                                        <option value="3">Law Level 3</option>
-                                        <option value="4">Law Level 4</option>
-                                        <option value="5">Law Level 5</option>
-                                        <option value="6">Law Level 6</option>
-                                        <option value="7">Law Level 7</option>
-                                        <option value="8">Law Level 8</option>
-                                        <option value="9+">Law Level 9+</option>
-                                        <option value="undetermined">Undetermined</option>
+                                        <option value="any">Any weapon restriction level</option>
+                                        <option value="0">Level 0 — No general weapon restriction</option>
+                                        <option value="1">Level 1 — Poison gas, explosives, undetectable weapons, and mass-destruction weapons</option>
+                                        <option value="2">Level 2 — Portable-energy and laser weapons</option>
+                                        <option value="3">Level 3 — Military weapons</option>
+                                        <option value="4">Level 4 — Light assault weapons and submachine guns</option>
+                                        <option value="5">Level 5 — Personal or concealable weapons</option>
+                                        <option value="6">Level 6 — Firearms except shotguns and stunners</option>
+                                        <option value="7">Level 7 — Shotguns</option>
+                                        <option value="8">Level 8 — Bladed weapons and stunners</option>
+                                        <option value="9+">9+ — All weapons</option>
+                                        <option value="undetermined">Undetermined — No exact source-backed weapon level</option>
                                     </select>
                                 </label>
                                 <div class="gear-law-level-help" id="weaponCatalogLawLevelHelp"
                                     data-gear-law-level-help aria-live="polite">
-                                    Open this Add control to load book-backed Law Level guidance for weapons.
+                                    Any restriction level leaves weapon classifications unfiltered. Choose a level to review the weapon classes first restricted there.
                                 </div>
                             </div>
                             <label for="weaponCatalogLegalCategory">
@@ -750,35 +758,43 @@
                     <fieldset class="gear-catalog-filters">
                         <legend>Catalog filters</legend>
                         <div class="gear-catalog-filter-grid">
-                            <label for="armorCatalogTechLevel">
-                                <span>Maximum Tech Level</span>
-                                <select class="form-control" id="armorCatalogTechLevel" data-gear-filter-tl>
-                                    <option value="any">Any Tech Level</option>
-                                    <option value="unknown">Unknown or variable TL only</option>
-                                </select>
-                            </label>
+                            <div class="gear-catalog-tech-filter">
+                                <label for="armorCatalogTechLevel">
+                                    <span>Maximum Tech Level</span>
+                                    <select class="form-control" id="armorCatalogTechLevel" data-gear-filter-tl>
+                                        <option value="any">Any Tech Level</option>
+                                        <option value="unknown">Unknown or variable TL only</option>
+                                    </select>
+                                </label>
+                                <details class="gear-tech-level-help" data-gear-tech-level-help>
+                                    <summary data-gear-tech-level-help-summary>Tech Level (TL): what the rating means</summary>
+                                    <div class="gear-tech-level-help-body" data-gear-tech-level-help-body aria-live="polite">
+                                        Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. For armor, it records the source-listed technology rating for that version.
+                                    </div>
+                                </details>
+                            </div>
                             <div class="gear-catalog-law-filter">
                                 <label for="armorCatalogLawLevel">
                                     <span>First restricted Law Level</span>
                                     <select class="form-control" id="armorCatalogLawLevel" data-gear-filter-law-level
                                         aria-describedby="armorCatalogLawLevelHelp">
-                                        <option value="any">Any restriction level</option>
-                                        <option value="0">Law Level 0</option>
-                                        <option value="1">Law Level 1</option>
-                                        <option value="2">Law Level 2</option>
-                                        <option value="3">Law Level 3</option>
-                                        <option value="4">Law Level 4</option>
-                                        <option value="5">Law Level 5</option>
-                                        <option value="6">Law Level 6</option>
-                                        <option value="7">Law Level 7</option>
-                                        <option value="8">Law Level 8</option>
-                                        <option value="9+">Law Level 9+</option>
-                                        <option value="undetermined">Undetermined</option>
+                                        <option value="any">Any armour restriction level</option>
+                                        <option value="0">Level 0 — No general armour restriction</option>
+                                        <option value="1">Level 1 — Battle dress</option>
+                                        <option value="2">Level 2 — Combat armour</option>
+                                        <option value="3">Level 3 — Flak armour</option>
+                                        <option value="4">Level 4 — Cloth armour</option>
+                                        <option value="5">Level 5 — Mesh armour</option>
+                                        <option value="6">Level 6 — No new armour restriction</option>
+                                        <option value="7">Level 7 — No new armour restriction</option>
+                                        <option value="8">Level 8 — All visible armour</option>
+                                        <option value="9+">9+ — All armour</option>
+                                        <option value="undetermined">Undetermined — No exact source-backed armour level</option>
                                     </select>
                                 </label>
                                 <div class="gear-law-level-help" id="armorCatalogLawLevelHelp"
                                     data-gear-law-level-help aria-live="polite">
-                                    Open this Add control to load book-backed Law Level guidance for armor.
+                                    Any restriction level leaves armour classifications unfiltered. Choose a level to review the armour classes first restricted there.
                                 </div>
                             </div>
                             <label for="armorCatalogLegalCategory">
@@ -846,35 +862,43 @@
                     <fieldset class="gear-catalog-filters">
                         <legend>Catalog filters</legend>
                         <div class="gear-catalog-filter-grid">
-                            <label for="augmentCatalogTechLevel">
-                                <span>Maximum Tech Level</span>
-                                <select class="form-control" id="augmentCatalogTechLevel" data-gear-filter-tl>
-                                    <option value="any">Any Tech Level</option>
-                                    <option value="unknown">Unknown or variable TL only</option>
-                                </select>
-                            </label>
+                            <div class="gear-catalog-tech-filter">
+                                <label for="augmentCatalogTechLevel">
+                                    <span>Maximum Tech Level</span>
+                                    <select class="form-control" id="augmentCatalogTechLevel" data-gear-filter-tl>
+                                        <option value="any">Any Tech Level</option>
+                                        <option value="unknown">Unknown or variable TL only</option>
+                                    </select>
+                                </label>
+                                <details class="gear-tech-level-help" data-gear-tech-level-help>
+                                    <summary data-gear-tech-level-help-summary>Tech Level (TL): what the rating means</summary>
+                                    <div class="gear-tech-level-help-body" data-gear-tech-level-help-body aria-live="polite">
+                                        Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. For augments, use the source-listed rating and exact medical rules together.
+                                    </div>
+                                </details>
+                            </div>
                             <div class="gear-catalog-law-filter">
                                 <label for="augmentCatalogLawLevel">
                                     <span>First restricted Law Level</span>
                                     <select class="form-control" id="augmentCatalogLawLevel" data-gear-filter-law-level
                                         aria-describedby="augmentCatalogLawLevelHelp">
-                                        <option value="any">Any restriction level</option>
-                                        <option value="0">Law Level 0</option>
-                                        <option value="1">Law Level 1</option>
-                                        <option value="2">Law Level 2</option>
-                                        <option value="3">Law Level 3</option>
-                                        <option value="4">Law Level 4</option>
-                                        <option value="5">Law Level 5</option>
-                                        <option value="6">Law Level 6</option>
-                                        <option value="7">Law Level 7</option>
-                                        <option value="8">Law Level 8</option>
-                                        <option value="9+">Law Level 9+</option>
-                                        <option value="undetermined">Undetermined</option>
+                                        <option value="any">Any augment restriction level</option>
+                                        <option value="0">Level 0 — No general augment threshold; check item rules</option>
+                                        <option value="1">Level 1 — No general augment threshold; check item rules</option>
+                                        <option value="2">Level 2 — No general augment threshold; check item rules</option>
+                                        <option value="3">Level 3 — No general augment threshold; check item rules</option>
+                                        <option value="4">Level 4 — No general augment threshold; check item rules</option>
+                                        <option value="5">Level 5 — No general augment threshold; check item rules</option>
+                                        <option value="6">Level 6 — No general augment threshold; check item rules</option>
+                                        <option value="7">Level 7 — No general augment threshold; check item rules</option>
+                                        <option value="8">Level 8 — No general augment threshold; check item rules</option>
+                                        <option value="9+">9+ — No general augment threshold; check item rules</option>
+                                        <option value="undetermined">Undetermined — No exact source-backed augment level</option>
                                     </select>
                                 </label>
                                 <div class="gear-law-level-help" id="augmentCatalogLawLevelHelp"
                                     data-gear-law-level-help aria-live="polite">
-                                    Open this Add control to load book-backed Law Level guidance for augments.
+                                    The Core table has no blanket numeric ladder for augments. Filter only exact classifications and check the selected item and world's rules.
                                 </div>
                             </div>
                             <label for="augmentCatalogLegalCategory">
@@ -941,35 +965,43 @@
                     <fieldset class="gear-catalog-filters">
                         <legend>Catalog filters</legend>
                         <div class="gear-catalog-filter-grid">
-                            <label for="equipmentCatalogTechLevel">
-                                <span>Maximum Tech Level</span>
-                                <select class="form-control" id="equipmentCatalogTechLevel" data-gear-filter-tl>
-                                    <option value="any">Any Tech Level</option>
-                                    <option value="unknown">Unknown or variable TL only</option>
-                                </select>
-                            </label>
+                            <div class="gear-catalog-tech-filter">
+                                <label for="equipmentCatalogTechLevel">
+                                    <span>Maximum Tech Level</span>
+                                    <select class="form-control" id="equipmentCatalogTechLevel" data-gear-filter-tl>
+                                        <option value="any">Any Tech Level</option>
+                                        <option value="unknown">Unknown or variable TL only</option>
+                                    </select>
+                                </label>
+                                <details class="gear-tech-level-help" data-gear-tech-level-help>
+                                    <summary data-gear-tech-level-help-summary>Tech Level (TL): what the rating means</summary>
+                                    <div class="gear-tech-level-help-body" data-gear-tech-level-help-body aria-live="polite">
+                                        Tech Level describes the capability behind a technology. Maximum TL uses a safely parsed recorded TL or range lower bound as a technology cutoff, not a legality or availability check. Exact meaning can vary by equipment subtype; use the item-specific explanation.
+                                    </div>
+                                </details>
+                            </div>
                             <div class="gear-catalog-law-filter">
                                 <label for="equipmentCatalogLawLevel">
                                     <span>First restricted Law Level</span>
                                     <select class="form-control" id="equipmentCatalogLawLevel" data-gear-filter-law-level
                                         aria-describedby="equipmentCatalogLawLevelHelp">
-                                        <option value="any">Any restriction level</option>
-                                        <option value="0">Law Level 0</option>
-                                        <option value="1">Law Level 1</option>
-                                        <option value="2">Law Level 2</option>
-                                        <option value="3">Law Level 3</option>
-                                        <option value="4">Law Level 4</option>
-                                        <option value="5">Law Level 5</option>
-                                        <option value="6">Law Level 6</option>
-                                        <option value="7">Law Level 7</option>
-                                        <option value="8">Law Level 8</option>
-                                        <option value="9+">Law Level 9+</option>
-                                        <option value="undetermined">Undetermined</option>
+                                        <option value="any">Any equipment restriction level</option>
+                                        <option value="0">Level 0 — No general equipment threshold; check item rules</option>
+                                        <option value="1">Level 1 — No general equipment threshold; check item rules</option>
+                                        <option value="2">Level 2 — No general equipment threshold; check item rules</option>
+                                        <option value="3">Level 3 — No general equipment threshold; check item rules</option>
+                                        <option value="4">Level 4 — Intrusion software exception; otherwise check item rules</option>
+                                        <option value="5">Level 5 — No general equipment threshold; check item rules</option>
+                                        <option value="6">Level 6 — No general equipment threshold; check item rules</option>
+                                        <option value="7">Level 7 — No general equipment threshold; check item rules</option>
+                                        <option value="8">Level 8 — No general equipment threshold; check item rules</option>
+                                        <option value="9+">9+ — No general equipment threshold; check item rules</option>
+                                        <option value="undetermined">Undetermined — No exact source-backed equipment level</option>
                                     </select>
                                 </label>
                                 <div class="gear-law-level-help" id="equipmentCatalogLawLevelHelp"
                                     data-gear-law-level-help aria-live="polite">
-                                    Open this Add control to load book-backed Law Level guidance for equipment.
+                                    The Core table has no blanket numeric ladder for general equipment. Filter only exact classifications and check the selected item's rules.
                                 </div>
                             </div>
                             <label for="equipmentCatalogLegalCategory">
