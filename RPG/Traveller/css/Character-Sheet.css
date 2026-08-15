@@ -586,3 +586,403 @@
             font-size: 0.75rem;
             text-align: center;
         }
+
+        /* Gear catalog workbench. The component stays within the established
+           Traveller palette while borrowing the site's compact workbench layout. */
+        .gear-catalog-picker {
+            margin: -2px 0 16px;
+            padding: 16px;
+            border: 1px solid var(--traveller-border);
+            border-left: 4px solid var(--traveller-tertiary);
+            border-radius: 3px;
+            background: var(--traveller-secondary);
+        }
+
+        .gear-catalog-picker[aria-busy="true"] {
+            cursor: progress;
+        }
+
+        .gear-catalog-picker-heading {
+            margin: 0;
+            color: var(--traveller-primary);
+            font-family: var(--font-headlines);
+            font-size: 1.05rem;
+            font-weight: 700;
+            letter-spacing: 0.25px;
+        }
+
+        .gear-catalog-picker-intro,
+        .gear-catalog-loading,
+        .gear-catalog-status,
+        .gear-catalog-results-summary,
+        .gear-catalog-empty,
+        .gear-catalog-detail-copy,
+        .gear-catalog-reference-list,
+        .gear-manual-entry-label {
+            font-family: var(--font-secondary);
+        }
+
+        .gear-catalog-picker-intro {
+            max-width: 76ch;
+            margin: 4px 0 14px;
+            color: #595959;
+            font-size: 0.875rem;
+        }
+
+        .gear-catalog-controls {
+            display: grid;
+            grid-template-columns: minmax(220px, 2fr) minmax(190px, 1fr);
+            gap: 12px;
+            margin-bottom: 12px;
+        }
+
+        .gear-catalog-control label,
+        .gear-catalog-state-control label,
+        .gear-catalog-state-check label {
+            display: block;
+            margin-bottom: 4px;
+            color: var(--traveller-primary);
+            font-family: var(--font-ui);
+            font-size: 0.82rem;
+            font-weight: 700;
+        }
+
+        .gear-catalog-workbench {
+            display: grid;
+            grid-template-columns: minmax(260px, 0.9fr) minmax(320px, 1.1fr);
+            gap: 12px;
+            align-items: start;
+        }
+
+        .gear-catalog-results-panel,
+        .gear-catalog-detail {
+            min-width: 0;
+            border: 1px solid var(--traveller-border);
+            border-radius: 3px;
+            background: var(--traveller-content-bg);
+        }
+
+        .gear-catalog-results-header {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 8px;
+            padding: 10px 12px;
+            border-bottom: 1px solid var(--traveller-border);
+        }
+
+        .gear-catalog-results-header h4,
+        .gear-catalog-detail h4,
+        .gear-catalog-detail h5 {
+            margin: 0;
+            color: var(--traveller-primary);
+            font-family: var(--font-headlines);
+            font-weight: 700;
+        }
+
+        .gear-catalog-results-header h4,
+        .gear-catalog-detail h4 {
+            font-size: 0.98rem;
+        }
+
+        .gear-catalog-detail h5 {
+            margin-top: 12px;
+            font-size: 0.82rem;
+            letter-spacing: 0.35px;
+            text-transform: uppercase;
+        }
+
+        .gear-catalog-results-summary {
+            margin: 0;
+            color: #595959;
+            font-size: 0.75rem;
+        }
+
+        .gear-catalog-results {
+            max-height: 360px;
+            margin: 0;
+            padding: 0;
+            overflow-y: auto;
+            list-style: none;
+        }
+
+        .gear-catalog-result + .gear-catalog-result {
+            border-top: 1px solid var(--traveller-border);
+        }
+
+        .gear-catalog-result-button {
+            display: block;
+            width: 100%;
+            min-height: 48px;
+            padding: 9px 12px;
+            border: 0;
+            border-left: 3px solid transparent;
+            border-radius: 0;
+            background: var(--traveller-content-bg);
+            color: var(--traveller-text-on-light);
+            text-align: left;
+        }
+
+        .gear-catalog-result-button:hover,
+        .gear-catalog-result-button:focus-visible {
+            border-left-color: var(--traveller-tertiary);
+            background: #f7f7f7;
+        }
+
+        .gear-catalog-result-button[aria-current="true"] {
+            border-left-color: var(--traveller-tertiary);
+            background: #eeeeee;
+        }
+
+        .gear-catalog-result-name,
+        .gear-catalog-result-meta {
+            display: block;
+        }
+
+        .gear-catalog-result-name {
+            font-family: var(--font-ui);
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
+
+        .gear-catalog-result-meta,
+        .gear-catalog-detail-meta,
+        .gear-catalog-detail-context {
+            color: #595959;
+            font-family: var(--font-secondary);
+            font-size: 0.76rem;
+        }
+
+        .gear-catalog-result-meta {
+            margin-top: 2px;
+        }
+
+        .gear-catalog-empty {
+            margin: 0;
+            padding: 18px 12px;
+            color: #595959;
+            font-size: 0.85rem;
+        }
+
+        .gear-catalog-more-wrap {
+            padding: 8px 12px;
+            border-top: 1px solid var(--traveller-border);
+            text-align: center;
+        }
+
+        .gear-catalog-more {
+            min-height: 40px;
+            padding: 7px 12px;
+            border: 2px solid var(--traveller-primary);
+            border-radius: 3px;
+            background: var(--traveller-content-bg);
+            color: var(--traveller-primary);
+            font-family: var(--font-ui);
+            font-weight: 700;
+        }
+
+        .gear-catalog-more:hover,
+        .gear-catalog-more:focus-visible {
+            background: var(--traveller-primary);
+            color: var(--traveller-text-on-dark);
+        }
+
+        .gear-catalog-detail {
+            min-height: 210px;
+            padding: 14px;
+            border-top: 3px solid var(--traveller-primary);
+        }
+
+        .gear-catalog-detail[hidden] {
+            display: none;
+        }
+
+        .gear-catalog-detail-meta,
+        .gear-catalog-detail-context {
+            margin: 4px 0 0;
+        }
+
+        .gear-catalog-review-notice {
+            margin-top: 10px;
+            padding: 9px 10px;
+            border: 1px solid #9a6700;
+            border-left: 4px solid #9a6700;
+            border-radius: 3px;
+            background: #fff3cd;
+            color: #4d3400;
+            font-family: var(--font-secondary);
+        }
+
+        .gear-catalog-review-notice[hidden] {
+            display: none;
+        }
+
+        .gear-catalog-review-badge {
+            display: inline-block;
+            padding: 2px 7px;
+            border-radius: 999px;
+            background: #7a5100;
+            color: #ffffff;
+            font-family: var(--font-ui);
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+        }
+
+        .gear-catalog-review-reasons {
+            margin: 6px 0 0;
+            padding-left: 20px;
+            font-size: 0.78rem;
+        }
+
+        .gear-catalog-detail-copy {
+            margin: 4px 0 0;
+            white-space: pre-line;
+        }
+
+        .gear-catalog-reference-list {
+            margin: 5px 0 0;
+            padding-left: 20px;
+            font-size: 0.82rem;
+        }
+
+        .gear-catalog-state {
+            display: grid;
+            grid-template-columns: minmax(90px, 0.35fr) minmax(140px, 0.65fr);
+            gap: 10px 14px;
+            align-items: end;
+            margin-top: 14px;
+            padding-top: 12px;
+            border-top: 1px solid var(--traveller-border);
+        }
+
+        .gear-catalog-state-notes {
+            grid-column: 1 / -1;
+        }
+
+        .gear-catalog-state-check {
+            min-height: 38px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .gear-catalog-state-check label {
+            display: inline;
+            margin: 0;
+        }
+
+        .gear-catalog-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 12px;
+        }
+
+        .gear-catalog-add,
+        .gear-catalog-cancel-edit {
+            min-height: 44px;
+            padding: 9px 14px;
+            border-radius: 3px;
+            font-family: var(--font-ui);
+            font-weight: 700;
+        }
+
+        .gear-catalog-add {
+            border: 2px solid var(--traveller-tertiary);
+            background: var(--traveller-tertiary);
+            color: var(--traveller-text-on-dark);
+        }
+
+        .gear-catalog-add:hover,
+        .gear-catalog-add:focus-visible {
+            border-color: var(--traveller-primary);
+            background: var(--traveller-primary);
+        }
+
+        .gear-catalog-cancel-edit {
+            border: 2px solid var(--traveller-primary);
+            background: var(--traveller-content-bg);
+            color: var(--traveller-primary);
+        }
+
+        .gear-catalog-status {
+            min-height: 1.35em;
+            margin: 10px 0 0;
+            color: #404040;
+            font-size: 0.82rem;
+            font-weight: 500;
+        }
+
+        .gear-catalog-status.is-error {
+            color: #8b0000;
+        }
+
+        .gear-manual-entry-label {
+            margin: 0 0 6px;
+            color: #595959;
+            font-size: 0.78rem;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+            text-transform: uppercase;
+        }
+
+        .gear-row-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .gear-details-button {
+            min-height: 28px;
+            padding: 3px 8px;
+            border: 1px solid var(--traveller-primary);
+            border-radius: 3px;
+            background: var(--traveller-content-bg);
+            color: var(--traveller-primary);
+            font-family: var(--font-ui);
+            font-size: 0.75rem;
+            font-weight: 700;
+        }
+
+        .gear-details-button:hover,
+        .gear-details-button:focus-visible {
+            background: var(--traveller-primary);
+            color: var(--traveller-text-on-dark);
+        }
+
+        .gear-row-state {
+            display: block;
+            margin-top: 2px;
+            color: #595959;
+            font-family: var(--font-secondary);
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 899.98px) {
+            .gear-catalog-workbench {
+                grid-template-columns: 1fr;
+            }
+
+            .gear-catalog-results {
+                max-height: 300px;
+            }
+        }
+
+        @media (max-width: 575.98px) {
+            .gear-catalog-picker {
+                padding: 12px;
+            }
+
+            .gear-catalog-controls,
+            .gear-catalog-state {
+                grid-template-columns: 1fr;
+            }
+
+            .gear-catalog-state-notes {
+                grid-column: auto;
+            }
+        }
