@@ -11,16 +11,33 @@ remain outside the website repository.
 - `details-00.json` through `details-15.json` contain the condensed description,
   rules summary, and book-title references used by the detail panel.
 
-The picker loads the manifest and index once. It fetches only the selected
-item's detail shard. If either request fails, the manual entry form and saved
-table rows remain usable.
+The character sheet does not fetch catalog JSON during ordinary page load.
+Each gear table appears before a closed Add disclosure. Opening that disclosure
+reveals the Maximum Tech Level, First Restricted Law Level, and Legal Category
+catalog filters, the catalog button, and the custom-entry fallback. Choosing an
+item from the catalog launches one shared Gear Locker and loads the manifest
+and index once. It fetches only the selected exact variant's detail shard. If a
+request fails, the collapsible custom-entry forms and saved table rows remain
+usable.
+
+The Gear Locker groups search results by `itemId` and labels the group with
+`canonicalName`. A singleton group opens directly. A group with multiple
+rulebook, Tech Level, or configuration variants asks the player to choose an
+exact `variantId` before Add is enabled. This keeps browsing concise without
+discarding any catalog entries.
+
+The Add-disclosure filters are applied to exact variants before `itemId`
+grouping. Maximum Tech Level compares the variant's table TL. First Restricted
+Law Level is an exact classification filter, not a claim that an item is legal
+on a selected world. Legal Category is also an exact classification filter.
+The filters never alter gear already on the character sheet.
 
 ## Manifest
 
 ```json
 {
-  "schemaVersion": "1.0.0",
-  "catalogVersion": "0.3.1",
+  "schemaVersion": "1.1.0",
+  "catalogVersion": "0.3.2",
   "entryCount": 1869,
   "personalDefaultCount": 1209,
   "defaultFilter": "personal",
@@ -38,8 +55,8 @@ Both the index and each detail shard use the same envelope:
 
 ```json
 {
-  "schemaVersion": "1.0.0",
-  "catalogVersion": "0.3.1",
+  "schemaVersion": "1.1.0",
+  "catalogVersion": "0.3.2",
   "entryCount": 1869,
   "items": []
 }
@@ -61,6 +78,9 @@ Each index item has this shape:
   "domains": ["personal"],
   "combatScale": "personal",
   "mountContext": "handheld",
+  "lawLevel": "6",
+  "legalCategory": "category_2",
+  "canonicalName": "Example Weapon",
   "displayName": "Example Weapon - TL 10",
   "statLine": "TL 10 | Mass 2 kg | Cost Cr500 | Range 50m | Damage 3D",
   "detailShard": "details-00.json",
@@ -76,9 +96,29 @@ Each index item has this shape:
 }
 ```
 
-The index is intentionally compact. Initial search covers name, stat line, role,
-domain, and the exact `sheet` fields. Items with the same `itemId` are distinct
-variants; `variantId` is the unique lookup key.
+The index is intentionally compact. Initial search covers canonical and display
+names, stat line, role, domain, legality classification, and the exact `sheet`
+fields. `canonicalName` is the player-facing item-group label. Items with the
+same `itemId` are exact variants of that group; `variantId` is the unique lookup
+key.
+
+`lawLevel` and `legalCategory` are required string classifications for every
+exact variant in the public projection:
+
+- `lawLevel` is the first world Law Level at which possession or use is banned
+  or restricted: `"0"` through `"8"`, `"9+"`, or `"undetermined"`.
+- `legalCategory` is the Central Supply Catalogue classification: Category 1 —
+  Unrestricted, Category 2 — Civilian Use, Category 3 — Paramilitary Use,
+  Category 4 — Military Use, Category 5 — Restricted Military Use,
+  `"prohibited"`, or `"undetermined"`. The stored enum values for numbered
+  categories are `"category_1"` through `"category_5"`.
+
+Missing, blank, or unstructured source data is emitted as the literal
+`"undetermined"`; the web consumer also normalizes an absent or unsupported
+value to `"undetermined"`. Determined values come from a direct item rule or a
+conservative match between an exact source-backed class and the cited Core
+Rulebook or Central Supply Catalogue class table. The classifier does not use
+fuzzy matching, and unmatched or ambiguous entries remain `"undetermined"`.
 
 The matching detail record is intentionally smaller and keyed by `variantId`:
 
@@ -142,8 +182,8 @@ offline rendering, and human-readable exports. They add two optional objects:
   "weight": "2",
   "magazine": "20",
   "catalogRef": {
-    "schemaVersion": "1.0.0",
-    "catalogVersion": "0.3.1",
+    "schemaVersion": "1.1.0",
+    "catalogVersion": "0.3.2",
     "itemId": "item:weapon:example:0123456789ab",
     "definitionId": "definition:0123456789abcdef01234567",
     "variantId": "variant:0123456789abcdef01234567"
