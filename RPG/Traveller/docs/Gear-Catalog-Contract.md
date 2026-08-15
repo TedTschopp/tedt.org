@@ -54,19 +54,47 @@ The filters never alter gear already on the character sheet.
         "guidanceByKind": {
           "weapon": {
             "ruleStatus": "named_threshold",
-            "description": "Light assault weapons and submachine guns first become restricted."
+            "description": "Light assault weapons and submachine guns first become restricted.",
+            "sourceReferences": [
+              {
+                "title": "Core Rulebook (Digital)",
+                "pages": [224],
+                "pageBasis": "printed"
+              }
+            ]
           },
           "armour": {
             "ruleStatus": "named_threshold",
-            "description": "Cloth armour first becomes restricted."
+            "description": "Cloth armour first becomes restricted.",
+            "sourceReferences": [
+              {
+                "title": "Core Rulebook (Digital)",
+                "pages": [224],
+                "pageBasis": "printed"
+              }
+            ]
           },
           "augment": {
             "ruleStatus": "outside_global_table",
-            "description": "The Core table gives no blanket numeric ladder for augments."
+            "description": "The Core table gives no blanket numeric ladder for augments.",
+            "sourceReferences": [
+              {
+                "title": "Core Rulebook (Digital)",
+                "pages": [213, 223],
+                "pageBasis": "printed"
+              }
+            ]
           },
           "equipment": {
             "ruleStatus": "outside_global_table",
-            "description": "General equipment uses exact-item or world rules."
+            "description": "General equipment uses exact-item or world rules.",
+            "sourceReferences": [
+              {
+                "title": "Core Rulebook (Digital)",
+                "pages": [223],
+                "pageBasis": "printed"
+              }
+            ]
           }
         }
       }
@@ -89,12 +117,19 @@ index path. The consumer also accepts an optional `index` path string, an
 
 `lawLevelReference` is the player-facing, source-backed description of the
 cumulative Law Level ladder. Every numbered `levels` entry supplies separate
-guidance for `weapon`, `armour`, `augment`, and `equipment`. `ruleStatus`
+guidance for `weapon`, `armour`, `augment`, and `equipment`. Each guidance object
+owns the `sourceReferences` that support that kind at that level. `ruleStatus`
 distinguishes a named table threshold from a level with no new threshold or a
 gear kind outside the Core weapon-and-armour table. The character sheet must
-not turn an `outside_global_table` description into a fabricated numeric ban.
-The Add control renders the selected level's description for its own gear kind
-and cites the published book title and page from `sourceReferences`.
+not turn an `outside_global_table` description into a fabricated numeric ban or
+append cumulative-ladder language to it. The Add control renders the selected
+level's description for its own gear kind and cites only that guidance object's
+published book titles and pages.
+
+For compatibility with a transitional 1.1-style projection that supplies only
+root `lawLevelReference.sourceReferences`, the UI still renders the guidance
+copy but does not attach those all-root citations to a specific gear kind. It
+instead states that no kind-specific reference is available.
 
 ## Index and detail shards
 

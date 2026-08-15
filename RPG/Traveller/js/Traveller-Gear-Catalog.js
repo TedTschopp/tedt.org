@@ -55,6 +55,11 @@
     "9+",
     "undetermined",
   ]);
+  const NUMERIC_LADDER_RULE_STATUSES = new Set([
+    "named_threshold",
+    "no_additional_threshold",
+    "no_restrictions",
+  ]);
   const LEGAL_CATEGORY_VALUES = new Set([
     "category_1",
     "category_2",
@@ -300,6 +305,9 @@
         guidanceByKind[kind] = {
           ruleStatus: firstString(guidance.ruleStatus, guidance.rule_status),
           description: firstString(guidance.description),
+          sourceReferences: normalizeSourceReferences(
+            guidance.sourceReferences || guidance.source_references
+          ),
         };
       });
       normalizedLevels.push({
@@ -1402,6 +1410,8 @@
         description:
           lawLevelReference.description ||
           "Choose a first restricted Law Level to narrow the catalog.",
+        sourceReferences: [],
+        sourceNote: "Choose a specific Law Level to see kind-specific book references.",
       };
     }
 
@@ -1411,6 +1421,8 @@
         description:
           lawLevelReference.undeterminedDescription ||
           "No exact source-backed first restriction level is assigned; check the item and world rules.",
+        sourceReferences: [],
+        sourceNote: "No threshold citation applies to an undetermined classification.",
       };
     }
 
@@ -1419,13 +1431,24 @@
     );
     if (!level) return null;
     const guidance = level.guidanceByKind[normalizedKind];
+    const ruleStatus = firstString(guidance && guidance.ruleStatus);
+    const isWithinNumericLadder = NUMERIC_LADDER_RULE_STATUSES.has(ruleStatus);
     const cumulativeNote =
-      level.cumulative && normalizedValue !== "0"
+      level.cumulative && normalizedValue !== "0" && isWithinNumericLadder
         ? " Restrictions from lower Law Levels remain in force."
         : "";
+    const guidanceReferences = Array.isArray(guidance && guidance.sourceReferences)
+      ? guidance.sourceReferences
+      : [];
+    const sourceReferences = guidanceReferences;
     return {
       title: `Law Level ${level.value} · ${SECTION_TITLES[normalizedKind]}`,
       description: `${firstString(guidance && guidance.description, level.summary)}${cumulativeNote}`,
+      sourceReferences,
+      sourceNote:
+        sourceReferences.length > 0
+          ? ""
+          : `This catalog version does not provide a kind-specific book reference for ${SECTION_TITLES[normalizedKind].toLocaleLowerCase()} guidance.`,
     };
   }
 
@@ -1451,13 +1474,15 @@
       "gear-law-level-help-copy",
       guidance.description
     );
-    const sourceText = lawLevelReference.sourceReferences
+    const sourceText = guidance.sourceReferences
       .map((reference) => formatReference(reference))
       .join("; ");
     const source = createElement(
       "span",
       "gear-law-level-help-source",
-      sourceText ? `Book references: ${sourceText}.` : "No book reference is available."
+      sourceText
+        ? `Book references: ${sourceText}.`
+        : guidance.sourceNote || "No book reference is available."
     );
     help.replaceChildren(title, description, source);
     help.classList.remove("is-error");
