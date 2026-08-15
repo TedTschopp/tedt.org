@@ -7,11 +7,73 @@ type CatalogFixtureItem = {
   variantId: string;
   descriptionSummary: string;
   rulesSummary: string;
+  lawLevelDescription?: string;
+  lawLevelSourceReferences?: Array<{ title: string; pages: number[]; pageBasis: string }>;
   sourceReferences: Array<{ title: string; pages: number[]; pageBasis: string }>;
   summaryStatus?: string;
   reviewFlags?: string[];
   requiredSkillStatus?: string;
   [key: string]: unknown;
+};
+
+const lawLevelSourceReferences = [
+  { title: 'Core Rulebook', pages: [224], pageBasis: 'printed' }
+];
+
+const guidanceSources = {
+  weapon: [{ title: 'Core Rulebook', pages: [224], pageBasis: 'printed' }],
+  armour: [{ title: 'Core Rulebook', pages: [224], pageBasis: 'printed' }],
+  augment: [{ title: 'Core Rulebook', pages: [213], pageBasis: 'printed' }],
+  equipment: [{ title: 'Central Supply Catalogue', pages: [68], pageBasis: 'printed' }]
+};
+
+const rootLawLevelSources = [
+  ...guidanceSources.weapon,
+  ...guidanceSources.augment,
+  ...guidanceSources.equipment
+];
+
+const lawLevelReference = {
+  valueSemantics: 'first_restricted_world_law_level',
+  description: 'A world\'s Law Level controls possession and enforcement. The numbered ladder is cumulative.',
+  levels: Array.from({ length: 10 }, (_, index) => {
+    const value = index === 9 ? '9+' : String(index);
+    return {
+      value,
+      title: value === '4' ? 'Assault weapons and cloth armour' : `Law Level ${value}`,
+      cumulative: true,
+      guidanceByKind: {
+        weapon: {
+          ruleStatus: 'named_threshold',
+          description: value === '4'
+            ? 'Light assault weapons and submachine guns first become restricted.'
+            : `Weapon guidance for Law Level ${value}.`,
+          sourceReferences: guidanceSources.weapon
+        },
+        armour: {
+          ruleStatus: 'named_threshold',
+          description: value === '4'
+            ? 'Cloth armour first becomes restricted.'
+            : `Armor guidance for Law Level ${value}.`,
+          sourceReferences: guidanceSources.armour
+        },
+        augment: {
+          ruleStatus: 'outside_global_table',
+          description: 'The Core table gives no blanket numeric ladder for augments; use an exact item rule or the world\'s law.',
+          sourceReferences: guidanceSources.augment
+        },
+        equipment: {
+          ruleStatus: 'outside_global_table',
+          description: value === '4'
+            ? 'General equipment uses exact-item or world rules; intrusion software is a direct Law Level 4 exception.'
+            : 'General equipment uses exact-item or world rules.',
+          sourceReferences: guidanceSources.equipment
+        }
+      }
+    };
+  }),
+  undeterminedDescription: 'No exact source-backed first restriction level is assigned; undetermined does not mean legal.',
+  sourceReferences: rootLawLevelSources
 };
 
 const indexItems: CatalogFixtureItem[] = [
@@ -200,18 +262,34 @@ const detailItems = indexItems.map(item => ({
   requiredSkillStatus: item.requiredSkillStatus,
   descriptionSummary: item.descriptionSummary,
   rulesSummary: item.rulesSummary,
+  lawLevelDescription: item.lawLevelDescription ||
+    `First restricted at Law Level ${String(item.lawLevel || 'undetermined')} for this exact fixture variant.`,
+  lawLevelSourceReferences: item.lawLevelSourceReferences || lawLevelSourceReferences,
   sourceReferences: item.sourceReferences
 }));
 
-async function routeCatalog(page: Page) {
+async function routeCatalog(
+  page: Page,
+  options: { perGuidanceSources?: boolean; schemaVersion?: string } = {}
+) {
+  const schemaVersion = options.schemaVersion || '1.2.0';
+  const manifestLawLevelReference = structuredClone(lawLevelReference);
+  if (options.perGuidanceSources === false) {
+    manifestLawLevelReference.levels.forEach(level => {
+      Object.values(level.guidanceByKind).forEach(guidance => {
+        delete (guidance as { sourceReferences?: unknown }).sourceReferences;
+      });
+    });
+  }
   await page.route('**/RPG/Traveller/data/gear-catalog/manifest.json', route =>
     route.fulfill({
       contentType: 'application/json',
       body: JSON.stringify({
-        schemaVersion: '0.1.0',
+        schemaVersion,
         catalogVersion: 'test-1',
         indexPath: 'index.json',
-        detailShards: [{ id: '00', path: 'details-00.json', itemCount: indexItems.length }]
+        detailShards: [{ id: '00', path: 'details-00.json', itemCount: indexItems.length }],
+        lawLevelReference: manifestLawLevelReference
       })
     })
   );
@@ -219,7 +297,7 @@ async function routeCatalog(page: Page) {
     route.fulfill({
       contentType: 'application/json',
       body: JSON.stringify({
-        schemaVersion: '0.1.0',
+        schemaVersion,
         catalogVersion: 'test-1',
         items: compactIndexItems
       })
@@ -229,7 +307,7 @@ async function routeCatalog(page: Page) {
     route.fulfill({
       contentType: 'application/json',
       body: JSON.stringify({
-        schemaVersion: '0.1.0',
+        schemaVersion,
         catalogVersion: 'test-1',
         items: detailItems
       })
@@ -269,6 +347,68 @@ test.describe('Traveller gear catalog', () => {
       elements.every(element => element.previousElementSibling?.classList.contains('table-responsive'))
     );
     expect(tablesComeFirst).toBe(true);
+  });
+
+  test('explains the selected Law Level beside each kind-specific Add filter', async ({ page }) => {
+    await routeCatalog(page);
+    await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
+
+    const expectedGuidance = {
+      weapon: 'Light assault weapons and submachine guns first become restricted.',
+      armour: 'Cloth armour first becomes restricted.',
+      augment: 'The Core table gives no blanket numeric ladder for augments',
+      equipment: 'intrusion software is a direct Law Level 4 exception.'
+    } as const;
+    const expectedCitation = {
+      weapon: 'Core Rulebook, p. 224',
+      armour: 'Core Rulebook, p. 224',
+      augment: 'Core Rulebook, p. 213',
+      equipment: 'Central Supply Catalogue, p. 68'
+    } as const;
+    const allCitations = [...new Set(Object.values(expectedCitation))];
+
+    for (const kind of ['weapon', 'armour', 'augment', 'equipment'] as const) {
+      const panel = await openAddPanel(page, kind);
+      const help = panel.locator('[data-gear-law-level-help]');
+      await expect(help).toContainText('How Law Level filtering works');
+      await panel.getByLabel('First restricted Law Level').selectOption('4');
+      await expect(help).toContainText(`Law Level 4 · ${kind === 'armour' ? 'Armor' : kind === 'weapon' ? 'Weapons' : kind === 'augment' ? 'Augments' : 'Equipment'}`);
+      await expect(help).toContainText(expectedGuidance[kind]);
+      if (kind === 'weapon' || kind === 'armour') {
+        await expect(help).toContainText('Restrictions from lower Law Levels remain in force.');
+      } else {
+        await expect(help).not.toContainText('Restrictions from lower Law Levels remain in force.');
+      }
+      await expect(help).toContainText(expectedCitation[kind]);
+      for (const citation of allCitations) {
+        if (citation !== expectedCitation[kind]) await expect(help).not.toContainText(citation);
+      }
+    }
+
+    const indexLoaded = await page.evaluate(() =>
+      performance.getEntriesByType('resource').some(entry => entry.name.includes('gear-catalog/index.json'))
+    );
+    expect(indexLoaded).toBe(false);
+  });
+
+  test('does not borrow all-root Law Level citations in a transitional schema', async ({ page }) => {
+    await routeCatalog(page, { perGuidanceSources: false, schemaVersion: '1.1.0' });
+    await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
+
+    for (const kind of ['weapon', 'armour', 'augment', 'equipment'] as const) {
+      const panel = await openAddPanel(page, kind);
+      await panel.getByLabel('First restricted Law Level').selectOption('4');
+      const help = panel.locator('[data-gear-law-level-help]');
+      await expect(help).toContainText('does not provide a kind-specific book reference');
+      await expect(help).not.toContainText('Core Rulebook, p. 224');
+      await expect(help).not.toContainText('Core Rulebook, p. 213');
+      await expect(help).not.toContainText('Central Supply Catalogue, p. 68');
+      if (kind === 'weapon' || kind === 'armour') {
+        await expect(help).toContainText('Restrictions from lower Law Levels remain in force.');
+      } else {
+        await expect(help).not.toContainText('Restrictions from lower Law Levels remain in force.');
+      }
+    }
   });
 
   test('lazy-loads and resolves the generated public catalog assets', async ({ page }) => {
@@ -336,6 +476,9 @@ test.describe('Traveller gear catalog', () => {
     const coreVariant = locker.getByRole('button', { name: /Core Rulebook/ });
     await centralSupplyVariant.click();
     await expect(locker.getByText('Use Gun Combat (slug).')).toBeVisible();
+    await expect(locker.getByRole('heading', { name: 'Law Level' })).toBeVisible();
+    await expect(locker.getByText('First restricted at Law Level 6 for this exact fixture variant.')).toBeVisible();
+    await expect(locker.locator('.gear-locker-law-level-references')).toContainText('Core Rulebook, p. 224');
     await expect(locker.getByText('Central Supply Catalogue, PDF p. 112')).toBeVisible();
     await locker.getByText('Quantity, equipped status, and notes').click();
     await locker.getByLabel('Quantity').fill('2');

@@ -55,6 +55,11 @@
     "9+",
     "undetermined",
   ]);
+  const NUMERIC_LADDER_RULE_STATUSES = new Set([
+    "named_threshold",
+    "no_additional_threshold",
+    "no_restrictions",
+  ]);
   const LEGAL_CATEGORY_VALUES = new Set([
     "category_1",
     "category_2",
@@ -75,6 +80,9 @@
   });
   const detailShardCache = new Map();
   let catalog = null;
+  let manifestDocument = null;
+  let manifestPromise = null;
+  let lawLevelReference = null;
   let initializationPromise = null;
   let lockerState = null;
 
@@ -279,6 +287,53 @@
     }, []);
   }
 
+  function normalizeLawLevelReference(value) {
+    if (!isRecord(value)) return null;
+    const rawLevels = Array.isArray(value.levels) ? value.levels : [];
+    const levels = rawLevels.reduce((normalizedLevels, rawLevel) => {
+      if (!isRecord(rawLevel)) return normalizedLevels;
+      const levelValue = normalizeLawLevel(rawLevel.value);
+      if (levelValue === "undetermined") return normalizedLevels;
+      const rawGuidance = isRecord(rawLevel.guidanceByKind)
+        ? rawLevel.guidanceByKind
+        : isRecord(rawLevel.guidance_by_kind)
+          ? rawLevel.guidance_by_kind
+          : {};
+      const guidanceByKind = {};
+      Object.keys(SECTION_LABELS).forEach((kind) => {
+        const guidance = isRecord(rawGuidance[kind]) ? rawGuidance[kind] : {};
+        guidanceByKind[kind] = {
+          ruleStatus: firstString(guidance.ruleStatus, guidance.rule_status),
+          description: firstString(guidance.description),
+          sourceReferences: normalizeSourceReferences(
+            guidance.sourceReferences || guidance.source_references
+          ),
+        };
+      });
+      normalizedLevels.push({
+        value: levelValue,
+        title: firstString(rawLevel.title, `Law Level ${levelValue}`),
+        summary: firstString(rawLevel.summary),
+        cumulative: rawLevel.cumulative === true,
+        guidanceByKind,
+      });
+      return normalizedLevels;
+    }, []);
+
+    if (levels.length === 0) return null;
+    return {
+      description: firstString(value.description),
+      undeterminedDescription: firstString(
+        value.undeterminedDescription,
+        value.undetermined_description
+      ),
+      sourceReferences: normalizeSourceReferences(
+        value.sourceReferences || value.source_references
+      ),
+      levels,
+    };
+  }
+
   function sheetField(sheet, camelName, snakeName, ...fallbacks) {
     return firstString(
       isRecord(sheet) ? sheet[camelName] : "",
@@ -405,6 +460,13 @@
       raw.description
     );
     const rulesSummary = firstString(raw.rulesSummary, raw.rules_summary);
+    const lawLevelDescription = firstString(
+      raw.lawLevelDescription,
+      raw.law_level_description
+    );
+    const lawLevelSourceReferences = normalizeSourceReferences(
+      raw.lawLevelSourceReferences || raw.law_level_source_references
+    );
     const sheet = normalizeSheet(raw, kind, displayName);
     const lawLevel = normalizeLawLevel(firstString(raw.lawLevel, raw.law_level));
     const legalCategory = normalizeLegalCategory(
@@ -463,6 +525,8 @@
       statLine,
       descriptionSummary,
       rulesSummary,
+      lawLevelDescription,
+      lawLevelSourceReferences,
       sourceReferences,
       detailShard: firstString(raw.detailShard, raw.detail_shard),
       sheet,
@@ -495,7 +559,7 @@
     return response.json();
   }
 
-  async function loadCatalog() {
+  async function loadManifestDocument() {
     const manifestUrl = resolveCatalogUrl(CATALOG_MANIFEST, document.baseURI);
     const manifest = await loadJson(manifestUrl, "The gear catalog manifest");
     if (!isRecord(manifest)) {
@@ -512,6 +576,31 @@
         `Gear catalog schema ${schemaVersion} is not supported by this character sheet.`
       );
     }
+
+    lawLevelReference = normalizeLawLevelReference(
+      manifest.lawLevelReference || manifest.law_level_reference
+    );
+    return { manifest, manifestUrl, schemaVersion };
+  }
+
+  async function ensureManifest() {
+    if (manifestDocument) return manifestDocument;
+    if (manifestPromise) return manifestPromise;
+    manifestPromise = loadManifestDocument()
+      .then((document) => {
+        manifestDocument = document;
+        updateAllLawLevelHelp();
+        return document;
+      })
+      .catch((error) => {
+        manifestPromise = null;
+        throw error;
+      });
+    return manifestPromise;
+  }
+
+  async function loadCatalog() {
+    const { manifest, manifestUrl, schemaVersion } = await ensureManifest();
 
     const indexDeclaration = manifest.index;
     const indexPath = firstString(
@@ -619,6 +708,10 @@
     const detailReferences = normalizeSourceReferences(
       rawDetail.sourceReferences || rawDetail.source_references
     );
+    const detailLawLevelReferences = normalizeSourceReferences(
+      rawDetail.lawLevelSourceReferences ||
+        rawDetail.law_level_source_references
+    );
     const requiredSkillStatus = firstString(
       rawDetail.requiredSkillStatus,
       rawDetail.required_skill_status,
@@ -646,6 +739,15 @@
         rawDetail.rules_summary,
         item.rulesSummary
       ),
+      lawLevelDescription: firstString(
+        rawDetail.lawLevelDescription,
+        rawDetail.law_level_description,
+        item.lawLevelDescription
+      ),
+      lawLevelSourceReferences:
+        detailLawLevelReferences.length > 0
+          ? detailLawLevelReferences
+          : item.lawLevelSourceReferences,
       sourceReferences:
         detailReferences.length > 0
           ? detailReferences
@@ -790,6 +892,16 @@
     const description = createElement("p", "gear-locker-detail-copy");
     const rulesHeading = createElement("h4", "", "How to use it");
     const rules = createElement("p", "gear-locker-detail-copy");
+    const lawLevelHeading = createElement("h4", "", "Law Level");
+    const lawLevelDescription = createElement(
+      "p",
+      "gear-locker-detail-copy gear-locker-law-level-copy"
+    );
+    const lawLevelReferences = createElement(
+      "ul",
+      "gear-locker-reference-list gear-locker-law-level-references"
+    );
+    lawLevelReferences.setAttribute("aria-label", "Law Level references");
     const referencesHeading = createElement("h4", "", "Rules references");
     const references = createElement("ul", "gear-locker-reference-list");
 
@@ -847,6 +959,9 @@
       description,
       rulesHeading,
       rules,
+      lawLevelHeading,
+      lawLevelDescription,
+      lawLevelReferences,
       referencesHeading,
       references,
       stateDisclosure,
@@ -901,6 +1016,8 @@
       reviewReasons,
       description,
       rules,
+      lawLevelDescription,
+      lawLevelReferences,
       references,
       stateDisclosure,
       quantity,
@@ -1281,6 +1398,154 @@
     return `${reference.title}, ${reference.pages.length === 1 ? pagePrefix : pluralPrefix} ${reference.pages.join(", ")}`;
   }
 
+  function lawLevelGuidance(kind, value) {
+    if (!lawLevelReference) return null;
+    const normalizedKind = normalizeKind(kind);
+    const normalizedValue = normalizedLawLevelFilter(value);
+    if (!normalizedKind) return null;
+
+    if (normalizedValue === "any") {
+      return {
+        title: `How Law Level filtering works · ${SECTION_TITLES[normalizedKind]}`,
+        description:
+          lawLevelReference.description ||
+          "Choose a first restricted Law Level to narrow the catalog.",
+        sourceReferences: [],
+        sourceNote: "Choose a specific Law Level to see kind-specific book references.",
+      };
+    }
+
+    if (normalizedValue === "undetermined") {
+      return {
+        title: `Undetermined · ${SECTION_TITLES[normalizedKind]}`,
+        description:
+          lawLevelReference.undeterminedDescription ||
+          "No exact source-backed first restriction level is assigned; check the item and world rules.",
+        sourceReferences: [],
+        sourceNote: "No threshold citation applies to an undetermined classification.",
+      };
+    }
+
+    const level = lawLevelReference.levels.find(
+      (candidate) => candidate.value === normalizedValue
+    );
+    if (!level) return null;
+    const guidance = level.guidanceByKind[normalizedKind];
+    const ruleStatus = firstString(guidance && guidance.ruleStatus);
+    const isWithinNumericLadder = NUMERIC_LADDER_RULE_STATUSES.has(ruleStatus);
+    const cumulativeNote =
+      level.cumulative && normalizedValue !== "0" && isWithinNumericLadder
+        ? " Restrictions from lower Law Levels remain in force."
+        : "";
+    const guidanceReferences = Array.isArray(guidance && guidance.sourceReferences)
+      ? guidance.sourceReferences
+      : [];
+    const sourceReferences = guidanceReferences;
+    return {
+      title: `Law Level ${level.value} · ${SECTION_TITLES[normalizedKind]}`,
+      description: `${firstString(guidance && guidance.description, level.summary)}${cumulativeNote}`,
+      sourceReferences,
+      sourceNote:
+        sourceReferences.length > 0
+          ? ""
+          : `This catalog version does not provide a kind-specific book reference for ${SECTION_TITLES[normalizedKind].toLocaleLowerCase()} guidance.`,
+    };
+  }
+
+  function renderLawLevelHelp(panel) {
+    if (!(panel instanceof HTMLDetailsElement)) return;
+    const kind = normalizeKind(panel.dataset.gearAddPanel);
+    const select = panel.querySelector("[data-gear-filter-law-level]");
+    const help = panel.querySelector("[data-gear-law-level-help]");
+    if (!(select instanceof HTMLSelectElement) || !(help instanceof HTMLElement)) return;
+    const guidance = lawLevelGuidance(kind, select.value);
+    if (!guidance) {
+      if (manifestDocument) {
+        help.textContent =
+          "This catalog version does not include book-backed Law Level guidance. Check the selected item's references and the world's local rules.";
+        help.classList.remove("is-error");
+      }
+      return;
+    }
+
+    const title = createElement("strong", "gear-law-level-help-title", guidance.title);
+    const description = createElement(
+      "span",
+      "gear-law-level-help-copy",
+      guidance.description
+    );
+    const sourceText = guidance.sourceReferences
+      .map((reference) => formatReference(reference))
+      .join("; ");
+    const source = createElement(
+      "span",
+      "gear-law-level-help-source",
+      sourceText
+        ? `Book references: ${sourceText}.`
+        : guidance.sourceNote || "No book reference is available."
+    );
+    help.replaceChildren(title, description, source);
+    help.classList.remove("is-error");
+  }
+
+  function updateAllLawLevelHelp() {
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      renderLawLevelHelp(panel);
+    });
+  }
+
+  function requestLawLevelHelp(panel) {
+    if (!(panel instanceof HTMLDetailsElement)) return;
+    const help = panel.querySelector("[data-gear-law-level-help]");
+    if (lawLevelReference) {
+      renderLawLevelHelp(panel);
+      return;
+    }
+    if (help instanceof HTMLElement) {
+      help.textContent = "Loading book-backed Law Level guidance…";
+      help.classList.remove("is-error");
+    }
+    ensureManifest()
+      .then(() => renderLawLevelHelp(panel))
+      .catch((error) => {
+        if (!(help instanceof HTMLElement)) return;
+        help.textContent = `Law Level guidance is unavailable right now. Check the item and world rules. ${error.message}`;
+        help.classList.add("is-error");
+      });
+  }
+
+  function initializeLawLevelHelp() {
+    document.querySelectorAll("[data-gear-add-panel]").forEach((panel) => {
+      if (!(panel instanceof HTMLDetailsElement) || panel.dataset.lawHelpReady === "true") {
+        return;
+      }
+      const select = panel.querySelector("[data-gear-filter-law-level]");
+      if (!(select instanceof HTMLSelectElement)) return;
+      panel.dataset.lawHelpReady = "true";
+      select.addEventListener("change", () => {
+        if (lawLevelReference) renderLawLevelHelp(panel);
+        else if (panel.open) requestLawLevelHelp(panel);
+      });
+      panel.addEventListener("toggle", () => {
+        if (panel.open) requestLawLevelHelp(panel);
+      });
+      if (panel.open) requestLawLevelHelp(panel);
+    });
+  }
+
+  function fallbackLawLevelDescription(item) {
+    if (!lawLevelReference) {
+      return "No exact Law Level explanation is available. Check the cited rulebook entry and the world's local rules.";
+    }
+    if (item.lawLevel === "undetermined") {
+      return lawLevelReference.undeterminedDescription;
+    }
+    const guidance = lawLevelGuidance(item.kind, item.lawLevel);
+    return guidance
+      ? `The exact item explanation is unavailable. General guidance: ${guidance.description}`
+      : "No exact Law Level explanation is available. Check the cited rulebook entry and the world's local rules.";
+  }
+
   function setStatus(state, message, isError = false) {
     state.status.textContent = message;
     state.status.classList.toggle("is-error", isError);
@@ -1343,18 +1608,43 @@
     state.rules.textContent = loading
       ? "Loading the condensed rules…"
       : item.rulesSummary || "No condensed rule is available. Use the cited rulebook entry for adjudication.";
+    state.lawLevelDescription.textContent = loading
+      ? "Loading the exact Law Level explanation…"
+      : item.lawLevelDescription || fallbackLawLevelDescription(item);
+    state.lawLevelReferences.replaceChildren();
     state.references.replaceChildren();
 
     if (loading) {
+      state.lawLevelReferences.appendChild(
+        createElement("li", "", "Loading Law Level references…")
+      );
       const reference = createElement("li", "", "Loading rulebook references…");
       state.references.appendChild(reference);
-    } else if (item.sourceReferences.length === 0) {
-      const reference = createElement("li", "", "No rulebook reference is available for this record.");
-      state.references.appendChild(reference);
     } else {
-      item.sourceReferences.forEach((source) => {
-        state.references.appendChild(createElement("li", "", formatReference(source)));
-      });
+      if (item.lawLevelSourceReferences.length === 0) {
+        state.lawLevelReferences.appendChild(
+          createElement(
+            "li",
+            "",
+            "No separate Law Level reference is available for this record."
+          )
+        );
+      } else {
+        item.lawLevelSourceReferences.forEach((source) => {
+          state.lawLevelReferences.appendChild(
+            createElement("li", "", formatReference(source))
+          );
+        });
+      }
+      if (item.sourceReferences.length === 0) {
+        state.references.appendChild(
+          createElement("li", "", "No rulebook reference is available for this record.")
+        );
+      } else {
+        item.sourceReferences.forEach((source) => {
+          state.references.appendChild(createElement("li", "", formatReference(source)));
+        });
+      }
     }
   }
 
@@ -1691,6 +1981,7 @@
   function initialize() {
     if (lockerState) return lockerState;
     populateTechLevelFilters();
+    initializeLawLevelHelp();
     const root = document.querySelector("[data-gear-catalog-locker]");
     if (!root) return null;
     lockerState = createLocker(root);

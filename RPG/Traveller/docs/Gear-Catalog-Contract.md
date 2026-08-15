@@ -14,11 +14,12 @@ remain outside the website repository.
 The character sheet does not fetch catalog JSON during ordinary page load.
 Each gear table appears before a closed Add disclosure. Opening that disclosure
 reveals the Maximum Tech Level, First Restricted Law Level, and Legal Category
-catalog filters, the catalog button, and the custom-entry fallback. Choosing an
-item from the catalog launches one shared Gear Locker and loads the manifest
-and index once. It fetches only the selected exact variant's detail shard. If a
-request fails, the collapsible custom-entry forms and saved table rows remain
-usable.
+catalog filters, book-backed Law Level guidance for that gear kind, the catalog
+button, and the custom-entry fallback. Opening the disclosure lazily loads only
+the manifest needed for that guidance. Choosing an item from the catalog
+launches one shared Gear Locker and loads the index once. It fetches only the
+selected exact variant's detail shard. If a request fails, the collapsible
+custom-entry forms and saved table rows remain usable.
 
 The Gear Locker groups search results by `itemId` and labels the group with
 `canonicalName`. A singleton group opens directly. A group with multiple
@@ -36,12 +37,77 @@ The filters never alter gear already on the character sheet.
 
 ```json
 {
-  "schemaVersion": "1.1.0",
-  "catalogVersion": "0.3.2",
+  "schemaVersion": "1.2.0",
+  "catalogVersion": "0.3.3",
   "entryCount": 1869,
   "personalDefaultCount": 1209,
   "defaultFilter": "personal",
-  "detailShards": ["details-00.json", "details-01.json"]
+  "detailShards": ["details-00.json", "details-01.json"],
+  "lawLevelReference": {
+    "valueSemantics": "first_restricted_world_law_level",
+    "description": "The numbered ladder is cumulative.",
+    "levels": [
+      {
+        "value": "4",
+        "title": "Assault weapons and cloth armour",
+        "cumulative": true,
+        "guidanceByKind": {
+          "weapon": {
+            "ruleStatus": "named_threshold",
+            "description": "Light assault weapons and submachine guns first become restricted.",
+            "sourceReferences": [
+              {
+                "title": "Core Rulebook (Digital)",
+                "pages": [224],
+                "pageBasis": "printed"
+              }
+            ]
+          },
+          "armour": {
+            "ruleStatus": "named_threshold",
+            "description": "Cloth armour first becomes restricted.",
+            "sourceReferences": [
+              {
+                "title": "Core Rulebook (Digital)",
+                "pages": [224],
+                "pageBasis": "printed"
+              }
+            ]
+          },
+          "augment": {
+            "ruleStatus": "outside_global_table",
+            "description": "The Core table gives no blanket numeric ladder for augments.",
+            "sourceReferences": [
+              {
+                "title": "Core Rulebook (Digital)",
+                "pages": [213, 223],
+                "pageBasis": "printed"
+              }
+            ]
+          },
+          "equipment": {
+            "ruleStatus": "outside_global_table",
+            "description": "General equipment uses exact-item or world rules.",
+            "sourceReferences": [
+              {
+                "title": "Core Rulebook (Digital)",
+                "pages": [223],
+                "pageBasis": "printed"
+              }
+            ]
+          }
+        }
+      }
+    ],
+    "undeterminedDescription": "No exact source-backed first restriction level is assigned.",
+    "sourceReferences": [
+      {
+        "title": "Core Rulebook (Digital)",
+        "pages": [223, 224],
+        "pageBasis": "printed"
+      }
+    ]
+  }
 }
 ```
 
@@ -49,14 +115,30 @@ Paths are resolved relative to `manifest.json`; `index.json` is the default
 index path. The consumer also accepts an optional `index` path string, an
 `index` object containing `path`, or `indexPath` for forward compatibility.
 
+`lawLevelReference` is the player-facing, source-backed description of the
+cumulative Law Level ladder. Every numbered `levels` entry supplies separate
+guidance for `weapon`, `armour`, `augment`, and `equipment`. Each guidance object
+owns the `sourceReferences` that support that kind at that level. `ruleStatus`
+distinguishes a named table threshold from a level with no new threshold or a
+gear kind outside the Core weapon-and-armour table. The character sheet must
+not turn an `outside_global_table` description into a fabricated numeric ban or
+append cumulative-ladder language to it. The Add control renders the selected
+level's description for its own gear kind and cites only that guidance object's
+published book titles and pages.
+
+For compatibility with a transitional 1.1-style projection that supplies only
+root `lawLevelReference.sourceReferences`, the UI still renders the guidance
+copy but does not attach those all-root citations to a specific gear kind. It
+instead states that no kind-specific reference is available.
+
 ## Index and detail shards
 
 Both the index and each detail shard use the same envelope:
 
 ```json
 {
-  "schemaVersion": "1.1.0",
-  "catalogVersion": "0.3.2",
+  "schemaVersion": "1.2.0",
+  "catalogVersion": "0.3.3",
   "entryCount": 1869,
   "items": []
 }
@@ -129,6 +211,14 @@ The matching detail record is intentionally smaller and keyed by `variantId`:
   "reviewFlags": [],
   "descriptionSummary": "A short, independently written description.",
   "rulesSummary": "A concise explanation of how a player resolves its rules.",
+  "lawLevelDescription": "First restricted at Law Level 4 because it matches the cited light-assault class.",
+  "lawLevelSourceReferences": [
+    {
+      "title": "Core Rulebook (Digital)",
+      "pages": [224],
+      "pageBasis": "printed"
+    }
+  ],
   "sourceReferences": [
     {
       "title": "Central Supply Catalogue",
@@ -142,6 +232,11 @@ The matching detail record is intentionally smaller and keyed by `variantId`:
 The web projection never includes source filenames or verbatim book passages.
 Every source reference supplies the published book `title`; page numbers may be
 printed-page or PDF-page references as identified by `pageBasis`.
+
+`lawLevelDescription` explains the exact variant's assigned or undetermined
+Law Level without claiming that an undetermined item is legal.
+`lawLevelSourceReferences` cites the book evidence for that explanation and is
+shown separately from the item's general `sourceReferences` in the Gear Locker.
 
 `summaryStatus: "needs_review"` or a non-empty `reviewFlags` array produces a
 visible Source Review Needed notice. The panel translates known flags into
@@ -182,8 +277,8 @@ offline rendering, and human-readable exports. They add two optional objects:
   "weight": "2",
   "magazine": "20",
   "catalogRef": {
-    "schemaVersion": "1.1.0",
-    "catalogVersion": "0.3.2",
+    "schemaVersion": "1.2.0",
+    "catalogVersion": "0.3.3",
     "itemId": "item:weapon:example:0123456789ab",
     "definitionId": "definition:0123456789abcdef01234567",
     "variantId": "variant:0123456789abcdef01234567"
