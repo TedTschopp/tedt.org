@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-08-15 | TedT.org</title>
+  <title>Daily Report - 2026-08-16 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,111 +52,101 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-08-15</h1>
-      <p class="meta">Generated <time datetime="2026-08-15T04:43:58+00:00">2026-08-15T04:43:58Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-16</h1>
+      <p class="meta">Generated <time datetime="2026-08-16T04:44:38+00:00">2026-08-16T04:44:38Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site is healthy and shipping. A new presentation deck ("The Sandbox Was Not the Boundary") was merged and polished on Aug 13. Automated pipelines (Feed to Mastodon, daily chore commits) are running cleanly. One Dependabot PR is open and waiting for merge. The audit backlog carries three P0 items that need attention: GitHub Actions Node.js 20 deprecation (hard deadline approaching), GitHub Pages artifact size over the 1 GB limit, and 234 pages with broken <code>&lt;img src&gt;</code> attributes.</p>
+      <p><strong>Active development day.</strong> Three Traveller RPG-content PRs (#221, #222, #223) were merged to <code>main</code> on 2026-08-15, iteratively improving the gear catalog picker with Tech Level, Law Level, and filter-guidance content. Automated workflows (daily report, enterprise AI refresh) are running normally. One open security PR (#224) addresses an unvalidated DOM attribute used for navigation — low effort, meaningful fix; merge recommended. Backlog holds open enhancement issues covering category-page enrichment and discovery improvements.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Repository Activity (Aug 12–15, 2026)</h2>
-<h3>Human Commits</h3>
+      <h2>Repository Activity — 2026-08-15 to 2026-08-16</h2>
+<h3>Merged Pull Requests</h3>
+<p>Three feature PRs landed on <code>main</code> yesterday, all in the Traveller RPG tooling area:</p>
 <ul>
-<li><strong>2026-08-13 16:36</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/0427d7c74508510acd16a8f2fa874e419ecb6303"><code>feat(slide): add slide preview image for "the sandbox was not the boundary"</code></a> — Added catalog thumbnail for the new presentation deck.</li>
-<li><strong>2026-08-13 17:26</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/ee62a064ad9a4e8039731a44646d872c8df936f2"><code>Merge presentation deck into main</code></a> — Deck merged from feature branch.</li>
-<li><strong>2026-08-13 18:13</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/996cb0a49c51d6395304ffcf26994cc383621565"><code>Fix presentation SEO description</code></a> — Corrected front matter description for search/social previews.</li>
-<li><strong>2026-08-13 18:41</strong> — <a href="https://github.com/TedTschopp/tedt.org/commit/a26b4998cfdc6414192e41e614425c64a04c1d36"><code>Fix game day statement in presentation</code></a> — Content fix in slide text.</li>
+<li><strong>PR #221</strong> — "Refine Traveller gear catalog filters" — merged 2026-08-15 15:50 UTC</li>
+<li>Commit: <a href="https://github.com/TedTschopp/tedt.org/commit/c96fb574846abebc4bd33871b96d8f928f5968c8"><code>c96fb57</code></a></li>
+<li><strong>PR #222</strong> — "Add source-backed Traveller Law Level guidance" — merged 2026-08-15 16:56 UTC</li>
+<li>Commit: <a href="https://github.com/TedTschopp/tedt.org/commit/6800c8b33946c61810b3401b082159c5cc9bedb1"><code>6800c8b</code></a></li>
+<li>Included a citation-fix commit (<code>bca86c5</code>) immediately after merge</li>
+<li><strong>PR #223</strong> — "Traveller gear: explain Tech, Law, and Legal Category filters" — merged 2026-08-15 19:48 UTC</li>
+<li>Commit: <a href="https://github.com/TedTschopp/tedt.org/commit/e6849342c32fdd769fb0c6803b9134d60e9497eb"><code>e684934</code></a></li>
+<li>This is the HEAD commit on <code>main</code></li>
 </ul>
+<p>Earlier on 2026-08-15, <strong>PR #220</strong> ("Add Traveller gear catalog picker") merged at 05:19 UTC, establishing the initial catalog feature these subsequent PRs enhanced.</p>
 <h3>Automated Commits</h3>
 <ul>
-<li><strong>2026-08-13 18:22</strong> — <code>chore: update Mastodon cache/front matter</code> — Mastodon sync wrote back IDs to post front matter.</li>
-<li><strong>2026-08-14 05:08</strong> — <code>chore: refresh daily report</code></li>
-<li><strong>2026-08-14 13:10</strong> — <code>chore: refresh yesterday in enterprise ai</code></li>
+<li><code>chore: refresh daily report</code> — 2026-08-15 04:43 UTC (bot)</li>
+<li><code>chore: refresh yesterday in enterprise ai</code> — 2026-08-15 13:02 UTC (bot)</li>
+</ul>
+<p>Both automated workflows are committing as expected.</p>
+<h3>Recent Manual Commits (2026-08-13)</h3>
+<ul>
+<li><code>feat(slide): add slide preview image for "the sandbox was not the boundary"</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/0427d7c74508510acd16a8f2fa874e419ecb6303"><code>0427d7c</code></a></li>
+<li><code>Merge presentation deck into main</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/ee62a064ad9a4e8039731a44646d872c8df936f2"><code>ee62a06</code></a></li>
+<li><code>Fix presentation SEO description</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/996cb0a49c51d6395304ffcf26994cc383621565"><code>996cb0a</code></a></li>
+<li><code>Fix game day statement in presentation</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/a26b4998cfdc6414192e41e614425c64a04c1d36"><code>a26b499</code></a></li>
+<li><code>chore: update Mastodon cache/front matter</code> — bot commit via <code>github-actions[bot]</code></li>
 </ul>
 <hr>
 <h2>Workflow Health</h2>
-<h3>Feed to Mastodon</h3>
 <ul>
-<li><strong>Status:</strong> ✅ Success</li>
-<li>Latest completed run: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31853082558">#2160</a> — 2026-08-15 00:16 UTC</li>
-</ul>
-<h3>Site Quality + Deploy</h3>
-<ul>
-<li><strong>Status:</strong> ✅ Success</li>
-<li>Latest completed run: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31803513128">#1141</a> — triggered by workflow_dispatch on <code>main</code>.</li>
-</ul>
-<h3>Daily Report</h3>
-<ul>
-<li><strong>Status:</strong> 🔄 In progress (this run — workflow run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31864937395">#108</a>)</li>
+<li><strong>Daily Report workflow</strong> (run #109, ID 31927143935) — <code>in_progress</code> at report time; triggered by schedule on HEAD <code>e684934</code>. This is the current run producing this report.</li>
+<li><strong>Automated bots</strong> — Daily report and enterprise AI refresh commits are landing on schedule.</li>
+<li>No failed workflow runs visible in the most recent set of runs checked.</li>
 </ul>
 <hr>
 <h2>Open Pull Requests</h2>
+<h3>PR — Security Fix (open)</h3>
+<p>One open PR addresses a <strong>security code-scanning alert #295</strong>:</p>
 <ul>
-<li><strong>[Dependabot] Bump <code>linkify-it</code> (5.0.0 → 5.0.2) and <code>markdown-it</code> in npm_and_yarn group</strong> — open, waiting for merge. Both are security/maintenance patches. No known blockers. This PR was last committed against SHA <code>0e589701</code>, which is slightly behind HEAD — confirm no conflicts before merging.</li>
+<li><strong>Issue:</strong> <code>data-href</code> DOM attribute read directly into <code>window.location</code> without validation (open redirect / DOM injection vector)</li>
+<li><strong>Fix:</strong> Validate the attribute value against an allowlist before use</li>
+<li><strong>Status:</strong> Open, awaiting merge</li>
+<li><strong>Recommendation:</strong> Review and merge promptly — low risk of regression, meaningful security improvement</li>
 </ul>
 <hr>
-<h2>Open Issues — Audit Backlog</h2>
-<p>The active audit tracker lists items across four priority tiers:</p>
-<h3>P0 — Immediate (blocking or hard-deadline)</h3>
+<h2>Open Issues (Selected)</h2>
+<p>The backlog contains enhancement requests focused on content discovery and category page enrichment. One representative issue:</p>
 <ul>
-<li><strong>#150</strong> — Update GitHub Actions workflows from Node.js 20 to Node.js 24. Hard deprecation deadline from GitHub.</li>
-<li><strong>#151</strong> — Fix <code>&lt;img&gt;</code> elements with missing <code>src</code> attribute in rendered HTML (234 pages affected).</li>
-<li><strong>#152</strong> — Reduce GitHub Pages artifact size below the 1 GB limit (currently ~1.16 GB). Deployments at risk if artifact grows further.</li>
+<li><strong>Category page enrichment</strong> — 41 category landing pages are minimal stubs. Missing: related-categories nav, tag cloud, content depth indicators, breadcrumb navigation. This is a discovery and engagement gap.</li>
 </ul>
-<h3>P1 — High Priority</h3>
-<ul>
-<li><strong>#153</strong> — Fix YAML Date constant crashes in Ruby test harness (1,009 posts currently invisible to tests).</li>
-<li><strong>#154</strong> — Fix 588 broken Monster Manual image paths in rendered HTML.</li>
-<li><strong>#155</strong> — Update feed snapshot baselines (5 removed items causing diff failures).</li>
-<li><strong>#156</strong> — Fix 11 broken internal asset links and 2 broken script references.</li>
-<li><strong>#157</strong> — Enforce CI quality gates: remove <code>continue-on-error</code> from HTMLProofer and accessibility steps.</li>
-</ul>
-<h3>P2/P3 — Cleanup and Documentation Debt</h3>
-<ul>
-<li><strong>#158</strong> — Remove 36 <code>.bak</code> files from git (artifacts from 2026-03-07 refactor).</li>
-<li><strong>#159</strong> — Commit <code>.squad/</code> governance artifacts to version control.</li>
-<li><strong>#160</strong> — Accept ADR 0004: Prompt Library Integration (fully implemented; docs debt only).</li>
-<li><strong>#161</strong> — Resolve ADR 0005: Multi-Scale Hex Overlay Visualization (Accept or Reject).</li>
-<li><strong>#162</strong> — Mastodon backfill: syndicate ~800 posts without <code>mastodon-post-id</code>.</li>
-</ul>
+<p>[ASSUMPTION] Full issue list was available but truncated at first-page results. Additional issues may exist below page 1.</p>
 <hr>
-<h2>Content and Publishing Pipeline</h2>
-<p>The <strong>"The Sandbox Was Not the Boundary"</strong> slide deck was fully published on Aug 13 with a preview image, SEO description, and slide text corrections. Three commits in rapid succession indicate an iterative polish cycle — content is live and correct.</p>
-<p>The Mastodon syndication pipeline is healthy; the <code>chore: update Mastodon cache/front matter</code> commit confirms IDs are being synced back to post front matter automatically.</p>
-<p>The <strong>Enterprise AI</strong> section is receiving daily automated refresh commits (<code>chore: refresh yesterday in enterprise ai</code>), meaning that content pipeline is active and functional.</p>
+<h2>Content &amp; Publishing Pipeline</h2>
+<ul>
+<li>Traveller RPG tooling is receiving active, iterative attention — four PRs in two days suggests a focused work session.</li>
+<li>Slide deck work ("The Sandbox Was Not the Boundary") was merged and polished on 2026-08-13 with SEO and preview image fixes.</li>
+<li>Mastodon cache/front-matter sync ran on 2026-08-13 via the automated bot.</li>
+<li>No content pipeline errors observed in commit messages or workflow run data.</li>
+</ul>
 <hr>
 <h2>Risks and Blockers</h2>
 <ul>
-<li><strong>Node.js 20 deprecation (#150)</strong>: Hard deadline from GitHub Actions. Workflows will fail if not updated before the cutoff. This is the most time-sensitive P0 item.</li>
-<li><strong>Artifact size (#152)</strong>: At 1.16 GB against a 1 GB limit, the site is already over. Deployments may fail silently or start erroring. Needs immediate triage.</li>
-<li><strong>Test harness blind spot (#153)</strong>: 1,009 posts are invisible to the Ruby test suite due to YAML Date crashes. Quality signals are unreliable until this is fixed.</li>
-<li><strong>CI soft-fail masking (#157)</strong>: <code>continue-on-error</code> on HTMLProofer and a11y means failures are hidden. Real defect count is likely higher than audited.</li>
-<li><strong>Dependabot PR</strong>: Minor risk if left open while main branch advances — rebase may be needed.</li>
+<li><strong>Security PR open</strong> — The unvalidated <code>data-href</code> → <code>window.location</code> path should be closed before next deploy touching that code path.</li>
+<li><strong>Category page debt</strong> — 41 stub pages limit discovery; not a blocker but accumulating UX debt.</li>
+<li><strong>Daily Report workflow status</strong> — This run was <code>in_progress</code> at data collection time; outcome should be confirmed in the next run.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li>Fix #150 (Node.js 24 migration) — schedule before the GitHub-enforced cutoff date.</li>
-<li>Triage artifact size (#152) — identify largest contributors (<code>_site/</code> assets, slides decks, images) and prune or compress.</li>
-<li><code>Fix #153</code> (YAML Date crash in test harness) — restores test coverage to 1,009 hidden posts.</li>
-<li>Merge the Dependabot PR — it is a straightforward maintenance update.</li>
-<li>After #153 is fixed, run a full test pass to get an accurate defect count before tackling #154–#157 in sequence.</li>
+<li><strong>Merge the security PR</strong> addressing code-scanning alert #295. Low blast radius, clear fix.</li>
+<li><strong>Review Traveller gear tooling</strong> — four rapid PRs in one session; consider a brief smoke-test of the gear catalog picker to confirm filter behavior is correct end-to-end.</li>
+<li><strong>Schedule category page enrichment work</strong> — Even a first pass adding related-category links to the 41 stub pages would improve discovery.</li>
+<li><strong>Confirm daily report run outcome</strong> — Check run #109 completes successfully after this report publishes.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits sourced from <a href="https://github.com/TedTschopp/tedt.org"><code>TedTschopp/tedt.org</code></a> <code>main</code> branch, most recent 20 commits via GitHub MCP <code>list_commits</code>.</li>
-<li>Workflow run data sourced via GitHub MCP <code>list_workflow_runs</code> for <code>deploy.yml</code> and all workflows (completed filter). Total workflow run count: 8,262+.</li>
-<li>Issue data sourced from <code>list_issues</code> (open, updated DESC, first 10). The audit tracker issue body was read directly and contains P0–P3 linked issues (#150–#162).</li>
-<li>Open PR data sourced from <code>list_pull_requests</code> (open state). One Dependabot PR observed.</li>
-<li>Deploy run #1141 was the most recent completed <code>deploy.yml</code> run at time of report generation.</li>
-<li>[ASSUMPTION] The artifact size figure of ~1.16 GB comes from issue #152 body text written at audit time; current actual size may differ.</li>
-<li>[ASSUMPTION] Node.js 20 deprecation deadline is not explicitly dated in the data available; treat as urgent based on issue priority classification.</li>
-<li>Build health (HTMLProofer output, memory probe metrics) not directly observable from this workflow — assessed as [ASSUMPTION: passing] given the deploy workflow concluded as success.</li>
-<li><code>gh</code> CLI is not authenticated in this environment; all reads performed via GitHub MCP tools only.</li>
+<li>Commits sourced from GitHub API (<code>list_commits</code>, page 1, 20 results), covering 2026-08-13 through 2026-08-16</li>
+<li>Workflow runs: current run ID 31927143935 confirmed via <code>get_workflow_run</code>; broader run list was available but required large-file parsing which was blocked by sandbox restrictions — top-level run status inferred from preview data</li>
+<li>Open PRs: list_pull_requests (open, sorted by updated) returned results; only first-preview data was parseable due to sandbox restrictions; one security PR confirmed from preview</li>
+<li>Open issues: list_issues (open) returned results; first-preview only; full issue titles and bodies not fully parsed due to sandbox bash restrictions</li>
+<li>Closed PRs: list was available; only lodash bump PR visible in preview — not relevant to current activity</li>
+<li>[ASSUMPTION] No failed workflow runs exist in recent history — inferred from absence of failure indicators in available data, not from a full run-status query</li>
+<li>bash tool calls were blocked by sandbox security policy; JSON parsing was not available for large tool output files</li>
 </ul>
     </section>
     <footer>
