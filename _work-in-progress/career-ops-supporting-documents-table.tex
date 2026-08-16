@@ -1,0 +1,73 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{longtable}
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\begin{document}
+
+\section*{Optional Supporting Documents}
+
+\begin{longtable}{@{}L{0.34\textwidth}L{0.60\textwidth}@{}}
+\toprule
+\textbf{Document} & \textbf{Useful information} \\
+\midrule
+\endfirsthead
+
+\toprule
+\textbf{Document} & \textbf{Useful information} \\
+\midrule
+\endhead
+
+\midrule
+\multicolumn{2}{r@{}}{\emph{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+LinkedIn ``Save to PDF'' export
+  & About section, certifications, volunteer work, endorsements, and roles omitted from the CV \\
+
+Diploma or degree certificate
+  & Verified institution, degree, subject, and completion date \\
+
+Academic transcript
+  & Coursework, honors, dates, and specializations \\
+
+Certification records
+  & Certification name, issuer, date, and credential URL \\
+
+Reference letters
+  & Supported competency language and third-party observations \\
+
+Portfolio or case studies
+  & Projects, responsibilities, decisions, and results \\
+
+Published articles or presentations
+  & Subject-matter expertise and public proof points \\
+
+Existing cover letters
+  & Useful positioning and past career narratives \\
+
+Writing samples
+  & Personal voice and tone \\
+
+Existing STAR stories
+  & Interview examples and reflections \\
+
+Existing application tracker
+  & Prior companies, roles, dates, statuses, and outcomes \\
+
+Preferred-company list
+  & Companies and career portals to scan \\
+
+Company blacklist
+  & Employers that should never appear in recommendations \\
+
+\end{longtable}
+
+\end{document}
