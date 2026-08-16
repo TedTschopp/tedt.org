@@ -148,6 +148,7 @@ An enterprise AI operating system would perform a similar coordinating role for 
 |                          Health and logs | Evaluations, traces, evidence, incidents, and recovery            |
 |                          Resource quotas | Budgets, rate limits, latency targets, and capacity               |
 |                Installation and upgrades | Inventory, ownership, versions, reviews, and retirement           |
+{. well .table .table-striped }
 
 I do not mean that every company should buy a product labeled “AI OS,” or spend three years building one enormous platform. Most enterprises will accidentially assemble this from systems they already have: identity and access management, data platforms, API gateways, workflow engines, model services, observability, security controls, and software-delivery practices.
 
