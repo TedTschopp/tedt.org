@@ -744,7 +744,12 @@ const originalCParamRaw = getOriginalCParamValue();
 const originalCParamDecodedLower = originalCParamRaw ? decodeURIComponent(String(originalCParamRaw).trim()).toLowerCase() : '';
 let preservePresetC = (originalCParamDecodedLower === 'ted' || originalCParamDecodedLower === 'teds');
 
+const COLOR_NAME_API_URL = 'https://api.color.pizza/v1/';
+const COLOR_NAME_BATCH_SIZE = 100;
 const colorNameCache = new Map();
+const pendingColorNameRequests = new Map();
+const queuedColorNameKeys = new Set();
+let colorNameBatchTimer = 0;
 
 function normalizeHex6(hex) {
     const raw = String(hex || '').trim();
@@ -1812,18 +1817,66 @@ function getDerivedColorMeta(color) {
     };
 }
 
-async function getColorName(hex) {
-    const key = normalizeHex6(hex);
-    if (colorNameCache.has(key)) return colorNameCache.get(key);
-    try {
-        const name = await fetchColorNameFromApi(key);
-        const safe = (name && String(name).trim().length > 0) ? String(name).trim() : key;
-        colorNameCache.set(key, safe);
-        return safe;
-    } catch {
-        colorNameCache.set(key, key);
-        return key;
+async function fetchColorNamesFromApi(hexColors) {
+    const values = hexColors.map(hex => normalizeHex6(hex).substring(1));
+    const requestUrl = new URL(COLOR_NAME_API_URL);
+    requestUrl.searchParams.set('values', values.join(','));
+    const response = await fetch(requestUrl, {
+        headers: { Accept: 'application/json' },
+    });
+    if (!response.ok) throw new Error(`Color Pizza returned ${response.status}`);
+
+    const data = await response.json();
+    if (!Array.isArray(data.colors)) throw new Error('Color Pizza returned an invalid response');
+
+    const namesByHex = new Map();
+    data.colors.forEach((color, index) => {
+        const requestedHex = /^#[0-9a-f]{6}$/i.test(color?.requestedHex || '')
+            ? normalizeHex6(color.requestedHex)
+            : normalizeHex6(hexColors[index]);
+        const name = String(color?.name || '').trim();
+        if (name) namesByHex.set(requestedHex, name);
+    });
+    return namesByHex;
+}
+
+function resolveColorNameRequest(key, name) {
+    const resolvedName = String(name || '').trim() || key;
+    colorNameCache.set(key, resolvedName);
+    const pendingRequest = pendingColorNameRequests.get(key);
+    pendingColorNameRequests.delete(key);
+    pendingRequest?.resolve(resolvedName);
+}
+
+async function flushColorNameQueue() {
+    colorNameBatchTimer = 0;
+    const keys = Array.from(queuedColorNameKeys);
+    queuedColorNameKeys.clear();
+
+    for (let offset = 0; offset < keys.length; offset += COLOR_NAME_BATCH_SIZE) {
+        const batch = keys.slice(offset, offset + COLOR_NAME_BATCH_SIZE);
+        try {
+            const namesByHex = await fetchColorNamesFromApi(batch);
+            batch.forEach(key => resolveColorNameRequest(key, namesByHex.get(key)));
+        } catch {
+            batch.forEach(key => resolveColorNameRequest(key, key));
+        }
     }
+}
+
+function getColorName(hex) {
+    const key = normalizeHex6(hex);
+    if (colorNameCache.has(key)) return Promise.resolve(colorNameCache.get(key));
+    if (pendingColorNameRequests.has(key)) return pendingColorNameRequests.get(key).promise;
+
+    let resolveRequest;
+    const promise = new Promise(resolve => {
+        resolveRequest = resolve;
+    });
+    pendingColorNameRequests.set(key, { promise, resolve: resolveRequest });
+    queuedColorNameKeys.add(key);
+    if (!colorNameBatchTimer) colorNameBatchTimer = window.setTimeout(flushColorNameQueue, 0);
+    return promise;
 }
 
 let renderChartRaf = 0;
@@ -1950,12 +2003,6 @@ function convertRgbToCmyk(red, green, blue) {
         Math.round((yellow - black) / (1 - black) * 100),
         Math.round(black * 100),
     ];
-}
-
-async function fetchColorNameFromApi(hexColor) {
-    const response = await fetch(`https://api.color.pizza/v1/${hexColor.substring(1)}`);
-    const data = await response.json();
-    return data.colors[0].name;
 }
 
 function rgbToHex(red, green, blue) {
@@ -2541,7 +2588,7 @@ async function generateColorChart({ center = false } = {}) {
 
             const recalculatedRgb = tinycolor(shadeColors[shade]).toRgb();
             const recalculatedRgbArray = [recalculatedRgb.r, recalculatedRgb.g, recalculatedRgb.b];
-            const dynamicColorName = await fetchColorNameFromApi(shadeColors[shade]);
+            const dynamicColorName = await getColorName(shadeColors[shade]);
             const dynamicNameElement = document.createElement('div');
             dynamicNameElement.dataset.slot = 'title';
             dynamicNameElement.textContent = `${dynamicColorName}`;

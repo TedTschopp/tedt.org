@@ -106,6 +106,7 @@ Override check for emergency commits with `SKIP_TOC=1 git commit -m "..."`.
    6. [Include Standards](#include-standards)
       - [Directory Structure](#directory-structure)
       - [Directory Purposes](#directory-purposes)
+      - [Analytics Baseline](#analytics-baseline)
       - [Naming Conventions](#naming-conventions)
       - [Usage Examples](#usage-examples)
       - [Adding New Includes](#adding-new-includes)
@@ -119,25 +120,27 @@ Override check for emergency commits with `SKIP_TOC=1 git commit -m "..."`.
    10. [Quality Gates](#quality-gates)
    11. [GitHub Workflows Overview](#github-workflows-overview)
    12. [Front Matter Feature Flags](#front-matter-feature-flags)
-      - [Article Video Front Matter](#article-video-front-matter)
-      - [Slide Deck Front Matter (Canonical Path posts-slides)](#slide-deck-front-matter-canonical-path-posts-slides)
+      - [Substack publishing opt-in](#substack-publishing-opt-in)
+   13. [Responsive WebP Images](#responsive-webp-images)
+   14. [Article Video Front Matter](#article-video-front-matter)
+      - [Slide Deck Front Matter (Standalone HTML Default)](#slide-deck-front-matter-standalone-html-default)
       - [Slide Index Behavior](#slide-index-behavior)
-      - [Slide Includes](#slide-includes)
-      - [Client-Side Topic Filtering](#client-side-topic-filtering)
-      - [Styling Utilities for Decks](#styling-utilities-for-decks)
-      - [Global Slides Theme](#global-slides-theme)
-      - [Archetype Classes & Usage](#archetype-classes-usage)
-      - [Deck Style Front Matter](#deck-style-front-matter)
+      - [Legacy Reveal Includes](#legacy-reveal-includes)
+      - [Client-Side Search and Topic Filtering](#client-side-search-and-topic-filtering)
+      - [Legacy Reveal Styling Utilities](#legacy-reveal-styling-utilities)
+      - [Legacy Reveal Global Theme](#legacy-reveal-global-theme)
+      - [Legacy Reveal Archetype Classes & Usage](#legacy-reveal-archetype-classes-usage)
+      - [Legacy Reveal Deck Style Front Matter](#legacy-reveal-deck-style-front-matter)
       - [Mermaid Diagrams Usage](#mermaid-diagrams-usage)
-   13. [Homepage Hero System & Caching](#homepage-hero-system-caching)
+   15. [Homepage Hero System & Caching](#homepage-hero-system-caching)
       - [How It Works](#how-it-works)
       - [Adding / Updating a Hero](#adding-updating-a-hero)
       - [Removing a Hero](#removing-a-hero)
       - [Service Worker Details](#service-worker-details)
       - [Troubleshooting](#troubleshooting)
       - [Potential Future Enhancements](#potential-future-enhancements)
-   14. [License](#license)
-   15. [Contact](#contact)
+   16. [License](#license)
+   17. [Contact](#contact)
 
 ## Repository Structure
 
@@ -370,6 +373,7 @@ Current active workflows:
 |-------------------------|--------------------------------|-------------------------------|------------------------------------------------------------------------|
 | Site Quality + Deploy   | `deploy.yml`                   | push to `main`, PR, manual    | Canonical quality gate, Allure artifacts, and Pages deploy on `main`   |
 | Feed to Mastodon        | `mastodon-feed.yml`            | push to `main`, every 6h, manual | Post newest site entry to Mastodon and sync toot metadata           |
+| TedT.org to Substack    | `substack-publish.yml`          | successful Pages deploy, manual | Prepare validated newsletter artifacts; mutate only through the protected official-API gate |
 | DUSD Lunch Menu Calendar| `dusd-lunch-menu.yml`          | daily, manual                 | Rebuild and commit the district lunch calendar ICS file                |
 | Daily Report            | `daily-report.md` / `daily-report.lock.yml` | daily, manual | Use GitHub Agentic Workflows to publish `/Daily-Report/index.html` through a constrained safe output |
 | Yesterday in Enterprise AI | `yesterday-in-ai.md` / `yesterday-in-ai.lock.yml` | daily around 6 a.m. PT, manual | Use GitHub Agentic Workflows to publish `/Daily-Report/AI/index.html` from `prompts/! - Yesterday in AI.md` |
@@ -411,6 +415,51 @@ Notes:
 - Future flags (candidate): `charts`, `diagram-libs`, `math` (currently always included) may adopt the same pattern.
 
 See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural implications of these flags.
+
+### Substack publishing opt-in
+
+Newsletter syndication uses a nested front-matter contract rather than a
+presentation flag:
+
+```yaml
+substack:
+  enabled: true
+  id: "immutable-source-id"
+  delivery:
+    web: true
+    email: false
+  audience: everyone
+  publish_at:
+  slug:
+  section:
+  tags: []
+  paywall_after:
+  public_source_acknowledged: false
+```
+
+The bridge scans only eligible `_posts/` files and defaults to disabled. Both
+delivery Booleans and a unique immutable ID are required when enabled. Paid or
+founding segmentation requires an internal acknowledgment that the full source
+remains public on TedT.org; the bridge adds no reader-visible disclosure.
+
+`substack-publish.yml` prepares checksum-protected HTML/JSON previews after a
+successful Pages deployment. The repository currently ships no live write
+adapter: both configured adapter names fail closed before reading a credential.
+`record-manual` records an operator-observed result in the ledger; it does not
+publish to Substack.
+
+The durable `substack-state` branch is ordinary repository history and is
+publicly readable in this public repository. `_config.yml` keeps its ledger out
+of rendered Pages output, but does not make the ledger private. Store only
+operational IDs, URLs, hashes, states, and timestamps there—never credentials,
+cookies, subscriber information, or other secrets.
+
+Before using `record-manual` or enabling any future API mutation, create and
+protect the literal `substack-production` environment with an exact `main`
+deployment-branch rule and required reviewer. Repository files cannot create
+those GitHub settings. See
+[`docs/substack-publishing.md`](docs/substack-publishing.md) for the complete
+schema, manual modes, state branch, setup, and rollout.
 
 ## Responsive WebP Images
 

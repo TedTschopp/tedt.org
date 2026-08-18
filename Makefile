@@ -1,4 +1,4 @@
-.PHONY: build normalize validate_mastodon feed_check feed_diff legacy_check length_report recent_cache_check tools_css_sync_check assessments_check call_to_action_alert_check category_title_font_check profile_render_check proofer proofer_advisory a11y_check qa quality_gate all clean gw-export gw-diff docs-toc check-toc repo_guard
+.PHONY: build normalize validate_mastodon feed_check feed_diff legacy_check length_report recent_cache_check tools_css_sync_check assessments_check call_to_action_alert_check category_title_font_check profile_render_check substack_check proofer proofer_advisory a11y_check qa quality_gate all clean gw-export gw-diff docs-toc check-toc repo_guard
 
 repo_guard:
 	ruby tests/repo_guard.rb
@@ -17,6 +17,9 @@ category_title_font_check:
 
 profile_render_check:
 	ruby tests/check_profile_rendering.rb
+
+substack_check:
+	bundle exec ruby tests/check_substack_bridge.rb
 
 build:
 	bundle exec jekyll build --quiet
@@ -52,7 +55,7 @@ proofer_advisory:
 a11y_check:
 	npm run test:a11y
 
-qa: repo_guard normalize build legacy_check feed_check validate_mastodon feed_diff length_report recent_cache_check tools_css_sync_check assessments_check call_to_action_alert_check category_title_font_check profile_render_check
+qa: repo_guard normalize build legacy_check feed_check validate_mastodon feed_diff length_report recent_cache_check tools_css_sync_check assessments_check call_to_action_alert_check category_title_font_check profile_render_check substack_check
 
 quality_gate: qa a11y_check
 	$(MAKE) SKIP_EXTERNAL=1 proofer_advisory

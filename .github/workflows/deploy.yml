@@ -167,6 +167,10 @@ jobs:
         run: |
           make repo_guard
 
+      - name: Substack bridge contract checks
+        run: |
+          make substack_check
+
       - name: Bootstrap extension checks
         run: |
           make call_to_action_alert_check

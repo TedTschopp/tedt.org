@@ -198,6 +198,7 @@ Reference (not exhaustive—extend if adding new flags):
 * `redirect_from` (array/string): Legacy paths to redirect (ensure plugin / meta logic supports it before use).
 * `permalink` (string): Override generated permalink; keep consistent with pattern if used.
 * `draft` (boolean): If using drafts feature (ensure not committed live unless intended).
+* `substack` (mapping): Explicit newsletter opt-in and delivery contract. When enabled it requires an immutable unique `id` and strict `delivery.web` / `delivery.email` Booleans; see `docs/substack-publishing.md`. Never infer opt-in from categories, dates, or Git diffs. The `substack-state` ledger is public operational metadata; never store credentials, cookies, subscriber data, or other secrets in it.
 Validation: When adding new keys, document in README + here; guard usage with Liquid conditionals.
 
 ### 21. Performance & Memory Instrumentation Quick Reference

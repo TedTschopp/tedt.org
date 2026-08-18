@@ -19,6 +19,9 @@ exclude:
 - test-results/**
 - .allure/**
 - reports/allure/allure-results/**
+# This only keeps the public operational ledger out of rendered Pages output.
+# The Git branch remains readable; never store credentials or subscriber data here.
+- cache/substack-sync.json
 - bootstrap-5.3.2.tgz
 
 # Enable explicit kramdown + MathJax processing

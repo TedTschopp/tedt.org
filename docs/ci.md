@@ -1,9 +1,10 @@
 # Continuous Integration / Quality Gate
 
-This repository now uses one authoritative CI quality workflow and one supporting social publishing workflow:
+This repository uses one authoritative CI quality workflow and distinct supporting publishing workflows:
 
 1. `deploy.yml` is the source of truth for the site's quality gate and deployment.
 2. `mastodon-feed.yml` handles scheduled or push-driven Mastodon publishing.
+3. `substack-publish.yml` prepares Substack artifacts after a verified deployment and isolates any approved mutation from the Pages workflow.
 
 ---
 
@@ -28,6 +29,7 @@ Responsibilities:
 Blocking checks:
 
 - `make repo_guard`
+- `make substack_check`
 - `make normalize`
 - Jekyll production build
 - `make legacy_check`
@@ -93,6 +95,66 @@ Optional Improvements (not currently enabled):
 
 ---
 
+## 3. Substack Publishing Bridge (`substack-publish.yml`)
+
+Triggers:
+
+- Successful completion of `Site Quality + Deploy` for this repository's
+  `main` branch, including a successful Pages `deploy` job
+- Manual dispatch from `main` in `prepare`, `publish`, `reconcile`, or
+  `record-manual` mode
+
+Workflow boundaries:
+
+1. The credential-free stage checks out the exact deployed SHA, runs
+   `make substack_check`, reads a durable ledger snapshot from
+   `substack-state`, renders every eligible opt-in, validates assets, and
+   uploads a checksum-protected package.
+2. When `SUBSTACK_ADAPTER` is `artifact_only`, the workflow ends at the
+   artifact. This is the initial and supported fallback state.
+3. Only the mutation job enters the literal `substack-production` environment.
+   It revalidates artifact checksums, confirms the prepared SHA is still the
+   latest successful Pages deployment, re-reads the serialized state branch,
+   and then performs a manual ledger record or approved official-API action.
+4. A draft record and any email `publish_intent` are committed to
+   `substack-state` before release. Ambiguous email outcomes become `unknown`
+   and are never retried automatically.
+5. More than one email-delivery candidate fails the run after retaining the
+   review artifact but before entering the mutation job.
+
+`prepare` is the only manual mode that may be used before the production
+environment is configured. `record-manual` does not call Substack, but it does
+change durable operational state, so it uses the same required-reviewer gate as
+future API mutations. Manual dispatch is not a bypass for environment review.
+
+The repository intentionally ships an unavailable adapter. Both
+`artifact_only` and `official` fail closed before reading a credential. Do not
+configure `SUBSTACK_ADAPTER=official` until documented Substack write access,
+adapter code, contract tests, and a capability canary are present in the same
+reviewed change.
+
+`substack-state` is a normal Git branch. In this public repository its ledger
+and history are public even though `_config.yml` excludes the JSON file from the
+rendered site. The ledger may contain operational post IDs, URLs, hashes,
+states, and timestamps. It must never contain API tokens, cookies, subscriber
+data, email addresses, private delivery evidence, or other secrets.
+
+Full setup and operations are documented in `docs/substack-publishing.md`.
+
+Required configuration:
+
+- Repository variables: `SUBSTACK_PUBLICATION_URL` and `SUBSTACK_ADAPTER`
+- Protected environment: `substack-production`, exact `main` deployment branch,
+  required reviewer, and (only after API approval) `SUBSTACK_API_TOKEN`
+- Durable branch: `substack-state`, with force pushes disabled
+
+These are GitHub repository settings, not files created by this change. Create
+and verify the environment, reviewer rule, branch restriction, state branch,
+and branch protections before using any state-changing manual mode or enabling
+an adapter.
+
+---
+
 ## Why There Is No Separate Validation Workflow
 
 The repository previously had a standalone HTMLProofer workflow. That duplication made it harder to answer a simple question: which workflow is the real quality gate?
@@ -100,7 +162,7 @@ The repository previously had a standalone HTMLProofer workflow. That duplicatio
 The answer is now explicit:
 
 - `deploy.yml` is the authoritative quality workflow.
-- Supporting workflows should exist only when they serve a distinct operational purpose, such as social publishing or cache maintenance.
+- Supporting workflows should exist only when they serve a distinct operational purpose, such as social/newsletter publishing or cache maintenance.
 
 ---
 
@@ -109,6 +171,7 @@ The answer is now explicit:
 - If a deployment gets stuck or cancelled by a new push, GitHub Pages uses the latest successful artifact.
 - To force a rebuild without code changes, use the "Run workflow" button (manual dispatch) or commit an empty change: `git commit --allow-empty -m 'chore: trigger deploy'`.
 - The Mastodon workflow will no-op (skip) if your decision script indicates the latest item was already posted.
+- The Substack workflow no-ops when all payload hashes already match the durable ledger; source deletion or disabled opt-in creates an alert rather than a remote deletion.
 - Pull request runs cancel older in-progress runs for the same ref to avoid spending runner time on superseded commits.
 - External link checking remains intentionally excluded from the blocking gate to avoid flaky deploy blockers.
 

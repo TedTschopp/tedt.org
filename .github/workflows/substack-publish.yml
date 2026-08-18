@@ -1,0 +1,659 @@
+name: TedT.org to Substack
+
+on:
+  workflow_run:
+    workflows: ["Site Quality + Deploy"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Prepare an artifact, publish it, reconcile remote state, or record a manual publication
+        type: choice
+        required: true
+        default: prepare
+        options:
+          - prepare
+          - publish
+          - reconcile
+          - record-manual
+      source_id:
+        description: Required for manual publish, reconcile, record-manual, and backfill
+        type: string
+        required: false
+      backfill:
+        description: Package one historical post as web-only with no schedule or email delivery
+        type: boolean
+        required: true
+        default: false
+      remote_post_id:
+        description: Remote post ID for record-manual
+        type: string
+        required: false
+      remote_draft_id:
+        description: Remote draft ID for record-manual
+        type: string
+        required: false
+      remote_url:
+        description: HTTPS publication URL for record-manual
+        type: string
+        required: false
+      web_status:
+        description: Observed web state for record-manual
+        type: choice
+        required: true
+        default: published
+        options:
+          - not_published
+          - scheduled
+          - published
+          - unknown
+      email_request_status:
+        description: Record API acceptance separately from actual email delivery
+        type: choice
+        required: true
+        default: not_requested
+        options:
+          - not_requested
+          - accepted
+          - unknown
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: substack-production-mutations
+  cancel-in-progress: false
+  queue: max
+
+jobs:
+  gate:
+    name: Validate trigger and inputs
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (
+        github.event_name == 'workflow_run' &&
+        github.event.workflow_run.conclusion == 'success' &&
+        (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch') &&
+        github.event.workflow_run.head_branch == 'main' &&
+        github.event.workflow_run.head_repository.full_name == github.repository &&
+        github.event.workflow_run.path == '.github/workflows/deploy.yml'
+      )
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+    outputs:
+      mode: ${{ steps.guard.outputs.mode }}
+      source_sha: ${{ steps.guard.outputs.source_sha }}
+      source_id: ${{ steps.guard.outputs.source_id }}
+      backfill: ${{ steps.guard.outputs.backfill }}
+      force_package: ${{ steps.guard.outputs.force_package }}
+    steps:
+      - name: Validate trusted source and dispatch inputs
+        id: guard
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT_NAME: ${{ github.event_name }}
+          DISPATCH_REF: ${{ github.ref }}
+          INPUT_MODE: ${{ inputs.mode || '' }}
+          INPUT_SOURCE_ID: ${{ inputs.source_id || '' }}
+          INPUT_BACKFILL: ${{ inputs.backfill || false }}
+          INPUT_REMOTE_URL: ${{ inputs.remote_url || '' }}
+          INPUT_REMOTE_POST_ID: ${{ inputs.remote_post_id || '' }}
+          INPUT_REMOTE_DRAFT_ID: ${{ inputs.remote_draft_id || '' }}
+          WORKFLOW_RUN_ID: ${{ github.event.workflow_run.id || '' }}
+          WORKFLOW_RUN_CONCLUSION: ${{ github.event.workflow_run.conclusion || '' }}
+          WORKFLOW_RUN_EVENT: ${{ github.event.workflow_run.event || '' }}
+          WORKFLOW_RUN_HEAD_BRANCH: ${{ github.event.workflow_run.head_branch || '' }}
+          WORKFLOW_RUN_HEAD_REPOSITORY: ${{ github.event.workflow_run.head_repository.full_name || '' }}
+          WORKFLOW_RUN_HEAD_SHA: ${{ github.event.workflow_run.head_sha || '' }}
+          WORKFLOW_RUN_PATH: ${{ github.event.workflow_run.path || '' }}
+        run: |
+          set -euo pipefail
+
+          mode=""
+          source_sha=""
+          source_id="$INPUT_SOURCE_ID"
+          backfill="$INPUT_BACKFILL"
+          force_package=""
+
+          if [ "$EVENT_NAME" = "workflow_run" ]; then
+            mode="auto"
+            backfill="false"
+
+            if [ "$WORKFLOW_RUN_CONCLUSION" != "success" ]; then
+              echo "The upstream deployment did not succeed." >&2
+              exit 1
+            fi
+            if [ "$WORKFLOW_RUN_EVENT" != "push" ] && [ "$WORKFLOW_RUN_EVENT" != "workflow_dispatch" ]; then
+              echo "Only a trusted main push or main deployment dispatch may trigger preparation." >&2
+              exit 1
+            fi
+            if [ "$WORKFLOW_RUN_HEAD_BRANCH" != "main" ] || [ "$WORKFLOW_RUN_HEAD_REPOSITORY" != "$GITHUB_REPOSITORY" ]; then
+              echo "The upstream run did not originate from this repository's main branch." >&2
+              exit 1
+            fi
+            if [ "$WORKFLOW_RUN_PATH" != ".github/workflows/deploy.yml" ]; then
+              echo "Unexpected upstream workflow path." >&2
+              exit 1
+            fi
+
+            deploy_jobs=$(gh api \
+              "repos/$GITHUB_REPOSITORY/actions/runs/$WORKFLOW_RUN_ID/jobs?per_page=100" \
+              --jq '[.jobs[] | select(.name == "deploy" and .conclusion == "success")] | length')
+            if [ "$deploy_jobs" != "1" ]; then
+              echo "The upstream Pages deploy job was not verified as successful." >&2
+              exit 1
+            fi
+            source_sha="$WORKFLOW_RUN_HEAD_SHA"
+          else
+            mode="$INPUT_MODE"
+            source_sha="$GITHUB_SHA"
+            if [ "$DISPATCH_REF" != "refs/heads/main" ]; then
+              echo "Manual Substack operations must be dispatched from main." >&2
+              exit 1
+            fi
+          fi
+
+          if [ -n "$source_id" ] && [[ ! "$source_id" =~ ^[a-z0-9][a-z0-9._-]{1,126}[a-z0-9]$ ]]; then
+            echo "source_id is not URL-safe." >&2
+            exit 1
+          fi
+          if [ "$backfill" = "true" ] && [ -z "$source_id" ]; then
+            echo "A backfill requires exactly one source_id." >&2
+            exit 1
+          fi
+
+          case "$mode" in
+            auto|prepare)
+              ;;
+            publish|reconcile)
+              if [ -z "$source_id" ]; then
+                echo "$mode requires source_id." >&2
+                exit 1
+              fi
+              ;;
+            record-manual)
+              if [ -z "$source_id" ] || [ -z "$INPUT_REMOTE_URL" ]; then
+                echo "record-manual requires source_id and remote_url." >&2
+                exit 1
+              fi
+              if [ -z "$INPUT_REMOTE_POST_ID" ] && [ -z "$INPUT_REMOTE_DRAFT_ID" ]; then
+                echo "record-manual requires remote_post_id or remote_draft_id." >&2
+                exit 1
+              fi
+              force_package="record_manual"
+              ;;
+            *)
+              echo "Unsupported mode: $mode" >&2
+              exit 1
+              ;;
+          esac
+
+          if [ "$mode" = "reconcile" ]; then
+            force_package="reconcile"
+          fi
+
+          {
+            echo "mode=$mode"
+            echo "source_sha=$source_sha"
+            echo "source_id=$source_id"
+            echo "backfill=$backfill"
+            echo "force_package=$force_package"
+          } >> "$GITHUB_OUTPUT"
+
+  stage:
+    name: Render and validate deployed source
+    needs: gate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      actions: read
+    outputs:
+      candidate_count: ${{ steps.prepare.outputs.candidate_count }}
+      email_candidate_count: ${{ steps.prepare.outputs.email_candidate_count }}
+      manifest_sha256: ${{ steps.prepare.outputs.manifest_sha256 }}
+    steps:
+      - name: Check out exact deployed source
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ needs.gate.outputs.source_sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Verify deployed commit remains on main
+        env:
+          SOURCE_SHA: ${{ needs.gate.outputs.source_sha }}
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin refs/heads/main:refs/remotes/origin/main
+          git merge-base --is-ancestor "$SOURCE_SHA" refs/remotes/origin/main
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Run Substack bridge regression checks
+        run: bundle exec ruby tests/check_substack_bridge.rb
+
+      - name: Read durable ledger snapshot
+        env:
+          GH_TOKEN: ${{ github.token }}
+          STATE_LEDGER: ${{ runner.temp }}/substack-state-input/substack-sync.json
+        run: |
+          set -euo pipefail
+          mkdir -p "$(dirname "$STATE_LEDGER")"
+          state_ref_status=$(curl --silent --show-error \
+            --output /dev/null \
+            --write-out '%{http_code}' \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "$GITHUB_API_URL/repos/$GITHUB_REPOSITORY/git/ref/heads/substack-state")
+
+          case "$state_ref_status" in
+            200)
+              git fetch --no-tags origin refs/heads/substack-state:refs/remotes/origin/substack-state
+              git show refs/remotes/origin/substack-state:cache/substack-sync.json > "$STATE_LEDGER"
+              echo "Using ledger from substack-state." >> "$GITHUB_STEP_SUMMARY"
+              ;;
+            404)
+              cp cache/substack-sync.json "$STATE_LEDGER"
+              echo "Using bootstrap ledger; create substack-state before any mutation." >> "$GITHUB_STEP_SUMMARY"
+              ;;
+            *)
+              echo "Could not verify substack-state (GitHub API HTTP $state_ref_status)." >&2
+              exit 1
+              ;;
+          esac
+
+      - name: Prepare transport-neutral package
+        id: prepare
+        env:
+          SOURCE_SHA: ${{ needs.gate.outputs.source_sha }}
+          SOURCE_ID: ${{ needs.gate.outputs.source_id }}
+          BACKFILL: ${{ needs.gate.outputs.backfill }}
+          FORCE_PACKAGE: ${{ needs.gate.outputs.force_package }}
+          PUBLICATION_URL: ${{ vars.SUBSTACK_PUBLICATION_URL }}
+          STATE_LEDGER: ${{ runner.temp }}/substack-state-input/substack-sync.json
+          PACKAGE_DIR: ${{ runner.temp }}/substack-package
+        run: |
+          set -euo pipefail
+          mkdir -p tmp
+          args=(
+            prepare
+            --root .
+            --output "$PACKAGE_DIR"
+            --ledger "$STATE_LEDGER"
+            --source-sha "$SOURCE_SHA"
+            --repository "$GITHUB_REPOSITORY"
+            --github-output "$GITHUB_OUTPUT"
+            --validate-remote-assets
+          )
+          if [ -n "$PUBLICATION_URL" ]; then
+            args+=(--publication-url "$PUBLICATION_URL")
+          fi
+          if [ -n "$SOURCE_ID" ]; then
+            args+=(--source-id "$SOURCE_ID")
+          fi
+          if [ "$BACKFILL" = "true" ]; then
+            args+=(--backfill)
+          fi
+          if [ -n "$FORCE_PACKAGE" ]; then
+            args+=(--force-package "$FORCE_PACKAGE")
+          fi
+          bundle exec ruby _code/substack/cli.rb "${args[@]}" 2>&1 | tee tmp/substack-prepare.log
+          cat "$PACKAGE_DIR/summary.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload prepared package
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: substack-prepared-${{ github.run_id }}
+          path: ${{ runner.temp }}/substack-package
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Enforce one email request per approved run
+        env:
+          EMAIL_CANDIDATE_COUNT: ${{ steps.prepare.outputs.email_candidate_count }}
+        run: |
+          set -euo pipefail
+          if [ "$EMAIL_CANDIDATE_COUNT" -gt 1 ]; then
+            echo "More than one post requests email delivery. Dispatch publish separately for one source_id at a time." >&2
+            exit 1
+          fi
+
+      - name: Upload preparation diagnostics
+        if: failure()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7.0.1
+        with:
+          name: substack-diagnostics-${{ github.run_id }}
+          path: tmp/substack-prepare.log
+          if-no-files-found: ignore
+          retention-days: 14
+
+  mutate:
+    name: Approved Substack mutation
+    needs: [gate, stage]
+    if: >-
+      needs.stage.result == 'success' &&
+      needs.stage.outputs.candidate_count != '0' &&
+      vars.SUBSTACK_PUBLICATION_URL != '' &&
+      (
+        needs.gate.outputs.mode == 'record-manual' ||
+        (
+          vars.SUBSTACK_ADAPTER == 'official' &&
+          (
+            needs.gate.outputs.mode == 'auto' ||
+            needs.gate.outputs.mode == 'publish' ||
+            needs.gate.outputs.mode == 'reconcile'
+          )
+        )
+      )
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      actions: read
+    environment:
+      name: substack-production
+      url: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+    steps:
+      - name: Check out exact prepared source
+        uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
+        with:
+          ref: ${{ needs.gate.outputs.source_sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Set up Ruby before credentialed operations
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b # v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+
+      - name: Download this run's prepared package
+        uses: actions/download-artifact@3e5f45b2cfb9172054b4087a40e8e0b5a5461e7c # v8.0.1
+        with:
+          name: substack-prepared-${{ github.run_id }}
+          path: ${{ runner.temp }}/substack-package
+
+      - name: Revalidate prepared package
+        env:
+          PACKAGE_DIR: ${{ runner.temp }}/substack-package
+          SOURCE_SHA: ${{ needs.gate.outputs.source_sha }}
+        run: |
+          set -euo pipefail
+          bundle exec ruby _code/substack/cli.rb verify-package \
+            --package "$PACKAGE_DIR" \
+            --source-sha "$SOURCE_SHA"
+
+      - name: Revalidate latest Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          SOURCE_SHA: ${{ needs.gate.outputs.source_sha }}
+        run: |
+          set -euo pipefail
+          latest_sha=$(gh api \
+            "repos/$GITHUB_REPOSITORY/actions/workflows/deploy.yml/runs?branch=main&status=success&per_page=20" \
+            --jq '[.workflow_runs[] | select(.event == "push" or .event == "workflow_dispatch")][0].head_sha')
+          if [ -z "$latest_sha" ] || [ "$latest_sha" != "$SOURCE_SHA" ]; then
+            echo "A newer or unverifiable Pages deployment superseded this package." >&2
+            exit 1
+          fi
+
+      - name: Check out durable state branch
+        env:
+          STATE_DIR: ${{ runner.temp }}/substack-state
+        run: |
+          set -euo pipefail
+          git fetch --no-tags origin refs/heads/substack-state:refs/remotes/origin/substack-state
+          git worktree add -B substack-state "$STATE_DIR" refs/remotes/origin/substack-state
+          test -f "$STATE_DIR/cache/substack-sync.json"
+          git -C "$STATE_DIR" config user.name "github-actions[bot]"
+          git -C "$STATE_DIR" config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Verify current ledger and publication binding
+        env:
+          PACKAGE_DIR: ${{ runner.temp }}/substack-package
+          PUBLICATION_URL: ${{ vars.SUBSTACK_PUBLICATION_URL }}
+          SOURCE_SHA: ${{ needs.gate.outputs.source_sha }}
+          STATE_LEDGER: ${{ runner.temp }}/substack-state/cache/substack-sync.json
+        run: |
+          set -euo pipefail
+          bundle exec ruby _code/substack/cli.rb verify-package \
+            --package "$PACKAGE_DIR" \
+            --source-sha "$SOURCE_SHA" \
+            --ledger "$STATE_LEDGER" \
+            --publication-url "$PUBLICATION_URL"
+
+      - name: Verify official adapter before changing state
+        if: needs.gate.outputs.mode != 'record-manual'
+        env:
+          SUBSTACK_ADAPTER: ${{ vars.SUBSTACK_ADAPTER }}
+        run: bundle exec ruby _code/substack/cli.rb adapter-check --adapter "$SUBSTACK_ADAPTER"
+
+      - name: Record a manual Substack publication
+        if: needs.gate.outputs.mode == 'record-manual'
+        env:
+          GITHUB_STATE_PUSH_TOKEN: ${{ github.token }}
+          PACKAGE_DIR: ${{ runner.temp }}/substack-package
+          STATE_LEDGER: ${{ runner.temp }}/substack-state/cache/substack-sync.json
+          STATE_DIR: ${{ runner.temp }}/substack-state
+          SOURCE_ID: ${{ needs.gate.outputs.source_id }}
+          PUBLICATION_URL: ${{ vars.SUBSTACK_PUBLICATION_URL }}
+          REMOTE_URL: ${{ inputs.remote_url }}
+          REMOTE_POST_ID: ${{ inputs.remote_post_id }}
+          REMOTE_DRAFT_ID: ${{ inputs.remote_draft_id }}
+          WEB_STATUS: ${{ inputs.web_status }}
+          EMAIL_STATUS: ${{ inputs.email_request_status }}
+        run: |
+          set -euo pipefail
+          state_push_token="$GITHUB_STATE_PUSH_TOKEN"
+          unset GITHUB_STATE_PUSH_TOKEN
+
+          push_state() {
+            local auth_header
+            auth_header=$(printf 'x-access-token:%s' "$state_push_token" | base64 -w 0)
+            GIT_CONFIG_COUNT=1 \
+              GIT_CONFIG_KEY_0="http.${GITHUB_SERVER_URL}/.extraheader" \
+              GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $auth_header" \
+              git -C "$STATE_DIR" push origin HEAD:substack-state
+          }
+
+          bundle exec ruby _code/substack/cli.rb record-manual \
+            --package "$PACKAGE_DIR" \
+            --ledger "$STATE_LEDGER" \
+            --source-id "$SOURCE_ID" \
+            --publication-url "$PUBLICATION_URL" \
+            --remote-url "$REMOTE_URL" \
+            --remote-post-id "$REMOTE_POST_ID" \
+            --remote-draft-id "$REMOTE_DRAFT_ID" \
+            --web-status "$WEB_STATUS" \
+            --email-status "$EMAIL_STATUS"
+
+          changed=$(git -C "$STATE_DIR" status --porcelain=v1 --untracked-files=all | cut -c4-)
+          if [ "$changed" != "cache/substack-sync.json" ]; then
+            echo "Unexpected state-branch mutation: $changed" >&2
+            exit 1
+          fi
+          git -C "$STATE_DIR" add cache/substack-sync.json
+          git -C "$STATE_DIR" commit -m "chore: record manual Substack state for $SOURCE_ID"
+          push_state
+          state_push_token=""
+
+      - name: Reconcile one Substack post
+        if: needs.gate.outputs.mode == 'reconcile'
+        env:
+          GITHUB_STATE_PUSH_TOKEN: ${{ github.token }}
+          SUBSTACK_ADAPTER: ${{ vars.SUBSTACK_ADAPTER }}
+          SUBSTACK_API_TOKEN: ${{ secrets.SUBSTACK_API_TOKEN }}
+          SUBSTACK_PUBLICATION_URL: ${{ vars.SUBSTACK_PUBLICATION_URL }}
+          PACKAGE_DIR: ${{ runner.temp }}/substack-package
+          STATE_LEDGER: ${{ runner.temp }}/substack-state/cache/substack-sync.json
+          STATE_DIR: ${{ runner.temp }}/substack-state
+          SOURCE_ID: ${{ needs.gate.outputs.source_id }}
+        run: |
+          set -euo pipefail
+          adapter_token="$SUBSTACK_API_TOKEN"
+          state_push_token="$GITHUB_STATE_PUSH_TOKEN"
+          unset GITHUB_STATE_PUSH_TOKEN SUBSTACK_API_TOKEN
+
+          push_state() {
+            local auth_header
+            auth_header=$(printf 'x-access-token:%s' "$state_push_token" | base64 -w 0)
+            GIT_CONFIG_COUNT=1 \
+              GIT_CONFIG_KEY_0="http.${GITHUB_SERVER_URL}/.extraheader" \
+              GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $auth_header" \
+              git -C "$STATE_DIR" push origin HEAD:substack-state
+          }
+
+          set +e
+          SUBSTACK_API_TOKEN="$adapter_token" bundle exec ruby _code/substack/cli.rb reconcile \
+            --package "$PACKAGE_DIR" \
+            --ledger "$STATE_LEDGER" \
+            --source-id "$SOURCE_ID" \
+            --adapter "$SUBSTACK_ADAPTER"
+          status=$?
+          set -e
+          adapter_token=""
+
+          changed=$(git -C "$STATE_DIR" status --porcelain=v1 --untracked-files=all | cut -c4-)
+          if [ -n "$changed" ] && [ "$changed" != "cache/substack-sync.json" ]; then
+            echo "Unexpected state-branch mutation: $changed" >&2
+            exit 1
+          fi
+          if [ "$changed" = "cache/substack-sync.json" ]; then
+            git -C "$STATE_DIR" add cache/substack-sync.json
+            git -C "$STATE_DIR" commit -m "chore: reconcile Substack state for $SOURCE_ID"
+            push_state
+          fi
+          source_changed=$(git status --porcelain=v1 --untracked-files=all)
+          if [ -n "$source_changed" ]; then
+            echo "The adapter unexpectedly changed source-worktree files." >&2
+            exit 1
+          fi
+          state_push_token=""
+          exit "$status"
+
+      - name: Publish approved candidates
+        if: needs.gate.outputs.mode == 'auto' || needs.gate.outputs.mode == 'publish'
+        env:
+          GITHUB_STATE_PUSH_TOKEN: ${{ github.token }}
+          SUBSTACK_ADAPTER: ${{ vars.SUBSTACK_ADAPTER }}
+          SUBSTACK_API_TOKEN: ${{ secrets.SUBSTACK_API_TOKEN }}
+          SUBSTACK_PUBLICATION_URL: ${{ vars.SUBSTACK_PUBLICATION_URL }}
+          PACKAGE_DIR: ${{ runner.temp }}/substack-package
+          STATE_LEDGER: ${{ runner.temp }}/substack-state/cache/substack-sync.json
+          STATE_DIR: ${{ runner.temp }}/substack-state
+        run: |
+          set -euo pipefail
+          adapter_token="$SUBSTACK_API_TOKEN"
+          state_push_token="$GITHUB_STATE_PUSH_TOKEN"
+          unset GITHUB_STATE_PUSH_TOKEN SUBSTACK_API_TOKEN
+
+          push_state() {
+            local auth_header
+            auth_header=$(printf 'x-access-token:%s' "$state_push_token" | base64 -w 0)
+            GIT_CONFIG_COUNT=1 \
+              GIT_CONFIG_KEY_0="http.${GITHUB_SERVER_URL}/.extraheader" \
+              GIT_CONFIG_VALUE_0="AUTHORIZATION: basic $auth_header" \
+              git -C "$STATE_DIR" push origin HEAD:substack-state
+          }
+
+          commit_state() {
+            message="$1"
+            changed=$(git -C "$STATE_DIR" status --porcelain=v1 --untracked-files=all | cut -c4-)
+            if [ -n "$changed" ] && [ "$changed" != "cache/substack-sync.json" ]; then
+              echo "Unexpected state-branch mutation: $changed" >&2
+              return 1
+            fi
+            if [ "$changed" = "cache/substack-sync.json" ]; then
+              git -C "$STATE_DIR" add cache/substack-sync.json
+              git -C "$STATE_DIR" commit -m "$message"
+              push_state
+            fi
+            source_changed=$(git status --porcelain=v1 --untracked-files=all)
+            if [ -n "$source_changed" ]; then
+              echo "The adapter unexpectedly changed source-worktree files." >&2
+              return 1
+            fi
+          }
+
+          ruby -rjson -e 'JSON.parse(File.read(ARGV[0])).fetch("candidates").each { |candidate| puts [candidate.fetch("id"), candidate.fetch("operation"), candidate.dig("effective_delivery", "email")].join("\t") }' \
+            "$PACKAGE_DIR/manifest.json" > "$RUNNER_TEMP/substack-candidates.tsv"
+
+          while IFS=$'\t' read -r source_id operation email_requested; do
+            if [ "$operation" = "post_email_correction" ] || [ "$operation" = "web_correction" ]; then
+              phase="correction"
+            else
+              phase="upsert"
+            fi
+
+            set +e
+            SUBSTACK_API_TOKEN="$adapter_token" bundle exec ruby _code/substack/cli.rb publish \
+              --package "$PACKAGE_DIR" \
+              --ledger "$STATE_LEDGER" \
+              --source-id "$source_id" \
+              --adapter "$SUBSTACK_ADAPTER" \
+              --phase "$phase"
+            phase_status=$?
+            set -e
+            commit_state "chore: persist Substack $phase state for $source_id"
+            if [ "$phase_status" -ne 0 ]; then
+              adapter_token=""
+              state_push_token=""
+              exit "$phase_status"
+            fi
+
+            if [ "$phase" = "correction" ]; then
+              continue
+            fi
+
+            if [ "$email_requested" = "true" ]; then
+              bundle exec ruby _code/substack/cli.rb mark-intent \
+                --package "$PACKAGE_DIR" \
+                --ledger "$STATE_LEDGER" \
+                --source-id "$source_id"
+              commit_state "chore: persist Substack publish intent for $source_id"
+            fi
+
+            set +e
+            SUBSTACK_API_TOKEN="$adapter_token" bundle exec ruby _code/substack/cli.rb publish \
+              --package "$PACKAGE_DIR" \
+              --ledger "$STATE_LEDGER" \
+              --source-id "$source_id" \
+              --adapter "$SUBSTACK_ADAPTER" \
+              --phase release
+            release_status=$?
+            set -e
+            commit_state "chore: persist Substack release state for $source_id"
+            if [ "$release_status" -ne 0 ]; then
+              adapter_token=""
+              state_push_token=""
+              exit "$release_status"
+            fi
+          done < "$RUNNER_TEMP/substack-candidates.tsv"
+          adapter_token=""
+          state_push_token=""
+
+      - name: Report distinct publication states
+        if: always()
+        env:
+          STATE_LEDGER: ${{ runner.temp }}/substack-state/cache/substack-sync.json
+        run: |
+          if [ -f "$STATE_LEDGER" ]; then
+            ruby -rjson -e '
+              ledger = JSON.parse(File.read(ARGV[0]))
+              puts "## Substack operational state"
+              puts
+              puts "| Source ID | State | Web | Email request | Delivery evidence |"
+              puts "|---|---|---|---|---|"
+              ledger.fetch("entries").sort.each do |id, entry|
+                values = [id, entry["state"], entry.dig("web", "status") || entry.dig("web", "published"), entry.dig("email", "request_status"), entry.dig("email", "delivery_evidence")]
+                puts "| #{values.map { |value| value.to_s.gsub(/[|<>\r\n]/, " ") }.join(" | ")} |"
+              end
+            ' "$STATE_LEDGER" >> "$GITHUB_STEP_SUMMARY"
+          fi

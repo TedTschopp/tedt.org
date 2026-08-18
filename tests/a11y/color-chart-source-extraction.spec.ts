@@ -7,13 +7,22 @@ declare const Buffer: { from(input: string): Uint8Array };
 
 const BASE = process.env.PROD_BASE || 'http://127.0.0.1:4000';
 
-async function stubColorNameApi(page: Page) {
+async function stubColorNameApi(page: Page, onRequest?: (hexValues: string[]) => void) {
   await page.route('https://api.color.pizza/**', async (route: Route) => {
     const requestUrl = new URL(route.request().url());
-    const hex = requestUrl.pathname.split('/').filter(Boolean).pop() || '000000';
+    const values = (requestUrl.searchParams.get('values') || '')
+      .split(',')
+      .map(value => value.replace(/^#/, '').toUpperCase())
+      .filter(Boolean);
+    onRequest?.(values);
     await route.fulfill({
       contentType: 'application/json',
-      body: JSON.stringify({ colors: [{ name: `Test ${hex.toUpperCase()}` }] }),
+      body: JSON.stringify({
+        colors: values.map(hex => ({
+          name: `Test ${hex}`,
+          requestedHex: `#${hex}`,
+        })),
+      }),
     });
   });
 }
@@ -48,6 +57,38 @@ consoleErrorsFixture.describe('Color chart source extraction', () => {
     await expect(page.getByLabel('Color list')).toContainText('#0EA6CC');
     await expect(page.getByLabel('Color list')).toContainText('#00B339');
     expect(consoleErrors, 'Color chart should render the existing teds palette without console errors').toHaveLength(0);
+  });
+
+  consoleErrorsFixture('batches color name lookups into one API request', async ({ page, consoleErrors }) => {
+    const colorNameApiRequests: string[][] = [];
+    await stubColorNameApi(page, values => colorNameApiRequests.push(values));
+
+    await page.goto(`${BASE}/tools/color-chart.html?c=teds`, { waitUntil: 'domcontentloaded' });
+
+    await expect(page.locator('.color-box')).toHaveCount(77);
+    await expect(page.locator('.color-box [data-slot="title"]').first()).toHaveText(/^Test [0-9A-F]{6}$/);
+    expect(colorNameApiRequests, 'The initial palette should use one batched Color Pizza request').toHaveLength(1);
+    expect(colorNameApiRequests[0].length).toBeGreaterThan(1);
+    expect(new Set(colorNameApiRequests[0]).size).toBe(colorNameApiRequests[0].length);
+    expect(consoleErrors, 'Batched color naming should not create console errors').toHaveLength(0);
+  });
+
+  consoleErrorsFixture('falls back without retrying when the color name API is rate limited', async ({ page }) => {
+    let colorNameApiRequests = 0;
+    await page.route('https://api.color.pizza/**', async (route: Route) => {
+      colorNameApiRequests += 1;
+      await route.fulfill({
+        status: 429,
+        headers: { 'access-control-allow-origin': '*' },
+        body: 'Too Many Requests',
+      });
+    });
+
+    await page.goto(`${BASE}/tools/color-chart.html?c=teds`, { waitUntil: 'domcontentloaded' });
+
+    await expect(page.locator('.color-box')).toHaveCount(77);
+    await expect(page.locator('.color-box [data-slot="title"]').first()).toHaveText(/^#[0-9A-F]{6}$/);
+    expect(colorNameApiRequests, 'A failed batch should fall back without retrying').toBe(1);
   });
 
   consoleErrorsFixture('extracts a palette from an uploaded image and saves it into the URL palette', async ({ page, consoleErrors }) => {
