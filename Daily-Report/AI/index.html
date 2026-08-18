@@ -53,49 +53,46 @@
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
       <h1>Yesterday in Enterprise AI - 2026-08-17</h1>
-      <p class="meta">Generated <time datetime="2026-08-17T13:05:21+00:00">2026-08-17T13:05:21Z</time> by GitHub Agentic Workflows.</p>
+      <p class="meta">Generated <time datetime="2026-08-18T13:06:45+00:00">2026-08-18T13:06:45Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Feed data could not be retrieved for today's edition. External network access to the RSS feed endpoints (<code>rss.tedt.org</code>) is unavailable in the current publishing environment. No qualifying stories from the past 24–36 hours could be verified or included.</p>
+      <p>No qualifying feed items were found within the 24–36 hour publication window for Aug. 17, 2026. The primary feed (<code>ai_rss_feed.json</code>) contains 50 items, all dated Aug. 5 or earlier — suggesting the upstream feed aggregator has not refreshed. The secondary feed (<code>aggregated_wes_ai_news.json</code>) returned a 404 error. No newsletter content was generated for this edition.</p>
+<p><strong>Action items:</strong></p>
+<ul>
+<li><strong>Feed operators:</strong> Verify the <code>rss.tedt.org</code> aggregator pipeline ran on Aug. 17 and that <code>ai_rss_feed.json</code> is being updated on schedule.</li>
+<li><strong>Editors:</strong> Check whether the aggregated Wes AI news feed URL has changed or been retired.</li>
+<li><strong>Readers:</strong> Yesterday's edition (Aug. 17) remains the most recent complete newsletter.</li>
+</ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Data Unavailable</h2>
-<p>Today's edition of <strong>Yesterday in Enterprise AI</strong> could not be assembled because the configured RSS feed endpoints were unreachable from the publishing environment.</p>
-<p>The two feeds checked:</p>
+      <h2>No Qualifying Items — Feed Refresh Issue</h2>
+<p>The automated feed check on <strong>Aug. 18, 2026</strong> (run at approximately 6:04 a.m. PDT) found no articles published within the standard 24–36 hour window for an Aug. 17 edition.</p>
+<h3>What Was Checked</h3>
 <ul>
-<li><code>https://rss.tedt.org/ai_rss_feed.json</code></li>
-<li><code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
+<li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — 50 items returned, all dated between July 24 and Aug. 5, 2026.</li>
+<li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — returned HTTP 404 (not found).</li>
 </ul>
-<p>Both returned a network permission error — consistent with the sandbox firewall policy that restricts outbound HTTP requests to external hosts not on the allow-list.</p>
 <h3>What This Means</h3>
-<p>Enterprise AI news continues to move quickly. While this edition cannot surface specific items, the topics most worth watching as of mid-August 2026 based on recent trends include:</p>
+<p>The upstream feed aggregator appears to have stopped refreshing on or after Aug. 5. This is a data pipeline issue, not a slow news day. Enterprise AI activity continues; the tooling simply did not surface it in time for this edition.</p>
+<h3>Looking Ahead</h3>
 <ul>
-<li>Continued rollout of AI coding assistants across enterprise dev teams and the compliance questions that follow</li>
-<li>Evolving guidance from U.S. and California regulators on AI liability and disclosure requirements</li>
-<li>Model provider pricing and capacity changes that affect enterprise procurement decisions</li>
-<li>Security research on prompt injection and agentic workflow risks</li>
+<li>Once the feed pipeline is restored, the next edition will include items from the gap period if they fall within the publication window.</li>
+<li>If the secondary feed URL has changed, the editorial workflow file (<code>prompts/! - Yesterday in AI.md</code>) should be updated with the corrected endpoint.</li>
+<li>Consider adding a feed-freshness check to the workflow so stale feeds surface as an alert before the newsletter runs.</li>
 </ul>
-<h3>What to Do in the Meantime</h3>
-<ul>
-<li><strong>Leaders:</strong> Check your AI vendor briefings and legal/compliance digests directly this cycle.</li>
-<li><strong>Individuals:</strong> Review your organization's acceptable-use policy for AI tools — these are updated frequently and often quietly.</li>
-</ul>
-<hr>
-<p>This edition will be superseded once feed access is restored in a future run.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>items_fetched_count:</strong> 0 — both feed endpoints returned "Permission denied" (outbound network blocked by sandbox policy)</li>
+<li><strong>items_fetched_count:</strong> 50 (primary feed only; secondary feed returned 404)</li>
 <li><strong>items_within_24_36_hours_count:</strong> 0</li>
 <li><strong>items_deduplicated_count:</strong> 0</li>
 <li><strong>items_published_count:</strong> 0</li>
-<li><strong>excluded_items_summary:</strong> No items could be fetched; no exclusions to report</li>
-<li><strong>feed_urls_attempted:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code>, <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
-<li><strong>previous_edition:</strong> 2026-08-16 also reported feed unavailability; issue is persistent in this sandbox environment</li>
-<li><strong>date_reference:</strong> Pacific Time at generation was 2026-08-17 06:02 PDT (UTC-7)</li>
+<li><strong>excluded_items_summary:</strong> All 50 items in the primary feed are dated Aug. 5, 2026 or earlier — outside the 24–36 hour window for an Aug. 17 edition. Secondary feed <code>aggregated_wes_ai_news.json</code> returned HTTP 404 and contributed no items.</li>
+<li><strong>date_reference:</strong> Pacific Time at generation was 2026-08-18 06:04 PDT (UTC-7)</li>
+<li><strong>previous_edition:</strong> Aug. 17, 2026 edition present at <code>Daily-Report/AI/index.html</code>; no overlap check required since zero items qualified.</li>
 </ul>
     </section>
     <footer>
