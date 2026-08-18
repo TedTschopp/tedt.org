@@ -5253,5 +5253,37 @@
       "https://tschopp.net/users/Ted/statuses/117089589652259687"
     ],
     "lastTootTimestamp": 1786645349988
+  },
+  "https://tedt.org/The-Cost-of-a-Finished-Job/": {
+    "id": "/The-Cost-of-a-Finished-Job/",
+    "title": "The Cost of a Finished Job",
+    "summary": "Cheaper models do not automatically produce cheaper work. Enterprise AI economics depend on the total cost of delivering an accepted outcome.",
+    "content_text": "Cheaper models do not automatically produce cheaper work. Enterprise AI economics depend on the total cost of delivering an accepted outcome. https://tedt.org/The-Cost-of-a-Finished-Job/",
+    "url": "https://tedt.org/The-Cost-of-a-Finished-Job/",
+    "image": "https://tedt.org/img/2026-08/the-cost-of-a-finished-job-hero-source.webp",
+    "tags": [
+      "enterprise AI",
+      "AI economics",
+      "cost per accepted outcome",
+      "AI operating system",
+      "agentic AI",
+      "AI governance",
+      "workflow optimization",
+      "platform engineering",
+      "employee AI",
+      "operating model",
+      "FinOps"
+    ],
+    "date_published": "2026-08-16T09:00:00-07:00",
+    "date_modified": "2026-08-16T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117107973878117892"
+    ],
+    "lastTootTimestamp": 1786925871026
   }
 }
