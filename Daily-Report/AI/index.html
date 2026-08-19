@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-17 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-18 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,47 +52,50 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-17</h1>
-      <p class="meta">Generated <time datetime="2026-08-18T13:06:45+00:00">2026-08-18T13:06:45Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-18</h1>
+      <p class="meta">Generated <time datetime="2026-08-19T13:07:16+00:00">2026-08-19T13:07:16Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>No qualifying feed items were found within the 24–36 hour publication window for Aug. 17, 2026. The primary feed (<code>ai_rss_feed.json</code>) contains 50 items, all dated Aug. 5 or earlier — suggesting the upstream feed aggregator has not refreshed. The secondary feed (<code>aggregated_wes_ai_news.json</code>) returned a 404 error. No newsletter content was generated for this edition.</p>
-<p><strong>Action items:</strong></p>
+      <p>No qualifying news items were found within the 24–36 hour publication window for Aug. 18, 2026. Both upstream feeds remain stale — the primary feed's newest items are dated Aug. 4 and the secondary feed continues to return a 404 error. The data pipeline issue flagged in the Aug. 17 edition is unresolved.</p>
+<p><strong>Action items for today:</strong></p>
 <ul>
-<li><strong>Feed operators:</strong> Verify the <code>rss.tedt.org</code> aggregator pipeline ran on Aug. 17 and that <code>ai_rss_feed.json</code> is being updated on schedule.</li>
-<li><strong>Editors:</strong> Check whether the aggregated Wes AI news feed URL has changed or been retired.</li>
-<li><strong>Readers:</strong> Yesterday's edition (Aug. 17) remains the most recent complete newsletter.</li>
+<li><strong>Feed operators:</strong> The <code>rss.tedt.org</code> aggregator has not refreshed since Aug. 4; investigate and restore the pipeline.</li>
+<li><strong>Editors:</strong> Confirm whether <code>aggregated_wes_ai_news.json</code> has been retired or moved and update the editorial prompt accordingly.</li>
+<li><strong>Readers:</strong> Enterprise AI news continues to develop; check direct sources such as Reuters Technology, <a href="https://theverge.com">The Verge</a>, and <a href="https://technologyreview.com">MIT Technology Review</a> for the latest.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>No Qualifying Items — Feed Refresh Issue</h2>
-<p>The automated feed check on <strong>Aug. 18, 2026</strong> (run at approximately 6:04 a.m. PDT) found no articles published within the standard 24–36 hour window for an Aug. 17 edition.</p>
+      <h2>Feed Outage — Day Two</h2>
+<p>The automated feed check on <strong>Aug. 19, 2026</strong> (run at approximately 6:04 a.m. PDT) found no articles published within the standard 24–36 hour window for an Aug. 18 edition. This is the second consecutive day with no qualifying content.</p>
 <h3>What Was Checked</h3>
 <ul>
-<li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — 50 items returned, all dated between July 24 and Aug. 5, 2026.</li>
-<li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — returned HTTP 404 (not found).</li>
+<li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — 50 items returned; all dated Aug. 4, 2026 or earlier. The feed has not refreshed in 15 days.</li>
+<li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — returned HTTP 404 (not found), same as yesterday.</li>
 </ul>
-<h3>What This Means</h3>
-<p>The upstream feed aggregator appears to have stopped refreshing on or after Aug. 5. This is a data pipeline issue, not a slow news day. Enterprise AI activity continues; the tooling simply did not surface it in time for this edition.</p>
+<h3>What This Means for Readers</h3>
+<p>Enterprise AI did not take the week off. The gap is in the tooling, not the news. During a 15-day window when the feed went dark, significant industry activity almost certainly occurred — including model releases, policy developments, and enterprise adoption announcements — none of which can be responsibly summarized here without verified source data.</p>
 <h3>Looking Ahead</h3>
 <ul>
-<li>Once the feed pipeline is restored, the next edition will include items from the gap period if they fall within the publication window.</li>
-<li>If the secondary feed URL has changed, the editorial workflow file (<code>prompts/! - Yesterday in AI.md</code>) should be updated with the corrected endpoint.</li>
-<li>Consider adding a feed-freshness check to the workflow so stale feeds surface as an alert before the newsletter runs.</li>
+<li>Restoring the <code>rss.tedt.org</code> aggregator pipeline is the single highest-priority action before the next edition.</li>
+<li>Once restored, items that fall within the rolling 36-hour window will surface normally; a back-fill of the 15-day gap is outside the editorial scope of this newsletter.</li>
+<li>If the secondary feed URL has permanently changed, update <code>prompts/! - Yesterday in AI.md</code> with the new endpoint so future runs can pick it up.</li>
+<li>Consider a feed-freshness health check step at the start of the workflow — if the newest item is older than 48 hours, surface a pipeline alert before attempting to generate newsletter content.</li>
 </ul>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>items_fetched_count:</strong> 50 (primary feed only; secondary feed returned 404)</li>
+<li><strong>items_fetched_count:</strong> 50 (primary feed only)</li>
 <li><strong>items_within_24_36_hours_count:</strong> 0</li>
 <li><strong>items_deduplicated_count:</strong> 0</li>
 <li><strong>items_published_count:</strong> 0</li>
-<li><strong>excluded_items_summary:</strong> All 50 items in the primary feed are dated Aug. 5, 2026 or earlier — outside the 24–36 hour window for an Aug. 17 edition. Secondary feed <code>aggregated_wes_ai_news.json</code> returned HTTP 404 and contributed no items.</li>
-<li><strong>date_reference:</strong> Pacific Time at generation was 2026-08-18 06:04 PDT (UTC-7)</li>
+<li><strong>excluded_items_summary:</strong> All 50 primary feed items are dated Aug. 4, 2026 or earlier — well outside the 24–36 hour window for an Aug. 18 edition. The feed has not refreshed in approximately 15 days.</li>
+<li><strong>secondary_feed_status:</strong> <code>aggregated_wes_ai_news.json</code> returned HTTP 404 for the second consecutive day.</li>
+<li><strong>date_reference:</strong> Pacific Time at generation was 2026-08-19 06:04 PDT (UTC-7); "yesterday" = Aug. 18, 2026.</li>
 <li><strong>previous_edition:</strong> Aug. 17, 2026 edition present at <code>Daily-Report/AI/index.html</code>; no overlap check required since zero items qualified.</li>
+<li><strong>assumption:</strong> No items from other sources were introduced; newsletter reflects only what the configured feeds returned.</li>
 </ul>
     </section>
     <footer>
