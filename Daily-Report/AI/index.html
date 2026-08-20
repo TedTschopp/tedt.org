@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-18 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-19 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,50 +52,53 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-18</h1>
-      <p class="meta">Generated <time datetime="2026-08-19T13:07:16+00:00">2026-08-19T13:07:16Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-19</h1>
+      <p class="meta">Generated <time datetime="2026-08-20T13:07:36+00:00">2026-08-20T13:07:36Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>No qualifying news items were found within the 24–36 hour publication window for Aug. 18, 2026. Both upstream feeds remain stale — the primary feed's newest items are dated Aug. 4 and the secondary feed continues to return a 404 error. The data pipeline issue flagged in the Aug. 17 edition is unresolved.</p>
-<p><strong>Action items for today:</strong></p>
+      <p>No qualifying feed items were available for Aug. 19, 2026. Outbound network access to the RSS feed aggregator is blocked in the current runtime environment, preventing retrieval of source articles. This is the third consecutive edition affected by feed-access issues.</p>
+<p><strong>Action items:</strong></p>
 <ul>
-<li><strong>Feed operators:</strong> The <code>rss.tedt.org</code> aggregator has not refreshed since Aug. 4; investigate and restore the pipeline.</li>
-<li><strong>Editors:</strong> Confirm whether <code>aggregated_wes_ai_news.json</code> has been retired or moved and update the editorial prompt accordingly.</li>
-<li><strong>Readers:</strong> Enterprise AI news continues to develop; check direct sources such as Reuters Technology, <a href="https://theverge.com">The Verge</a>, and <a href="https://technologyreview.com">MIT Technology Review</a> for the latest.</li>
+<li><strong>Feed operators:</strong> Verify the <code>rss.tedt.org</code> aggregator pipeline is running and accessible from the workflow environment.</li>
+<li><strong>Workflow maintainers:</strong> Confirm that outbound HTTPS to <code>rss.tedt.org</code> is permitted; a firewall or policy change may be blocking feed retrieval.</li>
+<li><strong>Readers:</strong> For current enterprise AI news, check direct sources such as Reuters Technology, <a href="https://technologyreview.com">MIT Technology Review</a>, and <a href="https://theverge.com">The Verge</a>.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Outage — Day Two</h2>
-<p>The automated feed check on <strong>Aug. 19, 2026</strong> (run at approximately 6:04 a.m. PDT) found no articles published within the standard 24–36 hour window for an Aug. 18 edition. This is the second consecutive day with no qualifying content.</p>
-<h3>What Was Checked</h3>
+      <h2>Feed Access Blocked — Aug. 19, 2026</h2>
+<p>The automated newsletter run on <strong>Aug. 19, 2026</strong> (approximately 6:04 a.m. PDT) was unable to retrieve any feed data. Both configured feed endpoints returned a "Permission denied" error, indicating that outbound network access to <code>rss.tedt.org</code> is blocked in the current GitHub Agentic Workflows runtime environment.</p>
+<h3>What Was Attempted</h3>
 <ul>
-<li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — 50 items returned; all dated Aug. 4, 2026 or earlier. The feed has not refreshed in 15 days.</li>
-<li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — returned HTTP 404 (not found), same as yesterday.</li>
+<li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — network access denied by runtime policy.</li>
+<li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — network access denied by runtime policy.</li>
 </ul>
-<h3>What This Means for Readers</h3>
-<p>Enterprise AI did not take the week off. The gap is in the tooling, not the news. During a 15-day window when the feed went dark, significant industry activity almost certainly occurred — including model releases, policy developments, and enterprise adoption announcements — none of which can be responsibly summarized here without verified source data.</p>
+<h3>Context from Prior Editions</h3>
+<p>The Aug. 18, 2026 edition noted that the primary feed had not refreshed since Aug. 4, and the secondary feed was returning HTTP 404. Today's permission denial is a separate, lower-level issue: the workflow environment itself cannot make outbound network requests to these endpoints.</p>
+<h3>What This Means</h3>
+<p>Enterprise AI activity has continued at pace. This newsletter cannot responsibly summarize or characterize events without verified source data — doing so would risk introducing inaccuracies.</p>
 <h3>Looking Ahead</h3>
 <ul>
-<li>Restoring the <code>rss.tedt.org</code> aggregator pipeline is the single highest-priority action before the next edition.</li>
-<li>Once restored, items that fall within the rolling 36-hour window will surface normally; a back-fill of the 15-day gap is outside the editorial scope of this newsletter.</li>
-<li>If the secondary feed URL has permanently changed, update <code>prompts/! - Yesterday in AI.md</code> with the new endpoint so future runs can pick it up.</li>
-<li>Consider a feed-freshness health check step at the start of the workflow — if the newest item is older than 48 hours, surface a pipeline alert before attempting to generate newsletter content.</li>
+<li>Confirm whether the workflow runner's outbound network policy permits HTTPS requests to <code>rss.tedt.org</code>; if not, the feed-fetch step needs an alternative approach (e.g., pre-fetched artifacts committed to the repository, or a separate network-enabled job that passes data in).</li>
+<li>Once the access issue is resolved, investigate whether the primary feed's refresh pipeline (stale since Aug. 4) has also been restored.</li>
+<li>Update the secondary feed URL in <code>prompts/! - Yesterday in AI.md</code> if <code>aggregated_wes_ai_news.json</code> has permanently moved or been retired.</li>
+<li>Consider adding a network-connectivity probe at the start of the workflow so feed failures are categorized correctly (policy block vs. upstream outage vs. 404).</li>
 </ul>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>items_fetched_count:</strong> 50 (primary feed only)</li>
+<li><strong>items_fetched_count:</strong> 0 — outbound network access to <code>rss.tedt.org</code> denied by runtime policy</li>
 <li><strong>items_within_24_36_hours_count:</strong> 0</li>
 <li><strong>items_deduplicated_count:</strong> 0</li>
 <li><strong>items_published_count:</strong> 0</li>
-<li><strong>excluded_items_summary:</strong> All 50 primary feed items are dated Aug. 4, 2026 or earlier — well outside the 24–36 hour window for an Aug. 18 edition. The feed has not refreshed in approximately 15 days.</li>
-<li><strong>secondary_feed_status:</strong> <code>aggregated_wes_ai_news.json</code> returned HTTP 404 for the second consecutive day.</li>
-<li><strong>date_reference:</strong> Pacific Time at generation was 2026-08-19 06:04 PDT (UTC-7); "yesterday" = Aug. 18, 2026.</li>
-<li><strong>previous_edition:</strong> Aug. 17, 2026 edition present at <code>Daily-Report/AI/index.html</code>; no overlap check required since zero items qualified.</li>
-<li><strong>assumption:</strong> No items from other sources were introduced; newsletter reflects only what the configured feeds returned.</li>
+<li><strong>excluded_items_summary:</strong> No items could be retrieved; both feed endpoints returned "Permission denied" at the network layer, not an HTTP error from the server.</li>
+<li><strong>secondary_feed_status:</strong> <code>aggregated_wes_ai_news.json</code> — network access denied (was HTTP 404 in prior editions).</li>
+<li><strong>date_reference:</strong> Pacific Time at generation was 2026-08-19 06:04 PDT (UTC-7); publication window covers Aug. 18 06:04 PDT – Aug. 19 18:04 PDT.</li>
+<li><strong>previous_edition:</strong> Aug. 18, 2026 edition present at <code>Daily-Report/AI/index.html</code>; overlap check not applicable since no items were retrieved.</li>
+<li><strong>runtime_constraint:</strong> This is the third consecutive edition affected by feed-access issues. The root cause has shifted from upstream staleness (Aug. 17–18) to a local network policy block (Aug. 19).</li>
+<li><strong>assumption:</strong> No alternative sources were consulted; newsletter reflects only what the configured editorial prompt and workflow environment support.</li>
 </ul>
     </section>
     <footer>
