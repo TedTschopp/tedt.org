@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-19 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-21 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,38 +52,37 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-19</h1>
-      <p class="meta">Generated <time datetime="2026-08-20T13:07:36+00:00">2026-08-20T13:07:36Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-21</h1>
+      <p class="meta">Generated <time datetime="2026-08-21T13:06:22+00:00">2026-08-21T13:06:22Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>No qualifying feed items were available for Aug. 19, 2026. Outbound network access to the RSS feed aggregator is blocked in the current runtime environment, preventing retrieval of source articles. This is the third consecutive edition affected by feed-access issues.</p>
+      <p>Feed retrieval for Aug. 21, 2026 was blocked by the runtime network policy, preventing access to both configured RSS endpoints. No enterprise AI items could be verified for the 24–36 hour window ending this morning (Pacific Time).</p>
 <p><strong>Action items:</strong></p>
 <ul>
-<li><strong>Feed operators:</strong> Verify the <code>rss.tedt.org</code> aggregator pipeline is running and accessible from the workflow environment.</li>
-<li><strong>Workflow maintainers:</strong> Confirm that outbound HTTPS to <code>rss.tedt.org</code> is permitted; a firewall or policy change may be blocking feed retrieval.</li>
+<li><strong>Feed operators:</strong> Verify the <code>rss.tedt.org</code> aggregator pipeline is reachable from the workflow runner.</li>
+<li><strong>Workflow maintainers:</strong> Confirm outbound HTTPS to <code>rss.tedt.org</code> is permitted; a firewall or policy change has been blocking feed retrieval across multiple consecutive runs.</li>
 <li><strong>Readers:</strong> For current enterprise AI news, check direct sources such as Reuters Technology, <a href="https://technologyreview.com">MIT Technology Review</a>, and <a href="https://theverge.com">The Verge</a>.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Access Blocked — Aug. 19, 2026</h2>
-<p>The automated newsletter run on <strong>Aug. 19, 2026</strong> (approximately 6:04 a.m. PDT) was unable to retrieve any feed data. Both configured feed endpoints returned a "Permission denied" error, indicating that outbound network access to <code>rss.tedt.org</code> is blocked in the current GitHub Agentic Workflows runtime environment.</p>
+      <h2>Feed Access Blocked — Aug. 21, 2026</h2>
+<p>The automated newsletter run on <strong>Aug. 21, 2026</strong> (approximately 6:04 a.m. PDT) was unable to retrieve any feed data. Both configured feed endpoints returned a "Permission denied" error at the network layer, indicating that outbound HTTPS to <code>rss.tedt.org</code> remains blocked in the current GitHub Agentic Workflows runtime environment.</p>
 <h3>What Was Attempted</h3>
 <ul>
 <li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — network access denied by runtime policy.</li>
 <li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — network access denied by runtime policy.</li>
 </ul>
-<h3>Context from Prior Editions</h3>
-<p>The Aug. 18, 2026 edition noted that the primary feed had not refreshed since Aug. 4, and the secondary feed was returning HTTP 404. Today's permission denial is a separate, lower-level issue: the workflow environment itself cannot make outbound network requests to these endpoints.</p>
-<h3>What This Means</h3>
-<p>Enterprise AI activity has continued at pace. This newsletter cannot responsibly summarize or characterize events without verified source data — doing so would risk introducing inaccuracies.</p>
+<h3>Ongoing Pattern</h3>
+<p>This is now the <strong>fourth or more consecutive edition</strong> affected by network-layer feed access failures. The root cause is consistent: the workflow runner cannot make outbound requests to these endpoints. Previous editions (Aug. 18 and Aug. 19) documented the same block.</p>
+<p>This newsletter cannot responsibly summarize or characterize enterprise AI events without verified source data. Doing so would risk introducing inaccuracies — and accuracy is the only thing a newsletter trades in.</p>
 <h3>Looking Ahead</h3>
 <ul>
-<li>Confirm whether the workflow runner's outbound network policy permits HTTPS requests to <code>rss.tedt.org</code>; if not, the feed-fetch step needs an alternative approach (e.g., pre-fetched artifacts committed to the repository, or a separate network-enabled job that passes data in).</li>
-<li>Once the access issue is resolved, investigate whether the primary feed's refresh pipeline (stale since Aug. 4) has also been restored.</li>
-<li>Update the secondary feed URL in <code>prompts/! - Yesterday in AI.md</code> if <code>aggregated_wes_ai_news.json</code> has permanently moved or been retired.</li>
-<li>Consider adding a network-connectivity probe at the start of the workflow so feed failures are categorized correctly (policy block vs. upstream outage vs. 404).</li>
+<li>Confirm whether the GitHub Actions runner's outbound network policy permits HTTPS to <code>rss.tedt.org</code>; if not, consider pre-fetching feed data in a separate job with appropriate network access and passing it as an artifact.</li>
+<li>Investigate whether the primary feed's refresh pipeline has been restored since the Aug. 4 staleness issue noted in prior editions.</li>
+<li>Add a network-connectivity probe early in the workflow to categorize failures clearly (policy block vs. upstream outage vs. 404).</li>
+<li>Consider a fallback feed source or a manual override path so the newsletter can publish content even when the primary aggregator is unreachable.</li>
 </ul>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
@@ -93,12 +92,12 @@
 <li><strong>items_within_24_36_hours_count:</strong> 0</li>
 <li><strong>items_deduplicated_count:</strong> 0</li>
 <li><strong>items_published_count:</strong> 0</li>
-<li><strong>excluded_items_summary:</strong> No items could be retrieved; both feed endpoints returned "Permission denied" at the network layer, not an HTTP error from the server.</li>
-<li><strong>secondary_feed_status:</strong> <code>aggregated_wes_ai_news.json</code> — network access denied (was HTTP 404 in prior editions).</li>
-<li><strong>date_reference:</strong> Pacific Time at generation was 2026-08-19 06:04 PDT (UTC-7); publication window covers Aug. 18 06:04 PDT – Aug. 19 18:04 PDT.</li>
-<li><strong>previous_edition:</strong> Aug. 18, 2026 edition present at <code>Daily-Report/AI/index.html</code>; overlap check not applicable since no items were retrieved.</li>
-<li><strong>runtime_constraint:</strong> This is the third consecutive edition affected by feed-access issues. The root cause has shifted from upstream staleness (Aug. 17–18) to a local network policy block (Aug. 19).</li>
-<li><strong>assumption:</strong> No alternative sources were consulted; newsletter reflects only what the configured editorial prompt and workflow environment support.</li>
+<li><strong>excluded_items_summary:</strong> No items retrieved; both feed endpoints returned "Permission denied" at the network layer.</li>
+<li><strong>primary_feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — network access denied</li>
+<li><strong>secondary_feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — network access denied</li>
+<li><strong>date_reference:</strong> Pacific Time at generation was 2026-08-21 06:04 PDT (UTC-7); publication window covers Aug. 20 06:04 PDT – Aug. 21 18:04 PDT.</li>
+<li><strong>previous_edition:</strong> Aug. 19, 2026 edition present at <code>Daily-Report/AI/index.html</code>; overlap check not applicable since no items were retrieved.</li>
+<li><strong>consecutive_failures:</strong> Fourth or more consecutive edition blocked by the same runtime network policy. Root cause has not changed since first documented on Aug. 19, 2026.</li>
 </ul>
     </section>
     <footer>
