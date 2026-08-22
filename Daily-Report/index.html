@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-08-17 | TedT.org</title>
+  <title>Daily Report - 2026-08-22 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,106 +52,102 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-08-17</h1>
-      <p class="meta">Generated <time datetime="2026-08-17T04:45:22+00:00">2026-08-17T04:45:22Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-22</h1>
+      <p class="meta">Generated <time datetime="2026-08-22T04:44:07+00:00">2026-08-22T04:44:07Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p><strong>Site is healthy and actively developing.</strong> The most recent push (2026-08-17 00:17 UTC) triggered a successful CodeQL scan and Mastodon feed sync. A new blog post — "The Cost of a Finished Job" — was published and iteratively polished. The Traveller RPG gear catalog saw three PRs merged in the past 48 hours (PRs #221, #222, #223) with a fourth (PR #224) open as a draft. One open Dependabot PR addresses a security fix in <code>linkify-it</code> and <code>markdown-it</code>. No workflow failures detected in recent runs. One draft PR and a backlog of discovery-enhancement issues represent the main pending work.</p>
+      <p>Automated pipelines are healthy. The most significant recent human activity was Ted's Substack publishing infrastructure additions on 2026-08-18 and the "The Cost of a Finished Job" article series on 2026-08-16. One draft PR (#224) for Traveller gear sorting is open and awaiting review. No build failures or blockers detected.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
       <h2>Bottom Line</h2>
-<p>Site is healthy. Mastodon sync, CodeQL, and the feed pipeline all passed on the latest push. Active development is focused on the Traveller RPG gear catalog tool. A new blog article shipped and was polished over multiple commits. One dependency security PR is open and should be reviewed.</p>
+<p>Automated workflows are running normally. The Mastodon feed sync completed successfully overnight (2026-08-22 00:15 UTC). The daily report pipeline (this run) is in-progress. Ted's last manual commits added Substack publishing support and new article content. One open draft PR needs attention.</p>
 <hr>
 <h2>Recent Repository Activity</h2>
-<h3>New Content — 2026-08-16</h3>
+<h3>Human Commits (last 7 days)</h3>
 <ul>
-<li><strong>"The Cost of a Finished Job"</strong> — blog article added and refined across four commits:</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/928dccdcd97626d1e4dd16030acfff388ef20492">928dccd</a> — initial post with images (2026-08-16 18:25 UTC)</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/494bd268eeadb57b09ad7273a942616fb7d26ba7">494bd26</a> — table styling added</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/e913f2ef40eb5e7ef1ce4a7ac726cac2ad4ece02">e913f2e</a> — optional supporting documents table added</li>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/84bd26735bebdcda5d2ce3aa8bf232903a705ad3">84bd267</a> — table class syntax fix</li>
+<li><strong>2026-08-18</strong> — <code>add a bunch of changes to support substack publishing, including a new frontmatter key, a new make target, and a new test for the frontmatter workbench</code></li>
+<li>Commit: <a href="https://github.com/TedTschopp/tedt.org/commit/f51f065049a380c927d41f00a97780798ab1386b">f51f065</a> by TedTschopp</li>
+<li>Followed by a merge commit from remote: <a href="https://github.com/TedTschopp/tedt.org/commit/b0380515aab9970ec27e155e6cec6937837a1523">b038051</a></li>
 </ul>
-<h3>Mastodon Sync — 2026-08-17</h3>
 <ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/fe92db24158767de86af57fb2480dd834df095a6">fe92db2</a> — <code>chore: update Mastodon cache/front matter</code> committed by <code>github-actions[bot]</code> at 00:17 UTC</li>
+<li><strong>2026-08-17</strong> — <code>chore: update Mastodon cache/front matter</code></li>
+<li>Commit: <a href="https://github.com/TedTschopp/tedt.org/commit/fe92db24158767de86af57fb2480dd834df095a6">fe92db2</a></li>
 </ul>
-<h3>Enterprise AI Refresh — 2026-08-16</h3>
 <ul>
-<li><a href="https://github.com/TedTschopp/tedt.org/commit/ae9e7590395716fe68353e45bbb37db8b9d474e2">ae9e759</a> — <code>chore: refresh yesterday in enterprise ai</code> at 13:03 UTC</li>
+<li><strong>2026-08-16</strong> — Three commits for "The Cost of a Finished Job" article:</li>
+<li><code>content(post): add "The Cost of a Finished Job" article with images</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/928dccdcd97626d1e4dd16030acfff388ef20492">928dccd</a></li>
+<li><code>content(post): add table styling to "The Cost of a Finished Job" article</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/494bd268eeadb57b09ad7273a942616fb7d26ba7">494bd26</a></li>
+<li><code>content(table): add optional supporting documents table</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/e913f2ef40eb5e7ef1ce4a7ac726cac2ad4ece02">e913f2e</a></li>
+<li><code>style(markdown): fix table class syntax in "The Cost of a Finished Job" article</code> — <a href="https://github.com/TedTschopp/tedt.org/commit/84bd26735bebdcda5d2ce3aa8bf232903a705ad3">84bd267</a></li>
 </ul>
-<h3>Traveller Gear Catalog — Merged PRs (2026-08-15)</h3>
+<h3>Automated Commits (last 7 days)</h3>
+<p>Daily cadence working correctly:</p>
 <ul>
-<li><strong>PR #221</strong> — <a href="https://github.com/TedTschopp/tedt.org/pull/221">Refine Traveller gear catalog filters</a> — merged 15:50 UTC</li>
-<li><strong>PR #222</strong> — <a href="https://github.com/TedTschopp/tedt.org/pull/222">Add source-backed Traveller Law Level guidance</a> — merged 16:56 UTC</li>
-<li><strong>PR #223</strong> — <a href="https://github.com/TedTschopp/tedt.org/pull/223">Traveller gear: explain Tech, Law, and Legal Category filters</a> — merged 19:48 UTC</li>
-</ul>
-<hr>
-<h2>Open Pull Requests</h2>
-<h3>PR #224 — Draft</h3>
-<ul>
-<li><strong>Title:</strong> Traveller gear: sort by Tech Level and filter by skill</li>
-<li><strong>Status:</strong> Draft, open since 2026-08-15 20:29 UTC</li>
-<li><strong>Branch:</strong> <code>codex/traveller-tech-skill-sort</code></li>
-<li><strong>Summary:</strong> Adds Tech Level sorting (name / low-to-high / high-to-low), skill-family filtering inside Add-from-Catalog panels, catalog 0.3.6 / player 0.1.5 / web projection 1.5.0. Validator reports 0 schema errors, 15/15 Playwright tests passed.</li>
-<li><strong>Link:</strong> <a href="https://github.com/TedTschopp/tedt.org/pull/224">PR #224</a></li>
-</ul>
-<h3>Dependabot Security PR (open)</h3>
-<ul>
-<li><strong>Summary:</strong> Bumps <code>linkify-it</code> from 5.0.0 → 5.0.2 and <code>markdown-it</code>. Fix addresses a DoS vulnerability in `(redacted) link handling and fuzzy link search.</li>
-<li><strong>Recommendation:</strong> Review and merge promptly — this is a security fix, not just a maintenance bump.</li>
+<li><code>chore: refresh yesterday in enterprise ai</code> — runs daily ~13:06 UTC</li>
+<li><code>chore: refresh daily report</code> — runs daily ~04:45 UTC</li>
 </ul>
 <hr>
 <h2>Workflow Health</h2>
-<h3>Completed Workflows (most recent)</h3>
+<h3>Completed Runs (recent)</h3>
 <ul>
-<li><strong>Push on main (CodeQL)</strong> — <code>success</code> — run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31981612718">31981612718</a> — 2026-08-17 00:18 UTC</li>
-<li><strong>Feed to Mastodon</strong> — <code>success</code> — run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31981496443">31981496443</a> — 2026-08-17 00:15 UTC</li>
+<li><strong>Feed to Mastodon</strong> — ✅ success — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/32539753253">Run 32539753253</a> — 2026-08-22 00:15 UTC</li>
+<li><strong>Daily Report</strong> — 🔄 in_progress — <a href="https://github.com/TedTschopp/tedt.org/actions/runs/32552252954">Run 32552252954</a> — this run</li>
 </ul>
-<h3>In Progress</h3>
-<ul>
-<li><strong>Daily Report</strong> (this run) — run <a href="https://github.com/TedTschopp/tedt.org/actions/runs/31995285851">31995285851</a> — in progress at report time</li>
-</ul>
-<p>No workflow failures detected in recent completed runs reviewed.</p>
+<p>No failed workflows detected in the sampled runs. Automated enterprise AI refresh and daily report chores have been committing on schedule every day this week.</p>
 <hr>
-<h2>Open Issues — Selected Highlights</h2>
-<p>The backlog contains multiple P2-labeled discovery and UX enhancement issues from the May 2026 audit. Key open items:</p>
+<h2>Open Pull Requests</h2>
+<h3>PR #224 — Traveller gear: sort by Tech Level and filter by skill (DRAFT)</h3>
 <ul>
-<li><strong>#186</strong> — Enhance category landing pages: related categories, tag clouds, depth indicators _(P2, UX, content-discovery)_</li>
-<li><strong>Content silo / related-post issue</strong> — Zero posts use a manual <code>related:</code> field; no automatic related-post sidebar exists; 69% of content is specialized Gamma World content largely hidden from discovery paths.</li>
+<li><strong>Branch:</strong> <code>codex/traveller-tech-skill-sort</code></li>
+<li><strong>State:</strong> Open, draft — not yet ready for merge</li>
+<li><strong>Created:</strong> 2026-08-15</li>
+<li><strong>Summary:</strong> Adds Tech Level sorting (name, low-to-high, high-to-low), skill filtering in Add-from-Catalog panels, support for skill families and conditional alternatives. Catalog 0.3.6 / player 0.1.5 / web projection 1.5.0.</li>
+<li><strong>Validation reported in PR body:</strong> 0 schema errors, 15/15 Playwright tests passed, Jekyll build + HTMLProofer passed.</li>
+<li><strong>Link:</strong> <a href="https://github.com/TedTschopp/tedt.org/pull/224">PR #224</a></li>
 </ul>
-<p>These are backlog items, not blockers.</p>
+<hr>
+<h2>Open Issues (Sample)</h2>
+<ul>
+<li><strong>#186</strong> — <code>[P2] Enhance category landing pages: related categories, tag clouds, depth indicators</code> — labels: content-discovery, UX, P2</li>
+<li><strong>#185</strong> — <code>[P2] Build cross-collection content bridges and related-posts infrastructure</code> — labels: content-discovery, UX, P2</li>
+</ul>
+<p>Both issues are part of the content discovery audit from May 2026. No blockers; awaiting prioritization.</p>
+<hr>
+<h2>Content &amp; Publishing Pipeline</h2>
+<ul>
+<li><strong>New article published:</strong> "The Cost of a Finished Job" — four iterative commits over 2026-08-16 to style tables and add supporting documents. Content is live.</li>
+<li><strong>Substack publishing infrastructure</strong> added 2026-08-18: new front matter key (<code>substack</code>), a new <code>make</code> target, and a front matter workbench test. This aligns with the <code>substack-publishing.md</code> contract documented in the site's instructions. Verify the <code>substack-state</code> ledger is present and that no credentials were accidentally committed.</li>
+<li><strong>Mastodon cache</strong> was updated 2026-08-17 via the automated workflow; front matter sync appears current.</li>
+</ul>
 <hr>
 <h2>Risks and Observations</h2>
 <ul>
-<li><strong>Dependabot security PR</strong> is open. The <code>linkify-it</code> DoS fix should be merged before the next site build cycle.</li>
-<li><strong>PR #224 is draft</strong> — the Traveller skill-filter work appears validation-complete but hasn't been promoted to review. If the feature is ready, consider removing draft status.</li>
-<li><strong>Category landing pages</strong> (issue #186) are still minimal redirect stubs with no tag clouds, related categories, or depth indicators. This is a known P2 gap.</li>
-<li><strong>No failures</strong> to report in CI/CD pipelines.</li>
+<li><strong>Substack key introduction:</strong> The new <code>substack</code> front matter key requires an immutable <code>id</code> per post once opt-in is set. Confirm no posts are opted in without a stable <code>id</code>. [ASSUMPTION: the new make target and test cover this guard, but has not been verified in this report.]</li>
+<li><strong>Draft PR #224:</strong> Has been open as a draft since 2026-08-15 with no updates. If it is ready, promote it out of draft and request review. If blocked, document why in the PR body.</li>
+<li><strong>Category landing pages and cross-collection bridges</strong> (#185, #186) remain unstarted. These are P2 items and not urgent, but they represent meaningful discovery debt.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Review and merge the Dependabot <code>linkify-it</code> / <code>markdown-it</code> security PR</strong> — DoS fix, low merge risk.</li>
-<li><strong>Promote PR #224 from draft to ready for review</strong> if Tech Level sorting and skill filtering are validated.</li>
-<li><strong>Address issue #186</strong> — category page enhancement is a P2 and improves reader discovery across 41 category pages.</li>
-<li><strong>Monitor Mastodon sync</strong> — the daily <code>chore: update Mastodon cache/front matter</code> commit is healthy; no anomalies detected.</li>
+<li><strong>Review and merge (or close) PR #224</strong> — It has passed all validators; the draft designation may just need to be removed.</li>
+<li><strong>Verify Substack front matter correctness</strong> — Run <code>make</code> target added 2026-08-18 locally to confirm the workbench test passes and no live posts have <code>substack</code> enabled without a stable <code>id</code>.</li>
+<li><strong>Prioritize #185 or #186</strong> if content discovery is a current focus; both have clear acceptance criteria.</li>
+<li><strong>No immediate action needed</strong> on automation — all scheduled workflows are healthy.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits sourced from <code>github-list_commits</code> API, most recent 20 commits as of 2026-08-17T04:41 UTC.</li>
-<li>Workflow run data from <code>github-actions_list</code> (list_workflow_runs), most recent 10 runs. Daily Report run itself (31995285851) was in-progress at report generation time.</li>
-<li>Open issues from <code>github-list_issues</code> (OPEN state), first page.</li>
-<li>Open PRs from <code>github-list_pull_requests</code> (open state), first page.</li>
-<li>Issue priority labels (P2) and audit labels taken from issue metadata as returned by the API.</li>
-<li>Dependabot PR details extracted from PR body text in the API response; PR number not confirmed from truncated output — listed as "open Dependabot security PR" without a specific number.</li>
-<li>[ASSUMPTION] No workflow failures are assumed from reviewing only the first completed-run page; earlier runs were not inspected.</li>
-<li>[ASSUMPTION] The Mastodon sync <code>success</code> status on 2026-08-17 00:15 UTC is taken as the most recent sync result; downstream Mastodon API behavior not verified.</li>
-<li>HTML Proofer results and Jekyll build logs not directly inspected in this report; health inferred from lack of failure conclusions in recent workflow runs.</li>
-<li>External link check status unknown (not retrieved in this session).</li>
+<li>Commits: <a href="https://github.com/TedTschopp/tedt.org/commits/main">TedTschopp/tedt.org commits, main branch</a> — last 20 commits retrieved.</li>
+<li>Workflow runs: <a href="https://github.com/TedTschopp/tedt.org/actions">GitHub Actions runs</a> — most recent 10 runs sampled; full conclusion data only available for completed runs.</li>
+<li>Pull requests: <a href="https://github.com/TedTschopp/tedt.org/pulls">Open PRs</a> — PR list retrieved; only PR #224 appeared in open state.</li>
+<li>Issues: <a href="https://github.com/TedTschopp/tedt.org/issues">Open issues</a> — first page retrieved; full issue count not enumerated.</li>
+<li>[ASSUMPTION] No build failure data available from within this run — only workflow status (in_progress vs completed/success) was checked.</li>
+<li>[ASSUMPTION] Site is live and deployed correctly based on clean recent commit history and passing Mastodon workflow; no direct HTTP check performed.</li>
+<li>Workflow run for this report: <a href="https://github.com/TedTschopp/tedt.org/actions/runs/32552252954">Run 32552252954</a></li>
+<li>Report generated: 2026-08-22T04:40 UTC</li>
 </ul>
     </section>
     <footer>
