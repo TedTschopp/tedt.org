@@ -6734,6 +6734,39 @@
       ],
       "width": 1672
     },
+    "/img/2026-08/Dev-Test-Prod-AI.webp": {
+      "height": 941,
+      "source_sha256": "32151b94da09f8f40944664957db457846f1af687dd931e47b2daa1e31c304c9",
+      "src": "/img/2026-08/Dev-Test-Prod-AI.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-08/Dev-Test-Prod-AI--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-08/Dev-Test-Prod-AI--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-08/Dev-Test-Prod-AI--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-08/Dev-Test-Prod-AI--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-08/Dev-Test-Prod-AI.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/2026-08/Enterprise-AI-Maturity.webp": {
       "height": 941,
       "source_sha256": "b9611f6802e175929a70a74af8c6dba4104bb505b7e302190f6d531de6e80b20",
@@ -6799,6 +6832,39 @@
         }
       ],
       "width": 1672
+    },
+    "/img/2026-08/the-cost-of-a-finished-job-hero-source.webp": {
+      "height": 909,
+      "source_sha256": "c78842109e27f154d967a03bf19cdc1ef940491b0ca8ab27002aca5553cdc381",
+      "src": "/img/2026-08/the-cost-of-a-finished-job-hero-source.webp",
+      "variants": [
+        {
+          "height": 253,
+          "path": "/img/generated/responsive/2026-08/the-cost-of-a-finished-job-hero-source--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 404,
+          "path": "/img/generated/responsive/2026-08/the-cost-of-a-finished-job-hero-source--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 631,
+          "path": "/img/generated/responsive/2026-08/the-cost-of-a-finished-job-hero-source--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 765,
+          "path": "/img/generated/responsive/2026-08/the-cost-of-a-finished-job-hero-source--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 909,
+          "path": "/img/2026-08/the-cost-of-a-finished-job-hero-source.webp",
+          "width": 1731
+        }
+      ],
+      "width": 1731
     },
     "/img/404.webp": {
       "height": 1216,
