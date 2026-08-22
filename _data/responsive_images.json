@@ -6800,6 +6800,75 @@
       ],
       "width": 1672
     },
+    "/img/2026-08/markdown-frontmatter-workbench-document.webp": {
+      "height": 1641,
+      "source_sha256": "3151fe3ff322f9894e5ecd32893d834b6acbf0ea586b6c4b20c7cd685b83074c",
+      "src": "/img/2026-08/markdown-frontmatter-workbench-document.webp",
+      "variants": [
+        {
+          "height": 553,
+          "path": "/img/generated/responsive/2026-08/markdown-frontmatter-workbench-document--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 885,
+          "path": "/img/generated/responsive/2026-08/markdown-frontmatter-workbench-document--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 1382,
+          "path": "/img/generated/responsive/2026-08/markdown-frontmatter-workbench-document--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 1641,
+          "path": "/img/2026-08/markdown-frontmatter-workbench-document.webp",
+          "width": 1425
+        }
+      ],
+      "width": 1425
+    },
+    "/img/2026-08/markdown-frontmatter-workbench-mobile.webp": {
+      "height": 2335,
+      "source_sha256": "115b8d983fcd517de2869ca20325f5b1f91cc955a255db1e033339081892b990",
+      "src": "/img/2026-08/markdown-frontmatter-workbench-mobile.webp",
+      "variants": [
+        {
+          "height": 2335,
+          "path": "/img/2026-08/markdown-frontmatter-workbench-mobile.webp",
+          "width": 375
+        }
+      ],
+      "width": 375
+    },
+    "/img/2026-08/markdown-frontmatter-workbench-rich-import.webp": {
+      "height": 1234,
+      "source_sha256": "6de3f81fb595b48dd82a7b21dc178aa6cd82e43eb76cbc892cb1fcea5b490c16",
+      "src": "/img/2026-08/markdown-frontmatter-workbench-rich-import.webp",
+      "variants": [
+        {
+          "height": 416,
+          "path": "/img/generated/responsive/2026-08/markdown-frontmatter-workbench-rich-import--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 666,
+          "path": "/img/generated/responsive/2026-08/markdown-frontmatter-workbench-rich-import--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 1040,
+          "path": "/img/generated/responsive/2026-08/markdown-frontmatter-workbench-rich-import--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 1234,
+          "path": "/img/2026-08/markdown-frontmatter-workbench-rich-import.webp",
+          "width": 1425
+        }
+      ],
+      "width": 1425
+    },
     "/img/2026-08/sandbox-boundary-hero-04-cross-run-shared-state.webp": {
       "height": 941,
       "source_sha256": "17f16780d2acfe17577cc7e902c1afbc4e83abcaea396f241e44cefa07990729",
