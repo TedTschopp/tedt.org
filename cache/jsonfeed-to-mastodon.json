@@ -5285,5 +5285,36 @@
       "https://tschopp.net/users/Ted/statuses/117107973878117892"
     ],
     "lastTootTimestamp": 1786925871026
+  },
+  "https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/": {
+    "id": "/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/",
+    "title": "Dev, Test, and Prod Still Matter: What Gets Deployed Has Changed",
+    "summary": "Dev, Test, and Prod still matter for AI agents, but promotion gates must now govern the artifact, authority, state, and evidence together.",
+    "content_text": "Dev, Test, and Prod still matter for AI agents, but promotion gates must now govern the artifact, authority, state, and evidence together. https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/",
+    "url": "https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/",
+    "image": "https://tedt.org/img/2026-08/Dev-Test-Prod-AI.webp",
+    "tags": [
+      "AI agents",
+      "agentic AI",
+      "software delivery",
+      "DevSecOps",
+      "environment promotion",
+      "AI governance",
+      "AI security",
+      "least privilege",
+      "state management",
+      "enterprise architecture"
+    ],
+    "date_published": "2026-08-22T08:00:00-07:00",
+    "date_modified": "2026-08-22T08:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117140491577788003"
+    ],
+    "lastTootTimestamp": 1787422051799
   }
 }
