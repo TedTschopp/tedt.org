@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-22 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-23 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,39 +52,39 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-22</h1>
-      <p class="meta">Generated <time datetime="2026-08-22T13:02:13+00:00">2026-08-22T13:02:13Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-23</h1>
+      <p class="meta">Generated <time datetime="2026-08-23T13:03:15+00:00">2026-08-23T13:03:15Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Feed retrieval for Aug. 22, 2026 was again blocked by the runtime network policy, preventing access to both configured RSS endpoints at <code>rss.tedt.org</code>. No enterprise AI items could be verified for the 24–36 hour window ending this morning (Pacific Time). This is the fifth or more consecutive edition affected.</p>
+      <p>Feed retrieval for Aug. 23, 2026 was again blocked by the runtime network policy, preventing access to both configured RSS endpoints at <code>rss.tedt.org</code>. No enterprise AI items could be verified for the 24–36 hour window ending this morning (Pacific Time). This marks at least the sixth consecutive edition affected by the same infrastructure constraint.</p>
 <p><strong>Action items:</strong></p>
 <ul>
-<li><strong>Feed operators:</strong> Confirm the <code>rss.tedt.org</code> aggregator pipeline is healthy and that its endpoints are reachable from external networks.</li>
-<li><strong>Workflow maintainers:</strong> Outbound HTTPS from the GitHub Actions runner to <code>rss.tedt.org</code> remains blocked; pre-fetching feed content in a separate network-privileged job and passing it as an artifact is the recommended path forward.</li>
-<li><strong>Readers:</strong> For current enterprise AI news today, consult Reuters Technology, <a href="https://technologyreview.com">MIT Technology Review</a>, and <a href="https://theverge.com">The Verge</a>.</li>
+<li><strong>Feed operators:</strong> Confirm the <code>rss.tedt.org</code> aggregator pipeline is healthy and reachable from external networks.</li>
+<li><strong>Workflow maintainers:</strong> Pre-fetch feed content in a separate network-privileged job and pass it as a workflow artifact to the newsletter-generation step.</li>
+<li><strong>Readers:</strong> For current enterprise AI news today, consult Reuters Technology, <a href="https://technologyreview.com">MIT Technology Review</a>, <a href="https://venturebeat.com/ai/">VentureBeat AI</a>, and <a href="https://theverge.com/ai-artificial-intelligence">The Verge — AI</a>.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Access Blocked — Aug. 22, 2026</h2>
-<p>The automated newsletter run on <strong>Aug. 22, 2026</strong> (approximately 5:59 a.m. PDT) was unable to retrieve any feed data. Both configured feed endpoints returned a "Permission denied" error at the network layer — the same block that has prevented publication across multiple consecutive days.</p>
+      <h2>Feed Access Blocked — Aug. 23, 2026</h2>
+<p>The automated newsletter run on <strong>Aug. 23, 2026</strong> (approximately 6 a.m. PDT) was unable to retrieve any feed data. Both configured feed endpoints returned a "Permission denied" error at the network layer — the same block that has prevented publication across multiple consecutive days.</p>
 <h3>What Was Attempted</h3>
 <ul>
 <li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — network access denied by runtime policy.</li>
 <li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — network access denied by runtime policy.</li>
 </ul>
 <h3>Ongoing Pattern</h3>
-<p>This is now the <strong>fifth or more consecutive edition</strong> affected by network-layer feed access failures. Previous editions (Aug. 18 through Aug. 21) documented the same block. The root cause is consistent: outbound HTTPS from the workflow runner to <code>rss.tedt.org</code> is not permitted by the current runtime sandbox policy.</p>
-<p>This newsletter cannot responsibly summarize enterprise AI events without verified source data. Accuracy is the only currency a newsletter has.</p>
-<h3>Looking Ahead</h3>
+<p>This is now at least the <strong>sixth consecutive edition</strong> affected by network-layer feed access failures. Previous editions (Aug. 18 through Aug. 22) documented the same block. The root cause is consistent: outbound HTTPS from the workflow runner to <code>rss.tedt.org</code> is not permitted by the current runtime sandbox policy.</p>
+<p>This newsletter cannot responsibly summarize enterprise AI events without verified source data. Accuracy matters more than volume.</p>
+<h3>Path Forward</h3>
 <ul>
 <li><strong>Architecture fix:</strong> Pre-fetch feed JSON in a separate GitHub Actions job with appropriate outbound network access, then pass the content as a workflow artifact to the newsletter-generation step.</li>
-<li><strong>Fallback source:</strong> If <code>rss.tedt.org</code> remains unreachable, configure a secondary feed source that is accessible from the runner, or cache the last successful fetch for freshness comparison.</li>
+<li><strong>Fallback source:</strong> If <code>rss.tedt.org</code> remains unreachable, configure a secondary feed source accessible from the runner, or cache the last successful fetch for freshness comparison.</li>
 <li><strong>Monitoring:</strong> Add a dedicated job-status notification when both feeds fail so the issue surfaces immediately rather than producing a silent stub edition.</li>
 </ul>
 <h3>In the Meantime</h3>
-<p>The enterprise AI landscape continues to move quickly. Until feed access is restored, readers are encouraged to monitor:</p>
+<p>Until feed access is restored, readers are encouraged to monitor:</p>
 <ul>
 <li>Reuters Technology</li>
 <li><a href="https://technologyreview.com">MIT Technology Review</a></li>
@@ -93,21 +93,18 @@
 <li><a href="https://arstechnica.com">Ars Technica</a></li>
 </ul>
 <hr>
-<p>We remain committed to delivering accurate, sourced, and actionable enterprise AI coverage the moment the feed pipeline is restored. Every good system has a rough patch — and every rough patch teaches you where to invest next. Thank you for your patience.</p>
+<p>Every good pipeline has a rough patch — and every rough patch reveals exactly where to invest next. We remain committed to delivering accurate, sourced, and actionable enterprise AI coverage the moment the feed pipeline is restored. Thank you for your continued patience.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>items_fetched_count:</strong> 0 (both feeds returned network-level "Permission denied")</li>
+<li><strong>items_fetched_count:</strong> 0 (both feeds blocked by runtime network policy)</li>
 <li><strong>items_within_24_36_hours_count:</strong> 0</li>
 <li><strong>items_deduplicated_count:</strong> 0</li>
 <li><strong>items_published_count:</strong> 0</li>
-<li><strong>excluded_items_summary:</strong> All items excluded; no feed data could be retrieved.</li>
-<li><strong>feeds_attempted:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code>, <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
-<li><strong>error:</strong> "Permission denied and could not request permission from user" on both endpoints.</li>
-<li><strong>consecutive_failures:</strong> Fifth or more consecutive edition affected (documented in Aug. 18–21 editions).</li>
-<li><strong>existing_newsletter_checked:</strong> Yes — Aug. 21, 2026 edition reviewed to avoid repeating covered items; no items to de-duplicate since no new data was retrieved.</li>
-<li><strong>Pacific Time at generation:</strong> 2026-08-22 05:59 PDT</li>
+<li><strong>excluded_items_summary:</strong> No items could be retrieved. Both <code>https://rss.tedt.org/ai_rss_feed.json</code> and <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> returned "Permission denied" at the network layer.</li>
+<li><strong>consecutive_failures:</strong> At least 6 editions (Aug. 18 – Aug. 23, 2026) affected by the same block.</li>
+<li><strong>generation_time_pt:</strong> 2026-08-23 06:00 PDT</li>
 </ul>
     </section>
     <footer>
