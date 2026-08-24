@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-23 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-24 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,59 +52,99 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-23</h1>
-      <p class="meta">Generated <time datetime="2026-08-23T13:03:15+00:00">2026-08-23T13:03:15Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-24</h1>
+      <p class="meta">Generated <time datetime="2026-08-24T13:10:15+00:00">2026-08-24T13:10:15Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Feed retrieval for Aug. 23, 2026 was again blocked by the runtime network policy, preventing access to both configured RSS endpoints at <code>rss.tedt.org</code>. No enterprise AI items could be verified for the 24–36 hour window ending this morning (Pacific Time). This marks at least the sixth consecutive edition affected by the same infrastructure constraint.</p>
+      <p>After six consecutive editions disrupted by network-layer feed outages, the pipeline is running again — and the Aug. 21 feed has six enterprise-relevant stories worth your attention. Vertical AI models are quietly outcompeting general-purpose frontiers in specific domains, production-grade agent deployments demand rigorous evaluation science, and security teams now have AI-powered code-review tooling that can move faster than human red teams.</p>
 <p><strong>Action items:</strong></p>
 <ul>
-<li><strong>Feed operators:</strong> Confirm the <code>rss.tedt.org</code> aggregator pipeline is healthy and reachable from external networks.</li>
-<li><strong>Workflow maintainers:</strong> Pre-fetch feed content in a separate network-privileged job and pass it as a workflow artifact to the newsletter-generation step.</li>
-<li><strong>Readers:</strong> For current enterprise AI news today, consult Reuters Technology, <a href="https://technologyreview.com">MIT Technology Review</a>, <a href="https://venturebeat.com/ai/">VentureBeat AI</a>, and <a href="https://theverge.com/ai-artificial-intelligence">The Verge — AI</a>.</li>
+<li><strong>AI strategy leads:</strong> Assess whether vertical, fine-tuned models could outperform general-purpose LLMs on your highest-value workflows.</li>
+<li><strong>CX &amp; operations leaders:</strong> Adopt evaluation-driven frameworks before scaling support agents beyond pilot.</li>
+<li><strong>Security teams:</strong> Review Google Mandiant's agentic code-review approach for accelerating vulnerability discovery.</li>
+<li><strong>Platform architects:</strong> Examine Bedrock AgentCore's multi-tenant isolation pattern for enterprise agent infrastructure.</li>
+<li><strong>C-suite:</strong> Frame AI governance — chain of custody, data provenance, accountability — as a business continuity issue.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Access Blocked — Aug. 23, 2026</h2>
-<p>The automated newsletter run on <strong>Aug. 23, 2026</strong> (approximately 6 a.m. PDT) was unable to retrieve any feed data. Both configured feed endpoints returned a "Permission denied" error at the network layer — the same block that has prevented publication across multiple consecutive days.</p>
-<h3>What Was Attempted</h3>
+      <h2>A Note on Continuity</h2>
+<p>Feed access was restored for the Aug. 24 run. Editions from Aug. 18 through Aug. 23 were all blocked by a runtime network policy preventing access to <strong>rss.tedt.org</strong>. The Aug. 21 items below are appearing here for the first time.</p>
+<hr>
+<h2>Big Moves</h2>
+<h3>Vertical AI Is Quietly Winning at the Frontier</h3>
+<p>Harvey has published details on how it uses post-training, fine-tuning, synthetic environments, and open-weight models to build domain-specific AI that competes with — and in some legal-agent and M&amp;A tasks, outperforms — general-purpose frontier models.</p>
+<p><strong>Why it matters:</strong> The next competitive layer in enterprise AI isn't a bigger foundation model; it's a better-trained vertical one. For legal, finance, and compliance teams, specialized models built on open-weight foundations may deliver stronger performance at lower cost. The question every enterprise AI team should ask: which workflows are high-stakes enough to warrant their own fine-tuning program?</p>
+<p><strong>What should I do as a leader?</strong> Map your highest-value workflows to the fine-tuning investment that makes vertical models viable. Start with one domain and define what "outperforms" looks like before you build.</p>
+<p>Source: <a href="https://x.com/gabepereyra/status/2090453918547685537">X / Harvey via Gabe Pereyra</a>, 2026-08-21</p>
+<hr>
+<h3>Customer Support Agents at 100 Million Users: What Actually Works</h3>
+<p>A case study shows how customer-support AI agents operate at massive scale by combining LLM reasoning, tool use, information retrieval, and automated evaluation — including simulated customer conversations before deployment.</p>
+<p><strong>Why it matters:</strong> Rigorous evaluation science drove major gains in satisfaction and self-service resolution. Inter-rater reliability testing and production measurement mattered as much as model choice. For enterprises scaling support agents, this is a practical blueprint: define your evaluation methodology before you scale, not after.</p>
+<p><strong>What should I do as a leader?</strong> Before expanding agent coverage to new segments, implement automated eval pipelines that simulate real conversations. If your team can't measure when the agent is wrong today, that's the gap to close first.</p>
+<p>Source: <a href="https://arxiv.org/pdf/2606.08867">arXiv</a>, 2026-08-21</p>
+<hr>
+<h2>Enterprise Ops &amp; Adoption</h2>
+<h3>Axonius Cuts Agent Development Time from Eight Weeks to Ten Days</h3>
+<p>Axonius used Amazon Bedrock AgentCore to build secure multi-tenant AI agents with VM-level sandbox isolation per tenant, reducing new-agent development time by roughly 75%.</p>
+<p><strong>Why it matters:</strong> Agent isolation is a non-negotiable requirement in multi-tenant environments — not optional security hardening. Enterprises planning production agent deployments should treat isolation patterns like these as a baseline before scaling.</p>
+<p><strong>What should I do as a leader?</strong> Include agent isolation requirements in your enterprise AI architecture review. If your current deployment doesn't define tenant boundaries at the infrastructure layer, address that before scaling.</p>
+<p>Source: <a href="https://aws.amazon.com/blogs/machine-learning/how-axonius-built-secure-multi-tenant-ai-agents-on-bedrock-agentcore/">AWS Machine Learning Blog</a>, 2026-08-21</p>
+<hr>
+<h2>Security, Risk &amp; Compliance</h2>
+<h3>Google's Mandiant Team Found Over 100 Vulnerabilities in Two Days Using AI Agents</h3>
+<p>Google's Mandiant team describes an agentic vulnerability discovery harness combining AI agents with deterministic controls to review source code — identifying more than 100 critical vulnerabilities in two days.</p>
+<p><strong>Why it matters:</strong> Automated, AI-driven code review can now move faster than conventional manual red-teaming cycles. The key design choice — pairing AI agents with deterministic controls rather than replacing controls — is the right model for enterprise adoption.</p>
+<p><strong>What should I do as a leader?</strong> Ask whether your current code-review toolchain is augmented by AI. If not, prioritize a structured evaluation of agentic vulnerability discovery tools in the next planning cycle.</p>
+<p>Source: <a href="https://cloud.google.com/blog/topics/threat-intelligence/staying-ahead-of-adversarial-ai-through-agentic-source-code-review">Google Cloud Threat Intelligence Blog</a>, 2026-08-21</p>
+<hr>
+<h2>Vendors, Platforms &amp; Models</h2>
+<h3>Claude Orchestrates Protein Design at Scale</h3>
+<p>Anthropic demonstrates Claude orchestrating specialized scientific tools to move from hypothesis to laboratory validation — testing more than 1,300 protein designs and producing binders across most targeted proteins.</p>
+<p><strong>Why it matters:</strong> For enterprises with R&amp;D functions, this is an early signal that AI-orchestrated experimentation could reduce cycle times within two to three years. Today it's protein design; for some organizations, the analogous domain is already closer than it appears.</p>
+<p>Source: <a href="https://www.anthropic.com/research/Claude-accelerates-protein-design">Anthropic Research</a>, 2026-08-21</p>
+<hr>
+<h3>Meta's Muse Spark 1.2 Expands Multimodal Reach</h3>
+<p>Meta AI Research released Muse Spark 1.2, covering visual understanding, audio-visual reasoning, coding, robotics, and medical imagery — combined with Meta's open-model distribution.</p>
+<p><strong>Why it matters:</strong> For enterprises evaluating open-weight models for on-premises deployments, Muse Spark 1.2 extends usable modalities to include medical imaging and robotics control. Production validation is still ahead; healthcare and industrial operations teams should monitor closely.</p>
+<p>Source: Meta AI Research, 2026-08-21</p>
+<hr>
+<h2>Quick Hits</h2>
 <ul>
-<li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — network access denied by runtime policy.</li>
-<li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — network access denied by runtime policy.</li>
-</ul>
-<h3>Ongoing Pattern</h3>
-<p>This is now at least the <strong>sixth consecutive edition</strong> affected by network-layer feed access failures. Previous editions (Aug. 18 through Aug. 22) documented the same block. The root cause is consistent: outbound HTTPS from the workflow runner to <code>rss.tedt.org</code> is not permitted by the current runtime sandbox policy.</p>
-<p>This newsletter cannot responsibly summarize enterprise AI events without verified source data. Accuracy matters more than volume.</p>
-<h3>Path Forward</h3>
-<ul>
-<li><strong>Architecture fix:</strong> Pre-fetch feed JSON in a separate GitHub Actions job with appropriate outbound network access, then pass the content as a workflow artifact to the newsletter-generation step.</li>
-<li><strong>Fallback source:</strong> If <code>rss.tedt.org</code> remains unreachable, configure a secondary feed source accessible from the runner, or cache the last successful fetch for freshness comparison.</li>
-<li><strong>Monitoring:</strong> Add a dedicated job-status notification when both feeds fail so the issue surfaces immediately rather than producing a silent stub edition.</li>
-</ul>
-<h3>In the Meantime</h3>
-<p>Until feed access is restored, readers are encouraged to monitor:</p>
-<ul>
-<li>Reuters Technology</li>
-<li><a href="https://technologyreview.com">MIT Technology Review</a></li>
-<li><a href="https://theverge.com/ai-artificial-intelligence">The Verge — AI</a></li>
-<li><a href="https://venturebeat.com/ai/">VentureBeat AI</a></li>
-<li><a href="https://arstechnica.com">Ars Technica</a></li>
+<li><strong>AI governance is a board-level issue</strong> — Bessemer VP argues chain of custody, data provenance, and accountability require CEO attention as agents move from assisting to executing. — <a href="https://x.com/BessemerVP/status/2090117892830552065">X / Bessemer VP</a></li>
+<li><strong>OpenAI tightens sandbox security</strong> with new tool-calling controls and model-development safeguards in response to growing agent cyber-risk concerns. — <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">OpenAI</a></li>
+<li><strong>Notion's open-source shared memory for AI agents</strong> — MCP-compatible architecture separating organizational from personal memory for multi-agent enterprise deployments. — Notion Blog</li>
+<li><strong>Agent Lightning v1.0</strong> applies reinforcement learning at the agent-harness layer — not the model — allowing orchestration systems to improve task performance over time. — <a href="https://arxiv.org/abs/2608.17528">arXiv</a></li>
+<li><strong>Right-sizing your AI model spend</strong> — a framework for routing workloads to the least-expensive model that meets the required threshold. — <a href="https://x.com/JayaGup10/status/2089924561441841152">X / Jaya Gupta</a></li>
 </ul>
 <hr>
-<p>Every good pipeline has a rough patch — and every rough patch reveals exactly where to invest next. We remain committed to delivering accurate, sourced, and actionable enterprise AI coverage the moment the feed pipeline is restored. Thank you for your continued patience.</p>
+<h2>Looking Ahead</h2>
+<ul>
+<li><strong>Vertical model strategies will accelerate.</strong> Harvey's disclosure will prompt similar announcements from legal, financial, and healthcare AI vendors. Enterprises should begin evaluating build-versus-buy criteria now.</li>
+<li><strong>Evaluation science is becoming a hiring signal.</strong> Teams that can design and interpret automated evals will ship higher-quality AI products faster.</li>
+<li><strong>Multi-tenant agent security will face regulatory scrutiny.</strong> The Axonius pattern will eventually be required, not recommended. Early adoption reduces compliance risk.</li>
+<li><strong>AI-assisted security tooling is moving from research to procurement.</strong> Mandiant's results will accelerate vendor roadmaps — expect agentic code-review questions in your next RFP cycle.</li>
+</ul>
+<hr>
+<h2>Sign-Off</h2>
+<p>Six editions without a feed to draw from is a strange kind of quiet — and today's run is a reminder that even the most automated pipelines depend on infrastructure that someone, somewhere, has to maintain. We're glad the connection is back.</p>
+<p>The stories above were reported Aug. 21 but are appearing here for the first time. The themes — vertical models, evaluation discipline, agent security, board-level governance — aren't dated. If anything, a few days of silence makes them feel more urgent, not less.</p>
+<p>Take one item from today's Quick Hits and put it on someone's plate before end of week. Small motions, steady progress. That's how enterprises move.</p>
+<p>— *Yesterday in Enterprise AI, published Aug. 24, 2026 (Pacific Time)*</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>items_fetched_count:</strong> 0 (both feeds blocked by runtime network policy)</li>
-<li><strong>items_within_24_36_hours_count:</strong> 0</li>
-<li><strong>items_deduplicated_count:</strong> 0</li>
-<li><strong>items_published_count:</strong> 0</li>
-<li><strong>excluded_items_summary:</strong> No items could be retrieved. Both <code>https://rss.tedt.org/ai_rss_feed.json</code> and <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> returned "Permission denied" at the network layer.</li>
-<li><strong>consecutive_failures:</strong> At least 6 editions (Aug. 18 – Aug. 23, 2026) affected by the same block.</li>
-<li><strong>generation_time_pt:</strong> 2026-08-23 06:00 PDT</li>
+<li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — accessible today after six consecutive editions blocked by runtime network policy</li>
+<li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — returned HTTP 404; feed no longer exists at this URL</li>
+<li><strong>items_fetched_count:</strong> 50 (primary feed only)</li>
+<li><strong>items_within_24_36_hours_count:</strong> 0 — no items dated Aug. 22–24, 2026 in the feed; most recent entries are Aug. 21</li>
+<li><strong>items_deduplicated_count:</strong> 0 additional duplicates removed (Aug. 21 items had not appeared in any prior published edition)</li>
+<li><strong>items_published_count:</strong> 6 main items (Aug. 21) + 5 Quick Hits (Aug. 20)</li>
+<li><strong>excluded_items_summary:</strong> 39 items excluded as older than Aug. 21; Aug. 19 and earlier not included</li>
+<li><strong>date_window_note:</strong> Strict 24–36h window (Aug. 22 18:05 PDT – Aug. 24 06:05 PDT) returned zero qualifying items. Aug. 21 items were included with transparent editorial disclosure given six prior publication failures.</li>
+<li><strong>feed_health_note:</strong> Primary feed healthy through Aug. 21; no Aug. 22–24 entries suggest upstream aggregator pipeline may have stalled. Secondary feed URL should be updated or removed from the source prompt.</li>
 </ul>
     </section>
     <footer>
