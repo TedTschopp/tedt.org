@@ -79,6 +79,37 @@ mermaid: false
 mastodon-post-id:
 ---
 
+
+## Sources for this article
+
+> **Source note:** This essay draws on first-party disclosures from [OpenAI](https://openai.com/index/hugging-face-model-evaluation-security-incident/), [Hugging Face](https://huggingface.co/blog/agent-intrusion-technical-timeline), [Anthropic](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals), the [U.K. AI Security Institute](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), and [Irregular](https://www.irregular.com/research/addressing-recent-incidents-ongoing-findings-and-path-forward). Their investigations remain incomplete. As of Aug. 22, 2026, OpenAI's [promised technical report and METR/Redwood assessment](https://openai.com/index/hugging-face-model-evaluation-security-incident/), Anthropic's [planned METR review](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals), AISI's [planned METR review](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing), and Irregular's [planned evaluation-security white paper](https://www.irregular.com/research/addressing-recent-incidents-ongoing-findings-and-path-forward) had not been published. [Irregular says several model-provider disclosures describe the same underlying evaluation issue](https://www.irregular.com/research/addressing-recent-incidents-ongoing-findings-and-path-forward), so they should not be counted as separate incidents. These events occurred in specialized cybersecurity tests, often with normal safeguards reduced or disabled; [Anthropic](https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals) and [AISI](https://www.aisi.gov.uk/blog/incident-report-unsanctioned-agent-behaviour-during-cyber-testing) both caution against treating them as evidence of how ordinary deployed agents behave.
+
+Many enterprise delivery diagrams begin with three boxes.
+
+**DEV → TEST → PROD**
+
+We build in the first. We test throughout, but assemble the release case in the second. We deliberately let the system affect the business in the third. Each environment should carry more consequence than the one before it, and each arrow should mark a deliberate change in exposure.
+
+It is a useful picture. It gave software teams a practical way to separate unfinished work from customer-facing systems. It created places for experimentation, verification, approval, and rollback. It also carried a quiet assumption: work in Test cannot affect Production until somebody promotes it.
+
+That assumption was never entirely safe. It was a simple way of talking about a complex idea. Agentic systems make the weakness harder to ignore.
+
+An AI agent running in a test environment can call an application programming interface, install a package, create an account, open a pull request, send a message, query a live service, or cause another computer to act on its behalf. The agent does not have to be deployed to Production. It only needs a path to something real.
+
+The old diagram still captures an important control. But the environment label is not the boundary. We have to ask what the arrow represents. We also have to notice which changes happen without crossing it.
+
+## What the Old Model Gets Right
+
+Dev, Test, and Prod are not merely server names. At their best, they describe a progression of responsibility.
+
+Dev is where consequence should be smallest. Test is where pre-release evidence should become decision-grade. Prod is where durable business authority is granted. It is also where that authority must remain observable and revocable.
+
+Some organizations insert integration, quality assurance, user acceptance testing, staging, shadow, or deployment rings. The number of boxes is not the point. At each step, the system should earn a larger exposure.
+
+That progression still matters. In [What IT Looks Like in an Enterprise Where AI Is Assumed](https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/), I used lab, pilot, and production as distinct places for uncertainty, bounded learning, and operated value. The labels change from company to company, but the intent is familiar: do not expose the business to a new system until the system has earned that exposure.
+
+Modern delivery pipelines already move more than application code. They carry configuration, infrastructure templates, database changes, secrets references, policies, and deployment instructions. We learned a long time ago that a release can fail even when the binary doesn't change.
+
 Conventional delivery already runs active code in continuous-integration jobs, integration tests, package registries, and deployment pipelines. Those systems can reach Production too. What changes with an agent is the degree of initiative inside the boundary. Its harness can inspect a result, choose another tool, and chain actions that nobody described in advance.
 
 AI did not invent porous environments. It lets software discover and use paths that ordinary release controls may never have modeled.
@@ -221,3 +252,5 @@ Before approving the next agent release, look at the arrow and ask four differen
 If a test agent can already cause a real-world change, the organization is already carrying production risk, whatever the box is called.
 
 The arrow still matters. It moves the assembly. The gate decides what authority it receives, what state it inherits, and whether the evidence is good enough to let it act.
+
+
