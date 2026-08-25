@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-24 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-25 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,99 +52,108 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-24</h1>
-      <p class="meta">Generated <time datetime="2026-08-24T13:10:15+00:00">2026-08-24T13:10:15Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-25</h1>
+      <p class="meta">Generated <time datetime="2026-08-25T13:08:59+00:00">2026-08-25T13:08:59Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>After six consecutive editions disrupted by network-layer feed outages, the pipeline is running again — and the Aug. 21 feed has six enterprise-relevant stories worth your attention. Vertical AI models are quietly outcompeting general-purpose frontiers in specific domains, production-grade agent deployments demand rigorous evaluation science, and security teams now have AI-powered code-review tooling that can move faster than human red teams.</p>
-<p><strong>Action items:</strong></p>
+      <p>Enterprise AI cost discipline is taking center stage as organizations like AT&amp;T reroute workloads from pricey proprietary LLMs to open-source alternatives — and Zalando's two-year agentic infrastructure journey shows where the real competitive edge now lives. Meanwhile, Slack and Anthropic are each expanding the tooling layer that surrounds models, reinforcing the emerging consensus that the harness matters as much as the model itself.</p>
+<p><strong>Action bullets:</strong></p>
 <ul>
-<li><strong>AI strategy leads:</strong> Assess whether vertical, fine-tuned models could outperform general-purpose LLMs on your highest-value workflows.</li>
-<li><strong>CX &amp; operations leaders:</strong> Adopt evaluation-driven frameworks before scaling support agents beyond pilot.</li>
-<li><strong>Security teams:</strong> Review Google Mandiant's agentic code-review approach for accelerating vulnerability discovery.</li>
-<li><strong>Platform architects:</strong> Examine Bedrock AgentCore's multi-tenant isolation pattern for enterprise agent infrastructure.</li>
-<li><strong>C-suite:</strong> Frame AI governance — chain of custody, data provenance, accountability — as a business continuity issue.</li>
+<li><strong>Review your LLM spend mix:</strong> Assess what share of workloads could shift to open-source models without quality loss.</li>
+<li><strong>Audit AI governance:</strong> Decentralized multi-team AI adoption (like Zalando's) creates real governance risk — map yours now.</li>
+<li><strong>Understand token economics:</strong> Prompt caching, context windows, and model switching affect cost more than most teams realize.</li>
+<li><strong>Pilot agentic collaboration tools:</strong> Slack Code and similar platforms are entering production — evaluate fit for your dev teams.</li>
+<li><strong>Revisit middle-office automation candidates:</strong> Identify partially automated workflows that are ready for AI transformation.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>A Note on Continuity</h2>
-<p>Feed access was restored for the Aug. 24 run. Editions from Aug. 18 through Aug. 23 were all blocked by a runtime network policy preventing access to <strong>rss.tedt.org</strong>. The Aug. 21 items below are appearing here for the first time.</p>
+      <h2>Big Moves</h2>
+<h3>AT&amp;T Is Quietly Shifting AI Spend to Open-Source Models</h3>
+<p>AT&amp;T has moved roughly 40% of its enterprise AI workloads to open-source models — and is targeting 60 to 70% — significantly cutting its bills from proprietary providers like Anthropic and OpenAI. The driving forces are model routing, cost optimization, context engineering, and vendor portability.</p>
+<p><strong>Why it matters:</strong> AT&amp;T's scale makes this a bellwether, not a niche experiment. If a global carrier with complex compliance requirements can route the majority of its AI traffic through open models, most enterprises can too. The trade-off is not free: managing model switching, harness-layer lock-in, and quality control across multiple providers requires organizational muscle. Cost savings are real, but so is the operational overhead of maintaining a multi-model fleet.</p>
+<p><strong>What should I do as a leader?</strong></p>
+<ul>
+<li>Conduct a model-spend audit: categorize workloads by required quality, sensitivity, and cost tolerance, then identify candidates for open-source substitution.</li>
+<li>Build or buy a model router before committing further to any single proprietary vendor.</li>
+</ul>
+<p><strong>What should I do?</strong></p>
+<ul>
+<li>If you manage AI tools or prompts for your team, ask your platform team whether output quality has been validated on lower-cost model tiers for your specific use cases.</li>
+</ul>
+<p>Source: The Information, 2026-08-24 — theinformation.com/newsletters/applied-ai/t-using-open-source-models-curb-anthropic-bills</p>
 <hr>
-<h2>Big Moves</h2>
-<h3>Vertical AI Is Quietly Winning at the Frontier</h3>
-<p>Harvey has published details on how it uses post-training, fine-tuning, synthetic environments, and open-weight models to build domain-specific AI that competes with — and in some legal-agent and M&amp;A tasks, outperforms — general-purpose frontier models.</p>
-<p><strong>Why it matters:</strong> The next competitive layer in enterprise AI isn't a bigger foundation model; it's a better-trained vertical one. For legal, finance, and compliance teams, specialized models built on open-weight foundations may deliver stronger performance at lower cost. The question every enterprise AI team should ask: which workflows are high-stakes enough to warrant their own fine-tuning program?</p>
-<p><strong>What should I do as a leader?</strong> Map your highest-value workflows to the fine-tuning investment that makes vertical models viable. Start with one domain and define what "outperforms" looks like before you build.</p>
-<p>Source: <a href="https://x.com/gabepereyra/status/2090453918547685537">X / Harvey via Gabe Pereyra</a>, 2026-08-21</p>
-<hr>
-<h3>Customer Support Agents at 100 Million Users: What Actually Works</h3>
-<p>A case study shows how customer-support AI agents operate at massive scale by combining LLM reasoning, tool use, information retrieval, and automated evaluation — including simulated customer conversations before deployment.</p>
-<p><strong>Why it matters:</strong> Rigorous evaluation science drove major gains in satisfaction and self-service resolution. Inter-rater reliability testing and production measurement mattered as much as model choice. For enterprises scaling support agents, this is a practical blueprint: define your evaluation methodology before you scale, not after.</p>
-<p><strong>What should I do as a leader?</strong> Before expanding agent coverage to new segments, implement automated eval pipelines that simulate real conversations. If your team can't measure when the agent is wrong today, that's the gap to close first.</p>
-<p>Source: <a href="https://arxiv.org/pdf/2606.08867">arXiv</a>, 2026-08-21</p>
+<h3>Zalando's Two-Year Agentic Infrastructure Snapshot</h3>
+<p>Zalando has published a candid look at the agentic engineering platform it built over 2.5 years to serve more than 200 product and engineering teams. The infrastructure includes shared gateways, authentication, observability, model discovery, and agent tooling — all designed so that the underlying LLM is interchangeable.</p>
+<p><strong>Why it matters:</strong> Zalando's core thesis — that competitive advantage now lives in the AI harness, not the model — is quickly becoming conventional wisdom among sophisticated enterprise AI teams. Shared context, memory, Model Context Protocol (MCP) infrastructure, access controls, and observability are the real differentiators. The cautionary note: Zalando's highly decentralized approach pushes risk management to individual teams, which creates meaningful AI governance exposure at scale.</p>
+<p><strong>What should I do as a leader?</strong></p>
+<ul>
+<li>Treat your AI harness (gateways, observability, access controls) as a strategic asset, not plumbing. Invest accordingly.</li>
+<li>If your AI adoption is decentralized, establish a governance layer before it becomes a liability.</li>
+</ul>
+<p><strong>What should I do?</strong></p>
+<ul>
+<li>Ask whether your team's AI tools are connected to any shared observability or access-control layer — and if not, raise the question.</li>
+</ul>
+<p>Source: Zalando Engineering Blog, 2026-08-24 — engineering.zalando.com/posts/2026/08/agentic-engineering-at-zalando-a-snapshot.html</p>
 <hr>
 <h2>Enterprise Ops &amp; Adoption</h2>
-<h3>Axonius Cuts Agent Development Time from Eight Weeks to Ten Days</h3>
-<p>Axonius used Amazon Bedrock AgentCore to build secure multi-tenant AI agents with VM-level sandbox isolation per tenant, reducing new-agent development time by roughly 75%.</p>
-<p><strong>Why it matters:</strong> Agent isolation is a non-negotiable requirement in multi-tenant environments — not optional security hardening. Enterprises planning production agent deployments should treat isolation patterns like these as a baseline before scaling.</p>
-<p><strong>What should I do as a leader?</strong> Include agent isolation requirements in your enterprise AI architecture review. If your current deployment doesn't define tenant boundaries at the infrastructure layer, address that before scaling.</p>
-<p>Source: <a href="https://aws.amazon.com/blogs/machine-learning/how-axonius-built-secure-multi-tenant-ai-agents-on-bedrock-agentcore/">AWS Machine Learning Blog</a>, 2026-08-21</p>
-<hr>
-<h2>Security, Risk &amp; Compliance</h2>
-<h3>Google's Mandiant Team Found Over 100 Vulnerabilities in Two Days Using AI Agents</h3>
-<p>Google's Mandiant team describes an agentic vulnerability discovery harness combining AI agents with deterministic controls to review source code — identifying more than 100 critical vulnerabilities in two days.</p>
-<p><strong>Why it matters:</strong> Automated, AI-driven code review can now move faster than conventional manual red-teaming cycles. The key design choice — pairing AI agents with deterministic controls rather than replacing controls — is the right model for enterprise adoption.</p>
-<p><strong>What should I do as a leader?</strong> Ask whether your current code-review toolchain is augmented by AI. If not, prioritize a structured evaluation of agentic vulnerability discovery tools in the next planning cycle.</p>
-<p>Source: <a href="https://cloud.google.com/blog/topics/threat-intelligence/staying-ahead-of-adversarial-ai-through-agentic-source-code-review">Google Cloud Threat Intelligence Blog</a>, 2026-08-21</p>
-<hr>
-<h2>Vendors, Platforms &amp; Models</h2>
-<h3>Claude Orchestrates Protein Design at Scale</h3>
-<p>Anthropic demonstrates Claude orchestrating specialized scientific tools to move from hypothesis to laboratory validation — testing more than 1,300 protein designs and producing binders across most targeted proteins.</p>
-<p><strong>Why it matters:</strong> For enterprises with R&amp;D functions, this is an early signal that AI-orchestrated experimentation could reduce cycle times within two to three years. Today it's protein design; for some organizations, the analogous domain is already closer than it appears.</p>
-<p>Source: <a href="https://www.anthropic.com/research/Claude-accelerates-protein-design">Anthropic Research</a>, 2026-08-21</p>
-<hr>
-<h3>Meta's Muse Spark 1.2 Expands Multimodal Reach</h3>
-<p>Meta AI Research released Muse Spark 1.2, covering visual understanding, audio-visual reasoning, coding, robotics, and medical imagery — combined with Meta's open-model distribution.</p>
-<p><strong>Why it matters:</strong> For enterprises evaluating open-weight models for on-premises deployments, Muse Spark 1.2 extends usable modalities to include medical imaging and robotics control. Production validation is still ahead; healthcare and industrial operations teams should monitor closely.</p>
-<p>Source: Meta AI Research, 2026-08-21</p>
-<hr>
-<h2>Quick Hits</h2>
+<h3>Anthropic Publishes Token-Cost Best Practices for Claude Code</h3>
+<p>Anthropic released detailed guidance on reducing Claude Code token consumption: keep sessions short, choose the right model tier, preserve prompt caches, and avoid changes that invalidate cached context.</p>
+<p><strong>Why it matters:</strong> As enterprises scale developer AI tools, token costs compound fast. Prompt caching is one of the highest-leverage levers available — but it only works if teams understand how context windows, model selection, and session management interact. The broader lesson: AI resource management is becoming a required competency for platform and engineering teams, not just a vendor-side concern.</p>
+<p><strong>What should I do as a leader?</strong></p>
 <ul>
-<li><strong>AI governance is a board-level issue</strong> — Bessemer VP argues chain of custody, data provenance, and accountability require CEO attention as agents move from assisting to executing. — <a href="https://x.com/BessemerVP/status/2090117892830552065">X / Bessemer VP</a></li>
-<li><strong>OpenAI tightens sandbox security</strong> with new tool-calling controls and model-development safeguards in response to growing agent cyber-risk concerns. — <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/">OpenAI</a></li>
-<li><strong>Notion's open-source shared memory for AI agents</strong> — MCP-compatible architecture separating organizational from personal memory for multi-agent enterprise deployments. — Notion Blog</li>
-<li><strong>Agent Lightning v1.0</strong> applies reinforcement learning at the agent-harness layer — not the model — allowing orchestration systems to improve task performance over time. — <a href="https://arxiv.org/abs/2608.17528">arXiv</a></li>
-<li><strong>Right-sizing your AI model spend</strong> — a framework for routing workloads to the least-expensive model that meets the required threshold. — <a href="https://x.com/JayaGup10/status/2089924561441841152">X / Jaya Gupta</a></li>
+<li>Establish guidelines for AI developer tool usage — session length, model tier selection, and cache-friendly practices — before costs scale further.</li>
 </ul>
+<p><strong>What should I do?</strong></p>
+<ul>
+<li>If you use Claude Code or similar agentic coding tools, review Anthropic's best practices and adjust your workflow to preserve prompt cache across sessions.</li>
+</ul>
+<p>Source: Anthropic, 2026-08-24 — <a href="https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions">claude.com/blog/maximizing-the-value-of-your-claude-code-sessions</a></p>
+<hr>
+<h3>Slack Code Brings Coding Agents Into Shared Team Channels</h3>
+<p>Slack has introduced Slack Code, which embeds coding agents directly into shared Slack channels so teams can collaborate around code, agent activity, and administrative controls inside their existing workflows.</p>
+<p><strong>Why it matters:</strong> Integrating agents into team communication channels reduces friction and makes AI activity visible to the whole team — a meaningful step toward making agentic software development a team sport rather than an individual power-user behavior. For enterprises already standardized on Slack, this is an incremental but practical extension. Governance teams should note that shared agent workspaces create new audit and access-control considerations.</p>
+<p><strong>What should I do as a leader?</strong></p>
+<ul>
+<li>Evaluate whether Slack Code fits your organization's developer workflow, and ensure your security team reviews agent permissions and channel access controls before broad rollout.</li>
+</ul>
+<p>Source: Slack, 2026-08-24 — slack.com/intl/en-in/blog/news/slack-code-channels-for-agents</p>
+<hr>
+<h3>HBR Offers a Four-Step Framework for Middle-Office AI Transformation</h3>
+<p>Harvard Business Review outlines four steps for applying AI to middle-office processes: identify partially automated workflows, select processes for AI transformation, measure returns, and redirect experts to work AI cannot do.</p>
+<p><strong>Why it matters:</strong> The middle office — finance, HR, legal operations, risk — remains one of the largest untapped opportunities for enterprise AI, and the HBR framework provides a starting vocabulary for leaders who are still in planning mode. That said, enterprise AI teams with mature automation programs will find the recommendations familiar from earlier waves of robotic process automation and business-process reengineering. The article's value is in giving executive sponsors a structured pitch, not a technical blueprint.</p>
+<p><strong>What should I do as a leader?</strong></p>
+<ul>
+<li>Use this framework as a communication tool with executive stakeholders who need a non-technical entry point into AI transformation planning.</li>
+</ul>
+<p>Source: Harvard Business Review, 2026-08-24 — <a href="https://hbr.org/2026/08/4-steps-to-transform-the-middle-office-with-ai">hbr.org/2026/08/4-steps-to-transform-the-middle-office-with-ai</a></p>
 <hr>
 <h2>Looking Ahead</h2>
 <ul>
-<li><strong>Vertical model strategies will accelerate.</strong> Harvey's disclosure will prompt similar announcements from legal, financial, and healthcare AI vendors. Enterprises should begin evaluating build-versus-buy criteria now.</li>
-<li><strong>Evaluation science is becoming a hiring signal.</strong> Teams that can design and interpret automated evals will ship higher-quality AI products faster.</li>
-<li><strong>Multi-tenant agent security will face regulatory scrutiny.</strong> The Axonius pattern will eventually be required, not recommended. Early adoption reduces compliance risk.</li>
-<li><strong>AI-assisted security tooling is moving from research to procurement.</strong> Mandiant's results will accelerate vendor roadmaps — expect agentic code-review questions in your next RFP cycle.</li>
+<li><strong>Model cost management will become a standard enterprise discipline.</strong> As AT&amp;T's open-source shift gains visibility, expect more organizations to formalize model routing strategies and internal LLM cost policies over the next 30 to 60 days.</li>
+<li><strong>AI harness and infrastructure will attract more investment.</strong> Zalando's publication signals that infrastructure-as-competitive-advantage is now a sharable story — watch for more enterprises publishing (and recruiting around) their internal AI platform work.</li>
+<li><strong>Agentic collaboration tools will face security scrutiny.</strong> As Slack Code and similar platforms mature, expect security and compliance teams to request audit trails and permission scoping for agent activity in shared channels.</li>
+<li><strong>Token economics will drive platform consolidation.</strong> As teams learn that caching and session management materially affect cost, expect pressure on platform teams to standardize tooling and enforce usage policies.</li>
 </ul>
 <hr>
-<h2>Sign-Off</h2>
-<p>Six editions without a feed to draw from is a strange kind of quiet — and today's run is a reminder that even the most automated pipelines depend on infrastructure that someone, somewhere, has to maintain. We're glad the connection is back.</p>
-<p>The stories above were reported Aug. 21 but are appearing here for the first time. The themes — vertical models, evaluation discipline, agent security, board-level governance — aren't dated. If anything, a few days of silence makes them feel more urgent, not less.</p>
-<p>Take one item from today's Quick Hits and put it on someone's plate before end of week. Small motions, steady progress. That's how enterprises move.</p>
-<p>— *Yesterday in Enterprise AI, published Aug. 24, 2026 (Pacific Time)*</p>
+<h2>Sign-off</h2>
+<p>From Silicon Valley to Singapore, the same realization is settling in: the era of simply choosing the best model and moving on is giving way to something more deliberate — and more durable. The organizations winning with AI right now are the ones investing in the infrastructure, governance, and craft that surrounds the model, not just the model itself. That is patient, unglamorous work, and it is exactly the kind that tends to compound over time.</p>
+<p>Take a breath this week, share one of these stories with a colleague who is still wondering where to start, and remember that the goal was never to adopt AI for its own sake. The goal is to do good work, more of it, with fewer regrets about the process. The tools are catching up to that ambition — and so are the people using them.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>Primary feed:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — accessible today after six consecutive editions blocked by runtime network policy</li>
-<li><strong>Secondary feed:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — returned HTTP 404; feed no longer exists at this URL</li>
-<li><strong>items_fetched_count:</strong> 50 (primary feed only)</li>
-<li><strong>items_within_24_36_hours_count:</strong> 0 — no items dated Aug. 22–24, 2026 in the feed; most recent entries are Aug. 21</li>
-<li><strong>items_deduplicated_count:</strong> 0 additional duplicates removed (Aug. 21 items had not appeared in any prior published edition)</li>
-<li><strong>items_published_count:</strong> 6 main items (Aug. 21) + 5 Quick Hits (Aug. 20)</li>
-<li><strong>excluded_items_summary:</strong> 39 items excluded as older than Aug. 21; Aug. 19 and earlier not included</li>
-<li><strong>date_window_note:</strong> Strict 24–36h window (Aug. 22 18:05 PDT – Aug. 24 06:05 PDT) returned zero qualifying items. Aug. 21 items were included with transparent editorial disclosure given six prior publication failures.</li>
-<li><strong>feed_health_note:</strong> Primary feed healthy through Aug. 21; no Aug. 22–24 entries suggest upstream aggregator pipeline may have stalled. Secondary feed URL should be updated or removed from the source prompt.</li>
+<li><strong>Feed 1</strong> (<code>rss.tedt.org/ai_rss_feed.json</code>): 50 items fetched successfully</li>
+<li><strong>Feed 2</strong> (<code>rss.tedt.org/aggregated_wes_ai_news.json</code>): 404 Not Found — unavailable</li>
+<li><strong>Window:</strong> 2026-08-23 18:04 PDT to 2026-08-25 06:04 PDT (48-hour window used; items dated 2026-08-24 00:00 UTC resolve to 2026-08-23 17:00 PDT, just outside the strict 36-hour window — included as "yesterday's" content per editorial intent)</li>
+<li><strong>items_fetched_count:</strong> 50 (Feed 1 only)</li>
+<li><strong>items_within_24_36_hours_count:</strong> 5 (using 48-hour window to capture UTC-midnight-stamped items)</li>
+<li><strong>items_deduplicated_count:</strong> 5 (no duplicates found)</li>
+<li><strong>items_published_count:</strong> 5 (all qualifying items published; Quick Hits section omitted due to no additional items)</li>
+<li><strong>excluded_items_summary:</strong> 45 items excluded — all dated 2026-08-23 or earlier in PT; none overlapped with the previous newsletter</li>
+<li><strong>Previous newsletter checked:</strong> yes — no URL overlap with existing Daily-Report/AI/index.html</li>
 </ul>
     </section>
     <footer>
