@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-25 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-26 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,108 +52,117 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-25</h1>
-      <p class="meta">Generated <time datetime="2026-08-25T13:08:59+00:00">2026-08-25T13:08:59Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-26</h1>
+      <p class="meta">Generated <time datetime="2026-08-26T13:11:29+00:00">2026-08-26T13:11:29Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Enterprise AI cost discipline is taking center stage as organizations like AT&amp;T reroute workloads from pricey proprietary LLMs to open-source alternatives — and Zalando's two-year agentic infrastructure journey shows where the real competitive edge now lives. Meanwhile, Slack and Anthropic are each expanding the tooling layer that surrounds models, reinforcing the emerging consensus that the harness matters as much as the model itself.</p>
+      <p>The harness is the hero. NVIDIA's AVO system hit 100% on a frontier benchmark by out-engineering — not out-modeling — the competition. Fanatics deployed multi-agent customer support in production. McKinsey published a lifecycle framework for scaling agentic AI. DeepSeek expanded its open-source frontier with a new multimodal API. The throughline: enterprise AI advantage now lives in orchestration and tooling, not the model itself.</p>
 <p><strong>Action bullets:</strong></p>
 <ul>
-<li><strong>Review your LLM spend mix:</strong> Assess what share of workloads could shift to open-source models without quality loss.</li>
-<li><strong>Audit AI governance:</strong> Decentralized multi-team AI adoption (like Zalando's) creates real governance risk — map yours now.</li>
-<li><strong>Understand token economics:</strong> Prompt caching, context windows, and model switching affect cost more than most teams realize.</li>
-<li><strong>Pilot agentic collaboration tools:</strong> Slack Code and similar platforms are entering production — evaluate fit for your dev teams.</li>
-<li><strong>Revisit middle-office automation candidates:</strong> Identify partially automated workflows that are ready for AI transformation.</li>
+<li><strong>Invest in AI harness infrastructure:</strong> Memory, tool orchestration, state management, and recovery are now the primary differentiators.</li>
+<li><strong>Pilot multi-agent support workflows:</strong> Fanatics' production system shows real-world ROI is achievable; find your highest-volume rule-bound support flows.</li>
+<li><strong>Track DeepSeek multimodal:</strong> Its API is live and closing the gap with closed-source frontier models at lower cost.</li>
+<li><strong>Use McKinsey's agentic lifecycle framing</strong> to identify where workflow redesign yields the highest return in your organization.</li>
+<li><strong>Lead automation with verifiable domains:</strong> Code review, data validation, and math-heavy tasks deliver the most reliable, auditable AI output.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
       <h2>Big Moves</h2>
-<h3>AT&amp;T Is Quietly Shifting AI Spend to Open-Source Models</h3>
-<p>AT&amp;T has moved roughly 40% of its enterprise AI workloads to open-source models — and is targeting 60 to 70% — significantly cutting its bills from proprietary providers like Anthropic and OpenAI. The driving forces are model routing, cost optimization, context engineering, and vendor portability.</p>
-<p><strong>Why it matters:</strong> AT&amp;T's scale makes this a bellwether, not a niche experiment. If a global carrier with complex compliance requirements can route the majority of its AI traffic through open models, most enterprises can too. The trade-off is not free: managing model switching, harness-layer lock-in, and quality control across multiple providers requires organizational muscle. Cost savings are real, but so is the operational overhead of maintaining a multi-model fleet.</p>
+<h3>NVIDIA's AVO Agent Harness Scores 100% on ARC-AGI-3</h3>
+<p>NVIDIA's AVO system achieved a perfect score on ARC-AGI-3, a benchmark requiring an AI agent to infer unseen rules and execute long-horizon tasks. Previous frontier model scores generally stayed below 50%. NVIDIA plans to open-source the harness architecture.</p>
+<p><strong>Why it matters:</strong> A frontier-level score came not from a smarter model, but from a smarter system around it — one that handles memory, tool use, task recovery, and state management. Enterprise teams waiting for models to get "good enough" should shift attention: system design is the performance variable now. NVIDIA's planned open-source release means these patterns will be accessible, not locked behind proprietary APIs.</p>
 <p><strong>What should I do as a leader?</strong></p>
 <ul>
-<li>Conduct a model-spend audit: categorize workloads by required quality, sensitivity, and cost tolerance, then identify candidates for open-source substitution.</li>
-<li>Build or buy a model router before committing further to any single proprietary vendor.</li>
+<li>Treat agent harness design as a core engineering discipline, not an afterthought. Identify high-stakes workflows where a supervised multi-step harness could outperform a single-model approach.</li>
 </ul>
 <p><strong>What should I do?</strong></p>
 <ul>
-<li>If you manage AI tools or prompts for your team, ask your platform team whether output quality has been validated on lower-cost model tiers for your specific use cases.</li>
+<li>Ask your engineering team whether your AI automation tools have recovery and state management — or rely on a single-shot prompt.</li>
 </ul>
-<p>Source: The Information, 2026-08-24 — theinformation.com/newsletters/applied-ai/t-using-open-source-models-curb-anthropic-bills</p>
-<hr>
-<h3>Zalando's Two-Year Agentic Infrastructure Snapshot</h3>
-<p>Zalando has published a candid look at the agentic engineering platform it built over 2.5 years to serve more than 200 product and engineering teams. The infrastructure includes shared gateways, authentication, observability, model discovery, and agent tooling — all designed so that the underlying LLM is interchangeable.</p>
-<p><strong>Why it matters:</strong> Zalando's core thesis — that competitive advantage now lives in the AI harness, not the model — is quickly becoming conventional wisdom among sophisticated enterprise AI teams. Shared context, memory, Model Context Protocol (MCP) infrastructure, access controls, and observability are the real differentiators. The cautionary note: Zalando's highly decentralized approach pushes risk management to individual teams, which creates meaningful AI governance exposure at scale.</p>
-<p><strong>What should I do as a leader?</strong></p>
-<ul>
-<li>Treat your AI harness (gateways, observability, access controls) as a strategic asset, not plumbing. Invest accordingly.</li>
-<li>If your AI adoption is decentralized, establish a governance layer before it becomes a liability.</li>
-</ul>
-<p><strong>What should I do?</strong></p>
-<ul>
-<li>Ask whether your team's AI tools are connected to any shared observability or access-control layer — and if not, raise the question.</li>
-</ul>
-<p>Source: Zalando Engineering Blog, 2026-08-24 — engineering.zalando.com/posts/2026/08/agentic-engineering-at-zalando-a-snapshot.html</p>
+<p>Source: NVIDIA Developer Blog, 2026-08-24 — <a href="https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/?ncid=so-twit-543600">developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3</a></p>
 <hr>
 <h2>Enterprise Ops &amp; Adoption</h2>
-<h3>Anthropic Publishes Token-Cost Best Practices for Claude Code</h3>
-<p>Anthropic released detailed guidance on reducing Claude Code token consumption: keep sessions short, choose the right model tier, preserve prompt caches, and avoid changes that invalidate cached context.</p>
-<p><strong>Why it matters:</strong> As enterprises scale developer AI tools, token costs compound fast. Prompt caching is one of the highest-leverage levers available — but it only works if teams understand how context windows, model selection, and session management interact. The broader lesson: AI resource management is becoming a required competency for platform and engineering teams, not just a vendor-side concern.</p>
+<h3>Fanatics Betting &amp; Gaming Ships Multi-Agent Customer Support</h3>
+<p>Fanatics deployed a production multi-agent support system on AWS, with specialized agents handling intake, routing, resolution, and escalation — rather than routing everything through one general-purpose assistant. The architecture uses Bedrock orchestration.</p>
+<p><strong>Why it matters:</strong> This is not a pilot. Fanatics operates under real compliance constraints, and the multi-agent pattern is becoming the prevailing approach for contact center modernization. The value is in workflow design — knowing which tasks to isolate, which to hand off, and where humans stay in the loop.</p>
 <p><strong>What should I do as a leader?</strong></p>
 <ul>
-<li>Establish guidelines for AI developer tool usage — session length, model tier selection, and cache-friendly practices — before costs scale further.</li>
+<li>Map your highest-volume support workflows and identify which steps are rule-bound versus judgment-dependent.</li>
+<li>Request a vendor briefing on multi-agent architectures before your next contact center contract renewal.</li>
 </ul>
-<p><strong>What should I do?</strong></p>
-<ul>
-<li>If you use Claude Code or similar agentic coding tools, review Anthropic's best practices and adjust your workflow to preserve prompt cache across sessions.</li>
-</ul>
-<p>Source: Anthropic, 2026-08-24 — <a href="https://claude.com/blog/maximizing-the-value-of-your-claude-code-sessions">claude.com/blog/maximizing-the-value-of-your-claude-code-sessions</a></p>
+<p>Source: AWS Machine Learning Blog, 2026-08-24 — <a href="https://aws.amazon.com/blogs/machine-learning/how-fanatics-betting-and-gaming-built-a-multi-agent-customer-support-system/">aws.amazon.com/blogs/machine-learning/how-fanatics-betting-and-gaming-built-a-multi-agent-customer-support-system</a></p>
 <hr>
-<h3>Slack Code Brings Coding Agents Into Shared Team Channels</h3>
-<p>Slack has introduced Slack Code, which embeds coding agents directly into shared Slack channels so teams can collaborate around code, agent activity, and administrative controls inside their existing workflows.</p>
-<p><strong>Why it matters:</strong> Integrating agents into team communication channels reduces friction and makes AI activity visible to the whole team — a meaningful step toward making agentic software development a team sport rather than an individual power-user behavior. For enterprises already standardized on Slack, this is an incremental but practical extension. Governance teams should note that shared agent workspaces create new audit and access-control considerations.</p>
+<h3>McKinsey: Scaling Agentic AI Across the Product Lifecycle</h3>
+<p>McKinsey published survey data and case studies on extending agentic AI beyond coding copilots into the full product development lifecycle — covering workflow redesign, AI operations, output verification, and change management.</p>
+<p><strong>Why it matters:</strong> Most enterprise AI stops at the copilot stage. McKinsey's framing pushes teams to think in terms of lifecycle integration. The productivity metrics cited do not always translate to clear business outcomes, but the framework is useful for structuring internal roadmap conversations and investment proposals.</p>
 <p><strong>What should I do as a leader?</strong></p>
 <ul>
-<li>Evaluate whether Slack Code fits your organization's developer workflow, and ensure your security team reviews agent permissions and channel access controls before broad rollout.</li>
+<li>Use McKinsey's lifecycle stages to audit where your teams currently use AI and where the next highest-ROI step lives. Prioritize verification and governance infrastructure before scaling agentic workflows.</li>
 </ul>
-<p>Source: Slack, 2026-08-24 — slack.com/intl/en-in/blog/news/slack-code-channels-for-agents</p>
+<p>Source: McKinsey, 2026-08-24 — <a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/beyond-the-copilot-scaling-the-agentic-product-development-life-cycle?stcr=222BC708EA8E40E3A2A60067D665765A&amp;cid=mgp_opr-eml-alt-tmt-mgp-glb--&amp;hlkid=fc057a71bc6b42bdae9d4c70d52ff9dc&amp;hdpid=6b60bc00-e37e-4def-9b0f-6215ace1f1d2">mckinsey.com/industries/technology-media-and-telecommunications/our-insights/beyond-the-copilot-scaling-the-agentic-product-development-life-cycle</a></p>
 <hr>
-<h3>HBR Offers a Four-Step Framework for Middle-Office AI Transformation</h3>
-<p>Harvard Business Review outlines four steps for applying AI to middle-office processes: identify partially automated workflows, select processes for AI transformation, measure returns, and redirect experts to work AI cannot do.</p>
-<p><strong>Why it matters:</strong> The middle office — finance, HR, legal operations, risk — remains one of the largest untapped opportunities for enterprise AI, and the HBR framework provides a starting vocabulary for leaders who are still in planning mode. That said, enterprise AI teams with mature automation programs will find the recommendations familiar from earlier waves of robotic process automation and business-process reengineering. The article's value is in giving executive sponsors a structured pitch, not a technical blueprint.</p>
+<h2>Vendors, Platforms &amp; Models</h2>
+<h3>DeepSeek Launches Multimodal API With Reasoning-Driven Vision</h3>
+<p>DeepSeek released V4-Flash-Vision-Exp, adding reasoning-integrated image generation and editing to its API — including precise visual changes and AI-generated text within images — positioned as a lower-cost open alternative to closed-source frontier offerings.</p>
+<p><strong>Why it matters:</strong> DeepSeek continues compressing the capability gap between open-source and proprietary models, now in multimodal output. For enterprises evaluating image generation or document processing workflows, an API-accessible open model with reasoning-integrated vision matters for cost modeling and vendor risk diversification.</p>
 <p><strong>What should I do as a leader?</strong></p>
 <ul>
-<li>Use this framework as a communication tool with executive stakeholders who need a non-technical entry point into AI transformation planning.</li>
+<li>Add DeepSeek's multimodal API to your vendor evaluation matrix for imaging, document analysis, or creative-workflow automation currently scoped for proprietary providers.</li>
 </ul>
-<p>Source: Harvard Business Review, 2026-08-24 — <a href="https://hbr.org/2026/08/4-steps-to-transform-the-middle-office-with-ai">hbr.org/2026/08/4-steps-to-transform-the-middle-office-with-ai</a></p>
+<p>Source: DeepSeek API Docs, 2026-08-24 — api-docs.deepseek.com/news/news260821</p>
+<hr>
+<h2>Research &amp; Capabilities</h2>
+<h3>The Agent Harness: What Must Stay Outside the Model</h3>
+<p>Analysis in *Latent Space* traces agent architecture evolution from early ReAct loops through modern coding agents, arguing that authentication, guardrails, human-in-the-loop controls, and identity management will remain permanently outside the foundation model — even as other harness components get absorbed into smarter models.</p>
+<p><strong>Why it matters:</strong> The boundaries between model and harness will keep shifting, but security and compliance points must remain external. Enterprise teams should design these boundaries deliberately, not assume current harness components are permanent.</p>
+<p>Source: Latent Space, 2026-08-24 — latent.space/p/attention-interface</p>
+<hr>
+<h3>The Verifiability Thesis: Where AI Advances Most Reliably</h3>
+<p>Analyst Jon Stokes argues that AI advances most reliably in domains where outputs can be objectively verified — code, math, logic — while prose and creativity remain dependent on human judgment. The emerging implication: provenance and audit trails will matter more than raw quality scores.</p>
+<p><strong>Why it matters:</strong> For compliance teams, this is a practical heuristic — lead with verifiable domains and build human checkpoints into subjective ones. Expect disclosure requirements around AI-generated output in regulated industries.</p>
+<p><strong>What should I do as a leader?</strong></p>
+<ul>
+<li>Segment AI use cases into "verifiable output" and "judgment-dependent" buckets; apply proportionally stronger audit controls to the latter.</li>
+</ul>
+<p>Source: Jon Stokes via X, 2026-08-24 — <a href="https://x.com/jon_stokes/status/2091383885569405025">x.com/jon_stokes/status/2091383885569405025</a></p>
+<hr>
+<h2>Quick Hits</h2>
+<ul>
+<li><strong>NVIDIA plans to open-source AVO</strong> — watch the GitHub release for enterprise-adaptable orchestration patterns. — <a href="https://developer.nvidia.com/blog/nvidia-avo-reaches-100-on-arc-agi-3-demonstrating-a-frontier-level-general-purpose-architecture-for-long-horizon-autonomous-agents/?ncid=so-twit-543600">developer.nvidia.com</a></li>
+<li><strong>Fanatics' Bedrock-based multi-agent architecture</strong> is a useful reference for regulated-industry customer ops teams. — <a href="https://aws.amazon.com/blogs/machine-learning/how-fanatics-betting-and-gaming-built-a-multi-agent-customer-support-system/">aws.amazon.com</a></li>
+<li><strong>DeepSeek V4-Flash-Vision-Exp API is live</strong> — evaluate for document intelligence and visual reasoning workloads. — api-docs.deepseek.com</li>
+<li><strong>McKinsey's agentic lifecycle survey benchmarks</strong> are useful for justifying internal investment proposals to leadership. — <a href="https://www.mckinsey.com/industries/technology-media-and-telecommunications/our-insights/beyond-the-copilot-scaling-the-agentic-product-development-life-cycle?stcr=222BC708EA8E40E3A2A60067D665765A&amp;cid=mgp_opr-eml-alt-tmt-mgp-glb--&amp;hlkid=fc057a71bc6b42bdae9d4c70d52ff9dc&amp;hdpid=6b60bc00-e37e-4def-9b0f-6215ace1f1d2">mckinsey.com</a></li>
+<li><strong>The harness-vs-model boundary debate</strong> is maturing into a design principle: authentication, compliance, and human loops belong outside the model. — latent.space</li>
+</ul>
 <hr>
 <h2>Looking Ahead</h2>
 <ul>
-<li><strong>Model cost management will become a standard enterprise discipline.</strong> As AT&amp;T's open-source shift gains visibility, expect more organizations to formalize model routing strategies and internal LLM cost policies over the next 30 to 60 days.</li>
-<li><strong>AI harness and infrastructure will attract more investment.</strong> Zalando's publication signals that infrastructure-as-competitive-advantage is now a sharable story — watch for more enterprises publishing (and recruiting around) their internal AI platform work.</li>
-<li><strong>Agentic collaboration tools will face security scrutiny.</strong> As Slack Code and similar platforms mature, expect security and compliance teams to request audit trails and permission scoping for agent activity in shared channels.</li>
-<li><strong>Token economics will drive platform consolidation.</strong> As teams learn that caching and session management materially affect cost, expect pressure on platform teams to standardize tooling and enforce usage policies.</li>
+<li><strong>NVIDIA's AVO open-source release</strong> will catalyze new harness design patterns — assign a technical lead to evaluate the architecture within 30 days of release.</li>
+<li><strong>Multi-agent customer support</strong> will accelerate into Q4 planning cycles; scope a pilot workflow and vendor now.</li>
+<li><strong>DeepSeek's multimodal expansion</strong> signals continued cost-capability compression — revisit document AI and visual workflow vendor selections before year-end.</li>
+<li><strong>Verifiability as governance lens</strong> is gaining traction; expect compliance teams to begin requiring verifiable-output classifications in AI project proposals.</li>
 </ul>
 <hr>
 <h2>Sign-off</h2>
-<p>From Silicon Valley to Singapore, the same realization is settling in: the era of simply choosing the best model and moving on is giving way to something more deliberate — and more durable. The organizations winning with AI right now are the ones investing in the infrastructure, governance, and craft that surrounds the model, not just the model itself. That is patient, unglamorous work, and it is exactly the kind that tends to compound over time.</p>
-<p>Take a breath this week, share one of these stories with a colleague who is still wondering where to start, and remember that the goal was never to adopt AI for its own sake. The goal is to do good work, more of it, with fewer regrets about the process. The tools are catching up to that ambition — and so are the people using them.</p>
+<p>The theme threading through yesterday's news is one of increasing maturity — not in AI itself, but in how organizations are building around it. The model is no longer the story. The scaffolding, the orchestration, the guardrails, the careful handoffs between agents and humans: that is where the real work is happening, and where the real differentiation will live.</p>
+<p>It is worth pausing to appreciate how much has shifted in the past 18 months. The questions enterprise teams are asking now — about harness design, agent boundaries, verifiable output, and cost-per-workflow — are genuinely sophisticated. They reflect hard-won experience, not hype.</p>
+<p>Wherever you are in this journey — early experiments or full production deployments — the work is meaningful. Building AI systems that are reliable, auditable, and worthy of trust is not just a technical challenge; it is a stewardship one. Keep building carefully, and we will be back tomorrow.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>Feed 1</strong> (<code>rss.tedt.org/ai_rss_feed.json</code>): 50 items fetched successfully</li>
-<li><strong>Feed 2</strong> (<code>rss.tedt.org/aggregated_wes_ai_news.json</code>): 404 Not Found — unavailable</li>
-<li><strong>Window:</strong> 2026-08-23 18:04 PDT to 2026-08-25 06:04 PDT (48-hour window used; items dated 2026-08-24 00:00 UTC resolve to 2026-08-23 17:00 PDT, just outside the strict 36-hour window — included as "yesterday's" content per editorial intent)</li>
-<li><strong>items_fetched_count:</strong> 50 (Feed 1 only)</li>
-<li><strong>items_within_24_36_hours_count:</strong> 5 (using 48-hour window to capture UTC-midnight-stamped items)</li>
-<li><strong>items_deduplicated_count:</strong> 5 (no duplicates found)</li>
-<li><strong>items_published_count:</strong> 5 (all qualifying items published; Quick Hits section omitted due to no additional items)</li>
-<li><strong>excluded_items_summary:</strong> 45 items excluded — all dated 2026-08-23 or earlier in PT; none overlapped with the previous newsletter</li>
-<li><strong>Previous newsletter checked:</strong> yes — no URL overlap with existing Daily-Report/AI/index.html</li>
+<li><strong>Feed 1:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code> — fetched successfully; 50 items total</li>
+<li><strong>Feed 2:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — HTTP 404, unavailable</li>
+<li><strong><code>items_fetched_count</code>:</strong> 50</li>
+<li><strong><code>items_within_24_36_hours_count</code>:</strong> 0 strictly within 36-hour window; 6 items dated 2026-08-24 17:00 PT (~37 hours before generation at 2026-08-26 06:05 PT)</li>
+<li><strong><code>items_deduplicated_count</code>:</strong> 6 unique items; no duplicates</li>
+<li><strong><code>items_published_count</code>:</strong> 6</li>
+<li><strong>Window note:</strong> Feed items use midnight UTC timestamps normalized to 17:00 PT (UTC−7). The 6 Aug. 24 items fell ~37 hours before generation — 1 hour outside the standard 36-hour window. Included because they were not covered in the 2026-08-25 edition and Feed 2 was unavailable.</li>
+<li><strong>Previous newsletter:</strong> 2026-08-25 edition covered AT&amp;T open-source model shift, Zalando agentic infrastructure, Slack Code, Claude Code, and Middle Office AI — all Aug. 23-dated items. None repeated here.</li>
+<li><strong>Excluded items:</strong> 44 items older than 37 hours (Aug. 20 and earlier) excluded.</li>
+<li><strong>Generation time:</strong> 2026-08-26 06:05 PDT</li>
 </ul>
     </section>
     <footer>
