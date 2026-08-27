@@ -37,6 +37,7 @@ media/audio/Making-AI-Adoption-Predictable-and-Boring-on-Purpose.m4a
 media/audio/Winning-the-Intelligence-Inversion.m4a
 media/files/GenAI-Cost-Mode.dat
 media/files/ITIL-Foundation-ITIL-4-Edition-Print.pdf
+media/video/Edison-Award-2026-Winner.mp4
 tools/lib/webperl/emperl.data
 
 # Historical backup/shadow files. Do not add new entries; delete or migrate these
