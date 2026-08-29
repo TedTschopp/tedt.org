@@ -5316,5 +5316,38 @@
       "https://tschopp.net/users/Ted/statuses/117140491577788003"
     ],
     "lastTootTimestamp": 1787422051799
+  },
+  "https://tedt.org/Model-Portability-Is-Not-AI-Portability/": {
+    "id": "/Model-Portability-Is-Not-AI-Portability/",
+    "title": "Model Portability Is Not AI Portability",
+    "summary": "Large enterprises are learning how to switch models. Moving a working business process without losing quality, controls, or money is a different problem.",
+    "content_text": "Large enterprises are learning how to switch models. Moving a working business process without losing quality, controls, or money is a different problem. https://tedt.org/Model-Portability-Is-Not-AI-Portability/",
+    "url": "https://tedt.org/Model-Portability-Is-Not-AI-Portability/",
+    "image": "https://tedt.org/img/2026-08/The-System-Behind-the-Engine.webp",
+    "tags": [
+      "enterprise AI",
+      "AI portability",
+      "model portability",
+      "multi-model gateways",
+      "AI agent harness",
+      "AI governance",
+      "vendor lock-in",
+      "workflow portability",
+      "AI operating model",
+      "model migration",
+      "platform engineering",
+      "technology contracts"
+    ],
+    "date_published": "2026-08-28T09:00:00-07:00",
+    "date_modified": "2026-08-28T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117177351964959201"
+    ],
+    "lastTootTimestamp": 1787984496637
   }
 }
