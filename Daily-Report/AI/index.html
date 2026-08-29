@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-27 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-28 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,88 +52,102 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-27</h1>
-      <p class="meta">Generated <time datetime="2026-08-28T16:55:05+00:00">2026-08-28T16:55:05Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-28</h1>
+      <p class="meta">Generated <time datetime="2026-08-29T12:52:06+00:00">2026-08-29T12:52:06Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Wednesday's enterprise AI story was really about two things happening at once: AI is pushing deeper into everyday workflows — non-engineers building product experiences, AI tools finally remembering context between sessions — while bigger questions about labor, governance, and cost are rising to the surface. Bill Gates called this moment "turbulent" for a reason.</p>
-<p><strong>Key actions for this week:</strong></p>
+      <p>Enterprise AI took a structural turn on Aug. 28, with Salesforce and Anthropic formalizing a deep CRM integration, Anthropic floating a hardware interoperability standard, and Cohere quietly tackling one of the most stubborn enterprise blockers: document parsing. Together, these moves signal that the "AI strategy" conversation is shifting from "should we?" to "how do we govern it at scale?"</p>
+<p><strong>Action bullets for leaders:</strong></p>
 <ul>
-<li>Assess whether your organization has a formal position on AI's workforce impact — executives will face this question publicly soon.</li>
-<li>Review non-engineer access to AI coding tools like Codex for low-risk internal prototyping opportunities.</li>
-<li>Evaluate Chinese open-weight models (GLM-5.3-Flash) for cost-sensitive workloads, with appropriate security review.</li>
-<li>Ask your AI vendors about persistent memory features and how user data is stored across sessions.</li>
-<li>Flag the Gates piece to your strategy and policy teams as a pre-read for any upcoming board-level AI conversation.</li>
+<li><strong>Salesforce + Anthropic "Claudeforce":</strong> Evaluate whether packaged Claude skills inside Salesforce CRM fit your existing data governance model before your sales teams bring it in through the side door.</li>
+<li><strong>Anthropic Model Hardware Standard:</strong> Watch this emerging standard closely; if it gains traction like MCP did, infrastructure and procurement decisions made today may need revisiting.</li>
+<li><strong>Cohere Parse:</strong> If your enterprise AI initiatives are stalling on unstructured document data — PDFs, charts, embedded tables — a dedicated parsing layer is worth piloting now.</li>
+<li><strong>AI-driven strategic simulation:</strong> Harvard Business Review's new piece is a concise brief for board-level and C-suite conversations about AI's role in scenario planning.</li>
+<li><strong>Gemini Omni 1.1 Flash:</strong> For teams building on Google's stack, the expanded video generation controls and lower-resolution options are worth a second look for mobile and internal content workflows.</li>
 </ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
       <h2>Big Moves</h2>
-<h3>Bill Gates: The Turbulent AI Era Demands Policy Choices Now</h3>
-<p>Bill Gates published a wide-ranging reflection on what he calls the "turbulent AI era," examining the tension between AI's enormous potential and its disruptive effects on employment, inequality, and governance. He surfaced specific policy ideas — including a tax on AI token usage — and warned that the window for shaping AI's societal role is short.</p>
-<p><strong>Why it matters:</strong> This piece is not an academic essay. Gates is one of the most widely read voices in global business, and his framing of AI as a force requiring deliberate governance choices is now entering mainstream C-suite conversations. Enterprises in sectors with high labor intensity — logistics, customer service, financial operations — will feel this pressure acutely. Leaders who don't yet have a prepared response to "what is your organization doing about AI and jobs?" are behind.</p>
-<p><strong>As a leader:</strong> Read this piece and brief your communications and policy teams. Develop at least a one-paragraph position on how your organization is handling AI-driven workforce change. You will be asked.</p>
-<p><strong>As an individual:</strong> If you are curious about how AI may affect your role, this is a thoughtful, balanced read — not a doomsday prediction, but a clear-eyed look at the tradeoffs.</p>
-<p>Source: Gates Notes, 2026-08-27</p>
+<h3>Salesforce and Anthropic Formalize "Claudeforce" — AI Skills Baked Into the World's Largest CRM</h3>
+<p>Salesforce and Anthropic announced a deep product integration that brings packaged Claude-powered AI skills directly into the Salesforce platform. Rather than a generic API partnership, the deal introduces reusable, pre-built cognitive capabilities that sales teams can deploy while Salesforce's governance layer controls how they operate inside enterprise environments.</p>
+<p><strong>Why it matters:</strong> This is less a technology announcement than an enterprise architecture announcement. Modularizing AI skills — so they're governed, repeatable, and auditable — is exactly what large sales organizations need before they can scale AI adoption responsibly. It also signals that CRM vendors see AI not as a bolt-on but as a native layer of the product. For enterprises already on Salesforce, the path to AI-augmented sales workflows just got significantly shorter and potentially more compliant.</p>
+<ul>
+<li><strong>Leaders:</strong> Engage your Salesforce admin team and legal/compliance colleagues now. Review what data flows through CRM and whether Claude-powered skills will require updated data-use agreements or privacy reviews.</li>
+<li><strong>Individuals:</strong> If you work in sales or sales operations, start asking your manager when pilots will be available — and consider volunteering to be part of a test group.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/">Salesforce Newsroom, 2026-08-26</a></p>
 <hr>
-<h3>loveholidays: Non-Engineers Are Now Building Customer Experiences with Codex</h3>
-<p>OpenAI published a case study on how loveholidays, a European travel company, enabled non-engineers to use Codex to prototype and ship customer-facing digital experiences. Ten experiences were created; three reached the live site. Engineering teams then stepped in to harden and scale the best prototypes.</p>
-<p><strong>Why it matters:</strong> The traditional product lifecycle — business idea, product manager spec, design review, engineering build — is starting to compress in organizations willing to experiment. When the person with the customer insight is also the person who can rough out a working prototype, cycle times shrink and the number of ideas tested rises. The risk is quality: code produced by non-engineers without proper review can introduce security gaps, accessibility failures, or technical debt that engineering teams inherit.</p>
-<p><strong>As a leader:</strong> Consider a structured pilot: identify one low-risk internal process where a non-technical team has ideas they can't currently act on, and give them guided access to an AI coding tool with engineering review built in. Measure speed-to-prototype and defect rate before expanding.</p>
-<p><strong>As an individual:</strong> If you have ideas for improving a customer or internal experience but don't code, your organization may be closer than you think to giving you the tools to test those ideas. Ask your manager.</p>
-<p>Source: <a href="https://openai.com/index/loveholidays/">OpenAI, 2026-08-27</a></p>
+<h3>Anthropic Previews a Model Hardware Standard — Could This Become the Next MCP?</h3>
+<p>Anthropic published a research preview of a proposed Model Hardware Standard designed to improve interoperability between AI models and the hardware they run on. The proposal arrives with significant credibility: Anthropic previously co-developed the Model Context Protocol (MCP), which quickly became a widely adopted standard for connecting AI agents to tools and data sources.</p>
+<p><strong>Why it matters:</strong> Standards matter enormously in enterprise technology — they determine what you can procure, what you can integrate, and what you'll have to replace in five years. If this hardware standard follows the MCP trajectory, it could reshape how enterprises evaluate AI hardware investments, data center contracts, and cloud provider decisions. It is early days, but the source carries enough weight to merit attention from CTO and infrastructure leadership teams now.</p>
+<ul>
+<li><strong>Leaders:</strong> Flag this for your infrastructure and cloud strategy team. Even a preview-stage standard from Anthropic deserves a place on the technology watch list, especially for organizations making significant hardware or sovereign AI investments.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://www.anthropic.com/news/model-hardware-standard-research-preview">Anthropic, 2026-08-27</a></p>
+<hr>
+<h2>Enterprise Ops &amp; Adoption</h2>
+<h3>Natera Automates Patient Appointment Scheduling End-to-End with AWS Bedrock AgentCore</h3>
+<p>Natera, a genomics testing company, deployed a voice AI and agentic workflow solution built on Amazon Bedrock AgentCore to automate blood-test appointment scheduling from start to finish. Early simulation results report strong patient satisfaction and a meaningful reduction in transfers to human agents.</p>
+<p><strong>Why it matters:</strong> Healthcare is one of the most regulated and operationally complex environments for AI deployment, and a production example with measurable outcomes carries real weight. The Natera case demonstrates that agentic AI — where an AI model completes a multi-step task autonomously — can close the loop on customer workflows that previously required human intervention at every handoff. For enterprises in other regulated industries (financial services, utilities, insurance), this is a useful proof point for internal business cases.</p>
+<ul>
+<li><strong>Leaders:</strong> If your organization handles high-volume inbound customer scheduling or service intake, this AWS reference architecture is worth reviewing. Consider a targeted pilot in a lower-risk customer journey first.</li>
+<li><strong>Individuals:</strong> For IT and enterprise architects evaluating AWS's agent infrastructure, the Bedrock AgentCore technical implementation here offers a concrete, production-tested pattern.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://aws.amazon.com/blogs/machine-learning/nateras-intelligent-appointment-scheduling-with-amazon-bedrock-agentcore/">AWS Machine Learning Blog, 2026-08-27</a></p>
+<hr>
+<h3>HBR: AI Is Reshaping How Leaders Make Strategic Decisions</h3>
+<p>A new Harvard Business Review analysis argues that AI-powered simulation and scenario modeling are enabling executive teams to explore strategic alternatives — product launches, customer behavior, supply chain stress tests, market responses — more thoroughly and rapidly than traditional financial projections allow.</p>
+<p><strong>Why it matters:</strong> Strategic planning cycles are typically annual, slow, and constrained by the time it takes to model alternatives manually. AI-driven simulation compresses that cycle and expands the range of scenarios a leadership team can realistically consider. The HBR piece is brief and board-ready, making it a useful framing document for anyone who needs to explain the strategic value of AI investment to non-technical stakeholders.</p>
+<ul>
+<li><strong>Leaders:</strong> Share this article with your strategy, finance, or FP&amp;A teams as a conversation starter. If your organization is still doing scenario planning primarily in spreadsheets, there is a concrete productivity and quality gap to close.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://hbr.org/2026/09/ai-is-revolutionizing-strategic-decision-making">Harvard Business Review, 2026-09</a></p>
 <hr>
 <h2>Vendors, Platforms &amp; Models</h2>
-<h3>GLM-5.3-Flash: A Capable Open-Weight Model at a Fraction of Frontier Cost</h3>
-<p>Z.ai released GLM-5.3-Flash, an open-weight multimodal model that debuted under the pseudonym AUX Alpha before its public release. The model targets strong benchmark performance at significantly lower inference cost than leading frontier models, running on Chinese accelerator hardware.</p>
-<p><strong>Why it matters:</strong> Open-weight models from Chinese AI labs continue to narrow the gap with Western frontier models on cost and capability benchmarks. For enterprises under cost pressure on AI inference — particularly those running high-volume, lower-sensitivity workloads — these models represent a real option. But open-weight does not mean zero-risk: data handling, export controls, and supply-chain security all require review before deployment.</p>
-<p><strong>As a leader:</strong> Have your AI and security teams establish a policy framework for evaluating open-weight models, including ones from non-US labs. A blanket ban may be too blunt; a blanket approval is too permissive. A structured review process is the right tool.</p>
-<p>Source: Z.ai Blog, 2026-08-27</p>
-<hr>
-<h3>Claude Cowork Gains Persistent Memory Across Chat and Work Sessions</h3>
-<p>Anthropic updated Claude Cowork to carry context from chat conversations into agentic work sessions — and back — so users no longer have to manually re-establish context when switching between conversational AI and task-based AI work.</p>
-<p><strong>Why it matters:</strong> Persistent AI memory is deceptively important for enterprise adoption. The friction of re-explaining context — your role, your current project, your preferences — every time you open a new session is one of the top reasons enterprise users revert to manual processes. As AI tools gain the ability to remember across sessions, the productivity gap between power users and new adopters narrows. It also raises data governance questions: what is retained, where, and who can access it?</p>
-<p><strong>As a leader:</strong> Ask your AI vendor or internal IT team what memory and context features are active in your deployed AI tools, and confirm that your data retention policies cover AI memory stores.</p>
-<p>Source: <a href="https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/">TechCrunch, 2026-08-27</a></p>
-<hr>
-<h3>Google Releases Gemini 3.5 Transcribe with Multilingual Reasoning</h3>
-<p>Google announced Gemini 3.5 Transcribe, advancing its speech recognition capabilities with improved multilingual support and reasoning features intended to strengthen transcription accuracy in complex conversational contexts.</p>
-<p><strong>Why it matters:</strong> AI transcription is already table stakes in enterprise tooling — meeting notes, customer call analysis, multilingual support ticketing. Gemini 3.5 Transcribe adds reasoning-layer improvements that could improve accuracy in technical, legal, or multilingual contexts where standard transcription struggles. Worth tracking for organizations with global customer support or compliance recording requirements.</p>
-<p>Source: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/">Google Blog, 2026-08-27</a></p>
-<hr>
-<h2>Quick Hits</h2>
+<h3>Cohere Launches Parse — Enterprise Document Intelligence for Messy, Real-World Data</h3>
+<p>Cohere introduced Parse, a product focused on extracting structured information from the kinds of documents that typically defeat general-purpose AI systems: complex PDFs, charts, embedded tables, mixed-format reports. The product targets the foundation of Retrieval-Augmented Generation (RAG) pipelines and enterprise AI workflows that depend on unstructured data.</p>
+<p><strong>Why it matters:</strong> Document parsing is one of the most underappreciated blockers to enterprise AI deployment. Organizations routinely discover that their highest-value information is locked in PDFs, legacy reports, or scanned contracts that models cannot reliably interpret. Cohere's Parse aims to make that layer reliable enough to trust in production. For any enterprise that has hit a wall trying to build RAG systems on real internal documents, this is worth a direct evaluation.</p>
 <ul>
-<li><strong>OpenAI uses its own Codex to automate internal developer workflows</strong> — a narrow but useful example of AI-assisted build automation applied in-house. OpenAI / Learn ChatGPT, 2026-08-27</li>
+<li><strong>Leaders:</strong> If your AI pilot or production system depends on document ingestion and you are experiencing quality problems, add Cohere Parse to your vendor evaluation shortlist.</li>
+<li><strong>Individuals:</strong> Data engineers and AI architects: request a sandbox trial and test Parse against your most problematic document types before committing to a custom solution.</li>
 </ul>
+<p><strong>Source:</strong> Cohere Blog, 2026-08-27</p>
+<hr>
+<h3>Google Expands Gemini Omni 1.1 Flash With Greater Creative and Editorial Control</h3>
+<p>Google released updates to Gemini Omni 1.1 Flash, its multimodal model with video generation capabilities. The update adds more directorial and editorial control over generated video sequences, extends the length of what can be produced, and introduces lower-resolution generation options intended to reduce costs for mobile-oriented or internal content use cases.</p>
+<p><strong>Why it matters:</strong> The practical additions here — particularly cost-reducing resolution options and longer sequences with better control — move generative video closer to production viability for internal enterprise content: training videos, explainer content, product demos. For teams building on Google Cloud or Workspace, the update is incremental but directionally important for content workflows that currently require expensive human production resources.</p>
+<ul>
+<li><strong>Individuals:</strong> Developers building on Google's AI stack should review the updated API parameters and test the new control features for existing video generation use cases.</li>
+</ul>
+<p><strong>Source:</strong> <a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/">Google Blog, 2026-08-27</a></p>
 <hr>
 <h2>Looking Ahead</h2>
 <ul>
-<li><strong>Non-engineer AI prototyping will push governance decisions faster than expected.</strong> If teams start shipping customer-facing features without traditional engineering review, quality and security standards need to be in place before the first incident — not after.</li>
-<li><strong>The workforce and AI policy conversation is moving from think tanks to boardrooms.</strong> Organizations that haven't drafted internal messaging on AI and employment should begin that work now.</li>
-<li><strong>Open-weight model proliferation from multiple geographies will accelerate.</strong> Enterprises need procurement and security review processes that can evaluate these models on a rolling basis, not case-by-case with long approval cycles.</li>
-<li><strong>Persistent AI memory features will arrive in most enterprise AI tools within the next two quarters.</strong> Start conversations with your data governance and legal teams now about retention, access, and deletion policies.</li>
+<li><strong>Claudeforce rollout timing:</strong> Watch for Salesforce's announcement of pilot availability dates and any data governance documentation. Enterprise procurement and legal teams should begin readiness assessments now.</li>
+<li><strong>Anthropic hardware standard participation:</strong> If your organization participates in AI standards bodies or vendor advisory programs, consider nominating a representative to engage with Anthropic's hardware standard process early.</li>
+<li><strong>Document AI evaluation sprint:</strong> Organizations with active RAG initiatives should schedule a structured evaluation of document parsing vendors — including Cohere Parse — before Q4 planning locks budgets.</li>
+<li><strong>AI in strategic planning:</strong> As AI-driven scenario modeling matures, expect CFO and strategy teams to start requesting capability briefings from IT. Proactively prepare a short brief on what is available and what would be required to pilot it.</li>
 </ul>
 <hr>
-<h2>Until Tomorrow</h2>
-<p>The news cycle never quite stops, but most of the work worth doing does happen between the headlines. Wednesday's stories are a reminder that AI's biggest enterprise challenges right now aren't technical — they're organizational: Who gets access to what tools? Who reviews what output? What happens when an AI tool remembers something a user wishes it hadn't?</p>
-<p>These are the questions that governance frameworks, HR policies, and legal teams need to be answering in parallel with the technology teams who are building and deploying. The organizations that get this coordination right — not just the ones with the best models — will be the ones that look back on this period and say they handled it well.</p>
-<p>Thanks for reading. See you tomorrow.</p>
+<h2>Sign-Off</h2>
+<p>Yesterday's news was, at its core, about infrastructure — the unglamorous but essential work of making AI trustworthy enough to operate inside enterprise systems that billions of people depend on. A hardware interoperability standard, a document parsing product, a CRM integration with governance baked in: these are the kinds of moves that don't generate consumer headlines but do determine whether AI delivers on its promise inside real organizations.</p>
+<p>There's a quiet confidence in the pace of this work. The hard problems are being named, addressed, and slowly solved — one standard, one parsing layer, one agentic workflow at a time. It's the kind of steady, purposeful effort that tends to compound in ways that look obvious only in hindsight.</p>
+<p>Stay grounded, stay curious, and keep asking what the news means for the people in your organization who haven't yet found their footing with these tools. They're the ones this work is ultimately for.</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li>Feed 1 (<code>https://rss.tedt.org/ai_rss_feed.json</code>): 50 items fetched total.</li>
-<li>Feed 2 (<code>https://rss.tedt.org/aggregated_wes_ai_news.json</code>): HTTP 404 — feed unavailable; excluded from this edition.</li>
-<li>Items with publication date 2026-08-27T00:00:00Z (= Aug 26 17:00 PDT): 6 items identified as "yesterday" content not yet covered.</li>
-<li>Previous newsletter (2026-08-26 edition) covered Aug 25 UTC items — those were excluded from this edition.</li>
-<li>Timing note: Feed timestamps are anchored at midnight UTC (5 p.m. PDT). The strict 36-hour lookback from 9:51 a.m. PDT Aug 28 would place the Aug 26 17:00 PDT items ~1 hour outside the window. Editorial judgment: these are the newest uncovered items; included as "yesterday's" content per newsletter intent.</li>
-<li>Items fetched count: 50</li>
-<li>Items within editorial window (Aug 27 UTC): 6</li>
-<li>Items deduplicated: 0 (no duplicates found)</li>
-<li>Items published (main sections): 5</li>
-<li>Items in Quick Hits: 1</li>
-<li>Excluded items: 44 — 6 from Aug 25 (covered in prior edition), 38 older than 36–48 hours.</li>
+<li>Feed 1: <code>https://rss.tedt.org/ai_rss_feed.json</code> — 50 total items fetched</li>
+<li>Feed 2: <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> — HTTP 404 (unavailable); excluded from this edition</li>
+<li>Items within 36-hour window (strict): 0 (all Aug 27 items fell at 17:00 PT, approximately 36.8 hours before generation)</li>
+<li>Items within 48-hour window (extended to capture Aug 27 content): 6</li>
+<li>Window extended to 48 hours because all feed items carry a normalized 17:00 PT timestamp for each day, and the Aug 27 batch fell 47 minutes outside the strict 36-hour cutoff; these are genuinely "yesterday's" items for a newsletter dated 2026-08-28</li>
+<li>Items deduplicated: 0 duplicates removed</li>
+<li>Items excluded as already covered in last 7 days: 0 (checked against existing <code>Daily-Report/AI/index.html</code>, dated 2026-08-27, which covered distinct URLs)</li>
+<li>Items published: 6 (all 6 qualifying items included — below the 8–12 target; second feed unavailable reduced coverage)</li>
+<li>Excluded items summary: 44 items excluded as older than 48 hours (pre-Aug 27); Feed 2 entirely unavailable</li>
 </ul>
     </section>
     <footer>
