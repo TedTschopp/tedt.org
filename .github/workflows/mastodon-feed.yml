@@ -74,7 +74,7 @@ jobs:
             echo "[allure] Artifact had no history directory; skipping."
           fi
       - name: Setup Python
-        uses: actions/setup-python@v6
+        uses: actions/setup-python@v7
         with:
           python-version: '3.x'
       - name: Decide if we should post
