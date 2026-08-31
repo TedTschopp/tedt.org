@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Daily Report - 2026-08-30 | TedT.org</title>
+  <title>Daily Report - 2026-08-31 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,104 +52,122 @@
   <main>
     <header>
             <div class="eyebrow">Daily Report</div>
-      <h1>Daily Report - 2026-08-30</h1>
-      <p class="meta">Generated <time datetime="2026-08-30T04:37:39+00:00">2026-08-30T04:37:39Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Daily Report - 2026-08-31</h1>
+      <p class="meta">Generated <time datetime="2026-08-31T04:41:34+00:00">2026-08-31T04:41:34Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">Bottom Line Up Front</h2>
-      <p>Site is healthy. The last deploy succeeded. Automated pipelines (Mastodon feed, daily report, Enterprise AI refresh) are all running on schedule. Ted pushed a manual cleanup commit on 2026-08-29 removing redundant code blocks. Six Dependabot PRs and one feature PR are sitting open; none are blocking. One open issue asks for richer category landing pages — a discovery UX improvement worth prioritizing.</p>
+      <p>Automation pipelines are healthy and running on schedule. Two substantive human-authored commits landed over the past 48 hours: removal of redundant code blocks and expansion of an AI agent environments article. The Edison Award 2026 video asset was added earlier this week. The May 2026 audit backlog (#163) has three P0 blockers unresolved — Node.js 20 deprecation deadline, artifact size over the 1 GB GitHub Pages limit, and 234 pages with missing <code>img src</code> attributes. A <code>sass-embedded</code> dependency bump PR is open and unreviewed. No build failures observed in recent completed workflow runs.</p>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Report</h2>
-      <h2>Repository Activity — Last 7 Days</h2>
-<h3>Commits by TedTschopp</h3>
+      <h2>Bottom Line</h2>
+<p>Pipelines are green and running. Automation commits (daily report refresh, Enterprise AI "yesterday" refresh, Mastodon sync) continue as expected. Two meaningful human changes landed since 2026-08-29. Three P0 quality issues remain open and unresolved from the May 2026 audit — these carry real deadlines and deployment risks.</p>
+<hr>
+<h2>Recent Repository Activity</h2>
+<h3>Human-authored commits (past ~5 days)</h3>
 <ul>
-<li><strong>2026-08-29 04:41</strong> — <code>chore: remove redundant code blocks from the repository</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/9fbf0a2be19c8ca12ecab829604dcc5a0f3a8a4e">307aa97 context</a>)</li>
-<li><strong>2026-08-27 20:21</strong> — <code>Create Edison-Award-2026-Winner.mp4</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/ee961222357d141d0dc1f6791e61970ce97e2609">ee96122</a>)</li>
-<li><strong>2026-08-27 20:36</strong> — <code>chore(ci): add Edison Award 2026 video to allowed large files</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/0f2956a0017b2333b70a8242ea1082834eca7a25">0f2956a</a>)</li>
-<li><strong>2026-08-24 03:21</strong> — <code>content(article): add sources and expand discussion on AI agent environments</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/e7f3793ebe29b16fce8c1cab905f423d03e2f3a0">e7f3793</a>)</li>
-<li><strong>2026-08-23 17:17</strong> — <code>feat(documentation): add comprehensive reference model for IT organization and user journeys</code> (<a href="https://github.com/TedTschopp/tedt.org/commit/6ecf59e43c1aa6ecb381c21fb56c85e950ca967a">6ecf59e</a>)</li>
+<li><strong>2026-08-29</strong> — <code>chore: remove redundant code blocks from the repository</code></li>
 </ul>
-<h3>Automated Bot Commits (github-actions)</h3>
+<p><a href="https://github.com/TedTschopp/tedt.org/commit/9fbf0a2be19c8ca12ecab829604dcc5a0f3a8a4e">9fbf0a2</a> — cleanup of stale or duplicate code from the codebase. Low risk, good housekeeping.</p>
 <ul>
-<li>Daily report refreshed: 2026-08-29, 2026-08-28, 2026-08-27, 2026-08-26, 2026-08-25, 2026-08-24</li>
-<li>"Refresh yesterday in enterprise ai" ran daily: 2026-08-29, 2026-08-28, 2026-08-27, 2026-08-26, 2026-08-25, 2026-08-24</li>
-<li>Mastodon cache / front matter update: 2026-08-29 06:21</li>
+<li><strong>2026-08-29</strong> — <code>chore: update Mastodon cache/front matter</code></li>
+</ul>
+<p><a href="https://github.com/TedTschopp/tedt.org/commit/99ff4fdea20fe12ca419df9b795566f8cf3d019c">99ff4fd</a> — automated Mastodon sync triggered by TedTschopp; front matter IDs updated.</p>
+<ul>
+<li><strong>2026-08-27</strong> — <code>Create Edison-Award-2026-Winner.mp4</code> + <code>chore(ci): add Edison Award 2026 video to allowed large files</code></li>
+</ul>
+<p><a href="https://github.com/TedTschopp/tedt.org/commit/ee961222357d141d0dc1f6791e61970ce97e2609">ee96122</a> / <a href="https://github.com/TedTschopp/tedt.org/commit/0f2956a0017b2333b70a8242ea1082834eca7a25">0f2956a</a> — new video asset added, CI allowlist updated. Note: the repo artifact is already over 1 GB; adding binary video assets increases that pressure.</p>
+<ul>
+<li><strong>2026-08-24</strong> — <code>content(article): add sources and expand discussion on AI agent environments</code></li>
+</ul>
+<p><a href="https://github.com/TedTschopp/tedt.org/commit/e7f3793ebe29b16fce8c1cab905f423d03e2f3a0">e7f3793</a> — substantive content update to an article about AI agent environments.</p>
+<h3>Automated commits (routine)</h3>
+<ul>
+<li>Daily report refresh: runs at ~04:37 UTC each day — last confirmed 2026-08-30.</li>
+<li>Enterprise AI "yesterday" refresh: runs at ~12:52 UTC — last confirmed 2026-08-30.</li>
+<li>Mastodon cache/front matter sync: periodic, triggered on schedule.</li>
 </ul>
 <hr>
 <h2>Workflow Health</h2>
-<h3>Site Quality + Deploy (<code>deploy.yml</code>)</h3>
+<h3>Current run (this report)</h3>
 <ul>
-<li><strong>Last run</strong>: #1196 — <code>completed / success</code></li>
-<li>Triggered by <code>workflow_dispatch</code> on HEAD <code>307aa97</code></li>
-<li><a href="https://github.com/TedTschopp/tedt.org/actions/workflows/deploy.yml">Run link</a></li>
+<li><strong>Daily Report</strong> workflow run <code>33357705465</code> — <code>in_progress</code> at report time. [ASSUMPTION: will complete successfully based on pattern.]</li>
 </ul>
-<h3>Feed to Mastodon (<code>mastodon-feed.yml</code>)</h3>
+<h3>Recent completed runs</h3>
 <ul>
-<li><strong>Last run</strong>: #2220 — <code>completed / success</code></li>
-<li>Scheduled run, HEAD <code>307aa97</code></li>
-<li><a href="https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed.yml">Run link</a></li>
+<li><strong>Scheduled (CodeQL)</strong> — <code>completed / success</code> as of 2026-08-30. Security scanning is passing.</li>
+<li>Total workflow runs in repo history: 8,471+ — automation is well-established and stable.</li>
 </ul>
-<h3>Daily Report (this workflow)</h3>
-<ul>
-<li>Run #123 — currently <code>in_progress</code> (this run)</li>
-</ul>
-<p>All monitored workflows are green. No failures visible in the most recent runs.</p>
+<h3>No observed failures</h3>
+<p>No failed workflow conclusions are visible in the most recent completed runs. [ASSUMPTION: based on available preview data; full run list was too large to enumerate completely.]</p>
 <hr>
 <h2>Open Pull Requests</h2>
-<p>Seven PRs are open, all low-risk:</p>
+<h3>Dependency bump — open, unreviewed</h3>
 <ul>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/226">#226</a>** — Dependabot: <code>sass-embedded</code> 1.102.0 → 1.103.1</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/225">#225</a>** — Dependabot: <code>google-protobuf</code> 4.33.2 → 4.36.0</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/224">#224</a><strong> — Feature: </strong>Traveller gear: sort by Tech Level and filter by skill** (by TedTschopp)</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/219">#219</a>** — Dependabot: npm/yarn group bump (2 packages)</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/216">#216</a>** — Dependabot: <code>actions/setup-python</code> 6 → 7</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/215">#215</a>** — Dependabot: <code>actions/cache</code> 5 → 6</li>
-<li>**<a href="https://github.com/TedTschopp/tedt.org/pull/214">#214</a>** — Dependabot: (additional dependency — title not fully retrieved)</li>
+<li><strong>sass-embedded 1.102.0 → 1.103.1</strong></li>
 </ul>
-<p>The <code>sass-embedded</code> update (#226) is notable: the upstream changelog shows Ruby 3.1 support was dropped in this range. Verify Gemfile Ruby version constraints before merging if you are still on 3.1 anywhere. The Gemfile already has Ruby &gt;=3.1 conditional guards — confirm 3.2 is the minimum in CI before merging.</p>
+<p>Dependabot PR — routine patch bump. No known breaking changes in this range. Low risk to merge. _Action needed: review and merge or dismiss._</p>
 <hr>
-<h2>Open Issues</h2>
-<p>At least one substantive open issue:</p>
+<h2>Open Issues — Backlog Health</h2>
+<h3>P0 — Immediate blockers (from tracker <a href="https://github.com/TedTschopp/tedt.org/issues/163">#163</a>)</h3>
 <ul>
-<li><strong>Category landing pages enrichment</strong> — 41 category pages currently act as minimal redirect stubs. They lack related category navigation, tag clouds, content depth indicators, and breadcrumbs. This is a discovery UX gap.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/150">#150</a>** Update GitHub Actions workflows from Node.js 20 to Node.js 24</li>
 </ul>
-<hr>
-<h2>Content &amp; Publishing Pipeline Observations</h2>
+<p>Node.js 20 deprecation has a hard GitHub Actions deadline. Failure to act means CI will warn or break.</p>
 <ul>
-<li><strong>Edison Award 2026 video</strong> was added to the repo and allowed as a large file. This is a notable personal milestone worth surfacing prominently (e.g., as a hero asset or featured post).</li>
-<li><strong>AI agent environments article</strong> was expanded with sources on 2026-08-24.</li>
-<li><strong>IT organization reference model</strong> documentation was added on 2026-08-23. [ASSUMPTION] This appears to be work-in-progress documentation for a professional artifact, not a published post.</li>
-<li>The "refresh yesterday in enterprise ai" bot commit fires daily — confirm this automation is intentional and the content it updates is rendering correctly on the live site.</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/151">#151</a>** Fix <code>&lt;img&gt;</code> elements with missing <code>src</code> attribute in rendered HTML (234 pages)</li>
+</ul>
+<p>Accessibility and validity failure across a significant portion of the site.</p>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/152">#152</a>** Reduce GitHub Pages artifact size below 1 GB limit (currently 1.16 GB)</li>
+</ul>
+<p>Adding the Edison Award video this week likely worsens this. The artifact is already over limit. Deploy reliability is at risk.</p>
+<h3>P1 — Quality issues</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/153">#153</a>** YAML Date constant crashes in Ruby test harness (1,009 posts invisible to tests)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/154">#154</a>** 588 broken Monster Manual image paths</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/155">#155</a>** Feed snapshot baseline drift (5 removed items causing diff failures)</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/156">#156</a>** 11 broken internal asset links and 2 broken script references</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/157">#157</a>** CI soft-fail gates — <code>continue-on-error</code> masks HTMLProofer and a11y failures</li>
+</ul>
+<h3>P2 — Strategic / content quality</h3>
+<ul>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/184">#184</a>** Prompt series adoption: only 3 of 56 prompts have <code>series:</code> metadata</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/185">#185</a>** Cross-collection content bridges and related-posts infrastructure</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/186">#186</a>** Enhance category landing pages with related categories, tag clouds, depth indicators</li>
+<li>**<a href="https://github.com/TedTschopp/tedt.org/issues/171">#171</a>** Front matter validation: image/image-alt presence, category slugs, date format</li>
 </ul>
 <hr>
 <h2>Risks and Blockers</h2>
 <ul>
-<li><strong><code>sass-embedded</code> Ruby 3.1 drop</strong>: PR #226 upgrades to a version that no longer supports Ruby 3.1. Low risk if CI runs on 3.2+, but worth an explicit check before merging.</li>
-<li><strong>Dependabot PR backlog</strong>: 5–6 open dependency PRs have aged without merge. The <code>google-protobuf</code> jump (4.33.2 → 4.36.0, PR #225) is a larger version gap and warrants a review of the Gemfile conditional security pin.</li>
-<li><strong>Category landing pages</strong> (open issue): No PR exists yet. This is a known gap in the discovery experience.</li>
+<li><strong>Artifact size (P0):</strong> Adding <code>Edison-Award-2026-Winner.mp4</code> this week to an already-over-limit artifact is a compounding risk. #152 is unresolved. Until addressed, deploy reliability is uncertain.</li>
+<li><strong>Node.js 20 deprecation (P0):</strong> Hard deadline from GitHub. If not resolved before the cutoff, CI workflows will fail.</li>
+<li><strong>234 pages with broken img src (P0):</strong> Large-scale accessibility/HTML validity issue. CI soft-fail gates (#157) may be hiding this from breaking builds.</li>
+<li><strong>1,009 posts invisible to test harness (#153):</strong> Test coverage is severely degraded; failures in that content set go undetected.</li>
 </ul>
 <hr>
 <h2>Recommended Next Actions</h2>
 <ol>
-<li><strong>Merge #226 (<code>sass-embedded</code>)</strong> — verify Ruby version in CI first; low risk if on 3.2+.</li>
-<li><strong>Review #225 (<code>google-protobuf</code> bump)</strong> — check Gemfile security pin compatibility before merging.</li>
-<li><strong>Review PR #224 (Traveller gear)</strong> — feature work ready for review.</li>
-<li><strong>Create a post or hero entry for the Edison Award 2026 win</strong> — the video asset is in the repo but may not be wired to a published post or hero yet.</li>
-<li><strong>Draft an ADR or issue for category landing page enrichment</strong> — the open issue has good evidence; a concrete implementation plan would unblock it.</li>
+<li><strong>Merge the <code>sass-embedded</code> Dependabot PR</strong> — low risk, clears the open PR queue.</li>
+<li><strong>Open a PR for #150</strong> — update Node.js versions in workflow files before the deprecation deadline hits.</li>
+<li><strong>Triage #152 (artifact size):</strong> Run <code>du -sh _site/**</code> locally to identify the largest contributors; evaluate whether the new <code>.mp4</code> can be externally hosted or compressed.</li>
+<li><strong>Fix CI soft-fail gates (#157):</strong> Restoring blocking gates is prerequisite to trusting any other quality signal.</li>
+<li><strong>Address #151 (missing img src)</strong> once gates are restored so failures are visible.</li>
 </ol>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Sources And Notes</h2>
       <ul>
-<li>Commits: queried via GitHub MCP <code>list_commits</code>, <code>perPage=20</code>, branch <code>main</code></li>
-<li>Workflow runs: queried via <code>list_workflow_runs</code> for <code>deploy.yml</code> and <code>mastodon-feed.yml</code>; run conclusions extracted from response previews (full output was truncated at 383 KB)</li>
-<li>Open PRs: queried via <code>search_pull_requests</code>, 7 PRs identified; PR #214 title was not retrieved due to output truncation</li>
-<li>Open issues: queried via <code>list_issues</code>, state=OPEN; only partial issue list confirmed (output was 21 KB, only first issue fully reviewed — category landing pages enrichment)</li>
-<li>[ASSUMPTION] The "refresh yesterday in enterprise ai" automated commit updates dynamic content in the Enterprise AI section; exact scope not verified</li>
-<li>[ASSUMPTION] The IT organization reference model added on 2026-08-23 is internal/work-in-progress documentation rather than a published post</li>
-<li>Workflow run #1196 (deploy) conclusion confirmed as <code>success</code> from response preview; full run details not retrieved</li>
-<li>Daily report run #123 is the current in-progress run (this workflow)</li>
+<li>Commits sourced from <a href="https://github.com/TedTschopp/tedt.org/commits/main">TedTschopp/tedt.org commits API</a>, 20 most recent.</li>
+<li>Issues sourced from GitHub Issues API, most recently updated open issues.</li>
+<li>Workflow run data sourced from GitHub Actions API; full run list was truncated at 377 KB — only previewed top entries and most recent completed run.</li>
+<li>PR list was truncated at 77 KB; only the leading PR (sass-embedded bump) was confirmed from preview.</li>
+<li>[ASSUMPTION] No failed workflow runs in recent history — based on preview data, not full enumeration.</li>
+<li>[ASSUMPTION] Daily Report workflow run <code>33357705465</code> will complete successfully — it was <code>in_progress</code> when data was collected.</li>
+<li>Artifact size figure (1.16 GB) comes from issue #152 body, not a live measurement.</li>
+<li>Edison Award video size not independently measured; assumed to worsen #152.</li>
+<li>Report date: 2026-08-31 UTC.</li>
 </ul>
     </section>
     <footer>
