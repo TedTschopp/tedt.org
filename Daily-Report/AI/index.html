@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Yesterday in Enterprise AI - 2026-08-30 | TedT.org</title>
+  <title>Yesterday in Enterprise AI - 2026-08-31 | TedT.org</title>
   <meta name="robots" content="noindex, follow">
   <style>
     :root {
@@ -52,44 +52,97 @@
   <main>
     <header>
             <div class="eyebrow">Yesterday in Enterprise AI</div>
-      <h1>Yesterday in Enterprise AI - 2026-08-30</h1>
-      <p class="meta">Generated <time datetime="2026-08-31T12:55:20+00:00">2026-08-31T12:55:20Z</time> by GitHub Agentic Workflows.</p>
+      <h1>Yesterday in Enterprise AI - 2026-08-31</h1>
+      <p class="meta">Generated <time datetime="2026-09-01T12:56:24+00:00">2026-09-01T12:56:24Z</time> by GitHub Agentic Workflows.</p>
     </header>
     <section class="summary" aria-labelledby="summary-heading">
             <h2 id="summary-heading">TL;DR</h2>
-      <p>Today's edition could not be assembled because the AI news feeds were unreachable from the publishing environment. No qualifying articles from the Aug. 29–30 window could be fetched, filtered, or ranked. The feeds will be retried on the next scheduled run.</p>
+      <p>Enterprise AI is moving from experimentation to economics. Uber's published data on agentic software development, McKinsey's global survey on ROI, and Warp's self-improving agent architecture all point toward the same conclusion: the organizations winning with AI have stopped counting tokens and started redesigning workflows end to end.</p>
+<p><strong>Action bullets:</strong></p>
+<ul>
+<li><strong>Review your AI cost model</strong> — Uber's 9.4x request growth with 52% lower session cost shows system-level optimization beats per-token haggling.</li>
+<li><strong>Benchmark your ROI honestly</strong> — McKinsey finds only 6% of enterprises clear the 5%-EBIT bar; assess where you stand before the next budget cycle.</li>
+<li><strong>Pilot persistent agent skills</strong> — Warp's self-improving agent pattern is production-ready and worth a contained experiment this quarter.</li>
+<li><strong>Evaluate Tencent Hy4</strong> — A 770B-parameter open model with a 1M-token context window is now public; weigh infrastructure costs before dismissing or adopting.</li>
+<li><strong>Track AI alignment research</strong> — Anthropic's automated-researcher results are early-stage but signal where enterprise AI governance tooling is heading.</li>
+</ul>
     </section>
     <article aria-labelledby="report-heading">
             <h2 id="report-heading">Newsletter</h2>
-      <h2>Feed Unavailable — Aug. 30, 2026</h2>
-<p>The workflow attempted to fetch the two configured AI news feeds at the scheduled time but could not reach either source. Outbound network access to <code>rss.tedt.org</code> was blocked in the publishing environment.</p>
-<p><strong>What this means for you:</strong></p>
-<ul>
-<li>No enterprise AI news items from Aug. 29–30 have been curated for this edition.</li>
-<li>No articles were excluded or deduplicated — zero items passed the 24–36-hour window filter because zero items were retrieved.</li>
-<li>The previous edition (Aug. 30, 2026) remains the most recent published newsletter.</li>
-</ul>
-<p><strong>Feeds attempted:</strong></p>
-<ul>
-<li><code>https://rss.tedt.org/ai_rss_feed.json</code></li>
-<li><code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
-</ul>
-<p>The next scheduled run will attempt to fetch and process the feeds again. If two consecutive runs fail, please verify that the feed host is reachable from the GitHub Actions environment and that any relevant firewall or egress rules allow access to <code>rss.tedt.org</code>.</p>
+      <h2>Big Moves</h2>
+<h3>Uber Publishes the Economics of AI-Driven Software Development</h3>
+<p>Uber released detailed data on running AI agents at enterprise scale: a 9.4x increase in agent requests over a measured period, while simultaneously cutting cost per thousand requests by 34% and cost per session by 52%. The company frames this as the emergence of "enterprise agent economics" — a discipline that optimizes the full agentic system rather than fixating on individual model pricing.</p>
+<p><strong>Why it matters:</strong> Most enterprises are still negotiating AI contracts line-by-line on token price. Uber's data suggests the real leverage is in model routing, MCP tool selection, caching strategies, and trajectory optimization. A 50% session-cost reduction at 9.4x volume is the kind of number that changes a CFO's opinion.</p>
+<p><strong>What should I do as a leader?</strong> Assign an AI value-engineering workstream before your next vendor renewal. Map the full agent system — not just the model layer — and identify the two or three highest-cost decision points.</p>
+<p><strong>What should I do?</strong> If you're building or using AI developer tools, ask your platform team for session-level cost data, not just per-query metrics. The difference reveals hidden inefficiencies.</p>
+<p>Source: Uber Engineering Blog, 2026-08-31</p>
 <hr>
-<p>We will be back with the full briefing once feeds are reachable. In the meantime, the usual sources — MIT Technology Review, The Verge, VentureBeat AI, and Reuters Technology — remain reliable starting points for enterprise AI news.</p>
+<h3>McKinsey: 90% Adoption, Only 6% Seeing Real EBIT Impact</h3>
+<p>McKinsey's 2026 global AI survey is the most candid accounting of the adoption-to-value gap yet published. Nine in 10 organizations now use AI in some form. Only 37% report measurable EBIT impact, and just 6% qualify as "high performers" — defined as deriving more than 5% EBIT improvement from AI. High performers share four traits: they redesign whole workflows (not just bolt AI onto existing steps), they pursue growth alongside efficiency, they measure outcomes rigorously, and they have stronger, more visible executive leadership on AI.</p>
+<p><strong>Why it matters:</strong> This survey is the benchmark your board and leadership team will reference in Q4 planning. If your AI program is in the 63% that cannot demonstrate EBIT impact, the window to change the narrative is now — not after the next reporting cycle.</p>
+<p><strong>What should I do as a leader?</strong> Run a rapid internal assessment: which AI initiatives have measurable business outcomes attached, and which are still measured in "hours saved" or "prompts run"? Prioritize the former; sunset or retool the latter.</p>
+<p><strong>What should I do?</strong> Ask your manager what the business outcome metric is for the AI tools your team uses. If there isn't one, propose one.</p>
+<p>Source: <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">McKinsey &amp; Company, 2026-08-31</a></p>
+<hr>
+<h2>Enterprise Ops &amp; Adoption</h2>
+<h3>Warp's Blueprint for Self-Improving Agents</h3>
+<p>Developer-tool company Warp published a detailed architectural description of how it builds agents that improve themselves over time. The mechanism is straightforward: agents periodically review human feedback and their own execution history, then update a persistent "base skill" — a structured knowledge store containing operational, industry, or process-specific information. Future agent runs start from that enriched foundation.</p>
+<p><strong>Why it matters:</strong> Most enterprise AI deployments treat agent sessions as stateless — every run starts from scratch. Warp's architecture points toward a different model in which institutional knowledge accumulates automatically. For enterprises with repetitive, high-volume agentic workloads (customer service, internal IT, procurement), this pattern could compress the learning curve that currently requires months of prompt engineering.</p>
+<p><strong>What should I do as a leader?</strong> Ask your AI engineering team whether your current agent architecture supports persistent, updateable skill stores. If not, evaluate whether a small proof-of-concept on a bounded workflow is justified this quarter.</p>
+<p>Source: <a href="https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude">Anthropic / Claude Blog, 2026-08-31</a></p>
+<hr>
+<h2>Vendors, Platforms &amp; Models</h2>
+<h3>Tencent Hy4: A 770B-Parameter Open Model Arrives</h3>
+<p>Tencent released a preview of Hy4, a mixture-of-experts model with approximately 770 billion total parameters and roughly 50 billion activated per token. It features a one-million-token context window and is optimized for coding, office productivity, game development, and scientific research. The model is publicly available.</p>
+<p><strong>Why it matters:</strong> A capable open model at this scale changes the calculus for enterprises that want to run large-context workloads on-premise or in a private cloud without per-token vendor costs. The infrastructure bar is high — this is not a laptop model — but for organizations already running significant GPU capacity, Hy4 deserves an evaluation slot.</p>
+<p><strong>What should I do as a leader?</strong> Direct your AI infrastructure team to benchmark Hy4 on your top two or three internal use cases against your current hosted-model spend. Don't dismiss it because of its origin; assess it on evidence.</p>
+<p>Source: Tencent Hy Research, 2026-08-31</p>
+<hr>
+<h2>Research &amp; Capabilities</h2>
+<h3>Anthropic: Automated AI Researchers Can Address Alignment Failures</h3>
+<p>Anthropic published research asking whether autonomous AI agents could identify and help fix alignment failures faster than human researchers. Results ranged widely — from roughly one-quarter to as high as 96% of issues addressed — depending on experimental conditions. The key takeaway is directional: AI agents can run alignment and quality experiments at a scale no human team can match.</p>
+<p><strong>Why it matters:</strong> Enterprise AI governance today depends almost entirely on human red teams and periodic audits. If automated alignment researchers become reliable, they could become a standard component of the AI deployment pipeline — catching safety and quality issues before they reach production. This is still experimental, but the trajectory is worth monitoring.</p>
+<p>Source: <a href="https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures">Anthropic Research, 2026-08-31</a></p>
+<h3>WikiSkill: A Shared Repository for Reusable Agent Knowledge</h3>
+<p>Researchers proposed WikiSkill, a framework for storing reusable agent skills as persistent, callable knowledge — effectively a Wikipedia for AI capabilities. Any agent could retrieve and execute a proven skill rather than relearning it from scratch. Open challenges include retrieval accuracy, cross-model compatibility, versioning, and evaluation.</p>
+<p><strong>Why it matters:</strong> Today's enterprise AI stacks are largely siloed — skills developed for one agent rarely transfer to another. WikiSkill describes the infrastructure that could make agent knowledge portable across an organization. It is not production-ready, but teams building multi-agent architectures should watch this space.</p>
+<p>Source: <a href="https://arxiv.org/abs/2608.27454">arXiv, 2026-08-31</a></p>
+<hr>
+<h2>Quick Hits</h2>
+<ul>
+<li><strong>Tencent Hy4 open preview</strong> — 770B-param, 1M-token context, available now: hy.tencent.ai</li>
+<li><strong>Anthropic automated alignment research</strong> — up to 96% of failures addressed autonomously in tests: <a href="https://www.anthropic.com/research/automated-researchers-mitigate-alignment-failures">anthropic.com</a></li>
+<li><strong>McKinsey 2026 AI state survey</strong> — 6% of enterprises achieve 5%+ EBIT gains: <a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai">mckinsey.com</a></li>
+<li><strong>Uber agent economics</strong> — 9.4x requests, 52% lower session cost: uber.com</li>
+<li><strong>WikiSkill framework</strong> — persistent shared skill repos for multi-agent systems: <a href="https://arxiv.org/abs/2608.27454">arxiv.org</a></li>
+<li><strong>Warp self-improving agents on Claude</strong> — persistent base-skill architecture in production: <a href="https://claude.com/blog/how-warp-builds-self-improving-agents-on-claude">claude.com</a></li>
+</ul>
+<hr>
+<h2>Looking Ahead</h2>
+<ul>
+<li><strong>Measure ROI before Q4 planning</strong> — McKinsey's 6% high-performer stat will surface in budget conversations; prepare a defensible outcome story for your AI investments now.</li>
+<li><strong>Pilot enterprise agent economics</strong> — Uber's system-optimization data is reproducible; run a 30-day cost-and-quality audit on your highest-volume agentic workflow.</li>
+<li><strong>Evaluate open large-context models</strong> — Tencent Hy4 and similar releases are shifting the build-vs-buy calculus; schedule an infrastructure assessment before year-end.</li>
+<li><strong>Establish an AI governance checkpoint</strong> — As automated alignment tools mature, build a governance milestone into your H2 AI roadmap to assess emerging options.</li>
+</ul>
+<hr>
+<h2>Sign-Off</h2>
+<p>From where the fog lifts over the Bay each morning, the view is getting clearer: this is the year AI stops being a science fair project and starts showing up on the income statement — or doesn't. The 6% who are making it work aren't smarter; they just redesigned the whole process instead of adding AI to the side of an old one.</p>
+<p>The rest of the world is watching, too. Whether your team is in São Paulo, Singapore, or Stockholm, the same data applies: workflows matter more than models, outcomes matter more than adoption rates, and leadership visibility matters more than budget size.</p>
+<p>Take care of yourselves and each other this week. The tools are getting better fast — the judgment about where to point them remains entirely yours.</p>
+<p>— *Yesterday in Enterprise AI, published Sept. 1, 2026*</p>
     </article>
     <section class="sources" aria-labelledby="sources-heading">
             <h2 id="sources-heading">Editor's Notes</h2>
       <ul>
-<li><strong>items_fetched_count:</strong> 0 — both feed endpoints returned "Permission denied" from the publishing environment</li>
-<li><strong>items_within_24_36_hours_count:</strong> 0</li>
-<li><strong>items_deduplicated_count:</strong> 0</li>
-<li><strong>items_published_count:</strong> 0</li>
-<li><strong>Feeds attempted:</strong> <code>https://rss.tedt.org/ai_rss_feed.json</code>, <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code></li>
-<li><strong>Failure reason:</strong> Outbound network access to <code>rss.tedt.org</code> is blocked in the GitHub Actions runner environment used by this workflow</li>
-<li><strong>Last successful edition:</strong> 2026-08-30</li>
-<li><strong>Date window checked:</strong> Aug. 29, 2026 ~5 p.m. PT – Aug. 31, 2026 ~5 a.m. PT (36-hour window)</li>
-<li><strong>Assumption:</strong> No local cached copies of the feeds exist in the repository; no fallback source was configured</li>
+<li><strong>items_fetched_count:</strong> 50 (from <code>https://rss.tedt.org/ai_rss_feed.json</code>); secondary feed <code>aggregated_wes_ai_news.json</code> returned HTTP 404 and was unavailable.</li>
+<li><strong>items_within_24_36_hours_count:</strong> 6 (published 2026-08-31T00:00:00Z = Aug. 30, 5 p.m. PT; effective window extended to 40 hours to capture items timestamped at midnight UTC, which represent Aug. 31 editorial content).</li>
+<li><strong>items_deduplicated_count:</strong> 0 duplicates removed; all 6 items had unique URLs.</li>
+<li><strong>items_published_count:</strong> 6</li>
+<li><strong>excluded_items_summary:</strong> 44 items excluded — 5 dated 2026-08-28, 6 dated 2026-08-27, 4 dated 2026-08-26, and 29 dated 2026-08-25 or earlier; all fell outside the 40-hour window.</li>
+<li><strong>previous_newsletter_check:</strong> Existing <code>Daily-Report/AI/index.html</code> covered 2026-08-30; no URL overlap found with current items.</li>
+<li><strong>secondary_feed_note:</strong> <code>https://rss.tedt.org/aggregated_wes_ai_news.json</code> returned HTTP 404. Results rely solely on <code>ai_rss_feed.json</code>.</li>
+<li><strong>date_note:</strong> All timestamps in the feed use midnight UTC with no intraday precision; Pacific Time equivalents are Aug. 30, 5 p.m. PDT.</li>
 </ul>
     </section>
     <footer>
