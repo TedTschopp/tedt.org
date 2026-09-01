@@ -62,6 +62,13 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
       await expect(assessmentsItem).toBeVisible();
       await expect(assessmentsItem).toContainText('Assessments');
 
+      const skillsAgentsItem = page.locator(
+        'nav[aria-label="Primary"] a[href="https://ai.tedt.org/"], ' +
+        'nav[aria-label="Primary"] button[data-href="https://ai.tedt.org/"]'
+      ).first();
+      await expect(skillsAgentsItem).toBeVisible();
+      await expect(skillsAgentsItem).toContainText('Skills & Agents');
+
       const primaryNavigationText = await page.locator('nav[aria-label="Primary"]').innerText();
       expect(primaryNavigationText).not.toMatch(/(?:\bAlpha\b|\bBeta\b|\bGamma\b|α|β|γ)/i);
       await expect(page.locator('nav[aria-label="Primary"] .stage-badge')).toHaveCount(0);
@@ -70,6 +77,11 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
       const navItems = page.locator('nav[aria-label="Primary"] .navbar-nav > .nav-item > .nav-link.menu-item');
       const count = await navItems.count();
       expect(count, 'Primary navigation should expose top-level links').toBeGreaterThan(0);
+      const topLevelLabels = (await navItems.allTextContents())
+        .map(label => label.trim().replace(/\s+/g, ' '));
+      const promptsIndex = topLevelLabels.indexOf('Prompts');
+      expect(promptsIndex, 'Prompts should be present in the primary navigation').toBeGreaterThanOrEqual(0);
+      expect(topLevelLabels.indexOf('Skills & Agents')).toBe(promptsIndex + 1);
       const heights: number[] = [];
       for (let i = 0; i < count; i++) {
         const box = await navItems.nth(i).boundingBox();
