@@ -11,8 +11,9 @@ sitemap:
   {%- comment -%}
     Only emit canonical, indexable HTML documents. jekyll-redirect-from creates
     synthetic pages with redirect metadata; those aliases must never be search
-    discovery URLs. Work-in-progress and operational backfill pages are also
-    deliberately kept out even when they remain publicly reachable.
+    discovery URLs. The retired /prompts/ namespace is kept as static redirects
+    and must likewise stay out of discovery. Work-in-progress and operational
+    backfill pages are also deliberately kept out even when publicly reachable.
   {%- endcomment -%}
   {%- assign collections = site.collections | where_exp: 'collection', 'collection.output != false' -%}
   {%- for collection in collections -%}
@@ -22,6 +23,8 @@ sitemap:
       {%- assign include_in_sitemap = true -%}
 
       {%- if doc.sitemap == false or doc.redirect_to or doc.noindex == true or doc.robots contains 'noindex' -%}
+        {%- assign include_in_sitemap = false -%}
+      {%- elsif output_path contains '/prompts/' -%}
         {%- assign include_in_sitemap = false -%}
       {%- elsif source_path contains '_work-in-progress/' or source_path contains '/work-in-progress/' or output_path contains '/work-in-progress/' -%}
         {%- assign include_in_sitemap = false -%}
@@ -47,6 +50,8 @@ sitemap:
     {%- assign include_in_sitemap = true -%}
 
     {%- if doc.sitemap == false or doc.redirect_to or doc.noindex == true or doc.robots contains 'noindex' -%}
+      {%- assign include_in_sitemap = false -%}
+    {%- elsif output_path contains '/prompts/' -%}
       {%- assign include_in_sitemap = false -%}
     {%- elsif output_path == '/404.html' or output_path == '/404/' -%}
       {%- assign include_in_sitemap = false -%}
