@@ -7,9 +7,6 @@ import { verifyDropdown } from './helpers/navbar';
 const BASE = process.env.PROD_BASE || 'http://127.0.0.1:4000';
 const pages = [
   '/',
-  '/prompts/',
-  // Prompt pages use /prompts/:slug/ per _config.yml defaults
-  '/prompts/business-case-and-requirements-assistant/',
   '/assessments/',
   '/assessments/ai-coding-maturity-assessment/',
   '/assessments/enterprise-ai-maturity-assessment/',
@@ -62,12 +59,12 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
       await expect(assessmentsItem).toBeVisible();
       await expect(assessmentsItem).toContainText('Assessments');
 
-      const skillsAgentsItem = page.locator(
+      const aiLibraryItem = page.locator(
         'nav[aria-label="Primary"] a[href="https://ai.tedt.org/"], ' +
         'nav[aria-label="Primary"] button[data-href="https://ai.tedt.org/"]'
       ).first();
-      await expect(skillsAgentsItem).toBeVisible();
-      await expect(skillsAgentsItem).toContainText('Skills & Agents');
+      await expect(aiLibraryItem).toBeVisible();
+      await expect(aiLibraryItem).toContainText('AI Library');
 
       const primaryNavigationText = await page.locator('nav[aria-label="Primary"]').innerText();
       expect(primaryNavigationText).not.toMatch(/(?:\bAlpha\b|\bBeta\b|\bGamma\b|α|β|γ)/i);
@@ -79,9 +76,9 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
       expect(count, 'Primary navigation should expose top-level links').toBeGreaterThan(0);
       const topLevelLabels = (await navItems.allTextContents())
         .map(label => label.trim().replace(/\s+/g, ' '));
-      const promptsIndex = topLevelLabels.indexOf('Prompts');
-      expect(promptsIndex, 'Prompts should be present in the primary navigation').toBeGreaterThanOrEqual(0);
-      expect(topLevelLabels.indexOf('Skills & Agents')).toBe(promptsIndex + 1);
+      expect(topLevelLabels).toContain('AI Library');
+      expect(topLevelLabels).not.toContain('Prompts');
+      expect(topLevelLabels).not.toContain('Skills & Agents');
       const heights: number[] = [];
       for (let i = 0; i < count; i++) {
         const box = await navItems.nth(i).boundingBox();
