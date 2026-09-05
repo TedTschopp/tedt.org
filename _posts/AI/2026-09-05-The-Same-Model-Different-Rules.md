@@ -146,6 +146,7 @@ Consider a hypothetical internal source-code review service. Its purpose is to i
 | Data handling               | Only approved source code, with processing, storage, review locations, and retention explicitly accepted    | Privacy and security owners retain the applicable terms and verified data-flow description. Unknown locations or retention conditions block approval. |
 | Monitoring and evidence     | Company-held records of requests, actions, approvals, and unfinished work, limited to necessary information | Security identifies authorized reviewers and tests whether required evidence remains retrievable after supplier access is lost.                       |
 | Interruption and recovery   | Pause affected jobs; use a separately approved alternative or manual review                                 | The service owner names the person authorized to resume work and records a tested recovery procedure.                                                 |
+{: .well .table .table-striped}
 
 Each row needs a status: documented, contractually confirmed where necessary, or not yet tested. A public description of a feature is not evidence that the enterprise has enabled it correctly.
 
