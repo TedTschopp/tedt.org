@@ -35,6 +35,7 @@ excluded_fragments = [
   '/category/Home/',
   '/category/Prompts/',
   '/category/prompts/',
+  '/prompts/',
   '/mastodon-backfill',
   '/work-in-progress/',
   '/docs/adr/0012-posts-based-slides/',
