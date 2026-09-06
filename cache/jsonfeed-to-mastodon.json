@@ -5349,5 +5349,36 @@
       "https://tschopp.net/users/Ted/statuses/117177351964959201"
     ],
     "lastTootTimestamp": 1787984496637
+  },
+  "https://tedt.org/The-Same-Model-Different-Rules/": {
+    "id": "/The-Same-Model-Different-Rules/",
+    "title": "The Same Model, Different Rules",
+    "summary": "AI procurement must define not only which model is approved, but also its access rules, data custody, interruption response, and exit arrangements.",
+    "content_text": "AI procurement must define not only which model is approved, but also its access rules, data custody, interruption response, and exit arrangements. https://tedt.org/The-Same-Model-Different-Rules/",
+    "url": "https://tedt.org/The-Same-Model-Different-Rules/",
+    "image": "https://tedt.org/img/2026-09/iPhone-Pearl.webp",
+    "tags": [
+      "enterprise AI",
+      "AI procurement",
+      "AI governance",
+      "model access",
+      "operational resilience",
+      "service continuity",
+      "vendor risk",
+      "data custody",
+      "access controls",
+      "AI portability"
+    ],
+    "date_published": "2026-09-05T09:00:00-07:00",
+    "date_modified": "2026-09-05T09:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117221318657748850"
+    ],
+    "lastTootTimestamp": 1788655375112
   }
 }
