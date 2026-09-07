@@ -5380,5 +5380,34 @@
       "https://tschopp.net/users/Ted/statuses/117221318657748850"
     ],
     "lastTootTimestamp": 1788655375112
+  },
+  "https://tedt.org/Energy-and-Water-Usage-for-Models/": {
+    "id": "/Energy-and-Water-Usage-for-Models/",
+    "title": "How Much Energy and Water Does AI Use?",
+    "summary": "AI uses electricity and water, but the impact depends on the task, the model, and the facility. Familiar comparisons help explain the scale.",
+    "content_text": "AI uses electricity and water, but the impact depends on the task, the model, and the facility. Familiar comparisons help explain the scale. https://tedt.org/Energy-and-Water-Usage-for-Models/",
+    "url": "https://tedt.org/Energy-and-Water-Usage-for-Models/",
+    "image": "https://tedt.org/img/2026-09/Energy-and-Water-Usage-for-Models.webp",
+    "tags": [
+      "AI energy use",
+      "AI water use",
+      "model training",
+      "AI inference",
+      "data centers",
+      "cooling",
+      "heat recovery",
+      "sustainability"
+    ],
+    "date_published": "2026-09-06T00:00:00-07:00",
+    "date_modified": "2026-09-06T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117228352294276724"
+    ],
+    "lastTootTimestamp": 1788762699966
   }
 }
