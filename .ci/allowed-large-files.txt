@@ -38,6 +38,8 @@ media/audio/Winning-the-Intelligence-Inversion.m4a
 media/files/GenAI-Cost-Mode.dat
 media/files/ITIL-Foundation-ITIL-4-Edition-Print.pdf
 media/video/Edison-Award-2026-Winner.mp4
+# Standalone deck export; preserve the published artifact and its checksum.
+slides/decks/openai-hugging-face-wiki/index.html
 tools/lib/webperl/emperl.data
 
 # Historical backup/shadow files. Do not add new entries; delete or migrate these
