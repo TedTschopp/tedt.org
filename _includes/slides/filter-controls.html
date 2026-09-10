@@ -52,7 +52,12 @@ JavaScript is unavailable.
 </section>
 
 <script>
-(() => {
+(function initializeSlidesFilters() {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initializeSlidesFilters, { once: true });
+    return;
+  }
+
   const tools = document.querySelector('[data-slides-tools]');
   const grid = document.querySelector('[data-slides-grid]');
   if (!tools || !grid) return;
