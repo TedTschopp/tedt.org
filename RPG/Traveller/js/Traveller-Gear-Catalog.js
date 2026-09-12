@@ -103,6 +103,8 @@
     "High stellar technology",
   ]);
   const HIGH_TECH_LEVEL_FALLBACK_LABEL = "Beyond described milestones";
+  const DEFAULT_UNRESOLVED_SKILL_FILTER = "unresolved_or_not_recorded";
+  const SORT_VALUES = new Set(["name", "tech-asc", "tech-desc"]);
   const detailShardCache = new Map();
   let catalog = null;
   let manifestDocument = null;
@@ -110,6 +112,7 @@
   let techLevelReference = null;
   let lawLevelReference = null;
   let legalCategoryReference = null;
+  let skillFilterReference = null;
   let initializationPromise = null;
   let lockerState = null;
 
@@ -166,6 +169,62 @@
         select.insertBefore(option, unknownOption || null);
       }
       select.dataset.populated = "true";
+    });
+  }
+
+  function populateSkillFilters() {
+    document.querySelectorAll("[data-gear-filter-skill]").forEach((select) => {
+      if (!(select instanceof HTMLSelectElement)) return;
+      const panel = select.closest("[data-gear-add-panel]");
+      const kind = normalizeKind(panel && panel.dataset.gearAddPanel);
+      if (!kind) return;
+
+      const selectedValue = select.value;
+      select
+        .querySelectorAll("option[data-gear-skill-option]")
+        .forEach((option) => option.remove());
+      const anyOption = Array.from(select.options).find(
+        (option) => option.value === "any"
+      );
+      if (anyOption) anyOption.textContent = "Any skill requirement";
+
+      let unresolvedOption = Array.from(select.options).find(
+        (option) =>
+          option.value === DEFAULT_UNRESOLVED_SKILL_FILTER ||
+          option.dataset.gearSkillStatus === "true"
+      );
+      const unresolvedValue = unresolvedSkillFilterValue();
+      if (!unresolvedOption) {
+        unresolvedOption = document.createElement("option");
+        select.appendChild(unresolvedOption);
+      }
+      unresolvedOption.value = unresolvedValue;
+      unresolvedOption.textContent = firstString(
+        skillFilterReference && skillFilterReference.unresolvedLabel,
+        "Unresolved or not recorded"
+      );
+      unresolvedOption.dataset.gearSkillStatus = "true";
+
+      skillOptionsForKind(kind).forEach((skillOption) => {
+        if (
+          skillOption.optionType === "status" ||
+          skillOption.value === unresolvedValue
+        ) {
+          unresolvedOption.textContent = skillOption.label;
+          return;
+        }
+        const option = document.createElement("option");
+        option.value = skillOption.value;
+        option.textContent = skillOption.label;
+        option.dataset.gearSkillOption = "true";
+        select.insertBefore(option, unresolvedOption);
+      });
+
+      select.value = Array.from(select.options).some(
+        (option) => option.value === selectedValue
+      )
+        ? selectedValue
+        : "any";
     });
   }
 
@@ -271,11 +330,85 @@
     return filter === "any" ? "any legal category" : LEGAL_CATEGORY_LABELS[filter];
   }
 
+  function unresolvedSkillFilterValue() {
+    return firstString(
+      skillFilterReference && skillFilterReference.unresolvedValue,
+      DEFAULT_UNRESOLVED_SKILL_FILTER
+    );
+  }
+
+  function skillOptionsForKind(kind) {
+    const normalizedKind = normalizeKind(kind);
+    if (!normalizedKind || !skillFilterReference) return [];
+    return skillFilterReference.optionsByKind[normalizedKind] || [];
+  }
+
+  function normalizedSkillFilter(value, kind) {
+    const candidate = stringValue(value).trim();
+    if (candidate === "any" || candidate === unresolvedSkillFilterValue()) {
+      return candidate;
+    }
+    return skillOptionsForKind(kind).some((option) => option.value === candidate)
+      ? candidate
+      : "any";
+  }
+
+  function itemHasUnresolvedSkill(item) {
+    if (!item || item.requiredSkills.length > 0) return false;
+    if (item.kind === "weapon") {
+      return (
+        item.requiredSkillStatus === "ambiguous" ||
+        item.requiredSkillStatus === "unresolved"
+      );
+    }
+    return !item.requiredSkillStatus;
+  }
+
+  function matchesSkill(item, filterValue, kind = item && item.kind) {
+    const filter = normalizedSkillFilter(filterValue, kind);
+    if (filter === "any") return true;
+    if (filter === unresolvedSkillFilterValue()) {
+      return itemHasUnresolvedSkill(item);
+    }
+    return item.requiredSkills.some((requirement) =>
+      requirement.filterValues.includes(filter)
+    );
+  }
+
+  function skillFilterLabel(filterValue, kind) {
+    const filter = normalizedSkillFilter(filterValue, kind);
+    if (filter === "any") return "any skill requirement";
+    if (filter === unresolvedSkillFilterValue()) {
+      return firstString(
+        skillFilterReference && skillFilterReference.unresolvedLabel,
+        "unresolved or not recorded"
+      ).toLocaleLowerCase();
+    }
+    const option = skillOptionsForKind(kind).find(
+      (candidate) => candidate.value === filter
+    );
+    return option ? option.label : "any skill requirement";
+  }
+
+  function normalizedSortOrder(value) {
+    const candidate = stringValue(value).trim();
+    return SORT_VALUES.has(candidate) ? candidate : "name";
+  }
+
+  function sortOrderLabel(value) {
+    const sortOrder = normalizedSortOrder(value);
+    if (sortOrder === "tech-asc") return "Tech Level low to high";
+    if (sortOrder === "tech-desc") return "Tech Level high to low";
+    return "name A to Z";
+  }
+
   function filterDescription(state) {
     return [
       techLevelFilterLabel(state.techLevelFilter),
       lawLevelFilterLabel(state.lawLevelFilter),
       legalCategoryFilterLabel(state.legalCategoryFilter),
+      skillFilterLabel(state.skillFilter, state.activeKind),
+      `sorted by ${sortOrderLabel(state.sortOrder)}`,
     ].join(" · ");
   }
 
@@ -347,6 +480,113 @@
           : firstString(example)
       )
     );
+  }
+
+  function normalizeSkillFilterReference(value) {
+    if (!isRecord(value)) return null;
+    const rawOptionsByKind = isRecord(value.optionsByKind)
+      ? value.optionsByKind
+      : isRecord(value.options_by_kind)
+        ? value.options_by_kind
+        : {};
+    const optionsByKind = {};
+    Object.keys(SECTION_LABELS).forEach((kind) => {
+      const seen = new Set();
+      const rawOptions = Array.isArray(rawOptionsByKind[kind])
+        ? rawOptionsByKind[kind]
+        : [];
+      optionsByKind[kind] = rawOptions.reduce((options, rawOption) => {
+        if (!isRecord(rawOption)) return options;
+        const optionValue = firstString(rawOption.value);
+        const label = firstString(rawOption.label);
+        if (!optionValue || !label || seen.has(optionValue)) return options;
+        seen.add(optionValue);
+        const minimumLevel = Number.parseInt(
+          firstString(rawOption.minimumLevel, rawOption.minimum_level),
+          10
+        );
+        options.push({
+          value: optionValue,
+          label,
+          optionType: firstString(rawOption.optionType, rawOption.option_type),
+          familyId: firstString(rawOption.familyId, rawOption.family_id),
+          familyLabel: firstString(rawOption.familyLabel, rawOption.family_label),
+          specialityId: firstString(
+            rawOption.specialityId,
+            rawOption.speciality_id
+          ),
+          specialityLabel: firstString(
+            rawOption.specialityLabel,
+            rawOption.speciality_label
+          ),
+          minimumLevel: Number.isInteger(minimumLevel) ? minimumLevel : null,
+          variantCount: Number.parseInt(
+            firstString(rawOption.variantCount, rawOption.variant_count, "0"),
+            10
+          ),
+        });
+        return options;
+      }, []);
+    });
+    const unresolvedValue = firstString(
+      value.unresolvedValue,
+      value.unresolved_value,
+      DEFAULT_UNRESOLVED_SKILL_FILTER
+    );
+    return {
+      valueSemantics: firstString(value.valueSemantics, value.value_semantics),
+      filterSemantics: firstString(value.filterSemantics, value.filter_semantics),
+      unresolvedValue,
+      unresolvedLabel: firstString(
+        value.unresolvedLabel,
+        value.unresolved_label,
+        "Unresolved or not recorded"
+      ),
+      optionsByKind,
+    };
+  }
+
+  function normalizeRequiredSkills(value) {
+    if (!Array.isArray(value)) return [];
+    return value.reduce((requirements, rawRequirement) => {
+      if (!isRecord(rawRequirement)) return requirements;
+      const familyId = firstString(
+        rawRequirement.familyId,
+        rawRequirement.family_id
+      );
+      const filterValues = stringList(
+        rawRequirement.filterValues || rawRequirement.filter_values
+      );
+      if (!familyId || filterValues.length === 0) return requirements;
+      const minimumLevel = Number.parseInt(
+        firstString(rawRequirement.minimumLevel, rawRequirement.minimum_level),
+        10
+      );
+      requirements.push({
+        familyId,
+        familyLabel: firstString(
+          rawRequirement.familyLabel,
+          rawRequirement.family_label
+        ),
+        specialityId: firstString(
+          rawRequirement.specialityId,
+          rawRequirement.speciality_id
+        ),
+        specialityLabel: firstString(
+          rawRequirement.specialityLabel,
+          rawRequirement.speciality_label
+        ),
+        minimumLevel: Number.isInteger(minimumLevel) ? minimumLevel : null,
+        condition: firstString(rawRequirement.condition),
+        raw: firstString(rawRequirement.raw),
+        fieldState: firstString(
+          rawRequirement.fieldState,
+          rawRequirement.field_state
+        ),
+        filterValues: uniqueStrings(filterValues),
+      });
+      return requirements;
+    }, []);
   }
 
   function normalizeLawLevelReference(value) {
@@ -728,6 +968,10 @@
       raw.requiredSkillStatus,
       raw.required_skill_status
     );
+    const requiredSkills = normalizeRequiredSkills(
+      raw.requiredSkills || raw.required_skills
+    );
+    const skill = firstString(raw.skill, raw.requiredSkill, raw.required_skill);
     if (
       kind === "weapon" &&
       (requiredSkillStatus === "ambiguous" ||
@@ -742,6 +986,12 @@
       sheetRole,
       ...domains,
       ...Object.values(sheet),
+      skill,
+      ...requiredSkills.flatMap((requirement) => [
+        requirement.familyLabel,
+        requirement.specialityLabel,
+        requirement.raw,
+      ]),
       lawLevel,
       legalCategory,
       firstString(raw.searchText, raw.search_text),
@@ -767,6 +1017,8 @@
       summaryStatus: firstString(raw.summaryStatus, raw.summary_status),
       reviewFlags: stringList(raw.reviewFlags || raw.review_flags),
       requiredSkillStatus,
+      requiredSkills,
+      skill,
       domains,
       combatScale: firstString(raw.combatScale, raw.combat_scale),
       mountContext: firstString(raw.mountContext, raw.mount_context),
@@ -840,6 +1092,9 @@
     legalCategoryReference = normalizeLegalCategoryReference(
       manifest.legalCategoryReference || manifest.legal_category_reference
     );
+    skillFilterReference = normalizeSkillFilterReference(
+      manifest.skillFilterReference || manifest.skill_filter_reference
+    );
     return { manifest, manifestUrl, schemaVersion };
   }
 
@@ -849,6 +1104,7 @@
     manifestPromise = loadManifestDocument()
       .then((document) => {
         manifestDocument = document;
+        populateSkillFilters();
         updateAllTechLevelHelp();
         updateAllLawLevelHelp();
         updateAllLegalCategoryHelp();
@@ -1288,6 +1544,14 @@
       techLevelFilter: "any",
       lawLevelFilter: "any",
       legalCategoryFilter: "any",
+      skillFilter: "any",
+      sortOrder: "name",
+      skillFilterByKind: new Map(
+        Object.keys(SECTION_TITLES).map((kind) => [kind, "any"])
+      ),
+      sortOrderByKind: new Map(
+        Object.keys(SECTION_TITLES).map((kind) => [kind, "name"])
+      ),
       scopeByKind: new Map(Object.keys(SECTION_TITLES).map((kind) => [kind, "personal"])),
       returnFocus: null,
       search,
@@ -1376,10 +1640,14 @@
           panel && panel.querySelector("[data-gear-filter-law-level]");
         const legalCategorySelect =
           panel && panel.querySelector("[data-gear-filter-legal-category]");
+        const skillSelect = panel && panel.querySelector("[data-gear-filter-skill]");
+        const sortSelect = panel && panel.querySelector("[data-gear-sort]");
         showLocker(state, kind, button, {
           techLevel: techLevelSelect ? techLevelSelect.value : "any",
           lawLevel: lawLevelSelect ? lawLevelSelect.value : "any",
           legalCategory: legalCategorySelect ? legalCategorySelect.value : "any",
+          skill: skillSelect ? skillSelect.value : "any",
+          sort: sortSelect ? sortSelect.value : "name",
         });
         ensureCatalog().catch(() => {
           // The dialog carries the actionable failure message and custom entry remains available.
@@ -1404,25 +1672,14 @@
         matchesTechLevel(item, state.techLevelFilter) &&
         matchesLawLevel(item, state.lawLevelFilter) &&
         matchesLegalCategory(item, state.legalCategoryFilter) &&
+        matchesSkill(item, state.skillFilter, state.activeKind) &&
         tokens.every((token) => item.searchText.includes(token))
     );
     if (!query) return matches;
     return matches.sort((left, right) => {
-      const leftName = itemName(left).toLocaleLowerCase();
-      const rightName = itemName(right).toLocaleLowerCase();
-      const rank = (name, item) => {
-        if (name === query) return 0;
-        if (name.startsWith(query)) return 1;
-        if (item.displayName.toLocaleLowerCase().startsWith(query)) return 2;
-        if (tokens.every((token) => name.includes(token))) return 3;
-        return 4;
-      };
       return (
-        rank(leftName, left) - rank(rightName, right) ||
-        left.displayName.localeCompare(right.displayName, undefined, {
-          numeric: true,
-          sensitivity: "base",
-        })
+        filteredRank(left, state) - filteredRank(right, state) ||
+        compareDisplayNames(left.displayName, right.displayName)
       );
     });
   }
@@ -1438,7 +1695,55 @@
     return item.displayName.replace(new RegExp(`^${escapedName}\\s*[-–—:]?\\s*`, "i"), "");
   }
 
-  function groupItems(items) {
+  function compareDisplayNames(left, right) {
+    return stringValue(left).localeCompare(stringValue(right), undefined, {
+      numeric: true,
+      sensitivity: "base",
+    });
+  }
+
+  function techLevelSortKey(item) {
+    const parsed = parseTechLevel(item && item.sheet && item.sheet.tl);
+    return parsed ? parsed.minimum : null;
+  }
+
+  function compareTechLevelKeys(left, right, direction) {
+    const leftKnown = Number.isInteger(left);
+    const rightKnown = Number.isInteger(right);
+    if (!leftKnown && !rightKnown) return 0;
+    if (!leftKnown) return 1;
+    if (!rightKnown) return -1;
+    return direction === "tech-desc" ? right - left : left - right;
+  }
+
+  function compareVariants(left, right, state) {
+    const sortOrder = normalizedSortOrder(state.sortOrder);
+    if (sortOrder !== "name") {
+      const techOrder = compareTechLevelKeys(
+        techLevelSortKey(left),
+        techLevelSortKey(right),
+        sortOrder
+      );
+      if (techOrder !== 0) return techOrder;
+    }
+    return (
+      filteredRank(left, state) - filteredRank(right, state) ||
+      compareDisplayNames(left.displayName, right.displayName)
+    );
+  }
+
+  function groupTechLevelSortKey(group) {
+    const knownLevels = group.variants
+      .map((item) => techLevelSortKey(item))
+      .filter((value) => Number.isInteger(value));
+    return knownLevels.length > 0 ? Math.min(...knownLevels) : null;
+  }
+
+  function groupSearchRank(group, state) {
+    return Math.min(...group.variants.map((item) => filteredRank(item, state)));
+  }
+
+  function groupItems(items, state) {
     const groupsById = new Map();
     items.forEach((item) => {
       const group = groupsById.get(item.itemId) || {
@@ -1449,21 +1754,28 @@
       group.variants.push(item);
       groupsById.set(item.itemId, group);
     });
+    groupsById.forEach((group) => {
+      group.variants.sort((left, right) => compareVariants(left, right, state));
+    });
     return Array.from(groupsById.values()).sort((left, right) => {
-      const leftFirst = left.variants[0];
-      const rightFirst = right.variants[0];
+      const sortOrder = normalizedSortOrder(state.sortOrder);
+      if (sortOrder !== "name") {
+        const techOrder = compareTechLevelKeys(
+          groupTechLevelSortKey(left),
+          groupTechLevelSortKey(right),
+          sortOrder
+        );
+        if (techOrder !== 0) return techOrder;
+      }
       return (
-        filteredRank(leftFirst) - filteredRank(rightFirst) ||
-        left.canonicalName.localeCompare(right.canonicalName, undefined, {
-          numeric: true,
-          sensitivity: "base",
-        })
+        groupSearchRank(left, state) - groupSearchRank(right, state) ||
+        compareDisplayNames(left.canonicalName, right.canonicalName)
       );
     });
   }
 
-  function filteredRank(item) {
-    const query = lockerState ? lockerState.search.value.trim().toLocaleLowerCase() : "";
+  function filteredRank(item, state) {
+    const query = state ? state.search.value.trim().toLocaleLowerCase() : "";
     if (!query) return 0;
     const tokens = query.split(/\s+/).filter(Boolean);
     const name = itemName(item).toLocaleLowerCase();
@@ -1542,7 +1854,7 @@
 
   function renderResults(state) {
     const matchingVariants = filteredItems(state);
-    const matches = groupItems(matchingVariants);
+    const matches = groupItems(matchingVariants, state);
     const visible = matches.slice(0, state.visibleCount);
     state.visibleItems = visible;
     state.results.replaceChildren();
@@ -1602,6 +1914,7 @@
 
   function updateKindCounts(state) {
     state.kindTabButtons.forEach(({ count }, kind) => {
+      const skillFilter = state.skillFilterByKind.get(kind) || "any";
       count.textContent = String(
         new Set(
           state.items
@@ -1611,7 +1924,8 @@
                 matchesScope(item, state.scopeValue) &&
                 matchesTechLevel(item, state.techLevelFilter) &&
                 matchesLawLevel(item, state.lawLevelFilter) &&
-                matchesLegalCategory(item, state.legalCategoryFilter)
+                matchesLegalCategory(item, state.legalCategoryFilter) &&
+                matchesSkill(item, skillFilter, kind)
             )
             .map((item) => item.itemId)
         ).size
@@ -1645,6 +1959,8 @@
     if (state.editingRow && normalized !== state.activeKind) cancelEditMode(state, false);
     state.activeKind = normalized;
     state.scopeValue = state.scopeByKind.get(normalized) || "personal";
+    state.skillFilter = state.skillFilterByKind.get(normalized) || "any";
+    state.sortOrder = state.sortOrderByKind.get(normalized) || "name";
     state.personalScope.setAttribute("aria-pressed", String(state.scopeValue === "personal"));
     state.allScope.setAttribute("aria-pressed", String(state.scopeValue === "all"));
     state.kindTabButtons.forEach(({ button }, candidateKind) => {
@@ -3029,11 +3345,21 @@
   }
 
   function showLocker(state, kind, returnFocus = document.activeElement, filters = {}) {
+    const normalizedKind = normalizeKind(kind);
+    if (!normalizedKind) return;
     state.returnFocus = returnFocus;
     state.techLevelFilter = normalizedTechLevelFilter(filters.techLevel);
     state.lawLevelFilter = normalizedLawLevelFilter(filters.lawLevel);
     state.legalCategoryFilter = normalizedLegalCategoryFilter(filters.legalCategory);
-    setActiveKind(state, kind);
+    state.skillFilterByKind.set(
+      normalizedKind,
+      normalizedSkillFilter(filters.skill, normalizedKind)
+    );
+    state.sortOrderByKind.set(
+      normalizedKind,
+      normalizedSortOrder(filters.sort)
+    );
+    setActiveKind(state, normalizedKind);
     if (!state.root.open) state.root.showModal();
     if (state.loaded) {
       setStatus(
@@ -3108,6 +3434,7 @@
   function initialize() {
     if (lockerState) return lockerState;
     populateTechLevelFilters();
+    populateSkillFilters();
     initializeTechLevelHelp();
     initializeLawLevelHelp();
     initializeLegalCategoryHelp();
