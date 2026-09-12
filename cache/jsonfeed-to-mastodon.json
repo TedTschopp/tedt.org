@@ -5481,5 +5481,33 @@
       "https://tschopp.net/users/Ted/statuses/117249612253704251"
     ],
     "lastTootTimestamp": 1789087101174
+  },
+  "https://tedt.org/Beyond-the-Mirror/": {
+    "id": "/Beyond-the-Mirror/",
+    "title": "Beyond the Mirror: Principles for Work in the Age of AI",
+    "summary": "AI can take on more information work, but it cannot decide what work should mean for people. This manifesto argues for shared purpose, a living commons, coordinated autonomy, and shared gains as the foundations of communal work.",
+    "content_text": "AI can take on more information work, but it cannot decide what work should mean for people. This manifesto argues for shared purpose, a living commons, coordinated autonomy, and shared gains as the foundations of communal work. https://tedt.org/Beyond-the-Mirror/",
+    "url": "https://tedt.org/Beyond-the-Mirror/",
+    "image": "https://tedt.org/img/2026-09/Thru-the-Mirror-The-Future-of-work.webp",
+    "tags": [
+      "future of work",
+      "human-ai collaboration",
+      "knowledge commons",
+      "organizational design",
+      "coordinated autonomy",
+      "shared gains",
+      "community"
+    ],
+    "date_published": "2026-09-11T00:00:00-07:00",
+    "date_modified": "2026-09-11T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117256625909083676"
+    ],
+    "lastTootTimestamp": 1789194121044
   }
 }
