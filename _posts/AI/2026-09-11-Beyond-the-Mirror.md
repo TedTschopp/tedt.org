@@ -65,7 +65,7 @@ image-credits-source-URL: ""
 mastodon-post-id:
 ---
 
-In 2001, I sat in Bob’s Big Boy in Burbank, talking with Erik Davis of WIRED about plans to camp out with Tolkien Online fans before a movie premiere. I told him, “People want to participate in the universe they love.” [He recorded the conversation](https://www.wired.com/2001/10/lotr/).
+In 2001, I sat in Bob’s Big Boy in Burbank, talking with [Erik Davis](https://en.wikipedia.org/wiki/Erik_Davis) of WIRED about plans to camp out with Tolkien Online fans before a movie premiere. I told him, “People want to participate in the universe they love.” [He recorded the conversation](https://www.wired.com/2001/10/lotr/).
 
 Take that same sentance and instead of talking about movies, books, and fandom, frame it into a discussion about the future of work. Put that sentence in a meeting with colleagues and it becomes a surprising idea.
 
@@ -81,7 +81,7 @@ The question becomes urgent when we confuse a person’s place in a process with
 
 In the video, [*Why Bullsh✲t Jobs are (Finally) Dying*](https://www.youtube.com/watch?v=QecDVkcGPxY), the narrator approaches this from the economics of corporate work. They describe layers of people once needed to move information through large organizations. The argument is that digital communication weakened that need, while cheap capital and organizational incentives helped preserve the layers. And now, AI adds another source of pressure on routine reports and summaries.
 
-The useful question the video leaves me with is whether we still need every agreement, process, and approach we inherited. Its broader claims about useless jobs deserve more scrutiny. A company continuing to operate after layoffs does not establish that everything those people did was unnecessary. Maintenance, accumulated knowledge, and relationships can take time to reveal their absence.
+The useful question the video leaves me with is whether we still need every agreement, process, and approach we inherited. Its [broader claims about useless jobs deserve more scrutiny](https://doi.org/10.1177/09500170211015067). A company continuing to operate after layoffs does not establish that everything those people did was unnecessary. Maintenance, accumulated knowledge, and relationships can take time to reveal their absence.
 
 But there is something worth following here. We can remove the technical reason for a particular kind of work and continue organizing people around it for years.
 
@@ -115,13 +115,13 @@ In [*Agents Don’t Click*](https://tedt.org/Agents-Dont-Click/), I argued that 
 
 Swarming does not make coordination free. Anthropic’s [account of building a system with multiple research agents](https://www.anthropic.com/engineering/multi-agent-research-system) describes a lead agent assigning parallel investigations and bringing the results together. It also describes duplicated effort, coordination costs, and difficulties when tasks depend heavily on one another. Useful cooperation requires the work to be defined and the results to be checked.
 
-There is a lesson for us in that. We must organize around the actual dependencies of the work. Those dependencies determine the order in which tasks should be performed. In order to do that effectively, we need to understand the relationships between tasks. Best practices here include mapping out task dependencies, identifying critical paths, and continuously reworking the team structure and workflow until you have all those dependencies built into the team and the flow of work.
+There is a lesson for us in that. We must [organize around the actual dependencies of the work]({% link _posts/AI/2026-07-26-The-IT-Adaptive-Factory.md %}). Those dependencies determine the order in which tasks should be performed. In order to do that effectively, we need to understand the relationships between tasks. Best practices here include mapping out task dependencies, identifying critical paths, and continuously reworking the team structure and workflow until you have all those dependencies built into the team and the flow of work.
 
 The distinction can be difficult to see from inside a familiar job. A handoff may contain an essential judgment, an obsolete copying step, or both. You find out by involving the person who does it and examining what changes because of their contribution.
 
 We see this early in IT because code, requests, documentation, tests, and changes already have digital forms. Some outcomes can be checked quickly, and some mistakes can be reversed. That makes parts of our work accessible to agents before work that requires a physical presence or carries consequences that are harder to evaluate.
 
-The same pressure can spread as other kinds of work become accessible. Cheaper execution changes which arrangements are economical. Organizations redesign roles and boundaries in response. The choices they make about ownership, responsibility, and the gains determine what that redesign means for people.
+The same pressure can spread as [other kinds of work become accessible](https://www.ilo.org/publications/generative-ai-and-jobs-refined-global-index-occupational-exposure). Cheaper execution changes which arrangements are economical. Organizations redesign roles and boundaries in response. The choices they make about ownership, responsibility, and the gains determine what that redesign means for people.
 
 That is a causal path toward much of the economic disruption people fear. It is also a place where human decisions still matter.
 
@@ -147,7 +147,7 @@ Years ago, in [*Defending the Commons*](https://tedt.org/the-purpose-of-communit
 
 In knowledge work, that shared ground includes what we know, how we arrived at it, what we have tried, what failed, and which promises we have made. It includes the experience of the person who notices an exception before it becomes an incident. It includes the conditions that let a newcomer ask a question without first earning entry to an insider network.
 
-We can call this a living commons: knowledge that people can find, question, improve, and use within legitimate boundaries. Someone must maintain it. Someone must notice when a once-correct answer becomes wrong. Its value depends on continued participation.
+We can call this [a living commons](https://mitpress.mit.edu/9780262516037/understanding-knowledge-as-a-commons/): knowledge that people can find, question, improve, and use within legitimate boundaries. Someone must maintain it. Someone must notice when a once-correct answer becomes wrong. Its value depends on continued participation.
 
 AI can make that commons easier to search and more useful in doing the work. It can also generate so much plausible material that finding what deserves trust becomes harder. A pile of generated documents is not a community’s memory until people have a way to establish what belongs there and why.
 
@@ -176,9 +176,9 @@ Roles, expertise, handoffs, and individual achievement remain useful. We judge t
 
 Shared purpose means the people involved can explain who the work serves and what would make it worthwhile. They can also question it. If participation amounts to helping execute a decision nobody is allowed to examine, we have given the old arrangement a more appealing name. The people who do the work and the people who live with its consequences need a voice in defining success.
 
-A living commons means expertise becomes something others can build upon. A useful decision leaves its reasoning behind. A corrected error improves the shared method. The person who documents a difficult exception receives credit for making everyone more capable. Privacy and confidentiality still apply, but access should not depend on knowing the right person to have a drink with after work.
+A living commons means [expertise becomes something others can build upon](https://www.nber.org/papers/w31161). A useful decision leaves its reasoning behind. A corrected error improves the shared method. The person who documents a difficult exception receives credit for making everyone more capable. Privacy and confidentiality still apply, but access should not depend on knowing the right person to have a drink with after work.
 
-Coordinated autonomy means giving people and agents room to act within a clear purpose and appropriate limits. Independent work can proceed together. Dependencies stay visible. Someone has authority to accept the result, and someone can interrupt the work when it goes wrong. Accountability is a responsibility we name and support, not something we hope will emerge from the group.
+Coordinated autonomy means giving people and agents room to act [within a clear purpose and appropriate limits]({% link _posts/AI/2026-08-01-How-Much-Work-Can-Your-AI-Safely-Own.md %}#set-the-right-authority-for-the-work). Independent work can proceed together. Dependencies stay visible. Someone has authority to accept the result, and someone can interrupt the work when it goes wrong. Accountability is a responsibility we name and support, not something we hope will emerge from the group.
 
 Shared capability and shared gains mean asking what happens to the benefit. A team that teaches a system how its work really operates has contributed more than training data. Its members have supplied judgment, history, and ways of recognizing trouble. They should help decide how the recovered capacity is used, whether that means better service, time to learn, new responsibilities, or a more sustainable working day. When a role does disappear, that conversation must include paid time to retrain, support between roles, and how the affected people share in the benefit.
 
