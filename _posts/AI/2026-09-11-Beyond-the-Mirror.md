@@ -206,7 +206,7 @@ There is no guarantee that we will make that choice. Technology gives us possibi
 
 The machinery alone cannot decide which future is worthwhile.
 
-I come back to that conversation at Bob’s Big Boy, where we were planning to bring Tolkien fans together.
+I come back to that conversation at Bob’s Big Boy, where we were talking about our plans for bringing Tolkien fans together.
 
 There is a particular pleasure in finding people who care about a story you love. You can ask the question nobody else around you understands. Someone remembers a passage you missed. Someone else sees a character differently. What began as reading becomes a conversation, and the conversation gives people something to build together.
 
