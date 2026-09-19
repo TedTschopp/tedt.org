@@ -5509,5 +5509,33 @@
       "https://tschopp.net/users/Ted/statuses/117256625909083676"
     ],
     "lastTootTimestamp": 1789194121044
+  },
+  "https://tedt.org/When-AI-Evaluators-Also-Sell-AI-Adoption/": {
+    "id": "/When-AI-Evaluators-Also-Sell-AI-Adoption/",
+    "title": "When AI Evaluators Also Sell AI Adoption",
+    "summary": "When an AI evaluator also sells adoption, buyers need evidence that inconvenient findings can reach decision-makers and change a deployment decision.",
+    "content_text": "When an AI evaluator also sells adoption, buyers need evidence that inconvenient findings can reach decision-makers and change a deployment decision. https://tedt.org/When-AI-Evaluators-Also-Sell-AI-Adoption/",
+    "url": "https://tedt.org/When-AI-Evaluators-Also-Sell-AI-Adoption/",
+    "image": "https://tedt.org/img/2026-09/AI-Evaluators-Selling-Adoption.webp",
+    "tags": [
+      "AI evaluation",
+      "AI governance",
+      "AI safety",
+      "embedded evaluation",
+      "evaluator independence",
+      "enterprise procurement",
+      "Anthropic",
+      "Accenture"
+    ],
+    "date_published": "2026-09-19T00:00:00-07:00",
+    "date_modified": "2026-09-19T00:00:00-07:00",
+    "author": {
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117299068280344554"
+    ],
+    "lastTootTimestamp": 1789841740223
   }
 }
