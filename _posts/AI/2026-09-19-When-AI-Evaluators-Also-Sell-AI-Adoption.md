@@ -64,13 +64,13 @@ When I bought my house, one of the inspectors sold us on a roof inspection.
 
 That seemed like a sensible thing for a new homeowner to buy. We needed help understanding the house. An inspection was supposed to give us information we could use to make a decision.
 
-The inspection turned out to be a sales system. The inspection team also had roofing solutions to sell, and the process moved us toward buying those solutions. Helping a new homeowner understand the roof had become secondary to creating another sale.
+The inspection turned out to be an on-ramp into a sales system. The inspection team also had roofing solutions to sell, and the company's intention was to move us toward buying those solutions and adding the costs of those solutions to the homeloan. Helping a new homeowner understand the roof had become secondary to creating another sale.
 
 The problem was the purpose the inspection served.
 
 That experience is a useful place to begin with AI evaluation. When someone hands you an assessment, whose decision is it designed to improve? What happens when the evidence points toward buying less, delaying the work or walking away?
 
-Those questions became more concrete on Sept. 18, when Anthropic announced [“Partnering with Accenture on embedded evaluation.”](https://www.anthropic.com/news/accenture-embedded-evaluation) Faculty, Accenture’s specialist AI business, will lead the work, with Anthropic funding it directly. The stated scope includes evaluating models, examining alignment and testing safeguards.
+Those questions became more concrete on Sept. 18, when Anthropic announced [“Partnering with Accenture on embedded evaluation.”](https://www.anthropic.com/news/accenture-embedded-evaluation) What's going to happen under this partnership is that Accenture’s specialist AI business, will lead the work, with Anthropic funding it directly. The stated scope includes evaluating models, examining alignment and testing safeguards.
 
 ## When Evaluation Meets an Existing Sales Relationship
 
@@ -80,7 +80,7 @@ Now there is an evaluation relationship too.
 
 That combination deserves examination. It does not establish that Accenture or Faculty has compromised an assessment, suppressed a finding or failed to act independently. My roof inspection supplies a question to investigate. It supplies no evidence about their conduct.
 
-The question is whether an evaluator can deliver a commercially inconvenient judgment, and whether the people who need that judgment will receive it.
+The question is whether an evaluator can deliver a commercially inconvenient judgment about Anthropic or Accenture, and whether the people who are going to pay for that that judgment will receive it reliably.
 
 ## Independence Has to Survive Ordinary Pressures
 
@@ -104,13 +104,13 @@ But there is a strong argument for the arrangement Anthropic has announced.
 
 People who help organizations deploy AI may understand failures that a distant reviewer misses. They may recognize the difference between a convincing demonstration and a workflow that breaks when permissions change, records conflict or a user does something unexpected. Embedded access could also reveal decisions and practices that cannot be reconstructed from a finished model.
 
-Distance can protect judgment. It can also limit understanding.
+Distance can protect judgment. It can also limit understanding.  Another aspect to consider in addition to distance is the longevity of the evaluation.  Just because a model passes an evaluation at one point in time does not guarantee it will continue to meet the same standards as it evolves. Long-term monitoring and repeated assessments are necessary to maintain confidence in the model's behavior.
 
 Will Knight’s Sept. 18 WIRED article, [“Here’s How an AI Slowdown Could Actually Be Enforced,”](https://www.wired.com/story/heres-how-an-ai-slowdown-could-actually-work/) captures this disagreement. Geoffrey Irving argues that inspections can help constrain development; Raymond Douglas emphasizes unresolved questions about effective controls. The reporting offers reasons to investigate inspection methods carefully, alongside a credible case for using them.
 
-Payment alone cannot settle the question either. Evaluation takes skilled people, time and access. Someone must fund it. Moving the invoice to a nonprofit, a pooled fund or a government body changes the incentives without eliminating the need to examine them.
+Payment alone cannot settle these question either. Evaluation takes skilled people, time and access. Someone must fund it. Moving the invoice to a nonprofit, a pooled fund or a government body changes the incentives without eliminating the need to examine them.
 
-Anthropic acknowledges that access, reporting and funding standards remain unsettled. It describes a nonexclusive arrangement, plans for additional evaluators and discussions about other funding approaches. Those are relevant commitments. Their practical value will depend on how they operate.
+Anthropic acknowledges that access, reporting, and funding standards remain unsettled. It describes a nonexclusive arrangement, plans for additional evaluators and discussions about other funding approaches. Those are relevant commitments. Their practical value will depend on how they operate.
 
 ## What Protects an Uncomfortable Finding?
 
@@ -172,7 +172,7 @@ The evidence could ultimately support the Anthropic–Accenture approach. Protec
 
 That possibility belongs in the argument. The purpose of scrutiny is to learn whether an arrangement deserves trust.
 
-The roof inspection failed us because the process served the next roofing sale more than it served a new homeowner. We needed help making a decision about our house. The inspection team had built a way to sell us more solutions.
+The roof inspection failed us because the process served the next roofing sale more than it served a new homeowner. We needed help making a decision about our house. The inspection team had built a way to sell us more "solutions."
 
 An enterprise needs an assessment that leaves several choices open: proceed, narrow the deployment, repair the problem, obtain more evidence or decline the purchase.
 
