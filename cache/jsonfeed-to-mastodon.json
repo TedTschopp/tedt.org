@@ -5537,5 +5537,34 @@
       "https://tschopp.net/users/Ted/statuses/117299068280344554"
     ],
     "lastTootTimestamp": 1789841740223
+  },
+  "https://tedt.org/When-AI-Moves-Faster-Than-the-Organization/": {
+    "id": "/When-AI-Moves-Faster-Than-the-Organization/",
+    "title": "When AI Moves Faster Than the Organization",
+    "summary": "We should evaluate the capability of the organization we are assembling around AI, including the people who remain responsible for its work.",
+    "content_text": "We should evaluate the capability of the organization we are assembling around AI, including the people who remain responsible for its work. https://tedt.org/When-AI-Moves-Faster-Than-the-Organization/",
+    "url": "https://tedt.org/When-AI-Moves-Faster-Than-the-Organization/",
+    "image": "https://tedt.org/img/2026-09/Lego-cat-story.webp",
+    "tags": [
+      "enterprise AI",
+      "agentic AI",
+      "collective intelligence",
+      "operating model",
+      "scenario planning",
+      "AI governance",
+      "value stream",
+      "evidence-based evaluation"
+    ],
+    "date_published": "2026-09-26T00:00:00-07:00",
+    "date_modified": "2026-09-26T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117340242152872389"
+    ],
+    "lastTootTimestamp": 1790470003676
   }
 }
