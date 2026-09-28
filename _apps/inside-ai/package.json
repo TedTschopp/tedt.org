@@ -1,0 +1,35 @@
+{
+  "name": "tedt-inside-ai",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build && node scripts/scope-css.mjs && node scripts/copy-runtime.mjs",
+    "test": "node --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "svelte": "4.2.20",
+    "d3": "7.9.0",
+    "d3-sankey": "0.12.3",
+    "classnames": "2.5.1",
+    "flowbite-svelte": "0.46.1",
+    "flowbite-svelte-icons": "1.6.1",
+    "gsap": "3.12.5",
+    "katex": "0.16.22",
+    "onnxruntime-web": "1.23.0",
+    "bignumber.js": "9.1.2",
+    "@neoconfetti/svelte": "1.0.0"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "3.1.2",
+    "vite": "5.4.21",
+    "sass": "1.77.1",
+    "tailwindcss": "3.4.17",
+    "postcss": "8.5.6",
+    "postcss-prefix-selector": "2.1.1",
+    "typescript": "5.8.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

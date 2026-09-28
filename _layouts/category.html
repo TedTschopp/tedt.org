@@ -92,6 +92,9 @@
                     {% if _subtitle != '' %}
                       <h2 class="category-subtitle">{{ _subtitle }}</h2>
                     {% endif %}
+                    {% if __cat_slug == 'ai' %}
+                      {% include content/inside-ai-callout.html compact=true %}
+                    {% endif %}
                     {%- comment -%}
                       Category pages should use the same selector rules as the homepage category carousel:
                       match posts by canonical slug, registry title, and any registry raw_names aliases.
