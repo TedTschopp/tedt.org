@@ -55,6 +55,20 @@ test('the transformer diagram retains its horizontal layout and bounded vectors'
     const parent = element.parentElement.getBoundingClientRect();
     return box.width > 0 && box.width < 100 && box.height > 0 && box.height < 250 && Math.abs(box.width - parent.width) <= 2;
   })).toBe(true);
+  const scrollRegion = page.locator('#inside-ai-app .ia-diagram-scroll');
+  for (const width of [320, 390, 1440]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const expanded of [false, true]) {
+      if (expanded) await page.getByRole('button', { name: 'Expand attention', exact: true }).click();
+      // Expanded attention has a visible residual caption just beyond the canvas.
+      const permittedCaptionExtent = expanded ? 24 : 1;
+      await expect.poll(() => scrollRegion.evaluate(element => {
+        const canvas = element.querySelector('.ia-diagram-canvas');
+        return element.scrollWidth - Math.ceil(canvas.getBoundingClientRect().width);
+      }), { message: `${width}px diagram must not scroll into a blank area (expanded: ${expanded})` }).toBeLessThanOrEqual(permittedCaptionExtent);
+      if (expanded) await page.getByRole('button', { name: 'Collapse diagram', exact: true }).click();
+    }
+  }
 });
 
 test('controls and explanations remain accessible in both themes on small screens', async ({ page }) => {
