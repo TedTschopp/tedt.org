@@ -1,0 +1,46 @@
+<section class="gt-panel" aria-labelledby="auction-title"><p class="gt-step">1. Make a Prediction</p><h2 id="auction-title">Winning Is Only Half the Question</h2>
+  <p>Every bidder submits one hidden bid. The highest bid wins one item. In a <strong>first-price auction</strong>, the winner pays its own bid. In a <strong>second-price auction</strong>, the winner pays the second-highest bid. Only the winner pays; everyone else gets zero.</p>
+  <p class="gt-note" data-auction-information></p>
+  <div class="gt-field"><label for="auction-prediction">What will happen with your bid?</label><select id="auction-prediction" data-auction-prediction data-gt-prediction><option value="">Choose a prediction</option><option value="profit">I will win without losing points</option><option value="loss">I will win but lose points</option><option value="lose">I will not win</option></select></div>
+  <p class="gt-step">2. Make Your Choice</p>
+  <div class="gt-field"><label for="auction-bid">Your bid in points</label><input id="auction-bid" data-auction-bid type="number" value="80" min="0" max="200" step="1"></div>
+  <div class="gt-actions"><button class="gt-button" type="button" data-auction-play data-gt-action>Submit sealed bid</button><button class="gt-button gt-button-secondary" type="button" data-auction-next>Try the next item</button></div>
+  <p class="gt-result" data-auction-result data-gt-results role="status" aria-live="polite"></p>
+</section>
+<section class="gt-panel" aria-labelledby="auction-reveal-title"><p class="gt-step">3. Reveal the Incentives</p><h2 id="auction-reveal-title">What Did Everyone Know?</h2>
+  <p><strong>Private value</strong> means each bidder knows what the item is worth to that bidder, and those values can differ. <strong>Common value</strong> means the item has the same actual worth to everyone, but each bidder receives an imperfect estimate. An estimate is a guess based on limited information.</p>
+  <div class="gt-table-wrap" tabindex="0" role="region" aria-label="Auction bids and revealed values; scroll sideways if needed"><table class="gt-table"><caption>Information revealed after you bid</caption><thead><tr><th scope="col">Bidder</th><th scope="col">Actual value</th><th scope="col">Known value or estimate</th><th scope="col">Bid</th><th scope="col">Profit</th></tr></thead><tbody data-auction-rows></tbody></table></div>
+  <p>The <strong>winner’s curse</strong> describes the risk that winning a common-value auction selects an unusually optimistic estimate. Paying too much can leave the winner worse off. This is not a claim that every winner loses money.</p>
+</section>
+<section class="gt-panel" aria-labelledby="auction-rules-title"><p class="gt-step">4. Change One Assumption</p><h2 id="auction-rules-title">Change the Payment Rule or the Information</h2>
+  <div class="gt-controls gt-grid">
+    <div class="gt-field"><label for="auction-rule">What the winner pays</label><select id="auction-rule" data-setting="rule"><option value="first">First price: own bid</option><option value="second">Second price: second-highest bid</option></select></div>
+    <div class="gt-field"><label for="auction-mode">How the item is valued</label><select id="auction-mode" data-setting="mode"><option value="private">Known private values</option><option value="common">One common value with noisy estimates</option></select></div>
+    <div class="gt-field"><label for="auction-bidders">Total bidders, including you</label><input id="auction-bidders" data-setting="bidders" type="number" value="4" min="2" max="8" step="1"></div>
+    <div class="gt-field"><label for="auction-noise">Largest estimate error, for common values only</label><input id="auction-noise" data-setting="noise" type="number" value="30" min="0" max="60" step="5"></div>
+    <div class="gt-field"><label for="auction-shading">Other bidders bid this percentage of their value or estimate</label><input id="auction-shading" data-setting="shading" type="number" value="100" min="0" max="100" step="5"></div>
+    <div class="gt-field"><label for="auction-ownShading">Your percentage of value or estimate in the 200-item comparison</label><input id="auction-ownShading" data-setting="ownShading" type="number" value="100" min="0" max="100" step="5"></div>
+    <div class="gt-field"><label for="auction-seed">Random seed for repeatable items</label><input id="auction-seed" data-setting="seed" type="number" value="42" min="1" max="99999" step="1"></div>
+  </div>
+  <p><strong>Bid shading</strong> means bidding below your value or estimate to leave room for profit if you win. For instance, 80% of an estimate of 100 gives a bid of 80. The other bidders follow this percentage rule and do not adapt to the auction format.</p>
+  <div class="gt-actions"><button class="gt-button gt-button-secondary" type="button" data-auction-run>Compare 200 items under both rules</button></div>
+  <p class="gt-note" data-auction-batch role="status"></p>
+  <p class="gt-note">Model assumptions: private values are whole numbers from 30 to 100. Common values are 50 to 100; each estimate adds an independently drawn error, then stops at zero if necessary. Bids are rounded to whole points. Ties go to the lowest bidder number, and you are bidder 1. There is no minimum sale price or fee to enter. Bidders can afford any permitted bid, and winners cannot sell the item again. The <strong>seed</strong> is the starting number that reproduces the same random sequence. The comparison uses your percentage rule, not the one manual bid above, and reuses identical items and bids across formats.</p>
+</section>
+<section class="gt-panel" aria-labelledby="auction-math-title">
+  <div id="gt-math" class="gt-math-beginner"><h2 id="auction-math-title">Work It Out, Step by Step</h2>
+    <p>Suppose your item value is 80, you bid 70, and the highest other bid is 60.</p>
+    <ol class="gt-math-steps"><li>Your 70 beats 60, so you win under either rule.</li><li>First price charges your bid of 70. Your profit is \(80-70=10\).</li><li>Second price charges the highest other bid of 60. Your profit is \(80-60=20\).</li><li>If 80 was only your estimate and the actual common value turns out to be 50, the same first-price win loses \(70-50=20\) points.</li></ol>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[50-70=-20.\]</div>
+    <p><strong>In words:</strong> an item worth 50 minus a payment of 70 leaves a loss of 20. The minus sign before 20 means the final score is below zero. <strong>Profit</strong> is value received minus the price paid; <strong>revenue</strong> is the payment the seller receives.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert"><summary>For experts: formal model and assumptions</summary><h3>How to Read the Symbols</h3>
+    <dl class="gt-symbol-key"><dt>\(h\), \(r\), \(P\), \(v\), and \(u\)</dt><dd>\(h\) is the highest bid. \(r\) is the second-highest bid, including an equal bid in a tie. \(P\) is the price. \(v\) is the winner’s actual value. \(u\) is the winner’s profit in points. Each letter stands for one number.</dd></dl>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[P_{\text{first}}=h,\qquad P_{\text{second}}=r,\qquad u=v-P.\]</div>
+    <p><strong>In words:</strong> first price charges the highest bid; second price charges the next-highest; subtract the payment from the winner’s value. The small words below \(P\) are labels identifying the rule.</p>
+    <p>In the standard single-item private-value second-price model, bidding your known value is a <strong>weakly dominant strategy</strong>: it is never worse than another bid against any fixed rival bids, though sometimes several bids give the same result. If the highest rival bid is below your value, winning is useful. If it is above your value, winning loses money. Bidding your value puts the win-or-lose boundary in the right place. This statement assumes points equal value minus price, no extra fees or budget restrictions, and a fixed tie rule.</p>
+    <p>That argument does not make a raw common-value estimate truthful in the same sense: winning conveys information about how optimistic your estimate was relative to others. The app’s batch comparison holds bidding rules fixed. It does not prove that one format earns a seller more after bidders change their strategies.</p>
+    <p>See the <a href="{{ '/math-guide/' | relative_url }}">math reading guide</a> for subscripts, subtraction, and probabilities.</p>
+  </details>
+</section>
+<section class="gt-panel" aria-labelledby="auction-transfer-title"><p class="gt-step">5. Transfer the Lesson</p><h2 id="auction-transfer-title">What Is Being Estimated?</h2><p>You bid for a used machine. Some value comes from how useful it is to your workshop; some depends on hidden wear that matters to every buyer. Which parts are private value and which are common value? What new information would you want before treating a high estimate as a safe bid?</p><p>Concept reference: <a href="https://oyc.yale.edu/economics/econ-159/lecture-24">Yale’s lecture on auctions and the winner’s curse</a>.</p></section>

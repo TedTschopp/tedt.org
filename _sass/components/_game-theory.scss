@@ -86,8 +86,11 @@
 .gt-catalog { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; }
 .gt-card { display: flex; flex-direction: column; border: 1px solid var(--gt-line); border-radius: .375rem; padding: 1.5rem; background: var(--gt-panel); box-shadow: 0 1px 3px #00000008; transition: transform .15s, border-color .15s; }
 .gt-card:hover { transform: translateY(-2px); border-color: var(--gt-primary); }
-.gt-card h3 a { text-decoration: none; }
-.gt-card h3 a:hover { text-decoration: underline; }
+.gt-card h4 { font-size: 1.45rem; line-height: 1.25; }
+.gt-card h4 a { text-decoration: none; }
+.gt-card h4 a:hover { text-decoration: underline; }
+.gt-collection-nav { border-block: 1px solid var(--gt-line); padding-block: 1rem; }
+.gt-collection-group { margin-block: 2.5rem 3.5rem; }
 .gt-card > p { font-size: .95rem; color: var(--gt-muted); }
 .gt-card-meta { display: flex; justify-content: space-between; align-items: center; gap: .75rem; color: var(--gt-muted); font-size: .75rem; margin-bottom: 2rem; }
 .gt-card-number { color: var(--gt-accent); font-size: 1.5rem; font-variant-numeric: tabular-nums; }
@@ -121,7 +124,7 @@
 .gt-metric { border-bottom: 2px solid var(--gt-line); padding: .5rem 0 1rem; }
 .gt-metric strong, .gt-metric output { display: block; font-size: 1.8rem; font-weight: 700; font-variant-numeric: tabular-nums; }
 .gt-table-wrap { max-width: 100%; overflow-x: auto; }
-.gt-table { width: 100%; border-collapse: collapse; font-size: .95rem; margin-block: 1rem; }
+.gt-table { width: 100%; border-collapse: collapse; font-size: .95rem; margin-block: 1rem; overflow-wrap: normal; }
 .gt-table caption { caption-side: top; color: var(--gt-muted); font-size: .85rem; }
 .gt-table th, .gt-table td { padding: .7rem .6rem; border-bottom: 1px solid var(--gt-line); vertical-align: middle; text-align: left; }
 .gt-table thead th { font-size: .8rem; }

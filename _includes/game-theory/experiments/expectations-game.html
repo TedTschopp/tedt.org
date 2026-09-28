@@ -1,0 +1,50 @@
+<section class="gt-panel" aria-labelledby="expect-choice-title">
+  <p class="gt-step">1. Make a Prediction</p>
+  <h2 id="expect-choice-title">How Low Will Everyone Go?</h2>
+  <p>You and 19 simulated players each choose a number from 0 to 100. Add all 20 numbers and divide by 20 to find the <strong>average</strong>. The target is two-thirds of that average. Whoever gets closest shares a 100-point prize. Your own number counts in the average.</p>
+  <div class="gt-field"><label for="expect-prediction">Where will this round’s target land?</label><select id="expect-prediction" data-expect-prediction data-gt-prediction><option value="">Choose a prediction</option><option value="low">Below 20</option><option value="middle">From 20 through 40</option><option value="high">Above 40</option></select></div>
+  <p class="gt-step">2. Make Your Choice</p>
+  <div class="gt-field"><label for="expect-choice">Your number, from 0 to 100</label><input id="expect-choice" data-expect-choice type="number" min="0" max="100" step="0.01" value="33"></div>
+  <button class="gt-button" type="button" data-expect-play data-gt-action>Play this round</button>
+  <p class="gt-result" data-expect-result data-gt-results role="status" aria-live="polite"></p>
+  <p data-expect-scores></p>
+</section>
+
+<section class="gt-panel" aria-labelledby="expect-incentives-title">
+  <p class="gt-step">3. Reveal the Incentives</p>
+  <h2 id="expect-incentives-title">Think About the People at This Table</h2>
+  <p>A <strong>reasoning depth</strong> counts how many times a player takes two-thirds, starting from a guess that the average will be 50. Depth 0 chooses 50. Depth 1 chooses about 33.33. Depth 2 chooses about 22.22. Depth 3 chooses about 14.81. Depth 4 chooses about 9.88. These are programmed rules of thumb, not intelligence scores.</p>
+  <p data-expect-population></p>
+  <div class="gt-table-wrap gt-history" tabindex="0" role="region" aria-label="Recent guesses, targets, and prizes; scroll sideways if needed"><table class="gt-table"><caption>Your recent rounds, newest first; displayed numbers are rounded to two decimal places</caption><thead><tr><th scope="col">Round</th><th scope="col">Your number</th><th scope="col">Group average</th><th scope="col">Target</th><th scope="col">Your distance</th><th scope="col">Your prize</th></tr></thead><tbody data-expect-history></tbody></table></div>
+  <p>Try 0 against players who all start at 50. Then reset and try a number near 33. Thinking through more steps does not guarantee a win against the actual people in front of you.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="expect-sandbox-title">
+  <p class="gt-step">4. Change One Assumption</p>
+  <h2 id="expect-sandbox-title">Change the Starting Beliefs or the Learning Speed</h2>
+  <div class="gt-controls"><div class="gt-field"><label for="expect-population">Simulated players’ starting reasoning</label><select id="expect-population" data-setting="population"><option value="mixed">Mixed depths 0 through 4</option><option value="0">All depth 0: choose 50</option><option value="1">All depth 1: choose 33.33</option><option value="2">All depth 2: choose 22.22</option><option value="3">All depth 3: choose 14.81</option><option value="4">All depth 4: choose 9.88</option></select></div><div class="gt-field"><label for="expect-learning">Move toward the last target by this percent</label><input id="expect-learning" data-setting="learning" type="number" min="0" max="100" step="10" value="50"></div></div>
+  <p class="gt-note">Changing a setting starts a new run. A run lasts at most 30 rounds. Zero percent keeps the simulated players’ numbers fixed. One hundred percent makes each choose the previous target next time. There is no randomness, so replaying the same choices gives the same results.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="expect-math-title">
+  <div id="gt-math" class="gt-math-beginner">
+    <h2 id="expect-math-title">Work It Out, Step by Step</h2>
+    <p><strong>Higher-order beliefs</strong> are thoughts about other people’s thoughts. “I think the average will be 50” is one belief. “I think everyone else expects 50 and will choose two-thirds of it” adds another layer.</p>
+    <ol class="gt-math-steps"><li><strong>Find the average.</strong> Suppose all 19 other players choose 50 and you choose 30. Their numbers add to 950. Adding yours gives 980. Divide by 20 players: the average is 49.</li><li><strong>Find two-thirds.</strong> Divide 49 by 3, then multiply by 2. The target is about 32.67.<div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[T=\frac{2}{3}\times49\approx32.67.\]</div><p><strong>In words:</strong> “The target equals two-thirds times 49, which is approximately 32.67.” The letter T names the target. The symbol \(\approx\) means “approximately equal to”; we rounded the answer.</p></li><li><strong>Compare distances.</strong> Your 30 is about 2.67 away. Each other player’s 50 is about 17.33 away. You get all 100 prize points in this example.</li><li><strong>Watch learning change the next round.</strong> At 50% learning, a player at 50 moves halfway toward 32.67. Half of 50 is 25, and half of 32.67 is about 16.33. Add them to get a next choice of about 41.33.</li></ol>
+    <p>The lowest possible number is 0. If everyone chooses 0, the target is also 0 and everyone shares the prize. That is a <strong>Nash equilibrium</strong>: nobody can earn more by changing only their own number. It does not mean 0 wins against every starting population.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert"><summary>For experts: formal model and assumptions</summary>
+    <h3>From Guesses to the Target</h3>
+    <dl class="gt-symbol-key"><dt>\(x_i\), \(N\), and \(T\)<span class="gt-symbol-reading">In words: “player i’s number,” “number of players,” and “target.”</span></dt><dd>The small lower i is a player label, called a subscript. There are \(N=20\) players. Every choice lies from 0 through 100.</dd><dt>\(\sum_{i=1}^{N}x_i\)<span class="gt-symbol-reading">In words: “add the choices from player 1 through player N.”</span></dt><dd>The large Greek letter sigma means to add a list. Dividing that sum by the number of players gives the average. See the <a href="{{ '/math-guide/' | relative_url }}#sums">guide to adding a list</a>.</dd></dl>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[T=\frac{2}{3N}\sum_{i=1}^{N}x_i.\]</div>
+    <p><strong>In words:</strong> “Add every choice, divide by the number of players, and take two-thirds.” The fraction combines those two steps. The prize is split equally among choices with the smallest absolute distance from T. An <strong>absolute distance</strong> is the gap without a negative sign: 30 is 2.67 away from 32.67.</p>
+    <h3>The Programmed Learning Rule</h3>
+    <dl class="gt-symbol-key"><dt>\(x_{i,t}\), \(x_{i,t+1}\), and \(T_t\)<span class="gt-symbol-reading">In words: “player i’s current number,” “that player’s next number,” and “this round’s target.”</span></dt><dd>The small t labels a round. Adding 1 moves to the next round. The comma separates the player label from the round label.</dd><dt>\(\alpha\)<span class="gt-symbol-reading">In words: “alpha,” the learning fraction.</span></dt><dd>Alpha is the Greek letter used here for how far a simulated player moves toward the target. A setting of 50% means \(\alpha=0.5\). Then \(1-\alpha\), read “one minus alpha,” is the fraction of the old guess retained. See <a href="{{ '/math-guide/' | relative_url }}#rounds-and-updates">rounds and updates</a>.</dd></dl>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[x_{i,t+1}=(1-\alpha)x_{i,t}+\alpha T_t.\]</div>
+    <p><strong>In words:</strong> “The next guess is the retained part of the old guess plus the learning part of the latest target.” Letters placed next to parentheses mean multiply. This is an adaptive simulation rule, not a claim that the simulated players calculate an optimal response.</p>
+    <p>The mixed starting population has 3 players at depth 0, 5 at depth 1, 5 at depth 2, 3 at depth 3, and 3 at depth 4. A depth-k starting guess is \(50(2/3)^k\). <strong>In words:</strong> “Start at 50 and multiply by two-thirds k times.” The raised k is an exponent, which counts repeated multiplication. These starting rules of thumb do not correct for a player’s effect on the average. The scoring rule does include that effect. The 100-point prize is conserved each round, including ties.</p>
+    <p>Concept reference: <a href="https://econweb.ucsd.edu/~v2crawford/UGGameTheorySlides13.pdf">Vincent Crawford’s university lecture notes on level-k reasoning and guessing games</a>. This toy population is not fitted to those experiments or to human behavior.</p>
+  </details>
+</section>
+
+<section class="gt-panel" aria-labelledby="expect-transfer-title"><p class="gt-step">5. Take It Somewhere Else</p><h2 id="expect-transfer-title">What Will Other Teams Budget?</h2><p>A planning team predicts the budget requests other teams will submit. Those teams are themselves trying to anticipate the planning team. Would adding another layer of reasoning necessarily make the forecast better?</p><details><summary>Reveal the reasoning</summary><p>Only if that extra layer resembles how the other teams actually decide. A sophisticated forecast can fail when it assumes everyone else reasons the same way. Gather evidence about their rules and update the forecast when their behavior changes.</p></details></section>

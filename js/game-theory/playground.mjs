@@ -6,7 +6,21 @@ const modules = {
   'coordination-trap': () => import('./coordination-trap.mjs'),
   'mixed-strategy': () => import('./mixed-strategy.mjs'),
   'credible-threat': () => import('./credible-threat.mjs'),
-  'traffic-paradox': () => import('./traffic-paradox.mjs')
+  'traffic-paradox': () => import('./traffic-paradox.mjs'),
+  'public-goods': () => import('./public-goods.mjs'),
+  'last-fish': () => import('./last-fish.mjs'),
+  'bargaining-room': () => import('./bargaining-room.mjs'),
+  'auction-lab': () => import('./auction-lab.mjs'),
+  'signaling-game': () => import('./signaling-game.mjs'),
+  'expectations-game': () => import('./expectations-game.mjs'),
+  'common-knowledge': () => import('./common-knowledge.mjs'),
+  'evolution-arena': () => import('./evolution-arena.mjs'),
+  'correlation-experiment': () => import('./correlation-experiment.mjs'),
+  'stable-matching': () => import('./stable-matching.mjs'),
+  'coalition-calculator': () => import('./coalition-calculator.mjs'),
+  'voting-lab': () => import('./voting-lab.mjs'),
+  'incentive-designer': () => import('./incentive-designer.mjs'),
+  'mechanism-design': () => import('./mechanism-design.mjs')
 };
 
 const root = document.querySelector('#gt-experiment');
