@@ -1,0 +1,19 @@
+<aside class="card my-4 shadow-sm" aria-labelledby="inside-ai-feature-title">
+  <div class="row g-0 align-items-center">
+    {% unless include.compact %}
+    <div class="col-md-4">
+      <a href="{{ '/inside-ai/' | relative_url }}" tabindex="-1" aria-hidden="true">
+        <img src="{{ '/img/inside-ai/social-preview.png' | relative_url }}" class="img-fluid rounded-start" width="1200" height="630" loading="lazy" decoding="async" alt="">
+      </a>
+    </div>
+    {% endunless %}
+    <div class="{% if include.compact %}col-12{% else %}col-md-8{% endif %}">
+      <div class="card-body p-4">
+        <p class="small text-body-secondary mb-2">Interactive Learning</p>
+        <h2 id="inside-ai-feature-title" class="h3 card-title"><a href="{{ '/inside-ai/' | relative_url }}">Inside AI</a></h2>
+        <p class="card-text">Follow a sentence through a transformer. Inspect tokens, attention, and the next-token probabilities, then try the model in your browser.</p>
+        <a class="btn btn-primary" href="{{ '/inside-ai/' | relative_url }}">Explore Inside AI <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </div>
+</aside>

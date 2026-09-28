@@ -323,7 +323,7 @@ disconnected schema blocks that were previously emitted by article layouts.
 {% endif %}
 
 {% assign is_tool_page = false %}
-{% if page_layout == 'tool' %}{% assign is_tool_page = true %}{% endif %}
+{% if page_layout == 'tool' or page_layout == 'inside-ai' %}{% assign is_tool_page = true %}{% endif %}
 
 {% assign is_blog_post = false %}
 {% if page.collection == 'posts' or page_layout == 'post' or page_layout == 'long-article' or page_layout == 'quote' or page_layout == 'prompt-details' or page_layout == 'micropubpost' or page_layout == 'reveal-integrated' or page_layout == 'slide-deck' %}

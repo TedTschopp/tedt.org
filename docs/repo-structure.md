@@ -11,6 +11,9 @@ about.
   Commit source Markdown only. Slide decks remain under `_posts/Slides/`.
 - `_layouts/`, `_includes/`, `_sass/`, `_plugins/`: Jekyll rendering system.
   Commit source templates, partials, styles, and plugins.
+- `_apps/inside-ai/`: isolated application source and locked dependencies, excluded from Jekyll.
+  Its generated public output under `inside-ai/assets/` is intentionally committed
+  and checked by `npm run check:inside-ai-build` (ADR 0014).
 - `_data/`: structured data required by the site build.
   Commit only data used by current build paths.
 - `_code/`: repo automation and content maintenance scripts.

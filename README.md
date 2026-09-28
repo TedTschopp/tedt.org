@@ -91,6 +91,7 @@ Override check for emergency commits with `SKIP_TOC=1 git commit -m "..."`.
 
 
 
+
 1. [TedT.org](#tedtorg)
    2. [Features](#features)
    3. [Technology Stack (Condensed)](#technology-stack-condensed)
@@ -116,7 +117,8 @@ Override check for emergency commits with `SKIP_TOC=1 git commit -m "..."`.
    8. [Custom Scripts](#custom-scripts)
    9. [How to Contribute](#how-to-contribute)
       - [Local Development](#local-development)
-      - [Testing](#testing)
+      - [Game Theory Playground](#game-theory-playground)
+      - [Testing the Site](#testing-the-site)
    10. [Quality Gates](#quality-gates)
    11. [GitHub Workflows Overview](#github-workflows-overview)
    12. [Front Matter Feature Flags](#front-matter-feature-flags)
@@ -139,8 +141,9 @@ Override check for emergency commits with `SKIP_TOC=1 git commit -m "..."`.
       - [Service Worker Details](#service-worker-details)
       - [Troubleshooting](#troubleshooting)
       - [Potential Future Enhancements](#potential-future-enhancements)
-   16. [License](#license)
-   17. [Contact](#contact)
+   16. [Inside AI](#inside-ai)
+   17. [License](#license)
+   18. [Contact](#contact)
 
 ## Repository Structure
 
@@ -900,6 +903,57 @@ The homepage hero (image/video) is selected randomly on each load using a data-d
 - Integrate Workbox if broader asset strategies are required beyond hero media.
 
 If you extend the hero system, keep logic centralized in the include and data file—avoid scattering hero knowledge across layouts.
+
+## Inside AI
+
+[Inside AI](/inside-ai/) is the branded transformer explorer. Jekyll owns the page,
+lessons and navigation; the isolated Svelte/D3 package in `_apps/inside-ai/` owns
+the interactive diagrams and browser-only inference. See
+[ADR 0014](docs/adr/0014-inside-ai-browser-explainer.md).
+
+Generated browser files in `inside-ai/assets/` are intentionally committed. Their
+producer is the isolated app build, their consumer is the Inside AI Jekyll
+layout, and CI rejects stale output. A normal `bundle exec jekyll build` can
+therefore publish the checked-in application without Node tooling.
+
+```bash
+npm ci
+npm ci --prefix _apps/inside-ai
+npm run test:inside-ai
+npm run build:inside-ai
+npm run check:inside-ai-build
+JEKYLL_ENV=production bundle exec jekyll build
+npx playwright install chromium firefox webkit
+npm run test:inside-ai:browser
+```
+
+For real inference checks, prepare the immutable model outside the public site
+and run all three browser engines against it:
+
+```bash
+npm run prepare:inside-ai-model
+INSIDE_AI_REAL_MODEL=1 INSIDE_AI_MODEL_FIXTURES=tmp/inside-ai-model-fixtures npm run test:inside-ai:browser
+```
+
+For post-deployment verification, set `PLAYWRIGHT_BASE_URL=https://tedt.org` and
+`INSIDE_AI_REAL_MODEL=1`; omit the fixture variable to exercise the public model
+origin. Local test reports and screenshots stay in ignored `test-results/`.
+
+The separate public [model repository](https://github.com/TedTschopp/inside-ai-models)
+serves 63 immutable chunks under `gpt2-bfe50afba10b9b56/`. Its manifest records
+source provenance, sizes and SHA-256 hashes. Do not copy those approximately
+657 MB of model files into this repository or `_site/`. The smaller ONNX WASM
+runtime is intentionally shipped locally; it is a generated dependency asset,
+not a model. On an upstream model update, publish a new immutable directory,
+verify its full hash, then change and test the application manifest reference.
+
+Examples load before any model download. Only the explicit live-model action
+starts downloading model files. Prompts are processed locally and are not sent
+to telemetry or an inference server. The Inside AI layout deliberately omits
+the normal analytics/session-replay scripts and uses a page-scoped WASM CSP.
+Recorded examples and illustrative vectors are visibly distinguished from live
+model results. No new front-matter feature flag is needed: the CSP and schema
+behavior is selected by `layout: inside-ai`.
 
 ## License
 

@@ -1,0 +1,193 @@
+[
+  {
+    "text": "Hello world",
+    "ids": [
+      15496,
+      995
+    ],
+    "decoded": "Hello world"
+  },
+  {
+    "text": " Hello world",
+    "ids": [
+      18435,
+      995
+    ],
+    "decoded": " Hello world"
+  },
+  {
+    "text": "  leading spaces",
+    "ids": [
+      220,
+      3756,
+      9029
+    ],
+    "decoded": "  leading spaces"
+  },
+  {
+    "text": "I'm not sure; don't stop.",
+    "ids": [
+      40,
+      1101,
+      407,
+      1654,
+      26,
+      836,
+      470,
+      2245,
+      13
+    ],
+    "decoded": "I'm not sure; don't stop."
+  },
+  {
+    "text": "A\nB\tC",
+    "ids": [
+      32,
+      198,
+      33,
+      197,
+      34
+    ],
+    "decoded": "A\nB\tC"
+  },
+  {
+    "text": "naïve café — 東京",
+    "ids": [
+      2616,
+      38776,
+      40304,
+      851,
+      10545,
+      251,
+      109,
+      12859,
+      105
+    ],
+    "decoded": "naïve café — 東京"
+  },
+  {
+    "text": "🙂🧑🏽‍💻🚀",
+    "ids": [
+      8582,
+      25081,
+      8582,
+      100,
+      239,
+      8582,
+      237,
+      121,
+      447,
+      235,
+      8582,
+      240,
+      119,
+      8582,
+      248,
+      222
+    ],
+    "decoded": "🙂🧑🏽‍💻🚀"
+  },
+  {
+    "text": "The price is $12.50!",
+    "ids": [
+      464,
+      2756,
+      318,
+      720,
+      1065,
+      13,
+      1120,
+      0
+    ],
+    "decoded": "The price is $12.50!"
+  },
+  {
+    "text": "\r\nline\rbreak\n",
+    "ids": [
+      201,
+      198,
+      1370,
+      201,
+      9032,
+      198
+    ],
+    "decoded": "\r\nline\rbreak\n"
+  },
+  {
+    "text": "Data visualization empowers users to",
+    "ids": [
+      6601,
+      32704,
+      795,
+      30132,
+      2985,
+      284
+    ],
+    "decoded": "Data visualization empowers users to"
+  },
+  {
+    "text": "Artificial Intelligence is transforming the",
+    "ids": [
+      8001,
+      9542,
+      9345,
+      318,
+      25449,
+      262
+    ],
+    "decoded": "Artificial Intelligence is transforming the"
+  },
+  {
+    "text": "As the spaceship was approaching the",
+    "ids": [
+      1722,
+      262,
+      40663,
+      373,
+      13885,
+      262
+    ],
+    "decoded": "As the spaceship was approaching the"
+  },
+  {
+    "text": "On the deserted planet they discovered a",
+    "ids": [
+      2202,
+      262,
+      36043,
+      5440,
+      484,
+      5071,
+      257
+    ],
+    "decoded": "On the deserted planet they discovered a"
+  },
+  {
+    "text": "IEEE VIS conference highlights the",
+    "ids": [
+      40,
+      31909,
+      50035,
+      4495,
+      11330,
+      262
+    ],
+    "decoded": "IEEE VIS conference highlights the"
+  },
+  {
+    "text": "<|endoftext|>",
+    "ids": [
+      50256
+    ],
+    "decoded": ""
+  },
+  {
+    "text": "before<|endoftext|>after",
+    "ids": [
+      19052,
+      50256,
+      8499
+    ],
+    "decoded": "beforeafter"
+  }
+]

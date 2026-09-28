@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  {% include utility/calculate-variables.html %}
+  {% include security/content-security-policy.html %}
+  {% include utility/color-scheme-head.html %}
+  {% include seo/indieauth-webmentions-metadata.html %}
+  {% include seo/meta-data-seo.html %}
+  {% include feeds/feeds.html %}
+  {% include assets/css-fontawesome.html %}
+  <link rel="stylesheet" href="{{ '/css/bootstrap-build.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/shared-fonts.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/logo-and-company-fonts.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/inside-ai/assets/inside-ai.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/inside-ai.css' | relative_url }}">
+</head>
+<body class="ia-page">
+  <a class="ia-skip" href="#inside-ai-main">Skip to the main content</a>
+  {% include layout/top-nav-bar.html %}
+  <main id="inside-ai-main" class="ia-shell" tabindex="-1">
+    {{ content }}
+  </main>
+  {% include layout/footer.html %}
+  {% comment %}
+    Keep this shell free of the general scripts and article-enhancement includes:
+    they load analytics/session replay and are unnecessary for the browser model.
+    The shared Bootstrap and color-scheme controls are the only shell scripts.
+  {% endcomment %}
+  {% include assets/js-bootstrap.html %}
+  {% include utility/color-scheme-toggle.html %}
+  <script type="module" src="{{ '/inside-ai/assets/inside-ai.js' | relative_url }}" onerror="document.getElementById('inside-ai-load-error').hidden = false;"></script>
+</body>
+</html>
