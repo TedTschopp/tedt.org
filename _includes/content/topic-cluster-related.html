@@ -62,3 +62,33 @@
     </div>
   </aside>
 {%- endif -%}
+
+{%- comment -%}
+  Offer the transformer explainer beside related reading on AI-category articles,
+  including articles that do not yet belong to a curated topic cluster.
+{%- endcomment -%}
+{%- assign __ia_related_categories = __topic_current_page.categories -%}
+{%- if __ia_related_categories == nil or __ia_related_categories == empty -%}
+  {%- assign __ia_related_categories = __topic_current_page.category | to_s | split: '|||' -%}
+{%- endif -%}
+{%- assign __ia_related_match = false -%}
+{%- assign __ia_registry = site.data.category_registry.ai -%}
+{%- assign __ia_registry_title = __ia_registry.title | downcase -%}
+{%- for __ia_category in __ia_related_categories -%}
+  {%- assign __ia_category_name = __ia_category | to_s | strip | downcase -%}
+  {%- if __ia_category_name == 'ai' or __ia_category_name == __ia_registry_title -%}
+    {%- assign __ia_related_match = true -%}
+  {%- else -%}
+    {%- for __ia_alias in __ia_registry.raw_names -%}
+      {%- assign __ia_alias_name = __ia_alias | downcase -%}
+      {%- if __ia_category_name == __ia_alias_name -%}
+        {%- assign __ia_related_match = true -%}
+        {%- break -%}
+      {%- endif -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if __ia_related_match -%}{%- break -%}{%- endif -%}
+{%- endfor -%}
+{%- if __ia_related_match -%}
+  {% include content/inside-ai-callout.html compact=true %}
+{%- endif -%}

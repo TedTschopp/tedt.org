@@ -1,0 +1,11 @@
+GSAP and Flip 3.12.5
+Copyright 2008-2024, GreenSock. All rights reserved.
+https://gsap.com
+
+These files are distributed under GreenSock's standard "no charge" license,
+not under the upstream Transformer Explainer MIT license.
+License: https://gsap.com/standard-license
+Package licensing information: https://gsap.com/licensing/
+
+This notice preserves the terms reference and copyright notice included in
+GSAP 3.12.5 and Flip 3.12.5. Inside AI uses the public core and Flip plugin.

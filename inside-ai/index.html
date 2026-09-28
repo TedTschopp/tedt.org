@@ -1,0 +1,157 @@
+---
+layout: inside-ai
+title: "Inside AI: Explore a Transformer"
+seo_title: "Inside AI: Explore How Transformers Work"
+description: Follow a prompt through GPT-2 with an interactive transformer diagram. Explore tokens, attention, and next-token probabilities, then try live inference in your browser.
+permalink: /inside-ai/
+date: 2026-09-27
+last_modified_at: 2026-09-27
+no_toc: true
+tool_type: EducationalApplication
+image: /img/inside-ai/social-preview.png
+image-alt: "Inside AI, an interactive guide to tokens, attention, and the next word."
+image_width: 1200
+image_height: 630
+---
+<header class="ia-hero">
+  <p class="ia-eyebrow">Ted’s Public Workbench <span aria-hidden="true">/</span> Interactive Learning</p>
+  <h1>Inside AI</h1>
+  <p class="ia-lead">Follow a sentence through a transformer.</p>
+  <p class="ia-intro">A language model builds an answer one token at a time. Look inside the calculation: how text becomes numbers, how attention connects the pieces, and how the next token is chosen. Change a setting and see what moves.</p>
+  <nav class="ia-actions" aria-label="Choose how to explore Inside AI">
+    <a class="ia-button" href="#inside-ai-guide">Start with the guided explanation <span aria-hidden="true">→</span></a>
+    <a href="#inside-ai-explorer">Open the explorer</a>
+  </nav>
+  <p class="ia-meta">GPT-2 <span aria-hidden="true">·</span> Prepared examples first <span aria-hidden="true">·</span> Optional live inference in your browser</p>
+  <section class="ia-starters" aria-labelledby="inside-ai-starters-title">
+    <h2 id="inside-ai-starters-title">Three Things to Try</h2>
+    <ol>
+      <li><a href="#inside-ai-tokens">Inspect tokenization</a><p>Compare a familiar word with an unusual name. Notice where the pieces split.</p></li>
+      <li><a href="#inside-ai-attention">Compare attention heads</a><p>Keep the same sentence and token. Look at which connections change.</p></li>
+      <li><a href="#inside-ai-sampling">Change sampling settings</a><p>Adjust one setting at a time and watch the candidate probabilities.</p></li>
+    </ol>
+  </section>
+</header>
+
+<section class="ia-explorer" id="inside-ai-explorer" aria-labelledby="inside-ai-explorer-title">
+  <div class="ia-section-heading">
+    <div>
+      <p class="ia-eyebrow">The Interactive Model</p>
+      <h2 id="inside-ai-explorer-title">Follow the Next Token</h2>
+    </div>
+    <a href="#inside-ai-guide">Read the steps below</a>
+  </div>
+  <p class="ia-intro">Begin with a prepared example. Select a token or an attention connection to inspect the calculation. Live mode downloads the model after you choose to load it; the explorer shows its progress and lets you cancel.</p>
+  <div id="inside-ai-app"></div>
+  <p id="inside-ai-load-error" class="ia-notice" role="alert" hidden>The interactive explorer could not load. Reload the page to try again, or keep reading the guide below.</p>
+  <noscript><p class="ia-notice">Turn on JavaScript to use the explorer. The complete guided explanation below is available without it.</p></noscript>
+  <p class="ia-privacy">Your text and model computations stay in this browser. Live mode downloads model files; this page does not send your prompts or record your session.</p>
+</section>
+
+<section id="inside-ai-guide" class="ia-guide" aria-labelledby="inside-ai-guide-title">
+  <div class="ia-section-heading">
+    <div>
+      <p class="ia-eyebrow">A Guided Explanation</p>
+      <h2 id="inside-ai-guide-title">From Text to the Next Token</h2>
+    </div>
+    <p class="ia-meta">Read in order, or follow a question.</p>
+  </div>
+  <nav class="ia-guide-nav" aria-label="Transformer explanation steps">
+    <a href="#inside-ai-tokens">1. Tokens</a>
+    <a href="#inside-ai-embeddings">2. Embeddings</a>
+    <a href="#inside-ai-attention">3. Attention</a>
+    <a href="#inside-ai-blocks">4. Transformer blocks</a>
+    <a href="#inside-ai-probabilities">5. Probabilities</a>
+    <a href="#inside-ai-sampling">6. Sampling</a>
+    <a href="#inside-ai-limits">7. What this shows</a>
+  </nav>
+  <div class="ia-lessons">
+    <section id="inside-ai-tokens" class="ia-lesson" aria-labelledby="inside-ai-tokens-title">
+      <p class="ia-step" aria-hidden="true">01</p>
+      <div>
+        <h3 id="inside-ai-tokens-title">Split the Text Into Tokens</h3>
+        <p>A tokenizer turns your text into pieces from a fixed vocabulary. A token can be a whole word, part of a word, punctuation, or text that includes a leading space. The same visible word can therefore have different tokenizations in different contexts.</p>
+        <p>Each token receives a numeric ID. An ID is a vocabulary lookup key, not a score: a larger number does not mean a more important word.</p>
+        <p class="ia-try"><strong>Try it:</strong> Compare an ordinary word with an unusual name. Inspect the token pieces before looking at the prediction.</p>
+      </div>
+    </section>
+    <section id="inside-ai-embeddings" class="ia-lesson" aria-labelledby="inside-ai-embeddings-title">
+      <p class="ia-step" aria-hidden="true">02</p>
+      <div>
+        <h3 id="inside-ai-embeddings-title">Give Each Token a Vector and a Position</h3>
+        <p>The model looks up a learned list of numbers, called an <strong>embedding</strong>, for each token ID. GPT-2 adds a learned position embedding so the calculation can distinguish the first token from the fifth.</p>
+        <p>These vectors begin the model’s working representation of the text. Individual coordinates are learned values; they do not come with reliable labels such as “kindness” or “certainty.” A colored cell in the diagram is a number, not a named idea.</p>
+        <p class="ia-try"><strong>Look for:</strong> The separate token and position contributions. Follow their combined vector into the first transformer block.</p>
+      </div>
+    </section>
+    <section id="inside-ai-attention" class="ia-lesson" aria-labelledby="inside-ai-attention-title">
+      <p class="ia-step" aria-hidden="true">03</p>
+      <div>
+        <h3 id="inside-ai-attention-title">Use Attention to Combine Context</h3>
+        <p>Each attention head makes three projections of the input vectors: <strong>queries</strong>, <strong>keys</strong>, and <strong>values</strong>. Comparing a token’s query with the available keys produces scores. Softmax turns the scores into weights, and those weights determine how much of each value vector to combine.</p>
+        <p>GPT-2 uses causal attention: a token can use itself and earlier tokens, but it cannot look ahead. Several heads do this in parallel with different learned projections. Their outputs are combined and projected back into the model’s working representation.</p>
+        <details class="ia-math">
+          <summary>Read the attention equation</summary>
+          <p class="ia-equation"><code>Attention(Q, K, V) = softmax(QKᵀ / √dₖ + M)V</code></p>
+          <p><strong>QKᵀ</strong> compares queries with keys. Dividing by the square root of the key dimension keeps the scores on a useful scale. The causal mask <strong>M</strong> rules out future positions. <strong>Softmax</strong> makes the permitted weights add to one, and multiplying by <strong>V</strong> forms their weighted combination.</p>
+        </details>
+        <p class="ia-try"><strong>Try it:</strong> Select a token and compare its attention weights across heads. A large weight shows a strong connection in that calculation; it does not by itself explain the entire prediction.</p>
+      </div>
+    </section>
+    <section id="inside-ai-blocks" class="ia-lesson" aria-labelledby="inside-ai-blocks-title">
+      <p class="ia-step" aria-hidden="true">04</p>
+      <div>
+        <h3 id="inside-ai-blocks-title">Refine the Representation in Each Block</h3>
+        <p>Attention is one part of a transformer block. Layer normalization adjusts the scale of the working values. A feed-forward network applies learned transformations and a nonlinear activation to each token position.</p>
+        <p>Residual connections add a block’s updates to the existing representation. Repeating the blocks lets later calculations work with the changes made by earlier ones. The model’s weights remain fixed during this demonstration: generating text is inference, not training.</p>
+        <p class="ia-try"><strong>Look for:</strong> The path around each transformation. That is the residual connection carrying the existing representation forward.</p>
+      </div>
+    </section>
+    <section id="inside-ai-probabilities" class="ia-lesson" aria-labelledby="inside-ai-probabilities-title">
+      <p class="ia-step" aria-hidden="true">05</p>
+      <div>
+        <h3 id="inside-ai-probabilities-title">Score the Possible Next Tokens</h3>
+        <p>The final representation at the last position is mapped to a score for every token in the vocabulary. These scores are called <strong>logits</strong>. Softmax converts them into a probability distribution whose values add to one.</p>
+        <p>A high probability means the token is favored as a continuation under this model and context. It is not a probability that a statement is true. The visible candidate list shows only part of the vocabulary unless the explorer explicitly says otherwise.</p>
+        <p class="ia-try"><strong>Try it:</strong> Compare two prompts that differ in one token. Watch how the highest-ranked continuations change.</p>
+      </div>
+    </section>
+    <section id="inside-ai-sampling" class="ia-lesson" aria-labelledby="inside-ai-sampling-title">
+      <p class="ia-step" aria-hidden="true">06</p>
+      <div>
+        <h3 id="inside-ai-sampling-title">Choose a Token, Then Repeat</h3>
+        <p>A generation rule selects the next token from the distribution. Greedy selection chooses the highest-scoring token. Sampling can choose another candidate according to its probability.</p>
+        <dl class="ia-definitions">
+          <dt>Temperature</dt><dd>Rescales the logits before softmax. A lower positive temperature concentrates probability on leading candidates; a higher value spreads it more broadly.</dd>
+          <dt>Top-k</dt><dd>Keeps only the k highest-ranked candidates before sampling, then renormalizes their probabilities.</dd>
+          <dt>Top-p</dt><dd>Keeps a set of leading candidates whose cumulative probability reaches the selected threshold, then renormalizes. The number kept depends on the distribution.</dd>
+        </dl>
+        <p>The chosen token is appended to the context. The model then calculates another next-token distribution. An answer that appears all at once in a chat window is built through repeated steps like these.</p>
+        <p class="ia-try"><strong>Try it:</strong> Change one sampling control at a time. Notice whether it changes the ranking, the eligible candidates, or their relative probabilities.</p>
+      </div>
+    </section>
+    <section id="inside-ai-limits" class="ia-lesson" aria-labelledby="inside-ai-limits-title">
+      <p class="ia-step" aria-hidden="true">07</p>
+      <div>
+        <h3 id="inside-ai-limits-title">Know What the Picture Shows</h3>
+        <p>This explorer uses GPT-2 to make transformer mechanics visible. Modern language models can use different architectures, tokenizers, training methods, context lengths, and generation rules. The diagram is a teaching view of one model, not a complete picture of every AI system.</p>
+        <p>Prepared examples show recorded model results. Live mode runs the downloaded model in your browser. Illustrative vectors and simplified diagrams are labeled where they are used; they should not be read as measurements of a live prompt.</p>
+        <p>The explorer limits context to 32 tokens to keep the visualization manageable. Text generation can be inaccurate, biased, or offensive. Use the results to inspect a calculation rather than as a source of factual answers.</p>
+        <p class="ia-try"><strong>Keep asking:</strong> Which numbers did the model produce, which choices did the generation rule make, and which parts did the diagram simplify?</p>
+      </div>
+    </section>
+  </div>
+</section>
+
+<section class="ia-related" aria-labelledby="inside-ai-related-title">
+  <h2 id="inside-ai-related-title">Keep Exploring</h2>
+  <p>Use the <a href="{{ '/math-guide/' | relative_url }}">Math Symbols, in Plain English guide</a> to read the notation. Try the <a href="{{ '/game-theory/' | relative_url }}">Game Theory Playground</a> to explore how changing a rule changes a result, or browse <a href="{{ '/category/ai/' | relative_url }}">Ted’s writing about artificial intelligence</a>.</p>
+</section>
+
+<section class="ia-credits" id="inside-ai-credits" aria-labelledby="inside-ai-credits-title">
+  <h2 id="inside-ai-credits-title">Inspiration</h2>
+  <p>This page was inspired by and adapted from <a href="https://poloclub.github.io/transformer-explainer/">Transformer Explainer</a> by the <a href="https://poloclub.github.io/">Polo Club of Data Science</a>. My adaptation adds this site’s design, guided explanations, and browser-loading controls. I plan on embedding this further into the educational and informational sections of my website moving forward.</p>
+  <!-- Upstream source revision: bfe50afba10b9b560b84143ee1107d977defa74f.
+       https://github.com/poloclub/transformer-explainer/tree/bfe50afba10b9b560b84143ee1107d977defa74f
+       Updated Sept. 27, 2026. License and provenance: _apps/inside-ai/README.md. -->
+</section>

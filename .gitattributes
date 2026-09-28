@@ -6,3 +6,10 @@
 .squad/agents/*/history.md merge=union
 .squad/log/** merge=union
 .squad/orchestration-log/** merge=union
+
+# Inside AI generated assets and verbatim upstream license/runtime text.
+inside-ai/assets/** linguist-generated=true
+inside-ai/assets/*.js whitespace=-blank-at-eol
+inside-ai/assets/runtime/*.mjs whitespace=-blank-at-eol
+_apps/inside-ai/public/licenses/* whitespace=-blank-at-eol,-blank-at-eof
+inside-ai/assets/licenses/* whitespace=-blank-at-eol,-blank-at-eof

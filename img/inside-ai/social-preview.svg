@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+<title id="title">Inside AI: Explore a Transformer</title><desc id="desc">A TedT.org educational diagram follows tokens through attention to the next-token probabilities.</desc>
+<rect width="1200" height="630" fill="#F8F6F0"/>
+<rect x="0" y="0" width="1200" height="12" fill="#00446F"/>
+<g font-family="Inter, Helvetica, Arial, sans-serif">
+<text x="66" y="75" fill="#00446F" font-size="22" font-weight="700" letter-spacing="2">TEDT.ORG / THE PUBLIC WORKBENCH</text>
+<text x="62" y="183" fill="#101820" font-size="88" font-weight="700" letter-spacing="-3">Inside AI</text>
+<text x="66" y="237" fill="#37383C" font-size="34">Explore a Transformer</text>
+<text x="66" y="294" fill="#4F5052" font-size="23">Follow the tokens. Inspect attention. Try what comes next.</text>
+<g fill="#00446F" font-size="16" font-weight="700" letter-spacing="1"><text x="68" y="359">TOKENS</text><text x="461" y="359">ATTENTION</text><text x="854" y="359">NEXT TOKEN</text></g>
+<g stroke="#00446F" stroke-width="2" fill="none"><path d="M317 428H428"/><path d="m415 418 13 10-13 10"/><path d="M742 428H825"/><path d="m812 418 13 10-13 10"/></g>
+<g font-size="23" font-weight="600"><rect x="66" y="385" width="103" height="83" rx="6" fill="#E0DEDA"/><text x="91" y="437" fill="#101820">The</text><rect x="182" y="385" width="125" height="83" rx="6" fill="#E0DEDA"/><text x="213" y="437" fill="#101820">next</text></g>
+<rect x="443" y="380" width="289" height="126" rx="6" fill="#101820"/>
+<g fill="none" stroke-width="2"><path d="M474 405L571 405L703 480M474 430L571 455L703 405M474 455L571 405L703 430M474 480L571 455L703 455" stroke="#00A9E0"/><path d="M474 430L571 430L703 430M474 455L571 480L703 480" stroke="#E86027"/></g>
+<g fill="#F8F6F0"><circle cx="474" cy="405" r="5"/><circle cx="474" cy="430" r="5"/><circle cx="474" cy="455" r="5"/><circle cx="474" cy="480" r="5"/><circle cx="571" cy="405" r="5"/><circle cx="571" cy="430" r="5"/><circle cx="571" cy="455" r="5"/><circle cx="571" cy="480" r="5"/><circle cx="703" cy="405" r="5"/><circle cx="703" cy="430" r="5"/><circle cx="703" cy="455" r="5"/><circle cx="703" cy="480" r="5"/></g>
+<g font-family="monospace" font-size="19" fill="#101820"><text x="852" y="405">word</text><text x="852" y="443">step</text><text x="852" y="481">idea</text></g><rect x="923" y="387" width="207" height="22" rx="3" fill="#00446F"/><rect x="923" y="425" width="132" height="22" rx="3" fill="#E86027"/><rect x="923" y="463" width="65" height="22" rx="3" fill="#00A9E0"/>
+<text x="66" y="576" fill="#4F5052" font-size="20">An interactive guide to language models</text><text x="1133" y="576" fill="#00446F" font-size="20" text-anchor="end">tedt.org/inside-ai/</text>
+</g></svg>

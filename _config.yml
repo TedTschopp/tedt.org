@@ -4,6 +4,8 @@ include:
 
 # Exclude editor backup copies of posts (e.g., *.md.bak) so they don't generate duplicate URLs
 exclude:
+# Inside AI source and dependencies are compiled into inside-ai/assets before Jekyll.
+- _apps/**
 - "**/*.bak"
 # Exclude embedded Python virtual env inside data (never needed for site build)
 - _data/Swiss-Folklore-Work-in-Progress/myenv/**
@@ -428,7 +430,7 @@ links:
   Category: 'Social Media'
   # REDDIT
 - Name: Reddit
-  URL: http://reddit.com/u
+  URL: https://reddit.com/u
   Username: TedTschopp
   Color: '#FF4500'
   Type: fontawesome
@@ -512,7 +514,7 @@ links:
   Color: '#e6dfd3'
   Category: 'Creative' # GITHUB
 - Name: Git<wbr>Hub
-  URL: http://github.com
+  URL: https://github.com
   Username: TedTschopp
   Color: '#6e5494'
   Type: fontawesome

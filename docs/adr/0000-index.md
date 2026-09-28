@@ -34,6 +34,7 @@ This directory contains Architecture Decision Records (ADRs) capturing significa
 | 0011 | [`mermaid` Front Matter Flag](0011-mermaid-front-matter-flag.md) | Accepted | 2025-09-14 | Conditional loading of Mermaid diagrams only on opted-in posts. |
 | 0012 | [Posts-Based Slide Deck Architecture](0012-posts-based-slides.md) | Accepted | 2025-11-03 | Deprecates legacy `slides` collection; unifies decks under `_posts/Slides/`. |
 | 0013 | [Adopt Standalone HTML Artifacts for Slide Decks](0013-standalone-html-slide-decks.md) | Accepted | 2026-07-27 | Makes self-contained HTML the default deck format while retaining posts-based discovery and legacy Reveal URLs. |
+| 0014 | [Inside AI Browser Explainer](0014-inside-ai-browser-explainer.md) | Accepted | 2026-09-27 | Isolated Svelte/D3 application, browser-only inference and separately hosted immutable model assets. |
 
 
 ## Conventions

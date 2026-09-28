@@ -336,3 +336,6 @@ vendor/cache/
 .squad/.scratch/
 # Squad: SubSquad activation file (local to this machine)
 .squad-workstream
+
+# Inside AI browser acceptance screenshots and traces
+test-results/

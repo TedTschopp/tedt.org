@@ -33,6 +33,14 @@ jobs:
         run: |
           npm ci --no-audit --no-fund
 
+      - name: Install Inside AI dependencies
+        run: npm ci --prefix _apps/inside-ai --no-audit --no-fund
+
+      - name: Inside AI numeric tests and reproducible build
+        run: |
+          npm run test:inside-ai
+          npm run check:inside-ai-build
+
       - name: Cache Playwright browsers
         uses: actions/cache@v5
         with:
@@ -153,9 +161,9 @@ jobs:
             --attach "stylelint overrides=tmp/stylelint-overrides.txt" \
             --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
-      - name: Install Playwright (Chromium)
+      - name: Install Playwright browsers
         run: |
-          npx playwright install --with-deps chromium
+          npx playwright install --with-deps chromium firefox webkit
 
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
@@ -215,6 +223,30 @@ jobs:
             exit 1;
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
+
+      - name: Cache verified Inside AI model
+        uses: actions/cache@v5
+        with:
+          path: tmp/inside-ai-model-fixtures
+          key: inside-ai-model-bfe50afba10b9b56-v1
+
+      - name: Prepare real Inside AI model
+        run: npm run prepare:inside-ai-model
+
+      - name: Inside AI blocking browser and inference checks
+        env:
+          INSIDE_AI_MODEL_FIXTURES: tmp/inside-ai-model-fixtures
+          INSIDE_AI_REAL_MODEL: '1'
+        run: npm run test:inside-ai:browser
+
+      - name: Preserve Inside AI browser evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: inside-ai-browser-results
+          path: test-results/inside-ai
+          if-no-files-found: ignore
+          retention-days: 7
 
       - name: Responsive images and editorial credits
         run: |
