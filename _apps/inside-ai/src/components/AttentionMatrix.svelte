@@ -393,7 +393,7 @@
 					{showTooltip}
 				/>
 				<Matrix
-					className="main opacity-0"
+					className="main ia-attention-stage-result"
 					data={maskArray(masked)}
 					showSize={false}
 					cellHeight={cellSize}
@@ -461,7 +461,7 @@
 					{showTooltip}
 				/>
 				<Matrix
-					className="main opacity-0"
+					className="main ia-attention-stage-result"
 					data={maskArray(softmaxed)}
 					showSize={false}
 					cellHeight={cellSize}
@@ -519,6 +519,11 @@
 </div>
 
 <style lang="scss">
+	/* GSAP reveals these completed stages; avoid Bootstrap's !important opacity utility. */
+	.attention-matrix-container :global(.ia-attention-stage-result) {
+		opacity: 0;
+	}
+
 	.attention-matrix-container {
 		cursor: pointer;
 		border-radius: 0.5rem;
