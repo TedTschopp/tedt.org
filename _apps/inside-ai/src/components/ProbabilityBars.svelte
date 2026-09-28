@@ -1,12 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import * as d3 from 'd3';
-	import { modelData, rootRem, predictedToken, predictedColor, temperature } from '~/store';
+	import { rootRem, predictedToken } from '~/store';
+	import { outputRowsHeight } from '~/lib/output-rows.js';
 
-	import tailwindConfig from '../../tailwind.config';
-	import resolveConfig from 'tailwindcss/resolveConfig';
-	const { theme } = resolveConfig(tailwindConfig);
 
+	export let data = [];
 	export let rowHeight;
 	export let rowGap;
 	export let hoveredIndex: number | null = null;
@@ -17,12 +16,10 @@
 
 	let percentPrecision = 2;
 
-	let normalColor = theme.colors.gray[300];
-	let hoverColor = theme.colors.purple[400];
+	let normalColor = 'var(--ia-primary)';
+	let hoverColor = 'var(--ia-accent)';
 
 	export let drawBars = () => {
-		const data = $modelData?.probabilities;
-
 		const svg = d3.select(svgEl);
 
 		let xScale = d3
@@ -112,7 +109,7 @@
 		drawBars();
 	});
 
-	$: if ($modelData && svgEl) {
+	$: if (data && svgEl) {
 		drawBars();
 	}
 
@@ -135,7 +132,7 @@
 			if (i === hoveredIndex) {
 				color = hoverColor;
 			} else if ($predictedToken?.rank === i) {
-				color = predictedColor;
+				color = 'var(--ia-accent)';
 			} else {
 				color = normalColor;
 			}
@@ -147,11 +144,12 @@
 </script>
 
 <div class="content-box probability-col grow">
-	<svg bind:this={svgEl} class="h-full w-full"> </svg>
+	<svg bind:this={svgEl} class="w-full" height={outputRowsHeight(data.length, rowHeight, rowGap)}> </svg>
 </div>
 
 <style lang="scss">
 	.probability-col {
+		svg { display: block; }
 		min-width: 6rem;
 		z-index: $COLUMN_TITLE_INDEX;
 		user-select: none;

@@ -16,19 +16,17 @@
 		else return num?.toFixed(decimal);
 	}
 
+	// Sampling covers the full vocabulary; the chosen token can be outside
+	// the 50 displayed candidates, and a previous hovered row can disappear.
 	$: selected =
-		hoveredIndex !== null
-			? data[hoveredIndex]
-			: !!$predictedToken
-				? data[$predictedToken?.rank]
-				: data[0];
+		(hoveredIndex !== null ? data[hoveredIndex] : undefined) ?? $predictedToken ?? data[0];
 </script>
 
-<Card class={'softmax-popover popover bg-white text-sm'}>
+<Card class={'softmax-popover popover text-sm'}>
 	<div
-		class="softmax-popover-title rounded-t-md border-b border-gray-200 bg-gray-100 px-3 py-2 dark:border-gray-600 dark:bg-gray-700"
+		class="softmax-popover-title rounded-t-md border-b px-3 py-2"
 	>
-		<h3 class="font-semibold text-gray-900">
+		<h3 class="font-semibold">
 			Probability of <span class="highlight">"{selected?.token}"</span> token being sampled
 		</h3>
 	</div>
@@ -42,7 +40,7 @@
 					<div class="fraction">
 						<div class="frac-top relative">
 							<span class="annotation logit"><span>logit</span><Arrow size={16} /></span>
-							<span class="highlight number">{getStringNumber(selected.logit)}</span>
+							<span class="highlight number">{getStringNumber(selected?.logit)}</span>
 						</div>
 						<div class="frac-line"></div>
 						<div class="frac-bottom relative">
@@ -244,7 +242,7 @@
 		gap: 1rem;
 
 		:global(.step-arrow) {
-			color: theme('colors.gray.400');
+			color: var(--ia-ink, #101820);
 		}
 
 		.norm-step {
@@ -276,7 +274,7 @@
 			.sub-title {
 				width: 100%;
 				font-size: 0.8rem;
-				color: theme('colors.gray.400');
+				color: var(--ia-ink, #101820);
 				position: absolute;
 				text-align: center;
 				bottom: -1.1rem;
@@ -298,7 +296,7 @@
 			gap: 0.1rem;
 			position: absolute;
 			font-size: 0.75rem;
-			color: theme('colors.gray.400');
+			color: var(--ia-ink, #101820);
 			line-height: 0;
 			left: 50%;
 			transform: translateX(-50%);
@@ -319,14 +317,16 @@
 			font-family: monospace;
 		}
 		.filtered {
-			background-color: theme('colors.purple.100');
+			background-color: var(--ia-soft, #e7eeef);
+			color: var(--ia-ink, #101820);
+			outline: 1px solid var(--ia-primary, #00446f);
 		}
 		.text {
 			font-size: 0.9rem;
 			font-weight: 300;
 		}
 		.highlight {
-			color: theme('colors.purple.500');
+			color: var(--ia-primary, #00446f);
 			font-weight: 600;
 		}
 
@@ -337,7 +337,7 @@
 			.frac-line {
 				width: 100%;
 				height: 1px;
-				background-color: black;
+				background-color: var(--ia-ink, #101820);
 				margin: 0.1rem 0;
 			}
 			.frac-top {
@@ -372,6 +372,9 @@
 	}
 
 	:global(.softmax-popover) {
+		background-color: var(--ia-panel, #fffefa);
+		color: var(--ia-ink, #101820);
+		border-color: var(--ia-primary, #00446f);
 		width: max-content !important;
 		max-width: none !important;
 		padding: 0 !important;
@@ -379,8 +382,11 @@
 	}
 
 	.softmax-popover-title {
+		background-color: var(--ia-soft, #e7eeef);
+		color: var(--ia-ink, #101820);
+		border-color: var(--ia-primary, #00446f);
 		.highlight {
-			color: theme('colors.purple.700');
+			color: var(--ia-primary, #00446f);
 			font-weight: 800;
 		}
 	}
@@ -395,7 +401,7 @@
 
 		.desc {
 			// font-style: italic;
-			color: theme('colors.gray.400');
+			color: var(--ia-ink, #101820);
 			font-weight: 300;
 		}
 	}

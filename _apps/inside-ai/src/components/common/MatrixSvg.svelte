@@ -205,6 +205,10 @@
 					});
 			}
 		}
+		// Preserve a non-color cue for causal masking, including zero-valued cells.
+		svg.selectAll('circle.cell, rect.cell').attr('data-masked', (d) =>
+			d && typeof d === 'object' && 'cell' in d && !Number.isFinite(d.cell) ? 'true' : null
+		);
 	};
 
 	$: if (data && svgEl) {

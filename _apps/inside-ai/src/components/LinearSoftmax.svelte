@@ -17,6 +17,7 @@
 	} from '~/store';
 	import { expandedBlock, predictedToken, highlightedIndex, modelData } from '~/store';
 	import ProbabilityBars from './ProbabilityBars.svelte';
+	import { outputRows, outputRowsHeight, OUTPUT_ROW_LIMITS, DEFAULT_OUTPUT_ROW_LIMIT } from '~/lib/output-rows.js';
 	import Katex from '~/utils/Katex.svelte';
 	import { ga } from '~/utils/event';
 	import { EyeOutline, ZoomInOutline } from 'flowbite-svelte-icons';
@@ -149,7 +150,11 @@
 
 	let hoveredIndex: number | null = null;
 
-	$: data = $modelData?.probabilities || [];
+	let diagramRowLimit = DEFAULT_OUTPUT_ROW_LIMIT;
+	$: allCandidates = $modelData?.probabilities || [];
+	$: visibleOutput = outputRows(allCandidates, diagramRowLimit);
+	$: data = visibleOutput.rows;
+	$: contentHeight = outputRowsHeight(data.length, rowHeight, rowGap);
 	$: tokenIds = data?.map((d) => d.tokenId);
 	$: logits = data?.map((d) => d.logit) || [];
 	$: scaledLogits = data?.map((d) => d.scaledLogit) || [];
@@ -160,7 +165,7 @@
 	// top-p
 	$: topPProbabilities = data?.map((d) => d.topPProbability) || [];
 	$: cumulativeProbabilities = data?.map((d) => d.cumulativeProbability) || [];
-	$: cutoffIndex = data?.[0].cutoffIndex;
+	$: cutoffIndex = data[0]?.cutoffIndex;
 
 	let isHovered = false;
 
@@ -207,7 +212,7 @@
 
 	<div
 		class="content resize-watch relative"
-		style={`--softmax-row-height: ${rowHeight}px;--softmax-row-gap: ${rowGap}px`}
+		style={`--softmax-row-height: ${rowHeight}px;--softmax-row-gap: ${rowGap}px;--softmax-content-height: ${contentHeight}px`}
 	>
 		<div class="bounding softmax-bounding" class:active={isHovered && !isSoftmaxExpanded}></div>
 		<div class="first-column relative flex justify-end">
@@ -365,8 +370,20 @@
 						</div>
 					{/if}
 				</div>
-				<ProbabilityBars bind:hoveredIndex {rowGap} {rowHeight} bind:drawBars />
+				<ProbabilityBars {data} bind:hoveredIndex {rowGap} {rowHeight} bind:drawBars />
 			</div>
+		</div>
+		<div class="candidate-note">
+			<p data-testid="diagram-output-count" data-shown={data.length} data-retained={visibleOutput.retainedCount}>
+				Showing {data.length} of {visibleOutput.retainedCount.toLocaleString()} retained tokens, highest probability first.
+			</p>
+			<label class="candidate-limit" on:click|stopPropagation on:keydown|stopPropagation>Diagram row limit
+				<select data-testid="diagram-row-limit" bind:value={diagramRowLimit} on:click|stopPropagation on:keydown|stopPropagation>
+					{#each OUTPUT_ROW_LIMITS as limit}<option value={limit}>{limit}</option>{/each}
+				</select>
+			</label>
+			<a href="#ia-next-heading" on:click|stopPropagation on:keydown|stopPropagation>Leading {allCandidates.length} candidates and logits</a>
+			<p>Sampling uses all 50,257 tokens.</p>
 		</div>
 		{#if isSoftmaxExpanded && !!$predictedToken}
 			<div class="softmax-popover">
@@ -417,6 +434,32 @@
 		}
 
 		.content {
+			height: var(--softmax-content-height);
+			align-self: start;
+
+			.candidate-note {
+				position: absolute;
+				top: calc(100% + 0.75rem);
+				left: -5rem;
+				right: 1rem;
+				margin: 0;
+				font-size: 0.8rem;
+				line-height: 1.5;
+				z-index: $COLUMN_TITLE_INDEX;
+
+				p { margin: 0; }
+				.candidate-limit { display: flex; align-items: center; gap: 0.5rem; margin: 0.3rem 0; }
+				select {
+					color: var(--ia-ink);
+					background: var(--ia-panel);
+					border: 1px solid var(--ia-line);
+					border-radius: 0.25rem;
+					font: inherit;
+					min-height: 2rem;
+					padding: 0.2rem;
+				}
+			}
+
 			.softmax-bounding {
 				top: -0.5rem;
 				padding: 0.5rem 0;

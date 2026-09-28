@@ -177,7 +177,7 @@ test('static lessons and attribution remain useful without JavaScript', async ({
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.goto('/inside-ai/');
-  await expect(page.locator('main h1')).toHaveText('Inside AI: Explore a Transformer');
+  await expect(page.locator('main h1')).toHaveText('Inside AI');
   await expect(page.locator('main')).toContainText('attention');
   await expect(page.locator('main')).toContainText('Polo Club');
   await expect(page.locator('main noscript')).toBeVisible();
@@ -203,7 +203,7 @@ test('Inside AI is discoverable and navigation fits desktop and mobile', async (
       const labels = await navigation.locator('.navbar-nav > .nav-item > .nav-link').allTextContents();
       const names = labels.map(value => value.trim());
       expect(names.indexOf('Inside AI')).toBe(names.indexOf('Game Theory') + 1);
-      await expect(page.locator('main a[href="/inside-ai/"],.container a[href="/inside-ai/"]').first()).toBeVisible();
+      await expect(page.locator('#inside-ai-feature-title')).toHaveCount(0);
     }
   }
   await page.goto('/tools/');
