@@ -320,6 +320,11 @@ To run the site locally:
 
 ### Game Theory Playground
 
+Future lessons, prerequisite activities, shared modeling tools, and implementation
+priorities are tracked in [Game Theory Next Steps](game-theory/NEXT-STEPS.md).
+When planning the next work on this section, read that roadmap and verify its
+completion status against the current catalog and implementation.
+
 The collection lives at `/game-theory/`, with twenty individual experiment pages
 grouped into foundations, cooperation and information, and designing rules.
 The catalog and learning sequence come from `_data/game_theory.yml`; the

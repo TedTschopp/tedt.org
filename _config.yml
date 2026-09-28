@@ -23,6 +23,8 @@ exclude:
 # The Git branch remains readable; never store credentials or subscriber data here.
 - cache/substack-sync.json
 - bootstrap-5.3.2.tgz
+# Keep the Game Theory planning roadmap out of the generated website.
+- game-theory/NEXT-STEPS.md
 
 # Enable explicit kramdown + MathJax processing
 markdown: kramdown
