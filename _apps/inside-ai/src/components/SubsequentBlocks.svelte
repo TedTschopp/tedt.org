@@ -131,8 +131,10 @@
 		pointer-events: none;
 		position: absolute;
 		bottom: -3rem;
-		transform: translateX(-1rem);
-		width: 100%;
+		// Keep the probability fade within the diagram's rightmost section.
+		// A full-width overlay at its static grid position creates empty scroll space.
+		right: 0;
+		width: 20%;
 		height: 30%;
 		z-index: $ABOVE_COLUMN;
 		background-color: white;
