@@ -25,9 +25,9 @@ async function diagramContrast(page: Page) {
     const ratio = (a: Color, b: Color) => (Math.max(luminance(a), luminance(b)) + 0.05) / (Math.min(luminance(a), luminance(b)) + 0.05);
     // Compose both a painted and an unpainted pixel through every background and
     // opacity group. Multiplying only the leaf opacity misses nested dimming.
-    const contrast = (element: Element, pigment: Color, ownBackground = true) => {
-      let foreground = pigment;
-      let background = transparent;
+    const contrast = (element: Element, pigment: Color, ownBackground = true, halo: Color | null = null) => {
+      let foreground = halo ? over(pigment, halo) : pigment;
+      let background = halo || transparent;
       for (let ancestor: Element | null = element; ancestor; ancestor = ancestor.parentElement) {
         const style = getComputedStyle(ancestor);
         const surface = ancestor === element && !ownBackground ? transparent : (parse(style.backgroundColor) || transparent);
@@ -49,9 +49,14 @@ async function diagramContrast(page: Page) {
       return true;
     };
     const describe = (element: Element) => `${element.tagName.toLowerCase()}.${element.getAttribute('class') || ''} ${(element.textContent || '').trim().slice(0, 40)}`;
+    const textShadows = (style: CSSStyleDeclaration) => style.textShadow.split(/,(?![^(]*\))/).map(value => {
+      const colorText = value.match(/rgba?\([^)]+\)/)?.[0];
+      const offsets = value.replace(colorText || '', '').match(/-?[\d.]+px/g)?.map(parseFloat) || [];
+      return { color: colorText ? parse(colorText) : null, x: offsets[0], y: offsets[1], blur: offsets[2] ?? 0 };
+    });
     const violations: string[] = [];
     const minima = { text: Infinity, graphics: Infinity };
-    const counts = { text: 0, paths: 0, bars: 0, cells: 0, vectors: 0, icons: 0, labelSurfaces: 0 };
+    const counts = { text: 0, paths: 0, bars: 0, cells: 0, vectors: 0, icons: 0, labelHalos: 0 };
     const record = (element: Element, kind: string, value: number, minimum: number) => {
       const category = kind === 'text' ? 'text' : 'graphics';
       minima[category] = Math.min(minima[category], value);
@@ -65,7 +70,10 @@ async function diagramContrast(page: Page) {
       if (!color) continue;
       if (element instanceof SVGElement) color[3] *= Number(style.fillOpacity);
       counts.text++;
-      record(element, 'text', contrast(element, color), 4.5);
+      // HTML labels cross separate SVG ribbons. Their opaque glyph halo, when
+      // present, is the immediately adjacent surface rather than the canvas.
+      const halo = element instanceof SVGElement ? null : textShadows(style)[0]?.color;
+      record(element, 'text', contrast(element, color, true, halo), 4.5);
     }
     for (const element of root.querySelectorAll('.sankey-path, .operation-col .cell svg path, .operation-col .cell svg .icon, .residual-connector, .probability rect.bar, .matrix-svg circle.cell, .matrix-svg rect.cell, .token-id svg path, .attention-matrix .arrow path, .formula-steps .step-arrow path, .formula-steps .annotation svg polyline, .formula-steps .annotation svg line')) {
       if (!shown(element)) continue;
@@ -108,12 +116,22 @@ async function diagramContrast(page: Page) {
         violations.push(`vector has no visible boundary — ${describe(element)}`);
       } else record(element, 'vector boundary', contrast(element, color, false), 3);
     }
-    for (const element of root.querySelectorAll('.label, .guide-text, .matrix-label, .color-scale .val, .title-text, .text-box > span, .qkv .head-rest span')) {
+    for (const element of root.querySelectorAll('.label, .guide-text, .matrix-label, .color-scale .val, .title-text:not(.btn), .cutoff-label, .text-box, .text-box > span, .text-box > [role=group], .qkv .head-rest span, .embedding .symbol .cell, .embedding .index-val .val')) {
       if (element instanceof SVGElement || !shown(element) || !element.textContent?.trim()) continue;
-      counts.labelSurfaces++;
-      if ((parse(getComputedStyle(element).backgroundColor)?.[3] ?? 0) < 1) {
-        violations.push(`label has no opaque surface over diagram ribbons — ${describe(element)}`);
+      counts.labelHalos++;
+      const style = getComputedStyle(element);
+      if ((parse(style.backgroundColor)?.[3] ?? 0) !== 0 || style.backgroundImage !== 'none') {
+        violations.push(`label has a rectangular background over diagram ribbons — ${describe(element)}`);
       }
+      const shadows = textShadows(style);
+      const expected = [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]];
+      let opacity = 1;
+      for (let ancestor: Element | null = element; ancestor; ancestor = ancestor.parentElement) opacity *= Number(getComputedStyle(ancestor).opacity);
+      if (opacity < 0.999 || shadows.length !== 8 || expected.some(([x,y]) => !shadows.some(shadow => shadow.x === x && shadow.y === y && shadow.blur === 0 && shadow.color?.[3] === 1))) {
+        violations.push(`label lacks a fully opaque, unblurred 1px glyph halo on all sides — ${describe(element)}`);
+      }
+      const foreground = parse(style.color);
+      for (const shadow of shadows) if (foreground && shadow.color) record(element, 'text', contrast(element, foreground, true, shadow.color), 4.5);
     }
     for (const overlay of root.querySelectorAll('.prob-dim, .softmax .second-column .dim, .main-section > .dim, .main-section > .dim-partial')) {
       if (shown(overlay)) violations.push(`dimming overlay covers readable diagram content — ${describe(overlay)}`);
@@ -139,7 +157,7 @@ for (const theme of ['light', 'dark']) {
       expect(result.counts.bars, `${state}: must inspect probability bars`).toBeGreaterThan(0);
       expect(result.counts.cells, `${state}: must inspect attention cells`).toBeGreaterThan(10);
       expect(result.counts.vectors, `${state}: must inspect vector boundaries`).toBeGreaterThan(10);
-      expect(result.counts.labelSurfaces, `${state}: must inspect label backgrounds`).toBeGreaterThan(10);
+      expect(result.counts.labelHalos, `${state}: must inspect transparent labels and glyph halos`).toBeGreaterThan(10);
       expect.soft(result.violations, `${theme} ${state} contrast failures`).toEqual([]);
     };
     await check('default');
