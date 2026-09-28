@@ -1,0 +1,52 @@
+<section class="gt-panel" aria-labelledby="public-title">
+  <p class="gt-step">1. Make a Prediction</p>
+  <h2 id="public-title">A Project Everyone Benefits From</h2>
+  <p>Each player receives 10 new tokens each round. Tokens you keep earn one point each. Contributions go into a shared project, grow by the chosen multiplier, and return in equal shares to <em>everyone</em>, including players who contributed nothing. A <strong>public good</strong> is a benefit people can share without using up someone else’s share, such as a useful public information service. This token game is a simplified model of funding one.</p>
+  <div class="gt-field"><label for="public-prediction">Before any punishment, what happens to your own points if you give one extra token while everyone else keeps their choice?</label><select id="public-prediction" data-public-prediction data-gt-prediction><option value="">Choose a prediction</option><option value="gain">My points increase</option><option value="loss">My points decrease</option><option value="same">My points stay the same</option></select></div>
+  <p class="gt-step">2. Make Your Choice</p>
+  <div class="gt-field"><label for="public-contribution">Your contribution this round (0 to 10 tokens)</label><input id="public-contribution" data-public-contribution type="number" min="0" max="10" step="1" value="5"></div>
+  <p class="gt-note" data-public-context></p>
+  <button class="gt-button" type="button" data-public-play data-gt-action>Contribute and play a round</button>
+  <p class="gt-result" data-public-result data-gt-results role="status" aria-live="polite"></p>
+</section>
+<section class="gt-panel" aria-labelledby="public-results-title">
+  <p class="gt-step">3. Reveal the Incentives</p>
+  <h2 id="public-results-title">Your Earnings and the Group’s Earnings</h2>
+  <p><strong>Free riding</strong> means receiving a shared benefit while letting others pay for it. In the starting game, contributing one more token increases the group’s total but reduces the contributor’s own points. The table records up to 12 rounds. You can change your contribution between rounds without changing the rules.</p>
+  <div class="gt-table-wrap" tabindex="0" role="region" aria-label="Contribution rounds and earnings; scroll sideways if needed"><table class="gt-table"><caption>Round history; earnings include any punishment costs and fines</caption><thead><tr><th scope="col">Round</th><th scope="col">You gave</th><th scope="col">Each other player gave</th><th scope="col">Your points</th><th scope="col">Group points</th></tr></thead><tbody data-public-history></tbody></table></div>
+</section>
+<section class="gt-panel" aria-labelledby="public-rules-title">
+  <p class="gt-step">4. Change One Assumption</p>
+  <h2 id="public-rules-title">Who Can See, Match, or Respond?</h2>
+  <div class="gt-controls gt-grid">
+    <div class="gt-field"><label for="public-size">Players, including you</label><input id="public-size" data-setting="size" type="number" value="4" min="2" max="8" step="1"></div>
+    <div class="gt-field"><label for="public-initial">Each other player’s starting contribution</label><input id="public-initial" data-setting="initial" type="number" value="5" min="0" max="10" step="1"></div>
+    <div class="gt-field"><label for="public-multiplier">Project multiplier</label><input id="public-multiplier" data-setting="multiplier" type="number" value="2" min="1" max="4" step="0.25"></div>
+    <div class="gt-field"><label for="public-matching">Outside sponsor adds this percentage of contributions</label><input id="public-matching" data-setting="matching" type="number" value="0" min="0" max="100" step="10"></div>
+    <div class="gt-field"><label for="public-visible">Can players see individual contributions?</label><select id="public-visible" data-setting="visible"><option value="yes">Yes</option><option value="no">No</option></select></div>
+    <div class="gt-field"><label for="public-repeated">Other players’ response in later rounds</label><select id="public-repeated" data-setting="repeated"><option value="yes">Copy your previous contribution when visible</option><option value="no">Keep their starting contribution</option></select></div>
+    <div class="gt-field"><label for="public-punishment">Costly punishment rule</label><select id="public-punishment" data-setting="punishment"><option value="no">Off</option><option value="yes">On, when contributions are visible</option></select></div>
+  </div>
+  <p>The <strong>multiplier</strong> is the number you multiply the shared pool by. A multiplier of 2 doubles it. <strong>Matching</strong> means an outside sponsor adds tokens before the project grows. A 100% match adds one token for each token players give. The sponsor is outside the displayed group, so its cost is not included in group earnings.</p>
+  <p>With punishment on and contributions visible, every player pays 1 point to fine each lower contributor 2 points. This applies to you too. Both costs and fines leave the group; they are not transferred to another player. Points may become negative, meaning a loss. Hidden contributions prevent this rule and copying from operating.</p>
+  <p class="gt-note">Other players follow the exact response rule shown here. They do not learn, plan ahead, or represent real people. Matching has no budget limit in this model. Changing a rule restarts the history.</p>
+</section>
+<section class="gt-panel" aria-labelledby="public-math-title">
+  <div id="gt-math" class="gt-math-beginner">
+    <h2 id="public-math-title">Work It Out, Step by Step</h2>
+    <p>Use four players, a multiplier of 2, no matching, and no punishment. Suppose everybody gives 5 tokens.</p>
+    <ol class="gt-math-steps"><li>The four contributions add to 20. The project doubles that to 40 points.</li><li>Divide 40 among four people. Each gets 10 project points.</li><li>You kept 5 tokens, so you earn 5 plus 10, or 15 points. Together, the group earns 60.</li><li>If you give 6 instead, you keep only 4. The project receives 21 tokens and returns 42 points. Your equal share is 10.5.</li><li>You now earn 14.5 points. Your extra contribution cost you half a point, even though the group now earns 61.</li></ol>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[10 - 6 + 42 \div 4 = 14.5.\]</div>
+    <p><strong>In words:</strong> start with 10, subtract the 6 you gave, then add one fourth of the project’s 42 points. An extra token’s effect is called its <strong>marginal return</strong>; “marginal” here means the change caused by one more.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert"><summary>For experts: formal model and assumptions</summary>
+    <h3>How to Read the Symbols</h3>
+    <dl class="gt-symbol-key"><dt>\(n\), \(c_i\), and \(C\)</dt><dd>\(n\) counts players. \(c_i\) is player \(i\)’s contribution; the little \(i\) is a player label. \(C\) is all contributions added together.</dd><dt>\(m\), \(s\), and \(u_i\)</dt><dd>\(m\) is the multiplier. \(s\) is the sponsor’s matching percentage divided by 100; a 50% match means \(s=0.5\). \(u_i\) means player \(i\)’s points before punishment. Adjacent letters and parentheses mean multiply.</dd></dl>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[u_i = 10-c_i+\frac{m(1+s)C}{n}.\]</div>
+    <p><strong>In words:</strong> keep the unspent tokens and add one equal share of the multiplied, matched pool. The fraction bar means division. Before punishment, the change in your points from one extra contributed token is:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[\frac{m(1+s)}{n}-1.\]</div>
+    <p>The group gains \(m(1+s)-1\) points from that extra token. Individual and group interests differ when the group’s gain is positive but the individual’s gain is negative. The sponsor’s cost is excluded. Punishment subtracts 1 per fine you issue and 2 per fine you receive. These scripted responses do not solve a repeated-game equilibrium, which would require checking that each player’s whole plan is best given everyone else’s plan.</p>
+    <p>See the <a href="{{ '/math-guide/' | relative_url }}">math reading guide</a> for fractions and subscripts, the small labels below letters.</p>
+  </details>
+</section>
+<section class="gt-panel" aria-labelledby="public-transfer-title"><p class="gt-step">5. Transfer the Lesson</p><h2 id="public-transfer-title">Who Maintains the Shared Documentation?</h2><p>A team benefits from a shared guide, but writing it takes time away from each person’s own work. Would matching time, public credit, or repeated collaboration change the choice? Who would pay the cost of each rule, and could punishment destroy more value than it creates?</p><p>Concept reference: <a href="https://ocw.mit.edu/courses/14-75-political-economy-and-economic-development-fall-2012/a3eb6bfb95b1660ebc9bb1149764cf00_MIT14_75F12_Lec16.pdf">MIT’s lecture on collective action and public goods</a>. This playground’s token amounts and response rules are teaching choices.</p></section>

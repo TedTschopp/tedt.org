@@ -19,7 +19,7 @@
     <button class="gt-button gt-button-secondary" type="button" id="trust-defect">Defect</button>
   </div>
   <div class="gt-result" id="trust-result" aria-live="polite" aria-atomic="true"><p>Choose an action to play your first round.</p></div>
-  <div class="gt-table-wrap">
+  <div class="gt-table-wrap" tabindex="0" role="region" aria-label="Your encounter, actions, and round scores; scroll sideways if needed">
     <table class="gt-table">
       <caption>Your encounter: actual actions and points in each round</caption>
       <thead><tr><th scope="col">Round</th><th scope="col">You</th><th scope="col">Opponent</th><th scope="col">Your points</th><th scope="col">Their points</th><th scope="col">Combined</th></tr></thead>
@@ -47,7 +47,7 @@
   <p>Each of the six strategies plays every strategy, including another copy of itself, the same number of times. The ranking uses average points per round: total points divided by rounds played. When a strategy plays its own copy, we average the two copies so that pairing does not count twice. “Cooperation rate” means the percentage of actions that were cooperate. Run again with a different seed to see whether the result changes.</p>
   <button class="gt-button" type="button" id="trust-tournament-run">Run the tournament</button>
   <div id="trust-tournament-summary" class="gt-result" aria-live="polite" aria-atomic="true"></div>
-  <div class="gt-table-wrap"><table class="gt-table"><caption>Simulated tournament results</caption><thead><tr><th scope="col">Strategy</th><th scope="col">Points per round</th><th scope="col">Cooperation rate</th><th scope="col">Player-rounds</th></tr></thead><tbody id="trust-tournament-results"></tbody></table></div>
+  <div class="gt-table-wrap" tabindex="0" role="region" aria-label="Simulated strategy tournament results; scroll sideways if needed"><table class="gt-table"><caption>Simulated tournament results</caption><thead><tr><th scope="col">Strategy</th><th scope="col">Points per round</th><th scope="col">Cooperation rate</th><th scope="col">Player-rounds</th></tr></thead><tbody id="trust-tournament-results"></tbody></table></div>
 </section>
 
 <section class="gt-panel" aria-labelledby="trust-math-title">

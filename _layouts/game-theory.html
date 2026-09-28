@@ -53,7 +53,7 @@
         <p>Scenario links save the controls and random seed. To reproduce an interactive run, make the same choices in the same order. Changing a setting restarts the experiment.</p>
       </section>
       <nav class="gt-next" aria-label="More experiments">
-        <a href="{{ '/game-theory/' | relative_url }}">← All six experiments</a>
+        <a href="{{ '/game-theory/' | relative_url }}">← All {{ site.data.game_theory.experiments.size }} experiments</a>
         {% assign next_experiment = site.data.game_theory.experiments | where: 'slug', current.next | first %}
         <a href="{{ '/game-theory/' | append: next_experiment.slug | append: '/' | relative_url }}">Try {{ next_experiment.title }} →</a>
       </nav>

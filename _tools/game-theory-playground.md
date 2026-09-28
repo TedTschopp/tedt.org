@@ -1,6 +1,6 @@
 ---
 title: Game Theory Playground
-summary: "Six interactive experiments in cooperation, coordination, credibility, and shared costs. Make a choice, inspect the incentives, and change the rules."
+summary: "Twenty interactive experiments in cooperation, negotiation, information, voting, and incentives. Make a choice, inspect the results, and change the rules."
 subtitle: Learn by playing with the rules
 status: prototype
 tool_type: webapp
@@ -17,7 +17,7 @@ image-alt: "A wooden game board with branching paths, a bridge, and colorful pla
 image_width: 1672
 image_height: 941
 features:
-  - Six guided experiments with editable scenarios
+  - Twenty guided experiments with editable scenarios
   - Seeded simulations and settings-only scenario links
   - Visible assumptions, mathematics, and transfer questions
   - Keyboard-accessible controls and light and dark themes

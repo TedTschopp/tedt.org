@@ -38,6 +38,11 @@ image_height: 941
       <li><a href="#tables-and-vectors">Pairs, lists, and tables of numbers</a></li>
       <li><a href="#sets-and-choices">Braces, ∈, best choices, and rule tables</a></li>
       <li><a href="#rates-of-change">Prime marks: rates of change</a></li>
+      <li><a href="#conditional-probability">Updating a chance after new evidence</a></li>
+      <li><a href="#rounds-and-updates">Rounds, learning, and the value of waiting</a></li>
+      <li><a href="#teams-and-orders">Teams, joining orders, and the exclamation mark</a></li>
+      <li><a href="#preferences-and-knowledge">Preferences, matches, and who knows what</a></li>
+      <li><a href="#incentives-and-splits">Extra gains, shared rewards, and other game words</a></li>
     </ul></div>
   </div>
 </nav>
@@ -201,6 +206,101 @@ image_height: 941
   <p><strong>A small example:</strong> if a cost rule is \(L(z)=3z+2\), its rate of change is 3: each increase of 1 in the input adds 3 to the cost. Other rules can have rates that vary. The traffic expert section uses these marks to explain how it finds the best shared plan. It also checks the <strong>endpoints</strong>: the smallest and largest allowed inputs. If the allowed inputs run from 0 through 10, those endpoints are 0 and 10.</p>
   <p>Prime marks have other uses elsewhere, such as marking a different version of a value. Read the local definition before assuming a prime always means a derivative.</p>
   <p><a href="{{ '/game-theory/traffic-paradox/' | relative_url }}#gt-math">See the traffic example worked out with ordinary arithmetic.</a></p>
+</section>
+
+<section class="gt-guide-section" id="conditional-probability" aria-labelledby="guide-conditional-title">
+  <h2 id="guide-conditional-title">Update a Chance After New Evidence</h2>
+  <p><strong>Evidence</strong> is information you can use to judge a claim. <strong>Conditional probability</strong> means a chance worked out using specified information. In the signaling experiment, a badge is evidence about a product’s hidden quality, but it is not proof.</p>
+  <dl class="gt-symbol-key">
+    <dt>\(P(H\mid S)\)<span class="gt-symbol-reading">In words: “the chance of high quality, given a signal”</span></dt>
+    <dd>Here <em>H</em> means the product has high quality, and <em>S</em> means it shows the signal, such as a badge. The upright bar means <strong>given</strong>: look only at products showing the signal. It is not division. \(P(S\mid H)\) asks a different question: among high-quality products, how many show the signal?</dd>
+    <dt>Prior, likelihood, and posterior<span class="gt-symbol-reading">In words: a starting chance, an evidence rate, and an updated chance</span></dt>
+    <dd>A <strong>prior</strong> is the chance before this new observation. A <strong>likelihood</strong> tells you how often this evidence would appear under a particular possibility. A <strong>posterior</strong> is the chance after using the observation. <strong>Bayes’ rule</strong> is a way to calculate that update by comparing the cases that could have produced the evidence.</dd>
+  </dl>
+  <p><strong>Count a small example:</strong> imagine 100 products. Sixty have high quality and 40 have ordinary quality. Suppose 80% of high-quality products show a badge, while 20% of ordinary products do.</p>
+  <ol>
+    <li>High quality with a badge: 60 × 0.8 = 48 products.</li>
+    <li>Ordinary quality with a badge: 40 × 0.2 = 8 products.</li>
+    <li>All products with a badge: 48 + 8 = 56.</li>
+    <li>Among those 56, the high-quality share is 48 ÷ 56, or about 86%.</li>
+  </ol>
+  <p>The starting chance was 60%; the updated chance after seeing a badge is about 86%. If no product could show the badge under the model, we would have zero cases to divide by. That conditional chance is <strong>undefined</strong>: these rules do not supply an answer. It is not a zero-percent chance.</p>
+  <p><a href="{{ '/game-theory/signaling-game/' | relative_url }}#gt-math">Try counting signals.</a> In the <a href="{{ '/game-theory/correlation-experiment/' | relative_url }}#gt-math">advice experiment</a>, the same idea lets you count only the rounds when you received a particular recommendation.</p>
+</section>
+
+<section class="gt-guide-section" id="rounds-and-updates" aria-labelledby="guide-updates-title">
+  <h2 id="guide-updates-title">Read Rules That Repeat Each Round</h2>
+  <dl class="gt-symbol-key">
+    <dt>\(x_t\) and \(x_{t+1}\)<span class="gt-symbol-reading">In words: “x this round” and “x next round”</span></dt>
+    <dd>The small lower label <em>t</em> counts rounds. If <em>t</em> is 3, \(x_t\) means the value in round 3 and \(x_{t+1}\) means the value in round 4. The label is not multiplication. \(x_{i,t}\) uses two labels: player <em>i</em>, round <em>t</em>.</dd>
+    <dt>\(\alpha\)<span class="gt-symbol-reading">In words: “alpha,” a learning fraction in these experiments</span></dt>
+    <dd>This Greek letter, pronounced “AL-fuh,” can say how much of the gap to a target you move in one round. With alpha equal to 0.25, you move one quarter of the way. Its meaning is chosen by the author; alpha does not always mean learning.</dd>
+  </dl>
+  <div class="gt-equation" tabindex="0" role="group" aria-label="Updating a value toward a target; scroll sideways if needed">\[x_{t+1}=(1-\alpha)x_t+\alpha T_t\]</div>
+  <p><strong>In words:</strong> keep part of your old value, then add part of this round’s target, named \(T_t\). If your old value is 40, the target is 20, and alpha is 0.25, the next value is 0.75 × 40 + 0.25 × 20 = 35. That is five units closer to 20.</p>
+  <dl class="gt-symbol-key">
+    <dt>\(\delta\)<span class="gt-symbol-reading">In words: “delta,” the fraction of a reward that counts after waiting one round</span></dt>
+    <dd>Pronounced “DEL-tuh,” this letter is a <strong>discount factor</strong> in the bargaining experiment. A factor is a number you multiply by. If delta is 0.9, a reward of 10 next round counts like 9 now. A reward of 10 two rounds away counts like 10 × 0.9 × 0.9 = 8.1 now. This describes the model’s treatment of waiting, not a fee charged to anyone.</dd>
+    <dt>\(\mu\)<span class="gt-symbol-reading">In words: “mu,” a switching chance in the evolution experiment</span></dt>
+    <dd>Pronounced “myoo,” this letter names the chance of switching to the other strategy after the copying step. The expert word is <strong>mutation</strong>. Here it means a change in behavior; it does not require a biological change. Check the local definition: another author could use mu for something else.</dd>
+    <dt>\(\bar f\)<span class="gt-symbol-reading">In words: “f bar,” an average score in the evolution experiment</span></dt>
+    <dd>The short line above the letter marks an average here. A <strong>weighted average</strong> gives each group a share of the calculation that matches its size. If 75% of players score 4 and 25% score 8, the average is 0.75 × 4 + 0.25 × 8 = 5. The weights, 0.75 and 0.25, add to 1.</dd>
+  </dl>
+  <p><a href="{{ '/game-theory/expectations-game/' | relative_url }}#gt-math">Try repeated guesses.</a> A rule that updates the previous result is also called a <strong>recurrence</strong>. A <strong>fixed point</strong> is a value the rule leaves unchanged: putting it in gives the same value back. That does not by itself mean nearby values will move toward it.</p>
+</section>
+
+<section class="gt-guide-section" id="teams-and-orders" aria-labelledby="guide-teams-title">
+  <h2 id="guide-teams-title">Count Teams and Joining Orders</h2>
+  <p>A <strong>coalition</strong> is a group working together. Suppose the full group is \(N=\{A,B,C\}\). The capital letter <em>N</em> names this set of people; on another page it might instead count people. Read its local definition.</p>
+  <dl class="gt-symbol-key">
+    <dt>\(S\subseteq N\)<span class="gt-symbol-reading">In words: “S is a team drawn from N”</span></dt>
+    <dd>The symbol means <strong>is a subset of</strong>: every member of <em>S</em> also belongs to <em>N</em>. The team could be smaller than the full group or could include everyone.</dd>
+    <dt>\(\varnothing\) and \(|S|\)<span class="gt-symbol-reading">In words: “the empty set” and “the number of members of S”</span></dt>
+    <dd>The empty set contains nobody. Here two upright bars around a set count its members: if \(S=\{A,C\}\), then \(|S|=2\). This differs from the single “given” bar in a probability. Bars around a number can have another meaning, so always check what is inside them.</dd>
+    <dt>\(S\cup\{i\}\)<span class="gt-symbol-reading">In words: “team S with person i added”</span></dt>
+    <dd>The cup-shaped symbol means <strong>union</strong>: combine the listed members without counting anyone twice. If S contains A and person i is B, the new team contains A and B. \(S\setminus\{i\}\), read “S without i,” means remove person i from the team.</dd>
+    <dt>\(v(S\cup\{i\})-v(S)\)<span class="gt-symbol-reading">In words: “the extra value from adding person i”</span></dt>
+    <dd>The function <em>v</em> gives a team’s total value in points. If the team can make 8 points without you and 13 with you, your <strong>marginal contribution</strong> to that team is 13 − 8 = 5. “Marginal” means the change caused by adding one more person or unit.</dd>
+    <dt>\(3!=3\times2\times1=6\)<span class="gt-symbol-reading">In words: “three factorial equals six”</span></dt>
+    <dd>The exclamation mark is an instruction called <strong>factorial</strong>, not excitement. For a positive whole number, multiply it by every smaller positive whole number down to 1. Three people have six possible joining orders: ABC, ACB, BAC, BCA, CAB, and CBA. An order is also called a <strong>permutation</strong>. By definition, 0! = 1: there is one way to order an empty list.</dd>
+  </dl>
+  <p>The <strong>Shapley value</strong>, pronounced “SHAPE-lee,” averages your extra contribution over all joining orders. It is one rule for sharing a group’s value. An <strong>equal split</strong> simply divides the total by the number of people. Those rules answer different questions, so their answers can differ.</p>
+  <p><a href="{{ '/game-theory/coalition-calculator/' | relative_url }}#gt-math">Walk through all six joining orders.</a></p>
+</section>
+
+<section class="gt-guide-section" id="preferences-and-knowledge" aria-labelledby="guide-knowledge-title">
+  <h2 id="guide-knowledge-title">Read Preferences and “Who Knows What”</h2>
+  <dl class="gt-symbol-key">
+    <dt>\(A\succ B\)<span class="gt-symbol-reading">In words: “A is preferred to B”</span></dt>
+    <dd>The symbol describes a person’s ranking of choices, not a comparison of their point totals. A <strong>strict ranking</strong> puts every choice in order without ties. In matching, a <strong>blocking pair</strong> is two people who each prefer one another to their current partners. A <strong>stable matching</strong> has no such pair under the stated preferences.</dd>
+    <dt>\(K_A F\)<span class="gt-symbol-reading">In words: “A knows fact F”</span></dt>
+    <dd><em>F</em> is a statement, such as “the lamp is on.” <em>K</em> says “knows,” and the small A names the person. This is an instruction about knowledge, not multiplication. In this model, A knows F only when F is true in every situation A still considers possible.</dd>
+    <dt>\(E F\) and \(E^2F\)<span class="gt-symbol-reading">In words: “everyone knows F” and “everyone knows that everyone knows F”</span></dt>
+    <dd>Here <em>E</em> means everyone in the group knows. The raised 2 repeats that knowledge instruction twice; it is not ordinary squaring. For two people, EF requires both \(K_A F\) and \(K_B F\). Here E does not mean the expected-value notation E[X] used with numbers.</dd>
+    <dt>\(C F\)<span class="gt-symbol-reading">In words: “F is common knowledge”</span></dt>
+    <dd>Everyone knows F, everyone knows everyone knows F, and that pattern continues for every further level. It is stronger than everyone individually receiving the news. The experiment’s <strong>public announcement</strong> assumes everyone hears it and knows that everyone hears it, with that certainty continuing at every further level. A finite chain of private “message received” replies does not establish all those levels.</dd>
+  </dl>
+  <p><a href="{{ '/game-theory/common-knowledge/' | relative_url }}#gt-math">Explore the possible situations in the knowledge experiment.</a> Its <strong>possible world</strong> is one complete description of a situation that might have happened. It is a reasoning tool, not a claim about another universe.</p>
+</section>
+
+<section class="gt-guide-section" id="incentives-and-splits" aria-labelledby="guide-incentives-title">
+  <h2 id="guide-incentives-title">Translate the Words Around the Math</h2>
+  <p>Some hard parts of an equation are the surrounding words. These meanings apply to the playground’s bargaining, voting, and rule-design experiments.</p>
+  <dl class="gt-symbol-key">
+    <dt>Payoff and incentive</dt>
+    <dd>A <strong>payoff</strong> is how a player rates an outcome, represented by points. An <strong>incentive</strong> is a reason to favor one choice, such as a higher payoff. Points represent only what the model counts; they need not capture all a real person cares about.</dd>
+    <dt>Outside option and surplus</dt>
+    <dd>An <strong>outside option</strong> is what you can get if no agreement happens. A <strong>surplus</strong> is the extra value available beyond the stated comparison. If an agreement makes 20 points and the two outside options total 12, the extra value to share is 20 − 12 = 8.</dd>
+    <dt>Allocation, transfer, and cost</dt>
+    <dd>An <strong>allocation</strong> decides who receives an item or how a total is divided. A <strong>transfer</strong> moves points or money between people. A payment of 3 subtracts 3 from the payer and adds 3 to the receiver, so it cancels when adding both totals. A real resource <strong>cost</strong>, such as time spent working, need not cancel that way.</dd>
+    <dt>Incentive compatibility and truthful reporting</dt>
+    <dd>A rule is <strong>incentive compatible</strong> under its stated assumptions when a player cannot improve their payoff by supplying a false report instead of the truth. A true report can tie another report. A <strong>weakly best</strong> choice allows such ties; a <strong>strictly best</strong> choice scores higher than every alternative being compared. Check which players, reports, and assumptions a result covers.</dd>
+    <dt>Efficiency, fairness, and the core</dt>
+    <dd><strong>Efficiency</strong> in these games usually means achieving the largest total value under the model’s rules. That does not decide how fairly the value is shared. A proposed team split is <strong>in the core</strong> when it shares the full value and no person or smaller team can obtain a larger total by leaving and working alone. Some games have no split meeting all these conditions.</dd>
+    <dt>Majority, tie, and voting cycle</dt>
+    <dd>A <strong>majority</strong> is more than half, not merely the largest share. A <strong>tie</strong> is an equal result. A <strong>voting cycle</strong> can occur when separate head-to-head votes favor A over B, B over C, and C over A. These group results can circle even when each voter has a clear ranking.</dd>
+  </dl>
+  <p><a href="{{ '/game-theory/mechanism-design/' | relative_url }}#gt-math">Compare rules for assigning one item.</a> A <strong>mechanism</strong> is a rule that turns participants’ choices or reports into an outcome and any payments. <strong>Mechanism design</strong> asks which rules encourage the behavior needed for a chosen goal.</p>
 </section>
 
 <section class="gt-guide-section" aria-labelledby="guide-next-title">

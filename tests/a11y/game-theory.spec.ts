@@ -1,7 +1,12 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
-const experiments = ['trust-machine', 'equilibrium-explorer', 'coordination-trap', 'mixed-strategy', 'credible-threat', 'traffic-paradox'];
+const experiments = [
+  'trust-machine', 'equilibrium-explorer', 'coordination-trap', 'mixed-strategy', 'credible-threat', 'traffic-paradox',
+  'public-goods', 'last-fish', 'bargaining-room', 'auction-lab', 'signaling-game', 'expectations-game',
+  'common-knowledge', 'evolution-arena', 'correlation-experiment', 'stable-matching', 'coalition-calculator',
+  'voting-lab', 'incentive-designer', 'mechanism-design'
+];
 
 for (const slug of ['', ...experiments]) {
   test(`playground ${slug || 'collection'}: responsive, accessible, and shareable`, async ({ page }) => {
@@ -9,6 +14,10 @@ for (const slug of ['', ...experiments]) {
     page.on('pageerror', error => failures.push(error.message));
     await page.goto(`/game-theory/${slug ? slug + '/' : ''}`, { waitUntil: 'domcontentloaded' });
     await expect(page.locator('main h1')).toHaveCount(1);
+    const hero = page.locator('.gt-hero-image img').first();
+    await expect(hero).toBeVisible();
+    await expect.poll(() => hero.evaluate((image: HTMLImageElement) => image.complete && image.naturalWidth > 0)).toBe(true);
+    await expect(hero).toHaveAttribute('srcset', /480w.*768w.*1200w.*1456w/);
     if (slug) {
       await expect(page.locator('#gt-experiment')).toHaveAttribute('data-ready', 'true');
       await expect(page.locator('.gt-math-beginner')).toBeVisible();
@@ -28,10 +37,26 @@ for (const slug of ['', ...experiments]) {
     for (const theme of ['light', 'dark']) {
       await page.evaluate(theme => document.documentElement.setAttribute('data-bs-theme', theme), theme);
       await page.setViewportSize({ width: 1280, height: 900 });
+      if (slug) {
+        const heroWidth = await hero.evaluate(image => image.getBoundingClientRect().width);
+        expect(heroWidth, 'full-width page hero').toBeGreaterThan(1100);
+      }
       const results = await new AxeBuilder({ page }).include('#gt-main').withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
       expect(results.violations, `${theme} accessibility`).toEqual([]);
       await page.setViewportSize({ width: 390, height: 844 });
       expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), `${theme} mobile overflow`).toBe(true);
+      for (const table of await page.locator('.gt-table-wrap').all()) {
+        const overflows = await table.evaluate(element => element.scrollWidth > element.clientWidth + 1);
+        if (overflows) {
+          await expect(table).toHaveAttribute('tabindex', '0');
+          await expect(table).toHaveAttribute('aria-label', /scroll/i);
+          await table.focus();
+          await table.evaluate(element => { element.scrollLeft = 0; });
+          const before = await table.evaluate(element => element.scrollLeft);
+          await page.keyboard.press('ArrowRight');
+          await expect.poll(() => table.evaluate(element => element.scrollLeft)).toBeGreaterThan(before);
+        }
+      }
     }
     if (slug) {
       await page.locator('#gt-share').click();
@@ -50,8 +75,8 @@ for (const slug of ['', ...experiments]) {
       await page.locator('#gt-reset').click();
       await expect(page.locator('#gt-status')).toContainText('Restarted');
     } else {
-      await expect(page.locator('.gt-card')).toHaveCount(6);
-      await expect(page.locator('.gt-card-link')).toHaveCount(6);
+      await expect(page.locator('.gt-card')).toHaveCount(experiments.length);
+      await expect(page.locator('.gt-card-link')).toHaveCount(experiments.length);
     }
     expect(failures).toEqual([]);
   });
@@ -125,7 +150,7 @@ test('the collection and model explanations remain readable without JavaScript',
   const context = await browser.newContext({ javaScriptEnabled: false });
   const page = await context.newPage();
   await page.goto('/game-theory/');
-  await expect(page.locator('.gt-card-link')).toHaveCount(6);
+  await expect(page.locator('.gt-card-link')).toHaveCount(experiments.length);
   await page.goto('/game-theory/traffic-paradox/');
   await expect(page.locator('#gt-main noscript p')).toContainText('Turn on JavaScript');
   await expect(page.locator('#gt-assumptions')).toBeVisible();

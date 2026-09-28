@@ -8,6 +8,7 @@ experiments:
     concept: Repeated Games
     description: Cooperate or defect, meet your opponent again, and discover what a little forgiveness changes.
     next: equilibrium-explorer
+    group: foundations
   - slug: equilibrium-explorer
     image: /img/game-theory/equilibrium-explorer.webp
     image-alt: "Two playing pieces sit on interlocking circular tracks with gates blocking the shared path."
@@ -17,6 +18,7 @@ experiments:
     concept: Nash Equilibrium
     description: Play both sides of a two-person game. Change the payoffs and find out who has a reason to move.
     next: coordination-trap
+    group: foundations
   - slug: coordination-trap
     image: /img/game-theory/coordination-trap.webp
     image-alt: "Eight playing pieces wait on separate platforms around a shared center, with gaps between their bridges."
@@ -26,6 +28,7 @@ experiments:
     concept: Coordination
     description: Help eight teams choose a shared technology. Test expectations, pilot support, and commitments.
     next: mixed-strategy
+    group: foundations
   - slug: mixed-strategy
     image: /img/game-theory/mixed-strategy.webp
     image-alt: "A rock, a sheet of paper, and scissors sit on a blue tray beside colored counters."
@@ -35,6 +38,7 @@ experiments:
     concept: Mixed Strategies
     description: Face a pattern-seeking opponent, then build a random strategy and compare it with an even mix.
     next: credible-threat
+    group: foundations
   - slug: credible-threat
     image: /img/game-theory/credible-threat.webp
     image-alt: "A blue gate with a brass bolt blocks one branch of a wooden path beside two playing pieces."
@@ -44,6 +48,7 @@ experiments:
     concept: Credible Commitments
     description: Enter a market, make a threat, and work backward through the choices. See what a deposit changes.
     next: traffic-paradox
+    group: foundations
   - slug: traffic-paradox
     image: /img/game-theory/traffic-paradox.webp
     image-alt: "Miniature cars crowd a central shortcut while the longer outer roads have fewer cars."
@@ -52,23 +57,155 @@ experiments:
     question: Could an extra road make your commute worse?
     concept: Braess’s Paradox
     description: Open a shortcut, let drivers choose their routes, and compare the result with a coordinated plan.
+    next: public-goods
+    group: foundations
+  - slug: public-goods
+    image: /img/game-theory/public-goods.webp
+    image-alt: "Four playing pieces and their small bowls surround a shared pool of counters beside a wooden pavilion."
+    number: "07"
+    title: Who Pays for the Shared Benefit?
+    question: Why help pay when everyone gets the benefit?
+    concept: Public Goods
+    description: Choose a contribution, add matching funds, and compare your points with the group’s total.
+    group: cooperation-information
+    next: last-fish
+  - slug: last-fish
+    image: /img/game-theory/last-fish.webp
+    image-alt: "Small wooden fish fill a blue ceramic lake surrounded by fishing boats and baskets."
+    number: "08"
+    title: The Last Fish
+    question: How much can you take without emptying the lake?
+    concept: Shared Resources
+    description: Fish from a shared lake, change its growth and harvesting rules, and follow the stock through time.
+    group: cooperation-information
+    next: bargaining-room
+  - slug: bargaining-room
+    image: /img/game-theory/bargaining-room.webp
+    image-alt: "Blue and orange playing pieces face a divided tray of counters across a round negotiating table."
+    number: "09"
+    title: Split It or Walk Away
+    question: What makes an offer worth accepting?
+    concept: Bargaining
+    description: Divide a shared reward, compare alternatives, and see how waiting or rejecting changes the result.
+    group: cooperation-information
+    next: auction-lab
+  - slug: auction-lab
+    image: /img/game-theory/auction-lab.webp
+    image-alt: "Three playing pieces with bowls of counters face a blue vase beside an auction gavel."
+    number: "10"
+    title: Congratulations, You Overpaid
+    question: What does winning actually cost you?
+    concept: Auctions
+    description: Compare first-price and second-price bids, then test what happens when bidders estimate a shared value.
+    group: cooperation-information
+    next: signaling-game
+  - slug: signaling-game
+    image: /img/game-theory/signaling-game.webp
+    image-alt: "An open box reveals a blue gem while a second box stays closed beside a buyer, seller, and brass seal."
+    number: "11"
+    title: Should You Believe the Signal?
+    question: Can a promise tell you what is hidden?
+    concept: Signals and Information
+    description: Try claims and costly signals, update a buyer’s expectations, and check who would want to imitate whom.
+    group: cooperation-information
+    next: expectations-game
+  - slug: expectations-game
+    image: /img/game-theory/expectations-game.webp
+    image-alt: "Four playing pieces surround a board of concentric rings with colored beads at different distances from its center."
+    number: "12"
+    title: I Think You Think…
+    question: How many steps ahead should you think?
+    concept: Expectations
+    description: Choose a number against different reasoning styles and watch the group’s target change over rounds.
+    group: cooperation-information
+    next: common-knowledge
+  - slug: common-knowledge
+    image: /img/game-theory/common-knowledge.webp
+    image-alt: "Two playing pieces in separate lookout towers can see a shared lantern, with a sealed letter between them."
+    number: "13"
+    title: Does Everyone Know That Everyone Knows?
+    question: Is a private message as useful as a public announcement?
+    concept: Common Knowledge
+    description: Send messages and acknowledgments, compare possible delivery histories, and test what each side can know.
+    group: cooperation-information
+    next: evolution-arena
+  - slug: evolution-arena
+    image: /img/game-theory/evolution-arena.webp
+    image-alt: "Carved blue hawks and ivory doves surround resource counters in a wooden arena as orange birds enter."
+    number: "14"
+    title: Survival of the Strategy
+    question: Does a successful strategy stay successful as it spreads?
+    concept: Evolutionary Games
+    description: Mix Hawk and Dove strategies, change conflict costs, and introduce a small invading group.
+    group: cooperation-information
+    next: correlation-experiment
+  - slug: correlation-experiment
+    image: /img/game-theory/correlation-experiment.webp
+    image-alt: "A wooden box offers separate blue and orange counters beside two playing pieces and curved tracks."
+    number: "15"
+    title: Can Advice Help Everyone?
+    question: When is following shared advice your best move?
+    concept: Correlated Equilibrium
+    description: Compare independent choices with coordinated recommendations, then inspect the incentive to obey or switch.
+    group: designing-rules
+    next: stable-matching
+  - slug: stable-matching
+    image: /img/game-theory/stable-matching.webp
+    image-alt: "Three blue playing pieces are paired with three orange pieces by cream ribbons on a wooden board."
+    number: "16"
+    title: The Matchmaker’s Dilemma
+    question: Can every pair be satisfied with the match?
+    concept: Stable Matching
+    description: Rank possible partners, step through proposals, switch who proposes, and look for pairs that want to leave.
+    group: designing-rules
+    next: coalition-calculator
+  - slug: coalition-calculator
+    image: /img/game-theory/coalition-calculator.webp
+    image-alt: "Three colored wooden supports hold up one arch, with a playing piece and a bowl of rewards for each contributor."
+    number: "17"
+    title: Who Deserves the Credit?
+    question: How much did each teammate add to the result?
+    concept: Coalitions and Shared Value
+    description: Set the value of different teams, compare ways to split credit, and check whether a subgroup could do better.
+    group: designing-rules
+    next: voting-lab
+  - slug: voting-lab
+    image: /img/game-theory/voting-lab.webp
+    image-alt: "Blue, orange, and cyan ballot boxes stand behind blank voting cards, playing pieces, and stacks of counters."
+    number: "18"
+    title: Who Actually Won?
+    question: Can the same preferences produce different winners?
+    concept: Voting Rules
+    description: Compare four voting rules, separate honest preferences from submitted ballots, and inspect ties and cycles.
+    group: designing-rules
+    next: incentive-designer
+  - slug: incentive-designer
+    image: /img/game-theory/incentive-designer.webp
+    image-alt: "A workshop produces many rough cubes on one side and a few smooth cubes on the other, beside a balance and reward counters."
+    number: "19"
+    title: You Get What You Reward
+    question: Will the reward improve the work or just the score?
+    concept: Incentives and Hidden Action
+    description: Choose a reward rule, inspect effort and shortcuts, and compare employee pay with the value created.
+    group: designing-rules
+    next: mechanism-design
+  - slug: mechanism-design
+    image: /img/game-theory/mechanism-design.webp
+    image-alt: "Four playing pieces surround one blue key, with a queue of counters, a lottery bag, and an auction gavel nearby."
+    number: "20"
+    title: Write the Rules
+    question: Will your rules encourage people to tell the truth?
+    concept: Mechanism Design
+    description: Allocate one scarce item by queue, lottery, priority, or auction, then compare truthful and exaggerated reports.
+    group: designing-rules
     next: trust-machine
-planned:
-  - title: Cooperation, Negotiation, and Information
-    topics:
-      - The Public Goods Lab
-      - The Last Fish
-      - The Bargaining Room
-      - The Auction Lab
-      - The Signaling Game
-      - The Expectations Game
-      - The Common Knowledge Lab
-      - The Evolution Arena
-  - title: Designing the Rules
-    topics:
-      - The Correlation Experiment
-      - Stable Matching
-      - The Coalition Calculator
-      - The Voting Lab
-      - The Incentive Designer
-      - The Mechanism Design Studio
+groups:
+  - id: foundations
+    title: Start With the Foundations
+    description: Six experiments introduce choices, cooperation, and the ways sensible decisions can collide.
+  - id: cooperation-information
+    title: Share, Negotiate, and Learn
+    description: Eight experiments explore shared resources, bargaining, hidden information, and changing beliefs.
+  - id: designing-rules
+    title: Design the Rules
+    description: Six experiments ask how advice, matching, voting, credit, and rewards change what people do.

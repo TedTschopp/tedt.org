@@ -15195,6 +15195,138 @@
       ],
       "width": 600
     },
+    "/img/game-theory/auction-lab.webp": {
+      "height": 941,
+      "source_sha256": "ed8e0a9853834d115e9ea7e07005416e3caf6d3c07cf91a74ae38911fc00dfe0",
+      "src": "/img/game-theory/auction-lab.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/auction-lab--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/auction-lab--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/auction-lab--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/auction-lab--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/auction-lab.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/bargaining-room.webp": {
+      "height": 941,
+      "source_sha256": "8394ed149464b921372598f23a5fe42cfed36d56d5a1c1d9be039dd7be9139ed",
+      "src": "/img/game-theory/bargaining-room.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/bargaining-room--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/bargaining-room--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/bargaining-room--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/bargaining-room--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/bargaining-room.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/coalition-calculator.webp": {
+      "height": 941,
+      "source_sha256": "c105fcc25538532d5e12abb2a59281de14dac37c2d3463c3dbffff26014990e6",
+      "src": "/img/game-theory/coalition-calculator.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/coalition-calculator--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/coalition-calculator--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/coalition-calculator--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/coalition-calculator--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/coalition-calculator.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/common-knowledge.webp": {
+      "height": 941,
+      "source_sha256": "451f35afed2ed266913abd3524990b06b6a1501eba98a28204cfa4ac200fd57b",
+      "src": "/img/game-theory/common-knowledge.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/common-knowledge--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/common-knowledge--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/common-knowledge--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/common-knowledge--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/common-knowledge.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/game-theory/coordination-trap.webp": {
       "height": 941,
       "source_sha256": "5bb43d06aec36c834ff9c98afc6ac1ddcc7e74fe185d52b92c7ee37acb195486",
@@ -15223,6 +15355,39 @@
         {
           "height": 941,
           "path": "/img/game-theory/coordination-trap.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/correlation-experiment.webp": {
+      "height": 941,
+      "source_sha256": "70f78118e67e855ed348c852eb1fa22ab91a8061943ab908f19aa868306dd213",
+      "src": "/img/game-theory/correlation-experiment.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/correlation-experiment--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/correlation-experiment--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/correlation-experiment--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/correlation-experiment--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/correlation-experiment.webp",
           "width": 1672
         }
       ],
@@ -15294,6 +15459,138 @@
       ],
       "width": 1672
     },
+    "/img/game-theory/evolution-arena.webp": {
+      "height": 941,
+      "source_sha256": "74aa47dd58de3fbd3ef4898383248f005aedaa8ed60b259199498fe4c0097b8a",
+      "src": "/img/game-theory/evolution-arena.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/evolution-arena--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/evolution-arena--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/evolution-arena--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/evolution-arena--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/evolution-arena.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/expectations-game.webp": {
+      "height": 941,
+      "source_sha256": "8fb75074a0f49cb67537b70eab09a0e6fa5b79c45355cf18595ebc85a12ccb47",
+      "src": "/img/game-theory/expectations-game.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/expectations-game--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/expectations-game--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/expectations-game--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/expectations-game--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/expectations-game.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/incentive-designer.webp": {
+      "height": 941,
+      "source_sha256": "fc7535397207a92d0f8dc1df259a68438a23e8b0f37c550ec303a797330c677f",
+      "src": "/img/game-theory/incentive-designer.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/incentive-designer--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/incentive-designer--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/incentive-designer--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/incentive-designer--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/incentive-designer.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/last-fish.webp": {
+      "height": 941,
+      "source_sha256": "f6bbe87614d769c10594d94fc48df9d218b63a9b4cc5ff1a80d5aacec8867221",
+      "src": "/img/game-theory/last-fish.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/last-fish--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/last-fish--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/last-fish--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/last-fish--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/last-fish.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/game-theory/math-guide.webp": {
       "height": 941,
       "source_sha256": "36a573f69a2ecb1d27c4de6e78c7750bc26c2482946f2e7e01ada9d7437752a7",
@@ -15322,6 +15619,39 @@
         {
           "height": 941,
           "path": "/img/game-theory/math-guide.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/mechanism-design.webp": {
+      "height": 941,
+      "source_sha256": "ed256077570543cdc118b6c624072b02d3afad31526c83913688037ccb8200fc",
+      "src": "/img/game-theory/mechanism-design.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/mechanism-design--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/mechanism-design--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/mechanism-design--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/mechanism-design--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/mechanism-design.webp",
           "width": 1672
         }
       ],
@@ -15393,6 +15723,105 @@
       ],
       "width": 1672
     },
+    "/img/game-theory/public-goods.webp": {
+      "height": 941,
+      "source_sha256": "55661cc893701889659152639ec8a57c633ce50f1fc2d1e70db50832d8f064de",
+      "src": "/img/game-theory/public-goods.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/public-goods--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/public-goods--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/public-goods--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/public-goods--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/public-goods.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/signaling-game.webp": {
+      "height": 941,
+      "source_sha256": "26f79ea2be21040ede550e864ead97043f89c1466c15c99b7798a9de510920bf",
+      "src": "/img/game-theory/signaling-game.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/signaling-game--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/signaling-game--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/signaling-game--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/signaling-game--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/signaling-game.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/stable-matching.webp": {
+      "height": 941,
+      "source_sha256": "0c77d56e6f9aa44335a473063d1318c35be4b0c0faf4228477e8c9564028cb9c",
+      "src": "/img/game-theory/stable-matching.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/stable-matching--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/stable-matching--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/stable-matching--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/stable-matching--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/stable-matching.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/game-theory/traffic-paradox.webp": {
       "height": 941,
       "source_sha256": "1ba59647be5029ee8e875b1e71f42eb322a507d517c1913ad0b647b120102d9b",
@@ -15454,6 +15883,39 @@
         {
           "height": 941,
           "path": "/img/game-theory/trust-machine.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/voting-lab.webp": {
+      "height": 941,
+      "source_sha256": "b0feb2ab90f7b56dc160b4e7588c0260081cab5f8567266bf2074a999825a956",
+      "src": "/img/game-theory/voting-lab.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/voting-lab--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/voting-lab--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/voting-lab--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/voting-lab--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/voting-lab.webp",
           "width": 1672
         }
       ],

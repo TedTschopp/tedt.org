@@ -323,7 +323,8 @@ To run the site locally:
 
 ### Game Theory Playground
 
-The collection lives at `/game-theory/`, with six individual experiment pages.
+The collection lives at `/game-theory/`, with twenty individual experiment pages
+grouped into foundations, cooperation and information, and designing rules.
 The catalog and learning sequence come from `_data/game_theory.yml`; the
 `game-theory` layout reuses the site's navigation, metadata, theme controls,
 and footer. Experiment templates live in `_includes/game-theory/experiments/`,
@@ -347,7 +348,7 @@ In symbol definitions, separate notation from its spoken wording with an
 explicit `In words:` label on its own line (`.gt-symbol-reading`). Avoid dash
 separators, which readers can mistake for mathematical operators.
 
-The landing page, six experiments, and math guide have coordinated hero artwork
+The landing page, twenty experiments, and math guide have coordinated hero artwork
 in `img/game-theory/`. The shared `game-theory/hero-image.html` include uses the
 existing responsive image manifest and lazy-loads catalog thumbnails. Preserve
 each image's natural proportions and keep text and equations in the page content.
@@ -356,11 +357,12 @@ Art direction and generation prompts are documented in
 
 Each experiment exports its model separately from its browser controls.
 Run the model checks with `node --test tests/game-theory/*.test.mjs` and the
-browser checks with `npx playwright test tests/a11y/game-theory.spec.ts` after
+browser checks with `npx playwright test tests/a11y/game-theory*.spec.ts` after
 `bundle exec jekyll build`. Settings links contain validated control values
 and the random seed, not session history. Keep randomness seeded, mathematical
 results distinct from simulations, and model assumptions visible when adding
-experiments. The remaining fourteen concepts are explicitly marked as planned.
+experiments. Each new lab documents its small-model assumptions, tie-breaking
+rules, and the difference between a calculated incentive and simulated behavior.
 
 ### Testing the Site
 

@@ -1,0 +1,43 @@
+<section class="gt-panel" aria-labelledby="fish-title">
+  <p class="gt-step">1. Make a Prediction</p><h2 id="fish-title">Four Boats, One Lake</h2>
+  <p>Your boat and three others share a lake that starts with 80 fish. After each season’s catch, the remaining fish reproduce. A <strong>common resource</strong> is something people share that can be used up: a fish caught by one boat is no longer available to the others. Unlike the public-goods game, the problem here is how much to take, not how much to contribute.</p>
+  <div class="gt-field"><label for="fish-prediction">After this catch and the new growth, will the lake have more or fewer fish than it has now?</label><select id="fish-prediction" data-fish-prediction data-gt-prediction><option value="">Choose a prediction</option><option value="grow">More fish</option><option value="shrink">Fewer fish</option><option value="same">The same number</option></select></div>
+  <p class="gt-step">2. Make Your Choice</p>
+  <p><strong>Fish in the lake: <span data-fish-stock>80</span> of 100.</strong></p>
+  <div class="gt-field"><label for="fish-meter">Fish remaining, as a share of the lake’s capacity</label><meter id="fish-meter" data-fish-meter min="0" max="100" value="80">80 of 100 fish</meter></div>
+  <div class="gt-field"><label for="fish-harvest">Your requested catch this season (0 to 20 fish)</label><input id="fish-harvest" data-fish-harvest type="number" min="0" max="20" step="1" value="6"></div>
+  <button type="button" class="gt-button" data-fish-play data-gt-action>Fish for one season</button>
+  <p class="gt-result" data-fish-result data-gt-results role="status" aria-live="polite"></p>
+</section>
+<section class="gt-panel" aria-labelledby="fish-outcomes-title"><p class="gt-step">3. Reveal the Incentives</p><h2 id="fish-outcomes-title">Catch Today and Fish Tomorrow</h2>
+  <p>Each fish caught earns one point. Monitoring costs each boat up to one point per season. A large catch can improve your earnings now and leave fewer fish to reproduce. The history shows whether the whole lake is recovering or being depleted, meaning used up.</p>
+  <div class="gt-table-wrap" tabindex="0" role="region" aria-label="Fishing seasons, catches, and lake stock; scroll sideways if needed"><table class="gt-table"><caption>Up to 12 seasons in the same lake</caption><thead><tr><th scope="col">Season</th><th scope="col">Your catch</th><th scope="col">All boats’ catch</th><th scope="col">New fish</th><th scope="col">Next season’s stock</th></tr></thead><tbody data-fish-history></tbody></table></div>
+</section>
+<section class="gt-panel" aria-labelledby="fish-rules-title"><p class="gt-step">4. Change One Assumption</p><h2 id="fish-rules-title">Can the Boats Make a Rule That Lasts?</h2>
+  <div class="gt-controls gt-grid">
+    <div class="gt-field"><label for="fish-growth">Growth after the catch, as a percentage of remaining fish</label><input id="fish-growth" data-setting="growth" type="number" value="50" min="0" max="100" step="5"></div>
+    <div class="gt-field"><label for="fish-other">Each other boat’s usual catch request</label><input id="fish-other" data-setting="other" type="number" value="6" min="0" max="20" step="1"></div>
+    <div class="gt-field"><label for="fish-quota">Catch limit per boat, called a quota</label><input id="fish-quota" data-setting="quota" type="number" value="6" min="0" max="20" step="1"></div>
+    <div class="gt-field"><label for="fish-monitoring">Percentage of above-quota fishing prevented</label><input id="fish-monitoring" data-setting="monitoring" type="number" value="0" min="0" max="100" step="10"></div>
+    <div class="gt-field"><label for="fish-negotiated">Voluntary local agreement</label><select id="fish-negotiated" data-setting="negotiated"><option value="no">Other boats keep their usual request</option><option value="yes">Other boats voluntarily follow the quota</option></select></div>
+  </div>
+  <p>A <strong>quota</strong> is an agreed limit on how much each boat can take. <strong>Monitoring</strong> means checking whether boats follow the rule. Here it prevents the chosen percentage of any request above the quota. For example, 50% monitoring prevents half of the excess. Each boat pays the monitoring percentage divided by 100 in points, even if its own request follows the rule.</p>
+  <p>With the local agreement on, the three other boats voluntarily lower requests to the quota. You still choose your request and can break the agreement, subject to monitoring. This is a fixed cooperation rule, not a negotiation simulation.</p>
+  <p class="gt-note">Model assumptions: all boats fish at the same time. If requests exceed the available fish, each receives the same fraction of its allowed request. Fractional fish represent average catches across many small fishing areas. Growth uses only fish left after the catch, stops at a capacity of 100, and is zero when no fish remain. Real ecosystems have more complex growth and uncertainty. Changing a rule starts a fresh lake.</p>
+</section>
+<section class="gt-panel" aria-labelledby="fish-math-title">
+  <div id="gt-math" class="gt-math-beginner"><h2 id="fish-math-title">Work It Out, Step by Step</h2>
+    <p>Use the starting rules: 80 fish, four boats each catching 6, 50% growth, and no monitoring.</p>
+    <ol class="gt-math-steps"><li>The boats catch \(4 \times 6 = 24\) fish altogether. The multiplication sign means four groups of six.</li><li>Subtract the catch: \(80-24=56\) fish remain.</li><li>Fifty percent means half. Half of 56 is 28 new fish.</li><li>Add the new fish to the survivors: \(56+28=84\). The lake ends larger than it started.</li><li>If each boat catches 20 instead, all 80 fish are removed. Half of zero is zero. There are no parents left to produce new fish.</li></ol>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[(80-24)\times 1.5=84.\]</div>
+    <p><strong>In words:</strong> take away this season’s catch, then multiply the remaining fish by 1.5 to include both the original fish and their 50% growth. <strong>Stock</strong> means the number of fish currently in the lake. <strong>Capacity</strong> means the largest stock this simplified lake can hold.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert"><summary>For experts: formal model and assumptions</summary><h3>How to Read the Symbols</h3>
+    <dl class="gt-symbol-key"><dt>\(S\), \(H\), \(g\), and \(K\)</dt><dd>\(S\) is the starting stock this season; \(H\) is total actual harvest; \(g\) is growth written as a decimal, such as 0.5 for 50%; \(K=100\) is capacity. A letter is a short name for one amount.</dd><dt>\(S_{\text{next}}\) and \(\min\)</dt><dd>The small word “next” labels next season’s stock. \(\min(a,b)\), read “the minimum of a and b,” means choose the smaller of the two amounts. A comma separates the choices, not a decimal.</dd></dl>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[S_{\text{next}}=\min\bigl(K,(S-H)(1+g)\bigr).\]</div>
+    <p><strong>In words:</strong> grow the surviving stock, but cap the result at 100. Harvest cannot exceed stock. When demand exceeds stock, multiply every allowed request by stock divided by total allowed requests. That gives all boats the same percentage of their request.</p>
+    <p>The enforcement rule removes a fixed fraction of each request above the quota; the app does not randomly inspect individual boats. Group earnings equal total harvest minus monitoring costs. Future fish are shown separately instead of being assigned a made-up money value. There is no claim that a chosen quota is optimal for a real fishery.</p>
+    <p>See the <a href="{{ '/math-guide/' | relative_url }}">math reading guide</a> for percentages, multiplication, and small labels.</p>
+  </details>
+</section>
+<section class="gt-panel" aria-labelledby="fish-transfer-title"><p class="gt-step">5. Transfer the Lesson</p><h2 id="fish-transfer-title">Sharing a Limited Resource</h2><p>A neighborhood draws water from the same underground supply. What would you need to know before setting a quota? How could residents help choose and monitor rules, and what would happen if the supply replenished much more slowly than expected?</p><p>Concept reference: <a href="https://www.nobelprize.org/prizes/economic-sciences/2009/ostrom/lecture/">Elinor Ostrom’s Nobel lecture on governing shared resources</a>. Local rules and monitoring can matter; this small lake is not a test of every possible institution.</p></section>

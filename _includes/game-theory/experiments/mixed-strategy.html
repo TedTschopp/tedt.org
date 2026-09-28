@@ -40,7 +40,7 @@
       <li><strong>Turn each count into a share.</strong> Rock has 6 out of 10 chances: \(6/10 = 0.6 = 60\%\). Paper and scissors each have \(2/10 = 0.2 = 20\%\). Percent means “out of 100,” so 60% is 60 chances out of 100.</li>
       <li><strong>Put the ticket back before the next draw.</strong> Mix the bag again each time. Every round starts with the same chances. This does not promise exactly six rocks in ten rounds, and it does not tell anyone what the next move will be.</li>
     </ol>
-    <div class="gt-table-wrap"><table class="gt-table"><caption>Your Score for Each Pair of Moves</caption><thead><tr><th scope="col">Your move</th><th scope="col">Opponent: rock</th><th scope="col">Opponent: paper</th><th scope="col">Opponent: scissors</th></tr></thead><tbody><tr><th scope="row">Rock</th><td>0</td><td>−1</td><td>+1</td></tr><tr><th scope="row">Paper</th><td>+1</td><td>0</td><td>−1</td></tr><tr><th scope="row">Scissors</th><td>−1</td><td>+1</td><td>0</td></tr></tbody></table></div>
+    <div class="gt-table-wrap" tabindex="0" role="region" aria-label="Scores for each pair of moves; scroll sideways if needed"><table class="gt-table"><caption>Your Score for Each Pair of Moves</caption><thead><tr><th scope="col">Your move</th><th scope="col">Opponent: rock</th><th scope="col">Opponent: paper</th><th scope="col">Opponent: scissors</th></tr></thead><tbody><tr><th scope="row">Rock</th><td>0</td><td>−1</td><td>+1</td></tr><tr><th scope="row">Paper</th><td>+1</td><td>0</td><td>−1</td></tr><tr><th scope="row">Scissors</th><td>−1</td><td>+1</td><td>0</td></tr></tbody></table></div>
     <p><strong>Now suppose the opponent always plays paper.</strong> Each rock ticket loses 1 point, each paper ticket earns 0, and each scissors ticket wins 1. Add the scores for all ten equally likely tickets, then divide by ten:</p>
     <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[\text{Average score} = \frac{6\times(-1)+2\times0+2\times1}{10}=\frac{-4}{10}=-0.4.\]</div>
     <p>The negative sign means a loss. The <strong>expected average</strong> is −0.4 points per round: the average the chances predict over many rounds. You still earn only −1, 0, or +1 in a single round. An actual set of rounds can finish above or below that average.</p>
@@ -91,7 +91,7 @@
   <p class="gt-caption" id="mixed-mixture"></p>
   <div class="gt-actions"><button class="gt-button" id="mixed-run" type="button">Compare both mixtures</button></div>
   <div class="gt-result" id="mixed-batch-result" aria-live="polite" aria-atomic="true">Run a comparison to see results from a set of simulated rounds.</div>
-  <div class="gt-table-wrap" id="mixed-batch-table" hidden>
+  <div class="gt-table-wrap" id="mixed-batch-table" hidden tabindex="0" role="region" aria-label="Simulated rounds against the pattern spotter; scroll sideways if needed">
     <table class="gt-table">
       <caption>Simulated Rounds Against the Pattern Spotter</caption>
       <thead><tr><th scope="col">Mixture</th><th scope="col">Wins</th><th scope="col">Draws</th><th scope="col">Losses</th><th scope="col">Your score</th><th scope="col">Opponent score</th><th scope="col">Score per round</th></tr></thead>
