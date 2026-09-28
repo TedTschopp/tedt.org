@@ -12,7 +12,7 @@ export default defineConfig({
   outputDir: 'test-results/inside-ai',
   use: { baseURL: process.env.PLAYWRIGHT_BASE_URL || 'http://127.0.0.1:4174', trace: 'retain-on-failure' },
   ...(external ? {} : { webServer: {
-    command: 'ruby -run -e httpd _site -p 4174 -b 127.0.0.1',
+    command: 'bundle exec ruby -run -e httpd _site -p 4174 -b 127.0.0.1',
     url: 'http://127.0.0.1:4174/inside-ai/', timeout: 30_000,
     reuseExistingServer: !process.env.CI,
   }}),
