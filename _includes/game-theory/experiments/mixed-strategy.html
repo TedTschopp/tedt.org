@@ -1,0 +1,109 @@
+<section class="gt-panel" aria-labelledby="mixed-predict-heading">
+  <p class="gt-step">1. Make a Prediction</p>
+  <h2 id="mixed-predict-heading">Can You Outsmart a Pattern Spotter?</h2>
+  <p>You know the rules: rock beats scissors, scissors beat paper, and paper beats rock. A win earns +1, a loss −1, and a draw 0. The opponent earns the opposite score.</p>
+  <div class="gt-field">
+    <label for="mixed-prediction">Which approach do you expect to work best over many rounds?</label>
+    <select id="mixed-prediction">
+      <option value="">Choose your prediction</option>
+      <option value="favorite">Favor my strongest move.</option>
+      <option value="cycle">Use rock, paper, scissors in a repeating cycle.</option>
+      <option value="random">Make a fresh random choice, with the same chance for each move.</option>
+    </select>
+  </div>
+  <p>The opponent only studies your <em>previous</em> moves. Its next move is fixed before you click. Try a favorite move, then a repeating cycle, and see what it learns.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="mixed-play-heading">
+  <p class="gt-step">2. Make a Consequential Choice</p>
+  <h2 id="mixed-play-heading">Make Your Next Move</h2>
+  <div class="gt-actions" role="group" aria-label="Choose your move">
+    <button class="gt-button" type="button" data-mixed-move="0">Rock</button>
+    <button class="gt-button" type="button" data-mixed-move="1">Paper</button>
+    <button class="gt-button" type="button" data-mixed-move="2">Scissors</button>
+  </div>
+  <div class="gt-result" id="mixed-result" aria-live="polite" aria-atomic="true">Make a prediction, then play at least six rounds to give the opponent some history.</div>
+  <div class="gt-metrics" id="mixed-metrics"></div>
+  <ol class="gt-history" id="mixed-history" aria-label="Recent rounds"></ol>
+  <p class="gt-note">The combined score is always zero. This is a contest over relative advantage; there is no extra shared value to create under these rules.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="mixed-math-heading">
+  <p class="gt-step">3. Reveal the Incentives</p>
+  <h2 id="mixed-math-heading">Being Balanced Is Different From Being Unpredictable</h2>
+  <p>A repeating rock–paper–scissors cycle uses each move equally often, but someone who spots the pattern knows what comes next. A <strong>mixed strategy</strong> chooses randomly each round. Giving each move the same chance on every new draw prevents the opponent from gaining an advantage by guessing your next move.</p>
+  <div id="gt-math" class="gt-math-beginner">
+    <h3>Work It Out, Step by Step</h3>
+    <p><strong>Example using the default weights:</strong> rock 6, paper 2, scissors 2. The examples below stay the same when you change the controls. A “weight” is just a number of chances.</p>
+    <ol>
+      <li><strong>Add the chances.</strong> \(6 + 2 + 2 = 10\). Imagine ten tickets in a bag: six say rock, two say paper, and two say scissors.</li>
+      <li><strong>Turn each count into a share.</strong> Rock has 6 out of 10 chances: \(6/10 = 0.6 = 60\%\). Paper and scissors each have \(2/10 = 0.2 = 20\%\). Percent means “out of 100,” so 60% is 60 chances out of 100.</li>
+      <li><strong>Put the ticket back before the next draw.</strong> Mix the bag again each time. Every round starts with the same chances. This does not promise exactly six rocks in ten rounds, and it does not tell anyone what the next move will be.</li>
+    </ol>
+    <div class="gt-table-wrap"><table class="gt-table"><caption>Your Score for Each Pair of Moves</caption><thead><tr><th scope="col">Your move</th><th scope="col">Opponent: rock</th><th scope="col">Opponent: paper</th><th scope="col">Opponent: scissors</th></tr></thead><tbody><tr><th scope="row">Rock</th><td>0</td><td>−1</td><td>+1</td></tr><tr><th scope="row">Paper</th><td>+1</td><td>0</td><td>−1</td></tr><tr><th scope="row">Scissors</th><td>−1</td><td>+1</td><td>0</td></tr></tbody></table></div>
+    <p><strong>Now suppose the opponent always plays paper.</strong> Each rock ticket loses 1 point, each paper ticket earns 0, and each scissors ticket wins 1. Add the scores for all ten equally likely tickets, then divide by ten:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[\text{Average score} = \frac{6\times(-1)+2\times0+2\times1}{10}=\frac{-4}{10}=-0.4.\]</div>
+    <p>The negative sign means a loss. The <strong>expected average</strong> is −0.4 points per round: the average the chances predict over many rounds. You still earn only −1, 0, or +1 in a single round. An actual set of rounds can finish above or below that average.</p>
+    <p><strong>What if the bag holds one ticket for each move?</strong> Against paper, one ticket loses, one draws, and one wins. The average is \((-1 + 0 + 1)/3 = 0\). The same works against rock or scissors. This is why fresh draws with equal chances protect your average score, even though you can still lose a short match.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert">
+    <summary>For experts: formal model and assumptions</summary>
+    <h3>How to Read the Symbols</h3>
+    <p>The notation below compresses the ticket-bag example into a few lines. You can read the plain-language translations without learning how to calculate with matrices. The <a href="{{ '/math-guide/' | relative_url }}">math reading guide</a> provides more examples.</p>
+    <dl class="gt-symbol-key">
+      <dt>A matrix is a table</dt>
+      <dd>\(A\) names the table of points. The large parentheses around its nine numbers make it a <strong>matrix</strong>: a rectangular table. Read it in the same order as the table above: rock, paper, scissors down the rows and across the columns. <a href="{{ '/math-guide/' | relative_url }}#tables-and-vectors">Read about matrices and vectors.</a></dd>
+      <dt>A vector is a list</dt>
+      <dd>\(x\) names your list of three chances, and \(y\) names the opponent’s list. Your chances are \(r\) for rock, \(p\) for paper, and \(s\) for scissors. The commas in \((r,p,s)\) separate those entries. Each chance is at least zero, and all three add to 1, meaning 100%.</dd>
+      <dt>The raised T changes a list’s direction</dt>
+      <dd>\(T\) here means “transpose,” or turn a row into a column or a column into a row. It is not a power. \(x=(r,p,s)^T\) writes your three chances as a column; \(x^T\) turns that column into a row for the calculation. <a href="{{ '/math-guide/' | relative_url }}#letters-and-labels">Read about raised labels.</a></dd>
+      <dt>The product x-transpose A y</dt>
+      <dd>\(x^TAy\), read “x transpose A y,” is a compact instruction: for each table cell, multiply your move’s chance by the opponent move’s chance and by the cell’s points; then add all nine results. It gives your expected points, the average those chances predict over many rounds. <a href="{{ '/math-guide/' | relative_url }}#probability">Read about expected values.</a></dd>
+      <dt>Min and max</dt>
+      <dd>\(\min\) means “smallest value,” and \(\max\) means “largest value.” \(\min_y\) says to check every allowed opponent mixture and take the lowest expected score for you. \(\max_x\) says to choose your own mixture to make that worst-case score as high as possible. The small \(x\) or \(y\) tells you whose mixture may change. Braces hold the values to compare: \(\min\{3,5\}=3\) says the smaller of 3 and 5 is 3. <a href="{{ '/math-guide/' | relative_url }}#min-max">Read about minimums and maximums.</a></dd>
+    </dl>
+    <h3>Payoffs and the Best Worst-Case Average</h3>
+    <p>This is a simultaneous, two-player, zero-sum game. Rows are the player’s moves and columns the opponent’s moves, both ordered rock, paper, scissors. The player’s payoff matrix is \(A\); the opponent receives its negative:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[A=\begin{pmatrix}0&amp;-1&amp;1\\1&amp;0&amp;-1\\-1&amp;1&amp;0\end{pmatrix}.\]</div>
+    <p>Let \(x=(r,p,s)^T\) be the player’s fixed mixture and \(y\) the opponent’s mixture. All components are nonnegative and each mixture sums to 1. Expected player payoff is \(x^TAy\). Against pure rock, paper, and scissors respectively, the player’s expectations are \(p-s\), \(s-r\), and \(r-p\).</p>
+    <p>For example, against an opponent who always plays rock, paper wins 1 and scissors loses 1. Your expected score is therefore \(p-s\): the chance of paper minus the chance of scissors. Your own rock earns 0, so it adds nothing. Here “pure” means choosing one move for sure; “nonnegative” means zero or greater.</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[\min_y x^TAy=\min\{p-s,\ s-r,\ r-p\},\qquad \max_x\min_y x^TAy=0.\]</div>
+    <p><strong>Read it aloud:</strong> “For your chosen mixture, the lowest average an opponent can force is the smallest of these three scores. Your best possible protection against that lowest average is zero.” For the starting chances 0.6, 0.2, and 0.2, the three scores are 0, −0.4, and 0.4. The minimum is −0.4. Giving each move a chance of \(1/3\), meaning one out of three, makes all three scores zero.</p>
+    <p>The minimum over all opponent mixtures equals the minimum over pure moves because payoff is linear in \(y\). Choosing \(x=(1/3,1/3,1/3)^T\) makes all three pure-response values zero. No mixture can guarantee a higher expectation: the opponent’s equal mixture makes every player move worth zero. This is the minimax guarantee for these payoffs; different payoffs can require unequal mixtures. For the default weights, \(x=(0.6,0.2,0.2)^T\), the worst-case expectation is −0.4 per round.</p>
+    <p>With ideal fresh uniform draws independent of the opponent’s current move, the conditional expected score is zero each round, even against an opponent that adapts to past play. This is an expectation, not a guarantee about the realized score of a finite sample. Equal overall move counts alone do not provide the guarantee: a deterministic cycle can be predicted.</p>
+    <p>The pattern spotter examines at most 12 previous moves. If it has observed at least two past moves following your latest move, it predicts the most common such follower. Otherwise it predicts your most common recent move. It breaks ties with the seeded random generator, then plays the move that beats its prediction. Before any history exists, it predicts uniformly.</p>
+    <p>This is a simple heuristic, not an optimal learner. It has no access to the button you are about to press, the mixture settings, or the current player draw. In a comparison, player sampling and opponent tie breaking use separate pseudorandom streams. The seed makes runs reproducible; it is not a source of secret randomness. Sampled comparison scores concern this specific learner, while the worst-case formula concerns an opponent that knows and best responds to the fixed mixture.</p>
+    <p>Concept reference: <a href="https://www.cs.cornell.edu/~rafael/networks-html/chapter1.html">Cornell’s <cite>A Course in Networks and Markets</cite>, Section 1.7 on mixed-strategy Nash equilibrium</a>. The pattern spotter is the specific learning rule described above.</p>
+  </details>
+</section>
+
+<section class="gt-panel" aria-labelledby="mixed-sandbox-heading">
+  <p class="gt-step">4. Change One Assumption</p>
+  <h2 id="mixed-sandbox-heading">Let a Random Mixture Play for You</h2>
+  <p>Weights set the chances of each move, like numbers of tickets in a bag. Weights of 6, 2, and 2 mean rock has 6 chances out of 10, while paper and scissors each have 2. Each round uses a fresh draw. Compare your mixture with one that gives each move an equal chance. Each plays a separate copy of the same pattern spotter, starting with no history.</p>
+  <div class="gt-controls gt-grid">
+    <div class="gt-field"><label for="mixed-rock">Rock weight</label><input id="mixed-rock" data-setting type="number" min="0" max="100" step="1" value="6"></div>
+    <div class="gt-field"><label for="mixed-paper">Paper weight</label><input id="mixed-paper" data-setting type="number" min="0" max="100" step="1" value="2"></div>
+    <div class="gt-field"><label for="mixed-scissors">Scissors weight</label><input id="mixed-scissors" data-setting type="number" min="0" max="100" step="1" value="2"></div>
+    <div class="gt-field"><label for="mixed-trials">Rounds per comparison</label><input id="mixed-trials" data-setting type="number" min="100" max="5000" step="100" value="1000"></div>
+    <div class="gt-field"><label for="mixed-seed">Random seed</label><input id="mixed-seed" data-setting type="number" min="0" max="2147483647" step="1" value="42"><small>Controls sampled moves and the opponent’s tie breaking. Change it to compare another run.</small></div>
+  </div>
+  <p class="gt-caption" id="mixed-mixture"></p>
+  <div class="gt-actions"><button class="gt-button" id="mixed-run" type="button">Compare both mixtures</button></div>
+  <div class="gt-result" id="mixed-batch-result" aria-live="polite" aria-atomic="true">Run a comparison to see results from a set of simulated rounds.</div>
+  <div class="gt-table-wrap" id="mixed-batch-table" hidden>
+    <table class="gt-table">
+      <caption>Simulated Rounds Against the Pattern Spotter</caption>
+      <thead><tr><th scope="col">Mixture</th><th scope="col">Wins</th><th scope="col">Draws</th><th scope="col">Losses</th><th scope="col">Your score</th><th scope="col">Opponent score</th><th scope="col">Score per round</th></tr></thead>
+      <tbody id="mixed-batch-rows"></tbody>
+    </table>
+  </div>
+  <p class="gt-note">Either mixture can do better in a particular run by chance. Fresh draws with equal chances give an expected average of zero against an opponent that cannot see the current draw. That does not promise a winning session. Changing a setting restarts manual play. Share links preserve settings, not move history.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="mixed-transfer-heading">
+  <p class="gt-step">5. Transfer the Lesson</p>
+  <h2 id="mixed-transfer-heading">Should a Patrol Split Its Time Equally?</h2>
+  <p>A security team must choose between guarding two entrances. One entrance gives an intruder access to far more valuable equipment. Should the team patrol each entrance half the time because randomness worked here?</p>
+  <details><summary>Compare your reasoning</summary><p>Randomness can make a patrol harder to exploit, but the useful mixture depends on losses, detection chances, and the intruder’s alternatives. The equal mixture here follows from the symmetry of rock–paper–scissors. Change the payoffs and you must solve the new game rather than copy its probabilities.</p></details>
+</section>

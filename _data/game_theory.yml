@@ -1,0 +1,74 @@
+experiments:
+  - slug: trust-machine
+    image: /img/game-theory/trust-machine.webp
+    image-alt: "Blue and orange playing pieces stand beside two matching halves of a shared bridge."
+    number: "01"
+    title: The Trust Machine
+    question: When does it pay to cooperate?
+    concept: Repeated Games
+    description: Cooperate or defect, meet your opponent again, and discover what a little forgiveness changes.
+    next: equilibrium-explorer
+  - slug: equilibrium-explorer
+    image: /img/game-theory/equilibrium-explorer.webp
+    image-alt: "Two playing pieces sit on interlocking circular tracks with gates blocking the shared path."
+    number: "02"
+    title: Why Are We Stuck?
+    question: Can everyone be unhappy and still stay put?
+    concept: Nash Equilibrium
+    description: Play both sides of a two-person game. Change the payoffs and find out who has a reason to move.
+    next: coordination-trap
+  - slug: coordination-trap
+    image: /img/game-theory/coordination-trap.webp
+    image-alt: "Eight playing pieces wait on separate platforms around a shared center, with gaps between their bridges."
+    number: "03"
+    title: Nobody Wants to Go First
+    question: What would make your team take the first step?
+    concept: Coordination
+    description: Help eight teams choose a shared technology. Test expectations, pilot support, and commitments.
+    next: mixed-strategy
+  - slug: mixed-strategy
+    image: /img/game-theory/mixed-strategy.webp
+    image-alt: "A rock, a sheet of paper, and scissors sit on a blue tray beside colored counters."
+    number: "04"
+    title: Can You Be Unpredictable?
+    question: Is your next move easier to guess than you think?
+    concept: Mixed Strategies
+    description: Face a pattern-seeking opponent, then build a random strategy and compare it with an even mix.
+    next: credible-threat
+  - slug: credible-threat
+    image: /img/game-theory/credible-threat.webp
+    image-alt: "A blue gate with a brass bolt blocks one branch of a wooden path beside two playing pieces."
+    number: "05"
+    title: Would You Actually Do It?
+    question: Will a threat survive the moment of decision?
+    concept: Credible Commitments
+    description: Enter a market, make a threat, and work backward through the choices. See what a deposit changes.
+    next: traffic-paradox
+  - slug: traffic-paradox
+    image: /img/game-theory/traffic-paradox.webp
+    image-alt: "Miniature cars crowd a central shortcut while the longer outer roads have fewer cars."
+    number: "06"
+    title: The Shortcut That Made Everyone Late
+    question: Could an extra road make your commute worse?
+    concept: Braess’s Paradox
+    description: Open a shortcut, let drivers choose their routes, and compare the result with a coordinated plan.
+    next: trust-machine
+planned:
+  - title: Cooperation, Negotiation, and Information
+    topics:
+      - The Public Goods Lab
+      - The Last Fish
+      - The Bargaining Room
+      - The Auction Lab
+      - The Signaling Game
+      - The Expectations Game
+      - The Common Knowledge Lab
+      - The Evolution Arena
+  - title: Designing the Rules
+    topics:
+      - The Correlation Experiment
+      - Stable Matching
+      - The Coalition Calculator
+      - The Voting Lab
+      - The Incentive Designer
+      - The Mechanism Design Studio

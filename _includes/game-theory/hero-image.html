@@ -1,0 +1,12 @@
+{%- comment -%}
+Shared artwork for the playground, experiments, and math guide.
+Image dimensions and responsive variants come from the site's image manifest.
+Use lcp=true for the page's lead image; catalog images remain lazy loaded.
+{%- endcomment -%}
+{%- assign gt_image_variant = include.variant | default: 'page' -%}
+{%- assign gt_image_sizes = include.sizes | default: '(min-width: 1240px) 1176px, (min-width: 761px) calc(100vw - 64px), calc(100vw - 32px)' -%}
+{%- if include.src -%}
+<figure class="gt-hero-image gt-hero-image--{{ gt_image_variant | escape }}">
+  {% include utility/responsive-image.html src=include.src alt=include.alt class="gt-artwork" sizes=gt_image_sizes lcp=include.lcp %}
+</figure>
+{%- endif -%}

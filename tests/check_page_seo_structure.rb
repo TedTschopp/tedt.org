@@ -59,7 +59,8 @@ locations.each do |location|
 
   html = Nokogiri::HTML(File.read(rendered_path))
 
-  title_nodes = html.css('title')
+  # SVG titles name graphics; they are not the page's document title.
+  title_nodes = html.css('title').reject { |node| node.ancestors.any? { |ancestor| ancestor.name == 'svg' } }
   head_title_nodes = html.css('head > title')
   nonblank_titles = title_nodes.select { |node| nonblank_text?(node) }
   if title_nodes.length != 1 || head_title_nodes.length != 1 || nonblank_titles.length != 1

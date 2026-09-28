@@ -318,7 +318,48 @@ To run the site locally:
 3. Run `bundle install` to install dependencies.
 4. Start the server with `bundle exec jekyll serve`.
 
-### Testing
+### Game Theory Playground
+
+The collection lives at `/game-theory/`, with six individual experiment pages.
+The catalog and learning sequence come from `_data/game_theory.yml`; the
+`game-theory` layout reuses the site's navigation, metadata, theme controls,
+and footer. Experiment templates live in `_includes/game-theory/experiments/`,
+browser modules in `js/game-theory/`, and scoped styles in
+`_sass/components/_game-theory.scss`. No extra plugins or runtime libraries
+are required for the simulations. Experiment pages use the site's existing
+`math: true` flag and `assets/mathjax.html` include for formal equations.
+
+Math explanations have two levels: visible `.gt-math-beginner` walkthroughs
+using pre-algebra, and expandable `.gt-expert` sections with formal models,
+defined symbols, and assumptions. Mark fixed worked examples clearly; keep
+live values updated by JavaScript as ordinary text outside static equations.
+Wrap display equations in `.gt-equation` for horizontal scrolling on small screens.
+The site-wide `/math-guide/` reference gives spoken readings, plain-language
+meanings, and small examples of the notation. Link it from new mathematical
+content. Explain advanced symbols where they first appear, including local
+variable meanings, rather than requiring readers to leave the page or use a
+tooltip. Use `.gt-symbol-key` definition lists and a sentence translating each
+complex equation into an instruction. Keep advanced material optional.
+In symbol definitions, separate notation from its spoken wording with an
+explicit `In words:` label on its own line (`.gt-symbol-reading`). Avoid dash
+separators, which readers can mistake for mathematical operators.
+
+The landing page, six experiments, and math guide have coordinated hero artwork
+in `img/game-theory/`. The shared `game-theory/hero-image.html` include uses the
+existing responsive image manifest and lazy-loads catalog thumbnails. Preserve
+each image's natural proportions and keep text and equations in the page content.
+Art direction and generation prompts are documented in
+[`docs/artwork/game-theory-heroes.md`](docs/artwork/game-theory-heroes.md).
+
+Each experiment exports its model separately from its browser controls.
+Run the model checks with `node --test tests/game-theory/*.test.mjs` and the
+browser checks with `npx playwright test tests/a11y/game-theory.spec.ts` after
+`bundle exec jekyll build`. Settings links contain validated control values
+and the random seed, not session history. Keep randomness seeded, mathematical
+results distinct from simulations, and model assumptions visible when adding
+experiments. The remaining fourteen concepts are explicitly marked as planned.
+
+### Testing the Site
 
 - Validate HTML, CSS, and JavaScript locally before pushing changes.
 - Use Lighthouse for performance and accessibility testing.
@@ -396,6 +437,7 @@ Certain presentation and asset behaviors can be controlled per-post via boolean 
 | Flag     | Type    | Default | Effect                                                                        | When to Use                                                          |
 |----------|---------|---------|-------------------------------------------------------------------------------|----------------------------------------------------------------------|
 | `no_toc` | boolean | `false` | Suppresses the right-hand Table of Contents card (`#table-of-contents-card`). | Very short posts (≤1 heading) or visual essays where TOC adds noise. |
+| `math` | boolean | `false` | Loads the shared MathJax v3 SVG renderer. The `mathjax` flag is also supported. | Pages with inline or displayed mathematical expressions. |
 | `mermaid` | boolean | `false` | Loads Mermaid diagram support and renders fenced code blocks beginning with ` ```mermaid ` or elements carrying a `data-mermaid` attribute. | Posts containing sequence, flow, graph, or state diagrams. |
 
 Example:
@@ -412,7 +454,8 @@ Notes:
 
 - `mermaid` must be explicitly set to render diagrams; otherwise the loader include is skipped (performance win on diagram-free pages).
 - `no_toc` accepts YAML boolean (`true`) or string `'true'`; layout logic treats either as enabled.
-- Future flags (candidate): `charts`, `diagram-libs`, `math` (currently always included) may adopt the same pattern.
+- `math: true` loads the existing MathJax include once in supported layouts, including the playground. Use `\(...\)` for inline math and `\[...\]` for display math; put expressions outside code blocks.
+- Future flags (candidate): `charts`, `diagram-libs` may adopt the same pattern.
 
 See ADR 0010 and ADR 0011 in `docs/adr/` for the rationale and architectural implications of these flags.
 

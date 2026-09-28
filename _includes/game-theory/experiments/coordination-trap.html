@@ -1,0 +1,121 @@
+<section class="gt-panel" aria-labelledby="coord-predict-heading">
+  <p class="gt-step">1. Make a Prediction</p>
+  <h2 id="coord-predict-heading">Everyone Likes the Destination. Who Moves First?</h2>
+  <p>Eight teams are considering a shared tool. It becomes more useful as more teams use it, but switching takes effort. We measure the benefits and costs in points. You lead Team 1. Waiting earns zero points.</p>
+  <div class="gt-field">
+    <label for="coord-prediction">If your team adopts while everyone else waits, what happens next?</label>
+    <select id="coord-prediction">
+      <option value="">Choose your prediction</option>
+      <option value="spread">Adoption spreads to the other teams.</option>
+      <option value="stall">The other teams keep waiting.</option>
+      <option value="depends">It depends on their benefits, costs, and expectations.</option>
+    </select>
+  </div>
+  <p class="gt-note">Start with the defaults. Then change one assumption and try again. These are planning reviews of one adoption decision, so costs and benefits are evaluated for each proposed outcome, not accumulated over time.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="coord-choice-heading">
+  <p class="gt-step">2. Make a Consequential Choice</p>
+  <h2 id="coord-choice-heading">Commit Your Team’s Next Plan</h2>
+  <p>Choose your team’s plan. Every other team updates at the same time, using the previous plan and its expectations. Your choice stays in place until the next review.</p>
+  <div class="gt-actions">
+    <button class="gt-button" type="button" data-coord-choice="adopt">My team adopts</button>
+    <button class="gt-button gt-button-secondary" type="button" data-coord-choice="wait">My team waits</button>
+    <button class="gt-button gt-button-secondary" type="button" id="coord-step">Let all teams reconsider</button>
+  </div>
+  <div class="gt-result" aria-live="polite" aria-atomic="true" id="coord-result">Make a prediction, then choose a plan.</div>
+  <div class="gt-metrics" id="coord-metrics"></div>
+  <div class="gt-table-wrap">
+    <table class="gt-table">
+      <caption>Current Plans and Incentives</caption>
+      <thead><tr><th scope="col">Team</th><th scope="col">Plan</th><th scope="col">Pilot support</th><th scope="col">Commitment</th><th scope="col">Net value</th></tr></thead>
+      <tbody id="coord-teams"></tbody>
+    </table>
+  </div>
+  <p class="gt-caption">Net value means benefits minus costs, plus any support. It uses the plans in this table. A sponsor pays for pilot support, so “combined value after funding” subtracts the sponsor’s payment from the teams’ total.</p>
+  <ol class="gt-history" id="coord-history" aria-label="Recent planning reviews"></ol>
+</section>
+
+<section class="gt-panel" aria-labelledby="coord-incentives-heading">
+  <p class="gt-step">3. Reveal the Incentives</p>
+  <h2 id="coord-incentives-heading">A Good Shared Outcome Can Still Be Hard to Reach</h2>
+  <p>With the starting settings, switching alone loses 6 points, while switching together earns every team 4 points. Both “everyone waits” and “everyone switches” can hold steady: one team changing its mind alone would do worse. Game theorists call each of these a <strong>Nash equilibrium</strong>. Getting to the better one requires enough teams to expect others to join.</p>
+  <div id="gt-math" class="gt-math-beginner">
+    <h3>Work It Out, Step by Step</h3>
+    <p><strong>Example using the default settings:</strong> the full benefit is 10 points, switching costs 6 points, and support is 0. These examples stay the same when you change the controls.</p>
+    <ol>
+      <li><strong>Count the other teams.</strong> Your team has seven peers: the seven teams besides yours. If none switch, your share is \(0/7 = 0\). If all seven switch, it is \(7/7 = 1\), meaning the whole group.</li>
+      <li><strong>Find the benefit, then subtract the cost.</strong> Switching alone gives \(10 \times 0 - 6 = -6\) points. The minus sign means a loss of 6 points. If all seven peers switch, you get \(10 \times 1 - 6 = 4\) points.</li>
+      <li><strong>Try a group that is partway there.</strong> Four of seven peers give \(10 \times (4/7) - 6 \approx -0.29\) points. Five give \(10 \times (5/7) - 6 \approx 1.14\) points. The \(\approx\) sign means “about.” Five peers are enough to make switching better than waiting; four are not.</li>
+    </ol>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[\text{Your points} = 10 \times \frac{\text{peers who switch}}{7} - 6\]</div>
+    <p><strong>Why five?</strong> You need more than \(6/10 = 60\%\) of your peers to switch to earn more than zero. A percent means “out of 100.” Four out of seven is about 57%; five out of seven is about 71%.</p>
+    <p><strong>What can support change?</strong> In a separate example, give a pilot team 3 support points. If four peers switch, its result rises from about −0.29 to \(-0.29 + 3 = 2.71\) points. That helps the team, but the sponsor pays those 3 points. Moving points from the sponsor to a team does not create extra points for everyone together.</p>
+    <p>Teams decide from the <em>previous</em> plans, then reveal their new plans together. A team can expect enough partners to join and still be disappointed by the result.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert">
+    <summary>For experts: formal model and assumptions</summary>
+    <h3>How to Read the Symbols</h3>
+    <p>The letters below are short names for the teams, their choices, and their points. You can read each equation as a sentence. The <a href="{{ '/math-guide/' | relative_url }}">math reading guide</a> gives more examples.</p>
+    <dl class="gt-symbol-key">
+      <dt>Team labels: \(i\), \(j\), and the small numbers below a letter</dt>
+      <dd>Both \(i\) and \(j\) stand for a team number, from 1 to 8. A small label below a letter is a <a href="{{ '/math-guide/' | relative_url }}#letters-and-labels">subscript</a>: \(a_3\), read “a sub three,” means Team 3’s choice. It does not mean “a times three.”</dd>
+      <dt>Choices: \(a_i\in\{0,1\}\) and \(z_i\)</dt>
+      <dd>Read \(\in\) as “is one of.” The braces list allowed values: 0 means wait and 1 means adopt. The separate label \(z_i\) is 1 if that team is a pilot and 0 if it is not. Multiplying by 0 removes a term; multiplying by 1 keeps it.</dd>
+      <dt>Points and shares: \(B\), \(C\), \(S\), \(q_i\), and \(u_i(a)\)</dt>
+      <dd>\(B\) is the full benefit, \(C\) the switching cost, and \(S\) the support per pilot adopter, all in points. \(q_i\) is the fraction of Team \(i\)’s seven peers who adopt. \(u_i(a)\), read “u sub i of a,” is that team’s resulting points. The \(a\) in parentheses means “using everyone’s current choices,” so those parentheses <a href="{{ '/math-guide/' | relative_url }}#functions">show the input to a rule</a>.</dd>
+      <dt>Adding a group: \(\sum_{j\ne i}a_j\)</dt>
+      <dd>The large \(\sum\), called “sigma,” means <a href="{{ '/math-guide/' | relative_url }}#sums">add the listed values</a>. The label \(j\ne i\) says “use each team j except team i”; \(\ne\) means “not equal to.” Adding the seven peers’ 0s and 1s counts the adopters. The shorter \(\sum_i\) later on means add across all eight teams.</dd>
+      <dt>Multiplication and comparisons</dt>
+      <dd>Letters next to each other mean multiply: \(Bq_i\) is \(B\times q_i\), and \(z_iS\) is \(z_i\times S\). A fraction bar means divide. The sign \(&gt;\) means “is greater than”; equality means the two choices tie. See <a href="{{ '/math-guide/' | relative_url }}#operations">operations</a> and <a href="{{ '/math-guide/' | relative_url }}#comparisons">comparisons</a>.</dd>
+    </dl>
+    <p>There are eight teams. The three designated pilot teams have \(z_i=1\); the other teams have \(z_i=0\). Your team is not a pilot. Utility means the points a team gets. These formulas calculate actual peer adoption and utility:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[q_i=\frac{1}{7}\sum_{j\ne i}a_j,\qquad u_i(a)=a_i(Bq_i-C+z_iS).\]</div>
+    <p><strong>Read it aloud:</strong> “Count the other adopters and divide by seven. Then multiply the full benefit by that share, subtract the cost, and add any pilot support. A team that waits gets zero.” For a nonpilot with five adopting peers, this is \(10\times(5/7)-6\), about 1.14 points.</p>
+    <p>Waiting earns zero. For \(B&gt;0\), adoption is strictly preferable when \(q_i&gt;(C-z_iS)/B\), with indifference at equality. With default values and no support, the smallest profitable number of adopting peers is five. At the defaults, both all-wait and all-adopt are strict Nash equilibria of the actual payoff game.</p>
+    <p>That comparison says: “If the full benefit is above zero, the peer share must be greater than the cost left after support, divided by the full benefit.” With no support, that share must exceed \(6/10\), or 60%.</p>
+    <h3>Reading the Forecast and Update</h3>
+    <dl class="gt-symbol-key">
+      <dt>Review labels: \(t\), \(t+1\), and \(q_i^t\)</dt>
+      <dd>\(t\) is the current review number; \(t+1\) is the next review. In this formula, the raised \(t\) in \(q_i^t\) labels the review. It is <em>not</em> a power: read it as “Team i’s peer share at review t.”</dd>
+      <dt>Estimates: \(\widehat q_i^{\,t}\) and \(\widehat v_i^{\,t}\)</dt>
+      <dd>The little roof, called a “hat,” means an estimate. \(\widehat q_i^{\,t}\) is the share the team expects; \(\widehat v_i^{\,t}\) is the points it expects from adopting. The control \(e\) changes the expected share: \(e/100\) turns 20 percentage points into 0.20.</dd>
+      <dt>Bounds: \(\min\) and \(\max\)</dt>
+      <dd><a href="{{ '/math-guide/' | relative_url }}#min-max">Minimum and maximum</a> mean “pick the smallest” and “pick the largest” of the listed numbers. Read the inner brackets first. Here they keep the estimate between 0 and 1: a share cannot be below none or above everyone.</dd>
+    </dl>
+    <p>For review \(t+1\), every team forecasts from the same previous set of choices. The control \(e\) adds an expectation shift in percentage points:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[\widehat q_i^{\,t}=\max\!\left(0,\min\!\left(1,q_i^t+\frac{e}{100}\right)\right),\qquad \widehat v_i^{\,t}=B\widehat q_i^{\,t}-C+z_iS.\]</div>
+    <p><strong>Read it aloud:</strong> “Add the expectation change to the observed share, keeping the answer between zero and one. Use that estimated share to work out the points from adopting.” For example, 40% plus 20 percentage points gives an expected 60%; 90% plus 20 is capped at 100%.</p>
+    <p>The update adopts if \(\widehat v_i^{\,t}&gt;0\), waits if it is negative, and retains the previous action on a tie. Updates are simultaneous. Assigned commitments force adoption in reviews 1–3. A user choice overrides Team 1’s update for that review; the reconsider button applies the same update rule to Team 1 as to the other teams.</p>
+    <h3>Reading the Group Total</h3>
+    <p>Capital \(V\) means a total value in points. The words below it are labels: \(V_{\text{teams}}\) is the teams’ total, and \(V_{\text{after funding}}\) includes the sponsor’s cost. Each \(\sum_i\) adds across all eight teams.</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[V_{\text{teams}}=\sum_i u_i(a),\qquad V_{\text{after funding}}=\sum_i u_i(a)-S\sum_i z_i a_i.\]</div>
+    <p><strong>Read it aloud:</strong> “Add all the teams’ points. For the total after funding, subtract the support paid to pilot teams that actually adopt.” The product \(z_i a_i\) is 1 only when a team is both a pilot and an adopter. If two pilots adopt with 3 support points each, subtract \(3\times2=6\) points for the sponsor.</p>
+    <p>Support is a transfer. Its direct contribution cancels from value after funding, although changed actions can change that value. Neither aggregate includes administrative costs, unmodeled benefits, or distributional preferences.</p>
+    <p>This is a complete network with identical benefits and costs. A seeded assignment sets pilot, initial-adopter, and committed teams; subsequent reviews are deterministic given the settings and user choices. Reviews revise plans rather than accumulate payments. Commitments are forced plans, not modeled contracts. Forecasts can be wrong, and simultaneous updates can oscillate. A fixed point with distorted expectations need not be a Nash equilibrium of the actual payoff game.</p>
+    <p>Concept reference: <a href="https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch06.pdf">Easley and Kleinberg, <cite>Networks, Crowds, and Markets</cite>, Section 6.5 on coordination games</a>. The eight-team planning model and its support rules are defined here.</p>
+  </details>
+</section>
+
+<section class="gt-panel" aria-labelledby="coord-sandbox-heading">
+  <p class="gt-step">4. Change One Assumption</p>
+  <h2 id="coord-sandbox-heading">Can You Make Adoption Worthwhile?</h2>
+  <p>Try five committed teams with the default costs. Step through four reviews to see what happens after their commitments end. Then reset and try a smaller pilot or optimistic expectations.</p>
+  <div class="gt-controls gt-grid">
+    <div class="gt-field"><label for="coord-benefit">Benefit when all seven peers adopt</label><input id="coord-benefit" data-setting type="number" min="0" max="30" step="1" value="10"></div>
+    <div class="gt-field"><label for="coord-cost">Switching cost per adopting team</label><input id="coord-cost" data-setting type="number" min="0" max="30" step="1" value="6"></div>
+    <div class="gt-field"><label for="coord-support">Support for each of three pilot teams</label><input id="coord-support" data-setting type="number" min="0" max="30" step="1" value="0"></div>
+    <div class="gt-field"><label for="coord-expectation">Expected extra adoption (percentage points)</label><input id="coord-expectation" data-setting type="number" min="-100" max="100" step="5" value="0"><small>For example, +20 turns an observed 40% into an expected 60%. A negative number lowers expectations. The result stays between 0% and 100%.</small></div>
+    <div class="gt-field"><label for="coord-initial">Other teams initially planning to adopt</label><input id="coord-initial" data-setting type="number" min="0" max="7" step="1" value="0"></div>
+    <div class="gt-field"><label for="coord-commitments">Other teams committed for three reviews</label><input id="coord-commitments" data-setting type="number" min="0" max="7" step="1" value="0"><small>These teams also start with an adoption plan. Commitments expire before review four.</small></div>
+    <div class="gt-field"><label for="coord-seed">Random seed for assigning pilot teams</label><input id="coord-seed" data-setting type="number" min="0" max="2147483647" step="1" value="42"><small>The seed sets the order used to assign pilot, initial-adopter, and committed teams. Team 1 is always yours.</small></div>
+  </div>
+  <p class="gt-note">Changing a setting starts a new scenario. Share links preserve these settings; they do not preserve your choices or review history.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="coord-transfer-heading">
+  <p class="gt-step">5. Transfer the Lesson</p>
+  <h2 id="coord-transfer-heading">Will an Announcement Be Enough?</h2>
+  <p>Six departments prefer a common data standard, but migration pays off only if most join. Leadership announces that everyone should switch. Is the coordination problem solved?</p>
+  <details><summary>Compare your reasoning</summary><p>An announcement may change expectations, but an aspiration does not guarantee that enough departments can or will migrate. Ask which commitments are credible, which teams bear the first costs, and whether support changes their incentives. Even unanimous preference for the final outcome does not remove the risk of moving alone.</p></details>
+</section>

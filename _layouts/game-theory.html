@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include utility/calculate-variables.html %}
+  {% include seo/indieauth-webmentions-metadata.html %}
+  {% include seo/meta-data-seo.html %}
+  {% include pwa/pwa-header-includes.html %}
+  {% include feeds/feeds.html %}
+  {% include assets/all-css-includes.html %}
+  <link rel="stylesheet" href="{{ '/css/game-theory.css' | relative_url }}">
+  {% include assets/scripts.html %}
+  {% capture __math_flag %}{{ page.math | default: '' }}{% endcapture %}
+  {% capture __mathjax_flag %}{{ page.mathjax | default: '' }}{% endcapture %}
+  {% assign __math_flag = __math_flag | strip | downcase %}
+  {% assign __mathjax_flag = __mathjax_flag | strip | downcase %}
+  {% if page.math == true or __math_flag == 'true' or __math_flag == '1' or page.mathjax == true or __mathjax_flag == 'true' or __mathjax_flag == '1' %}
+    {% include assets/mathjax.html %}
+  {% endif %}
+</head>
+<body class="gt-page">
+  <a class="gt-skip" href="#gt-main">Skip to the main content</a>
+  {% include layout/top-nav-bar.html %}
+  <main id="gt-main" class="gt-shell" tabindex="-1">
+    {% if page.experiment %}
+      {% assign current = site.data.game_theory.experiments | where: 'slug', page.experiment | first %}
+      <nav class="gt-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/game-theory/' | relative_url }}">Game Theory Playground</a><span aria-hidden="true"> / </span><span>{{ current.concept }}</span></nav>
+      <header class="gt-heading">
+        <p class="gt-eyebrow">Experiment {{ current.number }} <span aria-hidden="true">·</span> {{ current.concept }}</p>
+        <h1>{{ page.title }}</h1>
+        <p class="gt-lead">{{ page.description }}</p>
+        <p class="gt-meta">5–10 minutes to explore <span aria-hidden="true">·</span> Prototype <span aria-hidden="true">·</span> Updated <time datetime="2026-09-27">Sept. 27, 2026</time></p>
+      </header>
+      {% include game-theory/hero-image.html src=page.image alt=page.image-alt variant="page" lcp=true %}
+      <div class="gt-toolbar" role="group" aria-label="Experiment controls">
+        <button id="gt-reset" class="gt-button gt-button-secondary" type="button" disabled>Restart this scenario</button>
+        <button id="gt-share" class="gt-button gt-button-secondary" type="button" disabled>Share these settings</button>
+        <a href="#gt-assumptions">About these models</a>
+        <a href="#gt-math">Math step by step</a>
+        <a href="#gt-expert">For experts</a>
+        <a href="{{ '/math-guide/' | relative_url }}">Math symbol guide</a>
+      </div>
+      <p id="gt-status" class="gt-note" role="status"></p>
+      <div id="gt-share-output" class="gt-field" hidden><label for="gt-share-url">Scenario link (settings only)</label><input id="gt-share-url" type="url" readonly></div>
+      <p id="gt-loading" class="gt-note">Loading the interactive experiment…</p>
+      <p id="gt-math-help" class="gt-note">Start with “Work It Out, Step by Step” below. The optional expert section explains its symbols as you go. For more examples, use the <a href="{{ '/math-guide/' | relative_url }}">plain-language math guide</a>.</p>
+      <noscript><p class="gt-result">Turn on JavaScript to play. You can still read the rules, mathematics, and explanations below.</p></noscript>
+      <div id="gt-experiment" data-experiment="{{ page.experiment }}">{{ content }}</div>
+      <section class="gt-model-note" id="gt-assumptions" aria-labelledby="gt-model-title">
+        <h2 id="gt-model-title">A Model Is a Place to Start</h2>
+        <p>These small models make the incentives visible. Their results follow from their stated rules; they are not forecasts of how every person or organization behaves. A simulated strategy is a rule, not a personality.</p>
+        <p>Scenario links save the controls and random seed. To reproduce an interactive run, make the same choices in the same order. Changing a setting restarts the experiment.</p>
+      </section>
+      <nav class="gt-next" aria-label="More experiments">
+        <a href="{{ '/game-theory/' | relative_url }}">← All six experiments</a>
+        {% assign next_experiment = site.data.game_theory.experiments | where: 'slug', current.next | first %}
+        <a href="{{ '/game-theory/' | append: next_experiment.slug | append: '/' | relative_url }}">Try {{ next_experiment.title }} →</a>
+      </nav>
+      <script type="module" src="{{ '/js/game-theory/playground.mjs' | relative_url }}"></script>
+    {% else %}
+      {{ content }}
+    {% endif %}
+  </main>
+  {% include layout/footer.html %}
+  {% include assets/js-bottom-of-body.html %}
+</body>
+</html>

@@ -1,0 +1,65 @@
+---
+layout: game-theory
+date: 2026-09-27
+last_modified_at: 2026-09-27
+title: Game Theory Playground
+description: Six interactive experiments in cooperation, coordination, strategy, and the surprising consequences of sensible choices.
+permalink: /game-theory/
+image: /img/game-theory/playground.webp
+image-alt: "A wooden game board with branching paths, a bridge, and colorful playing pieces."
+image_width: 1672
+image_height: 941
+---
+<header class="gt-hero">
+  <div>
+    <p class="gt-eyebrow">Ted’s Public Workbench <span aria-hidden="true">/</span> Interactive Experiments</p>
+    <h1>Game Theory<br>Playground</h1>
+    <p class="gt-lead">Your best move depends on someone else.<br>What happens next?</p>
+    <p class="gt-intro">Make a choice. See what it sets in motion. Then change the rules and try again. Six small experiments explore why we cooperate, get stuck, make threats, and sometimes build the wrong road.</p>
+    <div class="gt-actions"><a class="gt-button" href="{{ '/game-theory/trust-machine/' | relative_url }}">Start with The Trust Machine <span aria-hidden="true">→</span></a><a href="#experiments">Explore all six</a></div>
+    <p class="gt-meta">No sign-up <span aria-hidden="true">·</span> Runs in your browser <span aria-hidden="true">·</span> 5–10 minutes per experiment</p>
+  </div>
+  {% include game-theory/hero-image.html src=page.image alt=page.image-alt variant="hub" lcp=true sizes="(min-width: 1240px) 509px, (min-width: 1001px) calc(45.455vw - 54.546px), (min-width: 761px) calc(45.455vw - 43.637px), calc(100vw - 32px)" %}
+</header>
+<section class="gt-learning-path" aria-label="How to explore">
+  <div><span class="gt-step">01</span><h2>Predict</h2><p>What do you expect?</p></div>
+  <div><span class="gt-step">02</span><h2>Choose</h2><p>Make a move that matters.</p></div>
+  <div><span class="gt-step">03</span><h2>Discover</h2><p>Follow the incentives.</p></div>
+  <div><span class="gt-step">04</span><h2>Change</h2><p>Adjust one assumption.</p></div>
+  <div><span class="gt-step">05</span><h2>Connect</h2><p>Try the idea elsewhere.</p></div>
+</section>
+<aside class="gt-hero-example gt-intro-example" aria-labelledby="gt-example-title">
+    <p class="gt-eyebrow">A Small Dilemma</p>
+    <h2 id="gt-example-title">You Both Have a Choice</h2>
+    <p>Cooperate, or look after yourself?</p>
+    <div class="gt-table-wrap"><table class="gt-table gt-preview-table"><caption>Points: you / your partner</caption><thead><tr><th scope="col">Your choice</th><th scope="col">They cooperate</th><th scope="col">They defect</th></tr></thead><tbody><tr><th scope="row">Cooperate</th><td><strong>3 / 3</strong><span>Everyone gains</span></td><td><strong>0 / 5</strong><span>You lose out</span></td></tr><tr><th scope="row">Defect</th><td><strong>5 / 0</strong><span>You get more</span></td><td><strong>1 / 1</strong><span>Both get less</span></td></tr></tbody></table></div>
+    <p class="gt-caption">Now imagine you’ll meet again tomorrow.</p>
+    <a href="{{ '/game-theory/trust-machine/' | relative_url }}">Play out the consequences →</a>
+  </aside>
+<aside class="gt-guide-invitation" aria-labelledby="gt-guide-title">
+  <h2 id="gt-guide-title">An Unfamiliar Symbol?</h2>
+  <p>The <a href="{{ '/math-guide/' | relative_url }}">Math Symbols, in Plain English guide</a> explains how to read each symbol, what it means, and how to try it with small numbers. Start with pre-algebra and look up the advanced ideas only when you need them.</p>
+</aside>
+<section id="experiments" aria-labelledby="gt-experiments-title">
+  <div class="gt-section-heading"><div><p class="gt-eyebrow">The First Collection</p><h2 id="gt-experiments-title">Six Ways to See the Game</h2></div><p class="gt-meta">Prototype <span aria-hidden="true">·</span> Updated <time datetime="2026-09-27">Sept. 27, 2026</time></p></div>
+  <div class="gt-catalog">
+    {% for experiment in site.data.game_theory.experiments %}
+    <article class="gt-card">
+      {% include game-theory/hero-image.html src=experiment.image alt=experiment.image-alt variant="card" lcp=false sizes="(min-width: 1240px) 326px, (min-width: 1001px) calc(33.333vw - 87.333px), (min-width: 761px) calc(50vw - 94px), (min-width: 481px) calc(50vw - 78px), calc(100vw - 82px)" %}
+      <div class="gt-card-meta"><span class="gt-card-number">{{ experiment.number }}</span><span>{{ experiment.concept }}</span></div>
+      <h3><a href="{{ '/game-theory/' | append: experiment.slug | append: '/' | relative_url }}">{{ experiment.title }}</a></h3>
+      <p class="gt-card-question">{{ experiment.question }}</p>
+      <p>{{ experiment.description }}</p>
+      <a class="gt-card-link" href="{{ '/game-theory/' | append: experiment.slug | append: '/' | relative_url }}" aria-label="Open {{ experiment.title }}">Open experiment <span aria-hidden="true">↗</span></a>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+<section class="gt-feature" aria-labelledby="gt-feature-title">
+  <div><p class="gt-eyebrow">One More Road. A Longer Commute.</p><h2 id="gt-feature-title">Good Intentions Meet Other People’s Choices</h2><p>The Traffic Paradox puts individual choices on a shared road network. Add a shortcut, inspect the route flows, and see why the fastest route for one driver can make everyone slower.</p><a class="gt-button" href="{{ '/game-theory/traffic-paradox/' | relative_url }}">Open the Traffic Paradox →</a></div>
+  <div class="gt-feature-figures" aria-label="Default traffic scenario"><div><strong>65<span> min</span></strong><p>Before the shortcut</p></div><div><strong>80<span> min</span></strong><p>After drivers settle</p></div><p class="gt-caption">A theoretical result for 4,000 drivers under this experiment’s default road costs. Change the assumptions and test it.</p></div>
+</section>
+<section class="gt-grid gt-about" aria-labelledby="gt-about-title">
+  <div><h2 id="gt-about-title">Small Models, Useful Questions</h2><p>Game theory studies choices whose outcomes depend on other people’s choices. Here, you can inspect the points each player earns, replay the same random sequence, and ask which assumptions fit your own situation.</p><p>Every experiment includes step-by-step math using pre-algebra, a separate expert section with formal equations, and a scenario link. The numbers describe the model. The questions are yours to take into a team, a negotiation, or a shared project.</p><p class="gt-note">The learning-by-playing approach is inspired by Nicky Case’s <a href="https://ncase.me/trust/">The Evolution of Trust</a>. These experiments use their own models and implementation.</p></div>
+  <div><h2>A Workbench That Can Grow</h2><p>This first collection starts with cooperation and ends with shared costs. Fourteen more experiments are planned.</p><details><summary>Explore the planned collection</summary>{% for group in site.data.game_theory.planned %}<h3>{{ group.title }}</h3><ul>{% for topic in group.topics %}<li>{{ topic }} <span class="gt-note">— planned</span></li>{% endfor %}</ul>{% endfor %}</details><p class="gt-note">Planned experiments are ideas for future additions, not playable pages.</p></div>
+</section>

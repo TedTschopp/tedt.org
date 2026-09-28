@@ -15195,6 +15195,270 @@
       ],
       "width": 600
     },
+    "/img/game-theory/coordination-trap.webp": {
+      "height": 941,
+      "source_sha256": "5bb43d06aec36c834ff9c98afc6ac1ddcc7e74fe185d52b92c7ee37acb195486",
+      "src": "/img/game-theory/coordination-trap.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/coordination-trap--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/coordination-trap--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/coordination-trap--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/coordination-trap--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/coordination-trap.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/credible-threat.webp": {
+      "height": 941,
+      "source_sha256": "3a123460487afa3a4b5b6cf62f3e73c872287159d5b64ef2b3bb803814371560",
+      "src": "/img/game-theory/credible-threat.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/credible-threat--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/credible-threat--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/credible-threat--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/credible-threat--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/credible-threat.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/equilibrium-explorer.webp": {
+      "height": 941,
+      "source_sha256": "2fe0912350e5c26fad95f8705fbefd720685d814c19e4316c0b19b1dbcdf2334",
+      "src": "/img/game-theory/equilibrium-explorer.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/equilibrium-explorer--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/equilibrium-explorer--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/equilibrium-explorer--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/equilibrium-explorer--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/equilibrium-explorer.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/math-guide.webp": {
+      "height": 941,
+      "source_sha256": "36a573f69a2ecb1d27c4de6e78c7750bc26c2482946f2e7e01ada9d7437752a7",
+      "src": "/img/game-theory/math-guide.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/math-guide--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/math-guide--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/math-guide--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/math-guide--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/math-guide.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/mixed-strategy.webp": {
+      "height": 941,
+      "source_sha256": "55fb50eeb7329cba4c4046543d250e29c5c3bcbfcc286cd6c65b9cbcc4617ebd",
+      "src": "/img/game-theory/mixed-strategy.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/mixed-strategy--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/mixed-strategy--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/mixed-strategy--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/mixed-strategy--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/mixed-strategy.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/playground.webp": {
+      "height": 941,
+      "source_sha256": "5ec584973983c6bf61323f1aeabc7a541eb1d1ba435cef501a62585f82063ca3",
+      "src": "/img/game-theory/playground.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/playground--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/playground--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/playground--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/playground--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/playground.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/traffic-paradox.webp": {
+      "height": 941,
+      "source_sha256": "1ba59647be5029ee8e875b1e71f42eb322a507d517c1913ad0b647b120102d9b",
+      "src": "/img/game-theory/traffic-paradox.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/traffic-paradox--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/traffic-paradox--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/traffic-paradox--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/traffic-paradox--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/traffic-paradox.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/game-theory/trust-machine.webp": {
+      "height": 941,
+      "source_sha256": "f399b0f89d3aed8399f378ca62a2e6fc2596689b5cb97e914c1e6e27121bdd47",
+      "src": "/img/game-theory/trust-machine.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/game-theory/trust-machine--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/game-theory/trust-machine--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/game-theory/trust-machine--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/game-theory/trust-machine--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/game-theory/trust-machine.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/home/.Market-Research~imageoptim.webp": {
       "height": 896,
       "source_sha256": "747d6af275ee29f2b27a8d9b7bfda3768461dcb24eb8b6f8c899d70b721d131e",

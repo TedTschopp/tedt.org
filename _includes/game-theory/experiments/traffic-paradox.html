@@ -1,0 +1,165 @@
+<section class="gt-panel" aria-labelledby="traffic-prediction-title">
+  <p class="gt-step">1. Make a Prediction</p>
+  <h2 id="traffic-prediction-title">A Shortcut Opens. Who Gets Home Sooner?</h2>
+  <p>Everyone travels from S (start) to T (finish). Each line is a stretch of road. Two stretches always take 45 minutes. The other two get slower as more drivers use them: divide the number of drivers on that stretch by 100 to find its time in minutes. The new one-way shortcut from A to B takes zero minutes in this made-up road system.</p>
+  <div class="gt-field">
+    <label for="traffic-prediction">With the current rules, will the average trip after drivers adjust be faster or slower than with the shortcut closed?</label>
+    <select id="traffic-prediction" data-traffic-prediction>
+      <option value="">Choose a prediction</option><option value="faster">Faster</option><option value="slower">Slower</option><option value="same">The same</option>
+    </select>
+  </div>
+  <figure class="gt-diagram" tabindex="0" aria-label="Road network; scroll horizontally on small screens">
+    <svg class="gt-network" data-traffic-network viewBox="0 0 700 360" role="img" aria-labelledby="traffic-network-title traffic-network-description">
+      <title id="traffic-network-title">The Two-Route Network With a One-Way Shortcut</title>
+      <desc id="traffic-network-description" data-traffic-network-description>Travel begins at S, follows the arrows through A or B, and ends at T. The route flows are also listed in the caption and results table.</desc>
+      <defs><marker id="traffic-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="currentColor"></path></marker></defs>
+      <path class="gt-network-edge" d="M85 168 L325 65" fill="none" marker-end="url(#traffic-arrow)"></path>
+      <path class="gt-network-edge" d="M375 65 L615 168" fill="none" marker-end="url(#traffic-arrow)"></path>
+      <path class="gt-network-edge" d="M85 192 L325 295" fill="none" marker-end="url(#traffic-arrow)"></path>
+      <path class="gt-network-edge" d="M375 295 L615 192" fill="none" marker-end="url(#traffic-arrow)"></path>
+      <path class="gt-network-edge gt-network-shortcut" d="M350 85 L350 275" fill="none" marker-end="url(#traffic-arrow)"></path>
+      <circle class="gt-network-node" cx="60" cy="180" r="28"></circle><circle class="gt-network-node" cx="350" cy="55" r="28"></circle><circle class="gt-network-node" cx="350" cy="305" r="28"></circle><circle class="gt-network-node" cx="640" cy="180" r="28"></circle>
+      <g class="gt-network-label" text-anchor="middle"><text x="60" y="186">S</text><text x="350" y="61">A</text><text x="350" y="311">B</text><text x="640" y="186">T</text></g>
+      <g class="gt-network-label" text-anchor="middle"><text x="185" y="80" data-traffic-edge-upper>2,000 ÷ 100 = 20 min</text><text x="515" y="80">45 min</text><text x="185" y="305">45 min</text><text x="515" y="305" data-traffic-edge-lower>2,000 ÷ 100 = 20 min</text><text x="440" y="174" data-traffic-shortcut-label>0 min + 0 toll</text></g>
+      <g aria-hidden="true">
+        <circle class="gt-flow-dot" data-traffic-dot-top r="7"><animateMotion data-traffic-motion-top dur="2.4s" begin="indefinite" path="M60 180 L350 55 L640 180"></animateMotion></circle>
+        <circle class="gt-flow-dot" data-traffic-dot-bottom r="7"><animateMotion data-traffic-motion-bottom dur="2.4s" begin="indefinite" path="M60 180 L350 305 L640 180"></animateMotion></circle>
+        <circle class="gt-flow-dot" data-traffic-dot-shortcut r="7"><animateMotion data-traffic-motion-shortcut dur="2.4s" begin="indefinite" path="M60 180 L350 55 L350 305 L640 180"></animateMotion></circle>
+      </g>
+    </svg>
+    <figcaption class="gt-caption" data-traffic-diagram-caption>Before drivers adjust: half start on each outer route. Arrow direction matters: A → B only.</figcaption>
+  </figure>
+  <p class="gt-step">2. Choose Your Route</p>
+  <p>Pick a route while everyone else is still split between the two outer roads. Then see your trip once the crowd responds to the same incentives.</p>
+  <div class="gt-actions">
+    <button class="gt-button gt-button-secondary" type="button" data-traffic-choose-top>Upper: S → A → T</button>
+    <button class="gt-button gt-button-secondary" type="button" data-traffic-choose-bottom>Lower: S → B → T</button>
+    <button class="gt-button" type="button" data-traffic-choose-shortcut>Shortcut: S → A → B → T</button>
+  </div>
+  <p class="gt-result" data-traffic-result role="status" aria-live="polite"></p>
+</section>
+
+<section class="gt-panel" data-traffic-results hidden aria-labelledby="traffic-results-title">
+  <p class="gt-step">3. Reveal the Incentives</p>
+  <h2 id="traffic-results-title">Nobody Gains by Switching Alone</h2>
+  <div class="gt-metrics">
+    <div class="gt-metric"><span>Shortcut closed</span><strong data-traffic-closed-time></strong></div>
+    <div class="gt-metric"><span>After drivers settle</span><strong data-traffic-equilibrium-time></strong></div>
+    <div class="gt-metric"><span>Best shared plan: average</span><strong data-traffic-optimum-time></strong></div>
+    <div class="gt-metric"><span>Compared with the best plan</span><strong data-traffic-ratio></strong></div>
+  </div>
+  <p data-traffic-incentives></p>
+  <div class="gt-table-wrap">
+    <table class="gt-table">
+      <caption>Where drivers end up, compared with the best shared plan</caption>
+      <thead><tr><th scope="col">Route</th><th scope="col">Drivers after settling</th><th scope="col">Driving time</th><th scope="col">Time + toll value</th><th scope="col">Drivers in the best plan</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Upper: S → A → T</th><td data-traffic-flow-top></td><td data-traffic-time-top></td><td data-traffic-cost-top></td><td data-traffic-optimum-top></td></tr>
+        <tr><th scope="row">Lower: S → B → T</th><td data-traffic-flow-bottom></td><td data-traffic-time-bottom></td><td data-traffic-cost-bottom></td><td data-traffic-optimum-bottom></td></tr>
+        <tr><th scope="row">Shortcut: S → A → B → T</th><td data-traffic-flow-shortcut></td><td data-traffic-time-shortcut></td><td data-traffic-cost-shortcut></td><td data-traffic-optimum-shortcut></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="gt-note">The app calculates the settled result directly; it does not play out each driver's changes of mind. The moving dots show the routes. Their speed and number do not measure real traffic.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="traffic-sandbox-title">
+  <p class="gt-step">4. Change One Assumption</p>
+  <h2 id="traffic-sandbox-title">Change the Demand, Road, or Toll</h2>
+  <div class="gt-controls gt-grid">
+    <div class="gt-field"><label for="traffic-demand">Number of drivers</label><input id="traffic-demand" data-setting="demand" data-traffic-demand type="number" value="4000" min="1000" max="8000" step="100"></div>
+    <div class="gt-field"><label for="traffic-open">Shortcut availability</label><select id="traffic-open" data-setting="open" data-traffic-open><option value="open">Open</option><option value="closed">Closed</option></select></div>
+    <div class="gt-field"><label for="traffic-toll">Shortcut toll, valued in minutes</label><input id="traffic-toll" data-setting="toll" data-traffic-toll type="number" value="0" min="0" max="60" step="0.5" aria-describedby="traffic-toll-help"><p class="gt-note" id="traffic-toll-help">A value of 10 means the fee feels as costly as 10 extra minutes. Drivers add that value to the driving time when comparing routes. Paying the fee does not make the drive longer.</p></div>
+  </div>
+  <button class="gt-button gt-button-secondary" type="button" data-traffic-coordinating-toll>Try a toll that supports coordination</button>
+  <p class="gt-note">A setting change starts a fresh prediction. Try 1,000 drivers: adding a road does not always make traffic worse.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="traffic-math-title">
+  <div id="gt-math" class="gt-math-beginner">
+    <h2 id="traffic-math-title">Work It Out, Step by Step</h2>
+    <p>You only need addition, subtraction, multiplication, and division. A <strong>route</strong> is the whole trip. A <strong>road segment</strong> is one stretch of that trip.</p>
+    <p class="gt-note"><strong>Worked example:</strong> the starting settings, with 4,000 drivers and no toll. These example numbers stay the same when you change the controls; the results above use your current settings.</p>
+    <ol class="gt-math-steps">
+      <li><strong>Before the shortcut, split the drivers evenly.</strong> Each route gets \(4{,}000 \div 2 = 2{,}000\) drivers. Its busy road takes \(2{,}000 \div 100 = 20\) minutes. Add the other road:
+        <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[20 + 45 = 65 \text{ minutes.}\]</div>
+      </li>
+      <li><strong>At first, the shortcut looks faster.</strong> It connects the two busy roads and skips both 45-minute roads. While traffic is still split, those two busy roads take \(20 + 20 = 40\) minutes. That looks better than 65.</li>
+      <li><strong>But everyone sees the same shortcut.</strong> When all 4,000 drivers use it, each busy road takes \(4{,}000 \div 100 = 40\) minutes. The shortcut trip now takes:
+        <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[40 + 40 = 80 \text{ minutes.}\]</div>
+      </li>
+      <li><strong>Why doesn't one driver leave?</strong> Switching to an outer route would take \(40 + 45 = 85\) minutes. Staying takes 80. Nobody can get a faster trip by switching alone. This settled situation is called an <strong>equilibrium</strong>.</li>
+      <li><strong>Compare the before and after.</strong> The shortcut made everyone's trip \(80 - 65 = 15\) minutes longer. Each driver made a sensible choice for themselves, but the group ended up worse off.</li>
+    </ol>
+    <details>
+      <summary>How does the best shared plan get 64.69 minutes?</summary>
+      <p>In this example, send 1,750 drivers along each outer route and 500 through the shortcut. That still adds up to 4,000 drivers. Each busy road then carries \(1{,}750 + 500 = 2{,}250\) drivers and takes \(2{,}250 \div 100 = 22.5\) minutes.</p>
+      <p>The 3,500 outer-route drivers each take \(22.5 + 45 = 67.5\) minutes. The 500 shortcut drivers each take \(22.5 + 22.5 = 45\) minutes.</p>
+      <p>To find the average, add up all the minutes everyone spends traveling, then divide by the number of drivers:</p>
+      <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[3{,}500 \times 67.5 = 236{,}250\]</div>
+      <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[500 \times 45 = 22{,}500\]</div>
+      <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[\frac{236{,}250 + 22{,}500}{4{,}000} = 64.6875.\]</div>
+      <p>Rounded to two decimal places, that is <strong>64.69 minutes per driver</strong>. It is an average: individual trips take either 67.5 or 45 minutes. The expert section explains why this plan has the lowest average under these rules.</p>
+    </details>
+    <p><strong>Reading the comparison:</strong> “1.24×” means the settled average is about 1.24 times the best-plan average, or about 24% longer. It compares two results on the current road system, rather than the before-and-after shortcut example.</p>
+    <p><strong>Rules to keep in mind:</strong> everyone knows the travel times and values the toll the same way. One driver is too small a part of traffic to noticeably change a road's speed. Real roads also have queues, traffic lights, and other complications this model leaves out.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert">
+    <summary>For experts: formal model and assumptions</summary>
+    <h3>How to Read the Symbols</h3>
+    <p>These formulas describe the same roads as the worked example. The letters let us change the number of drivers or the toll without rewriting every step. You can use the experiment with ordinary arithmetic; the <a href="{{ '/math-guide/' | relative_url }}">math reading guide</a> helps translate the extra notation.</p>
+    <dl class="gt-symbol-key">
+      <dt>Drivers: \(D\), \(z\), and \(f\)</dt>
+      <dd>\(D\) is the total number of drivers. \(z\) is the number taking the shortcut. \(f\) is the number using one of the busy road segments. For example, \((D-z)/2\) says “subtract shortcut drivers from the total, then divide the remaining drivers equally between two outer routes.”</dd>
+      <dt>Road and toll amounts: \(a\), \(c\), and \(\tau\)</dt>
+      <dd>\(a=0.01\) is the added travel time per driver on a busy road; multiplying by 0.01 is the same as dividing by 100. Lowercase \(c=45\) is the fixed road time. The Greek letter \(\tau\), called “tau” (rhymes with “how”), is the toll’s value in minutes. Greek letters work just like other letter names for numbers.</dd>
+      <dt>Route costs: \(C_{\mathrm{outer}}(z)\) and \(C_{\mathrm{shortcut}}(z)\)</dt>
+      <dd>Capital \(C\) means the route’s driving time plus any toll value. The small word below it, called a <a href="{{ '/math-guide/' | relative_url }}#letters-and-labels">subscript</a>, names the route. The \((z)\) means “when z drivers use the shortcut.” Read \(C_{\mathrm{outer}}(z)\) as “the outer-route cost for z shortcut drivers.” This is <a href="{{ '/math-guide/' | relative_url }}#functions">function notation</a>: put in a number of drivers and get out a cost.</dd>
+      <dt>Multiplication without a times sign</dt>
+      <dd>\(a(D+z)\) means \(a\times(D+z)\): add the driver counts first, then multiply by \(a\). Here \(a\) is a number, so the parentheses group an arithmetic step. The fraction bar means division. See <a href="{{ '/math-guide/' | relative_url }}#operations">reading operations</a>.</dd>
+    </dl>
+    <h3>Path Costs and Wardrop Equilibrium</h3>
+    <p>Let \(D\) be total demand, \(z\) shortcut flow, \(a=0.01\) minutes per driver, \(c=45\) minutes, and \(\tau\) the toll expressed as a time-equivalent cost. The two outer paths each carry \((D-z)/2\); each congestible edge carries \(f=(D+z)/2\).</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[C_{\mathrm{outer}}(z)=\frac{a(D+z)}{2}+c\]</div>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[C_{\mathrm{shortcut}}(z)=a(D+z)+\tau.\]</div>
+    <p><strong>Read it aloud:</strong> “An outer route uses one busy road plus a 45-minute road. The shortcut uses two busy roads plus the toll value.” If all 4,000 drivers use the shortcut, \(D+z=8{,}000\). The outer route costs \(0.01\times8{,}000/2+45=85\) minutes; the untolled shortcut costs \(0.01\times8{,}000=80\).</p>
+    <p>At Wardrop equilibrium every used path has minimum generalized cost. Equating costs for an interior solution, then enforcing feasible flow, gives:</p>
+    <dl class="gt-symbol-key">
+      <dt>Labels for two results: \(z_{\mathrm{NE}}\) and \(z_{\mathrm{SO}}\)</dt>
+      <dd>These are two possible values of the shortcut count \(z\). The lower label “NE” names the equilibrium count, where no driver gains by switching alone. “SO” names the social optimum, the count in the best shared plan. The labels are names, not numbers to multiply or divide.</dd>
+      <dt>Keeping a count possible: \(\min\) and \(\max\)</dt>
+      <dd><a href="{{ '/math-guide/' | relative_url }}#min-max">“Min” means pick the smallest number; “max” means pick the largest.</a> Braces hold the numbers to compare. Read from the inside out: first compare the calculation with 0, then compare that result with \(D\). This prevents a negative driver count or a count above the total.</dd>
+    </dl>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[z_{\mathrm{NE}}=\min\!\left\{D,\max\!\left\{0,\frac{2(c-\tau)}{a}-D\right\}\right\}.\]</div>
+    <p><strong>Read it aloud:</strong> “Subtract the toll value from the fixed road time, double it, divide by the busy-road rate, and subtract the total drivers. Keep the answer between zero and the total.” With 4,000 drivers and no toll, the calculation gives 5,000, so the actual shortcut count is capped at 4,000.</p>
+    <p>At a boundary, one or more paths are unused. An unused path may tie a used path. A closed shortcut forces \(z=0\).</p>
+    <h3>Social Optimum and a Supporting Toll</h3>
+    <p>With the shortcut open, the social objective \(L(z)\) counts driver-minutes, excluding toll transfers. Dividing \(L\) by \(D\) gives average driving time. With the shortcut closed, both calculations instead use \(z=0\), and the app offers no shortcut toll.</p>
+    <dl class="gt-symbol-key">
+      <dt>Total travel time: \(L(z)\) and \((D+z)^2\)</dt>
+      <dd>Read \(L(z)\) as “total driving minutes for z shortcut drivers.” A driver-minute means one driver traveling for one minute: two drivers traveling for 10 minutes use 20 driver-minutes. The raised 2 means “square”: \((D+z)^2\) is \((D+z)\times(D+z)\).</dd>
+      <dt>Rates of change: \(L'(z)\) and \(L''(z)\)</dt>
+      <dd>Read these as “L prime of z” and “L double prime of z.” The first describes how total driving time changes as shortcut use increases a little. A negative rate means total time is falling; a positive rate means it is rising. The second describes how that rate changes. The \(&gt;\) sign means “greater than”: \(L''(z)=a&gt;0\) says the rate itself keeps increasing. These <a href="{{ '/math-guide/' | relative_url }}#rates-of-change">rate-of-change symbols</a> help justify the best plan; you do not need to calculate them to use the experiment.</dd>
+    </dl>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[L(z)=\frac{a}{2}(D+z)^2+c(D-z)\]</div>
+    <p><strong>Read it aloud:</strong> “Add the time all drivers spend on the two busy roads to the time they spend on the fixed-time roads.” To find minutes per driver, divide that total by the number of drivers.</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[L'(z)=a(D+z)-c,\qquad L''(z)=a&gt;0.\]</div>
+    <p><strong>Read it aloud:</strong> “The rate of change is the busy-road rate times the combined driver count, minus the fixed road time. That rate increases as more drivers take the shortcut.” Where the first rate reaches zero, the curve stops going down and starts going up. If that point falls outside the possible driver counts, the best count is at one of the ends: zero or all drivers.</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[z_{\mathrm{SO}}=\min\!\left\{D,\max\!\left\{0,\frac{c}{a}-D\right\}\right\}.\]</div>
+    <p><strong>Read it aloud:</strong> “Divide the fixed road time by the busy-road rate, subtract the total drivers, and keep the answer between zero and the total.” The default gives \(45/0.01-4{,}000=500\) shortcut drivers.</p>
+    <p>The app chooses the following nonnegative shortcut toll to implement that flow; it reduces to \(c/2=22.5\) when the optimum is interior:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[\tau^*=\max\!\left\{0,c-\frac{a(D+z_{\mathrm{SO}})}{2}\right\}.\]</div>
+    <p><strong>Read it aloud:</strong> “The supporting toll is the fixed road time minus the busy-road time at the best shared plan, with a minimum of zero.” The raised star in \(\tau^*\), read “tau star,” labels this chosen toll. It is not a multiplication sign or a power. With 4,000 drivers, the toll value is \(45-22.5=22.5\) minutes. “Interior” means the best plan uses some, but not all, drivers on the shortcut.</p>
+    <p data-traffic-math-values>At the default 4,000 drivers, the closed network averages 65 minutes. Opening the untolled shortcut produces 80 minutes. The best coordinated allocation uses 1,750 drivers on each outer route and 500 on the shortcut, averaging 64.6875 minutes.</p>
+    <p>The ratio shown compares equilibrium driving time with the minimum driving time on the same available network. Without a toll, this is the price of anarchy for this instance. With a toll, it is a driving-time comparison; payments are excluded from the collective objective and are not treated as lost resources.</p>
+    <p>This is a deterministic, nonatomic model: each driver is treated as negligible, all drivers value money and time identically, all know route costs, and demand is fixed. Fractional flows are allowed. Roads are directed, the shortcut has no capacity limit or travel delay, and there are no queues, junction delays, or departure-time choices. Coordination minimizes the group’s total driving time, not every person’s individual trip.</p>
+    <p>Concept and original network: <a href="https://www.cs.cornell.edu/home/kleinber/networks-book/networks-book-ch08.pdf">Easley and Kleinberg, <cite>Networks, Crowds, and Markets</cite>, Chapter 8</a>. The adjustable toll and coordinated allocation are calculated from the equations above.</p>
+  </details>
+</section>
+
+<section class="gt-panel" aria-labelledby="traffic-transfer-title">
+  <p class="gt-step">5. Take It Somewhere Else</p>
+  <h2 id="traffic-transfer-title">What If the Road Were a Shared Service?</h2>
+  <p>Every application team switches to a shared service because it gives their application the shortest response time today. Can offering the service make the whole system slower?</p>
+  <details><summary>Reveal the reasoning</summary><p>It can, if each team’s choice adds congestion that other teams must bear. A usage price, capacity reservation, or routing rule can change those incentives. But the traffic result depends on this network and its costs: adding an option is not automatically harmful. Map the shared bottlenecks and compare actual allocations before drawing the analogy.</p></details>
+</section>

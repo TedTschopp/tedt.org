@@ -1,0 +1,117 @@
+<section class="gt-panel" aria-labelledby="trust-prediction-title">
+  <p class="gt-step">1. Make a Prediction</p>
+  <h2 id="trust-prediction-title">Can Trust Survive a Mistake?</h2>
+  <p>You and another player choose at the same time. <strong>Cooperate</strong> means help make a good result for both of you. <strong>Defect</strong> means take the other choice, which pays you more in this round if the other player’s choice stays the same. A <strong>strategy</strong> is a rule for deciding what to do.</p>
+  <p>If both cooperate, each gets 3 points. If only one defects, that player gets 5 and the player who cooperated gets 0. If both defect, each gets 1.</p>
+  <div class="gt-field">
+    <label for="trust-prediction">Which approach do you expect to earn more over repeated encounters?</label>
+    <select id="trust-prediction"><option value="">Make a prediction…</option><option>Always cooperate</option><option>Always defect</option><option>Respond in kind</option><option>Respond in kind, with some forgiveness</option><option>It depends on the conditions</option></select>
+  </div>
+</section>
+
+<section class="gt-panel" aria-labelledby="trust-play-title">
+  <p class="gt-step">2. Make a Consequential Choice</p>
+  <h2 id="trust-play-title">Meet Your Opponent</h2>
+  <p id="trust-opponent-description"></p>
+  <p id="trust-round-label"></p>
+  <div class="gt-actions">
+    <button class="gt-button" type="button" id="trust-cooperate">Cooperate</button>
+    <button class="gt-button gt-button-secondary" type="button" id="trust-defect">Defect</button>
+  </div>
+  <div class="gt-result" id="trust-result" aria-live="polite" aria-atomic="true"><p>Choose an action to play your first round.</p></div>
+  <div class="gt-table-wrap">
+    <table class="gt-table">
+      <caption>Your encounter: actual actions and points in each round</caption>
+      <thead><tr><th scope="col">Round</th><th scope="col">You</th><th scope="col">Opponent</th><th scope="col">Your points</th><th scope="col">Their points</th><th scope="col">Combined</th></tr></thead>
+      <tbody id="trust-history"></tbody>
+    </table>
+  </div>
+</section>
+
+<section class="gt-panel" aria-labelledby="trust-sandbox-title">
+  <p class="gt-step">3. Change One Assumption</p>
+  <h2 id="trust-sandbox-title">Set the Conditions</h2>
+  <p>Changing a setting starts a fresh encounter. The seed replays the same random sequence when you make the same choices. Shared links preserve these settings, not your play history.</p>
+  <div class="gt-grid">
+    <div class="gt-field"><label for="trust-opponent">Opponent strategy</label><select id="trust-opponent" data-setting><option value="tit-for-tat">Tit for tat</option><option value="forgiving">Forgiving tit for tat</option><option value="cooperate">Always cooperate</option><option value="defect">Always defect</option><option value="random">Fair coin</option><option value="last-round">Tit for tat, defect on known final round</option></select></div>
+    <div class="gt-field"><label for="trust-ending">When does the encounter end?</label><select id="trust-ending" data-setting><option value="known">After a known number of rounds</option><option value="continuation">Chance of meeting again after each round</option></select></div>
+    <div class="gt-field"><label for="trust-rounds">Known number of rounds (1–50)</label><input id="trust-rounds" data-setting type="number" min="1" max="50" step="1" value="10"></div>
+    <div class="gt-field"><label for="trust-continuation">Chance of meeting again (0–95%)</label><input id="trust-continuation" data-setting type="number" min="0" max="95" step="5" value="90"></div>
+    <div class="gt-field"><label for="trust-mistakes">Chance each action is accidentally flipped (0–50%)</label><input id="trust-mistakes" data-setting type="number" min="0" max="50" step="1" value="0"></div>
+    <div class="gt-field"><label for="trust-forgiveness">Forgiving strategy: chance of forgiving a defection (0–100%)</label><input id="trust-forgiveness" data-setting type="number" min="0" max="100" step="5" value="25"></div>
+    <div class="gt-field"><label for="trust-seed">Random seed (1–999999)</label><input id="trust-seed" data-setting type="number" min="1" max="999999" step="1" value="42"></div>
+    <div class="gt-field"><label for="trust-trials">Tournament encounters per pairing (1–50)</label><input id="trust-trials" data-setting type="number" min="1" max="50" step="1" value="20"></div>
+  </div>
+  <p class="gt-note">With a known final round, the continuation percentage is unused. With a random ending, the known round count is unused; an encounter is capped at 200 rounds for responsiveness.</p>
+  <h3>Compare Strategies Across Many Encounters</h3>
+  <p>Each of the six strategies plays every strategy, including another copy of itself, the same number of times. The ranking uses average points per round: total points divided by rounds played. When a strategy plays its own copy, we average the two copies so that pairing does not count twice. “Cooperation rate” means the percentage of actions that were cooperate. Run again with a different seed to see whether the result changes.</p>
+  <button class="gt-button" type="button" id="trust-tournament-run">Run the tournament</button>
+  <div id="trust-tournament-summary" class="gt-result" aria-live="polite" aria-atomic="true"></div>
+  <div class="gt-table-wrap"><table class="gt-table"><caption>Simulated tournament results</caption><thead><tr><th scope="col">Strategy</th><th scope="col">Points per round</th><th scope="col">Cooperation rate</th><th scope="col">Player-rounds</th></tr></thead><tbody id="trust-tournament-results"></tbody></table></div>
+</section>
+
+<section class="gt-panel" aria-labelledby="trust-math-title">
+  <h2 id="trust-math-title">Reveal the Incentives</h2>
+  <div id="gt-math" class="gt-math-beginner">
+    <h3>Work It Out, Step by Step</h3>
+    <p class="gt-note">Worked example using the default settings: 10 rounds, no mistakes, and a tit-for-tat opponent. These numbers explain the starting game; they do not update when you change the controls.</p>
+    <p>Tit for tat means “cooperate first, then copy the other player’s last action.” You only need addition, subtraction, multiplication, and division to compare these choices.</p>
+    <ol>
+      <li><strong>Both cooperate in round 1.</strong> You get 3 points and your opponent gets 3. Together, you earn \(3 + 3 = 6\) points.</li>
+      <li><strong>Keep cooperating for all 10 rounds.</strong> Your opponent keeps copying cooperation. Each player earns \(10 \times 3 = 30\) points. Your average is \(30 \div 10 = 3\) points per round.</li>
+      <li><strong>Now try a different choice in round 1.</strong> If you defect while your opponent cooperates, you get 5 points instead of 3. That is \(5 - 3 = 2\) extra points for you. Your opponent gets 0.</li>
+      <li><strong>Check what happens next.</strong> In round 2, tit for tat copies your defection. If you now cooperate, you get 0 points. Your total for these two rounds is \(5 + 0 = 5\). Cooperating in both rounds would have earned you \(3 + 3 = 6\).</li>
+    </ol>
+    <p>A choice that wins more points now can change what happens later. This two-round comparison does not prove that one strategy always wins. Try a known final round, mistakes, or a different opponent to see why the conditions matter.</p>
+    <p>If you turn on mistakes, a 10% chance means about 10 flips per 100 actions over many trials, not exactly 10 every time. An accidental defection can start a chain of responses even when neither player meant to break cooperation.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert"><summary>For experts: formal model and assumptions</summary>
+    <h3>How to Read the Symbols</h3>
+    <p>The symbols below are short names for points, rounds, and chances. You can use the game without memorizing them. The <a href="{{ '/math-guide/' | relative_url }}">math reading guide</a> has more examples.</p>
+    <dl class="gt-symbol-key">
+      <dt>Letters and small labels</dt>
+      <dd>A letter stands for a value. A small letter below it is a label: \(u_i\), read “u for player i,” means that player’s points. The letter \(i\) identifies a player; it is not a number to multiply by. Lowercase \(u\) means points in one round, uppercase \(U\) means a total, and a bar above \(u\) means an average. <a href="{{ '/math-guide/' | relative_url }}#letters-and-labels">Read about letters and labels.</a></dd>
+      <dt>Inputs in parentheses</dt>
+      <dd>\(u_i(t)\), read “u for player i at round t,” asks for that player’s points in round \(t\). Here the parentheses identify the round; they do not mean multiplication. <a href="{{ '/math-guide/' | relative_url }}#functions">Read about functions.</a></dd>
+      <dt>Comparison and multiplication</dt>
+      <dd>\(&gt;\) means “greater than,” and \(\le\) means “less than or equal to.” Letters or numbers written next to each other usually mean multiply: \(2R\) means 2 times \(R\), and \(w_kU_k\) means weight times total points. <a href="{{ '/math-guide/' | relative_url }}#comparisons">Read about comparisons.</a></dd>
+      <dt>Addition, division, and powers</dt>
+      <dd>\(\sum\), the capital Greek letter sigma, means “add these terms.” The labels below and above it say where to start and stop. A fraction bar means divide. A raised number is a power: \(p^2\) means \(p\) times \(p\). The first term in the round-count sum below is 1 because round 1 always happens, even if the chance of continuing is zero. <a href="{{ '/math-guide/' | relative_url }}#sums">Read about sums</a> and <a href="{{ '/math-guide/' | relative_url }}#operations">powers.</a></dd>
+      <dt>Chance and expected value</dt>
+      <dd>A probability is a chance written from 0 to 1: 0.9 means 90%. \(\mathbb{E}[L]\), read “expected L,” is the average number of rounds the chances predict over many encounters. The square brackets identify what we are averaging; they do not mean multiply. \(\varepsilon\), read “epsilon,” is the Greek letter used here for the chance of an accidental action flip. <a href="{{ '/math-guide/' | relative_url }}#probability">Read about probability and averages.</a></dd>
+    </dl>
+    <h3>Repeated Prisoner’s Dilemma</h3>
+    <p>Let \(C\) denote cooperation and \(D\) defection. A payoff is the points awarded to a player. The stage-game payoffs are \(R=3\) for mutual cooperation, \(S=0\) for cooperating against defection, \(T=5\) for defecting against cooperation, and \(P=1\) for mutual defection. Each cell below lists (row payoff, column payoff).</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      \begin{array}{c|cc}
+        &amp; C &amp; D \\ \hline
+        C &amp; (R,R)=(3,3) &amp; (S,T)=(0,5) \\
+        D &amp; (T,S)=(5,0) &amp; (P,P)=(1,1)
+      \end{array}
+    \]</div>
+    <p>Read the table by finding your row and the other player’s column. In \((3,3)\), the comma separates the row player’s points from the column player’s points; it does not ask you to do arithmetic.</p>
+    <p>Thus \(T &gt; R &gt; P &gt; S\) reads “5 is greater than 3, which is greater than 1, which is greater than 0.” So \(D\) strictly dominates \(C\) in the stage game: defecting pays more whichever choice the other player makes. Also \(2R &gt; T+S\) says “two times 3 is greater than 5 plus 0.” An encounter adds the points actually earned, with a point in a later round counting just as much as one now. For player \(i\), let \(u_i(t)\) be the points in round \(t\), and let \(L\) be the number of rounds actually played:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      U_i = \sum_{t=1}^{L} u_i(t),
+      \qquad \bar u_i = \frac{U_i}{L}.
+    \]</div>
+    <p><strong>Read it aloud:</strong> “Total points for player i equal the sum of that player’s points from round 1 through round L. Average points equal total points divided by rounds.” For 10 rounds earning 3 each, this means add ten 3s to get 30, then divide by 10 to get 3.</p>
+    <p>A “horizon” is how long an encounter lasts. For a known horizon, \(L=H\), where \(H\) is the selected round count. With continuation probability \(p\), the first round always occurs and each later round requires a fresh draw to continue. For example, \(p=0.9\) means a 90% chance of another round after each round. The expected round count is \(1/(1-p)\), meaning “subtract p from 1, then divide 1 by that result,” without a cap; the implemented cap gives:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      \mathbb{E}[L]=\sum_{t=1}^{200}p^{t-1}
+      =\frac{1-p^{200}}{1-p}, \qquad 0\le p\le 0.95.
+    \]</div>
+    <p><strong>Read it aloud:</strong> “The expected number of rounds is the sum of the chances of reaching rounds 1 through 200.” In the sum, \(t\) counts the round, so the first three terms are \(p^0\), \(p^1\), and \(p^2\). At a 90% continuation chance, those are 1, 0.9, and 0.81. The fraction is a shortcut for adding all 200 terms; \(p^{200}\) means multiply 200 copies of \(p\). The comparison at the end says that \(p\) can be anywhere from 0 through 0.95, including both ends.</p>
+    <p>Each intended action flips independently with mistake probability \(\varepsilon\). Both policies act from completed rounds, then observe actual actions without learning whether a flip occurred. Tit for tat begins with \(C\) and copies the opponent’s last actual action; its forgiving variant chooses \(C\) after \(D\) with the selected probability \(f\). The coin policy independently chooses \(C\) with probability \(1/2\). The final-round variant chooses \(D\) on round \(H\) only with a known horizon.</p>
+    <p>Tournament ranking pools points and rounds rather than averaging encounter averages. For each strategy, each player appearance \(k\) contributes points \(U_k\) and rounds \(L_k\), weighted by \(w_k=1\) in cross-strategy matches and \(w_k=1/2\) for each copy in a self-match:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      \text{tournament score}=\frac{\sum_k w_k U_k}{\sum_k w_k L_k}.
+    \]</div>
+    <p><strong>Read it aloud:</strong> “Add the weighted point totals, add the weighted round counts, then divide the first sum by the second.” Here \(k\) labels each player appearance in the tournament, and \(\sum_k\) means add across all those appearances. \(U_k\) is its point total, \(L_k\) is its round count, and \(w_k\) is its weight. A weight of \(1/2\) counts half of that copy’s points and rounds, so two copies in a self-match together count as one pairing.</p>
+    <p>Every unordered pairing runs the selected number of trials. Longer encounters contribute more rounds to the pooled score. These fixed-policy simulations neither solve for equilibrium nor predict human behavior. In the separate theoretical game with no mistakes, a commonly known finite horizon, payoff maximization, and common knowledge of rationality, backward induction yields defection every round. Playing against a fixed cooperative policy has different assumptions. Rankings depend on the policy population, noise, horizon, scoring, and sampled random sequence.</p>
+    <p>Primary reading: Robert Axelrod and William Hamilton, <a href="https://doi.org/10.1126/science.7466396">The Evolution of Cooperation (1981)</a>. This six-strategy tournament illustrates repeated interaction; it does not reproduce their tournament.</p>
+  </details>
+  <p class="gt-step">4. Transfer the Lesson</p>
+  <p>Two teams share an unreliable service. After one missed handoff, one team stops helping. Would punishing every failure forever necessarily improve future cooperation?</p>
+  <details><summary>Reveal a possible answer</summary><p>No. If missed handoffs can be accidents, permanent retaliation can destroy useful cooperation. A forgiving response may help when teams expect to work together again, but unconditional forgiveness can also invite exploitation. Investigate the error rate, future relationship, and incentives before choosing a rule.</p></details>
+</section>

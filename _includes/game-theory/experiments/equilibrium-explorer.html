@@ -1,0 +1,103 @@
+<section class="gt-panel" aria-labelledby="equilibrium-predict-title">
+  <p class="gt-step">1. Make a Prediction</p>
+  <h2 id="equilibrium-predict-title">Would Anyone Want to Move?</h2>
+  <p>A game has two players, each choosing A or B. One player chooses a row; the other chooses a column. Where they meet, the table shows <strong>(row player’s points, column player’s points)</strong>. For example, (3, 5) means 3 points for the row player and 5 for the column player.</p>
+  <p>More points are better. A <strong>Nash equilibrium</strong> is a pair of choices where neither player can earn more by switching alone. Keep the other player’s choice the same when checking a switch.</p>
+  <div class="gt-field"><label for="equilibrium-prediction">Must an equilibrium give the players the best combined outcome?</label><select id="equilibrium-prediction"><option value="">Make a prediction…</option><option value="yes">Yes</option><option value="no">No</option><option value="unsure">I’m not sure</option></select></div>
+</section>
+
+<section class="gt-panel" aria-labelledby="equilibrium-play-title">
+  <p class="gt-step">2. Make a Consequential Choice</p>
+  <h2 id="equilibrium-play-title">Choose an Outcome, Then Try to Escape</h2>
+  <p id="equilibrium-context"></p>
+  <div class="gt-grid">
+    <div class="gt-field"><label for="equilibrium-row-choice">Row player’s starting choice</label><select id="equilibrium-row-choice" data-setting><option value="0">A</option><option value="1">B</option></select></div>
+    <div class="gt-field"><label for="equilibrium-column-choice">Column player’s starting choice</label><select id="equilibrium-column-choice" data-setting><option value="0">A</option><option value="1">B</option></select></div>
+  </div>
+  <button class="gt-button" type="button" id="equilibrium-play">Reveal this outcome</button>
+  <div class="gt-result" id="equilibrium-result" aria-live="polite" aria-atomic="true"><p>Choose A or B for each player, then reveal the incentives.</p></div>
+  <div class="gt-actions">
+    <button class="gt-button gt-button-secondary" type="button" id="equilibrium-switch-row" disabled>Switch only the row player</button>
+    <button class="gt-button gt-button-secondary" type="button" id="equilibrium-switch-column" disabled>Switch only the column player</button>
+  </div>
+  <p class="gt-note">Switching alone is called a “unilateral move.” A “best response” is a choice that earns the most points given the other player’s choice. Tied choices can both be best responses. Try a move even when it loses points, then see why that player might resist it.</p>
+  <div class="gt-table-wrap"><table class="gt-table"><caption>Payoff table; after you reveal an outcome, best responses and equilibria appear in words</caption><thead><tr><th scope="col">Row player ↓ / Column player →</th><th scope="col">A</th><th scope="col">B</th></tr></thead><tbody id="equilibrium-table"></tbody></table></div>
+  <p id="equilibrium-summary"></p>
+</section>
+
+<section class="gt-panel" aria-labelledby="equilibrium-sandbox-title">
+  <p class="gt-step">3. Change One Assumption</p>
+  <h2 id="equilibrium-sandbox-title">Rewrite the Payoffs</h2>
+  <div class="gt-field"><label for="equilibrium-preset">Starting game</label><select id="equilibrium-preset" data-setting><option value="prisoners">Prisoner’s Dilemma</option><option value="chicken">Chicken</option><option value="coordination">Coordination</option><option value="matching">Matching pennies (no pure equilibrium)</option><option value="custom">Custom payoffs</option></select></div>
+  <p>A payoff is the points a player receives. Edit one payoff and reveal the outcome again. A tie counts as a reason to stay: an equilibrium only requires that neither player can earn <em>more</em> by switching alone. Shared links preserve these points and starting choices.</p>
+  <div class="gt-grid">
+    <fieldset class="gt-controls"><legend>A / A</legend><div class="gt-field"><label for="equilibrium-00-row">Row points at A / A</label><input id="equilibrium-00-row" data-setting type="number" min="-100" max="100" step="1" value="3"></div><div class="gt-field"><label for="equilibrium-00-column">Column points at A / A</label><input id="equilibrium-00-column" data-setting type="number" min="-100" max="100" step="1" value="3"></div></fieldset>
+    <fieldset class="gt-controls"><legend>A / B</legend><div class="gt-field"><label for="equilibrium-01-row">Row points at A / B</label><input id="equilibrium-01-row" data-setting type="number" min="-100" max="100" step="1" value="0"></div><div class="gt-field"><label for="equilibrium-01-column">Column points at A / B</label><input id="equilibrium-01-column" data-setting type="number" min="-100" max="100" step="1" value="5"></div></fieldset>
+    <fieldset class="gt-controls"><legend>B / A</legend><div class="gt-field"><label for="equilibrium-10-row">Row points at B / A</label><input id="equilibrium-10-row" data-setting type="number" min="-100" max="100" step="1" value="5"></div><div class="gt-field"><label for="equilibrium-10-column">Column points at B / A</label><input id="equilibrium-10-column" data-setting type="number" min="-100" max="100" step="1" value="0"></div></fieldset>
+    <fieldset class="gt-controls"><legend>B / B</legend><div class="gt-field"><label for="equilibrium-11-row">Row points at B / B</label><input id="equilibrium-11-row" data-setting type="number" min="-100" max="100" step="1" value="1"></div><div class="gt-field"><label for="equilibrium-11-column">Column points at B / B</label><input id="equilibrium-11-column" data-setting type="number" min="-100" max="100" step="1" value="1"></div></fieldset>
+  </div>
+</section>
+
+<section class="gt-panel" aria-labelledby="equilibrium-math-title">
+  <h2 id="equilibrium-math-title">Reveal the Incentives</h2>
+  <div id="gt-math" class="gt-math-beginner">
+    <h3>Work It Out, Step by Step</h3>
+    <p class="gt-note">Worked example using the default Prisoner’s Dilemma points. These numbers explain the starting game; they do not update when you edit the table.</p>
+    <p>In this game, A means cooperate: choose the action that helps both players when both do it. B means defect: choose the other action, which pays you more in this round if the other player’s choice stays the same. Test one switch at a time using subtraction.</p>
+    <ol>
+      <li><strong>Start at A / A.</strong> Each player gets 3 points. Together, they get \(3 + 3 = 6\).</li>
+      <li><strong>Let only the row player switch to B.</strong> The column player stays at A. The row player’s points rise from 3 to 5, a gain of \(5 - 3 = 2\). That means A / A is not an equilibrium: someone can gain by switching alone.</li>
+      <li><strong>Now test B / B.</strong> Each player gets 1 point. If the row player alone switches to A, their points drop from 1 to 0: \(0 - 1 = -1\). The minus sign means a loss of 1 point. The column player would also lose 1 by switching alone.</li>
+      <li><strong>Compare the result.</strong> B / B is an equilibrium because neither player can earn more by switching alone. But its combined score is only \(1 + 1 = 2\), compared with 6 at A / A.</li>
+    </ol>
+    <p>The question “Can I do better by switching alone?” is different from “Could we do better by changing together?” An equilibrium answers the first question.</p>
+    <p>This explorer checks <strong>pure choices</strong>: choose A or choose B for sure. A strategy that uses chance, such as a coin flip, is a <strong>mixed strategy</strong>. Some games have no equilibrium among pure choices but do have one using chance. A tie also matters: if switching changes your points by 0, you have not earned more, so that switch does not rule out an equilibrium.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert"><summary>For experts: formal model and assumptions</summary>
+    <h3>How to Read the Symbols</h3>
+    <p>These formulas write the same “Would switching help?” check in shorthand. Read the translations beside them first, or visit the <a href="{{ '/math-guide/' | relative_url }}">math reading guide</a> for more examples.</p>
+    <dl class="gt-symbol-key">
+      <dt>Choices and sets</dt>
+      <dd>\(r\) is the row player’s choice, and \(c\) is the column player’s choice. \(\{A,B\}\) is a set: a collection containing the choices A and B. \(\in\), read “is in,” says a choice belongs to that collection. So \(r,c\in\{A,B\}\) says each player chooses A or B. <a href="{{ '/math-guide/' | relative_url }}#sets-and-choices">Read about sets.</a></dd>
+      <dt>Payoff functions and labels</dt>
+      <dd>\(u_R(r,c)\), read “u for the row player at choices r and c,” looks up the row player’s points for those choices. The small \(R\) labels the row player; \(C\) labels the column player. The parentheses hold the two choices to look up. They do not mean multiplication. A general label \(i\) means either player. <a href="{{ '/math-guide/' | relative_url }}#functions">Read about functions</a> and <a href="{{ '/math-guide/' | relative_url }}#letters-and-labels">labels.</a></dd>
+      <dt>Best response and arg max</dt>
+      <dd>\(BR\) stands for “best response.” \(\arg\max\), read “arg max,” asks which choice gives the largest score. For example, if A earns 3 and B earns 5, the largest score is 5, but the arg max is the choice B. The text below arg max says which choices to check. A tie can produce two best choices. <a href="{{ '/math-guide/' | relative_url }}#sets-and-choices">Read about maximums and best choices.</a></dd>
+      <dt>Stars and comparisons</dt>
+      <dd>\(r^*\), read “r star,” and \(c^*\), “c star,” label the choices being tested as an equilibrium. The star is a label, not multiplication or a power. \(\ge\) means “greater than or equal to,” so matching the other score is allowed. <a href="{{ '/math-guide/' | relative_url }}#comparisons">Read about comparisons.</a></dd>
+      <dt>Chance, multiplication, and expected points</dt>
+      <dd>\(x\) and \(y\) are each player’s chance of choosing A, written from 0 to 1. A chance of 0.5 means 50%. The remaining chance of choosing B is \(1-x\) or \(1-y\). Letters written together mean multiply: \(xy\) means \(x\) times \(y\). Uppercase \(U_i(x,y)\) means player i’s expected points: the average these chances predict over many plays. <a href="{{ '/math-guide/' | relative_url }}#probability">Read about probability and averages.</a></dd>
+    </dl>
+    <h3>Best Responses and Nash Equilibrium</h3>
+    <p>Let \(r,c\in\{A,B\}\) be the row and column actions. The functions \(u_R(r,c)\) and \(u_C(r,c)\) give their respective payoffs. A best response maximizes a player’s payoff with the other player’s action fixed:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      BR_R(c)=\underset{r\in\{A,B\}}{\arg\max}\ u_R(r,c),
+      \qquad
+      BR_C(r)=\underset{c\in\{A,B\}}{\arg\max}\ u_C(r,c).
+    \]</div>
+    <p><strong>Read it aloud:</strong> “Hold the column player’s choice still and find the row choices that earn the most points. Then hold the row player’s choice still and do the same for the column player.” The subscripts on \(BR_R\) and \(BR_C\) tell you whose best choices you are finding.</p>
+    <p>These are sets, so both actions belong when payoffs tie. A pure Nash equilibrium \((r^*,c^*)\) is a mutual best response. Equivalently:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      u_R(r^*,c^*)\ge u_R(r,c^*)\quad\text{for every }r\in\{A,B\},
+    \]</div>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      u_C(r^*,c^*)\ge u_C(r^*,c)\quad\text{for every }c\in\{A,B\}.
+    \]</div>
+    <p><strong>Read the two checks aloud:</strong> “The row player’s current points are at least as high as the points from either row choice, while the column choice stays still. The same is true for the column player.” The pair \((r^*,c^*)\) lists the row choice first and the column choice second. “For every” means check both A and B, not just the better-looking one.</p>
+    <p>The implementation checks each of the four cells against each player’s other action, using weak inequalities to retain ties. It reports the change from a unilateral switch as alternative payoff minus current payoff. A cell is an equilibrium exactly when both reported changes are at most zero.</p>
+    <p>The model assumes two players, two actions each, simultaneous choices, known payoffs, and maximization of each player’s own payoff. The switching controls inspect incentives; they do not simulate a learning process or establish convergence.</p>
+    <p>For mixed strategies, let \(x\) be the probability that the row player chooses A and \(y\) the probability that the column player chooses A. With independent randomization, player \(i\)’s expected payoff is:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      \begin{aligned}
+      U_i(x,y)={}&amp;xy\,u_i(A,A)+x(1-y)\,u_i(A,B)\\
+      &amp;+(1-x)y\,u_i(B,A)+(1-x)(1-y)\,u_i(B,B).
+      \end{aligned}
+    \]</div>
+    <p><strong>Read it aloud:</strong> “For each of the four possible outcomes, multiply its chance by its points, then add the four answers.” Independent choices let us multiply the two players’ chances: if each chooses A with chance 0.5, A / A has chance \(0.5\times0.5=0.25\), or 25%. In that example all four outcomes have a 25% chance. Parentheses in \((1-x)(1-y)\) group two numbers to multiply; parentheses after \(u_i\) instead tell us which outcome’s points to look up.</p>
+    <p>Finite games have a Nash equilibrium allowing mixed strategies. This explorer searches only pure choices and does not calculate mixed equilibria. Thus “no pure equilibrium” does not mean “no equilibrium.”</p>
+    <p>The combined score \(u_R+u_C\) means add the row player’s points to the column player’s points. It is a teaching measure on a common point scale; meaningful comparisons between people require that scale. An equilibrium need not maximize this sum or be Pareto efficient. “Pareto efficient” means there is no available outcome that helps someone without hurting anyone else. Primary reading: John Nash, <a href="https://doi.org/10.1073/pnas.36.1.48">Equilibrium Points in N-Person Games (1950)</a>.</p>
+  </details>
+  <p class="gt-step">4. Transfer the Lesson</p>
+  <p>Two departments use incompatible standards. Each would benefit if both moved to one shared standard, but switching alone is costly. Does their current stable arrangement prove it is the best arrangement?</p>
+  <details><summary>Reveal a possible answer</summary><p>No. Stability against one person changing alone says nothing about a coordinated change by both. A shared commitment or a change in switching costs can make a better arrangement reachable. The coordination preset lets you examine this difference.</p></details>
+</section>

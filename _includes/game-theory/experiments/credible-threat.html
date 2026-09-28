@@ -1,0 +1,126 @@
+<section class="gt-panel" aria-labelledby="threat-choice-title">
+  <p class="gt-step">1. Make a Prediction</p>
+  <h2 id="threat-choice-title">“Enter My Market, and I’ll Fight.”</h2>
+  <p>You are a new business deciding whether to compete with an existing business. That business, called the <strong>incumbent</strong>, has threatened a price war. It gets to choose what to do <em>after</em> you enter. We use points to compare the results: more is better, and a negative number means a loss.</p>
+  <div class="gt-field">
+    <label for="threat-prediction">If you enter, what will the incumbent actually prefer?</label>
+    <select id="threat-prediction" data-threat-prediction>
+      <option value="">Choose a prediction</option>
+      <option value="fight">Fight</option>
+      <option value="accommodate">Share the market</option>
+      <option value="tie">Both replies pay equally well</option>
+    </select>
+  </div>
+  <div class="gt-table-wrap">
+    <table class="gt-table">
+      <caption>Points each business gets from the possible endings</caption>
+      <thead><tr><th scope="col">Sequence of decisions</th><th scope="col">You</th><th scope="col">Incumbent</th><th scope="col">Combined</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">You stay out → game ends</th><td data-threat-out-entrant>0</td><td data-threat-out-incumbent>5</td><td data-threat-out-total>5</td></tr>
+        <tr><th scope="row">You enter → incumbent shares</th><td data-threat-accommodate-entrant>2</td><td data-threat-accommodate-incumbent>3</td><td data-threat-accommodate-total>5</td></tr>
+        <tr><th scope="row">You enter → incumbent fights</th><td data-threat-fight-entrant>−1</td><td data-threat-fight-incumbent>−2</td><td data-threat-fight-total>−3</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="gt-step">2. Make Your Choice</p>
+  <div class="gt-actions">
+    <button class="gt-button" type="button" data-threat-enter>Enter the market</button>
+    <button class="gt-button gt-button-secondary" type="button" data-threat-out>Stay out</button>
+  </div>
+  <p class="gt-result" data-threat-result role="status" aria-live="polite"></p>
+</section>
+
+<section class="gt-panel" aria-labelledby="threat-incentives-title">
+  <p class="gt-step">3. Reveal the Incentives</p>
+  <h2 id="threat-incentives-title">Start at the Last Decision</h2>
+  <p class="gt-note" data-threat-analysis>Work backward from the incumbent’s decision after entry.</p>
+  <button class="gt-button gt-button-secondary" type="button" data-threat-step>1. Inspect the incumbent’s incentives</button>
+</section>
+
+<section class="gt-panel" aria-labelledby="threat-sandbox-title">
+  <p class="gt-step">4. Change One Assumption</p>
+  <h2 id="threat-sandbox-title">Put Something Behind the Threat</h2>
+  <p>The incumbent can put down a deposit before you decide. It gets that deposit back if you stay out or if it fights. If it shares the market, it loses the deposit to someone outside the game. Assume this rule will be enforced. Try a deposit of 6 points, then replay.</p>
+  <div class="gt-controls gt-grid">
+    <div class="gt-field"><label for="threat-shared-profit">Incumbent’s profit from sharing, before deposit</label><input id="threat-shared-profit" data-setting="sharedProfit" type="number" value="3" min="0" max="10" step="1"></div>
+    <div class="gt-field"><label for="threat-fight-cost">Incumbent’s loss from fighting</label><input id="threat-fight-cost" data-setting="fightCost" type="number" value="2" min="0" max="10" step="1"></div>
+    <div class="gt-field"><label for="threat-deposit">Deposit forfeited if the incumbent shares</label><input id="threat-deposit" data-setting="deposit" type="number" value="0" min="0" max="20" step="1"></div>
+    <div class="gt-field"><label for="threat-entrant-gain">Your profit if the market is shared</label><input id="threat-entrant-gain" data-setting="entrantGain" type="number" value="2" min="0" max="10" step="1"></div>
+    <div class="gt-field"><label for="threat-entrant-loss">Your loss if the incumbent fights</label><input id="threat-entrant-loss" data-setting="entrantLoss" type="number" value="1" min="0" max="10" step="1"></div>
+  </div>
+  <p class="gt-note">Changing a setting clears your previous choice. If two choices earn the same points, the app shows the tie. It cannot tell you which choice the business would make.</p>
+</section>
+
+<section class="gt-panel" aria-labelledby="threat-math-title">
+  <div id="gt-math" class="gt-math-beginner">
+    <h2 id="threat-math-title">Work It Out, Step by Step</h2>
+    <p>Start with the last choice, then work back to the first one. This method is called <strong>backward induction</strong>. Here, we assume each business chooses the result with more points.</p>
+    <p class="gt-note"><strong>Worked example:</strong> use the starting profits and losses, then change only the deposit from 0 to 6. These example numbers stay fixed; the table above follows your controls.</p>
+    <ol class="gt-math-steps">
+      <li><strong>With no deposit, compare the existing business's choices.</strong> Sharing earns 3 points. Fighting loses 2 points, written as \(-2\). Since 3 is greater than \(-2\), it prefers to share. Its warning alone does not change those numbers.</li>
+      <li><strong>Now consider your choice.</strong> If it shares, you earn 2 points by entering. Staying out earns 0. Since \(2 &gt; 0\), entering is better for you.</li>
+      <li><strong>Add a 6-point deposit.</strong> The existing business loses that deposit if it shares. Its points from sharing become:
+        <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[3 - 6 = -3.\]</div>
+        <p>Fighting still loses only 2 points. A loss of 2 is better than a loss of 3, so it now prefers to fight. That makes its threat <strong>credible</strong>: following through is the better choice when the time comes.</p>
+      </li>
+      <li><strong>Work back to your choice again.</strong> Entering now loses you 1 point. Staying out earns 0. Since \(0 &gt; -1\), staying out is better for you.</li>
+      <li><strong>Find the tie.</strong> With a deposit of 5, sharing gives \(3 - 5 = -2\). Fighting also gives \(-2\). The business could choose either. A deposit must be <em>greater than</em> 5 to make fighting the better choice.</li>
+    </ol>
+    <p><strong>The lesson:</strong> a threat depends on what someone will want to do later. A promise backed by a real consequence can change that choice. It can also make a bad situation worse if the other side enters anyway.</p>
+  </div>
+  <details id="gt-expert" class="gt-expert">
+    <summary>For experts: formal model and assumptions</summary>
+    <h3>How to Read the Symbols</h3>
+    <p>Each letter is a short name for a number or a choice. The equations below say the same things as the worked example, while letting the numbers change. The <a href="{{ '/math-guide/' | relative_url }}">math reading guide</a> explains these notations with more examples.</p>
+    <dl class="gt-symbol-key">
+      <dt>Amounts: \(S\), \(F\), \(D\), \(G\), and \(H\)</dt>
+      <dd>\(S\) is the existing business’s sharing profit; \(F\) is how many points it loses by fighting; \(D\) is its deposit. \(G\) is the new business’s sharing profit; \(H\) is how many points the new business loses if there is a fight. All five are amounts of zero or more. A minus sign turns a loss amount into its score: if \(F=2\), then \(-F=-2\) points.</dd>
+      <dt>Comparisons: \(\geq\), \(&lt;\), \(&gt;\), and \(=\)</dt>
+      <dd>Read \(S\geq0\) as “S is greater than or equal to zero.” Read \(&lt;\) as “less than,” \(&gt;\) as “greater than,” and \(=\) as “equal to.” They compare amounts, as in \(6&gt;5\). See <a href="{{ '/math-guide/' | relative_url }}#comparisons">comparing numbers</a>.</dd>
+      <dt>Points from a choice: \(u_I(\mathrm{share})\) and \(u_E(\mathrm{out})\)</dt>
+      <dd>The letter \(u\) means the points someone gets. The small lower labels \(I\) and \(E\), called <a href="{{ '/math-guide/' | relative_url }}#letters-and-labels">subscripts</a>, identify the incumbent (existing business) and entrant (new business). The parentheses name the choice being evaluated. Read \(u_I(\mathrm{share})\) as “the existing business’s points if it shares.”</dd>
+      <dt>Best choices: \(BR_I(D)\), braces, and a list of cases</dt>
+      <dd>\(BR\) stands for “best response.” Read \(BR_I(D)\) as “the existing business’s best choices with deposit D.” Braces such as \(\{\mathrm{share},\mathrm{fight}\}\) list the choices that tie for best. In a <a href="{{ '/math-guide/' | relative_url }}#sets-and-choices">cases formula</a>, use the row whose condition on the right is true.</dd>
+    </dl>
+    <h3>The Incumbent's Continuation Choice</h3>
+    <p>Let \(S\geq0\) be the incumbent's profit from sharing before forfeiture, \(F\geq0\) its fighting loss, and \(D\geq0\) its deposit. The incumbent's continuation payoffs after entry are:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[u_I(\mathrm{share})=S-D,\qquad u_I(\mathrm{fight})=-F.\]</div>
+    <p><strong>Read it aloud:</strong> “Sharing earns the sharing profit minus the lost deposit. Fighting earns the negative of the fighting loss.” With a 6-point deposit, these are \(3-6=-3\) and \(-2\).</p>
+    <p>The set of best replies, called its best-response correspondence, is:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      BR_I(D)=
+      \begin{cases}
+      \{\mathrm{share}\}, &amp; D &lt; S+F,\\
+      \{\mathrm{share},\mathrm{fight}\}, &amp; D=S+F,\\
+      \{\mathrm{fight}\}, &amp; D &gt; S+F.
+      \end{cases}
+    \]</div>
+    <p><strong>Read it aloud:</strong> “Share when the deposit is below the sharing profit plus the fighting loss. Either choice is best when they are equal. Fight when the deposit is above that total.” At the default profit and loss, compare the deposit with \(3+2=5\): a deposit of 4 means share, 5 means a tie, and 6 means fight.</p>
+    <p data-threat-math-values></p>
+    <h3>The Entrant's Initial Choice</h3>
+    <dl class="gt-symbol-key">
+      <dt>An allowed reply: \(a\in BR_I(D)\)</dt>
+      <dd>The letter \(a\) names the existing business’s reply: share or fight. The symbol \(\in\), read “is in” or “is one of,” says this reply must be among its best choices for that deposit.</dd>
+      <dt>Given a reply: \(u_E(\mathrm{enter}\mid a)\)</dt>
+      <dd>The upright bar \(\mid\) means “given” here. Read the whole expression as “the new business’s points from entering, given that the existing business replies with a.” This bar is a condition, not a division sign.</dd>
+    </dl>
+    <p>Let \(G\geq0\) be the entrant's profit if accommodated and \(H\geq0\) its loss if fought. For each incumbent continuation action \(a\in BR_I(D)\), the entrant compares:</p>
+    <div class="gt-equation" tabindex="0" role="group" aria-label="Mathematical expression; scroll sideways if needed">\[
+      u_E(\mathrm{enter}\mid a)=
+      \begin{cases}G,&amp; a=\mathrm{share},\\-H,&amp; a=\mathrm{fight},\end{cases}
+      \qquad u_E(\mathrm{out})=0.
+    \]</div>
+    <p><strong>Read it aloud:</strong> “Entering earns the sharing profit if the other business shares, or loses the fighting amount if it fights. Staying out earns zero.” With the defaults, compare 2 with 0 if sharing is expected, or −1 with 0 if fighting is expected.</p>
+    <p>The entrant compares its payoff after the incumbent’s best response with 0 from staying out. An entrant payoff of exactly 0 creates another tie. The results enumerate pure backward-induction outcomes; mixed play at indifference is not enumerated.</p>
+    <p>This is a one-shot game with known payoffs, observable decisions, payoff-maximizing players, and a perfectly enforceable deposit. The incumbent earns 5 when entry is deterred. Posting a returned deposit has no financing cost here. The deposit is selected by you, not optimized in an earlier modeled stage. Combined payoffs cover these two players only; a forfeited deposit leaves their total.</p>
+    <p>These are theoretical incentives, not a prediction of how every person or business behaves. Reputation, uncertainty, legal constraints, and repeated interaction could change the game.</p>
+    <p>Concept reference: <a href="https://ocw.mit.edu/courses/14.126-game-theory-spring-2024/mit14_126_s24_lecture_2_refinements.pdf">MIT’s notes on backward induction and noncredible threats</a>.</p>
+  </details>
+</section>
+
+<section class="gt-panel" aria-labelledby="threat-transfer-title">
+  <p class="gt-step">5. Take It Somewhere Else</p>
+  <h2 id="threat-transfer-title">Would a Deadline Change the Decision?</h2>
+  <p>A team says it will cancel a project if a supplier misses Friday’s deadline. On Monday, canceling would cost the team more than accepting a late delivery. Does repeating the warning make cancellation credible?</p>
+  <details><summary>Reveal the reasoning</summary><p>A stronger warning does not change Monday’s payoffs. An enforceable commitment might, but it also removes flexibility and can make both sides worse off if the deadline is missed. Check who controls the commitment, whether it will be enforced, and what the team will prefer when the decision actually arrives.</p></details>
+</section>

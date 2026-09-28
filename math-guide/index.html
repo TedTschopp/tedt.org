@@ -1,0 +1,211 @@
+---
+layout: game-theory
+date: 2026-09-27
+last_modified_at: 2026-09-27
+math: true
+title: Math Symbols, in Plain English
+description: A friendly guide to reading math on TedT.org, with spoken translations, small number examples, and help with the symbols used in the Game Theory Playground.
+permalink: /math-guide/
+image: /img/game-theory/math-guide.webp
+image-alt: "Colored counting blocks, an abacus, and a balanced wooden scale beside blank paper and a pencil."
+image_width: 1672
+image_height: 941
+---
+<nav class="gt-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a><span aria-hidden="true"> / </span><span>Math Guide</span></nav>
+<header class="gt-heading">
+  <p class="gt-eyebrow">A Reading Guide for Ted’s Public Workbench</p>
+  <h1>Math Symbols,<br>in Plain English</h1>
+  <p class="gt-lead">A symbol is a short way to write an idea. Start with the idea.</p>
+  <p>This guide starts with junior-high pre-algebra: adding, subtracting, multiplying, dividing, and using a letter for a number. It also translates the advanced symbols in the <a href="{{ '/game-theory/' | relative_url }}">Game Theory Playground</a>. A <strong>formula</strong> uses numbers and symbols to describe a rule or relationship. You can read what it says without having to work out the rule from scratch.</p>
+  <p>Look up the symbol you need, read the words beside it, and try the small example. You do not need to memorize this page or read it from beginning to end.</p>
+  <p class="gt-meta">Reading guide <span aria-hidden="true">·</span> Updated <time datetime="2026-09-27">Sept. 27, 2026</time></p>
+</header>
+{% include game-theory/hero-image.html src=page.image alt=page.image-alt variant="page" lcp=true %}
+
+<nav class="gt-guide-nav" aria-labelledby="guide-contents-title">
+  <h2 id="guide-contents-title">Find the Symbol You Need</h2>
+  <div class="gt-grid">
+    <div><h3>Start With Familiar Ideas</h3><ul>
+      <li><a href="#letters-and-labels">Letters, small labels, stars, and Greek letters</a></li>
+      <li><a href="#operations">Fractions, multiplication, powers, and parentheses</a></li>
+      <li><a href="#comparisons">Equals, approximately, greater than, and less than</a></li>
+      <li><a href="#functions">A letter followed by parentheses: functions</a></li>
+      <li><a href="#min-max">“min,” “max,” and keeping a number in range</a></li>
+    </ul></div>
+    <div><h3>When an Expert Formula Uses These</h3><ul>
+      <li><a href="#sums">The large Σ: adding a list</a></li>
+      <li><a href="#probability">Chance, percentages, and expected values</a></li>
+      <li><a href="#tables-and-vectors">Pairs, lists, and tables of numbers</a></li>
+      <li><a href="#sets-and-choices">Braces, ∈, best choices, and rule tables</a></li>
+      <li><a href="#rates-of-change">Prime marks: rates of change</a></li>
+    </ul></div>
+  </div>
+</nav>
+
+<section class="gt-guide-section" id="reading-a-formula" aria-labelledby="guide-reading-title">
+  <h2 id="guide-reading-title">Read One Piece at a Time</h2>
+  <p>Suppose a game gives you 3 points each round. Call the number of rounds <em>r</em>.</p>
+  <div class="gt-equation" tabindex="0" role="group" aria-label="Points formula; scroll sideways if needed">\[P(r)=3r\]</div>
+  <ol>
+    <li><strong>Name the input:</strong> an input is the number or choice you put into a rule. Here, <em>r</em> is how many rounds you play.</li>
+    <li><strong>Name the result:</strong> “P of r” means your total points for that many rounds.</li>
+    <li><strong>Read the instruction:</strong> multiply the number of rounds by 3. The multiplication sign is left out in “3r.”</li>
+    <li><strong>Try a number:</strong> for 4 rounds, the total is 3 × 4 = 12 points.</li>
+  </ol>
+  <p>Always check the nearby definition. The same letter can mean something different on another page. Here <em>P</em> means points; elsewhere it might stand for probability. Capital and lowercase letters can also have different meanings.</p>
+</section>
+
+<section class="gt-guide-section" id="letters-and-labels" aria-labelledby="guide-letters-title">
+  <h2 id="guide-letters-title">Letters and Small Labels</h2>
+  <dl class="gt-symbol-key">
+    <dt>\(x\), \(n\), or another letter<span class="gt-symbol-reading">In words: a named number</span></dt>
+    <dd>A <strong>variable</strong> is a name for a number that can change or is not yet known. If <em>n</em> is the number of players, “n = 8” means there are 8 players. A <strong>constant</strong> is a number we hold fixed in that calculation.</dd>
+    <dt>\(u_i\)<span class="gt-symbol-reading">In words: “u sub i,” or “player i’s points”</span></dt>
+    <dd>The small lower label is a <strong>subscript</strong>. It tells you which item you mean. If <em>i</em> is 2, <em>u</em> with the label 2 means player 2’s points. It does not mean “u times 2.” Other labels name what we are measuring: R for the row player, C for the column player, or “outer” for an outer road route.</dd>
+    <dt>\(s_{-i}\)<span class="gt-symbol-reading">In words: “everyone else’s choices”</span></dt>
+    <dd>In these game formulas, the label “−i” means all the players except player <em>i</em>. It is a label, not an instruction to subtract a player.</dd>
+    <dt>\(x^*\)<span class="gt-symbol-reading">In words: “x star”</span></dt>
+    <dd>The star marks a special value chosen by the explanation, such as an equilibrium choice or a best result. An <strong>equilibrium</strong> in these games is a situation where no player gains by changing only their own choice. That situation does not have to be the best result for the group. The star is a label, not multiplication; check what it marks in that formula.</dd>
+    <dt>NE and SO<span class="gt-symbol-reading">In words: two different kinds of result</span></dt>
+    <dd><strong>NE</strong> stands for <strong>Nash equilibrium</strong>, the no-gain-from-switching-alone situation just described. <strong>SO</strong> stands for <strong>social optimum</strong>: the best result for the group according to the model’s chosen measure. In the traffic example, that measure is everyone’s total driving time, so SO means the plan with the lowest total. It need not give each person their shortest trip.</dd>
+    <dt>\(q_i^t\)<span class="gt-symbol-reading">In words: “team i’s share at review t”</span></dt>
+    <dd>In the coordination experiment, the raised <em>t</em> labels a review number. It is not a <a href="#operations">power, which indicates repeated multiplication</a>. The lower <em>i</em> labels the team. At review 3, the raised 3 simply names that review; it does not ask you to multiply anything. The local definition tells you when a raised mark is a label.</dd>
+    <dt>\(x^T\)<span class="gt-symbol-reading">In words: “x transpose”</span></dt>
+    <dd>The raised capital T means to turn a column of numbers into a row, or a row into a column. It changes their arrangement, not their values. The <a href="#tables-and-vectors">tables and vectors example</a> shows how this is used.</dd>
+    <dt>\(\tau\) and \(\varepsilon\)<span class="gt-symbol-reading">In words: “tau” and “epsilon”</span></dt>
+    <dd>These are Greek letters used as names. In the playground, tau (rhymes with “cow”) names a traffic toll, and epsilon (“EP-sih-lon”) names a chance of a mistake. They work like familiar letters such as x or y; the definition beside the formula tells you what each one means.</dd>
+    <dt>\(\bar u\) and \(\hat q\)<span class="gt-symbol-reading">In words: “u bar” and “q hat”</span></dt>
+    <dd>The line above <em>u</em> marks an <strong>average</strong>. When every number counts equally, add the numbers and divide by how many there are: the average of 2 and 4 is (2 + 4) ÷ 2 = 3. The little roof above <em>q</em> marks an <strong>estimate</strong>: a value worked out from the information available, which may differ from what actually happens. See the <a href="#sums">longer average example</a>.</dd>
+  </dl>
+</section>
+
+<section class="gt-guide-section" id="operations" aria-labelledby="guide-operations-title">
+  <h2 id="guide-operations-title">Familiar Arithmetic in a New Shape</h2>
+  <dl class="gt-symbol-key">
+    <dt>\(\frac{6}{3}\)<span class="gt-symbol-reading">In words: “six divided by three”</span></dt>
+    <dd>The fraction bar means divide the entire top by the entire bottom. The top is called the <strong>numerator</strong>; the bottom is the <strong>denominator</strong>. In 6 over 3, the numerator is 6 and the denominator is 3, so the answer is 2. For (4 + 2) over 3, add the top first, then divide: 6 ÷ 3 = 2. The denominator cannot be zero: dividing by zero does not give a single numerical answer.</dd>
+    <dt>\(3x\), \(xy\), or \(x\cdot y\)<span class="gt-symbol-reading">In words: multiplication</span></dt>
+    <dd>Numbers and variables written next to one another often mean multiply. If <em>x</em> is 2 and <em>y</em> is 5, then “xy” means 2 × 5 = 10. A centered dot can also mean multiply. A <strong>function</strong> is a named rule that takes a number or choice and gives a result. In a function such as “P(r),” the parentheses hold what you put into the rule. See <a href="#functions">functions and their inputs</a>.</dd>
+    <dt>\(x^2\)<span class="gt-symbol-reading">In words: “x squared”</span></dt>
+    <dd>The small raised 2 is an <strong>exponent</strong>. With an exponent of 1, 2, 3, and so on, it tells you how many copies of the number to multiply together. Each number being multiplied is a <strong>factor</strong>. For example, 3 squared means 3 × 3 = 9: two factors, each equal to 3. <strong>Cubed</strong> means three copies multiplied together: 2 cubed is 2 × 2 × 2 = 8. An expression such as x squared is called a <strong>power</strong>. Any number other than zero raised to the zero power equals 1.</dd>
+    <dt>\(2(3+1)\)<span class="gt-symbol-reading">In words: “two times the quantity three plus one”</span></dt>
+    <dd>Parentheses keep a group together. Work inside them first: 3 + 1 = 4, then 2 × 4 = 8. Next do powers, then multiplication and division from left to right, then addition and subtraction from left to right. Square or curly brackets can also group a calculation.</dd>
+    <dt>\(-2\)<span class="gt-symbol-reading">In words: “negative two”</span></dt>
+    <dd>A minus sign before a number says it is below zero. In a points game it can mean a loss. Subtracting a larger cost from a smaller reward can produce a negative result: 3 − 5 = −2.</dd>
+  </dl>
+</section>
+
+<section class="gt-guide-section" id="comparisons" aria-labelledby="guide-comparisons-title">
+  <h2 id="guide-comparisons-title">Compare Two Amounts</h2>
+  <dl class="gt-symbol-key">
+    <dt>\(=\), \(\ne\), and \(\approx\)<span class="gt-symbol-reading">In words: equal, not equal, and approximately equal</span></dt>
+    <dd>3 + 2 = 5 says both sides have the same value. 3 ≠ 5 says they differ. The wavy sign in 1 ÷ 3 ≈ 0.33 says the answer is close, often because we rounded it.</dd>
+    <dt>\(&gt;\) and \(&lt;\)<span class="gt-symbol-reading">In words: greater than and less than</span></dt>
+    <dd>5 &gt; 3 means “5 is greater than 3.” Read 3 &lt; 5 as “3 is less than 5.” The wide, open end faces the larger number.</dd>
+    <dt>\(\ge\) and \(\le\)<span class="gt-symbol-reading">In words: greater than or equal to, and less than or equal to</span></dt>
+    <dd>The extra line allows a tie. “Points ≥ 3” includes exactly 3 points. “Cost ≤ 5” includes exactly 5. Expert text may call these <strong>weak inequalities</strong>; “weak” just means equality is allowed.</dd>
+    <dt>\(0\le p\le1\)<span class="gt-symbol-reading">In words: “p is between zero and one, including both ends”</span></dt>
+    <dd>This joins two comparisons: <em>p</em> is at least 0 and at most 1. For example, 0.25 fits; 1.2 does not.</dd>
+  </dl>
+</section>
+
+<section class="gt-guide-section" id="functions" aria-labelledby="guide-functions-title">
+  <h2 id="guide-functions-title">Functions Are Named Rules</h2>
+  <p>A <strong>function</strong> is a named rule that takes an <strong>input</strong> and gives a result. The input is the number or choice you put into the rule. Read \(C(z)\) as “C of z”: the cost when the input is <em>z</em>. Here the parentheses hold the input; they do not mean “C times z.”</p>
+  <p>For example, if the rule is \(C(z)=2z+5\), then an input of 3 gives 2 × 3 + 5 = 11. We write \(C(3)=11\).</p>
+  <p>Some rules use more than one input. Read \(u_R(r,c)\) as “the row player’s points when the row choice is r and the column choice is c.” The comma separates the inputs. You can find the answer by looking up that row and column in a points table.</p>
+  <p><a href="{{ '/game-theory/equilibrium-explorer/' | relative_url }}#gt-math">Try reading a points table in Why Are We Stuck?</a></p>
+</section>
+
+<section class="gt-guide-section" id="min-max" aria-labelledby="guide-minmax-title">
+  <h2 id="guide-minmax-title">“min” and “max” Pick a Number</h2>
+  <p><strong>min</strong> means choose the smallest number listed. <strong>max</strong> means choose the largest. So \(\min\{3,7\}=3\) and \(\max\{3,7\}=7\). The braces keep the choices together.</p>
+  <p>They can also keep an answer inside an <strong>allowed range</strong>: the values from the smallest permitted amount to the largest. Here the range runs from 0 through 10. Read the inside instruction first:</p>
+  <div class="gt-equation" tabindex="0" role="group" aria-label="Keeping a number between zero and ten; scroll sideways if needed">\[\min\{10,\max\{0,x\}\}\]</div>
+  <ol>
+    <li><strong>Inside:</strong> choose the larger of 0 and <em>x</em>. This stops the answer from going below 0.</li>
+    <li><strong>Outside:</strong> choose the smaller of 10 and that answer. This stops it from going above 10.</li>
+    <li><strong>Try it:</strong> an input of −3 gives 0; an input of 6 gives 6; an input of 14 gives 10.</li>
+  </ol>
+  <p>Expert text sometimes calls this “clipping” a value. In the traffic experiment, it prevents the number of shortcut drivers from being negative or larger than the total number of drivers.</p>
+</section>
+
+<section class="gt-guide-section" id="sums" aria-labelledby="guide-sums-title">
+  <h2 id="guide-sums-title">The Large Σ Means “Add These Up”</h2>
+  <p>Capital sigma (“SIG-muh”) is a compact way to write a long addition. The label below tells you where to start. The number above tells you where to stop, including that number.</p>
+  <div class="gt-equation" tabindex="0" role="group" aria-label="Sum example; scroll sideways if needed">\[\sum_{i=1}^{3}x_i=x_1+x_2+x_3\]</div>
+  <p><strong>Read it:</strong> “Add x sub i, for i from 1 through 3.” If the three scores are 2, 4, and 6, this means 2 + 4 + 6 = 12. The letter <em>i</em> is just a counter that takes the values 1, 2, and 3.</p>
+  <p>The upper number on a summation sign is a stopping label, not an exponent. If the lower label says “j ≠ i,” add the listed items except the one labeled <em>i</em>. Two summation signs mean repeat the addition for two lists: for example, add every cell across each row, then add the row totals.</p>
+  <p>To find a usual average, add the values and divide by how many there are. For these scores, 12 ÷ 3 = 4.</p>
+</section>
+
+<section class="gt-guide-section" id="probability" aria-labelledby="guide-probability-title">
+  <h2 id="guide-probability-title">Chance and Expected Values</h2>
+  <dl class="gt-symbol-key">
+    <dt>\(p=0.25=25\%\)<span class="gt-symbol-reading">In words: “a one-in-four chance”</span></dt>
+    <dd>A <strong>probability</strong> is a chance written from 0 to 1. Multiply by 100 to turn it into a percentage. Zero means impossible under the rules; 1 means certain. A 25% chance does not promise exactly one success in every four tries.</dd>
+    <dt>\(1-p\)<span class="gt-symbol-reading">In words: “the chance of the other outcome”</span></dt>
+    <dd>When two outcomes cover all possibilities and cannot both happen, their chances add to 1. If the chance of continuing is 0.75, the chance of stopping is 1 − 0.75 = 0.25.</dd>
+    <dt>\(P(X=3)\) or \(\Pr(X=3)\)<span class="gt-symbol-reading">In words: “the chance that X equals three”</span></dt>
+    <dd>Here <em>X</em> names a result that can vary by chance. A <strong>fair die</strong> has the same chance of landing on each face. For a fair six-sided die, the chance of rolling a 3 is 1 ÷ 6. “Pr” is another way to write probability.</dd>
+    <dt>\(E[X]\) or \(\mathbb{E}[X]\)<span class="gt-symbol-reading">In words: “the expected value of X”</span></dt>
+    <dd>This is the average predicted by the possible results and their chances over many repetitions. Multiply each possible result by its chance, then add. A <strong>fair coin</strong> has a 50% chance of heads and a 50% chance of tails. If it pays 4 points for heads and 0 for tails, the expected score is 0.5 × 4 + 0.5 × 0 = 2 points. One flip still pays either 4 or 0.</dd>
+    <dt>\(pq\)<span class="gt-symbol-reading">In words: “p times q,” when choices are independent</span></dt>
+    <dd>If one event has chance 0.5 and an independent event has chance 0.2, the chance of both is 0.5 × 0.2 = 0.1. <strong>Independent</strong> means learning one result does not change the other’s chance. Do not multiply the chances this way without that assumption.</dd>
+    <dt>Percentage points<span class="gt-symbol-reading">In words: a difference between percentages</span></dt>
+    <dd>Moving from 40% to 60% adds 20 percentage points. It is a 50% increase relative to the starting value, because 20 ÷ 40 = 0.5. The coordination control uses percentage points: +20 means add 20 directly to the percentage.</dd>
+  </dl>
+  <p><a href="{{ '/game-theory/mixed-strategy/' | relative_url }}#gt-math">Try the ticket-bag example in Be Unpredictable.</a></p>
+</section>
+
+<section class="gt-guide-section" id="tables-and-vectors" aria-labelledby="guide-tables-title">
+  <h2 id="guide-tables-title">Pairs, Lists, and Tables</h2>
+  <p>A <strong>pair</strong> such as (3, 5) lists two values in order. In a playground payoff table, the first is the row player’s points and the second is the column player’s points. The comma is not division.</p>
+  <p>A <strong>vector</strong> is an ordered list. For example, \(p=(0.5,0.25,0.25)\) can mean a 50% chance of rock, 25% of paper, and 25% of scissors, in that order. Those chances add to 1.</p>
+  <p>A raised capital T means <strong>transpose</strong>: turn a row into a column, or a column into a row. For example, \((2,4,6)^T\) puts 2, 4, and 6 vertically instead of side by side. The values stay the same. In the expert formula \(x^TAy\), <em>x</em> and <em>y</em> list the two players’ chances and <em>A</em> is the points table. Read it as: “Multiply each outcome’s points by its chance, then add them all.”</p>
+  <p>A <strong>matrix</strong> is a rectangular table of numbers. In the expert rock-paper-scissors table, each row is one of your choices and each column is one of your opponent’s. The entry gives your points: 1 for a win, 0 for a tie, −1 for a loss. The row and column labels explain how to look up an entry.</p>
+  <p>Read \(A_{ij}\) as “the entry of table A in row i, column j.” If the rows and columns are numbered starting with 1, \(A_{23}\) is row 2, column 3. It does not mean “A times twenty-three.”</p>
+  <p>For expected points, multiply each cell’s points by the chance of landing in that cell, then add the results. The compact matrix formula is shorthand for adding those results.</p>
+</section>
+
+<section class="gt-guide-section" id="sets-and-choices" aria-labelledby="guide-sets-title">
+  <h2 id="guide-sets-title">Lists of Choices and Rules With Cases</h2>
+  <dl class="gt-symbol-key">
+    <dt>\(\{A,B\}\)<span class="gt-symbol-reading">In words: “the set containing A and B”</span></dt>
+    <dd>A <strong>set</strong> is a collection of allowed items. Curly braces can mark that collection. Check the context: braces around a calculation may simply keep a group together.</dd>
+    <dt>\(r\in\{A,B\}\)<span class="gt-symbol-reading">In words: “r is one of A or B”</span></dt>
+    <dd>The symbol ∈ means “belongs to.” Here the row player must choose one of those two actions. The symbol ∉ means “does not belong to.”</dd>
+    <dt>“arg max”<span class="gt-symbol-reading">In words: “which choice gives the largest result?”</span></dt>
+    <dd>Suppose choice A pays 3 points and choice B pays 5. The maximum payoff is the number 5; the <strong>arg max</strong> is the choice B that earns it. If both pay 5, both choices belong in the answer. “Arg min” asks which choice gives the smallest result.</dd>
+    <dt>\(BR_i\)<span class="gt-symbol-reading">In words: “player i’s best responses”</span></dt>
+    <dd>“BR” abbreviates <strong>best response</strong>: the choice or choices giving a player the most points when the other players’ choices stay fixed. A tie can give more than one best response.</dd>
+    <dt>\(u_E(\text{enter}\mid a)\)<span class="gt-symbol-reading">In words: “the new business’s points for entering, given action a”</span></dt>
+    <dd>An <strong>entrant</strong> is the new business deciding whether to start competing with an existing business. The vertical bar means <strong>given</strong>: work out the result assuming the existing business takes action <em>a</em>. If that action is “share,” it accepts competition from the new business; look up the points for that situation. The bar is not a division sign.</dd>
+    <dt>A tall brace beside several rows<span class="gt-symbol-reading">In words: “use the row whose condition fits”</span></dt>
+    <dd>This is a <strong>piecewise rule</strong>. For example: charge 0 if a child is under 5; charge 3 if the child is 5 or older. Check the age, then use the matching row. Do not add all the rows together.</dd>
+    <dt>“max min”<span class="gt-symbol-reading">In words: “choose the best of the worst cases”</span></dt>
+    <dd>First find each plan’s lowest possible score. Then pick the plan with the highest of those low scores. If plan A’s worst score is −2 and plan B’s is 0, this rule chooses B. The order matters; follow the explanation beside the formula.</dd>
+  </dl>
+</section>
+
+<section class="gt-guide-section" id="rates-of-change" aria-labelledby="guide-rates-title">
+  <h2 id="guide-rates-title">Prime Marks Describe Change</h2>
+  <p><strong>Calculus</strong> is a branch of math that studies change and how small amounts add up. Here we only need its language for change. You can play the experiments and follow their number examples without studying calculus.</p>
+  <p>A <strong>graph</strong> can show a rule as a picture: moving right increases the input, and the height shows the result. Its <strong>slope</strong> describes how much the height changes compared with how far you move right. A positive slope rises, a negative slope falls, and a slope of zero is level at that point. A graph line that bends is a <strong>curve</strong>; its slope can change from one place to another.</p>
+  <dl class="gt-symbol-key">
+    <dt>\(L'(z)\)<span class="gt-symbol-reading">In words: “L prime of z”</span></dt>
+    <dd>The small stroke is a <strong>prime</strong> mark. Here it means a <strong>derivative</strong>: the rate of change, or slope, at one input value. It describes how fast the result L changes as the input z increases a tiny amount. A positive rate means the result is increasing there; a negative rate means it is decreasing.</dd>
+    <dt>\(L''(z)\)<span class="gt-symbol-reading">In words: “L double prime of z”</span></dt>
+    <dd>This is the <strong>second derivative</strong>: how the slope itself changes as the input grows. When it is positive throughout the values we are checking, the slope keeps getting larger. The result might still be falling, but less steeply. If the slope changes from negative to positive, the result changes from falling to rising, giving a lowest point there.</dd>
+  </dl>
+  <p><strong>A small example:</strong> if a cost rule is \(L(z)=3z+2\), its rate of change is 3: each increase of 1 in the input adds 3 to the cost. Other rules can have rates that vary. The traffic expert section uses these marks to explain how it finds the best shared plan. It also checks the <strong>endpoints</strong>: the smallest and largest allowed inputs. If the allowed inputs run from 0 through 10, those endpoints are 0 and 10.</p>
+  <p>Prime marks have other uses elsewhere, such as marking a different version of a value. Read the local definition before assuming a prime always means a derivative.</p>
+  <p><a href="{{ '/game-theory/traffic-paradox/' | relative_url }}#gt-math">See the traffic example worked out with ordinary arithmetic.</a></p>
+</section>
+
+<section class="gt-guide-section" aria-labelledby="guide-next-title">
+  <h2 id="guide-next-title">Take the Words Back to the Formula</h2>
+  <p>Ask three questions: What does each letter name? What operation does each symbol ask me to do? What would happen if I put in a small number?</p>
+  <p>If a result measures minutes, points, or people, keep that unit with it. If a page changes a letter’s meaning, use the new definition. You can always return to the experiment’s “Work It Out, Step by Step” section before opening the expert details.</p>
+  <div class="gt-actions"><a class="gt-button" href="{{ '/game-theory/' | relative_url }}">Explore the Game Theory Playground</a><a href="#guide-contents-title">Back to the symbol list</a></div>
+</section>
