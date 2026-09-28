@@ -70,9 +70,6 @@
 #inside-ai-app .ia-topic-dialog .number-circle {font-weight:700;color:var(--ia-primary,#00446f);}
 #inside-ai-app .ia-topic-dialog ul {list-style:disc;padding-left:1.5rem;}
 #inside-ai-app .ia-topic-dialog blockquote {border-left:3px solid var(--ia-accent,#e86027);padding:.5rem 1rem;}
-@media(prefers-color-scheme:dark){html:not([data-bs-theme=light]) #inside-ai-app .ia-diagram-canvas {filter:invert(.9) hue-rotate(175deg);}}
-html[data-bs-theme=dark] #inside-ai-app .ia-diagram-canvas {filter:invert(.9) hue-rotate(175deg);}
-html[data-bs-theme=light] #inside-ai-app .ia-diagram-canvas {filter:none;}
 @media(max-width:800px){#inside-ai-app .ia-sampling {grid-template-columns:1fr 1fr;}#inside-ai-app .ia-reading-grid {grid-template-columns:1fr;}#inside-ai-app .ia-evidence {font-size:.75rem;}}
 @media(max-width:480px){#inside-ai-app .ia-sampling {grid-template-columns:1fr;}#inside-ai-app .ia-button {width:100%;}#inside-ai-app .ia-actions {width:100%;}#inside-ai-app .ia-diagram-controls .ia-field {width:100%;}#inside-ai-app .ia-topic-list .ia-button {width:auto;}#inside-ai-app .ia-dialog-close {width:auto;}}
 @media(prefers-reduced-motion:reduce){#inside-ai-app *,#inside-ai-app *::before,#inside-ai-app *::after {animation-duration:.001ms!important;transition:none!important;scroll-behavior:auto!important;}}
@@ -83,7 +80,6 @@ html[data-bs-theme=light] #inside-ai-app .ia-diagram-canvas {filter:none;}
 #inside-ai-app .ia-diagram-canvas svg text {fill:var(--ia-ink,#07090f)!important;}
 #inside-ai-app .ia-diagram-canvas :is(.head-block,.head-card,.bg-white,.weight-popover-card,.popover,.tooltip) {background-color:var(--ia-panel,#fff)!important;color:var(--ia-ink,#07090f)!important;}
 #inside-ai-app .ia-diagram-canvas :is(.dim,.dim-partial) {background:var(--ia-panel,#fff);}
-#inside-ai-app .ia-diagram-canvas .prob-dim {background:linear-gradient(180deg,transparent,var(--ia-panel,#fff));}
 #inside-ai-app .ia-diagram-canvas stop[stop-color='#fff'],#inside-ai-app .ia-diagram-canvas stop[stop-color='white'] {stop-color:var(--ia-panel,#fff);}
 #inside-ai-app .ia-illustration-label {font: .85rem/1.5 Inter,sans-serif;color:var(--ia-ink,#07090f);padding:.5rem;max-width:30rem;}
 
@@ -94,13 +90,54 @@ html[data-bs-theme=light] #inside-ai-app .ia-diagram-canvas {filter:none;}
 #inside-ai-app .ia-diagram-canvas .step {min-height:0;grid-template-rows:var(--title-height) minmax(0,1fr);}
 #inside-ai-app .ia-diagram-canvas .column .label {white-space:nowrap;width:max-content;max-width:7rem;}
 #inside-ai-app .ia-diagram-canvas .attention .column .title {white-space:nowrap;width:max-content;}
-#inside-ai-app .ia-diagram-canvas .softmax>.content {max-height:var(--content-height);overflow:visible;clip-path:inset(0 -5rem 0 -10rem);}
-#inside-ai-app .ia-diagram-canvas .softmax.expanded>.content {overflow:auto;clip-path:none;}
 #inside-ai-app .ia-diagram-canvas .text-box span {white-space:nowrap;}
-#inside-ai-app .ia-diagram-canvas .softmax .second-column .dim {background:linear-gradient(180deg,transparent 0%,var(--ia-panel,#fff) 70%)!important;}
 #inside-ai-app .ia-diagram-canvas .weight-popover-title {background:var(--ia-soft,#f0eee8)!important;border-color:var(--ia-line,#bac1c6)!important;}
 #inside-ai-app .ia-diagram-canvas .weight-popover-content :is(.token-label,.size,.operator) {color:var(--ia-ink,#07090f)!important;}
 #inside-ai-app .ia-diagram-canvas .tooltip-box {background:var(--ia-panel,#fff);color:var(--ia-ink,#07090f);}
 #inside-ai-app .ia-diagram-canvas .operation-col.residual {opacity:1!important;}
 #inside-ai-app .ia-diagram-canvas .qkv .sub-vector {opacity:1;}
 #inside-ai-app .ia-diagram-canvas .qkv .head-rest span {opacity:1;background:var(--ia-panel,#fff);color:var(--ia-ink,#07090f);text-shadow:none;border-radius:2px;}
+
+/* Text stays on an opaque surface; diagram focus never reduces its contrast. */
+#inside-ai-app .ia-diagram-canvas :is(.label,.guide-text,.matrix-label,.color-scale .val,.title-text,.cutoff-label,.text-box > span,.text-box > [role=group]) {background:var(--ia-panel);color:var(--ia-ink)!important;box-decoration-break:clone;border-radius:2px;}
+#inside-ai-app .ia-diagram-canvas :is(.matrix-label,.color-scale .val) {color:var(--ia-ink)!important;}
+#inside-ai-app .ia-diagram-canvas svg text {paint-order:stroke fill;stroke:var(--ia-panel);stroke-width:3px;stroke-linejoin:round;}
+#inside-ai-app .ia-diagram-canvas :is(.prob-dim,.softmax .second-column .dim) {display:none;}
+#inside-ai-app .ia-diagram-canvas .softmax :is(.vector-box,.text-box.filtered,.text-box.sample_highlight,.cutoff-label) {background:var(--ia-soft)!important;color:var(--ia-ink)!important;}
+#inside-ai-app .ia-diagram-canvas .softmax :is(.text-box.highlight,.text-box.final_token_highlight) {outline:2px solid var(--ia-accent);outline-offset:-2px;}
+/* Opaque boundaries carry the structure; pastel fills remain illustrative. */
+#inside-ai-app .ia-diagram-canvas .sankey-path {stroke:var(--ia-primary);stroke-width:1.5px;vector-effect:non-scaling-stroke;}
+#inside-ai-app .ia-diagram-canvas .sankey-path:hover {stroke-width:3px;}
+#inside-ai-app .ia-diagram-canvas :is(.vector:not(.vocab),.sub-vector,.head-block,.head-card,.transformer-bounding,.softmax .vector-box,.color-scale .bar) {outline:1px solid var(--ia-primary);outline-offset:0;}
+#inside-ai-app .ia-diagram-canvas .vector:not(.vocab) {box-shadow:inset 0 0 0 1px #344e63;}
+#inside-ai-app .ia-diagram-canvas :is(.operation-col,.operation-col .cell) svg path,#inside-ai-app .ia-diagram-canvas .residual-connector {stroke:var(--ia-primary);}
+#inside-ai-app .ia-diagram-canvas .operation-col .cell:not(.active) svg .icon {fill:var(--ia-primary);opacity:1;}
+/* A paper inset keeps the full heatmap scale readable in either site theme. */
+#inside-ai-app .ia-diagram-canvas .matrix-svg {background:#fffefa;outline:1px solid var(--ia-primary);}
+#inside-ai-app .ia-diagram-canvas .matrix-svg :is(circle.cell,rect.cell:not([fill='rgba(0,0,0,0)'])) {stroke:#344e63;stroke-width:1px;}
+#inside-ai-app .ia-diagram-canvas .matrix-svg .cell.dim {opacity:1!important;}
+#inside-ai-app .ia-diagram-canvas .matrix-svg .cell.highlight {stroke:#101820;stroke-width:2px;}
+#inside-ai-app .ia-diagram-canvas .matrix-svg text {fill:#101820!important;stroke:#fffefa;}
+
+#inside-ai-app .ia-diagram-canvas .cell.residual path {stroke:var(--ia-primary);stroke-width:1.5px;}
+#inside-ai-app .ia-diagram-canvas button:not(:disabled) {color:var(--ia-primary);border-color:var(--ia-primary);}
+#inside-ai-app .ia-diagram-canvas .matrix-svg .cell[data-masked=true] {stroke-dasharray:2 2;}
+
+#inside-ai-app .ia-diagram-canvas .sub-vector .sub-vector {outline-color:#344e63;}
+
+#inside-ai-app .ia-diagram-canvas .main-section > :is(.dim,.dim-partial) {display:none;}
+
+#inside-ai-app .ia-diagram-canvas .candidate-note {background:var(--ia-panel);color:var(--ia-ink);padding:.35rem;border-radius:.25rem;}
+
+#inside-ai-app .ia-diagram-canvas .cell.residual path.head {stroke:var(--ia-primary)!important;}
+#inside-ai-app .ia-diagram-canvas .embedding .symbol .cell {color:var(--ia-ink)!important;background:var(--ia-panel);}
+#inside-ai-app .ia-diagram-canvas .embedding.expanded .operations {opacity:1;}
+#inside-ai-app .ia-diagram-canvas .attention-matrix .arrow path {stroke:var(--ia-primary)!important;}
+
+#inside-ai-app .ia-diagram-canvas .mlp .vector > .sub-vector {outline-color:#344e63;}
+#inside-ai-app .ia-diagram-canvas .attention .heads .cell.active .label {background:var(--ia-panel)!important;}
+#inside-ai-app .ia-diagram-canvas .embedding .index-val .val {color:var(--ia-ink)!important;background:var(--ia-panel);}
+
+#inside-ai-app .ia-diagram-canvas .operation-col .cell:not(.active) svg .icon {stroke:var(--ia-panel);stroke-width:3px;paint-order:stroke fill;}
+
+#inside-ai-app .ia-diagram-canvas .operation-col .cell.active svg.main,#inside-ai-app .ia-diagram-canvas .cell.residual svg.main {background:var(--ia-panel);}

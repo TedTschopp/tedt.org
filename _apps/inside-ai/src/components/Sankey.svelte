@@ -238,8 +238,8 @@
 			`;
 			},
 			onMouseOver: () => {
-				d3.select('path.value-to-out').transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 0.8);
-				d3.select('path.to-attention-out').transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 0.8);
+				d3.select('path.value-to-out').transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 1);
+				d3.select('path.to-attention-out').transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 1);
 
 				tooltip.set('click to see Attention Out calculation');
 			},
@@ -281,8 +281,8 @@
     `;
 			},
 			onMouseOver: () => {
-				d3.select('path.value-to-out').transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 0.8);
-				d3.select('path.to-attention-out').transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 0.8);
+				d3.select('path.value-to-out').transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 1);
+				d3.select('path.to-attention-out').transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 1);
 
 				tooltip.set('click to see Attention Out calculation');
 			},
@@ -329,7 +329,7 @@
 			},
 			onMouseOver: () => {
 				const paths = d3.select(`g.mlpUp`).selectAll('path');
-				paths.transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 0.6);
+				paths.transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 1);
 				tooltip.set('click to see MLP process');
 			},
 			onMouseOut: () => {
@@ -371,7 +371,7 @@
 			},
 			onMouseOver: () => {
 				const paths = d3.select(`g.mlpDown`).selectAll('path');
-				paths.transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 0.6);
+				paths.transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 1);
 				tooltip.set('click to see MLP process');
 			},
 			onMouseOut: () => {

@@ -1,135 +1,57 @@
-/**
- * Highlight attention area
- */
+/** Keep highlighting inside the explorer and preserve readable surrounding content. */
+function appElements(selector: string): (HTMLElement | SVGElement)[] {
+	return Array.from(document.querySelector('#inside-ai-app')?.querySelectorAll<HTMLElement | SVGElement>(selector) || []);
+}
+
+function appElement(selector: string): HTMLElement | null {
+	return document.querySelector('#inside-ai-app')?.querySelector<HTMLElement>(selector) || null;
+}
+
+function emphasizePaths(groups: string[] = []) {
+	appElements('svg g.path-group').forEach((group) => {
+		const active = groups.some((name) => group.classList.contains(name));
+		group.style.opacity = '1';
+		group.classList.toggle('ia-path-focus', active);
+		group.querySelectorAll<SVGPathElement>('path').forEach((path) => {
+			// Thicker boundaries emphasize a path without washing out other paths or text.
+			if (active) path.style.strokeWidth = '3px';
+			else path.style.removeProperty('stroke-width');
+		});
+	});
+	appElements('div.step, div.step > div, div.step .column, div.step.mlp .layer').forEach((element) => {
+		element.style.opacity = '1';
+	});
+}
+
+/** Highlight attention using its graphical boundaries, keeping every label readable. */
 export function highlightAttentionPath() {
-	document
-		.querySelectorAll('svg g.path-group')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '0.3'));
-	document
-		.querySelectorAll('svg g.path-group.attention')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step.softmax')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '0.3'));
-	document
-		.querySelectorAll('div.step.embedding')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '0.3'));
-	document
-		.querySelectorAll('div.step .column')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '0.3'));
-	document
-		.querySelectorAll('div.step.attention .column')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step.qkv .qkv-column')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step.mlp .column.initial')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
+	emphasizePaths(['attention']);
 }
 
-/**
- * Remove attention highlighting
- */
 export function removeAttentionPathHighlight() {
-	document
-		.querySelectorAll('svg g.path-group')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step.softmax')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step.embedding')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step .column')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step .column.residual')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '0.5'));
+	emphasizePaths();
 }
 
-/**
- * Highlight logit area
- */
 export function highlightLogitPath() {
-	document
-		.querySelectorAll('svg g.path-group')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '0.3'));
-	document
-		.querySelectorAll('svg g.path-group.transformer-blocks')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('svg g.path-group.softmax')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-
-	document
-		.querySelectorAll('div.step > div')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '0.3'));
-	document
-		.querySelectorAll('div.step.softmax > div')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step.transformer-blocks > div')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('.steps')
-		.forEach((el) => ((el as HTMLElement).style.pointerEvents = 'none'));
+	emphasizePaths(['transformer-blocks', 'softmax']);
+	appElements('.steps').forEach((element) => { element.style.pointerEvents = 'none'; });
 }
 
-/**
- * Highlight path
- */
-export function highlightPath(value) {
-	document
-		.querySelectorAll('svg g.path-group')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '0.3'));
-	document
-		.querySelectorAll(`svg g.path-group.${value}`)
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step > div')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '0.3'));
-	document
-		.querySelectorAll(`div.step.${value} > div`)
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('.steps')
-		.forEach((el) => ((el as HTMLElement).style.pointerEvents = 'none'));
-
-	if (value === 'mlpUp' || value === 'mlpDown') {
-		document
-			.querySelectorAll(`div.step.${value} .layer`)
-			.forEach((el) => ((el as HTMLElement).style.opacity = '0.3'));
-		document
-			.querySelectorAll(`div.step.${value} .layer.${value}`)
-			.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	}
+export function highlightPath(value: string) {
+	emphasizePaths([value]);
+	appElements('.steps').forEach((element) => { element.style.pointerEvents = 'none'; });
 }
 
-/**
- * Remove path highlighting
- */
 export function removePathHighlight() {
-	document
-		.querySelectorAll('svg g.path-group')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step > div')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('div.step.mlp .layer')
-		.forEach((el) => ((el as HTMLElement).style.opacity = '1'));
-	document
-		.querySelectorAll('.steps')
-		.forEach((el) => ((el as HTMLElement).style.pointerEvents = 'auto'));
+	emphasizePaths();
+	appElements('.steps').forEach((element) => { element.style.pointerEvents = 'auto'; });
 }
 
 /**
  * Get transformer-bounding element height
  */
 export function getTransformerBoundingHeight(): string {
-	const transformerBounding = document.querySelector('.transformer-bounding');
+	const transformerBounding = appElement('.transformer-bounding');
 	if (transformerBounding) {
 		return getComputedStyle(transformerBounding).height;
 	}
@@ -140,7 +62,7 @@ export function getTransformerBoundingHeight(): string {
  */
 export function syncWithTransformerBoundingHeight(selector: string) {
 	const height = getTransformerBoundingHeight();
-	const element = document.querySelector(selector) as HTMLElement;
+	const element = appElement(selector);
 	if (element) {
 		element.style.height = height;
 	}
@@ -151,7 +73,7 @@ export function syncWithTransformerBoundingHeight(selector: string) {
  */
 export function highlightElements(selectors: string[], className = 'textbook-highlight') {
 	selectors.forEach((selector) => {
-		const elements = document.querySelectorAll(selector) as NodeListOf<HTMLElement>;
+		const elements = appElements(selector);
 		elements.forEach((element) => {
 			element.classList.remove('remove-finger');
 			element.classList.add(className);
@@ -164,7 +86,7 @@ export function highlightElements(selectors: string[], className = 'textbook-hig
  */
 export function removeHighlightFromElements(selectors: string[], className = 'textbook-highlight') {
 	selectors.forEach((selector) => {
-		const elements = document.querySelectorAll(selector) as NodeListOf<HTMLElement>;
+		const elements = appElements(selector);
 		elements.forEach((element) => {
 			element.classList.remove(className);
 		});
@@ -176,7 +98,7 @@ export function removeHighlightFromElements(selectors: string[], className = 'te
  */
 export function removeFingerFromElements(selectors: string[]) {
 	selectors.forEach((selector) => {
-		const elements = document.querySelectorAll(selector) as NodeListOf<HTMLElement>;
+		const elements = appElements(selector);
 		elements.forEach((element) => {
 			element.classList.add('remove-finger');
 		});
@@ -189,7 +111,7 @@ export function removeFingerFromElements(selectors: string[]) {
 export function applyTransformerBoundingHeight(selectors: string[]) {
 	const height = getTransformerBoundingHeight();
 	selectors.forEach((selector) => {
-		const element = document.querySelector(selector) as HTMLElement;
+		const element = appElement(selector);
 		if (element) {
 			element.style.height = height;
 		}
@@ -201,7 +123,7 @@ export function applyTransformerBoundingHeight(selectors: string[]) {
  */
 export function resetElementsHeight(selectors: string[]) {
 	selectors.forEach((selector) => {
-		const element = document.querySelector(selector) as HTMLElement;
+		const element = appElement(selector);
 		if (element) {
 			element.style.height = '100%';
 		}
