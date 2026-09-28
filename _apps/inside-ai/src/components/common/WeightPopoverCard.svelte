@@ -8,6 +8,7 @@
 	export let title: string;
 	export let className: string | undefined = undefined;
 	export let isAnimationActive: boolean = false;
+	export let allowAnimation: boolean = true;
 	export let timeline;
 	export let isOpen: boolean = true;
 
@@ -37,6 +38,7 @@
 	>
 		<h3 class="font-semibold text-gray-900">{title}</h3>
 		<div class="controls">
+			{#if allowAnimation}
 			{#if isAnimationActive}
 				<button
 					class="play-control forward"
@@ -90,6 +92,7 @@
 						/>
 					</svg></button
 				>
+			{/if}
 			{/if}
 			<button
 				class="close"

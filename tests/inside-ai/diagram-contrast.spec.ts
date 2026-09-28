@@ -165,12 +165,60 @@ for (const theme of ['light', 'dark']) {
     await page.getByRole('button', { name: 'Collapse diagram', exact: true }).click();
     for (const operation of ['Q/K/V projection', 'Attention output', 'MLP expansion', 'MLP projection', 'Vocabulary projection']) {
       await page.getByRole('button', { name: operation, exact: true }).click();
-      await expect(page.locator('#inside-ai-app .weight-popover')).toBeVisible();
+      const popup = page.locator('#inside-ai-app .weight-popover');
+      await expect(popup).toBeVisible();
+      await expect(popup.getByRole('button', { name: 'Replay matrix animation', exact: true })).toHaveCount(0);
+      await expect(popup.getByRole('button', { name: 'Skip matrix animation', exact: true })).toHaveCount(0);
       await check(operation);
       await page.getByRole('button', { name: 'Close weight explanation', exact: true }).click();
     }
     const evidencePath = testInfo.outputPath(`${theme}-contrast-results.json`);
     await writeFile(evidencePath, JSON.stringify(evidence, null, 2));
     await testInfo.attach(`${theme}-contrast-results`, { path: evidencePath, contentType: 'application/json' });
+  });
+}
+
+for (const theme of ['light', 'dark']) {
+  test(`${theme} matrix autoplay and completed animations preserve contrast`, async ({ page }, testInfo) => {
+    await page.emulateMedia({ reducedMotion: 'no-preference' });
+    await page.setViewportSize({ width: 1600, height: 1100 });
+    await page.goto('/inside-ai/');
+    await expect(page.getByTestId('app-ready')).toHaveAttribute('data-ready', 'true');
+    await page.evaluate(theme => document.documentElement.setAttribute('data-bs-theme', theme), theme);
+    const evidence: Array<{ state: string; result: Awaited<ReturnType<typeof diagramContrast>> }> = [];
+    const check = async (state: string) => {
+      const result = await diagramContrast(page);
+      evidence.push({ state, result });
+      expect(result.counts.cells, `${state}: must inspect matrix cells`).toBeGreaterThan(10);
+      expect.soft(result.violations, `${theme} ${state} contrast failures`).toEqual([]);
+    };
+    for (const operation of ['Q/K/V projection', 'Attention output', 'MLP expansion', 'MLP projection', 'Vocabulary projection']) {
+      await page.getByRole('button', { name: operation, exact: true }).click();
+      const popup = page.locator('#inside-ai-app .weight-popover');
+      const skip = popup.getByRole('button', { name: 'Skip matrix animation', exact: true });
+      const replay = popup.getByRole('button', { name: 'Replay matrix animation', exact: true });
+      // Waiting for the actual playback control crosses the delayed autoplay
+      // boundary. Opening the popover alone can inspect it before draw() runs.
+      await expect(skip).toBeVisible();
+      for (let frame = 0; frame < 3; frame++) {
+        await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => resolve())));
+        await expect(skip).toBeVisible();
+        await check(`${operation}: autoplay frame ${frame + 1}`);
+      }
+      await skip.click();
+      await expect(replay).toBeVisible();
+      await check(`${operation}: completed animation`);
+      await replay.click();
+      await expect(skip).toBeVisible();
+      await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => resolve())));
+      await check(`${operation}: replay started`);
+      await skip.click();
+      await expect(replay).toBeVisible();
+      await check(`${operation}: replay completed`);
+      await page.getByRole('button', { name: 'Close weight explanation', exact: true }).click();
+    }
+    const evidencePath = testInfo.outputPath(`${theme}-animation-contrast-results.json`);
+    await writeFile(evidencePath, JSON.stringify(evidence, null, 2));
+    await testInfo.attach(`${theme}-animation-contrast-results`, { path: evidencePath, contentType: 'application/json' });
   });
 }

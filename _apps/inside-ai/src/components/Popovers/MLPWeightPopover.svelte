@@ -67,10 +67,19 @@
 	// animation
 	let isAnimationActive = false;
 	let progress = 0;
+	const reducedMotion = typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	let formulaElement: HTMLDivElement;
+	function showFinalFormula() {
+		if (!formulaElement?.isConnected) return;
+		gsap.set(formulaElement.querySelector('.first-row'), { opacity: 0 });
+		gsap.set(formulaElement.querySelector('.total'), { opacity: 1 });
+		isAnimationActive = false;
+	}
 	let timeline = gsap.timeline();
 
 	let startTimer;
 	onMount(() => {
+		if (reducedMotion) { showFinalFormula(); return; }
 		timeline.eventCallback('onUpdate', () => {
 			progress = timeline.progress();
 			if (progress === 1) isAnimationActive = false;
@@ -102,10 +111,10 @@
 		const plusSymbol = d3.select('.weight-popover-content .symbol.plus').node();
 		const equalSymbol = d3.select('.weight-popover-content .symbol.equal').node();
 
-		const highlight = '#94a3b8';
+		const highlight = '#101820';
 
 		// first row detail animation
-		timeline.set(weightBiasCells, { opacity: 0.1 });
+		timeline.set(weightBiasCells, { opacity: 1 });
 		timeline.set('.formula .first-row', { opacity: 1 });
 		timeline.set('.formula .total', { opacity: 0 });
 
@@ -115,25 +124,25 @@
 		firstOutputRowRects.forEach((outputRect, outCellIdx) => {
 			const isFirstOutCell = outCellIdx === 0;
 			const firstWeightColRects = d3.select(weightCols[outCellIdx]).selectAll('rect').nodes();
-			timeline.set(firstEmbeddingRowRects, { opacity: 0.1 });
+			timeline.set(firstEmbeddingRowRects, { opacity: 1 });
 
 			firstEmbeddingRowRects.forEach((embeddingRect, i) => {
 				//embedding
 				timeline
 					.fromTo(
 						embeddingRect,
-						{ opacity: 0.1, strokeWidth: 0 },
+						{ opacity: 1, strokeWidth: 1 },
 						{
 							opacity: 1,
 							duration: isFirstOutCell ? 0.1 : 0.002,
-							strokeWidth: 10,
+							strokeWidth: 3,
 							stroke: highlight
 						}
 					)
 					.to(
 						embeddingRect,
 						{
-							strokeWidth: 0,
+							strokeWidth: 1,
 							duration: isFirstOutCell ? 0.1 : 0.002
 						},
 						'<50%'
@@ -143,11 +152,11 @@
 				timeline
 					.fromTo(
 						firstWeightColRects[i],
-						{ opacity: 0.1, strokeWidth: 0 },
+						{ opacity: 1, strokeWidth: 1 },
 						{
 							opacity: 1,
 							duration: isFirstOutCell ? 0.1 : 0.002,
-							strokeWidth: 10,
+							strokeWidth: 3,
 							stroke: highlight
 						},
 						'<-50%'
@@ -155,7 +164,7 @@
 					.to(
 						firstWeightColRects[i],
 						{
-							strokeWidth: 0,
+							strokeWidth: 1,
 							duration: isFirstOutCell ? 0.1 : 0.002
 						},
 						'<50%'
@@ -185,11 +194,11 @@
 				.fromTo(
 					weightBiasCells[outCellIdx],
 
-					{ opacity: 0.1, strokeWidth: 0 },
+					{ opacity: 1, strokeWidth: 1 },
 					{
 						opacity: 1,
 						duration: isFirstOutCell ? 0.4 : 0.002,
-						strokeWidth: 10,
+						strokeWidth: 3,
 						stroke: highlight
 					},
 					'<'
@@ -198,7 +207,7 @@
 					weightBiasCells[outCellIdx],
 
 					{
-						strokeWidth: 0,
+						strokeWidth: 1,
 						duration: isFirstOutCell ? 0.4 : 0.002
 					},
 					'<50%'
@@ -208,11 +217,11 @@
 			timeline
 				.fromTo(
 					outputRect,
-					{ opacity: 0, strokeWidth: 0 },
+					{ opacity: 1, strokeWidth: 1 },
 					{
 						opacity: 1,
 						duration: isFirstOutCell ? 0.4 : 0.002,
-						strokeWidth: 10,
+						strokeWidth: 3,
 						stroke: highlight
 					},
 					'<-50%'
@@ -221,15 +230,15 @@
 					outputRect,
 
 					{
-						strokeWidth: 0,
+						strokeWidth: 1,
 						duration: isFirstOutCell ? 0.4 : 0.002
 					},
 					'<50%'
 				);
 
 			if (isFirstOutCell) {
-				timeline.to('.formula .first-row', { opacity: 0, duration: 0.3 }, '>+1');
-				timeline.to('.formula .total', { opacity: 1, duration: 0.3 }, `<`);
+				timeline.set('.formula .first-row', { opacity: 0 }, '>+1');
+				timeline.set('.formula .total', { opacity: 1 }, `<`);
 			}
 		});
 
@@ -247,7 +256,7 @@
 			if (previousRowIdx !== null && previousRowIdx !== rowIdx) {
 				timeline.fromTo(
 					embeddingRowRects,
-					{ opacity: 0.1 },
+					{ opacity: 1 },
 					{
 						opacity: 1,
 						duration: 0.01
@@ -258,8 +267,8 @@
 				const weightColRects = d3
 					.selectAll('.weight-popover-content .mlp-weights g.g-col rect')
 					.nodes();
-				timeline.set(weightColRects, { opacity: 0.1 });
-				timeline.set(weightBiasCells, { opacity: 0.1 });
+				timeline.set(weightColRects, { opacity: 1 });
+				timeline.set(weightBiasCells, { opacity: 1 });
 			}
 
 			outputCells.forEach((d, colIdx) => {
@@ -267,7 +276,7 @@
 
 				timeline.fromTo(
 					weightColRects,
-					{ opacity: 0.1 },
+					{ opacity: 1 },
 					{
 						opacity: 1,
 						duration: 0.01
@@ -278,14 +287,14 @@
 				timeline.from(
 					d,
 					{
-						opacity: 0,
+						opacity: 1,
 						duration: 0.01
 					},
 					`<50%`
 				);
 				timeline.fromTo(
 					weightBiasCells[colIdx],
-					{ opacity: 0.1 },
+					{ opacity: 1 },
 					{
 						opacity: 1,
 						duration: 0.01
@@ -312,7 +321,7 @@
 	};
 </script>
 
-<WeightPopoverCard id="mlp-up" title={'MLP Expansion'} bind:isAnimationActive {timeline}>
+<WeightPopoverCard id="mlp-up" title={'MLP Expansion'} bind:isAnimationActive {timeline} allowAnimation={!reducedMotion}>
 	<div class="mlp-weight-popover weight-popover-content flex items-center justify-start">
 		<div class="matrix flex flex-col items-center">
 			<div class="tokens" style={`gap:${tokenGap}px`}>
@@ -413,7 +422,7 @@
 			<div class="size">({tokenLen}, {$modelMeta.dimension * 4})</div>
 		</div>
 	</div>
-	<div class="formula">
+	<div class="formula" bind:this={formulaElement}>
 		<div class="first-row flex items-center justify-center gap-1">
 			<span class="part1">
 				<Katex
