@@ -134,3 +134,32 @@ for (const theme of ['light', 'dark']) {
     });
   }
 }
+
+
+test('slow animation frames still reveal every attention matrix within 20 seconds', async ({ page }) => {
+  // Reproduce a throttled device: every frame arrives beyond GSAP's default
+  // 500 ms lag threshold. The application must honor elapsed wall-clock time.
+  await page.addInitScript(() => {
+    const frameDelays: number[] = [];
+    Object.defineProperty(window, '__insideAISlowFrameDelays', { value: frameDelays });
+    window.requestAnimationFrame = callback => {
+      const requested = performance.now();
+      return window.setTimeout(() => {
+        const timestamp = performance.now();
+        frameDelays.push(timestamp - requested);
+        callback(timestamp);
+      }, 550);
+    };
+    window.cancelAnimationFrame = handle => window.clearTimeout(handle);
+  });
+  await openExplorer(page, 'light', 'no-preference');
+  await page.getByTestId('example-select').selectOption('0');
+  await expect(page.locator('.ia-token-strip button')).toHaveCount(6);
+  const started = Date.now();
+  await page.getByRole('button', { name: 'Expand attention', exact: true }).click();
+  await checkExpandedAttention(page, 6);
+  expect(Date.now() - started, 'All attention stages must finish revealing in elapsed wall-clock time').toBeLessThan(20_000);
+  const frameDelays = await page.evaluate(() => (window as Window & { __insideAISlowFrameDelays: number[] }).__insideAISlowFrameDelays);
+  expect(frameDelays.length, 'The test must exercise multiple slow animation frames').toBeGreaterThan(5);
+  expect(Math.min(...frameDelays), 'Every injected frame must exceed the default 500 ms lag threshold').toBeGreaterThan(500);
+});
