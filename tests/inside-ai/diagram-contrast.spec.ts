@@ -8,6 +8,14 @@ async function diagramContrast(page: Page) {
     type Color = [number, number, number, number];
     const transparent: Color = [0, 0, 0, 0];
     const white: Color = [255, 255, 255, 1];
+    // This evaluation is synchronous: every element has one computed style for
+    // the sampled frame, even when many descendants share the same ancestors.
+    const styles = new WeakMap<Element, CSSStyleDeclaration>();
+    const styleOf = (element: Element) => {
+      let style = styles.get(element);
+      if (!style) { style = getComputedStyle(element); styles.set(element, style); }
+      return style;
+    };
     const parse = (value: string): Color | null => {
       if (!/^rgba?\(/.test(value)) return null;
       const numbers = value.match(/[\d.]+/g)?.map(Number);
@@ -29,7 +37,7 @@ async function diagramContrast(page: Page) {
       let foreground = halo ? over(pigment, halo) : pigment;
       let background = halo || transparent;
       for (let ancestor: Element | null = element; ancestor; ancestor = ancestor.parentElement) {
-        const style = getComputedStyle(ancestor);
+        const style = styleOf(ancestor);
         const surface = ancestor === element && !ownBackground ? transparent : (parse(style.backgroundColor) || transparent);
         foreground = over(foreground, surface);
         background = over(background, surface);
@@ -43,7 +51,7 @@ async function diagramContrast(page: Page) {
       const bounds = element.getBoundingClientRect();
       if (!bounds.width && !bounds.height) return false;
       for (let ancestor: Element | null = element; ancestor && ancestor !== root.parentElement; ancestor = ancestor.parentElement) {
-        const style = getComputedStyle(ancestor);
+        const style = styleOf(ancestor);
         if (style.display === 'none' || style.visibility === 'hidden' || Number(style.opacity) === 0) return false;
       }
       return true;
@@ -65,7 +73,7 @@ async function diagramContrast(page: Page) {
     for (const element of root.querySelectorAll('*')) {
       if (!shown(element) || element.closest('.katex-mathml, button:disabled, [aria-disabled="true"]')) continue;
       if (![...element.childNodes].some(node => node.nodeType === Node.TEXT_NODE && node.textContent?.trim())) continue;
-      const style = getComputedStyle(element);
+      const style = styleOf(element);
       const color = parse(element instanceof SVGElement ? style.fill : style.color);
       if (!color) continue;
       if (element instanceof SVGElement) color[3] *= Number(style.fillOpacity);
@@ -77,7 +85,7 @@ async function diagramContrast(page: Page) {
     }
     for (const element of root.querySelectorAll('.sankey-path, .operation-col .cell svg path, .operation-col .cell svg .icon, .residual-connector, .probability rect.bar, .matrix-svg circle.cell, .matrix-svg rect.cell, .token-id svg path, .attention-matrix .arrow path, .formula-steps .step-arrow path, .formula-steps .annotation svg polyline, .formula-steps .annotation svg line')) {
       if (!shown(element)) continue;
-      const style = getComputedStyle(element);
+      const style = styleOf(element);
       const bounds = element.getBoundingClientRect();
       const matrix = Boolean(element.closest('.matrix-svg'));
       const bar = element.matches('.probability rect.bar');
@@ -109,7 +117,7 @@ async function diagramContrast(page: Page) {
     }
     for (const element of root.querySelectorAll('.vector:not(.vocab), .sub-vector')) {
       if (!shown(element)) continue;
-      const style = getComputedStyle(element);
+      const style = styleOf(element);
       const color = parse(style.outlineColor);
       counts.vectors++;
       if (!color || style.outlineStyle === 'none' || parseFloat(style.outlineWidth) === 0) {
@@ -119,19 +127,22 @@ async function diagramContrast(page: Page) {
     for (const element of root.querySelectorAll('.label, .guide-text, .matrix-label, .color-scale .val, .title-text:not(.btn), .cutoff-label, .text-box, .text-box > span, .text-box > [role=group], .qkv .head-rest span, .embedding .symbol .cell, .embedding .index-val .val')) {
       if (element instanceof SVGElement || !shown(element) || !element.textContent?.trim()) continue;
       counts.labelHalos++;
-      const style = getComputedStyle(element);
+      const style = styleOf(element);
       if ((parse(style.backgroundColor)?.[3] ?? 0) !== 0 || style.backgroundImage !== 'none') {
         violations.push(`label has a rectangular background over diagram ribbons — ${describe(element)}`);
       }
       const shadows = textShadows(style);
       const expected = [[-1,-1],[0,-1],[1,-1],[-1,0],[1,0],[-1,1],[0,1],[1,1]];
       let opacity = 1;
-      for (let ancestor: Element | null = element; ancestor; ancestor = ancestor.parentElement) opacity *= Number(getComputedStyle(ancestor).opacity);
+      for (let ancestor: Element | null = element; ancestor; ancestor = ancestor.parentElement) opacity *= Number(styleOf(ancestor).opacity);
       if (opacity < 0.999 || shadows.length !== 8 || expected.some(([x,y]) => !shadows.some(shadow => shadow.x === x && shadow.y === y && shadow.blur === 0 && shadow.color?.[3] === 1))) {
         violations.push(`label lacks a fully opaque, unblurred 1px glyph halo on all sides — ${describe(element)}`);
       }
       const foreground = parse(style.color);
-      for (const shadow of shadows) if (foreground && shadow.color) record(element, 'text', contrast(element, foreground, true, shadow.color), 4.5);
+      // All eight offsets and opacities were checked above. Identical halo
+      // colors have identical contrast, so measure each distinct color once.
+      const haloColors = new Map(shadows.filter(shadow => shadow.color).map(shadow => [shadow.color!.join(','), shadow.color!]));
+      for (const halo of haloColors.values()) if (foreground) record(element, 'text', contrast(element, foreground, true, halo), 4.5);
     }
     for (const overlay of root.querySelectorAll('.prob-dim, .softmax .second-column .dim, .main-section > .dim, .main-section > .dim-partial')) {
       if (shown(overlay)) violations.push(`dimming overlay covers readable diagram content — ${describe(overlay)}`);
@@ -200,12 +211,19 @@ for (const theme of ['light', 'dark']) {
   test(`${theme} matrix autoplay and completed animations preserve contrast`, async ({ page }, testInfo) => {
     await page.emulateMedia({ reducedMotion: 'no-preference' });
     await page.setViewportSize({ width: 1600, height: 1100 });
+    // Install before GSAP captures Date.now. After loading, only explicit clock
+    // advances may run animation frames; slow audits cannot finish playback.
+    await page.clock.install();
     await page.goto('/inside-ai/');
     await expect(page.getByTestId('app-ready')).toHaveAttribute('data-ready', 'true');
+    await page.clock.pauseAt(await page.evaluate(() => Date.now() + 1000));
+    await page.clock.runFor(1000);
     await page.evaluate(theme => document.documentElement.setAttribute('data-bs-theme', theme), theme);
     const evidence: Array<{ state: string; result: Awaited<ReturnType<typeof diagramContrast>> }> = [];
     const check = async (state: string) => {
+      const clockBefore = await page.evaluate(() => ({ date: Date.now(), performance: performance.now() }));
       const result = await diagramContrast(page);
+      expect(await page.evaluate(() => ({ date: Date.now(), performance: performance.now() })), `${state}: the audit must not advance the animation clock`).toEqual(clockBefore);
       evidence.push({ state, result });
       expect(result.counts.cells, `${state}: must inspect matrix cells`).toBeGreaterThan(10);
       expect.soft(result.violations, `${theme} ${state} contrast failures`).toEqual([]);
@@ -215,11 +233,12 @@ for (const theme of ['light', 'dark']) {
       const popup = page.locator('#inside-ai-app .weight-popover');
       const skip = popup.getByRole('button', { name: 'Skip matrix animation', exact: true });
       const replay = popup.getByRole('button', { name: 'Replay matrix animation', exact: true });
-      // Waiting for the actual playback control crosses the delayed autoplay
-      // boundary. Opening the popover alone can inspect it before draw() runs.
+      // Cross the real delayed autoplay timer, then sample three real RAF
+      // updates. runFor fires every due callback and leaves time paused.
+      await page.clock.runFor(300);
       await expect(skip).toBeVisible();
       for (let frame = 0; frame < 3; frame++) {
-        await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => resolve())));
+        await page.clock.runFor(16);
         await expect(skip).toBeVisible();
         await check(`${operation}: autoplay frame ${frame + 1}`);
       }
@@ -228,7 +247,7 @@ for (const theme of ['light', 'dark']) {
       await check(`${operation}: completed animation`);
       await replay.click();
       await expect(skip).toBeVisible();
-      await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => resolve())));
+      await page.clock.runFor(16);
       await check(`${operation}: replay started`);
       await skip.click();
       await expect(replay).toBeVisible();

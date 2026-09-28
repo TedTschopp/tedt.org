@@ -18,7 +18,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    # Real-model and cross-browser checks can take 26 minutes before site gates.
+    timeout-minutes: 40
     steps:
       - name: Checkout
         uses: actions/checkout@v7
