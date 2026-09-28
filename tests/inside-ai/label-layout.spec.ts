@@ -19,7 +19,7 @@ async function labelPaint(page: Page) {
 }
 
 for (const theme of ['light', 'dark']) {
-  test(`${theme} diagram labels leave ribbons clear and output controls stay below the scroll region`, async ({ page }, testInfo) => {
+  test(`${theme} diagram labels leave ribbons clear and output controls stay below the scroll region`, async ({ page, browserName }, testInfo) => {
     const modelRequests: string[] = [];
     page.on('request', request => { if (request.url().includes('/inside-ai-models/')) modelRequests.push(request.url()); });
     await page.emulateMedia({ reducedMotion: 'reduce' });
@@ -71,14 +71,19 @@ for (const theme of ['light', 'dark']) {
     }
     await limit.focus();
     await page.keyboard.press('Tab');
-    await expect(page.getByRole('link', { name: 'Leading 50 candidates and logits', exact: true })).toBeFocused();
+    await expect(limit).not.toBeFocused();
     await expect(page.getByRole('button', { name: 'Expand probabilities', exact: true })).toHaveAttribute('aria-pressed', 'true');
+    // macOS WebKit uses Option+Tab to include links in native keyboard focus.
+    // Ordinary Tab above must still leave the expanded diagram open.
+    await limit.focus();
+    await page.keyboard.press(browserName === 'webkit' && process.platform === 'darwin' ? 'Alt+Tab' : 'Tab');
+    await expect(page.getByRole('link', { name: 'Leading 50 candidates and logits', exact: true })).toBeFocused();
     for (const width of [1600, 320]) {
       await page.setViewportSize({ width, height: 1100 });
       await assertControlsBelowDiagram();
       await assertLabels();
     }
-    await page.getByRole('link', { name: 'Leading 50 candidates and logits', exact: true }).click();
+    await page.keyboard.press('Enter');
     await expect(page).toHaveURL(/#ia-next-heading$/);
     expect(modelRequests).toEqual([]);
   });
