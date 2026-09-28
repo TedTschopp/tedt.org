@@ -156,7 +156,7 @@
   <!-- Scrollable regions need keyboard focus for arrow-key scrolling. -->
   <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
   <div class="ia-diagram-scroll" role="region" aria-label="Transformer architecture diagram, scroll horizontally" aria-describedby="ia-diagram-note" tabindex="0">
-    <div class="ia-diagram-canvas" style="--min-screen-width:1500px;--min-column-width:34px;--predicted-color:#b74617;"><Diagram /></div>
+    <div class="ia-diagram-canvas" class:ia-expanded={!!$expandedBlock.id} style="--min-screen-width:1500px;--min-column-width:34px;--predicted-color:#b74617;"><Diagram /></div>
   </div>
   <p class="ia-hint">The complete architecture is wider than small screens. Scroll within the diagram, or use the measured-data tables below. All explanation topics are also available at the end of the workbench.</p>
 

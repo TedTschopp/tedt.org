@@ -239,7 +239,7 @@
 
 		<div class="second-column flex flex-col">
 			{#if isSoftmaxExpanded}
-				<div class="softmax-subtitle softmax-detail flex text-center text-xs opacity-0">
+				<div class="softmax-subtitle softmax-detail flex text-center text-xs">
 					<div class="title-box token-string !justify-end">
 						<div class="title-text">Tokens</div>
 					</div>
@@ -272,7 +272,7 @@
 				</div>
 			{/if}
 			<div class="content-row flex gap-2">
-				<div class="softmax-detail expandable flex gap-2 opacity-0">
+				<div class="softmax-detail expandable flex gap-2">
 					{#if isSoftmaxExpanded}
 						<div class="content-box vector-box logits ml-2">
 							{#each logits as logit, idx}
@@ -399,6 +399,11 @@
 </div>
 
 <style lang="scss">
+	/* Initial state stays local so GSAP can reveal expanded probability details. */
+	.softmax-detail {
+		opacity: 0;
+	}
+
 	.softmax-popover {
 		position: absolute;
 		top: 0;
@@ -452,7 +457,7 @@
 				select {
 					color: var(--ia-ink);
 					background: var(--ia-panel);
-					border: 1px solid var(--ia-line);
+					border: 1px solid var(--ia-control-border);
 					border-radius: 0.25rem;
 					font: inherit;
 					min-height: 2rem;

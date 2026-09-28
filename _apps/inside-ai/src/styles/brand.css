@@ -1,6 +1,6 @@
 #inside-ai-app { color:var(--ia-ink,#07090f);font:1rem/1.6 Inter,system-ui,sans-serif;isolation:isolate; }
 #inside-ai-app *,#inside-ai-app *::before,#inside-ai-app *::after {box-sizing:border-box;}
-#inside-ai-app .ia-workbench {--ia-control-bg:var(--ia-panel,#fff);--ia-control-border:var(--ia-line,#9da6ac);}
+#inside-ai-app .ia-workbench {--ia-control-bg:var(--ia-panel,#fff);--ia-control-border:var(--ia-primary,#00446f);}
 #inside-ai-app button,#inside-ai-app input,#inside-ai-app select,#inside-ai-app textarea {font:inherit;}
 #inside-ai-app button {cursor:pointer;}
 #inside-ai-app button:disabled {cursor:not-allowed;opacity:.55;}
@@ -31,7 +31,7 @@
 #inside-ai-app .ia-sampling output {font-family:'Fira Code',monospace;}
 #inside-ai-app .ia-sampling input[type=range] {width:100%;accent-color:var(--ia-primary,#00446f);min-height:2rem;}
 #inside-ai-app .ia-token-strip {display:flex;flex-wrap:wrap;gap:.4rem;margin:1.4rem 0 .5rem;}
-#inside-ai-app .ia-token-strip button {display:flex;flex-direction:column;align-items:flex-start;padding:.4rem .6rem;border:1px solid var(--ia-line,#bac1c6);border-radius:.25rem;background:var(--ia-control-bg);color:var(--ia-ink,#07090f);font-family:'Fira Code',monospace;}
+#inside-ai-app .ia-token-strip button {display:flex;flex-direction:column;align-items:flex-start;padding:.4rem .6rem;border:1px solid var(--ia-control-border);border-radius:.25rem;background:var(--ia-control-bg);color:var(--ia-ink,#07090f);font-family:'Fira Code',monospace;}
 #inside-ai-app .ia-token-strip small {font-size:.65rem;color:var(--ia-muted,#4d5960);}
 #inside-ai-app .ia-token-strip .ia-selected {border:2px solid var(--ia-primary,#00446f);padding:calc(.4rem - 1px) calc(.6rem - 1px);}
 #inside-ai-app .ia-diagram-controls {display:flex;gap:1rem;flex-wrap:wrap;align-items:end;margin:1.5rem 0 1rem;}
@@ -141,3 +141,6 @@
 #inside-ai-app .ia-diagram-canvas .operation-col .cell:not(.active) svg .icon {stroke:var(--ia-panel);stroke-width:3px;paint-order:stroke fill;}
 
 #inside-ai-app .ia-diagram-canvas .operation-col .cell.active svg.main,#inside-ai-app .ia-diagram-canvas .cell.residual svg.main {background:var(--ia-panel);}
+
+/* Expanded stages keep their intrinsic space inside the labeled scroll region. */
+#inside-ai-app .ia-diagram-canvas.ia-expanded {width:max-content;min-width:max(100%,1320px);}

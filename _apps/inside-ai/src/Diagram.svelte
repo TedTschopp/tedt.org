@@ -93,6 +93,17 @@ $: if (vizHeight || $tokens.length) {
 		grid-template-columns: auto 3.5fr 0.5fr 0.5fr;
 
 		&.expanded {
+			// Let expanded content contribute its intrinsic width instead of squeezing
+			// the absolutely positioned transformer into neighboring output columns.
+			grid-template-columns: auto minmax(max-content, 3.5fr) minmax(7rem, 0.5fr) auto;
+
+			.blocks .block-steps {
+				grid-template-columns: minmax(6rem, 0.5fr) minmax(max-content, 2fr) minmax(18rem, 1fr);
+			}
+			.blocks .block-steps.main {
+				position: relative;
+			}
+
 			:global(.step > .title) {
 				padding-bottom: 3rem;
 			}
