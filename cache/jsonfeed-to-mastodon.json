@@ -5566,5 +5566,33 @@
       "https://tschopp.net/users/Ted/statuses/117340242152872389"
     ],
     "lastTootTimestamp": 1790470003676
+  },
+  "https://tedt.org/This-Isnt-a-Storm-This-Is-the-Weather/": {
+    "id": "/This-Isnt-a-Storm-This-Is-the-Weather/",
+    "title": "This Isn't a Storm. This Is the Weather.",
+    "summary": "We are preparing for a storm when we should be learning to operate in the new weather.",
+    "content_text": "We are preparing for a storm when we should be learning to operate in the new weather. https://tedt.org/This-Isnt-a-Storm-This-Is-the-Weather/",
+    "url": "https://tedt.org/This-Isnt-a-Storm-This-Is-the-Weather/",
+    "image": "https://tedt.org/img/2026-09/Weather-vs-Storm.webp",
+    "tags": [
+      "Sophocles",
+      "Antigone",
+      "leadership",
+      "organizational change",
+      "AI adoption",
+      "operating model",
+      "adaptability"
+    ],
+    "date_published": "2026-09-28T00:00:00-07:00",
+    "date_modified": "2026-09-28T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117351545742869793"
+    ],
+    "lastTootTimestamp": 1790642482729
   }
 }
