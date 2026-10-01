@@ -1,0 +1,158 @@
+---
+layout: null
+permalink: /tools/social-bot-check.html
+title: "Social Bot Check"
+description: "Inspect public Bluesky and Mastodon accounts for posting and reply patterns. Read the thresholds, review linked evidence, and download the report. No login required."
+image: /img/Site-Logo.webp
+image-alt: "Ted Tschopp’s site logo"
+date: 2026-10-01
+last_modified: 2026-10-01
+---
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Social Bot Check — Ted’s Tools</title>
+  {% include utility/calculate-variables.html %}
+  {% include seo/meta-data-seo.html skip_title=true %}
+  <meta name="referrer" content="no-referrer">
+  <link rel="icon" href="{{ '/tools/assets/logo/favicon.svg' | relative_url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ '/tools/colors_and_type.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/tools/social-bot-check/social-bot-check.css' | relative_url }}">
+  <script type="module" src="{{ '/tools/social-bot-check/app.js' | relative_url }}"></script>
+</head>
+<body>
+  <a class="skip-link" href="#checker">Skip to account checker</a>
+  <div class="shell">
+    <nav class="topbar" aria-label="Tools navigation">
+      <a class="brand" href="{{ '/tools/?sort=published' | relative_url }}" aria-label="Ted’s Tools home">
+        <span class="markbox" aria-hidden="true">tt<span>.</span></span>
+        <span>Ted’s <mark>Tools</mark></span>
+      </a>
+      <a href="{{ '/' | relative_url }}">tedt.org</a>
+    </nav>
+
+    <main id="checker">
+      <header class="page-head">
+        <p class="eyebrow">Public Account Patterns</p>
+        <h1 class="t-tool-title">Social <mark>Bot Check</mark></h1>
+        <p class="intro">Look closer at how an account posts and replies. Check its public activity on Bluesky or Mastodon, then read the evidence behind each pattern.</p>
+        <p class="head-meta"><span>Bluesky + Mastodon</span><span>No login required</span><span>Updated October 1, 2026</span></p>
+      </header>
+
+      <section class="panel input-panel" aria-labelledby="input-title">
+        <div class="panel-head">
+          <h2 id="input-title">Check an Account</h2>
+          <span class="panel-note">Public posts only</span>
+        </div>
+        <form id="check-form" class="form-body">
+          <div class="form-grid">
+            <div class="field">
+              <label for="platform">Site</label>
+              <select id="platform" name="platform">
+                <option value="bluesky">Bluesky</option>
+                <option value="mastodon">Mastodon</option>
+              </select>
+            </div>
+            <div class="field account-field">
+              <label for="account">Account or profile URL</label>
+              <input id="account" name="user" type="text" required maxlength="300" placeholder="@tedt.org or a Bluesky profile URL" autocomplete="off" autocapitalize="off" spellcheck="false" aria-describedby="account-help">
+            </div>
+            <div class="field">
+              <label for="scan-limit">Scan up to</label>
+              <select id="scan-limit" name="limit">
+                <option value="100">100 posts</option>
+                <option value="500" selected>500 posts</option>
+                <option value="1000">1,000 posts</option>
+              </select>
+            </div>
+          </div>
+          <p id="account-help" class="hint">Enter a Bluesky handle, profile URL, post URL, or DID.</p>
+          <div class="actions">
+            <button id="check-button" class="button primary" type="submit">Check account</button>
+            <button id="example-button" class="button secondary" type="button">Use Ted’s account</button>
+            <button id="cancel-button" class="button secondary" type="button" hidden>Cancel</button>
+          </div>
+          <p class="hint boundary">Your browser requests public data directly from the selected site. Analysis runs here; no password or API key is needed.</p>
+        </form>
+        <p id="status" class="status" role="status" aria-live="polite" aria-atomic="true">Ready. Choose a site and enter an account.</p>
+      </section>
+
+      <noscript><p class="notice">Enable JavaScript to fetch public posts and run the account checks.</p></noscript>
+
+      <section id="empty-state" class="empty-state" aria-labelledby="empty-title">
+        <h2 id="empty-title">A Closer Look, With Receipts</h2>
+        <div class="guide-grid">
+          <div><span class="step">01</span><h3>Read the Pattern</h3><p>See reply timing, repetition, posting volume, and activity across the day.</p></div>
+          <div><span class="step">02</span><h3>Check the Evidence</h3><p>Every check states its threshold, sample size, and other possible explanations.</p></div>
+          <div><span class="step">03</span><h3>Open the Posts</h3><p>Follow the original posts and judge them in context. Keep a copy of the report if useful.</p></div>
+        </div>
+      </section>
+
+      <div id="results" hidden>
+        <section id="overview" class="panel" aria-label="Account overview"></section>
+        <section id="assessment" class="assessment" aria-label="Pattern summary"></section>
+        <section id="coverage" class="coverage" aria-label="Sample coverage"></section>
+
+        <div class="report-actions actions">
+          <button id="copy-link" class="button secondary" type="button">Copy link</button>
+          <button id="download-report" class="button secondary" type="button">Download JSON report</button>
+          <label id="report-link-field" class="field" hidden>Report link<input id="report-link" type="url" readonly></label>
+        </div>
+
+        <div class="report-grid">
+          <section class="panel" aria-labelledby="signals-title">
+            <div class="panel-head"><h2 id="signals-title">Signals and Thresholds</h2><span class="panel-note">Open a check for details</span></div>
+            <div id="signals"></div>
+          </section>
+          <div class="report-sidebar">
+            <section class="panel" aria-labelledby="activity-title">
+              <div class="panel-head"><h2 id="activity-title">Activity by Hour</h2><span class="panel-note">UTC</span></div>
+              <div id="activity" class="panel-body"></div>
+            </section>
+            <section class="panel" aria-labelledby="mix-title">
+              <div class="panel-head"><h2 id="mix-title">What It Posts</h2></div>
+              <div id="post-mix" class="panel-body"></div>
+            </section>
+            <section class="panel" aria-labelledby="examples-title">
+              <div class="panel-head"><h2 id="examples-title">Posts to Review</h2></div>
+              <div id="examples" class="panel-body"></div>
+            </section>
+          </div>
+        </div>
+
+        <section class="panel posts-panel" aria-labelledby="posts-title">
+          <div class="panel-head"><h2 id="posts-title" tabindex="-1">Scanned Posts</h2><span id="posts-count" class="panel-note"></span></div>
+          <div class="post-controls panel-body">
+            <div class="field"><label for="post-filter">Show</label><select id="post-filter"><option value="all">All activity</option><option value="replies">Replies</option><option value="original">Top-level posts</option><option value="boosts">Boosts and reposts</option><option value="flagged">Posts with observed signals</option></select></div>
+            <label class="field" for="post-search">Find text<input id="post-search" type="search" placeholder="Search the scanned text"></label>
+            <button id="clear-post-filter" class="button secondary" type="button" hidden>Clear signal filter</button>
+          </div>
+          <p id="active-filter" class="filter-note" role="status" hidden></p>
+          <ol id="posts" class="post-list"></ol>
+          <div class="panel-body"><button id="more-posts" class="button secondary" type="button" hidden>Show 50 more</button></div>
+        </section>
+      </div>
+
+      <section class="method" aria-labelledby="method-title">
+        <h2 id="method-title">How to Read This</h2>
+        <p>These checks identify patterns worth reviewing. They do not determine whether a person, a bot, or an AI wrote the posts. A check that does not trigger says only that the configured pattern was not observed.</p>
+        <details>
+          <summary>Data, platform differences, and limits</summary>
+          <p>Bluesky provides the profile, author feed, and available parent posts through its public API. Mastodon provides the profile and public statuses from the server in the account address; up to 40 recent unique parent posts are fetched for reply context. Deleted, blocked, private, and unavailable posts are outside the sample.</p>
+          <p>Boosts and reposts are shown separately from the account’s own writing. Activity charts use the creation dates in the available posts and show UTC; the account’s time zone is unknown. Negative reply delays are excluded. Edited Mastodon replies are excluded from timing checks because the original text may have changed.</p>
+          <p>Mastodon servers choose their own public API and browser access policies. A server that requires authentication or blocks cross-origin requests cannot be checked here. The report marks missing data and partial scans explicitly.</p>
+          <p>Behavior checks are counted, without a probability score. Profile declarations and Bluesky record formatting are reported separately. Client formatting, third-party apps, and account self-declarations do not establish AI authorship.</p>
+          <p>No report is stored by this tool. A shared link contains the site, account, and scan limit; opening it runs a fresh check. The JSON download captures the current report and its visible public post text.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Inspired by <a href="https://tools.simonwillison.net/bluesky-bot-check">Simon Willison’s Bluesky reply bot checker</a>. Built for Ted’s Tools.</p>
+      <a href="{{ '/tools/?sort=published' | relative_url }}">← All tools</a>
+    </footer>
+  </div>
+</body>
+</html>
