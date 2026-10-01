@@ -1,5 +1,16 @@
-import { test, expect, type Page } from '@playwright/test';
+import { test, expect, type Locator, type Page } from '@playwright/test';
 import { writeFile } from 'node:fs/promises';
+
+async function skipRunningAnimation(skip: Locator, replay: Locator) {
+  // Contrast measurements can outlast playback on a busy browser. Replay is
+  // already the completed state; Skip may also disappear during its click.
+  if (await replay.isVisible()) return;
+  try {
+    await skip.click({ timeout: 3_000 });
+  } catch (error) {
+    if (!await replay.isVisible()) throw error;
+  }
+}
 
 // Axe cannot establish contrast for many SVG primitives, composited opacity, or
 // labels covered by a separate gradient. Check those rendered states explicitly.
@@ -205,14 +216,16 @@ for (const theme of ['light', 'dark']) {
         await expect(skip).toBeVisible();
         await check(`${operation}: autoplay frame ${frame + 1}`);
       }
-      await skip.click();
+      // Exercise natural completion as well as the explicit Skip path.
+      if (operation === 'Attention output') await expect(replay).toBeVisible();
+      await skipRunningAnimation(skip, replay);
       await expect(replay).toBeVisible();
       await check(`${operation}: completed animation`);
       await replay.click();
       await expect(skip).toBeVisible();
       await page.evaluate(() => new Promise<void>(resolve => requestAnimationFrame(() => resolve())));
       await check(`${operation}: replay started`);
-      await skip.click();
+      await skipRunningAnimation(skip, replay);
       await expect(replay).toBeVisible();
       await check(`${operation}: replay completed`);
       await page.getByRole('button', { name: 'Close weight explanation', exact: true }).click();
