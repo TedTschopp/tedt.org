@@ -1,6 +1,7 @@
 name: Social Bot Check Preview Tests
 
 on:
+  workflow_dispatch:
   push:
     branches: [main]
     paths:
@@ -31,3 +32,55 @@ jobs:
           cache-dependency-path: _code/cloudflare/social-bot-check-preview/package-lock.json
       - run: npm ci --prefix _code/cloudflare/social-bot-check-preview --no-audit --no-fund
       - run: npm test --prefix _code/cloudflare/social-bot-check-preview
+      - name: Validate version deployment without publishing
+        run: npm run deploy:ci --prefix _code/cloudflare/social-bot-check-preview -- --dry-run
+
+  deploy:
+    needs: preview
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
+      vars.SOCIAL_BOT_CHECK_PREVIEW_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment:
+      name: social-bot-check-preview
+      url: https://tedt.org/tools/social-bot-check.html
+    concurrency:
+      group: social-bot-check-preview-deploy
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v7
+      - name: Skip outdated Worker changes
+        id: revision
+        run: |
+          git fetch --no-tags --depth=1 origin main
+          if git diff --quiet "$GITHUB_SHA" FETCH_HEAD -- \
+            _code/cloudflare/social-bot-check-preview \
+            tools/social-bot-check/common.js \
+            tools/social-bot-check/providers \
+            .github/workflows/social-bot-check-preview.yml; then
+            echo 'current=true' >> "$GITHUB_OUTPUT"
+          else
+            echo '::notice::Newer Worker changes exist on main; skipping this deployment.'
+          fi
+      - uses: actions/setup-node@v4
+        if: steps.revision.outputs.current == 'true'
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: _code/cloudflare/social-bot-check-preview/package-lock.json
+      - if: steps.revision.outputs.current == 'true'
+        run: npm ci --prefix _code/cloudflare/social-bot-check-preview --no-audit --no-fund
+      - name: Upload and promote the tested Worker version
+        id: worker
+        if: steps.revision.outputs.current == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: '13ebf849f1787412dc2c48a262de0407'
+        run: npm run deploy:ci --prefix _code/cloudflare/social-bot-check-preview
+      - name: Verify the published version and sharing metadata
+        if: steps.revision.outputs.current == 'true'
+        env:
+          SOCIAL_PREVIEW_EXPECTED_VERSION: ${{ steps.worker.outputs.version_id }}
+        run: npm run verify:live --prefix _code/cloudflare/social-bot-check-preview

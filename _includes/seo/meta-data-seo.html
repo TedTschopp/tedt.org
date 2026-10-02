@@ -51,7 +51,7 @@
     {% assign seo_title_base = seo_title_base | append: ' AI Prompt' %}
   {% endunless %}
 {% endif %}
-{% if seo_is_home or seo_title_base contains site_brand %}
+{% if seo_is_home or seo_title_base contains site_brand or include.omit_title_brand %}
   {% assign seo_document_title = seo_title_base %}
 {% else %}
   {% assign seo_document_title = seo_title_base | append: ' | ' | append: site_brand %}

@@ -2,6 +2,7 @@
 layout: null
 permalink: /tools/social-bot-check.html
 title: "Social Bot Check"
+seo_title: "Social Bot Check — Bluesky and Mastodon"
 description: "Inspect public Bluesky and Mastodon accounts for posting and reply patterns. Read the thresholds, review linked evidence, and download the report. No login required."
 image: /img/Site-Logo.webp
 image-alt: "Ted Tschopp’s site logo"
@@ -13,9 +14,8 @@ last_modified: 2026-10-01
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Social Bot Check — Ted’s Tools</title>
   {% include utility/calculate-variables.html %}
-  {% include seo/meta-data-seo.html skip_title=true %}
+  {% include seo/meta-data-seo.html omit_title_brand=true %}
   <meta name="referrer" content="no-referrer">
   <link rel="icon" href="{{ '/tools/assets/logo/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="stylesheet" href="{{ '/tools/colors_and_type.css' | relative_url }}">
@@ -150,7 +150,7 @@ last_modified: 2026-10-01
     </main>
 
     <footer class="footer">
-      <p>Inspired by <a href="https://tools.simonwillison.net/bluesky-bot-check">Simon Willison’s Bluesky reply bot checker</a>. Built for Ted’s Tools.</p>
+      <p>Built for Ted’s Tools.</p>
       <a href="{{ '/tools/?sort=published' | relative_url }}">← All tools</a>
     </footer>
   </div>

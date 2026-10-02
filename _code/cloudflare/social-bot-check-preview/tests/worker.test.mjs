@@ -8,6 +8,7 @@ const LOGO = 'https://tedt.org/img/Site-Logo.webp';
 const BLUE_API = 'https://public.api.bsky.app';
 const BLUE_AVATAR = 'https://cdn.bsky.app/img/avatar/plain/did:plc:ted/photo@jpeg';
 const MASTO_AVATAR = 'https://tschopp.net/system/accounts/avatars/001/002/003/original/avatar.png';
+const VERSION = '975b9fec-49ac-4f5f-97aa-f8d16e89ca7a';
 const BODY = '<main id="checker">Public Account Patterns</main><script type="module" src="/tools/social-bot-check/app.js"></script>';
 const PUBLISHER = `<script type="application/ld+json">{"@type":"Person","name":"Ted Tschopp","image":"${LOGO}"}</script>`;
 const HTML = `<!doctype html><html><head>
@@ -53,6 +54,7 @@ before(() => {
     modulesRoot: fileURLToPath(new URL('../../../../', import.meta.url)),
     scriptPath: fileURLToPath(new URL('../.wrangler/build/worker.js', import.meta.url)),
     compatibilityDate: '2026-10-01',
+    bindings: { CF_VERSION_METADATA: { id: VERSION } },
     outboundService: outbound,
   }));
 });
@@ -114,6 +116,7 @@ test('a crawler without JavaScript receives the Bluesky avatar in initial HTML',
   });
   assert.equal(response.status, 200);
   assert.equal(response.headers.get('X-Social-Bot-Check-Preview'), 'avatar');
+  assert.equal(response.headers.get('X-Social-Bot-Check-Preview-Version'), VERSION);
   assert.equal(content(html, 'og:image'), BLUE_AVATAR);
   assert.equal(content(html, 'twitter:image'), BLUE_AVATAR);
   assert.equal(content(html, 'og:image:alt'), '@tedt.org on Bluesky profile picture');

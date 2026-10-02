@@ -5,6 +5,10 @@ Account-specific sharing images are provided by the separate
 which puts the account avatar in the initial Open Graph and Twitter metadata.
 Without an account or usable picture, the generated site logo remains the image.
 
+The browser and sharing titles are **Social Bot Check — Bluesky and Mastodon**.
+The shared SEO include receives `omit_title_brand=true`; the footer reads
+**Built for Ted’s Tools.**
+
 Static, browser-based public account analysis for Bluesky and Mastodon. The live
 entry point is `/tools/social-bot-check.html`; the Jekyll catalog record is
 `_tools/social-bot-check.md` and renders the documentation route.

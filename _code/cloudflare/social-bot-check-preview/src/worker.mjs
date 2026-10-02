@@ -139,7 +139,7 @@ async function lookupImage(account, ctx) {
   return preview;
 }
 
-function rewriteMetadata(response, account, preview) {
+function rewriteMetadata(response, account, preview, versionId) {
   const values = new Map([
     ['og:url', account.link.href],
     ['twitter:url', account.link.href],
@@ -167,6 +167,7 @@ function rewriteMetadata(response, account, preview) {
   const headers = new Headers(rewritten.headers);
   headers.set('Cache-Control', 'private, no-store');
   headers.set('X-Social-Bot-Check-Preview', preview ? 'avatar' : 'fallback');
+  if (versionId) headers.set('X-Social-Bot-Check-Preview-Version', versionId);
   for (const name of ['ETag', 'Last-Modified', 'Content-Length', 'Content-MD5', 'Age', 'Expires']) headers.delete(name);
   return new Response(rewritten.body, { status: rewritten.status, statusText: rewritten.statusText, headers });
 }
@@ -186,6 +187,6 @@ export default {
     const response = await fetch(new Request(PAGE, { method: 'GET', headers, redirect: 'manual' }));
     if (response.status !== 200 || !/^text\/html\b/i.test(response.headers.get('content-type') || '')) return response;
     const preview = await lookupImage(account, ctx);
-    return rewriteMetadata(response, account, preview);
+    return rewriteMetadata(response, account, preview, env.CF_VERSION_METADATA?.id);
   },
 };

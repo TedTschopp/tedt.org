@@ -248,6 +248,10 @@ When including files in layouts or posts, use the full path:
 {% include seo/twitter-card-metadata.html %}
 ```
 
+Standalone pages can pass `omit_title_brand=true` to `seo/meta-data-seo.html`
+when their browser and sharing titles should omit the site-name suffix. Social
+Bot Check uses this option to keep its title focused on the tool and platforms.
+
 ### Adding New Includes
 
 When adding new include files:

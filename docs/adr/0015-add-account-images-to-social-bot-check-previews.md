@@ -99,6 +99,15 @@ checks verified Ted's Bluesky and Mastodon images, another account's distinct
 image, and the original logo for absent, missing and invalid accounts. The
 Cloudflare dashboard confirmed the saved fail-open route setting.
 
+Automatic deployment uses the existing preview-test workflow. A production job
+is restricted to `main`, gated by an explicit repository variable, and receives
+its API token from the `social-bot-check-preview` GitHub environment. Use Worker
+version upload/promotion rather than rewriting the route, preserving fail-open
+behavior. An account-restricted Workers Scripts Edit token is sufficient. Verify
+the exact promoted version in the published HTML response headers after release.
+Credential setup is a separate activation step; preparing the workflow does not
+enable production deployment.
+
 Rollback by removing only this Worker route; the existing page remains usable.
 
 ## Metrics / Success Criteria
