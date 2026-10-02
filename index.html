@@ -10,7 +10,7 @@ permalink: /
       <p class="ia-eyebrow">Ted Tschopp’s public workbench</p>
       <h1 class="display-1">Technology, Stories,<br>&amp; Imagined Worlds.</h1>
       <p class="ia-lead">I’m an enterprise architect, a storyteller, and a curious maker. This is where I share what I’m thinking about, what I’m building, and the worlds I’m exploring.</p>
-      <div class="ia-actions"><a class="ia-text-link" href="{{ '/about-ted/' | relative_url }}">Meet Ted <span aria-hidden="true">↗</span></a></div>
+      <div class="ia-actions"><a class="ia-text-link" href="{{ '/about-ted/' | relative_url }}">Meet Ted <span aria-hidden="true">{% include utility/arrow-up-right.html %}</span></a></div>
     </div>
     <figure class="ia-hero-photo"><img src="{{ '/img/categories/home-hero-images/hero-lake.webp' | relative_url }}" alt="A figure seen from behind sits at the edge of a still mountain lake at sunset, cabins glowing among the pines." width="1904" height="640" fetchpriority="high"><figcaption>A place for reflection, exploration, and work in progress.</figcaption></figure>
   </header>
@@ -20,7 +20,7 @@ permalink: /
       {% for section in site.data.site_navigation %}{% unless section.key == 'about' %}
       <article class="ia-shelf">
         <span class="ia-shelf-number" aria-hidden="true">0{{ forloop.index }}</span>
-        <h3><a href="{{ section.url | relative_url }}">{{ section.title | escape }} <span aria-hidden="true">↗</span></a></h3>
+        <h3><a href="{{ section.url | relative_url }}">{{ section.title | escape }} <span aria-hidden="true">{% include utility/arrow-up-right.html %}</span></a></h3>
         <p>{{ section.description | escape }}</p>
         <ul>{% for child in section.children limit: 3 %}<li><a href="{{ child.url | relative_url }}">{{ child.title | escape }}</a></li>{% endfor %}</ul>
       </article>
@@ -38,7 +38,7 @@ permalink: /
     </div>
   </section>
   <section class="ia-home-section" aria-labelledby="new-writing-title">
-    <div class="ia-section-heading"><h2 id="new-writing-title">New Writing</h2><a href="{{ '/essays/' | relative_url }}">Browse Essays <span aria-hidden="true">↗</span></a></div>
+    <div class="ia-section-heading"><h2 id="new-writing-title">New Writing</h2><a href="{{ '/essays/' | relative_url }}">Browse Essays <span aria-hidden="true">{% include utility/arrow-up-right.html %}</span></a></div>
     <div class="ia-writing-list">
     {% assign shown = 0 %}
     {% for post in site.posts %}
@@ -53,7 +53,7 @@ permalink: /
           </a>
           {% endif %}
           <div><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 175 | escape }}</p></div>
-          <span aria-hidden="true">↗</span>
+          <span aria-hidden="true">{% include utility/arrow-up-right.html %}</span>
         </article>
         {% assign shown = shown | plus: 1 %}{% if shown == 6 %}{% break %}{% endif %}
         {% endif %}

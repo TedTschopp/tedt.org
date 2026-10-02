@@ -57,4 +57,6 @@ Category indexes keep their existing aliases, content selection, and URLs while 
 
 The navbar collapses below 1400px so six separate 44px disclosure buttons and the theme/TOC controls fit without crowding. The content grids retain the design system's 1200px and 768px breakpoints.
 
-The shared footer is the Elsewhere on the Web directory: primary profile links, a closed-by-default native disclosure for additional profiles, and the support link. Its closing row contains the family mark appropriate to each theme, linked name and copyright, Copyright, and Back to Home. Profile links retain `rel="me"`; no icon font is used in the library pages or shared footer.
+The shared footer opens with Ted’s linked name, description, views disclaimer and family mark, plus Explore and Keep in Touch navigation. Copyright and Back to Home follow. Elsewhere on the Web is the final section inside that same footer, with primary profile links, a closed-by-default native disclosure for additional profiles, and the support link. Profile links retain `rel="me"`; no icon font is used in the library pages or shared footer.
+
+The up-right link cue uses `_includes/utility/arrow-up-right.html`: an inline SVG with a full-length top edge, side edge and diagonal. It scales to one em, inherits the text color, and uses heavier strokes alongside Cal Sans headings and semibold links. The decorative glyph is hidden from screen readers and receives no keyboard focus.

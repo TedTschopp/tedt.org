@@ -110,7 +110,7 @@ layout: library
 
   <ol class="ia-category-list" aria-label="Posts in {{ registry_entry.title | default: __cat_source | escape }}">
     {% for post in posts_arr %}
-    <li class="ia-writing-row"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time><div><h2 class="h3"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2><p>{{ post.teaser | default: post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 220 | escape }}</p></div><span aria-hidden="true">↗</span></li>
+    <li class="ia-writing-row"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time><div><h2 class="h3"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h2><p>{{ post.teaser | default: post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 220 | escape }}</p></div><span aria-hidden="true">{% include utility/arrow-up-right.html %}</span></li>
     {% endfor %}
   </ol>
   <nav class="ia-category-browser" aria-label="All site categories"><h2>Browse Categories</h2><ul>

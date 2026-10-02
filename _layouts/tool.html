@@ -9,7 +9,7 @@ layout: library
     {% if page.summary %}<p class="ia-lead">{{ page.summary | escape }}</p>{% endif %}
     <div class="ia-tool-meta">{% include content/tool-status.html status=page.status %}<time datetime="{{ page.last_modified | default: page.date | date: '%Y-%m-%d' }}">Updated {{ page.last_modified | default: page.date | date: '%b %-d, %Y' }}</time></div>
     <nav class="ia-tool-actions" aria-label="Tool actions">
-      {% if page.links.live %}<a href="{% if page.links.live contains '://' %}{{ page.links.live }}{% else %}{{ page.links.live | relative_url }}{% endif %}">{% if page.status == 'under development' %}View the Project{% else %}Live{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if page.links.live %}<a href="{% if page.links.live contains '://' %}{{ page.links.live }}{% else %}{{ page.links.live | relative_url }}{% endif %}">{% if page.status == 'under development' %}View the Project{% else %}Live{% endif %} <span aria-hidden="true">{% include utility/arrow-up-right.html %}</span></a>{% endif %}
       {% if page.links.repo %}<a href="{{ page.links.repo }}">Code</a>{% endif %}
       {% if page.links.docs %}<a href="{{ page.links.docs }}">Docs</a>{% endif %}
       {% if page.links.download %}<a href="{{ page.links.download }}">Download</a>{% endif %}

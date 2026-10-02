@@ -26,8 +26,41 @@ for (const theme of ['light', 'dark']) {
     await expect(hero).toHaveAttribute('height', '640');
     await expect(page.locator('.ia-familymark-' + theme)).toBeVisible();
     await expect(page.locator('.ia-familymark-' + (theme === 'light' ? 'dark' : 'light'))).toBeHidden();
-    const footer = page.getByRole('contentinfo', { name: 'Elsewhere on the Web' });
+    const footer = page.getByRole('contentinfo', { name: 'Site Footer' });
     await expect(footer).toHaveCount(1);
+    await expect(footer.getByRole('navigation', { name: 'Explore the site' }).getByRole('link')).toHaveCount(6);
+    await expect(footer.getByRole('navigation', { name: 'Keep in touch' }).getByRole('link')).toHaveCount(4);
+    const elsewhereIsLast = await footer.evaluate(el => {
+      const elsewhere = el.querySelector('.ia-elsewhere')!;
+      const earlierParts = [...el.querySelectorAll('nav'), el.querySelector('.ia-footer-bottom')!];
+      return elsewhere.parentElement?.lastElementChild === elsewhere && earlierParts.every(part =>
+        (part.compareDocumentPosition(elsewhere) & Node.DOCUMENT_POSITION_FOLLOWING) !== 0);
+    });
+    expect(elsewhereIsLast, 'Elsewhere must follow the restored navigation and copyright').toBe(true);
+    const arrowMetrics = await page.locator('.ia-text-link .ia-arrow, .ia-section-heading > a .ia-arrow').evaluateAll(icons =>
+      icons.map(icon => {
+        const style = getComputedStyle(icon);
+        const path = icon.querySelector('path') as SVGPathElement;
+        const bounds = path.getBBox();
+        const box = icon.getBoundingClientRect();
+        return {
+          fontWeight: Number(style.fontWeight), fontSize: Number.parseFloat(style.fontSize),
+          strokeWidth: Number.parseFloat(style.strokeWidth), color: style.color, stroke: style.stroke,
+          width: box.width, height: box.height, drawingWidth: bounds.width, drawingHeight: bounds.height,
+          length: path.getTotalLength(), hidden: icon.getAttribute('aria-hidden'), focusable: icon.getAttribute('focusable')
+        };
+      }));
+    expect(arrowMetrics).toHaveLength(2);
+    for (const arrow of arrowMetrics) {
+      expect(arrow.width).toBeCloseTo(arrow.fontSize, 1);
+      expect(arrow.height).toBeCloseTo(arrow.fontSize, 1);
+      expect(arrow.drawingWidth).toBe(arrow.drawingHeight);
+      expect(arrow.length).toBeCloseTo(arrow.drawingWidth + arrow.drawingHeight + Math.hypot(arrow.drawingWidth, arrow.drawingHeight), 1);
+      expect(arrow.stroke).toBe(arrow.color);
+      expect(arrow.hidden).toBe('true');
+      expect(arrow.focusable).toBe('false');
+    }
+    expect(arrowMetrics.find(arrow => arrow.fontWeight === 600)!.strokeWidth).toBeGreaterThan(arrowMetrics.find(arrow => arrow.fontWeight === 400)!.strokeWidth);
     await expect(footer.locator('.ia-elsewhere-list a')).toHaveCount(6);
     await expect(footer.locator('.ia-elsewhere-more')).not.toHaveAttribute('open');
     const summary = footer.locator('.ia-elsewhere-more summary');

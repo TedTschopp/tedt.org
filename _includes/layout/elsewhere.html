@@ -3,7 +3,7 @@
   <ul class="ia-elsewhere-list">
   {% for profile in site.data.elsewhere.primary %}
     {% for link in site.links %}{% assign link_key = link.Name | strip_html %}{% if link_key == profile.key %}
-    <li><a class="u-url" rel="me" href="{% include utility/profile-url.html link=link %}"><span class="ia-profile-name">{{ profile.name | escape }}</span><span class="ia-profile-handle">{{ profile.handle | escape }}</span><span class="ia-profile-context">{{ profile.context | escape }}</span><span class="ia-profile-arrow" aria-hidden="true">↗</span></a></li>
+    <li><a class="u-url" rel="me" href="{% include utility/profile-url.html link=link %}"><span class="ia-profile-name">{{ profile.name | escape }}</span><span class="ia-profile-handle">{{ profile.handle | escape }}</span><span class="ia-profile-context">{{ profile.context | escape }}</span><span class="ia-profile-arrow" aria-hidden="true">{% include utility/arrow-up-right.html %}</span></a></li>
     {% endif %}{% endfor %}
   {% endfor %}
   </ul>
