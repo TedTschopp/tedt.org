@@ -26,14 +26,16 @@ for (const theme of ['light', 'dark']) {
     await expect(hero).toHaveAttribute('height', '640');
     await expect(page.locator('.ia-familymark-' + theme)).toBeVisible();
     await expect(page.locator('.ia-familymark-' + (theme === 'light' ? 'dark' : 'light'))).toBeHidden();
-    await expect(page.locator('.ia-elsewhere-list a')).toHaveCount(6);
-    await expect(page.locator('.ia-elsewhere-more')).not.toHaveAttribute('open');
-    const summary = page.locator('.ia-elsewhere-more summary');
+    const footer = page.getByRole('contentinfo', { name: 'Elsewhere on the Web' });
+    await expect(footer).toHaveCount(1);
+    await expect(footer.locator('.ia-elsewhere-list a')).toHaveCount(6);
+    await expect(footer.locator('.ia-elsewhere-more')).not.toHaveAttribute('open');
+    const summary = footer.locator('.ia-elsewhere-more summary');
     await summary.focus();
     await page.keyboard.press('Enter');
-    await expect(page.locator('.ia-elsewhere-more')).toHaveAttribute('open', '');
-    await expect(page.locator('.ia-elsewhere-groups a')).toHaveCount(27);
-    const missingIdentity = await page.locator('.ia-elsewhere a').evaluateAll(links =>
+    await expect(footer.locator('.ia-elsewhere-more')).toHaveAttribute('open', '');
+    await expect(footer.locator('.ia-elsewhere-groups a')).toHaveCount(27);
+    const missingIdentity = await footer.locator('.ia-elsewhere a').evaluateAll(links =>
       links.filter(link => !link.getAttribute('rel')?.split(' ').includes('me')).map(link => link.textContent));
     expect(missingIdentity).toEqual([]);
     expect((await new AxeBuilder({ page }).include('.ia-footer').analyze()).violations).toEqual([]);
