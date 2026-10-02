@@ -1,5 +1,10 @@
 # Social Bot Check
 
+Account-specific sharing images are provided by the separate
+[Cloudflare preview Worker](../../_code/cloudflare/social-bot-check-preview/README.md),
+which puts the account avatar in the initial Open Graph and Twitter metadata.
+Without an account or usable picture, the generated site logo remains the image.
+
 Static, browser-based public account analysis for Bluesky and Mastodon. The live
 entry point is `/tools/social-bot-check.html`; the Jekyll catalog record is
 `_tools/social-bot-check.md` and renders the documentation route.

@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tedt-social-bot-check-preview",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "routes": [
+    {
+      "pattern": "https://tedt.org/tools/social-bot-check.html*",
+      "zone_name": "tedt.org"
+    }
+  ],
+  "observability": { "enabled": false }
+}

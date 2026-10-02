@@ -1,0 +1,33 @@
+name: Social Bot Check Preview Tests
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_code/cloudflare/social-bot-check-preview/**'
+      - 'tools/social-bot-check/common.js'
+      - 'tools/social-bot-check/providers/**'
+      - '.github/workflows/social-bot-check-preview.yml'
+  pull_request:
+    paths:
+      - '_code/cloudflare/social-bot-check-preview/**'
+      - 'tools/social-bot-check/common.js'
+      - 'tools/social-bot-check/providers/**'
+      - '.github/workflows/social-bot-check-preview.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: _code/cloudflare/social-bot-check-preview/package-lock.json
+      - run: npm ci --prefix _code/cloudflare/social-bot-check-preview --no-audit --no-fund
+      - run: npm test --prefix _code/cloudflare/social-bot-check-preview
