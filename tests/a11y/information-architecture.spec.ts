@@ -2,6 +2,7 @@ import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
 const labels = ['Essays', 'Stories & Folklore', 'Games & Worlds', 'Tools', 'Learn', 'About', 'Search', 'Subscribe'];
+const isPreview = process.env.PLAYWRIGHT_IA_PREVIEW === '1' || (process.env.PLAYWRIGHT_BASE_URL || '').includes('preview.tedt.org');
 const paths = ['/', '/essays/', '/stories/', '/games/', '/tools/', '/learn/', '/about-ted/', '/profile/', '/category/ai/', '/tools/plotto/', '/Gamma-World-Bestiary/Abomination.html', '/assessments/ai-coding-maturity-assessment/', '/assessments/enterprise-ai-maturity-assessment/'];
 
 for (const width of [1440, 390]) {
@@ -15,8 +16,13 @@ for (const width of [1440, 390]) {
       if (width < 1200) await toggle.click();
       const links = nav.locator('.navbar-nav > .nav-item > a.menu-item');
       expect((await links.allTextContents()).map(t => t.trim())).toEqual(labels);
-      await expect(page.locator('.site-preview-banner')).toBeVisible();
-      await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+      if (isPreview) {
+        await expect(page.locator('.site-preview-banner')).toBeVisible();
+        await expect(page.locator('meta[name="robots"]')).toHaveAttribute('content', /noindex/);
+      } else {
+        await expect(page.locator('.site-preview-banner')).toHaveCount(0);
+        await expect(page.locator('meta[name="robots"][content*="noindex"]')).toHaveCount(0);
+      }
       const disclosure = nav.locator('#toolsDropdownToggle');
       await disclosure.click();
       await expect(disclosure).toHaveAttribute('aria-expanded', 'true');
@@ -73,7 +79,9 @@ for (const path of ['/', '/essays/', '/stories/', '/games/', '/tools/', '/learn/
       await page.addInitScript(value => localStorage.setItem('color-scheme', value), theme);
       await page.goto(path);
       await expect(page.locator('.library-main')).toHaveCount(1);
-      const result = await new AxeBuilder({ page }).include('.library-main').include('.ia-navbar').include('.site-preview-banner').analyze();
+      const audit = new AxeBuilder({ page }).include('.library-main').include('.ia-navbar');
+      if (isPreview) audit.include('.site-preview-banner');
+      const result = await audit.analyze();
       expect(result.violations.map(v => ({ id: v.id, impact: v.impact, nodes: v.nodes.map(n => n.target) }))).toEqual([]);
     });
   }

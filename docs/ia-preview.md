@@ -14,6 +14,8 @@ python3 scripts/check-ia-preview.py /tmp/tedt-ia-package
 
 On this Mac, the existing Ruby is 3.2.9 and the main checkout stores its installed gems under vendor/bundle. Set RBENV_VERSION and BUNDLE_PATH when building from an isolated worktree rather than changing the lockfile.
 
+For browser checks against a local preview server, set `PLAYWRIGHT_IA_PREVIEW=1`, `PLAYWRIGHT_SKIP_WEB_SERVER=1`, and `PLAYWRIGHT_BASE_URL` to that server's URL. Tests against `https://preview.tedt.org` recognize preview mode automatically. Without preview mode, the same navigation tests verify the banner and noindex directive are absent.
+
 The package reuses published img and media files from tedt.org, removes authoring files and operational reports, writes the preview CNAME, and disables service-worker delivery. Package only into a task-owned directory; the script refuses to replace an unmarked directory.
 
 ## What to Review
