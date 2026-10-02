@@ -106,6 +106,59 @@ const techLevelReference = {
   notes: 'Imports, specialist access, and local repair capability can vary.'
 };
 
+const skillFilterReference = {
+  valueSemantics: 'source_recorded_required_use_skill',
+  filterSemantics: 'Family options match any structured requirement in that family; exact options match one speciality. Conditional alternatives match either skill.',
+  unresolvedValue: 'unresolved_or_not_recorded',
+  unresolvedLabel: 'Unresolved or not recorded',
+  optionsByKind: {
+    weapon: [
+      { value: 'family:gun_combat', label: 'Gun Combat — all specialities', optionType: 'family', familyId: 'gun_combat', familyLabel: 'Gun Combat', specialityId: null, specialityLabel: null, variantCount: 2 },
+      { value: 'exact:gun_combat:slug', label: 'Gun Combat (slug)', optionType: 'exact', familyId: 'gun_combat', familyLabel: 'Gun Combat', specialityId: 'slug', specialityLabel: 'slug', variantCount: 2 },
+      { value: 'family:gunner', label: 'Gunner — all specialities', optionType: 'family', familyId: 'gunner', familyLabel: 'Gunner', specialityId: null, specialityLabel: null, variantCount: 1 },
+      { value: 'exact:gunner:turret', label: 'Gunner (turret)', optionType: 'exact', familyId: 'gunner', familyLabel: 'Gunner', specialityId: 'turret', specialityLabel: 'turret', variantCount: 1 },
+      { value: 'family:heavy_weapons', label: 'Heavy Weapons — all specialities', optionType: 'family', familyId: 'heavy_weapons', familyLabel: 'Heavy Weapons', specialityId: null, specialityLabel: null, variantCount: 1 },
+      { value: 'exact:heavy_weapons:vehicle', label: 'Heavy Weapons (vehicle)', optionType: 'exact', familyId: 'heavy_weapons', familyLabel: 'Heavy Weapons', specialityId: 'vehicle', specialityLabel: 'vehicle', variantCount: 1 },
+      { value: 'unresolved_or_not_recorded', label: 'Unresolved or not recorded', optionType: 'status', familyId: null, familyLabel: null, specialityId: null, specialityLabel: null, variantCount: 1 }
+    ],
+    armour: [
+      { value: 'family:vacc_suit', label: 'Vacc Suit — all specialities', optionType: 'family', familyId: 'vacc_suit', familyLabel: 'Vacc Suit', specialityId: null, specialityLabel: null, variantCount: 1 },
+      { value: 'exact:vacc_suit:none', label: 'Vacc Suit — no speciality stated', optionType: 'exact', familyId: 'vacc_suit', familyLabel: 'Vacc Suit', specialityId: null, specialityLabel: null, variantCount: 1 },
+      { value: 'unresolved_or_not_recorded', label: 'Unresolved or not recorded', optionType: 'status', familyId: null, familyLabel: null, specialityId: null, specialityLabel: null, variantCount: 0 }
+    ],
+    augment: [
+      { value: 'unresolved_or_not_recorded', label: 'Unresolved or not recorded', optionType: 'status', familyId: null, familyLabel: null, specialityId: null, specialityLabel: null, variantCount: 1 }
+    ],
+    equipment: [
+      { value: 'unresolved_or_not_recorded', label: 'Unresolved or not recorded', optionType: 'status', familyId: null, familyLabel: null, specialityId: null, specialityLabel: null, variantCount: 1 }
+    ]
+  }
+};
+
+function requiredSkill(
+  familyId: string,
+  familyLabel: string,
+  specialityId: string | null,
+  specialityLabel: string | null,
+  raw: string,
+  condition = ''
+) {
+  return {
+    familyId,
+    familyLabel,
+    specialityId,
+    specialityLabel,
+    minimumLevel: null,
+    condition,
+    raw,
+    fieldState: 'stated',
+    filterValues: [
+      `family:${familyId}`,
+      `exact:${familyId}:${specialityId || 'none'}`
+    ]
+  };
+}
+
 const guidanceSources = {
   weapon: [{ title: 'Core Rulebook', pages: [224], pageBasis: 'printed' }],
   armour: [{ title: 'Core Rulebook', pages: [224], pageBasis: 'printed' }],
@@ -316,6 +369,9 @@ const indexItems: CatalogFixtureItem[] = [
     mountContext: 'handheld',
     lawLevel: '6',
     legalCategory: 'category_2',
+    requiredSkills: [
+      requiredSkill('gun_combat', 'Gun Combat', 'slug', 'slug', 'Gun Combat (slug)')
+    ],
     displayName: 'Accelerator Rifle - Central Supply Catalogue - TL 9',
     statLine: 'TL 9 | Mass 2 kg | Cost Cr900 | Range 250m | Damage 3D | Magazine 15',
     descriptionSummary: 'A low-recoil rifle designed for use in low or zero gravity.',
@@ -337,7 +393,7 @@ const indexItems: CatalogFixtureItem[] = [
   {
     itemId: 'item:weapon:accelerator-rifle:example',
     definitionId: 'definition:accelerator-rifle-core',
-    variantId: 'variant:accelerator-rifle-core-tl9',
+    variantId: 'variant:accelerator-rifle-core-tl11',
     kind: 'weapon',
     sheetRole: 'inventory',
     personalDefault: true,
@@ -346,8 +402,11 @@ const indexItems: CatalogFixtureItem[] = [
     mountContext: 'handheld',
     lawLevel: '7',
     legalCategory: 'category_3',
-    displayName: 'Accelerator Rifle - Core Rulebook - TL 9',
-    statLine: 'TL 9 | Mass 2 kg | Cost Cr900 | Range 250m | Damage 3D | Magazine 15',
+    requiredSkills: [
+      requiredSkill('gun_combat', 'Gun Combat', 'slug', 'slug', 'Gun Combat (slug)')
+    ],
+    displayName: 'Accelerator Rifle - Core Rulebook - TL 11',
+    statLine: 'TL 11 | Mass 2 kg | Cost Cr900 | Range 250m | Damage 3D | Magazine 15',
     descriptionSummary: 'The Core Rulebook variant of the low-recoil rifle.',
     rulesSummary: 'Use Gun Combat (slug) and the Zero-G trait for this exact variant.',
     sourceReferences: [
@@ -356,7 +415,7 @@ const indexItems: CatalogFixtureItem[] = [
     detailShard: 'details-00.json',
     sheet: {
       name: 'Accelerator Rifle',
-      tl: '9',
+      tl: '11',
       skill: 'Gun Combat (slug)',
       damage: '3D',
       range: '250m',
@@ -374,6 +433,11 @@ const indexItems: CatalogFixtureItem[] = [
     domains: ['vehicle'],
     lawLevel: '2',
     legalCategory: 'prohibited',
+    requiredSkillStatus: 'conditional',
+    requiredSkills: [
+      requiredSkill('gunner', 'Gunner', 'turret', 'turret', 'Gunner (turret)', 'Use when operated from a turret.'),
+      requiredSkill('heavy_weapons', 'Heavy Weapons', 'vehicle', 'vehicle', 'Heavy Weapons (vehicle)', 'Use when fired as a vehicle weapon.')
+    ],
     displayName: 'Vehicle Laser',
     statLine: 'TL 10 | Damage 5D',
     descriptionSummary: 'A vehicle-mounted laser.',
@@ -400,6 +464,7 @@ const indexItems: CatalogFixtureItem[] = [
     summaryStatus: 'needs_review',
     reviewFlags: ['required_skill_unresolved', 'incomplete_structured_profile'],
     requiredSkillStatus: 'unresolved',
+    requiredSkills: [],
     domains: ['personal', 'biological'],
     displayName: 'Claw',
     statLine: 'Damage 2D',
@@ -427,6 +492,9 @@ const indexItems: CatalogFixtureItem[] = [
     domains: ['personal'],
     lawLevel: '9+',
     legalCategory: 'category_1',
+    requiredSkills: [
+      requiredSkill('vacc_suit', 'Vacc Suit', null, null, 'Vacc Suit 0')
+    ],
     displayName: 'Cloth Armor',
     statLine: 'TL 7 | Protection +8',
     descriptionSummary: 'Flexible personal armor.',
@@ -445,6 +513,7 @@ const indexItems: CatalogFixtureItem[] = [
     domains: ['personal'],
     lawLevel: '8',
     legalCategory: 'category_4',
+    requiredSkills: [],
     displayName: 'Neural Link',
     statLine: 'TL 12 | Cost Cr10000',
     descriptionSummary: 'A neural interface augment.',
@@ -463,6 +532,7 @@ const indexItems: CatalogFixtureItem[] = [
     domains: ['personal'],
     lawLevel: '5',
     legalCategory: 'category_1',
+    requiredSkills: [],
     displayName: 'Communicator',
     statLine: 'TL 8 | Mass 0.5 kg | Cost Cr250',
     descriptionSummary: 'A portable personal communicator.',
@@ -515,10 +585,11 @@ async function routeCatalog(
     schemaVersion?: string;
     includeTechLevelReference?: boolean;
     includeLegalCategoryReference?: boolean;
+    includeSkillFilterReference?: boolean;
     includeExactTechLevel?: boolean;
   } = {}
 ) {
-  const schemaVersion = options.schemaVersion || '1.3.0';
+  const schemaVersion = options.schemaVersion || '1.5.0';
   const manifestLawLevelReference = structuredClone(lawLevelReference);
   if (options.perGuidanceSources === false) {
     manifestLawLevelReference.levels.forEach(level => {
@@ -539,6 +610,9 @@ async function routeCatalog(
   }
   if (options.includeLegalCategoryReference !== false) {
     manifest.legalCategoryReference = legalCategoryReference;
+  }
+  if (options.includeSkillFilterReference !== false) {
+    manifest.skillFilterReference = skillFilterReference;
   }
   const routedDetailItems = options.includeExactTechLevel === false
     ? detailItems.map(item => {
@@ -601,6 +675,8 @@ test.describe('Traveller gear catalog', () => {
       await expect(panel).not.toHaveAttribute('open', '');
       await expect(panel.getByText('Catalog filters')).not.toBeVisible();
       await expect(panel.locator('[data-gear-tech-level-help]')).not.toBeVisible();
+      await expect(panel.getByLabel('Required skill')).not.toBeVisible();
+      await expect(panel.getByLabel('Sort results')).not.toBeVisible();
       await expect(panel.locator('[data-gear-locker-open]')).not.toBeVisible();
     }
 
@@ -691,11 +767,65 @@ test.describe('Traveller gear catalog', () => {
     expect(blockingViolations).toEqual([]);
   });
 
+  test('loads kind-pure skill filters from the manifest without loading the index', async ({ page }) => {
+    await routeCatalog(page);
+    await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
+
+    const weaponPanel = await openAddPanel(page, 'weapon');
+    const weaponSkill = weaponPanel.getByLabel('Required skill');
+    await expect(weaponSkill.locator('option[value="family:gun_combat"]')).toHaveText(
+      'Gun Combat — all specialities'
+    );
+    await expect(weaponSkill.locator('option[value="exact:heavy_weapons:vehicle"]')).toHaveText(
+      'Heavy Weapons (vehicle)'
+    );
+    await expect(weaponSkill.locator('option[value="unresolved_or_not_recorded"]')).toHaveText(
+      'Unresolved or not recorded'
+    );
+
+    const armourPanel = await openAddPanel(page, 'armour');
+    const armourSkill = armourPanel.getByLabel('Required skill');
+    await expect(armourSkill.locator('option[value="family:vacc_suit"]')).toHaveText(
+      'Vacc Suit — all specialities'
+    );
+    await expect(armourSkill.locator('option[value^="family:gun_combat"]')).toHaveCount(0);
+    await expect(armourSkill.locator('option[value^="family:heavy_weapons"]')).toHaveCount(0);
+
+    const augmentPanel = await openAddPanel(page, 'augment');
+    await expect(augmentPanel.getByLabel('Required skill').locator('option')).toHaveCount(2);
+
+    const indexLoaded = await page.evaluate(() =>
+      performance.getEntriesByType('resource').some(entry => entry.name.includes('gear-catalog/index.json'))
+    );
+    expect(indexLoaded).toBe(false);
+  });
+
+  test('keeps schema 1.4 skill controls on a safe static fallback', async ({ page }) => {
+    await routeCatalog(page, {
+      schemaVersion: '1.4.0',
+      includeSkillFilterReference: false
+    });
+    await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
+
+    const panel = await openAddPanel(page, 'weapon');
+    const skill = panel.getByLabel('Required skill');
+    await expect(skill.locator('option')).toHaveCount(2);
+    await expect(skill.locator('option[value="any"]')).toHaveText('Any skill requirement');
+    await expect(skill.locator('option[value="unresolved_or_not_recorded"]')).toHaveText(
+      'Unresolved or not recorded'
+    );
+    await panel.getByRole('button', { name: 'Choose a weapon from the catalog' }).click();
+    await expect(page.locator('#gear-locker').getByRole('status')).toContainText(
+      '7 catalog variants loaded'
+    );
+  });
+
   test('keeps Tech Level help neutral when reading schema 1.2 assets', async ({ page }) => {
     await routeCatalog(page, {
       schemaVersion: '1.2.0',
       includeTechLevelReference: false,
       includeLegalCategoryReference: false,
+      includeSkillFilterReference: false,
       includeExactTechLevel: false
     });
     await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
@@ -908,6 +1038,10 @@ test.describe('Traveller gear catalog', () => {
       elements.map(element => Math.round(element.getBoundingClientRect().height))
     );
     expect(new Set(desktopHeights).size).toBe(1);
+    const desktopCompactColumns = await panel.locator('.gear-catalog-compact-grid').evaluate(
+      element => getComputedStyle(element).gridTemplateColumns.split(' ').length
+    );
+    expect(desktopCompactColumns).toBe(2);
 
     await page.setViewportSize({ width: 390, height: 844 });
     const mobileLayout = await panel.evaluate(element => {
@@ -915,11 +1049,19 @@ test.describe('Traveller gear catalog', () => {
       return {
         heights: helpPanels.map(help => Math.round(help.getBoundingClientRect().height)),
         minHeights: helpPanels.map(help => getComputedStyle(help).minHeight),
+        compactColumns: getComputedStyle(
+          element.querySelector<HTMLElement>('.gear-catalog-compact-grid')!
+        ).gridTemplateColumns.split(' ').length,
+        compactControlHeights: Array.from(
+          element.querySelectorAll<HTMLElement>('.gear-catalog-compact-grid .form-control')
+        ).map(control => Math.round(control.getBoundingClientRect().height)),
         overflow: document.documentElement.scrollWidth > document.documentElement.clientWidth
       };
     });
     expect(mobileLayout.minHeights.every(value => value === '0px')).toBe(true);
     expect(new Set(mobileLayout.heights).size).toBeGreaterThan(1);
+    expect(mobileLayout.compactColumns).toBe(1);
+    expect(mobileLayout.compactControlHeights.every(value => value >= 44)).toBe(true);
     expect(mobileLayout.overflow).toBe(false);
   });
 
@@ -946,6 +1088,18 @@ test.describe('Traveller gear catalog', () => {
       'Unknown or variable TL — Check item source — not TL0'
     );
     const generatedLegalFilter = weaponPanel.getByLabel('Legal category');
+    const generatedSkillFilter = weaponPanel.getByLabel('Required skill');
+    await expect(generatedSkillFilter.locator('option')).toHaveCount(37);
+    await expect(generatedSkillFilter.locator('option[value="family:gun_combat"]')).toHaveText(
+      'Gun Combat — all specialities'
+    );
+    await expect(generatedSkillFilter.locator('option[value="exact:heavy_weapons:man_portable"]')).toHaveText(
+      'Heavy Weapons (man portable)'
+    );
+    await expect(generatedSkillFilter.locator('option[value="exact:melee:bludgeon"]')).toHaveText(
+      'Melee (bludgeon)'
+    );
+    await expect(generatedSkillFilter.locator('option[value="unresolved_or_not_recorded"]')).toHaveCount(1);
     const generatedLegalLabels = {
       category_1: 'Category 1 — Unrestricted where local law permits',
       category_2: 'Category 2 — Civilian use; permit or safety training',
@@ -979,6 +1133,12 @@ test.describe('Traveller gear catalog', () => {
     await generatedLegalFilter.selectOption('any');
 
     const generatedArmourPanel = await openAddPanel(page, 'armour');
+    const generatedArmourSkill = generatedArmourPanel.getByLabel('Required skill');
+    await expect(generatedArmourSkill.locator('option')).toHaveCount(4);
+    await expect(generatedArmourSkill.locator('option[value="family:vacc_suit"]')).toHaveText(
+      'Vacc Suit — all specialities'
+    );
+    await expect(generatedArmourSkill.locator('option[value^="family:gun_"]')).toHaveCount(0);
     await generatedArmourPanel.getByLabel('Legal category').selectOption('category_1');
     const generatedArmourLegalHelp = generatedArmourPanel.locator(
       '[data-gear-legal-category-help]'
@@ -988,9 +1148,27 @@ test.describe('Traveller gear catalog', () => {
     );
     await expect(generatedArmourLegalHelp).not.toContainText('categorys');
 
-    await weaponPanel.getByRole('button', { name: 'Choose a weapon from the catalog' }).click();
+    const generatedEquipmentPanel = await openAddPanel(page, 'equipment');
+    const generatedEquipmentSkill = generatedEquipmentPanel.getByLabel('Required skill');
+    await expect(generatedEquipmentSkill.locator('option[value="family:flyer"]')).toHaveText(
+      'Flyer — all specialities'
+    );
+    await expect(generatedEquipmentSkill.locator('option[value="exact:flyer:any"]')).toHaveText(
+      'Flyer (any)'
+    );
+
+    await generatedSkillFilter.selectOption('exact:gun_combat:slug');
+    await weaponPanel.getByLabel('Sort results').selectOption('tech-asc');
+    const generatedWeaponBrowse = weaponPanel.getByRole('button', {
+      name: 'Choose a weapon from the catalog'
+    });
+    await generatedWeaponBrowse.click();
     await expect(locker).toBeVisible();
     await expect(locker.getByRole('status')).toContainText('1869 catalog variants loaded');
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText('Gun Combat (slug)');
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText(
+      'sorted by Tech Level low to high'
+    );
     await locker.getByLabel('Search the gear catalog').fill('ACCELERATOR RIFLE');
     await locker.getByRole('option', { name: /ACCELERATOR RIFLE/ }).first().click();
     await locker.getByRole('button', { name: /Central Supply Catalogue - TL 9/ }).first().click();
@@ -1020,7 +1198,17 @@ test.describe('Traveller gear catalog', () => {
       }
     });
 
+    await locker.getByRole('button', { name: 'Done' }).click();
+    await generatedSkillFilter.selectOption('unresolved_or_not_recorded');
+    await weaponPanel.getByLabel('Sort results').selectOption('tech-desc');
+    await generatedWeaponBrowse.click();
     await locker.getByRole('button', { name: 'All entries' }).click();
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText(
+      'unresolved or not recorded'
+    );
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText(
+      'sorted by Tech Level high to low'
+    );
     await locker.getByLabel('Search the gear catalog').fill('Advanced Ground Defence Gun');
     await locker.getByRole('option', { name: /Advanced Ground Defence Gun/i }).click();
     await expect(locker.getByText('Source review needed')).toBeVisible();
@@ -1137,7 +1325,7 @@ test.describe('Traveller gear catalog', () => {
     expect(blockingViolations).toEqual([]);
   });
 
-  test('filters exact catalog variants by TL, Law Level, and Legal Category without changing sheet rows', async ({ page }) => {
+  test('composes TL, Law, Legal Category, and skill filters without changing sheet rows', async ({ page }) => {
     await routeCatalog(page);
     await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
     await page.evaluate(() => {
@@ -1158,6 +1346,8 @@ test.describe('Traveller gear catalog', () => {
     await panel.getByLabel('Maximum Tech Level').selectOption('max:9');
     await panel.getByLabel('First restricted Law Level').selectOption('6');
     await panel.getByLabel('Legal category').selectOption('category_2');
+    await panel.getByLabel('Required skill').selectOption('exact:gun_combat:slug');
+    await panel.getByLabel('Sort results').selectOption('tech-asc');
     await browse.click();
 
     await expect(locker.getByRole('option', { name: /Accelerator Rifle/ })).toHaveCount(1);
@@ -1166,6 +1356,8 @@ test.describe('Traveller gear catalog', () => {
     await expect(locker.getByText('2 exact catalog variants are available.')).toHaveCount(0);
     await expect(locker.locator('.gear-locker-detail-context')).toContainText('First restricted Law Level: 6');
     await expect(locker.locator('.gear-locker-detail-context')).toContainText('Category 2 — Civilian Use');
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText('Gun Combat (slug)');
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText('sorted by Tech Level low to high');
     await locker.getByRole('button', { name: 'Done' }).click();
 
     await panel.getByLabel('Maximum Tech Level').selectOption('max:8');
@@ -1181,11 +1373,91 @@ test.describe('Traveller gear catalog', () => {
     await panel.getByLabel('Maximum Tech Level').selectOption('any');
     await panel.getByLabel('First restricted Law Level').selectOption('undetermined');
     await panel.getByLabel('Legal category').selectOption('undetermined');
+    await panel.getByLabel('Required skill').selectOption('unresolved_or_not_recorded');
     await browse.click();
     await locker.getByRole('button', { name: 'All entries' }).click();
     await expect(locker.getByRole('option', { name: /Claw/ })).toBeVisible();
     await expect(locker.getByRole('option', { name: /Accelerator Rifle/ })).toHaveCount(0);
     await expect(page.locator('#weapons-container')).toContainText('Existing Sidearm');
+  });
+
+  test('sorts grouped Tech Levels, matches conditional skills by OR, and isolates kind state', async ({ page }) => {
+    await routeCatalog(page);
+    await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
+
+    const weaponPanel = await openAddPanel(page, 'weapon');
+    const weaponSkill = weaponPanel.getByLabel('Required skill');
+    const weaponSort = weaponPanel.getByLabel('Sort results');
+    const weaponBrowse = weaponPanel.getByRole('button', { name: 'Choose a weapon from the catalog' });
+    const locker = page.locator('#gear-locker');
+
+    await weaponSort.selectOption('tech-asc');
+    await weaponBrowse.click();
+    await locker.getByRole('button', { name: 'All entries' }).click();
+    let resultNames = await locker.getByRole('option').allTextContents();
+    expect(resultNames.map(value => value.match(/Accelerator Rifle|Vehicle Laser|Claw/)?.[0])).toEqual([
+      'Accelerator Rifle',
+      'Vehicle Laser',
+      'Claw'
+    ]);
+    await locker.getByRole('option', { name: /Accelerator Rifle/ }).click();
+    let variantText = await locker.locator('.gear-locker-variant').allTextContents();
+    expect(variantText[0]).toContain('TL 9');
+    expect(variantText[1]).toContain('TL 11');
+    await locker.getByRole('button', { name: 'Done' }).click();
+
+    await weaponSort.selectOption('tech-desc');
+    await weaponBrowse.click();
+    await locker.getByRole('button', { name: 'All entries' }).click();
+    resultNames = await locker.getByRole('option').allTextContents();
+    expect(resultNames.map(value => value.match(/Accelerator Rifle|Vehicle Laser|Claw/)?.[0])).toEqual([
+      'Vehicle Laser',
+      'Accelerator Rifle',
+      'Claw'
+    ]);
+    await locker.getByRole('option', { name: /Accelerator Rifle/ }).click();
+    variantText = await locker.locator('.gear-locker-variant').allTextContents();
+    expect(variantText[0]).toContain('TL 11');
+    expect(variantText[1]).toContain('TL 9');
+    await locker.getByRole('button', { name: 'Done' }).click();
+
+    for (const skillValue of ['family:gunner', 'family:heavy_weapons']) {
+      await weaponSkill.selectOption(skillValue);
+      await weaponBrowse.click();
+      await locker.getByRole('button', { name: 'All entries' }).click();
+      await expect(locker.getByRole('option', { name: /Vehicle Laser/ })).toBeVisible();
+      await expect(locker.getByRole('option', { name: /Accelerator Rifle/ })).toHaveCount(0);
+      await expect(locker.getByRole('option', { name: /Claw/ })).toHaveCount(0);
+      await locker.getByRole('button', { name: 'Done' }).click();
+    }
+
+    await weaponSkill.selectOption('unresolved_or_not_recorded');
+    await weaponBrowse.click();
+    await locker.getByRole('button', { name: 'All entries' }).click();
+    await expect(locker.getByRole('option', { name: /Claw/ })).toBeVisible();
+    await expect(locker.getByRole('option', { name: /Vehicle Laser/ })).toHaveCount(0);
+    await locker.getByRole('button', { name: 'Done' }).click();
+
+    const armourPanel = await openAddPanel(page, 'armour');
+    await armourPanel.getByLabel('Required skill').selectOption('family:vacc_suit');
+    await armourPanel.getByLabel('Sort results').selectOption('tech-desc');
+    await armourPanel.getByRole('button', { name: 'Choose armor from the catalog' }).click();
+    await expect(locker.getByRole('option', { name: /Cloth Armor/ })).toBeVisible();
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText('Vacc Suit — all specialities');
+    await locker.getByRole('button', { name: 'Done' }).click();
+
+    await weaponSkill.selectOption('family:gun_combat');
+    await weaponSort.selectOption('tech-asc');
+    await weaponBrowse.click();
+    await locker.getByRole('tab', { name: /Armor/ }).click();
+    await expect(locker.getByRole('option', { name: /Cloth Armor/ })).toBeVisible();
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText('Vacc Suit — all specialities');
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText('sorted by Tech Level high to low');
+    await locker.getByRole('tab', { name: /Weapons/ }).click();
+    await expect(locker.getByRole('option', { name: /Accelerator Rifle/ })).toBeVisible();
+    await expect(locker.getByRole('option', { name: /Vehicle Laser/ })).toHaveCount(0);
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText('Gun Combat — all specialities');
+    await expect(locker.locator('.gear-locker-results-summary')).toContainText('sorted by Tech Level low to high');
   });
 
   test('uses one keyboard result stop and a mobile results-to-detail flow', async ({ page }) => {
