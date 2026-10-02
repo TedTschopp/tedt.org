@@ -1,0 +1,8 @@
+# Overlay only; production configuration remains in _config.yml.
+url: https://preview.tedt.org
+baseurl: ""
+preview: true
+analytics:
+  enabled: false
+  clarity:
+    enabled: false

@@ -45,7 +45,7 @@
             <!-- Main Content Column -->
             <div class="col-12" id="content-column">
                 <!-- Page Content -->
-                <main role="main">
+                <main id="main-content" tabindex="-1" role="main">
                     <div class="py-4">
                         {% assign __page_primary_category = page.category | default: page.categories[0] | default: '' | to_s | strip %}
                         {% if __page_primary_category != '' %}

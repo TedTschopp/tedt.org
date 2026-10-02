@@ -71,6 +71,7 @@
 {% comment %}Honor explicit crawl directives while ensuring page.noindex cannot be overridden accidentally.{% endcomment %}
 {% assign robots_directives = page.robots | join: ', ' | to_s | strip %}
 {% assign noindex_requested = false %}
+{% if site.preview %}{% assign noindex_requested = true %}{% endif %}
 {% if page.noindex == true or page.noindex == 'true' or page.noindex == 1 or page.noindex == '1' %}
   {% assign noindex_requested = true %}
 {% endif %}

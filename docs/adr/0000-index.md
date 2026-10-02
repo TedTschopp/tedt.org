@@ -37,6 +37,8 @@ This directory contains Architecture Decision Records (ADRs) capturing significa
 | 0014 | [Inside AI Browser Explainer](0014-inside-ai-browser-explainer.md) | Accepted | 2026-09-27 | Isolated Svelte/D3 application, browser-only inference and separately hosted immutable model assets. |
 | 0015 | [Add Account Images to Social Bot Check Previews](0015-add-account-images-to-social-bot-check-previews.md) | Accepted | 2026-10-01 | A narrow Cloudflare Worker route supplies account avatars in the initial sharing metadata. |
 
+| 0016 | [Introduce Section Navigation and an Isolated GitHub Preview](0016-introduce-section-navigation-and-github-preview.md) | Proposed | 2026-10-02 | Six reader-facing hubs and a separate GitHub Pages review site preserve production until cutover. |
+
 
 ## Conventions
 

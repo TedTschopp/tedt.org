@@ -22,7 +22,7 @@
 <body class="gt-page">
   <a class="gt-skip" href="#gt-main">Skip to the main content</a>
   {% include layout/top-nav-bar.html %}
-  <main id="gt-main" class="gt-shell" tabindex="-1">
+  <main id="main-content" tabindex="-1" id="gt-main" class="gt-shell" tabindex="-1">
     {% if page.experiment %}
       {% assign current = site.data.game_theory.experiments | where: 'slug', page.experiment | first %}
       <nav class="gt-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/game-theory/' | relative_url }}">Game Theory Playground</a><span aria-hidden="true"> / </span><span>{{ current.concept }}</span></nav>

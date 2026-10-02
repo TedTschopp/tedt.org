@@ -62,7 +62,7 @@
                 <!-- Blog Post -->
                 {% capture __article_class %}{{ page.article_class | default: '' }}{% endcapture %}
                 {% assign __article_class = __article_class | strip %}
-                <main class="h-entry" role="main">
+                <main id="main-content" tabindex="-1" class="h-entry" role="main">
 
                     <div class="card h-100 no-padding">
                         {% include utility/resolve-image-variables.html item=page fallback_alt=page.title fallback_credits_title='In Search of an Image - "No Image Associated with this article"' fallback_credits=site.author.name fallback_credits_artist_url=site.author.url %}

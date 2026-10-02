@@ -1,0 +1,24 @@
+- id: everyday
+  title: Everyday & Productivity
+  description: Small tools for everyday tasks, focus, and exploration.
+  tools: [ocr, qr-builder, focus-timer, outage-map, ipfs-in-the-browser, password-challenge, math-guide, game-theory-playground]
+- id: writing
+  title: Writing, Text & Code
+  description: Shape a story, transform text, and work with code.
+  tools: [plotto, morph, markdown-frontmatter-preview, procedural-text-generation, procedural-text-gen, sloccount-web-analyzer]
+- id: images
+  title: Images & Design
+  description: Work with color, images, and visual experiments.
+  tools: [color-chart, image-tools, gradient-card, fractal]
+- id: maps
+  title: Maps & Generators
+  description: Create terrain, stars, and resources for imagined worlds.
+  tools: [islands, random-star-constellations, rpg-world-map-generator, gamma-world-map-275feet, rpg-tile-map-viewer, hex-test-direct, traveller-character-sheet, traveller-ship-sheet]
+- id: ai
+  title: AI Tools & Library
+  description: Reusable AI assets, interactive explanations, and practical assessments.
+  tools: [ai-chat-window, inside-ai]
+- id: social
+  title: Social Tools
+  description: Explore public activity and work with feeds, embeds, and bots.
+  tools: [social-bot-check, mastodon-embed-timeline, mastodon-bot-random-board-game-night, mastodon-bot-map-generator]

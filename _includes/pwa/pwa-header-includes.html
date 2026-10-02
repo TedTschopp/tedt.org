@@ -3,7 +3,7 @@
   only to the homepage. Its root scope is unavoidable because the homepage is
   served from `/`; sw.js therefore also ignores fetches from non-homepage pages.
 {% endcomment %}
-{% if page.url == '/' %}
+{% if page.url == '/' and site.preview != true %}
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {

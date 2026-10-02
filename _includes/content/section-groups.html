@@ -1,0 +1,8 @@
+<div class="ia-group-list">
+{% for group in site.data.site_sections[include.section] %}
+  <section class="ia-group" id="{{ group.id }}" aria-labelledby="{{ group.id }}-title">
+    <div class="ia-group-intro"><h2 id="{{ group.id }}-title">{{ group.title | escape }}</h2><p>{{ group.description | escape }}</p></div>
+    <ul class="ia-destination-list">{% for link in group.links %}<li><a href="{% if link.url contains '://' or link.url contains 'mailto:' %}{{ link.url }}{% else %}{{ link.url | relative_url }}{% endif %}">{{ link.title | escape }} <span aria-hidden="true">↗</span></a></li>{% endfor %}</ul>
+  </section>
+{% endfor %}
+</div>

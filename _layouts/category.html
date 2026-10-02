@@ -43,7 +43,7 @@
             <!-- Blog Post Content Column -->
             <div class="col-lg-8">
                 <!-- Blog Post -->
-                <main class="h-entry" role="main">
+                <main id="main-content" tabindex="-1" class="h-entry" role="main">
                     <!-- Title -->
                     {% assign __cat_source = page.category | default: page.title | default: '' | to_s | strip %}
                     {% capture __cat_slug %}{% include category/map-category-to-registry.html key=__cat_source %}{% endcapture %}

@@ -973,3 +973,12 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Contact
 
 For questions or feedback, you can reach me via [Mastodon](https://twit.social/@tedt) or through the contact form on the site.
+
+
+## Information Architecture Preview
+
+The proposed reader navigation is Essays, Stories & Folklore, Games & Worlds, Tools, Learn, and About. Section hubs use the existing posts, categories, and tool collection. Their front matter uses `section` to select a key from `_data/site_navigation.yml` and `_data/site_sections.yml`; this is a navigation identity, not a new collection. Tools are grouped through `_data/tool_groups.yml`. Plotto is an active project labeled Under Development. The new About hub uses `/about-ted/` to preserve the existing `/About/` article.
+
+Build the review site with `_config.yml,_config.preview.yml`. The site-level `preview: true` setting disables production analytics and homepage service-worker registration, shows the preview banner, and requests noindex. It must remain an overlay; production builds use `_config.yml`. The packaging script applies noindex to standalone pages too and reuses existing public media.
+
+See [Preview review and cutover](docs/ia-preview.md) and [Proposed ADR 0016](docs/adr/0016-introduce-section-navigation-and-github-preview.md). The review site is an unlinked, public GitHub Pages deployment. Production cutover requires a separate request.

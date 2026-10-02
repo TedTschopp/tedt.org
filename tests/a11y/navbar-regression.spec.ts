@@ -4,7 +4,7 @@ import { verifyDropdown } from './helpers/navbar';
 
 // Hardening test: validates that navbar dropdown works across representative pages.
 // Pages list can be extended; use PROD_BASE or default to local Jekyll dev.
-const BASE = process.env.PROD_BASE || 'http://127.0.0.1:4000';
+const BASE = process.env.PROD_BASE || process.env.PLAYWRIGHT_BASE_URL || 'http://127.0.0.1:4000';
 const pages = [
   '/',
   '/assessments/',
@@ -18,8 +18,8 @@ const responsiveAssessmentPages = [
 ];
 
 // Selectors based on existing markup
-const careerTrigger = 'button#careerDropdownToggle';
-const careerMenu = 'ul[aria-labelledby="careerDropdownToggle"]';
+const toolsTrigger = 'button#toolsDropdownToggle';
+const toolsMenu = 'ul[aria-labelledby="toolsDropdownToggle"]';
 
 consoleErrorsFixture.describe('Navbar dropdown regression', () => {
   for (const path of pages) {
@@ -41,30 +41,21 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
       expect(response?.ok(), `${path} should load successfully`).toBeTruthy();
       await page.waitForTimeout(400);
 
-      const trigger = page.locator(careerTrigger).first();
+      const trigger = page.locator(toolsTrigger).first();
       await expect(trigger).toBeVisible();
       // Initial state
       await expect(trigger).toHaveAttribute('aria-expanded', /false|undefined/);
       // Open
-      await verifyDropdown(page, careerTrigger, careerMenu);
+      await verifyDropdown(page, toolsTrigger, toolsMenu);
       await expect(trigger).toHaveAttribute('aria-expanded', 'true');
       // Close via Escape
       await page.keyboard.press('Escape');
       await expect(trigger).toHaveAttribute('aria-expanded', /false|undefined/);
 
-      const assessmentsItem = page.locator(
-        'nav[aria-label="Primary"] a[href$="/assessments/"], ' +
-        'nav[aria-label="Primary"] button[data-href$="/assessments/"]'
-      ).first();
-      await expect(assessmentsItem).toBeVisible();
-      await expect(assessmentsItem).toContainText('Assessments');
-
-      const aiLibraryItem = page.locator(
-        'nav[aria-label="Primary"] a[href="https://ai.tedt.org/"], ' +
-        'nav[aria-label="Primary"] button[data-href="https://ai.tedt.org/"]'
-      ).first();
-      await expect(aiLibraryItem).toBeVisible();
-      await expect(aiLibraryItem).toContainText('AI Library');
+      const toolsOverview = page.locator('nav[aria-label="Primary"] #toolsDropdownMenu a[href$="/tools/"]');
+      await expect(toolsOverview).toHaveCount(1);
+      const aboutLink = page.locator('nav[aria-label="Primary"] a[href$="/about-ted/"]').first();
+      await expect(aboutLink).toContainText('About');
 
       const primaryNavigationText = await page.locator('nav[aria-label="Primary"]').innerText();
       expect(primaryNavigationText).not.toMatch(/(?:\bAlpha\b|\bBeta\b|\bGamma\b|α|β|γ)/i);
@@ -76,7 +67,7 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
       expect(count, 'Primary navigation should expose top-level links').toBeGreaterThan(0);
       const topLevelLabels = (await navItems.allTextContents())
         .map(label => label.trim().replace(/\s+/g, ' '));
-      expect(topLevelLabels).toContain('AI Library');
+      expect(topLevelLabels).toEqual(['Essays', 'Stories & Folklore', 'Games & Worlds', 'Tools', 'Learn', 'About', 'Search', 'Subscribe']);
       expect(topLevelLabels).not.toContain('Prompts');
       expect(topLevelLabels).not.toContain('Skills & Agents');
       const heights: number[] = [];

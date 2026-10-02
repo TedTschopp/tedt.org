@@ -1,0 +1,217 @@
+essays:
+  - id: ai-architecture
+    title: "AI & Enterprise Architecture"
+    description: "How organizations put AI and architecture to work."
+    links:
+      - title: "AI Essays"
+        url: "/category/ai/"
+      - title: "Enterprise Architecture"
+        url: "/category/enterprise-architecture/"
+      - title: "Guided Reading Paths"
+        url: "/topics/"
+  - id: work-leadership
+    title: "Work & Leadership"
+    description: "Teams, organizational change, and the craft of getting work done."
+    links:
+      - title: "Leadership"
+        url: "/category/leadership/"
+      - title: "Business"
+        url: "/category/business/"
+      - title: "Communications"
+        url: "/category/communications/"
+  - id: technology-science
+    title: "Technology & Science"
+    description: "Computing, research, and the systems shaping daily life."
+    links:
+      - title: "Computers"
+        url: "/category/computers/"
+      - title: "Science"
+        url: "/category/science/"
+      - title: "Mobile Technology"
+        url: "/category/mobile/"
+  - id: faith-philosophy
+    title: "Faith & Philosophy"
+    description: "Questions about meaning, belief, ethics, and the digital age."
+    links:
+      - title: "Religion"
+        url: "/category/religion/"
+      - title: "Philosophy"
+        url: "/category/philosophy/"
+  - id: life-culture
+    title: "Life & Culture"
+    description: "Reading, watching, listening, and living with curiosity."
+    links:
+      - title: "Opinion & Reflections"
+        url: "/category/opinion/"
+      - title: "Books"
+        url: "/category/books/"
+      - title: "Movies"
+        url: "/category/movies/"
+      - title: "Music"
+        url: "/category/music/"
+stories:
+  - id: swiss-folklore
+    title: "Swiss Folklore"
+    description: "Read translated tales, then explore the places, characters, and sources behind them."
+    links:
+      - title: "Annotated Folklore Collection"
+        url: "/folklore/"
+      - title: "All Folklore Articles"
+        url: "/category/folklore/"
+  - id: original-writing
+    title: "Original Writing"
+    description: "Personal writing and imaginative work, with each piece presented in its own context."
+    links:
+      - title: "Personal Writing"
+        url: "/category/personal-writing/"
+  - id: poetry-lyrics
+    title: "Poetry & Lyrics"
+    description: "Words written to be spoken, sung, or read slowly, alongside music essays."
+    links:
+      - title: "Writing About Music & Lyrics"
+        url: "/category/music/"
+  - id: tolkien-fandom
+    title: "Tolkien & Fandom"
+    description: "Middle-earth, fan communities, and the worlds readers make together."
+    links:
+      - title: "Middle-earth"
+        url: "/category/middle-earth/"
+      - title: "Fandom"
+        url: "/category/fandom/"
+  - id: writing-tools
+    title: "Writing Tools"
+    description: "Find a starting point for a story, an adventure, or a new character."
+    links:
+      - title: "Plotto — Under Development"
+        url: "/tools/plotto/"
+      - title: "Random Text Generator"
+        url: "https://randomtables.tedt.org/"
+      - title: "All Writing Tools"
+        url: "/tools/#writing"
+games:
+  - id: marchen-engine
+    title: "The Märchen Engine"
+    description: "A home for folklore, storytelling, and tabletop game design."
+    links:
+      - title: "Explore the Märchen Engine"
+        url: "/category/marchen-engine/"
+      - title: "System & Rules"
+        url: "/RPG/The-Märchin-Engine/"
+  - id: campaigns-systems
+    title: "Campaigns & Systems"
+    description: "Choose a system and find the material that belongs at your table."
+    links:
+      - title: "Gamma World"
+        url: "/category/gamma-world/"
+      - title: "Mutant Crawl Classics"
+        url: "/category/mutant-crawl-classics/"
+      - title: "Traveller"
+        url: "/RPG/Traveller/"
+      - title: "Dungeons & Dragons"
+        url: "/category/dnd/"
+      - title: "Dungeon Crawl Classics"
+        url: "/category/dcc/"
+      - title: "GURPS"
+        url: "/category/gurps/"
+      - title: "Shadowrun"
+        url: "/category/shadowrun/"
+  - id: bestiary-reference
+    title: "Bestiary & Reference"
+    description: "Browse creatures and game references without wading through the essay archive."
+    links:
+      - title: "Gamma World Bestiary"
+        url: "/category/bestiary/"
+      - title: "Monsters"
+        url: "/category/monsters/"
+      - title: "Tabletop Articles"
+        url: "/category/role-playing-games/"
+  - id: worldbuilding-maps
+    title: "Worldbuilding & Maps"
+    description: "Draw a world, generate its terrain, and discover what lives there."
+    links:
+      - title: "Map Articles"
+        url: "/category/maps/"
+      - title: "Island Generator"
+        url: "https://islands.tedt.org/"
+      - title: "Constellation Generator"
+        url: "https://random-constellations.tedt.org/"
+  - id: gm-tools
+    title: "GM Tools"
+    description: "Generators and working resources for preparing a session."
+    links:
+      - title: "Plotto — Under Development"
+        url: "/tools/plotto/"
+      - title: "Random Text Generator"
+        url: "https://randomtables.tedt.org/"
+      - title: "AI-Assisted GM Tools"
+        url: "https://ttrpg-mcp.tedt.org/"
+      - title: "All Maps & Generators"
+        url: "/tools/#maps"
+learn:
+  - id: inside-ai
+    title: "Inside AI"
+    description: "An interactive explanation of how a language model works."
+    links:
+      - title: "Open Inside AI"
+        url: "/inside-ai/"
+  - id: game-theory
+    title: "Game Theory Playground"
+    description: "Experiment with cooperation, incentives, trust, and collective decisions."
+    links:
+      - title: "Explore the Experiments"
+        url: "/game-theory/"
+  - id: math
+    title: "Math in Plain English"
+    description: "Work through mathematical ideas with explanations and examples."
+    links:
+      - title: "Open the Math Guide"
+        url: "/math-guide/"
+  - id: presentations
+    title: "Talks & Presentations"
+    description: "Slide decks on AI, architecture, and the practical questions behind them."
+    links:
+      - title: "Browse Presentations"
+        url: "/slides/"
+      - title: "AI & Architecture Reading Paths"
+        url: "/topics/"
+about:
+  - id: profile
+    title: "About Ted"
+    description: "I’m Ted Tschopp, an enterprise architect exploring technology, faith, storytelling, and games."
+    links:
+      - title: "Read My Profile"
+        url: "/profile/"
+      - title: "Career & Resume"
+        url: "/career/"
+  - id: projects
+    title: "Selected Work & Projects"
+    description: "Professional work and personal projects, connected by an interest in making complicated things understandable."
+    links:
+      - title: "Career & Project History"
+        url: "/career/"
+      - title: "Project Articles"
+        url: "/category/projects/"
+      - title: "Plotto — Under Development"
+        url: "/tools/plotto/"
+      - title: "AI Library"
+        url: "https://ai.tedt.org/"
+  - id: contact
+    title: "Contact"
+    description: "Get in touch by email, or find me in the communities where I share my work."
+    links:
+      - title: "Email Ted"
+        url: "mailto:ted@tschopp.org"
+      - title: "GitHub"
+        url: "https://github.com/TedTschopp"
+      - title: "LinkedIn"
+        url: "https://www.linkedin.com/in/tedtschopp"
+      - title: "Bluesky"
+        url: "https://bsky.app/profile/tedt.org"
+  - id: editorial-standards
+    title: "Editorial Standards"
+    description: "Unless otherwise stated, this site reflects my own views. Sources, translation notes, and the state of developing projects belong alongside the work."
+    links:
+      - title: "About the Author"
+        url: "/profile/"
+      - title: "Folklore Sources & Translation Notes"
+        url: "/folklore/"

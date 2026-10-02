@@ -1,0 +1,95 @@
+- key: essays
+  title: "Essays"
+  url: /essays/
+  description: "Ideas about technology, work, faith, and everyday life."
+  image: /img/categories/home-hero-images/hero-hardware.webp
+  children:
+    - title: "AI & Enterprise Architecture"
+      url: /essays/#ai-architecture
+    - title: "Work & Leadership"
+      url: /essays/#work-leadership
+    - title: "Technology & Science"
+      url: /essays/#technology-science
+    - title: "Faith & Philosophy"
+      url: /essays/#faith-philosophy
+    - title: "Life & Culture"
+      url: /essays/#life-culture
+- key: stories
+  title: "Stories & Folklore"
+  url: /stories/
+  description: "Swiss folklore, original writing, and the stories we carry with us."
+  image: /img/categories/home-hero-images/hero-village.webp
+  children:
+    - title: "Swiss Folklore"
+      url: /stories/#swiss-folklore
+    - title: "Original Writing"
+      url: /stories/#original-writing
+    - title: "Poetry & Lyrics"
+      url: /stories/#poetry-lyrics
+    - title: "Tolkien & Fandom"
+      url: /stories/#tolkien-fandom
+    - title: "Writing Tools"
+      url: /stories/#writing-tools
+- key: games
+  title: "Games & Worlds"
+  url: /games/
+  description: "Campaigns, creatures, imagined worlds, and tools for the table."
+  image: /img/categories/home-hero-images/hero-dice.webp
+  children:
+    - title: "The Märchen Engine"
+      url: /games/#marchen-engine
+    - title: "Campaigns & Systems"
+      url: /games/#campaigns-systems
+    - title: "Bestiary & Reference"
+      url: /games/#bestiary-reference
+    - title: "Worldbuilding & Maps"
+      url: /games/#worldbuilding-maps
+    - title: "GM Tools"
+      url: /games/#gm-tools
+- key: tools
+  title: "Tools"
+  url: /tools/
+  description: "Practical browser tools, plot generators, and reusable AI resources."
+  image: /img/categories/home-hero-images/hero-library.webp
+  children:
+    - title: "Everyday & Productivity"
+      url: /tools/#everyday
+    - title: "Writing, Text & Code"
+      url: /tools/#writing
+    - title: "Images & Design"
+      url: /tools/#images
+    - title: "Maps & Generators"
+      url: /tools/#maps
+    - title: "AI Tools & Library"
+      url: /tools/#ai
+    - title: "Social Tools"
+      url: /tools/#social
+- key: learn
+  title: "Learn"
+  url: /learn/
+  description: "Explore ideas through interactive lessons, reading paths, and talks."
+  image: /img/categories/home-hero-images/hero-data-center.webp
+  children:
+    - title: "Inside AI"
+      url: /learn/#inside-ai
+    - title: "Game Theory Playground"
+      url: /learn/#game-theory
+    - title: "Math in Plain English"
+      url: /learn/#math
+    - title: "Talks & Presentations"
+      url: /learn/#presentations
+- key: about
+  title: "About"
+  url: /about-ted/
+  description: "Who I am, the work I do, and how to get in touch."
+  children:
+    - title: "About Ted"
+      url: /profile/
+    - title: "Career & Resume"
+      url: /career/
+    - title: "Selected Work & Projects"
+      url: /about-ted/#projects
+    - title: "Contact"
+      url: /about-ted/#contact
+    - title: "Editorial Standards"
+      url: /about-ted/#editorial-standards

@@ -41,10 +41,10 @@
 
 <body>
      <header class="container-fluid py-2" role="banner">
-          <!-- Optional: Add site navigation or branding here -->
+          {% include layout/top-nav-bar.html %}
      </header>
      
-     <main class="container" role="main">
+     <main class="container" role="main" id="main-content" tabindex="-1">
           <div class="row">
                <aside class="d-none d-lg-block col-lg-1" id="papermargin_left" aria-hidden="true"></aside>
                <section class="col-12 col-lg-10" id="paper_printarea">

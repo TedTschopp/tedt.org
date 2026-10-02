@@ -1,0 +1,15 @@
+---
+layout: null
+permalink: /search-index.json
+---
+[
+{% assign first = true %}
+{% for post in site.posts %}
+{% unless post.categories contains 'Prompts' or post.categories contains 'Home' or post.categories contains 'Draft' %}
+{% assign search_type = 'writing' %}{% if post.categories contains 'Bestiary' %}{% assign search_type = 'reference' %}{% elsif post.layout == 'reveal-integrated' or post.layout == 'slide-deck' %}{% assign search_type = 'learn' %}{% endif %}
+{% unless first %},{% endunless %}{"title":{{ post.title | jsonify }},"url":{{ post.url | relative_url | jsonify }},"summary":{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 200 | jsonify }},"subjects":{{ post.categories | join: ' ' | jsonify }},"type":{{ search_type | jsonify }}}
+{% assign first = false %}
+{% endunless %}
+{% endfor %}
+{% for tool in site.tools %},{ "title":{{ tool.title | jsonify }},"url":{{ tool.url | relative_url | jsonify }},"summary":{{ tool.summary | jsonify }},"subjects":{{ tool.tags | join: ' ' | jsonify }},"type":"tools"}{% endfor %}
+]
