@@ -1,0 +1,24 @@
+<section class="ia-elsewhere" aria-labelledby="elsewhere-title">
+  <h2 id="elsewhere-title">Elsewhere on the Web</h2>
+  <ul class="ia-elsewhere-list">
+  {% for profile in site.data.elsewhere.primary %}
+    {% for link in site.links %}{% assign link_key = link.Name | strip_html %}{% if link_key == profile.key %}
+    <li><a class="u-url" rel="me" href="{% include utility/profile-url.html link=link %}"><span class="ia-profile-name">{{ profile.name | escape }}</span><span class="ia-profile-handle">{{ profile.handle | escape }}</span><span class="ia-profile-context">{{ profile.context | escape }}</span><span class="ia-profile-arrow" aria-hidden="true">↗</span></a></li>
+    {% endif %}{% endfor %}
+  {% endfor %}
+  </ul>
+  {% assign elsewhere_count = 0 %}{% for group in site.data.elsewhere.groups %}{% assign group_count = group.items | size %}{% assign elsewhere_count = elsewhere_count | plus: group_count %}{% endfor %}
+  <details class="ia-elsewhere-more">
+    <summary><span aria-hidden="true">▾</span> Everywhere Else ({{ elsewhere_count }})</summary>
+    <div class="ia-elsewhere-groups">
+    {% for group in site.data.elsewhere.groups %}
+      <div><h3>{{ group.title | escape }}</h3><ul>
+      {% for key in group.items %}{% for link in site.links %}{% assign link_key = link.Name | strip_html %}{% if link_key == key %}
+        <li><a class="u-url" rel="me" href="{% include utility/profile-url.html link=link %}">{{ site.data.elsewhere.names[key] | default: link_key | escape }}</a></li>
+      {% endif %}{% endfor %}{% endfor %}
+      </ul></div>
+    {% endfor %}
+    </div>
+  </details>
+  {% for link in site.links %}{% assign link_key = link.Name | strip_html %}{% if link_key == 'BuyMeACoffee' %}<p class="ia-elsewhere-support">If you’d like to support the work, <a class="u-url" rel="me" href="{% include utility/profile-url.html link=link %}">Buy Me a Coffee</a>.</p>{% endif %}{% endfor %}
+</section>

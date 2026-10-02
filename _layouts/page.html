@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 
     {% include utility/calculate-variables.html %}
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
@@ -36,7 +36,7 @@
         {% include assets/mermaid.html %}
     {% endif %}
   </head>
-  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+  <body class="workbench-reading" style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
     {% include layout/top-nav-bar.html %}
 
     <!-- Page Content -->
@@ -57,7 +57,7 @@
                         {% if __page_entry %}
                             {% include category/category-palette-apply.html entry=__page_entry slug=__page_slug raw=__page_primary_category title=page.title subtitle=page.description wrapper_class='page-hero category-theme mb-4' title_tag='h1' title_class='mb-2' subtitle_tag='p' subtitle_class='lead mb-0' %}
                         {% else %}
-                            <h1 class="mb-4">{{ page.title }}</h1>
+                            <h1 class="display-1 mb-4">{{ page.title }}</h1>
                             {% if page.description %}
                                 <p class="lead">{{ page.description }}</p>
                             {% endif %}

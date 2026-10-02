@@ -1,160 +1,35 @@
 ---
-layout: long-article
+layout: library
 ---
-
-<article class="container my-4 tool-detail">
-    <header class="mb-4">
-        <h1 class="mb-2">{{ page.title }}</h1>
-
-        {% if page.summary %}
-        <p class="lead mb-3">{{ page.summary }}</p>
-        {% endif %}
-
-        <div class="d-flex flex-wrap gap-2 align-items-center mb-3">
-            {% if page.status %}
-            <span class="badge rounded-pill text-bg-secondary">
-                {{ page.status | upcase }}
-            </span>
-            {% endif %}
-
-            {% if page.tool_type %}
-            <span class="badge rounded-pill text-bg-light border">
-                {{ page.tool_type }}
-            </span>
-            {% endif %}
-
-            {% if page.last_modified %}
-            <span class="small text-body-secondary">
-                Updated {{ page.last_modified | date: "%B %-d, %Y" }}
-            </span>
-            {% elsif page.date %}
-            <span class="small text-body-secondary">
-                {{ page.date | date: "%B %-d, %Y" }}
-            </span>
-            {% endif %}
-        </div>
-
-        <div class="d-flex flex-wrap gap-2">
-            {% if page.links.live %}
-            <a class="btn btn-primary" href="{{ page.links.live }}" target="_blank" rel="noopener">
-                Open Tool
-            </a>
-            {% endif %}
-
-            {% if page.links.repo %}
-            <a class="btn btn-outline-secondary" href="{{ page.links.repo }}" target="_blank" rel="noopener">
-                Source
-            </a>
-            {% endif %}
-
-            {% if page.links.docs %}
-            <a class="btn btn-outline-secondary" href="{{ page.links.docs }}" target="_blank" rel="noopener">
-                Docs
-            </a>
-            {% endif %}
-
-            {% if page.links.download %}
-            <a class="btn btn-outline-secondary" href="{{ page.links.download }}" target="_blank" rel="noopener">
-                Download
-            </a>
-            {% endif %}
-
-            <a class="btn btn-link" href="{{ '/tools/' | relative_url }}">
-                ← All tools
-            </a>
-        </div>
-    </header>
-
-    {% assign hero_image = page.hero_image | to_s | strip %}
-    {% if hero_image == "" %}
-        {% assign fallback_404_images = site.static_files | where_exp: "f", "f.path contains '/img/404/'" | where_exp: "f", "f.extname == '.webp'" %}
-        {% assign fallback_404_image = fallback_404_images | sample %}
-        {% if fallback_404_image %}
-            {% assign hero_image = fallback_404_image.path %}
-        {% endif %}
-    {% endif %}
-
-    {% if hero_image != "" %}
-    <figure class="mb-4">
-        <div class="ratio ratio-3x1 rounded overflow-hidden">
-            {% assign _tool_hero_url = hero_image | relative_url %}
-            {% capture _tool_hero_alt %}{{ page.title }} hero image{% endcapture %}
-            {% include utility/responsive-image.html src=_tool_hero_url alt=_tool_hero_alt class="w-100 h-100 object-fit-cover" sizes="(min-width: 1200px) 1110px, 100vw" lcp=true %}
-        </div>
-    </figure>
-    {% endif %}
-
-    <section class="mb-4">
-        <div class="row g-4">
-            <div class="col-12 col-lg-7">
-                <div class="tool-content">
-                    {% assign __tool_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
-                    {{ __tool_content | lazy_images_except_first }}
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-5">
-                <div class="p-3 border rounded bg-light-subtle">
-                    <h2 class="h5 mb-3">Details</h2>
-
-                    {% if page.tech %}
-                    <div class="mb-3">
-                        <div class="small text-body-secondary">Tech</div>
-                        <ul class="mb-0">
-                            {% for t in page.tech %}
-                            <li>{{ t }}</li>
-                            {% endfor %}
-                        </ul>
-                    </div>
-                    {% endif %}
-
-                    {% if page.license %}
-                    <div class="mb-3">
-                        <div class="small text-body-secondary">License</div>
-                        <div>{{ page.license }}</div>
-                    </div>
-                    {% endif %}
-
-                    {% if page.tags %}
-                    <div class="mb-0">
-                        <div class="small text-body-secondary">Tags</div>
-                        <div class="d-flex flex-wrap gap-1 mt-1">
-                            {% for tag in page.tags %}
-                            <span class="badge text-bg-secondary">{{ tag }}</span>
-                            {% endfor %}
-                        </div>
-                    </div>
-                    {% endif %}
-                </div>
-
-                {% if page.features %}
-                <div class="mt-4">
-                    <h2 class="h5">Features</h2>
-                    <ul>
-                        {% for f in page.features %}
-                        <li>{{ f }}</li>
-                        {% endfor %}
-                    </ul>
-                </div>
-                {% endif %}
-            </div>
-        </div>
-    </section>
-
-    {% if page.screenshots %}
-    <section class="mb-5">
-        <h2 class="h4 mb-3">Screenshots</h2>
-        <div class="row row-cols-1 row-cols-md-2 g-3">
-            {% for shot in page.screenshots %}
-            <div class="col">
-                <a href="{{ shot | relative_url }}">
-                    {% assign _tool_shot_url = shot | relative_url %}
-                    {% capture _tool_shot_alt %}{{ page.title }} screenshot {{ forloop.index }}{% endcapture %}
-                    {% include utility/responsive-image.html src=_tool_shot_url alt=_tool_shot_alt class="img-fluid rounded border" sizes="(min-width: 992px) 40vw, 100vw" %}
-                </a>
-            </div>
-            {% endfor %}
-        </div>
-    </section>
-    {% endif %}
+<article class="container ia-container ia-tool-detail">
+  <nav class="ia-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a><span aria-hidden="true">/</span><a href="{{ '/tools/' | relative_url }}">Tools</a><span aria-hidden="true">/</span><span aria-current="page">{{ page.title | escape }}</span></nav>
+  <header class="ia-section-header">
+    <p class="ia-eyebrow">{{ page.tool_type | default: 'Tool' | replace: 'webapp', 'Browser tool' | escape }}</p>
+    <h1 class="display-1">{{ page.title | escape }}</h1>
+    {% if page.summary %}<p class="ia-lead">{{ page.summary | escape }}</p>{% endif %}
+    <div class="ia-tool-meta">{% include content/tool-status.html status=page.status %}<time datetime="{{ page.last_modified | default: page.date | date: '%Y-%m-%d' }}">Updated {{ page.last_modified | default: page.date | date: '%b %-d, %Y' }}</time></div>
+    <nav class="ia-tool-actions" aria-label="Tool actions">
+      {% if page.links.live %}<a href="{% if page.links.live contains '://' %}{{ page.links.live }}{% else %}{{ page.links.live | relative_url }}{% endif %}">{% if page.status == 'under development' %}View the Project{% else %}Live{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}
+      {% if page.links.repo %}<a href="{{ page.links.repo }}">Code</a>{% endif %}
+      {% if page.links.docs %}<a href="{{ page.links.docs }}">Docs</a>{% endif %}
+      {% if page.links.download %}<a href="{{ page.links.download }}">Download</a>{% endif %}
+      <a href="{{ '/tools/' | relative_url }}">All Tools</a>
+    </nav>
+  </header>
+  {% if page.hero_image %}{% unless page.hero_image contains '/img/404/' or page.screenshots contains page.hero_image %}
+  <figure>{% assign tool_hero = page.hero_image | relative_url %}{% capture tool_hero_alt %}{{ page.title }} preview{% endcapture %}{% include utility/responsive-image.html src=tool_hero alt=tool_hero_alt class="ia-tool-screenshot" sizes="(min-width: 1200px) 1184px, 100vw" %}</figure>
+  {% endunless %}{% endif %}
+  <div class="ia-tool-detail-body">
+    <div class="ia-tool-content">{% assign tool_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}{{ tool_content | lazy_images_except_first }}</div>
+    <aside class="ia-tool-facts" aria-label="Tool details">
+      <h2>Details</h2>
+      <dl>
+        {% if page.tech %}<dt>Built With</dt><dd>{{ page.tech | join: ', ' | escape }}</dd>{% endif %}
+        {% if page.license %}<dt>License</dt><dd>{{ page.license | escape }}</dd>{% endif %}
+        {% if page.tags %}<dt>Topics</dt><dd>{{ page.tags | join: ', ' | escape }}</dd>{% endif %}
+      </dl>
+      {% if page.features %}<h2>Features</h2><ul>{% for feature in page.features %}<li>{{ feature | escape }}</li>{% endfor %}</ul>{% endif %}
+    </aside>
+  </div>
+  {% if page.screenshots %}<section class="ia-home-section"><h2>Screenshots</h2>{% for shot in page.screenshots %}{% include utility/responsive-image.html src=shot alt=page.title class="ia-tool-screenshot" sizes="(min-width: 1200px) 1184px, 100vw" %}{% endfor %}</section>{% endif %}
 </article>

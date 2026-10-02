@@ -5,7 +5,7 @@ description: "Search Ted’s essays, folklore, tools, presentations, and bestiar
 permalink: /search/
 ---
 <div class="container ia-container">
-<header class="ia-section-header"><p class="ia-eyebrow">Find Something on the Workbench</p><h1>Search the Site</h1><p class="ia-lead">Search titles, descriptions, and subjects across the writing, tools, and game references.</p></header>
+<header class="ia-section-header"><p class="ia-eyebrow">Find something on the workbench</p><h1 class="display-1">Search the Site</h1><p class="ia-lead">Search titles, descriptions, and subjects across the writing, tools, and game references.</p></header>
 <form id="site-search" class="ia-search-form" role="search" data-index="{{ '/search-index.json' | relative_url }}"><div><label for="site-query">What are you looking for?</label><input id="site-query" name="q" type="search" class="form-control" placeholder="Try Swiss folklore, AI governance, or Plotto" autocomplete="off"></div><div><label for="site-type">Collection</label><select id="site-type" class="form-select"><option value="">All collections</option><option value="writing">Writing & Stories</option><option value="reference">Bestiary & Reference</option><option value="tools">Tools</option><option value="learn">Presentations</option></select></div><button class="btn btn-primary" type="submit">Search</button></form>
 <p id="search-count" role="status" aria-live="polite">Enter a word or phrase to search.</p><ol id="search-results" class="ia-search-results"></ol><noscript><p>Site search uses JavaScript. You can also browse the <a href="{{ '/directory/' | relative_url }}">Site Directory</a>.</p></noscript>
 </div>

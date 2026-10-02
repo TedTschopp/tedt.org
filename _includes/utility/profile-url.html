@@ -1,0 +1,7 @@
+{%- assign profile_link = include.link -%}
+{{- profile_link.URL -}}
+{%- if profile_link.Username -%}
+  {%- assign url_last = profile_link.URL | slice: -1, 1 -%}
+  {%- unless url_last == '/' or url_last == '=' -%}/{%- endunless -%}
+  {{- profile_link.Username -}}
+{%- endif -%}

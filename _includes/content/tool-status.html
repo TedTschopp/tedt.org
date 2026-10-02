@@ -1,0 +1,8 @@
+{%- assign status = include.status | downcase -%}
+{%- assign status_class = status | slugify -%}
+{%- assign status_label = status | capitalize -%}
+{%- if status == 'under development' -%}
+  {%- assign status_class = 'development' -%}
+  {%- assign status_label = 'Under Development' -%}
+{%- endif -%}
+<span class="ia-status ia-status--{{ status_class | escape }}">{{ status_label | escape }}</span>

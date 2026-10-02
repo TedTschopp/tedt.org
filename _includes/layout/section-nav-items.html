@@ -3,7 +3,7 @@
   {% if page.section == section.key or page.url == section.url %}{% assign section_active = true %}{% endif %}
   <div class="nav-item dropdown ia-nav-item" role="listitem">
     <a class="nav-link menu-item ia-nav-link{% if section_active %} active{% endif %}" href="{{ section.url | relative_url }}"{% if page.url == section.url %} aria-current="page"{% endif %}>{{ section.title | escape }}</a>
-    <button type="button" class="nav-link ia-nav-disclosure dropdown-toggle" id="{{ section.key }}DropdownToggle" aria-label="Show {{ section.title | escape }} menu" aria-controls="{{ section.key }}DropdownMenu" aria-expanded="false"{% if include.native %} data-nav-dropdown{% else %} data-bs-toggle="dropdown"{% endif %}></button>
+    <button type="button" class="nav-link ia-nav-disclosure dropdown-toggle" id="{{ section.key }}DropdownToggle" aria-label="Show {{ section.title | escape }} menu" aria-controls="{{ section.key }}DropdownMenu" aria-expanded="false"{% if include.native %} data-nav-dropdown{% else %} data-bs-toggle="dropdown"{% endif %}><span aria-hidden="true">▾</span></button>
     <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" id="{{ section.key }}DropdownMenu" aria-labelledby="{{ section.key }}DropdownToggle"{% if include.native %} hidden{% endif %}>
       <li><a class="dropdown-item" href="{{ section.url | relative_url }}">{{ section.title | escape }} Overview</a></li>
       <li><hr class="dropdown-divider"></li>

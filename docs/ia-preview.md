@@ -27,6 +27,7 @@ The package reuses published img and media files from tedt.org, removes authorin
 - Site search, including bestiary-specific results.
 - Existing articles, folklore, reference pages, assessments, and slide URLs.
 - Navigation on a phone, keyboard disclosure controls, and light/dark themes.
+- The Public Workbench design: Cal Sans headings at weight 400, Inter body copy, Paper and Night color tokens, underlined links, clear theme controls, and readable profile links.
 - Search indexing and analytics disabled in the preview.
 
 ## Where to Edit
@@ -36,6 +37,8 @@ The package reuses published img and media files from tedt.org, removes authorin
 - `_data/tool_groups.yml`: purpose-based tool groups.
 - `_tools/plotto.md`: Plotto's catalog entry.
 - `_sass/components/_information-architecture.scss`: shared styling.
+- `_sass/components/_workbench-tokens.scss`: Paper and Night tokens from the tedtorg-preview-design skill.
+- `_data/elsewhere.yml`: profile-link order, names, handles, and groups; URLs remain in `_config.yml`.
 - `_config.preview.yml`: preview-only configuration.
 
 ## Publishing and Cutover
@@ -45,3 +48,13 @@ Publish the compiled package through the separate preview repository's GitHub Pa
 After an explicit cutover request, bring the branch up to date with the current production content, run `bundle exec jekyll build` using production configuration plus the applicable checks, and integrate the approved change into main. The preview config and packaging must stay out of the production build invocation. Verify live HTML, navigation, existing paths, and production analytics settings after deployment.
 
 Rollback reverts the redesign changes while preserving content added afterward.
+
+## Design Notes
+
+The five shelves each open with a painted lead image. About uses the existing illustrated portrait of Ted, cropped with CSS. Images declare their actual source dimensions and retain focal points in navigation data.
+
+Category indexes keep their existing aliases, content selection, and URLs while displaying dated writing rows and a restrained cyan-to-violet title underline. Tool details retain real screenshots and explicit artwork, without random fallback illustrations. Shared article layouts use the same type and reading colors; specialized interactive lessons and bestiary content keep their application behavior.
+
+The navbar collapses below 1400px so six separate 44px disclosure buttons and the theme/TOC controls fit without crowding. The content grids retain the design system's 1200px and 768px breakpoints.
+
+The shared footer uses text links with `rel="me"`, a closed-by-default native disclosure for additional profiles, and the family mark appropriate to each theme. No icon font is used in the library pages or shared footer.

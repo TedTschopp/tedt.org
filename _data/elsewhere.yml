@@ -1,0 +1,44 @@
+primary:
+  - key: Mastodon
+    name: Mastodon
+    handle: "@TedT@twit.social"
+    context: Fediverse
+  - key: BlueSky
+    name: Bluesky
+    handle: tedt.org
+    context: Notes
+  - key: LinkedIn
+    name: LinkedIn
+    handle: tedtschopp
+    context: Work
+  - key: GitHub
+    name: GitHub
+    handle: TedTschopp
+    context: Code
+  - key: Hugging Face
+    name: Hugging Face
+    handle: TedTschopp
+    context: AI
+  - key: Email
+    name: Email
+    handle: ted@tedt.org
+    context: Contact
+groups:
+  - title: Social
+    items: [Threads, Facebook, Instagram, Messenger, Twitter, Reddit, Snapchat]
+  - title: Writing & Reading
+    items: [Medium, Goodreads, Tumblr, Quora, Pinterest]
+  - title: Video, Music & Images
+    items: [YouTube, Twitch, Vimeo, SoundCloud, Suno, Midjourney]
+  - title: Code & Identity
+    items: [Dev.to, Keybase, Indieweb, web.brid.gy]
+  - title: Games
+    items: [Steam, xBox, GoG]
+  - title: Around Town
+    items: [Meetup, Foursquare]
+names:
+  Twitter: X (Twitter)
+  GoG: GOG
+  xBox: Xbox
+  Indieweb: IndieWeb
+  web.brid.gy: Bridgy Fed

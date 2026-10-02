@@ -50,7 +50,7 @@
             }
         </style>
   </head>
-    <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+    <body class="workbench-reading" style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
     {%- comment -%} Removed skip link per user request. (Previously: a11y shortcut 'Skip to content'). {%- endcomment -%}
     {% include layout/top-nav-bar.html %}
 
@@ -75,7 +75,7 @@
                             {% endif %}
                             <div class="card-body pt-3 pb-3 ps-4 pe-4">
                                 <div class="post-hero mb-2">
-                                    <h1 class="p-name card-title post-title mb-1">{{ page.title }}</h1>
+                                    <h1 class="display-1 p-name card-title post-title mb-1">{{ page.title }}</h1>
                                     {% if page.subtitle %}
                                         <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">{{ page.subtitle }}</p>
                                     {% endif %}
@@ -91,7 +91,7 @@
                             </div>
                         </div>
                         <div class="card-body pt-1 p-4 h-100{% if __article_class != '' %} {{ __article_class | escape }}{% endif %}">
-                           
+
                             <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
 
                                 {%- comment -%}
@@ -205,7 +205,7 @@
 
                                         {% if target_page %}
                                             <p class="h5 text-muted card-subtitle h5 mb-2">{{ target_page.description }}</p>
-                                        {% endif %}                                        
+                                        {% endif %}
 
                                         {% for post in site.categories[category] limit:5 %}
                                             <p class="card-text h6 mb-0 text-decoration-none"><a href="{{ post.url | absolute_url }}">{{ post.title }}</a></p>
@@ -216,7 +216,7 @@
                                             {% else %}
                                                 <p class="card-text">{{ post.excerpt | truncatewords: 20 }}</p>
                                             {% endif %}
-                                        {% endfor %}                                        
+                                        {% endfor %}
                                     </div>
                                 </div>
                             {% endfor %}

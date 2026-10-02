@@ -13,7 +13,7 @@ for (const width of [1440, 390]) {
       expect(response?.ok()).toBeTruthy();
       const nav = page.locator('nav[aria-label="Primary"]').first();
       const toggle = nav.locator('.navbar-toggler');
-      if (width < 1200) await toggle.click();
+      if (await toggle.isVisible()) await toggle.click();
       const links = nav.locator('.navbar-nav > .nav-item > a.menu-item');
       expect((await links.allTextContents()).map(t => t.trim())).toEqual(labels);
       if (isPreview) {
@@ -55,7 +55,7 @@ test('tool directory supports purpose search, status filtering, and empty result
   expect(original).toBeGreaterThan(25);
   await page.getByLabel('Search tools', { exact: true }).fill('plotto');
   await expect(page.locator('.ia-tool-card:visible')).toHaveCount(1);
-  await expect(page.locator('.ia-tool-card:visible')).toContainText('Under development');
+  await expect(page.locator('.ia-tool-card:visible')).toContainText('Under Development');
   await page.getByLabel('Development status').selectOption('active');
   await expect(page.locator('#tools-empty')).toBeVisible();
   await page.getByLabel('Search tools', { exact: true }).fill('');

@@ -1,0 +1,89 @@
+/* Public Workbench tokens, generated from tokens.json. Light = Paper (default), Dark = Night.
+   Theme hooks: [data-theme] (design system) and [data-bs-theme] (tedt.org / Bootstrap). */
+:root, [data-theme="light"], [data-bs-theme="light"] {
+  --ia-paper: #f8f6f0;
+  --ia-surface: #fffdfa;
+  --ia-ink: #101820;
+  --ia-muted: #4e5962;
+  --ia-link: #00446f;
+  --ia-link-hover: #003659;
+  --ia-accent: #b64216;
+  --ia-rule: #d7d5ce;
+  --ia-control: #7d858b;
+  --ia-primary: #00446f;
+  --ia-on-primary: #ffffff;
+  --nav-bg: #101820;
+  --nav-ink: #f8f6f0;
+  --switcher-border: rgba(248, 246, 240, 0.55);
+  --banner-bg: #f5ebd4;
+  --banner-ink: #373023;
+  --banner-rule: #c9b98f;
+  --banner-link: #00446f;
+  --brand-orange: #bf4714;
+  --brand-cyan: #00779e;
+  --brand-orange-decor: #e86027;
+  --brand-cyan-decor: #00a9e0;
+  --on-brand: #ffffff;
+  --category-cyan: #059cb6;
+  --category-violet: #9a79f9;
+  --signal-success: #004817;
+  --signal-danger: #64001a;
+  --signal-warning: #614b23;
+  --signal-info: #00445a;
+}
+[data-theme="dark"], [data-bs-theme="dark"] {
+  --ia-paper: #101820;
+  --ia-surface: #17222c;
+  --ia-ink: #f8f6f0;
+  --ia-muted: #bac6ce;
+  --ia-link: #8dd6f3;
+  --ia-link-hover: #8dd6f3;
+  --ia-accent: #ffb18c;
+  --ia-rule: #40505c;
+  --ia-control: #647683;
+  --ia-primary: #8dd6f3;
+  --ia-on-primary: #101820;
+  --nav-bg: #101820;
+  --nav-ink: #f8f6f0;
+  --switcher-border: rgba(248, 246, 240, 0.55);
+  --banner-bg: #f5ebd4;
+  --banner-ink: #373023;
+  --banner-rule: #c9b98f;
+  --banner-link: #00446f;
+  --brand-orange: #e86027;
+  --brand-cyan: #00a9e0;
+  --brand-orange-decor: #e86027;
+  --brand-cyan-decor: #00a9e0;
+  --on-brand: #101820;
+  --category-cyan: #06b6d4;
+  --category-violet: #a78bfa;
+  --signal-success: #66d188;
+  --signal-danger: #fb668d;
+  --signal-warning: #f7d79a;
+  --signal-info: #66cbec;
+}
+:root {
+  --space-1: 0.5rem;
+  --space-2: 0.75rem;
+  --space-3: 1rem;
+  --space-4: 1.25rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 2.5rem;
+  --space-8: 3rem;
+  --space-9: 3.5rem;
+  --space-10: 4.5rem;
+  --radius-none: 0;
+  --radius-sm: 0.375rem;
+  --radius-pill: 1rem;
+  --nav-height: 70px;
+  --container-max: 1280px;
+  --measure: 46rem;
+  --target-min: 44px;
+  --field-min: 48px;
+  --focus-width: 3px;
+  --hero-photo-h: 390px;
+  --font-display: "Cal Sans", "Titillium Web", sans-serif;
+  --font-sans: Inter, "Noto Sans", "Helvetica Neue", "Segoe UI", Roboto, "Liberation Sans", sans-serif;
+  --font-mono: "Fira Code", SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}

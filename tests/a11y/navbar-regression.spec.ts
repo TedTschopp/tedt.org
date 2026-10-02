@@ -40,6 +40,8 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
       expect(response, `${path} should return an HTTP response`).not.toBeNull();
       expect(response?.ok(), `${path} should load successfully`).toBeTruthy();
       await page.waitForTimeout(400);
+      const toggle = page.locator('nav[aria-label="Primary"] .navbar-toggler');
+      if (await toggle.isVisible()) await toggle.click();
 
       const trigger = page.locator(toolsTrigger).first();
       await expect(trigger).toBeVisible();
@@ -90,7 +92,7 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
   }
 
   for (const path of responsiveAssessmentPages) {
-    for (const width of [992, 1024, 1200]) {
+    for (const width of [992, 1024, 1200, 1400]) {
       consoleErrorsFixture(`navigation fits ${path} at ${width}px`, async ({ page, consoleErrors }) => {
         await page.setViewportSize({ width, height: 900 });
         const response = await page.goto(BASE + path, { waitUntil: 'domcontentloaded' });
@@ -100,7 +102,7 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
         const toggler = nav.locator('.navbar-toggler').first();
         const collapse = nav.locator('.navbar-collapse').first();
 
-        if (width < 1200) {
+        if (width < 1400) {
           await expect(toggler).toBeVisible();
           await expect(toggler).toHaveAttribute('aria-expanded', 'false');
           await toggler.click();

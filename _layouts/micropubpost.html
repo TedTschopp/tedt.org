@@ -31,7 +31,7 @@
 
   </head>
 
-  <body>
+  <body class="workbench-reading">
   {%- comment -%} Removed skip link per user request. {%- endcomment -%}
     <!-- Legacy Browser Redirect & Google Tag Manager -->
     {% include layout/top-of-body.html %}
@@ -62,7 +62,7 @@
                     {% capture __micropub_title_html %}<a href="{{ micropub_permalink }}">{{ micropub_post_title }}</a>{% endcapture %}
                     {% include category/category-palette-apply.html entry=__micropub_entry slug=__micropub_slug raw=__micropub_primary_category title_html=__micropub_title_html wrapper_class='micropub-hero category-theme no-underline mb-2' title_tag='h1' title_class='p-name lead mb-0' %}
                   {% else %}
-                    <h1 class="p-name lead"><a href="{{ micropub_permalink }}">{{ micropub_post_title }}</a></h1>
+                    <h1 class="display-1 p-name lead"><a href="{{ micropub_permalink }}">{{ micropub_post_title }}</a></h1>
                   {% endif %}
 
                   <p class="lead">{% include utility/content-credits.html page=page %}</p>
@@ -86,7 +86,7 @@
                       {% elsif forloop.last %}
                           and {{thiscategory}}
                       {% else %}
-                          {{thiscategory}}, 
+                          {{thiscategory}},
                       {% endif %}
                       {% if thiscategory == "draft" or thiscategory == "Draft" %}
                           {% assign this_is_a_draft = true %}
@@ -96,7 +96,7 @@
                   <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
 
                     <!--
-                        TODO: Implement Smart Cropping on the images to make sure they are a minimum height, 
+                        TODO: Implement Smart Cropping on the images to make sure they are a minimum height,
                         and still stay responsive: https://29a.ch/2014/04/03/smartcrop-content-aware-image-cropping
 
                         -->
@@ -111,7 +111,7 @@
 
                   {% if draw-map == true %}
                   {% comment %} <!--
-                                                   mf-location - {{ mf-location }} 
+                                                   mf-location - {{ mf-location }}
                                               mf-location-full - {{ mf-location-full }}
                                              mf-location-short - {{ mf-location-short }}
                                                   map-name-one - {{ map-name-one }}
@@ -132,7 +132,7 @@
                                               mf-checkin-state - {{ mf-checkin-state }}
                                             mf-checkin-country - {{ mf-checkin-country }}
                                            mf-checkin-zip-code - {{ mf-checkin-zip-code }}
-                                                    mf-checkin - {{ mf-checkin }} 
+                                                    mf-checkin - {{ mf-checkin }}
                                        page.mf-checkin[0].type - {{ page.mf-checkin[0].type}}
                                       page.mf-checkin[0].value - {{ page.mf-checkin[0].value }}
                             page.mf-checkin[0].properties.name - {{ page.mf-checkin[0].properties.name }}
@@ -147,8 +147,8 @@
                   {% endcomment %}
 
 
-                    <div id="mapid" 
-                         data-lat-one="{{ map-latitude-one }}" 
+                    <div id="mapid"
+                         data-lat-one="{{ map-latitude-one }}"
                          data-lon-one="{{ map-longitude-one }}"
                          {% if draw-map-two == true %}data-lat-two="{{ map-latitude-two }}" data-lon-two="{{ map-longitude-two }}"{% endif %}>
                     </div>
@@ -166,7 +166,7 @@
             var mymap = L.map('mapid')
                    .setView([ MAP_LAT_ONE, MAP_LON_ONE ], 15);
                         L.tileLayer(
-                          'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.webp', {attribution: 
+                          'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.webp', {attribution:
                           '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'})
                          .addTo(mymap);
 
@@ -190,17 +190,17 @@
                   {% endif %}
 
                   <hr>
-                  {% if stripped-content == null or stripped-content == empty %}                  
+                  {% if stripped-content == null or stripped-content == empty %}
                   {% else %}
                   <!-- Post Content -->
 
-                  <div id="toc"></div>  
+                  <div id="toc"></div>
                   {% assign __micropub_content = content | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
                   <span class="e-content">{{ __micropub_content | lazy_images_except_first }}</span>
                   <hr>
                   {% endif %}
                 </main>
- 
+
 
                 <!--Next and Previous Articles -->
                 {% include content/next-and-previous.html %}
@@ -213,8 +213,8 @@
                 {% include social/comments-webmentions.html %}
 
             </div>
-            
-            
+
+
         </div>
 
         <!-- /.row -->

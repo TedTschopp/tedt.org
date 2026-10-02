@@ -29,11 +29,11 @@
     {% include assets/scripts.html %}
 
   </head>
-  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+  <body class="workbench-reading" style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
     {% include layout/top-nav-bar.html %}
 
     <main id="main-content" tabindex="-1" class="container py-4" role="main">
-      <h1>{{ page.title | default: "Ted Tschopp's Profile" }}</h1>
+      <h1 class="display-1">{{ page.title | default: "Ted Tschopp's Profile" }}</h1>
       {% assign __profile_content = content | markdownify | replace: '<h1', '<h2' | replace: '</h1>', '</h2>' | replace: '<H1', '<H2' | replace: '</H1>', '</H2>' %}
       {{ __profile_content }}
     </main>

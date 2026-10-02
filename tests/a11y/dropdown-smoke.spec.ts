@@ -9,6 +9,8 @@ test.describe('Navbar dropdown smoke test', () => {
     await page.goto(LOCAL_URL, { waitUntil: 'domcontentloaded' });
     // Wait a tick to ensure bootstrap JS attached
     await page.waitForTimeout(500);
+    const toggle = page.locator('nav[aria-label="Primary"] .navbar-toggler');
+    if (await toggle.isVisible()) await toggle.click();
     const trigger = page.locator('button#toolsDropdownToggle');
     await expect(trigger).toBeVisible();
     await trigger.click();

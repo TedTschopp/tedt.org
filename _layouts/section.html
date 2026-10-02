@@ -5,10 +5,11 @@ layout: library
 <div class="container ia-container">
   <nav class="ia-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a><span aria-hidden="true">/</span><span aria-current="page">{{ section.title | escape }}</span></nav>
   <header class="ia-section-header">
-    <p class="ia-eyebrow">Ted’s Workbench</p>
-    <h1>{{ section.title | escape }}</h1>
+    <p class="ia-eyebrow">Ted’s workbench</p>
+    <h1 class="display-1">{{ section.title | escape }}</h1>
     <p class="ia-lead">{{ section.description | escape }}</p>
     <nav class="ia-jump-links" aria-label="Browse {{ section.title | escape }}">{% for group in site.data.site_sections[page.section] %}<a href="#{{ group.id }}">{{ group.title | escape }}</a>{% endfor %}</nav>
+    {% include content/shelf-lead.html section=page.section %}
   </header>
   {% include content/section-groups.html section=page.section %}
   {{ content }}

@@ -3,6 +3,9 @@
   url: /essays/
   description: "Ideas about technology, work, faith, and everyday life."
   image: /img/categories/home-hero-images/hero-hardware.webp
+  image_alt: "A hand presses a component into a dark circuit board traced with glowing cyan lines."
+  image_focus: "30% 50%"
+  categories: [ai, enterprise-architecture, business, leadership, communications, computers, mobile, science, religion, philosophy, opinion, books, movies, music, quotes, reprint, blog]
   children:
     - title: "AI & Enterprise Architecture"
       url: /essays/#ai-architecture
@@ -19,6 +22,9 @@
   url: /stories/
   description: "Swiss folklore, original writing, and the stories we carry with us."
   image: /img/categories/home-hero-images/hero-village.webp
+  image_alt: "A mist-filled valley at dusk, with an old Swiss village and church tower beneath forested hills."
+  image_focus: "60% 70%"
+  categories: [folklore, personal-writing, fandom, middle-earth, theonering-com-legacy-archive]
   children:
     - title: "Swiss Folklore"
       url: /stories/#swiss-folklore
@@ -35,6 +41,9 @@
   url: /games/
   description: "Campaigns, creatures, imagined worlds, and tools for the table."
   image: /img/categories/home-hero-images/hero-dice.webp
+  image_alt: "A hand-drawn map glowing blue on a wooden table, with polyhedral dice, a jar of dice and a closed notebook."
+  image_focus: "45% 55%"
+  categories: [bestiary, dcc, dnd, gamma-world, gurps, maps, marchen-engine, monsters, mutant-crawl-classics, role-playing-games, shadowrun]
   children:
     - title: "The Märchen Engine"
       url: /games/#marchen-engine
@@ -51,6 +60,9 @@
   url: /tools/
   description: "Practical browser tools, plot generators, and reusable AI resources."
   image: /img/categories/home-hero-images/hero-library.webp
+  image_alt: "A vaulted library hall lined with bookshelves, ending in a tall stained-glass doorway."
+  image_focus: "50% 55%"
+  categories: [prompts, projects]
   children:
     - title: "Everyday & Productivity"
       url: /tools/#everyday
@@ -69,6 +81,8 @@
   url: /learn/
   description: "Explore ideas through interactive lessons, reading paths, and talks."
   image: /img/categories/home-hero-images/hero-data-center.webp
+  image_alt: "A person seen from behind faces a wall of screens showing glowing circuit diagrams."
+  image_focus: "25% 45%"
   children:
     - title: "Inside AI"
       url: /learn/#inside-ai
@@ -82,6 +96,13 @@
   title: "About"
   url: /about-ted/
   description: "Who I am, the work I do, and how to get in touch."
+  image: /img/home/Ted-Tschopp-Enterprise-Architect-v4.webp
+  image_alt: "An illustrated portrait of Ted Tschopp at his desk overlooking a city at sunset."
+  image_width: 1500
+  image_height: 1000
+  image_focus: "40% 45%"
+  image_portrait: true
+  categories: [home, draft]
   children:
     - title: "About Ted"
       url: /profile/

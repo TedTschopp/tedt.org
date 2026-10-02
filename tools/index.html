@@ -8,10 +8,10 @@ no_toc: true
 ---
 <div class="container ia-container">
 <nav class="ia-breadcrumb" aria-label="Breadcrumb"><a href="{{ '/' | relative_url }}">Home</a><span aria-hidden="true">/</span><span aria-current="page">Tools</span></nav>
-<header class="ia-section-header"><p class="ia-eyebrow">Useful Things From the Workbench</p><h1>Tools</h1><p class="ia-lead">Find a tool by what you want to do. Each entry explains its purpose, links to the application, and shows its development status.</p><nav class="ia-jump-links" aria-label="Tool groups">{% for group in site.data.tool_groups %}<a href="#{{ group.id }}">{{ group.title | escape }}</a>{% endfor %}</nav></header>
+<header class="ia-section-header"><p class="ia-eyebrow">Useful things from the workbench</p><h1 class="display-1">Tools</h1><p class="ia-lead">Find a tool by what you want to do. Each entry explains its purpose, links to the application, and shows its development status.</p><nav class="ia-jump-links" aria-label="Tool groups">{% for group in site.data.tool_groups %}<a href="#{{ group.id }}">{{ group.title | escape }}</a>{% endfor %}</nav>{% include content/shelf-lead.html section='tools' %}</header>
 <form class="ia-tool-filters" id="tool-filters" role="search" aria-label="Filter tools">
 <div><label for="tool-search">Search tools</label><input class="form-control" id="tool-search" type="search" placeholder="Try plotting, images, AI, or maps" autocomplete="off"></div>
-<div><label for="tool-status">Development status</label><select class="form-select" id="tool-status"><option value="">All statuses</option>{% assign statuses = site.tools | map: 'status' | uniq | sort %}{% for status in statuses %}<option value="{{ status | escape }}">{{ status | capitalize | escape }}</option>{% endfor %}</select></div>
+<div><label for="tool-status">Development status</label><select class="form-select" id="tool-status"><option value="">All statuses</option>{% assign statuses = site.tools | map: 'status' | uniq | sort %}{% for status in statuses %}<option value="{{ status | escape }}">{% if status == 'under development' %}Under Development{% else %}{{ status | capitalize | escape }}{% endif %}</option>{% endfor %}</select></div>
 <p id="tool-count" class="ia-small" role="status" aria-live="polite">{{ site.tools | size }} tools in the directory.</p>
 </form>
 <p id="tools-empty" hidden>No tools match those filters. Try another search or choose all statuses.</p>
@@ -21,10 +21,10 @@ no_toc: true
 <div class="ia-tool-grid">
 {% for tool in tools %}{% assign tool_id = tool.path | split: '/' | last | remove: '.md' %}{% if group.tools contains tool_id %}
 <article class="ia-tool-card" data-tool-status="{{ tool.status | escape }}">
-<p class="ia-eyebrow">{{ tool.tool_type | default: 'Tool' | replace: 'webapp', 'Browser Tool' | escape }}{% if tool.featured %}<span class="ia-featured">Featured</span>{% endif %}</p>
-<h3><a href="{{ tool.url | relative_url }}">{{ tool.title | escape }}</a></h3><p>{{ tool.summary | escape }}</p>
-<div class="ia-tool-meta"><span class="ia-status">{{ tool.status | capitalize | escape }}</span><span>{{ tool.last_modified | default: tool.date | date: '%b %Y' }}</span></div>
-<div class="ia-tool-actions"><a href="{{ tool.url | relative_url }}">Details</a>{% if tool.links.live %}<a href="{% if tool.links.live contains '://' %}{{ tool.links.live }}{% else %}{{ tool.links.live | relative_url }}{% endif %}">{% if tool.status == 'under development' %}View the Project{% else %}Open Tool{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}</div>
+<p class="ia-eyebrow">{{ tool.tool_type | default: 'Tool' | replace: 'webapp', 'Browser tool' | escape }}</p>
+<h3><a href="{{ tool.url | relative_url }}">{{ tool.title | escape }}</a>{% if tool.featured %}<span class="ia-featured"><span aria-hidden="true">★</span> Featured</span>{% endif %}</h3><p>{{ tool.summary | escape }}</p>
+<div class="ia-tool-meta">{% include content/tool-status.html status=tool.status %}<time datetime="{{ tool.last_modified | default: tool.date | date: '%Y-%m-%d' }}">Updated {{ tool.last_modified | default: tool.date | date: '%b %-d, %Y' }}</time></div>
+<div class="ia-tool-actions">{% if tool.links.live %}<a href="{% if tool.links.live contains '://' %}{{ tool.links.live }}{% else %}{{ tool.links.live | relative_url }}{% endif %}">{% if tool.status == 'under development' %}View the Project{% else %}Live{% endif %} <span aria-hidden="true">↗</span></a>{% endif %}<a href="{{ tool.url | relative_url }}">Details</a>{% if tool.links.repo %}<a href="{{ tool.links.repo }}">Code</a>{% endif %}</div>
 </article>
 {% endif %}{% endfor %}
 </div></section>

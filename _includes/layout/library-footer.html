@@ -1,10 +1,11 @@
 <footer class="ia-footer">
 <div class="container ia-container">
+  {% include layout/elsewhere.html %}
   <div class="ia-footer-grid">
-    <div><a class="ia-footer-name" href="{{ '/about-ted/' | relative_url }}">Ted Tschopp</a><p>Technology, faith, storytelling, and games.<br>One person’s public workbench.</p><p class="ia-small">Unless otherwise stated, these are my own views.</p></div>
+    <div class="h-card"><a class="ia-footer-name u-url p-name" rel="me" href="{{ '/about-ted/' | relative_url }}">Ted Tschopp</a><p>Technology, faith, storytelling, and games.<br>One person’s public workbench.</p><p class="ia-small">Unless otherwise stated, these are my own views.</p><div class="ia-familymark"><img class="ia-familymark-light" src="{{ '/img/familymark/Family-Black-Brush-Calligraphy-3.png' | relative_url }}" width="1254" height="1254" alt="Tschopp family mark" loading="lazy"><img class="ia-familymark-dark" src="{{ '/img/familymark/Family-White-Brush-Calligraphy-3.png' | relative_url }}" width="1254" height="1254" alt="Tschopp family mark" loading="lazy"></div></div>
     <nav aria-label="Explore the site"><h2 class="ia-footer-heading">Explore</h2><ul>{% for section in site.data.site_navigation %}<li><a href="{{ section.url | relative_url }}">{{ section.title | escape }}</a></li>{% endfor %}</ul></nav>
-    <nav aria-label="Keep in touch"><h2 class="ia-footer-heading">Keep in Touch</h2><ul><li><a href="{{ '/subscribe/' | relative_url }}">Subscribe</a></li><li><a href="{{ '/search/' | relative_url }}">Search</a></li><li><a href="{{ '/directory/' | relative_url }}">Site Directory</a></li><li><a href="mailto:ted@tschopp.org">Email Ted</a></li><li><a href="https://github.com/TedTschopp">GitHub</a></li><li><a href="{{ '/Copyright/' | relative_url }}">Copyright</a></li></ul></nav>
+    <nav aria-label="Keep in touch"><h2 class="ia-footer-heading">Keep in Touch</h2><ul><li><a href="{{ '/subscribe/' | relative_url }}">Subscribe</a></li><li><a href="{{ '/search/' | relative_url }}">Search</a></li><li><a href="{{ '/directory/' | relative_url }}">Site Directory</a></li><li><a href="{{ '/Copyright/' | relative_url }}">Copyright</a></li></ul></nav>
   </div>
-  <div class="ia-footer-bottom"><span>© {{ site.time | date: '%Y' }} Ted Tschopp</span><a href="{{ '/' | relative_url }}">Back to Home ↑</a></div>
+  <div class="ia-footer-bottom"><span>© {{ site.time | date: '%Y' }} Ted Tschopp</span><a href="{{ '/' | relative_url }}">Back to Home <span aria-hidden="true">↑</span></a></div>
 </div>
 </footer>

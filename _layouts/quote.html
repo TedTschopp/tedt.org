@@ -35,7 +35,7 @@
       {% assign __derived_title = page.author | append: ': "' | append: __q_snip | append: '…"' %}
     {% endunless %}
   </head>
-  <body style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
+  <body class="workbench-reading" style="scroll-padding-top: 70px;" data-bs-spy="scroll" data-bs-target="#navbarNavDarkDropdown" data-bs-offset="70">
   {%- comment -%} Removed skip link per user request. {%- endcomment -%}
     {% include layout/top-nav-bar.html %}
 
@@ -72,9 +72,9 @@
                       {% endif %}
                   {% else %}
                     {% if page.title %}
-                      <h1 class="p-name card-title">{{ page.title }}</h1>
+                      <h1 class="display-1 p-name card-title">{{ page.title }}</h1>
                     {% else %}
-                      <h1 class="p-name card-title">{{ __derived_title }}</h1>
+                      <h1 class="display-1 p-name card-title">{{ __derived_title }}</h1>
                     {% endif %}
                   {% endif %}
                   {% assign __web_published = page.web_published_at | default: page.date %}

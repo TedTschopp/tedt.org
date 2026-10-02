@@ -1,0 +1,6 @@
+{% assign shelf = site.data.site_navigation | where: 'key', include.section | first %}
+{% if shelf.image %}
+<figure class="ia-shelf-lead{% if shelf.image_portrait %} ia-shelf-lead--portrait{% endif %}" style="--image-focus: {{ shelf.image_focus | default: '50% 50%' }};">
+  <img src="{{ shelf.image | relative_url }}" alt="{{ shelf.image_alt | escape }}" width="{{ shelf.image_width | default: 1904 }}" height="{{ shelf.image_height | default: 640 }}" fetchpriority="high">
+</figure>
+{% endif %}
