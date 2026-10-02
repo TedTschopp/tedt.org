@@ -28,7 +28,7 @@
       const terms = query.toLocaleLowerCase().split(/\s+/);
       const matches = items.filter(item => (!type.value || item.type === type.value) && terms.every(term => (item.title + ' ' + item.summary + ' ' + item.subjects).toLocaleLowerCase().includes(term)));
       matches.sort((a, b) => Number(b.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())) - Number(a.title.toLocaleLowerCase().includes(query.toLocaleLowerCase())));
-      count.textContent = matches.length ? matches.length + ' results' + (matches.length > 40 ? '; showing the first 40. Narrow the search to see more.' : '.') : 'No results. Try another phrase or collection.';
+      count.textContent = matches.length ? matches.length + (matches.length === 1 ? ' result' : ' results') + (matches.length > 40 ? '; showing the first 40. Narrow the search to see more.' : '.') : 'No results. Try another phrase or collection.';
       for (const item of matches.slice(0, 40)) {
         const li = document.createElement('li');
         const heading = document.createElement('h2');
