@@ -83,6 +83,39 @@ test('shelves and Plotto use purposeful imagery and a single page title', async 
   await expect(page.getByRole('link', { name: 'View the Project', exact: false })).toHaveAttribute('href', 'https://plotto.tedt.org/');
 });
 
+for (const width of [1440, 390]) {
+  test(`New Writing shows each article's image and fits at ${width}px`, async ({ page }) => {
+    await page.setViewportSize({ width, height: 1000 });
+    await page.goto('/');
+    await expect(page.locator('main h1')).toHaveText('Technology, Stories,& Imagined Worlds.');
+    await expect(page).toHaveTitle(/Technology, Stories, & Imagined Worlds/);
+    const rows = page.locator('.ia-writing-list article');
+    await expect(rows).toHaveCount(6);
+    for (const row of await rows.all()) {
+      const image = row.locator('img');
+      await expect(image).toHaveCount(1);
+      await expect(image).toHaveAttribute('alt', /\S+/);
+      await expect(image).toHaveAttribute('loading', 'lazy');
+      await expect(row.locator('.ia-writing-image')).toHaveAttribute('href', (await row.locator('h3 a').getAttribute('href'))!);
+      await image.scrollIntoViewIfNeeded();
+      await expect.poll(() => image.evaluate(el => (el as HTMLImageElement).naturalWidth)).toBeGreaterThan(0);
+      const dimensions = await image.evaluate(el => {
+        const img = el as HTMLImageElement;
+        return [Number(img.getAttribute('width')), Number(img.getAttribute('height')), img.naturalWidth, img.naturalHeight];
+      });
+      expect(dimensions.slice(0, 2)).toEqual(dimensions.slice(2));
+      const imageBox = await image.boundingBox();
+      const rowBox = await row.boundingBox();
+      expect(imageBox!.width).toBeGreaterThanOrEqual(44);
+      expect(imageBox!.height).toBeGreaterThanOrEqual(44);
+      expect(imageBox!.width / imageBox!.height).toBeCloseTo(16 / 9, 1);
+      expect(imageBox!.x).toBeGreaterThanOrEqual(rowBox!.x);
+      expect(imageBox!.x + imageBox!.width).toBeLessThanOrEqual(rowBox!.x + rowBox!.width + 1);
+    }
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1)).toBe(true);
+  });
+}
+
 test('footer and controls fit a narrow phone in both themes', async ({ page }) => {
   await page.setViewportSize({ width: 320, height: 850 });
   for (const theme of ['light', 'dark']) {

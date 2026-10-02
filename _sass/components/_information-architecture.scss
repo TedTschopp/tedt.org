@@ -159,6 +159,9 @@ nav.ia-navbar.fixed-top .navbar-brand img { height: 48px; width: 48px; object-fi
 .ia-actions > a, .ia-shelf a, .ia-jump-links a, .ia-breadcrumb a, .ia-tool-actions a { display: inline-flex; align-items: center; gap: .25rem; min-height: var(--target-min); }
 .ia-tool-actions { justify-content: flex-start; flex-wrap: wrap; }
 .ia-writing-row { grid-template-columns: 8.5rem minmax(0, 1fr) 1rem; }
+.ia-writing-row--illustrated { grid-template-columns: 8.5rem 10.5rem minmax(0, 1fr) 1rem; gap: var(--space-5); }
+.ia-writing-image { display: block; align-self: start; border-radius: var(--radius-sm); }
+.ia-writing-image img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; object-position: var(--image-focus, 50% 50%); border-radius: var(--radius-sm); }
 .ia-writing-row time, .ia-tool-meta time { font-family: var(--font-mono); }
 .ia-tool-meta { flex-wrap: wrap; font-size: .7rem; }
 .ia-status--active, .ia-status--maintained { color: var(--signal-success); }
@@ -273,5 +276,6 @@ nav.ia-navbar :is(a, button):focus-visible { outline: var(--focus-width) solid v
   .ia-shelf-lead--portrait img { width: 160px; aspect-ratio: 1; }
   .ia-elsewhere-list, .ia-elsewhere-groups { grid-template-columns: 1fr; }
   .ia-tool-detail-body, .ia-writing-row { grid-template-columns: 1fr; }
+  .ia-writing-row--illustrated { gap: var(--space-3); }
 }
 @media (prefers-reduced-motion: reduce) { .ia-navbar *, .ia-footer * { scroll-behavior: auto !important; transition: none !important; } }

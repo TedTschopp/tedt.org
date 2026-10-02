@@ -1,6 +1,6 @@
 ---
 layout: library
-title: "Ted Tschopp — Technology, Stories, and Imagined Worlds"
+title: "Ted Tschopp — Technology, Stories, & Imagined Worlds"
 description: "Essays, stories, tabletop worlds, practical tools, and interactive learning from Ted Tschopp."
 permalink: /
 ---
@@ -8,7 +8,7 @@ permalink: /
   <header class="ia-home-hero">
     <div>
       <p class="ia-eyebrow">Ted Tschopp’s public workbench</p>
-      <h1 class="display-1">Technology, Stories,<br>and Imagined Worlds.</h1>
+      <h1 class="display-1">Technology, Stories,<br>&amp; Imagined Worlds.</h1>
       <p class="ia-lead">I’m an enterprise architect, a storyteller, and a curious maker. This is where I share what I’m thinking about, what I’m building, and the worlds I’m exploring.</p>
       <div class="ia-actions"><a class="btn btn-primary" href="#explore">Find Your Way In</a><a class="ia-text-link" href="{{ '/about-ted/' | relative_url }}">Meet Ted <span aria-hidden="true">↗</span></a></div>
     </div>
@@ -44,7 +44,17 @@ permalink: /
     {% for post in site.posts %}
       {% unless post.categories contains 'Bestiary' or post.categories contains 'Prompts' or post.categories contains 'Home' or post.categories contains 'Draft' or post.categories contains 'Slides' %}
         {% if post.title != blank and post.layout != 'reveal-integrated' and post.layout != 'slide-deck' %}
-        <article class="ia-writing-row"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time><div><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 175 | escape }}</p></div><span aria-hidden="true">↗</span></article>
+        {% include utility/resolve-image-variables.html item=post allow_fallback=false %}
+        <article class="ia-writing-row{% if image_has_explicit_source and image_has_resolved_source %} ia-writing-row--illustrated{% endif %}">
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: '%b %-d, %Y' }}</time>
+          {% if image_has_explicit_source and image_has_resolved_source %}
+          <a class="ia-writing-image" href="{{ post.url | relative_url }}" aria-label="Read {{ post.title | escape }}">
+            {% include utility/responsive-image.html src=image_URL alt=image_alt width=post.image_width height=post.image_height sizes="(max-width: 767px) calc(100vw - 2.5rem), 168px" %}
+          </a>
+          {% endif %}
+          <div><h3><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3><p>{{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 175 | escape }}</p></div>
+          <span aria-hidden="true">↗</span>
+        </article>
         {% assign shown = shown | plus: 1 %}{% if shown == 6 %}{% break %}{% endif %}
         {% endif %}
       {% endunless %}

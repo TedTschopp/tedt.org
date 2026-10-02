@@ -50,6 +50,8 @@ keywords:
 no_toc: true
 
 image: /img/2026-09/Thru-the-Mirror-The-Future-of-work.webp
+image_width: 1672
+image_height: 940
 image-alt: "A person steps through an oval mirror from a dim office into a sunlit library where people gather around a shared table."
 image-title: "Through the Mirror: The Future of Work"
 image-description: "A person approaches a large oval mirror in a dim office lined with desks and filing shelves. Through the mirror, sunlight fills a timber-framed library where people gather around a wooden table surrounded by books and plants, with an empty chair waiting for another participant."

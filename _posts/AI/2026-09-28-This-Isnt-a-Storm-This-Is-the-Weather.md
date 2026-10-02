@@ -27,6 +27,8 @@ tags:
 - adaptability
 
 image: "/img/2026-09/Weather-vs-Storm.webp"
+image_width: 1672
+image_height: 941
 image-alt: "Weather versus storm: adapting to the conditions around us."
 image-title: "This Isn't a Storm. This Is the Weather."
 
