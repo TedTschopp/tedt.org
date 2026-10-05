@@ -434,6 +434,13 @@ Current active workflows:
 | Yesterday in Enterprise AI | `yesterday-in-ai.md` / `yesterday-in-ai.lock.yml` | daily around 6 a.m. PT, manual | Use GitHub Agentic Workflows to publish `/Daily-Report/AI/index.html` from `prompts/! - Yesterday in AI.md` |
 | Purge Actions Caches    | `purge-actions-caches.yml`     | weekly, manual                | Clean up stale GitHub Actions caches                                   |
 
+Lunch-menu discovery follows the publisher's current links, using filenames, link labels,
+section headings, and readable PDF text to identify elementary lunch menus and their
+month and year. It accepts common naming and date variations without guessing unpublished
+file URLs. Download failures and ambiguous dates appear in the action log; a run with no
+parsed events fails before replacing the existing calendar. The lunch-menu workflow runs
+`python tests/_code/test_build_dusd_lunch_calendar.py` before generating the calendar.
+
 Composite actions (DRY helpers) under `.github/actions/`:
 
 | Action                   | Directory                                   | Description                                               |

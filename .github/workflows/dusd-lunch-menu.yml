@@ -25,6 +25,9 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install -r _code/dusd_lunch_menu_requirements.txt
 
+      - name: Test lunch menu discovery
+        run: python tests/_code/test_build_dusd_lunch_calendar.py
+
       - name: Build DUSD lunch calendar
         run: |
           python _code/build_dusd_lunch_calendar.py --output dusd-lunch-menu.ics
