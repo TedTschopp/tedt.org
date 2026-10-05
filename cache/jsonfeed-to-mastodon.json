@@ -5594,5 +5594,33 @@
       "https://tschopp.net/users/Ted/statuses/117351545742869793"
     ],
     "lastTootTimestamp": 1790642482729
+  },
+  "https://tedt.org/The-Future-of-Corporate-Work/": {
+    "id": "/The-Future-of-Corporate-Work/",
+    "title": "The Future of Corporate Work",
+    "summary": "AI makes some forms of execution more abundant, increasing the importance of the systems that turn execution into accepted outcomes.",
+    "content_text": "AI makes some forms of execution more abundant, increasing the importance of the systems that turn execution into accepted outcomes. https://tedt.org/The-Future-of-Corporate-Work/",
+    "url": "https://tedt.org/The-Future-of-Corporate-Work/",
+    "image": "https://tedt.org/img/2026-10/Human%20Judgment%20Through%20the%20Red%20Aperture.webp",
+    "tags": [
+      "future of work",
+      "Information Age",
+      "AI agents",
+      "AI governance",
+      "human judgment",
+      "operating model",
+      "accepted outcomes"
+    ],
+    "date_published": "2026-10-03T00:00:00-07:00",
+    "date_modified": "2026-10-03T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117378462940704906"
+    ],
+    "lastTootTimestamp": 1791053206591
   }
 }
