@@ -453,6 +453,8 @@ The older standalone HTMLProofer workflow was removed after its checks were fold
 
 ## Front Matter Feature Flags
 
+The public member introduction is controlled by `membership.enabled` in `_config.yml`; leave it false until `member.tedt.org` passes live authorization checks. `membership.site_url` and `membership.tiers_api_url` identify the separate private member service. Tier labels and prices are fetched from that service's Patreon-backed catalog. Exclusive content and `minimum_tier_id` metadata belong only in the private member repository; see [ADR 0016](docs/adr/0016-patreon-member-section.md).
+
 Certain presentation and asset behaviors can be controlled per-post via boolean front matter flags. These are opt-in / opt-out controls intended to keep pages minimal and purposeful.
 
 | Flag     | Type    | Default | Effect                                                                        | When to Use                                                          |

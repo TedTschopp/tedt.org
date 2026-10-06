@@ -1,0 +1,5 @@
+{% if site.membership.enabled == true %}
+<div class="nav-item" role="listitem">
+  <a class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item" href="{{ '/members/' | relative_url }}"{% if page.url == '/members/' %} aria-current="page"{% endif %}>Members</a>
+</div>
+{% endif %}
