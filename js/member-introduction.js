@@ -25,7 +25,7 @@
         if (tier.description) body.append(element('p', tier.description.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim()));
         const destination = new URL(tier.url);
         if (destination.protocol !== 'https:' || !['patreon.com', 'www.patreon.com'].includes(destination.hostname)) throw new Error('The membership link could not be verified.');
-        const link = element('a', 'View Membership on Patreon', 'btn btn-outline-primary');
+        const link = element('a', 'View Membership on Patreon', 'btn btn-primary');
         link.href = destination.href;
         link.rel = 'noreferrer';
         body.append(link);
