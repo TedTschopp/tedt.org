@@ -1,0 +1,20 @@
+---
+layout: page
+title: Members
+seo_title: "Patreon Member Library and Browser Tools"
+description: Sign in with Patreon to explore Ted Tschopp’s member library. Your membership controls access to private articles, downloads, and browser tools.
+permalink: /members/
+---
+<p>This is the member section of my workbench for private articles, downloads, and browser tools. Membership is managed through Patreon, and the site checks the access included in your current membership.</p>
+{% if site.membership.enabled == true %}
+<p><a class="btn btn-primary" href="{{ site.membership.site_url | escape }}/auth/patreon">Sign In With Patreon</a></p>
+<section aria-labelledby="member-options-heading" data-patreon-membership data-api-url="{{ site.membership.tiers_api_url | escape }}">
+  <h2 id="member-options-heading">Membership Options</h2>
+  <p>These names and prices come directly from Patreon. Higher-priced tiers include access to content available to lower-priced tiers.</p>
+  <p data-membership-status role="status" aria-live="polite">Loading membership options…</p>
+  <div data-membership-tiers class="row g-3"></div>
+</section>
+<script defer src="{{ '/js/member-introduction.js' | relative_url }}"></script>
+{% else %}
+<p>The member library is being prepared. Membership options and sign-in will appear here when it opens.</p>
+{% endif %}
