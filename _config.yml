@@ -43,7 +43,7 @@ plugins:
 url: https://tedt.org
 membership:
   # Enable only after the member service passes live authorization checks.
-  enabled: false
+  enabled: true
   site_url: https://member.tedt.org
   tiers_api_url: https://member.tedt.org/api/tiers
 # baseurl: ""   # keep commented / blank since site is served at domain root
