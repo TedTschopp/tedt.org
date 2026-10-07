@@ -3,6 +3,161 @@ import AxeBuilder from '@axe-core/playwright';
 
 const PAGE = '/RPG/Traveller/Character-Sheet.html';
 
+test('prints a tabletop sheet with current values and no editor controls', async ({ page }, testInfo) => {
+  await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
+  const characterName = 'Captain Morgan of the Far Spinward Survey Expedition';
+  const notes = Array.from({ length: 100 }, (_, index) =>
+    `Log entry ${index + 1}: Meet the survey team at the starport before departure.`
+  ).join('\n');
+  await page.locator('#charName').fill(characterName);
+  await page.locator('#notes').fill(notes);
+  await page.locator('#skillSearch').fill('Admin');
+  await page.locator('#skillLevel').fill('2');
+  await page.locator('#skillSearch').locator('..').getByRole('button', { name: 'Add', exact: true }).click();
+  const storedCharacters = await page.evaluate(() => JSON.stringify(localStorage));
+
+  await page.setViewportSize({ width: 794, height: 1123 });
+  await page.emulateMedia({ media: 'print' });
+  await page.evaluate(() => window.dispatchEvent(new Event('beforeprint')));
+
+  const sheet = page.locator('.character-sheet');
+  await expect(page.locator('button:visible, input:visible, select:visible, textarea:visible, summary:visible')).toHaveCount(0);
+  await expect(sheet.getByText(characterName, { exact: true })).toBeVisible();
+  await expect(sheet.getByText(notes, { exact: true })).toBeVisible();
+  await expect(page.locator('#skills-container')).toContainText('Admin');
+  await expect(page.getByText('SKILLS', { exact: true })).toBeVisible();
+  await expect(page.getByText('WEAPONS & ATTACKS', { exact: true })).toBeVisible();
+  await expect(page.getByText('FINANCES', { exact: true })).toBeVisible();
+  await expect(page.locator('#character-library-manager')).toBeHidden();
+  const characteristics = await page.locator('.characteristic-box').evaluateAll(boxes =>
+    boxes.slice(0, 6).map(box => Math.round(box.getBoundingClientRect().top))
+  );
+  expect(new Set(characteristics).size).toBe(1);
+  await page.pdf({ path: testInfo.outputPath('traveller-long-notes.pdf'), format: 'A4', printBackground: false });
+
+  await page.evaluate(() => window.dispatchEvent(new Event('afterprint')));
+  await page.emulateMedia({ media: 'screen' });
+  await expect(page.locator('#charName')).toBeVisible();
+  await expect(page.locator('#charName')).toHaveValue(characterName);
+  await expect(page.locator('#notes')).toHaveValue(notes);
+  await expect(page.locator('#skillSearch')).toBeVisible();
+  expect(await page.evaluate(() => JSON.stringify(localStorage))).toBe(storedCharacters);
+
+  await page.locator('#charName').fill('Morgan, retired');
+  await page.emulateMedia({ media: 'print' });
+  await page.evaluate(() => window.dispatchEvent(new Event('beforeprint')));
+  await expect(sheet.getByText('Morgan, retired', { exact: true })).toBeVisible();
+  await expect(sheet.getByText(characterName, { exact: true })).toHaveCount(0);
+});
+
+for (const paper of ['A4', 'Letter'] as const) {
+  test(`prints a readable ${paper} tabletop reference including gear state`, async ({ page }, testInfo) => {
+    await routeCatalog(page);
+    await page.goto(PAGE, { waitUntil: 'domcontentloaded' });
+    await page.evaluate(() => {
+      const library = (window as any).TravellerCharacterLibrary;
+      const character = library.captureCharacterData();
+      character.skills = [
+        { name: 'Astrogation', level: 2 },
+        { name: 'Pilot', specialization: 'Spacecraft', level: 2 },
+        { name: 'Gun Combat', specialization: 'Slug', level: 1 },
+        { name: 'Medic', level: 1 },
+        { name: 'Vacc Suit', level: 1 },
+        { name: 'Engineer', specialization: 'Power', level: 0 }
+      ];
+      character.careers = [{
+        career: 'Scout', assignment: 'Exploration', promotions: '3', years: '12',
+        rank: 'Senior Scout', benefits: 'Scout ship, ship share, contact at the starport'
+      }];
+      library.applyCharacterData(character);
+      library.addGearItem('weapon', {
+        name: 'Accelerator Rifle', tl: '9', skill: 'Gun Combat (Slug) 1',
+        damage: '3D', range: '250m', weight: '2 kg', magazine: '15',
+        catalogRef: {
+          schemaVersion: '1.3.0', catalogVersion: 'test-1',
+          itemId: 'item:weapon:accelerator-rifle:example',
+          definitionId: 'definition:accelerator-rifle',
+          variantId: 'variant:accelerator-rifle-tl9'
+        },
+        state: {
+          quantity: 2, equipped: true,
+          notes: 'Loaded with standard ammunition. Spare magazine in belt pouch.'
+        }
+      });
+      library.addGearItem('armour', { name: 'Cloth armor', rating: '8', tl: '10', radiation: '0' });
+      library.addGearItem('augment', { type: 'Neural comm', tl: '12', improvement: 'Internal communications' });
+      library.addGearItem('equipment', { name: 'Portable medical kit', tl: '10', mass: '1 kg', cost: '1000' });
+    });
+    await page.locator('#charName').fill('Morgan Vale');
+    await page.locator('#homeworld').fill('Regina');
+    await page.locator('#homeworldUWP').fill('A788899-C');
+    await page.locator('#str-current').fill('9');
+    await page.locator('#str-baseline').fill('12');
+    await page.locator('#notes').fill('CONTACTS\nDr. Imani Rao, Regina starport clinic.\n\nCURRENT JOB\nEscort a survey team to the outer system. Return the survey records to the scout base.\n\nSESSION NOTES\nCarry two spare magazines, a vacc suit patch kit, and emergency medical supplies.');
+    const originalCharacter = await page.evaluate(() =>
+      (window as any).TravellerCharacterLibrary.captureCharacterData()
+    );
+    await openAddPanel(page, 'weapon');
+    await page.getByRole('button', { name: 'Choose a weapon from the catalog', exact: true }).click();
+    await expect(page.locator('#gear-locker')).toBeVisible();
+
+    await page.setViewportSize({ width: paper === 'A4' ? 703 : 725, height: 1056 });
+    await page.emulateMedia({ media: 'print' });
+    await page.evaluate(() => window.dispatchEvent(new Event('beforeprint')));
+    await expect(page.locator('#gear-locker')).toBeHidden();
+    await expect(page.locator('button:visible, input:visible, select:visible, textarea:visible, summary:visible')).toHaveCount(0);
+    const weapon = page.locator('#weapons-container');
+    await expect(weapon.getByText('Gun Combat (Slug) 1', { exact: true })).toBeVisible();
+    await expect(weapon.getByText(/Quantity 2\nEquipped\nLoaded with standard ammunition/)).toBeVisible();
+    await expect(page.locator('#str-dm-current')).toHaveText('+1');
+    await expect(page.locator('#str-dm-baseline')).toHaveText('+2');
+    expect(await page.locator('.characteristic-dm-container').first().evaluate(element =>
+      getComputedStyle(element, '::before').content
+    )).toBe('"DM"');
+    const identityTop = await page.locator('label[for="charName"]').evaluate(element =>
+      element.getBoundingClientRect().top
+    );
+    const statsTop = await page.locator('.characteristic-box').first().evaluate(element =>
+      element.getBoundingClientRect().top
+    );
+    const weaponTop = await weapon.evaluate(element => element.getBoundingClientRect().top);
+    const historyTop = await page.getByText('CAREER HISTORY', { exact: true }).evaluate(element =>
+      element.getBoundingClientRect().top
+    );
+    expect(identityTop).toBeLessThan(statsTop);
+    expect(weaponTop).toBeLessThan(historyTop);
+    const playPageHeight = await page.locator('#equipment-container').evaluate(element => {
+      const table = element.closest('.table-responsive')!;
+      const sheet = element.closest('.character-sheet')!;
+      return table.getBoundingClientRect().bottom - sheet.getBoundingClientRect().top;
+    });
+    const printableHeight = (paper === 'A4' ? 1122 : 1056) - 24 * 96 / 25.4;
+    expect(playPageHeight).toBeLessThan(printableHeight - 12);
+    const overflowing = await page.locator('.print-value, .table th, .table td').evaluateAll(elements =>
+      elements.filter(element => {
+        const bounds = element.getBoundingClientRect();
+        return bounds.width > 0 && (
+          bounds.left < -1 || bounds.right > document.documentElement.clientWidth + 1 ||
+          element.scrollWidth > element.clientWidth + 2
+        );
+      }).map(element => element.textContent)
+    );
+    expect(overflowing).toEqual([]);
+    await page.screenshot({ path: testInfo.outputPath(`traveller-${paper}.png`), fullPage: true });
+    await page.pdf({ path: testInfo.outputPath(`traveller-${paper}.pdf`), format: paper, printBackground: false });
+
+    await page.evaluate(() => window.dispatchEvent(new Event('afterprint')));
+    await page.emulateMedia({ media: 'screen' });
+    await expect(page.locator('#gear-locker')).toBeVisible();
+    await page.keyboard.press('Escape');
+    expect(await page.evaluate(() =>
+      (window as any).TravellerCharacterLibrary.captureCharacterData()
+    )).toEqual(originalCharacter);
+    await expect(page.locator('#charName')).toBeVisible();
+    await expect(page.locator('.print-value')).toHaveCount(0);
+  });
+}
+
 type CatalogFixtureItem = {
   variantId: string;
   descriptionSummary: string;
