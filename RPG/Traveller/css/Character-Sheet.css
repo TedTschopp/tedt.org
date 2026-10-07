@@ -448,20 +448,8 @@
             max-width: 150px;
         }
         
-        @media print {
-            .no-print {
-                display: none;
-            }
-            
-            body {
-                background-color: white;
-            }
-            
-            .character-sheet {
-                box-shadow: none;
-                margin: 0;
-                padding: 10px;
-            }
+        .print-value {
+            display: none;
         }
 
         .credits {
@@ -1644,8 +1632,302 @@
         }
 
         @media print {
+            @page {
+                size: auto;
+                margin: 12mm;
+            }
+
+            html,
+            body {
+                height: auto !important;
+                overflow: visible !important;
+                background: white !important;
+            }
+
+            body {
+                margin: 0;
+                font-size: 9pt;
+                line-height: 1.25;
+            }
+
+            .character-sheet,
+            .character-sheet * {
+                color: #111 !important;
+                background: transparent !important;
+                box-shadow: none !important;
+                text-shadow: none !important;
+                outline: none !important;
+                transition: none !important;
+            }
+
+            .no-print,
+            .character-sheet button,
+            .character-sheet input,
+            .character-sheet select,
+            .character-sheet textarea,
             .gear-row-actions,
-            .gear-details-button {
+            .gear-details-button,
+            .gear-row-state,
+            .wealth-info,
+            label[for="notes"],
+            dialog::backdrop,
+            .sheet-header::before,
+            .sheet-header::after,
+            .characteristic-box::before {
                 display: none !important;
+            }
+
+            .character-sheet {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                max-width: none;
+                margin: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            .character-sheet > * {
+                flex: 0 0 auto;
+            }
+
+            .print-identity { order: -1; }
+            .print-training { order: 1; }
+            .print-history { order: 2; }
+            .print-finances { order: 3; }
+            .print-notes-section { order: 4; }
+
+            .section-header.print-training {
+                break-before: page;
+            }
+
+            .sheet-header {
+                order: -2;
+                margin: 0 0 8pt;
+                padding: 0 0 5pt;
+                border-bottom: 1.5pt solid #111;
+                text-align: left;
+            }
+
+            .sheet-header h1 {
+                font-size: 15pt;
+                letter-spacing: 0;
+            }
+
+            .section-header {
+                margin: 6pt 0 3pt !important;
+                padding: 3pt 0;
+                border: 0;
+                border-bottom: 0.75pt solid #111;
+                border-radius: 0;
+                font-size: 10pt;
+                letter-spacing: 0;
+                break-after: avoid;
+            }
+
+            .row {
+                --bs-gutter-x: 10pt;
+                display: flex;
+                flex-wrap: wrap;
+                margin-right: -5pt;
+                margin-left: -5pt;
+            }
+
+            .row > * {
+                flex: 0 0 auto;
+                min-width: 0;
+                padding-right: 5pt;
+                padding-left: 5pt;
+            }
+
+            .col-md-2 { width: 16.666667%; }
+            .col-md-3 { width: 25%; }
+            .col-md-4 { width: 33.333333%; }
+            .col-md-8 { width: 66.666667%; }
+            .col-md-9 { width: 75%; }
+            .col-md-12 { width: 100%; }
+
+            .mb-3,
+            .mb-4 {
+                margin-bottom: 5pt !important;
+            }
+
+            .characteristic-box {
+                margin: 0;
+                padding: 5pt 3pt;
+                overflow: visible;
+                border: 0.75pt solid #555;
+                border-radius: 0;
+                break-inside: avoid;
+            }
+
+            .characteristic-box h4 {
+                font-size: 9pt;
+                letter-spacing: 0;
+            }
+
+            .char-values {
+                gap: 3pt;
+                margin-bottom: 0;
+            }
+
+            .char-value {
+                min-width: 0;
+                padding: 0;
+            }
+
+            .char-value label,
+            .wealth-reference {
+                font-size: 7pt;
+            }
+
+            .characteristic-dm-container {
+                margin-top: 2pt;
+            }
+
+            .characteristic-dm-container::before {
+                content: "DM";
+                margin-right: 3pt;
+                font-size: 7pt;
+            }
+
+            .characteristic-dm-current,
+            .characteristic-dm-baseline {
+                font-size: 8pt;
+            }
+
+            label.form-label {
+                display: block;
+                margin-bottom: 1pt;
+                font-size: 8pt;
+            }
+
+            .input-group {
+                flex-wrap: nowrap;
+                align-items: baseline;
+            }
+
+            .input-group-text {
+                padding: 0 3pt 0 0;
+                border: 0;
+                font: inherit;
+            }
+
+            .print-value {
+                display: block;
+                max-width: 100%;
+                min-height: 1.3em;
+                padding: 1pt 0;
+                border-bottom: 0.5pt solid #888;
+                white-space: pre-wrap;
+                overflow-wrap: anywhere;
+                font-variant-numeric: tabular-nums;
+            }
+
+            .input-group .print-value {
+                flex: 1;
+                min-width: 0;
+            }
+
+            .char-value .print-value {
+                min-height: 0;
+                border: 0;
+                font-size: 14pt;
+                font-weight: 700;
+                line-height: 1.2;
+                text-align: center;
+            }
+
+            .print-notes {
+                min-height: 45mm;
+                line-height: 1.5;
+                orphans: 3;
+                widows: 3;
+            }
+
+            .table-responsive {
+                max-height: none;
+                overflow: visible !important;
+            }
+
+            .table {
+                width: 100%;
+                margin: 0 0 3pt;
+                table-layout: fixed;
+                border-collapse: collapse;
+                font-size: 9pt;
+            }
+
+            .table th,
+            .table td {
+                padding: 3pt 4pt;
+                border: 0.5pt solid #888;
+                vertical-align: top;
+                white-space: normal;
+                overflow-wrap: anywhere;
+            }
+
+            .table th {
+                letter-spacing: 0;
+            }
+
+            .table th:first-child {
+                width: 28%;
+            }
+
+            .table:has(#weapons-container) th:first-child {
+                width: 23%;
+            }
+
+            .table:has(#weapons-container) th:nth-child(3) {
+                width: 22%;
+            }
+
+            .table thead {
+                display: table-header-group;
+                break-after: avoid;
+            }
+
+            .table tr {
+                break-inside: avoid;
+            }
+
+            .table .print-value {
+                min-height: 0;
+                padding: 0;
+                border: 0;
+            }
+
+            #skills-container {
+                columns: 3;
+                column-gap: 12pt;
+            }
+
+            .skill-item {
+                align-items: baseline;
+                gap: 4pt;
+                padding: 3pt 0;
+                break-inside: avoid;
+            }
+
+            .skill-item .print-value {
+                min-width: 12pt;
+                border: 0;
+                font-weight: 700;
+                text-align: right;
+            }
+
+            .print-gear-notes {
+                margin-top: 3pt;
+                font-size: 8pt;
+                line-height: 1.3;
+            }
+
+            .credits {
+                order: 5;
+                margin: 8pt 0 0;
+                font-size: 6.5pt;
+                text-align: left;
+                break-inside: avoid;
             }
         }

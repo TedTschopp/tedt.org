@@ -2574,3 +2574,48 @@ function addAugment() {
   document.getElementById("augmentTL").value = "";
   document.getElementById("augmentImprovement").value = "";
 }
+
+function clearCharacterSheetPrintValues() {
+  document.querySelectorAll(".character-sheet .print-value").forEach((value) => value.remove());
+}
+
+function prepareCharacterSheetPrint() {
+  clearCharacterSheetPrintValues();
+  const sheet = document.querySelector(".character-sheet");
+  if (!sheet) return;
+
+  sheet.querySelectorAll("input, select, textarea").forEach((field) => {
+    if (field.closest(".no-print, [hidden]") || field.type === "hidden") return;
+
+    const value = document.createElement("span");
+    value.className = "print-value";
+    if (field.tagName === "TEXTAREA") value.classList.add("print-notes");
+    value.textContent = field.tagName === "SELECT"
+      ? Array.from(field.selectedOptions, (option) => option.textContent).join(", ")
+      : field.value;
+    field.after(value);
+  });
+
+  sheet.querySelectorAll(".catalog-gear-row").forEach((row) => {
+    const details = [];
+    if (row.dataset.gearQuantity && row.dataset.gearQuantity !== "1") {
+      details.push(`Quantity ${row.dataset.gearQuantity}`);
+    }
+    if (row.dataset.gearEquipped === "true") details.push("Equipped");
+    if (row.dataset.gearNotes) details.push(row.dataset.gearNotes);
+    const cell = row.querySelector("td");
+    if (!cell || details.length === 0) return;
+
+    const value = document.createElement("span");
+    value.className = "print-value print-gear-notes";
+    value.textContent = details.join("\n");
+    cell.appendChild(value);
+  });
+}
+
+window.addEventListener("beforeprint", prepareCharacterSheetPrint);
+window.addEventListener("afterprint", clearCharacterSheetPrintValues);
+window.matchMedia("print").addEventListener("change", (event) => {
+  if (event.matches) prepareCharacterSheetPrint();
+  else clearCharacterSheetPrintValues();
+});
