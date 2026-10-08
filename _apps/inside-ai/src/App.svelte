@@ -1,5 +1,6 @@
 <script>
-  import {onMount,onDestroy,tick} from 'svelte';
+  import {onMount,onDestroy,tick,setContext} from 'svelte';
+  import {writable,derived} from 'svelte/store';
   import Diagram from './Diagram.svelte';
   import Katex from './utils/Katex.svelte';
   import {tokens,tokenIds,modelData,predictedToken,temperature,sampling,blockIdx,blockIdxTemp,attentionHeadIdx,attentionHeadIdxTemp,expandedBlock,isFetchingModel,isModelRunning,isLoaded,weightPopover} from './store';
@@ -7,6 +8,7 @@
   import {GPT2Tokenizer,validateContext,CONTEXT_LIMIT,tokenIdsForPrompt} from './lib/tokenizer.js';
   import {distribution,sample} from './lib/sampling.js';
   import {MODEL_CACHE} from './lib/model-loader.js';
+  import {outputRows,OUTPUT_ROW_LIMITS,DEFAULT_OUTPUT_ROW_LIMIT} from './lib/output-rows.js';
   import {textPages} from './utils/textbookPages';
   import {gsap} from './utils/gsap';
   const examples=[ex0,{prompt:'Artificial Intelligence is transforming the'},{prompt:'As the spaceship was approaching the'},{prompt:'On the deserted planet they discovered a'},{prompt:'IEEE VIS conference highlights the'}];
@@ -15,6 +17,9 @@
   let status='Recorded examples are ready. The live model has not been downloaded.',phase='examples',mode='recorded',error='',busy=false,loadedBytes=0,totalBytes=656662664;
   let cacheNote='',requestId=0,pendingGenerate=false,selectedStage='attn_softmax',queryRow=ex0.tokens.length-1,dialog,activeTopic=null,returnFocus=null;
   let localTokenIds=ex0.tokenIds,full=[],candidates=[],sampled=null,stale=false;
+  const diagramRowLimit=writable(DEFAULT_OUTPUT_ROW_LIMIT);
+  const visibleOutput=derived([modelData,diagramRowLimit],([$modelData,$diagramRowLimit])=>outputRows($modelData?.probabilities||[],$diagramRowLimit));
+  setContext('diagram-output',{rowLimit:diagramRowLimit,visibleOutput});
   $: if(tokenizer && currentResult) {
     full=distribution(currentResult.logits,$temperature,$sampling);
     candidates=full.slice(0,50).map(item=>({...item,token:tokenizer.decode([item.tokenId])}));
@@ -157,6 +162,14 @@
   <!-- svelte-ignore a11y-no-noninteractive-tabindex -->
   <div class="ia-diagram-scroll" role="region" aria-label="Transformer architecture diagram, scroll horizontally" aria-describedby="ia-diagram-note" tabindex="0">
     <div class="ia-diagram-canvas" class:ia-expanded={!!$expandedBlock.id} style="--min-screen-width:1500px;--min-column-width:34px;--predicted-color:#b74617;"><Diagram /></div>
+  </div>
+  <div class="ia-output-controls" role="group" aria-label="Diagram output display">
+    <p data-testid="diagram-output-count" data-shown={$visibleOutput.rows.length} data-retained={$visibleOutput.retainedCount}>Showing {$visibleOutput.rows.length} of {$visibleOutput.retainedCount.toLocaleString()} retained tokens, highest probability first.</p>
+    <label class="ia-output-limit">Diagram row limit
+      <select data-testid="diagram-row-limit" bind:value={$diagramRowLimit}>{#each OUTPUT_ROW_LIMITS as limit}<option value={limit}>{limit}</option>{/each}</select>
+    </label>
+    <a href="#ia-next-heading">Leading {candidates.length} candidates and logits</a>
+    <p>Sampling uses all 50,257 tokens.</p>
   </div>
   <p class="ia-hint">The complete architecture is wider than small screens. Scroll within the diagram, or use the measured-data tables below. All explanation topics are also available at the end of the workbench.</p>
 
