@@ -6935,6 +6935,204 @@
       ],
       "width": 1731
     },
+    "/img/2026-10/00-makers-vs-spectators.webp": {
+      "height": 941,
+      "source_sha256": "5c92b3d7ab9bb4dbf50c2e7ca1189aa23dc8b7163bd882e2adcf168da756e1ab",
+      "src": "/img/2026-10/00-makers-vs-spectators.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-10/00-makers-vs-spectators--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-10/00-makers-vs-spectators--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-10/00-makers-vs-spectators--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-10/00-makers-vs-spectators--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-10/00-makers-vs-spectators.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/2026-10/01-taste.webp": {
+      "height": 941,
+      "source_sha256": "688351c71ec08772256eeb8420ccf63e90f7bcef44d5bdffe8abba7bc70ab101",
+      "src": "/img/2026-10/01-taste.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-10/01-taste--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-10/01-taste--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-10/01-taste--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-10/01-taste--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-10/01-taste.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/2026-10/02-agency.webp": {
+      "height": 941,
+      "source_sha256": "0f5125ca00a84fab5f00bd16bfde2a4f9d0685a4f7ec763351fe35c154870e90",
+      "src": "/img/2026-10/02-agency.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-10/02-agency--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-10/02-agency--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-10/02-agency--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-10/02-agency--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-10/02-agency.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/2026-10/03-focus.webp": {
+      "height": 941,
+      "source_sha256": "486410c88f367567512dfc3300614a4e14a35022faaa7087b4b183e40ab9feb9",
+      "src": "/img/2026-10/03-focus.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-10/03-focus--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-10/03-focus--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-10/03-focus--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-10/03-focus--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-10/03-focus.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/2026-10/04-resourcefulness.webp": {
+      "height": 941,
+      "source_sha256": "a37d39984a0af53df454939eb530c402c899349791b9924a8cc72a6320afe527",
+      "src": "/img/2026-10/04-resourcefulness.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-10/04-resourcefulness--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-10/04-resourcefulness--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-10/04-resourcefulness--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-10/04-resourcefulness--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-10/04-resourcefulness.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/2026-10/05-follow-through.webp": {
+      "height": 941,
+      "source_sha256": "075d029067cce945f0648597c9568f4e17eac97ac873f882e4d36e95cea2a2ef",
+      "src": "/img/2026-10/05-follow-through.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-10/05-follow-through--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-10/05-follow-through--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-10/05-follow-through--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-10/05-follow-through--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-10/05-follow-through.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/404.webp": {
       "height": 1216,
       "source_sha256": "2e780cc9206d48fc8cd998b19a3671764a39138f318498d10f3d8baacc656cf6",
