@@ -5622,5 +5622,34 @@
       "https://tschopp.net/users/Ted/statuses/117378462940704906"
     ],
     "lastTootTimestamp": 1791053206591
+  },
+  "https://tedt.org/Makers-vs-Spectators/": {
+    "id": "/Makers-vs-Spectators/",
+    "title": "Makers vs. Spectators: Five Skills for 2027",
+    "summary": "Five skills help make that movement possible: taste, agency, focus, resourcefulness, and follow-through. Each shapes how a person sees the world. Each also shapes what that person leaves in it.",
+    "content_text": "Five skills help make that movement possible: taste, agency, focus, resourcefulness, and follow-through. Each shapes how a person sees the world. Each also shapes what that person leaves in it. https://tedt.org/Makers-vs-Spectators/",
+    "url": "https://tedt.org/Makers-vs-Spectators/",
+    "image": "https://tedt.org/img/2026-10/00-makers-vs-spectators.webp",
+    "tags": [
+      "enterprise AI",
+      "makers",
+      "taste",
+      "agency",
+      "focus",
+      "resourcefulness",
+      "follow-through",
+      "professional development"
+    ],
+    "date_published": "2026-10-11T00:00:00-07:00",
+    "date_modified": "2026-10-11T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117425180665283202"
+    ],
+    "lastTootTimestamp": 1791766062482
   }
 }
