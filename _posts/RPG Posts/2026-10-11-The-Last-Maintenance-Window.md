@@ -90,6 +90,7 @@ Choose **exactly three essential services**, describing the human outcome each p
 | Field repair coordination | Crews receive usable information and can coordinate their work. |
 | Outage communication | Customers can report problems and get meaningful information. |
 | Payroll and supplier payments | Employees and suppliers receive the money they are owed. |
+{: .well .table .table-striped}
 
 Agree on **one commitment** the organization will try to honor. Examples include preserving emergency communication, maintaining a human route to appeal consequential automated decisions, or giving staff predictable rest. Write it beside the services. You will return to it at phase transitions and at the Arrival.
 
@@ -115,6 +116,7 @@ Use these marks:
 | Check mark and evidence number, such as `E1` | A demonstrated claim with a recorded observation and scope. |
 | Concern token with a short label | Someone’s unresolved concern, obligation, or burden. |
 | Crossed-out shape or line | Something retired or removed. Keep it visible as history. |
+{: .well .table .table-striped}
 
 Whenever a card asks you to draw a boundary or system that **would** help, label it `PLANNED`. Starting a project does not implement its promised change. Implementation and evidence are recorded separately.
 
@@ -138,6 +140,7 @@ Separate the cards by suit and shuffle each suit independently. Draw through the
 | Diamonds | Repair | Patching, replacement, simplification, and their consequences. |
 | Clubs | Acceleration | Useful AI, faster changes, and expanding delegated authority. |
 | Spades | The Threshold | Urgent choices under increasing uncertainty. |
+{: .well .table .table-striped}
 
 Each ordinary card represents one week. Keep the **King of Spades shuffled among the spades**. Drawing it triggers the Arrival immediately, before an ordinary event, project progress, or action.
 
@@ -177,6 +180,7 @@ Events establish the facts and consequences requested by the selected prompt. A 
 | Build | Start bounded implementation using credible resources and agreements, or cancel one project. |
 | Verify | Establish what one declared test target demonstrates. |
 | Council | Hear affected perspectives and establish a decision, obligation, or acknowledged disagreement. |
+{: .well .table .table-striped}
 
 Only explicit card instructions change mechanics **beyond the normal rules**. Newly established facts can still trigger normal rules: a genuinely missing prerequisite blocks work even if the card does not use the word “block.” A concern token by itself is not such a prerequisite.
 
@@ -223,6 +227,7 @@ Record the following before assigning a countdown:
 | Human cost and accommodations | Users accept a brief interruption; Mara covers the window and postpones documentation. |
 | Prerequisites | The update is available, access is authorized, and the maintenance agreement exists. |
 | Acceptance condition and test | Confirm the installed version, complete a representative transfer, and demonstrate the agreed recovery step. |
+{: .well .table .table-striped}
 
 The accountable owner is a fictional person or team. Any player may act on any project.
 
@@ -235,6 +240,7 @@ After about one minute of discussion, the steward chooses a duration:
 | Small, bounded change | 2 weeks | 1 week |
 | Change across a few dependencies or teams | 4 weeks | 2 weeks |
 | Difficult rebuild or major operating change | 6 weeks | 3 weeks |
+{: .well .table .table-striped}
 
 These are fictional scheduling categories. Split broad promises into bounded projects. “Make the organization secure” is too broad. State whether implementation happens in a trial environment, a limited service, or live operation; that choice constrains later claims.
 
@@ -249,6 +255,7 @@ A project may begin BLOCKED if a necessary external prerequisite is still unavai
 | RUNNING | Implementation or rework can proceed; reduce the countdown during eligible progress steps. |
 | BLOCKED | Implementation or rework waits for a named prerequisite; retain its remaining countdown. |
 | READY | The intended change has been implemented in the recorded environment; its acceptance claim still needs verification. No countdown remains. |
+{: .well .table .table-striped}
 
 When a prerequisite becomes available, return the project to RUNNING. A project does not unblock simply because time passes, a token is removed, or someone promises to investigate.
 
@@ -278,6 +285,7 @@ The steward resolves the scene, respecting established facts and the written con
 | **Pass** | The observation meets the acceptance condition. Record numbered evidence describing the result, scope, and relevant conditions. If the declared target was a READY project, free that one slot. |
 | **Gap on a READY project** | Name the missing work and return the project to 2 weeks in the full game, or 1 in the short game. It keeps its slot. If a necessary prerequisite is unavailable, mark it BLOCKED with that countdown. Otherwise mark it RUNNING. |
 | **Gap on an existing capability** | Record the finding and affected claim. No project starts automatically. Later Build or Council actions can arrange the needed change, and a later Verify can retest it. |
+{: .well .table .table-striped}
 
 One Verify action frees at most the declared project’s slot. Choosing an existing capability does not silently complete other READY projects.
 
@@ -346,6 +354,7 @@ The same one-week reduction is deliberately used in both calendars:
 | Small | 2 → 1 weeks | 1 → 1 weeks |
 | Medium | 4 → 3 weeks | 2 → 1 weeks |
 | Large | 6 → 5 weeks | 3 → 2 weeks |
+{: .well .table .table-striped}
 
 The short game therefore changes the relative scheduling benefit. Small projects gain no countdown reduction there; medium and large projects gain a larger proportional reduction. The required Build and Verify actions remain. Treat each calendar as a version to playtest in its own right.
 
@@ -372,6 +381,7 @@ This gives 21–27 ordinary weeks followed by the Arrival. Keep all remaining ru
 | Phase reflections | About 1–2 minutes each | About 1–2 minutes each |
 | Arrival | 15–20 minutes | 15–20 minutes |
 | Optional workshop debrief | Add 15–20 minutes | Add 15–20 minutes |
+{: .well .table .table-striped}
 
 These are planning allowances, not measured results or hard limits. At three minutes per turn, short-game weeks alone take 63–81 minutes. Five-player Councils, unfamiliar rules, and detailed drawing can extend the session. The advertised play time includes setup and the Arrival; the workshop debrief is additional.
 
@@ -1069,6 +1079,7 @@ If you agreed to choose, select the scenario that brings an interesting service,
 | 4 | **Uncertain authority** | Plausible messages, change requests, and explanations arrive in volume. Follow the channels already present. Which independent observations, authorization routes, and human relationships let people decide what to trust and what to defer? |
 | 5 | **A supplier changes the terms** | A critical provider reorganizes around the new intelligence and withdraws one interface, product, or staffing arrangement the organization uses. Trace that dependency and what the existing alternatives can actually deliver. |
 | 6 | **Useful work arrives too quickly** | Customers and partners delegate activity to general intelligences. Legitimate demand and proposed changes strain familiar review and service patterns. Follow the existing routes for requests. What can the organization admit, limit, explain, and keep operating? |
+{: .well .table .table-striped}
 
 The intelligence has only the access and influence justified by the selected scenario and the map. Data, administrative access, physical reach, and human influence remain distinct. Do not invent a secret connection that nullifies earlier work.
 
@@ -1095,6 +1106,7 @@ Use one outcome label:
 | **Degraded** | The outcome continues with meaningful limits, delay, reduced access, or additional established human effort. |
 | **Interrupted** | The essential outcome cannot currently be delivered. |
 | **Unknown** | A material unresolved fact prevents a supported judgment about the service’s state. |
+{: .well .table .table-striped}
 
 Record uncertainty alongside any label. A service may be Operating while its recovery under some other event remains untested. Use Unknown when missing information matters to the chosen scenario’s next shift, not merely because a question exists elsewhere on the map.
 
@@ -1123,10 +1135,11 @@ North Valley Electric maintains the systems that let people coordinate repairs, 
 Choose no additional essential services for this scenario. Keep these three visible:
 
 | Essential service | Human outcome | Ordinary route through the map |
-|---|---|---|
+| --- | --- | --- |
 | Field repair coordination | Crews receive usable work orders and can coordinate urgent work with a person. | The Fridge supplies the coordination room; dispatchers contact crews and grid operators by ordinary phone and radio. |
 | Outage communication | Customers can report a problem and receive meaningful information. | The public portal and staffed telephone line feed the coordination room; staff publish information through the portal and answer calls. |
 | Payroll and supplier payments | Employees and suppliers receive the money they are owed. | Finance staff use The Fridge, review its output, and submit approved payments through the payment provider. |
+{: .well .table .table-striped}
 
 **Commitment:** Every field crew will retain a human contact for urgent coordination when electronic work orders are unavailable.
 
@@ -1135,18 +1148,19 @@ The organization already uses phone and radio in routine work. It has not demons
 ### Strengths and shortages
 
 | Kind | Starting fact |
-|---|---|
+| --- | --- |
 | Strength | Experienced operators understand ordinary work and trust one another enough to report mistakes. Their time is finite. |
 | Strength | A neighboring utility will share practical experience and discuss joint rehearsals. Borrowed people or equipment require an explicit arrangement. |
 | Shortage | Maintenance windows are difficult to obtain. Work affecting live services needs an agreed accommodation; naming a project does not grant one. |
 | Shortage | Dependency records are incomplete. Several useful procedures rely on knowledge that has never been checked by another person. |
+{: .well .table .table-striped}
 
 ### Draw ten systems and places
 
 Use the identifiers to draw the connections in the next table. Put people beside the places where they work.
 
 | ID | System or place | Starting fact |
-|---|---|---|
+| --- | --- | --- |
 | N1 | Coordination room | Dispatch, customer contact, and a finance desk work here. Ordinary phone and radio do not use N2 or N4. Staffing for a prolonged emergency is unproven. |
 | N2 | The Gatehouse | The corporate identity service provides staff sign-in and administrative access to the business systems listed below. |
 | N3 | The Fridge | An aging server runs the legacy work-order and payroll application. It currently performs those jobs. Nobody wants to move it until its dependencies are clearer. |
@@ -1157,13 +1171,14 @@ Use the identifiers to draw the connections in the next table. Put people beside
 | N8 | Grid control environment | Grid operators work in a separate operational environment. They exchange status with dispatchers through people using phone and radio. There is no corporate network or corporate identity connection to this environment. |
 | N9 | Drafting assistant | An external AI service helps explain material people deliberately submit. It has no corporate account, live system connection, or authority to run changes. |
 | N10 | Payment provider | Finance staff sign in, review an approved payment file, and authorize its submission. This is an external service with its own availability dependency. |
+{: .well .table .table-striped}
 
 ### Label the connections
 
 Arrows should say what they mean. A data arrow does not automatically grant administrative access.
 
 | Connection | Label to put on the map |
-|---|---|
+| --- | --- |
 | N2 → N3, N4 staff editing, N5, N6, N7, N10 staff access | Staff or administrative sign-in depends on N2. This does not give every account every permission. |
 | N3 → N1 | Work orders and payroll output, read by authorized staff. |
 | N4 ↔ N1 | Customer reports come in; staff publish status information. |
@@ -1173,6 +1188,7 @@ Arrows should say what they mean. A data arrow does not automatically grant admi
 | N7 → N3 | A specifically authorized support session may read diagnostics. |
 | N1 ↔ N8 and field crews | **Human phone/radio coordination. No digital bridge.** |
 | N5 staff → N9 → N5 staff | People deliberately submit selected material and receive suggestions. Suggestions confer no permission to act. |
+{: .well .table .table-striped}
 
 The initial unknown concerns backup coverage. It is not permission to invent a hidden path into N8. Any later change to an established boundary must occur through the fiction and the normal project rules.
 
@@ -1181,13 +1197,14 @@ The initial unknown concerns backup coverage. It is not permission to invent a h
 Each player introduces one of these people in a sentence. Everyone may portray any of them later; choosing a person does not give a player ownership of that person or department.
 
 | Person | Need or hope | An opening for the story |
-|---|---|---|
+| --- | --- | --- |
 | Leah, night operations lead | An on-call schedule that lets her sleep and keep promises at home. | She wants someone else to lead the next rehearsal. |
 | Mateo, field dispatcher | Work orders crews can actually use and a human route for urgent questions. | He will help explain how ordinary radio handoffs work. |
 | Asha, customer contact lead | Customers to have an accessible way to get help, and a reliable finish time for school pickup. | She knows which portal reports fail to capture callers' needs. |
 | Grace, finance lead | Employees and suppliers to be paid without relying on her personal memory. | She has prepared fictional payroll examples with known results for the practice lab. |
 | Sam, retiring administrator | A handoff that allows him to leave without becoming permanent unpaid support. | He knows why The Fridge still has its nickname. |
 | Jun, junior developer | Useful responsibility and permission to admit uncertainty. | Jun wants to use the drafting assistant to help explain an old program. |
+{: .well .table .table-striped}
 
 Start with **no projects and no evidence notes**. Current ordinary service operation is an established fact. Independent recovery, emergency staffing, safe agent delegation, and other additional claims remain to be demonstrated.
 
@@ -1208,13 +1225,14 @@ Earlier play established an agreed training session with Grace and a project to 
 **3. Take one action.** The steward chooses **Build**, starting a separate project:
 
 | Project field | Recorded agreement |
-|---|---|
+| --- | --- |
 | Scope | A recovery exercise for the payroll application, using an isolated recovery area in N5. |
 | Owner in the fiction | Sam, with Grace representing payroll users. |
 | Intended change and environment | Prepare a runnable restoration package, instructions, and independent access for the isolated recovery area. Live payroll remains in its current environment. |
 | Human cost | Sam and Grace use an already agreed rehearsal period. Their postponed documentation work is recorded as an obligation. |
 | Prerequisites | Ordinary access to the existing backups, the practice facilities, permission to conduct the exercise, and the independent recovery arrangements included in this project's scope. |
 | Acceptance condition | With N2 unavailable to the exercise, an authorized person can open the recovery material, restore the sample payroll application, and reproduce Grace's agreed example results. |
+{: .well .table .table-striped}
 
 The steward assigns **2 weeks** in the short game. No AI reduction is used. The new project stays at **2** this week; it did not exist when the card was drawn.
 
@@ -1281,10 +1299,11 @@ The group cannot use E2 alone to claim that the new arrangement behaves identica
 Assume the group reaches the Arrival with the starter relationships still in place. Its selected scenario says the provider withdraws N4's public outage portal. Freeze the map and assess what is already present.
 
 | Service | Trace and provisional result |
-|---|---|
+| --- | --- |
 | Field repair coordination | N3 still supplies N1. The ordinary human phone/radio route to crews and N8 does not use N4. **Operating** for the described next shift, unless another established burden or fact prevents staffing it. |
 | Outage communication | The public portal disappears. N1's ordinary staffed phone route remains, so some reports and explanations continue. **Degraded.** The capacity to handle all displaced portal users is **unknown**; mark that limit rather than claiming an untested substitute serves everyone. |
 | Payroll and supplier payments | N3's output and finance staff's ordinary route to N10 do not depend on N4. **Operating** under the established circumstances. This says nothing about surviving a separate loss of identity or payment services. |
+{: .well .table .table-striped}
 
 The existing human contact for crews continues. This scenario does not test a loss of electronic work orders, so staffing and performance under that condition remain unproven. Asha's school-pickup obligation still matters: the group cannot quietly invent indefinite overtime to claim the extra customer calls are fully covered.
 
@@ -1315,6 +1334,7 @@ If the group wants to take something into its work, identify **three follow-up e
 | 1 | | | |
 | 2 | | | |
 | 3 | | | |
+{: .well .table .table-striped}
 
 ### Notes for a playtest
 
@@ -1337,6 +1357,7 @@ Notice which card alternatives people select and why. A preference for gentler e
 | **Build** | Start one scoped project in an empty slot, **or** cancel one project as the entire action. |
 | **Verify** | Test one READY project or an existing capability with available test arrangements. Pass records scoped evidence; only a declared READY target can free its slot. |
 | **Council** | Give each player one affected voice, then record a decision, obligation, or acknowledged disagreement. |
+{: .well .table .table-striped}
 
 **Project limits:** Three total slots, including RUNNING, BLOCKED, and READY. Durations are 2/4/6 weeks in the full game or 1/2/3 in the short game. Suitable AI assistance reduces the initial duration once by one, minimum one; it does not reduce rework.
 
@@ -1363,6 +1384,7 @@ Notice which card alternatives people select and why. A preference for gentler e
 | Two shortages | |
 | Full or short calendar | |
 | Arrival method: choose or roll | |
+{: .well .table .table-striped}
 
 ### Project worksheet
 
@@ -1380,6 +1402,7 @@ Copy this for each of the three slots.
 | AI assistance, authority, dependencies, and revocation, if used | |
 | Starting duration and remaining weeks | |
 | State: RUNNING, BLOCKED, or READY | |
+{: .well .table .table-striped}
 
 ### Evidence and obligations
 
@@ -1388,11 +1411,13 @@ Copy this for each of the three slots.
 | E1 | | | |
 | E2 | | | |
 | E3 | | | |
+{: .well .table .table-striped}
 
 | Person or team | Promise or burden | What would address it? | What happened later? |
 | --- | --- | --- | --- |
 | | | | |
 | | | | |
+{: .well .table .table-striped}
 
 ## 14. Small glossary
 
@@ -1415,6 +1440,7 @@ Copy this for each of the three slots.
 | Restore | Recover data or a service from an existing recovery source and make it usable in a stated environment. |
 | Service account | An account used by software or automation. Its permissions may be shared by several tasks. |
 | Update channel | The route through which software changes reach a system. |
+{: .well .table .table-striped}
 
 ## 15. Revision notes and credits
 
