@@ -36,6 +36,7 @@ This is an unofficial, self-contained game inspired by Avery Alder’s [The Quie
 | Optional workshop debrief | Add 15–20 minutes to either version. |
 | Technical knowledge | Optional. Ordinary descriptions of needs, actions, and observations are sufficient. |
 | Status | A playable draft. Session lengths and incentives still need live playtesting. |
+{: .well .table .table-striped}
 
 **Quick navigation:** [Setup](#2-prepare-the-table) · [A week](#4-play-one-week) · [Actions](#5-the-four-actions) · [Short game and facilitation](#7-session-length-and-facilitation) · [Event deck](#8-the-event-deck) · [Arrival](#9-the-arrival) · [Starter scenario](#10-starter-scenario-north-valley-electric) · [Worked examples](#11-worked-examples) · [Table reference](#13-table-reference-and-worksheets)
 
