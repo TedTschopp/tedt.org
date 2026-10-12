@@ -55,6 +55,7 @@ Read aloud:
 > By winter, broadly capable general intelligence will become available. We do not know the week, who will control it, or which of our assumptions will survive its arrival.
 >
 > The next maintenance window opens tonight. What will we do with it?
+{: .alert .alert-primary}
 
 The Arrival and its timing are fictional premises that give the game its deadline. Your organization tries to preserve essential services while building systems whose behavior people can observe, whose authority they can limit, and whose failures they can recover from.
 
@@ -204,6 +205,7 @@ Investigate **one unresolved question** and establish a specific finding. Choose
 You might locate a hidden server, identify an owner, trace an access route, discover usable equipment, hear a user’s need, or inspect existing records. Add the finding to the map and distinguish what is known from what remains uncertain.
 
 > The supposedly retired database still supplies the dispatch schedule. The service owner knows the report, but nobody has mapped how it reaches the workroom.
+{: .alert .alert-primary}
 
 Survey establishes information. It cannot install a control, repair a system, settle an established refusal, or create a new numbered demonstration. Inspecting a record can reveal what it says; conducting a new test of a capability is Verify.
 
@@ -299,6 +301,7 @@ Rework must remain credible in the scope. A newly discovered major dependency ma
 Example evidence:
 
 > **E3:** Restored payroll using independent recovery access in the agreed exercise. The observation covers one representative environment and the recorded version; it does not establish recovery under every future condition.
+{: .alert .alert-primary}
 
 Remove only the exposures the observation resolves. A verified patch can coexist with a shared-credential problem. Keep historical evidence when later conditions change, and mark which claims now require reconsideration.
 
@@ -1067,6 +1070,7 @@ Read aloud:
 > Work and decisions can move at a pace our old arrangements did not anticipate.
 >
 > Our next shift begins with the systems on this map.
+{: .alert .alert-primary}
 
 ### Select the scenario using the method agreed at setup
 
@@ -1248,12 +1252,14 @@ On the following ordinary week, after its event, the recovery project advances f
 The steward takes **Verify** for the training update. Its previously written condition is:
 
 > After the update, the three fictional employees receive the expected payroll amounts, and the training report finishes successfully.
+{: .alert .alert-primary}
 
 The steward describes those observations. The next player points out that the test covers the training copy, not production. That is a legitimate limitation, but it does not defeat this project's bounded condition.
 
 The project passes. Free its slot and record:
 
 > **E1 — Training payroll update:** The updated application in N5 produced the agreed amounts for Grace's three fictional employees and completed its report. Production installation, production data, and emergency recovery were outside this test.
+{: .alert .alert-primary}
 
 This is enough technical detail. No player must identify a software product, command, or professional testing method.
 
@@ -1268,6 +1274,7 @@ This is a **Gap**. It follows from an established access relationship and the re
 Mark the project **BLOCKED**, assign **1 week of rework** in the short game, and write its blocker:
 
 > Grace and the recovery owner must authorize who may hold the independent recovery handoff and where it may be kept.
+{: .alert .alert-primary}
 
 Its slot remains occupied. Advancing the calendar will not supply the missing permission. Council can settle the custody dispute and authorize a workable arrangement. That decision clears the social prerequisite; it does not move the handoff. The existing project's remaining week of rework can implement the authorized handoff because independent recovery access is already within its scope. No additional Build project is needed for that work. Only substantial separate infrastructure outside the agreed scope would require a new Build project, and the original project would remain BLOCKED until that prerequisite was available.
 
@@ -1282,10 +1289,12 @@ The starter's N5 demonstration app already has two disposable test accounts, a s
 The steward takes **Verify** and writes a bounded condition before narrating the test:
 
 > A disabled demonstration account cannot make a new sign-in. The other demonstration account can still sign in.
+{: .alert .alert-primary}
 
 The described observations meet the condition. Record the result and its limit:
 
 > **E2 — New sign-in check:** The disabled test account could not start a new session in the N5 demonstration app; the other test account could. Existing sessions, other applications, and agent accounts were not tested.
+{: .alert .alert-primary}
 
 This consumes the week's one action. It grants no additional project progress and uses no project slot. The condition can be written as part of this Verify action. If the test facilities or authority had been missing, the group would first need to establish them through the appropriate actions.
 
@@ -1311,6 +1320,7 @@ The existing human contact for crews continues. This scenario does not test a lo
 One final sentence might be:
 
 > “Mateo still answers the crews, but I do not know who will answer the customers when I leave to get my daughter.”
+{: .alert .alert-primary}
 
 The surviving service, the unresolved burden, and the remaining uncertainty all belong in the ending. No new project or last-minute verification is added.
 
