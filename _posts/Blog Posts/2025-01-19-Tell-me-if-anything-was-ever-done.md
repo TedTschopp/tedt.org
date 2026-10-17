@@ -1,17 +1,12 @@
 ---
 layout: post
-title: Tell Me if Anything was Ever Done
-subtitle: Lessons from Leonardo di Vinci
-quote: "Tell me if anything was ever done\u2026 Tell me if ever I did a thing\u2026\
-  \ Tell me if anything was ever made. \u2014 Leonardo da Vinci"
-excerpt: "Leonardo da Vinci\u2019s notebooks show the struggle of a brilliant mind\
-  \ weighed down by perfectionism. His haunting question, 'What have I truly accomplished?',\
-  \ inspires creators today to share their ideas, embrace imperfection, and deliver\
-  \ value to the world."
+title: "Tell Me If Anything Was Ever Done"
+subtitle: "Lessons From Leonardo da Vinci"
+quote: "Tell me if anything was ever done. — Leonardo da Vinci, in Jean Paul Richter’s translation, note 1365"
+excerpt: "A fragment in Leonardo’s notebooks asks a question creators still recognize. Use it to distinguish an unfinished idea, a useful draft, and completed work."
 source: Original Content
 source-url: https://tedt.org/blog/Tell-me-if-anything-was-ever-done
-call-to-action: "Take inspiration from Leonardo: stop waiting for perfection\u2014\
-  ship your ideas, share your work, and let your creations inspire others."
+call-to-action: "Choose one unfinished idea, define a useful next version, and put it before someone who can respond."
 date: 2025-01-19 22:01:31
 update: null
 author:
@@ -19,17 +14,12 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- "Leonardo\u2019s struggle with unfinished projects and perfectionism."
-- The significance of 'done' for creators.
-- "Lessons from Leonardo\u2019s reflections on delivering value."
-- Why sharing imperfect ideas can inspire others.
-- How unfinished ideas shaped art, science, and engineering.
-description: "Explore how Leonardo da Vinci\u2019s unfinished works and perfectionism\
-  \ offer timeless lessons for creators. Learn why shipping your ideas, even when\
-  \ imperfect, can inspire the world and leave a lasting legacy."
-seo-description: "Explore how Leonardo da Vinci\u2019s unfinished works and perfectionism\
-  \ offer timeless lessons for creators. Learn why shipping your ideas, even when\
-  \ imperfect, can inspire the world and leave a lasting legacy."
+- "Richter’s translation records the question in note 1365."
+- "A surviving fragment cannot establish Leonardo’s private motives."
+- "Unfinished work can have value without fulfilling its original purpose."
+- "AI makes more drafts possible; judgment still determines what is ready to share."
+description: "Leonardo’s notebooks prompt a practical reflection on unfinished work, useful drafts, and what completion means when AI can generate more possibilities."
+seo-description: "A sourced Leonardo da Vinci reflection on unfinished ideas, AI-assisted drafts, and defining a useful version that someone else can build on."
 categories:
 - Communications
 - Philosophy
@@ -54,7 +44,7 @@ image-credits-URL: https://tedt.org/
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
 image-credits-title: Leonardo Quote
-image-description: An AI image of Leonardo Di Vinci
+image-description: "An AI-generated illustration of Leonardo da Vinci accompanying a reflection on a notebook quotation."
 image-title: Leonardo Quote
 redirect_from:
 - /communications/philosophy/personal%20writing/science/Tell-me-if-anything-was-ever-done
@@ -62,24 +52,41 @@ mastodon-post-id: 113859271380786463
 image_width: 1456
 image_height: 816
 ---
-Many of Leonardo da Vinci's notebooks bear a haunting scrawl, written years later: *"Tell me if anything was ever done…"*, *"Tell me if ever I did a thing…"*, *"Tell me if anything was ever made…"* These pleas reveal his deep understanding of the need to bring ideas to fruition. Despite his genius, he seemed to sense that his legacy and his contribution to humanity were diminished because so much of his work remained unfinished.  
 
-Leonardo’s life brimmed with brilliance but was marked by incomplete works and abandoned projects. His imagination seemed boundless, yet he was painfully aware of the gap between what he envisioned and what he completed. His question cuts to a core human concern: *What have I truly accomplished?*
+“Tell me if anything was ever done.”
 
-In his youth, Leonardo’s mind teemed with curiosity and ideas. The world was a puzzle he sought to solve—designing flying machines, crafting anatomical studies that pushed science forward, and painting works that redefined art. Yet, as he aged, the weight of his unfinished projects grew heavier. *The Last Supper* and the *Mona Lisa* endure as monuments to his genius, but his notebooks tell of a man who felt incomplete, like the very works he left behind.  
+The line appears as note 1365 in [Jean Paul Richter's translation of Leonardo da Vinci's notebooks](https://www.gutenberg.org/cache/epub/5000/pg5000.html). The next note begins another fragment: “Tell me if ever I did a thing which me ….”
 
-Leonardo’s question wasn’t just about producing tangible outcomes—it was about the essence of creation itself. To him, *"done"* may have meant the full realization of an idea, the transformation of thought into something functional, lasting, or inspiring.  
+They are striking words. They are also fragments. They do not tell us when Leonardo felt discouraged, whether he was judging his life's work, or why he left a particular project unfinished. We should resist turning a few surviving lines into a complete account of his private thoughts.
 
-By this measure, his perfectionism often stood in his way. He labored over the *Mona Lisa* for more than 15 years, never declaring it finished. His flying machines never left the ground. His scientific studies, groundbreaking as they were, remained unpublished in his lifetime.
+The question can still do useful work for us. What counts as having done something?
 
-His reflections urge us to rethink what it means to finish something. Instead of striving for perfection, we might focus on delivering something of value, learning from it, and building on it over time.
+## An Unfinished Work Can Outlive Its Purpose
 
-This doesn’t diminish Leonardo’s discipline or insight. Rather, it highlights how perfectionism can hinder progress. His later writings reveal a man troubled by the thought that his ideas—brilliant though they were—might be forgotten because they were never fully realized. As creators, we can learn from this by prioritizing delivery, ensuring we leave a trail of impact that others can build upon.  
+Leonardo's *Adoration of the Magi* offers a concrete example. The Uffizi's [2018 exhibition account](https://www.uffizi.it/en/online-exhibitions/nativity-2018) describes a commission from 1481 that he left unfinished when he departed for Milan. Another painting eventually filled the intended role.
 
-Leonardo’s lament—*“Tell me if ever I did a thing”*—is both deeply human and inspiring. It reminds us that even the greatest minds wrestle with getting something shipped.  This legacy asks us to consider what *done* means.  
+The surviving work still gives viewers something to study. That does not mean the original commission was completed. It means a work can fail to reach one intended destination and remain valuable in another way.
 
-For Leonardo, *done* may have been an unattainable ideal—a perfect harmony of vision and execution that few ever achieve. Yet his plea encourages us to act, create, and to finally share your creation before the moment slips away; do not wait for perfection but to create, ship, learn, and then create again.  
+That distinction helps us avoid two mistakes in our own work. We can dismiss an unfinished idea before anyone else has a chance to learn from it. Or we can call a promising sketch complete because producing it felt like an achievement.
 
-In the end, Leonardo accomplished far more than he might have realized. His works, both finished and unfinished, shaped art, science, and engineering for centuries. His chaotic, genius-filled notebooks prove that even incomplete ideas can inspire others to bring them to fruition. Through them, Leonardo’s question finds its answer: yes, he *did a thing*, many things, and his brilliance continues to change those it touches.  
+Both errors become easier when the idea is exciting. A drawing can reveal a possibility. A working device has to do something. The evidence appropriate to one is not sufficient for the other.
 
-Let his story remind you: your unfinished ideas can only inspire the world if you share them
+## AI Makes the Drafting Question Harder
+
+AI tools make it easier to generate another outline, another paragraph, or another version of a program. That can help us get past a blank page. It can also give us more material to sort through before anything reaches another person.
+
+Consider a proposed internal guide. Generating ten pages is an activity. Giving a colleague a guide they can use requires something more: a clear audience, accurate instructions, a usable example, and a way to identify what remains uncertain. The length of the draft tells us little about those qualities.
+
+The same is true of a software prototype. It may be ready to demonstrate an idea while still needing substantial work before anyone should depend on it. Naming that purpose makes the next step clearer. A prototype should be judged by the question it helps answer; an operational tool needs to meet the obligations of actual use.
+
+## Define a Useful Next Version
+
+Choose one unfinished idea and name the person it could help. Then define the smallest version that would let that person respond to something concrete.
+
+For an essay, that might mean one complete argument with its supporting sources. For a guide, it might mean one task explained well enough to try. For a prototype, it might mean one demonstrated behavior with its limitations plainly stated.
+
+Check the claims and repair the parts that would mislead the reader. Share the work when it is fit for that stated purpose. Ask what was unclear or missing, and use the response to decide what to improve. Some work will need more checking before it can be shared; calling it a draft does not remove that obligation.
+
+Leonardo's unfinished work does not give us a rule to publish everything immediately. It gives us a more interesting tension: completion matters, and unfinished material can matter too.
+
+The question is what another person can do with what we leave them. A useful version gives the next person somewhere to begin.

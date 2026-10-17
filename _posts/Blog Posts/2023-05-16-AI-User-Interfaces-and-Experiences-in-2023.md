@@ -2,14 +2,11 @@
 layout: post
 title: AI User Interfaces and Experiences in 2023
 title-url: null
-subtitle: null
+subtitle: "After Google I/O, the Text Box Has a Different Job"
 subtitle-url: null
-quote: null
-excerpt: The original computer output interface was the printer.  You entered a program
-  into the computer, and the computer responded on a printer with the answers.  Overtime
-  this changed to a screen, but the idea of a program that you enter and the computer
-  responds with an answer is still the fundamental idea of one User Interface paradigm.
-source: null
+quote: "You go looking for an answer because you want something done. The interface should be judged by how well it helps you get there."
+excerpt: "Google I/O points toward AI answers inside familiar products. The opportunity is larger than a chat box, but announced experiments still need to prove useful."
+source: "Original Content"
 source-url: null
 call-to-action: null
 date: 2023-05-16 08:28:17-08:00
@@ -18,15 +15,13 @@ author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
   name: Ted Tschopp
   url: https://tedt.org
-bullets: null
-description: An in-depth analysis of Google's response to the AI competition and its
-  impact on the tech landscape. Exploring the shift from traditional search to AI-driven
-  solutions, the article delves into the battle between Google, OpenAI, and other
-  tech giants. It also reflects on the evolution of user interfaces, from printers
-  to text boxes, and the fundamental role of search in our daily lives. With insights
-  into Google's product strategies, the text questions if the company can reclaim
-  its edge in the new era of AI-driven answers.
-seo-description: null
+bullets:
+- "The May 2023 announcements mix available products, previews, and planned access."
+- "AI can change the work between a question and a useful result."
+- "A generated answer still needs inspectable sources and a route to correction."
+- "The strongest interface may combine conversation, visual input, and direct controls."
+description: "A May 2023 view of Google I/O, Bard, Bing, and AI interfaces: what was available, what was promised, and how to judge progress toward a useful result."
+seo-description: "Google I/O 2023 and the AI text box: distinguish previews from releases, and judge search and chat by the work they help people complete."
 categories:
 - Computers
 - Artificial Intelligence
@@ -56,32 +51,60 @@ image_width: 6016
 image_height: 4000
 mastodon-post-id: '115017669397965166'
 ---
-Last week was Google IO, and I'm a little disappointed.   Google has been getting their lunch eaten by OpenAI and GPT-3, and I think they are starting to fighting back with new product launches and features are going to start coming very fast and furious.  But a lot of this stuff is coming soon or coming this fall. That's the evidence that Google is behind the eight ball on this.  This also suggests that over the last six months there really was a massive internal shift at Google towards getting this stuff out the door.  The open question is can Google out code Microsoft at this point.
- 
-As all this stuff sort of comes out, I think that many vastly under estimated how fundamental certain user interface ideas are.
- 
-The original computer output interface was the printer.  You entered a program into the computer, and the computer responded on a printer with the answers.  Overtime this changed to a screen, but the idea of a program that you enter and the computer responds with an answer is still the fundamental idea of one User Interface paradigm.
- 
-The second great UI idea was the GUI.  The original idea came from Xerox Parc, which then made its way into the Macintosh and into Windows.  The idea was that you put your hand on a mouse and the mouse moves a little arrow cursor on screen and the cursor goes around and that's what you click and do. This sounds obvious now, but it was a huge breakthrough at the time over the command line.   Now days most modern systems have gotten rid of the mouse and replaced it with your finger on a screen.
- 
-However, Google stuck with the first model and modernized it.  Instead of a computer program and getting answers on the screen, you got a small text box where you typed your query in and you got 10 html links to webpages that had what you were looking for.  And that's what Google is.  Google still is the best at this, and it's so fundamental to our life. There's a whole generation of kids who have grown up without knowing what it's like to grow up without Google and without that box.  My son doesn't really care what a dictionary is, he types the word phonetically into Google, who corrects his spelling and gives him a definition.
- 
-So what does that have to do with things?
- 
-The message from Google IO was that Google took their eye off that ball and started to chase additional shiny objects.  Now we will have to see if Google has shifted back to the text box.  Stuff like the Fold, the Tablets, the Glasses, and the Watches are great products, but they chiefly serve as a mechanism of customer acquisition for the Text Box.  Nobody is buying Google tablets.  Nobody is buying Google watches.  Nobody is buying Google glasses.  But everybody is using Google search.  Google's money is coming from that box and the ads it sells around them.
- 
-This box is also the only real touch point Google has with consumers.  And that Text box can't go places like Google Docs, Sheets, Search, Maps, Photos, etc.  unless its gives answers.  If it gives 10 blue links, no one will use it.  And that's the real opportunity for Google.  Each of those products, in the past, didn't get them into using the search product, however they can use AI to turn all of those apps into touch points for their textbox.  The downside here is that Microsoft has already announced and shipped products in this space.  This is why Google is catching up.  As for Amazon, Facebook, SalesForce, SAP, etc... Do you really think they are going to be able to beat Google and Microsoft at the Textbox game?  I don't think so.  Each of these companies will develop their AI to keep captured customers from going elsewhere.
- 
-The reason the text box is so important is that it's the only way to get to the AI.  The AI is the only way to get to the data.  And the data is the only way to get to the money.  And the data that Google and Microsoft/OpenAI needs is the good data that answers questions.  There is a lot of evil, bad, and mediocre data on the web today, put in place to sell ads or trick their users.  It turns out that the best way to build out an ad market is to use the Search box, but it's really not Search. Search is an antiquated catchall term for it, but you go to Google looking for answers, answers on how to fix your washing machine.  You could go directly to the website to learn how to fix the machine, or you can go to google to tell you all the best websites about fixing washing machines.  In the end, you just want clean cloths and for that you need a working washing machine and yours is broke.
- 
-This is why its more important to talk about the text box instead of search.  Search is just an unnecessary step in getting what you want, which is a clean cloths.  You don't want a washing machine, you don't want a fixed washing machine, you don't want a website telling you how to fix the washing machine, you don't want a search engine to tell you about what the best fix it yourself websites are for washing machines.  You want clean cloths, a the search box was an instrumental step in that chain of events.  Now with AI and Chat based interfaces, you automate the search of clinking through the top 10 or 15 links looking for an answer.
- 
-On a higher level you are just putting natural language into a box, maybe spoken word instead of typed words, and the AI builds an instructional summary using a probabilistic general purpose conversational system that has a good chance of giving you actionable advice based on the content its scanned on those webpages.  In the near future, your answer will also include back links to the webpages that the AI used to model its answers.  That list of links that the AI used to answer your question, will look a whole lot like Google's 10 blue links.   And that actionable advice is probably better then paging through webpage after webpage and forum after forum piecing together an answer on how to fix your specific make and model.
- 
-Today, Google requires you to do a fair bit of work to get to clean cloths. You had actually click through the pages, make sure, find the one that you wanted. And that work has gotten more difficult because that middle area has gotten mucked up with so much junk as everyone's trying to get free marketing by having good SEO.  These AI models are just out the middle by giving you the distilled essence of all the answers upfront.  There will a lot of areas where this AI will make a huge difference.  There has been a whole generation of junk has piled up online behind the advertising model, and this junk is the fundamental issue with Google search. It's not that Google search technically declined, it's that the amount of garbage it had to sift through has astronomically increased.  And this will only increase as these language models output more text that is turned into content that is then consumed and summarized by other large language models.   Right now it's infinitely free to just generate webpages, so however bad it has gotten with the SEO generated junk pages, we haven't even touched the tip of the iceberg at this point unless the models can figure out how to include actual content and filter out the junk.
- 
-And this is the interesting part, because if you go back to the original Google search engine and it relied on links and the network, it scaled with the internet in a way that all other competitors didn't.  And now we know we have reached the end of that curve. The generation of links has finally overwhelmed the network paradigm.   And right now what you need is not a series of links in a network, but the answers; the clean cloths.  You need something to summarize the potential answers, and remove all the spam and marketing SEO and give results.  In many ways, this was what Google looked like before SEO and Advertizing online.  In the past you went to Google to get answers.  Now you get crap and answers, but the promise of AI is that you might have a way to avoid that crap.
- 
-But the problem for Google is that ChatGPT has already replaced the place where early adopters go to get their answers.  And their answers are substantially better and faster then the answers the old paradigm gave them.  This means that its now the early adopters default place, and to win the early movers back, Google will need something orders of magnitude better, just like ChatGPT is orders of magnitude better then the 10 blue links.  Now those people who are not early adopters will probably stay with Google, but this might still be a problem if Microsoft can use the digital exhaust coming off ChatGPT to strengthen the vectors between the ideas in the Large Language Model.  If this is done, then Microsoft will be on a trajectory that Google has to overtake.  If however there is no way to take the digital exhaust off these tools and use them to enhance these systems, then each new version of GPT will take more and more compute to complete, and all Google needs to do is throw computing resources at the problem.
- 
-The reason that I'm disappointed is that all Google has done is stopped the bleeding with the early majority, late majority and the laggards, but they have provided no one with any reason to abandon ChatGPT / OpenAI nor has they said they have a way to use the digital exhaust to focus, strengthen, and enhance the tools over time.  All Google has done is released tools that make sure all their current users have no reason to move to ChatGPT / OpenAI.
+
+Last week was Google I/O, and I'm a little disappointed. The announcements point toward an important change in how we use computers, but a demonstration and a feature I can use today are different things.
+
+Google is bringing AI into Search and Workspace while expanding Bard. Microsoft already has an AI search preview in people's hands. That makes the competition interesting. It also makes the release details worth reading before we decide who is ahead.
+
+My larger question is about the interface. What happens when the familiar text box starts producing a proposed answer instead of making us assemble one from a list of pages?
+
+## What Was Available on May 16?
+
+The I/O announcements do not all describe the same state of availability.
+
+| Product or feature | What the dated announcement says |
+| --- | --- |
+| **Bard** | On May 10, Google removes the waitlist and opens access in more than 180 countries and territories. |
+| **Search Generative Experience** | Google opens Search Labs sign-ups on May 10, with access to the experiment to begin in the coming weeks. |
+| **Duet AI for Workspace** | Google announces assistance across Workspace and invites users to register interest in Workspace Labs. This is not a general release of every demonstrated feature. |
+| **The new Bing** | Microsoft moves from limited preview to open preview without a waitlist on May 4, while describing additional capabilities as forthcoming. |
+
+The sources are Google's [Bard announcement](https://blog.google/intl/en-in/google-bard-updates-io-2023/), its [Search announcement](https://blog.google/products-and-platforms/products/search/generative-ai-search/), the [Workspace announcement](https://workspace.google.com/blog/product-announcements/duet-ai), and Microsoft's [May 4 update](https://blogs.microsoft.com/blog/2023/05/04/announcing-the-next-wave-of-ai-innovation-with-microsoft-bing-and-edge/).
+
+That comparison supports a specific observation: Microsoft has made its search preview broadly accessible while Google's new generative Search experience is still opening a testing path. It does not prove how either product will perform over time, or reveal what happened inside Google's management meetings.
+
+## The Text Box Is a Familiar Habit
+
+Computers have given us printed output, command lines, graphical interfaces, and touch screens. Those forms coexist. A useful new interface does not have to erase every earlier one.
+
+Google's search box became an especially familiar habit: type a question or a few words, then inspect the results. My son doesn't really care what a dictionary is. He types a word phonetically into Google, which corrects his spelling and gives him a definition.
+
+The task is already larger than “find a page.” In that example, he wants to know what a word means. The interface absorbs some of the work between an imperfectly expressed question and a useful result.
+
+Generative AI suggests that more of that work could be absorbed. It can propose an explanation, combine information, or help revise a question. The proposition is attractive because the person can begin with a need rather than a carefully constructed search query.
+
+## The Goal Is Clean Clothes
+
+If the washing machine breaks, the goal is clean clothes. Finding a repair page is one possible step. Understanding which instructions apply to the machine is another. Deciding whether to repair it, call someone, or use a laundromat is part of the actual problem.
+
+A generated summary might shorten that chain. It might also skip a distinction that matters, such as the model number or the conditions under which a procedure is safe. An answer that arrives quickly can still send someone in the wrong direction.
+
+That is why source links remain useful. Google's Search demonstration includes ways to inspect supporting pages, and Bing's announcement describes cited answers. Links are part of the mechanism for checking an answer, even if the interface saves us from opening every search result in turn.
+
+The test is whether a person reaches a sound next step with less effort. Count the work of checking and correcting the answer as part of that effort.
+
+## More Than One Way Into the Task
+
+The text box is important, but it is not the only way into AI. Google's I/O discussion also points to [Lens and searches combining images with text](https://blog.google/innovation-and-ai/technology/ai/google-io-2023-keynote-sundar-pichai/). A photograph can express something a person struggles to name.
+
+For some tasks, a conversation will help. For others, a visible option, an editable table, or a button that performs a clear action may be easier to use. An AI feature inside Docs or Sheets should be judged by what it helps someone accomplish there, not by whether it sends that person back to a search box.
+
+That is the opportunity I want to see Google pursue. Its existing products already contain many of the places where people do their work. Helpful assistance could reduce the distance between an intention and a result.
+
+## What Would Change My Judgment?
+
+As these previews become accessible, I would compare them on a few ordinary tasks. Does the system understand the question without repeated repair? Does it show enough evidence to inspect the answer? Can the user correct a misunderstanding and continue? Does it help complete the task in the application where the work belongs?
+
+Claims about adoption, advertising, and which company will win should follow evidence from use. We cannot infer a reliable advantage simply by assuming that every conversation automatically improves the underlying model.
+
+The interesting competition is now over how much of the work between a question and a useful result these interfaces can carry. The May announcements show several approaches. Using them will tell us more than the stage demonstrations can.
