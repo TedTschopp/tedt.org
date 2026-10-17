@@ -2,15 +2,10 @@
 layout: post
 title: 'Project Stargate Unveiled: OpenAI’s $500 Billion Bet on an AI-Driven Future'
 title-url: null
-subtitle: Inside the world’s most ambitious AI data center and what it means for the
-  future of technology
+subtitle: "What the Infrastructure Announcement Establishes, and What Remains Open"
 subtitle-url: null
-quote: Project Stargate is OpenAI’s $500 billion bet on the future of AI infrastructure—a
-  data center of unprecedented scale designed to power the next generation of models
-  like ChatGPT-7.
-excerpt: A deep dive into OpenAI’s Project Stargate, the largest private AI infrastructure
-  project in history, and its implications for the future of computation, energy,
-  and global leadership.
+quote: "An investment announcement starts the infrastructure conversation; it does not finish it."
+excerpt: "Stargate proposes $500 billion in U.S. AI infrastructure over four years. The announcement raises concrete questions about funding, power, and delivery."
 source: Original Content
 source-url: ''
 call-to-action: Share your thoughts on the future of AI infrastructure and Project
@@ -22,15 +17,12 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- Project Stargate is the largest private AI infrastructure project ever announced.
-- The data center will consume up to 5 gigawatts of power—rivaling small nations.
-- Backed by global investors and tech giants, it signals a new era of AI as national
-  infrastructure.
-- Stargate’s scale and ambition will shape the trajectory of AI for years to come.
-description: Explore the scale, ambition, and global impact of OpenAI’s Project Stargate,
-  the $500 billion data center set to power the next generation of artificial intelligence.
-seo-description: Discover how OpenAI’s Project Stargate will redefine AI infrastructure,
-  energy, and global competition, and what it means for the future of technology.
+- "Stargate announces an intended multiyear investment, rather than a completed $500 billion facility."
+- "SoftBank and OpenAI have different financial and operational responsibilities."
+- "A national investment target does not establish the power demand of one site."
+- "Utilities and customers need project-specific evidence before making commitments."
+description: "What the January 2025 Stargate announcement says about investment and partners, and what utilities still need to know about funding and power."
+seo-description: "Assess Stargate’s announced $500 billion ambition, partner roles, and the funding and energy questions still open in January 2025."
 categories:
 - Computers
 - Artificial Intelligence
@@ -44,7 +36,7 @@ coordinates:
   latitude: 34.147
   longitude: -117.9709
 image: https://tedt.org/img/2025-01/project-stargate.webp
-image-alt: Project Stargate, the world’s largest AI data center
+image-alt: "Conceptual illustration of a large AI data center"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
 image-credits: Ted Tschopp
@@ -52,60 +44,53 @@ image-credits-URL: https://tedt.org/
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
 image-credits-title: Project Stargate Unveiled
-image-description: Digital art showing the scale and ambition of OpenAI’s Project
-  Stargate.
+image-description: "A conceptual illustration accompanying a discussion of the announced Stargate infrastructure project."
 image-title: Project Stargate Unveiled
 mastodon-post-id: '115017677575205659'
 ---
-_**Bottom Line Up Front:** Project Stargate is OpenAI’s $500 billion bet on the future of AI infrastructure—a data center of unprecedented scale designed to power the next generation of models like ChatGPT-7. Backed by global investors and tech giants, Stargate reflects a strategic shift toward private-sector-driven AI innovation, with massive energy demands, nuclear power exploration, and a timeline that redefines what’s possible in computational capability. More than a facility, Stargate signals the arrival of AI as national infrastructure._
 
-Project Stargate finally came out of stealth mode last week. News of this project has been spoken of in leaks and behind closed doors now for over a couple of years. What emerged confirms the whispers: Stargate is poised to redefine the limits of computational infrastructure.
+Five hundred billion dollars is a large enough number to make the rest of an announcement disappear. With Stargate, that would be a mistake. We need to know what the number describes before we decide what it means.
 
-Estimated to be one of the largest and most advanced data centers in the world, Stargate spans several hundred acres and is projected to consume up to 5 gigawatts of power—a figure that rivals the energy demands of some small nations. This initiative represents the next leap in OpenAI’s mission to push the boundaries of artificial intelligence. Its sheer scale underscores its importance in training and operating increasingly sophisticated AI models.
+OpenAI's [January 21 announcement](https://openai.com/index/announcing-the-stargate-project/) describes a new company that intends to invest $500 billion over four years in AI infrastructure in the United States, beginning with deployment of $100 billion. It names SoftBank, OpenAI, Oracle, and MGX as initial equity funders. SoftBank has financial responsibility; OpenAI has operational responsibility.
 
-How is it being funded? The project is set to cost $500 billion. With an initial build out of $100 billion to get the project going. No funding will come from the federal government; it will all be sourced from private-sector investments. The project is backed by four founding companies:
+That establishes an ambition and a division of roles. It does not establish that the full amount has been raised, spent, or converted into operating capacity.
 
-* **OpenAI:** U.S.-based AI research organization which will have operational responsibility will provide approximately $20b
-* **SoftBank:** Japan-based investment company which will have financial responsibility will provide approximately $20b
-* **Oracle:** U.S.-based computer technology company which has approximately $11b to invest on its balance sheet
-* **MGX:** Investment firm based in the United Arab Emirates has approximately $100b on its balance sheet to invest in AI.
+## Read the Announcement at the Right Scale
 
-The project will have the following technology partners:
+Stargate is described as an infrastructure buildout, beginning in Texas and considering other U.S. sites. Arm, Microsoft, NVIDIA, Oracle, and OpenAI are named as initial technology partners.
 
-* **Arm:** UK-based semiconductor and software design company which will provide hardware and software designs.
-* **Microsoft:** US-based technology and software company which seems like it will provide compute for the runtime of the model in its Azure Data Centers to the tune of $80b
-* **NVIDIA:** US-based graphics processing and AI hardware company which will probide hardware, software, Build and Operational Expertise.
-* **Oracle:** US- US based computer technology company which will provide build and operational expertise
-* **OpenAI:** US- US based AI research organization which will provide build and operational expertise.
+The distinction between a program and a single facility matters. We cannot apply the whole investment target to one building, or infer one site's electricity demand from the national total. Nor does the partner list establish each company's final contribution or contractual obligations.
 
-What is the federal government’s involvement? Former President Donald Trump announced his intent to intervene when necessary to expedite the project’s progress, citing its significance for maintaining U.S. leadership in artificial intelligence. “What we want to do is, we want to keep it in this country,” Trump stated. “China is a competitor, and others are competitors. We want it to be in this country, and we're making it available. I'm going to help a lot through emergency declarations because we have an emergency. We have to get this stuff built.”
+The announcement does not provide a schedule for a model called “ChatGPT-7,” a final chip configuration, or a complete site-by-site power plan. Those details should remain open rather than become assumptions that acquire the appearance of facts as they are repeated.
 
-Additionally, Trump revoked an executive order issued by President Joe Biden that called for regulation and oversight of artificial intelligence. The new directive aimed to eliminate barriers for U.S. companies to develop AI. “This order revokes certain existing AI policies and directives that act as barriers to American AI innovation, clearing a path for the United States to act decisively to retain global leadership in artificial intelligence,” the order stated.
+## Why the Energy Question Deserves Its Own Evidence
 
-Central to Stargate’s purpose is the development of "ChatGPT 7", a generational leap forward in AI. To achieve this, Stargate will likely rely on cutting-edge hardware, including Rubin Ultra 200 NVIDIA chips and other advanced 2-nanometer chipsets provided by ARM. NVIDIA’s roadmap has consistently pushed the envelope for AI acceleration, and Stargate’s adoption of this technology reflects a commitment to unparalleled processing power and efficiency. These innovations will be critical in handling the immense computational demands of training ChatGPT 7 and beyond.
+There is already reason to take data-center growth seriously. The Department of Energy's [December 20, 2024 summary of a Berkeley Lab report](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers) estimates that U.S. data centers used about 4.4% of national electricity in 2023 and projects a range of 6.7% to 12% by 2028. That range is a forecast for the sector, not a measurement of Stargate.
 
-The timeline for Project Stargate’s milestones offers insight into the ambition and urgency behind the initiative:
+For a utility, a multibillion-dollar announcement must become a specific request for service. Where is the site? How much load is requested, and when? Is it a steady load, or can part of it move when the system is constrained? Which generation, transmission, and distribution upgrades would be necessary?
 
-* Data Center Built Complete: Late 2027
-* GPT 7 Build Complete: May 2028
-* GPT 7 Speed Optimized Build Complete: November 2028
-* GPT 7.5 Feature Complete: May 2029
+Power also has two quantities that are easy to confuse. Megawatts describe demand at a point in time; megawatt-hours describe energy used over a period. A proposed maximum load does not tell us the annual energy use without assumptions about operation.
 
-Last week, the project’s location was made public: Stargate will be built in Abilene, Texas. The facility will feature 10 buildings, each 500,000 square feet in size, with plans for expansion to 20 buildings. However, the additional buildings are not planned for Texas; OpenAI is exploring other locations across the United States for these expansions. These data centers are designed to handle the intense power requirements of AI workloads. While most data centers consume 500–600 watts per square foot for compute, GPU-intensive AI workloads demand double that, ranging from 500 to 1,000 watts per square foot. Another critical consideration is Power Usage Effectiveness (PUE), which measures the efficiency of a data center by comparing the energy used for IT compute to the energy used for non-IT functions like cooling. In 2020, the average PUE for data centers was 1.6, but modern designs aim for a target below 1.4. Companies like Facebook and Google have even achieved PUE ratios as low as 1.2.
+The same care applies to **power usage effectiveness**, or PUE: total facility energy divided by IT-equipment energy over the same period. A lower ratio can indicate less overhead. It does not tell us how much computing equipment a facility contains, how heavily it runs, or the source of its electricity. An assumed PUE cannot turn a speculative floor-space calculation into a verified site requirement.
 
-If Stargate achieves a PUE of 1.2 and operates at 750 watts per square foot, the energy consumption per square foot would be 900 watts. For a 500,000-square-foot building, this translates to 450 megawatts of power consumption per building. With 10 buildings, the facility’s total power demand would reach 4,500 megawatts (4.5 gigawatts). To put this into perspective, Texas’s nuclear power plants produced 4,926.2 megawatts in 2022, accounting for 10% of the state’s energy generation, according to the U.S. Nuclear Regulatory Commission. A data center of this size aligns with leaks out of OpenAI from a year ago that the data center would consume 5GW of power.
+## What Would Make the Plan More Concrete?
 
-Powering a facility of this magnitude brings its own set of challenges. To address the enormous energy consumption, the project has explored alternative power sources, including nuclear energy. The choice highlights the need for stable, high-output, and environmentally conscious power solutions, aligning with broader industry trends toward sustainability.
+There are several different commitments to look for as the project develops:
 
-The scale of Stargate comes with an equally staggering cost. The project is estimated to require $500 billion, a sum that is ten times the current global annual spend on data centers. To put this into perspective, Stargate's budget rivals some of the most significant infrastructure and scientific endeavors in history:
+| Question | Evidence that would help answer it |
+| --- | --- |
+| Is the investment financed? | Funding commitments with amounts, conditions, and timing |
+| Can the site receive power? | A connection plan and an achievable schedule for required upgrades |
+| Can the facility be delivered? | Site control, permits, procurement commitments, and construction milestones |
+| Who carries a delay or cost increase? | Agreements assigning costs and responsibilities |
+| Is capacity serving customers? | Operating facilities and delivered service, rather than another target |
 
-* **American Interstate Project:** $618 billion
-* **Apollo Program Costs:** $190 billion
-* **Manhattan Project Costs:** $31.4 billion
-* **International Space Station:** $100 billion
-* **California High-Speed Rail System:** $100 billion
-* **Los Angeles Transit Buildout:** $150 billion
+These are questions to track, not claims that the January announcement has already answered them. They also separate the developer's responsibilities from those of technology suppliers, utilities, and public agencies.
 
-These comparisons highlight how Stargate’s investment represents a bold step into uncharted territory, emphasizing the profound importance placed on AI’s role in shaping the future. Unlike the projects above, which transformed transportation, space exploration, and global security, Stargate focuses on the digital frontier—ushering in an era where computation and artificial intelligence redefine the boundaries of human potential.
+## What an Enterprise Customer Should Take From This
 
-Stargate represents more than just a data center; it’s a statement about the future of AI. By investing in infrastructure at this scale, OpenAI demonstrates its commitment to staying at the forefront of artificial intelligence. As this project unfolds, its ripple effects will likely shape the trajectory of AI development for years to come.
+The announcement suggests that major AI suppliers expect substantial demand and are preparing to compete on infrastructure. It does not tell a customer which model to buy, whether a workload will become cheaper, or whether capacity will be available in the required region when needed.
+
+For current decisions, ask suppliers about the service they can commit to: capacity, price, location, data handling, and availability. A future expansion can be part of the discussion, but a business plan needs to distinguish a contractual commitment from a proposed buildout.
+
+Stargate's scale makes it worth watching. The next useful information will connect the headline number to funded projects, deliverable power, and operating capacity. That is how an infrastructure ambition becomes something an enterprise or a utility can plan around.

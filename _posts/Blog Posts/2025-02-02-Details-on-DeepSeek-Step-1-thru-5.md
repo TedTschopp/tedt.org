@@ -1,19 +1,12 @@
 ---
 layout: post
-title: 'Details on DeepSeek: Step 1 through 5'
-subtitle: A Deep Dive into the Revolutionary Five-Step Training Pipeline Behind DeepSeek
-  R1's Reasoning Capabilities
-quote: Think of this like training a dog. You give a command, the dog responds, and
-  if it does the right thing, you give it a treat. Over time, it learns which actions
-  lead to rewards and improves its behavior.
-excerpt: An in-depth technical analysis of DeepSeek R1's groundbreaking five-step
-  training methodology, using dog training metaphors to explain complex reinforcement
-  learning concepts that created the first open-weight reasoning model trained from
-  scratch.
+title: "Details on DeepSeek: Step 1 Through 5"
+subtitle: "The R1-Zero Experiment and the Four Stages Behind DeepSeek-R1"
+quote: "The useful question is what behavior we reward, and how we know that behavior is correct."
+excerpt: "DeepSeek-R1 makes more sense when we separate pretraining, the R1-Zero experiment, and the four stages used to produce the final reasoning model."
 source: Original Content
 source-url: ''
-call-to-action: Explore each step of the DeepSeek training pipeline to understand
-  how revolutionary AI reasoning models are built from the ground up.
+call-to-action: "Choose a task where you can check the answer, then examine what your evaluation actually rewards."
 date: 2025-02-02
 update: null
 author:
@@ -21,50 +14,34 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- DeepSeek R1-Zero is the first open-weight model trained exclusively with large-scale
-  reinforcement learning from scratch
-- Five-step training pipeline combines cold-start RL, supervised fine-tuning, large-scale
-  RL, rejection sampling, and final RL
-- Dog training metaphors make complex AI concepts accessible to general audiences
-- Reinforcement learning training time directly impacts model performance, not just
-  inference time
-- Agile-style training with thousands of rapid updates accelerates reasoning model
-  development
-description: A comprehensive technical breakdown of DeepSeek R1's revolutionary five-step
-  training methodology, explaining how the first open-weight reasoning model was built
-  from scratch using reinforcement learning, with accessible dog training metaphors
-  to illustrate complex AI concepts.
-seo-description: 'Learn DeepSeek R1''s groundbreaking 5-step AI training pipeline:
-  cold-start reinforcement learning, supervised fine-tuning, large-scale RL, rejection
-  sampling, and final optimization for reasoning AI models.'
+- "R1-Zero and R1 start from a pretrained model; neither begins with a blank slate."
+- "The five-part explanation separates an experiment from the final training pipeline."
+- "Reward design and verification deserve as much attention as the model."
+- "Published benchmark results are a starting point for testing a business use case."
+description: "A guide to DeepSeek-R1 training, with a dog-training analogy and practical questions about rewards, verification, and enterprise use."
+seo-description: "Understand DeepSeek-R1, R1-Zero, supervised fine-tuning, GRPO, and why reliable verification matters for enterprise AI."
 categories:
 - Artificial Intelligence
 - Computers
 - Science
 tags:
-- DeepSeek
-- reinforcement learning
-- AI training
-- reasoning models
-- machine learning
-- R1-Zero
-- supervised fine-tuning
-- rejection sampling
-- PPO algorithm
-- RLHF
-- cold-start training
-- model optimization
-keywords: DeepSeek R1, reinforcement learning, AI training pipeline, reasoning models,
-  open-weight models, supervised fine-tuning, rejection sampling, PPO algorithm, RLHF,
-  cold-start training, machine learning methodology
+- "DeepSeek"
+- "reinforcement learning"
+- "AI training"
+- "reasoning models"
+- "R1-Zero"
+- "supervised fine-tuning"
+- "rejection sampling"
+- "GRPO"
+- "evaluation"
+keywords: "DeepSeek R1, R1-Zero, reinforcement learning, GRPO, supervised fine-tuning, rejection sampling, reasoning models, evaluation"
 location:
   name: Bradbury, CA
 coordinates:
   latitude: 34.147
   longitude: -117.9709
 image: /img/AI/Deep-Seek.webp
-image-alt: Diagram showing the five-step DeepSeek R1 training pipeline with dog training
-  metaphors
+image-alt: "Illustration accompanying an explanation of DeepSeek-R1 training"
 image-artist: Ted Tschopp
 image-artist-URL: https://tedt.org/
 image-credits: Ted Tschopp
@@ -72,177 +49,69 @@ image-credits-URL: https://tedt.org/
 image-credits-artist: Ted Tschopp
 image-credits-artist-URL: https://tedt.org/
 image-credits-title: DeepSeek R1 Training Pipeline
-image-description: Visual representation of the five-step DeepSeek training methodology
-  using dog training analogies to explain AI concepts
+image-description: "An illustration for a discussion of model training, rewards, and reasoning."
 image-title: 'DeepSeek R1: Five Steps to Reasoning AI'
 mastodon-post-id: '115017678056365520'
 image_width: 1456
 image_height: 816
 ---
-**Step 1: Training R1-Zero with Synthetic Data to Initialize R1**
 
-_Example for Step 1_
+DeepSeek's reasoning models are easier to understand if we separate two questions: what the model already learned, and what happens when we reward it for solving a problem.
 
-Throughout this paper I will be using the metaphor of training a dog to describe how this will work. To experts in this field, many will see these examples as wrong, or they will be able to come up with better examples. I have spent a lot of time trying to come up with something that most people can connect with and understand.
+The distinction matters. A model that improves through reinforcement learning has not necessarily learned everything through reinforcement learning. DeepSeek starts with an existing language model. The interesting work here is **post-training**: changing its behavior after that foundation is in place.
 
-> You want to get puppy for your kids. You go down to the store and buy the dog. You have two options. You can train the dog yourself, or you can let the dog live over at your friends house who already has 3 well behaved dogs who are well behaved. Traditional AI model training take this second approach. Instead of training your new puppy, you let it spend a couple weeks to a month with the other older dogs and after that time, your dog knows how to behave and is well adjusted. It might not know every command you want, and the dog doesn't know your family, but there is a bunch of work you don't have to do to train your dog properly. The DeepSeek researchers took the approach of training their dog from day one once the dog was born. This takes longer, and your dog might not know how to behave properly in a pack, but overall that's a fair tradeoff.
+This explanation follows the [January 22, 2025 version of DeepSeek's R1 paper](https://arxiv.org/abs/2501.12948v1). Its five parts cover the R1-Zero experiment followed by the four stages used for R1. They are a reading guide, rather than five consecutive stages through which one model passes.
 
-**Details for Step 1**
+## Step 1: Understand the R1-Zero Experiment
 
-DeepSeek R1-Zero represents a groundbreaking advancement as the first **open-weight model trained exclusively using large-scale reinforcement learning (RL) without relying on supervised fine-tuning (SFT) as an initial step.** While rumors suggested OpenAI’s o1 model employed a similar approach, its underlying mechanics were not well understood.
+R1-Zero applies reinforcement learning directly to DeepSeek-V3-Base, without a preliminary supervised fine-tuning stage. That is different from training a language model from scratch. The base model has already been pretrained.
 
-Despite its innovation, R1-Zero exhibits certain reliability issues, including sporadic language shifts during reasoning tasks. These usability challenges highlight a key insight: while large-scale RL is essential for unlocking reasoning capabilities, **it alone is insufficient to produce a fully reliable model**. This underscores the need for additional refinement steps beyond reinforcement learning to create robust reasoning models.
+Think of training a dog that already knows something about the world. A treat changes which behavior it repeats; it doesn't explain where all its earlier learning came from. This analogy helps with the idea of a reward, but it cannot tell us what a language model understands.
 
-**Breakthrough in Reinforcement Learning Scaling**
+That distinction also keeps us from treating a convincing explanation as proof. A dog can learn to respond to the wrong cue. A model can produce an answer that satisfies a scoring rule while missing what we actually wanted. Before celebrating the reward, we need to inspect the rule.
 
-DeepSeek’s research introduces a pivotal finding—**demonstrating how reinforcement learning training time directly impacts model performance**. Prior industry focus has primarily been on inference-time scaling, where longer inference times correlate with improved evaluation scores. DeepSeek’s work extends this understanding to training time, providing empirical evidence that prolonged reinforcement learning improves reasoning model quality.
+## Step 2: Give R1 a Readable Starting Point
 
-Internal testing suggests that had the team allowed this phase to continue for a longer period, the overall performance of R1 would have further improved. Unlike other AI training curves that plateau, the reinforcement learning phase for R1-Zero **did not reach a saturation point before deployment**. However, hardware constraints and computational resources imposed limitations on further optimization.
+The final R1 pipeline begins by fine-tuning the base model on a small collection of readable reasoning examples. This is its **cold start**. R1-Zero outputs are one source of examples, alongside other collection and editing methods.
 
-If a well-funded research team—particularly in Western institutions—were to replicate this approach using modern hardware and extend training duration, they could likely **achieve significantly higher benchmark scores**. This suggests that reinforcement learning-driven reasoning models have not yet reached their full potential and could benefit from further scaling and refinement.
+Supervised fine-tuning supplies demonstrations of a desired response. Reinforcement learning rewards attempts. Those are different kinds of instruction, and a useful training process can use both.
 
-**The Significance of Cold-Start Training**
+For an enterprise team, that raises a familiar question: can we show what good work looks like? If the examples disagree about required evidence, terminology, or the final deliverable, more examples may simply teach the disagreement. Cleaning up those expectations is useful work before any training begins.
 
-Step 1, the **"cold start" phase**, is fundamental for model training. Many AI teams bypass this stage by leveraging existing models as a foundation, rather than training from scratch. DeepSeek’s findings indicate that investing in this phase **yields a stronger final model**, reinforcing the value of a complete end-to-end training pipeline. This insight presents an opportunity for AI teams to revisit their model initialization strategies to enhance reasoning capabilities.
+## Step 3: Reward Reasoning on Checkable Problems
 
-**Optimizing Model Design for Reasoning AI**
+The next stage uses reasoning-oriented reinforcement learning. The algorithm is **Group Relative Policy Optimization**, or GRPO. Its reward baseline comes from a group of sampled answers, avoiding a separate critic model. The method was described in the earlier [DeepSeekMath paper, published in February 2024](https://arxiv.org/abs/2402.03300v1).
 
-DeepSeek’s research also highlights an important consideration for reasoning models: **response verbosity and its impact on reasoning chains**. If a base model generates excessively long responses, it may struggle to maintain logical consistency in multi-step reasoning tasks. This issue suggests that reasoning models could benefit from an optimized balance between verbosity and structured thinking to maintain coherence in complex problem-solving scenarios.
+The attraction is straightforward: for some tasks, we can check the result. A calculation can be checked against its expected answer. A program can be run against tests. That gives the training process a firmer signal than whether an answer sounds persuasive.
 
-**Agile Training Approaches for Rapid Model Improvement**
+But the check has boundaries. Passing a small test suite doesn't prove a program is useful under every condition. A correct numerical result doesn't establish that the inputs describe the right business problem. The quality of the verifier limits what the reward can teach.
 
-Resource constraints led the DeepSeek team to adopt an **agile-style training methodology**, iterating in small batches with frequent updates. While typical reasoning model training involves hundreds of optimization cycles, DeepSeek performed **thousands of rapid updates ("sprints")**, allowing for continuous refinement. This **high-frequency iterative approach** presents another avenue for improvement, as more frequent training updates could accelerate advancements in reasoning models.
+This is the part of the dog-training analogy worth keeping: be precise about what earns the treat. Rewarding speed while asking for accuracy sends a different message from rewarding accurate completion.
 
-**Step 2: Supervised Fine-Tuning (SFT) for Enhanced Readability and Performance**
+## Step 4: Select Examples and Fine-Tune Again
 
-_Example for Step 2_
+DeepSeek then selects reasoning responses through rejection sampling, adds non-reasoning data, and fine-tunes DeepSeek-V3-Base again. Selection produces training examples; it is not itself another reward update.
 
-> Now that we have our puppy and we are not going to ignore his training, we need to establish a couple things. One is a reward marker, usually a clicker, and some form of negative marker, generally a "No", "Opps", a tug on the leash, or some other sort of sound to let the dog know the exact location they did well, or where they went wrong.
+That distinction is useful outside model training, too. Collecting outputs and declaring them successful is easy. Building a collection that can teach or test another system requires a reason for accepting each example.
 
-**Step 2**
+Consider a proposed assistant that checks a purchase request. A reviewer should be able to explain why a response passes: it identifies the applicable policy, cites the right version, and handles a missing approval appropriately. “It looks good” is a weak acceptance rule. A polished response that uses the wrong policy should fail.
 
-To **improve the clarity, consistency, and reasoning accuracy** of the final model, DeepSeek applies a **targeted supervised fine-tuning (SFT) phase** before reinforcement learning. This step refines the base model using a curated dataset consisting of **a few thousand high-quality completions** generated by R1-Zero.
+The same collection must not do every job. Keep separate examples for evaluating the result, or the team risks measuring familiarity with its training material instead of performance on new work.
 
-**Key Refinement Techniques**
+## Step 5: Train for Broader Use
 
-While this fine-tuning process is relatively lightweight, it plays a critical role in improving output quality. DeepSeek employs several optimization techniques, including:
+The last stage combines reasoning rewards with preference-based rewards for broader helpfulness and harmlessness. Producing a usable assistant requires more than improving performance on problems with a single checkable answer.
 
-*   **Few-shot prompting** with structured, multi-step reasoning examples to guide model responses.
-*   **Direct prompting for detailed answers**, encouraging self-reflection and verification within responses.
-*   **Formatting model outputs for readability**, ensuring consistency in structure and presentation.
-*   **Post-processing by human annotators**, refining data quality and improving response reliability.
+That leaves a practical tension. A user may prefer a confident, friendly response even when the evidence is incomplete. An evaluator may reward brevity when a qualification is necessary. These preferences need examination alongside the answer's correctness.
 
-For teams looking to replicate this process, **any of these techniques can be applied**, and leveraging DeepSeek R1 itself may provide the most efficient path forward.
+Copying model weights does not remove that tension. Nor does training a smaller model on a larger model's outputs guarantee that every capability transfers. Each resulting system still needs to be evaluated for its intended use.
 
-This supervised fine-tuning step **optimizes the model’s training trajectory**, making it easier to develop **self-correction and reasoning behaviors** during reinforcement learning. It enhances the likelihood that the model will exhibit advanced cognitive traits such as:
+## What an Enterprise Team Can Do With This
 
-*   **Self-verification:** "Let me double-check my work."
-*   **Error recognition:** "That answer seems incorrect; let me refine it."
+The immediate opportunity is to get better at specifying and checking work. A team does not need to begin by reproducing a frontier training run.
 
-By laying this groundwork early, the reinforcement learning phase can **more effectively strengthen these reasoning capabilities**, resulting in a more reliable and interpretable AI model.
+Choose one bounded task and build a small evaluation set. Include ordinary cases, missing information, and an answer that sounds plausible but is wrong. Define what a reviewer must check, then compare the model's result with the existing process. Record correction time as well as completion time.
 
-**Step 3: Large-Scale Reinforcement Learning for Reasoning Models**
+Treat the paper's reported benchmarks as the researchers' results under their evaluation conditions. They can justify an experiment; they cannot establish whether a model will handle your documents, your permissions, or your exceptions.
 
-_Example for Step 3_
-
-> Think of this like training a dog. You give a command, the dog responds, and if it does the right thing, you give it a treat. Over time, it learns which actions lead to rewards and improves its behavior. Here, the model is the "dog," the responses are its "actions," and the rewards help it learn what works best.
-
-**Step 3**
-
-Reinforcement Learning (RL) for reasoning models operates on a fundamental principle: **reward the model for producing correct answers in cases where correctness can be objectively verified**. This structured feedback loop helps shape the model’s reasoning capabilities, ensuring it converges toward higher accuracy and usability.
-
-DeepSeek’s reinforcement learning approach incorporates **three key reward mechanisms** during the reasoning phase:
-
-1.  **Accuracy Rewards** – The primary driver of learning, where the model receives a **positive score if its response is correct** and zero otherwise.
-2.  **Format Rewards** – Ensures that responses follow a structured format using designated tags (e.g., <think> ... </think>, <answer> ... </answer>), reinforcing **stability and interpretability** in outputs.
-3.  **Language Consistency Rewards** – Encourages responses to be in the **same language as the query** to improve user experience. While DeepSeek notes a slight reduction in raw performance from this adjustment, it enhances **alignment with human preferences**.
-
-While accuracy rewards form the core learning mechanism, the **format and language consistency rewards act as guardrails**, ensuring that responses are both structured and user-friendly. To implement this reward system, DeepSeek utilizes a **customized Proximal Policy Optimization (PPO) algorithm**, a reinforcement learning approach widely adopted in AI research. Their version **relies on Monte Carlo advantage estimates for value approximation** instead of storing a separate value model in memory—an approach likely chosen for its efficiency and compatibility with DeepSeek’s existing infrastructure.
-
-**The Importance of Verifiable Training Data**
-
-The effectiveness of reinforcement learning in reasoning AI hinges on **the availability of verifiable, high-quality training data**. While DeepSeek has not publicly disclosed its dataset, OpenAI has described using fact-based evaluations, such as:
-
-*   **Example Question:** _Who are President Obama’s children?_
-*   **Evaluation Method:** A predefined list of correct, partially correct, and incorrect answers assigns scores accordingly.
-
-This structured evaluation approach is particularly **valuable for domain-specific AI applications**, such as:
-
-*   **Industrial AI models** that process sensor data, where equipment variability and environmental conditions must be factored into decision-making.
-*   **Enterprise AI systems** trained on **proprietary internal knowledge**, where accuracy must be maintained despite the absence of widely agreed-upon external sources.
-
-**Scaling Up Reinforcement Learning: Computational Considerations**
-
-Reinforcement learning for reasoning requires **multiple model instances running in parallel**, alternating between generating responses, verifying outputs, and iterating backward to refine results. As one researcher at Cornell noted, **"We need to code up verifiers ASAP"**, emphasizing the importance of **building domain-specific verification systems**. For enterprises exploring RL-based AI, a **practical first step is to develop tools and datasets tailored to a single domain before scaling across multiple areas**.
-
-**Step 4: Rejection Sampling to Introduce General Capabilities**
-
-_Example for Step 4_
-
-> Think of this like training a dog. You give the command to fetch a stick. But instead of rewarding the dog with any attempt, you observe all the possible ways he can retrieve the stick. Perhaps he crews on it. Perhaps he plays a game of tug of war with you when he returns it. Maybe he drops it at your feet. You make a list of all the ways your dog returns the stick and then decide that the best fetch is where he returns the stick to your feet, sits back and gets your attention. The sloppy fetch is him getting the stick and playing tug of war. A failed fetch would be where he either runs off with the stick or he ignores the stick. Now you take your dog out to the field and you throw the stick. This time the dog gets no rewards for failure, but the dog also gets better rewards for the behaviors you prefer. It might take a couple times to get the dog to fetch the stick, sit, and alert.
-
-**Step 4**
-
-Rejection sampling is a well-established post-training technique used to refine model outputs by **generating multiple responses, ranking them with a reward model, and fine-tuning the original model based on the highest-quality completions**. This method is commonly employed in AI training pipelines, including models like Llama 3, to enhance performance across a variety of tasks.
-
-DeepSeek applies rejection sampling to **reintroduce general-purpose capabilities into the model**, ensuring that reasoning-focused refinements do not come at the cost of broader AI versatility. This phase is **the only stage where DeepSeek discloses specific training data volumes**:
-
-*   **800,000 total completions**
-    *   **600,000 focused on reasoning tasks**
-    *   **200,000 focused on general chat interactions**
-
-**The Strategic Value of Training Data**
-
-The goal in this stage is to **curate a training set of high-quality completions**, particularly for factual reasoning tasks. Consider the example of asking, _"Who are President Obama’s (or Trump’s) children?"_—this represents a **chain of reasoning grounded in verifiable facts and widely accepted processes**, such as:
-
-*   **Scientific methodologies**
-*   **Programming and algorithmic principles**
-*   **Theoretical foundations of chemistry, physics, and philosophy**
-
-For AI applications in corporate environments, this phase underscores the **critical importance of proprietary domain-specific datasets**. Whether building AI for **enterprise decision-making, industry-specific automation, or knowledge management**, access to validated, high-quality training data is a key differentiator.
-
-**DeepSeek’s Approach to Rejection Sampling**
-
-DeepSeek refines this process by leveraging multiple data sources and verification strategies:
-
-*   **Generative reward models** – Using another **large language model (LLM) as a judge** (e.g., ChatGPT) to verify responses that lack explicit factual answers.
-*   **DeepSeek-V3’s post-training pipeline** – Incorporating refined data from prior AI iterations to enhance response quality.
-*   **Augmented chat data with structured reasoning steps** – Training the model to interpret and **apply logical reasoning even in less formally structured conversations**, improving its ability to generalize across different use cases.
-
-**Step 5: Final Reinforcement Learning for General Use**
-
-_Example for Step 5_
-
-> In our dog example, think of this final phase and the socialization phase of your dogs education. While I mentioned earlier things that look like socialization, this is a bit different. You want to walk your dog around the neighborhood to see how it reacts to loud noises, like leaf blowers. You want to take your dog to the dog park to see how it will interact with other dogs. You want to make sure you dog knows how to behave around humans and other animals you have in the house and in the neighborhood.
-
-**Step 5**
-
-In the final stage, DeepSeek R1 undergoes a second round of **reinforcement learning (RL)**, a process that is increasingly becoming the dominant method for fine-tuning AI models. This phase is designed to **enhance the model’s reasoning capabilities while optimizing it for general usability**, focusing on improving both **helpfulness and safety**.
-
-However, it is important to note that in this stage, DeepSeek appears to have operated under **different regulatory and data constraints** than Western AI labs. Reports suggest that **content alignment measures** were influenced by external factors, including the potential prioritization of **state-approved narratives in politically sensitive areas**. While this may be driven by a need to secure continued research funding, it underscores the complex relationship between AI model development and geopolitical considerations.
-
-**Fine-Tuning Strategy: Reinforcement Learning with Multiple Reward Models**
-
-To refine general usability, DeepSeek combines two key reinforcement learning techniques:
-
-1.  **Verifiable Domain Reinforcement Learning** – Extending the **fact-based training** used in R1-Zero to reinforce accuracy in areas with clear correctness standards.
-2.  **Reinforcement Learning with Human Feedback (RLHF)** – Incorporating preference tuning to **align responses with user expectations** and ensure a more natural, human-like interaction.
-
-This approach builds upon DeepSeek’s existing **post-training pipeline from V3**, leveraging multiple reward models to optimize response quality and adherence to structured reasoning.
-
-**Challenges in Reinforcement Learning Fine-Tuning**
-
-Successfully executing this phase requires addressing several open research questions:
-
-*   **Data Balance:** How much factual, verifiable data should be used versus human preference-driven tuning?
-*   **Reward Model Selection:** Can an existing off-the-shelf reward model be used, or does it need exposure to complex reasoning traces?
-*   **Performance Trade-offs:** Are additional safeguards needed to prevent degradation in reasoning ability while improving user-friendliness?
-
-As AI research advances, these challenges will be refined through ongoing experimentation and iteration.
-
-**Scalability and Future Considerations**
-
-One of the most significant advantages of this approach is that once an AI model learns a task, **replicating that knowledge across subsequent models becomes exponentially more efficient**. As knowledge transfer becomes more streamlined, AI training will increasingly resemble a simple **"Copy-Paste"** process, where fundamental reasoning skills and alignment strategies can be rapidly applied to new models with minimal additional effort.
-
-While many details of DeepSeek’s methodology remain undisclosed, the broader framework for reasoning model fine-tuning is becoming clearer. Future research will focus on **optimizing reinforcement learning strategies** to balance reasoning depth, general usability, and ethical considerations.
-
+The dog-training metaphor gets us started with rewards. The harder question is whether we are rewarding the right thing. That is where the enterprise work begins.
