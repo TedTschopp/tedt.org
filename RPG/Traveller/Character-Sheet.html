@@ -707,6 +707,27 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="gear-catalog-compact-grid">
+                            <div class="gear-catalog-compact-control">
+                                <label for="weaponCatalogSkill">Required skill</label>
+                                <select class="form-control" id="weaponCatalogSkill" data-gear-filter-skill
+                                    aria-describedby="weaponCatalogSkillHelp">
+                                    <option value="any">Any skill requirement</option>
+                                    <option value="unresolved_or_not_recorded">Unresolved or not recorded</option>
+                                </select>
+                                <small id="weaponCatalogSkillHelp">Conditional alternatives match either structured skill.</small>
+                            </div>
+                            <div class="gear-catalog-compact-control">
+                                <label for="weaponCatalogSort">Sort results</label>
+                                <select class="form-control" id="weaponCatalogSort" data-gear-sort
+                                    aria-describedby="weaponCatalogSortHelp">
+                                    <option value="name">Name (A–Z)</option>
+                                    <option value="tech-asc">Tech Level (low to high)</option>
+                                    <option value="tech-desc">Tech Level (high to low)</option>
+                                </select>
+                                <small id="weaponCatalogSortHelp">Unknown or variable Tech Levels remain last.</small>
+                            </div>
+                        </div>
                     </fieldset>
                     <div class="gear-catalog-launch-actions">
                         <button class="btn gear-locker-open" type="button" data-gear-locker-open="weapon" disabled>
@@ -823,6 +844,27 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="gear-catalog-compact-grid">
+                            <div class="gear-catalog-compact-control">
+                                <label for="armorCatalogSkill">Required skill</label>
+                                <select class="form-control" id="armorCatalogSkill" data-gear-filter-skill
+                                    aria-describedby="armorCatalogSkillHelp">
+                                    <option value="any">Any skill requirement</option>
+                                    <option value="unresolved_or_not_recorded">Unresolved or not recorded</option>
+                                </select>
+                                <small id="armorCatalogSkillHelp">Only structured armor requirements appear here.</small>
+                            </div>
+                            <div class="gear-catalog-compact-control">
+                                <label for="armorCatalogSort">Sort results</label>
+                                <select class="form-control" id="armorCatalogSort" data-gear-sort
+                                    aria-describedby="armorCatalogSortHelp">
+                                    <option value="name">Name (A–Z)</option>
+                                    <option value="tech-asc">Tech Level (low to high)</option>
+                                    <option value="tech-desc">Tech Level (high to low)</option>
+                                </select>
+                                <small id="armorCatalogSortHelp">Unknown or variable Tech Levels remain last.</small>
+                            </div>
+                        </div>
                     </fieldset>
                     <div class="gear-catalog-launch-actions">
                         <button class="btn gear-locker-open" type="button" data-gear-locker-open="armour" disabled>
@@ -933,6 +975,27 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="gear-catalog-compact-grid">
+                            <div class="gear-catalog-compact-control">
+                                <label for="augmentCatalogSkill">Required skill</label>
+                                <select class="form-control" id="augmentCatalogSkill" data-gear-filter-skill
+                                    aria-describedby="augmentCatalogSkillHelp">
+                                    <option value="any">Any skill requirement</option>
+                                    <option value="unresolved_or_not_recorded">Unresolved or not recorded</option>
+                                </select>
+                                <small id="augmentCatalogSkillHelp">Only structured augment requirements appear here.</small>
+                            </div>
+                            <div class="gear-catalog-compact-control">
+                                <label for="augmentCatalogSort">Sort results</label>
+                                <select class="form-control" id="augmentCatalogSort" data-gear-sort
+                                    aria-describedby="augmentCatalogSortHelp">
+                                    <option value="name">Name (A–Z)</option>
+                                    <option value="tech-asc">Tech Level (low to high)</option>
+                                    <option value="tech-desc">Tech Level (high to low)</option>
+                                </select>
+                                <small id="augmentCatalogSortHelp">Unknown or variable Tech Levels remain last.</small>
+                            </div>
+                        </div>
                     </fieldset>
                     <div class="gear-catalog-launch-actions">
                         <button class="btn gear-locker-open" type="button" data-gear-locker-open="augment" disabled>
@@ -1040,6 +1103,27 @@
                                     data-gear-legal-category-help aria-live="polite">
                                     Any legal category leaves equipment classifications unfiltered. The filter matches exact source-recorded category values. Categories describe access controls, not guaranteed availability on a particular world.
                                 </div>
+                            </div>
+                        </div>
+                        <div class="gear-catalog-compact-grid">
+                            <div class="gear-catalog-compact-control">
+                                <label for="equipmentCatalogSkill">Required skill</label>
+                                <select class="form-control" id="equipmentCatalogSkill" data-gear-filter-skill
+                                    aria-describedby="equipmentCatalogSkillHelp">
+                                    <option value="any">Any skill requirement</option>
+                                    <option value="unresolved_or_not_recorded">Unresolved or not recorded</option>
+                                </select>
+                                <small id="equipmentCatalogSkillHelp">Conditional alternatives match either structured skill.</small>
+                            </div>
+                            <div class="gear-catalog-compact-control">
+                                <label for="equipmentCatalogSort">Sort results</label>
+                                <select class="form-control" id="equipmentCatalogSort" data-gear-sort
+                                    aria-describedby="equipmentCatalogSortHelp">
+                                    <option value="name">Name (A–Z)</option>
+                                    <option value="tech-asc">Tech Level (low to high)</option>
+                                    <option value="tech-desc">Tech Level (high to low)</option>
+                                </select>
+                                <small id="equipmentCatalogSortHelp">Unknown or variable Tech Levels remain last.</small>
                             </div>
                         </div>
                     </fieldset>
