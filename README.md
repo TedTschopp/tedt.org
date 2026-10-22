@@ -401,10 +401,17 @@ Blocking checks in the quality gate:
 
 Advisory checks currently recorded in CI artifacts and summaries, but not used as blocking gates:
 
-- Markdown lint
+- Markdown lint (`npm run lint:md`; advisory until the existing Markdown backlog is remediated)
 - JavaScript syntax lint
 - CSS overrides stylelint
 - HTML Proofer internal link and HTML validation (`SKIP_EXTERNAL=1`)
+
+Markdown lint scans `**/*.{md,markdown}`, including dot-directory sources.
+Exclusions in `.markdownlint-cli2.jsonc` keep dependencies, virtual environments,
+build output, generated reports, browser artifacts, and scratch directories out
+of the scan. The command returns nonzero for lint violations; CI records them
+in Allure without blocking deployment. Promote this check to blocking after
+the existing backlog is remediated.
 
 Informational quality output that still runs in the fast gate and CI:
 

@@ -89,6 +89,7 @@ jobs:
 
       - name: Markdown lint
         id: mdlint
+        # Advisory until the existing Markdown backlog is remediated.
         continue-on-error: true
         run: |
           set -euo pipefail

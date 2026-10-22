@@ -1,0 +1,20 @@
+{
+  "ignores": [
+    "**/node_modules/**",
+    "**/vendor/**",
+    "**/.venv/**",
+    "**/venv/**",
+    "**/env/**",
+    "**/myenv/**",
+    "**/dist/**",
+    ".git/**",
+    ".jekyll-cache/**",
+    ".playwright-mcp/**",
+    ".tmp/**",
+    "_site/**",
+    "Logs/**",
+    "reports/**",
+    "test-results/**",
+    "tmp/**"
+  ]
+}
