@@ -5730,5 +5730,34 @@
       "https://tschopp.net/users/Ted/statuses/117426562292648666"
     ],
     "lastTootTimestamp": 1791787144456
+  },
+  "https://tedt.org/The-Business-Transformation-Has-Become-a-Software-Process/": {
+    "id": "/The-Business-Transformation-Has-Become-a-Software-Process/",
+    "title": "The Business Transformation has become a Software Process",
+    "summary": "Business transformation depends on the ability to keep changing software. AI changes the development process, but maintenance, testing, and team learning remain continuing responsibilities.",
+    "content_text": "Business transformation depends on the ability to keep changing software. AI changes the development process, but maintenance, testing, and team learning remain continuing responsibilities. https://tedt.org/The-Business-Transformation-Has-Become-a-Software-Process/",
+    "url": "https://tedt.org/The-Business-Transformation-Has-Become-a-Software-Process/",
+    "image": "https://tedt.org/img/2026-10/Software-Foundation.webp",
+    "tags": [
+      "business transformation",
+      "software development",
+      "AI coding agents",
+      "software maintenance",
+      "specification-driven development",
+      "software testing",
+      "engineering leadership",
+      "team learning"
+    ],
+    "date_published": "2026-10-17T00:00:00-07:00",
+    "date_modified": "2026-10-17T00:00:00-07:00",
+    "author": {
+      "avatar": "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g",
+      "name": "Ted Tschopp",
+      "url": "https://tedt.org/"
+    },
+    "toots": [
+      "https://tschopp.net/users/Ted/statuses/117457611158583035"
+    ],
+    "lastTootTimestamp": 1792260912554
   }
 }
