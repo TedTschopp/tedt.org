@@ -14,6 +14,7 @@
 	import resolveConfig from 'tailwindcss/resolveConfig';
 	import tailwindConfig from '../../tailwind.config';
 	import { gradientMap } from '~/constants/gradient';
+	import { valueToOutputRibbon } from '~/lib/ribbon.js';
 	import {
 		ATTENTION_HEAD_1,
 		ATTENTION_HEAD_BACK,
@@ -269,16 +270,9 @@
 			opacity: ATTENTION_OUT,
 			curve: curveFactor * 30,
 			pathGenerator: (source, target, curve) => {
-				const scrollTop = -(document.querySelector('#inside-ai-app .main-section')?.getBoundingClientRect().top || 0);
-				const scrollLeft = -(document.querySelector('#inside-ai-app .main-section')?.getBoundingClientRect().left || 0);
+				const origin = document.querySelector('#inside-ai-app .main-section')?.getBoundingClientRect() || { left: 0, top: 0 };
 				const { curveOffset } = pathAdjustor(source, target, curve);
-				return `
-        M ${source.right + scrollLeft},${source.top + scrollTop}
-        C ${target.left - curveOffset},${source.top + scrollTop} ${target.left + scrollLeft - curveOffset},${source.top + scrollTop} ${target.left + scrollLeft},${target.top + scrollTop}
-        L ${target.left + scrollLeft},${target.bottom + scrollTop}
-        C ${target.left + scrollLeft - curveOffset},${source.bottom + scrollTop} ${target.left - curveOffset},${source.bottom + scrollTop} ${source.right + scrollLeft},${source.bottom + scrollTop}
-        Z
-    `;
+				return valueToOutputRibbon(source, target, origin, curveOffset);
 			},
 			onMouseOver: () => {
 				d3.select('path.value-to-out').transition().duration(window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 0 : 100).style('opacity', 1);
