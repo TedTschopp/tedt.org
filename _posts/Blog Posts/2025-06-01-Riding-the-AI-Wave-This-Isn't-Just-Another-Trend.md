@@ -1,17 +1,12 @@
 ---
 layout: post
 title: Riding the AI Wave
-subtitle: This Isn't Just Another Trend
-quote: "As we guide these technologies into the future, may we do so with the same\
-  \ mix of curiosity, competence, and care that Pieter showed\u2014not just moving\
-  \ fast, but moving wisely."
-excerpt: 'Mary Meeker''s latest report on AI trends makes one thing clear: we are
-  witnessing one of the fastest and most consequential technology shifts in history,
-  transforming how people work, communicate, and make decisions at unprecedented speed.'
+subtitle: "Read the Signs, Then Test the Route"
+quote: "The value of a new tool becomes clearer when we check where it actually takes us."
+excerpt: "Mary Meeker's May 2025 AI report shows rapid adoption and rising capital spending. Reading its chart periods and footnotes carefully turns the headlines into a better starting point for workplace experiments."
 source: Original Content
 source-url: ''
-call-to-action: "Share how you're navigating AI adoption in your workplace\u2014are\
-  \ you taking the high-performance route or the exploratory Sunday drive?"
+call-to-action: "Choose one recurring task and compare the complete work, including review and correction, before expanding AI assistance."
 date: 2025-06-01
 update: null
 author:
@@ -19,20 +14,12 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- "ChatGPT reached 800 million weekly users in just 17 months\u20148x growth since\
-  \ inception"
-- Tech giants increased AI infrastructure spending by 63% year-over-year
-- AI adoption is surpassing even the internet boom of the late '90s and early 2000s
-- AI agents are streamlining complex tasks like document summarization and customer
-  service
-- Workers can approach AI as either a high-performance tool or exploratory learning
-  experience
-description: Exploring Mary Meeker's latest AI trends report through the lens of a
-  father-son camping trip, examining how unprecedented AI adoption rates are transforming
-  workplaces and what it means for employees across all industries.
-seo-description: Mary Meeker's AI trends report shows unprecedented adoption rates.
-  Learn how AI is transforming workplaces faster than the internet boom and practical
-  approaches for navigating this shift.
+- "BOND's 800-million weekly-user figure is an April 2025 estimate, with a stated source and comparison period."
+- "The report's 63% capital-spending increase compares 2023 with 2024 and includes only AWS for Amazon."
+- "Adoption and infrastructure spending do not measure employee productivity."
+- "A small workplace trial should count quality, correction effort, and time to a usable result."
+description: "A father-son camping reflection connects Mary Meeker's May 2025 AI report with careful reading of adoption data and a proposed workplace experiment."
+seo-description: "Read the dates and footnotes behind Mary Meeker's May 2025 AI adoption and capital-spending charts, then test one useful workplace task."
 categories:
 - Artificial Intelligence
 - Opinion
@@ -75,18 +62,41 @@ mastodon-post-id: 115006701859534200
 image_width: 1536
 image_height: 1024
 ---
-Bottom Line Up Front: Mary Meeker’s latest report on AI trends makes one thing clear: we are witnessing one of the fastest and most consequential technology shifts in history. AI is no longer a futuristic concept or mere hype—it’s a present reality being adopted at unprecedented speed, transforming how people work, communicate, and make decisions. This post reflects on how these trends, backed by significant investment and rapid adoption, intersect with the everyday experiences of employees across industries, viewed through the lens of a weekend campout with my son. Whether you’re navigating complexity intentionally or exploring new tools with curiosity, AI’s trajectory will impact your role, your workflow, and your future.
- 
-Last weekend, Pieter and I embarked on the annual father-son campout with our church. At nearly twelve years old, Pieter eagerly set up the tent and organized our campsite before running off to join the other kids exploring the creek. Some were chasing toads, others carefully scooping up tadpoles in small nets, delighting in each discovery. The next morning, we planned to head to the lake for fishing and water sports, but first, we needed to figure out how to get to the marina from the campsite. The directions initially led us astray, guiding us to a beachside parking lot meant for swimmers, not boaters. Calm and focused, Pieter navigated us with precision, reading the signs and adjusting as needed until we arrived at the marina and boat launch—well before anyone else. His quiet confidence and situational awareness reminded me of the thoughtful problem-solving and adaptability today’s workforce needs to navigate complex situations and plan ahead.
- 
-Reflecting later in the quiet solitude of our tent, I realized how aptly this mirrors the explosive growth we are witnessing in artificial intelligence. Just as Pieter charted the right path to the marina by connecting scattered pieces of information, today’s breakthroughs in AI—each impressive on its own—are coming together to form a coherent, accelerating force that is reshaping our shared future.
- 
-This week, Mary Meeker is a renowned venture capitalist and former Wall Street analyst, often called the "Queen of the Internet" for her decades of tech foresight. This week, she published her latest report on current AI trends, highlighting an unprecedented pace of adoption and investment. According to the findings, AI's expansion is surpassing even the internet boom of the late '90s and early 2000s, driven by significant global connectivity, extensive datasets, and groundbreaking technologies such as OpenAI’s ChatGPT.
- 
-The report reveals compelling statistics: ChatGPT amassed 800 million weekly active users within just 17 months, marking an astonishing eight-fold increase since its inception. Additionally, tech giants—Apple, NVIDIA, Microsoft, Alphabet, Amazon, and Meta—have ramped up their capital expenditure by an astounding 63% year-over-year, underscoring their substantial commitment to the infrastructure needed to support AI’s rapid growth. Clearly, these rapid adoption figures signal more than incremental technological advances—they highlight transformative shifts enterprises must strategically navigate.
- 
-Beyond impressive figures lies the profound impact AI holds for our daily lives, workplaces, and society at large. We are witnessing the rise of intelligent, autonomous agents capable of streamlining complex, mundane tasks—a shift comparable to the revolutionary transition from static websites to dynamic web applications decades ago. Consider AI-powered document summarizers that help employees quickly digest long reports or customer feedback, allowing them to focus more time on analysis and action rather than sorting through information. In many ways, these agents are like Pieter on our campout—quietly analyzing the environment, piecing together incomplete directions, and guiding us where we need to go. Today, AI helps employees draft communications, schedule meetings, respond to customer inquiries, and generate insights from large data sets. It’s helping us move forward with clarity, even when the path isn’t fully marked.
- 
-As employees navigating this transformative era, we all have a role to play in understanding and adapting to the changing nature of work. Whether you're in operations, customer service, finance, or IT, the rise of AI presents new tools, new expectations, and new opportunities to create value. Our challenge isn't just to adopt AI technologies—but to do so in a way that enhances our work, builds trust, and contributes to a thoughtful, human-centered workplace.
- 
-Driving home from the campout, Pieter sat in the passenger seat, laser-focused on spotting every sports car we passed—calling out Porsches, Mustangs, and the occasional Corvette like a seasoned car enthusiast. As we passed each one, he wasn’t just admiring their style—he was curious about how they handled the road, how fast they could go, and what made each of them unique. It reminded me of that moment earlier in the weekend, when he had calmly led us down the winding dirt road to the marina. He wasn’t just following directions—he was reading the terrain, noticing the signs others missed, and navigating with confidence and clarity. That same curiosity and initiative—asking questions, exploring details, and making informed decisions—are just as essential when we experiment with new technologies in our workplaces. Isn’t that what we’re trying to do with AI? We’re navigating unfamiliar terrain. We’re building a path with partial information. And we’re doing our best to get there ahead of the curve. Some people will use AI as a high-performance tool—to reach a destination faster, with more precision. Others will treat it more like a Sunday drive—exploring what’s possible, tinkering, learning, and enjoying the ride, especially those less steeped in technical roles but eager to experiment and adapt. Both paths have value, and both will shape the road ahead—and organizations that support both approaches will be best positioned to thrive. As we guide these technologies into the future, may we do so with the same mix of curiosity, competence, and care that Pieter showed—not just moving fast, but moving wisely.
+
+Last weekend, Pieter and I went on the annual father-son campout with our church. At nearly twelve, he set up the tent and organized our campsite before joining the other kids at the creek. There were toads to chase and tadpoles to inspect.
+
+The next morning, we needed to get from the campsite to the marina. The directions first took us to a beachside parking lot for swimmers. Pieter read the signs, adjusted the route, and got us to the boat launch well before anyone else.
+
+The useful part was his attention to what the directions meant on the ground. A plausible route still needed checking.
+
+That is a good way to approach [Mary Meeker and BOND's May 2025 report, Trends—Artificial Intelligence](https://www.bondcap.com/reports/tai/). It brings together a substantial collection of adoption, investment, and technical indicators. Meeker's argument is that AI is spreading at extraordinary speed. For someone deciding how to use it at work, the charts are a starting point for questions about a particular task.
+
+## Read the Dates Under the Headline
+
+The report's [printed page 55](https://www.bondcap.com/report/pdf/Trends_Artificial_Intelligence.pdf#page=56) charts roughly 100 million ChatGPT weekly active users in November 2023 against an estimated 800 million in April 2025. The eightfold, 17-month comparison is between those points, not 17 months from ChatGPT's launch. The footnote identifies the April estimate as based on Sam Altman's April 11 TED disclosure. It should be described as the report's estimate, rather than an independently audited count.
+
+On [printed page 101](https://www.bondcap.com/report/pdf/Trends_Artificial_Intelligence.pdf#page=102), BOND reports a 63% increase in selected technology companies' capital spending from 2023 to 2024. The group is Apple, NVIDIA, Microsoft, Alphabet, Amazon, and Meta. Only AWS is included for Amazon, using an estimate described in the footnote. This is capital spending for the selected businesses, not a measurement of expenditure exclusively on AI.
+
+Those distinctions matter. A weekly user count, an investment total, and an employee's completed work measure different things. None can stand in for the others.
+
+## The Workplace Question Is Smaller
+
+The report is an investor's synthesis of company disclosures and other data sources. It can help us see where suppliers and users are placing attention. It cannot tell a utility planner whether an assistant will preserve the right date in a maintenance brief, or whether a customer-service team will spend more time correcting drafts than it saves producing them.
+
+That brings me back to [What AI in 2024 Means for Us in 2025](https://tedt.org/What-AI-in-2024-Means-for-Us-in-2025/): the practical step is a task with an owner and an answer someone can check. A document summarizer is a useful candidate to examine. Calling it an autonomous agent does not establish what it can do or whether it has authority to do anything beyond drafting.
+
+Suppose a team wants help preparing an internal project update. Choose approved source notes and agree on the facts the update must preserve. Have colleagues prepare comparable updates with their existing method and with AI assistance. Record preparation, drafting, review, and correction time. Have a reviewer compare each result with its notes, including dates, unresolved issues, and commitments.
+
+For a small planning example, suppose the existing method takes 30 minutes and the assisted method takes 10 minutes to draft plus 25 to review and correct. Assistance has added five minutes. If review takes five minutes instead, the complete task takes 15 minutes. These are illustrative assumptions, not trial results. They show why the time to the first draft is an incomplete measure.
+
+Before expanding the method, require acceptable factual quality and a reduction in total effort on the cases tried. Include an awkward case with conflicting notes. A method that works only when the source is already perfectly organized may have a narrower use than the first demonstration suggests.
+
+This is the spirit of [The 1% Catalyst](https://tedt.org/The-1-Catalyst-Small-Changes-Big-Impact/): make a small change concrete enough to examine. A limited trial can teach us what to adjust without claiming that its result represents an entire workforce.
+
+## Curiosity Still Has a Job
+
+On the drive home, Pieter watched for sports cars, calling out Porsches, Mustangs, and the occasional Corvette. His curiosity about what made each one different belonged alongside the care he had taken finding the marina.
+
+People will approach AI with different intentions, too. Some have a specific task they want to complete faster. Others need room to explore before they can name a useful task. A team can support both, then make space to compare what people learned.
+
+The report gives us plenty of reasons to look. Pieter's example gives me a useful way to proceed: read the signs, check the route, and notice whether we reached the place we meant to go.
