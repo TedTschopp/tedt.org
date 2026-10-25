@@ -114,6 +114,44 @@ class IdentityAndMigrationTests(unittest.TestCase):
         m.prepare_ledger(manifest(item()), result, {}, NOW)
         self.assertEqual(result['entries']['https://tedt.org/first/']['source_paths'], [item()['source_path']])
 
+    def test_reviewed_alias_resolves_an_existing_unmatched_key(self):
+        old_url = 'https://tedt.org/older-title/'
+        legacy = {old_url: {'toots': ['https://tschopp.net/@Ted/' + MID]}}
+        result = ledger(legacy=legacy)
+        self.assertIn(old_url, result['unmatched_legacy'])
+        reviewed = item(aliases=['https://tedt.org/first/', old_url])
+        m.prepare_ledger(manifest(reviewed), result, legacy, NOW)
+        entry = result['entries']['https://tedt.org/first/']
+        self.assertNotIn(old_url, result['unmatched_legacy'])
+        self.assertEqual([row['id'] for row in entry['history']], [MID])
+        self.assertEqual((entry['state'], entry['queue_kind'], entry['generation']), ('pending', 'archive', 0))
+        self.assertEqual(len(result['entries']), 1)
+
+    def test_reviewed_alias_never_selects_between_ambiguous_targets(self):
+        old_url = 'https://tedt.org/shared-old-title/'
+        legacy = {old_url: {'toots': ['https://tschopp.net/@Ted/' + MID]}}
+        second = item('https://tedt.org/second/', source='_posts/AI/2026-01-02-second.md', aliases=['https://tedt.org/second/'])
+        result = ledger(item(), second, legacy=legacy)
+        first_reviewed = item(aliases=['https://tedt.org/first/', old_url])
+        second['aliases'].append(old_url)
+        m.prepare_ledger(manifest(first_reviewed, second), result, legacy, NOW)
+        self.assertIn(old_url, result['unmatched_legacy'])
+        self.assertTrue(all(not row['history'] for row in result['entries'].values()))
+
+    def test_reviewed_alias_preserves_a_published_receipt_and_generation(self):
+        old_url = 'https://tedt.org/older-title/'
+        legacy = {old_url: {'toots': ['https://tschopp.net/@Ted/' + MID]}}
+        result = ledger(legacy=legacy)
+        entry = result['entries']['https://tedt.org/first/']
+        current = {'id': '200', 'url': 'https://tschopp.net/@Ted/200', 'created_at': NOW}
+        entry.update(state='published', status=current, generation=2)
+        result['receipts'] = [{'operation': 'saved', 'kind': 'archive', 'canonical_url': entry['canonical_url'], **current}]
+        before = copy.deepcopy(result['receipts'])
+        m.prepare_ledger(manifest(item(aliases=[entry['canonical_url'], old_url])), result, legacy, NOW)
+        self.assertEqual(entry['status'], current)
+        self.assertEqual((entry['state'], entry['generation']), ('published', 2))
+        self.assertEqual(result['receipts'], before)
+
     def test_unknown_schema_and_bad_source_fail_closed(self):
         with self.assertRaises(m.SyncError):
             m.prepare_ledger(manifest(), {'version': 99, 'entries': {}}, {}, NOW)

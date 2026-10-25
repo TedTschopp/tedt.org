@@ -1,0 +1,172 @@
+{
+  "version": 1,
+  "reviewed_at": "2026-10-25T21:02:44Z",
+  "records": {
+    "/Critique-Content/": {
+      "disposition": "mapped",
+      "status_ids": [
+        "115000110261317161",
+        "115003055074249913"
+      ],
+      "evidence": "Status 115003055074249913 matches current front matter. Git records a 99-percent source rename from Critique-Content to Academic-Critique-Content; the current prompt series also retains the old filename.",
+      "canonical_url": "https://ai.tedt.org/prompts/academic-critique-content/",
+      "source_path": "_posts/prompts/2025-08-01-Academic-Critique-Content.md",
+      "commit": "f1333cff0"
+    },
+    "/Project Stargate Unveiled - OpenAI’s $500 Billion Bet on an AI-Driven Future with a Data Center of Unprecedented Scale/": {
+      "disposition": "mapped",
+      "status_ids": [
+        "115017677575205659"
+      ],
+      "evidence": "The exact status ID matches the current post front matter. The long title was used as a cache key.",
+      "canonical_url": "https://tedt.org/Project-Stargate-Unveiled/",
+      "source_path": "_posts/Blog Posts/2025-01-26-Project-Stargate-Unveiled.md"
+    },
+    "/Swiss-Folklore/:title:output_ext/": {
+      "disposition": "ambiguous",
+      "status_ids": [
+        "110924710196764929",
+        "110925700403906782",
+        "111116965359149248",
+        "111404502000070430",
+        "111443917454528953"
+      ],
+      "evidence": "A literal permalink template collapsed multiple stories into one key. Its five status IDs appear across nine current story entries. All five statuses return 404, so their original content cannot identify unique destinations."
+    },
+    "https://tedt.org/2025-10-20-From-Guesswork-to-Geometry-How-We-Measured-the-Mind/": {
+      "disposition": "mapped",
+      "status_ids": [
+        "115407379514139029"
+      ],
+      "evidence": "Git records the October 20 source being renamed to October 19, with the same article slug.",
+      "canonical_url": "https://tedt.org/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/",
+      "source_path": "_posts/AI/2025-10-19-From-Guesswork-to-Geometry-How-We-Measured-the-Mind.md",
+      "commit": "6644a9969"
+    },
+    "https://tedt.org/2025-11-13-The-Intelligence-Inversion/": {
+      "disposition": "mapped",
+      "status_ids": [
+        "115542583095982804"
+      ],
+      "evidence": "Git records the source rename to Winning-the-Intelligence-Inversion.",
+      "canonical_url": "https://tedt.org/Winning-the-Intelligence-Inversion/",
+      "source_path": "_posts/AI/2025-11-13-Winning-the-Intelligence-Inversion.md",
+      "commit": "17af111f3"
+    },
+    "https://tedt.org/2026-01-16-The-Death-of-Software/": {
+      "disposition": "mapped",
+      "status_ids": [
+        "115907712873941479"
+      ],
+      "evidence": "Git records the source rename adding Reprint to the filename.",
+      "canonical_url": "https://tedt.org/Reprint-The-Death-of-Software/",
+      "source_path": "_posts/Reprints/2026-01-16-Reprint-The-Death-of-Software.md",
+      "commit": "f8058a2cd"
+    },
+    "https://tedt.org/Image-Tools-Design-and-Security/": {
+      "disposition": "retired",
+      "status_ids": [
+        "116059322740820027"
+      ],
+      "evidence": "The source post was explicitly deleted. No current equivalent was established; retain its history without creating a new publication.",
+      "source_path": "_posts/Blog Posts/2026-02-12-Image-Tools-Design-and-Security.md",
+      "commit": "459a7dd6d"
+    },
+    "https://tedt.org/The-Death-of-Software/": {
+      "disposition": "mapped",
+      "status_ids": [
+        "115909043216153074"
+      ],
+      "evidence": "This is the undated title-slug form of the same source renamed to Reprint-The-Death-of-Software.",
+      "canonical_url": "https://tedt.org/Reprint-The-Death-of-Software/",
+      "source_path": "_posts/Reprints/2026-01-16-Reprint-The-Death-of-Software.md",
+      "commit": "f8058a2cd"
+    },
+    "https://tedt.org/The-Harness-Around-the-Voice/": {
+      "disposition": "mapped",
+      "status_ids": [
+        "116270392547855145"
+      ],
+      "evidence": "Git records a 100-percent source rename to Why-AI-Needs-a-Harness.",
+      "canonical_url": "https://tedt.org/Why-AI-Needs-a-Harness/",
+      "source_path": "_posts/AI/2026-03-21-Why-AI-Needs-a-Harness.md",
+      "commit": "95357e86d"
+    },
+    "https://tedt.org/TheOneRing-com-Legacy-Archive/": {
+      "disposition": "retired",
+      "status_ids": [
+        "116868054336649343"
+      ],
+      "evidence": "The introductory post was explicitly deleted. The current category landing page has the same archive name and description. The Mastodon status remains public; forward its old website link to that landing page without recreating or reposting the deleted article.",
+      "source_path": "_posts/Blog Posts/2026-07-05-TheOneRing-com-Legacy-Archive.md",
+      "commit": "cebefa838",
+      "replacement_url": "https://tedt.org/TheOneRing-LegacyArchive/"
+    }
+  },
+  "status_checks": [
+    {
+      "id": "110924710196764929",
+      "http_status": 404
+    },
+    {
+      "id": "110925700403906782",
+      "http_status": 404
+    },
+    {
+      "id": "111116965359149248",
+      "http_status": 404
+    },
+    {
+      "id": "111404502000070430",
+      "http_status": 404
+    },
+    {
+      "id": "111443917454528953",
+      "http_status": 404
+    },
+    {
+      "id": "115000110261317161",
+      "http_status": 404
+    },
+    {
+      "id": "115003055074249913",
+      "http_status": 404
+    },
+    {
+      "id": "115017677575205659",
+      "http_status": 404
+    },
+    {
+      "id": "115407379514139029",
+      "http_status": 404
+    },
+    {
+      "id": "115542583095982804",
+      "http_status": 404
+    },
+    {
+      "id": "115907712873941479",
+      "http_status": 404
+    },
+    {
+      "id": "115909043216153074",
+      "http_status": 404
+    },
+    {
+      "id": "116059322740820027",
+      "http_status": 404
+    },
+    {
+      "id": "116270392547855145",
+      "http_status": 404
+    },
+    {
+      "id": "116868054336649343",
+      "http_status": 200,
+      "url": "https://tschopp.net/@Ted/116868054336649343",
+      "account_id": "109784960088344792",
+      "visibility": "public",
+      "created_at": "2026-07-05T15:23:09.266Z"
+    }
+  ]
+}

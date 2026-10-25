@@ -312,6 +312,23 @@ def add_history(entry, reference):
         entry["history"].append(reference)
 
 
+def legacy_targets(old_key, old, alias_index):
+    if not isinstance(old, dict):
+        raise SyncError("Unexpected legacy cache entry")
+    keys = set()
+    for alias in [old_key, old.get("url"), old.get("id")]:
+        if not isinstance(alias, str):
+            continue
+        try:
+            normalized = web_url(parse.urljoin("https://tedt.org/", alias))
+            keys.update(alias_index.get(normalized, set()))
+            exposed_markdown = re.sub(r"\.md/?$", "/", normalized)
+            keys.update(alias_index.get(exposed_markdown, set()))
+        except (ValueError, SyncError):
+            pass
+    return keys
+
+
 def prepare_ledger(manifest, ledger, legacy, now):
     if manifest.get("version") != 1 or not isinstance(manifest.get("items"), list):
         raise SyncError("Unsupported publication manifest")
@@ -372,19 +389,7 @@ def prepare_ledger(manifest, ledger, legacy, now):
                             if len(alias_index.get(alias, {key})) == 1 or alias == key]
     if not ledger.get("legacy_imported_at"):
         for old_key, old in legacy.items():
-            if not isinstance(old, dict):
-                raise SyncError("Unexpected legacy cache entry")
-            keys = set()
-            for alias in [old_key, old.get("url"), old.get("id")]:
-                if not isinstance(alias, str):
-                    continue
-                try:
-                    normalized = web_url(parse.urljoin("https://tedt.org/", alias))
-                    keys.update(alias_index.get(normalized, set()))
-                    exposed_markdown = re.sub(r"\.md/?$", "/", normalized)
-                    keys.update(alias_index.get(exposed_markdown, set()))
-                except (ValueError, SyncError):
-                    pass
+            keys = legacy_targets(old_key, old, alias_index)
             references = [status_reference(value, manifest["instance"], manifest["username"]) for value in old.get("toots", [])]
             if len(keys) == 1:
                 entry = ledger["entries"][keys.pop()]
@@ -393,6 +398,15 @@ def prepare_ledger(manifest, ledger, legacy, now):
             else:
                 ledger["unmatched_legacy"][old_key] = [value for value in references if value]
         ledger["legacy_imported_at"] = now
+    # A reviewed alias can resolve a previously imported cache key. Retry only
+    # exact, unambiguous matches; never reset receipts, generation, or queue kind.
+    for old_key, references in list(ledger["unmatched_legacy"].items()):
+        keys = legacy_targets(old_key, legacy.get(old_key, {}), alias_index)
+        if len(keys) == 1:
+            entry = ledger["entries"][keys.pop()]
+            for reference in references:
+                add_history(entry, reference)
+            del ledger["unmatched_legacy"][old_key]
     if initial:
         ledger["initialized_at"] = now
     return ledger
