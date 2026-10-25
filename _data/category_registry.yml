@@ -789,7 +789,7 @@ home:
     titleHoverColorLight: "#f43f5e"
     titleHoverColorDark: "#f472b6"
     titleWeight: 500
-  category_home_page: /category/home/
+  category_home_page: /category/Home/
   hide_from_carousel: true
   hide_from_category_list: true
   inline_style: "vertical-align: middle;"
@@ -831,7 +831,7 @@ draft:
     titleHoverColorLight: "#94a3b8"
     titleHoverColorDark: "#64748b"
     titleWeight: 500
-  category_home_page: /category/draft/
+  category_home_page: /category/Draft/
   hide_from_carousel: true
   hide_from_category_list: true
   inline_style: "vertical-align: middle;"
