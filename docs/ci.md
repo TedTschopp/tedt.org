@@ -38,13 +38,14 @@ Blocking checks:
 - `make feed_diff`
 - `make tools_css_sync_check`
 - `npm run test:a11y:allure`
-- `bundle exec htmlproofer ./_site --root-dir ./_site --check-html --allow-missing-href --disable-external`
+- `make html_proofer_check` (real valid/broken HTMLProofer fixtures)
 
 Advisory checks:
 
 - Markdown lint
 - JavaScript syntax lint
 - CSS overrides stylelint
+- HTMLProofer scan (`make SKIP_EXTERNAL=1 proofer`); findings are retained in `htmlproofer-log` and the job summary. The command itself remains strict and returns nonzero for findings.
 
 Deployment behavior:
 
@@ -59,7 +60,8 @@ Environment / Permissions:
 Local parity:
 
 - `make qa` for the fast structural/content gate
-- `make quality_gate` for the full local gate (`make qa` + a11y + HTMLProofer)
+- `make quality_gate` for `make qa`, accessibility checks, and the advisory HTMLProofer scan
+- `make SKIP_EXTERNAL=1 proofer` for the strict scan; historical HTTP URLs are still reported even though external network requests are disabled
 - `ruby tests/diff_feeds.rb --refresh` when intentionally updating feed baselines after feed format or baseline-policy changes
 
 Informational output emitted during the gate:
