@@ -167,6 +167,21 @@ module IndieWebTests
     end
   end
 
+  def test_delivery_prefers_api_acknowledgements_over_browser_redirects
+    http = FakeHTTP.new do |_, options|
+      if options[:method] == 'POST'
+        accepted_types = options.fetch(:headers, {}).fetch('Accept', 'text/html')
+        accepted_types.include?('text/html') ? response('', { 'location' => ['/status'] }, 303) : response('', {}, 201)
+      else
+        response('', { 'link' => ['</receiver>; rel=webmention'] })
+      end
+    end
+    result = IndieWeb::Sender.new(http: http).deliver('https://tedt.org/Article/', 'https://example.org/post')
+    equal('accepted', result['state'])
+    equal(201, result['status'])
+    assert(!http.requests.first[1].key?(:headers), 'Discovery should retain its HTML preference')
+  end
+
   def test_invalid_receipt_location_does_not_turn_acceptance_into_a_retry
     http = FakeHTTP.new do |_, options|
       options[:method] == 'POST' ? response('', { 'location' => ['javascript:alert(1)'] }, 201) : response('', { 'link' => ['</receiver>; rel=webmention'] })
