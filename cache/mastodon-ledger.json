@@ -21739,12 +21739,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T17:56:46Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "9afbb518727f79e2e56426141b23d811778f6140b38e34670038a05ba963407f",
-        "kind": "new",
-        "started_at": "2026-10-25T22:29:43Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-25T22:29:53.777Z",
+          "id": "117503911118511086",
+          "url": "https://tschopp.net/@Ted/117503911118511086"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2026-10-25T07:00:00Z",
       "queue_kind": "new",
@@ -21752,8 +21753,14 @@
       "source_paths": [
         "_posts/Reprints/2026-10-25-Reprint-No-Silver-Bullet.md"
       ],
-      "state": "uncertain",
-      "title": "REPRINT: No Silver Bullet"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-25T22:29:53.777Z",
+        "id": "117503911118511086",
+        "url": "https://tschopp.net/@Ted/117503911118511086"
+      },
+      "title": "REPRINT: No Silver Bullet",
+      "verified_at": "2026-10-25T22:29:43Z"
     },
     "https://tedt.org/Reprint-The-Death-of-Software/": {
       "aliases": [
@@ -25650,7 +25657,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-25T17:27:57.732Z",
+  "last_publication_at": "2026-10-25T22:29:53.777Z",
   "last_reconciliation_at": "2026-10-25T22:29:43Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 65,
@@ -25662,6 +25669,14 @@
       "kind": "archive",
       "operation": "2f46e62bb0e9d2dbb53c706985f2e98d150823781150a517ee4de54a726a00d4",
       "url": "https://tschopp.net/@Ted/117502723865429564"
+    },
+    {
+      "canonical_url": "https://tedt.org/Reprint-No-Silver-Bullet/",
+      "created_at": "2026-10-25T22:29:53.777Z",
+      "id": "117503911118511086",
+      "kind": "new",
+      "operation": "9afbb518727f79e2e56426141b23d811778f6140b38e34670038a05ba963407f",
+      "url": "https://tschopp.net/@Ted/117503911118511086"
     }
   ],
   "run_count": 6,
