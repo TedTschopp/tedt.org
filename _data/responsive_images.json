@@ -7133,6 +7133,72 @@
       ],
       "width": 1672
     },
+    "/img/2026-10/No-Silver-Bullet.webp": {
+      "height": 941,
+      "source_sha256": "bb6662314b7737ceeb0c32b1fb8166c56164c5e66fb99a1ad4f51738a163c5fe",
+      "src": "/img/2026-10/No-Silver-Bullet.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-10/No-Silver-Bullet--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-10/No-Silver-Bullet--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-10/No-Silver-Bullet--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-10/No-Silver-Bullet--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-10/No-Silver-Bullet.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/2026-10/Two-Views-of-Programming.webp": {
+      "height": 941,
+      "source_sha256": "14e5d0833e3243b71f230be77a2b4259a1fa01d08241e0520579824167edcb15",
+      "src": "/img/2026-10/Two-Views-of-Programming.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-10/Two-Views-of-Programming--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-10/Two-Views-of-Programming--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-10/Two-Views-of-Programming--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-10/Two-Views-of-Programming--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-10/Two-Views-of-Programming.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/404.webp": {
       "height": 1216,
       "source_sha256": "2e780cc9206d48fc8cd998b19a3671764a39138f318498d10f3d8baacc656cf6",
