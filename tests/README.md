@@ -49,12 +49,28 @@ Tests user interaction flows:
 
 ### 5. Focused Playwright regression specs
 
+- `a11y/quick-study-painter.spec.ts`: painting media, PNG exports, keyboard comparison, playback cancellation, and mobile accessibility
 - `a11y/active-learning-ta.spec.ts`: representative prompt-details axe check
 - `a11y/footer-contrast.spec.ts`: footer contrast guardrail
 - `a11y/dropdown-smoke.spec.ts`: navbar dropdown smoke coverage
 - `a11y/navbar-regression.spec.ts`: navbar behavior across representative pages
 
 ## Running the Tests
+
+Run the Quick Study Painter numerical checks with `npm run test:painter` and its
+browser checks with `npx playwright test tests/a11y/quick-study-painter.spec.ts`.
+
+Its catalog image, `img/2026-10/quick-study-painter-preview.png`, is a Playwright
+screenshot of `tools/quick-study-painter.html`, consumed by
+`_tools/quick-study-painter.md`. To refresh it while a local Jekyll server runs
+on port 4000:
+
+```bash
+npx playwright screenshot --browser=chromium --viewport-size='1280,1150' \
+  --wait-for-selector='#save:not([disabled])' --full-page \
+  http://127.0.0.1:4000/tools/quick-study-painter.html \
+  img/2026-10/quick-study-painter-preview.png
+```
 
 ### Manual Testing
 

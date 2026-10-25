@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quick Study Painter — Ted's Tools</title>
+  <meta name="description" content="Paint photos in six styles: oil, watercolor, pointillist, gouache, soft pastel, and palette knife. Compare the original and download a textured PNG, entirely in your browser.">
+  <link rel="canonical" href="https://tedt.org/tools/quick-study-painter.html">
+  <link rel="icon" href="assets/logo/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="colors_and_type.css">
+  <style>
+    [hidden] { display: none !important; }
+    .tt-shell { max-width: var(--tool-max); margin: 0 auto; padding: var(--s-7) var(--safe-padding) var(--s-8); }
+    .tt-topbar, .tt-panel-head, .tt-actions, .tt-field-line { display: flex; align-items: center; justify-content: space-between; gap: var(--s-3); flex-wrap: wrap; }
+    .tt-topbar { margin-bottom: var(--s-7); font-size: var(--fs-small); }
+    .tt-topbar span { color: var(--fg-2); }
+    .t-tool-title { display: block; }
+    .tt-banner, .tt-about { padding: var(--s-4) var(--s-5); border: var(--bw-1) solid var(--ready-border); border-radius: var(--r-3); background: var(--ready-bg); color: var(--ready); }
+    .tt-banner { margin-bottom: var(--s-5); }
+    .tt-banner[data-state="success"] { color: var(--success); background: var(--success-bg); border-color: var(--success-border); }
+    .tt-banner[data-state="error"] { color: var(--error); background: var(--error-bg); border-color: var(--error-border); }
+    .tt-workspace { display: grid; grid-template-columns: minmax(0, 19rem) minmax(0, 1fr); gap: var(--s-5); align-items: start; }
+    .tt-panel { min-width: 0; background: var(--bg-card); border: var(--border); border-radius: var(--r-3); overflow: hidden; }
+    .tt-panel-head { padding: var(--s-4) var(--s-5); border-bottom: var(--border); }
+    .tt-panel-head h2 { margin: 0; font-size: var(--fs-h3); }
+    .tt-panel-head small { color: var(--fg-2); }
+    .tt-panel-body { padding: var(--s-5); }
+    .tt-field { margin-bottom: var(--s-6); }
+    .tt-field > label, legend { display: block; padding: 0; margin-bottom: var(--s-2); font-weight: var(--fw-semibold); }
+    fieldset { margin: 0; padding: 0; border: 0; min-width: 0; }
+    .tt-media { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-2); }
+    .tt-radio, .tt-check { display: flex; align-items: center; gap: var(--s-3); cursor: pointer; }
+    .tt-radio { padding: var(--s-3) var(--s-2); gap: var(--s-2); min-height: calc(var(--s-7) + var(--s-3)); border: var(--border); border-radius: var(--r-2); }
+    .tt-radio:has(input:checked) { background: var(--accent-tint); border-color: var(--accent); }
+    input[type="radio"], input[type="checkbox"], input[type="range"], progress { accent-color: var(--accent); }
+    input[type="radio"], input[type="checkbox"] { flex: 0 0 auto; margin: 0; inline-size: var(--s-4); block-size: var(--s-4); }
+    select, button { font: inherit; border-radius: var(--r-2); }
+    select { width: 100%; padding: var(--s-3); border: var(--border); background: var(--bg-inset); color: var(--fg); }
+    input[type="range"] { width: 100%; margin: var(--s-2) 0; min-height: var(--s-7); }
+    output, .tt-log, .tt-dimensions { font-family: var(--font-mono); font-size: var(--fs-small); font-variant-numeric: tabular-nums; }
+    button { padding: var(--s-3) var(--s-4); border: var(--bw-1) solid var(--copper); background: transparent; color: var(--copper); cursor: pointer; min-height: calc(var(--s-7) + var(--s-3)); }
+    button:hover { background: var(--copper-tint); }
+    button:active { transform: translateY(var(--bw-1)); }
+    button.primary { background: var(--accent); border-color: var(--accent); color: var(--fg-on-accent); }
+    button.primary:hover { background: var(--accent-active); border-color: var(--accent-active); }
+    button:disabled { opacity: .5; cursor: not-allowed; }
+    :is(button, select, input, summary, a):focus-visible { outline: var(--bw-2) solid var(--link); outline-offset: var(--s-1); }
+    .tt-actions { justify-content: flex-start; margin-bottom: var(--s-5); }
+    .tt-actions button { flex: 1 1 auto; }
+    .tt-wide { width: 100%; }
+    .tt-hint { color: var(--fg-2); font-size: var(--fs-small); margin: var(--s-2) 0 0; }
+    .tt-divider { border-top: var(--border-soft); padding-top: var(--s-5); }
+    .tt-stage { position: relative; padding: var(--s-5); min-height: calc(var(--s-9) * 4); background: var(--bg-inset); }
+    figure { margin: 0; }
+    .tt-frame { position: relative; width: fit-content; max-width: 100%; margin: 0 auto; line-height: 0; }
+    #paint { display: block; max-width: 100%; height: auto; }
+    .tt-layer, .tt-texture { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+    .tt-texture { mix-blend-mode: multiply; opacity: var(--tex-op, .42); background-repeat: repeat; }
+    figcaption { margin-top: var(--s-4); color: var(--fg-2); overflow-wrap: anywhere; }
+    figcaption strong { display: block; color: var(--fg); margin-bottom: var(--s-1); }
+    .tt-drop { position: absolute; inset: var(--s-2); display: grid; place-items: center; background: var(--bg-card); border: var(--bw-2) dashed var(--copper); border-radius: var(--r-3); color: var(--copper); font-size: var(--fs-h2); z-index: var(--z-raised); pointer-events: none; }
+    .tt-progress { padding: var(--s-4) var(--s-5); border-top: var(--border); }
+    progress { display: block; width: 100%; height: var(--s-2); margin-bottom: var(--s-3); }
+    .tt-log { margin: 0; color: var(--fg-2); }
+    .tt-about { margin-top: var(--s-6); font-size: var(--fs-small); }
+    .tt-about p { color: inherit; margin: 0; max-width: none; font-size: inherit; }
+    .tt-about p + p { margin-top: var(--s-2); }
+    .tt-about a { text-decoration: underline; text-underline-offset: .2em; }
+    details { margin-top: var(--s-6); padding: var(--s-5); border: var(--border); border-radius: var(--r-3); }
+    summary { cursor: pointer; font-weight: var(--fw-semibold); }
+    details ol { padding-left: var(--s-5); margin-bottom: 0; color: var(--fg-2); }
+    details li + li { margin-top: var(--s-3); }
+    .tt-sr-only { position: absolute; width: var(--bw-1); height: var(--bw-1); padding: 0; margin: calc(-1 * var(--bw-1)); overflow: hidden; clip-path: inset(50%); white-space: nowrap; border: 0; }
+    @media (max-width: 820px) {
+      .tt-shell { padding: var(--s-5) var(--s-4) var(--s-7); }
+      .tt-workspace { grid-template-columns: minmax(0, 1fr); }
+      .tt-media { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .tt-radio { align-items: flex-start; padding: var(--s-3) var(--s-2); gap: var(--s-2); }
+      .tt-stage { padding: var(--s-3); }
+      .tt-topbar { margin-bottom: var(--s-5); }
+    }
+    @media (max-width: 480px) { .tt-radio { flex-direction: column; } }
+    @media (prefers-reduced-motion: reduce) { button:active { transform: none; } }
+  </style>
+</head>
+<body>
+  <main class="tt-shell">
+    <nav class="tt-topbar" aria-label="Tool navigation">
+      <a href="./">← Ted's Tools</a>
+      <span>Browser canvas · Client-side only.</span>
+    </nav>
+    <header>
+      <h1 class="t-tool-title">Quick <mark>Study</mark> Painter</h1>
+      <p class="t-tagline">Turn a photo into a painting, from broad strokes to fine detail.</p>
+    </header>
+    <div id="status" class="tt-banner" role="status" aria-live="polite" aria-atomic="true">Preparing the sample.</div>
+    <noscript><p>This painting tool needs JavaScript. Enable it, then reload this page.</p></noscript>
+    <div class="tt-workspace">
+      <section class="tt-panel" aria-labelledby="options-title">
+        <div class="tt-panel-head"><h2 id="options-title">Options</h2><small>Photo → painting</small></div>
+        <div class="tt-panel-body">
+          <div class="tt-actions">
+            <button id="open" class="primary" type="button">Open photo</button>
+            <button id="sample" type="button">Load sample</button>
+          </div>
+          <label for="file" class="tt-sr-only">Choose a photo to paint</label>
+          <input id="file" class="tt-sr-only" type="file" accept="image/*" tabindex="-1">
+          <fieldset class="tt-field" aria-describedby="medium-hint">
+            <legend>Medium</legend>
+            <div class="tt-media">
+              <label class="tt-radio"><input type="radio" name="medium" value="oil" checked><span>Oil</span></label>
+              <label class="tt-radio"><input type="radio" name="medium" value="water"><span>Watercolor</span></label>
+              <label class="tt-radio"><input type="radio" name="medium" value="point"><span>Pointillist</span></label>
+              <label class="tt-radio"><input type="radio" name="medium" value="gouache"><span>Gouache</span></label>
+              <label class="tt-radio"><input type="radio" name="medium" value="pastel"><span>Soft pastel</span></label>
+              <label class="tt-radio"><input type="radio" name="medium" value="knife"><span>Palette knife</span></label>
+            </div>
+            <p id="medium-hint" class="tt-hint">Layered bristle strokes on toned linen.</p>
+          </fieldset>
+          <div class="tt-field">
+            <label for="detail">Detail</label>
+            <select id="detail"><option value="3">Loose · 3 passes</option><option value="4" selected>Balanced · 4 passes</option><option value="5">Fine · 5 passes</option></select>
+          </div>
+          <div class="tt-field">
+            <div class="tt-field-line"><label for="duration">Painting time</label><output id="duration-output" for="duration">4 s</output></div>
+            <input id="duration" type="range" min="2" max="10" step="1" value="4" aria-describedby="duration-hint">
+            <p id="duration-hint" class="tt-hint">Playback target. Detailed images can take longer.</p>
+          </div>
+          <div class="tt-field"><label class="tt-check"><input id="texture-toggle" type="checkbox" checked> Canvas or paper texture</label></div>
+          <div class="tt-actions tt-divider">
+            <button id="repaint" type="button" disabled>Repaint</button>
+            <button id="finish" type="button" disabled>Finish now</button>
+          </div>
+          <button id="save" class="primary tt-wide" type="button" disabled>Download PNG</button>
+          <p class="tt-hint">Drop an image anywhere, or paste one from your clipboard. Your photo stays in your browser.</p>
+          <p class="tt-hint">Output fits within 1,000 × 1,000 pixels. Small photos keep their original size.</p>
+        </div>
+      </section>
+      <section class="tt-panel" aria-labelledby="painting-title">
+        <div class="tt-panel-head"><h2 id="painting-title">Painting</h2><button id="compare" type="button" aria-pressed="false" disabled>Compare photo</button></div>
+        <div id="stage" class="tt-stage">
+          <figure>
+            <div class="tt-frame">
+              <canvas id="paint" width="1000" height="667" role="img" aria-label="Painted study of the selected photo"></canvas>
+              <div id="texture" class="tt-texture" aria-hidden="true"></div>
+              <canvas id="original" class="tt-layer" width="1000" height="667" role="img" aria-label="Original photo for comparison" hidden></canvas>
+              <canvas id="cursor" class="tt-layer" width="1000" height="667" aria-hidden="true"></canvas>
+            </div>
+            <figcaption id="caption">The sample is drawn locally. Open your own photo to make a study.</figcaption>
+          </figure>
+          <div id="drop" class="tt-drop" hidden>Drop an image to paint.</div>
+        </div>
+        <div class="tt-progress">
+          <progress id="progress" max="1" value="0" aria-label="Painting progress"></progress>
+          <p id="brush-log" class="tt-log" aria-hidden="true">Preparing brushes.</p>
+        </div>
+      </section>
+    </div>
+    <details>
+      <summary>How the painting works</summary>
+      <ol>
+        <li>Build blurred color references for progressively smaller brushes. Brush radius is <code>longest side ÷ pass divisor</code>.</li>
+        <li>Measure color error: <code>√(ΔR² + ΔG² + ΔB²)</code>. Place new strokes where the painting differs from the reference.</li>
+        <li>Find edges with Sobel gradients of <code>L = 0.299R + 0.587G + 0.114B</code>. Guide strokes along the perpendicular direction <code>(−Gy, Gx)</code>.</li>
+        <li>Render bristles, washes, dots, matte gouache, broken pastel pigment, or angular knife marks. Finish with a linen or paper texture.</li>
+      </ol>
+    </details>
+    <footer class="tt-about">
+      <p><strong>About Quick Study Painter.</strong> All image processing runs in your browser. Repaint varies the brushwork. Download includes the selected texture.</p>
+      <p>Painting engine adapted from <a href="https://tools.simonwillison.net/quick-study-painter">Simon Willison's Quick Study</a> under the <a href="licenses/quick-study-painter-Apache-2.0.txt">Apache 2.0 license</a>. Ted's Tools adds gouache, pastel, and palette knife rendering, accessible comparison, and reduced-motion playback.</p>
+    </footer>
+  </main>
+  <!--
+    Painting engine adapted from simonw/tools/quick-study-painter.html,
+    revision baad46ac0c96191ce24bb08f6fa1eaa9fef67076 (Apache-2.0).
+    https://github.com/simonw/tools/blob/baad46ac0c96191ce24bb08f6fa1eaa9fef67076/quick-study-painter.html
+    Modified 2026-10-24 for Ted's Tools: new interface; bounded image sizing;
+    loading cancellation; keyboard comparison; reduced-motion and finish-now
+    playback; guarded PNG export; local-only image handling; gouache, soft
+    pastel, and palette knife renderers.
+    License: licenses/quick-study-painter-Apache-2.0.txt
+  -->
+  <script id="painter-math">
+  'use strict';
+  const StudyMath = (() => {
+    function mulberry32(a) {
+      return function () {
+        a |= 0; a = a + 0x6D2B79F5 | 0;
+        let t = Math.imul(a ^ a >>> 15, 1 | a);
+        t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+        return ((t ^ t >>> 14) >>> 0) / 4294967296;
+      };
+    }
+    function fitDimensions(width, height, limit = 1000) {
+      if (![width, height, limit].every(value => Number.isFinite(value) && value > 0)) {
+        throw new Error('That image has no pixels to paint.');
+      }
+      const scale = Math.min(1, limit / Math.max(width, height));
+      return { width: Math.max(1, Math.round(width * scale)), height: Math.max(1, Math.round(height * scale)) };
+    }
+    function luminance(r, g, b) { return .299 * r + .587 * g + .114 * b; }
+    function colorError(dr, dg, db) { return Math.sqrt(dr * dr + dg * dg + db * db); }
+    // Two separable box-filter passes, with replicated boundary pixels.
+    function blur1(a, w, h, r) {
+      const t = new Float32Array(w * h), o = new Float32Array(w * h), d = 2 * r + 1;
+      for (let y = 0; y < h; y++) {
+        const row = y * w; let s = 0;
+        for (let i = -r; i <= r; i++) s += a[row + Math.min(w - 1, Math.max(0, i))];
+        for (let x = 0; x < w; x++) {
+          t[row + x] = s / d;
+          s += a[row + Math.min(w - 1, x + r + 1)] - a[row + Math.max(0, x - r)];
+        }
+      }
+      for (let x = 0; x < w; x++) {
+        let s = 0;
+        for (let i = -r; i <= r; i++) s += t[Math.min(h - 1, Math.max(0, i)) * w + x];
+        for (let y = 0; y < h; y++) {
+          o[y * w + x] = s / d;
+          s += t[Math.min(h - 1, y + r + 1) * w + x] - t[Math.max(0, y - r) * w + x];
+        }
+      }
+      return o;
+    }
+    function sobel(l, w, h) {
+      const gx = new Float32Array(w * h), gy = new Float32Array(w * h);
+      for (let y = 1; y < h - 1; y++) for (let x = 1; x < w - 1; x++) {
+        const i = y * w + x;
+        const a = l[i - w - 1], b = l[i - w], c = l[i - w + 1], d = l[i - 1], f = l[i + 1], g = l[i + w - 1], hh = l[i + w], k = l[i + w + 1];
+        gx[i] = (c + 2 * f + k) - (a + 2 * d + g);
+        gy[i] = (g + 2 * hh + k) - (a + 2 * b + c);
+      }
+      return { gx, gy };
+    }
+    return Object.freeze({ mulberry32, fitDimensions, luminance, colorError, blur1, sobel });
+  })();
+  </script>
+  <script>
+  'use strict';
+  (() => {
+  const $ = selector => document.querySelector(selector);
+  const { mulberry32, fitDimensions, luminance, colorError, blur1, sobel } = StudyMath;
+  const paint = $('#paint'), orig = $('#original'), cursor = $('#cursor');
+  const pctx = paint.getContext('2d', { willReadFrequently: true });
+  const octx = orig.getContext('2d', { willReadFrequently: true });
+  const cctx = cursor.getContext('2d');
+  const stage = $('#stage'), statusEl = $('#status'), caption = $('#caption'), texture = $('#texture');
+  const progress = $('#progress'), brushLog = $('#brush-log');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  if (!pctx || !octx || !cctx) {
+    statusEl.textContent = 'This browser does not support Canvas 2D. Try a current browser.';
+    statusEl.dataset.state = 'error';
+    document.querySelectorAll('button, input, select').forEach(control => { control.disabled = true; });
+    return;
+  }
+  let W = 0, H = 0, src = null, job = null, sourceName = '';
+  let frameId = 0, loadVersion = 0, loading = false, completed = false, exporting = false;
+  let currentSeed = 0, paintedMedium = 'oil';
+  const medium = () => $('input[name="medium"]:checked').value;
+  const detail = () => Number($('#detail').value);
+  const duration = () => Number($('#duration').value) * 1000;
+  const newSeed = () => Math.floor(Math.random() * 4294967296);
+  function setStatus(message, state = 'ready') {
+    statusEl.textContent = message;
+    statusEl.dataset.state = state;
+  }
+  function updateControls() {
+    $('#repaint').disabled = !src || loading;
+    $('#compare').disabled = !src || loading;
+    $('#finish').disabled = !job || loading || job.instant;
+    $('#save').disabled = !completed || loading || exporting;
+  }
+  function cancelPainting() {
+    cancelAnimationFrame(frameId);
+    frameId = 0;
+    job = null;
+    cctx.clearRect(0, 0, W, H);
+  }
+  function showOriginal(on) {
+    orig.hidden = !on;
+    cursor.hidden = on;
+    paint.setAttribute('aria-hidden', String(on));
+    $('#compare').setAttribute('aria-pressed', String(on));
+    $('#compare').textContent = on ? 'Show painting' : 'Compare photo';
+  }
+  const rgb = (r, g, b) => `rgb(${r | 0},${g | 0},${b | 0})`;
+
+  // ---------- textures (laid over the painting in CSS, not baked in) ----------
+  function weaveTile() {
+    const c = document.createElement('canvas'); c.width = c.height = 64;
+    const x = c.getContext('2d'), r = mulberry32(3);
+    x.fillStyle = '#fff'; x.fillRect(0, 0, 64, 64);
+    for (let i = 0; i < 64; i += 2) {
+      x.fillStyle = `rgba(70,58,44,${.05 + r() * .08})`; x.fillRect(0, i, 64, 1);
+      x.fillStyle = `rgba(70,58,44,${.04 + r() * .07})`; x.fillRect(i, 0, 1, 64);
+    }
+    for (let k = 0; k < 70; k++) { x.fillStyle = `rgba(70,58,44,${r() * .1})`; x.fillRect(r() * 64 | 0, r() * 64 | 0, 1 + (r() * 3 | 0), 1); }
+    return c;
+  }
+  function grainTile() {
+    const c = document.createElement('canvas'); c.width = c.height = 120;
+    const x = c.getContext('2d'), d = x.createImageData(120, 120), r = mulberry32(11);
+    for (let i = 0; i < d.data.length; i += 4) {
+      const v = 255 - (r() * r()) * 70;
+      d.data[i] = v; d.data[i + 1] = v; d.data[i + 2] = v - 4; d.data[i + 3] = 255;
+    }
+    x.putImageData(d, 0, 0); return c;
+  }
+  const TEX = { weave: weaveTile(), grain: grainTile() };
+  const TEXURL = { weave: TEX.weave.toDataURL(), grain: TEX.grain.toDataURL() };
+
+  // ---------- media ----------
+  const MEDIA = {
+    oil:     { ground: '#cbbd9f', maxLen: 9, minLen: 2, T: 22, grid: 1.0, tex: 'weave', texOp: .42, label: 'Oil on toned linen', exportName: 'oil', hint: 'Layered bristle strokes on toned linen.' },
+    water:   { ground: '#f7f4ec', maxLen: 6, minLen: 1, T: 18, grid: 1.0, tex: 'grain', texOp: .6, label: 'Watercolor on cold-press paper', exportName: 'watercolor', hint: 'Translucent washes on cold-press paper.' },
+    point:   { ground: '#eee8db', maxLen: 0, minLen: 0, T: 16, grid: 0.8, tex: 'grain', texOp: .35, label: 'Pointillist dots on primed canvas', exportName: 'pointillist', hint: 'Overlapping dots with varied color.' },
+    gouache: { ground: '#f1ebdf', maxLen: 5, minLen: 1, T: 20, grid: .85, tex: 'grain', texOp: .28, label: 'Gouache on warm paper', exportName: 'gouache', hint: 'Opaque, matte strokes with broad areas of color.' },
+    pastel:  { ground: '#d8d0c0', maxLen: 5, minLen: 1, T: 19, grid: .75, tex: 'grain', texOp: .65, label: 'Soft pastel on textured paper', exportName: 'soft-pastel', hint: 'Broken pigment marks with soft edges and paper grain.' },
+    knife:   { ground: '#c5b79e', maxLen: 2, minLen: 1, T: 24, grid: .95, tex: 'weave', texOp: .3, label: 'Palette knife on linen', exportName: 'palette-knife', hint: 'Angular paint patches with scraped, shaded edges.' }
+  };
+  const PLANS = {
+    3: { div: [16, 34, 70], w: [.30, .34, .36] },
+    4: { div: [16, 34, 70, 130], w: [.17, .23, .28, .32] },
+    5: { div: [16, 34, 70, 130, 240], w: [.11, .16, .21, .25, .27] }
+  };
+  function brushName(r) {
+    const w = r * 2;
+    if (w >= 100) return 'No. 24 flat';
+    if (w >= 50) return 'No. 16 flat';
+    if (w >= 26) return 'No. 10 filbert';
+    if (w >= 14) return 'No. 6 round';
+    if (w >= 8) return 'No. 2 round';
+    return 'No. 0 rigger';
+  }
+
+  // Flatten transparent images before calculating color and luminance.
+  function loadSource(drawable, name) {
+    const size = fitDimensions(drawable.naturalWidth || drawable.width, drawable.naturalHeight || drawable.height);
+    cancelPainting();
+    W = size.width; H = size.height;
+    for (const canvas of [paint, orig, cursor]) { canvas.width = W; canvas.height = H; }
+    octx.fillStyle = '#fff';
+    octx.fillRect(0, 0, W, H);
+    octx.imageSmoothingQuality = 'high';
+    octx.drawImage(drawable, 0, 0, W, H);
+    const data = octx.getImageData(0, 0, W, H).data;
+    const n = W * H, R = new Float32Array(n), G = new Float32Array(n), B = new Float32Array(n), L = new Float32Array(n);
+    for (let i = 0, j = 0; i < n; i++, j += 4) {
+      R[i] = data[j]; G[i] = data[j + 1]; B[i] = data[j + 2];
+      L[i] = luminance(R[i], G[i], B[i]);
+    }
+    const lS = blur1(blur1(L, W, H, 2), W, H, 2);
+    const lL = blur1(blur1(L, W, H, 7), W, H, 7);
+    src = { R, G, B, gS: sobel(lS, W, H), gL: sobel(lL, W, H), refs: new Map() };
+    sourceName = name;
+    currentSeed = newSeed();
+    loading = false;
+    start();
+  }
+  function refFor(rad) {
+    if (!src.refs.has(rad)) {
+      src.refs.set(rad, rad < 1
+        ? { r: src.R, g: src.G, b: src.B }
+        : { r: blur1(src.R, W, H, rad), g: blur1(src.G, W, H, rad), b: blur1(src.B, W, H, rad) });
+    }
+    return src.refs.get(rad);
+  }
+
+  function start() {
+    if (!src || loading) return;
+    cancelPainting();
+    completed = false;
+    paintedMedium = medium();
+    const m = MEDIA[paintedMedium], plan = PLANS[detail()], rng = mulberry32(currentSeed);
+    const longest = Math.max(W, H);
+    const J = {
+      m, mediumKey: paintedMedium, rng, plan,
+      radii: plan.div.map(divisor => Math.max(2.2, longest / divisor)),
+      D: duration(), pass: -1, P: null, total: 0,
+      t0: performance.now(), hand: -0.6 + (rng() - .5) * .5, last: null,
+      instant: reducedMotion.matches, reportedPass: -1
+    };
+    job = J;
+    showOriginal(false);
+    progress.value = 0;
+    pctx.globalCompositeOperation = 'source-over';
+    pctx.globalAlpha = 1;
+    pctx.fillStyle = m.ground;
+    pctx.fillRect(0, 0, W, H);
+    for (let i = 0; i < 2500; i++) {
+      pctx.globalAlpha = rng() * .06;
+      pctx.fillStyle = rng() < .5 ? '#000' : '#fff';
+      pctx.fillRect(rng() * W, rng() * H, 1 + rng() * 3, 1 + rng() * 2);
+    }
+    pctx.globalAlpha = 1;
+    texture.style.backgroundImage = `url(${TEXURL[m.tex]})`;
+    texture.style.setProperty('--tex-op', m.texOp);
+    texture.hidden = !$('#texture-toggle').checked;
+    $('#medium-hint').textContent = m.hint;
+    writeCaption();
+    updateControls();
+    nextPass(J);
+    report(J);
+    frameId = requestAnimationFrame(time => tick(J, time));
+  }
+  function planPass(J, p) {
+    const r = J.radii[p], m = J.m;
+    const ref = refFor(Math.max(0, Math.round(r * .45)));
+    const cur = pctx.getImageData(0, 0, W, H).data;
+    const step = Math.max(2, Math.round(r * m.grid * (p === 0 ? .8 : 1)));
+    const T = p === 0 ? -1 : m.T;
+    const sub = Math.max(1, Math.floor(step / 3));
+    const pts = [];
+    for (let gy = 0; gy < H; gy += step) for (let gx = 0; gx < W; gx += step) {
+      let sum = 0, n = 0, best = -1, bx = gx, by = gy;
+      const ye = Math.min(H, gy + step), xe = Math.min(W, gx + step);
+      for (let y = gy; y < ye; y += sub) for (let x = gx; x < xe; x += sub) {
+        const i = y * W + x, j = i * 4;
+        const dr = cur[j] - ref.r[i], dg = cur[j + 1] - ref.g[i], db = cur[j + 2] - ref.b[i];
+        const e = colorError(dr, dg, db);
+        sum += e; n++;
+        if (e > best) { best = e; bx = x; by = y; }
+      }
+      if (sum / n > T) {
+        if (p === 0) pts.push(Math.min(W - 1, gx + J.rng() * step), Math.min(H - 1, gy + J.rng() * step));
+        else pts.push(bx, by);
+      }
+    }
+    // shuffle point pairs
+    const k = pts.length / 2;
+    for (let i = k - 1; i > 0; i--) {
+      const j = (J.rng() * (i + 1)) | 0;
+      let t = pts[2 * i]; pts[2 * i] = pts[2 * j]; pts[2 * j] = t;
+      t = pts[2 * i + 1]; pts[2 * i + 1] = pts[2 * j + 1]; pts[2 * j + 1] = t;
+    }
+    return { r, ref, cur, pts, count: k, idx: 0, grad: r > Math.max(W, H) / 45 ? src.gL : src.gS };
+  }
+
+  function nextPass(J) {
+    J.pass++;
+    if (J.pass >= J.radii.length) { J.P = null; return false; }
+    J.P = planPass(J, J.pass);
+    J.passStart = performance.now();
+    J.passDur = J.D * J.plan.w[J.pass];
+    return true;
+  }
+
+  function strokePath(J, P, x0, y0) {
+    const { ref, cur, r, grad } = P, m = J.m;
+    let i = (y0 | 0) * W + (x0 | 0);
+    const cr = ref.r[i], cg = ref.g[i], cb = ref.b[i];
+    const pts = [x0, y0];
+    if (m.maxLen === 0) return { pts, c: [cr, cg, cb] };
+    let x = x0, y = y0, ldx = 0, ldy = 0;
+    const stepLen = r * .8;
+    for (let k = 1; k <= m.maxLen; k++) {
+      i = (y | 0) * W + (x | 0);
+      if (k > 1) {
+        const ar = ref.r[i] - cr, ag = ref.g[i] - cg, ab = ref.b[i] - cb;
+        const dRef = ar * ar + ag * ag + ab * ab;
+        if (dRef > 48 * 48) break; // crossed an edge
+        if (k > m.minLen) {
+          const j = i * 4, br = ref.r[i] - cur[j], bg = ref.g[i] - cur[j + 1], bb = ref.b[i] - cur[j + 2];
+          if (dRef > br * br + bg * bg + bb * bb) break; // canvas already closer than this paint
+        }
+      }
+      let gx = grad.gx[i], gy = grad.gy[i];
+      const mag = Math.hypot(gx, gy);
+      let dx, dy;
+      if (mag > 6) { dx = -gy / mag; dy = gx / mag; }
+      else if (k === 1) { const a = J.hand + (J.rng() - .5) * .7; dx = Math.cos(a); dy = Math.sin(a); }
+      else { dx = ldx; dy = ldy; }
+      if (ldx * dx + ldy * dy < 0) { dx = -dx; dy = -dy; }
+      if (k > 1) {
+        dx = .55 * dx + .45 * ldx; dy = .55 * dy + .45 * ldy;
+        const n = Math.hypot(dx, dy) || 1; dx /= n; dy /= n;
+      }
+      x += stepLen * dx; y += stepLen * dy;
+      if (x < 0 || y < 0 || x >= W || y >= H) break;
+      pts.push(x, y); ldx = dx; ldy = dy;
+    }
+    if (pts.length === 2) {
+      const i0 = (y0 | 0) * W + (x0 | 0), gx = grad.gx[i0], gy = grad.gy[i0], mag = Math.hypot(gx, gy);
+      let dx, dy;
+      if (mag > 6) { dx = -gy / mag; dy = gx / mag; } else { dx = Math.cos(J.hand); dy = Math.sin(J.hand); }
+      pts.unshift(x0 - dx * r * .3, y0 - dy * r * .3);
+      pts.push(x0 + dx * r * .3, y0 + dy * r * .3);
+      pts.splice(2, 2);
+    }
+    return { pts, c: [cr, cg, cb] };
+  }
+
+  function trace(ctx, p) {
+    ctx.beginPath(); ctx.moveTo(p[0], p[1]);
+    if (p.length <= 4) { ctx.lineTo(p[p.length - 2], p[p.length - 1]); return; }
+    for (let i = 2; i < p.length - 2; i += 2) {
+      ctx.quadraticCurveTo(p[i], p[i + 1], (p[i] + p[i + 2]) / 2, (p[i + 1] + p[i + 3]) / 2);
+    }
+    ctx.lineTo(p[p.length - 2], p[p.length - 1]);
+  }
+
+  function drawOil(ctx, s, r, rng) {
+    const P = s.pts, n = P.length / 2, w = r * 2, [R, G, B] = s.c;
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    ctx.globalAlpha = .9; ctx.strokeStyle = rgb(R, G, B); ctx.lineWidth = w * .78;
+    trace(ctx, P); ctx.stroke();
+    const nx = new Float32Array(n), ny = new Float32Array(n);
+    for (let k = 0; k < n; k++) {
+      const a = Math.max(0, k - 1), b = Math.min(n - 1, k + 1);
+      const tx = P[2 * b] - P[2 * a], ty = P[2 * b + 1] - P[2 * a + 1], m = Math.hypot(tx, ty) || 1;
+      nx[k] = -ty / m; ny[k] = tx / m;
+    }
+    const nb = Math.max(3, Math.min(12, Math.round(w / 5)));
+    const bw = Math.max(1, w / nb * 1.15);
+    const buf = new Array(P.length);
+    for (let b = 0; b < nb; b++) {
+      const rel = (b + .5) / nb - .5 + (rng() - .5) / nb;
+      const o = rel * w * .92;
+      const sh = (rng() - .5) * 30 + (rng() < .14 ? 28 : 0);
+      ctx.strokeStyle = rgb(R + sh + (rng() - .5) * 10, G + sh + (rng() - .5) * 10, B + sh + (rng() - .5) * 10);
+      ctx.globalAlpha = .45 + rng() * .45;
+      ctx.lineWidth = bw * (.7 + rng() * .6);
+      for (let k = 0; k < n; k++) { buf[2 * k] = P[2 * k] + nx[k] * o; buf[2 * k + 1] = P[2 * k + 1] + ny[k] * o; }
+      if (n >= 2) {
+        const edge = Math.abs(rel) * 2, ts = edge * .45 * rng(), te = edge * .45 * rng(), e = 2 * (n - 1);
+        buf[0] += (buf[2] - buf[0]) * ts; buf[1] += (buf[3] - buf[1]) * ts;
+        buf[e] += (buf[e - 2] - buf[e]) * te; buf[e + 1] += (buf[e - 1] - buf[e + 1]) * te;
+      }
+      trace(ctx, buf); ctx.stroke();
+    }
+  }
+
+  function drawWater(ctx, s, r, rng, pass) {
+    const [R, G, B] = s.c, w = r * 2, a = pass === 0 ? .55 : .3;
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    ctx.globalAlpha = a; ctx.strokeStyle = rgb(R, G, B); ctx.lineWidth = w * 1.2;
+    trace(ctx, s.pts); ctx.stroke();
+    const ox = (rng() - .5) * r * .5, oy = (rng() - .5) * r * .5;
+    const q = s.pts.map((v, i) => v + (i % 2 ? oy : ox));
+    ctx.globalAlpha = a * .7; ctx.strokeStyle = rgb(R * .9, G * .9, B * .94); ctx.lineWidth = w * .55;
+    trace(ctx, q); ctx.stroke();
+  }
+
+  function drawDots(ctx, s, r, rng) {
+    const [R, G, B] = s.c, n = 4 + (rng() * 3 | 0), x0 = s.pts[0], y0 = s.pts[1];
+    ctx.globalAlpha = .92;
+    for (let i = 0; i < n; i++) {
+      const a = rng() * 6.2832, d = Math.sqrt(rng()) * r * .8;
+      ctx.fillStyle = rgb(R + (rng() - .5) * 50, G + (rng() - .5) * 50, B + (rng() - .5) * 50);
+      ctx.beginPath();
+      ctx.arc(x0 + Math.cos(a) * d, y0 + Math.sin(a) * d, Math.max(.8, r * .34 * (.75 + rng() * .5)), 0, 6.2832);
+      ctx.fill();
+    }
+  }
+  function drawGouache(ctx, s, r, rng) {
+    // Broad opaque marks with a restrained palette and a matte, uneven edge.
+    const [R, G, B] = s.c.map(value => Math.round(value / 10) * 10);
+    const width = r * (1.65 + rng() * .3);
+    ctx.lineCap = 'butt'; ctx.lineJoin = 'bevel';
+    ctx.globalAlpha = .98; ctx.strokeStyle = rgb(R, G, B); ctx.lineWidth = width;
+    trace(ctx, s.pts); ctx.stroke();
+    // A second, slightly offset coat leaves broad areas of flat pigment.
+    const offsetX = (rng() - .5) * r * .22, offsetY = (rng() - .5) * r * .22;
+    const coat = s.pts.map((value, index) => value + (index % 2 ? offsetY : offsetX));
+    ctx.globalAlpha = .24;
+    ctx.strokeStyle = rgb(R + 7, G + 7, B + 5); ctx.lineWidth = width * .72;
+    trace(ctx, coat); ctx.stroke();
+  }
+
+  function drawPastel(ctx, s, r, rng) {
+    const points = s.pts, segments = points.length / 2 - 1, [R, G, B] = s.c;
+    // A faint broad stroke softens the contour beneath the dry pigment.
+    ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+    ctx.globalAlpha = .2; ctx.strokeStyle = rgb(R + 8, G + 8, B + 8); ctx.lineWidth = r * 2.1;
+    trace(ctx, points); ctx.stroke();
+    // Short, separated marks expose paper between deposits of pigment.
+    const deposits = Math.max(10, Math.min(28, Math.round(r * 2)));
+    for (let k = 0; k < deposits; k++) {
+      const segment = Math.min(segments - 1, Math.floor(rng() * segments));
+      const i = segment * 2, dx = points[i + 2] - points[i], dy = points[i + 3] - points[i + 1];
+      const length = Math.hypot(dx, dy) || 1, nx = -dy / length, ny = dx / length;
+      const start = rng() * .7, end = Math.min(1, start + .15 + rng() * .5);
+      const offset = (rng() - .5) * r * 1.9, jitter = (rng() - .5) * 24;
+      ctx.strokeStyle = rgb(R + jitter, G + jitter, B + jitter);
+      ctx.globalAlpha = .35 + rng() * .4; ctx.lineWidth = Math.max(.65, r * (.05 + rng() * .09));
+      ctx.beginPath();
+      ctx.moveTo(points[i] + dx * start + nx * offset, points[i + 1] + dy * start + ny * offset);
+      ctx.lineTo(points[i] + dx * end + nx * offset, points[i + 1] + dy * end + ny * offset);
+      ctx.stroke();
+    }
+  }
+
+  function drawKnife(ctx, s, r, rng) {
+    const points = s.pts, last = points.length - 2, [R, G, B] = s.c;
+    const dx = points[last] - points[0], dy = points[last + 1] - points[1];
+    const length = Math.hypot(dx, dy) || 1, tx = dx / length, ty = dy / length;
+    const nx = -ty, ny = tx, width = r * (.8 + rng() * .2);
+    const ax = points[0] - tx * r * .25, ay = points[1] - ty * r * .25;
+    const bx = points[last] + tx * r * .35, by = points[last + 1] + ty * r * .35;
+    const corners = [
+      [ax - nx * width, ay - ny * width],
+      [ax + nx * width * .72, ay + ny * width * .72],
+      [bx + nx * width, by + ny * width],
+      [bx - nx * width * .55, by - ny * width * .55]
+    ];
+    ctx.globalAlpha = .98; ctx.fillStyle = rgb(R, G, B);
+    ctx.beginPath(); ctx.moveTo(...corners[0]);
+    for (let i = 1; i < corners.length; i++) ctx.lineTo(...corners[i]);
+    ctx.closePath(); ctx.fill();
+    // A lit facet and a single scraped edge suggest the knife's paint ridge.
+    const light = 12 + 14 * Math.abs(nx * .6 + ny * .8);
+    ctx.globalAlpha = .46; ctx.fillStyle = rgb(R + light, G + light, B + light);
+    ctx.beginPath(); ctx.moveTo(...corners[0]); ctx.lineTo(ax, ay); ctx.lineTo(...corners[3]); ctx.closePath(); ctx.fill();
+    ctx.lineCap = 'butt'; ctx.lineJoin = 'bevel';
+    ctx.globalAlpha = .42; ctx.strokeStyle = rgb(R - 25, G - 25, B - 25); ctx.lineWidth = Math.max(.7, r * .09);
+    ctx.beginPath(); ctx.moveTo(...corners[1]); ctx.lineTo(...corners[2]); ctx.stroke();
+  }
+  const RENDER = { oil: drawOil, water: drawWater, point: drawDots, gouache: drawGouache, pastel: drawPastel, knife: drawKnife };
+
+  function tick(J, now) {
+    if (J !== job || !J.P) return;
+    const P = J.P;
+    const fraction = J.instant ? 1 : Math.min(1, (now - J.passStart) / J.passDur);
+    const target = Math.ceil(fraction * P.count);
+    const render = RENDER[J.mediumKey], started = performance.now();
+    while (P.idx < target) {
+      const stroke = strokePath(J, P, P.pts[2 * P.idx], P.pts[2 * P.idx + 1]);
+      render(pctx, stroke, P.r, J.rng, J.pass);
+      J.last = [stroke.pts[stroke.pts.length - 2], stroke.pts[stroke.pts.length - 1], P.r];
+      P.idx++; J.total++;
+      // Yield between batches even when skipping the animation.
+      if ((P.idx & 31) === 0 && performance.now() - started > 12) break;
+    }
+    pctx.globalAlpha = 1;
+    drawCursor(J);
+    report(J);
+    if (P.idx >= P.count && !nextPass(J)) { finish(J); return; }
+    frameId = requestAnimationFrame(time => tick(J, time));
+  }
+  function drawCursor(J) {
+    cctx.clearRect(0, 0, W, H);
+    if (J.instant || !J.last || !J.P) return;
+    const [x, y, r] = J.last, scale = W / (paint.clientWidth || W);
+    cctx.lineWidth = 2 * scale; cctx.strokeStyle = 'rgba(15,18,22,.5)';
+    cctx.beginPath(); cctx.arc(x, y, r + 1.5 * scale, 0, Math.PI * 2); cctx.stroke();
+    cctx.lineWidth = 1.4 * scale; cctx.strokeStyle = 'rgba(255,255,255,.9)';
+    cctx.beginPath(); cctx.arc(x, y, r, 0, Math.PI * 2); cctx.stroke();
+  }
+  function report(J) {
+    let done = 0;
+    for (let i = 0; i < J.pass; i++) done += J.plan.w[i];
+    const P = J.P;
+    progress.value = done + J.plan.w[J.pass] * (P.idx / Math.max(1, P.count));
+    brushLog.textContent = `Pass ${J.pass + 1}/${J.radii.length} · ${brushName(P.r)} · ${J.total.toLocaleString()} strokes`;
+    // Screen readers get one update per pass, not one per animation frame.
+    if (J.reportedPass !== J.pass) {
+      J.reportedPass = J.pass;
+      setStatus(`Painting ${J.m.label.toLowerCase()}. Pass ${J.pass + 1} of ${J.radii.length}.`);
+    }
+  }
+  function finish(J) {
+    if (J !== job) return;
+    cctx.clearRect(0, 0, W, H);
+    job = null; frameId = 0; completed = true;
+    progress.value = 1;
+    const seconds = ((performance.now() - J.t0) / 1000).toFixed(1);
+    brushLog.textContent = `${J.total.toLocaleString()} strokes · ${J.radii.length} passes · ${W} × ${H} px`;
+    setStatus(`Finished in ${seconds} s. ${J.total.toLocaleString()} strokes over ${J.radii.length} passes.`, 'success');
+    paint.setAttribute('aria-label', `${J.m.label}: ${sourceName}. ${W} by ${H} pixels.`);
+    updateControls();
+  }
+  function writeCaption() {
+    caption.replaceChildren();
+    const title = document.createElement('strong');
+    title.textContent = `Study after ${sourceName}`;
+    const meta = document.createElement('span');
+    meta.className = 'tt-dimensions';
+    meta.textContent = `${MEDIA[paintedMedium].label} · ${W} × ${H} px`;
+    caption.append(title, meta);
+  }
+  reducedMotion.addEventListener('change', event => {
+    if (event.matches && job) { job.instant = true; updateControls(); }
+  });
+  $('#finish').addEventListener('click', () => {
+    if (job) { job.instant = true; updateControls(); }
+  });
+  $('#repaint').addEventListener('click', () => { currentSeed = newSeed(); start(); });
+  document.querySelectorAll('input[name="medium"]').forEach(control => control.addEventListener('change', start));
+  $('#detail').addEventListener('change', start);
+  $('#duration').addEventListener('input', event => { $('#duration-output').textContent = `${event.target.value} s`; });
+  $('#duration').addEventListener('change', start);
+  $('#texture-toggle').addEventListener('change', event => { texture.hidden = !event.target.checked; });
+  $('#compare').addEventListener('click', () => { showOriginal(orig.hidden); });
+
+  // Decode only the most recent selection. An older image cannot replace it.
+  function openFile(file) {
+    if (!file) return;
+    if (file.type && !file.type.startsWith('image/')) {
+      setStatus('Choose an image file, such as JPG, PNG, or WebP.', 'error');
+      return;
+    }
+    const version = ++loadVersion;
+    cancelPainting();
+    loading = true;
+    updateControls();
+    setStatus('Reading your photo locally.');
+    const url = URL.createObjectURL(file), image = new Image();
+    image.onload = () => {
+      try {
+        if (version !== loadVersion) return;
+        loadSource(image, file.name || 'Pasted photo');
+      } catch {
+        if (version === loadVersion) {
+          src = null; completed = false;
+          setStatus('This image could not be painted. Try a JPG, PNG, or WebP.', 'error');
+        }
+      } finally {
+        URL.revokeObjectURL(url);
+        if (version === loadVersion) { loading = false; updateControls(); }
+      }
+    };
+    image.onerror = () => {
+      URL.revokeObjectURL(url);
+      if (version !== loadVersion) return;
+      loading = false;
+      setStatus('This browser could not read that image. Try a JPG, PNG, or WebP.', 'error');
+      updateControls();
+    };
+    image.src = url;
+  }
+  $('#open').addEventListener('click', () => $('#file').click());
+  $('#file').addEventListener('change', event => { openFile(event.target.files[0]); event.target.value = ''; });
+  $('#sample').addEventListener('click', () => {
+    loadVersion++; loading = false;
+    loadSource(makeSample(), 'Lakeside sample');
+  });
+  let dragDepth = 0;
+  window.addEventListener('dragenter', event => {
+    if ([...(event.dataTransfer?.types || [])].includes('Files')) { dragDepth++; $('#drop').hidden = false; }
+  });
+  window.addEventListener('dragleave', () => {
+    dragDepth = Math.max(0, dragDepth - 1);
+    if (!dragDepth) $('#drop').hidden = true;
+  });
+  window.addEventListener('dragover', event => {
+    if ([...(event.dataTransfer?.types || [])].includes('Files')) event.preventDefault();
+  });
+  window.addEventListener('drop', event => {
+    event.preventDefault(); dragDepth = 0; $('#drop').hidden = true;
+    const files = [...(event.dataTransfer?.files || [])];
+    if (files.length) openFile(files.find(file => file.type.startsWith('image/')) || files[0]);
+  });
+  window.addEventListener('paste', event => {
+    const item = [...(event.clipboardData?.items || [])].find(entry => entry.type.startsWith('image/'));
+    if (item) { event.preventDefault(); openFile(item.getAsFile()); }
+  });
+
+  // Export a snapshot with the same texture and scale as the preview.
+  function exportBlob() {
+    const canvas = document.createElement('canvas'); canvas.width = W; canvas.height = H;
+    const context = canvas.getContext('2d'), m = MEDIA[paintedMedium];
+    context.drawImage(paint, 0, 0);
+    if ($('#texture-toggle').checked) {
+      const pattern = context.createPattern(TEX[m.tex], 'repeat');
+      if (pattern) {
+        pattern.setTransform(new DOMMatrix().scale(W / (paint.clientWidth || W)));
+        context.globalCompositeOperation = 'multiply'; context.globalAlpha = m.texOp;
+        context.fillStyle = pattern; context.fillRect(0, 0, W, H);
+      }
+    }
+    return new Promise(resolve => canvas.toBlob(resolve, 'image/png'));
+  }
+  $('#save').addEventListener('click', async () => {
+    if (!completed || exporting || loading) return;
+    const version = loadVersion, seed = currentSeed, selectedMedium = paintedMedium;
+    const base = sourceName.replace(/\.[^.]+$/, '').replace(/[^\w-]+/g, '-').replace(/^-+|-+$/g, '').slice(0, 80) || 'photo';
+    const mediumName = MEDIA[selectedMedium].exportName;
+    const name = `${base}-${mediumName}-study.png`;
+    exporting = true; updateControls();
+    try {
+      const blob = await exportBlob();
+      if (!blob) throw new Error('PNG export failed');
+      const url = URL.createObjectURL(blob), link = document.createElement('a');
+      link.href = url; link.download = name; link.hidden = true;
+      document.body.appendChild(link); link.click(); link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 4000);
+      if (version === loadVersion && seed === currentSeed && !job && medium() === selectedMedium) {
+        setStatus(`Downloaded ${name}.`, 'success');
+      }
+    } catch {
+      if (version === loadVersion && !job) setStatus('This browser could not export the PNG. Try again.', 'error');
+    } finally { exporting = false; updateControls(); }
+  });
+  // ---------- sample scene ----------
+  function makeSample() {
+    const c = document.createElement('canvas'), Wd = 1000, Ht = 667, hz = Ht * .56;
+    c.width = Wd; c.height = Ht;
+    const x = c.getContext('2d'), R = mulberry32(7);
+    let g = x.createLinearGradient(0, 0, 0, hz);
+    g.addColorStop(0, '#1b2a57'); g.addColorStop(.42, '#5a4a90'); g.addColorStop(.74, '#df7a4e'); g.addColorStop(1, '#ffd27c');
+    x.fillStyle = g; x.fillRect(0, 0, Wd, hz);
+    const sx = Wd * .66, sy = hz - 40;
+    g = x.createRadialGradient(sx, sy, 0, sx, sy, 280);
+    g.addColorStop(0, 'rgba(255,242,195,.95)'); g.addColorStop(.22, 'rgba(255,192,112,.5)'); g.addColorStop(1, 'rgba(255,150,90,0)');
+    x.fillStyle = g; x.fillRect(0, 0, Wd, hz);
+    for (let i = 0; i < 16; i++) {
+      const cy = 50 + R() * 200, cx = R() * Wd, rw = 80 + R() * 200, rh = 7 + R() * 14;
+      x.fillStyle = `rgba(245,${150 + R() * 70 | 0},${150 + R() * 50 | 0},${.22 + R() * .3})`;
+      x.beginPath(); x.ellipse(cx, cy, rw, rh, 0, 0, 6.2832); x.fill();
+    }
+    x.fillStyle = '#fff4d2'; x.beginPath(); x.arc(sx, sy, 34, 0, 6.2832); x.fill();
+    const ridge = (base, amp, col, o) => {
+      x.fillStyle = col; x.beginPath(); x.moveTo(0, hz);
+      for (let px = 0; px <= Wd; px += 8) {
+        const y = base - amp * (.5 + .5 * Math.sin(px / 170 + o)) - amp * .4 * Math.sin(px / 53 + o * 2) - (R() - .5) * 6;
+        x.lineTo(px, y);
+      }
+      x.lineTo(Wd, hz); x.closePath(); x.fill();
+    };
+    ridge(hz - 60, 90, '#7a6599', 1); ridge(hz - 28, 60, '#4b3f70', 3); ridge(hz - 4, 34, '#2a2747', 5);
+    x.save(); x.translate(0, hz * 2); x.scale(1, -1); x.globalAlpha = .8;
+    x.drawImage(c, 0, 0, Wd, hz, 0, 0, Wd, hz); x.restore();
+    g = x.createLinearGradient(0, hz, 0, Ht);
+    g.addColorStop(0, 'rgba(20,20,52,.12)'); g.addColorStop(1, 'rgba(10,12,36,.72)');
+    x.fillStyle = g; x.fillRect(0, hz, Wd, Ht - hz);
+    for (let i = 0; i < 140; i++) {
+      const yy = hz + R() * (Ht - hz);
+      x.fillStyle = `rgba(255,255,255,${R() * .09})`; x.fillRect(R() * Wd, yy, 30 + R() * 140, 1.5);
+    }
+    for (let i = 0; i < 80; i++) {
+      const yy = hz + 4 + Math.pow(R(), 1.3) * (Ht - hz - 10), spread = 18 + (yy - hz) * .5;
+      const xx = sx + (R() - .5) * spread * 2, len = 10 + R() * 44;
+      x.fillStyle = `rgba(255,${210 + R() * 40 | 0},150,${.35 + R() * .5})`;
+      x.fillRect(xx - len / 2, yy, len, 1.5 + R() * 2.5);
+    }
+    x.fillStyle = '#141320'; x.beginPath(); x.moveTo(0, Ht); x.lineTo(0, Ht * .77);
+    x.quadraticCurveTo(Wd * .2, Ht * .73, Wd * .38, Ht * .87); x.lineTo(Wd * .45, Ht); x.closePath(); x.fill();
+    for (let i = 0; i < 9; i++) {
+      const px = 14 + i * 36 + R() * 14, base = Ht * .79 + i * 5, th = 90 + R() * 130, tw = 26 + R() * 14;
+      x.fillStyle = '#0f0f19';
+      for (let t = 0; t < 5; t++) {
+        const ty = base - th * (t / 5), wv = tw * (1 - t / 6);
+        x.beginPath(); x.moveTo(px - wv, ty); x.lineTo(px + wv, ty); x.lineTo(px, ty - th * .32); x.closePath(); x.fill();
+      }
+      x.fillRect(px - 2, base - 4, 4, 14);
+    }
+    const bx = Wd * .5, by = hz + 82;
+    x.fillStyle = '#17162b';
+    x.beginPath(); x.moveTo(bx - 34, by); x.lineTo(bx + 34, by); x.lineTo(bx + 24, by + 9); x.lineTo(bx - 26, by + 9); x.closePath(); x.fill();
+    x.fillRect(bx - 1, by - 46, 2, 46);
+    x.beginPath(); x.moveTo(bx + 2, by - 44); x.lineTo(bx + 26, by - 3); x.lineTo(bx + 2, by - 3); x.closePath(); x.fill();
+    return c;
+  }
+
+  loadSource(makeSample(), 'Lakeside sample');
+  })();
+  </script>
+</body>
+</html>
