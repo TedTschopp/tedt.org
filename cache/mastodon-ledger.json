@@ -24535,14 +24535,13 @@
         {
           "id": "115017513557078745",
           "url": "https://tschopp.net/@Ted/115017513557078745"
+        },
+        {
+          "created_at": "2026-10-25T17:27:57.732Z",
+          "id": "117502723865429564",
+          "url": "https://tschopp.net/@Ted/117502723865429564"
         }
       ],
-      "intent": {
-        "key": "2f46e62bb0e9d2dbb53c706985f2e98d150823781150a517ee4de54a726a00d4",
-        "kind": "archive",
-        "started_at": "2026-10-25T17:27:42Z"
-      },
-      "missing_checked_at": "2026-10-25T17:27:42Z",
       "preferred_ids": [
         "115017513557078745"
       ],
@@ -24552,8 +24551,14 @@
       "source_paths": [
         "_posts/Blog Posts/2003-12-19-happy-advent.md"
       ],
-      "state": "uncertain",
-      "title": "An Unexpected Spiritual Journey: A Day at Disneyland"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-25T17:27:57.732Z",
+        "id": "117502723865429564",
+        "url": "https://tschopp.net/@Ted/117502723865429564"
+      },
+      "title": "An Unexpected Spiritual Journey: A Day at Disneyland",
+      "verified_at": "2026-10-25T17:27:42Z"
     },
     "https://tedt.org/hell-and-christ/": {
       "aliases": [
@@ -25543,10 +25548,20 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
+  "last_publication_at": "2026-10-25T17:27:57.732Z",
   "last_reconciliation_at": "2026-10-25T17:27:42Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 64,
-  "receipts": [],
+  "receipts": [
+    {
+      "canonical_url": "https://tedt.org/happy-advent/",
+      "created_at": "2026-10-25T17:27:57.732Z",
+      "id": "117502723865429564",
+      "kind": "archive",
+      "operation": "2f46e62bb0e9d2dbb53c706985f2e98d150823781150a517ee4de54a726a00d4",
+      "url": "https://tschopp.net/@Ted/117502723865429564"
+    }
+  ],
   "run_count": 1,
   "unmatched_legacy": {
     "/Critique-Content/": [
