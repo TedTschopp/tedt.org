@@ -26,6 +26,14 @@ def public_url(value, origin)
   url
 end
 
+legacy_review = site.data.fetch('mastodon_legacy_review', {})
+raise 'Unsupported legacy-review version' unless legacy_review.empty? || legacy_review['version'] == 1
+legacy_aliases = Hash.new { |hash, key| hash[key] = [] }
+legacy_review.fetch('records', {}).each do |legacy_url, record|
+  next unless record.fetch('disposition') == 'mapped'
+  legacy_aliases[public_url(record.fetch('canonical_url'), origin)] << public_url(legacy_url, origin)
+end
+
 items = site.posts.docs.filter_map do |post|
   next if excluded.any? { |prefix| post.relative_path.downcase.start_with?(prefix) }
   next if post.data['published'] == false
@@ -52,7 +60,7 @@ items = site.posts.docs.filter_map do |post|
   summary = "#{summary[0, budget - 1].rstrip}…" if summary.length > budget && budget.positive?
   summary = '' if budget.zero?
   content = [title, summary, canonical].reject(&:empty?).join("\n")
-  aliases = [old_url, canonical]
+  aliases = [old_url, canonical] + legacy_aliases[canonical]
   Array(post.data['redirect_from']).each { |value| aliases << public_url(value, origin) }
   # Import only; exact Jekyll URLs above remain authoritative for output.
   filename = File.basename(post.relative_path, File.extname(post.relative_path))

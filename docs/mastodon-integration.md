@@ -18,6 +18,13 @@ an immutable migration input. Do not normalize its keys and restart the retired
 feed action: that action uses a different identity scheme and could repost items.
 Legacy writer entry points now preview or delegate to verified reconciliation.
 
+The evidence-backed alias registry in `_data/mastodon_legacy_review.json` links
+reviewed historical cache keys to current canonical documents. Previously
+unmatched keys are retried against the exact alias index without resetting
+publication receipts, generations, or queue priority. Removed publications and
+the ambiguous Swiss Folklore template key retain their original history and
+remain outside automatic remapping. See [the legacy review](mastodon-legacy-review.md).
+
 The versioned ledger groups documents by final canonical URL, retains all known
 status references, and records unmapped legacy history separately. Merged prompt
 aliases produce one announcement. Account and status IDs are exact strings.

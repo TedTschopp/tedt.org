@@ -64,6 +64,24 @@ manifest.fetch('items').each do |item|
   end
 end
 
+review = site.data.fetch('mastodon_legacy_review', {})
+legacy = JSON.parse(root.join('cache/jsonfeed-to-mastodon.json').read)
+review.fetch('records', {}).each do |old_url, record|
+  errors << "#{old_url}: unknown review disposition" unless %w[mapped retired ambiguous].include?(record['disposition'])
+  errors << "#{old_url}: reviewed key is not in the preserved legacy cache" unless legacy.key?(old_url)
+  expected_url = old_url.start_with?('https://') ? old_url : "#{site.config.fetch('url')}#{old_url}"
+  if record['disposition'] == 'mapped'
+    matches = manifest.fetch('items').select { |item| item['canonical_url'] == record.fetch('canonical_url') }
+    errors << "#{old_url}: mapped canonical is not an eligible document" if matches.empty?
+    errors << "#{old_url}: reviewed source does not match the canonical document" unless matches.any? { |item| item['source_path'] == record.fetch('source_path') }
+    errors << "#{old_url}: reviewed alias was not exported" unless matches.any? { |item| item['aliases'].include?(expected_url) }
+  elsif record['disposition'] == 'retired'
+    errors << "#{old_url}: a retired publication was reintroduced" if manifest.fetch('items').any? { |item| item['canonical_url'] == expected_url }
+  end
+end
+archive_target = 'https://tedt.org/TheOneRing-LegacyArchive/'
+errors << 'The live archive status still links to a missing landing page' unless redirects['/TheOneRing-com-Legacy-Archive/'] == archive_target
+
 profile_id = site.config.dig('profile', 'social', 'mastodon_user_id')
 errors << 'Profile account ID must remain an exact string' unless profile_id.is_a?(String) && profile_id.match?(/\A\d+\z/)
 progress = JSON.parse(root.join('_site/mastodon-backfill-progress.json').read)

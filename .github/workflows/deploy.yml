@@ -273,13 +273,16 @@ jobs:
         run: |
           make feed_diff
 
+      - name: HTMLProofer regression checks
+        run: make html_proofer_check
+
       - name: HTMLProofer (internal links)
         id: htmlproofer
         continue-on-error: true
         run: |
           set -euo pipefail
           mkdir -p tmp
-          bundle exec htmlproofer ./_site --root-dir ./_site --check-html --allow-missing-href --disable-external 2>&1 | tee tmp/htmlproofer.txt
+          make SKIP_EXTERNAL=1 proofer 2>&1 | tee tmp/htmlproofer.txt
 
       - name: Mastodon feed length report
         run: |

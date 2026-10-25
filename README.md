@@ -423,6 +423,14 @@ Run the full local quality gate with: `make quality_gate`
 
 Run the strict HTMLProofer check alone with: `make SKIP_EXTERNAL=1 proofer`
 
+The shared runner uses the installed HTMLProofer API and resolves directory URLs
+to their index files before checking anchors. `make html_proofer_check` exercises
+valid and broken fixtures, including a directory page that also has an old
+`.html` redirect. The strict command returns nonzero for findings;
+`proofer_advisory` prints those findings while preserving its advisory behavior.
+Disabling external requests does not disable HTTPS policy checks: historical
+HTTP links remain visible in the report.
+
 Run the faster structural/content gate with: `make qa`
 
 Run the repository hygiene guard alone with: `make repo_guard`
