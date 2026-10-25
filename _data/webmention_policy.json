@@ -1,7 +1,7 @@
 {
-  "approved_ids": [
+  "approved_ids": [],
+  "blocked_ids": [
     "2044163"
   ],
-  "blocked_ids": [],
   "trusted_origins": []
 }
