@@ -74,8 +74,9 @@ image-title: "Probable Data Center Locations"
 image_width: 1920
 image_height: 1080
 
-mastodon-post-id:
+mastodon-post-id: "116473964601861250"
 
+mastodon-post-url: "https://tschopp.net/@Ted/116473964601861250"
 ---
 
 The village had grown quickly. New roads stretched toward the hills. New wells

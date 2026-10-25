@@ -67,8 +67,9 @@ image-credits-artist-URL: https://tedt.org/
 image_width: 1672
 image_height: 941
 
-mastodon-post-id:
+mastodon-post-id: "116865546388404084"
 
+mastodon-post-url: "https://tschopp.net/@Ted/116865546388404084"
 ---
 
 ## 1. Status and Security Notice

@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/midjourney-v7-prompt-template/
 layout: prompt-details
 title: Midjourney Version 7 Prompt Generator Template
 description: A structured, weight-based system to generate high-quality prompts for

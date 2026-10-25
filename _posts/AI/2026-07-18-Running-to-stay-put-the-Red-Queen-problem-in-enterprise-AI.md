@@ -40,6 +40,8 @@ image-credits: "Ted Tschopp"
 image-credits-URL: https://tedt.org/
 image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: https://tedt.org/
+mastodon-post-id: "116944370729732145"
+mastodon-post-url: "https://tschopp.net/@Ted/116944370729732145"
 ---
 
 As an enterprise architect, I am used to target states. We describe the present and choose a destination. Then we plan the transitions between them. AI makes that habit uncomfortable. A target architecture approved this quarter can look dated before the funding clears. A vendor changes its model. A software product adds the feature we planned to build. A competitor cuts the time required to serve a customer. Employees adopt a different tool on their own.

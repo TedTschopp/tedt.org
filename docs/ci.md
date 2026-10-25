@@ -70,28 +70,25 @@ Informational output emitted during the gate:
 
 ## 2. Mastodon Feed Workflow (`mastodon-feed.yml`)
 
-Triggers:
+Runs after a successful trusted main deployment, every two hours, and through
+manual `audit`, `reconcile`, or `publish` dispatches. Publishing and automatic
+backfill are paused unless the repository rollout variables enable them.
 
-- `push` to `main`
-- Scheduled every 6 hours (`cron: 0 */6 * * *`)
-- Manual `workflow_dispatch`
+The shared Python runner reconciles Jekyll's complete eligible archive, preserves
+exact status IDs, restores verified discussion links, and groups merged prompt
+aliases by their final canonical URL. Live publication persists an intent and
+receipt on `mastodon-state` and creates at most one status per run. New content
+takes priority; archive catch-up is oldest first with a two-hour interval and a
+rolling limit of twelve archive announcements per day.
 
-Workflow logic:
+Verified website metadata commits explicitly dispatch deployment. Metadata-only
+deployment events are ignored by this workflow to avoid a loop. Failures produce
+Action errors and diagnostic artifacts; an uncertain receipt is reconciled before
+a retry can publish anything.
 
-1. Run `_code/should_post_latest.py` to decide if the latest piece of content needs a toot.
-2. If yes, use `nhoizey/github-action-feed-to-mastodon` to post from `feed-mastodon.json`.
-3. Update cache/front matter with returned toot URL using existing repository scripts.
-4. Commit any changes (cache / updated post front matter) automatically.
-
-Secrets Required:
-
-- `MASTODON_TOKEN` (saved in repo/organization secrets)
-
-Optional Improvements (not currently enabled):
-
-- Backfill / dedupe jobs (previously present) – intentionally removed for simplicity.
-- Retry / error alerting (could add a simple Slack webhook step if failures persist).
-- Multi-instance cross-posting (add additional steps with different tokens).
+See the [Mastodon runbook](mastodon-integration.md) for token scopes, pause
+switches, the single-item archive canary, recovery, and tests. `make mastodon_check`
+is a blocking site deployment check. Ordinary CI uses fixtures and never posts.
 
 ---
 
@@ -170,7 +167,7 @@ The answer is now explicit:
 
 - If a deployment gets stuck or cancelled by a new push, GitHub Pages uses the latest successful artifact.
 - To force a rebuild without code changes, use the "Run workflow" button (manual dispatch) or commit an empty change: `git commit --allow-empty -m 'chore: trigger deploy'`.
-- The Mastodon workflow will no-op (skip) if your decision script indicates the latest item was already posted.
+- The Mastodon workflow reports an empty queue or cooldown explicitly; it evaluates the complete eligible archive rather than only the latest front-matter ID.
 - The Substack workflow no-ops when all payload hashes already match the durable ledger; source deletion or disabled opt-in creates an alert rather than a remote deletion.
 - Pull request runs cancel older in-progress runs for the same ref to avoid spending runner time on superseded commits.
 - External link checking remains intentionally excluded from the blocking gate to avoid flaky deploy blockers.

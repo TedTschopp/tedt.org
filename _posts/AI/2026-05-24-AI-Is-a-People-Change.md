@@ -71,7 +71,8 @@ image-title: "AI Is a People Change"
 image_width: 1672
 image_height: 941
 
-mastodon-post-id:
+mastodon-post-id: "116631168897533089"
+mastodon-post-url: "https://tschopp.net/@Ted/116631168897533089"
 ---
 
 # AI Is a People Change, Not Just a Technology Change

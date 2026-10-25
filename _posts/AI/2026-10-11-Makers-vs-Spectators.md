@@ -69,8 +69,9 @@ image-title: "Makers vs. Spectators"
 image_width: 1672
 image_height: 941
 
-mastodon-post-id:
+mastodon-post-id: "117425180665283202"
 
+mastodon-post-url: "https://tschopp.net/@Ted/117425180665283202"
 ---
 
 *The enterprise examples in this post are hypothetical.*

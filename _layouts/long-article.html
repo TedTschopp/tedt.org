@@ -152,7 +152,7 @@
                     </div>
                 </main>
 
-                {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+                {% if page.mastodon-post-id or page.mastodon-post-url %}
                     {% include social/comments-mastodon-tree.html %}
                 {% endif %}
 

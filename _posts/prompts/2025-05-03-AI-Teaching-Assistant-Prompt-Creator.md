@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/ai-teaching-assistant-prompt-creator/
 layout: prompt-details
 title: AI Teaching Assistant Prompt Creator
 description: A structured dialogue-based prompt designed to help teachers build custom

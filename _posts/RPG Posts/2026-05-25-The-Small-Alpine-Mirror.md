@@ -64,9 +64,10 @@ mermaid: false
 order: null
 image_width: 1500
 image_height: 1000
-mastodon-post-id: null
+mastodon-post-id: "116640289894581298"
 article_class: small-alpine-mirror-page
 no_toc: true
+mastodon-post-url: "https://tschopp.net/@Ted/116640289894581298"
 ---
 *Composed by Magister Anselm Kappel, sometime schoolman of St. Veit’s Abbey, keeper of the lower archive, translator of toll charters, and unwilling witness to three miracles, two frauds, and one matter still under episcopal seal.*
 

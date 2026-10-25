@@ -22,4 +22,6 @@ deck_sha256: dcce8126961967cd2c10ca0957d91714abc05aea6a647bd85fa8252e846d34bf
 slide_count: 27
 aspect_ratio: 16:9
 accent_color: "#f0442e"
+mastodon-post-id: "117089589652259687"
+mastodon-post-url: "https://tschopp.net/@Ted/117089589652259687"
 ---

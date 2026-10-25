@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/universal-content-creator-demo/
 layout: prompt-details
 permalink: /prompts/:slug/
 title: Universal Content Creator - Variable Types Demo

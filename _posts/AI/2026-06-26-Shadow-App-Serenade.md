@@ -88,7 +88,8 @@ video:
   description: "Watch Shadow App Serenade."
   aspect: "16x9"
 
-mastodon-post-id:
+mastodon-post-id: "116817700903126238"
+mastodon-post-url: "https://tschopp.net/@Ted/116817700903126238"
 ---
 
 *Shadow App Serenade* is a sly, syncopated hip-hop musical-theater number with a playful surface and a nervous pulse underneath. The groove should feel like a secret being passed between desks: light percussion, plucked bass, muted piano, finger snaps, soft synth ticks, and tiny digital blips that mimic hidden automations running in the background.

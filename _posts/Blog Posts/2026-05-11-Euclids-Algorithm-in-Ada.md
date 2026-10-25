@@ -41,7 +41,8 @@ image-title: "Euclid's Algorithm Visualization"
 image_width: 1672 
 image_height: 941
 
-mastodon-post-id: null
+mastodon-post-id: "116560715526121926"
+mastodon-post-url: "https://tschopp.net/@Ted/116560715526121926"
 ---
 _**Bottom Line Up Front:** This is a cleaned-up version of an old CS 140 assignment: compute the greatest common divisor of two positive integers using Euclid's algorithm._
 

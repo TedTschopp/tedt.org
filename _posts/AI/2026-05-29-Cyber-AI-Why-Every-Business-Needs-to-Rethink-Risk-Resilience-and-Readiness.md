@@ -76,7 +76,8 @@ image_height: 941
 
 mathjax: false
 mermaid: false
-mastodon-post-id: null
+mastodon-post-id: "116661488181718686"
+mastodon-post-url: "https://tschopp.net/@Ted/116661488181718686"
 ---
 
 # Cyber+AI: Why Every Business Needs to Rethink Risk, Resilience, and Readiness

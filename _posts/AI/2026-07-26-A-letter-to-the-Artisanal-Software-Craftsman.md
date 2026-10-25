@@ -39,6 +39,8 @@ image-credits: "Ted Tschopp"
 image-credits-URL: https://tedt.org/
 image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: https://tedt.org/
+mastodon-post-id: "116990712379435945"
+mastodon-post-url: "https://tschopp.net/@Ted/116990712379435945"
 ---
 
 

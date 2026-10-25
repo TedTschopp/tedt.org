@@ -20,11 +20,12 @@ def jekyll_site
 end
 
 def expected_posts_for(site, slug, entry, limit)
-  category_names = [slug, entry['title'], *Array(entry['raw_names'])].compact.map { |name| name.to_s.strip }.reject(&:empty?)
+  # Registry category aliases are case-insensitive, including mixed-case spellings.
+  category_names = [slug, entry['title'], *Array(entry['raw_names'])].compact.map { |name| name.to_s.strip.downcase }.reject(&:empty?)
 
   site.posts.docs
     .select do |doc|
-      doc_categories = Array(doc.data['categories']).map { |category| category.to_s.strip }
+      doc_categories = Array(doc.data['categories']).map { |category| category.to_s.strip.downcase }
       !(doc_categories & category_names).empty?
     end
     .sort_by { |doc| doc.date || Time.at(0) }

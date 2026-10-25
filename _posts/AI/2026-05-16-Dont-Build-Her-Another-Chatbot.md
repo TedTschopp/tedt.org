@@ -74,7 +74,8 @@ image-title: "Linda at the Center of the Work"
 image_width: 1672
 image_height: 941
 
-mastodon-post-id:
+mastodon-post-id: "116587828652998957"
+mastodon-post-url: "https://tschopp.net/@Ted/116587828652998957"
 ---
 
 The meeting usually starts the same way.

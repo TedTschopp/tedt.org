@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/product-requirements-document-prd-template/
 layout: prompt-details
 permalink: /prompts/:slug/
 

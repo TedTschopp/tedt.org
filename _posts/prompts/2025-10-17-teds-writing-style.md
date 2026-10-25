@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/skills/ted-writing-style/
 layout: prompt-details
 permalink: /prompts/:slug/
 

@@ -72,8 +72,9 @@ image_width: 2108
 image_height: 1186
 
 
-mastodon-post-id:
+mastodon-post-id: "116546012251896563"
 
+mastodon-post-url: "https://tschopp.net/@Ted/116546012251896563"
 ---
 
 My son attends the Duarte Performing Arts School. He had to do a stage performance a couple weeks back.  Everyone in the family attended.

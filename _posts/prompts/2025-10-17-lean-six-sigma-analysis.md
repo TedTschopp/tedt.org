@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/lean-six-sigma-analysis/
 layout: prompt-details
 permalink: /prompts/:slug/
 
