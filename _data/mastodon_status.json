@@ -1,5 +1,5 @@
 {
-  "backfill_enabled": false,
+  "backfill_enabled": true,
   "completion_percent": 4.7,
   "confirmed_publications": 1,
   "current_missing": 961,
@@ -7,21 +7,19 @@
   "has_history": true,
   "initial_missing": 1008,
   "last_publication_at": "2026-10-25T17:27:57.732Z",
-  "last_reconciliation_at": "2026-10-25T17:38:45Z",
-  "last_run_at": "2026-10-25T17:38:45Z",
-  "last_updated": "2026-10-25T17:38:45Z",
+  "last_reconciliation_at": "2026-10-25T17:41:22Z",
+  "last_run_at": "2026-10-25T17:41:22Z",
+  "last_updated": "2026-10-25T17:41:22Z",
   "publication_enabled": true,
   "remaining": 961,
   "result": {
     "archive_canary": false,
     "dry_run": false,
-    "mode": "publish",
+    "mode": "reconcile",
     "online": true,
-    "published": false,
-    "reason": "global_cooldown",
     "updated_sources": 0
   },
-  "runs": 3,
+  "runs": 4,
   "states": {
     "missing": 161,
     "pending": 800,
