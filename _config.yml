@@ -25,6 +25,7 @@ exclude:
 # The Git branch remains readable; never store credentials or subscriber data here.
 - cache/substack-sync.json
 - cache/mastodon-ledger.json
+- cache/webmention-outbox.json
 - bootstrap-5.3.2.tgz
 # Keep the Game Theory planning roadmap out of the generated website.
 - game-theory/NEXT-STEPS.md
@@ -605,3 +606,9 @@ links:
 #     - label: 'example three'
 #       url: https://example.com
 #
+
+# Public IndieWeb discovery; credentials belong in Actions secrets.
+indieweb:
+  webmention_endpoint: https://webmention.io/tedt.org/webmention
+  authorization_endpoint: https://indieauth.com/auth
+  token_endpoint: https://tokens.indieauth.com/token

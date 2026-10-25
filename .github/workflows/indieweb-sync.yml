@@ -1,0 +1,79 @@
+name: IndieWeb incoming mentions
+
+on:
+  schedule:
+    - cron: '19 * * * *'
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Refresh mentions or approve/block one record
+        type: choice
+        options: [sync, approve, block]
+        default: sync
+      mention_id:
+        description: Numeric Webmention ID for approve/block
+        type: string
+        default: ''
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: indieweb-metadata
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Test synchronization and delivery rules
+        run: |
+          bundle exec ruby tests/indieweb_test.rb
+          python3 tests/test_indieweb_artifact.py
+      - name: Build canonical URL and alias inventory
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --quiet
+      - name: Apply a moderation decision
+        if: inputs.mode == 'approve' || inputs.mode == 'block'
+        env:
+          MODE: ${{ inputs.mode }}
+          MENTION_ID: ${{ inputs.mention_id }}
+        run: bundle exec ruby _code/indieweb.rb "$MODE" --id "$MENTION_ID"
+      - name: Refresh complete public snapshot
+        env:
+          WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
+        run: bundle exec ruby _code/indieweb.rb sync
+      - name: Check updated rendering
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --quiet
+          bundle exec ruby tests/check_indieweb_rendering.rb _site
+      - name: Save approved metadata and request deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          git add _data/webmentions.json _data/webmention_policy.json
+          if git diff --cached --quiet; then
+            echo 'No public metadata changes.'
+            exit 0
+          fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(indieweb): refresh approved metadata [skip mastodon]'
+          git pull --rebase origin main
+          git push origin HEAD:main
+          # GITHUB_TOKEN pushes do not trigger another workflow automatically.
+          gh workflow run deploy.yml --ref main --field indieweb_cache_only=true

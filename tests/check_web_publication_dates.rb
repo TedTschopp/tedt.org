@@ -13,6 +13,7 @@ CUTOFF = Date.new(2003, 1, 1)
 errors = []
 historical_documents = []
 historical_quotes = []
+source_dated_quotes = []
 
 Dir.glob(File.join(ROOT, '_posts', '**', '*.{md,html}')).sort.each do |path|
   source = File.read(path)
@@ -27,6 +28,7 @@ Dir.glob(File.join(ROOT, '_posts', '**', '*.{md,html}')).sort.each do |path|
   end
 
   next if data['published'] == false
+  source_dated_quotes << path if data['layout'] == 'quote' && data['web_published_at']
 
   raw_source_date = data['date'] || File.basename(path)[/\A(\d{4}-\d{2}-\d{2})-/, 1]
   next unless raw_source_date
@@ -83,8 +85,8 @@ else
     end
   end
 
-  if rendered_source_dates != historical_quotes.length
-    errors << "Rendered #{rendered_source_dates} source-dated quotes; expected #{historical_quotes.length}"
+  if rendered_source_dates != source_dated_quotes.length
+    errors << "Rendered #{rendered_source_dates} source-dated quotes; expected #{source_dated_quotes.length}"
   end
 
   atom_path = File.join(site_dir, 'atom.xml')

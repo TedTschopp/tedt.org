@@ -1,0 +1,73 @@
+name: IndieWeb outgoing mentions
+
+on:
+  workflow_run:
+    workflows: ['Site Quality \+ Deploy']
+    types: [completed]
+    branches: [main]
+  schedule:
+    - cron: '47 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: read
+
+concurrency:
+  group: indieweb-metadata
+  cancel-in-progress: false
+
+jobs:
+  send:
+    if: >-
+      github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main' &&
+       github.event.workflow_run.head_repository.full_name == github.repository &&
+       github.event.workflow_run.path == '.github/workflows/deploy.yml' &&
+       (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch') &&
+       github.event.workflow_run.display_title != 'IndieWeb cache refresh'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Load delivery state independently of the site branch
+        run: bash _code/webmention_state.sh load
+      - name: Download the actual successful deployment artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DEPLOY_RUN_ID: ${{ github.event.workflow_run.id }}
+        run: |
+          set -euo pipefail
+          gh run download "$DEPLOY_RUN_ID" --repo "$GITHUB_REPOSITORY" --name github-pages --dir "${{ runner.temp }}/indieweb-artifacts"
+      - name: Read bounded article data without extracting archive paths
+        run: python3 _code/read_webmention_artifact.py "$RUNNER_TEMP/indieweb-artifacts/artifact.tar" "$RUNNER_TEMP/indieweb-pages.jsonl"
+      - name: Notify links from the deployed content
+        run: bundle exec ruby _code/indieweb.rb send --input "$RUNNER_TEMP/indieweb-pages.jsonl" --live
+      - name: Persist delivery receipts on the state branch
+        run: bash _code/webmention_state.sh save
+
+  retry:
+    if: github.event_name != 'workflow_run' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Load delivery state
+        run: bash _code/webmention_state.sh load
+      - name: Retry pending deliveries
+        run: bundle exec ruby _code/indieweb.rb send --retry --live
+      - name: Persist delivery receipts on the state branch
+        run: bash _code/webmention_state.sh save

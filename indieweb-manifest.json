@@ -1,0 +1,17 @@
+---
+layout: null
+permalink: /indieweb-manifest.json
+sitemap: false
+---
+{%- assign entry_layouts = 'post,long-article,gammaworld,quote,slide-deck,reveal-integrated,micropubpost,folklore-story' | split: ',' -%}
+{%- assign entry_documents = site.posts | concat: site.pages -%}
+{"version":1,"entries":[
+{%- assign first_entry = true -%}
+{%- for document in entry_documents -%}
+  {%- if entry_layouts contains document.layout and document.redirect_to == nil -%}
+    {%- unless first_entry -%},{%- endunless -%}
+    {%- assign first_entry = false -%}
+    {"url":{{ document.url | absolute_url | jsonify }},"published":{% if document.date or document.web_published_at %}{{ document.web_published_at | default: document.date | date_to_xmlschema | jsonify }}{% else %}null{% endif %},"aliases":{% if document.redirect_from %}{{ document.redirect_from | jsonify }}{% else %}[]{% endif %}}
+  {%- endif -%}
+{%- endfor -%}
+]}

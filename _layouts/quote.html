@@ -95,7 +95,7 @@
                     {% endif %}
                   </p>
                   {% if page.source-url and page.source %}
-                    <p class="mb-2">Source: <a class="u-url" href="{{ page.source-url }}" target="_new" rel="noopener">{{ page.source }}</a></p>
+                    <p class="mb-2">Source: <a class="u-cite" href="{{ page.source-url }}" target="_new" rel="noopener">{{ page.source }}</a></p>
                   {% elsif page.source %}
                     <p class="mb-2">Source: {{ page.source }}</p>
                   {% endif %}
@@ -114,11 +114,11 @@
                   {% assign __quote_author_name = page.author | default: 'Unknown' %}
                   {% assign __quote_author_url = nil %}
                 {% endif %}
-                <figure class="mb-4">
+                <figure class="mb-4 e-content">
                   <blockquote class="blockquote fs-4">{{ __quote_text | markdownify }}</blockquote>
                   <figcaption class="blockquote-footer mt-2">
-                    <span class="quote-source-author">Quote by
-                      <cite>{% if __quote_author_url %}<a href="{{ __quote_author_url }}">{{ __quote_author_name }}</a>{% else %}{{ __quote_author_name }}{% endif %}</cite>
+                    <span class="quote-source-author p-author h-card">Quote by
+                      <cite class="p-name">{% if __quote_author_url %}<a class="u-url" href="{{ __quote_author_url | escape }}">{{ __quote_author_name | escape }}</a>{% else %}{{ __quote_author_name | escape }}{% endif %}</cite>
                     </span>
                     {% if page.tags and page.tags != '' %}<span class="ms-2">• {{ page.tags }}</span>{% endif %}
                   </figcaption>
@@ -159,7 +159,8 @@
                   </div>
                 {% endif %}
 
-                <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
+                <a class="u-url u-uid small" href="{{ page.url | absolute_url }}">Permalink</a>
+                {% include social/syndication-links.html %}
               </div>
             </article>
 

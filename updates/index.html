@@ -1,0 +1,32 @@
+---
+layout: page
+title: Recent Articles and Writing
+description: "Read Ted Tschopp’s latest articles, essays, quotations, folklore, and presentations, with links to each piece and options for subscribing."
+date: 2026-10-25
+last_modified_at: 2026-10-25
+permalink: /updates/
+---
+<div class="h-feed">
+  <p class="p-name">Recent writing from Ted Tschopp</p>
+  <a class="u-url" href="{{ '/updates/' | absolute_url }}">Feed permalink</a>
+  <p>Subscribe with <a href="{{ '/rss.xml' | relative_url }}">RSS</a>, <a href="{{ '/atom.xml' | relative_url }}">Atom</a>, or <a href="{{ '/feed.json' | relative_url }}">JSON Feed</a>.</p>
+  {%- comment -%} Sort once by the actual web publication date, including reprints with historical source dates. {%- endcomment -%}
+  {%- assign entry_documents = site.posts | sort: 'date' -%}
+  {%- capture publication_order -%}
+    {%- for document in entry_documents -%}
+      {%- unless document.redirect_to or document.layout == 'prompt-details' -%}
+        {{- document.web_published_at | default: document.date | date: '%Y%m%d%H%M%S' -}}:{{- forloop.index0 -}}|
+      {%- endunless -%}
+    {%- endfor -%}
+  {%- endcapture -%}
+  {%- assign recent_order = publication_order | split: '|' | sort | reverse -%}
+  {% for publication_key in recent_order limit: 36 %}
+    {% assign document_index = publication_key | split: ':' | last | plus: 0 %}
+    {% assign document = entry_documents[document_index] %}
+    <article class="h-entry my-4">
+      <h2 class="h4 p-name"><a class="u-url" href="{{ document.url | absolute_url | escape }}">{{ document.title | escape }}</a></h2>
+      <p class="small">Published <time class="dt-published" datetime="{{ document.web_published_at | default: document.date | date_to_xmlschema }}">{{ document.web_published_at | default: document.date | date: '%B %-d, %Y' }}</time> · {% include utility/author-byline.html page=document prefix='' show_avatar=false %}</p>
+      <div class="p-summary">{{ document.description | default: document.excerpt | strip_html | truncatewords: 60 | escape }}</div>
+    </article>
+  {% endfor %}
+</div>

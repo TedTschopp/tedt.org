@@ -16,7 +16,8 @@
 
 {%- include utility/resolve-authors.html page=include.page -%}
 
-{%- assign _show_avatar = include.show_avatar | default: true -%}
+{%- assign _show_avatar = include.show_avatar -%}
+{%- if _show_avatar == nil -%}{%- assign _show_avatar = true -%}{%- endif -%}
 {%- assign _separator = include.separator | default: " and " -%}
 {%- if include.prefix == nil -%}
   {%- assign _prefix = "by " -%}
@@ -38,11 +39,13 @@
     {%- assign _avatar = nil -%}
   {%- endif -%}
 
+  {%- assign _avatar_prefix = _avatar | slice: 0, 2 -%}
+  {%- if _avatar_prefix == '//' -%}{%- assign _avatar = _avatar | prepend: 'https:' -%}{%- endif -%}
+
   {%- if _name == site.profile.name -%}
     {%- assign _url = '/profile/' | relative_url -%}
   {%- endif -%}
   
-  {%- if _url -%}
-<a rel="author" class="p-author h-card" href="{{ _url }}">{%- if _show_avatar and _avatar -%}<img src="{{ _avatar }}" class="u-photo author-avatar" loading="lazy" alt="{{ _name | escape }} avatar" style="width: 1.5em; height: 1.5em; border-radius: 50%; vertical-align: middle; margin-right: 0.25em;">{%- endif -%}{{ _name }}</a>{%- else -%}<span class="p-author h-card">{%- if _show_avatar and _avatar -%}<img src="{{ _avatar }}" class="u-photo author-avatar" loading="lazy" alt="{{ _name | escape }} avatar" style="width: 1.5em; height: 1.5em; border-radius: 50%; vertical-align: middle; margin-right: 0.25em;">{%- endif -%}{{ _name }}</span>{%- endif -%}{%- unless forloop.last -%}{{ _separator }}{%- endunless -%}
+<span class="p-author h-card">{% if _url %}<a class="u-url" rel="author" href="{{ _url | escape }}">{% endif %}{% if _show_avatar and _avatar %}<img src="{{ _avatar | escape }}" class="u-photo author-avatar" loading="lazy" alt="{{ _name | escape }} avatar" style="width: 1.5em; height: 1.5em; border-radius: 50%; vertical-align: middle; margin-right: 0.25em;">{% endif %}<span class="p-name">{{ _name | escape }}</span>{% if _url %}</a>{% endif %}</span>{%- unless forloop.last -%}{{ _separator }}{%- endunless -%}
 {%- endfor -%}</span>
 {%- endif -%}
