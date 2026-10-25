@@ -36,6 +36,8 @@ image-artist: "Ted Tschopp with OpenAI image generation"
 image-artist-URL: "https://tedt.org/"
 image_width: 1672
 image_height: 941
+mastodon-post-id: "117503911118511086"
+mastodon-post-url: "https://tschopp.net/@Ted/117503911118511086"
 ---
 
 [Source PDF](https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf)
