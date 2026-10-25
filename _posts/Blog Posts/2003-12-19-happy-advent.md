@@ -45,7 +45,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017513557078745'
+mastodon-post-id: "117502723865429564"
+mastodon-post-url: "https://tschopp.net/@Ted/117502723865429564"
 ---
 A couple weeks ago I went to Disneyland with my sister, her husband James and her friend Eric from College.
 
