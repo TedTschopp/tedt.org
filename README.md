@@ -991,3 +991,7 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Contact
 
 For questions or feedback, you can reach me via [Mastodon](https://twit.social/@tedt) or through the contact form on the site.
+
+### IndieWeb restoration
+
+Public article responses use a moderated static Webmention cache. See [IndieWeb operations](docs/indieweb.md) for refresh, approval, blocking, verified social links, delivery retries, and live qualification. The chronological microformats feed is `/updates/`.

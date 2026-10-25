@@ -27,11 +27,12 @@
     <div class="row g-4 g-xl-5 align-items-start footer-main-row">
       <div class="col-12 col-lg-4 col-xl-3">
         <section class="footer-profile-card text-center text-lg-start">
+          <a class="u-url u-uid visually-hidden" href="{{ '/' | absolute_url }}">{{ profile_name | escape }} home page</a>
           <div class="footer-avatar-wrap mb-3">
             <img src="{{ profile_avatar }}" class="footer-avatar rounded-circle img-thumbnail intro-image-avatar photo u-photo" alt="Photo of {{ profile_name }}">
           </div>
-          <a class="footer-name-link d-inline-flex align-items-center justify-content-center justify-content-lg-start mb-2 text-decoration-none u-url u-uid" href="{{ profile_url }}" rel="me">
-            <span class="h4 mb-0 fs-5 fnp-name">
+          <a class="footer-name-link d-inline-flex align-items-center justify-content-center justify-content-lg-start mb-2 text-decoration-none u-url" href="{{ profile_url }}" rel="me">
+            <span class="h4 mb-0 fs-5 fn p-name">
               {% if profile_givenname != '' or profile_familyname != '' %}
                 <span class="p-given-name">{{ profile_givenname }}</span>
                 <span class="p-family-name">{{ profile_familyname }}</span>
@@ -117,6 +118,7 @@
       <div class="col-12 col-lg-5 text-center text-lg-start">
         <ul class="list-inline footer-meta-links mb-0">
           <li class="list-inline-item"><a href="{{ site.url }}/About/">About</a></li>
+          <li class="list-inline-item"><a href="{{ '/webmentions/' | relative_url }}">Webmentions</a></li>
           <li class="list-inline-item">&sdot;</li>
           <li class="list-inline-item"><a href="{{ site.url }}/Terms-of-Use/">Terms of Use</a></li>
           <li class="list-inline-item">&sdot;</li>

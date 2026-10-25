@@ -94,7 +94,8 @@
                         </div>
                         <div class="card-body rounded-top-0 p-0 h-100{% if __article_class != '' %} {{ __article_class | escape }}{% endif %}">
                            
-                            <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
+                            {% include seo/entry-metadata.html %}
+                            {% include social/syndication-links.html %}
 
                                 {%- comment -%}
                                     TOC placement experiment: Move TOC into normal flow (full-width) directly above

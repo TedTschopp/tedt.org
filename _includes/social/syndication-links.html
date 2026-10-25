@@ -1,0 +1,15 @@
+{%- assign syndication_urls = '' | split: ',' -%}
+{%- if page.mastodon-post-url -%}
+  {%- assign mastodon_url = page.mastodon-post-url | split: '__no_such_separator__' -%}
+  {%- assign syndication_urls = syndication_urls | concat: mastodon_url -%}
+{%- endif -%}
+{%- if page.mf-syndication -%}{%- assign syndication_urls = syndication_urls | concat: page.mf-syndication -%}{%- endif -%}
+{%- assign syndication_urls = syndication_urls | uniq -%}
+{%- if syndication_urls.size > 0 -%}
+<p class="small syndication-links">Also published on:
+  {% for syndication_url in syndication_urls %}
+    {% assign syndication_prefix = syndication_url | slice: 0, 8 %}
+    {% if syndication_prefix == 'https://' %}<a class="u-syndication" href="{{ syndication_url | escape }}" rel="syndication noopener">{{ syndication_url | remove_first: 'https://' | split: '/' | first | escape }}</a>{% unless forloop.last %} · {% endunless %}{% endif %}
+  {% endfor %}
+</p>
+{%- endif -%}

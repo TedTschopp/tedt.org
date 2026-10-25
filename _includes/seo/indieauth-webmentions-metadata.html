@@ -66,7 +66,7 @@
     {% endif %}
     
     <!-- Webmentions -->
-    <link rel="webmention" href="https://webmention.io/tedt.org/webmention" />
+    <link rel="webmention" href="{{ site.indieweb.webmention_endpoint | default: 'https://webmention.io/tedt.org/webmention' | escape }}" />
     <link rel="pingback" href="https://webmention.io/tedt.org/xmlrpc" />
 
     <!-- Indieauth.com/ 
@@ -74,6 +74,8 @@
          The token endpoint to verify the micropub token against. See: https://indieweb.org/token-endpoint
     -->
 
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
-    <!--- <link href="https://micropub-to-github-for-ted.herokuapp.com/micropub/main" rel="micropub"> --->
+    <link rel="authorization_endpoint" href="{{ site.indieweb.authorization_endpoint | default: 'https://indieauth.com/auth' | escape }}">
+    <link rel="token_endpoint" href="{{ site.indieweb.token_endpoint | default: 'https://tokens.indieauth.com/token' | escape }}">
+
+
+{% for identity_url in site.profile.same_as %}<link rel="me" href="{{ identity_url | escape }}">{% endfor %}

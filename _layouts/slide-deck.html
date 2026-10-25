@@ -21,6 +21,7 @@
       Skip to presentation
     </a>
 
+    <article class="h-entry slide-deck-entry">
     <header class="slide-deck-sitebar">
       <a class="slide-deck-back" href="{{ '/slides/' | relative_url }}" aria-label="Back to all presentations">
         <span aria-hidden="true">←</span>
@@ -28,7 +29,7 @@
       </a>
 
       <div class="slide-deck-identity">
-        <h1>{{ page.title | escape }}</h1>
+        <h1 class="p-name">{{ page.title | escape }}</h1>
         <p>
           {% if page.slide_count %}
             {{ page.slide_count }} slides
@@ -60,7 +61,9 @@
       {% endif %}
     </header>
 
-    <main class="slide-deck-stage" id="presentation">
+    <div class="container small py-2">{% include seo/entry-metadata.html %}{% include utility/author-byline.html page=page %}{% include social/syndication-links.html %}</div>
+    <main class="slide-deck-stage e-content" id="presentation">
+      {% if page.description %}<p class="visually-hidden">{{ page.description | escape }}</p>{% endif %}
       {% if page.deck_url %}
         <iframe
           class="slide-deck-frame"
@@ -85,5 +88,7 @@
         </section>
       {% endif %}
     </main>
+    </article>
+    <div class="container slide-deck-discussion py-4">{% include social/comments-webmentions.html %}</div>
   </body>
 </html>

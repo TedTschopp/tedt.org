@@ -7,13 +7,19 @@ html.layout-slide-deck body {
 }
 
 body.slide-deck-page {
-  display: grid;
-  grid-template-rows: auto minmax(0, 1fr);
+  display: block;
   min-height: 100%;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   background: #0d0f0e;
   color: #f8f7f3;
+}
+
+.slide-deck-entry {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  height: 100svh;
+  min-height: 36rem;
 }
 
 .slide-deck-skip-link {
@@ -466,6 +472,12 @@ body.slide-deck-page {
   body.slide-deck-page {
     display: block;
     overflow: visible;
+  }
+
+  .slide-deck-entry {
+    display: block;
+    height: auto;
+    min-height: 0;
   }
 
   .slide-deck-sitebar,

@@ -1,32 +1,43 @@
-<section id="webmentions-section" class="webmentions-content">
-    <h2 id="Webmentions-Header">Webmentions</h2>
-    <p>Connect your blog or website to this post via <a href="https://www.w3.org/TR/webmention/">Webmentions</a>. Link to this article and your response will appear below, fostering a web-wide discussion. Supports comments, likes, and reposts from any Webmention-enabled site.</p>
-  
-    <p id="webmentions-comments-list"></p>
-    <div id="webmentions-comments-wrapper">
-      <noscript><p>Loading comments relies on JavaScript. Try enabling JavaScript and reloading.</p></noscript>
+{%- assign mention_path = include.target_path | default: page.url -%}
+{%- assign mention_target = mention_path | absolute_url -%}
+{%- assign mention_groups = site.data.webmentions.by_target[mention_target] -%}
+<section id="webmentions-section" class="webmentions-content my-4" aria-labelledby="Webmentions-Header">
+  <span id="webmention_thread" aria-hidden="true"></span>
+  <h2 id="Webmentions-Header">Webmentions</h2>
+  <p>Reply on your own website and link to <a href="{{ mention_target | escape }}">this article</a>. Send a <a href="https://www.w3.org/TR/webmention/">Webmention</a> to let me know. Verified responses from trusted sources appear after the next refresh; other responses are reviewed first.</p>
+  <div id="webmentions">
+    {%- assign mention_count = 0 -%}
+    {%- assign mention_types = 'replies,mentions,likes,reposts,bookmarks,rsvps,follows' | split: ',' -%}
+    {%- assign mention_headings = 'Replies,Mentions,Likes,Reposts,Bookmarks,RSVPs,Follows' | split: ',' -%}
+    {%- for mention_type in mention_types -%}
+      {%- assign mentions = mention_groups[mention_type] -%}
+      {%- assign mention_count = mention_count | plus: mentions.size -%}
+      {% if mentions.size > 0 %}
+      <section class="webmentions-group mb-3" aria-labelledby="webmentions-{{ mention_type }}">
+        <h3 id="webmentions-{{ mention_type }}" class="h5">{{ mention_headings[forloop.index0] }} <span class="text-body-secondary">({{ mentions.size }})</span></h3>
+        <ul class="list-unstyled webmentions-list">
+          {% for mention in mentions %}
+          <li id="webmention-{{ mention.id | escape }}" class="mb-3">
+            <p class="mb-1"><a href="{{ mention.source | escape }}" rel="nofollow ugc">{{ mention.author.name | default: 'A reader' | escape }}</a>{% if mention.published %} <time class="small text-body-secondary" datetime="{{ mention.published | escape }}">{{ mention.published | date: '%B %-d, %Y' }}</time>{% endif %}{% if mention.rsvp %} — {{ mention.rsvp | escape }}{% endif %}</p>
+            {% if mention.content != '' %}<p class="webmention-text mb-1">{{ mention.content | escape | newline_to_br }}</p>{% elsif mention.name != '' %}<p class="mb-1">{{ mention.name | escape }}</p>{% endif %}
+            {% if mention.url != mention.source %}<a class="small" href="{{ mention.url | escape }}" rel="nofollow ugc">Original response</a>{% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      {% endif %}
+    {%- endfor -%}
+    {% if mention_count == 0 %}<p class="text-body-secondary">No approved Webmentions yet.</p>{% endif %}
+  </div>
+  <form class="webmention-form" action="{{ site.indieweb.webmention_endpoint | default: 'https://webmention.io/tedt.org/webmention' | escape }}" method="post" data-webmention-form>
+    <label class="form-label" for="webmention-source">URL of your response</label>
+    <div class="d-flex flex-wrap gap-2">
+      <input id="webmention-source" type="url" name="source" class="form-control webmention-source" placeholder="https://your-site.example/post" required aria-describedby="webmention-help">
+      <button class="btn btn-primary" type="submit">Send Webmention</button>
     </div>
-    <noscript>You need JavaScript to view the comments.</noscript>
-
-    <div class="well">
-        <form class="webmention-form ui form" action="https://webmention.io/tedt.org/webmention" method="post">
-            <div class="fields">
-                <div class="twelve wide field">
-                    <label>Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the URL:</label><br>
-                    <input type="url" name="source" class="url" aria-label="URL of your response" placeholder="https://your-site.example/post" required>
-                    <label>&nbsp;</label>
-                    <input type="submit" class="ui submit button" value="Send Webmention">
-                </div>
-            </div>
-            <div class="status hidden">
-                <div class="ui message"></div>
-            </div>
-            <input type="hidden" name="target" value="{{page.url}}">
-        </form>
-        <style>
-            #webmentions img { max-height: 1.2em; margin-right: -1ex; }
-        </style>
-        <div id="webmentions" class="webmentions">
-        </div>
-    </div>
+    <p id="webmention-help" class="form-text">Your page must contain a link to this article. Submission queues it for verification and moderation.</p>
+    <input type="hidden" name="target" value="{{ mention_target | escape }}">
+    <p class="webmention-status" role="status" aria-live="polite"></p>
+  </form>
+  <script src="{{ '/js/webmention-form.js' | relative_url }}" defer></script>
 </section>

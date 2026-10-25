@@ -1,0 +1,260 @@
+{
+  "version": 1,
+  "by_target": {
+    "https://tedt.org/": {
+      "replies": [],
+      "mentions": [
+        {
+          "id": "592781",
+          "source": "https://brid-gy.appspot.com/post/twitter/TedTschopp/1099325274968256513",
+          "url": "https://twitter.com/kara_querl/status/1099325274968256513",
+          "author": {
+            "name": "Supergirl and Brainiac 5 (+ Nia)",
+            "url": "https://twitter.com/kara_querl"
+          },
+          "type": "mention-of",
+          "published": "2019-02-23T15:09:04+00:00",
+          "name": "",
+          "content": "I’ve accepted a challenge from \n\n@dranj70 \n\n  to post 7 covers of books I love: no explanations or reviews - just the covers. Each time I post a cover, I hope someone else takes up the challenge. 1 cover a day for a week! Day 1 @TedTschopp",
+          "rsvp": null
+        },
+        {
+          "id": "1780487",
+          "source": "https://ap.brid.gy/convert/web/https://twit.social/184c9c55-d488-4b09-880f-7898e8f16e64",
+          "url": "https://twit.social/users/TedT#followed-tedt.org",
+          "author": {
+            "name": "Ted Tschopp",
+            "url": "https://twit.social/@TedT"
+          },
+          "type": "mention-of",
+          "published": "2024-02-13T12:05:29Z",
+          "name": "",
+          "content": "",
+          "rsvp": null
+        }
+      ],
+      "likes": [],
+      "reposts": [],
+      "bookmarks": [],
+      "rsvps": [],
+      "follows": []
+    },
+    "https://tedt.org/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/": {
+      "replies": [
+        {
+          "id": "527361",
+          "source": "https://brid-gy.appspot.com/comment/twitter/TedTschopp/1007025821482012672/1007040877125165056",
+          "url": "https://twitter.com/kara_querl/status/1007040877125165056",
+          "author": {
+            "name": "Supergirl and Brainiac 5",
+            "url": "https://time.graphics//line/65273"
+          },
+          "type": "in-reply-to",
+          "published": "2018-06-13T23:23:49+00:00",
+          "name": "",
+          "content": "I'm game (get it) ;-)🌽🌽🌽",
+          "rsvp": null
+        }
+      ],
+      "mentions": [
+        {
+          "id": "527343",
+          "source": "https://brid-gy.appspot.com/post/twitter/TedTschopp/1007026445783191552",
+          "url": "https://twitter.com/TheoTheSilly/status/1007026445783191552",
+          "author": {
+            "name": "†hêð†hê§ïll¥",
+            "url": "https://twitter.com/TheoTheSilly"
+          },
+          "type": "mention-of",
+          "published": "2018-06-13T22:26:28+00:00",
+          "name": "",
+          "content": "This looks great!",
+          "rsvp": null
+        }
+      ],
+      "likes": [
+        {
+          "id": "527344",
+          "source": "https://brid-gy.appspot.com/like/twitter/TedTschopp/1007025821482012672/91637394",
+          "url": "https://twitter.com/TedTschopp/status/1007025821482012672#favorited-by-91637394",
+          "author": {
+            "name": "†hêð†hê§ïll¥",
+            "url": "https://twitter.com/TheoTheSilly"
+          },
+          "type": "like-of",
+          "published": "2018-06-13T22:36:44Z",
+          "name": "",
+          "content": "",
+          "rsvp": null
+        },
+        {
+          "id": "527360",
+          "source": "https://brid-gy.appspot.com/like/twitter/TedTschopp/1007025821482012672/954181509375840256",
+          "url": "https://twitter.com/TedTschopp/status/1007025821482012672#favorited-by-954181509375840256",
+          "author": {
+            "name": "Supergirl and Brainiac 5",
+            "url": "https://twitter.com/kara_querl"
+          },
+          "type": "like-of",
+          "published": "2018-06-13T23:40:05Z",
+          "name": "",
+          "content": "",
+          "rsvp": null
+        },
+        {
+          "id": "527445",
+          "source": "https://brid-gy.appspot.com/like/twitter/TedTschopp/1007025821482012672/877462652158709760",
+          "url": "https://twitter.com/TedTschopp/status/1007025821482012672#favorited-by-877462652158709760",
+          "author": {
+            "name": "Lich Zoluan",
+            "url": "https://twitter.com/DnD_Lich"
+          },
+          "type": "like-of",
+          "published": "2018-06-14T08:48:57Z",
+          "name": "",
+          "content": "",
+          "rsvp": null
+        },
+        {
+          "id": "527475",
+          "source": "https://brid-gy.appspot.com/like/twitter/TedTschopp/1007025821482012672/937903560955711488",
+          "url": "https://twitter.com/TedTschopp/status/1007025821482012672#favorited-by-937903560955711488",
+          "author": {
+            "name": "Aubrey",
+            "url": "https://twitter.com/_Snarfy_"
+          },
+          "type": "like-of",
+          "published": "2018-06-14T13:59:43Z",
+          "name": "",
+          "content": "",
+          "rsvp": null
+        }
+      ],
+      "reposts": [
+        {
+          "id": "527479",
+          "source": "https://brid-gy.appspot.com/repost/twitter/TedTschopp/1007025821482012672/1007179376931344384",
+          "url": "https://twitter.com/DnD_Lich/status/1007179376931344384",
+          "author": {
+            "name": "Lich Zoluan",
+            "url": "https://twitter.com/DnD_Lich"
+          },
+          "type": "repost-of",
+          "published": "2018-06-14T08:34:10+00:00",
+          "name": "",
+          "content": "Work in progress in getting D&D rules for Gamma World Weapons.\n\n\n\ntedt.org/2018/04/22/Dun…",
+          "rsvp": null
+        }
+      ],
+      "bookmarks": [],
+      "rsvps": [],
+      "follows": []
+    },
+    "https://tedt.org/The-Student-Who-Taught-Herself/": {
+      "replies": [
+        {
+          "id": "1913563",
+          "source": "https://brid.gy/comment/mastodon/@ted@tschopp.net/114497428586613439/114570748145963382",
+          "url": "https://tschopp.net/@Ted/114570748145963382",
+          "author": {
+            "name": "Ted",
+            "url": "https://tschopp.net/@Ted"
+          },
+          "type": "in-reply-to",
+          "published": "2025-05-25T22:07:58+00:00",
+          "name": "",
+          "content": "Working and testing my javascript library",
+          "rsvp": null
+        }
+      ],
+      "mentions": [
+        {
+          "id": "1910750",
+          "source": "https://bsky.brid.gy/convert/web/at://did:plc:ojqcrkrtf3u7w35zvvhpbidh/app.bsky.feed.post/3loz4trbc3c23%23bridgy-fed-create",
+          "url": "https://bsky.app/profile/did:plc:ojqcrkrtf3u7w35zvvhpbidh/post/3loz4trbc3c23",
+          "author": {
+            "name": "Ted Tschopp",
+            "url": "https://bsky.app/profile/tedt.org"
+          },
+          "type": "mention-of",
+          "published": "2025-05-12T23:30:27+00:00",
+          "name": "",
+          "content": "She didn’t need a teacher. Just room to think and permission to fail.  Now an AI just did the same—with one line of code and no help. Maybe intelligence isn’t what we give—but what we struggle into being.\n\ntedt.org/The-Student-...",
+          "rsvp": null
+        }
+      ],
+      "likes": [
+        {
+          "id": "1913752",
+          "source": "https://brid.gy/like/bluesky/did:plc:ojqcrkrtf3u7w35zvvhpbidh/at%253A%252F%252Fdid%253Aplc%253Aojqcrkrtf3u7w35zvvhpbidh%252Fapp.bsky.feed.post%252F3loz4trbc3c23/did%253Aplc%253Aglib2jvqhde2tat43rs3jv3t",
+          "url": "https://bsky.app/profile/tedt.org/post/3loz4trbc3c23#liked_by_did:plc:glib2jvqhde2tat43rs3jv3t",
+          "author": {
+            "name": "205TF",
+            "url": "https://bsky.app/profile/205tf.bsky.social"
+          },
+          "type": "like-of",
+          "published": "2025-05-27T11:41:11Z",
+          "name": "",
+          "content": "",
+          "rsvp": null
+        },
+        {
+          "id": "1954765",
+          "source": "https://brid.gy/like/bluesky/did:plc:ojqcrkrtf3u7w35zvvhpbidh/at%253A%252F%252Fdid%253Aplc%253Aojqcrkrtf3u7w35zvvhpbidh%252Fapp.bsky.feed.post%252F3loz4trbc3c23/did%253Aplc%253Aydqzin7kctnatbefaxcp6f7s",
+          "url": "https://bsky.app/profile/tedt.org/post/3loz4trbc3c23#liked_by_did:plc:ydqzin7kctnatbefaxcp6f7s",
+          "author": {
+            "name": "Go4Know",
+            "url": "https://bsky.app/profile/go4know.com"
+          },
+          "type": "like-of",
+          "published": "2025-11-21T14:29:33Z",
+          "name": "",
+          "content": "",
+          "rsvp": null
+        }
+      ],
+      "reposts": [],
+      "bookmarks": [],
+      "rsvps": [],
+      "follows": []
+    },
+    "https://tedt.org/Winning-the-Intelligence-Inversion/": {
+      "replies": [
+        {
+          "id": "1956022",
+          "source": "https://brid.gy/comment/mastodon/@ted@tschopp.net/115628535544786819/115628547090883480",
+          "url": "https://tschopp.net/@Ted/115628547090883480",
+          "author": {
+            "name": "Ted",
+            "url": "https://tschopp.net/@Ted"
+          },
+          "type": "in-reply-to",
+          "published": "2025-11-28T17:40:09+00:00",
+          "name": "",
+          "content": "Inside the article:\n\n• How to build an “agent-first” enterprise\n• What metrics matter (CVO, autonomy index, escape rate, MTTR for agents)\n• How to architect verification-first systems\n• Why human flourishing must remain the destination—not an afterthought",
+          "rsvp": null
+        },
+        {
+          "id": "1956023",
+          "source": "https://brid.gy/comment/mastodon/@ted@tschopp.net/115628535544786819/115628545758237592",
+          "url": "https://tschopp.net/@Ted/115628545758237592",
+          "author": {
+            "name": "Ted",
+            "url": "https://tschopp.net/@Ted"
+          },
+          "type": "in-reply-to",
+          "published": "2025-11-28T17:39:49+00:00",
+          "name": "",
+          "content": "The shift is what I call the Intelligence Inversion:\n\nWhen turning tokens into work is trivial, the strategic frontier becomes turning work into verified outcomes at scale.\n\nCheaper brains don’t guarantee better businesses.",
+          "rsvp": null
+        }
+      ],
+      "mentions": [],
+      "likes": [],
+      "reposts": [],
+      "bookmarks": [],
+      "rsvps": [],
+      "follows": []
+    }
+  }
+}

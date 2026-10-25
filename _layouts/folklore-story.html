@@ -87,7 +87,7 @@
                     <h1 class="p-name card-title post-title mb-1">{{ page.title | default: story.title }}</h1>
                     {% if story.author %}
                     <p class="card-subtitle h2 mb-2 fw-normal post-subtitle text-body-secondary">
-                      Source author: {{ story.author }}
+                      Source author: <span class="p-author h-card"><span class="p-name">{{ story.author | escape }}</span></span>
                     </p>
                     {% endif %}
                   </div>
@@ -104,7 +104,8 @@
               </div>
 
               <div class="card-body rounded-top-0 p-4 h-100">
-                <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
+                {% include seo/entry-metadata.html %}
+                {% include social/syndication-links.html %}
 
                 {%- comment -%} Locations Section {%- endcomment -%}
                 {% if story.location_ids and story.location_ids.size > 0 %}
@@ -119,8 +120,10 @@
                 {% endif %}
 
                 {%- comment -%} Translation Tabs {%- endcomment -%}
-                <h2 class="h5 mb-3">📖 The Story</h2>
-                {% include folklore/translation-tabs.html story=story story_id=story_id %}
+                <div class="e-content">
+                  <h2 class="h5 mb-3">📖 The Story</h2>
+                  {% include folklore/translation-tabs.html story=story story_id=story_id %}
+                </div>
 
                 {%- comment -%} Entities Section {%- endcomment -%}
                 {% if story.entity_ids and story.entity_ids.size > 0 %}

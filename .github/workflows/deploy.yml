@@ -1,10 +1,16 @@
 name: Site Quality + Deploy
+run-name: "${{ inputs.indieweb_cache_only && 'IndieWeb cache refresh' || 'Site Quality + Deploy' }}"
 
 on:
   push:
     branches: [ main ]
   pull_request:
   workflow_dispatch:
+    inputs:
+      indieweb_cache_only:
+        description: Deploy refreshed discussion metadata without social cross-posting
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -223,6 +229,11 @@ jobs:
           bundle exec ruby tests/check_responsive_images.rb _site
           bundle exec ruby tests/check_content_credits.rb _site
           bundle exec ruby tests/check_quote_portraits.rb _site
+
+      - name: IndieWeb protocol and rendering gates
+        run: |
+          bundle exec ruby tests/indieweb_test.rb
+          bundle exec ruby tests/check_indieweb_rendering.rb _site
 
       - name: SEO regression gates
         run: |
