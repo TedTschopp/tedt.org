@@ -283,8 +283,12 @@ class GitHubStore:
                 if run.get("id") is None or run["id"] in seen:
                     raise SyncError("Publisher workflow health pagination repeated a run")
                 seen.add(run["id"])
+                # A newer release may supersede a queued, non-publishing cache refresh.
+                # The existing current-main deployment gate still applies to every POST.
+                superseded_cache = (workflow == "deploy.yml" and run.get("conclusion") == "cancelled"
+                                    and run.get("display_title") == "IndieWeb cache refresh")
                 if (run.get("status") == "completed" and run.get("conclusion") not in {"success", "skipped", "neutral"}
-                        and instant(run["updated_at"]) >= instant(since)):
+                        and not superseded_cache and instant(run["updated_at"]) >= instant(since)):
                     failures.append({"id": run["id"], "updated_at": run["updated_at"]})
             if len(seen) == total:
                 return failures

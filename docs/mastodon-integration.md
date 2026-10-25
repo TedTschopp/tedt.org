@@ -115,7 +115,10 @@ or advance it. Existing receipts and publication generations are preserved.
   and successful verification of every publication receipt from the last day.
   Complete, paginated publisher and main-deployment workflow history must show no failed, canceled,
   or timed-out runs during the health window. A failed state write is therefore
-  visible even when it could not persist its own health record.
+  visible even when it could not persist its own health record. A superseded,
+  canceled `IndieWeb cache refresh` is excluded because it publishes no posts and
+  a successful deployment of the current main commit is still required. Failed
+  cache refreshes and canceled full releases or publisher runs remain blocking.
 - API errors, unverified receipts, or uncertain publication outcomes reset the
   healthy observation period and reduce an accelerated publisher to 24/day.
   Incomplete workflow-health evidence cannot authorize acceleration. A quiet day
