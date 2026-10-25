@@ -396,7 +396,7 @@ Blocking checks in the quality gate:
 - Legacy key guard (blocks reintroduction of removed config keys)
 - Feed integrity (primary JSON feed absolute URLs)
 - Mastodon feed validation (structure, length ≤ 480 chars, absolute links)
-- Mastodon recovery, queue, and forwarding checks (`make mastodon_check`)
+- Mastodon recovery, queue, forwarding, 24-to-48/day rate ramp, and throttling checks (`make mastodon_check`)
 - Feed diff regression guard (normalized snapshot drift across main and Mastodon JSON feeds)
 - Tools CSS sync guard (prevents drift between shared tool CSS and site base includes)
 - Representative accessibility coverage via Playwright + axe (`npm run test:a11y` locally, `test:a11y:allure` in CI)

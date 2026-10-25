@@ -59,7 +59,9 @@ serialized GitHub Actions workflow and durable GitHub state.
 
 ## Rollout controls
 
-The workflow runs after a successful trusted main deployment and every two hours.
+The workflow runs after a successful trusted main deployment and checks every ten
+minutes. A check can publish at most one item; durable cooldowns and rolling daily
+caps control publication, independent of scheduler timing.
 Both repository variables default to `false`:
 
 | Variable | Effect when true |
@@ -93,10 +95,56 @@ setting was verified before enabling publication.
    again and verify that it does not propose another copy of that article.
 5. Set `MASTODON_BACKFILL_ENABLED=true` after the canary succeeds.
 
-Newly discovered publications take priority. Archive entries run oldest first,
-with at least two hours between archive announcements and a maximum of twelve
-in any rolling twenty-four-hour period. A global one-hour gap also applies to new
-announcements. Edits do not requeue an existing live discussion.
+Newly discovered publications take priority and retain a one-hour gap after any
+announcement. Archive entries run oldest first. Edits do not requeue an existing
+live discussion.
+
+### Automatic archive rate ramp
+
+The first trusted, enabled publication run initializes the ramp on the durable
+`mastodon-state` branch. Offline audits and publication previews cannot initialize
+or advance it. Existing receipts and publication generations are preserved.
+
+- The initial phase allows at most **24 archive publications per rolling 24 hours**,
+  with a minimum **60-minute** gap after any publication.
+- The accelerated phase allows at most **48 archive publications per rolling
+  24 hours**, with a minimum **30-minute** gap after any publication. Newly
+  discovered articles continue to require a full hour.
+- Promotion requires at least **24 uninterrupted healthy hours**, **12 verified
+  archive receipts** in the observation period, no unresolved publication intent,
+  and successful verification of every publication receipt from the last day.
+  Complete, paginated publisher and main-deployment workflow history must show no failed, canceled,
+  or timed-out runs during the health window. A failed state write is therefore
+  visible even when it could not persist its own health record.
+- API errors, unverified receipts, or uncertain publication outcomes reset the
+  healthy observation period and reduce an accelerated publisher to 24/day.
+  Incomplete workflow-health evidence cannot authorize acceleration. A quiet day
+  with too few successful archive posts remains at 24/day.
+
+The observation timestamps, active cap, earliest promotion time, and server
+cooldown appear in the progress JSON and recovery page. Restarting a runner or
+deploying a new commit does not restart or bypass the durable observation clock.
+A ledger without a ramp retains the old 12/day preview until its first trusted
+publication run activates the new policy.
+
+HTTP 429 responses honor both `Retry-After` and `X-RateLimit-Reset`. Other API
+failures back off for five minutes, doubling after consecutive failures up to an
+hour; a longer server cooldown always takes precedence. The cooldown persists
+across runners, and checks during it make no Mastodon requests. A retry still
+reconciles the complete public timeline and reuses the original idempotency key.
+An intent must commit before a POST, and receipt/state conflicts never trigger a
+second state write with a stale ledger merely to record health.
+
+Every real reconciliation updates durable state. Polls that change only run
+counters, result reasons, or timestamps do not commit website metadata or start
+another site deployment. Changed discussion links, queue counts, ramp policy,
+rollout switches, and server cooldowns do update the website. This avoids a build
+queue from frequent checks while preserving real verification timestamps.
+
+See [Mastodon rate-limit headers](https://docs.joinmastodon.org/api/rate-limits/)
+and [GitHub workflow-run pagination](https://docs.github.com/en/rest/actions/workflow-runs).
+The 48/day cap is a maximum; scheduler delays, new articles, deployment readiness,
+and health holds can extend the calendar catch-up time.
 
 Setting `MASTODON_PUBLISH_ENABLED=false` pauses every publication while preserving
 reconciliation, receipts, and existing discussion links. Do not roll back by
