@@ -18997,6 +18997,34 @@
       ],
       "width": 1456
     },
+    "/img/quotes/authors/sean-grove.webp": {
+      "height": 816,
+      "source_sha256": "69b9a0ae50773a0bb12e36616e8fc630b9533f7c39e67fcbf81647f77e4dd8e8",
+      "src": "/img/quotes/authors/sean-grove.webp",
+      "variants": [
+        {
+          "height": 270,
+          "path": "/img/generated/responsive/quotes/authors/sean-grove--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 431,
+          "path": "/img/generated/responsive/quotes/authors/sean-grove--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 673,
+          "path": "/img/generated/responsive/quotes/authors/sean-grove--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 816,
+          "path": "/img/quotes/authors/sean-grove.webp",
+          "width": 1456
+        }
+      ],
+      "width": 1456
+    },
     "/img/quotes/authors/soren-kierkegaard.webp": {
       "height": 816,
       "source_sha256": "9422a2656952255fd057f67b471b62c47d9e1a67ce666fdcc38cfd1755eb4130",
