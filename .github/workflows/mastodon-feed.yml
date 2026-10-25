@@ -2,7 +2,8 @@ name: Feed to Mastodon
 
 on:
   workflow_run:
-    workflows: ["Site Quality + Deploy"]
+    # Workflow-name filters are globs; escape the literal plus sign.
+    workflows: ['Site Quality \+ Deploy']
     types: [completed]
     branches: [main]
   schedule:
