@@ -7,7 +7,8 @@ on:
     types: [completed]
     branches: [main]
   schedule:
-    - cron: '17 */2 * * *'
+    # Frequent checks absorb scheduling delays; ledger cooldowns enforce 24/48 per day.
+    - cron: '7,17,27,37,47,57 * * * *'
   workflow_dispatch:
     inputs:
       mode:
@@ -127,6 +128,12 @@ jobs:
           if [ "$SYNC_WRITE" = true ]; then args+=(--write); fi
           if [ "$ARCHIVE_CANARY" = true ]; then args+=(--archive-canary); fi
           python3 _code/mastodon_sync.py "${args[@]}" | tee tmp/mastodon/run.json
+          python3 - <<'PY_OUTPUT' >> "$GITHUB_OUTPUT"
+          import json
+          with open('tmp/mastodon/report.json') as stream:
+              report = json.load(stream)
+          print('website_changed=' + str(report['result'].get('website_changed', False)).lower())
+          PY_OUTPUT
           {
             echo '## Mastodon publication and recovery'
             echo '```json'
@@ -136,7 +143,7 @@ jobs:
 
       - name: Persist verified website metadata
         id: metadata
-        if: steps.sync.outcome == 'success' && steps.inputs.outputs.write == 'true'
+        if: steps.sync.outcome == 'success' && steps.inputs.outputs.write == 'true' && steps.sync.outputs.website_changed == 'true'
         run: |
           set -euo pipefail
           git add -- cache/mastodon-ledger.json _data/mastodon_status.json _posts

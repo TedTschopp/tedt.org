@@ -20,6 +20,7 @@ import subprocess
 import sys
 import tempfile
 from html.parser import HTMLParser
+from email.utils import parsedate_to_datetime
 from urllib import error, parse, request
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -34,9 +35,21 @@ class SyncError(RuntimeError):
 
 
 class RemoteError(SyncError):
-    def __init__(self, status, location):
+    def __init__(self, status, location, retry_at=None):
         self.status = status
+        self.retry_at = retry_at
         super().__init__(f"HTTP {status} from {location}")
+
+
+class PersistenceError(SyncError):
+    """A failed state write must never be retried with a potentially stale ledger."""
+
+
+def persist_ledger(store, ledger):
+    try:
+        store.save(ledger)
+    except SyncError as exc:
+        raise PersistenceError(str(exc)) from exc
 
 
 def timestamp(value=None):
@@ -119,6 +132,34 @@ class NoRedirect(request.HTTPRedirectHandler):
         return None
 
 
+def retry_time(headers, now):
+    """Honor server cooldowns without logging authenticated response bodies."""
+    current = instant(now)
+    candidates = [current + dt.timedelta(minutes=5)]
+    for key in ("Retry-After", "X-RateLimit-Reset"):
+        value = headers.get(key)
+        if not value:
+            continue
+        try:
+            if value.strip().isdigit():
+                seconds = int(value)
+                candidate = (current + dt.timedelta(seconds=seconds) if key == "Retry-After"
+                             else dt.datetime.fromtimestamp(seconds, dt.timezone.utc))
+            elif key == "Retry-After":
+                candidate = parsedate_to_datetime(value)
+                if candidate.tzinfo is None:
+                    continue
+            else:
+                candidate = instant(value)
+            candidates.append(candidate)
+        except (ValueError, OverflowError, TypeError, SyncError):
+            continue
+    until = max(candidates)
+    if until.microsecond:
+        until = until.replace(microsecond=0) + dt.timedelta(seconds=1)
+    return timestamp(until)
+
+
 def http_json(url, method="GET", token=None, data=None, headers=None):
     payload = json.dumps(data).encode() if data is not None else None
     configured = {"Accept": "application/json", "User-Agent": "tedt.org-mastodon-sync/1"}
@@ -136,7 +177,10 @@ def http_json(url, method="GET", token=None, data=None, headers=None):
             return json.loads(raw)
     except error.HTTPError as exc:
         # Do not log response bodies: authenticated endpoints may contain private data.
-        raise RemoteError(exc.code, parse.urlsplit(url).hostname) from exc
+        retry_at = (retry_time(exc.headers or {}, timestamp())
+                    if exc.code == 429 or (exc.headers or {}).get("Retry-After") else None)
+        exc.close()
+        raise RemoteError(exc.code, parse.urlsplit(url).hostname, retry_at) from exc
     except (error.URLError, TimeoutError, ValueError, OSError) as exc:
         raise SyncError(f"Could not complete {method} request to {parse.urlsplit(url).hostname}") from exc
 
@@ -212,6 +256,39 @@ class GitHubStore:
                 latest, self.sha = self.read_remote()
                 if latest != self.previous:
                     raise SyncError("Another writer changed the ledger; reconcile without repeating publication") from exc
+
+    def publisher_failures(self, since):
+        """Include failed writes and production deployments in the health window."""
+        return (self.workflow_failures("mastodon-feed.yml", since)
+                + self.workflow_failures("deploy.yml", since))
+
+    def workflow_failures(self, workflow, since):
+        failures, seen = [], set()
+        expected_total = None
+        for page in range(1, 11):
+            # A workflow can start before the healthy window and fail during it.
+            created_since = timestamp(instant(since) - dt.timedelta(days=1))
+            query = parse.urlencode({"branch": "main", "created": ">=" + created_since,
+                                     "per_page": 100, "page": page})
+            result = self.api(f"/actions/workflows/{workflow}/runs?" + query)
+            runs = result.get("workflow_runs")
+            total = result.get("total_count")
+            if not isinstance(runs, list) or type(total) is not int or not 0 <= total <= 1000:
+                raise SyncError("Cannot establish complete publisher workflow health")
+            if expected_total is None:
+                expected_total = total
+            if total != expected_total or len(runs) != min(100, max(0, total - (page - 1) * 100)):
+                raise SyncError("Publisher workflow health pagination was incomplete")
+            for run in runs:
+                if run.get("id") is None or run["id"] in seen:
+                    raise SyncError("Publisher workflow health pagination repeated a run")
+                seen.add(run["id"])
+                if (run.get("status") == "completed" and run.get("conclusion") not in {"success", "skipped", "neutral"}
+                        and instant(run["updated_at"]) >= instant(since)):
+                    failures.append({"id": run["id"], "updated_at": run["updated_at"]})
+            if len(seen) == total:
+                return failures
+        raise SyncError("Publisher workflow health exceeded the pagination limit")
 
 
 class LocalStore:
@@ -486,6 +563,87 @@ def reconcile(ledger, client, now):
     ledger["live_status_count"] = len(statuses)
 
 
+def backfill_policy(ledger):
+    ramp = ledger.get("backfill_ramp")
+    if ramp is None:
+        return {"phase": "legacy", "daily_limit": 12, "interval_minutes": 120}
+    if (not isinstance(ramp, dict) or ramp.get("version") != 1 or ramp.get("phase") not in {"initial", "accelerated"}
+            or instant(ramp.get("healthy_since")) < instant(ramp.get("started_at"))):
+        raise SyncError("Unsupported backfill ramp state; refusing to reset its observation period")
+    accelerated = ramp["phase"] == "accelerated"
+    return {"phase": ramp["phase"], "daily_limit": 48 if accelerated else 24,
+            "interval_minutes": 30 if accelerated else 60,
+            "started_at": ramp["started_at"], "healthy_since": ramp["healthy_since"],
+            "earliest_promotion_at": timestamp(instant(ramp["healthy_since"]) + dt.timedelta(hours=24)),
+            "promoted_at": ramp.get("promoted_at"), "health_hold": ramp.get("health_hold"),
+            "last_error_at": ramp.get("last_error_at"), "last_error": ramp.get("last_error"),
+            "minimum_verified_archive_posts": 12}
+
+
+def hold_ramp(ledger, now, reason):
+    ramp = ledger.get("backfill_ramp")
+    if ramp:
+        backfill_policy(ledger)  # A corrupt policy is never replaced with a fresh clock.
+        ramp.update(phase="initial", healthy_since=now, health_hold=reason)
+        ramp.pop("promoted_at", None)
+
+
+def refresh_ramp(ledger, store, now):
+    ramp = ledger.setdefault("backfill_ramp", {"version": 1, "phase": "initial",
+                            "started_at": now, "healthy_since": now})
+    policy = backfill_policy(ledger)
+    current = instant(now)
+    if any(row.get("eligible") and (row["state"] == "uncertain" or row.get("intent"))
+           for row in ledger["entries"].values()):
+        hold_ramp(ledger, now, "unresolved_publication")
+        return
+    recent = [row for row in ledger.get("receipts", [])
+              if current - instant(row["created_at"]) < dt.timedelta(hours=24)]
+    for receipt in recent:
+        entry = ledger["entries"].get(receipt["canonical_url"], {})
+        if (entry.get("verified_at") != now or entry.get("status", {}).get("id") != receipt["id"]
+                or entry.get("state") not in {"published", "recovered"}):
+            hold_ramp(ledger, now, "receipt_not_verified")
+            return
+    archive = [row for row in recent if row["kind"] == "archive"
+               and instant(row["created_at"]) >= instant(ramp["healthy_since"])]
+    if current - instant(ramp["healthy_since"]) < dt.timedelta(hours=24):
+        ramp["health_hold"] = "first_day_observation"
+        return
+    if policy["phase"] == "initial" and len(archive) < 12:
+        ramp["health_hold"] = "awaiting_verified_archive_posts"
+        return
+    since = timestamp(max(instant(ramp["healthy_since"]), current - dt.timedelta(hours=24)))
+    failures = store.publisher_failures(since)
+    if failures:
+        failed_at = max(instant(row["updated_at"]) for row in failures)
+        hold_ramp(ledger, timestamp(max(failed_at, instant(ramp["healthy_since"]))), "workflow_failure")
+        ramp.update(last_error_at=timestamp(failed_at), last_error="Recent publication or deployment workflow failed")
+        return
+    ramp["health_hold"] = None
+    if ramp["phase"] == "initial":
+        ramp.update(phase="accelerated", promoted_at=now)
+
+
+def note_failure(ledger, now, exc):
+    hold_ramp(ledger, now, "publication_error")
+    if ledger.get("backfill_ramp"):
+        ledger["backfill_ramp"].update(last_error_at=now, last_error=str(exc)[:300])
+    failures = ledger.get("consecutive_failures", 0) + 1
+    ledger["consecutive_failures"] = failures
+    delay = min(3600, 300 * 2 ** min(failures - 1, 4))
+    until = instant(now) + dt.timedelta(seconds=delay)
+    if isinstance(exc, RemoteError) and exc.retry_at:
+        until = max(until, instant(exc.retry_at))
+    ledger["publication_not_before"] = timestamp(until)
+
+
+def website_changed(previous, current):
+    ignored = {"last_run_at", "last_reconciliation_at", "last_updated", "runs", "result"}
+    return ({key: value for key, value in previous.items() if key not in ignored}
+            != {key: value for key, value in current.items() if key not in ignored})
+
+
 def queued(ledger, now, backfill=False):
     ready = [entry for entry in ledger["entries"].values()
              if entry["eligible"] and entry["state"] in {"pending", "missing", "uncertain"}]
@@ -493,17 +651,21 @@ def queued(ledger, now, backfill=False):
     fresh = sorted((entry for entry in ready if entry["queue_kind"] == "new"), key=lambda row: (row["published_at"], row["canonical_url"]))
     receipts = ledger.get("receipts", [])
     current = instant(now)
-    # Preserve a global hour between announcements, including deploy-triggered runs.
-    if any(current - instant(row["created_at"]) < dt.timedelta(hours=1) for row in receipts):
+    if ledger.get("publication_not_before") and current < instant(ledger["publication_not_before"]):
+        return None, "server_backoff"
+    policy = backfill_policy(ledger)
+    # New announcements retain the one-hour gap; archives use their active ramp interval.
+    global_minutes = 60 if fresh else min(60, policy["interval_minutes"])
+    if any(current - instant(row["created_at"]) < dt.timedelta(minutes=global_minutes) for row in receipts):
         return None, "global_cooldown"
     if fresh:
         return fresh[0], "new"
     if not backfill:
         return None, "backfill_paused"
     archive = [row for row in receipts if row["kind"] == "archive"]
-    if any(current - instant(row["created_at"]) < dt.timedelta(hours=2) for row in archive):
+    if any(current - instant(row["created_at"]) < dt.timedelta(minutes=policy["interval_minutes"]) for row in archive):
         return None, "archive_cooldown"
-    if sum(current - instant(row["created_at"]) < dt.timedelta(hours=24) for row in archive) >= 12:
+    if sum(current - instant(row["created_at"]) < dt.timedelta(hours=24) for row in archive) >= policy["daily_limit"]:
         return None, "archive_daily_limit"
     older = sorted((entry for entry in ready if entry["queue_kind"] == "archive"), key=lambda row: (row["published_at"], row["canonical_url"]))
     return (older[0], "archive") if older else (None, "queue_empty")
@@ -515,6 +677,8 @@ def publish_one(ledger, client, store, now, enabled=False, backfill=False):
     if not store.durable:
         raise SyncError("Publication requires durable GitHub state; local writes cannot authorize a POST")
     client.account(verify=True)
+    if backfill:
+        refresh_ramp(ledger, store, now)
     entry, reason = queued(ledger, now, backfill)
     if entry is None:
         return {"published": False, "reason": reason}
@@ -523,7 +687,7 @@ def publish_one(ledger, client, store, now, enabled=False, backfill=False):
         previous = client.status(mid)
         if previous is not None:
             confirm(entry, previous, ledger, now, client.account_id)
-            store.save(ledger)
+            persist_ledger(store, ledger)
             return {"published": False, "reason": "existing_thread_recovered"}
         entry["missing_checked_at"] = now
     if not entry.get("intent"):
@@ -531,10 +695,10 @@ def publish_one(ledger, client, store, now, enabled=False, backfill=False):
         key = hashlib.sha256(f"tedt.org|{entry['canonical_url']}|{entry['generation']}".encode()).hexdigest()
         entry["intent"] = {"key": key, "kind": entry["queue_kind"], "started_at": now}
     entry["state"] = "uncertain"
-    store.save(ledger)  # A failed intent commit must prevent the external POST.
+    persist_ledger(store, ledger)  # A failed intent commit must prevent the external POST.
     result = client.create(entry["content_text"], entry["intent"]["key"])
     confirm(entry, result, ledger, now, client.account_id)
-    store.save(ledger)  # Failure leaves the durable intent for the next reconciliation.
+    persist_ledger(store, ledger)  # Failure leaves the durable intent for the next reconciliation.
     return {"published": True, "url": entry["status"]["url"], "kind": entry["queue_kind"]}
 
 
@@ -597,6 +761,8 @@ def summary(ledger, now, result=None):
         "last_updated": ledger.get("last_reconciliation_at"),
         "publication_enabled": os.environ.get("MASTODON_PUBLISH_ENABLED") == "true",
         "backfill_enabled": os.environ.get("MASTODON_BACKFILL_ENABLED") == "true",
+        "backfill_policy": backfill_policy(ledger),
+        "publication_not_before": ledger.get("publication_not_before"),
     }
 
 
@@ -633,25 +799,35 @@ def main(argv=None):
     ledger = prepare_ledger(manifest, store.load(), load_json(root / LEGACY_PATH, {}), now)
     result = {"mode": args.mode, "dry_run": not args.write, "online": args.online or args.mode != "audit", "archive_canary": args.archive_canary}
     try:
-        if result["online"]:
+        deferred = (result["online"] and ledger.get("publication_not_before")
+                    and instant(now) < instant(ledger["publication_not_before"]))
+        if deferred:
+            result.update(published=False, reason="server_backoff", deferred_until=ledger["publication_not_before"])
+        elif result["online"]:
             client = Mastodon(manifest["instance"], manifest["username"], os.environ.get("MASTODON_TOKEN"))
             reconcile(ledger, client, now)
-        if args.mode == "publish" and args.write:
+        if args.mode == "publish" and args.write and not deferred:
             result.update(publish_one(ledger, client, store, now,
                                      enabled=os.environ.get("MASTODON_PUBLISH_ENABLED") == "true",
                                      backfill=args.archive_canary or os.environ.get("MASTODON_BACKFILL_ENABLED") == "true"))
-        elif args.mode == "publish":
+        elif args.mode == "publish" and not deferred:
             candidate, reason = queued(ledger, now, args.archive_canary or os.environ.get("MASTODON_BACKFILL_ENABLED") == "true")
             result.update({"would_publish": candidate["canonical_url"] if candidate else None, "reason": reason})
+        if result["online"] and not deferred:
+            ledger["consecutive_failures"] = 0
+            ledger.pop("publication_not_before", None)
         if args.write:
             if not result["online"]:
                 raise SyncError("Offline audit cannot write verified thread mappings")
             ledger["run_count"] = ledger.get("run_count", 0) + 1
             ledger.setdefault("initial_missing", len([row for row in ledger["entries"].values() if row["eligible"]]))
-            store.save(ledger)
+            persist_ledger(store, ledger)
             atomic_json(local, ledger)
             result["updated_sources"] = sync_sources(root, ledger)
-            atomic_json(root / "_data/mastodon_status.json", summary(ledger, now, result))
+            previous = load_json(root / "_data/mastodon_status.json", {})
+            result["website_changed"] = bool(result["updated_sources"]) or website_changed(previous, summary(ledger, now, result))
+            if result["website_changed"]:
+                atomic_json(root / "_data/mastodon_status.json", summary(ledger, now, result))
         report = summary(ledger, now, result)
         if args.report:
             atomic_json(args.report, report)
@@ -659,6 +835,15 @@ def main(argv=None):
         return 0
     except SyncError as exc:
         result["error"] = str(exc)
+        if args.write and store.durable and not isinstance(exc, PersistenceError):
+            note_failure(ledger, timestamp(), exc)
+            try:
+                persist_ledger(store, ledger)
+                result["health_persisted"] = True
+            except PersistenceError as health_error:
+                # In particular, never overwrite a competing writer to record health.
+                result["health_persisted"] = False
+                result["health_persistence_error"] = str(health_error)
         # Preserve receipts as a diagnostic artifact even if remote persistence failed.
         if args.report:
             atomic_json(args.report, summary(ledger, now, result))

@@ -90,6 +90,22 @@ if root.join('_data/mastodon_status.json').file?
   errors << 'Progress endpoint is not reporting the verified run' unless progress == saved
 end
 
+# Exercise both ramp phases without changing the saved production progress data.
+status_template = Liquid::Template.parse(root.join('_includes/social/mastodon-recovery-status.html').read)
+[['initial', 24], ['accelerated', 48]].each do |phase, cap|
+  fixture = progress.merge('backfill_enabled' => true,
+    'backfill_policy' => {'phase' => phase, 'daily_limit' => cap,
+      'started_at' => '2026-10-25T12:00:00Z', 'healthy_since' => '2026-10-25T12:00:00Z',
+      'earliest_promotion_at' => '2026-10-26T12:00:00Z', 'promoted_at' => '2026-10-26T12:00:00Z'})
+  rendered = status_template.render!({'site' => {'data' => {'mastodon_status' => fixture}}},
+    registers: {site: site}, filters: [Jekyll::Filters])
+  html = Nokogiri::HTML(rendered)
+  label = html.css('dt').find { |node| node.text == 'Archive catch-up' }
+  errors << "#{phase}: status page does not report the actual archive cap" unless label&.next_element&.text&.include?("at most #{cap} per rolling 24 hours")
+  expected_label = phase == 'accelerated' ? 'Accelerated rate began' : 'Earliest increase to 48 per day'
+  errors << "#{phase}: status page is missing its rate observation state" unless html.css('dt').any? { |node| node.text == expected_label }
+end
+
 errors << 'Durable ledger must be excluded from the public build' if root.join('_site/cache/mastodon-ledger.json').exist?
 if errors.empty?
   puts "Mastodon integration: PASS (#{prompts.length} plugin redirects; #{actual.length} eligible source documents)."
