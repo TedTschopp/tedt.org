@@ -79,7 +79,10 @@ No account migration or automatic historical cross-posting is part of Phase 1.
 ## Outgoing delivery
 
 **IndieWeb outgoing mentions** consumes the actual successful Pages artifact,
-not a rebuilt approximation. It extracts content links from the article's
+not a rebuilt approximation. The archive stays in runner temporary storage.
+A bounded reader serializes regular HTML entries as data without extracting any
+archive paths or executing artifact code; missing or duplicate article data stops
+delivery. It extracts content links from the article's
 `e-content`, compares the content with the live source, and discovers each
 receiver in HTTP Link / HTML link-or-anchor order. It preserves endpoint queries,
 preserves linked target fragments for exact verification, posts form-encoded
@@ -117,6 +120,7 @@ forwarded across origins.
 
 ```sh
 bundle exec ruby tests/indieweb_test.rb
+python3 tests/test_indieweb_artifact.py
 bundle exec jekyll build
 bundle exec ruby tests/check_indieweb_rendering.rb _site
 bundle exec ruby tests/check_content_credits.rb _site

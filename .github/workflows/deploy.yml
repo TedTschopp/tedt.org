@@ -233,6 +233,7 @@ jobs:
       - name: IndieWeb protocol and rendering gates
         run: |
           bundle exec ruby tests/indieweb_test.rb
+          python3 tests/test_indieweb_artifact.py
           bundle exec ruby tests/check_indieweb_rendering.rb _site
 
       - name: SEO regression gates

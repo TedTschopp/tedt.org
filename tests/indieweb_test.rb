@@ -272,6 +272,31 @@ module IndieWebTests
     end
   end
 
+  def test_archive_snapshot_uses_only_complete_canonical_article_data
+    Dir.mktmpdir do |dir|
+      path = File.join(dir, 'pages.jsonl')
+      header = { 'manifest' => { 'version' => 1, 'entries' => [{ 'url' => 'https://tedt.org/Article/' }] } }
+      content = '<article class="h-entry"><div class="e-content"><a href="https://reader.example/post#reply">Reply</a></div></article>'
+      rows = [header, { 'path' => '../../_code/indieweb.rb', 'body' => ['hostile'].pack('m0') }, { 'path' => 'Article/index.html', 'body' => [content].pack('m0') }]
+      File.write(path, rows.map { |row| JSON.generate(row) }.join("\n"))
+      result = IndieWeb::Sender.new.snapshot_stream(path)
+      equal(['https://tedt.org/Article/'], result.keys)
+      equal(['https://reader.example/post#reply'], result.values.first['targets'])
+      File.write(path, JSON.generate(header) + "\n")
+      raises { IndieWeb::Sender.new.snapshot_stream(path) }
+    end
+  end
+
+  def test_archive_snapshot_rejects_duplicate_article_entries
+    Dir.mktmpdir do |dir|
+      path = File.join(dir, 'pages.jsonl')
+      header = { 'manifest' => { 'version' => 1, 'entries' => [{ 'url' => 'https://tedt.org/Article/' }] } }
+      row = { 'path' => 'Article/index.html', 'body' => ['<article class="h-entry"><div class="e-content">Text</div></article>'].pack('m0') }
+      File.write(path, [header, row, row].map { |r| JSON.generate(r) }.join("\n"))
+      raises { IndieWeb::Sender.new.snapshot_stream(path) }
+    end
+  end
+
   def test_receipts_use_a_separate_branch_preserve_main_and_reject_concurrent_writers
     script = File.expand_path('../_code/webmention_state.sh', __dir__)
     Dir.mktmpdir do |dir|

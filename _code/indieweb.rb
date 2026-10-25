@@ -356,6 +356,31 @@ module IndieWeb
       end
     end
 
+    def snapshot_stream(path)
+      File.open(path) do |stream|
+        header = JSON.parse(stream.readline)
+        manifest = Manifest.new(header.fetch('manifest'))
+        expected = manifest.entries.to_h do |entry|
+          [IndieWeb.site_file('/pages-data', entry.fetch('url')).delete_prefix('/pages-data/'), entry.fetch('url')]
+        end
+        raise Error, 'Duplicate article paths in Pages manifest' unless expected.length == manifest.entries.length
+        result = {}
+        stream.each_line do |line|
+          row = JSON.parse(line)
+          source = expected[row['path']]
+          next unless source
+          raise Error, 'Duplicate article in Pages archive' if result.key?(source)
+          body = row.fetch('body').unpack1('m0')
+          raise Error, 'Article exceeds 4 MiB' if body.bytesize > 4 * 1024 * 1024
+          result[source] = content_state(Nokogiri::HTML(body), source)
+        end
+        raise Error, 'Pages archive is missing article data' unless result.keys.sort == expected.values.sort
+        result
+      end
+    rescue EOFError, ArgumentError
+      raise Error, 'Invalid Pages artifact data'
+    end
+
     def reconcile(state, snapshot)
       if state.empty?
         return { 'version' => 1, 'sources' => snapshot.transform_values { |v| v.merge('deliveries' => {}) } }
@@ -445,6 +470,8 @@ module IndieWeb
           return
         end
         snapshot = state.fetch('sources').transform_values { |v| v.slice('fingerprint', 'targets') }
+      elsif opts[:input]
+        snapshot = sender.snapshot_stream(opts[:input])
       else
         manifest = Manifest.new(read_json(File.join(opts[:site], 'indieweb-manifest.json')))
         snapshot = sender.snapshot(opts[:site], manifest)

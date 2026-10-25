@@ -37,7 +37,9 @@ jobs:
           ruby-version: '3.2'
           bundler-cache: true
       - name: Test synchronization and delivery rules
-        run: bundle exec ruby tests/indieweb_test.rb
+        run: |
+          bundle exec ruby tests/indieweb_test.rb
+          python3 tests/test_indieweb_artifact.py
       - name: Build canonical URL and alias inventory
         env:
           JEKYLL_ENV: production
