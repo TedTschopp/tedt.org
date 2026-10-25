@@ -210,6 +210,16 @@ class HealthAndBackoffTests(unittest.TestCase):
         store.api=Mock(side_effect=[{'total_count':2,'workflow_runs':[old,overlapping]},{'total_count':0,'workflow_runs':[]}])
         self.assertEqual(store.publisher_failures(at(hours=-24)),[{'id':2,'updated_at':at(hours=-23)}])
 
+    def test_superseded_cache_refresh_is_benign_but_real_failures_still_block(self):
+        store=m.GitHubStore('TedTschopp/tedt.org','fixture-token',{})
+        canceled_cache={'id':1,'status':'completed','conclusion':'cancelled','display_title':'IndieWeb cache refresh','updated_at':NOW}
+        failed_cache={**canceled_cache,'id':2,'conclusion':'failure'}
+        canceled_release={**canceled_cache,'id':3,'display_title':'Site Quality + Deploy'}
+        canceled_publisher={**canceled_cache,'id':4}
+        store.api=Mock(side_effect=[{'total_count':1,'workflow_runs':[canceled_publisher]},
+                                   {'total_count':3,'workflow_runs':[canceled_cache,failed_cache,canceled_release]}])
+        self.assertEqual(store.publisher_failures(at(hours=-24)),[{'id':4,'updated_at':NOW},{'id':2,'updated_at':NOW},{'id':3,'updated_at':NOW}])
+
     def test_incomplete_workflow_history_cannot_authorize_acceleration(self):
         for response in [{'total_count':1001,'workflow_runs':[]},{'total_count':101,'workflow_runs':[]},{'total_count':1}]:
             store=m.GitHubStore('TedTschopp/tedt.org','fixture-token',{})
