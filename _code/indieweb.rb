@@ -333,7 +333,10 @@ module IndieWeb
     def deliver(source, target)
       destination = endpoint(target)
       return { 'state' => 'unsupported' } unless destination
-      response = @http.request(destination, method: 'POST', form: { 'source' => source, 'target' => target })
+      # Prefer an API acknowledgement over an HTML form's redirect response.
+      response = @http.request(destination, method: 'POST',
+                               form: { 'source' => source, 'target' => target },
+                               headers: { 'Accept' => 'application/json' })
       if response.status.between?(200, 299)
         result = { 'state' => 'accepted', 'status' => response.status }
         receipt = response.headers.fetch('location', []).first
