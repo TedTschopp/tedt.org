@@ -43,6 +43,8 @@ image_width: 1672
 image_height: 941
 
 no_toc: true
+mastodon-post-id: "117228352294276724"
+mastodon-post-url: "https://tschopp.net/@Ted/117228352294276724"
 ---
 
 I was asked how much electricity and water AI uses, and what that means. These are shared resources, and questions about their use deserve clear answers. The numbers vary, but familiar comparisons can help put them in context.

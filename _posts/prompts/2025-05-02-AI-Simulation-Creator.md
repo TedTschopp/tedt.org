@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/ai-simulation-creator/
 layout: prompt-details
 title: "AI Simulation Creator \u2013 Scenario-Based Skill Practice"
 description: A dynamic prompt framework for generating AI-led roleplay simulations,

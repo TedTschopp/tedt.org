@@ -84,7 +84,8 @@ video:
   description: "Watch the AI Engineer Coach video demo"
   aspect: "16x9"
 
-mastodon-post-id:
+mastodon-post-id: "116756121342881336"
+mastodon-post-url: "https://tschopp.net/@Ted/116756121342881336"
 ---
 
 AI coding tools are becoming part of the normal developer workbench. That means the question is changing.

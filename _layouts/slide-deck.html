@@ -51,6 +51,13 @@
           <span aria-hidden="true">↗</span>
         </a>
       {% endif %}
+      {% if page.mastodon-post-id or page.mastodon-post-url %}
+        {% assign discussion_url = page.mastodon-post-url %}
+        {% unless discussion_url %}
+          {% capture discussion_url %}https://{{ site.mastodon_comments.host }}/@{{ site.mastodon_comments.username }}/{{ page.mastodon-post-id }}{% endcapture %}
+        {% endunless %}
+        <a class="slide-deck-open" href="{{ discussion_url | escape }}" rel="external noopener noreferrer">Discuss on Mastodon</a>
+      {% endif %}
     </header>
 
     <main class="slide-deck-stage" id="presentation">

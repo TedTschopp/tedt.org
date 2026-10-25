@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/be-an-expert-and-give-advice/
 layout: prompt-details
 permalink: /prompts/:slug/
 

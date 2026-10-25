@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/ai-tutoring-prompt-designer/
 layout: prompt-details
 title: "AI Tutoring Prompt Designer \u2013 Help Others Learn What You Know"
 description: A structured AI prompt template to help users design effective tutoring

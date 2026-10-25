@@ -83,7 +83,8 @@ video:
   aspect: "16x9"
 
 
-mastodon-post-id:
+mastodon-post-id: "116610547571934669"
+mastodon-post-url: "https://tschopp.net/@Ted/116610547571934669"
 ---
 
 *Two A.M. in the Understructure* is written as a theatrical rock piece — part concept album, part blues-rock monologue, part ensemble anthem. Where *More IT in IT* swings for the arena, this one works in the dark. The opening and closing whisper of the Night Shift Ensemble frames a story told in real time, from the moment an alert fires to the moment a trace is finally pulled.

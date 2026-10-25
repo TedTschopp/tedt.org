@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/academic-critique-content/
 layout: prompt-details
 permalink: /prompts/:slug/
 title: Academic Content Critique Template

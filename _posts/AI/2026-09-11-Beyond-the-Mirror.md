@@ -62,7 +62,8 @@ image-credits-URL: ""
 image-credits-source: ""
 image-credits-source-URL: ""
 
-mastodon-post-id:
+mastodon-post-id: "117256625909083676"
+mastodon-post-url: "https://tschopp.net/@Ted/117256625909083676"
 ---
 
 In 2001, I sat in Bob’s Big Boy in Burbank, talking with [Erik Davis](https://en.wikipedia.org/wiki/Erik_Davis) of WIRED about plans to camp out with Tolkien Online fans before a movie premiere. I told him, “People want to participate in the universe they love.” [He recorded the conversation](https://www.wired.com/2001/10/lotr/).

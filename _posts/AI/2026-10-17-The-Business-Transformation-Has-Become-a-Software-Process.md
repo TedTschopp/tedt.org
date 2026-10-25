@@ -45,6 +45,8 @@ image-title: "Software Foundation"
 image-description: "The business rests on a modular software foundation, with the red component representing ongoing maintenance."
 image_width: 1672
 image_height: 941
+mastodon-post-id: "117457611158583035"
+mastodon-post-url: "https://tschopp.net/@Ted/117457611158583035"
 ---
 
 # The Business Transformation has become a Software Process

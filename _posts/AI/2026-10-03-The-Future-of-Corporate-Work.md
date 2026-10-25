@@ -24,6 +24,8 @@ tags:
 image: "/img/2026-10/Human Judgment Through the Red Aperture.webp"
 image-alt: "A hand holds a red square frame as streams of black tiles pass through it toward a solid red square."
 image-title: "Human Judgment Through the Red Aperture"
+mastodon-post-id: "117378462940704906"
+mastodon-post-url: "https://tschopp.net/@Ted/117378462940704906"
 ---
 
 Imagine a company that can prepare an analysis in minutes. Its systems gather records, compare alternatives, draft recommendations, and assemble a presentation. The proposal still waits for someone to settle conflicting priorities, authorize spending, and accept responsibility for the decision.

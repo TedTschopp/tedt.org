@@ -267,6 +267,7 @@ jobs:
       - name: Mastodon feed validation
         run: |
           make validate_mastodon
+          make mastodon_check
 
       - name: Feed diff regression guard
         run: |

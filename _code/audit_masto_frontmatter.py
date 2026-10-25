@@ -17,9 +17,7 @@ from dataclasses import dataclass
 FRONT_MATTER_RE = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
 
 DEFAULT_DIRS = [
-    "_posts/Blog Posts",
-    "_posts/Prompts",
-    "_posts/RPG Posts",
+    "_posts",
 ]
 
 @dataclass

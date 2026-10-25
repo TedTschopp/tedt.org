@@ -1,0 +1,30 @@
+{
+  "backfill_enabled": false,
+  "completion_percent": 4.6,
+  "confirmed_publications": 0,
+  "current_missing": 962,
+  "eligible": 1008,
+  "has_history": true,
+  "initial_missing": 1008,
+  "last_publication_at": null,
+  "last_reconciliation_at": "2026-10-25T15:43:38Z",
+  "last_run_at": "2026-10-25T15:43:38Z",
+  "last_updated": "2026-10-25T15:43:38Z",
+  "publication_enabled": false,
+  "remaining": 962,
+  "result": {
+    "dry_run": false,
+    "mode": "reconcile",
+    "online": true,
+    "updated_sources": 46
+  },
+  "runs": 1,
+  "states": {
+    "missing": 162,
+    "pending": 800,
+    "recovered": 46
+  },
+  "total_processed": 0,
+  "unmatched_legacy_entries": 10,
+  "version": 1
+}

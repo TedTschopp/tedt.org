@@ -82,7 +82,8 @@ video:
   description: "Watch More IT in IT."
   aspect: "16x9"
 
-mastodon-post-id:
+mastodon-post-id: "116545771671834940"
+mastodon-post-url: "https://tschopp.net/@Ted/116545771671834940"
 ---
 
 *More IT in IT* is written as an arena rock ballad with a slow-burning emotional build. The verses begin with clean electric guitar, light piano, and restrained drums, giving the lyrics room to tell the story of technology moving faster than governance. As the pre-chorus rises, the rhythm section tightens and backing vocals add urgency, creating the feeling of a team rallying before the chorus lands.

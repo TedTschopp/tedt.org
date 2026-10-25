@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/risk-assessment-clean-up/
 layout: prompt-details
 permalink: /prompts/:slug/
 

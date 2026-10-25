@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/ai-simulation-creator/
 layout: prompt-details
 title: "AI Simulation Creator Prompt \u2013 Roleplay-Based Learning Scenarios"
 description: An instructional AI prompt template for generating roleplay-based simulations

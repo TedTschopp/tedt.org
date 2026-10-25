@@ -48,6 +48,7 @@ Key technologies and architectural decisions powering the site:
 ### Social / Syndication
 
 - Mastodon integration & backfill scripts in `_code/` (Python utilities).
+- [Mastodon publishing and recovery runbook](docs/mastodon-integration.md), including pause switches, archive ordering, and canonical prompt forwarding.
 - RSS / JSON feeds (Liquid + helper scripts).
 
 ### Quality & Security
@@ -395,6 +396,7 @@ Blocking checks in the quality gate:
 - Legacy key guard (blocks reintroduction of removed config keys)
 - Feed integrity (primary JSON feed absolute URLs)
 - Mastodon feed validation (structure, length ≤ 480 chars, absolute links)
+- Mastodon recovery, queue, and forwarding checks (`make mastodon_check`)
 - Feed diff regression guard (normalized snapshot drift across main and Mastodon JSON feeds)
 - Tools CSS sync guard (prevents drift between shared tool CSS and site base includes)
 - Representative accessibility coverage via Playwright + axe (`npm run test:a11y` locally, `test:a11y:allure` in CI)
@@ -434,7 +436,7 @@ Current active workflows:
 | Workflow                | File                           | Triggers                      | Purpose                                                                |
 |-------------------------|--------------------------------|-------------------------------|------------------------------------------------------------------------|
 | Site Quality + Deploy   | `deploy.yml`                   | push to `main`, PR, manual    | Canonical quality gate, Allure artifacts, and Pages deploy on `main`   |
-| Feed to Mastodon        | `mastodon-feed.yml`            | push to `main`, every 6h, manual | Post newest site entry to Mastodon and sync toot metadata           |
+| Feed to Mastodon        | `mastodon-feed.yml`            | successful main deploy, every 2h, manual | Reconcile verified discussions; publish one queued item when enabled |
 | TedT.org to Substack    | `substack-publish.yml`          | successful Pages deploy, manual | Prepare validated newsletter artifacts; mutate only through the protected official-API gate |
 | DUSD Lunch Menu Calendar| `dusd-lunch-menu.yml`          | daily, manual                 | Rebuild and commit the district lunch calendar ICS file                |
 | Daily Report            | `daily-report.md` / `daily-report.lock.yml` | daily, manual | Use GitHub Agentic Workflows to publish `/Daily-Report/index.html` through a constrained safe output |
@@ -453,8 +455,8 @@ Composite actions (DRY helpers) under `.github/actions/`:
 | Action                   | Directory                                   | Description                                               |
 |--------------------------|---------------------------------------------|-----------------------------------------------------------|
 | setup-ruby-bundle        | `.github/actions/setup-ruby-bundle/`        | Standard Ruby + bundler + caching                         |
-| masto-cache-prep         | `.github/actions/masto-cache-prep/`         | Normalize mastodon cache & sync front matter preview/live |
-| masto-update-frontmatter | `.github/actions/masto-update-frontmatter/` | Resolve canonical path & update toot ID in markdown       |
+| masto-cache-prep         | `.github/actions/masto-cache-prep/`         | Compatibility preview and verified reconciliation; legacy cache is immutable |
+| masto-update-frontmatter | `.github/actions/masto-update-frontmatter/` | Retired heuristic writer; directs callers to verified reconciliation |
 
 The older standalone HTMLProofer workflow was removed after its checks were folded into `deploy.yml` so there is only one source of truth for quality status.
 

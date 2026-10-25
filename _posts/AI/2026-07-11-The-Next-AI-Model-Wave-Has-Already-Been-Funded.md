@@ -70,8 +70,9 @@ image-alt: "A technical illustration showing stacked capital expenditure bars an
 image-title: "Next AI Model Wave"
 image-description: "A bright technical illustration combining multicolored stacked investment bars, rising model-performance lines, and faint infrastructure diagrams of chips, servers, and AI workflows."
 
-mastodon-post-id:
+mastodon-post-id: "116903488035681265"
 
+mastodon-post-url: "https://tschopp.net/@Ted/116903488035681265"
 ---
 
 # The Next AI Model Wave Has Already Been Funded

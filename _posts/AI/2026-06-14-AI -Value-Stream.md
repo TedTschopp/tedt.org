@@ -73,8 +73,9 @@ video:
   description: "Watch The AI Value Chain"
   aspect: "16x9"
 
-mastodon-post-id:
+mastodon-post-id: "116750152042156672"
 
+mastodon-post-url: "https://tschopp.net/@Ted/116750152042156672"
 ---
 
 The biggest mistake people are making about AI is that they keep asking the same question:

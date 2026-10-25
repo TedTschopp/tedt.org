@@ -77,7 +77,8 @@ image_height: 941
 
 mathjax: false
 mermaid: false
-mastodon-post-id: null
+mastodon-post-id: "117062700714525226"
+mastodon-post-url: "https://tschopp.net/@Ted/117062700714525226"
 ---
 
 > **Source note:** This essay draws from first-party disclosures by OpenAI and Hugging Face and an August 2026 Black Hat USA presentation by OpenAI researchers Eric Wallace and Michael Dalton. Their reconstruction was preliminary, the investigation remained open, and the speakers said a fuller postmortem would follow. The chronology below should be read with that boundary in mind.

@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/social-media-repurposing-template/
 layout: prompt-details
 title: Cross-Platform Social Media Repurposing Template
 description: "A structured, platform-aware markdown framework to repurpose blog content\

@@ -74,8 +74,9 @@ image-credits-title: "Beyond the Light Bulb"
 image-description: "A moody, impressionistic scene filled with glowing incandescent bulbs suspended from long cords in a vast, foggy industrial space. The warm amber light from the bulbs contrasts against cool blue-gray walls and shadowy mechanical structures, creating a dreamlike atmosphere that feels both urban and otherworldly. Thick painterly brushstrokes give the image texture, movement, and a sense of luminous depth."
 image-title: "Beyond the Light Bulb"
 
-mastodon-post-id:
+mastodon-post-id: "116873769362401118"
 
+mastodon-post-url: "https://tschopp.net/@Ted/116873769362401118"
 ---
 
 # Beyond the Light Bulb: The Executive Work of AI Adoption

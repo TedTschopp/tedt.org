@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/marketing-copy-evaluation-template/
 layout: prompt-details
 title: Marketing Copy Evaluation & Rewrite Template
 description: A prompt for critically evaluating and rewriting web marketing copy using

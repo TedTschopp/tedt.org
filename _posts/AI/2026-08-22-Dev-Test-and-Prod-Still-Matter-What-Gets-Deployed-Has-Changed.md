@@ -76,7 +76,8 @@ image_height: 941
 
 mathjax: false
 mermaid: false
-mastodon-post-id:
+mastodon-post-id: "117140491577788003"
+mastodon-post-url: "https://tschopp.net/@Ted/117140491577788003"
 ---
 
 

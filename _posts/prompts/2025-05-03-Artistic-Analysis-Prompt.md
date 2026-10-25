@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/artistic-analysis/
 layout: prompt-details
 title: "Artistic Analysis Prompt \u2013 Deep Analysis of Artistic Works"
 description: "A layered, multidimensional prompt for AI to generate scholarly, symbolically-rich,\

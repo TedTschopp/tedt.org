@@ -88,10 +88,13 @@
         <link rel="stylesheet" type="text/css" href="{{ '/css/content-decorative-fonts.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/blog-post.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/solarized-dark.css' | relative_url }}" >
-        <link rel="stylesheet" type="text/css" href="{{ '/css/comments-Mastodon.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/web-mention.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/Winerlink.css' | relative_url }}">
         <link rel="stylesheet" type="text/css" href="{{ '/css/table-of-contents.css' | relative_url }}">
+    {% endif %}
+
+    {% if page.mastodon-post-id or page.mastodon-post-url %}
+        <link rel="stylesheet" href="{{ '/css/comments-mastodon-tree.css' | relative_url }}">
     {% endif %}
 
     {% if this_is_a_draft == true %}

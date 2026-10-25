@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/module-builder/
 layout: prompt-details
 permalink: /prompts/:slug/
 

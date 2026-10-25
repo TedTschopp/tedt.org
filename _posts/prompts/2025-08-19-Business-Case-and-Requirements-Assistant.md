@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/business-case-and-requirements-assistant/
 layout: prompt-details
 title: "Business Case and Requirements Assistant"
 subtitle: "Agile Backlog Decomposition & Verification and Validation"

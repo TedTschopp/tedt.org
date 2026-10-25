@@ -58,6 +58,8 @@ image_height: 941
 
 mathjax: false
 mermaid: false
+mastodon-post-id: "117299068280344554"
+mastodon-post-url: "https://tschopp.net/@Ted/117299068280344554"
 ---
 
 When I bought my house, one of the inspectors sold us on a roof inspection.

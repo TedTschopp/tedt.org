@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/skills/generating-podcast-script/
 layout: prompt-details
 permalink: /prompts/:slug/
 

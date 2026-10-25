@@ -7,6 +7,8 @@ robots: "noindex, follow"
 ---
 
 <h1>Mastodon Backfill History</h1>
+{% include social/mastodon-recovery-status.html %}
+<h2>Legacy runs</h2>
 <p>This page renders the accumulated backfill run history. Only live (non-dry-run) runs reduce the missing count.</p>
 <p>Machine-readable snapshot: <a href="/mastodon-backfill-progress.json">/mastodon-backfill-progress.json</a></p>
 <p>Summary view: <a href="/mastodon-backfill-summary/">/mastodon-backfill-summary/</a> | Raw markdown: <a href="https://github.com/TedTschopp/tedt.org/blob/main/Logs/mastodon-backfill-summary.md">Logs/mastodon-backfill-summary.md</a></p>

@@ -16,6 +16,8 @@ tags:
 image: /img/2026-10/The last maintenance window.webp
 image-alt: "The Last Maintenance Window game cover: two technicians repair server racks beneath an enormous red network sphere, beside the game’s title."
 image-description: "The Last Maintenance Window game cover: two technicians repair server racks beneath an enormous red network sphere, beside the game’s title."
+mastodon-post-id: "117426562292648666"
+mastodon-post-url: "https://tschopp.net/@Ted/117426562292648666"
 ---
 
 # The Last Maintenance Window
