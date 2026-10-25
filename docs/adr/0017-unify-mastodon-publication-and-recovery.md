@@ -1,7 +1,8 @@
 # ADR 0017: Unify Mastodon Publication and Recovery
 
-- Status: Proposed
+- Status: Accepted
 - Date: 2026-10-25
+- Accepted: User-approved production rollout in PR #245, merged as `969dae3484f55c0c0c500b61613749dfebae5861`.
 
 ## Context
 

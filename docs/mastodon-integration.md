@@ -64,7 +64,10 @@ Both repository variables default to `false`:
 for identity verification and `write:statuses` for publication. Public timeline
 reconciliation does not require a token. Before enabling publication, check the
 account's automatic post-deletion policy so syndicated discussions remain
-available. The cause of the historical missing statuses has not been established.
+available. During the October 25, 2026 production rollout, the account was found
+to automatically delete posts after six months. At the user's request, automatic
+post deletion was disabled for the entire `@Ted@tschopp.net` account and the saved
+setting was verified before enabling publication.
 
 1. Merge and deploy the redirects, discussion renderer, verified links, and
    replacement workflow with both variables false. Scheduled runs reconcile

@@ -37,7 +37,7 @@ This directory contains Architecture Decision Records (ADRs) capturing significa
 | 0014 | [Inside AI Browser Explainer](0014-inside-ai-browser-explainer.md) | Accepted | 2026-09-27 | Isolated Svelte/D3 application, browser-only inference and separately hosted immutable model assets. |
 | 0015 | [Add Account Images to Social Bot Check Previews](0015-add-account-images-to-social-bot-check-previews.md) | Accepted | 2026-10-01 | A narrow Cloudflare Worker route supplies account avatars in the initial sharing metadata. |
 | 0016 | [Introduce a Patreon Member Section on Cloudflare](0016-patreon-member-section.md) | Accepted | 2026-10-06 | Private Jekyll content, Worker authorization, private downloads, and API-driven Patreon tiers. |
-| 0017 | [Unify Mastodon Publication and Recovery](0017-unify-mastodon-publication-and-recovery.md) | Proposed | 2026-10-25 | One durable publisher, complete archive recovery, canonical prompt forwarding, and accessible public discussions. |
+| 0017 | [Unify Mastodon Publication and Recovery](0017-unify-mastodon-publication-and-recovery.md) | Accepted | 2026-10-25 | One durable publisher, complete archive recovery, canonical prompt forwarding, and accessible public discussions. |
 
 
 ## Conventions
