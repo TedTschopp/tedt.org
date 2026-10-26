@@ -24636,14 +24636,13 @@
         {
           "id": "115017514520460817",
           "url": "https://tschopp.net/@Ted/115017514520460817"
+        },
+        {
+          "created_at": "2026-10-26T09:50:01.342Z",
+          "id": "117506585483126261",
+          "url": "https://tschopp.net/@Ted/117506585483126261"
         }
       ],
-      "intent": {
-        "key": "343168a9eb38326ce136bac5f6615d4865390aa4b7da2d4753a4e438bcd5edc9",
-        "kind": "archive",
-        "started_at": "2026-10-26T09:49:47Z"
-      },
-      "missing_checked_at": "2026-10-26T09:49:47Z",
       "preferred_ids": [
         "115017514520460817"
       ],
@@ -24653,8 +24652,14 @@
       "source_paths": [
         "_posts/Blog Posts/2005-03-11-example-of-xmlhttprequest.md"
       ],
-      "state": "uncertain",
-      "title": "Example of XMLHttpRequest"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T09:50:01.342Z",
+        "id": "117506585483126261",
+        "url": "https://tschopp.net/@Ted/117506585483126261"
+      },
+      "title": "Example of XMLHttpRequest",
+      "verified_at": "2026-10-26T09:49:47Z"
     },
     "https://tedt.org/fasting-for-len/": {
       "aliases": [
@@ -25784,7 +25789,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T08:12:57.969Z",
+  "last_publication_at": "2026-10-26T09:50:01.342Z",
   "last_reconciliation_at": "2026-10-26T09:49:47Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 73,
@@ -25860,6 +25865,14 @@
       "kind": "archive",
       "operation": "517da7b247937b2e3c8153fe52f995d4e6730ee7c20a12fd6deb81f8b6ddb317",
       "url": "https://tschopp.net/@Ted/117506203842592130"
+    },
+    {
+      "canonical_url": "https://tedt.org/example-of-xmlhttprequest/",
+      "created_at": "2026-10-26T09:50:01.342Z",
+      "id": "117506585483126261",
+      "kind": "archive",
+      "operation": "343168a9eb38326ce136bac5f6615d4865390aa4b7da2d4753a4e438bcd5edc9",
+      "url": "https://tschopp.net/@Ted/117506585483126261"
     }
   ],
   "run_count": 27,
