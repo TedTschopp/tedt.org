@@ -23,7 +23,9 @@ site deployment. This adds no Jekyll collection/plugin or paid subscription.
 3. The owner supplied `https://aperture.p3k.io/microsub/1121`. This is a public
    discovery URL, not an access token. Sign in to Aperture, follow a feed, and sign
    in to [Monocle](https://monocle.p3k.io/) using `tedt.org`. The free reader keeps
-   seven days. Publish a bookmark to retain an item on your own website.
+   seven days. Publish a bookmark to retain an item on your own website. After
+   changing the site's token endpoint, sign back into Aperture once: its login
+   refreshes the endpoint it stores for token checks. Then sign back into Monocle.
 4. Sign in to [Quill](https://quill.p3k.io/) with `tedt.org`. Approve the requested
    permissions with your passkey. Different clients expose different post types.
    Monocle can also publish replies, likes and bookmarks through Micropub.
@@ -105,13 +107,18 @@ Main repository variables:
 Media repository variable: `INDIEWEB_MEDIA_SYNC_ENABLED` drains uploads referenced
 by public entries. Leave it disabled until the service and main layout are live.
 
-The service deployment job expects `CLOUDFLARE_API_TOKEN` in its protected
-`indieweb-publishing` environment. The existing credential is currently in the
-separate `social-bot-check-preview` environment; reusing that environment requires
-the owner's pending approval. No workflow access change has been made. The two
-Workers and private database schema were deployed manually through the existing
-Cloudflare connection. Service credentials and queue draining remain paused until
-that deployment access is resolved and the real client flow is qualified.
+The owner approved use of the existing main-only `social-bot-check-preview`
+GitHub environment for this service on October 26, 2026. Its historical name
+reflects its first use. The job uses that environment's `CLOUDFLARE_API_TOKEN`
+without copying the credential to another environment. The two publisher roles
+are independently scoped to entry and media queues, and deployment smoke checks
+exercise both roles without logging private source.
+
+The dedicated D1 schema was provisioned separately through the connected
+Cloudflare administrator. `INDIEWEB_D1_MIGRATIONS_ENABLED=true` opts into automatic
+schema migration only when the deployment credential includes D1 Write. Leave it
+false with a Worker-only credential, and apply future schema migrations before
+releasing code that requires them.
 
 Main repository secrets:
 `INDIEWEB_PUBLISHER_TOKEN` (entry queue) and `INDIEWEB_MEDIA_PUBLISHER_TOKEN`
