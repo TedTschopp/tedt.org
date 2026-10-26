@@ -3476,12 +3476,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "eda660d00bdbcf3dc274c95e220687c6f3298ea501b33059eb7ea035ea194452",
-        "kind": "archive",
-        "started_at": "2026-10-26T23:34:07Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-26T23:34:19.486Z",
+          "id": "117509826772050673",
+          "url": "https://tschopp.net/@Ted/117509826772050673"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2007-01-01T08:00:00Z",
       "queue_kind": "archive",
@@ -3489,8 +3490,14 @@
       "source_paths": [
         "_posts/Quotes/2007-01-01-Edward-Castronova-Anyone-who-sees-a-hurricane-co.md"
       ],
-      "state": "uncertain",
-      "title": "Warning of a Virtual Hurricane – Edward Castronova"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T23:34:19.486Z",
+        "id": "117509826772050673",
+        "url": "https://tschopp.net/@Ted/117509826772050673"
+      },
+      "title": "Warning of a Virtual Hurricane – Edward Castronova",
+      "verified_at": "2026-10-26T23:34:07Z"
     },
     "https://tedt.org/Energy-and-Water-Usage-for-Models/": {
       "aliases": [
@@ -25884,7 +25891,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T22:25:40.540Z",
+  "last_publication_at": "2026-10-26T23:34:19.486Z",
   "last_reconciliation_at": "2026-10-26T23:34:07Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 83,
@@ -26040,6 +26047,14 @@
       "kind": "archive",
       "operation": "cfdffba43c49a774f8ad6524bb5c4536b25344a90852860c1517b9e9bc499f24",
       "url": "https://tschopp.net/@Ted/117509556832872626"
+    },
+    {
+      "canonical_url": "https://tedt.org/Edward-Castronova-Anyone-who-sees-a-hurricane-co/",
+      "created_at": "2026-10-26T23:34:19.486Z",
+      "id": "117509826772050673",
+      "kind": "archive",
+      "operation": "eda660d00bdbcf3dc274c95e220687c6f3298ea501b33059eb7ea035ea194452",
+      "url": "https://tschopp.net/@Ted/117509826772050673"
     }
   ],
   "run_count": 65,
