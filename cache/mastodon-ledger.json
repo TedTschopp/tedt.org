@@ -22107,12 +22107,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T18:14:37Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "ec7414961ded81f42f1a3db826ff4a84f33054ce20bb5f5ad95fc11d79f30ea0",
-        "kind": "new",
-        "started_at": "2026-10-26T01:32:19Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-26T01:32:32.673Z",
+          "id": "117504629320821411",
+          "url": "https://tschopp.net/@Ted/117504629320821411"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2026-10-25T07:00:00Z",
       "queue_kind": "new",
@@ -22120,8 +22121,14 @@
       "source_paths": [
         "_posts/Quotes/2026-10-25-Sean-Grove-Whoever-writes-the-spec.md"
       ],
-      "state": "uncertain",
-      "title": "Whoever Writes the Spec Is Now the Programmer – Sean Grove"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T01:32:32.673Z",
+        "id": "117504629320821411",
+        "url": "https://tschopp.net/@Ted/117504629320821411"
+      },
+      "title": "Whoever Writes the Spec Is Now the Programmer – Sean Grove",
+      "verified_at": "2026-10-26T01:32:19Z"
     },
     "https://tedt.org/Shadow-App-Serenade/": {
       "aliases": [
@@ -25686,7 +25693,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T00:08:20.488Z",
+  "last_publication_at": "2026-10-26T01:32:32.673Z",
   "last_reconciliation_at": "2026-10-26T01:32:19Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 67,
@@ -25714,6 +25721,14 @@
       "kind": "new",
       "operation": "e2a6b5ecce5d95f483883f7e742b0d26c81e3ede23403f75e7e79d3376030e00",
       "url": "https://tschopp.net/@Ted/117504298220635285"
+    },
+    {
+      "canonical_url": "https://tedt.org/Sean-Grove-Whoever-writes-the-spec/",
+      "created_at": "2026-10-26T01:32:32.673Z",
+      "id": "117504629320821411",
+      "kind": "new",
+      "operation": "ec7414961ded81f42f1a3db826ff4a84f33054ce20bb5f5ad95fc11d79f30ea0",
+      "url": "https://tschopp.net/@Ted/117504629320821411"
     }
   ],
   "run_count": 11,
