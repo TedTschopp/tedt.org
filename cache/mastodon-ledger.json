@@ -25006,14 +25006,13 @@
         {
           "id": "115017516923701585",
           "url": "https://tschopp.net/@Ted/115017516923701585"
+        },
+        {
+          "created_at": "2026-10-26T17:35:46.839Z",
+          "id": "117508416919184655",
+          "url": "https://tschopp.net/@Ted/117508416919184655"
         }
       ],
-      "intent": {
-        "key": "89bda2f7fb9dc4cbfa1dd2ca26e1a314ca0e843b1ce31755fdce9e07dec6c061",
-        "kind": "archive",
-        "started_at": "2026-10-26T17:35:33Z"
-      },
-      "missing_checked_at": "2026-10-26T17:35:33Z",
       "preferred_ids": [
         "115017516923701585"
       ],
@@ -25023,8 +25022,14 @@
       "source_paths": [
         "_posts/Blog Posts/2006-06-23-microsoft-teams-with-creative-commons-or-common-corporate-mistakes.md"
       ],
-      "state": "uncertain",
-      "title": "Microsoft teams with Creative Commons"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T17:35:46.839Z",
+        "id": "117508416919184655",
+        "url": "https://tschopp.net/@Ted/117508416919184655"
+      },
+      "title": "Microsoft teams with Creative Commons",
+      "verified_at": "2026-10-26T17:35:33Z"
     },
     "https://tedt.org/mobile-computing/": {
       "aliases": [
@@ -25834,7 +25839,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T16:29:35.270Z",
+  "last_publication_at": "2026-10-26T17:35:46.839Z",
   "last_reconciliation_at": "2026-10-26T17:35:33Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 78,
@@ -25950,6 +25955,14 @@
       "kind": "archive",
       "operation": "98a9ff9f6383abb11b9a0a65af237f095682ef41818d218e0080b22dc7596b5f",
       "url": "https://tschopp.net/@Ted/117508156638559116"
+    },
+    {
+      "canonical_url": "https://tedt.org/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/",
+      "created_at": "2026-10-26T17:35:46.839Z",
+      "id": "117508416919184655",
+      "kind": "archive",
+      "operation": "89bda2f7fb9dc4cbfa1dd2ca26e1a314ca0e843b1ce31755fdce9e07dec6c061",
+      "url": "https://tschopp.net/@Ted/117508416919184655"
     }
   ],
   "run_count": 42,
