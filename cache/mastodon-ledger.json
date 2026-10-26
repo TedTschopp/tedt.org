@@ -2100,12 +2100,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "7d8a52c3860f0023a06b51ff560bddfcf29675cdce9c150217df474b3ecd76bb",
-        "kind": "archive",
-        "started_at": "2026-10-26T04:28:53Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-26T04:29:05.528Z",
+          "id": "117505323534137695",
+          "url": "https://tschopp.net/@Ted/117505323534137695"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2004-01-01T08:00:00Z",
       "queue_kind": "archive",
@@ -2113,8 +2114,14 @@
       "source_paths": [
         "_posts/Quotes/2004-01-01-Al-Swearengen-In-life-you-have-to-do-a-lot-o.md"
       ],
-      "state": "uncertain",
-      "title": "Life Is One Vile Task After Another – Al Swearengen"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T04:29:05.528Z",
+        "id": "117505323534137695",
+        "url": "https://tschopp.net/@Ted/117505323534137695"
+      },
+      "title": "Life Is One Vile Task After Another – Al Swearengen",
+      "verified_at": "2026-10-26T04:28:53Z"
     },
     "https://tedt.org/Alfred-A.-Montapert-Do-not-confuse-motion-and-prog/": {
       "aliases": [
@@ -25714,7 +25721,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T03:04:34.145Z",
+  "last_publication_at": "2026-10-26T04:29:05.528Z",
   "last_reconciliation_at": "2026-10-26T04:28:53Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 69,
@@ -25758,6 +25765,14 @@
       "kind": "archive",
       "operation": "ba0bec7e5465c6f862e061a1a00681ddf0d4593d5e67045338a23f5844c6e181",
       "url": "https://tschopp.net/@Ted/117504991175950265"
+    },
+    {
+      "canonical_url": "https://tedt.org/Al-Swearengen-In-life-you-have-to-do-a-lot-o/",
+      "created_at": "2026-10-26T04:29:05.528Z",
+      "id": "117505323534137695",
+      "kind": "archive",
+      "operation": "7d8a52c3860f0023a06b51ff560bddfcf29675cdce9c150217df474b3ecd76bb",
+      "url": "https://tschopp.net/@Ted/117505323534137695"
     }
   ],
   "run_count": 17,
