@@ -24566,14 +24566,13 @@
         {
           "id": "115017514041451501",
           "url": "https://tschopp.net/@Ted/115017514041451501"
+        },
+        {
+          "created_at": "2026-10-26T06:56:20.275Z",
+          "id": "117505902528097715",
+          "url": "https://tschopp.net/@Ted/117505902528097715"
         }
       ],
-      "intent": {
-        "key": "7fd78c1f7034024080617a306bdb9e289ecd6827eab93c1f23d840930ead8f07",
-        "kind": "archive",
-        "started_at": "2026-10-26T06:56:05Z"
-      },
-      "missing_checked_at": "2026-10-26T06:56:05Z",
       "preferred_ids": [
         "115017514041451501"
       ],
@@ -24583,8 +24582,14 @@
       "source_paths": [
         "_posts/Blog Posts/2004-05-21-currently-liste.md"
       ],
-      "state": "uncertain",
-      "title": "Integrating iTunes with TypePad: A Simple Guide"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T06:56:20.275Z",
+        "id": "117505902528097715",
+        "url": "https://tschopp.net/@Ted/117505902528097715"
+      },
+      "title": "Integrating iTunes with TypePad: A Simple Guide",
+      "verified_at": "2026-10-26T06:56:05Z"
     },
     "https://tedt.org/dehydrated/": {
       "aliases": [
@@ -25764,7 +25769,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T05:47:58.282Z",
+  "last_publication_at": "2026-10-26T06:56:20.275Z",
   "last_reconciliation_at": "2026-10-26T06:56:05Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 71,
@@ -25824,6 +25829,14 @@
       "kind": "new",
       "operation": "6b27add3f9553b21b5671435be24b1ec798849e4a5038982965f3eb23c8b4a1e",
       "url": "https://tschopp.net/@Ted/117505633699839727"
+    },
+    {
+      "canonical_url": "https://tedt.org/currently-liste/",
+      "created_at": "2026-10-26T06:56:20.275Z",
+      "id": "117505902528097715",
+      "kind": "archive",
+      "operation": "7fd78c1f7034024080617a306bdb9e289ecd6827eab93c1f23d840930ead8f07",
+      "url": "https://tschopp.net/@Ted/117505902528097715"
     }
   ],
   "run_count": 21,
