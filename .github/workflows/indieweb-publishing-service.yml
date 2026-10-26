@@ -21,6 +21,7 @@ jobs:
           cache-dependency-path: _code/cloudflare/indieweb/package-lock.json
       - run: npm ci --prefix _code/cloudflare/indieweb --no-audit --no-fund
       - run: npm test --prefix _code/cloudflare/indieweb
+      - run: npm run deploy:ci --prefix _code/cloudflare/indieweb -- --dry-run
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
@@ -67,7 +68,7 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: '13ebf849f1787412dc2c48a262de0407'
         run: |
           npx wrangler deploy --config wrangler-buffer.jsonc
-          npx wrangler deploy
+          npm run deploy:ci
       - name: Configure narrowly scoped publisher credentials
         working-directory: _code/cloudflare/indieweb
         env:
@@ -89,6 +90,12 @@ jobs:
           import json, os, urllib.request, urllib.error
           with urllib.request.urlopen(urllib.request.Request('https://tedt.org/micropub/health', headers={'User-Agent':'tedt.org deployment verifier'}), timeout=30) as response:
               assert json.load(response)['identity'] == 'IndieKey'
+          for query in ['q=config', 'q=source&url=https%3A%2F%2Ftedt.org%2Fupdates%2F2026%2F10%2F26%2F00000000-0000-4000-8000-000000000000%2F']:
+              try:
+                  urllib.request.urlopen(urllib.request.Request('https://tedt.org/micropub?' + query, headers={'User-Agent':'tedt.org deployment verifier'}), timeout=30)
+                  raise SystemExit('Unauthenticated query unexpectedly succeeded')
+              except urllib.error.HTTPError as error:
+                  assert error.code == 401, error.code
           for token_name, action, field in [('SITE_TOKEN', 'pending', 'entries'), ('MEDIA_TOKEN', 'inventory', 'ids')]:
               request = urllib.request.Request('https://tedt.org/micropub/publisher', data=json.dumps({'action':action}).encode(), headers={'Authorization':'Bearer ' + os.environ[token_name], 'Content-Type':'application/json', 'User-Agent':'tedt.org deployment verifier'})
               with urllib.request.urlopen(request, timeout=30) as response:
