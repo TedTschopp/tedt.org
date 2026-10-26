@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 
     {% include utility/calculate-variables.html %}
+    {% if page.micropub.id %}<meta name="micropub-id" content="{{ page.micropub.id | escape }}"><meta name="micropub-revision" content="{{ page.micropub.revision | escape }}">{% endif %}
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="HandheldFriendly" content="True">
@@ -48,7 +49,10 @@
             <div class="col-lg-12">
               <!-- Blog Post -->
 
-                <main class="h-entry" role="main">
+                <main class="h-entry{% if page.micropub.type == 'h-event' %} h-event{% endif %}" role="main">
+                {% if page.micropub.id %}
+                  {% include content/micropub-entry.html %}
+                {% else %}
                   <!-- Title -->
                   {% assign micropub_permalink = page.mf-syndication[0] | default: page.url | relative_url %}
                   {% assign __micropub_primary_category = page.category | default: page.categories[0] | default: '' | to_s | strip %}
@@ -199,6 +203,7 @@
                   <span class="e-content">{{ __micropub_content | lazy_images_except_first }}</span>
                   <hr>
                   {% endif %}
+                {% endif %}
                 </main>
  
 

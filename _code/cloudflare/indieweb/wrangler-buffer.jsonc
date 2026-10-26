@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tedt-indieweb-upload-buffer",
+  "main": "src/upload-buffer.mjs",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "d1_databases": [{ "binding": "DB", "database_name": "tedt-indieweb-publishing", "database_id": "c4864072-7198-4565-a52a-c53f57a3a7fe" }]
+}

@@ -1003,3 +1003,13 @@ For questions or feedback, you can reach me via [Mastodon](https://twit.social/@
 ### IndieWeb restoration
 
 Public article responses use a moderated static Webmention cache. See [IndieWeb operations](docs/indieweb.md) for refresh, approval, blocking, verified social links, delivery retries, and live qualification. The chronological microformats feed is `/updates/`.
+
+### IndieWeb publishing and reader tools
+
+[Publishing operations and account setup](docs/indieweb-publishing.md) documents
+Phase 2. The existing Micropub layout supports managed entries under
+`_posts/Micropub/` with a `micropub` identity/revision object and existing `mf-*`
+properties. `mastodon-syndicate: true` is required for managed entries to enter the
+existing Mastodon publication manifest; false is the default. Legacy entries
+keep their existing rendering and eligibility. Do not put drafts in public Git
+branches or artifacts. The separate media repository uses GitHub Pages only.

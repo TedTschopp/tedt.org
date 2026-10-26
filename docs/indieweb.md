@@ -143,6 +143,6 @@ keeping existing responses readable. Revert the site commit or deploy the prior
 Pages artifact to roll back rendering. Retain the approved cache and delivery
 ledger when reverting so moderation and accepted deliveries are not forgotten.
 
-Phase 2 will add publishing/reading tools and the separate `media.tedt.org`
-GitHub Pages repository. Phase 3 will repair federation routes while preserving
-existing Mastodon and Bluesky identities. Those resources are not created here.
+See [Phase 2 publishing and reader operations](indieweb-publishing.md) for Micropub,
+account setup, private drafts, and the separate `media.tedt.org` GitHub Pages
+repository. Phase 3 federation remains separate and preserves existing identities.

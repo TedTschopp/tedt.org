@@ -1,0 +1,93 @@
+name: IndieWeb publishing service
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['_code/cloudflare/indieweb/**', '.github/workflows/indieweb-publishing-service.yml']
+  pull_request:
+    paths: ['_code/cloudflare/indieweb/**', '_code/micropub*', 'tests/micropub*', '.github/workflows/indieweb-publishing-service.yml']
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: _code/cloudflare/indieweb/package-lock.json
+      - run: npm ci --prefix _code/cloudflare/indieweb --no-audit --no-fund
+      - run: npm test --prefix _code/cloudflare/indieweb
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - run: bundle exec ruby tests/micropub_publication_test.rb
+      - run: python3 -m unittest discover -s tests -p 'test_micropub_publish.py'
+  deploy:
+    needs: test
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch') &&
+      vars.INDIEWEB_SERVICE_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    concurrency:
+      group: indieweb-service-deploy
+      cancel-in-progress: false
+    environment:
+      name: indieweb-publishing
+      url: https://tedt.org/micropub/health
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check this service revision is still current
+        run: |
+          git fetch --no-tags --depth=1 origin main
+          git diff --exit-code "$GITHUB_SHA" FETCH_HEAD -- _code/cloudflare/indieweb .github/workflows/indieweb-publishing-service.yml
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: _code/cloudflare/indieweb/package-lock.json
+      - run: npm ci --prefix _code/cloudflare/indieweb --no-audit --no-fund
+      - name: Apply private authoring schema
+        working-directory: _code/cloudflare/indieweb
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: '13ebf849f1787412dc2c48a262de0407'
+        run: npx wrangler d1 migrations apply tedt-indieweb-publishing --remote
+      - name: Deploy the validated publishing service
+        working-directory: _code/cloudflare/indieweb
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: '13ebf849f1787412dc2c48a262de0407'
+        run: |
+          npx wrangler deploy --config wrangler-buffer.jsonc
+          npx wrangler deploy
+      - name: Configure narrowly scoped publisher credentials
+        working-directory: _code/cloudflare/indieweb
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: '13ebf849f1787412dc2c48a262de0407'
+          SITE_TOKEN: ${{ secrets.INDIEWEB_PUBLISHER_TOKEN }}
+          MEDIA_TOKEN: ${{ secrets.INDIEWEB_MEDIA_PUBLISHER_TOKEN }}
+        run: |
+          test -n "$SITE_TOKEN" && test -n "$MEDIA_TOKEN"
+          printf '%s' "$SITE_TOKEN" | npx wrangler secret put PUBLISHER_TOKEN
+          printf '%s' "$MEDIA_TOKEN" | npx wrangler secret put MEDIA_PUBLISHER_TOKEN
+          printf '%s' "$MEDIA_TOKEN" | npx wrangler secret put PUBLISHER_TOKEN --config wrangler-buffer.jsonc
+      - name: Check public service health and unauthenticated denial
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request, urllib.error
+          with urllib.request.urlopen(urllib.request.Request('https://tedt.org/micropub/health', headers={'User-Agent':'tedt.org deployment verifier'}), timeout=30) as response:
+              assert json.load(response)['identity'] == 'IndieKey'
+          try:
+              urllib.request.urlopen(urllib.request.Request('https://tedt.org/micropub', data=b'h=entry&content=must-not-save', headers={'Content-Type':'application/x-www-form-urlencoded'}), timeout=30)
+              raise SystemExit('Unauthenticated write unexpectedly succeeded')
+          except urllib.error.HTTPError as error:
+              assert error.code == 401, error.code
+          PY

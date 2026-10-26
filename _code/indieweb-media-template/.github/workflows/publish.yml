@@ -1,0 +1,50 @@
+name: Validate and publish media
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  push:
+    branches: [main]
+    paths: ['public/**', 'scripts/**', '.github/workflows/publish.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: media-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Pull uploads referenced by public entries
+        id: sync
+        if: vars.INDIEWEB_MEDIA_SYNC_ENABLED == 'true'
+        env:
+          INDIEWEB_PUBLISHER_TOKEN: ${{ secrets.INDIEWEB_MEDIA_PUBLISHER_TOKEN }}
+        run: python3 scripts/publish.py media
+      - name: Validate all media, including files added through Git
+        if: github.event_name != 'schedule' || steps.sync.outputs.deploy_needed == 'true'
+        run: python3 scripts/publish.py check-media --commit-manifest
+      - uses: actions/configure-pages@v5
+        if: github.event_name != 'schedule' || steps.sync.outputs.deploy_needed == 'true'
+      - uses: actions/upload-pages-artifact@v4
+        if: github.event_name != 'schedule' || steps.sync.outputs.deploy_needed == 'true'
+        with:
+          path: public
+      - uses: actions/deploy-pages@v4
+        if: github.event_name != 'schedule' || steps.sync.outputs.deploy_needed == 'true'
+        id: deployment
+      - name: Confirm live checksums before releasing private upload chunks
+        if: vars.INDIEWEB_MEDIA_SYNC_ENABLED == 'true'
+        env:
+          INDIEWEB_PUBLISHER_TOKEN: ${{ secrets.INDIEWEB_MEDIA_PUBLISHER_TOKEN }}
+        run: python3 scripts/publish.py confirm-media

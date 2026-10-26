@@ -327,3 +327,6 @@ python3 _code/backfill_masto_posts.py --write --rate 8
 python3 _code/backfill_masto_posts.py --write --since 2024-01-01 --limit 10
 ```
 
+## Managed Micropub entries
+
+Phase 2 entries use the existing micropubpost layout under _posts/Micropub/ with a micropub identity/revision object and mf-* properties. Keep canonical URLs immutable. Documented mastodon-syndicate is false by default; true opts a managed entry into the existing Mastodon manifest. Preserve verified Mastodon IDs/URLs on edits. Draft/deleted source and pending uploads stay in the dedicated private authoring service, never public branches or build artifacts. See docs/indieweb-publishing.md.

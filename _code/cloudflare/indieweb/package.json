@@ -1,0 +1,18 @@
+{
+  "name": "tedt-indieweb-publishing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "npm run check && node --test tests/*.test.mjs",
+    "check": "WRANGLER_SEND_METRICS=false wrangler deploy --dry-run --outdir .wrangler/build && WRANGLER_SEND_METRICS=false wrangler deploy --config wrangler-buffer.jsonc --dry-run --outdir .wrangler/buffer",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "miniflare": "5.20261001.0-alpha",
+    "wrangler": "4.146.0"
+  }
+}

@@ -37,6 +37,8 @@ end
 items = site.posts.docs.filter_map do |post|
   next if excluded.any? { |prefix| post.relative_path.downcase.start_with?(prefix) }
   next if post.data['published'] == false
+  # Managed Micropub entries syndicate only through an explicit client selection.
+  next if post.data['micropub'] && post.data['mastodon-syndicate'] != true
 
   old_url = public_url(post.url, origin)
   target = post.data['redirect_to']

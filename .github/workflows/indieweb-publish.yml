@@ -1,0 +1,44 @@
+name: IndieWeb publish queued entries
+on:
+  schedule:
+    - cron: '*/5 * * * *'
+  workflow_dispatch:
+  workflow_run:
+    workflows: ['Site Quality + Deploy']
+    types: [completed]
+permissions:
+  contents: write
+  actions: write
+concurrency:
+  group: indieweb-entry-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    if: >-
+      vars.INDIEWEB_PUBLISH_ENABLED == 'true' &&
+      (github.event_name != 'workflow_run' ||
+       (github.event.workflow_run.conclusion == 'success' &&
+        github.event.workflow_run.head_branch == 'main' &&
+        github.event.workflow_run.event != 'pull_request'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
+          bundler-cache: true
+      - name: Confirm live entries after a successful site deployment
+        if: github.event_name == 'workflow_run'
+        env:
+          INDIEWEB_PUBLISHER_TOKEN: ${{ secrets.INDIEWEB_PUBLISHER_TOKEN }}
+        run: python3 _code/micropub_publish.py confirm-site
+      - name: Validate and commit public entries, then request the existing site build
+        if: github.event_name != 'workflow_run'
+        env:
+          INDIEWEB_PUBLISHER_TOKEN: ${{ secrets.INDIEWEB_PUBLISHER_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+        run: python3 _code/micropub_publish.py site
