@@ -50,6 +50,7 @@ PORTRAIT_BY_AUTHOR = {
   'Ray Bradbury' => 'ray-bradbury',
   'Robert Heinlein' => 'robert-heinlein',
   'Rudyard Kipling' => 'rudyard-kipling',
+  'Sean Grove' => 'sean-grove',
   'Stephen Vincent Benét' => 'stephen-vincent-benet',
   'Steve Jobs' => 'steve-jobs',
   'Stewart Brand' => 'stewart-brand',
@@ -64,8 +65,8 @@ PORTRAIT_BY_AUTHOR = {
 }.freeze
 
 EXPECTED_NON_TARGET_AUTHORS = ['Karl Kraus', 'Samuel Johnson', 'Sextus Empiricus'].freeze
-EXPECTED_TARGET_FILES = 72
-EXPECTED_PORTRAITS = 45
+EXPECTED_TARGET_FILES = 73
+EXPECTED_PORTRAITS = 46
 EXPECTED_WIDTH = 1456
 EXPECTED_HEIGHT = 816
 BLACKBERRY_IMAGE = '/img/quotes/authors/blackberry-2014.webp'
