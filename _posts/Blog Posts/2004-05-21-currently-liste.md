@@ -41,7 +41,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017514041451501'
+mastodon-post-id: "117505902528097715"
+mastodon-post-url: "https://tschopp.net/@Ted/117505902528097715"
 ---
 Ok, So I have iTunes running here at work, and I have Typepad running. So now the two of them are working together. This program below will update TypePad list of songs with the latest tunes you are listening to. You will need to insert your List ID, Username, and Password instead of the ************'s.
 
