@@ -25136,14 +25136,13 @@
         {
           "id": "115017518373375822",
           "url": "https://tschopp.net/@Ted/115017518373375822"
+        },
+        {
+          "created_at": "2026-10-26T21:14:43.443Z",
+          "id": "117509277839757019",
+          "url": "https://tschopp.net/@Ted/117509277839757019"
         }
       ],
-      "intent": {
-        "key": "4f28124bde985d4ab95605bc71351cfd200854b3d740543a947ebca7447d1d02",
-        "kind": "archive",
-        "started_at": "2026-10-26T21:14:28Z"
-      },
-      "missing_checked_at": "2026-10-26T21:14:28Z",
       "preferred_ids": [
         "115017518373375822"
       ],
@@ -25153,8 +25152,14 @@
       "source_paths": [
         "_posts/Blog Posts/2006-12-27-playing-it-cool-playing-it-fast.md"
       ],
-      "state": "uncertain",
-      "title": "Playing it Cool, Playing it Fast! Playing it on the Computer"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T21:14:43.443Z",
+        "id": "117509277839757019",
+        "url": "https://tschopp.net/@Ted/117509277839757019"
+      },
+      "title": "Playing it Cool, Playing it Fast! Playing it on the Computer",
+      "verified_at": "2026-10-26T21:14:28Z"
     },
     "https://tedt.org/putting-first-things-first/": {
       "aliases": [
@@ -25864,7 +25869,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T20:09:25.835Z",
+  "last_publication_at": "2026-10-26T21:14:43.443Z",
   "last_reconciliation_at": "2026-10-26T21:14:28Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 81,
@@ -26004,6 +26009,14 @@
       "kind": "archive",
       "operation": "0543d323be2b9de2e7cd149a9013aa2d1e2fe4e5b49a1264e9150e228c51c5f4",
       "url": "https://tschopp.net/@Ted/117509021095350612"
+    },
+    {
+      "canonical_url": "https://tedt.org/playing-it-cool-playing-it-fast/",
+      "created_at": "2026-10-26T21:14:43.443Z",
+      "id": "117509277839757019",
+      "kind": "archive",
+      "operation": "4f28124bde985d4ab95605bc71351cfd200854b3d740543a947ebca7447d1d02",
+      "url": "https://tschopp.net/@Ted/117509277839757019"
     }
   ],
   "run_count": 55,
