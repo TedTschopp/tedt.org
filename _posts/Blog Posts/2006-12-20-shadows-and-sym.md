@@ -50,7 +50,8 @@ mathjax: null
 order: null
 image_width: 1456
 image_height: 816
-mastodon-post-id: '115017517888250747'
+mastodon-post-id: "117509021095350612"
+mastodon-post-url: "https://tschopp.net/@Ted/117509021095350612"
 ---
 > &ldquo;It must be more than thirty years ago that I bought &mdash; almost unwilling, for I had looked at the column on that bookstall and rejected it on a dozen previous occasions &mdash; the Everyman edition of _Phantastes_. A few hours later I knew that I had crossed a great frontier. I had already been waist deep in Romanticism, and likely enough, at any moment, to flounder into its darker and more evil forms, slithering down the steep descent that leads from the love of strangeness to that of eccentricity and thence to that of perversity.&rdquo; &mdash; C.S. Lewis Preface to _George MacDonald: an Anthology_
 
