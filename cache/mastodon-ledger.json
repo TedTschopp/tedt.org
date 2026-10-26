@@ -23557,12 +23557,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-26T05:08:32Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "6b27add3f9553b21b5671435be24b1ec798849e4a5038982965f3eb23c8b4a1e",
-        "kind": "new",
-        "started_at": "2026-10-26T05:47:45Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-26T05:47:58.282Z",
+          "id": "117505633699839727",
+          "url": "https://tschopp.net/@Ted/117505633699839727"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2026-10-25T07:00:00Z",
       "queue_kind": "new",
@@ -23570,8 +23571,14 @@
       "source_paths": [
         "_posts/AI/2026-10-25-The-Unfinished-Revolution.md"
       ],
-      "state": "uncertain",
-      "title": "The Unfinished Revolution"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T05:47:58.282Z",
+        "id": "117505633699839727",
+        "url": "https://tschopp.net/@Ted/117505633699839727"
+      },
+      "title": "The Unfinished Revolution",
+      "verified_at": "2026-10-26T05:47:45Z"
     },
     "https://tedt.org/Theodore-Roosevelt-It-is-not-the-critic-who-count/": {
       "aliases": [
@@ -25750,7 +25757,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T04:29:05.528Z",
+  "last_publication_at": "2026-10-26T05:47:58.282Z",
   "last_reconciliation_at": "2026-10-26T05:47:45Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 70,
@@ -25802,6 +25809,14 @@
       "kind": "archive",
       "operation": "7d8a52c3860f0023a06b51ff560bddfcf29675cdce9c150217df474b3ecd76bb",
       "url": "https://tschopp.net/@Ted/117505323534137695"
+    },
+    {
+      "canonical_url": "https://tedt.org/The-Unfinished-Revolution/",
+      "created_at": "2026-10-26T05:47:58.282Z",
+      "id": "117505633699839727",
+      "kind": "new",
+      "operation": "6b27add3f9553b21b5671435be24b1ec798849e4a5038982965f3eb23c8b4a1e",
+      "url": "https://tschopp.net/@Ted/117505633699839727"
     }
   ],
   "run_count": 20,
