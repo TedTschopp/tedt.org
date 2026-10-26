@@ -10,6 +10,7 @@
     "started_at": "2026-10-26T00:08:07Z",
     "version": 1
   },
+  "consecutive_failures": 0,
   "durable_initialized_at": "2026-10-25T17:27:55Z",
   "entries": {
     "https://ai.tedt.org/prompts/abb-sbb-ubb-builder/": {
@@ -25708,7 +25709,7 @@
       "url": "https://tschopp.net/@Ted/117504298220635285"
     }
   ],
-  "run_count": 8,
+  "run_count": 9,
   "unmatched_legacy": {
     "/Swiss-Folklore/:title:output_ext/": [
       {
