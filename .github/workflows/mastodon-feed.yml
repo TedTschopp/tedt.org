@@ -2,232 +2,184 @@ name: Feed to Mastodon
 
 on:
   workflow_run:
-    workflows: ["Site Quality + Deploy"]
+    # Workflow-name filters are globs; escape the literal plus sign.
+    workflows: ['Site Quality \+ Deploy']
     types: [completed]
-    branches: [ main ]
+    branches: [main]
   schedule:
-    - cron: '0 */6 * * *'
+    # Frequent checks absorb scheduling delays; ledger cooldowns enforce 24/48 per day.
+    - cron: '7,17,27,37,47,57 * * * *'
   workflow_dispatch:
+    inputs:
+      mode:
+        description: Audit offline, reconcile public threads, or publish one queued item
+        type: choice
+        default: audit
+        options: [audit, reconcile, publish]
+      write:
+        description: Persist verified mappings; publishing also requires both rollout switches
+        type: boolean
+        default: false
+      archive_canary:
+        description: Allow one manual archive item while automatic backfill stays paused
+        type: boolean
+        default: false
 
 permissions:
-  contents: write
-  actions: read
+  contents: read
+
+concurrency:
+  group: mastodon-production-mutations
+  cancel-in-progress: false
 
 jobs:
   post-feed:
-    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || (github.event_name == 'workflow_run' && github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main') }}
+    if: >-
+      (github.event_name == 'schedule') ||
+      (github.event_name == 'workflow_dispatch' && github.ref == 'refs/heads/main') ||
+      (github.event_name == 'workflow_run' &&
+       github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.head_branch == 'main' &&
+       github.event.workflow_run.display_title != 'IndieWeb cache refresh' &&
+       github.event.workflow_run.head_repository.full_name == github.repository &&
+       github.event.workflow_run.path == '.github/workflows/deploy.yml' &&
+       (github.event.workflow_run.event == 'push' || github.event.workflow_run.event == 'workflow_dispatch') &&
+       !startsWith(github.event.workflow_run.head_commit.message, 'chore(mastodon):'))
     runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      actions: write
     steps:
-      - name: Checkout
+      - name: Check out trusted main
         uses: actions/checkout@v7
-      - name: Setup Node
-        uses: actions/setup-node@v4
         with:
-          node-version: '20'
-      - name: Install Node dependencies
-        run: |
-          npm ci --no-audit --no-fund
+          ref: main
+          fetch-depth: 0
 
-      - name: Clean Allure output (this run)
-        if: always()
-        run: |
-          npm run allure:clean
-
-      - name: Restore Allure history (trends)
-        if: always()
-        continue-on-error: true
-        env:
-          GITHUB_TOKEN: ${{ github.token }}
-        run: |
-          set -euo pipefail
-          mkdir -p tmp/allure-history
-
-          echo "[allure] Looking for latest 'allure-report-mastodon-feed' artifact to restore history..."
-
-            DOWNLOAD_URL="$(python3 -c 'import json, os, urllib.request; repo=os.environ["GITHUB_REPOSITORY"]; token=os.environ["GITHUB_TOKEN"]; url=f"https://api.github.com/repos/{repo}/actions/artifacts?per_page=100"; req=urllib.request.Request(url, headers={"Authorization": f"Bearer {token}", "Accept": "application/vnd.github+json", "User-Agent": "tedt.org-allure-history"}); data=json.load(urllib.request.urlopen(req)); arts=data.get("artifacts", []); matches=[a for a in arts if a.get("name")=="allure-report-mastodon-feed" and not a.get("expired", False)]; matches.sort(key=lambda a: a.get("created_at", ""), reverse=True); print(matches[0].get("archive_download_url", "") if matches else "")')"
-
-          if [ -z "${DOWNLOAD_URL:-}" ]; then
-            echo "[allure] No prior artifact found; skipping history restore."
-            exit 0
-          fi
-
-          echo "[allure] Downloading artifact zip..."
-          if ! curl -fsSL -L \
-            -H "Authorization: Bearer $GITHUB_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "$DOWNLOAD_URL" \
-            -o tmp/allure-history.zip; then
-            echo "[allure] Failed to download prior artifact; skipping history restore."
-            exit 0
-          fi
-
-          if ! unzip -q -o tmp/allure-history.zip -d tmp/allure-history; then
-            echo "[allure] Failed to unzip prior artifact; skipping history restore."
-            exit 0
-          fi
-
-          if [ -d "tmp/allure-history/reports/allure/latest/history" ]; then
-            mkdir -p reports/allure/allure-results/history
-            cp -R tmp/allure-history/reports/allure/latest/history/* reports/allure/allure-results/history/ || true
-            echo "[allure] Restored history/ into allure-results/history."
-          else
-            echo "[allure] Artifact had no history directory; skipping."
-          fi
-      - name: Setup Python
+      - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.x'
-      - name: Decide if we should post
-        id: guard
-        run: |
-          mkdir -p tmp
-          python3 _code/should_post_latest.py > tmp/guard.json || true
-          echo "Guard output:" && cat tmp/guard.json || true
-          SHOULD=$(python3 -c "import json;print(json.load(open('tmp/guard.json')).get('should_post','false'))" || echo false)
-          echo "should_post=$SHOULD" >> $GITHUB_OUTPUT
-      - name: Setup Ruby
-        if: steps.guard.outputs.should_post == 'true'
+          python-version: '3.12'
+
+      - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.2'
           bundler-cache: true
-      - name: Build and serve local Mastodon feed
-        if: steps.guard.outputs.should_post == 'true'
+
+      - name: Validate mode and rollout switches
+        id: inputs
         env:
-          JEKYLL_ENV: production
+          EVENT_NAME: ${{ github.event_name }}
+          REQUESTED_MODE: ${{ inputs.mode || 'audit' }}
+          REQUESTED_WRITE: ${{ inputs.write || false }}
+          PUBLISH_ENABLED: ${{ vars.MASTODON_PUBLISH_ENABLED || 'false' }}
         run: |
           set -euo pipefail
-          mkdir -p tmp
-          bundle exec jekyll build --quiet
-          bundle exec ruby tests/validate_mastodon_feed.rb
-
-          python3 -m http.server 4000 --bind 127.0.0.1 --directory _site > tmp/mastodon-feed-server.log 2>&1 &
-          echo "$!" > tmp/mastodon-feed-server.pid
-
-          for _ in {1..30}; do
-            if curl -fsS http://127.0.0.1:4000/feed-mastodon.json -o tmp/feed-mastodon-smoke.json; then
-              ruby -rjson -e 'JSON.parse(File.read("tmp/feed-mastodon-smoke.json"))'
-              exit 0
-            fi
-            sleep 1
-          done
-
-          echo "Timed out waiting for local Mastodon feed server" >&2
-          cat tmp/mastodon-feed-server.log >&2 || true
-          exit 1
-      - name: Post new items
-        if: steps.guard.outputs.should_post == 'true'
-        uses: nhoizey/github-action-feed-to-mastodon@v2
-        with:
-          feedUrl: "http://127.0.0.1:4000/feed-mastodon.json"
-          mastodonInstance: "https://tschopp.net"
-          mastodonToken: ${{ secrets.MASTODON_TOKEN }}
-          ignoreFirstRun: false
-          itemChoiceStrategy: newest
-          globalDelayToots: 60
-          delayTootsSameItem: 2880
-      - name: Skip note
-        if: steps.guard.outputs.should_post != 'true'
-        run: |
-          echo "Skipping: latest item already posted"
-
-      - name: Sync mastodon ids from cache
-        id: sync_frontmatter
-        if: always()
-        run: |
-          set -euo pipefail
-          mkdir -p tmp
-          python3 _code/sync_masto_ids_from_cache.py --write --gha 2>&1 | tee tmp/sync-masto-ids.txt
-
-      - name: Guard Mastodon workflow mutations
-        id: masto_mutation_guard
-        if: always()
-        run: |
-          set -euo pipefail
-          mkdir -p tmp
-          git -c core.quotePath=false diff --name-only > tmp/mastodon-changed-files.txt || true
-
-          if [ ! -s tmp/mastodon-changed-files.txt ]; then
-            {
-              echo "has_changes=false"
-            } >> "$GITHUB_OUTPUT"
-            exit 0
+          mode="$REQUESTED_MODE"
+          write="$REQUESTED_WRITE"
+          if [ "$EVENT_NAME" != 'workflow_dispatch' ]; then
+            mode=reconcile
+            write=true
+            if [ "$PUBLISH_ENABLED" = true ]; then mode=publish; fi
           fi
-
-          UNEXPECTED=$(grep -Ev '^(cache/.+\.json|_posts/.+\.md)$' tmp/mastodon-changed-files.txt || true)
-          if [ -n "$UNEXPECTED" ]; then
-            echo "Unexpected file mutations detected during Mastodon workflow:" >&2
-            echo "$UNEXPECTED" >&2
+          case "$mode" in audit|reconcile|publish) ;; *) exit 1 ;; esac
+          case "$write" in true|false) ;; *) exit 1 ;; esac
+          if [ "$mode" = audit ] && [ "$write" = true ]; then
+            echo 'An offline audit cannot write verified mappings.' >&2
             exit 1
           fi
+          echo "mode=$mode" >> "$GITHUB_OUTPUT"
+          echo "write=$write" >> "$GITHUB_OUTPUT"
 
-          {
-            echo "has_changes=true"
-          } >> "$GITHUB_OUTPUT"
-
-      - name: Commit mastodon cache/front matter (if changed)
-        if: steps.masto_mutation_guard.outputs.has_changes == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v7
-        with:
-          commit_message: "chore: update Mastodon cache/front matter"
-
-      - name: Capture GitHub Actions errors/warnings (Allure)
-        if: always()
-        continue-on-error: true
+      - name: Require a successful deployment before publication
+        id: deployed
+        if: steps.inputs.outputs.mode == 'publish' && steps.inputs.outputs.write == 'true'
         env:
-          GITHUB_TOKEN: ${{ github.token }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
-          mkdir -p tmp/gha-logs
-          mkdir -p reports/allure/allure-results
-          echo "[diag] Downloading workflow run logs..."
-          if curl -fsSL -L \
-            -H "Authorization: Bearer $GITHUB_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/logs" \
-            -o tmp/gha-logs.zip; then
-            if unzip -q -o tmp/gha-logs.zip -d tmp/gha-logs; then
-              python3 reports/allure/github_actions_logs_to_allure.py \
-                --logs-dir tmp/gha-logs \
-                --output-dir reports/allure/allure-results \
-                --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
-              exit 0
-            fi
+          deployed_sha=$(gh api "repos/$GITHUB_REPOSITORY/actions/workflows/deploy.yml/runs?branch=main&status=success&per_page=30" \
+            --jq '.workflow_runs | map(select(.event == "push" or .event == "workflow_dispatch")) | first | .head_sha')
+          if [ "$deployed_sha" != "$(git rev-parse HEAD)" ]; then
+            echo 'Publication deferred until the current main commit is deployed.' >> "$GITHUB_STEP_SUMMARY"
+            echo 'deferred=true' >> "$GITHUB_OUTPUT"
           fi
 
-          echo "[diag] Logs download/unzip failed; capturing diagnostics as Allure attachment."
-          curl -sSL -L \
-            -H "Authorization: Bearer $GITHUB_TOKEN" \
-            -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/logs" \
-            -o tmp/gha-logs-error.txt || true
+      - name: Run publication and recovery regression checks
+        run: python3 -m unittest discover -s tests/mastodon -p 'test_*.py' -v
 
-          python3 reports/allure/write_simple_allure_result.py \
-            --output-dir reports/allure/allure-results \
-            --name "GitHub Actions workflow diagnostics capture" \
-            --suite "CI Diagnostics" \
-            --sub-suite "GitHub Actions" \
-            --status failed \
-            --attach "logs download response=tmp/gha-logs-error.txt" \
-            --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
-
-      - name: Write Allure metadata (environment + executor)
-        if: always()
+      - name: Audit, reconcile, or publish one item
+        id: sync
+        if: steps.deployed.outputs.deferred != 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          MASTODON_TOKEN: ${{ secrets.MASTODON_TOKEN }}
+          MASTODON_PUBLISH_ENABLED: ${{ vars.MASTODON_PUBLISH_ENABLED || 'false' }}
+          MASTODON_BACKFILL_ENABLED: ${{ vars.MASTODON_BACKFILL_ENABLED || 'false' }}
+          SYNC_MODE: ${{ steps.inputs.outputs.mode }}
+          SYNC_WRITE: ${{ steps.inputs.outputs.write }}
+          ARCHIVE_CANARY: ${{ github.event_name == 'workflow_dispatch' && inputs.archive_canary || false }}
         run: |
-          python3 reports/allure/write_allure_metadata.py \
-            --output-dir reports/allure/allure-results \
-            --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          set -euo pipefail
+          mkdir -p tmp/mastodon
+          args=("$SYNC_MODE" --github-state --report tmp/mastodon/report.json)
+          if [ "$SYNC_WRITE" = true ]; then args+=(--write); fi
+          if [ "$ARCHIVE_CANARY" = true ]; then args+=(--archive-canary); fi
+          python3 _code/mastodon_sync.py "${args[@]}" | tee tmp/mastodon/run.json
+          python3 - <<'PY_OUTPUT' >> "$GITHUB_OUTPUT"
+          import json
+          with open('tmp/mastodon/report.json') as stream:
+              report = json.load(stream)
+          print('website_changed=' + str(report['result'].get('website_changed', False)).lower())
+          PY_OUTPUT
+          {
+            echo '## Mastodon publication and recovery'
+            echo '```json'
+            cat tmp/mastodon/report.json
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Generate Allure report (artifact)
-        if: always()
+      - name: Persist verified website metadata
+        id: metadata
+        if: steps.sync.outcome == 'success' && steps.inputs.outputs.write == 'true' && steps.sync.outputs.website_changed == 'true'
         run: |
-          npm run allure:generate
+          set -euo pipefail
+          git add -- cache/mastodon-ledger.json _data/mastodon_status.json _posts
+          python3 - <<'PY'
+          import re, subprocess
+          paths = subprocess.check_output(['git', 'diff', '--cached', '--name-only', '-z']).decode().split('\0')
+          allowed = re.compile(r'^(cache/mastodon-ledger\.json|_data/mastodon_status\.json|_posts/.+\.md)$')
+          if any(path and not allowed.fullmatch(path) for path in paths):
+              raise SystemExit('Unexpected website mutation; refusing metadata commit')
+          PY
+          if git diff --cached --quiet; then exit 0; fi
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'chore(mastodon): sync publication state'
+          for attempt in 1 2 3; do
+            git fetch --no-tags origin main
+            git rebase origin/main
+            if git push origin HEAD:main; then
+              echo 'changed=true' >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+          done
+          echo 'Website metadata could not be pushed; the durable ledger retains the receipt. Reconcile before retrying.' >&2
+          exit 1
 
-      - name: Upload Allure report artifact
+      - name: Deploy updated discussion links and progress
+        if: steps.metadata.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
+
+      - name: Preserve diagnostics and uncertain receipts
         if: always()
         uses: actions/upload-artifact@v7
         with:
-          name: allure-report-mastodon-feed
-          path: |
-            reports/allure/latest
-            reports/allure/allure-results
+          name: mastodon-recovery-${{ github.run_id }}
+          path: tmp/mastodon/
+          if-no-files-found: ignore
+          retention-days: 30

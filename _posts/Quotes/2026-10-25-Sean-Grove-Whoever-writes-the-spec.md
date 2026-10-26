@@ -44,4 +44,7 @@ image-description: "An AI-generated photorealistic editorial portrait of Sean Gr
 image-title: "Sean Grove — AI-generated editorial portrait"
 image_width: 1456
 image_height: 816
+mastodon-post-id: "117504629320821411"
+mastodon-post-url: "https://tschopp.net/@Ted/117504629320821411"
+
 ---

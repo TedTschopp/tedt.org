@@ -1,0 +1,7 @@
+.webmention-source { flex: 1 1 18rem; min-width: 0; }
+.webmentions-content { scroll-margin-top: 5rem; }
+.webmention-text { white-space: normal; overflow-wrap: anywhere; }
+.webmentions-list > li { border-inline-start: .2rem solid var(--bs-border-color); padding-inline-start: 1rem; }
+.webmention-status:empty { display: none; }
+.indieweb-entry-meta, .syndication-links { overflow-wrap: anywhere; }
+.slide-deck-discussion { max-width: 72rem; margin-inline: auto; color: var(--bs-body-color); background: var(--bs-body-bg); }

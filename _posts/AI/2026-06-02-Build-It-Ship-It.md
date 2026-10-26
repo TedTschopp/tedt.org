@@ -85,7 +85,8 @@ video:
   description: "Watch Build It. Ship It."
   aspect: "16x9"
 
-mastodon-post-id:
+mastodon-post-id: "116682490597688571"
+mastodon-post-url: "https://tschopp.net/@Ted/116682490597688571"
 ---
 
 *Build It. Ship It.* is a high-energy opening number with a hip-hop musical-theater style: fast ensemble rap, punchy sung hooks, overlapping character lines, and a driving beat that feels like a company waking up at full speed. The music should start with whispered rhythmic fragments, then build into layered percussion, piano stabs, orchestral hits, bass, and digital textures.

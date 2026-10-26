@@ -92,7 +92,8 @@
                         </div>
                         <div class="card-body pt-1 p-4 h-100{% if __article_class != '' %} {{ __article_class | escape }}{% endif %}">
                            
-                            <span class="hidden aria-hidden u-url">{{ site.url }}{{ page.url }}</span>
+                            {% include seo/entry-metadata.html %}
+                            {% include social/syndication-links.html %}
 
                                 {%- comment -%}
                                     TOC placement experiment: Move TOC into normal flow (full-width) directly above
@@ -146,7 +147,7 @@
                     </div>
                 </main>
 
-                {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+                {% if page.mastodon-post-id or page.mastodon-post-url %}
                     {% include social/comments-mastodon-tree.html %}
                 {% endif %}
 

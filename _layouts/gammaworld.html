@@ -47,7 +47,10 @@
      <main class="container" role="main">
           <div class="row">
                <aside class="d-none d-lg-block col-lg-1" id="papermargin_left" aria-hidden="true"></aside>
-               <section class="col-12 col-lg-10" id="paper_printarea">
+               <section class="col-12 col-lg-10 h-entry" id="paper_printarea">
+                    {% include seo/entry-metadata.html %}
+                    <p class="small">{% include utility/author-byline.html page=page %}</p>
+                    {% include social/syndication-links.html %}
                     {% if page.title != "" %}
                          {% assign __primary_category = page.categories | first %}
                          {% if __primary_category %}
@@ -58,9 +61,9 @@
                               {% assign __entry = site.data.category_registry[__slug] %}
                          {% endif %}
                          {% if __entry %}
-                              {% include category/category-palette-apply.html entry=__entry slug=__slug raw=__primary_category title=page.title title_tag='h1' title_class='MCC post-title' wrapper_class='gammaworld-hero category-theme no-underline' %}
+                              {% include category/category-palette-apply.html entry=__entry slug=__slug raw=__primary_category title=page.title title_tag='h1' title_class='MCC post-title p-name' wrapper_class='gammaworld-hero category-theme no-underline' %}
                          {% else %}
-                              <h1 class="MCC">{{ page.title }}</h1>
+                              <h1 class="MCC p-name">{{ page.title }}</h1>
                          {% endif %}
                     {% endif %}
 
@@ -116,7 +119,7 @@
                     <!-- Creature Image and Overview -->
                     <!-- creature_image: {{ creature_image }} -->
 
-                    <section class="row mb-4" aria-label="Creature Overview">
+                    <section class="row mb-4 e-content" aria-label="Creature Overview">
                          <div class="col-12 col-lg-4 d-flex align-items-center justify-content-center mb-3 mb-lg-0">
                                    <figure class="w-100 overflow-hidden">
                                         {%- if creature_image != '' -%}
@@ -313,7 +316,7 @@
                     </nav>
 
                     <hr>
-                    {% if page.mastodon-post-id and page.mastodon-post-id != '' %}
+                    {% if page.mastodon-post-id or page.mastodon-post-url %}
                          {% include social/comments-mastodon-tree.html %}
                     {% endif %}
 

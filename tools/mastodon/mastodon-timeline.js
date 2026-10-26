@@ -132,95 +132,51 @@ class MastodonTimeline {
    * Requests to the server to collect all the data
    * @returns {object} Data container
    */
-  #fetchTimelineData() {
-    return new Promise((resolve, reject) => {
-      /**
-       * Fetch data from server
-       * @param {string} url address to fetch
-       * @returns {array} List of objects
-       */
-      async function fetchData(url) {
-        const response = await fetch(url);
-
-        if (!response.ok) {
-          throw new Error(
-            "Failed to fetch the following Url: <br>" +
-              url +
-              "<hr>" +
-              "Error status: " +
-              response.status +
-              "<hr>" +
-              "Error message: " +
-              response.statusText
-          );
-        }
-
-        const data = await response.json();
-        return data;
-      }
-
-      // Urls to fetch
-      let urls = {};
-
-      if (this.mtSettings.instanceUrl) {
-        if (this.mtSettings.timelineType === "profile") {
-          if (this.mtSettings.userId) {
-            urls.timeline = `${this.mtSettings.instanceUrl}/api/v1/accounts/${this.mtSettings.userId}/statuses?limit=${this.mtSettings.maxNbPostFetch}`;
-          } else {
-            this.#showError(
-              "Please check your <strong>userId</strong> value",
-              "⚠️"
-            );
+  async #fetchTimelineData() {
+    const fetchData = async (url) => {
+      const controller = new AbortController();
+      const timeout = setTimeout(() => controller.abort(), 12000);
+      try {
+        const response = await fetch(url, { headers: { Accept: "application/json" }, credentials: "omit", signal: controller.signal });
+        if (!response.ok) throw new Error(`Mastodon returned HTTP ${response.status}.`);
+        return await response.json();
+      } finally { clearTimeout(timeout); }
+    };
+    try {
+      const origin = new URL(this.mtSettings.instanceUrl);
+      if (origin.protocol !== "https:" || origin.username || origin.password) throw new Error("Use a public HTTPS Mastodon server.");
+      let timeline;
+      if (this.mtSettings.timelineType === "profile") {
+        let id = String(this.mtSettings.userId || "");
+        if (this.mtSettings.profileName) {
+          const username = this.mtSettings.profileName.replace(/^@/, "").split("@")[0];
+          const account = await fetchData(`${origin.origin}/api/v1/accounts/lookup?acct=${encodeURIComponent(username)}`);
+          if (typeof account.id !== "string" || !/^\d+$/.test(account.id) || account.username.toLowerCase() !== username.toLowerCase()) {
+            throw new Error("The profile lookup did not match the requested account.");
           }
-        } else if (this.mtSettings.timelineType === "hashtag") {
-          if (this.mtSettings.hashtagName) {
-            urls.timeline = `${this.mtSettings.instanceUrl}/api/v1/timelines/tag/${this.mtSettings.hashtagName}?limit=${this.mtSettings.maxNbPostFetch}`;
-          } else {
-            this.#showError(
-              "Please check your <strong>hashtagName</strong> value",
-              "⚠️"
-            );
-          }
-        } else if (this.mtSettings.timelineType === "local") {
-          urls.timeline = `${this.mtSettings.instanceUrl}/api/v1/timelines/public?local=true&limit=${this.mtSettings.maxNbPostFetch}`;
-        } else {
-          this.#showError(
-            "Please check your <strong>timelineType</strong> value",
-            "⚠️"
-          );
+          id = account.id;
+          this.mtSettings.userId = id;
         }
+        if (!/^\d+$/.test(id)) throw new Error("Choose a valid Mastodon profile.");
+        timeline = `${origin.origin}/api/v1/accounts/${id}/statuses?limit=${this.mtSettings.maxNbPostFetch}`;
+      } else if (this.mtSettings.timelineType === "hashtag" && this.mtSettings.hashtagName) {
+        timeline = `${origin.origin}/api/v1/timelines/tag/${encodeURIComponent(this.mtSettings.hashtagName)}?limit=${this.mtSettings.maxNbPostFetch}`;
+      } else if (this.mtSettings.timelineType === "local") {
+        timeline = `${origin.origin}/api/v1/timelines/public?local=true&limit=${this.mtSettings.maxNbPostFetch}`;
       } else {
-        this.#showError(
-          "Please check your <strong>instanceUrl</strong> value",
-          "⚠️"
-        );
+        throw new Error("Choose a profile, hashtag, or local timeline.");
       }
-      if (!this.mtSettings.hideEmojos) {
-        urls.emojos = this.mtSettings.instanceUrl + "/api/v1/custom_emojis";
-      }
-
-      const urlsPromises = Object.entries(urls).map(([key, url]) => {
-        return fetchData(url)
-          .then((data) => ({ [key]: data }))
-          .catch((error) => {
-            reject(
-              new Error("Something went wrong fetching data from: " + url)
-            );
-            this.#showError(error.message);
-            return { [key]: [] };
-          });
-      });
-
-      // Fetch all urls simultaneously
-      Promise.all(urlsPromises).then((dataObjects) => {
-        this.mtSettings.fetchedData = dataObjects.reduce((result, dataItem) => {
-          return { ...result, ...dataItem };
-        }, {});
-
-        // console.log("Timeline data fetched: ", this.mtSettings.fetchedData);
-        resolve();
-      });
-    });
+      const [posts, emojos] = await Promise.all([
+        fetchData(timeline),
+        this.mtSettings.hideEmojos ? [] : fetchData(`${origin.origin}/api/v1/custom_emojis`).catch(() => [])
+      ]);
+      if (!Array.isArray(posts)) throw new Error("The server returned an invalid timeline.");
+      this.mtSettings.fetchedData = { timeline: posts, emojos: Array.isArray(emojos) ? emojos : [] };
+      return true;
+    } catch (error) {
+      this.#showError(`The Mastodon timeline is temporarily unavailable. ${this.#escapeHtml(error.message || "Please try again later.")}`);
+      return false;
+    }
   }
 
   /**
@@ -228,7 +184,7 @@ class MastodonTimeline {
    * @param {string} t Type of build (new or reload)
    */
   async #buildTimeline(t) {
-    await this.#fetchTimelineData();
+    if (!(await this.#fetchTimelineData())) return;
 
     // Empty container body
     this.mtBodyNode.replaceChildren();

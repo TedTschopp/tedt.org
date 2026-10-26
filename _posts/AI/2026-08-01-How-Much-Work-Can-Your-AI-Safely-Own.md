@@ -71,7 +71,8 @@ image-credits-artist-URL: https://tedt.org/
 image_width: 1672
 image_height: 941
 
-mastodon-post-id:
+mastodon-post-id: "117027314569023518"
+mastodon-post-url: "https://tschopp.net/@Ted/117027314569023518"
 ---
 
 ## The Factory Extends Beyond Code

@@ -31,6 +31,8 @@ image-alt: "Weather versus storm: adapting to the conditions around us."
 image-title: "This Isn't a Storm. This Is the Weather."
 
 no_toc: true
+mastodon-post-id: "117351545742869793"
+mastodon-post-url: "https://tschopp.net/@Ted/117351545742869793"
 ---
 
 Sophocles was a playwright in fifth-century BCE Athens, whose tragedies explored the difficult choices people make when duty, loyalty, and power collide. Nearly 2,500 years later, those choices remain familiar. His play *Antigone* begins after a battle for Thebes. Antigone, the principal character’s two brothers have died fighting on opposite sides, and their uncle, King Creon, has ordered that one be denied burial. Antigone defies the king, believing her obligation to her brother outweighs the decree. The king condemns her to death. The Prince, Haemon, who is engaged to Antigone, comes to persuade his father to reconsider. Their conversation becomes an argument about leadership: whether a person in authority can listen, learn, and change a decision during changing times without looking weak and treating that accommodation as a surrender.

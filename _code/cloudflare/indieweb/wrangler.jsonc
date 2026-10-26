@@ -1,0 +1,38 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "tedt-indieweb-publishing",
+  "main": "src/worker.mjs",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": {
+    "enabled": false
+  },
+  "routes": [
+    {
+      "pattern": "https://tedt.org/micropub",
+      "zone_name": "tedt.org"
+    },
+    {
+      "pattern": "https://tedt.org/micropub/*",
+      "zone_name": "tedt.org"
+    }
+  ],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "tedt-indieweb-publishing",
+      "database_id": "c4864072-7198-4565-a52a-c53f57a3a7fe",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "INDIEAUTH_METADATA_URL": "https://indiekey.id/.well-known/oauth-authorization-server/s/crse2y91vtsd5q0r"
+  },
+  "services": [
+    {
+      "binding": "UPLOADS",
+      "service": "tedt-indieweb-upload-buffer"
+    }
+  ]
+}

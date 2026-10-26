@@ -75,7 +75,8 @@ image_height: 941
 
 mathjax: false
 mermaid: false
-mastodon-post-id:
+mastodon-post-id: "117221318657748850"
+mastodon-post-url: "https://tschopp.net/@Ted/117221318657748850"
 ---
 
 # The Same Model, Different Rules

@@ -12,7 +12,7 @@ call-to-action: "Understand the full AI stack—from the person at the front end
 date: 2026-06-14
 update:
 author:
-    avatar: //secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
+    avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
     name: Ted Tschopp
     url: //tedt.org/
 
@@ -73,8 +73,9 @@ video:
   description: "Watch The AI Value Chain"
   aspect: "16x9"
 
-mastodon-post-id:
+mastodon-post-id: "116750152042156672"
 
+mastodon-post-url: "https://tschopp.net/@Ted/116750152042156672"
 ---
 
 The biggest mistake people are making about AI is that they keep asking the same question:

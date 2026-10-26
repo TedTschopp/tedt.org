@@ -86,7 +86,8 @@ video:
   description: "Watch Prompt Me a Palace."
   aspect: "16x9"
 
-mastodon-post-id:
+mastodon-post-id: "116811617412050640"
+mastodon-post-url: "https://tschopp.net/@Ted/116811617412050640"
 ---
 
 *Prompt Me a Palace* is a dazzling hip-hop musical-theater creation number that begins playful, fast, and seductive, driven by crisp percussion, bright piano, synth pulses, and sparkling digital textures. The Vibe Engineer leads with quick, clever rap verses that feel like live invention: every prompt becomes a prototype, every idea turns into motion.

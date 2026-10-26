@@ -37,6 +37,8 @@ image-credits: "Ted Tschopp"
 image-credits-URL: https://tedt.org/
 image-credits-artist: "Ted Tschopp"
 image-credits-artist-URL: https://tedt.org/
+mastodon-post-id: "116989172624787195"
+mastodon-post-url: "https://tschopp.net/@Ted/116989172624787195"
 ---
 
 ## How an AI-driven IT Factory Grows Up

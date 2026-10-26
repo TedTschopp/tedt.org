@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,follow">
+    <title>This page has moved</title>
+    <link rel="canonical" href="{{ page.redirect.to | escape }}">
+    <meta http-equiv="refresh" content="0; url={{ page.redirect.to | escape }}">
+  </head>
+  <body>
+    <main>
+      <h1>This page has moved</h1>
+      <p><a href="{{ page.redirect.to | escape }}">Continue to the current page</a>.</p>
+    </main>
+  </body>
+</html>

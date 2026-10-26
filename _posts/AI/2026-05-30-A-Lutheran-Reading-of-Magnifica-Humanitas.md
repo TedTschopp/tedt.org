@@ -73,7 +73,8 @@ image_height: 941
 mathjax: false
 mermaid: false
 no_toc: true
-mastodon-post-id: null
+mastodon-post-id: "116665313115769329"
+mastodon-post-url: "https://tschopp.net/@Ted/116665313115769329"
 ---
 
 <style>

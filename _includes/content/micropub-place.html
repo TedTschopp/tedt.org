@@ -1,0 +1,12 @@
+{% assign place = include.place %}
+{% if place.properties %}
+<div class="{{ include.property_class | escape }} h-card{% unless place.type[0] == 'h-card' %} {{ place.type[0] | escape }}{% endunless %} mb-2">
+  {% assign place_name = place.properties.name[0] | default: 'Location' %}
+  {% if place.properties.url[0] %}<a class="p-name u-url" href="{{ place.properties.url[0] | escape }}">{{ place_name | escape }}</a>{% else %}<span class="p-name">{{ place_name | escape }}</span>{% endif %}
+  {% assign address_keys = 'street-address,locality,region,postal-code,country-name' | split: ',' %}
+  {% for key in address_keys %}{% if place.properties[key][0] %}<span class="p-{{ key }}">{{ place.properties[key][0] | escape }}</span>{% unless forloop.last %} {% endunless %}{% endif %}{% endfor %}
+  {% if place.properties.latitude[0] and place.properties.longitude[0] %}<span class="d-block small">Coordinates: <span class="p-latitude">{{ place.properties.latitude[0] | escape }}</span>, <span class="p-longitude">{{ place.properties.longitude[0] | escape }}</span></span>{% endif %}
+</div>
+{% else %}
+<p><a class="{{ include.property_class | replace: 'p-', 'u-' | escape }}" href="{{ place | escape }}">Location</a></p>
+{% endif %}

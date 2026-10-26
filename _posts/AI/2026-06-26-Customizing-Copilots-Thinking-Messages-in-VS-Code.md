@@ -62,7 +62,8 @@ location:
     latitude: 34.1470
     longitude: -117.9709
 
-mastodon-post-id:
+mastodon-post-id: "116819979589567799"
+mastodon-post-url: "https://tschopp.net/@Ted/116819979589567799"
 ---
 
 Small details shape how a tool feels.

@@ -1,7 +1,7 @@
             {% assign site_profile = site.profile %}
             <div class="row vcard h-card position-absolute top-0 start-0" id="hcard-{{ site_profile.givenname }}-{{ site_profile.familyname }}">
               <div class="col-xl-9 mx-auto h-100">
-                <h1 class="mb-5 fnp-name hidden"><span class="p-given-name">{{ site_profile.givenname }}</span> <span class="p-family-name">{{ site_profile.familyname }}</span></h1>
+                <h1 class="mb-5 fn p-name hidden"><span class="p-given-name">{{ site_profile.givenname }}</span> <span class="p-family-name">{{ site_profile.familyname }}</span></h1>
                 <img src="{{ site_profile.avatar }}" class="intro-image-avatar photo u-photo hidden" alt="Photo of {{ site_profile.givenname }} {{ site_profile.familyname }}" >
                 <h2 class="hidden"><span class="p-job-title">{{ site_profile.jobtitle }}</span></h2>
 

@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/business-architecture-as-markdown/
 layout: prompt-details
 permalink: /prompts/:slug/
 

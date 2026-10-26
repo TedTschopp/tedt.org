@@ -211,7 +211,7 @@
   {% endif %}
 
 {% comment %} Open Graph logic unified {% endcomment %}
-{% assign raw_page_image = page.image | default: page.mf-photo[0] %}
+{% assign raw_page_image = page.image | default: page.mf-photo[0].value | default: page.mf-photo[0] %}
 {% if raw_page_image %}
   {% if raw_page_image contains '://' %}
     {% assign og_image_url = raw_page_image %}
@@ -270,7 +270,7 @@ Description precedence: page.summary > page.seo-description > page.description >
   | strip
 -%}
 <meta name="twitter:description" content="{{ twitter_description_sanitized | strip | truncate:300 | escape }}">
-{% assign twitter_raw_img = page.image | default: page.mf-photo[0] | default: site.title_image %}
+{% assign twitter_raw_img = page.image | default: page.mf-photo[0].value | default: page.mf-photo[0] | default: site.title_image %}
 {% if twitter_raw_img %}
   {% if twitter_raw_img contains '://' %}
     {% assign twitter_image_url = twitter_raw_img %}

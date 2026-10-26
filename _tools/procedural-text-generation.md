@@ -14,7 +14,7 @@ tech:
 links:
   live: "https://randomtables.tedt.org/"
   repo: null
-  docs: "/procedural-text-generation/"
+  docs: "/Procedural-Text-Generation/"
   download: null
 image: "/img/home/Text-Generation.webp"
 hero_image: "/img/home/Text-Generation.webp"
@@ -41,5 +41,5 @@ It’s a practical “idea engine” for brainstorming: roll up details, combine
 
 ## Notes
 
-- The long-form project writeup is here: [Procedural Text Generation](/procedural-text-generation/)
+- The long-form project writeup is here: [Procedural Text Generation](/Procedural-Text-Generation/)
 - This is an evolving system that also feeds other generators and bots.

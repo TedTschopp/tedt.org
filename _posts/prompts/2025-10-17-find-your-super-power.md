@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/find-your-super-power/
 layout: prompt-details
 permalink: /prompts/:slug/
 

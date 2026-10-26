@@ -14,7 +14,9 @@
     {% assign micropub_checkin_name = page.mf-checkin[0].properties.name[0] | strip %}
   {% endif %}
 
-  {% if micropub_checkin_name != '' %}
+  {% if page.micropub.id %}
+    {% assign micropub_post_title = page.title %}
+  {% elsif micropub_checkin_name != '' %}
     {% assign micropub_post_title = 'Checked Into ' | append: micropub_checkin_name %}
   {% elsif stripped-content != '' %}
     {% assign micropub_post_title = stripped-content | truncatewords: 12, '' %}

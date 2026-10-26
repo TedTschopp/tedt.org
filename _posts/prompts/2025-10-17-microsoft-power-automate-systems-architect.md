@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/microsoft-power-automate-systems-architect/
 layout: prompt-details
 permalink: /prompts/:slug/
 

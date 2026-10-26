@@ -1,0 +1,7 @@
+{%- assign entry_published = page.web_published_at | default: page.date -%}
+{%- assign entry_modified = page.web_modified_at | default: page.last_modified_at | default: page.update | default: page.updated -%}
+<div class="indieweb-entry-meta small text-body-secondary mb-3">
+  <a class="u-url u-uid" href="{{ page.url | absolute_url | escape }}">Permalink</a>
+  {% if entry_published %} · Published <time class="dt-published" datetime="{{ entry_published | date_to_xmlschema }}">{{ entry_published | date: '%B %-d, %Y' }}</time>{% endif %}
+  {% if entry_modified and entry_modified != entry_published %} · Updated <time class="dt-updated" datetime="{{ entry_modified | date_to_xmlschema }}">{{ entry_modified | date: '%B %-d, %Y' }}</time>{% endif %}
+</div>

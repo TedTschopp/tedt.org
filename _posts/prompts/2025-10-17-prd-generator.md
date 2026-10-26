@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/prd-generator/
 layout: prompt-details
 permalink: /prompts/:slug/
 

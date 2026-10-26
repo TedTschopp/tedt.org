@@ -199,10 +199,12 @@ test('desktop and phone reports have accessible controls and no horizontal overf
   expect(mobile.violations).toEqual([]);
 });
 
-test('the published-date tools catalog links directly to the new checker', async ({ page }) => {
+test('the published-date tools catalog links directly to the checker and sorts newest first', async ({ page }) => {
   await noRemoteFonts(page);
   await page.goto('/tools/?sort=published');
   const entry = page.getByRole('link', { name: 'Social Bot Check', exact: true });
   await expect(entry).toHaveAttribute('href', TOOL);
-  await expect(page.locator('#tools-card-grid > article').first()).toContainText('Social Bot Check');
+  const published = await page.locator('#tools-card-grid > article').evaluateAll(cards =>
+    cards.map(card => Number(card.getAttribute('data-published') || 0)));
+  expect(published).toEqual([...published].sort((a, b) => b - a));
 });

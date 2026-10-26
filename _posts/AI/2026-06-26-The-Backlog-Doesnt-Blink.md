@@ -89,7 +89,8 @@ video:
   description: "Watch The Backlog Doesn't Blink."
   aspect: "16x9"
 
-mastodon-post-id:
+mastodon-post-id: "116818145701715471"
+mastodon-post-url: "https://tschopp.net/@Ted/116818145701715471"
 ---
 
 *The Backlog Doesn't Blink* is a tense, emotionally grounded musical-theater response number for the IT Delivery Team. The music should feel like pressure accumulating: steady kick, clipped hi-hats, low piano pulses, orchestral stabs, and subtle machine-room textures.

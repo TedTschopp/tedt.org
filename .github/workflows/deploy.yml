@@ -1,10 +1,16 @@
 name: Site Quality + Deploy
+run-name: "${{ inputs.indieweb_cache_only && 'IndieWeb cache refresh' || 'Site Quality + Deploy' }}"
 
 on:
   push:
     branches: [ main ]
   pull_request:
   workflow_dispatch:
+    inputs:
+      indieweb_cache_only:
+        description: Deploy refreshed discussion metadata without social cross-posting
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -224,6 +230,12 @@ jobs:
           bundle exec ruby tests/check_content_credits.rb _site
           bundle exec ruby tests/check_quote_portraits.rb _site
 
+      - name: IndieWeb protocol and rendering gates
+        run: |
+          bundle exec ruby tests/indieweb_test.rb
+          python3 tests/test_indieweb_artifact.py
+          bundle exec ruby tests/check_indieweb_rendering.rb _site
+
       - name: SEO regression gates
         run: |
           set -euo pipefail
@@ -267,10 +279,14 @@ jobs:
       - name: Mastodon feed validation
         run: |
           make validate_mastodon
+          make mastodon_check
 
       - name: Feed diff regression guard
         run: |
           make feed_diff
+
+      - name: HTMLProofer regression checks
+        run: make html_proofer_check
 
       - name: HTMLProofer (internal links)
         id: htmlproofer
@@ -278,7 +294,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p tmp
-          bundle exec htmlproofer ./_site --root-dir ./_site --check-html --allow-missing-href --disable-external 2>&1 | tee tmp/htmlproofer.txt
+          make SKIP_EXTERNAL=1 proofer 2>&1 | tee tmp/htmlproofer.txt
 
       - name: Mastodon feed length report
         run: |

@@ -62,7 +62,8 @@ year-the-event-took-place: null
 mathjax: false
 mermaid: false
 order: null
-mastodon-post-id: null
+mastodon-post-id: "116863407154090102"
+mastodon-post-url: "https://tschopp.net/@Ted/116863407154090102"
 ---
 # Mythic Frame
 

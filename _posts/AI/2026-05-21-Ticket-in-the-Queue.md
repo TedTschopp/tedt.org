@@ -82,7 +82,8 @@ video:
   description: "Watch Ticket in the Queue."
   aspect: "16x9"
 
-mastodon-post-id:
+mastodon-post-id: "116616195144699720"
+mastodon-post-url: "https://tschopp.net/@Ted/116616195144699720"
 ---
 
 *Ticket in the Queue* is written as a fast hip-hop musical-theater number with clipped percussion, piano stabs, light orchestral hits, and a steady pulse that mirrors a request trapped in process. The arrangement should feel like mounting workplace pressure: each section tightening the screws while the title hook stays catchy enough to sing in the hallway.

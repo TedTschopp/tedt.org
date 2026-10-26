@@ -78,7 +78,8 @@ image_height: 941
 
 mathjax: false
 mermaid: false
-mastodon-post-id:
+mastodon-post-id: "117177351964959201"
+mastodon-post-url: "https://tschopp.net/@Ted/117177351964959201"
 ---
 
 # Model Portability Is Not AI Portability

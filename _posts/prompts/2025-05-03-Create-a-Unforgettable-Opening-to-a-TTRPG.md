@@ -1,4 +1,5 @@
 ---
+redirect_to: https://ai.tedt.org/prompts/create-a-unforgettable-opening-to-a-ttrpg/
 layout: prompt-details
 title: Create a Unforgettable Opening to a TTRPG
 description: "An advanced prompt designed to generate richly layered, culturally resonant\

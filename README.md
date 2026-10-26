@@ -48,6 +48,7 @@ Key technologies and architectural decisions powering the site:
 ### Social / Syndication
 
 - Mastodon integration & backfill scripts in `_code/` (Python utilities).
+- [Mastodon publishing and recovery runbook](docs/mastodon-integration.md), including pause switches, archive ordering, and canonical prompt forwarding.
 - RSS / JSON feeds (Liquid + helper scripts).
 
 ### Quality & Security
@@ -395,6 +396,7 @@ Blocking checks in the quality gate:
 - Legacy key guard (blocks reintroduction of removed config keys)
 - Feed integrity (primary JSON feed absolute URLs)
 - Mastodon feed validation (structure, length ≤ 480 chars, absolute links)
+- Mastodon recovery, queue, forwarding, 24-to-48/day rate ramp, and throttling checks (`make mastodon_check`)
 - Feed diff regression guard (normalized snapshot drift across main and Mastodon JSON feeds)
 - Tools CSS sync guard (prevents drift between shared tool CSS and site base includes)
 - Representative accessibility coverage via Playwright + axe (`npm run test:a11y` locally, `test:a11y:allure` in CI)
@@ -421,6 +423,14 @@ Run the full local quality gate with: `make quality_gate`
 
 Run the strict HTMLProofer check alone with: `make SKIP_EXTERNAL=1 proofer`
 
+The shared runner uses the installed HTMLProofer API and resolves directory URLs
+to their index files before checking anchors. `make html_proofer_check` exercises
+valid and broken fixtures, including a directory page that also has an old
+`.html` redirect. The strict command returns nonzero for findings;
+`proofer_advisory` prints those findings while preserving its advisory behavior.
+Disabling external requests does not disable HTTPS policy checks: historical
+HTTP links remain visible in the report.
+
 Run the faster structural/content gate with: `make qa`
 
 Run the repository hygiene guard alone with: `make repo_guard`
@@ -434,7 +444,7 @@ Current active workflows:
 | Workflow                | File                           | Triggers                      | Purpose                                                                |
 |-------------------------|--------------------------------|-------------------------------|------------------------------------------------------------------------|
 | Site Quality + Deploy   | `deploy.yml`                   | push to `main`, PR, manual    | Canonical quality gate, Allure artifacts, and Pages deploy on `main`   |
-| Feed to Mastodon        | `mastodon-feed.yml`            | push to `main`, every 6h, manual | Post newest site entry to Mastodon and sync toot metadata           |
+| Feed to Mastodon        | `mastodon-feed.yml`            | successful main deploy, every 2h, manual | Reconcile verified discussions; publish one queued item when enabled |
 | TedT.org to Substack    | `substack-publish.yml`          | successful Pages deploy, manual | Prepare validated newsletter artifacts; mutate only through the protected official-API gate |
 | DUSD Lunch Menu Calendar| `dusd-lunch-menu.yml`          | daily, manual                 | Rebuild and commit the district lunch calendar ICS file                |
 | Daily Report            | `daily-report.md` / `daily-report.lock.yml` | daily, manual | Use GitHub Agentic Workflows to publish `/Daily-Report/index.html` through a constrained safe output |
@@ -453,8 +463,8 @@ Composite actions (DRY helpers) under `.github/actions/`:
 | Action                   | Directory                                   | Description                                               |
 |--------------------------|---------------------------------------------|-----------------------------------------------------------|
 | setup-ruby-bundle        | `.github/actions/setup-ruby-bundle/`        | Standard Ruby + bundler + caching                         |
-| masto-cache-prep         | `.github/actions/masto-cache-prep/`         | Normalize mastodon cache & sync front matter preview/live |
-| masto-update-frontmatter | `.github/actions/masto-update-frontmatter/` | Resolve canonical path & update toot ID in markdown       |
+| masto-cache-prep         | `.github/actions/masto-cache-prep/`         | Compatibility preview and verified reconciliation; legacy cache is immutable |
+| masto-update-frontmatter | `.github/actions/masto-update-frontmatter/` | Retired heuristic writer; directs callers to verified reconciliation |
 
 The older standalone HTMLProofer workflow was removed after its checks were folded into `deploy.yml` so there is only one source of truth for quality status.
 
@@ -989,3 +999,17 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 ## Contact
 
 For questions or feedback, you can reach me via [Mastodon](https://twit.social/@tedt) or through the contact form on the site.
+
+### IndieWeb restoration
+
+Public article responses use a moderated static Webmention cache. See [IndieWeb operations](docs/indieweb.md) for refresh, approval, blocking, verified social links, delivery retries, and live qualification. The chronological microformats feed is `/updates/`.
+
+### IndieWeb publishing and reader tools
+
+[Publishing operations and account setup](docs/indieweb-publishing.md) documents
+Phase 2. The existing Micropub layout supports managed entries under
+`_posts/Micropub/` with a `micropub` identity/revision object and existing `mf-*`
+properties. `mastodon-syndicate: true` is required for managed entries to enter the
+existing Mastodon publication manifest; false is the default. Legacy entries
+keep their existing rendering and eligibility. Do not put drafts in public Git
+branches or artifacts. The separate media repository uses GitHub Pages only.

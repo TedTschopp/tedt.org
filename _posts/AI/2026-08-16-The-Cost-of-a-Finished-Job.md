@@ -69,7 +69,8 @@ image_height: 909
 
 mathjax: false
 mermaid: false
-mastodon-post-id:
+mastodon-post-id: "117107973878117892"
+mastodon-post-url: "https://tschopp.net/@Ted/117107973878117892"
 ---
 
 *Cheaper models do not settle the economics of enterprise AI. They move the hard work into the system around the model and the way the business itself is designed.*

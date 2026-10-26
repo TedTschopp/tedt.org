@@ -62,5 +62,7 @@ year-the-event-took-place: 1870s
 mathjax: 
 
 order: 
+mastodon-post-id: "117504991175950265"
+mastodon-post-url: "https://tschopp.net/@Ted/117504991175950265"
 ---
 Announcing your plans is a good way to hear God laugh.

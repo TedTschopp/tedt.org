@@ -33,6 +33,8 @@ image-alt: "A Lego cat-building project illustrating collaboration, learning, an
 image-title: "When AI Moves Faster Than the Organization"
 image_width: 1672
 image_height: 941
+mastodon-post-id: "117340242152872389"
+mastodon-post-url: "https://tschopp.net/@Ted/117340242152872389"
 ---
 
 My daughter Hannah saved for months to buy a Lego Tuxedo Cat. When it arrived, she had the pieces, the instructions, and a great deal of enthusiasm. She also discovered that a complicated model could ask more of her than she had expected.

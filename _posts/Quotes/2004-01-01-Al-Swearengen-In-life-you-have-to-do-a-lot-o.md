@@ -53,5 +53,7 @@ monster-or-magical-or-religious-ideas: ""
 year-the-event-took-place: 1870s
 mathjax: false
 order: ""
+mastodon-post-id: "117505323534137695"
+mastodon-post-url: "https://tschopp.net/@Ted/117505323534137695"
 ---
 In life you have to do a lot of things you don't fucking want to do. Many times, that's what the fuck life is... one vile fucking task after another.

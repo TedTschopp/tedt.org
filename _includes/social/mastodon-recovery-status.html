@@ -1,0 +1,31 @@
+{% assign recovery = site.data.mastodon_status %}
+{% if recovery %}
+<section aria-labelledby="mastodon-recovery-heading">
+  <h2 id="mastodon-recovery-heading">Current publication and recovery status</h2>
+  <p>The archive includes published articles, quotes, Gamma World entries, presentations, and the canonical destinations of relocated prompts. Merged prompt aliases count once.</p>
+  <dl>
+    <dt>Last verified run</dt><dd>{{ recovery.last_reconciliation_at | default: 'Not yet verified' | escape }}</dd>
+    <dt>Last confirmed publication</dt><dd>{{ recovery.last_publication_at | default: 'No publications recorded by the replacement publisher' | escape }}</dd>
+    <dt>Eligible documents</dt><dd>{{ recovery.eligible }}</dd>
+    <dt>Verified existing discussions</dt><dd>{{ recovery.states.recovered | default: 0 }}</dd>
+    <dt>Confirmed publications</dt><dd>{{ recovery.confirmed_publications | default: 0 }}</dd>
+    <dt>Remaining</dt><dd>{{ recovery.remaining }}</dd>
+    <dt>Missing original threads</dt><dd>{{ recovery.states.missing | default: 0 }}</dd>
+    <dt>Uncertain publication outcomes</dt><dd>{{ recovery.states.uncertain | default: 0 }}</dd>
+    <dt>Publishing</dt><dd>{% if recovery.publication_enabled %}Enabled{% else %}Paused{% endif %}</dd>
+    <dt>Archive catch-up</dt><dd>{% if recovery.backfill_enabled %}Enabled: oldest first, at most {{ recovery.backfill_policy.daily_limit | default: 12 }} per rolling 24 hours{% else %}Paused{% endif %}</dd>
+    {% if recovery.backfill_policy.phase == 'accelerated' %}
+    <dt>Accelerated rate began</dt><dd>{{ recovery.backfill_policy.promoted_at | escape }}</dd>
+    {% elsif recovery.backfill_policy.started_at %}
+    <dt>Healthy observation began</dt><dd>{{ recovery.backfill_policy.healthy_since | escape }}</dd>
+    <dt>Earliest increase to 48 per day</dt><dd>{{ recovery.backfill_policy.earliest_promotion_at | escape }}; requires a healthy day and at least twelve verified archive publications.</dd>
+    {% endif %}
+    {% if recovery.publication_not_before %}
+    <dt>Server cooldown until</dt><dd>{{ recovery.publication_not_before | escape }}</dd>
+    {% endif %}
+  </dl>
+  <p><a href="{{ '/mastodon-backfill-progress.json' | relative_url }}">Read the machine-readable recovery status</a>. Publication and persistence failures are reported in the <a href="https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed.yml">Mastodon workflow</a>.</p>
+</section>
+{% else %}
+<p>The replacement publisher has not yet completed a verified reconciliation. Recovery counts are unavailable.</p>
+{% endif %}
