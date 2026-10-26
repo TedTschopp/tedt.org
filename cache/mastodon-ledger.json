@@ -25571,14 +25571,13 @@
         {
           "id": "115017515478931431",
           "url": "https://tschopp.net/@Ted/115017515478931431"
+        },
+        {
+          "created_at": "2026-10-26T12:37:18.121Z",
+          "id": "117507243253507251",
+          "url": "https://tschopp.net/@Ted/117507243253507251"
         }
       ],
-      "intent": {
-        "key": "12c854fcce3b2678756e512925b8787300c2bb3a5f2df02750be691154dcefd1",
-        "kind": "archive",
-        "started_at": "2026-10-26T12:37:03Z"
-      },
-      "missing_checked_at": "2026-10-26T12:37:03Z",
       "preferred_ids": [
         "115017515478931431"
       ],
@@ -25588,8 +25587,14 @@
       "source_paths": [
         "_posts/Blog Posts/2006-01-04-the-path-west.md"
       ],
-      "state": "uncertain",
-      "title": "The Path West: Reflections on Time, Forgiveness, and Departure"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T12:37:18.121Z",
+        "id": "117507243253507251",
+        "url": "https://tschopp.net/@Ted/117507243253507251"
+      },
+      "title": "The Path West: Reflections on Time, Forgiveness, and Departure",
+      "verified_at": "2026-10-26T12:37:03Z"
     },
     "https://tedt.org/the-purpose-of-community-protection-of-the-commons/": {
       "aliases": [
@@ -25804,7 +25809,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T10:58:35.804Z",
+  "last_publication_at": "2026-10-26T12:37:18.121Z",
   "last_reconciliation_at": "2026-10-26T12:37:03Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 75,
@@ -25896,6 +25901,14 @@
       "kind": "archive",
       "operation": "7dbcaf4947797af1c8dcd8b5fb385e80524b08da9d4447b287ea6caf022b718e",
       "url": "https://tschopp.net/@Ted/117506855128548264"
+    },
+    {
+      "canonical_url": "https://tedt.org/the-path-west/",
+      "created_at": "2026-10-26T12:37:18.121Z",
+      "id": "117507243253507251",
+      "kind": "archive",
+      "operation": "12c854fcce3b2678756e512925b8787300c2bb3a5f2df02750be691154dcefd1",
+      "url": "https://tschopp.net/@Ted/117507243253507251"
     }
   ],
   "run_count": 33,
