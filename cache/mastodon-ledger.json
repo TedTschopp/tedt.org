@@ -24355,14 +24355,13 @@
         {
           "id": "115017515959514808",
           "url": "https://tschopp.net/@Ted/115017515959514808"
+        },
+        {
+          "created_at": "2026-10-26T15:24:12.952Z",
+          "id": "117507899585117524",
+          "url": "https://tschopp.net/@Ted/117507899585117524"
         }
       ],
-      "intent": {
-        "key": "39d5fd20670fc02e4009281c4e26235945c0b2c58637d025299b740001b2bcc5",
-        "kind": "archive",
-        "started_at": "2026-10-26T15:23:57Z"
-      },
-      "missing_checked_at": "2026-10-26T15:23:57Z",
       "preferred_ids": [
         "115017515959514808"
       ],
@@ -24372,8 +24371,14 @@
       "source_paths": [
         "_posts/Blog Posts/2006-04-07-a-little-calend.md"
       ],
-      "state": "uncertain",
-      "title": "A Little Calendar App I'm building"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T15:24:12.952Z",
+        "id": "117507899585117524",
+        "url": "https://tschopp.net/@Ted/117507899585117524"
+      },
+      "title": "A Little Calendar App I'm building",
+      "verified_at": "2026-10-26T15:23:57Z"
     },
     "https://tedt.org/a-model-for-collaboration-tools/": {
       "aliases": [
@@ -25814,7 +25819,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T12:37:18.121Z",
+  "last_publication_at": "2026-10-26T15:24:12.952Z",
   "last_reconciliation_at": "2026-10-26T15:23:57Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 76,
@@ -25914,6 +25919,14 @@
       "kind": "archive",
       "operation": "12c854fcce3b2678756e512925b8787300c2bb3a5f2df02750be691154dcefd1",
       "url": "https://tschopp.net/@Ted/117507243253507251"
+    },
+    {
+      "canonical_url": "https://tedt.org/a-little-calend/",
+      "created_at": "2026-10-26T15:24:12.952Z",
+      "id": "117507899585117524",
+      "kind": "archive",
+      "operation": "39d5fd20670fc02e4009281c4e26235945c0b2c58637d025299b740001b2bcc5",
+      "url": "https://tschopp.net/@Ted/117507899585117524"
     }
   ],
   "run_count": 34,
