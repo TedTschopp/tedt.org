@@ -25296,14 +25296,13 @@
         {
           "id": "115017517888250747",
           "url": "https://tschopp.net/@Ted/115017517888250747"
+        },
+        {
+          "created_at": "2026-10-26T20:09:25.835Z",
+          "id": "117509021095350612",
+          "url": "https://tschopp.net/@Ted/117509021095350612"
         }
       ],
-      "intent": {
-        "key": "0543d323be2b9de2e7cd149a9013aa2d1e2fe4e5b49a1264e9150e228c51c5f4",
-        "kind": "archive",
-        "started_at": "2026-10-26T20:09:11Z"
-      },
-      "missing_checked_at": "2026-10-26T20:09:11Z",
       "preferred_ids": [
         "115017517888250747"
       ],
@@ -25313,8 +25312,14 @@
       "source_paths": [
         "_posts/Blog Posts/2006-12-20-shadows-and-sym.md"
       ],
-      "state": "uncertain",
-      "title": "From Shadows to Light: A Journey Through Fantasy Literature"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T20:09:25.835Z",
+        "id": "117509021095350612",
+        "url": "https://tschopp.net/@Ted/117509021095350612"
+      },
+      "title": "From Shadows to Light: A Journey Through Fantasy Literature",
+      "verified_at": "2026-10-26T20:09:11Z"
     },
     "https://tedt.org/slides/ai-strategy-discussion-starters/": {
       "aliases": [
@@ -25854,7 +25859,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T18:55:24.716Z",
+  "last_publication_at": "2026-10-26T20:09:25.835Z",
   "last_reconciliation_at": "2026-10-26T20:09:11Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 80,
@@ -25986,6 +25991,14 @@
       "kind": "archive",
       "operation": "40def5c08ec32610c4dc556b710aa82898164727b63f9710a4518c088fa95d33",
       "url": "https://tschopp.net/@Ted/117508730042147893"
+    },
+    {
+      "canonical_url": "https://tedt.org/shadows-and-sym/",
+      "created_at": "2026-10-26T20:09:25.835Z",
+      "id": "117509021095350612",
+      "kind": "archive",
+      "operation": "0543d323be2b9de2e7cd149a9013aa2d1e2fe4e5b49a1264e9150e228c51c5f4",
+      "url": "https://tschopp.net/@Ted/117509021095350612"
     }
   ],
   "run_count": 51,
