@@ -10,11 +10,7 @@
   },
   "routes": [
     {
-      "pattern": "https://tedt.org/micropub",
-      "zone_name": "tedt.org"
-    },
-    {
-      "pattern": "https://tedt.org/micropub/*",
+      "pattern": "https://tedt.org/micropub*",
       "zone_name": "tedt.org"
     }
   ],

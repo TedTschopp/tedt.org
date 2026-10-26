@@ -110,7 +110,10 @@ by public entries. Leave it disabled until the service and main layout are live.
 The owner approved use of the existing main-only `social-bot-check-preview`
 GitHub environment for this service on October 26, 2026. Its historical name
 reflects its first use. The job uses that environment's `CLOUDFLARE_API_TOKEN`
-without copying the credential to another environment. The two publisher roles
+without copying the credential to another environment. CI uploads and promotes
+an identified Worker version using the repository's established deployment
+pattern; it preserves existing routes and does not need zone route-write access.
+The two publisher roles
 are independently scoped to entry and media queues, and deployment smoke checks
 exercise both roles without logging private source.
 
@@ -148,3 +151,13 @@ private chunks; revert the service/site version or disable its two narrow routes
 if needed. Existing pages and previously published immutable media stay readable.
 Re-enable only after the restored version passes validation. A failure is not a
 reason to reset the private state or recreate an existing social status.
+
+## Cloudflare route matching
+
+Cloudflare includes the query string when matching route patterns. The reserved
+`https://tedt.org/micropub*` prefix therefore ends in a wildcard so `?q=config`
+and `?q=source` reach the Worker. The Worker still allows only its exact endpoint,
+media, publisher and health paths; other prefix matches return 404. Route changes
+are applied separately through the connected Cloudflare administrator. Version
+promotion in CI preserves the assigned route. Deployment smoke checks require
+unauthenticated config/source queries to reach the Worker and return 401.
