@@ -26,7 +26,7 @@ site deployment. This adds no Jekyll collection/plugin or paid subscription.
    seven days. Publish a bookmark to retain an item on your own website. After
    changing the site's token endpoint, sign back into Aperture once: its login
    refreshes the endpoint it stores for token checks. Then sign back into Monocle.
-4. Sign in to [Quill](https://quill.p3k.io/) with `tedt.org`. Approve the requested
+4. Sign in to [Quill](https://quill.p3k.app/) with `tedt.org`. Approve the requested
    permissions with your passkey. Different clients expose different post types.
    Monocle can also publish replies, likes and bookmarks through Micropub.
 
