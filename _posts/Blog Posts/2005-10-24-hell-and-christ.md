@@ -47,7 +47,8 @@ mathjax: null
 order: null
 image_width: 1456
 image_height: 816
-mastodon-post-id: '115017515000457930'
+mastodon-post-id: "117506855128548264"
+mastodon-post-url: "https://tschopp.net/@Ted/117506855128548264"
 ---
 I posted this elsewhere, and ran into it today, and thought about reposting it here:
 
