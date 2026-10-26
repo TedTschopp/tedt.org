@@ -47,7 +47,8 @@ mathjax: null
 order: null
 image_width: 1456
 image_height: 816
-mastodon-post-id: '115017515478931431'
+mastodon-post-id: "117507243253507251"
+mastodon-post-url: "https://tschopp.net/@Ted/117507243253507251"
 ---
 Slowly slip the sands of time  
 
