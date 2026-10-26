@@ -2064,12 +2064,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "ba0bec7e5465c6f862e061a1a00681ddf0d4593d5e67045338a23f5844c6e181",
-        "kind": "archive",
-        "started_at": "2026-10-26T03:04:20Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-26T03:04:34.145Z",
+          "id": "117504991175950265",
+          "url": "https://tschopp.net/@Ted/117504991175950265"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2004-01-01T08:00:00Z",
       "queue_kind": "archive",
@@ -2077,8 +2078,14 @@
       "source_paths": [
         "_posts/Quotes/2004-01-01-Al-Swearengen-Announcing-your-plans-is-a-goo.md"
       ],
-      "state": "uncertain",
-      "title": "Announcing your plans is a good way to hear God laugh – Al Swearengen"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T03:04:34.145Z",
+        "id": "117504991175950265",
+        "url": "https://tschopp.net/@Ted/117504991175950265"
+      },
+      "title": "Announcing your plans is a good way to hear God laugh – Al Swearengen",
+      "verified_at": "2026-10-26T03:04:20Z"
     },
     "https://tedt.org/Al-Swearengen-In-life-you-have-to-do-a-lot-o/": {
       "aliases": [
@@ -25700,7 +25707,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T01:32:32.673Z",
+  "last_publication_at": "2026-10-26T03:04:34.145Z",
   "last_reconciliation_at": "2026-10-26T03:04:20Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 68,
@@ -25736,6 +25743,14 @@
       "kind": "new",
       "operation": "ec7414961ded81f42f1a3db826ff4a84f33054ce20bb5f5ad95fc11d79f30ea0",
       "url": "https://tschopp.net/@Ted/117504629320821411"
+    },
+    {
+      "canonical_url": "https://tedt.org/Al-Swearengen-Announcing-your-plans-is-a-goo/",
+      "created_at": "2026-10-26T03:04:34.145Z",
+      "id": "117504991175950265",
+      "kind": "archive",
+      "operation": "ba0bec7e5465c6f862e061a1a00681ddf0d4593d5e67045338a23f5844c6e181",
+      "url": "https://tschopp.net/@Ted/117504991175950265"
     }
   ],
   "run_count": 14,
