@@ -209,6 +209,27 @@ module IndieWebTests
     equal(count, http.requests.length)
   end
 
+  def test_static_pages_404_deletion_withdraws_the_previous_targets
+    source, target = 'https://tedt.org/updates/deleted/', 'https://example.org/post'
+    http = FakeHTTP.new do |url, options|
+      if url == source then response('', {}, 404)
+      elsif options[:method] == 'POST' then response('', {}, 202)
+      else response('', { 'link' => ['</receiver>; rel=webmention'] })
+      end
+    end
+    sender = IndieWeb::Sender.new(http: http)
+    state = sender.reconcile({}, { source => { 'fingerprint' => 'old', 'targets' => [target] } })
+    result = sender.run(state, {})
+    equal('accepted', result['sources'][source]['deliveries'][target]['state'])
+    equal({ 'source' => source, 'target' => target }, http.requests.last[1][:form])
+  end
+
+  def test_media_downloads_are_enclosures_and_interaction_links_remain_targets
+    doc = Nokogiri::HTML('<main class="h-entry"><div class="e-content"><a class="u-in-reply-to" href="https://example.org/post">Reply</a><audio src="https://media.tedt.org/audio.wav"><a rel="enclosure" href="https://media.tedt.org/audio.wav">Download</a></audio></div></main>')
+    state = IndieWeb::Sender.new.content_state(doc, 'https://tedt.org/updates/post/')
+    equal(['https://example.org/post'], state['targets'])
+  end
+
   def test_initial_activation_baselines_without_sending_history
     http = FakeHTTP.new { raise 'No network expected' }
     state = IndieWeb::Sender.new(http: http).run({}, { 'https://tedt.org/Article/' => { 'fingerprint' => 'one', 'targets' => ['https://example.org/'] } })

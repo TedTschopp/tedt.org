@@ -93,7 +93,8 @@ module IndieWeb
         http.open_timeout = 10
         http.read_timeout = 20
         http.write_timeout = 20
-        request = method == 'POST' ? Net::HTTP::Post.new(u.request_uri) : Net::HTTP::Get.new(u.request_uri)
+        request_type = { 'GET' => Net::HTTP::Get, 'HEAD' => Net::HTTP::Head, 'POST' => Net::HTTP::Post }.fetch(method) { raise Error, 'Unsupported HTTP method' }
+        request = request_type.new(u.request_uri)
         request['User-Agent'] = 'tedt.org Webmention/1.0 (+https://tedt.org/)'
         request['Accept'] = 'text/html, application/json;q=0.9, */*;q=0.1'
         request['Accept-Encoding'] = 'identity'
@@ -277,7 +278,7 @@ module IndieWeb
     def content_state(doc, source)
       content = content_html(doc)
       raise Error, "Missing article content for #{source}" unless content
-      targets = Nokogiri::HTML.fragment(content).css('a[href]').filter_map { |n| IndieWeb.url(n['href'], source, fragment: true) rescue nil }
+      targets = Nokogiri::HTML.fragment(content).css('a[href]').reject { |node| node['rel'].to_s.split.include?('enclosure') }.filter_map { |n| IndieWeb.url(n['href'], source, fragment: true) rescue nil }
       targets.reject! { |v| IndieWeb.url(v) == source }
       targets = targets.uniq.sort
       { 'fingerprint' => targets.empty? ? 'no-targets' : Digest::SHA256.hexdigest(content), 'targets' => targets }

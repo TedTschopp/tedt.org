@@ -1,0 +1,30 @@
+<h1 class="p-name text-break">{{ page.title | escape }}</h1>
+<p class="lead">{% include utility/content-credits.html page=page %}</p>
+{% include content/publish-and-update-date-time-v2.html %}
+<p><a class="u-url" href="{{ page.url | absolute_url | escape }}">Permalink</a></p>
+<div class="e-content text-break">
+  {% assign interaction_keys = 'in-reply-to,like-of,repost-of,bookmark-of' | split: ',' %}
+  {% assign interaction_labels = 'In reply to,Liked,Reposted,Bookmarked' | split: ',' %}
+  {% for key in interaction_keys %}
+    {% assign label = interaction_labels[forloop.index0] %}
+    {% assign field = 'mf-' | append: key %}
+    {% for target in page[field] %}<p>{{ label }} <a class="u-{{ key }}" href="{{ target | escape }}">{{ target | escape }}</a></p>{% endfor %}
+  {% endfor %}
+  {% if page.mf-rsvp[0] %}<p>RSVP: <span class="p-rsvp">{{ page.mf-rsvp[0] | escape }}</span></p>{% endif %}
+  {% if page.mf-summary[0] %}<p class="p-summary">{{ page.mf-summary[0] | escape }}</p>{% endif %}
+  {% if page.mf-start[0] %}<p>Starts: <time class="dt-start" datetime="{{ page.mf-start[0] | escape }}">{{ page.mf-start[0] | date: '%B %-d, %Y at %H:%M %Z' }}</time>{% if page.mf-end[0] %}<br>Ends: <time class="dt-end" datetime="{{ page.mf-end[0] | escape }}">{{ page.mf-end[0] | date: '%B %-d, %Y at %H:%M %Z' }}</time>{% endif %}</p>{% endif %}
+  {% for place in page.mf-location %}{% include content/micropub-place.html place=place property_class='p-location' %}{% endfor %}
+  {% for place in page.mf-checkin %}{% include content/micropub-place.html place=place property_class='p-checkin' %}{% endfor %}
+  {% for photo in page.mf-photo %}
+  {% assign photo_url = photo.value | default: photo %}
+  {% assign photo_alt = photo.alt | default: page.title %}
+  <figure><img class="u-photo img-fluid" src="{{ photo_url | escape }}" alt="{{ photo_alt | escape }}" loading="lazy"></figure>
+  {% endfor %}
+  {% for audio in page.mf-audio %}<figure><audio class="u-audio w-100" controls preload="metadata" src="{{ audio | escape }}">Your browser cannot play this audio. <a rel="enclosure" href="{{ audio | escape }}">Download the audio</a>.</audio><figcaption>Audio: {{ page.title | escape }}</figcaption></figure>{% endfor %}
+  {% for video in page.mf-video %}<figure><video class="u-video w-100" controls preload="metadata" src="{{ video | escape }}">Your browser cannot play this video. <a rel="enclosure" href="{{ video | escape }}">Download the video</a>.</video><figcaption>Video: {{ page.title | escape }}</figcaption></figure>{% endfor %}
+  {{ content }}
+</div>
+{% if page.categories.size > 0 %}<p>Categories: {% for category in page.categories %}<span class="p-category">{{ category | escape }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>{% endif %}
+{% for syndicated in page.mf-syndication %}<p><a class="u-syndication" href="{{ syndicated | escape }}">Syndicated copy</a></p>{% endfor %}
+
+{% include social/syndication-links.html %}
