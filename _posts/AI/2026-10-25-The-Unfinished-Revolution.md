@@ -52,6 +52,8 @@ image_width: 1672
 image_height: 941
 
 no_toc: true
+mastodon-post-id: "117505633699839727"
+mastodon-post-url: "https://tschopp.net/@Ted/117505633699839727"
 ---
 
 Put an electric light above a workbench and the work can continue after sunset. Put it above a kitchen table and someone can read a book, teach a child, or draw something that has no customer.
