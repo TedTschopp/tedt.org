@@ -25196,14 +25196,13 @@
         {
           "id": "115017517403043715",
           "url": "https://tschopp.net/@Ted/115017517403043715"
+        },
+        {
+          "created_at": "2026-10-26T18:55:24.716Z",
+          "id": "117508730042147893",
+          "url": "https://tschopp.net/@Ted/117508730042147893"
         }
       ],
-      "intent": {
-        "key": "40def5c08ec32610c4dc556b710aa82898164727b63f9710a4518c088fa95d33",
-        "kind": "archive",
-        "started_at": "2026-10-26T18:55:12Z"
-      },
-      "missing_checked_at": "2026-10-26T18:55:12Z",
       "preferred_ids": [
         "115017517403043715"
       ],
@@ -25213,8 +25212,14 @@
       "source_paths": [
         "_posts/Blog Posts/2006-12-18-rain-in-los-ang.md"
       ],
-      "state": "uncertain",
-      "title": "Winter Rains in Los Angeles: A Reflection on Longing, Home, and Hope"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T18:55:24.716Z",
+        "id": "117508730042147893",
+        "url": "https://tschopp.net/@Ted/117508730042147893"
+      },
+      "title": "Winter Rains in Los Angeles: A Reflection on Longing, Home, and Hope",
+      "verified_at": "2026-10-26T18:55:12Z"
     },
     "https://tedt.org/reprint-whats-actually-inside-a-100-billion-AI-data-center/": {
       "aliases": [
@@ -25844,7 +25849,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T17:35:46.839Z",
+  "last_publication_at": "2026-10-26T18:55:24.716Z",
   "last_reconciliation_at": "2026-10-26T18:55:12Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 79,
@@ -25968,6 +25973,14 @@
       "kind": "archive",
       "operation": "89bda2f7fb9dc4cbfa1dd2ca26e1a314ca0e843b1ce31755fdce9e07dec6c061",
       "url": "https://tschopp.net/@Ted/117508416919184655"
+    },
+    {
+      "canonical_url": "https://tedt.org/rain-in-los-ang/",
+      "created_at": "2026-10-26T18:55:24.716Z",
+      "id": "117508730042147893",
+      "kind": "archive",
+      "operation": "40def5c08ec32610c4dc556b710aa82898164727b63f9710a4518c088fa95d33",
+      "url": "https://tschopp.net/@Ted/117508730042147893"
     }
   ],
   "run_count": 46,
