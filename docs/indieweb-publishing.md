@@ -9,11 +9,17 @@ site deployment. This adds no Jekyll collection/plugin or paid subscription.
 
 1. The owner supplied the IndieKey metadata link ending in `crse2y91vtsd5q0r`.
    Publish it on the homepage, then press **Verify** on the domain in IndieKey.
-   Verification requires the exact public tag, not merely a local build.
+   Verification requires the exact public tag, not merely a local build. The
+   owner completed verification on October 25, 2026; the public metadata and
+   signing-key documents now return HTTP 200.
 2. After verification, align the existing authorization/token discovery links to
    the endpoints returned by that metadata. Keep both legacy tags: older clients
    still use them. The current metadata URI is
    `https://indiekey.id/.well-known/oauth-authorization-server/s/crse2y91vtsd5q0r`.
+   The verified authorization endpoint is
+   `https://indiekey.id/s/crse2y91vtsd5q0r/auth`; the token endpoint is
+   `https://indiekey.id/token`. The site's two legacy discovery tags point there
+   so clients that do not read the metadata link also use IndieKey.
 3. The owner supplied `https://aperture.p3k.io/microsub/1121`. This is a public
    discovery URL, not an access token. Sign in to Aperture, follow a feed, and sign
    in to [Monocle](https://monocle.p3k.io/) using `tedt.org`. The free reader keeps
@@ -99,7 +105,15 @@ Main repository variables:
 Media repository variable: `INDIEWEB_MEDIA_SYNC_ENABLED` drains uploads referenced
 by public entries. Leave it disabled until the service and main layout are live.
 
-Main repository secrets: existing `CLOUDFLARE_API_TOKEN`, plus
+The service deployment job expects `CLOUDFLARE_API_TOKEN` in its protected
+`indieweb-publishing` environment. The existing credential is currently in the
+separate `social-bot-check-preview` environment; reusing that environment requires
+the owner's pending approval. No workflow access change has been made. The two
+Workers and private database schema were deployed manually through the existing
+Cloudflare connection. Service credentials and queue draining remain paused until
+that deployment access is resolved and the real client flow is qualified.
+
+Main repository secrets:
 `INDIEWEB_PUBLISHER_TOKEN` (entry queue) and `INDIEWEB_MEDIA_PUBLISHER_TOKEN`
 (media queue/service). The latter is also stored in the media repository. These
 are generated independently; neither is a GitHub account token. The service stores
