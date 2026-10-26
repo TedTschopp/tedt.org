@@ -24946,14 +24946,13 @@
         {
           "id": "115017518857718439",
           "url": "https://tschopp.net/@Ted/115017518857718439"
+        },
+        {
+          "created_at": "2026-10-26T22:25:40.540Z",
+          "id": "117509556832872626",
+          "url": "https://tschopp.net/@Ted/117509556832872626"
         }
       ],
-      "intent": {
-        "key": "cfdffba43c49a774f8ad6524bb5c4536b25344a90852860c1517b9e9bc499f24",
-        "kind": "archive",
-        "started_at": "2026-10-26T22:25:24Z"
-      },
-      "missing_checked_at": "2026-10-26T22:25:24Z",
       "preferred_ids": [
         "115017518857718439"
       ],
@@ -24963,8 +24962,14 @@
       "source_paths": [
         "_posts/Blog Posts/2006-12-28-man-is-a-verbav.md"
       ],
-      "state": "uncertain",
-      "title": "Word-Eater: Exploring Identity Through Words and Symbols"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T22:25:40.540Z",
+        "id": "117509556832872626",
+        "url": "https://tschopp.net/@Ted/117509556832872626"
+      },
+      "title": "Word-Eater: Exploring Identity Through Words and Symbols",
+      "verified_at": "2026-10-26T22:25:24Z"
     },
     "https://tedt.org/martin-luther-on-beer/": {
       "aliases": [
@@ -25874,7 +25879,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T21:14:43.443Z",
+  "last_publication_at": "2026-10-26T22:25:40.540Z",
   "last_reconciliation_at": "2026-10-26T22:25:24Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 82,
@@ -26022,6 +26027,14 @@
       "kind": "archive",
       "operation": "4f28124bde985d4ab95605bc71351cfd200854b3d740543a947ebca7447d1d02",
       "url": "https://tschopp.net/@Ted/117509277839757019"
+    },
+    {
+      "canonical_url": "https://tedt.org/man-is-a-verbav/",
+      "created_at": "2026-10-26T22:25:40.540Z",
+      "id": "117509556832872626",
+      "kind": "archive",
+      "operation": "cfdffba43c49a774f8ad6524bb5c4536b25344a90852860c1517b9e9bc499f24",
+      "url": "https://tschopp.net/@Ted/117509556832872626"
     }
   ],
   "run_count": 60,
