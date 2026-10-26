@@ -47,7 +47,8 @@ mathjax: null
 order: null
 image_width: 1921
 image_height: 1080
-mastodon-post-id: '115017517403043715'
+mastodon-post-id: "117508730042147893"
+mastodon-post-url: "https://tschopp.net/@Ted/117508730042147893"
 ---
 It’s amazing how winter rains can highlight some of Los Angeles’s best qualities.  This morning, as I went out to my car, I could smell the clean air.  I took a deep breath and let the blast of cold hit my lungs.  I was awake and alive.  The sky was a striking blue accented with white clouds.  As I made my way to the office I could see the snow capped mountains that make up the borders to the LA basin.
 
