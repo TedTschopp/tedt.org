@@ -25511,14 +25511,13 @@
         {
           "id": "111179921177417786",
           "url": "https://tschopp.net/@Ted/111179921177417786"
+        },
+        {
+          "created_at": "2026-10-26T08:12:57.969Z",
+          "id": "117506203842592130",
+          "url": "https://tschopp.net/@Ted/117506203842592130"
         }
       ],
-      "intent": {
-        "key": "517da7b247937b2e3c8153fe52f995d4e6730ee7c20a12fd6deb81f8b6ddb317",
-        "kind": "archive",
-        "started_at": "2026-10-26T08:12:47Z"
-      },
-      "missing_checked_at": "2026-10-26T08:12:47Z",
       "preferred_ids": [
         "111179921177417786"
       ],
@@ -25528,8 +25527,14 @@
       "source_paths": [
         "_posts/Blog Posts/2004-08-25-the-google-browseros.md"
       ],
-      "state": "uncertain",
-      "title": "Thoughts on a Potential Google Internet OS"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T08:12:57.969Z",
+        "id": "117506203842592130",
+        "url": "https://tschopp.net/@Ted/117506203842592130"
+      },
+      "title": "Thoughts on a Potential Google Internet OS",
+      "verified_at": "2026-10-26T08:12:47Z"
     },
     "https://tedt.org/the-path-west/": {
       "aliases": [
@@ -25774,7 +25779,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T06:56:20.275Z",
+  "last_publication_at": "2026-10-26T08:12:57.969Z",
   "last_reconciliation_at": "2026-10-26T08:12:47Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 72,
@@ -25842,6 +25847,14 @@
       "kind": "archive",
       "operation": "7fd78c1f7034024080617a306bdb9e289ecd6827eab93c1f23d840930ead8f07",
       "url": "https://tschopp.net/@Ted/117505902528097715"
+    },
+    {
+      "canonical_url": "https://tedt.org/the-google-browseros/",
+      "created_at": "2026-10-26T08:12:57.969Z",
+      "id": "117506203842592130",
+      "kind": "archive",
+      "operation": "517da7b247937b2e3c8153fe52f995d4e6730ee7c20a12fd6deb81f8b6ddb317",
+      "url": "https://tschopp.net/@Ted/117506203842592130"
     }
   ],
   "run_count": 24,
