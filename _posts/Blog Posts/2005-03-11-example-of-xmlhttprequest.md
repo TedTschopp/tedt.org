@@ -46,7 +46,8 @@ monster-or-magical-or-religious-ideas: N/A
 year-the-event-took-place: N/A
 mathjax: false
 order: 1
-mastodon-post-id: '115017514520460817'
+mastodon-post-id: "117506585483126261"
+mastodon-post-url: "https://tschopp.net/@Ted/117506585483126261"
 ---
 I'm working on this at work, and I'd like to use some of the ideas on my personal sites as well.  I thought I'd post this, as it doesn't yet contain anything to amazing or too specific to my work's environment.
 
