@@ -21870,12 +21870,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T17:56:46Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "e2a6b5ecce5d95f483883f7e742b0d26c81e3ede23403f75e7e79d3376030e00",
-        "kind": "new",
-        "started_at": "2026-10-26T00:08:07Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-26T00:08:20.488Z",
+          "id": "117504298220635285",
+          "url": "https://tschopp.net/@Ted/117504298220635285"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2026-10-25T07:00:00Z",
       "queue_kind": "new",
@@ -21883,8 +21884,14 @@
       "source_paths": [
         "_posts/Reprints/2026-10-25-Reprint-Two-Views-of-Programming.md"
       ],
-      "state": "uncertain",
-      "title": "REPRINT: Two views of programming"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T00:08:20.488Z",
+        "id": "117504298220635285",
+        "url": "https://tschopp.net/@Ted/117504298220635285"
+      },
+      "title": "REPRINT: Two views of programming",
+      "verified_at": "2026-10-26T00:08:07Z"
     },
     "https://tedt.org/Riding-the-AI-Wave-This-Isn't-Just-Another-Trend/": {
       "aliases": [
@@ -25671,7 +25678,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-25T22:29:53.777Z",
+  "last_publication_at": "2026-10-26T00:08:20.488Z",
   "last_reconciliation_at": "2026-10-26T00:08:07Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 66,
@@ -25691,6 +25698,14 @@
       "kind": "new",
       "operation": "9afbb518727f79e2e56426141b23d811778f6140b38e34670038a05ba963407f",
       "url": "https://tschopp.net/@Ted/117503911118511086"
+    },
+    {
+      "canonical_url": "https://tedt.org/Reprint-Two-Views-of-Programming/",
+      "created_at": "2026-10-26T00:08:20.488Z",
+      "id": "117504298220635285",
+      "kind": "new",
+      "operation": "e2a6b5ecce5d95f483883f7e742b0d26c81e3ede23403f75e7e79d3376030e00",
+      "url": "https://tschopp.net/@Ted/117504298220635285"
     }
   ],
   "run_count": 8,
