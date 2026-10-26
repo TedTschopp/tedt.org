@@ -38,6 +38,8 @@ image-artist: "Ted Tschopp with OpenAI image generation"
 image-artist-URL: "https://tedt.org/"
 image_width: 1672
 image_height: 941
+mastodon-post-id: "117504298220635285"
+mastodon-post-url: "https://tschopp.net/@Ted/117504298220635285"
 ---
 
 [Source transcription](https://www.cs.utexas.edu/~EWD/transcriptions/EWD05xx/EWD540.html)
