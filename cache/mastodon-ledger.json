@@ -24806,14 +24806,13 @@
         {
           "id": "115017515000457930",
           "url": "https://tschopp.net/@Ted/115017515000457930"
+        },
+        {
+          "created_at": "2026-10-26T10:58:35.804Z",
+          "id": "117506855128548264",
+          "url": "https://tschopp.net/@Ted/117506855128548264"
         }
       ],
-      "intent": {
-        "key": "7dbcaf4947797af1c8dcd8b5fb385e80524b08da9d4447b287ea6caf022b718e",
-        "kind": "archive",
-        "started_at": "2026-10-26T10:58:21Z"
-      },
-      "missing_checked_at": "2026-10-26T10:58:21Z",
       "preferred_ids": [
         "115017515000457930"
       ],
@@ -24823,8 +24822,14 @@
       "source_paths": [
         "_posts/Blog Posts/2005-10-24-hell-and-christ.md"
       ],
-      "state": "uncertain",
-      "title": "Contemplating the Afterlife: Understanding Hell from Various Perspectives"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-26T10:58:35.804Z",
+        "id": "117506855128548264",
+        "url": "https://tschopp.net/@Ted/117506855128548264"
+      },
+      "title": "Contemplating the Afterlife: Understanding Hell from Various Perspectives",
+      "verified_at": "2026-10-26T10:58:21Z"
     },
     "https://tedt.org/html5-javascript-version-of-of-windows/": {
       "aliases": [
@@ -25794,7 +25799,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T09:50:01.342Z",
+  "last_publication_at": "2026-10-26T10:58:35.804Z",
   "last_reconciliation_at": "2026-10-26T10:58:21Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 74,
@@ -25878,6 +25883,14 @@
       "kind": "archive",
       "operation": "343168a9eb38326ce136bac5f6615d4865390aa4b7da2d4753a4e438bcd5edc9",
       "url": "https://tschopp.net/@Ted/117506585483126261"
+    },
+    {
+      "canonical_url": "https://tedt.org/hell-and-christ/",
+      "created_at": "2026-10-26T10:58:35.804Z",
+      "id": "117506855128548264",
+      "kind": "archive",
+      "operation": "7dbcaf4947797af1c8dcd8b5fb385e80524b08da9d4447b287ea6caf022b718e",
+      "url": "https://tschopp.net/@Ted/117506855128548264"
     }
   ],
   "run_count": 30,
