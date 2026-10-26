@@ -6147,6 +6147,136 @@
         "https://tedt.org/topics/ai-native-software-delivery/"
       ],
       "deliveries": {}
+    },
+    "https://tedt.org/The-Unfinished-Revolution/": {
+      "fingerprint": "47f8de6169ec3b56bd2bc63cef42a6cf431509d4c423ef93dee4707cdbe97f68",
+      "targets": [
+        "https://americanhistory.si.edu/lighting/19thcent/consq19.htm",
+        "https://blog.sciencemuseum.org.uk/james-watt-and-the-separate-condenser/",
+        "https://blogs.loc.gov/bibliomania/2024/05/20/the-first-modern-medical-book/",
+        "https://carlotaperez.org/research-project/",
+        "https://jods.mitpress.mit.edu/pub/ageofentanglement/release/1",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11244532/",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12036991/",
+        "https://tedt.org/A-letter-to-the-Artisanal-Software-Craftsman/",
+        "https://tedt.org/Art-of-Innovation/",
+        "https://tedt.org/Beyond-the-Light-Bulb/",
+        "https://tedt.org/Beyond-the-Mirror/",
+        "https://tedt.org/When-Output-Becomes-Abundant/",
+        "https://tedt.org/inside-ai/",
+        "https://tedt.org/the-purpose-of-community-protection-of-the-commons/",
+        "https://www.aeaweb.org/articles?id=10.1257/mac.20180386",
+        "https://www.aeaweb.org/articles?id=10.1257/pandp.20261034",
+        "https://www.computerhistory.org/revolution/the-web/20/377",
+        "https://www.marxists.org/archive/morris/works/1884/art-lab.htm",
+        "https://www.metmuseum.org/exhibitions/listings/2012/printed-image-in-china",
+        "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/",
+        "https://www.vam.ac.uk/articles/arts-and-crafts-an-introduction"
+      ],
+      "deliveries": {
+        "https://americanhistory.si.edu/lighting/19thcent/consq19.htm": {
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-26T05:57:54+00:00"
+        },
+        "https://blog.sciencemuseum.org.uk/james-watt-and-the-separate-condenser/": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://blogs.loc.gov/bibliomania/2024/05/20/the-first-modern-medical-book/": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://carlotaperez.org/research-project/": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://jods.mitpress.mit.edu/pub/ageofentanglement/release/1": {
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-26T05:57:54+00:00"
+        },
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC11244532/": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12036991/": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://tedt.org/A-letter-to-the-Artisanal-Software-Craftsman/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/FbxqleG-7W8a3zVkuAOW",
+          "attempts": 1
+        },
+        "https://tedt.org/Art-of-Innovation/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/r6q9saHouNdsqG3AsvZP",
+          "attempts": 1
+        },
+        "https://tedt.org/Beyond-the-Light-Bulb/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/8oPP9P6HQSI7eGD9jjte",
+          "attempts": 1
+        },
+        "https://tedt.org/Beyond-the-Mirror/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/0E82xqGhabsiR7r2okE9",
+          "attempts": 1
+        },
+        "https://tedt.org/When-Output-Becomes-Abundant/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/qDDUZSC6y5hZkhfdaTb9",
+          "attempts": 1
+        },
+        "https://tedt.org/inside-ai/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/W79d91kM5G3T5-TTgkJd",
+          "attempts": 1
+        },
+        "https://tedt.org/the-purpose-of-community-protection-of-the-commons/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Zp4z4QyDiIhLiVdFZ4oE",
+          "attempts": 1
+        },
+        "https://www.aeaweb.org/articles?id=10.1257/mac.20180386": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://www.aeaweb.org/articles?id=10.1257/pandp.20261034": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://www.computerhistory.org/revolution/the-web/20/377": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://www.marxists.org/archive/morris/works/1884/art-lab.htm": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://www.metmuseum.org/exhibitions/listings/2012/printed-image-in-china": {
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-26T05:57:54+00:00"
+        },
+        "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/": {
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-26T05:57:54+00:00"
+        },
+        "https://www.vam.ac.uk/articles/arts-and-crafts-an-introduction": {
+          "state": "unsupported",
+          "attempts": 1
+        }
+      }
     }
   }
 }
