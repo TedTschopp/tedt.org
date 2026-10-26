@@ -609,6 +609,7 @@ links:
 
 # Public IndieWeb discovery; credentials belong in Actions secrets.
 indieweb:
+  metadata_endpoint: https://indiekey.id/.well-known/oauth-authorization-server/s/crse2y91vtsd5q0r
   webmention_endpoint: https://webmention.io/tedt.org/webmention
   authorization_endpoint: https://indieauth.com/auth
   token_endpoint: https://tokens.indieauth.com/token

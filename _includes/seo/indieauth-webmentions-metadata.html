@@ -74,6 +74,8 @@
          The token endpoint to verify the micropub token against. See: https://indieweb.org/token-endpoint
     -->
 
+    {% if site.indieweb.metadata_endpoint %}<link rel="indieauth-metadata" href="{{ site.indieweb.metadata_endpoint | escape }}">{% endif %}
+
     <link rel="authorization_endpoint" href="{{ site.indieweb.authorization_endpoint | default: 'https://indieauth.com/auth' | escape }}">
     <link rel="token_endpoint" href="{{ site.indieweb.token_endpoint | default: 'https://tokens.indieauth.com/token' | escape }}">
 
