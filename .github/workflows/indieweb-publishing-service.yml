@@ -39,7 +39,7 @@ jobs:
       group: indieweb-service-deploy
       cancel-in-progress: false
     environment:
-      name: indieweb-publishing
+      name: social-bot-check-preview
       url: https://tedt.org/micropub/health
     steps:
       - uses: actions/checkout@v7
@@ -54,6 +54,7 @@ jobs:
           cache-dependency-path: _code/cloudflare/indieweb/package-lock.json
       - run: npm ci --prefix _code/cloudflare/indieweb --no-audit --no-fund
       - name: Apply private authoring schema
+        if: vars.INDIEWEB_D1_MIGRATIONS_ENABLED == 'true'
         working-directory: _code/cloudflare/indieweb
         env:
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
@@ -79,14 +80,22 @@ jobs:
           printf '%s' "$SITE_TOKEN" | npx wrangler secret put PUBLISHER_TOKEN
           printf '%s' "$MEDIA_TOKEN" | npx wrangler secret put MEDIA_PUBLISHER_TOKEN
           printf '%s' "$MEDIA_TOKEN" | npx wrangler secret put PUBLISHER_TOKEN --config wrangler-buffer.jsonc
-      - name: Check public service health and unauthenticated denial
+      - name: Check service health, private queue access and unauthenticated denial
+        env:
+          SITE_TOKEN: ${{ secrets.INDIEWEB_PUBLISHER_TOKEN }}
+          MEDIA_TOKEN: ${{ secrets.INDIEWEB_MEDIA_PUBLISHER_TOKEN }}
         run: |
           python3 - <<'PY'
-          import json, urllib.request, urllib.error
+          import json, os, urllib.request, urllib.error
           with urllib.request.urlopen(urllib.request.Request('https://tedt.org/micropub/health', headers={'User-Agent':'tedt.org deployment verifier'}), timeout=30) as response:
               assert json.load(response)['identity'] == 'IndieKey'
+          for token_name, action, field in [('SITE_TOKEN', 'pending', 'entries'), ('MEDIA_TOKEN', 'inventory', 'ids')]:
+              request = urllib.request.Request('https://tedt.org/micropub/publisher', data=json.dumps({'action':action}).encode(), headers={'Authorization':'Bearer ' + os.environ[token_name], 'Content-Type':'application/json', 'User-Agent':'tedt.org deployment verifier'})
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  assert isinstance(json.load(response)[field], list)
+          print('Both scoped publisher roles can access the private authoring schema.')
           try:
-              urllib.request.urlopen(urllib.request.Request('https://tedt.org/micropub', data=b'h=entry&content=must-not-save', headers={'Content-Type':'application/x-www-form-urlencoded'}), timeout=30)
+              urllib.request.urlopen(urllib.request.Request('https://tedt.org/micropub', data=b'h=entry&content=must-not-save', headers={'Content-Type':'application/x-www-form-urlencoded','User-Agent':'tedt.org deployment verifier'}), timeout=30)
               raise SystemExit('Unauthenticated write unexpectedly succeeded')
           except urllib.error.HTTPError as error:
               assert error.code == 401, error.code
