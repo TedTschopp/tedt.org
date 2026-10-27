@@ -51,7 +51,8 @@ mathjax: null
 order: null
 image_width: 1200
 image_height: 630
-mastodon-post-id: '115017524651376565'
+mastodon-post-id: "117513812136466381"
+mastodon-post-url: "https://tschopp.net/@Ted/117513812136466381"
 ---
 Well I broke my iPhone. I dropped it at lunch today and the glass shattered. 
 
