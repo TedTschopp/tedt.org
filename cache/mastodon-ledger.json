@@ -24786,14 +24786,13 @@
         {
           "id": "115017523198072838",
           "url": "https://tschopp.net/@Ted/115017523198072838"
+        },
+        {
+          "created_at": "2026-10-27T12:30:54.657Z",
+          "id": "117512880433074724",
+          "url": "https://tschopp.net/@Ted/117512880433074724"
         }
       ],
-      "intent": {
-        "key": "e30ac96f73dff24152087096583750852db0c5f7d61352e54709ca07c315a05b",
-        "kind": "archive",
-        "started_at": "2026-10-27T12:30:41Z"
-      },
-      "missing_checked_at": "2026-10-27T12:30:41Z",
       "preferred_ids": [
         "115017523198072838"
       ],
@@ -24803,8 +24802,14 @@
       "source_paths": [
         "_posts/Blog Posts/2007-04-12-film-snob.md"
       ],
-      "state": "uncertain",
-      "title": "A Film Enthusiast's Journey: Exploring International Cinema in 2007"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T12:30:54.657Z",
+        "id": "117512880433074724",
+        "url": "https://tschopp.net/@Ted/117512880433074724"
+      },
+      "title": "A Film Enthusiast's Journey: Exploring International Cinema in 2007",
+      "verified_at": "2026-10-27T12:30:41Z"
     },
     "https://tedt.org/four-is-the-new-three/": {
       "aliases": [
@@ -25994,7 +25999,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T11:08:31.087Z",
+  "last_publication_at": "2026-10-27T12:30:54.657Z",
   "last_reconciliation_at": "2026-10-27T12:30:41Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 93,
@@ -26230,6 +26235,14 @@
       "kind": "archive",
       "operation": "fc27313e2b9d0050c2f8a59aea958fa96d7e86906fa23d0f8272d322ff167e69",
       "url": "https://tschopp.net/@Ted/117512556451346741"
+    },
+    {
+      "canonical_url": "https://tedt.org/film-snob/",
+      "created_at": "2026-10-27T12:30:54.657Z",
+      "id": "117512880433074724",
+      "kind": "archive",
+      "operation": "e30ac96f73dff24152087096583750852db0c5f7d61352e54709ca07c315a05b",
+      "url": "https://tschopp.net/@Ted/117512880433074724"
     }
   ],
   "run_count": 102,
