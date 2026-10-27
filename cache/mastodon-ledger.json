@@ -25981,14 +25981,13 @@
         {
           "id": "115017523681590098",
           "url": "https://tschopp.net/@Ted/115017523681590098"
+        },
+        {
+          "created_at": "2026-10-27T13:51:58.221Z",
+          "id": "117513199171796596",
+          "url": "https://tschopp.net/@Ted/117513199171796596"
         }
       ],
-      "intent": {
-        "key": "132119495e57404fcea29be51e19962117548e1dc0870f56862f6b2372d07a10",
-        "kind": "archive",
-        "started_at": "2026-10-27T13:51:41Z"
-      },
-      "missing_checked_at": "2026-10-27T13:51:41Z",
       "preferred_ids": [
         "115017523681590098"
       ],
@@ -25998,13 +25997,19 @@
       "source_paths": [
         "_posts/Blog Posts/2007-05-23-what-should-google-buy.md"
       ],
-      "state": "uncertain",
-      "title": "What Should Google Buy Next? A Strategic Insight into Future Investments"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T13:51:58.221Z",
+        "id": "117513199171796596",
+        "url": "https://tschopp.net/@Ted/117513199171796596"
+      },
+      "title": "What Should Google Buy Next? A Strategic Insight into Future Investments",
+      "verified_at": "2026-10-27T13:51:41Z"
     }
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T12:30:54.657Z",
+  "last_publication_at": "2026-10-27T13:51:58.221Z",
   "last_reconciliation_at": "2026-10-27T13:51:41Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 94,
@@ -26248,6 +26253,14 @@
       "kind": "archive",
       "operation": "e30ac96f73dff24152087096583750852db0c5f7d61352e54709ca07c315a05b",
       "url": "https://tschopp.net/@Ted/117512880433074724"
+    },
+    {
+      "canonical_url": "https://tedt.org/what-should-google-buy/",
+      "created_at": "2026-10-27T13:51:58.221Z",
+      "id": "117513199171796596",
+      "kind": "archive",
+      "operation": "132119495e57404fcea29be51e19962117548e1dc0870f56862f6b2372d07a10",
+      "url": "https://tschopp.net/@Ted/117513199171796596"
     }
   ],
   "run_count": 105,
