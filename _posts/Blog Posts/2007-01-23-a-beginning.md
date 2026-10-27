@@ -77,7 +77,8 @@ mathjax: null
 order: null
 image_width: 1536
 image_height: 1024
-mastodon-post-id: '115017520297982074'
+mastodon-post-id: "117511099091825046"
+mastodon-post-url: "https://tschopp.net/@Ted/117511099091825046"
 ---
 One of my resolutions this year was to start writing fiction again.  I have done it several times in my past, but I have never let people read it publicly.  The only thing that ever came close to public viewing was the several Role Playing Games I have run.  Additionally I posted one [poem](https://tedt.org/personal%20writing/the-path-west) I had written about 5 years ago.
 
