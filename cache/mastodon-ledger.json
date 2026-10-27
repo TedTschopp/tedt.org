@@ -24459,14 +24459,13 @@
         {
           "id": "115017529451236410",
           "url": "https://tschopp.net/@Ted/115017529451236410"
+        },
+        {
+          "created_at": "2026-10-27T23:41:45.236Z",
+          "id": "117515518295116855",
+          "url": "https://tschopp.net/@Ted/117515518295116855"
         }
       ],
-      "intent": {
-        "key": "47950564b529ac2af4e42837392e8958f1ff73f069d66b74066d74136230463b",
-        "kind": "archive",
-        "started_at": "2026-10-27T23:41:30Z"
-      },
-      "missing_checked_at": "2026-10-27T23:41:30Z",
       "preferred_ids": [
         "115017529451236410"
       ],
@@ -24476,8 +24475,14 @@
       "source_paths": [
         "_posts/Blog Posts/2009-08-11-a-model-for-collaboration-tools.md"
       ],
-      "state": "uncertain",
-      "title": "Enhancing Collaboration in the Corporate World: A Comprehensive Model"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T23:41:45.236Z",
+        "id": "117515518295116855",
+        "url": "https://tschopp.net/@Ted/117515518295116855"
+      },
+      "title": "Enhancing Collaboration in the Corporate World: A Comprehensive Model",
+      "verified_at": "2026-10-27T23:41:30Z"
     },
     "https://tedt.org/a-new-keyboard/": {
       "aliases": [
@@ -26138,7 +26143,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T22:36:52.442Z",
+  "last_publication_at": "2026-10-27T23:41:45.236Z",
   "last_reconciliation_at": "2026-10-27T23:41:30Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 107,
@@ -26486,6 +26491,14 @@
       "kind": "archive",
       "operation": "1437d1baeb95c1f992752868da4594388e23a92b578268ff748654e8bcfc3a28",
       "url": "https://tschopp.net/@Ted/117515263177059729"
+    },
+    {
+      "canonical_url": "https://tedt.org/a-model-for-collaboration-tools/",
+      "created_at": "2026-10-27T23:41:45.236Z",
+      "id": "117515518295116855",
+      "kind": "archive",
+      "operation": "47950564b529ac2af4e42837392e8958f1ff73f069d66b74066d74136230463b",
+      "url": "https://tschopp.net/@Ted/117515518295116855"
     }
   ],
   "run_count": 146,
