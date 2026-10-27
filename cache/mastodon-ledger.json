@@ -25351,14 +25351,13 @@
         {
           "id": "115017528492588860",
           "url": "https://tschopp.net/@Ted/115017528492588860"
+        },
+        {
+          "created_at": "2026-10-27T21:24:24.518Z",
+          "id": "117514978231403457",
+          "url": "https://tschopp.net/@Ted/117514978231403457"
         }
       ],
-      "intent": {
-        "key": "3ece006152fe89843a63e6c1a697f2b4a6e90a34e83ff1561796fa98255e9042",
-        "kind": "archive",
-        "started_at": "2026-10-27T21:24:02Z"
-      },
-      "missing_checked_at": "2026-10-27T21:24:02Z",
       "preferred_ids": [
         "115017528492588860"
       ],
@@ -25368,8 +25367,14 @@
       "source_paths": [
         "_posts/Blog Posts/2009-07-09-putting-first-things-first.md"
       ],
-      "state": "uncertain",
-      "title": "The Three Types of People in Conversations: A Guide to Engaging Your Audience"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T21:24:24.518Z",
+        "id": "117514978231403457",
+        "url": "https://tschopp.net/@Ted/117514978231403457"
+      },
+      "title": "The Three Types of People in Conversations: A Guide to Engaging Your Audience",
+      "verified_at": "2026-10-27T21:24:02Z"
     },
     "https://tedt.org/rain-in-los-ang/": {
       "aliases": [
@@ -26119,7 +26124,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T20:51:38.840Z",
+  "last_publication_at": "2026-10-27T21:24:24.518Z",
   "last_reconciliation_at": "2026-10-27T21:24:02Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 105,
@@ -26451,6 +26456,14 @@
       "kind": "archive",
       "operation": "161d6154e53c7cea9fb3e6438d1638fbe6ca3bb21bc16e4c49ad58b36c4064af",
       "url": "https://tschopp.net/@Ted/117514849408740274"
+    },
+    {
+      "canonical_url": "https://tedt.org/putting-first-things-first/",
+      "created_at": "2026-10-27T21:24:24.518Z",
+      "id": "117514978231403457",
+      "kind": "archive",
+      "operation": "3ece006152fe89843a63e6c1a697f2b4a6e90a34e83ff1561796fa98255e9042",
+      "url": "https://tschopp.net/@Ted/117514978231403457"
     }
   ],
   "run_count": 135,
