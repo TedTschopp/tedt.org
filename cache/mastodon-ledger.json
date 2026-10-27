@@ -25221,14 +25221,13 @@
         {
           "id": "115017526570423644",
           "url": "https://tschopp.net/@Ted/115017526570423644"
+        },
+        {
+          "created_at": "2026-10-27T19:04:08.746Z",
+          "id": "117514426695480067",
+          "url": "https://tschopp.net/@Ted/117514426695480067"
         }
       ],
-      "intent": {
-        "key": "1201967f2e7ee47fc3c4f5d5d19c0fdd9e8366e1cbb7788f9bc7b07bfc91f0a0",
-        "kind": "archive",
-        "started_at": "2026-10-27T19:03:50Z"
-      },
-      "missing_checked_at": "2026-10-27T19:03:50Z",
       "preferred_ids": [
         "115017526570423644"
       ],
@@ -25238,8 +25237,14 @@
       "source_paths": [
         "_posts/Blog Posts/2008-02-19-more-on-the-fas.md"
       ],
-      "state": "uncertain",
-      "title": "The Power of Choice: A Reflection on Free Will and Fasting"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T19:04:08.746Z",
+        "id": "117514426695480067",
+        "url": "https://tschopp.net/@Ted/117514426695480067"
+      },
+      "title": "The Power of Choice: A Reflection on Free Will and Fasting",
+      "verified_at": "2026-10-27T19:03:50Z"
     },
     "https://tedt.org/one-plus-one-eq/": {
       "aliases": [
@@ -26079,7 +26084,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T18:33:15.501Z",
+  "last_publication_at": "2026-10-27T19:04:08.746Z",
   "last_reconciliation_at": "2026-10-27T19:03:50Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 101,
@@ -26379,6 +26384,14 @@
       "kind": "archive",
       "operation": "b14bf93611ba5fb8379181f0c47409f419cd33ca00c2ed6d0ab61d50f8fae346",
       "url": "https://tschopp.net/@Ted/117514305241139133"
+    },
+    {
+      "canonical_url": "https://tedt.org/more-on-the-fas/",
+      "created_at": "2026-10-27T19:04:08.746Z",
+      "id": "117514426695480067",
+      "kind": "archive",
+      "operation": "1201967f2e7ee47fc3c4f5d5d19c0fdd9e8366e1cbb7788f9bc7b07bfc91f0a0",
+      "url": "https://tschopp.net/@Ted/117514426695480067"
     }
   ],
   "run_count": 123,
