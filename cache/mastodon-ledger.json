@@ -2500,12 +2500,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "ddc16afe65b800703179c6e6f9b33d202c47f1194a7ea5ede80138b17b8147a2",
-        "kind": "archive",
-        "started_at": "2026-10-27T15:46:03Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-27T15:46:21.588Z",
+          "id": "117513648969344264",
+          "url": "https://tschopp.net/@Ted/117513648969344264"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2007-06-29T07:00:00Z",
       "queue_kind": "archive",
@@ -2513,8 +2514,14 @@
       "source_paths": [
         "_posts/Quotes/2007-06-29-Brad-Bird-In-many-ways-the-work-of-a-cr.md"
       ],
-      "state": "uncertain",
-      "title": "A Great Artist Can Come from Anywhere – Anton Ego, *Ratatouille*"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T15:46:21.588Z",
+        "id": "117513648969344264",
+        "url": "https://tschopp.net/@Ted/117513648969344264"
+      },
+      "title": "A Great Artist Can Come from Anywhere – Anton Ego, *Ratatouille*",
+      "verified_at": "2026-10-27T15:46:03Z"
     },
     "https://tedt.org/Bridging-the-Uncanny/": {
       "aliases": [
@@ -26025,7 +26032,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T15:03:12.662Z",
+  "last_publication_at": "2026-10-27T15:46:21.588Z",
   "last_reconciliation_at": "2026-10-27T15:46:03Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 96,
@@ -26285,6 +26292,14 @@
       "kind": "archive",
       "operation": "8458396f6203a80580b3105db0b010a9dd2822b688989287137910a7ce6b7dca",
       "url": "https://tschopp.net/@Ted/117513479301434284"
+    },
+    {
+      "canonical_url": "https://tedt.org/Brad-Bird-In-many-ways-the-work-of-a-cr/",
+      "created_at": "2026-10-27T15:46:21.588Z",
+      "id": "117513648969344264",
+      "kind": "archive",
+      "operation": "ddc16afe65b800703179c6e6f9b33d202c47f1194a7ea5ede80138b17b8147a2",
+      "url": "https://tschopp.net/@Ted/117513648969344264"
     }
   ],
   "run_count": 110,
