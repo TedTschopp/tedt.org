@@ -1,15 +1,12 @@
 ---
 layout: post
 title: Rooted in Resilience
-subtitle: Navigating the AI Revolution in Enterprise SaaS
-quote: "Deep roots don't fear storms\u2014they welcome them."
-excerpt: Artificial intelligence is rapidly transforming the enterprise software landscape,
-  challenging established methods and requiring utilities and other large enterprises
-  to rethink their technological strategies fundamentally.
+subtitle: "What Must Stay Dependable When Software Becomes Easier to Change"
+quote: "Resilience depends on knowing what can change quickly and what must remain dependable."
+excerpt: "A June 2025 conversation between Garry Tan and Sam Altman proposes software generated as needed. For a utility enterprise, the practical question is which interfaces can change while records, permissions, and business rules remain dependable."
 source: Original Content
 source-url: ''
-call-to-action: Share your thoughts on how AI is transforming your enterprise software
-  strategies
+call-to-action: "Choose one proposed generated interface and identify its source records, permissions, tests, and responsible owner before expanding the experiment."
 date: 2025-06-29
 update: null
 author:
@@ -17,21 +14,12 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- AI is transforming enterprise software from static solutions to dynamic, just-in-time
-  capabilities
-- Large enterprises must shift from infrastructure-bound systems to agile, adaptive
-  platforms
-- The change mirrors historical electrification - utilities can lead by embracing
-  transformation
-- Sam Altman's vision of AI-generated software challenges traditional SaaS business
-  models
-- Success requires proactive adaptation with awareness of both opportunities and challenges
-description: Exploring how artificial intelligence is revolutionizing enterprise SaaS
-  and what utilities and large organizations must do to thrive in this new landscape
-  of just-in-time software solutions.
-seo-description: Discover how AI is transforming enterprise SaaS and learn strategies
-  for utilities and large enterprises to navigate the shift from static software to
-  dynamic, AI-driven solutions.
+- "Tan and Altman's June 2025 discussion is a forecast about software, rather than evidence that SaaS has been replaced."
+- "Generating an interface does not settle ownership of records, access control, or business rules."
+- "A small read-only trial can test whether a generated view preserves the facts and permissions of its source."
+- "Utility resilience requires clear responsibility for both the changing interface and the dependable service beneath it."
+description: "A publication-era examination of Tan and Altman's June 2025 just-in-time software forecast, with a proposed utility example and practical questions about records, permissions, and ownership."
+seo-description: "What June 2025 forecasts about generated software mean for utility SaaS decisions: preserve dependable records, business rules, permissions, and responsibility."
 categories:
 - Artificial Intelligence
 - Business
@@ -73,29 +61,51 @@ mastodon-post-id: 115005878057980331
 image_width: 1536
 image_height: 1024
 ---
-**Bottom Line Up Front:**
-*Artificial intelligence is rapidly transforming the enterprise software landscape, challenging established methods and requiring utilities and other large enterprises to rethink their technological strategies fundamentally. To thrive, organizations must shift from static, infrastructure-bound solutions toward agile, adaptive systems empowered by AI-driven, "just-in-time" capabilities. Embracing this transformation proactively, with awareness of both opportunities and inherent challenges, will be essential for resilience and sustained innovation.*e: “Rooted in Resilience: Navigating the AI Revolution in Enterprise SaaS”
 
-Every autumn, when the Santa Ana winds sweep across Southern California, I watch how the landscape responds. Some trees and plants stand firm, deeply rooted, unaffected by the fierce gusts. Others, fragile or poorly anchored, bend and break under the relentless force. Observing this annual dance, I’m reminded how resilience—whether in nature, our communities, or our enterprises—depends profoundly on how deeply and securely we anchor ourselves when inevitable storms arrive.
+Every autumn, when the Santa Ana winds sweep across Southern California, I watch how the landscape responds. Some trees stand firm. Others, poorly anchored, bend or break. Resilience depends partly on what remains secure when everything around it moves.
 
-Working in a large utility enterprise, where our reliance on Software-as-a-Service (SaaS) solutions and legacy on-premise or on-device software forms the backbone of our daily operations, we often feel secure in our technological roots. It has served us well for years, and we have invested decades perfecting it. Yet, a new storm is gathering on the horizon: artificial intelligence. It’s neither distant nor theoretical anymore; it’s here, and it’s reshaping the landscape faster than many anticipated. Our traditional software—carefully built, maintained, and often bound by physical infrastructure—faces unprecedented disruption. To thrive—not merely survive—we must understand what this storm means for both our existing systems and future strategies.
+Working in a large utility enterprise, I find that a useful question for software, too. We rely on Software-as-a-Service (SaaS), systems in our own facilities, and applications on individual devices. If AI makes software easier to create and alter, which parts should we change quickly, and which parts need to remain dependable?
 
-Recently, Sam Altman, CEO of OpenAI, shared a fascinating vision of the future of AI, particularly its implications for B2B SaaS companies. Reflecting on this, I felt a familiar tug at my spirit—a blend of apprehension and excitement. Altman's perspective is particularly relevant because it directly addresses the existential questions that large enterprises and their technology groups face today. Here’s an edited and expanded excerpt from an interview that deeply resonated with me:
+## A Forecast Worth Examining
 
-> **Interviewer:** "So one of the things that we've been debating at Y-Combinator is whether Artificial Intelligence is inherently good. It might be scary for software engineering companies creating B2B SaaS solutions. Imagine a future where each user has their underlying database. There's an API layer integrated with your identity for access control, enforcing business logic, ensuring only the right people access the right information. An interface to a large language model (LLM) replaces your computer, creating just-in-time software tailored to your immediate needs. Say you have a complex business issue; you go to your machine, and it generates the exact code, artifact, or document needed—or retrieves it instantly from your filesystem when required again."
+In [Y Combinator's conversation with Sam Altman](https://www.youtube.com/watch?v=V979Wd1gmTU), held June 16 and published June 21, 2025, Garry Tan proposed an arrangement with underlying data, an API enforcing access and business rules, and a language-model interface that generates software as needed. Altman agreed that he expected this direction and argued that a changing industry gives fast-moving startups an opportunity.
 
-> **Sam Altman:** "That's going to happen. There are two ways you can approach this. First, you can see this as the best time ever for startups because everything is shifting dramatically. Yes, as a Cloud SaaS company, it might feel unsettling that code we once carefully crafted could soon be generated instantly and automatically. It forces us to ask: What does this mean for us?"
+That is a forecast from a startup event, with a supplier's perspective on AI. It is not a finding that generated software has replaced enterprise SaaS, or that an arbitrary generated application can safely run a utility process. The question is useful enough to examine without treating the prediction as an accomplished fact.
 
-> "Alternatively, you might view this as an extraordinary leveling of the playing field. Traditionally, large enterprises held advantages—deep pockets, wide distribution—but their slow pace often held them back. Now, AI changes that calculus dramatically. It’s inexpensive compared to its enormous benefits, diminishing traditional advantages of scale and budget. The software landscape, as we've known it, is about to change completely."
+Within our IT Technology Strategy Group, we have discussed related possibilities: systems that adapt to the work a person needs to do, with software helping assemble the right view or workflow. Those discussions describe a direction to explore. They do not establish that the operational, security, or maintenance questions have been solved.
 
-> "The challenges AI brings are universal—no one is immune. But here's the crucial insight: when the industry's clock cycle shifts, as it is now, from Moore’s Law to the rapid iteration pace set by AI, startups historically win. The magnitude of this change is unprecedented. Act accordingly, with an entrepreneurial spirit. Companies concerned about defensibility might say, 'We're just a SaaS company,' while others confidently declare, 'We're a just-in-time software company.'"
+## The Interface Is Only Part of the Service
 
-Altman’s insights bring into sharp focus the critical truth facing those of us entrenched in large, enterprise SaaS environments. Change is no longer incremental—it is seismic. AI isn't just another storm; it's a hurricane. Within our own IT Technology Strategy Group, we've engaged in lengthy discussions about this transformative shift—imagining future software as expansive cloud-based databases wrapped in layers of "self-driving software" that dynamically adapt to the evolving needs of users on any given day. Practically, this means software would anticipate user tasks, automatically adjusting workflows, creating real-time customizations, and proactively offering solutions, much like a skilled assistant who learns your preferences and anticipates your next request. This upheaval is an invitation to transform—to deepen our roots in adaptability, agility, and vision.
+Imagine a planner asking for a view of overdue inspections by district. Generating a useful screen could remove some of the effort of building a fixed report. But the screen still needs to use the right records, apply the right definition of overdue, and show only information that the planner is permitted to see.
 
-This change echoes another pivotal shift from our company's past. When we first approached electrification, it was as revolutionary then as AI feels today. For example, the transformative moment of electrifying Los Angeles in 1917 marked a profound shift in industry and daily life. We offered cities and large organizations the ability to delegate their energy challenges—generation, transmission, and distribution—to us. In turn, we provided a reliable grid where consumers could easily plug in their tailored, just-in-time tools: refrigerators, vacuum cleaners, and, more recently, electric cars. Similarly, industries connected their factories, assembly lines, lights, fans, industrial equipment, and today's robotic factories manufacturing electric vehicles. This historical analogy reminds us of our inherent strength in embracing change and innovation. We should recognize this pattern clearly, understand its implications, and resonate with its call for agility and adaptability today, just as we did a century ago.
+If the underlying dates disagree, a more flexible interface has not resolved the disagreement. If business rules live only in generated code, someone needs to explain which version is authoritative. If a useful draft becomes a shared application, someone needs to maintain it when the data or rules change.
 
-As leaders and contributors in utility companies deeply reliant on SaaS, we must internalize Altman's wisdom: embracing AI means reevaluating not only our technology stacks but also our fundamental strategies and mindsets. Our ability to swiftly respond to immediate needs, rather than leaning solely on static, prebuilt software, could redefine how effectively we serve our customers and maintain our infrastructures.
+As I discussed in [AI in Software Development: Breaking Myths and Building Teams](https://tedt.org/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/), the work involves people and responsibilities as well as code. Easier generation changes the effort of producing a component. It does not determine who accepts responsibility for the service.
 
-Yes, storms can uproot, disrupt, and devastate. But they also clear away the old, providing fertile ground for fresh, vibrant growth. Perhaps this AI-driven tempest is precisely what we need—a compelling reason to reassess and recommit ourselves to innovation, resilience, and proactive transformation. Yet, we should also recognize that this transformative journey may face challenges: employee resistance, uncertainty about changing roles, and apprehension about adopting entirely new ways of working. Acknowledging these obstacles openly can help us navigate them thoughtfully and compassionately.
+## Try One View Before Replacing a System
 
-In the face of uncertainty, let’s choose not merely to withstand but to flourish. After all, deep roots don't fear storms—they welcome them.
+Consider a proposed read-only planning view, built from approved sample work orders. This is an illustrative trial, not a description of an operating SCE system. The process owner would define the fields and business rules, a data owner would confirm the source, and a reviewer would compare the generated view with a checked reference.
+
+The trial could include four cases:
+
+| Case | Required Result |
+| --- | --- |
+| A straightforward set of work orders | The displayed identifiers, dates, and totals match the checked source |
+| An overdue date conflicts with another record | The conflict is visible; the interface does not silently invent a resolution |
+| The user lacks access to one district | That district's records remain unavailable, including through exports or alternate requests |
+| The user asks to change a work order | The read-only view cannot perform the change; it directs the user to the authorized process |
+{: .well .table .table-striped}
+
+These are proposed acceptance conditions, not proof that a generated interface already meets them. Start with sample data so failures can be examined without changing live records. Before connecting to an operating service, the responsible teams would need to approve the design, verify its behavior, and agree on support and recovery.
+
+Compare the complete effort with the existing report: building the view, checking it, correcting it, and keeping it usable when a field changes. If that effort is lower and the agreed conditions hold, the experiment supports a limited next step. It does not automatically support replacing the system beneath it.
+
+## Put the Roots in the Right Place
+
+The electrical grid offers an analogy without requiring a claim about one historical turning point. People can connect many kinds of equipment because the shared service underneath has defined operating responsibilities. The appliance can change while the service remains dependable.
+
+Software has its own boundaries: source records, access decisions, business rules, and the people responsible for correcting an error. A generated interface may give us more freedom above those boundaries. It is worth asking whether that freedom makes the underlying responsibilities clearer or simply hides them.
+
+In [Learning by Doing](https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/), I connected experimentation with the discipline of trying, observing, and adjusting. That remains a useful approach here. Test one view. Inspect the result. Learn what has become easier and what still needs care.
+
+The roots of resilience are not a particular screen or software contract. They are the dependable records, rules, and responsibilities that let us change the screen without losing our footing.
