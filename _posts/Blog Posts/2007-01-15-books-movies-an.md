@@ -54,7 +54,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017519337686597'
+mastodon-post-id: "117510527441489631"
+mastodon-post-url: "https://tschopp.net/@Ted/117510527441489631"
 ---
 I finished reading [Children of Men](http://www.amazon.com/exec/obidos/ASIN/0307279901/wwwtschoppnet-20) this weekend. The book is a social commentary on Sex, Family, Love, Hope, and Religion. With this being said, it is a very honest and open look at issues man has surrounding these important dynamics in our lives. In many cases I found it sad. This as the desired effect as the book is a dystopia. The book itself ends on an up note, but everything is not all happy as there is a warning wrapped in it.
 
