@@ -25896,14 +25896,13 @@
         {
           "id": "115017528013492008",
           "url": "https://tschopp.net/@Ted/115017528013492008"
+        },
+        {
+          "created_at": "2026-10-27T20:51:38.840Z",
+          "id": "117514849408740274",
+          "url": "https://tschopp.net/@Ted/117514849408740274"
         }
       ],
-      "intent": {
-        "key": "161d6154e53c7cea9fb3e6438d1638fbe6ca3bb21bc16e4c49ad58b36c4064af",
-        "kind": "archive",
-        "started_at": "2026-10-27T20:51:19Z"
-      },
-      "missing_checked_at": "2026-10-27T20:51:19Z",
       "preferred_ids": [
         "115017528013492008"
       ],
@@ -25913,8 +25912,14 @@
       "source_paths": [
         "_posts/Blog Posts/2009-07-08-thoughts-on-corporate-collaboration-tools.md"
       ],
-      "state": "uncertain",
-      "title": "The Power of Collaboration Tools: Treating Them Like Pen and Paper"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T20:51:38.840Z",
+        "id": "117514849408740274",
+        "url": "https://tschopp.net/@Ted/117514849408740274"
+      },
+      "title": "The Power of Collaboration Tools: Treating Them Like Pen and Paper",
+      "verified_at": "2026-10-27T20:51:19Z"
     },
     "https://tedt.org/thoughts-on-nar/": {
       "aliases": [
@@ -26109,7 +26114,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T20:18:40.043Z",
+  "last_publication_at": "2026-10-27T20:51:38.840Z",
   "last_reconciliation_at": "2026-10-27T20:51:19Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 104,
@@ -26433,6 +26438,14 @@
       "kind": "archive",
       "operation": "4df405f0392a5e8dc19d1dc9a8740d66abc7707a2949abaa86e4b170ca8e65b6",
       "url": "https://tschopp.net/@Ted/117514719726337454"
+    },
+    {
+      "canonical_url": "https://tedt.org/thoughts-on-corporate-collaboration-tools/",
+      "created_at": "2026-10-27T20:51:38.840Z",
+      "id": "117514849408740274",
+      "kind": "archive",
+      "operation": "161d6154e53c7cea9fb3e6438d1638fbe6ca3bb21bc16e4c49ad58b36c4064af",
+      "url": "https://tschopp.net/@Ted/117514849408740274"
     }
   ],
   "run_count": 132,
