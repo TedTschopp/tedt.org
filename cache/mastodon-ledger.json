@@ -25056,14 +25056,13 @@
         {
           "id": "115017522699802057",
           "url": "https://tschopp.net/@Ted/115017522699802057"
+        },
+        {
+          "created_at": "2026-10-27T11:08:31.087Z",
+          "id": "117512556451346741",
+          "url": "https://tschopp.net/@Ted/117512556451346741"
         }
       ],
-      "intent": {
-        "key": "fc27313e2b9d0050c2f8a59aea958fa96d7e86906fa23d0f8272d322ff167e69",
-        "kind": "archive",
-        "started_at": "2026-10-27T11:08:19Z"
-      },
-      "missing_checked_at": "2026-10-27T11:08:19Z",
       "preferred_ids": [
         "115017522699802057"
       ],
@@ -25073,8 +25072,14 @@
       "source_paths": [
         "_posts/Blog Posts/2007-02-16-martin-luther-on-beer.md"
       ],
-      "state": "uncertain",
-      "title": "Martin Luther on Beer: A Historical Perspective"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T11:08:31.087Z",
+        "id": "117512556451346741",
+        "url": "https://tschopp.net/@Ted/117512556451346741"
+      },
+      "title": "Martin Luther on Beer: A Historical Perspective",
+      "verified_at": "2026-10-27T11:08:19Z"
     },
     "https://tedt.org/microsoft-teams-with-creative-commons-or-common-corporate-mistakes/": {
       "aliases": [
@@ -25984,7 +25989,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T10:02:03.442Z",
+  "last_publication_at": "2026-10-27T11:08:31.087Z",
   "last_reconciliation_at": "2026-10-27T11:08:19Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 92,
@@ -26212,6 +26217,14 @@
       "kind": "archive",
       "operation": "dff3e22b9828d82d807673a923b0ad664b24b4f928498e06d1dadc5c6312e98d",
       "url": "https://tschopp.net/@Ted/117512295117063239"
+    },
+    {
+      "canonical_url": "https://tedt.org/martin-luther-on-beer/",
+      "created_at": "2026-10-27T11:08:31.087Z",
+      "id": "117512556451346741",
+      "kind": "archive",
+      "operation": "fc27313e2b9d0050c2f8a59aea958fa96d7e86906fa23d0f8272d322ff167e69",
+      "url": "https://tschopp.net/@Ted/117512556451346741"
     }
   ],
   "run_count": 98,
