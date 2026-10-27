@@ -52,7 +52,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017519817384353'
+mastodon-post-id: "117510839915005666"
+mastodon-post-url: "https://tschopp.net/@Ted/117510839915005666"
 ---
 I just finished [Children of Men](http://www.amazon.com/exec/obidos/ASIN/0307279901/wwwtschoppnet-20)&nbsp;the book this weekend and it got me thinking about humanity, family, sexuality, science, and relationships, and the nature of evil.&nbsp; Here is where my thoughts led me.
 
