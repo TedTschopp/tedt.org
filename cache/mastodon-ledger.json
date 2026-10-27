@@ -24515,14 +24515,13 @@
         {
           "id": "115017519337686597",
           "url": "https://tschopp.net/@Ted/115017519337686597"
+        },
+        {
+          "created_at": "2026-10-27T02:32:30.852Z",
+          "id": "117510527441489631",
+          "url": "https://tschopp.net/@Ted/117510527441489631"
         }
       ],
-      "intent": {
-        "key": "47af58af105ee07b1d02a3f5efacb63fb28e1e517334ec7031ad1c0a89c767ed",
-        "kind": "archive",
-        "started_at": "2026-10-27T02:32:15Z"
-      },
-      "missing_checked_at": "2026-10-27T02:32:15Z",
       "preferred_ids": [
         "115017519337686597"
       ],
@@ -24532,8 +24531,14 @@
       "source_paths": [
         "_posts/Blog Posts/2007-01-15-books-movies-an.md"
       ],
-      "state": "uncertain",
-      "title": "Comparing Children of Men: Book and Movie Exploration"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T02:32:30.852Z",
+        "id": "117510527441489631",
+        "url": "https://tschopp.net/@Ted/117510527441489631"
+      },
+      "title": "Comparing Children of Men: Book and Movie Exploration",
+      "verified_at": "2026-10-27T02:32:15Z"
     },
     "https://tedt.org/collaboration-lessons-learned-from-tasmania/": {
       "aliases": [
@@ -25914,7 +25919,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T01:02:33.979Z",
+  "last_publication_at": "2026-10-27T02:32:30.852Z",
   "last_reconciliation_at": "2026-10-27T02:32:15Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 85,
@@ -26086,6 +26091,14 @@
       "kind": "archive",
       "operation": "b6ee0d7384644cac1ed2c7351e6c32073bc3f9c09b72f8f2d081f09224f98377",
       "url": "https://tschopp.net/@Ted/117510173751966423"
+    },
+    {
+      "canonical_url": "https://tedt.org/books-movies-an/",
+      "created_at": "2026-10-27T02:32:30.852Z",
+      "id": "117510527441489631",
+      "kind": "archive",
+      "operation": "47af58af105ee07b1d02a3f5efacb63fb28e1e517334ec7031ad1c0a89c767ed",
+      "url": "https://tschopp.net/@Ted/117510527441489631"
     }
   ],
   "run_count": 72,
