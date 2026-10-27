@@ -24701,14 +24701,13 @@
         {
           "id": "115017527533713200",
           "url": "https://tschopp.net/@Ted/115017527533713200"
+        },
+        {
+          "created_at": "2026-10-27T20:18:40.043Z",
+          "id": "117514719726337454",
+          "url": "https://tschopp.net/@Ted/117514719726337454"
         }
       ],
-      "intent": {
-        "key": "4df405f0392a5e8dc19d1dc9a8740d66abc7707a2949abaa86e4b170ca8e65b6",
-        "kind": "archive",
-        "started_at": "2026-10-27T20:18:17Z"
-      },
-      "missing_checked_at": "2026-10-27T20:18:17Z",
       "preferred_ids": [
         "115017527533713200"
       ],
@@ -24718,8 +24717,14 @@
       "source_paths": [
         "_posts/Blog Posts/2009-06-13-dehydrated.md"
       ],
-      "state": "uncertain",
-      "title": "Dehydrated"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T20:18:40.043Z",
+        "id": "117514719726337454",
+        "url": "https://tschopp.net/@Ted/117514719726337454"
+      },
+      "title": "Dehydrated",
+      "verified_at": "2026-10-27T20:18:17Z"
     },
     "https://tedt.org/example-of-xmlhttprequest/": {
       "aliases": [
@@ -26099,7 +26104,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T19:35:39.266Z",
+  "last_publication_at": "2026-10-27T20:18:40.043Z",
   "last_reconciliation_at": "2026-10-27T20:18:17Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 103,
@@ -26415,6 +26420,14 @@
       "kind": "archive",
       "operation": "35e184c8b1aa5edc4b326545be2092df88bca713273cba2c5757bc6c1f1d558a",
       "url": "https://tschopp.net/@Ted/117514550592557833"
+    },
+    {
+      "canonical_url": "https://tedt.org/dehydrated/",
+      "created_at": "2026-10-27T20:18:40.043Z",
+      "id": "117514719726337454",
+      "kind": "archive",
+      "operation": "4df405f0392a5e8dc19d1dc9a8740d66abc7707a2949abaa86e4b170ca8e65b6",
+      "url": "https://tschopp.net/@Ted/117514719726337454"
     }
   ],
   "run_count": 129,
