@@ -20484,12 +20484,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "b6ee0d7384644cac1ed2c7351e6c32073bc3f9c09b72f8f2d081f09224f98377",
-        "kind": "archive",
-        "started_at": "2026-10-27T01:02:21Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-27T01:02:33.979Z",
+          "id": "117510173751966423",
+          "url": "https://tschopp.net/@Ted/117510173751966423"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2007-01-01T08:00:00Z",
       "queue_kind": "archive",
@@ -20497,8 +20498,14 @@
       "source_paths": [
         "_posts/Quotes/2007-01-01-Jinsoo-An-The-perfect-piece-of-software.md"
       ],
-      "state": "uncertain",
-      "title": "The Perfect Software Is Sterile – Jinsoo An"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T01:02:33.979Z",
+        "id": "117510173751966423",
+        "url": "https://tschopp.net/@Ted/117510173751966423"
+      },
+      "title": "The Perfect Software Is Sterile – Jinsoo An",
+      "verified_at": "2026-10-27T01:02:21Z"
     },
     "https://tedt.org/Jon-Udell-Human-beings-are-the-exception/": {
       "aliases": [
@@ -25900,7 +25907,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-26T23:34:19.486Z",
+  "last_publication_at": "2026-10-27T01:02:33.979Z",
   "last_reconciliation_at": "2026-10-27T01:02:21Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 84,
@@ -26064,6 +26071,14 @@
       "kind": "archive",
       "operation": "eda660d00bdbcf3dc274c95e220687c6f3298ea501b33059eb7ea035ea194452",
       "url": "https://tschopp.net/@Ted/117509826772050673"
+    },
+    {
+      "canonical_url": "https://tedt.org/Jinsoo-An-The-perfect-piece-of-software/",
+      "created_at": "2026-10-27T01:02:33.979Z",
+      "id": "117510173751966423",
+      "kind": "archive",
+      "operation": "b6ee0d7384644cac1ed2c7351e6c32073bc3f9c09b72f8f2d081f09224f98377",
+      "url": "https://tschopp.net/@Ted/117510173751966423"
     }
   ],
   "run_count": 69,
