@@ -61,5 +61,7 @@ year-the-event-took-place:
 mathjax: 
 
 order: 
+mastodon-post-id: "117510173751966423"
+mastodon-post-url: "https://tschopp.net/@Ted/117510173751966423"
 ---
 The perfect piece of software is very sterile. It’s like a samurai sword hanging in a museum without a swordsman or a battle to use it in.
