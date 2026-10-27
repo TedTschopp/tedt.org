@@ -25916,14 +25916,13 @@
         {
           "id": "115017527052505070",
           "url": "https://tschopp.net/@Ted/115017527052505070"
+        },
+        {
+          "created_at": "2026-10-27T19:35:39.266Z",
+          "id": "117514550592557833",
+          "url": "https://tschopp.net/@Ted/117514550592557833"
         }
       ],
-      "intent": {
-        "key": "35e184c8b1aa5edc4b326545be2092df88bca713273cba2c5757bc6c1f1d558a",
-        "kind": "archive",
-        "started_at": "2026-10-27T19:35:19Z"
-      },
-      "missing_checked_at": "2026-10-27T19:35:19Z",
       "preferred_ids": [
         "115017527052505070"
       ],
@@ -25933,8 +25932,14 @@
       "source_paths": [
         "_posts/Blog Posts/2008-09-01-thoughts-on-nar.md"
       ],
-      "state": "uncertain",
-      "title": "The Narrative Fallacy in The Black Swan: An Exploration of Belief and Reasoning"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T19:35:39.266Z",
+        "id": "117514550592557833",
+        "url": "https://tschopp.net/@Ted/117514550592557833"
+      },
+      "title": "The Narrative Fallacy in The Black Swan: An Exploration of Belief and Reasoning",
+      "verified_at": "2026-10-27T19:35:19Z"
     },
     "https://tedt.org/too-many-feeds/": {
       "aliases": [
@@ -26089,7 +26094,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T19:04:08.746Z",
+  "last_publication_at": "2026-10-27T19:35:39.266Z",
   "last_reconciliation_at": "2026-10-27T19:35:19Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 102,
@@ -26397,6 +26402,14 @@
       "kind": "archive",
       "operation": "1201967f2e7ee47fc3c4f5d5d19c0fdd9e8366e1cbb7788f9bc7b07bfc91f0a0",
       "url": "https://tschopp.net/@Ted/117514426695480067"
+    },
+    {
+      "canonical_url": "https://tedt.org/thoughts-on-nar/",
+      "created_at": "2026-10-27T19:35:39.266Z",
+      "id": "117514550592557833",
+      "kind": "archive",
+      "operation": "35e184c8b1aa5edc4b326545be2092df88bca713273cba2c5757bc6c1f1d558a",
+      "url": "https://tschopp.net/@Ted/117514550592557833"
     }
   ],
   "run_count": 126,
