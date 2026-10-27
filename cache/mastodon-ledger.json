@@ -25665,14 +25665,13 @@
         {
           "id": "115017524651376565",
           "url": "https://tschopp.net/@Ted/115017524651376565"
+        },
+        {
+          "created_at": "2026-10-27T16:27:51.321Z",
+          "id": "117513812136466381",
+          "url": "https://tschopp.net/@Ted/117513812136466381"
         }
       ],
-      "intent": {
-        "key": "ee8493b4f26e84c82feb07f80ce031e8952f192ac83416773fcd3f5a93c5660e",
-        "kind": "archive",
-        "started_at": "2026-10-27T16:27:31Z"
-      },
-      "missing_checked_at": "2026-10-27T16:27:31Z",
       "preferred_ids": [
         "115017524651376565"
       ],
@@ -25682,8 +25681,14 @@
       "source_paths": [
         "_posts/Blog Posts/2007-08-17-sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again.md"
       ],
-      "state": "uncertain",
-      "title": "Sucks to be me - From Blackberry to iPhone to Blackberry Again"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T16:27:51.321Z",
+        "id": "117513812136466381",
+        "url": "https://tschopp.net/@Ted/117513812136466381"
+      },
+      "title": "Sucks to be me - From Blackberry to iPhone to Blackberry Again",
+      "verified_at": "2026-10-27T16:27:31Z"
     },
     "https://tedt.org/the-component-smart-phone-and-why-it-will-fail/": {
       "aliases": [
@@ -26039,7 +26044,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T15:46:21.588Z",
+  "last_publication_at": "2026-10-27T16:27:51.321Z",
   "last_reconciliation_at": "2026-10-27T16:27:31Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 97,
@@ -26307,6 +26312,14 @@
       "kind": "archive",
       "operation": "ddc16afe65b800703179c6e6f9b33d202c47f1194a7ea5ede80138b17b8147a2",
       "url": "https://tschopp.net/@Ted/117513648969344264"
+    },
+    {
+      "canonical_url": "https://tedt.org/sucks-to-be-me-from-blackberry-to-iphone-to-blackberry-again/",
+      "created_at": "2026-10-27T16:27:51.321Z",
+      "id": "117513812136466381",
+      "kind": "archive",
+      "operation": "ee8493b4f26e84c82feb07f80ce031e8952f192ac83416773fcd3f5a93c5660e",
+      "url": "https://tschopp.net/@Ted/117513812136466381"
     }
   ],
   "run_count": 112,
