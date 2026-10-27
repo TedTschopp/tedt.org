@@ -24860,14 +24860,13 @@
         {
           "id": "115017528971976274",
           "url": "https://tschopp.net/@Ted/115017528971976274"
+        },
+        {
+          "created_at": "2026-10-27T22:36:52.442Z",
+          "id": "117515263177059729",
+          "url": "https://tschopp.net/@Ted/117515263177059729"
         }
       ],
-      "intent": {
-        "key": "1437d1baeb95c1f992752868da4594388e23a92b578268ff748654e8bcfc3a28",
-        "kind": "archive",
-        "started_at": "2026-10-27T22:36:37Z"
-      },
-      "missing_checked_at": "2026-10-27T22:36:37Z",
       "preferred_ids": [
         "115017528971976274"
       ],
@@ -24877,8 +24876,14 @@
       "source_paths": [
         "_posts/Blog Posts/2009-07-17-four-is-the-new-three.md"
       ],
-      "state": "uncertain",
-      "title": "Building Engaging Conversations: From Clueless to Creators"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T22:36:52.442Z",
+        "id": "117515263177059729",
+        "url": "https://tschopp.net/@Ted/117515263177059729"
+      },
+      "title": "Building Engaging Conversations: From Clueless to Creators",
+      "verified_at": "2026-10-27T22:36:37Z"
     },
     "https://tedt.org/happy-advent/": {
       "aliases": [
@@ -26128,7 +26133,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T21:24:24.518Z",
+  "last_publication_at": "2026-10-27T22:36:52.442Z",
   "last_reconciliation_at": "2026-10-27T22:36:37Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 106,
@@ -26468,6 +26473,14 @@
       "kind": "archive",
       "operation": "3ece006152fe89843a63e6c1a697f2b4a6e90a34e83ff1561796fa98255e9042",
       "url": "https://tschopp.net/@Ted/117514978231403457"
+    },
+    {
+      "canonical_url": "https://tedt.org/four-is-the-new-three/",
+      "created_at": "2026-10-27T22:36:52.442Z",
+      "id": "117515263177059729",
+      "kind": "archive",
+      "operation": "1437d1baeb95c1f992752868da4594388e23a92b578268ff748654e8bcfc3a28",
+      "url": "https://tschopp.net/@Ted/117515263177059729"
     }
   ],
   "run_count": 140,
