@@ -3,7 +3,7 @@
   "backfill_policy": {
     "daily_limit": 24,
     "earliest_promotion_at": "2026-10-28T21:33:32Z",
-    "health_hold": "workflow_failure",
+    "health_hold": "first_day_observation",
     "healthy_since": "2026-10-27T21:33:32Z",
     "interval_minutes": 60,
     "last_error": "Recent publication or deployment workflow failed",
@@ -20,9 +20,9 @@
   "has_history": true,
   "initial_missing": 1008,
   "last_publication_at": "2026-10-27T21:24:24.518Z",
-  "last_reconciliation_at": "2026-10-27T21:41:07Z",
-  "last_run_at": "2026-10-27T21:41:07Z",
-  "last_updated": "2026-10-27T21:41:07Z",
+  "last_reconciliation_at": "2026-10-27T22:01:46Z",
+  "last_run_at": "2026-10-27T22:01:46Z",
+  "last_updated": "2026-10-27T22:01:46Z",
   "publication_enabled": true,
   "publication_not_before": null,
   "remaining": 924,
@@ -36,7 +36,7 @@
     "updated_sources": 0,
     "website_changed": true
   },
-  "runs": 137,
+  "runs": 138,
   "states": {
     "missing": 129,
     "pending": 795,
