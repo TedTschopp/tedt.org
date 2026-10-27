@@ -25176,14 +25176,13 @@
         {
           "id": "115017520777589778",
           "url": "https://tschopp.net/@Ted/115017520777589778"
+        },
+        {
+          "created_at": "2026-10-27T07:39:36.372Z",
+          "id": "117511734976313947",
+          "url": "https://tschopp.net/@Ted/117511734976313947"
         }
       ],
-      "intent": {
-        "key": "9563635ae1df2294add2590dbb267aba9c7f8adbeecfab1bdc07f993115dab48",
-        "kind": "archive",
-        "started_at": "2026-10-27T07:39:22Z"
-      },
-      "missing_checked_at": "2026-10-27T07:39:22Z",
       "preferred_ids": [
         "115017520777589778"
       ],
@@ -25193,8 +25192,14 @@
       "source_paths": [
         "_posts/Blog Posts/2007-01-26-one-plus-one-eq.md"
       ],
-      "state": "uncertain",
-      "title": "Universal Standards of Conduct, Beauty, and Truth: A Modern Perspective"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-27T07:39:36.372Z",
+        "id": "117511734976313947",
+        "url": "https://tschopp.net/@Ted/117511734976313947"
+      },
+      "title": "Universal Standards of Conduct, Beauty, and Truth: A Modern Perspective",
+      "verified_at": "2026-10-27T07:39:22Z"
     },
     "https://tedt.org/playing-it-cool-playing-it-fast/": {
       "aliases": [
@@ -25954,7 +25959,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T06:17:12.832Z",
+  "last_publication_at": "2026-10-27T07:39:36.372Z",
   "last_reconciliation_at": "2026-10-27T07:39:22Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 89,
@@ -26158,6 +26163,14 @@
       "kind": "archive",
       "operation": "66abbab109ccde5aff30ca117c27c477c078c74949eaa2a07ea17a7a7434ce09",
       "url": "https://tschopp.net/@Ted/117511410996397305"
+    },
+    {
+      "canonical_url": "https://tedt.org/one-plus-one-eq/",
+      "created_at": "2026-10-27T07:39:36.372Z",
+      "id": "117511734976313947",
+      "kind": "archive",
+      "operation": "9563635ae1df2294add2590dbb267aba9c7f8adbeecfab1bdc07f993115dab48",
+      "url": "https://tschopp.net/@Ted/117511734976313947"
     }
   ],
   "run_count": 87,
