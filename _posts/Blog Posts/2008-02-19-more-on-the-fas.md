@@ -48,7 +48,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017526570423644'
+mastodon-post-id: "117514426695480067"
+mastodon-post-url: "https://tschopp.net/@Ted/117514426695480067"
 ---
 > And therefore I observe, that the Will (without any metaphysical refining) is, That by which the mind chooses any thing. The faculty of the will, is that power, or principle of mind, by which it is capable of choosing: an act of the will is the same as an act of choosing or choice. &ndash; Jonathan Edwards in _Freedom of the Will_
 
