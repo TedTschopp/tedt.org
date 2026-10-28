@@ -24567,14 +24567,13 @@
         {
           "id": "115017531367589233",
           "url": "https://tschopp.net/@Ted/115017531367589233"
+        },
+        {
+          "created_at": "2026-10-28T07:42:07.313Z",
+          "id": "117517407178765274",
+          "url": "https://tschopp.net/@Ted/117517407178765274"
         }
       ],
-      "intent": {
-        "key": "786a58963d177f0a5d454d117dfd7a69033a3b499bcec4b9127537a6476493a5",
-        "kind": "archive",
-        "started_at": "2026-10-28T07:41:51Z"
-      },
-      "missing_checked_at": "2026-10-28T07:41:51Z",
       "preferred_ids": [
         "115017531367589233"
       ],
@@ -24584,8 +24583,14 @@
       "source_paths": [
         "_posts/Blog Posts/2011-12-24-android-is-knotts-berry-farm-as-ios-is-to-disneyland.md"
       ],
-      "state": "uncertain",
-      "title": "Theme Parks and Mobile OS: A Comparative Analysis"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T07:42:07.313Z",
+        "id": "117517407178765274",
+        "url": "https://tschopp.net/@Ted/117517407178765274"
+      },
+      "title": "Theme Parks and Mobile OS: A Comparative Analysis",
+      "verified_at": "2026-10-28T07:41:51Z"
     },
     "https://tedt.org/books-movies-an/": {
       "aliases": [
@@ -26206,7 +26211,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T06:28:40.385Z",
+  "last_publication_at": "2026-10-28T07:42:07.313Z",
   "last_reconciliation_at": "2026-10-28T07:41:51Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 113,
@@ -26602,6 +26607,14 @@
       "kind": "archive",
       "operation": "cc0471902e000c5bc46d5a8f40d34b8db53063c39af66dff4a514b648400bff1",
       "url": "https://tschopp.net/@Ted/117517118366407266"
+    },
+    {
+      "canonical_url": "https://tedt.org/android-is-knotts-berry-farm-as-ios-is-to-disneyland/",
+      "created_at": "2026-10-28T07:42:07.313Z",
+      "id": "117517407178765274",
+      "kind": "archive",
+      "operation": "786a58963d177f0a5d454d117dfd7a69033a3b499bcec4b9127537a6476493a5",
+      "url": "https://tschopp.net/@Ted/117517407178765274"
     }
   ],
   "run_count": 180,
