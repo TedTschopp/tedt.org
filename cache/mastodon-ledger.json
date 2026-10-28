@@ -21324,12 +21324,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "0fe7a4f913dc3576b919a0fb8237c0af8485b4c346dfca6b1b1652cd1811e08a",
-        "kind": "archive",
-        "started_at": "2026-10-28T15:18:04Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-28T15:18:18.490Z",
+          "id": "117519200976033044",
+          "url": "https://tschopp.net/@Ted/117519200976033044"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2014-01-01T08:00:00Z",
       "queue_kind": "archive",
@@ -21337,8 +21338,14 @@
       "source_paths": [
         "_posts/Quotes/2014-01-01-Oscar-Tschopp-Architecture-is-the-unnecessar.md"
       ],
-      "state": "uncertain",
-      "title": "Architecture Is the Unnecessary That Makes Life Possible – Oscar Tschopp"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T15:18:18.490Z",
+        "id": "117519200976033044",
+        "url": "https://tschopp.net/@Ted/117519200976033044"
+      },
+      "title": "Architecture Is the Unnecessary That Makes Life Possible – Oscar Tschopp",
+      "verified_at": "2026-10-28T15:18:04Z"
     },
     "https://tedt.org/Oscar-Wilde-The-highest-moment-in-a-mans/": {
       "aliases": [
@@ -26270,7 +26277,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T14:01:36.500Z",
+  "last_publication_at": "2026-10-28T15:18:18.490Z",
   "last_reconciliation_at": "2026-10-28T15:18:04Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 119,
@@ -26714,6 +26721,14 @@
       "kind": "archive",
       "operation": "6280d344f1295d19172787b0f51c0980d9f4b10edee55ba462308d33144d170c",
       "url": "https://tschopp.net/@Ted/117518899380183480"
+    },
+    {
+      "canonical_url": "https://tedt.org/Oscar-Tschopp-Architecture-is-the-unnecessar/",
+      "created_at": "2026-10-28T15:18:18.490Z",
+      "id": "117519200976033044",
+      "kind": "archive",
+      "operation": "0fe7a4f913dc3576b919a0fb8237c0af8485b4c346dfca6b1b1652cd1811e08a",
+      "url": "https://tschopp.net/@Ted/117519200976033044"
     }
   ],
   "run_count": 214,
