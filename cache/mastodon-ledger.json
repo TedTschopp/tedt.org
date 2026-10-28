@@ -20646,12 +20646,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "33b0e21f87516de9fa17fdbd5cdb412335ecdc98dc8cb038e36f3f12f7288917",
-        "kind": "archive",
-        "started_at": "2026-10-28T20:42:28Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-28T20:42:45.647Z",
+          "id": "117520476775832026",
+          "url": "https://tschopp.net/@Ted/117520476775832026"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2018-01-01T08:00:00Z",
       "queue_kind": "archive",
@@ -20659,8 +20660,14 @@
       "source_paths": [
         "_posts/Quotes/2018-01-01-Kevin-Kelly-Anything-you-buy-you-must-m.md"
       ],
-      "state": "uncertain",
-      "title": "You Will Be a Newbie Forever – Kevin Kelly"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T20:42:45.647Z",
+        "id": "117520476775832026",
+        "url": "https://tschopp.net/@Ted/117520476775832026"
+      },
+      "title": "You Will Be a Newbie Forever – Kevin Kelly",
+      "verified_at": "2026-10-28T20:42:28Z"
     },
     "https://tedt.org/Learning-by-Doing-How-Scouting-Wisdom-Can-Guide-our-AI-Journey/": {
       "aliases": [
@@ -26336,7 +26343,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T19:38:18.539Z",
+  "last_publication_at": "2026-10-28T20:42:45.647Z",
   "last_reconciliation_at": "2026-10-28T20:42:28Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 124,
@@ -26820,6 +26827,14 @@
       "kind": "archive",
       "operation": "78d22befdef5c3bf4cb398acbd76b2ea2151749ecf83d0c66f7519780c33c1d6",
       "url": "https://tschopp.net/@Ted/117520223341110041"
+    },
+    {
+      "canonical_url": "https://tedt.org/Kevin-Kelly-Anything-you-buy-you-must-m/",
+      "created_at": "2026-10-28T20:42:45.647Z",
+      "id": "117520476775832026",
+      "kind": "archive",
+      "operation": "33b0e21f87516de9fa17fdbd5cdb412335ecdc98dc8cb038e36f3f12f7288917",
+      "url": "https://tschopp.net/@Ted/117520476775832026"
     }
   ],
   "run_count": 237,
