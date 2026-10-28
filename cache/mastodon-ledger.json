@@ -3713,14 +3713,13 @@
         {
           "id": "115017533771213614",
           "url": "https://tschopp.net/@Ted/115017533771213614"
+        },
+        {
+          "created_at": "2026-10-28T21:35:29.811Z",
+          "id": "117520684142433581",
+          "url": "https://tschopp.net/@Ted/117520684142433581"
         }
       ],
-      "intent": {
-        "key": "ae46f2f05431318abaaa0fd16271e87f851b296a822e0b38905a874433595205",
-        "kind": "archive",
-        "started_at": "2026-10-28T21:35:07Z"
-      },
-      "missing_checked_at": "2026-10-28T21:35:07Z",
       "preferred_ids": [
         "115017533771213614"
       ],
@@ -3730,8 +3729,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-04-19-Factions-Ideologies-and-Religions-in-Role-Playing-Games.md"
       ],
-      "state": "uncertain",
-      "title": "Factions, Ideologies, and Religions in Role Playing Games"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T21:35:29.811Z",
+        "id": "117520684142433581",
+        "url": "https://tschopp.net/@Ted/117520684142433581"
+      },
+      "title": "Factions, Ideologies, and Religions in Role Playing Games",
+      "verified_at": "2026-10-28T21:35:07Z"
     },
     "https://tedt.org/From-Chaos-to-Clarity/": {
       "aliases": [
@@ -26351,7 +26356,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T20:42:45.647Z",
+  "last_publication_at": "2026-10-28T21:35:29.811Z",
   "last_reconciliation_at": "2026-10-28T21:35:07Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 125,
@@ -26843,6 +26848,14 @@
       "kind": "archive",
       "operation": "33b0e21f87516de9fa17fdbd5cdb412335ecdc98dc8cb038e36f3f12f7288917",
       "url": "https://tschopp.net/@Ted/117520476775832026"
+    },
+    {
+      "canonical_url": "https://tedt.org/Factions-Ideologies-and-Religions-in-Role-Playing-Games/",
+      "created_at": "2026-10-28T21:35:29.811Z",
+      "id": "117520684142433581",
+      "kind": "archive",
+      "operation": "ae46f2f05431318abaaa0fd16271e87f851b296a822e0b38905a874433595205",
+      "url": "https://tschopp.net/@Ted/117520684142433581"
     }
   ],
   "run_count": 241,
