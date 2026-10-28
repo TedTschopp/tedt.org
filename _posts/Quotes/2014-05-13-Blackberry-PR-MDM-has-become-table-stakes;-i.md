@@ -62,5 +62,7 @@ year-the-event-took-place: 2013
 mathjax: 
 
 order: 
+mastodon-post-id: "117519691982977955"
+mastodon-post-url: "https://tschopp.net/@Ted/117519691982977955"
 ---
 MDM has become table stakes; it is no longer a meaningful point of differentiation. The differentiation for BlackBerry in the future will be our ability to enable secure, productive mobile communications, collaboration and applications
