@@ -24613,14 +24613,13 @@
         {
           "id": "115017530409317677",
           "url": "https://tschopp.net/@Ted/115017530409317677"
+        },
+        {
+          "created_at": "2026-10-28T04:01:01.152Z",
+          "id": "117516537767655719",
+          "url": "https://tschopp.net/@Ted/117516537767655719"
         }
       ],
-      "intent": {
-        "key": "62c2a44c744db81ace4d0f1aa07d4f3ca4f698c5c6e81bc344a50406d660daa7",
-        "kind": "archive",
-        "started_at": "2026-10-28T04:00:47Z"
-      },
-      "missing_checked_at": "2026-10-28T04:00:47Z",
       "preferred_ids": [
         "115017530409317677"
       ],
@@ -24630,8 +24629,14 @@
       "source_paths": [
         "_posts/Blog Posts/2011-06-03-collaboration-lessons-learned-from-tasmania.md"
       ],
-      "state": "uncertain",
-      "title": "The Tasmanian Paradox: A Lesson in Collaboration and Innovation"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T04:01:01.152Z",
+        "id": "117516537767655719",
+        "url": "https://tschopp.net/@Ted/117516537767655719"
+      },
+      "title": "The Tasmanian Paradox: A Lesson in Collaboration and Innovation",
+      "verified_at": "2026-10-28T04:00:47Z"
     },
     "https://tedt.org/computerized-story-telling/": {
       "aliases": [
@@ -26172,7 +26177,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T02:34:24.161Z",
+  "last_publication_at": "2026-10-28T04:01:01.152Z",
   "last_reconciliation_at": "2026-10-28T04:00:47Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 110,
@@ -26544,6 +26549,14 @@
       "kind": "archive",
       "operation": "b06503ebc3f5943cd46eb0a415481816bcb465a4ac6f77788f6937fffe5b3fb6",
       "url": "https://tschopp.net/@Ted/117516197177687806"
+    },
+    {
+      "canonical_url": "https://tedt.org/collaboration-lessons-learned-from-tasmania/",
+      "created_at": "2026-10-28T04:01:01.152Z",
+      "id": "117516537767655719",
+      "kind": "archive",
+      "operation": "62c2a44c744db81ace4d0f1aa07d4f3ca4f698c5c6e81bc344a50406d660daa7",
+      "url": "https://tschopp.net/@Ted/117516537767655719"
     }
   ],
   "run_count": 164,
