@@ -60,5 +60,7 @@ year-the-event-took-place: 2014
 mathjax: 
 
 order: 
+mastodon-post-id: "117519444144278752"
+mastodon-post-url: "https://tschopp.net/@Ted/117519444144278752"
 ---
 The one single way in which we can choose to not get old: by choosing not to be militant nativists of the era in which we first got laid.
