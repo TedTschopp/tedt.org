@@ -24339,12 +24339,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "a0ecb093308e506374793a7ac51f4b73aea3721ce7b4932bdef127551724f067",
-        "kind": "archive",
-        "started_at": "2026-10-28T16:19:54Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-28T16:20:08.940Z",
+          "id": "117519444144278752",
+          "url": "https://tschopp.net/@Ted/117519444144278752"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2014-04-08T07:00:00Z",
       "queue_kind": "archive",
@@ -24352,8 +24353,14 @@
       "source_paths": [
         "_posts/Quotes/2014-04-08-William-Gibson-The-one-single-way-in-which-we.md"
       ],
-      "state": "uncertain",
-      "title": "How Not to Get Old – William Gibson"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T16:20:08.940Z",
+        "id": "117519444144278752",
+        "url": "https://tschopp.net/@Ted/117519444144278752"
+      },
+      "title": "How Not to Get Old – William Gibson",
+      "verified_at": "2026-10-28T16:19:54Z"
     },
     "https://tedt.org/Winning-the-Intelligence-Inversion/": {
       "aliases": [
@@ -26284,7 +26291,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T15:18:18.490Z",
+  "last_publication_at": "2026-10-28T16:20:08.940Z",
   "last_reconciliation_at": "2026-10-28T16:19:54Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 120,
@@ -26736,6 +26743,14 @@
       "kind": "archive",
       "operation": "0fe7a4f913dc3576b919a0fb8237c0af8485b4c346dfca6b1b1652cd1811e08a",
       "url": "https://tschopp.net/@Ted/117519200976033044"
+    },
+    {
+      "canonical_url": "https://tedt.org/William-Gibson-The-one-single-way-in-which-we/",
+      "created_at": "2026-10-28T16:20:08.940Z",
+      "id": "117519444144278752",
+      "kind": "archive",
+      "operation": "a0ecb093308e506374793a7ac51f4b73aea3721ce7b4932bdef127551724f067",
+      "url": "https://tschopp.net/@Ted/117519444144278752"
     }
   ],
   "run_count": 218,
