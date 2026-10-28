@@ -24527,14 +24527,13 @@
         {
           "id": "115017530888331874",
           "url": "https://tschopp.net/@Ted/115017530888331874"
+        },
+        {
+          "created_at": "2026-10-28T06:28:40.385Z",
+          "id": "117517118366407266",
+          "url": "https://tschopp.net/@Ted/117517118366407266"
         }
       ],
-      "intent": {
-        "key": "cc0471902e000c5bc46d5a8f40d34b8db53063c39af66dff4a514b648400bff1",
-        "kind": "archive",
-        "started_at": "2026-10-28T06:28:24Z"
-      },
-      "missing_checked_at": "2026-10-28T06:28:24Z",
       "preferred_ids": [
         "115017530888331874"
       ],
@@ -24544,8 +24543,14 @@
       "source_paths": [
         "_posts/Blog Posts/2011-12-16-a-new-keyboard.md"
       ],
-      "state": "uncertain",
-      "title": "Revolutionizing the iPad Experience with ZAAG / Logitech Keyboard Case"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T06:28:40.385Z",
+        "id": "117517118366407266",
+        "url": "https://tschopp.net/@Ted/117517118366407266"
+      },
+      "title": "Revolutionizing the iPad Experience with ZAAG / Logitech Keyboard Case",
+      "verified_at": "2026-10-28T06:28:24Z"
     },
     "https://tedt.org/android-is-knotts-berry-farm-as-ios-is-to-disneyland/": {
       "aliases": [
@@ -26196,7 +26201,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T05:01:24.083Z",
+  "last_publication_at": "2026-10-28T06:28:40.385Z",
   "last_reconciliation_at": "2026-10-28T06:28:24Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 112,
@@ -26584,6 +26589,14 @@
       "kind": "archive",
       "operation": "f5ef29cee2f3dc8040b1f4843fe4545957cffc006d0936aaaecdf06cf512e3bd",
       "url": "https://tschopp.net/@Ted/117516775200006224"
+    },
+    {
+      "canonical_url": "https://tedt.org/a-new-keyboard/",
+      "created_at": "2026-10-28T06:28:40.385Z",
+      "id": "117517118366407266",
+      "kind": "archive",
+      "operation": "cc0471902e000c5bc46d5a8f40d34b8db53063c39af66dff4a514b648400bff1",
+      "url": "https://tschopp.net/@Ted/117517118366407266"
     }
   ],
   "run_count": 175,
