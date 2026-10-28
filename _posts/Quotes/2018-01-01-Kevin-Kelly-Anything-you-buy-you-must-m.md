@@ -61,6 +61,8 @@ year-the-event-took-place: 2018
 mathjax: 
 
 order: 
+mastodon-post-id: "117520476775832026"
+mastodon-post-url: "https://tschopp.net/@Ted/117520476775832026"
 ---
 * A vacation plus a disaster equals an adventure.
 * A worthy goal for a year is to learn enough about a subject so that you can't believe how ignorant you were a year earlier.
