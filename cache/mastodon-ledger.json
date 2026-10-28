@@ -2477,12 +2477,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "c00af591b294512f5dddf890fd6cd94127d338355171dec2526a1065be7c4d33",
-        "kind": "archive",
-        "started_at": "2026-10-28T17:22:54Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-28T17:23:10.660Z",
+          "id": "117519691982977955",
+          "url": "https://tschopp.net/@Ted/117519691982977955"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2014-05-13T07:00:00Z",
       "queue_kind": "archive",
@@ -2490,8 +2491,14 @@
       "source_paths": [
         "_posts/Quotes/2014-05-13-Blackberry-PR-MDM-has-become-table-stakes;-i.md"
       ],
-      "state": "uncertain",
-      "title": "MDM Is No Longer a Differentiator – BlackBerry PR"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T17:23:10.660Z",
+        "id": "117519691982977955",
+        "url": "https://tschopp.net/@Ted/117519691982977955"
+      },
+      "title": "MDM Is No Longer a Differentiator – BlackBerry PR",
+      "verified_at": "2026-10-28T17:22:54Z"
     },
     "https://tedt.org/Brad-Bird-In-many-ways-the-work-of-a-cr/": {
       "aliases": [
@@ -26298,7 +26305,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T16:20:08.940Z",
+  "last_publication_at": "2026-10-28T17:23:10.660Z",
   "last_reconciliation_at": "2026-10-28T17:22:54Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 121,
@@ -26758,6 +26765,14 @@
       "kind": "archive",
       "operation": "a0ecb093308e506374793a7ac51f4b73aea3721ce7b4932bdef127551724f067",
       "url": "https://tschopp.net/@Ted/117519444144278752"
+    },
+    {
+      "canonical_url": "https://tedt.org/Blackberry-PR-MDM-has-become-table-stakes;-i/",
+      "created_at": "2026-10-28T17:23:10.660Z",
+      "id": "117519691982977955",
+      "kind": "archive",
+      "operation": "c00af591b294512f5dddf890fd6cd94127d338355171dec2526a1065be7c4d33",
+      "url": "https://tschopp.net/@Ted/117519691982977955"
     }
   ],
   "run_count": 222,
