@@ -60,5 +60,7 @@ year-the-event-took-place: 2014
 mathjax: 
 
 order: 
+mastodon-post-id: "117519200976033044"
+mastodon-post-url: "https://tschopp.net/@Ted/117519200976033044"
 ---
 Architecture is the unnecessary design elements of a structure that make it livable and sustainable.
