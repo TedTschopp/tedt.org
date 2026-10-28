@@ -57,7 +57,8 @@ mathjax: null
 order: null
 image_width: 983
 image_height: 696
-mastodon-post-id: '115017533290733423'
+mastodon-post-id: "117520223341110041"
+mastodon-post-url: "https://tschopp.net/@Ted/117520223341110041"
 ---
 The trend in computing is to be more and more personable.
 
