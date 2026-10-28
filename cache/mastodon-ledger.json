@@ -21227,14 +21227,13 @@
         {
           "id": "115017534732823490",
           "url": "https://tschopp.net/@Ted/115017534732823490"
+        },
+        {
+          "created_at": "2026-10-28T22:54:19.290Z",
+          "id": "117520994093682291",
+          "url": "https://tschopp.net/@Ted/117520994093682291"
         }
       ],
-      "intent": {
-        "key": "42f360fb222f1c7c910bfddd9eebda6cb7c51002c2ac2fd3950ed65005a13ba6",
-        "kind": "archive",
-        "started_at": "2026-10-28T22:53:59Z"
-      },
-      "missing_checked_at": "2026-10-28T22:53:59Z",
       "preferred_ids": [
         "115017534732823490"
       ],
@@ -21244,8 +21243,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-04-25-Nukes-and-Radiation-in-Dungeons-and-Dragons-5th-Edition-for-Gamma-World.md"
       ],
-      "state": "uncertain",
-      "title": "Nukes and Radiation in Dungeons and Dragons 5th Edition for Gamma World"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T22:54:19.290Z",
+        "id": "117520994093682291",
+        "url": "https://tschopp.net/@Ted/117520994093682291"
+      },
+      "title": "Nukes and Radiation in Dungeons and Dragons 5th Edition for Gamma World",
+      "verified_at": "2026-10-28T22:53:59Z"
     },
     "https://tedt.org/Numbers-An-Ork-Accountant/": {
       "aliases": [
@@ -26371,7 +26376,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T22:17:11.324Z",
+  "last_publication_at": "2026-10-28T22:54:19.290Z",
   "last_reconciliation_at": "2026-10-28T22:53:59Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 127,
@@ -26879,6 +26884,14 @@
       "kind": "archive",
       "operation": "ad1f271c5e5f6ecfbced7edb17d413606abe510bb78d7fb747b9b1fa4d007343",
       "url": "https://tschopp.net/@Ted/117520848081643451"
+    },
+    {
+      "canonical_url": "https://tedt.org/Nukes-and-Radiation-in-Dungeons-and-Dragons-5th-Edition-for-Gamma-World/",
+      "created_at": "2026-10-28T22:54:19.290Z",
+      "id": "117520994093682291",
+      "kind": "archive",
+      "operation": "42f360fb222f1c7c910bfddd9eebda6cb7c51002c2ac2fd3950ed65005a13ba6",
+      "url": "https://tschopp.net/@Ted/117520994093682291"
     }
   ],
   "run_count": 247,
