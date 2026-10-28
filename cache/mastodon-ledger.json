@@ -25909,14 +25909,13 @@
         {
           "id": "115017529929927411",
           "url": "https://tschopp.net/@Ted/115017529929927411"
+        },
+        {
+          "created_at": "2026-10-28T02:34:24.161Z",
+          "id": "117516197177687806",
+          "url": "https://tschopp.net/@Ted/117516197177687806"
         }
       ],
-      "intent": {
-        "key": "b06503ebc3f5943cd46eb0a415481816bcb465a4ac6f77788f6937fffe5b3fb6",
-        "kind": "archive",
-        "started_at": "2026-10-28T02:34:08Z"
-      },
-      "missing_checked_at": "2026-10-28T02:34:08Z",
       "preferred_ids": [
         "115017529929927411"
       ],
@@ -25926,8 +25925,14 @@
       "source_paths": [
         "_posts/Blog Posts/2010-05-19-the-purpose-of-community-protection-of-the-commons.md"
       ],
-      "state": "uncertain",
-      "title": "Defending the Commons: Lessons from Robin Hood on Building Community"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T02:34:24.161Z",
+        "id": "117516197177687806",
+        "url": "https://tschopp.net/@Ted/117516197177687806"
+      },
+      "title": "Defending the Commons: Lessons from Robin Hood on Building Community",
+      "verified_at": "2026-10-28T02:34:08Z"
     },
     "https://tedt.org/thoughts-on-corporate-collaboration-tools/": {
       "aliases": [
@@ -26162,7 +26167,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T01:19:42.760Z",
+  "last_publication_at": "2026-10-28T02:34:24.161Z",
   "last_reconciliation_at": "2026-10-28T02:34:08Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 109,
@@ -26526,6 +26531,14 @@
       "kind": "archive",
       "operation": "312d4ae43e286e95e74f822280fd46c0a52dcd571452febf47b978e51f045c93",
       "url": "https://tschopp.net/@Ted/117515903484498776"
+    },
+    {
+      "canonical_url": "https://tedt.org/the-purpose-of-community-protection-of-the-commons/",
+      "created_at": "2026-10-28T02:34:24.161Z",
+      "id": "117516197177687806",
+      "kind": "archive",
+      "operation": "b06503ebc3f5943cd46eb0a415481816bcb465a4ac6f77788f6937fffe5b3fb6",
+      "url": "https://tschopp.net/@Ted/117516197177687806"
     }
   ],
   "run_count": 157,
