@@ -3519,14 +3519,13 @@
         {
           "id": "115017534251932304",
           "url": "https://tschopp.net/@Ted/115017534251932304"
+        },
+        {
+          "created_at": "2026-10-28T22:17:11.324Z",
+          "id": "117520848081643451",
+          "url": "https://tschopp.net/@Ted/117520848081643451"
         }
       ],
-      "intent": {
-        "key": "ad1f271c5e5f6ecfbced7edb17d413606abe510bb78d7fb747b9b1fa4d007343",
-        "kind": "archive",
-        "started_at": "2026-10-28T22:16:48Z"
-      },
-      "missing_checked_at": "2026-10-28T22:16:48Z",
       "preferred_ids": [
         "115017534251932304"
       ],
@@ -3536,8 +3535,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-04-22-Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons.md"
       ],
-      "state": "uncertain",
-      "title": "Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T22:17:11.324Z",
+        "id": "117520848081643451",
+        "url": "https://tschopp.net/@Ted/117520848081643451"
+      },
+      "title": "Dungeons and Dragons 5th Edition Rules for Gamma World Weapons and Armor",
+      "verified_at": "2026-10-28T22:16:48Z"
     },
     "https://tedt.org/Edward-Castronova-Anyone-who-sees-a-hurricane-co/": {
       "aliases": [
@@ -26361,7 +26366,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T21:35:29.811Z",
+  "last_publication_at": "2026-10-28T22:17:11.324Z",
   "last_reconciliation_at": "2026-10-28T22:16:48Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 126,
@@ -26861,6 +26866,14 @@
       "kind": "archive",
       "operation": "ae46f2f05431318abaaa0fd16271e87f851b296a822e0b38905a874433595205",
       "url": "https://tschopp.net/@Ted/117520684142433581"
+    },
+    {
+      "canonical_url": "https://tedt.org/Dungeons-and-Dragons-5th-Edition-Rules-For-Gamma-World-Weapons/",
+      "created_at": "2026-10-28T22:17:11.324Z",
+      "id": "117520848081643451",
+      "kind": "archive",
+      "operation": "ad1f271c5e5f6ecfbced7edb17d413606abe510bb78d7fb747b9b1fa4d007343",
+      "url": "https://tschopp.net/@Ted/117520848081643451"
     }
   ],
   "run_count": 244,
