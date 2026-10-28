@@ -26137,14 +26137,13 @@
         {
           "id": "115017531847231875",
           "url": "https://tschopp.net/@Ted/115017531847231875"
+        },
+        {
+          "created_at": "2026-10-28T11:27:14.393Z",
+          "id": "117518292378584253",
+          "url": "https://tschopp.net/@Ted/117518292378584253"
         }
       ],
-      "intent": {
-        "key": "d683a65555f202d57911409a7395d5d50a740279149f0f679f880cc1abd692c2",
-        "kind": "archive",
-        "started_at": "2026-10-28T11:26:59Z"
-      },
-      "missing_checked_at": "2026-10-28T11:26:59Z",
       "preferred_ids": [
         "115017531847231875"
       ],
@@ -26154,8 +26153,14 @@
       "source_paths": [
         "_posts/Blog Posts/2012-08-26-user-interfaces-in-2017-2.md"
       ],
-      "state": "uncertain",
-      "title": "The Evolution of Digital Realism: Sound, Graphics, and User Interface Design"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T11:27:14.393Z",
+        "id": "117518292378584253",
+        "url": "https://tschopp.net/@Ted/117518292378584253"
+      },
+      "title": "The Evolution of Digital Realism: Sound, Graphics, and User Interface Design",
+      "verified_at": "2026-10-28T11:26:59Z"
     },
     "https://tedt.org/web-services-we/": {
       "aliases": [
@@ -26240,7 +26245,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T10:23:37.123Z",
+  "last_publication_at": "2026-10-28T11:27:14.393Z",
   "last_reconciliation_at": "2026-10-28T11:26:59Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 116,
@@ -26660,6 +26665,14 @@
       "kind": "archive",
       "operation": "80b162a892ae3f531573e8600de39dd138bac6d12e4b21b99fc1e86a959bcea0",
       "url": "https://tschopp.net/@Ted/117518042210225950"
+    },
+    {
+      "canonical_url": "https://tedt.org/user-interfaces-in-2017-2/",
+      "created_at": "2026-10-28T11:27:14.393Z",
+      "id": "117518292378584253",
+      "kind": "archive",
+      "operation": "d683a65555f202d57911409a7395d5d50a740279149f0f679f880cc1abd692c2",
+      "url": "https://tschopp.net/@Ted/117518292378584253"
     }
   ],
   "run_count": 197,
