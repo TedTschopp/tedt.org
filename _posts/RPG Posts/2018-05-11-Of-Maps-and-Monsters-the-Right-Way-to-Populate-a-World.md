@@ -49,7 +49,8 @@ mathjax: true
 order: null
 image_width: 1000
 image_height: 999
-mastodon-post-id: '115017535212567970'
+mastodon-post-id: "117521119743965791"
+mastodon-post-url: "https://tschopp.net/@Ted/117521119743965791"
 ---
 <style>
 .dccvsdnd thead tr th {
