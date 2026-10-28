@@ -25072,14 +25072,13 @@
         {
           "id": "115017532806708198",
           "url": "https://tschopp.net/@Ted/115017532806708198"
+        },
+        {
+          "created_at": "2026-10-28T14:01:36.500Z",
+          "id": "117518899380183480",
+          "url": "https://tschopp.net/@Ted/117518899380183480"
         }
       ],
-      "intent": {
-        "key": "6280d344f1295d19172787b0f51c0980d9f4b10edee55ba462308d33144d170c",
-        "kind": "archive",
-        "started_at": "2026-10-28T14:01:22Z"
-      },
-      "missing_checked_at": "2026-10-28T14:01:22Z",
       "preferred_ids": [
         "115017532806708198"
       ],
@@ -25089,8 +25088,14 @@
       "source_paths": [
         "_posts/Blog Posts/2013-11-27-html5-javascript-version-of-of-windows.md"
       ],
-      "state": "uncertain",
-      "title": "The Future of Web-Based Computing: Revolutionizing the Creative Industry"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T14:01:36.500Z",
+        "id": "117518899380183480",
+        "url": "https://tschopp.net/@Ted/117518899380183480"
+      },
+      "title": "The Future of Web-Based Computing: Revolutionizing the Creative Industry",
+      "verified_at": "2026-10-28T14:01:22Z"
     },
     "https://tedt.org/ideas-of-things-i-need-to-think-about-garden-state/": {
       "aliases": [
@@ -26260,7 +26265,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T12:41:14.786Z",
+  "last_publication_at": "2026-10-28T14:01:36.500Z",
   "last_reconciliation_at": "2026-10-28T14:01:22Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 118,
@@ -26696,6 +26701,14 @@
       "kind": "archive",
       "operation": "b2cae85caa3893c8e197128d52c0ea6a39d67b41d506539747e2651f700fcae2",
       "url": "https://tschopp.net/@Ted/117518583384320192"
+    },
+    {
+      "canonical_url": "https://tedt.org/html5-javascript-version-of-of-windows/",
+      "created_at": "2026-10-28T14:01:36.500Z",
+      "id": "117518899380183480",
+      "kind": "archive",
+      "operation": "6280d344f1295d19172787b0f51c0980d9f4b10edee55ba462308d33144d170c",
+      "url": "https://tschopp.net/@Ted/117518899380183480"
     }
   ],
   "run_count": 208,
