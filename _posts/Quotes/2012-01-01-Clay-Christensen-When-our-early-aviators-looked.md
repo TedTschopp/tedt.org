@@ -61,5 +61,7 @@ year-the-event-took-place: 2012
 mathjax: 
 
 order: 
+mastodon-post-id: "117517720742756838"
+mastodon-post-url: "https://tschopp.net/@Ted/117517720742756838"
 ---
 When our early aviators looked at the world’s “best practice” fliers birds they saw two things almost all these had in common: wings and feathers. So, they strapped on wings and feathers, climbed to the top of cathedral spires, jumped off and flapped hard. It rarely worked out well.
