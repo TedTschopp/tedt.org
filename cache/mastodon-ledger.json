@@ -25368,14 +25368,13 @@
         {
           "id": "115017533290733423",
           "url": "https://tschopp.net/@Ted/115017533290733423"
+        },
+        {
+          "created_at": "2026-10-28T19:38:18.539Z",
+          "id": "117520223341110041",
+          "url": "https://tschopp.net/@Ted/117520223341110041"
         }
       ],
-      "intent": {
-        "key": "78d22befdef5c3bf4cb398acbd76b2ea2151749ecf83d0c66f7519780c33c1d6",
-        "kind": "archive",
-        "started_at": "2026-10-28T19:38:01Z"
-      },
-      "missing_checked_at": "2026-10-28T19:38:01Z",
       "preferred_ids": [
         "115017533290733423"
       ],
@@ -25385,8 +25384,14 @@
       "source_paths": [
         "_posts/Blog Posts/2015-01-29-mobile-computing.md"
       ],
-      "state": "uncertain",
-      "title": "The Revolution of Mobile Computing: From Mainframes to Smartphones"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T19:38:18.539Z",
+        "id": "117520223341110041",
+        "url": "https://tschopp.net/@Ted/117520223341110041"
+      },
+      "title": "The Revolution of Mobile Computing: From Mainframes to Smartphones",
+      "verified_at": "2026-10-28T19:38:01Z"
     },
     "https://tedt.org/more-on-the-fas/": {
       "aliases": [
@@ -26326,7 +26331,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T18:36:25.127Z",
+  "last_publication_at": "2026-10-28T19:38:18.539Z",
   "last_reconciliation_at": "2026-10-28T19:38:01Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 123,
@@ -26802,6 +26807,14 @@
       "kind": "archive",
       "operation": "ea78775af57af131dbe7e98b634302a1fcfea532bbf89434f46767f9882a2e54",
       "url": "https://tschopp.net/@Ted/117519979978852261"
+    },
+    {
+      "canonical_url": "https://tedt.org/mobile-computing/",
+      "created_at": "2026-10-28T19:38:18.539Z",
+      "id": "117520223341110041",
+      "kind": "archive",
+      "operation": "78d22befdef5c3bf4cb398acbd76b2ea2151749ecf83d0c66f7519780c33c1d6",
+      "url": "https://tschopp.net/@Ted/117520223341110041"
     }
   ],
   "run_count": 231,
