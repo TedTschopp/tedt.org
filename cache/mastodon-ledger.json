@@ -20209,14 +20209,13 @@
         {
           "id": "115125968629410197",
           "url": "https://tschopp.net/users/Ted/statuses/115125968629410197"
+        },
+        {
+          "created_at": "2026-10-28T10:23:37.123Z",
+          "id": "117518042210225950",
+          "url": "https://tschopp.net/@Ted/117518042210225950"
         }
       ],
-      "intent": {
-        "key": "80b162a892ae3f531573e8600de39dd138bac6d12e4b21b99fc1e86a959bcea0",
-        "kind": "archive",
-        "started_at": "2026-10-28T10:23:20Z"
-      },
-      "missing_checked_at": "2026-10-28T10:23:20Z",
       "preferred_ids": [
         "115126225295180054"
       ],
@@ -20226,8 +20225,14 @@
       "source_paths": [
         "_posts/Quotes/2012-06-20-Horace-Dediu-Think-of-the-company-as-an-org.md"
       ],
-      "state": "uncertain",
-      "title": "Corporate Antibodies Against Innovation – Horace Dediu"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T10:23:37.123Z",
+        "id": "117518042210225950",
+        "url": "https://tschopp.net/@Ted/117518042210225950"
+      },
+      "title": "Corporate Antibodies Against Innovation – Horace Dediu",
+      "verified_at": "2026-10-28T10:23:20Z"
     },
     "https://tedt.org/House-Ventara-of-Alell-and-the-Caerleon-March/": {
       "aliases": [
@@ -26230,7 +26235,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T09:01:51.920Z",
+  "last_publication_at": "2026-10-28T10:23:37.123Z",
   "last_reconciliation_at": "2026-10-28T10:23:20Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 115,
@@ -26642,6 +26647,14 @@
       "kind": "archive",
       "operation": "0b9c621e258c0fe92b3d15ceafe13d6ec67d1d0ee96de64fa6fdcdbd9cb9728d",
       "url": "https://tschopp.net/@Ted/117517720742756838"
+    },
+    {
+      "canonical_url": "https://tedt.org/Horace-Dediu-Think-of-the-company-as-an-org/",
+      "created_at": "2026-10-28T10:23:37.123Z",
+      "id": "117518042210225950",
+      "kind": "archive",
+      "operation": "80b162a892ae3f531573e8600de39dd138bac6d12e4b21b99fc1e86a959bcea0",
+      "url": "https://tschopp.net/@Ted/117518042210225950"
     }
   ],
   "run_count": 192,
