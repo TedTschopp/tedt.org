@@ -60,7 +60,8 @@ mathjax: null
 order: null
 image_width: 1280
 image_height: 960
-mastodon-post-id: '115017532806708198'
+mastodon-post-id: "117518899380183480"
+mastodon-post-url: "https://tschopp.net/@Ted/117518899380183480"
 ---
 Take a look at the following video:
 
