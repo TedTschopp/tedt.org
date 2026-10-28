@@ -25866,14 +25866,13 @@
         {
           "id": "115017532326285566",
           "url": "https://tschopp.net/@Ted/115017532326285566"
+        },
+        {
+          "created_at": "2026-10-28T12:41:14.786Z",
+          "id": "117518583384320192",
+          "url": "https://tschopp.net/@Ted/117518583384320192"
         }
       ],
-      "intent": {
-        "key": "b2cae85caa3893c8e197128d52c0ea6a39d67b41d506539747e2651f700fcae2",
-        "kind": "archive",
-        "started_at": "2026-10-28T12:41:01Z"
-      },
-      "missing_checked_at": "2026-10-28T12:41:01Z",
       "preferred_ids": [
         "115017532326285566"
       ],
@@ -25883,8 +25882,14 @@
       "source_paths": [
         "_posts/Blog Posts/2013-11-22-the-component-smart-phone-and-why-it-will-fail.md"
       ],
-      "state": "uncertain",
-      "title": "Motorola's Project Ara: The Future of Modular Smartphones or a Doomed Venture?"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T12:41:14.786Z",
+        "id": "117518583384320192",
+        "url": "https://tschopp.net/@Ted/117518583384320192"
+      },
+      "title": "Motorola's Project Ara: The Future of Modular Smartphones or a Doomed Venture?",
+      "verified_at": "2026-10-28T12:41:01Z"
     },
     "https://tedt.org/the-google-browseros/": {
       "aliases": [
@@ -26250,7 +26255,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T11:27:14.393Z",
+  "last_publication_at": "2026-10-28T12:41:14.786Z",
   "last_reconciliation_at": "2026-10-28T12:41:01Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 117,
@@ -26678,6 +26683,14 @@
       "kind": "archive",
       "operation": "d683a65555f202d57911409a7395d5d50a740279149f0f679f880cc1abd692c2",
       "url": "https://tschopp.net/@Ted/117518292378584253"
+    },
+    {
+      "canonical_url": "https://tedt.org/the-component-smart-phone-and-why-it-will-fail/",
+      "created_at": "2026-10-28T12:41:14.786Z",
+      "id": "117518583384320192",
+      "kind": "archive",
+      "operation": "b2cae85caa3893c8e197128d52c0ea6a39d67b41d506539747e2651f700fcae2",
+      "url": "https://tschopp.net/@Ted/117518583384320192"
     }
   ],
   "run_count": 202,
