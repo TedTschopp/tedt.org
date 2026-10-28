@@ -63,5 +63,7 @@ year-the-event-took-place: 2015
 mathjax: 
 
 order: 
+mastodon-post-id: "117519979978852261"
+mastodon-post-url: "https://tschopp.net/@Ted/117519979978852261"
 ---
 Good business leaders create a vision, articulate the vision, passionately own the vision, and relentlessly drive it to completion.
