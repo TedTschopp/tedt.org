@@ -3008,12 +3008,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "0b9c621e258c0fe92b3d15ceafe13d6ec67d1d0ee96de64fa6fdcdbd9cb9728d",
-        "kind": "archive",
-        "started_at": "2026-10-28T09:01:36Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-28T09:01:51.920Z",
+          "id": "117517720742756838",
+          "url": "https://tschopp.net/@Ted/117517720742756838"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2012-01-01T08:00:00Z",
       "queue_kind": "archive",
@@ -3021,8 +3022,14 @@
       "source_paths": [
         "_posts/Quotes/2012-01-01-Clay-Christensen-When-our-early-aviators-looked.md"
       ],
-      "state": "uncertain",
-      "title": "Wings and Feathers Are Not Enough – Clay Christensen"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T09:01:51.920Z",
+        "id": "117517720742756838",
+        "url": "https://tschopp.net/@Ted/117517720742756838"
+      },
+      "title": "Wings and Feathers Are Not Enough – Clay Christensen",
+      "verified_at": "2026-10-28T09:01:36Z"
     },
     "https://tedt.org/Color-Chart-Pan-Zoom/": {
       "aliases": [
@@ -26216,7 +26223,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T07:42:07.313Z",
+  "last_publication_at": "2026-10-28T09:01:51.920Z",
   "last_reconciliation_at": "2026-10-28T09:01:36Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 114,
@@ -26620,6 +26627,14 @@
       "kind": "archive",
       "operation": "786a58963d177f0a5d454d117dfd7a69033a3b499bcec4b9127537a6476493a5",
       "url": "https://tschopp.net/@Ted/117517407178765274"
+    },
+    {
+      "canonical_url": "https://tedt.org/Clay-Christensen-When-our-early-aviators-looked/",
+      "created_at": "2026-10-28T09:01:51.920Z",
+      "id": "117517720742756838",
+      "kind": "archive",
+      "operation": "0b9c621e258c0fe92b3d15ceafe13d6ec67d1d0ee96de64fa6fdcdbd9cb9728d",
+      "url": "https://tschopp.net/@Ted/117517720742756838"
     }
   ],
   "run_count": 186,
