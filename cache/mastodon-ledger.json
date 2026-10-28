@@ -3595,12 +3595,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "312d4ae43e286e95e74f822280fd46c0a52dcd571452febf47b978e51f045c93",
-        "kind": "archive",
-        "started_at": "2026-10-28T01:19:30Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-28T01:19:42.760Z",
+          "id": "117515903484498776",
+          "url": "https://tschopp.net/@Ted/117515903484498776"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2009-11-10T08:00:00Z",
       "queue_kind": "archive",
@@ -3608,8 +3609,14 @@
       "source_paths": [
         "_posts/Quotes/2009-11-10-Eric-Shinseki-If-you-don't-like-change-you'.md"
       ],
-      "state": "uncertain",
-      "title": "If You Don’t Like Change – Eric Shinseki"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-28T01:19:42.760Z",
+        "id": "117515903484498776",
+        "url": "https://tschopp.net/@Ted/117515903484498776"
+      },
+      "title": "If You Don’t Like Change – Eric Shinseki",
+      "verified_at": "2026-10-28T01:19:30Z"
     },
     "https://tedt.org/Euclids-Algorithm-in-Ada/": {
       "aliases": [
@@ -26148,7 +26155,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-27T23:41:45.236Z",
+  "last_publication_at": "2026-10-28T01:19:42.760Z",
   "last_reconciliation_at": "2026-10-28T01:19:30Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 108,
@@ -26504,6 +26511,14 @@
       "kind": "archive",
       "operation": "47950564b529ac2af4e42837392e8958f1ff73f069d66b74066d74136230463b",
       "url": "https://tschopp.net/@Ted/117515518295116855"
+    },
+    {
+      "canonical_url": "https://tedt.org/Eric-Shinseki-If-you-don't-like-change-you'/",
+      "created_at": "2026-10-28T01:19:42.760Z",
+      "id": "117515903484498776",
+      "kind": "archive",
+      "operation": "312d4ae43e286e95e74f822280fd46c0a52dcd571452febf47b978e51f045c93",
+      "url": "https://tschopp.net/@Ted/117515903484498776"
     }
   ],
   "run_count": 151,
