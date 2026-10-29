@@ -3407,14 +3407,13 @@
         {
           "id": "115017535693153105",
           "url": "https://tschopp.net/@Ted/115017535693153105"
+        },
+        {
+          "created_at": "2026-10-29T00:01:40.016Z",
+          "id": "117521258906586819",
+          "url": "https://tschopp.net/@Ted/117521258906586819"
         }
       ],
-      "intent": {
-        "key": "f462a3815a0837f22bcf5047cfaabc96a49bfc95431d9ac7947fe2f4f53e26d7",
-        "kind": "archive",
-        "started_at": "2026-10-29T00:01:15Z"
-      },
-      "missing_checked_at": "2026-10-29T00:01:15Z",
       "preferred_ids": [
         "115017535693153105"
       ],
@@ -3424,8 +3423,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-05-16-Doing-Religions-Right-in-DCC.md"
       ],
-      "state": "uncertain",
-      "title": "Doing Religions Right in DCC"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T00:01:40.016Z",
+        "id": "117521258906586819",
+        "url": "https://tschopp.net/@Ted/117521258906586819"
+      },
+      "title": "Doing Religions Right in DCC",
+      "verified_at": "2026-10-29T00:01:15Z"
     },
     "https://tedt.org/Dont-Build-Her-Another-Chatbot/": {
       "aliases": [
@@ -26391,7 +26396,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-28T23:26:16.562Z",
+  "last_publication_at": "2026-10-29T00:01:40.016Z",
   "last_reconciliation_at": "2026-10-29T00:01:15Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 129,
@@ -26915,6 +26920,14 @@
       "kind": "archive",
       "operation": "39c4b726d729dd93c8dff07d148077c80c3c69b5577c711fae820a0b373633a6",
       "url": "https://tschopp.net/@Ted/117521119743965791"
+    },
+    {
+      "canonical_url": "https://tedt.org/Doing-Religions-Right-in-DCC/",
+      "created_at": "2026-10-29T00:01:40.016Z",
+      "id": "117521258906586819",
+      "kind": "archive",
+      "operation": "f462a3815a0837f22bcf5047cfaabc96a49bfc95431d9ac7947fe2f4f53e26d7",
+      "url": "https://tschopp.net/@Ted/117521258906586819"
     }
   ],
   "run_count": 252,
