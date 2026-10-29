@@ -4700,12 +4700,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "9509be5c6fc51ea666b0abb204fdb8d37bed2f3c3be1831947216eacb949bcc8",
-        "kind": "archive",
-        "started_at": "2026-10-29T19:51:42Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T19:52:04.616Z",
+          "id": "117525939789200100",
+          "url": "https://tschopp.net/@Ted/117525939789200100"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4713,8 +4714,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bad-Bart-Bartholemu-Othbrook.md"
       ],
-      "state": "uncertain",
-      "title": "Bad Bart «Bartholemu Othbrook»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T19:52:04.616Z",
+        "id": "117525939789200100",
+        "url": "https://tschopp.net/@Ted/117525939789200100"
+      },
+      "title": "Bad Bart «Bartholemu Othbrook»",
+      "verified_at": "2026-10-29T19:51:42Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bahrz.html": {
       "aliases": [
@@ -26775,7 +26782,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T19:15:58.977Z",
+  "last_publication_at": "2026-10-29T19:52:04.616Z",
   "last_reconciliation_at": "2026-10-29T19:51:42Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 160,
@@ -27547,6 +27554,14 @@
       "kind": "archive",
       "operation": "8344fdbeb476e5683c4d8ce99025fa5fc7df742a6fa5a1ada4dfb86c5d5b4c18",
       "url": "https://tschopp.net/@Ted/117525797861938815"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bad-Bart-Bartholemu-Othbrook.html",
+      "created_at": "2026-10-29T19:52:04.616Z",
+      "id": "117525939789200100",
+      "kind": "archive",
+      "operation": "9509be5c6fc51ea666b0abb204fdb8d37bed2f3c3be1831947216eacb949bcc8",
+      "url": "https://tschopp.net/@Ted/117525939789200100"
     }
   ],
   "run_count": 334,
