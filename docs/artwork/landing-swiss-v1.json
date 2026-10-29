@@ -18,12 +18,20 @@
         "height": 724,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/essays-hero--480w.webp",
+            "src": "/img/generated/responsive/landing/swiss-v1/essays-hero--480w.webp",
             "width": 480
           },
           {
-            "src": "/img/landing/swiss-v1/essays-hero--960w.webp",
-            "width": 960
+            "src": "/img/generated/responsive/landing/swiss-v1/essays-hero--768w.webp",
+            "width": 768
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/essays-hero--1200w.webp",
+            "width": 1200
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/essays-hero--1456w.webp",
+            "width": 1456
           },
           {
             "src": "/img/landing/swiss-v1/essays-hero.webp",
@@ -38,12 +46,20 @@
           "height": 724,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/essays-hero-dark--480w.webp",
+              "src": "/img/generated/responsive/landing/swiss-v1/essays-hero-dark--480w.webp",
               "width": 480
             },
             {
-              "src": "/img/landing/swiss-v1/essays-hero-dark--960w.webp",
-              "width": 960
+              "src": "/img/generated/responsive/landing/swiss-v1/essays-hero-dark--768w.webp",
+              "width": 768
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/essays-hero-dark--1200w.webp",
+              "width": 1200
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/essays-hero-dark--1456w.webp",
+              "width": 1456
             },
             {
               "src": "/img/landing/swiss-v1/essays-hero-dark.webp",
@@ -70,12 +86,20 @@
         "height": 724,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/stories-hero--480w.webp",
+            "src": "/img/generated/responsive/landing/swiss-v1/stories-hero--480w.webp",
             "width": 480
           },
           {
-            "src": "/img/landing/swiss-v1/stories-hero--960w.webp",
-            "width": 960
+            "src": "/img/generated/responsive/landing/swiss-v1/stories-hero--768w.webp",
+            "width": 768
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/stories-hero--1200w.webp",
+            "width": 1200
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/stories-hero--1456w.webp",
+            "width": 1456
           },
           {
             "src": "/img/landing/swiss-v1/stories-hero.webp",
@@ -90,12 +114,20 @@
           "height": 724,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/stories-hero-dark--480w.webp",
+              "src": "/img/generated/responsive/landing/swiss-v1/stories-hero-dark--480w.webp",
               "width": 480
             },
             {
-              "src": "/img/landing/swiss-v1/stories-hero-dark--960w.webp",
-              "width": 960
+              "src": "/img/generated/responsive/landing/swiss-v1/stories-hero-dark--768w.webp",
+              "width": 768
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/stories-hero-dark--1200w.webp",
+              "width": 1200
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/stories-hero-dark--1456w.webp",
+              "width": 1456
             },
             {
               "src": "/img/landing/swiss-v1/stories-hero-dark.webp",
@@ -122,12 +154,20 @@
         "height": 724,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/games-hero--480w.webp",
+            "src": "/img/generated/responsive/landing/swiss-v1/games-hero--480w.webp",
             "width": 480
           },
           {
-            "src": "/img/landing/swiss-v1/games-hero--960w.webp",
-            "width": 960
+            "src": "/img/generated/responsive/landing/swiss-v1/games-hero--768w.webp",
+            "width": 768
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/games-hero--1200w.webp",
+            "width": 1200
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/games-hero--1456w.webp",
+            "width": 1456
           },
           {
             "src": "/img/landing/swiss-v1/games-hero.webp",
@@ -142,12 +182,20 @@
           "height": 724,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/games-hero-dark--480w.webp",
+              "src": "/img/generated/responsive/landing/swiss-v1/games-hero-dark--480w.webp",
               "width": 480
             },
             {
-              "src": "/img/landing/swiss-v1/games-hero-dark--960w.webp",
-              "width": 960
+              "src": "/img/generated/responsive/landing/swiss-v1/games-hero-dark--768w.webp",
+              "width": 768
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/games-hero-dark--1200w.webp",
+              "width": 1200
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/games-hero-dark--1456w.webp",
+              "width": 1456
             },
             {
               "src": "/img/landing/swiss-v1/games-hero-dark.webp",
@@ -174,12 +222,20 @@
         "height": 724,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/tools-hero--480w.webp",
+            "src": "/img/generated/responsive/landing/swiss-v1/tools-hero--480w.webp",
             "width": 480
           },
           {
-            "src": "/img/landing/swiss-v1/tools-hero--960w.webp",
-            "width": 960
+            "src": "/img/generated/responsive/landing/swiss-v1/tools-hero--768w.webp",
+            "width": 768
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/tools-hero--1200w.webp",
+            "width": 1200
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/tools-hero--1456w.webp",
+            "width": 1456
           },
           {
             "src": "/img/landing/swiss-v1/tools-hero.webp",
@@ -194,12 +250,20 @@
           "height": 724,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/tools-hero-dark--480w.webp",
+              "src": "/img/generated/responsive/landing/swiss-v1/tools-hero-dark--480w.webp",
               "width": 480
             },
             {
-              "src": "/img/landing/swiss-v1/tools-hero-dark--960w.webp",
-              "width": 960
+              "src": "/img/generated/responsive/landing/swiss-v1/tools-hero-dark--768w.webp",
+              "width": 768
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/tools-hero-dark--1200w.webp",
+              "width": 1200
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/tools-hero-dark--1456w.webp",
+              "width": 1456
             },
             {
               "src": "/img/landing/swiss-v1/tools-hero-dark.webp",
@@ -226,12 +290,20 @@
         "height": 724,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/learn-hero--480w.webp",
+            "src": "/img/generated/responsive/landing/swiss-v1/learn-hero--480w.webp",
             "width": 480
           },
           {
-            "src": "/img/landing/swiss-v1/learn-hero--960w.webp",
-            "width": 960
+            "src": "/img/generated/responsive/landing/swiss-v1/learn-hero--768w.webp",
+            "width": 768
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/learn-hero--1200w.webp",
+            "width": 1200
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/learn-hero--1456w.webp",
+            "width": 1456
           },
           {
             "src": "/img/landing/swiss-v1/learn-hero.webp",
@@ -246,12 +318,20 @@
           "height": 724,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/learn-hero-dark--480w.webp",
+              "src": "/img/generated/responsive/landing/swiss-v1/learn-hero-dark--480w.webp",
               "width": 480
             },
             {
-              "src": "/img/landing/swiss-v1/learn-hero-dark--960w.webp",
-              "width": 960
+              "src": "/img/generated/responsive/landing/swiss-v1/learn-hero-dark--768w.webp",
+              "width": 768
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/learn-hero-dark--1200w.webp",
+              "width": 1200
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/learn-hero-dark--1456w.webp",
+              "width": 1456
             },
             {
               "src": "/img/landing/swiss-v1/learn-hero-dark.webp",
@@ -278,12 +358,20 @@
         "height": 724,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/about-hero--480w.webp",
+            "src": "/img/generated/responsive/landing/swiss-v1/about-hero--480w.webp",
             "width": 480
           },
           {
-            "src": "/img/landing/swiss-v1/about-hero--960w.webp",
-            "width": 960
+            "src": "/img/generated/responsive/landing/swiss-v1/about-hero--768w.webp",
+            "width": 768
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/about-hero--1200w.webp",
+            "width": 1200
+          },
+          {
+            "src": "/img/generated/responsive/landing/swiss-v1/about-hero--1456w.webp",
+            "width": 1456
           },
           {
             "src": "/img/landing/swiss-v1/about-hero.webp",
@@ -298,12 +386,20 @@
           "height": 724,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/about-hero-dark--480w.webp",
+              "src": "/img/generated/responsive/landing/swiss-v1/about-hero-dark--480w.webp",
               "width": 480
             },
             {
-              "src": "/img/landing/swiss-v1/about-hero-dark--960w.webp",
-              "width": 960
+              "src": "/img/generated/responsive/landing/swiss-v1/about-hero-dark--768w.webp",
+              "width": 768
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/about-hero-dark--1200w.webp",
+              "width": 1200
+            },
+            {
+              "src": "/img/generated/responsive/landing/swiss-v1/about-hero-dark--1456w.webp",
+              "width": 1456
             },
             {
               "src": "/img/landing/swiss-v1/about-hero-dark.webp",
@@ -330,8 +426,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/essays-ai-architecture--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/essays-ai-architecture--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/essays-ai-architecture.webp",
@@ -346,8 +442,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/essays-ai-architecture-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/essays-ai-architecture-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/essays-ai-architecture-dark.webp",
@@ -374,8 +470,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/essays-work-leadership--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/essays-work-leadership--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/essays-work-leadership.webp",
@@ -390,8 +486,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/essays-work-leadership-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/essays-work-leadership-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/essays-work-leadership-dark.webp",
@@ -418,8 +514,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/essays-technology-science--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/essays-technology-science--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/essays-technology-science.webp",
@@ -434,8 +530,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/essays-technology-science-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/essays-technology-science-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/essays-technology-science-dark.webp",
@@ -462,8 +558,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/essays-faith-philosophy--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/essays-faith-philosophy--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/essays-faith-philosophy.webp",
@@ -478,8 +574,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/essays-faith-philosophy-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/essays-faith-philosophy-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/essays-faith-philosophy-dark.webp",
@@ -506,8 +602,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/essays-life-culture--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/essays-life-culture--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/essays-life-culture.webp",
@@ -522,8 +618,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/essays-life-culture-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/essays-life-culture-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/essays-life-culture-dark.webp",
@@ -550,8 +646,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/stories-swiss-folklore--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/stories-swiss-folklore--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/stories-swiss-folklore.webp",
@@ -566,8 +662,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/stories-swiss-folklore-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/stories-swiss-folklore-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/stories-swiss-folklore-dark.webp",
@@ -594,8 +690,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/stories-original-writing--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/stories-original-writing--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/stories-original-writing.webp",
@@ -610,8 +706,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/stories-original-writing-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/stories-original-writing-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/stories-original-writing-dark.webp",
@@ -638,8 +734,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/stories-poetry-lyrics--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/stories-poetry-lyrics--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/stories-poetry-lyrics.webp",
@@ -654,8 +750,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/stories-poetry-lyrics-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/stories-poetry-lyrics-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/stories-poetry-lyrics-dark.webp",
@@ -682,8 +778,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/stories-tolkien-fandom--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/stories-tolkien-fandom--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/stories-tolkien-fandom.webp",
@@ -698,8 +794,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/stories-tolkien-fandom-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/stories-tolkien-fandom-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/stories-tolkien-fandom-dark.webp",
@@ -726,8 +822,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/stories-writing-tools--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/stories-writing-tools--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/stories-writing-tools.webp",
@@ -742,8 +838,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/stories-writing-tools-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/stories-writing-tools-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/stories-writing-tools-dark.webp",
@@ -770,8 +866,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/games-marchen-engine--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/games-marchen-engine--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/games-marchen-engine.webp",
@@ -786,8 +882,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/games-marchen-engine-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/games-marchen-engine-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/games-marchen-engine-dark.webp",
@@ -814,8 +910,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/games-campaigns-systems--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/games-campaigns-systems--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/games-campaigns-systems.webp",
@@ -830,8 +926,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/games-campaigns-systems-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/games-campaigns-systems-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/games-campaigns-systems-dark.webp",
@@ -858,8 +954,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/games-bestiary-reference--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/games-bestiary-reference--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/games-bestiary-reference.webp",
@@ -874,8 +970,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/games-bestiary-reference-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/games-bestiary-reference-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/games-bestiary-reference-dark.webp",
@@ -902,8 +998,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/games-worldbuilding-maps--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/games-worldbuilding-maps--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/games-worldbuilding-maps.webp",
@@ -918,8 +1014,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/games-worldbuilding-maps-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/games-worldbuilding-maps-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/games-worldbuilding-maps-dark.webp",
@@ -946,8 +1042,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/games-gm-tools--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/games-gm-tools--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/games-gm-tools.webp",
@@ -962,8 +1058,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/games-gm-tools-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/games-gm-tools-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/games-gm-tools-dark.webp",
@@ -990,8 +1086,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/learn-inside-ai--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/learn-inside-ai--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/learn-inside-ai.webp",
@@ -1006,8 +1102,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/learn-inside-ai-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/learn-inside-ai-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/learn-inside-ai-dark.webp",
@@ -1034,8 +1130,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/learn-game-theory--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/learn-game-theory--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/learn-game-theory.webp",
@@ -1050,8 +1146,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/learn-game-theory-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/learn-game-theory-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/learn-game-theory-dark.webp",
@@ -1078,8 +1174,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/learn-math--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/learn-math--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/learn-math.webp",
@@ -1094,8 +1190,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/learn-math-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/learn-math-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/learn-math-dark.webp",
@@ -1122,8 +1218,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/learn-presentations--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/learn-presentations--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/learn-presentations.webp",
@@ -1138,8 +1234,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/learn-presentations-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/learn-presentations-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/learn-presentations-dark.webp",
@@ -1166,8 +1262,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/about-profile--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/about-profile--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/about-profile.webp",
@@ -1182,8 +1278,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/about-profile-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/about-profile-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/about-profile-dark.webp",
@@ -1210,8 +1306,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/about-projects--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/about-projects--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/about-projects.webp",
@@ -1226,8 +1322,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/about-projects-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/about-projects-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/about-projects-dark.webp",
@@ -1254,8 +1350,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/about-contact--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/about-contact--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/about-contact.webp",
@@ -1270,8 +1366,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/about-contact-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/about-contact-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/about-contact-dark.webp",
@@ -1298,8 +1394,8 @@
         "height": 448,
         "sources": [
           {
-            "src": "/img/landing/swiss-v1/about-editorial-standards--336w.webp",
-            "width": 336
+            "src": "/img/generated/responsive/landing/swiss-v1/about-editorial-standards--480w.webp",
+            "width": 480
           },
           {
             "src": "/img/landing/swiss-v1/about-editorial-standards.webp",
@@ -1314,8 +1410,8 @@
           "height": 448,
           "sources": [
             {
-              "src": "/img/landing/swiss-v1/about-editorial-standards-dark--336w.webp",
-              "width": 336
+              "src": "/img/generated/responsive/landing/swiss-v1/about-editorial-standards-dark--480w.webp",
+              "width": 480
             },
             {
               "src": "/img/landing/swiss-v1/about-editorial-standards-dark.webp",

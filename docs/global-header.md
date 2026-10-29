@@ -94,7 +94,9 @@ over the design system's usual limit of one decorative image per page.
 
 `_data/landing_artwork.yml` records the images, actual dimensions, responsive
 sources, dark companions, and alt text. Final WebP files live in
-`img/landing/swiss-v1/`; the exact prompts and generation method are recorded in
+`img/landing/swiss-v1/`; smaller candidates use the existing responsive-image
+pipeline and registry under `img/generated/responsive/` and
+`_data/responsive_images.json`. The exact prompts and generation method are recorded in
 `docs/artwork/landing-swiss-v1.json`. Existing painted assets remain available.
 
 Headings and links remain HTML. Native `picture` elements provide the system

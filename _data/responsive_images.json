@@ -7397,7 +7397,6 @@
       ],
       "width": 1672
     },
-
     "/img/2026-10/No-Silver-Bullet.webp": {
       "height": 941,
       "source_sha256": "bb6662314b7737ceeb0c32b1fb8166c56164c5e66fb99a1ad4f51738a163c5fe",
@@ -7497,7 +7496,39 @@
       ],
       "width": 1672
     },
-
+    "/img/2026-10/The-Unfinished-Revolution.webp": {
+      "height": 941,
+      "source_sha256": "a36707a9cb851b87ada945a13413af4aa1d8e98046d5b8b1164c662fc0c88028",
+      "src": "/img/2026-10/The-Unfinished-Revolution.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-10/The-Unfinished-Revolution--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-10/The-Unfinished-Revolution--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-10/The-Unfinished-Revolution--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-10/The-Unfinished-Revolution--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-10/The-Unfinished-Revolution.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/2026-10/Two-Views-of-Programming.webp": {
       "height": 941,
       "source_sha256": "14e5d0833e3243b71f230be77a2b4259a1fa01d08241e0520579824167edcb15",
@@ -17787,6 +17818,1230 @@
         }
       ],
       "width": 1900
+    },
+    "/img/landing/swiss-v1/about-contact-dark.webp": {
+      "height": 448,
+      "source_sha256": "2d37ce844c1c8ae4900bfb73cb01b498991db2fcad9856c317c54bc7df994872",
+      "src": "/img/landing/swiss-v1/about-contact-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-contact-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/about-contact-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/about-contact.webp": {
+      "height": 448,
+      "source_sha256": "7ef5d009f732d7a222491197bd52a6a5059f40fbc6f68553328f3fd6ac6b069a",
+      "src": "/img/landing/swiss-v1/about-contact.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-contact--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/about-contact.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/about-editorial-standards-dark.webp": {
+      "height": 448,
+      "source_sha256": "0ee521ad77f470fd940fb7edc9ac5ed7c6e9d93633c385da21ef5a813d71ac39",
+      "src": "/img/landing/swiss-v1/about-editorial-standards-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-editorial-standards-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/about-editorial-standards-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/about-editorial-standards.webp": {
+      "height": 448,
+      "source_sha256": "d9b5b40a053e4a4cdb818c3207fa9416c9b062a36700e3d699f953083fc76f99",
+      "src": "/img/landing/swiss-v1/about-editorial-standards.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-editorial-standards--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/about-editorial-standards.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/about-hero-dark.webp": {
+      "height": 724,
+      "source_sha256": "c75d17721a755aa346a9aa6f2d33cb7c92ce87eb5eb5e4635d3fa3a26b33aadf",
+      "src": "/img/landing/swiss-v1/about-hero-dark.webp",
+      "variants": [
+        {
+          "height": 161,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-hero-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 257,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-hero-dark--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 401,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-hero-dark--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-hero-dark--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/about-hero-dark.webp",
+          "width": 2171
+        }
+      ],
+      "width": 2171
+    },
+    "/img/landing/swiss-v1/about-hero.webp": {
+      "height": 724,
+      "source_sha256": "fe316bfb837f0f9f8a367a4c9eb6c6096abce2c399ea9b9761465be3adbdb0c9",
+      "src": "/img/landing/swiss-v1/about-hero.webp",
+      "variants": [
+        {
+          "height": 160,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-hero--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 256,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-hero--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 400,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-hero--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-hero--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/about-hero.webp",
+          "width": 2172
+        }
+      ],
+      "width": 2172
+    },
+    "/img/landing/swiss-v1/about-profile-dark.webp": {
+      "height": 448,
+      "source_sha256": "467a28690090b021033c6ad8d7238595e33c5cb83cd3f70e6cf28357f863248a",
+      "src": "/img/landing/swiss-v1/about-profile-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-profile-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/about-profile-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/about-profile.webp": {
+      "height": 448,
+      "source_sha256": "6fbd67e8ffdf4d4071d018d3e1f164622b38d7c0f63d642cb304ce928f0edf87",
+      "src": "/img/landing/swiss-v1/about-profile.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-profile--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/about-profile.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/about-projects-dark.webp": {
+      "height": 448,
+      "source_sha256": "614fbfdb53dab2b95969d50b67ae244c1d541f10478a61a6beda63690c53d26e",
+      "src": "/img/landing/swiss-v1/about-projects-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-projects-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/about-projects-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/about-projects.webp": {
+      "height": 448,
+      "source_sha256": "0a84e3f6bb5709a69f33007fb077bd578fec613178d6825f73c2dfba62c1db44",
+      "src": "/img/landing/swiss-v1/about-projects.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/about-projects--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/about-projects.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-ai-architecture-dark.webp": {
+      "height": 448,
+      "source_sha256": "92a66b00f6c3c8389dca7a6553a530106889b6402bf05a1cf3afc681839657f0",
+      "src": "/img/landing/swiss-v1/essays-ai-architecture-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-ai-architecture-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-ai-architecture-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-ai-architecture.webp": {
+      "height": 448,
+      "source_sha256": "face3d6ecced2a12db51d8d8116f8426d9a222b508909749815fc65ce08b9644",
+      "src": "/img/landing/swiss-v1/essays-ai-architecture.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-ai-architecture--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-ai-architecture.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-faith-philosophy-dark.webp": {
+      "height": 448,
+      "source_sha256": "c880598be06e2e292ae754eb1850557eb16208cf11d6c74208078f9c8a96e3ca",
+      "src": "/img/landing/swiss-v1/essays-faith-philosophy-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-faith-philosophy-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-faith-philosophy-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-faith-philosophy.webp": {
+      "height": 448,
+      "source_sha256": "4460701bca2255df77d57efb2a244257ce833d886397532bf93720d20ed5d757",
+      "src": "/img/landing/swiss-v1/essays-faith-philosophy.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-faith-philosophy--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-faith-philosophy.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-hero-dark.webp": {
+      "height": 724,
+      "source_sha256": "e7fe403077e32953ec1a3930ab4a61142a9c22b483cca6ea8fc1bc17d6094820",
+      "src": "/img/landing/swiss-v1/essays-hero-dark.webp",
+      "variants": [
+        {
+          "height": 160,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-hero-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 256,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-hero-dark--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 400,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-hero-dark--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-hero-dark--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/essays-hero-dark.webp",
+          "width": 2172
+        }
+      ],
+      "width": 2172
+    },
+    "/img/landing/swiss-v1/essays-hero.webp": {
+      "height": 724,
+      "source_sha256": "1d63cb5c56cf03754cccee3d3ebb94acf873c0727147db956c5c5625656f0fa9",
+      "src": "/img/landing/swiss-v1/essays-hero.webp",
+      "variants": [
+        {
+          "height": 160,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-hero--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 256,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-hero--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 400,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-hero--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-hero--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/essays-hero.webp",
+          "width": 2172
+        }
+      ],
+      "width": 2172
+    },
+    "/img/landing/swiss-v1/essays-life-culture-dark.webp": {
+      "height": 448,
+      "source_sha256": "a0c871239d47179b519a584ebaf0832801f4341666aa50659284cfafe394b276",
+      "src": "/img/landing/swiss-v1/essays-life-culture-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-life-culture-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-life-culture-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-life-culture.webp": {
+      "height": 448,
+      "source_sha256": "c8b270a8251c964df80ca0aa62383570c7a9e74c72b9dd509ee90f27968f6970",
+      "src": "/img/landing/swiss-v1/essays-life-culture.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-life-culture--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-life-culture.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-technology-science-dark.webp": {
+      "height": 448,
+      "source_sha256": "6aead8ba903159c4c92056583fecfb78c31bee8172507b3055f700b85efa8ad5",
+      "src": "/img/landing/swiss-v1/essays-technology-science-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-technology-science-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-technology-science-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-technology-science.webp": {
+      "height": 448,
+      "source_sha256": "b956822aafe1f8e95ff070e27239c51d3aaba1118014268c61c5ed116238f156",
+      "src": "/img/landing/swiss-v1/essays-technology-science.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-technology-science--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-technology-science.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-work-leadership-dark.webp": {
+      "height": 448,
+      "source_sha256": "4cc4400e9dc50f7da9985c67df5bdbb44333ede72771b587c3deddca5a58ac62",
+      "src": "/img/landing/swiss-v1/essays-work-leadership-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-work-leadership-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-work-leadership-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/essays-work-leadership.webp": {
+      "height": 448,
+      "source_sha256": "5db61b1c01bdad1c19b57c8eec637eac55c04906b8dd341ad875072fdd529ba2",
+      "src": "/img/landing/swiss-v1/essays-work-leadership.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/essays-work-leadership--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/essays-work-leadership.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-bestiary-reference-dark.webp": {
+      "height": 448,
+      "source_sha256": "a543d24e8023a361f424589a47a05d2c82ea08a399391f75853daa7e6ab69e24",
+      "src": "/img/landing/swiss-v1/games-bestiary-reference-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-bestiary-reference-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-bestiary-reference-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-bestiary-reference.webp": {
+      "height": 448,
+      "source_sha256": "061a5fbac8dfb5cbe5e24d78369945d0c1258cde46fe0311fdcb3d2895739fa0",
+      "src": "/img/landing/swiss-v1/games-bestiary-reference.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-bestiary-reference--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-bestiary-reference.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-campaigns-systems-dark.webp": {
+      "height": 448,
+      "source_sha256": "f8f5bf0d2d9ef1e8ab4c1db331930daac1cbe74ab494075d1b784fe5c26ce8ce",
+      "src": "/img/landing/swiss-v1/games-campaigns-systems-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-campaigns-systems-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-campaigns-systems-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-campaigns-systems.webp": {
+      "height": 448,
+      "source_sha256": "7e62f93b7997d3d4a454d3e9ed91c3e53d74dbaee8ed64e14ebdc20f6a559e8e",
+      "src": "/img/landing/swiss-v1/games-campaigns-systems.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-campaigns-systems--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-campaigns-systems.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-gm-tools-dark.webp": {
+      "height": 448,
+      "source_sha256": "7d989ae64f5f71e49f3de642a11353357cd62c866ef0fe1b233c06c0e330520c",
+      "src": "/img/landing/swiss-v1/games-gm-tools-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-gm-tools-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-gm-tools-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-gm-tools.webp": {
+      "height": 448,
+      "source_sha256": "d0bac798023696494ce3ef004a6cacc9e99e56f92f4f95afe9dc42a5ec961efe",
+      "src": "/img/landing/swiss-v1/games-gm-tools.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-gm-tools--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-gm-tools.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-hero-dark.webp": {
+      "height": 724,
+      "source_sha256": "56dd1e0e472137529e15252924bfbafa7f3abd789ef327b2a5b743180284c595",
+      "src": "/img/landing/swiss-v1/games-hero-dark.webp",
+      "variants": [
+        {
+          "height": 161,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-hero-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 257,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-hero-dark--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 401,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-hero-dark--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-hero-dark--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/games-hero-dark.webp",
+          "width": 2171
+        }
+      ],
+      "width": 2171
+    },
+    "/img/landing/swiss-v1/games-hero.webp": {
+      "height": 724,
+      "source_sha256": "cd0f6c0d1e97d2a022de615dbe31c59656e3fb7ea0a55511e5e7e6fe33a95ce1",
+      "src": "/img/landing/swiss-v1/games-hero.webp",
+      "variants": [
+        {
+          "height": 160,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-hero--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 256,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-hero--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 400,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-hero--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-hero--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/games-hero.webp",
+          "width": 2172
+        }
+      ],
+      "width": 2172
+    },
+    "/img/landing/swiss-v1/games-marchen-engine-dark.webp": {
+      "height": 448,
+      "source_sha256": "ea01c6db09951223ece1de851e6effc5b3f6639ca56bd5cde9958a6eb0b50259",
+      "src": "/img/landing/swiss-v1/games-marchen-engine-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-marchen-engine-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-marchen-engine-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-marchen-engine.webp": {
+      "height": 448,
+      "source_sha256": "5662017e26cfe67671a069ecf1fd8c187aff2b7c55b6e46406c957ffd8c6d53f",
+      "src": "/img/landing/swiss-v1/games-marchen-engine.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-marchen-engine--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-marchen-engine.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-worldbuilding-maps-dark.webp": {
+      "height": 448,
+      "source_sha256": "0a6882a1805964e366d3b7b465037ae42a1a865d81d1e681aca2288a1fa9d2a6",
+      "src": "/img/landing/swiss-v1/games-worldbuilding-maps-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-worldbuilding-maps-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-worldbuilding-maps-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/games-worldbuilding-maps.webp": {
+      "height": 448,
+      "source_sha256": "f96d530b52b1d5d71042e696c7e3516af09557f6016d386a0c0be79854dbdf40",
+      "src": "/img/landing/swiss-v1/games-worldbuilding-maps.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/games-worldbuilding-maps--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/games-worldbuilding-maps.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/learn-game-theory-dark.webp": {
+      "height": 448,
+      "source_sha256": "4b62cf7c65a0902457500706aacfdeaabb506e050c8ff6fcc82f5ef0e6abb2e7",
+      "src": "/img/landing/swiss-v1/learn-game-theory-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-game-theory-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/learn-game-theory-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/learn-game-theory.webp": {
+      "height": 448,
+      "source_sha256": "e6295b1eba5d46e501b60eae1aa1c54926764459bfe8910caf0829b4d177cfb7",
+      "src": "/img/landing/swiss-v1/learn-game-theory.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-game-theory--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/learn-game-theory.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/learn-hero-dark.webp": {
+      "height": 724,
+      "source_sha256": "8002d6c13e5bfba13aa1a871130599a0cba47433deb05524a3dca3b91b1ffc45",
+      "src": "/img/landing/swiss-v1/learn-hero-dark.webp",
+      "variants": [
+        {
+          "height": 160,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-hero-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 256,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-hero-dark--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 400,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-hero-dark--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-hero-dark--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/learn-hero-dark.webp",
+          "width": 2172
+        }
+      ],
+      "width": 2172
+    },
+    "/img/landing/swiss-v1/learn-hero.webp": {
+      "height": 724,
+      "source_sha256": "be01c49bd6c15964a6e0eeeaa56818d8a87ec583060062ca19b22f60763d40a1",
+      "src": "/img/landing/swiss-v1/learn-hero.webp",
+      "variants": [
+        {
+          "height": 160,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-hero--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 256,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-hero--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 400,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-hero--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-hero--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/learn-hero.webp",
+          "width": 2172
+        }
+      ],
+      "width": 2172
+    },
+    "/img/landing/swiss-v1/learn-inside-ai-dark.webp": {
+      "height": 448,
+      "source_sha256": "9d8d7cc1d18ef48935b9bc7a5dd0a99b65a6ce927557f85533a8aa9870258345",
+      "src": "/img/landing/swiss-v1/learn-inside-ai-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-inside-ai-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/learn-inside-ai-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/learn-inside-ai.webp": {
+      "height": 448,
+      "source_sha256": "f7e8c4bcc93d9d5fc178ddc4e59512dcb42c676ad7778251733b55fd8b83b43c",
+      "src": "/img/landing/swiss-v1/learn-inside-ai.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-inside-ai--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/learn-inside-ai.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/learn-math-dark.webp": {
+      "height": 448,
+      "source_sha256": "3672ad1f67ec1137790c66e5ff6dfad5d2e3b3612099cd84dd08ef0441d82f43",
+      "src": "/img/landing/swiss-v1/learn-math-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-math-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/learn-math-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/learn-math.webp": {
+      "height": 448,
+      "source_sha256": "e119e3c13ce7f0ab2fe529fa655c557a8c57fd3abf915ddcdc4a96f6d11308e4",
+      "src": "/img/landing/swiss-v1/learn-math.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-math--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/learn-math.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/learn-presentations-dark.webp": {
+      "height": 448,
+      "source_sha256": "21b1bae78f863388e9c504b8ec6d2516a4a71d2de8d42fbc7c39db46ce5f05c6",
+      "src": "/img/landing/swiss-v1/learn-presentations-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-presentations-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/learn-presentations-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/learn-presentations.webp": {
+      "height": 448,
+      "source_sha256": "14865fd1f77eb53b99a0c3b93c1d7dc9543949c61001c38270ef8df1e36b0f88",
+      "src": "/img/landing/swiss-v1/learn-presentations.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/learn-presentations--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/learn-presentations.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-hero-dark.webp": {
+      "height": 724,
+      "source_sha256": "31ec5015aa40ec5a3b156ef33aea0378a185c6a9b7eff4176077ac1fa72dc25d",
+      "src": "/img/landing/swiss-v1/stories-hero-dark.webp",
+      "variants": [
+        {
+          "height": 160,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-hero-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 256,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-hero-dark--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 400,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-hero-dark--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-hero-dark--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/stories-hero-dark.webp",
+          "width": 2172
+        }
+      ],
+      "width": 2172
+    },
+    "/img/landing/swiss-v1/stories-hero.webp": {
+      "height": 724,
+      "source_sha256": "e544abb183ba2caec03c5650afa5f463c9ee39719f900e5777fbe3e899ba5788",
+      "src": "/img/landing/swiss-v1/stories-hero.webp",
+      "variants": [
+        {
+          "height": 160,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-hero--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 256,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-hero--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 400,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-hero--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-hero--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/stories-hero.webp",
+          "width": 2172
+        }
+      ],
+      "width": 2172
+    },
+    "/img/landing/swiss-v1/stories-original-writing-dark.webp": {
+      "height": 448,
+      "source_sha256": "ea255140ea0101ab4131d8d2e5359c029d48aec38a916ad6aed231618584d8da",
+      "src": "/img/landing/swiss-v1/stories-original-writing-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-original-writing-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-original-writing-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-original-writing.webp": {
+      "height": 448,
+      "source_sha256": "b1999dfe4fcbe067e1a04e1c95831df9fb9432e74b5c77ca1f755d201d4dbce9",
+      "src": "/img/landing/swiss-v1/stories-original-writing.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-original-writing--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-original-writing.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-poetry-lyrics-dark.webp": {
+      "height": 448,
+      "source_sha256": "977369276422bb24d4db1890155750c1dd61e81e5198369e4a61690f6784ae55",
+      "src": "/img/landing/swiss-v1/stories-poetry-lyrics-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-poetry-lyrics-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-poetry-lyrics-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-poetry-lyrics.webp": {
+      "height": 448,
+      "source_sha256": "72b2f8ca0e66276f157fcdec348d001a5fb15f776ced562d93f03ae36fe23a61",
+      "src": "/img/landing/swiss-v1/stories-poetry-lyrics.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-poetry-lyrics--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-poetry-lyrics.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-swiss-folklore-dark.webp": {
+      "height": 448,
+      "source_sha256": "ab4e82c68c4e2801f32c30d0134275d28b9da4d0ba2495e9037be697caf8b3bd",
+      "src": "/img/landing/swiss-v1/stories-swiss-folklore-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-swiss-folklore-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-swiss-folklore-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-swiss-folklore.webp": {
+      "height": 448,
+      "source_sha256": "9c9c45d607513ec6358bb322b2139cee60d62dc866ff6c457e7df07af69ae093",
+      "src": "/img/landing/swiss-v1/stories-swiss-folklore.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-swiss-folklore--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-swiss-folklore.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-tolkien-fandom-dark.webp": {
+      "height": 448,
+      "source_sha256": "34639871309d846f98b44a5bb39f0a4026e74875d5d45dd9c6e8a10109c30ff0",
+      "src": "/img/landing/swiss-v1/stories-tolkien-fandom-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-tolkien-fandom-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-tolkien-fandom-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-tolkien-fandom.webp": {
+      "height": 448,
+      "source_sha256": "8a900ca9153d4ea0500c6913cff8436425cf0612bfe3e4e82ad2b2a46a783abe",
+      "src": "/img/landing/swiss-v1/stories-tolkien-fandom.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-tolkien-fandom--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-tolkien-fandom.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-writing-tools-dark.webp": {
+      "height": 448,
+      "source_sha256": "36b2effa7df5d804cccadfaad6a459dc96bd2fe2b5181489ea86e5267cb65d78",
+      "src": "/img/landing/swiss-v1/stories-writing-tools-dark.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-writing-tools-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-writing-tools-dark.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/stories-writing-tools.webp": {
+      "height": 448,
+      "source_sha256": "db0dd7358b6b4f36b6a451cbecbbfc8df61a45d48ded59193d289f2ad803dc28",
+      "src": "/img/landing/swiss-v1/stories-writing-tools.webp",
+      "variants": [
+        {
+          "height": 320,
+          "path": "/img/generated/responsive/landing/swiss-v1/stories-writing-tools--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 448,
+          "path": "/img/landing/swiss-v1/stories-writing-tools.webp",
+          "width": 672
+        }
+      ],
+      "width": 672
+    },
+    "/img/landing/swiss-v1/tools-hero-dark.webp": {
+      "height": 724,
+      "source_sha256": "af23054ed8f36aafa070e0ea9c7a4b976fddeb555a42e73a35572bb20332be1b",
+      "src": "/img/landing/swiss-v1/tools-hero-dark.webp",
+      "variants": [
+        {
+          "height": 161,
+          "path": "/img/generated/responsive/landing/swiss-v1/tools-hero-dark--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 257,
+          "path": "/img/generated/responsive/landing/swiss-v1/tools-hero-dark--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 401,
+          "path": "/img/generated/responsive/landing/swiss-v1/tools-hero-dark--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/tools-hero-dark--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/tools-hero-dark.webp",
+          "width": 2171
+        }
+      ],
+      "width": 2171
+    },
+    "/img/landing/swiss-v1/tools-hero.webp": {
+      "height": 724,
+      "source_sha256": "d2c6a1674bd1ec62ee7512cd31117c7828778191b1907e893e689d8c5b9ae0ac",
+      "src": "/img/landing/swiss-v1/tools-hero.webp",
+      "variants": [
+        {
+          "height": 160,
+          "path": "/img/generated/responsive/landing/swiss-v1/tools-hero--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 256,
+          "path": "/img/generated/responsive/landing/swiss-v1/tools-hero--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 400,
+          "path": "/img/generated/responsive/landing/swiss-v1/tools-hero--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 486,
+          "path": "/img/generated/responsive/landing/swiss-v1/tools-hero--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 724,
+          "path": "/img/landing/swiss-v1/tools-hero.webp",
+          "width": 2172
+        }
+      ],
+      "width": 2172
     },
     "/img/map_comments.webp": {
       "height": 2824,
