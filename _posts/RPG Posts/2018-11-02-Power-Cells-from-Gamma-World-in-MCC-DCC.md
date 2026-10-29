@@ -44,7 +44,8 @@ mathjax: null
 order: null
 image_width: 628
 image_height: 640
-mastodon-post-id: '115017666499956372'
+mastodon-post-id: "117522094327138026"
+mastodon-post-url: "https://tschopp.net/@Ted/117522094327138026"
 ---
 # POWER CELLS
 
