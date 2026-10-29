@@ -20396,14 +20396,13 @@
         {
           "id": "115017666980182415",
           "url": "https://tschopp.net/@Ted/115017666980182415"
+        },
+        {
+          "created_at": "2026-10-29T02:34:13.161Z",
+          "id": "117521858767190927",
+          "url": "https://tschopp.net/@Ted/117521858767190927"
         }
       ],
-      "intent": {
-        "key": "f9df1642589931fcdafef11c5603312ee07a128cb68dfe83e435908c6e6f0478",
-        "kind": "archive",
-        "started_at": "2026-10-29T02:33:53Z"
-      },
-      "missing_checked_at": "2026-10-29T02:33:53Z",
       "preferred_ids": [
         "115017666980182415"
       ],
@@ -20413,8 +20412,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-11-08-Increasing-in-Rank-MCC-with-Archaic-Alliances.md"
       ],
-      "state": "uncertain",
-      "title": "Increasing in Rank in MCC with Archaic Alliances"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T02:34:13.161Z",
+        "id": "117521858767190927",
+        "url": "https://tschopp.net/@Ted/117521858767190927"
+      },
+      "title": "Increasing in Rank in MCC with Archaic Alliances",
+      "verified_at": "2026-10-29T02:33:53Z"
     },
     "https://tedt.org/JRR-Tolkien-Fantasy-remains-a-human-right;/": {
       "aliases": [
@@ -26431,7 +26436,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T01:53:33.461Z",
+  "last_publication_at": "2026-10-29T02:34:13.161Z",
   "last_reconciliation_at": "2026-10-29T02:33:53Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 133,
@@ -26987,6 +26992,14 @@
       "kind": "archive",
       "operation": "1c102b70b7f4e9407cffa0d5645620fa759fe7efef6749cccca661a023637438",
       "url": "https://tschopp.net/@Ted/117521698879008282"
+    },
+    {
+      "canonical_url": "https://tedt.org/Increasing-in-Rank-MCC-with-Archaic-Alliances/",
+      "created_at": "2026-10-29T02:34:13.161Z",
+      "id": "117521858767190927",
+      "kind": "archive",
+      "operation": "f9df1642589931fcdafef11c5603312ee07a128cb68dfe83e435908c6e6f0478",
+      "url": "https://tschopp.net/@Ted/117521858767190927"
     }
   ],
   "run_count": 260,
