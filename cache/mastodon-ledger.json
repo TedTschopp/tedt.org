@@ -4330,12 +4330,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "83f98e47bb9769242ff227b95000cab96e6ad8b02eeb6cbe1a1de24534e5d8be",
-        "kind": "archive",
-        "started_at": "2026-10-29T13:51:51Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T13:52:16.791Z",
+          "id": "117524525009485657",
+          "url": "https://tschopp.net/@Ted/117524525009485657"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4343,8 +4344,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Alynor-dVrie.md"
       ],
-      "state": "uncertain",
-      "title": "Alynor d'Vrie"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T13:52:16.791Z",
+        "id": "117524525009485657",
+        "url": "https://tschopp.net/@Ted/117524525009485657"
+      },
+      "title": "Alynor d'Vrie",
+      "verified_at": "2026-10-29T13:51:51Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Ambush-Bug-BuTal.html": {
       "aliases": [
@@ -26635,7 +26642,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T13:19:08.192Z",
+  "last_publication_at": "2026-10-29T13:52:16.791Z",
   "last_reconciliation_at": "2026-10-29T13:51:51Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 150,
@@ -27327,6 +27334,14 @@
       "kind": "archive",
       "operation": "d190a0f41da4885e040c7ba4de2cb4cf4b96df3f7001388b76ee8dbeda38e4e1",
       "url": "https://tschopp.net/@Ted/117524394684711378"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Alynor-dVrie.html",
+      "created_at": "2026-10-29T13:52:16.791Z",
+      "id": "117524525009485657",
+      "kind": "archive",
+      "operation": "83f98e47bb9769242ff227b95000cab96e6ad8b02eeb6cbe1a1de24534e5d8be",
+      "url": "https://tschopp.net/@Ted/117524525009485657"
     }
   ],
   "run_count": 308,
