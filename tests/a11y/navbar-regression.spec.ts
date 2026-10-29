@@ -53,14 +53,12 @@ consoleErrorsFixture.describe('Navbar dropdown regression', () => {
       await expect(trigger).toHaveAttribute('aria-expanded', /false|undefined/);
 
       const assessmentsItem = page.locator(
-        'nav[aria-label="Primary"] a[href$="/assessments/"], ' +
         'nav[aria-label="Primary"] a[href$="/assessments/"]'
       ).first();
       await expect(assessmentsItem).toBeVisible();
       await expect(assessmentsItem).toContainText('Assessments');
 
       const aiLibraryItem = page.locator(
-        'nav[aria-label="Primary"] a[href="https://ai.tedt.org/"], ' +
         'nav[aria-label="Primary"] a[href="https://ai.tedt.org/"]'
       ).first();
       await expect(aiLibraryItem).toBeVisible();

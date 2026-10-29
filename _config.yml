@@ -204,6 +204,9 @@ collections:
     permalink: /:collection/:title
   # Slides are stored as regular posts under `_posts/Slides/` (see README: Slide Deck Front Matter).
   # Former `slides` collection removed for simplification; templates retain graceful fallback logic.
+  tools:
+    output: true
+    permalink: /tools/:name/
 
 # Defaults for different types of posts
 defaults:
