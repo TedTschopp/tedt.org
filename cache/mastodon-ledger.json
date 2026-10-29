@@ -4141,12 +4141,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "b38b526c7d6be0dd3280f5e52b54e27c2b4e3bb9396d9021597860adcf47d620",
-        "kind": "archive",
-        "started_at": "2026-10-29T10:51:11Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T10:51:32.504Z",
+          "id": "117523814318344246",
+          "url": "https://tschopp.net/@Ted/117523814318344246"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4154,8 +4155,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Advoid.md"
       ],
-      "state": "uncertain",
-      "title": "Advoid"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T10:51:32.504Z",
+        "id": "117523814318344246",
+        "url": "https://tschopp.net/@Ted/117523814318344246"
+      },
+      "title": "Advoid",
+      "verified_at": "2026-10-29T10:51:11Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Air-Dragon-Ghitgon.html": {
       "aliases": [
@@ -26567,7 +26574,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T10:18:39.871Z",
+  "last_publication_at": "2026-10-29T10:51:32.504Z",
   "last_reconciliation_at": "2026-10-29T10:51:11Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 145,
@@ -27219,6 +27226,14 @@
       "kind": "archive",
       "operation": "01fbe66dfb4011bf76d4545214298d2153847cd69c90ac9dda6aff4d246b3623",
       "url": "https://tschopp.net/@Ted/117523685039882311"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Advoid.html",
+      "created_at": "2026-10-29T10:51:32.504Z",
+      "id": "117523814318344246",
+      "kind": "archive",
+      "operation": "b38b526c7d6be0dd3280f5e52b54e27c2b4e3bb9396d9021597860adcf47d620",
+      "url": "https://tschopp.net/@Ted/117523814318344246"
     }
   ],
   "run_count": 294,
