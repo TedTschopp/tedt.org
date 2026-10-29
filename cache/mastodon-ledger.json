@@ -22694,14 +22694,13 @@
         {
           "id": "110924710196764929",
           "url": "https://tschopp.net/@Ted/110924710196764929"
+        },
+        {
+          "created_at": "2026-10-29T07:32:17.686Z",
+          "id": "117523030847381955",
+          "url": "https://tschopp.net/@Ted/117523030847381955"
         }
       ],
-      "intent": {
-        "key": "7954692099ad432d982bd660b6906c11b19f3f52d116df2e7574af93e09552d0",
-        "kind": "archive",
-        "started_at": "2026-10-29T07:31:55Z"
-      },
-      "missing_checked_at": "2026-10-29T07:31:55Z",
       "preferred_ids": [
         "110924710196764929"
       ],
@@ -22711,8 +22710,14 @@
       "source_paths": [
         "_posts/Swiss Folklore/2023-01-02-On-the-City-of-Saint-George.md"
       ],
-      "state": "uncertain",
-      "title": "On the Mountain of Saint George"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T07:32:17.686Z",
+        "id": "117523030847381955",
+        "url": "https://tschopp.net/@Ted/117523030847381955"
+      },
+      "title": "On the Mountain of Saint George",
+      "verified_at": "2026-10-29T07:31:55Z"
     },
     "https://tedt.org/Swiss-Folklore/The-Army-in-Schrattenberg.html": {
       "aliases": [
@@ -26501,7 +26506,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T07:01:33.906Z",
+  "last_publication_at": "2026-10-29T07:32:17.686Z",
   "last_reconciliation_at": "2026-10-29T07:31:55Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 140,
@@ -27113,6 +27118,14 @@
       "kind": "archive",
       "operation": "efd2ea5a80af8cbf25fcdc23255e6cadc86ac783e16d23e65791653856e6eea4",
       "url": "https://tschopp.net/@Ted/117522910013409030"
+    },
+    {
+      "canonical_url": "https://tedt.org/Swiss-Folklore/On-the-City-of-Saint-George.html",
+      "created_at": "2026-10-29T07:32:17.686Z",
+      "id": "117523030847381955",
+      "kind": "archive",
+      "operation": "7954692099ad432d982bd660b6906c11b19f3f52d116df2e7574af93e09552d0",
+      "url": "https://tschopp.net/@Ted/117523030847381955"
     }
   ],
   "run_count": 278,
