@@ -81,10 +81,10 @@ To keep the README Table of Contents current:
 
 - Regenerate after heading changes: `make docs-toc` (runs the `_code/update_readme_toc.py --write` script).
 - Validate in CI / locally: `make check-toc` (non-zero exit if drift detected).
-- Optional pre-commit hook: copy `tools/git-hooks/pre-commit-toc-check.sh` to `.git/hooks/pre-commit` and make it executable:
+- Optional pre-commit hook: copy `_code/git-hooks/pre-commit-toc-check.sh` to `.git/hooks/pre-commit` and make it executable:
 
 ```bash
-cp tools/git-hooks/pre-commit-toc-check.sh .git/hooks/pre-commit
+cp _code/git-hooks/pre-commit-toc-check.sh .git/hooks/pre-commit
 chmod +x .git/hooks/pre-commit
 ```
 
@@ -330,51 +330,12 @@ To run the site locally:
 
 ### Game Theory Playground
 
-Future lessons, prerequisite activities, shared modeling tools, and implementation
-priorities are tracked in [Game Theory Next Steps](game-theory/NEXT-STEPS.md).
-When planning the next work on this section, read that roadmap and verify its
-completion status against the current catalog and implementation.
-
-The collection lives at `/game-theory/`, with twenty individual experiment pages
-grouped into foundations, cooperation and information, and designing rules.
-The catalog and learning sequence come from `_data/game_theory.yml`; the
-`game-theory` layout reuses the site's navigation, metadata, theme controls,
-and footer. Experiment templates live in `_includes/game-theory/experiments/`,
-browser modules in `js/game-theory/`, and scoped styles in
-`_sass/components/_game-theory.scss`. No extra plugins or runtime libraries
-are required for the simulations. Experiment pages use the site's existing
-`math: true` flag and `assets/mathjax.html` include for formal equations.
-
-Math explanations have two levels: visible `.gt-math-beginner` walkthroughs
-using pre-algebra, and expandable `.gt-expert` sections with formal models,
-defined symbols, and assumptions. Mark fixed worked examples clearly; keep
-live values updated by JavaScript as ordinary text outside static equations.
-Wrap display equations in `.gt-equation` for horizontal scrolling on small screens.
-The site-wide `/math-guide/` reference gives spoken readings, plain-language
-meanings, and small examples of the notation. Link it from new mathematical
-content. Explain advanced symbols where they first appear, including local
-variable meanings, rather than requiring readers to leave the page or use a
-tooltip. Use `.gt-symbol-key` definition lists and a sentence translating each
-complex equation into an instruction. Keep advanced material optional.
-In symbol definitions, separate notation from its spoken wording with an
-explicit `In words:` label on its own line (`.gt-symbol-reading`). Avoid dash
-separators, which readers can mistake for mathematical operators.
-
-The landing page, twenty experiments, and math guide have coordinated hero artwork
-in `img/game-theory/`. The shared `game-theory/hero-image.html` include uses the
-existing responsive image manifest and lazy-loads catalog thumbnails. Preserve
-each image's natural proportions and keep text and equations in the page content.
-Art direction and generation prompts are documented in
-[`docs/artwork/game-theory-heroes.md`](docs/artwork/game-theory-heroes.md).
-
-Each experiment exports its model separately from its browser controls.
-Run the model checks with `node --test tests/game-theory/*.test.mjs` and the
-browser checks with `npx playwright test tests/a11y/game-theory*.spec.ts` after
-`bundle exec jekyll build`. Settings links contain validated control values
-and the random seed, not session history. Keep randomness seeded, mathematical
-results distinct from simulations, and model assumptions visible when adding
-experiments. Each new lab documents its small-model assumptions, tie-breaking
-rules, and the difference between a calculated incentive and simulated behavior.
+The [Game Theory Playground](https://tools.tedt.org/game-theory/) and
+[Math Guide](https://tools.tedt.org/math-guide/) are maintained in
+[TedTschopp/tools.tedt.org](https://github.com/TedTschopp/tools.tedt.org).
+The learning content, model modules, original tests, artwork, and planning roadmap
+moved with the applications. See that repository for current build and test commands.
+Use their full tools.tedt.org addresses when linking from this site.
 
 ### Testing the Site
 
@@ -400,7 +361,6 @@ Blocking checks in the quality gate:
 - Mastodon feed validation (structure, length ≤ 480 chars, absolute links)
 - Mastodon recovery, queue, forwarding, 24-to-48/day rate ramp, and throttling checks (`make mastodon_check`)
 - Feed diff regression guard (normalized snapshot drift across main and Mastodon JSON feeds)
-- Tools CSS sync guard (prevents drift between shared tool CSS and site base includes)
 - Representative accessibility coverage via Playwright + axe (`npm run test:a11y` locally, `test:a11y:allure` in CI)
 
 Advisory checks currently recorded in CI artifacts and summaries, but not used as blocking gates:
@@ -945,54 +905,16 @@ If you extend the hero system, keep logic centralized in the include and data fi
 
 ## Inside AI
 
-[Inside AI](/inside-ai/) is the branded transformer explorer. Jekyll owns the page,
-lessons and navigation; the isolated Svelte/D3 package in `_apps/inside-ai/` owns
-the interactive diagrams and browser-only inference. See
-[ADR 0014](docs/adr/0014-inside-ai-browser-explainer.md).
+[Inside AI](https://tools.tedt.org/inside-ai/) is maintained in
+[TedTschopp/tools.tedt.org](https://github.com/TedTschopp/tools.tedt.org), including
+its Svelte source, compiled browser files, tokenizer data, tests, and page shell.
+The [original architecture decision](docs/adr/0014-inside-ai-browser-explainer.md)
+remains as historical context. Refer to the Tools repository for active build instructions.
 
-Generated browser files in `inside-ai/assets/` are intentionally committed. Their
-producer is the isolated app build, their consumer is the Inside AI Jekyll
-layout, and CI rejects stale output. A normal `bundle exec jekyll build` can
-therefore publish the checked-in application without Node tooling.
-
-```bash
-npm ci
-npm ci --prefix _apps/inside-ai
-npm run test:inside-ai
-npm run build:inside-ai
-npm run check:inside-ai-build
-JEKYLL_ENV=production bundle exec jekyll build
-npx playwright install chromium firefox webkit
-npm run test:inside-ai:browser
-```
-
-For real inference checks, prepare the immutable model outside the public site
-and run all three browser engines against it:
-
-```bash
-npm run prepare:inside-ai-model
-INSIDE_AI_REAL_MODEL=1 INSIDE_AI_MODEL_FIXTURES=tmp/inside-ai-model-fixtures npm run test:inside-ai:browser
-```
-
-For post-deployment verification, set `PLAYWRIGHT_BASE_URL=https://tedt.org` and
-`INSIDE_AI_REAL_MODEL=1`; omit the fixture variable to exercise the public model
-origin. Local test reports and screenshots stay in ignored `test-results/`.
-
-The separate public [model repository](https://github.com/TedTschopp/inside-ai-models)
-serves 63 immutable chunks under `gpt2-bfe50afba10b9b56/`. Its manifest records
-source provenance, sizes and SHA-256 hashes. Do not copy those approximately
-657 MB of model files into this repository or `_site/`. The smaller ONNX WASM
-runtime is intentionally shipped locally; it is a generated dependency asset,
-not a model. On an upstream model update, publish a new immutable directory,
-verify its full hash, then change and test the application manifest reference.
-
-Examples load before any model download. Only the explicit live-model action
-starts downloading model files. Prompts are processed locally and are not sent
-to telemetry or an inference server. The Inside AI layout deliberately omits
-the normal analytics/session-replay scripts and uses a page-scoped WASM CSP.
-Recorded examples and illustrative vectors are visibly distinguished from live
-model results. No new front-matter feature flag is needed: the CSP and schema
-behavior is selected by `layout: inside-ai`.
+The separate [model repository](https://github.com/TedTschopp/inside-ai-models)
+continues to serve the immutable model chunks. The model downloads only after an
+explicit user action; prompts are processed in the browser. Traveller tools remain
+in this repository at their existing addresses.
 
 ## License
 
