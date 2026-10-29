@@ -40,15 +40,11 @@
               <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarNavDarkDropdown">
                 <div class="navbar-nav ms-auto" role="list">
                   <div class="nav-item" role="listitem">
-                    <button
-                      type="button"
-                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0 js-nav-button"
-                      data-href="{{ site.url }}/profile/"
+                    <a
+                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0"
+                      href="{{ site.url }}/profile/"
                       style="text-decoration-thickness: 1px;"
-                      aria-label="Go to Profile page">Profile</button>
-                    <noscript>
-                      <a href="{{ site.url }}/profile/" class="visually-hidden">Profile</a>
-                    </noscript>
+                      aria-label="Go to Profile page">Profile</a>
                   </div>
 
                   <div class="nav-item dropdown dropdown-center" role="listitem">
@@ -187,31 +183,23 @@
                   </div>
 
                   <div class="nav-item" role="listitem">
-                    <button
-                      type="button"
-                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0 js-nav-button"
-                      data-href="https://tools.tedt.org/"
+                    <a
+                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0"
+                      href="https://tools.tedt.org/"
                       style="text-decoration-thickness: 1px;"
                       aria-label="Go to Tools page">
                       Tools
-                    </button>
-                    <noscript>
-                      <a href="https://tools.tedt.org/" class="visually-hidden">Tools</a>
-                    </noscript>
+                    </a>
                   </div>
 
                   <div class="nav-item" role="listitem">
-                    <button
-                      type="button"
-                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0 js-nav-button"
-                      data-href="{{ site.url }}/assessments/"
+                    <a
+                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0"
+                      href="{{ site.url }}/assessments/"
                       style="text-decoration-thickness: 1px;"
                       aria-label="Go to Assessments page">
                       Assessments
-                    </button>
-                    <noscript>
-                      <a href="{{ site.url }}/assessments/" class="visually-hidden">Assessments</a>
-                    </noscript>
+                    </a>
                   </div>
 
 
@@ -224,31 +212,23 @@
                   </div>
 
                   <div class="nav-item" role="listitem">
-                    <button
-                      type="button"
-                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0 js-nav-button"
-                      data-href="{{ site.url }}/slides/"
+                    <a
+                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0"
+                      href="{{ site.url }}/slides/"
                       style="text-decoration-thickness: 1px;"
                       aria-label="Go to Presentations page">
                       Presentations
-                    </button>
-                    <noscript>
-                      <a href="{{ site.url }}/slides/" class="visually-hidden">Presentations</a>
-                    </noscript>
+                    </a>
                   </div>
 
                   <div class="nav-item" role="listitem">
-                    <button
-                      type="button"
-                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0 js-nav-button"
-                      data-href="https://ai.tedt.org/"
+                    <a
+                      class="nav-link mx-2 mx-xl-1 mx-xxl-2 menu-item btn btn-link p-0 border-0"
+                      href="https://ai.tedt.org/"
                       style="text-decoration-thickness: 1px;"
                       aria-label="Go to AI Library">
                       AI Library
-                    </button>
-                    <noscript>
-                      <a href="https://ai.tedt.org/" class="visually-hidden">AI Library</a>
-                    </noscript>
+                    </a>
                   </div>
 
                   {% include layout/member-nav-item.html %}
@@ -270,23 +250,3 @@
               </div>
             </div>
           </nav>
-
-          <script>
-            // Progressive enhancement: convert data-href buttons into navigable controls
-            (function () {
-              var buttons = document.querySelectorAll('.js-nav-button[data-href]');
-              buttons.forEach(function (btn) {
-                if (btn.dataset.enhanced) return; // idempotent
-                btn.addEventListener('click', function () {
-                  window.location = btn.getAttribute('data-href');
-                });
-                btn.addEventListener('keydown', function (e) {
-                  if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    btn.click();
-                  }
-                });
-                btn.dataset.enhanced = 'true';
-              });
-            })();
-          </script>
