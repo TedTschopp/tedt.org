@@ -20110,14 +20110,13 @@
         {
           "id": "115017668919305508",
           "url": "https://tschopp.net/@Ted/115017668919305508"
+        },
+        {
+          "created_at": "2026-10-29T06:28:51.649Z",
+          "id": "117522781414930098",
+          "url": "https://tschopp.net/@Ted/117522781414930098"
         }
       ],
-      "intent": {
-        "key": "9e017c4ef310cda9ab6526b5cd69f3fbab036e95a4abe82fd9e3c85b09341560",
-        "kind": "archive",
-        "started_at": "2026-10-29T06:28:27Z"
-      },
-      "missing_checked_at": "2026-10-29T06:28:27Z",
       "preferred_ids": [
         "115017668919305508"
       ],
@@ -20127,8 +20126,14 @@
       "source_paths": [
         "_posts/Blog Posts/2022-12-23-Getting-an-AI-to-run-your-next-TTRPG.md"
       ],
-      "state": "uncertain",
-      "title": "Getting an AI to Run Your Next TTRPG"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T06:28:51.649Z",
+        "id": "117522781414930098",
+        "url": "https://tschopp.net/@Ted/117522781414930098"
+      },
+      "title": "Getting an AI to Run Your Next TTRPG",
+      "verified_at": "2026-10-29T06:28:27Z"
     },
     "https://tedt.org/Gold-Medals-and-Paved-Roads/": {
       "aliases": [
@@ -26481,7 +26486,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T05:31:29.510Z",
+  "last_publication_at": "2026-10-29T06:28:51.649Z",
   "last_reconciliation_at": "2026-10-29T06:28:27Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 138,
@@ -27077,6 +27082,14 @@
       "kind": "archive",
       "operation": "770217481456709ccf12ddd9dfb8f4d5166f6def84ed8535936f99fd89e51025",
       "url": "https://tschopp.net/@Ted/117522555830886368"
+    },
+    {
+      "canonical_url": "https://tedt.org/Getting-an-AI-to-run-your-next-TTRPG/",
+      "created_at": "2026-10-29T06:28:51.649Z",
+      "id": "117522781414930098",
+      "kind": "archive",
+      "operation": "9e017c4ef310cda9ab6526b5cd69f3fbab036e95a4abe82fd9e3c85b09341560",
+      "url": "https://tschopp.net/@Ted/117522781414930098"
     }
   ],
   "run_count": 274,
