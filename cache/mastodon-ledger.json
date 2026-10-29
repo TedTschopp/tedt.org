@@ -4515,12 +4515,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "4a28acf28796392cf9b735d85c647d85e693e60d1a49a95385c37e0e5851910c",
-        "kind": "archive",
-        "started_at": "2026-10-29T16:51:45Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T16:52:08.056Z",
+          "id": "117525232225764113",
+          "url": "https://tschopp.net/@Ted/117525232225764113"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4528,8 +4529,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Arrowbeak.md"
       ],
-      "state": "uncertain",
-      "title": "Arrowbeak"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T16:52:08.056Z",
+        "id": "117525232225764113",
+        "url": "https://tschopp.net/@Ted/117525232225764113"
+      },
+      "title": "Arrowbeak",
+      "verified_at": "2026-10-29T16:51:45Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Artrak.html": {
       "aliases": [
@@ -26705,7 +26712,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T16:20:40.887Z",
+  "last_publication_at": "2026-10-29T16:52:08.056Z",
   "last_reconciliation_at": "2026-10-29T16:51:45Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 155,
@@ -27437,6 +27444,14 @@
       "kind": "archive",
       "operation": "d57ab54a3dec6fc05552b578a8f992d2adbae14faa9a3ef9810cb65aec65a5ff",
       "url": "https://tschopp.net/@Ted/117525108548378466"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Arrowbeak.html",
+      "created_at": "2026-10-29T16:52:08.056Z",
+      "id": "117525232225764113",
+      "kind": "archive",
+      "operation": "4a28acf28796392cf9b735d85c647d85e693e60d1a49a95385c37e0e5851910c",
+      "url": "https://tschopp.net/@Ted/117525232225764113"
     }
   ],
   "run_count": 320,
