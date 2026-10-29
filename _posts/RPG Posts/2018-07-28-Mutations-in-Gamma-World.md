@@ -61,7 +61,8 @@ mathjax: null
 order: null
 image_width: 1571
 image_height: 1752
-mastodon-post-id: '115017536172669708'
+mastodon-post-id: "117521419908314898"
+mastodon-post-url: "https://tschopp.net/@Ted/117521419908314898"
 ---
 # Notes
 
