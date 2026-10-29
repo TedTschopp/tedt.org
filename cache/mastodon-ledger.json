@@ -22244,14 +22244,13 @@
         {
           "id": "115017536651633587",
           "url": "https://tschopp.net/@Ted/115017536651633587"
+        },
+        {
+          "created_at": "2026-10-29T01:19:43.352Z",
+          "id": "117521565833755596",
+          "url": "https://tschopp.net/@Ted/117521565833755596"
         }
       ],
-      "intent": {
-        "key": "d0be6612ecea642a8a1820b7c39641f40195d04593294fa8d19be4817ba77a4b",
-        "kind": "archive",
-        "started_at": "2026-10-29T01:19:22Z"
-      },
-      "missing_checked_at": "2026-10-29T01:19:22Z",
       "preferred_ids": [
         "115017536651633587"
       ],
@@ -22261,8 +22260,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-09-04-Rules-for-Firearms-in-MCC-DCC.md"
       ],
-      "state": "uncertain",
-      "title": "Firearms in MCC & DCC"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T01:19:43.352Z",
+        "id": "117521565833755596",
+        "url": "https://tschopp.net/@Ted/117521565833755596"
+      },
+      "title": "Firearms in MCC & DCC",
+      "verified_at": "2026-10-29T01:19:22Z"
     },
     "https://tedt.org/Rules-for-Gamma-World-Weapons-in-MCC-DCC/": {
       "aliases": [
@@ -26411,7 +26416,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T00:42:36.707Z",
+  "last_publication_at": "2026-10-29T01:19:43.352Z",
   "last_reconciliation_at": "2026-10-29T01:19:22Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 131,
@@ -26951,6 +26956,14 @@
       "kind": "archive",
       "operation": "8fd99ea377967f4878434cef2f7f8d8c71d3794a14e1bb69b9e1eca9f91c6705",
       "url": "https://tschopp.net/@Ted/117521419908314898"
+    },
+    {
+      "canonical_url": "https://tedt.org/Rules-for-Firearms-in-MCC-DCC/",
+      "created_at": "2026-10-29T01:19:43.352Z",
+      "id": "117521565833755596",
+      "kind": "archive",
+      "operation": "d0be6612ecea642a8a1820b7c39641f40195d04593294fa8d19be4817ba77a4b",
+      "url": "https://tschopp.net/@Ted/117521565833755596"
     }
   ],
   "run_count": 255,
