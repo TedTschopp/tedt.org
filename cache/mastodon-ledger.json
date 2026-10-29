@@ -4626,12 +4626,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "c933cecd89dfeace147a8ba73b2c7ef96c93ea88bda790031ef4d4495f33fc74",
-        "kind": "archive",
-        "started_at": "2026-10-29T18:35:59Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T18:36:24.247Z",
+          "id": "117525642231604499",
+          "url": "https://tschopp.net/@Ted/117525642231604499"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4639,8 +4640,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Axel.md"
       ],
-      "state": "uncertain",
-      "title": "Axel"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T18:36:24.247Z",
+        "id": "117525642231604499",
+        "url": "https://tschopp.net/@Ted/117525642231604499"
+      },
+      "title": "Axel",
+      "verified_at": "2026-10-29T18:35:59Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Baby-Bronts-Moklas.html": {
       "aliases": [
@@ -26747,7 +26754,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T18:02:08.109Z",
+  "last_publication_at": "2026-10-29T18:36:24.247Z",
   "last_reconciliation_at": "2026-10-29T18:35:59Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 158,
@@ -27503,6 +27510,14 @@
       "kind": "archive",
       "operation": "cde94b22cd0ea37a5d9327403e4f4c5fe625716d19dabb3bed5f3758d9295645",
       "url": "https://tschopp.net/@Ted/117525507480549303"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Axel.html",
+      "created_at": "2026-10-29T18:36:24.247Z",
+      "id": "117525642231604499",
+      "kind": "archive",
+      "operation": "c933cecd89dfeace147a8ba73b2c7ef96c93ea88bda790031ef4d4495f33fc74",
+      "url": "https://tschopp.net/@Ted/117525642231604499"
     }
   ],
   "run_count": 328,
