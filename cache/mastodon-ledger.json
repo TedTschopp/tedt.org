@@ -4441,12 +4441,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "1b4e599e1efdf73edd6d6d36888cb66e886afd022d52d1924735c764cf26c9ea",
-        "kind": "archive",
-        "started_at": "2026-10-29T15:40:09Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T15:40:34.390Z",
+          "id": "117524950836294106",
+          "url": "https://tschopp.net/@Ted/117524950836294106"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4454,8 +4455,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Apothecary.md"
       ],
-      "state": "uncertain",
-      "title": "Apothecary"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T15:40:34.390Z",
+        "id": "117524950836294106",
+        "url": "https://tschopp.net/@Ted/117524950836294106"
+      },
+      "title": "Apothecary",
+      "verified_at": "2026-10-29T15:40:09Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Architect.html": {
       "aliases": [
@@ -26677,7 +26684,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T15:01:33.173Z",
+  "last_publication_at": "2026-10-29T15:40:34.390Z",
   "last_reconciliation_at": "2026-10-29T15:40:09Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 153,
@@ -27393,6 +27400,14 @@
       "kind": "archive",
       "operation": "8c1ca077a7288830677766974f7a308dd8942f0acaed92e58a4bc544b4d09553",
       "url": "https://tschopp.net/@Ted/117524797402078157"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Apothecary.html",
+      "created_at": "2026-10-29T15:40:34.390Z",
+      "id": "117524950836294106",
+      "kind": "archive",
+      "operation": "1b4e599e1efdf73edd6d6d36888cb66e886afd022d52d1924735c764cf26c9ea",
+      "url": "https://tschopp.net/@Ted/117524950836294106"
     }
   ],
   "run_count": 314,
