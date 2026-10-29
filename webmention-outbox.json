@@ -221,8 +221,8 @@
         },
         "https://tedt.org/RFP-Response-Review/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T17:40:21+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-29T21:52:24+00:00"
         },
         "https://tedt.org/Reprint-Accenture-to-exit-staff-who-cannot-be-retrained-for-age-of-AI/": {
           "state": "accepted",
@@ -272,8 +272,8 @@
         },
         "https://openai.com/index/introducing-gpt-4-5/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T17:40:21+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-29T21:52:24+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -731,8 +731,8 @@
         },
         "https://transformer-circuits.pub/2026/nla/index.html#introduction": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T17:52:11+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-29T21:52:24+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -1702,13 +1702,13 @@
         },
         "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:08:09+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://openai.com/index/pacing-model-development-cyber-capabilities/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:08:09+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://slsa.dev/spec/v1.2/verifying-artifacts": {
           "state": "unsupported",
@@ -1918,8 +1918,8 @@
       "deliveries": {
         "https://fortune.com/2026/01/31/ai-agent-OpenClaw-clawdbot-openclaw-data-privacy-security-nightmare-moltbook-social-network/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:08:09+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://openclaw.ai/blog/introducing-openclaw": {
           "state": "unsupported",
@@ -1971,28 +1971,28 @@
         },
         "https://www.barrons.com/articles/cloudflare-stock-OpenClaw-viral-ai-bot-fdb3e77b?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:08:09+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://www.businessinsider.com/clawdbot-changes-name-OpenClaw-anthropic-trademark-2026-1?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:08:09+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://www.ft.com/content/078fe849-cc4f-43be-ab40-8bdd30c1187d?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:08:09+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://www.paloaltonetworks.com/blog/network-security/why-OpenClaw-may-signal-ai-crisis/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:08:09+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://www.reuters.com/business/cloudflare-surges-viral-ai-agent-buzz-lifts-expectations-2026-01-27/?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:08:09+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://www.theverge.com/ai-artificial-intelligence/871006/social-network-facebook-for-ai-agents-moltbook-OpenClaw-openclaw": {
           "state": "unsupported",
@@ -2165,8 +2165,8 @@
         },
         "https://doi.org/10.1177/09500170211015067": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:52:21+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://en.wikipedia.org/wiki/Erik_Davis": {
           "state": "unsupported",
@@ -2174,8 +2174,8 @@
         },
         "https://mitpress.mit.edu/9780262516037/understanding-knowledge-as-a-commons/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T17:52:21+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T19:52:24+00:00"
         },
         "https://tedt.org/Agents-Dont-Click/": {
           "state": "accepted",
@@ -2454,28 +2454,36 @@
           "attempts": 1
         },
         "https://tedt.org/The-Map-Is-Not-the-Decision/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/QmELmWTFyqnlF1CK0kGW",
+          "attempts": 1
         },
         "https://tedt.org/Why-AI-Needs-a-Harness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/QIFK9NhHuH82M7H1WiEb",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-governance-risk-evaluation/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/PL-u7UJC3Hu5Rhtgzo2T",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-utilities-cyber-resilience/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/nxyLvKz2ttVHDuI464V3",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -2502,20 +2510,20 @@
       ],
       "deliveries": {
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.gutenberg.org/cache/epub/5000/pg5000.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.uffizi.it/en/online-exhibitions/nativity-2018": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -2532,16 +2540,16 @@
       ],
       "deliveries": {
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://worrydream.com/refs/Brooks_1986_-_No_Silver_Bullet.pdf": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -2556,28 +2564,29 @@
       ],
       "deliveries": {
         "https://hippocraticai.com/polaris-1/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://ir.mi.com/system/files-encrypted/nasdaq_kms/assets/2024/08/21/5-44-48/Announcement.pdf": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-29T18:52:24+00:00"
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.scopely.com/en/news/scopely-to-acquire-niantic-games-business-which-includes-pokemon-go-one-of-the-most-successful-mobile-games-of-all-time": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.ucsf.edu/news/2025/03/429561/how-paralyzed-man-moved-robotic-arm-his-thoughts": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -2614,56 +2623,57 @@
       ],
       "deliveries": {
         "https://arxiv.org/html/2304.03271v5": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://arxiv.org/html/2508.15734v1": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://arxiv.org/pdf/2104.10350": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://datacenters.atmeta.com/wp-content/uploads/2024/10/Denmark-Odense.pdf": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-29T18:52:24+00:00"
         },
         "https://doi.org/10.1016/j.joule.2026.102430": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://investor.pgecorp.com/news-events/press-releases/press-release-details/2025/PGE-Begins-Energy-Infrastructure-Upgrades-to-Bring-San-Joses-Net-Zero-Community-to-Life/default.aspx": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://mistral.ai/news/our-contribution-to-a-global-environmental-standard-for-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://news.mit.edu/2021/infinite-cooling-nuclear-0803": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.eia.gov/tools/faqs/faq.php?id=97&t=7": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.usgs.gov/mission-areas/water-resources/science/water-use-terminology": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -2679,12 +2689,12 @@
       ],
       "deliveries": {
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -2717,16 +2727,22 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Engineer-Coach/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/H0IKP5Vf5h_zzxAZSilc",
+          "attempts": 1
         },
         "https://tedt.org/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/LzA7YeWPC0o98QVu8xc3",
+          "attempts": 1
         },
         "https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/S7TpqSJ7MIVF-Of-APMr",
+          "attempts": 1
         },
         "https://tedt.org/Gold-Medals-and-Paved-Roads/": {
           "state": "pending",
