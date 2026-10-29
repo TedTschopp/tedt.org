@@ -221,8 +221,8 @@
         },
         "https://tedt.org/RFP-Response-Review/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-29T21:52:24+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T06:51:24+00:00"
         },
         "https://tedt.org/Reprint-Accenture-to-exit-staff-who-cannot-be-retrained-for-age-of-AI/": {
           "state": "accepted",
@@ -272,8 +272,8 @@
         },
         "https://openai.com/index/introducing-gpt-4-5/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-29T21:52:24+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T06:51:24+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -731,8 +731,8 @@
         },
         "https://transformer-circuits.pub/2026/nla/index.html#introduction": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-29T21:52:24+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T06:51:24+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -4111,12 +4111,12 @@
           "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -4132,32 +4132,42 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Is-a-People-Change/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/L6m0BtcfenI8J6yqIlij",
+          "attempts": 1
         },
         "https://tedt.org/Make-AI-Boring/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/B-OCJ4vzsRB9ZEyfoMLd",
+          "attempts": 1
         },
         "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Vj8X6pWARWzCfa8Y4xL5",
+          "attempts": 1
         },
         "https://tedt.org/When-Output-Becomes-Abundant/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/XruLB8HzojLc05HZyv6Z",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/enterprise-ai-strategy/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/CfuC8ObUQgAQiQkhW0WZ",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -4310,28 +4320,29 @@
       ],
       "deliveries": {
         "https://huggingface.co/blog/agent-intrusion-technical-timeline": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://huggingface.co/blog/security-incident-july-2026": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-29T23:51:24+00:00"
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.youtube.com/watch?v=87DyyMV0kCY": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -4352,52 +4363,72 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Is-a-People-Change/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/7glK0tR5-6eqzAY7UGxF",
+          "attempts": 1
         },
         "https://tedt.org/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/ulLSeAHpQR_NjXzCbiS0",
+          "attempts": 1
         },
         "https://tedt.org/Beyond-the-Light-Bulb/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/MAdYlsTHA9hj00plsVbE",
+          "attempts": 1
         },
         "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/ydkHxaQrPi8ht21ARekZ",
+          "attempts": 1
         },
         "https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/PhiXwqOFtqtuWABMvwbc",
+          "attempts": 1
         },
         "https://tedt.org/Guardrails-and-Gigawatts/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/ll7c4llmM7tY25k2g7hN",
+          "attempts": 1
         },
         "https://tedt.org/Make-AI-Boring/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/oCDk1LJY158kFMLqeC0g",
+          "attempts": 1
         },
         "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/AVIKAxs9Fm5vESdOhFNx",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-utilities-cyber-resilience/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/d6-2AKav1BceQR9n8dAf",
+          "attempts": 1
         },
         "https://tedt.org/topics/enterprise-ai-strategy/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/ic57E0VeawP5NaPV9jvP",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -4413,32 +4444,42 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Is-a-People-Change/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/iWCNt42QInysj-5M5JMH",
+          "attempts": 1
         },
         "https://tedt.org/Beyond-the-Light-Bulb/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Apk7jZRnzoXdTqAe1Hhw",
+          "attempts": 1
         },
         "https://tedt.org/Make-AI-Boring/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/yizEk_PTQwnlNu4BKC41",
+          "attempts": 1
         },
         "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/VI2e-oEsaDQVWjKgIjX2",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/enterprise-ai-strategy/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/xabH_LYWML5G8TOW6mxC",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -4467,56 +4508,64 @@
       ],
       "deliveries": {
         "https://arxiv.org/abs/2609.24348": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://arxiv.org/abs/2610.02952": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://claude.dev/blog/claude-code-in-the-cloud/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://claude.dev/blog/how-we-made-claude-ai-faster/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://claude.dev/blog/solving-code-review-at-anthropic/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://claude.dev/blog/what-a-task-costs-on-opus-5-5/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://cursor.com/blog/improved-token-efficiency": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://popcar.bearblog.dev/ai-is-mass-decompiling-games-thats-both-awesome-and-scary/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/simonwillison.net/webmention/Z20mRjy8hlQAoLV_E8lC",
+          "attempts": 1
         },
         "https://simonwillison.net/2026/Oct/9/built-using-my-voice/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/simonwillison.net/webmention/OxsFpGlOMFN0RZepsFuf",
+          "attempts": 1
         },
         "https://tedt.org/Beyond-the-Mirror/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/ffAY4kFeBZve0Oh4w9i-",
+          "attempts": 1
         },
         "https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/usbxBCawLn1XMZ65UA6J",
+          "attempts": 1
         },
         "https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/": {
           "state": "pending",
