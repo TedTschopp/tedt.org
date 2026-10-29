@@ -84,3 +84,22 @@ to the current build during tests, so an unpublished change can be verified.
 
 Follow with each consumer's own checks and a live browser check after deployment.
 See ADR 0018 for the architecture and trust decision.
+
+## Landing-page artwork
+
+The six main destinations use Swiss graphic design illustrations commissioned
+for their existing Paper and Night palettes. The five TedT.org hubs also have
+artwork for all 23 topic groups. This requested image series takes precedence
+over the design system's usual limit of one decorative image per page.
+
+`_data/landing_artwork.yml` records the images, actual dimensions, responsive
+sources, dark companions, and alt text. Final WebP files live in
+`img/landing/swiss-v1/`; the exact prompts and generation method are recorded in
+`docs/artwork/landing-swiss-v1.json`. Existing painted assets remain available.
+
+Headings and links remain HTML. Native `picture` elements provide the system
+appearance fallback; `artwork.js` adjusts their dark sources to the resolved
+shared preference and listens to `tedt:theme-change`. It does not maintain a
+second theme preference. Hero images receive priority, while topic illustrations
+load lazily with explicit intrinsic dimensions. Tools loads its paired hero and
+the same small appearance adapter from TedT.org.

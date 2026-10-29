@@ -3,10 +3,9 @@
   title: Essays
   url: https://tedt.org/essays/
   description: Ideas about technology, work, faith, and everyday life.
-  image: "/img/categories/home-hero-images/hero-hardware.webp"
-  image_alt: A hand presses a component into a dark circuit board traced with glowing
-    cyan lines.
-  image_focus: 30% 50%
+  image: /img/landing/swiss-v1/essays-hero.webp
+  image_alt: An open book unfolds into pages connected by fine lines and circular markers.
+  image_focus: 50% 50%
   categories:
   - ai
   - enterprise-architecture
@@ -38,14 +37,16 @@
     url: https://tedt.org/essays/#life-culture
   - title: Yesterday in AI
     url: https://yesterdai.tedt.org/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/essays-hero-dark.webp
 - key: stories
   title: Stories & Folklore
   url: https://tedt.org/stories/
   description: Swiss folklore, original writing, and the stories we carry with us.
-  image: "/img/categories/home-hero-images/hero-village.webp"
-  image_alt: A mist-filled valley at dusk, with an old Swiss village and church tower
-    beneath forested hills.
-  image_focus: 60% 70%
+  image: /img/landing/swiss-v1/stories-hero.webp
+  image_alt: A village and arched doorway rise from an open book, with a winding path through its pages.
+  image_focus: 50% 50%
   categories:
   - folklore
   - personal-writing
@@ -67,14 +68,16 @@
     url: https://plotto.tedt.org/
   - title: Swiss Music Box
     url: https://spieldose.tedt.org/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/stories-hero-dark.webp
 - key: games
   title: Games & Worlds
   url: https://tedt.org/games/
   description: Campaigns, creatures, imagined worlds, and tools for the table.
-  image: "/img/categories/home-hero-images/hero-dice.webp"
-  image_alt: A hand-drawn map glowing blue on a wooden table, with polyhedral dice,
-    a jar of dice and a closed notebook.
-  image_focus: 45% 55%
+  image: /img/landing/swiss-v1/games-hero.webp
+  image_alt: An unnumbered polyhedral die sits between islands on a fine cartographic grid.
+  image_focus: 50% 50%
   categories:
   - bestiary
   - dcc
@@ -106,14 +109,16 @@
     url: https://randomtables.tedt.org/
   - title: TTRPG GM Tools
     url: https://ttrpg-mcp.tedt.org/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/games-hero-dark.webp
 - key: tools
   title: Tools
   url: https://tools.tedt.org/
   description: Practical browser tools, plot generators, and reusable AI resources.
-  image: "/img/categories/home-hero-images/hero-library.webp"
-  image_alt: A vaulted library hall lined with bookshelves, ending in a tall stained-glass
-    doorway.
-  image_focus: 50% 55%
+  image: /img/landing/swiss-v1/tools-hero.webp
+  image_alt: An open tool case holds a caliper, transforming blocks, and a adjustment dial.
+  image_focus: 50% 50%
   categories:
   - prompts
   - projects
@@ -124,14 +129,16 @@
     url: https://busy.tedt.org/
   - title: RSS Feed Hub
     url: https://rss.tedt.org/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/tools-hero-dark.webp
 - key: learn
   title: Learn
   url: https://tedt.org/learn/
   description: Explore ideas through interactive lessons, reading paths, and talks.
-  image: "/img/categories/home-hero-images/hero-data-center.webp"
-  image_alt: A person seen from behind faces a wall of screens showing glowing circuit
-    diagrams.
-  image_focus: 25% 45%
+  image: /img/landing/swiss-v1/learn-hero.webp
+  image_alt: steps rise through a rectangular frame, crossed by a circular arc and grid lines.
+  image_focus: 50% 50%
   children:
   - title: Inside AI
     url: https://tedt.org/learn/#inside-ai
@@ -143,17 +150,18 @@
     url: https://tedt.org/learn/#presentations
   - title: Assessments
     url: https://tedt.org/assessments/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/learn-hero-dark.webp
 - key: about
   title: About
   url: https://tedt.org/about-ted/
   description: Who I am, the work I do, and how to get in touch.
-  image: "/img/home/Ted-Tschopp-Enterprise-Architect-v4.webp"
-  image_alt: An illustrated portrait of Ted Tschopp at his desk overlooking a city
-    at sunset.
-  image_width: 1500
-  image_height: 1000
-  image_focus: 40% 45%
-  image_portrait: true
+  image: /img/landing/swiss-v1/about-hero.webp
+  image_alt: An architectural plan, blank notebook, and small die share a workbench beneath a window.
+  image_width: 2172
+  image_height: 724
+  image_focus: 50% 50%
   categories:
   - home
   - draft
@@ -170,3 +178,4 @@
     url: https://tedt.org/about-ted/#editorial-standards
   - title: Members
     url: https://member.tedt.org/
+  image_dark: /img/landing/swiss-v1/about-hero-dark.webp

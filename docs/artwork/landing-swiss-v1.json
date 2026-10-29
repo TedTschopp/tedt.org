@@ -1,0 +1,1331 @@
+{
+  "generator": "Built-in image_gen",
+  "style": "Swiss graphic design / International Typographic Style",
+  "paletteSource": "Existing landing-page CSS tokens",
+  "assets": [
+    {
+      "key": "essays-hero",
+      "subject": "Subject: the craft of essay writing and connecting ideas. A dramatically oversized open notebook built from precise navy page planes, with three off-register deep-blue cut-paper strips unfolding from the spread into an elegant branching argument. Thin slate editorial rules represent composition without suggesting fake writing. One confident interconnected visual idea: thought becoming a well-structured essay. No pen nib logos or light bulbs.",
+      "hero": true,
+      "section": "essays",
+      "title": "essays",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: wide horizontal 3:1 banner, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. Subject: the craft of essay writing and connecting ideas. A dramatically oversized open notebook built from precise navy page planes, with three off-register deep-blue cut-paper strips unfolding from the spread into an elegant branching argument. Thin slate editorial rules represent composition without suggesting fake writing. One confident interconnected visual idea: thought becoming a well-structured essay. No pen nib logos or light bulbs.",
+      "alt": "An open book unfolds into pages connected by fine lines and circular markers.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:1 horizontal banner canvas, 2172 by 724 pixels. Subject: essays.",
+      "image": {
+        "src": "/img/landing/swiss-v1/essays-hero.webp",
+        "width": 2172,
+        "height": 724,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/essays-hero--480w.webp",
+            "width": 480
+          },
+          {
+            "src": "/img/landing/swiss-v1/essays-hero--960w.webp",
+            "width": 960
+          },
+          {
+            "src": "/img/landing/swiss-v1/essays-hero.webp",
+            "width": 2172
+          }
+        ],
+        "bytes": 61636,
+        "alt": "An open book unfolds into pages connected by fine lines and circular markers.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/essays-hero-dark.webp",
+          "width": 2172,
+          "height": 724,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/essays-hero-dark--480w.webp",
+              "width": 480
+            },
+            {
+              "src": "/img/landing/swiss-v1/essays-hero-dark--960w.webp",
+              "width": 960
+            },
+            {
+              "src": "/img/landing/swiss-v1/essays-hero-dark.webp",
+              "width": 2172
+            }
+          ],
+          "bytes": 53222
+        }
+      },
+      "bytes": 114858
+    },
+    {
+      "key": "stories-hero",
+      "subject": "Subject: Stories & Folklore, where stories open imagined places. A monumental open book made of crisp navy planes; from its central fold rises a simple old village doorway and a curving deep-blue narrative ribbon, creating a restrained paper-theatre silhouette. A small circle beyond the doorway suggests a story's unknown world. Evoke oral storytelling and imagination, not a bookshop or a real Swiss national scene. Precise flat cut-paper illustration, no decorative filigree.",
+      "hero": true,
+      "section": "stories",
+      "title": "stories",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: wide horizontal 3:1 banner, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. Subject: Stories & Folklore, where stories open imagined places. A monumental open book made of crisp navy planes; from its central fold rises a simple old village doorway and a curving deep-blue narrative ribbon, creating a restrained paper-theatre silhouette. A small circle beyond the doorway suggests a story's unknown world. Evoke oral storytelling and imagination, not a bookshop or a real Swiss national scene. Precise flat cut-paper illustration, no decorative filigree.",
+      "alt": "A village and arched doorway rise from an open book, with a winding path through its pages.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:1 horizontal banner canvas, 2172 by 724 pixels. Subject: stories.",
+      "image": {
+        "src": "/img/landing/swiss-v1/stories-hero.webp",
+        "width": 2172,
+        "height": 724,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/stories-hero--480w.webp",
+            "width": 480
+          },
+          {
+            "src": "/img/landing/swiss-v1/stories-hero--960w.webp",
+            "width": 960
+          },
+          {
+            "src": "/img/landing/swiss-v1/stories-hero.webp",
+            "width": 2172
+          }
+        ],
+        "bytes": 48376,
+        "alt": "A village and arched doorway rise from an open book, with a winding path through its pages.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/stories-hero-dark.webp",
+          "width": 2172,
+          "height": 724,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/stories-hero-dark--480w.webp",
+              "width": 480
+            },
+            {
+              "src": "/img/landing/swiss-v1/stories-hero-dark--960w.webp",
+              "width": 960
+            },
+            {
+              "src": "/img/landing/swiss-v1/stories-hero-dark.webp",
+              "width": 2172
+            }
+          ],
+          "bytes": 43122
+        }
+      },
+      "bytes": 91498
+    },
+    {
+      "key": "games-hero",
+      "subject": "Subject: Games & Worlds, tabletop play and worldbuilding. A single bold faceted twenty-sided die interrupts a precise abstract map grid. Two contour-like angular island silhouettes and a small circular game piece build a readable, balanced world around it. Die faces are unnumbered. Treat it as an intelligent Swiss editorial composition about play shaping a world, not fantasy concept painting.",
+      "hero": true,
+      "section": "games",
+      "title": "games",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: wide horizontal 3:1 banner, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. Subject: Games & Worlds, tabletop play and worldbuilding. A single bold faceted twenty-sided die interrupts a precise abstract map grid. Two contour-like angular island silhouettes and a small circular game piece build a readable, balanced world around it. Die faces are unnumbered. Treat it as an intelligent Swiss editorial composition about play shaping a world, not fantasy concept painting.",
+      "alt": "An unnumbered polyhedral die sits between islands on a fine cartographic grid.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:1 horizontal banner canvas, 2172 by 724 pixels. Subject: games.",
+      "image": {
+        "src": "/img/landing/swiss-v1/games-hero.webp",
+        "width": 2172,
+        "height": 724,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/games-hero--480w.webp",
+            "width": 480
+          },
+          {
+            "src": "/img/landing/swiss-v1/games-hero--960w.webp",
+            "width": 960
+          },
+          {
+            "src": "/img/landing/swiss-v1/games-hero.webp",
+            "width": 2172
+          }
+        ],
+        "bytes": 83916,
+        "alt": "An unnumbered polyhedral die sits between islands on a fine cartographic grid.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/games-hero-dark.webp",
+          "width": 2171,
+          "height": 724,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/games-hero-dark--480w.webp",
+              "width": 480
+            },
+            {
+              "src": "/img/landing/swiss-v1/games-hero-dark--960w.webp",
+              "width": 960
+            },
+            {
+              "src": "/img/landing/swiss-v1/games-hero-dark.webp",
+              "width": 2171
+            }
+          ],
+          "bytes": 77530
+        }
+      },
+      "bytes": 161446
+    },
+    {
+      "key": "tools-hero",
+      "section": "tools",
+      "title": "Tools",
+      "hero": true,
+      "subject": "Subject: a practical browser-based tool cabinet. A bold deep-blue open modular case with three precisely fitted shapes: a caliper-like measuring form, a transformation arrow joining two square blocks, and a circular adjustment dial. This is a finished geometric illustration of useful instruments, not a website interface. Match the Tools landing-page palette: warm paper #f8f6f0 and structural navy #00446f with charcoal #101820 and one small cyan #00a9e0 element; no red, yellow, orange or generic Swiss poster accent.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: wide horizontal 3:1 banner, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. Subject: a practical browser-based tool cabinet. A bold deep-blue open modular case with three precisely fitted shapes: a caliper-like measuring form, a transformation arrow joining two square blocks, and a circular adjustment dial. This is a finished geometric illustration of useful instruments, not a website interface. Match the Tools landing-page palette: warm paper #f8f6f0 and structural navy #00446f with charcoal #101820 and one small cyan #00a9e0 element; no red, yellow, orange or generic Swiss poster accent.",
+      "alt": "An open tool case holds a caliper, transforming blocks, and a adjustment dial.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #101820; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:1 horizontal banner canvas, 2172 by 724 pixels. Subject: Tools.",
+      "image": {
+        "src": "/img/landing/swiss-v1/tools-hero.webp",
+        "width": 2172,
+        "height": 724,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/tools-hero--480w.webp",
+            "width": 480
+          },
+          {
+            "src": "/img/landing/swiss-v1/tools-hero--960w.webp",
+            "width": 960
+          },
+          {
+            "src": "/img/landing/swiss-v1/tools-hero.webp",
+            "width": 2172
+          }
+        ],
+        "bytes": 31232,
+        "alt": "An open tool case holds a caliper, transforming blocks, and a adjustment dial.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/tools-hero-dark.webp",
+          "width": 2171,
+          "height": 724,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/tools-hero-dark--480w.webp",
+              "width": 480
+            },
+            {
+              "src": "/img/landing/swiss-v1/tools-hero-dark--960w.webp",
+              "width": 960
+            },
+            {
+              "src": "/img/landing/swiss-v1/tools-hero-dark.webp",
+              "width": 2171
+            }
+          ],
+          "bytes": 28776
+        }
+      },
+      "bytes": 60008
+    },
+    {
+      "key": "learn-hero",
+      "section": "learn",
+      "title": "Learn",
+      "hero": true,
+      "subject": "Subject: learning through structured exploration. A striking stepped arrangement of deep-blue rectangular planes rises through a navy open architectural frame, joined by a precise circular arc and an unnumbered slate coordinate grid. An intelligent visual metaphor for understanding a complex idea one clear step at a time. The planes and arc form one dominant geometric composition; no books, no light bulbs, no screens, no people.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: wide horizontal 3:1 banner, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. Subject: learning through structured exploration. A striking stepped arrangement of deep-blue rectangular planes rises through a navy open architectural frame, joined by a precise circular arc and an unnumbered slate coordinate grid. An intelligent visual metaphor for understanding a complex idea one clear step at a time. The planes and arc form one dominant geometric composition; no books, no light bulbs, no screens, no people.",
+      "alt": "steps rise through a rectangular frame, crossed by a circular arc and grid lines.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:1 horizontal banner canvas, 2172 by 724 pixels. Subject: Learn.",
+      "image": {
+        "src": "/img/landing/swiss-v1/learn-hero.webp",
+        "width": 2172,
+        "height": 724,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/learn-hero--480w.webp",
+            "width": 480
+          },
+          {
+            "src": "/img/landing/swiss-v1/learn-hero--960w.webp",
+            "width": 960
+          },
+          {
+            "src": "/img/landing/swiss-v1/learn-hero.webp",
+            "width": 2172
+          }
+        ],
+        "bytes": 26372,
+        "alt": "steps rise through a rectangular frame, crossed by a circular arc and grid lines.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/learn-hero-dark.webp",
+          "width": 2172,
+          "height": 724,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/learn-hero-dark--480w.webp",
+              "width": 480
+            },
+            {
+              "src": "/img/landing/swiss-v1/learn-hero-dark--960w.webp",
+              "width": 960
+            },
+            {
+              "src": "/img/landing/swiss-v1/learn-hero-dark.webp",
+              "width": 2172
+            }
+          ],
+          "bytes": 23610
+        }
+      },
+      "bytes": 49982
+    },
+    {
+      "key": "about-hero",
+      "section": "about",
+      "title": "About",
+      "hero": true,
+      "subject": "Subject: one person's public workbench, joining architecture, writing and games. A carefully ordered overhead still life reduced to strong cut-paper silhouettes: a folded architectural plan, an open blank notebook, and a single unnumbered polyhedral die on a deep-blue desk plane. A partial geometric window rectangle frames the working space. Convey personal craft and curiosity with restrained asymmetry, no person or invented portrait.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: wide horizontal 3:1 banner, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. Subject: one person's public workbench, joining architecture, writing and games. A carefully ordered overhead still life reduced to strong cut-paper silhouettes: a folded architectural plan, an open blank notebook, and a single unnumbered polyhedral die on a deep-blue desk plane. A partial geometric window rectangle frames the working space. Convey personal craft and curiosity with restrained asymmetry, no person or invented portrait.",
+      "alt": "An architectural plan, blank notebook, and small die share a workbench beneath a window.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:1 horizontal banner canvas, 2172 by 724 pixels. Subject: About.",
+      "image": {
+        "src": "/img/landing/swiss-v1/about-hero.webp",
+        "width": 2172,
+        "height": 724,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/about-hero--480w.webp",
+            "width": 480
+          },
+          {
+            "src": "/img/landing/swiss-v1/about-hero--960w.webp",
+            "width": 960
+          },
+          {
+            "src": "/img/landing/swiss-v1/about-hero.webp",
+            "width": 2172
+          }
+        ],
+        "bytes": 67310,
+        "alt": "An architectural plan, blank notebook, and small die share a workbench beneath a window.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/about-hero-dark.webp",
+          "width": 2171,
+          "height": 724,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/about-hero-dark--480w.webp",
+              "width": 480
+            },
+            {
+              "src": "/img/landing/swiss-v1/about-hero-dark--960w.webp",
+              "width": 960
+            },
+            {
+              "src": "/img/landing/swiss-v1/about-hero-dark.webp",
+              "width": 2171
+            }
+          ],
+          "bytes": 57844
+        }
+      },
+      "bytes": 125154
+    },
+    {
+      "key": "essays-ai-architecture",
+      "section": "essays",
+      "id": "ai-architecture",
+      "title": "AI & Enterprise Architecture",
+      "subject": "A precise architectural floor plan becomes an interconnected modular system: three bold rectilinear navy frames joined by a blue routing path and small circular connection points. One integrated structural idea about designing useful AI systems within organizations. No brain, robot, code text or server photo.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: A precise architectural floor plan becomes an interconnected modular system: three bold rectilinear navy frames joined by a blue routing path and small circular connection points. One integrated structural idea about designing useful AI systems within organizations. No brain, robot, code text or server photo.",
+      "alt": "Three floor-plan modules connect through routes and circular junctions.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: AI & Enterprise Architecture.",
+      "image": {
+        "src": "/img/landing/swiss-v1/essays-ai-architecture.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/essays-ai-architecture--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/essays-ai-architecture.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 14124,
+        "alt": "Three floor-plan modules connect through routes and circular junctions.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/essays-ai-architecture-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/essays-ai-architecture-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/essays-ai-architecture-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 13266
+        }
+      },
+      "bytes": 27390
+    },
+    {
+      "key": "essays-work-leadership",
+      "section": "essays",
+      "id": "work-leadership",
+      "title": "Work & Leadership",
+      "subject": "Three offset navy structural uprights collaborate to support one long deep-blue bridge beam; the exact modular fit makes a clear metaphor for teamwork and coordinated leadership. A strong asymmetric architectural silhouette with one deliberate opening and fine slate alignment rules. No corporate people icons or handshakes.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: Three offset navy structural uprights collaborate to support one long deep-blue bridge beam; the exact modular fit makes a clear metaphor for teamwork and coordinated leadership. A strong asymmetric architectural silhouette with one deliberate opening and fine slate alignment rules. No corporate people icons or handshakes.",
+      "alt": "Three uprights work together to support a long bridge beam.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Work & Leadership.",
+      "image": {
+        "src": "/img/landing/swiss-v1/essays-work-leadership.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/essays-work-leadership--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/essays-work-leadership.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 11506,
+        "alt": "Three uprights work together to support a long bridge beam.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/essays-work-leadership-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/essays-work-leadership-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/essays-work-leadership-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 9674
+        }
+      },
+      "bytes": 21180
+    },
+    {
+      "key": "essays-technology-science",
+      "section": "essays",
+      "id": "technology-science",
+      "title": "Technology & Science",
+      "subject": "A bold measured wave traverses a rectilinear navy sampling grid, turning an organic scientific observation into a crisp series of blue square data samples. Flat geometric editorial image about computing, measurement and research. No numbers, axes labels, screens or pseudo formulas.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: A bold measured wave traverses a rectilinear navy sampling grid, turning an organic scientific observation into a crisp series of blue square data samples. Flat geometric editorial image about computing, measurement and research. No numbers, axes labels, screens or pseudo formulas.",
+      "alt": "A continuous wave becomes square samples across a measurement grid.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Technology & Science.",
+      "image": {
+        "src": "/img/landing/swiss-v1/essays-technology-science.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/essays-technology-science--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/essays-technology-science.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 13168,
+        "alt": "A continuous wave becomes square samples across a measurement grid.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/essays-technology-science-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/essays-technology-science-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/essays-technology-science-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 9780
+        }
+      },
+      "bytes": 22948
+    },
+    {
+      "key": "essays-faith-philosophy",
+      "section": "essays",
+      "id": "faith-philosophy",
+      "title": "Faith & Philosophy",
+      "subject": "A monumental navy doorway opens into a circular deep-blue space; two precisely balanced angular paths approach it from different directions. A thoughtful visual metaphor for belief, ethics and open questions, with disciplined negative space. No religious logos, national symbols, question-mark text or extra objects.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: A monumental navy doorway opens into a circular deep-blue space; two precisely balanced angular paths approach it from different directions. A thoughtful visual metaphor for belief, ethics and open questions, with disciplined negative space. No religious logos, national symbols, question-mark text or extra objects.",
+      "alt": "Two geometric paths lead toward an open doorway and circular space.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Faith & Philosophy.",
+      "image": {
+        "src": "/img/landing/swiss-v1/essays-faith-philosophy.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/essays-faith-philosophy--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/essays-faith-philosophy.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 9688,
+        "alt": "Two geometric paths lead toward an open doorway and circular space.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/essays-faith-philosophy-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/essays-faith-philosophy-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/essays-faith-philosophy-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 8472
+        }
+      },
+      "bytes": 18160
+    },
+    {
+      "key": "essays-life-culture",
+      "section": "essays",
+      "id": "life-culture",
+      "title": "Life & Culture",
+      "subject": "An oversized navy vinyl record partly overlaps a geometric open book, with a single deep-blue cinematic rectangular aperture cutting across the composition. A tightly integrated still life about reading, watching and listening. Plain unlettered book pages and record label, no text or music lyrics.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: An oversized navy vinyl record partly overlaps a geometric open book, with a single deep-blue cinematic rectangular aperture cutting across the composition. A tightly integrated still life about reading, watching and listening. Plain unlettered book pages and record label, no text or music lyrics.",
+      "alt": "A record overlaps an open book and a cinematic frame.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Life & Culture.",
+      "image": {
+        "src": "/img/landing/swiss-v1/essays-life-culture.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/essays-life-culture--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/essays-life-culture.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 19932,
+        "alt": "A record overlaps an open book and a cinematic frame.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/essays-life-culture-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/essays-life-culture-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/essays-life-culture-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 19112
+        }
+      },
+      "bytes": 39044
+    },
+    {
+      "key": "stories-swiss-folklore",
+      "section": "stories",
+      "id": "swiss-folklore",
+      "title": "Swiss Folklore",
+      "subject": "An angular Alpine village doorway, a single steep mountain silhouette, and a tall mysterious pine-tree shadow form one spare paper-theatre scene. Swiss folklore is the subject, so the Alpine landscape belongs here, but no flags, crests or tourism imagery. Quietly uncanny and precise, no detailed decorative fantasy painting.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: An angular Alpine village doorway, a single steep mountain silhouette, and a tall mysterious pine-tree shadow form one spare paper-theatre scene. Swiss folklore is the subject, so the Alpine landscape belongs here, but no flags, crests or tourism imagery. Quietly uncanny and precise, no detailed decorative fantasy painting.",
+      "alt": "An Alpine doorway overlooks mountains and tall pines.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Swiss Folklore.",
+      "image": {
+        "src": "/img/landing/swiss-v1/stories-swiss-folklore.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/stories-swiss-folklore--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/stories-swiss-folklore.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 29156,
+        "alt": "An Alpine doorway overlooks mountains and tall pines.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/stories-swiss-folklore-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/stories-swiss-folklore-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/stories-swiss-folklore-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 29334
+        }
+      },
+      "bytes": 58490
+    },
+    {
+      "key": "stories-original-writing",
+      "section": "stories",
+      "id": "original-writing",
+      "title": "Original Writing",
+      "subject": "An oversized navy fountain-pen nib releases a single broad deep-blue paper ribbon, which folds through two precise right angles into a new blank page. A visual metaphor for original writing taking form. Crisp graphic silhouette; no letters, writing, ink splatter, logos or decorative script.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: An oversized navy fountain-pen nib releases a single broad deep-blue paper ribbon, which folds through two precise right angles into a new blank page. A visual metaphor for original writing taking form. Crisp graphic silhouette; no letters, writing, ink splatter, logos or decorative script.",
+      "alt": "A pen nib releases a ribbon that folds into a blank page.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Original Writing.",
+      "image": {
+        "src": "/img/landing/swiss-v1/stories-original-writing.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/stories-original-writing--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/stories-original-writing.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 7848,
+        "alt": "A pen nib releases a ribbon that folds into a blank page.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/stories-original-writing-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/stories-original-writing-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/stories-original-writing-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 6686
+        }
+      },
+      "bytes": 14534
+    },
+    {
+      "key": "stories-poetry-lyrics",
+      "section": "stories",
+      "id": "poetry-lyrics",
+      "title": "Poetry & Lyrics",
+      "subject": "Five fine slate rhythm lines are interrupted by a broad deep-blue folded-paper wave and a single navy circular musical pulse. The geometry suggests a poem finding cadence and a melody carried through a page. No musical notation, text, lyrics, clefs or pretend score.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: Five fine slate rhythm lines are interrupted by a broad deep-blue folded-paper wave and a single navy circular musical pulse. The geometry suggests a poem finding cadence and a melody carried through a page. No musical notation, text, lyrics, clefs or pretend score.",
+      "alt": "A folded wave and pulse interrupt five fine rhythmic lines.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Poetry & Lyrics.",
+      "image": {
+        "src": "/img/landing/swiss-v1/stories-poetry-lyrics.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/stories-poetry-lyrics--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/stories-poetry-lyrics.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 12800,
+        "alt": "A folded wave and pulse interrupt five fine rhythmic lines.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/stories-poetry-lyrics-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/stories-poetry-lyrics-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/stories-poetry-lyrics-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 9906
+        }
+      },
+      "bytes": 22706
+    },
+    {
+      "key": "stories-tolkien-fandom",
+      "section": "stories",
+      "id": "tolkien-fandom",
+      "title": "Tolkien & Fandom",
+      "subject": "A plain circular doorway cuts into a navy hillside; a deep-blue path branches toward one distant geometric tree. A restrained literary-world illustration evoking readers entering an imagined landscape and sharing its paths. No characters, film stills, franchise lettering, runes or logos.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: A plain circular doorway cuts into a navy hillside; a deep-blue path branches toward one distant geometric tree. A restrained literary-world illustration evoking readers entering an imagined landscape and sharing its paths. No characters, film stills, franchise lettering, runes or logos.",
+      "alt": "A circular doorway opens onto a branching path and a distant tree.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Tolkien & Fandom.",
+      "image": {
+        "src": "/img/landing/swiss-v1/stories-tolkien-fandom.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/stories-tolkien-fandom--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/stories-tolkien-fandom.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 11784,
+        "alt": "A circular doorway opens onto a branching path and a distant tree.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/stories-tolkien-fandom-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/stories-tolkien-fandom-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/stories-tolkien-fandom-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 10920
+        }
+      },
+      "bytes": 22704
+    },
+    {
+      "key": "stories-writing-tools",
+      "section": "stories",
+      "id": "writing-tools",
+      "title": "Writing Tools",
+      "subject": "Three crisp unlettered story cards form a branching plot: one large navy card splits through a precise connector into two smaller deep-blue cards, with a single circular choice marker. Editorial illustration of an author's plot-building workbench. No diagram labels, filler text or app interface.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: Three crisp unlettered story cards form a branching plot: one large navy card splits through a precise connector into two smaller deep-blue cards, with a single circular choice marker. Editorial illustration of an author's plot-building workbench. No diagram labels, filler text or app interface.",
+      "alt": "Three illustrated story cards branch from a choice point toward castle and mountain journeys.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Writing Tools.",
+      "image": {
+        "src": "/img/landing/swiss-v1/stories-writing-tools.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/stories-writing-tools--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/stories-writing-tools.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 14172,
+        "alt": "Three illustrated story cards branch from a choice point toward castle and mountain journeys.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/stories-writing-tools-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/stories-writing-tools-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/stories-writing-tools-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 13250
+        }
+      },
+      "bytes": 27422
+    },
+    {
+      "key": "games-marchen-engine",
+      "section": "games",
+      "id": "marchen-engine",
+      "title": "The Märchen Engine",
+      "subject": "A deep-blue story wheel has a dark doorway at its center; a single angular pine bough crosses the outer navy mechanism like a shadow. A folkloric tabletop engine where story and mechanical structure meet. Flat geometric cultural-poster treatment, slightly uncanny. No gore, flags, runes or lettering.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: A deep-blue story wheel has a dark doorway at its center; a single angular pine bough crosses the outer navy mechanism like a shadow. A folkloric tabletop engine where story and mechanical structure meet. Flat geometric cultural-poster treatment, slightly uncanny. No gore, flags, runes or lettering.",
+      "alt": "A story wheel surrounds a dark doorway crossed by an angular pine bough.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: The Märchen Engine.",
+      "image": {
+        "src": "/img/landing/swiss-v1/games-marchen-engine.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/games-marchen-engine--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/games-marchen-engine.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 34690,
+        "alt": "A story wheel surrounds a dark doorway crossed by an angular pine bough.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/games-marchen-engine-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/games-marchen-engine-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/games-marchen-engine-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 34988
+        }
+      },
+      "bytes": 69678
+    },
+    {
+      "key": "games-campaigns-systems",
+      "section": "games",
+      "id": "campaigns-systems",
+      "title": "Campaigns & Systems",
+      "subject": "A folded navy campaign map sits inside an orderly arrangement of three interlocking deep-blue game-system tiles; one circular journey marker links the tiles across the map. A readable graphic about choosing a rules system and building a continuing adventure. No tile labels, faux maps, numbers or logos.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: A folded navy campaign map sits inside an orderly arrangement of three interlocking deep-blue game-system tiles; one circular journey marker links the tiles across the map. A readable graphic about choosing a rules system and building a continuing adventure. No tile labels, faux maps, numbers or logos.",
+      "alt": "Interlocking game tiles connect across a folded campaign map.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Campaigns & Systems.",
+      "image": {
+        "src": "/img/landing/swiss-v1/games-campaigns-systems.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/games-campaigns-systems--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/games-campaigns-systems.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 15142,
+        "alt": "Interlocking game tiles connect across a folded campaign map.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/games-campaigns-systems-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/games-campaigns-systems-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/games-campaigns-systems-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 14994
+        }
+      },
+      "bytes": 30136
+    },
+    {
+      "key": "games-bestiary-reference",
+      "section": "games",
+      "id": "bestiary-reference",
+      "title": "Bestiary & Reference",
+      "subject": "One bold geometric antlered imaginary creature silhouette emerges from a precise blue archival index frame. The creature has a calm, unmistakable profile, with a navy body and one angular antler structure; a small blank reference tab organizes the composition. No gore, text, decorative heraldry or national motifs.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: One bold geometric antlered imaginary creature silhouette emerges from a precise blue archival index frame. The creature has a calm, unmistakable profile, with a navy body and one angular antler structure; a small blank reference tab organizes the composition. No gore, text, decorative heraldry or national motifs.",
+      "alt": "An angular antlered creature stands within a archival reference frame.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Bestiary & Reference.",
+      "image": {
+        "src": "/img/landing/swiss-v1/games-bestiary-reference.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/games-bestiary-reference--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/games-bestiary-reference.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 10298,
+        "alt": "An angular antlered creature stands within a archival reference frame.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/games-bestiary-reference-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/games-bestiary-reference-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/games-bestiary-reference-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 8554
+        }
+      },
+      "bytes": 18852
+    },
+    {
+      "key": "games-worldbuilding-maps",
+      "section": "games",
+      "id": "worldbuilding-maps",
+      "title": "Worldbuilding & Maps",
+      "subject": "A deep-blue archipelago of three sharply defined irregular landforms is surveyed by a fine navy coordinate grid and two exact circular contour arcs. One dominant cartographic idea about inventing terrain and mapping a world. No geographic labels, compass letters, numbers, fantasy ornaments or realistic textures.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: A deep-blue archipelago of three sharply defined irregular landforms is surveyed by a fine navy coordinate grid and two exact circular contour arcs. One dominant cartographic idea about inventing terrain and mapping a world. No geographic labels, compass letters, numbers, fantasy ornaments or realistic textures.",
+      "alt": "Three island shapes meet a survey grid and circular contour lines.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Worldbuilding & Maps.",
+      "image": {
+        "src": "/img/landing/swiss-v1/games-worldbuilding-maps.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/games-worldbuilding-maps--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/games-worldbuilding-maps.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 23624,
+        "alt": "Three island shapes meet a survey grid and circular contour lines.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/games-worldbuilding-maps-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/games-worldbuilding-maps-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/games-worldbuilding-maps-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 21852
+        }
+      },
+      "bytes": 45476
+    },
+    {
+      "key": "games-gm-tools",
+      "section": "games",
+      "id": "gm-tools",
+      "title": "GM Tools",
+      "subject": "An orderly navy matrix of blank oracle tiles feeds one selected deep-blue square through a simple angular mechanical guide, with a single round game token at the output. Editorial illustration of tabletop preparation and useful random generators. No dice numbers, letters, UI text or complex machinery.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: An orderly navy matrix of blank oracle tiles feeds one selected deep-blue square through a simple angular mechanical guide, with a single round game token at the output. Editorial illustration of tabletop preparation and useful random generators. No dice numbers, letters, UI text or complex machinery.",
+      "alt": "A matrix of oracle tiles feeds a selection through a mechanical guide.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: GM Tools.",
+      "image": {
+        "src": "/img/landing/swiss-v1/games-gm-tools.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/games-gm-tools--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/games-gm-tools.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 10516,
+        "alt": "A matrix of oracle tiles feeds a selection through a mechanical guide.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/games-gm-tools-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/games-gm-tools-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/games-gm-tools-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 10428
+        }
+      },
+      "bytes": 20944
+    },
+    {
+      "key": "learn-inside-ai",
+      "section": "learn",
+      "id": "inside-ai",
+      "title": "Inside AI",
+      "subject": "A short row of solid navy token blocks passes through three precise open rectangular transform layers, then resolves into a newly arranged deep-blue sequence. One clear editorial metaphor for looking inside a language model. No robot heads, brains, screens, code, equations or text on the blocks.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: A short row of solid navy token blocks passes through three precise open rectangular transform layers, then resolves into a newly arranged deep-blue sequence. One clear editorial metaphor for looking inside a language model. No robot heads, brains, screens, code, equations or text on the blocks.",
+      "alt": "token blocks pass through rectangular layers into a new sequence.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Inside AI.",
+      "image": {
+        "src": "/img/landing/swiss-v1/learn-inside-ai.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/learn-inside-ai--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/learn-inside-ai.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 9562,
+        "alt": "token blocks pass through rectangular layers into a new sequence.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/learn-inside-ai-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/learn-inside-ai-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/learn-inside-ai-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 7270
+        }
+      },
+      "bytes": 16832
+    },
+    {
+      "key": "learn-game-theory",
+      "section": "learn",
+      "id": "game-theory",
+      "title": "Game Theory Playground",
+      "subject": "Two opposed navy semicircular player forms face a clean four-cell deep-blue payoff board; one thin path joins them through a shared central choice. Elegant geometric metaphor for incentives, cooperation and collective decisions. No labels, player faces, money, numbers or formulas.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: Two opposed navy semicircular player forms face a clean four-cell deep-blue payoff board; one thin path joins them through a shared central choice. Elegant geometric metaphor for incentives, cooperation and collective decisions. No labels, player faces, money, numbers or formulas.",
+      "alt": "Two player shapes face a decision board joined by a shared path.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Game Theory Playground.",
+      "image": {
+        "src": "/img/landing/swiss-v1/learn-game-theory.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/learn-game-theory--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/learn-game-theory.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 10326,
+        "alt": "Two player shapes face a decision board joined by a shared path.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/learn-game-theory-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/learn-game-theory-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/learn-game-theory-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 9654
+        }
+      },
+      "bytes": 19980
+    },
+    {
+      "key": "learn-math",
+      "section": "learn",
+      "id": "math",
+      "title": "Math in Plain English",
+      "subject": "One bold navy circle intersects a precise deep-blue right triangle and a thin slate coordinate grid; a single circular arc unites them into a readable geometric insight. Confident flat mathematical editorial art, no numbers, letters, formulas, labels or decorative mathematical symbols.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: One bold navy circle intersects a precise deep-blue right triangle and a thin slate coordinate grid; a single circular arc unites them into a readable geometric insight. Confident flat mathematical editorial art, no numbers, letters, formulas, labels or decorative mathematical symbols.",
+      "alt": "A circle and triangle intersect across an unnumbered coordinate grid.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Math in Plain English.",
+      "image": {
+        "src": "/img/landing/swiss-v1/learn-math.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/learn-math--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/learn-math.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 7196,
+        "alt": "A circle and triangle intersect across an unnumbered coordinate grid.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/learn-math-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/learn-math-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/learn-math-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 6220
+        }
+      },
+      "bytes": 13416
+    },
+    {
+      "key": "learn-presentations",
+      "section": "learn",
+      "id": "presentations",
+      "title": "Talks & Presentations",
+      "subject": "Three offset landscape slide planes create a strong navy silhouette; the front deep-blue plane contains one large simple circle-and-line diagram and a slender diagonal pointer touches its edge. A clear editorial metaphor for sharing an idea in a talk. No text placeholders, bullets, letters, screens or stage people.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: Three offset landscape slide planes create a strong navy silhouette; the front deep-blue plane contains one large simple circle-and-line diagram and a slender diagonal pointer touches its edge. A clear editorial metaphor for sharing an idea in a talk. No text placeholders, bullets, letters, screens or stage people.",
+      "alt": "Three offset slide planes hold a circle-and-line diagram beside a pointer.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Talks & Presentations.",
+      "image": {
+        "src": "/img/landing/swiss-v1/learn-presentations.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/learn-presentations--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/learn-presentations.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 9832,
+        "alt": "Three offset slide planes hold a circle-and-line diagram beside a pointer.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/learn-presentations-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/learn-presentations-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/learn-presentations-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 8220
+        }
+      },
+      "bytes": 18052
+    },
+    {
+      "key": "about-profile",
+      "section": "about",
+      "id": "profile",
+      "title": "About Ted",
+      "subject": "An empty navy maker's chair beside a precisely drawn deep-blue desk corner and one open architectural notebook. A human presence suggested by a thoughtful workspace rather than an invented portrait. Strong silhouette, generous paper negative space, no faces, body, lettering, clutter or sentimental decorations.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: An empty navy maker's chair beside a precisely drawn deep-blue desk corner and one open architectural notebook. A human presence suggested by a thoughtful workspace rather than an invented portrait. Strong silhouette, generous paper negative space, no faces, body, lettering, clutter or sentimental decorations.",
+      "alt": "A maker’s chair stands beside a desk and an open architectural notebook.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: About Ted.",
+      "image": {
+        "src": "/img/landing/swiss-v1/about-profile.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/about-profile--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/about-profile.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 22490,
+        "alt": "A maker’s chair stands beside a desk and an open architectural notebook.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/about-profile-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/about-profile-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/about-profile-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 22212
+        }
+      },
+      "bytes": 44702
+    },
+    {
+      "key": "about-projects",
+      "section": "about",
+      "id": "projects",
+      "title": "Selected Work & Projects",
+      "subject": "Three architectural navy frames at different stages of completion interlock into one useful deep-blue structure. A single alignment path connects plan, construction and finished object. A precise editorial image about making complex work understandable. No cranes, city skyline, app interface, labels or logos.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: Three architectural navy frames at different stages of completion interlock into one useful deep-blue structure. A single alignment path connects plan, construction and finished object. A precise editorial image about making complex work understandable. No cranes, city skyline, app interface, labels or logos.",
+      "alt": "Three architectural frames interlock into a completed structure.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Selected Work & Projects.",
+      "image": {
+        "src": "/img/landing/swiss-v1/about-projects.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/about-projects--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/about-projects.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 16776,
+        "alt": "Three architectural frames interlock into a completed structure.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/about-projects-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/about-projects-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/about-projects-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 15714
+        }
+      },
+      "bytes": 32490
+    },
+    {
+      "key": "about-contact",
+      "section": "about",
+      "id": "contact",
+      "title": "Contact",
+      "subject": "A large open navy envelope is reduced to two sharp folded planes; a deep-blue circular message shape passes outward along one elegant connector to a second small point. A clean editorial image about getting in touch and exchanging ideas. No at-sign, words, letters, stamps, logos or notification badges.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: A large open navy envelope is reduced to two sharp folded planes; a deep-blue circular message shape passes outward along one elegant connector to a second small point. A clean editorial image about getting in touch and exchanging ideas. No at-sign, words, letters, stamps, logos or notification badges.",
+      "alt": "A message travels from an open envelope along a fine connecting line.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Contact.",
+      "image": {
+        "src": "/img/landing/swiss-v1/about-contact.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/about-contact--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/about-contact.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 7296,
+        "alt": "A message travels from an open envelope along a fine connecting line.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/about-contact-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/about-contact-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/about-contact-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 5914
+        }
+      },
+      "bytes": 13210
+    },
+    {
+      "key": "about-editorial-standards",
+      "section": "about",
+      "id": "editorial-standards",
+      "title": "Editorial Standards",
+      "subject": "An open navy reference book with one wide deep-blue margin and a precise source-note tab; three thin slate citation lines connect the margin to a small blank document plane. A rigorous graphic about evidence, context and responsible publishing. No writing, labels, check-mark badge, seal or invented copy.",
+      "prompt": "Use case: stylized-concept. Asset type: finished website landing-page editorial illustration. OUTPUT: horizontal 3:2 editorial panel, high-resolution raster artwork, edge-to-edge flat composition. Art direction: rigorous Swiss graphic design / International Typographic Style; precise modular grid, asymmetric balance, sharply cut geometric silhouettes, disciplined large negative spaces, one dominant legible subject. A sophisticated cultural-magazine illustration, not a UI mockup, not an icon sheet. Palette must match this website, NOT generic Swiss red/yellow/black: warm paper #f8f6f0, navy #243746, deep structural blue #00446f, muted slate #52606b, optional small pale-blue #8ac7e8 shapes. Use paper as the ground, navy and deep blue for graphic forms. Only these colors. Flat matte colors and crisp edges. No typography whatsoever, no letters, numerals, fake text, labels, logos, watermark, frame, gradients, glow, shadows, 3D or photographic mockup. No national flags. Keep the entire main subject in the central 65% of the width so narrow crops remain intelligible. Generous clear margins; composition should breathe. SUBJECT: An open navy reference book with one wide deep-blue margin and a precise source-note tab; three thin slate citation lines connect the margin to a small blank document plane. A rigorous graphic about evidence, context and responsible publishing. No writing, labels, check-mark badge, seal or invented copy.",
+      "alt": "Source-note lines connect an open reference book with a document tab.",
+      "dark_prompt": "Create the DARK THEME companion of this exact supplied editorial illustration. The supplied image is the edit target, not a loose reference. Preserve every object, silhouette, position, proportion, line, spatial relationship, framing and aspect ratio. Change only the color treatment so it remains the SAME composition at the SAME dimensions. Match the actual website Night palette, not generic Swiss-design red/yellow or a simple photographic negative. Use a dark slate ground #14212b; principal shapes in warm paper #f8f6f0, pale structural blue #8ac7e8, muted blue-gray #b7c1c8 and restrained mid-slate #52606b. Let pale-blue and paper silhouettes stand clearly against the slate field. Thin lines must remain visible. Preserve negative space, precise geometry, crisp edges and the original flat editorial finish. Do not introduce white rectangular backing panels; the whole paper ground becomes dark slate, including the corners and open spaces between shapes. Do not add, remove, move, redraw or reinterpret objects. No text, labels, new symbols, black-and-white inversion, glow, glossy effects, framing, mockups or extra decoration. Output aspect ratio and canvas must match the supplied image.  Preserve the 3:2 horizontal canvas, 1536 by 1024 pixels. Subject: Editorial Standards.",
+      "image": {
+        "src": "/img/landing/swiss-v1/about-editorial-standards.webp",
+        "width": 672,
+        "height": 448,
+        "sources": [
+          {
+            "src": "/img/landing/swiss-v1/about-editorial-standards--336w.webp",
+            "width": 336
+          },
+          {
+            "src": "/img/landing/swiss-v1/about-editorial-standards.webp",
+            "width": 672
+          }
+        ],
+        "bytes": 12242,
+        "alt": "Source-note lines connect an open reference book with a document tab.",
+        "dark": {
+          "src": "/img/landing/swiss-v1/about-editorial-standards-dark.webp",
+          "width": 672,
+          "height": 448,
+          "sources": [
+            {
+              "src": "/img/landing/swiss-v1/about-editorial-standards-dark--336w.webp",
+              "width": 336
+            },
+            {
+              "src": "/img/landing/swiss-v1/about-editorial-standards-dark.webp",
+              "width": 672
+            }
+          ],
+          "bytes": 11048
+        }
+      },
+      "bytes": 23290
+    }
+  ]
+}

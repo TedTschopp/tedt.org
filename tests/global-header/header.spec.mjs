@@ -90,3 +90,25 @@ test('central updates reach unchanged consumer HTML and iframe headers are suppr
   });
   await expect(page.frameLocator('iframe').locator('tedt-global-header')).toBeHidden();
 });
+
+test('landing artwork follows shared Light, Dark, and System choices', async ({ page }) => {
+  await sharedAssets(page); await page.emulateMedia({ colorScheme: 'light' });
+  await page.goto('/essays/'); await ready(page);
+  const image = page.locator('.tedt-section-hero img');
+  await expect.poll(() => image.evaluate(node => node.complete && node.naturalWidth > 0)).toBe(true);
+  await expect.poll(() => image.evaluate(node => node.currentSrc.includes('-dark'))).toBe(false);
+  await page.locator('tedt-global-header').getByRole('button', { name: 'Dark', exact: true }).click();
+  await expect.poll(() => image.evaluate(node => node.currentSrc.includes('-dark') && node.complete && node.naturalWidth > 0)).toBe(true);
+  await page.reload(); await ready(page);
+  await expect.poll(() => image.evaluate(node => node.currentSrc.includes('-dark') && node.complete)).toBe(true);
+  await page.locator('tedt-global-header').getByRole('button', { name: 'System', exact: true }).click();
+  await expect.poll(() => image.evaluate(node => node.currentSrc.includes('-dark'))).toBe(false);
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await expect.poll(() => image.evaluate(node => node.currentSrc.includes('-dark') && node.complete)).toBe(true);
+  for (const [section, groups] of [['essays', 5], ['stories', 5], ['games', 5], ['learn', 4], ['about-ted', 4]]) {
+    await page.goto('/' + section + '/');
+    await expect(page.locator('.tedt-section-hero picture')).toHaveCount(1);
+    await expect(page.locator('.tedt-group-artwork picture')).toHaveCount(groups);
+    await expect(page.locator('picture[data-tedt-artwork] source[data-tedt-dark]')).toHaveCount(groups + 1);
+  }
+});

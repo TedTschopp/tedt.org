@@ -4,7 +4,7 @@ import { resolve, extname, sep } from 'node:path';
 import { spawn } from 'node:child_process';
 
 const root = resolve(process.env.HEADER_TEST_BUILD || '_site');
-const types = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.json': 'application/json' };
+const types = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.svg': 'image/svg+xml', '.webp': 'image/webp', '.json': 'application/json' };
 const server = createServer(async (request, response) => {
   try {
     let file = resolve(root, '.' + decodeURIComponent(new URL(request.url, 'http://localhost').pathname));
