@@ -21207,14 +21207,13 @@
         {
           "id": "115017536172669708",
           "url": "https://tschopp.net/@Ted/115017536172669708"
+        },
+        {
+          "created_at": "2026-10-29T00:42:36.707Z",
+          "id": "117521419908314898",
+          "url": "https://tschopp.net/@Ted/117521419908314898"
         }
       ],
-      "intent": {
-        "key": "8fd99ea377967f4878434cef2f7f8d8c71d3794a14e1bb69b9e1eca9f91c6705",
-        "kind": "archive",
-        "started_at": "2026-10-29T00:42:13Z"
-      },
-      "missing_checked_at": "2026-10-29T00:42:13Z",
       "preferred_ids": [
         "115017536172669708"
       ],
@@ -21224,8 +21223,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-07-28-Mutations-in-Gamma-World.md"
       ],
-      "state": "uncertain",
-      "title": "Mutations in Gamma World"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T00:42:36.707Z",
+        "id": "117521419908314898",
+        "url": "https://tschopp.net/@Ted/117521419908314898"
+      },
+      "title": "Mutations in Gamma World",
+      "verified_at": "2026-10-29T00:42:13Z"
     },
     "https://tedt.org/Nukes-and-Radiation-in-Dungeons-and-Dragons-5th-Edition-for-Gamma-World/": {
       "aliases": [
@@ -26401,7 +26406,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T00:01:40.016Z",
+  "last_publication_at": "2026-10-29T00:42:36.707Z",
   "last_reconciliation_at": "2026-10-29T00:42:13Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 130,
@@ -26933,6 +26938,14 @@
       "kind": "archive",
       "operation": "f462a3815a0837f22bcf5047cfaabc96a49bfc95431d9ac7947fe2f4f53e26d7",
       "url": "https://tschopp.net/@Ted/117521258906586819"
+    },
+    {
+      "canonical_url": "https://tedt.org/Mutations-in-Gamma-World/",
+      "created_at": "2026-10-29T00:42:36.707Z",
+      "id": "117521419908314898",
+      "kind": "archive",
+      "operation": "8fd99ea377967f4878434cef2f7f8d8c71d3794a14e1bb69b9e1eca9f91c6705",
+      "url": "https://tschopp.net/@Ted/117521419908314898"
     }
   ],
   "run_count": 253,
