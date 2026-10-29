@@ -43,15 +43,10 @@ allowed_missing_og_assets:
 # Full-document legacy utilities are tracked explicitly so any new omission
 # fails CI. Remove paths here as those pages adopt the shared metadata include.
 allowed_missing_canonicals:
-  - /tools/mastodon/
   - /RPG/teds/stories/
 allowed_missing_og_metadata:
-  - /tools/mastodon/
-  - /tools/
   - /RPG/teds/stories/
 allowed_missing_structured_data:
-  - /tools/mastodon/
-  - /tools/
   - /RPG/teds/stories/
 allowed_invalid_og_urls:
   - /A-Memory-of-Myths-and-the-Naming-of-%F0%92%80%80%F0%92%8C%8B%F0%92%80%AF/

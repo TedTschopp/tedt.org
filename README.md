@@ -1,5 +1,7 @@
 # TedT.org
 
+> **Tools have moved:** [tools.tedt.org](https://tools.tedt.org/) is the maintained home for the browser tools, catalog, and related learning applications. Source and build instructions are in [TedTschopp/tools.tedt.org](https://github.com/TedTschopp/tools.tedt.org). Traveller tools remain in this repository.
+
 [![Site Quality + Deploy](https://github.com/TedTschopp/tedt.org/actions/workflows/deploy.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/deploy.yml)
 [![Feed to Mastodon](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed.yml/badge.svg?branch=main)](https://github.com/TedTschopp/tedt.org/actions/workflows/mastodon-feed.yml)
 [![DUSD Lunch Menu Calendar](https://github.com/TedTschopp/tedt.org/actions/workflows/dusd-lunch-menu.yml/badge.svg)](https://github.com/TedTschopp/tedt.org/actions/workflows/dusd-lunch-menu.yml)

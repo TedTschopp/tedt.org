@@ -4,8 +4,6 @@
   "version": "1.0.0",
   "description": "Playwright + axe-core a11y audits for tedt.org",
   "scripts": {
-    "test:painter": "node --test tests/quick-study-painter/*.test.mjs",
-    "test:game-theory": "node --test tests/game-theory/*.test.mjs",
     "test:a11y": "playwright test tests/a11y --reporter=list",
     "test:a11y:baseline": "playwright test tests/a11y/site-baseline.spec.ts --reporter=list",
     "test:a11y:strict": "A11Y_FAIL_ON_VIOLATIONS=1 playwright test tests/a11y --reporter=list",
@@ -15,12 +13,7 @@
     "allure:open": "npx allure open reports/allure/latest",
     "lint:css:overrides": "stylelint \"_sass/_overrides-*.scss\" \"css/*-overrides.css\"",
     "lint:js": "node scripts/check-js-syntax.mjs",
-    "lint:md": "markdownlint-cli2 \"**/*.{md,markdown}\"",
-    "build:inside-ai": "npm --prefix _apps/inside-ai run build",
-    "test:inside-ai": "npm --prefix _apps/inside-ai test",
-    "check:inside-ai-build": "node scripts/check-inside-ai-build.mjs",
-    "test:inside-ai:browser": "playwright test --config playwright.inside-ai.config.ts",
-    "prepare:inside-ai-model": "node scripts/prepare-inside-ai-model.mjs"
+    "lint:md": "markdownlint-cli2 \"**/*.{md,markdown}\""
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.9.1",
