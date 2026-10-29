@@ -9,3 +9,6 @@ body:has(> tedt-global-header), html[data-tedt-global-header] body { padding-top
 html[data-tedt-global-header] { scroll-padding-top: 86px; }
 html[data-tedt-global-header] :is(h1,h2,h3,h4,[id]) { scroll-margin-top: 86px; }
 @media print { tedt-global-header { display: none; } }
+
+/* Keep keyboard recovery above the fixed global navigation. */
+:is(.skip-link,.ia-skip-link,.skip-to-main,.slide-deck-skip-link):focus { position:fixed; top:8px; z-index:1200; }
