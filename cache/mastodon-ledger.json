@@ -21571,14 +21571,13 @@
         {
           "id": "115017666499956372",
           "url": "https://tschopp.net/@Ted/115017666499956372"
+        },
+        {
+          "created_at": "2026-10-29T03:34:07.521Z",
+          "id": "117522094327138026",
+          "url": "https://tschopp.net/@Ted/117522094327138026"
         }
       ],
-      "intent": {
-        "key": "055fb4b7e898d92ef9e6a2cbea86933afe810216d5d04e7f99c5f585b8db07ae",
-        "kind": "archive",
-        "started_at": "2026-10-29T03:33:43Z"
-      },
-      "missing_checked_at": "2026-10-29T03:33:43Z",
       "preferred_ids": [
         "115017666499956372"
       ],
@@ -21588,8 +21587,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-11-02-Power-Cells-from-Gamma-World-in-MCC-DCC.md"
       ],
-      "state": "uncertain",
-      "title": "Power Cells from Gamma World in MCC & DCC"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T03:34:07.521Z",
+        "id": "117522094327138026",
+        "url": "https://tschopp.net/@Ted/117522094327138026"
+      },
+      "title": "Power Cells from Gamma World in MCC & DCC",
+      "verified_at": "2026-10-29T03:33:43Z"
     },
     "https://tedt.org/Practical-Hexcrawl-Design-and-Procedures/": {
       "aliases": [
@@ -26441,7 +26446,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T02:34:13.161Z",
+  "last_publication_at": "2026-10-29T03:34:07.521Z",
   "last_reconciliation_at": "2026-10-29T03:33:43Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 134,
@@ -27005,6 +27010,14 @@
       "kind": "archive",
       "operation": "f9df1642589931fcdafef11c5603312ee07a128cb68dfe83e435908c6e6f0478",
       "url": "https://tschopp.net/@Ted/117521858767190927"
+    },
+    {
+      "canonical_url": "https://tedt.org/Power-Cells-from-Gamma-World-in-MCC-DCC/",
+      "created_at": "2026-10-29T03:34:07.521Z",
+      "id": "117522094327138026",
+      "kind": "archive",
+      "operation": "055fb4b7e898d92ef9e6a2cbea86933afe810216d5d04e7f99c5f585b8db07ae",
+      "url": "https://tschopp.net/@Ted/117522094327138026"
     }
   ],
   "run_count": 263,
