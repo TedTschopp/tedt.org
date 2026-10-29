@@ -22285,14 +22285,13 @@
         {
           "id": "115017537130688934",
           "url": "https://tschopp.net/@Ted/115017537130688934"
+        },
+        {
+          "created_at": "2026-10-29T01:53:33.461Z",
+          "id": "117521698879008282",
+          "url": "https://tschopp.net/@Ted/117521698879008282"
         }
       ],
-      "intent": {
-        "key": "1c102b70b7f4e9407cffa0d5645620fa759fe7efef6749cccca661a023637438",
-        "kind": "archive",
-        "started_at": "2026-10-29T01:53:12Z"
-      },
-      "missing_checked_at": "2026-10-29T01:53:12Z",
       "preferred_ids": [
         "115017537130688934"
       ],
@@ -22302,8 +22301,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-10-14-Rules for Gamma-World-Weapons-in MCC-DCC.md"
       ],
-      "state": "uncertain",
-      "title": "Gamma World Weapons in MCC & DCC"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T01:53:33.461Z",
+        "id": "117521698879008282",
+        "url": "https://tschopp.net/@Ted/117521698879008282"
+      },
+      "title": "Gamma World Weapons in MCC & DCC",
+      "verified_at": "2026-10-29T01:53:12Z"
     },
     "https://tedt.org/Running-to-stay-put-the-Red-Queen-problem-in-enterprise-AI/": {
       "aliases": [
@@ -26421,7 +26426,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T01:19:43.352Z",
+  "last_publication_at": "2026-10-29T01:53:33.461Z",
   "last_reconciliation_at": "2026-10-29T01:53:12Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 132,
@@ -26969,6 +26974,14 @@
       "kind": "archive",
       "operation": "d0be6612ecea642a8a1820b7c39641f40195d04593294fa8d19be4817ba77a4b",
       "url": "https://tschopp.net/@Ted/117521565833755596"
+    },
+    {
+      "canonical_url": "https://tedt.org/Rules-for-Gamma-World-Weapons-in-MCC-DCC/",
+      "created_at": "2026-10-29T01:53:33.461Z",
+      "id": "117521698879008282",
+      "kind": "archive",
+      "operation": "1c102b70b7f4e9407cffa0d5645620fa759fe7efef6749cccca661a023637438",
+      "url": "https://tschopp.net/@Ted/117521698879008282"
     }
   ],
   "run_count": 258,
