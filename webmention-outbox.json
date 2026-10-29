@@ -1249,18 +1249,18 @@
         },
         "https://onlinelibrary.wiley.com/doi/10.1111/j.1468-4446.2000.00005.x": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T18:52:21+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-29T23:52:07+00:00"
         },
         "https://onlinelibrary.wiley.com/doi/10.1111/newe.12023": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T18:52:21+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-29T23:52:07+00:00"
         },
         "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T18:52:21+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-29T23:52:07+00:00"
         },
         "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/": {
           "state": "unsupported",
@@ -1454,8 +1454,8 @@
       "deliveries": {
         "https://garymarcus.substack.com/p/is-agi-the-right-goal-for-ai": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T18:52:21+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-29T23:52:07+00:00"
         },
         "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/": {
           "state": "accepted",
@@ -2569,8 +2569,8 @@
         },
         "https://ir.mi.com/system/files-encrypted/nasdaq_kms/assets/2024/08/21/5-44-48/Announcement.pdf": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T18:52:24+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T21:52:07+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -2640,8 +2640,8 @@
         },
         "https://datacenters.atmeta.com/wp-content/uploads/2024/10/Denmark-Odense.pdf": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T18:52:24+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T21:52:07+00:00"
         },
         "https://doi.org/10.1016/j.joule.2026.102430": {
           "state": "unsupported",
@@ -3023,13 +3023,13 @@
         },
         "https://mbzuai.ac.ae/news/k2-an-open-source-model-that-delivers-frontier-capabilities/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T19:51:46+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T21:52:07+00:00"
         },
         "https://mbzuai.ac.ae/news/k2-think-v2-a-fully-sovereign-reasoning-model/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T19:51:46+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T21:52:07+00:00"
         },
         "https://mimo.mi.com/docs/en-US/news/latest/1000tps": {
           "state": "unsupported",
@@ -3041,13 +3041,13 @@
         },
         "https://openai.com/index/gpt-5-6/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T19:51:46+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T21:52:07+00:00"
         },
         "https://openai.com/index/introducing-openai-frontier/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T19:51:46+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T21:52:07+00:00"
         },
         "https://platform.kimi.ai/blog/posts/Kimi_Founders_AMA_Recap": {
           "state": "unsupported",
@@ -3076,72 +3076,82 @@
           "attempts": 1
         },
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/lKK7Kp5CFYOYwgaIbkCR",
+          "attempts": 1
         },
         "https://tedt.org/The-Map-Is-Not-the-Decision/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/bFf9rBH1JsysHs_uMRYS",
+          "attempts": 1
         },
         "https://tedt.org/Why-AI-Needs-a-Harness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/4Y9T0OVRIg-3pYTwdgTh",
+          "attempts": 1
         },
         "https://tedt.org/charts/index.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-governance-risk-evaluation/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/L2mjNXyx0s8eRwymJQoh",
+          "attempts": 1
         },
         "https://www.anthropic.com/news/claude-fable-5-mythos-5": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.anthropic.com/news/claude-sonnet-5": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.anthropic.com/news/redeploying-fable-5": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.axios.com/2026/07/09/meta-ai-spark-model-update-developer": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-29T20:52:07+00:00"
         },
         "https://www.minimax.io/blog/minimax-m3": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.spglobal.com/ratings/en/regulatory/article/creditweek-will-rising-capex-test-hyperscalers-credit-strength-s101685676": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-29T20:52:07+00:00"
         },
         "https://www.upstage.ai/blog/en/solar-pro-3-0323": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://x.ai/news/grok-4-5": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://x.ai/news/series-e?stream=top": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://z.ai/blog/glm-5.2": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -3160,44 +3170,57 @@
       ],
       "deliveries": {
         "https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-29T20:52:07+00:00"
         },
         "https://openai.com/index/gpt-oss-model-card/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-29T20:52:07+00:00"
         },
         "https://openai.com/safety/preparedness": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-29T20:52:07+00:00"
         },
         "https://tedt.org/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/TzK2Fze7TXvhA1_rpLlz",
+          "attempts": 1
         },
         "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/OQvH5EuSRBKMeEKiv45b",
+          "attempts": 1
         },
         "https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Qju_ylh2IvpN7pJyS3Ku",
+          "attempts": 1
         },
         "https://tedt.org/Guardrails-and-Gigawatts/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/2fc3DNxrmJuQFAPTn9v7",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-utilities-cyber-resilience/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/56KbQNYRq9IfSCBSpKJI",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -3310,56 +3333,56 @@
       ],
       "deliveries": {
         "http://vatican.va/content/paul-vi/en/encyclicals/documents/hf_p-vi_enc_26031967_populorum.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.iubilaeum2025.va/en.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.synod.va/content/dam/synod/news/2024-10-26_final-document/ENG---Documento-finale.pdf": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/archive/ENG0015/_INDEX.HTM": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19641121_lumen-gentium_en.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_const_19651207_gaudium-et-spes_en.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decl_19651207_dignitatis-humanae_en.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/archive/hist_councils/ii_vatican_council/documents/vat-ii_decree_19651118_apostolicam-actuositatem_en.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/archive/hist_councils/ii_vatican_council/index.htm": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/benedict-xvi/en.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/benedict-xvi/en/apost_exhortations/documents/hf_ben-xvi_exh_20070222_sacramentum-caritatis.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/benedict-xvi/en/audiences/2006/documents/hf_ben-xvi_aud_20060215.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/benedict-xvi/en/encyclicals/documents/hf_ben-xvi_enc_20051225_deus-caritas-est.html": {
           "state": "pending",
