@@ -4404,12 +4404,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "8c1ca077a7288830677766974f7a308dd8942f0acaed92e58a4bc544b4d09553",
-        "kind": "archive",
-        "started_at": "2026-10-29T15:01:05Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T15:01:33.173Z",
+          "id": "117524797402078157",
+          "url": "https://tschopp.net/@Ted/117524797402078157"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4417,8 +4418,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Ant-Giant.md"
       ],
-      "state": "uncertain",
-      "title": "Ant-Giant"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T15:01:33.173Z",
+        "id": "117524797402078157",
+        "url": "https://tschopp.net/@Ted/117524797402078157"
+      },
+      "title": "Ant-Giant",
+      "verified_at": "2026-10-29T15:01:05Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Apothecary.html": {
       "aliases": [
@@ -26663,7 +26670,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T14:28:35.823Z",
+  "last_publication_at": "2026-10-29T15:01:33.173Z",
   "last_reconciliation_at": "2026-10-29T15:01:05Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 152,
@@ -27371,6 +27378,14 @@
       "kind": "archive",
       "operation": "13fee176f48468e4d9dcb964363a886fcadf80b85022d674f37317e194eee29b",
       "url": "https://tschopp.net/@Ted/117524667814627715"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Ant-Giant.html",
+      "created_at": "2026-10-29T15:01:33.173Z",
+      "id": "117524797402078157",
+      "kind": "archive",
+      "operation": "8c1ca077a7288830677766974f7a308dd8942f0acaed92e58a4bc544b4d09553",
+      "url": "https://tschopp.net/@Ted/117524797402078157"
     }
   ],
   "run_count": 312,
