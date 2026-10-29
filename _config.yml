@@ -4,7 +4,6 @@ include:
 
 # Exclude editor backup copies of posts (e.g., *.md.bak) so they don't generate duplicate URLs
 exclude:
-# Inside AI source and dependencies are compiled into inside-ai/assets before Jekyll.
 - _apps/**
 - "**/*.bak"
 # Exclude embedded Python virtual env inside data (never needed for site build)
@@ -27,8 +26,6 @@ exclude:
 - cache/mastodon-ledger.json
 - cache/webmention-outbox.json
 - bootstrap-5.3.2.tgz
-# Keep the Game Theory planning roadmap out of the generated website.
-- game-theory/NEXT-STEPS.md
 
 # Enable explicit kramdown + MathJax processing
 markdown: kramdown

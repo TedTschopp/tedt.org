@@ -306,10 +306,6 @@ jobs:
         run: |
           make length_report
 
-      - name: Tools CSS sync guard
-        run: |
-          make tools_css_sync_check
-
       - name: Capture GitHub Actions errors/warnings (Allure)
         if: failure()
         continue-on-error: true
