@@ -4589,12 +4589,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "cde94b22cd0ea37a5d9327403e4f4c5fe625716d19dabb3bed5f3758d9295645",
-        "kind": "archive",
-        "started_at": "2026-10-29T18:01:42Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T18:02:08.109Z",
+          "id": "117525507480549303",
+          "url": "https://tschopp.net/@Ted/117525507480549303"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4602,8 +4603,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Assassin-Bug-Sintal.md"
       ],
-      "state": "uncertain",
-      "title": "Assassin Bug «Sin'tal»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T18:02:08.109Z",
+        "id": "117525507480549303",
+        "url": "https://tschopp.net/@Ted/117525507480549303"
+      },
+      "title": "Assassin Bug «Sin'tal»",
+      "verified_at": "2026-10-29T18:01:42Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Axel.html": {
       "aliases": [
@@ -26733,7 +26740,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T17:27:32.242Z",
+  "last_publication_at": "2026-10-29T18:02:08.109Z",
   "last_reconciliation_at": "2026-10-29T18:01:42Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 157,
@@ -27481,6 +27488,14 @@
       "kind": "archive",
       "operation": "3f575d3f1ddfdeaa9e3eb95be33d66296db76f2dbb9504eb9a04c1a2523bf12f",
       "url": "https://tschopp.net/@Ted/117525371436453324"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Assassin-Bug-Sintal.html",
+      "created_at": "2026-10-29T18:02:08.109Z",
+      "id": "117525507480549303",
+      "kind": "archive",
+      "operation": "cde94b22cd0ea37a5d9327403e4f4c5fe625716d19dabb3bed5f3758d9295645",
+      "url": "https://tschopp.net/@Ted/117525507480549303"
     }
   ],
   "run_count": 326,
