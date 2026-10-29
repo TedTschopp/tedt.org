@@ -14,18 +14,18 @@
     "started_at": "2026-10-26T00:08:07Z"
   },
   "completion_percent": 12.5,
-  "confirmed_publications": 80,
-  "current_missing": 886,
+  "confirmed_publications": 81,
+  "current_missing": 885,
   "eligible": 1012,
   "has_history": true,
   "initial_missing": 1008,
-  "last_publication_at": "2026-10-29T09:32:28.597Z",
-  "last_reconciliation_at": "2026-10-29T09:32:06Z",
-  "last_run_at": "2026-10-29T09:32:06Z",
-  "last_updated": "2026-10-29T09:32:06Z",
+  "last_publication_at": "2026-10-29T10:18:39.871Z",
+  "last_reconciliation_at": "2026-10-29T10:18:15Z",
+  "last_run_at": "2026-10-29T10:18:15Z",
+  "last_updated": "2026-10-29T10:18:15Z",
   "publication_enabled": true,
   "publication_not_before": null,
-  "remaining": 886,
+  "remaining": 885,
   "result": {
     "archive_canary": false,
     "dry_run": false,
@@ -34,17 +34,17 @@
     "online": true,
     "published": true,
     "updated_sources": 1,
-    "url": "https://tschopp.net/@Ted/117523503421685189",
+    "url": "https://tschopp.net/@Ted/117523685039882311",
     "website_changed": true
   },
-  "runs": 288,
+  "runs": 292,
   "states": {
     "missing": 102,
-    "pending": 784,
-    "published": 80,
+    "pending": 783,
+    "published": 81,
     "recovered": 46
   },
-  "total_processed": 80,
+  "total_processed": 81,
   "unmatched_legacy_entries": 3,
   "version": 1
 }
