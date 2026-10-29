@@ -54,7 +54,8 @@ mathjax: null
 order: null
 image_width: 1024
 image_height: 1024
-mastodon-post-id: 110924710196764929
+mastodon-post-id: "117522910013409030"
+mastodon-post-url: "https://tschopp.net/@Ted/117522910013409030"
 ---
 > <ins>**The Swiss Book of Legends**</ins>
 >
