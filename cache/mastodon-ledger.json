@@ -3993,12 +3993,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "03edf976bcdba0d401a6f390e15b634229886fe61f061efe1fd24d92acf78a23",
-        "kind": "archive",
-        "started_at": "2026-10-29T08:23:13Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T08:23:32.593Z",
+          "id": "117523232364401048",
+          "url": "https://tschopp.net/@Ted/117523232364401048"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4006,8 +4007,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-AI-Fragment.md"
       ],
-      "state": "uncertain",
-      "title": "AI Fragment"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T08:23:32.593Z",
+        "id": "117523232364401048",
+        "url": "https://tschopp.net/@Ted/117523232364401048"
+      },
+      "title": "AI Fragment",
+      "verified_at": "2026-10-29T08:23:13Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Abomination-Claw.html": {
       "aliases": [
@@ -26511,7 +26518,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T07:32:17.686Z",
+  "last_publication_at": "2026-10-29T08:23:32.593Z",
   "last_reconciliation_at": "2026-10-29T08:23:13Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 141,
@@ -27131,6 +27138,14 @@
       "kind": "archive",
       "operation": "7954692099ad432d982bd660b6906c11b19f3f52d116df2e7574af93e09552d0",
       "url": "https://tschopp.net/@Ted/117523030847381955"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/AI-Fragment.html",
+      "created_at": "2026-10-29T08:23:32.593Z",
+      "id": "117523232364401048",
+      "kind": "archive",
+      "operation": "03edf976bcdba0d401a6f390e15b634229886fe61f061efe1fd24d92acf78a23",
+      "url": "https://tschopp.net/@Ted/117523232364401048"
     }
   ],
   "run_count": 281,
