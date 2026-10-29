@@ -475,16 +475,16 @@
           "attempts": 1
         },
         "https://www.cisa.gov/cybersecurity-performance-goals": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.nist.gov/itl/ai-risk-management-framework": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -558,32 +558,42 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Is-a-People-Change/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/AGXR-C58c4eXPa3x-zii",
+          "attempts": 1
         },
         "https://tedt.org/Beyond-the-Light-Bulb/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/KN1VEj6ZSBF41R7vBqcf",
+          "attempts": 1
         },
         "https://tedt.org/Make-AI-Boring/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/W6uUV0U_7RfOaHtJJFPc",
+          "attempts": 1
         },
         "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/rT_-YFxEhB_HpBgbFBZq",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/enterprise-ai-strategy/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/PX7yzwSKsbjmBNFU6gSK",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -604,52 +614,72 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Engineer-Coach/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/kxWCwqp_zKkyCcWYlJ-Y",
+          "attempts": 1
         },
         "https://tedt.org/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/R32B9sK6wOGlcI-5scV1",
+          "attempts": 1
         },
         "https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/d9YzC88ZbLsCuM1Ob0Y3",
+          "attempts": 1
         },
         "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/UL4YTYlMrGLR794Bjsa0",
+          "attempts": 1
         },
         "https://tedt.org/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/qVIp8CgWrtxI-ytwjBQx",
+          "attempts": 1
         },
         "https://tedt.org/Gold-Medals-and-Paved-Roads/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/i-KtlMV1v5YVqr869_ro",
+          "attempts": 1
         },
         "https://tedt.org/The-Map-Is-Not-the-Decision/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/2cilzYSJavDNXYgOpB0i",
+          "attempts": 1
         },
         "https://tedt.org/Why-AI-Needs-a-Harness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/MLReyKFpdBWY_7oNmsC9",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-governance-risk-evaluation/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/fGdeLWYvt4sa6nhKnEg_",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-native-software-delivery/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/rLovyCZ0Q2lwVTt-8PWV",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -666,36 +696,47 @@
       ],
       "deliveries": {
         "https://tedt.org/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/YBtMsdsKxnwJZhgSkIt-",
+          "attempts": 1
         },
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Zazo9Gr0dYeWENKTCu6u",
+          "attempts": 1
         },
         "https://tedt.org/The-Map-Is-Not-the-Decision/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/K-xPNHRJc5Ua-K_kTukx",
+          "attempts": 1
         },
         "https://tedt.org/Why-AI-Needs-a-Harness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/15WIapCxpHRN3rrMDvJc",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-governance-risk-evaluation/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/pYxaC1BVFT6nGWDuaql5",
+          "attempts": 1
         },
         "https://transformer-circuits.pub/2026/nla/index.html#introduction": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-29T15:51:57+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -711,32 +752,42 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Value-Stream/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/YcofNlz1xEHl6tIbbGql",
+          "attempts": 1
         },
         "https://tedt.org/MCPs-2026-Roadmap/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/6rwynyYOa_GdT_-O0kyF",
+          "attempts": 1
         },
         "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/jJTg-AOt0Xx-DT3-2CeB",
+          "attempts": 1
         },
         "https://tedt.org/Why-AI-Needs-a-Harness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/OVWQReSE9N12dUATaVe4",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/enterprise-architecture-for-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/mXF_AXK2O0Zwm0xN6S8t",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -766,40 +817,50 @@
       ],
       "deliveries": {
         "https://github.com/TedTschopp/AI-Engineering-Coach": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/hNjUH0h-U316kxmfx6Yw",
+          "attempts": 1
         },
         "https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/hgKm29vrOt7ZNFylcuwN",
+          "attempts": 1
         },
         "https://tedt.org/Gold-Medals-and-Paved-Roads/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/oSTm9r3xb80R0-yRP_1z",
+          "attempts": 1
         },
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/k_jJzUdazUjKP6FyKsPX",
+          "attempts": 1
         },
         "https://tedt.org/downloads/ai-engineer-coach-0.1.0.vsix": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-native-software-delivery/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/bOQxvMJ16I6IeHd2ZNnm",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -859,20 +920,28 @@
       ],
       "deliveries": {
         "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/EwZ77a5q3zJpwiDDyPcM",
+          "attempts": 1
         },
         "https://tedt.org/From-Guesswork-to-Geometry-How-We-Measured-the-Mind/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/1ZCFxxetZ8UXbkMP7TKt",
+          "attempts": 1
         },
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/mrvw_j_Jd2E1N4W28nwa",
+          "attempts": 1
         },
         "https://tedt.org/Why-AI-Needs-a-Harness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/rbsgzHjopX2OqlQIMQyH",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
           "state": "pending",
