@@ -4219,12 +4219,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "3fcd92ad3a8233c4f3598b41fcca6c07a5d21003ee1192def7eb7ce0e3dad626",
-        "kind": "archive",
-        "started_at": "2026-10-29T12:01:13Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T12:01:35.836Z",
+          "id": "117524089787968314",
+          "url": "https://tschopp.net/@Ted/117524089787968314"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4232,8 +4233,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Airshoon.md"
       ],
-      "state": "uncertain",
-      "title": "Airshoon"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T12:01:35.836Z",
+        "id": "117524089787968314",
+        "url": "https://tschopp.net/@Ted/117524089787968314"
+      },
+      "title": "Airshoon",
+      "verified_at": "2026-10-29T12:01:13Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Albilope.html": {
       "aliases": [
@@ -26593,7 +26600,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T11:27:00.861Z",
+  "last_publication_at": "2026-10-29T12:01:35.836Z",
   "last_reconciliation_at": "2026-10-29T12:01:13Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 147,
@@ -27261,6 +27268,14 @@
       "kind": "archive",
       "operation": "6caf28a1464446e7c656785693d56cf6c299b498a755d69215a19bbff64ee6d1",
       "url": "https://tschopp.net/@Ted/117523953802378587"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Airshoon.html",
+      "created_at": "2026-10-29T12:01:35.836Z",
+      "id": "117524089787968314",
+      "kind": "archive",
+      "operation": "3fcd92ad3a8233c4f3598b41fcca6c07a5d21003ee1192def7eb7ce0e3dad626",
+      "url": "https://tschopp.net/@Ted/117524089787968314"
     }
   ],
   "run_count": 301,
