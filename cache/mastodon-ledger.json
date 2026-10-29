@@ -4256,12 +4256,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "4e4910571dd5ae2d6cceabe96338f72ce0bbb0b0aaa860832a5e94e227b8a037",
-        "kind": "archive",
-        "started_at": "2026-10-29T12:41:04Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T12:41:24.714Z",
+          "id": "117524246345466059",
+          "url": "https://tschopp.net/@Ted/117524246345466059"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4269,8 +4270,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Albilope.md"
       ],
-      "state": "uncertain",
-      "title": "Albilope"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T12:41:24.714Z",
+        "id": "117524246345466059",
+        "url": "https://tschopp.net/@Ted/117524246345466059"
+      },
+      "title": "Albilope",
+      "verified_at": "2026-10-29T12:41:04Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Alien-Shreelon.html": {
       "aliases": [
@@ -26607,7 +26614,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T12:01:35.836Z",
+  "last_publication_at": "2026-10-29T12:41:24.714Z",
   "last_reconciliation_at": "2026-10-29T12:41:04Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 148,
@@ -27283,6 +27290,14 @@
       "kind": "archive",
       "operation": "3fcd92ad3a8233c4f3598b41fcca6c07a5d21003ee1192def7eb7ce0e3dad626",
       "url": "https://tschopp.net/@Ted/117524089787968314"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Albilope.html",
+      "created_at": "2026-10-29T12:41:24.714Z",
+      "id": "117524246345466059",
+      "kind": "archive",
+      "operation": "4e4910571dd5ae2d6cceabe96338f72ce0bbb0b0aaa860832a5e94e227b8a037",
+      "url": "https://tschopp.net/@Ted/117524246345466059"
     }
   ],
   "run_count": 303,
