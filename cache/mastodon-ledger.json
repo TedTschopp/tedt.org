@@ -22002,14 +22002,13 @@
         {
           "id": "115017667949378301",
           "url": "https://tschopp.net/@Ted/115017667949378301"
+        },
+        {
+          "created_at": "2026-10-29T04:51:40.371Z",
+          "id": "117522399256372377",
+          "url": "https://tschopp.net/@Ted/117522399256372377"
         }
       ],
-      "intent": {
-        "key": "a2b03d213bac6dd36e089e6835370323ff7060f6be8e7a81cb01a6a55dced661",
-        "kind": "archive",
-        "started_at": "2026-10-29T04:51:18Z"
-      },
-      "missing_checked_at": "2026-10-29T04:51:18Z",
       "preferred_ids": [
         "115017667949378301"
       ],
@@ -22019,8 +22018,14 @@
       "source_paths": [
         "_posts/Blog Posts/2019-01-23-Reprint-ICBM-by-Hanson-W-Baldwin.md"
       ],
-      "state": "uncertain",
-      "title": "1956 Reprint - ICBM by Hanson W. Baldwin with full-page illustration by John Wilson"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T04:51:40.371Z",
+        "id": "117522399256372377",
+        "url": "https://tschopp.net/@Ted/117522399256372377"
+      },
+      "title": "1956 Reprint - ICBM by Hanson W. Baldwin with full-page illustration by John Wilson",
+      "verified_at": "2026-10-29T04:51:18Z"
     },
     "https://tedt.org/Reprint-No-Silver-Bullet/": {
       "aliases": [
@@ -26461,7 +26466,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T04:21:04.249Z",
+  "last_publication_at": "2026-10-29T04:51:40.371Z",
   "last_reconciliation_at": "2026-10-29T04:51:18Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 136,
@@ -27041,6 +27046,14 @@
       "kind": "archive",
       "operation": "b99089e0725989652e8e9dc4519063b17bd3abded00f3e246ca9c6438d117765",
       "url": "https://tschopp.net/@Ted/117522278924170426"
+    },
+    {
+      "canonical_url": "https://tedt.org/Reprint-ICBM-by-Hanson-W-Baldwin/",
+      "created_at": "2026-10-29T04:51:40.371Z",
+      "id": "117522399256372377",
+      "kind": "archive",
+      "operation": "a2b03d213bac6dd36e089e6835370323ff7060f6be8e7a81cb01a6a55dced661",
+      "url": "https://tschopp.net/@Ted/117522399256372377"
     }
   ],
   "run_count": 269,
