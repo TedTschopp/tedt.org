@@ -13,7 +13,8 @@
     "allure:open": "npx allure open reports/allure/latest",
     "lint:css:overrides": "stylelint \"_sass/_overrides-*.scss\" \"css/*-overrides.css\"",
     "lint:js": "node scripts/check-js-syntax.mjs",
-    "lint:md": "markdownlint-cli2 \"**/*.{md,markdown}\""
+    "lint:md": "markdownlint-cli2 \"**/*.{md,markdown}\"",
+    "test:global-header": "node scripts/run-global-header-tests.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.9.1",

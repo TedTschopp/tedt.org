@@ -491,3 +491,6 @@ body.slide-deck-page {
     height: 100vh;
   }
 }
+
+// The shared header reserves its own row above the deck chrome.
+body:has(> tedt-global-header) .slide-deck-entry { height: calc(100svh - 70px); }

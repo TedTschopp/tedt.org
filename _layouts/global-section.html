@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include utility/calculate-variables.html %}
+  {% include seo/meta-data-seo.html %}
+  {% include assets/all-css-includes.html %}
+  <link rel="stylesheet" href="{{ '/assets/global-header/v1/sections.css' | relative_url }}">
+  {% include assets/scripts.html %}
+</head>
+<body class="tedt-section-page">
+  <a class="tedt-section-skip" href="#main-content">Skip to content</a>
+  {% include layout/top-nav-bar.html %}
+  <main id="main-content" class="tedt-section-main" tabindex="-1">
+    <header><p class="tedt-eyebrow">Ted’s public workbench</p><h1>{{ page.title | escape }}</h1><p class="tedt-lead">{{ page.description | escape }}</p></header>
+    <nav class="tedt-jump-links" aria-label="Browse {{ page.title | escape }}">{% for group in site.data.site_sections[page.section] %}<a href="#{{ group.id | escape }}">{{ group.title | escape }}</a>{% endfor %}</nav>
+    {% for group in site.data.site_sections[page.section] %}
+    <section id="{{ group.id | escape }}" class="tedt-destination-group" aria-labelledby="{{ group.id | escape }}-title">
+      <div><h2 id="{{ group.id | escape }}-title">{{ group.title | escape }}</h2><p>{{ group.description | escape }}</p></div>
+      <ul>{% for link in group.links %}<li><a href="{{ link.url | escape }}">{{ link.title | escape }}</a></li>{% endfor %}</ul>
+    </section>
+    {% endfor %}
+    {{ content }}
+  </main>
+  {% include layout/footer.html %}
+  {% include assets/js-bottom-of-body.html %}
+</body>
+</html>

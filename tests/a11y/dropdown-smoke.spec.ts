@@ -1,17 +1,10 @@
+import { routeSharedHeader } from './helpers/global-header';
 import { test, expect } from '@playwright/test';
-
-// Prompt URLs now forward to the AI Library. Check the shared site navbar on
-// the profile page, using Playwright's configured baseURL.
-const LOCAL_URL = process.env.LOCAL_NAVBAR_URL || '/profile/';
-
-test.describe('Navbar dropdown smoke test', () => {
-  test('Career dropdown opens', async ({ page }) => {
-    await page.goto(LOCAL_URL, { waitUntil: 'domcontentloaded' });
-  const trigger = page.locator('button#careerDropdownToggle');
-    await expect(trigger).toBeVisible();
-    await trigger.click();
-    // After click, the menu (ul.dropdown-menu) associated should be visible
-  const menu = page.locator('ul[aria-labelledby="careerDropdownToggle"]');
-    await expect(menu).toBeVisible();
-  });
+test('About disclosure retains profile and career destinations', async ({ page }) => {
+  await routeSharedHeader(page);
+    await page.goto('/profile/');
+  const header = page.locator('tedt-global-header');
+  await expect(header).toHaveAttribute('data-ready', 'true');
+  await header.getByRole('button', { name: 'Show About menu', exact: true }).click();
+  await expect(header.getByRole('link', { name: 'Career & Resume', exact: true })).toBeVisible();
 });

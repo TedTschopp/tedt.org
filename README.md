@@ -937,3 +937,7 @@ properties. `mastodon-syndicate: true` is required for managed entries to enter 
 existing Mastodon publication manifest; false is the default. Legacy entries
 keep their existing rendering and eligibility. Do not put drafts in public Git
 branches or artifacts. The separate media repository uses GitHub Pages only.
+
+## Shared Global Header
+
+The six-section header is maintained here and loaded by the participating tedt.org subdomains. Edit `_data/site_navigation.yml` for menu destinations and `_data/header_sites.yml` for host/section mapping. New landing pages use `section` metadata with the `global-section` layout. See [the embed and appearance contract](docs/global-header.md), and run `npm run test:global-header` after a Jekyll build.

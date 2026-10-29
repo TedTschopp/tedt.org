@@ -1,0 +1,172 @@
+---
+- key: essays
+  title: Essays
+  url: https://tedt.org/essays/
+  description: Ideas about technology, work, faith, and everyday life.
+  image: "/img/categories/home-hero-images/hero-hardware.webp"
+  image_alt: A hand presses a component into a dark circuit board traced with glowing
+    cyan lines.
+  image_focus: 30% 50%
+  categories:
+  - ai
+  - enterprise-architecture
+  - business
+  - leadership
+  - communications
+  - computers
+  - mobile
+  - science
+  - religion
+  - philosophy
+  - opinion
+  - books
+  - movies
+  - music
+  - quotes
+  - reprint
+  - blog
+  children:
+  - title: AI & Enterprise Architecture
+    url: https://tedt.org/essays/#ai-architecture
+  - title: Work & Leadership
+    url: https://tedt.org/essays/#work-leadership
+  - title: Technology & Science
+    url: https://tedt.org/essays/#technology-science
+  - title: Faith & Philosophy
+    url: https://tedt.org/essays/#faith-philosophy
+  - title: Life & Culture
+    url: https://tedt.org/essays/#life-culture
+  - title: Yesterday in AI
+    url: https://yesterdai.tedt.org/
+- key: stories
+  title: Stories & Folklore
+  url: https://tedt.org/stories/
+  description: Swiss folklore, original writing, and the stories we carry with us.
+  image: "/img/categories/home-hero-images/hero-village.webp"
+  image_alt: A mist-filled valley at dusk, with an old Swiss village and church tower
+    beneath forested hills.
+  image_focus: 60% 70%
+  categories:
+  - folklore
+  - personal-writing
+  - fandom
+  - middle-earth
+  - theonering-com-legacy-archive
+  children:
+  - title: Swiss Folklore
+    url: https://tedt.org/stories/#swiss-folklore
+  - title: Original Writing
+    url: https://tedt.org/stories/#original-writing
+  - title: Poetry & Lyrics
+    url: https://tedt.org/stories/#poetry-lyrics
+  - title: Tolkien & Fandom
+    url: https://tedt.org/stories/#tolkien-fandom
+  - title: Writing Tools
+    url: https://tedt.org/stories/#writing-tools
+  - title: Plotto
+    url: https://plotto.tedt.org/
+  - title: Swiss Music Box
+    url: https://spieldose.tedt.org/
+- key: games
+  title: Games & Worlds
+  url: https://tedt.org/games/
+  description: Campaigns, creatures, imagined worlds, and tools for the table.
+  image: "/img/categories/home-hero-images/hero-dice.webp"
+  image_alt: A hand-drawn map glowing blue on a wooden table, with polyhedral dice,
+    a jar of dice and a closed notebook.
+  image_focus: 45% 55%
+  categories:
+  - bestiary
+  - dcc
+  - dnd
+  - gamma-world
+  - gurps
+  - maps
+  - marchen-engine
+  - monsters
+  - mutant-crawl-classics
+  - role-playing-games
+  - shadowrun
+  children:
+  - title: The Märchen Engine
+    url: https://tedt.org/games/#marchen-engine
+  - title: Campaigns & Systems
+    url: https://tedt.org/games/#campaigns-systems
+  - title: Bestiary & Reference
+    url: https://tedt.org/games/#bestiary-reference
+  - title: Worldbuilding & Maps
+    url: https://tedt.org/games/#worldbuilding-maps
+  - title: GM Tools
+    url: https://tedt.org/games/#gm-tools
+  - title: Procedural Islands
+    url: https://islands.tedt.org/
+  - title: Random Constellations
+    url: https://random-constellations.tedt.org/
+  - title: Random Tables
+    url: https://randomtables.tedt.org/
+  - title: TTRPG GM Tools
+    url: https://ttrpg-mcp.tedt.org/
+- key: tools
+  title: Tools
+  url: https://tools.tedt.org/
+  description: Practical browser tools, plot generators, and reusable AI resources.
+  image: "/img/categories/home-hero-images/hero-library.webp"
+  image_alt: A vaulted library hall lined with bookshelves, ending in a tall stained-glass
+    doorway.
+  image_focus: 50% 55%
+  categories:
+  - prompts
+  - projects
+  children:
+  - title: AI Library
+    url: https://ai.tedt.org/
+  - title: BUSY Apps
+    url: https://busy.tedt.org/
+  - title: RSS Feed Hub
+    url: https://rss.tedt.org/
+- key: learn
+  title: Learn
+  url: https://tedt.org/learn/
+  description: Explore ideas through interactive lessons, reading paths, and talks.
+  image: "/img/categories/home-hero-images/hero-data-center.webp"
+  image_alt: A person seen from behind faces a wall of screens showing glowing circuit
+    diagrams.
+  image_focus: 25% 45%
+  children:
+  - title: Inside AI
+    url: https://tedt.org/learn/#inside-ai
+  - title: Game Theory Playground
+    url: https://tedt.org/learn/#game-theory
+  - title: Math in Plain English
+    url: https://tedt.org/learn/#math
+  - title: Talks & Presentations
+    url: https://tedt.org/learn/#presentations
+  - title: Assessments
+    url: https://tedt.org/assessments/
+- key: about
+  title: About
+  url: https://tedt.org/about-ted/
+  description: Who I am, the work I do, and how to get in touch.
+  image: "/img/home/Ted-Tschopp-Enterprise-Architect-v4.webp"
+  image_alt: An illustrated portrait of Ted Tschopp at his desk overlooking a city
+    at sunset.
+  image_width: 1500
+  image_height: 1000
+  image_focus: 40% 45%
+  image_portrait: true
+  categories:
+  - home
+  - draft
+  children:
+  - title: About Ted
+    url: https://tedt.org/profile/
+  - title: Career & Resume
+    url: https://tedt.org/career/
+  - title: Selected Work & Projects
+    url: https://tedt.org/about-ted/#projects
+  - title: Contact
+    url: https://tedt.org/about-ted/#contact
+  - title: Editorial Standards
+    url: https://tedt.org/about-ted/#editorial-standards
+  - title: Members
+    url: https://member.tedt.org/

@@ -91,3 +91,7 @@ Extensibility Guidelines:
 
 When proposing major shifts (e.g., adopting a collection, changing caching strategy, introducing a new diagram library), draft a new ADR first with clear performance/accessibility impact analysis.
 
+
+### Shared Global Header
+
+Maintain navigation in `_data/site_navigation.yml` and participating hosts in `_data/header_sites.yml`. The runtime asset under `assets/global-header/v1/` is shared across thirteen sites. Keep v1 embeds backward compatible; do not copy the implementation into consumer sites. Section landing pages use `layout: global-section` and `section: essays|stories|games|learn|about`. Read `docs/global-header.md` before changing the asset, theme controller, fallback, or CSP. Run `npm run test:global-header` against the Jekyll build.

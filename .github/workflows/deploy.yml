@@ -229,6 +229,9 @@ jobs:
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
 
+      - name: Shared header browser contract
+        run: npm run test:global-header
+
       - name: Responsive images and editorial credits
         run: |
           set -euo pipefail
