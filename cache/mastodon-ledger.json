@@ -4552,12 +4552,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "3f575d3f1ddfdeaa9e3eb95be33d66296db76f2dbb9504eb9a04c1a2523bf12f",
-        "kind": "archive",
-        "started_at": "2026-10-29T17:27:05Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T17:27:32.242Z",
+          "id": "117525371436453324",
+          "url": "https://tschopp.net/@Ted/117525371436453324"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4565,8 +4566,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Artrak.md"
       ],
-      "state": "uncertain",
-      "title": "Artrak"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T17:27:32.242Z",
+        "id": "117525371436453324",
+        "url": "https://tschopp.net/@Ted/117525371436453324"
+      },
+      "title": "Artrak",
+      "verified_at": "2026-10-29T17:27:05Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Assassin-Bug-Sintal.html": {
       "aliases": [
@@ -26719,7 +26726,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T16:52:08.056Z",
+  "last_publication_at": "2026-10-29T17:27:32.242Z",
   "last_reconciliation_at": "2026-10-29T17:27:05Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 156,
@@ -27459,6 +27466,14 @@
       "kind": "archive",
       "operation": "4a28acf28796392cf9b735d85c647d85e693e60d1a49a95385c37e0e5851910c",
       "url": "https://tschopp.net/@Ted/117525232225764113"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Artrak.html",
+      "created_at": "2026-10-29T17:27:32.242Z",
+      "id": "117525371436453324",
+      "kind": "archive",
+      "operation": "3f575d3f1ddfdeaa9e3eb95be33d66296db76f2dbb9504eb9a04c1a2523bf12f",
+      "url": "https://tschopp.net/@Ted/117525371436453324"
     }
   ],
   "run_count": 323,
