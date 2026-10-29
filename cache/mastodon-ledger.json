@@ -4478,12 +4478,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "d57ab54a3dec6fc05552b578a8f992d2adbae14faa9a3ef9810cb65aec65a5ff",
-        "kind": "archive",
-        "started_at": "2026-10-29T16:20:19Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T16:20:40.887Z",
+          "id": "117525108548378466",
+          "url": "https://tschopp.net/@Ted/117525108548378466"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4491,8 +4492,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Architect.md"
       ],
-      "state": "uncertain",
-      "title": "Architect"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T16:20:40.887Z",
+        "id": "117525108548378466",
+        "url": "https://tschopp.net/@Ted/117525108548378466"
+      },
+      "title": "Architect",
+      "verified_at": "2026-10-29T16:20:19Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Arrowbeak.html": {
       "aliases": [
@@ -26691,7 +26698,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T15:40:34.390Z",
+  "last_publication_at": "2026-10-29T16:20:40.887Z",
   "last_reconciliation_at": "2026-10-29T16:20:19Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 154,
@@ -27415,6 +27422,14 @@
       "kind": "archive",
       "operation": "1b4e599e1efdf73edd6d6d36888cb66e886afd022d52d1924735c764cf26c9ea",
       "url": "https://tschopp.net/@Ted/117524950836294106"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Architect.html",
+      "created_at": "2026-10-29T16:20:40.887Z",
+      "id": "117525108548378466",
+      "kind": "archive",
+      "operation": "d57ab54a3dec6fc05552b578a8f992d2adbae14faa9a3ef9810cb65aec65a5ff",
+      "url": "https://tschopp.net/@Ted/117525108548378466"
     }
   ],
   "run_count": 317,
