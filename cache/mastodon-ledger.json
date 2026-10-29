@@ -4663,12 +4663,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "8344fdbeb476e5683c4d8ce99025fa5fc7df742a6fa5a1ada4dfb86c5d5b4c18",
-        "kind": "archive",
-        "started_at": "2026-10-29T19:15:37Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T19:15:58.977Z",
+          "id": "117525797861938815",
+          "url": "https://tschopp.net/@Ted/117525797861938815"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4676,8 +4677,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Baby-Bronts-Moklas.md"
       ],
-      "state": "uncertain",
-      "title": "Baby Bronts «Moklas»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T19:15:58.977Z",
+        "id": "117525797861938815",
+        "url": "https://tschopp.net/@Ted/117525797861938815"
+      },
+      "title": "Baby Bronts «Moklas»",
+      "verified_at": "2026-10-29T19:15:37Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bad-Bart-Bartholemu-Othbrook.html": {
       "aliases": [
@@ -26761,7 +26768,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T18:36:24.247Z",
+  "last_publication_at": "2026-10-29T19:15:58.977Z",
   "last_reconciliation_at": "2026-10-29T19:15:37Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 159,
@@ -27525,6 +27532,14 @@
       "kind": "archive",
       "operation": "c933cecd89dfeace147a8ba73b2c7ef96c93ea88bda790031ef4d4495f33fc74",
       "url": "https://tschopp.net/@Ted/117525642231604499"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Baby-Bronts-Moklas.html",
+      "created_at": "2026-10-29T19:15:58.977Z",
+      "id": "117525797861938815",
+      "kind": "archive",
+      "operation": "8344fdbeb476e5683c4d8ce99025fa5fc7df742a6fa5a1ada4dfb86c5d5b4c18",
+      "url": "https://tschopp.net/@Ted/117525797861938815"
     }
   ],
   "run_count": 331,
