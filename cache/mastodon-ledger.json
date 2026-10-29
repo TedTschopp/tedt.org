@@ -21333,14 +21333,13 @@
         {
           "id": "115017667464901844",
           "url": "https://tschopp.net/@Ted/115017667464901844"
+        },
+        {
+          "created_at": "2026-10-29T04:21:04.249Z",
+          "id": "117522278924170426",
+          "url": "https://tschopp.net/@Ted/117522278924170426"
         }
       ],
-      "intent": {
-        "key": "b99089e0725989652e8e9dc4519063b17bd3abded00f3e246ca9c6438d117765",
-        "kind": "archive",
-        "started_at": "2026-10-29T04:20:39Z"
-      },
-      "missing_checked_at": "2026-10-29T04:20:39Z",
       "preferred_ids": [
         "115017667464901844"
       ],
@@ -21350,8 +21349,14 @@
       "source_paths": [
         "_posts/RPG Posts/2018-11-19-Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II.md"
       ],
-      "state": "uncertain",
-      "title": "Of Maps and Monsters, the Right way to Populate a World Part II"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T04:21:04.249Z",
+        "id": "117522278924170426",
+        "url": "https://tschopp.net/@Ted/117522278924170426"
+      },
+      "title": "Of Maps and Monsters, the Right way to Populate a World Part II",
+      "verified_at": "2026-10-29T04:20:39Z"
     },
     "https://tedt.org/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World/": {
       "aliases": [
@@ -26451,7 +26456,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T03:34:07.521Z",
+  "last_publication_at": "2026-10-29T04:21:04.249Z",
   "last_reconciliation_at": "2026-10-29T04:20:39Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 135,
@@ -27023,6 +27028,14 @@
       "kind": "archive",
       "operation": "055fb4b7e898d92ef9e6a2cbea86933afe810216d5d04e7f99c5f585b8db07ae",
       "url": "https://tschopp.net/@Ted/117522094327138026"
+    },
+    {
+      "canonical_url": "https://tedt.org/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/",
+      "created_at": "2026-10-29T04:21:04.249Z",
+      "id": "117522278924170426",
+      "kind": "archive",
+      "operation": "b99089e0725989652e8e9dc4519063b17bd3abded00f3e246ca9c6438d117765",
+      "url": "https://tschopp.net/@Ted/117522278924170426"
     }
   ],
   "run_count": 266,
