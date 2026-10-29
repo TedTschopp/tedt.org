@@ -1702,13 +1702,13 @@
         },
         "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://openai.com/index/pacing-model-development-cyber-capabilities/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://slsa.dev/spec/v1.2/verifying-artifacts": {
           "state": "unsupported",
@@ -1918,8 +1918,8 @@
       "deliveries": {
         "https://fortune.com/2026/01/31/ai-agent-OpenClaw-clawdbot-openclaw-data-privacy-security-nightmare-moltbook-social-network/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://openclaw.ai/blog/introducing-openclaw": {
           "state": "unsupported",
@@ -1971,28 +1971,28 @@
         },
         "https://www.barrons.com/articles/cloudflare-stock-OpenClaw-viral-ai-bot-fdb3e77b?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://www.businessinsider.com/clawdbot-changes-name-OpenClaw-anthropic-trademark-2026-1?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://www.ft.com/content/078fe849-cc4f-43be-ab40-8bdd30c1187d?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://www.paloaltonetworks.com/blog/network-security/why-OpenClaw-may-signal-ai-crisis/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://www.reuters.com/business/cloudflare-surges-viral-ai-agent-buzz-lifts-expectations-2026-01-27/?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://www.theverge.com/ai-artificial-intelligence/871006/social-network-facebook-for-ai-agents-moltbook-OpenClaw-openclaw": {
           "state": "unsupported",
@@ -2165,8 +2165,8 @@
         },
         "https://doi.org/10.1177/09500170211015067": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://en.wikipedia.org/wiki/Erik_Davis": {
           "state": "unsupported",
@@ -2174,8 +2174,8 @@
         },
         "https://mitpress.mit.edu/9780262516037/understanding-knowledge-as-a-commons/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-29T19:52:24+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T00:52:18+00:00"
         },
         "https://tedt.org/Agents-Dont-Click/": {
           "state": "accepted",
@@ -3121,8 +3121,8 @@
         },
         "https://www.axios.com/2026/07/09/meta-ai-spark-model-update-developer": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T20:52:07+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T22:52:18+00:00"
         },
         "https://www.minimax.io/blog/minimax-m3": {
           "state": "unsupported",
@@ -3130,8 +3130,8 @@
         },
         "https://www.spglobal.com/ratings/en/regulatory/article/creditweek-will-rising-capex-test-hyperscalers-credit-strength-s101685676": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T20:52:07+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T22:52:18+00:00"
         },
         "https://www.upstage.ai/blog/en/solar-pro-3-0323": {
           "state": "unsupported",
@@ -3171,18 +3171,18 @@
       "deliveries": {
         "https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T20:52:07+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T22:52:18+00:00"
         },
         "https://openai.com/index/gpt-oss-model-card/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T20:52:07+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T22:52:18+00:00"
         },
         "https://openai.com/safety/preparedness": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-29T20:52:07+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-29T22:52:18+00:00"
         },
         "https://tedt.org/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
           "state": "accepted",
@@ -3385,144 +3385,144 @@
           "attempts": 1
         },
         "https://www.vatican.va/content/benedict-xvi/en/encyclicals/documents/hf_ben-xvi_enc_20051225_deus-caritas-est.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/benedict-xvi/en/encyclicals/documents/hf_ben-xvi_enc_20090629_caritas-in-veritate.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/benedict-xvi/en/homilies/2011/documents/hf_ben-xvi_hom_20110421_coena-domini.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/benedict-xvi/en/messages/communications/documents/hf_ben-xvi_mes_20130124_47th-world-communications-day.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/benedict-xvi/en/speeches/2007/january/documents/hf_ben-xvi_spe_20070108_diplomatic-corps.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/apost_exhortations/documents/20231004-laudate-deum.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/apost_exhortations/documents/papa-francesco_esortazione-ap_20131124_evangelii-gaudium.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/encyclicals/documents/20241024-enciclica-dilexit-nos.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/encyclicals/documents/papa-francesco_20150524_enciclica-laudato-si.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/encyclicals/documents/papa-francesco_20201003_enciclica-fratelli-tutti.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/messages/communications/documents/20240124-messaggio-comunicazioni-sociali.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/messages/migration/documents/20240524-world-migrants-day-2024.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/messages/peace/documents/20231208-messaggio-57giornatamondiale-pace2024.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/messages/peace/documents/papa-francesco_20141208_messaggio-xlviii-giornata-mondiale-pace-2015.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/messages/peace/documents/papa-francesco_20191208_messaggio-53giornatamondiale-pace2020.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/speeches/2013/june/documents/papa-francesco_20130620_38-sessione-fao.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/speeches/2016/september/documents/papa-francesco_20160920_assisi-preghiera-pace.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/speeches/2017/february/documents/papa-francesco_20170215_popoli-indigeni.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/speeches/2019/february/documents/papa-francesco_20190214_fao.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/speeches/2019/november/documents/papa-francesco_20191111_consiglio-capitalismo-inclusivo.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/speeches/2021/november/documents/20211113-onoreficenze-giornalisti.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/speeches/2023/march/documents/20230327-minerva-dialogues.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/speeches/2024/june/documents/20240614-g7-intelligenza-artificiale.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/francesco/en/speeches/2025/january/documents/20250109-corpo-diplomatico.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/apost_letters/1994/documents/hf_jp-ii_apl_19941110_tertio-millennio-adveniente.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_01051991_centesimus-annus.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_04031979_redemptor-hominis.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_06081993_veritatis-splendor.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_14091981_laborem-exercens.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_25031995_evangelium-vitae.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/encyclicals/documents/hf_jp-ii_enc_30121987_sollicitudo-rei-socialis.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/letters/1994/documents/hf_jp-ii_let_02021994_families.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/messages/peace/documents/hf_jp-ii_mes_08121997_xxxi-world-day-for-peace.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.vatican.va/content/john-paul-ii/en/messages/peace/documents/hf_jp-ii_mes_14121998_xxxii-world-day-for-peace.html": {
           "state": "pending",
