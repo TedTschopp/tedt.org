@@ -4182,14 +4182,13 @@
         {
           "id": "115313282451559035",
           "url": "https://tschopp.net/users/Ted/statuses/115313282451559035"
+        },
+        {
+          "created_at": "2026-10-29T11:27:00.861Z",
+          "id": "117523953802378587",
+          "url": "https://tschopp.net/@Ted/117523953802378587"
         }
       ],
-      "intent": {
-        "key": "6caf28a1464446e7c656785693d56cf6c299b498a755d69215a19bbff64ee6d1",
-        "kind": "archive",
-        "started_at": "2026-10-29T11:26:35Z"
-      },
-      "missing_checked_at": "2026-10-29T11:26:35Z",
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4197,8 +4196,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Air-Dragon-Ghitgon.md"
       ],
-      "state": "uncertain",
-      "title": "Air Dragon «Ghitgon»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T11:27:00.861Z",
+        "id": "117523953802378587",
+        "url": "https://tschopp.net/@Ted/117523953802378587"
+      },
+      "title": "Air Dragon «Ghitgon»",
+      "verified_at": "2026-10-29T11:26:35Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Airshoon.html": {
       "aliases": [
@@ -26581,7 +26586,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T10:51:32.504Z",
+  "last_publication_at": "2026-10-29T11:27:00.861Z",
   "last_reconciliation_at": "2026-10-29T11:26:35Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 146,
@@ -27241,6 +27246,14 @@
       "kind": "archive",
       "operation": "b38b526c7d6be0dd3280f5e52b54e27c2b4e3bb9396d9021597860adcf47d620",
       "url": "https://tschopp.net/@Ted/117523814318344246"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Air-Dragon-Ghitgon.html",
+      "created_at": "2026-10-29T11:27:00.861Z",
+      "id": "117523953802378587",
+      "kind": "archive",
+      "operation": "6caf28a1464446e7c656785693d56cf6c299b498a755d69215a19bbff64ee6d1",
+      "url": "https://tschopp.net/@Ted/117523953802378587"
     }
   ],
   "run_count": 297,
