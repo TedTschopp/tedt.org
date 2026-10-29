@@ -4367,12 +4367,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "13fee176f48468e4d9dcb964363a886fcadf80b85022d674f37317e194eee29b",
-        "kind": "archive",
-        "started_at": "2026-10-29T14:28:10Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T14:28:35.823Z",
+          "id": "117524667814627715",
+          "url": "https://tschopp.net/@Ted/117524667814627715"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4380,8 +4381,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Ambush-Bug-BuTal.md"
       ],
-      "state": "uncertain",
-      "title": "Ambush Bug «Bu'Tal»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T14:28:35.823Z",
+        "id": "117524667814627715",
+        "url": "https://tschopp.net/@Ted/117524667814627715"
+      },
+      "title": "Ambush Bug «Bu'Tal»",
+      "verified_at": "2026-10-29T14:28:10Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Ant-Giant.html": {
       "aliases": [
@@ -26649,7 +26656,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T13:52:16.791Z",
+  "last_publication_at": "2026-10-29T14:28:35.823Z",
   "last_reconciliation_at": "2026-10-29T14:28:10Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 151,
@@ -27349,6 +27356,14 @@
       "kind": "archive",
       "operation": "83f98e47bb9769242ff227b95000cab96e6ad8b02eeb6cbe1a1de24534e5d8be",
       "url": "https://tschopp.net/@Ted/117524525009485657"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Ambush-Bug-BuTal.html",
+      "created_at": "2026-10-29T14:28:35.823Z",
+      "id": "117524667814627715",
+      "kind": "archive",
+      "operation": "13fee176f48468e4d9dcb964363a886fcadf80b85022d674f37317e194eee29b",
+      "url": "https://tschopp.net/@Ted/117524667814627715"
     }
   ],
   "run_count": 309,
