@@ -4104,12 +4104,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "01fbe66dfb4011bf76d4545214298d2153847cd69c90ac9dda6aff4d246b3623",
-        "kind": "archive",
-        "started_at": "2026-10-29T10:18:15Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-29T10:18:39.871Z",
+          "id": "117523685039882311",
+          "url": "https://tschopp.net/@Ted/117523685039882311"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4117,8 +4118,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Acidweed.md"
       ],
-      "state": "uncertain",
-      "title": "Acidweed"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T10:18:39.871Z",
+        "id": "117523685039882311",
+        "url": "https://tschopp.net/@Ted/117523685039882311"
+      },
+      "title": "Acidweed",
+      "verified_at": "2026-10-29T10:18:15Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Advoid.html": {
       "aliases": [
@@ -26553,7 +26560,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T09:32:28.597Z",
+  "last_publication_at": "2026-10-29T10:18:39.871Z",
   "last_reconciliation_at": "2026-10-29T10:18:15Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 144,
@@ -27197,6 +27204,14 @@
       "kind": "archive",
       "operation": "f99274e16447f6a2c8867aae7182b7f57a55883f266f43705b188ff4209d244c",
       "url": "https://tschopp.net/@Ted/117523503421685189"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Acidweed.html",
+      "created_at": "2026-10-29T10:18:39.871Z",
+      "id": "117523685039882311",
+      "kind": "archive",
+      "operation": "01fbe66dfb4011bf76d4545214298d2153847cd69c90ac9dda6aff4d246b3623",
+      "url": "https://tschopp.net/@Ted/117523685039882311"
     }
   ],
   "run_count": 291,
