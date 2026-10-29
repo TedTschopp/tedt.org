@@ -2961,14 +2961,13 @@
         {
           "id": "115017668434710719",
           "url": "https://tschopp.net/@Ted/115017668434710719"
+        },
+        {
+          "created_at": "2026-10-29T05:31:29.510Z",
+          "id": "117522555830886368",
+          "url": "https://tschopp.net/@Ted/117522555830886368"
         }
       ],
-      "intent": {
-        "key": "770217481456709ccf12ddd9dfb8f4d5166f6def84ed8535936f99fd89e51025",
-        "kind": "archive",
-        "started_at": "2026-10-29T05:31:07Z"
-      },
-      "missing_checked_at": "2026-10-29T05:31:07Z",
       "preferred_ids": [
         "115017668434710719"
       ],
@@ -2978,8 +2977,14 @@
       "source_paths": [
         "_posts/RPG Posts/2022-04-24-Character-Status-Communities-and-Cryptic-Alliances-AKA-How-Gamma-World-does-Alignment.md"
       ],
-      "state": "uncertain",
-      "title": "Character Status, Communities, and Cryptic Alliances AKA How Gamma World Does Alignment"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-29T05:31:29.510Z",
+        "id": "117522555830886368",
+        "url": "https://tschopp.net/@Ted/117522555830886368"
+      },
+      "title": "Character Status, Communities, and Cryptic Alliances AKA How Gamma World Does Alignment",
+      "verified_at": "2026-10-29T05:31:07Z"
     },
     "https://tedt.org/Charlie-Brooker-and-Konnie-Huq-I-havent-got-a-speech-I-didn/": {
       "aliases": [
@@ -26471,7 +26476,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-29T04:51:40.371Z",
+  "last_publication_at": "2026-10-29T05:31:29.510Z",
   "last_reconciliation_at": "2026-10-29T05:31:07Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 137,
@@ -27059,6 +27064,14 @@
       "kind": "archive",
       "operation": "a2b03d213bac6dd36e089e6835370323ff7060f6be8e7a81cb01a6a55dced661",
       "url": "https://tschopp.net/@Ted/117522399256372377"
+    },
+    {
+      "canonical_url": "https://tedt.org/Character-Status-Communities-and-Cryptic-Alliances-AKA-How-Gamma-World-does-Alignment/",
+      "created_at": "2026-10-29T05:31:29.510Z",
+      "id": "117522555830886368",
+      "kind": "archive",
+      "operation": "770217481456709ccf12ddd9dfb8f4d5166f6def84ed8535936f99fd89e51025",
+      "url": "https://tschopp.net/@Ted/117522555830886368"
     }
   ],
   "run_count": 271,
