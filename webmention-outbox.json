@@ -221,8 +221,8 @@
         },
         "https://tedt.org/RFP-Response-Review/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-30T22:53:13+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-10-31T23:51:38+00:00"
         },
         "https://tedt.org/Reprint-Accenture-to-exit-staff-who-cannot-be-retrained-for-age-of-AI/": {
           "state": "accepted",
@@ -272,8 +272,8 @@
         },
         "https://openai.com/index/introducing-gpt-4-5/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-30T22:53:13+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-10-31T23:51:38+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -731,8 +731,8 @@
         },
         "https://transformer-circuits.pub/2026/nla/index.html#introduction": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-30T22:53:13+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-10-31T23:51:38+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
