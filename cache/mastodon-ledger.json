@@ -4995,12 +4995,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "0f2a656cf8ac18be54d675d88ec051ff328c59c2ab637006e6b467ea8b624a29",
-        "kind": "archive",
-        "started_at": "2026-10-30T13:31:31Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-30T13:31:50.865Z",
+          "id": "117530106977648918",
+          "url": "https://tschopp.net/@Ted/117530106977648918"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5008,8 +5009,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bandit-Droid.md"
       ],
-      "state": "uncertain",
-      "title": "Bandit Droid"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-30T13:31:50.865Z",
+        "id": "117530106977648918",
+        "url": "https://tschopp.net/@Ted/117530106977648918"
+      },
+      "title": "Bandit Droid",
+      "verified_at": "2026-10-30T13:31:31Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bandit-Muel.html": {
       "aliases": [
@@ -26886,7 +26893,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-30T12:25:44.841Z",
+  "last_publication_at": "2026-10-30T13:31:50.865Z",
   "last_reconciliation_at": "2026-10-30T13:31:31Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 168,
@@ -27722,6 +27729,14 @@
       "kind": "archive",
       "operation": "f2b5680bfee540b8a164786646f4ce93a1b2da0a800f510ebc8fa60c3db5a8ce",
       "url": "https://tschopp.net/@Ted/117529847060314685"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bandit-Droid.html",
+      "created_at": "2026-10-30T13:31:50.865Z",
+      "id": "117530106977648918",
+      "kind": "archive",
+      "operation": "0f2a656cf8ac18be54d675d88ec051ff328c59c2ab637006e6b467ea8b624a29",
+      "url": "https://tschopp.net/@Ted/117530106977648918"
     }
   ],
   "run_count": 413,
