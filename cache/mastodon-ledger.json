@@ -5032,12 +5032,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "e99468f24b2126bb1b68c4a51d7b906e718a56e82e8ad480319687b7dbd06713",
-        "kind": "archive",
-        "started_at": "2026-10-30T14:31:56Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-30T14:32:11.176Z",
+          "id": "117530344238397417",
+          "url": "https://tschopp.net/@Ted/117530344238397417"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5045,8 +5046,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bandit-Muel.md"
       ],
-      "state": "uncertain",
-      "title": "Bandit Muel"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-30T14:32:11.176Z",
+        "id": "117530344238397417",
+        "url": "https://tschopp.net/@Ted/117530344238397417"
+      },
+      "title": "Bandit Muel",
+      "verified_at": "2026-10-30T14:31:56Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Baner.html": {
       "aliases": [
@@ -26900,7 +26907,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-30T13:31:50.865Z",
+  "last_publication_at": "2026-10-30T14:32:11.176Z",
   "last_reconciliation_at": "2026-10-30T14:31:56Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 169,
@@ -27744,6 +27751,14 @@
       "kind": "archive",
       "operation": "0f2a656cf8ac18be54d675d88ec051ff328c59c2ab637006e6b467ea8b624a29",
       "url": "https://tschopp.net/@Ted/117530106977648918"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bandit-Muel.html",
+      "created_at": "2026-10-30T14:32:11.176Z",
+      "id": "117530344238397417",
+      "kind": "archive",
+      "operation": "e99468f24b2126bb1b68c4a51d7b906e718a56e82e8ad480319687b7dbd06713",
+      "url": "https://tschopp.net/@Ted/117530344238397417"
     }
   ],
   "run_count": 417,
