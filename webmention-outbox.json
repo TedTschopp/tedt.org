@@ -4746,8 +4746,8 @@
         },
         "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T03:01:12+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T07:52:00+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -4862,8 +4862,8 @@
         },
         "https://nordvpn.com/blog/is-github-copilot-safe-to-use-at-work/#:~:text=,what%20they%20are%3A%20just%20suggestions": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T03:01:12+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T07:52:00+00:00"
         },
         "https://tedt.org/AI-Engineer-Coach/": {
           "state": "accepted",
@@ -5370,13 +5370,13 @@
         },
         "https://venturebeat.com/ai/google-and-openais-coding-wins-at-university-competition-show-enterprise-ai": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:52:18+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T05:52:00+00:00"
         },
         "https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:52:18+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T05:52:00+00:00"
         },
         "https://x.com/sama/status/1969835407421374910": {
           "state": "unsupported",
@@ -5415,28 +5415,28 @@
         },
         "https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:52:18+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T05:52:00+00:00"
         },
         "https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:52:18+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T05:52:00+00:00"
         },
         "https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:52:18+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T05:52:00+00:00"
         },
         "https://openai.com/index/introducing-canvas/?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:52:18+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T05:52:00+00:00"
         },
         "https://openai.com/index/introducing-chatgpt-agent/?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:52:18+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T05:52:00+00:00"
         },
         "https://platform.openai.com/docs/guides/prompt-engineering?utm_source=chatgpt.com": {
           "state": "unsupported",
@@ -5923,36 +5923,48 @@
           "attempts": 1
         },
         "https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/6zX23YeJOHd4JJzrhGge",
+          "attempts": 1
         },
         "https://tedt.org/The-Pancake-Protocol/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/pmkpsjtAn5a1wpCn_DMT",
+          "attempts": 1
         },
         "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/8Q9XUtaZJba57VgVk7_M",
+          "attempts": 1
         },
         "https://tedt.org/Why-AI-Needs-a-Harness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/iH4myBMm0YbrpGlW5qWV",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/agentic-systems/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/JSUMbeUUkft-u5Tv_Oud",
+          "attempts": 1
         },
         "https://tedt.org/topics/enterprise-architecture-for-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/c6Y5VWC02KT1BH_e4w7Q",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -6008,32 +6020,42 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Engineer-Coach/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/TzhxKLOuooT3g97TO18s",
+          "attempts": 1
         },
         "https://tedt.org/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/aWJn80zk8ofAUMBL-zQt",
+          "attempts": 1
         },
         "https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/emff03nBvRvMgcJ0R2Qi",
+          "attempts": 1
         },
         "https://tedt.org/Gold-Medals-and-Paved-Roads/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/dfKr4SfodeeBb_4g5D_q",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-native-software-delivery/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/mn-xfM9I7yztulmsEbEb",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -6089,32 +6111,42 @@
       ],
       "deliveries": {
         "https://tedt.org/Agents-Dont-Click/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Q8-5jYJg6EcsjO-mHcwm",
+          "attempts": 1
         },
         "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/v9NQzofnuq3r5jtT_ZXX",
+          "attempts": 1
         },
         "https://tedt.org/Dont-Build-Her-Another-Chatbot/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/k3cwoZ1-PnaFXCudJiYF",
+          "attempts": 1
         },
         "https://tedt.org/The-Pancake-Protocol/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/vDlwsE576ELUhR4ABwvX",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/agentic-systems/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/9XRRQ_eOsNhtNv4hwhHO",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -6126,16 +6158,17 @@
       ],
       "deliveries": {
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/prompts/Simulation-Creator.md": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T04:52:00+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -6151,12 +6184,12 @@
       ],
       "deliveries": {
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -6168,16 +6201,16 @@
       ],
       "deliveries": {
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.arxiv.org/abs/2505.03335": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -6221,48 +6254,56 @@
       ],
       "deliveries": {
         "https://arxiv.org/abs/2512.08296v3": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://arxiv.org/abs/2606.12683v2": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://arxiv.org/abs/2609.20519": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://claude.com/blog/agentic-coding-is-straining-ci-heres-how-we-scaled-test-impact-analysis-at-anthropic": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://institute.deepmind.com/essays/artificial-symbiotic-intelligence/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/Building-a-Lego-Cat/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/42asv45c9jgF3S0cuyP8",
+          "attempts": 1
         },
         "https://tedt.org/How-Much-Work-Can-Your-AI-Safely-Own/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/PWxO9BzEnk-LgZ54vgUK",
+          "attempts": 1
         },
         "https://tedt.org/The-Cost-of-a-Finished-Job/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/xX7NT6300gOPeS72ub_v",
+          "attempts": 1
         },
         "https://tedt.org/When-Output-Becomes-Abundant/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/C3acNzBKHRMHCvV86IWg",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
