@@ -5255,12 +5255,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "ea102251dee7d11c943df9b5dc98a1ef9271eafbe576bfbcad46d0fbf55a70fe",
-        "kind": "archive",
-        "started_at": "2026-10-30T21:01:00Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-30T21:01:23.425Z",
+          "id": "117531874651348228",
+          "url": "https://tschopp.net/@Ted/117531874651348228"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5268,8 +5269,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bear.md"
       ],
-      "state": "uncertain",
-      "title": "Bear"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-30T21:01:23.425Z",
+        "id": "117531874651348228",
+        "url": "https://tschopp.net/@Ted/117531874651348228"
+      },
+      "title": "Bear",
+      "verified_at": "2026-10-30T21:01:00Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bearwyrm.html": {
       "aliases": [
@@ -26985,7 +26992,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-30T20:01:32.296Z",
+  "last_publication_at": "2026-10-30T21:01:23.425Z",
   "last_reconciliation_at": "2026-10-30T21:01:00Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 175,
@@ -27877,6 +27884,14 @@
       "kind": "archive",
       "operation": "6eaa0f6a7684a26b6c2bbcb4aed18c64bd75ea92cb10945d373262d9808e5ee5",
       "url": "https://tschopp.net/@Ted/117531639303083246"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bear.html",
+      "created_at": "2026-10-30T21:01:23.425Z",
+      "id": "117531874651348228",
+      "kind": "archive",
+      "operation": "ea102251dee7d11c943df9b5dc98a1ef9271eafbe576bfbcad46d0fbf55a70fe",
+      "url": "https://tschopp.net/@Ted/117531874651348228"
     }
   ],
   "run_count": 448,
