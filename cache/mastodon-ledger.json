@@ -5403,12 +5403,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "8764d4dc28b0ea4a35652d766253688e5a3e5010db8b7ba6567a4593914f6f4d",
-        "kind": "archive",
-        "started_at": "2026-10-30T23:31:47Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-30T23:32:13.542Z",
+          "id": "117532467759835940",
+          "url": "https://tschopp.net/@Ted/117532467759835940"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5416,8 +5417,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Big-Daddy-Juggernaut.md"
       ],
-      "state": "uncertain",
-      "title": "Big Daddy «Juggernaut»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-30T23:32:13.542Z",
+        "id": "117532467759835940",
+        "url": "https://tschopp.net/@Ted/117532467759835940"
+      },
+      "title": "Big Daddy «Juggernaut»",
+      "verified_at": "2026-10-30T23:31:47Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Big-Horns-Rakox.html": {
       "aliases": [
@@ -27041,7 +27048,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-30T22:54:28.662Z",
+  "last_publication_at": "2026-10-30T23:32:13.542Z",
   "last_reconciliation_at": "2026-10-30T23:31:47Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 179,
@@ -27965,6 +27972,14 @@
       "kind": "archive",
       "operation": "538f0596973d4f825672180d2d7718bbdd4cfd9e3c92ebd74818329599b09d7f",
       "url": "https://tschopp.net/@Ted/117532319328649936"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Big-Daddy-Juggernaut.html",
+      "created_at": "2026-10-30T23:32:13.542Z",
+      "id": "117532467759835940",
+      "kind": "archive",
+      "operation": "8764d4dc28b0ea4a35652d766253688e5a3e5010db8b7ba6567a4593914f6f4d",
+      "url": "https://tschopp.net/@Ted/117532467759835940"
     }
   ],
   "run_count": 461,
