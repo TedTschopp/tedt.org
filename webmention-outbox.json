@@ -221,8 +221,8 @@
         },
         "https://tedt.org/RFP-Response-Review/": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T06:51:24+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-30T22:53:13+00:00"
         },
         "https://tedt.org/Reprint-Accenture-to-exit-staff-who-cannot-be-retrained-for-age-of-AI/": {
           "state": "accepted",
@@ -272,8 +272,8 @@
         },
         "https://openai.com/index/introducing-gpt-4-5/": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T06:51:24+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-30T22:53:13+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -731,8 +731,8 @@
         },
         "https://transformer-circuits.pub/2026/nla/index.html#introduction": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T06:51:24+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-30T22:53:13+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -3959,8 +3959,8 @@
         },
         "https://tedt.org/Artisanal-Software-Craftsman/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T05:52:18+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T14:53:13+00:00"
         },
         "https://tedt.org/Beyond-the-Light-Bulb/": {
           "state": "accepted",
@@ -4329,8 +4329,8 @@
         },
         "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T05:52:18+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T14:53:13+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -5370,13 +5370,13 @@
         },
         "https://venturebeat.com/ai/google-and-openais-coding-wins-at-university-competition-show-enterprise-ai": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T05:52:00+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T05:52:00+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://x.com/sama/status/1969835407421374910": {
           "state": "unsupported",
@@ -5415,28 +5415,28 @@
         },
         "https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T05:52:00+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T05:52:00+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T05:52:00+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://openai.com/index/introducing-canvas/?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T05:52:00+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://openai.com/index/introducing-chatgpt-agent/?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T05:52:00+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://platform.openai.com/docs/guides/prompt-engineering?utm_source=chatgpt.com": {
           "state": "unsupported",
@@ -5611,8 +5611,8 @@
         },
         "https://openai.com/global-affairs/openais-economic-blueprint/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T06:52:17+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://tedt.org/Agents-Dont-Click/": {
           "state": "accepted",
@@ -5800,8 +5800,8 @@
         },
         "https://platforms.substack.com/p/humans-as-luxury-goods-in-the-age": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T06:52:17+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://prarena.ai": {
           "state": "unsupported",
@@ -5821,8 +5821,8 @@
         },
         "https://www.businesswire.com/news/home/20251014317368/en/SUPERAGENT-AI-Launches-Suite-of-AI-Agents-to-Automate-the-Entire-Insurance-Sales-Funnel-From-First-Call-to-Final-Quote": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T06:52:17+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://www.cbinsights.com/research/report/ai-trends-q1-2025/": {
           "state": "unsupported",
@@ -5830,8 +5830,8 @@
         },
         "https://www.congress.gov/bill/119th-congress/house-bill/238": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T06:52:17+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://www.forbes.com/councils/forbestechcouncil/2025/05/19/intelligence-too-cheap-to-meter-positioning-for-the-future-of-ai/": {
           "state": "unsupported",
@@ -5847,8 +5847,8 @@
         },
         "https://www.wsj.com/opinion/the-robots-that-handle-your-amazon-orders-0eb2f6e7": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T06:52:17+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://x.com/dwarkesh_sp/status/1885357384866160762": {
           "state": "unsupported",
@@ -6163,8 +6163,8 @@
         },
         "https://tedt.org/prompts/Simulation-Creator.md": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T06:52:17+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T10:53:13+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -6463,8 +6463,8 @@
       "deliveries": {
         "https://openai.com/index/announcing-the-stargate-project/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T05:52:17+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T08:53:13+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -10487,32 +10487,36 @@
           "attempts": 1
         },
         "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T07:53:13+00:00"
         },
         "https://openai.com/index/introducing-openai-o1-preview/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T07:53:13+00:00"
         },
         "https://simonwillison.net/2024/Dec/31/llms-in-2024/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/simonwillison.net/webmention/mZZeNIMeeKWT6DjYFlps",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.anthropic.com/news/claude-3-5-sonnet": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -10543,92 +10547,98 @@
       ],
       "deliveries": {
         "https://home.kpmg": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://managementconsulted.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T07:53:13+00:00"
         },
         "https://queenstower.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.accenture.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.alixpartners.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.alvarezandmarsal.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T07:53:13+00:00"
         },
         "https://www.bain.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.bcg.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.ey.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.ft.com/content/2b15601b-8d02-4abe-a789-7862874042be": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T07:53:13+00:00"
         },
         "https://www.linkedin.com/in/antonio-alvarez-iii-80090/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.linkedin.com/in/erickutcher/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.linkedin.com/in/marco-amitrano-b4155b19/?originalSubdomain=uk": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T07:53:13+00:00"
         },
         "https://www.linkedin.com/in/marksbunker/?originalSubdomain=uk": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.linkedin.com/in/mohamed-kande-739574/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.linkedin.com/in/namaanmian/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.linkedin.com/in/rhornby/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.mckinsey.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T07:53:13+00:00"
         },
         "https://www.pwc.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T07:53:13+00:00"
         },
         "https://www2.deloitte.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -10649,12 +10659,16 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Engineer-Coach/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/OcMw9ca5j6jJC98XugAI",
+          "attempts": 1
         },
         "https://tedt.org/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Kz21TfTdgMKqxbFydYUO",
+          "attempts": 1
         },
         "https://tedt.org/Gold-Medals-and-Paved-Roads/": {
           "state": "pending",
