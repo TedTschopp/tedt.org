@@ -5329,12 +5329,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "5e5895717a593e76cd537c196d2c4344d54a6931a041460785467898aa7fd770",
-        "kind": "archive",
-        "started_at": "2026-10-30T22:14:25Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-30T22:14:51.297Z",
+          "id": "117532163525655066",
+          "url": "https://tschopp.net/@Ted/117532163525655066"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5342,8 +5343,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Beauty-the-visious-mutated-decrative-plant.md"
       ],
-      "state": "uncertain",
-      "title": "Beauty, the visious, mutated decrative plant"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-30T22:14:51.297Z",
+        "id": "117532163525655066",
+        "url": "https://tschopp.net/@Ted/117532163525655066"
+      },
+      "title": "Beauty, the visious, mutated decrative plant",
+      "verified_at": "2026-10-30T22:14:25Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bee-Folk-Bumbles.html": {
       "aliases": [
@@ -27013,7 +27020,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-30T21:41:41.309Z",
+  "last_publication_at": "2026-10-30T22:14:51.297Z",
   "last_reconciliation_at": "2026-10-30T22:14:25Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 177,
@@ -27921,6 +27928,14 @@
       "kind": "archive",
       "operation": "51dd17bb2d6d661d92110c1eaab1788fa9f34106f56e44ecd79322eb90f8f8d7",
       "url": "https://tschopp.net/@Ted/117532033109747535"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Beauty-the-visious-mutated-decrative-plant.html",
+      "created_at": "2026-10-30T22:14:51.297Z",
+      "id": "117532163525655066",
+      "kind": "archive",
+      "operation": "5e5895717a593e76cd537c196d2c4344d54a6931a041460785467898aa7fd770",
+      "url": "https://tschopp.net/@Ted/117532163525655066"
     }
   ],
   "run_count": 454,
