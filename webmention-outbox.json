@@ -4746,8 +4746,8 @@
         },
         "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T07:52:00+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T15:52:02+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -4862,8 +4862,8 @@
         },
         "https://nordvpn.com/blog/is-github-copilot-safe-to-use-at-work/#:~:text=,what%20they%20are%3A%20just%20suggestions": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T07:52:00+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T15:52:02+00:00"
         },
         "https://tedt.org/AI-Engineer-Coach/": {
           "state": "accepted",
@@ -10671,24 +10671,30 @@
           "attempts": 1
         },
         "https://tedt.org/Gold-Medals-and-Paved-Roads/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/YT2vyFOMIhCAvSxeywZs",
+          "attempts": 1
         },
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/d4K_V1-K9RH7Gfhwjrgh",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-native-software-delivery/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Rat3WCViTOHomtALNHmI",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -10719,92 +10725,108 @@
       ],
       "deliveries": {
         "https://americanhistory.si.edu/lighting/19thcent/consq19.htm": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T08:52:02+00:00"
         },
         "https://blog.sciencemuseum.org.uk/james-watt-and-the-separate-condenser/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://blogs.loc.gov/bibliomania/2024/05/20/the-first-modern-medical-book/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://carlotaperez.org/research-project/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://jods.mitpress.mit.edu/pub/ageofentanglement/release/1": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T08:52:02+00:00"
         },
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC11244532/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC12036991/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/A-letter-to-the-Artisanal-Software-Craftsman/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/QnqqA61GMhSwy1gFn3AN",
+          "attempts": 1
         },
         "https://tedt.org/Art-of-Innovation/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/NWxxwgfHioO0r555XXcG",
+          "attempts": 1
         },
         "https://tedt.org/Beyond-the-Light-Bulb/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/1BkMI7JovJZct_7Y0iLD",
+          "attempts": 1
         },
         "https://tedt.org/Beyond-the-Mirror/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/z_T-nUSGu0voov_Ew5DM",
+          "attempts": 1
         },
         "https://tedt.org/When-Output-Becomes-Abundant/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/v0XHkS9jwU8WoevjQ5eF",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/the-purpose-of-community-protection-of-the-commons/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/quhaTYLqi3iyqj7mnwkG",
+          "attempts": 1
         },
         "https://www.aeaweb.org/articles?id=10.1257/mac.20180386": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.aeaweb.org/articles?id=10.1257/pandp.20261034": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.computerhistory.org/revolution/the-web/20/377": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.marxists.org/archive/morris/works/1884/art-lab.htm": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.metmuseum.org/exhibitions/listings/2012/printed-image-in-china": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T08:52:02+00:00"
         },
         "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T08:52:02+00:00"
         },
         "https://www.vam.ac.uk/articles/arts-and-crafts-an-introduction": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
