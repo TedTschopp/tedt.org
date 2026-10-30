@@ -3959,8 +3959,8 @@
         },
         "https://tedt.org/Artisanal-Software-Craftsman/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T01:52:05+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T05:52:18+00:00"
         },
         "https://tedt.org/Beyond-the-Light-Bulb/": {
           "state": "accepted",
@@ -4329,8 +4329,8 @@
         },
         "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T01:52:05+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T05:52:18+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -5256,16 +5256,18 @@
           "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/agentic-systems/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Ws-qkIgT73sUy87TWZyD",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -5303,64 +5305,86 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Engineer-Coach/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/rfxB5U2Oadpoz6u8aLSH",
+          "attempts": 1
         },
         "https://tedt.org/AI-in-Software-Development-Breaking-Myths-and-Building-Teams/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/AuAaOu5MJh35WbSTciJy",
+          "attempts": 1
         },
         "https://tedt.org/Agents-Dont-Click/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/57LbraIrONMTNNP2-EnS",
+          "attempts": 1
         },
         "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/pKSNEvsT96GAGOIKnD-l",
+          "attempts": 1
         },
         "https://tedt.org/Customizing-Copilots-Thinking-Messages-in-VS-Code/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/o1-Qq7JajV9x78TU-XFc",
+          "attempts": 1
         },
         "https://tedt.org/Dont-Build-Her-Another-Chatbot/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/btzgbAzw8aR26vhCkzts",
+          "attempts": 1
         },
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Jqx7lJu_hJUb2EQ95Ht8",
+          "attempts": 1
         },
         "https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/JUuKzVPLjheKZijhqJue",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/agentic-systems/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/XdJB0mX0YkUuSiS2G_et",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-native-software-delivery/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/YLMnSZ0MxIaw7tOV2QJ2",
+          "attempts": 1
         },
         "https://venturebeat.com/ai/google-and-openais-coding-wins-at-university-competition-show-enterprise-ai": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T02:52:18+00:00"
         },
         "https://venturebeat.com/ai/openai-unveils-new-model-gpt-5-codex-optimized-for-agentic-coding": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T02:52:18+00:00"
         },
         "https://x.com/sama/status/1969835407421374910": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -5382,56 +5406,61 @@
       ],
       "deliveries": {
         "https://cookbook.openai.com/examples/gpt-5/gpt-5_prompting_guide?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://cookbook.openai.com/examples/optimize_prompts?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://help.openai.com/en/articles/10032626-prompt-engineering-best-practices-for-chatgpt?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T02:52:18+00:00"
         },
         "https://help.openai.com/en/articles/10291617-scheduled-tasks-in-chatgpt?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T02:52:18+00:00"
         },
         "https://help.openai.com/en/articles/9260256-chatgpt-capabilities-overview?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T02:52:18+00:00"
         },
         "https://openai.com/index/introducing-canvas/?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T02:52:18+00:00"
         },
         "https://openai.com/index/introducing-chatgpt-agent/?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T02:52:18+00:00"
         },
         "https://platform.openai.com/docs/guides/prompt-engineering?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://platform.openai.com/docs/guides/tools?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://timesofindia.indiatimes.com/technology/tech-news/openai-launches-chatgpt-agent-to-automate-complex-tasks-what-it-is-capable-of-who-can-use-it-and-more/articleshow/122718609.cms?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.tomsguide.com/ai/openais-new-chatgpt-agent-is-here-5-features-that-change-everything?utm_source=chatgpt.com": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -5450,44 +5479,50 @@
       ],
       "deliveries": {
         "https://darioamodei.com/post/we-must-pace-the-frontier": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/wMqi5PdXeaP0T615sMZz",
+          "attempts": 1
         },
         "https://tedt.org/How-Much-Work-Can-Your-AI-Safely-Own/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/1Ts4-iDMdKe9N9RpHUpj",
+          "attempts": 1
         },
         "https://tedt.org/Winning-the-Intelligence-Inversion/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/BZMK8454QuJm1ki_li54",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.anthropic.com/news/accenture-embedded-evaluation": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.anthropic.com/news/anthropic-accenture-partnership": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.eff.org/deeplinks/2026/09/eff-statement-california-governors-executive-order-ai": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.wired.com/story/heres-how-an-ai-slowdown-could-actually-work/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -5510,32 +5545,32 @@
       ],
       "deliveries": {
         "https://blog.google/innovation-and-ai/technology/ai/google-io-2023-keynote-sundar-pichai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://blog.google/intl/en-in/google-bard-updates-io-2023/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://blog.google/products-and-platforms/products/search/generative-ai-search/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://blogs.microsoft.com/blog/2023/05/04/announcing-the-next-wave-of-ai-innovation-with-microsoft-bing-and-edge/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://workspace.google.com/blog/product-announcements/duet-ai": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
