@@ -4810,12 +4810,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "86762baff365aa9d6d902b39989744e94e9e7671ef4279dff9dfe7a1ffde825e",
-        "kind": "archive",
-        "started_at": "2026-10-30T07:51:46Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-30T07:52:01.353Z",
+          "id": "117528770730629917",
+          "url": "https://tschopp.net/@Ted/117528770730629917"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -4823,8 +4824,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bandit-1.md"
       ],
-      "state": "uncertain",
-      "title": "Bandit 1"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-30T07:52:01.353Z",
+        "id": "117528770730629917",
+        "url": "https://tschopp.net/@Ted/117528770730629917"
+      },
+      "title": "Bandit 1",
+      "verified_at": "2026-10-30T07:51:46Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bandit-2.html": {
       "aliases": [
@@ -26816,7 +26823,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-30T06:47:04.459Z",
+  "last_publication_at": "2026-10-30T07:52:01.353Z",
   "last_reconciliation_at": "2026-10-30T07:51:46Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 163,
@@ -27612,6 +27619,14 @@
       "kind": "archive",
       "operation": "518790782d511283a8943f1ab9173e1b69b437059ab526dc1d087540f6de76fb",
       "url": "https://tschopp.net/@Ted/117528515343683276"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bandit-1.html",
+      "created_at": "2026-10-30T07:52:01.353Z",
+      "id": "117528770730629917",
+      "kind": "archive",
+      "operation": "86762baff365aa9d6d902b39989744e94e9e7671ef4279dff9dfe7a1ffde825e",
+      "url": "https://tschopp.net/@Ted/117528770730629917"
     }
   ],
   "run_count": 387,
