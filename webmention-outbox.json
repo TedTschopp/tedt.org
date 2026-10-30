@@ -6463,8 +6463,8 @@
       "deliveries": {
         "https://openai.com/index/announcing-the-stargate-project/": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T21:52:25+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T14:52:13+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
