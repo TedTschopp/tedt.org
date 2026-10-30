@@ -5143,12 +5143,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "fcb84c14e5f792245015284fa39fec41441b1fcbcbc1baa2f7454d1b77f18e5d",
-        "kind": "archive",
-        "started_at": "2026-10-30T17:42:13Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-30T17:42:28.827Z",
+          "id": "117531092505575124",
+          "url": "https://tschopp.net/@Ted/117531092505575124"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5156,8 +5157,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Barfly.md"
       ],
-      "state": "uncertain",
-      "title": "Barfly"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-30T17:42:28.827Z",
+        "id": "117531092505575124",
+        "url": "https://tschopp.net/@Ted/117531092505575124"
+      },
+      "title": "Barfly",
+      "verified_at": "2026-10-30T17:42:13Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bat-Folk-Dracus.html": {
       "aliases": [
@@ -26942,7 +26949,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-30T16:41:19.581Z",
+  "last_publication_at": "2026-10-30T17:42:28.827Z",
   "last_reconciliation_at": "2026-10-30T17:42:13Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 172,
@@ -27810,6 +27817,14 @@
       "kind": "archive",
       "operation": "93f456164bbd20abc6bbbebb2d3a6096e9dbb2065546036cbff3bcd1768b905b",
       "url": "https://tschopp.net/@Ted/117530852037753584"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Barfly.html",
+      "created_at": "2026-10-30T17:42:28.827Z",
+      "id": "117531092505575124",
+      "kind": "archive",
+      "operation": "fcb84c14e5f792245015284fa39fec41441b1fcbcbc1baa2f7454d1b77f18e5d",
+      "url": "https://tschopp.net/@Ted/117531092505575124"
     }
   ],
   "run_count": 433,
