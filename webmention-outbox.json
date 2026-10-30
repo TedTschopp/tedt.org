@@ -3121,8 +3121,8 @@
         },
         "https://www.axios.com/2026/07/09/meta-ai-spark-model-update-developer": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T03:52:05+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T12:52:17+00:00"
         },
         "https://www.minimax.io/blog/minimax-m3": {
           "state": "unsupported",
@@ -3130,8 +3130,8 @@
         },
         "https://www.spglobal.com/ratings/en/regulatory/article/creditweek-will-rising-capex-test-hyperscalers-credit-strength-s101685676": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T03:52:05+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T12:52:17+00:00"
         },
         "https://www.upstage.ai/blog/en/solar-pro-3-0323": {
           "state": "unsupported",
@@ -3171,18 +3171,18 @@
       "deliveries": {
         "https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T03:52:05+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T12:52:17+00:00"
         },
         "https://openai.com/index/gpt-oss-model-card/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T03:52:05+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T12:52:17+00:00"
         },
         "https://openai.com/safety/preparedness": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T03:52:05+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T12:52:17+00:00"
         },
         "https://tedt.org/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
           "state": "accepted",
@@ -5113,18 +5113,18 @@
         },
         "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T04:52:11+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T08:52:17+00:00"
         },
         "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T04:52:11+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T08:52:17+00:00"
         },
         "https://openai.com/index/unive/": {
           "state": "retry",
-          "attempts": 2,
-          "next_attempt": "2026-10-30T04:52:11+00:00"
+          "attempts": 3,
+          "next_attempt": "2026-10-30T08:52:17+00:00"
         },
         "https://stripe.dev/blog/meet-stripes-knowledge-ai-platform": {
           "state": "unsupported",
@@ -5611,8 +5611,8 @@
         },
         "https://openai.com/global-affairs/openais-economic-blueprint/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T03:52:11+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T06:52:17+00:00"
         },
         "https://tedt.org/Agents-Dont-Click/": {
           "state": "accepted",
@@ -5800,8 +5800,8 @@
         },
         "https://platforms.substack.com/p/humans-as-luxury-goods-in-the-age": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T03:52:11+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T06:52:17+00:00"
         },
         "https://prarena.ai": {
           "state": "unsupported",
@@ -5821,8 +5821,8 @@
         },
         "https://www.businesswire.com/news/home/20251014317368/en/SUPERAGENT-AI-Launches-Suite-of-AI-Agents-to-Automate-the-Entire-Insurance-Sales-Funnel-From-First-Call-to-Final-Quote": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T03:52:11+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T06:52:17+00:00"
         },
         "https://www.cbinsights.com/research/report/ai-trends-q1-2025/": {
           "state": "unsupported",
@@ -5830,8 +5830,8 @@
         },
         "https://www.congress.gov/bill/119th-congress/house-bill/238": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T03:52:11+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T06:52:17+00:00"
         },
         "https://www.forbes.com/councils/forbestechcouncil/2025/05/19/intelligence-too-cheap-to-meter-positioning-for-the-future-of-ai/": {
           "state": "unsupported",
@@ -5847,8 +5847,8 @@
         },
         "https://www.wsj.com/opinion/the-robots-that-handle-your-amazon-orders-0eb2f6e7": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T03:52:11+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T06:52:17+00:00"
         },
         "https://x.com/dwarkesh_sp/status/1885357384866160762": {
           "state": "unsupported",
@@ -6163,8 +6163,8 @@
         },
         "https://tedt.org/prompts/Simulation-Creator.md": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T04:52:00+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T06:52:17+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -6339,92 +6339,110 @@
       ],
       "deliveries": {
         "https://blog.modelcontextprotocol.io/posts/2025-12-09-mcp-joins-agentic-ai-foundation/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://blog.modelcontextprotocol.io/posts/2025-12-19-mcp-transport-future/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://github.com/modelcontextprotocol/modelcontextprotocol/issues/1649": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://modelcontextprotocol.io/development/roadmap": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://modelcontextprotocol.io/extensions/apps/overview": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://modelcontextprotocol.io/extensions/auth/enterprise-managed-authorization": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://modelcontextprotocol.io/seps/1686-tasks": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://modelcontextprotocol.io/specification/2025-11-25": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://platform.claude.com/docs/en/agents-and-tools/tool-use/manage-tool-context": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://platform.claude.com/docs/en/agents-and-tools/tool-use/programmatic-tool-calling": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/AI-Value-Stream/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/wYNGBMuqLBeVH3NwMfU-",
+          "attempts": 1
         },
         "https://tedt.org/Agents-Dont-Click/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/WX7fHspN8-mozQUwEjpd",
+          "attempts": 1
         },
         "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/ppUktpg-O2Sz3SbiV_YW",
+          "attempts": 1
         },
         "https://tedt.org/Dont-Build-Her-Another-Chatbot/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/pwwydpNQBBLxcQjpFU8d",
+          "attempts": 1
         },
         "https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/raaYu2sXc6ILOlANxVa1",
+          "attempts": 1
         },
         "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/7xxwO-1b-MLNnAfDF-5H",
+          "attempts": 1
         },
         "https://tedt.org/Why-AI-Needs-a-Harness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/E7t72dIZiKHcrfMPH-wN",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/agentic-systems/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/UEKTDg3NE81lcECqs08Y",
+          "attempts": 1
         },
         "https://tedt.org/topics/enterprise-architecture-for-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/MfgpF93cMPM23P_tUhIu",
+          "attempts": 1
         },
         "https://www.anthropic.com/news/model-context-protocol": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -6444,20 +6462,21 @@
       ],
       "deliveries": {
         "https://openai.com/index/announcing-the-stargate-project/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T05:52:17+00:00"
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -6478,44 +6497,62 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Value-Stream/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/tlSu-hwWdeUaJOkOPjbu",
+          "attempts": 1
         },
         "https://tedt.org/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/CxGpqMfv7JPsZ0a7tXmb",
+          "attempts": 1
         },
         "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/6IGhGR2d2GlcQOkcP0Kd",
+          "attempts": 1
         },
         "https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/UV2p8U6SFh7klRC1Rx4_",
+          "attempts": 1
         },
         "https://tedt.org/Guardrails-and-Gigawatts/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/6gIwLqjrK7JXPBTYHlSR",
+          "attempts": 1
         },
         "https://tedt.org/MCPs-2026-Roadmap/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/zF2GUO37vE4S81hQeMSF",
+          "attempts": 1
         },
         "https://tedt.org/What-IT-Looks-Like-in-an-Enterprise-Where-AI-Is-Assumed/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/zjplWjvEntY5iCaBZ3GW",
+          "attempts": 1
         },
         "https://tedt.org/Why-AI-Needs-a-Harness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/ShnNq0BgQvJfCt67TIpe",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-utilities-cyber-resilience/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Bslmf53-Wlmz-h1T5kQ8",
+          "attempts": 1
         },
         "https://tedt.org/topics/enterprise-architecture-for-ai/": {
           "state": "pending",
