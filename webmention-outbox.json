@@ -2569,8 +2569,8 @@
         },
         "https://ir.mi.com/system/files-encrypted/nasdaq_kms/assets/2024/08/21/5-44-48/Announcement.pdf": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T01:52:20+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T10:52:11+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -2640,8 +2640,8 @@
         },
         "https://datacenters.atmeta.com/wp-content/uploads/2024/10/Denmark-Odense.pdf": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T01:52:20+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T10:52:11+00:00"
         },
         "https://doi.org/10.1016/j.joule.2026.102430": {
           "state": "unsupported",
@@ -3023,13 +3023,13 @@
         },
         "https://mbzuai.ac.ae/news/k2-an-open-source-model-that-delivers-frontier-capabilities/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T01:52:20+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T10:52:11+00:00"
         },
         "https://mbzuai.ac.ae/news/k2-think-v2-a-fully-sovereign-reasoning-model/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T01:52:20+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T10:52:11+00:00"
         },
         "https://mimo.mi.com/docs/en-US/news/latest/1000tps": {
           "state": "unsupported",
@@ -3041,13 +3041,13 @@
         },
         "https://openai.com/index/gpt-5-6/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T01:52:20+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T10:52:11+00:00"
         },
         "https://openai.com/index/introducing-openai-frontier/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-10-30T01:52:20+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-10-30T10:52:11+00:00"
         },
         "https://platform.kimi.ai/blog/posts/Kimi_Founders_AMA_Recap": {
           "state": "unsupported",
@@ -5113,18 +5113,18 @@
         },
         "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:01:12+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T04:52:11+00:00"
         },
         "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:01:12+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T04:52:11+00:00"
         },
         "https://openai.com/index/unive/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-10-30T02:01:12+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-10-30T04:52:11+00:00"
         },
         "https://stripe.dev/blog/meet-stripes-knowledge-ai-platform": {
           "state": "unsupported",
@@ -5581,12 +5581,12 @@
       ],
       "deliveries": {
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -5606,48 +5606,59 @@
       ],
       "deliveries": {
         "https://blog.samaltman.com/reflections": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://openai.com/global-affairs/openais-economic-blueprint/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T03:52:11+00:00"
         },
         "https://tedt.org/Agents-Dont-Click/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/OgKIGFlrM9wcnPkbQ-9M",
+          "attempts": 1
         },
         "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/MMqx7f4H_hifArCuPnE-",
+          "attempts": 1
         },
         "https://tedt.org/Dont-Build-Her-Another-Chatbot/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/xsSpG-HxxIuK857sANXe",
+          "attempts": 1
         },
         "https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/JWz6_XfEJatf87oKF_kT",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/agentic-systems/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/ZpBD3FgGTMgQbMeFrD0t",
+          "attempts": 1
         },
         "https://www.anthropic.com/engineering/building-effective-agents": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.youtube.com/watch?v=7k1ehaE0bdU": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -5707,32 +5718,42 @@
       ],
       "deliveries": {
         "https://tedt.org/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/ds9oFVJu96Osn1nGwyjZ",
+          "attempts": 1
         },
         "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/Ambr6RCwdLVFBWH18awR",
+          "attempts": 1
         },
         "https://tedt.org/From-Industrial-Age-Utility-to-AI-Centric-Utility/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/SOXIiAgIgKwJYvI5Ztbx",
+          "attempts": 1
         },
         "https://tedt.org/Guardrails-and-Gigawatts/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/SmucCKa4KhJ9CrQ8w6gQ",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/topics/ai-utilities-cyber-resilience/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/wxa8c8tOKsXbevzpyWy_",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -5766,72 +5787,76 @@
       ],
       "deliveries": {
         "https://a16z.com/navigating-the-high-cost-of-ai-compute/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://beam.ai/agentic-insights/uae-ai-strategy-2031-steering-the-emirates-toward-a-data-driven-future": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://nickbostrom.com/deep-utopia/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://platforms.substack.com/p/humans-as-luxury-goods-in-the-age": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T03:52:11+00:00"
         },
         "https://prarena.ai": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://theaidigest.org/time-horizons": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.anthropic.com/news/claude-sonnet-4-5": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.businesswire.com/news/home/20251014317368/en/SUPERAGENT-AI-Launches-Suite-of-AI-Agents-to-Automate-the-Entire-Insurance-Sales-Funnel-From-First-Call-to-Final-Quote": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T03:52:11+00:00"
         },
         "https://www.cbinsights.com/research/report/ai-trends-q1-2025/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.congress.gov/bill/119th-congress/house-bill/238": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T03:52:11+00:00"
         },
         "https://www.forbes.com/councils/forbestechcouncil/2025/05/19/intelligence-too-cheap-to-meter-positioning-for-the-future-of-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.microsoft.com/en-us/worklab/work-trend-index/2025-the-year-the-frontier-firm-is-born": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.nature.com/articles/s41598-025-93794-9": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.wsj.com/opinion/the-robots-that-handle-your-amazon-orders-0eb2f6e7": {
-          "state": "pending",
-          "attempts": 0
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-10-30T03:52:11+00:00"
         },
         "https://x.com/dwarkesh_sp/status/1885357384866160762": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     },
@@ -5874,20 +5899,28 @@
       ],
       "deliveries": {
         "https://tedt.org/AI-Value-Stream/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/fanqc-3ZA9LWTGzCBC0Z",
+          "attempts": 1
         },
         "https://tedt.org/Before-You-Reach-for-AI-Ask-What-Job-Needs-Doing/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/GwliV1S61PMyiymGD3qH",
+          "attempts": 1
         },
         "https://tedt.org/Dont-Build-Her-Another-Chatbot/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/RAgusRgC_PJNANG--3lb",
+          "attempts": 1
         },
         "https://tedt.org/MCPs-2026-Roadmap/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/FZ5ngXr3g423fFwPhgry",
+          "attempts": 1
         },
         "https://tedt.org/Stop-Asking-AI-to-Behave-Like-Legacy-Software/": {
           "state": "pending",
