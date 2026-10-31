@@ -6143,12 +6143,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "8e9dbc3034b4b1bc4e2b59ce33eefa2d0b3bfdc10dd8c72b99ad1cf8a0c3b0b5",
-        "kind": "archive",
-        "started_at": "2026-10-31T12:01:25Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T12:01:47.009Z",
+          "id": "117535415140942516",
+          "url": "https://tschopp.net/@Ted/117535415140942516"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6156,8 +6157,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Blue-Meanies-Ceruleans.md"
       ],
-      "state": "uncertain",
-      "title": "Blue Meanies «Ceruleans»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T12:01:47.009Z",
+        "id": "117535415140942516",
+        "url": "https://tschopp.net/@Ted/117535415140942516"
+      },
+      "title": "Blue Meanies «Ceruleans»",
+      "verified_at": "2026-10-31T12:01:25Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Blue-Snail-Slimer.html": {
       "aliases": [
@@ -27321,7 +27328,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T11:22:44.215Z",
+  "last_publication_at": "2026-10-31T12:01:47.009Z",
   "last_reconciliation_at": "2026-10-31T12:01:25Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 199,
@@ -28405,6 +28412,14 @@
       "kind": "archive",
       "operation": "770dcda0c302ce76f260c97525bbdf97a32f179eb33e5c9b6fedab7aa0aec54d",
       "url": "https://tschopp.net/@Ted/117535261603490778"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Blue-Meanies-Ceruleans.html",
+      "created_at": "2026-10-31T12:01:47.009Z",
+      "id": "117535415140942516",
+      "kind": "archive",
+      "operation": "8e9dbc3034b4b1bc4e2b59ce33eefa2d0b3bfdc10dd8c72b99ad1cf8a0c3b0b5",
+      "url": "https://tschopp.net/@Ted/117535415140942516"
     }
   ],
   "run_count": 518,
