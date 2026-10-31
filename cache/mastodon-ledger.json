@@ -6217,12 +6217,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "140890ef5021020ac728a5612c9b6f2ec5600de6c020262b8fbb7a9e63fe640c",
-        "kind": "archive",
-        "started_at": "2026-10-31T13:14:23Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T13:14:51.440Z",
+          "id": "117535702479013177",
+          "url": "https://tschopp.net/@Ted/117535702479013177"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6230,8 +6231,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Blue-Wing-Lajjin.md"
       ],
-      "state": "uncertain",
-      "title": "Blue Wing «Lajjin »"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T13:14:51.440Z",
+        "id": "117535702479013177",
+        "url": "https://tschopp.net/@Ted/117535702479013177"
+      },
+      "title": "Blue Wing «Lajjin »",
+      "verified_at": "2026-10-31T13:14:23Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bob-Household-Robot-Rural-defense-model.html": {
       "aliases": [
@@ -27349,7 +27356,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T12:41:53.771Z",
+  "last_publication_at": "2026-10-31T13:14:51.440Z",
   "last_reconciliation_at": "2026-10-31T13:14:23Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 201,
@@ -28449,6 +28456,14 @@
       "kind": "archive",
       "operation": "8d2444ec9b9b5be9df253d92f94e7c36245e5bf58cde97f73afb9526b37e265c",
       "url": "https://tschopp.net/@Ted/117535572870479444"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Blue-Wing-Lajjin.html",
+      "created_at": "2026-10-31T13:14:51.440Z",
+      "id": "117535702479013177",
+      "kind": "archive",
+      "operation": "140890ef5021020ac728a5612c9b6f2ec5600de6c020262b8fbb7a9e63fe640c",
+      "url": "https://tschopp.net/@Ted/117535702479013177"
     }
   ],
   "run_count": 523,
