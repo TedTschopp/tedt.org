@@ -6180,12 +6180,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "8d2444ec9b9b5be9df253d92f94e7c36245e5bf58cde97f73afb9526b37e265c",
-        "kind": "archive",
-        "started_at": "2026-10-31T12:41:31Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T12:41:53.771Z",
+          "id": "117535572870479444",
+          "url": "https://tschopp.net/@Ted/117535572870479444"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6193,8 +6194,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Blue-Snail-Slimer.md"
       ],
-      "state": "uncertain",
-      "title": "Blue Snail «Slimer»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T12:41:53.771Z",
+        "id": "117535572870479444",
+        "url": "https://tschopp.net/@Ted/117535572870479444"
+      },
+      "title": "Blue Snail «Slimer»",
+      "verified_at": "2026-10-31T12:41:31Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Blue-Wing-Lajjin.html": {
       "aliases": [
@@ -27335,7 +27342,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T12:01:47.009Z",
+  "last_publication_at": "2026-10-31T12:41:53.771Z",
   "last_reconciliation_at": "2026-10-31T12:41:31Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 200,
@@ -28427,6 +28434,14 @@
       "kind": "archive",
       "operation": "8e9dbc3034b4b1bc4e2b59ce33eefa2d0b3bfdc10dd8c72b99ad1cf8a0c3b0b5",
       "url": "https://tschopp.net/@Ted/117535415140942516"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Blue-Snail-Slimer.html",
+      "created_at": "2026-10-31T12:41:53.771Z",
+      "id": "117535572870479444",
+      "kind": "archive",
+      "operation": "8d2444ec9b9b5be9df253d92f94e7c36245e5bf58cde97f73afb9526b37e265c",
+      "url": "https://tschopp.net/@Ted/117535572870479444"
     }
   ],
   "run_count": 521,
