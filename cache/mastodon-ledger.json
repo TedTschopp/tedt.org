@@ -5736,12 +5736,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "38234d35ba4eb5fd7864f534075875236673b61631356362b3fb4e8c76ecb238",
-        "kind": "archive",
-        "started_at": "2026-10-31T05:23:39Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T05:24:00.987Z",
+          "id": "117533851057349436",
+          "url": "https://tschopp.net/@Ted/117533851057349436"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5749,8 +5750,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bird-of-the-Moonlight-Shoday.md"
       ],
-      "state": "uncertain",
-      "title": "Bird of the Moonlight «Sho'day»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T05:24:00.987Z",
+        "id": "117533851057349436",
+        "url": "https://tschopp.net/@Ted/117533851057349436"
+      },
+      "title": "Bird of the Moonlight «Sho'day»",
+      "verified_at": "2026-10-31T05:23:39Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Black-Block-Indie.html": {
       "aliases": [
@@ -27167,7 +27174,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T04:53:07.945Z",
+  "last_publication_at": "2026-10-31T05:24:00.987Z",
   "last_reconciliation_at": "2026-10-31T05:23:39Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 188,
@@ -28163,6 +28170,14 @@
       "kind": "archive",
       "operation": "c9f037a8d559a667356fd44322ae97a2a00cc79649c6106c1d3fd68462b9a05d",
       "url": "https://tschopp.net/@Ted/117533729616424242"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bird-of-the-Moonlight-Shoday.html",
+      "created_at": "2026-10-31T05:24:00.987Z",
+      "id": "117533851057349436",
+      "kind": "archive",
+      "operation": "38234d35ba4eb5fd7864f534075875236673b61631356362b3fb4e8c76ecb238",
+      "url": "https://tschopp.net/@Ted/117533851057349436"
     }
   ],
   "run_count": 486,
