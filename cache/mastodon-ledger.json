@@ -5958,12 +5958,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "de35cbfd92c79c36056f5971c74fc2bc4ba05e2b50d3406ba4700ba2d5dc70b4",
-        "kind": "archive",
-        "started_at": "2026-10-31T09:01:02Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T09:01:26.768Z",
+          "id": "117534706025615538",
+          "url": "https://tschopp.net/@Ted/117534706025615538"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5971,8 +5972,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Blackuns-Attercop.md"
       ],
-      "state": "uncertain",
-      "title": "Blackuns «Attercop»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T09:01:26.768Z",
+        "id": "117534706025615538",
+        "url": "https://tschopp.net/@Ted/117534706025615538"
+      },
+      "title": "Blackuns «Attercop»",
+      "verified_at": "2026-10-31T09:01:02Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Blend-Dog-Cark.html": {
       "aliases": [
@@ -27251,7 +27258,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T08:26:43.752Z",
+  "last_publication_at": "2026-10-31T09:01:26.768Z",
   "last_reconciliation_at": "2026-10-31T09:01:02Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 194,
@@ -28295,6 +28302,14 @@
       "kind": "archive",
       "operation": "eeb7b4afc146107d3ad3d73dd9d6b30beaa6a9a74a5f8b857797ba3596480644",
       "url": "https://tschopp.net/@Ted/117534569513138267"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Blackuns-Attercop.html",
+      "created_at": "2026-10-31T09:01:26.768Z",
+      "id": "117534706025615538",
+      "kind": "archive",
+      "operation": "de35cbfd92c79c36056f5971c74fc2bc4ba05e2b50d3406ba4700ba2d5dc70b4",
+      "url": "https://tschopp.net/@Ted/117534706025615538"
     }
   ],
   "run_count": 504,
