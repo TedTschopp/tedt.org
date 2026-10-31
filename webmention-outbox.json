@@ -2569,8 +2569,8 @@
         },
         "https://ir.mi.com/system/files-encrypted/nasdaq_kms/assets/2024/08/21/5-44-48/Announcement.pdf": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T03:51:44+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T03:52:07+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -2640,8 +2640,8 @@
         },
         "https://datacenters.atmeta.com/wp-content/uploads/2024/10/Denmark-Odense.pdf": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T03:51:44+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T03:52:07+00:00"
         },
         "https://doi.org/10.1016/j.joule.2026.102430": {
           "state": "unsupported",
@@ -3023,13 +3023,13 @@
         },
         "https://mbzuai.ac.ae/news/k2-an-open-source-model-that-delivers-frontier-capabilities/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T03:51:44+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T03:52:07+00:00"
         },
         "https://mbzuai.ac.ae/news/k2-think-v2-a-fully-sovereign-reasoning-model/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T03:51:44+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T03:52:07+00:00"
         },
         "https://mimo.mi.com/docs/en-US/news/latest/1000tps": {
           "state": "unsupported",
@@ -3041,13 +3041,13 @@
         },
         "https://openai.com/index/gpt-5-6/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T03:51:44+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T03:52:07+00:00"
         },
         "https://openai.com/index/introducing-openai-frontier/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T03:51:44+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T03:52:07+00:00"
         },
         "https://platform.kimi.ai/blog/posts/Kimi_Founders_AMA_Recap": {
           "state": "unsupported",
