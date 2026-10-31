@@ -6069,12 +6069,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "20e85c777feefc4d6a338bb804c2b3a69b8cf465446d12450db17fb238598ed0",
-        "kind": "archive",
-        "started_at": "2026-10-31T10:51:42Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T10:52:06.589Z",
+          "id": "117535141172965459",
+          "url": "https://tschopp.net/@Ted/117535141172965459"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6082,8 +6083,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Blob.md"
       ],
-      "state": "uncertain",
-      "title": "Blob"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T10:52:06.589Z",
+        "id": "117535141172965459",
+        "url": "https://tschopp.net/@Ted/117535141172965459"
+      },
+      "title": "Blob",
+      "verified_at": "2026-10-31T10:51:42Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Blood-Wasp.html": {
       "aliases": [
@@ -27293,7 +27300,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T10:13:43.660Z",
+  "last_publication_at": "2026-10-31T10:52:06.589Z",
   "last_reconciliation_at": "2026-10-31T10:51:42Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 197,
@@ -28361,6 +28368,14 @@
       "kind": "archive",
       "operation": "ffa91c52bdb6eb8219e877c5fe22665e99a5fb2363b0f08e3cd81e8754b1a5cc",
       "url": "https://tschopp.net/@Ted/117534990248131231"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Blob.html",
+      "created_at": "2026-10-31T10:52:06.589Z",
+      "id": "117535141172965459",
+      "kind": "archive",
+      "operation": "20e85c777feefc4d6a338bb804c2b3a69b8cf465446d12450db17fb238598ed0",
+      "url": "https://tschopp.net/@Ted/117535141172965459"
     }
   ],
   "run_count": 513,
