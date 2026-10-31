@@ -4746,8 +4746,8 @@
         },
         "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T08:52:02+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T09:52:23+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -4862,8 +4862,8 @@
         },
         "https://nordvpn.com/blog/is-github-copilot-safe-to-use-at-work/#:~:text=,what%20they%20are%3A%20just%20suggestions": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T08:52:02+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T09:52:23+00:00"
         },
         "https://tedt.org/AI-Engineer-Coach/": {
           "state": "accepted",
@@ -5113,18 +5113,18 @@
         },
         "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T09:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T09:52:23+00:00"
         },
         "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T09:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T09:52:23+00:00"
         },
         "https://openai.com/index/unive/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T09:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T09:52:23+00:00"
         },
         "https://stripe.dev/blog/meet-stripes-knowledge-ai-platform": {
           "state": "unsupported",
