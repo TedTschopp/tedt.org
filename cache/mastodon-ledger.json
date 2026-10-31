@@ -5810,12 +5810,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "54c9c4cfff2ad0a6a7dfcbcb7d851d38147ae84d9608cc5a1a00d37947cf3292",
-        "kind": "archive",
-        "started_at": "2026-10-31T06:33:06Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T06:33:30.249Z",
+          "id": "117534124294079613",
+          "url": "https://tschopp.net/@Ted/117534124294079613"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5823,8 +5824,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Black-Harvester.md"
       ],
-      "state": "uncertain",
-      "title": "Black Harvester"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T06:33:30.249Z",
+        "id": "117534124294079613",
+        "url": "https://tschopp.net/@Ted/117534124294079613"
+      },
+      "title": "Black Harvester",
+      "verified_at": "2026-10-31T06:33:06Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Black-Living-Mold-Inixon.html": {
       "aliases": [
@@ -27195,7 +27202,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T06:01:39.302Z",
+  "last_publication_at": "2026-10-31T06:33:30.249Z",
   "last_reconciliation_at": "2026-10-31T06:33:06Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 190,
@@ -28207,6 +28214,14 @@
       "kind": "archive",
       "operation": "c8de9f4c48329f2ffc9f554d2d2441b308db2b8887098f39220818600b25e81e",
       "url": "https://tschopp.net/@Ted/117533999058223267"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Black-Harvester.html",
+      "created_at": "2026-10-31T06:33:30.249Z",
+      "id": "117534124294079613",
+      "kind": "archive",
+      "operation": "54c9c4cfff2ad0a6a7dfcbcb7d851d38147ae84d9608cc5a1a00d37947cf3292",
+      "url": "https://tschopp.net/@Ted/117534124294079613"
     }
   ],
   "run_count": 492,
