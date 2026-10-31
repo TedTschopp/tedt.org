@@ -5884,12 +5884,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "7b5660379d6f7a5a0de28e5a2d3a1c666df28873ead0d1d82adce59f30a2001a",
-        "kind": "archive",
-        "started_at": "2026-10-31T07:50:49Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T07:51:10.401Z",
+          "id": "117534429701775001",
+          "url": "https://tschopp.net/@Ted/117534429701775001"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5897,8 +5898,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Black-Porcupine--Bear-Pierinhorl.md"
       ],
-      "state": "uncertain",
-      "title": "Black Porcupine / Bear «Pierinhorl»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T07:51:10.401Z",
+        "id": "117534429701775001",
+        "url": "https://tschopp.net/@Ted/117534429701775001"
+      },
+      "title": "Black Porcupine / Bear «Pierinhorl»",
+      "verified_at": "2026-10-31T07:50:49Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Black-Snake-Inslith.html": {
       "aliases": [
@@ -27223,7 +27230,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T07:14:56.505Z",
+  "last_publication_at": "2026-10-31T07:51:10.401Z",
   "last_reconciliation_at": "2026-10-31T07:50:49Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 192,
@@ -28251,6 +28258,14 @@
       "kind": "archive",
       "operation": "935143c9bbeb89253d41b48138c5a47d00a62a9638ddc654b647857ff113d75b",
       "url": "https://tschopp.net/@Ted/117534287233414499"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Black-Porcupine-Bear-Pierinhorl.html",
+      "created_at": "2026-10-31T07:51:10.401Z",
+      "id": "117534429701775001",
+      "kind": "archive",
+      "operation": "7b5660379d6f7a5a0de28e5a2d3a1c666df28873ead0d1d82adce59f30a2001a",
+      "url": "https://tschopp.net/@Ted/117534429701775001"
     }
   ],
   "run_count": 499,
