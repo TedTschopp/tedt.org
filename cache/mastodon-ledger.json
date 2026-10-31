@@ -6291,12 +6291,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "86cd981590eeefd0b12aa54ad65cda76e935a47f9643743388c03f8d007c2fef",
-        "kind": "archive",
-        "started_at": "2026-10-31T14:30:58Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T14:31:24.125Z",
+          "id": "117536003465253673",
+          "url": "https://tschopp.net/@Ted/117536003465253673"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6304,8 +6305,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Body-Guard-Android.md"
       ],
-      "state": "uncertain",
-      "title": "Body Guard «Android»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T14:31:24.125Z",
+        "id": "117536003465253673",
+        "url": "https://tschopp.net/@Ted/117536003465253673"
+      },
+      "title": "Body Guard «Android»",
+      "verified_at": "2026-10-31T14:30:58Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Boneswimmer.html": {
       "aliases": [
@@ -27377,7 +27384,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T13:52:11.689Z",
+  "last_publication_at": "2026-10-31T14:31:24.125Z",
   "last_reconciliation_at": "2026-10-31T14:30:58Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 203,
@@ -28493,6 +28500,14 @@
       "kind": "archive",
       "operation": "e33a2a838d9cb0bfc7e671de0f7b0a3495fcf7b9439c3c681101fd24211f3b9a",
       "url": "https://tschopp.net/@Ted/117535849296021686"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Body-Guard-Android.html",
+      "created_at": "2026-10-31T14:31:24.125Z",
+      "id": "117536003465253673",
+      "kind": "archive",
+      "operation": "86cd981590eeefd0b12aa54ad65cda76e935a47f9643743388c03f8d007c2fef",
+      "url": "https://tschopp.net/@Ted/117536003465253673"
     }
   ],
   "run_count": 529,
