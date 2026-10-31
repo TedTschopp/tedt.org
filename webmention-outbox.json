@@ -10488,13 +10488,13 @@
         },
         "https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T23:51:44+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T16:52:03+00:00"
         },
         "https://openai.com/index/introducing-openai-o1-preview/": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T23:51:44+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T16:52:03+00:00"
         },
         "https://simonwillison.net/2024/Dec/31/llms-in-2024/": {
           "state": "accepted",
@@ -10552,8 +10552,8 @@
         },
         "https://managementconsulted.com": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T23:51:44+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T16:52:03+00:00"
         },
         "https://queenstower.com": {
           "state": "unsupported",
@@ -10573,8 +10573,8 @@
         },
         "https://www.alvarezandmarsal.com": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T23:51:44+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T16:52:03+00:00"
         },
         "https://www.bain.com": {
           "state": "unsupported",
@@ -10590,8 +10590,8 @@
         },
         "https://www.ft.com/content/2b15601b-8d02-4abe-a789-7862874042be": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T23:51:44+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T16:52:03+00:00"
         },
         "https://www.linkedin.com/in/antonio-alvarez-iii-80090/": {
           "state": "unsupported",
@@ -10603,8 +10603,8 @@
         },
         "https://www.linkedin.com/in/marco-amitrano-b4155b19/?originalSubdomain=uk": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T23:51:44+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T16:52:03+00:00"
         },
         "https://www.linkedin.com/in/marksbunker/?originalSubdomain=uk": {
           "state": "unsupported",
@@ -10624,13 +10624,13 @@
         },
         "https://www.mckinsey.com": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T23:51:44+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T16:52:03+00:00"
         },
         "https://www.pwc.com": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-30T23:51:44+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T16:52:03+00:00"
         },
         "https://www2.deloitte.com": {
           "state": "unsupported",
