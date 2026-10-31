@@ -5551,12 +5551,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "addbdbb66bbf30fb8937eeddef3d9c41462ed7fcea7f10e34b223352fa0da00f",
-        "kind": "archive",
-        "started_at": "2026-10-31T02:31:06Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T02:31:28.371Z",
+          "id": "117533172588303136",
+          "url": "https://tschopp.net/@Ted/117533172588303136"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5564,8 +5565,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bigguns-Bof.md"
       ],
-      "state": "uncertain",
-      "title": "Bigguns «Bof»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T02:31:28.371Z",
+        "id": "117533172588303136",
+        "url": "https://tschopp.net/@Ted/117533172588303136"
+      },
+      "title": "Bigguns «Bof»",
+      "verified_at": "2026-10-31T02:31:06Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bigwig-Rhya.html": {
       "aliases": [
@@ -27097,7 +27104,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T01:51:49.233Z",
+  "last_publication_at": "2026-10-31T02:31:28.371Z",
   "last_reconciliation_at": "2026-10-31T02:31:06Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 183,
@@ -28053,6 +28060,14 @@
       "kind": "archive",
       "operation": "b3347550581033d77784bec336ea33ea7111328f3929e66060cb9c8f22863d11",
       "url": "https://tschopp.net/@Ted/117533016669103897"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bigguns-Bof.html",
+      "created_at": "2026-10-31T02:31:28.371Z",
+      "id": "117533172588303136",
+      "kind": "archive",
+      "operation": "addbdbb66bbf30fb8937eeddef3d9c41462ed7fcea7f10e34b223352fa0da00f",
+      "url": "https://tschopp.net/@Ted/117533172588303136"
     }
   ],
   "run_count": 473,
