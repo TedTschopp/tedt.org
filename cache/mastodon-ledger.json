@@ -6328,12 +6328,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "ba5e1f0d532b062cda1e53498ebcf50682b87af12c95395f44add1d37ceb10de",
-        "kind": "archive",
-        "started_at": "2026-10-31T15:01:52Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T15:02:19.194Z",
+          "id": "117536125039004867",
+          "url": "https://tschopp.net/@Ted/117536125039004867"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6341,8 +6342,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Boneswimmer.md"
       ],
-      "state": "uncertain",
-      "title": "Boneswimmer"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T15:02:19.194Z",
+        "id": "117536125039004867",
+        "url": "https://tschopp.net/@Ted/117536125039004867"
+      },
+      "title": "Boneswimmer",
+      "verified_at": "2026-10-31T15:01:52Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Boomblossom.html": {
       "aliases": [
@@ -27391,7 +27398,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T14:31:24.125Z",
+  "last_publication_at": "2026-10-31T15:02:19.194Z",
   "last_reconciliation_at": "2026-10-31T15:01:52Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 204,
@@ -28515,6 +28522,14 @@
       "kind": "archive",
       "operation": "86cd981590eeefd0b12aa54ad65cda76e935a47f9643743388c03f8d007c2fef",
       "url": "https://tschopp.net/@Ted/117536003465253673"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Boneswimmer.html",
+      "created_at": "2026-10-31T15:02:19.194Z",
+      "id": "117536125039004867",
+      "kind": "archive",
+      "operation": "ba5e1f0d532b062cda1e53498ebcf50682b87af12c95395f44add1d37ceb10de",
+      "url": "https://tschopp.net/@Ted/117536125039004867"
     }
   ],
   "run_count": 531,
