@@ -5625,12 +5625,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "25ceb33c5ae21d8355778c1f2139fd029683cefabc77a9525819ae76abe82165",
-        "kind": "archive",
-        "started_at": "2026-10-31T03:34:44Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T03:35:09.897Z",
+          "id": "117533423035815825",
+          "url": "https://tschopp.net/@Ted/117533423035815825"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5638,8 +5639,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Biohazard-Drone.md"
       ],
-      "state": "uncertain",
-      "title": "Biohazard Drone"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T03:35:09.897Z",
+        "id": "117533423035815825",
+        "url": "https://tschopp.net/@Ted/117533423035815825"
+      },
+      "title": "Biohazard Drone",
+      "verified_at": "2026-10-31T03:34:44Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bird-Friend-Daycut.html": {
       "aliases": [
@@ -27125,7 +27132,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T03:01:59.830Z",
+  "last_publication_at": "2026-10-31T03:35:09.897Z",
   "last_reconciliation_at": "2026-10-31T03:34:44Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 185,
@@ -28097,6 +28104,14 @@
       "kind": "archive",
       "operation": "7e3d704b93f614d0613b4a33f506153cb7db5c7561bf3f6044195fa6a3fad519",
       "url": "https://tschopp.net/@Ted/117533292614742070"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Biohazard-Drone.html",
+      "created_at": "2026-10-31T03:35:09.897Z",
+      "id": "117533423035815825",
+      "kind": "archive",
+      "operation": "25ceb33c5ae21d8355778c1f2139fd029683cefabc77a9525819ae76abe82165",
+      "url": "https://tschopp.net/@Ted/117533423035815825"
     }
   ],
   "run_count": 479,
