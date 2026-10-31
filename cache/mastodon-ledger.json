@@ -6106,12 +6106,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "770dcda0c302ce76f260c97525bbdf97a32f179eb33e5c9b6fedab7aa0aec54d",
-        "kind": "archive",
-        "started_at": "2026-10-31T11:22:21Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T11:22:44.215Z",
+          "id": "117535261603490778",
+          "url": "https://tschopp.net/@Ted/117535261603490778"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6119,8 +6120,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Blood-Wasp.md"
       ],
-      "state": "uncertain",
-      "title": "Blood Wasp"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T11:22:44.215Z",
+        "id": "117535261603490778",
+        "url": "https://tschopp.net/@Ted/117535261603490778"
+      },
+      "title": "Blood Wasp",
+      "verified_at": "2026-10-31T11:22:21Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Blue-Meanies-Ceruleans.html": {
       "aliases": [
@@ -27307,7 +27314,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T10:52:06.589Z",
+  "last_publication_at": "2026-10-31T11:22:44.215Z",
   "last_reconciliation_at": "2026-10-31T11:22:21Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 198,
@@ -28383,6 +28390,14 @@
       "kind": "archive",
       "operation": "20e85c777feefc4d6a338bb804c2b3a69b8cf465446d12450db17fb238598ed0",
       "url": "https://tschopp.net/@Ted/117535141172965459"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Blood-Wasp.html",
+      "created_at": "2026-10-31T11:22:44.215Z",
+      "id": "117535261603490778",
+      "kind": "archive",
+      "operation": "770dcda0c302ce76f260c97525bbdf97a32f179eb33e5c9b6fedab7aa0aec54d",
+      "url": "https://tschopp.net/@Ted/117535261603490778"
     }
   ],
   "run_count": 515,
