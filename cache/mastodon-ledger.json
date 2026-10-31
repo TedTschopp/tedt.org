@@ -5477,12 +5477,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "766e5d8c5f70c4c646947636fc0f1c60e02a584cc5b9aae001634893ad2aa9c7",
-        "kind": "archive",
-        "started_at": "2026-10-31T01:17:02Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T01:17:28.887Z",
+          "id": "117532881642229046",
+          "url": "https://tschopp.net/@Ted/117532881642229046"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5490,8 +5491,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Big-Walkers-Brutorz.md"
       ],
-      "state": "uncertain",
-      "title": "Big Walkers «Brutorz»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T01:17:28.887Z",
+        "id": "117532881642229046",
+        "url": "https://tschopp.net/@Ted/117532881642229046"
+      },
+      "title": "Big Walkers «Brutorz»",
+      "verified_at": "2026-10-31T01:17:02Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bigfoot-Sasquatch.html": {
       "aliases": [
@@ -27069,7 +27076,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T00:35:37.579Z",
+  "last_publication_at": "2026-10-31T01:17:28.887Z",
   "last_reconciliation_at": "2026-10-31T01:17:02Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 181,
@@ -28009,6 +28016,14 @@
       "kind": "archive",
       "operation": "b7204bdaa41833c6aec54bd68de9d5f15559541ff5b6550bc01658861f8f85e2",
       "url": "https://tschopp.net/@Ted/117532717061218822"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Big-Walkers-Brutorz.html",
+      "created_at": "2026-10-31T01:17:28.887Z",
+      "id": "117532881642229046",
+      "kind": "archive",
+      "operation": "766e5d8c5f70c4c646947636fc0f1c60e02a584cc5b9aae001634893ad2aa9c7",
+      "url": "https://tschopp.net/@Ted/117532881642229046"
     }
   ],
   "run_count": 468,
