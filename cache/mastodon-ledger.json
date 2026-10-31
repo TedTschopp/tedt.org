@@ -6254,12 +6254,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "e33a2a838d9cb0bfc7e671de0f7b0a3495fcf7b9439c3c681101fd24211f3b9a",
-        "kind": "archive",
-        "started_at": "2026-10-31T13:51:48Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T13:52:11.689Z",
+          "id": "117535849296021686",
+          "url": "https://tschopp.net/@Ted/117535849296021686"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6267,8 +6268,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bob-Household-Robot-Rural-defense-model.md"
       ],
-      "state": "uncertain",
-      "title": "Bob «Household Robot, Rural defense model»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T13:52:11.689Z",
+        "id": "117535849296021686",
+        "url": "https://tschopp.net/@Ted/117535849296021686"
+      },
+      "title": "Bob «Household Robot, Rural defense model»",
+      "verified_at": "2026-10-31T13:51:48Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Body-Guard-Android.html": {
       "aliases": [
@@ -27363,7 +27370,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T13:14:51.440Z",
+  "last_publication_at": "2026-10-31T13:52:11.689Z",
   "last_reconciliation_at": "2026-10-31T13:51:48Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 202,
@@ -28471,6 +28478,14 @@
       "kind": "archive",
       "operation": "140890ef5021020ac728a5612c9b6f2ec5600de6c020262b8fbb7a9e63fe640c",
       "url": "https://tschopp.net/@Ted/117535702479013177"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bob-Household-Robot-Rural-defense-model.html",
+      "created_at": "2026-10-31T13:52:11.689Z",
+      "id": "117535849296021686",
+      "kind": "archive",
+      "operation": "e33a2a838d9cb0bfc7e671de0f7b0a3495fcf7b9439c3c681101fd24211f3b9a",
+      "url": "https://tschopp.net/@Ted/117535849296021686"
     }
   ],
   "run_count": 526,
