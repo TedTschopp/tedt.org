@@ -3959,8 +3959,8 @@
         },
         "https://tedt.org/Artisanal-Software-Craftsman/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T07:51:44+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T08:51:50+00:00"
         },
         "https://tedt.org/Beyond-the-Light-Bulb/": {
           "state": "accepted",
@@ -4329,8 +4329,8 @@
         },
         "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T07:51:44+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T08:51:50+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
