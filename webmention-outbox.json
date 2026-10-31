@@ -1249,18 +1249,18 @@
         },
         "https://onlinelibrary.wiley.com/doi/10.1111/j.1468-4446.2000.00005.x": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://onlinelibrary.wiley.com/doi/10.1111/newe.12023": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://pubsonline.informs.org/doi/10.1287/orsc.2025.21838": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/": {
           "state": "unsupported",
@@ -1454,8 +1454,8 @@
       "deliveries": {
         "https://garymarcus.substack.com/p/is-agi-the-right-goal-for-ai": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://tedt.org/Cyber-AI-Why-Every-Business-Needs-to-Rethink-Risk-Resilience-and-Readiness/": {
           "state": "accepted",
@@ -1702,13 +1702,13 @@
         },
         "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://openai.com/index/pacing-model-development-cyber-capabilities/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://slsa.dev/spec/v1.2/verifying-artifacts": {
           "state": "unsupported",
@@ -1918,8 +1918,8 @@
       "deliveries": {
         "https://fortune.com/2026/01/31/ai-agent-OpenClaw-clawdbot-openclaw-data-privacy-security-nightmare-moltbook-social-network/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://openclaw.ai/blog/introducing-openclaw": {
           "state": "unsupported",
@@ -1971,28 +1971,28 @@
         },
         "https://www.barrons.com/articles/cloudflare-stock-OpenClaw-viral-ai-bot-fdb3e77b?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://www.businessinsider.com/clawdbot-changes-name-OpenClaw-anthropic-trademark-2026-1?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://www.ft.com/content/078fe849-cc4f-43be-ab40-8bdd30c1187d?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://www.paloaltonetworks.com/blog/network-security/why-OpenClaw-may-signal-ai-crisis/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://www.reuters.com/business/cloudflare-surges-viral-ai-agent-buzz-lifts-expectations-2026-01-27/?utm_source=chatgpt.com": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://www.theverge.com/ai-artificial-intelligence/871006/social-network-facebook-for-ai-agents-moltbook-OpenClaw-openclaw": {
           "state": "unsupported",
@@ -2165,8 +2165,8 @@
         },
         "https://doi.org/10.1177/09500170211015067": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://en.wikipedia.org/wiki/Erik_Davis": {
           "state": "unsupported",
@@ -2174,8 +2174,8 @@
         },
         "https://mitpress.mit.edu/9780262516037/understanding-knowledge-as-a-commons/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T01:52:33+00:00"
         },
         "https://tedt.org/Agents-Dont-Click/": {
           "state": "accepted",
@@ -10726,8 +10726,8 @@
       "deliveries": {
         "https://americanhistory.si.edu/lighting/19thcent/consq19.htm": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T17:52:33+00:00"
         },
         "https://blog.sciencemuseum.org.uk/james-watt-and-the-separate-condenser/": {
           "state": "unsupported",
@@ -10743,8 +10743,8 @@
         },
         "https://jods.mitpress.mit.edu/pub/ageofentanglement/release/1": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T17:52:33+00:00"
         },
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC11244532/": {
           "state": "unsupported",
@@ -10812,13 +10812,13 @@
         },
         "https://www.metmuseum.org/exhibitions/listings/2012/printed-image-in-china": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T17:52:33+00:00"
         },
         "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/": {
           "state": "retry",
-          "attempts": 4,
-          "next_attempt": "2026-10-31T01:52:09+00:00"
+          "attempts": 5,
+          "next_attempt": "2026-10-31T17:52:33+00:00"
         },
         "https://www.vam.ac.uk/articles/arts-and-crafts-an-introduction": {
           "state": "unsupported",
