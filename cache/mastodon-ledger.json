@@ -5662,12 +5662,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "b0fc15d640504733bbf1852905e3f5e29bb9e647dfedad30e746effa78989cb6",
-        "kind": "archive",
-        "started_at": "2026-10-31T04:16:50Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T04:17:12.511Z",
+          "id": "117533588357836635",
+          "url": "https://tschopp.net/@Ted/117533588357836635"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5675,8 +5676,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bird-Friend-Daycut.md"
       ],
-      "state": "uncertain",
-      "title": "Bird Friend «Daycut»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T04:17:12.511Z",
+        "id": "117533588357836635",
+        "url": "https://tschopp.net/@Ted/117533588357836635"
+      },
+      "title": "Bird Friend «Daycut»",
+      "verified_at": "2026-10-31T04:16:50Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bird-Rulers-Carrday.html": {
       "aliases": [
@@ -27139,7 +27146,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T03:35:09.897Z",
+  "last_publication_at": "2026-10-31T04:17:12.511Z",
   "last_reconciliation_at": "2026-10-31T04:16:50Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 186,
@@ -28119,6 +28126,14 @@
       "kind": "archive",
       "operation": "25ceb33c5ae21d8355778c1f2139fd029683cefabc77a9525819ae76abe82165",
       "url": "https://tschopp.net/@Ted/117533423035815825"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bird-Friend-Daycut.html",
+      "created_at": "2026-10-31T04:17:12.511Z",
+      "id": "117533588357836635",
+      "kind": "archive",
+      "operation": "b0fc15d640504733bbf1852905e3f5e29bb9e647dfedad30e746effa78989cb6",
+      "url": "https://tschopp.net/@Ted/117533588357836635"
     }
   ],
   "run_count": 482,
