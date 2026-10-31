@@ -3121,8 +3121,8 @@
         },
         "https://www.axios.com/2026/07/09/meta-ai-spark-model-update-developer": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T05:52:25+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T06:52:20+00:00"
         },
         "https://www.minimax.io/blog/minimax-m3": {
           "state": "unsupported",
@@ -3130,8 +3130,8 @@
         },
         "https://www.spglobal.com/ratings/en/regulatory/article/creditweek-will-rising-capex-test-hyperscalers-credit-strength-s101685676": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T05:52:25+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T06:52:20+00:00"
         },
         "https://www.upstage.ai/blog/en/solar-pro-3-0323": {
           "state": "unsupported",
@@ -3171,18 +3171,18 @@
       "deliveries": {
         "https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T05:52:25+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T06:52:20+00:00"
         },
         "https://openai.com/index/gpt-oss-model-card/": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T05:52:25+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T06:52:20+00:00"
         },
         "https://openai.com/safety/preparedness": {
           "state": "retry",
-          "attempts": 5,
-          "next_attempt": "2026-10-31T05:52:25+00:00"
+          "attempts": 6,
+          "next_attempt": "2026-11-01T06:52:20+00:00"
         },
         "https://tedt.org/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
           "state": "accepted",
