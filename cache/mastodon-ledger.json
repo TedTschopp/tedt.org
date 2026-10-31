@@ -6032,12 +6032,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "ffa91c52bdb6eb8219e877c5fe22665e99a5fb2363b0f08e3cd81e8754b1a5cc",
-        "kind": "archive",
-        "started_at": "2026-10-31T10:13:22Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T10:13:43.660Z",
+          "id": "117534990248131231",
+          "url": "https://tschopp.net/@Ted/117534990248131231"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6045,8 +6046,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Blend-Dog-Clark.md"
       ],
-      "state": "uncertain",
-      "title": "Blend Dog «Clark»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T10:13:43.660Z",
+        "id": "117534990248131231",
+        "url": "https://tschopp.net/@Ted/117534990248131231"
+      },
+      "title": "Blend Dog «Clark»",
+      "verified_at": "2026-10-31T10:13:22Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Blob.html": {
       "aliases": [
@@ -27279,7 +27286,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T09:33:15.800Z",
+  "last_publication_at": "2026-10-31T10:13:43.660Z",
   "last_reconciliation_at": "2026-10-31T10:13:22Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 196,
@@ -28339,6 +28346,14 @@
       "kind": "archive",
       "operation": "6fd2ac34e30cf20ebef5352d717c8f551ab7ea606cc0b048e58b6fd114a501c4",
       "url": "https://tschopp.net/@Ted/117534831135887330"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Blend-Dog-Clark.html",
+      "created_at": "2026-10-31T10:13:43.660Z",
+      "id": "117534990248131231",
+      "kind": "archive",
+      "operation": "ffa91c52bdb6eb8219e877c5fe22665e99a5fb2363b0f08e3cd81e8754b1a5cc",
+      "url": "https://tschopp.net/@Ted/117534990248131231"
     }
   ],
   "run_count": 510,
