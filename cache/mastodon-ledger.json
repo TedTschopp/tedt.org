@@ -5440,12 +5440,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "b7204bdaa41833c6aec54bd68de9d5f15559541ff5b6550bc01658861f8f85e2",
-        "kind": "archive",
-        "started_at": "2026-10-31T00:35:12Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-10-31T00:35:37.579Z",
+          "id": "117532717061218822",
+          "url": "https://tschopp.net/@Ted/117532717061218822"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -5453,8 +5454,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Big-Horns-Rakox.md"
       ],
-      "state": "uncertain",
-      "title": "Big Horns «Rakox»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-10-31T00:35:37.579Z",
+        "id": "117532717061218822",
+        "url": "https://tschopp.net/@Ted/117532717061218822"
+      },
+      "title": "Big Horns «Rakox»",
+      "verified_at": "2026-10-31T00:35:12Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Big-Walkers-Brutorz.html": {
       "aliases": [
@@ -27055,7 +27062,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-30T23:32:13.542Z",
+  "last_publication_at": "2026-10-31T00:35:37.579Z",
   "last_reconciliation_at": "2026-10-31T00:35:12Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 180,
@@ -27987,6 +27994,14 @@
       "kind": "archive",
       "operation": "8764d4dc28b0ea4a35652d766253688e5a3e5010db8b7ba6567a4593914f6f4d",
       "url": "https://tschopp.net/@Ted/117532467759835940"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Big-Horns-Rakox.html",
+      "created_at": "2026-10-31T00:35:37.579Z",
+      "id": "117532717061218822",
+      "kind": "archive",
+      "operation": "b7204bdaa41833c6aec54bd68de9d5f15559541ff5b6550bc01658861f8f85e2",
+      "url": "https://tschopp.net/@Ted/117532717061218822"
     }
   ],
   "run_count": 465,
