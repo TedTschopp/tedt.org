@@ -2569,8 +2569,8 @@
         },
         "https://ir.mi.com/system/files-encrypted/nasdaq_kms/assets/2024/08/21/5-44-48/Announcement.pdf": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T03:52:07+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -2640,8 +2640,8 @@
         },
         "https://datacenters.atmeta.com/wp-content/uploads/2024/10/Denmark-Odense.pdf": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T03:52:07+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://doi.org/10.1016/j.joule.2026.102430": {
           "state": "unsupported",
@@ -3023,13 +3023,13 @@
         },
         "https://mbzuai.ac.ae/news/k2-an-open-source-model-that-delivers-frontier-capabilities/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T03:52:07+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://mbzuai.ac.ae/news/k2-think-v2-a-fully-sovereign-reasoning-model/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T03:52:07+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://mimo.mi.com/docs/en-US/news/latest/1000tps": {
           "state": "unsupported",
@@ -3041,13 +3041,13 @@
         },
         "https://openai.com/index/gpt-5-6/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T03:52:07+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://openai.com/index/introducing-openai-frontier/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T03:52:07+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://platform.kimi.ai/blog/posts/Kimi_Founders_AMA_Recap": {
           "state": "unsupported",
@@ -3121,8 +3121,8 @@
         },
         "https://www.axios.com/2026/07/09/meta-ai-spark-model-update-developer": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T06:52:20+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://www.minimax.io/blog/minimax-m3": {
           "state": "unsupported",
@@ -3130,8 +3130,8 @@
         },
         "https://www.spglobal.com/ratings/en/regulatory/article/creditweek-will-rising-capex-test-hyperscalers-credit-strength-s101685676": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T06:52:20+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://www.upstage.ai/blog/en/solar-pro-3-0323": {
           "state": "unsupported",
@@ -3171,18 +3171,18 @@
       "deliveries": {
         "https://help.openai.com/en/articles/11870455-openai-open-weight-models-gpt-oss": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T06:52:20+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://openai.com/index/gpt-oss-model-card/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T06:52:20+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://openai.com/safety/preparedness": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T06:52:20+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://tedt.org/Barrels-Ammunition-and-the-Future-of-AI-in-the-Electric-Utility-Industry/": {
           "state": "accepted",
@@ -3959,8 +3959,8 @@
         },
         "https://tedt.org/Artisanal-Software-Craftsman/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T08:51:50+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://tedt.org/Beyond-the-Light-Bulb/": {
           "state": "accepted",
@@ -4329,8 +4329,8 @@
         },
         "https://openai.com/index/hugging-face-model-evaluation-security-incident/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T08:51:50+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -4746,8 +4746,8 @@
         },
         "https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T09:52:23+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://tools.tedt.org/inside-ai/": {
           "state": "unsupported",
@@ -4862,8 +4862,8 @@
         },
         "https://nordvpn.com/blog/is-github-copilot-safe-to-use-at-work/#:~:text=,what%20they%20are%3A%20just%20suggestions": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T09:52:23+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://tedt.org/AI-Engineer-Coach/": {
           "state": "accepted",
@@ -5113,18 +5113,18 @@
         },
         "https://openai.com/index/advancing-the-price-performance-frontier-with-gpt-5-6/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T09:52:23+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://openai.com/index/how-two-settings-tripled-our-arc-agi-3-scores/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T09:52:23+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://openai.com/index/unive/": {
           "state": "retry",
-          "attempts": 6,
-          "next_attempt": "2026-11-01T09:52:23+00:00"
+          "attempts": 7,
+          "next_attempt": "2026-11-02T10:49:53+00:00"
         },
         "https://stripe.dev/blog/meet-stripes-knowledge-ai-platform": {
           "state": "unsupported",
