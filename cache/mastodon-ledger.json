@@ -6402,12 +6402,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "c9cc0612338747ce6ad1000db220b1355e9d74dc824e82707d2f0ceb60993a93",
-        "kind": "archive",
-        "started_at": "2026-11-02T14:48:14Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-02T14:48:30.151Z",
+          "id": "117547395327678174",
+          "url": "https://tschopp.net/@Ted/117547395327678174"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6415,8 +6416,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Borer-Beetles-Zarn.md"
       ],
-      "state": "uncertain",
-      "title": "Borer Beetles «Zarn»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-02T14:48:30.151Z",
+        "id": "117547395327678174",
+        "url": "https://tschopp.net/@Ted/117547395327678174"
+      },
+      "title": "Borer Beetles «Zarn»",
+      "verified_at": "2026-11-02T14:48:14Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Borg-Cyborg.html": {
       "aliases": [
@@ -27455,7 +27462,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-02T05:55:40.147Z",
+  "last_publication_at": "2026-11-02T14:48:30.151Z",
   "last_reconciliation_at": "2026-11-02T14:48:14Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 208,
@@ -28603,6 +28610,14 @@
       "kind": "archive",
       "operation": "1d71ee1d5ce2c567324490286cdd9ed23d627466be54c10977d19aaf99644a39",
       "url": "https://tschopp.net/@Ted/117545300141416508"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Borer-Beetles-Zarn.html",
+      "created_at": "2026-11-02T14:48:30.151Z",
+      "id": "117547395327678174",
+      "kind": "archive",
+      "operation": "c9cc0612338747ce6ad1000db220b1355e9d74dc824e82707d2f0ceb60993a93",
+      "url": "https://tschopp.net/@Ted/117547395327678174"
     }
   ],
   "run_count": 534,
