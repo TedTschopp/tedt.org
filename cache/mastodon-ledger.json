@@ -6365,12 +6365,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "1d71ee1d5ce2c567324490286cdd9ed23d627466be54c10977d19aaf99644a39",
-        "kind": "archive",
-        "started_at": "2026-11-02T05:55:15Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-02T05:55:40.147Z",
+          "id": "117545300141416508",
+          "url": "https://tschopp.net/@Ted/117545300141416508"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6378,8 +6379,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Boomblossom.md"
       ],
-      "state": "uncertain",
-      "title": "Boomblossom"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-02T05:55:40.147Z",
+        "id": "117545300141416508",
+        "url": "https://tschopp.net/@Ted/117545300141416508"
+      },
+      "title": "Boomblossom",
+      "verified_at": "2026-11-02T05:55:15Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Borer-Beetles-Zarn.html": {
       "aliases": [
@@ -27441,7 +27448,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-02T04:53:55.317Z",
+  "last_publication_at": "2026-11-02T05:55:40.147Z",
   "last_reconciliation_at": "2026-11-02T05:55:15Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 206,
@@ -28581,6 +28588,14 @@
       "kind": "new",
       "operation": "a6be27f69eb0b14bc889db0b57728fcee69499c13339f109b701644c5f17c1d2",
       "url": "https://tschopp.net/@Ted/117545057341789176"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Boomblossom.html",
+      "created_at": "2026-11-02T05:55:40.147Z",
+      "id": "117545300141416508",
+      "kind": "archive",
+      "operation": "1d71ee1d5ce2c567324490286cdd9ed23d627466be54c10977d19aaf99644a39",
+      "url": "https://tschopp.net/@Ted/117545300141416508"
     }
   ],
   "run_count": 533,
