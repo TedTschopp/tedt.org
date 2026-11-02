@@ -6439,12 +6439,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "aa04d8c3e93ca555bded50d20fb13835ad34ddac7b70f7f5c99457fa077f7200",
-        "kind": "archive",
-        "started_at": "2026-11-02T17:08:15Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-02T17:08:32.660Z",
+          "id": "117547945994507601",
+          "url": "https://tschopp.net/@Ted/117547945994507601"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6452,8 +6453,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Borg-Cyborg.md"
       ],
-      "state": "uncertain",
-      "title": "Borg «Cyborg»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-02T17:08:32.660Z",
+        "id": "117547945994507601",
+        "url": "https://tschopp.net/@Ted/117547945994507601"
+      },
+      "title": "Borg «Cyborg»",
+      "verified_at": "2026-11-02T17:08:15Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Borg-Defense-Attack-Borg.html": {
       "aliases": [
@@ -27469,7 +27476,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-02T14:48:30.151Z",
+  "last_publication_at": "2026-11-02T17:08:32.660Z",
   "last_reconciliation_at": "2026-11-02T17:08:15Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 209,
@@ -28625,6 +28632,14 @@
       "kind": "archive",
       "operation": "c9cc0612338747ce6ad1000db220b1355e9d74dc824e82707d2f0ceb60993a93",
       "url": "https://tschopp.net/@Ted/117547395327678174"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Borg-Cyborg.html",
+      "created_at": "2026-11-02T17:08:32.660Z",
+      "id": "117547945994507601",
+      "kind": "archive",
+      "operation": "aa04d8c3e93ca555bded50d20fb13835ad34ddac7b70f7f5c99457fa077f7200",
+      "url": "https://tschopp.net/@Ted/117547945994507601"
     }
   ],
   "run_count": 535,
