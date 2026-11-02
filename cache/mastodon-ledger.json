@@ -6549,12 +6549,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "b6d3505a2231e479a5038a4cb5a891a50d01e2d18062d350461abf448b2ed846",
-        "kind": "archive",
-        "started_at": "2026-11-02T21:31:18Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-02T21:31:33.444Z",
+          "id": "117548980203965515",
+          "url": "https://tschopp.net/@Ted/117548980203965515"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6562,8 +6563,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-BossBot-Supervisory-Borg.md"
       ],
-      "state": "uncertain",
-      "title": "BossBot «Supervisory Borg»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-02T21:31:33.444Z",
+        "id": "117548980203965515",
+        "url": "https://tschopp.net/@Ted/117548980203965515"
+      },
+      "title": "BossBot «Supervisory Borg»",
+      "verified_at": "2026-11-02T21:31:18Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bot-Bashers-Spitter.html": {
       "aliases": [
@@ -27510,7 +27517,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-02T19:03:08.561Z",
+  "last_publication_at": "2026-11-02T21:31:33.444Z",
   "last_reconciliation_at": "2026-11-02T21:31:18Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 212,
@@ -28690,6 +28697,14 @@
       "kind": "archive",
       "operation": "ecbaa9835a706a41c3833c1d33f90e8fc91a9704d08e6c86ac5b2a827754f7c9",
       "url": "https://tschopp.net/@Ted/117548396613523351"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/BossBot-Supervisory-Borg.html",
+      "created_at": "2026-11-02T21:31:33.444Z",
+      "id": "117548980203965515",
+      "kind": "archive",
+      "operation": "b6d3505a2231e479a5038a4cb5a891a50d01e2d18062d350461abf448b2ed846",
+      "url": "https://tschopp.net/@Ted/117548980203965515"
     }
   ],
   "run_count": 540,
