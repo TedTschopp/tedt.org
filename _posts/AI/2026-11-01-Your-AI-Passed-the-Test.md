@@ -9,7 +9,7 @@ source-url: ""
 call-to-action: "Discuss this on Mastodon"
 
 date: 2026-11-01 09:00:00 -0800
-update: 2026-11-02 10:43:09 -0800
+update: 2026-11-02 10:49:33 -0800
 
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -230,6 +230,13 @@ A passing evaluation remains bounded evidence. It shows how the system performed
 
 These tests also need to continue as the product changes. A different model, revised instruction, new search process or renamed data field can alter behavior. As [*Dev, Test, and Prod Still Matter: What Gets Deployed Has Changed*](https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/) explains, assurance needs to follow the system being deployed.
 
+<style>
+  #article-evaluation-lab-mobile-note { display: none; }
+  @media (max-width: 767.98px) {
+    #article-evaluation-lab-frame { display: none !important; }
+    #article-evaluation-lab-mobile-note { display: block; }
+  }
+</style>
 <section id="evaluation-lab-exercise" class="my-4" aria-labelledby="evaluation-lab-heading">
   <h2 id="evaluation-lab-heading">Try it: follow an answer from evidence to release</h2>
   <p>The <a href="https://tedt.org/ai-evaluation-lab/">Founding Documents AI Evaluation Lab</a> puts these ideas into practice with public U.S. documents. Its first exercise confuses amendments proposed in 1789 with those ratified in 1791. Follow the retrieved passage, compare the graders, and decide whether the answer meets the requirement for release.</p>
@@ -246,7 +253,9 @@ These tests also need to continue as the product changes. A different model, rev
         <li>Choose <strong>Decide what can ship</strong>, then switch the agent version to <strong>Revised</strong>. Compare the results before changing the release policy.</li>
       </ol>
       <p>Replay uses authored teaching responses scored with Microsoft Agent Framework. Optional live runs use your own model connection. The lab also includes Python and React downloads for your own experiments.</p>
-      <p><a href="https://tedt.org/ai-evaluation-lab/" target="_blank" rel="noopener">Open the lab in a new tab</a>. Select <strong>Interactive lab</strong> above again to collapse this exercise and return to the article.</p>
+      <p id="article-evaluation-lab-mobile-note" class="small">On a small screen, use the link below to give the lab's evidence and controls more room.</p>
+      <p><a href="https://tedt.org/ai-evaluation-lab/" class="btn btn-outline-primary" target="_blank" rel="noopener">Open the lab in a new tab</a></p>
+      <p class="small">Select <strong>Interactive lab</strong> above again to collapse this exercise and return to the article.</p>
       <iframe id="article-evaluation-lab-frame" hidden data-src="https://evals.tedt.org/?embed=1" title="AI evaluation lab: inspect evidence, compare graders, and make a release decision" width="100%" height="1100" loading="lazy" style="display:block;width:100%;max-width:100%;border:1px solid var(--bs-border-color);border-radius:.375rem;"></iframe>
       <noscript><p>The interactive lab requires JavaScript. You can also <a href="https://github.com/TedTschopp/Evaluation-Reference/blob/main/docs/instructor-guide.md">read the instructor guide</a>.</p></noscript>
     </div>
@@ -258,11 +267,14 @@ These tests also need to continue as the product changes. A different model, rev
   const frame = document.getElementById("article-evaluation-lab-frame");
   if (!exercise || !frame) return;
 
-  exercise.addEventListener("toggle", function () {
-    if (!exercise.open) return;
+  const narrowScreen = window.matchMedia("(max-width: 767.98px)");
+  function loadLab() {
+    if (!exercise.open || narrowScreen.matches) return;
     if (!frame.getAttribute("src")) frame.setAttribute("src", frame.dataset.src);
     frame.hidden = false;
-  });
+  }
+  exercise.addEventListener("toggle", loadLab);
+  narrowScreen.addEventListener("change", loadLab);
 
   window.addEventListener("message", function (event) {
     if (event.origin !== "https://evals.tedt.org" || event.source !== frame.contentWindow) return;
