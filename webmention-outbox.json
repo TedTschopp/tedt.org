@@ -10836,12 +10836,13 @@
       "deliveries": {}
     },
     "https://tedt.org/Your-AI-Passed-the-Test/": {
-      "fingerprint": "db3bf98fbd2ee6793f259ddeaca4d45c36cbac9ba02e78152589f294f23c9961",
+      "fingerprint": "b8856491b3a3d67150e5089ffac51cd6aabcd4dcec56537f7f694d445ee5ddf8",
       "targets": [
         "https://arxiv.org/html/2610.38631v1",
         "https://arxiv.org/html/2610.38687v1",
         "https://arxiv.org/html/2610.38691v1",
         "https://developers.openai.com/api/docs/guides/evaluation-best-practices",
+        "https://github.com/TedTschopp/Evaluation-Reference/blob/main/docs/instructor-guide.md",
         "https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/",
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/",
         "https://tedt.org/The-Map-Is-Not-the-Decision/",
@@ -10869,19 +10870,25 @@
         "https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/pztOzaDvQ4F7F80VtSsx",
+          "receipt": "https://webmention.io/tedt.org/webmention/1Bxdwvd_bTDhrZjKI5d_",
           "attempts": 1
         },
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/FXyIPeyRo1rILiegFVmY",
+          "receipt": "https://webmention.io/tedt.org/webmention/X1cg6eMd8ZXniLZKC5f2",
           "attempts": 1
         },
         "https://tedt.org/The-Map-Is-Not-the-Decision/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/RvgrjhElsAUTjjVWbawM",
+          "receipt": "https://webmention.io/tedt.org/webmention/r2ALlPTeb7B3suhjF0sv",
+          "attempts": 1
+        },
+        "https://tedt.org/ai-evaluation-lab/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/-NYZpVA8E4orrN4EOqfw",
           "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
@@ -10892,10 +10899,8 @@
           "state": "unsupported",
           "attempts": 1
         },
-        "https://tedt.org/ai-evaluation-lab/": {
-          "state": "accepted",
-          "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/prWRCxCe3AZ1m6nNhO69",
+        "https://github.com/TedTschopp/Evaluation-Reference/blob/main/docs/instructor-guide.md": {
+          "state": "unsupported",
           "attempts": 1
         }
       }
