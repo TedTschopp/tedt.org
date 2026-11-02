@@ -9,7 +9,7 @@ source-url: ""
 call-to-action: "Discuss this on Mastodon"
 
 date: 2026-11-01 09:00:00 -0800
-update: 2026-11-02 11:05:43 -0800
+update: 2026-11-02 13:20:01 -0800
 
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -231,6 +231,28 @@ A passing evaluation remains bounded evidence. It shows how the system performed
 These tests also need to continue as the product changes. A different model, revised instruction, new search process or renamed data field can alter behavior. As [*Dev, Test, and Prod Still Matter: What Gets Deployed Has Changed*](https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/) explains, assurance needs to follow the system being deployed.
 
 <style>
+  #evaluation-lab-exercise .btn-outline-primary {
+    --bs-btn-color: var(--bs-link-color);
+    --bs-btn-border-color: var(--bs-link-color);
+    --bs-btn-hover-color: var(--bs-body-bg);
+    --bs-btn-hover-bg: var(--bs-link-color);
+    --bs-btn-hover-border-color: var(--bs-link-color);
+    --bs-btn-active-color: var(--bs-body-bg);
+    --bs-btn-active-bg: var(--bs-link-color);
+    --bs-btn-active-border-color: var(--bs-link-color);
+    --bs-btn-focus-shadow-rgb: var(--bs-link-color-rgb);
+    color: var(--bs-btn-color);
+  }
+  #evaluation-lab-exercise .btn-outline-primary:hover,
+  #evaluation-lab-exercise .btn-outline-primary:active,
+  #evaluation-lab-exercise .btn-outline-primary:focus-visible {
+    color: var(--bs-btn-hover-color);
+  }
+  #evaluation-lab-exercise .btn-outline-primary:focus-visible {
+    outline: 2px solid var(--bs-link-color);
+    outline-offset: 3px;
+    box-shadow: none;
+  }
   #article-evaluation-lab-mobile-note { display: none; }
   @media (max-width: 767.98px) {
     #article-evaluation-lab-frame { display: none !important; }
@@ -256,7 +278,7 @@ These tests also need to continue as the product changes. A different model, rev
       <p id="article-evaluation-lab-mobile-note" class="small">On a small screen, use the link below to give the lab's evidence and controls more room.</p>
       <p><a href="https://tedt.org/ai-evaluation-lab/" class="btn btn-outline-primary" target="_blank" rel="noopener">Open the lab in a new tab</a></p>
       <p class="small">Select <strong>Interactive lab</strong> above again to collapse this exercise and return to the article.</p>
-      <iframe id="article-evaluation-lab-frame" hidden data-src="https://evals.tedt.org/?embed=1" title="AI evaluation lab: inspect evidence, compare graders, and make a release decision" width="100%" height="1100" loading="lazy" style="display:block;width:100%;max-width:100%;border:1px solid var(--bs-border-color);border-radius:.375rem;"></iframe>
+      <iframe id="article-evaluation-lab-frame" hidden data-src="https://evals.tedt.org/?embed=1&amp;parent_origin=https%3A%2F%2Ftedt.org" title="AI evaluation lab: inspect evidence, compare graders, and make a release decision" width="100%" height="1100" loading="lazy" style="display:block;width:100%;max-width:100%;border:1px solid var(--bs-border-color);border-radius:.375rem;"></iframe>
       <noscript><p>The interactive lab requires JavaScript. You can also <a href="https://github.com/TedTschopp/Evaluation-Reference/blob/main/docs/instructor-guide.md">read the instructor guide</a>.</p></noscript>
     </div>
   </details>
