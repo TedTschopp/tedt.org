@@ -72,6 +72,8 @@ image_height: 941
 mathjax: false
 mermaid: false
 no_toc: true
+mastodon-post-id: "117545057341789176"
+mastodon-post-url: "https://tschopp.net/@Ted/117545057341789176"
 ---
 
 **Your AI Passed the Test. Did It Answer the Business Question?**
