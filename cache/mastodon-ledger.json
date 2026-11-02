@@ -6586,12 +6586,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "7545f70bb2353b66c317e1e630f1792747200500b2b51ecf87f283cce6a05ce3",
-        "kind": "archive",
-        "started_at": "2026-11-02T22:57:54Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-02T22:58:11.540Z",
+          "id": "117549320866340341",
+          "url": "https://tschopp.net/@Ted/117549320866340341"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6599,8 +6600,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bot-Bashers-Spitter.md"
       ],
-      "state": "uncertain",
-      "title": "Bot Bashers «Spitter»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-02T22:58:11.540Z",
+        "id": "117549320866340341",
+        "url": "https://tschopp.net/@Ted/117549320866340341"
+      },
+      "title": "Bot Bashers «Spitter»",
+      "verified_at": "2026-11-02T22:57:54Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bot-General-Household-Robotoid.html": {
       "aliases": [
@@ -27524,7 +27531,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-02T21:31:33.444Z",
+  "last_publication_at": "2026-11-02T22:58:11.540Z",
   "last_reconciliation_at": "2026-11-02T22:57:54Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 213,
@@ -28712,6 +28719,14 @@
       "kind": "archive",
       "operation": "b6d3505a2231e479a5038a4cb5a891a50d01e2d18062d350461abf448b2ed846",
       "url": "https://tschopp.net/@Ted/117548980203965515"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bot-Bashers-Spitter.html",
+      "created_at": "2026-11-02T22:58:11.540Z",
+      "id": "117549320866340341",
+      "kind": "archive",
+      "operation": "7545f70bb2353b66c317e1e630f1792747200500b2b51ecf87f283cce6a05ce3",
+      "url": "https://tschopp.net/@Ted/117549320866340341"
     }
   ],
   "run_count": 541,
