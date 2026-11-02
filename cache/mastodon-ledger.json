@@ -6512,12 +6512,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "ecbaa9835a706a41c3833c1d33f90e8fc91a9704d08e6c86ac5b2a827754f7c9",
-        "kind": "archive",
-        "started_at": "2026-11-02T19:02:51Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-02T19:03:08.561Z",
+          "id": "117548396613523351",
+          "url": "https://tschopp.net/@Ted/117548396613523351"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6525,8 +6526,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Boris.md"
       ],
-      "state": "uncertain",
-      "title": "Boris"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-02T19:03:08.561Z",
+        "id": "117548396613523351",
+        "url": "https://tschopp.net/@Ted/117548396613523351"
+      },
+      "title": "Boris",
+      "verified_at": "2026-11-02T19:02:51Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/BossBot-Supervisory-Borg.html": {
       "aliases": [
@@ -27496,7 +27503,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-02T17:50:21.464Z",
+  "last_publication_at": "2026-11-02T19:03:08.561Z",
   "last_reconciliation_at": "2026-11-02T19:02:51Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 211,
@@ -28668,6 +28675,14 @@
       "kind": "archive",
       "operation": "cfb47b13243f461543e8ac97b51e9babee3df4241bc804fc7c4a1779e9165225",
       "url": "https://tschopp.net/@Ted/117548110411507975"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Boris.html",
+      "created_at": "2026-11-02T19:03:08.561Z",
+      "id": "117548396613523351",
+      "kind": "archive",
+      "operation": "ecbaa9835a706a41c3833c1d33f90e8fc91a9704d08e6c86ac5b2a827754f7c9",
+      "url": "https://tschopp.net/@Ted/117548396613523351"
     }
   ],
   "run_count": 538,
