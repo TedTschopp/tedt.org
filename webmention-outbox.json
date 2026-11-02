@@ -10836,7 +10836,7 @@
       "deliveries": {}
     },
     "https://tedt.org/Your-AI-Passed-the-Test/": {
-      "fingerprint": "476bddc59c329c784ec749f771ee231745c8fc1ead6925efad94da466ca38d98",
+      "fingerprint": "db3bf98fbd2ee6793f259ddeaca4d45c36cbac9ba02e78152589f294f23c9961",
       "targets": [
         "https://arxiv.org/html/2610.38631v1",
         "https://arxiv.org/html/2610.38687v1",
@@ -10845,6 +10845,7 @@
         "https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/",
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/",
         "https://tedt.org/The-Map-Is-Not-the-Decision/",
+        "https://tedt.org/ai-evaluation-lab/",
         "https://tools.tedt.org/inside-ai/",
         "https://www.anthropic.com/research/demystifying-evals-for-ai-agents"
       ],
@@ -10868,19 +10869,19 @@
         "https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/30n95FPQgvG-DMZKqE8j",
+          "receipt": "https://webmention.io/tedt.org/webmention/pztOzaDvQ4F7F80VtSsx",
           "attempts": 1
         },
         "https://tedt.org/How-to-Communicate-in-a-World-of-AI/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/a14l0aA3rwfGjIvNfQGP",
+          "receipt": "https://webmention.io/tedt.org/webmention/FXyIPeyRo1rILiegFVmY",
           "attempts": 1
         },
         "https://tedt.org/The-Map-Is-Not-the-Decision/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/8_Lprih_Uy6htUZoqFDX",
+          "receipt": "https://webmention.io/tedt.org/webmention/RvgrjhElsAUTjjVWbawM",
           "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
@@ -10889,6 +10890,12 @@
         },
         "https://www.anthropic.com/research/demystifying-evals-for-ai-agents": {
           "state": "unsupported",
+          "attempts": 1
+        },
+        "https://tedt.org/ai-evaluation-lab/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/prWRCxCe3AZ1m6nNhO69",
           "attempts": 1
         }
       }
