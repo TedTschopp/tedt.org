@@ -25552,20 +25552,27 @@
       "eligible": true,
       "first_seen_at": "2026-11-02T04:53:33Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "a6be27f69eb0b14bc889db0b57728fcee69499c13339f109b701644c5f17c1d2",
-        "kind": "new",
-        "started_at": "2026-11-02T04:53:33Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-02T04:53:55.317Z",
+          "id": "117545057341789176",
+          "url": "https://tschopp.net/@Ted/117545057341789176"
+        }
+      ],
       "published_at": "2026-11-01T17:00:00Z",
       "queue_kind": "new",
       "reconciled_at": "2026-11-02T04:53:33Z",
       "source_paths": [
         "_posts/AI/2026-11-01-Your-AI-Passed-the-Test.md"
       ],
-      "state": "uncertain",
-      "title": "Your AI Passed the Test. Did It Answer the Business Question?"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-02T04:53:55.317Z",
+        "id": "117545057341789176",
+        "url": "https://tschopp.net/@Ted/117545057341789176"
+      },
+      "title": "Your AI Passed the Test. Did It Answer the Business Question?",
+      "verified_at": "2026-11-02T04:53:33Z"
     },
     "https://tedt.org/a-beginning/": {
       "aliases": [
@@ -27426,7 +27433,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-10-31T15:02:19.194Z",
+  "last_publication_at": "2026-11-02T04:53:55.317Z",
   "last_reconciliation_at": "2026-11-02T04:53:33Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 205,
@@ -28558,6 +28565,14 @@
       "kind": "archive",
       "operation": "ba5e1f0d532b062cda1e53498ebcf50682b87af12c95395f44add1d37ceb10de",
       "url": "https://tschopp.net/@Ted/117536125039004867"
+    },
+    {
+      "canonical_url": "https://tedt.org/Your-AI-Passed-the-Test/",
+      "created_at": "2026-11-02T04:53:55.317Z",
+      "id": "117545057341789176",
+      "kind": "new",
+      "operation": "a6be27f69eb0b14bc889db0b57728fcee69499c13339f109b701644c5f17c1d2",
+      "url": "https://tschopp.net/@Ted/117545057341789176"
     }
   ],
   "run_count": 532,
