@@ -61,6 +61,8 @@ year-the-event-took-place: 2007
 mathjax: 
 
 order: 
+mastodon-post-id: "117509826772050673"
+mastodon-post-url: "https://tschopp.net/@Ted/117509826772050673"
 ---
 "Anyone who sees a hurricane coming should warn others. I see a hurricane coming.
 

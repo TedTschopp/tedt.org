@@ -6,6 +6,9 @@ require 'nokogiri'
 require 'open3'
 require 'pathname'
 require 'uri'
+require 'tmpdir'
+require 'fileutils'
+require 'yaml'
 
 root = Pathname.new(__dir__).parent
 site = Jekyll::Site.new(Jekyll.configuration('source' => root.to_s, 'quiet' => true))
@@ -52,9 +55,45 @@ end
 output, stderr, status = Open3.capture3('bundle', 'exec', 'ruby', '-W0', root.join('_code/mastodon_manifest.rb').to_s, chdir: root.to_s)
 abort "Manifest export failed: #{stderr}" unless status.success?
 manifest = JSON.parse(output)
-expected = site.posts.docs.reject { |post| post.relative_path.downcase.match?(%r{\A_posts/(policy|homepage)/}) }
+expected = site.posts.docs.reject do |post|
+  post.relative_path.downcase.match?(%r{\A_posts/(policy|homepage)/}) ||
+    post.data['published'] == false ||
+    (post.data['micropub'] && post.data['mastodon-syndicate'] != true) ||
+    (post.data['redirect_to'] && URI.parse(post.data['redirect_to']).host != 'ai.tedt.org')
+end
 actual = manifest.fetch('items').map { |item| item.fetch('source_path') }
 errors << 'Manifest does not cover the complete eligible Jekyll archive' unless actual.sort == expected.map(&:relative_path).sort
+# Exercise the real exporter with independent fixture documents. Managed posts
+# require an explicit boolean opt-in; ordinary archive posts keep their behavior.
+Dir.mktmpdir('tedt-mastodon-selection-') do |fixture|
+  config = {'url' => 'https://fixture.example', 'quiet' => true,
+    'mastodon_comments' => {'host' => 'tschopp.net', 'username' => 'Ted'}}
+  File.write(File.join(fixture, '_config.yml'), YAML.dump(config))
+  FileUtils.mkdir_p(File.join(fixture, '_posts'))
+  managed = {'id' => 'selection-fixture', 'type' => 'h-entry', 'revision' => 1}
+  entries = {
+    'ordinary' => {},
+    'ordinary-with-false-flag' => {'mastodon-syndicate' => false},
+    'managed-default' => {'micropub' => managed},
+    'managed-optout' => {'micropub' => managed, 'mastodon-syndicate' => false},
+    'managed-optin' => {'micropub' => managed, 'mastodon-syndicate' => true},
+    'managed-string-flag' => {'micropub' => managed, 'mastodon-syndicate' => 'true'}
+  }
+  entries.each do |slug, data|
+    front = {'title' => slug, 'date' => '2000-01-01T00:00:00Z', 'permalink' => "/#{slug}/"}.merge(data)
+    File.write(File.join(fixture, '_posts', "2000-01-01-#{slug}.md"), "#{YAML.dump(front)}---\nFixture content.\n")
+  end
+  fixture_output, fixture_error, fixture_status = Open3.capture3('bundle', 'exec', 'ruby', '-W0',
+    root.join('_code/mastodon_manifest.rb').to_s, '--root', fixture, chdir: root.to_s)
+  if fixture_status.success?
+    selected = JSON.parse(fixture_output).fetch('items').map { |item| URI(item.fetch('canonical_url')).path }.sort
+    errors << 'Manifest must preserve ordinary posts and require managed boolean opt-in' unless
+      selected == ['/managed-optin/', '/ordinary-with-false-flag/', '/ordinary/'].sort
+  else
+    errors << "Manifest selection fixtures failed: #{fixture_error}"
+  end
+end
+
 manifest.fetch('items').each do |item|
   errors << "#{item['source_path']}: status exceeds 480 characters" if item.fetch('content_text').length > 480
   mid = item['mastodon_post_id']

@@ -51,7 +51,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017524166887133'
+mastodon-post-id: "117513479301434284"
+mastodon-post-url: "https://tschopp.net/@Ted/117513479301434284"
 ---
 I am at a dangerous point in blogging.&#160; I have 212 different RSS feeds / blogs that I read.&#160; I know [others](http://scobleizer.com/2007/01/03/25000-items-read-on-google-reader/) manage a whole lot more but I’m not as good as they are.&#160;&#160;At one point back in 2000 or so I had only one feed that I subscribed to via the My Netscape Portal.&#160; It was the news feed from the site I use to run, at [www.theonering.com](http://www.theonering.com)&#160;(they no longer syndicate their news sadly).&#160; Over the last 7 years or so, the number of feeds I read has increased.&#160; &#160;It is now at the point where it takes an hour to read everything each day.&#160; I am now starting to run into a barrier of having too many feeds and I need to change something.&#160; I am running into several problems.&#160; 
 

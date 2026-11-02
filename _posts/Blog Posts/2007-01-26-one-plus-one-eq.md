@@ -49,7 +49,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017520777589778'
+mastodon-post-id: "117511734976313947"
+mastodon-post-url: "https://tschopp.net/@Ted/117511734976313947"
 ---
 Some people are just idiots, other people are rude, and finally some people are just downright ugly.&nbsp; This means that there are some people who are brilliant, there are others who are considerate, and there is such a thing as beauty.&nbsp;&nbsp;I&rsquo;m not trying to say that I am brilliant, or considerate, or beautiful.&nbsp; To the contrary, most of the time I am not any of these things.&nbsp; 
 

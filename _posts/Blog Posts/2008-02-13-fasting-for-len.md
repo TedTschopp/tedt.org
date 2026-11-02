@@ -50,7 +50,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017526090553643'
+mastodon-post-id: "117514305241139133"
+mastodon-post-url: "https://tschopp.net/@Ted/117514305241139133"
 ---
 Well, this is starting the second week of my fast for Lent.  This year I have decided not to eat any solid food (liquids only) when the sun is up.  What this basically means is that I have a nice normal dinner, and everything else is liquid.  I have also decided that I will not be drinking any soda, so all fluids are going to be juices and tea.  Most of the time I will drink several types of tea.  Occasionally I will have an orange juice or a vitamin water.  For lunch I will drink a Jamba juice with a shot of wheat grass.
 

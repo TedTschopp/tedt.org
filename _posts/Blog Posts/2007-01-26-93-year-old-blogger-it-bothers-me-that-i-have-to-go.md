@@ -42,7 +42,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017521261400996'
+mastodon-post-id: "117511410996397305"
+mastodon-post-url: "https://tschopp.net/@Ted/117511410996397305"
 ---
 I saw this on Digg, and thought I would like to share it with my friends, and save a copy of it for myself. 
 

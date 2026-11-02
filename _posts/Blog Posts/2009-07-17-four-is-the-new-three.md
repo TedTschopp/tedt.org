@@ -55,7 +55,8 @@ mathjax: null
 order: null
 image_width: 732
 image_height: 447
-mastodon-post-id: '115017528971976274'
+mastodon-post-id: "117515263177059729"
+mastodon-post-url: "https://tschopp.net/@Ted/117515263177059729"
 ---
 I’m going to start out by being honest.  I lied to you.  There are not three separate categories of people, there are four.  This last category is the people who don’t know about your conversation.  Lets call them the clueless.  These are the people who were not invited to the party.  The best way to increase the size of your entire pyramid is to increase the number of people involved.  This is the invitation.
 

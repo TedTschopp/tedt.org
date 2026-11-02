@@ -56,7 +56,8 @@ mathjax: null
 order: null
 image_width: 1280
 image_height: 1696
-mastodon-post-id: '115017667949378301'
+mastodon-post-id: "117522399256372377"
+mastodon-post-url: "https://tschopp.net/@Ted/117522399256372377"
 ---
 IT WILL not be long. In ten years—five years, perhaps only two or three —the historic count-down will start: "Ten — nine — eight — seven — six — five — four — three — two — one —" At zero a new era will open up on the earth—the era of push-button war. A giant rocket, 100 to 135 feet high, will lift slowly from its launching pad and, with voice of thunder, tongue of flame, disappear into the stratosphere. Some 20 to 30 minutes later and 5,000 miles away, the world's first intercontinental ballistic missile will plunge toward the earth. 
 

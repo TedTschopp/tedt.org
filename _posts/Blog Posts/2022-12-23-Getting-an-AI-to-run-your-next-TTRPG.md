@@ -44,7 +44,8 @@ mathjax: null
 order: null
 image_width: 598
 image_height: 626
-mastodon-post-id: '115017668919305508'
+mastodon-post-id: "117522781414930098"
+mastodon-post-url: "https://tschopp.net/@Ted/117522781414930098"
 ---
 I have spent a long part of my Christmas vacation figuring out how to drive an AI Chatbot (https://chat.openai.com/chat) to help people run Role Playing Games. 
 

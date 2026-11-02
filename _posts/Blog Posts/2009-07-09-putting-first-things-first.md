@@ -56,7 +56,8 @@ mathjax: null
 order: null
 image_width: 1182
 image_height: 704
-mastodon-post-id: '115017528492588860'
+mastodon-post-id: "117514978231403457"
+mastodon-post-url: "https://tschopp.net/@Ted/117514978231403457"
 ---
 The first is that there are three basic types of people.  There are people who start conversations.  There are people who participate in conversations.  Finally there are people who listen to conversations.
 

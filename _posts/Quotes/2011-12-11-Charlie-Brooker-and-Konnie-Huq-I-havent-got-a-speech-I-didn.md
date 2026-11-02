@@ -61,6 +61,8 @@ year-the-event-took-place: 2011
 mathjax: 
 
 order: 
+mastodon-post-id: "117516775200006224"
+mastodon-post-url: "https://tschopp.net/@Ted/117516775200006224"
 ---
 "I haven't got a speech I didn't plan words I didn't even try to, I just knew I had to get here, to stand here and I knew I wanted you to listen, to really listen. Not just pull a face like you're listening like you do the rest of the time, a face that you're feeling instead of processing.
 

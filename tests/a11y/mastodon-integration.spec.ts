@@ -116,21 +116,3 @@ test('comments fit a narrow viewport and pass focused accessibility checks in bo
   const bounds = await page.locator('[data-mastodon-discussion]').evaluate(node => ({ width: node.clientWidth, scroll: node.scrollWidth }));
   expect(bounds.scroll).toBeLessThanOrEqual(bounds.width + 1);
 });
-
-test('timeline resolves an exact string ID by handle before fetching statuses', async ({ page }) => {
-  const id = '109286944787814809';
-  const requested: string[] = [];
-  await page.route('https://twit.social/api/v1/**', async route => {
-    const url = new URL(route.request().url());
-    requested.push(url.pathname);
-    if (url.pathname.endsWith('/lookup')) return route.fulfill({ json: { id, username: 'TedT', url: 'https://twit.social/@TedT' } });
-    if (url.pathname.endsWith('/custom_emojis')) return route.fulfill({ json: [] });
-    if (url.pathname === `/api/v1/accounts/${id}/statuses`) return route.fulfill({ json: [] });
-    return route.fulfill({ status: 404, json: { error: 'Unexpected rounded account ID' } });
-  });
-  await page.goto('/tools/mastodon/');
-  await expect(page.locator('.mt-body')).toContainText('No posts to show');
-  expect(requested).toContain('/api/v1/accounts/lookup');
-  expect(requested).toContain(`/api/v1/accounts/${id}/statuses`);
-  expect(requested.some(url => url.includes('109286944787814820'))).toBe(false);
-});

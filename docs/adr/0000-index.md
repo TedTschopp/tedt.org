@@ -39,6 +39,7 @@ This directory contains Architecture Decision Records (ADRs) capturing significa
 | 0016 | [Introduce a Patreon Member Section on Cloudflare](0016-patreon-member-section.md) | Accepted | 2026-10-06 | Private Jekyll content, Worker authorization, private downloads, and API-driven Patreon tiers. |
 | 0017 | [Unify Mastodon Publication and Recovery](0017-unify-mastodon-publication-and-recovery.md) | Accepted | 2026-10-25 | One durable publisher, complete archive recovery, canonical prompt forwarding, and accessible public discussions. |
 
+| 0018 | [Share the Global Header Across Subdomains](0018-share-global-header-across-subdomains.md) | Accepted | 2026-10-29 | Runtime navigation, isolated styling, and shared appearance across thirteen sites. |
 
 ## Conventions
 

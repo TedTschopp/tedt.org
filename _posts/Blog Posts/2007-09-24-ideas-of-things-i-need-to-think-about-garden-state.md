@@ -54,7 +54,8 @@ mathjax: null
 order: null
 image_width: 1344
 image_height: 896
-mastodon-post-id: '115017525131320024'
+mastodon-post-id: "117513944776888742"
+mastodon-post-url: "https://tschopp.net/@Ted/117513944776888742"
 ---
 > “Be fruitful and multiply and fill the earth and subdue it and have dominion over the fish of the sea and over the birds of the heavens and over every living thing that moves on the earth.
 > 

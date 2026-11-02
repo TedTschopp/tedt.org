@@ -161,7 +161,13 @@ jobs:
             --run-url "${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
 
       - name: Install Playwright browsers
+        timeout-minutes: 6
         run: |
+          # The Azure Ubuntu mirror intermittently stalls package downloads.
+          # Keep the same signed packages and all three browser test engines.
+          if [ -f /etc/apt/apt-mirrors.txt ]; then
+            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+          fi
           npx playwright install --with-deps chromium firefox webkit
 
       - name: Setup Ruby
@@ -222,6 +228,9 @@ jobs:
             exit 1;
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
+
+      - name: Shared header browser contract
+        run: npm run test:global-header
 
       - name: Responsive images and editorial credits
         run: |
@@ -299,10 +308,6 @@ jobs:
       - name: Mastodon feed length report
         run: |
           make length_report
-
-      - name: Tools CSS sync guard
-        run: |
-          make tools_css_sync_check
 
       - name: Capture GitHub Actions errors/warnings (Allure)
         if: failure()

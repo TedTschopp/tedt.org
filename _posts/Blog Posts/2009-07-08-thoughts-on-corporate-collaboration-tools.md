@@ -52,7 +52,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017528013492008'
+mastodon-post-id: "117514849408740274"
+mastodon-post-url: "https://tschopp.net/@Ted/117514849408740274"
 ---
 The key approach to collaboration tools is to treat them like Pen and Paper. They are like Conference Rooms. They are like the telephones. Each of these tools do not have a whole lot of restrictions placed on them in the office environment. A collaboration tool is only as useful as it is used. To put barriers to use in place only reduces the number of people who are going to use them.
 

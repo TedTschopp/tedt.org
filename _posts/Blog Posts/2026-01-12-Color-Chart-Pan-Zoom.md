@@ -72,7 +72,7 @@ mastodon-post-id:
 
 The Color Chart tool lives here:
 
-- [tools/color-chart.html]({% link tools/color-chart.html %})
+- [tools/color-chart.html](https://tools.tedt.org/color-chart.html)
 
 Think of it like a map: the screen is your viewport, and the chart is a larger world behind it.
 
@@ -114,11 +114,11 @@ The tool accepts a `c` query parameter so you can generate a chart from a specif
 
 **Use the built-in “teds” palette:**
 
-- `{{ site.url }}{% link tools/color-chart.html %}?c=teds`
+- `https://tools.tedt.org/color-chart.html?c=teds`
 
 **Provide a comma-separated list of hex colors:**
 
-- `{{ site.url }}{% link tools/color-chart.html %}?c=%2300a9e0,%23101820,%23fed141`
+- `https://tools.tedt.org/color-chart.html?c=%2300a9e0,%23101820,%23fed141`
 
 Notes:
 

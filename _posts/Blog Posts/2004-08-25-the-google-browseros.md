@@ -48,9 +48,10 @@ redirect_from:
 - /computers/the-google-browseros
 mathjax: null
 order: null
-mastodon-post-id: 111179921177417786
+mastodon-post-id: "117506203842592130"
 image_width: 1456
 image_height: 816
+mastodon-post-url: "https://tschopp.net/@Ted/117506203842592130"
 ---
 I've been a firm believer that Google is making an OS with a set of applications. Think of a system which ties all their properties together. Mail, Blog, Social Network, Pictures, Search, etc&#8230; Into one usable application which can be accessed from anywhere on the planet as long as you have a browser.
 

@@ -45,7 +45,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017518857718439'
+mastodon-post-id: "117509556832872626"
+mastodon-post-url: "https://tschopp.net/@Ted/117509556832872626"
 ---
 Last night I was listening to a radio program that a former pastor of mine is featured on and they brought up the fact that man is a “word-eater.”  I don’t know about the rest of you, but I know that I look forward to reading large books and thinking about the thoughts of others communicated via words.
 

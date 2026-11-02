@@ -63,7 +63,8 @@ mathjax: null
 order: null
 image_width: 3587
 image_height: 2391
-mastodon-post-id: '115017530409317677'
+mastodon-post-id: "117516537767655719"
+mastodon-post-url: "https://tschopp.net/@Ted/117516537767655719"
 ---
 Tasmania is an island off the coast of Australia which was attached to Australia until about 10,000 years ago with the end of the last glacial period.  The island is home to many interesting animals and was home to the Tasmanian Aborigines.  These people became isolated from the mainland about 10,000 years ago.  It is this isolation and these people I want to focus on.
 

@@ -9,16 +9,24 @@ site deployment. This adds no Jekyll collection/plugin or paid subscription.
 
 1. The owner supplied the IndieKey metadata link ending in `crse2y91vtsd5q0r`.
    Publish it on the homepage, then press **Verify** on the domain in IndieKey.
-   Verification requires the exact public tag, not merely a local build.
+   Verification requires the exact public tag, not merely a local build. The
+   owner completed verification on October 25, 2026; the public metadata and
+   signing-key documents now return HTTP 200.
 2. After verification, align the existing authorization/token discovery links to
    the endpoints returned by that metadata. Keep both legacy tags: older clients
    still use them. The current metadata URI is
    `https://indiekey.id/.well-known/oauth-authorization-server/s/crse2y91vtsd5q0r`.
+   The verified authorization endpoint is
+   `https://indiekey.id/s/crse2y91vtsd5q0r/auth`; the token endpoint is
+   `https://indiekey.id/token`. The site's two legacy discovery tags point there
+   so clients that do not read the metadata link also use IndieKey.
 3. The owner supplied `https://aperture.p3k.io/microsub/1121`. This is a public
    discovery URL, not an access token. Sign in to Aperture, follow a feed, and sign
    in to [Monocle](https://monocle.p3k.io/) using `tedt.org`. The free reader keeps
-   seven days. Publish a bookmark to retain an item on your own website.
-4. Sign in to [Quill](https://quill.p3k.io/) with `tedt.org`. Approve the requested
+   seven days. Publish a bookmark to retain an item on your own website. After
+   changing the site's token endpoint, sign back into Aperture once: its login
+   refreshes the endpoint it stores for token checks. Then sign back into Monocle.
+4. Sign in to [Quill](https://quill.p3k.app/) with `tedt.org`. Approve the requested
    permissions with your passkey. Different clients expose different post types.
    Monocle can also publish replies, likes and bookmarks through Micropub.
 
@@ -99,7 +107,23 @@ Main repository variables:
 Media repository variable: `INDIEWEB_MEDIA_SYNC_ENABLED` drains uploads referenced
 by public entries. Leave it disabled until the service and main layout are live.
 
-Main repository secrets: existing `CLOUDFLARE_API_TOKEN`, plus
+The owner approved use of the existing main-only `social-bot-check-preview`
+GitHub environment for this service on October 26, 2026. Its historical name
+reflects its first use. The job uses that environment's `CLOUDFLARE_API_TOKEN`
+without copying the credential to another environment. CI uploads and promotes
+an identified Worker version using the repository's established deployment
+pattern; it preserves existing routes and does not need zone route-write access.
+The two publisher roles
+are independently scoped to entry and media queues, and deployment smoke checks
+exercise both roles without logging private source.
+
+The dedicated D1 schema was provisioned separately through the connected
+Cloudflare administrator. `INDIEWEB_D1_MIGRATIONS_ENABLED=true` opts into automatic
+schema migration only when the deployment credential includes D1 Write. Leave it
+false with a Worker-only credential, and apply future schema migrations before
+releasing code that requires them.
+
+Main repository secrets:
 `INDIEWEB_PUBLISHER_TOKEN` (entry queue) and `INDIEWEB_MEDIA_PUBLISHER_TOKEN`
 (media queue/service). The latter is also stored in the media repository. These
 are generated independently; neither is a GitHub account token. The service stores
@@ -127,3 +151,13 @@ private chunks; revert the service/site version or disable its two narrow routes
 if needed. Existing pages and previously published immutable media stay readable.
 Re-enable only after the restored version passes validation. A failure is not a
 reason to reset the private state or recreate an existing social status.
+
+## Cloudflare route matching
+
+Cloudflare includes the query string when matching route patterns. The reserved
+`https://tedt.org/micropub*` prefix therefore ends in a wildcard so `?q=config`
+and `?q=source` reach the Worker. The Worker still allows only its exact endpoint,
+media, publisher and health paths; other prefix matches return 404. Route changes
+are applied separately through the connected Cloudflare administrator. Version
+promotion in CI preserves the assigned route. Deployment smoke checks require
+unauthenticated config/source queries to reach the Worker and return 401.

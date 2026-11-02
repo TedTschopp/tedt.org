@@ -1,0 +1,10 @@
+.tedt-section-artwork { margin:0; min-width:0; }
+.tedt-section-artwork img { display:block; width:100%; height:auto; border-radius:4px; }
+.tedt-section-hero { margin:32px 0; }
+.tedt-destination-group:has(.tedt-group-artwork) { grid-template-columns:minmax(160px,.7fr) minmax(0,1.1fr) minmax(0,1.2fr); grid-template-areas:"art intro links"; align-items:start; }
+.tedt-group-intro { min-width:0; }
+.tedt-destination-group:has(.tedt-group-artwork) > .tedt-group-intro { grid-area:intro; }
+.tedt-group-artwork { grid-area:art; }
+.tedt-destination-group:has(.tedt-group-artwork) > ul { grid-area:links; min-width:0; }
+@media(min-width:768px) and (max-width:1023px) { .tedt-destination-group:has(.tedt-group-artwork) { grid-template-columns:1fr 1fr; grid-template-areas:"intro links" "art links"; } }
+@media(max-width:767px) { .tedt-destination-group:has(.tedt-group-artwork) { grid-template-columns:1fr; grid-template-areas:"intro" "art" "links"; gap:16px; }.tedt-group-artwork { max-width:480px; } }

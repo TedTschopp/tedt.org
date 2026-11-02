@@ -54,7 +54,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017527052505070'
+mastodon-post-id: "117514550592557833"
+mastodon-post-url: "https://tschopp.net/@Ted/117514550592557833"
 ---
 I am in the middle of reading a book written by Nassim Nicholas Taleb called the [Black Swan](http://www.amazon.com/Black-Swan-Impact-Highly-Improbable/dp/1400063515%3FSubscriptionId%3D0PZ7TM66EXQCXFVTMTR2%26tag%3Dadriaantijsse-20%26linkCode%3Dxm2%26camp%3D2025%26creative%3D165953%26creativeASIN%3D1400063515). The book itself is basically about the problems with inductive reasoning. In the book he parses these ideas out into several more specific fallacies.
 

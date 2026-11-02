@@ -50,7 +50,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017521741298875'
+mastodon-post-id: "117512028869066204"
+mastodon-post-url: "https://tschopp.net/@Ted/117512028869066204"
 ---
 **<u>Background  
 </u>**Over the last couple of years I have been working on large enterprise projects for a large corporation.&nbsp; I am recognised at the company a leading web developer.&nbsp; I am being groomed to become an Enterprise Architect. One of the things that keeps me up at night is a convergence of a technology called Web Services.

@@ -61,5 +61,7 @@ year-the-event-took-place: 2009
 mathjax: 
 
 order: 
+mastodon-post-id: "117515903484498776"
+mastodon-post-url: "https://tschopp.net/@Ted/117515903484498776"
 ---
 If you don’t like change, you’re going to like irrelevance even less.

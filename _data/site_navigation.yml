@@ -1,0 +1,181 @@
+---
+- key: essays
+  title: Essays
+  url: https://tedt.org/essays/
+  description: Ideas about technology, work, faith, and everyday life.
+  image: /img/landing/swiss-v1/essays-hero.webp
+  image_alt: An open book unfolds into pages connected by fine lines and circular markers.
+  image_focus: 50% 50%
+  categories:
+  - ai
+  - enterprise-architecture
+  - business
+  - leadership
+  - communications
+  - computers
+  - mobile
+  - science
+  - religion
+  - philosophy
+  - opinion
+  - books
+  - movies
+  - music
+  - quotes
+  - reprint
+  - blog
+  children:
+  - title: AI & Enterprise Architecture
+    url: https://tedt.org/essays/#ai-architecture
+  - title: Work & Leadership
+    url: https://tedt.org/essays/#work-leadership
+  - title: Technology & Science
+    url: https://tedt.org/essays/#technology-science
+  - title: Faith & Philosophy
+    url: https://tedt.org/essays/#faith-philosophy
+  - title: Life & Culture
+    url: https://tedt.org/essays/#life-culture
+  - title: Yesterday in AI
+    url: https://yesterdai.tedt.org/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/essays-hero-dark.webp
+- key: stories
+  title: Stories & Folklore
+  url: https://tedt.org/stories/
+  description: Swiss folklore, original writing, and the stories we carry with us.
+  image: /img/landing/swiss-v1/stories-hero.webp
+  image_alt: A village and arched doorway rise from an open book, with a winding path through its pages.
+  image_focus: 50% 50%
+  categories:
+  - folklore
+  - personal-writing
+  - fandom
+  - middle-earth
+  - theonering-com-legacy-archive
+  children:
+  - title: Swiss Folklore
+    url: https://tedt.org/stories/#swiss-folklore
+  - title: Original Writing
+    url: https://tedt.org/stories/#original-writing
+  - title: Poetry & Lyrics
+    url: https://tedt.org/stories/#poetry-lyrics
+  - title: Tolkien & Fandom
+    url: https://tedt.org/stories/#tolkien-fandom
+  - title: Writing Tools
+    url: https://tedt.org/stories/#writing-tools
+  - title: Plotto
+    url: https://plotto.tedt.org/
+  - title: Swiss Music Box
+    url: https://spieldose.tedt.org/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/stories-hero-dark.webp
+- key: games
+  title: Games & Worlds
+  url: https://tedt.org/games/
+  description: Campaigns, creatures, imagined worlds, and tools for the table.
+  image: /img/landing/swiss-v1/games-hero.webp
+  image_alt: An unnumbered polyhedral die sits between islands on a fine cartographic grid.
+  image_focus: 50% 50%
+  categories:
+  - bestiary
+  - dcc
+  - dnd
+  - gamma-world
+  - gurps
+  - maps
+  - marchen-engine
+  - monsters
+  - mutant-crawl-classics
+  - role-playing-games
+  - shadowrun
+  children:
+  - title: The Märchen Engine
+    url: https://tedt.org/games/#marchen-engine
+  - title: Campaigns & Systems
+    url: https://tedt.org/games/#campaigns-systems
+  - title: Bestiary & Reference
+    url: https://tedt.org/games/#bestiary-reference
+  - title: Worldbuilding & Maps
+    url: https://tedt.org/games/#worldbuilding-maps
+  - title: GM Tools
+    url: https://tedt.org/games/#gm-tools
+  - title: Procedural Islands
+    url: https://islands.tedt.org/
+  - title: Random Constellations
+    url: https://random-constellations.tedt.org/
+  - title: Random Tables
+    url: https://randomtables.tedt.org/
+  - title: TTRPG GM Tools
+    url: https://ttrpg-mcp.tedt.org/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/games-hero-dark.webp
+- key: tools
+  title: Tools
+  url: https://tools.tedt.org/
+  description: Practical browser tools, plot generators, and reusable AI resources.
+  image: /img/landing/swiss-v1/tools-hero.webp
+  image_alt: An open tool case holds a caliper, transforming blocks, and a adjustment dial.
+  image_focus: 50% 50%
+  categories:
+  - prompts
+  - projects
+  children:
+  - title: AI Library
+    url: https://ai.tedt.org/
+  - title: BUSY Apps
+    url: https://busy.tedt.org/
+  - title: RSS Feed Hub
+    url: https://rss.tedt.org/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/tools-hero-dark.webp
+- key: learn
+  title: Learn
+  url: https://tedt.org/learn/
+  description: Explore ideas through interactive lessons, reading paths, and talks.
+  image: /img/landing/swiss-v1/learn-hero.webp
+  image_alt: steps rise through a rectangular frame, crossed by a circular arc and grid lines.
+  image_focus: 50% 50%
+  children:
+  - title: Inside AI
+    url: https://tedt.org/learn/#inside-ai
+  - title: Game Theory Playground
+    url: https://tedt.org/learn/#game-theory
+  - title: Math in Plain English
+    url: https://tedt.org/learn/#math
+  - title: Talks & Presentations
+    url: https://tedt.org/learn/#presentations
+  - title: Assessments
+    url: https://tedt.org/assessments/
+  image_width: 2172
+  image_height: 724
+  image_dark: /img/landing/swiss-v1/learn-hero-dark.webp
+- key: about
+  title: About
+  url: https://tedt.org/about-ted/
+  description: Who I am, the work I do, and how to get in touch.
+  image: /img/landing/swiss-v1/about-hero.webp
+  image_alt: An architectural plan, blank notebook, and small die share a workbench beneath a window.
+  image_width: 2172
+  image_height: 724
+  image_focus: 50% 50%
+  categories:
+  - home
+  - draft
+  children:
+  - title: About Ted
+    url: https://tedt.org/profile/
+  - title: Career & Resume
+    url: https://tedt.org/career/
+  - title: Selected Work & Projects
+    url: https://tedt.org/about-ted/#projects
+  - title: Contact
+    url: https://tedt.org/about-ted/#contact
+  - title: Editorial Standards
+    url: https://tedt.org/about-ted/#editorial-standards
+  - title: Members
+    url: https://member.tedt.org/
+  image_dark: /img/landing/swiss-v1/about-hero-dark.webp

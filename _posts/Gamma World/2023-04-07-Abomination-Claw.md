@@ -160,4 +160,6 @@ categories:
 date: 2023-04-07 08:37:35
 image_width: 1024
 image_height: 640
+mastodon-post-id: "117523381277557031"
+mastodon-post-url: "https://tschopp.net/@Ted/117523381277557031"
 ---

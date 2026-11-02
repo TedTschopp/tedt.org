@@ -51,7 +51,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017523681590098'
+mastodon-post-id: "117513199171796596"
+mastodon-post-url: "https://tschopp.net/@Ted/117513199171796596"
 ---
 A while back someone asked me what I think Google should buy next.&#160; I was reminded of the conversation today by a co-worker so I dug up my response.&#160; The post still makes a whole lot of sense even if it’s over two years old.
 

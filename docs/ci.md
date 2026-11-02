@@ -189,3 +189,12 @@ This keeps failure triage attached to the same workflow that produced the verdic
 ---
 
 Questions or want to reintroduce a piece? Open an issue or ask in chat.
+
+
+### Browser dependency installation
+
+The Linux runner uses Ubuntu's official archive instead of the intermittently
+stalling Azure Ubuntu mirror for Playwright's operating-system dependencies.
+Package signature verification and Chromium, Firefox and WebKit testing remain
+unchanged. The install step has a six-minute limit so a broken mirror cannot
+consume the full site-build timeout.

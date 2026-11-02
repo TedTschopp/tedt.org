@@ -53,7 +53,8 @@ mathjax: null
 order: null
 image_width: 2358
 image_height: 1268
-mastodon-post-id: '115017525610399181'
+mastodon-post-id: "117514094572694732"
+mastodon-post-url: "https://tschopp.net/@Ted/117514094572694732"
 ---
 I recently heard [Alex Wright](http://www.alexwright.org/) speak at the [Long Now Foundation](http://www.longnow.org/)&#160;via their [podcast](http://www.longnow.org/projects/seminars/SALT.xml).
 

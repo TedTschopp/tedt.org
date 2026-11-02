@@ -52,7 +52,8 @@ monster-or-magical-or-religious-ideas: null
 year-the-event-took-place: null
 mathjax: null
 order: null
-mastodon-post-id: '115017522699802057'
+mastodon-post-id: "117512556451346741"
+mastodon-post-url: "https://tschopp.net/@Ted/117512556451346741"
 ---
 A couple weeks ago, I mentioned the following letter of Martin Luther to a friend of mine after drinking some beer that disagreed with us.  Last night we went out for some more beer, and he brought the letter up again.  I told him to check my blog and I would post the text of the letter.  I figured I might as well, cross post this to several of my blogs.
 
