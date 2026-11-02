@@ -9,7 +9,7 @@ source-url: ""
 call-to-action: "Discuss this on Mastodon"
 
 date: 2026-11-01 09:00:00 -0800
-update: 2026-11-02 10:49:33 -0800
+update: 2026-11-02 11:05:43 -0800
 
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -237,7 +237,7 @@ These tests also need to continue as the product changes. A different model, rev
     #article-evaluation-lab-mobile-note { display: block; }
   }
 </style>
-<section id="evaluation-lab-exercise" class="my-4" aria-labelledby="evaluation-lab-heading">
+<section markdown="0" id="evaluation-lab-exercise" class="my-4" aria-labelledby="evaluation-lab-heading">
   <h2 id="evaluation-lab-heading">Try it: follow an answer from evidence to release</h2>
   <p>The <a href="https://tedt.org/ai-evaluation-lab/">Founding Documents AI Evaluation Lab</a> puts these ideas into practice with public U.S. documents. Its first exercise confuses amendments proposed in 1789 with those ratified in 1791. Follow the retrieved passage, compare the graders, and decide whether the answer meets the requirement for release.</p>
   <details id="evaluation-lab-demo" class="border rounded-3">
