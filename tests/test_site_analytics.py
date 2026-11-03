@@ -51,6 +51,11 @@ class AnalyticsBuildTests(unittest.TestCase):
         self.assertTrue(analytics.check('<html></html>'))
         self.assertTrue(analytics.check(source.replace('</head>', analytics.EMBED.search(source).group() + '</head>')))
         self.assertTrue(analytics.check(source.replace('</head>', '<script src="https://www.clarity.ms/tag/other"></script></head>')))
+        for snippet in ['<script src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon=\'{"token":"OLD"}\'></script>', '<script>window.__cfBeacon={token:"OLD"};</script>']:
+            competing = source.replace('</head>', snippet + '</head>')
+            self.assertIn('competing collector initialization', analytics.check(competing))
+            self.assertEqual([], analytics.check(analytics.transform(competing)))
+            self.assertNotIn('OLD', analytics.transform(competing))
 
     def test_legacy_html_extensions_are_included(self):
         with tempfile.TemporaryDirectory() as directory:
