@@ -83,8 +83,7 @@ test('independent file pages never initialize production collectors', async () =
   try {
     const file = join(folder, 'index.html');
     await writeFile(file, `<html><head><script defer src="${runtimeURL}"></script></head><body>Offline edition</body></html>`);
-    await page.route('**/*', async route => {
-      if (route.request().url() === pathToFileURL(file).href) return route.continue();
+    await page.route(/^https?:\/\//, async route => {
       if (route.request().url() === runtimeURL) return route.fulfill({ body: runtime, contentType: 'text/javascript' });
       requests.push(route.request().url()); return route.abort();
     });
