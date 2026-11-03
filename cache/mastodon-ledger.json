@@ -6660,12 +6660,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "1aa92dc895155ba7e0e9afb18a1ba1a13952f34ef3fae9d56326f806b675b2e2",
-        "kind": "archive",
-        "started_at": "2026-11-03T04:03:10Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-03T04:03:28.789Z",
+          "id": "117550521305580055",
+          "url": "https://tschopp.net/@Ted/117550521305580055"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6673,8 +6674,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bounder.md"
       ],
-      "state": "uncertain",
-      "title": "Bounder"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-03T04:03:28.789Z",
+        "id": "117550521305580055",
+        "url": "https://tschopp.net/@Ted/117550521305580055"
+      },
+      "title": "Bounder",
+      "verified_at": "2026-11-03T04:03:10Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bradfromlanta.html": {
       "aliases": [
@@ -27552,7 +27559,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-03T02:55:09.983Z",
+  "last_publication_at": "2026-11-03T04:03:28.789Z",
   "last_reconciliation_at": "2026-11-03T04:03:10Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 215,
@@ -28756,6 +28763,14 @@
       "kind": "archive",
       "operation": "46941fe077aff6c9a38856d6ad5878421c499fd80747b37dae495ea3926167e1",
       "url": "https://tschopp.net/@Ted/117550252686248192"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bounder.html",
+      "created_at": "2026-11-03T04:03:28.789Z",
+      "id": "117550521305580055",
+      "kind": "archive",
+      "operation": "1aa92dc895155ba7e0e9afb18a1ba1a13952f34ef3fae9d56326f806b675b2e2",
+      "url": "https://tschopp.net/@Ted/117550521305580055"
     }
   ],
   "run_count": 544,
