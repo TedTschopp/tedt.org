@@ -316,6 +316,7 @@ Thumbs.db
 _site/
 .sass-cache/
 .jekyll-cache/
+/cache/webmention-incoming.json
 .jekyll-metadata
 Logs/
 .playwright-mcp/
