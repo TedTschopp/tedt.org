@@ -6623,12 +6623,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "46941fe077aff6c9a38856d6ad5878421c499fd80747b37dae495ea3926167e1",
-        "kind": "archive",
-        "started_at": "2026-11-03T02:54:53Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-03T02:55:09.983Z",
+          "id": "117550252686248192",
+          "url": "https://tschopp.net/@Ted/117550252686248192"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6636,8 +6637,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bot-General-Household-Robotoid.md"
       ],
-      "state": "uncertain",
-      "title": "Bot «General Household Robotoid»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-03T02:55:09.983Z",
+        "id": "117550252686248192",
+        "url": "https://tschopp.net/@Ted/117550252686248192"
+      },
+      "title": "Bot «General Household Robotoid»",
+      "verified_at": "2026-11-03T02:54:53Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bounder.html": {
       "aliases": [
@@ -27538,7 +27545,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-02T22:58:11.540Z",
+  "last_publication_at": "2026-11-03T02:55:09.983Z",
   "last_reconciliation_at": "2026-11-03T02:54:53Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 214,
@@ -28734,6 +28741,14 @@
       "kind": "archive",
       "operation": "7545f70bb2353b66c317e1e630f1792747200500b2b51ecf87f283cce6a05ce3",
       "url": "https://tschopp.net/@Ted/117549320866340341"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bot-General-Household-Robotoid.html",
+      "created_at": "2026-11-03T02:55:09.983Z",
+      "id": "117550252686248192",
+      "kind": "archive",
+      "operation": "46941fe077aff6c9a38856d6ad5878421c499fd80747b37dae495ea3926167e1",
+      "url": "https://tschopp.net/@Ted/117550252686248192"
     }
   ],
   "run_count": 542,
