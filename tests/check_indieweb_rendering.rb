@@ -49,6 +49,7 @@ errors << 'Missing chronological h-feed' unless feed.at_css('.h-feed .h-entry')
 feed_dates = feed.css('.h-feed .h-entry time.dt-published').map { |t| Time.iso8601(t['datetime']) }
 errors << 'h-feed is not in web publication order' unless feed_dates.each_cons(2).all? { |a, b| a >= b }
 errors << 'Delivery state leaked into published output' if File.exist?(File.join(site, 'cache/webmention-outbox.json'))
+errors << 'Incoming cooldown leaked into published output' if File.exist?(File.join(site, 'cache/webmention-incoming.json'))
 
 cache = IndieWeb.read_json(File.expand_path('../_data/webmentions.json', __dir__))
 cache.fetch('by_target').each do |canonical, groups|

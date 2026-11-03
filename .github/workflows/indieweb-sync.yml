@@ -50,17 +50,26 @@ jobs:
           MODE: ${{ inputs.mode }}
           MENTION_ID: ${{ inputs.mention_id }}
         run: bundle exec ruby _code/indieweb.rb "$MODE" --id "$MENTION_ID"
+      - name: Restore incoming rate-limit cooldown
+        uses: actions/cache/restore@v4
+        with:
+          path: cache/webmention-incoming.json
+          key: ${{ runner.os }}-webmention-incoming-v1-${{ github.run_id }}-${{ github.run_attempt }}
+          restore-keys: ${{ runner.os }}-webmention-incoming-v1-
       - name: Refresh complete public snapshot
+        id: refresh
         env:
           WEBMENTION_IO_TOKEN: ${{ secrets.WEBMENTION_IO_TOKEN }}
         run: bundle exec ruby _code/indieweb.rb sync
       - name: Check updated rendering
+        if: steps.refresh.outputs.updated == 'true'
         env:
           JEKYLL_ENV: production
         run: |
           bundle exec jekyll build --quiet
           bundle exec ruby tests/check_indieweb_rendering.rb _site
       - name: Save approved metadata and request deployment
+        if: steps.refresh.outputs.updated == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -77,3 +86,9 @@ jobs:
           git push origin HEAD:main
           # GITHUB_TOKEN pushes do not trigger another workflow automatically.
           gh workflow run deploy.yml --ref main --field indieweb_cache_only=true
+      - name: Preserve incoming rate-limit cooldown
+        if: always() && hashFiles('cache/webmention-incoming.json') != ''
+        uses: actions/cache/save@v4
+        with:
+          path: cache/webmention-incoming.json
+          key: ${{ runner.os }}-webmention-incoming-v1-${{ github.run_id }}-${{ github.run_attempt }}

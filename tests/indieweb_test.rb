@@ -134,6 +134,92 @@ module IndieWebTests
     end
   end
 
+  def test_incoming_rate_limit_persists_retry_after_and_keeps_the_public_cache
+    Dir.mktmpdir do |dir|
+      output, cooldown = File.join(dir, 'mentions.json'), File.join(dir, 'cooldown.json')
+      File.write(output, 'previous complete cache')
+      now = Time.utc(2026, 11, 2, 20)
+      http = FakeHTTP.new { |_, _| response('{}', { 'retry-after' => ['120'] }, 429) }
+      mentions = IndieWeb::Mentions.new(manifest, {}, http: http)
+      refresh = IndieWeb::MentionRefresh.new(mentions, output: output, cooldown: cooldown, now: now)
+      equal(:deferred, refresh.run)
+      equal('previous complete cache', File.read(output))
+      state = IndieWeb.read_json(cooldown)
+      equal((now + 120).iso8601, state['next_attempt_at'])
+      equal(1, http.requests.length)
+      equal(:deferred, refresh.run)
+      equal(1, http.requests.length)
+      assert(!File.read(cooldown).include?('Authorization'))
+    end
+  end
+
+  def test_rate_limit_on_a_later_page_cannot_publish_partial_results
+    Dir.mktmpdir do |dir|
+      output = File.join(dir, 'mentions.json')
+      File.write(output, 'previous complete cache')
+      http = FakeHTTP.new do |url, _|
+        page = URI.decode_www_form(URI(url).query).to_h.fetch('page')
+        page == '0' ? response(JSON.generate('children' => [mention], 'paging' => { 'total-pages' => 2 })) : response('{}', {}, 429)
+      end
+      refresh = IndieWeb::MentionRefresh.new(IndieWeb::Mentions.new(manifest, {}, http: http), output: output, cooldown: File.join(dir, 'cooldown.json'))
+      equal(:deferred, refresh.run)
+      equal(2, http.requests.length)
+      equal('previous complete cache', File.read(output))
+    end
+  end
+
+  def test_incoming_retry_after_dates_and_exponential_fallback_are_bounded
+    now = Time.utc(2026, 11, 1, 9)
+    refresh = IndieWeb::MentionRefresh.new(nil, output: '', cooldown: '', now: now)
+    equal(900, refresh.retry_delay((now + 900).httpdate, 1))
+    equal(300, refresh.retry_delay('not a date', 1))
+    equal(600, refresh.retry_delay(nil, 2))
+    equal(3600, refresh.retry_delay('', 6))
+    equal(300, refresh.retry_delay((now - 10).httpdate, 1))
+    equal(60, refresh.retry_delay('0', 1))
+    equal(86_400, refresh.retry_delay('9999999999999999999999', 1))
+  end
+
+  def test_complete_incoming_refresh_resets_cooldown_without_using_content_change_time
+    Dir.mktmpdir do |dir|
+      output, cooldown = File.join(dir, 'mentions.json'), File.join(dir, 'cooldown.json')
+      now = Time.utc(2026, 11, 2, 20)
+      IndieWeb.write_json(cooldown, { 'version' => 1, 'attempts' => 4, 'next_attempt_at' => (now - 1).iso8601 })
+      http = FakeHTTP.new { |_, _| response(JSON.generate('children' => [])) }
+      refresh = IndieWeb::MentionRefresh.new(IndieWeb::Mentions.new(manifest, {}, http: http), output: output, cooldown: cooldown, now: now)
+      equal(:updated, refresh.run)
+      equal({ 'version' => 1, 'attempts' => 0 }, IndieWeb.read_json(cooldown))
+      equal({}, IndieWeb.read_json(output)['by_target'])
+    end
+  end
+
+  def test_other_incoming_failures_still_fail_and_leave_cache_untouched
+    Dir.mktmpdir do |dir|
+      output, cooldown = File.join(dir, 'mentions.json'), File.join(dir, 'cooldown.json')
+      File.write(output, 'previous complete cache')
+      http = FakeHTTP.new { |_, _| response('{}', {}, 503) }
+      refresh = IndieWeb::MentionRefresh.new(IndieWeb::Mentions.new(manifest, {}, http: http), output: output, cooldown: cooldown)
+      raises { refresh.run }
+      equal('previous complete cache', File.read(output))
+      assert(!File.exist?(cooldown))
+      File.write(cooldown, 'null')
+      raises { refresh.run }
+      equal(1, http.requests.length)
+    end
+  end
+
+  def test_offline_incoming_input_does_not_read_or_change_cooldown
+    Dir.mktmpdir do |dir|
+      output, cooldown = File.join(dir, 'mentions.json'), File.join(dir, 'cooldown.json')
+      File.write(cooldown, 'invalid online state')
+      http = FakeHTTP.new { raise 'No network expected' }
+      refresh = IndieWeb::MentionRefresh.new(IndieWeb::Mentions.new(manifest, {}, http: http), output: output, cooldown: cooldown)
+      equal(:updated, refresh.run(rows: []))
+      equal('invalid online state', File.read(cooldown))
+      equal([], http.requests)
+    end
+  end
+
   def test_endpoint_header_precedence_and_relative_resolution
     http = FakeHTTP.new { |_, _| response('<link rel="webmention" href="/wrong">', { 'link' => ['</receiver?mode=webmention>; rel="alternate webmention"'], 'content-type' => ['text/html'] }) }
     equal('https://example.org/receiver?mode=webmention', IndieWeb::Sender.new(http: http).endpoint('https://example.org/posts/one'))
