@@ -6734,12 +6734,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "1575f1b1953d7f8820840d2589cf8d27571b9cc5ac3796f3bc2bad6211e814e7",
-        "kind": "archive",
-        "started_at": "2026-11-03T18:39:58Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-03T18:40:18.472Z",
+          "id": "117553969133652221",
+          "url": "https://tschopp.net/@Ted/117553969133652221"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6747,8 +6748,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Brain-Mite.md"
       ],
-      "state": "uncertain",
-      "title": "Brain Mite"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-03T18:40:18.472Z",
+        "id": "117553969133652221",
+        "url": "https://tschopp.net/@Ted/117553969133652221"
+      },
+      "title": "Brain Mite",
+      "verified_at": "2026-11-03T18:39:58Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Braintaker.html": {
       "aliases": [
@@ -27580,7 +27587,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-03T11:34:44.607Z",
+  "last_publication_at": "2026-11-03T18:40:18.472Z",
   "last_reconciliation_at": "2026-11-03T18:39:58Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 217,
@@ -28800,6 +28807,14 @@
       "kind": "archive",
       "operation": "cfe48ffc7840c885025d41ab826e3b195c412d7ddfc666f996a3f94ac02fc922",
       "url": "https://tschopp.net/@Ted/117552295746468256"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Brain-Mite.html",
+      "created_at": "2026-11-03T18:40:18.472Z",
+      "id": "117553969133652221",
+      "kind": "archive",
+      "operation": "1575f1b1953d7f8820840d2589cf8d27571b9cc5ac3796f3bc2bad6211e814e7",
+      "url": "https://tschopp.net/@Ted/117553969133652221"
     }
   ],
   "run_count": 548,
