@@ -6697,12 +6697,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "cfe48ffc7840c885025d41ab826e3b195c412d7ddfc666f996a3f94ac02fc922",
-        "kind": "archive",
-        "started_at": "2026-11-03T11:34:26Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-03T11:34:44.607Z",
+          "id": "117552295746468256",
+          "url": "https://tschopp.net/@Ted/117552295746468256"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6710,8 +6711,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bradfromlanta.md"
       ],
-      "state": "uncertain",
-      "title": "Bradfromlanta"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-03T11:34:44.607Z",
+        "id": "117552295746468256",
+        "url": "https://tschopp.net/@Ted/117552295746468256"
+      },
+      "title": "Bradfromlanta",
+      "verified_at": "2026-11-03T11:34:26Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Brain-Mite.html": {
       "aliases": [
@@ -27566,7 +27573,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-03T04:03:28.789Z",
+  "last_publication_at": "2026-11-03T11:34:44.607Z",
   "last_reconciliation_at": "2026-11-03T11:34:26Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 216,
@@ -28778,6 +28785,14 @@
       "kind": "archive",
       "operation": "1aa92dc895155ba7e0e9afb18a1ba1a13952f34ef3fae9d56326f806b675b2e2",
       "url": "https://tschopp.net/@Ted/117550521305580055"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bradfromlanta.html",
+      "created_at": "2026-11-03T11:34:44.607Z",
+      "id": "117552295746468256",
+      "kind": "archive",
+      "operation": "cfe48ffc7840c885025d41ab826e3b195c412d7ddfc666f996a3f94ac02fc922",
+      "url": "https://tschopp.net/@Ted/117552295746468256"
     }
   ],
   "run_count": 547,
