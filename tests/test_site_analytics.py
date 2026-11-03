@@ -25,6 +25,8 @@ class AnalyticsBuildTests(unittest.TestCase):
         source = '<html><head></head><body><div data-clarity-unmask="true">Private content</div></body></html>'
         result = analytics.transform(source, True)
         self.assertIn('<html data-clarity-mask="true">', result)
+        self.assertIn('<body data-clarity-mask="true">', result)
+        self.assertIn('missing initial body mask', analytics.check(result.replace('<body data-clarity-mask="true">', '<body>'), True))
         self.assertNotIn('data-clarity-unmask', result)
         self.assertEqual([], analytics.check(result, True))
         self.assertEqual(result, analytics.transform(result, True))
@@ -35,6 +37,7 @@ class AnalyticsBuildTests(unittest.TestCase):
         self.assertIn("form-action 'self'", result)
         self.assertIn("frame-ancestors 'none'", result)
         self.assertIn('https://cloudflareinsights.com', result)
+        self.assertIn('https://www.googletagmanager.com', result.split('img-src', 1)[1])
         self.assertNotIn("default-src *", result)
         self.assertEqual(result, analytics.csp(result))
 
