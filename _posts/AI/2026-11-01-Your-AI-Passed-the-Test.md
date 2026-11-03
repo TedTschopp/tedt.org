@@ -9,7 +9,7 @@ source-url: ""
 call-to-action: "Discuss this on Mastodon"
 
 date: 2026-11-01 09:00:00 -0800
-update: 2026-11-01 09:00:00 -0800
+update: 2026-11-02 13:20:01 -0800
 
 author:
   avatar: https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=g
@@ -72,6 +72,8 @@ image_height: 941
 mathjax: false
 mermaid: false
 no_toc: true
+mastodon-post-id: "117545057341789176"
+mastodon-post-url: "https://tschopp.net/@Ted/117545057341789176"
 ---
 
 **Your AI Passed the Test. Did It Answer the Business Question?**
@@ -227,6 +229,84 @@ The team can track consequential errors, unnecessary questions, unresolved reque
 A passing evaluation remains bounded evidence. It shows how the system performed on selected cases under particular grading rules. It does not guarantee every future response. A live check of an individual answer is a separate control, whose effectiveness can itself be evaluated.
 
 These tests also need to continue as the product changes. A different model, revised instruction, new search process or renamed data field can alter behavior. As [*Dev, Test, and Prod Still Matter: What Gets Deployed Has Changed*](https://tedt.org/Dev-Test-and-Prod-Still-Matter-What-Gets-Deployed-Has-Changed/) explains, assurance needs to follow the system being deployed.
+
+<style>
+  #evaluation-lab-exercise .btn-outline-primary {
+    --bs-btn-color: var(--bs-link-color);
+    --bs-btn-border-color: var(--bs-link-color);
+    --bs-btn-hover-color: var(--bs-body-bg);
+    --bs-btn-hover-bg: var(--bs-link-color);
+    --bs-btn-hover-border-color: var(--bs-link-color);
+    --bs-btn-active-color: var(--bs-body-bg);
+    --bs-btn-active-bg: var(--bs-link-color);
+    --bs-btn-active-border-color: var(--bs-link-color);
+    --bs-btn-focus-shadow-rgb: var(--bs-link-color-rgb);
+    color: var(--bs-btn-color);
+  }
+  #evaluation-lab-exercise .btn-outline-primary:hover,
+  #evaluation-lab-exercise .btn-outline-primary:active,
+  #evaluation-lab-exercise .btn-outline-primary:focus-visible {
+    color: var(--bs-btn-hover-color);
+  }
+  #evaluation-lab-exercise .btn-outline-primary:focus-visible {
+    outline: 2px solid var(--bs-link-color);
+    outline-offset: 3px;
+    box-shadow: none;
+  }
+  #article-evaluation-lab-mobile-note { display: none; }
+  @media (max-width: 767.98px) {
+    #article-evaluation-lab-frame { display: none !important; }
+    #article-evaluation-lab-mobile-note { display: block; }
+  }
+</style>
+<section markdown="0" id="evaluation-lab-exercise" class="my-4" aria-labelledby="evaluation-lab-heading">
+  <h2 id="evaluation-lab-heading">Try it: follow an answer from evidence to release</h2>
+  <p>The <a href="https://tedt.org/ai-evaluation-lab/">Founding Documents AI Evaluation Lab</a> puts these ideas into practice with public U.S. documents. Its first exercise confuses amendments proposed in 1789 with those ratified in 1791. Follow the retrieved passage, compare the graders, and decide whether the answer meets the requirement for release.</p>
+  <details id="evaluation-lab-demo" class="border rounded-3">
+    <summary class="p-3 bg-body-tertiary">
+      <span class="fw-semibold">Interactive lab: follow the evidence and test the release decision</span>
+      <span class="d-block small fw-normal mt-1">Six short lessons · about 20 minutes · no API key needed for replay</span>
+    </summary>
+    <div class="p-3 border-top">
+      <p>Start in <strong>Replay</strong> with <strong>Candidate</strong> selected. This version passes more cases overall but fails one requirement that blocks release.</p>
+      <ol>
+        <li>Open the action trace and follow the citation to the passage the agent retrieved.</li>
+        <li>Compare the weak checker with the task-specific grades. Notice which question each one answers.</li>
+        <li>Choose <strong>Decide what can ship</strong>, then switch the agent version to <strong>Revised</strong>. Compare the results before changing the release policy.</li>
+      </ol>
+      <p>Replay uses authored teaching responses scored with Microsoft Agent Framework. Optional live runs use your own model connection. The lab also includes Python and React downloads for your own experiments.</p>
+      <p id="article-evaluation-lab-mobile-note" class="small">On a small screen, use the link below to give the lab's evidence and controls more room.</p>
+      <p><a href="https://tedt.org/ai-evaluation-lab/" class="btn btn-outline-primary" target="_blank" rel="noopener">Open the lab in a new tab</a></p>
+      <p class="small">Select <strong>Interactive lab</strong> above again to collapse this exercise and return to the article.</p>
+      <iframe id="article-evaluation-lab-frame" hidden data-src="https://evals.tedt.org/?embed=1&amp;parent_origin=https%3A%2F%2Ftedt.org" title="AI evaluation lab: inspect evidence, compare graders, and make a release decision" width="100%" height="1100" loading="lazy" style="display:block;width:100%;max-width:100%;border:1px solid var(--bs-border-color);border-radius:.375rem;"></iframe>
+      <noscript><p>The interactive lab requires JavaScript. You can also <a href="https://github.com/TedTschopp/Evaluation-Reference/blob/main/docs/instructor-guide.md">read the instructor guide</a>.</p></noscript>
+    </div>
+  </details>
+</section>
+<script>
+(function () {
+  const exercise = document.getElementById("evaluation-lab-demo");
+  const frame = document.getElementById("article-evaluation-lab-frame");
+  if (!exercise || !frame) return;
+
+  const narrowScreen = window.matchMedia("(max-width: 767.98px)");
+  function loadLab() {
+    if (!exercise.open || narrowScreen.matches) return;
+    if (!frame.getAttribute("src")) frame.setAttribute("src", frame.dataset.src);
+    frame.hidden = false;
+  }
+  exercise.addEventListener("toggle", loadLab);
+  narrowScreen.addEventListener("change", loadLab);
+
+  window.addEventListener("message", function (event) {
+    if (event.origin !== "https://evals.tedt.org" || event.source !== frame.contentWindow) return;
+    if (event.data?.type !== "eval-lab-height" || !exercise.open) return;
+    const height = Number(event.data.height);
+    if (Number.isFinite(height)) frame.style.height = Math.max(700, Math.min(5000, height)) + "px";
+  });
+})();
+</script>
+
 
 A useful starting point is one answer the product currently passes. Change the scope of its evidence without changing the number. Remove a fact required for its conclusion. Then restore complete information.
 
