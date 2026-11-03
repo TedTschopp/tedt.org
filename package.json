@@ -14,7 +14,8 @@
     "lint:css:overrides": "stylelint \"_sass/_overrides-*.scss\" \"css/*-overrides.css\"",
     "lint:js": "node scripts/check-js-syntax.mjs",
     "lint:md": "markdownlint-cli2 \"**/*.{md,markdown}\"",
-    "test:global-header": "node scripts/run-global-header-tests.mjs"
+    "test:global-header": "node scripts/run-global-header-tests.mjs",
+    "test:analytics": "python3 -m unittest discover -s tests -p test_site_analytics.py && node --test tests/analytics/*.test.mjs"
   },
   "devDependencies": {
     "@axe-core/playwright": "^4.9.1",

@@ -6,6 +6,11 @@ import AxeBuilder from '@axe-core/playwright';
 const build = process.env.HEADER_TEST_BUILD || path.resolve('_site');
 const assets = path.join(build, 'assets/global-header/v1');
 const labels = ['Essays', 'Stories & Folklore', 'Games & Worlds', 'Tools', 'Learn', 'About'];
+// Real-looking test origins must never submit production analytics.
+test.beforeEach(async ({ context }) => {
+  await context.route(/googletagmanager\.com|google-analytics\.com|clarity\.ms|cloudflareinsights\.com|\/cdn-cgi\/rum/, route => route.abort());
+  await context.route('https://tedt.org/assets/analytics/v1/analytics.js', route => route.fulfill({ contentType: 'text/javascript', body: '' }));
+});
 async function sharedAssets(page, transform = value => value) {
   await page.route('https://tedt.org/assets/global-header/v1/**', async route => {
     const file = new URL(route.request().url()).pathname.split('/').pop();

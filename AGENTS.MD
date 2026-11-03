@@ -95,3 +95,7 @@ When proposing major shifts (e.g., adopting a collection, changing caching strat
 ### Shared Global Header
 
 Maintain navigation in `_data/site_navigation.yml` and participating hosts in `_data/header_sites.yml`. The runtime asset under `assets/global-header/v1/` is shared across thirteen sites. Keep v1 embeds backward compatible; do not copy the implementation into consumer sites. Section landing pages use `layout: global-section` and `section: essays|stories|games|learn|about`. Read `docs/global-header.md` before changing the asset, theme controller, fallback, or CSP. Run `npm run test:global-header` against the Jekyll build.
+
+### Shared Analytics
+
+Use the separate `assets/analytics/v1/analytics.js` runtime, configured by `site.analytics`, for GA4, Clarity, and Cloudflare. Keep advertising features disabled. Use masked mode for member/tool workspaces. Run `make build` to finalize and audit all HTML and `npm run test:analytics` for the collector contract. See `docs/analytics.md` and ADR 0019. The shared header remains analytics-free.

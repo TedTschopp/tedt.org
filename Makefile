@@ -24,6 +24,8 @@ mastodon_check:
 
 build:
 	bundle exec jekyll build --quiet
+	python3 scripts/site_analytics.py _site
+	python3 scripts/site_analytics.py _site --check
 
 normalize:
 	ruby _code/normalize_dates.rb

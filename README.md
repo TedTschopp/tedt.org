@@ -209,14 +209,15 @@ _includes/
 
 ### Analytics Baseline
 
-The main site now uses one baseline analytics path configured in `_config.yml` under `analytics`.
+The main site and active tedt.org sub-sites use the shared v1 runtime configured
+under `analytics` in `_config.yml`: GA4 pageviews, outbound links, downloads, and
+search; Microsoft Clarity behavioral analytics; and Cloudflare Web Analytics.
+Advertising features remain disabled. Member and tool workspaces use content
+masking and omit private values from custom GA4 events. Clarity can still receive
+page URLs and navigation metadata.
 
-- Provider: GA4
-- Scope: pageviews plus outbound-link, file-download, and search events
-- Explicitly excluded: session replay and ad-personalization features
-- Operational rule: if your deployment requires prior consent for analytics, set `site.analytics.enabled` to `false` until a consent flow exists
-
-The runtime wiring lives in `_includes/analytics/google-analytics.html` and `js/main-site-analytics.js`.
+Use `make build` to finalize and audit all HTML, including standalone pages.
+See [the integration contract](docs/analytics.md) and [ADR 0019](docs/adr/0019-share-visitor-analytics-across-subdomains.md).
 
 ### Naming Conventions
 

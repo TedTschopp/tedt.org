@@ -176,6 +176,9 @@ analytics:
   clarity:
     enabled: true
     project_id: seaw3hrzdz
+  cloudflare:
+    enabled: true
+    token: fca55826038e4e40aecb9e356637e391
   privacy:
     session_replay: true
     advertising_features: false

@@ -40,6 +40,7 @@ This directory contains Architecture Decision Records (ADRs) capturing significa
 | 0017 | [Unify Mastodon Publication and Recovery](0017-unify-mastodon-publication-and-recovery.md) | Accepted | 2026-10-25 | One durable publisher, complete archive recovery, canonical prompt forwarding, and accessible public discussions. |
 
 | 0018 | [Share the Global Header Across Subdomains](0018-share-global-header-across-subdomains.md) | Accepted | 2026-10-29 | Runtime navigation, isolated styling, and shared appearance across thirteen sites. |
+| 0019 | [Shared visitor analytics](0019-share-visitor-analytics-across-subdomains.md) | Accepted | 2026-11-02 | GA4, Clarity, and Cloudflare across active subdomains. |
 
 ## Conventions
 

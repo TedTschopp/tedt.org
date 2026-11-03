@@ -229,6 +229,9 @@ jobs:
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
 
+      - name: Shared analytics browser contract
+        run: npm run test:analytics
+
       - name: Shared header browser contract
         run: npm run test:global-header
 
@@ -400,6 +403,11 @@ jobs:
         run: |
           du -sh _site || true
           find _site -maxdepth 2 -type d -print | head -n 40
+      - name: Finalize and verify analytics on every rendered page
+        run: |
+          python3 scripts/site_analytics.py _site
+          python3 scripts/site_analytics.py _site --check
+
       - name: Upload artifact
         if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v5
