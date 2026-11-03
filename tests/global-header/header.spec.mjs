@@ -68,8 +68,21 @@ test('fallback works when JavaScript or the shadow stylesheet cannot load', asyn
 
 test('appearance follows visitors between real subdomain origins and rechecks on focus', async ({ context }) => {
   const source = await readFile(path.join(build, 'essays/index.html'), 'utf8');
+  const header = source.match(/<tedt-global-header\b[\s\S]*?<\/tedt-global-header>/)?.[0];
+  expect(header).toBeTruthy();
+  // The consumer fixture needs the shared header, while the Essays document's
+  // relative styles and images belong to tedt.org, not these consumer hosts.
+  const consumer = `<!doctype html><html lang="en"><head><meta charset="utf-8">
+    <link rel="stylesheet" href="https://tedt.org/assets/global-header/v1/embed.css">
+    <script defer src="https://tedt.org/assets/global-header/v1/header.js"></script>
+    </head><body>${header}<main>Consumer appearance fixture</main></body></html>`;
+  const unexpectedConsumerRequests = [];
+  await context.route(/^https:\/\/(?:busy|tools)\.tedt\.org\//, route => {
+    unexpectedConsumerRequests.push(route.request().url());
+    return route.abort();
+  });
   for (const host of ['busy.tedt.org', 'tools.tedt.org']) {
-    await context.route(`https://${host}/`, route => route.fulfill({ body: source, contentType: 'text/html' }));
+    await context.route(`https://${host}/`, route => route.fulfill({ body: consumer, contentType: 'text/html' }));
   }
   const first = await context.newPage(); await sharedAssets(first); await first.goto('https://busy.tedt.org/'); await ready(first);
   await first.locator('tedt-global-header').getByRole('button', { name: 'Dark', exact: true }).click();
@@ -82,6 +95,7 @@ test('appearance follows visitors between real subdomain origins and rechecks on
   await expect(first.locator('html')).toHaveAttribute('data-theme', 'light');
   await second.locator('tedt-global-header').getByRole('button', { name: 'System', exact: true }).click();
   await second.emulateMedia({ colorScheme: 'dark' }); await expect(second.locator('html')).toHaveAttribute('data-theme', 'dark');
+  expect(unexpectedConsumerRequests).toEqual([]);
 });
 
 test('central updates reach unchanged consumer HTML and iframe headers are suppressed', async ({ page }) => {
