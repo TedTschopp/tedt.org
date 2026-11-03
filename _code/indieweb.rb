@@ -17,6 +17,14 @@ require 'nokogiri'
 module IndieWeb
   class Error < StandardError; end
 
+  class RateLimited < Error
+    attr_reader :retry_after
+    def initialize(retry_after)
+      @retry_after = retry_after
+      super('Webmention API returned 429; cache retained')
+    end
+  end
+
   def self.url(value, base = nil, fragment: false)
     text = value.to_s
     raise Error, 'Invalid URL' if text.empty? || text.match?(/[\x00-\x20\x7f<>"\\]/)
@@ -195,6 +203,7 @@ module IndieWeb
       loop do
         query = URI.encode_www_form(parameters + [['per-page', '100'], ['page', page.to_s]])
         response = @http.request("https://webmention.io/api/mentions.jf2?#{query}", headers: headers.merge('Accept' => 'application/json'))
+        raise RateLimited, response.headers.fetch('retry-after', []).first if response.status == 429
         raise Error, "Webmention API returned #{response.status}; cache retained" unless response.status == 200
         data = JSON.parse(response.body)
         raise Error, 'Malformed Webmention API response; cache retained' unless data['children'].is_a?(Array)
@@ -436,15 +445,69 @@ module IndieWeb
     end
   end
 
+  # This state contains only backoff timing. It is excluded from Pages and
+  # cached between incoming-sync runs, separately from outgoing receipts.
+  class MentionRefresh
+    def initialize(mentions, output:, cooldown:, now: Time.now.utc)
+      @mentions, @output, @cooldown, @now = mentions, output, cooldown, now
+    end
+
+    def run(token: nil, rows: nil)
+      state = { 'version' => 1, 'attempts' => 0 }
+      if rows.nil? && File.file?(@cooldown)
+        state = IndieWeb.read_json(@cooldown)
+        unless state.is_a?(Hash) && state['version'] == 1 && state['attempts'].is_a?(Integer) && state['attempts'].between?(0, 6)
+          raise Error, 'Invalid incoming cooldown state; cache retained'
+        end
+        if state['next_attempt_at']
+          begin
+            deadline = Time.iso8601(state['next_attempt_at'])
+          rescue ArgumentError
+            raise Error, 'Invalid incoming cooldown timestamp; cache retained'
+          end
+          raise Error, 'Incoming cooldown exceeds one day; inspect the clock' if deadline > @now + 86_400
+          if deadline > @now
+            puts "Webmention refresh deferred until #{deadline.utc.iso8601}; previous public cache retained."
+            return :deferred
+          end
+        end
+      end
+      cache, pending = @mentions.normalize(rows || @mentions.fetch_all(token: token))
+      IndieWeb.write_json(@output, cache)
+      IndieWeb.write_json(@cooldown, { 'version' => 1, 'attempts' => 0 }) if rows.nil?
+      puts "Approved: #{cache['by_target'].values.sum { |groups| groups.values.sum(&:length) }}; pending IDs: #{pending.join(', ')}"
+      :updated
+    rescue RateLimited => error
+      attempts = [state['attempts'] + 1, 6].min
+      delay = retry_delay(error.retry_after, attempts)
+      deadline = (@now + delay).utc.iso8601
+      IndieWeb.write_json(@cooldown, { 'version' => 1, 'attempts' => attempts,
+                                     'limited_at' => @now.utc.iso8601, 'next_attempt_at' => deadline })
+      warn "Webmention refresh rate limited; deferred until #{deadline}; previous public cache retained."
+      :deferred
+    end
+
+    def retry_delay(header, attempts)
+      fallback = [300 * (2**(attempts - 1)), 3600].min
+      text = header.to_s.strip
+      return fallback if text.empty? || text.bytesize > 128
+      seconds = text.match?(/\A\d+\z/) ? text.to_i : (Time.httpdate(text) - @now).ceil
+      seconds.negative? ? fallback : [[seconds, 60].max, 86_400].min
+    rescue ArgumentError
+      fallback
+    end
+  end
+
   def self.cli(args)
     command = args.shift
-    opts = { site: '_site', policy: '_data/webmention_policy.json', output: '_data/webmentions.json', state: 'cache/webmention-outbox.json' }
+    opts = { site: '_site', policy: '_data/webmention_policy.json', output: '_data/webmentions.json', state: 'cache/webmention-outbox.json', cooldown: 'cache/webmention-incoming.json' }
     OptionParser.new do |p|
       p.on('--site PATH') { |v| opts[:site] = v }
       p.on('--policy PATH') { |v| opts[:policy] = v }
       p.on('--output PATH') { |v| opts[:output] = v }
       p.on('--input PATH') { |v| opts[:input] = v }
       p.on('--state PATH') { |v| opts[:state] = v }
+      p.on('--incoming-state PATH') { |v| opts[:cooldown] = v }
       p.on('--id ID') { |v| opts[:id] = v }
       p.on('--live') { opts[:live] = true }
       p.on('--retry') { opts[:retry] = true }
@@ -461,10 +524,9 @@ module IndieWeb
     when 'sync'
       manifest = Manifest.new(read_json(File.join(opts[:site], 'indieweb-manifest.json')))
       sync = Mentions.new(manifest, read_json(opts[:policy]))
-      rows = opts[:input] ? read_json(opts[:input]) : sync.fetch_all(token: ENV['WEBMENTION_IO_TOKEN'])
-      cache, pending = sync.normalize(rows)
-      write_json(opts[:output], cache)
-      puts "Approved: #{cache['by_target'].values.sum { |groups| groups.values.sum(&:length) }}; pending IDs: #{pending.join(', ')}"
+      refresh = MentionRefresh.new(sync, output: opts[:output], cooldown: opts[:cooldown])
+      result = refresh.run(rows: opts[:input] ? read_json(opts[:input]) : nil, token: ENV['WEBMENTION_IO_TOKEN'])
+      File.open(ENV['GITHUB_OUTPUT'], 'a') { |file| file.puts "updated=#{result == :updated}" } if ENV['GITHUB_OUTPUT']
     when 'send'
       sender = Sender.new
       state = File.file?(opts[:state]) ? read_json(opts[:state]) : {}
