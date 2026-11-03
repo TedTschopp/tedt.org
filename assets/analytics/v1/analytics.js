@@ -82,7 +82,11 @@ layout: null
     var target = e.target instanceof Element ? e.target.closest('a[href]') : null;
     if (!target) return;
     var href = target.getAttribute('href');
-    if (!href || /^(?:#|mailto:|tel:|javascript:|data:|blob:)/i.test(href)) return;
+    if (!href || /^(?:#|mailto:|tel:|javascript:)/i.test(href)) return;
+    if (/^(?:data:|blob:)/i.test(href)) {
+      if (ga.track_file_downloads && target.hasAttribute('download')) event('file_download', { link_domain: host });
+      return;
+    }
     var url;
     try { url = new URL(href, w.location.href); } catch (_) { return; }
     if (blockedPath.test(url.pathname) || Array.from(url.searchParams.keys()).some(function (key) { return sensitiveQuery.test(key); })) return;

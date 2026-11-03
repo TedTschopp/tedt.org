@@ -76,7 +76,7 @@ def main():
     args = parser.parse_args()
     if not args.directory.is_dir(): parser.error('HTML directory does not exist')
     report = dict(directory=str(args.directory), mode=args.mode, eligible=0, changed=0, skipped=0, failures=[])
-    for path in sorted(args.directory.rglob('*.html')):
+    for path in sorted(p for p in args.directory.rglob('*') if p.is_file() and p.suffix.lower() in {'.html', '.htm'}):
         relative = path.relative_to(args.directory)
         if EXCLUDE_DIRS.intersection(relative.parts): continue
         text = path.read_bytes().decode('utf-8')

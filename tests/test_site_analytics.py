@@ -1,5 +1,8 @@
 import importlib.util
 import unittest
+import tempfile
+import subprocess
+import sys
 from pathlib import Path
 
 spec = importlib.util.spec_from_file_location('site_analytics', Path(__file__).parents[1] / 'scripts/site_analytics.py')
@@ -45,5 +48,12 @@ class AnalyticsBuildTests(unittest.TestCase):
         self.assertTrue(analytics.check('<html></html>'))
         self.assertTrue(analytics.check(source.replace('</head>', analytics.EMBED.search(source).group() + '</head>')))
         self.assertTrue(analytics.check(source.replace('</head>', '<script src="https://www.clarity.ms/tag/other"></script></head>')))
+
+    def test_legacy_html_extensions_are_included(self):
+        with tempfile.TemporaryDirectory() as directory:
+            page = Path(directory) / 'legacy.HTM'
+            page.write_text('<html><head></head><body>Legacy</body></html>')
+            subprocess.run([sys.executable, analytics.__file__, directory], check=True, capture_output=True)
+            self.assertEqual([], analytics.check(page.read_text()))
 
 if __name__ == '__main__': unittest.main()

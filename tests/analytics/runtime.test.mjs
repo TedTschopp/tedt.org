@@ -1,6 +1,9 @@
 import { test, before, after } from 'node:test';
 import assert from 'node:assert/strict';
-import { readFile } from 'node:fs/promises';
+import { readFile, mkdtemp, writeFile, rm } from 'node:fs/promises';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { chromium } from 'playwright';
 
 const runtimeURL = 'https://tedt.org/assets/analytics/v1/analytics.js';
@@ -73,4 +76,20 @@ test('localhost and authentication operations do not initialize collectors', asy
 test('blocked collectors leave the application usable', async () => {
   const f = await fixture({ fail: true });
   try { assert.equal(await f.page.locator('#app').textContent(), 'Ready'); assert.deepEqual(f.errors, []); } finally { await f.context.close(); }
+});
+test('independent file pages never initialize production collectors', async () => {
+  const folder = await mkdtemp(join(tmpdir(), 'tedt-analytics-file-'));
+  const context = await browser.newContext(), page = await context.newPage(), requests = [];
+  try {
+    const file = join(folder, 'index.html');
+    await writeFile(file, `<html><head><script defer src="${runtimeURL}"></script></head><body>Offline edition</body></html>`);
+    await page.route('**/*', async route => {
+      if (route.request().url() === pathToFileURL(file).href) return route.continue();
+      if (route.request().url() === runtimeURL) return route.fulfill({ body: runtime, contentType: 'text/javascript' });
+      requests.push(route.request().url()); return route.abort();
+    });
+    await page.goto(pathToFileURL(file).href); await page.waitForTimeout(100);
+    assert.deepEqual(requests, []);
+    assert.equal(await page.locator('body').textContent(), 'Offline edition');
+  } finally { await context.close(); await rm(folder, { recursive: true }); }
 });
