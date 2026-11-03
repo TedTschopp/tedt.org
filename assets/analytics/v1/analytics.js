@@ -16,11 +16,12 @@ layout: null
   var masked = (embed && embed.dataset.privacy === 'masked') ||
     /^(?:member(?:-preview)?|tools|evals|plotto|islands|randomtables|random-constellations|spieldose)\.tedt\.org$/.test(host) ||
     /^\/(?:tools|RPG|inside-ai|game-theory|math-guide)(?:\/|$)/i.test(current.pathname);
-  w.__TedTAnalyticsV1 = { version: '1.0.0', masked: masked };
+  w.__TedTAnalyticsV1 = { version: '1.0.1', masked: masked };
 
   // Apply the privacy boundary before loading a vendor SDK, including future DOM content.
   function maskContent() {
     d.documentElement.setAttribute('data-clarity-mask', 'true');
+    if (d.body) d.body.setAttribute('data-clarity-mask', 'true');
     d.querySelectorAll('[data-clarity-unmask]').forEach(function (node) { node.removeAttribute('data-clarity-unmask'); });
   }
   if (masked) {
@@ -71,7 +72,15 @@ layout: null
     if (!d.querySelector('script[src*="googletagmanager.com/gtag/js"]')) load('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga.measurement_id));
   }
   if (clarity.enabled && clarity.project_id && !d.querySelector('script[src*="clarity.ms/tag/"]')) {
-    w.clarity = w.clarity || function () { (w.clarity.q = w.clarity.q || []).push(arguments); };
+    w.clarity = w.clarity || function () {
+      var args = Array.prototype.slice.call(arguments);
+      // Project-level unmask selectors (including body) must not relax a private page.
+      if (masked && args[0] === 'start' && args[1]) {
+        args[1] = Object.assign({}, args[1], { content: false, unmask: [],
+          mask: (args[1].mask || []).concat(['html', 'body']) });
+      }
+      (w.clarity.q = w.clarity.q || []).push(args);
+    };
     load('https://www.clarity.ms/tag/' + encodeURIComponent(clarity.project_id));
   }
   // A deferred embed sees Cloudflare's server-injected tag before creating a manual one.

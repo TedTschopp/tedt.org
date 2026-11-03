@@ -23,7 +23,7 @@ async function fixture({ host = 'ai.tedt.org', path = '/', mode = 'standard', du
     if (/googletagmanager|clarity\.ms|cloudflareinsights/.test(url)) {
       requests.push(url);
       if (fail) return route.abort();
-      return route.fulfill({ contentType: 'text/javascript', body: url.includes('clarity.ms/tag/') ? 'window.__maskedAtLoad=document.documentElement.getAttribute("data-clarity-mask");window.__unmaskedAtLoad=document.querySelectorAll("[data-clarity-unmask]").length;' : '' });
+      return route.fulfill({ contentType: 'text/javascript', body: url.includes('clarity.ms/tag/') ? 'window.__maskedAtLoad=document.documentElement.getAttribute("data-clarity-mask");window.__bodyMaskedAtLoad=document.body.getAttribute("data-clarity-mask");window.__unmaskedAtLoad=document.querySelectorAll("[data-clarity-unmask]").length;window.clarity("start",{content:true,unmask:["body",".canary"],mask:[]});' : '' });
     }
     return route.fulfill({ contentType: 'text/html', body });
   });
@@ -40,6 +40,7 @@ test('initializes all three once and preserves public events', async () => {
     assert.equal(commands.filter(x => x[0] === 'config').length, 1);
     assert.equal(commands.filter(x => x[1] === 'page_view').length, 1);
     assert.equal(commands.find(x => x[0] === 'config')[2].allow_google_signals, false);
+    assert.equal(await f.page.evaluate(() => window.clarity.q.find(x => x[0] === 'start')[1].content), true);
     await f.page.evaluate(() => { document.querySelector('#outside').addEventListener('click', e => e.preventDefault()); document.querySelector('#outside').click(); document.querySelector('#download').addEventListener('click', e => e.preventDefault()); document.querySelector('#download').click(); const s=document.querySelector('#search');s.value='published search';s.dispatchEvent(new Event('change',{bubbles:true})); });
     commands = await f.commands();
     for (const name of ['outbound_click', 'file_download', 'search']) assert.equal(commands.filter(x => x[1] === name).length, 1);
@@ -50,7 +51,12 @@ test('private mode masks before Clarity and omits private event values', async (
   const f = await fixture({ host: 'member.tedt.org', path: '/library/?q=PRIVATE_CANARY', mode: 'masked' });
   try {
     assert.equal(await f.page.evaluate(() => window.__maskedAtLoad), 'true');
+    assert.equal(await f.page.evaluate(() => window.__bodyMaskedAtLoad), 'true');
     assert.equal(await f.page.evaluate(() => window.__unmaskedAtLoad), 0);
+    const clarityConfig = await f.page.evaluate(() => window.clarity.q.find(x => x[0] === 'start')[1]);
+    assert.equal(clarityConfig.content, false);
+    assert.deepEqual(clarityConfig.unmask, []);
+    assert.ok(clarityConfig.mask.includes('body'));
     await f.page.evaluate(() => { document.querySelector('#outside').addEventListener('click', e => e.preventDefault());document.querySelector('#outside').click();document.querySelector('#download').addEventListener('click', e => e.preventDefault());document.querySelector('#download').click();const s=document.querySelector('#search');s.value='PRIVATE_CANARY';s.dispatchEvent(new Event('change',{bubbles:true}));document.body.insertAdjacentHTML('beforeend','<p data-clarity-unmask="true">PRIVATE_CANARY</p>'); });
     await f.page.waitForTimeout(50);
     assert.equal(await f.page.locator('[data-clarity-unmask]').count(), 0);

@@ -19,6 +19,10 @@ URLs and navigation metadata; content masking is not complete URL anonymization.
 Authentication, payment, API, callback, and logout operations are excluded.
 Localhost, file URLs, and hosts outside tedt.org never initialize collectors.
 
+Masked mode also masks the body explicitly and tightens Clarity's queued startup
+configuration before its SDK runs. Project-level unmask selectors cannot relax a
+private workspace's content policy.
+
 Every local publication pipeline finalizes its HTML and then verifies coverage:
 
 ```sh
