@@ -1,17 +1,12 @@
 ---
 layout: post
 title: What AI in 2024 Means for Us in 2025
-subtitle: From Breakthrough to Implementation - The Path Forward for Utilities
-quote: Success will depend not just on adopting AI, but on deploying it thoughtfully,
-  with the right infrastructure, collaboration, and readiness across the organization.
-excerpt: AI breakthroughs in 2024—cheaper models, multimodal capabilities, and broader
-  access—are reshaping what's possible in 2025. For electric utilities and IT organizations,
-  this means new opportunities in efficiency, customer service, and sustainability,
-  but also new responsibilities around governance, training, and data quality.
+subtitle: "Turn the New Choices Into One Measurable Utility Pilot"
+quote: "A useful pilot starts with a task someone owns and an answer someone can check."
+excerpt: "The 2024 releases give utilities more choices in model size, price, and inputs. A maintenance-planning example shows how to turn those choices into a measured trial with clear ownership and acceptance conditions."
 source: Original Content
 source-url: ''
-call-to-action: Share how your organization is preparing for AI implementation in
-  2025
+call-to-action: "Choose one recurring task, name its owner, and agree on the evidence that would justify expanding its use of AI."
 date: 2025-01-05
 update: null
 author:
@@ -19,18 +14,12 @@ author:
   name: Ted Tschopp
   url: https://tedt.org/
 bullets:
-- GPT-4-class models running on laptops eliminate expensive infrastructure requirements
-- Multimodal AI integration across text, audio, video, and images expands use cases
-  dramatically
-- LLM token cost reduction opens doors to wider adoption and experimentation
-- Data quality becomes increasingly critical for reliable AI outputs and decision-making
-- IT organizations must balance innovation with operational stability and governance
-description: An analysis of how 2024's AI breakthroughs translate into practical opportunities
-  and challenges for electric utilities and IT organizations in 2025, focusing on
-  operational efficiency, customer experience, and strategic implementation.
-seo-description: Learn how AI breakthroughs in 2024 impact utility operations in 2025.
-  Discover opportunities in efficiency, customer service, and sustainability plus
-  implementation strategies.
+- "Small local models create options; they do not establish that every laptop can run a model suited to every task."
+- "Image input and lower token prices are specific capabilities to test, rather than proof of business value."
+- "A maintenance-planning pilot needs approved records, a responsible reviewer, and explicit acceptance conditions."
+- "Count correction and review time when comparing AI assistance with the existing process."
+description: "A January 2025 proposal for turning 2024 AI releases into a bounded utility pilot, with source-grounded capabilities, an accountable owner, and measurable acceptance conditions."
+seo-description: "How utilities can test 2024 AI capabilities in 2025: define one task, validate its sources, measure review effort, and set acceptance conditions."
 categories:
 - Artificial Intelligence
 - Business
@@ -63,64 +52,43 @@ mastodon-post-id: '115017674689715289'
 image_width: 1456
 image_height: 816
 ---
-## Bottom Line Up Front
 
-AI breakthroughs in 2024—cheaper models, multimodal capabilities, and broader access—are reshaping what’s possible in 2025. For electric utilities and IT organizations, this means new opportunities in efficiency, customer service, and sustainability, but also new responsibilities around governance, training, and data quality. Success will depend not just on adopting AI, but on deploying it thoughtfully, with the right infrastructure, collaboration, and readiness across the organization.
+The next useful step for AI at a utility is a task someone owns and an answer someone can check. More capable models give us choices. They do not tell us which work to change first.
 
-## Introduction
+In [AI in 2024: A Year in Review](https://tedt.org/AI-in-2024-A-Year-in-Review/), I looked at changes in model availability, prices, and capabilities. Here I want to bring that discussion down to a practical decision: what would justify using one of those tools in an ordinary piece of utility work?
 
-Last week, I shared a post titled "AI in 2024: A Year in Review," highlighting the groundbreaking advancements in AI technology. This week, we are narrowing the focus to explore what these changes mean specifically for people working in the utility sector and the IT organizations that support it.
+## What the 2024 Releases Actually Give Us
 
-Artificial Intelligence in 2024 has been nothing short of transformative, marking a turning point in accessibility, innovation, and practical application. Groundbreaking advancements in AI models, pricing, and hardware requirements have paved the way for democratization across industries. 
+Local deployment is one option. Microsoft's [April 23, 2024 introduction of Phi-3](https://news.microsoft.com/source/features/ai/the-phi-3-small-language-models-with-big-potential/) describes a 3.8-billion-parameter model available through tools including Ollama. That is a specific small-model example, not evidence that every laptop can run a general replacement for a larger hosted model. Memory, response time, and performance on the intended task still need testing.
 
-The original article highlights the remarkable strides in AI technology, including cheaper and more efficient models, expanded functionalities like multimodal AI, and the increasing role of open-source platforms. These shifts have broad implications for industries reliant on data and innovation, such as utilities.
+Multimodal input is another option. Anthropic's [June 2024 Claude 3.5 Sonnet announcement](https://www.anthropic.com/news/claude-3-5-sonnet) describes vision capabilities, including interpreting images and charts. A utility team could test whether an image helps answer a particular question. It should also test whether the model misreads a label or overlooks a detail. Text, image, audio, and video support must be checked separately for the product being considered.
 
-## Three Key Highlights
+Price is a third choice. OpenAI's [July 18 GPT-4o mini release](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) lists $0.15 per million input tokens and $0.60 per million output tokens. Those are dated API prices with different units for what goes in and what comes out. They do not include the whole cost of a working application.
 
-GPT-4-class models running on laptops: High-performing models are now deployable without expensive infrastructure.
-Multimodal AI becoming mainstream: Integration across text, audio, video, and images expands use cases dramatically.
-LLM token cost reduction: A steep drop in costs opens doors to wider adoption and experimentation.
+These releases support experimentation. They do not establish that local deployment removes infrastructure costs, that every multimodal feature is available in every tool, or that lower token prices necessarily reduce electricity use.
 
-## What This Means
+## Start With a Maintenance-Planning Brief
 
-The developments in AI signify a rapid shift toward greater inclusivity and efficiency in technology. Breakthroughs like extended context lengths and real-time multimodal interactions mean that AI is no longer confined to tech giants with deep pockets. Instead, small to mid-sized companies and industries like utilities can now leverage these tools effectively.
+Consider a proposed assistant that turns an approved maintenance work pack into a short briefing for a planner. This is a design example, not a report of an SCE deployment.
 
-The broader availability of AI also raises the bar for innovation, as organizations can experiment with cutting-edge capabilities without being hindered by high costs. However, it also necessitates thoughtful deployment to avoid pitfalls like low-quality content and ethical concerns. Additionally, the quality of data used for AI applications becomes increasingly important. Poor-quality data can lead to unreliable outputs, hindering the effectiveness of even the most advanced models. Utilities must focus on ensuring their datasets are accurate, complete, and up-to-date.
+The assistant would identify the asset, planned work, dependencies, and unresolved questions. It would point the reviewer to the relevant source passages. It would leave a missing approval unresolved rather than supplying a plausible answer. It would not issue operating instructions, authorize work, or change a work order.
 
-## What This Means for the Electric Utility Industry
+The maintenance-planning manager would own the trial and decide what makes a briefing usable. A planner would verify each result. IT would help select an approved tool and confirm that the trial records are appropriate for it. A data steward would resolve uncertainty about record versions and missing fields.
 
-AI’s evolution presents both challenges and opportunities for electric utilities. Real-time decision-making powered by enhanced inference models and multimodal AI can revolutionize operations.
-Operational Efficiency: AI-driven insights can streamline operations from grid management and maintenance to IT to HR.
-Customer Experience: Enhanced multimodal AI tools improve customer service through personalized and responsive interactions.
-Sustainability: As models become cheaper and more energy-efficient, this aligns with our commitments to the environment. 
-Data Reliability: Ensuring high-quality data sources is critical to harnessing AI’s full potential and avoiding flawed decisions.  Everyone will play a part in this critical corner stone.
+That division gives each problem somewhere to go. A missing source record is a data issue. A summary that changes a date is an output-quality issue. An unclear acceptance rule is a decision the process owner needs to make.
 
-## What This Means for SCE's IT Organization
+## Agree on the Test Before Trying the Tool
 
-The IT faces a dual challenge: integrating these advancements while maintaining operational stability. On one hand, we must support the deployment of scalable, efficient AI platforms that produce the largest business value, while addressing uneven adoption rates in our organizations. This means focusing on platforms over projects and isolated solutions.
+For a small first trial, select 20 work packs that include straightforward cases, conflicting records, and missing information. Use records approved for this purpose. These are proposed trial conditions, not a statistical claim or an established company standard.
 
-Data quality will play a pivotal role here. IT must implement and enforce strong data governance practices to maintain the integrity and relevance of the information used by AI platforms. Regular audits and validations of AI Models, Prompts, and Datasets will help in reducing the risk of unreliable outputs and ensuring the effectiveness of AI-driven initiatives.
+First, measure the existing method: the time to produce an acceptable brief, the corrections required, and the errors a reviewer finds. Then compare AI assistance on comparable work. Include preparation, drafting, checking, and correction in the assisted time. If someone has to reconstruct the answer from scratch, count that effort.
 
-IT organizations will need to:
+The owner could require every brief in this trial to preserve the required identifiers and dates, cite the applicable passages, and flag missing approvals. Any invented approval or unsafe instruction would stop expansion until its cause was addressed. Expansion would also require a lower median time to an accepted brief, without worse quality. Those are explicit proposed acceptance conditions; the owner should adjust them before the trial starts.
 
-* Train employees to utilize AI Platforms effectively.
-* Develop standards for evaluating, testing, and accepting AI outputs and platforms.
-* Align AI strategies with overarching business goals.
-* Implement stringent data quality and governance measures.
+Here is a simple planning calculation. If 20 accepted briefs take 20 minutes each today, the baseline is 400 minutes. If assistance brings the complete task to 12 minutes per accepted brief, including review, the total is 240 minutes: a potential saving of 160 minutes. These are illustrative assumptions, not measured results. If review takes longer than expected, the saving shrinks or disappears.
 
-## What I Should Do to Get Ready for This Change
+## Make the Useful Method Repeatable
 
-* **Educate Yourself:** Stay updated on AI advancements, particularly those impacting the electric utility industry.
-* **Experiment with Tools:** Explore the AI tools that have been deployed and test their applicability in your workflows.
-* **Enhance Skills:** Upskill in areas like prompt engineering and multimodal AI applications.
-* **Collaborate Across Teams:** Work closely with operations and strategy teams to align the work you want to do with AI initiatives.
-* **Advocate for AI Governance:** Be aware of the current AI policies and regulations while supporting and promoting these policies to ensure ethical and effective AI deployment.
-* **Prioritize Data Quality:** Ensure datasets used for AI applications are accurate, clean, and well-maintained by ensuring that all data is complete, accurate, and aligned to corporate data models and their data stewards.
+For SCE's IT organization, the practical opportunity is to help teams repeat a method that works: identify the source records, explain the prompt, define the review, and record the result. A shared platform can support that work, but availability alone will not establish adoption or benefit.
 
-## Conclusion
-
-The rapid progression of AI in 2024 signals a new era of opportunity and responsibility. For electric utilities, this transformation brings the promise of efficiency, sustainability, and enhanced customer experiences. However, thoughtful implementation and ongoing learning are essential to maximize these benefits. At the same time, maintaining high data quality is critical to ensuring that AI delivers reliable and actionable insights.
-
-## Call to Action
-
-How are you preparing yourself and your organization for the AI revolution? Share your strategies and insights in the comments below!
+The first deliverable for 2025 could be modest: one recurring task, a named owner, a recorded baseline, and a decision about whether the result is good enough to expand. A colleague should be able to follow the same method and understand both the benefit and the remaining work.
