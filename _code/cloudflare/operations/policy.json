@@ -1,0 +1,206 @@
+{
+  "account_id": "13ebf849f1787412dc2c48a262de0407",
+  "worker_sampling": {
+    "busy-apps-api": 1,
+    "forward-family-emails": 1,
+    "founding-eval-lab": 1,
+    "host-meta": 1,
+    "member-tedt-production": 1,
+    "member-tedt-staging": 1,
+    "tedt-indieweb-publishing": 1,
+    "tedt-indieweb-upload-buffer": 1,
+    "tedt-social-bot-check-preview": 1,
+    "tools-social-bot-check-preview": 1,
+    "ttrpg-mcp-server": 0.1,
+    "webfinger": 0.1
+  },
+  "scheduled_workers": [
+    "member-tedt-production",
+    "member-tedt-staging"
+  ],
+  "redirects": {
+    "tedt.ai": "https://ai.tedt.org/",
+    "tschopp.ai": "https://ai.tedt.org/",
+    "marchenengine.com": "https://themarchenengine.com/",
+    "theweeklyprompt.net": "https://yesterdai.tedt.org/",
+    "theweeklyprompt.org": "https://yesterdai.tedt.org/",
+    "tschopp.co": "https://tschopp.org/",
+    "brainsbugs.org": "https://brain-bugs.com"
+  },
+  "public_checks": [
+    {
+      "url": "https://tedt.org/",
+      "status": 200,
+      "types": [
+        "text/html"
+      ]
+    },
+    {
+      "url": "https://tschopp.org/",
+      "status": 200,
+      "types": [
+        "text/html"
+      ]
+    },
+    {
+      "url": "https://ai.tedt.org/",
+      "status": 200,
+      "types": [
+        "text/html"
+      ]
+    },
+    {
+      "url": "https://yesterdai.tedt.org/",
+      "status": 200,
+      "types": [
+        "text/html"
+      ]
+    },
+    {
+      "url": "https://busy.tedt.org/",
+      "status": 200,
+      "types": [
+        "text/html"
+      ]
+    },
+    {
+      "url": "https://tools.tedt.org/",
+      "status": 200,
+      "types": [
+        "text/html"
+      ]
+    },
+    {
+      "url": "https://evals.tedt.org/",
+      "status": 200,
+      "types": [
+        "text/html"
+      ]
+    },
+    {
+      "url": "https://tschopp.net/",
+      "status": 200,
+      "types": [
+        "text/html"
+      ]
+    },
+    {
+      "url": "https://tedt.org/assets/global-header/v1/header.css",
+      "status": 200,
+      "types": [
+        "text/css"
+      ],
+      "asset": true
+    },
+    {
+      "url": "https://tedt.org/assets/global-header/v1/header.js",
+      "status": 200,
+      "types": [
+        "text/javascript",
+        "application/javascript"
+      ],
+      "asset": true
+    },
+    {
+      "url": "https://tedt.org/assets/analytics/v1/analytics.js",
+      "status": 200,
+      "types": [
+        "text/javascript",
+        "application/javascript"
+      ],
+      "asset": true
+    },
+    {
+      "url": "https://tedt.org/.well-known/webfinger?resource=acct:ted@tedt.org",
+      "status": 200,
+      "types": [
+        "application/jrd+json",
+        "application/json"
+      ],
+      "webfinger": true
+    },
+    {
+      "url": "https://api.busy.tedt.org/health",
+      "status": 200,
+      "types": [
+        "application/json"
+      ],
+      "json_value": [
+        "status",
+        "ok"
+      ]
+    },
+    {
+      "url": "https://tedt.org/micropub/health",
+      "status": 200,
+      "types": [
+        "application/json"
+      ],
+      "json_value": [
+        "identity",
+        "IndieKey"
+      ]
+    },
+    {
+      "url": "https://ttrpg-mcp.tedt.org/mcp",
+      "status": 405
+    },
+    {
+      "url": "https://forward-family-emails.tedt.workers.dev/",
+      "status": 404
+    },
+    {
+      "url": "https://evals.tedt.org/.git/config",
+      "status": 403
+    },
+    {
+      "url": "https://evals.tedt.org/.env",
+      "status": 403
+    },
+    {
+      "url": "https://evals.tedt.org/.env.production",
+      "status": 403
+    },
+    {
+      "url": "https://tschopp.net/health",
+      "status": 200,
+      "types": [
+        "text/plain"
+      ]
+    },
+    {
+      "url": "https://tschopp.net/.well-known/nodeinfo",
+      "status": 200,
+      "types": [
+        "application/json"
+      ],
+      "json_keys": [
+        "links"
+      ]
+    },
+    {
+      "url": "https://tschopp.net/.well-known/webfinger?resource=acct:Ted@tschopp.net",
+      "status": 200,
+      "types": [
+        "application/jrd+json",
+        "application/json"
+      ],
+      "webfinger": true
+    }
+  ],
+  "cost_controls": {
+    "new_paid_services": false,
+    "external_exports": false,
+    "traces": false,
+    "current_monthly_log_event_allowance": 20000000,
+    "pricing_change": "2026-12-01",
+    "new_ingestion_gb_allowance": 50,
+    "new_storage_gb_month_allowance": 10,
+    "hard_spending_cap": false
+  },
+  "known_coverage_limitations": [
+    "tschopp.net is the Mastodon server. Public health, NodeInfo and WebFinger are checked; reverse-proxy and application logs require its existing hosting or server access.",
+    "The MCP check verifies the expected GET method response, without invoking a tool.",
+    "The evaluation health check serves the static homepage and does not start its paid container."
+  ]
+}
