@@ -6882,12 +6882,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "2def3aea3d8a948b3a01086dcd48863acca4b50cfee93619da421cc8aec76cd9",
-        "kind": "archive",
-        "started_at": "2026-11-04T11:22:06Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-04T11:22:20.385Z",
+          "id": "117557909283514045",
+          "url": "https://tschopp.net/@Ted/117557909283514045"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6895,8 +6896,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bristle-Snake-Chotslith-Medium.md"
       ],
-      "state": "uncertain",
-      "title": "Bristle Snake «Chotslith, Medium»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-04T11:22:20.385Z",
+        "id": "117557909283514045",
+        "url": "https://tschopp.net/@Ted/117557909283514045"
+      },
+      "title": "Bristle Snake «Chotslith, Medium»",
+      "verified_at": "2026-11-04T11:22:06Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Bristleback-Rog.html": {
       "aliases": [
@@ -27636,7 +27643,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-04T03:21:47.131Z",
+  "last_publication_at": "2026-11-04T11:22:20.385Z",
   "last_reconciliation_at": "2026-11-04T11:22:06Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 221,
@@ -28888,6 +28895,14 @@
       "kind": "archive",
       "operation": "67cf7bdc649c3e1363400b3e019baab9a495e4007a74fecb9d6bb60fe6ad7dff",
       "url": "https://tschopp.net/@Ted/117556019667299643"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bristle-Snake-Chotslith-Medium.html",
+      "created_at": "2026-11-04T11:22:20.385Z",
+      "id": "117557909283514045",
+      "kind": "archive",
+      "operation": "2def3aea3d8a948b3a01086dcd48863acca4b50cfee93619da421cc8aec76cd9",
+      "url": "https://tschopp.net/@Ted/117557909283514045"
     }
   ],
   "run_count": 552,
