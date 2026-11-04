@@ -1,0 +1,40 @@
+name: Service Health
+on:
+  workflow_dispatch:
+    inputs:
+      check_cloudflare:
+        description: Also verify logging, scheduled runs and usage with the existing token
+        type: boolean
+        default: false
+  schedule:
+    - cron: '23 */6 * * *'
+  pull_request:
+    paths: ['_code/cloudflare/operations/**', '.github/workflows/service-health.yml']
+permissions:
+  contents: read
+concurrency:
+  group: service-health-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  public:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check the monitoring contract
+        run: python3 -m unittest discover -s _code/cloudflare/operations -p 'test_*.py'
+      - name: Check public services and retry failures
+        run: python3 _code/cloudflare/operations/check_services.py
+  cloudflare:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (inputs.check_cloudflare || vars.CLOUDFLARE_OPS_CHECKS_ENABLED == 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: social-bot-check-preview
+    steps:
+      - uses: actions/checkout@v7
+      - name: Check logging policy, scheduled runs and usage
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        run: python3 _code/cloudflare/operations/check_services.py --mode cloudflare
