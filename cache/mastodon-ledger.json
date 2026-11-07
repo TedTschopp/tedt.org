@@ -6993,12 +6993,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "186009ddd05046f7167bf73f06db36ebd8a4010712682b2a29f5599c46d96449",
-        "kind": "archive",
-        "started_at": "2026-11-07T18:50:13Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-07T18:50:27.333Z",
+          "id": "117576658277645111",
+          "url": "https://tschopp.net/@Ted/117576658277645111"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7006,8 +7007,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Brown-Runners-Rakkons.md"
       ],
-      "state": "uncertain",
-      "title": "Brown Runners «Rakkons»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-07T18:50:27.333Z",
+        "id": "117576658277645111",
+        "url": "https://tschopp.net/@Ted/117576658277645111"
+      },
+      "title": "Brown Runners «Rakkons»",
+      "verified_at": "2026-11-07T18:50:13Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Brudda.html": {
       "aliases": [
@@ -27714,7 +27721,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-07T14:08:23.322Z",
+  "last_publication_at": "2026-11-07T18:50:27.333Z",
   "last_reconciliation_at": "2026-11-07T18:50:13Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 225,
@@ -28998,6 +29005,14 @@
       "kind": "archive",
       "operation": "bfbbd215acdd56b0b86bd9dcbd39df4580b07402f144fb250c41509dd09f78c8",
       "url": "https://tschopp.net/@Ted/117575549145648540"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Brown-Runners-Rakkons.html",
+      "created_at": "2026-11-07T18:50:27.333Z",
+      "id": "117576658277645111",
+      "kind": "archive",
+      "operation": "186009ddd05046f7167bf73f06db36ebd8a4010712682b2a29f5599c46d96449",
+      "url": "https://tschopp.net/@Ted/117576658277645111"
     }
   ],
   "run_count": 557,
