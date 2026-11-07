@@ -156,7 +156,7 @@ prompt_content: "You will now act as a prompt generator for a generative AI call
   \ orange metal ears, vector artwork, martin ansin  --s 500 --ar 1:2 --chaos 9\n\n\
   \n{User Input}\nI will provide you with input and you will generate 3 different\
   \ prompts in a markdown code box so i can copy and paste.\n"
-image: /img/prompts/Image-Prompt-Engineering.png
+image: /img/prompts/Image-Prompt-Engineering.webp
 image-alt: Woman with magenta hair working on a glowing digital map in a futuristic
   sci-fi lab surrounded by monitors, tools, and cybernetic equipment
 image-description: In a high-tech workspace bathed in blue hues and electric shadows,

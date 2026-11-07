@@ -89,7 +89,7 @@ prompt_content: "Goal: In this exercise, you will work with the user to create a
   \ is a novice to the topic) and refine it\n* Do not explain what you'll do once\
   \ you have the information, just do it e.g. do not explain what the prompt will\
   \ include\n* Do not mention learning styles. This is an educational myth\n"
-image: /img/prompts/Immersive-AI-Simulation.png
+image: /img/prompts/Immersive-AI-Simulation.webp
 image-alt: A female student sits at a classroom desk facing a large screen displaying
   a male AI teaching assistant. The classroom is bright, filled with greenery, and
   features modern educational technology.

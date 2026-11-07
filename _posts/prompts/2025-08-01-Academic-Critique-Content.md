@@ -36,7 +36,7 @@ models-supported:
 - gpt-4-mini
 - microsoft-copilot
 - github
-image: /img/prompts/academic-critique-template.png
+image: /img/prompts/academic-critique-template.webp
 image-alt: A scholarly desk with papers, books, and evaluation forms representing
   academic critique and analysis
 image-credits-title: Academic Critique and Analysis

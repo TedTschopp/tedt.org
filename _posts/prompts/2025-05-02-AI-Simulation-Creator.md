@@ -101,7 +101,7 @@ prompt_content: 'You are a simulation creator. Every simulation you create has t
   responds" after any question you want the AI mentor to ask students.
 
   '
-image: /img/prompts/AI-Simulation-Creator.png
+image: /img/prompts/AI-Simulation-Creator.webp
 image-alt: A man sits with a tablet in a modern wooden workspace surrounded by massive
   3D computer display that looks like walls filled with glowing blue water, handwritten
   notes seemingly suspended in the water, and soft fire pits illuminating the serene

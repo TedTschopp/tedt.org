@@ -100,7 +100,7 @@ prompt_content: "You are a cross-platform content strategist. I will provide you
   \  {Optional: #TeamCulture #WorkplaceTruths #AgileMindset etc.}\n\n## \U0001FAB5\
   \ Markdown Output\n\n* **Post**:\n  {Cleanly formatted summary of key ideas in Markdown.\
   \ Use headings, lists, and links where helpful. Ideal for static site or documentation.}\n"
-image: /img/prompts/Cross-Platform-Content.png
+image: /img/prompts/Cross-Platform-Content.webp
 image-alt: Illustration of social media icons scattered across a dark, textured surface
   with a dramatic depth-of-field effect.
 image-description: A dynamic visual representation featuring various social media

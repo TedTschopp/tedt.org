@@ -97,7 +97,7 @@ prompt_content: '# Prompt Text
   responds" after any question you want the AI mentor to ask students.
 
   '
-image: /img/prompts/Immersive-AI-Simulation.png
+image: /img/prompts/Immersive-AI-Simulation.webp
 image-alt: Close-up of an engaged student interacting with a glowing, translucent
   AI hologram in a modern classroom, symbolizing immersive, technology-driven experiential
   learning.

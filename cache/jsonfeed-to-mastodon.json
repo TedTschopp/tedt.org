@@ -102,7 +102,7 @@
     "date_modified": "2025-08-01T00:00:00-07:00",
     "date_published": "2025-08-01T00:00:00-07:00",
     "id": "/Academic-Critique-Content/",
-    "image": "https://tedt.org//img/prompts/academic-critique-template.png",
+    "image": "https://tedt.org//img/prompts/academic-critique-template.webp",
     "lastTootTimestamp": 1754936099914,
     "summary": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scho…",
     "tags": [
@@ -320,7 +320,7 @@
     "date_modified": "2025-08-01T00:00:00-07:00",
     "date_published": "2025-08-01T00:00:00-07:00",
     "id": "/Critique-Content/",
-    "image": "/img/prompts/academic-critique-template.png",
+    "image": "/img/prompts/academic-critique-template.webp",
     "lastTootTimestamp": 1754807359034,
     "summary": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scho…",
     "tags": [
@@ -1707,7 +1707,7 @@
     "date_modified": "2025-05-04T00:00:00-07:00",
     "date_published": "2025-05-04T00:00:00-07:00",
     "id": "/prompts/ai-tutoring-prompt-designer/",
-    "image": "/img/prompts/Immersive-AI-Simulation.png",
+    "image": "/img/prompts/Immersive-AI-Simulation.webp",
     "summary": "The AI Tutoring Prompt Designer empowers users to effectively create personalized AI tutoring dialogues, making it easier to teach and guide learners through mastering new concepts. It leverages open-ended questioning, adaptive support, and structured assessment techniques to help tutors identify l…",
     "tags": [
       "Tutoring",
@@ -1730,7 +1730,7 @@
     "date_modified": "2025-05-04T00:00:00-07:00",
     "date_published": "2025-05-04T00:00:00-07:00",
     "id": "/prompts/artistic-Analysis/",
-    "image": "/img/prompts/Artistic-Scholar.png",
+    "image": "/img/prompts/Artistic-Scholar.webp",
     "summary": "The Artistic Analysis Prompt offers users an expansive, scholarly, and culturally rich approach to interpreting artistic works across various mediums, including visual arts, literature, music, theater, film, and multimedia installations. It systematically unpacks artistic creations by examining the…",
     "tags": [
       "Art Analysis",
@@ -1753,7 +1753,7 @@
     "date_modified": "2025-08-19T00:00:00-07:00",
     "date_published": "2025-08-19T00:00:00-07:00",
     "id": "/prompts/business-case-and-requirements-assistant/",
-    "image": "https://tedt.org/img/prompts/Business-Case-Requirements-Assistant.png",
+    "image": "https://tedt.org/img/prompts/Business-Case-Requirements-Assistant.webp",
     "lastTootTimestamp": 1756417352587,
     "summary": "The Business Case &amp; Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART us…",
     "tags": [
@@ -1836,7 +1836,7 @@
     "date_modified": "2025-07-25T00:00:00-07:00",
     "date_published": "2025-07-25T00:00:00-07:00",
     "id": "/prompts/midjourney-v7-prompt-template/",
-    "image": "/img/prompts/Image-Prompt-Engineering.png",
+    "image": "/img/prompts/Image-Prompt-Engineering.webp",
     "lastTootTimestamp": 1754829562919,
     "summary": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this tem…",
     "tags": [
@@ -2189,7 +2189,7 @@
     "summary": "The Business Case &amp; Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART us…",
     "content_text": "The Business Case &amp; Requirements Assistant equips Agile coaches, product managers, and enterprise architects to turn messy, high‑level ambitions into verifiable backlogs. It guides you to clarify intent, model users and personas, decompose into thin vertical slices, and express work as SMART user stories or system requirements. It also bakes in rigorous acceptance criteria plus fit‑for‑purpos… https://tedt.org/prompts/business-case-and-requirements-assistant/",
     "url": "https://tedt.org/prompts/business-case-and-requirements-assistant/",
-    "image": "https://tedt.org/img/prompts/Business-Case-Requirements-Assistant.png",
+    "image": "https://tedt.org/img/prompts/Business-Case-Requirements-Assistant.webp",
     "tags": [
       "Agile",
       "Product Management",
@@ -2335,7 +2335,7 @@
     "summary": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scho…",
     "content_text": "The “Academic Content Critique Template” is a comprehensive, structured framework designed for scholarly analysis and evaluation of academic papers, articles, and research content. This sophisticated prompt transforms users into academic reviewers, providing a systematic approach to critiquing scholarly work with professional standards and detailed analytical frameworks. https://tedt.org/Academic-Critique-Content/",
     "url": "https://tedt.org/Academic-Critique-Content/",
-    "image": "https://tedt.org/img/prompts/academic-critique-template.png",
+    "image": "https://tedt.org/img/prompts/academic-critique-template.webp",
     "tags": [
       "Academic Writing",
       "Critique",
@@ -2364,7 +2364,7 @@
     "summary": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this tem…",
     "content_text": "The Midjourney Version 7 Prompt Generator Template is an advanced, structured tool designed to help creatives and digital artists easily craft precise and effective prompts for generating high-quality AI-driven imagery. Utilizing a weighted system and clear, detailed formatting guidelines, this template ensures accurate communication of artistic intent, producing vivid and compelling images tailo… https://tedt.org/prompts/midjourney-v7-prompt-template/",
     "url": "https://tedt.org/prompts/midjourney-v7-prompt-template/",
-    "image": "https://tedt.org/img/prompts/Image-Prompt-Engineering.png",
+    "image": "https://tedt.org/img/prompts/Image-Prompt-Engineering.webp",
     "tags": [
       "Midjourney",
       "Image Generation"
@@ -2775,7 +2775,7 @@
     "summary": "A specialized prompt for ttrpg weapon descriptions with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for ttrpg weapon descriptions with advanced AI capabilities and structured output formatting. https://tedt.org/weapon-descriptions/",
     "url": "https://tedt.org/weapon-descriptions/",
-    "image": "https://tedt.org/img/prompts/TTRPG-Opening-Scene.png",
+    "image": "https://tedt.org/img/prompts/TTRPG-Opening-Scene.webp",
     "tags": [
       "Game Master",
       "TTRPG",
@@ -2823,7 +2823,7 @@
     "summary": "A specialized prompt for test analyst with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for test analyst with advanced AI capabilities and structured output formatting. https://tedt.org/testing-analyst/",
     "url": "https://tedt.org/testing-analyst/",
-    "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.png",
+    "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.webp",
     "tags": [
       "Requirements Engineering",
       "Architecture",
@@ -3407,7 +3407,7 @@
     "summary": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting. https://tedt.org/product-requirements-document-prd-template-3/",
     "url": "https://tedt.org/product-requirements-document-prd-template-3/",
-    "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.png",
+    "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.webp",
     "tags": [
       "Product Management",
       "Requirements Engineering",
@@ -3770,7 +3770,7 @@
     "summary": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting.",
     "content_text": "A specialized prompt for architecture product requirements document (prd) template 3 with advanced AI capabilities and structured output formatting. https://tedt.org/prompts/product-requirements-document-prd-template-3/",
     "url": "https://tedt.org/prompts/product-requirements-document-prd-template-3/",
-    "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.png",
+    "image": "https://tedt.org/img/prompts/architecture-product-requirements-document.webp",
     "tags": [
       "Product Management",
       "Requirements Engineering",

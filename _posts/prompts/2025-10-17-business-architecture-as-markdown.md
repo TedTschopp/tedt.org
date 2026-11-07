@@ -53,7 +53,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/prompts/architecture-product-requirements-document.png
+image: /img/prompts/architecture-product-requirements-document.webp
 image-alt: "Abstract architectural sketch of an enterprise workspace with layered blueprints, technical annotations, and interconnected systems representing a structured product requirements document."
 image-artist: "Ted Tschopp"
 image-artist-URL: "https://tedt.org/"

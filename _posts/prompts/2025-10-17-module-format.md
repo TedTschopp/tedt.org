@@ -50,7 +50,7 @@ coordinates:
     latitude: 34.1470
     longitude: -117.9709
 
-image: /img/prompts/TTRPG-Opening-Scene.png
+image: /img/prompts/TTRPG-Opening-Scene.webp
 image-alt: An illustrated TTRPG setting depicting a vibrant, detailed blue market
   building with bustling activity, stairs, lanterns, and annotated notes for game
   design.

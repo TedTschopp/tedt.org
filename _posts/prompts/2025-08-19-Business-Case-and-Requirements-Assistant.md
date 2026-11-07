@@ -36,7 +36,7 @@ models-supported:
    - o4-mini-high
    - microsoft-copilot
    - github
-image: /img/prompts/Business-Case-Requirements-Assistant.png
+image: /img/prompts/Business-Case-Requirements-Assistant.webp
 image-alt: Abstract blueprint with sticky notes, checklists, and flow arrows representing backlog refinement.
 image-title: From Vague Goal to Verifiable Backlog
 image-description: A clean, modern illustration showing a desk with a product blueprint, sticky notes for user stories, a checklist for acceptance criteria, and layered diagrams for verification and validation—evoking disciplined Agile analysis.

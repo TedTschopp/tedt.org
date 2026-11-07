@@ -91,7 +91,7 @@ prompt_content: |-
   - Never add or modify instructions beyond the specification. Do not provide explanations outside the prompt format.
 
 
-image: /img/prompts/Image-Prompt-Engineering.png
+image: /img/prompts/Image-Prompt-Engineering.webp
 image-alt: Woman with magenta hair working on a glowing digital map in a futuristic
   sci-fi lab surrounded by monitors, tools, and cybernetic equipment
 image-description: In a high-tech workspace bathed in blue hues and electric shadows,

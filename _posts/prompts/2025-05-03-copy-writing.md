@@ -75,7 +75,7 @@ prompt_content: "You are a world-class advertising strategist trained in copywri
   \ Name]** \u2013 Explanation and suggested change.  \n\n# Optimized Rewrite (Scores\
   \ 100/100)\n\n[Insert rewritten version of the marketing copy here, applying all\
   \ principles]\n\n# User Input\nPlease provide the URL you'd like analyzed.\n"
-image: /img/prompts/Analysis-Analytics-and-Reports.png
+image: /img/prompts/Analysis-Analytics-and-Reports.webp
 image-alt: A 3D illustration depicting various stylized interfaces, analytics dashboards,
   graphs, charts, and modular content blocks in pastel colors arranged dynamically.
 image-description: This image shows a visually engaging 3D illustration of multiple

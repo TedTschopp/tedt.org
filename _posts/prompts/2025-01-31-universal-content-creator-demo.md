@@ -24,7 +24,7 @@ models-supported:
 - gpt-4-mini
 - microsoft-copilot
 - github
-image: /img/prompts/prompt-variable-demo.png
+image: /img/prompts/prompt-variable-demo.webp
 image-alt: A futuristic interface showing dynamic form elements and variables being
   processed
 image-credits-title: Dynamic Prompt Variables Interface

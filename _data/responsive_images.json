@@ -7562,6 +7562,39 @@
       ],
       "width": 1672
     },
+    "/img/2026-11/The-New-Bottle-Neck.webp": {
+      "height": 941,
+      "source_sha256": "48c23a2767073f8f0e6beaadc80a4c21bd29caef47dcc0c8fa220ab0856d7d35",
+      "src": "/img/2026-11/The-New-Bottle-Neck.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-11/The-New-Bottle-Neck--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-11/The-New-Bottle-Neck--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-11/The-New-Bottle-Neck--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-11/The-New-Bottle-Neck--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-11/The-New-Bottle-Neck.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/2026-11/Your-AI-Passed-the-Test-Hero-Swiss.webp": {
       "height": 941,
       "source_sha256": "66fe25f07159ea28e1f8f382c92eb5f0762ea0f04640f6cb089f628a2c95c33b",
@@ -7590,6 +7623,39 @@
         {
           "height": 941,
           "path": "/img/2026-11/Your-AI-Passed-the-Test-Hero-Swiss.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
+    "/img/2026-11/Your-AI-Passed-the-Test-Hero.webp": {
+      "height": 941,
+      "source_sha256": "9c6561e34d00db90647dca430fe5642579773fb19b96404f871ed099e41faff6",
+      "src": "/img/2026-11/Your-AI-Passed-the-Test-Hero.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-11/Your-AI-Passed-the-Test-Hero--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-11/Your-AI-Passed-the-Test-Hero--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-11/Your-AI-Passed-the-Test-Hero--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-11/Your-AI-Passed-the-Test-Hero--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-11/Your-AI-Passed-the-Test-Hero.webp",
           "width": 1672
         }
       ],
