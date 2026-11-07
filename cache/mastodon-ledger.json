@@ -6919,12 +6919,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "b91262c86fd49f07426ad676a274d311463afef7a07fcdfb66eb98b3ddc628b9",
-        "kind": "archive",
-        "started_at": "2026-11-07T07:14:42Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-07T07:14:58.149Z",
+          "id": "117573923513934612",
+          "url": "https://tschopp.net/@Ted/117573923513934612"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -6932,8 +6933,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Bristleback-Rog.md"
       ],
-      "state": "uncertain",
-      "title": "Bristleback «Rog»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-07T07:14:58.149Z",
+        "id": "117573923513934612",
+        "url": "https://tschopp.net/@Ted/117573923513934612"
+      },
+      "title": "Bristleback «Rog»",
+      "verified_at": "2026-11-07T07:14:42Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Brown-Beggars-Dabber.html": {
       "aliases": [
@@ -27686,7 +27693,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-07T05:46:04.138Z",
+  "last_publication_at": "2026-11-07T07:14:58.149Z",
   "last_reconciliation_at": "2026-11-07T07:14:42Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 223,
@@ -28954,6 +28961,14 @@
       "kind": "new",
       "operation": "5b24afd4b8c3ef00d2d91aa02245b2e88d2c3a31e1daf03eefecafb4eaeae80d",
       "url": "https://tschopp.net/@Ted/117573573944110268"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Bristleback-Rog.html",
+      "created_at": "2026-11-07T07:14:58.149Z",
+      "id": "117573923513934612",
+      "kind": "archive",
+      "operation": "b91262c86fd49f07426ad676a274d311463afef7a07fcdfb66eb98b3ddc628b9",
+      "url": "https://tschopp.net/@Ted/117573923513934612"
     }
   ],
   "run_count": 555,
