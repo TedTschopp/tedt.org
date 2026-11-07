@@ -40,6 +40,8 @@ tags:
   - responsible AI
   - queue management
   - AI implementation
+mastodon-post-id: "117573573944110268"
+mastodon-post-url: "https://tschopp.net/@Ted/117573573944110268"
 ---
 
 # Human Approval Has a Speed Limit
