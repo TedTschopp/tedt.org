@@ -21511,20 +21511,27 @@
       "eligible": true,
       "first_seen_at": "2026-11-07T05:45:48Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "5b24afd4b8c3ef00d2d91aa02245b2e88d2c3a31e1daf03eefecafb4eaeae80d",
-        "kind": "new",
-        "started_at": "2026-11-07T05:45:48Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-07T05:46:04.138Z",
+          "id": "117573573944110268",
+          "url": "https://tschopp.net/@Ted/117573573944110268"
+        }
+      ],
       "published_at": "2026-11-06T07:00:00Z",
       "queue_kind": "new",
       "reconciled_at": "2026-11-07T05:45:48Z",
       "source_paths": [
         "_posts/AI/2026-11-06-Human-Approval-Has-a-Speed-Limit.md"
       ],
-      "state": "uncertain",
-      "title": "Human Approval Has a Speed Limit"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-07T05:46:04.138Z",
+        "id": "117573573944110268",
+        "url": "https://tschopp.net/@Ted/117573573944110268"
+      },
+      "title": "Human Approval Has a Speed Limit",
+      "verified_at": "2026-11-07T05:45:48Z"
     },
     "https://tedt.org/Increasing-in-Rank-MCC-with-Archaic-Alliances/": {
       "aliases": [
@@ -27671,7 +27678,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-04T11:22:20.385Z",
+  "last_publication_at": "2026-11-07T05:46:04.138Z",
   "last_reconciliation_at": "2026-11-07T05:45:48Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 222,
@@ -28931,6 +28938,14 @@
       "kind": "archive",
       "operation": "2def3aea3d8a948b3a01086dcd48863acca4b50cfee93619da421cc8aec76cd9",
       "url": "https://tschopp.net/@Ted/117557909283514045"
+    },
+    {
+      "canonical_url": "https://tedt.org/Human-Approval-Has-a-Speed-Limit/",
+      "created_at": "2026-11-07T05:46:04.138Z",
+      "id": "117573573944110268",
+      "kind": "new",
+      "operation": "5b24afd4b8c3ef00d2d91aa02245b2e88d2c3a31e1daf03eefecafb4eaeae80d",
+      "url": "https://tschopp.net/@Ted/117573573944110268"
     }
   ],
   "run_count": 553,
