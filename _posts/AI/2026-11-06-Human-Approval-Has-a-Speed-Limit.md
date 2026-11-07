@@ -80,14 +80,19 @@ These are illustrative numbers. The arithmetic is useful because it exposes a co
 
 A headcount tells you how many people belong to the team. A review plan needs to say when those people can do this particular work.
 
+{% comment %}
 <!-- markdownlint-disable MD055 MD056 -->
+{% endcomment %}
+
 | Review arrangement                    | Review demand per day | Protected capacity per day | What the averaged model shows                         |
 |---------------------------------------|:---------------------:|:--------------------------:|:------------------------------------------------------|
 | Two reviewers with four hours each    |       16 hours        |          8 hours           | Eight hours added to the queue each day.              |
 | Two reviewers with eight hours each   |       16 hours        |          16 hours          | No spare capacity. Any starting queue remains.        |
 | Three reviewers with eight hours each |       16 hours        |          24 hours          | Eight hours available for existing work or variation. |
 {: .well .table .table-striped}
+{% comment %}
 <!-- markdownlint-enable MD055 MD056 -->
+{% endcomment %}
 
 The eight-hour cases show the boundary in the calculation. They are not a recommendation to schedule uninterrupted reviewing for an entire working day.
 
