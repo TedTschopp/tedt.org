@@ -10903,7 +10903,7 @@
       }
     },
     "https://tedt.org/Human-Approval-Has-a-Speed-Limit/": {
-      "fingerprint": "39f13061e7afbf98533cc34fa82481771bf9d501c0fe8471b5995eb1df425926",
+      "fingerprint": "d501f03a43842ade3b64b35a685059eb75810d912d98458bffc7b1f57b5272f8",
       "targets": [
         "https://aws.amazon.com/blogs/machine-learning/how-u-mobile-built-agentic-telco-operations-with-amazon-bedrock-agentcore/",
         "https://commandline.microsoft.com/how-we-built-copilot-cowork-python-to-rust-migration/",
@@ -10924,13 +10924,13 @@
         "https://tedt.org/How-Much-Work-Can-Your-AI-Safely-Own/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/m9gnLOpoinwSPROsi5v2",
+          "receipt": "https://webmention.io/tedt.org/webmention/nYOaeDHwLq_gUBrv5vEB",
           "attempts": 1
         },
         "https://tedt.org/The-Cost-of-a-Finished-Job/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/sBy5MFhatFyRqlvbEpaU",
+          "receipt": "https://webmention.io/tedt.org/webmention/kG2kJPnqjTvxJcr6to8B",
           "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
