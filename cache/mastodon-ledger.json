@@ -7030,12 +7030,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "5a013d3e4f4173d984f4022b64d0c30661324d6e6876777239e30d039dc94736",
-        "kind": "archive",
-        "started_at": "2026-11-07T22:27:28Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-07T22:27:41.323Z",
+          "id": "117577512473269654",
+          "url": "https://tschopp.net/@Ted/117577512473269654"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7043,8 +7044,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Brudda.md"
       ],
-      "state": "uncertain",
-      "title": "Brudda"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-07T22:27:41.323Z",
+        "id": "117577512473269654",
+        "url": "https://tschopp.net/@Ted/117577512473269654"
+      },
+      "title": "Brudda",
+      "verified_at": "2026-11-07T22:27:28Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Brutus.html": {
       "aliases": [
@@ -27728,7 +27735,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-07T18:50:27.333Z",
+  "last_publication_at": "2026-11-07T22:27:41.323Z",
   "last_reconciliation_at": "2026-11-07T22:27:28Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 226,
@@ -29020,6 +29027,14 @@
       "kind": "archive",
       "operation": "186009ddd05046f7167bf73f06db36ebd8a4010712682b2a29f5599c46d96449",
       "url": "https://tschopp.net/@Ted/117576658277645111"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Brudda.html",
+      "created_at": "2026-11-07T22:27:41.323Z",
+      "id": "117577512473269654",
+      "kind": "archive",
+      "operation": "5a013d3e4f4173d984f4022b64d0c30661324d6e6876777239e30d039dc94736",
+      "url": "https://tschopp.net/@Ted/117577512473269654"
     }
   ],
   "run_count": 558,
