@@ -12,6 +12,10 @@ quotes, Gamma World records, presentations, and relocated prompts, while excludi
 drafts and the Policy/Homepage utility sections. `web_published_at` takes
 precedence over a historical source `date`.
 
+Set `mastodon-skip: true` on a post to publish it on TedT.org without adding it
+to the Mastodon queue. Managed Micropub entries require their usual explicit
+syndication selection.
+
 `_code/mastodon_sync.py` owns migration, reconciliation, queue selection, receipts,
 and front-matter updates. The original `cache/jsonfeed-to-mastodon.json` remains
 an immutable migration input. Do not normalize its keys and restart the retired

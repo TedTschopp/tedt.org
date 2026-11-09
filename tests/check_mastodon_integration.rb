@@ -58,13 +58,15 @@ manifest = JSON.parse(output)
 expected = site.posts.docs.reject do |post|
   post.relative_path.downcase.match?(%r{\A_posts/(policy|homepage)/}) ||
     post.data['published'] == false ||
+    post.data['mastodon-skip'] == true ||
     (post.data['micropub'] && post.data['mastodon-syndicate'] != true) ||
     (post.data['redirect_to'] && URI.parse(post.data['redirect_to']).host != 'ai.tedt.org')
 end
 actual = manifest.fetch('items').map { |item| item.fetch('source_path') }
 errors << 'Manifest does not cover the complete eligible Jekyll archive' unless actual.sort == expected.map(&:relative_path).sort
 # Exercise the real exporter with independent fixture documents. Managed posts
-# require an explicit boolean opt-in; ordinary archive posts keep their behavior.
+# require an explicit boolean opt-in. Ordinary posts syndicate by default and
+# can opt out with a dedicated boolean flag.
 Dir.mktmpdir('tedt-mastodon-selection-') do |fixture|
   config = {'url' => 'https://fixture.example', 'quiet' => true,
     'mastodon_comments' => {'host' => 'tschopp.net', 'username' => 'Ted'}}
@@ -74,6 +76,8 @@ Dir.mktmpdir('tedt-mastodon-selection-') do |fixture|
   entries = {
     'ordinary' => {},
     'ordinary-with-false-flag' => {'mastodon-syndicate' => false},
+    'ordinary-optout' => {'mastodon-skip' => true},
+    'ordinary-string-skip' => {'mastodon-skip' => 'true'},
     'managed-default' => {'micropub' => managed},
     'managed-optout' => {'micropub' => managed, 'mastodon-syndicate' => false},
     'managed-optin' => {'micropub' => managed, 'mastodon-syndicate' => true},
@@ -87,8 +91,8 @@ Dir.mktmpdir('tedt-mastodon-selection-') do |fixture|
     root.join('_code/mastodon_manifest.rb').to_s, '--root', fixture, chdir: root.to_s)
   if fixture_status.success?
     selected = JSON.parse(fixture_output).fetch('items').map { |item| URI(item.fetch('canonical_url')).path }.sort
-    errors << 'Manifest must preserve ordinary posts and require managed boolean opt-in' unless
-      selected == ['/managed-optin/', '/ordinary-with-false-flag/', '/ordinary/'].sort
+    errors << 'Manifest must honor ordinary boolean opt-out and managed boolean opt-in' unless
+      selected == ['/managed-optin/', '/ordinary-with-false-flag/', '/ordinary-string-skip/', '/ordinary/'].sort
   else
     errors << "Manifest selection fixtures failed: #{fixture_error}"
   end
