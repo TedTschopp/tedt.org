@@ -4,7 +4,7 @@ title: "The Two Business Cases for AI Agents"
 subtitle: "What a parts counter can teach us about growth, operating costs, and the next model release."
 date: 2026-11-09 00:00:00 -0800
 permalink: /The-Two-Business-Cases-for-AI-Agents/
-mastodon-syndicate: false
+mastodon-skip: true
 author:
   avatar: "https://secure.gravatar.com/avatar/a76b4d6291cecb3a738896a971bfb903?s=512&d=mp&r=mp"
   name: Ted Tschopp
