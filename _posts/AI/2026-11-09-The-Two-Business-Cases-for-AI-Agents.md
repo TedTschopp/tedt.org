@@ -40,6 +40,8 @@ The nameplate in the photograph is missing two digits. There are three versions 
 
 Imagine you run that distributor. You could use an AI agent to help the quote desk deal with emails like this more cheaply. You could also sell a next-day sourcing service to customers who will pay to get a hard-to-find part located and verified. Both jobs start with the same email. They come to the investment meeting with different evidence. The new service needs paying customers. The quote desk needs a cost it can take out of the budget.
 
+Suppose the team has room for 45 orders a month and only 30 paid orders come in. What does that do to the case for spending money on AI? [Try the 30-order example in the lab](https://tools.tedt.org/agent-business-case-lab.html#try-example).
+
 There is a third decision waiting for both teams. A model supplier will eventually ship another version. Some instructions and scripts that helped the old model may be work the new one can do. How do you find out what you can take away?
 
 ## Sell the new service
@@ -48,7 +50,7 @@ The distributor already sells parts. The new thing is a promise that customers c
 
 That pilot tells you something a demonstration cannot. Will a maintenance manager actually pay $100 for the promise? It also gives the team the first version of the process. Record how many paid orders customers place and how many the desk can finish. For each request, keep the part you identified, who verified it and when the answer went out. Those records become the beginning of the data model and the first cases against which the team can test the agent.
 
-Say the team gets 200 eligible requests in a typical month. In this example, it manually fulfills 30 paid orders at $100 each. At $60 in delivery cost per order, the service contributes $1,200 a month before shared overhead. Suppose a workflow with the model can handle 45 orders a month. It costs $40 to deliver each order, plus $200 a month to run the workflow. Getting it started costs $2,000.
+Say the team gets 200 eligible requests in a typical month. It fills 30 paid orders by hand at $100 each. The $3,000 customers pay is revenue. Take out the $60 it costs to deliver each order and you have $1,200 left for the month. That money left after the costs of delivering and running the service is its contribution. Suppose a workflow with the model can handle 45 orders a month. It costs $40 to deliver each order, plus $200 a month to run the workflow. Getting it started costs $2,000.
 
 Start with the 30 orders you already have. At the same $100 fee, revenue is $3,000 a month either way. Over twelve months, the lower delivery cost adds $2,800 in contribution after the launch cost. Now find 15 more orders a month from customers willing to pay for the same promise. At 45 paid orders, monthly revenue rises to $4,500 and monthly contribution to $2,500. Over those twelve months, the gain over the manual pilot rises to $13,600 after the launch cost.
 
@@ -82,7 +84,7 @@ Say the new model without the script comes in at 98.9% correct, with an hour and
 
 From the original quote desk, suppose the total cutover would cost $3,000. At $3,800 a month for the new workflow, ending the $1,000 support contract would save $11,400 over twelve months after accounting for the cutover. Keep paying for support and the same comparison shows a $600 loss.
 
-If today’s model is already running, start with the $4,650 the desk spends each month. The original cutover is behind you. Suppose another $1,000 is still needed to switch. End the support contract and you save $850 a month, or $9,200 over twelve months after the switch cost. Keep the contract and the new model costs $150 more each month. Including the switch cost, keeping today’s model saves $2,800 over those twelve months.
+If today’s model is already running, start with the $4,650 the desk spends each month. The original cutover is behind you. Suppose another $1,000 is still needed to switch. End the support contract and you save $850 a month, or $9,200 over twelve months after the switch cost. Keep the contract and either upgrade costs $150 more each month. Including the switch cost, either upgrade costs $2,800 more than keeping today’s model over those twelve months.
 
 A different desk may still need the contractor. Keep that bill in the calculation until someone can cancel it. If the trial holds and the switch pays, roll it out with a fallback and retire the script once the desk can do without it.
 
@@ -90,6 +92,8 @@ There is precedent for removing instructions that newer models can do without. C
 
 ## Try the Agent Business Case Lab
 
-Open the [Agent Business Case Lab](https://tools.tedt.org/agent-business-case-lab.html) and start with the distributor. In **Growth**, set **Paid orders placed per month** to 30 and leave fulfillment capacity at 45. See how much of the case comes from lowering the cost of delivery. In **Operating cost**, turn off the option to cancel the support contract. The delivery checks can still pass for the upgrade without the script, even when keeping today’s model costs less. Set **Unsafe near-match tests** to **Failed** to see what happens to the upgrade without the routine. Choose **Start blank** to enter your own figures and identify where they came from.
+Open the [Agent Business Case Lab](https://tools.tedt.org/agent-business-case-lab.html#try-example) and start in **Growth**. Tap **Only 30 paid orders come in**. The team still has room for 45, so see how much of the gain comes from delivering the same orders at a lower cost.
+
+Then choose **Operating cost** and tap **Keep paying for support**. One result tells you whether the upgrade can do the work without the script. The other tells you what it costs to switch. Open **Edit assumptions** if you want to try a failed near-match test or start with your own figures.
 
 If you’re choosing where to begin, pull up one real request with the people who have to finish it. Follow it until a customer has an answer. Somewhere between that blurry photograph and the correct seal, you’ll find a job you can price, a rule somebody has to own, and a case worth keeping for the next time the model changes.
