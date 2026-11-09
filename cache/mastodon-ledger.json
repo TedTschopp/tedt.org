@@ -7363,12 +7363,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "5d091814a8c571b4ef197ad6b2c56c7accb2b7b5f039fb62e34d3fc2a271d5e4",
-        "kind": "archive",
-        "started_at": "2026-11-09T16:18:45Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-09T16:19:02.090Z",
+          "id": "117587387488044544",
+          "url": "https://tschopp.net/@Ted/117587387488044544"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7376,8 +7377,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cargolifter-Cargolifter--Heavy.md"
       ],
-      "state": "uncertain",
-      "title": "Cargolifter «Cargolifter - Heavy»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-09T16:19:02.090Z",
+        "id": "117587387488044544",
+        "url": "https://tschopp.net/@Ted/117587387488044544"
+      },
+      "title": "Cargolifter «Cargolifter - Heavy»",
+      "verified_at": "2026-11-09T16:18:45Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Carrin-Mech.html": {
       "aliases": [
@@ -27854,7 +27861,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-09T10:25:32.791Z",
+  "last_publication_at": "2026-11-09T16:19:02.090Z",
   "last_reconciliation_at": "2026-11-09T16:18:45Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 235,
@@ -29218,6 +29225,14 @@
       "kind": "archive",
       "operation": "b86de84f418f3798d94f10a5184ef9cee96727f9e31d27bf449973e47a3ea184",
       "url": "https://tschopp.net/@Ted/117585997515448832"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cargolifter-Cargolifter-Heavy.html",
+      "created_at": "2026-11-09T16:19:02.090Z",
+      "id": "117587387488044544",
+      "kind": "archive",
+      "operation": "5d091814a8c571b4ef197ad6b2c56c7accb2b7b5f039fb62e34d3fc2a271d5e4",
+      "url": "https://tschopp.net/@Ted/117587387488044544"
     }
   ],
   "run_count": 567,
