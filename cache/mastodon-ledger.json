@@ -7400,12 +7400,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "b1af7f89922ce689b174b2ed5759e4c2af5420b7579197a2c86c075db271e9fc",
-        "kind": "archive",
-        "started_at": "2026-11-09T17:50:35Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-09T17:50:50.051Z",
+          "id": "117587748457781067",
+          "url": "https://tschopp.net/@Ted/117587748457781067"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7413,8 +7414,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Carrin-Mech.md"
       ],
-      "state": "uncertain",
-      "title": "Carrin Mech"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-09T17:50:50.051Z",
+        "id": "117587748457781067",
+        "url": "https://tschopp.net/@Ted/117587748457781067"
+      },
+      "title": "Carrin Mech",
+      "verified_at": "2026-11-09T17:50:35Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cat-Folk-Katkin.html": {
       "aliases": [
@@ -27868,7 +27875,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-09T16:19:02.090Z",
+  "last_publication_at": "2026-11-09T17:50:50.051Z",
   "last_reconciliation_at": "2026-11-09T17:50:35Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 236,
@@ -29240,6 +29247,14 @@
       "kind": "archive",
       "operation": "5d091814a8c571b4ef197ad6b2c56c7accb2b7b5f039fb62e34d3fc2a271d5e4",
       "url": "https://tschopp.net/@Ted/117587387488044544"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Carrin-Mech.html",
+      "created_at": "2026-11-09T17:50:50.051Z",
+      "id": "117587748457781067",
+      "kind": "archive",
+      "operation": "b1af7f89922ce689b174b2ed5759e4c2af5420b7579197a2c86c075db271e9fc",
+      "url": "https://tschopp.net/@Ted/117587748457781067"
     }
   ],
   "run_count": 568,
