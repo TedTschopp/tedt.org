@@ -7289,12 +7289,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "210c11ea1a228297caa5141ada15255abc7073e69815d3d204a93e4879a41f75",
-        "kind": "archive",
-        "started_at": "2026-11-09T04:21:51Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-09T04:22:05.867Z",
+          "id": "117584568376846223",
+          "url": "https://tschopp.net/@Ted/117584568376846223"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7302,8 +7303,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cana.md"
       ],
-      "state": "uncertain",
-      "title": "Cana"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-09T04:22:05.867Z",
+        "id": "117584568376846223",
+        "url": "https://tschopp.net/@Ted/117584568376846223"
+      },
+      "title": "Cana",
+      "verified_at": "2026-11-09T04:21:51Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Captain-Gelmar.html": {
       "aliases": [
@@ -27826,7 +27833,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-09T02:42:59.989Z",
+  "last_publication_at": "2026-11-09T04:22:05.867Z",
   "last_reconciliation_at": "2026-11-09T04:21:51Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 233,
@@ -29174,6 +29181,14 @@
       "kind": "archive",
       "operation": "36f0b095a26a8cdabfb9070474d3f8528a13cfc026bad926111a4932f237508e",
       "url": "https://tschopp.net/@Ted/117584178707816874"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cana.html",
+      "created_at": "2026-11-09T04:22:05.867Z",
+      "id": "117584568376846223",
+      "kind": "archive",
+      "operation": "210c11ea1a228297caa5141ada15255abc7073e69815d3d204a93e4879a41f75",
+      "url": "https://tschopp.net/@Ted/117584568376846223"
     }
   ],
   "run_count": 565,
