@@ -40,7 +40,7 @@ The nameplate in the photograph is missing two digits. There are three versions 
 
 Imagine you run that distributor. You could use an AI agent to help the quote desk deal with emails like this more cheaply. You could also sell a next-day sourcing service to customers who will pay to get a hard-to-find part located and verified. Both jobs start with the same email. They come to the investment meeting with different evidence. The new service needs paying customers. The quote desk needs a cost it can take out of the budget.
 
-Suppose the team has room for 45 orders a month and only 30 paid orders come in. What does that do to the case for spending money on AI? [Try the 30-order example in the lab](https://tools.tedt.org/agent-business-case-lab.html#try-example).
+Suppose the team can fill up to 45 orders a month with AI and only 30 paid orders come in. How much do customers spend? How much is left after the distributor pays to run the service? [Try the 30-order example in the lab](https://tools.tedt.org/agent-business-case-lab.html#try-example).
 
 There is a third decision waiting for both teams. A model supplier will eventually ship another version. Some instructions and scripts that helped the old model may be work the new one can do. How do you find out what you can take away?
 
