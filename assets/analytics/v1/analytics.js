@@ -13,10 +13,11 @@ layout: null
   var sensitiveQuery = /^(?:code|state|token|access_token|refresh_token|id_token|session|secret|api_key|key)$/i;
   var current = new URL(w.location.href);
   if (blockedPath.test(current.pathname) || Array.from(current.searchParams.keys()).some(function (key) { return sensitiveQuery.test(key); })) return;
+  var publicWorkspaceHost = /^(?:tools|evals|plotto|islands|randomtables|random-constellations|spieldose)\.tedt\.org$/.test(host);
+  var workspacePath = /^\/(?:tools|RPG|inside-ai|game-theory|math-guide)(?:\/|$)/i.test(current.pathname);
   var masked = (embed && embed.dataset.privacy === 'masked') ||
-    /^(?:member(?:-preview)?|tools|evals|plotto|islands|randomtables|random-constellations|spieldose)\.tedt\.org$/.test(host) ||
-    /^\/(?:tools|RPG|inside-ai|game-theory|math-guide)(?:\/|$)/i.test(current.pathname);
-  w.__TedTAnalyticsV1 = { version: '1.0.1', masked: masked };
+    /^(?:member(?:-preview)?)\.tedt\.org$/.test(host) || publicWorkspaceHost || workspacePath;
+  w.__TedTAnalyticsV1 = { version: '1.0.2', masked: masked };
 
   // Apply the privacy boundary before loading a vendor SDK, including future DOM content.
   function maskContent() {
@@ -49,6 +50,10 @@ layout: null
   w.dataLayer = w.dataLayer || [];
   w.gtag = w.gtag || function () { w.dataLayer.push(arguments); };
   var ga = settings.ga4 || {}, clarity = settings.clarity || {}, cf = settings.cloudflare || {};
+  var publicWorkspace = publicWorkspaceHost || ((host === 'tedt.org' || host === 'www.tedt.org') && workspacePath);
+  // Capture the loaded page's title before workspace interactions can change it.
+  var workspaceTitle = publicWorkspace ? (d.title.trim() || host) : 'Private workspace';
+  function titleForAnalytics() { return masked ? workspaceTitle : d.title; }
   function event(name, parameters) {
     if (ga.measurement_id) w.gtag('event', name, Object.assign({ send_to: ga.measurement_id }, parameters));
   }
@@ -59,14 +64,14 @@ layout: null
     if (lastPage === location) return;
     lastPage = location;
     event('page_view', { page_location: location,
-      page_title: masked ? 'Private workspace' : d.title,
+      page_title: titleForAnalytics(),
       page_referrer: d.referrer ? urlForAnalytics(d.referrer, true) : '' });
   }
   if (ga.measurement_id && settings.provider === 'ga4') {
     w.gtag('js', new Date());
     w.gtag('config', ga.measurement_id, { send_page_view: false, anonymize_ip: true,
       allow_google_signals: false, allow_ad_personalization_signals: false, transport_type: 'beacon',
-      page_location: urlForAnalytics(w.location.href, masked), page_title: masked ? 'Private workspace' : d.title,
+      page_location: urlForAnalytics(w.location.href, masked), page_title: titleForAnalytics(),
       page_referrer: d.referrer ? urlForAnalytics(d.referrer, true) : '' });
     pageView();
     if (!d.querySelector('script[src*="googletagmanager.com/gtag/js"]')) load('https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(ga.measurement_id));
