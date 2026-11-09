@@ -19,6 +19,11 @@ URLs and navigation metadata; content masking is not complete URL anonymization.
 Authentication, payment, API, callback, and logout operations are excluded.
 Localhost, file URLs, and hosts outside tedt.org never initialize collectors.
 
+GA4 uses the published page title on known public tool and lab sites and public
+workspace paths on tedt.org. The runtime captures the title once per document to
+keep later workspace state out of it. Untitled public workspaces use the hostname.
+Member pages and other masked workspaces use `Private workspace`.
+
 Masked HTML includes body masking before scripts run, including cached runtimes.
 Masked mode also masks the body explicitly and tightens Clarity's queued startup
 configuration before its SDK runs. Project-level unmask selectors cannot relax a

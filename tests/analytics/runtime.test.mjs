@@ -11,11 +11,14 @@ const runtime = await readFile(new URL('../../_site/assets/analytics/v1/analytic
 let browser;
 before(async () => { browser = await chromium.launch({ headless: true }); });
 after(async () => { await browser?.close(); });
-async function fixture({ host = 'ai.tedt.org', path = '/', mode = 'standard', duplicate = false, cf = false, fail = false } = {}) {
+async function fixture({
+  host = 'ai.tedt.org', path = '/', mode = 'standard', title = 'Test public title',
+  duplicate = false, cf = false, fail = false,
+} = {}) {
   const context = await browser.newContext();
   const page = await context.newPage(), requests = [], errors = [];
   const tag = `<script defer src="${runtimeURL}" data-privacy="${mode}"></script>`;
-  const body = `<html><head><title>Test public title</title>${tag}${duplicate ? tag : ''}${cf ? '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{}"></script>' : ''}</head><body><main id="app">Ready</main><p data-clarity-unmask="true">PRIVATE_CANARY</p><a id="outside" href="https://example.com/path?private=PRIVATE_CANARY">PRIVATE_CANARY</a><a id="download" download href="/PRIVATE_CANARY.zip">Download</a><form><input type="search" name="q" id="search"></form></body></html>`;
+  const body = `<html><head><title>${title}</title>${tag}${duplicate ? tag : ''}${cf ? '<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{}"></script>' : ''}</head><body><main id="app">Ready</main><p data-clarity-unmask="true">PRIVATE_CANARY</p><a id="outside" href="https://example.com/path?private=PRIVATE_CANARY">PRIVATE_CANARY</a><a id="download" download href="/PRIVATE_CANARY.zip">Download</a><form><input type="search" name="q" id="search"></form></body></html>`;
   page.on('pageerror', e => errors.push(String(e)));
   await page.route('**/*', async route => {
     const url = route.request().url();
@@ -48,7 +51,7 @@ test('initializes all three once and preserves public events', async () => {
   } finally { await f.context.close(); }
 });
 test('private mode masks before Clarity and omits private event values', async () => {
-  const f = await fixture({ host: 'member.tedt.org', path: '/library/?q=PRIVATE_CANARY', mode: 'masked' });
+  const f = await fixture({ host: 'member.tedt.org', path: '/library/?q=PRIVATE_CANARY', mode: 'masked', title: 'PRIVATE_CANARY' });
   try {
     assert.equal(await f.page.evaluate(() => window.__maskedAtLoad), 'true');
     assert.equal(await f.page.evaluate(() => window.__bodyMaskedAtLoad), 'true');
@@ -63,6 +66,30 @@ test('private mode masks before Clarity and omits private event values', async (
     assert.ok(!JSON.stringify(await f.commands()).includes('PRIVATE_CANARY'));
     assert.ok(!(await f.commands()).some(x => x[1] === 'search'));
   } finally { await f.context.close(); }
+});
+test('masked documents report public titles only on known public workspaces', async () => {
+  const cases = [
+    { host: 'tools.tedt.org', path: '/game-theory/', mode: 'masked', expectedTitle: 'Test public title' },
+    { host: 'tedt.org', path: '/inside-ai/', expectedTitle: 'Test public title' },
+    { host: 'random-constellations.tedt.org', path: '/', title: '', expectedTitle: 'random-constellations.tedt.org' },
+    { host: 'member-preview.tedt.org', path: '/tools/', title: 'PRIVATE_CANARY', expectedTitle: 'Private workspace' },
+    { host: 'ai.tedt.org', path: '/tools/', mode: 'masked', title: 'PRIVATE_CANARY', expectedTitle: 'Private workspace' },
+  ];
+  for (const { expectedTitle, ...options } of cases) {
+    const f = await fixture({ ...options, path: `${options.path}?q=PRIVATE_CANARY#PRIVATE_CANARY` });
+    try {
+      assert.equal(await f.page.evaluate(() => window.__bodyMaskedAtLoad), 'true');
+      await f.page.evaluate(() => {
+        document.title = 'PRIVATE_CANARY';
+        history.pushState({}, '', `${location.pathname}second/?q=PRIVATE_CANARY#PRIVATE_CANARY`);
+      });
+      await f.page.waitForFunction(() => window.dataLayer.filter(command => command[1] === 'page_view').length === 2);
+      const commands = await f.commands();
+      const titles = commands.filter(x => x[0] === 'config' || x[1] === 'page_view').map(x => x[2].page_title);
+      assert.deepEqual(titles, [expectedTitle, expectedTitle, expectedTitle], options.host);
+      assert.ok(!JSON.stringify(commands).includes('PRIVATE_CANARY'), options.host);
+    } finally { await f.context.close(); }
+  }
 });
 test('uses an existing Cloudflare beacon and records one URL-changing navigation', async () => {
   const f = await fixture({ cf: true });
