@@ -10942,6 +10942,54 @@
           "attempts": 1
         }
       }
+    },
+    "https://tedt.org/The-Two-Business-Cases-for-AI-Agents/": {
+      "fingerprint": "1004ac57e7723988caa8b390b7ef01823eebd9d3155816a2c97c83b4d4a6cc44",
+      "targets": [
+        "https://cursor.com/blog/improved-token-efficiency",
+        "https://doi.org/10.1093/qje/qjae044",
+        "https://openai.com/index/sycophancy-in-gpt-4o/",
+        "https://tedt.org/Model-Portability-Is-Not-AI-Portability/",
+        "https://tedt.org/The-Cost-of-a-Finished-Job/",
+        "https://tools.tedt.org/agent-business-case-lab.html",
+        "https://tools.tedt.org/inside-ai/"
+      ],
+      "deliveries": {
+        "https://cursor.com/blog/improved-token-efficiency": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://doi.org/10.1093/qje/qjae044": {
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-11-09T17:18:31+00:00"
+        },
+        "https://openai.com/index/sycophancy-in-gpt-4o/": {
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-11-09T17:18:31+00:00"
+        },
+        "https://tedt.org/Model-Portability-Is-Not-AI-Portability/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/jkHQhr18xnuArx_9Dzdz",
+          "attempts": 1
+        },
+        "https://tedt.org/The-Cost-of-a-Finished-Job/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/VhDGoKgLG9BRtUYolJWx",
+          "attempts": 1
+        },
+        "https://tools.tedt.org/agent-business-case-lab.html": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://tools.tedt.org/inside-ai/": {
+          "state": "unsupported",
+          "attempts": 1
+        }
+      }
     }
   }
 }
