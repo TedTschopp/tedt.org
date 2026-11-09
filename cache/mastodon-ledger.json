@@ -7252,12 +7252,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "36f0b095a26a8cdabfb9070474d3f8528a13cfc026bad926111a4932f237508e",
-        "kind": "archive",
-        "started_at": "2026-11-09T02:42:44Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-09T02:42:59.989Z",
+          "id": "117584178707816874",
+          "url": "https://tschopp.net/@Ted/117584178707816874"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7265,8 +7266,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cactisaurus-Rex.md"
       ],
-      "state": "uncertain",
-      "title": "Cactisaurus Rex"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-09T02:42:59.989Z",
+        "id": "117584178707816874",
+        "url": "https://tschopp.net/@Ted/117584178707816874"
+      },
+      "title": "Cactisaurus Rex",
+      "verified_at": "2026-11-09T02:42:44Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cana.html": {
       "aliases": [
@@ -27812,7 +27819,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-08T23:08:11.959Z",
+  "last_publication_at": "2026-11-09T02:42:59.989Z",
   "last_reconciliation_at": "2026-11-09T02:42:44Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 232,
@@ -29152,6 +29159,14 @@
       "kind": "archive",
       "operation": "6b122048644578a27765b1970cf614a22c23a923b7dec7c0d8c67b5e05599418",
       "url": "https://tschopp.net/@Ted/117583334077861763"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cactisaurus-Rex.html",
+      "created_at": "2026-11-09T02:42:59.989Z",
+      "id": "117584178707816874",
+      "kind": "archive",
+      "operation": "36f0b095a26a8cdabfb9070474d3f8528a13cfc026bad926111a4932f237508e",
+      "url": "https://tschopp.net/@Ted/117584178707816874"
     }
   ],
   "run_count": 564,
