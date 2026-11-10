@@ -10961,13 +10961,13 @@
         },
         "https://doi.org/10.1093/qje/qjae044": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-11-10T17:02:28+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-11-11T04:38:01+00:00"
         },
         "https://openai.com/index/sycophancy-in-gpt-4o/": {
           "state": "retry",
-          "attempts": 3,
-          "next_attempt": "2026-11-10T17:02:28+00:00"
+          "attempts": 4,
+          "next_attempt": "2026-11-11T04:38:01+00:00"
         },
         "https://tedt.org/Model-Portability-Is-Not-AI-Portability/": {
           "state": "accepted",
