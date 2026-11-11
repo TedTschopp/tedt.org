@@ -13,12 +13,14 @@ remain outside the website repository.
 
 The character sheet does not fetch catalog JSON during ordinary page load.
 Each gear table appears before a closed Add disclosure. Opening that disclosure
-reveals the Maximum Tech Level, First Restricted Law Level, and Legal Category
-catalog filters with always-visible, book-backed help for the selected gear
-kind, the catalog button, and the custom-entry fallback. The three filter/help
+reveals the Maximum Tech Level, First Restricted Law Level, Legal Category, and
+Required Skill catalog filters, a result-sort control, the catalog button, and
+the custom-entry fallback. Tech, Law, and Legal Category retain always-visible,
+book-backed help for the selected gear kind. Those three filter/help
 columns share a common height on desktop and return to natural document height
 on narrow screens. Opening the Add disclosure lazily loads only the manifest
-needed for guidance and descriptive option labels; it does not load the catalog
+needed for guidance, descriptive option labels, and kind-specific skill choices;
+it does not load the catalog
 index. Choosing an item from the catalog
 launches one shared Gear Locker and loads the index once. It fetches only the
 selected exact variant's detail shard. If a request fails, the collapsible
@@ -34,7 +36,18 @@ The Add-disclosure filters are applied to exact variants before `itemId`
 grouping. Maximum Tech Level compares the variant's table TL. First Restricted
 Law Level is an exact classification filter, not a claim that an item is legal
 on a selected world. Legal Category is also an exact classification filter.
+Required Skill matches stable structured filter values; a conditional
+requirement with alternatives matches either skill. Unresolved or Not Recorded
+matches only the explicit unresolved/not-recorded status, never a candidate
+skill inferred from display text.
 The filters never alter gear already on the character sheet.
+
+Name is the default result order. Tech Level sorting is applied after exact
+variant filtering and before pagination. Each visible group uses the lowest
+safely parsed TL among its currently matching variants; unknown or unparsed
+groups remain last in both directions. Search relevance and canonical name are
+deterministic tie-breakers. Exact variants inside a group use the same selected
+Tech Level direction.
 
 Maximum Tech Level is a technology cutoff, not a legality or availability
 claim. `Up to TL N` includes exact variants whose safely parsed recorded TL, or
@@ -50,12 +63,55 @@ closed.
 
 ```json
 {
-  "schemaVersion": "1.4.0",
-  "catalogVersion": "0.3.5",
+  "schemaVersion": "1.5.0",
+  "catalogVersion": "0.3.6",
   "entryCount": 1869,
   "personalDefaultCount": 1209,
   "defaultFilter": "personal",
   "detailShards": ["details-00.json", "details-01.json"],
+  "skillFilterReference": {
+    "valueSemantics": "source_recorded_required_use_skill",
+    "filterSemantics": "Family options match any structured requirement in that family; exact options match the named speciality. Conditional alternatives match either skill.",
+    "unresolvedValue": "unresolved_or_not_recorded",
+    "unresolvedLabel": "Unresolved or not recorded",
+    "optionsByKind": {
+      "weapon": [
+        {
+          "value": "family:gun_combat",
+          "label": "Gun Combat — all specialities",
+          "optionType": "family",
+          "familyId": "gun_combat",
+          "familyLabel": "Gun Combat",
+          "specialityId": null,
+          "specialityLabel": null,
+          "variantCount": 134
+        },
+        {
+          "value": "exact:gun_combat:slug",
+          "label": "Gun Combat (slug)",
+          "optionType": "exact",
+          "familyId": "gun_combat",
+          "familyLabel": "Gun Combat",
+          "specialityId": "slug",
+          "specialityLabel": "slug",
+          "variantCount": 65
+        },
+        {
+          "value": "unresolved_or_not_recorded",
+          "label": "Unresolved or not recorded",
+          "optionType": "status",
+          "familyId": null,
+          "familyLabel": null,
+          "specialityId": null,
+          "specialityLabel": null,
+          "variantCount": 134
+        }
+      ],
+      "armour": [],
+      "augment": [],
+      "equipment": []
+    }
+  },
   "techLevelReference": {
     "rulesContext": "Tech Level definitions and item introduction guidance.",
     "valueSemantics": "world_capability_and_item_introduction_level",
@@ -353,6 +409,18 @@ accepts camelCase and snake_case aliases. A schema 1.3 or older manifest without
 `legalCategoryReference` retains exact matching and renders neutral static help
 without fabricating examples, neighbors, or citations.
 
+`skillFilterReference` supplies a kind-pure, manifest-sized list of stable skill
+filter choices. `optionsByKind` always owns separate arrays for `weapon`,
+`armour`, `augment`, and `equipment`; the consumer never borrows another kind's
+options. Family options use `family:<familyId>`. Exact options use
+`exact:<familyId>:<specialityId-or-none>`. The status option uses
+`unresolvedValue`. Human labels and counts may change without changing those
+stable values. Options are ordered by family label, with each family followed by
+its exact children and the status option last. A schema 1.4 manifest without
+`skillFilterReference` retains the static Any and Unresolved/Not Recorded
+fallback choices and never parses a displayed skill string into a candidate
+filter value.
+
 Static HTML contains the same kind-specific concise option labels and useful
 Any-state explanations as a network-failure fallback. It also seeds descriptive
 Tech Level 0-through-15 milestone labels, shared 16+ wording, an explicit
@@ -393,6 +461,19 @@ Each index item has this shape:
   "summaryStatus": "complete",
   "reviewFlags": [],
   "requiredSkillStatus": "resolved",
+  "requiredSkills": [
+    {
+      "familyId": "gun_combat",
+      "familyLabel": "Gun Combat",
+      "specialityId": "slug",
+      "specialityLabel": "slug",
+      "minimumLevel": null,
+      "condition": "",
+      "raw": "Gun Combat (slug)",
+      "fieldState": "stated",
+      "filterValues": ["family:gun_combat", "exact:gun_combat:slug"]
+    }
+  ],
   "domains": ["personal"],
   "combatScale": "personal",
   "mountContext": "handheld",
@@ -416,7 +497,9 @@ Each index item has this shape:
 
 The index is intentionally compact. Initial search covers canonical and display
 names, stat line, role, domain, legality classification, and the exact `sheet`
-fields. `canonicalName` is the player-facing item-group label. Items with the
+fields. It also includes structured skill labels and raw requirement text for
+search, but filtering uses only `requiredSkills[].filterValues` and never parses
+those labels. `canonicalName` is the player-facing item-group label. Items with the
 same `itemId` are exact variants of that group; `variantId` is the unique lookup
 key.
 
