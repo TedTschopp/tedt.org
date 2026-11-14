@@ -408,6 +408,17 @@ jobs:
           python3 scripts/site_analytics.py _site
           python3 scripts/site_analytics.py _site --check
 
+      - name: Check GitHub Pages size limit
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+
+          size = sum(path.stat().st_size for path in Path('_site').rglob('*') if path.is_file())
+          print(f'Publishing {size:,} bytes to GitHub Pages.')
+          if size > 1_000_000_000:
+              raise SystemExit('::error::GitHub Pages output exceeds 1 GB. Remove large source files or move large media to separate hosting before deploying.')
+          PY
+
       - name: Upload artifact
         if: (github.event_name == 'push' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v5
@@ -427,5 +438,3 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
-        with:
-          timeout: 1800000
