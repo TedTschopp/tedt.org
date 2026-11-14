@@ -7474,12 +7474,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "9a75386c890bbcd31aa2d729a94bf025f97efa08e072c1903d5ad28f55870941",
-        "kind": "archive",
-        "started_at": "2026-11-14T21:02:36Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-14T21:02:53.449Z",
+          "id": "117616815207095337",
+          "url": "https://tschopp.net/@Ted/117616815207095337"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7487,8 +7488,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cave-Dabbers-Bigoon.md"
       ],
-      "state": "uncertain",
-      "title": "Cave Dabbers «Bigoon»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-14T21:02:53.449Z",
+        "id": "117616815207095337",
+        "url": "https://tschopp.net/@Ted/117616815207095337"
+      },
+      "title": "Cave Dabbers «Bigoon»",
+      "verified_at": "2026-11-14T21:02:36Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cheguin.html": {
       "aliases": [
@@ -27896,7 +27903,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-14T17:27:00.429Z",
+  "last_publication_at": "2026-11-14T21:02:53.449Z",
   "last_reconciliation_at": "2026-11-14T21:02:36Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 238,
@@ -29284,6 +29291,14 @@
       "kind": "archive",
       "operation": "8e48792125f4ef00be42778cfc11fe9ec617b96559f28bfce0c6f92c20a413f4",
       "url": "https://tschopp.net/@Ted/117615966318036186"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cave-Dabbers-Bigoon.html",
+      "created_at": "2026-11-14T21:02:53.449Z",
+      "id": "117616815207095337",
+      "kind": "archive",
+      "operation": "9a75386c890bbcd31aa2d729a94bf025f97efa08e072c1903d5ad28f55870941",
+      "url": "https://tschopp.net/@Ted/117616815207095337"
     }
   ],
   "run_count": 570,
