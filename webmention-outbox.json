@@ -10944,14 +10944,14 @@
       }
     },
     "https://tedt.org/The-Two-Business-Cases-for-AI-Agents/": {
-      "fingerprint": "83d6afe22037042e0e205cb759dc0182efa797d2a9a9d382e45f58e16eecc2a2",
+      "fingerprint": "b30475b90aa60042400179613978b0ac0992ecb84b5edbf04ed0d3caa5938261",
       "targets": [
         "https://cursor.com/blog/improved-token-efficiency",
         "https://doi.org/10.1093/qje/qjae044",
         "https://openai.com/index/sycophancy-in-gpt-4o/",
         "https://tedt.org/Model-Portability-Is-Not-AI-Portability/",
         "https://tedt.org/The-Cost-of-a-Finished-Job/",
-        "https://tools.tedt.org/agent-business-case-lab.html",
+        "https://tools.tedt.org/agent-business-case-lab.html#try-example",
         "https://tools.tedt.org/inside-ai/"
       ],
       "deliveries": {
@@ -10961,24 +10961,24 @@
         },
         "https://doi.org/10.1093/qje/qjae044": {
           "state": "retry",
-          "attempts": 7,
-          "next_attempt": "2026-11-14T23:56:02+00:00"
+          "attempts": 1,
+          "next_attempt": "2026-11-14T18:27:26+00:00"
         },
         "https://openai.com/index/sycophancy-in-gpt-4o/": {
           "state": "retry",
-          "attempts": 7,
-          "next_attempt": "2026-11-14T23:56:02+00:00"
+          "attempts": 1,
+          "next_attempt": "2026-11-14T18:27:26+00:00"
         },
         "https://tedt.org/Model-Portability-Is-Not-AI-Portability/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/l06qGDKgl3ByFfW8-Xby",
+          "receipt": "https://webmention.io/tedt.org/webmention/56VbzvGcL7Uvjq4fGfCz",
           "attempts": 1
         },
         "https://tedt.org/The-Cost-of-a-Finished-Job/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/jPQBM55dwKqoT-CpwSBS",
+          "receipt": "https://webmention.io/tedt.org/webmention/f1k8iFcsi-VHmaB1IMJ4",
           "attempts": 1
         },
         "https://tools.tedt.org/agent-business-case-lab.html": {
@@ -10986,6 +10986,10 @@
           "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://tools.tedt.org/agent-business-case-lab.html#try-example": {
           "state": "unsupported",
           "attempts": 1
         }
