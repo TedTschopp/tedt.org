@@ -7437,12 +7437,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "8e48792125f4ef00be42778cfc11fe9ec617b96559f28bfce0c6f92c20a413f4",
-        "kind": "archive",
-        "started_at": "2026-11-14T17:26:44Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-14T17:27:00.429Z",
+          "id": "117615966318036186",
+          "url": "https://tschopp.net/@Ted/117615966318036186"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7450,8 +7451,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cat-Folk-Katkin.md"
       ],
-      "state": "uncertain",
-      "title": "Cat Folk «Katkin»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-14T17:27:00.429Z",
+        "id": "117615966318036186",
+        "url": "https://tschopp.net/@Ted/117615966318036186"
+      },
+      "title": "Cat Folk «Katkin»",
+      "verified_at": "2026-11-14T17:26:44Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cave-Dabbers-Bigoon.html": {
       "aliases": [
@@ -27882,7 +27889,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-09T17:50:50.051Z",
+  "last_publication_at": "2026-11-14T17:27:00.429Z",
   "last_reconciliation_at": "2026-11-14T17:26:44Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 237,
@@ -29262,6 +29269,14 @@
       "kind": "archive",
       "operation": "b1af7f89922ce689b174b2ed5759e4c2af5420b7579197a2c86c075db271e9fc",
       "url": "https://tschopp.net/@Ted/117587748457781067"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cat-Folk-Katkin.html",
+      "created_at": "2026-11-14T17:27:00.429Z",
+      "id": "117615966318036186",
+      "kind": "archive",
+      "operation": "8e48792125f4ef00be42778cfc11fe9ec617b96559f28bfce0c6f92c20a413f4",
+      "url": "https://tschopp.net/@Ted/117615966318036186"
     }
   ],
   "run_count": 569,
