@@ -44,8 +44,10 @@ unchanged. Incoming-sync timing is cached separately at
 `cache/webmention-incoming.json`, excluded from Pages and Git. Numeric and HTTP-date
 `Retry-After` values set a cooldown between one minute and one day. Missing or
 invalid headers use exponential delays from five minutes to one hour. An active
-cooldown makes no provider requests. A successful complete refresh resets it;
-other HTTP and pagination failures still fail the job. Deferred runs do not commit
+cooldown makes no provider requests. A successful complete refresh resets it.
+The incoming job retries interrupted connections twice per page. Certificate
+errors, exhausted retries, and other HTTP and pagination failures fail the job.
+Deferred runs do not commit
 metadata or request deployment, so a moderation decision is saved only after a
 successful complete refresh. Retry a deferred moderation run after its cooldown.
 

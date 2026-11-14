@@ -134,6 +134,40 @@ module IndieWebTests
     end
   end
 
+  def test_incoming_retry_repeats_only_the_interrupted_page
+    delays = []
+    http = FakeHTTP.new do |url, _|
+      page = URI.decode_www_form(URI(url).query).to_h.fetch('page').to_i
+      raise IndieWeb::RetryableTransport, 'connection reset' if page == 1 && http.requests.length == 2
+
+      response(JSON.generate('children' => [mention('wm-id': page + 1)], 'paging' => { 'total-pages' => 2 }))
+    end
+    rows = IndieWeb::Mentions.new(manifest, {}, http: http, wait: delays.method(:push)).fetch_pages([['target', 'https://tedt.org/Article/']])
+    equal([1, 2], rows.map { |row| row['wm-id'] })
+    equal([1], delays)
+    equal(http.requests[1], http.requests[2])
+  end
+
+  def test_exhausted_incoming_retries_do_not_publish_partial_cache
+    Dir.mktmpdir do |dir|
+      path = File.join(dir, 'mentions.json')
+      File.write(path, 'previous complete cache')
+      delays = []
+      http = FakeHTTP.new do |url, _|
+        page = URI.decode_www_form(URI(url).query).to_h.fetch('page')
+        raise IndieWeb::RetryableTransport, 'connection reset' if page == '1'
+
+        response(JSON.generate('children' => [mention], 'paging' => { 'total-pages' => 2 }))
+      end
+      sync = IndieWeb::Mentions.new(manifest, {}, http: http, wait: delays.method(:push))
+      refresh = IndieWeb::MentionRefresh.new(sync, output: path, cooldown: File.join(dir, 'cooldown.json'))
+      raises { refresh.run }
+      equal([1, 2], delays)
+      equal(4, http.requests.length)
+      equal('previous complete cache', File.read(path))
+    end
+  end
+
   def test_incoming_rate_limit_persists_retry_after_and_keeps_the_public_cache
     Dir.mktmpdir do |dir|
       output, cooldown = File.join(dir, 'mentions.json'), File.join(dir, 'cooldown.json')

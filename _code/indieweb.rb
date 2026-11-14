@@ -16,6 +16,7 @@ require 'nokogiri'
 
 module IndieWeb
   class Error < StandardError; end
+  class RetryableTransport < Error; end
 
   class RateLimited < Error
     attr_reader :retry_after
@@ -131,7 +132,12 @@ module IndieWeb
         current = next_url
         redirects -= 1
       end
-    rescue Timeout::Error, SocketError, SystemCallError, EOFError, OpenSSL::SSL::SSLError, Net::HTTPBadResponse => e
+    rescue Timeout::Error, Errno::ECONNRESET, Errno::ECONNABORTED, Errno::EPIPE, EOFError => e
+      raise RetryableTransport, "HTTP request failed (#{e.class})"
+    rescue OpenSSL::SSL::SSLError => e
+      error_type = e.message.match?(/unexpected eof|connection reset|closed connection/i) ? RetryableTransport : Error
+      raise error_type, "HTTP request failed (#{e.class})"
+    rescue SocketError, SystemCallError, Net::HTTPBadResponse => e
       raise Error, "HTTP request failed (#{e.class})"
     end
   end
@@ -172,8 +178,8 @@ module IndieWeb
                'repost-of' => 'reposts', 'bookmark-of' => 'bookmarks', 'rsvp' => 'rsvps', 'follow-of' => 'follows' }.freeze
     BRIDGE_PATH = %r{\A/(?:comment|like|repost|post|bookmark|rsvp)/}
 
-    def initialize(manifest, policy, http: HTTP.new)
-      @manifest, @policy, @http = manifest, policy, http
+    def initialize(manifest, policy, http: HTTP.new, wait: Kernel.method(:sleep))
+      @manifest, @policy, @http, @wait = manifest, policy, http, wait
     end
 
     def fetch_all(token: nil)
@@ -202,7 +208,7 @@ module IndieWeb
       rows, page = [], 0
       loop do
         query = URI.encode_www_form(parameters + [['per-page', '100'], ['page', page.to_s]])
-        response = @http.request("https://webmention.io/api/mentions.jf2?#{query}", headers: headers.merge('Accept' => 'application/json'))
+        response = fetch_page(query, headers, page)
         raise RateLimited, response.headers.fetch('retry-after', []).first if response.status == 429
         raise Error, "Webmention API returned #{response.status}; cache retained" unless response.status == 200
         data = JSON.parse(response.body)
@@ -222,6 +228,21 @@ module IndieWeb
     rescue JSON::ParserError, KeyError, ArgumentError
       raise Error, 'Malformed Webmention API response; cache retained'
     end
+
+    def fetch_page(query, headers, page)
+      attempt = 0
+      begin
+        @http.request("https://webmention.io/api/mentions.jf2?#{query}", headers: headers.merge('Accept' => 'application/json'))
+      rescue RetryableTransport => error
+        raise if attempt >= 2
+
+        attempt += 1
+        warn "Webmention API connection interrupted on page #{page + 1}; retrying (#{attempt}/2): #{error.message}"
+        @wait.call(attempt)
+        retry
+      end
+    end
+    private :fetch_page
 
     def trusted?(source)
       u = URI(source)
