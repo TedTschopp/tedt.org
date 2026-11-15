@@ -7622,12 +7622,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "02c38ce1f52490b4c937df5303433297e1c429cd9b37eba18959597ee2baf038",
-        "kind": "archive",
-        "started_at": "2026-11-15T15:00:58Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-15T15:01:13.728Z",
+          "id": "117621055404603898",
+          "url": "https://tschopp.net/@Ted/117621055404603898"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7635,8 +7636,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Claptrap.md"
       ],
-      "state": "uncertain",
-      "title": "Claptrap"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-15T15:01:13.728Z",
+        "id": "117621055404603898",
+        "url": "https://tschopp.net/@Ted/117621055404603898"
+      },
+      "title": "Claptrap",
+      "verified_at": "2026-11-15T15:00:58Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cleansing-Slime.html": {
       "aliases": [
@@ -27988,7 +27995,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-15T07:48:04.939Z",
+  "last_publication_at": "2026-11-15T15:01:13.728Z",
   "last_reconciliation_at": "2026-11-15T15:00:58Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 243,
@@ -29416,6 +29423,14 @@
       "kind": "archive",
       "operation": "8e6a2e24ffa4a9e25288b35756710325b99e2ee2e40fb762d36e771aaaa08168",
       "url": "https://tschopp.net/@Ted/117619352203301110"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Claptrap.html",
+      "created_at": "2026-11-15T15:01:13.728Z",
+      "id": "117621055404603898",
+      "kind": "archive",
+      "operation": "02c38ce1f52490b4c937df5303433297e1c429cd9b37eba18959597ee2baf038",
+      "url": "https://tschopp.net/@Ted/117621055404603898"
     }
   ],
   "run_count": 577,
