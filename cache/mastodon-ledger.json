@@ -7511,12 +7511,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "72b6ce49bdd1ef9bbe1b47824f2ec0222a2f2caed8f1a0835e167826aed98b00",
-        "kind": "archive",
-        "started_at": "2026-11-15T01:00:45Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-15T01:01:01.766Z",
+          "id": "117617751606269072",
+          "url": "https://tschopp.net/@Ted/117617751606269072"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7524,8 +7525,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cheguin.md"
       ],
-      "state": "uncertain",
-      "title": "Cheguin"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-15T01:01:01.766Z",
+        "id": "117617751606269072",
+        "url": "https://tschopp.net/@Ted/117617751606269072"
+      },
+      "title": "Cheguin",
+      "verified_at": "2026-11-15T01:00:45Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Chirplick.html": {
       "aliases": [
@@ -27910,7 +27917,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-14T21:02:53.449Z",
+  "last_publication_at": "2026-11-15T01:01:01.766Z",
   "last_reconciliation_at": "2026-11-15T01:00:45Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 239,
@@ -29306,6 +29313,14 @@
       "kind": "archive",
       "operation": "9a75386c890bbcd31aa2d729a94bf025f97efa08e072c1903d5ad28f55870941",
       "url": "https://tschopp.net/@Ted/117616815207095337"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cheguin.html",
+      "created_at": "2026-11-15T01:01:01.766Z",
+      "id": "117617751606269072",
+      "kind": "archive",
+      "operation": "72b6ce49bdd1ef9bbe1b47824f2ec0222a2f2caed8f1a0835e167826aed98b00",
+      "url": "https://tschopp.net/@Ted/117617751606269072"
     }
   ],
   "run_count": 571,
