@@ -3446,6 +3446,108 @@
       ],
       "width": 1280
     },
+    "/img/2021-07/battle-of-thebes.webp": {
+      "height": 772,
+      "source_sha256": "df41eb6b1d998115463869569fa08178cc2aea5d9d5be2c0a43014c7065cce3e",
+      "src": "/img/2021-07/battle-of-thebes.webp",
+      "variants": [
+        {
+          "height": 232,
+          "path": "/img/generated/responsive/2021-07/battle-of-thebes--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 371,
+          "path": "/img/generated/responsive/2021-07/battle-of-thebes--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 579,
+          "path": "/img/generated/responsive/2021-07/battle-of-thebes--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 703,
+          "path": "/img/generated/responsive/2021-07/battle-of-thebes--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 772,
+          "path": "/img/2021-07/battle-of-thebes.webp",
+          "width": 1600
+        }
+      ],
+      "width": 1600
+    },
+    "/img/2021-07/code-of-ur-nammu.webp": {
+      "height": 230,
+      "source_sha256": "1eca2fdc1aa10fed37fea04b0a2a4f8dc4f00821244a8bbc07be6c189ccb2227",
+      "src": "/img/2021-07/code-of-ur-nammu.webp",
+      "variants": [
+        {
+          "height": 230,
+          "path": "/img/2021-07/code-of-ur-nammu.webp",
+          "width": 400
+        }
+      ],
+      "width": 400
+    },
+    "/img/2021-07/school-of-athens.webp": {
+      "height": 1052,
+      "source_sha256": "7234ef7cfa1e4ff598c873011a64bb13591525b009cc005aef4993a6a38a9a46",
+      "src": "/img/2021-07/school-of-athens.webp",
+      "variants": [
+        {
+          "height": 629,
+          "path": "/img/generated/responsive/2021-07/school-of-athens--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 1005,
+          "path": "/img/generated/responsive/2021-07/school-of-athens--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 1052,
+          "path": "/img/2021-07/school-of-athens.webp",
+          "width": 804
+        }
+      ],
+      "width": 804
+    },
+    "/img/2021-08/lady-justice.webp": {
+      "height": 984,
+      "source_sha256": "2839c78b8d7c1d8180dfabed1f59520d2bfa581e07884873a8cca2b3952219ad",
+      "src": "/img/2021-08/lady-justice.webp",
+      "variants": [
+        {
+          "height": 321,
+          "path": "/img/generated/responsive/2021-08/lady-justice--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 514,
+          "path": "/img/generated/responsive/2021-08/lady-justice--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 803,
+          "path": "/img/generated/responsive/2021-08/lady-justice--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 974,
+          "path": "/img/generated/responsive/2021-08/lady-justice--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 984,
+          "path": "/img/2021-08/lady-justice.webp",
+          "width": 1472
+        }
+      ],
+      "width": 1472
+    },
     "/img/2022-04/community-life.webp": {
       "height": 1018,
       "source_sha256": "0156e7260081ba1989a52719f1decd564e095988ec4e05a53f7cb3be8190250d",
@@ -7726,286 +7828,6 @@
         }
       ],
       "width": 3872
-    },
-    "/img/404/404-1.webp": {
-      "height": 816,
-      "source_sha256": "99fc0108f7a81b460e43d29a59f9ceffda2daf10a86118d237234828d246f135",
-      "src": "/img/404/404-1.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-1--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-1--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-1--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-1.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/404/404-10.webp": {
-      "height": 816,
-      "source_sha256": "f8a8c34caa444b9e0d4781423a05480bee2d840242eb8d56ff5775f1798fa55d",
-      "src": "/img/404/404-10.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-10--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-10--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-10--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-10.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/404/404-2.webp": {
-      "height": 816,
-      "source_sha256": "825006075f1f12f4fa2a825694a27e2f4e54ba59605fbd66bafc0c18a820727c",
-      "src": "/img/404/404-2.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-2--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-2--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-2--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-2.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/404/404-3.webp": {
-      "height": 816,
-      "source_sha256": "683d3da36cfdf8f565a5a106740c2afa449f7d5ac8b7807934baa8c2e690561f",
-      "src": "/img/404/404-3.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-3--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-3--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-3--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-3.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/404/404-4.webp": {
-      "height": 816,
-      "source_sha256": "42f8313abc4946f3e2e39372304aacd3837a7eb8c2e40458e1cb8c595104c25b",
-      "src": "/img/404/404-4.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-4--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-4--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-4--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-4.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/404/404-5.webp": {
-      "height": 816,
-      "source_sha256": "4923739d403c20b0c7625e22a4314f3efebc8469b17a90e12787d393a4555c5f",
-      "src": "/img/404/404-5.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-5--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-5--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-5--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-5.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/404/404-6.webp": {
-      "height": 816,
-      "source_sha256": "c96edd3008a730cac7023e66169cd4b348295d0195f11f531267719eba4e6c7c",
-      "src": "/img/404/404-6.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-6--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-6--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-6--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-6.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/404/404-7.webp": {
-      "height": 816,
-      "source_sha256": "1e64afc7cac41ba895f830156113eec922a7064a6646f78511dfe9b1ac282d46",
-      "src": "/img/404/404-7.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-7--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-7--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-7--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-7.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/404/404-8.webp": {
-      "height": 816,
-      "source_sha256": "0bd1c89d57f801defd2465b3ddc042cabf36aa6b4eda21ff652b5cbfaedfbf66",
-      "src": "/img/404/404-8.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-8--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-8--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-8--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-8.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/404/404-9.webp": {
-      "height": 816,
-      "source_sha256": "d8e7f9cf33ccb07d7aa3e58e48489b7b8a762f30c16e863dd141a610451a208a",
-      "src": "/img/404/404-9.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/404/404-9--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/404/404-9--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/404/404-9--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/404/404-9.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
     },
     "/img/AI/Barrels-Ammunition-and-the-Future-of-AI.webp": {
       "height": 2072,
@@ -13468,39 +13290,6 @@
         {
           "height": 1216,
           "path": "/img/bg-masthead-orignal.webp",
-          "width": 1900
-        }
-      ],
-      "width": 1900
-    },
-    "/img/bg-masthead.webp": {
-      "height": 1267,
-      "source_sha256": "502ad979be4d39cd0f01338e8f535766f1b4eaa600ac5ce2c7dae6ad02d861d4",
-      "src": "/img/bg-masthead.webp",
-      "variants": [
-        {
-          "height": 321,
-          "path": "/img/generated/responsive/bg-masthead--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 513,
-          "path": "/img/generated/responsive/bg-masthead--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 801,
-          "path": "/img/generated/responsive/bg-masthead--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 971,
-          "path": "/img/generated/responsive/bg-masthead--1456w.webp",
-          "width": 1456
-        },
-        {
-          "height": 1267,
-          "path": "/img/bg-masthead.webp",
           "width": 1900
         }
       ],

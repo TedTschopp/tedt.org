@@ -788,6 +788,15 @@ Travel Pace and Effects
 
 ## Continent Scale (60 Mile Per Hex)
 
+### A 120-mile continent scale
+
+The Fixing Game Night version uses 24-mile province hexes and 120-mile continent hexes. Each province has a seat of power that can collect taxes, defend its territory, and deal with neighboring provinces. Where a government cannot exercise that authority directly, it depends on agreements and treaties.
+
+A party can cross one continent hex in a week. It spends five days traveling through five provinces and stops at their capitals along the way. It takes two days to resupply and rest the travelers and their animals.
+
+The encounter scale gives a person room to maneuver without a penalty for crowding. The province and kingdom scales reflect how far people can see, so a party looking from a good vantage point can spot major features on the next kingdom map.
+
+The combined Fixing Game Night article has a [reader discussion on GitHub](https://github.com/TedTschopp/Fixing-Game-Night/issues/4). [Part II covers monsters](/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/).
 
 ## Stellar Scale
 In Fantasy Role Playing Games it can not always be assumed that there is a Stellar scale.  When at this scale, the goal isn't to provide a map to allow travelers on the surface of the land mass a means of navigation.  Instead it is to provide an overview of what the landmass looks like from space.  
