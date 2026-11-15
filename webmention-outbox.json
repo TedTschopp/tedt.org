@@ -10996,7 +10996,7 @@
       }
     },
     "https://tedt.org/Who-Vouches-for-the-Seller-an-AI-Recommends/": {
-      "fingerprint": "d6ad5e4f1a5ffc84d378500c2688579ad083b83da713d82525f5869e1741fec9",
+      "fingerprint": "2503668b024e0e89699de8f49b1e5b6d2d7f872ba553acd70a6735622075c094",
       "targets": [
         "https://learning.sap.com/courses/discovering-sap-ariba-supplier-management/integrating-supplier-management-into-procurement-processes_f5acad6c-0928-4b8d-b36a-2af48ec2a50b",
         "https://openai.com/index/introducing-businesses-chatgpt/",
@@ -11015,12 +11015,12 @@
         "https://openai.com/index/introducing-businesses-chatgpt/": {
           "state": "retry",
           "attempts": 1,
-          "next_attempt": "2026-11-15T04:26:03+00:00"
+          "next_attempt": "2026-11-15T05:04:59+00:00"
         },
         "https://openai.com/index/introducing-chatgpt-wallet/": {
           "state": "retry",
           "attempts": 1,
-          "next_attempt": "2026-11-15T04:26:03+00:00"
+          "next_attempt": "2026-11-15T05:04:59+00:00"
         },
         "https://podqi.com/research/ai-search-brand-risk": {
           "state": "unsupported",
@@ -11029,13 +11029,13 @@
         "https://tedt.org/Agents-Dont-Click/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/PwwJqFIUlNjp1GdaI9eF",
+          "receipt": "https://webmention.io/tedt.org/webmention/BkaVaq9GlV9UDDArNaUE",
           "attempts": 1
         },
         "https://tedt.org/The-Two-Business-Cases-for-AI-Agents/": {
           "state": "accepted",
           "status": 201,
-          "receipt": "https://webmention.io/tedt.org/webmention/L_gS46B6mxnSxEWF6vJA",
+          "receipt": "https://webmention.io/tedt.org/webmention/5i0pOUoAAZeHHVLXPpSL",
           "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
