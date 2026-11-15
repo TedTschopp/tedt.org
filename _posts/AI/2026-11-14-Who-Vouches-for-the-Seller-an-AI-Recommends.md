@@ -39,6 +39,8 @@ tags:
   - AI shopping
   - purchasing controls
   - responsible AI
+mastodon-post-id: "117618322477544009"
+mastodon-post-url: "https://tschopp.net/@Ted/117618322477544009"
 ---
 
 # Who Vouches for the Seller an AI Recommends?
