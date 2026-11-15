@@ -799,9 +799,23 @@
       "deliveries": {}
     },
     "https://tedt.org/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World/": {
-      "fingerprint": "no-targets",
-      "targets": [],
-      "deliveries": {}
+      "fingerprint": "97c9a12234a918e3c3cf28ba91fb9e9164d0fd4dfdae7091cbb186305caf1739",
+      "targets": [
+        "https://github.com/TedTschopp/Fixing-Game-Night/issues/4",
+        "https://tedt.org/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/"
+      ],
+      "deliveries": {
+        "https://github.com/TedTschopp/Fixing-Game-Night/issues/4": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://tedt.org/Of-Maps-and-Monsters-the-Right-Way-to-Populate-a-World-Part-II/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/QHJVV86c4U4RWeGU3sqX",
+          "attempts": 1
+        }
+      }
     },
     "https://tedt.org/AI-Engineer-Coach/": {
       "fingerprint": "e81b05ea2dd618edc1245d4974fd9ff4fc2c77dcf0da5b21a931f4104329194e",
@@ -11047,6 +11061,31 @@
           "attempts": 1
         }
       }
+    },
+    "https://tedt.org/Random-Mundane-Junk-Tables/": {
+      "fingerprint": "no-targets",
+      "targets": [],
+      "deliveries": {}
+    },
+    "https://tedt.org/Weaknesses-from-the-Past/": {
+      "fingerprint": "no-targets",
+      "targets": [],
+      "deliveries": {}
+    },
+    "https://tedt.org/Rules-of-the-Game/": {
+      "fingerprint": "no-targets",
+      "targets": [],
+      "deliveries": {}
+    },
+    "https://tedt.org/Abilities-and-Skills/": {
+      "fingerprint": "no-targets",
+      "targets": [],
+      "deliveries": {}
+    },
+    "https://tedt.org/Rules-of-Process-vs-Rules-of-Resolution/": {
+      "fingerprint": "no-targets",
+      "targets": [],
+      "deliveries": {}
     }
   }
 }
