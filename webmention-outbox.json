@@ -11028,13 +11028,13 @@
         },
         "https://openai.com/index/introducing-businesses-chatgpt/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-11-15T05:04:59+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-11-15T07:37:10+00:00"
         },
         "https://openai.com/index/introducing-chatgpt-wallet/": {
           "state": "retry",
-          "attempts": 1,
-          "next_attempt": "2026-11-15T05:04:59+00:00"
+          "attempts": 2,
+          "next_attempt": "2026-11-15T07:37:10+00:00"
         },
         "https://podqi.com/research/ai-search-brand-risk": {
           "state": "unsupported",
