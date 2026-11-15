@@ -10994,6 +10994,59 @@
           "attempts": 1
         }
       }
+    },
+    "https://tedt.org/Who-Vouches-for-the-Seller-an-AI-Recommends/": {
+      "fingerprint": "d6ad5e4f1a5ffc84d378500c2688579ad083b83da713d82525f5869e1741fec9",
+      "targets": [
+        "https://learning.sap.com/courses/discovering-sap-ariba-supplier-management/integrating-supplier-management-into-procurement-processes_f5acad6c-0928-4b8d-b36a-2af48ec2a50b",
+        "https://openai.com/index/introducing-businesses-chatgpt/",
+        "https://openai.com/index/introducing-chatgpt-wallet/",
+        "https://podqi.com/research/ai-search-brand-risk",
+        "https://tedt.org/Agents-Dont-Click/",
+        "https://tedt.org/The-Two-Business-Cases-for-AI-Agents/",
+        "https://tools.tedt.org/inside-ai/",
+        "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+      ],
+      "deliveries": {
+        "https://learning.sap.com/courses/discovering-sap-ariba-supplier-management/integrating-supplier-management-into-procurement-processes_f5acad6c-0928-4b8d-b36a-2af48ec2a50b": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://openai.com/index/introducing-businesses-chatgpt/": {
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-11-15T04:26:03+00:00"
+        },
+        "https://openai.com/index/introducing-chatgpt-wallet/": {
+          "state": "retry",
+          "attempts": 1,
+          "next_attempt": "2026-11-15T04:26:03+00:00"
+        },
+        "https://podqi.com/research/ai-search-brand-risk": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://tedt.org/Agents-Dont-Click/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/PwwJqFIUlNjp1GdaI9eF",
+          "attempts": 1
+        },
+        "https://tedt.org/The-Two-Business-Cases-for-AI-Agents/": {
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/L_gS46B6mxnSxEWF6vJA",
+          "attempts": 1
+        },
+        "https://tools.tedt.org/inside-ai/": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations": {
+          "state": "unsupported",
+          "attempts": 1
+        }
+      }
     }
   }
 }
