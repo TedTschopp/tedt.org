@@ -55,12 +55,20 @@ Who are you about to buy it from?
 
 I’d put four questions on the purchase request. The person who can answer one may have to call somebody else to answer the next.
 
+{% comment %}
+<!-- markdownlint-disable MD055 MD056 -->
+{% endcomment %}
+
 | Question | What you need to establish | Who can help answer it |
 |---|---|---|
 | Who’s selling the part? | The website is a purchasing channel used by the business named as the seller. | Procurement can check a verified supplier record or contact the business through a known channel. |
 | What’s the seller’s relationship to the manufacturer? | Whether the manufacturer recognizes the seller for this product, territory, and period. | The manufacturer’s distribution team can confirm the relationship. |
 | Can our company buy from this seller? | The supplier and the purchase meet the buyer’s requirements. | Procurement can confirm qualification. A business owner with the appropriate authority can decide on an exception. |
 | Does this offer meet the need? | The part, its provenance, the delivery date, and the terms are suitable for the job. | The planner or technical owner can check the seller’s specifications and terms. |
+{: .well .table .table-striped}
+{% comment %}
+<!-- markdownlint-enable MD055 MD056 -->
+{% endcomment %}
 
 Think about a vendor your company already uses for office equipment. You know who they are, and you may still need a separate qualification before they can sell you an industrial component. The same distinction matters when an independent reseller has a genuine part. If your company requires a manufacturer-authorized source for that purchase, put the requirement on the request so the reviewer knows what evidence to ask for.
 
@@ -98,12 +106,20 @@ If you sell through these channels, make it easy for customers to find your offi
 
 Take one purchasing workflow and make up four versions of the same order. The part is a P17 seal from a fictional manufacturer called Aster Pumps. Use reserved addresses such as `store.aster.example` and `supply.example`. Keep the part the same and change what the buyer knows about the seller.
 
+{% comment %}
+<!-- markdownlint-disable MD055 MD056 -->
+{% endcomment %}
+
 | Case | What the buyer has | What the workflow should do |
 |---|---|---|
 | Current approval | The purchase address matches the supplier record. The approval covers the product and territory. | Continue through the normal purchasing controls. |
 | Unfamiliar seller | The offer looks promising. The buyer has no qualification record for the seller. | Show what evidence is missing and route the request for qualification or an authorized exception. |
 | Expired approval | The seller is known and the relevant qualification has expired. | Request renewal or an authorized exception. |
 | Conflicting address | The site claims to represent an approved supplier, and the address differs from its recorded purchasing channels. | Hold the order while someone verifies the relationship. |
+{: .well .table .table-striped}
+{% comment %}
+<!-- markdownlint-enable MD055 MD056 -->
+{% endcomment %}
 
 A small browser tool called **Supplier Destination Check** could make the exercise repeatable. Give it a supplier register and a proposed order, then change the purchase address, the territory, or the date. The result should show which record it used, which rule applies, and what a person still needs to find out. A green result would mean the facts you supplied satisfy the rules you supplied. The rest of the purchasing and receiving process still has a job to do.
 
