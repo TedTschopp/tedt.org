@@ -25864,20 +25864,27 @@
       "eligible": true,
       "first_seen_at": "2026-11-15T03:26:00Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "731fe5e8d9a9322ccbb8bc7bfbe0f5780dba722bcd17c8c03766ba30d0aa524b",
-        "kind": "new",
-        "started_at": "2026-11-15T03:26:00Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-15T03:26:12.570Z",
+          "id": "117618322477544009",
+          "url": "https://tschopp.net/@Ted/117618322477544009"
+        }
+      ],
       "published_at": "2026-11-14T08:00:00Z",
       "queue_kind": "new",
       "reconciled_at": "2026-11-15T03:26:00Z",
       "source_paths": [
         "_posts/AI/2026-11-14-Who-Vouches-for-the-Seller-an-AI-Recommends.md"
       ],
-      "state": "uncertain",
-      "title": "Who Vouches for the Seller an AI Recommends?"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-15T03:26:12.570Z",
+        "id": "117618322477544009",
+        "url": "https://tschopp.net/@Ted/117618322477544009"
+      },
+      "title": "Who Vouches for the Seller an AI Recommends?",
+      "verified_at": "2026-11-15T03:26:00Z"
     },
     "https://tedt.org/Why-AI-Needs-a-Harness/": {
       "aliases": [
@@ -27945,7 +27952,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-15T01:01:01.766Z",
+  "last_publication_at": "2026-11-15T03:26:12.570Z",
   "last_reconciliation_at": "2026-11-15T03:26:00Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 240,
@@ -29349,6 +29356,14 @@
       "kind": "archive",
       "operation": "72b6ce49bdd1ef9bbe1b47824f2ec0222a2f2caed8f1a0835e167826aed98b00",
       "url": "https://tschopp.net/@Ted/117617751606269072"
+    },
+    {
+      "canonical_url": "https://tedt.org/Who-Vouches-for-the-Seller-an-AI-Recommends/",
+      "created_at": "2026-11-15T03:26:12.570Z",
+      "id": "117618322477544009",
+      "kind": "new",
+      "operation": "731fe5e8d9a9322ccbb8bc7bfbe0f5780dba722bcd17c8c03766ba30d0aa524b",
+      "url": "https://tschopp.net/@Ted/117618322477544009"
     }
   ],
   "run_count": 572,
