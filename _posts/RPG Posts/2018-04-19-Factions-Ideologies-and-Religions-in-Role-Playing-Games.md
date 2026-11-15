@@ -204,6 +204,8 @@ The AI who runs the University keeps the peace within the University Hierarchy. 
 The University Police have access to Tech level 5 equipment in the event of emergencies, but normal gear consists of Tech Level 4 equipment.  The Two Spec Ops teams that the AI deploys have 12 members each and they access to Tech Level 6 gear, and represent the most fearsome forces in all of Gamma World.  The AI rarely deploys them because it has no way to escalate a confrontation beyond their deployment.
 
 **Level 1:** The Novices - These are people who visit the University or who benefit from the University, but are not Students or Staff.  The Novices are people who have applied to use either be a student or a staff or to access University Resources.  Novices do not have access to any University Resources, however they do carry a University ID Tag.  This is a Tech Level 4 Dog Tag that tracks the Novices and above through the University facilities via the handheld communication devices given to Level 2 personnel and above.  
+
+The Fixing Game Night version adds a rank below the Novices for people who have never benefited from the University, including people who have never heard of it. To use six ranks, place this group at Rank 1 and move the five existing levels up by one.
 </div>
 {: .example .well}
 
