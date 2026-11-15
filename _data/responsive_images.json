@@ -3826,34 +3826,6 @@
       ],
       "width": 1456
     },
-    "/img/2023-10/A_haunting_snowy_scene_at_Brunnegg_Castle.webp": {
-      "height": 816,
-      "source_sha256": "6f37fcd8ab3e49cc038af783b6dadb97d1543fe77c9441a88770dff2a2db58e5",
-      "src": "/img/2023-10/A_haunting_snowy_scene_at_Brunnegg_Castle.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/2023-10/A_haunting_snowy_scene_at_Brunnegg_Castle--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/2023-10/A_haunting_snowy_scene_at_Brunnegg_Castle--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/2023-10/A_haunting_snowy_scene_at_Brunnegg_Castle--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/2023-10/A_haunting_snowy_scene_at_Brunnegg_Castle.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
     "/img/2023-10/Basilisk_mit_Basler_Wappen.webp": {
       "height": 2742,
       "source_sha256": "dbf9813efbd1dd9f28091cc3f014658d0b1c8d8e205535721d75d68bddfdd4ec",
@@ -4241,34 +4213,6 @@
       ],
       "width": 2997
     },
-    "/img/2025-01/AI-in-2024.webp": {
-      "height": 816,
-      "source_sha256": "4f222bcfbf4d954770b03db940585425193704fae8b9ca14127473009c81fade",
-      "src": "/img/2025-01/AI-in-2024.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/2025-01/AI-in-2024--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/2025-01/AI-in-2024--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/2025-01/AI-in-2024--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/2025-01/AI-in-2024.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
     "/img/2025-01/Custom-Writing-Styles.webp": {
       "height": 816,
       "source_sha256": "0bd057bac44324b9edfdc230afbdd151e612f4f2317b4646ca0fbd5f97f9ae01",
@@ -4292,34 +4236,6 @@
         {
           "height": 816,
           "path": "/img/2025-01/Custom-Writing-Styles.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
-    },
-    "/img/2025-01/Superagents-AI.webp": {
-      "height": 816,
-      "source_sha256": "4a545693657c67c1cf8012c83106ad40d385ecc67a06d5dbf7eb59825538cc1a",
-      "src": "/img/2025-01/Superagents-AI.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/2025-01/Superagents-AI--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/2025-01/Superagents-AI--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/2025-01/Superagents-AI--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/2025-01/Superagents-AI.webp",
           "width": 1456
         }
       ],
@@ -4413,72 +4329,6 @@
         }
       ],
       "width": 1980
-    },
-    "/img/2025-06/Pieter-Before-Camp-Painting.webp": {
-      "height": 1024,
-      "source_sha256": "817bd84c57bf4887c05f8fc6eb7d8642bb960c7d415d260216297d61c6762503",
-      "src": "/img/2025-06/Pieter-Before-Camp-Painting.webp",
-      "variants": [
-        {
-          "height": 320,
-          "path": "/img/generated/responsive/2025-06/Pieter-Before-Camp-Painting--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 512,
-          "path": "/img/generated/responsive/2025-06/Pieter-Before-Camp-Painting--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 800,
-          "path": "/img/generated/responsive/2025-06/Pieter-Before-Camp-Painting--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 971,
-          "path": "/img/generated/responsive/2025-06/Pieter-Before-Camp-Painting--1456w.webp",
-          "width": 1456
-        },
-        {
-          "height": 1024,
-          "path": "/img/2025-06/Pieter-Before-Camp-Painting.webp",
-          "width": 1536
-        }
-      ],
-      "width": 1536
-    },
-    "/img/2025-06/Rooted in Resilience.webp": {
-      "height": 1024,
-      "source_sha256": "df2239680ec21dd1f8662bc636c8bb533538360d7eed4cd54de547e588c223c6",
-      "src": "/img/2025-06/Rooted in Resilience.webp",
-      "variants": [
-        {
-          "height": 320,
-          "path": "/img/generated/responsive/2025-06/Rooted in Resilience--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 512,
-          "path": "/img/generated/responsive/2025-06/Rooted in Resilience--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 800,
-          "path": "/img/generated/responsive/2025-06/Rooted in Resilience--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 971,
-          "path": "/img/generated/responsive/2025-06/Rooted in Resilience--1456w.webp",
-          "width": 1456
-        },
-        {
-          "height": 1024,
-          "path": "/img/2025-06/Rooted in Resilience.webp",
-          "width": 1536
-        }
-      ],
-      "width": 1536
     },
     "/img/2025-06/User-Story-Splitting.webp": {
       "height": 1024,
@@ -7829,39 +7679,6 @@
       ],
       "width": 3872
     },
-    "/img/AI/Barrels-Ammunition-and-the-Future-of-AI.webp": {
-      "height": 2072,
-      "source_sha256": "f2d58682ea3aebc56b7d5d812553fb01066704685fb0e97eb8ff3904ae3bb210",
-      "src": "/img/AI/Barrels-Ammunition-and-the-Future-of-AI.webp",
-      "variants": [
-        {
-          "height": 332,
-          "path": "/img/generated/responsive/AI/Barrels-Ammunition-and-the-Future-of-AI--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 531,
-          "path": "/img/generated/responsive/AI/Barrels-Ammunition-and-the-Future-of-AI--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 830,
-          "path": "/img/generated/responsive/AI/Barrels-Ammunition-and-the-Future-of-AI--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 1007,
-          "path": "/img/generated/responsive/AI/Barrels-Ammunition-and-the-Future-of-AI--1456w.webp",
-          "width": 1456
-        },
-        {
-          "height": 2072,
-          "path": "/img/AI/Barrels-Ammunition-and-the-Future-of-AI.webp",
-          "width": 2997
-        }
-      ],
-      "width": 2997
-    },
     "/img/AI/Beyond-the-Boundries.webp": {
       "height": 1024,
       "source_sha256": "01a54db2dea565bd52353b2ec8bfd4955a0d41a520e0bf45c843e7f0a7c8e034",
@@ -8129,39 +7946,6 @@
       ],
       "width": 1456
     },
-    "/img/AI/From-Transcript-to-Trestable.webp": {
-      "height": 1024,
-      "source_sha256": "57e516d03be46a1c9d1a941657fc94f107f6622cac709e1a70e1b619e43c9c4c",
-      "src": "/img/AI/From-Transcript-to-Trestable.webp",
-      "variants": [
-        {
-          "height": 320,
-          "path": "/img/generated/responsive/AI/From-Transcript-to-Trestable--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 512,
-          "path": "/img/generated/responsive/AI/From-Transcript-to-Trestable--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 800,
-          "path": "/img/generated/responsive/AI/From-Transcript-to-Trestable--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 971,
-          "path": "/img/generated/responsive/AI/From-Transcript-to-Trestable--1456w.webp",
-          "width": 1456
-        },
-        {
-          "height": 1024,
-          "path": "/img/AI/From-Transcript-to-Trestable.webp",
-          "width": 1536
-        }
-      ],
-      "width": 1536
-    },
     "/img/AI/Hannah-with-a-cat-no-title.webp": {
       "height": 1080,
       "source_sha256": "e8014aebc2552fe5d9a30546313a598367157a6b48449f88df6485beaa52f9eb",
@@ -8194,34 +7978,6 @@
         }
       ],
       "width": 1920
-    },
-    "/img/AI/Last-Week-in-Tech-AI.webp": {
-      "height": 816,
-      "source_sha256": "4f222bcfbf4d954770b03db940585425193704fae8b9ca14127473009c81fade",
-      "src": "/img/AI/Last-Week-in-Tech-AI.webp",
-      "variants": [
-        {
-          "height": 270,
-          "path": "/img/generated/responsive/AI/Last-Week-in-Tech-AI--480w.webp",
-          "width": 480
-        },
-        {
-          "height": 431,
-          "path": "/img/generated/responsive/AI/Last-Week-in-Tech-AI--768w.webp",
-          "width": 768
-        },
-        {
-          "height": 673,
-          "path": "/img/generated/responsive/AI/Last-Week-in-Tech-AI--1200w.webp",
-          "width": 1200
-        },
-        {
-          "height": 816,
-          "path": "/img/AI/Last-Week-in-Tech-AI.webp",
-          "width": 1456
-        }
-      ],
-      "width": 1456
     },
     "/img/AI/Learning-by-Doing.webp": {
       "height": 1024,
