@@ -7696,12 +7696,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "9b1c0d2c01a57279060fb4e6f6f215f2a5b3f1635090f7aad23e9a0105236d10",
-        "kind": "archive",
-        "started_at": "2026-11-16T00:06:08Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-16T00:06:27.468Z",
+          "id": "117623199332278596",
+          "url": "https://tschopp.net/@Ted/117623199332278596"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7709,8 +7710,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Clicker-Fish-Flipp.md"
       ],
-      "state": "uncertain",
-      "title": "Clicker Fish «Flipp»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-16T00:06:27.468Z",
+        "id": "117623199332278596",
+        "url": "https://tschopp.net/@Ted/117623199332278596"
+      },
+      "title": "Clicker Fish «Flipp»",
+      "verified_at": "2026-11-16T00:06:08Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Climber-Sheezu.html": {
       "aliases": [
@@ -28016,7 +28023,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-15T20:21:18.050Z",
+  "last_publication_at": "2026-11-16T00:06:27.468Z",
   "last_reconciliation_at": "2026-11-16T00:06:08Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 245,
@@ -29460,6 +29467,14 @@
       "kind": "archive",
       "operation": "b3ac6abc46fe796634d041ee643e883084e757f5977690e0c0b5b3e1cfc72da8",
       "url": "https://tschopp.net/@Ted/117622313979032602"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Clicker-Fish-Flipp.html",
+      "created_at": "2026-11-16T00:06:27.468Z",
+      "id": "117623199332278596",
+      "kind": "archive",
+      "operation": "9b1c0d2c01a57279060fb4e6f6f215f2a5b3f1635090f7aad23e9a0105236d10",
+      "url": "https://tschopp.net/@Ted/117623199332278596"
     }
   ],
   "run_count": 579,
