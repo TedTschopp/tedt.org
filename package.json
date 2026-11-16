@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "description": "Playwright + axe-core a11y audits for tedt.org",
   "scripts": {
+    "build:folklore-search": "pagefind --site _site --glob 'folklore/stories/*/index.html' --output-subdir folklore/pagefind",
     "test:a11y": "playwright test tests/a11y --reporter=list",
     "test:a11y:baseline": "playwright test tests/a11y/site-baseline.spec.ts --reporter=list",
     "test:a11y:strict": "A11Y_FAIL_ON_VIOLATIONS=1 playwright test tests/a11y --reporter=list",
@@ -24,6 +25,7 @@
     "allure-commandline": "^2.29.0",
     "allure-playwright": "^3.0.0",
     "markdownlint-cli2": "^0.20.0",
+    "pagefind": "1.6.0",
     "postcss-scss": "^4.0.9",
     "stylelint": "^16.10.0",
     "stylelint-scss": "^6.6.1"

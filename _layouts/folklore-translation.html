@@ -1,0 +1,20 @@
+---
+layout: folklore-shell
+---
+{% assign edition = page.edition %}
+<main id="folklore-main" class="folklore-frame folklore-reading h-entry" data-pagefind-body>
+  <article>
+    <header class="folklore-reading-header">
+      <a href="{{ '/folklore/' | relative_url }}">Swiss Folklore Collection</a>
+      <h1 class="p-name" data-pagefind-meta="title">{{ page.title | escape }}</h1>
+      <div class="folklore-credits">
+        <p>Source author: <span class="p-author">{{ edition.author | escape }}</span></p>
+        <p class="content-credit-translation-editor">Translator and curator: <a href="{{ '/profile/' | relative_url }}">Ted Tschopp</a> · <a href="{{ '/profile/#translation-and-folklore-disclosure' | relative_url }}">Translation disclosure</a></p>
+        <p><a href="{{ edition.edition_url | escape }}">{{ edition.edition_citation | escape }}</a></p>
+      </div>
+    </header>
+    <div class="e-content">
+      {% include folklore/edition-text.html edition=edition %}
+    </div>
+  </article>
+</main>

@@ -1,0 +1,36 @@
+{
+  "release": "2026-11-16-aargau-pilot",
+  "corpus_commit": "cbd5d56376fa6779e787c13a8e96b6d0d10b39b4",
+  "page_size": 50,
+  "page_count": 1,
+  "stories": [
+    {
+      "title": "Das Zauberbuch (The Magic Book)",
+      "url": "/folklore/stories/434e1c6212cefb2c179cebaefb73d062fb021de8/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
+      "url": "/folklore/stories/6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
+      "url": "/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/",
+      "year": 1926,
+      "author": "Josef Müller"
+    }
+  ],
+  "source_notes": [
+    {
+      "title": "Das Wydenweiblein (The Wyden Woman)",
+      "url": "/folklore/stories/2980bfdf495e5b36f6b87ae59d36a9c8440e56c5/"
+    },
+    {
+      "title": "Das Wütisheer (The Wild Hunt)",
+      "url": "/folklore/stories/b94b31288d269cdbc55a79dfbeef72fce89895d0/"
+    }
+  ]
+}

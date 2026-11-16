@@ -1,0 +1,16 @@
+---
+layout: folklore-shell
+last_modified_at: "2026-11-16"
+title: Search Swiss Folklore
+description: Search English translations and original-language texts in the Swiss Folklore Collection.
+permalink: /folklore/search/
+---
+<main id="folklore-main" class="folklore-frame">
+  <a href="{{ '/folklore/' | relative_url }}">Browse all tales</a>
+  <h1>{{ page.title }}</h1>
+  <p>Search by title, author, or a word in either text.</p>
+  <pagefind-config bundle-path="{{ '/folklore/pagefind/' | relative_url }}"></pagefind-config>
+  <pagefind-input placeholder="Search tales"></pagefind-input>
+  <pagefind-summary></pagefind-summary>
+  <pagefind-results></pagefind-results>
+</main>

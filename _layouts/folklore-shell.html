@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% include utility/calculate-variables.html %}
+  {% include seo/meta-data-seo.html %}
+  {% include security/content-security-policy.html %}
+  {% include utility/color-scheme-head.html %}
+  <link rel="stylesheet" href="{{ '/css/bootstrap-build.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/shared-fonts.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/css/folklore.css' | relative_url }}">
+  {% if page.url == '/folklore/search/' %}
+  <link rel="stylesheet" href="{{ '/folklore/pagefind/pagefind-component-ui.css' | relative_url }}">
+  <script type="module" src="{{ '/folklore/pagefind/pagefind-component-ui.js' | relative_url }}"></script>
+  {% endif %}
+</head>
+<body>
+  <a class="visually-hidden-focusable folklore-skip" href="#folklore-main">Skip to content</a>
+  {% include layout/top-nav-bar.html %}
+  {{ content }}
+  <footer class="folklore-footer">
+    <div class="folklore-frame">
+      <a href="{{ '/folklore/' | relative_url }}">Swiss Folklore Collection</a>
+      <a href="{{ '/profile/#translation-and-folklore-disclosure' | relative_url }}">Translation disclosure</a>
+      <a href="{{ '/Privacy-Policy/' | relative_url }}">Privacy policy</a>
+    </div>
+  </footer>
+</body>
+</html>
