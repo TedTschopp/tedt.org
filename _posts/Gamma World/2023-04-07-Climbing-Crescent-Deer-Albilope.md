@@ -154,4 +154,6 @@ categories:
 - Bestiary
 - Mutant Crawl Classics
 date: 2023-04-07 08:37:35
+mastodon-post-id: "117627004397865068"
+mastodon-post-url: "https://tschopp.net/@Ted/117627004397865068"
 ---
