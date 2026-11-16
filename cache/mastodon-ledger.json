@@ -7770,12 +7770,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "86441aa85abdee02ab5a96ad236967051a579c9eefb79fac875b7f0e1512fd34",
-        "kind": "archive",
-        "started_at": "2026-11-16T16:13:50Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-16T16:14:08.160Z",
+          "id": "117627004397865068",
+          "url": "https://tschopp.net/@Ted/117627004397865068"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7783,8 +7784,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Climbing-Crescent-Deer-Albilope.md"
       ],
-      "state": "uncertain",
-      "title": "Climbing, Crescent Deer «Albilope»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-16T16:14:08.160Z",
+        "id": "117627004397865068",
+        "url": "https://tschopp.net/@Ted/117627004397865068"
+      },
+      "title": "Climbing, Crescent Deer «Albilope»",
+      "verified_at": "2026-11-16T16:13:50Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Clochwhirl.html": {
       "aliases": [
@@ -28044,7 +28051,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-16T06:18:59.570Z",
+  "last_publication_at": "2026-11-16T16:14:08.160Z",
   "last_reconciliation_at": "2026-11-16T16:13:50Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 247,
@@ -29504,6 +29511,14 @@
       "kind": "archive",
       "operation": "597b720b0cfb046584f983df67f387ab58880da5eae528301141fdc034a7759d",
       "url": "https://tschopp.net/@Ted/117624664199555914"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Climbing-Crescent-Deer-Albilope.html",
+      "created_at": "2026-11-16T16:14:08.160Z",
+      "id": "117627004397865068",
+      "kind": "archive",
+      "operation": "86441aa85abdee02ab5a96ad236967051a579c9eefb79fac875b7f0e1512fd34",
+      "url": "https://tschopp.net/@Ted/117627004397865068"
     }
   ],
   "run_count": 581,
