@@ -1,15 +1,50 @@
 {
-  "release": "2026-11-16-aargau",
-  "corpus_commit": "cbd5d56376fa6779e787c13a8e96b6d0d10b39b4",
+  "release": "2026-11-17-title-groups",
+  "corpus_commit": "cbe27124931f73e090cbdead6f831946eda364ab",
   "page_size": 50,
-  "page_count": 1,
+  "page_count": 5,
   "stories": [
+    {
+      "id": "336ad2a20cc9031d49c8b0386a901a9f6801d274",
+      "title": "A Ghost (Hospental)",
+      "url": "/folklore/stories/a-ghost-hospental/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "39137f56aa928e1ae1f87e8a3f41c82f49da9e7f",
+      "title": "A Ghost (Realp)",
+      "url": "/folklore/stories/a-ghost-realp/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
     {
       "id": "bf773dcebae22947d95e677a8d1d72812e0f1688",
       "title": "Aarau's Town Brook",
       "url": "/folklore/stories/aaraus-town-brook/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "73f56d11aad8da9f85e26eb58804a07de8c896a9",
+      "title": "An arme Seele (Fiery Teeth)",
+      "url": "/folklore/stories/an-arme-seele-fiery-teeth/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "9b8aeac4ecd492002ca2377bc42c9f8b02a7ccc5",
+      "title": "An arme Seele (Jagdmatt)",
+      "url": "/folklore/stories/an-arme-seele-jagdmatt/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "b4cfe3a2a95080bd804a5fe1c684e2815963476e",
+      "title": "An arme Seele (Saturday Supper)",
+      "url": "/folklore/stories/an-arme-seele-saturday-supper/",
+      "year": 1926,
+      "author": "Josef Müller"
     },
     {
       "id": "1e90ecf18f18fa3b30d4db9aee8d2285208bc294",
@@ -40,11 +75,74 @@
       "author": "Josef Müller"
     },
     {
+      "id": "9a2cd8ff197a56feb036301c7bc89eab372d220a",
+      "title": "Driven Home by the arme Seelen (Billen)",
+      "url": "/folklore/stories/driven-home-by-the-arme-seelen-billen/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "971a343ac4ebb1b1c21282d7e9d94f6483e31d30",
+      "title": "Driven Home by the arme Seelen (Isental)",
+      "url": "/folklore/stories/driven-home-by-the-arme-seelen-isental/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "facde096871dc508eb99cde156ad33f976638f64",
       "title": "Egelsee on the Heitersberg",
       "url": "/folklore/stories/egelsee-on-the-heitersberg/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "5ca4f9729b9eff6fc9a0bf489f5bd25a626687f1",
+      "title": "Emperor Charlemagne and the Snake (St. Gallen)",
+      "url": "/folklore/stories/emperor-charlemagne-and-the-snake-st-gallen/",
+      "year": 1915,
+      "author": "Meinrad Lienert, Schweiz"
+    },
+    {
+      "id": "b3f7613d2ea21f147f970c0dbb1024657b1337a3",
+      "title": "Emperor Charlemagne and the Snake (Zürich)",
+      "url": "/folklore/stories/emperor-charlemagne-and-the-snake-zurich/",
+      "year": 1918,
+      "author": "Meinrad Lienert"
+    },
+    {
+      "id": "4a8b3acb9d38ca63eab2348ea386efcb4d04be56",
+      "title": "Fire on the Haystack (Amsteg)",
+      "url": "/folklore/stories/fire-on-the-haystack-amsteg/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "d7c4d41d54567e0a51ff81418c7723c0c416d28e",
+      "title": "Fire on the Haystack (Schächental)",
+      "url": "/folklore/stories/fire-on-the-haystack-schachental/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "6e5ef49d57c9bf02593089147ee251018b2c687e",
+      "title": "Freemasons (Paris)",
+      "url": "/folklore/stories/freemasons-paris/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "f51d2487176cda36e037f3313c67cf4d34f44f6e",
+      "title": "Freemasons (The Blood Contract)",
+      "url": "/folklore/stories/freemasons-blood-contract/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "ac27269ee801387aca2d0206efc8d27e40db56f9",
+      "title": "Hans Baschi Jakober of Uri",
+      "url": "/folklore/stories/hans-baschi-jakober-of-uri/",
+      "year": 1865,
+      "author": "Alois Lütolf"
     },
     {
       "id": "ab64c4c2416b12fdc5fd4ea144bf167805af0162",
@@ -54,11 +152,102 @@
       "author": "Ernst L. Rochholz"
     },
     {
+      "id": "ba8dcac81a20d52eb14efb40d3933fe5a64e408c",
+      "title": "How He Got Rid of His Alraune",
+      "url": "/folklore/stories/how-he-got-rid-of-his-alraune/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "0249f39e9cc637eb78a5c289267b491a6c7e25c5",
+      "title": "Häägglä with a Ghost (Maderanertal)",
+      "url": "/folklore/stories/haaggla-with-a-ghost-maderanertal/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "6d09f9175240481305d77d1515b5aa2d78317a89",
+      "title": "Häägglä with a Ghost (Schattdorf)",
+      "url": "/folklore/stories/haaggla-with-a-ghost-schattdorf/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "245f36aaa52b9386d303beddfaea659a0c25e3bc",
+      "title": "In the Dragon's Cave (Scheenenkulm)",
+      "url": "/folklore/stories/in-the-dragons-cave-scheenenkulm/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "42284256c340eec983e2ab44531f7b7e0e0af70a",
+      "title": "In the Dragon’s Cave (The Chamois Hunter)",
+      "url": "/folklore/stories/in-the-dragons-cave-chamois-hunter/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "122e15b12dad89e2612731fa6a8e2a814acad491",
+      "title": "In the Meien Valley (The Toggeli)",
+      "url": "/folklore/stories/in-the-meien-valley-toggeli/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "5e8b4cccf82a177176e1aa733d661f95469db9de",
+      "title": "In the Meien Valley (Wandering Souls)",
+      "url": "/folklore/stories/in-the-meien-valley-wandering-souls/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "3ea43a649cd850eb00ff03f726b7c2a23f923515",
+      "title": "Mercy Rewarded (Altdorf)",
+      "url": "/folklore/stories/mercy-rewarded-altdorf/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "8bec867a6c319a1ffb047c2711d6855b7f701e99",
+      "title": "Mercy Rewarded (Isental)",
+      "url": "/folklore/stories/mercy-rewarded-isental/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "50a41131dbc0b357aa07ad9aef2d653d7d76b308",
+      "title": "Nuns as Schneeaugen (Hartmann)",
+      "url": "/folklore/stories/nuns-as-schneeaugen-hartmann/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "b2579af3973f1d8eecf3b2b51b70bada59badca2",
+      "title": "Nuns as Schneeaugen (Kohlrusch)",
+      "url": "/folklore/stories/nuns-as-schneeaugen-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
       "id": "6467ba133977071785a2a22974e46b0d9516d22e",
       "title": "Saint Verena at Zurzach",
       "url": "/folklore/stories/saint-verena-at-zurzach/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "ac06e63f04d69a82ad2ff33417dba296f7a51349",
+      "title": "Strong Hans (Grimm)",
+      "url": "/folklore/stories/strong-hans-grimm/",
+      "year": 1837,
+      "author": "Jacob Grimm and Wilhelm Grimm"
+    },
+    {
+      "id": "ba28d259fad054e0c287b60fe1b1be4c977e2b9c",
+      "title": "Strong Hans (Sutermeister)",
+      "url": "/folklore/stories/strong-hans-sutermeister/",
+      "year": 1869,
+      "author": "Otto Sutermeister, Solothurn"
     },
     {
       "id": "7c64393689728a58687d3935b618c5996950ba1a",
@@ -68,11 +257,116 @@
       "author": "Ernst L. Rochholz"
     },
     {
+      "id": "9fb34117231eb9b5604476317d89d371b0769397",
+      "title": "The Abducted Child (Brig)",
+      "url": "/folklore/stories/the-abducted-child-brig/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "0dc0d3bdd0a9b9d7dad76538f0d4113e69207629",
+      "title": "The Abducted Child (Rigelibueb)",
+      "url": "/folklore/stories/the-abducted-child-rigelibueb/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "56812f0a98ed3da54158e7616f5ab7cce1dce52b",
+      "title": "The Abducted Child (Schattdorf)",
+      "url": "/folklore/stories/the-abducted-child-schattdorf/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "1456415dd8b5a2591102f1f47fe4c3304b52442d",
+      "title": "The Alpgeschrei",
+      "url": "/folklore/stories/the-alpgeschrei/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "cae34ad58cf0a4afa03c9af630c578e8079831aa",
+      "title": "The Bannhölzler (Kohlrusch)",
+      "url": "/folklore/stories/the-bannholzler-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
+      "id": "53244c8a8e07e749307734f09fc40f689f106f1f",
+      "title": "The Bannhölzler (Vernaleken)",
+      "url": "/folklore/stories/the-bannholzler-vernaleken/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "b52d78e297e1b54f2222c63005fd6ee4cae585d8",
+      "title": "The Bewitched Cows (St. Gallen)",
+      "url": "/folklore/stories/the-bewitched-cows-st-gallen/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "b5596c2fa38db169b3e439b1dc3a2e0c3b8f2e6f",
+      "title": "The Bewitched Cows (Uri)",
+      "url": "/folklore/stories/the-bewitched-cows-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "44b19b21bdbdcc1d85fc6d1f548dbc0a3ee5f8e1",
+      "title": "The Bleeding Bone (Schwyz)",
+      "url": "/folklore/stories/the-bleeding-bone-schwyz/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "68e73bc613d8ec5f0ea271c11d8a0bf946ae3ba1",
+      "title": "The Bleeding Bone (Uri)",
+      "url": "/folklore/stories/the-bleeding-bone-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "a7c97b9ae9b64f5a0a2e55b95770e8fc5a9b3bc2",
+      "title": "The Bold Melker",
+      "url": "/folklore/stories/the-bold-melker/",
+      "year": 1915,
+      "author": "Meinrad Lienert, Entlebuch"
+    },
+    {
+      "id": "40d36d2ccbdf52792452c7489a87202c6752cb15",
+      "title": "The Boundary Race (Lütolf)",
+      "url": "/folklore/stories/the-boundary-race-lutolf/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "41de0a46b41049d17c8181a5501e7645e74ddbba",
+      "title": "The Boundary Race (Müller)",
+      "url": "/folklore/stories/the-boundary-race-muller/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3",
       "title": "The Bridal Voyage on Lake Hallwil",
       "url": "/folklore/stories/the-bridal-voyage-on-lake-hallwil/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "25ad92e9dbbb8788941d11a8ec9de202dc036a05",
+      "title": "The Bull of Uri (Lienert)",
+      "url": "/folklore/stories/the-bull-of-uri-lienert/",
+      "year": 1915,
+      "author": "Meinrad Lienert, Schweiz"
+    },
+    {
+      "id": "82398b4ea56dad9825c5b5ff37ef92161c916d53",
+      "title": "The Bull of Uri (Lütolf)",
+      "url": "/folklore/stories/the-bull-of-uri-lutolf/",
+      "year": 1865,
+      "author": "Alois Lütolf"
     },
     {
       "id": "507a2de96f6647a3359b25e46175f394dabe5c3e",
@@ -89,11 +383,214 @@
       "author": "Ernst L. Rochholz"
     },
     {
+      "id": "5c851b75187a54d866424c32176a24d1044ecde0",
+      "title": "The Careless Mother (Brunnen in the Saas Valley)",
+      "url": "/folklore/stories/the-careless-mother-brunnen-saas/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "a90050f4aef566c2bc1995d437c2f0e5abb0b07b",
+      "title": "The Careless Mother (Teelwald)",
+      "url": "/folklore/stories/the-careless-mother-teelwald/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "0d440a29ed23ea3158fc65cbab53fe70151652a8",
+      "title": "The Castle Maiden (Benkenriet)",
+      "url": "/folklore/stories/the-castle-maiden-benkenriet/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "153c42142f1431e35ce9a33ebb2f3c15d237610d",
+      "title": "The Castle Maiden (Rambach)",
+      "url": "/folklore/stories/the-castle-maiden-rambach/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "7dc1402fca0095b7d9cb75c436b38e27f9f51d46",
+      "title": "The Cat Tied to a Thread",
+      "url": "/folklore/stories/the-cat-tied-to-a-thread/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "986ade41a4f1248cf71b21250c488c40837ce1c6",
+      "title": "The Cold Hand (Uri)",
+      "url": "/folklore/stories/the-cold-hand-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "ce8c1fafabe1c22277c7f754448338b73d1bf39d",
+      "title": "The Cold Hand (Valais)",
+      "url": "/folklore/stories/the-cold-hand-valais/",
+      "year": 1905,
+      "author": "J. Siegen"
+    },
+    {
+      "id": "fa23bdca840efeeec31d44000164bcf1ac552c5d",
+      "title": "The Cradle Spirit",
+      "url": "/folklore/stories/the-cradle-spirit/",
+      "year": 1915,
+      "author": "Meinrad Lienert"
+    },
+    {
+      "id": "8edb7f91b541887896e0761fc5d0effa9bc03fea",
+      "title": "The Cunning Habsburger (Aargau)",
+      "url": "/folklore/stories/the-cunning-habsburger-aargau/",
+      "year": 1915,
+      "author": "Meinrad Lienert, Schweiz"
+    },
+    {
+      "id": "9c3ebc4f3e1a1b14034c65a04a72aa64dd1928e6",
+      "title": "The Cunning Habsburger (Zürich)",
+      "url": "/folklore/stories/the-cunning-habsburger-zurich/",
+      "year": 1918,
+      "author": "Meinrad Lienert"
+    },
+    {
+      "id": "46f583839d952abff4a2b18f1dcd997092fc8172",
+      "title": "The Destruction of Plurs (Rochholz)",
+      "url": "/folklore/stories/the-destruction-of-plurs-rochholz/",
+      "year": 1862,
+      "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "f38a88c672041e7d6ffc53a9c6563ccff7efb37e",
+      "title": "The Destruction of Plurs (Vernaleken)",
+      "url": "/folklore/stories/the-destruction-of-plurs-vernaleken/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "f055d03231bb6cdf37afcc48bd0f074ee3bae30f",
+      "title": "The Destruction of Täsch (Jegerlehner)",
+      "url": "/folklore/stories/the-destruction-of-tasch-jegerlehner/",
+      "year": 1906,
+      "author": "Johannes Jegerlehner"
+    },
+    {
+      "id": "7688f3eba57c98e613affb157fac3dc3aa60657d",
+      "title": "The Destruction of Täsch (Tscheinen and Ruppen)",
+      "url": "/folklore/stories/the-destruction-of-tasch-tscheinen-ruppen/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "5e4ad0d2043da426fa824ac84abb9d5a479cc74a",
+      "title": "The Devil and the Poacher (Lütolf)",
+      "url": "/folklore/stories/the-devil-and-the-poacher-lutolf/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "8d4333606d92e4263e30be7644ea711b997351a6",
+      "title": "The Devil and the Poacher (Müller)",
+      "url": "/folklore/stories/the-devil-and-the-poacher-muller/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "280e54413edef826b096e8914ac87f54b68925f3",
+      "title": "The Devil as Brother-in-Law (Aargau)",
+      "url": "/folklore/stories/the-devil-as-brother-in-law-aargau/",
+      "year": 1869,
+      "author": "Otto Sutermeister"
+    },
+    {
+      "id": "2d4a0e3e2804ad7dd1b93b25bffe60f673a49bb3",
+      "title": "The Devil as Brother-in-Law (Lucerne)",
+      "url": "/folklore/stories/the-devil-as-brother-in-law-lucerne/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "d662d78b57cdf640ae22c3d93ef9399ed5f99227",
+      "title": "The Devil Gives a Little Bell (Lucerne)",
+      "url": "/folklore/stories/the-devil-gives-a-little-bell-lucerne/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "add3387dc8a08e8ca0a051134ce7ab4086996f14",
+      "title": "The Devil Gives a Little Bell (Uri)",
+      "url": "/folklore/stories/the-devil-gives-a-little-bell-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "291f29a9f9a8a257fe3fc7b831ee4d58a9226a4c",
+      "title": "The Devil's Bridge (Reuss)",
+      "url": "/folklore/stories/the-devils-bridge-reuss/",
+      "year": 1816,
+      "author": "Brüder Grimm"
+    },
+    {
+      "id": "7ead6ae74e71f379762e4591a18053d53714a3e9",
+      "title": "The Devil's Karrweg (Hartmann)",
+      "url": "/folklore/stories/the-devils-karrweg-hartmann/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "19fc6f598fc48347fed435a1256d8429ad13a75c",
+      "title": "The Devil’s Bridge (St. Gallen)",
+      "url": "/folklore/stories/the-devils-bridge-st-gallen/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "06a4d9666fb53f6c663d3c03127ca7e78aee463e",
+      "title": "The Devil’s Karrweg (Kohlrusch)",
+      "url": "/folklore/stories/the-devils-karrweg-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
       "id": "373b1522595312ccbeb34c116035b6b486501266",
       "title": "The Discovery of the Healing Springs at Baden",
       "url": "/folklore/stories/the-discovery-of-the-healing-springs-at-baden/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "a3f5942218fe1751353407c72f86fbb7ead02201",
+      "title": "The Dreifingerstein (Schwyz)",
+      "url": "/folklore/stories/the-dreifingerstein-schwyz/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "82b79417966e44903944323bd4cf2a6d6c981221",
+      "title": "The Dreifingerstein (Zug)",
+      "url": "/folklore/stories/the-dreifingerstein-zug/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
+      "id": "ac01551ac6053a6b599ee8375de6754d8e84f96c",
+      "title": "The Dwarf Woman",
+      "url": "/folklore/stories/the-dwarf-woman/",
+      "year": 1915,
+      "author": "Meinrad Lienert"
+    },
+    {
+      "id": "d8bd03772e2dded03a680db97869221c220a9083",
+      "title": "The Fence Stake (Uri)",
+      "url": "/folklore/stories/the-fence-stake-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "fc4fce8f026d309ab48d220a3efef394780b452e",
+      "title": "The Fence Stake (Zug)",
+      "url": "/folklore/stories/the-fence-stake-zug/",
+      "year": 1865,
+      "author": "Alois Lütolf"
     },
     {
       "id": "46c1e0af9c1903d196641674db543ffe4909c64f",
@@ -103,11 +600,109 @@
       "author": "Ernst L. Rochholz"
     },
     {
+      "id": "422e5567407a5154ed0c28594c9abc6a18eb638b",
+      "title": "The Giants of Iseltwald (Hartmann)",
+      "url": "/folklore/stories/the-giants-of-iseltwald-hartmann/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "ab89983f1ccab4e7b22af14aeba95af01280b83e",
+      "title": "The Giants of Iseltwald (Kohlrusch)",
+      "url": "/folklore/stories/the-giants-of-iseltwald-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
+      "id": "a79d02c5e000ec1a7b8b0e21f7af39a8ca55274b",
+      "title": "The Golden Gate (Lienert, 1915)",
+      "url": "/folklore/stories/the-golden-gate-lienert-1915/",
+      "year": 1915,
+      "author": "Meinrad Lienert"
+    },
+    {
+      "id": "d6a2eda50f5843f0902e81d53f8076bd7b87a2da",
+      "title": "The Golden Gate (Lienert, 1918)",
+      "url": "/folklore/stories/the-golden-gate-lienert-1918/",
+      "year": 1918,
+      "author": "Meinrad Lienert"
+    },
+    {
+      "id": "c2d08fe6aa643a81cc355c329e5c37eaf78409b5",
+      "title": "The Gratzug (Jegerlehner)",
+      "url": "/folklore/stories/the-gratzug-jegerlehner/",
+      "year": 1906,
+      "author": "Johannes Jegerlehner"
+    },
+    {
+      "id": "15064fddeb4bad2e8f1d137d657481f3921fb6e9",
+      "title": "The Gratzug (Tscheinen and Ruppen)",
+      "url": "/folklore/stories/the-gratzug-tscheinen-ruppen/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "d5c3013eadd69c31545916a0e45e8b7262a9dbf1",
+      "title": "The Hauri (Jost von Rudenz)",
+      "url": "/folklore/stories/the-hauri-jost-von-rudenz/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "abaa6b321df1246ddf45c92d709369eda308d58c",
+      "title": "The Hauri (Steinbergalp)",
+      "url": "/folklore/stories/the-hauri-steinbergalp/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "6cb09a0d021202dfdb694328489600b1194a24bb",
+      "title": "The Headless Man (Erstfeld)",
+      "url": "/folklore/stories/the-headless-man-erstfeld/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "9a31105c8610cd7aa89f1dec745f6acb457011c5",
+      "title": "The Headless Man (Spiringen)",
+      "url": "/folklore/stories/the-headless-man-spiringen/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31",
       "title": "The Healed Helvetian Woman",
       "url": "/folklore/stories/the-healed-helvetian-woman/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "91c3af070b20e613e4bd9dfe3c55e0f49b8cf744",
+      "title": "The Healing Toad (Obwalden)",
+      "url": "/folklore/stories/the-healing-toad-obwalden/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "e5ad1d5a7653738751df5aa0f1b28991ba91fa9d",
+      "title": "The Healing Toad (Uri)",
+      "url": "/folklore/stories/the-healing-toad-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "cf5976c9cc00a00ec3a5d883c8ceed2385216bb4",
+      "title": "The Heavy Child (Jecklin)",
+      "url": "/folklore/stories/the-heavy-child-jecklin/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "5237b5bfffff79655220f5a6b7c0c41f35323c6e",
+      "title": "The Heavy Child (Kohlrusch)",
+      "url": "/folklore/stories/the-heavy-child-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
     },
     {
       "id": "38904f34c09542b6c43278a9624b77062e9005cf",
@@ -131,11 +726,228 @@
       "author": "Ernst L. Rochholz"
     },
     {
+      "id": "b118ecfcc77b21734254bcd59ecad0d8468589ad",
+      "title": "The Kreuzliberg",
+      "url": "/folklore/stories/the-kreuzliberg/",
+      "year": 1816,
+      "author": "Brüder Grimm"
+    },
+    {
+      "id": "13c75cd31bad85379f72c77705b63c6a99881f3d",
+      "title": "The Little Leather Cap",
+      "url": "/folklore/stories/the-little-leather-cap/",
+      "year": 1915,
+      "author": "Meinrad Lienert"
+    },
+    {
+      "id": "1dba95bbc86e7c418dce4d990e15ba497f4e2cb1",
+      "title": "The Martinsdruck (Hartmann)",
+      "url": "/folklore/stories/the-martinsdruck-hartmann/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "e0656c84c36ff0a3a2df3b34a12ea9704abc7485",
+      "title": "The Martinsdruck (Vernaleken)",
+      "url": "/folklore/stories/the-martinsdruck-vernaleken/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "740af7bf8cdb3d9d18d09badf40c01881c74176e",
+      "title": "The Milking Stool (Graubünden)",
+      "url": "/folklore/stories/the-milking-stool-graubunden/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "9bb1b60602cfaf7552890e6037f29297ffcc4e5e",
+      "title": "The Milking Stool (St. Gallen)",
+      "url": "/folklore/stories/the-milking-stool-st-gallen/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
+      "id": "cde40155b583aab83a7972ba7c50479f9acc4e30",
+      "title": "The Mountain Spirit (Appenzell)",
+      "url": "/folklore/stories/the-mountain-spirit-appenzell/",
+      "year": 1816,
+      "author": "Brüder Grimm"
+    },
+    {
+      "id": "c1e13c03298a6a62923fb3643c41399ec2c53568",
+      "title": "The Mountain Spirit (Bern)",
+      "url": "/folklore/stories/the-mountain-spirit-bern/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "8853ebf9857040d874b9d133cb9cb205479cd3fa",
+      "title": "The Murder Night of Lucerne (Lienert)",
+      "url": "/folklore/stories/the-murder-night-of-lucerne-lienert/",
+      "year": 1915,
+      "author": "Meinrad Lienert, Schweiz"
+    },
+    {
+      "id": "281ee54dbc03bc59ba579b7c5cd1c8c557e7d860",
+      "title": "The Murder Night of Lucerne (Lütolf)",
+      "url": "/folklore/stories/the-murder-night-of-lucerne-lutolf/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "5a71abc558e631e69ae01bc4327b0350d46617a1",
+      "title": "The Musterung on Seefeld (Hartmann)",
+      "url": "/folklore/stories/the-musterung-on-seefeld-hartmann/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "8471e03ba2a4854a446812e083c732b934eea36b",
+      "title": "The Musterung on Seefeld (Kohlrusch)",
+      "url": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
+      "id": "5338e2adadebb69025354578463a409d8b4e87d6",
+      "title": "The Noblewoman of Milan (Bern)",
+      "url": "/folklore/stories/the-noblewoman-of-milan-bern/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "267d97b74f648030def31b809bb86d0a5f71a3b8",
+      "title": "The Noblewoman of Milan (Lienert)",
+      "url": "/folklore/stories/the-noblewoman-of-milan-lienert/",
+      "year": 1915,
+      "author": "Meinrad Lienert"
+    },
+    {
+      "id": "92bc02f0ce373d69e19e132fd403024a9996ad81",
+      "title": "The Noblewoman of Milan (Tscheinen and Ruppen)",
+      "url": "/folklore/stories/the-noblewoman-of-milan-tscheinen-ruppen/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "6f0e819692fe4986d169095d79acc5ef2edd9480",
+      "title": "The Obliging Devil (Flüelen)",
+      "url": "/folklore/stories/the-obliging-devil-fluelen/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "8eb4185b3e3f00ec85c64cc5cab67c44de6be3cf",
+      "title": "The Obliging Devil (The Overturned Cart)",
+      "url": "/folklore/stories/the-obliging-devil-overturned-cart/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "74af00748e6d8c160e50f88e7ad3d3e32f767ddb",
+      "title": "The Origin of the Kuhreihen (Bern)",
+      "url": "/folklore/stories/the-origin-of-the-kuhreihen-bern/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "84db71a855539a19d7bdb94a5a1c06c39a12f4a0",
+      "title": "The Origin of the Kuhreihen (Lienert)",
+      "url": "/folklore/stories/the-origin-of-the-kuhreihen-lienert/",
+      "year": 1915,
+      "author": "Meinrad Lienert, Schweiz"
+    },
+    {
+      "id": "18aaf1ae10276161505f60b18c68d1482bb676cf",
+      "title": "The Perjury (Graubünden)",
+      "url": "/folklore/stories/the-perjury-graubunden/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "8ebf61349361ea1cb8a0d710edf41891e375c0dd",
+      "title": "The Perjury (St. Gallen)",
+      "url": "/folklore/stories/the-perjury-st-gallen/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "f0bd6117493ec0d10b9fe9d8afe8437781d9294f",
+      "title": "The Procession of the Dead (Uri)",
+      "url": "/folklore/stories/the-procession-of-the-dead-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "e456ddd6a42326f636c91b685533e727aa15a40b",
+      "title": "The Procession of the Dead (Valais)",
+      "url": "/folklore/stories/the-procession-of-the-dead-valais/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "facc9fdb0c03b48b346d2e5a41b95b0875db6140",
+      "title": "The Punished Witch (Graubünden)",
+      "url": "/folklore/stories/the-punished-witch-graubunden/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "cddf06bcbe643fa5575d4a616db87199f4349dc6",
+      "title": "The Punished Witch (St. Gallen)",
+      "url": "/folklore/stories/the-punished-witch-st-gallen/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "1555a732b19b786922a4053f4701807b5885c3ab",
+      "title": "The Punished Witch (Uri)",
+      "url": "/folklore/stories/the-punished-witch-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "7c0af6230ecf47e8d666b811b3986befb4b3bd2f",
       "title": "The Ring at Aarburg Castle",
       "url": "/folklore/stories/the-ring-at-aarburg-castle/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "6b50e47df0a18d0fe86b88fa52036c6e061a7279",
+      "title": "The Rochelmore (Kohlrusch)",
+      "url": "/folklore/stories/the-rochelmore-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
+      "id": "e79fd3fb61c8856c9547c50493e325655b576242",
+      "title": "The Rochelmore (Vernaleken)",
+      "url": "/folklore/stories/the-rochelmore-vernaleken/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "c5810a040336687c0361a7d05bed9236c19aeeca",
+      "title": "The Rottal, an Alpine Hell",
+      "url": "/folklore/stories/the-rottal-an-alpine-hell/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "47930a04257f4e9097c0b25e97782d4f43a6910c",
+      "title": "The Schlangenbanner (Jecklin)",
+      "url": "/folklore/stories/the-schlangenbanner-jecklin/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "73cfc215aee927402f292aa419b97a67693c7b45",
+      "title": "The Schlangenbanner (Lienert)",
+      "url": "/folklore/stories/the-schlangenbanner-lienert/",
+      "year": 1915,
+      "author": "Meinrad Lienert, Schweiz"
     },
     {
       "id": "467e25e4996b52861fface7e615b0d0a0ccb12e3",
@@ -145,11 +957,186 @@
       "author": "Ernst L. Rochholz"
     },
     {
+      "id": "348f8f1aaec9cb4b494c8d47f2f346b5ff38421a",
+      "title": "The Seamstress (Aargau)",
+      "url": "/folklore/stories/the-seamstress-aargau/",
+      "year": 1856,
+      "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "1ee10412f2d06e4fa1b4a67c9115849ee8492f6e",
+      "title": "The Seamstress (Uri)",
+      "url": "/folklore/stories/the-seamstress-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "0eb6df5fcb5b5944254905a6f2105a0e611e6a33",
+      "title": "The Seelisberg Gate (Lütolf)",
+      "url": "/folklore/stories/the-seelisberg-gate-lutolf/",
+      "year": 1865,
+      "author": "A. Lütolf"
+    },
+    {
+      "id": "0aac5944ac9d7db3539eecf5f00f7f68b886727b",
+      "title": "The Seelisberg Gate (Müller)",
+      "url": "/folklore/stories/the-seelisberg-gate-muller/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "45e2cc21ab99b3f6145bb7d2beef754d39078657",
+      "title": "The Serpent Maiden (Basel)",
+      "url": "/folklore/stories/the-serpent-maiden-basel/",
+      "year": 1816,
+      "author": "Brüder Grimm"
+    },
+    {
+      "id": "3b34428675ae3bdc6cd64b6eeed5b058966ff293",
+      "title": "The Serpent Maiden (Graubünden)",
+      "url": "/folklore/stories/the-serpent-maiden-graubunden/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "00338b79370481adade2d3ccca84a5e4827cb40c",
+      "title": "The Snake Queen",
+      "url": "/folklore/stories/the-snake-queen/",
+      "year": 1873,
+      "author": "Otto Sutermeister"
+    },
+    {
+      "id": "a89641edc0176b1600fb3d1c80a5731e17159142",
+      "title": "The Spectral Sennen (Bern)",
+      "url": "/folklore/stories/the-spectral-sennen-bern/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "82a20ceb2978b6f4d570373d775ef32166f7eb35",
+      "title": "The Spectral Sennen (Graubünden)",
+      "url": "/folklore/stories/the-spectral-sennen-graubunden/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "7087b9fea9e9e88e4b774a96ec55d23a2757e03f",
+      "title": "The Spinner (Uri)",
+      "url": "/folklore/stories/the-spinner-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "7d46b44fe87c9a03b74074b82e6576eb30bcda45",
+      "title": "The Spinner (Valais)",
+      "url": "/folklore/stories/the-spinner-valais/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "c80467d819d2d85d58d45b8863e2b49a144234f8",
+      "title": "The Spinner (Vaud)",
+      "url": "/folklore/stories/the-spinner-vaud/",
+      "year": 1885,
+      "author": "Alfred Cérésole"
+    },
+    {
+      "id": "b3d9bdc23c333907734a795367fc0ebed59fcac2",
+      "title": "The Spirit in the Hay Door (Graggerberg)",
+      "url": "/folklore/stories/the-spirit-in-the-hay-door-graggerberg/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "b47a5e5d4e761f75c7284c9bc4dc3e726b5d9b97",
+      "title": "The Spirit in the Hay Door (Göscheneralp)",
+      "url": "/folklore/stories/the-spirit-in-the-hay-door-goscheneralp/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
       "id": "6aeb8c528735636a5627a29275a5788c9764d2f8",
       "title": "The Springs of the Schafmatt",
       "url": "/folklore/stories/the-springs-of-the-schafmatt/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "9a8a7eec859217629a15dc03daa57998c074a49d",
+      "title": "The Stollenwurm (Bern)",
+      "url": "/folklore/stories/the-stollenwurm-bern/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "36932fb818887252538a3fc8c5ff21b4b5f944fa",
+      "title": "The Stollenwurm (Fribourg)",
+      "url": "/folklore/stories/the-stollenwurm-fribourg/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "49c8e39465b275da0626bd4b239916eaa034c8cc",
+      "title": "The Sträggele — Vernaleken (Lucerne)",
+      "url": "/folklore/stories/the-straggele-vernaleken-lucerne/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "af31c63b17f042733da8586ae964ef391b9493c1",
+      "title": "The Sträggele — Vernaleken (Zug)",
+      "url": "/folklore/stories/the-straggele-vernaleken-zug/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
+    },
+    {
+      "id": "56e3f4281f7026591f511eaaaa8e00717887e62e",
+      "title": "The Tailor and the Giant (Aargau)",
+      "url": "/folklore/stories/the-tailor-and-the-giant-aargau/",
+      "year": 1869,
+      "author": "Otto Sutermeister, Deutschschweiz"
+    },
+    {
+      "id": "93d12f29091f682f7d1df1c16428a8e3b2a4d6b8",
+      "title": "The Tailor and the Giant (Lucerne)",
+      "url": "/folklore/stories/the-tailor-and-the-giant-lucerne/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "16462d93a064fd7320fe8a8406c2178b963f5d10",
+      "title": "The Three Brothers (Graubünden)",
+      "url": "/folklore/stories/the-three-brothers-graubunden/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "46817578eaa6a2c2440b6149da7fb486db9cefda",
+      "title": "The Three Brothers (Valais)",
+      "url": "/folklore/stories/the-three-brothers-valais/",
+      "year": 1913,
+      "author": "Johannes Jegerlehner"
+    },
+    {
+      "id": "1437b7ef9cdb477ae3407b103ba9d8d61e9bf112",
+      "title": "The Three Golden Apples (Graubünden)",
+      "url": "/folklore/stories/the-three-golden-apples-graubunden/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "44515194125d6ce51131c4fbb60c3be541bcec45",
+      "title": "The Three Golden Apples (Ticino)",
+      "url": "/folklore/stories/the-three-golden-apples-ticino/",
+      "year": 1923,
+      "author": "Walter Keller"
+    },
+    {
+      "id": "392ddc236ddac6891054d51f6ea8d58ea80293cd",
+      "title": "The Three Languages",
+      "url": "/folklore/stories/the-three-languages/",
+      "year": 1869,
+      "author": "Otto Sutermeister"
     },
     {
       "id": "5849217c631b9cf6d740ee0d6957d9c7de2e7876",
@@ -159,6 +1146,48 @@
       "author": "Ernst L. Rochholz"
     },
     {
+      "id": "e4ecdf959955c869b27d59cf81c4aea86d9c1382",
+      "title": "The Toggeli and the Baptismal Name (The Danger of Waking)",
+      "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "47c0d034d6bed56e7bb1d88986b3f8a9f4b19c08",
+      "title": "The Toggeli and the Baptismal Name (The Full Name)",
+      "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "c5015c64a814b57be05a12692c882b64b50c9851",
+      "title": "The Totenvolk in Davos (Kessler’s Pharmacy)",
+      "url": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "6459b0f84550e7003ceab6128bc87e26aee2d327",
+      "title": "The Totenvolk in Davos (The Coffin)",
+      "url": "/folklore/stories/the-totenvolk-in-davos-coffin/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "6c2ac635032b20327b751418b12be3f7cd8e4697",
+      "title": "The Transformed Frogs (Kohlrusch)",
+      "url": "/folklore/stories/the-transformed-frogs-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
+      "id": "841b3c5e06e156429bbd61a5ccae36d0b5c4d0a1",
+      "title": "The Transformed Frogs (Rochholz)",
+      "url": "/folklore/stories/the-transformed-frogs-rochholz/",
+      "year": 1856,
+      "author": "Ernst Ludwig Rochholz"
+    },
+    {
       "id": "7789e358737b8edee35538b428ecc4ede00ba46f",
       "title": "The Two Lights of Life",
       "url": "/folklore/stories/the-two-lights-of-life/",
@@ -166,11 +1195,60 @@
       "author": "Ernst L. Rochholz"
     },
     {
+      "id": "2f909f02a6e4251e50c45a29f6c028117540fecd",
+      "title": "The Türst (Lienert)",
+      "url": "/folklore/stories/the-turst-lienert/",
+      "year": 1915,
+      "author": "Meinrad Lienert, Schweiz"
+    },
+    {
+      "id": "464626346ab047cfe9553afc7bbb8c954cfcd70a",
+      "title": "The Türst (Lütolf)",
+      "url": "/folklore/stories/the-turst-lutolf/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
+      "id": "cda30055fb57f0ad06c73bdcc41019ff9d89a62f",
+      "title": "The Unfulfilled Dream (Kohlrusch)",
+      "url": "/folklore/stories/the-unfulfilled-dream-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
+      "id": "0f8bbb607399bc8ace4c2d1efa83f385feb3d96c",
+      "title": "The Unfulfilled Dream (Rochholz)",
+      "url": "/folklore/stories/the-unfulfilled-dream-rochholz/",
+      "year": 1856,
+      "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "0f0498570b98dfea956d56778dd835e6922fada4",
+      "title": "The Unnatural Son",
+      "url": "/folklore/stories/the-unnatural-son/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
       "id": "2eb4a90445992e00671bd9a64d5c67836b8f0804",
       "title": "The Verena Bath in the City of Baden",
       "url": "/folklore/stories/the-verena-bath-in-the-city-of-baden/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "871a49790eb66c56994802e7c05aa649f484654b",
+      "title": "The Wasserfräulein near Zug (Kohlrusch)",
+      "url": "/folklore/stories/the-wasserfraulein-near-zug-kohlrusch/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
+    },
+    {
+      "id": "fadd3437afc72bb06329de025416fd71266e6583",
+      "title": "The Wasserfräulein near Zug (Lütolf)",
+      "url": "/folklore/stories/the-wasserfraulein-near-zug-lutolf/",
+      "year": 1865,
+      "author": "Alois Lütolf"
     },
     {
       "id": "934238f65d75d52248f6b956294ce61309c2558e",
@@ -187,11 +1265,144 @@
       "author": "Ernst L. Rochholz"
     },
     {
+      "id": "5acbc32e524559b09dc920d7355e8a8c789235d8",
+      "title": "The White Chamois (Bern)",
+      "url": "/folklore/stories/the-white-chamois-bern/",
+      "year": 1915,
+      "author": "Meinrad Lienert"
+    },
+    {
+      "id": "774b0df251b5dcd68a03ef9a89a8f2af65b9804b",
+      "title": "The White Chamois (St. Gallen)",
+      "url": "/folklore/stories/the-white-chamois-st-gallen/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "027c387d1909cc5c20a1ca1c6014757387cf5dce",
+      "title": "The White Chamois (Valais)",
+      "url": "/folklore/stories/the-white-chamois-valais/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "4e11252902ee502f98a4c34776baf52d9f4c19c6",
+      "title": "The White Dove (Uri)",
+      "url": "/folklore/stories/the-white-dove-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "7ded2ee1411c807faf68fa6f21b5df7a7a225a20",
+      "title": "The White Dove (Valais)",
+      "url": "/folklore/stories/the-white-dove-valais/",
+      "year": 1906,
+      "author": "Johannes Jegerlehner"
+    },
+    {
+      "id": "0d70f7bc1d65c9066db8f571ca2692b4e43785d9",
+      "title": "The Wild Hunt",
+      "url": "/folklore/stories/the-wild-hunt-sooder-1929/",
+      "year": 1929,
+      "author": "M. Sooder"
+    },
+    {
       "id": "34038eddddbc582d925e2bac7065aa6bda6fed6d",
       "title": "The Wässermann at Staffelbach",
       "url": "/folklore/stories/the-wassermann-at-staffelbach/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
+    },
+    {
+      "id": "d5146c4ce9ee5cc6a1271aac27179997ee609147",
+      "title": "Touching a Spirit (Maderanertal)",
+      "url": "/folklore/stories/touching-a-spirit-maderanertal/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "cd3497f6304f3e47f4be8035272a0ad6e4d8fb93",
+      "title": "Touching a Spirit (Rynächt)",
+      "url": "/folklore/stories/touching-a-spirit-rynacht/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "55e3904f993698138d91edfdf579eab7a6eda077",
+      "title": "Two Cows on One Chain (St. Gallen)",
+      "url": "/folklore/stories/two-cows-on-one-chain-st-gallen/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "810365e86541d70fb08b6e6d37cf06e72767ce03",
+      "title": "Two Cows on One Chain (Valais)",
+      "url": "/folklore/stories/two-cows-on-one-chain-valais/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
+    },
+    {
+      "id": "1a2f4144ed506f7df5c7adfb460b29a710011aff",
+      "title": "Uncanny (Bern)",
+      "url": "/folklore/stories/uncanny-bern/",
+      "year": 1929,
+      "author": "M. Sooder"
+    },
+    {
+      "id": "0d627361c3e24860a675193975125a7142f04e7b",
+      "title": "Uncanny (St. Gallen)",
+      "url": "/folklore/stories/uncanny-st-gallen/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "d6f9180e83886a45cc58238908d28c1931981c23",
+      "title": "William Tell (Schwyz)",
+      "url": "/folklore/stories/william-tell-schwyz/",
+      "year": 1816,
+      "author": "Jacob Grimm and Wilhelm Grimm"
+    },
+    {
+      "id": "109df4445f70b8906ab5cb77d8e6687e66f75223",
+      "title": "William Tell (Uri)",
+      "url": "/folklore/stories/william-tell-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "8c928101dd8b5d4b9ac41fdbbd9a8f157c11629a",
+      "title": "Witches' Dance (St. Gallen)",
+      "url": "/folklore/stories/witches-dance-st-gallen/",
+      "year": 1903,
+      "author": "Jakob Kuoni"
+    },
+    {
+      "id": "5589197de69e98d0e69439d3689e551e4a55ac5a",
+      "title": "Witches’ Dance (Uri)",
+      "url": "/folklore/stories/witches-dance-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "298ffbb0d40cc2e0f666a142b7f221895f5a4cf2",
+      "title": "Women's Cunning (Uri)",
+      "url": "/folklore/stories/womens-cunning-uri/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "46b5790de80ee2d8c377a8e46eecac3588cee293",
+      "title": "Women’s Cunning (Bern)",
+      "url": "/folklore/stories/womens-cunning-bern/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "14aab07f8abc94cde6d766c41e4cf75a5ba0868f",
+      "title": "Women’s Cunning (Graubünden)",
+      "url": "/folklore/stories/womens-cunning-graubunden/",
+      "year": 1874,
+      "author": "D. Jecklin"
     },
     {
       "id": "5dbbb4ca07221a731ca9f05249a4651f38f02e2e",
@@ -214,35 +1425,226 @@
     }
   ],
   "urls_by_id": {
+    "00338b79370481adade2d3ccca84a5e4827cb40c": "/folklore/stories/the-snake-queen/",
+    "0249f39e9cc637eb78a5c289267b491a6c7e25c5": "/folklore/stories/haaggla-with-a-ghost-maderanertal/",
+    "027c387d1909cc5c20a1ca1c6014757387cf5dce": "/folklore/stories/the-white-chamois-valais/",
+    "02843dde0d9a670ff774c3916c92ad2e23dc8c1d": "/folklore/stories/hans-baschi-jakober-of-uri/",
     "034cdca9ccd37d16e4c8018009368915aad972ba": "/folklore/stories/the-interrupted-ride/",
+    "06a4d9666fb53f6c663d3c03127ca7e78aee463e": "/folklore/stories/the-devils-karrweg-kohlrusch/",
+    "0aac5944ac9d7db3539eecf5f00f7f68b886727b": "/folklore/stories/the-seelisberg-gate-muller/",
+    "0d440a29ed23ea3158fc65cbab53fe70151652a8": "/folklore/stories/the-castle-maiden-benkenriet/",
+    "0d627361c3e24860a675193975125a7142f04e7b": "/folklore/stories/uncanny-st-gallen/",
+    "0d70f7bc1d65c9066db8f571ca2692b4e43785d9": "/folklore/stories/the-wild-hunt-sooder-1929/",
+    "0dc0d3bdd0a9b9d7dad76538f0d4113e69207629": "/folklore/stories/the-abducted-child-rigelibueb/",
+    "0e18881e11d8ee916e9bf537eb7cc5bd895acf3e": "/folklore/stories/the-three-languages/",
+    "0eb6df5fcb5b5944254905a6f2105a0e611e6a33": "/folklore/stories/the-seelisberg-gate-lutolf/",
+    "0f0498570b98dfea956d56778dd835e6922fada4": "/folklore/stories/the-unnatural-son/",
+    "0f8bbb607399bc8ace4c2d1efa83f385feb3d96c": "/folklore/stories/the-unfulfilled-dream-rochholz/",
+    "109df4445f70b8906ab5cb77d8e6687e66f75223": "/folklore/stories/william-tell-uri/",
+    "122e15b12dad89e2612731fa6a8e2a814acad491": "/folklore/stories/in-the-meien-valley-toggeli/",
+    "13c75cd31bad85379f72c77705b63c6a99881f3d": "/folklore/stories/the-little-leather-cap/",
+    "1437b7ef9cdb477ae3407b103ba9d8d61e9bf112": "/folklore/stories/the-three-golden-apples-graubunden/",
+    "1456415dd8b5a2591102f1f47fe4c3304b52442d": "/folklore/stories/the-alpgeschrei/",
+    "14aab07f8abc94cde6d766c41e4cf75a5ba0868f": "/folklore/stories/womens-cunning-graubunden/",
+    "14ffb8416d0e39f4c36c87fe079bf60ea864d12f": "/folklore/stories/the-white-chamois-bern/",
+    "15064fddeb4bad2e8f1d137d657481f3921fb6e9": "/folklore/stories/the-gratzug-tscheinen-ruppen/",
+    "153c42142f1431e35ce9a33ebb2f3c15d237610d": "/folklore/stories/the-castle-maiden-rambach/",
+    "1555a732b19b786922a4053f4701807b5885c3ab": "/folklore/stories/the-punished-witch-uri/",
+    "16462d93a064fd7320fe8a8406c2178b963f5d10": "/folklore/stories/the-three-brothers-graubunden/",
+    "18aaf1ae10276161505f60b18c68d1482bb676cf": "/folklore/stories/the-perjury-graubunden/",
+    "19fc6f598fc48347fed435a1256d8429ad13a75c": "/folklore/stories/the-devils-bridge-st-gallen/",
+    "1a2f4144ed506f7df5c7adfb460b29a710011aff": "/folklore/stories/uncanny-bern/",
+    "1dba95bbc86e7c418dce4d990e15ba497f4e2cb1": "/folklore/stories/the-martinsdruck-hartmann/",
     "1e90ecf18f18fa3b30d4db9aee8d2285208bc294": "/folklore/stories/bertha-of-baldegg/",
+    "1ee10412f2d06e4fa1b4a67c9115849ee8492f6e": "/folklore/stories/the-seamstress-uri/",
+    "245f36aaa52b9386d303beddfaea659a0c25e3bc": "/folklore/stories/in-the-dragons-cave-scheenenkulm/",
+    "25ad92e9dbbb8788941d11a8ec9de202dc036a05": "/folklore/stories/the-bull-of-uri-lienert/",
+    "267d97b74f648030def31b809bb86d0a5f71a3b8": "/folklore/stories/the-noblewoman-of-milan-lienert/",
+    "280e54413edef826b096e8914ac87f54b68925f3": "/folklore/stories/the-devil-as-brother-in-law-aargau/",
+    "281ee54dbc03bc59ba579b7c5cd1c8c557e7d860": "/folklore/stories/the-murder-night-of-lucerne-lutolf/",
+    "291f29a9f9a8a257fe3fc7b831ee4d58a9226a4c": "/folklore/stories/the-devils-bridge-reuss/",
     "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5": "/folklore/stories/the-wyden-woman/",
+    "298ffbb0d40cc2e0f666a142b7f221895f5a4cf2": "/folklore/stories/womens-cunning-uri/",
+    "2d4a0e3e2804ad7dd1b93b25bffe60f673a49bb3": "/folklore/stories/the-devil-as-brother-in-law-lucerne/",
     "2eb4a90445992e00671bd9a64d5c67836b8f0804": "/folklore/stories/the-verena-bath-in-the-city-of-baden/",
+    "2f909f02a6e4251e50c45a29f6c028117540fecd": "/folklore/stories/the-turst-lienert/",
+    "336ad2a20cc9031d49c8b0386a901a9f6801d274": "/folklore/stories/a-ghost-hospental/",
     "34038eddddbc582d925e2bac7065aa6bda6fed6d": "/folklore/stories/the-wassermann-at-staffelbach/",
+    "348f8f1aaec9cb4b494c8d47f2f346b5ff38421a": "/folklore/stories/the-seamstress-aargau/",
+    "36932fb818887252538a3fc8c5ff21b4b5f944fa": "/folklore/stories/the-stollenwurm-fribourg/",
     "373b1522595312ccbeb34c116035b6b486501266": "/folklore/stories/the-discovery-of-the-healing-springs-at-baden/",
     "38904f34c09542b6c43278a9624b77062e9005cf": "/folklore/stories/the-heiterechsee-near-muri/",
+    "39137f56aa928e1ae1f87e8a3f41c82f49da9e7f": "/folklore/stories/a-ghost-realp/",
+    "392ddc236ddac6891054d51f6ea8d58ea80293cd": "/folklore/stories/the-three-languages/",
+    "3b34428675ae3bdc6cd64b6eeed5b058966ff293": "/folklore/stories/the-serpent-maiden-graubunden/",
+    "3ea43a649cd850eb00ff03f726b7c2a23f923515": "/folklore/stories/mercy-rewarded-altdorf/",
     "40314b4af9266133a774f57ed6692cede664c5d9": "/folklore/stories/the-hunger-spring-at-degermoos/",
+    "40d36d2ccbdf52792452c7489a87202c6752cb15": "/folklore/stories/the-boundary-race-lutolf/",
+    "41de0a46b41049d17c8181a5501e7645e74ddbba": "/folklore/stories/the-boundary-race-muller/",
+    "42284256c340eec983e2ab44531f7b7e0e0af70a": "/folklore/stories/in-the-dragons-cave-chamois-hunter/",
+    "422e5567407a5154ed0c28594c9abc6a18eb638b": "/folklore/stories/the-giants-of-iseltwald-hartmann/",
     "434e1c6212cefb2c179cebaefb73d062fb021de8": "/folklore/stories/the-magic-book/",
+    "43e16aed94ba4039eb6f48ae9db9233630e98ec8": "/folklore/stories/the-little-leather-cap/",
+    "44515194125d6ce51131c4fbb60c3be541bcec45": "/folklore/stories/the-three-golden-apples-ticino/",
+    "44b19b21bdbdcc1d85fc6d1f548dbc0a3ee5f8e1": "/folklore/stories/the-bleeding-bone-schwyz/",
+    "45e2cc21ab99b3f6145bb7d2beef754d39078657": "/folklore/stories/the-serpent-maiden-basel/",
+    "464626346ab047cfe9553afc7bbb8c954cfcd70a": "/folklore/stories/the-turst-lutolf/",
     "467e25e4996b52861fface7e615b0d0a0ccb12e3": "/folklore/stories/the-schongau-baths-on-the-lindenberg/",
+    "46817578eaa6a2c2440b6149da7fb486db9cefda": "/folklore/stories/the-three-brothers-valais/",
+    "46b5790de80ee2d8c377a8e46eecac3588cee293": "/folklore/stories/womens-cunning-bern/",
     "46c1e0af9c1903d196641674db543ffe4909c64f": "/folklore/stories/the-fiery-man-at-the-etzgen-ferry/",
+    "46f583839d952abff4a2b18f1dcd997092fc8172": "/folklore/stories/the-destruction-of-plurs-rochholz/",
+    "47930a04257f4e9097c0b25e97782d4f43a6910c": "/folklore/stories/the-schlangenbanner-jecklin/",
+    "47c0d034d6bed56e7bb1d88986b3f8a9f4b19c08": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/",
+    "49c8e39465b275da0626bd4b239916eaa034c8cc": "/folklore/stories/the-straggele-vernaleken-lucerne/",
+    "4a8b3acb9d38ca63eab2348ea386efcb4d04be56": "/folklore/stories/fire-on-the-haystack-amsteg/",
+    "4bc6893ae34761320c64e7cd486cd8240e04bd91": "/folklore/stories/the-cat-tied-to-a-thread/",
+    "4bdd74526782b1cb9f9c600c8fe0a8fb45abf0fb": "/folklore/stories/the-dwarf-woman/",
+    "4e11252902ee502f98a4c34776baf52d9f4c19c6": "/folklore/stories/the-white-dove-uri/",
     "507a2de96f6647a3359b25e46175f394dabe5c3e": "/folklore/stories/the-buried-well/",
+    "50a41131dbc0b357aa07ad9aef2d653d7d76b308": "/folklore/stories/nuns-as-schneeaugen-hartmann/",
+    "51543790ce2d6015a77b3bfd6f0a96117b773cbf": "/folklore/stories/the-devils-bridge-reuss/",
+    "5237b5bfffff79655220f5a6b7c0c41f35323c6e": "/folklore/stories/the-heavy-child-kohlrusch/",
     "52e148ff2a5760247de1f0ef6affad49ecd86770": "/folklore/stories/the-well-in-olsberg/",
+    "53244c8a8e07e749307734f09fc40f689f106f1f": "/folklore/stories/the-bannholzler-vernaleken/",
+    "5338e2adadebb69025354578463a409d8b4e87d6": "/folklore/stories/the-noblewoman-of-milan-bern/",
+    "5577eecd3443625a0aa9d410d2ee99c4b878ca00": "/folklore/stories/the-serpent-maiden-basel/",
+    "5589197de69e98d0e69439d3689e551e4a55ac5a": "/folklore/stories/witches-dance-uri/",
+    "55e3904f993698138d91edfdf579eab7a6eda077": "/folklore/stories/two-cows-on-one-chain-st-gallen/",
+    "56812f0a98ed3da54158e7616f5ab7cce1dce52b": "/folklore/stories/the-abducted-child-schattdorf/",
+    "56e3f4281f7026591f511eaaaa8e00717887e62e": "/folklore/stories/the-tailor-and-the-giant-aargau/",
     "5849217c631b9cf6d740ee0d6957d9c7de2e7876": "/folklore/stories/the-three-sisters-in-the-eithal/",
+    "5a71abc558e631e69ae01bc4327b0350d46617a1": "/folklore/stories/the-musterung-on-seefeld-hartmann/",
+    "5acbc32e524559b09dc920d7355e8a8c789235d8": "/folklore/stories/the-white-chamois-bern/",
+    "5b5494e6607150d1b3bd8a87b8071012c58c2ef4": "/folklore/stories/how-he-got-rid-of-his-alraune/",
+    "5c851b75187a54d866424c32176a24d1044ecde0": "/folklore/stories/the-careless-mother-brunnen-saas/",
+    "5ca4f9729b9eff6fc9a0bf489f5bd25a626687f1": "/folklore/stories/emperor-charlemagne-and-the-snake-st-gallen/",
     "5dbbb4ca07221a731ca9f05249a4651f38f02e2e": "/folklore/stories/wasserrecht-at-ursprung/",
+    "5e4ad0d2043da426fa824ac84abb9d5a479cc74a": "/folklore/stories/the-devil-and-the-poacher-lutolf/",
+    "5e8b4cccf82a177176e1aa733d661f95469db9de": "/folklore/stories/in-the-meien-valley-wandering-souls/",
+    "5f4f8f2e171374337775c3e307d323bb5cdb14dc": "/folklore/stories/the-golden-gate-lienert-1915/",
+    "612d829ce0e56a446b3d36527d4c4d54fb082186": "/folklore/stories/the-boundary-race-muller/",
+    "6459b0f84550e7003ceab6128bc87e26aee2d327": "/folklore/stories/the-totenvolk-in-davos-coffin/",
     "6467ba133977071785a2a22974e46b0d9516d22e": "/folklore/stories/saint-verena-at-zurzach/",
+    "68e73bc613d8ec5f0ea271c11d8a0bf946ae3ba1": "/folklore/stories/the-bleeding-bone-uri/",
     "6aeb8c528735636a5627a29275a5788c9764d2f8": "/folklore/stories/the-springs-of-the-schafmatt/",
+    "6b50e47df0a18d0fe86b88fa52036c6e061a7279": "/folklore/stories/the-rochelmore-kohlrusch/",
+    "6c2ac635032b20327b751418b12be3f7cd8e4697": "/folklore/stories/the-transformed-frogs-kohlrusch/",
+    "6cb09a0d021202dfdb694328489600b1194a24bb": "/folklore/stories/the-headless-man-erstfeld/",
+    "6d09f9175240481305d77d1515b5aa2d78317a89": "/folklore/stories/haaggla-with-a-ghost-schattdorf/",
+    "6e5ef49d57c9bf02593089147ee251018b2c687e": "/folklore/stories/freemasons-paris/",
     "6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31": "/folklore/stories/the-healed-helvetian-woman/",
+    "6f0e819692fe4986d169095d79acc5ef2edd9480": "/folklore/stories/the-obliging-devil-fluelen/",
     "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a": "/folklore/stories/the-magic-book-of-the-three-poor-boys/",
+    "7087b9fea9e9e88e4b774a96ec55d23a2757e03f": "/folklore/stories/the-spinner-uri/",
+    "70b92a86bb397738f02ecda2783b82760b6cdc5e": "/folklore/stories/the-bold-melker/",
+    "73cfc215aee927402f292aa419b97a67693c7b45": "/folklore/stories/the-schlangenbanner-lienert/",
+    "73f56d11aad8da9f85e26eb58804a07de8c896a9": "/folklore/stories/an-arme-seele-fiery-teeth/",
+    "740af7bf8cdb3d9d18d09badf40c01881c74176e": "/folklore/stories/the-milking-stool-graubunden/",
+    "74af00748e6d8c160e50f88e7ad3d3e32f767ddb": "/folklore/stories/the-origin-of-the-kuhreihen-bern/",
+    "7688f3eba57c98e613affb157fac3dc3aa60657d": "/folklore/stories/the-destruction-of-tasch-tscheinen-ruppen/",
+    "774b0df251b5dcd68a03ef9a89a8f2af65b9804b": "/folklore/stories/the-white-chamois-st-gallen/",
     "7789e358737b8edee35538b428ecc4ede00ba46f": "/folklore/stories/the-two-lights-of-life/",
     "7c0af6230ecf47e8d666b811b3986befb4b3bd2f": "/folklore/stories/the-ring-at-aarburg-castle/",
     "7c64393689728a58687d3935b618c5996950ba1a": "/folklore/stories/swimmer-willi-of-meisterschwanden/",
+    "7d46b44fe87c9a03b74074b82e6576eb30bcda45": "/folklore/stories/the-spinner-valais/",
+    "7dc1402fca0095b7d9cb75c436b38e27f9f51d46": "/folklore/stories/the-cat-tied-to-a-thread/",
+    "7ded2ee1411c807faf68fa6f21b5df7a7a225a20": "/folklore/stories/the-white-dove-valais/",
+    "7ead6ae74e71f379762e4591a18053d53714a3e9": "/folklore/stories/the-devils-karrweg-hartmann/",
+    "810365e86541d70fb08b6e6d37cf06e72767ce03": "/folklore/stories/two-cows-on-one-chain-valais/",
+    "82398b4ea56dad9825c5b5ff37ef92161c916d53": "/folklore/stories/the-bull-of-uri-lutolf/",
+    "82a20ceb2978b6f4d570373d775ef32166f7eb35": "/folklore/stories/the-spectral-sennen-graubunden/",
+    "82b79417966e44903944323bd4cf2a6d6c981221": "/folklore/stories/the-dreifingerstein-zug/",
+    "841b3c5e06e156429bbd61a5ccae36d0b5c4d0a1": "/folklore/stories/the-transformed-frogs-rochholz/",
+    "8471e03ba2a4854a446812e083c732b934eea36b": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/",
+    "84db71a855539a19d7bdb94a5a1c06c39a12f4a0": "/folklore/stories/the-origin-of-the-kuhreihen-lienert/",
+    "871a49790eb66c56994802e7c05aa649f484654b": "/folklore/stories/the-wasserfraulein-near-zug-kohlrusch/",
+    "8853ebf9857040d874b9d133cb9cb205479cd3fa": "/folklore/stories/the-murder-night-of-lucerne-lienert/",
+    "8bec867a6c319a1ffb047c2711d6855b7f701e99": "/folklore/stories/mercy-rewarded-isental/",
+    "8c928101dd8b5d4b9ac41fdbbd9a8f157c11629a": "/folklore/stories/witches-dance-st-gallen/",
+    "8d4333606d92e4263e30be7644ea711b997351a6": "/folklore/stories/the-devil-and-the-poacher-muller/",
+    "8eb4185b3e3f00ec85c64cc5cab67c44de6be3cf": "/folklore/stories/the-obliging-devil-overturned-cart/",
+    "8ebf61349361ea1cb8a0d710edf41891e375c0dd": "/folklore/stories/the-perjury-st-gallen/",
+    "8edb7f91b541887896e0761fc5d0effa9bc03fea": "/folklore/stories/the-cunning-habsburger-aargau/",
+    "8ef90dcfee11b80ff0150370443276643de9bf22": "/folklore/stories/the-rottal-an-alpine-hell/",
+    "902898b05455feccfeca6f18cd958ad8c5d21ba6": "/folklore/stories/the-alpgeschrei/",
+    "91c3af070b20e613e4bd9dfe3c55e0f49b8cf744": "/folklore/stories/the-healing-toad-obwalden/",
+    "92bc02f0ce373d69e19e132fd403024a9996ad81": "/folklore/stories/the-noblewoman-of-milan-tscheinen-ruppen/",
     "934238f65d75d52248f6b956294ce61309c2558e": "/folklore/stories/the-water-spirit-near-seckingen/",
+    "93d12f29091f682f7d1df1c16428a8e3b2a4d6b8": "/folklore/stories/the-tailor-and-the-giant-lucerne/",
     "95dcd7188a663a3c9f4e4445a863e9cf79c999e8": "/folklore/stories/the-burning-robber-in-the-reuss/",
+    "971a343ac4ebb1b1c21282d7e9d94f6483e31d30": "/folklore/stories/driven-home-by-the-arme-seelen-isental/",
+    "986ade41a4f1248cf71b21250c488c40837ce1c6": "/folklore/stories/the-cold-hand-uri/",
+    "9a2cd8ff197a56feb036301c7bc89eab372d220a": "/folklore/stories/driven-home-by-the-arme-seelen-billen/",
+    "9a31105c8610cd7aa89f1dec745f6acb457011c5": "/folklore/stories/the-headless-man-spiringen/",
+    "9a8a7eec859217629a15dc03daa57998c074a49d": "/folklore/stories/the-stollenwurm-bern/",
+    "9b8aeac4ecd492002ca2377bc42c9f8b02a7ccc5": "/folklore/stories/an-arme-seele-jagdmatt/",
+    "9bb1b60602cfaf7552890e6037f29297ffcc4e5e": "/folklore/stories/the-milking-stool-st-gallen/",
+    "9c3ebc4f3e1a1b14034c65a04a72aa64dd1928e6": "/folklore/stories/the-cunning-habsburger-zurich/",
+    "9d2fd30ca552c7073e5a6ccb3e65106261efbe7a": "/folklore/stories/the-kreuzliberg/",
+    "9fb34117231eb9b5604476317d89d371b0769397": "/folklore/stories/the-abducted-child-brig/",
+    "a3f5942218fe1751353407c72f86fbb7ead02201": "/folklore/stories/the-dreifingerstein-schwyz/",
+    "a79d02c5e000ec1a7b8b0e21f7af39a8ca55274b": "/folklore/stories/the-golden-gate-lienert-1915/",
+    "a7c97b9ae9b64f5a0a2e55b95770e8fc5a9b3bc2": "/folklore/stories/the-bold-melker/",
+    "a89641edc0176b1600fb3d1c80a5731e17159142": "/folklore/stories/the-spectral-sennen-bern/",
+    "a90050f4aef566c2bc1995d437c2f0e5abb0b07b": "/folklore/stories/the-careless-mother-teelwald/",
     "aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3": "/folklore/stories/the-bridal-voyage-on-lake-hallwil/",
     "ab64c4c2416b12fdc5fd4ea144bf167805af0162": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/",
+    "ab89983f1ccab4e7b22af14aeba95af01280b83e": "/folklore/stories/the-giants-of-iseltwald-kohlrusch/",
+    "abaa6b321df1246ddf45c92d709369eda308d58c": "/folklore/stories/the-hauri-steinbergalp/",
+    "ac01551ac6053a6b599ee8375de6754d8e84f96c": "/folklore/stories/the-dwarf-woman/",
+    "ac06e63f04d69a82ad2ff33417dba296f7a51349": "/folklore/stories/strong-hans-grimm/",
+    "ac27269ee801387aca2d0206efc8d27e40db56f9": "/folklore/stories/hans-baschi-jakober-of-uri/",
+    "add3387dc8a08e8ca0a051134ce7ab4086996f14": "/folklore/stories/the-devil-gives-a-little-bell-uri/",
+    "af31c63b17f042733da8586ae964ef391b9493c1": "/folklore/stories/the-straggele-vernaleken-zug/",
+    "b118ecfcc77b21734254bcd59ecad0d8468589ad": "/folklore/stories/the-kreuzliberg/",
+    "b2579af3973f1d8eecf3b2b51b70bada59badca2": "/folklore/stories/nuns-as-schneeaugen-kohlrusch/",
+    "b3d9bdc23c333907734a795367fc0ebed59fcac2": "/folklore/stories/the-spirit-in-the-hay-door-graggerberg/",
+    "b3f7613d2ea21f147f970c0dbb1024657b1337a3": "/folklore/stories/emperor-charlemagne-and-the-snake-zurich/",
+    "b47a5e5d4e761f75c7284c9bc4dc3e726b5d9b97": "/folklore/stories/the-spirit-in-the-hay-door-goscheneralp/",
+    "b4cfe3a2a95080bd804a5fe1c684e2815963476e": "/folklore/stories/an-arme-seele-saturday-supper/",
+    "b52d78e297e1b54f2222c63005fd6ee4cae585d8": "/folklore/stories/the-bewitched-cows-st-gallen/",
+    "b5596c2fa38db169b3e439b1dc3a2e0c3b8f2e6f": "/folklore/stories/the-bewitched-cows-uri/",
     "b94b31288d269cdbc55a79dfbeef72fce89895d0": "/folklore/stories/the-wild-hunt/",
+    "ba28d259fad054e0c287b60fe1b1be4c977e2b9c": "/folklore/stories/strong-hans-sutermeister/",
+    "ba8dcac81a20d52eb14efb40d3933fe5a64e408c": "/folklore/stories/how-he-got-rid-of-his-alraune/",
+    "bb6e1971847393ef9757523eb961a70beb3aeec4": "/folklore/stories/the-snake-queen/",
     "bf773dcebae22947d95e677a8d1d72812e0f1688": "/folklore/stories/aaraus-town-brook/",
+    "c1e13c03298a6a62923fb3643c41399ec2c53568": "/folklore/stories/the-mountain-spirit-bern/",
+    "c2d08fe6aa643a81cc355c329e5c37eaf78409b5": "/folklore/stories/the-gratzug-jegerlehner/",
+    "c5015c64a814b57be05a12692c882b64b50c9851": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/",
+    "c5810a040336687c0361a7d05bed9236c19aeeca": "/folklore/stories/the-rottal-an-alpine-hell/",
+    "c80467d819d2d85d58d45b8863e2b49a144234f8": "/folklore/stories/the-spinner-vaud/",
+    "cae34ad58cf0a4afa03c9af630c578e8079831aa": "/folklore/stories/the-bannholzler-kohlrusch/",
+    "cca576d8b3cd4093a6058eefa33e9d6847f3d63b": "/folklore/stories/the-cradle-spirit/",
+    "cd3497f6304f3e47f4be8035272a0ad6e4d8fb93": "/folklore/stories/touching-a-spirit-rynacht/",
+    "cda30055fb57f0ad06c73bdcc41019ff9d89a62f": "/folklore/stories/the-unfulfilled-dream-kohlrusch/",
+    "cddf06bcbe643fa5575d4a616db87199f4349dc6": "/folklore/stories/the-punished-witch-st-gallen/",
+    "cde40155b583aab83a7972ba7c50479f9acc4e30": "/folklore/stories/the-mountain-spirit-appenzell/",
+    "ce8c1fafabe1c22277c7f754448338b73d1bf39d": "/folklore/stories/the-cold-hand-valais/",
+    "cf5976c9cc00a00ec3a5d883c8ceed2385216bb4": "/folklore/stories/the-heavy-child-jecklin/",
+    "d5146c4ce9ee5cc6a1271aac27179997ee609147": "/folklore/stories/touching-a-spirit-maderanertal/",
+    "d5c3013eadd69c31545916a0e45e8b7262a9dbf1": "/folklore/stories/the-hauri-jost-von-rudenz/",
+    "d662d78b57cdf640ae22c3d93ef9399ed5f99227": "/folklore/stories/the-devil-gives-a-little-bell-lucerne/",
+    "d6a2eda50f5843f0902e81d53f8076bd7b87a2da": "/folklore/stories/the-golden-gate-lienert-1918/",
+    "d6f9180e83886a45cc58238908d28c1931981c23": "/folklore/stories/william-tell-schwyz/",
+    "d7c4d41d54567e0a51ff81418c7723c0c416d28e": "/folklore/stories/fire-on-the-haystack-schachental/",
+    "d8bd03772e2dded03a680db97869221c220a9083": "/folklore/stories/the-fence-stake-uri/",
+    "e0656c84c36ff0a3a2df3b34a12ea9704abc7485": "/folklore/stories/the-martinsdruck-vernaleken/",
+    "e456ddd6a42326f636c91b685533e727aa15a40b": "/folklore/stories/the-procession-of-the-dead-valais/",
+    "e4ecdf959955c869b27d59cf81c4aea86d9c1382": "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/",
+    "e5ad1d5a7653738751df5aa0f1b28991ba91fa9d": "/folklore/stories/the-healing-toad-uri/",
+    "e79fd3fb61c8856c9547c50493e325655b576242": "/folklore/stories/the-rochelmore-vernaleken/",
+    "f055d03231bb6cdf37afcc48bd0f074ee3bae30f": "/folklore/stories/the-destruction-of-tasch-jegerlehner/",
+    "f0bd6117493ec0d10b9fe9d8afe8437781d9294f": "/folklore/stories/the-procession-of-the-dead-uri/",
+    "f38a88c672041e7d6ffc53a9c6563ccff7efb37e": "/folklore/stories/the-destruction-of-plurs-vernaleken/",
+    "f51d2487176cda36e037f3313c67cf4d34f44f6e": "/folklore/stories/freemasons-blood-contract/",
+    "fa23bdca840efeeec31d44000164bcf1ac552c5d": "/folklore/stories/the-cradle-spirit/",
+    "fab1e1f3dc54ccf1fa85f5ffe93a6d70c02c67e0": "/folklore/stories/the-unnatural-son/",
+    "facc9fdb0c03b48b346d2e5a41b95b0875db6140": "/folklore/stories/the-punished-witch-graubunden/",
     "facde096871dc508eb99cde156ad33f976638f64": "/folklore/stories/egelsee-on-the-heitersberg/",
+    "fadd3437afc72bb06329de025416fd71266e6583": "/folklore/stories/the-wasserfraulein-near-zug-lutolf/",
+    "fc4fce8f026d309ab48d220a3efef394780b452e": "/folklore/stories/the-fence-stake-zug/",
     "fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f": "/folklore/stories/the-magic-book-helps-in-time-of-need/"
   }
 }
