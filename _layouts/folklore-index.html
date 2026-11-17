@@ -24,7 +24,7 @@ layout: folklore-shell
       <li>
         <h3><a href="{{ story.url | relative_url }}">{{ story.title | escape }}</a></h3>
         {% if guide %}<p class="folklore-catalog-summary">{{ guide.summary | escape }}</p>{% endif %}
-        <p>{{ story.author | escape }} · {{ story.year }}{% if guide %} · <a href="{{ story.url | append: '#reader-notes' | relative_url }}">Reader notes</a>{% endif %}</p>
+        <p>{{ story.author | escape }} · {{ story.year }}{% if guide %} · <a href="{{ story.url | append: '#reader-notes' | relative_url }}" aria-label="Reader notes for {{ story.title | escape }}">Reader notes</a>{% endif %}</p>
       </li>
     {% endfor %}
   </ul>

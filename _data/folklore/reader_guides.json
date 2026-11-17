@@ -278,8 +278,8 @@
           "offset": 54,
           "anchor": "rock wall of the fortress",
           "source": {
-            "label": "Switzerland Tourism",
-            "url": "https://www.myswitzerland.com/en-us/destinations/aarburg/"
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/001810/2009-06-23/"
           },
           "number": 1
         },
@@ -600,8 +600,8 @@
           "offset": 506,
           "anchor": "Jews’ Island",
           "source": {
-            "label": "Endingen–Lengnau cemetery history",
-            "url": "https://www.juedischerfriedhof.ch/juedisches-surbtal/der-friedhof/"
+            "label": "Jewish cemetery records",
+            "url": "https://svjg.ch/en/friedhoefe"
           },
           "number": 10
         },
@@ -785,8 +785,8 @@
           "offset": 13,
           "anchor": "Verenabad",
           "source": {
-            "label": "City of Baden archaeology",
-            "url": "https://www.baden.ch/de/politik-verwaltung/stadtentwicklung/projekte/uebersicht-baeder/faq-ausgrabungen-baeder.html/2593"
+            "label": "Historical Museum Baden",
+            "url": "https://museum.baden.ch/public/map/localhost_50325/Home/SectorA.html"
           },
           "number": 1
         },
@@ -978,8 +978,8 @@
           "offset": 110,
           "anchor": "Limmat",
           "source": {
-            "label": "City of Baden archaeology",
-            "url": "https://www.baden.ch/de/politik-verwaltung/stadtentwicklung/projekte/uebersicht-baeder/faq-ausgrabungen-baeder.html/2593"
+            "label": "Historical Museum Baden",
+            "url": "https://museum.baden.ch/public/map/localhost_50325/Home/SectorA.html"
           },
           "number": 2
         },
@@ -990,8 +990,8 @@
           "offset": 224,
           "anchor": "Windisch",
           "source": {
-            "label": "City of Baden history",
-            "url": "https://www.baden.ch/de/home/politik-verwaltung/portraet/geschichte.html/207"
+            "label": "Museum Aargau",
+            "url": "https://www.ag.ch/de/themen/kultur-sport/kultur/museum-aargau/vindonissa"
           },
           "number": 3
         },
@@ -1492,8 +1492,8 @@
           "offset": 7,
           "anchor": "In 1712",
           "source": {
-            "label": "Municipality of Sins",
-            "url": "https://www.sins.ch/portraet/geschichte-und-wappen.html/16"
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/017117/2008-02-06/"
           },
           "number": 3
         },
@@ -2116,7 +2116,7 @@
           "anchor": "sworn an oath",
           "source": {
             "label": "Swiss Inventory of Living Traditions",
-            "url": "https://www.lebendige-traditionen.ch/tradition/en/home/traditionen/waessermatten.html"
+            "url": "https://www.lebendige-traditionen.ch/de/waessermatten"
           },
           "number": 5
         },
@@ -2181,7 +2181,7 @@
           "anchor": "repairing the meadow ditches",
           "source": {
             "label": "Swiss Inventory of Living Traditions",
-            "url": "https://www.lebendige-traditionen.ch/tradition/en/home/traditionen/waessermatten.html"
+            "url": "https://www.lebendige-traditionen.ch/de/waessermatten"
           },
           "number": 3
         },
