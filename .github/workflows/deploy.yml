@@ -229,6 +229,12 @@ jobs:
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
 
+      - name: Build and verify folklore full-text search
+        run: |
+          set -euo pipefail
+          npm run build:folklore-search
+          bundle exec ruby tests/check_folklore_archive.rb _site
+
       - name: Shared analytics browser contract
         run: npm run test:analytics
 

@@ -24,6 +24,7 @@ mastodon_check:
 
 build:
 	bundle exec jekyll build --quiet
+	npm run build:folklore-search
 	python3 scripts/site_analytics.py _site
 	python3 scripts/site_analytics.py _site --check
 

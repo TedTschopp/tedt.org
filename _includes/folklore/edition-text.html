@@ -1,0 +1,23 @@
+{% assign edition = include.edition %}
+<nav class="folklore-links" aria-label="Story languages">
+  <a href="#english">English translation</a>
+  <a href="#original">Original text</a>
+</nav>
+<section id="english" aria-labelledby="english-heading">
+  <h2 id="english-heading">English translation</h2>
+  {% assign paragraphs = edition.english_paragraphs %}
+  {% for paragraph in paragraphs %}<p>{{ paragraph | escape | newline_to_br }}</p>{% endfor %}
+</section>
+<section id="original" aria-labelledby="original-heading">
+  <h2 id="original-heading">Original text</h2>
+  <div lang="{{ edition.original_language | escape }}">
+    <h3>{{ edition.original_title | escape }}</h3>
+    {% for paragraph in edition.original_paragraphs %}<p>{{ paragraph | escape | newline_to_br }}</p>{% endfor %}
+  </div>
+</section>
+{% if edition.notes.size > 0 %}
+<section aria-labelledby="folklore-notes">
+  <h2 id="folklore-notes">Translation notes</h2>
+  <ul>{% for note in edition.notes %}<li>{{ note | escape }}</li>{% endfor %}</ul>
+</section>
+{% endif %}

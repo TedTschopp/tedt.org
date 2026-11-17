@@ -1,0 +1,102 @@
+.folklore-frame {
+  width: min(68rem, 100% - 2rem);
+  margin-inline: auto;
+}
+
+main.folklore-frame {
+  padding-block: clamp(2rem, 6vw, 4rem);
+}
+
+.folklore-reading {
+  max-width: 46rem;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.folklore-frame h1 {
+  margin-block: .5rem 1rem;
+  font-size: clamp(2.45rem, 6vw, 4.25rem);
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.folklore-reading-header,
+.folklore-catalog-header {
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.folklore-reading section {
+  margin-top: 2rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.folklore-credits p {
+  margin-block: .3rem;
+}
+
+.folklore-links,
+.folklore-footer .folklore-frame {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .75rem 1.25rem;
+  align-items: baseline;
+}
+
+.folklore-catalog {
+  list-style: none;
+  padding: 0;
+}
+
+.folklore-catalog li {
+  padding-block: .9rem;
+  border-bottom: 1px solid var(--bs-border-color);
+}
+
+.folklore-catalog h3 {
+  font-size: 1.25rem;
+  margin-bottom: .25rem;
+}
+
+.folklore-catalog p {
+  margin: 0;
+  color: var(--bs-secondary-color);
+}
+
+.folklore-intro {
+  max-width: 58ch;
+  font-size: 1.125rem;
+}
+
+.folklore-source-notes,
+.folklore-footer {
+  margin-top: 2rem;
+  padding-block: 1.25rem;
+  border-top: 1px solid var(--bs-border-color);
+}
+
+.folklore-skip:focus {
+  position: fixed;
+  inset: .5rem auto auto .5rem;
+  z-index: 2000;
+  padding: .5rem .75rem;
+  background: var(--bs-body-bg);
+}
+
+pagefind-input,
+pagefind-summary,
+pagefind-results {
+  display: block;
+  max-width: 54rem;
+  margin-block: 1rem;
+  --pf-background: var(--bs-body-bg);
+  --pf-text: var(--bs-body-color);
+  --pf-text-secondary: var(--bs-secondary-color);
+  --pf-text-muted: var(--bs-secondary-color);
+  --pf-border: var(--bs-border-color);
+  --pf-border-focus: var(--bs-link-color);
+  --pf-outline-focus: var(--bs-link-color);
+  --pf-hover: var(--bs-tertiary-bg);
+  --pf-mark: var(--bs-body-color);
+}

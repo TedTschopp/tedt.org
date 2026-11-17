@@ -36,6 +36,14 @@ Key technologies and architectural decisions powering the site:
 - Unified category theming / registry ([ADR 0006](docs/adr/0006-carousel-registry-driven-accessibility.md) & [ADR 0007](docs/adr/0007-category-theming-unification.md)) via `_data/category_registry.yml`.
 - Front matter feature flags: `no_toc` ([ADR 0010](docs/adr/0010-no-toc-front-matter-flag.md)), `mermaid` ([ADR 0011](docs/adr/0011-mermaid-front-matter-flag.md)); article video metadata via `video`.
 
+The bilingual archive at `/folklore/` uses the reviewed release list from the
+private Swiss Folklore workspace. Use that workspace's exporter to stage the
+public files and review them before committing them here. Pilot stories keep
+their existing URLs. `make build` compiles Jekyll, generates the same-origin
+Pagefind index, and finalizes analytics. Run
+`bundle exec ruby tests/check_folklore_archive.rb _site` after building to check
+the catalog, sitemap, and search index against the published pages.
+
 ### Presentation & Styling
 
 - SCSS partials in `_sass/`; slides theme + archetypes for Reveal.js.

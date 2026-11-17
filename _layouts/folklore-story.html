@@ -22,6 +22,7 @@
     {% include feeds/feeds.html %}
 
     {% include assets/all-css-includes.html %}
+    {% if page.edition %}<link rel="stylesheet" href="{{ '/css/folklore.css' | relative_url }}">{% endif %}
 
     <!-- Scripts that need to be at the end of the header -->
     {% include assets/scripts.html %}
@@ -68,7 +69,7 @@
     <div class="container">
       <div class="row w-100">
         <div class="col-12" id="content-column">
-          <main class="h-entry" role="main">
+          <main class="h-entry" role="main"{% if page.edition %} data-pagefind-body{% endif %}>
             <article class="card h-100 no-padding">
               
               {%- comment -%} Hero Image Section {%- endcomment -%}
@@ -122,7 +123,12 @@
                 {%- comment -%} Translation Tabs {%- endcomment -%}
                 <div class="e-content">
                   <h2 class="h5 mb-3">📖 The Story</h2>
-                  {% include folklore/translation-tabs.html story=story story_id=story_id %}
+                  {% if page.edition %}
+                    <p><a href="{{ page.edition.edition_url | escape }}">{{ page.edition.edition_citation | escape }}</a></p>
+                    {% include folklore/edition-text.html edition=page.edition %}
+                  {% else %}
+                    {% include folklore/translation-tabs.html story=story story_id=story_id %}
+                  {% endif %}
                 </div>
 
                 {%- comment -%} Entities Section {%- endcomment -%}
