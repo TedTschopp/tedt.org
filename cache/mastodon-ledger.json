@@ -7807,12 +7807,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "bc108b84d31e487e4107281d6e9b28af602e537d56860dd18d6560c357a1d873",
-        "kind": "archive",
-        "started_at": "2026-11-17T00:18:00Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-17T00:18:18.696Z",
+          "id": "117628908253794762",
+          "url": "https://tschopp.net/@Ted/117628908253794762"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7820,8 +7821,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Clochwhirl.md"
       ],
-      "state": "uncertain",
-      "title": "Clochwhirl"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-17T00:18:18.696Z",
+        "id": "117628908253794762",
+        "url": "https://tschopp.net/@Ted/117628908253794762"
+      },
+      "title": "Clochwhirl",
+      "verified_at": "2026-11-17T00:18:00Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cloud-Worms-Blight.html": {
       "aliases": [
@@ -28058,7 +28065,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-16T16:14:08.160Z",
+  "last_publication_at": "2026-11-17T00:18:18.696Z",
   "last_reconciliation_at": "2026-11-17T00:18:00Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 248,
@@ -29526,6 +29533,14 @@
       "kind": "archive",
       "operation": "86441aa85abdee02ab5a96ad236967051a579c9eefb79fac875b7f0e1512fd34",
       "url": "https://tschopp.net/@Ted/117627004397865068"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Clochwhirl.html",
+      "created_at": "2026-11-17T00:18:18.696Z",
+      "id": "117628908253794762",
+      "kind": "archive",
+      "operation": "bc108b84d31e487e4107281d6e9b28af602e537d56860dd18d6560c357a1d873",
+      "url": "https://tschopp.net/@Ted/117628908253794762"
     }
   ],
   "run_count": 582,
