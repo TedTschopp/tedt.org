@@ -1,0 +1,17 @@
+{% if include.entries.size > 0 %}
+<section class="mb-5" aria-labelledby="folklore-reader-index-heading">
+  <h2 id="folklore-reader-index-heading">{{ include.heading | escape }}</h2>
+  <div class="row g-3">
+    {% for entry in include.entries %}
+    <div class="col-md-6">
+      <h3 id="{{ entry.id | escape }}" class="h5">{{ entry.label | escape }}</h3>
+      <ul>
+        {% for story in entry.stories %}
+        <li><a href="{{ story.url | relative_url }}">{{ story.title | escape }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endif %}

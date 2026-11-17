@@ -64,6 +64,53 @@ main.folklore-frame {
   color: var(--bs-secondary-color);
 }
 
+.folklore-catalog .folklore-catalog-summary {
+  margin-bottom: .3rem;
+  color: var(--bs-body-color);
+}
+
+.folklore-context dl {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 2rem;
+}
+
+.folklore-context dd {
+  margin-bottom: 0;
+}
+
+.folklore-footnotes li,
+.folklore-note-reference a {
+  scroll-margin-top: 5.5rem;
+}
+
+.folklore-footnotes li:target {
+  background: var(--bs-tertiary-bg);
+}
+
+.folklore-footnotes li + li {
+  margin-top: 1rem;
+}
+
+.folklore-footnotes p {
+  margin-block: .25rem;
+}
+
+.folklore-note-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .25rem 1.25rem;
+  align-items: baseline;
+}
+
+.folklore-note-reference {
+  margin-inline: .12em;
+}
+
+.folklore-note-return {
+  font-size: .875em;
+}
+
 .folklore-intro {
   max-width: 58ch;
   font-size: 1.125rem;

@@ -8,20 +8,23 @@ layout: folklore-shell
 <main id="folklore-main" class="folklore-frame">
   <header class="folklore-catalog-header">
     <h1>{{ page.title | escape }}</h1>
-    <p class="folklore-intro">Swiss tales in English and in the language of their source editions.</p>
+    <p class="folklore-intro">Read Swiss tales in English and in their original languages, with notes on the places, customs, and dialect you’ll encounter.</p>
     <nav class="folklore-links" aria-label="Ways to explore">
       <a href="{{ '/folklore/search/' | relative_url }}">Search the full text</a>
-      <a href="{{ '/folklore/locations/' | relative_url }}">Locations</a>
-      <a href="{{ '/folklore/entities/' | relative_url }}">Entities</a>
+      <a href="{{ '/folklore/locations/' | relative_url }}">Places</a>
       <a href="{{ '/folklore/themes/' | relative_url }}">Themes</a>
+      <a href="{{ '/folklore/entities/' | relative_url }}">Entities in the pilot tales</a>
     </nav>
   </header>
   <h2>Browse {{ archive.stories.size }} tales</h2>
   <ul class="folklore-catalog">
     {% for story in archive.stories limit: page_size offset: offset %}
+      {% assign story_id = story.url | split: '/' | last %}
+      {% assign guide = site.data.folklore.reader_guides.stories[story_id] %}
       <li>
         <h3><a href="{{ story.url | relative_url }}">{{ story.title | escape }}</a></h3>
-        <p>{{ story.author | escape }} · {{ story.year }}</p>
+        {% if guide %}<p class="folklore-catalog-summary">{{ guide.summary | escape }}</p>{% endif %}
+        <p>{{ story.author | escape }} · {{ story.year }}{% if guide %} · <a href="{{ story.url | append: '#reader-notes' | relative_url }}">Reader notes</a>{% endif %}</p>
       </li>
     {% endfor %}
   </ul>

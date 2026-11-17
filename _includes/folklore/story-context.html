@@ -1,0 +1,18 @@
+{% assign guide = site.data.folklore.reader_guides.stories[page.story_id] %}
+{% if guide %}
+<div class="folklore-context">
+  <p class="folklore-intro">{{ guide.summary | escape }}</p>
+  <dl>
+    {% unless include.hide_places or guide.places.size == 0 %}
+    <div>
+      <dt>Places</dt>
+      <dd>{% for place in guide.places %}<a href="{{ place.url | relative_url }}">{{ place.label | escape }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
+    </div>
+    {% endunless %}
+    <div>
+      <dt>Themes</dt>
+      <dd>{% for theme in guide.themes %}<a href="{{ theme.url | relative_url }}">{{ theme.label | escape }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
+    </div>
+  </dl>
+</div>
+{% endif %}

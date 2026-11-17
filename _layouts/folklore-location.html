@@ -151,9 +151,10 @@
                   {% assign location_types = "Mountain,Valley,River,Village,Town/Village,Forest,Glacier,Pass/Ridge,Settlement,Mountain slope,Local area/woods,Named place (meadow/spot),Farm outbuilding" | split: "," %}
                   
                   <p class="lead mb-4">
-                    Explore the real-world locations mentioned in Swiss folklore tales. 
-                    Click any location to see all stories associated with it.
+                    Find the places named in the published tales, from lakes and rivers to villages and castles.
                   </p>
+                  {% include folklore/reader-index.html entries=site.data.folklore.reader_guides.places heading="Places in the published tales" %}
+                  <h2 class="h4">Detailed place profiles from the pilot</h2>
 
                   {%- comment -%} Quick navigation {%- endcomment -%}
                   <nav class="mb-4" aria-label="Location type navigation">
