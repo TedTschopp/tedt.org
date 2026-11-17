@@ -7881,12 +7881,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "518f3eba78216f3dbf62e9cc5ef5da9f5e3109a8bcd9909ef46fc00898a059a3",
-        "kind": "archive",
-        "started_at": "2026-11-17T03:32:25Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-17T03:32:44.580Z",
+          "id": "117629672789065328",
+          "url": "https://tschopp.net/@Ted/117629672789065328"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7894,8 +7895,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cloudeater.md"
       ],
-      "state": "uncertain",
-      "title": "Cloudeater"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-17T03:32:44.580Z",
+        "id": "117629672789065328",
+        "url": "https://tschopp.net/@Ted/117629672789065328"
+      },
+      "title": "Cloudeater",
+      "verified_at": "2026-11-17T03:32:25Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cody-Matrix.html": {
       "aliases": [
@@ -28086,7 +28093,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-17T01:32:34.803Z",
+  "last_publication_at": "2026-11-17T03:32:44.580Z",
   "last_reconciliation_at": "2026-11-17T03:32:25Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 250,
@@ -29570,6 +29577,14 @@
       "kind": "archive",
       "operation": "3dcfa457bf050ab71cb9ad1cb3d2ae9fd491ba7ce062a788403309a363ad34b7",
       "url": "https://tschopp.net/@Ted/117629200289183285"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cloudeater.html",
+      "created_at": "2026-11-17T03:32:44.580Z",
+      "id": "117629672789065328",
+      "kind": "archive",
+      "operation": "518f3eba78216f3dbf62e9cc5ef5da9f5e3109a8bcd9909ef46fc00898a059a3",
+      "url": "https://tschopp.net/@Ted/117629672789065328"
     }
   ],
   "run_count": 585,
