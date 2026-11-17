@@ -494,24 +494,39 @@
       "deliveries": {}
     },
     "https://tedt.org/folklore/stories/434e1c6212cefb2c179cebaefb73d062fb021de8/": {
-      "fingerprint": "94f5fe4be814622750ca6a5371384698722be29b5e46f24217556e661788d850",
+      "fingerprint": "87b8ad7cbc1e167833f4deaa0e10bec5ee44e8f19cc7038e3638a5b5639c0243",
       "targets": [
-        "https://d-nb.info/750142650/04"
+        "https://d-nb.info/750142650/04",
+        "https://kapuziner.ch/geschichte",
+        "https://museumofwitchcraftandmagic.co.uk/object/the-spiritual-or-religious-shield-geistlicher-schild-a-book-of-prayers-hours-and-devotion-together-with-religious-and-magical-formulae/"
       ],
       "deliveries": {
         "https://d-nb.info/750142650/04": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://kapuziner.ch/geschichte": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://museumofwitchcraftandmagic.co.uk/object/the-spiritual-or-religious-shield-geistlicher-schild-a-book-of-prayers-hours-and-devotion-together-with-religious-and-magical-formulae/": {
           "state": "unsupported",
           "attempts": 1
         }
       }
     },
     "https://tedt.org/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/": {
-      "fingerprint": "a39f6c60316ef741e1c63d65f3976f2d6e0e19074e6212035f7ecbf3ae39f828",
+      "fingerprint": "07d8aef79ec095e7384ed841372cc05b14188ffc350293991553639b32234f88",
       "targets": [
-        "https://d-nb.info/750142650/04"
+        "https://d-nb.info/750142650/04",
+        "https://museumofwitchcraftandmagic.co.uk/object/the-spiritual-or-religious-shield-geistlicher-schild-a-book-of-prayers-hours-and-devotion-together-with-religious-and-magical-formulae/"
       ],
       "deliveries": {
         "https://d-nb.info/750142650/04": {
+          "state": "unsupported",
+          "attempts": 1
+        },
+        "https://museumofwitchcraftandmagic.co.uk/object/the-spiritual-or-religious-shield-geistlicher-schild-a-book-of-prayers-hours-and-devotion-together-with-religious-and-magical-formulae/": {
           "state": "unsupported",
           "attempts": 1
         }
@@ -523,7 +538,7 @@
       "deliveries": {}
     },
     "https://tedt.org/folklore/stories/6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a/": {
-      "fingerprint": "d6eaeeb9895ca534fd12d04a073e3f66cfb07d5eb3bbf031307b9cdbc39a8451",
+      "fingerprint": "1c09f4d2b689be224f0787f8c1bc1c5e1a93b55b14199ea265fdcfef7283a20c",
       "targets": [
         "https://d-nb.info/750142650/04"
       ],
@@ -10622,8 +10637,8 @@
         },
         "https://www.ft.com/content/2b15601b-8d02-4abe-a789-7862874042be": {
           "state": "retry",
-          "attempts": 20,
-          "next_attempt": "2026-11-16T23:12:13+00:00"
+          "attempts": 21,
+          "next_attempt": "2026-11-18T01:32:41+00:00"
         },
         "https://www.linkedin.com/in/antonio-alvarez-iii-80090/": {
           "state": "unsupported",
@@ -10635,8 +10650,8 @@
         },
         "https://www.linkedin.com/in/marco-amitrano-b4155b19/?originalSubdomain=uk": {
           "state": "retry",
-          "attempts": 20,
-          "next_attempt": "2026-11-16T23:12:13+00:00"
+          "attempts": 21,
+          "next_attempt": "2026-11-18T01:32:41+00:00"
         },
         "https://www.linkedin.com/in/marksbunker/?originalSubdomain=uk": {
           "state": "unsupported",
@@ -10656,8 +10671,8 @@
         },
         "https://www.mckinsey.com": {
           "state": "retry",
-          "attempts": 20,
-          "next_attempt": "2026-11-16T23:12:13+00:00"
+          "attempts": 21,
+          "next_attempt": "2026-11-18T01:32:41+00:00"
         },
         "https://www.pwc.com": {
           "state": "retry",
