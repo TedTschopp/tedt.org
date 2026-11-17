@@ -143,10 +143,11 @@ module IndieWeb
   end
 
   class Manifest
-    attr_reader :entries, :aliases
+    attr_reader :entries, :aliases, :outgoing_entries
     def initialize(data)
       raise Error, 'Invalid manifest version' unless data['version'] == 1
       @entries = data.fetch('entries').map { |entry| entry.merge('url' => IndieWeb.url(entry.fetch('url'))) }
+      @outgoing_entries = @entries.reject { |entry| entry['outgoing'] == false }
       @aliases = {}
       (@entries + [{ 'url' => 'https://tedt.org/', 'aliases' => [] }]).each do |entry|
         canonical = IndieWeb.url(entry.fetch('url'))
@@ -382,7 +383,7 @@ module IndieWeb
     end
 
     def snapshot(site, manifest)
-      manifest.entries.to_h do |entry|
+      manifest.outgoing_entries.to_h do |entry|
         source = entry.fetch('url')
         file = IndieWeb.site_file(site, source)
         doc = Nokogiri::HTML(File.read(file))
@@ -394,10 +395,10 @@ module IndieWeb
       File.open(path) do |stream|
         header = JSON.parse(stream.readline)
         manifest = Manifest.new(header.fetch('manifest'))
-        expected = manifest.entries.to_h do |entry|
+        expected = manifest.outgoing_entries.to_h do |entry|
           [IndieWeb.site_file('/pages-data', entry.fetch('url')).delete_prefix('/pages-data/'), entry.fetch('url')]
         end
-        raise Error, 'Duplicate article paths in Pages manifest' unless expected.length == manifest.entries.length
+        raise Error, 'Duplicate article paths in Pages manifest' unless expected.length == manifest.outgoing_entries.length
         result = {}
         stream.each_line do |line|
           row = JSON.parse(line)

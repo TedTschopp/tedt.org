@@ -2,11 +2,16 @@
 layout: folklore-shell
 ---
 {% assign story = site.data.folklore.stories[page.story_id] %}
-<main id="folklore-main" class="folklore-frame folklore-reading">
+<main id="folklore-main" class="folklore-frame folklore-reading h-entry">
   <a href="{{ '/folklore/' | relative_url }}">Swiss Folklore Collection</a>
-  <h1>{{ page.title | escape }}</h1>
-  <p>Source author: {{ story.author | escape }}</p>
-  <p>{{ story.edition_citation | escape }}</p>
-  <p>This page records the source for the tale. The English translation is held pending verification of the published wording.</p>
-  <p><a href="{{ story.source_url | escape }}">View the source record</a></p>
+  <h1 class="p-name">{{ page.title | escape }}</h1>
+  {% include seo/entry-metadata.html %}
+  {% include folklore/discussion-links.html %}
+  <div class="e-content mt-4">
+    <p>Source author: <span class="p-author h-card"><span class="p-name">{{ story.author | escape }}</span></span></p>
+    <p>{{ story.edition_citation | escape }}</p>
+    <p>This page records the source for the tale. The English translation is held pending verification of the published wording.</p>
+    <p><a href="{{ story.source_url | escape }}">View the source record</a></p>
+  </div>
+  {% include folklore/discussion.html target_label='this source note' %}
 </main>

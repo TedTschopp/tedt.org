@@ -38,8 +38,9 @@ Key technologies and architectural decisions powering the site:
 
 The bilingual archive at `/folklore/` uses the reviewed release list from the
 private Swiss Folklore workspace. Use that workspace's exporter to stage the
-public files and review them before committing them here. Pilot stories keep
-their existing URLs. `make build` compiles Jekyll, generates the same-origin
+public files and review them before committing them here. The release list pins
+each story's title-based URL and the former URLs that redirect to it.
+`make build` compiles Jekyll, generates the same-origin
 Pagefind index, and finalizes analytics. Run
 `bundle exec ruby tests/check_folklore_archive.rb _site` after building to check
 the catalog, sitemap, and search index against the published pages.

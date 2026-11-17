@@ -1,7 +1,7 @@
 {% assign guide = site.data.folklore.reader_guides.stories[page.story_id] %}
 {% if guide %}
-<div class="folklore-context">
-  <p class="folklore-intro">{{ guide.summary | escape }}</p>
+<section id="story-context" class="folklore-context" aria-labelledby="story-context-heading">
+  <h2 id="story-context-heading">Story context</h2>
   <dl>
     {% unless include.hide_places or guide.places.size == 0 %}
     <div>
@@ -14,5 +14,5 @@
       <dd>{% for theme in guide.themes %}<a href="{{ theme.url | relative_url }}">{{ theme.label | escape }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</dd>
     </div>
   </dl>
-</div>
+</section>
 {% endif %}

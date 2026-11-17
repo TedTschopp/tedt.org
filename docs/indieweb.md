@@ -21,6 +21,10 @@ Responses to the home page are collected at `/webmentions/`. A chronological
 microformats feed is available at `/updates/`; existing RSS, Atom, and JSON feed
 URLs remain available.
 
+Folklore pages register their title-based URLs and redirect aliases as
+destinations for reader responses. These entries use `outgoing: false` in the
+manifest so editorial citations stay outside outgoing delivery.
+
 ## Refresh and moderate
 
 The **IndieWeb incoming mentions** workflow refreshes hourly. Run it manually
