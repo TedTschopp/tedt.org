@@ -13,6 +13,7 @@ layout: folklore-shell
         <p><a href="{{ edition.edition_url | escape }}">{{ edition.edition_citation | escape }}</a></p>
       </div>
     </header>
+    {% include folklore/story-context.html %}
     <div class="e-content">
       {% include folklore/edition-text.html edition=edition %}
     </div>

@@ -1,0 +1,15 @@
+<section id="reader-notes" class="folklore-footnotes" aria-labelledby="reader-notes-heading">
+  <h2 id="reader-notes-heading">Reader notes</h2>
+  <ol>
+    {% for note in include.notes %}
+    <li id="reader-note-{{ note.number }}" tabindex="-1">
+      {% if note.label != '' %}<strong>{{ note.label | escape }}</strong>{% endif %}
+      <p>{{ note.text | escape }}</p>
+      <div class="folklore-note-links">
+        {% if note.source %}<a href="{{ note.source.url | escape }}">{{ note.source.label | escape }}</a>{% endif %}
+        {% if note.anchor %}<a class="folklore-note-return" href="#reader-note-ref-{{ note.number }}" aria-label="Return to note {{ note.number }} in the translation">Back to text</a>{% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>

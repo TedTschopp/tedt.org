@@ -1,13 +1,28 @@
 {% assign edition = include.edition %}
-<nav class="folklore-links" aria-label="Story languages">
+{% assign reader_guide = site.data.folklore.reader_guides.stories[page.story_id] %}
+<nav class="folklore-links" aria-label="Story sections">
   <a href="#english">English translation</a>
+  {% if reader_guide %}<a href="#reader-notes">Reader notes</a>{% endif %}
   <a href="#original">Original text</a>
 </nav>
 <section id="english" aria-labelledby="english-heading">
   <h2 id="english-heading">English translation</h2>
-  {% assign paragraphs = edition.english_paragraphs %}
-  {% for paragraph in paragraphs %}<p>{{ paragraph | escape | newline_to_br }}</p>{% endfor %}
+  {% for paragraph in edition.english_paragraphs %}
+    {%- assign paragraph_index = forloop.index0 -%}
+    {%- assign references = reader_guide.notes | where: 'paragraph', paragraph_index -%}
+    {%- assign cursor = 0 -%}
+    <p>
+      {%- for reference in references -%}
+        {%- assign segment_length = reference.offset | minus: cursor -%}
+        {{- paragraph | slice: cursor, segment_length | escape | newline_to_br -}}
+        <sup class="folklore-note-reference" data-pagefind-ignore><a id="reader-note-ref-{{ reference.number }}" href="#reader-note-{{ reference.number }}" aria-label="Note {{ reference.number }} for {{ reference.label | escape }}">{{ reference.number }}</a></sup>
+        {%- assign cursor = reference.offset -%}
+      {%- endfor -%}
+      {{- paragraph | slice: cursor, paragraph.size | escape | newline_to_br -}}
+    </p>
+  {% endfor %}
 </section>
+{% if reader_guide %}{% include folklore/reader-notes.html notes=reader_guide.notes %}{% endif %}
 <section id="original" aria-labelledby="original-heading">
   <h2 id="original-heading">Original text</h2>
   <div lang="{{ edition.original_language | escape }}">
@@ -15,7 +30,7 @@
     {% for paragraph in edition.original_paragraphs %}<p>{{ paragraph | escape | newline_to_br }}</p>{% endfor %}
   </div>
 </section>
-{% if edition.notes.size > 0 %}
+{% if reader_guide == nil and edition.notes.size > 0 %}
 <section aria-labelledby="folklore-notes">
   <h2 id="folklore-notes">Translation notes</h2>
   <ul>{% for note in edition.notes %}<li>{{ note | escape }}</li>{% endfor %}</ul>

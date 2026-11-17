@@ -14,8 +14,10 @@ permalink: /folklore/themes/
       <div class="card">
         <div class="card-body">
           <p class="lead">
-            Explore Swiss folklore by thematic content. Each theme links to all stories that feature it.
+            Find tales about pilgrimage, healing springs, haunted waters, and other recurring themes.
           </p>
+          {% include folklore/reader-index.html entries=site.data.folklore.reader_guides.themes heading="Themes in the published tales" %}
+          <h2 class="h4">Detailed classifications from the pilot</h2>
 
           {%- comment -%} Collect all unique themes {%- endcomment -%}
           {% assign all_primary_themes = "" | split: "" %}

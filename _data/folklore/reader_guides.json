@@ -1,0 +1,3929 @@
+{
+  "release": "2026-11-16-aargau",
+  "stories": {
+    "6aeb8c528735636a5627a29275a5788c9764d2f8": {
+      "summary": "Two springs above Oltingen are said to conceal a flood. Pilgrims crossing the Schafmatt stop to pray that the water stays underground.",
+      "notes": [
+        {
+          "label": "Schafmatt",
+          "text": "The story places this Jura pass between Oltingen and Zeglingen, on the route between the Basel region and Aargau. The Jura is the mountain chain along northwestern Switzerland and eastern France.",
+          "paragraph": 0,
+          "offset": 37,
+          "anchor": "Schafmatt",
+          "number": 1
+        },
+        {
+          "label": "Aargau",
+          "text": "Aargau is a Swiss canton, one of the country's constituent states. Its name means the district of the Aare River.",
+          "paragraph": 0,
+          "offset": 78,
+          "anchor": "Aargau",
+          "number": 2
+        },
+        {
+          "label": "Winterhalde",
+          "text": "The local name refers to a slope. Rochholz places it on the north side of the pass above Oltingen.",
+          "paragraph": 0,
+          "offset": 122,
+          "anchor": "Winterhalde",
+          "number": 3
+        },
+        {
+          "label": "Alsace",
+          "text": "Alsace is the region across the upper Rhine from southwestern Germany, just north of Basel. The pilgrims are passing through Switzerland toward a shrine farther inland.",
+          "paragraph": 0,
+          "offset": 460,
+          "anchor": "Alsace",
+          "number": 4
+        },
+        {
+          "label": "The Black Madonna of Einsiedeln",
+          "text": "Pilgrims visit a Benedictine abbey in the canton of Schwyz to pray before its image of Mary and the infant Jesus, known as the Black Madonna.",
+          "paragraph": 0,
+          "offset": 548,
+          "anchor": "miraculous image of the Virgin at Einsiedeln",
+          "source": {
+            "label": "Einsiedeln Abbey",
+            "url": "https://www.kloster-einsiedeln.ch/kloster/geschichte/geschichte-der-wallfahrt"
+          },
+          "number": 5
+        }
+      ],
+      "places": [
+        {
+          "label": "Schafmatt",
+          "url": "/folklore/locations/#place-schafmatt"
+        },
+        {
+          "label": "Oltingen",
+          "url": "/folklore/locations/#place-oltingen"
+        },
+        {
+          "label": "Zeglingen",
+          "url": "/folklore/locations/#place-zeglingen"
+        },
+        {
+          "label": "Einsiedeln",
+          "url": "/folklore/locations/#place-einsiedeln"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Flood legends",
+          "url": "/folklore/themes/#theme-flood-legends"
+        },
+        {
+          "label": "Pilgrimage and saints",
+          "url": "/folklore/themes/#theme-pilgrimage-and-saints"
+        }
+      ]
+    },
+    "1e90ecf18f18fa3b30d4db9aee8d2285208bc294": {
+      "summary": "As fighting reaches the castles near Lake Baldegg, a widow vows to build a chapel if her child survives. Fog and a rising stream turn the attackers aside.",
+      "notes": [
+        {
+          "label": "Hitzkirch Valley",
+          "text": "The valley links the landscapes around Lake Baldegg and Lake Hallwil. Most of the castles in the opening lie in present-day Lucerne, near the boundary with Aargau.",
+          "paragraph": 0,
+          "offset": 23,
+          "anchor": "Hitzkirch Valley",
+          "number": 1
+        },
+        {
+          "label": "Reichensee",
+          "text": "Now often spelled Richensee. The fortified settlement was destroyed in the 1386 Sempach War, the larger conflict behind the tale’s local feud.",
+          "paragraph": 0,
+          "offset": 172,
+          "anchor": "Reichensee",
+          "source": {
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/003339/2021-07-19/"
+          },
+          "number": 2
+        },
+        {
+          "label": "Hemmann von Grünenberg",
+          "text": "A nobleman of the Grünenberg family. Customs disputes in the story concern tolls and rights over trade or travel across a lord’s territory.",
+          "paragraph": 0,
+          "offset": 357,
+          "anchor": "Hemmann von Grünenberg",
+          "number": 3
+        },
+        {
+          "label": "vowed to found a chapel",
+          "text": "Bertha promises to establish a place of worship dedicated to Mary if her child is spared. The chapel at the end fulfills that vow.",
+          "paragraph": 0,
+          "offset": 765,
+          "anchor": "vowed to found a chapel",
+          "number": 4
+        },
+        {
+          "label": "Dünkelbach",
+          "text": "Bach means brook. The stream flowing by Heidegg becomes the means of the castle’s rescue in the story.",
+          "paragraph": 0,
+          "offset": 1040,
+          "anchor": "Dünkelbach",
+          "number": 5
+        },
+        {
+          "label": "Procul estote profani",
+          "text": "The Latin warns those outside a sacred rite to keep their distance. It echoes the Sibyl’s warning in Virgil’s Aeneid before the descent into the underworld.",
+          "paragraph": 0,
+          "offset": 1558,
+          "anchor": "Procul estote profani",
+          "source": {
+            "label": "Perseus Latin dictionary",
+            "url": "https://atlas.perseus.tufts.edu/dictionaries/entry/urn%3Acite2%3Ascaife-viewer%3Adictionary-entries.atlas_v1%3Alat.ls.perseus-eng2-n38599/"
+          },
+          "number": 6
+        }
+      ],
+      "places": [
+        {
+          "label": "Heidegg Castle",
+          "url": "/folklore/locations/#place-heidegg-castle"
+        },
+        {
+          "label": "Lake Baldegg",
+          "url": "/folklore/locations/#place-lake-baldegg"
+        },
+        {
+          "label": "Lake Hallwil",
+          "url": "/folklore/locations/#place-lake-hallwil"
+        },
+        {
+          "label": "Lieli",
+          "url": "/folklore/locations/#place-lieli"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Castles and lordship",
+          "url": "/folklore/themes/#theme-castles-and-lordship"
+        },
+        {
+          "label": "Flood legends",
+          "url": "/folklore/themes/#theme-flood-legends"
+        },
+        {
+          "label": "Pilgrimage and saints",
+          "url": "/folklore/themes/#theme-pilgrimage-and-saints"
+        }
+      ]
+    },
+    "5849217c631b9cf6d740ee0d6957d9c7de2e7876": {
+      "summary": "A waterfall’s plunge pool saves a woman who leaps into it. Local tradition credits three sisters whose story also explains the valley’s ruins and haymaking luck.",
+      "notes": [
+        {
+          "label": "Eithal",
+          "text": "Thal is an older spelling of Tal, or valley. Rochholz describes this valley on one of the walking routes from Tecknau toward Aarau.",
+          "paragraph": 0,
+          "offset": 311,
+          "anchor": "Eithal",
+          "number": 1
+        },
+        {
+          "label": "Ergolz",
+          "text": "The Ergolz is the river whose waterfall forms the pool in the tale. The rushing water that throws objects back out becomes part of the rescue story.",
+          "paragraph": 1,
+          "offset": 454,
+          "anchor": "Ergolz",
+          "number": 2
+        },
+        {
+          "label": "Giessen",
+          "text": "a regional topographic word for a waterfall, rushing fall, or its plunge pool; here it names the circular basin scoured by the falling Ergolz, which protects the despairing woman and remains the sisters' bathing place.",
+          "paragraph": 1,
+          "offset": 754,
+          "anchor": "Giessen",
+          "number": 3
+        },
+        {
+          "label": "Oedenburg",
+          "text": "The story uses this name for one set of ruins and Scheideck for the opposite one. It places the sisters on one side of the valley and the violent lord on the other.",
+          "paragraph": 3,
+          "offset": 251,
+          "anchor": "Oedenburg",
+          "number": 4
+        },
+        {
+          "label": "hay is certain to remain dry",
+          "text": "Hay must dry in the field before it can be stored. The sisters’ appearance promises the mowers a stretch of dry weather at a time when rain could spoil the crop.",
+          "paragraph": 5,
+          "offset": 138,
+          "anchor": "hay is certain to remain dry",
+          "number": 5
+        },
+        {
+          "label": "Schimmel",
+          "text": "German for gray horses whose coats often appear white; the gleaming mounted visitors ride a matched-looking pair, reinforcing their otherworldly appearance.",
+          "paragraph": 5,
+          "offset": 301,
+          "anchor": "Schimmel",
+          "number": 6
+        },
+        {
+          "label": "Rappen",
+          "text": "a Swiss coin name; here the parenthetical Heller likewise indicates small-denomination silver coins, not the black horse called a Rappe earlier in the tale, and the precise historical value is not stated.",
+          "paragraph": 5,
+          "offset": 460,
+          "anchor": "Rappen",
+          "number": 7
+        }
+      ],
+      "places": [
+        {
+          "label": "Eithal",
+          "url": "/folklore/locations/#place-eithal"
+        },
+        {
+          "label": "Tecknau",
+          "url": "/folklore/locations/#place-tecknau"
+        },
+        {
+          "label": "Aarau",
+          "url": "/folklore/locations/#place-aarau"
+        },
+        {
+          "label": "Ergolz",
+          "url": "/folklore/locations/#place-ergolz"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        },
+        {
+          "label": "Drowning and rescue",
+          "url": "/folklore/themes/#theme-drowning-and-rescue"
+        },
+        {
+          "label": "Castles and lordship",
+          "url": "/folklore/themes/#theme-castles-and-lordship"
+        },
+        {
+          "label": "Weather lore",
+          "url": "/folklore/themes/#theme-weather-lore"
+        }
+      ]
+    },
+    "7c0af6230ecf47e8d666b811b3986befb4b3bd2f": {
+      "summary": "An iron ring at a fortress and a place-name in Zofingen lead to a story about a vanished lake and an underground river.",
+      "notes": [
+        {
+          "label": "Aarburg fortress",
+          "text": "The fortress of Aarburg stands on a narrow ridge above the Aare. The height of the ring makes the claim that ships once moored there striking.",
+          "paragraph": 0,
+          "offset": 54,
+          "anchor": "rock wall of the fortress",
+          "source": {
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/001810/2009-06-23/"
+          },
+          "number": 1
+        },
+        {
+          "label": "Wigger Valley",
+          "text": "The Wigger is a tributary of the Aare. In the tale, the valley itself supposedly once lay beneath a lake.",
+          "paragraph": 0,
+          "offset": 146,
+          "anchor": "Wigger Valley",
+          "number": 2
+        },
+        {
+          "label": "Schifflände",
+          "text": "literally a ‘ship landing,’ the local place-name in landlocked modern Zofingen that the legend treats as evidence of former navigation; the name survives even though the claimed waterway does not.",
+          "paragraph": 0,
+          "offset": 281,
+          "anchor": "Schifflände",
+          "number": 3
+        },
+        {
+          "label": "Hägler",
+          "text": "The name belongs to a lost river in this story. People interpret a sound below ground as water still flowing toward the Aare.",
+          "paragraph": 0,
+          "offset": 309,
+          "anchor": "Hägler",
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Aarburg Castle",
+          "url": "/folklore/locations/#place-aarburg-castle"
+        },
+        {
+          "label": "Wigger Valley",
+          "url": "/folklore/locations/#place-wigger-valley"
+        },
+        {
+          "label": "Zofingen",
+          "url": "/folklore/locations/#place-zofingen"
+        },
+        {
+          "label": "Aare",
+          "url": "/folklore/locations/#place-aare"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Castles and lordship",
+          "url": "/folklore/themes/#theme-castles-and-lordship"
+        },
+        {
+          "label": "Flood legends",
+          "url": "/folklore/themes/#theme-flood-legends"
+        }
+      ]
+    },
+    "facde096871dc508eb99cde156ad33f976638f64": {
+      "summary": "A lake is said to cover the castle of a cruel lord. Stories about its depth, an underground outlet, and the castle’s treasure explain why people feared the water.",
+      "notes": [
+        {
+          "label": "Heitersberg",
+          "text": "The ridge between the Reuss and Limmat valleys gives the tale two possible directions for water and travel. Egelsee is the small lake where it places the sunken castle.",
+          "paragraph": 0,
+          "offset": 32,
+          "anchor": "Heitersberg",
+          "number": 1
+        },
+        {
+          "label": "Egelsee",
+          "text": "literally ‘leech lake’ in one explanation offered by the story, while an alternative connects it with Egelfische, perch; the double etymology is part of the legend and is not resolved.",
+          "paragraph": 0,
+          "offset": 111,
+          "anchor": "Egelsee",
+          "number": 2
+        },
+        {
+          "label": "Veste Bauernweh",
+          "text": "archaic German for ‘Fortress Peasants' Woe,’ the oppressive castle or noble monastery said to have stood where Egelsee now lies; Veste is an older spelling of Feste, a fortress.",
+          "paragraph": 0,
+          "offset": 221,
+          "anchor": "Veste Bauernweh",
+          "number": 3
+        },
+        {
+          "label": "bailiff",
+          "text": "A bailiff acts for the lord. Here he collects what people owe, seizes property, and has those who cannot pay imprisoned.",
+          "paragraph": 0,
+          "offset": 386,
+          "anchor": "bailiff",
+          "number": 4
+        },
+        {
+          "label": "rent and tithes",
+          "text": "A tithe was a levy traditionally reckoned as a tenth of a crop or other produce. The villagers answer to the lord for both rent and this additional charge.",
+          "paragraph": 0,
+          "offset": 484,
+          "anchor": "rent and tithes",
+          "number": 5
+        },
+        {
+          "label": "Wenn nur de donner di und din burg i bodde ie verschlueg!",
+          "text": "Alemannic dialect meaning ‘If only thunder would strike you and your castle down into the earth!’; the widow's curse is immediately fulfilled by the storm and subsidence.",
+          "paragraph": 1,
+          "offset": 142,
+          "anchor": "Wenn nur de donner di und din burg i bodde ie verschlueg!",
+          "number": 6
+        },
+        {
+          "label": "Klafter",
+          "text": "a historical fathom-like measure varying by region, often around 1.8 meters; here the castle sinks a hundred Klafter, a legendary depth rather than a surveyed modern measurement.",
+          "paragraph": 1,
+          "offset": 408,
+          "anchor": "Klafter",
+          "source": {
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/013751/2011-03-31/"
+          },
+          "number": 7
+        },
+        {
+          "label": "Egelfische",
+          "text": "a historical or regional fish-name identified by the source as Perca fluviatilis, the European perch; here the fish provide the second proposed origin of the name Egelsee.",
+          "paragraph": 1,
+          "offset": 621,
+          "anchor": "Egelfische",
+          "number": 8
+        },
+        {
+          "label": "Wettingen",
+          "text": "Wettingen had a Cistercian abbey. The reference to the monks’ fasting table reflects the Christian practice of eating fish when meat was restricted.",
+          "paragraph": 1,
+          "offset": 716,
+          "anchor": "Wettingen",
+          "number": 9
+        },
+        {
+          "label": "Ellen",
+          "text": "the plural of Elle, a historical ell used for measuring length and varying by locality; here each of ten line-balls is said to contain a hundred Ellen, so no exact modern total can be assumed.",
+          "paragraph": 2,
+          "offset": 734,
+          "anchor": "Ellen",
+          "source": {
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/013751/2011-03-31/"
+          },
+          "number": 10
+        },
+        {
+          "label": "sounding stone",
+          "text": "A weight tied to a marked line. Lowering it until it touched bottom let people measure depth by the length of line that went under water.",
+          "paragraph": 2,
+          "offset": 762,
+          "anchor": "sounding stone",
+          "number": 11
+        },
+        {
+          "label": "fishing right",
+          "text": "Permission to take fish from a particular body of water could be held separately from ownership of the shore. The miller receives part of that right in exchange for looking after the outlet.",
+          "paragraph": 3,
+          "offset": 244,
+          "anchor": "fishing right",
+          "number": 12
+        },
+        {
+          "label": "Rise",
+          "text": "a Swiss topographic word for a steep chute or slope down which scree, earth, or timber falls; here it lies above the Seematten near the treasure site.",
+          "paragraph": 4,
+          "offset": 218,
+          "anchor": "rise",
+          "number": 13
+        },
+        {
+          "label": "Teufelsloch",
+          "text": "literally ‘devil's hole,’ the local name for the cave identified as the former castle treasury; here a guarded iron chest can be approached with consecrated candles.",
+          "paragraph": 4,
+          "offset": 542,
+          "anchor": "Teufelsloch",
+          "number": 14
+        },
+        {
+          "label": "portcullis",
+          "text": "A heavy barred gate that slides down in vertical grooves. Passing underneath leaves the treasure seeker directly beneath it.",
+          "paragraph": 4,
+          "offset": 631,
+          "anchor": "portcullis",
+          "number": 15
+        },
+        {
+          "label": "consecrated wax candles",
+          "text": "The candles have been blessed for religious use. The treasure seeker brings them as protection against the guardian of the chest.",
+          "paragraph": 5,
+          "offset": 239,
+          "anchor": "consecrated wax candles",
+          "number": 16
+        }
+      ],
+      "places": [
+        {
+          "label": "Egelsee",
+          "url": "/folklore/locations/#place-egelsee"
+        },
+        {
+          "label": "Heitersberg",
+          "url": "/folklore/locations/#place-heitersberg"
+        },
+        {
+          "label": "Reuss",
+          "url": "/folklore/locations/#place-reuss"
+        },
+        {
+          "label": "Wettingen",
+          "url": "/folklore/locations/#place-wettingen"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        },
+        {
+          "label": "Castles and lordship",
+          "url": "/folklore/themes/#theme-castles-and-lordship"
+        },
+        {
+          "label": "Curses and wrongdoing",
+          "url": "/folklore/themes/#theme-curses-and-wrongdoing"
+        },
+        {
+          "label": "Flood legends",
+          "url": "/folklore/themes/#theme-flood-legends"
+        }
+      ]
+    },
+    "6467ba133977071785a2a22974e46b0d9516d22e": {
+      "summary": "Verena travels down the Aare on a millstone. Her journey links healing springs, village customs, saints’ relics, and sayings about the autumn weather.",
+      "notes": [
+        {
+          "label": "Saint Verena",
+          "text": "A saint venerated in the upper Rhine and Aargau. Her shrine at Zurzach grew around a grave attributed to her, and stories of her life connect it to places along Swiss rivers.",
+          "paragraph": 0,
+          "offset": 23,
+          "anchor": "Saint Verena",
+          "source": {
+            "label": "Bad Zurzach parish",
+            "url": "https://kath-zurzach-studenland.ch/bad-zurzach/wallfahrtsort-st-verena/allgemeine-informationen-zur-gestalt-der-heiligen/"
+          },
+          "number": 1
+        },
+        {
+          "label": "hermitage",
+          "text": "A place where a religious solitary lived and prayed. The tale places Verena in a cell beside a spring outside Solothurn.",
+          "paragraph": 0,
+          "offset": 152,
+          "anchor": "hermitage",
+          "number": 2
+        },
+        {
+          "label": "Krapfen",
+          "text": "fried or baked filled pastries from the German-speaking Alpine tradition, here miraculously made from the saint’s inexhaustible flour; the source does not specify their shape or filling.",
+          "paragraph": 0,
+          "offset": 345,
+          "anchor": "Krapfen",
+          "number": 3
+        },
+        {
+          "label": "millstone",
+          "text": "A heavy round stone used to grind grain. Its weight is what makes the saint’s ride down the Aare miraculous.",
+          "paragraph": 0,
+          "offset": 1104,
+          "anchor": "millstone",
+          "number": 4
+        },
+        {
+          "label": "town sexton",
+          "text": "The sexton looked after the church building and could be responsible for its bells. The townspeople question him when the bells begin to ring by themselves.",
+          "paragraph": 0,
+          "offset": 1605,
+          "anchor": "town sexton",
+          "number": 5
+        },
+        {
+          "label": "Kavelantes",
+          "text": "the source glosses this local expression as a harsh scolding or dressing-down, linked there with scolding and fault-finding; it is what the Klingnau townspeople mistakenly give their sexton when the bells ring miraculously.",
+          "paragraph": 0,
+          "offset": 1650,
+          "anchor": "Kavelantes",
+          "number": 6
+        },
+        {
+          "label": "Verenabrünnlein",
+          "text": "literally ‘little Verena spring,’ the healing spring said to arise where the saint presses three fingers into the riverbank sand at Giritz; the diminutive is part of its traditional local name.",
+          "paragraph": 0,
+          "offset": 2446,
+          "anchor": "Verenabrünnlein",
+          "number": 7
+        },
+        {
+          "label": "Koblenz",
+          "text": "The Swiss village where the Aare joins the Rhine. For its boatmen the river was a livelihood, which is why they are watching the current when Verena passes.",
+          "paragraph": 1,
+          "offset": 64,
+          "anchor": "Koblenz",
+          "number": 8
+        },
+        {
+          "label": "Weidlingen",
+          "text": "plural of Weidling, a long, narrow flat-bottomed boat traditional on Swiss rivers; Koblenz boatmen use them to meet Verena, and a reaper maid later capsizes in one.",
+          "paragraph": 1,
+          "offset": 237,
+          "anchor": "Weidlingen",
+          "number": 9
+        },
+        {
+          "label": "Jews’ Island",
+          "text": "The Judenäule was a Rhine burial ground used by Jews from the Surb Valley before they gained permission in 1750 to acquire cemetery land between Endingen and Lengnau. The story’s claim that the burials caused an epidemic reflects anti-Jewish prejudice.",
+          "paragraph": 1,
+          "offset": 506,
+          "anchor": "Jews’ Island",
+          "source": {
+            "label": "Jewish cemetery records",
+            "url": "https://svjg.ch/en/friedhoefe"
+          },
+          "number": 10
+        },
+        {
+          "label": "collegiate foundation",
+          "text": "A church establishment served by a community of clergy known as canons. In the tale its members receive Verena with a procession.",
+          "paragraph": 1,
+          "offset": 870,
+          "anchor": "collegiate foundation",
+          "number": 11
+        },
+        {
+          "label": "little wax feet and arms",
+          "text": "These are votive offerings. A wax model of the affected body part could be left at a shrine with a prayer for healing or in thanks.",
+          "paragraph": 1,
+          "offset": 1725,
+          "anchor": "little wax feet and arms",
+          "number": 12
+        },
+        {
+          "label": "Kannten und Strähl",
+          "text": "the local names given together for Verena’s water vessel and comb; Strähl is the comb, while the historical form Kannten refers here to the handled vessel, and spelling or object terminology may vary regionally.",
+          "paragraph": 3,
+          "offset": 240,
+          "anchor": "Kannten und Strähl",
+          "number": 13
+        },
+        {
+          "label": "healing right hand",
+          "text": "The hand is a relic, a bodily remnant venerated because of its association with the saint. Its silver container is a reliquary.",
+          "paragraph": 3,
+          "offset": 287,
+          "anchor": "healing right hand",
+          "number": 14
+        },
+        {
+          "label": "yoke bridge",
+          "text": "A bridge carried by timber frames or trestles set in the water. The story mentions it at the old Rhine crossing near Zurzach.",
+          "paragraph": 3,
+          "offset": 533,
+          "anchor": "yoke bridge",
+          "number": 15
+        },
+        {
+          "label": "Theban Legion",
+          "text": "In Christian tradition, Roman soldiers from Egypt were executed with their commander Maurice at Agaune, now Saint-Maurice in Valais. The story links Verena to that tradition.",
+          "paragraph": 3,
+          "offset": 704,
+          "anchor": "Theban Legion",
+          "source": {
+            "label": "Abbey of Saint-Maurice",
+            "url": "https://www.abbaye-stmaurice.ch/fr/culture-patrimoine/1500-ans-d-histoire-216"
+          },
+          "number": 16
+        },
+        {
+          "label": "prince-abbot",
+          "text": "An abbot who also held the secular rank of prince. The episode treats a piece of the saint’s jug as a relic worth exchanging for revenue.",
+          "paragraph": 3,
+          "offset": 722,
+          "anchor": "prince-abbot",
+          "number": 17
+        },
+        {
+          "label": "Verenenkrüglein",
+          "text": "literally ‘Verena’s little jug,’ a stone relic believed to offer healing drink to the devout while showing only coals to the wicked; the source also says a fragment became the object of an exchange of tithing rights.",
+          "paragraph": 3,
+          "offset": 801,
+          "anchor": "Verenenkrüglein",
+          "number": 18
+        },
+        {
+          "label": "saint’s day",
+          "text": "A feast day on the church calendar. The parish at Bad Zurzach celebrates Saint Verena on September 1, the date behind the weather sayings that follow.",
+          "paragraph": 5,
+          "offset": 28,
+          "anchor": "saint’s day",
+          "source": {
+            "label": "Feast of Saint Verena",
+            "url": "https://kath-zurzach-studenland.ch/bad-zurzach/wallfahrtsort-st-verena/verenatag/"
+          },
+          "number": 19
+        },
+        {
+          "label": "Frene, Frene, dorra weg!",
+          "text": "a dialect healing charm addressed to Verena, approximately ‘Verena, Verena, wither away,’ spoken while blowing on a wart so that it will disappear.",
+          "paragraph": 5,
+          "offset": 269,
+          "anchor": "Frene, Frene, dorra weg!",
+          "number": 20
+        },
+        {
+          "label": "weirs",
+          "text": "Low barriers that raise or redirect water. A miller upstream could use one to draw water away from downstream mills.",
+          "paragraph": 7,
+          "offset": 403,
+          "anchor": "weirs",
+          "number": 21
+        },
+        {
+          "label": "Wenns Vreneli brünnlet, gits en schlächte Herbst",
+          "text": "a dialect weather rule meaning approximately ‘If little Verena makes it drizzle, there will be a bad autumn’; Vreneli is an affectionate diminutive of Verena and brünnlet evokes dripping or light rain.",
+          "paragraph": 8,
+          "offset": 153,
+          "anchor": "Wenns Vreneli brünnlet, gits en schlächte Herbst",
+          "number": 22
+        },
+        {
+          "label": "St. Verena sott z’Morndes ’sChrüegli lösen, z’Mittag ’sChitteli tröchne",
+          "text": "a dialect weather saying approximately ‘Saint Verena should pour out the little jug in the morning and dry her little dress at midday,’ picturing morning rain followed by afternoon drying as a sign of a good autumn.",
+          "paragraph": 8,
+          "offset": 460,
+          "anchor": "St. Verena sott z’Morndes ’sChrüegli lösen, z’Mittag ’sChitteli tröchne",
+          "number": 23
+        },
+        {
+          "label": "z’Obig",
+          "text": "Swiss German for the evening meal or supper; the saying warns that after an entirely rainy Verena’s day the farmer cannot expect the leisure to eat it sitting down.",
+          "paragraph": 8,
+          "offset": 640,
+          "anchor": "z’Obig",
+          "number": 24
+        }
+      ],
+      "places": [
+        {
+          "label": "Solothurn",
+          "url": "/folklore/locations/#place-solothurn"
+        },
+        {
+          "label": "Aare",
+          "url": "/folklore/locations/#place-aare"
+        },
+        {
+          "label": "Klingnau",
+          "url": "/folklore/locations/#place-klingnau"
+        },
+        {
+          "label": "Koblenz",
+          "url": "/folklore/locations/#place-koblenz"
+        },
+        {
+          "label": "Rhine",
+          "url": "/folklore/locations/#place-rhine"
+        },
+        {
+          "label": "Zurzach",
+          "url": "/folklore/locations/#place-zurzach"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Pilgrimage and saints",
+          "url": "/folklore/themes/#theme-pilgrimage-and-saints"
+        },
+        {
+          "label": "Healing springs",
+          "url": "/folklore/themes/#theme-healing-springs"
+        },
+        {
+          "label": "Weather lore",
+          "url": "/folklore/themes/#theme-weather-lore"
+        },
+        {
+          "label": "Drowning and rescue",
+          "url": "/folklore/themes/#theme-drowning-and-rescue"
+        },
+        {
+          "label": "Water rights and mills",
+          "url": "/folklore/themes/#theme-water-rights-and-mills"
+        }
+      ]
+    },
+    "2eb4a90445992e00671bd9a64d5c67836b8f0804": {
+      "summary": "A public bath in Baden serves people seeking relief, while a private ritual draws women hoping for a child. The collector follows the account with comparisons to other water legends.",
+      "notes": [
+        {
+          "label": "Baden’s baths and excavations",
+          "text": "The name means Verena’s bath. Baden’s hot springs supplied public baths and inns, and this account describes a bath associated with the saint.",
+          "paragraph": 0,
+          "offset": 13,
+          "anchor": "Verenabad",
+          "source": {
+            "label": "Historical Museum Baden",
+            "url": "https://museum.baden.ch/public/map/localhost_50325/Home/SectorA.html"
+          },
+          "number": 1
+        },
+        {
+          "label": "bathmaster",
+          "text": "The attendant in charge of a communal bath. His job included supervising bathers and enforcing the rules of the pool.",
+          "paragraph": 0,
+          "offset": 588,
+          "anchor": "bathmaster",
+          "number": 2
+        },
+        {
+          "label": "Verenaloch",
+          "text": "the name literally means ‘Verena hole’ and here denotes the hot-spring opening used in a Baden fertility custom; its precise historical form and ritual interpretation remain uncertain.",
+          "paragraph": 1,
+          "offset": 294,
+          "anchor": "Verenaloch",
+          "number": 3
+        },
+        {
+          "label": "has burning wax candles placed",
+          "text": "A devotional offering. The action connects the spring ritual to the saint’s image and the woman’s prayer.",
+          "paragraph": 1,
+          "offset": 1123,
+          "anchor": "has burning wax candles placed",
+          "number": 4
+        },
+        {
+          "label": "ex miraculis St. Verenae",
+          "text": "Latin for ‘from the miracles of Saint Verena.’ Rochholz is citing an account of the saint’s miracles. His source list and comparisons begin here, after the description of the bath.",
+          "paragraph": 2,
+          "offset": 123,
+          "anchor": "ex miraculis St. Verenae",
+          "number": 5
+        },
+        {
+          "label": "ad solitos veniunt silvestria numina fontes",
+          "text": "The line comes from the Roman poet Ovid’s Fasti, a poem organized around the Roman calendar. It pictures woodland divinities coming to familiar springs.",
+          "paragraph": 3,
+          "offset": 194,
+          "anchor": "ad solitos veniunt silvestria numina fontes",
+          "number": 6
+        },
+        {
+          "label": "millstone",
+          "text": "A heavy stone used for grinding grain. Rochholz compares Verena’s miraculous crossing on one with another saint’s legendary voyage to Novgorod.",
+          "paragraph": 3,
+          "offset": 567,
+          "anchor": "millstone",
+          "number": 7
+        },
+        {
+          "label": "Saint Remaclus",
+          "text": "A saint associated here with Spa in present-day Belgium. Rochholz cites the footprint at a spring there as a parallel to the Baden ritual.",
+          "paragraph": 3,
+          "offset": 975,
+          "anchor": "Saint Remaclus",
+          "number": 8
+        },
+        {
+          "label": "Tannhäuser",
+          "text": "A medieval German poet who became the subject of a legend about the Venusberg, the mountain where Venus keeps him. Rochholz points to a song in which a figure called Frau Frene appears in her place.",
+          "paragraph": 4,
+          "offset": 73,
+          "anchor": "Tannhäuser",
+          "number": 9
+        },
+        {
+          "label": "Saint Wiborade",
+          "text": "Wiborada was a woman who lived in religious seclusion at St. Gallen. Rochholz pairs the comb attributed to her with Verena’s comb and the two saints’ healing traditions.",
+          "paragraph": 4,
+          "offset": 374,
+          "anchor": "Saint Wiborade",
+          "number": 10
+        },
+        {
+          "label": "Theban Legion",
+          "text": "The soldiers from Egypt associated with Saint Maurice in Swiss Christian tradition. Rochholz argues that Verena’s connection to their story was a later development.",
+          "paragraph": 5,
+          "offset": 151,
+          "anchor": "Theban Legion",
+          "source": {
+            "label": "Abbey of Saint-Maurice",
+            "url": "https://www.abbaye-stmaurice.ch/fr/culture-patrimoine/1500-ans-d-histoire-216"
+          },
+          "number": 11
+        },
+        {
+          "label": "martyrology",
+          "text": "A church calendar or collection of notices about martyrs and other saints. Rochholz cites a text attributed to Notker as evidence for how Verena’s tradition developed.",
+          "paragraph": 5,
+          "offset": 309,
+          "anchor": "martyrology",
+          "number": 12
+        },
+        {
+          "label": "Regula",
+          "text": "A patron saint of Zurich, traditionally linked with Felix. Rochholz compares her spring and millstone traditions with Verena’s.",
+          "paragraph": 6,
+          "offset": 63,
+          "anchor": "Regula",
+          "number": 13
+        },
+        {
+          "label": "Vreneli's Gärtli",
+          "text": "this Alemannic place-name means approximately ‘little Verena’s garden’ and identifies a legendary ice field on the Glärnisch; the exact local spelling and the legend’s historical reach are uncertain.",
+          "paragraph": 7,
+          "offset": 219,
+          "anchor": "Vreneli's Gärtli",
+          "number": 14
+        },
+        {
+          "label": "Polycrates",
+          "text": "A ruler of the Greek island of Samos whose ring, cast away at sea, returned in the belly of a fish in Herodotus’s account. Rochholz sets this alongside a similar motif in the Verena story.",
+          "paragraph": 9,
+          "offset": 163,
+          "anchor": "Polycrates",
+          "number": 15
+        },
+        {
+          "label": "Andvari",
+          "text": "A treasure-keeping dwarf in Norse legend. Rochholz brings up his ring and fish form while tracing parallels to stories about rings recovered from water.",
+          "paragraph": 9,
+          "offset": 253,
+          "anchor": "Andvari",
+          "number": 16
+        },
+        {
+          "label": "Wassergötzli",
+          "text": "this Swiss German diminutive means roughly ‘little water idols’ or ‘little water deities’ in an eighteenth-century polemical account of Baden’s spring cult; the intended nuance and the nature of any earlier images are uncertain.",
+          "paragraph": 11,
+          "offset": 222,
+          "anchor": "Wassergötzli",
+          "number": 17
+        },
+        {
+          "label": "Frau Holle and Berchta",
+          "text": "Figures from German-speaking folklore. Rochholz associates them with traditions that explain where children come from. These comparisons are the collector’s nineteenth-century interpretation.",
+          "paragraph": 12,
+          "offset": 328,
+          "anchor": "Frau Holle and Berchta",
+          "number": 18
+        }
+      ],
+      "places": [
+        {
+          "label": "Baden",
+          "url": "/folklore/locations/#place-baden"
+        },
+        {
+          "label": "Zurzach",
+          "url": "/folklore/locations/#place-zurzach"
+        },
+        {
+          "label": "Surb Valley",
+          "url": "/folklore/locations/#place-surb-valley"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Healing springs",
+          "url": "/folklore/themes/#theme-healing-springs"
+        },
+        {
+          "label": "Pilgrimage and saints",
+          "url": "/folklore/themes/#theme-pilgrimage-and-saints"
+        },
+        {
+          "label": "Birth and fertility",
+          "url": "/folklore/themes/#theme-birth-and-fertility"
+        }
+      ]
+    },
+    "373b1522595312ccbeb34c116035b6b486501266": {
+      "summary": "A local storyteller credits a swineherd with finding Baden’s healing springs. The boy follows a runaway boar to a steaming hollow.",
+      "notes": [
+        {
+          "label": "almanac makers",
+          "text": "Almanacs combined a calendar with practical information, weather lore, and local material. The narrator teases their writers for attributing everything in the region to Rome.",
+          "paragraph": 0,
+          "offset": 53,
+          "anchor": "almanac makers",
+          "number": 1
+        },
+        {
+          "label": "Limmat",
+          "text": "The river runs through Baden’s old bathing district. The teller’s route along it places the story close to the actual thermal springs.",
+          "paragraph": 0,
+          "offset": 110,
+          "anchor": "Limmat",
+          "source": {
+            "label": "Historical Museum Baden",
+            "url": "https://museum.baden.ch/public/map/localhost_50325/Home/SectorA.html"
+          },
+          "number": 2
+        },
+        {
+          "label": "Windisch",
+          "text": "Modern Windisch grew at the site of the Roman military settlement of Vindonissa. Excavations also document Roman baths at nearby Baden, then known as Aquae Helveticae.",
+          "paragraph": 0,
+          "offset": 224,
+          "anchor": "Windisch",
+          "source": {
+            "label": "Museum Aargau",
+            "url": "https://www.ag.ch/de/themen/kultur-sport/kultur/museum-aargau/vindonissa"
+          },
+          "number": 3
+        },
+        {
+          "label": "goad-stick",
+          "text": "A pointed stick for driving livestock. The boy uses it to throw at his boar and accidentally opens the spring in the legend.",
+          "paragraph": 2,
+          "offset": 555,
+          "anchor": "goad-stick",
+          "number": 4
+        },
+        {
+          "label": "smell of sulfur",
+          "text": "The hot water has a sharp odor that the teller associates with the Devil. The story uses that familiar association as part of the surprise of finding a healing spring.",
+          "paragraph": 2,
+          "offset": 839,
+          "anchor": "smell of sulfur",
+          "number": 5
+        },
+        {
+          "label": "Zurich dean at Birmenstorf",
+          "text": "A church official. By referring readers to his manuscripts, the teller gives a local account the kind of written authority he has just mocked.",
+          "paragraph": 3,
+          "offset": 174,
+          "anchor": "Zurich dean at Birmenstorf",
+          "number": 6
+        }
+      ],
+      "places": [
+        {
+          "label": "Baden",
+          "url": "/folklore/locations/#place-baden"
+        },
+        {
+          "label": "Limmat",
+          "url": "/folklore/locations/#place-limmat"
+        },
+        {
+          "label": "Windisch",
+          "url": "/folklore/locations/#place-windisch"
+        },
+        {
+          "label": "Birmenstorf",
+          "url": "/folklore/locations/#place-birmenstorf"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Healing springs",
+          "url": "/folklore/themes/#theme-healing-springs"
+        },
+        {
+          "label": "Origins of landmarks",
+          "url": "/folklore/themes/#theme-origins-of-landmarks"
+        }
+      ]
+    },
+    "6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31": {
+      "summary": "A Helvetian man leaves his sick bride when Roman troops advance. A spring that revives the flowers he picked for her is said to restore her health.",
+      "notes": [
+        {
+          "label": "Caecina",
+          "text": "Aulus Caecina Alienus was a Roman commander in the civil wars of AD 69. Tacitus recounts his campaign against the Helvetii and the destruction of a settlement known for its baths.",
+          "paragraph": 0,
+          "offset": 13,
+          "anchor": "Caecina",
+          "source": {
+            "label": "Tacitus, Histories 1.67–69",
+            "url": "https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Tacitus/Histories/1B%2A.html#67"
+          },
+          "number": 1
+        },
+        {
+          "label": "Helvetian soldiers",
+          "text": "The Helvetii were a Celtic people of the Swiss Plateau. The Latin name Helvetia later came to refer to Switzerland.",
+          "paragraph": 0,
+          "offset": 81,
+          "anchor": "Helvetian soldiers",
+          "number": 2
+        },
+        {
+          "label": "Bötzberg",
+          "text": "A pass and ridge in the Aargau Jura. The story places the retreat there, in the mountains away from Baden.",
+          "paragraph": 0,
+          "offset": 201,
+          "anchor": "Bötzberg",
+          "number": 3
+        },
+        {
+          "label": "cast them as an offering",
+          "text": "The young man leaves the revived flowers in the spring as thanks. The gesture treats the water as the source of a gift.",
+          "paragraph": 0,
+          "offset": 651,
+          "anchor": "cast them as an offering",
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Baden",
+          "url": "/folklore/locations/#place-baden"
+        },
+        {
+          "label": "Bötzberg",
+          "url": "/folklore/locations/#place-botzberg"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Healing springs",
+          "url": "/folklore/themes/#theme-healing-springs"
+        },
+        {
+          "label": "War and local history",
+          "url": "/folklore/themes/#theme-war-and-local-history"
+        }
+      ]
+    },
+    "bf773dcebae22947d95e677a8d1d72812e0f1688": {
+      "summary": "Aarau chooses a brook over a chain of gold. The story connects the town’s water supply with the procession that welcomes the stream back after cleaning.",
+      "notes": [
+        {
+          "label": "town brook",
+          "text": "The Stadtbach is a channel that brought water from outside the settlement through town. The Aare is the larger river running beside Aarau.",
+          "paragraph": 0,
+          "offset": 257,
+          "anchor": "town brook",
+          "number": 1
+        },
+        {
+          "label": "charter of liberties",
+          "text": "A written grant of rights from a ruler. Rochholz cites one from Duke Leopold III as evidence for the old trading house’s name, then gives the story’s alternative explanation.",
+          "paragraph": 0,
+          "offset": 662,
+          "anchor": "charter of liberties",
+          "number": 2
+        },
+        {
+          "label": "Sustenhaus",
+          "text": "a historical warehouse or goods depot, from Sust, often associated with transport and customs stations; here it is the municipal trading house that may have given the Susbach its name.",
+          "paragraph": 0,
+          "offset": 746,
+          "anchor": "Sustenhaus",
+          "number": 3
+        },
+        {
+          "label": "women's religious foundation",
+          "text": "A religious house for women. The community in the tale receives land and civic protection after a fire at Schänis.",
+          "paragraph": 2,
+          "offset": 62,
+          "anchor": "women's religious foundation",
+          "number": 4
+        },
+        {
+          "label": "Tellen",
+          "text": "historical Swiss municipal levies or assessments; here the displaced Schännis sisters are exempted from them, though the passage does not specify their exact form.",
+          "paragraph": 2,
+          "offset": 230,
+          "anchor": "Tellen",
+          "number": 5
+        },
+        {
+          "label": "village of Sur",
+          "text": "The source uses Sur for present-day Suhr, just outside Aarau. The distance to the springs is expressed in minutes of travel.",
+          "paragraph": 3,
+          "offset": 116,
+          "anchor": "village of Sur",
+          "number": 6
+        },
+        {
+          "label": "Aarauer Bachfischet",
+          "text": "The annual clearing of the Stadtbach gave rise to the Bachfischet. Aarau still marks the return of the water with children carrying illuminated lanterns and calling verses like those quoted here.",
+          "paragraph": 4,
+          "offset": 550,
+          "anchor": "after the brook has been shut off",
+          "source": {
+            "label": "Swiss Inventory of Living Traditions",
+            "url": "https://www.lebendige-traditionen.ch/de/aarauer-bachfischet"
+          },
+          "number": 7
+        },
+        {
+          "label": "Maien",
+          "text": "fresh leafy branches used as festive greenery in German-speaking Swiss custom; here townspeople carry them as decorations during the annual procession to meet the returning brook.",
+          "paragraph": 4,
+          "offset": 745,
+          "anchor": "Maien",
+          "number": 8
+        },
+        {
+          "label": "Schultamboure",
+          "text": "literally ‘school drummers,’ boys serving as the procession's youthful drummers; the historical term reflects organized civic pageantry rather than a modern school band.",
+          "paragraph": 6,
+          "offset": 61,
+          "anchor": "Schultamboure",
+          "number": 9
+        },
+        {
+          "label": "bundles of tow",
+          "text": "Tow is the coarse flax or hemp fiber left after combing out the finer strands. The bundles supply part of the procession’s firelight.",
+          "paragraph": 6,
+          "offset": 170,
+          "anchor": "bundles of tow",
+          "number": 10
+        },
+        {
+          "label": "Füerjo",
+          "text": "a Swiss German alarm cry meaning roughly ‘Fire!’ or ‘Fire, ho!’; here it opens a teasing festival verse about the illuminated brook, so the call is playful as well as dramatic.",
+          "paragraph": 7,
+          "offset": 7,
+          "anchor": "Füerjo",
+          "number": 11
+        }
+      ],
+      "places": [
+        {
+          "label": "Aarau",
+          "url": "/folklore/locations/#place-aarau"
+        },
+        {
+          "label": "Aare",
+          "url": "/folklore/locations/#place-aare"
+        },
+        {
+          "label": "Suhr",
+          "url": "/folklore/locations/#place-suhr"
+        },
+        {
+          "label": "Küttigen",
+          "url": "/folklore/locations/#place-kuttigen"
+        },
+        {
+          "label": "Schänis",
+          "url": "/folklore/locations/#place-schanis"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Water rights and mills",
+          "url": "/folklore/themes/#theme-water-rights-and-mills"
+        },
+        {
+          "label": "Festivals and customs",
+          "url": "/folklore/themes/#theme-festivals-and-customs"
+        },
+        {
+          "label": "Origins of landmarks",
+          "url": "/folklore/themes/#theme-origins-of-landmarks"
+        }
+      ]
+    },
+    "467e25e4996b52861fface7e615b0d0a0ccb12e3": {
+      "summary": "A violent man believes a terrible remedy can cure him. A miller’s daughter calls for help, and people later say that a healing spring rose beside the tree where she escaped.",
+      "notes": [
+        {
+          "label": "Lindenberg",
+          "text": "A long ridge between Aargau and Lucerne. Schongau on the Lucerne side and Bettwil on the Aargau side give two of the names for these baths.",
+          "paragraph": 0,
+          "offset": 66,
+          "anchor": "Lindenberg",
+          "number": 1
+        },
+        {
+          "label": "Gugger",
+          "text": "The tale gives this as a name for the Devil. It supplies one possible explanation for Guggi Baths, alongside a view-related name and the villain’s nickname.",
+          "paragraph": 0,
+          "offset": 434,
+          "anchor": "Gugger",
+          "number": 2
+        },
+        {
+          "label": "Bluebeard",
+          "text": "The name evokes the European folktale figure who kills women and conceals their deaths. Rochholz uses it as a comparison for the killer of this local story.",
+          "paragraph": 0,
+          "offset": 475,
+          "anchor": "Bluebeard",
+          "number": 3
+        },
+        {
+          "label": "Rüefengügges",
+          "text": "the local nickname of the leprous, red-faced Bluebeard figure associated with the Schongau baths; the account connects part of the name with Gugger, ‘Satan,’ but its full dialect formation and historical identity remain uncertain.",
+          "paragraph": 0,
+          "offset": 495,
+          "anchor": "Rüefengügges",
+          "number": 4
+        },
+        {
+          "label": "Fountain of the Eleven Thousand Maidens",
+          "text": "The number recalls the legend of Saint Ursula and her many companions. Rochholz reports it as one of the spring’s old names alongside the tale of eleven victims.",
+          "paragraph": 0,
+          "offset": 653,
+          "anchor": "Fountain of the Eleven Thousand Maidens",
+          "number": 5
+        },
+        {
+          "label": "willow band",
+          "text": "Willow branches can bend into ties. Here the same flexible binding intended for the girl is used against her captor.",
+          "paragraph": 5,
+          "offset": 139,
+          "anchor": "willow band",
+          "number": 6
+        },
+        {
+          "label": "about to change",
+          "text": "The killer’s appearance survives in the tale as a weather sign after the spring is founded.",
+          "paragraph": 5,
+          "offset": 619,
+          "anchor": "about to change",
+          "number": 7
+        }
+      ],
+      "places": [
+        {
+          "label": "Lindenberg",
+          "url": "/folklore/locations/#place-lindenberg"
+        },
+        {
+          "label": "Schongau",
+          "url": "/folklore/locations/#place-schongau"
+        },
+        {
+          "label": "Bettwil",
+          "url": "/folklore/locations/#place-bettwil"
+        },
+        {
+          "label": "Boswil",
+          "url": "/folklore/locations/#place-boswil"
+        },
+        {
+          "label": "Hitzkirch",
+          "url": "/folklore/locations/#place-hitzkirch"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Healing springs",
+          "url": "/folklore/themes/#theme-healing-springs"
+        },
+        {
+          "label": "Curses and wrongdoing",
+          "url": "/folklore/themes/#theme-curses-and-wrongdoing"
+        },
+        {
+          "label": "Weather lore",
+          "url": "/folklore/themes/#theme-weather-lore"
+        }
+      ]
+    },
+    "52e148ff2a5760247de1f0ef6affad49ecd86770": {
+      "summary": "During a water shortage a spring breaks through the floor of a monastery church. The account connects it to a chaplain’s grave and a sixteenth-century book.",
+      "notes": [
+        {
+          "label": "penitential sermons",
+          "text": "Sermons calling listeners to repent. The clergy frame the water shortage as a religious crisis and call the community to public prayer.",
+          "paragraph": 0,
+          "offset": 183,
+          "anchor": "penitential sermons",
+          "number": 1
+        },
+        {
+          "label": "saying Mass",
+          "text": "Celebrating the central service of Catholic worship. The noise begins while the chaplain is at the altar and his assistants are nearby.",
+          "paragraph": 0,
+          "offset": 249,
+          "anchor": "saying Mass",
+          "number": 2
+        },
+        {
+          "label": "monastery altar",
+          "text": "The altar belongs to the church of the former Cistercian nunnery at Olsberg. A community of nuns there was headed by an abbess.",
+          "paragraph": 0,
+          "offset": 272,
+          "anchor": "monastery altar",
+          "source": {
+            "label": "Olsberg church history",
+            "url": "https://christkatholisch.ch/angebote/vereinigungen-und-verbaende/vereinigung-hortus-dei-olsberg-vhdo/"
+          },
+          "number": 3
+        },
+        {
+          "label": "Sebast. Münster",
+          "text": "Sebastian Münster compiled the Cosmographia, a widely circulated sixteenth-century description of places and their histories. Rochholz cites the 1567 Basel edition as an earlier witness.",
+          "paragraph": 1,
+          "offset": 86,
+          "anchor": "Sebast. Münster",
+          "number": 4
+        },
+        {
+          "label": "abbess",
+          "text": "The head of a religious house for women. Dating the story to Elsbet of Eptingen’s tenure places the chaplain within the history of the monastery.",
+          "paragraph": 1,
+          "offset": 302,
+          "anchor": "abbess",
+          "number": 5
+        }
+      ],
+      "places": [
+        {
+          "label": "Olsberg",
+          "url": "/folklore/locations/#place-olsberg"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Healing springs",
+          "url": "/folklore/themes/#theme-healing-springs"
+        },
+        {
+          "label": "Pilgrimage and saints",
+          "url": "/folklore/themes/#theme-pilgrimage-and-saints"
+        },
+        {
+          "label": "Origins of landmarks",
+          "url": "/folklore/themes/#theme-origins-of-landmarks"
+        }
+      ]
+    },
+    "034cdca9ccd37d16e4c8018009368915aad972ba": {
+      "summary": "A priest ignores a warning about a woman seen beside a spring. His horse throws him, and a local resident later gives the accident a supernatural explanation.",
+      "notes": [
+        {
+          "label": "Sulz Valley",
+          "text": "The footpath in the tale connects the Sulz Valley and Gansingen in Aargau. The spring is an isolated stop high above Bütz.",
+          "paragraph": 0,
+          "offset": 51,
+          "anchor": "Sulz Valley",
+          "number": 1
+        },
+        {
+          "label": "sacristan",
+          "text": "A church attendant who looks after the vessels, vestments, and other things used in services. Here he knows the local story and warns the priest.",
+          "paragraph": 0,
+          "offset": 517,
+          "anchor": "sacristan",
+          "number": 2
+        },
+        {
+          "label": "redeemed",
+          "text": "The resident believes the event released the spirit from its obligation to appear at the spring. That is how he explains its disappearance.",
+          "paragraph": 0,
+          "offset": 1177,
+          "anchor": "redeemed",
+          "number": 3
+        }
+      ],
+      "places": [
+        {
+          "label": "Sulz Valley",
+          "url": "/folklore/locations/#place-sulz-valley"
+        },
+        {
+          "label": "Leidiken",
+          "url": "/folklore/locations/#place-leidiken"
+        },
+        {
+          "label": "Bütz",
+          "url": "/folklore/locations/#place-butz"
+        },
+        {
+          "label": "Gansingen",
+          "url": "/folklore/locations/#place-gansingen"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        },
+        {
+          "label": "Doubles and apparitions",
+          "url": "/folklore/themes/#theme-doubles-and-apparitions"
+        }
+      ]
+    },
+    "38904f34c09542b6c43278a9624b77062e9005cf": {
+      "summary": "A hollow near Muri is said to fill with water before war or famine. Another version connects the water to a buried castle and its wandering lord.",
+      "notes": [
+        {
+          "label": "a quarter of an hour from Muri",
+          "text": "A distance expressed as walking time. The tale places the hollow in the woods near the road from Muri toward Lucerne.",
+          "paragraph": 0,
+          "offset": 86,
+          "anchor": "a quarter of an hour from Muri",
+          "number": 1
+        },
+        {
+          "label": "famine year of 1817",
+          "text": "The story names a period of severe hunger after the failed harvests of 1816. It remembers hardship alongside more familiar upheavals such as the French Revolution.",
+          "paragraph": 0,
+          "offset": 439,
+          "anchor": "famine year of 1817",
+          "number": 2
+        },
+        {
+          "label": "Sins and the conflict of 1712",
+          "text": "During the Second War of Villmergen, Bern and Zurich fought Catholic parts of the old Confederacy. The village of Sins was the site of fighting that July.",
+          "paragraph": 1,
+          "offset": 7,
+          "anchor": "In 1712",
+          "source": {
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/017117/2008-02-06/"
+          },
+          "number": 3
+        },
+        {
+          "label": "Bernese dragoons",
+          "text": "Mounted troops from Bern. A dragoon historically belonged to a type of soldier who traveled on horseback and could fight dismounted.",
+          "paragraph": 1,
+          "offset": 139,
+          "anchor": "Bernese dragoons",
+          "number": 4
+        },
+        {
+          "label": "Kirchbühl",
+          "text": "Kirch means church and Bühl means hill. The high ground makes it all the more striking that the cellar and the low-lying hollow supposedly fill together.",
+          "paragraph": 2,
+          "offset": 212,
+          "anchor": "Kirchbühl",
+          "number": 5
+        },
+        {
+          "label": "Heiterechsee",
+          "text": "the local name for the normally dry hollow that mysteriously becomes a lake in clear weather; the name evokes heiter, ‘clear’ or ‘fair,’ and See, ‘lake,’ although its precise dialect formation is uncertain.",
+          "paragraph": 2,
+          "offset": 393,
+          "anchor": "Heiterechsee",
+          "number": 6
+        },
+        {
+          "label": "Sonderbundskrieg",
+          "text": "the Swiss civil war of 1847 between the federal forces and the Sonderbund, an alliance of conservative Catholic cantons; the tale treats the lake's appearance as a warning of that conflict.",
+          "paragraph": 2,
+          "offset": 584,
+          "anchor": "Sonderbundskrieg",
+          "source": {
+            "label": "Swiss National Museum",
+            "url": "https://blog.nationalmuseum.ch/fr/2019/08/la-guerre-du-sonderbund/"
+          },
+          "number": 7
+        },
+        {
+          "label": "Alsace",
+          "text": "The area north of Basel on the French side of the Upper Rhine. The tale credits visitors from France with spreading the story beyond the region.",
+          "paragraph": 2,
+          "offset": 770,
+          "anchor": "Alsace",
+          "number": 8
+        }
+      ],
+      "places": [
+        {
+          "label": "Muri",
+          "url": "/folklore/locations/#place-muri"
+        },
+        {
+          "label": "Maiholz",
+          "url": "/folklore/locations/#place-maiholz"
+        },
+        {
+          "label": "Sins",
+          "url": "/folklore/locations/#place-sins"
+        },
+        {
+          "label": "Kirchbühl",
+          "url": "/folklore/locations/#place-kirchbuhl"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Omens and premonitions",
+          "url": "/folklore/themes/#theme-omens-and-premonitions"
+        },
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        },
+        {
+          "label": "War and local history",
+          "url": "/folklore/themes/#theme-war-and-local-history"
+        },
+        {
+          "label": "Castles and lordship",
+          "url": "/folklore/themes/#theme-castles-and-lordship"
+        }
+      ]
+    },
+    "7c64393689728a58687d3935b618c5996950ba1a": {
+      "summary": "Willi avoids rival suitors by swimming across Lake Hallwil to see Lisa. A light in her window is his guide on the night crossing.",
+      "notes": [
+        {
+          "label": "Meisterschwanden",
+          "text": "The village is on one side of Lake Hallwil. Beinwil am See, where Willi comes from, lies across the water.",
+          "paragraph": 0,
+          "offset": 34,
+          "anchor": "Meisterschwanden",
+          "number": 1
+        },
+        {
+          "label": "from her own municipality",
+          "text": "The local youths treat a visitor from another village as a rival. Their control of the usual approach gives Willi a reason to come by water.",
+          "paragraph": 0,
+          "offset": 172,
+          "anchor": "from her own municipality",
+          "number": 2
+        },
+        {
+          "label": "half-hour breadth",
+          "text": "The crossing is described by the time it takes rather than in miles. Willi uses the light on the far shore to keep his direction in the dark.",
+          "paragraph": 1,
+          "offset": 294,
+          "anchor": "half-hour breadth",
+          "number": 3
+        },
+        {
+          "label": "zu Licht gehen",
+          "text": "literally ‘to go to the light,’ a regional courting custom or expression in which a suitor visits at night guided by a light in the beloved's window; here the extinguished signal causes the tragedy.",
+          "paragraph": 1,
+          "offset": 491,
+          "anchor": "zu Licht gehen",
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Lake Hallwil",
+          "url": "/folklore/locations/#place-lake-hallwil"
+        },
+        {
+          "label": "Meisterschwanden",
+          "url": "/folklore/locations/#place-meisterschwanden"
+        },
+        {
+          "label": "Beinwil",
+          "url": "/folklore/locations/#place-beinwil"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Courtship and marriage",
+          "url": "/folklore/themes/#theme-courtship-and-marriage"
+        },
+        {
+          "label": "Drowning and rescue",
+          "url": "/folklore/themes/#theme-drowning-and-rescue"
+        }
+      ]
+    },
+    "7789e358737b8edee35538b428ecc4ede00ba46f": {
+      "summary": "Two bedside lights go out around the time an old woman dies. When messengers cross the region to fetch her sister, they discover the second death.",
+      "notes": [
+        {
+          "label": "Laufenburg",
+          "text": "The town name refers to a Rhine crossing with settlements on both banks, now in Switzerland and Germany. That setting helps explain why the story’s messengers travel between Laufenburg and Swabia.",
+          "paragraph": 0,
+          "offset": 25,
+          "anchor": "Laufenburg",
+          "number": 1
+        },
+        {
+          "label": "two beautiful little lights",
+          "text": "The tale links each flame to the life of one sister. Readers learn what the second light meant only when the funeral messengers meet.",
+          "paragraph": 0,
+          "offset": 97,
+          "anchor": "two beautiful little lights",
+          "number": 2
+        },
+        {
+          "label": "Swabia",
+          "text": "A historical region of southwestern Germany. The tale leaves unnamed the particular town where the sister lived.",
+          "paragraph": 0,
+          "offset": 320,
+          "anchor": "Swabia",
+          "number": 3
+        },
+        {
+          "label": "Seelenmesse",
+          "text": "a Catholic Mass offered for the soul of a dead person; the planned memorial rite reveals that the two sisters died almost together, just as the paired lights had foretold.",
+          "paragraph": 0,
+          "offset": 341,
+          "anchor": "Seelenmesse",
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Laufenburg",
+          "url": "/folklore/locations/#place-laufenburg"
+        },
+        {
+          "label": "Swabia",
+          "url": "/folklore/locations/#place-swabia"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Omens and premonitions",
+          "url": "/folklore/themes/#theme-omens-and-premonitions"
+        },
+        {
+          "label": "Death and mourning",
+          "url": "/folklore/themes/#theme-death-and-mourning"
+        }
+      ]
+    },
+    "aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3": {
+      "summary": "A wedding party crosses Lake Hallwil in a ferry. When a storm comes on, the church bells keep ringing for a party that never arrives.",
+      "notes": [
+        {
+          "label": "right bank of Lake Hallwil",
+          "text": "The story names Meisterschwanden on the side from which people hear the cries. On the other shore, workers tend vineyards around Beinwil.",
+          "paragraph": 0,
+          "offset": 185,
+          "anchor": "right bank of Lake Hallwil",
+          "number": 1
+        },
+        {
+          "label": "Fahrwangen",
+          "text": "The wedding party sets out from the east side of Lake Hallwil. In this account a water crossing is part of the journey to the church at Reinach.",
+          "paragraph": 1,
+          "offset": 47,
+          "anchor": "Fahrwangen",
+          "number": 2
+        },
+        {
+          "label": "bells in Reinach",
+          "text": "Church bells announce the wedding to the community while the party is still expected. That ordinary sound is echoed by the strange small bells people hear after the storm.",
+          "paragraph": 2,
+          "offset": 384,
+          "anchor": "bells in Reinach",
+          "number": 3
+        },
+        {
+          "label": "Schellenpeter",
+          "text": "literally ‘Bell Peter,’ the local name for the uncanny ringing associated with the drowned wedding party and changes in the weather; the story does not identify Peter as a separate person.",
+          "paragraph": 3,
+          "offset": 252,
+          "anchor": "Schellenpeter",
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Lake Hallwil",
+          "url": "/folklore/locations/#place-lake-hallwil"
+        },
+        {
+          "label": "Fahrwangen",
+          "url": "/folklore/locations/#place-fahrwangen"
+        },
+        {
+          "label": "Reinach",
+          "url": "/folklore/locations/#place-reinach"
+        },
+        {
+          "label": "Beinwil",
+          "url": "/folklore/locations/#place-beinwil"
+        },
+        {
+          "label": "Meisterschwanden",
+          "url": "/folklore/locations/#place-meisterschwanden"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Courtship and marriage",
+          "url": "/folklore/themes/#theme-courtship-and-marriage"
+        },
+        {
+          "label": "Drowning and rescue",
+          "url": "/folklore/themes/#theme-drowning-and-rescue"
+        },
+        {
+          "label": "Weather lore",
+          "url": "/folklore/themes/#theme-weather-lore"
+        },
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        }
+      ]
+    },
+    "934238f65d75d52248f6b956294ce61309c2558e": {
+      "summary": "Six years after a drowning in the Rhine, a boatman sees a hand holding the same fir that pulled loose from the bank. A voice answers him in dialect.",
+      "notes": [
+        {
+          "label": "Frickthal",
+          "text": "An older spelling of Fricktal, a district of northern Aargau by the Upper Rhine. Hornussen is the village from which the man in the tale comes.",
+          "paragraph": 0,
+          "offset": 16,
+          "anchor": "Frickthal",
+          "source": {
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/008297/2006-11-09/"
+          },
+          "number": 1
+        },
+        {
+          "label": "prayed his rosary",
+          "text": "In Catholic prayer, rosary beads help count a repeated sequence of prayers. The opening presents the man as devoted to the Church and often in trouble with civil officials.",
+          "paragraph": 0,
+          "offset": 106,
+          "anchor": "prayed his rosary",
+          "number": 2
+        },
+        {
+          "label": "Bürgerstübchen",
+          "text": "literally a ‘little citizens' room,’ here the local municipal detention room in which the disobedient farmer is confined; the diminutive should not be mistaken for a cozy private parlor.",
+          "paragraph": 0,
+          "offset": 318,
+          "anchor": "Bürgerstübchen",
+          "number": 3
+        },
+        {
+          "label": "Seckingen",
+          "text": "Today Bad Säckingen. The town stands on the German bank of the Rhine, opposite Stein in Aargau. The water crossing tied these neighboring communities together.",
+          "paragraph": 1,
+          "offset": 71,
+          "anchor": "Seckingen",
+          "source": {
+            "label": "Canton of Aargau archive",
+            "url": "https://www.ag.ch/de/themen/kultur-sport/kultur/bibliothek-archiv/freiwilligenprogramm?dc=047ebd8d-d4d8-4b8a-b29f-8e82626f7be7_de"
+          },
+          "number": 4
+        },
+        {
+          "label": "Weidling",
+          "text": "a traditional flat-bottomed river boat used on Swiss waterways such as the Rhine; the spirit lifts this small craft at the drowning place.",
+          "paragraph": 1,
+          "offset": 132,
+          "anchor": "Weidling",
+          "number": 5
+        },
+        {
+          "label": "Sechs Johr am Läbe verlore",
+          "text": "the opening line of the local dialect couplet, ‘six years lost from life’; paired with six years frozen in the water, it marks the drowned man's completed term of suffering.",
+          "paragraph": 2,
+          "offset": 26,
+          "anchor": "Sechs Johr am Läbe verlore",
+          "number": 6
+        },
+        {
+          "label": "Schwarzsee in St. Gallen",
+          "text": "Schwarzsee means ‘black lake.’ Rochholz closes by comparing a separate account from St. Gallen with the hand seen in the Rhine.",
+          "paragraph": 4,
+          "offset": 42,
+          "anchor": "Schwarzsee in St. Gallen",
+          "number": 7
+        }
+      ],
+      "places": [
+        {
+          "label": "Fricktal",
+          "url": "/folklore/locations/#place-fricktal"
+        },
+        {
+          "label": "Hornussen",
+          "url": "/folklore/locations/#place-hornussen"
+        },
+        {
+          "label": "Rhine",
+          "url": "/folklore/locations/#place-rhine"
+        },
+        {
+          "label": "Bad Säckingen",
+          "url": "/folklore/locations/#place-bad-sackingen"
+        },
+        {
+          "label": "Weisstannen",
+          "url": "/folklore/locations/#place-weisstannen"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        },
+        {
+          "label": "Drowning and rescue",
+          "url": "/folklore/themes/#theme-drowning-and-rescue"
+        },
+        {
+          "label": "Death and mourning",
+          "url": "/folklore/themes/#theme-death-and-mourning"
+        }
+      ]
+    },
+    "40314b4af9266133a774f57ed6692cede664c5d9": {
+      "summary": "A farmer profits from a drought. After his death, water flowing from a hidden spring is said to warn of another rise in prices.",
+      "notes": [
+        {
+          "label": "years of high prices",
+          "text": "The prices that matter here are for essentials such as grain. The story’s sign of hard times is a spring that produces more water just as food becomes harder to afford.",
+          "paragraph": 0,
+          "offset": 220,
+          "anchor": "years of high prices",
+          "number": 1
+        },
+        {
+          "label": "usurious farmer",
+          "text": "Usury usually refers to lending at excessive interest. Here the term characterizes the farmer’s broader practice of charging struggling neighbors what he can get for water and grain.",
+          "paragraph": 0,
+          "offset": 279,
+          "anchor": "usurious farmer",
+          "number": 2
+        },
+        {
+          "label": "Surb",
+          "text": "The stream gives the Surb Valley its name. Along with Thalebach, it fails during the drought, leaving the household well as a source of water.",
+          "paragraph": 1,
+          "offset": 62,
+          "anchor": "Surb",
+          "number": 3
+        },
+        {
+          "label": "Mass",
+          "text": "here Mass is a historical regional liquid measure by which the farmer sold water; its exact local volume is uncertain.",
+          "paragraph": 1,
+          "offset": 369,
+          "anchor": "Mass",
+          "source": {
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/013751/2011-03-31/"
+          },
+          "number": 4
+        },
+        {
+          "label": "Hungerbrünnlein",
+          "text": "literally ‘little hunger spring,’ this is the warning spring whose flow foretells scarcity and high prices; its hydrology and exact location are uncertain.",
+          "paragraph": 1,
+          "offset": 664,
+          "anchor": "Hungerbrünnlein",
+          "number": 5
+        },
+        {
+          "label": "year 1817",
+          "text": "A year remembered for hunger after the poor harvests of 1816. The teller uses that memory to date one reported appearance of the spring.",
+          "paragraph": 1,
+          "offset": 729,
+          "anchor": "year 1817",
+          "number": 6
+        }
+      ],
+      "places": [
+        {
+          "label": "Degermoos",
+          "url": "/folklore/locations/#place-degermoos"
+        },
+        {
+          "label": "Surb Valley",
+          "url": "/folklore/locations/#place-surb-valley"
+        },
+        {
+          "label": "Thalebach",
+          "url": "/folklore/locations/#place-thalebach"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Water rights and mills",
+          "url": "/folklore/themes/#theme-water-rights-and-mills"
+        },
+        {
+          "label": "Curses and wrongdoing",
+          "url": "/folklore/themes/#theme-curses-and-wrongdoing"
+        },
+        {
+          "label": "Omens and premonitions",
+          "url": "/folklore/themes/#theme-omens-and-premonitions"
+        }
+      ]
+    },
+    "ab64c4c2416b12fdc5fd4ea144bf167805af0162": {
+      "summary": "One spring is said to flow in years of war and scarcity. A second story ties the name of a castle spring to a watchman and his extraordinary thirst.",
+      "notes": [
+        {
+          "label": "Hinter der Mühle",
+          "text": "The name means ‘behind the mill.’ Rochholz locates the intermittent spring by the field name people in Hornussen used.",
+          "paragraph": 0,
+          "offset": 77,
+          "anchor": "Hinter der Mühle",
+          "number": 1
+        },
+        {
+          "label": "Wildbrunnen",
+          "text": "a ‘wild spring,’ especially one that flows irregularly or unpredictably; the Hornussen spring appears only in ominous years.",
+          "paragraph": 0,
+          "offset": 92,
+          "anchor": "Wildbrunnen",
+          "number": 2
+        },
+        {
+          "label": "Hungerbrunnen",
+          "text": "literally ‘hunger spring,’ an intermittent spring whose flow is interpreted as foretelling scarcity, war, or other hard times.",
+          "paragraph": 0,
+          "offset": 138,
+          "anchor": "Within living memory",
+          "number": 3
+        },
+        {
+          "label": "war and dearth",
+          "text": "Dearth means a shortage, especially of food. In this tradition the reappearance of water is a sign of lean times.",
+          "paragraph": 0,
+          "offset": 189,
+          "anchor": "war and dearth",
+          "number": 4
+        },
+        {
+          "label": "Sälibrunnen",
+          "text": "the spring associated with the Sälischloss and with Felix Säli's hereditary, extraordinary thirst; Brunnen means spring, fountain, or well.",
+          "paragraph": 1,
+          "offset": 29,
+          "anchor": "spring at the Sälischloss",
+          "number": 5
+        },
+        {
+          "label": "Sälischloss",
+          "text": "Säli Castle, the restored ruin whose watchman Felix Säli becomes the subject of the spring legend.",
+          "paragraph": 1,
+          "offset": 29,
+          "anchor": "Sälischloss",
+          "number": 6
+        },
+        {
+          "label": "Reformation period",
+          "text": "The sixteenth-century religious upheaval in which many Swiss communities adopted Protestant reforms. The phrase is used here to date the restoration, with the watchman’s appointment given as 1547.",
+          "paragraph": 1,
+          "offset": 167,
+          "anchor": "Reformation period",
+          "number": 7
+        },
+        {
+          "label": "Sälischlössli",
+          "text": "the diminutive Swiss German form ‘little Säli castle’; the account derives the ruin's name from Felix Säli and his descendants.",
+          "paragraph": 1,
+          "offset": 635,
+          "anchor": "Sälischlössli",
+          "number": 8
+        },
+        {
+          "label": "Zofingerchronik",
+          "text": "Rochholz’s abbreviated reference to a chronicle of Zofingen. The two numbers point readers to the part of that record he used.",
+          "paragraph": 1,
+          "offset": 677,
+          "anchor": "Zofingerchronik",
+          "number": 9
+        }
+      ],
+      "places": [
+        {
+          "label": "Hornussen",
+          "url": "/folklore/locations/#place-hornussen"
+        },
+        {
+          "label": "Fricktal",
+          "url": "/folklore/locations/#place-fricktal"
+        },
+        {
+          "label": "Sälischlössli",
+          "url": "/folklore/locations/#place-salischlossli"
+        },
+        {
+          "label": "Olten",
+          "url": "/folklore/locations/#place-olten"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Omens and premonitions",
+          "url": "/folklore/themes/#theme-omens-and-premonitions"
+        },
+        {
+          "label": "Castles and lordship",
+          "url": "/folklore/themes/#theme-castles-and-lordship"
+        },
+        {
+          "label": "Origins of landmarks",
+          "url": "/folklore/themes/#theme-origins-of-landmarks"
+        }
+      ]
+    },
+    "5dbbb4ca07221a731ca9f05249a4651f38f02e2e": {
+      "summary": "Water keeps falling from a ceiling even after it is rebuilt. The neighbors connect the haunting and a later fire to an old oath about rights to water.",
+      "notes": [
+        {
+          "label": "a strong quarter-hour",
+          "text": "An estimate in travel time. A ‘strong’ quarter-hour is a little more than fifteen minutes, in this account from Bötzberg.",
+          "paragraph": 0,
+          "offset": 90,
+          "anchor": "a strong quarter-hour",
+          "number": 1
+        },
+        {
+          "label": "Ofenkunst",
+          "text": "the heated bench or platform built around a masonry room stove in Swiss houses, used for sitting, resting, or sleeping; the family eats there under an umbrella, but the exact stove design is unstated.",
+          "paragraph": 1,
+          "offset": 335,
+          "anchor": "Ofenkunst",
+          "number": 2
+        },
+        {
+          "label": "Härdöpfelbräusi",
+          "text": "an Aargau Swiss German potato dish, approximately browned, roasted, or pan-fried potatoes; the text identifies the food struck by the water, while recipes and consistency vary locally.",
+          "paragraph": 1,
+          "offset": 429,
+          "anchor": "Härdöpfelbräusi",
+          "number": 3
+        },
+        {
+          "label": "charcoal pan",
+          "text": "A container for hot coals used here to dry wet bedding. Finding water in the pan makes the haunting interfere with an everyday household remedy.",
+          "paragraph": 1,
+          "offset": 447,
+          "anchor": "charcoal pan",
+          "number": 4
+        },
+        {
+          "label": "Traditional water use in Switzerland",
+          "text": "Access to water could be allocated among households or farms. Here the oath concerns a particular right, and the neighbors interpret the disturbances as punishment for swearing falsely.",
+          "paragraph": 1,
+          "offset": 927,
+          "anchor": "sworn an oath",
+          "source": {
+            "label": "Swiss Inventory of Living Traditions",
+            "url": "https://www.lebendige-traditionen.ch/de/waessermatten"
+          },
+          "number": 5
+        },
+        {
+          "label": "Wässerrecht",
+          "text": "a customary or legal right to take, channel, and use water for irrigating particular land, often according to a local schedule; here a false oath over such a right is blamed for the haunting, though the disputed arrangement is not described.",
+          "paragraph": 1,
+          "offset": 977,
+          "anchor": "Wässerrecht",
+          "number": 6
+        }
+      ],
+      "places": [
+        {
+          "label": "Ursprung",
+          "url": "/folklore/locations/#place-ursprung"
+        },
+        {
+          "label": "Bötzberg",
+          "url": "/folklore/locations/#place-botzberg"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Water rights and mills",
+          "url": "/folklore/themes/#theme-water-rights-and-mills"
+        },
+        {
+          "label": "Curses and wrongdoing",
+          "url": "/folklore/themes/#theme-curses-and-wrongdoing"
+        },
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        }
+      ]
+    },
+    "34038eddddbc582d925e2bac7065aa6bda6fed6d": {
+      "summary": "A churchgoer sees a farmer working in the irrigation ditches and then sees him inside the church. The congregation insists the man was there the whole morning.",
+      "notes": [
+        {
+          "label": "Suhre",
+          "text": "The Suhre flows through the valley that bears its name. The path from Staffelbach to Schöftland follows the river past the irrigated meadows.",
+          "paragraph": 0,
+          "offset": 174,
+          "anchor": "Suhre",
+          "number": 1
+        },
+        {
+          "label": "contrary to all custom",
+          "text": "The man appears to be doing fieldwork during Sunday worship. His work clothes and his later appearance in a Sunday coat help make the two sightings seem incompatible.",
+          "paragraph": 0,
+          "offset": 291,
+          "anchor": "contrary to all custom",
+          "number": 2
+        },
+        {
+          "label": "repairing the meadow ditches",
+          "text": "Farmers on the Swiss Plateau once used networks of ditches and gates to guide stream water through meadows. In the tale the work is familiar enough for the walker to recognize it at once.",
+          "paragraph": 0,
+          "offset": 326,
+          "anchor": "repairing the meadow ditches",
+          "source": {
+            "label": "Swiss Inventory of Living Traditions",
+            "url": "https://www.lebendige-traditionen.ch/de/waessermatten"
+          },
+          "number": 3
+        },
+        {
+          "label": "Wässermann",
+          "text": "literally ‘water man,’ a water-associated supernatural figure; here the name is applied uncertainly to the silent working double seen beside the Suhre while the real farmer is in church.",
+          "paragraph": 1,
+          "offset": 509,
+          "anchor": "Wässermann",
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Staffelbach",
+          "url": "/folklore/locations/#place-staffelbach"
+        },
+        {
+          "label": "Schöftland",
+          "url": "/folklore/locations/#place-schoftland"
+        },
+        {
+          "label": "Suhre",
+          "url": "/folklore/locations/#place-suhre"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Water rights and mills",
+          "url": "/folklore/themes/#theme-water-rights-and-mills"
+        },
+        {
+          "label": "Doubles and apparitions",
+          "url": "/folklore/themes/#theme-doubles-and-apparitions"
+        }
+      ]
+    },
+    "507a2de96f6647a3359b25e46175f394dabe5c3e": {
+      "summary": "A farmer fills in a well. After his death, strange disturbances center on the stove and water in the house until his heirs call in the authorities.",
+      "notes": [
+        {
+          "label": "Fricktal",
+          "text": "A region of northern Aargau along the Upper Rhine. Rochholz identifies the district and leaves the village unnamed.",
+          "paragraph": 0,
+          "offset": 28,
+          "anchor": "Fricktal",
+          "source": {
+            "label": "Historical Dictionary of Switzerland",
+            "url": "https://hls-dhs-dss.ch/de/articles/008297/2006-11-09/"
+          },
+          "number": 1
+        },
+        {
+          "label": "filled in a well",
+          "text": "Closing a well destroys a source of water. The first sentence makes the act deliberate, and water’s behavior in the house links the haunting back to it.",
+          "paragraph": 0,
+          "offset": 71,
+          "anchor": "filled in a well",
+          "number": 2
+        },
+        {
+          "label": "parlor stove",
+          "text": "In this account the stove is in the main heated living space. The groaning happens where the household would ordinarily gather.",
+          "paragraph": 0,
+          "offset": 159,
+          "anchor": "parlor stove",
+          "number": 3
+        },
+        {
+          "label": "reported them to the court",
+          "text": "The officials appear as witnesses to the destruction of the building. That detail gives the ending the form of a public report.",
+          "paragraph": 0,
+          "offset": 430,
+          "anchor": "reported them to the court",
+          "number": 4
+        }
+      ],
+      "places": [
+        {
+          "label": "Fricktal",
+          "url": "/folklore/locations/#place-fricktal"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Water rights and mills",
+          "url": "/folklore/themes/#theme-water-rights-and-mills"
+        },
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        },
+        {
+          "label": "Curses and wrongdoing",
+          "url": "/folklore/themes/#theme-curses-and-wrongdoing"
+        }
+      ]
+    },
+    "46c1e0af9c1903d196641674db543ffe4909c64f": {
+      "summary": "A ferryman takes a silent passenger across the Rhine in one account and a mysterious log in another. Each crossing ends with a sign of fire.",
+      "notes": [
+        {
+          "label": "far bank of the Rhine",
+          "text": "The Rhine forms the border along this stretch. Small ferries, such as those placed here and near Hauenstein, linked the settlements along it.",
+          "paragraph": 0,
+          "offset": 75,
+          "anchor": "far bank of the Rhine",
+          "number": 1
+        },
+        {
+          "label": "boat pole",
+          "text": "A pole used to push or guide a boat where the bottom can be reached. The ferryman offers it in place of his hand, and it becomes the object that bears the burn marks.",
+          "paragraph": 1,
+          "offset": 135,
+          "anchor": "boat pole",
+          "number": 2
+        },
+        {
+          "label": "Weidling",
+          "text": "a traditional flat-bottomed boat used on Swiss rivers, especially for ferrying, fishing, and transport; ‘river skiff’ is close, but its precise size and construction varied by place and purpose.",
+          "paragraph": 2,
+          "offset": 343,
+          "anchor": "Weidling",
+          "number": 3
+        },
+        {
+          "label": "You have redeemed me, Fritz",
+          "text": "In this version, the ferryman’s act releases the figure from an unknown obligation. The story leaves the reason for the haunting open.",
+          "paragraph": 2,
+          "offset": 510,
+          "anchor": "You have redeemed me, Fritz",
+          "number": 4
+        },
+        {
+          "label": "A. Birrcher in Laufenburg",
+          "text": "Rochholz names where one account came from. He then points to a similar version told about another ferry nearby.",
+          "paragraph": 2,
+          "offset": 592,
+          "anchor": "A. Birrcher in Laufenburg",
+          "number": 5
+        }
+      ],
+      "places": [
+        {
+          "label": "Rheinsulz",
+          "url": "/folklore/locations/#place-rheinsulz"
+        },
+        {
+          "label": "Etzgen",
+          "url": "/folklore/locations/#place-etzgen"
+        },
+        {
+          "label": "Rhine",
+          "url": "/folklore/locations/#place-rhine"
+        },
+        {
+          "label": "Hauenstein",
+          "url": "/folklore/locations/#place-hauenstein"
+        },
+        {
+          "label": "Laufenburg",
+          "url": "/folklore/locations/#place-laufenburg"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        },
+        {
+          "label": "Doubles and apparitions",
+          "url": "/folklore/themes/#theme-doubles-and-apparitions"
+        }
+      ]
+    },
+    "95dcd7188a663a3c9f4e4445a863e9cf79c999e8": {
+      "summary": "A figure like glowing embers steals a brandy keg and crosses the Reuss. The tale ties similar encounters to familiar landmarks on the riverbank.",
+      "notes": [
+        {
+          "label": "Mühlerain",
+          "text": "The German name combines a word for a mill with one for a slope or bank. Rochholz places the encounter above the Reuss near Linnmühle, whose name also contains ‘mill.’",
+          "paragraph": 0,
+          "offset": 46,
+          "anchor": "Mühlerain",
+          "number": 1
+        },
+        {
+          "label": "a little keg of brandy",
+          "text": "The same drink is later called schnapps. It is a distilled spirit, which makes the detail about the keg surviving the fiery figure part of the marvel.",
+          "paragraph": 1,
+          "offset": 45,
+          "anchor": "a little keg of brandy",
+          "number": 2
+        },
+        {
+          "label": "Hutte",
+          "text": "a traditional Swiss back-carrier, often a wooden-framed basket or carrying frame; here it supports the keg and should not be understood as the German word Hütte, meaning a hut.",
+          "paragraph": 1,
+          "offset": 86,
+          "anchor": "Hutte",
+          "number": 3
+        },
+        {
+          "label": "wade through the river",
+          "text": "The figure passes through the moving water without losing its fire. The story uses that impossibility as evidence that the robber is something other than an ordinary thief.",
+          "paragraph": 1,
+          "offset": 607,
+          "anchor": "wade through the river",
+          "number": 4
+        },
+        {
+          "label": "Müllers Reben",
+          "text": "literally ‘the miller’s vines,’ the local name given to the farmland above the Linnmühle; it functions as a place-name in the account.",
+          "paragraph": 1,
+          "offset": 806,
+          "anchor": "Müllers Reben",
+          "number": 5
+        }
+      ],
+      "places": [
+        {
+          "label": "Reuss",
+          "url": "/folklore/locations/#place-reuss"
+        },
+        {
+          "label": "Linnmühle",
+          "url": "/folklore/locations/#place-linnmuhle"
+        },
+        {
+          "label": "Birmenstorf",
+          "url": "/folklore/locations/#place-birmenstorf"
+        },
+        {
+          "label": "Muntwil",
+          "url": "/folklore/locations/#place-muntwil"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Haunted waters",
+          "url": "/folklore/themes/#theme-haunted-waters"
+        },
+        {
+          "label": "Doubles and apparitions",
+          "url": "/folklore/themes/#theme-doubles-and-apparitions"
+        }
+      ]
+    },
+    "434e1c6212cefb2c179cebaefb73d062fb021de8": {
+      "summary": "A goatherd reads a book aloud and finds a bottle of wine on the table. A Capuchin hears his story and says where the wine came from.",
+      "notes": [
+        {
+          "label": "Geistliche Schild",
+          "text": "The title means ‘Spiritual Shield.’ A surviving work with the same title groups prayers and blessings with protective charms, a combination that helps explain the book’s place in the tale.",
+          "paragraph": 0,
+          "offset": 58,
+          "anchor": "Geistliche Schild",
+          "source": {
+            "label": "Museum of Witchcraft and Magic catalogue",
+            "url": "https://museumofwitchcraftandmagic.co.uk/object/the-spiritual-or-religious-shield-geistlicher-schild-a-book-of-prayers-hours-and-devotion-together-with-religious-and-magical-formulae/"
+          },
+          "number": 1
+        },
+        {
+          "label": "clearly pronouncing every word",
+          "text": "Reading in this story has a physical effect. The collector draws attention to the boy sounding out the words before the wine appears.",
+          "paragraph": 0,
+          "offset": 247,
+          "anchor": "clearly pronouncing every word",
+          "number": 2
+        },
+        {
+          "label": "straw-covered bottle",
+          "text": "A straw covering protected a large glass bottle from knocks. The wine arrives in a container that would have been familiar to the teller.",
+          "paragraph": 0,
+          "offset": 331,
+          "anchor": "straw-covered bottle",
+          "number": 3
+        },
+        {
+          "label": "Capuchin",
+          "text": "A friar from a Catholic branch of the Franciscan order. Capuchins established a house at Altdorf in Uri in 1581, near the valley where this tale was collected.",
+          "paragraph": 0,
+          "offset": 591,
+          "anchor": "Capuchin",
+          "source": {
+            "label": "History of the Swiss Capuchins",
+            "url": "https://kapuziner.ch/geschichte"
+          },
+          "number": 4
+        },
+        {
+          "label": "Heinrich Baumann",
+          "text": "The name, age, and village identify the person from whom the collector recorded the story.",
+          "paragraph": 1,
+          "offset": 16,
+          "anchor": "Heinrich Baumann",
+          "number": 5
+        },
+        {
+          "label": "Attinghausen",
+          "text": "A village in Uri, near Altdorf in the Reuss Valley. Müller records it as the teller’s home.",
+          "paragraph": 1,
+          "offset": 44,
+          "anchor": "Attinghausen",
+          "number": 6
+        }
+      ],
+      "places": [
+        {
+          "label": "Attinghausen",
+          "url": "/folklore/locations/#place-attinghausen"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Magic books",
+          "url": "/folklore/themes/#theme-magic-books"
+        }
+      ]
+    },
+    "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a": {
+      "summary": "Three hungry boys use a book to go unseen into the priest’s barn for milk foam. Their mother and the collector have different views about what the boys should have done.",
+      "notes": [
+        {
+          "label": "Up on the Mountain",
+          "text": "The local expression is glossed in the source as Seelisberg, a village above Lake Lucerne in Uri.",
+          "paragraph": 0,
+          "offset": 19,
+          "anchor": "Up on the Mountain",
+          "number": 1
+        },
+        {
+          "label": "Ruossdiele",
+          "text": "A local word or name left in the translation. The teller immediately follows it with a joke about where the book came from, leaving its exact origin uncertain.",
+          "paragraph": 0,
+          "offset": 118,
+          "anchor": "Ruossdiele",
+          "number": 2
+        },
+        {
+          "label": "the cuckoo knows where",
+          "text": "An idiom like ‘who knows where.’ It leaves the place where the boys found the book deliberately vague.",
+          "paragraph": 0,
+          "offset": 144,
+          "anchor": "the cuckoo knows where",
+          "number": 3
+        },
+        {
+          "label": "foam from the freshly drawn milk",
+          "text": "Fresh milk can froth while it is being drawn. The boys skim only the foam, a small amount of food that later matters to the discussion about theft.",
+          "paragraph": 0,
+          "offset": 361,
+          "anchor": "foam from the freshly drawn milk",
+          "number": 4
+        },
+        {
+          "label": "Peter Anton Furrer",
+          "text": "The story names the priest and gives his death year as 1883. His estate and herd explain why the boys know where to find fresh milk.",
+          "paragraph": 0,
+          "offset": 447,
+          "anchor": "Peter Anton Furrer",
+          "number": 5
+        },
+        {
+          "label": "schoolbook said",
+          "text": "The narrator remembers a moral lesson about small acts leading to bigger ones. The adage explains how the family understood the danger of keeping the book.",
+          "paragraph": 2,
+          "offset": 299,
+          "anchor": "schoolbook said",
+          "number": 6
+        },
+        {
+          "label": "Jos. Maria Aschwanden",
+          "text": "The name and age identify the teller. The first-person exchange before the attribution records a conversation between him and the collector.",
+          "paragraph": 3,
+          "offset": 21,
+          "anchor": "Jos. Maria Aschwanden",
+          "number": 7
+        }
+      ],
+      "places": [
+        {
+          "label": "Seelisberg",
+          "url": "/folklore/locations/#place-seelisberg"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Magic books",
+          "url": "/folklore/themes/#theme-magic-books"
+        },
+        {
+          "label": "Hunger and poverty",
+          "url": "/folklore/themes/#theme-hunger-and-poverty"
+        },
+        {
+          "label": "Curses and wrongdoing",
+          "url": "/folklore/themes/#theme-curses-and-wrongdoing"
+        }
+      ]
+    },
+    "fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f": {
+      "summary": "A priest refuses to absolve a man who keeps a magic book. The two later take shelter together in a hut, where the book unexpectedly protects them.",
+      "notes": [
+        {
+          "label": "Geistlicher Schild",
+          "text": "literally ‘Clerical Shield,’ the name given here to an occult protective book used to immobilize the robbers; the story also calls it a Zauberbuch, or magic book, but does not identify a particular historical text.",
+          "paragraph": 0,
+          "offset": 38,
+          "anchor": "Geistlicher Schild",
+          "source": {
+            "label": "Museum of Witchcraft and Magic catalogue",
+            "url": "https://museumofwitchcraftandmagic.co.uk/object/the-spiritual-or-religious-shield-geistlicher-schild-a-book-of-prayers-hours-and-devotion-together-with-religious-and-magical-formulae/"
+          },
+          "number": 1
+        },
+        {
+          "label": "confession",
+          "text": "In Catholic practice, a person tells a priest about sins in the sacrament of penance. The dispute is over whether the owner will give up what the priest considers the source of wrongdoing.",
+          "paragraph": 0,
+          "offset": 72,
+          "anchor": "confession",
+          "number": 2
+        },
+        {
+          "label": "absolution",
+          "text": "The priest’s declaration of forgiveness in the sacrament. In the tale he withholds it when the owner refuses to surrender the book.",
+          "paragraph": 0,
+          "offset": 306,
+          "anchor": "absolution",
+          "number": 3
+        },
+        {
+          "label": "Wassnerwald",
+          "text": "The local name refers to the woods associated with Wassen in Uri. Silenen, named at the end, is where the teller came from.",
+          "paragraph": 1,
+          "offset": 77,
+          "anchor": "Wassnerwald",
+          "number": 4
+        },
+        {
+          "label": "Gädemli",
+          "text": "a Swiss German diminutive for a small Gaden—typically a barn, shed, storehouse, or simple farm outbuilding; here it proves to be a robbers’ hut beside the road, but its exact construction is not described.",
+          "paragraph": 1,
+          "offset": 510,
+          "anchor": "Gädemli",
+          "number": 5
+        },
+        {
+          "label": "lay companion",
+          "text": "The man is a layperson, meaning he is outside the clergy. The contrast matters here because the priest now depends on the man’s book for protection.",
+          "paragraph": 1,
+          "offset": 725,
+          "anchor": "lay companion",
+          "number": 6
+        },
+        {
+          "label": "Jos. Maria Tresch",
+          "text": "The signature gives the name, age, and locality of the teller whose account Müller recorded.",
+          "paragraph": 3,
+          "offset": 17,
+          "anchor": "Jos. Maria Tresch",
+          "number": 7
+        }
+      ],
+      "places": [
+        {
+          "label": "Wassen",
+          "url": "/folklore/locations/#place-wassen"
+        },
+        {
+          "label": "Silenen",
+          "url": "/folklore/locations/#place-silenen"
+        }
+      ],
+      "themes": [
+        {
+          "label": "Magic books",
+          "url": "/folklore/themes/#theme-magic-books"
+        },
+        {
+          "label": "Curses and wrongdoing",
+          "url": "/folklore/themes/#theme-curses-and-wrongdoing"
+        }
+      ]
+    }
+  },
+  "places": [
+    {
+      "id": "place-aarau",
+      "label": "Aarau",
+      "stories": [
+        {
+          "title": "Aarau's Town Brook",
+          "url": "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/"
+        },
+        {
+          "title": "The Three Sisters in the Eithal",
+          "url": "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/"
+        }
+      ]
+    },
+    {
+      "id": "place-aarburg-castle",
+      "label": "Aarburg Castle",
+      "stories": [
+        {
+          "title": "The Ring at Aarburg Castle",
+          "url": "/folklore/stories/7c0af6230ecf47e8d666b811b3986befb4b3bd2f/"
+        }
+      ]
+    },
+    {
+      "id": "place-aare",
+      "label": "Aare",
+      "stories": [
+        {
+          "title": "Aarau's Town Brook",
+          "url": "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/"
+        },
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        },
+        {
+          "title": "The Ring at Aarburg Castle",
+          "url": "/folklore/stories/7c0af6230ecf47e8d666b811b3986befb4b3bd2f/"
+        }
+      ]
+    },
+    {
+      "id": "place-attinghausen",
+      "label": "Attinghausen",
+      "stories": [
+        {
+          "title": "Das Zauberbuch (The Magic Book)",
+          "url": "/folklore/stories/434e1c6212cefb2c179cebaefb73d062fb021de8/"
+        }
+      ]
+    },
+    {
+      "id": "place-bad-sackingen",
+      "label": "Bad Säckingen",
+      "stories": [
+        {
+          "title": "The Water Spirit near Seckingen",
+          "url": "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/"
+        }
+      ]
+    },
+    {
+      "id": "place-baden",
+      "label": "Baden",
+      "stories": [
+        {
+          "title": "The Discovery of the Healing Springs at Baden",
+          "url": "/folklore/stories/373b1522595312ccbeb34c116035b6b486501266/"
+        },
+        {
+          "title": "The Healed Helvetian Woman",
+          "url": "/folklore/stories/6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31/"
+        },
+        {
+          "title": "The Verena Bath in the City of Baden",
+          "url": "/folklore/stories/2eb4a90445992e00671bd9a64d5c67836b8f0804/"
+        }
+      ]
+    },
+    {
+      "id": "place-beinwil",
+      "label": "Beinwil",
+      "stories": [
+        {
+          "title": "Swimmer Willi of Meisterschwanden",
+          "url": "/folklore/stories/7c64393689728a58687d3935b618c5996950ba1a/"
+        },
+        {
+          "title": "The Bridal Voyage on Lake Hallwil",
+          "url": "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+        }
+      ]
+    },
+    {
+      "id": "place-bettwil",
+      "label": "Bettwil",
+      "stories": [
+        {
+          "title": "The Schongau Baths on the Lindenberg",
+          "url": "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/"
+        }
+      ]
+    },
+    {
+      "id": "place-birmenstorf",
+      "label": "Birmenstorf",
+      "stories": [
+        {
+          "title": "The Burning Robber in the Reuss",
+          "url": "/folklore/stories/95dcd7188a663a3c9f4e4445a863e9cf79c999e8/"
+        },
+        {
+          "title": "The Discovery of the Healing Springs at Baden",
+          "url": "/folklore/stories/373b1522595312ccbeb34c116035b6b486501266/"
+        }
+      ]
+    },
+    {
+      "id": "place-boswil",
+      "label": "Boswil",
+      "stories": [
+        {
+          "title": "The Schongau Baths on the Lindenberg",
+          "url": "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/"
+        }
+      ]
+    },
+    {
+      "id": "place-botzberg",
+      "label": "Bötzberg",
+      "stories": [
+        {
+          "title": "The Healed Helvetian Woman",
+          "url": "/folklore/stories/6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31/"
+        },
+        {
+          "title": "Wässerrecht at Ursprung",
+          "url": "/folklore/stories/5dbbb4ca07221a731ca9f05249a4651f38f02e2e/"
+        }
+      ]
+    },
+    {
+      "id": "place-butz",
+      "label": "Bütz",
+      "stories": [
+        {
+          "title": "The Interrupted Ride",
+          "url": "/folklore/stories/034cdca9ccd37d16e4c8018009368915aad972ba/"
+        }
+      ]
+    },
+    {
+      "id": "place-degermoos",
+      "label": "Degermoos",
+      "stories": [
+        {
+          "title": "The Hunger Spring at Degermoos",
+          "url": "/folklore/stories/40314b4af9266133a774f57ed6692cede664c5d9/"
+        }
+      ]
+    },
+    {
+      "id": "place-egelsee",
+      "label": "Egelsee",
+      "stories": [
+        {
+          "title": "Egelsee on the Heitersberg",
+          "url": "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/"
+        }
+      ]
+    },
+    {
+      "id": "place-einsiedeln",
+      "label": "Einsiedeln",
+      "stories": [
+        {
+          "title": "The Springs of the Schafmatt",
+          "url": "/folklore/stories/6aeb8c528735636a5627a29275a5788c9764d2f8/"
+        }
+      ]
+    },
+    {
+      "id": "place-eithal",
+      "label": "Eithal",
+      "stories": [
+        {
+          "title": "The Three Sisters in the Eithal",
+          "url": "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/"
+        }
+      ]
+    },
+    {
+      "id": "place-ergolz",
+      "label": "Ergolz",
+      "stories": [
+        {
+          "title": "The Three Sisters in the Eithal",
+          "url": "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/"
+        }
+      ]
+    },
+    {
+      "id": "place-etzgen",
+      "label": "Etzgen",
+      "stories": [
+        {
+          "title": "The Fiery Man at the Etzgen Ferry",
+          "url": "/folklore/stories/46c1e0af9c1903d196641674db543ffe4909c64f/"
+        }
+      ]
+    },
+    {
+      "id": "place-fahrwangen",
+      "label": "Fahrwangen",
+      "stories": [
+        {
+          "title": "The Bridal Voyage on Lake Hallwil",
+          "url": "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+        }
+      ]
+    },
+    {
+      "id": "place-fricktal",
+      "label": "Fricktal",
+      "stories": [
+        {
+          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "url": "/folklore/stories/ab64c4c2416b12fdc5fd4ea144bf167805af0162/"
+        },
+        {
+          "title": "The Buried Well",
+          "url": "/folklore/stories/507a2de96f6647a3359b25e46175f394dabe5c3e/"
+        },
+        {
+          "title": "The Water Spirit near Seckingen",
+          "url": "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/"
+        }
+      ]
+    },
+    {
+      "id": "place-gansingen",
+      "label": "Gansingen",
+      "stories": [
+        {
+          "title": "The Interrupted Ride",
+          "url": "/folklore/stories/034cdca9ccd37d16e4c8018009368915aad972ba/"
+        }
+      ]
+    },
+    {
+      "id": "place-hauenstein",
+      "label": "Hauenstein",
+      "stories": [
+        {
+          "title": "The Fiery Man at the Etzgen Ferry",
+          "url": "/folklore/stories/46c1e0af9c1903d196641674db543ffe4909c64f/"
+        }
+      ]
+    },
+    {
+      "id": "place-heidegg-castle",
+      "label": "Heidegg Castle",
+      "stories": [
+        {
+          "title": "Bertha of Baldegg",
+          "url": "/folklore/stories/1e90ecf18f18fa3b30d4db9aee8d2285208bc294/"
+        }
+      ]
+    },
+    {
+      "id": "place-heitersberg",
+      "label": "Heitersberg",
+      "stories": [
+        {
+          "title": "Egelsee on the Heitersberg",
+          "url": "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/"
+        }
+      ]
+    },
+    {
+      "id": "place-hitzkirch",
+      "label": "Hitzkirch",
+      "stories": [
+        {
+          "title": "The Schongau Baths on the Lindenberg",
+          "url": "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/"
+        }
+      ]
+    },
+    {
+      "id": "place-hornussen",
+      "label": "Hornussen",
+      "stories": [
+        {
+          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "url": "/folklore/stories/ab64c4c2416b12fdc5fd4ea144bf167805af0162/"
+        },
+        {
+          "title": "The Water Spirit near Seckingen",
+          "url": "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/"
+        }
+      ]
+    },
+    {
+      "id": "place-kirchbuhl",
+      "label": "Kirchbühl",
+      "stories": [
+        {
+          "title": "The Heiterechsee near Muri",
+          "url": "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/"
+        }
+      ]
+    },
+    {
+      "id": "place-klingnau",
+      "label": "Klingnau",
+      "stories": [
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        }
+      ]
+    },
+    {
+      "id": "place-koblenz",
+      "label": "Koblenz",
+      "stories": [
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        }
+      ]
+    },
+    {
+      "id": "place-kuttigen",
+      "label": "Küttigen",
+      "stories": [
+        {
+          "title": "Aarau's Town Brook",
+          "url": "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/"
+        }
+      ]
+    },
+    {
+      "id": "place-lake-baldegg",
+      "label": "Lake Baldegg",
+      "stories": [
+        {
+          "title": "Bertha of Baldegg",
+          "url": "/folklore/stories/1e90ecf18f18fa3b30d4db9aee8d2285208bc294/"
+        }
+      ]
+    },
+    {
+      "id": "place-lake-hallwil",
+      "label": "Lake Hallwil",
+      "stories": [
+        {
+          "title": "Bertha of Baldegg",
+          "url": "/folklore/stories/1e90ecf18f18fa3b30d4db9aee8d2285208bc294/"
+        },
+        {
+          "title": "Swimmer Willi of Meisterschwanden",
+          "url": "/folklore/stories/7c64393689728a58687d3935b618c5996950ba1a/"
+        },
+        {
+          "title": "The Bridal Voyage on Lake Hallwil",
+          "url": "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+        }
+      ]
+    },
+    {
+      "id": "place-laufenburg",
+      "label": "Laufenburg",
+      "stories": [
+        {
+          "title": "The Fiery Man at the Etzgen Ferry",
+          "url": "/folklore/stories/46c1e0af9c1903d196641674db543ffe4909c64f/"
+        },
+        {
+          "title": "The Two Lights of Life",
+          "url": "/folklore/stories/7789e358737b8edee35538b428ecc4ede00ba46f/"
+        }
+      ]
+    },
+    {
+      "id": "place-leidiken",
+      "label": "Leidiken",
+      "stories": [
+        {
+          "title": "The Interrupted Ride",
+          "url": "/folklore/stories/034cdca9ccd37d16e4c8018009368915aad972ba/"
+        }
+      ]
+    },
+    {
+      "id": "place-lieli",
+      "label": "Lieli",
+      "stories": [
+        {
+          "title": "Bertha of Baldegg",
+          "url": "/folklore/stories/1e90ecf18f18fa3b30d4db9aee8d2285208bc294/"
+        }
+      ]
+    },
+    {
+      "id": "place-limmat",
+      "label": "Limmat",
+      "stories": [
+        {
+          "title": "The Discovery of the Healing Springs at Baden",
+          "url": "/folklore/stories/373b1522595312ccbeb34c116035b6b486501266/"
+        }
+      ]
+    },
+    {
+      "id": "place-lindenberg",
+      "label": "Lindenberg",
+      "stories": [
+        {
+          "title": "The Schongau Baths on the Lindenberg",
+          "url": "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/"
+        }
+      ]
+    },
+    {
+      "id": "place-linnmuhle",
+      "label": "Linnmühle",
+      "stories": [
+        {
+          "title": "The Burning Robber in the Reuss",
+          "url": "/folklore/stories/95dcd7188a663a3c9f4e4445a863e9cf79c999e8/"
+        }
+      ]
+    },
+    {
+      "id": "place-maiholz",
+      "label": "Maiholz",
+      "stories": [
+        {
+          "title": "The Heiterechsee near Muri",
+          "url": "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/"
+        }
+      ]
+    },
+    {
+      "id": "place-meisterschwanden",
+      "label": "Meisterschwanden",
+      "stories": [
+        {
+          "title": "Swimmer Willi of Meisterschwanden",
+          "url": "/folklore/stories/7c64393689728a58687d3935b618c5996950ba1a/"
+        },
+        {
+          "title": "The Bridal Voyage on Lake Hallwil",
+          "url": "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+        }
+      ]
+    },
+    {
+      "id": "place-muntwil",
+      "label": "Muntwil",
+      "stories": [
+        {
+          "title": "The Burning Robber in the Reuss",
+          "url": "/folklore/stories/95dcd7188a663a3c9f4e4445a863e9cf79c999e8/"
+        }
+      ]
+    },
+    {
+      "id": "place-muri",
+      "label": "Muri",
+      "stories": [
+        {
+          "title": "The Heiterechsee near Muri",
+          "url": "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/"
+        }
+      ]
+    },
+    {
+      "id": "place-olsberg",
+      "label": "Olsberg",
+      "stories": [
+        {
+          "title": "The Well in Olsberg",
+          "url": "/folklore/stories/52e148ff2a5760247de1f0ef6affad49ecd86770/"
+        }
+      ]
+    },
+    {
+      "id": "place-olten",
+      "label": "Olten",
+      "stories": [
+        {
+          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "url": "/folklore/stories/ab64c4c2416b12fdc5fd4ea144bf167805af0162/"
+        }
+      ]
+    },
+    {
+      "id": "place-oltingen",
+      "label": "Oltingen",
+      "stories": [
+        {
+          "title": "The Springs of the Schafmatt",
+          "url": "/folklore/stories/6aeb8c528735636a5627a29275a5788c9764d2f8/"
+        }
+      ]
+    },
+    {
+      "id": "place-reinach",
+      "label": "Reinach",
+      "stories": [
+        {
+          "title": "The Bridal Voyage on Lake Hallwil",
+          "url": "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+        }
+      ]
+    },
+    {
+      "id": "place-reuss",
+      "label": "Reuss",
+      "stories": [
+        {
+          "title": "Egelsee on the Heitersberg",
+          "url": "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/"
+        },
+        {
+          "title": "The Burning Robber in the Reuss",
+          "url": "/folklore/stories/95dcd7188a663a3c9f4e4445a863e9cf79c999e8/"
+        }
+      ]
+    },
+    {
+      "id": "place-rheinsulz",
+      "label": "Rheinsulz",
+      "stories": [
+        {
+          "title": "The Fiery Man at the Etzgen Ferry",
+          "url": "/folklore/stories/46c1e0af9c1903d196641674db543ffe4909c64f/"
+        }
+      ]
+    },
+    {
+      "id": "place-rhine",
+      "label": "Rhine",
+      "stories": [
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        },
+        {
+          "title": "The Fiery Man at the Etzgen Ferry",
+          "url": "/folklore/stories/46c1e0af9c1903d196641674db543ffe4909c64f/"
+        },
+        {
+          "title": "The Water Spirit near Seckingen",
+          "url": "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/"
+        }
+      ]
+    },
+    {
+      "id": "place-schafmatt",
+      "label": "Schafmatt",
+      "stories": [
+        {
+          "title": "The Springs of the Schafmatt",
+          "url": "/folklore/stories/6aeb8c528735636a5627a29275a5788c9764d2f8/"
+        }
+      ]
+    },
+    {
+      "id": "place-schongau",
+      "label": "Schongau",
+      "stories": [
+        {
+          "title": "The Schongau Baths on the Lindenberg",
+          "url": "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/"
+        }
+      ]
+    },
+    {
+      "id": "place-schanis",
+      "label": "Schänis",
+      "stories": [
+        {
+          "title": "Aarau's Town Brook",
+          "url": "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/"
+        }
+      ]
+    },
+    {
+      "id": "place-schoftland",
+      "label": "Schöftland",
+      "stories": [
+        {
+          "title": "The Wässermann at Staffelbach",
+          "url": "/folklore/stories/34038eddddbc582d925e2bac7065aa6bda6fed6d/"
+        }
+      ]
+    },
+    {
+      "id": "place-seelisberg",
+      "label": "Seelisberg",
+      "stories": [
+        {
+          "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
+          "url": "/folklore/stories/6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a/"
+        }
+      ]
+    },
+    {
+      "id": "place-silenen",
+      "label": "Silenen",
+      "stories": [
+        {
+          "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
+          "url": "/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/"
+        }
+      ]
+    },
+    {
+      "id": "place-sins",
+      "label": "Sins",
+      "stories": [
+        {
+          "title": "The Heiterechsee near Muri",
+          "url": "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/"
+        }
+      ]
+    },
+    {
+      "id": "place-solothurn",
+      "label": "Solothurn",
+      "stories": [
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        }
+      ]
+    },
+    {
+      "id": "place-staffelbach",
+      "label": "Staffelbach",
+      "stories": [
+        {
+          "title": "The Wässermann at Staffelbach",
+          "url": "/folklore/stories/34038eddddbc582d925e2bac7065aa6bda6fed6d/"
+        }
+      ]
+    },
+    {
+      "id": "place-suhr",
+      "label": "Suhr",
+      "stories": [
+        {
+          "title": "Aarau's Town Brook",
+          "url": "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/"
+        }
+      ]
+    },
+    {
+      "id": "place-suhre",
+      "label": "Suhre",
+      "stories": [
+        {
+          "title": "The Wässermann at Staffelbach",
+          "url": "/folklore/stories/34038eddddbc582d925e2bac7065aa6bda6fed6d/"
+        }
+      ]
+    },
+    {
+      "id": "place-sulz-valley",
+      "label": "Sulz Valley",
+      "stories": [
+        {
+          "title": "The Interrupted Ride",
+          "url": "/folklore/stories/034cdca9ccd37d16e4c8018009368915aad972ba/"
+        }
+      ]
+    },
+    {
+      "id": "place-surb-valley",
+      "label": "Surb Valley",
+      "stories": [
+        {
+          "title": "The Hunger Spring at Degermoos",
+          "url": "/folklore/stories/40314b4af9266133a774f57ed6692cede664c5d9/"
+        },
+        {
+          "title": "The Verena Bath in the City of Baden",
+          "url": "/folklore/stories/2eb4a90445992e00671bd9a64d5c67836b8f0804/"
+        }
+      ]
+    },
+    {
+      "id": "place-swabia",
+      "label": "Swabia",
+      "stories": [
+        {
+          "title": "The Two Lights of Life",
+          "url": "/folklore/stories/7789e358737b8edee35538b428ecc4ede00ba46f/"
+        }
+      ]
+    },
+    {
+      "id": "place-salischlossli",
+      "label": "Sälischlössli",
+      "stories": [
+        {
+          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "url": "/folklore/stories/ab64c4c2416b12fdc5fd4ea144bf167805af0162/"
+        }
+      ]
+    },
+    {
+      "id": "place-tecknau",
+      "label": "Tecknau",
+      "stories": [
+        {
+          "title": "The Three Sisters in the Eithal",
+          "url": "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/"
+        }
+      ]
+    },
+    {
+      "id": "place-thalebach",
+      "label": "Thalebach",
+      "stories": [
+        {
+          "title": "The Hunger Spring at Degermoos",
+          "url": "/folklore/stories/40314b4af9266133a774f57ed6692cede664c5d9/"
+        }
+      ]
+    },
+    {
+      "id": "place-ursprung",
+      "label": "Ursprung",
+      "stories": [
+        {
+          "title": "Wässerrecht at Ursprung",
+          "url": "/folklore/stories/5dbbb4ca07221a731ca9f05249a4651f38f02e2e/"
+        }
+      ]
+    },
+    {
+      "id": "place-wassen",
+      "label": "Wassen",
+      "stories": [
+        {
+          "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
+          "url": "/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/"
+        }
+      ]
+    },
+    {
+      "id": "place-weisstannen",
+      "label": "Weisstannen",
+      "stories": [
+        {
+          "title": "The Water Spirit near Seckingen",
+          "url": "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/"
+        }
+      ]
+    },
+    {
+      "id": "place-wettingen",
+      "label": "Wettingen",
+      "stories": [
+        {
+          "title": "Egelsee on the Heitersberg",
+          "url": "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/"
+        }
+      ]
+    },
+    {
+      "id": "place-wigger-valley",
+      "label": "Wigger Valley",
+      "stories": [
+        {
+          "title": "The Ring at Aarburg Castle",
+          "url": "/folklore/stories/7c0af6230ecf47e8d666b811b3986befb4b3bd2f/"
+        }
+      ]
+    },
+    {
+      "id": "place-windisch",
+      "label": "Windisch",
+      "stories": [
+        {
+          "title": "The Discovery of the Healing Springs at Baden",
+          "url": "/folklore/stories/373b1522595312ccbeb34c116035b6b486501266/"
+        }
+      ]
+    },
+    {
+      "id": "place-zeglingen",
+      "label": "Zeglingen",
+      "stories": [
+        {
+          "title": "The Springs of the Schafmatt",
+          "url": "/folklore/stories/6aeb8c528735636a5627a29275a5788c9764d2f8/"
+        }
+      ]
+    },
+    {
+      "id": "place-zofingen",
+      "label": "Zofingen",
+      "stories": [
+        {
+          "title": "The Ring at Aarburg Castle",
+          "url": "/folklore/stories/7c0af6230ecf47e8d666b811b3986befb4b3bd2f/"
+        }
+      ]
+    },
+    {
+      "id": "place-zurzach",
+      "label": "Zurzach",
+      "stories": [
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        },
+        {
+          "title": "The Verena Bath in the City of Baden",
+          "url": "/folklore/stories/2eb4a90445992e00671bd9a64d5c67836b8f0804/"
+        }
+      ]
+    }
+  ],
+  "themes": [
+    {
+      "id": "theme-birth-and-fertility",
+      "label": "Birth and fertility",
+      "stories": [
+        {
+          "title": "The Verena Bath in the City of Baden",
+          "url": "/folklore/stories/2eb4a90445992e00671bd9a64d5c67836b8f0804/"
+        }
+      ]
+    },
+    {
+      "id": "theme-castles-and-lordship",
+      "label": "Castles and lordship",
+      "stories": [
+        {
+          "title": "Bertha of Baldegg",
+          "url": "/folklore/stories/1e90ecf18f18fa3b30d4db9aee8d2285208bc294/"
+        },
+        {
+          "title": "Egelsee on the Heitersberg",
+          "url": "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/"
+        },
+        {
+          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "url": "/folklore/stories/ab64c4c2416b12fdc5fd4ea144bf167805af0162/"
+        },
+        {
+          "title": "The Heiterechsee near Muri",
+          "url": "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/"
+        },
+        {
+          "title": "The Ring at Aarburg Castle",
+          "url": "/folklore/stories/7c0af6230ecf47e8d666b811b3986befb4b3bd2f/"
+        },
+        {
+          "title": "The Three Sisters in the Eithal",
+          "url": "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/"
+        }
+      ]
+    },
+    {
+      "id": "theme-courtship-and-marriage",
+      "label": "Courtship and marriage",
+      "stories": [
+        {
+          "title": "Swimmer Willi of Meisterschwanden",
+          "url": "/folklore/stories/7c64393689728a58687d3935b618c5996950ba1a/"
+        },
+        {
+          "title": "The Bridal Voyage on Lake Hallwil",
+          "url": "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+        }
+      ]
+    },
+    {
+      "id": "theme-curses-and-wrongdoing",
+      "label": "Curses and wrongdoing",
+      "stories": [
+        {
+          "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
+          "url": "/folklore/stories/6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a/"
+        },
+        {
+          "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
+          "url": "/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/"
+        },
+        {
+          "title": "Egelsee on the Heitersberg",
+          "url": "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/"
+        },
+        {
+          "title": "The Buried Well",
+          "url": "/folklore/stories/507a2de96f6647a3359b25e46175f394dabe5c3e/"
+        },
+        {
+          "title": "The Hunger Spring at Degermoos",
+          "url": "/folklore/stories/40314b4af9266133a774f57ed6692cede664c5d9/"
+        },
+        {
+          "title": "The Schongau Baths on the Lindenberg",
+          "url": "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/"
+        },
+        {
+          "title": "Wässerrecht at Ursprung",
+          "url": "/folklore/stories/5dbbb4ca07221a731ca9f05249a4651f38f02e2e/"
+        }
+      ]
+    },
+    {
+      "id": "theme-death-and-mourning",
+      "label": "Death and mourning",
+      "stories": [
+        {
+          "title": "The Two Lights of Life",
+          "url": "/folklore/stories/7789e358737b8edee35538b428ecc4ede00ba46f/"
+        },
+        {
+          "title": "The Water Spirit near Seckingen",
+          "url": "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/"
+        }
+      ]
+    },
+    {
+      "id": "theme-doubles-and-apparitions",
+      "label": "Doubles and apparitions",
+      "stories": [
+        {
+          "title": "The Burning Robber in the Reuss",
+          "url": "/folklore/stories/95dcd7188a663a3c9f4e4445a863e9cf79c999e8/"
+        },
+        {
+          "title": "The Fiery Man at the Etzgen Ferry",
+          "url": "/folklore/stories/46c1e0af9c1903d196641674db543ffe4909c64f/"
+        },
+        {
+          "title": "The Interrupted Ride",
+          "url": "/folklore/stories/034cdca9ccd37d16e4c8018009368915aad972ba/"
+        },
+        {
+          "title": "The Wässermann at Staffelbach",
+          "url": "/folklore/stories/34038eddddbc582d925e2bac7065aa6bda6fed6d/"
+        }
+      ]
+    },
+    {
+      "id": "theme-drowning-and-rescue",
+      "label": "Drowning and rescue",
+      "stories": [
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        },
+        {
+          "title": "Swimmer Willi of Meisterschwanden",
+          "url": "/folklore/stories/7c64393689728a58687d3935b618c5996950ba1a/"
+        },
+        {
+          "title": "The Bridal Voyage on Lake Hallwil",
+          "url": "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+        },
+        {
+          "title": "The Three Sisters in the Eithal",
+          "url": "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/"
+        },
+        {
+          "title": "The Water Spirit near Seckingen",
+          "url": "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/"
+        }
+      ]
+    },
+    {
+      "id": "theme-festivals-and-customs",
+      "label": "Festivals and customs",
+      "stories": [
+        {
+          "title": "Aarau's Town Brook",
+          "url": "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/"
+        }
+      ]
+    },
+    {
+      "id": "theme-flood-legends",
+      "label": "Flood legends",
+      "stories": [
+        {
+          "title": "Bertha of Baldegg",
+          "url": "/folklore/stories/1e90ecf18f18fa3b30d4db9aee8d2285208bc294/"
+        },
+        {
+          "title": "Egelsee on the Heitersberg",
+          "url": "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/"
+        },
+        {
+          "title": "The Ring at Aarburg Castle",
+          "url": "/folklore/stories/7c0af6230ecf47e8d666b811b3986befb4b3bd2f/"
+        },
+        {
+          "title": "The Springs of the Schafmatt",
+          "url": "/folklore/stories/6aeb8c528735636a5627a29275a5788c9764d2f8/"
+        }
+      ]
+    },
+    {
+      "id": "theme-haunted-waters",
+      "label": "Haunted waters",
+      "stories": [
+        {
+          "title": "Egelsee on the Heitersberg",
+          "url": "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/"
+        },
+        {
+          "title": "The Bridal Voyage on Lake Hallwil",
+          "url": "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+        },
+        {
+          "title": "The Buried Well",
+          "url": "/folklore/stories/507a2de96f6647a3359b25e46175f394dabe5c3e/"
+        },
+        {
+          "title": "The Burning Robber in the Reuss",
+          "url": "/folklore/stories/95dcd7188a663a3c9f4e4445a863e9cf79c999e8/"
+        },
+        {
+          "title": "The Fiery Man at the Etzgen Ferry",
+          "url": "/folklore/stories/46c1e0af9c1903d196641674db543ffe4909c64f/"
+        },
+        {
+          "title": "The Heiterechsee near Muri",
+          "url": "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/"
+        },
+        {
+          "title": "The Interrupted Ride",
+          "url": "/folklore/stories/034cdca9ccd37d16e4c8018009368915aad972ba/"
+        },
+        {
+          "title": "The Three Sisters in the Eithal",
+          "url": "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/"
+        },
+        {
+          "title": "The Water Spirit near Seckingen",
+          "url": "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/"
+        },
+        {
+          "title": "Wässerrecht at Ursprung",
+          "url": "/folklore/stories/5dbbb4ca07221a731ca9f05249a4651f38f02e2e/"
+        }
+      ]
+    },
+    {
+      "id": "theme-healing-springs",
+      "label": "Healing springs",
+      "stories": [
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        },
+        {
+          "title": "The Discovery of the Healing Springs at Baden",
+          "url": "/folklore/stories/373b1522595312ccbeb34c116035b6b486501266/"
+        },
+        {
+          "title": "The Healed Helvetian Woman",
+          "url": "/folklore/stories/6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31/"
+        },
+        {
+          "title": "The Schongau Baths on the Lindenberg",
+          "url": "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/"
+        },
+        {
+          "title": "The Verena Bath in the City of Baden",
+          "url": "/folklore/stories/2eb4a90445992e00671bd9a64d5c67836b8f0804/"
+        },
+        {
+          "title": "The Well in Olsberg",
+          "url": "/folklore/stories/52e148ff2a5760247de1f0ef6affad49ecd86770/"
+        }
+      ]
+    },
+    {
+      "id": "theme-hunger-and-poverty",
+      "label": "Hunger and poverty",
+      "stories": [
+        {
+          "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
+          "url": "/folklore/stories/6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a/"
+        }
+      ]
+    },
+    {
+      "id": "theme-magic-books",
+      "label": "Magic books",
+      "stories": [
+        {
+          "title": "Das Zauberbuch (The Magic Book)",
+          "url": "/folklore/stories/434e1c6212cefb2c179cebaefb73d062fb021de8/"
+        },
+        {
+          "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
+          "url": "/folklore/stories/6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a/"
+        },
+        {
+          "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
+          "url": "/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/"
+        }
+      ]
+    },
+    {
+      "id": "theme-omens-and-premonitions",
+      "label": "Omens and premonitions",
+      "stories": [
+        {
+          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "url": "/folklore/stories/ab64c4c2416b12fdc5fd4ea144bf167805af0162/"
+        },
+        {
+          "title": "The Heiterechsee near Muri",
+          "url": "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/"
+        },
+        {
+          "title": "The Hunger Spring at Degermoos",
+          "url": "/folklore/stories/40314b4af9266133a774f57ed6692cede664c5d9/"
+        },
+        {
+          "title": "The Two Lights of Life",
+          "url": "/folklore/stories/7789e358737b8edee35538b428ecc4ede00ba46f/"
+        }
+      ]
+    },
+    {
+      "id": "theme-origins-of-landmarks",
+      "label": "Origins of landmarks",
+      "stories": [
+        {
+          "title": "Aarau's Town Brook",
+          "url": "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/"
+        },
+        {
+          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "url": "/folklore/stories/ab64c4c2416b12fdc5fd4ea144bf167805af0162/"
+        },
+        {
+          "title": "The Discovery of the Healing Springs at Baden",
+          "url": "/folklore/stories/373b1522595312ccbeb34c116035b6b486501266/"
+        },
+        {
+          "title": "The Well in Olsberg",
+          "url": "/folklore/stories/52e148ff2a5760247de1f0ef6affad49ecd86770/"
+        }
+      ]
+    },
+    {
+      "id": "theme-pilgrimage-and-saints",
+      "label": "Pilgrimage and saints",
+      "stories": [
+        {
+          "title": "Bertha of Baldegg",
+          "url": "/folklore/stories/1e90ecf18f18fa3b30d4db9aee8d2285208bc294/"
+        },
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        },
+        {
+          "title": "The Springs of the Schafmatt",
+          "url": "/folklore/stories/6aeb8c528735636a5627a29275a5788c9764d2f8/"
+        },
+        {
+          "title": "The Verena Bath in the City of Baden",
+          "url": "/folklore/stories/2eb4a90445992e00671bd9a64d5c67836b8f0804/"
+        },
+        {
+          "title": "The Well in Olsberg",
+          "url": "/folklore/stories/52e148ff2a5760247de1f0ef6affad49ecd86770/"
+        }
+      ]
+    },
+    {
+      "id": "theme-war-and-local-history",
+      "label": "War and local history",
+      "stories": [
+        {
+          "title": "The Healed Helvetian Woman",
+          "url": "/folklore/stories/6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31/"
+        },
+        {
+          "title": "The Heiterechsee near Muri",
+          "url": "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/"
+        }
+      ]
+    },
+    {
+      "id": "theme-water-rights-and-mills",
+      "label": "Water rights and mills",
+      "stories": [
+        {
+          "title": "Aarau's Town Brook",
+          "url": "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/"
+        },
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        },
+        {
+          "title": "The Buried Well",
+          "url": "/folklore/stories/507a2de96f6647a3359b25e46175f394dabe5c3e/"
+        },
+        {
+          "title": "The Hunger Spring at Degermoos",
+          "url": "/folklore/stories/40314b4af9266133a774f57ed6692cede664c5d9/"
+        },
+        {
+          "title": "The Wässermann at Staffelbach",
+          "url": "/folklore/stories/34038eddddbc582d925e2bac7065aa6bda6fed6d/"
+        },
+        {
+          "title": "Wässerrecht at Ursprung",
+          "url": "/folklore/stories/5dbbb4ca07221a731ca9f05249a4651f38f02e2e/"
+        }
+      ]
+    },
+    {
+      "id": "theme-weather-lore",
+      "label": "Weather lore",
+      "stories": [
+        {
+          "title": "Saint Verena at Zurzach",
+          "url": "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+        },
+        {
+          "title": "The Bridal Voyage on Lake Hallwil",
+          "url": "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+        },
+        {
+          "title": "The Schongau Baths on the Lindenberg",
+          "url": "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/"
+        },
+        {
+          "title": "The Three Sisters in the Eithal",
+          "url": "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/"
+        }
+      ]
+    }
+  ]
+}
