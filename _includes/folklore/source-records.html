@@ -4,11 +4,12 @@
   <ul>
     {% for source in include.edition.source_records %}
     <li>
-      <p><cite>{{ source.title | escape }}</cite> · {{ source.author | escape }}</p>
+      <p><cite>{{ source.title | escape }}</cite></p>
+      <p>Catalogue entry listed under {{ source.author | escape }}</p>
       {% if source.edition_url %}<p><a href="{{ source.edition_url | escape }}">{{ source.edition_citation | escape }}</a></p>{% endif %}
       <ul>
         {% for source_url in source.urls %}
-        <li><a href="{{ source_url | escape }}">Source record{% if source.urls.size > 1 %} {{ forloop.index }}{% endif %}</a></li>
+        <li><a href="{{ source_url | escape }}">Source reference{% if source.urls.size > 1 %} {{ forloop.index }}{% endif %}</a></li>
         {% endfor %}
       </ul>
       {% if source.notes.size > 0 %}
