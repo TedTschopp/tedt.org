@@ -45,6 +45,10 @@ Pagefind index, and finalizes analytics. Run
 `bundle exec ruby tests/check_folklore_archive.rb _site` after building to check
 the catalog, sitemap, and search index against the published pages.
 
+Shared folklore pages carry their source records in `edition.source_records`.
+The reading layout displays their citations, source links, and annotations after
+the bilingual text.
+
 ### Presentation & Styling
 
 - SCSS partials in `_sass/`; slides theme + archetypes for Reveal.js.
