@@ -7955,12 +7955,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "8b51922ab5f537460288f4c656eab8079635fbf350fa2748a0b7614f7061e4ea",
-        "kind": "archive",
-        "started_at": "2026-11-17T16:28:23Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-17T16:28:44.177Z",
+          "id": "117632724118873670",
+          "url": "https://tschopp.net/@Ted/117632724118873670"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7968,8 +7969,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cold-Snake-Rrerslith.md"
       ],
-      "state": "uncertain",
-      "title": "Cold Snake «Rrerslith»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-17T16:28:44.177Z",
+        "id": "117632724118873670",
+        "url": "https://tschopp.net/@Ted/117632724118873670"
+      },
+      "title": "Cold Snake «Rrerslith»",
+      "verified_at": "2026-11-17T16:28:23Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Commander-Atenvelt.html": {
       "aliases": [
@@ -28114,7 +28121,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-17T08:09:14.507Z",
+  "last_publication_at": "2026-11-17T16:28:44.177Z",
   "last_reconciliation_at": "2026-11-17T16:28:23Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 252,
@@ -29614,6 +29621,14 @@
       "kind": "archive",
       "operation": "b86c77bb83e66e76cbd292ab0efd762b701a3f58ebe9161aad856f099c5c4ce3",
       "url": "https://tschopp.net/@Ted/117630760026565596"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cold-Snake-Rrerslith.html",
+      "created_at": "2026-11-17T16:28:44.177Z",
+      "id": "117632724118873670",
+      "kind": "archive",
+      "operation": "8b51922ab5f537460288f4c656eab8079635fbf350fa2748a0b7614f7061e4ea",
+      "url": "https://tschopp.net/@Ted/117632724118873670"
     }
   ],
   "run_count": 587,
