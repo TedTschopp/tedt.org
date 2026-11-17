@@ -7918,12 +7918,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "b86c77bb83e66e76cbd292ab0efd762b701a3f58ebe9161aad856f099c5c4ce3",
-        "kind": "archive",
-        "started_at": "2026-11-17T08:08:56Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-17T08:09:14.507Z",
+          "id": "117630760026565596",
+          "url": "https://tschopp.net/@Ted/117630760026565596"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -7931,8 +7932,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cody-Matrix.md"
       ],
-      "state": "uncertain",
-      "title": "Cody Matrix"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-17T08:09:14.507Z",
+        "id": "117630760026565596",
+        "url": "https://tschopp.net/@Ted/117630760026565596"
+      },
+      "title": "Cody Matrix",
+      "verified_at": "2026-11-17T08:08:56Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cold-Snake-Rrerslith.html": {
       "aliases": [
@@ -28100,7 +28107,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-17T03:32:44.580Z",
+  "last_publication_at": "2026-11-17T08:09:14.507Z",
   "last_reconciliation_at": "2026-11-17T08:08:56Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 251,
@@ -29592,6 +29599,14 @@
       "kind": "archive",
       "operation": "518f3eba78216f3dbf62e9cc5ef5da9f5e3109a8bcd9909ef46fc00898a059a3",
       "url": "https://tschopp.net/@Ted/117629672789065328"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cody-Matrix.html",
+      "created_at": "2026-11-17T08:09:14.507Z",
+      "id": "117630760026565596",
+      "kind": "archive",
+      "operation": "b86c77bb83e66e76cbd292ab0efd762b701a3f58ebe9161aad856f099c5c4ce3",
+      "url": "https://tschopp.net/@Ted/117630760026565596"
     }
   ],
   "run_count": 586,
