@@ -36,3 +36,4 @@
   <ul>{% for note in edition.notes %}<li>{{ note | escape }}</li>{% endfor %}</ul>
 </section>
 {% endif %}
+{% include folklore/source-records.html edition=edition %}

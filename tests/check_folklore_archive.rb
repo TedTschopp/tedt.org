@@ -61,6 +61,15 @@ all_entries.each do |entry|
   end
 
   document = page(site, url)
+  source_records = story_stubs.fetch(url).dig('edition', 'source_records') || []
+  rendered_sources = document.css('#story-sources > ul > li')
+  abort "Source records missing or duplicated at #{url}" unless rendered_sources.size == source_records.size
+  source_records.zip(rendered_sources).each do |record, rendered|
+    links = rendered.css('a').map { |link| link['href'] }
+    unless (record.fetch('urls') - links).empty? && record.fetch('notes').all? { |note| rendered.text.include?(note) }
+      abort "Source links or annotations missing from shared page at #{url}"
+    end
+  end
   endpoint = document.at_css('link[rel="webmention"]')&.[]('href')
   form = document.at_css('#webmentions-section form')
   discussion = document.at_css('#discussion a[rel~="external"]')
