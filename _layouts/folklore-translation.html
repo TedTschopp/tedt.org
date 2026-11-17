@@ -2,20 +2,25 @@
 layout: folklore-shell
 ---
 {% assign edition = page.edition %}
+{% assign guide = site.data.folklore.reader_guides.stories[page.story_id] %}
 <main id="folklore-main" class="folklore-frame folklore-reading h-entry" data-pagefind-body>
   <article>
     <header class="folklore-reading-header">
       <a href="{{ '/folklore/' | relative_url }}">Swiss Folklore Collection</a>
       <h1 class="p-name" data-pagefind-meta="title">{{ page.title | escape }}</h1>
       <div class="folklore-credits">
-        <p>Source author: <span class="p-author">{{ edition.author | escape }}</span></p>
+        <p>Source author: <span class="p-author h-card"><span class="p-name">{{ edition.author | escape }}</span></span></p>
         <p class="content-credit-translation-editor">Translator and curator: <a href="{{ '/profile/' | relative_url }}">Ted Tschopp</a> · <a href="{{ '/profile/#translation-and-folklore-disclosure' | relative_url }}">Translation disclosure</a></p>
         <p><a href="{{ edition.edition_url | escape }}">{{ edition.edition_citation | escape }}</a></p>
       </div>
+      {% include seo/entry-metadata.html %}
+      {% include folklore/discussion-links.html %}
     </header>
-    {% include folklore/story-context.html %}
+    {% if guide %}<p class="folklore-intro folklore-story-summary">{{ guide.summary | escape }}</p>{% endif %}
     <div class="e-content">
       {% include folklore/edition-text.html edition=edition %}
     </div>
+    {% include folklore/story-context.html %}
   </article>
+  {% include folklore/discussion.html target_label='this tale' %}
 </main>

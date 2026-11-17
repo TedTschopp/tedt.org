@@ -93,7 +93,7 @@
               {%- assign story = site.data.folklore.stories[story_id] -%}
               {% if story %}
               <li>
-                <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title }}</a>
+                <a href="{{ site.data.folklore.archive.urls_by_id[story_id] | relative_url }}">{{ story.title }}</a>
               </li>
               {% endif %}
             {% endfor %}

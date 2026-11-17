@@ -67,7 +67,7 @@ permalink: /folklore/themes/
                         {% assign story = story_pair[1] %}
                         {% if story.myth_classification.myth_type == myth_type %}
                         <li>
-                          <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title | truncate: 30 }}</a>
+                          <a href="{{ site.data.folklore.archive.urls_by_id[story_id] | relative_url }}">{{ story.title | truncate: 30 }}</a>
                         </li>
                         {% endif %}
                       {% endfor %}
@@ -99,7 +99,7 @@ permalink: /folklore/themes/
                         {% assign story = story_pair[1] %}
                         {% if story.myth_classification.primary_themes contains theme %}
                         <li>
-                          <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title | truncate: 30 }}</a>
+                          <a href="{{ site.data.folklore.archive.urls_by_id[story_id] | relative_url }}">{{ story.title | truncate: 30 }}</a>
                         </li>
                         {% endif %}
                       {% endfor %}
@@ -151,7 +151,7 @@ permalink: /folklore/themes/
                         {% assign story = story_pair[1] %}
                         {% if story.myth_classification.secondary_themes contains __secondary_theme_text %}
                         <li class="col-md-6">
-                          <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title }}</a>
+                          <a href="{{ site.data.folklore.archive.urls_by_id[story_id] | relative_url }}">{{ story.title }}</a>
                           <span class="text-body-secondary">— {{ story.author }}</span>
                         </li>
                         {% endif %}

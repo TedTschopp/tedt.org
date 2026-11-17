@@ -78,7 +78,7 @@
                         <div class="card h-100">
                           <div class="card-body">
                             <h3 class="h6 card-title">
-                              <a href="{{ site.url }}/folklore/stories/{{ story_id }}/">{{ story.title }}</a>
+                              <a href="{{ site.data.folklore.archive.urls_by_id[story_id] | relative_url }}">{{ story.title }}</a>
                             </h3>
                             <p class="small text-body-secondary mb-2">{{ story.author }}</p>
                             <p class="small mb-2">{{ story.translations.readable.text | strip_html | truncate: 150 }}</p>
@@ -227,7 +227,7 @@
                                 {% for story_id in ent.story_ids %}
                                   {%- assign story = site.data.folklore.stories[story_id] -%}
                                   {% if story %}
-                                  <a href="{{ site.url }}/folklore/stories/{{ story_id }}/" 
+                                  <a href="{{ site.data.folklore.archive.urls_by_id[story_id] | relative_url }}"
                                      class="badge bg-secondary text-decoration-none"
                                      title="{{ story.title }}">
                                     📖 {{ story.title | truncate: 25 }}

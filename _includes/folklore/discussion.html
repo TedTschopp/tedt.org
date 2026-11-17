@@ -1,0 +1,14 @@
+<div id="discussion" class="folklore-responses" data-pagefind-ignore>
+  {% assign discussion = page.mastodon-post-url | default: page.mastodon-post-id | append: '' | strip %}
+  {% if discussion != '' %}
+    {% include social/comments-mastodon-tree.html %}
+  {% else %}
+    {%- assign story_url = page.url | absolute_url -%}
+    {%- assign share_text = page.title | append: ' ' | append: story_url -%}
+    <section aria-labelledby="folklore-discussion-heading">
+      <h2 id="folklore-discussion-heading">Discussion</h2>
+      <p><a href="https://share.joinmastodon.org/#text={{ share_text | url_encode | replace: '+', '%20' | escape }}" rel="external">Start a discussion on Mastodon</a></p>
+    </section>
+  {% endif %}
+  {% include social/comments-webmentions.html target_label=include.target_label %}
+</div>

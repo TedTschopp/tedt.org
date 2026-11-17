@@ -6,6 +6,16 @@
     <meta name="robots" content="noindex,follow">
     <title>This page has moved</title>
     <link rel="canonical" href="{{ page.redirect.to | escape }}">
+    {% if page.redirect.from contains '/folklore/stories/' %}
+    <link rel="webmention" href="{{ site.indieweb.webmention_endpoint | default: 'https://webmention.io/tedt.org/webmention' | escape }}">
+    <script>
+      if (window.location.hash) {
+        const destination = new URL(document.querySelector('link[rel="canonical"]').href);
+        destination.hash = window.location.hash;
+        window.location.replace(destination.href);
+      }
+    </script>
+    {% endif %}
     <meta http-equiv="refresh" content="0; url={{ page.redirect.to | escape }}">
   </head>
   <body>

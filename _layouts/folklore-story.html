@@ -64,6 +64,7 @@
 
     {%- assign story_id = page.story_id -%}
     {%- assign story = site.data.folklore.stories[story_id] -%}
+    {%- assign guide = site.data.folklore.reader_guides.stories[story_id] -%}
 
     <!-- Page Content -->
     <div class="container">
@@ -107,7 +108,20 @@
               <div class="card-body rounded-top-0 p-4 h-100">
                 {% include seo/entry-metadata.html %}
                 {% include social/syndication-links.html %}
-                {% if page.edition %}{% include folklore/story-context.html hide_places=true %}{% endif %}
+                {% include folklore/discussion-links.html %}
+                {% if guide %}<p class="folklore-intro folklore-story-summary">{{ guide.summary | escape }}</p>{% endif %}
+
+                {%- comment -%} Translation Tabs {%- endcomment -%}
+                <div class="e-content">
+                  <h2 class="h5 mb-3">📖 The Story</h2>
+                  {% if page.edition %}
+                    <p><a href="{{ page.edition.edition_url | escape }}">{{ page.edition.edition_citation | escape }}</a></p>
+                    {% include folklore/edition-text.html edition=page.edition %}
+                  {% else %}
+                    {% include folklore/translation-tabs.html story=story story_id=story_id %}
+                  {% endif %}
+                </div>
+                {% if guide %}{% include folklore/story-context.html hide_places=true %}{% endif %}
 
                 {%- comment -%} Locations Section {%- endcomment -%}
                 {% if story.location_ids and story.location_ids.size > 0 %}
@@ -120,17 +134,6 @@
                   </div>
                 </div>
                 {% endif %}
-
-                {%- comment -%} Translation Tabs {%- endcomment -%}
-                <div class="e-content">
-                  <h2 class="h5 mb-3">📖 The Story</h2>
-                  {% if page.edition %}
-                    <p><a href="{{ page.edition.edition_url | escape }}">{{ page.edition.edition_citation | escape }}</a></p>
-                    {% include folklore/edition-text.html edition=page.edition %}
-                  {% else %}
-                    {% include folklore/translation-tabs.html story=story story_id=story_id %}
-                  {% endif %}
-                </div>
 
                 {%- comment -%} Entities Section {%- endcomment -%}
                 {% if story.entity_ids and story.entity_ids.size > 0 %}
@@ -189,11 +192,7 @@
             </article>
           </main>
 
-          {% if page.mastodon-post-id or page.mastodon-post-url %}
-            {% include social/comments-mastodon-tree.html %}
-          {% endif %}
-
-          {% include social/comments-webmentions.html %}
+          {% include folklore/discussion.html target_label='this tale' %}
 
         </div>
       </div>

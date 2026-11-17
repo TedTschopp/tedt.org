@@ -59,6 +59,21 @@ module IndieWebTests
     raises { IndieWeb::Manifest.new('version' => 1, 'entries' => [{ 'url' => 'https://tedt.org/a/', 'aliases' => ['/b/'] }, { 'url' => 'https://tedt.org/b/' }]) }
   end
 
+  def test_incoming_only_entries_preserve_aliases_without_scheduling_delivery
+    source = 'https://tedt.org/folklore/stories/title/'
+    old_path = '/folklore/stories/older/'
+    data = { 'version' => 1, 'entries' => [{ 'url' => source, 'aliases' => [old_path], 'outgoing' => false }] }
+    manifest = IndieWeb::Manifest.new(data)
+    equal(source, manifest.canonical("https://tedt.org#{old_path}"))
+    sender = IndieWeb::Sender.new
+    Dir.mktmpdir do |dir|
+      equal({}, sender.snapshot(dir, manifest))
+      stream = File.join(dir, 'pages.jsonl')
+      File.write(stream, JSON.generate('manifest' => data) + "\n")
+      equal({}, sender.snapshot_stream(stream))
+    end
+  end
+
   def test_unicode_aliases_match_encoded_urls
     m = IndieWeb::Manifest.new('version' => 1, 'entries' => [{ 'url' => 'https://tedt.org/Café/', 'aliases' => [] }])
     equal('https://tedt.org/Caf%C3%A9/', m.canonical('http://www.tedt.org/Café/'))

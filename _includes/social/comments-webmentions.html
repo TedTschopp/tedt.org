@@ -1,10 +1,11 @@
 {%- assign mention_path = include.target_path | default: page.url -%}
 {%- assign mention_target = mention_path | absolute_url -%}
 {%- assign mention_groups = site.data.webmentions.by_target[mention_target] -%}
+{%- assign target_label = include.target_label | default: 'this article' -%}
 <section id="webmentions-section" class="webmentions-content my-4" aria-labelledby="Webmentions-Header">
   <span id="webmention_thread" aria-hidden="true"></span>
   <h2 id="Webmentions-Header">Webmentions</h2>
-  <p>Reply on your own website and link to <a href="{{ mention_target | escape }}">this article</a>. Send a <a href="https://www.w3.org/TR/webmention/">Webmention</a> to let me know. Verified responses from trusted sources appear after the next refresh; other responses are reviewed first.</p>
+  <p>Reply on your own website and link to <a href="{{ mention_target | escape }}">{{ target_label | escape }}</a>. Send a <a href="https://www.w3.org/TR/webmention/">Webmention</a> to let me know. Verified responses from trusted sources appear after the next refresh; other responses are reviewed first.</p>
   <div id="webmentions">
     {%- assign mention_count = 0 -%}
     {%- assign mention_types = 'replies,mentions,likes,reposts,bookmarks,rsvps,follows' | split: ',' -%}
@@ -35,7 +36,7 @@
       <input id="webmention-source" type="url" name="source" class="form-control webmention-source" placeholder="https://your-site.example/post" required aria-describedby="webmention-help">
       <button class="btn btn-primary" type="submit">Send Webmention</button>
     </div>
-    <p id="webmention-help" class="form-text">Your page must contain a link to this article. Submission queues it for verification and moderation.</p>
+    <p id="webmention-help" class="form-text">Your page must contain a link to {{ target_label | escape }}. Submission queues it for verification and moderation.</p>
     <input type="hidden" name="target" value="{{ mention_target | escape }}">
     <p class="webmention-status" role="status" aria-live="polite"></p>
   </form>

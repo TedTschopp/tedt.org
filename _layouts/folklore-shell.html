@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% include utility/calculate-variables.html %}
+  {% if page.story_id %}
+  {% include seo/indieauth-webmentions-metadata.html %}
+  <link rel="stylesheet" href="{{ '/css/indieweb.css' | relative_url }}">
+  {% endif %}
   {% include seo/meta-data-seo.html %}
   {% include security/content-security-policy.html %}
   {% include utility/color-scheme-head.html %}

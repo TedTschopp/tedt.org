@@ -19,8 +19,7 @@ layout: folklore-shell
   <h2>Browse {{ archive.stories.size }} tales</h2>
   <ul class="folklore-catalog">
     {% for story in archive.stories limit: page_size offset: offset %}
-      {% assign story_id = story.url | split: '/' | last %}
-      {% assign guide = site.data.folklore.reader_guides.stories[story_id] %}
+      {% assign guide = site.data.folklore.reader_guides.stories[story.id] %}
       <li>
         <h3><a href="{{ story.url | relative_url }}">{{ story.title | escape }}</a></h3>
         {% if guide %}<p class="folklore-catalog-summary">{{ guide.summary | escape }}</p>{% endif %}
