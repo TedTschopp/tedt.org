@@ -8066,12 +8066,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "49669840f131cd5b4ce0dfe93992a09a0ecb2893178b04f0a7fdbaf1db7ec3dc",
-        "kind": "archive",
-        "started_at": "2026-11-18T07:13:45Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-18T07:14:01.999Z",
+          "id": "117636205248481471",
+          "url": "https://tschopp.net/@Ted/117636205248481471"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -8079,8 +8080,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Communit.md"
       ],
-      "state": "uncertain",
-      "title": "Communit"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-18T07:14:01.999Z",
+        "id": "117636205248481471",
+        "url": "https://tschopp.net/@Ted/117636205248481471"
+      },
+      "title": "Communit",
+      "verified_at": "2026-11-18T07:13:45Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Construction-Bot-Engineering-Bot-Standard.html": {
       "aliases": [
@@ -28156,7 +28163,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-17T23:59:20.542Z",
+  "last_publication_at": "2026-11-18T07:14:01.999Z",
   "last_reconciliation_at": "2026-11-18T07:13:45Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 255,
@@ -29680,6 +29687,14 @@
       "kind": "archive",
       "operation": "02e119aa3293cef13bf570042e449cded44e580f51b31ddcfccb658bd6307c91",
       "url": "https://tschopp.net/@Ted/117634495974128101"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Communit.html",
+      "created_at": "2026-11-18T07:14:01.999Z",
+      "id": "117636205248481471",
+      "kind": "archive",
+      "operation": "49669840f131cd5b4ce0dfe93992a09a0ecb2893178b04f0a7fdbaf1db7ec3dc",
+      "url": "https://tschopp.net/@Ted/117636205248481471"
     }
   ],
   "run_count": 590,
