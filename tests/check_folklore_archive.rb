@@ -61,6 +61,9 @@ all_entries.each do |entry|
   end
 
   document = page(site, url)
+  unless document.css('h1').size == 1 && document.at_css('h1').text.strip == entry.fetch('title')
+    abort "Story heading differs from its English catalog title at #{url}"
+  end
   source_records = story_stubs.fetch(url).dig('edition', 'source_records') || []
   rendered_sources = document.css('#story-sources > ul > li')
   abort "Source records missing or duplicated at #{url}" unless rendered_sources.size == source_records.size

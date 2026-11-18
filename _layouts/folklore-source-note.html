@@ -8,6 +8,7 @@ layout: folklore-shell
   {% include seo/entry-metadata.html %}
   {% include folklore/discussion-links.html %}
   <div class="e-content mt-4">
+    <p>Original title: <span{% if page.original_language %} lang="{{ page.original_language | escape }}"{% endif %}>{{ page.original_title | escape }}</span></p>
     <p>Source author: <span class="p-author h-card"><span class="p-name">{{ story.author | escape }}</span></span></p>
     <p>{{ story.edition_citation | escape }}</p>
     <p>This page records the source for the tale. The English translation is held pending verification of the published wording.</p>
