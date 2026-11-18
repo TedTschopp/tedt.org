@@ -19,32 +19,32 @@
       "author": "Josef Müller"
     },
     {
-      "id": "bf773dcebae22947d95e677a8d1d72812e0f1688",
-      "title": "Aarau's Town Brook",
-      "url": "/folklore/stories/aaraus-town-brook/",
-      "year": 1856,
-      "author": "Ernst L. Rochholz"
-    },
-    {
       "id": "73f56d11aad8da9f85e26eb58804a07de8c896a9",
-      "title": "An arme Seele (Fiery Teeth)",
+      "title": "A Poor Soul (Fiery Teeth)",
       "url": "/folklore/stories/an-arme-seele-fiery-teeth/",
       "year": 1926,
       "author": "Josef Müller"
     },
     {
       "id": "9b8aeac4ecd492002ca2377bc42c9f8b02a7ccc5",
-      "title": "An arme Seele (Jagdmatt)",
+      "title": "A Poor Soul (Jagdmatt)",
       "url": "/folklore/stories/an-arme-seele-jagdmatt/",
       "year": 1926,
       "author": "Josef Müller"
     },
     {
       "id": "b4cfe3a2a95080bd804a5fe1c684e2815963476e",
-      "title": "An arme Seele (Saturday Supper)",
+      "title": "A Poor Soul (Saturday Supper)",
       "url": "/folklore/stories/an-arme-seele-saturday-supper/",
       "year": 1926,
       "author": "Josef Müller"
+    },
+    {
+      "id": "bf773dcebae22947d95e677a8d1d72812e0f1688",
+      "title": "Aarau's Town Brook",
+      "url": "/folklore/stories/aaraus-town-brook/",
+      "year": 1856,
+      "author": "Ernst L. Rochholz"
     },
     {
       "id": "1e90ecf18f18fa3b30d4db9aee8d2285208bc294",
@@ -54,36 +54,15 @@
       "author": "Ernst L. Rochholz"
     },
     {
-      "id": "434e1c6212cefb2c179cebaefb73d062fb021de8",
-      "title": "Das Zauberbuch (The Magic Book)",
-      "url": "/folklore/stories/the-magic-book/",
-      "year": 1926,
-      "author": "Josef Müller"
-    },
-    {
-      "id": "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a",
-      "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
-      "url": "/folklore/stories/the-magic-book-of-the-three-poor-boys/",
-      "year": 1926,
-      "author": "Josef Müller"
-    },
-    {
-      "id": "fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f",
-      "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
-      "url": "/folklore/stories/the-magic-book-helps-in-time-of-need/",
-      "year": 1926,
-      "author": "Josef Müller"
-    },
-    {
       "id": "9a2cd8ff197a56feb036301c7bc89eab372d220a",
-      "title": "Driven Home by the arme Seelen (Billen)",
+      "title": "Driven Home by the Poor Souls (Billen)",
       "url": "/folklore/stories/driven-home-by-the-arme-seelen-billen/",
       "year": 1926,
       "author": "Josef Müller"
     },
     {
       "id": "971a343ac4ebb1b1c21282d7e9d94f6483e31d30",
-      "title": "Driven Home by the arme Seelen (Isental)",
+      "title": "Driven Home by the Poor Souls (Isental)",
       "url": "/folklore/stories/driven-home-by-the-arme-seelen-isental/",
       "year": 1926,
       "author": "Josef Müller"
@@ -108,6 +87,20 @@
       "url": "/folklore/stories/emperor-charlemagne-and-the-snake-zurich/",
       "year": 1918,
       "author": "Meinrad Lienert"
+    },
+    {
+      "id": "0249f39e9cc637eb78a5c289267b491a6c7e25c5",
+      "title": "Finger Wrestling with a Ghost (Maderanertal)",
+      "url": "/folklore/stories/haaggla-with-a-ghost-maderanertal/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "6d09f9175240481305d77d1515b5aa2d78317a89",
+      "title": "Finger Wrestling with a Ghost (Schattdorf)",
+      "url": "/folklore/stories/haaggla-with-a-ghost-schattdorf/",
+      "year": 1926,
+      "author": "Josef Müller"
     },
     {
       "id": "4a8b3acb9d38ca63eab2348ea386efcb4d04be56",
@@ -146,29 +139,15 @@
     },
     {
       "id": "ab64c4c2416b12fdc5fd4ea144bf167805af0162",
-      "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+      "title": "Hornussen's Hunger Spring and Säli Spring",
       "url": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
     },
     {
       "id": "ba8dcac81a20d52eb14efb40d3933fe5a64e408c",
-      "title": "How He Got Rid of His Alraune",
+      "title": "How He Got Rid of His Mandrake Familiar",
       "url": "/folklore/stories/how-he-got-rid-of-his-alraune/",
-      "year": 1926,
-      "author": "Josef Müller"
-    },
-    {
-      "id": "0249f39e9cc637eb78a5c289267b491a6c7e25c5",
-      "title": "Häägglä with a Ghost (Maderanertal)",
-      "url": "/folklore/stories/haaggla-with-a-ghost-maderanertal/",
-      "year": 1926,
-      "author": "Josef Müller"
-    },
-    {
-      "id": "6d09f9175240481305d77d1515b5aa2d78317a89",
-      "title": "Häägglä with a Ghost (Schattdorf)",
-      "url": "/folklore/stories/haaggla-with-a-ghost-schattdorf/",
       "year": 1926,
       "author": "Josef Müller"
     },
@@ -188,7 +167,7 @@
     },
     {
       "id": "122e15b12dad89e2612731fa6a8e2a814acad491",
-      "title": "In the Meien Valley (The Toggeli)",
+      "title": "In the Meien Valley (The Shadow Spirit)",
       "url": "/folklore/stories/in-the-meien-valley-toggeli/",
       "year": 1926,
       "author": "Josef Müller"
@@ -216,17 +195,31 @@
     },
     {
       "id": "50a41131dbc0b357aa07ad9aef2d653d7d76b308",
-      "title": "Nuns as Schneeaugen (Hartmann)",
+      "title": "Nuns as Snow Eyes (Hartmann)",
       "url": "/folklore/stories/nuns-as-schneeaugen-hartmann/",
       "year": 1910,
       "author": "H. Hartmann"
     },
     {
       "id": "b2579af3973f1d8eecf3b2b51b70bada59badca2",
-      "title": "Nuns as Schneeaugen (Kohlrusch)",
+      "title": "Nuns as Snow Eyes (Kohlrusch)",
       "url": "/folklore/stories/nuns-as-schneeaugen-kohlrusch/",
       "year": 1854,
       "author": "C. Kohlrusch"
+    },
+    {
+      "id": "1dba95bbc86e7c418dce4d990e15ba497f4e2cb1",
+      "title": "Saint Martin’s Imprint (Hartmann)",
+      "url": "/folklore/stories/the-martinsdruck-hartmann/",
+      "year": 1910,
+      "author": "H. Hartmann"
+    },
+    {
+      "id": "e0656c84c36ff0a3a2df3b34a12ea9704abc7485",
+      "title": "Saint Martin’s Imprint (Vernaleken)",
+      "url": "/folklore/stories/the-martinsdruck-vernaleken/",
+      "year": 1858,
+      "author": "Theodor Vernaleken"
     },
     {
       "id": "6467ba133977071785a2a22974e46b0d9516d22e",
@@ -278,13 +271,6 @@
       "author": "Josef Müller"
     },
     {
-      "id": "1456415dd8b5a2591102f1f47fe4c3304b52442d",
-      "title": "The Alpgeschrei",
-      "url": "/folklore/stories/the-alpgeschrei/",
-      "year": 1865,
-      "author": "Alois Lütolf"
-    },
-    {
       "id": "cae34ad58cf0a4afa03c9af630c578e8079831aa",
       "title": "The Bannhölzler (Kohlrusch)",
       "url": "/folklore/stories/the-bannholzler-kohlrusch/",
@@ -328,7 +314,7 @@
     },
     {
       "id": "a7c97b9ae9b64f5a0a2e55b95770e8fc5a9b3bc2",
-      "title": "The Bold Melker",
+      "title": "The Bold Milker",
       "url": "/folklore/stories/the-bold-melker/",
       "year": 1915,
       "author": "Meinrad Lienert, Entlebuch"
@@ -439,6 +425,13 @@
       "author": "Meinrad Lienert"
     },
     {
+      "id": "1456415dd8b5a2591102f1f47fe4c3304b52442d",
+      "title": "The Cry on the Alpine Pasture",
+      "url": "/folklore/stories/the-alpgeschrei/",
+      "year": 1865,
+      "author": "Alois Lütolf"
+    },
+    {
       "id": "8edb7f91b541887896e0761fc5d0effa9bc03fea",
       "title": "The Cunning Habsburger (Aargau)",
       "url": "/folklore/stories/the-cunning-habsburger-aargau/",
@@ -451,6 +444,20 @@
       "url": "/folklore/stories/the-cunning-habsburger-zurich/",
       "year": 1918,
       "author": "Meinrad Lienert"
+    },
+    {
+      "id": "c5015c64a814b57be05a12692c882b64b50c9851",
+      "title": "The Dead Folk in Davos (Kessler’s Pharmacy)",
+      "url": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "6459b0f84550e7003ceab6128bc87e26aee2d327",
+      "title": "The Dead Folk in Davos (The Coffin)",
+      "url": "/folklore/stories/the-totenvolk-in-davos-coffin/",
+      "year": 1874,
+      "author": "D. Jecklin"
     },
     {
       "id": "46f583839d952abff4a2b18f1dcd997092fc8172",
@@ -531,7 +538,7 @@
     },
     {
       "id": "7ead6ae74e71f379762e4591a18053d53714a3e9",
-      "title": "The Devil's Karrweg (Hartmann)",
+      "title": "The Devil's Cart Road (Hartmann)",
       "url": "/folklore/stories/the-devils-karrweg-hartmann/",
       "year": 1910,
       "author": "H. Hartmann"
@@ -545,7 +552,7 @@
     },
     {
       "id": "06a4d9666fb53f6c663d3c03127ca7e78aee463e",
-      "title": "The Devil’s Karrweg (Kohlrusch)",
+      "title": "The Devil’s Cart Road (Kohlrusch)",
       "url": "/folklore/stories/the-devils-karrweg-kohlrusch/",
       "year": 1854,
       "author": "C. Kohlrusch"
@@ -556,20 +563,6 @@
       "url": "/folklore/stories/the-discovery-of-the-healing-springs-at-baden/",
       "year": 1856,
       "author": "Ernst L. Rochholz"
-    },
-    {
-      "id": "a3f5942218fe1751353407c72f86fbb7ead02201",
-      "title": "The Dreifingerstein (Schwyz)",
-      "url": "/folklore/stories/the-dreifingerstein-schwyz/",
-      "year": 1865,
-      "author": "Alois Lütolf"
-    },
-    {
-      "id": "82b79417966e44903944323bd4cf2a6d6c981221",
-      "title": "The Dreifingerstein (Zug)",
-      "url": "/folklore/stories/the-dreifingerstein-zug/",
-      "year": 1854,
-      "author": "C. Kohlrusch"
     },
     {
       "id": "ac01551ac6053a6b599ee8375de6754d8e84f96c",
@@ -626,20 +619,6 @@
       "url": "/folklore/stories/the-golden-gate-lienert-1918/",
       "year": 1918,
       "author": "Meinrad Lienert"
-    },
-    {
-      "id": "c2d08fe6aa643a81cc355c329e5c37eaf78409b5",
-      "title": "The Gratzug (Jegerlehner)",
-      "url": "/folklore/stories/the-gratzug-jegerlehner/",
-      "year": 1906,
-      "author": "Johannes Jegerlehner"
-    },
-    {
-      "id": "15064fddeb4bad2e8f1d137d657481f3921fb6e9",
-      "title": "The Gratzug (Tscheinen and Ruppen)",
-      "url": "/folklore/stories/the-gratzug-tscheinen-ruppen/",
-      "year": 1872,
-      "author": "M. Tscheinen, P. J. Ruppen"
     },
     {
       "id": "d5c3013eadd69c31545916a0e45e8b7262a9dbf1",
@@ -740,18 +719,25 @@
       "author": "Meinrad Lienert"
     },
     {
-      "id": "1dba95bbc86e7c418dce4d990e15ba497f4e2cb1",
-      "title": "The Martinsdruck (Hartmann)",
-      "url": "/folklore/stories/the-martinsdruck-hartmann/",
-      "year": 1910,
-      "author": "H. Hartmann"
+      "id": "434e1c6212cefb2c179cebaefb73d062fb021de8",
+      "title": "The Magic Book",
+      "url": "/folklore/stories/the-magic-book/",
+      "year": 1926,
+      "author": "Josef Müller"
     },
     {
-      "id": "e0656c84c36ff0a3a2df3b34a12ea9704abc7485",
-      "title": "The Martinsdruck (Vernaleken)",
-      "url": "/folklore/stories/the-martinsdruck-vernaleken/",
-      "year": 1858,
-      "author": "Theodor Vernaleken"
+      "id": "fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f",
+      "title": "The Magic Book Helps in Time of Need",
+      "url": "/folklore/stories/the-magic-book-helps-in-time-of-need/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a",
+      "title": "The Magic Book of the Three Poor Boys",
+      "url": "/folklore/stories/the-magic-book-of-the-three-poor-boys/",
+      "year": 1926,
+      "author": "Josef Müller"
     },
     {
       "id": "740af7bf8cdb3d9d18d09badf40c01881c74176e",
@@ -797,17 +783,31 @@
     },
     {
       "id": "5a71abc558e631e69ae01bc4327b0350d46617a1",
-      "title": "The Musterung on Seefeld (Hartmann)",
+      "title": "The Muster on Seefeld (Hartmann)",
       "url": "/folklore/stories/the-musterung-on-seefeld-hartmann/",
       "year": 1910,
       "author": "H. Hartmann"
     },
     {
       "id": "8471e03ba2a4854a446812e083c732b934eea36b",
-      "title": "The Musterung on Seefeld (Kohlrusch)",
+      "title": "The Muster on Seefeld (Kohlrusch)",
       "url": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/",
       "year": 1854,
       "author": "C. Kohlrusch"
+    },
+    {
+      "id": "e4ecdf959955c869b27d59cf81c4aea86d9c1382",
+      "title": "The Nightmare Spirit and the Baptismal Name (The Danger of Waking)",
+      "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/",
+      "year": 1926,
+      "author": "Josef Müller"
+    },
+    {
+      "id": "47c0d034d6bed56e7bb1d88986b3f8a9f4b19c08",
+      "title": "The Nightmare Spirit and the Baptismal Name (The Full Name)",
+      "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/",
+      "year": 1926,
+      "author": "Josef Müller"
     },
     {
       "id": "5338e2adadebb69025354578463a409d8b4e87d6",
@@ -846,14 +846,14 @@
     },
     {
       "id": "74af00748e6d8c160e50f88e7ad3d3e32f767ddb",
-      "title": "The Origin of the Kuhreihen (Bern)",
+      "title": "The Origin of the Cowherd’s Song (Bern)",
       "url": "/folklore/stories/the-origin-of-the-kuhreihen-bern/",
       "year": 1910,
       "author": "H. Hartmann"
     },
     {
       "id": "84db71a855539a19d7bdb94a5a1c06c39a12f4a0",
-      "title": "The Origin of the Kuhreihen (Lienert)",
+      "title": "The Origin of the Cowherd’s Song (Lienert)",
       "url": "/folklore/stories/the-origin-of-the-kuhreihen-lienert/",
       "year": 1915,
       "author": "Meinrad Lienert, Schweiz"
@@ -871,6 +871,20 @@
       "url": "/folklore/stories/the-perjury-st-gallen/",
       "year": 1903,
       "author": "Jakob Kuoni"
+    },
+    {
+      "id": "c2d08fe6aa643a81cc355c329e5c37eaf78409b5",
+      "title": "The Procession of the Dead (Jegerlehner)",
+      "url": "/folklore/stories/the-gratzug-jegerlehner/",
+      "year": 1906,
+      "author": "Johannes Jegerlehner"
+    },
+    {
+      "id": "15064fddeb4bad2e8f1d137d657481f3921fb6e9",
+      "title": "The Procession of the Dead (Tscheinen and Ruppen)",
+      "url": "/folklore/stories/the-gratzug-tscheinen-ruppen/",
+      "year": 1872,
+      "author": "M. Tscheinen, P. J. Ruppen"
     },
     {
       "id": "f0bd6117493ec0d10b9fe9d8afe8437781d9294f",
@@ -936,20 +950,6 @@
       "author": "Theodor Vernaleken"
     },
     {
-      "id": "47930a04257f4e9097c0b25e97782d4f43a6910c",
-      "title": "The Schlangenbanner (Jecklin)",
-      "url": "/folklore/stories/the-schlangenbanner-jecklin/",
-      "year": 1874,
-      "author": "D. Jecklin"
-    },
-    {
-      "id": "73cfc215aee927402f292aa419b97a67693c7b45",
-      "title": "The Schlangenbanner (Lienert)",
-      "url": "/folklore/stories/the-schlangenbanner-lienert/",
-      "year": 1915,
-      "author": "Meinrad Lienert, Schweiz"
-    },
-    {
       "id": "467e25e4996b52861fface7e615b0d0a0ccb12e3",
       "title": "The Schongau Baths on the Lindenberg",
       "url": "/folklore/stories/the-schongau-baths-on-the-lindenberg/",
@@ -999,6 +999,20 @@
       "author": "D. Jecklin"
     },
     {
+      "id": "47930a04257f4e9097c0b25e97782d4f43a6910c",
+      "title": "The Snake Charmer (Jecklin)",
+      "url": "/folklore/stories/the-schlangenbanner-jecklin/",
+      "year": 1874,
+      "author": "D. Jecklin"
+    },
+    {
+      "id": "73cfc215aee927402f292aa419b97a67693c7b45",
+      "title": "The Snake Charmer (Lienert)",
+      "url": "/folklore/stories/the-schlangenbanner-lienert/",
+      "year": 1915,
+      "author": "Meinrad Lienert, Schweiz"
+    },
+    {
       "id": "00338b79370481adade2d3ccca84a5e4827cb40c",
       "title": "The Snake Queen",
       "url": "/folklore/stories/the-snake-queen/",
@@ -1007,14 +1021,14 @@
     },
     {
       "id": "a89641edc0176b1600fb3d1c80a5731e17159142",
-      "title": "The Spectral Sennen (Bern)",
+      "title": "The Spectral Alpine Herdsmen (Bern)",
       "url": "/folklore/stories/the-spectral-sennen-bern/",
       "year": 1910,
       "author": "H. Hartmann"
     },
     {
       "id": "82a20ceb2978b6f4d570373d775ef32166f7eb35",
-      "title": "The Spectral Sennen (Graubünden)",
+      "title": "The Spectral Alpine Herdsmen (Graubünden)",
       "url": "/folklore/stories/the-spectral-sennen-graubunden/",
       "year": 1874,
       "author": "D. Jecklin"
@@ -1146,32 +1160,18 @@
       "author": "Ernst L. Rochholz"
     },
     {
-      "id": "e4ecdf959955c869b27d59cf81c4aea86d9c1382",
-      "title": "The Toggeli and the Baptismal Name (The Danger of Waking)",
-      "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/",
-      "year": 1926,
-      "author": "Josef Müller"
+      "id": "a3f5942218fe1751353407c72f86fbb7ead02201",
+      "title": "The Three-Finger Stone (Schwyz)",
+      "url": "/folklore/stories/the-dreifingerstein-schwyz/",
+      "year": 1865,
+      "author": "Alois Lütolf"
     },
     {
-      "id": "47c0d034d6bed56e7bb1d88986b3f8a9f4b19c08",
-      "title": "The Toggeli and the Baptismal Name (The Full Name)",
-      "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/",
-      "year": 1926,
-      "author": "Josef Müller"
-    },
-    {
-      "id": "c5015c64a814b57be05a12692c882b64b50c9851",
-      "title": "The Totenvolk in Davos (Kessler’s Pharmacy)",
-      "url": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/",
-      "year": 1874,
-      "author": "D. Jecklin"
-    },
-    {
-      "id": "6459b0f84550e7003ceab6128bc87e26aee2d327",
-      "title": "The Totenvolk in Davos (The Coffin)",
-      "url": "/folklore/stories/the-totenvolk-in-davos-coffin/",
-      "year": 1874,
-      "author": "D. Jecklin"
+      "id": "82b79417966e44903944323bd4cf2a6d6c981221",
+      "title": "The Three-Finger Stone (Zug)",
+      "url": "/folklore/stories/the-dreifingerstein-zug/",
+      "year": 1854,
+      "author": "C. Kohlrusch"
     },
     {
       "id": "6c2ac635032b20327b751418b12be3f7cd8e4697",
@@ -1238,17 +1238,24 @@
     },
     {
       "id": "871a49790eb66c56994802e7c05aa649f484654b",
-      "title": "The Wasserfräulein near Zug (Kohlrusch)",
+      "title": "The Water Maiden near Zug (Kohlrusch)",
       "url": "/folklore/stories/the-wasserfraulein-near-zug-kohlrusch/",
       "year": 1854,
       "author": "C. Kohlrusch"
     },
     {
       "id": "fadd3437afc72bb06329de025416fd71266e6583",
-      "title": "The Wasserfräulein near Zug (Lütolf)",
+      "title": "The Water Maiden near Zug (Lütolf)",
       "url": "/folklore/stories/the-wasserfraulein-near-zug-lutolf/",
       "year": 1865,
       "author": "Alois Lütolf"
+    },
+    {
+      "id": "34038eddddbc582d925e2bac7065aa6bda6fed6d",
+      "title": "The Water Man at Staffelbach",
+      "url": "/folklore/stories/the-wassermann-at-staffelbach/",
+      "year": 1856,
+      "author": "Ernst L. Rochholz"
     },
     {
       "id": "934238f65d75d52248f6b956294ce61309c2558e",
@@ -1307,13 +1314,6 @@
       "author": "M. Sooder"
     },
     {
-      "id": "34038eddddbc582d925e2bac7065aa6bda6fed6d",
-      "title": "The Wässermann at Staffelbach",
-      "url": "/folklore/stories/the-wassermann-at-staffelbach/",
-      "year": 1856,
-      "author": "Ernst L. Rochholz"
-    },
-    {
       "id": "d5146c4ce9ee5cc6a1271aac27179997ee609147",
       "title": "Touching a Spirit (Maderanertal)",
       "url": "/folklore/stories/touching-a-spirit-maderanertal/",
@@ -1354,6 +1354,13 @@
       "url": "/folklore/stories/uncanny-st-gallen/",
       "year": 1903,
       "author": "Jakob Kuoni"
+    },
+    {
+      "id": "5dbbb4ca07221a731ca9f05249a4651f38f02e2e",
+      "title": "Water Rights at Ursprung",
+      "url": "/folklore/stories/wasserrecht-at-ursprung/",
+      "year": 1856,
+      "author": "Ernst L. Rochholz"
     },
     {
       "id": "d6f9180e83886a45cc58238908d28c1931981c23",
@@ -1403,25 +1410,18 @@
       "url": "/folklore/stories/womens-cunning-graubunden/",
       "year": 1874,
       "author": "D. Jecklin"
-    },
-    {
-      "id": "5dbbb4ca07221a731ca9f05249a4651f38f02e2e",
-      "title": "Wässerrecht at Ursprung",
-      "url": "/folklore/stories/wasserrecht-at-ursprung/",
-      "year": 1856,
-      "author": "Ernst L. Rochholz"
     }
   ],
   "source_notes": [
     {
-      "id": "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5",
-      "title": "Das Wydenweiblein (The Wyden Woman)",
-      "url": "/folklore/stories/the-wyden-woman/"
+      "id": "b94b31288d269cdbc55a79dfbeef72fce89895d0",
+      "title": "The Wild Hunt (Source Note)",
+      "url": "/folklore/stories/the-wild-hunt/"
     },
     {
-      "id": "b94b31288d269cdbc55a79dfbeef72fce89895d0",
-      "title": "Das Wütisheer (The Wild Hunt)",
-      "url": "/folklore/stories/the-wild-hunt/"
+      "id": "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5",
+      "title": "The Wyden Woman",
+      "url": "/folklore/stories/the-wyden-woman/"
     }
   ],
   "urls_by_id": {

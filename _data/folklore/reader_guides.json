@@ -11699,7 +11699,7 @@
       "label": "Altdorf",
       "stories": [
         {
-          "title": "Häägglä with a Ghost (Schattdorf)",
+          "title": "Finger Wrestling with a Ghost (Schattdorf)",
           "url": "/folklore/stories/haaggla-with-a-ghost-schattdorf/"
         },
         {
@@ -11759,12 +11759,12 @@
       "label": "Attinghausen",
       "stories": [
         {
-          "title": "Das Zauberbuch (The Magic Book)",
-          "url": "/folklore/stories/the-magic-book/"
-        },
-        {
           "title": "The Bull of Uri (Lienert)",
           "url": "/folklore/stories/the-bull-of-uri-lienert/"
+        },
+        {
+          "title": "The Magic Book",
+          "url": "/folklore/stories/the-magic-book/"
         },
         {
           "title": "The Punished Witch (Uri)",
@@ -11813,7 +11813,7 @@
       "label": "Bahlisalp",
       "stories": [
         {
-          "title": "The Origin of the Kuhreihen (Bern)",
+          "title": "The Origin of the Cowherd’s Song (Bern)",
           "url": "/folklore/stories/the-origin-of-the-kuhreihen-bern/"
         }
       ]
@@ -11871,11 +11871,11 @@
       "label": "Beatenberg",
       "stories": [
         {
-          "title": "The Musterung on Seefeld (Hartmann)",
+          "title": "The Muster on Seefeld (Hartmann)",
           "url": "/folklore/stories/the-musterung-on-seefeld-hartmann/"
         },
         {
-          "title": "The Musterung on Seefeld (Kohlrusch)",
+          "title": "The Muster on Seefeld (Kohlrusch)",
           "url": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/"
         }
       ]
@@ -11933,19 +11933,27 @@
       "label": "Bern",
       "stories": [
         {
-          "title": "Nuns as Schneeaugen (Hartmann)",
+          "title": "Nuns as Snow Eyes (Hartmann)",
           "url": "/folklore/stories/nuns-as-schneeaugen-hartmann/"
         },
         {
-          "title": "Nuns as Schneeaugen (Kohlrusch)",
+          "title": "Nuns as Snow Eyes (Kohlrusch)",
           "url": "/folklore/stories/nuns-as-schneeaugen-kohlrusch/"
         },
         {
-          "title": "The Devil's Karrweg (Hartmann)",
+          "title": "Saint Martin’s Imprint (Hartmann)",
+          "url": "/folklore/stories/the-martinsdruck-hartmann/"
+        },
+        {
+          "title": "Saint Martin’s Imprint (Vernaleken)",
+          "url": "/folklore/stories/the-martinsdruck-vernaleken/"
+        },
+        {
+          "title": "The Devil's Cart Road (Hartmann)",
           "url": "/folklore/stories/the-devils-karrweg-hartmann/"
         },
         {
-          "title": "The Devil’s Karrweg (Kohlrusch)",
+          "title": "The Devil’s Cart Road (Kohlrusch)",
           "url": "/folklore/stories/the-devils-karrweg-kohlrusch/"
         },
         {
@@ -11965,23 +11973,15 @@
           "url": "/folklore/stories/the-hauri-steinbergalp/"
         },
         {
-          "title": "The Martinsdruck (Hartmann)",
-          "url": "/folklore/stories/the-martinsdruck-hartmann/"
-        },
-        {
-          "title": "The Martinsdruck (Vernaleken)",
-          "url": "/folklore/stories/the-martinsdruck-vernaleken/"
-        },
-        {
           "title": "The Mountain Spirit (Bern)",
           "url": "/folklore/stories/the-mountain-spirit-bern/"
         },
         {
-          "title": "The Musterung on Seefeld (Hartmann)",
+          "title": "The Muster on Seefeld (Hartmann)",
           "url": "/folklore/stories/the-musterung-on-seefeld-hartmann/"
         },
         {
-          "title": "The Musterung on Seefeld (Kohlrusch)",
+          "title": "The Muster on Seefeld (Kohlrusch)",
           "url": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/"
         },
         {
@@ -11989,7 +11989,7 @@
           "url": "/folklore/stories/the-noblewoman-of-milan-bern/"
         },
         {
-          "title": "The Origin of the Kuhreihen (Bern)",
+          "title": "The Origin of the Cowherd’s Song (Bern)",
           "url": "/folklore/stories/the-origin-of-the-kuhreihen-bern/"
         },
         {
@@ -12001,7 +12001,7 @@
           "url": "/folklore/stories/the-rottal-an-alpine-hell/"
         },
         {
-          "title": "The Spectral Sennen (Bern)",
+          "title": "The Spectral Alpine Herdsmen (Bern)",
           "url": "/folklore/stories/the-spectral-sennen-bern/"
         },
         {
@@ -12055,7 +12055,7 @@
       "label": "Billen",
       "stories": [
         {
-          "title": "Driven Home by the arme Seelen (Billen)",
+          "title": "Driven Home by the Poor Souls (Billen)",
           "url": "/folklore/stories/driven-home-by-the-arme-seelen-billen/"
         }
       ]
@@ -12167,7 +12167,7 @@
           "url": "/folklore/stories/the-healed-helvetian-woman/"
         },
         {
-          "title": "Wässerrecht at Ursprung",
+          "title": "Water Rights at Ursprung",
           "url": "/folklore/stories/wasserrecht-at-ursprung/"
         }
       ]
@@ -12187,7 +12187,7 @@
       "label": "Bürglen",
       "stories": [
         {
-          "title": "Driven Home by the arme Seelen (Billen)",
+          "title": "Driven Home by the Poor Souls (Billen)",
           "url": "/folklore/stories/driven-home-by-the-arme-seelen-billen/"
         },
         {
@@ -12269,11 +12269,11 @@
       "label": "Davos",
       "stories": [
         {
-          "title": "The Totenvolk in Davos (Kessler’s Pharmacy)",
+          "title": "The Dead Folk in Davos (Kessler’s Pharmacy)",
           "url": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/"
         },
         {
-          "title": "The Totenvolk in Davos (The Coffin)",
+          "title": "The Dead Folk in Davos (The Coffin)",
           "url": "/folklore/stories/the-totenvolk-in-davos-coffin/"
         }
       ]
@@ -12303,11 +12303,11 @@
       "label": "Därligen",
       "stories": [
         {
-          "title": "The Devil's Karrweg (Hartmann)",
+          "title": "The Devil's Cart Road (Hartmann)",
           "url": "/folklore/stories/the-devils-karrweg-hartmann/"
         },
         {
-          "title": "The Devil’s Karrweg (Kohlrusch)",
+          "title": "The Devil’s Cart Road (Kohlrusch)",
           "url": "/folklore/stories/the-devils-karrweg-kohlrusch/"
         }
       ]
@@ -12337,11 +12337,11 @@
       "label": "Eiger",
       "stories": [
         {
-          "title": "The Martinsdruck (Hartmann)",
+          "title": "Saint Martin’s Imprint (Hartmann)",
           "url": "/folklore/stories/the-martinsdruck-hartmann/"
         },
         {
-          "title": "The Martinsdruck (Vernaleken)",
+          "title": "Saint Martin’s Imprint (Vernaleken)",
           "url": "/folklore/stories/the-martinsdruck-vernaleken/"
         }
       ]
@@ -12395,7 +12395,7 @@
       "label": "Entlebuch",
       "stories": [
         {
-          "title": "The Bold Melker",
+          "title": "The Bold Milker",
           "url": "/folklore/stories/the-bold-melker/"
         },
         {
@@ -12443,7 +12443,7 @@
       "label": "Escholzmatt",
       "stories": [
         {
-          "title": "The Bold Melker",
+          "title": "The Bold Milker",
           "url": "/folklore/stories/the-bold-melker/"
         },
         {
@@ -12511,7 +12511,7 @@
       "label": "Fricktal",
       "stories": [
         {
-          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "title": "Hornussen's Hunger Spring and Säli Spring",
           "url": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/"
         },
         {
@@ -12593,6 +12593,14 @@
       "label": "Graubünden",
       "stories": [
         {
+          "title": "The Dead Folk in Davos (Kessler’s Pharmacy)",
+          "url": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/"
+        },
+        {
+          "title": "The Dead Folk in Davos (The Coffin)",
+          "url": "/folklore/stories/the-totenvolk-in-davos-coffin/"
+        },
+        {
           "title": "The Destruction of Plurs (Rochholz)",
           "url": "/folklore/stories/the-destruction-of-plurs-rochholz/"
         },
@@ -12629,19 +12637,19 @@
           "url": "/folklore/stories/the-punished-witch-graubunden/"
         },
         {
-          "title": "The Schlangenbanner (Jecklin)",
-          "url": "/folklore/stories/the-schlangenbanner-jecklin/"
-        },
-        {
-          "title": "The Schlangenbanner (Lienert)",
-          "url": "/folklore/stories/the-schlangenbanner-lienert/"
-        },
-        {
           "title": "The Serpent Maiden (Graubünden)",
           "url": "/folklore/stories/the-serpent-maiden-graubunden/"
         },
         {
-          "title": "The Spectral Sennen (Graubünden)",
+          "title": "The Snake Charmer (Jecklin)",
+          "url": "/folklore/stories/the-schlangenbanner-jecklin/"
+        },
+        {
+          "title": "The Snake Charmer (Lienert)",
+          "url": "/folklore/stories/the-schlangenbanner-lienert/"
+        },
+        {
+          "title": "The Spectral Alpine Herdsmen (Graubünden)",
           "url": "/folklore/stories/the-spectral-sennen-graubunden/"
         },
         {
@@ -12651,14 +12659,6 @@
         {
           "title": "The Three Golden Apples (Graubünden)",
           "url": "/folklore/stories/the-three-golden-apples-graubunden/"
-        },
-        {
-          "title": "The Totenvolk in Davos (Kessler’s Pharmacy)",
-          "url": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/"
-        },
-        {
-          "title": "The Totenvolk in Davos (The Coffin)",
-          "url": "/folklore/stories/the-totenvolk-in-davos-coffin/"
         },
         {
           "title": "Women’s Cunning (Graubünden)",
@@ -12689,11 +12689,11 @@
       "label": "Grindelwald",
       "stories": [
         {
-          "title": "The Martinsdruck (Hartmann)",
+          "title": "Saint Martin’s Imprint (Hartmann)",
           "url": "/folklore/stories/the-martinsdruck-hartmann/"
         },
         {
-          "title": "The Martinsdruck (Vernaleken)",
+          "title": "Saint Martin’s Imprint (Vernaleken)",
           "url": "/folklore/stories/the-martinsdruck-vernaleken/"
         },
         {
@@ -12751,11 +12751,11 @@
       "label": "Habkern",
       "stories": [
         {
-          "title": "The Musterung on Seefeld (Hartmann)",
+          "title": "The Muster on Seefeld (Hartmann)",
           "url": "/folklore/stories/the-musterung-on-seefeld-hartmann/"
         },
         {
-          "title": "The Musterung on Seefeld (Kohlrusch)",
+          "title": "The Muster on Seefeld (Kohlrusch)",
           "url": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/"
         }
       ]
@@ -12825,7 +12825,7 @@
       "label": "Hornussen",
       "stories": [
         {
-          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "title": "Hornussen's Hunger Spring and Säli Spring",
           "url": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/"
         },
         {
@@ -12863,7 +12863,7 @@
       "label": "Hérémence",
       "stories": [
         {
-          "title": "The Gratzug (Tscheinen and Ruppen)",
+          "title": "The Procession of the Dead (Tscheinen and Ruppen)",
           "url": "/folklore/stories/the-gratzug-tscheinen-ruppen/"
         }
       ]
@@ -12873,7 +12873,7 @@
       "label": "Höhronen",
       "stories": [
         {
-          "title": "The Dreifingerstein (Zug)",
+          "title": "The Three-Finger Stone (Zug)",
           "url": "/folklore/stories/the-dreifingerstein-zug/"
         }
       ]
@@ -12903,19 +12903,19 @@
       "label": "Interlaken",
       "stories": [
         {
-          "title": "Nuns as Schneeaugen (Hartmann)",
+          "title": "Nuns as Snow Eyes (Hartmann)",
           "url": "/folklore/stories/nuns-as-schneeaugen-hartmann/"
         },
         {
-          "title": "Nuns as Schneeaugen (Kohlrusch)",
+          "title": "Nuns as Snow Eyes (Kohlrusch)",
           "url": "/folklore/stories/nuns-as-schneeaugen-kohlrusch/"
         },
         {
-          "title": "The Devil's Karrweg (Hartmann)",
+          "title": "The Devil's Cart Road (Hartmann)",
           "url": "/folklore/stories/the-devils-karrweg-hartmann/"
         },
         {
-          "title": "The Devil’s Karrweg (Kohlrusch)",
+          "title": "The Devil’s Cart Road (Kohlrusch)",
           "url": "/folklore/stories/the-devils-karrweg-kohlrusch/"
         }
       ]
@@ -12929,12 +12929,12 @@
           "url": "/folklore/stories/the-devil-and-the-poacher-muller/"
         },
         {
-          "title": "The Spirit in the Hay Door (Graggerberg)",
-          "url": "/folklore/stories/the-spirit-in-the-hay-door-graggerberg/"
+          "title": "The Nightmare Spirit and the Baptismal Name (The Full Name)",
+          "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/"
         },
         {
-          "title": "The Toggeli and the Baptismal Name (The Full Name)",
-          "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/"
+          "title": "The Spirit in the Hay Door (Graggerberg)",
+          "url": "/folklore/stories/the-spirit-in-the-hay-door-graggerberg/"
         }
       ]
     },
@@ -12951,7 +12951,7 @@
           "url": "/folklore/stories/the-giants-of-iseltwald-kohlrusch/"
         },
         {
-          "title": "The Spectral Sennen (Bern)",
+          "title": "The Spectral Alpine Herdsmen (Bern)",
           "url": "/folklore/stories/the-spectral-sennen-bern/"
         }
       ]
@@ -12961,7 +12961,7 @@
       "label": "Isental",
       "stories": [
         {
-          "title": "Driven Home by the arme Seelen (Isental)",
+          "title": "Driven Home by the Poor Souls (Isental)",
           "url": "/folklore/stories/driven-home-by-the-arme-seelen-isental/"
         },
         {
@@ -12979,7 +12979,7 @@
       "label": "Jagdmatt",
       "stories": [
         {
-          "title": "An arme Seele (Jagdmatt)",
+          "title": "A Poor Soul (Jagdmatt)",
           "url": "/folklore/stories/an-arme-seele-jagdmatt/"
         }
       ]
@@ -13049,7 +13049,7 @@
       "label": "Klosters",
       "stories": [
         {
-          "title": "The Spectral Sennen (Graubünden)",
+          "title": "The Spectral Alpine Herdsmen (Graubünden)",
           "url": "/folklore/stories/the-spectral-sennen-graubunden/"
         }
       ]
@@ -13179,11 +13179,11 @@
       "label": "Lake Thun",
       "stories": [
         {
-          "title": "The Devil's Karrweg (Hartmann)",
+          "title": "The Devil's Cart Road (Hartmann)",
           "url": "/folklore/stories/the-devils-karrweg-hartmann/"
         },
         {
-          "title": "The Devil’s Karrweg (Kohlrusch)",
+          "title": "The Devil’s Cart Road (Kohlrusch)",
           "url": "/folklore/stories/the-devils-karrweg-kohlrusch/"
         }
       ]
@@ -13193,11 +13193,11 @@
       "label": "Lake Zug",
       "stories": [
         {
-          "title": "The Wasserfräulein near Zug (Kohlrusch)",
+          "title": "The Water Maiden near Zug (Kohlrusch)",
           "url": "/folklore/stories/the-wasserfraulein-near-zug-kohlrusch/"
         },
         {
-          "title": "The Wasserfräulein near Zug (Lütolf)",
+          "title": "The Water Maiden near Zug (Lütolf)",
           "url": "/folklore/stories/the-wasserfraulein-near-zug-lutolf/"
         }
       ]
@@ -13311,7 +13311,7 @@
           "url": "/folklore/stories/hans-baschi-jakober-of-uri/"
         },
         {
-          "title": "The Bold Melker",
+          "title": "The Bold Milker",
           "url": "/folklore/stories/the-bold-melker/"
         },
         {
@@ -13363,7 +13363,7 @@
       "label": "Maderanertal",
       "stories": [
         {
-          "title": "Häägglä with a Ghost (Maderanertal)",
+          "title": "Finger Wrestling with a Ghost (Maderanertal)",
           "url": "/folklore/stories/haaggla-with-a-ghost-maderanertal/"
         },
         {
@@ -13401,7 +13401,7 @@
       "label": "Meien",
       "stories": [
         {
-          "title": "In the Meien Valley (The Toggeli)",
+          "title": "In the Meien Valley (The Shadow Spirit)",
           "url": "/folklore/stories/in-the-meien-valley-toggeli/"
         },
         {
@@ -13443,7 +13443,7 @@
       "label": "Mettenberg",
       "stories": [
         {
-          "title": "The Martinsdruck (Hartmann)",
+          "title": "Saint Martin’s Imprint (Hartmann)",
           "url": "/folklore/stories/the-martinsdruck-hartmann/"
         }
       ]
@@ -13531,7 +13531,7 @@
       "label": "Olten",
       "stories": [
         {
-          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "title": "Hornussen's Hunger Spring and Säli Spring",
           "url": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/"
         }
       ]
@@ -13579,7 +13579,7 @@
           "url": "/folklore/stories/the-perjury-graubunden/"
         },
         {
-          "title": "The Schlangenbanner (Lienert)",
+          "title": "The Snake Charmer (Lienert)",
           "url": "/folklore/stories/the-schlangenbanner-lienert/"
         }
       ]
@@ -13661,7 +13661,7 @@
       "label": "Reuss Valley",
       "stories": [
         {
-          "title": "How He Got Rid of His Alraune",
+          "title": "How He Got Rid of His Mandrake Familiar",
           "url": "/folklore/stories/how-he-got-rid-of-his-alraune/"
         },
         {
@@ -13725,7 +13725,7 @@
           "url": "/folklore/stories/the-bannholzler-vernaleken/"
         },
         {
-          "title": "The Dreifingerstein (Schwyz)",
+          "title": "The Three-Finger Stone (Schwyz)",
           "url": "/folklore/stories/the-dreifingerstein-schwyz/"
         }
       ]
@@ -13775,7 +13775,7 @@
       "label": "Saaseralp",
       "stories": [
         {
-          "title": "The Schlangenbanner (Lienert)",
+          "title": "The Snake Charmer (Lienert)",
           "url": "/folklore/stories/the-schlangenbanner-lienert/"
         }
       ]
@@ -13825,7 +13825,7 @@
       "label": "Schattdorf",
       "stories": [
         {
-          "title": "Häägglä with a Ghost (Schattdorf)",
+          "title": "Finger Wrestling with a Ghost (Schattdorf)",
           "url": "/folklore/stories/haaggla-with-a-ghost-schattdorf/"
         },
         {
@@ -13863,7 +13863,7 @@
       "label": "Schlapin",
       "stories": [
         {
-          "title": "The Schlangenbanner (Jecklin)",
+          "title": "The Snake Charmer (Jecklin)",
           "url": "/folklore/stories/the-schlangenbanner-jecklin/"
         }
       ]
@@ -13893,7 +13893,7 @@
       "label": "Schreckhorn",
       "stories": [
         {
-          "title": "Nuns as Schneeaugen (Hartmann)",
+          "title": "Nuns as Snow Eyes (Hartmann)",
           "url": "/folklore/stories/nuns-as-schneeaugen-hartmann/"
         }
       ]
@@ -13903,7 +13903,7 @@
       "label": "Schreckhörner",
       "stories": [
         {
-          "title": "Nuns as Schneeaugen (Kohlrusch)",
+          "title": "Nuns as Snow Eyes (Kohlrusch)",
           "url": "/folklore/stories/nuns-as-schneeaugen-kohlrusch/"
         }
       ]
@@ -13921,11 +13921,11 @@
           "url": "/folklore/stories/the-cradle-spirit/"
         },
         {
-          "title": "The Dreifingerstein (Schwyz)",
+          "title": "The Three-Finger Stone (Schwyz)",
           "url": "/folklore/stories/the-dreifingerstein-schwyz/"
         },
         {
-          "title": "The Dreifingerstein (Zug)",
+          "title": "The Three-Finger Stone (Zug)",
           "url": "/folklore/stories/the-dreifingerstein-zug/"
         }
       ]
@@ -13935,7 +13935,7 @@
       "label": "Schächental",
       "stories": [
         {
-          "title": "An arme Seele (Saturday Supper)",
+          "title": "A Poor Soul (Saturday Supper)",
           "url": "/folklore/stories/an-arme-seele-saturday-supper/"
         },
         {
@@ -13973,7 +13973,7 @@
       "label": "Schöftland",
       "stories": [
         {
-          "title": "The Wässermann at Staffelbach",
+          "title": "The Water Man at Staffelbach",
           "url": "/folklore/stories/the-wassermann-at-staffelbach/"
         }
       ]
@@ -13983,11 +13983,11 @@
       "label": "Seefeld",
       "stories": [
         {
-          "title": "The Musterung on Seefeld (Hartmann)",
+          "title": "The Muster on Seefeld (Hartmann)",
           "url": "/folklore/stories/the-musterung-on-seefeld-hartmann/"
         },
         {
-          "title": "The Musterung on Seefeld (Kohlrusch)",
+          "title": "The Muster on Seefeld (Kohlrusch)",
           "url": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/"
         }
       ]
@@ -13997,7 +13997,7 @@
       "label": "Seelisberg",
       "stories": [
         {
-          "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
+          "title": "The Magic Book of the Three Poor Boys",
           "url": "/folklore/stories/the-magic-book-of-the-three-poor-boys/"
         },
         {
@@ -14019,11 +14019,11 @@
       "label": "Silenen",
       "stories": [
         {
-          "title": "An arme Seele (Fiery Teeth)",
+          "title": "A Poor Soul (Fiery Teeth)",
           "url": "/folklore/stories/an-arme-seele-fiery-teeth/"
         },
         {
-          "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
+          "title": "The Magic Book Helps in Time of Need",
           "url": "/folklore/stories/the-magic-book-helps-in-time-of-need/"
         }
       ]
@@ -14159,7 +14159,7 @@
       "label": "Staffelbach",
       "stories": [
         {
-          "title": "The Wässermann at Staffelbach",
+          "title": "The Water Man at Staffelbach",
           "url": "/folklore/stories/the-wassermann-at-staffelbach/"
         }
       ]
@@ -14199,7 +14199,7 @@
       "label": "Suhre",
       "stories": [
         {
-          "title": "The Wässermann at Staffelbach",
+          "title": "The Water Man at Staffelbach",
           "url": "/folklore/stories/the-wassermann-at-staffelbach/"
         }
       ]
@@ -14257,7 +14257,7 @@
       "label": "Switzerland",
       "stories": [
         {
-          "title": "The Origin of the Kuhreihen (Lienert)",
+          "title": "The Origin of the Cowherd’s Song (Lienert)",
           "url": "/folklore/stories/the-origin-of-the-kuhreihen-lienert/"
         }
       ]
@@ -14267,7 +14267,7 @@
       "label": "Sälischlössli",
       "stories": [
         {
-          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "title": "Hornussen's Hunger Spring and Säli Spring",
           "url": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/"
         }
       ]
@@ -14327,7 +14327,7 @@
       "label": "Tschingelfeldalp",
       "stories": [
         {
-          "title": "The Spectral Sennen (Bern)",
+          "title": "The Spectral Alpine Herdsmen (Bern)",
           "url": "/folklore/stories/the-spectral-sennen-bern/"
         }
       ]
@@ -14373,24 +14373,32 @@
           "url": "/folklore/stories/a-ghost-realp/"
         },
         {
-          "title": "An arme Seele (Fiery Teeth)",
+          "title": "A Poor Soul (Fiery Teeth)",
           "url": "/folklore/stories/an-arme-seele-fiery-teeth/"
         },
         {
-          "title": "An arme Seele (Jagdmatt)",
+          "title": "A Poor Soul (Jagdmatt)",
           "url": "/folklore/stories/an-arme-seele-jagdmatt/"
         },
         {
-          "title": "An arme Seele (Saturday Supper)",
+          "title": "A Poor Soul (Saturday Supper)",
           "url": "/folklore/stories/an-arme-seele-saturday-supper/"
         },
         {
-          "title": "Driven Home by the arme Seelen (Billen)",
+          "title": "Driven Home by the Poor Souls (Billen)",
           "url": "/folklore/stories/driven-home-by-the-arme-seelen-billen/"
         },
         {
-          "title": "Driven Home by the arme Seelen (Isental)",
+          "title": "Driven Home by the Poor Souls (Isental)",
           "url": "/folklore/stories/driven-home-by-the-arme-seelen-isental/"
+        },
+        {
+          "title": "Finger Wrestling with a Ghost (Maderanertal)",
+          "url": "/folklore/stories/haaggla-with-a-ghost-maderanertal/"
+        },
+        {
+          "title": "Finger Wrestling with a Ghost (Schattdorf)",
+          "url": "/folklore/stories/haaggla-with-a-ghost-schattdorf/"
         },
         {
           "title": "Fire on the Haystack (Amsteg)",
@@ -14409,16 +14417,8 @@
           "url": "/folklore/stories/hans-baschi-jakober-of-uri/"
         },
         {
-          "title": "How He Got Rid of His Alraune",
+          "title": "How He Got Rid of His Mandrake Familiar",
           "url": "/folklore/stories/how-he-got-rid-of-his-alraune/"
-        },
-        {
-          "title": "Häägglä with a Ghost (Maderanertal)",
-          "url": "/folklore/stories/haaggla-with-a-ghost-maderanertal/"
-        },
-        {
-          "title": "Häägglä with a Ghost (Schattdorf)",
-          "url": "/folklore/stories/haaggla-with-a-ghost-schattdorf/"
         },
         {
           "title": "In the Dragon's Cave (Scheenenkulm)",
@@ -14429,7 +14429,7 @@
           "url": "/folklore/stories/in-the-dragons-cave-chamois-hunter/"
         },
         {
-          "title": "In the Meien Valley (The Toggeli)",
+          "title": "In the Meien Valley (The Shadow Spirit)",
           "url": "/folklore/stories/in-the-meien-valley-toggeli/"
         },
         {
@@ -14451,10 +14451,6 @@
         {
           "title": "The Abducted Child (Schattdorf)",
           "url": "/folklore/stories/the-abducted-child-schattdorf/"
-        },
-        {
-          "title": "The Alpgeschrei",
-          "url": "/folklore/stories/the-alpgeschrei/"
         },
         {
           "title": "The Bewitched Cows (Uri)",
@@ -14489,6 +14485,10 @@
           "url": "/folklore/stories/the-cold-hand-uri/"
         },
         {
+          "title": "The Cry on the Alpine Pasture",
+          "url": "/folklore/stories/the-alpgeschrei/"
+        },
+        {
           "title": "The Devil and the Poacher (Lütolf)",
           "url": "/folklore/stories/the-devil-and-the-poacher-lutolf/"
         },
@@ -14511,6 +14511,14 @@
         {
           "title": "The Healing Toad (Uri)",
           "url": "/folklore/stories/the-healing-toad-uri/"
+        },
+        {
+          "title": "The Nightmare Spirit and the Baptismal Name (The Danger of Waking)",
+          "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/"
+        },
+        {
+          "title": "The Nightmare Spirit and the Baptismal Name (The Full Name)",
+          "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/"
         },
         {
           "title": "The Obliging Devil (Flüelen)",
@@ -14553,14 +14561,6 @@
           "url": "/folklore/stories/the-spirit-in-the-hay-door-goscheneralp/"
         },
         {
-          "title": "The Toggeli and the Baptismal Name (The Danger of Waking)",
-          "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/"
-        },
-        {
-          "title": "The Toggeli and the Baptismal Name (The Full Name)",
-          "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/"
-        },
-        {
           "title": "The White Dove (Uri)",
           "url": "/folklore/stories/the-white-dove-uri/"
         },
@@ -14597,7 +14597,7 @@
       "label": "Ursprung",
       "stories": [
         {
-          "title": "Wässerrecht at Ursprung",
+          "title": "Water Rights at Ursprung",
           "url": "/folklore/stories/wasserrecht-at-ursprung/"
         }
       ]
@@ -14645,20 +14645,20 @@
           "url": "/folklore/stories/the-dwarf-woman/"
         },
         {
-          "title": "The Gratzug (Jegerlehner)",
-          "url": "/folklore/stories/the-gratzug-jegerlehner/"
-        },
-        {
-          "title": "The Gratzug (Tscheinen and Ruppen)",
-          "url": "/folklore/stories/the-gratzug-tscheinen-ruppen/"
-        },
-        {
           "title": "The Noblewoman of Milan (Lienert)",
           "url": "/folklore/stories/the-noblewoman-of-milan-lienert/"
         },
         {
           "title": "The Noblewoman of Milan (Tscheinen and Ruppen)",
           "url": "/folklore/stories/the-noblewoman-of-milan-tscheinen-ruppen/"
+        },
+        {
+          "title": "The Procession of the Dead (Jegerlehner)",
+          "url": "/folklore/stories/the-gratzug-jegerlehner/"
+        },
+        {
+          "title": "The Procession of the Dead (Tscheinen and Ruppen)",
+          "url": "/folklore/stories/the-gratzug-tscheinen-ruppen/"
         },
         {
           "title": "The Procession of the Dead (Valais)",
@@ -14719,7 +14719,7 @@
           "url": "/folklore/stories/the-dwarf-woman/"
         },
         {
-          "title": "The Gratzug (Jegerlehner)",
+          "title": "The Procession of the Dead (Jegerlehner)",
           "url": "/folklore/stories/the-gratzug-jegerlehner/"
         }
       ]
@@ -14753,16 +14753,16 @@
       "label": "Wassen",
       "stories": [
         {
-          "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
-          "url": "/folklore/stories/the-magic-book-helps-in-time-of-need/"
-        },
-        {
           "title": "Freemasons (Paris)",
           "url": "/folklore/stories/freemasons-paris/"
         },
         {
           "title": "The Fence Stake (Uri)",
           "url": "/folklore/stories/the-fence-stake-uri/"
+        },
+        {
+          "title": "The Magic Book Helps in Time of Need",
+          "url": "/folklore/stories/the-magic-book-helps-in-time-of-need/"
         },
         {
           "title": "Touching a Spirit (Maderanertal)",
@@ -14907,10 +14907,6 @@
           "url": "/folklore/stories/the-bannholzler-vernaleken/"
         },
         {
-          "title": "The Dreifingerstein (Zug)",
-          "url": "/folklore/stories/the-dreifingerstein-zug/"
-        },
-        {
           "title": "The Fence Stake (Zug)",
           "url": "/folklore/stories/the-fence-stake-zug/"
         },
@@ -14919,11 +14915,15 @@
           "url": "/folklore/stories/the-straggele-vernaleken-zug/"
         },
         {
-          "title": "The Wasserfräulein near Zug (Kohlrusch)",
+          "title": "The Three-Finger Stone (Zug)",
+          "url": "/folklore/stories/the-dreifingerstein-zug/"
+        },
+        {
+          "title": "The Water Maiden near Zug (Kohlrusch)",
           "url": "/folklore/stories/the-wasserfraulein-near-zug-kohlrusch/"
         },
         {
-          "title": "The Wasserfräulein near Zug (Lütolf)",
+          "title": "The Water Maiden near Zug (Lütolf)",
           "url": "/folklore/stories/the-wasserfraulein-near-zug-lutolf/"
         }
       ]
@@ -14999,7 +14999,7 @@
       "label": "Alpine hauntings",
       "stories": [
         {
-          "title": "The Bold Melker",
+          "title": "The Bold Milker",
           "url": "/folklore/stories/the-bold-melker/"
         },
         {
@@ -15019,7 +15019,7 @@
           "url": "/folklore/stories/the-rochelmore-vernaleken/"
         },
         {
-          "title": "The Spectral Sennen (Bern)",
+          "title": "The Spectral Alpine Herdsmen (Bern)",
           "url": "/folklore/stories/the-spectral-sennen-bern/"
         }
       ]
@@ -15029,11 +15029,11 @@
       "label": "Alpine music",
       "stories": [
         {
-          "title": "The Origin of the Kuhreihen (Bern)",
+          "title": "The Origin of the Cowherd’s Song (Bern)",
           "url": "/folklore/stories/the-origin-of-the-kuhreihen-bern/"
         },
         {
-          "title": "The Origin of the Kuhreihen (Lienert)",
+          "title": "The Origin of the Cowherd’s Song (Lienert)",
           "url": "/folklore/stories/the-origin-of-the-kuhreihen-lienert/"
         }
       ]
@@ -15057,7 +15057,7 @@
           "url": "/folklore/stories/the-bleeding-bone-uri/"
         },
         {
-          "title": "The Spectral Sennen (Graubünden)",
+          "title": "The Spectral Alpine Herdsmen (Graubünden)",
           "url": "/folklore/stories/the-spectral-sennen-graubunden/"
         }
       ]
@@ -15153,16 +15153,16 @@
           "url": "/folklore/stories/the-boundary-race-muller/"
         },
         {
-          "title": "The Dreifingerstein (Zug)",
-          "url": "/folklore/stories/the-dreifingerstein-zug/"
-        },
-        {
           "title": "The Fence Stake (Zug)",
           "url": "/folklore/stories/the-fence-stake-zug/"
         },
         {
           "title": "The Perjury (St. Gallen)",
           "url": "/folklore/stories/the-perjury-st-gallen/"
+        },
+        {
+          "title": "The Three-Finger Stone (Zug)",
+          "url": "/folklore/stories/the-dreifingerstein-zug/"
         }
       ]
     },
@@ -15181,11 +15181,11 @@
       "label": "Buried cities",
       "stories": [
         {
-          "title": "The Musterung on Seefeld (Hartmann)",
+          "title": "The Muster on Seefeld (Hartmann)",
           "url": "/folklore/stories/the-musterung-on-seefeld-hartmann/"
         },
         {
-          "title": "The Musterung on Seefeld (Kohlrusch)",
+          "title": "The Muster on Seefeld (Kohlrusch)",
           "url": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/"
         }
       ]
@@ -15195,7 +15195,7 @@
       "label": "Calendar customs",
       "stories": [
         {
-          "title": "Driven Home by the arme Seelen (Billen)",
+          "title": "Driven Home by the Poor Souls (Billen)",
           "url": "/folklore/stories/driven-home-by-the-arme-seelen-billen/"
         },
         {
@@ -15217,7 +15217,7 @@
           "url": "/folklore/stories/egelsee-on-the-heitersberg/"
         },
         {
-          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "title": "Hornussen's Hunger Spring and Säli Spring",
           "url": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/"
         },
         {
@@ -15291,7 +15291,7 @@
       "label": "Children’s beliefs",
       "stories": [
         {
-          "title": "An arme Seele (Fiery Teeth)",
+          "title": "A Poor Soul (Fiery Teeth)",
           "url": "/folklore/stories/an-arme-seele-fiery-teeth/"
         }
       ]
@@ -15359,7 +15359,7 @@
       "label": "Courage and reward",
       "stories": [
         {
-          "title": "The Bold Melker",
+          "title": "The Bold Milker",
           "url": "/folklore/stories/the-bold-melker/"
         }
       ]
@@ -15405,14 +15405,6 @@
       "label": "Curses and wrongdoing",
       "stories": [
         {
-          "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
-          "url": "/folklore/stories/the-magic-book-of-the-three-poor-boys/"
-        },
-        {
-          "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
-          "url": "/folklore/stories/the-magic-book-helps-in-time-of-need/"
-        },
-        {
           "title": "Egelsee on the Heitersberg",
           "url": "/folklore/stories/egelsee-on-the-heitersberg/"
         },
@@ -15425,11 +15417,19 @@
           "url": "/folklore/stories/the-hunger-spring-at-degermoos/"
         },
         {
+          "title": "The Magic Book Helps in Time of Need",
+          "url": "/folklore/stories/the-magic-book-helps-in-time-of-need/"
+        },
+        {
+          "title": "The Magic Book of the Three Poor Boys",
+          "url": "/folklore/stories/the-magic-book-of-the-three-poor-boys/"
+        },
+        {
           "title": "The Schongau Baths on the Lindenberg",
           "url": "/folklore/stories/the-schongau-baths-on-the-lindenberg/"
         },
         {
-          "title": "Wässerrecht at Ursprung",
+          "title": "Water Rights at Ursprung",
           "url": "/folklore/stories/wasserrecht-at-ursprung/"
         }
       ]
@@ -15439,7 +15439,7 @@
       "label": "Dangerous bargains",
       "stories": [
         {
-          "title": "How He Got Rid of His Alraune",
+          "title": "How He Got Rid of His Mandrake Familiar",
           "url": "/folklore/stories/how-he-got-rid-of-his-alraune/"
         }
       ]
@@ -15449,7 +15449,7 @@
       "label": "Dangerous challenges",
       "stories": [
         {
-          "title": "Häägglä with a Ghost (Schattdorf)",
+          "title": "Finger Wrestling with a Ghost (Schattdorf)",
           "url": "/folklore/stories/haaggla-with-a-ghost-schattdorf/"
         },
         {
@@ -15467,11 +15467,11 @@
       "label": "Dangerous magic",
       "stories": [
         {
-          "title": "The Schlangenbanner (Jecklin)",
+          "title": "The Snake Charmer (Jecklin)",
           "url": "/folklore/stories/the-schlangenbanner-jecklin/"
         },
         {
-          "title": "The Schlangenbanner (Lienert)",
+          "title": "The Snake Charmer (Lienert)",
           "url": "/folklore/stories/the-schlangenbanner-lienert/"
         },
         {
@@ -15513,16 +15513,16 @@
       "label": "Death omens",
       "stories": [
         {
-          "title": "The Headless Man (Erstfeld)",
-          "url": "/folklore/stories/the-headless-man-erstfeld/"
-        },
-        {
-          "title": "The Totenvolk in Davos (Kessler’s Pharmacy)",
+          "title": "The Dead Folk in Davos (Kessler’s Pharmacy)",
           "url": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/"
         },
         {
-          "title": "The Totenvolk in Davos (The Coffin)",
+          "title": "The Dead Folk in Davos (The Coffin)",
           "url": "/folklore/stories/the-totenvolk-in-davos-coffin/"
+        },
+        {
+          "title": "The Headless Man (Erstfeld)",
+          "url": "/folklore/stories/the-headless-man-erstfeld/"
         }
       ]
     },
@@ -15635,7 +15635,7 @@
           "url": "/folklore/stories/the-interrupted-ride/"
         },
         {
-          "title": "The Wässermann at Staffelbach",
+          "title": "The Water Man at Staffelbach",
           "url": "/folklore/stories/the-wassermann-at-staffelbach/"
         }
       ]
@@ -15837,20 +15837,20 @@
       "label": "False oaths",
       "stories": [
         {
-          "title": "The Dreifingerstein (Schwyz)",
-          "url": "/folklore/stories/the-dreifingerstein-schwyz/"
-        },
-        {
-          "title": "The Dreifingerstein (Zug)",
-          "url": "/folklore/stories/the-dreifingerstein-zug/"
-        },
-        {
           "title": "The Perjury (Graubünden)",
           "url": "/folklore/stories/the-perjury-graubunden/"
         },
         {
           "title": "The Perjury (St. Gallen)",
           "url": "/folklore/stories/the-perjury-st-gallen/"
+        },
+        {
+          "title": "The Three-Finger Stone (Schwyz)",
+          "url": "/folklore/stories/the-dreifingerstein-schwyz/"
+        },
+        {
+          "title": "The Three-Finger Stone (Zug)",
+          "url": "/folklore/stories/the-dreifingerstein-zug/"
         }
       ]
     },
@@ -15901,11 +15901,11 @@
       "label": "Forbidden paths",
       "stories": [
         {
-          "title": "The Gratzug (Jegerlehner)",
+          "title": "The Procession of the Dead (Jegerlehner)",
           "url": "/folklore/stories/the-gratzug-jegerlehner/"
         },
         {
-          "title": "The Gratzug (Tscheinen and Ruppen)",
+          "title": "The Procession of the Dead (Tscheinen and Ruppen)",
           "url": "/folklore/stories/the-gratzug-tscheinen-ruppen/"
         },
         {
@@ -15927,11 +15927,11 @@
           "url": "/folklore/stories/a-ghost-realp/"
         },
         {
-          "title": "Häägglä with a Ghost (Maderanertal)",
+          "title": "Finger Wrestling with a Ghost (Maderanertal)",
           "url": "/folklore/stories/haaggla-with-a-ghost-maderanertal/"
         },
         {
-          "title": "Häägglä with a Ghost (Schattdorf)",
+          "title": "Finger Wrestling with a Ghost (Schattdorf)",
           "url": "/folklore/stories/haaggla-with-a-ghost-schattdorf/"
         },
         {
@@ -15965,11 +15965,11 @@
       "label": "Giants",
       "stories": [
         {
-          "title": "The Martinsdruck (Hartmann)",
+          "title": "Saint Martin’s Imprint (Hartmann)",
           "url": "/folklore/stories/the-martinsdruck-hartmann/"
         },
         {
-          "title": "The Martinsdruck (Vernaleken)",
+          "title": "Saint Martin’s Imprint (Vernaleken)",
           "url": "/folklore/stories/the-martinsdruck-vernaleken/"
         },
         {
@@ -16083,7 +16083,7 @@
           "url": "/folklore/stories/the-water-spirit-near-seckingen/"
         },
         {
-          "title": "Wässerrecht at Ursprung",
+          "title": "Water Rights at Ursprung",
           "url": "/folklore/stories/wasserrecht-at-ursprung/"
         }
       ]
@@ -16187,7 +16187,7 @@
       "label": "Household customs",
       "stories": [
         {
-          "title": "An arme Seele (Saturday Supper)",
+          "title": "A Poor Soul (Saturday Supper)",
           "url": "/folklore/stories/an-arme-seele-saturday-supper/"
         }
       ]
@@ -16207,7 +16207,7 @@
       "label": "Hunger and poverty",
       "stories": [
         {
-          "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
+          "title": "The Magic Book of the Three Poor Boys",
           "url": "/folklore/stories/the-magic-book-of-the-three-poor-boys/"
         }
       ]
@@ -16225,7 +16225,7 @@
           "url": "/folklore/stories/the-devil-and-the-poacher-muller/"
         },
         {
-          "title": "The Spectral Sennen (Bern)",
+          "title": "The Spectral Alpine Herdsmen (Bern)",
           "url": "/folklore/stories/the-spectral-sennen-bern/"
         }
       ]
@@ -16299,40 +16299,40 @@
       "label": "Landscape legends",
       "stories": [
         {
-          "title": "Nuns as Schneeaugen (Hartmann)",
+          "title": "Nuns as Snow Eyes (Hartmann)",
           "url": "/folklore/stories/nuns-as-schneeaugen-hartmann/"
         },
         {
-          "title": "Nuns as Schneeaugen (Kohlrusch)",
+          "title": "Nuns as Snow Eyes (Kohlrusch)",
           "url": "/folklore/stories/nuns-as-schneeaugen-kohlrusch/"
         },
         {
-          "title": "The Devil's Karrweg (Hartmann)",
+          "title": "Saint Martin’s Imprint (Hartmann)",
+          "url": "/folklore/stories/the-martinsdruck-hartmann/"
+        },
+        {
+          "title": "Saint Martin’s Imprint (Vernaleken)",
+          "url": "/folklore/stories/the-martinsdruck-vernaleken/"
+        },
+        {
+          "title": "The Devil's Cart Road (Hartmann)",
           "url": "/folklore/stories/the-devils-karrweg-hartmann/"
         },
         {
-          "title": "The Devil’s Karrweg (Kohlrusch)",
+          "title": "The Devil’s Cart Road (Kohlrusch)",
           "url": "/folklore/stories/the-devils-karrweg-kohlrusch/"
-        },
-        {
-          "title": "The Dreifingerstein (Schwyz)",
-          "url": "/folklore/stories/the-dreifingerstein-schwyz/"
         },
         {
           "title": "The Kreuzliberg",
           "url": "/folklore/stories/the-kreuzliberg/"
         },
         {
-          "title": "The Martinsdruck (Hartmann)",
-          "url": "/folklore/stories/the-martinsdruck-hartmann/"
-        },
-        {
-          "title": "The Martinsdruck (Vernaleken)",
-          "url": "/folklore/stories/the-martinsdruck-vernaleken/"
-        },
-        {
           "title": "The Mountain Spirit (Bern)",
           "url": "/folklore/stories/the-mountain-spirit-bern/"
+        },
+        {
+          "title": "The Three-Finger Stone (Schwyz)",
+          "url": "/folklore/stories/the-dreifingerstein-schwyz/"
         }
       ]
     },
@@ -16435,16 +16435,16 @@
       "label": "Magic books",
       "stories": [
         {
-          "title": "Das Zauberbuch (The Magic Book)",
+          "title": "The Magic Book",
           "url": "/folklore/stories/the-magic-book/"
         },
         {
-          "title": "Das Zauberbuch der drei armen Büblein (The Magic Book of the Three Poor Boys)",
-          "url": "/folklore/stories/the-magic-book-of-the-three-poor-boys/"
+          "title": "The Magic Book Helps in Time of Need",
+          "url": "/folklore/stories/the-magic-book-helps-in-time-of-need/"
         },
         {
-          "title": "Das Zauberbuch hilft in der Not (The Magic Book Helps in Time of Need)",
-          "url": "/folklore/stories/the-magic-book-helps-in-time-of-need/"
+          "title": "The Magic Book of the Three Poor Boys",
+          "url": "/folklore/stories/the-magic-book-of-the-three-poor-boys/"
         },
         {
           "title": "The Obliging Devil (Flüelen)",
@@ -16491,7 +16491,7 @@
       "label": "Magical wealth",
       "stories": [
         {
-          "title": "How He Got Rid of His Alraune",
+          "title": "How He Got Rid of His Mandrake Familiar",
           "url": "/folklore/stories/how-he-got-rid-of-his-alraune/"
         }
       ]
@@ -16601,7 +16601,7 @@
           "url": "/folklore/stories/the-abducted-child-brig/"
         },
         {
-          "title": "The Alpgeschrei",
+          "title": "The Cry on the Alpine Pasture",
           "url": "/folklore/stories/the-alpgeschrei/"
         },
         {
@@ -16637,15 +16637,15 @@
       "label": "Night oppression",
       "stories": [
         {
-          "title": "In the Meien Valley (The Toggeli)",
+          "title": "In the Meien Valley (The Shadow Spirit)",
           "url": "/folklore/stories/in-the-meien-valley-toggeli/"
         },
         {
-          "title": "The Toggeli and the Baptismal Name (The Danger of Waking)",
+          "title": "The Nightmare Spirit and the Baptismal Name (The Danger of Waking)",
           "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/"
         },
         {
-          "title": "The Toggeli and the Baptismal Name (The Full Name)",
+          "title": "The Nightmare Spirit and the Baptismal Name (The Full Name)",
           "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/"
         }
       ]
@@ -16655,7 +16655,7 @@
       "label": "Omens and premonitions",
       "stories": [
         {
-          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "title": "Hornussen's Hunger Spring and Säli Spring",
           "url": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/"
         },
         {
@@ -16681,7 +16681,7 @@
           "url": "/folklore/stories/aaraus-town-brook/"
         },
         {
-          "title": "Hornussen's Hungerbrunnen and Sälibrunnen",
+          "title": "Hornussen's Hunger Spring and Säli Spring",
           "url": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/"
         },
         {
@@ -16699,7 +16699,7 @@
       "label": "Penance and restitution",
       "stories": [
         {
-          "title": "An arme Seele (Jagdmatt)",
+          "title": "A Poor Soul (Jagdmatt)",
           "url": "/folklore/stories/an-arme-seele-jagdmatt/"
         },
         {
@@ -16707,7 +16707,7 @@
           "url": "/folklore/stories/the-fence-stake-uri/"
         },
         {
-          "title": "The Spectral Sennen (Graubünden)",
+          "title": "The Spectral Alpine Herdsmen (Graubünden)",
           "url": "/folklore/stories/the-spectral-sennen-graubunden/"
         },
         {
@@ -16757,7 +16757,7 @@
       "label": "Promises and bargains",
       "stories": [
         {
-          "title": "Driven Home by the arme Seelen (Isental)",
+          "title": "Driven Home by the Poor Souls (Isental)",
           "url": "/folklore/stories/driven-home-by-the-arme-seelen-isental/"
         },
         {
@@ -16795,11 +16795,11 @@
       "label": "Protective names",
       "stories": [
         {
-          "title": "The Toggeli and the Baptismal Name (The Danger of Waking)",
+          "title": "The Nightmare Spirit and the Baptismal Name (The Danger of Waking)",
           "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/"
         },
         {
-          "title": "The Toggeli and the Baptismal Name (The Full Name)",
+          "title": "The Nightmare Spirit and the Baptismal Name (The Full Name)",
           "url": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/"
         }
       ]
@@ -16897,11 +16897,11 @@
       "label": "Religious transgression",
       "stories": [
         {
-          "title": "The Devil's Karrweg (Hartmann)",
+          "title": "The Devil's Cart Road (Hartmann)",
           "url": "/folklore/stories/the-devils-karrweg-hartmann/"
         },
         {
-          "title": "The Devil’s Karrweg (Kohlrusch)",
+          "title": "The Devil’s Cart Road (Kohlrusch)",
           "url": "/folklore/stories/the-devils-karrweg-kohlrusch/"
         }
       ]
@@ -17043,11 +17043,11 @@
       "label": "Serpent lore",
       "stories": [
         {
-          "title": "The Schlangenbanner (Jecklin)",
+          "title": "The Snake Charmer (Jecklin)",
           "url": "/folklore/stories/the-schlangenbanner-jecklin/"
         },
         {
-          "title": "The Schlangenbanner (Lienert)",
+          "title": "The Snake Charmer (Lienert)",
           "url": "/folklore/stories/the-schlangenbanner-lienert/"
         }
       ]
@@ -17097,7 +17097,7 @@
           "url": "/folklore/stories/a-ghost-realp/"
         },
         {
-          "title": "In the Meien Valley (The Toggeli)",
+          "title": "In the Meien Valley (The Shadow Spirit)",
           "url": "/folklore/stories/in-the-meien-valley-toggeli/"
         }
       ]
@@ -17117,23 +17117,23 @@
       "label": "Spirits of the dead",
       "stories": [
         {
-          "title": "An arme Seele (Fiery Teeth)",
+          "title": "A Poor Soul (Fiery Teeth)",
           "url": "/folklore/stories/an-arme-seele-fiery-teeth/"
         },
         {
-          "title": "An arme Seele (Jagdmatt)",
+          "title": "A Poor Soul (Jagdmatt)",
           "url": "/folklore/stories/an-arme-seele-jagdmatt/"
         },
         {
-          "title": "An arme Seele (Saturday Supper)",
+          "title": "A Poor Soul (Saturday Supper)",
           "url": "/folklore/stories/an-arme-seele-saturday-supper/"
         },
         {
-          "title": "Driven Home by the arme Seelen (Billen)",
+          "title": "Driven Home by the Poor Souls (Billen)",
           "url": "/folklore/stories/driven-home-by-the-arme-seelen-billen/"
         },
         {
-          "title": "Driven Home by the arme Seelen (Isental)",
+          "title": "Driven Home by the Poor Souls (Isental)",
           "url": "/folklore/stories/driven-home-by-the-arme-seelen-isental/"
         },
         {
@@ -17141,11 +17141,11 @@
           "url": "/folklore/stories/in-the-meien-valley-wandering-souls/"
         },
         {
-          "title": "Nuns as Schneeaugen (Hartmann)",
+          "title": "Nuns as Snow Eyes (Hartmann)",
           "url": "/folklore/stories/nuns-as-schneeaugen-hartmann/"
         },
         {
-          "title": "Nuns as Schneeaugen (Kohlrusch)",
+          "title": "Nuns as Snow Eyes (Kohlrusch)",
           "url": "/folklore/stories/nuns-as-schneeaugen-kohlrusch/"
         },
         {
@@ -17161,20 +17161,20 @@
           "url": "/folklore/stories/the-cold-hand-valais/"
         },
         {
+          "title": "The Dead Folk in Davos (Kessler’s Pharmacy)",
+          "url": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/"
+        },
+        {
+          "title": "The Dead Folk in Davos (The Coffin)",
+          "url": "/folklore/stories/the-totenvolk-in-davos-coffin/"
+        },
+        {
           "title": "The Fence Stake (Uri)",
           "url": "/folklore/stories/the-fence-stake-uri/"
         },
         {
           "title": "The Fence Stake (Zug)",
           "url": "/folklore/stories/the-fence-stake-zug/"
-        },
-        {
-          "title": "The Gratzug (Jegerlehner)",
-          "url": "/folklore/stories/the-gratzug-jegerlehner/"
-        },
-        {
-          "title": "The Gratzug (Tscheinen and Ruppen)",
-          "url": "/folklore/stories/the-gratzug-tscheinen-ruppen/"
         },
         {
           "title": "The Noblewoman of Milan (Bern)",
@@ -17193,6 +17193,14 @@
           "url": "/folklore/stories/the-perjury-graubunden/"
         },
         {
+          "title": "The Procession of the Dead (Jegerlehner)",
+          "url": "/folklore/stories/the-gratzug-jegerlehner/"
+        },
+        {
+          "title": "The Procession of the Dead (Tscheinen and Ruppen)",
+          "url": "/folklore/stories/the-gratzug-tscheinen-ruppen/"
+        },
+        {
           "title": "The Procession of the Dead (Uri)",
           "url": "/folklore/stories/the-procession-of-the-dead-uri/"
         },
@@ -17205,14 +17213,6 @@
           "url": "/folklore/stories/the-seamstress-uri/"
         },
         {
-          "title": "The Totenvolk in Davos (Kessler’s Pharmacy)",
-          "url": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/"
-        },
-        {
-          "title": "The Totenvolk in Davos (The Coffin)",
-          "url": "/folklore/stories/the-totenvolk-in-davos-coffin/"
-        },
-        {
           "title": "The White Dove (Uri)",
           "url": "/folklore/stories/the-white-dove-uri/"
         }
@@ -17223,7 +17223,7 @@
       "label": "Storytelling and belief",
       "stories": [
         {
-          "title": "Häägglä with a Ghost (Maderanertal)",
+          "title": "Finger Wrestling with a Ghost (Maderanertal)",
           "url": "/folklore/stories/haaggla-with-a-ghost-maderanertal/"
         }
       ]
@@ -17233,11 +17233,11 @@
       "label": "Sunken settlements",
       "stories": [
         {
-          "title": "The Wasserfräulein near Zug (Kohlrusch)",
+          "title": "The Water Maiden near Zug (Kohlrusch)",
           "url": "/folklore/stories/the-wasserfraulein-near-zug-kohlrusch/"
         },
         {
-          "title": "The Wasserfräulein near Zug (Lütolf)",
+          "title": "The Water Maiden near Zug (Lütolf)",
           "url": "/folklore/stories/the-wasserfraulein-near-zug-lutolf/"
         }
       ]
@@ -17247,11 +17247,11 @@
       "label": "Supernatural teaching",
       "stories": [
         {
-          "title": "The Origin of the Kuhreihen (Bern)",
+          "title": "The Origin of the Cowherd’s Song (Bern)",
           "url": "/folklore/stories/the-origin-of-the-kuhreihen-bern/"
         },
         {
-          "title": "The Origin of the Kuhreihen (Lienert)",
+          "title": "The Origin of the Cowherd’s Song (Lienert)",
           "url": "/folklore/stories/the-origin-of-the-kuhreihen-lienert/"
         }
       ]
@@ -17357,11 +17357,11 @@
       "label": "Uncanny sounds",
       "stories": [
         {
-          "title": "The Musterung on Seefeld (Hartmann)",
+          "title": "The Muster on Seefeld (Hartmann)",
           "url": "/folklore/stories/the-musterung-on-seefeld-hartmann/"
         },
         {
-          "title": "The Musterung on Seefeld (Kohlrusch)",
+          "title": "The Muster on Seefeld (Kohlrusch)",
           "url": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/"
         },
         {
@@ -17437,11 +17437,11 @@
           "url": "/folklore/stories/the-hunger-spring-at-degermoos/"
         },
         {
-          "title": "The Wässermann at Staffelbach",
+          "title": "The Water Man at Staffelbach",
           "url": "/folklore/stories/the-wassermann-at-staffelbach/"
         },
         {
-          "title": "Wässerrecht at Ursprung",
+          "title": "Water Rights at Ursprung",
           "url": "/folklore/stories/wasserrecht-at-ursprung/"
         }
       ]
@@ -17459,11 +17459,11 @@
           "url": "/folklore/stories/the-golden-gate-lienert-1918/"
         },
         {
-          "title": "The Wasserfräulein near Zug (Kohlrusch)",
+          "title": "The Water Maiden near Zug (Kohlrusch)",
           "url": "/folklore/stories/the-wasserfraulein-near-zug-kohlrusch/"
         },
         {
-          "title": "The Wasserfräulein near Zug (Lütolf)",
+          "title": "The Water Maiden near Zug (Lütolf)",
           "url": "/folklore/stories/the-wasserfraulein-near-zug-lutolf/"
         }
       ]
@@ -17505,7 +17505,7 @@
       "label": "Weather omens",
       "stories": [
         {
-          "title": "The Alpgeschrei",
+          "title": "The Cry on the Alpine Pasture",
           "url": "/folklore/stories/the-alpgeschrei/"
         }
       ]
