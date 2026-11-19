@@ -24,6 +24,10 @@ mastodon-skip: true
 
 https://chartopia.d12dev.com/chart/7784/
 
+{% comment %}
+<!-- markdownlint-disable MD055 MD056 -->
+{% endcomment %}
+
 | | TL1 | TL2 | TL3 | TL4 | TL5 | TL6 |
 |-|-----|-----|-----|-----|-----|-----|
 | 1 | A collection of smooth stones | Balance Scale | Mechanical Scale | electrical bathroom scale | Networked Scale | Mass and Weight detector |
@@ -117,14 +121,18 @@ https://chartopia.d12dev.com/chart/7784/
 | 89 | Wooden "pins" | Handmade screws and bolts | Small machine parts | Metal Alloy Mass Produced machine parts | 3D Printed Machine Parts | Unprogrammed Nano Machines |
 | 90 | Wooden "pins" | Handmade screws and bolts | Nuts and bolts | Metal Alloy Nuts and Bolts | Printed Nuts and bolts | Unprogrammed Nano Machines |
 | 91 - 99 | Roll on Large Mundane Objects Table | Roll on Large Mundane Objects Table | Roll on Large Mundane Objects Table | Roll on Large Mundane Objects Table | Roll on Large Mundane Objects Table | Roll on Large Mundane Objects Table |
-
+{% comment %}
+<!-- markdownlint-enable MD055 MD056 -->
+{% endcomment %}
 
 
 ## Large Mundane Objects
 
 https://chartopia.d12dev.com/chart/7790/
 
-
+{% comment %}
+<!-- markdownlint-disable MD055 MD056 -->
+{% endcomment %}
 
 | | TL1 | TL2 | TL3 | TL4 | TL5 | TL6 |
 |-|-----|-----|-----|-----|-----|-----|
@@ -227,5 +235,10 @@ https://chartopia.d12dev.com/chart/7790/
 | 97 | Large Rock / Stump / Leather Sling | Metal Chair | Folding Metal Chair | Plastic Folding Chair | Syntetic Chair | Force Chair |
 | 98 | Solar Clock | Clock Tower Clock | Grandfather Clock | Electronic Grandfather Clock | Computer Controlled Grandfather Clock | Holo Grandfather Clock |
 | 99 | Leather Skin Tent | Large Nobles Tent | Beach Umbrella | Synthetic Beach Tent / Umbrella | Beach / Patio Shade Sail | Hover Shade Cover |
+
+{% comment %}
+<!-- markdownlint-enable MD055 MD056 -->
+{% endcomment %}
+
 
 *Originally published on Fixing Game Night.*
