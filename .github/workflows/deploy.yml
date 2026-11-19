@@ -163,10 +163,10 @@ jobs:
       - name: Install Playwright browsers
         timeout-minutes: 6
         run: |
-          # The Azure Ubuntu mirror intermittently stalls package downloads.
+          # Regional Ubuntu mirrors intermittently stall package downloads.
           # Keep the same signed packages and all three browser test engines.
           if [ -f /etc/apt/apt-mirrors.txt ]; then
-            sudo sed -i 's|http://azure.archive.ubuntu.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
+            sudo sed -E -i 's|https?://([a-z0-9.-]+\.)?archive\.ubuntu\.com/ubuntu|https://archive.ubuntu.com/ubuntu|g' /etc/apt/apt-mirrors.txt
           fi
           npx playwright install --with-deps chromium firefox webkit
 
