@@ -57,7 +57,7 @@ stories:
     behind them.
   links:
   - title: Swiss Folklore Collection
-    url: "/folklore/"
+    url: https://folklore.tschopp.org/
   - title: All Folklore Articles
     url: "/category/folklore/"
 - id: original-writing
@@ -223,4 +223,4 @@ about:
   - title: About the Author
     url: "/profile/"
   - title: Folklore Sources & Translation Notes
-    url: "/folklore/"
+    url: https://folklore.tschopp.org/

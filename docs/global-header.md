@@ -3,7 +3,7 @@
 The public navigation is maintained in `_data/site_navigation.yml`. Participating
 hosts and their selected sections are in `_data/header_sites.yml`. The five
 section hubs use `_data/site_sections.yml`. Build and publish tedt.org to update
-the navigation across all thirteen consumers after normal browser/CDN cache expiry.
+the navigation across all fourteen consumers after normal browser/CDN cache expiry.
 
 ## Embed Contract, Version 1
 
@@ -105,3 +105,11 @@ shared preference and listens to `tedt:theme-change`. It does not maintain a
 second theme preference. Hero images receive priority, while topic illustrations
 load lazily with explicit intrinsic dimensions. Tools loads its paired hero and
 the same small appearance adapter from TedT.org.
+
+## Folklore consumer on tschopp.org
+
+`folklore.tschopp.org` uses registry key `folklore` and section `stories`. It
+loads the central v1 runtime; its Märchen Engine v2 styles are local to that
+publication. The existing controller uses a host-only cookie outside tedt.org,
+so appearance remains local to folklore rather than sharing across root domains.
+The TTRPG design and runtime are unaffected.

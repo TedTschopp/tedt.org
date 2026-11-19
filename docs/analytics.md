@@ -55,3 +55,10 @@ Media files, feeds, JSON, MCP responses, and binary downloads are not instrument
 Validate with `python3 -m unittest discover -s tests -p test_site_analytics.py`,
 `node --test tests/analytics/*.test.mjs`, and each consumer's existing checks.
 Rollback restores the previous consumer commit or shared runtime release.
+
+## Dedicated folklore origin
+
+The shared runtime explicitly permits `folklore.tschopp.org` in public standard
+mode. GA4 and Clarity retain the existing configuration. The TedT.org-specific
+Cloudflare beacon token is suppressed on this different root domain. Other
+tschopp.org hosts remain outside the collector allowlist.

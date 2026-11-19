@@ -125,3 +125,17 @@ test('independent file pages never initialize production collectors', async () =
     assert.equal(await page.locator('body').textContent(), 'Offline edition');
   } finally { await context.close(); await rm(folder, { recursive: true }); }
 });
+
+test('dedicated folklore host uses public analytics without the old Cloudflare token', async () => {
+  const f = await fixture({ host: 'folklore.tschopp.org', path: '/stories/the-magic-book/' });
+  try {
+    assert.equal(f.requests.length, 2);
+    assert.ok(f.requests.some(value => value.includes('googletagmanager')));
+    assert.ok(f.requests.some(value => value.includes('clarity.ms')));
+    assert.ok(!f.requests.some(value => value.includes('cloudflareinsights')));
+    assert.equal(await f.page.evaluate(() => window.__TedTAnalyticsV1.masked), false);
+    assert.equal((await f.commands()).find(value => value[1] === 'page_view')[2].page_location, 'https://folklore.tschopp.org/stories/the-magic-book/');
+  } finally { await f.context.close(); }
+  const unrelated = await fixture({ host: 'other.tschopp.org' });
+  try { assert.deepEqual(unrelated.requests, []); } finally { await unrelated.context.close(); }
+});

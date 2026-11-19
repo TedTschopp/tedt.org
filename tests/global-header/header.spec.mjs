@@ -131,3 +131,18 @@ test('landing artwork follows shared Light, Dark, and System choices', async ({ 
     await expect(page.locator('picture[data-tedt-artwork] source[data-tedt-dark]')).toHaveCount(groups + 1);
   }
 });
+
+test('folklore custom domain keeps Stories navigation and its own appearance cookie', async ({ context }) => {
+  const consumer = `<!doctype html><html lang="en"><head><meta charset="utf-8"><script defer src="https://tedt.org/assets/global-header/v1/header.js"></script></head><body><tedt-global-header site="folklore" section="stories"><nav aria-label="Primary"><a href="https://tedt.org/">Ted Tschopp</a></nav></tedt-global-header><main>Folklore consumer</main></body></html>`;
+  await context.route('https://folklore.tschopp.org/', route => route.fulfill({ contentType: 'text/html', body: consumer }));
+  const page = await context.newPage();
+  await sharedAssets(page);
+  await page.goto('https://folklore.tschopp.org/');
+  await ready(page);
+  await expect(page.locator('tedt-global-header').getByRole('link', { name: 'Stories & Folklore', exact: true })).toHaveAttribute('data-active', 'true');
+  await page.locator('tedt-global-header').getByRole('button', { name: 'Dark', exact: true }).click();
+  const cookie = (await context.cookies('https://folklore.tschopp.org/')).find(item => item.name === 'tedt-appearance');
+  expect(cookie.domain).toBe('folklore.tschopp.org');
+  expect(cookie.secure).toBe(true);
+  expect((await context.cookies('https://tedt.org/')).some(item => item.name === 'tedt-appearance')).toBe(false);
+});

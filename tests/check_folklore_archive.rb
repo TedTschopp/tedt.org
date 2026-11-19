@@ -9,6 +9,35 @@ require 'uri'
 
 site = Pathname.new(ARGV.fetch(0, '_site'))
 root = Pathname.new(__dir__).parent
+
+# The full publication now has its own build. This checkout owns legacy fallbacks.
+migration_path = root.join('_data/folklore/migration.json')
+if migration_path.file?
+  migration = JSON.parse(migration_path.read)
+  abort 'Invalid folklore migration origin' unless migration.fetch('origin') == 'https://folklore.tschopp.org'
+  sitemap = REXML::Document.new(site.join('sitemap.xml').read)
+  locations = REXML::XPath.match(sitemap, '//*[local-name()="loc"]').map(&:text)
+  manifest = JSON.parse(site.join('indieweb-manifest.json').read).fetch('entries')
+  migration.fetch('routes').each do |old, target|
+    file = site.join(old.delete_prefix('/'), 'index.html')
+    document = Nokogiri::HTML(file.read)
+    unless target.start_with?('https://folklore.tschopp.org/') &&
+           document.at_css('link[rel="canonical"]')&.[]('href') == target &&
+           document.at_css('meta[http-equiv="refresh"]')&.[]('content') == "0; url=#{target}" &&
+           document.at_css('link[rel="webmention"]')&.[]('href') == 'https://webmention.io/tedt.org/webmention' &&
+           !document.at_css('[data-pagefind-body], #english, #original') &&
+           !locations.include?('https://tedt.org' + old) &&
+           !manifest.any? { |entry| entry['url'] == 'https://tedt.org' + old }
+      abort "Invalid folklore migration fallback at #{old}"
+    end
+  end
+  exceptions = migration.fetch('exceptions')
+  abort 'Embedded original-fiction fragment was redirected' if Nokogiri::HTML(site.join('folklore/stories/house-of-the-blood-comet.html').read).at_css('meta[http-equiv="refresh"]')
+  abort 'Existing Brunnegg article alias was changed' unless site.join('folklore/The-Bailiff-of-Brunnegg.html').file?
+  puts "Folklore migration OK (#{migration.fetch('routes').size} direct fallbacks; #{exceptions.size} legacy exceptions retained)"
+  exit 0
+end
+
 archive = JSON.parse(root.join('_data/folklore/archive.json').read)
 guides = JSON.parse(root.join('_data/folklore/reader_guides.json').read)
 story_stubs = root.glob('folklore/stories/**/*.html').filter_map do |path|
