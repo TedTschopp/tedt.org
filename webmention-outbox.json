@@ -10667,8 +10667,8 @@
         },
         "https://www.pwc.com": {
           "state": "retry",
-          "attempts": 22,
-          "next_attempt": "2026-11-19T13:30:16+00:00"
+          "attempts": 23,
+          "next_attempt": "2026-11-20T21:00:23+00:00"
         },
         "https://www2.deloitte.com": {
           "state": "unsupported",
@@ -10764,8 +10764,8 @@
       "deliveries": {
         "https://americanhistory.si.edu/lighting/19thcent/consq19.htm": {
           "state": "retry",
-          "attempts": 22,
-          "next_attempt": "2026-11-19T13:30:16+00:00"
+          "attempts": 23,
+          "next_attempt": "2026-11-20T21:00:23+00:00"
         },
         "https://blog.sciencemuseum.org.uk/james-watt-and-the-separate-condenser/": {
           "state": "unsupported",
@@ -10781,8 +10781,8 @@
         },
         "https://jods.mitpress.mit.edu/pub/ageofentanglement/release/1": {
           "state": "retry",
-          "attempts": 22,
-          "next_attempt": "2026-11-19T13:30:16+00:00"
+          "attempts": 23,
+          "next_attempt": "2026-11-20T21:00:23+00:00"
         },
         "https://pmc.ncbi.nlm.nih.gov/articles/PMC11244532/": {
           "state": "unsupported",
@@ -10850,13 +10850,13 @@
         },
         "https://www.metmuseum.org/exhibitions/listings/2012/printed-image-in-china": {
           "state": "retry",
-          "attempts": 22,
-          "next_attempt": "2026-11-19T13:30:16+00:00"
+          "attempts": 23,
+          "next_attempt": "2026-11-20T21:00:23+00:00"
         },
         "https://www.parliament.uk/about/living-heritage/transformingsociety/livinglearning/19thcentury/overview/factoryact/": {
           "state": "retry",
-          "attempts": 22,
-          "next_attempt": "2026-11-19T13:30:16+00:00"
+          "attempts": 23,
+          "next_attempt": "2026-11-20T21:00:23+00:00"
         },
         "https://www.vam.ac.uk/articles/arts-and-crafts-an-introduction": {
           "state": "unsupported",
