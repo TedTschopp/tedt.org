@@ -8,7 +8,7 @@ layout: null
   var w = window, d = document, embed = d.currentScript;
   var host = w.location.hostname.toLowerCase();
   if (w.__TedTAnalyticsV1 || !settings.enabled || w.location.protocol !== 'https:' ||
-      !(host === 'tedt.org' || host.endsWith('.tedt.org'))) return;
+      !(host === 'tedt.org' || host.endsWith('.tedt.org') || host === 'folklore.tschopp.org')) return;
   var blockedPath = /^\/(?:auth|api|mcp|payments?|checkout|billing|callback|logout)(?:\/|$)/i;
   var sensitiveQuery = /^(?:code|state|token|access_token|refresh_token|id_token|session|secret|api_key|key)$/i;
   var current = new URL(w.location.href);
@@ -89,7 +89,7 @@ layout: null
     load('https://www.clarity.ms/tag/' + encodeURIComponent(clarity.project_id));
   }
   // A deferred embed sees Cloudflare's server-injected tag before creating a manual one.
-  if (cf.enabled && cf.token && !d.querySelector('script[data-cf-beacon],script[src*="static.cloudflareinsights.com/beacon.min.js"]')) {
+  if (cf.enabled && cf.token && host !== 'folklore.tschopp.org' && !d.querySelector('script[data-cf-beacon],script[src*="static.cloudflareinsights.com/beacon.min.js"]')) {
     load('https://static.cloudflareinsights.com/beacon.min.js', { 'data-cf-beacon': JSON.stringify({ token: cf.token, spa: true }) });
   }
   d.addEventListener('click', function (e) {

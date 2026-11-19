@@ -2,6 +2,7 @@
 # frozen_string_literal: true
 
 require 'pathname'
+require 'json'
 
 REPO_ROOT = Pathname.new(__dir__).parent
 SITE_ROOT = Pathname.new(ARGV[0] || ENV['JEKYLL_DESTINATION'] || REPO_ROOT.join('_site').to_s)
@@ -63,7 +64,18 @@ end
 fail_with('No rendered authored page contains role-aware author credit.') if authored_pages.empty?
 fail_with('No rendered reprint contains source-author/editor credit.') if reprint_pages.empty?
 fail_with('No rendered quote contains source-author/curator credit.') if quote_pages.empty?
-fail_with('No rendered folklore story contains translation-editor credit.') if folklore_pages.empty?
+if folklore_pages.empty?
+  migration_file = Pathname.new(__dir__).parent.join('_data/folklore/migration.json')
+  if migration_file.file?
+    migration = JSON.parse(migration_file.read)
+    fail_with('Folklore migration is invalid.') unless migration['origin'] == 'https://folklore.tschopp.org'
+    fallback = SITE_ROOT.join('folklore/index.html').read
+    fail_with('Moved folklore collection has no canonical redirect.') unless fallback.include?('content="0; url=https://folklore.tschopp.org/"')
+    # The standalone publication runs full source/translator/disclosure checks for all tales.
+  else
+    fail_with('No rendered folklore story contains translation-editor credit.')
+  end
+end
 
 authored_pages.each do |path, html|
   next unless html.match?(/content-credit-author.*?Ted Tschopp/m)

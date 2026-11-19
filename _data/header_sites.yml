@@ -38,3 +38,6 @@
 - key: randomtables
   host: randomtables.tedt.org
   section: games
+- key: folklore
+  host: folklore.tschopp.org
+  section: stories

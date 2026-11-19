@@ -1,0 +1,1737 @@
+{
+  "version": 1,
+  "origin": "https://folklore.tschopp.org",
+  "source_origin": "https://tedt.org",
+  "source_commit": "fe0d59408814b6be09cb97e0b2938bfda2bebe3f",
+  "routes": {
+    "/folklore/entities/": "https://folklore.tschopp.org/entities/",
+    "/folklore/": "https://folklore.tschopp.org/",
+    "/folklore/locations/": "https://folklore.tschopp.org/locations/",
+    "/folklore/page/2/": "https://folklore.tschopp.org/page/2/",
+    "/folklore/page/3/": "https://folklore.tschopp.org/page/3/",
+    "/folklore/page/4/": "https://folklore.tschopp.org/page/4/",
+    "/folklore/page/5/": "https://folklore.tschopp.org/page/5/",
+    "/folklore/search/": "https://folklore.tschopp.org/search/",
+    "/folklore/stories/the-snake-queen/": "https://folklore.tschopp.org/stories/the-snake-queen/",
+    "/folklore/stories/haaggla-with-a-ghost-maderanertal/": "https://folklore.tschopp.org/stories/haaggla-with-a-ghost-maderanertal/",
+    "/folklore/stories/the-white-chamois-valais/": "https://folklore.tschopp.org/stories/the-white-chamois-valais/",
+    "/folklore/stories/the-interrupted-ride/": "https://folklore.tschopp.org/stories/the-interrupted-ride/",
+    "/folklore/stories/034cdca9ccd37d16e4c8018009368915aad972ba/": "https://folklore.tschopp.org/stories/the-interrupted-ride/",
+    "/folklore/stories/the-devils-karrweg-kohlrusch/": "https://folklore.tschopp.org/stories/the-devils-karrweg-kohlrusch/",
+    "/folklore/stories/the-seelisberg-gate-muller/": "https://folklore.tschopp.org/stories/the-seelisberg-gate-muller/",
+    "/folklore/stories/the-castle-maiden-benkenriet/": "https://folklore.tschopp.org/stories/the-castle-maiden-benkenriet/",
+    "/folklore/stories/uncanny-st-gallen/": "https://folklore.tschopp.org/stories/uncanny-st-gallen/",
+    "/folklore/stories/the-wild-hunt-sooder-1929/": "https://folklore.tschopp.org/stories/the-wild-hunt-sooder-1929/",
+    "/folklore/stories/the-abducted-child-rigelibueb/": "https://folklore.tschopp.org/stories/the-abducted-child-rigelibueb/",
+    "/folklore/stories/the-seelisberg-gate-lutolf/": "https://folklore.tschopp.org/stories/the-seelisberg-gate-lutolf/",
+    "/folklore/stories/the-unnatural-son/": "https://folklore.tschopp.org/stories/the-unnatural-son/",
+    "/folklore/stories/the-unfulfilled-dream-rochholz/": "https://folklore.tschopp.org/stories/the-unfulfilled-dream-rochholz/",
+    "/folklore/stories/william-tell-uri/": "https://folklore.tschopp.org/stories/william-tell-uri/",
+    "/folklore/stories/in-the-meien-valley-toggeli/": "https://folklore.tschopp.org/stories/in-the-meien-valley-toggeli/",
+    "/folklore/stories/the-little-leather-cap/": "https://folklore.tschopp.org/stories/the-little-leather-cap/",
+    "/folklore/stories/the-three-golden-apples-graubunden/": "https://folklore.tschopp.org/stories/the-three-golden-apples-graubunden/",
+    "/folklore/stories/the-alpgeschrei/": "https://folklore.tschopp.org/stories/the-alpgeschrei/",
+    "/folklore/stories/womens-cunning-graubunden/": "https://folklore.tschopp.org/stories/womens-cunning-graubunden/",
+    "/folklore/stories/the-gratzug-tscheinen-ruppen/": "https://folklore.tschopp.org/stories/the-gratzug-tscheinen-ruppen/",
+    "/folklore/stories/the-castle-maiden-rambach/": "https://folklore.tschopp.org/stories/the-castle-maiden-rambach/",
+    "/folklore/stories/the-punished-witch-uri/": "https://folklore.tschopp.org/stories/the-punished-witch-uri/",
+    "/folklore/stories/the-three-brothers-graubunden/": "https://folklore.tschopp.org/stories/the-three-brothers-graubunden/",
+    "/folklore/stories/the-perjury-graubunden/": "https://folklore.tschopp.org/stories/the-perjury-graubunden/",
+    "/folklore/stories/the-devils-bridge-st-gallen/": "https://folklore.tschopp.org/stories/the-devils-bridge-st-gallen/",
+    "/folklore/stories/uncanny-bern/": "https://folklore.tschopp.org/stories/uncanny-bern/",
+    "/folklore/stories/the-martinsdruck-hartmann/": "https://folklore.tschopp.org/stories/the-martinsdruck-hartmann/",
+    "/folklore/stories/bertha-of-baldegg/": "https://folklore.tschopp.org/stories/bertha-of-baldegg/",
+    "/folklore/stories/1e90ecf18f18fa3b30d4db9aee8d2285208bc294/": "https://folklore.tschopp.org/stories/bertha-of-baldegg/",
+    "/folklore/stories/the-seamstress-uri/": "https://folklore.tschopp.org/stories/the-seamstress-uri/",
+    "/folklore/stories/in-the-dragons-cave-scheenenkulm/": "https://folklore.tschopp.org/stories/in-the-dragons-cave-scheenenkulm/",
+    "/folklore/stories/the-bull-of-uri-lienert/": "https://folklore.tschopp.org/stories/the-bull-of-uri-lienert/",
+    "/folklore/stories/the-noblewoman-of-milan-lienert/": "https://folklore.tschopp.org/stories/the-noblewoman-of-milan-lienert/",
+    "/folklore/stories/the-devil-as-brother-in-law-aargau/": "https://folklore.tschopp.org/stories/the-devil-as-brother-in-law-aargau/",
+    "/folklore/stories/the-murder-night-of-lucerne-lutolf/": "https://folklore.tschopp.org/stories/the-murder-night-of-lucerne-lutolf/",
+    "/folklore/stories/the-devils-bridge-reuss/": "https://folklore.tschopp.org/stories/the-devils-bridge-reuss/",
+    "/folklore/stories/womens-cunning-uri/": "https://folklore.tschopp.org/stories/womens-cunning-uri/",
+    "/folklore/stories/the-devil-as-brother-in-law-lucerne/": "https://folklore.tschopp.org/stories/the-devil-as-brother-in-law-lucerne/",
+    "/folklore/stories/the-verena-bath-in-the-city-of-baden/": "https://folklore.tschopp.org/stories/the-verena-bath-in-the-city-of-baden/",
+    "/folklore/stories/2eb4a90445992e00671bd9a64d5c67836b8f0804/": "https://folklore.tschopp.org/stories/the-verena-bath-in-the-city-of-baden/",
+    "/folklore/stories/the-turst-lienert/": "https://folklore.tschopp.org/stories/the-turst-lienert/",
+    "/folklore/stories/a-ghost-hospental/": "https://folklore.tschopp.org/stories/a-ghost-hospental/",
+    "/folklore/stories/the-wassermann-at-staffelbach/": "https://folklore.tschopp.org/stories/the-wassermann-at-staffelbach/",
+    "/folklore/stories/34038eddddbc582d925e2bac7065aa6bda6fed6d/": "https://folklore.tschopp.org/stories/the-wassermann-at-staffelbach/",
+    "/folklore/stories/the-seamstress-aargau/": "https://folklore.tschopp.org/stories/the-seamstress-aargau/",
+    "/folklore/stories/the-stollenwurm-fribourg/": "https://folklore.tschopp.org/stories/the-stollenwurm-fribourg/",
+    "/folklore/stories/the-discovery-of-the-healing-springs-at-baden/": "https://folklore.tschopp.org/stories/the-discovery-of-the-healing-springs-at-baden/",
+    "/folklore/stories/373b1522595312ccbeb34c116035b6b486501266/": "https://folklore.tschopp.org/stories/the-discovery-of-the-healing-springs-at-baden/",
+    "/folklore/stories/the-heiterechsee-near-muri/": "https://folklore.tschopp.org/stories/the-heiterechsee-near-muri/",
+    "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/": "https://folklore.tschopp.org/stories/the-heiterechsee-near-muri/",
+    "/folklore/stories/a-ghost-realp/": "https://folklore.tschopp.org/stories/a-ghost-realp/",
+    "/folklore/stories/the-three-languages/": "https://folklore.tschopp.org/stories/the-three-languages/",
+    "/folklore/stories/the-serpent-maiden-graubunden/": "https://folklore.tschopp.org/stories/the-serpent-maiden-graubunden/",
+    "/folklore/stories/mercy-rewarded-altdorf/": "https://folklore.tschopp.org/stories/mercy-rewarded-altdorf/",
+    "/folklore/stories/the-hunger-spring-at-degermoos/": "https://folklore.tschopp.org/stories/the-hunger-spring-at-degermoos/",
+    "/folklore/stories/40314b4af9266133a774f57ed6692cede664c5d9/": "https://folklore.tschopp.org/stories/the-hunger-spring-at-degermoos/",
+    "/folklore/stories/the-boundary-race-lutolf/": "https://folklore.tschopp.org/stories/the-boundary-race-lutolf/",
+    "/folklore/stories/the-boundary-race-muller/": "https://folklore.tschopp.org/stories/the-boundary-race-muller/",
+    "/folklore/stories/in-the-dragons-cave-chamois-hunter/": "https://folklore.tschopp.org/stories/in-the-dragons-cave-chamois-hunter/",
+    "/folklore/stories/the-giants-of-iseltwald-hartmann/": "https://folklore.tschopp.org/stories/the-giants-of-iseltwald-hartmann/",
+    "/folklore/stories/the-three-golden-apples-ticino/": "https://folklore.tschopp.org/stories/the-three-golden-apples-ticino/",
+    "/folklore/stories/the-bleeding-bone-schwyz/": "https://folklore.tschopp.org/stories/the-bleeding-bone-schwyz/",
+    "/folklore/stories/the-serpent-maiden-basel/": "https://folklore.tschopp.org/stories/the-serpent-maiden-basel/",
+    "/folklore/stories/the-turst-lutolf/": "https://folklore.tschopp.org/stories/the-turst-lutolf/",
+    "/folklore/stories/the-schongau-baths-on-the-lindenberg/": "https://folklore.tschopp.org/stories/the-schongau-baths-on-the-lindenberg/",
+    "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/": "https://folklore.tschopp.org/stories/the-schongau-baths-on-the-lindenberg/",
+    "/folklore/stories/the-three-brothers-valais/": "https://folklore.tschopp.org/stories/the-three-brothers-valais/",
+    "/folklore/stories/womens-cunning-bern/": "https://folklore.tschopp.org/stories/womens-cunning-bern/",
+    "/folklore/stories/the-fiery-man-at-the-etzgen-ferry/": "https://folklore.tschopp.org/stories/the-fiery-man-at-the-etzgen-ferry/",
+    "/folklore/stories/46c1e0af9c1903d196641674db543ffe4909c64f/": "https://folklore.tschopp.org/stories/the-fiery-man-at-the-etzgen-ferry/",
+    "/folklore/stories/the-destruction-of-plurs-rochholz/": "https://folklore.tschopp.org/stories/the-destruction-of-plurs-rochholz/",
+    "/folklore/stories/the-schlangenbanner-jecklin/": "https://folklore.tschopp.org/stories/the-schlangenbanner-jecklin/",
+    "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/": "https://folklore.tschopp.org/stories/the-toggeli-and-the-baptismal-name-full-name/",
+    "/folklore/stories/the-straggele-vernaleken-lucerne/": "https://folklore.tschopp.org/stories/the-straggele-vernaleken-lucerne/",
+    "/folklore/stories/fire-on-the-haystack-amsteg/": "https://folklore.tschopp.org/stories/fire-on-the-haystack-amsteg/",
+    "/folklore/stories/the-white-dove-uri/": "https://folklore.tschopp.org/stories/the-white-dove-uri/",
+    "/folklore/stories/the-buried-well/": "https://folklore.tschopp.org/stories/the-buried-well/",
+    "/folklore/stories/507a2de96f6647a3359b25e46175f394dabe5c3e/": "https://folklore.tschopp.org/stories/the-buried-well/",
+    "/folklore/stories/nuns-as-schneeaugen-hartmann/": "https://folklore.tschopp.org/stories/nuns-as-schneeaugen-hartmann/",
+    "/folklore/stories/the-heavy-child-kohlrusch/": "https://folklore.tschopp.org/stories/the-heavy-child-kohlrusch/",
+    "/folklore/stories/the-well-in-olsberg/": "https://folklore.tschopp.org/stories/the-well-in-olsberg/",
+    "/folklore/stories/52e148ff2a5760247de1f0ef6affad49ecd86770/": "https://folklore.tschopp.org/stories/the-well-in-olsberg/",
+    "/folklore/stories/the-bannholzler-vernaleken/": "https://folklore.tschopp.org/stories/the-bannholzler-vernaleken/",
+    "/folklore/stories/the-noblewoman-of-milan-bern/": "https://folklore.tschopp.org/stories/the-noblewoman-of-milan-bern/",
+    "/folklore/stories/witches-dance-uri/": "https://folklore.tschopp.org/stories/witches-dance-uri/",
+    "/folklore/stories/two-cows-on-one-chain-st-gallen/": "https://folklore.tschopp.org/stories/two-cows-on-one-chain-st-gallen/",
+    "/folklore/stories/the-abducted-child-schattdorf/": "https://folklore.tschopp.org/stories/the-abducted-child-schattdorf/",
+    "/folklore/stories/the-tailor-and-the-giant-aargau/": "https://folklore.tschopp.org/stories/the-tailor-and-the-giant-aargau/",
+    "/folklore/stories/the-three-sisters-in-the-eithal/": "https://folklore.tschopp.org/stories/the-three-sisters-in-the-eithal/",
+    "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/": "https://folklore.tschopp.org/stories/the-three-sisters-in-the-eithal/",
+    "/folklore/stories/the-musterung-on-seefeld-hartmann/": "https://folklore.tschopp.org/stories/the-musterung-on-seefeld-hartmann/",
+    "/folklore/stories/the-white-chamois-bern/": "https://folklore.tschopp.org/stories/the-white-chamois-bern/",
+    "/folklore/stories/the-careless-mother-brunnen-saas/": "https://folklore.tschopp.org/stories/the-careless-mother-brunnen-saas/",
+    "/folklore/stories/emperor-charlemagne-and-the-snake-st-gallen/": "https://folklore.tschopp.org/stories/emperor-charlemagne-and-the-snake-st-gallen/",
+    "/folklore/stories/wasserrecht-at-ursprung/": "https://folklore.tschopp.org/stories/wasserrecht-at-ursprung/",
+    "/folklore/stories/5dbbb4ca07221a731ca9f05249a4651f38f02e2e/": "https://folklore.tschopp.org/stories/wasserrecht-at-ursprung/",
+    "/folklore/stories/the-devil-and-the-poacher-lutolf/": "https://folklore.tschopp.org/stories/the-devil-and-the-poacher-lutolf/",
+    "/folklore/stories/in-the-meien-valley-wandering-souls/": "https://folklore.tschopp.org/stories/in-the-meien-valley-wandering-souls/",
+    "/folklore/stories/the-totenvolk-in-davos-coffin/": "https://folklore.tschopp.org/stories/the-totenvolk-in-davos-coffin/",
+    "/folklore/stories/saint-verena-at-zurzach/": "https://folklore.tschopp.org/stories/saint-verena-at-zurzach/",
+    "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/": "https://folklore.tschopp.org/stories/saint-verena-at-zurzach/",
+    "/folklore/stories/the-bleeding-bone-uri/": "https://folklore.tschopp.org/stories/the-bleeding-bone-uri/",
+    "/folklore/stories/the-springs-of-the-schafmatt/": "https://folklore.tschopp.org/stories/the-springs-of-the-schafmatt/",
+    "/folklore/stories/6aeb8c528735636a5627a29275a5788c9764d2f8/": "https://folklore.tschopp.org/stories/the-springs-of-the-schafmatt/",
+    "/folklore/stories/the-rochelmore-kohlrusch/": "https://folklore.tschopp.org/stories/the-rochelmore-kohlrusch/",
+    "/folklore/stories/the-transformed-frogs-kohlrusch/": "https://folklore.tschopp.org/stories/the-transformed-frogs-kohlrusch/",
+    "/folklore/stories/the-headless-man-erstfeld/": "https://folklore.tschopp.org/stories/the-headless-man-erstfeld/",
+    "/folklore/stories/haaggla-with-a-ghost-schattdorf/": "https://folklore.tschopp.org/stories/haaggla-with-a-ghost-schattdorf/",
+    "/folklore/stories/freemasons-paris/": "https://folklore.tschopp.org/stories/freemasons-paris/",
+    "/folklore/stories/the-healed-helvetian-woman/": "https://folklore.tschopp.org/stories/the-healed-helvetian-woman/",
+    "/folklore/stories/6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31/": "https://folklore.tschopp.org/stories/the-healed-helvetian-woman/",
+    "/folklore/stories/the-obliging-devil-fluelen/": "https://folklore.tschopp.org/stories/the-obliging-devil-fluelen/",
+    "/folklore/stories/the-spinner-uri/": "https://folklore.tschopp.org/stories/the-spinner-uri/",
+    "/folklore/stories/the-schlangenbanner-lienert/": "https://folklore.tschopp.org/stories/the-schlangenbanner-lienert/",
+    "/folklore/stories/an-arme-seele-fiery-teeth/": "https://folklore.tschopp.org/stories/an-arme-seele-fiery-teeth/",
+    "/folklore/stories/the-milking-stool-graubunden/": "https://folklore.tschopp.org/stories/the-milking-stool-graubunden/",
+    "/folklore/stories/the-origin-of-the-kuhreihen-bern/": "https://folklore.tschopp.org/stories/the-origin-of-the-kuhreihen-bern/",
+    "/folklore/stories/the-destruction-of-tasch-tscheinen-ruppen/": "https://folklore.tschopp.org/stories/the-destruction-of-tasch-tscheinen-ruppen/",
+    "/folklore/stories/the-white-chamois-st-gallen/": "https://folklore.tschopp.org/stories/the-white-chamois-st-gallen/",
+    "/folklore/stories/the-two-lights-of-life/": "https://folklore.tschopp.org/stories/the-two-lights-of-life/",
+    "/folklore/stories/7789e358737b8edee35538b428ecc4ede00ba46f/": "https://folklore.tschopp.org/stories/the-two-lights-of-life/",
+    "/folklore/stories/the-ring-at-aarburg-castle/": "https://folklore.tschopp.org/stories/the-ring-at-aarburg-castle/",
+    "/folklore/stories/7c0af6230ecf47e8d666b811b3986befb4b3bd2f/": "https://folklore.tschopp.org/stories/the-ring-at-aarburg-castle/",
+    "/folklore/stories/swimmer-willi-of-meisterschwanden/": "https://folklore.tschopp.org/stories/swimmer-willi-of-meisterschwanden/",
+    "/folklore/stories/7c64393689728a58687d3935b618c5996950ba1a/": "https://folklore.tschopp.org/stories/swimmer-willi-of-meisterschwanden/",
+    "/folklore/stories/the-spinner-valais/": "https://folklore.tschopp.org/stories/the-spinner-valais/",
+    "/folklore/stories/the-cat-tied-to-a-thread/": "https://folklore.tschopp.org/stories/the-cat-tied-to-a-thread/",
+    "/folklore/stories/the-white-dove-valais/": "https://folklore.tschopp.org/stories/the-white-dove-valais/",
+    "/folklore/stories/the-devils-karrweg-hartmann/": "https://folklore.tschopp.org/stories/the-devils-karrweg-hartmann/",
+    "/folklore/stories/two-cows-on-one-chain-valais/": "https://folklore.tschopp.org/stories/two-cows-on-one-chain-valais/",
+    "/folklore/stories/the-bull-of-uri-lutolf/": "https://folklore.tschopp.org/stories/the-bull-of-uri-lutolf/",
+    "/folklore/stories/the-spectral-sennen-graubunden/": "https://folklore.tschopp.org/stories/the-spectral-sennen-graubunden/",
+    "/folklore/stories/the-dreifingerstein-zug/": "https://folklore.tschopp.org/stories/the-dreifingerstein-zug/",
+    "/folklore/stories/the-transformed-frogs-rochholz/": "https://folklore.tschopp.org/stories/the-transformed-frogs-rochholz/",
+    "/folklore/stories/the-musterung-on-seefeld-kohlrusch/": "https://folklore.tschopp.org/stories/the-musterung-on-seefeld-kohlrusch/",
+    "/folklore/stories/the-origin-of-the-kuhreihen-lienert/": "https://folklore.tschopp.org/stories/the-origin-of-the-kuhreihen-lienert/",
+    "/folklore/stories/the-wasserfraulein-near-zug-kohlrusch/": "https://folklore.tschopp.org/stories/the-wasserfraulein-near-zug-kohlrusch/",
+    "/folklore/stories/the-murder-night-of-lucerne-lienert/": "https://folklore.tschopp.org/stories/the-murder-night-of-lucerne-lienert/",
+    "/folklore/stories/mercy-rewarded-isental/": "https://folklore.tschopp.org/stories/mercy-rewarded-isental/",
+    "/folklore/stories/witches-dance-st-gallen/": "https://folklore.tschopp.org/stories/witches-dance-st-gallen/",
+    "/folklore/stories/the-devil-and-the-poacher-muller/": "https://folklore.tschopp.org/stories/the-devil-and-the-poacher-muller/",
+    "/folklore/stories/the-obliging-devil-overturned-cart/": "https://folklore.tschopp.org/stories/the-obliging-devil-overturned-cart/",
+    "/folklore/stories/the-perjury-st-gallen/": "https://folklore.tschopp.org/stories/the-perjury-st-gallen/",
+    "/folklore/stories/the-cunning-habsburger-aargau/": "https://folklore.tschopp.org/stories/the-cunning-habsburger-aargau/",
+    "/folklore/stories/the-healing-toad-obwalden/": "https://folklore.tschopp.org/stories/the-healing-toad-obwalden/",
+    "/folklore/stories/the-noblewoman-of-milan-tscheinen-ruppen/": "https://folklore.tschopp.org/stories/the-noblewoman-of-milan-tscheinen-ruppen/",
+    "/folklore/stories/the-water-spirit-near-seckingen/": "https://folklore.tschopp.org/stories/the-water-spirit-near-seckingen/",
+    "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/": "https://folklore.tschopp.org/stories/the-water-spirit-near-seckingen/",
+    "/folklore/stories/the-tailor-and-the-giant-lucerne/": "https://folklore.tschopp.org/stories/the-tailor-and-the-giant-lucerne/",
+    "/folklore/stories/the-burning-robber-in-the-reuss/": "https://folklore.tschopp.org/stories/the-burning-robber-in-the-reuss/",
+    "/folklore/stories/95dcd7188a663a3c9f4e4445a863e9cf79c999e8/": "https://folklore.tschopp.org/stories/the-burning-robber-in-the-reuss/",
+    "/folklore/stories/driven-home-by-the-arme-seelen-isental/": "https://folklore.tschopp.org/stories/driven-home-by-the-arme-seelen-isental/",
+    "/folklore/stories/the-cold-hand-uri/": "https://folklore.tschopp.org/stories/the-cold-hand-uri/",
+    "/folklore/stories/driven-home-by-the-arme-seelen-billen/": "https://folklore.tschopp.org/stories/driven-home-by-the-arme-seelen-billen/",
+    "/folklore/stories/the-headless-man-spiringen/": "https://folklore.tschopp.org/stories/the-headless-man-spiringen/",
+    "/folklore/stories/the-stollenwurm-bern/": "https://folklore.tschopp.org/stories/the-stollenwurm-bern/",
+    "/folklore/stories/an-arme-seele-jagdmatt/": "https://folklore.tschopp.org/stories/an-arme-seele-jagdmatt/",
+    "/folklore/stories/the-milking-stool-st-gallen/": "https://folklore.tschopp.org/stories/the-milking-stool-st-gallen/",
+    "/folklore/stories/the-cunning-habsburger-zurich/": "https://folklore.tschopp.org/stories/the-cunning-habsburger-zurich/",
+    "/folklore/stories/the-abducted-child-brig/": "https://folklore.tschopp.org/stories/the-abducted-child-brig/",
+    "/folklore/stories/the-dreifingerstein-schwyz/": "https://folklore.tschopp.org/stories/the-dreifingerstein-schwyz/",
+    "/folklore/stories/the-golden-gate-lienert-1915/": "https://folklore.tschopp.org/stories/the-golden-gate-lienert-1915/",
+    "/folklore/stories/the-bold-melker/": "https://folklore.tschopp.org/stories/the-bold-melker/",
+    "/folklore/stories/the-spectral-sennen-bern/": "https://folklore.tschopp.org/stories/the-spectral-sennen-bern/",
+    "/folklore/stories/the-careless-mother-teelwald/": "https://folklore.tschopp.org/stories/the-careless-mother-teelwald/",
+    "/folklore/stories/the-bridal-voyage-on-lake-hallwil/": "https://folklore.tschopp.org/stories/the-bridal-voyage-on-lake-hallwil/",
+    "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/": "https://folklore.tschopp.org/stories/the-bridal-voyage-on-lake-hallwil/",
+    "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/": "https://folklore.tschopp.org/stories/hornussens-hungerbrunnen-and-salibrunnen/",
+    "/folklore/stories/ab64c4c2416b12fdc5fd4ea144bf167805af0162/": "https://folklore.tschopp.org/stories/hornussens-hungerbrunnen-and-salibrunnen/",
+    "/folklore/stories/the-giants-of-iseltwald-kohlrusch/": "https://folklore.tschopp.org/stories/the-giants-of-iseltwald-kohlrusch/",
+    "/folklore/stories/the-hauri-steinbergalp/": "https://folklore.tschopp.org/stories/the-hauri-steinbergalp/",
+    "/folklore/stories/the-dwarf-woman/": "https://folklore.tschopp.org/stories/the-dwarf-woman/",
+    "/folklore/stories/strong-hans-grimm/": "https://folklore.tschopp.org/stories/strong-hans-grimm/",
+    "/folklore/stories/hans-baschi-jakober-of-uri/": "https://folklore.tschopp.org/stories/hans-baschi-jakober-of-uri/",
+    "/folklore/stories/the-devil-gives-a-little-bell-uri/": "https://folklore.tschopp.org/stories/the-devil-gives-a-little-bell-uri/",
+    "/folklore/stories/the-straggele-vernaleken-zug/": "https://folklore.tschopp.org/stories/the-straggele-vernaleken-zug/",
+    "/folklore/stories/the-kreuzliberg/": "https://folklore.tschopp.org/stories/the-kreuzliberg/",
+    "/folklore/stories/nuns-as-schneeaugen-kohlrusch/": "https://folklore.tschopp.org/stories/nuns-as-schneeaugen-kohlrusch/",
+    "/folklore/stories/the-spirit-in-the-hay-door-graggerberg/": "https://folklore.tschopp.org/stories/the-spirit-in-the-hay-door-graggerberg/",
+    "/folklore/stories/emperor-charlemagne-and-the-snake-zurich/": "https://folklore.tschopp.org/stories/emperor-charlemagne-and-the-snake-zurich/",
+    "/folklore/stories/the-spirit-in-the-hay-door-goscheneralp/": "https://folklore.tschopp.org/stories/the-spirit-in-the-hay-door-goscheneralp/",
+    "/folklore/stories/an-arme-seele-saturday-supper/": "https://folklore.tschopp.org/stories/an-arme-seele-saturday-supper/",
+    "/folklore/stories/the-bewitched-cows-st-gallen/": "https://folklore.tschopp.org/stories/the-bewitched-cows-st-gallen/",
+    "/folklore/stories/the-bewitched-cows-uri/": "https://folklore.tschopp.org/stories/the-bewitched-cows-uri/",
+    "/folklore/stories/strong-hans-sutermeister/": "https://folklore.tschopp.org/stories/strong-hans-sutermeister/",
+    "/folklore/stories/how-he-got-rid-of-his-alraune/": "https://folklore.tschopp.org/stories/how-he-got-rid-of-his-alraune/",
+    "/folklore/stories/aaraus-town-brook/": "https://folklore.tschopp.org/stories/aaraus-town-brook/",
+    "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/": "https://folklore.tschopp.org/stories/aaraus-town-brook/",
+    "/folklore/stories/the-mountain-spirit-bern/": "https://folklore.tschopp.org/stories/the-mountain-spirit-bern/",
+    "/folklore/stories/the-gratzug-jegerlehner/": "https://folklore.tschopp.org/stories/the-gratzug-jegerlehner/",
+    "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/": "https://folklore.tschopp.org/stories/the-totenvolk-in-davos-kesslers-pharmacy/",
+    "/folklore/stories/the-rottal-an-alpine-hell/": "https://folklore.tschopp.org/stories/the-rottal-an-alpine-hell/",
+    "/folklore/stories/the-spinner-vaud/": "https://folklore.tschopp.org/stories/the-spinner-vaud/",
+    "/folklore/stories/the-bannholzler-kohlrusch/": "https://folklore.tschopp.org/stories/the-bannholzler-kohlrusch/",
+    "/folklore/stories/touching-a-spirit-rynacht/": "https://folklore.tschopp.org/stories/touching-a-spirit-rynacht/",
+    "/folklore/stories/the-unfulfilled-dream-kohlrusch/": "https://folklore.tschopp.org/stories/the-unfulfilled-dream-kohlrusch/",
+    "/folklore/stories/the-punished-witch-st-gallen/": "https://folklore.tschopp.org/stories/the-punished-witch-st-gallen/",
+    "/folklore/stories/the-mountain-spirit-appenzell/": "https://folklore.tschopp.org/stories/the-mountain-spirit-appenzell/",
+    "/folklore/stories/the-cold-hand-valais/": "https://folklore.tschopp.org/stories/the-cold-hand-valais/",
+    "/folklore/stories/the-heavy-child-jecklin/": "https://folklore.tschopp.org/stories/the-heavy-child-jecklin/",
+    "/folklore/stories/touching-a-spirit-maderanertal/": "https://folklore.tschopp.org/stories/touching-a-spirit-maderanertal/",
+    "/folklore/stories/the-hauri-jost-von-rudenz/": "https://folklore.tschopp.org/stories/the-hauri-jost-von-rudenz/",
+    "/folklore/stories/the-devil-gives-a-little-bell-lucerne/": "https://folklore.tschopp.org/stories/the-devil-gives-a-little-bell-lucerne/",
+    "/folklore/stories/the-golden-gate-lienert-1918/": "https://folklore.tschopp.org/stories/the-golden-gate-lienert-1918/",
+    "/folklore/stories/william-tell-schwyz/": "https://folklore.tschopp.org/stories/william-tell-schwyz/",
+    "/folklore/stories/fire-on-the-haystack-schachental/": "https://folklore.tschopp.org/stories/fire-on-the-haystack-schachental/",
+    "/folklore/stories/the-fence-stake-uri/": "https://folklore.tschopp.org/stories/the-fence-stake-uri/",
+    "/folklore/stories/the-martinsdruck-vernaleken/": "https://folklore.tschopp.org/stories/the-martinsdruck-vernaleken/",
+    "/folklore/stories/the-procession-of-the-dead-valais/": "https://folklore.tschopp.org/stories/the-procession-of-the-dead-valais/",
+    "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/": "https://folklore.tschopp.org/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/",
+    "/folklore/stories/the-healing-toad-uri/": "https://folklore.tschopp.org/stories/the-healing-toad-uri/",
+    "/folklore/stories/the-rochelmore-vernaleken/": "https://folklore.tschopp.org/stories/the-rochelmore-vernaleken/",
+    "/folklore/stories/the-destruction-of-tasch-jegerlehner/": "https://folklore.tschopp.org/stories/the-destruction-of-tasch-jegerlehner/",
+    "/folklore/stories/the-procession-of-the-dead-uri/": "https://folklore.tschopp.org/stories/the-procession-of-the-dead-uri/",
+    "/folklore/stories/the-destruction-of-plurs-vernaleken/": "https://folklore.tschopp.org/stories/the-destruction-of-plurs-vernaleken/",
+    "/folklore/stories/freemasons-blood-contract/": "https://folklore.tschopp.org/stories/freemasons-blood-contract/",
+    "/folklore/stories/the-cradle-spirit/": "https://folklore.tschopp.org/stories/the-cradle-spirit/",
+    "/folklore/stories/the-punished-witch-graubunden/": "https://folklore.tschopp.org/stories/the-punished-witch-graubunden/",
+    "/folklore/stories/egelsee-on-the-heitersberg/": "https://folklore.tschopp.org/stories/egelsee-on-the-heitersberg/",
+    "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/": "https://folklore.tschopp.org/stories/egelsee-on-the-heitersberg/",
+    "/folklore/stories/the-wasserfraulein-near-zug-lutolf/": "https://folklore.tschopp.org/stories/the-wasserfraulein-near-zug-lutolf/",
+    "/folklore/stories/the-fence-stake-zug/": "https://folklore.tschopp.org/stories/the-fence-stake-zug/",
+    "/folklore/stories/the-wild-hunt/": "https://folklore.tschopp.org/stories/the-wild-hunt/",
+    "/folklore/stories/b94b31288d269cdbc55a79dfbeef72fce89895d0/": "https://folklore.tschopp.org/stories/the-wild-hunt/",
+    "/folklore/stories/the-wyden-woman/": "https://folklore.tschopp.org/stories/the-wyden-woman/",
+    "/folklore/stories/2980bfdf495e5b36f6b87ae59d36a9c8440e56c5/": "https://folklore.tschopp.org/stories/the-wyden-woman/",
+    "/folklore/stories/the-magic-book-of-the-three-poor-boys/": "https://folklore.tschopp.org/stories/the-magic-book-of-the-three-poor-boys/",
+    "/folklore/stories/6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a/": "https://folklore.tschopp.org/stories/the-magic-book-of-the-three-poor-boys/",
+    "/folklore/stories/the-magic-book-helps-in-time-of-need/": "https://folklore.tschopp.org/stories/the-magic-book-helps-in-time-of-need/",
+    "/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/": "https://folklore.tschopp.org/stories/the-magic-book-helps-in-time-of-need/",
+    "/folklore/stories/the-magic-book/": "https://folklore.tschopp.org/stories/the-magic-book/",
+    "/folklore/stories/434e1c6212cefb2c179cebaefb73d062fb021de8/": "https://folklore.tschopp.org/stories/the-magic-book/",
+    "/folklore/themes/": "https://folklore.tschopp.org/themes/"
+  },
+  "documents": [
+    {
+      "source": "folklore/stories/archive/00338b79370481adade2d3ccca84a5e4827cb40c.html",
+      "old": "/folklore/stories/the-snake-queen/",
+      "new": "/stories/the-snake-queen/",
+      "story_id": "00338b79370481adade2d3ccca84a5e4827cb40c",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/0249f39e9cc637eb78a5c289267b491a6c7e25c5.html",
+      "old": "/folklore/stories/haaggla-with-a-ghost-maderanertal/",
+      "new": "/stories/haaggla-with-a-ghost-maderanertal/",
+      "story_id": "0249f39e9cc637eb78a5c289267b491a6c7e25c5",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/027c387d1909cc5c20a1ca1c6014757387cf5dce.html",
+      "old": "/folklore/stories/the-white-chamois-valais/",
+      "new": "/stories/the-white-chamois-valais/",
+      "story_id": "027c387d1909cc5c20a1ca1c6014757387cf5dce",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/034cdca9ccd37d16e4c8018009368915aad972ba.html",
+      "old": "/folklore/stories/the-interrupted-ride/",
+      "new": "/stories/the-interrupted-ride/",
+      "story_id": "034cdca9ccd37d16e4c8018009368915aad972ba",
+      "aliases": [
+        "/folklore/stories/034cdca9ccd37d16e4c8018009368915aad972ba/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/06a4d9666fb53f6c663d3c03127ca7e78aee463e.html",
+      "old": "/folklore/stories/the-devils-karrweg-kohlrusch/",
+      "new": "/stories/the-devils-karrweg-kohlrusch/",
+      "story_id": "06a4d9666fb53f6c663d3c03127ca7e78aee463e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/0aac5944ac9d7db3539eecf5f00f7f68b886727b.html",
+      "old": "/folklore/stories/the-seelisberg-gate-muller/",
+      "new": "/stories/the-seelisberg-gate-muller/",
+      "story_id": "0aac5944ac9d7db3539eecf5f00f7f68b886727b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/0d440a29ed23ea3158fc65cbab53fe70151652a8.html",
+      "old": "/folklore/stories/the-castle-maiden-benkenriet/",
+      "new": "/stories/the-castle-maiden-benkenriet/",
+      "story_id": "0d440a29ed23ea3158fc65cbab53fe70151652a8",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/0d627361c3e24860a675193975125a7142f04e7b.html",
+      "old": "/folklore/stories/uncanny-st-gallen/",
+      "new": "/stories/uncanny-st-gallen/",
+      "story_id": "0d627361c3e24860a675193975125a7142f04e7b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/0d70f7bc1d65c9066db8f571ca2692b4e43785d9.html",
+      "old": "/folklore/stories/the-wild-hunt-sooder-1929/",
+      "new": "/stories/the-wild-hunt-sooder-1929/",
+      "story_id": "0d70f7bc1d65c9066db8f571ca2692b4e43785d9",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/0dc0d3bdd0a9b9d7dad76538f0d4113e69207629.html",
+      "old": "/folklore/stories/the-abducted-child-rigelibueb/",
+      "new": "/stories/the-abducted-child-rigelibueb/",
+      "story_id": "0dc0d3bdd0a9b9d7dad76538f0d4113e69207629",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/0eb6df5fcb5b5944254905a6f2105a0e611e6a33.html",
+      "old": "/folklore/stories/the-seelisberg-gate-lutolf/",
+      "new": "/stories/the-seelisberg-gate-lutolf/",
+      "story_id": "0eb6df5fcb5b5944254905a6f2105a0e611e6a33",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/0f0498570b98dfea956d56778dd835e6922fada4.html",
+      "old": "/folklore/stories/the-unnatural-son/",
+      "new": "/stories/the-unnatural-son/",
+      "story_id": "0f0498570b98dfea956d56778dd835e6922fada4",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/0f8bbb607399bc8ace4c2d1efa83f385feb3d96c.html",
+      "old": "/folklore/stories/the-unfulfilled-dream-rochholz/",
+      "new": "/stories/the-unfulfilled-dream-rochholz/",
+      "story_id": "0f8bbb607399bc8ace4c2d1efa83f385feb3d96c",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/109df4445f70b8906ab5cb77d8e6687e66f75223.html",
+      "old": "/folklore/stories/william-tell-uri/",
+      "new": "/stories/william-tell-uri/",
+      "story_id": "109df4445f70b8906ab5cb77d8e6687e66f75223",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/122e15b12dad89e2612731fa6a8e2a814acad491.html",
+      "old": "/folklore/stories/in-the-meien-valley-toggeli/",
+      "new": "/stories/in-the-meien-valley-toggeli/",
+      "story_id": "122e15b12dad89e2612731fa6a8e2a814acad491",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/13c75cd31bad85379f72c77705b63c6a99881f3d.html",
+      "old": "/folklore/stories/the-little-leather-cap/",
+      "new": "/stories/the-little-leather-cap/",
+      "story_id": "13c75cd31bad85379f72c77705b63c6a99881f3d",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/1437b7ef9cdb477ae3407b103ba9d8d61e9bf112.html",
+      "old": "/folklore/stories/the-three-golden-apples-graubunden/",
+      "new": "/stories/the-three-golden-apples-graubunden/",
+      "story_id": "1437b7ef9cdb477ae3407b103ba9d8d61e9bf112",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/1456415dd8b5a2591102f1f47fe4c3304b52442d.html",
+      "old": "/folklore/stories/the-alpgeschrei/",
+      "new": "/stories/the-alpgeschrei/",
+      "story_id": "1456415dd8b5a2591102f1f47fe4c3304b52442d",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/14aab07f8abc94cde6d766c41e4cf75a5ba0868f.html",
+      "old": "/folklore/stories/womens-cunning-graubunden/",
+      "new": "/stories/womens-cunning-graubunden/",
+      "story_id": "14aab07f8abc94cde6d766c41e4cf75a5ba0868f",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/15064fddeb4bad2e8f1d137d657481f3921fb6e9.html",
+      "old": "/folklore/stories/the-gratzug-tscheinen-ruppen/",
+      "new": "/stories/the-gratzug-tscheinen-ruppen/",
+      "story_id": "15064fddeb4bad2e8f1d137d657481f3921fb6e9",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/153c42142f1431e35ce9a33ebb2f3c15d237610d.html",
+      "old": "/folklore/stories/the-castle-maiden-rambach/",
+      "new": "/stories/the-castle-maiden-rambach/",
+      "story_id": "153c42142f1431e35ce9a33ebb2f3c15d237610d",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/1555a732b19b786922a4053f4701807b5885c3ab.html",
+      "old": "/folklore/stories/the-punished-witch-uri/",
+      "new": "/stories/the-punished-witch-uri/",
+      "story_id": "1555a732b19b786922a4053f4701807b5885c3ab",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/16462d93a064fd7320fe8a8406c2178b963f5d10.html",
+      "old": "/folklore/stories/the-three-brothers-graubunden/",
+      "new": "/stories/the-three-brothers-graubunden/",
+      "story_id": "16462d93a064fd7320fe8a8406c2178b963f5d10",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/18aaf1ae10276161505f60b18c68d1482bb676cf.html",
+      "old": "/folklore/stories/the-perjury-graubunden/",
+      "new": "/stories/the-perjury-graubunden/",
+      "story_id": "18aaf1ae10276161505f60b18c68d1482bb676cf",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/19fc6f598fc48347fed435a1256d8429ad13a75c.html",
+      "old": "/folklore/stories/the-devils-bridge-st-gallen/",
+      "new": "/stories/the-devils-bridge-st-gallen/",
+      "story_id": "19fc6f598fc48347fed435a1256d8429ad13a75c",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/1a2f4144ed506f7df5c7adfb460b29a710011aff.html",
+      "old": "/folklore/stories/uncanny-bern/",
+      "new": "/stories/uncanny-bern/",
+      "story_id": "1a2f4144ed506f7df5c7adfb460b29a710011aff",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/1dba95bbc86e7c418dce4d990e15ba497f4e2cb1.html",
+      "old": "/folklore/stories/the-martinsdruck-hartmann/",
+      "new": "/stories/the-martinsdruck-hartmann/",
+      "story_id": "1dba95bbc86e7c418dce4d990e15ba497f4e2cb1",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/1e90ecf18f18fa3b30d4db9aee8d2285208bc294.html",
+      "old": "/folklore/stories/bertha-of-baldegg/",
+      "new": "/stories/bertha-of-baldegg/",
+      "story_id": "1e90ecf18f18fa3b30d4db9aee8d2285208bc294",
+      "aliases": [
+        "/folklore/stories/1e90ecf18f18fa3b30d4db9aee8d2285208bc294/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/1ee10412f2d06e4fa1b4a67c9115849ee8492f6e.html",
+      "old": "/folklore/stories/the-seamstress-uri/",
+      "new": "/stories/the-seamstress-uri/",
+      "story_id": "1ee10412f2d06e4fa1b4a67c9115849ee8492f6e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/245f36aaa52b9386d303beddfaea659a0c25e3bc.html",
+      "old": "/folklore/stories/in-the-dragons-cave-scheenenkulm/",
+      "new": "/stories/in-the-dragons-cave-scheenenkulm/",
+      "story_id": "245f36aaa52b9386d303beddfaea659a0c25e3bc",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/25ad92e9dbbb8788941d11a8ec9de202dc036a05.html",
+      "old": "/folklore/stories/the-bull-of-uri-lienert/",
+      "new": "/stories/the-bull-of-uri-lienert/",
+      "story_id": "25ad92e9dbbb8788941d11a8ec9de202dc036a05",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/267d97b74f648030def31b809bb86d0a5f71a3b8.html",
+      "old": "/folklore/stories/the-noblewoman-of-milan-lienert/",
+      "new": "/stories/the-noblewoman-of-milan-lienert/",
+      "story_id": "267d97b74f648030def31b809bb86d0a5f71a3b8",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/280e54413edef826b096e8914ac87f54b68925f3.html",
+      "old": "/folklore/stories/the-devil-as-brother-in-law-aargau/",
+      "new": "/stories/the-devil-as-brother-in-law-aargau/",
+      "story_id": "280e54413edef826b096e8914ac87f54b68925f3",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/281ee54dbc03bc59ba579b7c5cd1c8c557e7d860.html",
+      "old": "/folklore/stories/the-murder-night-of-lucerne-lutolf/",
+      "new": "/stories/the-murder-night-of-lucerne-lutolf/",
+      "story_id": "281ee54dbc03bc59ba579b7c5cd1c8c557e7d860",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/291f29a9f9a8a257fe3fc7b831ee4d58a9226a4c.html",
+      "old": "/folklore/stories/the-devils-bridge-reuss/",
+      "new": "/stories/the-devils-bridge-reuss/",
+      "story_id": "291f29a9f9a8a257fe3fc7b831ee4d58a9226a4c",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/298ffbb0d40cc2e0f666a142b7f221895f5a4cf2.html",
+      "old": "/folklore/stories/womens-cunning-uri/",
+      "new": "/stories/womens-cunning-uri/",
+      "story_id": "298ffbb0d40cc2e0f666a142b7f221895f5a4cf2",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/2d4a0e3e2804ad7dd1b93b25bffe60f673a49bb3.html",
+      "old": "/folklore/stories/the-devil-as-brother-in-law-lucerne/",
+      "new": "/stories/the-devil-as-brother-in-law-lucerne/",
+      "story_id": "2d4a0e3e2804ad7dd1b93b25bffe60f673a49bb3",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/2eb4a90445992e00671bd9a64d5c67836b8f0804.html",
+      "old": "/folklore/stories/the-verena-bath-in-the-city-of-baden/",
+      "new": "/stories/the-verena-bath-in-the-city-of-baden/",
+      "story_id": "2eb4a90445992e00671bd9a64d5c67836b8f0804",
+      "aliases": [
+        "/folklore/stories/2eb4a90445992e00671bd9a64d5c67836b8f0804/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/2f909f02a6e4251e50c45a29f6c028117540fecd.html",
+      "old": "/folklore/stories/the-turst-lienert/",
+      "new": "/stories/the-turst-lienert/",
+      "story_id": "2f909f02a6e4251e50c45a29f6c028117540fecd",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/336ad2a20cc9031d49c8b0386a901a9f6801d274.html",
+      "old": "/folklore/stories/a-ghost-hospental/",
+      "new": "/stories/a-ghost-hospental/",
+      "story_id": "336ad2a20cc9031d49c8b0386a901a9f6801d274",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/34038eddddbc582d925e2bac7065aa6bda6fed6d.html",
+      "old": "/folklore/stories/the-wassermann-at-staffelbach/",
+      "new": "/stories/the-wassermann-at-staffelbach/",
+      "story_id": "34038eddddbc582d925e2bac7065aa6bda6fed6d",
+      "aliases": [
+        "/folklore/stories/34038eddddbc582d925e2bac7065aa6bda6fed6d/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/348f8f1aaec9cb4b494c8d47f2f346b5ff38421a.html",
+      "old": "/folklore/stories/the-seamstress-aargau/",
+      "new": "/stories/the-seamstress-aargau/",
+      "story_id": "348f8f1aaec9cb4b494c8d47f2f346b5ff38421a",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/36932fb818887252538a3fc8c5ff21b4b5f944fa.html",
+      "old": "/folklore/stories/the-stollenwurm-fribourg/",
+      "new": "/stories/the-stollenwurm-fribourg/",
+      "story_id": "36932fb818887252538a3fc8c5ff21b4b5f944fa",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/373b1522595312ccbeb34c116035b6b486501266.html",
+      "old": "/folklore/stories/the-discovery-of-the-healing-springs-at-baden/",
+      "new": "/stories/the-discovery-of-the-healing-springs-at-baden/",
+      "story_id": "373b1522595312ccbeb34c116035b6b486501266",
+      "aliases": [
+        "/folklore/stories/373b1522595312ccbeb34c116035b6b486501266/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/38904f34c09542b6c43278a9624b77062e9005cf.html",
+      "old": "/folklore/stories/the-heiterechsee-near-muri/",
+      "new": "/stories/the-heiterechsee-near-muri/",
+      "story_id": "38904f34c09542b6c43278a9624b77062e9005cf",
+      "aliases": [
+        "/folklore/stories/38904f34c09542b6c43278a9624b77062e9005cf/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/39137f56aa928e1ae1f87e8a3f41c82f49da9e7f.html",
+      "old": "/folklore/stories/a-ghost-realp/",
+      "new": "/stories/a-ghost-realp/",
+      "story_id": "39137f56aa928e1ae1f87e8a3f41c82f49da9e7f",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/392ddc236ddac6891054d51f6ea8d58ea80293cd.html",
+      "old": "/folklore/stories/the-three-languages/",
+      "new": "/stories/the-three-languages/",
+      "story_id": "392ddc236ddac6891054d51f6ea8d58ea80293cd",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/3b34428675ae3bdc6cd64b6eeed5b058966ff293.html",
+      "old": "/folklore/stories/the-serpent-maiden-graubunden/",
+      "new": "/stories/the-serpent-maiden-graubunden/",
+      "story_id": "3b34428675ae3bdc6cd64b6eeed5b058966ff293",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/3ea43a649cd850eb00ff03f726b7c2a23f923515.html",
+      "old": "/folklore/stories/mercy-rewarded-altdorf/",
+      "new": "/stories/mercy-rewarded-altdorf/",
+      "story_id": "3ea43a649cd850eb00ff03f726b7c2a23f923515",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/40314b4af9266133a774f57ed6692cede664c5d9.html",
+      "old": "/folklore/stories/the-hunger-spring-at-degermoos/",
+      "new": "/stories/the-hunger-spring-at-degermoos/",
+      "story_id": "40314b4af9266133a774f57ed6692cede664c5d9",
+      "aliases": [
+        "/folklore/stories/40314b4af9266133a774f57ed6692cede664c5d9/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/40d36d2ccbdf52792452c7489a87202c6752cb15.html",
+      "old": "/folklore/stories/the-boundary-race-lutolf/",
+      "new": "/stories/the-boundary-race-lutolf/",
+      "story_id": "40d36d2ccbdf52792452c7489a87202c6752cb15",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/41de0a46b41049d17c8181a5501e7645e74ddbba.html",
+      "old": "/folklore/stories/the-boundary-race-muller/",
+      "new": "/stories/the-boundary-race-muller/",
+      "story_id": "41de0a46b41049d17c8181a5501e7645e74ddbba",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/42284256c340eec983e2ab44531f7b7e0e0af70a.html",
+      "old": "/folklore/stories/in-the-dragons-cave-chamois-hunter/",
+      "new": "/stories/in-the-dragons-cave-chamois-hunter/",
+      "story_id": "42284256c340eec983e2ab44531f7b7e0e0af70a",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/422e5567407a5154ed0c28594c9abc6a18eb638b.html",
+      "old": "/folklore/stories/the-giants-of-iseltwald-hartmann/",
+      "new": "/stories/the-giants-of-iseltwald-hartmann/",
+      "story_id": "422e5567407a5154ed0c28594c9abc6a18eb638b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/44515194125d6ce51131c4fbb60c3be541bcec45.html",
+      "old": "/folklore/stories/the-three-golden-apples-ticino/",
+      "new": "/stories/the-three-golden-apples-ticino/",
+      "story_id": "44515194125d6ce51131c4fbb60c3be541bcec45",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/44b19b21bdbdcc1d85fc6d1f548dbc0a3ee5f8e1.html",
+      "old": "/folklore/stories/the-bleeding-bone-schwyz/",
+      "new": "/stories/the-bleeding-bone-schwyz/",
+      "story_id": "44b19b21bdbdcc1d85fc6d1f548dbc0a3ee5f8e1",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/45e2cc21ab99b3f6145bb7d2beef754d39078657.html",
+      "old": "/folklore/stories/the-serpent-maiden-basel/",
+      "new": "/stories/the-serpent-maiden-basel/",
+      "story_id": "45e2cc21ab99b3f6145bb7d2beef754d39078657",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/464626346ab047cfe9553afc7bbb8c954cfcd70a.html",
+      "old": "/folklore/stories/the-turst-lutolf/",
+      "new": "/stories/the-turst-lutolf/",
+      "story_id": "464626346ab047cfe9553afc7bbb8c954cfcd70a",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/467e25e4996b52861fface7e615b0d0a0ccb12e3.html",
+      "old": "/folklore/stories/the-schongau-baths-on-the-lindenberg/",
+      "new": "/stories/the-schongau-baths-on-the-lindenberg/",
+      "story_id": "467e25e4996b52861fface7e615b0d0a0ccb12e3",
+      "aliases": [
+        "/folklore/stories/467e25e4996b52861fface7e615b0d0a0ccb12e3/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/46817578eaa6a2c2440b6149da7fb486db9cefda.html",
+      "old": "/folklore/stories/the-three-brothers-valais/",
+      "new": "/stories/the-three-brothers-valais/",
+      "story_id": "46817578eaa6a2c2440b6149da7fb486db9cefda",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/46b5790de80ee2d8c377a8e46eecac3588cee293.html",
+      "old": "/folklore/stories/womens-cunning-bern/",
+      "new": "/stories/womens-cunning-bern/",
+      "story_id": "46b5790de80ee2d8c377a8e46eecac3588cee293",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/46c1e0af9c1903d196641674db543ffe4909c64f.html",
+      "old": "/folklore/stories/the-fiery-man-at-the-etzgen-ferry/",
+      "new": "/stories/the-fiery-man-at-the-etzgen-ferry/",
+      "story_id": "46c1e0af9c1903d196641674db543ffe4909c64f",
+      "aliases": [
+        "/folklore/stories/46c1e0af9c1903d196641674db543ffe4909c64f/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/46f583839d952abff4a2b18f1dcd997092fc8172.html",
+      "old": "/folklore/stories/the-destruction-of-plurs-rochholz/",
+      "new": "/stories/the-destruction-of-plurs-rochholz/",
+      "story_id": "46f583839d952abff4a2b18f1dcd997092fc8172",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/47930a04257f4e9097c0b25e97782d4f43a6910c.html",
+      "old": "/folklore/stories/the-schlangenbanner-jecklin/",
+      "new": "/stories/the-schlangenbanner-jecklin/",
+      "story_id": "47930a04257f4e9097c0b25e97782d4f43a6910c",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/47c0d034d6bed56e7bb1d88986b3f8a9f4b19c08.html",
+      "old": "/folklore/stories/the-toggeli-and-the-baptismal-name-full-name/",
+      "new": "/stories/the-toggeli-and-the-baptismal-name-full-name/",
+      "story_id": "47c0d034d6bed56e7bb1d88986b3f8a9f4b19c08",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/49c8e39465b275da0626bd4b239916eaa034c8cc.html",
+      "old": "/folklore/stories/the-straggele-vernaleken-lucerne/",
+      "new": "/stories/the-straggele-vernaleken-lucerne/",
+      "story_id": "49c8e39465b275da0626bd4b239916eaa034c8cc",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/4a8b3acb9d38ca63eab2348ea386efcb4d04be56.html",
+      "old": "/folklore/stories/fire-on-the-haystack-amsteg/",
+      "new": "/stories/fire-on-the-haystack-amsteg/",
+      "story_id": "4a8b3acb9d38ca63eab2348ea386efcb4d04be56",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/4e11252902ee502f98a4c34776baf52d9f4c19c6.html",
+      "old": "/folklore/stories/the-white-dove-uri/",
+      "new": "/stories/the-white-dove-uri/",
+      "story_id": "4e11252902ee502f98a4c34776baf52d9f4c19c6",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/507a2de96f6647a3359b25e46175f394dabe5c3e.html",
+      "old": "/folklore/stories/the-buried-well/",
+      "new": "/stories/the-buried-well/",
+      "story_id": "507a2de96f6647a3359b25e46175f394dabe5c3e",
+      "aliases": [
+        "/folklore/stories/507a2de96f6647a3359b25e46175f394dabe5c3e/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/50a41131dbc0b357aa07ad9aef2d653d7d76b308.html",
+      "old": "/folklore/stories/nuns-as-schneeaugen-hartmann/",
+      "new": "/stories/nuns-as-schneeaugen-hartmann/",
+      "story_id": "50a41131dbc0b357aa07ad9aef2d653d7d76b308",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/5237b5bfffff79655220f5a6b7c0c41f35323c6e.html",
+      "old": "/folklore/stories/the-heavy-child-kohlrusch/",
+      "new": "/stories/the-heavy-child-kohlrusch/",
+      "story_id": "5237b5bfffff79655220f5a6b7c0c41f35323c6e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/52e148ff2a5760247de1f0ef6affad49ecd86770.html",
+      "old": "/folklore/stories/the-well-in-olsberg/",
+      "new": "/stories/the-well-in-olsberg/",
+      "story_id": "52e148ff2a5760247de1f0ef6affad49ecd86770",
+      "aliases": [
+        "/folklore/stories/52e148ff2a5760247de1f0ef6affad49ecd86770/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/53244c8a8e07e749307734f09fc40f689f106f1f.html",
+      "old": "/folklore/stories/the-bannholzler-vernaleken/",
+      "new": "/stories/the-bannholzler-vernaleken/",
+      "story_id": "53244c8a8e07e749307734f09fc40f689f106f1f",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/5338e2adadebb69025354578463a409d8b4e87d6.html",
+      "old": "/folklore/stories/the-noblewoman-of-milan-bern/",
+      "new": "/stories/the-noblewoman-of-milan-bern/",
+      "story_id": "5338e2adadebb69025354578463a409d8b4e87d6",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/5589197de69e98d0e69439d3689e551e4a55ac5a.html",
+      "old": "/folklore/stories/witches-dance-uri/",
+      "new": "/stories/witches-dance-uri/",
+      "story_id": "5589197de69e98d0e69439d3689e551e4a55ac5a",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/55e3904f993698138d91edfdf579eab7a6eda077.html",
+      "old": "/folklore/stories/two-cows-on-one-chain-st-gallen/",
+      "new": "/stories/two-cows-on-one-chain-st-gallen/",
+      "story_id": "55e3904f993698138d91edfdf579eab7a6eda077",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/56812f0a98ed3da54158e7616f5ab7cce1dce52b.html",
+      "old": "/folklore/stories/the-abducted-child-schattdorf/",
+      "new": "/stories/the-abducted-child-schattdorf/",
+      "story_id": "56812f0a98ed3da54158e7616f5ab7cce1dce52b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/56e3f4281f7026591f511eaaaa8e00717887e62e.html",
+      "old": "/folklore/stories/the-tailor-and-the-giant-aargau/",
+      "new": "/stories/the-tailor-and-the-giant-aargau/",
+      "story_id": "56e3f4281f7026591f511eaaaa8e00717887e62e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/5849217c631b9cf6d740ee0d6957d9c7de2e7876.html",
+      "old": "/folklore/stories/the-three-sisters-in-the-eithal/",
+      "new": "/stories/the-three-sisters-in-the-eithal/",
+      "story_id": "5849217c631b9cf6d740ee0d6957d9c7de2e7876",
+      "aliases": [
+        "/folklore/stories/5849217c631b9cf6d740ee0d6957d9c7de2e7876/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/5a71abc558e631e69ae01bc4327b0350d46617a1.html",
+      "old": "/folklore/stories/the-musterung-on-seefeld-hartmann/",
+      "new": "/stories/the-musterung-on-seefeld-hartmann/",
+      "story_id": "5a71abc558e631e69ae01bc4327b0350d46617a1",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/5acbc32e524559b09dc920d7355e8a8c789235d8.html",
+      "old": "/folklore/stories/the-white-chamois-bern/",
+      "new": "/stories/the-white-chamois-bern/",
+      "story_id": "5acbc32e524559b09dc920d7355e8a8c789235d8",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/5c851b75187a54d866424c32176a24d1044ecde0.html",
+      "old": "/folklore/stories/the-careless-mother-brunnen-saas/",
+      "new": "/stories/the-careless-mother-brunnen-saas/",
+      "story_id": "5c851b75187a54d866424c32176a24d1044ecde0",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/5ca4f9729b9eff6fc9a0bf489f5bd25a626687f1.html",
+      "old": "/folklore/stories/emperor-charlemagne-and-the-snake-st-gallen/",
+      "new": "/stories/emperor-charlemagne-and-the-snake-st-gallen/",
+      "story_id": "5ca4f9729b9eff6fc9a0bf489f5bd25a626687f1",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/5dbbb4ca07221a731ca9f05249a4651f38f02e2e.html",
+      "old": "/folklore/stories/wasserrecht-at-ursprung/",
+      "new": "/stories/wasserrecht-at-ursprung/",
+      "story_id": "5dbbb4ca07221a731ca9f05249a4651f38f02e2e",
+      "aliases": [
+        "/folklore/stories/5dbbb4ca07221a731ca9f05249a4651f38f02e2e/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/5e4ad0d2043da426fa824ac84abb9d5a479cc74a.html",
+      "old": "/folklore/stories/the-devil-and-the-poacher-lutolf/",
+      "new": "/stories/the-devil-and-the-poacher-lutolf/",
+      "story_id": "5e4ad0d2043da426fa824ac84abb9d5a479cc74a",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/5e8b4cccf82a177176e1aa733d661f95469db9de.html",
+      "old": "/folklore/stories/in-the-meien-valley-wandering-souls/",
+      "new": "/stories/in-the-meien-valley-wandering-souls/",
+      "story_id": "5e8b4cccf82a177176e1aa733d661f95469db9de",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/6459b0f84550e7003ceab6128bc87e26aee2d327.html",
+      "old": "/folklore/stories/the-totenvolk-in-davos-coffin/",
+      "new": "/stories/the-totenvolk-in-davos-coffin/",
+      "story_id": "6459b0f84550e7003ceab6128bc87e26aee2d327",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/6467ba133977071785a2a22974e46b0d9516d22e.html",
+      "old": "/folklore/stories/saint-verena-at-zurzach/",
+      "new": "/stories/saint-verena-at-zurzach/",
+      "story_id": "6467ba133977071785a2a22974e46b0d9516d22e",
+      "aliases": [
+        "/folklore/stories/6467ba133977071785a2a22974e46b0d9516d22e/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/68e73bc613d8ec5f0ea271c11d8a0bf946ae3ba1.html",
+      "old": "/folklore/stories/the-bleeding-bone-uri/",
+      "new": "/stories/the-bleeding-bone-uri/",
+      "story_id": "68e73bc613d8ec5f0ea271c11d8a0bf946ae3ba1",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/6aeb8c528735636a5627a29275a5788c9764d2f8.html",
+      "old": "/folklore/stories/the-springs-of-the-schafmatt/",
+      "new": "/stories/the-springs-of-the-schafmatt/",
+      "story_id": "6aeb8c528735636a5627a29275a5788c9764d2f8",
+      "aliases": [
+        "/folklore/stories/6aeb8c528735636a5627a29275a5788c9764d2f8/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/6b50e47df0a18d0fe86b88fa52036c6e061a7279.html",
+      "old": "/folklore/stories/the-rochelmore-kohlrusch/",
+      "new": "/stories/the-rochelmore-kohlrusch/",
+      "story_id": "6b50e47df0a18d0fe86b88fa52036c6e061a7279",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/6c2ac635032b20327b751418b12be3f7cd8e4697.html",
+      "old": "/folklore/stories/the-transformed-frogs-kohlrusch/",
+      "new": "/stories/the-transformed-frogs-kohlrusch/",
+      "story_id": "6c2ac635032b20327b751418b12be3f7cd8e4697",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/6cb09a0d021202dfdb694328489600b1194a24bb.html",
+      "old": "/folklore/stories/the-headless-man-erstfeld/",
+      "new": "/stories/the-headless-man-erstfeld/",
+      "story_id": "6cb09a0d021202dfdb694328489600b1194a24bb",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/6d09f9175240481305d77d1515b5aa2d78317a89.html",
+      "old": "/folklore/stories/haaggla-with-a-ghost-schattdorf/",
+      "new": "/stories/haaggla-with-a-ghost-schattdorf/",
+      "story_id": "6d09f9175240481305d77d1515b5aa2d78317a89",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/6e5ef49d57c9bf02593089147ee251018b2c687e.html",
+      "old": "/folklore/stories/freemasons-paris/",
+      "new": "/stories/freemasons-paris/",
+      "story_id": "6e5ef49d57c9bf02593089147ee251018b2c687e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31.html",
+      "old": "/folklore/stories/the-healed-helvetian-woman/",
+      "new": "/stories/the-healed-helvetian-woman/",
+      "story_id": "6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31",
+      "aliases": [
+        "/folklore/stories/6ef7ef0d48d9c3a47e4ab50c98c533af12eb2a31/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/6f0e819692fe4986d169095d79acc5ef2edd9480.html",
+      "old": "/folklore/stories/the-obliging-devil-fluelen/",
+      "new": "/stories/the-obliging-devil-fluelen/",
+      "story_id": "6f0e819692fe4986d169095d79acc5ef2edd9480",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/7087b9fea9e9e88e4b774a96ec55d23a2757e03f.html",
+      "old": "/folklore/stories/the-spinner-uri/",
+      "new": "/stories/the-spinner-uri/",
+      "story_id": "7087b9fea9e9e88e4b774a96ec55d23a2757e03f",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/73cfc215aee927402f292aa419b97a67693c7b45.html",
+      "old": "/folklore/stories/the-schlangenbanner-lienert/",
+      "new": "/stories/the-schlangenbanner-lienert/",
+      "story_id": "73cfc215aee927402f292aa419b97a67693c7b45",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/73f56d11aad8da9f85e26eb58804a07de8c896a9.html",
+      "old": "/folklore/stories/an-arme-seele-fiery-teeth/",
+      "new": "/stories/an-arme-seele-fiery-teeth/",
+      "story_id": "73f56d11aad8da9f85e26eb58804a07de8c896a9",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/740af7bf8cdb3d9d18d09badf40c01881c74176e.html",
+      "old": "/folklore/stories/the-milking-stool-graubunden/",
+      "new": "/stories/the-milking-stool-graubunden/",
+      "story_id": "740af7bf8cdb3d9d18d09badf40c01881c74176e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/74af00748e6d8c160e50f88e7ad3d3e32f767ddb.html",
+      "old": "/folklore/stories/the-origin-of-the-kuhreihen-bern/",
+      "new": "/stories/the-origin-of-the-kuhreihen-bern/",
+      "story_id": "74af00748e6d8c160e50f88e7ad3d3e32f767ddb",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/7688f3eba57c98e613affb157fac3dc3aa60657d.html",
+      "old": "/folklore/stories/the-destruction-of-tasch-tscheinen-ruppen/",
+      "new": "/stories/the-destruction-of-tasch-tscheinen-ruppen/",
+      "story_id": "7688f3eba57c98e613affb157fac3dc3aa60657d",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/774b0df251b5dcd68a03ef9a89a8f2af65b9804b.html",
+      "old": "/folklore/stories/the-white-chamois-st-gallen/",
+      "new": "/stories/the-white-chamois-st-gallen/",
+      "story_id": "774b0df251b5dcd68a03ef9a89a8f2af65b9804b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/7789e358737b8edee35538b428ecc4ede00ba46f.html",
+      "old": "/folklore/stories/the-two-lights-of-life/",
+      "new": "/stories/the-two-lights-of-life/",
+      "story_id": "7789e358737b8edee35538b428ecc4ede00ba46f",
+      "aliases": [
+        "/folklore/stories/7789e358737b8edee35538b428ecc4ede00ba46f/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/7c0af6230ecf47e8d666b811b3986befb4b3bd2f.html",
+      "old": "/folklore/stories/the-ring-at-aarburg-castle/",
+      "new": "/stories/the-ring-at-aarburg-castle/",
+      "story_id": "7c0af6230ecf47e8d666b811b3986befb4b3bd2f",
+      "aliases": [
+        "/folklore/stories/7c0af6230ecf47e8d666b811b3986befb4b3bd2f/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/7c64393689728a58687d3935b618c5996950ba1a.html",
+      "old": "/folklore/stories/swimmer-willi-of-meisterschwanden/",
+      "new": "/stories/swimmer-willi-of-meisterschwanden/",
+      "story_id": "7c64393689728a58687d3935b618c5996950ba1a",
+      "aliases": [
+        "/folklore/stories/7c64393689728a58687d3935b618c5996950ba1a/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/7d46b44fe87c9a03b74074b82e6576eb30bcda45.html",
+      "old": "/folklore/stories/the-spinner-valais/",
+      "new": "/stories/the-spinner-valais/",
+      "story_id": "7d46b44fe87c9a03b74074b82e6576eb30bcda45",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/7dc1402fca0095b7d9cb75c436b38e27f9f51d46.html",
+      "old": "/folklore/stories/the-cat-tied-to-a-thread/",
+      "new": "/stories/the-cat-tied-to-a-thread/",
+      "story_id": "7dc1402fca0095b7d9cb75c436b38e27f9f51d46",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/7ded2ee1411c807faf68fa6f21b5df7a7a225a20.html",
+      "old": "/folklore/stories/the-white-dove-valais/",
+      "new": "/stories/the-white-dove-valais/",
+      "story_id": "7ded2ee1411c807faf68fa6f21b5df7a7a225a20",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/7ead6ae74e71f379762e4591a18053d53714a3e9.html",
+      "old": "/folklore/stories/the-devils-karrweg-hartmann/",
+      "new": "/stories/the-devils-karrweg-hartmann/",
+      "story_id": "7ead6ae74e71f379762e4591a18053d53714a3e9",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/810365e86541d70fb08b6e6d37cf06e72767ce03.html",
+      "old": "/folklore/stories/two-cows-on-one-chain-valais/",
+      "new": "/stories/two-cows-on-one-chain-valais/",
+      "story_id": "810365e86541d70fb08b6e6d37cf06e72767ce03",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/82398b4ea56dad9825c5b5ff37ef92161c916d53.html",
+      "old": "/folklore/stories/the-bull-of-uri-lutolf/",
+      "new": "/stories/the-bull-of-uri-lutolf/",
+      "story_id": "82398b4ea56dad9825c5b5ff37ef92161c916d53",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/82a20ceb2978b6f4d570373d775ef32166f7eb35.html",
+      "old": "/folklore/stories/the-spectral-sennen-graubunden/",
+      "new": "/stories/the-spectral-sennen-graubunden/",
+      "story_id": "82a20ceb2978b6f4d570373d775ef32166f7eb35",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/82b79417966e44903944323bd4cf2a6d6c981221.html",
+      "old": "/folklore/stories/the-dreifingerstein-zug/",
+      "new": "/stories/the-dreifingerstein-zug/",
+      "story_id": "82b79417966e44903944323bd4cf2a6d6c981221",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/841b3c5e06e156429bbd61a5ccae36d0b5c4d0a1.html",
+      "old": "/folklore/stories/the-transformed-frogs-rochholz/",
+      "new": "/stories/the-transformed-frogs-rochholz/",
+      "story_id": "841b3c5e06e156429bbd61a5ccae36d0b5c4d0a1",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/8471e03ba2a4854a446812e083c732b934eea36b.html",
+      "old": "/folklore/stories/the-musterung-on-seefeld-kohlrusch/",
+      "new": "/stories/the-musterung-on-seefeld-kohlrusch/",
+      "story_id": "8471e03ba2a4854a446812e083c732b934eea36b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/84db71a855539a19d7bdb94a5a1c06c39a12f4a0.html",
+      "old": "/folklore/stories/the-origin-of-the-kuhreihen-lienert/",
+      "new": "/stories/the-origin-of-the-kuhreihen-lienert/",
+      "story_id": "84db71a855539a19d7bdb94a5a1c06c39a12f4a0",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/871a49790eb66c56994802e7c05aa649f484654b.html",
+      "old": "/folklore/stories/the-wasserfraulein-near-zug-kohlrusch/",
+      "new": "/stories/the-wasserfraulein-near-zug-kohlrusch/",
+      "story_id": "871a49790eb66c56994802e7c05aa649f484654b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/8853ebf9857040d874b9d133cb9cb205479cd3fa.html",
+      "old": "/folklore/stories/the-murder-night-of-lucerne-lienert/",
+      "new": "/stories/the-murder-night-of-lucerne-lienert/",
+      "story_id": "8853ebf9857040d874b9d133cb9cb205479cd3fa",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/8bec867a6c319a1ffb047c2711d6855b7f701e99.html",
+      "old": "/folklore/stories/mercy-rewarded-isental/",
+      "new": "/stories/mercy-rewarded-isental/",
+      "story_id": "8bec867a6c319a1ffb047c2711d6855b7f701e99",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/8c928101dd8b5d4b9ac41fdbbd9a8f157c11629a.html",
+      "old": "/folklore/stories/witches-dance-st-gallen/",
+      "new": "/stories/witches-dance-st-gallen/",
+      "story_id": "8c928101dd8b5d4b9ac41fdbbd9a8f157c11629a",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/8d4333606d92e4263e30be7644ea711b997351a6.html",
+      "old": "/folklore/stories/the-devil-and-the-poacher-muller/",
+      "new": "/stories/the-devil-and-the-poacher-muller/",
+      "story_id": "8d4333606d92e4263e30be7644ea711b997351a6",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/8eb4185b3e3f00ec85c64cc5cab67c44de6be3cf.html",
+      "old": "/folklore/stories/the-obliging-devil-overturned-cart/",
+      "new": "/stories/the-obliging-devil-overturned-cart/",
+      "story_id": "8eb4185b3e3f00ec85c64cc5cab67c44de6be3cf",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/8ebf61349361ea1cb8a0d710edf41891e375c0dd.html",
+      "old": "/folklore/stories/the-perjury-st-gallen/",
+      "new": "/stories/the-perjury-st-gallen/",
+      "story_id": "8ebf61349361ea1cb8a0d710edf41891e375c0dd",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/8edb7f91b541887896e0761fc5d0effa9bc03fea.html",
+      "old": "/folklore/stories/the-cunning-habsburger-aargau/",
+      "new": "/stories/the-cunning-habsburger-aargau/",
+      "story_id": "8edb7f91b541887896e0761fc5d0effa9bc03fea",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/91c3af070b20e613e4bd9dfe3c55e0f49b8cf744.html",
+      "old": "/folklore/stories/the-healing-toad-obwalden/",
+      "new": "/stories/the-healing-toad-obwalden/",
+      "story_id": "91c3af070b20e613e4bd9dfe3c55e0f49b8cf744",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/92bc02f0ce373d69e19e132fd403024a9996ad81.html",
+      "old": "/folklore/stories/the-noblewoman-of-milan-tscheinen-ruppen/",
+      "new": "/stories/the-noblewoman-of-milan-tscheinen-ruppen/",
+      "story_id": "92bc02f0ce373d69e19e132fd403024a9996ad81",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/934238f65d75d52248f6b956294ce61309c2558e.html",
+      "old": "/folklore/stories/the-water-spirit-near-seckingen/",
+      "new": "/stories/the-water-spirit-near-seckingen/",
+      "story_id": "934238f65d75d52248f6b956294ce61309c2558e",
+      "aliases": [
+        "/folklore/stories/934238f65d75d52248f6b956294ce61309c2558e/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/93d12f29091f682f7d1df1c16428a8e3b2a4d6b8.html",
+      "old": "/folklore/stories/the-tailor-and-the-giant-lucerne/",
+      "new": "/stories/the-tailor-and-the-giant-lucerne/",
+      "story_id": "93d12f29091f682f7d1df1c16428a8e3b2a4d6b8",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/95dcd7188a663a3c9f4e4445a863e9cf79c999e8.html",
+      "old": "/folklore/stories/the-burning-robber-in-the-reuss/",
+      "new": "/stories/the-burning-robber-in-the-reuss/",
+      "story_id": "95dcd7188a663a3c9f4e4445a863e9cf79c999e8",
+      "aliases": [
+        "/folklore/stories/95dcd7188a663a3c9f4e4445a863e9cf79c999e8/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/971a343ac4ebb1b1c21282d7e9d94f6483e31d30.html",
+      "old": "/folklore/stories/driven-home-by-the-arme-seelen-isental/",
+      "new": "/stories/driven-home-by-the-arme-seelen-isental/",
+      "story_id": "971a343ac4ebb1b1c21282d7e9d94f6483e31d30",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/986ade41a4f1248cf71b21250c488c40837ce1c6.html",
+      "old": "/folklore/stories/the-cold-hand-uri/",
+      "new": "/stories/the-cold-hand-uri/",
+      "story_id": "986ade41a4f1248cf71b21250c488c40837ce1c6",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/9a2cd8ff197a56feb036301c7bc89eab372d220a.html",
+      "old": "/folklore/stories/driven-home-by-the-arme-seelen-billen/",
+      "new": "/stories/driven-home-by-the-arme-seelen-billen/",
+      "story_id": "9a2cd8ff197a56feb036301c7bc89eab372d220a",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/9a31105c8610cd7aa89f1dec745f6acb457011c5.html",
+      "old": "/folklore/stories/the-headless-man-spiringen/",
+      "new": "/stories/the-headless-man-spiringen/",
+      "story_id": "9a31105c8610cd7aa89f1dec745f6acb457011c5",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/9a8a7eec859217629a15dc03daa57998c074a49d.html",
+      "old": "/folklore/stories/the-stollenwurm-bern/",
+      "new": "/stories/the-stollenwurm-bern/",
+      "story_id": "9a8a7eec859217629a15dc03daa57998c074a49d",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/9b8aeac4ecd492002ca2377bc42c9f8b02a7ccc5.html",
+      "old": "/folklore/stories/an-arme-seele-jagdmatt/",
+      "new": "/stories/an-arme-seele-jagdmatt/",
+      "story_id": "9b8aeac4ecd492002ca2377bc42c9f8b02a7ccc5",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/9bb1b60602cfaf7552890e6037f29297ffcc4e5e.html",
+      "old": "/folklore/stories/the-milking-stool-st-gallen/",
+      "new": "/stories/the-milking-stool-st-gallen/",
+      "story_id": "9bb1b60602cfaf7552890e6037f29297ffcc4e5e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/9c3ebc4f3e1a1b14034c65a04a72aa64dd1928e6.html",
+      "old": "/folklore/stories/the-cunning-habsburger-zurich/",
+      "new": "/stories/the-cunning-habsburger-zurich/",
+      "story_id": "9c3ebc4f3e1a1b14034c65a04a72aa64dd1928e6",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/9fb34117231eb9b5604476317d89d371b0769397.html",
+      "old": "/folklore/stories/the-abducted-child-brig/",
+      "new": "/stories/the-abducted-child-brig/",
+      "story_id": "9fb34117231eb9b5604476317d89d371b0769397",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/a3f5942218fe1751353407c72f86fbb7ead02201.html",
+      "old": "/folklore/stories/the-dreifingerstein-schwyz/",
+      "new": "/stories/the-dreifingerstein-schwyz/",
+      "story_id": "a3f5942218fe1751353407c72f86fbb7ead02201",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/a79d02c5e000ec1a7b8b0e21f7af39a8ca55274b.html",
+      "old": "/folklore/stories/the-golden-gate-lienert-1915/",
+      "new": "/stories/the-golden-gate-lienert-1915/",
+      "story_id": "a79d02c5e000ec1a7b8b0e21f7af39a8ca55274b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/a7c97b9ae9b64f5a0a2e55b95770e8fc5a9b3bc2.html",
+      "old": "/folklore/stories/the-bold-melker/",
+      "new": "/stories/the-bold-melker/",
+      "story_id": "a7c97b9ae9b64f5a0a2e55b95770e8fc5a9b3bc2",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/a89641edc0176b1600fb3d1c80a5731e17159142.html",
+      "old": "/folklore/stories/the-spectral-sennen-bern/",
+      "new": "/stories/the-spectral-sennen-bern/",
+      "story_id": "a89641edc0176b1600fb3d1c80a5731e17159142",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/a90050f4aef566c2bc1995d437c2f0e5abb0b07b.html",
+      "old": "/folklore/stories/the-careless-mother-teelwald/",
+      "new": "/stories/the-careless-mother-teelwald/",
+      "story_id": "a90050f4aef566c2bc1995d437c2f0e5abb0b07b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3.html",
+      "old": "/folklore/stories/the-bridal-voyage-on-lake-hallwil/",
+      "new": "/stories/the-bridal-voyage-on-lake-hallwil/",
+      "story_id": "aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3",
+      "aliases": [
+        "/folklore/stories/aa1ed1b2c31c530cdcf2aa28e8b3a29df3cb2eb3/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/ab64c4c2416b12fdc5fd4ea144bf167805af0162.html",
+      "old": "/folklore/stories/hornussens-hungerbrunnen-and-salibrunnen/",
+      "new": "/stories/hornussens-hungerbrunnen-and-salibrunnen/",
+      "story_id": "ab64c4c2416b12fdc5fd4ea144bf167805af0162",
+      "aliases": [
+        "/folklore/stories/ab64c4c2416b12fdc5fd4ea144bf167805af0162/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/ab89983f1ccab4e7b22af14aeba95af01280b83e.html",
+      "old": "/folklore/stories/the-giants-of-iseltwald-kohlrusch/",
+      "new": "/stories/the-giants-of-iseltwald-kohlrusch/",
+      "story_id": "ab89983f1ccab4e7b22af14aeba95af01280b83e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/abaa6b321df1246ddf45c92d709369eda308d58c.html",
+      "old": "/folklore/stories/the-hauri-steinbergalp/",
+      "new": "/stories/the-hauri-steinbergalp/",
+      "story_id": "abaa6b321df1246ddf45c92d709369eda308d58c",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/ac01551ac6053a6b599ee8375de6754d8e84f96c.html",
+      "old": "/folklore/stories/the-dwarf-woman/",
+      "new": "/stories/the-dwarf-woman/",
+      "story_id": "ac01551ac6053a6b599ee8375de6754d8e84f96c",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/ac06e63f04d69a82ad2ff33417dba296f7a51349.html",
+      "old": "/folklore/stories/strong-hans-grimm/",
+      "new": "/stories/strong-hans-grimm/",
+      "story_id": "ac06e63f04d69a82ad2ff33417dba296f7a51349",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/ac27269ee801387aca2d0206efc8d27e40db56f9.html",
+      "old": "/folklore/stories/hans-baschi-jakober-of-uri/",
+      "new": "/stories/hans-baschi-jakober-of-uri/",
+      "story_id": "ac27269ee801387aca2d0206efc8d27e40db56f9",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/add3387dc8a08e8ca0a051134ce7ab4086996f14.html",
+      "old": "/folklore/stories/the-devil-gives-a-little-bell-uri/",
+      "new": "/stories/the-devil-gives-a-little-bell-uri/",
+      "story_id": "add3387dc8a08e8ca0a051134ce7ab4086996f14",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/af31c63b17f042733da8586ae964ef391b9493c1.html",
+      "old": "/folklore/stories/the-straggele-vernaleken-zug/",
+      "new": "/stories/the-straggele-vernaleken-zug/",
+      "story_id": "af31c63b17f042733da8586ae964ef391b9493c1",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/b118ecfcc77b21734254bcd59ecad0d8468589ad.html",
+      "old": "/folklore/stories/the-kreuzliberg/",
+      "new": "/stories/the-kreuzliberg/",
+      "story_id": "b118ecfcc77b21734254bcd59ecad0d8468589ad",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/b2579af3973f1d8eecf3b2b51b70bada59badca2.html",
+      "old": "/folklore/stories/nuns-as-schneeaugen-kohlrusch/",
+      "new": "/stories/nuns-as-schneeaugen-kohlrusch/",
+      "story_id": "b2579af3973f1d8eecf3b2b51b70bada59badca2",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/b3d9bdc23c333907734a795367fc0ebed59fcac2.html",
+      "old": "/folklore/stories/the-spirit-in-the-hay-door-graggerberg/",
+      "new": "/stories/the-spirit-in-the-hay-door-graggerberg/",
+      "story_id": "b3d9bdc23c333907734a795367fc0ebed59fcac2",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/b3f7613d2ea21f147f970c0dbb1024657b1337a3.html",
+      "old": "/folklore/stories/emperor-charlemagne-and-the-snake-zurich/",
+      "new": "/stories/emperor-charlemagne-and-the-snake-zurich/",
+      "story_id": "b3f7613d2ea21f147f970c0dbb1024657b1337a3",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/b47a5e5d4e761f75c7284c9bc4dc3e726b5d9b97.html",
+      "old": "/folklore/stories/the-spirit-in-the-hay-door-goscheneralp/",
+      "new": "/stories/the-spirit-in-the-hay-door-goscheneralp/",
+      "story_id": "b47a5e5d4e761f75c7284c9bc4dc3e726b5d9b97",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/b4cfe3a2a95080bd804a5fe1c684e2815963476e.html",
+      "old": "/folklore/stories/an-arme-seele-saturday-supper/",
+      "new": "/stories/an-arme-seele-saturday-supper/",
+      "story_id": "b4cfe3a2a95080bd804a5fe1c684e2815963476e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/b52d78e297e1b54f2222c63005fd6ee4cae585d8.html",
+      "old": "/folklore/stories/the-bewitched-cows-st-gallen/",
+      "new": "/stories/the-bewitched-cows-st-gallen/",
+      "story_id": "b52d78e297e1b54f2222c63005fd6ee4cae585d8",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/b5596c2fa38db169b3e439b1dc3a2e0c3b8f2e6f.html",
+      "old": "/folklore/stories/the-bewitched-cows-uri/",
+      "new": "/stories/the-bewitched-cows-uri/",
+      "story_id": "b5596c2fa38db169b3e439b1dc3a2e0c3b8f2e6f",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/ba28d259fad054e0c287b60fe1b1be4c977e2b9c.html",
+      "old": "/folklore/stories/strong-hans-sutermeister/",
+      "new": "/stories/strong-hans-sutermeister/",
+      "story_id": "ba28d259fad054e0c287b60fe1b1be4c977e2b9c",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/ba8dcac81a20d52eb14efb40d3933fe5a64e408c.html",
+      "old": "/folklore/stories/how-he-got-rid-of-his-alraune/",
+      "new": "/stories/how-he-got-rid-of-his-alraune/",
+      "story_id": "ba8dcac81a20d52eb14efb40d3933fe5a64e408c",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/bf773dcebae22947d95e677a8d1d72812e0f1688.html",
+      "old": "/folklore/stories/aaraus-town-brook/",
+      "new": "/stories/aaraus-town-brook/",
+      "story_id": "bf773dcebae22947d95e677a8d1d72812e0f1688",
+      "aliases": [
+        "/folklore/stories/bf773dcebae22947d95e677a8d1d72812e0f1688/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/c1e13c03298a6a62923fb3643c41399ec2c53568.html",
+      "old": "/folklore/stories/the-mountain-spirit-bern/",
+      "new": "/stories/the-mountain-spirit-bern/",
+      "story_id": "c1e13c03298a6a62923fb3643c41399ec2c53568",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/c2d08fe6aa643a81cc355c329e5c37eaf78409b5.html",
+      "old": "/folklore/stories/the-gratzug-jegerlehner/",
+      "new": "/stories/the-gratzug-jegerlehner/",
+      "story_id": "c2d08fe6aa643a81cc355c329e5c37eaf78409b5",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/c5015c64a814b57be05a12692c882b64b50c9851.html",
+      "old": "/folklore/stories/the-totenvolk-in-davos-kesslers-pharmacy/",
+      "new": "/stories/the-totenvolk-in-davos-kesslers-pharmacy/",
+      "story_id": "c5015c64a814b57be05a12692c882b64b50c9851",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/c5810a040336687c0361a7d05bed9236c19aeeca.html",
+      "old": "/folklore/stories/the-rottal-an-alpine-hell/",
+      "new": "/stories/the-rottal-an-alpine-hell/",
+      "story_id": "c5810a040336687c0361a7d05bed9236c19aeeca",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/c80467d819d2d85d58d45b8863e2b49a144234f8.html",
+      "old": "/folklore/stories/the-spinner-vaud/",
+      "new": "/stories/the-spinner-vaud/",
+      "story_id": "c80467d819d2d85d58d45b8863e2b49a144234f8",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/cae34ad58cf0a4afa03c9af630c578e8079831aa.html",
+      "old": "/folklore/stories/the-bannholzler-kohlrusch/",
+      "new": "/stories/the-bannholzler-kohlrusch/",
+      "story_id": "cae34ad58cf0a4afa03c9af630c578e8079831aa",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/cd3497f6304f3e47f4be8035272a0ad6e4d8fb93.html",
+      "old": "/folklore/stories/touching-a-spirit-rynacht/",
+      "new": "/stories/touching-a-spirit-rynacht/",
+      "story_id": "cd3497f6304f3e47f4be8035272a0ad6e4d8fb93",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/cda30055fb57f0ad06c73bdcc41019ff9d89a62f.html",
+      "old": "/folklore/stories/the-unfulfilled-dream-kohlrusch/",
+      "new": "/stories/the-unfulfilled-dream-kohlrusch/",
+      "story_id": "cda30055fb57f0ad06c73bdcc41019ff9d89a62f",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/cddf06bcbe643fa5575d4a616db87199f4349dc6.html",
+      "old": "/folklore/stories/the-punished-witch-st-gallen/",
+      "new": "/stories/the-punished-witch-st-gallen/",
+      "story_id": "cddf06bcbe643fa5575d4a616db87199f4349dc6",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/cde40155b583aab83a7972ba7c50479f9acc4e30.html",
+      "old": "/folklore/stories/the-mountain-spirit-appenzell/",
+      "new": "/stories/the-mountain-spirit-appenzell/",
+      "story_id": "cde40155b583aab83a7972ba7c50479f9acc4e30",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/ce8c1fafabe1c22277c7f754448338b73d1bf39d.html",
+      "old": "/folklore/stories/the-cold-hand-valais/",
+      "new": "/stories/the-cold-hand-valais/",
+      "story_id": "ce8c1fafabe1c22277c7f754448338b73d1bf39d",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/cf5976c9cc00a00ec3a5d883c8ceed2385216bb4.html",
+      "old": "/folklore/stories/the-heavy-child-jecklin/",
+      "new": "/stories/the-heavy-child-jecklin/",
+      "story_id": "cf5976c9cc00a00ec3a5d883c8ceed2385216bb4",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/d5146c4ce9ee5cc6a1271aac27179997ee609147.html",
+      "old": "/folklore/stories/touching-a-spirit-maderanertal/",
+      "new": "/stories/touching-a-spirit-maderanertal/",
+      "story_id": "d5146c4ce9ee5cc6a1271aac27179997ee609147",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/d5c3013eadd69c31545916a0e45e8b7262a9dbf1.html",
+      "old": "/folklore/stories/the-hauri-jost-von-rudenz/",
+      "new": "/stories/the-hauri-jost-von-rudenz/",
+      "story_id": "d5c3013eadd69c31545916a0e45e8b7262a9dbf1",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/d662d78b57cdf640ae22c3d93ef9399ed5f99227.html",
+      "old": "/folklore/stories/the-devil-gives-a-little-bell-lucerne/",
+      "new": "/stories/the-devil-gives-a-little-bell-lucerne/",
+      "story_id": "d662d78b57cdf640ae22c3d93ef9399ed5f99227",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/d6a2eda50f5843f0902e81d53f8076bd7b87a2da.html",
+      "old": "/folklore/stories/the-golden-gate-lienert-1918/",
+      "new": "/stories/the-golden-gate-lienert-1918/",
+      "story_id": "d6a2eda50f5843f0902e81d53f8076bd7b87a2da",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/d6f9180e83886a45cc58238908d28c1931981c23.html",
+      "old": "/folklore/stories/william-tell-schwyz/",
+      "new": "/stories/william-tell-schwyz/",
+      "story_id": "d6f9180e83886a45cc58238908d28c1931981c23",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/d7c4d41d54567e0a51ff81418c7723c0c416d28e.html",
+      "old": "/folklore/stories/fire-on-the-haystack-schachental/",
+      "new": "/stories/fire-on-the-haystack-schachental/",
+      "story_id": "d7c4d41d54567e0a51ff81418c7723c0c416d28e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/d8bd03772e2dded03a680db97869221c220a9083.html",
+      "old": "/folklore/stories/the-fence-stake-uri/",
+      "new": "/stories/the-fence-stake-uri/",
+      "story_id": "d8bd03772e2dded03a680db97869221c220a9083",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/e0656c84c36ff0a3a2df3b34a12ea9704abc7485.html",
+      "old": "/folklore/stories/the-martinsdruck-vernaleken/",
+      "new": "/stories/the-martinsdruck-vernaleken/",
+      "story_id": "e0656c84c36ff0a3a2df3b34a12ea9704abc7485",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/e456ddd6a42326f636c91b685533e727aa15a40b.html",
+      "old": "/folklore/stories/the-procession-of-the-dead-valais/",
+      "new": "/stories/the-procession-of-the-dead-valais/",
+      "story_id": "e456ddd6a42326f636c91b685533e727aa15a40b",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/e4ecdf959955c869b27d59cf81c4aea86d9c1382.html",
+      "old": "/folklore/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/",
+      "new": "/stories/the-toggeli-and-the-baptismal-name-danger-of-waking/",
+      "story_id": "e4ecdf959955c869b27d59cf81c4aea86d9c1382",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/e5ad1d5a7653738751df5aa0f1b28991ba91fa9d.html",
+      "old": "/folklore/stories/the-healing-toad-uri/",
+      "new": "/stories/the-healing-toad-uri/",
+      "story_id": "e5ad1d5a7653738751df5aa0f1b28991ba91fa9d",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/e79fd3fb61c8856c9547c50493e325655b576242.html",
+      "old": "/folklore/stories/the-rochelmore-vernaleken/",
+      "new": "/stories/the-rochelmore-vernaleken/",
+      "story_id": "e79fd3fb61c8856c9547c50493e325655b576242",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/f055d03231bb6cdf37afcc48bd0f074ee3bae30f.html",
+      "old": "/folklore/stories/the-destruction-of-tasch-jegerlehner/",
+      "new": "/stories/the-destruction-of-tasch-jegerlehner/",
+      "story_id": "f055d03231bb6cdf37afcc48bd0f074ee3bae30f",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/f0bd6117493ec0d10b9fe9d8afe8437781d9294f.html",
+      "old": "/folklore/stories/the-procession-of-the-dead-uri/",
+      "new": "/stories/the-procession-of-the-dead-uri/",
+      "story_id": "f0bd6117493ec0d10b9fe9d8afe8437781d9294f",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/f38a88c672041e7d6ffc53a9c6563ccff7efb37e.html",
+      "old": "/folklore/stories/the-destruction-of-plurs-vernaleken/",
+      "new": "/stories/the-destruction-of-plurs-vernaleken/",
+      "story_id": "f38a88c672041e7d6ffc53a9c6563ccff7efb37e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/f51d2487176cda36e037f3313c67cf4d34f44f6e.html",
+      "old": "/folklore/stories/freemasons-blood-contract/",
+      "new": "/stories/freemasons-blood-contract/",
+      "story_id": "f51d2487176cda36e037f3313c67cf4d34f44f6e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/fa23bdca840efeeec31d44000164bcf1ac552c5d.html",
+      "old": "/folklore/stories/the-cradle-spirit/",
+      "new": "/stories/the-cradle-spirit/",
+      "story_id": "fa23bdca840efeeec31d44000164bcf1ac552c5d",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/facc9fdb0c03b48b346d2e5a41b95b0875db6140.html",
+      "old": "/folklore/stories/the-punished-witch-graubunden/",
+      "new": "/stories/the-punished-witch-graubunden/",
+      "story_id": "facc9fdb0c03b48b346d2e5a41b95b0875db6140",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/facde096871dc508eb99cde156ad33f976638f64.html",
+      "old": "/folklore/stories/egelsee-on-the-heitersberg/",
+      "new": "/stories/egelsee-on-the-heitersberg/",
+      "story_id": "facde096871dc508eb99cde156ad33f976638f64",
+      "aliases": [
+        "/folklore/stories/facde096871dc508eb99cde156ad33f976638f64/"
+      ]
+    },
+    {
+      "source": "folklore/stories/archive/fadd3437afc72bb06329de025416fd71266e6583.html",
+      "old": "/folklore/stories/the-wasserfraulein-near-zug-lutolf/",
+      "new": "/stories/the-wasserfraulein-near-zug-lutolf/",
+      "story_id": "fadd3437afc72bb06329de025416fd71266e6583",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/archive/fc4fce8f026d309ab48d220a3efef394780b452e.html",
+      "old": "/folklore/stories/the-fence-stake-zug/",
+      "new": "/stories/the-fence-stake-zug/",
+      "story_id": "fc4fce8f026d309ab48d220a3efef394780b452e",
+      "aliases": []
+    },
+    {
+      "source": "folklore/stories/das-wutisheer.html",
+      "old": "/folklore/stories/the-wild-hunt/",
+      "new": "/stories/the-wild-hunt/",
+      "story_id": "b94b31288d269cdbc55a79dfbeef72fce89895d0",
+      "aliases": [
+        "/folklore/stories/b94b31288d269cdbc55a79dfbeef72fce89895d0/"
+      ]
+    },
+    {
+      "source": "folklore/stories/das-wydenweiblein.html",
+      "old": "/folklore/stories/the-wyden-woman/",
+      "new": "/stories/the-wyden-woman/",
+      "story_id": "2980bfdf495e5b36f6b87ae59d36a9c8440e56c5",
+      "aliases": [
+        "/folklore/stories/2980bfdf495e5b36f6b87ae59d36a9c8440e56c5/"
+      ]
+    },
+    {
+      "source": "folklore/stories/das-zauberbuch-drei-bueblein.html",
+      "old": "/folklore/stories/the-magic-book-of-the-three-poor-boys/",
+      "new": "/stories/the-magic-book-of-the-three-poor-boys/",
+      "story_id": "6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a",
+      "aliases": [
+        "/folklore/stories/6fb9e2c043f7401c2d7f52051c8b1b2b4c7b0f6a/"
+      ]
+    },
+    {
+      "source": "folklore/stories/das-zauberbuch-hilft.html",
+      "old": "/folklore/stories/the-magic-book-helps-in-time-of-need/",
+      "new": "/stories/the-magic-book-helps-in-time-of-need/",
+      "story_id": "fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f",
+      "aliases": [
+        "/folklore/stories/fdc9c4d4b54b6d0a8c3c3e2dff7f0c8a2d9b3a5f/"
+      ]
+    },
+    {
+      "source": "folklore/stories/das-zauberbuch.html",
+      "old": "/folklore/stories/the-magic-book/",
+      "new": "/stories/the-magic-book/",
+      "story_id": "434e1c6212cefb2c179cebaefb73d062fb021de8",
+      "aliases": [
+        "/folklore/stories/434e1c6212cefb2c179cebaefb73d062fb021de8/"
+      ]
+    }
+  ],
+  "exceptions": [
+    "/folklore/stories/house-of-the-blood-comet.html",
+    "/folklore/The-Bailiff-of-Brunnegg.html"
+  ]
+}
