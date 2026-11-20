@@ -4,15 +4,15 @@
     "username": "Ted"
   },
   "backfill_ramp": {
-    "health_hold": "awaiting_verified_archive_posts",
-    "healthy_since": "2026-11-02T18:50:55Z",
-    "last_error": "Recent publication or deployment workflow failed",
-    "last_error_at": "2026-11-02T18:50:55Z",
+    "health_hold": "publication_error",
+    "healthy_since": "2026-11-20T18:48:39Z",
+    "last_error": "Could not complete GET request to tschopp.net",
+    "last_error_at": "2026-11-20T18:48:39Z",
     "phase": "initial",
     "started_at": "2026-10-26T00:08:07Z",
     "version": 1
   },
-  "consecutive_failures": 0,
+  "consecutive_failures": 1,
   "durable_initialized_at": "2026-10-25T17:27:55Z",
   "entries": {
     "https://ai.tedt.org/prompts/abb-sbb-ubb-builder/": {
@@ -8258,7 +8258,9 @@
           "url": "https://tschopp.net/@Ted/117648322120005004"
         }
       ],
-      "preferred_ids": [],
+      "preferred_ids": [
+        "117648322120005004"
+      ],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
       "reconciled_at": "2026-11-20T10:35:10Z",
@@ -28237,6 +28239,7 @@
   "last_reconciliation_at": "2026-11-20T10:35:10Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 300,
+  "publication_not_before": "2026-11-20T18:53:39Z",
   "receipts": [
     {
       "canonical_url": "https://tedt.org/happy-advent/",
