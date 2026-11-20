@@ -8251,12 +8251,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "efb99366f26f577625eaf0e15c8ff041a5e2836ba86ca9c535ab15fbe7ab8209",
-        "kind": "archive",
-        "started_at": "2026-11-20T10:35:10Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-20T10:35:30.787Z",
+          "id": "117648322120005004",
+          "url": "https://tschopp.net/@Ted/117648322120005004"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -8264,8 +8265,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Crabmen-Brultans.md"
       ],
-      "state": "uncertain",
-      "title": "Crabmen «Brultans»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-20T10:35:30.787Z",
+        "id": "117648322120005004",
+        "url": "https://tschopp.net/@Ted/117648322120005004"
+      },
+      "title": "Crabmen «Brultans»",
+      "verified_at": "2026-11-20T10:35:10Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cradengeen.html": {
       "aliases": [
@@ -28226,7 +28233,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-20T02:39:53.057Z",
+  "last_publication_at": "2026-11-20T10:35:30.787Z",
   "last_reconciliation_at": "2026-11-20T10:35:10Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 300,
@@ -29790,6 +29797,14 @@
       "kind": "archive",
       "operation": "8da3f4b73820eb02e497787ca0538d3fbb8f2e406f1c2e9a7c408431d693e97f",
       "url": "https://tschopp.net/@Ted/117646451871355133"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Crabmen-Brultans.html",
+      "created_at": "2026-11-20T10:35:30.787Z",
+      "id": "117648322120005004",
+      "kind": "archive",
+      "operation": "efb99366f26f577625eaf0e15c8ff041a5e2836ba86ca9c535ab15fbe7ab8209",
+      "url": "https://tschopp.net/@Ted/117648322120005004"
     }
   ],
   "run_count": 596,
