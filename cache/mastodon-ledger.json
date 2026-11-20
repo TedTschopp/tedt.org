@@ -8214,12 +8214,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "8da3f4b73820eb02e497787ca0538d3fbb8f2e406f1c2e9a7c408431d693e97f",
-        "kind": "archive",
-        "started_at": "2026-11-20T02:39:34Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-20T02:39:53.057Z",
+          "id": "117646451871355133",
+          "url": "https://tschopp.net/@Ted/117646451871355133"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -8227,8 +8228,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Corporal-Smyty.md"
       ],
-      "state": "uncertain",
-      "title": "Corporal Smyty"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-20T02:39:53.057Z",
+        "id": "117646451871355133",
+        "url": "https://tschopp.net/@Ted/117646451871355133"
+      },
+      "title": "Corporal Smyty",
+      "verified_at": "2026-11-20T02:39:34Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Crabmen-Brultans.html": {
       "aliases": [
@@ -28212,7 +28219,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-19T22:17:13.372Z",
+  "last_publication_at": "2026-11-20T02:39:53.057Z",
   "last_reconciliation_at": "2026-11-20T02:39:34Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 299,
@@ -29768,6 +29775,14 @@
       "kind": "archive",
       "operation": "ba17aaa2935ed69ddb7bd066694d7751cba3e9498e67931ae94bbe837fa86c67",
       "url": "https://tschopp.net/@Ted/117645419044683527"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Corporal-Smyty.html",
+      "created_at": "2026-11-20T02:39:53.057Z",
+      "id": "117646451871355133",
+      "kind": "archive",
+      "operation": "8da3f4b73820eb02e497787ca0538d3fbb8f2e406f1c2e9a7c408431d693e97f",
+      "url": "https://tschopp.net/@Ted/117646451871355133"
     }
   ],
   "run_count": 595,
