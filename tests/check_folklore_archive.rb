@@ -6,6 +6,8 @@ require 'nokogiri'
 require 'pathname'
 require 'rexml/document'
 require 'uri'
+require 'digest'
+require 'yaml'
 
 site = Pathname.new(ARGV.fetch(0, '_site'))
 root = Pathname.new(__dir__).parent
@@ -19,9 +21,10 @@ if migration_path.file?
   locations = REXML::XPath.match(sitemap, '//*[local-name()="loc"]').map(&:text)
   manifest = JSON.parse(site.join('indieweb-manifest.json').read).fetch('entries')
   migration.fetch('routes').each do |old, target|
-    file = site.join(old.delete_prefix('/'), 'index.html')
+    path = URI::DEFAULT_PARSER.unescape(old).delete_prefix('/')
+    file = File.extname(path).empty? ? site.join(path, 'index.html') : site.join(path)
     document = Nokogiri::HTML(file.read)
-    unless target.start_with?('https://folklore.tschopp.org/') &&
+    unless (target.start_with?('https://folklore.tschopp.org/') || target == 'https://tedt.org/stories/house-of-the-blood-comet.html') &&
            document.at_css('link[rel="canonical"]')&.[]('href') == target &&
            document.at_css('meta[http-equiv="refresh"]')&.[]('content') == "0; url=#{target}" &&
            document.at_css('link[rel="webmention"]')&.[]('href') == 'https://webmention.io/tedt.org/webmention' &&
@@ -31,10 +34,23 @@ if migration_path.file?
       abort "Invalid folklore migration fallback at #{old}"
     end
   end
-  exceptions = migration.fetch('exceptions')
-  abort 'Embedded original-fiction fragment was redirected' if Nokogiri::HTML(site.join('folklore/stories/house-of-the-blood-comet.html').read).at_css('meta[http-equiv="refresh"]')
-  abort 'Existing Brunnegg article alias was changed' unless site.join('folklore/The-Bailiff-of-Brunnegg.html').file?
-  puts "Folklore migration OK (#{migration.fetch('routes').size} direct fallbacks; #{exceptions.size} legacy exceptions retained)"
+  fiction = migration.fetch('original_fiction')
+  fragment = site.join(fiction.fetch('new').delete_prefix('/'))
+  abort 'Original fiction changed during its move' unless Digest::SHA256.file(fragment).hexdigest == fiction.fetch('sha256')
+  abort 'Original fiction disappeared from its own site' if Nokogiri::HTML(fragment.read).at_css('meta[http-equiv="refresh"]')
+  abort 'Local Swiss folklore posts remain' unless root.glob('_posts/Swiss Folklore/*').empty?
+  registry = YAML.safe_load(root.join('_data/category_registry.yml').read)
+  abort 'Folklore remains a local category' if registry.key?('folklore')
+  home = Nokogiri::HTML(site.join('index.html').read)
+  cards = home.css('[data-featured-story]')
+  abort 'Homepage does not offer three distinct static story links' unless cards.size == 3 && cards.map { |c| c['data-story-id'] }.uniq.size == 3
+  cards.each do |card|
+    abort 'Homepage folklore card has a local destination' unless card.at_css('[data-featured-link]')['href'].start_with?('https://folklore.tschopp.org/stories/')
+  end
+  pool = JSON.parse(home.at_css('#featured-folklore-data').text).fetch('stories')
+  abort 'Homepage folklore pool is not 99 distinct stories' unless pool.size == 99 && pool.map { |story| story.fetch('id') }.uniq.size == 99
+  abort 'Folklore category remains in the homepage' if home.at_css('a[href="/category/folklore/"], a[href="https://tedt.org/category/folklore/"]')
+  puts "Folklore migration OK (#{migration.fetch('routes').size} direct fallbacks; 11 retired articles; 99 story pool; original fiction preserved)"
   exit 0
 end
 

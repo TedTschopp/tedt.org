@@ -35,7 +35,6 @@ seo-description: 'A new work of fiction begins as a granddaughter unearths her g
 categories:
 - Personal Writing
 - Religion
-- Folklore
 - Role Playing Games
 tags:
 - fiction

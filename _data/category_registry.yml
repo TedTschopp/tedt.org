@@ -270,29 +270,6 @@ fandom:
   hide_from_category_list: false
   inline_style: "vertical-align: middle;"
 
-folklore:
-  title: Folklore
-  raw_names: [ "Folklore", "FolkLore", "ᚠᛟᛚᚲ ᛚᛟᚱᛖ" ]
-  class: Folklore
-  label: "Folklore"
-  emoji: "📜"
-  subtitle: "Whispers from the Alps: Navigating Swiss Folk Tales"
-  description: "A collection of Swiss Folklore stories I am translating and posting here. I am using computer tools to do the translation work, so everything might not be 100% accurate."
-  image: /img/home/Folklore.webp
-  palette:
-    start: "#92400e"
-    end: "#f59e0b"
-    fontTitle: '"IM Fell DW Pica","Times New Roman",Times,serif'
-    titleStyle: italic
-    titleColorLight: "#b45309"
-    titleColorDark: "#92400e"
-    titleHoverColorLight: "#b45309"
-    titleHoverColorDark: "#92400e"
-    titleWeight: 500
-  category_home_page: /category/folklore/
-  hide_from_carousel: false
-  hide_from_category_list: false
-  inline_style: "vertical-align: middle;"
 
 gamma-world:
   title: Gamma World
