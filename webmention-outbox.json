@@ -11106,44 +11106,48 @@
       ],
       "deliveries": {
         "https://developers.openai.com/api/docs/guides/your-data": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://openrouter.ai/assets/data-processing-agreement.pdf": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://openrouter.ai/docs/guides/features/zdr": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://phala.com/posts/phala-november-preliminary-incident-report": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://platform.claude.com/docs/en/manage-claude/api-and-data-retention": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tedt.org/The-Same-Model-Different-Rules/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/UlZXhM8c49ChGKmvgW_L",
+          "attempts": 1
         },
         "https://tedt.org/The-Sandbox-Was-Not-the-Boundary/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "accepted",
+          "status": 201,
+          "receipt": "https://webmention.io/tedt.org/webmention/46wdp68boTj5bLk_QhqU",
+          "attempts": 1
         },
         "https://tools.tedt.org/inside-ai/": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://tools.tedt.org/prompt-journey.html": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         },
         "https://www.dragos.com/blog/ai-supply-chain-security-canary-tokens": {
-          "state": "pending",
-          "attempts": 0
+          "state": "unsupported",
+          "attempts": 1
         }
       }
     }
