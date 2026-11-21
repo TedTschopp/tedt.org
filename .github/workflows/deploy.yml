@@ -234,6 +234,7 @@ jobs:
           set -euo pipefail
           npm run build:folklore-search
           bundle exec ruby tests/check_folklore_archive.rb _site
+          node --test tests/featured-folklore.test.mjs
 
       - name: Shared analytics browser contract
         run: npm run test:analytics

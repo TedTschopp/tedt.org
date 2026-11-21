@@ -58,8 +58,8 @@ stories:
   links:
   - title: Swiss Folklore Collection
     url: https://folklore.tschopp.org/
-  - title: All Folklore Articles
-    url: "/category/folklore/"
+  - title: All Translated Tales
+    url: https://folklore.tschopp.org/stories/
 - id: original-writing
   title: Original Writing
   description: Personal writing and imaginative work, with each piece presented in

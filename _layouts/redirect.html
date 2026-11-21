@@ -6,7 +6,7 @@
     <meta name="robots" content="noindex,follow">
     <title>This page has moved</title>
     <link rel="canonical" href="{{ page.redirect.to | escape }}">
-    {% if page.redirect.from contains '/folklore' %}
+    {% if page.folklore_migration or page.redirect.from contains '/folklore' %}
     <link rel="webmention" href="{{ site.indieweb.webmention_endpoint | default: 'https://webmention.io/tedt.org/webmention' | escape }}">
     <script>
       if (window.location.hash || window.location.search) {

@@ -7514,6 +7514,39 @@
       ],
       "width": 1672
     },
+    "/img/2026-11/AI-Suppliers.webp": {
+      "height": 941,
+      "source_sha256": "83145a1aa1651f5c90cc395e4d2cadb75d0e6200e418703bb3cc881146474faa",
+      "src": "/img/2026-11/AI-Suppliers.webp",
+      "variants": [
+        {
+          "height": 271,
+          "path": "/img/generated/responsive/2026-11/AI-Suppliers--480w.webp",
+          "width": 480
+        },
+        {
+          "height": 433,
+          "path": "/img/generated/responsive/2026-11/AI-Suppliers--768w.webp",
+          "width": 768
+        },
+        {
+          "height": 676,
+          "path": "/img/generated/responsive/2026-11/AI-Suppliers--1200w.webp",
+          "width": 1200
+        },
+        {
+          "height": 820,
+          "path": "/img/generated/responsive/2026-11/AI-Suppliers--1456w.webp",
+          "width": 1456
+        },
+        {
+          "height": 941,
+          "path": "/img/2026-11/AI-Suppliers.webp",
+          "width": 1672
+        }
+      ],
+      "width": 1672
+    },
     "/img/2026-11/The-New-Bottle-Neck.webp": {
       "height": 941,
       "source_sha256": "48c23a2767073f8f0e6beaadc80a4c21bd29caef47dcc0c8fa220ab0856d7d35",

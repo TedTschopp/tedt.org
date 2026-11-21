@@ -1,0 +1,29 @@
+<section class="col" aria-labelledby="folklore" data-featured-folklore>
+  <div class="card h-100">
+    <div class="card-body flex-grow-0 p-4">
+      <h2 class="card-title" id="folklore"><a href="https://folklore.tschopp.org/">Swiss Folklore</a></h2>
+      <p class="card-text">Tales of mountain spirits, witches, and things heard after dark. Read the English translations, reader notes, and original texts at folklore.tschopp.org.</p>
+    </div>
+    <div class="card-footer flex-grow-1 p-0">
+      {% for story in site.data.featured_folklore.stories limit:3 %}
+      <article class="card rounded-0 border-start-0 border-end-0 border-bottom-0" data-featured-story data-story-id="{{ story.id | escape }}">
+        <div class="row g-0">
+        <div class="col-4">
+        <img class="rounded-0 img-fluid w-100" data-featured-image
+          src="{{ story.image.src | escape }}" srcset="{{ story.image.srcset | escape }}"
+          sizes="(min-width: 992px) 10vw, (min-width: 768px) 15vw, 30vw"
+          width="1536" height="1024" alt="{{ story.image.alt | escape }}" loading="lazy" decoding="async">
+        </div>
+        <div class="col-8 card-body">
+          <h3 class="h5 card-title"><a class="stretched-link" data-featured-link href="{{ story.url | escape }}">{{ story.title | escape }}</a></h3>
+          <p class="card-text text-truncate-5" data-featured-teaser>{{ story.teaser | escape }}</p>
+        </div>
+        </div>
+      </article>
+      {% endfor %}
+      <p class="p-3 mb-0"><a href="https://folklore.tschopp.org/stories/">Browse all translated tales</a></p>
+    </div>
+  </div>
+  <script type="application/json" id="featured-folklore-data">{{ site.data.featured_folklore | jsonify | replace: '<', '\u003c' }}</script>
+  <script defer src="{{ '/assets/js/featured-folklore.js' | relative_url }}"></script>
+</section>
