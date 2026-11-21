@@ -8399,12 +8399,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "0c43071724c88b6f0830a4b9ad97e3d967b6721811d5def8d9f0c176d5e7705a",
-        "kind": "archive",
-        "started_at": "2026-11-21T21:14:05Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-21T21:14:24.972Z",
+          "id": "117656496699661169",
+          "url": "https://tschopp.net/@Ted/117656496699661169"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -8412,8 +8413,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Crested-Dragon-Debgon.md"
       ],
-      "state": "uncertain",
-      "title": "Crested Dragon «Debgon»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-21T21:14:24.972Z",
+        "id": "117656496699661169",
+        "url": "https://tschopp.net/@Ted/117656496699661169"
+      },
+      "title": "Crested Dragon «Debgon»",
+      "verified_at": "2026-11-21T21:14:05Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Croaker.html": {
       "aliases": [
@@ -28278,7 +28285,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-21T18:53:45.041Z",
+  "last_publication_at": "2026-11-21T21:14:24.972Z",
   "last_reconciliation_at": "2026-11-21T21:14:05Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 305,
@@ -29882,6 +29889,14 @@
       "kind": "new",
       "operation": "c57d907b12c6f9c663220d188158a670c0f05ec74ecb0d91b4cc46e04d8e5cdc",
       "url": "https://tschopp.net/@Ted/117655943580267942"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Crested-Dragon-Debgon.html",
+      "created_at": "2026-11-21T21:14:24.972Z",
+      "id": "117656496699661169",
+      "kind": "archive",
+      "operation": "0c43071724c88b6f0830a4b9ad97e3d967b6721811d5def8d9f0c176d5e7705a",
+      "url": "https://tschopp.net/@Ted/117656496699661169"
     }
   ],
   "run_count": 603,
