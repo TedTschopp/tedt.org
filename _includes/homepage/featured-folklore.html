@@ -1,27 +1,44 @@
+{% assign feature = site.data.homepage_folklore %}
+{% capture feature_title_theme %}{% include category/category-theme-inline-style.html entry=feature %}{% endcapture %}
 <section class="col" aria-labelledby="folklore" data-featured-folklore>
   <div class="card h-100">
-    <div class="card-body flex-grow-0 p-4">
-      <h2 class="card-title" id="folklore"><a href="https://folklore.tschopp.org/">Swiss Folklore</a></h2>
-      <p class="card-text">Tales of mountain spirits, witches, and things heard after dark. Read the English translations, reader notes, and original texts at folklore.tschopp.org.</p>
+    <div class="position-relative">
+      <div class="ratio ratio-3x1">
+        <img data-featured-banner class="card-img-top w-100 h-100 d-block img-fluid rounded-start object-fit-cover"
+          src="https://folklore.tschopp.org/assets/folklore/illustrations/{{ feature.banner_asset }}-768.webp"
+          srcset="https://folklore.tschopp.org/assets/folklore/illustrations/{{ feature.banner_asset }}-480.webp 480w, https://folklore.tschopp.org/assets/folklore/illustrations/{{ feature.banner_asset }}-768.webp 768w, https://folklore.tschopp.org/assets/folklore/illustrations/{{ feature.banner_asset }}-1200.webp 1200w, https://folklore.tschopp.org/assets/folklore/illustrations/{{ feature.banner_asset }}-1536.webp 1536w"
+          sizes="(min-width: 992px) 33vw, (min-width: 768px) 50vw, 100vw"
+          width="1536" height="1024" alt="{{ feature.banner_alt | escape }}" loading="lazy" decoding="async">
+      </div>
     </div>
-    <div class="card-footer flex-grow-1 p-0">
+    <div class="card-body pt-2 pb-2 p-4">
+      <h2 class="card-title cat-dynamic-title" id="folklore"><span class="category-theme" style="{{ feature_title_theme | strip }}"><a class="category-title text-decoration-none" href="{{ feature.url | escape }}">{{ feature.title | escape }}</a></span></h2>
+      <h3 class="text-muted card-subtitle mb-2 three-line-clamp">{{ feature.subtitle | escape }}</h3>
+      <p class="card-text three-line-clamp">{{ feature.description | escape }}</p>
+    </div>
+    <div class="card-footer p-0 py-0 h-100">
       {% for story in site.data.featured_folklore.stories limit:3 %}
-      <article class="card rounded-0 border-start-0 border-end-0 border-bottom-0" data-featured-story data-story-id="{{ story.id | escape }}">
-        <div class="row g-0">
-        <div class="col-4">
-        <img class="rounded-0 img-fluid w-100" data-featured-image
-          src="{{ story.image.src | escape }}" srcset="{{ story.image.srcset | escape }}"
-          sizes="(min-width: 992px) 10vw, (min-width: 768px) 15vw, 30vw"
-          width="1536" height="1024" alt="{{ story.image.alt | escape }}" loading="lazy" decoding="async">
+      <div class="container">
+        <div class="row align-items-stretch">
+          <article class="card rounded-0 px-0" data-featured-story data-story-id="{{ story.id | escape }}">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img class="img-fluid rounded-start w-100 h-100 object-fit-cover" data-featured-image
+                  src="{{ story.image.src | escape }}" srcset="{{ story.image.srcset | escape }}"
+                  sizes="(min-width: 992px) 11vw, (min-width: 768px) 17vw, 100vw"
+                  width="1536" height="1024" alt="{{ story.image.alt | escape }}" loading="lazy" decoding="async">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h3 class="h5 card-title three-line-clamp"><a data-featured-link href="{{ story.url | escape }}">{{ story.title | escape }}</a></h3>
+                  <p class="card-text text-truncate-5" data-featured-teaser>{{ story.teaser | escape }}</p>
+                </div>
+              </div>
+            </div>
+          </article>
         </div>
-        <div class="col-8 card-body">
-          <h3 class="h5 card-title"><a class="stretched-link" data-featured-link href="{{ story.url | escape }}">{{ story.title | escape }}</a></h3>
-          <p class="card-text text-truncate-5" data-featured-teaser>{{ story.teaser | escape }}</p>
-        </div>
-        </div>
-      </article>
+      </div>
       {% endfor %}
-      <p class="p-3 mb-0"><a href="https://folklore.tschopp.org/stories/">Browse all translated tales</a></p>
     </div>
   </div>
   <script type="application/json" id="featured-folklore-data">{{ site.data.featured_folklore | jsonify | replace: '<', '\u003c' }}</script>

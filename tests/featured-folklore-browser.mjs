@@ -50,6 +50,18 @@ try {
   for(const width of [1440,390]) {
     await page.setViewportSize({width,height:1000});
     const section=page.locator('[data-featured-folklore]');await section.scrollIntoViewIfNeeded();
+    await section.locator('[data-featured-banner]').evaluate(img=>img.decode());
+    if (width === 1440) {
+      const banners = await section.locator('..').locator(':scope > .col .ratio-3x1').evaluateAll(nodes => nodes.map(node => {const r=node.getBoundingClientRect();return {top:r.top,height:r.height,width:r.width};}).filter(r=>r.width>0&&r.height>0));
+      assert.equal(banners.length,3,'All three homepage columns have a visible banner');
+      assert.ok(Math.max(...banners.map(r=>r.top))-Math.min(...banners.map(r=>r.top))<2,'Banner tops align');
+      assert.ok(Math.max(...banners.map(r=>r.height))-Math.min(...banners.map(r=>r.height))<2,'Banner heights match');
+    } else {
+      const imageWidth=await section.locator('[data-featured-image]').first().evaluate(img=>img.getBoundingClientRect().width);
+      const cardWidth=await section.locator('[data-featured-story]').first().evaluate(card=>card.getBoundingClientRect().width);
+      assert.ok(imageWidth>cardWidth*0.9,'Story imagery stacks above text on mobile, like neighboring cards');
+    }
+
     for(const image of await section.locator('img').all()) {
       await image.scrollIntoViewIfNeeded();await image.evaluate(img=>img.decode());
       assert.ok(await image.evaluate(img=>img.naturalWidth>0));
@@ -64,6 +76,9 @@ try {
   }
   // Keyboard access goes to the canonical story, without a local article hop.
   const link=page.locator('[data-featured-link]').first();await link.focus();assert.equal(await link.evaluate(a=>a===document.activeElement),true);
+  await page.setViewportSize({width:1440,height:1400});
+  await page.locator('[data-featured-folklore]').scrollIntoViewIfNeeded();
+  await page.locator('[data-featured-folklore]').locator('..').screenshot({path:join(root,'test-results','homepage-three-columns.png')});
   assert.deepEqual(errors,[]);
   const noJS=await browser.newContext({javaScriptEnabled:false,viewport:{width:390,height:844}});
   const fallback=await noJS.newPage();await fallback.goto(base,{waitUntil:'domcontentloaded'});

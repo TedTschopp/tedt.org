@@ -14,7 +14,13 @@ to both sites. This does not clear held stories or change translations.
 `assets/js/featured-folklore.js` samples three unique entries once per page load,
 updating the entire card together. It does not rotate stories while reading or
 fetch a remote catalogue. With JavaScript disabled, the first three links remain.
-Only the displayed cards load images.
+Only the displayed cards load story images.
+
+`_data/homepage_folklore.yml` supplies the external collection’s presentation: a
+3:1 section banner, decorative title, subtitle, and introduction. The include
+uses the same Bootstrap card, padding, title clamps, and responsive image/text
+columns as the adjacent Blog and category panels. Its presentation metadata is
+separate from the local category registry.
 
 The local Folklore category and eleven translation posts have been retired.
 `_data/folklore/migration.json` inventories their former addresses, aliases,
