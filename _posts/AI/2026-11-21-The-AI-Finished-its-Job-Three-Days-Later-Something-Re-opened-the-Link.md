@@ -37,6 +37,8 @@ tags:
   - canary tokens
   - incident response
   - vendor risk
+mastodon-post-id: "117655943580267942"
+mastodon-post-url: "https://tschopp.net/@Ted/117655943580267942"
 ---
 
 # The AI Finished its job. Three Days Later, Something Re-opened the Link.
