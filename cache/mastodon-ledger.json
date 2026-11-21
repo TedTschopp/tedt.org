@@ -8362,12 +8362,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "b5afcbbd07120fd7ba40b2aa21c0815b7545e6bf393fe2006f080b5cb8257e6c",
-        "kind": "archive",
-        "started_at": "2026-11-21T15:39:35Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-21T15:39:55.730Z",
+          "id": "117655181441807662",
+          "url": "https://tschopp.net/@Ted/117655181441807662"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -8375,8 +8376,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Crep-White.md"
       ],
-      "state": "uncertain",
-      "title": "Crep,White"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-21T15:39:55.730Z",
+        "id": "117655181441807662",
+        "url": "https://tschopp.net/@Ted/117655181441807662"
+      },
+      "title": "Crep,White",
+      "verified_at": "2026-11-21T15:39:35Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Crested-Dragon-Debgon.html": {
       "aliases": [
@@ -28228,7 +28235,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-21T07:40:40.106Z",
+  "last_publication_at": "2026-11-21T15:39:55.730Z",
   "last_reconciliation_at": "2026-11-21T15:39:35Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 303,
@@ -29816,6 +29823,14 @@
       "kind": "archive",
       "operation": "3b404c46829667185b4c945bbd643208a7c643be34e07752fa35eb3c5bd6418b",
       "url": "https://tschopp.net/@Ted/117653296913209276"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Crep-White.html",
+      "created_at": "2026-11-21T15:39:55.730Z",
+      "id": "117655181441807662",
+      "kind": "archive",
+      "operation": "b5afcbbd07120fd7ba40b2aa21c0815b7545e6bf393fe2006f080b5cb8257e6c",
+      "url": "https://tschopp.net/@Ted/117655181441807662"
     }
   ],
   "run_count": 601,
