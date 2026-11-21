@@ -1,0 +1,14 @@
+title: Swiss Folklore
+url: https://folklore.tschopp.org/
+subtitle: Collected tales from the Swiss Alps
+description: English translations, reader notes, and original texts for tales of mountain spirits, witches, and things heard after dark.
+banner_asset: high-valleys
+banner_alt: An engraved Alpine path crosses a stone bridge toward timber houses beneath mountain ridges.
+palette:
+  start: "#92400e"
+  end: "#f59e0b"
+  fontTitle: '"IM Fell DW Pica", "Times New Roman", Times, serif'
+  titleStyle: italic
+  titleWeight: 500
+  titleColorLight: "#b45309"
+  titleColorDark: "#f59e0b"
