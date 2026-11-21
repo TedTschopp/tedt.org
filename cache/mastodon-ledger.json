@@ -12,7 +12,7 @@
     "started_at": "2026-10-26T00:08:07Z",
     "version": 1
   },
-  "consecutive_failures": 1,
+  "consecutive_failures": 0,
   "durable_initialized_at": "2026-10-25T17:27:55Z",
   "entries": {
     "https://ai.tedt.org/prompts/abb-sbb-ubb-builder/": {
@@ -28211,7 +28211,6 @@
   "last_reconciliation_at": "2026-11-21T00:21:14Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 301,
-  "publication_not_before": "2026-11-20T18:53:39Z",
   "receipts": [
     {
       "canonical_url": "https://tedt.org/happy-advent/",
@@ -29790,7 +29789,7 @@
       "url": "https://tschopp.net/@Ted/117651570161260371"
     }
   ],
-  "run_count": 597,
+  "run_count": 598,
   "unmatched_legacy": {
     "/Swiss-Folklore/:title:output_ext/": [
       {
