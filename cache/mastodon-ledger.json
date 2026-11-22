@@ -8510,12 +8510,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "d3f6ba6b34649d2804995eb97702b60baa64b31af78195363e92812914b5811a",
-        "kind": "archive",
-        "started_at": "2026-11-22T16:32:27Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-22T16:32:47.949Z",
+          "id": "117661051646748305",
+          "url": "https://tschopp.net/@Ted/117661051646748305"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -8523,8 +8524,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cuttleimp.md"
       ],
-      "state": "uncertain",
-      "title": "Cuttleimp"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-22T16:32:47.949Z",
+        "id": "117661051646748305",
+        "url": "https://tschopp.net/@Ted/117661051646748305"
+      },
+      "title": "Cuttleimp",
+      "verified_at": "2026-11-22T16:32:27Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cyber-netter.html": {
       "aliases": [
@@ -28320,7 +28327,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-22T08:25:12.498Z",
+  "last_publication_at": "2026-11-22T16:32:47.949Z",
   "last_reconciliation_at": "2026-11-22T16:32:27Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 308,
@@ -29948,6 +29955,14 @@
       "kind": "archive",
       "operation": "2c067e592dfd0a70d09e8b50b79ddfdb8c553544c921b9618d21969de027085c",
       "url": "https://tschopp.net/@Ted/117659134361512206"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cuttleimp.html",
+      "created_at": "2026-11-22T16:32:47.949Z",
+      "id": "117661051646748305",
+      "kind": "archive",
+      "operation": "d3f6ba6b34649d2804995eb97702b60baa64b31af78195363e92812914b5811a",
+      "url": "https://tschopp.net/@Ted/117661051646748305"
     }
   ],
   "run_count": 606,
