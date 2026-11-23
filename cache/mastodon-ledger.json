@@ -8584,12 +8584,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "37851c8a9c298e476806b1c83764b65bde69096a7b06b71016b4f1952ff66f77",
-        "kind": "archive",
-        "started_at": "2026-11-23T02:35:59Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-23T02:36:20.435Z",
+          "id": "117663424868191726",
+          "url": "https://tschopp.net/@Ted/117663424868191726"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -8597,8 +8598,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Cybernetic-Hunter-Tracker-Cybohunter.md"
       ],
-      "state": "uncertain",
-      "title": "Cybernetic Hunter/Tracker «Cybohunter»"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-23T02:36:20.435Z",
+        "id": "117663424868191726",
+        "url": "https://tschopp.net/@Ted/117663424868191726"
+      },
+      "title": "Cybernetic Hunter/Tracker «Cybohunter»",
+      "verified_at": "2026-11-23T02:35:59Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Cycloptron.html": {
       "aliases": [
@@ -28348,7 +28355,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-22T21:59:54.181Z",
+  "last_publication_at": "2026-11-23T02:36:20.435Z",
   "last_reconciliation_at": "2026-11-23T02:35:59Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 328,
@@ -29992,6 +29999,14 @@
       "kind": "archive",
       "operation": "572ed3aaccb8d97fc06b0d658ac313540cdb7451831b726300ea7d33f802cdcf",
       "url": "https://tschopp.net/@Ted/117662337871496400"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Cybernetic-Hunter-Tracker-Cybohunter.html",
+      "created_at": "2026-11-23T02:36:20.435Z",
+      "id": "117663424868191726",
+      "kind": "archive",
+      "operation": "37851c8a9c298e476806b1c83764b65bde69096a7b06b71016b4f1952ff66f77",
+      "url": "https://tschopp.net/@Ted/117663424868191726"
     }
   ],
   "run_count": 608,
