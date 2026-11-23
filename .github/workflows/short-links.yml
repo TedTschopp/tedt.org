@@ -1,0 +1,57 @@
+name: Create short link
+
+on:
+  workflow_dispatch:
+    inputs:
+      destination:
+        description: Full HTTPS destination on tedt.org or tschopp.org
+        required: true
+        type: string
+      code:
+        description: Optional custom code with eight lowercase letters or digits
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  create:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      actions: write
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Save the short link
+        env:
+          DESTINATION: ${{ inputs.destination }}
+          CODE: ${{ inputs.code }}
+        run: |
+          set -euo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          for attempt in 1 2 3; do
+            git fetch --no-tags --depth=1 origin main
+            git switch --detach FETCH_HEAD
+            short_url="$(node _code/short-links/cli.mjs add "$DESTINATION" "$CODE")"
+            if git diff --quiet -- _data/short_links.json; then break; fi
+            git add _data/short_links.json
+            git commit -m "feat(short-links): add ${short_url##*/}"
+            if git push origin HEAD:main; then break; fi
+            if [ "$attempt" -eq 3 ]; then exit 1; fi
+          done
+          printf '**Short URL** %s\n\n' "$short_url" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Queue GitHub Pages deployment
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh workflow run deploy.yml --ref main
+          printf 'The link will resolve after the Pages deployment succeeds.\n' >> "$GITHUB_STEP_SUMMARY"
