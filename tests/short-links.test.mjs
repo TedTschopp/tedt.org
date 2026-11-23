@@ -9,7 +9,7 @@ import { destinationUrl } from '../_code/short-links/links.mjs';
 import worker from '../_code/short-links/worker.mjs';
 
 const cli = fileURLToPath(new URL('../_code/short-links/cli.mjs', import.meta.url));
-const destination = 'https://folklore.tschopp.org/read/?lang=en&sort=date#notes';
+const destination = 'https://folklore.tschopp.org/read/?lang=en&sort=date&mode=reader#notes';
 
 function fixture(t) {
   const root = mkdtempSync(join(tmpdir(), 'short-links-'));
@@ -41,7 +41,7 @@ test('create, reuse, and publish a short link with the full destination', (t) =>
     destination,
   );
   const fallback = readFileSync(join(root, '_site', 's', code, 'index.html'), 'utf8');
-  const escaped = destination.replace('&', '&amp;');
+  const escaped = destination.replaceAll('&', '&amp;');
   assert.ok(fallback.includes(`http-equiv="refresh" content="0; url=${escaped}"`));
   assert.ok(fallback.includes(`href="${escaped}"`));
   assert.ok(fallback.includes('content="noindex,follow"'));
