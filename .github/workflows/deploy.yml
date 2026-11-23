@@ -229,6 +229,11 @@ jobs:
           }
           echo "[debug] Finished Jekyll build at $(date -u +%H:%M:%S)"
 
+      - name: Build and verify short links
+        run: |
+          node --test tests/short-links.test.mjs
+          node _code/short-links/cli.mjs build _site
+
       - name: Build and verify folklore full-text search
         run: |
           set -euo pipefail

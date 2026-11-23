@@ -1,0 +1,11 @@
+{
+  "name": "tedt-short-links",
+  "main": "worker.mjs",
+  "compatibility_date": "2026-11-23",
+  "workers_dev": false,
+  "preview_urls": false,
+  "observability": { "enabled": false },
+  "routes": [
+    { "pattern": "https://tedt.org/s/*", "zone_name": "tedt.org" }
+  ]
+}
