@@ -8732,12 +8732,13 @@
       "eligible": true,
       "first_seen_at": "2026-10-25T15:43:38Z",
       "generation": 1,
-      "history": [],
-      "intent": {
-        "key": "06cf97cdfa0b5b567f72a33f40a71a37f7d32a71ac8375f95f3b2002b5f7df6c",
-        "kind": "archive",
-        "started_at": "2026-11-24T18:15:02Z"
-      },
+      "history": [
+        {
+          "created_at": "2026-11-24T18:15:19.103Z",
+          "id": "117672779389499388",
+          "url": "https://tschopp.net/@Ted/117672779389499388"
+        }
+      ],
       "preferred_ids": [],
       "published_at": "2023-04-07T08:37:35Z",
       "queue_kind": "archive",
@@ -8745,8 +8746,14 @@
       "source_paths": [
         "_posts/Gamma World/2023-04-07-Darel.md"
       ],
-      "state": "uncertain",
-      "title": "Darel"
+      "state": "published",
+      "status": {
+        "created_at": "2026-11-24T18:15:19.103Z",
+        "id": "117672779389499388",
+        "url": "https://tschopp.net/@Ted/117672779389499388"
+      },
+      "title": "Darel",
+      "verified_at": "2026-11-24T18:15:02Z"
     },
     "https://tedt.org/Gamma-World-Bestiary/Darels-Brother-Darel.html": {
       "aliases": [
@@ -28404,7 +28411,7 @@
   },
   "initial_missing": 1008,
   "initialized_at": "2026-10-25T15:43:38Z",
-  "last_publication_at": "2026-11-24T06:29:05.588Z",
+  "last_publication_at": "2026-11-24T18:15:19.103Z",
   "last_reconciliation_at": "2026-11-24T18:15:02Z",
   "legacy_imported_at": "2026-10-25T15:43:38Z",
   "live_status_count": 332,
@@ -30080,6 +30087,14 @@
       "kind": "archive",
       "operation": "3fc91524156c4cca790d4783e6e1cea292ca801a18cb8ca1d0a16f545f139351",
       "url": "https://tschopp.net/@Ted/117670002398776263"
+    },
+    {
+      "canonical_url": "https://tedt.org/Gamma-World-Bestiary/Darel.html",
+      "created_at": "2026-11-24T18:15:19.103Z",
+      "id": "117672779389499388",
+      "kind": "archive",
+      "operation": "06cf97cdfa0b5b567f72a33f40a71a37f7d32a71ac8375f95f3b2002b5f7df6c",
+      "url": "https://tschopp.net/@Ted/117672779389499388"
     }
   ],
   "run_count": 612,
